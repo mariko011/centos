@@ -15,7 +15,8 @@ docker create \
 	-v /etc/apt \
 	-v /usr/share/doc \
 	-v /var/lib/dpkg \
-	"$image" > /dev/null
+	"$image" \
+	bogus > /dev/null
 
 docker run -d --name "$name" --volumes-from "$name-data" repo-info sh -ec '
 	prep-env.sh
