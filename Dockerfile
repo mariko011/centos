@@ -1,3 +1,3 @@
 FROM debian:jessie
 
-COPY *.sh /usr/local/bin/
+COPY .scripts/*.sh /usr/local/bin/
