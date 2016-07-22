@@ -34,7 +34,7 @@ sortedSources=( $(echo "${!packages[*]}" | sort) )
 unset IFS
 
 echo
-echo '## Debian Packages'
+echo '## `dpkg` (`.deb`-based packages)'
 
 for src in "${sortedSources[@]}"; do
 	echo
