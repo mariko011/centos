@@ -18,9 +18,6 @@ docker create \
 	"$image" \
 	bogus > /dev/null
 
-docker run -d --name "$name" --volumes-from "$name-data" repo-info sh -ec '
-	prep-env.sh
-	gather-dpkg.sh
-' > /dev/null
+docker run -d --name "$name" --volumes-from "$name-data" repo-info > /dev/null
 
 docker logs -f "$name"
