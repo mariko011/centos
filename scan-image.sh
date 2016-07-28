@@ -25,13 +25,11 @@ echo '# `'"$image"'`'
 docker inspect -f '
 ## Docker Metadata
 
-Image ID: `{{ .Id }}`
-Created: `{{ .Created }}`
-Arch: `{{ .Os }}`/`{{ .Architecture }}`
-{{ if .Config.Entrypoint }}Entrypoint: `{{ json .Config.Entrypoint }}`
-{{ end }}{{ if .Config.Cmd }}Command: `{{ json .Config.Cmd }}`
-{{ end }}
-Environment:
-{{ range .Config.Env }}{{ "\n" }}- `{{ . }}`{{ end }}' "$image"
+- Image ID: `{{ .Id }}`
+- Created: `{{ .Created }}`
+- Arch: `{{ .Os }}`/`{{ .Architecture }}`
+{{ if .Config.Entrypoint }}- Entrypoint: `{{ json .Config.Entrypoint }}`
+{{ end }}{{ if .Config.Cmd }}- Command: `{{ json .Config.Cmd }}`
+{{ end }}- Environment:{{ range .Config.Env }}{{ "\n" }}  - `{{ . }}`{{ end }}' "$image"
 
 docker logs -f "$name"
