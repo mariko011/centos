@@ -21,4 +21,15 @@ docker create \
 docker run -d --name "$name" --volumes-from "$name-data" repo-info > /dev/null
 
 echo '# `'"$image"'`'
+
+docker inspect -f '
+## Docker Metadata
+
+Image ID: `{{ .Id }}`
+Created: `{{ .Created }}`
+Arch: `{{ .Os }}`/`{{ .Architecture }}`
+
+Environment:
+{{ range .Config.Env }}{{ "\n" }}- `{{ . }}`{{ end }}' "$image"
+
 docker logs -f "$name"
