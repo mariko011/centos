@@ -45,7 +45,7 @@ join() {
 
 for src in "${sortedSources[@]}"; do
 	echo
-	echo '### `'"$src"'`'
+	echo '### `dpkg` source package `'"$src"'`'
 	echo
 	echo 'Binary Packages:'
 	echo
