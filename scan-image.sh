@@ -28,7 +28,9 @@ docker inspect -f '
 Image ID: `{{ .Id }}`
 Created: `{{ .Created }}`
 Arch: `{{ .Os }}`/`{{ .Architecture }}`
-
+{{ if .Config.Entrypoint }}Entrypoint: `{{ json .Config.Entrypoint }}`
+{{ end }}{{ if .Config.Cmd }}Command: `{{ json .Config.Cmd }}`
+{{ end }}
 Environment:
 {{ range .Config.Env }}{{ "\n" }}- `{{ . }}`{{ end }}' "$image"
 
