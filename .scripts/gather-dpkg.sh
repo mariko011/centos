@@ -94,7 +94,6 @@ for src in "${sortedSources[@]}"; do
 		for lic in "${licenses[@]}"; do
 			echo '- `'"$lic"'`'
 		done
-		echo
 	else
 		echo
 		echo '**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)'
