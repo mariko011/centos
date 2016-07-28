@@ -36,6 +36,13 @@ unset IFS
 echo
 echo '## `dpkg` (`.deb`-based packages)'
 
+# prints "$2$1$3$1...$N"
+join() {
+	local sep="$1"; shift
+	local out; printf -v out "${sep//%/%%}%s" "$@"
+	echo "${out#$sep}"
+}
+
 for src in "${sortedSources[@]}"; do
 	echo
 	echo '### `'"$src"'`'
@@ -48,6 +55,7 @@ for src in "${sortedSources[@]}"; do
 
 	# parse /usr/share/doc/BIN/copyright
 	licenses=()
+	licenseFiles=()
 	for bin in ${packages[$src]}; do
 		# https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 		# http://dep.debian.net/deps/dep5/
@@ -74,13 +82,14 @@ for src in "${sortedSources[@]}"; do
 		licenses+=( $(awk -F ':[ \t]+' '$1 == "License" && NF > 1 { gsub(/^License:[ \t]+/, ""); print }' "$f") )
 		licenses+=( $(grep -oE '/usr/share/common-licenses/[0-9a-zA-Z_.+-]+' "$f" | cut -d/ -f5-) )
 		unset IFS
+		licenseFiles+=( "$f" )
 	done
 	if [ "${#licenses[@]}" -gt 0 ]; then
 		IFS=$'\n'
 		licenses=( $(echo "${licenses[*]}" | sed -r -e 's/ (and|or) /\n/g' -e 's/[.]+$//' | sort -u) )
 		unset IFS
 		echo
-		echo 'Licenses:'
+		echo 'Licenses: (parsed from: `'"$(join '`, `' "${licenseFiles[@]}")"'`)'
 		echo
 		for lic in "${licenses[@]}"; do
 			echo '- `'"$lic"'`'
