@@ -115,6 +115,7 @@ for src in "${sortedSources[@]}"; do
 				echo 'Likely also available for browsing at:'
 				echo
 				echo '- https://sources.debian.net/src/'"${src//=//}"'/'
+				echo '- https://sources.debian.net/src/'"${src//=//}"'/debian/copyright (for direct copyright/license information)'
 				;;
 		esac
 	else
