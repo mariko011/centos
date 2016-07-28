@@ -2,18 +2,16 @@
 
 ## Docker Metadata
 
-Image ID: `sha256:1b01529cc499d51767c62f9fc8083043610546b4e050898809ec54e00dbb1a34`
-Created: `2016-07-28T17:47:55.809686499Z`
-Arch: `linux`/`amd64`
-Command: `["/bin/bash"]`
-
-Environment:
-
-- `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+- Image ID: `sha256:1b01529cc499d51767c62f9fc8083043610546b4e050898809ec54e00dbb1a34`
+- Created: `2016-07-28T17:47:55.809686499Z`
+- Arch: `linux`/`amd64`
+- Command: `["/bin/bash"]`
+- Environment:
+  - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 
 ## `dpkg` (`.deb`-based packages)
 
-### `dpkg` source package `acl=2.2.52-2`
+### `dpkg` source package: `acl=2.2.52-2`
 
 Binary Packages:
 
@@ -38,7 +36,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/acl/2.2.52-2/
 - https://sources.debian.net/src/acl/2.2.52-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `adduser=3.113+nmu3`
+### `dpkg` source package: `adduser=3.113+nmu3`
 
 Binary Packages:
 
@@ -60,7 +58,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/adduser/3.113+nmu3/
 - https://sources.debian.net/src/adduser/3.113+nmu3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `apt=1.0.9.8.3`
+### `dpkg` source package: `apt=1.0.9.8.3`
 
 Binary Packages:
 
@@ -84,7 +82,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/apt/1.0.9.8.3/
 - https://sources.debian.net/src/apt/1.0.9.8.3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `attr=1:2.4.47-2`
+### `dpkg` source package: `attr=1:2.4.47-2`
 
 Binary Packages:
 
@@ -108,7 +106,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/attr/1:2.4.47-2/
 - https://sources.debian.net/src/attr/1:2.4.47-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `audit=1:2.4-1`
+### `dpkg` source package: `audit=1:2.4-1`
 
 Binary Packages:
 
@@ -133,7 +131,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/audit/1:2.4-1/
 - https://sources.debian.net/src/audit/1:2.4-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `base-files=8+deb8u5`
+### `dpkg` source package: `base-files=8+deb8u5`
 
 Binary Packages:
 
@@ -155,7 +153,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/base-files/8+deb8u5/
 - https://sources.debian.net/src/base-files/8+deb8u5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `base-passwd=3.5.37`
+### `dpkg` source package: `base-passwd=3.5.37`
 
 Binary Packages:
 
@@ -178,7 +176,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/base-passwd/3.5.37/
 - https://sources.debian.net/src/base-passwd/3.5.37/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `bash=4.3-11`
+### `dpkg` source package: `bash=4.3-11`
 
 Binary Packages:
 
@@ -201,7 +199,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/bash/4.3-11/
 - https://sources.debian.net/src/bash/4.3-11/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `bzip2=1.0.6-7`
+### `dpkg` source package: `bzip2=1.0.6-7`
 
 Binary Packages:
 
@@ -224,7 +222,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/bzip2/1.0.6-7/
 - https://sources.debian.net/src/bzip2/1.0.6-7/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `cdebconf=0.192`
+### `dpkg` source package: `cdebconf=0.192`
 
 Binary Packages:
 
@@ -246,7 +244,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/cdebconf/0.192/
 - https://sources.debian.net/src/cdebconf/0.192/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `coreutils=8.23-4`
+### `dpkg` source package: `coreutils=8.23-4`
 
 Binary Packages:
 
@@ -269,7 +267,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/coreutils/8.23-4/
 - https://sources.debian.net/src/coreutils/8.23-4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `cryptsetup=2:1.6.6-5`
+### `dpkg` source package: `cryptsetup=2:1.6.6-5`
 
 Binary Packages:
 
@@ -293,7 +291,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `dash=0.5.7-4`
+### `dpkg` source package: `dash=0.5.7-4`
 
 Binary Packages:
 
@@ -316,7 +314,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/dash/0.5.7-4/
 - https://sources.debian.net/src/dash/0.5.7-4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `db5.3=5.3.28-9`
+### `dpkg` source package: `db5.3=5.3.28-9`
 
 Binary Packages:
 
@@ -339,7 +337,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/db5.3/5.3.28-9/
 - https://sources.debian.net/src/db5.3/5.3.28-9/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `debconf=1.5.56`
+### `dpkg` source package: `debconf=1.5.56`
 
 Binary Packages:
 
@@ -362,7 +360,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/debconf/1.5.56/
 - https://sources.debian.net/src/debconf/1.5.56/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `debian-archive-keyring=2014.3`
+### `dpkg` source package: `debian-archive-keyring=2014.3`
 
 Binary Packages:
 
@@ -384,7 +382,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/debian-archive-keyring/2014.3/
 - https://sources.debian.net/src/debian-archive-keyring/2014.3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `debianutils=4.4`
+### `dpkg` source package: `debianutils=4.4`
 
 Binary Packages:
 
@@ -406,7 +404,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/debianutils/4.4/
 - https://sources.debian.net/src/debianutils/4.4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `diffutils=1:3.3-1`
+### `dpkg` source package: `diffutils=1:3.3-1`
 
 Binary Packages:
 
@@ -430,7 +428,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/diffutils/1:3.3-1/
 - https://sources.debian.net/src/diffutils/1:3.3-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `dpkg=1.17.27`
+### `dpkg` source package: `dpkg=1.17.27`
 
 Binary Packages:
 
@@ -455,7 +453,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/dpkg/1.17.27/
 - https://sources.debian.net/src/dpkg/1.17.27/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `e2fsprogs=1.42.12-1.1`
+### `dpkg` source package: `e2fsprogs=1.42.12-1.1`
 
 Binary Packages:
 
@@ -482,7 +480,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/e2fsprogs/1.42.12-1.1/
 - https://sources.debian.net/src/e2fsprogs/1.42.12-1.1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `findutils=4.4.2-9`
+### `dpkg` source package: `findutils=4.4.2-9`
 
 Binary Packages:
 
@@ -506,7 +504,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/findutils/4.4.2-9/
 - https://sources.debian.net/src/findutils/4.4.2-9/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `gcc-4.8=4.8.4-1`
+### `dpkg` source package: `gcc-4.8=4.8.4-1`
 
 Binary Packages:
 
@@ -532,7 +530,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gcc-4.8/4.8.4-1/
 - https://sources.debian.net/src/gcc-4.8/4.8.4-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `gcc-4.9=4.9.2-10`
+### `dpkg` source package: `gcc-4.9=4.9.2-10`
 
 Binary Packages:
 
@@ -561,7 +559,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gcc-4.9/4.9.2-10/
 - https://sources.debian.net/src/gcc-4.9/4.9.2-10/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `glibc=2.19-18+deb8u4`
+### `dpkg` source package: `glibc=2.19-18+deb8u4`
 
 Binary Packages:
 
@@ -587,7 +585,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/glibc/2.19-18+deb8u4/
 - https://sources.debian.net/src/glibc/2.19-18+deb8u4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `gnupg=1.4.18-7+deb8u1`
+### `dpkg` source package: `gnupg=1.4.18-7+deb8u1`
 
 Binary Packages:
 
@@ -613,7 +611,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gnupg/1.4.18-7+deb8u1/
 - https://sources.debian.net/src/gnupg/1.4.18-7+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `grep=2.20-4.1`
+### `dpkg` source package: `grep=2.20-4.1`
 
 Binary Packages:
 
@@ -637,7 +635,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/grep/2.20-4.1/
 - https://sources.debian.net/src/grep/2.20-4.1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `gzip=1.6-4`
+### `dpkg` source package: `gzip=1.6-4`
 
 Binary Packages:
 
@@ -660,7 +658,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gzip/1.6-4/
 - https://sources.debian.net/src/gzip/1.6-4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `hostname=3.15`
+### `dpkg` source package: `hostname=3.15`
 
 Binary Packages:
 
@@ -682,7 +680,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/hostname/3.15/
 - https://sources.debian.net/src/hostname/3.15/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `inetutils=2:1.9.2.39.3a460-3`
+### `dpkg` source package: `inetutils=2:1.9.2.39.3a460-3`
 
 Binary Packages:
 
@@ -711,7 +709,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/inetutils/2:1.9.2.39.3a460-3/
 - https://sources.debian.net/src/inetutils/2:1.9.2.39.3a460-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `init-system-helpers=1.22`
+### `dpkg` source package: `init-system-helpers=1.22`
 
 Binary Packages:
 
@@ -735,7 +733,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/init-system-helpers/1.22/
 - https://sources.debian.net/src/init-system-helpers/1.22/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `insserv=1.14.0-5`
+### `dpkg` source package: `insserv=1.14.0-5`
 
 Binary Packages:
 
@@ -758,7 +756,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/insserv/1.14.0-5/
 - https://sources.debian.net/src/insserv/1.14.0-5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `iproute2=3.16.0-2`
+### `dpkg` source package: `iproute2=3.16.0-2`
 
 Binary Packages:
 
@@ -781,7 +779,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/iproute2/3.16.0-2/
 - https://sources.debian.net/src/iproute2/3.16.0-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `kmod=18-3`
+### `dpkg` source package: `kmod=18-3`
 
 Binary Packages:
 
@@ -805,7 +803,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/kmod/18-3/
 - https://sources.debian.net/src/kmod/18-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `libcap2=1:2.24-8`
+### `dpkg` source package: `libcap2=1:2.24-8`
 
 Binary Packages:
 
@@ -831,7 +829,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libcap2/1:2.24-8/
 - https://sources.debian.net/src/libcap2/1:2.24-8/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `libgcrypt20=1.6.3-2+deb8u1`
+### `dpkg` source package: `libgcrypt20=1.6.3-2+deb8u1`
 
 Binary Packages:
 
@@ -855,7 +853,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u1/
 - https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `libgpg-error=1.17-3`
+### `dpkg` source package: `libgpg-error=1.17-3`
 
 Binary Packages:
 
@@ -879,7 +877,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libgpg-error/1.17-3/
 - https://sources.debian.net/src/libgpg-error/1.17-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `liblocale-gettext-perl=1.05-8`
+### `dpkg` source package: `liblocale-gettext-perl=1.05-8`
 
 Binary Packages:
 
@@ -904,7 +902,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/liblocale-gettext-perl/1.05-8/
 - https://sources.debian.net/src/liblocale-gettext-perl/1.05-8/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `libselinux=2.3-2`
+### `dpkg` source package: `libselinux=2.3-2`
 
 Binary Packages:
 
@@ -928,7 +926,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libselinux/2.3-2/
 - https://sources.debian.net/src/libselinux/2.3-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `libsemanage=2.3-1`
+### `dpkg` source package: `libsemanage=2.3-1`
 
 Binary Packages:
 
@@ -953,7 +951,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libsemanage/2.3-1/
 - https://sources.debian.net/src/libsemanage/2.3-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `libsepol=2.3-2`
+### `dpkg` source package: `libsepol=2.3-2`
 
 Binary Packages:
 
@@ -977,7 +975,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libsepol/2.3-2/
 - https://sources.debian.net/src/libsepol/2.3-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `libtext-charwidth-perl=0.04-7`
+### `dpkg` source package: `libtext-charwidth-perl=0.04-7`
 
 Binary Packages:
 
@@ -1001,7 +999,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libtext-charwidth-perl/0.04-7/
 - https://sources.debian.net/src/libtext-charwidth-perl/0.04-7/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `libtext-iconv-perl=1.7-5`
+### `dpkg` source package: `libtext-iconv-perl=1.7-5`
 
 Binary Packages:
 
@@ -1025,7 +1023,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libtext-iconv-perl/1.7-5/
 - https://sources.debian.net/src/libtext-iconv-perl/1.7-5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `libtext-wrapi18n-perl=0.06-7`
+### `dpkg` source package: `libtext-wrapi18n-perl=0.06-7`
 
 Binary Packages:
 
@@ -1049,7 +1047,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libtext-wrapi18n-perl/0.06-7/
 - https://sources.debian.net/src/libtext-wrapi18n-perl/0.06-7/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `libusb=2:0.1.12-25`
+### `dpkg` source package: `libusb=2:0.1.12-25`
 
 Binary Packages:
 
@@ -1072,7 +1070,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libusb/2:0.1.12-25/
 - https://sources.debian.net/src/libusb/2:0.1.12-25/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `lsb=4.1+Debian13+nmu1`
+### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
 Binary Packages:
 
@@ -1095,7 +1093,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/lsb/4.1+Debian13+nmu1/
 - https://sources.debian.net/src/lsb/4.1+Debian13+nmu1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `lvm2=2.02.111-2.2+deb8u1`
+### `dpkg` source package: `lvm2=2.02.111-2.2+deb8u1`
 
 Binary Packages:
 
@@ -1120,7 +1118,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/lvm2/2.02.111-2.2+deb8u1/
 - https://sources.debian.net/src/lvm2/2.02.111-2.2+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `mawk=1.3.3-17`
+### `dpkg` source package: `mawk=1.3.3-17`
 
 Binary Packages:
 
@@ -1143,7 +1141,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/mawk/1.3.3-17/
 - https://sources.debian.net/src/mawk/1.3.3-17/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `ncurses=5.9+20140913-1`
+### `dpkg` source package: `ncurses=5.9+20140913-1`
 
 Binary Packages:
 
@@ -1170,7 +1168,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/ncurses/5.9+20140913-1/
 - https://sources.debian.net/src/ncurses/5.9+20140913-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `netbase=5.3`
+### `dpkg` source package: `netbase=5.3`
 
 Binary Packages:
 
@@ -1192,7 +1190,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/netbase/5.3/
 - https://sources.debian.net/src/netbase/5.3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `pam=1.1.8-3.1+deb8u1`
+### `dpkg` source package: `pam=1.1.8-3.1+deb8u1`
 
 Binary Packages:
 
@@ -1218,7 +1216,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/pam/1.1.8-3.1+deb8u1/
 - https://sources.debian.net/src/pam/1.1.8-3.1+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `pcre3=2:8.35-3.3+deb8u4`
+### `dpkg` source package: `pcre3=2:8.35-3.3+deb8u4`
 
 Binary Packages:
 
@@ -1241,7 +1239,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/pcre3/2:8.35-3.3+deb8u4/
 - https://sources.debian.net/src/pcre3/2:8.35-3.3+deb8u4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `perl=5.20.2-3+deb8u6`
+### `dpkg` source package: `perl=5.20.2-3+deb8u6`
 
 Binary Packages:
 
@@ -1287,7 +1285,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/perl/5.20.2-3+deb8u6/
 - https://sources.debian.net/src/perl/5.20.2-3+deb8u6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `procps=2:3.3.9-9`
+### `dpkg` source package: `procps=2:3.3.9-9`
 
 Binary Packages:
 
@@ -1312,7 +1310,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/procps/2:3.3.9-9/
 - https://sources.debian.net/src/procps/2:3.3.9-9/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `readline6=6.3-8`
+### `dpkg` source package: `readline6=6.3-8`
 
 Binary Packages:
 
@@ -1336,7 +1334,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/readline6/6.3-8/
 - https://sources.debian.net/src/readline6/6.3-8/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `sed=4.2.2-4`
+### `dpkg` source package: `sed=4.2.2-4`
 
 Binary Packages:
 
@@ -1359,7 +1357,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/sed/4.2.2-4/
 - https://sources.debian.net/src/sed/4.2.2-4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `sensible-utils=0.0.9`
+### `dpkg` source package: `sensible-utils=0.0.9`
 
 Binary Packages:
 
@@ -1381,7 +1379,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/sensible-utils/0.0.9/
 - https://sources.debian.net/src/sensible-utils/0.0.9/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `shadow=1:4.2-3+deb8u1`
+### `dpkg` source package: `shadow=1:4.2-3+deb8u1`
 
 Binary Packages:
 
@@ -1405,7 +1403,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/shadow/1:4.2-3+deb8u1/
 - https://sources.debian.net/src/shadow/1:4.2-3+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `slang2=2.3.0-2`
+### `dpkg` source package: `slang2=2.3.0-2`
 
 Binary Packages:
 
@@ -1429,7 +1427,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/slang2/2.3.0-2/
 - https://sources.debian.net/src/slang2/2.3.0-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `startpar=0.59-3`
+### `dpkg` source package: `startpar=0.59-3`
 
 Binary Packages:
 
@@ -1453,7 +1451,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/startpar/0.59-3/
 - https://sources.debian.net/src/startpar/0.59-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `systemd=215-17+deb8u4`
+### `dpkg` source package: `systemd=215-17+deb8u4`
 
 Binary Packages:
 
@@ -1485,7 +1483,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/systemd/215-17+deb8u4/
 - https://sources.debian.net/src/systemd/215-17+deb8u4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `sysvinit=2.88dsf-59`
+### `dpkg` source package: `sysvinit=2.88dsf-59`
 
 Binary Packages:
 
@@ -1510,7 +1508,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/sysvinit/2.88dsf-59/
 - https://sources.debian.net/src/sysvinit/2.88dsf-59/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `tar=1.27.1-2`
+### `dpkg` source package: `tar=1.27.1-2`
 
 Binary Packages:
 
@@ -1534,7 +1532,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tar/1.27.1-2/
 - https://sources.debian.net/src/tar/1.27.1-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `tzdata=2016f-0+deb8u1`
+### `dpkg` source package: `tzdata=2016f-0+deb8u1`
 
 Binary Packages:
 
@@ -1557,7 +1555,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tzdata/2016f-0+deb8u1/
 - https://sources.debian.net/src/tzdata/2016f-0+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `ustr=1.0.4-3`
+### `dpkg` source package: `ustr=1.0.4-3`
 
 Binary Packages:
 
@@ -1585,7 +1583,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/ustr/1.0.4-3/
 - https://sources.debian.net/src/ustr/1.0.4-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `util-linux=2.25.2-6`
+### `dpkg` source package: `util-linux=2.25.2-6`
 
 Binary Packages:
 
@@ -1629,7 +1627,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/util-linux/2.25.2-6/
 - https://sources.debian.net/src/util-linux/2.25.2-6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `xz-utils=5.1.1alpha+20120614-2`
+### `dpkg` source package: `xz-utils=5.1.1alpha+20120614-2`
 
 Binary Packages:
 
@@ -1666,7 +1664,7 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/xz-utils/5.1.1alpha+20120614-2/
 - https://sources.debian.net/src/xz-utils/5.1.1alpha+20120614-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package `zlib=1:1.2.8.dfsg-2`
+### `dpkg` source package: `zlib=1:1.2.8.dfsg-2`
 
 Binary Packages:
 
