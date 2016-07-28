@@ -20,4 +20,5 @@ docker create \
 
 docker run -d --name "$name" --volumes-from "$name-data" repo-info > /dev/null
 
+echo '# `'"$image"'`'
 docker logs -f "$name"
