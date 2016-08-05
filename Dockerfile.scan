@@ -7,6 +7,6 @@ RUN apt-get update \
 		ca-certificates \
 	&& rm -rf /var/lib/apt/lists/*
 
-COPY .scripts/*.sh /usr/local/bin/
+COPY .scan-scripts/*.sh /usr/local/bin/
 
 CMD ["gather.sh"]

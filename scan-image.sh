@@ -5,7 +5,7 @@ trap 'echo >&2 Ctrl+C captured, exiting; exit 1' SIGINT
 
 image="$1"; shift
 
-docker build --pull -t repo-info -q . > /dev/null
+docker build --pull -t repo-info -q -f Dockerfile.scan . > /dev/null
 
 name="repo-info-$RANDOM"
 trap "docker rm -f '$name-data' '$name' > /dev/null" EXIT
