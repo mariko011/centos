@@ -1,4 +1,4 @@
-<!-- THIS FILE IS GENERATED VIA '.template-helpers/generate-tag-details.pl' -->
+<!-- THIS FILE IS GENERATED VIA './update-tag-details.sh' -->
 
 # Tags of `logstash`
 
