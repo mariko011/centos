@@ -1520,7 +1520,7 @@ CMD ["irb"]
 ## `jruby:9.1-jdk`
 
 ```console
-$ docker pull jruby@sha256:df595d2f84a0b15d9a439351ee9b501cce732444619e3a04316eafd4af192552
+$ docker pull jruby@sha256:590113950f4e8e1135517130db4ba9f2b7bdfa9721202ad738b8703a2d6e470c
 ```
 
 -	Platforms:
@@ -1530,111 +1530,111 @@ $ docker pull jruby@sha256:df595d2f84a0b15d9a439351ee9b501cce732444619e3a04316ea
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **281.4 MB (281428098 bytes)**  
+-	Total Size: **281.3 MB (281307933 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5b7c6ddd55ff88f92ba30f827489e3f412f09708ec9bc01bb3768310cb19511e`
+-	Image ID: `sha256:b80d65e40d2b3feb1ae0e5dbd561cc35bc2f3444304bea0969776da9b65d6275`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:37:09 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:05:16 GMT
+# Fri, 05 Aug 2016 22:02:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:10:09 GMT
+# Fri, 05 Aug 2016 22:06:43 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:10:09 GMT
+# Fri, 05 Aug 2016 22:06:43 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:10:10 GMT
+# Fri, 05 Aug 2016 22:06:45 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:10:10 GMT
+# Fri, 05 Aug 2016 22:06:46 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:47 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:48 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:48 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:12:21 GMT
+# Fri, 05 Aug 2016 22:08:45 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:12:23 GMT
+# Fri, 05 Aug 2016 22:08:48 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 21:50:27 GMT
+# Mon, 08 Aug 2016 17:55:42 GMT
 RUN apt-get update && apt-get install -y libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 21:50:46 GMT
+# Mon, 08 Aug 2016 17:59:15 GMT
 ENV JRUBY_VERSION=9.1.2.0
-# Fri, 10 Jun 2016 21:50:46 GMT
+# Mon, 08 Aug 2016 17:59:16 GMT
 ENV JRUBY_SHA256=60598a465883ab4c933f805de4a7f280052bddc793b95735465619c03ca43f35
-# Fri, 10 Jun 2016 21:50:52 GMT
+# Mon, 08 Aug 2016 17:59:23 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Fri, 10 Jun 2016 21:50:53 GMT
+# Mon, 08 Aug 2016 17:59:24 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 21:50:54 GMT
+# Mon, 08 Aug 2016 17:59:26 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Fri, 10 Jun 2016 21:51:04 GMT
+# Mon, 08 Aug 2016 17:59:37 GMT
 RUN gem install bundler
-# Fri, 10 Jun 2016 21:51:04 GMT
+# Mon, 08 Aug 2016 17:59:38 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 10 Jun 2016 21:51:04 GMT
+# Mon, 08 Aug 2016 17:59:39 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 10 Jun 2016 21:51:05 GMT
+# Mon, 08 Aug 2016 17:59:40 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 21:51:06 GMT
+# Mon, 08 Aug 2016 17:59:42 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Fri, 10 Jun 2016 21:51:06 GMT
+# Mon, 08 Aug 2016 17:59:42 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
-		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
-		Size: 42.5 MB (42525371 bytes)
-	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
-		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
-		Size: 622.3 KB (622260 bytes)
-	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
-		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-		Size: 219.0 B
-	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
-		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-		Size: 241.0 B
-	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
-		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
-		Size: 130.0 MB (130020091 bytes)
-	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
-		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
-		Size: 284.4 KB (284370 bytes)
-	-	`sha256:c796b68b8ad21049a27927cc75b11c2ab92c890bd18e88cddd324f76c18e5762`  
-		Last Modified: Mon, 27 Jun 2016 16:50:22 GMT  
-		Size: 4.9 MB (4922880 bytes)
-	-	`sha256:406052b3fff832edca27a7a74c30533c438cc40f65dc797db0ca52eaf2ce222e`  
-		Last Modified: Mon, 27 Jun 2016 16:50:25 GMT  
-		Size: 32.6 MB (32595262 bytes)
-	-	`sha256:f98c773f35484a3993fbba9ad5d9b28df948fddbb0af165789881092b9752211`  
-		Last Modified: Mon, 27 Jun 2016 16:50:19 GMT  
-		Size: 197.0 B
-	-	`sha256:7aee426519c0dc90147f5cab93ddc44d1350aa064635a062fc073760f84afb60`  
-		Last Modified: Mon, 27 Jun 2016 16:50:21 GMT  
-		Size: 557.3 KB (557292 bytes)
-	-	`sha256:6408d3f218c01376be9f0066256ed97b6659321984e4da139e8aa19558c2cadd`  
-		Last Modified: Mon, 27 Jun 2016 16:50:19 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
+		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
+		Size: 593.2 KB (593224 bytes)
+	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 220.0 B
+	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 240.0 B
+	-	`sha256:b987bd349aa094960d32b6cf01f28604a595155ff3f6e9ad4262e4b3eba480d7`  
+		Last Modified: Fri, 05 Aug 2016 22:17:58 GMT  
+		Size: 130.0 MB (129984944 bytes)
+	-	`sha256:cc07342899764251d877aeb04dd94a665b46ef2422afda45ad2b044d66d2dfe4`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 284.3 KB (284348 bytes)
+	-	`sha256:389edc47028895d5377dcaefc1f0c5e4443bb0a46a141c54335d87fce397bb6e`  
+		Last Modified: Mon, 08 Aug 2016 17:56:21 GMT  
+		Size: 4.9 MB (4903746 bytes)
+	-	`sha256:8bd72730c298cd5e35d5c0b14c54024d9b3c86f09aba1bbc89fadeeeff4224ed`  
+		Last Modified: Mon, 08 Aug 2016 17:59:57 GMT  
+		Size: 32.6 MB (32595586 bytes)
+	-	`sha256:e9f105046f514fa8743ce4f56ddb5b66172d031637cd6a7267bfbec0fc843bab`  
+		Last Modified: Mon, 08 Aug 2016 17:59:52 GMT  
+		Size: 196.0 B
+	-	`sha256:e7bc735a9efb37b9c7e79fab0521722b96d8dddcaf04b1d27f4e86459d12db95`  
+		Last Modified: Mon, 08 Aug 2016 17:59:53 GMT  
+		Size: 557.3 KB (557294 bytes)
+	-	`sha256:347d926e7914c7f7c69d1961a33ddf9e612b53dfe9bfe082be65115f9acbf7d1`  
+		Last Modified: Mon, 08 Aug 2016 17:59:52 GMT  
 		Size: 161.0 B
 
 ## `jruby:9.1.2-jdk`
 
 ```console
-$ docker pull jruby@sha256:df595d2f84a0b15d9a439351ee9b501cce732444619e3a04316eafd4af192552
+$ docker pull jruby@sha256:590113950f4e8e1135517130db4ba9f2b7bdfa9721202ad738b8703a2d6e470c
 ```
 
 -	Platforms:
@@ -1644,111 +1644,111 @@ $ docker pull jruby@sha256:df595d2f84a0b15d9a439351ee9b501cce732444619e3a04316ea
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **281.4 MB (281428098 bytes)**  
+-	Total Size: **281.3 MB (281307933 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5b7c6ddd55ff88f92ba30f827489e3f412f09708ec9bc01bb3768310cb19511e`
+-	Image ID: `sha256:b80d65e40d2b3feb1ae0e5dbd561cc35bc2f3444304bea0969776da9b65d6275`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:37:09 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:05:16 GMT
+# Fri, 05 Aug 2016 22:02:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:10:09 GMT
+# Fri, 05 Aug 2016 22:06:43 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:10:09 GMT
+# Fri, 05 Aug 2016 22:06:43 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:10:10 GMT
+# Fri, 05 Aug 2016 22:06:45 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:10:10 GMT
+# Fri, 05 Aug 2016 22:06:46 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:47 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:48 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:48 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:12:21 GMT
+# Fri, 05 Aug 2016 22:08:45 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:12:23 GMT
+# Fri, 05 Aug 2016 22:08:48 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 21:50:27 GMT
+# Mon, 08 Aug 2016 17:55:42 GMT
 RUN apt-get update && apt-get install -y libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 21:50:46 GMT
+# Mon, 08 Aug 2016 17:59:15 GMT
 ENV JRUBY_VERSION=9.1.2.0
-# Fri, 10 Jun 2016 21:50:46 GMT
+# Mon, 08 Aug 2016 17:59:16 GMT
 ENV JRUBY_SHA256=60598a465883ab4c933f805de4a7f280052bddc793b95735465619c03ca43f35
-# Fri, 10 Jun 2016 21:50:52 GMT
+# Mon, 08 Aug 2016 17:59:23 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Fri, 10 Jun 2016 21:50:53 GMT
+# Mon, 08 Aug 2016 17:59:24 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 21:50:54 GMT
+# Mon, 08 Aug 2016 17:59:26 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Fri, 10 Jun 2016 21:51:04 GMT
+# Mon, 08 Aug 2016 17:59:37 GMT
 RUN gem install bundler
-# Fri, 10 Jun 2016 21:51:04 GMT
+# Mon, 08 Aug 2016 17:59:38 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 10 Jun 2016 21:51:04 GMT
+# Mon, 08 Aug 2016 17:59:39 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 10 Jun 2016 21:51:05 GMT
+# Mon, 08 Aug 2016 17:59:40 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 21:51:06 GMT
+# Mon, 08 Aug 2016 17:59:42 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Fri, 10 Jun 2016 21:51:06 GMT
+# Mon, 08 Aug 2016 17:59:42 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
-		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
-		Size: 42.5 MB (42525371 bytes)
-	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
-		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
-		Size: 622.3 KB (622260 bytes)
-	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
-		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-		Size: 219.0 B
-	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
-		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-		Size: 241.0 B
-	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
-		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
-		Size: 130.0 MB (130020091 bytes)
-	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
-		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
-		Size: 284.4 KB (284370 bytes)
-	-	`sha256:c796b68b8ad21049a27927cc75b11c2ab92c890bd18e88cddd324f76c18e5762`  
-		Last Modified: Mon, 27 Jun 2016 16:50:22 GMT  
-		Size: 4.9 MB (4922880 bytes)
-	-	`sha256:406052b3fff832edca27a7a74c30533c438cc40f65dc797db0ca52eaf2ce222e`  
-		Last Modified: Mon, 27 Jun 2016 16:50:25 GMT  
-		Size: 32.6 MB (32595262 bytes)
-	-	`sha256:f98c773f35484a3993fbba9ad5d9b28df948fddbb0af165789881092b9752211`  
-		Last Modified: Mon, 27 Jun 2016 16:50:19 GMT  
-		Size: 197.0 B
-	-	`sha256:7aee426519c0dc90147f5cab93ddc44d1350aa064635a062fc073760f84afb60`  
-		Last Modified: Mon, 27 Jun 2016 16:50:21 GMT  
-		Size: 557.3 KB (557292 bytes)
-	-	`sha256:6408d3f218c01376be9f0066256ed97b6659321984e4da139e8aa19558c2cadd`  
-		Last Modified: Mon, 27 Jun 2016 16:50:19 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
+		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
+		Size: 593.2 KB (593224 bytes)
+	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 220.0 B
+	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 240.0 B
+	-	`sha256:b987bd349aa094960d32b6cf01f28604a595155ff3f6e9ad4262e4b3eba480d7`  
+		Last Modified: Fri, 05 Aug 2016 22:17:58 GMT  
+		Size: 130.0 MB (129984944 bytes)
+	-	`sha256:cc07342899764251d877aeb04dd94a665b46ef2422afda45ad2b044d66d2dfe4`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 284.3 KB (284348 bytes)
+	-	`sha256:389edc47028895d5377dcaefc1f0c5e4443bb0a46a141c54335d87fce397bb6e`  
+		Last Modified: Mon, 08 Aug 2016 17:56:21 GMT  
+		Size: 4.9 MB (4903746 bytes)
+	-	`sha256:8bd72730c298cd5e35d5c0b14c54024d9b3c86f09aba1bbc89fadeeeff4224ed`  
+		Last Modified: Mon, 08 Aug 2016 17:59:57 GMT  
+		Size: 32.6 MB (32595586 bytes)
+	-	`sha256:e9f105046f514fa8743ce4f56ddb5b66172d031637cd6a7267bfbec0fc843bab`  
+		Last Modified: Mon, 08 Aug 2016 17:59:52 GMT  
+		Size: 196.0 B
+	-	`sha256:e7bc735a9efb37b9c7e79fab0521722b96d8dddcaf04b1d27f4e86459d12db95`  
+		Last Modified: Mon, 08 Aug 2016 17:59:53 GMT  
+		Size: 557.3 KB (557294 bytes)
+	-	`sha256:347d926e7914c7f7c69d1961a33ddf9e612b53dfe9bfe082be65115f9acbf7d1`  
+		Last Modified: Mon, 08 Aug 2016 17:59:52 GMT  
 		Size: 161.0 B
 
 ## `jruby:9.1.2.0-jdk`
 
 ```console
-$ docker pull jruby@sha256:df595d2f84a0b15d9a439351ee9b501cce732444619e3a04316eafd4af192552
+$ docker pull jruby@sha256:590113950f4e8e1135517130db4ba9f2b7bdfa9721202ad738b8703a2d6e470c
 ```
 
 -	Platforms:
@@ -1758,105 +1758,105 @@ $ docker pull jruby@sha256:df595d2f84a0b15d9a439351ee9b501cce732444619e3a04316ea
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **281.4 MB (281428098 bytes)**  
+-	Total Size: **281.3 MB (281307933 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5b7c6ddd55ff88f92ba30f827489e3f412f09708ec9bc01bb3768310cb19511e`
+-	Image ID: `sha256:b80d65e40d2b3feb1ae0e5dbd561cc35bc2f3444304bea0969776da9b65d6275`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:37:09 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:05:16 GMT
+# Fri, 05 Aug 2016 22:02:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:10:09 GMT
+# Fri, 05 Aug 2016 22:06:43 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:10:09 GMT
+# Fri, 05 Aug 2016 22:06:43 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:10:10 GMT
+# Fri, 05 Aug 2016 22:06:45 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:10:10 GMT
+# Fri, 05 Aug 2016 22:06:46 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:47 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:48 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:48 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:12:21 GMT
+# Fri, 05 Aug 2016 22:08:45 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:12:23 GMT
+# Fri, 05 Aug 2016 22:08:48 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 21:50:27 GMT
+# Mon, 08 Aug 2016 17:55:42 GMT
 RUN apt-get update && apt-get install -y libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 21:50:46 GMT
+# Mon, 08 Aug 2016 17:59:15 GMT
 ENV JRUBY_VERSION=9.1.2.0
-# Fri, 10 Jun 2016 21:50:46 GMT
+# Mon, 08 Aug 2016 17:59:16 GMT
 ENV JRUBY_SHA256=60598a465883ab4c933f805de4a7f280052bddc793b95735465619c03ca43f35
-# Fri, 10 Jun 2016 21:50:52 GMT
+# Mon, 08 Aug 2016 17:59:23 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Fri, 10 Jun 2016 21:50:53 GMT
+# Mon, 08 Aug 2016 17:59:24 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 21:50:54 GMT
+# Mon, 08 Aug 2016 17:59:26 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Fri, 10 Jun 2016 21:51:04 GMT
+# Mon, 08 Aug 2016 17:59:37 GMT
 RUN gem install bundler
-# Fri, 10 Jun 2016 21:51:04 GMT
+# Mon, 08 Aug 2016 17:59:38 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 10 Jun 2016 21:51:04 GMT
+# Mon, 08 Aug 2016 17:59:39 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 10 Jun 2016 21:51:05 GMT
+# Mon, 08 Aug 2016 17:59:40 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 21:51:06 GMT
+# Mon, 08 Aug 2016 17:59:42 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Fri, 10 Jun 2016 21:51:06 GMT
+# Mon, 08 Aug 2016 17:59:42 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
-		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
-		Size: 42.5 MB (42525371 bytes)
-	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
-		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
-		Size: 622.3 KB (622260 bytes)
-	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
-		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-		Size: 219.0 B
-	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
-		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-		Size: 241.0 B
-	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
-		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
-		Size: 130.0 MB (130020091 bytes)
-	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
-		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
-		Size: 284.4 KB (284370 bytes)
-	-	`sha256:c796b68b8ad21049a27927cc75b11c2ab92c890bd18e88cddd324f76c18e5762`  
-		Last Modified: Mon, 27 Jun 2016 16:50:22 GMT  
-		Size: 4.9 MB (4922880 bytes)
-	-	`sha256:406052b3fff832edca27a7a74c30533c438cc40f65dc797db0ca52eaf2ce222e`  
-		Last Modified: Mon, 27 Jun 2016 16:50:25 GMT  
-		Size: 32.6 MB (32595262 bytes)
-	-	`sha256:f98c773f35484a3993fbba9ad5d9b28df948fddbb0af165789881092b9752211`  
-		Last Modified: Mon, 27 Jun 2016 16:50:19 GMT  
-		Size: 197.0 B
-	-	`sha256:7aee426519c0dc90147f5cab93ddc44d1350aa064635a062fc073760f84afb60`  
-		Last Modified: Mon, 27 Jun 2016 16:50:21 GMT  
-		Size: 557.3 KB (557292 bytes)
-	-	`sha256:6408d3f218c01376be9f0066256ed97b6659321984e4da139e8aa19558c2cadd`  
-		Last Modified: Mon, 27 Jun 2016 16:50:19 GMT  
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
+		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
+		Size: 593.2 KB (593224 bytes)
+	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 220.0 B
+	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 240.0 B
+	-	`sha256:b987bd349aa094960d32b6cf01f28604a595155ff3f6e9ad4262e4b3eba480d7`  
+		Last Modified: Fri, 05 Aug 2016 22:17:58 GMT  
+		Size: 130.0 MB (129984944 bytes)
+	-	`sha256:cc07342899764251d877aeb04dd94a665b46ef2422afda45ad2b044d66d2dfe4`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 284.3 KB (284348 bytes)
+	-	`sha256:389edc47028895d5377dcaefc1f0c5e4443bb0a46a141c54335d87fce397bb6e`  
+		Last Modified: Mon, 08 Aug 2016 17:56:21 GMT  
+		Size: 4.9 MB (4903746 bytes)
+	-	`sha256:8bd72730c298cd5e35d5c0b14c54024d9b3c86f09aba1bbc89fadeeeff4224ed`  
+		Last Modified: Mon, 08 Aug 2016 17:59:57 GMT  
+		Size: 32.6 MB (32595586 bytes)
+	-	`sha256:e9f105046f514fa8743ce4f56ddb5b66172d031637cd6a7267bfbec0fc843bab`  
+		Last Modified: Mon, 08 Aug 2016 17:59:52 GMT  
+		Size: 196.0 B
+	-	`sha256:e7bc735a9efb37b9c7e79fab0521722b96d8dddcaf04b1d27f4e86459d12db95`  
+		Last Modified: Mon, 08 Aug 2016 17:59:53 GMT  
+		Size: 557.3 KB (557294 bytes)
+	-	`sha256:347d926e7914c7f7c69d1961a33ddf9e612b53dfe9bfe082be65115f9acbf7d1`  
+		Last Modified: Mon, 08 Aug 2016 17:59:52 GMT  
 		Size: 161.0 B
 
 ## `jruby:9.1-jdk-alpine`
@@ -3075,7 +3075,7 @@ CMD ["irb"]
 ## `jruby:1.7-jdk`
 
 ```console
-$ docker pull jruby@sha256:9d972437f12edf264c05a4a641b4ebb3d36980ff0e7284550e825a5f557f97cf
+$ docker pull jruby@sha256:41871a9293ea77daa8588872dbdebb62a13eee68b0d8474ee89ccea6bb94a0aa
 ```
 
 -	Platforms:
@@ -3085,111 +3085,111 @@ $ docker pull jruby@sha256:9d972437f12edf264c05a4a641b4ebb3d36980ff0e7284550e825
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **271.0 MB (270951069 bytes)**  
+-	Total Size: **270.8 MB (270830301 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aafe67af3393c45fc9762ea617b62573c0831343b074298803d68150ba2b9eea`
+-	Image ID: `sha256:c2092263c5484af0f1a038df656a50620f332aeedd3bad387c44c543f6ed3d49`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:37:09 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:05:16 GMT
+# Fri, 05 Aug 2016 22:02:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:10:09 GMT
+# Fri, 05 Aug 2016 22:06:43 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:10:09 GMT
+# Fri, 05 Aug 2016 22:06:43 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:10:10 GMT
+# Fri, 05 Aug 2016 22:06:45 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:10:10 GMT
+# Fri, 05 Aug 2016 22:06:46 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:47 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:48 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:48 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:12:21 GMT
+# Fri, 05 Aug 2016 22:08:45 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:12:23 GMT
+# Fri, 05 Aug 2016 22:08:48 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 21:50:27 GMT
+# Mon, 08 Aug 2016 17:55:42 GMT
 RUN apt-get update && apt-get install -y libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 21:50:27 GMT
+# Mon, 08 Aug 2016 17:55:43 GMT
 ENV JRUBY_VERSION=1.7.25
-# Fri, 10 Jun 2016 21:50:27 GMT
+# Mon, 08 Aug 2016 17:55:44 GMT
 ENV JRUBY_SHA1=cd15aef419f97cff274491e53fcfb8b88ec36785
-# Fri, 10 Jun 2016 21:50:33 GMT
+# Mon, 08 Aug 2016 17:55:51 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA1 /tmp/jruby.tar.gz" | sha1sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Fri, 10 Jun 2016 21:50:33 GMT
+# Mon, 08 Aug 2016 17:55:52 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 21:50:34 GMT
+# Mon, 08 Aug 2016 17:55:54 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Fri, 10 Jun 2016 21:50:43 GMT
+# Mon, 08 Aug 2016 17:56:03 GMT
 RUN gem install bundler
-# Fri, 10 Jun 2016 21:50:44 GMT
+# Mon, 08 Aug 2016 17:56:04 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 10 Jun 2016 21:50:44 GMT
+# Mon, 08 Aug 2016 17:56:05 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 10 Jun 2016 21:50:44 GMT
+# Mon, 08 Aug 2016 17:56:06 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 21:50:45 GMT
+# Mon, 08 Aug 2016 17:56:08 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Fri, 10 Jun 2016 21:50:45 GMT
+# Mon, 08 Aug 2016 17:56:09 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
-		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
-		Size: 42.5 MB (42525371 bytes)
-	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
-		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
-		Size: 622.3 KB (622260 bytes)
-	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
-		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-		Size: 219.0 B
-	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
-		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-		Size: 241.0 B
-	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
-		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
-		Size: 130.0 MB (130020091 bytes)
-	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
-		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
-		Size: 284.4 KB (284370 bytes)
-	-	`sha256:c796b68b8ad21049a27927cc75b11c2ab92c890bd18e88cddd324f76c18e5762`  
-		Last Modified: Mon, 27 Jun 2016 16:50:22 GMT  
-		Size: 4.9 MB (4922880 bytes)
-	-	`sha256:a91c7a7be99dbd092a7e6fc7adfca65111a0a1d67c1c0bb2da21c17c37623506`  
-		Last Modified: Mon, 27 Jun 2016 16:52:17 GMT  
-		Size: 22.1 MB (22118265 bytes)
-	-	`sha256:75ef7e2c79e0623749adb32105d8c76226e07095eaa2e0effd92f3c13a49a26e`  
-		Last Modified: Mon, 27 Jun 2016 16:52:11 GMT  
-		Size: 197.0 B
-	-	`sha256:07e54cbe2c35ea54e247137b29e1f4c2a1d62dfa86f236e8e3d4784b6138e783`  
-		Last Modified: Mon, 27 Jun 2016 16:52:12 GMT  
-		Size: 557.3 KB (557259 bytes)
-	-	`sha256:985dd1bd34b348015c2a7007b0d978675169335747d5eac17752da9900eacd07`  
-		Last Modified: Mon, 27 Jun 2016 16:52:11 GMT  
-		Size: 162.0 B
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
+		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
+		Size: 593.2 KB (593224 bytes)
+	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 220.0 B
+	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 240.0 B
+	-	`sha256:b987bd349aa094960d32b6cf01f28604a595155ff3f6e9ad4262e4b3eba480d7`  
+		Last Modified: Fri, 05 Aug 2016 22:17:58 GMT  
+		Size: 130.0 MB (129984944 bytes)
+	-	`sha256:cc07342899764251d877aeb04dd94a665b46ef2422afda45ad2b044d66d2dfe4`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 284.3 KB (284348 bytes)
+	-	`sha256:389edc47028895d5377dcaefc1f0c5e4443bb0a46a141c54335d87fce397bb6e`  
+		Last Modified: Mon, 08 Aug 2016 17:56:21 GMT  
+		Size: 4.9 MB (4903746 bytes)
+	-	`sha256:2b3239a646826ca09dc17b87d9f604a3d7c4344d1c639cc1bae227f541fa1aff`  
+		Last Modified: Mon, 08 Aug 2016 17:56:26 GMT  
+		Size: 22.1 MB (22117985 bytes)
+	-	`sha256:7acad33f707c513ebab35d8d59e7ae6393643b73469cd0c60e3772f35a42da34`  
+		Last Modified: Mon, 08 Aug 2016 17:56:19 GMT  
+		Size: 198.0 B
+	-	`sha256:8556900dbdd5a16a97ee6c061c67397b151f2956ea6006406536615246672738`  
+		Last Modified: Mon, 08 Aug 2016 17:56:19 GMT  
+		Size: 557.3 KB (557261 bytes)
+	-	`sha256:8a928d4e95ba407befc0566ae7283ca26b841a7961a310b644480281770bca95`  
+		Last Modified: Mon, 08 Aug 2016 17:56:18 GMT  
+		Size: 161.0 B
 
 ## `jruby:1.7.25-jdk`
 
 ```console
-$ docker pull jruby@sha256:9d972437f12edf264c05a4a641b4ebb3d36980ff0e7284550e825a5f557f97cf
+$ docker pull jruby@sha256:41871a9293ea77daa8588872dbdebb62a13eee68b0d8474ee89ccea6bb94a0aa
 ```
 
 -	Platforms:
@@ -3199,111 +3199,111 @@ $ docker pull jruby@sha256:9d972437f12edf264c05a4a641b4ebb3d36980ff0e7284550e825
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **271.0 MB (270951069 bytes)**  
+-	Total Size: **270.8 MB (270830301 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aafe67af3393c45fc9762ea617b62573c0831343b074298803d68150ba2b9eea`
+-	Image ID: `sha256:c2092263c5484af0f1a038df656a50620f332aeedd3bad387c44c543f6ed3d49`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:37:09 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:05:16 GMT
+# Fri, 05 Aug 2016 22:02:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:10:09 GMT
+# Fri, 05 Aug 2016 22:06:43 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:10:09 GMT
+# Fri, 05 Aug 2016 22:06:43 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:10:10 GMT
+# Fri, 05 Aug 2016 22:06:45 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:10:10 GMT
+# Fri, 05 Aug 2016 22:06:46 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:47 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:48 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:48 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:12:21 GMT
+# Fri, 05 Aug 2016 22:08:45 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:12:23 GMT
+# Fri, 05 Aug 2016 22:08:48 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 21:50:27 GMT
+# Mon, 08 Aug 2016 17:55:42 GMT
 RUN apt-get update && apt-get install -y libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 21:50:27 GMT
+# Mon, 08 Aug 2016 17:55:43 GMT
 ENV JRUBY_VERSION=1.7.25
-# Fri, 10 Jun 2016 21:50:27 GMT
+# Mon, 08 Aug 2016 17:55:44 GMT
 ENV JRUBY_SHA1=cd15aef419f97cff274491e53fcfb8b88ec36785
-# Fri, 10 Jun 2016 21:50:33 GMT
+# Mon, 08 Aug 2016 17:55:51 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA1 /tmp/jruby.tar.gz" | sha1sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Fri, 10 Jun 2016 21:50:33 GMT
+# Mon, 08 Aug 2016 17:55:52 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 21:50:34 GMT
+# Mon, 08 Aug 2016 17:55:54 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Fri, 10 Jun 2016 21:50:43 GMT
+# Mon, 08 Aug 2016 17:56:03 GMT
 RUN gem install bundler
-# Fri, 10 Jun 2016 21:50:44 GMT
+# Mon, 08 Aug 2016 17:56:04 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 10 Jun 2016 21:50:44 GMT
+# Mon, 08 Aug 2016 17:56:05 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 10 Jun 2016 21:50:44 GMT
+# Mon, 08 Aug 2016 17:56:06 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 21:50:45 GMT
+# Mon, 08 Aug 2016 17:56:08 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Fri, 10 Jun 2016 21:50:45 GMT
+# Mon, 08 Aug 2016 17:56:09 GMT
 CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
-		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
-		Size: 42.5 MB (42525371 bytes)
-	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
-		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
-		Size: 622.3 KB (622260 bytes)
-	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
-		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-		Size: 219.0 B
-	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
-		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-		Size: 241.0 B
-	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
-		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
-		Size: 130.0 MB (130020091 bytes)
-	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
-		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
-		Size: 284.4 KB (284370 bytes)
-	-	`sha256:c796b68b8ad21049a27927cc75b11c2ab92c890bd18e88cddd324f76c18e5762`  
-		Last Modified: Mon, 27 Jun 2016 16:50:22 GMT  
-		Size: 4.9 MB (4922880 bytes)
-	-	`sha256:a91c7a7be99dbd092a7e6fc7adfca65111a0a1d67c1c0bb2da21c17c37623506`  
-		Last Modified: Mon, 27 Jun 2016 16:52:17 GMT  
-		Size: 22.1 MB (22118265 bytes)
-	-	`sha256:75ef7e2c79e0623749adb32105d8c76226e07095eaa2e0effd92f3c13a49a26e`  
-		Last Modified: Mon, 27 Jun 2016 16:52:11 GMT  
-		Size: 197.0 B
-	-	`sha256:07e54cbe2c35ea54e247137b29e1f4c2a1d62dfa86f236e8e3d4784b6138e783`  
-		Last Modified: Mon, 27 Jun 2016 16:52:12 GMT  
-		Size: 557.3 KB (557259 bytes)
-	-	`sha256:985dd1bd34b348015c2a7007b0d978675169335747d5eac17752da9900eacd07`  
-		Last Modified: Mon, 27 Jun 2016 16:52:11 GMT  
-		Size: 162.0 B
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
+		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
+		Size: 593.2 KB (593224 bytes)
+	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 220.0 B
+	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 240.0 B
+	-	`sha256:b987bd349aa094960d32b6cf01f28604a595155ff3f6e9ad4262e4b3eba480d7`  
+		Last Modified: Fri, 05 Aug 2016 22:17:58 GMT  
+		Size: 130.0 MB (129984944 bytes)
+	-	`sha256:cc07342899764251d877aeb04dd94a665b46ef2422afda45ad2b044d66d2dfe4`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 284.3 KB (284348 bytes)
+	-	`sha256:389edc47028895d5377dcaefc1f0c5e4443bb0a46a141c54335d87fce397bb6e`  
+		Last Modified: Mon, 08 Aug 2016 17:56:21 GMT  
+		Size: 4.9 MB (4903746 bytes)
+	-	`sha256:2b3239a646826ca09dc17b87d9f604a3d7c4344d1c639cc1bae227f541fa1aff`  
+		Last Modified: Mon, 08 Aug 2016 17:56:26 GMT  
+		Size: 22.1 MB (22117985 bytes)
+	-	`sha256:7acad33f707c513ebab35d8d59e7ae6393643b73469cd0c60e3772f35a42da34`  
+		Last Modified: Mon, 08 Aug 2016 17:56:19 GMT  
+		Size: 198.0 B
+	-	`sha256:8556900dbdd5a16a97ee6c061c67397b151f2956ea6006406536615246672738`  
+		Last Modified: Mon, 08 Aug 2016 17:56:19 GMT  
+		Size: 557.3 KB (557261 bytes)
+	-	`sha256:8a928d4e95ba407befc0566ae7283ca26b841a7961a310b644480281770bca95`  
+		Last Modified: Mon, 08 Aug 2016 17:56:18 GMT  
+		Size: 161.0 B
 
 ## `jruby:1.7-onbuild`
 
 ```console
-$ docker pull jruby@sha256:b61f201ea54874d9acafdb5019804f53d3e763a456f37497d94e9b4a5f82edbf
+$ docker pull jruby@sha256:11b1d9bf07fa1d1063d927c59a46416e6f7923e735b9068d5058a6651a549733
 ```
 
 -	Platforms:
@@ -3313,126 +3313,126 @@ $ docker pull jruby@sha256:b61f201ea54874d9acafdb5019804f53d3e763a456f37497d94e9
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **271.0 MB (270951197 bytes)**  
+-	Total Size: **270.8 MB (270830428 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:04eb5abe3dcdff2bf574e0ce8facc8a64c528f00a7b63819bca941cc285db10a`
+-	Image ID: `sha256:c1cb8c6a01f197dcfb5b6438078bc643b39f5e84ad743b6ce7085ff5c38c681b`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:37:09 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:05:16 GMT
+# Fri, 05 Aug 2016 22:02:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:10:09 GMT
+# Fri, 05 Aug 2016 22:06:43 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:10:09 GMT
+# Fri, 05 Aug 2016 22:06:43 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:10:10 GMT
+# Fri, 05 Aug 2016 22:06:45 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:10:10 GMT
+# Fri, 05 Aug 2016 22:06:46 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:47 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:48 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:48 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:12:21 GMT
+# Fri, 05 Aug 2016 22:08:45 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:12:23 GMT
+# Fri, 05 Aug 2016 22:08:48 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 21:50:27 GMT
+# Mon, 08 Aug 2016 17:55:42 GMT
 RUN apt-get update && apt-get install -y libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 21:50:27 GMT
+# Mon, 08 Aug 2016 17:55:43 GMT
 ENV JRUBY_VERSION=1.7.25
-# Fri, 10 Jun 2016 21:50:27 GMT
+# Mon, 08 Aug 2016 17:55:44 GMT
 ENV JRUBY_SHA1=cd15aef419f97cff274491e53fcfb8b88ec36785
-# Fri, 10 Jun 2016 21:50:33 GMT
+# Mon, 08 Aug 2016 17:55:51 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA1 /tmp/jruby.tar.gz" | sha1sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Fri, 10 Jun 2016 21:50:33 GMT
+# Mon, 08 Aug 2016 17:55:52 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 21:50:34 GMT
+# Mon, 08 Aug 2016 17:55:54 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Fri, 10 Jun 2016 21:50:43 GMT
+# Mon, 08 Aug 2016 17:56:03 GMT
 RUN gem install bundler
-# Fri, 10 Jun 2016 21:50:44 GMT
+# Mon, 08 Aug 2016 17:56:04 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 10 Jun 2016 21:50:44 GMT
+# Mon, 08 Aug 2016 17:56:05 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 10 Jun 2016 21:50:44 GMT
+# Mon, 08 Aug 2016 17:56:06 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 21:50:45 GMT
+# Mon, 08 Aug 2016 17:56:08 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Fri, 10 Jun 2016 21:50:45 GMT
+# Mon, 08 Aug 2016 17:56:09 GMT
 CMD ["irb"]
-# Fri, 10 Jun 2016 21:51:30 GMT
+# Mon, 08 Aug 2016 17:56:46 GMT
 RUN mkdir -p /usr/src/app
-# Fri, 10 Jun 2016 21:51:30 GMT
+# Mon, 08 Aug 2016 17:56:47 GMT
 WORKDIR /usr/src/app
-# Fri, 10 Jun 2016 21:51:30 GMT
+# Mon, 08 Aug 2016 17:56:47 GMT
 ONBUILD ADD Gemfile /usr/src/app/
-# Fri, 10 Jun 2016 21:51:30 GMT
+# Mon, 08 Aug 2016 17:56:48 GMT
 ONBUILD ADD Gemfile.lock /usr/src/app/
-# Fri, 10 Jun 2016 21:51:31 GMT
+# Mon, 08 Aug 2016 17:56:49 GMT
 ONBUILD RUN bundle install --system
-# Fri, 10 Jun 2016 21:51:31 GMT
+# Mon, 08 Aug 2016 17:56:50 GMT
 ONBUILD ADD . /usr/src/app
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
-		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
-		Size: 42.5 MB (42525371 bytes)
-	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
-		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
-		Size: 622.3 KB (622260 bytes)
-	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
-		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-		Size: 219.0 B
-	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
-		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-		Size: 241.0 B
-	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
-		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
-		Size: 130.0 MB (130020091 bytes)
-	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
-		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
-		Size: 284.4 KB (284370 bytes)
-	-	`sha256:c796b68b8ad21049a27927cc75b11c2ab92c890bd18e88cddd324f76c18e5762`  
-		Last Modified: Mon, 27 Jun 2016 16:50:22 GMT  
-		Size: 4.9 MB (4922880 bytes)
-	-	`sha256:a91c7a7be99dbd092a7e6fc7adfca65111a0a1d67c1c0bb2da21c17c37623506`  
-		Last Modified: Mon, 27 Jun 2016 16:52:17 GMT  
-		Size: 22.1 MB (22118265 bytes)
-	-	`sha256:75ef7e2c79e0623749adb32105d8c76226e07095eaa2e0effd92f3c13a49a26e`  
-		Last Modified: Mon, 27 Jun 2016 16:52:11 GMT  
-		Size: 197.0 B
-	-	`sha256:07e54cbe2c35ea54e247137b29e1f4c2a1d62dfa86f236e8e3d4784b6138e783`  
-		Last Modified: Mon, 27 Jun 2016 16:52:12 GMT  
-		Size: 557.3 KB (557259 bytes)
-	-	`sha256:985dd1bd34b348015c2a7007b0d978675169335747d5eac17752da9900eacd07`  
-		Last Modified: Mon, 27 Jun 2016 16:52:11 GMT  
-		Size: 162.0 B
-	-	`sha256:32d5bc21aff69a26cbb7c36b3c1b687448bb65756a587eb28081133cae7fbd69`  
-		Last Modified: Mon, 27 Jun 2016 16:52:38 GMT  
-		Size: 128.0 B
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
+		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
+		Size: 593.2 KB (593224 bytes)
+	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 220.0 B
+	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 240.0 B
+	-	`sha256:b987bd349aa094960d32b6cf01f28604a595155ff3f6e9ad4262e4b3eba480d7`  
+		Last Modified: Fri, 05 Aug 2016 22:17:58 GMT  
+		Size: 130.0 MB (129984944 bytes)
+	-	`sha256:cc07342899764251d877aeb04dd94a665b46ef2422afda45ad2b044d66d2dfe4`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 284.3 KB (284348 bytes)
+	-	`sha256:389edc47028895d5377dcaefc1f0c5e4443bb0a46a141c54335d87fce397bb6e`  
+		Last Modified: Mon, 08 Aug 2016 17:56:21 GMT  
+		Size: 4.9 MB (4903746 bytes)
+	-	`sha256:2b3239a646826ca09dc17b87d9f604a3d7c4344d1c639cc1bae227f541fa1aff`  
+		Last Modified: Mon, 08 Aug 2016 17:56:26 GMT  
+		Size: 22.1 MB (22117985 bytes)
+	-	`sha256:7acad33f707c513ebab35d8d59e7ae6393643b73469cd0c60e3772f35a42da34`  
+		Last Modified: Mon, 08 Aug 2016 17:56:19 GMT  
+		Size: 198.0 B
+	-	`sha256:8556900dbdd5a16a97ee6c061c67397b151f2956ea6006406536615246672738`  
+		Last Modified: Mon, 08 Aug 2016 17:56:19 GMT  
+		Size: 557.3 KB (557261 bytes)
+	-	`sha256:8a928d4e95ba407befc0566ae7283ca26b841a7961a310b644480281770bca95`  
+		Last Modified: Mon, 08 Aug 2016 17:56:18 GMT  
+		Size: 161.0 B
+	-	`sha256:1dad79257087fdfb89b98e2aa128327090df708fd794e2adb4c8f4721ef2d326`  
+		Last Modified: Mon, 08 Aug 2016 17:57:01 GMT  
+		Size: 127.0 B
 
 ## `jruby:1.7.25-onbuild`
 
 ```console
-$ docker pull jruby@sha256:b61f201ea54874d9acafdb5019804f53d3e763a456f37497d94e9b4a5f82edbf
+$ docker pull jruby@sha256:11b1d9bf07fa1d1063d927c59a46416e6f7923e735b9068d5058a6651a549733
 ```
 
 -	Platforms:
@@ -3442,118 +3442,118 @@ $ docker pull jruby@sha256:b61f201ea54874d9acafdb5019804f53d3e763a456f37497d94e9
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **271.0 MB (270951197 bytes)**  
+-	Total Size: **270.8 MB (270830428 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:04eb5abe3dcdff2bf574e0ce8facc8a64c528f00a7b63819bca941cc285db10a`
+-	Image ID: `sha256:c1cb8c6a01f197dcfb5b6438078bc643b39f5e84ad743b6ce7085ff5c38c681b`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:37:09 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:05:16 GMT
+# Fri, 05 Aug 2016 22:02:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:10:09 GMT
+# Fri, 05 Aug 2016 22:06:43 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:10:09 GMT
+# Fri, 05 Aug 2016 22:06:43 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:10:10 GMT
+# Fri, 05 Aug 2016 22:06:45 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:10:10 GMT
+# Fri, 05 Aug 2016 22:06:46 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:47 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:48 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:48 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:12:21 GMT
+# Fri, 05 Aug 2016 22:08:45 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:12:23 GMT
+# Fri, 05 Aug 2016 22:08:48 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 10 Jun 2016 21:50:27 GMT
+# Mon, 08 Aug 2016 17:55:42 GMT
 RUN apt-get update && apt-get install -y libc6-dev --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Fri, 10 Jun 2016 21:50:27 GMT
+# Mon, 08 Aug 2016 17:55:43 GMT
 ENV JRUBY_VERSION=1.7.25
-# Fri, 10 Jun 2016 21:50:27 GMT
+# Mon, 08 Aug 2016 17:55:44 GMT
 ENV JRUBY_SHA1=cd15aef419f97cff274491e53fcfb8b88ec36785
-# Fri, 10 Jun 2016 21:50:33 GMT
+# Mon, 08 Aug 2016 17:55:51 GMT
 RUN mkdir /opt/jruby   && curl -fSL https://s3.amazonaws.com/jruby.org/downloads/${JRUBY_VERSION}/jruby-bin-${JRUBY_VERSION}.tar.gz -o /tmp/jruby.tar.gz   && echo "$JRUBY_SHA1 /tmp/jruby.tar.gz" | sha1sum -c -   && tar -zx --strip-components=1 -f /tmp/jruby.tar.gz -C /opt/jruby   && rm /tmp/jruby.tar.gz   && update-alternatives --install /usr/local/bin/ruby ruby /opt/jruby/bin/jruby 1
-# Fri, 10 Jun 2016 21:50:33 GMT
+# Mon, 08 Aug 2016 17:55:52 GMT
 ENV PATH=/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 21:50:34 GMT
+# Mon, 08 Aug 2016 17:55:54 GMT
 RUN mkdir -p /opt/jruby/etc 	&& { 		echo 'install: --no-document'; 		echo 'update: --no-document'; 	} >> /opt/jruby/etc/gemrc
-# Fri, 10 Jun 2016 21:50:43 GMT
+# Mon, 08 Aug 2016 17:56:03 GMT
 RUN gem install bundler
-# Fri, 10 Jun 2016 21:50:44 GMT
+# Mon, 08 Aug 2016 17:56:04 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 10 Jun 2016 21:50:44 GMT
+# Mon, 08 Aug 2016 17:56:05 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 10 Jun 2016 21:50:44 GMT
+# Mon, 08 Aug 2016 17:56:06 GMT
 ENV PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 10 Jun 2016 21:50:45 GMT
+# Mon, 08 Aug 2016 17:56:08 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Fri, 10 Jun 2016 21:50:45 GMT
+# Mon, 08 Aug 2016 17:56:09 GMT
 CMD ["irb"]
-# Fri, 10 Jun 2016 21:51:30 GMT
+# Mon, 08 Aug 2016 17:56:46 GMT
 RUN mkdir -p /usr/src/app
-# Fri, 10 Jun 2016 21:51:30 GMT
+# Mon, 08 Aug 2016 17:56:47 GMT
 WORKDIR /usr/src/app
-# Fri, 10 Jun 2016 21:51:30 GMT
+# Mon, 08 Aug 2016 17:56:47 GMT
 ONBUILD ADD Gemfile /usr/src/app/
-# Fri, 10 Jun 2016 21:51:30 GMT
+# Mon, 08 Aug 2016 17:56:48 GMT
 ONBUILD ADD Gemfile.lock /usr/src/app/
-# Fri, 10 Jun 2016 21:51:31 GMT
+# Mon, 08 Aug 2016 17:56:49 GMT
 ONBUILD RUN bundle install --system
-# Fri, 10 Jun 2016 21:51:31 GMT
+# Mon, 08 Aug 2016 17:56:50 GMT
 ONBUILD ADD . /usr/src/app
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
-		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
-		Size: 42.5 MB (42525371 bytes)
-	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
-		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
-		Size: 622.3 KB (622260 bytes)
-	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
-		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-		Size: 219.0 B
-	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
-		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-		Size: 241.0 B
-	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
-		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
-		Size: 130.0 MB (130020091 bytes)
-	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
-		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
-		Size: 284.4 KB (284370 bytes)
-	-	`sha256:c796b68b8ad21049a27927cc75b11c2ab92c890bd18e88cddd324f76c18e5762`  
-		Last Modified: Mon, 27 Jun 2016 16:50:22 GMT  
-		Size: 4.9 MB (4922880 bytes)
-	-	`sha256:a91c7a7be99dbd092a7e6fc7adfca65111a0a1d67c1c0bb2da21c17c37623506`  
-		Last Modified: Mon, 27 Jun 2016 16:52:17 GMT  
-		Size: 22.1 MB (22118265 bytes)
-	-	`sha256:75ef7e2c79e0623749adb32105d8c76226e07095eaa2e0effd92f3c13a49a26e`  
-		Last Modified: Mon, 27 Jun 2016 16:52:11 GMT  
-		Size: 197.0 B
-	-	`sha256:07e54cbe2c35ea54e247137b29e1f4c2a1d62dfa86f236e8e3d4784b6138e783`  
-		Last Modified: Mon, 27 Jun 2016 16:52:12 GMT  
-		Size: 557.3 KB (557259 bytes)
-	-	`sha256:985dd1bd34b348015c2a7007b0d978675169335747d5eac17752da9900eacd07`  
-		Last Modified: Mon, 27 Jun 2016 16:52:11 GMT  
-		Size: 162.0 B
-	-	`sha256:32d5bc21aff69a26cbb7c36b3c1b687448bb65756a587eb28081133cae7fbd69`  
-		Last Modified: Mon, 27 Jun 2016 16:52:38 GMT  
-		Size: 128.0 B
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
+		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
+		Size: 593.2 KB (593224 bytes)
+	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 220.0 B
+	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 240.0 B
+	-	`sha256:b987bd349aa094960d32b6cf01f28604a595155ff3f6e9ad4262e4b3eba480d7`  
+		Last Modified: Fri, 05 Aug 2016 22:17:58 GMT  
+		Size: 130.0 MB (129984944 bytes)
+	-	`sha256:cc07342899764251d877aeb04dd94a665b46ef2422afda45ad2b044d66d2dfe4`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 284.3 KB (284348 bytes)
+	-	`sha256:389edc47028895d5377dcaefc1f0c5e4443bb0a46a141c54335d87fce397bb6e`  
+		Last Modified: Mon, 08 Aug 2016 17:56:21 GMT  
+		Size: 4.9 MB (4903746 bytes)
+	-	`sha256:2b3239a646826ca09dc17b87d9f604a3d7c4344d1c639cc1bae227f541fa1aff`  
+		Last Modified: Mon, 08 Aug 2016 17:56:26 GMT  
+		Size: 22.1 MB (22117985 bytes)
+	-	`sha256:7acad33f707c513ebab35d8d59e7ae6393643b73469cd0c60e3772f35a42da34`  
+		Last Modified: Mon, 08 Aug 2016 17:56:19 GMT  
+		Size: 198.0 B
+	-	`sha256:8556900dbdd5a16a97ee6c061c67397b151f2956ea6006406536615246672738`  
+		Last Modified: Mon, 08 Aug 2016 17:56:19 GMT  
+		Size: 557.3 KB (557261 bytes)
+	-	`sha256:8a928d4e95ba407befc0566ae7283ca26b841a7961a310b644480281770bca95`  
+		Last Modified: Mon, 08 Aug 2016 17:56:18 GMT  
+		Size: 161.0 B
+	-	`sha256:1dad79257087fdfb89b98e2aa128327090df708fd794e2adb4c8f4721ef2d326`  
+		Last Modified: Mon, 08 Aug 2016 17:57:01 GMT  
+		Size: 127.0 B

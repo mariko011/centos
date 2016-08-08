@@ -14,7 +14,7 @@
 ## `clojure:latest`
 
 ```console
-$ docker pull clojure@sha256:6ea8d9f56935f89e8339094c18ed5e79ff0e01ecc6a14fb89f2e25f0fe4a0570
+$ docker pull clojure@sha256:62062c5c7dc6b666c27ca02f5ba2603b9159e1cf9101ff3003b6774d80bfc0a2
 ```
 
 -	Platforms:
@@ -24,94 +24,94 @@ $ docker pull clojure@sha256:6ea8d9f56935f89e8339094c18ed5e79ff0e01ecc6a14fb89f2
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **257.4 MB (257362229 bytes)**  
+-	Total Size: **257.2 MB (257239816 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33ed1624fbb80ea0af6c755d20e98fda79e3d24ff3d05005e43e9f83d886a9db`
+-	Image ID: `sha256:25e79607eabe673bdc71041bbb50447af199201b369d68624398f3095c441344`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:37:09 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:05:16 GMT
+# Fri, 05 Aug 2016 22:02:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:10:09 GMT
+# Fri, 05 Aug 2016 22:06:43 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:10:09 GMT
+# Fri, 05 Aug 2016 22:06:43 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:10:10 GMT
+# Fri, 05 Aug 2016 22:06:45 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:10:10 GMT
+# Fri, 05 Aug 2016 22:06:46 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:47 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:48 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:48 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:12:21 GMT
+# Fri, 05 Aug 2016 22:08:45 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:12:23 GMT
+# Fri, 05 Aug 2016 22:08:48 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Thu, 09 Jun 2016 22:55:31 GMT
+# Mon, 08 Aug 2016 17:33:30 GMT
 MAINTAINER Paul Lam <paul@quantisan.com>
-# Thu, 09 Jun 2016 22:55:31 GMT
+# Mon, 08 Aug 2016 17:33:31 GMT
 ENV LEIN_VERSION=2.6.1
-# Thu, 09 Jun 2016 22:55:31 GMT
+# Mon, 08 Aug 2016 17:33:32 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Thu, 09 Jun 2016 22:55:32 GMT
+# Mon, 08 Aug 2016 17:33:32 GMT
 WORKDIR /tmp
-# Thu, 09 Jun 2016 22:56:39 GMT
+# Mon, 08 Aug 2016 17:34:36 GMT
 RUN mkdir -p $LEIN_INSTALL   && wget --quiet https://github.com/technomancy/leiningen/archive/$LEIN_VERSION.tar.gz   && echo "Comparing archive checksum ..."   && echo "f7643a14fd8a4d5c19eeb416db8ea549d8d2c18a *$LEIN_VERSION.tar.gz" | sha1sum -c -   && mkdir ./leiningen   && tar -xzf $LEIN_VERSION.tar.gz  -C ./leiningen/ --strip-components=1   && mv leiningen/bin/lein-pkg $LEIN_INSTALL/lein   && rm -rf $LEIN_VERSION.tar.gz ./leiningen   && chmod 0755 $LEIN_INSTALL/lein   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2E708FB2FCECA07FF8184E275A92E04305696D78   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar   &&  apt-get update && apt-get install rlfe && rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:56:40 GMT
+# Mon, 08 Aug 2016 17:34:37 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Thu, 09 Jun 2016 22:56:40 GMT
+# Mon, 08 Aug 2016 17:34:38 GMT
 ENV LEIN_ROOT=1
-# Thu, 09 Jun 2016 22:56:43 GMT
+# Mon, 08 Aug 2016 17:34:41 GMT
 RUN lein
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
-		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
-		Size: 42.5 MB (42525371 bytes)
-	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
-		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
-		Size: 622.3 KB (622260 bytes)
-	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
-		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-		Size: 219.0 B
-	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
-		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-		Size: 241.0 B
-	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
-		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
-		Size: 130.0 MB (130020091 bytes)
-	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
-		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
-		Size: 284.4 KB (284370 bytes)
-	-	`sha256:899e7212ec5e61713adca812771ee2934e3fe053f217367c853fa84cd87df0d6`  
-		Last Modified: Thu, 23 Jun 2016 17:33:18 GMT  
-		Size: 14.0 MB (14009757 bytes)
-	-	`sha256:c429b41b74148abfd68d3385493399ad690c71cca19ed0a6856db6b94fd4cef4`  
-		Last Modified: Thu, 23 Jun 2016 17:33:17 GMT  
-		Size: 166.0 B
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
+		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
+		Size: 593.2 KB (593224 bytes)
+	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 220.0 B
+	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 240.0 B
+	-	`sha256:b987bd349aa094960d32b6cf01f28604a595155ff3f6e9ad4262e4b3eba480d7`  
+		Last Modified: Fri, 05 Aug 2016 22:17:58 GMT  
+		Size: 130.0 MB (129984944 bytes)
+	-	`sha256:cc07342899764251d877aeb04dd94a665b46ef2422afda45ad2b044d66d2dfe4`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 284.3 KB (284348 bytes)
+	-	`sha256:8450b2cbdbed25811aab6e816cbd7a05e803d00daa831d74e4117082cc654c8c`  
+		Last Modified: Mon, 08 Aug 2016 17:34:53 GMT  
+		Size: 14.0 MB (13988701 bytes)
+	-	`sha256:d025f4c605d17f227584029b1a250ed3743f7f9b5df75316c898dda3156e0db3`  
+		Last Modified: Mon, 08 Aug 2016 17:34:50 GMT  
+		Size: 165.0 B
 
 ## `clojure:lein-2.6.1`
 
 ```console
-$ docker pull clojure@sha256:6ea8d9f56935f89e8339094c18ed5e79ff0e01ecc6a14fb89f2e25f0fe4a0570
+$ docker pull clojure@sha256:62062c5c7dc6b666c27ca02f5ba2603b9159e1cf9101ff3003b6774d80bfc0a2
 ```
 
 -	Platforms:
@@ -121,94 +121,94 @@ $ docker pull clojure@sha256:6ea8d9f56935f89e8339094c18ed5e79ff0e01ecc6a14fb89f2
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **257.4 MB (257362229 bytes)**  
+-	Total Size: **257.2 MB (257239816 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33ed1624fbb80ea0af6c755d20e98fda79e3d24ff3d05005e43e9f83d886a9db`
+-	Image ID: `sha256:25e79607eabe673bdc71041bbb50447af199201b369d68624398f3095c441344`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:37:09 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:05:16 GMT
+# Fri, 05 Aug 2016 22:02:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:10:09 GMT
+# Fri, 05 Aug 2016 22:06:43 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:10:09 GMT
+# Fri, 05 Aug 2016 22:06:43 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:10:10 GMT
+# Fri, 05 Aug 2016 22:06:45 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:10:10 GMT
+# Fri, 05 Aug 2016 22:06:46 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:47 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:48 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:48 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:12:21 GMT
+# Fri, 05 Aug 2016 22:08:45 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:12:23 GMT
+# Fri, 05 Aug 2016 22:08:48 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Thu, 09 Jun 2016 22:55:31 GMT
+# Mon, 08 Aug 2016 17:33:30 GMT
 MAINTAINER Paul Lam <paul@quantisan.com>
-# Thu, 09 Jun 2016 22:55:31 GMT
+# Mon, 08 Aug 2016 17:33:31 GMT
 ENV LEIN_VERSION=2.6.1
-# Thu, 09 Jun 2016 22:55:31 GMT
+# Mon, 08 Aug 2016 17:33:32 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Thu, 09 Jun 2016 22:55:32 GMT
+# Mon, 08 Aug 2016 17:33:32 GMT
 WORKDIR /tmp
-# Thu, 09 Jun 2016 22:56:39 GMT
+# Mon, 08 Aug 2016 17:34:36 GMT
 RUN mkdir -p $LEIN_INSTALL   && wget --quiet https://github.com/technomancy/leiningen/archive/$LEIN_VERSION.tar.gz   && echo "Comparing archive checksum ..."   && echo "f7643a14fd8a4d5c19eeb416db8ea549d8d2c18a *$LEIN_VERSION.tar.gz" | sha1sum -c -   && mkdir ./leiningen   && tar -xzf $LEIN_VERSION.tar.gz  -C ./leiningen/ --strip-components=1   && mv leiningen/bin/lein-pkg $LEIN_INSTALL/lein   && rm -rf $LEIN_VERSION.tar.gz ./leiningen   && chmod 0755 $LEIN_INSTALL/lein   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2E708FB2FCECA07FF8184E275A92E04305696D78   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar   &&  apt-get update && apt-get install rlfe && rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:56:40 GMT
+# Mon, 08 Aug 2016 17:34:37 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Thu, 09 Jun 2016 22:56:40 GMT
+# Mon, 08 Aug 2016 17:34:38 GMT
 ENV LEIN_ROOT=1
-# Thu, 09 Jun 2016 22:56:43 GMT
+# Mon, 08 Aug 2016 17:34:41 GMT
 RUN lein
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
-		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
-		Size: 42.5 MB (42525371 bytes)
-	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
-		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
-		Size: 622.3 KB (622260 bytes)
-	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
-		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-		Size: 219.0 B
-	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
-		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-		Size: 241.0 B
-	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
-		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
-		Size: 130.0 MB (130020091 bytes)
-	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
-		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
-		Size: 284.4 KB (284370 bytes)
-	-	`sha256:899e7212ec5e61713adca812771ee2934e3fe053f217367c853fa84cd87df0d6`  
-		Last Modified: Thu, 23 Jun 2016 17:33:18 GMT  
-		Size: 14.0 MB (14009757 bytes)
-	-	`sha256:c429b41b74148abfd68d3385493399ad690c71cca19ed0a6856db6b94fd4cef4`  
-		Last Modified: Thu, 23 Jun 2016 17:33:17 GMT  
-		Size: 166.0 B
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
+		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
+		Size: 593.2 KB (593224 bytes)
+	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 220.0 B
+	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 240.0 B
+	-	`sha256:b987bd349aa094960d32b6cf01f28604a595155ff3f6e9ad4262e4b3eba480d7`  
+		Last Modified: Fri, 05 Aug 2016 22:17:58 GMT  
+		Size: 130.0 MB (129984944 bytes)
+	-	`sha256:cc07342899764251d877aeb04dd94a665b46ef2422afda45ad2b044d66d2dfe4`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 284.3 KB (284348 bytes)
+	-	`sha256:8450b2cbdbed25811aab6e816cbd7a05e803d00daa831d74e4117082cc654c8c`  
+		Last Modified: Mon, 08 Aug 2016 17:34:53 GMT  
+		Size: 14.0 MB (13988701 bytes)
+	-	`sha256:d025f4c605d17f227584029b1a250ed3743f7f9b5df75316c898dda3156e0db3`  
+		Last Modified: Mon, 08 Aug 2016 17:34:50 GMT  
+		Size: 165.0 B
 
 ## `clojure:onbuild`
 
 ```console
-$ docker pull clojure@sha256:4c7ce32cb188a6c44191c244657c09b8a7738d968bd189fce305d6280bf54a04
+$ docker pull clojure@sha256:6fd8927a3d4fb932c90746b98e4c10dc74598c2ff607c1f4b4ea00384b33e3a0
 ```
 
 -	Platforms:
@@ -218,109 +218,109 @@ $ docker pull clojure@sha256:4c7ce32cb188a6c44191c244657c09b8a7738d968bd189fce30
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **257.4 MB (257362357 bytes)**  
+-	Total Size: **257.2 MB (257239943 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e2ba26d91fdb186054450a943f1b228404862df14d0bbffb3c1f96284d4e64d1`
+-	Image ID: `sha256:ee045336526b9fe91de1226852b1eb61d1b93f7f1ebd3ebdd36877ff7d779057`
 -	Default Command: `["lein","run"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:37:09 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:05:16 GMT
+# Fri, 05 Aug 2016 22:02:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:10:09 GMT
+# Fri, 05 Aug 2016 22:06:43 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:10:09 GMT
+# Fri, 05 Aug 2016 22:06:43 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:10:10 GMT
+# Fri, 05 Aug 2016 22:06:45 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:10:10 GMT
+# Fri, 05 Aug 2016 22:06:46 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:47 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:48 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:48 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:12:21 GMT
+# Fri, 05 Aug 2016 22:08:45 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:12:23 GMT
+# Fri, 05 Aug 2016 22:08:48 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Thu, 09 Jun 2016 22:55:31 GMT
+# Mon, 08 Aug 2016 17:33:30 GMT
 MAINTAINER Paul Lam <paul@quantisan.com>
-# Thu, 09 Jun 2016 22:55:31 GMT
+# Mon, 08 Aug 2016 17:33:31 GMT
 ENV LEIN_VERSION=2.6.1
-# Thu, 09 Jun 2016 22:55:31 GMT
+# Mon, 08 Aug 2016 17:33:32 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Thu, 09 Jun 2016 22:55:32 GMT
+# Mon, 08 Aug 2016 17:33:32 GMT
 WORKDIR /tmp
-# Thu, 09 Jun 2016 22:56:39 GMT
+# Mon, 08 Aug 2016 17:34:36 GMT
 RUN mkdir -p $LEIN_INSTALL   && wget --quiet https://github.com/technomancy/leiningen/archive/$LEIN_VERSION.tar.gz   && echo "Comparing archive checksum ..."   && echo "f7643a14fd8a4d5c19eeb416db8ea549d8d2c18a *$LEIN_VERSION.tar.gz" | sha1sum -c -   && mkdir ./leiningen   && tar -xzf $LEIN_VERSION.tar.gz  -C ./leiningen/ --strip-components=1   && mv leiningen/bin/lein-pkg $LEIN_INSTALL/lein   && rm -rf $LEIN_VERSION.tar.gz ./leiningen   && chmod 0755 $LEIN_INSTALL/lein   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2E708FB2FCECA07FF8184E275A92E04305696D78   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar   &&  apt-get update && apt-get install rlfe && rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:56:40 GMT
+# Mon, 08 Aug 2016 17:34:37 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Thu, 09 Jun 2016 22:56:40 GMT
+# Mon, 08 Aug 2016 17:34:38 GMT
 ENV LEIN_ROOT=1
-# Thu, 09 Jun 2016 22:56:43 GMT
+# Mon, 08 Aug 2016 17:34:41 GMT
 RUN lein
-# Thu, 09 Jun 2016 22:56:44 GMT
+# Mon, 08 Aug 2016 17:35:11 GMT
 MAINTAINER Kirillov Alexandr <kirillov@evrone.ru>
-# Thu, 09 Jun 2016 22:56:44 GMT
+# Mon, 08 Aug 2016 17:35:12 GMT
 WORKDIR /usr/src/app
-# Thu, 09 Jun 2016 22:56:45 GMT
+# Mon, 08 Aug 2016 17:35:12 GMT
 ONBUILD COPY project.clj /usr/src/app/
-# Thu, 09 Jun 2016 22:56:45 GMT
+# Mon, 08 Aug 2016 17:35:13 GMT
 ONBUILD RUN lein deps
-# Thu, 09 Jun 2016 22:56:45 GMT
+# Mon, 08 Aug 2016 17:35:14 GMT
 ONBUILD COPY . /usr/src/app
-# Thu, 09 Jun 2016 22:56:46 GMT
+# Mon, 08 Aug 2016 17:35:15 GMT
 CMD ["lein" "run"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
-		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
-		Size: 42.5 MB (42525371 bytes)
-	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
-		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
-		Size: 622.3 KB (622260 bytes)
-	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
-		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-		Size: 219.0 B
-	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
-		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-		Size: 241.0 B
-	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
-		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
-		Size: 130.0 MB (130020091 bytes)
-	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
-		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
-		Size: 284.4 KB (284370 bytes)
-	-	`sha256:899e7212ec5e61713adca812771ee2934e3fe053f217367c853fa84cd87df0d6`  
-		Last Modified: Thu, 23 Jun 2016 17:33:18 GMT  
-		Size: 14.0 MB (14009757 bytes)
-	-	`sha256:c429b41b74148abfd68d3385493399ad690c71cca19ed0a6856db6b94fd4cef4`  
-		Last Modified: Thu, 23 Jun 2016 17:33:17 GMT  
-		Size: 166.0 B
-	-	`sha256:b638df94bb44027dfb07212c4431d9c07a69ae705a54e56683c6f978778b94b1`  
-		Last Modified: Thu, 23 Jun 2016 17:33:37 GMT  
-		Size: 128.0 B
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
+		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
+		Size: 593.2 KB (593224 bytes)
+	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 220.0 B
+	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 240.0 B
+	-	`sha256:b987bd349aa094960d32b6cf01f28604a595155ff3f6e9ad4262e4b3eba480d7`  
+		Last Modified: Fri, 05 Aug 2016 22:17:58 GMT  
+		Size: 130.0 MB (129984944 bytes)
+	-	`sha256:cc07342899764251d877aeb04dd94a665b46ef2422afda45ad2b044d66d2dfe4`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 284.3 KB (284348 bytes)
+	-	`sha256:8450b2cbdbed25811aab6e816cbd7a05e803d00daa831d74e4117082cc654c8c`  
+		Last Modified: Mon, 08 Aug 2016 17:34:53 GMT  
+		Size: 14.0 MB (13988701 bytes)
+	-	`sha256:d025f4c605d17f227584029b1a250ed3743f7f9b5df75316c898dda3156e0db3`  
+		Last Modified: Mon, 08 Aug 2016 17:34:50 GMT  
+		Size: 165.0 B
+	-	`sha256:34b5cc6cfbb3a42d42264e4402e3dcce3b6fd928bc850866374dfb6ece9ffe52`  
+		Last Modified: Mon, 08 Aug 2016 17:35:24 GMT  
+		Size: 127.0 B
 
 ## `clojure:lein-2.6.1-onbuild`
 
 ```console
-$ docker pull clojure@sha256:4c7ce32cb188a6c44191c244657c09b8a7738d968bd189fce305d6280bf54a04
+$ docker pull clojure@sha256:6fd8927a3d4fb932c90746b98e4c10dc74598c2ff607c1f4b4ea00384b33e3a0
 ```
 
 -	Platforms:
@@ -330,104 +330,104 @@ $ docker pull clojure@sha256:4c7ce32cb188a6c44191c244657c09b8a7738d968bd189fce30
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **257.4 MB (257362357 bytes)**  
+-	Total Size: **257.2 MB (257239943 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e2ba26d91fdb186054450a943f1b228404862df14d0bbffb3c1f96284d4e64d1`
+-	Image ID: `sha256:ee045336526b9fe91de1226852b1eb61d1b93f7f1ebd3ebdd36877ff7d779057`
 -	Default Command: `["lein","run"]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 21:28:42 GMT
-ADD file:76679eeb94129df23c99013487d6b6bd779d2107bf07d194a524fdbb6a961530 in /
-# Thu, 09 Jun 2016 21:28:43 GMT
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
-# Thu, 09 Jun 2016 21:35:50 GMT
+# Thu, 28 Jul 2016 17:57:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 21:37:09 GMT
+# Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:05:16 GMT
+# Fri, 05 Aug 2016 22:02:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:10:09 GMT
+# Fri, 05 Aug 2016 22:06:43 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Thu, 09 Jun 2016 22:10:09 GMT
+# Fri, 05 Aug 2016 22:06:43 GMT
 ENV LANG=C.UTF-8
-# Thu, 09 Jun 2016 22:10:10 GMT
+# Fri, 05 Aug 2016 22:06:45 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 09 Jun 2016 22:10:10 GMT
+# Fri, 05 Aug 2016 22:06:46 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:47 GMT
 ENV JAVA_VERSION=8u91
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:48 GMT
 ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Thu, 09 Jun 2016 22:10:11 GMT
+# Fri, 05 Aug 2016 22:06:48 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Thu, 09 Jun 2016 22:12:21 GMT
+# Fri, 05 Aug 2016 22:08:45 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Thu, 09 Jun 2016 22:12:23 GMT
+# Fri, 05 Aug 2016 22:08:48 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Thu, 09 Jun 2016 22:55:31 GMT
+# Mon, 08 Aug 2016 17:33:30 GMT
 MAINTAINER Paul Lam <paul@quantisan.com>
-# Thu, 09 Jun 2016 22:55:31 GMT
+# Mon, 08 Aug 2016 17:33:31 GMT
 ENV LEIN_VERSION=2.6.1
-# Thu, 09 Jun 2016 22:55:31 GMT
+# Mon, 08 Aug 2016 17:33:32 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Thu, 09 Jun 2016 22:55:32 GMT
+# Mon, 08 Aug 2016 17:33:32 GMT
 WORKDIR /tmp
-# Thu, 09 Jun 2016 22:56:39 GMT
+# Mon, 08 Aug 2016 17:34:36 GMT
 RUN mkdir -p $LEIN_INSTALL   && wget --quiet https://github.com/technomancy/leiningen/archive/$LEIN_VERSION.tar.gz   && echo "Comparing archive checksum ..."   && echo "f7643a14fd8a4d5c19eeb416db8ea549d8d2c18a *$LEIN_VERSION.tar.gz" | sha1sum -c -   && mkdir ./leiningen   && tar -xzf $LEIN_VERSION.tar.gz  -C ./leiningen/ --strip-components=1   && mv leiningen/bin/lein-pkg $LEIN_INSTALL/lein   && rm -rf $LEIN_VERSION.tar.gz ./leiningen   && chmod 0755 $LEIN_INSTALL/lein   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2E708FB2FCECA07FF8184E275A92E04305696D78   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar   &&  apt-get update && apt-get install rlfe && rm -rf /var/lib/apt/lists/*
-# Thu, 09 Jun 2016 22:56:40 GMT
+# Mon, 08 Aug 2016 17:34:37 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Thu, 09 Jun 2016 22:56:40 GMT
+# Mon, 08 Aug 2016 17:34:38 GMT
 ENV LEIN_ROOT=1
-# Thu, 09 Jun 2016 22:56:43 GMT
+# Mon, 08 Aug 2016 17:34:41 GMT
 RUN lein
-# Thu, 09 Jun 2016 22:56:44 GMT
+# Mon, 08 Aug 2016 17:35:11 GMT
 MAINTAINER Kirillov Alexandr <kirillov@evrone.ru>
-# Thu, 09 Jun 2016 22:56:44 GMT
+# Mon, 08 Aug 2016 17:35:12 GMT
 WORKDIR /usr/src/app
-# Thu, 09 Jun 2016 22:56:45 GMT
+# Mon, 08 Aug 2016 17:35:12 GMT
 ONBUILD COPY project.clj /usr/src/app/
-# Thu, 09 Jun 2016 22:56:45 GMT
+# Mon, 08 Aug 2016 17:35:13 GMT
 ONBUILD RUN lein deps
-# Thu, 09 Jun 2016 22:56:45 GMT
+# Mon, 08 Aug 2016 17:35:14 GMT
 ONBUILD COPY . /usr/src/app
-# Thu, 09 Jun 2016 22:56:46 GMT
+# Mon, 08 Aug 2016 17:35:15 GMT
 CMD ["lein" "run"]
 ```
 
 -	Layers:
-	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
-		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
-	-	`sha256:ab30c63719b10dd434ddbe896879bd9b637fe4e16749a94d3dc827450dc2a437`  
-		Last Modified: Thu, 09 Jun 2016 21:46:24 GMT  
-		Size: 18.5 MB (18547219 bytes)
-	-	`sha256:c6072700a24252bd71f6c5d2cabf5978ddf324a959b05bad417d8b3789f8df33`  
-		Last Modified: Thu, 09 Jun 2016 21:46:52 GMT  
-		Size: 42.5 MB (42525371 bytes)
-	-	`sha256:5f444d0704271a846e0b83af62071bc825052d6eabba96121bc0acda9c8f9e64`  
-		Last Modified: Thu, 09 Jun 2016 22:17:38 GMT  
-		Size: 622.3 KB (622260 bytes)
-	-	`sha256:620b5227cf380167d746f024d97b53f26fafcbd253df4cf56b3b3a056bf12ae1`  
-		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-		Size: 219.0 B
-	-	`sha256:3cfd33220efaaad496080e9fdb124ddb9ba07742852c2db816c9870fe2e10c2a`  
-		Last Modified: Thu, 09 Jun 2016 22:20:33 GMT  
-		Size: 241.0 B
-	-	`sha256:864a98a84dd2bba52cf57d13161517ee01e2966e72c3ac842c6a3d49c07dcb37`  
-		Last Modified: Thu, 09 Jun 2016 22:21:03 GMT  
-		Size: 130.0 MB (130020091 bytes)
-	-	`sha256:734cc28150de3e42c9e581aa1d7da3f378fcde2a00719a2d42ec376519050365`  
-		Last Modified: Thu, 09 Jun 2016 22:20:34 GMT  
-		Size: 284.4 KB (284370 bytes)
-	-	`sha256:899e7212ec5e61713adca812771ee2934e3fe053f217367c853fa84cd87df0d6`  
-		Last Modified: Thu, 23 Jun 2016 17:33:18 GMT  
-		Size: 14.0 MB (14009757 bytes)
-	-	`sha256:c429b41b74148abfd68d3385493399ad690c71cca19ed0a6856db6b94fd4cef4`  
-		Last Modified: Thu, 23 Jun 2016 17:33:17 GMT  
-		Size: 166.0 B
-	-	`sha256:b638df94bb44027dfb07212c4431d9c07a69ae705a54e56683c6f978778b94b1`  
-		Last Modified: Thu, 23 Jun 2016 17:33:37 GMT  
-		Size: 128.0 B
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
+		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
+		Size: 593.2 KB (593224 bytes)
+	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 220.0 B
+	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 240.0 B
+	-	`sha256:b987bd349aa094960d32b6cf01f28604a595155ff3f6e9ad4262e4b3eba480d7`  
+		Last Modified: Fri, 05 Aug 2016 22:17:58 GMT  
+		Size: 130.0 MB (129984944 bytes)
+	-	`sha256:cc07342899764251d877aeb04dd94a665b46ef2422afda45ad2b044d66d2dfe4`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 284.3 KB (284348 bytes)
+	-	`sha256:8450b2cbdbed25811aab6e816cbd7a05e803d00daa831d74e4117082cc654c8c`  
+		Last Modified: Mon, 08 Aug 2016 17:34:53 GMT  
+		Size: 14.0 MB (13988701 bytes)
+	-	`sha256:d025f4c605d17f227584029b1a250ed3743f7f9b5df75316c898dda3156e0db3`  
+		Last Modified: Mon, 08 Aug 2016 17:34:50 GMT  
+		Size: 165.0 B
+	-	`sha256:34b5cc6cfbb3a42d42264e4402e3dcce3b6fd928bc850866374dfb6ece9ffe52`  
+		Last Modified: Mon, 08 Aug 2016 17:35:24 GMT  
+		Size: 127.0 B
 
 ## `clojure:alpine`
 
