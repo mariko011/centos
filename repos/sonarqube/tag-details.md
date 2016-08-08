@@ -5,6 +5,7 @@
 -	[`sonarqube:latest`](#sonarqubelatest)
 -	[`sonarqube:lts`](#sonarqubelts)
 -	[`sonarqube:5.6.1`](#sonarqube561)
+-	[`sonarqube:alpine`](#sonarqubealpine)
 -	[`sonarqube:lts-alpine`](#sonarqubelts-alpine)
 -	[`sonarqube:5.6.1-alpine`](#sonarqube561-alpine)
 
@@ -297,6 +298,76 @@ ENTRYPOINT &{["./bin/run.sh"]}
 		Size: 117.7 MB (117669896 bytes)
 	-	`sha256:ad024036392eec15de5b8e8f1d1cf188315e54e412fc9dd6cb82b9c20be26507`  
 		Last Modified: Thu, 28 Jul 2016 20:41:53 GMT  
+		Size: 433.0 B
+
+## `sonarqube:alpine`
+
+```console
+$ docker pull sonarqube@sha256:251ad3fdd4bc7ca0b3d72d29390ef1b7ab893859803ded359d1c41da9f256c5e
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `sonarqube:alpine` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **172.6 MB (172647309 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:9a7ab9d21fcff860158547f0d1c1cce1718b317847964e1a8ae47414656fb137`
+-	Entrypoint: `[".\/bin\/run.sh"]`
+
+```dockerfile
+# Thu, 23 Jun 2016 19:55:18 GMT
+ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
+# Thu, 23 Jun 2016 20:34:53 GMT
+ENV LANG=C.UTF-8
+# Thu, 23 Jun 2016 20:34:55 GMT
+RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
+# Thu, 23 Jun 2016 20:38:56 GMT
+ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
+# Thu, 07 Jul 2016 19:04:53 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
+# Thu, 07 Jul 2016 19:04:53 GMT
+ENV JAVA_VERSION=8u92
+# Thu, 07 Jul 2016 19:04:54 GMT
+ENV JAVA_ALPINE_VERSION=8.92.14-r1
+# Thu, 07 Jul 2016 19:05:06 GMT
+RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
+# Thu, 07 Jul 2016 22:01:59 GMT
+MAINTAINER David Gageot <david.gageot@sonarsource.com>
+# Thu, 28 Jul 2016 20:41:19 GMT
+ENV SONAR_VERSION=5.6.1 SONARQUBE_HOME=/opt/sonarqube SONARQUBE_JDBC_USERNAME=sonar SONARQUBE_JDBC_PASSWORD=sonar SONARQUBE_JDBC_URL=
+# Thu, 28 Jul 2016 20:41:19 GMT
+EXPOSE 9000/tcp
+# Thu, 28 Jul 2016 20:41:38 GMT
+RUN set -x     && apk add --no-cache gnupg unzip curl     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys F1182E81C792928921DBCAB4CFCA4A29D26468DE     && mkdir /opt     && cd /opt     && curl -o sonarqube.zip -fSL https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip     && curl -o sonarqube.zip.asc -fSL https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip.asc     && gpg --batch --verify sonarqube.zip.asc sonarqube.zip     && unzip sonarqube.zip     && mv sonarqube-$SONAR_VERSION sonarqube     && rm sonarqube.zip*     && rm -rf $SONARQUBE_HOME/bin/*
+# Thu, 28 Jul 2016 20:41:40 GMT
+VOLUME [/opt/sonarqube/data /opt/sonarqube/extensions]
+# Thu, 28 Jul 2016 20:41:40 GMT
+WORKDIR /opt/sonarqube
+# Thu, 28 Jul 2016 20:41:42 GMT
+COPY file:83e169627dc34c4308fd222d47a1ae7c388a283efdc49980a885a8788308a052 in /opt/sonarqube/bin/
+# Thu, 28 Jul 2016 20:41:43 GMT
+ENTRYPOINT &{["./bin/run.sh"]}
+```
+
+-	Layers:
+	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
+		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
+		Size: 2.3 MB (2310286 bytes)
+	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
+		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
+		Size: 230.0 B
+	-	`sha256:87d57f795d926435b5621342da8fc8555bd966d7c4b15c6eb202e16737505c61`  
+		Last Modified: Thu, 07 Jul 2016 19:12:16 GMT  
+		Size: 49.3 MB (49325243 bytes)
+	-	`sha256:f902e5c14a302c1a0c0d1a5d39e59a63d15efae485b4b2214efbd7a84fa6e9f6`  
+		Last Modified: Thu, 28 Jul 2016 20:42:56 GMT  
+		Size: 121.0 MB (121011117 bytes)
+	-	`sha256:95e039e01e0fa1e380e32d48cbe2380368537c30cb63fa54e7670a293437ef16`  
+		Last Modified: Thu, 28 Jul 2016 20:42:42 GMT  
 		Size: 433.0 B
 
 ## `sonarqube:lts-alpine`
