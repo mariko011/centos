@@ -2,53 +2,53 @@
 
 # Tags of `nats`
 
--	[`nats:0.8.1`](#nats081)
+-	[`nats:0.9.2`](#nats092)
 -	[`nats:latest`](#natslatest)
 
-## `nats:0.8.1`
+## `nats:0.9.2`
 
 ```console
-$ docker pull nats@sha256:3329c27c3e434febd0de986b5685e5fdcf1290e728b9a6c212cdf983ba3a4e41
+$ docker pull nats@sha256:34e912f2fe65f9133f9b2f76cee746bd1ac8dc7a096fc3a4183fcfa588e44972
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `nats:0.8.1` - linux; amd64
+### `nats:0.9.2` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2331456 bytes)**  
+-	Total Size: **2.3 MB (2342123 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2cf296f80485ad17deda79f2ca2e3ec8ea8ade9f1d66187c4cd441ada78b75f8`
+-	Image ID: `sha256:1825534684291765f5e136add0df0265d83dad9fa56f87e9e9e662dc5dfced97`
 -	Entrypoint: `["\/gnatsd","-c","\/gnatsd.conf"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 23:39:53 GMT
-COPY file:e2895eeea45b66dd22e3904b4141d74119a446291838f9c843e11c8cdfa486fa in /gnatsd
-# Thu, 09 Jun 2016 23:39:54 GMT
+# Mon, 08 Aug 2016 21:47:21 GMT
+COPY file:960f822db9856304c80d96a6c7db2ee5351800a2c920b1da59882f48e8751d94 in /gnatsd
+# Mon, 08 Aug 2016 21:47:27 GMT
 COPY file:8fad70d15db71db30b9945fba2b3d29035a631ee4fe410e797aef6981c2a1879 in /gnatsd.conf
-# Thu, 09 Jun 2016 23:39:54 GMT
+# Mon, 08 Aug 2016 21:47:28 GMT
 EXPOSE 4222/tcp 6222/tcp 8222/tcp
-# Thu, 09 Jun 2016 23:39:54 GMT
+# Mon, 08 Aug 2016 21:47:35 GMT
 ENTRYPOINT &{["/gnatsd" "-c" "/gnatsd.conf"]}
-# Thu, 09 Jun 2016 23:39:54 GMT
+# Mon, 08 Aug 2016 21:47:41 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:d38d231498c64bd98f65236fec5c3fe5c0971fcc0a3dc0b147f2148cfae32f15`  
-		Last Modified: Thu, 09 Jun 2016 23:40:01 GMT  
-		Size: 2.3 MB (2330975 bytes)
-	-	`sha256:cd47d5b9b1598c97337f529a800e8c2f4c88c349b51f3d1245bad0793590aeaf`  
-		Last Modified: Thu, 09 Jun 2016 23:39:59 GMT  
+	-	`sha256:198ced0710f543e99d16c1ec47eda955cbbf2bc2f8026342d92834d786f12bb3`  
+		Last Modified: Mon, 08 Aug 2016 21:47:52 GMT  
+		Size: 2.3 MB (2341642 bytes)
+	-	`sha256:c4a8a53b4b533c3914d301607f33235aed068a80bf67787158aeb0d079259290`  
+		Last Modified: Mon, 08 Aug 2016 21:47:53 GMT  
 		Size: 481.0 B
 
 ## `nats:latest`
 
 ```console
-$ docker pull nats@sha256:3329c27c3e434febd0de986b5685e5fdcf1290e728b9a6c212cdf983ba3a4e41
+$ docker pull nats@sha256:34e912f2fe65f9133f9b2f76cee746bd1ac8dc7a096fc3a4183fcfa588e44972
 ```
 
 -	Platforms:
@@ -58,29 +58,29 @@ $ docker pull nats@sha256:3329c27c3e434febd0de986b5685e5fdcf1290e728b9a6c212cdf9
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2331456 bytes)**  
+-	Total Size: **2.3 MB (2342123 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2cf296f80485ad17deda79f2ca2e3ec8ea8ade9f1d66187c4cd441ada78b75f8`
+-	Image ID: `sha256:1825534684291765f5e136add0df0265d83dad9fa56f87e9e9e662dc5dfced97`
 -	Entrypoint: `["\/gnatsd","-c","\/gnatsd.conf"]`
 -	Default Command: `[]`
 
 ```dockerfile
-# Thu, 09 Jun 2016 23:39:53 GMT
-COPY file:e2895eeea45b66dd22e3904b4141d74119a446291838f9c843e11c8cdfa486fa in /gnatsd
-# Thu, 09 Jun 2016 23:39:54 GMT
+# Mon, 08 Aug 2016 21:47:21 GMT
+COPY file:960f822db9856304c80d96a6c7db2ee5351800a2c920b1da59882f48e8751d94 in /gnatsd
+# Mon, 08 Aug 2016 21:47:27 GMT
 COPY file:8fad70d15db71db30b9945fba2b3d29035a631ee4fe410e797aef6981c2a1879 in /gnatsd.conf
-# Thu, 09 Jun 2016 23:39:54 GMT
+# Mon, 08 Aug 2016 21:47:28 GMT
 EXPOSE 4222/tcp 6222/tcp 8222/tcp
-# Thu, 09 Jun 2016 23:39:54 GMT
+# Mon, 08 Aug 2016 21:47:35 GMT
 ENTRYPOINT &{["/gnatsd" "-c" "/gnatsd.conf"]}
-# Thu, 09 Jun 2016 23:39:54 GMT
+# Mon, 08 Aug 2016 21:47:41 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:d38d231498c64bd98f65236fec5c3fe5c0971fcc0a3dc0b147f2148cfae32f15`  
-		Last Modified: Thu, 09 Jun 2016 23:40:01 GMT  
-		Size: 2.3 MB (2330975 bytes)
-	-	`sha256:cd47d5b9b1598c97337f529a800e8c2f4c88c349b51f3d1245bad0793590aeaf`  
-		Last Modified: Thu, 09 Jun 2016 23:39:59 GMT  
+	-	`sha256:198ced0710f543e99d16c1ec47eda955cbbf2bc2f8026342d92834d786f12bb3`  
+		Last Modified: Mon, 08 Aug 2016 21:47:52 GMT  
+		Size: 2.3 MB (2341642 bytes)
+	-	`sha256:c4a8a53b4b533c3914d301607f33235aed068a80bf67787158aeb0d079259290`  
+		Last Modified: Mon, 08 Aug 2016 21:47:53 GMT  
 		Size: 481.0 B
