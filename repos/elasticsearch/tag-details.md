@@ -19,7 +19,7 @@
 -	[`elasticsearch:2.3`](#elasticsearch23)
 -	[`elasticsearch:2`](#elasticsearch2)
 -	[`elasticsearch:latest`](#elasticsearchlatest)
--	[`elasticsearch:5.0.0-alpha4`](#elasticsearch500-alpha4)
+-	[`elasticsearch:5.0.0-alpha5`](#elasticsearch500-alpha5)
 -	[`elasticsearch:5.0.0`](#elasticsearch500)
 -	[`elasticsearch:5.0`](#elasticsearch50)
 -	[`elasticsearch:5`](#elasticsearch5)
@@ -2132,22 +2132,22 @@ CMD ["elasticsearch"]
 		Last Modified: Wed, 03 Aug 2016 22:36:19 GMT  
 		Size: 469.0 B
 
-## `elasticsearch:5.0.0-alpha4`
+## `elasticsearch:5.0.0-alpha5`
 
 ```console
-$ docker pull elasticsearch@sha256:501bdd817cca3dc7ea3d9e90e4c5270f5469e6914fb78e3cdd9378c5b9d134a1
+$ docker pull elasticsearch@sha256:6f6e6c7515a8ee5a25265489f1b8e084daad61fdce190095346d7e14f01ab111
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `elasticsearch:5.0.0-alpha4` - linux; amd64
+### `elasticsearch:5.0.0-alpha5` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.0 MB (152985455 bytes)**  
+-	Total Size: **157.1 MB (157118307 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f5f9732d14020cb842ef1676faa8b5861c792a1fa185641907c3b7fa7309aa60`
+-	Image ID: `sha256:14e70fa6c555e497b6aa2a32efbfb0dcddca6096deb9f9ff7cadf3c600400280`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["elasticsearch"]`
 
@@ -2184,31 +2184,31 @@ ENV GOSU_VERSION=1.7
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 # Wed, 03 Aug 2016 20:45:47 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Wed, 03 Aug 2016 20:51:23 GMT
-ENV ELASTICSEARCH_VERSION=5.0.0-alpha4
-# Wed, 03 Aug 2016 20:51:24 GMT
+# Tue, 09 Aug 2016 20:09:57 GMT
+ENV ELASTICSEARCH_VERSION=5.0.0-alpha5
+# Tue, 09 Aug 2016 20:09:58 GMT
 ENV ELASTICSEARCH_REPO_BASE=http://packages.elasticsearch.org/elasticsearch/5.x/debian
-# Wed, 03 Aug 2016 20:51:26 GMT
+# Tue, 09 Aug 2016 20:09:59 GMT
 RUN echo "deb $ELASTICSEARCH_REPO_BASE stable main" > /etc/apt/sources.list.d/elasticsearch.list
-# Wed, 03 Aug 2016 20:52:26 GMT
+# Tue, 09 Aug 2016 20:11:00 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends elasticsearch=$ELASTICSEARCH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 03 Aug 2016 20:52:27 GMT
+# Tue, 09 Aug 2016 20:11:01 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 03 Aug 2016 20:52:28 GMT
+# Tue, 09 Aug 2016 20:11:01 GMT
 WORKDIR /usr/share/elasticsearch
-# Wed, 03 Aug 2016 20:52:29 GMT
+# Tue, 09 Aug 2016 20:11:02 GMT
 RUN set -ex 	&& for path in 		./data 		./logs 		./config 		./config/scripts 	; do 		mkdir -p "$path"; 		chown -R elasticsearch:elasticsearch "$path"; 	done
-# Wed, 03 Aug 2016 20:52:31 GMT
+# Tue, 09 Aug 2016 20:11:03 GMT
 COPY dir:66d691a8b9d6cba7c5f563f417110f6739567ec3dc58ff126823448a5faa05b7 in ./config
-# Wed, 03 Aug 2016 20:52:31 GMT
+# Tue, 09 Aug 2016 20:11:03 GMT
 VOLUME [/usr/share/elasticsearch/data]
-# Wed, 03 Aug 2016 20:52:33 GMT
+# Tue, 09 Aug 2016 20:11:04 GMT
 COPY file:4e7f545ce5a4556808c0760a1dbf219cb9aab1bf750b56480663d05716aac376 in /
-# Wed, 03 Aug 2016 20:52:33 GMT
+# Tue, 09 Aug 2016 20:11:04 GMT
 EXPOSE 9200/tcp 9300/tcp
-# Wed, 03 Aug 2016 20:52:34 GMT
+# Tue, 09 Aug 2016 20:11:05 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Wed, 03 Aug 2016 20:52:35 GMT
+# Tue, 09 Aug 2016 20:11:05 GMT
 CMD ["elasticsearch"]
 ```
 
@@ -2240,26 +2240,26 @@ CMD ["elasticsearch"]
 	-	`sha256:b218b8ae55567c31bb9fc89900b023141b2ae57620522bf793cc976ce03c4576`  
 		Last Modified: Wed, 03 Aug 2016 20:47:12 GMT  
 		Size: 1.4 KB (1447 bytes)
-	-	`sha256:c1d2be7686fca8cfcef508c671f9b39aaaca81d309da0f24fd3e8c8ea5961b65`  
-		Last Modified: Wed, 03 Aug 2016 20:52:45 GMT  
-		Size: 227.0 B
-	-	`sha256:bec6c218ac72092a627b4be8fe3dbc335414879abfc9f4a395b64264ac1c89d3`  
-		Last Modified: Wed, 03 Aug 2016 20:52:47 GMT  
-		Size: 28.1 MB (28079845 bytes)
-	-	`sha256:66cd30d95196ced7bbe152e770e826917f3b5752cf143986b6df705bacd5765d`  
-		Last Modified: Wed, 03 Aug 2016 20:52:44 GMT  
-		Size: 213.0 B
-	-	`sha256:7958d573672b0ab419aedb4580a2588d9d022d5b9a87b114ba2c7e3775720da0`  
-		Last Modified: Wed, 03 Aug 2016 20:52:44 GMT  
-		Size: 640.0 B
-	-	`sha256:088f20acd75857b7b632012286271b7351e2b13cc8918ef7e8fc653ea9fb12d3`  
-		Last Modified: Wed, 03 Aug 2016 20:52:44 GMT  
-		Size: 468.0 B
+	-	`sha256:8ed4f191898221fa5fae12324ec55cc79c71b17fa859235cb69a78a18faad702`  
+		Last Modified: Tue, 09 Aug 2016 20:14:22 GMT  
+		Size: 225.0 B
+	-	`sha256:d5eda9107766025152de711c06b4940a6c3e074fd1d70dfb5c4ccb5acb36d013`  
+		Last Modified: Tue, 09 Aug 2016 20:14:26 GMT  
+		Size: 32.2 MB (32212695 bytes)
+	-	`sha256:0c4a5be87a746ea74b029f363d94ca2c5b55c06f660037048e054a3f6fef1658`  
+		Last Modified: Tue, 09 Aug 2016 20:14:22 GMT  
+		Size: 215.0 B
+	-	`sha256:c3b38106024b397aa6846033c4cf0c8830d4e4cc8a1126f48cf5f56dcf343cbc`  
+		Last Modified: Tue, 09 Aug 2016 20:14:24 GMT  
+		Size: 641.0 B
+	-	`sha256:8391bb00a08161507b5472fc6ddb0739a264595e0ec7845b5d07141b78a7c944`  
+		Last Modified: Tue, 09 Aug 2016 20:14:23 GMT  
+		Size: 469.0 B
 
 ## `elasticsearch:5.0.0`
 
 ```console
-$ docker pull elasticsearch@sha256:501bdd817cca3dc7ea3d9e90e4c5270f5469e6914fb78e3cdd9378c5b9d134a1
+$ docker pull elasticsearch@sha256:6f6e6c7515a8ee5a25265489f1b8e084daad61fdce190095346d7e14f01ab111
 ```
 
 -	Platforms:
@@ -2269,9 +2269,9 @@ $ docker pull elasticsearch@sha256:501bdd817cca3dc7ea3d9e90e4c5270f5469e6914fb78
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.0 MB (152985455 bytes)**  
+-	Total Size: **157.1 MB (157118307 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f5f9732d14020cb842ef1676faa8b5861c792a1fa185641907c3b7fa7309aa60`
+-	Image ID: `sha256:14e70fa6c555e497b6aa2a32efbfb0dcddca6096deb9f9ff7cadf3c600400280`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["elasticsearch"]`
 
@@ -2308,31 +2308,31 @@ ENV GOSU_VERSION=1.7
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 # Wed, 03 Aug 2016 20:45:47 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Wed, 03 Aug 2016 20:51:23 GMT
-ENV ELASTICSEARCH_VERSION=5.0.0-alpha4
-# Wed, 03 Aug 2016 20:51:24 GMT
+# Tue, 09 Aug 2016 20:09:57 GMT
+ENV ELASTICSEARCH_VERSION=5.0.0-alpha5
+# Tue, 09 Aug 2016 20:09:58 GMT
 ENV ELASTICSEARCH_REPO_BASE=http://packages.elasticsearch.org/elasticsearch/5.x/debian
-# Wed, 03 Aug 2016 20:51:26 GMT
+# Tue, 09 Aug 2016 20:09:59 GMT
 RUN echo "deb $ELASTICSEARCH_REPO_BASE stable main" > /etc/apt/sources.list.d/elasticsearch.list
-# Wed, 03 Aug 2016 20:52:26 GMT
+# Tue, 09 Aug 2016 20:11:00 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends elasticsearch=$ELASTICSEARCH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 03 Aug 2016 20:52:27 GMT
+# Tue, 09 Aug 2016 20:11:01 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 03 Aug 2016 20:52:28 GMT
+# Tue, 09 Aug 2016 20:11:01 GMT
 WORKDIR /usr/share/elasticsearch
-# Wed, 03 Aug 2016 20:52:29 GMT
+# Tue, 09 Aug 2016 20:11:02 GMT
 RUN set -ex 	&& for path in 		./data 		./logs 		./config 		./config/scripts 	; do 		mkdir -p "$path"; 		chown -R elasticsearch:elasticsearch "$path"; 	done
-# Wed, 03 Aug 2016 20:52:31 GMT
+# Tue, 09 Aug 2016 20:11:03 GMT
 COPY dir:66d691a8b9d6cba7c5f563f417110f6739567ec3dc58ff126823448a5faa05b7 in ./config
-# Wed, 03 Aug 2016 20:52:31 GMT
+# Tue, 09 Aug 2016 20:11:03 GMT
 VOLUME [/usr/share/elasticsearch/data]
-# Wed, 03 Aug 2016 20:52:33 GMT
+# Tue, 09 Aug 2016 20:11:04 GMT
 COPY file:4e7f545ce5a4556808c0760a1dbf219cb9aab1bf750b56480663d05716aac376 in /
-# Wed, 03 Aug 2016 20:52:33 GMT
+# Tue, 09 Aug 2016 20:11:04 GMT
 EXPOSE 9200/tcp 9300/tcp
-# Wed, 03 Aug 2016 20:52:34 GMT
+# Tue, 09 Aug 2016 20:11:05 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Wed, 03 Aug 2016 20:52:35 GMT
+# Tue, 09 Aug 2016 20:11:05 GMT
 CMD ["elasticsearch"]
 ```
 
@@ -2364,26 +2364,26 @@ CMD ["elasticsearch"]
 	-	`sha256:b218b8ae55567c31bb9fc89900b023141b2ae57620522bf793cc976ce03c4576`  
 		Last Modified: Wed, 03 Aug 2016 20:47:12 GMT  
 		Size: 1.4 KB (1447 bytes)
-	-	`sha256:c1d2be7686fca8cfcef508c671f9b39aaaca81d309da0f24fd3e8c8ea5961b65`  
-		Last Modified: Wed, 03 Aug 2016 20:52:45 GMT  
-		Size: 227.0 B
-	-	`sha256:bec6c218ac72092a627b4be8fe3dbc335414879abfc9f4a395b64264ac1c89d3`  
-		Last Modified: Wed, 03 Aug 2016 20:52:47 GMT  
-		Size: 28.1 MB (28079845 bytes)
-	-	`sha256:66cd30d95196ced7bbe152e770e826917f3b5752cf143986b6df705bacd5765d`  
-		Last Modified: Wed, 03 Aug 2016 20:52:44 GMT  
-		Size: 213.0 B
-	-	`sha256:7958d573672b0ab419aedb4580a2588d9d022d5b9a87b114ba2c7e3775720da0`  
-		Last Modified: Wed, 03 Aug 2016 20:52:44 GMT  
-		Size: 640.0 B
-	-	`sha256:088f20acd75857b7b632012286271b7351e2b13cc8918ef7e8fc653ea9fb12d3`  
-		Last Modified: Wed, 03 Aug 2016 20:52:44 GMT  
-		Size: 468.0 B
+	-	`sha256:8ed4f191898221fa5fae12324ec55cc79c71b17fa859235cb69a78a18faad702`  
+		Last Modified: Tue, 09 Aug 2016 20:14:22 GMT  
+		Size: 225.0 B
+	-	`sha256:d5eda9107766025152de711c06b4940a6c3e074fd1d70dfb5c4ccb5acb36d013`  
+		Last Modified: Tue, 09 Aug 2016 20:14:26 GMT  
+		Size: 32.2 MB (32212695 bytes)
+	-	`sha256:0c4a5be87a746ea74b029f363d94ca2c5b55c06f660037048e054a3f6fef1658`  
+		Last Modified: Tue, 09 Aug 2016 20:14:22 GMT  
+		Size: 215.0 B
+	-	`sha256:c3b38106024b397aa6846033c4cf0c8830d4e4cc8a1126f48cf5f56dcf343cbc`  
+		Last Modified: Tue, 09 Aug 2016 20:14:24 GMT  
+		Size: 641.0 B
+	-	`sha256:8391bb00a08161507b5472fc6ddb0739a264595e0ec7845b5d07141b78a7c944`  
+		Last Modified: Tue, 09 Aug 2016 20:14:23 GMT  
+		Size: 469.0 B
 
 ## `elasticsearch:5.0`
 
 ```console
-$ docker pull elasticsearch@sha256:501bdd817cca3dc7ea3d9e90e4c5270f5469e6914fb78e3cdd9378c5b9d134a1
+$ docker pull elasticsearch@sha256:6f6e6c7515a8ee5a25265489f1b8e084daad61fdce190095346d7e14f01ab111
 ```
 
 -	Platforms:
@@ -2393,9 +2393,9 @@ $ docker pull elasticsearch@sha256:501bdd817cca3dc7ea3d9e90e4c5270f5469e6914fb78
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.0 MB (152985455 bytes)**  
+-	Total Size: **157.1 MB (157118307 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f5f9732d14020cb842ef1676faa8b5861c792a1fa185641907c3b7fa7309aa60`
+-	Image ID: `sha256:14e70fa6c555e497b6aa2a32efbfb0dcddca6096deb9f9ff7cadf3c600400280`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["elasticsearch"]`
 
@@ -2432,31 +2432,31 @@ ENV GOSU_VERSION=1.7
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 # Wed, 03 Aug 2016 20:45:47 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Wed, 03 Aug 2016 20:51:23 GMT
-ENV ELASTICSEARCH_VERSION=5.0.0-alpha4
-# Wed, 03 Aug 2016 20:51:24 GMT
+# Tue, 09 Aug 2016 20:09:57 GMT
+ENV ELASTICSEARCH_VERSION=5.0.0-alpha5
+# Tue, 09 Aug 2016 20:09:58 GMT
 ENV ELASTICSEARCH_REPO_BASE=http://packages.elasticsearch.org/elasticsearch/5.x/debian
-# Wed, 03 Aug 2016 20:51:26 GMT
+# Tue, 09 Aug 2016 20:09:59 GMT
 RUN echo "deb $ELASTICSEARCH_REPO_BASE stable main" > /etc/apt/sources.list.d/elasticsearch.list
-# Wed, 03 Aug 2016 20:52:26 GMT
+# Tue, 09 Aug 2016 20:11:00 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends elasticsearch=$ELASTICSEARCH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 03 Aug 2016 20:52:27 GMT
+# Tue, 09 Aug 2016 20:11:01 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 03 Aug 2016 20:52:28 GMT
+# Tue, 09 Aug 2016 20:11:01 GMT
 WORKDIR /usr/share/elasticsearch
-# Wed, 03 Aug 2016 20:52:29 GMT
+# Tue, 09 Aug 2016 20:11:02 GMT
 RUN set -ex 	&& for path in 		./data 		./logs 		./config 		./config/scripts 	; do 		mkdir -p "$path"; 		chown -R elasticsearch:elasticsearch "$path"; 	done
-# Wed, 03 Aug 2016 20:52:31 GMT
+# Tue, 09 Aug 2016 20:11:03 GMT
 COPY dir:66d691a8b9d6cba7c5f563f417110f6739567ec3dc58ff126823448a5faa05b7 in ./config
-# Wed, 03 Aug 2016 20:52:31 GMT
+# Tue, 09 Aug 2016 20:11:03 GMT
 VOLUME [/usr/share/elasticsearch/data]
-# Wed, 03 Aug 2016 20:52:33 GMT
+# Tue, 09 Aug 2016 20:11:04 GMT
 COPY file:4e7f545ce5a4556808c0760a1dbf219cb9aab1bf750b56480663d05716aac376 in /
-# Wed, 03 Aug 2016 20:52:33 GMT
+# Tue, 09 Aug 2016 20:11:04 GMT
 EXPOSE 9200/tcp 9300/tcp
-# Wed, 03 Aug 2016 20:52:34 GMT
+# Tue, 09 Aug 2016 20:11:05 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Wed, 03 Aug 2016 20:52:35 GMT
+# Tue, 09 Aug 2016 20:11:05 GMT
 CMD ["elasticsearch"]
 ```
 
@@ -2488,26 +2488,26 @@ CMD ["elasticsearch"]
 	-	`sha256:b218b8ae55567c31bb9fc89900b023141b2ae57620522bf793cc976ce03c4576`  
 		Last Modified: Wed, 03 Aug 2016 20:47:12 GMT  
 		Size: 1.4 KB (1447 bytes)
-	-	`sha256:c1d2be7686fca8cfcef508c671f9b39aaaca81d309da0f24fd3e8c8ea5961b65`  
-		Last Modified: Wed, 03 Aug 2016 20:52:45 GMT  
-		Size: 227.0 B
-	-	`sha256:bec6c218ac72092a627b4be8fe3dbc335414879abfc9f4a395b64264ac1c89d3`  
-		Last Modified: Wed, 03 Aug 2016 20:52:47 GMT  
-		Size: 28.1 MB (28079845 bytes)
-	-	`sha256:66cd30d95196ced7bbe152e770e826917f3b5752cf143986b6df705bacd5765d`  
-		Last Modified: Wed, 03 Aug 2016 20:52:44 GMT  
-		Size: 213.0 B
-	-	`sha256:7958d573672b0ab419aedb4580a2588d9d022d5b9a87b114ba2c7e3775720da0`  
-		Last Modified: Wed, 03 Aug 2016 20:52:44 GMT  
-		Size: 640.0 B
-	-	`sha256:088f20acd75857b7b632012286271b7351e2b13cc8918ef7e8fc653ea9fb12d3`  
-		Last Modified: Wed, 03 Aug 2016 20:52:44 GMT  
-		Size: 468.0 B
+	-	`sha256:8ed4f191898221fa5fae12324ec55cc79c71b17fa859235cb69a78a18faad702`  
+		Last Modified: Tue, 09 Aug 2016 20:14:22 GMT  
+		Size: 225.0 B
+	-	`sha256:d5eda9107766025152de711c06b4940a6c3e074fd1d70dfb5c4ccb5acb36d013`  
+		Last Modified: Tue, 09 Aug 2016 20:14:26 GMT  
+		Size: 32.2 MB (32212695 bytes)
+	-	`sha256:0c4a5be87a746ea74b029f363d94ca2c5b55c06f660037048e054a3f6fef1658`  
+		Last Modified: Tue, 09 Aug 2016 20:14:22 GMT  
+		Size: 215.0 B
+	-	`sha256:c3b38106024b397aa6846033c4cf0c8830d4e4cc8a1126f48cf5f56dcf343cbc`  
+		Last Modified: Tue, 09 Aug 2016 20:14:24 GMT  
+		Size: 641.0 B
+	-	`sha256:8391bb00a08161507b5472fc6ddb0739a264595e0ec7845b5d07141b78a7c944`  
+		Last Modified: Tue, 09 Aug 2016 20:14:23 GMT  
+		Size: 469.0 B
 
 ## `elasticsearch:5`
 
 ```console
-$ docker pull elasticsearch@sha256:501bdd817cca3dc7ea3d9e90e4c5270f5469e6914fb78e3cdd9378c5b9d134a1
+$ docker pull elasticsearch@sha256:6f6e6c7515a8ee5a25265489f1b8e084daad61fdce190095346d7e14f01ab111
 ```
 
 -	Platforms:
@@ -2517,9 +2517,9 @@ $ docker pull elasticsearch@sha256:501bdd817cca3dc7ea3d9e90e4c5270f5469e6914fb78
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.0 MB (152985455 bytes)**  
+-	Total Size: **157.1 MB (157118307 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f5f9732d14020cb842ef1676faa8b5861c792a1fa185641907c3b7fa7309aa60`
+-	Image ID: `sha256:14e70fa6c555e497b6aa2a32efbfb0dcddca6096deb9f9ff7cadf3c600400280`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["elasticsearch"]`
 
@@ -2556,31 +2556,31 @@ ENV GOSU_VERSION=1.7
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
 # Wed, 03 Aug 2016 20:45:47 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Wed, 03 Aug 2016 20:51:23 GMT
-ENV ELASTICSEARCH_VERSION=5.0.0-alpha4
-# Wed, 03 Aug 2016 20:51:24 GMT
+# Tue, 09 Aug 2016 20:09:57 GMT
+ENV ELASTICSEARCH_VERSION=5.0.0-alpha5
+# Tue, 09 Aug 2016 20:09:58 GMT
 ENV ELASTICSEARCH_REPO_BASE=http://packages.elasticsearch.org/elasticsearch/5.x/debian
-# Wed, 03 Aug 2016 20:51:26 GMT
+# Tue, 09 Aug 2016 20:09:59 GMT
 RUN echo "deb $ELASTICSEARCH_REPO_BASE stable main" > /etc/apt/sources.list.d/elasticsearch.list
-# Wed, 03 Aug 2016 20:52:26 GMT
+# Tue, 09 Aug 2016 20:11:00 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends elasticsearch=$ELASTICSEARCH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 03 Aug 2016 20:52:27 GMT
+# Tue, 09 Aug 2016 20:11:01 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 03 Aug 2016 20:52:28 GMT
+# Tue, 09 Aug 2016 20:11:01 GMT
 WORKDIR /usr/share/elasticsearch
-# Wed, 03 Aug 2016 20:52:29 GMT
+# Tue, 09 Aug 2016 20:11:02 GMT
 RUN set -ex 	&& for path in 		./data 		./logs 		./config 		./config/scripts 	; do 		mkdir -p "$path"; 		chown -R elasticsearch:elasticsearch "$path"; 	done
-# Wed, 03 Aug 2016 20:52:31 GMT
+# Tue, 09 Aug 2016 20:11:03 GMT
 COPY dir:66d691a8b9d6cba7c5f563f417110f6739567ec3dc58ff126823448a5faa05b7 in ./config
-# Wed, 03 Aug 2016 20:52:31 GMT
+# Tue, 09 Aug 2016 20:11:03 GMT
 VOLUME [/usr/share/elasticsearch/data]
-# Wed, 03 Aug 2016 20:52:33 GMT
+# Tue, 09 Aug 2016 20:11:04 GMT
 COPY file:4e7f545ce5a4556808c0760a1dbf219cb9aab1bf750b56480663d05716aac376 in /
-# Wed, 03 Aug 2016 20:52:33 GMT
+# Tue, 09 Aug 2016 20:11:04 GMT
 EXPOSE 9200/tcp 9300/tcp
-# Wed, 03 Aug 2016 20:52:34 GMT
+# Tue, 09 Aug 2016 20:11:05 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Wed, 03 Aug 2016 20:52:35 GMT
+# Tue, 09 Aug 2016 20:11:05 GMT
 CMD ["elasticsearch"]
 ```
 
@@ -2612,18 +2612,18 @@ CMD ["elasticsearch"]
 	-	`sha256:b218b8ae55567c31bb9fc89900b023141b2ae57620522bf793cc976ce03c4576`  
 		Last Modified: Wed, 03 Aug 2016 20:47:12 GMT  
 		Size: 1.4 KB (1447 bytes)
-	-	`sha256:c1d2be7686fca8cfcef508c671f9b39aaaca81d309da0f24fd3e8c8ea5961b65`  
-		Last Modified: Wed, 03 Aug 2016 20:52:45 GMT  
-		Size: 227.0 B
-	-	`sha256:bec6c218ac72092a627b4be8fe3dbc335414879abfc9f4a395b64264ac1c89d3`  
-		Last Modified: Wed, 03 Aug 2016 20:52:47 GMT  
-		Size: 28.1 MB (28079845 bytes)
-	-	`sha256:66cd30d95196ced7bbe152e770e826917f3b5752cf143986b6df705bacd5765d`  
-		Last Modified: Wed, 03 Aug 2016 20:52:44 GMT  
-		Size: 213.0 B
-	-	`sha256:7958d573672b0ab419aedb4580a2588d9d022d5b9a87b114ba2c7e3775720da0`  
-		Last Modified: Wed, 03 Aug 2016 20:52:44 GMT  
-		Size: 640.0 B
-	-	`sha256:088f20acd75857b7b632012286271b7351e2b13cc8918ef7e8fc653ea9fb12d3`  
-		Last Modified: Wed, 03 Aug 2016 20:52:44 GMT  
-		Size: 468.0 B
+	-	`sha256:8ed4f191898221fa5fae12324ec55cc79c71b17fa859235cb69a78a18faad702`  
+		Last Modified: Tue, 09 Aug 2016 20:14:22 GMT  
+		Size: 225.0 B
+	-	`sha256:d5eda9107766025152de711c06b4940a6c3e074fd1d70dfb5c4ccb5acb36d013`  
+		Last Modified: Tue, 09 Aug 2016 20:14:26 GMT  
+		Size: 32.2 MB (32212695 bytes)
+	-	`sha256:0c4a5be87a746ea74b029f363d94ca2c5b55c06f660037048e054a3f6fef1658`  
+		Last Modified: Tue, 09 Aug 2016 20:14:22 GMT  
+		Size: 215.0 B
+	-	`sha256:c3b38106024b397aa6846033c4cf0c8830d4e4cc8a1126f48cf5f56dcf343cbc`  
+		Last Modified: Tue, 09 Aug 2016 20:14:24 GMT  
+		Size: 641.0 B
+	-	`sha256:8391bb00a08161507b5472fc6ddb0739a264595e0ec7845b5d07141b78a7c944`  
+		Last Modified: Tue, 09 Aug 2016 20:14:23 GMT  
+		Size: 469.0 B
