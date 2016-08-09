@@ -2,27 +2,27 @@
 
 # Tags of `piwik`
 
--	[`piwik:2.16.1`](#piwik2161)
+-	[`piwik:2.16.2`](#piwik2162)
 -	[`piwik:2.16`](#piwik216)
 -	[`piwik:2`](#piwik2)
 -	[`piwik:latest`](#piwiklatest)
 
-## `piwik:2.16.1`
+## `piwik:2.16.2`
 
 ```console
-$ docker pull piwik@sha256:d76a6974a71c81a400d0ce2a80e69cd1e2e4df5bb3e0741bf44c7352f957d66f
+$ docker pull piwik@sha256:ed4f717cc0fd51d61ffe4f423d42985e88d607c1498840729bddd618fb9cc1ae
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `piwik:2.16.1` - linux; amd64
+### `piwik:2.16.2` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **186.1 MB (186123428 bytes)**  
+-	Total Size: **185.6 MB (185570788 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc454209d9dba15c44cfa54093c606062120ade0a306ee410636068a8462f00f`
+-	Image ID: `sha256:e6e916924ad4d5dab847af3ee8326821ed212db342bf5a26e3fde5e64fdc7ce5`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -73,21 +73,21 @@ RUN apt-get update && apt-get install -y       libjpeg-dev       libfreetype6-de
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr  && docker-php-ext-install gd mbstring mysql pdo_mysql zip
 # Mon, 01 Aug 2016 18:15:43 GMT
 RUN pecl install APCu geoip
-# Mon, 01 Aug 2016 18:15:44 GMT
-ENV PIWIK_VERSION=2.16.1
-# Mon, 01 Aug 2016 18:15:55 GMT
+# Tue, 09 Aug 2016 17:00:58 GMT
+ENV PIWIK_VERSION=2.16.2
+# Tue, 09 Aug 2016 17:01:09 GMT
 RUN curl -fsSL -o piwik.tar.gz       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz"  && curl -fsSL -o piwik.tar.gz.asc       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237  && gpg --batch --verify piwik.tar.gz.asc piwik.tar.gz  && rm -r "$GNUPGHOME" piwik.tar.gz.asc  && tar -xzf piwik.tar.gz -C /usr/src/  && rm piwik.tar.gz  && chfn -f 'Piwik Admin' www-data
-# Mon, 01 Aug 2016 18:15:56 GMT
+# Tue, 09 Aug 2016 17:01:10 GMT
 COPY file:abc0ff564b95b724deccad7ff48d69d7a3d7d34cdee0cce0a887f3ed0e726d21 in /usr/local/etc/php/php.ini
-# Mon, 01 Aug 2016 18:16:03 GMT
+# Tue, 09 Aug 2016 17:01:12 GMT
 RUN curl -fsSL -o /usr/src/piwik/misc/GeoIPCity.dat.gz http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz  && gunzip /usr/src/piwik/misc/GeoIPCity.dat.gz
-# Mon, 01 Aug 2016 18:16:04 GMT
+# Tue, 09 Aug 2016 17:01:12 GMT
 COPY file:624ec542e8b52694362740314ac6948ac2d59a5d302df84808cc0cfbddea1e59 in /entrypoint.sh
-# Mon, 01 Aug 2016 18:16:05 GMT
+# Tue, 09 Aug 2016 17:01:13 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 18:16:06 GMT
+# Tue, 09 Aug 2016 17:01:13 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:16:06 GMT
+# Tue, 09 Aug 2016 17:01:14 GMT
 CMD ["php-fpm"]
 ```
 
@@ -128,23 +128,23 @@ CMD ["php-fpm"]
 	-	`sha256:cd9e226a8d619b7f44f2d320b2e0aa611b9a080e5c53d428343e8bdf5cc8e979`  
 		Last Modified: Mon, 01 Aug 2016 18:16:16 GMT  
 		Size: 46.1 KB (46124 bytes)
-	-	`sha256:78e58e21db87277c6dfaae99360f1feb3c4a99ed78556824d56b7b5d68e0fae1`  
-		Last Modified: Mon, 01 Aug 2016 18:16:21 GMT  
-		Size: 12.8 MB (12833709 bytes)
-	-	`sha256:0c6400956d3c7a44a1b18bcb779015ed6aa29b5c0297d70c8c6e755a8915369b`  
-		Last Modified: Mon, 01 Aug 2016 18:16:16 GMT  
-		Size: 299.0 B
-	-	`sha256:405d95fd49ae7cebda2bf97853794353e1327e770409fb1514db9b391abd4290`  
-		Last Modified: Mon, 01 Aug 2016 18:16:19 GMT  
-		Size: 13.7 MB (13695184 bytes)
-	-	`sha256:4710cf5bf49d6d43ee47d169776f056195c1a1cb1eec791bdab55e715c04a79c`  
-		Last Modified: Mon, 01 Aug 2016 18:16:16 GMT  
+	-	`sha256:a3e552f385a55f7a97bc1f2c7324ea4bfcb91acfcba3a39a0e04c2e045861d37`  
+		Last Modified: Tue, 09 Aug 2016 17:01:29 GMT  
+		Size: 12.9 MB (12858941 bytes)
+	-	`sha256:036c9dba97e74d9331846cbf04a57e73fedf83240dc1c1421bfcde41f1f6c206`  
+		Last Modified: Tue, 09 Aug 2016 17:01:24 GMT  
+		Size: 297.0 B
+	-	`sha256:3c0278d74c3cf1a07e887e3b07d9119299e9f65cd832b23233df20fc659d0d9f`  
+		Last Modified: Tue, 09 Aug 2016 17:01:26 GMT  
+		Size: 13.1 MB (13117314 bytes)
+	-	`sha256:c253cb2cf63c48b58834299990d677e3eccc86023f1ce1e25eda788f3c2dc6e2`  
+		Last Modified: Tue, 09 Aug 2016 17:01:23 GMT  
 		Size: 225.0 B
 
 ## `piwik:2.16`
 
 ```console
-$ docker pull piwik@sha256:d76a6974a71c81a400d0ce2a80e69cd1e2e4df5bb3e0741bf44c7352f957d66f
+$ docker pull piwik@sha256:ed4f717cc0fd51d61ffe4f423d42985e88d607c1498840729bddd618fb9cc1ae
 ```
 
 -	Platforms:
@@ -154,9 +154,9 @@ $ docker pull piwik@sha256:d76a6974a71c81a400d0ce2a80e69cd1e2e4df5bb3e0741bf44c7
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **186.1 MB (186123428 bytes)**  
+-	Total Size: **185.6 MB (185570788 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc454209d9dba15c44cfa54093c606062120ade0a306ee410636068a8462f00f`
+-	Image ID: `sha256:e6e916924ad4d5dab847af3ee8326821ed212db342bf5a26e3fde5e64fdc7ce5`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -207,21 +207,21 @@ RUN apt-get update && apt-get install -y       libjpeg-dev       libfreetype6-de
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr  && docker-php-ext-install gd mbstring mysql pdo_mysql zip
 # Mon, 01 Aug 2016 18:15:43 GMT
 RUN pecl install APCu geoip
-# Mon, 01 Aug 2016 18:15:44 GMT
-ENV PIWIK_VERSION=2.16.1
-# Mon, 01 Aug 2016 18:15:55 GMT
+# Tue, 09 Aug 2016 17:00:58 GMT
+ENV PIWIK_VERSION=2.16.2
+# Tue, 09 Aug 2016 17:01:09 GMT
 RUN curl -fsSL -o piwik.tar.gz       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz"  && curl -fsSL -o piwik.tar.gz.asc       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237  && gpg --batch --verify piwik.tar.gz.asc piwik.tar.gz  && rm -r "$GNUPGHOME" piwik.tar.gz.asc  && tar -xzf piwik.tar.gz -C /usr/src/  && rm piwik.tar.gz  && chfn -f 'Piwik Admin' www-data
-# Mon, 01 Aug 2016 18:15:56 GMT
+# Tue, 09 Aug 2016 17:01:10 GMT
 COPY file:abc0ff564b95b724deccad7ff48d69d7a3d7d34cdee0cce0a887f3ed0e726d21 in /usr/local/etc/php/php.ini
-# Mon, 01 Aug 2016 18:16:03 GMT
+# Tue, 09 Aug 2016 17:01:12 GMT
 RUN curl -fsSL -o /usr/src/piwik/misc/GeoIPCity.dat.gz http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz  && gunzip /usr/src/piwik/misc/GeoIPCity.dat.gz
-# Mon, 01 Aug 2016 18:16:04 GMT
+# Tue, 09 Aug 2016 17:01:12 GMT
 COPY file:624ec542e8b52694362740314ac6948ac2d59a5d302df84808cc0cfbddea1e59 in /entrypoint.sh
-# Mon, 01 Aug 2016 18:16:05 GMT
+# Tue, 09 Aug 2016 17:01:13 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 18:16:06 GMT
+# Tue, 09 Aug 2016 17:01:13 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:16:06 GMT
+# Tue, 09 Aug 2016 17:01:14 GMT
 CMD ["php-fpm"]
 ```
 
@@ -262,23 +262,23 @@ CMD ["php-fpm"]
 	-	`sha256:cd9e226a8d619b7f44f2d320b2e0aa611b9a080e5c53d428343e8bdf5cc8e979`  
 		Last Modified: Mon, 01 Aug 2016 18:16:16 GMT  
 		Size: 46.1 KB (46124 bytes)
-	-	`sha256:78e58e21db87277c6dfaae99360f1feb3c4a99ed78556824d56b7b5d68e0fae1`  
-		Last Modified: Mon, 01 Aug 2016 18:16:21 GMT  
-		Size: 12.8 MB (12833709 bytes)
-	-	`sha256:0c6400956d3c7a44a1b18bcb779015ed6aa29b5c0297d70c8c6e755a8915369b`  
-		Last Modified: Mon, 01 Aug 2016 18:16:16 GMT  
-		Size: 299.0 B
-	-	`sha256:405d95fd49ae7cebda2bf97853794353e1327e770409fb1514db9b391abd4290`  
-		Last Modified: Mon, 01 Aug 2016 18:16:19 GMT  
-		Size: 13.7 MB (13695184 bytes)
-	-	`sha256:4710cf5bf49d6d43ee47d169776f056195c1a1cb1eec791bdab55e715c04a79c`  
-		Last Modified: Mon, 01 Aug 2016 18:16:16 GMT  
+	-	`sha256:a3e552f385a55f7a97bc1f2c7324ea4bfcb91acfcba3a39a0e04c2e045861d37`  
+		Last Modified: Tue, 09 Aug 2016 17:01:29 GMT  
+		Size: 12.9 MB (12858941 bytes)
+	-	`sha256:036c9dba97e74d9331846cbf04a57e73fedf83240dc1c1421bfcde41f1f6c206`  
+		Last Modified: Tue, 09 Aug 2016 17:01:24 GMT  
+		Size: 297.0 B
+	-	`sha256:3c0278d74c3cf1a07e887e3b07d9119299e9f65cd832b23233df20fc659d0d9f`  
+		Last Modified: Tue, 09 Aug 2016 17:01:26 GMT  
+		Size: 13.1 MB (13117314 bytes)
+	-	`sha256:c253cb2cf63c48b58834299990d677e3eccc86023f1ce1e25eda788f3c2dc6e2`  
+		Last Modified: Tue, 09 Aug 2016 17:01:23 GMT  
 		Size: 225.0 B
 
 ## `piwik:2`
 
 ```console
-$ docker pull piwik@sha256:d76a6974a71c81a400d0ce2a80e69cd1e2e4df5bb3e0741bf44c7352f957d66f
+$ docker pull piwik@sha256:ed4f717cc0fd51d61ffe4f423d42985e88d607c1498840729bddd618fb9cc1ae
 ```
 
 -	Platforms:
@@ -288,9 +288,9 @@ $ docker pull piwik@sha256:d76a6974a71c81a400d0ce2a80e69cd1e2e4df5bb3e0741bf44c7
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **186.1 MB (186123428 bytes)**  
+-	Total Size: **185.6 MB (185570788 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc454209d9dba15c44cfa54093c606062120ade0a306ee410636068a8462f00f`
+-	Image ID: `sha256:e6e916924ad4d5dab847af3ee8326821ed212db342bf5a26e3fde5e64fdc7ce5`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -341,21 +341,21 @@ RUN apt-get update && apt-get install -y       libjpeg-dev       libfreetype6-de
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr  && docker-php-ext-install gd mbstring mysql pdo_mysql zip
 # Mon, 01 Aug 2016 18:15:43 GMT
 RUN pecl install APCu geoip
-# Mon, 01 Aug 2016 18:15:44 GMT
-ENV PIWIK_VERSION=2.16.1
-# Mon, 01 Aug 2016 18:15:55 GMT
+# Tue, 09 Aug 2016 17:00:58 GMT
+ENV PIWIK_VERSION=2.16.2
+# Tue, 09 Aug 2016 17:01:09 GMT
 RUN curl -fsSL -o piwik.tar.gz       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz"  && curl -fsSL -o piwik.tar.gz.asc       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237  && gpg --batch --verify piwik.tar.gz.asc piwik.tar.gz  && rm -r "$GNUPGHOME" piwik.tar.gz.asc  && tar -xzf piwik.tar.gz -C /usr/src/  && rm piwik.tar.gz  && chfn -f 'Piwik Admin' www-data
-# Mon, 01 Aug 2016 18:15:56 GMT
+# Tue, 09 Aug 2016 17:01:10 GMT
 COPY file:abc0ff564b95b724deccad7ff48d69d7a3d7d34cdee0cce0a887f3ed0e726d21 in /usr/local/etc/php/php.ini
-# Mon, 01 Aug 2016 18:16:03 GMT
+# Tue, 09 Aug 2016 17:01:12 GMT
 RUN curl -fsSL -o /usr/src/piwik/misc/GeoIPCity.dat.gz http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz  && gunzip /usr/src/piwik/misc/GeoIPCity.dat.gz
-# Mon, 01 Aug 2016 18:16:04 GMT
+# Tue, 09 Aug 2016 17:01:12 GMT
 COPY file:624ec542e8b52694362740314ac6948ac2d59a5d302df84808cc0cfbddea1e59 in /entrypoint.sh
-# Mon, 01 Aug 2016 18:16:05 GMT
+# Tue, 09 Aug 2016 17:01:13 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 18:16:06 GMT
+# Tue, 09 Aug 2016 17:01:13 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:16:06 GMT
+# Tue, 09 Aug 2016 17:01:14 GMT
 CMD ["php-fpm"]
 ```
 
@@ -396,17 +396,17 @@ CMD ["php-fpm"]
 	-	`sha256:cd9e226a8d619b7f44f2d320b2e0aa611b9a080e5c53d428343e8bdf5cc8e979`  
 		Last Modified: Mon, 01 Aug 2016 18:16:16 GMT  
 		Size: 46.1 KB (46124 bytes)
-	-	`sha256:78e58e21db87277c6dfaae99360f1feb3c4a99ed78556824d56b7b5d68e0fae1`  
-		Last Modified: Mon, 01 Aug 2016 18:16:21 GMT  
-		Size: 12.8 MB (12833709 bytes)
-	-	`sha256:0c6400956d3c7a44a1b18bcb779015ed6aa29b5c0297d70c8c6e755a8915369b`  
-		Last Modified: Mon, 01 Aug 2016 18:16:16 GMT  
-		Size: 299.0 B
-	-	`sha256:405d95fd49ae7cebda2bf97853794353e1327e770409fb1514db9b391abd4290`  
-		Last Modified: Mon, 01 Aug 2016 18:16:19 GMT  
-		Size: 13.7 MB (13695184 bytes)
-	-	`sha256:4710cf5bf49d6d43ee47d169776f056195c1a1cb1eec791bdab55e715c04a79c`  
-		Last Modified: Mon, 01 Aug 2016 18:16:16 GMT  
+	-	`sha256:a3e552f385a55f7a97bc1f2c7324ea4bfcb91acfcba3a39a0e04c2e045861d37`  
+		Last Modified: Tue, 09 Aug 2016 17:01:29 GMT  
+		Size: 12.9 MB (12858941 bytes)
+	-	`sha256:036c9dba97e74d9331846cbf04a57e73fedf83240dc1c1421bfcde41f1f6c206`  
+		Last Modified: Tue, 09 Aug 2016 17:01:24 GMT  
+		Size: 297.0 B
+	-	`sha256:3c0278d74c3cf1a07e887e3b07d9119299e9f65cd832b23233df20fc659d0d9f`  
+		Last Modified: Tue, 09 Aug 2016 17:01:26 GMT  
+		Size: 13.1 MB (13117314 bytes)
+	-	`sha256:c253cb2cf63c48b58834299990d677e3eccc86023f1ce1e25eda788f3c2dc6e2`  
+		Last Modified: Tue, 09 Aug 2016 17:01:23 GMT  
 		Size: 225.0 B
 
 ## `piwik:latest`
