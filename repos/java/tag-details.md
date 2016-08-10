@@ -2119,7 +2119,78 @@ RUN set -x 	&& apk add --no-cache 		openjdk7-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 
 ## `java:8u102-jdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull java@sha256:1064e0e67166f8859dd7e1aa1104ffc00133bcf19dbd426447cce6f90319031e
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `java:8u102-jdk` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **243.3 MB (243337373 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:69a777edb6dcb32c2e717f69f281ee405cef6deac6de24520aefe76594a6eae5`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
+CMD ["/bin/bash"]
+# Thu, 28 Jul 2016 17:57:57 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 28 Jul 2016 17:59:13 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Fri, 05 Aug 2016 22:02:58 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
+# Fri, 05 Aug 2016 22:06:43 GMT
+RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
+# Fri, 05 Aug 2016 22:06:43 GMT
+ENV LANG=C.UTF-8
+# Fri, 05 Aug 2016 22:06:45 GMT
+RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
+# Fri, 05 Aug 2016 22:06:46 GMT
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+# Wed, 10 Aug 2016 18:34:54 GMT
+ENV JAVA_VERSION=8u102
+# Wed, 10 Aug 2016 18:34:55 GMT
+ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
+# Wed, 10 Aug 2016 18:34:55 GMT
+ENV CA_CERTIFICATES_JAVA_VERSION=20140324
+# Wed, 10 Aug 2016 18:41:25 GMT
+RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
+# Wed, 10 Aug 2016 18:41:32 GMT
+RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
+```
+
+-	Layers:
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)
+	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
+		Size: 42.5 MB (42495385 bytes)
+	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
+		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
+		Size: 593.2 KB (593224 bytes)
+	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 220.0 B
+	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
+		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+		Size: 240.0 B
+	-	`sha256:e5e3695c1a93559e79e9203e80ba22855cd93c2105e5e346aaebf4c7673183eb`  
+		Last Modified: Wed, 10 Aug 2016 18:49:58 GMT  
+		Size: 130.1 MB (130071319 bytes)
+	-	`sha256:a37afaae8f5b70acee6cc9f963e7ffe068bbc02e2eb59b01e64f4b50cafa22f0`  
+		Last Modified: Wed, 10 Aug 2016 18:49:28 GMT  
+		Size: 284.4 KB (284396 bytes)
 
 ## `java:8u102`
 
@@ -2349,7 +2420,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ## `java:jdk`
 
 ```console
-$ docker pull java@sha256:a12cf102b6116e81101741e3ae1c5e957dc4f5ff6a2d2cc9ab881e717371175e
+$ docker pull java@sha256:1064e0e67166f8859dd7e1aa1104ffc00133bcf19dbd426447cce6f90319031e
 ```
 
 -	Platforms:
@@ -2359,9 +2430,9 @@ $ docker pull java@sha256:a12cf102b6116e81101741e3ae1c5e957dc4f5ff6a2d2cc9ab881e
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.3 MB (243250950 bytes)**  
+-	Total Size: **243.3 MB (243337373 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7919ba82fd04cd796d908751fb6a4ab204ff3c0c63a6407089021f5cde34f8a`
+-	Image ID: `sha256:69a777edb6dcb32c2e717f69f281ee405cef6deac6de24520aefe76594a6eae5`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -2383,15 +2454,15 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Fri, 05 Aug 2016 22:06:46 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Fri, 05 Aug 2016 22:06:47 GMT
-ENV JAVA_VERSION=8u91
-# Fri, 05 Aug 2016 22:06:48 GMT
-ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Fri, 05 Aug 2016 22:06:48 GMT
+# Wed, 10 Aug 2016 18:34:54 GMT
+ENV JAVA_VERSION=8u102
+# Wed, 10 Aug 2016 18:34:55 GMT
+ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
+# Wed, 10 Aug 2016 18:34:55 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Fri, 05 Aug 2016 22:08:45 GMT
+# Wed, 10 Aug 2016 18:41:25 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 05 Aug 2016 22:08:48 GMT
+# Wed, 10 Aug 2016 18:41:32 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
@@ -2414,17 +2485,17 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
 		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
 		Size: 240.0 B
-	-	`sha256:b987bd349aa094960d32b6cf01f28604a595155ff3f6e9ad4262e4b3eba480d7`  
-		Last Modified: Fri, 05 Aug 2016 22:17:58 GMT  
-		Size: 130.0 MB (129984944 bytes)
-	-	`sha256:cc07342899764251d877aeb04dd94a665b46ef2422afda45ad2b044d66d2dfe4`  
-		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 284.3 KB (284348 bytes)
+	-	`sha256:e5e3695c1a93559e79e9203e80ba22855cd93c2105e5e346aaebf4c7673183eb`  
+		Last Modified: Wed, 10 Aug 2016 18:49:58 GMT  
+		Size: 130.1 MB (130071319 bytes)
+	-	`sha256:a37afaae8f5b70acee6cc9f963e7ffe068bbc02e2eb59b01e64f4b50cafa22f0`  
+		Last Modified: Wed, 10 Aug 2016 18:49:28 GMT  
+		Size: 284.4 KB (284396 bytes)
 
 ## `java:latest`
 
 ```console
-$ docker pull java@sha256:a12cf102b6116e81101741e3ae1c5e957dc4f5ff6a2d2cc9ab881e717371175e
+$ docker pull java@sha256:1064e0e67166f8859dd7e1aa1104ffc00133bcf19dbd426447cce6f90319031e
 ```
 
 -	Platforms:
@@ -2434,9 +2505,9 @@ $ docker pull java@sha256:a12cf102b6116e81101741e3ae1c5e957dc4f5ff6a2d2cc9ab881e
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.3 MB (243250950 bytes)**  
+-	Total Size: **243.3 MB (243337373 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7919ba82fd04cd796d908751fb6a4ab204ff3c0c63a6407089021f5cde34f8a`
+-	Image ID: `sha256:69a777edb6dcb32c2e717f69f281ee405cef6deac6de24520aefe76594a6eae5`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -2458,15 +2529,15 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Fri, 05 Aug 2016 22:06:46 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Fri, 05 Aug 2016 22:06:47 GMT
-ENV JAVA_VERSION=8u91
-# Fri, 05 Aug 2016 22:06:48 GMT
-ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Fri, 05 Aug 2016 22:06:48 GMT
+# Wed, 10 Aug 2016 18:34:54 GMT
+ENV JAVA_VERSION=8u102
+# Wed, 10 Aug 2016 18:34:55 GMT
+ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
+# Wed, 10 Aug 2016 18:34:55 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Fri, 05 Aug 2016 22:08:45 GMT
+# Wed, 10 Aug 2016 18:41:25 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 05 Aug 2016 22:08:48 GMT
+# Wed, 10 Aug 2016 18:41:32 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
@@ -2489,12 +2560,12 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
 		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
 		Size: 240.0 B
-	-	`sha256:b987bd349aa094960d32b6cf01f28604a595155ff3f6e9ad4262e4b3eba480d7`  
-		Last Modified: Fri, 05 Aug 2016 22:17:58 GMT  
-		Size: 130.0 MB (129984944 bytes)
-	-	`sha256:cc07342899764251d877aeb04dd94a665b46ef2422afda45ad2b044d66d2dfe4`  
-		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 284.3 KB (284348 bytes)
+	-	`sha256:e5e3695c1a93559e79e9203e80ba22855cd93c2105e5e346aaebf4c7673183eb`  
+		Last Modified: Wed, 10 Aug 2016 18:49:58 GMT  
+		Size: 130.1 MB (130071319 bytes)
+	-	`sha256:a37afaae8f5b70acee6cc9f963e7ffe068bbc02e2eb59b01e64f4b50cafa22f0`  
+		Last Modified: Wed, 10 Aug 2016 18:49:28 GMT  
+		Size: 284.4 KB (284396 bytes)
 
 ## `java:openjdk-8u102-jdk`
 
