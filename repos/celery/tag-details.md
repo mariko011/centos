@@ -10,7 +10,7 @@
 ## `celery:3.1.23`
 
 ```console
-$ docker pull celery@sha256:6f1c1c5d36ce7d0db54012e94f6baa2af641232399c6bed54bc9f99a2bd7aac1
+$ docker pull celery@sha256:a2e98308496e76ab7cb5a178a3299c30cc18befe5459e7e79a58c12ed8d01eec
 ```
 
 -	Platforms:
@@ -20,9 +20,9 @@ $ docker pull celery@sha256:6f1c1c5d36ce7d0db54012e94f6baa2af641232399c6bed54bc9
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.2 MB (82178857 bytes)**  
+-	Total Size: **80.1 MB (80113589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0828c179d1b521f0284e47288038a17ad17d4b3b55c9e7c6fba417b2abfa17ba`
+-	Image ID: `sha256:7170d66c0a6f36d5eb2e630ad269b79585518d8207c28c3b9dfe76babd582b93`
 -	Default Command: `["celery","worker"]`
 
 ```dockerfile
@@ -42,29 +42,29 @@ ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
 ENV PYTHON_VERSION=3.4.5
 # Mon, 08 Aug 2016 20:08:05 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Mon, 08 Aug 2016 20:12:26 GMT
-RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-loadable-sqlite-extensions 		--enable-shared 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 			\( -type d -a -name test -o -name tests \) 			-o 			\( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Mon, 08 Aug 2016 20:12:27 GMT
-RUN cd /usr/local/bin 	&& ln -s easy_install-3.4 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 08 Aug 2016 20:12:28 GMT
+# Tue, 09 Aug 2016 20:51:09 GMT
+RUN set -ex 	&& buildDeps=' 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-loadable-sqlite-extensions 		--enable-shared 	&& make -j$(nproc) 	&& make install 	&& ldconfig 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& python3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& find /usr/local -depth 		\( 			\( -type d -a -name test -o -name tests \) 			-o 			\( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
+# Tue, 09 Aug 2016 20:51:10 GMT
+RUN cd /usr/local/bin 	&& { [ -e easy_install ] || ln -s easy_install-* easy_install; } 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
+# Tue, 09 Aug 2016 20:51:10 GMT
 CMD ["python3"]
-# Mon, 08 Aug 2016 21:46:56 GMT
+# Tue, 09 Aug 2016 23:03:04 GMT
 RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
-# Mon, 08 Aug 2016 21:46:56 GMT
+# Tue, 09 Aug 2016 23:03:04 GMT
 WORKDIR /home/user
-# Mon, 08 Aug 2016 21:47:00 GMT
+# Tue, 09 Aug 2016 23:03:07 GMT
 RUN pip install redis
-# Mon, 08 Aug 2016 21:47:01 GMT
+# Tue, 09 Aug 2016 23:03:07 GMT
 ENV CELERY_VERSION=3.1.23
-# Mon, 08 Aug 2016 21:47:09 GMT
+# Tue, 09 Aug 2016 23:03:15 GMT
 RUN pip install celery=="$CELERY_VERSION"
-# Mon, 08 Aug 2016 21:47:11 GMT
+# Tue, 09 Aug 2016 23:03:16 GMT
 RUN { 	echo 'import os'; 	echo "BROKER_URL = os.environ.get('CELERY_BROKER_URL', 'amqp://')"; } > celeryconfig.py
-# Mon, 08 Aug 2016 21:47:12 GMT
+# Tue, 09 Aug 2016 23:03:17 GMT
 ENV CELERY_BROKER_URL=amqp://guest@rabbit
-# Mon, 08 Aug 2016 21:47:13 GMT
+# Tue, 09 Aug 2016 23:03:17 GMT
 USER [user]
-# Mon, 08 Aug 2016 21:47:21 GMT
+# Tue, 09 Aug 2016 23:03:18 GMT
 CMD ["celery" "worker"]
 ```
 
@@ -75,29 +75,29 @@ CMD ["celery" "worker"]
 	-	`sha256:57aad21b9e0f8c5efec1fdc781bbbbe387f0c188b9fd34c5ffa9b796c1ac0235`  
 		Last Modified: Mon, 08 Aug 2016 21:07:23 GMT  
 		Size: 3.3 MB (3306249 bytes)
-	-	`sha256:81a546def56944519e81de3936cf068ddfdf57d283bea529f7e5ef419e279888`  
-		Last Modified: Mon, 08 Aug 2016 21:13:45 GMT  
-		Size: 21.6 MB (21593706 bytes)
-	-	`sha256:9b920892339d2aefccd65e6f36b200ded5b9286bfc5ef702d1ef6e18ca302ec8`  
-		Last Modified: Mon, 08 Aug 2016 21:13:37 GMT  
+	-	`sha256:1edc05b1775830422108d01615e6644b9a3a4344e56caac8e6dcbd06a67ecd11`  
+		Last Modified: Tue, 09 Aug 2016 21:23:16 GMT  
+		Size: 19.5 MB (19528523 bytes)
+	-	`sha256:89066e65bfc86a6b61c88ee96e3dd3834ba672ee81616a0f6e2f8cc271cc2ae6`  
+		Last Modified: Tue, 09 Aug 2016 21:23:10 GMT  
 		Size: 267.0 B
-	-	`sha256:7e51ab90b9b2950b0549a4d5c4ebe764645043616a0bb6e4af53ae27424d13c3`  
-		Last Modified: Mon, 08 Aug 2016 21:47:38 GMT  
-		Size: 4.3 KB (4341 bytes)
-	-	`sha256:30f60ad060aa0113de8a2217e6f4f6bada6e6325df20037059ee9ecfa692d7cf`  
-		Last Modified: Mon, 08 Aug 2016 21:47:39 GMT  
-		Size: 1.7 MB (1732585 bytes)
-	-	`sha256:ef6a1ba95125f09ee573906ce84ed9b5683ccb39e9bc3c54c4e29cec8bf0584a`  
-		Last Modified: Mon, 08 Aug 2016 21:47:40 GMT  
-		Size: 4.2 MB (4175865 bytes)
-	-	`sha256:de8e75064d8f873af752f7889dbd7d771b75282130e5f661a5a8345b7f8b64bb`  
-		Last Modified: Mon, 08 Aug 2016 21:47:38 GMT  
-		Size: 233.0 B
+	-	`sha256:3369a647201d8c0d20ecdcec440b8d82e128bb51e4951419eda471d2a864a3d1`  
+		Last Modified: Tue, 09 Aug 2016 23:03:29 GMT  
+		Size: 4.3 KB (4338 bytes)
+	-	`sha256:04b19c55bc4c028cd82efc8f1456ab24bda23630c7b9f6b0aad26abb6d4372ab`  
+		Last Modified: Tue, 09 Aug 2016 23:03:31 GMT  
+		Size: 1.7 MB (1732615 bytes)
+	-	`sha256:27101de7e419b2d51815c97b46b265213231d7a081280cae5dd4df8d3adb034c`  
+		Last Modified: Tue, 09 Aug 2016 23:03:33 GMT  
+		Size: 4.2 MB (4175754 bytes)
+	-	`sha256:a1b24eb32950de63ada3744bf0c2ad75ceb69973f1fffe73dc04abee00e34368`  
+		Last Modified: Tue, 09 Aug 2016 23:03:30 GMT  
+		Size: 232.0 B
 
 ## `celery:3.1`
 
 ```console
-$ docker pull celery@sha256:6f1c1c5d36ce7d0db54012e94f6baa2af641232399c6bed54bc9f99a2bd7aac1
+$ docker pull celery@sha256:a2e98308496e76ab7cb5a178a3299c30cc18befe5459e7e79a58c12ed8d01eec
 ```
 
 -	Platforms:
@@ -107,9 +107,9 @@ $ docker pull celery@sha256:6f1c1c5d36ce7d0db54012e94f6baa2af641232399c6bed54bc9
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.2 MB (82178857 bytes)**  
+-	Total Size: **80.1 MB (80113589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0828c179d1b521f0284e47288038a17ad17d4b3b55c9e7c6fba417b2abfa17ba`
+-	Image ID: `sha256:7170d66c0a6f36d5eb2e630ad269b79585518d8207c28c3b9dfe76babd582b93`
 -	Default Command: `["celery","worker"]`
 
 ```dockerfile
@@ -129,29 +129,29 @@ ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
 ENV PYTHON_VERSION=3.4.5
 # Mon, 08 Aug 2016 20:08:05 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Mon, 08 Aug 2016 20:12:26 GMT
-RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-loadable-sqlite-extensions 		--enable-shared 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 			\( -type d -a -name test -o -name tests \) 			-o 			\( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Mon, 08 Aug 2016 20:12:27 GMT
-RUN cd /usr/local/bin 	&& ln -s easy_install-3.4 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 08 Aug 2016 20:12:28 GMT
+# Tue, 09 Aug 2016 20:51:09 GMT
+RUN set -ex 	&& buildDeps=' 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-loadable-sqlite-extensions 		--enable-shared 	&& make -j$(nproc) 	&& make install 	&& ldconfig 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& python3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& find /usr/local -depth 		\( 			\( -type d -a -name test -o -name tests \) 			-o 			\( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
+# Tue, 09 Aug 2016 20:51:10 GMT
+RUN cd /usr/local/bin 	&& { [ -e easy_install ] || ln -s easy_install-* easy_install; } 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
+# Tue, 09 Aug 2016 20:51:10 GMT
 CMD ["python3"]
-# Mon, 08 Aug 2016 21:46:56 GMT
+# Tue, 09 Aug 2016 23:03:04 GMT
 RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
-# Mon, 08 Aug 2016 21:46:56 GMT
+# Tue, 09 Aug 2016 23:03:04 GMT
 WORKDIR /home/user
-# Mon, 08 Aug 2016 21:47:00 GMT
+# Tue, 09 Aug 2016 23:03:07 GMT
 RUN pip install redis
-# Mon, 08 Aug 2016 21:47:01 GMT
+# Tue, 09 Aug 2016 23:03:07 GMT
 ENV CELERY_VERSION=3.1.23
-# Mon, 08 Aug 2016 21:47:09 GMT
+# Tue, 09 Aug 2016 23:03:15 GMT
 RUN pip install celery=="$CELERY_VERSION"
-# Mon, 08 Aug 2016 21:47:11 GMT
+# Tue, 09 Aug 2016 23:03:16 GMT
 RUN { 	echo 'import os'; 	echo "BROKER_URL = os.environ.get('CELERY_BROKER_URL', 'amqp://')"; } > celeryconfig.py
-# Mon, 08 Aug 2016 21:47:12 GMT
+# Tue, 09 Aug 2016 23:03:17 GMT
 ENV CELERY_BROKER_URL=amqp://guest@rabbit
-# Mon, 08 Aug 2016 21:47:13 GMT
+# Tue, 09 Aug 2016 23:03:17 GMT
 USER [user]
-# Mon, 08 Aug 2016 21:47:21 GMT
+# Tue, 09 Aug 2016 23:03:18 GMT
 CMD ["celery" "worker"]
 ```
 
@@ -162,29 +162,29 @@ CMD ["celery" "worker"]
 	-	`sha256:57aad21b9e0f8c5efec1fdc781bbbbe387f0c188b9fd34c5ffa9b796c1ac0235`  
 		Last Modified: Mon, 08 Aug 2016 21:07:23 GMT  
 		Size: 3.3 MB (3306249 bytes)
-	-	`sha256:81a546def56944519e81de3936cf068ddfdf57d283bea529f7e5ef419e279888`  
-		Last Modified: Mon, 08 Aug 2016 21:13:45 GMT  
-		Size: 21.6 MB (21593706 bytes)
-	-	`sha256:9b920892339d2aefccd65e6f36b200ded5b9286bfc5ef702d1ef6e18ca302ec8`  
-		Last Modified: Mon, 08 Aug 2016 21:13:37 GMT  
+	-	`sha256:1edc05b1775830422108d01615e6644b9a3a4344e56caac8e6dcbd06a67ecd11`  
+		Last Modified: Tue, 09 Aug 2016 21:23:16 GMT  
+		Size: 19.5 MB (19528523 bytes)
+	-	`sha256:89066e65bfc86a6b61c88ee96e3dd3834ba672ee81616a0f6e2f8cc271cc2ae6`  
+		Last Modified: Tue, 09 Aug 2016 21:23:10 GMT  
 		Size: 267.0 B
-	-	`sha256:7e51ab90b9b2950b0549a4d5c4ebe764645043616a0bb6e4af53ae27424d13c3`  
-		Last Modified: Mon, 08 Aug 2016 21:47:38 GMT  
-		Size: 4.3 KB (4341 bytes)
-	-	`sha256:30f60ad060aa0113de8a2217e6f4f6bada6e6325df20037059ee9ecfa692d7cf`  
-		Last Modified: Mon, 08 Aug 2016 21:47:39 GMT  
-		Size: 1.7 MB (1732585 bytes)
-	-	`sha256:ef6a1ba95125f09ee573906ce84ed9b5683ccb39e9bc3c54c4e29cec8bf0584a`  
-		Last Modified: Mon, 08 Aug 2016 21:47:40 GMT  
-		Size: 4.2 MB (4175865 bytes)
-	-	`sha256:de8e75064d8f873af752f7889dbd7d771b75282130e5f661a5a8345b7f8b64bb`  
-		Last Modified: Mon, 08 Aug 2016 21:47:38 GMT  
-		Size: 233.0 B
+	-	`sha256:3369a647201d8c0d20ecdcec440b8d82e128bb51e4951419eda471d2a864a3d1`  
+		Last Modified: Tue, 09 Aug 2016 23:03:29 GMT  
+		Size: 4.3 KB (4338 bytes)
+	-	`sha256:04b19c55bc4c028cd82efc8f1456ab24bda23630c7b9f6b0aad26abb6d4372ab`  
+		Last Modified: Tue, 09 Aug 2016 23:03:31 GMT  
+		Size: 1.7 MB (1732615 bytes)
+	-	`sha256:27101de7e419b2d51815c97b46b265213231d7a081280cae5dd4df8d3adb034c`  
+		Last Modified: Tue, 09 Aug 2016 23:03:33 GMT  
+		Size: 4.2 MB (4175754 bytes)
+	-	`sha256:a1b24eb32950de63ada3744bf0c2ad75ceb69973f1fffe73dc04abee00e34368`  
+		Last Modified: Tue, 09 Aug 2016 23:03:30 GMT  
+		Size: 232.0 B
 
 ## `celery:3`
 
 ```console
-$ docker pull celery@sha256:6f1c1c5d36ce7d0db54012e94f6baa2af641232399c6bed54bc9f99a2bd7aac1
+$ docker pull celery@sha256:a2e98308496e76ab7cb5a178a3299c30cc18befe5459e7e79a58c12ed8d01eec
 ```
 
 -	Platforms:
@@ -194,9 +194,9 @@ $ docker pull celery@sha256:6f1c1c5d36ce7d0db54012e94f6baa2af641232399c6bed54bc9
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.2 MB (82178857 bytes)**  
+-	Total Size: **80.1 MB (80113589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0828c179d1b521f0284e47288038a17ad17d4b3b55c9e7c6fba417b2abfa17ba`
+-	Image ID: `sha256:7170d66c0a6f36d5eb2e630ad269b79585518d8207c28c3b9dfe76babd582b93`
 -	Default Command: `["celery","worker"]`
 
 ```dockerfile
@@ -216,29 +216,29 @@ ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
 ENV PYTHON_VERSION=3.4.5
 # Mon, 08 Aug 2016 20:08:05 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Mon, 08 Aug 2016 20:12:26 GMT
-RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-loadable-sqlite-extensions 		--enable-shared 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 			\( -type d -a -name test -o -name tests \) 			-o 			\( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Mon, 08 Aug 2016 20:12:27 GMT
-RUN cd /usr/local/bin 	&& ln -s easy_install-3.4 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 08 Aug 2016 20:12:28 GMT
+# Tue, 09 Aug 2016 20:51:09 GMT
+RUN set -ex 	&& buildDeps=' 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-loadable-sqlite-extensions 		--enable-shared 	&& make -j$(nproc) 	&& make install 	&& ldconfig 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& python3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& find /usr/local -depth 		\( 			\( -type d -a -name test -o -name tests \) 			-o 			\( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
+# Tue, 09 Aug 2016 20:51:10 GMT
+RUN cd /usr/local/bin 	&& { [ -e easy_install ] || ln -s easy_install-* easy_install; } 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
+# Tue, 09 Aug 2016 20:51:10 GMT
 CMD ["python3"]
-# Mon, 08 Aug 2016 21:46:56 GMT
+# Tue, 09 Aug 2016 23:03:04 GMT
 RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
-# Mon, 08 Aug 2016 21:46:56 GMT
+# Tue, 09 Aug 2016 23:03:04 GMT
 WORKDIR /home/user
-# Mon, 08 Aug 2016 21:47:00 GMT
+# Tue, 09 Aug 2016 23:03:07 GMT
 RUN pip install redis
-# Mon, 08 Aug 2016 21:47:01 GMT
+# Tue, 09 Aug 2016 23:03:07 GMT
 ENV CELERY_VERSION=3.1.23
-# Mon, 08 Aug 2016 21:47:09 GMT
+# Tue, 09 Aug 2016 23:03:15 GMT
 RUN pip install celery=="$CELERY_VERSION"
-# Mon, 08 Aug 2016 21:47:11 GMT
+# Tue, 09 Aug 2016 23:03:16 GMT
 RUN { 	echo 'import os'; 	echo "BROKER_URL = os.environ.get('CELERY_BROKER_URL', 'amqp://')"; } > celeryconfig.py
-# Mon, 08 Aug 2016 21:47:12 GMT
+# Tue, 09 Aug 2016 23:03:17 GMT
 ENV CELERY_BROKER_URL=amqp://guest@rabbit
-# Mon, 08 Aug 2016 21:47:13 GMT
+# Tue, 09 Aug 2016 23:03:17 GMT
 USER [user]
-# Mon, 08 Aug 2016 21:47:21 GMT
+# Tue, 09 Aug 2016 23:03:18 GMT
 CMD ["celery" "worker"]
 ```
 
@@ -249,29 +249,29 @@ CMD ["celery" "worker"]
 	-	`sha256:57aad21b9e0f8c5efec1fdc781bbbbe387f0c188b9fd34c5ffa9b796c1ac0235`  
 		Last Modified: Mon, 08 Aug 2016 21:07:23 GMT  
 		Size: 3.3 MB (3306249 bytes)
-	-	`sha256:81a546def56944519e81de3936cf068ddfdf57d283bea529f7e5ef419e279888`  
-		Last Modified: Mon, 08 Aug 2016 21:13:45 GMT  
-		Size: 21.6 MB (21593706 bytes)
-	-	`sha256:9b920892339d2aefccd65e6f36b200ded5b9286bfc5ef702d1ef6e18ca302ec8`  
-		Last Modified: Mon, 08 Aug 2016 21:13:37 GMT  
+	-	`sha256:1edc05b1775830422108d01615e6644b9a3a4344e56caac8e6dcbd06a67ecd11`  
+		Last Modified: Tue, 09 Aug 2016 21:23:16 GMT  
+		Size: 19.5 MB (19528523 bytes)
+	-	`sha256:89066e65bfc86a6b61c88ee96e3dd3834ba672ee81616a0f6e2f8cc271cc2ae6`  
+		Last Modified: Tue, 09 Aug 2016 21:23:10 GMT  
 		Size: 267.0 B
-	-	`sha256:7e51ab90b9b2950b0549a4d5c4ebe764645043616a0bb6e4af53ae27424d13c3`  
-		Last Modified: Mon, 08 Aug 2016 21:47:38 GMT  
-		Size: 4.3 KB (4341 bytes)
-	-	`sha256:30f60ad060aa0113de8a2217e6f4f6bada6e6325df20037059ee9ecfa692d7cf`  
-		Last Modified: Mon, 08 Aug 2016 21:47:39 GMT  
-		Size: 1.7 MB (1732585 bytes)
-	-	`sha256:ef6a1ba95125f09ee573906ce84ed9b5683ccb39e9bc3c54c4e29cec8bf0584a`  
-		Last Modified: Mon, 08 Aug 2016 21:47:40 GMT  
-		Size: 4.2 MB (4175865 bytes)
-	-	`sha256:de8e75064d8f873af752f7889dbd7d771b75282130e5f661a5a8345b7f8b64bb`  
-		Last Modified: Mon, 08 Aug 2016 21:47:38 GMT  
-		Size: 233.0 B
+	-	`sha256:3369a647201d8c0d20ecdcec440b8d82e128bb51e4951419eda471d2a864a3d1`  
+		Last Modified: Tue, 09 Aug 2016 23:03:29 GMT  
+		Size: 4.3 KB (4338 bytes)
+	-	`sha256:04b19c55bc4c028cd82efc8f1456ab24bda23630c7b9f6b0aad26abb6d4372ab`  
+		Last Modified: Tue, 09 Aug 2016 23:03:31 GMT  
+		Size: 1.7 MB (1732615 bytes)
+	-	`sha256:27101de7e419b2d51815c97b46b265213231d7a081280cae5dd4df8d3adb034c`  
+		Last Modified: Tue, 09 Aug 2016 23:03:33 GMT  
+		Size: 4.2 MB (4175754 bytes)
+	-	`sha256:a1b24eb32950de63ada3744bf0c2ad75ceb69973f1fffe73dc04abee00e34368`  
+		Last Modified: Tue, 09 Aug 2016 23:03:30 GMT  
+		Size: 232.0 B
 
 ## `celery:latest`
 
 ```console
-$ docker pull celery@sha256:6f1c1c5d36ce7d0db54012e94f6baa2af641232399c6bed54bc9f99a2bd7aac1
+$ docker pull celery@sha256:a2e98308496e76ab7cb5a178a3299c30cc18befe5459e7e79a58c12ed8d01eec
 ```
 
 -	Platforms:
@@ -281,9 +281,9 @@ $ docker pull celery@sha256:6f1c1c5d36ce7d0db54012e94f6baa2af641232399c6bed54bc9
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.2 MB (82178857 bytes)**  
+-	Total Size: **80.1 MB (80113589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0828c179d1b521f0284e47288038a17ad17d4b3b55c9e7c6fba417b2abfa17ba`
+-	Image ID: `sha256:7170d66c0a6f36d5eb2e630ad269b79585518d8207c28c3b9dfe76babd582b93`
 -	Default Command: `["celery","worker"]`
 
 ```dockerfile
@@ -303,29 +303,29 @@ ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
 ENV PYTHON_VERSION=3.4.5
 # Mon, 08 Aug 2016 20:08:05 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Mon, 08 Aug 2016 20:12:26 GMT
-RUN set -ex 	&& buildDeps=' 		curl 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" -o python.tar.xz 	&& curl -fSL "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" -o python.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-loadable-sqlite-extensions 		--enable-shared 	&& make -j$(nproc) 	&& make install 	&& ldconfig 	&& pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION 	&& [ "$(pip list | awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 	&& find /usr/local -depth 		\( 			\( -type d -a -name test -o -name tests \) 			-o 			\( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Mon, 08 Aug 2016 20:12:27 GMT
-RUN cd /usr/local/bin 	&& ln -s easy_install-3.4 easy_install 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 08 Aug 2016 20:12:28 GMT
+# Tue, 09 Aug 2016 20:51:09 GMT
+RUN set -ex 	&& buildDeps=' 		gcc 		libbz2-dev 		libc6-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-loadable-sqlite-extensions 		--enable-shared 	&& make -j$(nproc) 	&& make install 	&& ldconfig 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& python3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& find /usr/local -depth 		\( 			\( -type d -a -name test -o -name tests \) 			-o 			\( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
+# Tue, 09 Aug 2016 20:51:10 GMT
+RUN cd /usr/local/bin 	&& { [ -e easy_install ] || ln -s easy_install-* easy_install; } 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
+# Tue, 09 Aug 2016 20:51:10 GMT
 CMD ["python3"]
-# Mon, 08 Aug 2016 21:46:56 GMT
+# Tue, 09 Aug 2016 23:03:04 GMT
 RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
-# Mon, 08 Aug 2016 21:46:56 GMT
+# Tue, 09 Aug 2016 23:03:04 GMT
 WORKDIR /home/user
-# Mon, 08 Aug 2016 21:47:00 GMT
+# Tue, 09 Aug 2016 23:03:07 GMT
 RUN pip install redis
-# Mon, 08 Aug 2016 21:47:01 GMT
+# Tue, 09 Aug 2016 23:03:07 GMT
 ENV CELERY_VERSION=3.1.23
-# Mon, 08 Aug 2016 21:47:09 GMT
+# Tue, 09 Aug 2016 23:03:15 GMT
 RUN pip install celery=="$CELERY_VERSION"
-# Mon, 08 Aug 2016 21:47:11 GMT
+# Tue, 09 Aug 2016 23:03:16 GMT
 RUN { 	echo 'import os'; 	echo "BROKER_URL = os.environ.get('CELERY_BROKER_URL', 'amqp://')"; } > celeryconfig.py
-# Mon, 08 Aug 2016 21:47:12 GMT
+# Tue, 09 Aug 2016 23:03:17 GMT
 ENV CELERY_BROKER_URL=amqp://guest@rabbit
-# Mon, 08 Aug 2016 21:47:13 GMT
+# Tue, 09 Aug 2016 23:03:17 GMT
 USER [user]
-# Mon, 08 Aug 2016 21:47:21 GMT
+# Tue, 09 Aug 2016 23:03:18 GMT
 CMD ["celery" "worker"]
 ```
 
@@ -336,21 +336,21 @@ CMD ["celery" "worker"]
 	-	`sha256:57aad21b9e0f8c5efec1fdc781bbbbe387f0c188b9fd34c5ffa9b796c1ac0235`  
 		Last Modified: Mon, 08 Aug 2016 21:07:23 GMT  
 		Size: 3.3 MB (3306249 bytes)
-	-	`sha256:81a546def56944519e81de3936cf068ddfdf57d283bea529f7e5ef419e279888`  
-		Last Modified: Mon, 08 Aug 2016 21:13:45 GMT  
-		Size: 21.6 MB (21593706 bytes)
-	-	`sha256:9b920892339d2aefccd65e6f36b200ded5b9286bfc5ef702d1ef6e18ca302ec8`  
-		Last Modified: Mon, 08 Aug 2016 21:13:37 GMT  
+	-	`sha256:1edc05b1775830422108d01615e6644b9a3a4344e56caac8e6dcbd06a67ecd11`  
+		Last Modified: Tue, 09 Aug 2016 21:23:16 GMT  
+		Size: 19.5 MB (19528523 bytes)
+	-	`sha256:89066e65bfc86a6b61c88ee96e3dd3834ba672ee81616a0f6e2f8cc271cc2ae6`  
+		Last Modified: Tue, 09 Aug 2016 21:23:10 GMT  
 		Size: 267.0 B
-	-	`sha256:7e51ab90b9b2950b0549a4d5c4ebe764645043616a0bb6e4af53ae27424d13c3`  
-		Last Modified: Mon, 08 Aug 2016 21:47:38 GMT  
-		Size: 4.3 KB (4341 bytes)
-	-	`sha256:30f60ad060aa0113de8a2217e6f4f6bada6e6325df20037059ee9ecfa692d7cf`  
-		Last Modified: Mon, 08 Aug 2016 21:47:39 GMT  
-		Size: 1.7 MB (1732585 bytes)
-	-	`sha256:ef6a1ba95125f09ee573906ce84ed9b5683ccb39e9bc3c54c4e29cec8bf0584a`  
-		Last Modified: Mon, 08 Aug 2016 21:47:40 GMT  
-		Size: 4.2 MB (4175865 bytes)
-	-	`sha256:de8e75064d8f873af752f7889dbd7d771b75282130e5f661a5a8345b7f8b64bb`  
-		Last Modified: Mon, 08 Aug 2016 21:47:38 GMT  
-		Size: 233.0 B
+	-	`sha256:3369a647201d8c0d20ecdcec440b8d82e128bb51e4951419eda471d2a864a3d1`  
+		Last Modified: Tue, 09 Aug 2016 23:03:29 GMT  
+		Size: 4.3 KB (4338 bytes)
+	-	`sha256:04b19c55bc4c028cd82efc8f1456ab24bda23630c7b9f6b0aad26abb6d4372ab`  
+		Last Modified: Tue, 09 Aug 2016 23:03:31 GMT  
+		Size: 1.7 MB (1732615 bytes)
+	-	`sha256:27101de7e419b2d51815c97b46b265213231d7a081280cae5dd4df8d3adb034c`  
+		Last Modified: Tue, 09 Aug 2016 23:03:33 GMT  
+		Size: 4.2 MB (4175754 bytes)
+	-	`sha256:a1b24eb32950de63ada3744bf0c2ad75ceb69973f1fffe73dc04abee00e34368`  
+		Last Modified: Tue, 09 Aug 2016 23:03:30 GMT  
+		Size: 232.0 B
