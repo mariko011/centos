@@ -16,7 +16,7 @@
 -	[`kibana:4.5`](#kibana45)
 -	[`kibana:4`](#kibana4)
 -	[`kibana:latest`](#kibanalatest)
--	[`kibana:5.0.0-alpha4`](#kibana500-alpha4)
+-	[`kibana:5.0.0-alpha5`](#kibana500-alpha5)
 -	[`kibana:5.0.0`](#kibana500)
 -	[`kibana:5.0`](#kibana50)
 -	[`kibana:5`](#kibana5)
@@ -1159,92 +1159,9 @@ CMD ["kibana"]
 		Last Modified: Wed, 03 Aug 2016 22:42:11 GMT  
 		Size: 343.0 B
 
-## `kibana:5.0.0-alpha4`
+## `kibana:5.0.0-alpha5`
 
-```console
-$ docker pull kibana@sha256:a7c9ff1187537b6d49a96f8f72a4f1fd194629b3bfa33a75b0493bd001171f25
-```
-
--	Platforms:
-	-	linux; amd64
-
-### `kibana:5.0.0-alpha4` - linux; amd64
-
--	Docker Version: 1.10.3
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **106.0 MB (105991904 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9d866013069cb10ce5215c003ece0b9303450f648cf8b6731c852850ee5be794`
--	Entrypoint: `["\/docker-entrypoint.sh"]`
--	Default Command: `["kibana"]`
-
-```dockerfile
-# Thu, 28 Jul 2016 17:47:54 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
-# Thu, 28 Jul 2016 17:47:55 GMT
-CMD ["/bin/bash"]
-# Fri, 29 Jul 2016 17:05:13 GMT
-RUN groupadd -r kibana && useradd -r -m -g kibana kibana
-# Fri, 29 Jul 2016 17:06:16 GMT
-RUN apt-get update && apt-get install -y 		ca-certificates 		wget 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Fri, 29 Jul 2016 17:06:17 GMT
-ENV GOSU_VERSION=1.7
-# Fri, 29 Jul 2016 17:06:22 GMT
-RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Fri, 29 Jul 2016 17:06:23 GMT
-ENV TINI_VERSION=v0.9.0
-# Fri, 29 Jul 2016 17:06:27 GMT
-RUN set -x 	&& wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini" 	&& wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5 	&& gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini 	&& rm -r "$GNUPGHOME" /usr/local/bin/tini.asc 	&& chmod +x /usr/local/bin/tini 	&& tini -h
-# Fri, 29 Jul 2016 17:07:30 GMT
-RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 29 Jul 2016 17:11:37 GMT
-ENV KIBANA_MAJOR=5.0
-# Fri, 29 Jul 2016 17:11:37 GMT
-ENV KIBANA_VERSION=5.0.0-alpha4
-# Fri, 29 Jul 2016 17:11:39 GMT
-RUN echo 'deb http://packages.elastic.co/kibana/5.0.0-alpha/debian stable main' > /etc/apt/sources.list.d/kibana.list
-# Fri, 29 Jul 2016 17:12:48 GMT
-RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends kibana=$KIBANA_VERSION 	&& rm -rf /var/lib/apt/lists/* 		&& sed -ri "s!^(\#\s*)?(elasticsearch\.url:).*!\2 'http://elasticsearch:9200'!" /etc/kibana/kibana.yml 	&& grep -q 'elasticsearch:9200' /etc/kibana/kibana.yml
-# Fri, 29 Jul 2016 17:12:49 GMT
-ENV PATH=/usr/share/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 29 Jul 2016 17:12:50 GMT
-COPY file:9a3ed3a1655d5afa631fded5211f1c33f5f49f1d1e0e0d9a031c9e8601111f05 in /
-# Fri, 29 Jul 2016 17:12:51 GMT
-EXPOSE 5601/tcp
-# Fri, 29 Jul 2016 17:12:51 GMT
-ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 29 Jul 2016 17:12:52 GMT
-CMD ["kibana"]
-```
-
--	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
-	-	`sha256:9d99c1434c75af68a8dffb2b65e0a49d14412dc23decbeecaab0a76e7692111c`  
-		Last Modified: Fri, 29 Jul 2016 17:06:53 GMT  
-		Size: 4.3 KB (4347 bytes)
-	-	`sha256:aa9e96f4d5f4017dc61ad3cdf78e1e5b415133f845b9865daaeed5249daefb5b`  
-		Last Modified: Fri, 29 Jul 2016 17:06:54 GMT  
-		Size: 16.6 MB (16609105 bytes)
-	-	`sha256:393684003c1e72fc5c22cbca43f3cf6e0a83211330aab16cc94f6cbb241a7c99`  
-		Last Modified: Fri, 29 Jul 2016 17:06:50 GMT  
-		Size: 807.9 KB (807932 bytes)
-	-	`sha256:e2578dae99ba5f56568081b3897c536b2a5c5a1b346cc83f4dbd4ef8cefa59d0`  
-		Last Modified: Fri, 29 Jul 2016 17:06:49 GMT  
-		Size: 7.1 KB (7123 bytes)
-	-	`sha256:e93da2cb19e98aac9cd944428bd03be5dafde0016ee81dbd424f47e3ebf36cb3`  
-		Last Modified: Fri, 29 Jul 2016 17:08:54 GMT  
-		Size: 1.5 KB (1452 bytes)
-	-	`sha256:02da2ea8c39409845228f28b3341549a85fdac9893b0004b7580b4dcaa077d31`  
-		Last Modified: Fri, 29 Jul 2016 17:13:01 GMT  
-		Size: 229.0 B
-	-	`sha256:3c92a3737fa6b39b0ad00da3cbbfb3aff018b592e8db8b8b26b988e013b13766`  
-		Last Modified: Fri, 29 Jul 2016 17:13:15 GMT  
-		Size: 37.2 MB (37195769 bytes)
-	-	`sha256:809b18d11b194d444919bfe4e50c8ccec58330a839d191cdd4d7ce7fab9c17bf`  
-		Last Modified: Fri, 29 Jul 2016 17:13:01 GMT  
-		Size: 336.0 B
+**does not exist** (yet?)
 
 ## `kibana:5.0.0`
 
@@ -1423,7 +1340,7 @@ CMD ["kibana"]
 ## `kibana:5`
 
 ```console
-$ docker pull kibana@sha256:a7c9ff1187537b6d49a96f8f72a4f1fd194629b3bfa33a75b0493bd001171f25
+$ docker pull kibana@sha256:81c6c13b6c02d099eaf4ab04645464f3371b166ac24c9c4d668cd206a8b0dee9
 ```
 
 -	Platforms:
@@ -1433,9 +1350,9 @@ $ docker pull kibana@sha256:a7c9ff1187537b6d49a96f8f72a4f1fd194629b3bfa33a75b049
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **106.0 MB (105991904 bytes)**  
+-	Total Size: **105.8 MB (105805802 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9d866013069cb10ce5215c003ece0b9303450f648cf8b6731c852850ee5be794`
+-	Image ID: `sha256:92ea49c7eb6be46dfafbeb439150b68d7ff7ad1f12f0352cf96b4acf45ab4619`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kibana"]`
 
@@ -1460,21 +1377,21 @@ RUN set -x 	&& wget -O /usr/local/bin/tini "https://github.com/krallin/tini/rele
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 # Fri, 29 Jul 2016 17:11:37 GMT
 ENV KIBANA_MAJOR=5.0
-# Fri, 29 Jul 2016 17:11:37 GMT
-ENV KIBANA_VERSION=5.0.0-alpha4
-# Fri, 29 Jul 2016 17:11:39 GMT
+# Wed, 10 Aug 2016 18:58:09 GMT
+ENV KIBANA_VERSION=5.0.0-alpha5
+# Wed, 10 Aug 2016 18:58:12 GMT
 RUN echo 'deb http://packages.elastic.co/kibana/5.0.0-alpha/debian stable main' > /etc/apt/sources.list.d/kibana.list
-# Fri, 29 Jul 2016 17:12:48 GMT
+# Wed, 10 Aug 2016 18:59:20 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends kibana=$KIBANA_VERSION 	&& rm -rf /var/lib/apt/lists/* 		&& sed -ri "s!^(\#\s*)?(elasticsearch\.url:).*!\2 'http://elasticsearch:9200'!" /etc/kibana/kibana.yml 	&& grep -q 'elasticsearch:9200' /etc/kibana/kibana.yml
-# Fri, 29 Jul 2016 17:12:49 GMT
+# Wed, 10 Aug 2016 18:59:21 GMT
 ENV PATH=/usr/share/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 29 Jul 2016 17:12:50 GMT
+# Wed, 10 Aug 2016 18:59:23 GMT
 COPY file:9a3ed3a1655d5afa631fded5211f1c33f5f49f1d1e0e0d9a031c9e8601111f05 in /
-# Fri, 29 Jul 2016 17:12:51 GMT
+# Wed, 10 Aug 2016 18:59:24 GMT
 EXPOSE 5601/tcp
-# Fri, 29 Jul 2016 17:12:51 GMT
+# Wed, 10 Aug 2016 18:59:24 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Fri, 29 Jul 2016 17:12:52 GMT
+# Wed, 10 Aug 2016 18:59:25 GMT
 CMD ["kibana"]
 ```
 
@@ -1497,12 +1414,12 @@ CMD ["kibana"]
 	-	`sha256:e93da2cb19e98aac9cd944428bd03be5dafde0016ee81dbd424f47e3ebf36cb3`  
 		Last Modified: Fri, 29 Jul 2016 17:08:54 GMT  
 		Size: 1.5 KB (1452 bytes)
-	-	`sha256:02da2ea8c39409845228f28b3341549a85fdac9893b0004b7580b4dcaa077d31`  
-		Last Modified: Fri, 29 Jul 2016 17:13:01 GMT  
-		Size: 229.0 B
-	-	`sha256:3c92a3737fa6b39b0ad00da3cbbfb3aff018b592e8db8b8b26b988e013b13766`  
-		Last Modified: Fri, 29 Jul 2016 17:13:15 GMT  
-		Size: 37.2 MB (37195769 bytes)
-	-	`sha256:809b18d11b194d444919bfe4e50c8ccec58330a839d191cdd4d7ce7fab9c17bf`  
-		Last Modified: Fri, 29 Jul 2016 17:13:01 GMT  
-		Size: 336.0 B
+	-	`sha256:fccf702dbeb23c9af42c947afe220145cc6b146942c59cbc1ed9e6d4cf23a55b`  
+		Last Modified: Wed, 10 Aug 2016 19:02:07 GMT  
+		Size: 230.0 B
+	-	`sha256:8ceb5adda0334716021fd1c0544448263e2d90ddbf84f7b70f0122448eb6745f`  
+		Last Modified: Wed, 10 Aug 2016 19:02:21 GMT  
+		Size: 37.0 MB (37009664 bytes)
+	-	`sha256:1cf4d1cfcfbc7849edb9a416bc38e174eadf631ebd2da847a67d738708786964`  
+		Last Modified: Wed, 10 Aug 2016 19:02:07 GMT  
+		Size: 338.0 B
