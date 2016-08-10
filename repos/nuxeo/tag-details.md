@@ -18,7 +18,7 @@
 ## `nuxeo:latest`
 
 ```console
-$ docker pull nuxeo@sha256:35be17844e5629d8e2f62893fadccc5917a1010db473be0415d94b24456ed761
+$ docker pull nuxeo@sha256:daf105fe65d81e9dec0ca130e3b510f288b875b4919baa162197786cac8cdab7
 ```
 
 -	Platforms:
@@ -28,9 +28,9 @@ $ docker pull nuxeo@sha256:35be17844e5629d8e2f62893fadccc5917a1010db473be0415d94
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **647.9 MB (647874013 bytes)**  
+-	Total Size: **647.9 MB (647874053 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7b71241045c7b48e741f0cca8b453dd9e5a3275dc702e808f358c64ebd969e6`
+-	Image ID: `sha256:0187116f71671d690a5df1f18546d48ef315a0eeed48aaac33f3fd16ffff8d9b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
@@ -87,15 +87,15 @@ RUN mkdir /docker-entrypoint-initnuxeo.d
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Mon, 01 Aug 2016 19:54:46 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 01 Aug 2016 19:54:47 GMT
-COPY file:8bb3b62221e76bd4e12692a864280db4c72e5d7140697cf199f5a098c781feff in /
-# Mon, 01 Aug 2016 19:54:48 GMT
+# Wed, 10 Aug 2016 16:56:54 GMT
+COPY file:5da17471392f8fd3f1caf32dd6e522033560eb878458af2e0f5905c60063c653 in /
+# Wed, 10 Aug 2016 16:56:54 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Mon, 01 Aug 2016 19:54:48 GMT
+# Wed, 10 Aug 2016 16:56:54 GMT
 EXPOSE 8080/tcp
-# Mon, 01 Aug 2016 19:54:49 GMT
+# Wed, 10 Aug 2016 16:56:55 GMT
 EXPOSE 8787/tcp
-# Mon, 01 Aug 2016 19:54:50 GMT
+# Wed, 10 Aug 2016 16:56:55 GMT
 CMD ["nuxeoctl" "console"]
 ```
 
@@ -136,14 +136,14 @@ CMD ["nuxeoctl" "console"]
 	-	`sha256:912ccbb37ca39a9af61d04e8f26bb1cf3458a99e154fa5ae90326c2a438eccc9`  
 		Last Modified: Mon, 01 Aug 2016 19:54:59 GMT  
 		Size: 117.0 B
-	-	`sha256:ac61e86f3bf0be584a290e4bbab56e3fc6bb7c3cc4223ce0719f40cd5f403f3d`  
-		Last Modified: Mon, 01 Aug 2016 19:54:59 GMT  
-		Size: 1.5 KB (1481 bytes)
+	-	`sha256:d68ef01360ab74311bd793a2c2d535c055cdf6994b485570fdffe76e8f40f481`  
+		Last Modified: Wed, 10 Aug 2016 16:57:11 GMT  
+		Size: 1.5 KB (1521 bytes)
 
 ## `nuxeo:FT`
 
 ```console
-$ docker pull nuxeo@sha256:35be17844e5629d8e2f62893fadccc5917a1010db473be0415d94b24456ed761
+$ docker pull nuxeo@sha256:daf105fe65d81e9dec0ca130e3b510f288b875b4919baa162197786cac8cdab7
 ```
 
 -	Platforms:
@@ -153,9 +153,9 @@ $ docker pull nuxeo@sha256:35be17844e5629d8e2f62893fadccc5917a1010db473be0415d94
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **647.9 MB (647874013 bytes)**  
+-	Total Size: **647.9 MB (647874053 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7b71241045c7b48e741f0cca8b453dd9e5a3275dc702e808f358c64ebd969e6`
+-	Image ID: `sha256:0187116f71671d690a5df1f18546d48ef315a0eeed48aaac33f3fd16ffff8d9b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
@@ -212,15 +212,15 @@ RUN mkdir /docker-entrypoint-initnuxeo.d
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Mon, 01 Aug 2016 19:54:46 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 01 Aug 2016 19:54:47 GMT
-COPY file:8bb3b62221e76bd4e12692a864280db4c72e5d7140697cf199f5a098c781feff in /
-# Mon, 01 Aug 2016 19:54:48 GMT
+# Wed, 10 Aug 2016 16:56:54 GMT
+COPY file:5da17471392f8fd3f1caf32dd6e522033560eb878458af2e0f5905c60063c653 in /
+# Wed, 10 Aug 2016 16:56:54 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Mon, 01 Aug 2016 19:54:48 GMT
+# Wed, 10 Aug 2016 16:56:54 GMT
 EXPOSE 8080/tcp
-# Mon, 01 Aug 2016 19:54:49 GMT
+# Wed, 10 Aug 2016 16:56:55 GMT
 EXPOSE 8787/tcp
-# Mon, 01 Aug 2016 19:54:50 GMT
+# Wed, 10 Aug 2016 16:56:55 GMT
 CMD ["nuxeoctl" "console"]
 ```
 
@@ -261,14 +261,14 @@ CMD ["nuxeoctl" "console"]
 	-	`sha256:912ccbb37ca39a9af61d04e8f26bb1cf3458a99e154fa5ae90326c2a438eccc9`  
 		Last Modified: Mon, 01 Aug 2016 19:54:59 GMT  
 		Size: 117.0 B
-	-	`sha256:ac61e86f3bf0be584a290e4bbab56e3fc6bb7c3cc4223ce0719f40cd5f403f3d`  
-		Last Modified: Mon, 01 Aug 2016 19:54:59 GMT  
-		Size: 1.5 KB (1481 bytes)
+	-	`sha256:d68ef01360ab74311bd793a2c2d535c055cdf6994b485570fdffe76e8f40f481`  
+		Last Modified: Wed, 10 Aug 2016 16:57:11 GMT  
+		Size: 1.5 KB (1521 bytes)
 
 ## `nuxeo:8`
 
 ```console
-$ docker pull nuxeo@sha256:35be17844e5629d8e2f62893fadccc5917a1010db473be0415d94b24456ed761
+$ docker pull nuxeo@sha256:daf105fe65d81e9dec0ca130e3b510f288b875b4919baa162197786cac8cdab7
 ```
 
 -	Platforms:
@@ -278,9 +278,9 @@ $ docker pull nuxeo@sha256:35be17844e5629d8e2f62893fadccc5917a1010db473be0415d94
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **647.9 MB (647874013 bytes)**  
+-	Total Size: **647.9 MB (647874053 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7b71241045c7b48e741f0cca8b453dd9e5a3275dc702e808f358c64ebd969e6`
+-	Image ID: `sha256:0187116f71671d690a5df1f18546d48ef315a0eeed48aaac33f3fd16ffff8d9b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
@@ -337,15 +337,15 @@ RUN mkdir /docker-entrypoint-initnuxeo.d
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Mon, 01 Aug 2016 19:54:46 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 01 Aug 2016 19:54:47 GMT
-COPY file:8bb3b62221e76bd4e12692a864280db4c72e5d7140697cf199f5a098c781feff in /
-# Mon, 01 Aug 2016 19:54:48 GMT
+# Wed, 10 Aug 2016 16:56:54 GMT
+COPY file:5da17471392f8fd3f1caf32dd6e522033560eb878458af2e0f5905c60063c653 in /
+# Wed, 10 Aug 2016 16:56:54 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Mon, 01 Aug 2016 19:54:48 GMT
+# Wed, 10 Aug 2016 16:56:54 GMT
 EXPOSE 8080/tcp
-# Mon, 01 Aug 2016 19:54:49 GMT
+# Wed, 10 Aug 2016 16:56:55 GMT
 EXPOSE 8787/tcp
-# Mon, 01 Aug 2016 19:54:50 GMT
+# Wed, 10 Aug 2016 16:56:55 GMT
 CMD ["nuxeoctl" "console"]
 ```
 
@@ -386,14 +386,14 @@ CMD ["nuxeoctl" "console"]
 	-	`sha256:912ccbb37ca39a9af61d04e8f26bb1cf3458a99e154fa5ae90326c2a438eccc9`  
 		Last Modified: Mon, 01 Aug 2016 19:54:59 GMT  
 		Size: 117.0 B
-	-	`sha256:ac61e86f3bf0be584a290e4bbab56e3fc6bb7c3cc4223ce0719f40cd5f403f3d`  
-		Last Modified: Mon, 01 Aug 2016 19:54:59 GMT  
-		Size: 1.5 KB (1481 bytes)
+	-	`sha256:d68ef01360ab74311bd793a2c2d535c055cdf6994b485570fdffe76e8f40f481`  
+		Last Modified: Wed, 10 Aug 2016 16:57:11 GMT  
+		Size: 1.5 KB (1521 bytes)
 
 ## `nuxeo:8.3`
 
 ```console
-$ docker pull nuxeo@sha256:35be17844e5629d8e2f62893fadccc5917a1010db473be0415d94b24456ed761
+$ docker pull nuxeo@sha256:daf105fe65d81e9dec0ca130e3b510f288b875b4919baa162197786cac8cdab7
 ```
 
 -	Platforms:
@@ -403,9 +403,9 @@ $ docker pull nuxeo@sha256:35be17844e5629d8e2f62893fadccc5917a1010db473be0415d94
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **647.9 MB (647874013 bytes)**  
+-	Total Size: **647.9 MB (647874053 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7b71241045c7b48e741f0cca8b453dd9e5a3275dc702e808f358c64ebd969e6`
+-	Image ID: `sha256:0187116f71671d690a5df1f18546d48ef315a0eeed48aaac33f3fd16ffff8d9b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
@@ -462,15 +462,15 @@ RUN mkdir /docker-entrypoint-initnuxeo.d
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Mon, 01 Aug 2016 19:54:46 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 01 Aug 2016 19:54:47 GMT
-COPY file:8bb3b62221e76bd4e12692a864280db4c72e5d7140697cf199f5a098c781feff in /
-# Mon, 01 Aug 2016 19:54:48 GMT
+# Wed, 10 Aug 2016 16:56:54 GMT
+COPY file:5da17471392f8fd3f1caf32dd6e522033560eb878458af2e0f5905c60063c653 in /
+# Wed, 10 Aug 2016 16:56:54 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Mon, 01 Aug 2016 19:54:48 GMT
+# Wed, 10 Aug 2016 16:56:54 GMT
 EXPOSE 8080/tcp
-# Mon, 01 Aug 2016 19:54:49 GMT
+# Wed, 10 Aug 2016 16:56:55 GMT
 EXPOSE 8787/tcp
-# Mon, 01 Aug 2016 19:54:50 GMT
+# Wed, 10 Aug 2016 16:56:55 GMT
 CMD ["nuxeoctl" "console"]
 ```
 
@@ -511,9 +511,9 @@ CMD ["nuxeoctl" "console"]
 	-	`sha256:912ccbb37ca39a9af61d04e8f26bb1cf3458a99e154fa5ae90326c2a438eccc9`  
 		Last Modified: Mon, 01 Aug 2016 19:54:59 GMT  
 		Size: 117.0 B
-	-	`sha256:ac61e86f3bf0be584a290e4bbab56e3fc6bb7c3cc4223ce0719f40cd5f403f3d`  
-		Last Modified: Mon, 01 Aug 2016 19:54:59 GMT  
-		Size: 1.5 KB (1481 bytes)
+	-	`sha256:d68ef01360ab74311bd793a2c2d535c055cdf6994b485570fdffe76e8f40f481`  
+		Last Modified: Wed, 10 Aug 2016 16:57:11 GMT  
+		Size: 1.5 KB (1521 bytes)
 
 ## `nuxeo:8.2`
 
@@ -648,7 +648,7 @@ CMD ["nuxeoctl" "console"]
 ## `nuxeo:LTS-2015`
 
 ```console
-$ docker pull nuxeo@sha256:8e48e38d6c6db2791c54feadd788de6e2e3f10977d302bc707d1d51eebe90874
+$ docker pull nuxeo@sha256:80b47ae2cea010fbc76eeb1811f757ae3d85efddff95114bd8970d13892d40d0
 ```
 
 -	Platforms:
@@ -658,9 +658,9 @@ $ docker pull nuxeo@sha256:8e48e38d6c6db2791c54feadd788de6e2e3f10977d302bc707d1d
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **637.0 MB (636960939 bytes)**  
+-	Total Size: **637.0 MB (636960980 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2f74559c57cf9aa51d1422a737498edf19bb32d4ff6d246dfa7e739cecdc902d`
+-	Image ID: `sha256:37b4b50142e692df8bcd052758d14c3e134be4684a0a8d557bf8c131b11be9bd`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
@@ -719,15 +719,15 @@ RUN mkdir /docker-entrypoint-initnuxeo.d
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Mon, 01 Aug 2016 19:52:49 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 01 Aug 2016 19:52:50 GMT
-COPY file:8bb3b62221e76bd4e12692a864280db4c72e5d7140697cf199f5a098c781feff in /
-# Mon, 01 Aug 2016 19:52:51 GMT
+# Wed, 10 Aug 2016 16:56:56 GMT
+COPY file:5cebeee78434ce067bd4b8b9c42eaa20349f1a252aaf628add51d12663b04917 in /
+# Wed, 10 Aug 2016 16:56:57 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Mon, 01 Aug 2016 19:52:52 GMT
+# Wed, 10 Aug 2016 16:56:57 GMT
 EXPOSE 8080/tcp
-# Mon, 01 Aug 2016 19:52:53 GMT
+# Wed, 10 Aug 2016 16:56:58 GMT
 EXPOSE 8787/tcp
-# Mon, 01 Aug 2016 19:52:54 GMT
+# Wed, 10 Aug 2016 16:56:58 GMT
 CMD ["nuxeoctl" "console"]
 ```
 
@@ -771,14 +771,14 @@ CMD ["nuxeoctl" "console"]
 	-	`sha256:52f4bc87c64c3243cc5187c0fa0ade2ca424da458c0a8229dcd1fea5b707d5a9`  
 		Last Modified: Mon, 01 Aug 2016 19:53:03 GMT  
 		Size: 117.0 B
-	-	`sha256:16c374b8fd201058e91e568a8d772bd515a43acb18dbd37e03f2767d8a57bd99`  
-		Last Modified: Mon, 01 Aug 2016 19:53:03 GMT  
-		Size: 1.5 KB (1480 bytes)
+	-	`sha256:f148fb007daa6ac57f71a321f9da2fef40e20e708ec4b9942934eb038ad40135`  
+		Last Modified: Wed, 10 Aug 2016 16:58:16 GMT  
+		Size: 1.5 KB (1521 bytes)
 
 ## `nuxeo:LTS`
 
 ```console
-$ docker pull nuxeo@sha256:8e48e38d6c6db2791c54feadd788de6e2e3f10977d302bc707d1d51eebe90874
+$ docker pull nuxeo@sha256:80b47ae2cea010fbc76eeb1811f757ae3d85efddff95114bd8970d13892d40d0
 ```
 
 -	Platforms:
@@ -788,9 +788,9 @@ $ docker pull nuxeo@sha256:8e48e38d6c6db2791c54feadd788de6e2e3f10977d302bc707d1d
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **637.0 MB (636960939 bytes)**  
+-	Total Size: **637.0 MB (636960980 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2f74559c57cf9aa51d1422a737498edf19bb32d4ff6d246dfa7e739cecdc902d`
+-	Image ID: `sha256:37b4b50142e692df8bcd052758d14c3e134be4684a0a8d557bf8c131b11be9bd`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
@@ -849,15 +849,15 @@ RUN mkdir /docker-entrypoint-initnuxeo.d
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Mon, 01 Aug 2016 19:52:49 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 01 Aug 2016 19:52:50 GMT
-COPY file:8bb3b62221e76bd4e12692a864280db4c72e5d7140697cf199f5a098c781feff in /
-# Mon, 01 Aug 2016 19:52:51 GMT
+# Wed, 10 Aug 2016 16:56:56 GMT
+COPY file:5cebeee78434ce067bd4b8b9c42eaa20349f1a252aaf628add51d12663b04917 in /
+# Wed, 10 Aug 2016 16:56:57 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Mon, 01 Aug 2016 19:52:52 GMT
+# Wed, 10 Aug 2016 16:56:57 GMT
 EXPOSE 8080/tcp
-# Mon, 01 Aug 2016 19:52:53 GMT
+# Wed, 10 Aug 2016 16:56:58 GMT
 EXPOSE 8787/tcp
-# Mon, 01 Aug 2016 19:52:54 GMT
+# Wed, 10 Aug 2016 16:56:58 GMT
 CMD ["nuxeoctl" "console"]
 ```
 
@@ -901,14 +901,14 @@ CMD ["nuxeoctl" "console"]
 	-	`sha256:52f4bc87c64c3243cc5187c0fa0ade2ca424da458c0a8229dcd1fea5b707d5a9`  
 		Last Modified: Mon, 01 Aug 2016 19:53:03 GMT  
 		Size: 117.0 B
-	-	`sha256:16c374b8fd201058e91e568a8d772bd515a43acb18dbd37e03f2767d8a57bd99`  
-		Last Modified: Mon, 01 Aug 2016 19:53:03 GMT  
-		Size: 1.5 KB (1480 bytes)
+	-	`sha256:f148fb007daa6ac57f71a321f9da2fef40e20e708ec4b9942934eb038ad40135`  
+		Last Modified: Wed, 10 Aug 2016 16:58:16 GMT  
+		Size: 1.5 KB (1521 bytes)
 
 ## `nuxeo:7`
 
 ```console
-$ docker pull nuxeo@sha256:8e48e38d6c6db2791c54feadd788de6e2e3f10977d302bc707d1d51eebe90874
+$ docker pull nuxeo@sha256:80b47ae2cea010fbc76eeb1811f757ae3d85efddff95114bd8970d13892d40d0
 ```
 
 -	Platforms:
@@ -918,9 +918,9 @@ $ docker pull nuxeo@sha256:8e48e38d6c6db2791c54feadd788de6e2e3f10977d302bc707d1d
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **637.0 MB (636960939 bytes)**  
+-	Total Size: **637.0 MB (636960980 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2f74559c57cf9aa51d1422a737498edf19bb32d4ff6d246dfa7e739cecdc902d`
+-	Image ID: `sha256:37b4b50142e692df8bcd052758d14c3e134be4684a0a8d557bf8c131b11be9bd`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
@@ -979,15 +979,15 @@ RUN mkdir /docker-entrypoint-initnuxeo.d
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Mon, 01 Aug 2016 19:52:49 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 01 Aug 2016 19:52:50 GMT
-COPY file:8bb3b62221e76bd4e12692a864280db4c72e5d7140697cf199f5a098c781feff in /
-# Mon, 01 Aug 2016 19:52:51 GMT
+# Wed, 10 Aug 2016 16:56:56 GMT
+COPY file:5cebeee78434ce067bd4b8b9c42eaa20349f1a252aaf628add51d12663b04917 in /
+# Wed, 10 Aug 2016 16:56:57 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Mon, 01 Aug 2016 19:52:52 GMT
+# Wed, 10 Aug 2016 16:56:57 GMT
 EXPOSE 8080/tcp
-# Mon, 01 Aug 2016 19:52:53 GMT
+# Wed, 10 Aug 2016 16:56:58 GMT
 EXPOSE 8787/tcp
-# Mon, 01 Aug 2016 19:52:54 GMT
+# Wed, 10 Aug 2016 16:56:58 GMT
 CMD ["nuxeoctl" "console"]
 ```
 
@@ -1031,14 +1031,14 @@ CMD ["nuxeoctl" "console"]
 	-	`sha256:52f4bc87c64c3243cc5187c0fa0ade2ca424da458c0a8229dcd1fea5b707d5a9`  
 		Last Modified: Mon, 01 Aug 2016 19:53:03 GMT  
 		Size: 117.0 B
-	-	`sha256:16c374b8fd201058e91e568a8d772bd515a43acb18dbd37e03f2767d8a57bd99`  
-		Last Modified: Mon, 01 Aug 2016 19:53:03 GMT  
-		Size: 1.5 KB (1480 bytes)
+	-	`sha256:f148fb007daa6ac57f71a321f9da2fef40e20e708ec4b9942934eb038ad40135`  
+		Last Modified: Wed, 10 Aug 2016 16:58:16 GMT  
+		Size: 1.5 KB (1521 bytes)
 
 ## `nuxeo:7.10`
 
 ```console
-$ docker pull nuxeo@sha256:8e48e38d6c6db2791c54feadd788de6e2e3f10977d302bc707d1d51eebe90874
+$ docker pull nuxeo@sha256:80b47ae2cea010fbc76eeb1811f757ae3d85efddff95114bd8970d13892d40d0
 ```
 
 -	Platforms:
@@ -1048,9 +1048,9 @@ $ docker pull nuxeo@sha256:8e48e38d6c6db2791c54feadd788de6e2e3f10977d302bc707d1d
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **637.0 MB (636960939 bytes)**  
+-	Total Size: **637.0 MB (636960980 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2f74559c57cf9aa51d1422a737498edf19bb32d4ff6d246dfa7e739cecdc902d`
+-	Image ID: `sha256:37b4b50142e692df8bcd052758d14c3e134be4684a0a8d557bf8c131b11be9bd`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
@@ -1109,15 +1109,15 @@ RUN mkdir /docker-entrypoint-initnuxeo.d
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Mon, 01 Aug 2016 19:52:49 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 01 Aug 2016 19:52:50 GMT
-COPY file:8bb3b62221e76bd4e12692a864280db4c72e5d7140697cf199f5a098c781feff in /
-# Mon, 01 Aug 2016 19:52:51 GMT
+# Wed, 10 Aug 2016 16:56:56 GMT
+COPY file:5cebeee78434ce067bd4b8b9c42eaa20349f1a252aaf628add51d12663b04917 in /
+# Wed, 10 Aug 2016 16:56:57 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Mon, 01 Aug 2016 19:52:52 GMT
+# Wed, 10 Aug 2016 16:56:57 GMT
 EXPOSE 8080/tcp
-# Mon, 01 Aug 2016 19:52:53 GMT
+# Wed, 10 Aug 2016 16:56:58 GMT
 EXPOSE 8787/tcp
-# Mon, 01 Aug 2016 19:52:54 GMT
+# Wed, 10 Aug 2016 16:56:58 GMT
 CMD ["nuxeoctl" "console"]
 ```
 
@@ -1161,14 +1161,14 @@ CMD ["nuxeoctl" "console"]
 	-	`sha256:52f4bc87c64c3243cc5187c0fa0ade2ca424da458c0a8229dcd1fea5b707d5a9`  
 		Last Modified: Mon, 01 Aug 2016 19:53:03 GMT  
 		Size: 117.0 B
-	-	`sha256:16c374b8fd201058e91e568a8d772bd515a43acb18dbd37e03f2767d8a57bd99`  
-		Last Modified: Mon, 01 Aug 2016 19:53:03 GMT  
-		Size: 1.5 KB (1480 bytes)
+	-	`sha256:f148fb007daa6ac57f71a321f9da2fef40e20e708ec4b9942934eb038ad40135`  
+		Last Modified: Wed, 10 Aug 2016 16:58:16 GMT  
+		Size: 1.5 KB (1521 bytes)
 
 ## `nuxeo:LTS-2014`
 
 ```console
-$ docker pull nuxeo@sha256:784f44fdd1f9b43a88834c1f6ceb5176cd69a044d3a2ccaaa861f3716f18e491
+$ docker pull nuxeo@sha256:0a38031d7b9528816b8b5d50439cb81f3c87e0a862e69ae4eb3869c70f71fa16
 ```
 
 -	Platforms:
@@ -1178,9 +1178,9 @@ $ docker pull nuxeo@sha256:784f44fdd1f9b43a88834c1f6ceb5176cd69a044d3a2ccaaa861f
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **543.7 MB (543717835 bytes)**  
+-	Total Size: **543.7 MB (543717880 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac8dfa5d482012e2a613e013a4a18b596459efb9ca4f35fc6ace050c55d1652b`
+-	Image ID: `sha256:113a3183d2ca93b929a6955e1b44e64e8a4b201e86a839c3e7dd3ade341c5dc8`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
@@ -1239,15 +1239,15 @@ RUN mkdir /docker-entrypoint-initnuxeo.d
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Mon, 01 Aug 2016 19:51:11 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 01 Aug 2016 19:51:12 GMT
-COPY file:cb943216a015e60ac612f7b400e77a9d0976bbbef36448eb3aa1e2f0b740a529 in /
-# Mon, 01 Aug 2016 19:51:13 GMT
+# Wed, 10 Aug 2016 16:56:59 GMT
+COPY file:8d76e373fbb43b4776438b7110dcaac3baa7df9dc29515cde4e4507ea41bb412 in /
+# Wed, 10 Aug 2016 16:57:00 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Mon, 01 Aug 2016 19:51:14 GMT
+# Wed, 10 Aug 2016 16:57:00 GMT
 EXPOSE 8080/tcp
-# Mon, 01 Aug 2016 19:51:15 GMT
+# Wed, 10 Aug 2016 16:57:00 GMT
 EXPOSE 8787/tcp
-# Mon, 01 Aug 2016 19:51:15 GMT
+# Wed, 10 Aug 2016 16:57:01 GMT
 CMD ["nuxeoctl" "console"]
 ```
 
@@ -1291,14 +1291,14 @@ CMD ["nuxeoctl" "console"]
 	-	`sha256:bb940089fea91c41dd9c5470a5d02a5db6c65e68724e02990a05eeccd141ee1f`  
 		Last Modified: Mon, 01 Aug 2016 19:51:25 GMT  
 		Size: 115.0 B
-	-	`sha256:a48ada7e4602d1fded6f62d9207d0300148624d094bd6dce281639c2ea3dcc7f`  
-		Last Modified: Mon, 01 Aug 2016 19:51:25 GMT  
-		Size: 1.3 KB (1340 bytes)
+	-	`sha256:198f3fb128c21d250b1d6616de579677edd0db6ae56c7203974fae12519b1e6b`  
+		Last Modified: Wed, 10 Aug 2016 16:59:03 GMT  
+		Size: 1.4 KB (1385 bytes)
 
 ## `nuxeo:6`
 
 ```console
-$ docker pull nuxeo@sha256:784f44fdd1f9b43a88834c1f6ceb5176cd69a044d3a2ccaaa861f3716f18e491
+$ docker pull nuxeo@sha256:0a38031d7b9528816b8b5d50439cb81f3c87e0a862e69ae4eb3869c70f71fa16
 ```
 
 -	Platforms:
@@ -1308,9 +1308,9 @@ $ docker pull nuxeo@sha256:784f44fdd1f9b43a88834c1f6ceb5176cd69a044d3a2ccaaa861f
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **543.7 MB (543717835 bytes)**  
+-	Total Size: **543.7 MB (543717880 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac8dfa5d482012e2a613e013a4a18b596459efb9ca4f35fc6ace050c55d1652b`
+-	Image ID: `sha256:113a3183d2ca93b929a6955e1b44e64e8a4b201e86a839c3e7dd3ade341c5dc8`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
@@ -1369,15 +1369,15 @@ RUN mkdir /docker-entrypoint-initnuxeo.d
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Mon, 01 Aug 2016 19:51:11 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 01 Aug 2016 19:51:12 GMT
-COPY file:cb943216a015e60ac612f7b400e77a9d0976bbbef36448eb3aa1e2f0b740a529 in /
-# Mon, 01 Aug 2016 19:51:13 GMT
+# Wed, 10 Aug 2016 16:56:59 GMT
+COPY file:8d76e373fbb43b4776438b7110dcaac3baa7df9dc29515cde4e4507ea41bb412 in /
+# Wed, 10 Aug 2016 16:57:00 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Mon, 01 Aug 2016 19:51:14 GMT
+# Wed, 10 Aug 2016 16:57:00 GMT
 EXPOSE 8080/tcp
-# Mon, 01 Aug 2016 19:51:15 GMT
+# Wed, 10 Aug 2016 16:57:00 GMT
 EXPOSE 8787/tcp
-# Mon, 01 Aug 2016 19:51:15 GMT
+# Wed, 10 Aug 2016 16:57:01 GMT
 CMD ["nuxeoctl" "console"]
 ```
 
@@ -1421,14 +1421,14 @@ CMD ["nuxeoctl" "console"]
 	-	`sha256:bb940089fea91c41dd9c5470a5d02a5db6c65e68724e02990a05eeccd141ee1f`  
 		Last Modified: Mon, 01 Aug 2016 19:51:25 GMT  
 		Size: 115.0 B
-	-	`sha256:a48ada7e4602d1fded6f62d9207d0300148624d094bd6dce281639c2ea3dcc7f`  
-		Last Modified: Mon, 01 Aug 2016 19:51:25 GMT  
-		Size: 1.3 KB (1340 bytes)
+	-	`sha256:198f3fb128c21d250b1d6616de579677edd0db6ae56c7203974fae12519b1e6b`  
+		Last Modified: Wed, 10 Aug 2016 16:59:03 GMT  
+		Size: 1.4 KB (1385 bytes)
 
 ## `nuxeo:6.0`
 
 ```console
-$ docker pull nuxeo@sha256:784f44fdd1f9b43a88834c1f6ceb5176cd69a044d3a2ccaaa861f3716f18e491
+$ docker pull nuxeo@sha256:0a38031d7b9528816b8b5d50439cb81f3c87e0a862e69ae4eb3869c70f71fa16
 ```
 
 -	Platforms:
@@ -1438,9 +1438,9 @@ $ docker pull nuxeo@sha256:784f44fdd1f9b43a88834c1f6ceb5176cd69a044d3a2ccaaa861f
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **543.7 MB (543717835 bytes)**  
+-	Total Size: **543.7 MB (543717880 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac8dfa5d482012e2a613e013a4a18b596459efb9ca4f35fc6ace050c55d1652b`
+-	Image ID: `sha256:113a3183d2ca93b929a6955e1b44e64e8a4b201e86a839c3e7dd3ade341c5dc8`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
@@ -1499,15 +1499,15 @@ RUN mkdir /docker-entrypoint-initnuxeo.d
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Mon, 01 Aug 2016 19:51:11 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 01 Aug 2016 19:51:12 GMT
-COPY file:cb943216a015e60ac612f7b400e77a9d0976bbbef36448eb3aa1e2f0b740a529 in /
-# Mon, 01 Aug 2016 19:51:13 GMT
+# Wed, 10 Aug 2016 16:56:59 GMT
+COPY file:8d76e373fbb43b4776438b7110dcaac3baa7df9dc29515cde4e4507ea41bb412 in /
+# Wed, 10 Aug 2016 16:57:00 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Mon, 01 Aug 2016 19:51:14 GMT
+# Wed, 10 Aug 2016 16:57:00 GMT
 EXPOSE 8080/tcp
-# Mon, 01 Aug 2016 19:51:15 GMT
+# Wed, 10 Aug 2016 16:57:00 GMT
 EXPOSE 8787/tcp
-# Mon, 01 Aug 2016 19:51:15 GMT
+# Wed, 10 Aug 2016 16:57:01 GMT
 CMD ["nuxeoctl" "console"]
 ```
 
@@ -1551,6 +1551,6 @@ CMD ["nuxeoctl" "console"]
 	-	`sha256:bb940089fea91c41dd9c5470a5d02a5db6c65e68724e02990a05eeccd141ee1f`  
 		Last Modified: Mon, 01 Aug 2016 19:51:25 GMT  
 		Size: 115.0 B
-	-	`sha256:a48ada7e4602d1fded6f62d9207d0300148624d094bd6dce281639c2ea3dcc7f`  
-		Last Modified: Mon, 01 Aug 2016 19:51:25 GMT  
-		Size: 1.3 KB (1340 bytes)
+	-	`sha256:198f3fb128c21d250b1d6616de579677edd0db6ae56c7203974fae12519b1e6b`  
+		Last Modified: Wed, 10 Aug 2016 16:59:03 GMT  
+		Size: 1.4 KB (1385 bytes)
