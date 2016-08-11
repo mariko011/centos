@@ -251,7 +251,7 @@ CMD ["crate"]
 ## `crate:0.52`
 
 ```console
-$ docker pull crate@sha256:1c5b4ed9f25845de929569e1ff10d4485f3a81b3a55ecce41d21d1d538135d5c
+$ docker pull crate@sha256:c9041f70f17948a43fefc2c4f964367f404561550ab12152d907dbc33f79f512
 ```
 
 -	Platforms:
@@ -261,9 +261,9 @@ $ docker pull crate@sha256:1c5b4ed9f25845de929569e1ff10d4485f3a81b3a55ecce41d21d
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **180.9 MB (180912767 bytes)**  
+-	Total Size: **181.0 MB (180963805 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:857217994cf9c6e16739ab8b6d9f51123af39e00416995056ff28d75f233a647`
+-	Image ID: `sha256:3f49c992cb8f4f716a4271eba0aec4ef0794a4ac618a5f0afb4d8c5bc00cdc7a`
 -	Default Command: `["crate"]`
 
 ```dockerfile
@@ -283,37 +283,37 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Fri, 29 Jul 2016 04:48:36 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Fri, 29 Jul 2016 04:48:37 GMT
-ENV JAVA_VERSION=8u91
-# Fri, 29 Jul 2016 04:48:38 GMT
-ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Fri, 29 Jul 2016 04:48:38 GMT
+# Wed, 10 Aug 2016 18:41:34 GMT
+ENV JAVA_VERSION=8u102
+# Wed, 10 Aug 2016 18:41:35 GMT
+ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
+# Wed, 10 Aug 2016 18:41:36 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Fri, 29 Jul 2016 16:47:50 GMT
+# Wed, 10 Aug 2016 18:42:55 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 29 Jul 2016 16:47:53 GMT
+# Wed, 10 Aug 2016 18:42:59 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Wed, 03 Aug 2016 20:40:05 GMT
+# Thu, 11 Aug 2016 16:55:34 GMT
 MAINTAINER Crate Technology GmbH <office@crate.io>
-# Wed, 03 Aug 2016 20:41:12 GMT
+# Thu, 11 Aug 2016 16:56:41 GMT
 RUN apt-get update &&     apt-get install -y python3 &&     rm -rf /var/lib/apt &&     ln -s /usr/bin/python3 /usr/bin/python
-# Wed, 03 Aug 2016 20:41:12 GMT
+# Thu, 11 Aug 2016 16:56:42 GMT
 ENV CRATE_VERSION=0.52.4
-# Wed, 03 Aug 2016 20:41:22 GMT
+# Thu, 11 Aug 2016 16:56:51 GMT
 RUN mkdir /crate &&   wget -nv -O - "https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz"   | tar -xzC /crate --strip-components=1
-# Wed, 03 Aug 2016 20:41:23 GMT
+# Thu, 11 Aug 2016 16:56:52 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 03 Aug 2016 20:41:24 GMT
+# Thu, 11 Aug 2016 16:56:53 GMT
 VOLUME [/data]
-# Wed, 03 Aug 2016 20:41:25 GMT
+# Thu, 11 Aug 2016 16:56:54 GMT
 ADD file:33e1eb95331f2fdac6f7aa4f37d1379542d54d333f63db873d8bfbf0aaa86e2d in /crate/config/crate.yml
-# Wed, 03 Aug 2016 20:41:26 GMT
+# Thu, 11 Aug 2016 16:56:55 GMT
 ADD file:a3aa60dd23939bb1b0c1bf558d768d3f06cead16fd33d36cdad411bd43d16448 in /crate/config/logging.yml
-# Wed, 03 Aug 2016 20:41:27 GMT
+# Thu, 11 Aug 2016 16:56:56 GMT
 WORKDIR /data
-# Wed, 03 Aug 2016 20:41:28 GMT
+# Thu, 11 Aug 2016 16:56:57 GMT
 EXPOSE 4200/tcp 4300/tcp
-# Wed, 03 Aug 2016 20:41:29 GMT
+# Thu, 11 Aug 2016 16:56:58 GMT
 CMD ["crate"]
 ```
 
@@ -333,32 +333,32 @@ CMD ["crate"]
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
 		Size: 241.0 B
-	-	`sha256:783d0812b9b6cb13f78b8ecdddd83a821c6ddf11a1e3b9ede5e61d7c8ccfdc29`  
-		Last Modified: Fri, 29 Jul 2016 16:48:13 GMT  
-		Size: 53.4 MB (53350533 bytes)
-	-	`sha256:2c49287cad2e905f46bf98d5d5461760bb975c335ace4ffca8466a2312465f9e`  
-		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 284.4 KB (284373 bytes)
-	-	`sha256:84a1ae69db13073390aead10948f584bce2f1adf883697bfec7e200d5d3fb70b`  
-		Last Modified: Wed, 03 Aug 2016 20:41:42 GMT  
-		Size: 9.5 MB (9505530 bytes)
-	-	`sha256:95e5357cef423e6dac446f1936012166854d7fadfe80c9625f67da240a0849d8`  
-		Last Modified: Wed, 03 Aug 2016 20:41:44 GMT  
-		Size: 47.3 MB (47311843 bytes)
-	-	`sha256:a8bf31e840dcaa10d7ca8f369f6d5ec14ba05af3ccbfa25064d8b23e0c88d386`  
-		Last Modified: Wed, 03 Aug 2016 20:41:38 GMT  
+	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
+		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
+		Size: 53.4 MB (53401736 bytes)
+	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
+		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
+		Size: 284.4 KB (284364 bytes)
+	-	`sha256:b5ab031b74d757517853f902b0b379a70c06135d3fa5c3ed9a48701b1df8ad78`  
+		Last Modified: Thu, 11 Aug 2016 16:57:12 GMT  
+		Size: 9.5 MB (9505373 bytes)
+	-	`sha256:9b7669a819df536b8571627e06287867137afed819aeb1b5623c813a10b327e3`  
+		Last Modified: Thu, 11 Aug 2016 16:57:14 GMT  
+		Size: 47.3 MB (47311848 bytes)
+	-	`sha256:28efbb102306efe6f68585b98ba774a681211f0cdee23eeda7f635ade16c266c`  
+		Last Modified: Thu, 11 Aug 2016 16:57:08 GMT  
 		Size: 227.0 B
-	-	`sha256:92535ca7e3fb985659c6df49dfd88d23eb0f7722a893c74b4ec4c4d4319a658c`  
-		Last Modified: Wed, 03 Aug 2016 20:41:38 GMT  
-		Size: 393.0 B
-	-	`sha256:d208852d09d4861542332261627a90bae31621335f8cb53b7f49af5fec9429c1`  
-		Last Modified: Wed, 03 Aug 2016 20:41:39 GMT  
-		Size: 92.0 B
+	-	`sha256:7e945e2294c9e30287640e35e60c35d9b4d49b0d9ea4e306769e767fc12d1647`  
+		Last Modified: Thu, 11 Aug 2016 16:57:08 GMT  
+		Size: 392.0 B
+	-	`sha256:32ebd48f751790800fad17951f7d28d5bb53599d75da09e2b8da7aa4004c1ee5`  
+		Last Modified: Thu, 11 Aug 2016 16:57:08 GMT  
+		Size: 89.0 B
 
 ## `crate:0.52.4`
 
 ```console
-$ docker pull crate@sha256:1c5b4ed9f25845de929569e1ff10d4485f3a81b3a55ecce41d21d1d538135d5c
+$ docker pull crate@sha256:c9041f70f17948a43fefc2c4f964367f404561550ab12152d907dbc33f79f512
 ```
 
 -	Platforms:
@@ -368,9 +368,9 @@ $ docker pull crate@sha256:1c5b4ed9f25845de929569e1ff10d4485f3a81b3a55ecce41d21d
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **180.9 MB (180912767 bytes)**  
+-	Total Size: **181.0 MB (180963805 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:857217994cf9c6e16739ab8b6d9f51123af39e00416995056ff28d75f233a647`
+-	Image ID: `sha256:3f49c992cb8f4f716a4271eba0aec4ef0794a4ac618a5f0afb4d8c5bc00cdc7a`
 -	Default Command: `["crate"]`
 
 ```dockerfile
@@ -390,37 +390,37 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Fri, 29 Jul 2016 04:48:36 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Fri, 29 Jul 2016 04:48:37 GMT
-ENV JAVA_VERSION=8u91
-# Fri, 29 Jul 2016 04:48:38 GMT
-ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Fri, 29 Jul 2016 04:48:38 GMT
+# Wed, 10 Aug 2016 18:41:34 GMT
+ENV JAVA_VERSION=8u102
+# Wed, 10 Aug 2016 18:41:35 GMT
+ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
+# Wed, 10 Aug 2016 18:41:36 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Fri, 29 Jul 2016 16:47:50 GMT
+# Wed, 10 Aug 2016 18:42:55 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 29 Jul 2016 16:47:53 GMT
+# Wed, 10 Aug 2016 18:42:59 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Wed, 03 Aug 2016 20:40:05 GMT
+# Thu, 11 Aug 2016 16:55:34 GMT
 MAINTAINER Crate Technology GmbH <office@crate.io>
-# Wed, 03 Aug 2016 20:41:12 GMT
+# Thu, 11 Aug 2016 16:56:41 GMT
 RUN apt-get update &&     apt-get install -y python3 &&     rm -rf /var/lib/apt &&     ln -s /usr/bin/python3 /usr/bin/python
-# Wed, 03 Aug 2016 20:41:12 GMT
+# Thu, 11 Aug 2016 16:56:42 GMT
 ENV CRATE_VERSION=0.52.4
-# Wed, 03 Aug 2016 20:41:22 GMT
+# Thu, 11 Aug 2016 16:56:51 GMT
 RUN mkdir /crate &&   wget -nv -O - "https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz"   | tar -xzC /crate --strip-components=1
-# Wed, 03 Aug 2016 20:41:23 GMT
+# Thu, 11 Aug 2016 16:56:52 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 03 Aug 2016 20:41:24 GMT
+# Thu, 11 Aug 2016 16:56:53 GMT
 VOLUME [/data]
-# Wed, 03 Aug 2016 20:41:25 GMT
+# Thu, 11 Aug 2016 16:56:54 GMT
 ADD file:33e1eb95331f2fdac6f7aa4f37d1379542d54d333f63db873d8bfbf0aaa86e2d in /crate/config/crate.yml
-# Wed, 03 Aug 2016 20:41:26 GMT
+# Thu, 11 Aug 2016 16:56:55 GMT
 ADD file:a3aa60dd23939bb1b0c1bf558d768d3f06cead16fd33d36cdad411bd43d16448 in /crate/config/logging.yml
-# Wed, 03 Aug 2016 20:41:27 GMT
+# Thu, 11 Aug 2016 16:56:56 GMT
 WORKDIR /data
-# Wed, 03 Aug 2016 20:41:28 GMT
+# Thu, 11 Aug 2016 16:56:57 GMT
 EXPOSE 4200/tcp 4300/tcp
-# Wed, 03 Aug 2016 20:41:29 GMT
+# Thu, 11 Aug 2016 16:56:58 GMT
 CMD ["crate"]
 ```
 
@@ -440,24 +440,24 @@ CMD ["crate"]
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
 		Size: 241.0 B
-	-	`sha256:783d0812b9b6cb13f78b8ecdddd83a821c6ddf11a1e3b9ede5e61d7c8ccfdc29`  
-		Last Modified: Fri, 29 Jul 2016 16:48:13 GMT  
-		Size: 53.4 MB (53350533 bytes)
-	-	`sha256:2c49287cad2e905f46bf98d5d5461760bb975c335ace4ffca8466a2312465f9e`  
-		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 284.4 KB (284373 bytes)
-	-	`sha256:84a1ae69db13073390aead10948f584bce2f1adf883697bfec7e200d5d3fb70b`  
-		Last Modified: Wed, 03 Aug 2016 20:41:42 GMT  
-		Size: 9.5 MB (9505530 bytes)
-	-	`sha256:95e5357cef423e6dac446f1936012166854d7fadfe80c9625f67da240a0849d8`  
-		Last Modified: Wed, 03 Aug 2016 20:41:44 GMT  
-		Size: 47.3 MB (47311843 bytes)
-	-	`sha256:a8bf31e840dcaa10d7ca8f369f6d5ec14ba05af3ccbfa25064d8b23e0c88d386`  
-		Last Modified: Wed, 03 Aug 2016 20:41:38 GMT  
+	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
+		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
+		Size: 53.4 MB (53401736 bytes)
+	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
+		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
+		Size: 284.4 KB (284364 bytes)
+	-	`sha256:b5ab031b74d757517853f902b0b379a70c06135d3fa5c3ed9a48701b1df8ad78`  
+		Last Modified: Thu, 11 Aug 2016 16:57:12 GMT  
+		Size: 9.5 MB (9505373 bytes)
+	-	`sha256:9b7669a819df536b8571627e06287867137afed819aeb1b5623c813a10b327e3`  
+		Last Modified: Thu, 11 Aug 2016 16:57:14 GMT  
+		Size: 47.3 MB (47311848 bytes)
+	-	`sha256:28efbb102306efe6f68585b98ba774a681211f0cdee23eeda7f635ade16c266c`  
+		Last Modified: Thu, 11 Aug 2016 16:57:08 GMT  
 		Size: 227.0 B
-	-	`sha256:92535ca7e3fb985659c6df49dfd88d23eb0f7722a893c74b4ec4c4d4319a658c`  
-		Last Modified: Wed, 03 Aug 2016 20:41:38 GMT  
-		Size: 393.0 B
-	-	`sha256:d208852d09d4861542332261627a90bae31621335f8cb53b7f49af5fec9429c1`  
-		Last Modified: Wed, 03 Aug 2016 20:41:39 GMT  
-		Size: 92.0 B
+	-	`sha256:7e945e2294c9e30287640e35e60c35d9b4d49b0d9ea4e306769e767fc12d1647`  
+		Last Modified: Thu, 11 Aug 2016 16:57:08 GMT  
+		Size: 392.0 B
+	-	`sha256:32ebd48f751790800fad17951f7d28d5bb53599d75da09e2b8da7aa4004c1ee5`  
+		Last Modified: Thu, 11 Aug 2016 16:57:08 GMT  
+		Size: 89.0 B
