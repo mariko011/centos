@@ -39,7 +39,7 @@
 ## `owncloud:8.0.14-apache`
 
 ```console
-$ docker pull owncloud@sha256:ac6fc53db657c9e7eb8969f861cb2727ae85c3ea62033585cdce426ce15945d5
+$ docker pull owncloud@sha256:2760b3f47a82436e7bd8480b432443db6c6e433ac74f81c6c310b61cc1857910
 ```
 
 -	Platforms:
@@ -49,9 +49,9 @@ $ docker pull owncloud@sha256:ac6fc53db657c9e7eb8969f861cb2727ae85c3ea62033585cd
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **223.4 MB (223440121 bytes)**  
+-	Total Size: **224.0 MB (224037992 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e6d9bb8dc729787d85a01d1ef80dad12aba34d2b5e80efe88444c416a41defd`
+-	Image ID: `sha256:22e3b2680eb3459becaaa1fd15f697ae0a168d35b582ad1bf4c878c57d844441`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -74,63 +74,63 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 ENV APACHE_CONFDIR=/etc/apache2
 # Fri, 29 Jul 2016 20:49:44 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 29 Jul 2016 20:49:45 GMT
-RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
-# Fri, 29 Jul 2016 20:49:46 GMT
+# Wed, 10 Aug 2016 19:34:50 GMT
+RUN set -ex 		&& sed -r 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS" 		&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
+# Wed, 10 Aug 2016 19:34:51 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Fri, 29 Jul 2016 20:49:48 GMT
+# Wed, 10 Aug 2016 19:34:53 GMT
 RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Fri, 29 Jul 2016 20:49:50 GMT
+# Wed, 10 Aug 2016 19:34:55 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV PHP_VERSION=5.6.24
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_FILENAME=php-5.6.24.tar.xz
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:34:30 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:34:31 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:48 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:39:49 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:49 GMT
+# Wed, 10 Aug 2016 20:18:08 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:18:09 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:23:14 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:14 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 EXPOSE 80/tcp
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:16 GMT
 CMD ["apache2-foreground"]
-# Mon, 01 Aug 2016 17:41:19 GMT
+# Thu, 11 Aug 2016 19:20:22 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:44:57 GMT
+# Thu, 11 Aug 2016 19:27:50 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:44:59 GMT
+# Thu, 11 Aug 2016 19:27:53 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:45:01 GMT
+# Thu, 11 Aug 2016 19:27:56 GMT
 RUN a2enmod rewrite
-# Mon, 01 Aug 2016 17:45:16 GMT
+# Thu, 11 Aug 2016 19:28:23 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& docker-php-ext-enable apcu
-# Mon, 01 Aug 2016 17:45:17 GMT
+# Thu, 11 Aug 2016 19:28:25 GMT
 ENV OWNCLOUD_VERSION=8.0.14
-# Mon, 01 Aug 2016 17:45:17 GMT
+# Thu, 11 Aug 2016 19:28:26 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 17:45:34 GMT
+# Thu, 11 Aug 2016 19:28:58 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 17:45:35 GMT
+# Thu, 11 Aug 2016 19:29:01 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 17:45:36 GMT
+# Thu, 11 Aug 2016 19:29:02 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 17:45:37 GMT
+# Thu, 11 Aug 2016 19:29:03 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -147,59 +147,59 @@ CMD ["apache2-foreground"]
 	-	`sha256:b4ae91aad5222bbe7ca67b9c2b69e54fd29989bea1eec3d8a9aca56b011c303c`  
 		Last Modified: Fri, 29 Jul 2016 22:49:17 GMT  
 		Size: 2.8 MB (2846544 bytes)
-	-	`sha256:c0c9ad6136b5e7b142c48c7167eede3d15af54c538f7f3177c50693006cca242`  
-		Last Modified: Fri, 29 Jul 2016 22:49:15 GMT  
-		Size: 276.0 B
-	-	`sha256:b4b0c030555d4340cfe8288272d2bcb291c2f483f1957f1341cfaaea369dc109`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 431.0 B
-	-	`sha256:6e898edbabd79f8b8eaf7351077eff9966a11459347f335757f5341a0a889c16`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 222.0 B
-	-	`sha256:e4b8d84dea782a5effd404eec31320063107e0bb56fccaffae77c4430c8082a3`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
+	-	`sha256:66e1c1a53c958663cb6a8d19f5993b36bfaf8e334d476c5ed30d6766c8db1f9a`  
+		Last Modified: Wed, 10 Aug 2016 21:31:30 GMT  
+		Size: 270.0 B
+	-	`sha256:5d1f306a891255c05b40e49a8d1dd76efb713792e0aa200386ab0e269faa49dc`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 432.0 B
+	-	`sha256:37733078a51e3cf33ba985f69be1dda278d529bb87184a83c71037cade3170b4`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 223.0 B
+	-	`sha256:c5351b4d6bee8cc2fc09f2af750fa4627dfdd37b44b651f3f3289260783d3b38`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
 		Size: 475.0 B
-	-	`sha256:8e151ffc26f09785dd3e1b511b6cc5b32744241932c5ac3a909b032906167e2f`  
-		Last Modified: Fri, 29 Jul 2016 22:54:53 GMT  
-		Size: 12.4 MB (12399117 bytes)
-	-	`sha256:a51015ce0d7e5186d93e7c1f1de1710edce96d5dc45da09f1f1fd33e347b3f44`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 601.0 B
-	-	`sha256:1d1d7ce85493184d89b2695b6139c410038091d8c18ec819ace83d50bcbf4af8`  
-		Last Modified: Fri, 29 Jul 2016 22:54:57 GMT  
-		Size: 15.8 MB (15789648 bytes)
-	-	`sha256:1394b74e0f9d9bd5c6f6a2fd4058edd52deac35dbfaa36668aa49328db286a57`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:35f1f99fe906e63a6fe525a33188e64c2f84d2e332e51327bfd262027c598444`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 579.0 B
-	-	`sha256:81f622ffb7e8b26c272462832dd86f8363cf9f201a8b46cb81b3c222e1967b2b`  
-		Last Modified: Mon, 01 Aug 2016 17:45:58 GMT  
-		Size: 33.5 MB (33468856 bytes)
-	-	`sha256:56a48d2e52e099eb4cc48928fb3765fcdd8b00cddb92128504961931128bb3a6`  
-		Last Modified: Mon, 01 Aug 2016 17:45:52 GMT  
-		Size: 3.7 MB (3735495 bytes)
-	-	`sha256:6d61a29069d486c283032d7f684f06e56bab48c08e7faabdae98526b3a39fd11`  
-		Last Modified: Mon, 01 Aug 2016 17:45:45 GMT  
-		Size: 334.0 B
-	-	`sha256:8bb5079bd9393026aea03900275a46e8481bb89cbfe32319207bdf591dbb7715`  
-		Last Modified: Mon, 01 Aug 2016 17:45:45 GMT  
-		Size: 293.0 B
-	-	`sha256:4d9dfd5f6dd8635fe0e92a94823519de4dfb9fff9f3fe8e7e8b6440b9d062800`  
-		Last Modified: Mon, 01 Aug 2016 17:45:46 GMT  
-		Size: 363.7 KB (363674 bytes)
-	-	`sha256:a374dc3ee0bc4f3613bde1e2d74116d418cc2d27ecbcc048ed6dd5b2a2a2000c`  
-		Last Modified: Mon, 01 Aug 2016 17:45:53 GMT  
-		Size: 25.9 MB (25884482 bytes)
-	-	`sha256:bee18950f541442daeedb01f0a400d0e63b9a94121562ba1f22ab05d82e392b8`  
-		Last Modified: Mon, 01 Aug 2016 17:45:46 GMT  
-		Size: 243.0 B
+	-	`sha256:68fab1fd02dce6a758d7907eaf173747d5504e714bc9dcf77bc0086bb8f98420`  
+		Last Modified: Wed, 10 Aug 2016 21:38:00 GMT  
+		Size: 12.4 MB (12399124 bytes)
+	-	`sha256:d63c862a4e8a8fe6642f7954b97624cd307b5b913f999697835d9dede0674595`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 492.0 B
+	-	`sha256:a1f41798510b1dfa029f4cd846d723cca3566637cceedc3aba17cf117605e4fe`  
+		Last Modified: Wed, 10 Aug 2016 21:38:07 GMT  
+		Size: 16.4 MB (16385973 bytes)
+	-	`sha256:a1cb79de526642a0956598b60e75c5c3d73693e4a6e41aa4666c3377d84fdb07`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 1.8 KB (1835 bytes)
+	-	`sha256:0ad59c7db086709fbfe994d1ed28d4818952b4981147090c9dd27c00c1665f13`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 583.0 B
+	-	`sha256:cac8898ff2591514aa1f6fb42f8ae28d7a7dc1abc7be902fa96c4a824dc4e2e2`  
+		Last Modified: Thu, 11 Aug 2016 19:29:34 GMT  
+		Size: 33.5 MB (33470428 bytes)
+	-	`sha256:79ce92c067b8d3b39b4513800bbaa43129f14d0351b3d9d091a752a39381811c`  
+		Last Modified: Thu, 11 Aug 2016 19:29:23 GMT  
+		Size: 3.7 MB (3735500 bytes)
+	-	`sha256:6926c7118f6a0d1890b4b9706c103e780b1813ede6cde78db931bd1026112aec`  
+		Last Modified: Thu, 11 Aug 2016 19:29:18 GMT  
+		Size: 332.0 B
+	-	`sha256:c81d643651d4be394a50972b9285057785fe3fef214ec32d1ddb43e86c156a89`  
+		Last Modified: Thu, 11 Aug 2016 19:29:18 GMT  
+		Size: 296.0 B
+	-	`sha256:8ecd6de491078f029f94ef79d66ffbd497521efa10251fdb96c786146c1ef1cf`  
+		Last Modified: Thu, 11 Aug 2016 19:29:19 GMT  
+		Size: 363.7 KB (363657 bytes)
+	-	`sha256:fcc74af51139c75a98b9888671910f045a1ec2dc167e48505fde10ca65dd2966`  
+		Last Modified: Thu, 11 Aug 2016 19:29:29 GMT  
+		Size: 25.9 MB (25884485 bytes)
+	-	`sha256:24b7010ae8b644f0d4f17dc92cbeccbb31bfd0216de1d5b9aad7bfebfb6ea9ba`  
+		Last Modified: Thu, 11 Aug 2016 19:29:18 GMT  
+		Size: 245.0 B
 
 ## `owncloud:8.0-apache`
 
 ```console
-$ docker pull owncloud@sha256:ac6fc53db657c9e7eb8969f861cb2727ae85c3ea62033585cdce426ce15945d5
+$ docker pull owncloud@sha256:2760b3f47a82436e7bd8480b432443db6c6e433ac74f81c6c310b61cc1857910
 ```
 
 -	Platforms:
@@ -209,9 +209,9 @@ $ docker pull owncloud@sha256:ac6fc53db657c9e7eb8969f861cb2727ae85c3ea62033585cd
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **223.4 MB (223440121 bytes)**  
+-	Total Size: **224.0 MB (224037992 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e6d9bb8dc729787d85a01d1ef80dad12aba34d2b5e80efe88444c416a41defd`
+-	Image ID: `sha256:22e3b2680eb3459becaaa1fd15f697ae0a168d35b582ad1bf4c878c57d844441`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -234,63 +234,63 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 ENV APACHE_CONFDIR=/etc/apache2
 # Fri, 29 Jul 2016 20:49:44 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 29 Jul 2016 20:49:45 GMT
-RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
-# Fri, 29 Jul 2016 20:49:46 GMT
+# Wed, 10 Aug 2016 19:34:50 GMT
+RUN set -ex 		&& sed -r 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS" 		&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
+# Wed, 10 Aug 2016 19:34:51 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Fri, 29 Jul 2016 20:49:48 GMT
+# Wed, 10 Aug 2016 19:34:53 GMT
 RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Fri, 29 Jul 2016 20:49:50 GMT
+# Wed, 10 Aug 2016 19:34:55 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV PHP_VERSION=5.6.24
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_FILENAME=php-5.6.24.tar.xz
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:34:30 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:34:31 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:48 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:39:49 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:49 GMT
+# Wed, 10 Aug 2016 20:18:08 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:18:09 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:23:14 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:14 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 EXPOSE 80/tcp
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:16 GMT
 CMD ["apache2-foreground"]
-# Mon, 01 Aug 2016 17:41:19 GMT
+# Thu, 11 Aug 2016 19:20:22 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:44:57 GMT
+# Thu, 11 Aug 2016 19:27:50 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:44:59 GMT
+# Thu, 11 Aug 2016 19:27:53 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:45:01 GMT
+# Thu, 11 Aug 2016 19:27:56 GMT
 RUN a2enmod rewrite
-# Mon, 01 Aug 2016 17:45:16 GMT
+# Thu, 11 Aug 2016 19:28:23 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& docker-php-ext-enable apcu
-# Mon, 01 Aug 2016 17:45:17 GMT
+# Thu, 11 Aug 2016 19:28:25 GMT
 ENV OWNCLOUD_VERSION=8.0.14
-# Mon, 01 Aug 2016 17:45:17 GMT
+# Thu, 11 Aug 2016 19:28:26 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 17:45:34 GMT
+# Thu, 11 Aug 2016 19:28:58 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 17:45:35 GMT
+# Thu, 11 Aug 2016 19:29:01 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 17:45:36 GMT
+# Thu, 11 Aug 2016 19:29:02 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 17:45:37 GMT
+# Thu, 11 Aug 2016 19:29:03 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -307,59 +307,59 @@ CMD ["apache2-foreground"]
 	-	`sha256:b4ae91aad5222bbe7ca67b9c2b69e54fd29989bea1eec3d8a9aca56b011c303c`  
 		Last Modified: Fri, 29 Jul 2016 22:49:17 GMT  
 		Size: 2.8 MB (2846544 bytes)
-	-	`sha256:c0c9ad6136b5e7b142c48c7167eede3d15af54c538f7f3177c50693006cca242`  
-		Last Modified: Fri, 29 Jul 2016 22:49:15 GMT  
-		Size: 276.0 B
-	-	`sha256:b4b0c030555d4340cfe8288272d2bcb291c2f483f1957f1341cfaaea369dc109`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 431.0 B
-	-	`sha256:6e898edbabd79f8b8eaf7351077eff9966a11459347f335757f5341a0a889c16`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 222.0 B
-	-	`sha256:e4b8d84dea782a5effd404eec31320063107e0bb56fccaffae77c4430c8082a3`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
+	-	`sha256:66e1c1a53c958663cb6a8d19f5993b36bfaf8e334d476c5ed30d6766c8db1f9a`  
+		Last Modified: Wed, 10 Aug 2016 21:31:30 GMT  
+		Size: 270.0 B
+	-	`sha256:5d1f306a891255c05b40e49a8d1dd76efb713792e0aa200386ab0e269faa49dc`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 432.0 B
+	-	`sha256:37733078a51e3cf33ba985f69be1dda278d529bb87184a83c71037cade3170b4`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 223.0 B
+	-	`sha256:c5351b4d6bee8cc2fc09f2af750fa4627dfdd37b44b651f3f3289260783d3b38`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
 		Size: 475.0 B
-	-	`sha256:8e151ffc26f09785dd3e1b511b6cc5b32744241932c5ac3a909b032906167e2f`  
-		Last Modified: Fri, 29 Jul 2016 22:54:53 GMT  
-		Size: 12.4 MB (12399117 bytes)
-	-	`sha256:a51015ce0d7e5186d93e7c1f1de1710edce96d5dc45da09f1f1fd33e347b3f44`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 601.0 B
-	-	`sha256:1d1d7ce85493184d89b2695b6139c410038091d8c18ec819ace83d50bcbf4af8`  
-		Last Modified: Fri, 29 Jul 2016 22:54:57 GMT  
-		Size: 15.8 MB (15789648 bytes)
-	-	`sha256:1394b74e0f9d9bd5c6f6a2fd4058edd52deac35dbfaa36668aa49328db286a57`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:35f1f99fe906e63a6fe525a33188e64c2f84d2e332e51327bfd262027c598444`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 579.0 B
-	-	`sha256:81f622ffb7e8b26c272462832dd86f8363cf9f201a8b46cb81b3c222e1967b2b`  
-		Last Modified: Mon, 01 Aug 2016 17:45:58 GMT  
-		Size: 33.5 MB (33468856 bytes)
-	-	`sha256:56a48d2e52e099eb4cc48928fb3765fcdd8b00cddb92128504961931128bb3a6`  
-		Last Modified: Mon, 01 Aug 2016 17:45:52 GMT  
-		Size: 3.7 MB (3735495 bytes)
-	-	`sha256:6d61a29069d486c283032d7f684f06e56bab48c08e7faabdae98526b3a39fd11`  
-		Last Modified: Mon, 01 Aug 2016 17:45:45 GMT  
-		Size: 334.0 B
-	-	`sha256:8bb5079bd9393026aea03900275a46e8481bb89cbfe32319207bdf591dbb7715`  
-		Last Modified: Mon, 01 Aug 2016 17:45:45 GMT  
-		Size: 293.0 B
-	-	`sha256:4d9dfd5f6dd8635fe0e92a94823519de4dfb9fff9f3fe8e7e8b6440b9d062800`  
-		Last Modified: Mon, 01 Aug 2016 17:45:46 GMT  
-		Size: 363.7 KB (363674 bytes)
-	-	`sha256:a374dc3ee0bc4f3613bde1e2d74116d418cc2d27ecbcc048ed6dd5b2a2a2000c`  
-		Last Modified: Mon, 01 Aug 2016 17:45:53 GMT  
-		Size: 25.9 MB (25884482 bytes)
-	-	`sha256:bee18950f541442daeedb01f0a400d0e63b9a94121562ba1f22ab05d82e392b8`  
-		Last Modified: Mon, 01 Aug 2016 17:45:46 GMT  
-		Size: 243.0 B
+	-	`sha256:68fab1fd02dce6a758d7907eaf173747d5504e714bc9dcf77bc0086bb8f98420`  
+		Last Modified: Wed, 10 Aug 2016 21:38:00 GMT  
+		Size: 12.4 MB (12399124 bytes)
+	-	`sha256:d63c862a4e8a8fe6642f7954b97624cd307b5b913f999697835d9dede0674595`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 492.0 B
+	-	`sha256:a1f41798510b1dfa029f4cd846d723cca3566637cceedc3aba17cf117605e4fe`  
+		Last Modified: Wed, 10 Aug 2016 21:38:07 GMT  
+		Size: 16.4 MB (16385973 bytes)
+	-	`sha256:a1cb79de526642a0956598b60e75c5c3d73693e4a6e41aa4666c3377d84fdb07`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 1.8 KB (1835 bytes)
+	-	`sha256:0ad59c7db086709fbfe994d1ed28d4818952b4981147090c9dd27c00c1665f13`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 583.0 B
+	-	`sha256:cac8898ff2591514aa1f6fb42f8ae28d7a7dc1abc7be902fa96c4a824dc4e2e2`  
+		Last Modified: Thu, 11 Aug 2016 19:29:34 GMT  
+		Size: 33.5 MB (33470428 bytes)
+	-	`sha256:79ce92c067b8d3b39b4513800bbaa43129f14d0351b3d9d091a752a39381811c`  
+		Last Modified: Thu, 11 Aug 2016 19:29:23 GMT  
+		Size: 3.7 MB (3735500 bytes)
+	-	`sha256:6926c7118f6a0d1890b4b9706c103e780b1813ede6cde78db931bd1026112aec`  
+		Last Modified: Thu, 11 Aug 2016 19:29:18 GMT  
+		Size: 332.0 B
+	-	`sha256:c81d643651d4be394a50972b9285057785fe3fef214ec32d1ddb43e86c156a89`  
+		Last Modified: Thu, 11 Aug 2016 19:29:18 GMT  
+		Size: 296.0 B
+	-	`sha256:8ecd6de491078f029f94ef79d66ffbd497521efa10251fdb96c786146c1ef1cf`  
+		Last Modified: Thu, 11 Aug 2016 19:29:19 GMT  
+		Size: 363.7 KB (363657 bytes)
+	-	`sha256:fcc74af51139c75a98b9888671910f045a1ec2dc167e48505fde10ca65dd2966`  
+		Last Modified: Thu, 11 Aug 2016 19:29:29 GMT  
+		Size: 25.9 MB (25884485 bytes)
+	-	`sha256:24b7010ae8b644f0d4f17dc92cbeccbb31bfd0216de1d5b9aad7bfebfb6ea9ba`  
+		Last Modified: Thu, 11 Aug 2016 19:29:18 GMT  
+		Size: 245.0 B
 
 ## `owncloud:8.0.14`
 
 ```console
-$ docker pull owncloud@sha256:ac6fc53db657c9e7eb8969f861cb2727ae85c3ea62033585cdce426ce15945d5
+$ docker pull owncloud@sha256:2760b3f47a82436e7bd8480b432443db6c6e433ac74f81c6c310b61cc1857910
 ```
 
 -	Platforms:
@@ -369,9 +369,9 @@ $ docker pull owncloud@sha256:ac6fc53db657c9e7eb8969f861cb2727ae85c3ea62033585cd
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **223.4 MB (223440121 bytes)**  
+-	Total Size: **224.0 MB (224037992 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e6d9bb8dc729787d85a01d1ef80dad12aba34d2b5e80efe88444c416a41defd`
+-	Image ID: `sha256:22e3b2680eb3459becaaa1fd15f697ae0a168d35b582ad1bf4c878c57d844441`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -394,63 +394,63 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 ENV APACHE_CONFDIR=/etc/apache2
 # Fri, 29 Jul 2016 20:49:44 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 29 Jul 2016 20:49:45 GMT
-RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
-# Fri, 29 Jul 2016 20:49:46 GMT
+# Wed, 10 Aug 2016 19:34:50 GMT
+RUN set -ex 		&& sed -r 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS" 		&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
+# Wed, 10 Aug 2016 19:34:51 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Fri, 29 Jul 2016 20:49:48 GMT
+# Wed, 10 Aug 2016 19:34:53 GMT
 RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Fri, 29 Jul 2016 20:49:50 GMT
+# Wed, 10 Aug 2016 19:34:55 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV PHP_VERSION=5.6.24
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_FILENAME=php-5.6.24.tar.xz
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:34:30 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:34:31 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:48 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:39:49 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:49 GMT
+# Wed, 10 Aug 2016 20:18:08 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:18:09 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:23:14 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:14 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 EXPOSE 80/tcp
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:16 GMT
 CMD ["apache2-foreground"]
-# Mon, 01 Aug 2016 17:41:19 GMT
+# Thu, 11 Aug 2016 19:20:22 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:44:57 GMT
+# Thu, 11 Aug 2016 19:27:50 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:44:59 GMT
+# Thu, 11 Aug 2016 19:27:53 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:45:01 GMT
+# Thu, 11 Aug 2016 19:27:56 GMT
 RUN a2enmod rewrite
-# Mon, 01 Aug 2016 17:45:16 GMT
+# Thu, 11 Aug 2016 19:28:23 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& docker-php-ext-enable apcu
-# Mon, 01 Aug 2016 17:45:17 GMT
+# Thu, 11 Aug 2016 19:28:25 GMT
 ENV OWNCLOUD_VERSION=8.0.14
-# Mon, 01 Aug 2016 17:45:17 GMT
+# Thu, 11 Aug 2016 19:28:26 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 17:45:34 GMT
+# Thu, 11 Aug 2016 19:28:58 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 17:45:35 GMT
+# Thu, 11 Aug 2016 19:29:01 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 17:45:36 GMT
+# Thu, 11 Aug 2016 19:29:02 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 17:45:37 GMT
+# Thu, 11 Aug 2016 19:29:03 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -467,59 +467,59 @@ CMD ["apache2-foreground"]
 	-	`sha256:b4ae91aad5222bbe7ca67b9c2b69e54fd29989bea1eec3d8a9aca56b011c303c`  
 		Last Modified: Fri, 29 Jul 2016 22:49:17 GMT  
 		Size: 2.8 MB (2846544 bytes)
-	-	`sha256:c0c9ad6136b5e7b142c48c7167eede3d15af54c538f7f3177c50693006cca242`  
-		Last Modified: Fri, 29 Jul 2016 22:49:15 GMT  
-		Size: 276.0 B
-	-	`sha256:b4b0c030555d4340cfe8288272d2bcb291c2f483f1957f1341cfaaea369dc109`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 431.0 B
-	-	`sha256:6e898edbabd79f8b8eaf7351077eff9966a11459347f335757f5341a0a889c16`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 222.0 B
-	-	`sha256:e4b8d84dea782a5effd404eec31320063107e0bb56fccaffae77c4430c8082a3`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
+	-	`sha256:66e1c1a53c958663cb6a8d19f5993b36bfaf8e334d476c5ed30d6766c8db1f9a`  
+		Last Modified: Wed, 10 Aug 2016 21:31:30 GMT  
+		Size: 270.0 B
+	-	`sha256:5d1f306a891255c05b40e49a8d1dd76efb713792e0aa200386ab0e269faa49dc`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 432.0 B
+	-	`sha256:37733078a51e3cf33ba985f69be1dda278d529bb87184a83c71037cade3170b4`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 223.0 B
+	-	`sha256:c5351b4d6bee8cc2fc09f2af750fa4627dfdd37b44b651f3f3289260783d3b38`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
 		Size: 475.0 B
-	-	`sha256:8e151ffc26f09785dd3e1b511b6cc5b32744241932c5ac3a909b032906167e2f`  
-		Last Modified: Fri, 29 Jul 2016 22:54:53 GMT  
-		Size: 12.4 MB (12399117 bytes)
-	-	`sha256:a51015ce0d7e5186d93e7c1f1de1710edce96d5dc45da09f1f1fd33e347b3f44`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 601.0 B
-	-	`sha256:1d1d7ce85493184d89b2695b6139c410038091d8c18ec819ace83d50bcbf4af8`  
-		Last Modified: Fri, 29 Jul 2016 22:54:57 GMT  
-		Size: 15.8 MB (15789648 bytes)
-	-	`sha256:1394b74e0f9d9bd5c6f6a2fd4058edd52deac35dbfaa36668aa49328db286a57`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:35f1f99fe906e63a6fe525a33188e64c2f84d2e332e51327bfd262027c598444`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 579.0 B
-	-	`sha256:81f622ffb7e8b26c272462832dd86f8363cf9f201a8b46cb81b3c222e1967b2b`  
-		Last Modified: Mon, 01 Aug 2016 17:45:58 GMT  
-		Size: 33.5 MB (33468856 bytes)
-	-	`sha256:56a48d2e52e099eb4cc48928fb3765fcdd8b00cddb92128504961931128bb3a6`  
-		Last Modified: Mon, 01 Aug 2016 17:45:52 GMT  
-		Size: 3.7 MB (3735495 bytes)
-	-	`sha256:6d61a29069d486c283032d7f684f06e56bab48c08e7faabdae98526b3a39fd11`  
-		Last Modified: Mon, 01 Aug 2016 17:45:45 GMT  
-		Size: 334.0 B
-	-	`sha256:8bb5079bd9393026aea03900275a46e8481bb89cbfe32319207bdf591dbb7715`  
-		Last Modified: Mon, 01 Aug 2016 17:45:45 GMT  
-		Size: 293.0 B
-	-	`sha256:4d9dfd5f6dd8635fe0e92a94823519de4dfb9fff9f3fe8e7e8b6440b9d062800`  
-		Last Modified: Mon, 01 Aug 2016 17:45:46 GMT  
-		Size: 363.7 KB (363674 bytes)
-	-	`sha256:a374dc3ee0bc4f3613bde1e2d74116d418cc2d27ecbcc048ed6dd5b2a2a2000c`  
-		Last Modified: Mon, 01 Aug 2016 17:45:53 GMT  
-		Size: 25.9 MB (25884482 bytes)
-	-	`sha256:bee18950f541442daeedb01f0a400d0e63b9a94121562ba1f22ab05d82e392b8`  
-		Last Modified: Mon, 01 Aug 2016 17:45:46 GMT  
-		Size: 243.0 B
+	-	`sha256:68fab1fd02dce6a758d7907eaf173747d5504e714bc9dcf77bc0086bb8f98420`  
+		Last Modified: Wed, 10 Aug 2016 21:38:00 GMT  
+		Size: 12.4 MB (12399124 bytes)
+	-	`sha256:d63c862a4e8a8fe6642f7954b97624cd307b5b913f999697835d9dede0674595`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 492.0 B
+	-	`sha256:a1f41798510b1dfa029f4cd846d723cca3566637cceedc3aba17cf117605e4fe`  
+		Last Modified: Wed, 10 Aug 2016 21:38:07 GMT  
+		Size: 16.4 MB (16385973 bytes)
+	-	`sha256:a1cb79de526642a0956598b60e75c5c3d73693e4a6e41aa4666c3377d84fdb07`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 1.8 KB (1835 bytes)
+	-	`sha256:0ad59c7db086709fbfe994d1ed28d4818952b4981147090c9dd27c00c1665f13`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 583.0 B
+	-	`sha256:cac8898ff2591514aa1f6fb42f8ae28d7a7dc1abc7be902fa96c4a824dc4e2e2`  
+		Last Modified: Thu, 11 Aug 2016 19:29:34 GMT  
+		Size: 33.5 MB (33470428 bytes)
+	-	`sha256:79ce92c067b8d3b39b4513800bbaa43129f14d0351b3d9d091a752a39381811c`  
+		Last Modified: Thu, 11 Aug 2016 19:29:23 GMT  
+		Size: 3.7 MB (3735500 bytes)
+	-	`sha256:6926c7118f6a0d1890b4b9706c103e780b1813ede6cde78db931bd1026112aec`  
+		Last Modified: Thu, 11 Aug 2016 19:29:18 GMT  
+		Size: 332.0 B
+	-	`sha256:c81d643651d4be394a50972b9285057785fe3fef214ec32d1ddb43e86c156a89`  
+		Last Modified: Thu, 11 Aug 2016 19:29:18 GMT  
+		Size: 296.0 B
+	-	`sha256:8ecd6de491078f029f94ef79d66ffbd497521efa10251fdb96c786146c1ef1cf`  
+		Last Modified: Thu, 11 Aug 2016 19:29:19 GMT  
+		Size: 363.7 KB (363657 bytes)
+	-	`sha256:fcc74af51139c75a98b9888671910f045a1ec2dc167e48505fde10ca65dd2966`  
+		Last Modified: Thu, 11 Aug 2016 19:29:29 GMT  
+		Size: 25.9 MB (25884485 bytes)
+	-	`sha256:24b7010ae8b644f0d4f17dc92cbeccbb31bfd0216de1d5b9aad7bfebfb6ea9ba`  
+		Last Modified: Thu, 11 Aug 2016 19:29:18 GMT  
+		Size: 245.0 B
 
 ## `owncloud:8.0`
 
 ```console
-$ docker pull owncloud@sha256:ac6fc53db657c9e7eb8969f861cb2727ae85c3ea62033585cdce426ce15945d5
+$ docker pull owncloud@sha256:2760b3f47a82436e7bd8480b432443db6c6e433ac74f81c6c310b61cc1857910
 ```
 
 -	Platforms:
@@ -529,9 +529,9 @@ $ docker pull owncloud@sha256:ac6fc53db657c9e7eb8969f861cb2727ae85c3ea62033585cd
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **223.4 MB (223440121 bytes)**  
+-	Total Size: **224.0 MB (224037992 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e6d9bb8dc729787d85a01d1ef80dad12aba34d2b5e80efe88444c416a41defd`
+-	Image ID: `sha256:22e3b2680eb3459becaaa1fd15f697ae0a168d35b582ad1bf4c878c57d844441`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -554,63 +554,63 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 ENV APACHE_CONFDIR=/etc/apache2
 # Fri, 29 Jul 2016 20:49:44 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 29 Jul 2016 20:49:45 GMT
-RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
-# Fri, 29 Jul 2016 20:49:46 GMT
+# Wed, 10 Aug 2016 19:34:50 GMT
+RUN set -ex 		&& sed -r 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS" 		&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
+# Wed, 10 Aug 2016 19:34:51 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Fri, 29 Jul 2016 20:49:48 GMT
+# Wed, 10 Aug 2016 19:34:53 GMT
 RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Fri, 29 Jul 2016 20:49:50 GMT
+# Wed, 10 Aug 2016 19:34:55 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV PHP_VERSION=5.6.24
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_FILENAME=php-5.6.24.tar.xz
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:34:30 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:34:31 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:48 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:39:49 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:49 GMT
+# Wed, 10 Aug 2016 20:18:08 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:18:09 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:23:14 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:14 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 EXPOSE 80/tcp
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:16 GMT
 CMD ["apache2-foreground"]
-# Mon, 01 Aug 2016 17:41:19 GMT
+# Thu, 11 Aug 2016 19:20:22 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:44:57 GMT
+# Thu, 11 Aug 2016 19:27:50 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:44:59 GMT
+# Thu, 11 Aug 2016 19:27:53 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:45:01 GMT
+# Thu, 11 Aug 2016 19:27:56 GMT
 RUN a2enmod rewrite
-# Mon, 01 Aug 2016 17:45:16 GMT
+# Thu, 11 Aug 2016 19:28:23 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& docker-php-ext-enable apcu
-# Mon, 01 Aug 2016 17:45:17 GMT
+# Thu, 11 Aug 2016 19:28:25 GMT
 ENV OWNCLOUD_VERSION=8.0.14
-# Mon, 01 Aug 2016 17:45:17 GMT
+# Thu, 11 Aug 2016 19:28:26 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 17:45:34 GMT
+# Thu, 11 Aug 2016 19:28:58 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 17:45:35 GMT
+# Thu, 11 Aug 2016 19:29:01 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 17:45:36 GMT
+# Thu, 11 Aug 2016 19:29:02 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 17:45:37 GMT
+# Thu, 11 Aug 2016 19:29:03 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -627,59 +627,59 @@ CMD ["apache2-foreground"]
 	-	`sha256:b4ae91aad5222bbe7ca67b9c2b69e54fd29989bea1eec3d8a9aca56b011c303c`  
 		Last Modified: Fri, 29 Jul 2016 22:49:17 GMT  
 		Size: 2.8 MB (2846544 bytes)
-	-	`sha256:c0c9ad6136b5e7b142c48c7167eede3d15af54c538f7f3177c50693006cca242`  
-		Last Modified: Fri, 29 Jul 2016 22:49:15 GMT  
-		Size: 276.0 B
-	-	`sha256:b4b0c030555d4340cfe8288272d2bcb291c2f483f1957f1341cfaaea369dc109`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 431.0 B
-	-	`sha256:6e898edbabd79f8b8eaf7351077eff9966a11459347f335757f5341a0a889c16`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 222.0 B
-	-	`sha256:e4b8d84dea782a5effd404eec31320063107e0bb56fccaffae77c4430c8082a3`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
+	-	`sha256:66e1c1a53c958663cb6a8d19f5993b36bfaf8e334d476c5ed30d6766c8db1f9a`  
+		Last Modified: Wed, 10 Aug 2016 21:31:30 GMT  
+		Size: 270.0 B
+	-	`sha256:5d1f306a891255c05b40e49a8d1dd76efb713792e0aa200386ab0e269faa49dc`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 432.0 B
+	-	`sha256:37733078a51e3cf33ba985f69be1dda278d529bb87184a83c71037cade3170b4`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 223.0 B
+	-	`sha256:c5351b4d6bee8cc2fc09f2af750fa4627dfdd37b44b651f3f3289260783d3b38`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
 		Size: 475.0 B
-	-	`sha256:8e151ffc26f09785dd3e1b511b6cc5b32744241932c5ac3a909b032906167e2f`  
-		Last Modified: Fri, 29 Jul 2016 22:54:53 GMT  
-		Size: 12.4 MB (12399117 bytes)
-	-	`sha256:a51015ce0d7e5186d93e7c1f1de1710edce96d5dc45da09f1f1fd33e347b3f44`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 601.0 B
-	-	`sha256:1d1d7ce85493184d89b2695b6139c410038091d8c18ec819ace83d50bcbf4af8`  
-		Last Modified: Fri, 29 Jul 2016 22:54:57 GMT  
-		Size: 15.8 MB (15789648 bytes)
-	-	`sha256:1394b74e0f9d9bd5c6f6a2fd4058edd52deac35dbfaa36668aa49328db286a57`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:35f1f99fe906e63a6fe525a33188e64c2f84d2e332e51327bfd262027c598444`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 579.0 B
-	-	`sha256:81f622ffb7e8b26c272462832dd86f8363cf9f201a8b46cb81b3c222e1967b2b`  
-		Last Modified: Mon, 01 Aug 2016 17:45:58 GMT  
-		Size: 33.5 MB (33468856 bytes)
-	-	`sha256:56a48d2e52e099eb4cc48928fb3765fcdd8b00cddb92128504961931128bb3a6`  
-		Last Modified: Mon, 01 Aug 2016 17:45:52 GMT  
-		Size: 3.7 MB (3735495 bytes)
-	-	`sha256:6d61a29069d486c283032d7f684f06e56bab48c08e7faabdae98526b3a39fd11`  
-		Last Modified: Mon, 01 Aug 2016 17:45:45 GMT  
-		Size: 334.0 B
-	-	`sha256:8bb5079bd9393026aea03900275a46e8481bb89cbfe32319207bdf591dbb7715`  
-		Last Modified: Mon, 01 Aug 2016 17:45:45 GMT  
-		Size: 293.0 B
-	-	`sha256:4d9dfd5f6dd8635fe0e92a94823519de4dfb9fff9f3fe8e7e8b6440b9d062800`  
-		Last Modified: Mon, 01 Aug 2016 17:45:46 GMT  
-		Size: 363.7 KB (363674 bytes)
-	-	`sha256:a374dc3ee0bc4f3613bde1e2d74116d418cc2d27ecbcc048ed6dd5b2a2a2000c`  
-		Last Modified: Mon, 01 Aug 2016 17:45:53 GMT  
-		Size: 25.9 MB (25884482 bytes)
-	-	`sha256:bee18950f541442daeedb01f0a400d0e63b9a94121562ba1f22ab05d82e392b8`  
-		Last Modified: Mon, 01 Aug 2016 17:45:46 GMT  
-		Size: 243.0 B
+	-	`sha256:68fab1fd02dce6a758d7907eaf173747d5504e714bc9dcf77bc0086bb8f98420`  
+		Last Modified: Wed, 10 Aug 2016 21:38:00 GMT  
+		Size: 12.4 MB (12399124 bytes)
+	-	`sha256:d63c862a4e8a8fe6642f7954b97624cd307b5b913f999697835d9dede0674595`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 492.0 B
+	-	`sha256:a1f41798510b1dfa029f4cd846d723cca3566637cceedc3aba17cf117605e4fe`  
+		Last Modified: Wed, 10 Aug 2016 21:38:07 GMT  
+		Size: 16.4 MB (16385973 bytes)
+	-	`sha256:a1cb79de526642a0956598b60e75c5c3d73693e4a6e41aa4666c3377d84fdb07`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 1.8 KB (1835 bytes)
+	-	`sha256:0ad59c7db086709fbfe994d1ed28d4818952b4981147090c9dd27c00c1665f13`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 583.0 B
+	-	`sha256:cac8898ff2591514aa1f6fb42f8ae28d7a7dc1abc7be902fa96c4a824dc4e2e2`  
+		Last Modified: Thu, 11 Aug 2016 19:29:34 GMT  
+		Size: 33.5 MB (33470428 bytes)
+	-	`sha256:79ce92c067b8d3b39b4513800bbaa43129f14d0351b3d9d091a752a39381811c`  
+		Last Modified: Thu, 11 Aug 2016 19:29:23 GMT  
+		Size: 3.7 MB (3735500 bytes)
+	-	`sha256:6926c7118f6a0d1890b4b9706c103e780b1813ede6cde78db931bd1026112aec`  
+		Last Modified: Thu, 11 Aug 2016 19:29:18 GMT  
+		Size: 332.0 B
+	-	`sha256:c81d643651d4be394a50972b9285057785fe3fef214ec32d1ddb43e86c156a89`  
+		Last Modified: Thu, 11 Aug 2016 19:29:18 GMT  
+		Size: 296.0 B
+	-	`sha256:8ecd6de491078f029f94ef79d66ffbd497521efa10251fdb96c786146c1ef1cf`  
+		Last Modified: Thu, 11 Aug 2016 19:29:19 GMT  
+		Size: 363.7 KB (363657 bytes)
+	-	`sha256:fcc74af51139c75a98b9888671910f045a1ec2dc167e48505fde10ca65dd2966`  
+		Last Modified: Thu, 11 Aug 2016 19:29:29 GMT  
+		Size: 25.9 MB (25884485 bytes)
+	-	`sha256:24b7010ae8b644f0d4f17dc92cbeccbb31bfd0216de1d5b9aad7bfebfb6ea9ba`  
+		Last Modified: Thu, 11 Aug 2016 19:29:18 GMT  
+		Size: 245.0 B
 
 ## `owncloud:8.0.14-fpm`
 
 ```console
-$ docker pull owncloud@sha256:ca77a6ea62895422a4ebc4a93bd426cc8a00eb28fd838975f68cc395beca1fd4
+$ docker pull owncloud@sha256:f2821225b081b780317a283bd8caa0e40a7ddbe42345c03d7dce0592cb78b97d
 ```
 
 -	Platforms:
@@ -689,9 +689,9 @@ $ docker pull owncloud@sha256:ca77a6ea62895422a4ebc4a93bd426cc8a00eb28fd838975f6
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **213.6 MB (213583266 bytes)**  
+-	Total Size: **214.1 MB (214122246 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884c4d73d7b338dae349aec43e2fd4ef061191221a78867151249d1d6d6fee84`
+-	Image ID: `sha256:eecb24f61eb984845f29459eb8973fdaae8c718b48107384f9d8071f0d916bf7`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -718,41 +718,41 @@ ENV PHP_VERSION=5.6.24
 ENV PHP_FILENAME=php-5.6.24.tar.xz
 # Fri, 29 Jul 2016 21:39:52 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:39:56 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:39:57 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:46:44 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:46:45 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:46:46 GMT
+# Wed, 10 Aug 2016 20:23:19 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:23:20 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:29:49 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:29:50 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:29:50 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:46:48 GMT
+# Wed, 10 Aug 2016 20:29:51 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Fri, 29 Jul 2016 21:46:48 GMT
+# Wed, 10 Aug 2016 20:29:52 GMT
 EXPOSE 9000/tcp
-# Fri, 29 Jul 2016 21:46:49 GMT
+# Wed, 10 Aug 2016 20:29:52 GMT
 CMD ["php-fpm"]
-# Mon, 01 Aug 2016 18:02:09 GMT
+# Thu, 11 Aug 2016 19:50:48 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 18:05:45 GMT
+# Thu, 11 Aug 2016 19:54:38 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 18:05:47 GMT
+# Thu, 11 Aug 2016 19:54:40 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 18:06:02 GMT
+# Thu, 11 Aug 2016 19:54:55 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& docker-php-ext-enable apcu
-# Mon, 01 Aug 2016 18:06:02 GMT
+# Thu, 11 Aug 2016 19:54:56 GMT
 ENV OWNCLOUD_VERSION=8.0.14
-# Mon, 01 Aug 2016 18:06:03 GMT
+# Thu, 11 Aug 2016 19:54:57 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 18:06:18 GMT
+# Thu, 11 Aug 2016 19:55:13 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 18:06:20 GMT
+# Thu, 11 Aug 2016 19:55:15 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 18:06:20 GMT
+# Thu, 11 Aug 2016 19:55:15 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:06:21 GMT
+# Thu, 11 Aug 2016 19:55:16 GMT
 CMD ["php-fpm"]
 ```
 
@@ -766,47 +766,47 @@ CMD ["php-fpm"]
 	-	`sha256:3d821ad560e13c778e616da2a9033ac30d3811185f43635e95c20b22ab380077`  
 		Last Modified: Fri, 29 Jul 2016 22:46:34 GMT  
 		Size: 180.0 B
-	-	`sha256:313efb7f2797d96b93cdc6a1c1628cb0bb064db4082e1a75ad89ea416aba077c`  
-		Last Modified: Fri, 29 Jul 2016 22:55:35 GMT  
-		Size: 12.4 MB (12399119 bytes)
-	-	`sha256:59137d1c51b6cd58a87d11262a2d78b9257747a3bbd6ec05bf4d049b124c8e70`  
-		Last Modified: Fri, 29 Jul 2016 22:55:30 GMT  
-		Size: 601.0 B
-	-	`sha256:265ac2fa951d86cc8d6e91295f961f67bd5e283269334c02545b88265907c038`  
-		Last Modified: Fri, 29 Jul 2016 22:55:34 GMT  
-		Size: 8.8 MB (8796075 bytes)
-	-	`sha256:8f71c291653e80fd8be4c19d5de021fd8ac543b92cfd1ad9ff8b3c3a5bb357bb`  
-		Last Modified: Fri, 29 Jul 2016 22:55:30 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:61edc0cbd1b43bc5c63d0fc1e67306c24e819d4f55c2e8705a7103e78d186922`  
-		Last Modified: Fri, 29 Jul 2016 22:55:31 GMT  
+	-	`sha256:1a0ed20d7752971350ab581861731d7d71a6eb560b93d48382b5cc2aa07fed8b`  
+		Last Modified: Wed, 10 Aug 2016 21:38:50 GMT  
+		Size: 12.4 MB (12399120 bytes)
+	-	`sha256:d17456fd86bcf1eb916ff4c4b4909dd6ad98736369cff4e5ee9c79e02782fc67`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
+		Size: 490.0 B
+	-	`sha256:c8bd75b8802c8ce64c4a28486fbfb4bde4247b27f5f8363dd8a8469ac89b1e85`  
+		Last Modified: Wed, 10 Aug 2016 21:38:48 GMT  
+		Size: 9.3 MB (9333467 bytes)
+	-	`sha256:0054f99dc6ca14454002cd76f78264c84cdfd9c57cea265ea0a6f601dab80158`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
+		Size: 1.8 KB (1829 bytes)
+	-	`sha256:1c8ec71281514f1d63f59000b5fd9082baa8a6d34e7e591d7cd22928879a5d18`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
 		Size: 129.0 B
-	-	`sha256:2310b95436007759599e7c1a784ce61d633ed86c55689af737f6907dcc8c6d14`  
-		Last Modified: Fri, 29 Jul 2016 22:55:31 GMT  
-		Size: 7.6 KB (7631 bytes)
-	-	`sha256:0e775fb175ac3e014283ef6031601e697a2202a5ef2576434dbf49bb55777748`  
-		Last Modified: Mon, 01 Aug 2016 18:06:43 GMT  
-		Size: 33.4 MB (33446376 bytes)
-	-	`sha256:7d8747ac5a3ba971cbf3ef15451bc5252a211926277c7c7bd0465130b9b1d928`  
-		Last Modified: Mon, 01 Aug 2016 18:06:31 GMT  
-		Size: 3.7 MB (3735735 bytes)
-	-	`sha256:5f5620b900fa20abb9ac61e304553e290d9d88f1f719704538f245667da9cbb6`  
-		Last Modified: Mon, 01 Aug 2016 18:06:30 GMT  
-		Size: 334.0 B
-	-	`sha256:fbc2f96c59d8badbc1401858043bcb88346dcd88868e67190fe4548a43942948`  
-		Last Modified: Mon, 01 Aug 2016 18:06:30 GMT  
-		Size: 363.7 KB (363697 bytes)
-	-	`sha256:7e193a8453c206a28d96aa77462187610421c505952584987f500f7687c701be`  
-		Last Modified: Mon, 01 Aug 2016 18:06:38 GMT  
-		Size: 25.9 MB (25884472 bytes)
-	-	`sha256:73e3aaddffb433be74ee92140ed4066dccaae7eb0c56918f9fd6917b5cabca04`  
-		Last Modified: Mon, 01 Aug 2016 18:06:29 GMT  
-		Size: 246.0 B
+	-	`sha256:fa513925a4eb93b436ccdb48c9b0edca88237b4abdebea3245da69a6b37deaf9`  
+		Last Modified: Wed, 10 Aug 2016 21:38:46 GMT  
+		Size: 7.6 KB (7629 bytes)
+	-	`sha256:9b8850b9b06e4a8d39993f30acf1b88b0ccee91e2f0b75b5590f5f5542ec9be6`  
+		Last Modified: Thu, 11 Aug 2016 19:55:39 GMT  
+		Size: 33.4 MB (33448023 bytes)
+	-	`sha256:db3d58fc2acd0fb4994107e50bd67cc867a02f72d9d69424a65df2b92a4773ca`  
+		Last Modified: Thu, 11 Aug 2016 19:55:28 GMT  
+		Size: 3.7 MB (3735762 bytes)
+	-	`sha256:41a66f7689d4dfde53276df0e6d1a02f7c60173df834167dbf0c733bc8f40925`  
+		Last Modified: Thu, 11 Aug 2016 19:55:27 GMT  
+		Size: 333.0 B
+	-	`sha256:2e1d9389b3258bec1fb8dbc00690c0158a0897236914b49f1fe9697d5661a8ef`  
+		Last Modified: Thu, 11 Aug 2016 19:55:28 GMT  
+		Size: 363.6 KB (363635 bytes)
+	-	`sha256:de7670324ad763689a3f7569947f76355ef323a1ae2a91a503a35f77ae8d5f07`  
+		Last Modified: Thu, 11 Aug 2016 19:55:35 GMT  
+		Size: 25.9 MB (25884487 bytes)
+	-	`sha256:a47a21c397995a733d6c25fd677fa891a17ec815adec7d2a6281038d3587ac43`  
+		Last Modified: Thu, 11 Aug 2016 19:55:26 GMT  
+		Size: 244.0 B
 
 ## `owncloud:8.0-fpm`
 
 ```console
-$ docker pull owncloud@sha256:ca77a6ea62895422a4ebc4a93bd426cc8a00eb28fd838975f68cc395beca1fd4
+$ docker pull owncloud@sha256:f2821225b081b780317a283bd8caa0e40a7ddbe42345c03d7dce0592cb78b97d
 ```
 
 -	Platforms:
@@ -816,9 +816,9 @@ $ docker pull owncloud@sha256:ca77a6ea62895422a4ebc4a93bd426cc8a00eb28fd838975f6
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **213.6 MB (213583266 bytes)**  
+-	Total Size: **214.1 MB (214122246 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:884c4d73d7b338dae349aec43e2fd4ef061191221a78867151249d1d6d6fee84`
+-	Image ID: `sha256:eecb24f61eb984845f29459eb8973fdaae8c718b48107384f9d8071f0d916bf7`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -845,41 +845,41 @@ ENV PHP_VERSION=5.6.24
 ENV PHP_FILENAME=php-5.6.24.tar.xz
 # Fri, 29 Jul 2016 21:39:52 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:39:56 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:39:57 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:46:44 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:46:45 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:46:46 GMT
+# Wed, 10 Aug 2016 20:23:19 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:23:20 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:29:49 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:29:50 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:29:50 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:46:48 GMT
+# Wed, 10 Aug 2016 20:29:51 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Fri, 29 Jul 2016 21:46:48 GMT
+# Wed, 10 Aug 2016 20:29:52 GMT
 EXPOSE 9000/tcp
-# Fri, 29 Jul 2016 21:46:49 GMT
+# Wed, 10 Aug 2016 20:29:52 GMT
 CMD ["php-fpm"]
-# Mon, 01 Aug 2016 18:02:09 GMT
+# Thu, 11 Aug 2016 19:50:48 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 18:05:45 GMT
+# Thu, 11 Aug 2016 19:54:38 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 18:05:47 GMT
+# Thu, 11 Aug 2016 19:54:40 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 18:06:02 GMT
+# Thu, 11 Aug 2016 19:54:55 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& docker-php-ext-enable apcu
-# Mon, 01 Aug 2016 18:06:02 GMT
+# Thu, 11 Aug 2016 19:54:56 GMT
 ENV OWNCLOUD_VERSION=8.0.14
-# Mon, 01 Aug 2016 18:06:03 GMT
+# Thu, 11 Aug 2016 19:54:57 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 18:06:18 GMT
+# Thu, 11 Aug 2016 19:55:13 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 18:06:20 GMT
+# Thu, 11 Aug 2016 19:55:15 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 18:06:20 GMT
+# Thu, 11 Aug 2016 19:55:15 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:06:21 GMT
+# Thu, 11 Aug 2016 19:55:16 GMT
 CMD ["php-fpm"]
 ```
 
@@ -893,47 +893,47 @@ CMD ["php-fpm"]
 	-	`sha256:3d821ad560e13c778e616da2a9033ac30d3811185f43635e95c20b22ab380077`  
 		Last Modified: Fri, 29 Jul 2016 22:46:34 GMT  
 		Size: 180.0 B
-	-	`sha256:313efb7f2797d96b93cdc6a1c1628cb0bb064db4082e1a75ad89ea416aba077c`  
-		Last Modified: Fri, 29 Jul 2016 22:55:35 GMT  
-		Size: 12.4 MB (12399119 bytes)
-	-	`sha256:59137d1c51b6cd58a87d11262a2d78b9257747a3bbd6ec05bf4d049b124c8e70`  
-		Last Modified: Fri, 29 Jul 2016 22:55:30 GMT  
-		Size: 601.0 B
-	-	`sha256:265ac2fa951d86cc8d6e91295f961f67bd5e283269334c02545b88265907c038`  
-		Last Modified: Fri, 29 Jul 2016 22:55:34 GMT  
-		Size: 8.8 MB (8796075 bytes)
-	-	`sha256:8f71c291653e80fd8be4c19d5de021fd8ac543b92cfd1ad9ff8b3c3a5bb357bb`  
-		Last Modified: Fri, 29 Jul 2016 22:55:30 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:61edc0cbd1b43bc5c63d0fc1e67306c24e819d4f55c2e8705a7103e78d186922`  
-		Last Modified: Fri, 29 Jul 2016 22:55:31 GMT  
+	-	`sha256:1a0ed20d7752971350ab581861731d7d71a6eb560b93d48382b5cc2aa07fed8b`  
+		Last Modified: Wed, 10 Aug 2016 21:38:50 GMT  
+		Size: 12.4 MB (12399120 bytes)
+	-	`sha256:d17456fd86bcf1eb916ff4c4b4909dd6ad98736369cff4e5ee9c79e02782fc67`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
+		Size: 490.0 B
+	-	`sha256:c8bd75b8802c8ce64c4a28486fbfb4bde4247b27f5f8363dd8a8469ac89b1e85`  
+		Last Modified: Wed, 10 Aug 2016 21:38:48 GMT  
+		Size: 9.3 MB (9333467 bytes)
+	-	`sha256:0054f99dc6ca14454002cd76f78264c84cdfd9c57cea265ea0a6f601dab80158`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
+		Size: 1.8 KB (1829 bytes)
+	-	`sha256:1c8ec71281514f1d63f59000b5fd9082baa8a6d34e7e591d7cd22928879a5d18`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
 		Size: 129.0 B
-	-	`sha256:2310b95436007759599e7c1a784ce61d633ed86c55689af737f6907dcc8c6d14`  
-		Last Modified: Fri, 29 Jul 2016 22:55:31 GMT  
-		Size: 7.6 KB (7631 bytes)
-	-	`sha256:0e775fb175ac3e014283ef6031601e697a2202a5ef2576434dbf49bb55777748`  
-		Last Modified: Mon, 01 Aug 2016 18:06:43 GMT  
-		Size: 33.4 MB (33446376 bytes)
-	-	`sha256:7d8747ac5a3ba971cbf3ef15451bc5252a211926277c7c7bd0465130b9b1d928`  
-		Last Modified: Mon, 01 Aug 2016 18:06:31 GMT  
-		Size: 3.7 MB (3735735 bytes)
-	-	`sha256:5f5620b900fa20abb9ac61e304553e290d9d88f1f719704538f245667da9cbb6`  
-		Last Modified: Mon, 01 Aug 2016 18:06:30 GMT  
-		Size: 334.0 B
-	-	`sha256:fbc2f96c59d8badbc1401858043bcb88346dcd88868e67190fe4548a43942948`  
-		Last Modified: Mon, 01 Aug 2016 18:06:30 GMT  
-		Size: 363.7 KB (363697 bytes)
-	-	`sha256:7e193a8453c206a28d96aa77462187610421c505952584987f500f7687c701be`  
-		Last Modified: Mon, 01 Aug 2016 18:06:38 GMT  
-		Size: 25.9 MB (25884472 bytes)
-	-	`sha256:73e3aaddffb433be74ee92140ed4066dccaae7eb0c56918f9fd6917b5cabca04`  
-		Last Modified: Mon, 01 Aug 2016 18:06:29 GMT  
-		Size: 246.0 B
+	-	`sha256:fa513925a4eb93b436ccdb48c9b0edca88237b4abdebea3245da69a6b37deaf9`  
+		Last Modified: Wed, 10 Aug 2016 21:38:46 GMT  
+		Size: 7.6 KB (7629 bytes)
+	-	`sha256:9b8850b9b06e4a8d39993f30acf1b88b0ccee91e2f0b75b5590f5f5542ec9be6`  
+		Last Modified: Thu, 11 Aug 2016 19:55:39 GMT  
+		Size: 33.4 MB (33448023 bytes)
+	-	`sha256:db3d58fc2acd0fb4994107e50bd67cc867a02f72d9d69424a65df2b92a4773ca`  
+		Last Modified: Thu, 11 Aug 2016 19:55:28 GMT  
+		Size: 3.7 MB (3735762 bytes)
+	-	`sha256:41a66f7689d4dfde53276df0e6d1a02f7c60173df834167dbf0c733bc8f40925`  
+		Last Modified: Thu, 11 Aug 2016 19:55:27 GMT  
+		Size: 333.0 B
+	-	`sha256:2e1d9389b3258bec1fb8dbc00690c0158a0897236914b49f1fe9697d5661a8ef`  
+		Last Modified: Thu, 11 Aug 2016 19:55:28 GMT  
+		Size: 363.6 KB (363635 bytes)
+	-	`sha256:de7670324ad763689a3f7569947f76355ef323a1ae2a91a503a35f77ae8d5f07`  
+		Last Modified: Thu, 11 Aug 2016 19:55:35 GMT  
+		Size: 25.9 MB (25884487 bytes)
+	-	`sha256:a47a21c397995a733d6c25fd677fa891a17ec815adec7d2a6281038d3587ac43`  
+		Last Modified: Thu, 11 Aug 2016 19:55:26 GMT  
+		Size: 244.0 B
 
 ## `owncloud:8.1.9-apache`
 
 ```console
-$ docker pull owncloud@sha256:37eb356a8f374c91252203e35376b41ad51c2b7c26d88f7ae4cc450ed1b7df00
+$ docker pull owncloud@sha256:6c9f4a6ed633b52bf7a77ed75e53bc305acca11f5eaf258fd44ba0eff584b5a3
 ```
 
 -	Platforms:
@@ -943,9 +943,9 @@ $ docker pull owncloud@sha256:37eb356a8f374c91252203e35376b41ad51c2b7c26d88f7ae4
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **226.2 MB (226219023 bytes)**  
+-	Total Size: **226.8 MB (226817350 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74485c2fee0246abc0278b3aa7494aa53c9627f5203f24f7181ebf4543cf28f8`
+-	Image ID: `sha256:0502479fbe77052e0136434f843f7aac38466e134f90ba11c0e8235e85f9b850`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -968,63 +968,63 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 ENV APACHE_CONFDIR=/etc/apache2
 # Fri, 29 Jul 2016 20:49:44 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 29 Jul 2016 20:49:45 GMT
-RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
-# Fri, 29 Jul 2016 20:49:46 GMT
+# Wed, 10 Aug 2016 19:34:50 GMT
+RUN set -ex 		&& sed -r 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS" 		&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
+# Wed, 10 Aug 2016 19:34:51 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Fri, 29 Jul 2016 20:49:48 GMT
+# Wed, 10 Aug 2016 19:34:53 GMT
 RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Fri, 29 Jul 2016 20:49:50 GMT
+# Wed, 10 Aug 2016 19:34:55 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV PHP_VERSION=5.6.24
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_FILENAME=php-5.6.24.tar.xz
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:34:30 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:34:31 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:48 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:39:49 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:49 GMT
+# Wed, 10 Aug 2016 20:18:08 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:18:09 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:23:14 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:14 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 EXPOSE 80/tcp
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:16 GMT
 CMD ["apache2-foreground"]
-# Mon, 01 Aug 2016 17:47:44 GMT
+# Thu, 11 Aug 2016 19:40:17 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:51:21 GMT
+# Thu, 11 Aug 2016 19:44:21 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:51:23 GMT
+# Thu, 11 Aug 2016 19:44:23 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:51:25 GMT
+# Thu, 11 Aug 2016 19:44:25 GMT
 RUN a2enmod rewrite
-# Mon, 01 Aug 2016 17:52:06 GMT
+# Thu, 11 Aug 2016 19:45:12 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 18:07:01 GMT
+# Thu, 11 Aug 2016 19:56:00 GMT
 ENV OWNCLOUD_VERSION=8.1.9
-# Mon, 01 Aug 2016 18:07:02 GMT
+# Thu, 11 Aug 2016 19:56:01 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 18:07:18 GMT
+# Thu, 11 Aug 2016 19:56:27 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 18:07:20 GMT
+# Thu, 11 Aug 2016 19:56:29 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 18:07:20 GMT
+# Thu, 11 Aug 2016 19:56:30 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:07:21 GMT
+# Thu, 11 Aug 2016 19:56:31 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1041,59 +1041,59 @@ CMD ["apache2-foreground"]
 	-	`sha256:b4ae91aad5222bbe7ca67b9c2b69e54fd29989bea1eec3d8a9aca56b011c303c`  
 		Last Modified: Fri, 29 Jul 2016 22:49:17 GMT  
 		Size: 2.8 MB (2846544 bytes)
-	-	`sha256:c0c9ad6136b5e7b142c48c7167eede3d15af54c538f7f3177c50693006cca242`  
-		Last Modified: Fri, 29 Jul 2016 22:49:15 GMT  
-		Size: 276.0 B
-	-	`sha256:b4b0c030555d4340cfe8288272d2bcb291c2f483f1957f1341cfaaea369dc109`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 431.0 B
-	-	`sha256:6e898edbabd79f8b8eaf7351077eff9966a11459347f335757f5341a0a889c16`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 222.0 B
-	-	`sha256:e4b8d84dea782a5effd404eec31320063107e0bb56fccaffae77c4430c8082a3`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
+	-	`sha256:66e1c1a53c958663cb6a8d19f5993b36bfaf8e334d476c5ed30d6766c8db1f9a`  
+		Last Modified: Wed, 10 Aug 2016 21:31:30 GMT  
+		Size: 270.0 B
+	-	`sha256:5d1f306a891255c05b40e49a8d1dd76efb713792e0aa200386ab0e269faa49dc`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 432.0 B
+	-	`sha256:37733078a51e3cf33ba985f69be1dda278d529bb87184a83c71037cade3170b4`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 223.0 B
+	-	`sha256:c5351b4d6bee8cc2fc09f2af750fa4627dfdd37b44b651f3f3289260783d3b38`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
 		Size: 475.0 B
-	-	`sha256:8e151ffc26f09785dd3e1b511b6cc5b32744241932c5ac3a909b032906167e2f`  
-		Last Modified: Fri, 29 Jul 2016 22:54:53 GMT  
-		Size: 12.4 MB (12399117 bytes)
-	-	`sha256:a51015ce0d7e5186d93e7c1f1de1710edce96d5dc45da09f1f1fd33e347b3f44`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 601.0 B
-	-	`sha256:1d1d7ce85493184d89b2695b6139c410038091d8c18ec819ace83d50bcbf4af8`  
-		Last Modified: Fri, 29 Jul 2016 22:54:57 GMT  
-		Size: 15.8 MB (15789648 bytes)
-	-	`sha256:1394b74e0f9d9bd5c6f6a2fd4058edd52deac35dbfaa36668aa49328db286a57`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:35f1f99fe906e63a6fe525a33188e64c2f84d2e332e51327bfd262027c598444`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 579.0 B
-	-	`sha256:181cf82fa46ce61260137919ef7f51982e0495697a3d7deb5040f7064698b96e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:50 GMT  
-		Size: 34.3 MB (34330228 bytes)
-	-	`sha256:dfeef7c75ef90a85c96834f4d5bfa43b8d6b5e4b8ce75ddcf9b3272e6bda87c8`  
-		Last Modified: Mon, 01 Aug 2016 17:52:41 GMT  
-		Size: 3.7 MB (3735515 bytes)
-	-	`sha256:9776e0b14ee38a4cfae7cd26f535a930364d51109bb650207740149fa1231f34`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 332.0 B
-	-	`sha256:aa6b3cbfda6f6a29648f5005f3b7bfc21667fd996ba72aaed09a7ae2c115ed3e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 294.0 B
-	-	`sha256:a0926b406f89277c8e7613682f4cb82051e12ab866b373a8c76d7f43df6a0f60`  
-		Last Modified: Mon, 01 Aug 2016 17:52:38 GMT  
-		Size: 1.3 MB (1329874 bytes)
-	-	`sha256:500632770432187222959be1c2c1bb9697e831f0de3da4d5b277b925a5f4540f`  
-		Last Modified: Mon, 01 Aug 2016 18:07:38 GMT  
-		Size: 26.8 MB (26835793 bytes)
-	-	`sha256:b8072d494c5bc844e2c5ae7cd591499a91dd10e64e86cedab397d9c1a24fc4fb`  
-		Last Modified: Mon, 01 Aug 2016 18:07:30 GMT  
-		Size: 243.0 B
+	-	`sha256:68fab1fd02dce6a758d7907eaf173747d5504e714bc9dcf77bc0086bb8f98420`  
+		Last Modified: Wed, 10 Aug 2016 21:38:00 GMT  
+		Size: 12.4 MB (12399124 bytes)
+	-	`sha256:d63c862a4e8a8fe6642f7954b97624cd307b5b913f999697835d9dede0674595`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 492.0 B
+	-	`sha256:a1f41798510b1dfa029f4cd846d723cca3566637cceedc3aba17cf117605e4fe`  
+		Last Modified: Wed, 10 Aug 2016 21:38:07 GMT  
+		Size: 16.4 MB (16385973 bytes)
+	-	`sha256:a1cb79de526642a0956598b60e75c5c3d73693e4a6e41aa4666c3377d84fdb07`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 1.8 KB (1835 bytes)
+	-	`sha256:0ad59c7db086709fbfe994d1ed28d4818952b4981147090c9dd27c00c1665f13`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 583.0 B
+	-	`sha256:b486b4dba63edbb3698efdc9d49c726ee9485f492208b1c58243546e551b401e`  
+		Last Modified: Thu, 11 Aug 2016 19:46:10 GMT  
+		Size: 34.3 MB (34332251 bytes)
+	-	`sha256:7cd3a3ec048bc1083af9b206381543bba7ba4e95ef59231092a744c329062c81`  
+		Last Modified: Thu, 11 Aug 2016 19:45:59 GMT  
+		Size: 3.7 MB (3735503 bytes)
+	-	`sha256:50258fe8ebeff9f923454ee2d5462f93bce2af2119205c94bcf5afc0f6300b4f`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 334.0 B
+	-	`sha256:e7300e935dc63b74a3ae9d06b2444580b01ddbb4164ba81ff4ed9e2ef5a17c32`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 296.0 B
+	-	`sha256:e46394307f8ef729f5c0bc9b8d750811bbbc5e38d3e94536eea1be3dd4e88c44`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 1.3 MB (1329855 bytes)
+	-	`sha256:3fa5e99d32625ab1a1ac84bfdd8cbadee6593a0eebc2263e44b67bee671fd501`  
+		Last Modified: Thu, 11 Aug 2016 19:56:49 GMT  
+		Size: 26.8 MB (26835817 bytes)
+	-	`sha256:ebf12d12f1530bff558aa13b69efe64182a3a76ea5ddc5fed6f5b2a8d22e1428`  
+		Last Modified: Thu, 11 Aug 2016 19:56:42 GMT  
+		Size: 245.0 B
 
 ## `owncloud:8.1-apache`
 
 ```console
-$ docker pull owncloud@sha256:37eb356a8f374c91252203e35376b41ad51c2b7c26d88f7ae4cc450ed1b7df00
+$ docker pull owncloud@sha256:6c9f4a6ed633b52bf7a77ed75e53bc305acca11f5eaf258fd44ba0eff584b5a3
 ```
 
 -	Platforms:
@@ -1103,9 +1103,9 @@ $ docker pull owncloud@sha256:37eb356a8f374c91252203e35376b41ad51c2b7c26d88f7ae4
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **226.2 MB (226219023 bytes)**  
+-	Total Size: **226.8 MB (226817350 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74485c2fee0246abc0278b3aa7494aa53c9627f5203f24f7181ebf4543cf28f8`
+-	Image ID: `sha256:0502479fbe77052e0136434f843f7aac38466e134f90ba11c0e8235e85f9b850`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1128,63 +1128,63 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 ENV APACHE_CONFDIR=/etc/apache2
 # Fri, 29 Jul 2016 20:49:44 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 29 Jul 2016 20:49:45 GMT
-RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
-# Fri, 29 Jul 2016 20:49:46 GMT
+# Wed, 10 Aug 2016 19:34:50 GMT
+RUN set -ex 		&& sed -r 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS" 		&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
+# Wed, 10 Aug 2016 19:34:51 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Fri, 29 Jul 2016 20:49:48 GMT
+# Wed, 10 Aug 2016 19:34:53 GMT
 RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Fri, 29 Jul 2016 20:49:50 GMT
+# Wed, 10 Aug 2016 19:34:55 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV PHP_VERSION=5.6.24
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_FILENAME=php-5.6.24.tar.xz
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:34:30 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:34:31 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:48 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:39:49 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:49 GMT
+# Wed, 10 Aug 2016 20:18:08 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:18:09 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:23:14 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:14 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 EXPOSE 80/tcp
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:16 GMT
 CMD ["apache2-foreground"]
-# Mon, 01 Aug 2016 17:47:44 GMT
+# Thu, 11 Aug 2016 19:40:17 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:51:21 GMT
+# Thu, 11 Aug 2016 19:44:21 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:51:23 GMT
+# Thu, 11 Aug 2016 19:44:23 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:51:25 GMT
+# Thu, 11 Aug 2016 19:44:25 GMT
 RUN a2enmod rewrite
-# Mon, 01 Aug 2016 17:52:06 GMT
+# Thu, 11 Aug 2016 19:45:12 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 18:07:01 GMT
+# Thu, 11 Aug 2016 19:56:00 GMT
 ENV OWNCLOUD_VERSION=8.1.9
-# Mon, 01 Aug 2016 18:07:02 GMT
+# Thu, 11 Aug 2016 19:56:01 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 18:07:18 GMT
+# Thu, 11 Aug 2016 19:56:27 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 18:07:20 GMT
+# Thu, 11 Aug 2016 19:56:29 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 18:07:20 GMT
+# Thu, 11 Aug 2016 19:56:30 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:07:21 GMT
+# Thu, 11 Aug 2016 19:56:31 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1201,59 +1201,59 @@ CMD ["apache2-foreground"]
 	-	`sha256:b4ae91aad5222bbe7ca67b9c2b69e54fd29989bea1eec3d8a9aca56b011c303c`  
 		Last Modified: Fri, 29 Jul 2016 22:49:17 GMT  
 		Size: 2.8 MB (2846544 bytes)
-	-	`sha256:c0c9ad6136b5e7b142c48c7167eede3d15af54c538f7f3177c50693006cca242`  
-		Last Modified: Fri, 29 Jul 2016 22:49:15 GMT  
-		Size: 276.0 B
-	-	`sha256:b4b0c030555d4340cfe8288272d2bcb291c2f483f1957f1341cfaaea369dc109`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 431.0 B
-	-	`sha256:6e898edbabd79f8b8eaf7351077eff9966a11459347f335757f5341a0a889c16`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 222.0 B
-	-	`sha256:e4b8d84dea782a5effd404eec31320063107e0bb56fccaffae77c4430c8082a3`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
+	-	`sha256:66e1c1a53c958663cb6a8d19f5993b36bfaf8e334d476c5ed30d6766c8db1f9a`  
+		Last Modified: Wed, 10 Aug 2016 21:31:30 GMT  
+		Size: 270.0 B
+	-	`sha256:5d1f306a891255c05b40e49a8d1dd76efb713792e0aa200386ab0e269faa49dc`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 432.0 B
+	-	`sha256:37733078a51e3cf33ba985f69be1dda278d529bb87184a83c71037cade3170b4`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 223.0 B
+	-	`sha256:c5351b4d6bee8cc2fc09f2af750fa4627dfdd37b44b651f3f3289260783d3b38`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
 		Size: 475.0 B
-	-	`sha256:8e151ffc26f09785dd3e1b511b6cc5b32744241932c5ac3a909b032906167e2f`  
-		Last Modified: Fri, 29 Jul 2016 22:54:53 GMT  
-		Size: 12.4 MB (12399117 bytes)
-	-	`sha256:a51015ce0d7e5186d93e7c1f1de1710edce96d5dc45da09f1f1fd33e347b3f44`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 601.0 B
-	-	`sha256:1d1d7ce85493184d89b2695b6139c410038091d8c18ec819ace83d50bcbf4af8`  
-		Last Modified: Fri, 29 Jul 2016 22:54:57 GMT  
-		Size: 15.8 MB (15789648 bytes)
-	-	`sha256:1394b74e0f9d9bd5c6f6a2fd4058edd52deac35dbfaa36668aa49328db286a57`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:35f1f99fe906e63a6fe525a33188e64c2f84d2e332e51327bfd262027c598444`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 579.0 B
-	-	`sha256:181cf82fa46ce61260137919ef7f51982e0495697a3d7deb5040f7064698b96e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:50 GMT  
-		Size: 34.3 MB (34330228 bytes)
-	-	`sha256:dfeef7c75ef90a85c96834f4d5bfa43b8d6b5e4b8ce75ddcf9b3272e6bda87c8`  
-		Last Modified: Mon, 01 Aug 2016 17:52:41 GMT  
-		Size: 3.7 MB (3735515 bytes)
-	-	`sha256:9776e0b14ee38a4cfae7cd26f535a930364d51109bb650207740149fa1231f34`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 332.0 B
-	-	`sha256:aa6b3cbfda6f6a29648f5005f3b7bfc21667fd996ba72aaed09a7ae2c115ed3e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 294.0 B
-	-	`sha256:a0926b406f89277c8e7613682f4cb82051e12ab866b373a8c76d7f43df6a0f60`  
-		Last Modified: Mon, 01 Aug 2016 17:52:38 GMT  
-		Size: 1.3 MB (1329874 bytes)
-	-	`sha256:500632770432187222959be1c2c1bb9697e831f0de3da4d5b277b925a5f4540f`  
-		Last Modified: Mon, 01 Aug 2016 18:07:38 GMT  
-		Size: 26.8 MB (26835793 bytes)
-	-	`sha256:b8072d494c5bc844e2c5ae7cd591499a91dd10e64e86cedab397d9c1a24fc4fb`  
-		Last Modified: Mon, 01 Aug 2016 18:07:30 GMT  
-		Size: 243.0 B
+	-	`sha256:68fab1fd02dce6a758d7907eaf173747d5504e714bc9dcf77bc0086bb8f98420`  
+		Last Modified: Wed, 10 Aug 2016 21:38:00 GMT  
+		Size: 12.4 MB (12399124 bytes)
+	-	`sha256:d63c862a4e8a8fe6642f7954b97624cd307b5b913f999697835d9dede0674595`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 492.0 B
+	-	`sha256:a1f41798510b1dfa029f4cd846d723cca3566637cceedc3aba17cf117605e4fe`  
+		Last Modified: Wed, 10 Aug 2016 21:38:07 GMT  
+		Size: 16.4 MB (16385973 bytes)
+	-	`sha256:a1cb79de526642a0956598b60e75c5c3d73693e4a6e41aa4666c3377d84fdb07`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 1.8 KB (1835 bytes)
+	-	`sha256:0ad59c7db086709fbfe994d1ed28d4818952b4981147090c9dd27c00c1665f13`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 583.0 B
+	-	`sha256:b486b4dba63edbb3698efdc9d49c726ee9485f492208b1c58243546e551b401e`  
+		Last Modified: Thu, 11 Aug 2016 19:46:10 GMT  
+		Size: 34.3 MB (34332251 bytes)
+	-	`sha256:7cd3a3ec048bc1083af9b206381543bba7ba4e95ef59231092a744c329062c81`  
+		Last Modified: Thu, 11 Aug 2016 19:45:59 GMT  
+		Size: 3.7 MB (3735503 bytes)
+	-	`sha256:50258fe8ebeff9f923454ee2d5462f93bce2af2119205c94bcf5afc0f6300b4f`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 334.0 B
+	-	`sha256:e7300e935dc63b74a3ae9d06b2444580b01ddbb4164ba81ff4ed9e2ef5a17c32`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 296.0 B
+	-	`sha256:e46394307f8ef729f5c0bc9b8d750811bbbc5e38d3e94536eea1be3dd4e88c44`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 1.3 MB (1329855 bytes)
+	-	`sha256:3fa5e99d32625ab1a1ac84bfdd8cbadee6593a0eebc2263e44b67bee671fd501`  
+		Last Modified: Thu, 11 Aug 2016 19:56:49 GMT  
+		Size: 26.8 MB (26835817 bytes)
+	-	`sha256:ebf12d12f1530bff558aa13b69efe64182a3a76ea5ddc5fed6f5b2a8d22e1428`  
+		Last Modified: Thu, 11 Aug 2016 19:56:42 GMT  
+		Size: 245.0 B
 
 ## `owncloud:8.1.9`
 
 ```console
-$ docker pull owncloud@sha256:37eb356a8f374c91252203e35376b41ad51c2b7c26d88f7ae4cc450ed1b7df00
+$ docker pull owncloud@sha256:6c9f4a6ed633b52bf7a77ed75e53bc305acca11f5eaf258fd44ba0eff584b5a3
 ```
 
 -	Platforms:
@@ -1263,9 +1263,9 @@ $ docker pull owncloud@sha256:37eb356a8f374c91252203e35376b41ad51c2b7c26d88f7ae4
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **226.2 MB (226219023 bytes)**  
+-	Total Size: **226.8 MB (226817350 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74485c2fee0246abc0278b3aa7494aa53c9627f5203f24f7181ebf4543cf28f8`
+-	Image ID: `sha256:0502479fbe77052e0136434f843f7aac38466e134f90ba11c0e8235e85f9b850`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1288,63 +1288,63 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 ENV APACHE_CONFDIR=/etc/apache2
 # Fri, 29 Jul 2016 20:49:44 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 29 Jul 2016 20:49:45 GMT
-RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
-# Fri, 29 Jul 2016 20:49:46 GMT
+# Wed, 10 Aug 2016 19:34:50 GMT
+RUN set -ex 		&& sed -r 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS" 		&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
+# Wed, 10 Aug 2016 19:34:51 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Fri, 29 Jul 2016 20:49:48 GMT
+# Wed, 10 Aug 2016 19:34:53 GMT
 RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Fri, 29 Jul 2016 20:49:50 GMT
+# Wed, 10 Aug 2016 19:34:55 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV PHP_VERSION=5.6.24
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_FILENAME=php-5.6.24.tar.xz
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:34:30 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:34:31 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:48 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:39:49 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:49 GMT
+# Wed, 10 Aug 2016 20:18:08 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:18:09 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:23:14 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:14 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 EXPOSE 80/tcp
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:16 GMT
 CMD ["apache2-foreground"]
-# Mon, 01 Aug 2016 17:47:44 GMT
+# Thu, 11 Aug 2016 19:40:17 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:51:21 GMT
+# Thu, 11 Aug 2016 19:44:21 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:51:23 GMT
+# Thu, 11 Aug 2016 19:44:23 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:51:25 GMT
+# Thu, 11 Aug 2016 19:44:25 GMT
 RUN a2enmod rewrite
-# Mon, 01 Aug 2016 17:52:06 GMT
+# Thu, 11 Aug 2016 19:45:12 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 18:07:01 GMT
+# Thu, 11 Aug 2016 19:56:00 GMT
 ENV OWNCLOUD_VERSION=8.1.9
-# Mon, 01 Aug 2016 18:07:02 GMT
+# Thu, 11 Aug 2016 19:56:01 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 18:07:18 GMT
+# Thu, 11 Aug 2016 19:56:27 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 18:07:20 GMT
+# Thu, 11 Aug 2016 19:56:29 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 18:07:20 GMT
+# Thu, 11 Aug 2016 19:56:30 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:07:21 GMT
+# Thu, 11 Aug 2016 19:56:31 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1361,59 +1361,59 @@ CMD ["apache2-foreground"]
 	-	`sha256:b4ae91aad5222bbe7ca67b9c2b69e54fd29989bea1eec3d8a9aca56b011c303c`  
 		Last Modified: Fri, 29 Jul 2016 22:49:17 GMT  
 		Size: 2.8 MB (2846544 bytes)
-	-	`sha256:c0c9ad6136b5e7b142c48c7167eede3d15af54c538f7f3177c50693006cca242`  
-		Last Modified: Fri, 29 Jul 2016 22:49:15 GMT  
-		Size: 276.0 B
-	-	`sha256:b4b0c030555d4340cfe8288272d2bcb291c2f483f1957f1341cfaaea369dc109`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 431.0 B
-	-	`sha256:6e898edbabd79f8b8eaf7351077eff9966a11459347f335757f5341a0a889c16`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 222.0 B
-	-	`sha256:e4b8d84dea782a5effd404eec31320063107e0bb56fccaffae77c4430c8082a3`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
+	-	`sha256:66e1c1a53c958663cb6a8d19f5993b36bfaf8e334d476c5ed30d6766c8db1f9a`  
+		Last Modified: Wed, 10 Aug 2016 21:31:30 GMT  
+		Size: 270.0 B
+	-	`sha256:5d1f306a891255c05b40e49a8d1dd76efb713792e0aa200386ab0e269faa49dc`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 432.0 B
+	-	`sha256:37733078a51e3cf33ba985f69be1dda278d529bb87184a83c71037cade3170b4`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 223.0 B
+	-	`sha256:c5351b4d6bee8cc2fc09f2af750fa4627dfdd37b44b651f3f3289260783d3b38`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
 		Size: 475.0 B
-	-	`sha256:8e151ffc26f09785dd3e1b511b6cc5b32744241932c5ac3a909b032906167e2f`  
-		Last Modified: Fri, 29 Jul 2016 22:54:53 GMT  
-		Size: 12.4 MB (12399117 bytes)
-	-	`sha256:a51015ce0d7e5186d93e7c1f1de1710edce96d5dc45da09f1f1fd33e347b3f44`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 601.0 B
-	-	`sha256:1d1d7ce85493184d89b2695b6139c410038091d8c18ec819ace83d50bcbf4af8`  
-		Last Modified: Fri, 29 Jul 2016 22:54:57 GMT  
-		Size: 15.8 MB (15789648 bytes)
-	-	`sha256:1394b74e0f9d9bd5c6f6a2fd4058edd52deac35dbfaa36668aa49328db286a57`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:35f1f99fe906e63a6fe525a33188e64c2f84d2e332e51327bfd262027c598444`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 579.0 B
-	-	`sha256:181cf82fa46ce61260137919ef7f51982e0495697a3d7deb5040f7064698b96e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:50 GMT  
-		Size: 34.3 MB (34330228 bytes)
-	-	`sha256:dfeef7c75ef90a85c96834f4d5bfa43b8d6b5e4b8ce75ddcf9b3272e6bda87c8`  
-		Last Modified: Mon, 01 Aug 2016 17:52:41 GMT  
-		Size: 3.7 MB (3735515 bytes)
-	-	`sha256:9776e0b14ee38a4cfae7cd26f535a930364d51109bb650207740149fa1231f34`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 332.0 B
-	-	`sha256:aa6b3cbfda6f6a29648f5005f3b7bfc21667fd996ba72aaed09a7ae2c115ed3e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 294.0 B
-	-	`sha256:a0926b406f89277c8e7613682f4cb82051e12ab866b373a8c76d7f43df6a0f60`  
-		Last Modified: Mon, 01 Aug 2016 17:52:38 GMT  
-		Size: 1.3 MB (1329874 bytes)
-	-	`sha256:500632770432187222959be1c2c1bb9697e831f0de3da4d5b277b925a5f4540f`  
-		Last Modified: Mon, 01 Aug 2016 18:07:38 GMT  
-		Size: 26.8 MB (26835793 bytes)
-	-	`sha256:b8072d494c5bc844e2c5ae7cd591499a91dd10e64e86cedab397d9c1a24fc4fb`  
-		Last Modified: Mon, 01 Aug 2016 18:07:30 GMT  
-		Size: 243.0 B
+	-	`sha256:68fab1fd02dce6a758d7907eaf173747d5504e714bc9dcf77bc0086bb8f98420`  
+		Last Modified: Wed, 10 Aug 2016 21:38:00 GMT  
+		Size: 12.4 MB (12399124 bytes)
+	-	`sha256:d63c862a4e8a8fe6642f7954b97624cd307b5b913f999697835d9dede0674595`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 492.0 B
+	-	`sha256:a1f41798510b1dfa029f4cd846d723cca3566637cceedc3aba17cf117605e4fe`  
+		Last Modified: Wed, 10 Aug 2016 21:38:07 GMT  
+		Size: 16.4 MB (16385973 bytes)
+	-	`sha256:a1cb79de526642a0956598b60e75c5c3d73693e4a6e41aa4666c3377d84fdb07`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 1.8 KB (1835 bytes)
+	-	`sha256:0ad59c7db086709fbfe994d1ed28d4818952b4981147090c9dd27c00c1665f13`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 583.0 B
+	-	`sha256:b486b4dba63edbb3698efdc9d49c726ee9485f492208b1c58243546e551b401e`  
+		Last Modified: Thu, 11 Aug 2016 19:46:10 GMT  
+		Size: 34.3 MB (34332251 bytes)
+	-	`sha256:7cd3a3ec048bc1083af9b206381543bba7ba4e95ef59231092a744c329062c81`  
+		Last Modified: Thu, 11 Aug 2016 19:45:59 GMT  
+		Size: 3.7 MB (3735503 bytes)
+	-	`sha256:50258fe8ebeff9f923454ee2d5462f93bce2af2119205c94bcf5afc0f6300b4f`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 334.0 B
+	-	`sha256:e7300e935dc63b74a3ae9d06b2444580b01ddbb4164ba81ff4ed9e2ef5a17c32`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 296.0 B
+	-	`sha256:e46394307f8ef729f5c0bc9b8d750811bbbc5e38d3e94536eea1be3dd4e88c44`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 1.3 MB (1329855 bytes)
+	-	`sha256:3fa5e99d32625ab1a1ac84bfdd8cbadee6593a0eebc2263e44b67bee671fd501`  
+		Last Modified: Thu, 11 Aug 2016 19:56:49 GMT  
+		Size: 26.8 MB (26835817 bytes)
+	-	`sha256:ebf12d12f1530bff558aa13b69efe64182a3a76ea5ddc5fed6f5b2a8d22e1428`  
+		Last Modified: Thu, 11 Aug 2016 19:56:42 GMT  
+		Size: 245.0 B
 
 ## `owncloud:8.1`
 
 ```console
-$ docker pull owncloud@sha256:37eb356a8f374c91252203e35376b41ad51c2b7c26d88f7ae4cc450ed1b7df00
+$ docker pull owncloud@sha256:6c9f4a6ed633b52bf7a77ed75e53bc305acca11f5eaf258fd44ba0eff584b5a3
 ```
 
 -	Platforms:
@@ -1423,9 +1423,9 @@ $ docker pull owncloud@sha256:37eb356a8f374c91252203e35376b41ad51c2b7c26d88f7ae4
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **226.2 MB (226219023 bytes)**  
+-	Total Size: **226.8 MB (226817350 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74485c2fee0246abc0278b3aa7494aa53c9627f5203f24f7181ebf4543cf28f8`
+-	Image ID: `sha256:0502479fbe77052e0136434f843f7aac38466e134f90ba11c0e8235e85f9b850`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1448,63 +1448,63 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 ENV APACHE_CONFDIR=/etc/apache2
 # Fri, 29 Jul 2016 20:49:44 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 29 Jul 2016 20:49:45 GMT
-RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
-# Fri, 29 Jul 2016 20:49:46 GMT
+# Wed, 10 Aug 2016 19:34:50 GMT
+RUN set -ex 		&& sed -r 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS" 		&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
+# Wed, 10 Aug 2016 19:34:51 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Fri, 29 Jul 2016 20:49:48 GMT
+# Wed, 10 Aug 2016 19:34:53 GMT
 RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Fri, 29 Jul 2016 20:49:50 GMT
+# Wed, 10 Aug 2016 19:34:55 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV PHP_VERSION=5.6.24
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_FILENAME=php-5.6.24.tar.xz
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:34:30 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:34:31 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:48 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:39:49 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:49 GMT
+# Wed, 10 Aug 2016 20:18:08 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:18:09 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:23:14 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:14 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 EXPOSE 80/tcp
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:16 GMT
 CMD ["apache2-foreground"]
-# Mon, 01 Aug 2016 17:47:44 GMT
+# Thu, 11 Aug 2016 19:40:17 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:51:21 GMT
+# Thu, 11 Aug 2016 19:44:21 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:51:23 GMT
+# Thu, 11 Aug 2016 19:44:23 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:51:25 GMT
+# Thu, 11 Aug 2016 19:44:25 GMT
 RUN a2enmod rewrite
-# Mon, 01 Aug 2016 17:52:06 GMT
+# Thu, 11 Aug 2016 19:45:12 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 18:07:01 GMT
+# Thu, 11 Aug 2016 19:56:00 GMT
 ENV OWNCLOUD_VERSION=8.1.9
-# Mon, 01 Aug 2016 18:07:02 GMT
+# Thu, 11 Aug 2016 19:56:01 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 18:07:18 GMT
+# Thu, 11 Aug 2016 19:56:27 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 18:07:20 GMT
+# Thu, 11 Aug 2016 19:56:29 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 18:07:20 GMT
+# Thu, 11 Aug 2016 19:56:30 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:07:21 GMT
+# Thu, 11 Aug 2016 19:56:31 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1521,59 +1521,59 @@ CMD ["apache2-foreground"]
 	-	`sha256:b4ae91aad5222bbe7ca67b9c2b69e54fd29989bea1eec3d8a9aca56b011c303c`  
 		Last Modified: Fri, 29 Jul 2016 22:49:17 GMT  
 		Size: 2.8 MB (2846544 bytes)
-	-	`sha256:c0c9ad6136b5e7b142c48c7167eede3d15af54c538f7f3177c50693006cca242`  
-		Last Modified: Fri, 29 Jul 2016 22:49:15 GMT  
-		Size: 276.0 B
-	-	`sha256:b4b0c030555d4340cfe8288272d2bcb291c2f483f1957f1341cfaaea369dc109`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 431.0 B
-	-	`sha256:6e898edbabd79f8b8eaf7351077eff9966a11459347f335757f5341a0a889c16`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 222.0 B
-	-	`sha256:e4b8d84dea782a5effd404eec31320063107e0bb56fccaffae77c4430c8082a3`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
+	-	`sha256:66e1c1a53c958663cb6a8d19f5993b36bfaf8e334d476c5ed30d6766c8db1f9a`  
+		Last Modified: Wed, 10 Aug 2016 21:31:30 GMT  
+		Size: 270.0 B
+	-	`sha256:5d1f306a891255c05b40e49a8d1dd76efb713792e0aa200386ab0e269faa49dc`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 432.0 B
+	-	`sha256:37733078a51e3cf33ba985f69be1dda278d529bb87184a83c71037cade3170b4`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 223.0 B
+	-	`sha256:c5351b4d6bee8cc2fc09f2af750fa4627dfdd37b44b651f3f3289260783d3b38`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
 		Size: 475.0 B
-	-	`sha256:8e151ffc26f09785dd3e1b511b6cc5b32744241932c5ac3a909b032906167e2f`  
-		Last Modified: Fri, 29 Jul 2016 22:54:53 GMT  
-		Size: 12.4 MB (12399117 bytes)
-	-	`sha256:a51015ce0d7e5186d93e7c1f1de1710edce96d5dc45da09f1f1fd33e347b3f44`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 601.0 B
-	-	`sha256:1d1d7ce85493184d89b2695b6139c410038091d8c18ec819ace83d50bcbf4af8`  
-		Last Modified: Fri, 29 Jul 2016 22:54:57 GMT  
-		Size: 15.8 MB (15789648 bytes)
-	-	`sha256:1394b74e0f9d9bd5c6f6a2fd4058edd52deac35dbfaa36668aa49328db286a57`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:35f1f99fe906e63a6fe525a33188e64c2f84d2e332e51327bfd262027c598444`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 579.0 B
-	-	`sha256:181cf82fa46ce61260137919ef7f51982e0495697a3d7deb5040f7064698b96e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:50 GMT  
-		Size: 34.3 MB (34330228 bytes)
-	-	`sha256:dfeef7c75ef90a85c96834f4d5bfa43b8d6b5e4b8ce75ddcf9b3272e6bda87c8`  
-		Last Modified: Mon, 01 Aug 2016 17:52:41 GMT  
-		Size: 3.7 MB (3735515 bytes)
-	-	`sha256:9776e0b14ee38a4cfae7cd26f535a930364d51109bb650207740149fa1231f34`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 332.0 B
-	-	`sha256:aa6b3cbfda6f6a29648f5005f3b7bfc21667fd996ba72aaed09a7ae2c115ed3e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 294.0 B
-	-	`sha256:a0926b406f89277c8e7613682f4cb82051e12ab866b373a8c76d7f43df6a0f60`  
-		Last Modified: Mon, 01 Aug 2016 17:52:38 GMT  
-		Size: 1.3 MB (1329874 bytes)
-	-	`sha256:500632770432187222959be1c2c1bb9697e831f0de3da4d5b277b925a5f4540f`  
-		Last Modified: Mon, 01 Aug 2016 18:07:38 GMT  
-		Size: 26.8 MB (26835793 bytes)
-	-	`sha256:b8072d494c5bc844e2c5ae7cd591499a91dd10e64e86cedab397d9c1a24fc4fb`  
-		Last Modified: Mon, 01 Aug 2016 18:07:30 GMT  
-		Size: 243.0 B
+	-	`sha256:68fab1fd02dce6a758d7907eaf173747d5504e714bc9dcf77bc0086bb8f98420`  
+		Last Modified: Wed, 10 Aug 2016 21:38:00 GMT  
+		Size: 12.4 MB (12399124 bytes)
+	-	`sha256:d63c862a4e8a8fe6642f7954b97624cd307b5b913f999697835d9dede0674595`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 492.0 B
+	-	`sha256:a1f41798510b1dfa029f4cd846d723cca3566637cceedc3aba17cf117605e4fe`  
+		Last Modified: Wed, 10 Aug 2016 21:38:07 GMT  
+		Size: 16.4 MB (16385973 bytes)
+	-	`sha256:a1cb79de526642a0956598b60e75c5c3d73693e4a6e41aa4666c3377d84fdb07`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 1.8 KB (1835 bytes)
+	-	`sha256:0ad59c7db086709fbfe994d1ed28d4818952b4981147090c9dd27c00c1665f13`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 583.0 B
+	-	`sha256:b486b4dba63edbb3698efdc9d49c726ee9485f492208b1c58243546e551b401e`  
+		Last Modified: Thu, 11 Aug 2016 19:46:10 GMT  
+		Size: 34.3 MB (34332251 bytes)
+	-	`sha256:7cd3a3ec048bc1083af9b206381543bba7ba4e95ef59231092a744c329062c81`  
+		Last Modified: Thu, 11 Aug 2016 19:45:59 GMT  
+		Size: 3.7 MB (3735503 bytes)
+	-	`sha256:50258fe8ebeff9f923454ee2d5462f93bce2af2119205c94bcf5afc0f6300b4f`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 334.0 B
+	-	`sha256:e7300e935dc63b74a3ae9d06b2444580b01ddbb4164ba81ff4ed9e2ef5a17c32`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 296.0 B
+	-	`sha256:e46394307f8ef729f5c0bc9b8d750811bbbc5e38d3e94536eea1be3dd4e88c44`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 1.3 MB (1329855 bytes)
+	-	`sha256:3fa5e99d32625ab1a1ac84bfdd8cbadee6593a0eebc2263e44b67bee671fd501`  
+		Last Modified: Thu, 11 Aug 2016 19:56:49 GMT  
+		Size: 26.8 MB (26835817 bytes)
+	-	`sha256:ebf12d12f1530bff558aa13b69efe64182a3a76ea5ddc5fed6f5b2a8d22e1428`  
+		Last Modified: Thu, 11 Aug 2016 19:56:42 GMT  
+		Size: 245.0 B
 
 ## `owncloud:8.1.9-fpm`
 
 ```console
-$ docker pull owncloud@sha256:9b39c532d89930652340280998fd9f17feb00484540cf16a6f94bc033918acbd
+$ docker pull owncloud@sha256:3f1d4064d601ee21ac0debcbafe39973b85607cdac0f20a8988c9b6c8143d122
 ```
 
 -	Platforms:
@@ -1583,9 +1583,9 @@ $ docker pull owncloud@sha256:9b39c532d89930652340280998fd9f17feb00484540cf16a6f
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **216.4 MB (216362251 bytes)**  
+-	Total Size: **216.9 MB (216901339 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f17c9fda2e941a0bb1e95968280a370225a5835ec50992e4431e8c1d5af45481`
+-	Image ID: `sha256:d35a0aa703bb04f95d6d3f141d30dcc5ea9681a016f77863cd9dd17bbc1d5ad2`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1612,41 +1612,41 @@ ENV PHP_VERSION=5.6.24
 ENV PHP_FILENAME=php-5.6.24.tar.xz
 # Fri, 29 Jul 2016 21:39:52 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:39:56 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:39:57 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:46:44 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:46:45 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:46:46 GMT
+# Wed, 10 Aug 2016 20:23:19 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:23:20 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:29:49 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:29:50 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:29:50 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:46:48 GMT
+# Wed, 10 Aug 2016 20:29:51 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Fri, 29 Jul 2016 21:46:48 GMT
+# Wed, 10 Aug 2016 20:29:52 GMT
 EXPOSE 9000/tcp
-# Fri, 29 Jul 2016 21:46:49 GMT
+# Wed, 10 Aug 2016 20:29:52 GMT
 CMD ["php-fpm"]
-# Mon, 01 Aug 2016 17:55:18 GMT
+# Thu, 11 Aug 2016 19:31:58 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:58:54 GMT
+# Thu, 11 Aug 2016 19:36:32 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:58:56 GMT
+# Thu, 11 Aug 2016 19:36:34 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:59:37 GMT
+# Thu, 11 Aug 2016 19:37:23 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 18:08:17 GMT
+# Thu, 11 Aug 2016 19:57:32 GMT
 ENV OWNCLOUD_VERSION=8.1.9
-# Mon, 01 Aug 2016 18:08:18 GMT
+# Thu, 11 Aug 2016 19:57:33 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 18:08:34 GMT
+# Thu, 11 Aug 2016 19:57:49 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 18:08:36 GMT
+# Thu, 11 Aug 2016 19:57:51 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 18:08:37 GMT
+# Thu, 11 Aug 2016 19:57:52 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:08:37 GMT
+# Thu, 11 Aug 2016 19:57:53 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1660,47 +1660,47 @@ CMD ["php-fpm"]
 	-	`sha256:3d821ad560e13c778e616da2a9033ac30d3811185f43635e95c20b22ab380077`  
 		Last Modified: Fri, 29 Jul 2016 22:46:34 GMT  
 		Size: 180.0 B
-	-	`sha256:313efb7f2797d96b93cdc6a1c1628cb0bb064db4082e1a75ad89ea416aba077c`  
-		Last Modified: Fri, 29 Jul 2016 22:55:35 GMT  
-		Size: 12.4 MB (12399119 bytes)
-	-	`sha256:59137d1c51b6cd58a87d11262a2d78b9257747a3bbd6ec05bf4d049b124c8e70`  
-		Last Modified: Fri, 29 Jul 2016 22:55:30 GMT  
-		Size: 601.0 B
-	-	`sha256:265ac2fa951d86cc8d6e91295f961f67bd5e283269334c02545b88265907c038`  
-		Last Modified: Fri, 29 Jul 2016 22:55:34 GMT  
-		Size: 8.8 MB (8796075 bytes)
-	-	`sha256:8f71c291653e80fd8be4c19d5de021fd8ac543b92cfd1ad9ff8b3c3a5bb357bb`  
-		Last Modified: Fri, 29 Jul 2016 22:55:30 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:61edc0cbd1b43bc5c63d0fc1e67306c24e819d4f55c2e8705a7103e78d186922`  
-		Last Modified: Fri, 29 Jul 2016 22:55:31 GMT  
+	-	`sha256:1a0ed20d7752971350ab581861731d7d71a6eb560b93d48382b5cc2aa07fed8b`  
+		Last Modified: Wed, 10 Aug 2016 21:38:50 GMT  
+		Size: 12.4 MB (12399120 bytes)
+	-	`sha256:d17456fd86bcf1eb916ff4c4b4909dd6ad98736369cff4e5ee9c79e02782fc67`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
+		Size: 490.0 B
+	-	`sha256:c8bd75b8802c8ce64c4a28486fbfb4bde4247b27f5f8363dd8a8469ac89b1e85`  
+		Last Modified: Wed, 10 Aug 2016 21:38:48 GMT  
+		Size: 9.3 MB (9333467 bytes)
+	-	`sha256:0054f99dc6ca14454002cd76f78264c84cdfd9c57cea265ea0a6f601dab80158`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
+		Size: 1.8 KB (1829 bytes)
+	-	`sha256:1c8ec71281514f1d63f59000b5fd9082baa8a6d34e7e591d7cd22928879a5d18`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
 		Size: 129.0 B
-	-	`sha256:2310b95436007759599e7c1a784ce61d633ed86c55689af737f6907dcc8c6d14`  
-		Last Modified: Fri, 29 Jul 2016 22:55:31 GMT  
-		Size: 7.6 KB (7631 bytes)
-	-	`sha256:38bb9593bce0ba6ead3bbecf0b2ada9b245c194168bf782d388e5cecea5f2d88`  
-		Last Modified: Mon, 01 Aug 2016 18:00:23 GMT  
-		Size: 34.3 MB (34307868 bytes)
-	-	`sha256:972b48230f3d9134dfa1030c0dfa08fc6dbedb26187bc0e24cad6575726f59bd`  
-		Last Modified: Mon, 01 Aug 2016 18:00:13 GMT  
-		Size: 3.7 MB (3735745 bytes)
-	-	`sha256:8bf22dfa16633bcdb53f53d020507297e5012af00a69be4b21ea6e4008c9bbec`  
-		Last Modified: Mon, 01 Aug 2016 18:00:11 GMT  
-		Size: 334.0 B
-	-	`sha256:9b9e3850c393e11aebe0ffa3dbd59e2da67f999ebe7c63c6796990db8848d707`  
-		Last Modified: Mon, 01 Aug 2016 18:00:09 GMT  
-		Size: 1.3 MB (1329835 bytes)
-	-	`sha256:3b35e45c4b9484040e378172fe339092b5ef525dc405eb341df69e3a35107cd3`  
-		Last Modified: Mon, 01 Aug 2016 18:08:54 GMT  
-		Size: 26.8 MB (26835820 bytes)
-	-	`sha256:edd7ec30a6eea8262d83cfda84b53f52be1016f7b225b25067f6be9d7cd0ff23`  
-		Last Modified: Mon, 01 Aug 2016 18:08:46 GMT  
-		Size: 243.0 B
+	-	`sha256:fa513925a4eb93b436ccdb48c9b0edca88237b4abdebea3245da69a6b37deaf9`  
+		Last Modified: Wed, 10 Aug 2016 21:38:46 GMT  
+		Size: 7.6 KB (7629 bytes)
+	-	`sha256:f5e918f5eeceb98e228adf3ed45e9590823935fc6a4d203903b7633e64e2f6b7`  
+		Last Modified: Thu, 11 Aug 2016 19:38:23 GMT  
+		Size: 34.3 MB (34309595 bytes)
+	-	`sha256:4a0645c74d2abc109131690d3f71a3c42fe544272d58e7a2151d4a4be4509977`  
+		Last Modified: Thu, 11 Aug 2016 19:38:09 GMT  
+		Size: 3.7 MB (3735762 bytes)
+	-	`sha256:9cfa7715b90cc83e5009c512050ac4f5c46adfa52997773a68c02ca21063a543`  
+		Last Modified: Thu, 11 Aug 2016 19:38:07 GMT  
+		Size: 333.0 B
+	-	`sha256:77fb23212070caee8cc379413904c7da38bee3cb9e17d3c039dea71c46e44bc3`  
+		Last Modified: Thu, 11 Aug 2016 19:38:07 GMT  
+		Size: 1.3 MB (1329833 bytes)
+	-	`sha256:0486658508f3a688311200f4c6c9f7fc49950341ff657aca2e9363fea14bd868`  
+		Last Modified: Thu, 11 Aug 2016 19:58:10 GMT  
+		Size: 26.8 MB (26835809 bytes)
+	-	`sha256:3434f4f66e0a50e7106de1d604bc995312069096e281c1bde0ed53becd9b8a4d`  
+		Last Modified: Thu, 11 Aug 2016 19:58:04 GMT  
+		Size: 245.0 B
 
 ## `owncloud:8.1-fpm`
 
 ```console
-$ docker pull owncloud@sha256:9b39c532d89930652340280998fd9f17feb00484540cf16a6f94bc033918acbd
+$ docker pull owncloud@sha256:3f1d4064d601ee21ac0debcbafe39973b85607cdac0f20a8988c9b6c8143d122
 ```
 
 -	Platforms:
@@ -1710,9 +1710,9 @@ $ docker pull owncloud@sha256:9b39c532d89930652340280998fd9f17feb00484540cf16a6f
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **216.4 MB (216362251 bytes)**  
+-	Total Size: **216.9 MB (216901339 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f17c9fda2e941a0bb1e95968280a370225a5835ec50992e4431e8c1d5af45481`
+-	Image ID: `sha256:d35a0aa703bb04f95d6d3f141d30dcc5ea9681a016f77863cd9dd17bbc1d5ad2`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1739,41 +1739,41 @@ ENV PHP_VERSION=5.6.24
 ENV PHP_FILENAME=php-5.6.24.tar.xz
 # Fri, 29 Jul 2016 21:39:52 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:39:56 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:39:57 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:46:44 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:46:45 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:46:46 GMT
+# Wed, 10 Aug 2016 20:23:19 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:23:20 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:29:49 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:29:50 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:29:50 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:46:48 GMT
+# Wed, 10 Aug 2016 20:29:51 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Fri, 29 Jul 2016 21:46:48 GMT
+# Wed, 10 Aug 2016 20:29:52 GMT
 EXPOSE 9000/tcp
-# Fri, 29 Jul 2016 21:46:49 GMT
+# Wed, 10 Aug 2016 20:29:52 GMT
 CMD ["php-fpm"]
-# Mon, 01 Aug 2016 17:55:18 GMT
+# Thu, 11 Aug 2016 19:31:58 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:58:54 GMT
+# Thu, 11 Aug 2016 19:36:32 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:58:56 GMT
+# Thu, 11 Aug 2016 19:36:34 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:59:37 GMT
+# Thu, 11 Aug 2016 19:37:23 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 18:08:17 GMT
+# Thu, 11 Aug 2016 19:57:32 GMT
 ENV OWNCLOUD_VERSION=8.1.9
-# Mon, 01 Aug 2016 18:08:18 GMT
+# Thu, 11 Aug 2016 19:57:33 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 18:08:34 GMT
+# Thu, 11 Aug 2016 19:57:49 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 18:08:36 GMT
+# Thu, 11 Aug 2016 19:57:51 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 18:08:37 GMT
+# Thu, 11 Aug 2016 19:57:52 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:08:37 GMT
+# Thu, 11 Aug 2016 19:57:53 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1787,47 +1787,47 @@ CMD ["php-fpm"]
 	-	`sha256:3d821ad560e13c778e616da2a9033ac30d3811185f43635e95c20b22ab380077`  
 		Last Modified: Fri, 29 Jul 2016 22:46:34 GMT  
 		Size: 180.0 B
-	-	`sha256:313efb7f2797d96b93cdc6a1c1628cb0bb064db4082e1a75ad89ea416aba077c`  
-		Last Modified: Fri, 29 Jul 2016 22:55:35 GMT  
-		Size: 12.4 MB (12399119 bytes)
-	-	`sha256:59137d1c51b6cd58a87d11262a2d78b9257747a3bbd6ec05bf4d049b124c8e70`  
-		Last Modified: Fri, 29 Jul 2016 22:55:30 GMT  
-		Size: 601.0 B
-	-	`sha256:265ac2fa951d86cc8d6e91295f961f67bd5e283269334c02545b88265907c038`  
-		Last Modified: Fri, 29 Jul 2016 22:55:34 GMT  
-		Size: 8.8 MB (8796075 bytes)
-	-	`sha256:8f71c291653e80fd8be4c19d5de021fd8ac543b92cfd1ad9ff8b3c3a5bb357bb`  
-		Last Modified: Fri, 29 Jul 2016 22:55:30 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:61edc0cbd1b43bc5c63d0fc1e67306c24e819d4f55c2e8705a7103e78d186922`  
-		Last Modified: Fri, 29 Jul 2016 22:55:31 GMT  
+	-	`sha256:1a0ed20d7752971350ab581861731d7d71a6eb560b93d48382b5cc2aa07fed8b`  
+		Last Modified: Wed, 10 Aug 2016 21:38:50 GMT  
+		Size: 12.4 MB (12399120 bytes)
+	-	`sha256:d17456fd86bcf1eb916ff4c4b4909dd6ad98736369cff4e5ee9c79e02782fc67`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
+		Size: 490.0 B
+	-	`sha256:c8bd75b8802c8ce64c4a28486fbfb4bde4247b27f5f8363dd8a8469ac89b1e85`  
+		Last Modified: Wed, 10 Aug 2016 21:38:48 GMT  
+		Size: 9.3 MB (9333467 bytes)
+	-	`sha256:0054f99dc6ca14454002cd76f78264c84cdfd9c57cea265ea0a6f601dab80158`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
+		Size: 1.8 KB (1829 bytes)
+	-	`sha256:1c8ec71281514f1d63f59000b5fd9082baa8a6d34e7e591d7cd22928879a5d18`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
 		Size: 129.0 B
-	-	`sha256:2310b95436007759599e7c1a784ce61d633ed86c55689af737f6907dcc8c6d14`  
-		Last Modified: Fri, 29 Jul 2016 22:55:31 GMT  
-		Size: 7.6 KB (7631 bytes)
-	-	`sha256:38bb9593bce0ba6ead3bbecf0b2ada9b245c194168bf782d388e5cecea5f2d88`  
-		Last Modified: Mon, 01 Aug 2016 18:00:23 GMT  
-		Size: 34.3 MB (34307868 bytes)
-	-	`sha256:972b48230f3d9134dfa1030c0dfa08fc6dbedb26187bc0e24cad6575726f59bd`  
-		Last Modified: Mon, 01 Aug 2016 18:00:13 GMT  
-		Size: 3.7 MB (3735745 bytes)
-	-	`sha256:8bf22dfa16633bcdb53f53d020507297e5012af00a69be4b21ea6e4008c9bbec`  
-		Last Modified: Mon, 01 Aug 2016 18:00:11 GMT  
-		Size: 334.0 B
-	-	`sha256:9b9e3850c393e11aebe0ffa3dbd59e2da67f999ebe7c63c6796990db8848d707`  
-		Last Modified: Mon, 01 Aug 2016 18:00:09 GMT  
-		Size: 1.3 MB (1329835 bytes)
-	-	`sha256:3b35e45c4b9484040e378172fe339092b5ef525dc405eb341df69e3a35107cd3`  
-		Last Modified: Mon, 01 Aug 2016 18:08:54 GMT  
-		Size: 26.8 MB (26835820 bytes)
-	-	`sha256:edd7ec30a6eea8262d83cfda84b53f52be1016f7b225b25067f6be9d7cd0ff23`  
-		Last Modified: Mon, 01 Aug 2016 18:08:46 GMT  
-		Size: 243.0 B
+	-	`sha256:fa513925a4eb93b436ccdb48c9b0edca88237b4abdebea3245da69a6b37deaf9`  
+		Last Modified: Wed, 10 Aug 2016 21:38:46 GMT  
+		Size: 7.6 KB (7629 bytes)
+	-	`sha256:f5e918f5eeceb98e228adf3ed45e9590823935fc6a4d203903b7633e64e2f6b7`  
+		Last Modified: Thu, 11 Aug 2016 19:38:23 GMT  
+		Size: 34.3 MB (34309595 bytes)
+	-	`sha256:4a0645c74d2abc109131690d3f71a3c42fe544272d58e7a2151d4a4be4509977`  
+		Last Modified: Thu, 11 Aug 2016 19:38:09 GMT  
+		Size: 3.7 MB (3735762 bytes)
+	-	`sha256:9cfa7715b90cc83e5009c512050ac4f5c46adfa52997773a68c02ca21063a543`  
+		Last Modified: Thu, 11 Aug 2016 19:38:07 GMT  
+		Size: 333.0 B
+	-	`sha256:77fb23212070caee8cc379413904c7da38bee3cb9e17d3c039dea71c46e44bc3`  
+		Last Modified: Thu, 11 Aug 2016 19:38:07 GMT  
+		Size: 1.3 MB (1329833 bytes)
+	-	`sha256:0486658508f3a688311200f4c6c9f7fc49950341ff657aca2e9363fea14bd868`  
+		Last Modified: Thu, 11 Aug 2016 19:58:10 GMT  
+		Size: 26.8 MB (26835809 bytes)
+	-	`sha256:3434f4f66e0a50e7106de1d604bc995312069096e281c1bde0ed53becd9b8a4d`  
+		Last Modified: Thu, 11 Aug 2016 19:58:04 GMT  
+		Size: 245.0 B
 
 ## `owncloud:8.2.7-apache`
 
 ```console
-$ docker pull owncloud@sha256:d2335fec3ed5acdaf102927297e7b726536b30a20af54941f5dcc1628a0568d4
+$ docker pull owncloud@sha256:becfd58ee11bf599a2e1888fc31b08b09dae4d860b5de4a813e0cae05e130bb9
 ```
 
 -	Platforms:
@@ -1837,9 +1837,9 @@ $ docker pull owncloud@sha256:d2335fec3ed5acdaf102927297e7b726536b30a20af54941f5
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **229.7 MB (229704958 bytes)**  
+-	Total Size: **230.3 MB (230303269 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38955a46b298ab15c62a4bf9b284c83bcbc5551cbfb905064ade7638d8bb87f9`
+-	Image ID: `sha256:76e11704034adec81c3788b9d1dea8416dc0e4a0d8d1afcbd352d0a0fac5bc36`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1862,63 +1862,63 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 ENV APACHE_CONFDIR=/etc/apache2
 # Fri, 29 Jul 2016 20:49:44 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 29 Jul 2016 20:49:45 GMT
-RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
-# Fri, 29 Jul 2016 20:49:46 GMT
+# Wed, 10 Aug 2016 19:34:50 GMT
+RUN set -ex 		&& sed -r 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS" 		&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
+# Wed, 10 Aug 2016 19:34:51 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Fri, 29 Jul 2016 20:49:48 GMT
+# Wed, 10 Aug 2016 19:34:53 GMT
 RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Fri, 29 Jul 2016 20:49:50 GMT
+# Wed, 10 Aug 2016 19:34:55 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV PHP_VERSION=5.6.24
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_FILENAME=php-5.6.24.tar.xz
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:34:30 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:34:31 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:48 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:39:49 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:49 GMT
+# Wed, 10 Aug 2016 20:18:08 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:18:09 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:23:14 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:14 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 EXPOSE 80/tcp
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:16 GMT
 CMD ["apache2-foreground"]
-# Mon, 01 Aug 2016 17:47:44 GMT
+# Thu, 11 Aug 2016 19:40:17 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:51:21 GMT
+# Thu, 11 Aug 2016 19:44:21 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:51:23 GMT
+# Thu, 11 Aug 2016 19:44:23 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:51:25 GMT
+# Thu, 11 Aug 2016 19:44:25 GMT
 RUN a2enmod rewrite
-# Mon, 01 Aug 2016 17:52:06 GMT
+# Thu, 11 Aug 2016 19:45:12 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 18:09:13 GMT
+# Thu, 11 Aug 2016 19:58:30 GMT
 ENV OWNCLOUD_VERSION=8.2.7
-# Mon, 01 Aug 2016 18:09:14 GMT
+# Thu, 11 Aug 2016 19:58:31 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 18:09:30 GMT
+# Thu, 11 Aug 2016 19:58:51 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 18:09:32 GMT
+# Thu, 11 Aug 2016 19:58:53 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 18:09:33 GMT
+# Thu, 11 Aug 2016 19:58:54 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:09:34 GMT
+# Thu, 11 Aug 2016 19:58:55 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1935,59 +1935,59 @@ CMD ["apache2-foreground"]
 	-	`sha256:b4ae91aad5222bbe7ca67b9c2b69e54fd29989bea1eec3d8a9aca56b011c303c`  
 		Last Modified: Fri, 29 Jul 2016 22:49:17 GMT  
 		Size: 2.8 MB (2846544 bytes)
-	-	`sha256:c0c9ad6136b5e7b142c48c7167eede3d15af54c538f7f3177c50693006cca242`  
-		Last Modified: Fri, 29 Jul 2016 22:49:15 GMT  
-		Size: 276.0 B
-	-	`sha256:b4b0c030555d4340cfe8288272d2bcb291c2f483f1957f1341cfaaea369dc109`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 431.0 B
-	-	`sha256:6e898edbabd79f8b8eaf7351077eff9966a11459347f335757f5341a0a889c16`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 222.0 B
-	-	`sha256:e4b8d84dea782a5effd404eec31320063107e0bb56fccaffae77c4430c8082a3`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
+	-	`sha256:66e1c1a53c958663cb6a8d19f5993b36bfaf8e334d476c5ed30d6766c8db1f9a`  
+		Last Modified: Wed, 10 Aug 2016 21:31:30 GMT  
+		Size: 270.0 B
+	-	`sha256:5d1f306a891255c05b40e49a8d1dd76efb713792e0aa200386ab0e269faa49dc`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 432.0 B
+	-	`sha256:37733078a51e3cf33ba985f69be1dda278d529bb87184a83c71037cade3170b4`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 223.0 B
+	-	`sha256:c5351b4d6bee8cc2fc09f2af750fa4627dfdd37b44b651f3f3289260783d3b38`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
 		Size: 475.0 B
-	-	`sha256:8e151ffc26f09785dd3e1b511b6cc5b32744241932c5ac3a909b032906167e2f`  
-		Last Modified: Fri, 29 Jul 2016 22:54:53 GMT  
-		Size: 12.4 MB (12399117 bytes)
-	-	`sha256:a51015ce0d7e5186d93e7c1f1de1710edce96d5dc45da09f1f1fd33e347b3f44`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 601.0 B
-	-	`sha256:1d1d7ce85493184d89b2695b6139c410038091d8c18ec819ace83d50bcbf4af8`  
-		Last Modified: Fri, 29 Jul 2016 22:54:57 GMT  
-		Size: 15.8 MB (15789648 bytes)
-	-	`sha256:1394b74e0f9d9bd5c6f6a2fd4058edd52deac35dbfaa36668aa49328db286a57`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:35f1f99fe906e63a6fe525a33188e64c2f84d2e332e51327bfd262027c598444`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 579.0 B
-	-	`sha256:181cf82fa46ce61260137919ef7f51982e0495697a3d7deb5040f7064698b96e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:50 GMT  
-		Size: 34.3 MB (34330228 bytes)
-	-	`sha256:dfeef7c75ef90a85c96834f4d5bfa43b8d6b5e4b8ce75ddcf9b3272e6bda87c8`  
-		Last Modified: Mon, 01 Aug 2016 17:52:41 GMT  
-		Size: 3.7 MB (3735515 bytes)
-	-	`sha256:9776e0b14ee38a4cfae7cd26f535a930364d51109bb650207740149fa1231f34`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 332.0 B
-	-	`sha256:aa6b3cbfda6f6a29648f5005f3b7bfc21667fd996ba72aaed09a7ae2c115ed3e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 294.0 B
-	-	`sha256:a0926b406f89277c8e7613682f4cb82051e12ab866b373a8c76d7f43df6a0f60`  
-		Last Modified: Mon, 01 Aug 2016 17:52:38 GMT  
-		Size: 1.3 MB (1329874 bytes)
-	-	`sha256:5972ea9f138a83246070b57033d6bb68efe9e14111377cfbf4a1e70dc308317e`  
-		Last Modified: Mon, 01 Aug 2016 18:09:51 GMT  
-		Size: 30.3 MB (30321727 bytes)
-	-	`sha256:cfbf66c7aba0f29c9f8d2900011dfa4fba98da3bc78999df6f86074393ff9732`  
-		Last Modified: Mon, 01 Aug 2016 18:09:43 GMT  
-		Size: 244.0 B
+	-	`sha256:68fab1fd02dce6a758d7907eaf173747d5504e714bc9dcf77bc0086bb8f98420`  
+		Last Modified: Wed, 10 Aug 2016 21:38:00 GMT  
+		Size: 12.4 MB (12399124 bytes)
+	-	`sha256:d63c862a4e8a8fe6642f7954b97624cd307b5b913f999697835d9dede0674595`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 492.0 B
+	-	`sha256:a1f41798510b1dfa029f4cd846d723cca3566637cceedc3aba17cf117605e4fe`  
+		Last Modified: Wed, 10 Aug 2016 21:38:07 GMT  
+		Size: 16.4 MB (16385973 bytes)
+	-	`sha256:a1cb79de526642a0956598b60e75c5c3d73693e4a6e41aa4666c3377d84fdb07`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 1.8 KB (1835 bytes)
+	-	`sha256:0ad59c7db086709fbfe994d1ed28d4818952b4981147090c9dd27c00c1665f13`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 583.0 B
+	-	`sha256:b486b4dba63edbb3698efdc9d49c726ee9485f492208b1c58243546e551b401e`  
+		Last Modified: Thu, 11 Aug 2016 19:46:10 GMT  
+		Size: 34.3 MB (34332251 bytes)
+	-	`sha256:7cd3a3ec048bc1083af9b206381543bba7ba4e95ef59231092a744c329062c81`  
+		Last Modified: Thu, 11 Aug 2016 19:45:59 GMT  
+		Size: 3.7 MB (3735503 bytes)
+	-	`sha256:50258fe8ebeff9f923454ee2d5462f93bce2af2119205c94bcf5afc0f6300b4f`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 334.0 B
+	-	`sha256:e7300e935dc63b74a3ae9d06b2444580b01ddbb4164ba81ff4ed9e2ef5a17c32`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 296.0 B
+	-	`sha256:e46394307f8ef729f5c0bc9b8d750811bbbc5e38d3e94536eea1be3dd4e88c44`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 1.3 MB (1329855 bytes)
+	-	`sha256:f0b0e3cbd6bf13d9490d6f52a315997926d98124725ed3e967f06e49bfa795ec`  
+		Last Modified: Thu, 11 Aug 2016 19:59:13 GMT  
+		Size: 30.3 MB (30321735 bytes)
+	-	`sha256:d9d0adcc47a4e37e568c742c09a304b3629c8261aaa9070b11b21b1fca1728eb`  
+		Last Modified: Thu, 11 Aug 2016 19:59:06 GMT  
+		Size: 246.0 B
 
 ## `owncloud:8.2-apache`
 
 ```console
-$ docker pull owncloud@sha256:d2335fec3ed5acdaf102927297e7b726536b30a20af54941f5dcc1628a0568d4
+$ docker pull owncloud@sha256:becfd58ee11bf599a2e1888fc31b08b09dae4d860b5de4a813e0cae05e130bb9
 ```
 
 -	Platforms:
@@ -1997,9 +1997,9 @@ $ docker pull owncloud@sha256:d2335fec3ed5acdaf102927297e7b726536b30a20af54941f5
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **229.7 MB (229704958 bytes)**  
+-	Total Size: **230.3 MB (230303269 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38955a46b298ab15c62a4bf9b284c83bcbc5551cbfb905064ade7638d8bb87f9`
+-	Image ID: `sha256:76e11704034adec81c3788b9d1dea8416dc0e4a0d8d1afcbd352d0a0fac5bc36`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -2022,63 +2022,63 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 ENV APACHE_CONFDIR=/etc/apache2
 # Fri, 29 Jul 2016 20:49:44 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 29 Jul 2016 20:49:45 GMT
-RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
-# Fri, 29 Jul 2016 20:49:46 GMT
+# Wed, 10 Aug 2016 19:34:50 GMT
+RUN set -ex 		&& sed -r 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS" 		&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
+# Wed, 10 Aug 2016 19:34:51 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Fri, 29 Jul 2016 20:49:48 GMT
+# Wed, 10 Aug 2016 19:34:53 GMT
 RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Fri, 29 Jul 2016 20:49:50 GMT
+# Wed, 10 Aug 2016 19:34:55 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV PHP_VERSION=5.6.24
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_FILENAME=php-5.6.24.tar.xz
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:34:30 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:34:31 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:48 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:39:49 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:49 GMT
+# Wed, 10 Aug 2016 20:18:08 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:18:09 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:23:14 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:14 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 EXPOSE 80/tcp
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:16 GMT
 CMD ["apache2-foreground"]
-# Mon, 01 Aug 2016 17:47:44 GMT
+# Thu, 11 Aug 2016 19:40:17 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:51:21 GMT
+# Thu, 11 Aug 2016 19:44:21 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:51:23 GMT
+# Thu, 11 Aug 2016 19:44:23 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:51:25 GMT
+# Thu, 11 Aug 2016 19:44:25 GMT
 RUN a2enmod rewrite
-# Mon, 01 Aug 2016 17:52:06 GMT
+# Thu, 11 Aug 2016 19:45:12 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 18:09:13 GMT
+# Thu, 11 Aug 2016 19:58:30 GMT
 ENV OWNCLOUD_VERSION=8.2.7
-# Mon, 01 Aug 2016 18:09:14 GMT
+# Thu, 11 Aug 2016 19:58:31 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 18:09:30 GMT
+# Thu, 11 Aug 2016 19:58:51 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 18:09:32 GMT
+# Thu, 11 Aug 2016 19:58:53 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 18:09:33 GMT
+# Thu, 11 Aug 2016 19:58:54 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:09:34 GMT
+# Thu, 11 Aug 2016 19:58:55 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -2095,59 +2095,59 @@ CMD ["apache2-foreground"]
 	-	`sha256:b4ae91aad5222bbe7ca67b9c2b69e54fd29989bea1eec3d8a9aca56b011c303c`  
 		Last Modified: Fri, 29 Jul 2016 22:49:17 GMT  
 		Size: 2.8 MB (2846544 bytes)
-	-	`sha256:c0c9ad6136b5e7b142c48c7167eede3d15af54c538f7f3177c50693006cca242`  
-		Last Modified: Fri, 29 Jul 2016 22:49:15 GMT  
-		Size: 276.0 B
-	-	`sha256:b4b0c030555d4340cfe8288272d2bcb291c2f483f1957f1341cfaaea369dc109`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 431.0 B
-	-	`sha256:6e898edbabd79f8b8eaf7351077eff9966a11459347f335757f5341a0a889c16`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 222.0 B
-	-	`sha256:e4b8d84dea782a5effd404eec31320063107e0bb56fccaffae77c4430c8082a3`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
+	-	`sha256:66e1c1a53c958663cb6a8d19f5993b36bfaf8e334d476c5ed30d6766c8db1f9a`  
+		Last Modified: Wed, 10 Aug 2016 21:31:30 GMT  
+		Size: 270.0 B
+	-	`sha256:5d1f306a891255c05b40e49a8d1dd76efb713792e0aa200386ab0e269faa49dc`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 432.0 B
+	-	`sha256:37733078a51e3cf33ba985f69be1dda278d529bb87184a83c71037cade3170b4`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 223.0 B
+	-	`sha256:c5351b4d6bee8cc2fc09f2af750fa4627dfdd37b44b651f3f3289260783d3b38`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
 		Size: 475.0 B
-	-	`sha256:8e151ffc26f09785dd3e1b511b6cc5b32744241932c5ac3a909b032906167e2f`  
-		Last Modified: Fri, 29 Jul 2016 22:54:53 GMT  
-		Size: 12.4 MB (12399117 bytes)
-	-	`sha256:a51015ce0d7e5186d93e7c1f1de1710edce96d5dc45da09f1f1fd33e347b3f44`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 601.0 B
-	-	`sha256:1d1d7ce85493184d89b2695b6139c410038091d8c18ec819ace83d50bcbf4af8`  
-		Last Modified: Fri, 29 Jul 2016 22:54:57 GMT  
-		Size: 15.8 MB (15789648 bytes)
-	-	`sha256:1394b74e0f9d9bd5c6f6a2fd4058edd52deac35dbfaa36668aa49328db286a57`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:35f1f99fe906e63a6fe525a33188e64c2f84d2e332e51327bfd262027c598444`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 579.0 B
-	-	`sha256:181cf82fa46ce61260137919ef7f51982e0495697a3d7deb5040f7064698b96e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:50 GMT  
-		Size: 34.3 MB (34330228 bytes)
-	-	`sha256:dfeef7c75ef90a85c96834f4d5bfa43b8d6b5e4b8ce75ddcf9b3272e6bda87c8`  
-		Last Modified: Mon, 01 Aug 2016 17:52:41 GMT  
-		Size: 3.7 MB (3735515 bytes)
-	-	`sha256:9776e0b14ee38a4cfae7cd26f535a930364d51109bb650207740149fa1231f34`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 332.0 B
-	-	`sha256:aa6b3cbfda6f6a29648f5005f3b7bfc21667fd996ba72aaed09a7ae2c115ed3e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 294.0 B
-	-	`sha256:a0926b406f89277c8e7613682f4cb82051e12ab866b373a8c76d7f43df6a0f60`  
-		Last Modified: Mon, 01 Aug 2016 17:52:38 GMT  
-		Size: 1.3 MB (1329874 bytes)
-	-	`sha256:5972ea9f138a83246070b57033d6bb68efe9e14111377cfbf4a1e70dc308317e`  
-		Last Modified: Mon, 01 Aug 2016 18:09:51 GMT  
-		Size: 30.3 MB (30321727 bytes)
-	-	`sha256:cfbf66c7aba0f29c9f8d2900011dfa4fba98da3bc78999df6f86074393ff9732`  
-		Last Modified: Mon, 01 Aug 2016 18:09:43 GMT  
-		Size: 244.0 B
+	-	`sha256:68fab1fd02dce6a758d7907eaf173747d5504e714bc9dcf77bc0086bb8f98420`  
+		Last Modified: Wed, 10 Aug 2016 21:38:00 GMT  
+		Size: 12.4 MB (12399124 bytes)
+	-	`sha256:d63c862a4e8a8fe6642f7954b97624cd307b5b913f999697835d9dede0674595`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 492.0 B
+	-	`sha256:a1f41798510b1dfa029f4cd846d723cca3566637cceedc3aba17cf117605e4fe`  
+		Last Modified: Wed, 10 Aug 2016 21:38:07 GMT  
+		Size: 16.4 MB (16385973 bytes)
+	-	`sha256:a1cb79de526642a0956598b60e75c5c3d73693e4a6e41aa4666c3377d84fdb07`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 1.8 KB (1835 bytes)
+	-	`sha256:0ad59c7db086709fbfe994d1ed28d4818952b4981147090c9dd27c00c1665f13`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 583.0 B
+	-	`sha256:b486b4dba63edbb3698efdc9d49c726ee9485f492208b1c58243546e551b401e`  
+		Last Modified: Thu, 11 Aug 2016 19:46:10 GMT  
+		Size: 34.3 MB (34332251 bytes)
+	-	`sha256:7cd3a3ec048bc1083af9b206381543bba7ba4e95ef59231092a744c329062c81`  
+		Last Modified: Thu, 11 Aug 2016 19:45:59 GMT  
+		Size: 3.7 MB (3735503 bytes)
+	-	`sha256:50258fe8ebeff9f923454ee2d5462f93bce2af2119205c94bcf5afc0f6300b4f`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 334.0 B
+	-	`sha256:e7300e935dc63b74a3ae9d06b2444580b01ddbb4164ba81ff4ed9e2ef5a17c32`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 296.0 B
+	-	`sha256:e46394307f8ef729f5c0bc9b8d750811bbbc5e38d3e94536eea1be3dd4e88c44`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 1.3 MB (1329855 bytes)
+	-	`sha256:f0b0e3cbd6bf13d9490d6f52a315997926d98124725ed3e967f06e49bfa795ec`  
+		Last Modified: Thu, 11 Aug 2016 19:59:13 GMT  
+		Size: 30.3 MB (30321735 bytes)
+	-	`sha256:d9d0adcc47a4e37e568c742c09a304b3629c8261aaa9070b11b21b1fca1728eb`  
+		Last Modified: Thu, 11 Aug 2016 19:59:06 GMT  
+		Size: 246.0 B
 
 ## `owncloud:8-apache`
 
 ```console
-$ docker pull owncloud@sha256:d2335fec3ed5acdaf102927297e7b726536b30a20af54941f5dcc1628a0568d4
+$ docker pull owncloud@sha256:becfd58ee11bf599a2e1888fc31b08b09dae4d860b5de4a813e0cae05e130bb9
 ```
 
 -	Platforms:
@@ -2157,9 +2157,9 @@ $ docker pull owncloud@sha256:d2335fec3ed5acdaf102927297e7b726536b30a20af54941f5
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **229.7 MB (229704958 bytes)**  
+-	Total Size: **230.3 MB (230303269 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38955a46b298ab15c62a4bf9b284c83bcbc5551cbfb905064ade7638d8bb87f9`
+-	Image ID: `sha256:76e11704034adec81c3788b9d1dea8416dc0e4a0d8d1afcbd352d0a0fac5bc36`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -2182,63 +2182,63 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 ENV APACHE_CONFDIR=/etc/apache2
 # Fri, 29 Jul 2016 20:49:44 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 29 Jul 2016 20:49:45 GMT
-RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
-# Fri, 29 Jul 2016 20:49:46 GMT
+# Wed, 10 Aug 2016 19:34:50 GMT
+RUN set -ex 		&& sed -r 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS" 		&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
+# Wed, 10 Aug 2016 19:34:51 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Fri, 29 Jul 2016 20:49:48 GMT
+# Wed, 10 Aug 2016 19:34:53 GMT
 RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Fri, 29 Jul 2016 20:49:50 GMT
+# Wed, 10 Aug 2016 19:34:55 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV PHP_VERSION=5.6.24
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_FILENAME=php-5.6.24.tar.xz
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:34:30 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:34:31 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:48 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:39:49 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:49 GMT
+# Wed, 10 Aug 2016 20:18:08 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:18:09 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:23:14 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:14 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 EXPOSE 80/tcp
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:16 GMT
 CMD ["apache2-foreground"]
-# Mon, 01 Aug 2016 17:47:44 GMT
+# Thu, 11 Aug 2016 19:40:17 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:51:21 GMT
+# Thu, 11 Aug 2016 19:44:21 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:51:23 GMT
+# Thu, 11 Aug 2016 19:44:23 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:51:25 GMT
+# Thu, 11 Aug 2016 19:44:25 GMT
 RUN a2enmod rewrite
-# Mon, 01 Aug 2016 17:52:06 GMT
+# Thu, 11 Aug 2016 19:45:12 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 18:09:13 GMT
+# Thu, 11 Aug 2016 19:58:30 GMT
 ENV OWNCLOUD_VERSION=8.2.7
-# Mon, 01 Aug 2016 18:09:14 GMT
+# Thu, 11 Aug 2016 19:58:31 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 18:09:30 GMT
+# Thu, 11 Aug 2016 19:58:51 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 18:09:32 GMT
+# Thu, 11 Aug 2016 19:58:53 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 18:09:33 GMT
+# Thu, 11 Aug 2016 19:58:54 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:09:34 GMT
+# Thu, 11 Aug 2016 19:58:55 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -2255,59 +2255,59 @@ CMD ["apache2-foreground"]
 	-	`sha256:b4ae91aad5222bbe7ca67b9c2b69e54fd29989bea1eec3d8a9aca56b011c303c`  
 		Last Modified: Fri, 29 Jul 2016 22:49:17 GMT  
 		Size: 2.8 MB (2846544 bytes)
-	-	`sha256:c0c9ad6136b5e7b142c48c7167eede3d15af54c538f7f3177c50693006cca242`  
-		Last Modified: Fri, 29 Jul 2016 22:49:15 GMT  
-		Size: 276.0 B
-	-	`sha256:b4b0c030555d4340cfe8288272d2bcb291c2f483f1957f1341cfaaea369dc109`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 431.0 B
-	-	`sha256:6e898edbabd79f8b8eaf7351077eff9966a11459347f335757f5341a0a889c16`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 222.0 B
-	-	`sha256:e4b8d84dea782a5effd404eec31320063107e0bb56fccaffae77c4430c8082a3`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
+	-	`sha256:66e1c1a53c958663cb6a8d19f5993b36bfaf8e334d476c5ed30d6766c8db1f9a`  
+		Last Modified: Wed, 10 Aug 2016 21:31:30 GMT  
+		Size: 270.0 B
+	-	`sha256:5d1f306a891255c05b40e49a8d1dd76efb713792e0aa200386ab0e269faa49dc`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 432.0 B
+	-	`sha256:37733078a51e3cf33ba985f69be1dda278d529bb87184a83c71037cade3170b4`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 223.0 B
+	-	`sha256:c5351b4d6bee8cc2fc09f2af750fa4627dfdd37b44b651f3f3289260783d3b38`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
 		Size: 475.0 B
-	-	`sha256:8e151ffc26f09785dd3e1b511b6cc5b32744241932c5ac3a909b032906167e2f`  
-		Last Modified: Fri, 29 Jul 2016 22:54:53 GMT  
-		Size: 12.4 MB (12399117 bytes)
-	-	`sha256:a51015ce0d7e5186d93e7c1f1de1710edce96d5dc45da09f1f1fd33e347b3f44`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 601.0 B
-	-	`sha256:1d1d7ce85493184d89b2695b6139c410038091d8c18ec819ace83d50bcbf4af8`  
-		Last Modified: Fri, 29 Jul 2016 22:54:57 GMT  
-		Size: 15.8 MB (15789648 bytes)
-	-	`sha256:1394b74e0f9d9bd5c6f6a2fd4058edd52deac35dbfaa36668aa49328db286a57`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:35f1f99fe906e63a6fe525a33188e64c2f84d2e332e51327bfd262027c598444`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 579.0 B
-	-	`sha256:181cf82fa46ce61260137919ef7f51982e0495697a3d7deb5040f7064698b96e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:50 GMT  
-		Size: 34.3 MB (34330228 bytes)
-	-	`sha256:dfeef7c75ef90a85c96834f4d5bfa43b8d6b5e4b8ce75ddcf9b3272e6bda87c8`  
-		Last Modified: Mon, 01 Aug 2016 17:52:41 GMT  
-		Size: 3.7 MB (3735515 bytes)
-	-	`sha256:9776e0b14ee38a4cfae7cd26f535a930364d51109bb650207740149fa1231f34`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 332.0 B
-	-	`sha256:aa6b3cbfda6f6a29648f5005f3b7bfc21667fd996ba72aaed09a7ae2c115ed3e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 294.0 B
-	-	`sha256:a0926b406f89277c8e7613682f4cb82051e12ab866b373a8c76d7f43df6a0f60`  
-		Last Modified: Mon, 01 Aug 2016 17:52:38 GMT  
-		Size: 1.3 MB (1329874 bytes)
-	-	`sha256:5972ea9f138a83246070b57033d6bb68efe9e14111377cfbf4a1e70dc308317e`  
-		Last Modified: Mon, 01 Aug 2016 18:09:51 GMT  
-		Size: 30.3 MB (30321727 bytes)
-	-	`sha256:cfbf66c7aba0f29c9f8d2900011dfa4fba98da3bc78999df6f86074393ff9732`  
-		Last Modified: Mon, 01 Aug 2016 18:09:43 GMT  
-		Size: 244.0 B
+	-	`sha256:68fab1fd02dce6a758d7907eaf173747d5504e714bc9dcf77bc0086bb8f98420`  
+		Last Modified: Wed, 10 Aug 2016 21:38:00 GMT  
+		Size: 12.4 MB (12399124 bytes)
+	-	`sha256:d63c862a4e8a8fe6642f7954b97624cd307b5b913f999697835d9dede0674595`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 492.0 B
+	-	`sha256:a1f41798510b1dfa029f4cd846d723cca3566637cceedc3aba17cf117605e4fe`  
+		Last Modified: Wed, 10 Aug 2016 21:38:07 GMT  
+		Size: 16.4 MB (16385973 bytes)
+	-	`sha256:a1cb79de526642a0956598b60e75c5c3d73693e4a6e41aa4666c3377d84fdb07`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 1.8 KB (1835 bytes)
+	-	`sha256:0ad59c7db086709fbfe994d1ed28d4818952b4981147090c9dd27c00c1665f13`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 583.0 B
+	-	`sha256:b486b4dba63edbb3698efdc9d49c726ee9485f492208b1c58243546e551b401e`  
+		Last Modified: Thu, 11 Aug 2016 19:46:10 GMT  
+		Size: 34.3 MB (34332251 bytes)
+	-	`sha256:7cd3a3ec048bc1083af9b206381543bba7ba4e95ef59231092a744c329062c81`  
+		Last Modified: Thu, 11 Aug 2016 19:45:59 GMT  
+		Size: 3.7 MB (3735503 bytes)
+	-	`sha256:50258fe8ebeff9f923454ee2d5462f93bce2af2119205c94bcf5afc0f6300b4f`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 334.0 B
+	-	`sha256:e7300e935dc63b74a3ae9d06b2444580b01ddbb4164ba81ff4ed9e2ef5a17c32`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 296.0 B
+	-	`sha256:e46394307f8ef729f5c0bc9b8d750811bbbc5e38d3e94536eea1be3dd4e88c44`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 1.3 MB (1329855 bytes)
+	-	`sha256:f0b0e3cbd6bf13d9490d6f52a315997926d98124725ed3e967f06e49bfa795ec`  
+		Last Modified: Thu, 11 Aug 2016 19:59:13 GMT  
+		Size: 30.3 MB (30321735 bytes)
+	-	`sha256:d9d0adcc47a4e37e568c742c09a304b3629c8261aaa9070b11b21b1fca1728eb`  
+		Last Modified: Thu, 11 Aug 2016 19:59:06 GMT  
+		Size: 246.0 B
 
 ## `owncloud:8.2.7`
 
 ```console
-$ docker pull owncloud@sha256:d2335fec3ed5acdaf102927297e7b726536b30a20af54941f5dcc1628a0568d4
+$ docker pull owncloud@sha256:becfd58ee11bf599a2e1888fc31b08b09dae4d860b5de4a813e0cae05e130bb9
 ```
 
 -	Platforms:
@@ -2317,9 +2317,9 @@ $ docker pull owncloud@sha256:d2335fec3ed5acdaf102927297e7b726536b30a20af54941f5
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **229.7 MB (229704958 bytes)**  
+-	Total Size: **230.3 MB (230303269 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38955a46b298ab15c62a4bf9b284c83bcbc5551cbfb905064ade7638d8bb87f9`
+-	Image ID: `sha256:76e11704034adec81c3788b9d1dea8416dc0e4a0d8d1afcbd352d0a0fac5bc36`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -2342,63 +2342,63 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 ENV APACHE_CONFDIR=/etc/apache2
 # Fri, 29 Jul 2016 20:49:44 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 29 Jul 2016 20:49:45 GMT
-RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
-# Fri, 29 Jul 2016 20:49:46 GMT
+# Wed, 10 Aug 2016 19:34:50 GMT
+RUN set -ex 		&& sed -r 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS" 		&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
+# Wed, 10 Aug 2016 19:34:51 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Fri, 29 Jul 2016 20:49:48 GMT
+# Wed, 10 Aug 2016 19:34:53 GMT
 RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Fri, 29 Jul 2016 20:49:50 GMT
+# Wed, 10 Aug 2016 19:34:55 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV PHP_VERSION=5.6.24
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_FILENAME=php-5.6.24.tar.xz
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:34:30 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:34:31 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:48 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:39:49 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:49 GMT
+# Wed, 10 Aug 2016 20:18:08 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:18:09 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:23:14 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:14 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 EXPOSE 80/tcp
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:16 GMT
 CMD ["apache2-foreground"]
-# Mon, 01 Aug 2016 17:47:44 GMT
+# Thu, 11 Aug 2016 19:40:17 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:51:21 GMT
+# Thu, 11 Aug 2016 19:44:21 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:51:23 GMT
+# Thu, 11 Aug 2016 19:44:23 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:51:25 GMT
+# Thu, 11 Aug 2016 19:44:25 GMT
 RUN a2enmod rewrite
-# Mon, 01 Aug 2016 17:52:06 GMT
+# Thu, 11 Aug 2016 19:45:12 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 18:09:13 GMT
+# Thu, 11 Aug 2016 19:58:30 GMT
 ENV OWNCLOUD_VERSION=8.2.7
-# Mon, 01 Aug 2016 18:09:14 GMT
+# Thu, 11 Aug 2016 19:58:31 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 18:09:30 GMT
+# Thu, 11 Aug 2016 19:58:51 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 18:09:32 GMT
+# Thu, 11 Aug 2016 19:58:53 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 18:09:33 GMT
+# Thu, 11 Aug 2016 19:58:54 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:09:34 GMT
+# Thu, 11 Aug 2016 19:58:55 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -2415,59 +2415,59 @@ CMD ["apache2-foreground"]
 	-	`sha256:b4ae91aad5222bbe7ca67b9c2b69e54fd29989bea1eec3d8a9aca56b011c303c`  
 		Last Modified: Fri, 29 Jul 2016 22:49:17 GMT  
 		Size: 2.8 MB (2846544 bytes)
-	-	`sha256:c0c9ad6136b5e7b142c48c7167eede3d15af54c538f7f3177c50693006cca242`  
-		Last Modified: Fri, 29 Jul 2016 22:49:15 GMT  
-		Size: 276.0 B
-	-	`sha256:b4b0c030555d4340cfe8288272d2bcb291c2f483f1957f1341cfaaea369dc109`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 431.0 B
-	-	`sha256:6e898edbabd79f8b8eaf7351077eff9966a11459347f335757f5341a0a889c16`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 222.0 B
-	-	`sha256:e4b8d84dea782a5effd404eec31320063107e0bb56fccaffae77c4430c8082a3`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
+	-	`sha256:66e1c1a53c958663cb6a8d19f5993b36bfaf8e334d476c5ed30d6766c8db1f9a`  
+		Last Modified: Wed, 10 Aug 2016 21:31:30 GMT  
+		Size: 270.0 B
+	-	`sha256:5d1f306a891255c05b40e49a8d1dd76efb713792e0aa200386ab0e269faa49dc`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 432.0 B
+	-	`sha256:37733078a51e3cf33ba985f69be1dda278d529bb87184a83c71037cade3170b4`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 223.0 B
+	-	`sha256:c5351b4d6bee8cc2fc09f2af750fa4627dfdd37b44b651f3f3289260783d3b38`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
 		Size: 475.0 B
-	-	`sha256:8e151ffc26f09785dd3e1b511b6cc5b32744241932c5ac3a909b032906167e2f`  
-		Last Modified: Fri, 29 Jul 2016 22:54:53 GMT  
-		Size: 12.4 MB (12399117 bytes)
-	-	`sha256:a51015ce0d7e5186d93e7c1f1de1710edce96d5dc45da09f1f1fd33e347b3f44`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 601.0 B
-	-	`sha256:1d1d7ce85493184d89b2695b6139c410038091d8c18ec819ace83d50bcbf4af8`  
-		Last Modified: Fri, 29 Jul 2016 22:54:57 GMT  
-		Size: 15.8 MB (15789648 bytes)
-	-	`sha256:1394b74e0f9d9bd5c6f6a2fd4058edd52deac35dbfaa36668aa49328db286a57`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:35f1f99fe906e63a6fe525a33188e64c2f84d2e332e51327bfd262027c598444`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 579.0 B
-	-	`sha256:181cf82fa46ce61260137919ef7f51982e0495697a3d7deb5040f7064698b96e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:50 GMT  
-		Size: 34.3 MB (34330228 bytes)
-	-	`sha256:dfeef7c75ef90a85c96834f4d5bfa43b8d6b5e4b8ce75ddcf9b3272e6bda87c8`  
-		Last Modified: Mon, 01 Aug 2016 17:52:41 GMT  
-		Size: 3.7 MB (3735515 bytes)
-	-	`sha256:9776e0b14ee38a4cfae7cd26f535a930364d51109bb650207740149fa1231f34`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 332.0 B
-	-	`sha256:aa6b3cbfda6f6a29648f5005f3b7bfc21667fd996ba72aaed09a7ae2c115ed3e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 294.0 B
-	-	`sha256:a0926b406f89277c8e7613682f4cb82051e12ab866b373a8c76d7f43df6a0f60`  
-		Last Modified: Mon, 01 Aug 2016 17:52:38 GMT  
-		Size: 1.3 MB (1329874 bytes)
-	-	`sha256:5972ea9f138a83246070b57033d6bb68efe9e14111377cfbf4a1e70dc308317e`  
-		Last Modified: Mon, 01 Aug 2016 18:09:51 GMT  
-		Size: 30.3 MB (30321727 bytes)
-	-	`sha256:cfbf66c7aba0f29c9f8d2900011dfa4fba98da3bc78999df6f86074393ff9732`  
-		Last Modified: Mon, 01 Aug 2016 18:09:43 GMT  
-		Size: 244.0 B
+	-	`sha256:68fab1fd02dce6a758d7907eaf173747d5504e714bc9dcf77bc0086bb8f98420`  
+		Last Modified: Wed, 10 Aug 2016 21:38:00 GMT  
+		Size: 12.4 MB (12399124 bytes)
+	-	`sha256:d63c862a4e8a8fe6642f7954b97624cd307b5b913f999697835d9dede0674595`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 492.0 B
+	-	`sha256:a1f41798510b1dfa029f4cd846d723cca3566637cceedc3aba17cf117605e4fe`  
+		Last Modified: Wed, 10 Aug 2016 21:38:07 GMT  
+		Size: 16.4 MB (16385973 bytes)
+	-	`sha256:a1cb79de526642a0956598b60e75c5c3d73693e4a6e41aa4666c3377d84fdb07`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 1.8 KB (1835 bytes)
+	-	`sha256:0ad59c7db086709fbfe994d1ed28d4818952b4981147090c9dd27c00c1665f13`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 583.0 B
+	-	`sha256:b486b4dba63edbb3698efdc9d49c726ee9485f492208b1c58243546e551b401e`  
+		Last Modified: Thu, 11 Aug 2016 19:46:10 GMT  
+		Size: 34.3 MB (34332251 bytes)
+	-	`sha256:7cd3a3ec048bc1083af9b206381543bba7ba4e95ef59231092a744c329062c81`  
+		Last Modified: Thu, 11 Aug 2016 19:45:59 GMT  
+		Size: 3.7 MB (3735503 bytes)
+	-	`sha256:50258fe8ebeff9f923454ee2d5462f93bce2af2119205c94bcf5afc0f6300b4f`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 334.0 B
+	-	`sha256:e7300e935dc63b74a3ae9d06b2444580b01ddbb4164ba81ff4ed9e2ef5a17c32`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 296.0 B
+	-	`sha256:e46394307f8ef729f5c0bc9b8d750811bbbc5e38d3e94536eea1be3dd4e88c44`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 1.3 MB (1329855 bytes)
+	-	`sha256:f0b0e3cbd6bf13d9490d6f52a315997926d98124725ed3e967f06e49bfa795ec`  
+		Last Modified: Thu, 11 Aug 2016 19:59:13 GMT  
+		Size: 30.3 MB (30321735 bytes)
+	-	`sha256:d9d0adcc47a4e37e568c742c09a304b3629c8261aaa9070b11b21b1fca1728eb`  
+		Last Modified: Thu, 11 Aug 2016 19:59:06 GMT  
+		Size: 246.0 B
 
 ## `owncloud:8.2`
 
 ```console
-$ docker pull owncloud@sha256:d2335fec3ed5acdaf102927297e7b726536b30a20af54941f5dcc1628a0568d4
+$ docker pull owncloud@sha256:becfd58ee11bf599a2e1888fc31b08b09dae4d860b5de4a813e0cae05e130bb9
 ```
 
 -	Platforms:
@@ -2477,9 +2477,9 @@ $ docker pull owncloud@sha256:d2335fec3ed5acdaf102927297e7b726536b30a20af54941f5
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **229.7 MB (229704958 bytes)**  
+-	Total Size: **230.3 MB (230303269 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38955a46b298ab15c62a4bf9b284c83bcbc5551cbfb905064ade7638d8bb87f9`
+-	Image ID: `sha256:76e11704034adec81c3788b9d1dea8416dc0e4a0d8d1afcbd352d0a0fac5bc36`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -2502,63 +2502,63 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 ENV APACHE_CONFDIR=/etc/apache2
 # Fri, 29 Jul 2016 20:49:44 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 29 Jul 2016 20:49:45 GMT
-RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
-# Fri, 29 Jul 2016 20:49:46 GMT
+# Wed, 10 Aug 2016 19:34:50 GMT
+RUN set -ex 		&& sed -r 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS" 		&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
+# Wed, 10 Aug 2016 19:34:51 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Fri, 29 Jul 2016 20:49:48 GMT
+# Wed, 10 Aug 2016 19:34:53 GMT
 RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Fri, 29 Jul 2016 20:49:50 GMT
+# Wed, 10 Aug 2016 19:34:55 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV PHP_VERSION=5.6.24
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_FILENAME=php-5.6.24.tar.xz
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:34:30 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:34:31 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:48 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:39:49 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:49 GMT
+# Wed, 10 Aug 2016 20:18:08 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:18:09 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:23:14 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:14 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 EXPOSE 80/tcp
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:16 GMT
 CMD ["apache2-foreground"]
-# Mon, 01 Aug 2016 17:47:44 GMT
+# Thu, 11 Aug 2016 19:40:17 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:51:21 GMT
+# Thu, 11 Aug 2016 19:44:21 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:51:23 GMT
+# Thu, 11 Aug 2016 19:44:23 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:51:25 GMT
+# Thu, 11 Aug 2016 19:44:25 GMT
 RUN a2enmod rewrite
-# Mon, 01 Aug 2016 17:52:06 GMT
+# Thu, 11 Aug 2016 19:45:12 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 18:09:13 GMT
+# Thu, 11 Aug 2016 19:58:30 GMT
 ENV OWNCLOUD_VERSION=8.2.7
-# Mon, 01 Aug 2016 18:09:14 GMT
+# Thu, 11 Aug 2016 19:58:31 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 18:09:30 GMT
+# Thu, 11 Aug 2016 19:58:51 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 18:09:32 GMT
+# Thu, 11 Aug 2016 19:58:53 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 18:09:33 GMT
+# Thu, 11 Aug 2016 19:58:54 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:09:34 GMT
+# Thu, 11 Aug 2016 19:58:55 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -2575,59 +2575,59 @@ CMD ["apache2-foreground"]
 	-	`sha256:b4ae91aad5222bbe7ca67b9c2b69e54fd29989bea1eec3d8a9aca56b011c303c`  
 		Last Modified: Fri, 29 Jul 2016 22:49:17 GMT  
 		Size: 2.8 MB (2846544 bytes)
-	-	`sha256:c0c9ad6136b5e7b142c48c7167eede3d15af54c538f7f3177c50693006cca242`  
-		Last Modified: Fri, 29 Jul 2016 22:49:15 GMT  
-		Size: 276.0 B
-	-	`sha256:b4b0c030555d4340cfe8288272d2bcb291c2f483f1957f1341cfaaea369dc109`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 431.0 B
-	-	`sha256:6e898edbabd79f8b8eaf7351077eff9966a11459347f335757f5341a0a889c16`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 222.0 B
-	-	`sha256:e4b8d84dea782a5effd404eec31320063107e0bb56fccaffae77c4430c8082a3`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
+	-	`sha256:66e1c1a53c958663cb6a8d19f5993b36bfaf8e334d476c5ed30d6766c8db1f9a`  
+		Last Modified: Wed, 10 Aug 2016 21:31:30 GMT  
+		Size: 270.0 B
+	-	`sha256:5d1f306a891255c05b40e49a8d1dd76efb713792e0aa200386ab0e269faa49dc`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 432.0 B
+	-	`sha256:37733078a51e3cf33ba985f69be1dda278d529bb87184a83c71037cade3170b4`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 223.0 B
+	-	`sha256:c5351b4d6bee8cc2fc09f2af750fa4627dfdd37b44b651f3f3289260783d3b38`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
 		Size: 475.0 B
-	-	`sha256:8e151ffc26f09785dd3e1b511b6cc5b32744241932c5ac3a909b032906167e2f`  
-		Last Modified: Fri, 29 Jul 2016 22:54:53 GMT  
-		Size: 12.4 MB (12399117 bytes)
-	-	`sha256:a51015ce0d7e5186d93e7c1f1de1710edce96d5dc45da09f1f1fd33e347b3f44`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 601.0 B
-	-	`sha256:1d1d7ce85493184d89b2695b6139c410038091d8c18ec819ace83d50bcbf4af8`  
-		Last Modified: Fri, 29 Jul 2016 22:54:57 GMT  
-		Size: 15.8 MB (15789648 bytes)
-	-	`sha256:1394b74e0f9d9bd5c6f6a2fd4058edd52deac35dbfaa36668aa49328db286a57`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:35f1f99fe906e63a6fe525a33188e64c2f84d2e332e51327bfd262027c598444`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 579.0 B
-	-	`sha256:181cf82fa46ce61260137919ef7f51982e0495697a3d7deb5040f7064698b96e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:50 GMT  
-		Size: 34.3 MB (34330228 bytes)
-	-	`sha256:dfeef7c75ef90a85c96834f4d5bfa43b8d6b5e4b8ce75ddcf9b3272e6bda87c8`  
-		Last Modified: Mon, 01 Aug 2016 17:52:41 GMT  
-		Size: 3.7 MB (3735515 bytes)
-	-	`sha256:9776e0b14ee38a4cfae7cd26f535a930364d51109bb650207740149fa1231f34`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 332.0 B
-	-	`sha256:aa6b3cbfda6f6a29648f5005f3b7bfc21667fd996ba72aaed09a7ae2c115ed3e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 294.0 B
-	-	`sha256:a0926b406f89277c8e7613682f4cb82051e12ab866b373a8c76d7f43df6a0f60`  
-		Last Modified: Mon, 01 Aug 2016 17:52:38 GMT  
-		Size: 1.3 MB (1329874 bytes)
-	-	`sha256:5972ea9f138a83246070b57033d6bb68efe9e14111377cfbf4a1e70dc308317e`  
-		Last Modified: Mon, 01 Aug 2016 18:09:51 GMT  
-		Size: 30.3 MB (30321727 bytes)
-	-	`sha256:cfbf66c7aba0f29c9f8d2900011dfa4fba98da3bc78999df6f86074393ff9732`  
-		Last Modified: Mon, 01 Aug 2016 18:09:43 GMT  
-		Size: 244.0 B
+	-	`sha256:68fab1fd02dce6a758d7907eaf173747d5504e714bc9dcf77bc0086bb8f98420`  
+		Last Modified: Wed, 10 Aug 2016 21:38:00 GMT  
+		Size: 12.4 MB (12399124 bytes)
+	-	`sha256:d63c862a4e8a8fe6642f7954b97624cd307b5b913f999697835d9dede0674595`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 492.0 B
+	-	`sha256:a1f41798510b1dfa029f4cd846d723cca3566637cceedc3aba17cf117605e4fe`  
+		Last Modified: Wed, 10 Aug 2016 21:38:07 GMT  
+		Size: 16.4 MB (16385973 bytes)
+	-	`sha256:a1cb79de526642a0956598b60e75c5c3d73693e4a6e41aa4666c3377d84fdb07`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 1.8 KB (1835 bytes)
+	-	`sha256:0ad59c7db086709fbfe994d1ed28d4818952b4981147090c9dd27c00c1665f13`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 583.0 B
+	-	`sha256:b486b4dba63edbb3698efdc9d49c726ee9485f492208b1c58243546e551b401e`  
+		Last Modified: Thu, 11 Aug 2016 19:46:10 GMT  
+		Size: 34.3 MB (34332251 bytes)
+	-	`sha256:7cd3a3ec048bc1083af9b206381543bba7ba4e95ef59231092a744c329062c81`  
+		Last Modified: Thu, 11 Aug 2016 19:45:59 GMT  
+		Size: 3.7 MB (3735503 bytes)
+	-	`sha256:50258fe8ebeff9f923454ee2d5462f93bce2af2119205c94bcf5afc0f6300b4f`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 334.0 B
+	-	`sha256:e7300e935dc63b74a3ae9d06b2444580b01ddbb4164ba81ff4ed9e2ef5a17c32`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 296.0 B
+	-	`sha256:e46394307f8ef729f5c0bc9b8d750811bbbc5e38d3e94536eea1be3dd4e88c44`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 1.3 MB (1329855 bytes)
+	-	`sha256:f0b0e3cbd6bf13d9490d6f52a315997926d98124725ed3e967f06e49bfa795ec`  
+		Last Modified: Thu, 11 Aug 2016 19:59:13 GMT  
+		Size: 30.3 MB (30321735 bytes)
+	-	`sha256:d9d0adcc47a4e37e568c742c09a304b3629c8261aaa9070b11b21b1fca1728eb`  
+		Last Modified: Thu, 11 Aug 2016 19:59:06 GMT  
+		Size: 246.0 B
 
 ## `owncloud:8`
 
 ```console
-$ docker pull owncloud@sha256:d2335fec3ed5acdaf102927297e7b726536b30a20af54941f5dcc1628a0568d4
+$ docker pull owncloud@sha256:becfd58ee11bf599a2e1888fc31b08b09dae4d860b5de4a813e0cae05e130bb9
 ```
 
 -	Platforms:
@@ -2637,9 +2637,9 @@ $ docker pull owncloud@sha256:d2335fec3ed5acdaf102927297e7b726536b30a20af54941f5
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **229.7 MB (229704958 bytes)**  
+-	Total Size: **230.3 MB (230303269 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38955a46b298ab15c62a4bf9b284c83bcbc5551cbfb905064ade7638d8bb87f9`
+-	Image ID: `sha256:76e11704034adec81c3788b9d1dea8416dc0e4a0d8d1afcbd352d0a0fac5bc36`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -2662,63 +2662,63 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 ENV APACHE_CONFDIR=/etc/apache2
 # Fri, 29 Jul 2016 20:49:44 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 29 Jul 2016 20:49:45 GMT
-RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
-# Fri, 29 Jul 2016 20:49:46 GMT
+# Wed, 10 Aug 2016 19:34:50 GMT
+RUN set -ex 		&& sed -r 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS" 		&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
+# Wed, 10 Aug 2016 19:34:51 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Fri, 29 Jul 2016 20:49:48 GMT
+# Wed, 10 Aug 2016 19:34:53 GMT
 RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Fri, 29 Jul 2016 20:49:50 GMT
+# Wed, 10 Aug 2016 19:34:55 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV PHP_VERSION=5.6.24
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_FILENAME=php-5.6.24.tar.xz
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:34:30 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:34:31 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:48 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:39:49 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:49 GMT
+# Wed, 10 Aug 2016 20:18:08 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:18:09 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:23:14 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:14 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 EXPOSE 80/tcp
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:16 GMT
 CMD ["apache2-foreground"]
-# Mon, 01 Aug 2016 17:47:44 GMT
+# Thu, 11 Aug 2016 19:40:17 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:51:21 GMT
+# Thu, 11 Aug 2016 19:44:21 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:51:23 GMT
+# Thu, 11 Aug 2016 19:44:23 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:51:25 GMT
+# Thu, 11 Aug 2016 19:44:25 GMT
 RUN a2enmod rewrite
-# Mon, 01 Aug 2016 17:52:06 GMT
+# Thu, 11 Aug 2016 19:45:12 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 18:09:13 GMT
+# Thu, 11 Aug 2016 19:58:30 GMT
 ENV OWNCLOUD_VERSION=8.2.7
-# Mon, 01 Aug 2016 18:09:14 GMT
+# Thu, 11 Aug 2016 19:58:31 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 18:09:30 GMT
+# Thu, 11 Aug 2016 19:58:51 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 18:09:32 GMT
+# Thu, 11 Aug 2016 19:58:53 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 18:09:33 GMT
+# Thu, 11 Aug 2016 19:58:54 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:09:34 GMT
+# Thu, 11 Aug 2016 19:58:55 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -2735,59 +2735,59 @@ CMD ["apache2-foreground"]
 	-	`sha256:b4ae91aad5222bbe7ca67b9c2b69e54fd29989bea1eec3d8a9aca56b011c303c`  
 		Last Modified: Fri, 29 Jul 2016 22:49:17 GMT  
 		Size: 2.8 MB (2846544 bytes)
-	-	`sha256:c0c9ad6136b5e7b142c48c7167eede3d15af54c538f7f3177c50693006cca242`  
-		Last Modified: Fri, 29 Jul 2016 22:49:15 GMT  
-		Size: 276.0 B
-	-	`sha256:b4b0c030555d4340cfe8288272d2bcb291c2f483f1957f1341cfaaea369dc109`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 431.0 B
-	-	`sha256:6e898edbabd79f8b8eaf7351077eff9966a11459347f335757f5341a0a889c16`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 222.0 B
-	-	`sha256:e4b8d84dea782a5effd404eec31320063107e0bb56fccaffae77c4430c8082a3`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
+	-	`sha256:66e1c1a53c958663cb6a8d19f5993b36bfaf8e334d476c5ed30d6766c8db1f9a`  
+		Last Modified: Wed, 10 Aug 2016 21:31:30 GMT  
+		Size: 270.0 B
+	-	`sha256:5d1f306a891255c05b40e49a8d1dd76efb713792e0aa200386ab0e269faa49dc`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 432.0 B
+	-	`sha256:37733078a51e3cf33ba985f69be1dda278d529bb87184a83c71037cade3170b4`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 223.0 B
+	-	`sha256:c5351b4d6bee8cc2fc09f2af750fa4627dfdd37b44b651f3f3289260783d3b38`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
 		Size: 475.0 B
-	-	`sha256:8e151ffc26f09785dd3e1b511b6cc5b32744241932c5ac3a909b032906167e2f`  
-		Last Modified: Fri, 29 Jul 2016 22:54:53 GMT  
-		Size: 12.4 MB (12399117 bytes)
-	-	`sha256:a51015ce0d7e5186d93e7c1f1de1710edce96d5dc45da09f1f1fd33e347b3f44`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 601.0 B
-	-	`sha256:1d1d7ce85493184d89b2695b6139c410038091d8c18ec819ace83d50bcbf4af8`  
-		Last Modified: Fri, 29 Jul 2016 22:54:57 GMT  
-		Size: 15.8 MB (15789648 bytes)
-	-	`sha256:1394b74e0f9d9bd5c6f6a2fd4058edd52deac35dbfaa36668aa49328db286a57`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:35f1f99fe906e63a6fe525a33188e64c2f84d2e332e51327bfd262027c598444`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 579.0 B
-	-	`sha256:181cf82fa46ce61260137919ef7f51982e0495697a3d7deb5040f7064698b96e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:50 GMT  
-		Size: 34.3 MB (34330228 bytes)
-	-	`sha256:dfeef7c75ef90a85c96834f4d5bfa43b8d6b5e4b8ce75ddcf9b3272e6bda87c8`  
-		Last Modified: Mon, 01 Aug 2016 17:52:41 GMT  
-		Size: 3.7 MB (3735515 bytes)
-	-	`sha256:9776e0b14ee38a4cfae7cd26f535a930364d51109bb650207740149fa1231f34`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 332.0 B
-	-	`sha256:aa6b3cbfda6f6a29648f5005f3b7bfc21667fd996ba72aaed09a7ae2c115ed3e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 294.0 B
-	-	`sha256:a0926b406f89277c8e7613682f4cb82051e12ab866b373a8c76d7f43df6a0f60`  
-		Last Modified: Mon, 01 Aug 2016 17:52:38 GMT  
-		Size: 1.3 MB (1329874 bytes)
-	-	`sha256:5972ea9f138a83246070b57033d6bb68efe9e14111377cfbf4a1e70dc308317e`  
-		Last Modified: Mon, 01 Aug 2016 18:09:51 GMT  
-		Size: 30.3 MB (30321727 bytes)
-	-	`sha256:cfbf66c7aba0f29c9f8d2900011dfa4fba98da3bc78999df6f86074393ff9732`  
-		Last Modified: Mon, 01 Aug 2016 18:09:43 GMT  
-		Size: 244.0 B
+	-	`sha256:68fab1fd02dce6a758d7907eaf173747d5504e714bc9dcf77bc0086bb8f98420`  
+		Last Modified: Wed, 10 Aug 2016 21:38:00 GMT  
+		Size: 12.4 MB (12399124 bytes)
+	-	`sha256:d63c862a4e8a8fe6642f7954b97624cd307b5b913f999697835d9dede0674595`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 492.0 B
+	-	`sha256:a1f41798510b1dfa029f4cd846d723cca3566637cceedc3aba17cf117605e4fe`  
+		Last Modified: Wed, 10 Aug 2016 21:38:07 GMT  
+		Size: 16.4 MB (16385973 bytes)
+	-	`sha256:a1cb79de526642a0956598b60e75c5c3d73693e4a6e41aa4666c3377d84fdb07`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 1.8 KB (1835 bytes)
+	-	`sha256:0ad59c7db086709fbfe994d1ed28d4818952b4981147090c9dd27c00c1665f13`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 583.0 B
+	-	`sha256:b486b4dba63edbb3698efdc9d49c726ee9485f492208b1c58243546e551b401e`  
+		Last Modified: Thu, 11 Aug 2016 19:46:10 GMT  
+		Size: 34.3 MB (34332251 bytes)
+	-	`sha256:7cd3a3ec048bc1083af9b206381543bba7ba4e95ef59231092a744c329062c81`  
+		Last Modified: Thu, 11 Aug 2016 19:45:59 GMT  
+		Size: 3.7 MB (3735503 bytes)
+	-	`sha256:50258fe8ebeff9f923454ee2d5462f93bce2af2119205c94bcf5afc0f6300b4f`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 334.0 B
+	-	`sha256:e7300e935dc63b74a3ae9d06b2444580b01ddbb4164ba81ff4ed9e2ef5a17c32`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 296.0 B
+	-	`sha256:e46394307f8ef729f5c0bc9b8d750811bbbc5e38d3e94536eea1be3dd4e88c44`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 1.3 MB (1329855 bytes)
+	-	`sha256:f0b0e3cbd6bf13d9490d6f52a315997926d98124725ed3e967f06e49bfa795ec`  
+		Last Modified: Thu, 11 Aug 2016 19:59:13 GMT  
+		Size: 30.3 MB (30321735 bytes)
+	-	`sha256:d9d0adcc47a4e37e568c742c09a304b3629c8261aaa9070b11b21b1fca1728eb`  
+		Last Modified: Thu, 11 Aug 2016 19:59:06 GMT  
+		Size: 246.0 B
 
 ## `owncloud:8.2.7-fpm`
 
 ```console
-$ docker pull owncloud@sha256:d20205184f349a1e917f1c54126ffdc37482ac30837d0f5be33596ca8f83e7ee
+$ docker pull owncloud@sha256:f28132e261c7cbe385d8eac5f61adf449cbdaf8332fc8232675b32001bbb0375
 ```
 
 -	Platforms:
@@ -2797,9 +2797,9 @@ $ docker pull owncloud@sha256:d20205184f349a1e917f1c54126ffdc37482ac30837d0f5be3
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **219.8 MB (219848164 bytes)**  
+-	Total Size: **220.4 MB (220387265 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9df8fcbbc28e23621dc6ca9175d9fbaf8a604e0bd3ee2b1c44024801e02bd82f`
+-	Image ID: `sha256:684d6612b92b3f2c9180a5e9c1cfd1b0dda6b673f2e8edbcbb0abc872b730a92`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -2826,41 +2826,41 @@ ENV PHP_VERSION=5.6.24
 ENV PHP_FILENAME=php-5.6.24.tar.xz
 # Fri, 29 Jul 2016 21:39:52 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:39:56 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:39:57 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:46:44 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:46:45 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:46:46 GMT
+# Wed, 10 Aug 2016 20:23:19 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:23:20 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:29:49 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:29:50 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:29:50 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:46:48 GMT
+# Wed, 10 Aug 2016 20:29:51 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Fri, 29 Jul 2016 21:46:48 GMT
+# Wed, 10 Aug 2016 20:29:52 GMT
 EXPOSE 9000/tcp
-# Fri, 29 Jul 2016 21:46:49 GMT
+# Wed, 10 Aug 2016 20:29:52 GMT
 CMD ["php-fpm"]
-# Mon, 01 Aug 2016 17:55:18 GMT
+# Thu, 11 Aug 2016 19:31:58 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:58:54 GMT
+# Thu, 11 Aug 2016 19:36:32 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:58:56 GMT
+# Thu, 11 Aug 2016 19:36:34 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:59:37 GMT
+# Thu, 11 Aug 2016 19:37:23 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 18:10:54 GMT
+# Thu, 11 Aug 2016 19:37:24 GMT
 ENV OWNCLOUD_VERSION=8.2.7
-# Mon, 01 Aug 2016 18:10:55 GMT
+# Thu, 11 Aug 2016 19:37:25 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 18:11:15 GMT
+# Thu, 11 Aug 2016 19:37:44 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 18:11:17 GMT
+# Thu, 11 Aug 2016 19:37:46 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 18:11:17 GMT
+# Thu, 11 Aug 2016 19:37:47 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:11:18 GMT
+# Thu, 11 Aug 2016 19:37:56 GMT
 CMD ["php-fpm"]
 ```
 
@@ -2874,47 +2874,47 @@ CMD ["php-fpm"]
 	-	`sha256:3d821ad560e13c778e616da2a9033ac30d3811185f43635e95c20b22ab380077`  
 		Last Modified: Fri, 29 Jul 2016 22:46:34 GMT  
 		Size: 180.0 B
-	-	`sha256:313efb7f2797d96b93cdc6a1c1628cb0bb064db4082e1a75ad89ea416aba077c`  
-		Last Modified: Fri, 29 Jul 2016 22:55:35 GMT  
-		Size: 12.4 MB (12399119 bytes)
-	-	`sha256:59137d1c51b6cd58a87d11262a2d78b9257747a3bbd6ec05bf4d049b124c8e70`  
-		Last Modified: Fri, 29 Jul 2016 22:55:30 GMT  
-		Size: 601.0 B
-	-	`sha256:265ac2fa951d86cc8d6e91295f961f67bd5e283269334c02545b88265907c038`  
-		Last Modified: Fri, 29 Jul 2016 22:55:34 GMT  
-		Size: 8.8 MB (8796075 bytes)
-	-	`sha256:8f71c291653e80fd8be4c19d5de021fd8ac543b92cfd1ad9ff8b3c3a5bb357bb`  
-		Last Modified: Fri, 29 Jul 2016 22:55:30 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:61edc0cbd1b43bc5c63d0fc1e67306c24e819d4f55c2e8705a7103e78d186922`  
-		Last Modified: Fri, 29 Jul 2016 22:55:31 GMT  
+	-	`sha256:1a0ed20d7752971350ab581861731d7d71a6eb560b93d48382b5cc2aa07fed8b`  
+		Last Modified: Wed, 10 Aug 2016 21:38:50 GMT  
+		Size: 12.4 MB (12399120 bytes)
+	-	`sha256:d17456fd86bcf1eb916ff4c4b4909dd6ad98736369cff4e5ee9c79e02782fc67`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
+		Size: 490.0 B
+	-	`sha256:c8bd75b8802c8ce64c4a28486fbfb4bde4247b27f5f8363dd8a8469ac89b1e85`  
+		Last Modified: Wed, 10 Aug 2016 21:38:48 GMT  
+		Size: 9.3 MB (9333467 bytes)
+	-	`sha256:0054f99dc6ca14454002cd76f78264c84cdfd9c57cea265ea0a6f601dab80158`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
+		Size: 1.8 KB (1829 bytes)
+	-	`sha256:1c8ec71281514f1d63f59000b5fd9082baa8a6d34e7e591d7cd22928879a5d18`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
 		Size: 129.0 B
-	-	`sha256:2310b95436007759599e7c1a784ce61d633ed86c55689af737f6907dcc8c6d14`  
-		Last Modified: Fri, 29 Jul 2016 22:55:31 GMT  
-		Size: 7.6 KB (7631 bytes)
-	-	`sha256:38bb9593bce0ba6ead3bbecf0b2ada9b245c194168bf782d388e5cecea5f2d88`  
-		Last Modified: Mon, 01 Aug 2016 18:00:23 GMT  
-		Size: 34.3 MB (34307868 bytes)
-	-	`sha256:972b48230f3d9134dfa1030c0dfa08fc6dbedb26187bc0e24cad6575726f59bd`  
-		Last Modified: Mon, 01 Aug 2016 18:00:13 GMT  
-		Size: 3.7 MB (3735745 bytes)
-	-	`sha256:8bf22dfa16633bcdb53f53d020507297e5012af00a69be4b21ea6e4008c9bbec`  
-		Last Modified: Mon, 01 Aug 2016 18:00:11 GMT  
-		Size: 334.0 B
-	-	`sha256:9b9e3850c393e11aebe0ffa3dbd59e2da67f999ebe7c63c6796990db8848d707`  
-		Last Modified: Mon, 01 Aug 2016 18:00:09 GMT  
-		Size: 1.3 MB (1329835 bytes)
-	-	`sha256:b250c3ad5d6cc17098d183af4b4be92611e564cc7145d19a42beec5f93675bd5`  
-		Last Modified: Mon, 01 Aug 2016 18:11:36 GMT  
-		Size: 30.3 MB (30321733 bytes)
-	-	`sha256:e6bcc92525f32b0b94b7d72884bbabc4ab799b6fd26b4d0f54743e74e4c2bf26`  
-		Last Modified: Mon, 01 Aug 2016 18:11:28 GMT  
+	-	`sha256:fa513925a4eb93b436ccdb48c9b0edca88237b4abdebea3245da69a6b37deaf9`  
+		Last Modified: Wed, 10 Aug 2016 21:38:46 GMT  
+		Size: 7.6 KB (7629 bytes)
+	-	`sha256:f5e918f5eeceb98e228adf3ed45e9590823935fc6a4d203903b7633e64e2f6b7`  
+		Last Modified: Thu, 11 Aug 2016 19:38:23 GMT  
+		Size: 34.3 MB (34309595 bytes)
+	-	`sha256:4a0645c74d2abc109131690d3f71a3c42fe544272d58e7a2151d4a4be4509977`  
+		Last Modified: Thu, 11 Aug 2016 19:38:09 GMT  
+		Size: 3.7 MB (3735762 bytes)
+	-	`sha256:9cfa7715b90cc83e5009c512050ac4f5c46adfa52997773a68c02ca21063a543`  
+		Last Modified: Thu, 11 Aug 2016 19:38:07 GMT  
+		Size: 333.0 B
+	-	`sha256:77fb23212070caee8cc379413904c7da38bee3cb9e17d3c039dea71c46e44bc3`  
+		Last Modified: Thu, 11 Aug 2016 19:38:07 GMT  
+		Size: 1.3 MB (1329833 bytes)
+	-	`sha256:8340b5f91f7b51525e412f608ad5dead3fbaec7a4f1ce72f96ee1f3c816058fe`  
+		Last Modified: Thu, 11 Aug 2016 19:38:18 GMT  
+		Size: 30.3 MB (30321737 bytes)
+	-	`sha256:1ab65c67b7ef46a28e5af70e23029f5d39f07221f1cf02a64456678eff2b41d3`  
+		Last Modified: Thu, 11 Aug 2016 19:38:07 GMT  
 		Size: 243.0 B
 
 ## `owncloud:8.2-fpm`
 
 ```console
-$ docker pull owncloud@sha256:d20205184f349a1e917f1c54126ffdc37482ac30837d0f5be33596ca8f83e7ee
+$ docker pull owncloud@sha256:f28132e261c7cbe385d8eac5f61adf449cbdaf8332fc8232675b32001bbb0375
 ```
 
 -	Platforms:
@@ -2924,9 +2924,9 @@ $ docker pull owncloud@sha256:d20205184f349a1e917f1c54126ffdc37482ac30837d0f5be3
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **219.8 MB (219848164 bytes)**  
+-	Total Size: **220.4 MB (220387265 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9df8fcbbc28e23621dc6ca9175d9fbaf8a604e0bd3ee2b1c44024801e02bd82f`
+-	Image ID: `sha256:684d6612b92b3f2c9180a5e9c1cfd1b0dda6b673f2e8edbcbb0abc872b730a92`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -2953,41 +2953,41 @@ ENV PHP_VERSION=5.6.24
 ENV PHP_FILENAME=php-5.6.24.tar.xz
 # Fri, 29 Jul 2016 21:39:52 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:39:56 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:39:57 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:46:44 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:46:45 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:46:46 GMT
+# Wed, 10 Aug 2016 20:23:19 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:23:20 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:29:49 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:29:50 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:29:50 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:46:48 GMT
+# Wed, 10 Aug 2016 20:29:51 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Fri, 29 Jul 2016 21:46:48 GMT
+# Wed, 10 Aug 2016 20:29:52 GMT
 EXPOSE 9000/tcp
-# Fri, 29 Jul 2016 21:46:49 GMT
+# Wed, 10 Aug 2016 20:29:52 GMT
 CMD ["php-fpm"]
-# Mon, 01 Aug 2016 17:55:18 GMT
+# Thu, 11 Aug 2016 19:31:58 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:58:54 GMT
+# Thu, 11 Aug 2016 19:36:32 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:58:56 GMT
+# Thu, 11 Aug 2016 19:36:34 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:59:37 GMT
+# Thu, 11 Aug 2016 19:37:23 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 18:10:54 GMT
+# Thu, 11 Aug 2016 19:37:24 GMT
 ENV OWNCLOUD_VERSION=8.2.7
-# Mon, 01 Aug 2016 18:10:55 GMT
+# Thu, 11 Aug 2016 19:37:25 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 18:11:15 GMT
+# Thu, 11 Aug 2016 19:37:44 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 18:11:17 GMT
+# Thu, 11 Aug 2016 19:37:46 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 18:11:17 GMT
+# Thu, 11 Aug 2016 19:37:47 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:11:18 GMT
+# Thu, 11 Aug 2016 19:37:56 GMT
 CMD ["php-fpm"]
 ```
 
@@ -3001,47 +3001,47 @@ CMD ["php-fpm"]
 	-	`sha256:3d821ad560e13c778e616da2a9033ac30d3811185f43635e95c20b22ab380077`  
 		Last Modified: Fri, 29 Jul 2016 22:46:34 GMT  
 		Size: 180.0 B
-	-	`sha256:313efb7f2797d96b93cdc6a1c1628cb0bb064db4082e1a75ad89ea416aba077c`  
-		Last Modified: Fri, 29 Jul 2016 22:55:35 GMT  
-		Size: 12.4 MB (12399119 bytes)
-	-	`sha256:59137d1c51b6cd58a87d11262a2d78b9257747a3bbd6ec05bf4d049b124c8e70`  
-		Last Modified: Fri, 29 Jul 2016 22:55:30 GMT  
-		Size: 601.0 B
-	-	`sha256:265ac2fa951d86cc8d6e91295f961f67bd5e283269334c02545b88265907c038`  
-		Last Modified: Fri, 29 Jul 2016 22:55:34 GMT  
-		Size: 8.8 MB (8796075 bytes)
-	-	`sha256:8f71c291653e80fd8be4c19d5de021fd8ac543b92cfd1ad9ff8b3c3a5bb357bb`  
-		Last Modified: Fri, 29 Jul 2016 22:55:30 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:61edc0cbd1b43bc5c63d0fc1e67306c24e819d4f55c2e8705a7103e78d186922`  
-		Last Modified: Fri, 29 Jul 2016 22:55:31 GMT  
+	-	`sha256:1a0ed20d7752971350ab581861731d7d71a6eb560b93d48382b5cc2aa07fed8b`  
+		Last Modified: Wed, 10 Aug 2016 21:38:50 GMT  
+		Size: 12.4 MB (12399120 bytes)
+	-	`sha256:d17456fd86bcf1eb916ff4c4b4909dd6ad98736369cff4e5ee9c79e02782fc67`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
+		Size: 490.0 B
+	-	`sha256:c8bd75b8802c8ce64c4a28486fbfb4bde4247b27f5f8363dd8a8469ac89b1e85`  
+		Last Modified: Wed, 10 Aug 2016 21:38:48 GMT  
+		Size: 9.3 MB (9333467 bytes)
+	-	`sha256:0054f99dc6ca14454002cd76f78264c84cdfd9c57cea265ea0a6f601dab80158`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
+		Size: 1.8 KB (1829 bytes)
+	-	`sha256:1c8ec71281514f1d63f59000b5fd9082baa8a6d34e7e591d7cd22928879a5d18`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
 		Size: 129.0 B
-	-	`sha256:2310b95436007759599e7c1a784ce61d633ed86c55689af737f6907dcc8c6d14`  
-		Last Modified: Fri, 29 Jul 2016 22:55:31 GMT  
-		Size: 7.6 KB (7631 bytes)
-	-	`sha256:38bb9593bce0ba6ead3bbecf0b2ada9b245c194168bf782d388e5cecea5f2d88`  
-		Last Modified: Mon, 01 Aug 2016 18:00:23 GMT  
-		Size: 34.3 MB (34307868 bytes)
-	-	`sha256:972b48230f3d9134dfa1030c0dfa08fc6dbedb26187bc0e24cad6575726f59bd`  
-		Last Modified: Mon, 01 Aug 2016 18:00:13 GMT  
-		Size: 3.7 MB (3735745 bytes)
-	-	`sha256:8bf22dfa16633bcdb53f53d020507297e5012af00a69be4b21ea6e4008c9bbec`  
-		Last Modified: Mon, 01 Aug 2016 18:00:11 GMT  
-		Size: 334.0 B
-	-	`sha256:9b9e3850c393e11aebe0ffa3dbd59e2da67f999ebe7c63c6796990db8848d707`  
-		Last Modified: Mon, 01 Aug 2016 18:00:09 GMT  
-		Size: 1.3 MB (1329835 bytes)
-	-	`sha256:b250c3ad5d6cc17098d183af4b4be92611e564cc7145d19a42beec5f93675bd5`  
-		Last Modified: Mon, 01 Aug 2016 18:11:36 GMT  
-		Size: 30.3 MB (30321733 bytes)
-	-	`sha256:e6bcc92525f32b0b94b7d72884bbabc4ab799b6fd26b4d0f54743e74e4c2bf26`  
-		Last Modified: Mon, 01 Aug 2016 18:11:28 GMT  
+	-	`sha256:fa513925a4eb93b436ccdb48c9b0edca88237b4abdebea3245da69a6b37deaf9`  
+		Last Modified: Wed, 10 Aug 2016 21:38:46 GMT  
+		Size: 7.6 KB (7629 bytes)
+	-	`sha256:f5e918f5eeceb98e228adf3ed45e9590823935fc6a4d203903b7633e64e2f6b7`  
+		Last Modified: Thu, 11 Aug 2016 19:38:23 GMT  
+		Size: 34.3 MB (34309595 bytes)
+	-	`sha256:4a0645c74d2abc109131690d3f71a3c42fe544272d58e7a2151d4a4be4509977`  
+		Last Modified: Thu, 11 Aug 2016 19:38:09 GMT  
+		Size: 3.7 MB (3735762 bytes)
+	-	`sha256:9cfa7715b90cc83e5009c512050ac4f5c46adfa52997773a68c02ca21063a543`  
+		Last Modified: Thu, 11 Aug 2016 19:38:07 GMT  
+		Size: 333.0 B
+	-	`sha256:77fb23212070caee8cc379413904c7da38bee3cb9e17d3c039dea71c46e44bc3`  
+		Last Modified: Thu, 11 Aug 2016 19:38:07 GMT  
+		Size: 1.3 MB (1329833 bytes)
+	-	`sha256:8340b5f91f7b51525e412f608ad5dead3fbaec7a4f1ce72f96ee1f3c816058fe`  
+		Last Modified: Thu, 11 Aug 2016 19:38:18 GMT  
+		Size: 30.3 MB (30321737 bytes)
+	-	`sha256:1ab65c67b7ef46a28e5af70e23029f5d39f07221f1cf02a64456678eff2b41d3`  
+		Last Modified: Thu, 11 Aug 2016 19:38:07 GMT  
 		Size: 243.0 B
 
 ## `owncloud:8-fpm`
 
 ```console
-$ docker pull owncloud@sha256:d20205184f349a1e917f1c54126ffdc37482ac30837d0f5be33596ca8f83e7ee
+$ docker pull owncloud@sha256:f28132e261c7cbe385d8eac5f61adf449cbdaf8332fc8232675b32001bbb0375
 ```
 
 -	Platforms:
@@ -3051,9 +3051,9 @@ $ docker pull owncloud@sha256:d20205184f349a1e917f1c54126ffdc37482ac30837d0f5be3
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **219.8 MB (219848164 bytes)**  
+-	Total Size: **220.4 MB (220387265 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9df8fcbbc28e23621dc6ca9175d9fbaf8a604e0bd3ee2b1c44024801e02bd82f`
+-	Image ID: `sha256:684d6612b92b3f2c9180a5e9c1cfd1b0dda6b673f2e8edbcbb0abc872b730a92`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -3080,41 +3080,41 @@ ENV PHP_VERSION=5.6.24
 ENV PHP_FILENAME=php-5.6.24.tar.xz
 # Fri, 29 Jul 2016 21:39:52 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:39:56 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:39:57 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:46:44 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:46:45 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:46:46 GMT
+# Wed, 10 Aug 2016 20:23:19 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:23:20 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:29:49 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:29:50 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:29:50 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:46:48 GMT
+# Wed, 10 Aug 2016 20:29:51 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Fri, 29 Jul 2016 21:46:48 GMT
+# Wed, 10 Aug 2016 20:29:52 GMT
 EXPOSE 9000/tcp
-# Fri, 29 Jul 2016 21:46:49 GMT
+# Wed, 10 Aug 2016 20:29:52 GMT
 CMD ["php-fpm"]
-# Mon, 01 Aug 2016 17:55:18 GMT
+# Thu, 11 Aug 2016 19:31:58 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:58:54 GMT
+# Thu, 11 Aug 2016 19:36:32 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:58:56 GMT
+# Thu, 11 Aug 2016 19:36:34 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:59:37 GMT
+# Thu, 11 Aug 2016 19:37:23 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 18:10:54 GMT
+# Thu, 11 Aug 2016 19:37:24 GMT
 ENV OWNCLOUD_VERSION=8.2.7
-# Mon, 01 Aug 2016 18:10:55 GMT
+# Thu, 11 Aug 2016 19:37:25 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 18:11:15 GMT
+# Thu, 11 Aug 2016 19:37:44 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 18:11:17 GMT
+# Thu, 11 Aug 2016 19:37:46 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 18:11:17 GMT
+# Thu, 11 Aug 2016 19:37:47 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:11:18 GMT
+# Thu, 11 Aug 2016 19:37:56 GMT
 CMD ["php-fpm"]
 ```
 
@@ -3128,47 +3128,47 @@ CMD ["php-fpm"]
 	-	`sha256:3d821ad560e13c778e616da2a9033ac30d3811185f43635e95c20b22ab380077`  
 		Last Modified: Fri, 29 Jul 2016 22:46:34 GMT  
 		Size: 180.0 B
-	-	`sha256:313efb7f2797d96b93cdc6a1c1628cb0bb064db4082e1a75ad89ea416aba077c`  
-		Last Modified: Fri, 29 Jul 2016 22:55:35 GMT  
-		Size: 12.4 MB (12399119 bytes)
-	-	`sha256:59137d1c51b6cd58a87d11262a2d78b9257747a3bbd6ec05bf4d049b124c8e70`  
-		Last Modified: Fri, 29 Jul 2016 22:55:30 GMT  
-		Size: 601.0 B
-	-	`sha256:265ac2fa951d86cc8d6e91295f961f67bd5e283269334c02545b88265907c038`  
-		Last Modified: Fri, 29 Jul 2016 22:55:34 GMT  
-		Size: 8.8 MB (8796075 bytes)
-	-	`sha256:8f71c291653e80fd8be4c19d5de021fd8ac543b92cfd1ad9ff8b3c3a5bb357bb`  
-		Last Modified: Fri, 29 Jul 2016 22:55:30 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:61edc0cbd1b43bc5c63d0fc1e67306c24e819d4f55c2e8705a7103e78d186922`  
-		Last Modified: Fri, 29 Jul 2016 22:55:31 GMT  
+	-	`sha256:1a0ed20d7752971350ab581861731d7d71a6eb560b93d48382b5cc2aa07fed8b`  
+		Last Modified: Wed, 10 Aug 2016 21:38:50 GMT  
+		Size: 12.4 MB (12399120 bytes)
+	-	`sha256:d17456fd86bcf1eb916ff4c4b4909dd6ad98736369cff4e5ee9c79e02782fc67`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
+		Size: 490.0 B
+	-	`sha256:c8bd75b8802c8ce64c4a28486fbfb4bde4247b27f5f8363dd8a8469ac89b1e85`  
+		Last Modified: Wed, 10 Aug 2016 21:38:48 GMT  
+		Size: 9.3 MB (9333467 bytes)
+	-	`sha256:0054f99dc6ca14454002cd76f78264c84cdfd9c57cea265ea0a6f601dab80158`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
+		Size: 1.8 KB (1829 bytes)
+	-	`sha256:1c8ec71281514f1d63f59000b5fd9082baa8a6d34e7e591d7cd22928879a5d18`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
 		Size: 129.0 B
-	-	`sha256:2310b95436007759599e7c1a784ce61d633ed86c55689af737f6907dcc8c6d14`  
-		Last Modified: Fri, 29 Jul 2016 22:55:31 GMT  
-		Size: 7.6 KB (7631 bytes)
-	-	`sha256:38bb9593bce0ba6ead3bbecf0b2ada9b245c194168bf782d388e5cecea5f2d88`  
-		Last Modified: Mon, 01 Aug 2016 18:00:23 GMT  
-		Size: 34.3 MB (34307868 bytes)
-	-	`sha256:972b48230f3d9134dfa1030c0dfa08fc6dbedb26187bc0e24cad6575726f59bd`  
-		Last Modified: Mon, 01 Aug 2016 18:00:13 GMT  
-		Size: 3.7 MB (3735745 bytes)
-	-	`sha256:8bf22dfa16633bcdb53f53d020507297e5012af00a69be4b21ea6e4008c9bbec`  
-		Last Modified: Mon, 01 Aug 2016 18:00:11 GMT  
-		Size: 334.0 B
-	-	`sha256:9b9e3850c393e11aebe0ffa3dbd59e2da67f999ebe7c63c6796990db8848d707`  
-		Last Modified: Mon, 01 Aug 2016 18:00:09 GMT  
-		Size: 1.3 MB (1329835 bytes)
-	-	`sha256:b250c3ad5d6cc17098d183af4b4be92611e564cc7145d19a42beec5f93675bd5`  
-		Last Modified: Mon, 01 Aug 2016 18:11:36 GMT  
-		Size: 30.3 MB (30321733 bytes)
-	-	`sha256:e6bcc92525f32b0b94b7d72884bbabc4ab799b6fd26b4d0f54743e74e4c2bf26`  
-		Last Modified: Mon, 01 Aug 2016 18:11:28 GMT  
+	-	`sha256:fa513925a4eb93b436ccdb48c9b0edca88237b4abdebea3245da69a6b37deaf9`  
+		Last Modified: Wed, 10 Aug 2016 21:38:46 GMT  
+		Size: 7.6 KB (7629 bytes)
+	-	`sha256:f5e918f5eeceb98e228adf3ed45e9590823935fc6a4d203903b7633e64e2f6b7`  
+		Last Modified: Thu, 11 Aug 2016 19:38:23 GMT  
+		Size: 34.3 MB (34309595 bytes)
+	-	`sha256:4a0645c74d2abc109131690d3f71a3c42fe544272d58e7a2151d4a4be4509977`  
+		Last Modified: Thu, 11 Aug 2016 19:38:09 GMT  
+		Size: 3.7 MB (3735762 bytes)
+	-	`sha256:9cfa7715b90cc83e5009c512050ac4f5c46adfa52997773a68c02ca21063a543`  
+		Last Modified: Thu, 11 Aug 2016 19:38:07 GMT  
+		Size: 333.0 B
+	-	`sha256:77fb23212070caee8cc379413904c7da38bee3cb9e17d3c039dea71c46e44bc3`  
+		Last Modified: Thu, 11 Aug 2016 19:38:07 GMT  
+		Size: 1.3 MB (1329833 bytes)
+	-	`sha256:8340b5f91f7b51525e412f608ad5dead3fbaec7a4f1ce72f96ee1f3c816058fe`  
+		Last Modified: Thu, 11 Aug 2016 19:38:18 GMT  
+		Size: 30.3 MB (30321737 bytes)
+	-	`sha256:1ab65c67b7ef46a28e5af70e23029f5d39f07221f1cf02a64456678eff2b41d3`  
+		Last Modified: Thu, 11 Aug 2016 19:38:07 GMT  
 		Size: 243.0 B
 
 ## `owncloud:9.0.4-apache`
 
 ```console
-$ docker pull owncloud@sha256:a20d60d727eb3f6343637e1ad71422f7db5cd7ca361e4981940e146137da8cae
+$ docker pull owncloud@sha256:a3a889676d675da3c98312eda91b9611917a7c11ce896b88436cc216fa44e34d
 ```
 
 -	Platforms:
@@ -3178,9 +3178,9 @@ $ docker pull owncloud@sha256:a20d60d727eb3f6343637e1ad71422f7db5cd7ca361e498194
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **230.5 MB (230469795 bytes)**  
+-	Total Size: **231.1 MB (231068087 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4924817af41c83d0945fed5e1152b20e5a759840230f14fd46592c4aa388797e`
+-	Image ID: `sha256:6e78cd630ccbd07ec738a9ca39fe211433301f035e16f534b66053e41a8ca521`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -3203,63 +3203,63 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 ENV APACHE_CONFDIR=/etc/apache2
 # Fri, 29 Jul 2016 20:49:44 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 29 Jul 2016 20:49:45 GMT
-RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
-# Fri, 29 Jul 2016 20:49:46 GMT
+# Wed, 10 Aug 2016 19:34:50 GMT
+RUN set -ex 		&& sed -r 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS" 		&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
+# Wed, 10 Aug 2016 19:34:51 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Fri, 29 Jul 2016 20:49:48 GMT
+# Wed, 10 Aug 2016 19:34:53 GMT
 RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Fri, 29 Jul 2016 20:49:50 GMT
+# Wed, 10 Aug 2016 19:34:55 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV PHP_VERSION=5.6.24
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_FILENAME=php-5.6.24.tar.xz
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:34:30 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:34:31 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:48 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:39:49 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:49 GMT
+# Wed, 10 Aug 2016 20:18:08 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:18:09 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:23:14 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:14 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 EXPOSE 80/tcp
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:16 GMT
 CMD ["apache2-foreground"]
-# Mon, 01 Aug 2016 17:47:44 GMT
+# Thu, 11 Aug 2016 19:40:17 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:51:21 GMT
+# Thu, 11 Aug 2016 19:44:21 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:51:23 GMT
+# Thu, 11 Aug 2016 19:44:23 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:51:25 GMT
+# Thu, 11 Aug 2016 19:44:25 GMT
 RUN a2enmod rewrite
-# Mon, 01 Aug 2016 17:52:06 GMT
+# Thu, 11 Aug 2016 19:45:12 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 17:52:07 GMT
+# Thu, 11 Aug 2016 19:45:13 GMT
 ENV OWNCLOUD_VERSION=9.0.4
-# Mon, 01 Aug 2016 17:52:08 GMT
+# Thu, 11 Aug 2016 19:45:14 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 17:52:25 GMT
+# Thu, 11 Aug 2016 19:45:40 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 17:52:26 GMT
+# Thu, 11 Aug 2016 19:45:42 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 17:52:27 GMT
+# Thu, 11 Aug 2016 19:45:43 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 17:52:28 GMT
+# Thu, 11 Aug 2016 19:45:43 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -3276,59 +3276,59 @@ CMD ["apache2-foreground"]
 	-	`sha256:b4ae91aad5222bbe7ca67b9c2b69e54fd29989bea1eec3d8a9aca56b011c303c`  
 		Last Modified: Fri, 29 Jul 2016 22:49:17 GMT  
 		Size: 2.8 MB (2846544 bytes)
-	-	`sha256:c0c9ad6136b5e7b142c48c7167eede3d15af54c538f7f3177c50693006cca242`  
-		Last Modified: Fri, 29 Jul 2016 22:49:15 GMT  
-		Size: 276.0 B
-	-	`sha256:b4b0c030555d4340cfe8288272d2bcb291c2f483f1957f1341cfaaea369dc109`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 431.0 B
-	-	`sha256:6e898edbabd79f8b8eaf7351077eff9966a11459347f335757f5341a0a889c16`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 222.0 B
-	-	`sha256:e4b8d84dea782a5effd404eec31320063107e0bb56fccaffae77c4430c8082a3`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
+	-	`sha256:66e1c1a53c958663cb6a8d19f5993b36bfaf8e334d476c5ed30d6766c8db1f9a`  
+		Last Modified: Wed, 10 Aug 2016 21:31:30 GMT  
+		Size: 270.0 B
+	-	`sha256:5d1f306a891255c05b40e49a8d1dd76efb713792e0aa200386ab0e269faa49dc`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 432.0 B
+	-	`sha256:37733078a51e3cf33ba985f69be1dda278d529bb87184a83c71037cade3170b4`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 223.0 B
+	-	`sha256:c5351b4d6bee8cc2fc09f2af750fa4627dfdd37b44b651f3f3289260783d3b38`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
 		Size: 475.0 B
-	-	`sha256:8e151ffc26f09785dd3e1b511b6cc5b32744241932c5ac3a909b032906167e2f`  
-		Last Modified: Fri, 29 Jul 2016 22:54:53 GMT  
-		Size: 12.4 MB (12399117 bytes)
-	-	`sha256:a51015ce0d7e5186d93e7c1f1de1710edce96d5dc45da09f1f1fd33e347b3f44`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 601.0 B
-	-	`sha256:1d1d7ce85493184d89b2695b6139c410038091d8c18ec819ace83d50bcbf4af8`  
-		Last Modified: Fri, 29 Jul 2016 22:54:57 GMT  
-		Size: 15.8 MB (15789648 bytes)
-	-	`sha256:1394b74e0f9d9bd5c6f6a2fd4058edd52deac35dbfaa36668aa49328db286a57`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:35f1f99fe906e63a6fe525a33188e64c2f84d2e332e51327bfd262027c598444`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 579.0 B
-	-	`sha256:181cf82fa46ce61260137919ef7f51982e0495697a3d7deb5040f7064698b96e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:50 GMT  
-		Size: 34.3 MB (34330228 bytes)
-	-	`sha256:dfeef7c75ef90a85c96834f4d5bfa43b8d6b5e4b8ce75ddcf9b3272e6bda87c8`  
-		Last Modified: Mon, 01 Aug 2016 17:52:41 GMT  
-		Size: 3.7 MB (3735515 bytes)
-	-	`sha256:9776e0b14ee38a4cfae7cd26f535a930364d51109bb650207740149fa1231f34`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 332.0 B
-	-	`sha256:aa6b3cbfda6f6a29648f5005f3b7bfc21667fd996ba72aaed09a7ae2c115ed3e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 294.0 B
-	-	`sha256:a0926b406f89277c8e7613682f4cb82051e12ab866b373a8c76d7f43df6a0f60`  
-		Last Modified: Mon, 01 Aug 2016 17:52:38 GMT  
-		Size: 1.3 MB (1329874 bytes)
-	-	`sha256:488abfa3f53a149682a342d3540fc362f6cc1d3c70979514f4775068652b94d3`  
-		Last Modified: Mon, 01 Aug 2016 17:52:47 GMT  
-		Size: 31.1 MB (31086563 bytes)
-	-	`sha256:47817047c58faef2b6b59fcf68b4148369deeb57dfa0d2bab2a95be9a9f9b42c`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 245.0 B
+	-	`sha256:68fab1fd02dce6a758d7907eaf173747d5504e714bc9dcf77bc0086bb8f98420`  
+		Last Modified: Wed, 10 Aug 2016 21:38:00 GMT  
+		Size: 12.4 MB (12399124 bytes)
+	-	`sha256:d63c862a4e8a8fe6642f7954b97624cd307b5b913f999697835d9dede0674595`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 492.0 B
+	-	`sha256:a1f41798510b1dfa029f4cd846d723cca3566637cceedc3aba17cf117605e4fe`  
+		Last Modified: Wed, 10 Aug 2016 21:38:07 GMT  
+		Size: 16.4 MB (16385973 bytes)
+	-	`sha256:a1cb79de526642a0956598b60e75c5c3d73693e4a6e41aa4666c3377d84fdb07`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 1.8 KB (1835 bytes)
+	-	`sha256:0ad59c7db086709fbfe994d1ed28d4818952b4981147090c9dd27c00c1665f13`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 583.0 B
+	-	`sha256:b486b4dba63edbb3698efdc9d49c726ee9485f492208b1c58243546e551b401e`  
+		Last Modified: Thu, 11 Aug 2016 19:46:10 GMT  
+		Size: 34.3 MB (34332251 bytes)
+	-	`sha256:7cd3a3ec048bc1083af9b206381543bba7ba4e95ef59231092a744c329062c81`  
+		Last Modified: Thu, 11 Aug 2016 19:45:59 GMT  
+		Size: 3.7 MB (3735503 bytes)
+	-	`sha256:50258fe8ebeff9f923454ee2d5462f93bce2af2119205c94bcf5afc0f6300b4f`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 334.0 B
+	-	`sha256:e7300e935dc63b74a3ae9d06b2444580b01ddbb4164ba81ff4ed9e2ef5a17c32`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 296.0 B
+	-	`sha256:e46394307f8ef729f5c0bc9b8d750811bbbc5e38d3e94536eea1be3dd4e88c44`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 1.3 MB (1329855 bytes)
+	-	`sha256:19acb871f096f1cf8e3d8b9bcd5eb781089c14ff76cc25fe0e7e301df84c8363`  
+		Last Modified: Thu, 11 Aug 2016 19:46:06 GMT  
+		Size: 31.1 MB (31086556 bytes)
+	-	`sha256:6dadc0f2c0b9bcb7a204888c0e91adb457ca2252f2e3608b27d21ffe753376ee`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 243.0 B
 
 ## `owncloud:9.0-apache`
 
 ```console
-$ docker pull owncloud@sha256:a20d60d727eb3f6343637e1ad71422f7db5cd7ca361e4981940e146137da8cae
+$ docker pull owncloud@sha256:a3a889676d675da3c98312eda91b9611917a7c11ce896b88436cc216fa44e34d
 ```
 
 -	Platforms:
@@ -3338,9 +3338,9 @@ $ docker pull owncloud@sha256:a20d60d727eb3f6343637e1ad71422f7db5cd7ca361e498194
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **230.5 MB (230469795 bytes)**  
+-	Total Size: **231.1 MB (231068087 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4924817af41c83d0945fed5e1152b20e5a759840230f14fd46592c4aa388797e`
+-	Image ID: `sha256:6e78cd630ccbd07ec738a9ca39fe211433301f035e16f534b66053e41a8ca521`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -3363,63 +3363,63 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 ENV APACHE_CONFDIR=/etc/apache2
 # Fri, 29 Jul 2016 20:49:44 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 29 Jul 2016 20:49:45 GMT
-RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
-# Fri, 29 Jul 2016 20:49:46 GMT
+# Wed, 10 Aug 2016 19:34:50 GMT
+RUN set -ex 		&& sed -r 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS" 		&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
+# Wed, 10 Aug 2016 19:34:51 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Fri, 29 Jul 2016 20:49:48 GMT
+# Wed, 10 Aug 2016 19:34:53 GMT
 RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Fri, 29 Jul 2016 20:49:50 GMT
+# Wed, 10 Aug 2016 19:34:55 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV PHP_VERSION=5.6.24
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_FILENAME=php-5.6.24.tar.xz
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:34:30 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:34:31 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:48 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:39:49 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:49 GMT
+# Wed, 10 Aug 2016 20:18:08 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:18:09 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:23:14 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:14 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 EXPOSE 80/tcp
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:16 GMT
 CMD ["apache2-foreground"]
-# Mon, 01 Aug 2016 17:47:44 GMT
+# Thu, 11 Aug 2016 19:40:17 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:51:21 GMT
+# Thu, 11 Aug 2016 19:44:21 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:51:23 GMT
+# Thu, 11 Aug 2016 19:44:23 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:51:25 GMT
+# Thu, 11 Aug 2016 19:44:25 GMT
 RUN a2enmod rewrite
-# Mon, 01 Aug 2016 17:52:06 GMT
+# Thu, 11 Aug 2016 19:45:12 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 17:52:07 GMT
+# Thu, 11 Aug 2016 19:45:13 GMT
 ENV OWNCLOUD_VERSION=9.0.4
-# Mon, 01 Aug 2016 17:52:08 GMT
+# Thu, 11 Aug 2016 19:45:14 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 17:52:25 GMT
+# Thu, 11 Aug 2016 19:45:40 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 17:52:26 GMT
+# Thu, 11 Aug 2016 19:45:42 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 17:52:27 GMT
+# Thu, 11 Aug 2016 19:45:43 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 17:52:28 GMT
+# Thu, 11 Aug 2016 19:45:43 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -3436,59 +3436,59 @@ CMD ["apache2-foreground"]
 	-	`sha256:b4ae91aad5222bbe7ca67b9c2b69e54fd29989bea1eec3d8a9aca56b011c303c`  
 		Last Modified: Fri, 29 Jul 2016 22:49:17 GMT  
 		Size: 2.8 MB (2846544 bytes)
-	-	`sha256:c0c9ad6136b5e7b142c48c7167eede3d15af54c538f7f3177c50693006cca242`  
-		Last Modified: Fri, 29 Jul 2016 22:49:15 GMT  
-		Size: 276.0 B
-	-	`sha256:b4b0c030555d4340cfe8288272d2bcb291c2f483f1957f1341cfaaea369dc109`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 431.0 B
-	-	`sha256:6e898edbabd79f8b8eaf7351077eff9966a11459347f335757f5341a0a889c16`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 222.0 B
-	-	`sha256:e4b8d84dea782a5effd404eec31320063107e0bb56fccaffae77c4430c8082a3`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
+	-	`sha256:66e1c1a53c958663cb6a8d19f5993b36bfaf8e334d476c5ed30d6766c8db1f9a`  
+		Last Modified: Wed, 10 Aug 2016 21:31:30 GMT  
+		Size: 270.0 B
+	-	`sha256:5d1f306a891255c05b40e49a8d1dd76efb713792e0aa200386ab0e269faa49dc`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 432.0 B
+	-	`sha256:37733078a51e3cf33ba985f69be1dda278d529bb87184a83c71037cade3170b4`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 223.0 B
+	-	`sha256:c5351b4d6bee8cc2fc09f2af750fa4627dfdd37b44b651f3f3289260783d3b38`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
 		Size: 475.0 B
-	-	`sha256:8e151ffc26f09785dd3e1b511b6cc5b32744241932c5ac3a909b032906167e2f`  
-		Last Modified: Fri, 29 Jul 2016 22:54:53 GMT  
-		Size: 12.4 MB (12399117 bytes)
-	-	`sha256:a51015ce0d7e5186d93e7c1f1de1710edce96d5dc45da09f1f1fd33e347b3f44`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 601.0 B
-	-	`sha256:1d1d7ce85493184d89b2695b6139c410038091d8c18ec819ace83d50bcbf4af8`  
-		Last Modified: Fri, 29 Jul 2016 22:54:57 GMT  
-		Size: 15.8 MB (15789648 bytes)
-	-	`sha256:1394b74e0f9d9bd5c6f6a2fd4058edd52deac35dbfaa36668aa49328db286a57`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:35f1f99fe906e63a6fe525a33188e64c2f84d2e332e51327bfd262027c598444`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 579.0 B
-	-	`sha256:181cf82fa46ce61260137919ef7f51982e0495697a3d7deb5040f7064698b96e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:50 GMT  
-		Size: 34.3 MB (34330228 bytes)
-	-	`sha256:dfeef7c75ef90a85c96834f4d5bfa43b8d6b5e4b8ce75ddcf9b3272e6bda87c8`  
-		Last Modified: Mon, 01 Aug 2016 17:52:41 GMT  
-		Size: 3.7 MB (3735515 bytes)
-	-	`sha256:9776e0b14ee38a4cfae7cd26f535a930364d51109bb650207740149fa1231f34`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 332.0 B
-	-	`sha256:aa6b3cbfda6f6a29648f5005f3b7bfc21667fd996ba72aaed09a7ae2c115ed3e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 294.0 B
-	-	`sha256:a0926b406f89277c8e7613682f4cb82051e12ab866b373a8c76d7f43df6a0f60`  
-		Last Modified: Mon, 01 Aug 2016 17:52:38 GMT  
-		Size: 1.3 MB (1329874 bytes)
-	-	`sha256:488abfa3f53a149682a342d3540fc362f6cc1d3c70979514f4775068652b94d3`  
-		Last Modified: Mon, 01 Aug 2016 17:52:47 GMT  
-		Size: 31.1 MB (31086563 bytes)
-	-	`sha256:47817047c58faef2b6b59fcf68b4148369deeb57dfa0d2bab2a95be9a9f9b42c`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 245.0 B
+	-	`sha256:68fab1fd02dce6a758d7907eaf173747d5504e714bc9dcf77bc0086bb8f98420`  
+		Last Modified: Wed, 10 Aug 2016 21:38:00 GMT  
+		Size: 12.4 MB (12399124 bytes)
+	-	`sha256:d63c862a4e8a8fe6642f7954b97624cd307b5b913f999697835d9dede0674595`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 492.0 B
+	-	`sha256:a1f41798510b1dfa029f4cd846d723cca3566637cceedc3aba17cf117605e4fe`  
+		Last Modified: Wed, 10 Aug 2016 21:38:07 GMT  
+		Size: 16.4 MB (16385973 bytes)
+	-	`sha256:a1cb79de526642a0956598b60e75c5c3d73693e4a6e41aa4666c3377d84fdb07`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 1.8 KB (1835 bytes)
+	-	`sha256:0ad59c7db086709fbfe994d1ed28d4818952b4981147090c9dd27c00c1665f13`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 583.0 B
+	-	`sha256:b486b4dba63edbb3698efdc9d49c726ee9485f492208b1c58243546e551b401e`  
+		Last Modified: Thu, 11 Aug 2016 19:46:10 GMT  
+		Size: 34.3 MB (34332251 bytes)
+	-	`sha256:7cd3a3ec048bc1083af9b206381543bba7ba4e95ef59231092a744c329062c81`  
+		Last Modified: Thu, 11 Aug 2016 19:45:59 GMT  
+		Size: 3.7 MB (3735503 bytes)
+	-	`sha256:50258fe8ebeff9f923454ee2d5462f93bce2af2119205c94bcf5afc0f6300b4f`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 334.0 B
+	-	`sha256:e7300e935dc63b74a3ae9d06b2444580b01ddbb4164ba81ff4ed9e2ef5a17c32`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 296.0 B
+	-	`sha256:e46394307f8ef729f5c0bc9b8d750811bbbc5e38d3e94536eea1be3dd4e88c44`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 1.3 MB (1329855 bytes)
+	-	`sha256:19acb871f096f1cf8e3d8b9bcd5eb781089c14ff76cc25fe0e7e301df84c8363`  
+		Last Modified: Thu, 11 Aug 2016 19:46:06 GMT  
+		Size: 31.1 MB (31086556 bytes)
+	-	`sha256:6dadc0f2c0b9bcb7a204888c0e91adb457ca2252f2e3608b27d21ffe753376ee`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 243.0 B
 
 ## `owncloud:9-apache`
 
 ```console
-$ docker pull owncloud@sha256:a20d60d727eb3f6343637e1ad71422f7db5cd7ca361e4981940e146137da8cae
+$ docker pull owncloud@sha256:a3a889676d675da3c98312eda91b9611917a7c11ce896b88436cc216fa44e34d
 ```
 
 -	Platforms:
@@ -3498,9 +3498,9 @@ $ docker pull owncloud@sha256:a20d60d727eb3f6343637e1ad71422f7db5cd7ca361e498194
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **230.5 MB (230469795 bytes)**  
+-	Total Size: **231.1 MB (231068087 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4924817af41c83d0945fed5e1152b20e5a759840230f14fd46592c4aa388797e`
+-	Image ID: `sha256:6e78cd630ccbd07ec738a9ca39fe211433301f035e16f534b66053e41a8ca521`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -3523,63 +3523,63 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 ENV APACHE_CONFDIR=/etc/apache2
 # Fri, 29 Jul 2016 20:49:44 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 29 Jul 2016 20:49:45 GMT
-RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
-# Fri, 29 Jul 2016 20:49:46 GMT
+# Wed, 10 Aug 2016 19:34:50 GMT
+RUN set -ex 		&& sed -r 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS" 		&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
+# Wed, 10 Aug 2016 19:34:51 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Fri, 29 Jul 2016 20:49:48 GMT
+# Wed, 10 Aug 2016 19:34:53 GMT
 RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Fri, 29 Jul 2016 20:49:50 GMT
+# Wed, 10 Aug 2016 19:34:55 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV PHP_VERSION=5.6.24
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_FILENAME=php-5.6.24.tar.xz
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:34:30 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:34:31 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:48 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:39:49 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:49 GMT
+# Wed, 10 Aug 2016 20:18:08 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:18:09 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:23:14 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:14 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 EXPOSE 80/tcp
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:16 GMT
 CMD ["apache2-foreground"]
-# Mon, 01 Aug 2016 17:47:44 GMT
+# Thu, 11 Aug 2016 19:40:17 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:51:21 GMT
+# Thu, 11 Aug 2016 19:44:21 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:51:23 GMT
+# Thu, 11 Aug 2016 19:44:23 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:51:25 GMT
+# Thu, 11 Aug 2016 19:44:25 GMT
 RUN a2enmod rewrite
-# Mon, 01 Aug 2016 17:52:06 GMT
+# Thu, 11 Aug 2016 19:45:12 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 17:52:07 GMT
+# Thu, 11 Aug 2016 19:45:13 GMT
 ENV OWNCLOUD_VERSION=9.0.4
-# Mon, 01 Aug 2016 17:52:08 GMT
+# Thu, 11 Aug 2016 19:45:14 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 17:52:25 GMT
+# Thu, 11 Aug 2016 19:45:40 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 17:52:26 GMT
+# Thu, 11 Aug 2016 19:45:42 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 17:52:27 GMT
+# Thu, 11 Aug 2016 19:45:43 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 17:52:28 GMT
+# Thu, 11 Aug 2016 19:45:43 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -3596,59 +3596,59 @@ CMD ["apache2-foreground"]
 	-	`sha256:b4ae91aad5222bbe7ca67b9c2b69e54fd29989bea1eec3d8a9aca56b011c303c`  
 		Last Modified: Fri, 29 Jul 2016 22:49:17 GMT  
 		Size: 2.8 MB (2846544 bytes)
-	-	`sha256:c0c9ad6136b5e7b142c48c7167eede3d15af54c538f7f3177c50693006cca242`  
-		Last Modified: Fri, 29 Jul 2016 22:49:15 GMT  
-		Size: 276.0 B
-	-	`sha256:b4b0c030555d4340cfe8288272d2bcb291c2f483f1957f1341cfaaea369dc109`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 431.0 B
-	-	`sha256:6e898edbabd79f8b8eaf7351077eff9966a11459347f335757f5341a0a889c16`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 222.0 B
-	-	`sha256:e4b8d84dea782a5effd404eec31320063107e0bb56fccaffae77c4430c8082a3`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
+	-	`sha256:66e1c1a53c958663cb6a8d19f5993b36bfaf8e334d476c5ed30d6766c8db1f9a`  
+		Last Modified: Wed, 10 Aug 2016 21:31:30 GMT  
+		Size: 270.0 B
+	-	`sha256:5d1f306a891255c05b40e49a8d1dd76efb713792e0aa200386ab0e269faa49dc`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 432.0 B
+	-	`sha256:37733078a51e3cf33ba985f69be1dda278d529bb87184a83c71037cade3170b4`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 223.0 B
+	-	`sha256:c5351b4d6bee8cc2fc09f2af750fa4627dfdd37b44b651f3f3289260783d3b38`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
 		Size: 475.0 B
-	-	`sha256:8e151ffc26f09785dd3e1b511b6cc5b32744241932c5ac3a909b032906167e2f`  
-		Last Modified: Fri, 29 Jul 2016 22:54:53 GMT  
-		Size: 12.4 MB (12399117 bytes)
-	-	`sha256:a51015ce0d7e5186d93e7c1f1de1710edce96d5dc45da09f1f1fd33e347b3f44`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 601.0 B
-	-	`sha256:1d1d7ce85493184d89b2695b6139c410038091d8c18ec819ace83d50bcbf4af8`  
-		Last Modified: Fri, 29 Jul 2016 22:54:57 GMT  
-		Size: 15.8 MB (15789648 bytes)
-	-	`sha256:1394b74e0f9d9bd5c6f6a2fd4058edd52deac35dbfaa36668aa49328db286a57`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:35f1f99fe906e63a6fe525a33188e64c2f84d2e332e51327bfd262027c598444`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 579.0 B
-	-	`sha256:181cf82fa46ce61260137919ef7f51982e0495697a3d7deb5040f7064698b96e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:50 GMT  
-		Size: 34.3 MB (34330228 bytes)
-	-	`sha256:dfeef7c75ef90a85c96834f4d5bfa43b8d6b5e4b8ce75ddcf9b3272e6bda87c8`  
-		Last Modified: Mon, 01 Aug 2016 17:52:41 GMT  
-		Size: 3.7 MB (3735515 bytes)
-	-	`sha256:9776e0b14ee38a4cfae7cd26f535a930364d51109bb650207740149fa1231f34`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 332.0 B
-	-	`sha256:aa6b3cbfda6f6a29648f5005f3b7bfc21667fd996ba72aaed09a7ae2c115ed3e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 294.0 B
-	-	`sha256:a0926b406f89277c8e7613682f4cb82051e12ab866b373a8c76d7f43df6a0f60`  
-		Last Modified: Mon, 01 Aug 2016 17:52:38 GMT  
-		Size: 1.3 MB (1329874 bytes)
-	-	`sha256:488abfa3f53a149682a342d3540fc362f6cc1d3c70979514f4775068652b94d3`  
-		Last Modified: Mon, 01 Aug 2016 17:52:47 GMT  
-		Size: 31.1 MB (31086563 bytes)
-	-	`sha256:47817047c58faef2b6b59fcf68b4148369deeb57dfa0d2bab2a95be9a9f9b42c`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 245.0 B
+	-	`sha256:68fab1fd02dce6a758d7907eaf173747d5504e714bc9dcf77bc0086bb8f98420`  
+		Last Modified: Wed, 10 Aug 2016 21:38:00 GMT  
+		Size: 12.4 MB (12399124 bytes)
+	-	`sha256:d63c862a4e8a8fe6642f7954b97624cd307b5b913f999697835d9dede0674595`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 492.0 B
+	-	`sha256:a1f41798510b1dfa029f4cd846d723cca3566637cceedc3aba17cf117605e4fe`  
+		Last Modified: Wed, 10 Aug 2016 21:38:07 GMT  
+		Size: 16.4 MB (16385973 bytes)
+	-	`sha256:a1cb79de526642a0956598b60e75c5c3d73693e4a6e41aa4666c3377d84fdb07`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 1.8 KB (1835 bytes)
+	-	`sha256:0ad59c7db086709fbfe994d1ed28d4818952b4981147090c9dd27c00c1665f13`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 583.0 B
+	-	`sha256:b486b4dba63edbb3698efdc9d49c726ee9485f492208b1c58243546e551b401e`  
+		Last Modified: Thu, 11 Aug 2016 19:46:10 GMT  
+		Size: 34.3 MB (34332251 bytes)
+	-	`sha256:7cd3a3ec048bc1083af9b206381543bba7ba4e95ef59231092a744c329062c81`  
+		Last Modified: Thu, 11 Aug 2016 19:45:59 GMT  
+		Size: 3.7 MB (3735503 bytes)
+	-	`sha256:50258fe8ebeff9f923454ee2d5462f93bce2af2119205c94bcf5afc0f6300b4f`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 334.0 B
+	-	`sha256:e7300e935dc63b74a3ae9d06b2444580b01ddbb4164ba81ff4ed9e2ef5a17c32`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 296.0 B
+	-	`sha256:e46394307f8ef729f5c0bc9b8d750811bbbc5e38d3e94536eea1be3dd4e88c44`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 1.3 MB (1329855 bytes)
+	-	`sha256:19acb871f096f1cf8e3d8b9bcd5eb781089c14ff76cc25fe0e7e301df84c8363`  
+		Last Modified: Thu, 11 Aug 2016 19:46:06 GMT  
+		Size: 31.1 MB (31086556 bytes)
+	-	`sha256:6dadc0f2c0b9bcb7a204888c0e91adb457ca2252f2e3608b27d21ffe753376ee`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 243.0 B
 
 ## `owncloud:apache`
 
 ```console
-$ docker pull owncloud@sha256:a20d60d727eb3f6343637e1ad71422f7db5cd7ca361e4981940e146137da8cae
+$ docker pull owncloud@sha256:a3a889676d675da3c98312eda91b9611917a7c11ce896b88436cc216fa44e34d
 ```
 
 -	Platforms:
@@ -3658,9 +3658,9 @@ $ docker pull owncloud@sha256:a20d60d727eb3f6343637e1ad71422f7db5cd7ca361e498194
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **230.5 MB (230469795 bytes)**  
+-	Total Size: **231.1 MB (231068087 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4924817af41c83d0945fed5e1152b20e5a759840230f14fd46592c4aa388797e`
+-	Image ID: `sha256:6e78cd630ccbd07ec738a9ca39fe211433301f035e16f534b66053e41a8ca521`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -3683,63 +3683,63 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 ENV APACHE_CONFDIR=/etc/apache2
 # Fri, 29 Jul 2016 20:49:44 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 29 Jul 2016 20:49:45 GMT
-RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
-# Fri, 29 Jul 2016 20:49:46 GMT
+# Wed, 10 Aug 2016 19:34:50 GMT
+RUN set -ex 		&& sed -r 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS" 		&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
+# Wed, 10 Aug 2016 19:34:51 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Fri, 29 Jul 2016 20:49:48 GMT
+# Wed, 10 Aug 2016 19:34:53 GMT
 RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Fri, 29 Jul 2016 20:49:50 GMT
+# Wed, 10 Aug 2016 19:34:55 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV PHP_VERSION=5.6.24
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_FILENAME=php-5.6.24.tar.xz
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:34:30 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:34:31 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:48 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:39:49 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:49 GMT
+# Wed, 10 Aug 2016 20:18:08 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:18:09 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:23:14 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:14 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 EXPOSE 80/tcp
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:16 GMT
 CMD ["apache2-foreground"]
-# Mon, 01 Aug 2016 17:47:44 GMT
+# Thu, 11 Aug 2016 19:40:17 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:51:21 GMT
+# Thu, 11 Aug 2016 19:44:21 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:51:23 GMT
+# Thu, 11 Aug 2016 19:44:23 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:51:25 GMT
+# Thu, 11 Aug 2016 19:44:25 GMT
 RUN a2enmod rewrite
-# Mon, 01 Aug 2016 17:52:06 GMT
+# Thu, 11 Aug 2016 19:45:12 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 17:52:07 GMT
+# Thu, 11 Aug 2016 19:45:13 GMT
 ENV OWNCLOUD_VERSION=9.0.4
-# Mon, 01 Aug 2016 17:52:08 GMT
+# Thu, 11 Aug 2016 19:45:14 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 17:52:25 GMT
+# Thu, 11 Aug 2016 19:45:40 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 17:52:26 GMT
+# Thu, 11 Aug 2016 19:45:42 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 17:52:27 GMT
+# Thu, 11 Aug 2016 19:45:43 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 17:52:28 GMT
+# Thu, 11 Aug 2016 19:45:43 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -3756,59 +3756,59 @@ CMD ["apache2-foreground"]
 	-	`sha256:b4ae91aad5222bbe7ca67b9c2b69e54fd29989bea1eec3d8a9aca56b011c303c`  
 		Last Modified: Fri, 29 Jul 2016 22:49:17 GMT  
 		Size: 2.8 MB (2846544 bytes)
-	-	`sha256:c0c9ad6136b5e7b142c48c7167eede3d15af54c538f7f3177c50693006cca242`  
-		Last Modified: Fri, 29 Jul 2016 22:49:15 GMT  
-		Size: 276.0 B
-	-	`sha256:b4b0c030555d4340cfe8288272d2bcb291c2f483f1957f1341cfaaea369dc109`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 431.0 B
-	-	`sha256:6e898edbabd79f8b8eaf7351077eff9966a11459347f335757f5341a0a889c16`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 222.0 B
-	-	`sha256:e4b8d84dea782a5effd404eec31320063107e0bb56fccaffae77c4430c8082a3`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
+	-	`sha256:66e1c1a53c958663cb6a8d19f5993b36bfaf8e334d476c5ed30d6766c8db1f9a`  
+		Last Modified: Wed, 10 Aug 2016 21:31:30 GMT  
+		Size: 270.0 B
+	-	`sha256:5d1f306a891255c05b40e49a8d1dd76efb713792e0aa200386ab0e269faa49dc`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 432.0 B
+	-	`sha256:37733078a51e3cf33ba985f69be1dda278d529bb87184a83c71037cade3170b4`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 223.0 B
+	-	`sha256:c5351b4d6bee8cc2fc09f2af750fa4627dfdd37b44b651f3f3289260783d3b38`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
 		Size: 475.0 B
-	-	`sha256:8e151ffc26f09785dd3e1b511b6cc5b32744241932c5ac3a909b032906167e2f`  
-		Last Modified: Fri, 29 Jul 2016 22:54:53 GMT  
-		Size: 12.4 MB (12399117 bytes)
-	-	`sha256:a51015ce0d7e5186d93e7c1f1de1710edce96d5dc45da09f1f1fd33e347b3f44`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 601.0 B
-	-	`sha256:1d1d7ce85493184d89b2695b6139c410038091d8c18ec819ace83d50bcbf4af8`  
-		Last Modified: Fri, 29 Jul 2016 22:54:57 GMT  
-		Size: 15.8 MB (15789648 bytes)
-	-	`sha256:1394b74e0f9d9bd5c6f6a2fd4058edd52deac35dbfaa36668aa49328db286a57`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:35f1f99fe906e63a6fe525a33188e64c2f84d2e332e51327bfd262027c598444`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 579.0 B
-	-	`sha256:181cf82fa46ce61260137919ef7f51982e0495697a3d7deb5040f7064698b96e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:50 GMT  
-		Size: 34.3 MB (34330228 bytes)
-	-	`sha256:dfeef7c75ef90a85c96834f4d5bfa43b8d6b5e4b8ce75ddcf9b3272e6bda87c8`  
-		Last Modified: Mon, 01 Aug 2016 17:52:41 GMT  
-		Size: 3.7 MB (3735515 bytes)
-	-	`sha256:9776e0b14ee38a4cfae7cd26f535a930364d51109bb650207740149fa1231f34`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 332.0 B
-	-	`sha256:aa6b3cbfda6f6a29648f5005f3b7bfc21667fd996ba72aaed09a7ae2c115ed3e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 294.0 B
-	-	`sha256:a0926b406f89277c8e7613682f4cb82051e12ab866b373a8c76d7f43df6a0f60`  
-		Last Modified: Mon, 01 Aug 2016 17:52:38 GMT  
-		Size: 1.3 MB (1329874 bytes)
-	-	`sha256:488abfa3f53a149682a342d3540fc362f6cc1d3c70979514f4775068652b94d3`  
-		Last Modified: Mon, 01 Aug 2016 17:52:47 GMT  
-		Size: 31.1 MB (31086563 bytes)
-	-	`sha256:47817047c58faef2b6b59fcf68b4148369deeb57dfa0d2bab2a95be9a9f9b42c`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 245.0 B
+	-	`sha256:68fab1fd02dce6a758d7907eaf173747d5504e714bc9dcf77bc0086bb8f98420`  
+		Last Modified: Wed, 10 Aug 2016 21:38:00 GMT  
+		Size: 12.4 MB (12399124 bytes)
+	-	`sha256:d63c862a4e8a8fe6642f7954b97624cd307b5b913f999697835d9dede0674595`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 492.0 B
+	-	`sha256:a1f41798510b1dfa029f4cd846d723cca3566637cceedc3aba17cf117605e4fe`  
+		Last Modified: Wed, 10 Aug 2016 21:38:07 GMT  
+		Size: 16.4 MB (16385973 bytes)
+	-	`sha256:a1cb79de526642a0956598b60e75c5c3d73693e4a6e41aa4666c3377d84fdb07`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 1.8 KB (1835 bytes)
+	-	`sha256:0ad59c7db086709fbfe994d1ed28d4818952b4981147090c9dd27c00c1665f13`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 583.0 B
+	-	`sha256:b486b4dba63edbb3698efdc9d49c726ee9485f492208b1c58243546e551b401e`  
+		Last Modified: Thu, 11 Aug 2016 19:46:10 GMT  
+		Size: 34.3 MB (34332251 bytes)
+	-	`sha256:7cd3a3ec048bc1083af9b206381543bba7ba4e95ef59231092a744c329062c81`  
+		Last Modified: Thu, 11 Aug 2016 19:45:59 GMT  
+		Size: 3.7 MB (3735503 bytes)
+	-	`sha256:50258fe8ebeff9f923454ee2d5462f93bce2af2119205c94bcf5afc0f6300b4f`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 334.0 B
+	-	`sha256:e7300e935dc63b74a3ae9d06b2444580b01ddbb4164ba81ff4ed9e2ef5a17c32`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 296.0 B
+	-	`sha256:e46394307f8ef729f5c0bc9b8d750811bbbc5e38d3e94536eea1be3dd4e88c44`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 1.3 MB (1329855 bytes)
+	-	`sha256:19acb871f096f1cf8e3d8b9bcd5eb781089c14ff76cc25fe0e7e301df84c8363`  
+		Last Modified: Thu, 11 Aug 2016 19:46:06 GMT  
+		Size: 31.1 MB (31086556 bytes)
+	-	`sha256:6dadc0f2c0b9bcb7a204888c0e91adb457ca2252f2e3608b27d21ffe753376ee`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 243.0 B
 
 ## `owncloud:9.0.4`
 
 ```console
-$ docker pull owncloud@sha256:a20d60d727eb3f6343637e1ad71422f7db5cd7ca361e4981940e146137da8cae
+$ docker pull owncloud@sha256:a3a889676d675da3c98312eda91b9611917a7c11ce896b88436cc216fa44e34d
 ```
 
 -	Platforms:
@@ -3818,9 +3818,9 @@ $ docker pull owncloud@sha256:a20d60d727eb3f6343637e1ad71422f7db5cd7ca361e498194
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **230.5 MB (230469795 bytes)**  
+-	Total Size: **231.1 MB (231068087 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4924817af41c83d0945fed5e1152b20e5a759840230f14fd46592c4aa388797e`
+-	Image ID: `sha256:6e78cd630ccbd07ec738a9ca39fe211433301f035e16f534b66053e41a8ca521`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -3843,63 +3843,63 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 ENV APACHE_CONFDIR=/etc/apache2
 # Fri, 29 Jul 2016 20:49:44 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 29 Jul 2016 20:49:45 GMT
-RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
-# Fri, 29 Jul 2016 20:49:46 GMT
+# Wed, 10 Aug 2016 19:34:50 GMT
+RUN set -ex 		&& sed -r 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS" 		&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
+# Wed, 10 Aug 2016 19:34:51 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Fri, 29 Jul 2016 20:49:48 GMT
+# Wed, 10 Aug 2016 19:34:53 GMT
 RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Fri, 29 Jul 2016 20:49:50 GMT
+# Wed, 10 Aug 2016 19:34:55 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV PHP_VERSION=5.6.24
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_FILENAME=php-5.6.24.tar.xz
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:34:30 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:34:31 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:48 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:39:49 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:49 GMT
+# Wed, 10 Aug 2016 20:18:08 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:18:09 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:23:14 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:14 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 EXPOSE 80/tcp
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:16 GMT
 CMD ["apache2-foreground"]
-# Mon, 01 Aug 2016 17:47:44 GMT
+# Thu, 11 Aug 2016 19:40:17 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:51:21 GMT
+# Thu, 11 Aug 2016 19:44:21 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:51:23 GMT
+# Thu, 11 Aug 2016 19:44:23 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:51:25 GMT
+# Thu, 11 Aug 2016 19:44:25 GMT
 RUN a2enmod rewrite
-# Mon, 01 Aug 2016 17:52:06 GMT
+# Thu, 11 Aug 2016 19:45:12 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 17:52:07 GMT
+# Thu, 11 Aug 2016 19:45:13 GMT
 ENV OWNCLOUD_VERSION=9.0.4
-# Mon, 01 Aug 2016 17:52:08 GMT
+# Thu, 11 Aug 2016 19:45:14 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 17:52:25 GMT
+# Thu, 11 Aug 2016 19:45:40 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 17:52:26 GMT
+# Thu, 11 Aug 2016 19:45:42 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 17:52:27 GMT
+# Thu, 11 Aug 2016 19:45:43 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 17:52:28 GMT
+# Thu, 11 Aug 2016 19:45:43 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -3916,59 +3916,59 @@ CMD ["apache2-foreground"]
 	-	`sha256:b4ae91aad5222bbe7ca67b9c2b69e54fd29989bea1eec3d8a9aca56b011c303c`  
 		Last Modified: Fri, 29 Jul 2016 22:49:17 GMT  
 		Size: 2.8 MB (2846544 bytes)
-	-	`sha256:c0c9ad6136b5e7b142c48c7167eede3d15af54c538f7f3177c50693006cca242`  
-		Last Modified: Fri, 29 Jul 2016 22:49:15 GMT  
-		Size: 276.0 B
-	-	`sha256:b4b0c030555d4340cfe8288272d2bcb291c2f483f1957f1341cfaaea369dc109`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 431.0 B
-	-	`sha256:6e898edbabd79f8b8eaf7351077eff9966a11459347f335757f5341a0a889c16`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 222.0 B
-	-	`sha256:e4b8d84dea782a5effd404eec31320063107e0bb56fccaffae77c4430c8082a3`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
+	-	`sha256:66e1c1a53c958663cb6a8d19f5993b36bfaf8e334d476c5ed30d6766c8db1f9a`  
+		Last Modified: Wed, 10 Aug 2016 21:31:30 GMT  
+		Size: 270.0 B
+	-	`sha256:5d1f306a891255c05b40e49a8d1dd76efb713792e0aa200386ab0e269faa49dc`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 432.0 B
+	-	`sha256:37733078a51e3cf33ba985f69be1dda278d529bb87184a83c71037cade3170b4`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 223.0 B
+	-	`sha256:c5351b4d6bee8cc2fc09f2af750fa4627dfdd37b44b651f3f3289260783d3b38`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
 		Size: 475.0 B
-	-	`sha256:8e151ffc26f09785dd3e1b511b6cc5b32744241932c5ac3a909b032906167e2f`  
-		Last Modified: Fri, 29 Jul 2016 22:54:53 GMT  
-		Size: 12.4 MB (12399117 bytes)
-	-	`sha256:a51015ce0d7e5186d93e7c1f1de1710edce96d5dc45da09f1f1fd33e347b3f44`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 601.0 B
-	-	`sha256:1d1d7ce85493184d89b2695b6139c410038091d8c18ec819ace83d50bcbf4af8`  
-		Last Modified: Fri, 29 Jul 2016 22:54:57 GMT  
-		Size: 15.8 MB (15789648 bytes)
-	-	`sha256:1394b74e0f9d9bd5c6f6a2fd4058edd52deac35dbfaa36668aa49328db286a57`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:35f1f99fe906e63a6fe525a33188e64c2f84d2e332e51327bfd262027c598444`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 579.0 B
-	-	`sha256:181cf82fa46ce61260137919ef7f51982e0495697a3d7deb5040f7064698b96e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:50 GMT  
-		Size: 34.3 MB (34330228 bytes)
-	-	`sha256:dfeef7c75ef90a85c96834f4d5bfa43b8d6b5e4b8ce75ddcf9b3272e6bda87c8`  
-		Last Modified: Mon, 01 Aug 2016 17:52:41 GMT  
-		Size: 3.7 MB (3735515 bytes)
-	-	`sha256:9776e0b14ee38a4cfae7cd26f535a930364d51109bb650207740149fa1231f34`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 332.0 B
-	-	`sha256:aa6b3cbfda6f6a29648f5005f3b7bfc21667fd996ba72aaed09a7ae2c115ed3e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 294.0 B
-	-	`sha256:a0926b406f89277c8e7613682f4cb82051e12ab866b373a8c76d7f43df6a0f60`  
-		Last Modified: Mon, 01 Aug 2016 17:52:38 GMT  
-		Size: 1.3 MB (1329874 bytes)
-	-	`sha256:488abfa3f53a149682a342d3540fc362f6cc1d3c70979514f4775068652b94d3`  
-		Last Modified: Mon, 01 Aug 2016 17:52:47 GMT  
-		Size: 31.1 MB (31086563 bytes)
-	-	`sha256:47817047c58faef2b6b59fcf68b4148369deeb57dfa0d2bab2a95be9a9f9b42c`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 245.0 B
+	-	`sha256:68fab1fd02dce6a758d7907eaf173747d5504e714bc9dcf77bc0086bb8f98420`  
+		Last Modified: Wed, 10 Aug 2016 21:38:00 GMT  
+		Size: 12.4 MB (12399124 bytes)
+	-	`sha256:d63c862a4e8a8fe6642f7954b97624cd307b5b913f999697835d9dede0674595`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 492.0 B
+	-	`sha256:a1f41798510b1dfa029f4cd846d723cca3566637cceedc3aba17cf117605e4fe`  
+		Last Modified: Wed, 10 Aug 2016 21:38:07 GMT  
+		Size: 16.4 MB (16385973 bytes)
+	-	`sha256:a1cb79de526642a0956598b60e75c5c3d73693e4a6e41aa4666c3377d84fdb07`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 1.8 KB (1835 bytes)
+	-	`sha256:0ad59c7db086709fbfe994d1ed28d4818952b4981147090c9dd27c00c1665f13`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 583.0 B
+	-	`sha256:b486b4dba63edbb3698efdc9d49c726ee9485f492208b1c58243546e551b401e`  
+		Last Modified: Thu, 11 Aug 2016 19:46:10 GMT  
+		Size: 34.3 MB (34332251 bytes)
+	-	`sha256:7cd3a3ec048bc1083af9b206381543bba7ba4e95ef59231092a744c329062c81`  
+		Last Modified: Thu, 11 Aug 2016 19:45:59 GMT  
+		Size: 3.7 MB (3735503 bytes)
+	-	`sha256:50258fe8ebeff9f923454ee2d5462f93bce2af2119205c94bcf5afc0f6300b4f`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 334.0 B
+	-	`sha256:e7300e935dc63b74a3ae9d06b2444580b01ddbb4164ba81ff4ed9e2ef5a17c32`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 296.0 B
+	-	`sha256:e46394307f8ef729f5c0bc9b8d750811bbbc5e38d3e94536eea1be3dd4e88c44`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 1.3 MB (1329855 bytes)
+	-	`sha256:19acb871f096f1cf8e3d8b9bcd5eb781089c14ff76cc25fe0e7e301df84c8363`  
+		Last Modified: Thu, 11 Aug 2016 19:46:06 GMT  
+		Size: 31.1 MB (31086556 bytes)
+	-	`sha256:6dadc0f2c0b9bcb7a204888c0e91adb457ca2252f2e3608b27d21ffe753376ee`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 243.0 B
 
 ## `owncloud:9.0`
 
 ```console
-$ docker pull owncloud@sha256:a20d60d727eb3f6343637e1ad71422f7db5cd7ca361e4981940e146137da8cae
+$ docker pull owncloud@sha256:a3a889676d675da3c98312eda91b9611917a7c11ce896b88436cc216fa44e34d
 ```
 
 -	Platforms:
@@ -3978,9 +3978,9 @@ $ docker pull owncloud@sha256:a20d60d727eb3f6343637e1ad71422f7db5cd7ca361e498194
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **230.5 MB (230469795 bytes)**  
+-	Total Size: **231.1 MB (231068087 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4924817af41c83d0945fed5e1152b20e5a759840230f14fd46592c4aa388797e`
+-	Image ID: `sha256:6e78cd630ccbd07ec738a9ca39fe211433301f035e16f534b66053e41a8ca521`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -4003,63 +4003,63 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 ENV APACHE_CONFDIR=/etc/apache2
 # Fri, 29 Jul 2016 20:49:44 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 29 Jul 2016 20:49:45 GMT
-RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
-# Fri, 29 Jul 2016 20:49:46 GMT
+# Wed, 10 Aug 2016 19:34:50 GMT
+RUN set -ex 		&& sed -r 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS" 		&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
+# Wed, 10 Aug 2016 19:34:51 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Fri, 29 Jul 2016 20:49:48 GMT
+# Wed, 10 Aug 2016 19:34:53 GMT
 RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Fri, 29 Jul 2016 20:49:50 GMT
+# Wed, 10 Aug 2016 19:34:55 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV PHP_VERSION=5.6.24
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_FILENAME=php-5.6.24.tar.xz
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:34:30 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:34:31 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:48 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:39:49 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:49 GMT
+# Wed, 10 Aug 2016 20:18:08 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:18:09 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:23:14 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:14 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 EXPOSE 80/tcp
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:16 GMT
 CMD ["apache2-foreground"]
-# Mon, 01 Aug 2016 17:47:44 GMT
+# Thu, 11 Aug 2016 19:40:17 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:51:21 GMT
+# Thu, 11 Aug 2016 19:44:21 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:51:23 GMT
+# Thu, 11 Aug 2016 19:44:23 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:51:25 GMT
+# Thu, 11 Aug 2016 19:44:25 GMT
 RUN a2enmod rewrite
-# Mon, 01 Aug 2016 17:52:06 GMT
+# Thu, 11 Aug 2016 19:45:12 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 17:52:07 GMT
+# Thu, 11 Aug 2016 19:45:13 GMT
 ENV OWNCLOUD_VERSION=9.0.4
-# Mon, 01 Aug 2016 17:52:08 GMT
+# Thu, 11 Aug 2016 19:45:14 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 17:52:25 GMT
+# Thu, 11 Aug 2016 19:45:40 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 17:52:26 GMT
+# Thu, 11 Aug 2016 19:45:42 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 17:52:27 GMT
+# Thu, 11 Aug 2016 19:45:43 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 17:52:28 GMT
+# Thu, 11 Aug 2016 19:45:43 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -4076,59 +4076,59 @@ CMD ["apache2-foreground"]
 	-	`sha256:b4ae91aad5222bbe7ca67b9c2b69e54fd29989bea1eec3d8a9aca56b011c303c`  
 		Last Modified: Fri, 29 Jul 2016 22:49:17 GMT  
 		Size: 2.8 MB (2846544 bytes)
-	-	`sha256:c0c9ad6136b5e7b142c48c7167eede3d15af54c538f7f3177c50693006cca242`  
-		Last Modified: Fri, 29 Jul 2016 22:49:15 GMT  
-		Size: 276.0 B
-	-	`sha256:b4b0c030555d4340cfe8288272d2bcb291c2f483f1957f1341cfaaea369dc109`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 431.0 B
-	-	`sha256:6e898edbabd79f8b8eaf7351077eff9966a11459347f335757f5341a0a889c16`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 222.0 B
-	-	`sha256:e4b8d84dea782a5effd404eec31320063107e0bb56fccaffae77c4430c8082a3`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
+	-	`sha256:66e1c1a53c958663cb6a8d19f5993b36bfaf8e334d476c5ed30d6766c8db1f9a`  
+		Last Modified: Wed, 10 Aug 2016 21:31:30 GMT  
+		Size: 270.0 B
+	-	`sha256:5d1f306a891255c05b40e49a8d1dd76efb713792e0aa200386ab0e269faa49dc`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 432.0 B
+	-	`sha256:37733078a51e3cf33ba985f69be1dda278d529bb87184a83c71037cade3170b4`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 223.0 B
+	-	`sha256:c5351b4d6bee8cc2fc09f2af750fa4627dfdd37b44b651f3f3289260783d3b38`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
 		Size: 475.0 B
-	-	`sha256:8e151ffc26f09785dd3e1b511b6cc5b32744241932c5ac3a909b032906167e2f`  
-		Last Modified: Fri, 29 Jul 2016 22:54:53 GMT  
-		Size: 12.4 MB (12399117 bytes)
-	-	`sha256:a51015ce0d7e5186d93e7c1f1de1710edce96d5dc45da09f1f1fd33e347b3f44`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 601.0 B
-	-	`sha256:1d1d7ce85493184d89b2695b6139c410038091d8c18ec819ace83d50bcbf4af8`  
-		Last Modified: Fri, 29 Jul 2016 22:54:57 GMT  
-		Size: 15.8 MB (15789648 bytes)
-	-	`sha256:1394b74e0f9d9bd5c6f6a2fd4058edd52deac35dbfaa36668aa49328db286a57`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:35f1f99fe906e63a6fe525a33188e64c2f84d2e332e51327bfd262027c598444`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 579.0 B
-	-	`sha256:181cf82fa46ce61260137919ef7f51982e0495697a3d7deb5040f7064698b96e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:50 GMT  
-		Size: 34.3 MB (34330228 bytes)
-	-	`sha256:dfeef7c75ef90a85c96834f4d5bfa43b8d6b5e4b8ce75ddcf9b3272e6bda87c8`  
-		Last Modified: Mon, 01 Aug 2016 17:52:41 GMT  
-		Size: 3.7 MB (3735515 bytes)
-	-	`sha256:9776e0b14ee38a4cfae7cd26f535a930364d51109bb650207740149fa1231f34`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 332.0 B
-	-	`sha256:aa6b3cbfda6f6a29648f5005f3b7bfc21667fd996ba72aaed09a7ae2c115ed3e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 294.0 B
-	-	`sha256:a0926b406f89277c8e7613682f4cb82051e12ab866b373a8c76d7f43df6a0f60`  
-		Last Modified: Mon, 01 Aug 2016 17:52:38 GMT  
-		Size: 1.3 MB (1329874 bytes)
-	-	`sha256:488abfa3f53a149682a342d3540fc362f6cc1d3c70979514f4775068652b94d3`  
-		Last Modified: Mon, 01 Aug 2016 17:52:47 GMT  
-		Size: 31.1 MB (31086563 bytes)
-	-	`sha256:47817047c58faef2b6b59fcf68b4148369deeb57dfa0d2bab2a95be9a9f9b42c`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 245.0 B
+	-	`sha256:68fab1fd02dce6a758d7907eaf173747d5504e714bc9dcf77bc0086bb8f98420`  
+		Last Modified: Wed, 10 Aug 2016 21:38:00 GMT  
+		Size: 12.4 MB (12399124 bytes)
+	-	`sha256:d63c862a4e8a8fe6642f7954b97624cd307b5b913f999697835d9dede0674595`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 492.0 B
+	-	`sha256:a1f41798510b1dfa029f4cd846d723cca3566637cceedc3aba17cf117605e4fe`  
+		Last Modified: Wed, 10 Aug 2016 21:38:07 GMT  
+		Size: 16.4 MB (16385973 bytes)
+	-	`sha256:a1cb79de526642a0956598b60e75c5c3d73693e4a6e41aa4666c3377d84fdb07`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 1.8 KB (1835 bytes)
+	-	`sha256:0ad59c7db086709fbfe994d1ed28d4818952b4981147090c9dd27c00c1665f13`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 583.0 B
+	-	`sha256:b486b4dba63edbb3698efdc9d49c726ee9485f492208b1c58243546e551b401e`  
+		Last Modified: Thu, 11 Aug 2016 19:46:10 GMT  
+		Size: 34.3 MB (34332251 bytes)
+	-	`sha256:7cd3a3ec048bc1083af9b206381543bba7ba4e95ef59231092a744c329062c81`  
+		Last Modified: Thu, 11 Aug 2016 19:45:59 GMT  
+		Size: 3.7 MB (3735503 bytes)
+	-	`sha256:50258fe8ebeff9f923454ee2d5462f93bce2af2119205c94bcf5afc0f6300b4f`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 334.0 B
+	-	`sha256:e7300e935dc63b74a3ae9d06b2444580b01ddbb4164ba81ff4ed9e2ef5a17c32`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 296.0 B
+	-	`sha256:e46394307f8ef729f5c0bc9b8d750811bbbc5e38d3e94536eea1be3dd4e88c44`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 1.3 MB (1329855 bytes)
+	-	`sha256:19acb871f096f1cf8e3d8b9bcd5eb781089c14ff76cc25fe0e7e301df84c8363`  
+		Last Modified: Thu, 11 Aug 2016 19:46:06 GMT  
+		Size: 31.1 MB (31086556 bytes)
+	-	`sha256:6dadc0f2c0b9bcb7a204888c0e91adb457ca2252f2e3608b27d21ffe753376ee`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 243.0 B
 
 ## `owncloud:9`
 
 ```console
-$ docker pull owncloud@sha256:a20d60d727eb3f6343637e1ad71422f7db5cd7ca361e4981940e146137da8cae
+$ docker pull owncloud@sha256:a3a889676d675da3c98312eda91b9611917a7c11ce896b88436cc216fa44e34d
 ```
 
 -	Platforms:
@@ -4138,9 +4138,9 @@ $ docker pull owncloud@sha256:a20d60d727eb3f6343637e1ad71422f7db5cd7ca361e498194
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **230.5 MB (230469795 bytes)**  
+-	Total Size: **231.1 MB (231068087 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4924817af41c83d0945fed5e1152b20e5a759840230f14fd46592c4aa388797e`
+-	Image ID: `sha256:6e78cd630ccbd07ec738a9ca39fe211433301f035e16f534b66053e41a8ca521`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -4163,63 +4163,63 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 ENV APACHE_CONFDIR=/etc/apache2
 # Fri, 29 Jul 2016 20:49:44 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 29 Jul 2016 20:49:45 GMT
-RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
-# Fri, 29 Jul 2016 20:49:46 GMT
+# Wed, 10 Aug 2016 19:34:50 GMT
+RUN set -ex 		&& sed -r 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS" 		&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
+# Wed, 10 Aug 2016 19:34:51 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Fri, 29 Jul 2016 20:49:48 GMT
+# Wed, 10 Aug 2016 19:34:53 GMT
 RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Fri, 29 Jul 2016 20:49:50 GMT
+# Wed, 10 Aug 2016 19:34:55 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV PHP_VERSION=5.6.24
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_FILENAME=php-5.6.24.tar.xz
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:34:30 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:34:31 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:48 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:39:49 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:49 GMT
+# Wed, 10 Aug 2016 20:18:08 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:18:09 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:23:14 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:14 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 EXPOSE 80/tcp
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:16 GMT
 CMD ["apache2-foreground"]
-# Mon, 01 Aug 2016 17:47:44 GMT
+# Thu, 11 Aug 2016 19:40:17 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:51:21 GMT
+# Thu, 11 Aug 2016 19:44:21 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:51:23 GMT
+# Thu, 11 Aug 2016 19:44:23 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:51:25 GMT
+# Thu, 11 Aug 2016 19:44:25 GMT
 RUN a2enmod rewrite
-# Mon, 01 Aug 2016 17:52:06 GMT
+# Thu, 11 Aug 2016 19:45:12 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 17:52:07 GMT
+# Thu, 11 Aug 2016 19:45:13 GMT
 ENV OWNCLOUD_VERSION=9.0.4
-# Mon, 01 Aug 2016 17:52:08 GMT
+# Thu, 11 Aug 2016 19:45:14 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 17:52:25 GMT
+# Thu, 11 Aug 2016 19:45:40 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 17:52:26 GMT
+# Thu, 11 Aug 2016 19:45:42 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 17:52:27 GMT
+# Thu, 11 Aug 2016 19:45:43 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 17:52:28 GMT
+# Thu, 11 Aug 2016 19:45:43 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -4236,59 +4236,59 @@ CMD ["apache2-foreground"]
 	-	`sha256:b4ae91aad5222bbe7ca67b9c2b69e54fd29989bea1eec3d8a9aca56b011c303c`  
 		Last Modified: Fri, 29 Jul 2016 22:49:17 GMT  
 		Size: 2.8 MB (2846544 bytes)
-	-	`sha256:c0c9ad6136b5e7b142c48c7167eede3d15af54c538f7f3177c50693006cca242`  
-		Last Modified: Fri, 29 Jul 2016 22:49:15 GMT  
-		Size: 276.0 B
-	-	`sha256:b4b0c030555d4340cfe8288272d2bcb291c2f483f1957f1341cfaaea369dc109`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 431.0 B
-	-	`sha256:6e898edbabd79f8b8eaf7351077eff9966a11459347f335757f5341a0a889c16`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 222.0 B
-	-	`sha256:e4b8d84dea782a5effd404eec31320063107e0bb56fccaffae77c4430c8082a3`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
+	-	`sha256:66e1c1a53c958663cb6a8d19f5993b36bfaf8e334d476c5ed30d6766c8db1f9a`  
+		Last Modified: Wed, 10 Aug 2016 21:31:30 GMT  
+		Size: 270.0 B
+	-	`sha256:5d1f306a891255c05b40e49a8d1dd76efb713792e0aa200386ab0e269faa49dc`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 432.0 B
+	-	`sha256:37733078a51e3cf33ba985f69be1dda278d529bb87184a83c71037cade3170b4`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 223.0 B
+	-	`sha256:c5351b4d6bee8cc2fc09f2af750fa4627dfdd37b44b651f3f3289260783d3b38`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
 		Size: 475.0 B
-	-	`sha256:8e151ffc26f09785dd3e1b511b6cc5b32744241932c5ac3a909b032906167e2f`  
-		Last Modified: Fri, 29 Jul 2016 22:54:53 GMT  
-		Size: 12.4 MB (12399117 bytes)
-	-	`sha256:a51015ce0d7e5186d93e7c1f1de1710edce96d5dc45da09f1f1fd33e347b3f44`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 601.0 B
-	-	`sha256:1d1d7ce85493184d89b2695b6139c410038091d8c18ec819ace83d50bcbf4af8`  
-		Last Modified: Fri, 29 Jul 2016 22:54:57 GMT  
-		Size: 15.8 MB (15789648 bytes)
-	-	`sha256:1394b74e0f9d9bd5c6f6a2fd4058edd52deac35dbfaa36668aa49328db286a57`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:35f1f99fe906e63a6fe525a33188e64c2f84d2e332e51327bfd262027c598444`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 579.0 B
-	-	`sha256:181cf82fa46ce61260137919ef7f51982e0495697a3d7deb5040f7064698b96e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:50 GMT  
-		Size: 34.3 MB (34330228 bytes)
-	-	`sha256:dfeef7c75ef90a85c96834f4d5bfa43b8d6b5e4b8ce75ddcf9b3272e6bda87c8`  
-		Last Modified: Mon, 01 Aug 2016 17:52:41 GMT  
-		Size: 3.7 MB (3735515 bytes)
-	-	`sha256:9776e0b14ee38a4cfae7cd26f535a930364d51109bb650207740149fa1231f34`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 332.0 B
-	-	`sha256:aa6b3cbfda6f6a29648f5005f3b7bfc21667fd996ba72aaed09a7ae2c115ed3e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 294.0 B
-	-	`sha256:a0926b406f89277c8e7613682f4cb82051e12ab866b373a8c76d7f43df6a0f60`  
-		Last Modified: Mon, 01 Aug 2016 17:52:38 GMT  
-		Size: 1.3 MB (1329874 bytes)
-	-	`sha256:488abfa3f53a149682a342d3540fc362f6cc1d3c70979514f4775068652b94d3`  
-		Last Modified: Mon, 01 Aug 2016 17:52:47 GMT  
-		Size: 31.1 MB (31086563 bytes)
-	-	`sha256:47817047c58faef2b6b59fcf68b4148369deeb57dfa0d2bab2a95be9a9f9b42c`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 245.0 B
+	-	`sha256:68fab1fd02dce6a758d7907eaf173747d5504e714bc9dcf77bc0086bb8f98420`  
+		Last Modified: Wed, 10 Aug 2016 21:38:00 GMT  
+		Size: 12.4 MB (12399124 bytes)
+	-	`sha256:d63c862a4e8a8fe6642f7954b97624cd307b5b913f999697835d9dede0674595`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 492.0 B
+	-	`sha256:a1f41798510b1dfa029f4cd846d723cca3566637cceedc3aba17cf117605e4fe`  
+		Last Modified: Wed, 10 Aug 2016 21:38:07 GMT  
+		Size: 16.4 MB (16385973 bytes)
+	-	`sha256:a1cb79de526642a0956598b60e75c5c3d73693e4a6e41aa4666c3377d84fdb07`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 1.8 KB (1835 bytes)
+	-	`sha256:0ad59c7db086709fbfe994d1ed28d4818952b4981147090c9dd27c00c1665f13`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 583.0 B
+	-	`sha256:b486b4dba63edbb3698efdc9d49c726ee9485f492208b1c58243546e551b401e`  
+		Last Modified: Thu, 11 Aug 2016 19:46:10 GMT  
+		Size: 34.3 MB (34332251 bytes)
+	-	`sha256:7cd3a3ec048bc1083af9b206381543bba7ba4e95ef59231092a744c329062c81`  
+		Last Modified: Thu, 11 Aug 2016 19:45:59 GMT  
+		Size: 3.7 MB (3735503 bytes)
+	-	`sha256:50258fe8ebeff9f923454ee2d5462f93bce2af2119205c94bcf5afc0f6300b4f`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 334.0 B
+	-	`sha256:e7300e935dc63b74a3ae9d06b2444580b01ddbb4164ba81ff4ed9e2ef5a17c32`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 296.0 B
+	-	`sha256:e46394307f8ef729f5c0bc9b8d750811bbbc5e38d3e94536eea1be3dd4e88c44`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 1.3 MB (1329855 bytes)
+	-	`sha256:19acb871f096f1cf8e3d8b9bcd5eb781089c14ff76cc25fe0e7e301df84c8363`  
+		Last Modified: Thu, 11 Aug 2016 19:46:06 GMT  
+		Size: 31.1 MB (31086556 bytes)
+	-	`sha256:6dadc0f2c0b9bcb7a204888c0e91adb457ca2252f2e3608b27d21ffe753376ee`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 243.0 B
 
 ## `owncloud:latest`
 
 ```console
-$ docker pull owncloud@sha256:a20d60d727eb3f6343637e1ad71422f7db5cd7ca361e4981940e146137da8cae
+$ docker pull owncloud@sha256:a3a889676d675da3c98312eda91b9611917a7c11ce896b88436cc216fa44e34d
 ```
 
 -	Platforms:
@@ -4298,9 +4298,9 @@ $ docker pull owncloud@sha256:a20d60d727eb3f6343637e1ad71422f7db5cd7ca361e498194
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **230.5 MB (230469795 bytes)**  
+-	Total Size: **231.1 MB (231068087 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4924817af41c83d0945fed5e1152b20e5a759840230f14fd46592c4aa388797e`
+-	Image ID: `sha256:6e78cd630ccbd07ec738a9ca39fe211433301f035e16f534b66053e41a8ca521`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -4323,63 +4323,63 @@ RUN apt-get update && apt-get install -y apache2-bin apache2.2-common --no-insta
 ENV APACHE_CONFDIR=/etc/apache2
 # Fri, 29 Jul 2016 20:49:44 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 29 Jul 2016 20:49:45 GMT
-RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
-# Fri, 29 Jul 2016 20:49:46 GMT
+# Wed, 10 Aug 2016 19:34:50 GMT
+RUN set -ex 		&& sed -r 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS" 		&& . "$APACHE_ENVVARS" 	&& for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		/var/www/html 	; do 		rm -rvf "$dir" 		&& mkdir -p "$dir" 		&& chown -R "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 	done
+# Wed, 10 Aug 2016 19:34:51 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork
-# Fri, 29 Jul 2016 20:49:48 GMT
+# Wed, 10 Aug 2016 19:34:53 GMT
 RUN set -ex 	&& . "$APACHE_ENVVARS" 	&& ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log" 	&& ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php
-# Fri, 29 Jul 2016 20:49:49 GMT
+# Wed, 10 Aug 2016 19:34:54 GMT
 ENV PHP_EXTRA_BUILD_DEPS=apache2-dev
-# Fri, 29 Jul 2016 20:49:50 GMT
+# Wed, 10 Aug 2016 19:34:55 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Fri, 29 Jul 2016 21:34:26 GMT
+# Wed, 10 Aug 2016 20:17:04 GMT
 ENV PHP_VERSION=5.6.24
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_FILENAME=php-5.6.24.tar.xz
-# Fri, 29 Jul 2016 21:34:27 GMT
+# Wed, 10 Aug 2016 20:17:05 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:34:30 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:34:31 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:48 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:39:49 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:49 GMT
+# Wed, 10 Aug 2016 20:18:08 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:18:09 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:23:14 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:23:14 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:15 GMT
 EXPOSE 80/tcp
-# Fri, 29 Jul 2016 21:39:50 GMT
+# Wed, 10 Aug 2016 20:23:16 GMT
 CMD ["apache2-foreground"]
-# Mon, 01 Aug 2016 17:47:44 GMT
+# Thu, 11 Aug 2016 19:40:17 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:51:21 GMT
+# Thu, 11 Aug 2016 19:44:21 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:51:23 GMT
+# Thu, 11 Aug 2016 19:44:23 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:51:25 GMT
+# Thu, 11 Aug 2016 19:44:25 GMT
 RUN a2enmod rewrite
-# Mon, 01 Aug 2016 17:52:06 GMT
+# Thu, 11 Aug 2016 19:45:12 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 17:52:07 GMT
+# Thu, 11 Aug 2016 19:45:13 GMT
 ENV OWNCLOUD_VERSION=9.0.4
-# Mon, 01 Aug 2016 17:52:08 GMT
+# Thu, 11 Aug 2016 19:45:14 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 17:52:25 GMT
+# Thu, 11 Aug 2016 19:45:40 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 17:52:26 GMT
+# Thu, 11 Aug 2016 19:45:42 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 17:52:27 GMT
+# Thu, 11 Aug 2016 19:45:43 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 17:52:28 GMT
+# Thu, 11 Aug 2016 19:45:43 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -4396,59 +4396,59 @@ CMD ["apache2-foreground"]
 	-	`sha256:b4ae91aad5222bbe7ca67b9c2b69e54fd29989bea1eec3d8a9aca56b011c303c`  
 		Last Modified: Fri, 29 Jul 2016 22:49:17 GMT  
 		Size: 2.8 MB (2846544 bytes)
-	-	`sha256:c0c9ad6136b5e7b142c48c7167eede3d15af54c538f7f3177c50693006cca242`  
-		Last Modified: Fri, 29 Jul 2016 22:49:15 GMT  
-		Size: 276.0 B
-	-	`sha256:b4b0c030555d4340cfe8288272d2bcb291c2f483f1957f1341cfaaea369dc109`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 431.0 B
-	-	`sha256:6e898edbabd79f8b8eaf7351077eff9966a11459347f335757f5341a0a889c16`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
-		Size: 222.0 B
-	-	`sha256:e4b8d84dea782a5effd404eec31320063107e0bb56fccaffae77c4430c8082a3`  
-		Last Modified: Fri, 29 Jul 2016 22:49:13 GMT  
+	-	`sha256:66e1c1a53c958663cb6a8d19f5993b36bfaf8e334d476c5ed30d6766c8db1f9a`  
+		Last Modified: Wed, 10 Aug 2016 21:31:30 GMT  
+		Size: 270.0 B
+	-	`sha256:5d1f306a891255c05b40e49a8d1dd76efb713792e0aa200386ab0e269faa49dc`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 432.0 B
+	-	`sha256:37733078a51e3cf33ba985f69be1dda278d529bb87184a83c71037cade3170b4`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
+		Size: 223.0 B
+	-	`sha256:c5351b4d6bee8cc2fc09f2af750fa4627dfdd37b44b651f3f3289260783d3b38`  
+		Last Modified: Wed, 10 Aug 2016 21:31:28 GMT  
 		Size: 475.0 B
-	-	`sha256:8e151ffc26f09785dd3e1b511b6cc5b32744241932c5ac3a909b032906167e2f`  
-		Last Modified: Fri, 29 Jul 2016 22:54:53 GMT  
-		Size: 12.4 MB (12399117 bytes)
-	-	`sha256:a51015ce0d7e5186d93e7c1f1de1710edce96d5dc45da09f1f1fd33e347b3f44`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 601.0 B
-	-	`sha256:1d1d7ce85493184d89b2695b6139c410038091d8c18ec819ace83d50bcbf4af8`  
-		Last Modified: Fri, 29 Jul 2016 22:54:57 GMT  
-		Size: 15.8 MB (15789648 bytes)
-	-	`sha256:1394b74e0f9d9bd5c6f6a2fd4058edd52deac35dbfaa36668aa49328db286a57`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:35f1f99fe906e63a6fe525a33188e64c2f84d2e332e51327bfd262027c598444`  
-		Last Modified: Fri, 29 Jul 2016 22:54:51 GMT  
-		Size: 579.0 B
-	-	`sha256:181cf82fa46ce61260137919ef7f51982e0495697a3d7deb5040f7064698b96e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:50 GMT  
-		Size: 34.3 MB (34330228 bytes)
-	-	`sha256:dfeef7c75ef90a85c96834f4d5bfa43b8d6b5e4b8ce75ddcf9b3272e6bda87c8`  
-		Last Modified: Mon, 01 Aug 2016 17:52:41 GMT  
-		Size: 3.7 MB (3735515 bytes)
-	-	`sha256:9776e0b14ee38a4cfae7cd26f535a930364d51109bb650207740149fa1231f34`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 332.0 B
-	-	`sha256:aa6b3cbfda6f6a29648f5005f3b7bfc21667fd996ba72aaed09a7ae2c115ed3e`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 294.0 B
-	-	`sha256:a0926b406f89277c8e7613682f4cb82051e12ab866b373a8c76d7f43df6a0f60`  
-		Last Modified: Mon, 01 Aug 2016 17:52:38 GMT  
-		Size: 1.3 MB (1329874 bytes)
-	-	`sha256:488abfa3f53a149682a342d3540fc362f6cc1d3c70979514f4775068652b94d3`  
-		Last Modified: Mon, 01 Aug 2016 17:52:47 GMT  
-		Size: 31.1 MB (31086563 bytes)
-	-	`sha256:47817047c58faef2b6b59fcf68b4148369deeb57dfa0d2bab2a95be9a9f9b42c`  
-		Last Modified: Mon, 01 Aug 2016 17:52:37 GMT  
-		Size: 245.0 B
+	-	`sha256:68fab1fd02dce6a758d7907eaf173747d5504e714bc9dcf77bc0086bb8f98420`  
+		Last Modified: Wed, 10 Aug 2016 21:38:00 GMT  
+		Size: 12.4 MB (12399124 bytes)
+	-	`sha256:d63c862a4e8a8fe6642f7954b97624cd307b5b913f999697835d9dede0674595`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 492.0 B
+	-	`sha256:a1f41798510b1dfa029f4cd846d723cca3566637cceedc3aba17cf117605e4fe`  
+		Last Modified: Wed, 10 Aug 2016 21:38:07 GMT  
+		Size: 16.4 MB (16385973 bytes)
+	-	`sha256:a1cb79de526642a0956598b60e75c5c3d73693e4a6e41aa4666c3377d84fdb07`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 1.8 KB (1835 bytes)
+	-	`sha256:0ad59c7db086709fbfe994d1ed28d4818952b4981147090c9dd27c00c1665f13`  
+		Last Modified: Wed, 10 Aug 2016 21:37:59 GMT  
+		Size: 583.0 B
+	-	`sha256:b486b4dba63edbb3698efdc9d49c726ee9485f492208b1c58243546e551b401e`  
+		Last Modified: Thu, 11 Aug 2016 19:46:10 GMT  
+		Size: 34.3 MB (34332251 bytes)
+	-	`sha256:7cd3a3ec048bc1083af9b206381543bba7ba4e95ef59231092a744c329062c81`  
+		Last Modified: Thu, 11 Aug 2016 19:45:59 GMT  
+		Size: 3.7 MB (3735503 bytes)
+	-	`sha256:50258fe8ebeff9f923454ee2d5462f93bce2af2119205c94bcf5afc0f6300b4f`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 334.0 B
+	-	`sha256:e7300e935dc63b74a3ae9d06b2444580b01ddbb4164ba81ff4ed9e2ef5a17c32`  
+		Last Modified: Thu, 11 Aug 2016 19:45:54 GMT  
+		Size: 296.0 B
+	-	`sha256:e46394307f8ef729f5c0bc9b8d750811bbbc5e38d3e94536eea1be3dd4e88c44`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 1.3 MB (1329855 bytes)
+	-	`sha256:19acb871f096f1cf8e3d8b9bcd5eb781089c14ff76cc25fe0e7e301df84c8363`  
+		Last Modified: Thu, 11 Aug 2016 19:46:06 GMT  
+		Size: 31.1 MB (31086556 bytes)
+	-	`sha256:6dadc0f2c0b9bcb7a204888c0e91adb457ca2252f2e3608b27d21ffe753376ee`  
+		Last Modified: Thu, 11 Aug 2016 19:45:55 GMT  
+		Size: 243.0 B
 
 ## `owncloud:9.0.4-fpm`
 
 ```console
-$ docker pull owncloud@sha256:8347e242f381c94acbd5fb4fc03ba0a18b4177baf8a94fd9cb52f493b85620ef
+$ docker pull owncloud@sha256:74d1be8039c346dafe3081713c2317e10e6b456993c0c0e8d39c5430efac36dc
 ```
 
 -	Platforms:
@@ -4458,9 +4458,9 @@ $ docker pull owncloud@sha256:8347e242f381c94acbd5fb4fc03ba0a18b4177baf8a94fd9cb
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **220.6 MB (220612990 bytes)**  
+-	Total Size: **221.2 MB (221152076 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02ca1aeb1ba053a43b5544349c31e2c5c4917ffdc1760818008b5221cc1a6a5f`
+-	Image ID: `sha256:5a54d9f2e8a999bd9b8a4437e64105985bcf11efbd6e409353f794137e1ff9d9`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -4487,41 +4487,41 @@ ENV PHP_VERSION=5.6.24
 ENV PHP_FILENAME=php-5.6.24.tar.xz
 # Fri, 29 Jul 2016 21:39:52 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:39:56 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:39:57 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:46:44 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:46:45 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:46:46 GMT
+# Wed, 10 Aug 2016 20:23:19 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:23:20 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:29:49 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:29:50 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:29:50 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:46:48 GMT
+# Wed, 10 Aug 2016 20:29:51 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Fri, 29 Jul 2016 21:46:48 GMT
+# Wed, 10 Aug 2016 20:29:52 GMT
 EXPOSE 9000/tcp
-# Fri, 29 Jul 2016 21:46:49 GMT
+# Wed, 10 Aug 2016 20:29:52 GMT
 CMD ["php-fpm"]
-# Mon, 01 Aug 2016 17:55:18 GMT
+# Thu, 11 Aug 2016 19:31:58 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:58:54 GMT
+# Thu, 11 Aug 2016 19:36:32 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:58:56 GMT
+# Thu, 11 Aug 2016 19:36:34 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:59:37 GMT
+# Thu, 11 Aug 2016 19:37:23 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 17:59:38 GMT
+# Thu, 11 Aug 2016 19:47:51 GMT
 ENV OWNCLOUD_VERSION=9.0.4
-# Mon, 01 Aug 2016 17:59:38 GMT
+# Thu, 11 Aug 2016 19:47:51 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 17:59:57 GMT
+# Thu, 11 Aug 2016 19:48:19 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 17:59:58 GMT
+# Thu, 11 Aug 2016 19:48:26 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 17:59:59 GMT
+# Thu, 11 Aug 2016 19:48:27 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:00:00 GMT
+# Thu, 11 Aug 2016 19:48:28 GMT
 CMD ["php-fpm"]
 ```
 
@@ -4535,47 +4535,47 @@ CMD ["php-fpm"]
 	-	`sha256:3d821ad560e13c778e616da2a9033ac30d3811185f43635e95c20b22ab380077`  
 		Last Modified: Fri, 29 Jul 2016 22:46:34 GMT  
 		Size: 180.0 B
-	-	`sha256:313efb7f2797d96b93cdc6a1c1628cb0bb064db4082e1a75ad89ea416aba077c`  
-		Last Modified: Fri, 29 Jul 2016 22:55:35 GMT  
-		Size: 12.4 MB (12399119 bytes)
-	-	`sha256:59137d1c51b6cd58a87d11262a2d78b9257747a3bbd6ec05bf4d049b124c8e70`  
-		Last Modified: Fri, 29 Jul 2016 22:55:30 GMT  
-		Size: 601.0 B
-	-	`sha256:265ac2fa951d86cc8d6e91295f961f67bd5e283269334c02545b88265907c038`  
-		Last Modified: Fri, 29 Jul 2016 22:55:34 GMT  
-		Size: 8.8 MB (8796075 bytes)
-	-	`sha256:8f71c291653e80fd8be4c19d5de021fd8ac543b92cfd1ad9ff8b3c3a5bb357bb`  
-		Last Modified: Fri, 29 Jul 2016 22:55:30 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:61edc0cbd1b43bc5c63d0fc1e67306c24e819d4f55c2e8705a7103e78d186922`  
-		Last Modified: Fri, 29 Jul 2016 22:55:31 GMT  
+	-	`sha256:1a0ed20d7752971350ab581861731d7d71a6eb560b93d48382b5cc2aa07fed8b`  
+		Last Modified: Wed, 10 Aug 2016 21:38:50 GMT  
+		Size: 12.4 MB (12399120 bytes)
+	-	`sha256:d17456fd86bcf1eb916ff4c4b4909dd6ad98736369cff4e5ee9c79e02782fc67`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
+		Size: 490.0 B
+	-	`sha256:c8bd75b8802c8ce64c4a28486fbfb4bde4247b27f5f8363dd8a8469ac89b1e85`  
+		Last Modified: Wed, 10 Aug 2016 21:38:48 GMT  
+		Size: 9.3 MB (9333467 bytes)
+	-	`sha256:0054f99dc6ca14454002cd76f78264c84cdfd9c57cea265ea0a6f601dab80158`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
+		Size: 1.8 KB (1829 bytes)
+	-	`sha256:1c8ec71281514f1d63f59000b5fd9082baa8a6d34e7e591d7cd22928879a5d18`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
 		Size: 129.0 B
-	-	`sha256:2310b95436007759599e7c1a784ce61d633ed86c55689af737f6907dcc8c6d14`  
-		Last Modified: Fri, 29 Jul 2016 22:55:31 GMT  
-		Size: 7.6 KB (7631 bytes)
-	-	`sha256:38bb9593bce0ba6ead3bbecf0b2ada9b245c194168bf782d388e5cecea5f2d88`  
-		Last Modified: Mon, 01 Aug 2016 18:00:23 GMT  
-		Size: 34.3 MB (34307868 bytes)
-	-	`sha256:972b48230f3d9134dfa1030c0dfa08fc6dbedb26187bc0e24cad6575726f59bd`  
-		Last Modified: Mon, 01 Aug 2016 18:00:13 GMT  
-		Size: 3.7 MB (3735745 bytes)
-	-	`sha256:8bf22dfa16633bcdb53f53d020507297e5012af00a69be4b21ea6e4008c9bbec`  
-		Last Modified: Mon, 01 Aug 2016 18:00:11 GMT  
-		Size: 334.0 B
-	-	`sha256:9b9e3850c393e11aebe0ffa3dbd59e2da67f999ebe7c63c6796990db8848d707`  
-		Last Modified: Mon, 01 Aug 2016 18:00:09 GMT  
-		Size: 1.3 MB (1329835 bytes)
-	-	`sha256:954d55be90ef9cbd2ae2176787eae937b54a1fd67c99aeb136bb57814157b005`  
-		Last Modified: Mon, 01 Aug 2016 18:00:19 GMT  
-		Size: 31.1 MB (31086556 bytes)
-	-	`sha256:2e693cee76fda9ae57c5d038d89f19cf04bd3f4168550e331342e715b201e0f8`  
-		Last Modified: Mon, 01 Aug 2016 18:00:09 GMT  
-		Size: 246.0 B
+	-	`sha256:fa513925a4eb93b436ccdb48c9b0edca88237b4abdebea3245da69a6b37deaf9`  
+		Last Modified: Wed, 10 Aug 2016 21:38:46 GMT  
+		Size: 7.6 KB (7629 bytes)
+	-	`sha256:f5e918f5eeceb98e228adf3ed45e9590823935fc6a4d203903b7633e64e2f6b7`  
+		Last Modified: Thu, 11 Aug 2016 19:38:23 GMT  
+		Size: 34.3 MB (34309595 bytes)
+	-	`sha256:4a0645c74d2abc109131690d3f71a3c42fe544272d58e7a2151d4a4be4509977`  
+		Last Modified: Thu, 11 Aug 2016 19:38:09 GMT  
+		Size: 3.7 MB (3735762 bytes)
+	-	`sha256:9cfa7715b90cc83e5009c512050ac4f5c46adfa52997773a68c02ca21063a543`  
+		Last Modified: Thu, 11 Aug 2016 19:38:07 GMT  
+		Size: 333.0 B
+	-	`sha256:77fb23212070caee8cc379413904c7da38bee3cb9e17d3c039dea71c46e44bc3`  
+		Last Modified: Thu, 11 Aug 2016 19:38:07 GMT  
+		Size: 1.3 MB (1329833 bytes)
+	-	`sha256:15adee7f1f22ba431fdf3e4d228fcba6c6c45d30d019441b533468dcbc599f49`  
+		Last Modified: Thu, 11 Aug 2016 19:48:50 GMT  
+		Size: 31.1 MB (31086547 bytes)
+	-	`sha256:e65580133a82c5c7dc3391d2ade765c7b5542329a8c8e7eebf059ba4886ab293`  
+		Last Modified: Thu, 11 Aug 2016 19:48:40 GMT  
+		Size: 244.0 B
 
 ## `owncloud:9.0-fpm`
 
 ```console
-$ docker pull owncloud@sha256:8347e242f381c94acbd5fb4fc03ba0a18b4177baf8a94fd9cb52f493b85620ef
+$ docker pull owncloud@sha256:74d1be8039c346dafe3081713c2317e10e6b456993c0c0e8d39c5430efac36dc
 ```
 
 -	Platforms:
@@ -4585,9 +4585,9 @@ $ docker pull owncloud@sha256:8347e242f381c94acbd5fb4fc03ba0a18b4177baf8a94fd9cb
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **220.6 MB (220612990 bytes)**  
+-	Total Size: **221.2 MB (221152076 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02ca1aeb1ba053a43b5544349c31e2c5c4917ffdc1760818008b5221cc1a6a5f`
+-	Image ID: `sha256:5a54d9f2e8a999bd9b8a4437e64105985bcf11efbd6e409353f794137e1ff9d9`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -4614,41 +4614,41 @@ ENV PHP_VERSION=5.6.24
 ENV PHP_FILENAME=php-5.6.24.tar.xz
 # Fri, 29 Jul 2016 21:39:52 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:39:56 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:39:57 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:46:44 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:46:45 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:46:46 GMT
+# Wed, 10 Aug 2016 20:23:19 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:23:20 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:29:49 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:29:50 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:29:50 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:46:48 GMT
+# Wed, 10 Aug 2016 20:29:51 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Fri, 29 Jul 2016 21:46:48 GMT
+# Wed, 10 Aug 2016 20:29:52 GMT
 EXPOSE 9000/tcp
-# Fri, 29 Jul 2016 21:46:49 GMT
+# Wed, 10 Aug 2016 20:29:52 GMT
 CMD ["php-fpm"]
-# Mon, 01 Aug 2016 17:55:18 GMT
+# Thu, 11 Aug 2016 19:31:58 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:58:54 GMT
+# Thu, 11 Aug 2016 19:36:32 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:58:56 GMT
+# Thu, 11 Aug 2016 19:36:34 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:59:37 GMT
+# Thu, 11 Aug 2016 19:37:23 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 17:59:38 GMT
+# Thu, 11 Aug 2016 19:47:51 GMT
 ENV OWNCLOUD_VERSION=9.0.4
-# Mon, 01 Aug 2016 17:59:38 GMT
+# Thu, 11 Aug 2016 19:47:51 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 17:59:57 GMT
+# Thu, 11 Aug 2016 19:48:19 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 17:59:58 GMT
+# Thu, 11 Aug 2016 19:48:26 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 17:59:59 GMT
+# Thu, 11 Aug 2016 19:48:27 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:00:00 GMT
+# Thu, 11 Aug 2016 19:48:28 GMT
 CMD ["php-fpm"]
 ```
 
@@ -4662,47 +4662,47 @@ CMD ["php-fpm"]
 	-	`sha256:3d821ad560e13c778e616da2a9033ac30d3811185f43635e95c20b22ab380077`  
 		Last Modified: Fri, 29 Jul 2016 22:46:34 GMT  
 		Size: 180.0 B
-	-	`sha256:313efb7f2797d96b93cdc6a1c1628cb0bb064db4082e1a75ad89ea416aba077c`  
-		Last Modified: Fri, 29 Jul 2016 22:55:35 GMT  
-		Size: 12.4 MB (12399119 bytes)
-	-	`sha256:59137d1c51b6cd58a87d11262a2d78b9257747a3bbd6ec05bf4d049b124c8e70`  
-		Last Modified: Fri, 29 Jul 2016 22:55:30 GMT  
-		Size: 601.0 B
-	-	`sha256:265ac2fa951d86cc8d6e91295f961f67bd5e283269334c02545b88265907c038`  
-		Last Modified: Fri, 29 Jul 2016 22:55:34 GMT  
-		Size: 8.8 MB (8796075 bytes)
-	-	`sha256:8f71c291653e80fd8be4c19d5de021fd8ac543b92cfd1ad9ff8b3c3a5bb357bb`  
-		Last Modified: Fri, 29 Jul 2016 22:55:30 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:61edc0cbd1b43bc5c63d0fc1e67306c24e819d4f55c2e8705a7103e78d186922`  
-		Last Modified: Fri, 29 Jul 2016 22:55:31 GMT  
+	-	`sha256:1a0ed20d7752971350ab581861731d7d71a6eb560b93d48382b5cc2aa07fed8b`  
+		Last Modified: Wed, 10 Aug 2016 21:38:50 GMT  
+		Size: 12.4 MB (12399120 bytes)
+	-	`sha256:d17456fd86bcf1eb916ff4c4b4909dd6ad98736369cff4e5ee9c79e02782fc67`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
+		Size: 490.0 B
+	-	`sha256:c8bd75b8802c8ce64c4a28486fbfb4bde4247b27f5f8363dd8a8469ac89b1e85`  
+		Last Modified: Wed, 10 Aug 2016 21:38:48 GMT  
+		Size: 9.3 MB (9333467 bytes)
+	-	`sha256:0054f99dc6ca14454002cd76f78264c84cdfd9c57cea265ea0a6f601dab80158`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
+		Size: 1.8 KB (1829 bytes)
+	-	`sha256:1c8ec71281514f1d63f59000b5fd9082baa8a6d34e7e591d7cd22928879a5d18`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
 		Size: 129.0 B
-	-	`sha256:2310b95436007759599e7c1a784ce61d633ed86c55689af737f6907dcc8c6d14`  
-		Last Modified: Fri, 29 Jul 2016 22:55:31 GMT  
-		Size: 7.6 KB (7631 bytes)
-	-	`sha256:38bb9593bce0ba6ead3bbecf0b2ada9b245c194168bf782d388e5cecea5f2d88`  
-		Last Modified: Mon, 01 Aug 2016 18:00:23 GMT  
-		Size: 34.3 MB (34307868 bytes)
-	-	`sha256:972b48230f3d9134dfa1030c0dfa08fc6dbedb26187bc0e24cad6575726f59bd`  
-		Last Modified: Mon, 01 Aug 2016 18:00:13 GMT  
-		Size: 3.7 MB (3735745 bytes)
-	-	`sha256:8bf22dfa16633bcdb53f53d020507297e5012af00a69be4b21ea6e4008c9bbec`  
-		Last Modified: Mon, 01 Aug 2016 18:00:11 GMT  
-		Size: 334.0 B
-	-	`sha256:9b9e3850c393e11aebe0ffa3dbd59e2da67f999ebe7c63c6796990db8848d707`  
-		Last Modified: Mon, 01 Aug 2016 18:00:09 GMT  
-		Size: 1.3 MB (1329835 bytes)
-	-	`sha256:954d55be90ef9cbd2ae2176787eae937b54a1fd67c99aeb136bb57814157b005`  
-		Last Modified: Mon, 01 Aug 2016 18:00:19 GMT  
-		Size: 31.1 MB (31086556 bytes)
-	-	`sha256:2e693cee76fda9ae57c5d038d89f19cf04bd3f4168550e331342e715b201e0f8`  
-		Last Modified: Mon, 01 Aug 2016 18:00:09 GMT  
-		Size: 246.0 B
+	-	`sha256:fa513925a4eb93b436ccdb48c9b0edca88237b4abdebea3245da69a6b37deaf9`  
+		Last Modified: Wed, 10 Aug 2016 21:38:46 GMT  
+		Size: 7.6 KB (7629 bytes)
+	-	`sha256:f5e918f5eeceb98e228adf3ed45e9590823935fc6a4d203903b7633e64e2f6b7`  
+		Last Modified: Thu, 11 Aug 2016 19:38:23 GMT  
+		Size: 34.3 MB (34309595 bytes)
+	-	`sha256:4a0645c74d2abc109131690d3f71a3c42fe544272d58e7a2151d4a4be4509977`  
+		Last Modified: Thu, 11 Aug 2016 19:38:09 GMT  
+		Size: 3.7 MB (3735762 bytes)
+	-	`sha256:9cfa7715b90cc83e5009c512050ac4f5c46adfa52997773a68c02ca21063a543`  
+		Last Modified: Thu, 11 Aug 2016 19:38:07 GMT  
+		Size: 333.0 B
+	-	`sha256:77fb23212070caee8cc379413904c7da38bee3cb9e17d3c039dea71c46e44bc3`  
+		Last Modified: Thu, 11 Aug 2016 19:38:07 GMT  
+		Size: 1.3 MB (1329833 bytes)
+	-	`sha256:15adee7f1f22ba431fdf3e4d228fcba6c6c45d30d019441b533468dcbc599f49`  
+		Last Modified: Thu, 11 Aug 2016 19:48:50 GMT  
+		Size: 31.1 MB (31086547 bytes)
+	-	`sha256:e65580133a82c5c7dc3391d2ade765c7b5542329a8c8e7eebf059ba4886ab293`  
+		Last Modified: Thu, 11 Aug 2016 19:48:40 GMT  
+		Size: 244.0 B
 
 ## `owncloud:9-fpm`
 
 ```console
-$ docker pull owncloud@sha256:8347e242f381c94acbd5fb4fc03ba0a18b4177baf8a94fd9cb52f493b85620ef
+$ docker pull owncloud@sha256:74d1be8039c346dafe3081713c2317e10e6b456993c0c0e8d39c5430efac36dc
 ```
 
 -	Platforms:
@@ -4712,9 +4712,9 @@ $ docker pull owncloud@sha256:8347e242f381c94acbd5fb4fc03ba0a18b4177baf8a94fd9cb
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **220.6 MB (220612990 bytes)**  
+-	Total Size: **221.2 MB (221152076 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02ca1aeb1ba053a43b5544349c31e2c5c4917ffdc1760818008b5221cc1a6a5f`
+-	Image ID: `sha256:5a54d9f2e8a999bd9b8a4437e64105985bcf11efbd6e409353f794137e1ff9d9`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -4741,41 +4741,41 @@ ENV PHP_VERSION=5.6.24
 ENV PHP_FILENAME=php-5.6.24.tar.xz
 # Fri, 29 Jul 2016 21:39:52 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:39:56 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:39:57 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:46:44 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:46:45 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:46:46 GMT
+# Wed, 10 Aug 2016 20:23:19 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:23:20 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:29:49 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:29:50 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:29:50 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:46:48 GMT
+# Wed, 10 Aug 2016 20:29:51 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Fri, 29 Jul 2016 21:46:48 GMT
+# Wed, 10 Aug 2016 20:29:52 GMT
 EXPOSE 9000/tcp
-# Fri, 29 Jul 2016 21:46:49 GMT
+# Wed, 10 Aug 2016 20:29:52 GMT
 CMD ["php-fpm"]
-# Mon, 01 Aug 2016 17:55:18 GMT
+# Thu, 11 Aug 2016 19:31:58 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:58:54 GMT
+# Thu, 11 Aug 2016 19:36:32 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:58:56 GMT
+# Thu, 11 Aug 2016 19:36:34 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:59:37 GMT
+# Thu, 11 Aug 2016 19:37:23 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 17:59:38 GMT
+# Thu, 11 Aug 2016 19:47:51 GMT
 ENV OWNCLOUD_VERSION=9.0.4
-# Mon, 01 Aug 2016 17:59:38 GMT
+# Thu, 11 Aug 2016 19:47:51 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 17:59:57 GMT
+# Thu, 11 Aug 2016 19:48:19 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 17:59:58 GMT
+# Thu, 11 Aug 2016 19:48:26 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 17:59:59 GMT
+# Thu, 11 Aug 2016 19:48:27 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:00:00 GMT
+# Thu, 11 Aug 2016 19:48:28 GMT
 CMD ["php-fpm"]
 ```
 
@@ -4789,47 +4789,47 @@ CMD ["php-fpm"]
 	-	`sha256:3d821ad560e13c778e616da2a9033ac30d3811185f43635e95c20b22ab380077`  
 		Last Modified: Fri, 29 Jul 2016 22:46:34 GMT  
 		Size: 180.0 B
-	-	`sha256:313efb7f2797d96b93cdc6a1c1628cb0bb064db4082e1a75ad89ea416aba077c`  
-		Last Modified: Fri, 29 Jul 2016 22:55:35 GMT  
-		Size: 12.4 MB (12399119 bytes)
-	-	`sha256:59137d1c51b6cd58a87d11262a2d78b9257747a3bbd6ec05bf4d049b124c8e70`  
-		Last Modified: Fri, 29 Jul 2016 22:55:30 GMT  
-		Size: 601.0 B
-	-	`sha256:265ac2fa951d86cc8d6e91295f961f67bd5e283269334c02545b88265907c038`  
-		Last Modified: Fri, 29 Jul 2016 22:55:34 GMT  
-		Size: 8.8 MB (8796075 bytes)
-	-	`sha256:8f71c291653e80fd8be4c19d5de021fd8ac543b92cfd1ad9ff8b3c3a5bb357bb`  
-		Last Modified: Fri, 29 Jul 2016 22:55:30 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:61edc0cbd1b43bc5c63d0fc1e67306c24e819d4f55c2e8705a7103e78d186922`  
-		Last Modified: Fri, 29 Jul 2016 22:55:31 GMT  
+	-	`sha256:1a0ed20d7752971350ab581861731d7d71a6eb560b93d48382b5cc2aa07fed8b`  
+		Last Modified: Wed, 10 Aug 2016 21:38:50 GMT  
+		Size: 12.4 MB (12399120 bytes)
+	-	`sha256:d17456fd86bcf1eb916ff4c4b4909dd6ad98736369cff4e5ee9c79e02782fc67`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
+		Size: 490.0 B
+	-	`sha256:c8bd75b8802c8ce64c4a28486fbfb4bde4247b27f5f8363dd8a8469ac89b1e85`  
+		Last Modified: Wed, 10 Aug 2016 21:38:48 GMT  
+		Size: 9.3 MB (9333467 bytes)
+	-	`sha256:0054f99dc6ca14454002cd76f78264c84cdfd9c57cea265ea0a6f601dab80158`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
+		Size: 1.8 KB (1829 bytes)
+	-	`sha256:1c8ec71281514f1d63f59000b5fd9082baa8a6d34e7e591d7cd22928879a5d18`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
 		Size: 129.0 B
-	-	`sha256:2310b95436007759599e7c1a784ce61d633ed86c55689af737f6907dcc8c6d14`  
-		Last Modified: Fri, 29 Jul 2016 22:55:31 GMT  
-		Size: 7.6 KB (7631 bytes)
-	-	`sha256:38bb9593bce0ba6ead3bbecf0b2ada9b245c194168bf782d388e5cecea5f2d88`  
-		Last Modified: Mon, 01 Aug 2016 18:00:23 GMT  
-		Size: 34.3 MB (34307868 bytes)
-	-	`sha256:972b48230f3d9134dfa1030c0dfa08fc6dbedb26187bc0e24cad6575726f59bd`  
-		Last Modified: Mon, 01 Aug 2016 18:00:13 GMT  
-		Size: 3.7 MB (3735745 bytes)
-	-	`sha256:8bf22dfa16633bcdb53f53d020507297e5012af00a69be4b21ea6e4008c9bbec`  
-		Last Modified: Mon, 01 Aug 2016 18:00:11 GMT  
-		Size: 334.0 B
-	-	`sha256:9b9e3850c393e11aebe0ffa3dbd59e2da67f999ebe7c63c6796990db8848d707`  
-		Last Modified: Mon, 01 Aug 2016 18:00:09 GMT  
-		Size: 1.3 MB (1329835 bytes)
-	-	`sha256:954d55be90ef9cbd2ae2176787eae937b54a1fd67c99aeb136bb57814157b005`  
-		Last Modified: Mon, 01 Aug 2016 18:00:19 GMT  
-		Size: 31.1 MB (31086556 bytes)
-	-	`sha256:2e693cee76fda9ae57c5d038d89f19cf04bd3f4168550e331342e715b201e0f8`  
-		Last Modified: Mon, 01 Aug 2016 18:00:09 GMT  
-		Size: 246.0 B
+	-	`sha256:fa513925a4eb93b436ccdb48c9b0edca88237b4abdebea3245da69a6b37deaf9`  
+		Last Modified: Wed, 10 Aug 2016 21:38:46 GMT  
+		Size: 7.6 KB (7629 bytes)
+	-	`sha256:f5e918f5eeceb98e228adf3ed45e9590823935fc6a4d203903b7633e64e2f6b7`  
+		Last Modified: Thu, 11 Aug 2016 19:38:23 GMT  
+		Size: 34.3 MB (34309595 bytes)
+	-	`sha256:4a0645c74d2abc109131690d3f71a3c42fe544272d58e7a2151d4a4be4509977`  
+		Last Modified: Thu, 11 Aug 2016 19:38:09 GMT  
+		Size: 3.7 MB (3735762 bytes)
+	-	`sha256:9cfa7715b90cc83e5009c512050ac4f5c46adfa52997773a68c02ca21063a543`  
+		Last Modified: Thu, 11 Aug 2016 19:38:07 GMT  
+		Size: 333.0 B
+	-	`sha256:77fb23212070caee8cc379413904c7da38bee3cb9e17d3c039dea71c46e44bc3`  
+		Last Modified: Thu, 11 Aug 2016 19:38:07 GMT  
+		Size: 1.3 MB (1329833 bytes)
+	-	`sha256:15adee7f1f22ba431fdf3e4d228fcba6c6c45d30d019441b533468dcbc599f49`  
+		Last Modified: Thu, 11 Aug 2016 19:48:50 GMT  
+		Size: 31.1 MB (31086547 bytes)
+	-	`sha256:e65580133a82c5c7dc3391d2ade765c7b5542329a8c8e7eebf059ba4886ab293`  
+		Last Modified: Thu, 11 Aug 2016 19:48:40 GMT  
+		Size: 244.0 B
 
 ## `owncloud:fpm`
 
 ```console
-$ docker pull owncloud@sha256:8347e242f381c94acbd5fb4fc03ba0a18b4177baf8a94fd9cb52f493b85620ef
+$ docker pull owncloud@sha256:74d1be8039c346dafe3081713c2317e10e6b456993c0c0e8d39c5430efac36dc
 ```
 
 -	Platforms:
@@ -4839,9 +4839,9 @@ $ docker pull owncloud@sha256:8347e242f381c94acbd5fb4fc03ba0a18b4177baf8a94fd9cb
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **220.6 MB (220612990 bytes)**  
+-	Total Size: **221.2 MB (221152076 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02ca1aeb1ba053a43b5544349c31e2c5c4917ffdc1760818008b5221cc1a6a5f`
+-	Image ID: `sha256:5a54d9f2e8a999bd9b8a4437e64105985bcf11efbd6e409353f794137e1ff9d9`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -4868,41 +4868,41 @@ ENV PHP_VERSION=5.6.24
 ENV PHP_FILENAME=php-5.6.24.tar.xz
 # Fri, 29 Jul 2016 21:39:52 GMT
 ENV PHP_SHA256=ed7c38c6dac539ade62e08118258f4dac0c49beca04d8603bee4e0ea6ca8250b
-# Fri, 29 Jul 2016 21:39:56 GMT
-RUN set -xe 	&& cd /usr/src/ 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
-# Fri, 29 Jul 2016 21:39:57 GMT
-COPY file:2cb3361ad95f7488a8a7f2b07b4c9b350c37169a746a83f90cd8e6d164e3e963 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:46:44 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 		$PHP_EXTRA_CONFIGURE_ARGS 		--disable-cgi 		--enable-mysqlnd 		--enable-mbstring 		--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 	&& docker-php-source delete
-# Fri, 29 Jul 2016 21:46:45 GMT
-COPY multi:7012ef5427b419b7651e580b27dfd5ff65ccfb6e160d0381521f279d6a86cf08 in /usr/local/bin/
-# Fri, 29 Jul 2016 21:46:46 GMT
+# Wed, 10 Aug 2016 20:23:19 GMT
+RUN set -xe 	&& cd /usr/src 	&& curl -fSL "http://php.net/get/$PHP_FILENAME/from/this/mirror" -o php.tar.xz 	&& echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c - 	&& curl -fSL "http://php.net/get/$PHP_FILENAME.asc/from/this/mirror" -o php.tar.xz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done 	&& gpg --batch --verify php.tar.xz.asc php.tar.xz 	&& rm -r "$GNUPGHOME"
+# Wed, 10 Aug 2016 20:23:20 GMT
+COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/
+# Wed, 10 Aug 2016 20:29:49 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j"$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
+# Wed, 10 Aug 2016 20:29:50 GMT
+COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/
+# Wed, 10 Aug 2016 20:29:50 GMT
 WORKDIR /var/www/html
-# Fri, 29 Jul 2016 21:46:48 GMT
+# Wed, 10 Aug 2016 20:29:51 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Fri, 29 Jul 2016 21:46:48 GMT
+# Wed, 10 Aug 2016 20:29:52 GMT
 EXPOSE 9000/tcp
-# Fri, 29 Jul 2016 21:46:49 GMT
+# Wed, 10 Aug 2016 20:29:52 GMT
 CMD ["php-fpm"]
-# Mon, 01 Aug 2016 17:55:18 GMT
+# Thu, 11 Aug 2016 19:31:58 GMT
 RUN apt-get update && apt-get install -y 	bzip2 	libcurl4-openssl-dev 	libfreetype6-dev 	libicu-dev 	libjpeg-dev 	libldap2-dev 	libmcrypt-dev 	libmemcached-dev 	libpng12-dev 	libpq-dev 	libxml2-dev 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 17:58:54 GMT
+# Thu, 11 Aug 2016 19:36:32 GMT
 RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ 	&& docker-php-ext-install exif gd intl ldap mbstring mcrypt mysql opcache pdo_mysql pdo_pgsql pgsql zip
-# Mon, 01 Aug 2016 17:58:56 GMT
+# Thu, 11 Aug 2016 19:36:34 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 01 Aug 2016 17:59:37 GMT
+# Thu, 11 Aug 2016 19:37:23 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Mon, 01 Aug 2016 17:59:38 GMT
+# Thu, 11 Aug 2016 19:47:51 GMT
 ENV OWNCLOUD_VERSION=9.0.4
-# Mon, 01 Aug 2016 17:59:38 GMT
+# Thu, 11 Aug 2016 19:47:51 GMT
 VOLUME [/var/www/html]
-# Mon, 01 Aug 2016 17:59:57 GMT
+# Thu, 11 Aug 2016 19:48:19 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Mon, 01 Aug 2016 17:59:58 GMT
+# Thu, 11 Aug 2016 19:48:26 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh
-# Mon, 01 Aug 2016 17:59:59 GMT
+# Thu, 11 Aug 2016 19:48:27 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 18:00:00 GMT
+# Thu, 11 Aug 2016 19:48:28 GMT
 CMD ["php-fpm"]
 ```
 
@@ -4916,39 +4916,39 @@ CMD ["php-fpm"]
 	-	`sha256:3d821ad560e13c778e616da2a9033ac30d3811185f43635e95c20b22ab380077`  
 		Last Modified: Fri, 29 Jul 2016 22:46:34 GMT  
 		Size: 180.0 B
-	-	`sha256:313efb7f2797d96b93cdc6a1c1628cb0bb064db4082e1a75ad89ea416aba077c`  
-		Last Modified: Fri, 29 Jul 2016 22:55:35 GMT  
-		Size: 12.4 MB (12399119 bytes)
-	-	`sha256:59137d1c51b6cd58a87d11262a2d78b9257747a3bbd6ec05bf4d049b124c8e70`  
-		Last Modified: Fri, 29 Jul 2016 22:55:30 GMT  
-		Size: 601.0 B
-	-	`sha256:265ac2fa951d86cc8d6e91295f961f67bd5e283269334c02545b88265907c038`  
-		Last Modified: Fri, 29 Jul 2016 22:55:34 GMT  
-		Size: 8.8 MB (8796075 bytes)
-	-	`sha256:8f71c291653e80fd8be4c19d5de021fd8ac543b92cfd1ad9ff8b3c3a5bb357bb`  
-		Last Modified: Fri, 29 Jul 2016 22:55:30 GMT  
-		Size: 1.8 KB (1753 bytes)
-	-	`sha256:61edc0cbd1b43bc5c63d0fc1e67306c24e819d4f55c2e8705a7103e78d186922`  
-		Last Modified: Fri, 29 Jul 2016 22:55:31 GMT  
+	-	`sha256:1a0ed20d7752971350ab581861731d7d71a6eb560b93d48382b5cc2aa07fed8b`  
+		Last Modified: Wed, 10 Aug 2016 21:38:50 GMT  
+		Size: 12.4 MB (12399120 bytes)
+	-	`sha256:d17456fd86bcf1eb916ff4c4b4909dd6ad98736369cff4e5ee9c79e02782fc67`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
+		Size: 490.0 B
+	-	`sha256:c8bd75b8802c8ce64c4a28486fbfb4bde4247b27f5f8363dd8a8469ac89b1e85`  
+		Last Modified: Wed, 10 Aug 2016 21:38:48 GMT  
+		Size: 9.3 MB (9333467 bytes)
+	-	`sha256:0054f99dc6ca14454002cd76f78264c84cdfd9c57cea265ea0a6f601dab80158`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
+		Size: 1.8 KB (1829 bytes)
+	-	`sha256:1c8ec71281514f1d63f59000b5fd9082baa8a6d34e7e591d7cd22928879a5d18`  
+		Last Modified: Wed, 10 Aug 2016 21:38:45 GMT  
 		Size: 129.0 B
-	-	`sha256:2310b95436007759599e7c1a784ce61d633ed86c55689af737f6907dcc8c6d14`  
-		Last Modified: Fri, 29 Jul 2016 22:55:31 GMT  
-		Size: 7.6 KB (7631 bytes)
-	-	`sha256:38bb9593bce0ba6ead3bbecf0b2ada9b245c194168bf782d388e5cecea5f2d88`  
-		Last Modified: Mon, 01 Aug 2016 18:00:23 GMT  
-		Size: 34.3 MB (34307868 bytes)
-	-	`sha256:972b48230f3d9134dfa1030c0dfa08fc6dbedb26187bc0e24cad6575726f59bd`  
-		Last Modified: Mon, 01 Aug 2016 18:00:13 GMT  
-		Size: 3.7 MB (3735745 bytes)
-	-	`sha256:8bf22dfa16633bcdb53f53d020507297e5012af00a69be4b21ea6e4008c9bbec`  
-		Last Modified: Mon, 01 Aug 2016 18:00:11 GMT  
-		Size: 334.0 B
-	-	`sha256:9b9e3850c393e11aebe0ffa3dbd59e2da67f999ebe7c63c6796990db8848d707`  
-		Last Modified: Mon, 01 Aug 2016 18:00:09 GMT  
-		Size: 1.3 MB (1329835 bytes)
-	-	`sha256:954d55be90ef9cbd2ae2176787eae937b54a1fd67c99aeb136bb57814157b005`  
-		Last Modified: Mon, 01 Aug 2016 18:00:19 GMT  
-		Size: 31.1 MB (31086556 bytes)
-	-	`sha256:2e693cee76fda9ae57c5d038d89f19cf04bd3f4168550e331342e715b201e0f8`  
-		Last Modified: Mon, 01 Aug 2016 18:00:09 GMT  
-		Size: 246.0 B
+	-	`sha256:fa513925a4eb93b436ccdb48c9b0edca88237b4abdebea3245da69a6b37deaf9`  
+		Last Modified: Wed, 10 Aug 2016 21:38:46 GMT  
+		Size: 7.6 KB (7629 bytes)
+	-	`sha256:f5e918f5eeceb98e228adf3ed45e9590823935fc6a4d203903b7633e64e2f6b7`  
+		Last Modified: Thu, 11 Aug 2016 19:38:23 GMT  
+		Size: 34.3 MB (34309595 bytes)
+	-	`sha256:4a0645c74d2abc109131690d3f71a3c42fe544272d58e7a2151d4a4be4509977`  
+		Last Modified: Thu, 11 Aug 2016 19:38:09 GMT  
+		Size: 3.7 MB (3735762 bytes)
+	-	`sha256:9cfa7715b90cc83e5009c512050ac4f5c46adfa52997773a68c02ca21063a543`  
+		Last Modified: Thu, 11 Aug 2016 19:38:07 GMT  
+		Size: 333.0 B
+	-	`sha256:77fb23212070caee8cc379413904c7da38bee3cb9e17d3c039dea71c46e44bc3`  
+		Last Modified: Thu, 11 Aug 2016 19:38:07 GMT  
+		Size: 1.3 MB (1329833 bytes)
+	-	`sha256:15adee7f1f22ba431fdf3e4d228fcba6c6c45d30d019441b533468dcbc599f49`  
+		Last Modified: Thu, 11 Aug 2016 19:48:50 GMT  
+		Size: 31.1 MB (31086547 bytes)
+	-	`sha256:e65580133a82c5c7dc3391d2ade765c7b5542329a8c8e7eebf059ba4886ab293`  
+		Last Modified: Thu, 11 Aug 2016 19:48:40 GMT  
+		Size: 244.0 B
