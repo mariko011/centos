@@ -518,7 +518,7 @@ CMD ["nuxeoctl" "console"]
 ## `nuxeo:8.2`
 
 ```console
-$ docker pull nuxeo@sha256:282c5e189336b1935e2b34d6482e35786ef1796469f4cc3c3fd368408448d411
+$ docker pull nuxeo@sha256:5647a4b1c89969dbbabe80bf9d7cbcc1ee9c3e5b5e23a2b0fbda6fe8135989d1
 ```
 
 -	Platforms:
@@ -528,9 +528,9 @@ $ docker pull nuxeo@sha256:282c5e189336b1935e2b34d6482e35786ef1796469f4cc3c3fd36
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **643.8 MB (643764191 bytes)**  
+-	Total Size: **643.8 MB (643815207 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f2a89dd04a5615f4aa7f5913bdc31cbdf3ebb3c97a2e61b35bea5b5dabf0266`
+-	Image ID: `sha256:e08fde11e416317c45cf7c44e690e85156c9c96807e91aa3da487bee9b624e36`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
@@ -551,53 +551,53 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Fri, 29 Jul 2016 04:48:36 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Fri, 29 Jul 2016 04:48:37 GMT
-ENV JAVA_VERSION=8u91
-# Fri, 29 Jul 2016 04:48:38 GMT
-ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Fri, 29 Jul 2016 04:48:38 GMT
+# Wed, 10 Aug 2016 18:41:34 GMT
+ENV JAVA_VERSION=8u102
+# Wed, 10 Aug 2016 18:41:35 GMT
+ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
+# Wed, 10 Aug 2016 18:41:36 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Fri, 29 Jul 2016 16:47:50 GMT
+# Wed, 10 Aug 2016 18:42:55 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 29 Jul 2016 16:47:53 GMT
+# Wed, 10 Aug 2016 18:42:59 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Mon, 01 Aug 2016 19:45:44 GMT
+# Thu, 11 Aug 2016 19:02:37 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Mon, 01 Aug 2016 19:45:45 GMT
+# Thu, 11 Aug 2016 19:02:38 GMT
 ENV NUXEO_USER=nuxeo
-# Mon, 01 Aug 2016 19:45:47 GMT
+# Thu, 11 Aug 2016 19:02:41 GMT
 RUN useradd -m -d /home/$NUXEO_USER -s /bin/bash $NUXEO_USER
-# Mon, 01 Aug 2016 19:45:47 GMT
+# Thu, 11 Aug 2016 19:02:43 GMT
 ENV GOSU_VERSION=1.7
-# Mon, 01 Aug 2016 19:45:53 GMT
+# Thu, 11 Aug 2016 19:02:50 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Mon, 01 Aug 2016 19:48:29 GMT
+# Thu, 11 Aug 2016 19:06:34 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libreoffice     libwpd-tools     exiftool     ghostscript  && rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 19:48:32 GMT
+# Thu, 11 Aug 2016 19:06:45 GMT
 ADD file:5b1e1c0e2f46775870771ff0fe5f35cfc79b01466b73da308fa4f546a1796610 in /etc/ImageMagick/policy.xml
-# Mon, 01 Aug 2016 19:48:33 GMT
+# Thu, 11 Aug 2016 19:06:46 GMT
 ENV NUXEO_VERSION=8.2
-# Mon, 01 Aug 2016 19:48:35 GMT
+# Thu, 11 Aug 2016 19:06:48 GMT
 ENV NUXEO_MD5=13cbc55be36823bec99482c651c1cbc0
-# Mon, 01 Aug 2016 19:48:36 GMT
+# Thu, 11 Aug 2016 19:06:49 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Mon, 01 Aug 2016 19:49:07 GMT
+# Thu, 11 Aug 2016 19:07:20 GMT
 RUN curl -fsSL "http://cdn.nuxeo.com/nuxeo-${NUXEO_VERSION}/nuxeo-cap-${NUXEO_VERSION}-tomcat.zip" -o /tmp/nuxeo-distribution-tomcat.zip     && echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh
-# Mon, 01 Aug 2016 19:49:10 GMT
+# Thu, 11 Aug 2016 19:07:23 GMT
 RUN mkdir /docker-entrypoint-initnuxeo.d
-# Mon, 01 Aug 2016 19:49:10 GMT
+# Thu, 11 Aug 2016 19:07:24 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 01 Aug 2016 19:49:11 GMT
+# Thu, 11 Aug 2016 19:07:26 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 01 Aug 2016 19:49:12 GMT
+# Thu, 11 Aug 2016 19:07:28 GMT
 COPY file:8bb3b62221e76bd4e12692a864280db4c72e5d7140697cf199f5a098c781feff in /
-# Mon, 01 Aug 2016 19:49:13 GMT
+# Thu, 11 Aug 2016 19:07:29 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Mon, 01 Aug 2016 19:49:14 GMT
+# Thu, 11 Aug 2016 19:07:30 GMT
 EXPOSE 8080/tcp
-# Mon, 01 Aug 2016 19:49:14 GMT
+# Thu, 11 Aug 2016 19:07:32 GMT
 EXPOSE 8787/tcp
-# Mon, 01 Aug 2016 19:49:15 GMT
+# Thu, 11 Aug 2016 19:07:33 GMT
 CMD ["nuxeoctl" "console"]
 ```
 
@@ -617,33 +617,33 @@ CMD ["nuxeoctl" "console"]
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
 		Size: 241.0 B
-	-	`sha256:783d0812b9b6cb13f78b8ecdddd83a821c6ddf11a1e3b9ede5e61d7c8ccfdc29`  
-		Last Modified: Fri, 29 Jul 2016 16:48:13 GMT  
-		Size: 53.4 MB (53350533 bytes)
-	-	`sha256:2c49287cad2e905f46bf98d5d5461760bb975c335ace4ffca8466a2312465f9e`  
-		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 284.4 KB (284373 bytes)
-	-	`sha256:d019746d4636344a5577b33b8e78760ad87b370f2824d3cce55cd7fc4b913ce6`  
-		Last Modified: Mon, 01 Aug 2016 19:49:28 GMT  
-		Size: 4.4 KB (4386 bytes)
-	-	`sha256:d47ba0492eea178b3be9199c7ad0c3cf78251dfa82a5237d2da50ec413af2647`  
-		Last Modified: Mon, 01 Aug 2016 19:49:27 GMT  
+	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
+		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
+		Size: 53.4 MB (53401736 bytes)
+	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
+		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
+		Size: 284.4 KB (284364 bytes)
+	-	`sha256:f7cbb8fd88580d29cc61104a442838908f22761cd5c0f565ae835daefd82b8e5`  
+		Last Modified: Thu, 11 Aug 2016 19:07:51 GMT  
+		Size: 4.4 KB (4390 bytes)
+	-	`sha256:7d4ef69f50d13c093daddb0a139d028d71cbaa3f995ba2fa3b41d76b4983a5bd`  
+		Last Modified: Thu, 11 Aug 2016 19:07:51 GMT  
 		Size: 807.9 KB (807934 bytes)
-	-	`sha256:0e73bd0035a0a5fccd1e2b6c907550faef3ef3911e68013f0f9fda2fbedae9e9`  
-		Last Modified: Mon, 01 Aug 2016 19:50:31 GMT  
-		Size: 231.7 MB (231707550 bytes)
-	-	`sha256:bbc5317519f9fd652420fa78f56565f0c907f60f54cdb9b0e90499e1c43d345a`  
-		Last Modified: Mon, 01 Aug 2016 19:49:25 GMT  
-		Size: 279.0 B
-	-	`sha256:f604d1d42c2861e169d7de3a7b76b35c346daba769340e3fdec2502b1bbc8d82`  
-		Last Modified: Mon, 01 Aug 2016 19:49:50 GMT  
-		Size: 287.1 MB (287147763 bytes)
-	-	`sha256:35378366002d440c1cb6f8ae7e97e84b08da20b423ada6593eba7f8b330e6a8e`  
-		Last Modified: Mon, 01 Aug 2016 19:49:24 GMT  
-		Size: 116.0 B
-	-	`sha256:e5bde283dc27d06b1daa4a0746c18dd0438553333e247d8e6541e152bb026a88`  
-		Last Modified: Mon, 01 Aug 2016 19:49:24 GMT  
-		Size: 1.5 KB (1481 bytes)
+	-	`sha256:22111e39c582eab78b0016069543a3e859fd6c4ba98e0794f2d048139bd52f57`  
+		Last Modified: Thu, 11 Aug 2016 19:09:36 GMT  
+		Size: 231.7 MB (231707364 bytes)
+	-	`sha256:1eed718c231e6a89e2d8adc9393b80f34a0ee2a03bf321cecb0ac48ee661bf04`  
+		Last Modified: Thu, 11 Aug 2016 19:07:48 GMT  
+		Size: 281.0 B
+	-	`sha256:f0c200c2f6855965f4798e50f77084e51d0c4dda23c3f61f8cbd572b9d8b22d2`  
+		Last Modified: Thu, 11 Aug 2016 19:08:23 GMT  
+		Size: 287.1 MB (287147766 bytes)
+	-	`sha256:c2e3af635b15d308a7aa125584e6b2a096478f5ec5fdfcf87e405434ef37ac15`  
+		Last Modified: Thu, 11 Aug 2016 19:07:48 GMT  
+		Size: 117.0 B
+	-	`sha256:4c372b1c710d935b40c7d3be80c1247205a7c77690b5db748dc7c711265896b4`  
+		Last Modified: Thu, 11 Aug 2016 19:07:48 GMT  
+		Size: 1.5 KB (1479 bytes)
 
 ## `nuxeo:LTS-2015`
 
@@ -1038,7 +1038,7 @@ CMD ["nuxeoctl" "console"]
 ## `nuxeo:7.10`
 
 ```console
-$ docker pull nuxeo@sha256:80b47ae2cea010fbc76eeb1811f757ae3d85efddff95114bd8970d13892d40d0
+$ docker pull nuxeo@sha256:487ccb941ca9c476981a845af5ceca49f9ee41296c77f25505290a53b33a25bc
 ```
 
 -	Platforms:
@@ -1048,9 +1048,9 @@ $ docker pull nuxeo@sha256:80b47ae2cea010fbc76eeb1811f757ae3d85efddff95114bd8970
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **637.0 MB (636960980 bytes)**  
+-	Total Size: **637.0 MB (637011948 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:37b4b50142e692df8bcd052758d14c3e134be4684a0a8d557bf8c131b11be9bd`
+-	Image ID: `sha256:63dc8729ce17fe0c7f13d32979b58ffeee27af285bf3ee4b92d672e9e632c596`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
@@ -1071,53 +1071,53 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Fri, 29 Jul 2016 04:48:36 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Fri, 29 Jul 2016 04:48:37 GMT
-ENV JAVA_VERSION=8u91
-# Fri, 29 Jul 2016 04:48:38 GMT
-ENV JAVA_DEBIAN_VERSION=8u91-b14-1~bpo8+1
-# Fri, 29 Jul 2016 04:48:38 GMT
+# Wed, 10 Aug 2016 18:41:34 GMT
+ENV JAVA_VERSION=8u102
+# Wed, 10 Aug 2016 18:41:35 GMT
+ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
+# Wed, 10 Aug 2016 18:41:36 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Fri, 29 Jul 2016 16:47:50 GMT
+# Wed, 10 Aug 2016 18:42:55 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 29 Jul 2016 16:47:53 GMT
+# Wed, 10 Aug 2016 18:42:59 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Mon, 01 Aug 2016 19:45:44 GMT
+# Thu, 11 Aug 2016 19:02:37 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Mon, 01 Aug 2016 19:45:45 GMT
+# Thu, 11 Aug 2016 19:02:38 GMT
 ENV NUXEO_USER=nuxeo
-# Mon, 01 Aug 2016 19:45:47 GMT
+# Thu, 11 Aug 2016 19:02:41 GMT
 RUN useradd -m -d /home/$NUXEO_USER -s /bin/bash $NUXEO_USER
-# Mon, 01 Aug 2016 19:45:47 GMT
+# Thu, 11 Aug 2016 19:02:43 GMT
 ENV GOSU_VERSION=1.7
-# Mon, 01 Aug 2016 19:45:53 GMT
+# Thu, 11 Aug 2016 19:02:50 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Mon, 01 Aug 2016 19:48:29 GMT
+# Thu, 11 Aug 2016 19:06:34 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libreoffice     libwpd-tools     exiftool     ghostscript  && rm -rf /var/lib/apt/lists/*
-# Mon, 01 Aug 2016 19:48:32 GMT
+# Thu, 11 Aug 2016 19:06:45 GMT
 ADD file:5b1e1c0e2f46775870771ff0fe5f35cfc79b01466b73da308fa4f546a1796610 in /etc/ImageMagick/policy.xml
-# Mon, 01 Aug 2016 19:52:18 GMT
+# Thu, 11 Aug 2016 19:12:08 GMT
 ENV NUXEO_VERSION=7.10
-# Mon, 01 Aug 2016 19:52:18 GMT
+# Thu, 11 Aug 2016 19:12:09 GMT
 ENV NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2
-# Mon, 01 Aug 2016 19:52:19 GMT
+# Thu, 11 Aug 2016 19:12:10 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Mon, 01 Aug 2016 19:52:46 GMT
+# Thu, 11 Aug 2016 19:12:37 GMT
 RUN curl -fsSL "http://cdn.nuxeo.com/nuxeo-${NUXEO_VERSION}/nuxeo-cap-${NUXEO_VERSION}-tomcat.zip" -o /tmp/nuxeo-distribution-tomcat.zip     && echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh
-# Mon, 01 Aug 2016 19:52:47 GMT
+# Thu, 11 Aug 2016 19:12:40 GMT
 RUN mkdir /docker-entrypoint-initnuxeo.d
-# Mon, 01 Aug 2016 19:52:48 GMT
+# Thu, 11 Aug 2016 19:12:41 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 01 Aug 2016 19:52:49 GMT
+# Thu, 11 Aug 2016 19:12:42 GMT
 WORKDIR /opt/nuxeo/server
-# Wed, 10 Aug 2016 16:56:56 GMT
+# Thu, 11 Aug 2016 19:12:45 GMT
 COPY file:5cebeee78434ce067bd4b8b9c42eaa20349f1a252aaf628add51d12663b04917 in /
-# Wed, 10 Aug 2016 16:56:57 GMT
+# Thu, 11 Aug 2016 19:12:47 GMT
 ENTRYPOINT &{["/docker-entrypoint.sh"]}
-# Wed, 10 Aug 2016 16:56:57 GMT
+# Thu, 11 Aug 2016 19:12:49 GMT
 EXPOSE 8080/tcp
-# Wed, 10 Aug 2016 16:56:58 GMT
+# Thu, 11 Aug 2016 19:12:50 GMT
 EXPOSE 8787/tcp
-# Wed, 10 Aug 2016 16:56:58 GMT
+# Thu, 11 Aug 2016 19:12:51 GMT
 CMD ["nuxeoctl" "console"]
 ```
 
@@ -1137,32 +1137,32 @@ CMD ["nuxeoctl" "console"]
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
 		Size: 241.0 B
-	-	`sha256:783d0812b9b6cb13f78b8ecdddd83a821c6ddf11a1e3b9ede5e61d7c8ccfdc29`  
-		Last Modified: Fri, 29 Jul 2016 16:48:13 GMT  
-		Size: 53.4 MB (53350533 bytes)
-	-	`sha256:2c49287cad2e905f46bf98d5d5461760bb975c335ace4ffca8466a2312465f9e`  
-		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 284.4 KB (284373 bytes)
-	-	`sha256:d019746d4636344a5577b33b8e78760ad87b370f2824d3cce55cd7fc4b913ce6`  
-		Last Modified: Mon, 01 Aug 2016 19:49:28 GMT  
-		Size: 4.4 KB (4386 bytes)
-	-	`sha256:d47ba0492eea178b3be9199c7ad0c3cf78251dfa82a5237d2da50ec413af2647`  
-		Last Modified: Mon, 01 Aug 2016 19:49:27 GMT  
+	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
+		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
+		Size: 53.4 MB (53401736 bytes)
+	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
+		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
+		Size: 284.4 KB (284364 bytes)
+	-	`sha256:f7cbb8fd88580d29cc61104a442838908f22761cd5c0f565ae835daefd82b8e5`  
+		Last Modified: Thu, 11 Aug 2016 19:07:51 GMT  
+		Size: 4.4 KB (4390 bytes)
+	-	`sha256:7d4ef69f50d13c093daddb0a139d028d71cbaa3f995ba2fa3b41d76b4983a5bd`  
+		Last Modified: Thu, 11 Aug 2016 19:07:51 GMT  
 		Size: 807.9 KB (807934 bytes)
-	-	`sha256:0e73bd0035a0a5fccd1e2b6c907550faef3ef3911e68013f0f9fda2fbedae9e9`  
-		Last Modified: Mon, 01 Aug 2016 19:50:31 GMT  
-		Size: 231.7 MB (231707550 bytes)
-	-	`sha256:bbc5317519f9fd652420fa78f56565f0c907f60f54cdb9b0e90499e1c43d345a`  
-		Last Modified: Mon, 01 Aug 2016 19:49:25 GMT  
-		Size: 279.0 B
-	-	`sha256:4f879610945e46b84d28919a7bb34ed4c9393719e030b23a95d0c76aef6fe6f2`  
-		Last Modified: Mon, 01 Aug 2016 19:53:29 GMT  
-		Size: 280.3 MB (280344511 bytes)
-	-	`sha256:52f4bc87c64c3243cc5187c0fa0ade2ca424da458c0a8229dcd1fea5b707d5a9`  
-		Last Modified: Mon, 01 Aug 2016 19:53:03 GMT  
+	-	`sha256:22111e39c582eab78b0016069543a3e859fd6c4ba98e0794f2d048139bd52f57`  
+		Last Modified: Thu, 11 Aug 2016 19:09:36 GMT  
+		Size: 231.7 MB (231707364 bytes)
+	-	`sha256:1eed718c231e6a89e2d8adc9393b80f34a0ee2a03bf321cecb0ac48ee661bf04`  
+		Last Modified: Thu, 11 Aug 2016 19:07:48 GMT  
+		Size: 281.0 B
+	-	`sha256:0891b7c98c8e956ba339c49c536f927b57992df2afe3a82279d1975596774bb6`  
+		Last Modified: Thu, 11 Aug 2016 19:13:36 GMT  
+		Size: 280.3 MB (280344465 bytes)
+	-	`sha256:c5d08011e124916a50472a2491e3a3641be8c50d52852e88cc1aa19ac5722281`  
+		Last Modified: Thu, 11 Aug 2016 19:13:04 GMT  
 		Size: 117.0 B
-	-	`sha256:f148fb007daa6ac57f71a321f9da2fef40e20e708ec4b9942934eb038ad40135`  
-		Last Modified: Wed, 10 Aug 2016 16:58:16 GMT  
+	-	`sha256:d30e45b75bf0fe944ad0ad4d9425cc4548b56b8dcfd43b9fc4ce5f522d22f27c`  
+		Last Modified: Thu, 11 Aug 2016 19:13:04 GMT  
 		Size: 1.5 KB (1521 bytes)
 
 ## `nuxeo:LTS-2014`

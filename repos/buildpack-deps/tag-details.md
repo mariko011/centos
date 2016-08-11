@@ -675,7 +675,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		au
 ## `buildpack-deps:trusty-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:a8b0d7e0d9cef9859770600dab8d2c22c84dd3fa6f0414a8d4e5ac678f4c128e
+$ docker pull buildpack-deps@sha256:99c8038bf77c4ebcf86a04a70ffc3d3e00318daac28c7c89e6a470f5147e10a1
 ```
 
 -	Platforms:
@@ -685,47 +685,47 @@ $ docker pull buildpack-deps@sha256:a8b0d7e0d9cef9859770600dab8d2c22c84dd3fa6f04
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.4 MB (70369992 bytes)**  
+-	Total Size: **70.4 MB (70371224 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cff0d208a813f878ad6439536ba8daedf0eae09535f658c73c34b01505418254`
+-	Image ID: `sha256:c85707a4ae56997aa636b61d3e958eaf82e9c72168ea9864b2a773850a5c961d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 22 Jul 2016 15:18:56 GMT
-ADD file:dc3b1b2c44af75026bc24b3f3a5bd5f45b9ca7ed395b91dfacd1b47fe0545fb5 in /
-# Fri, 22 Jul 2016 15:18:58 GMT
+# Thu, 11 Aug 2016 17:45:54 GMT
+ADD file:4f5a660d3f5141588daa0e87c9c8b924c5ec31e9350710371cf454c862a78c50 in /
+# Thu, 11 Aug 2016 17:45:57 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 22 Jul 2016 15:19:00 GMT
+# Thu, 11 Aug 2016 17:46:00 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 22 Jul 2016 15:19:02 GMT
+# Thu, 11 Aug 2016 17:46:02 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 22 Jul 2016 15:19:02 GMT
+# Thu, 11 Aug 2016 17:46:03 GMT
 CMD ["/bin/bash"]
-# Fri, 22 Jul 2016 16:56:40 GMT
+# Thu, 11 Aug 2016 18:57:24 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:96c6a1f3c3b0183063a9dad891fe6d8ec466c2fdf9571a0c19b3319ea8a58871`  
-		Last Modified: Mon, 18 Jul 2016 17:36:54 GMT  
-		Size: 65.7 MB (65699069 bytes)
-	-	`sha256:ed40d4bcb31369df1a018c64e560e94dfd106d0b2851db25f921d3708d64fac5`  
-		Last Modified: Fri, 22 Jul 2016 15:21:07 GMT  
+	-	`sha256:064f9af025390d8da3dfab763fac261dd67f8807343613239d66304cda8f5d16`  
+		Last Modified: Thu, 04 Aug 2016 12:39:27 GMT  
+		Size: 65.7 MB (65699939 bytes)
+	-	`sha256:390957b2f4f0cd72b8577795cd8076cdc21d45c7823bbb5c895a494ae6038267`  
+		Last Modified: Thu, 11 Aug 2016 17:47:59 GMT  
 		Size: 71.6 KB (71563 bytes)
-	-	`sha256:b171f9dbc13b68a99386e4d54e28e26144688973ad7bbdd9ec1f822dc8b0ac0a`  
-		Last Modified: Fri, 22 Jul 2016 15:21:06 GMT  
-		Size: 365.0 B
-	-	`sha256:ccfc4df4fbba7d591c1eff4972018e67c1142b21b64bc36fba3f93bd33f2ebd9`  
-		Last Modified: Fri, 22 Jul 2016 15:21:07 GMT  
+	-	`sha256:cee0974db2b868f0408f7e3eaba93c11fce3a38f612674477653b04c10369da0`  
+		Last Modified: Thu, 11 Aug 2016 17:47:58 GMT  
+		Size: 362.0 B
+	-	`sha256:c8144262002cd241e607d7d3ecda450ce4ae8edf7dac8dbf46897d498ac667d8`  
+		Last Modified: Thu, 11 Aug 2016 17:47:58 GMT  
 		Size: 680.0 B
-	-	`sha256:5036c705f4c89d1622d6199f627d63b89766bd9d524093d750c2e13b119c12dd`  
-		Last Modified: Fri, 22 Jul 2016 17:27:58 GMT  
-		Size: 4.6 MB (4598315 bytes)
+	-	`sha256:0d986e0269ededfc3b013b4cc2314761bc61a0d47ea714d0f9b3958b252bef2e`  
+		Last Modified: Thu, 11 Aug 2016 18:57:38 GMT  
+		Size: 4.6 MB (4598680 bytes)
 
 ## `buildpack-deps:trusty-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:320ee3b02ea124c21d6f4c5d175255ca45f61648eacd974e2f9aa222f55117f6
+$ docker pull buildpack-deps@sha256:38b7a1ecbcbeded468239d8cab80619db3b981a34a3516f780763f348c586261
 ```
 
 -	Platforms:
@@ -735,47 +735,47 @@ $ docker pull buildpack-deps@sha256:320ee3b02ea124c21d6f4c5d175255ca45f61648eacd
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **99.4 MB (99374581 bytes)**  
+-	Total Size: **99.4 MB (99376170 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ec1a9329bcc845ff12aea93236ee082a356ef0c69447b0e7261f9c05f77fb75e`
+-	Image ID: `sha256:1f976efd766ffc266ea90d06e566c89ab18e811ca8ade5c2c6b23acffa54ef4a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 22 Jul 2016 15:18:56 GMT
-ADD file:dc3b1b2c44af75026bc24b3f3a5bd5f45b9ca7ed395b91dfacd1b47fe0545fb5 in /
-# Fri, 22 Jul 2016 15:18:58 GMT
+# Thu, 11 Aug 2016 17:45:54 GMT
+ADD file:4f5a660d3f5141588daa0e87c9c8b924c5ec31e9350710371cf454c862a78c50 in /
+# Thu, 11 Aug 2016 17:45:57 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 22 Jul 2016 15:19:00 GMT
+# Thu, 11 Aug 2016 17:46:00 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 22 Jul 2016 15:19:02 GMT
+# Thu, 11 Aug 2016 17:46:02 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 22 Jul 2016 15:19:02 GMT
+# Thu, 11 Aug 2016 17:46:03 GMT
 CMD ["/bin/bash"]
-# Fri, 22 Jul 2016 16:56:40 GMT
+# Thu, 11 Aug 2016 18:57:24 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 22 Jul 2016 16:57:48 GMT
+# Thu, 11 Aug 2016 18:59:10 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:96c6a1f3c3b0183063a9dad891fe6d8ec466c2fdf9571a0c19b3319ea8a58871`  
-		Last Modified: Mon, 18 Jul 2016 17:36:54 GMT  
-		Size: 65.7 MB (65699069 bytes)
-	-	`sha256:ed40d4bcb31369df1a018c64e560e94dfd106d0b2851db25f921d3708d64fac5`  
-		Last Modified: Fri, 22 Jul 2016 15:21:07 GMT  
+	-	`sha256:064f9af025390d8da3dfab763fac261dd67f8807343613239d66304cda8f5d16`  
+		Last Modified: Thu, 04 Aug 2016 12:39:27 GMT  
+		Size: 65.7 MB (65699939 bytes)
+	-	`sha256:390957b2f4f0cd72b8577795cd8076cdc21d45c7823bbb5c895a494ae6038267`  
+		Last Modified: Thu, 11 Aug 2016 17:47:59 GMT  
 		Size: 71.6 KB (71563 bytes)
-	-	`sha256:b171f9dbc13b68a99386e4d54e28e26144688973ad7bbdd9ec1f822dc8b0ac0a`  
-		Last Modified: Fri, 22 Jul 2016 15:21:06 GMT  
-		Size: 365.0 B
-	-	`sha256:ccfc4df4fbba7d591c1eff4972018e67c1142b21b64bc36fba3f93bd33f2ebd9`  
-		Last Modified: Fri, 22 Jul 2016 15:21:07 GMT  
+	-	`sha256:cee0974db2b868f0408f7e3eaba93c11fce3a38f612674477653b04c10369da0`  
+		Last Modified: Thu, 11 Aug 2016 17:47:58 GMT  
+		Size: 362.0 B
+	-	`sha256:c8144262002cd241e607d7d3ecda450ce4ae8edf7dac8dbf46897d498ac667d8`  
+		Last Modified: Thu, 11 Aug 2016 17:47:58 GMT  
 		Size: 680.0 B
-	-	`sha256:5036c705f4c89d1622d6199f627d63b89766bd9d524093d750c2e13b119c12dd`  
-		Last Modified: Fri, 22 Jul 2016 17:27:58 GMT  
-		Size: 4.6 MB (4598315 bytes)
-	-	`sha256:a4f5a357f49fcc813854779c9fba583dff945e30bd330bdbc5d0bbc7f3c156eb`  
-		Last Modified: Fri, 22 Jul 2016 17:28:09 GMT  
-		Size: 29.0 MB (29004589 bytes)
+	-	`sha256:0d986e0269ededfc3b013b4cc2314761bc61a0d47ea714d0f9b3958b252bef2e`  
+		Last Modified: Thu, 11 Aug 2016 18:57:38 GMT  
+		Size: 4.6 MB (4598680 bytes)
+	-	`sha256:bb8b286a223155781a4ddf47929166eb4a6c8259c6bee54de3a6e357d294d097`  
+		Last Modified: Thu, 11 Aug 2016 18:59:36 GMT  
+		Size: 29.0 MB (29004946 bytes)
 
 ## `buildpack-deps:trusty`
 
@@ -960,7 +960,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		au
 ## `buildpack-deps:xenial-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:0858631905c239539dc926030df615f4dd7b44c60b547d286cf27ad15223525a
+$ docker pull buildpack-deps@sha256:08060e5e52abc511dbfc4636f3a4271d90763ef82672917715d8507ed91ae3cb
 ```
 
 -	Platforms:
@@ -970,47 +970,47 @@ $ docker pull buildpack-deps@sha256:0858631905c239539dc926030df615f4dd7b44c60b54
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.6 MB (56609307 bytes)**  
+-	Total Size: **57.0 MB (56962964 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e2460dc25670b09deffa51dedfa60499fa5da3ad2306d506edceb277b5ef13e`
+-	Image ID: `sha256:8a13b0316186ff153ec02557b347f3e2f7a11e04c4e8d8e715d788dff913b570`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 22 Jul 2016 15:19:25 GMT
-ADD file:fdbd881d78f9d7d9245d0838389ebc793bef13243b9e3269512046cd75216baf in /
-# Fri, 22 Jul 2016 15:19:27 GMT
+# Thu, 11 Aug 2016 17:46:20 GMT
+ADD file:a2427e00553ce3905be425a208168cd1a587d9d23571ea74c033a35c8f00cbc0 in /
+# Thu, 11 Aug 2016 17:46:23 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 22 Jul 2016 15:19:29 GMT
+# Thu, 11 Aug 2016 17:46:25 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 22 Jul 2016 15:19:31 GMT
+# Thu, 11 Aug 2016 17:46:28 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 22 Jul 2016 15:19:31 GMT
+# Thu, 11 Aug 2016 17:46:29 GMT
 CMD ["/bin/bash"]
-# Fri, 22 Jul 2016 17:02:58 GMT
+# Thu, 11 Aug 2016 18:53:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:43db9dbdcb300fc39b23e88a1721bdaa95c7fe396bd89d6a4b1a39e8da1a2d4c`  
-		Last Modified: Mon, 18 Jul 2016 17:38:23 GMT  
-		Size: 49.3 MB (49325555 bytes)
-	-	`sha256:2dc64e8f8d4f2e7511f002e12474ae01a482a9727d620f49a3871b5882891b3f`  
-		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
-		Size: 828.0 B
-	-	`sha256:670a583e1b5043337f8c73dcad9ff019f2ac0971475456fd4fdf296f2c5b939f`  
-		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
-		Size: 442.0 B
-	-	`sha256:183b0bfcd10e095bb23120d43204762e2aa9b5a53e2060817a2460bafc76ad37`  
-		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
-		Size: 681.0 B
-	-	`sha256:593767bfbd5ac4aa2c23e52dd67472fecf3939857d7505e9255a3482d0489e45`  
-		Last Modified: Fri, 22 Jul 2016 17:26:10 GMT  
-		Size: 7.3 MB (7281801 bytes)
+	-	`sha256:2f0243478e1f7fcb578778370ebcbcb350ef637e8b966c6a24830df61a3e89b8`  
+		Last Modified: Thu, 11 Aug 2016 17:49:30 GMT  
+		Size: 49.7 MB (49678667 bytes)
+	-	`sha256:d8909ae88469beef31d7ad33c85a0a1b2ade2cef4d51bab0c1353abd8477054d`  
+		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
+		Size: 823.0 B
+	-	`sha256:820f09abed29b404920f73274dd7107a4080d22a40351683aa9c410df3d18eeb`  
+		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
+		Size: 445.0 B
+	-	`sha256:01193a8f3d889f5c75dd4c54e7ad2a81216f10e7b2d515af571d17a4015b3d59`  
+		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
+		Size: 682.0 B
+	-	`sha256:a4c520e282868d1f4a3b26a2116724c0b38e11859acb3c7335a5aad558242768`  
+		Last Modified: Thu, 11 Aug 2016 18:53:26 GMT  
+		Size: 7.3 MB (7282347 bytes)
 
 ## `buildpack-deps:xenial-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:49aa5b9f964569fdc24d8b8a06d0b7a5d49b8f8265d203adf7a26b5e4730457b
+$ docker pull buildpack-deps@sha256:4bf155c01680976476890690f6e22d72cf22512db1861f45a9ce1576a499493c
 ```
 
 -	Platforms:
@@ -1020,52 +1020,52 @@ $ docker pull buildpack-deps@sha256:49aa5b9f964569fdc24d8b8a06d0b7a5d49b8f8265d2
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **97.8 MB (97823579 bytes)**  
+-	Total Size: **98.2 MB (98177387 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7cca0f18e541d8a8d5c7134858363c5a3131593f155c6b4eaeb547d6856721ae`
+-	Image ID: `sha256:5be0bb9e7e7a4d5be646d1321d2a131895594a81596b5a977bac97fba7ba117b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 22 Jul 2016 15:19:25 GMT
-ADD file:fdbd881d78f9d7d9245d0838389ebc793bef13243b9e3269512046cd75216baf in /
-# Fri, 22 Jul 2016 15:19:27 GMT
+# Thu, 11 Aug 2016 17:46:20 GMT
+ADD file:a2427e00553ce3905be425a208168cd1a587d9d23571ea74c033a35c8f00cbc0 in /
+# Thu, 11 Aug 2016 17:46:23 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 22 Jul 2016 15:19:29 GMT
+# Thu, 11 Aug 2016 17:46:25 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 22 Jul 2016 15:19:31 GMT
+# Thu, 11 Aug 2016 17:46:28 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 22 Jul 2016 15:19:31 GMT
+# Thu, 11 Aug 2016 17:46:29 GMT
 CMD ["/bin/bash"]
-# Fri, 22 Jul 2016 17:02:58 GMT
+# Thu, 11 Aug 2016 18:53:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 22 Jul 2016 17:03:24 GMT
+# Thu, 11 Aug 2016 18:54:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:43db9dbdcb300fc39b23e88a1721bdaa95c7fe396bd89d6a4b1a39e8da1a2d4c`  
-		Last Modified: Mon, 18 Jul 2016 17:38:23 GMT  
-		Size: 49.3 MB (49325555 bytes)
-	-	`sha256:2dc64e8f8d4f2e7511f002e12474ae01a482a9727d620f49a3871b5882891b3f`  
-		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
-		Size: 828.0 B
-	-	`sha256:670a583e1b5043337f8c73dcad9ff019f2ac0971475456fd4fdf296f2c5b939f`  
-		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
-		Size: 442.0 B
-	-	`sha256:183b0bfcd10e095bb23120d43204762e2aa9b5a53e2060817a2460bafc76ad37`  
-		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
-		Size: 681.0 B
-	-	`sha256:593767bfbd5ac4aa2c23e52dd67472fecf3939857d7505e9255a3482d0489e45`  
-		Last Modified: Fri, 22 Jul 2016 17:26:10 GMT  
-		Size: 7.3 MB (7281801 bytes)
-	-	`sha256:7b973ea7cdf95e1e21dc3706c8d5873ea7fc550b86517e1f99e59ada147be2d1`  
-		Last Modified: Fri, 22 Jul 2016 17:26:23 GMT  
-		Size: 41.2 MB (41214272 bytes)
+	-	`sha256:2f0243478e1f7fcb578778370ebcbcb350ef637e8b966c6a24830df61a3e89b8`  
+		Last Modified: Thu, 11 Aug 2016 17:49:30 GMT  
+		Size: 49.7 MB (49678667 bytes)
+	-	`sha256:d8909ae88469beef31d7ad33c85a0a1b2ade2cef4d51bab0c1353abd8477054d`  
+		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
+		Size: 823.0 B
+	-	`sha256:820f09abed29b404920f73274dd7107a4080d22a40351683aa9c410df3d18eeb`  
+		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
+		Size: 445.0 B
+	-	`sha256:01193a8f3d889f5c75dd4c54e7ad2a81216f10e7b2d515af571d17a4015b3d59`  
+		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
+		Size: 682.0 B
+	-	`sha256:a4c520e282868d1f4a3b26a2116724c0b38e11859acb3c7335a5aad558242768`  
+		Last Modified: Thu, 11 Aug 2016 18:53:26 GMT  
+		Size: 7.3 MB (7282347 bytes)
+	-	`sha256:4d0f488b6beabc9a78364b509cb1754f1f75baec20843c1c5e019302978d82b4`  
+		Last Modified: Thu, 11 Aug 2016 18:54:59 GMT  
+		Size: 41.2 MB (41214423 bytes)
 
 ## `buildpack-deps:xenial`
 
 ```console
-$ docker pull buildpack-deps@sha256:ba84508b64882bef0fc4ce1bcf67cf686b797cf0bde64d426ecd06a1317a741b
+$ docker pull buildpack-deps@sha256:9bbf8d66e6fb576da0324eae03b33ed89993cd677cbadf6892c69144cbe7b92c
 ```
 
 -	Platforms:
@@ -1075,49 +1075,49 @@ $ docker pull buildpack-deps@sha256:ba84508b64882bef0fc4ce1bcf67cf686b797cf0bde6
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **230.9 MB (230948618 bytes)**  
+-	Total Size: **231.3 MB (231274544 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:61aab7d3c7abb27d5df6c8ee8f713dbf889a99b4f1be4d77203f443d6a955c7d`
+-	Image ID: `sha256:1cab17a62a4c0938cee8ed989c55ccd3ec3d3a2a301c3e00f3b2116d781e4156`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 22 Jul 2016 15:19:25 GMT
-ADD file:fdbd881d78f9d7d9245d0838389ebc793bef13243b9e3269512046cd75216baf in /
-# Fri, 22 Jul 2016 15:19:27 GMT
+# Thu, 11 Aug 2016 17:46:20 GMT
+ADD file:a2427e00553ce3905be425a208168cd1a587d9d23571ea74c033a35c8f00cbc0 in /
+# Thu, 11 Aug 2016 17:46:23 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 22 Jul 2016 15:19:29 GMT
+# Thu, 11 Aug 2016 17:46:25 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 22 Jul 2016 15:19:31 GMT
+# Thu, 11 Aug 2016 17:46:28 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 22 Jul 2016 15:19:31 GMT
+# Thu, 11 Aug 2016 17:46:29 GMT
 CMD ["/bin/bash"]
-# Fri, 22 Jul 2016 17:02:58 GMT
+# Thu, 11 Aug 2016 18:53:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 22 Jul 2016 17:03:24 GMT
+# Thu, 11 Aug 2016 18:54:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 22 Jul 2016 17:04:27 GMT
+# Thu, 11 Aug 2016 19:01:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:43db9dbdcb300fc39b23e88a1721bdaa95c7fe396bd89d6a4b1a39e8da1a2d4c`  
-		Last Modified: Mon, 18 Jul 2016 17:38:23 GMT  
-		Size: 49.3 MB (49325555 bytes)
-	-	`sha256:2dc64e8f8d4f2e7511f002e12474ae01a482a9727d620f49a3871b5882891b3f`  
-		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
-		Size: 828.0 B
-	-	`sha256:670a583e1b5043337f8c73dcad9ff019f2ac0971475456fd4fdf296f2c5b939f`  
-		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
-		Size: 442.0 B
-	-	`sha256:183b0bfcd10e095bb23120d43204762e2aa9b5a53e2060817a2460bafc76ad37`  
-		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
-		Size: 681.0 B
-	-	`sha256:593767bfbd5ac4aa2c23e52dd67472fecf3939857d7505e9255a3482d0489e45`  
-		Last Modified: Fri, 22 Jul 2016 17:26:10 GMT  
-		Size: 7.3 MB (7281801 bytes)
-	-	`sha256:7b973ea7cdf95e1e21dc3706c8d5873ea7fc550b86517e1f99e59ada147be2d1`  
-		Last Modified: Fri, 22 Jul 2016 17:26:23 GMT  
-		Size: 41.2 MB (41214272 bytes)
-	-	`sha256:4e5588558ca0f10538849fdd1791327723bd0a35124c97b16eb0ca411e25d041`  
-		Last Modified: Fri, 22 Jul 2016 17:26:45 GMT  
-		Size: 133.1 MB (133125039 bytes)
+	-	`sha256:2f0243478e1f7fcb578778370ebcbcb350ef637e8b966c6a24830df61a3e89b8`  
+		Last Modified: Thu, 11 Aug 2016 17:49:30 GMT  
+		Size: 49.7 MB (49678667 bytes)
+	-	`sha256:d8909ae88469beef31d7ad33c85a0a1b2ade2cef4d51bab0c1353abd8477054d`  
+		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
+		Size: 823.0 B
+	-	`sha256:820f09abed29b404920f73274dd7107a4080d22a40351683aa9c410df3d18eeb`  
+		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
+		Size: 445.0 B
+	-	`sha256:01193a8f3d889f5c75dd4c54e7ad2a81216f10e7b2d515af571d17a4015b3d59`  
+		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
+		Size: 682.0 B
+	-	`sha256:a4c520e282868d1f4a3b26a2116724c0b38e11859acb3c7335a5aad558242768`  
+		Last Modified: Thu, 11 Aug 2016 18:53:26 GMT  
+		Size: 7.3 MB (7282347 bytes)
+	-	`sha256:4d0f488b6beabc9a78364b509cb1754f1f75baec20843c1c5e019302978d82b4`  
+		Last Modified: Thu, 11 Aug 2016 18:54:59 GMT  
+		Size: 41.2 MB (41214423 bytes)
+	-	`sha256:1822604d8da3b675c8cb3483c2b09e5efb4fa73f03b75d91500c9a423bdd558e`  
+		Last Modified: Thu, 11 Aug 2016 19:02:35 GMT  
+		Size: 133.1 MB (133097157 bytes)
