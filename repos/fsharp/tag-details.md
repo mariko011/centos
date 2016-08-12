@@ -96,7 +96,7 @@ CMD ["fsharpi"]
 ## `fsharp:4.0.1.1`
 
 ```console
-$ docker pull fsharp@sha256:434a3d6480e62f285ba1e03560fd25fa16377334679d456f34c7f6ca6aa805b6
+$ docker pull fsharp@sha256:dba1f120db1b0be93c43ae1869f3b1cf60ca7c8d385ab329d236ad31cd5c2ab4
 ```
 
 -	Platforms:
@@ -106,9 +106,9 @@ $ docker pull fsharp@sha256:434a3d6480e62f285ba1e03560fd25fa16377334679d456f34c7
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **262.4 MB (262401345 bytes)**  
+-	Total Size: **269.1 MB (269122588 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:03f84662e87effe102907cac2bb8622db43cd77ffef654f46061585528f286fb`
+-	Image ID: `sha256:e28ef46d75566cdaa3940318a9a991256fdd4ecf771005bd90c556c6c05ffea1`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
@@ -130,23 +130,23 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 22 Jul 2016 17:40:00 GMT
 MAINTAINER Henrik Feldt
-# Fri, 22 Jul 2016 17:40:00 GMT
-ENV MONO_VERSION=4.2.3.4
-# Fri, 22 Jul 2016 17:40:18 GMT
+# Thu, 11 Aug 2016 22:28:57 GMT
+ENV MONO_VERSION=4.4.2.11
+# Thu, 11 Aug 2016 22:29:15 GMT
 RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list
-# Fri, 22 Jul 2016 17:40:19 GMT
+# Thu, 11 Aug 2016 22:29:15 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Fri, 22 Jul 2016 17:42:07 GMT
+# Thu, 11 Aug 2016 22:31:03 GMT
 RUN apt-get -y update &&     apt-get -y --no-install-recommends install nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/*
-# Fri, 22 Jul 2016 17:50:01 GMT
+# Thu, 11 Aug 2016 22:38:20 GMT
 ENV FSHARP_VERSION=4.0.1.1
-# Fri, 22 Jul 2016 17:50:01 GMT
+# Thu, 11 Aug 2016 22:38:20 GMT
 ENV FSHARP_PREFIX=/usr FSHARP_GACDIR=/usr/lib/mono/gac FSHARP_BASENAME=fsharp-4.0.1.1 FSHARP_ARCHIVE=4.0.1.1.tar.gz FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/4.0.1.1.tar.gz
-# Fri, 22 Jul 2016 17:57:21 GMT
+# Thu, 11 Aug 2016 22:45:41 GMT
 RUN mkdir -p /tmp/src &&     cd /tmp/src &&     wget $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src
-# Fri, 22 Jul 2016 17:57:22 GMT
+# Thu, 11 Aug 2016 22:45:42 GMT
 WORKDIR /root
-# Fri, 22 Jul 2016 17:57:22 GMT
+# Thu, 11 Aug 2016 22:45:42 GMT
 CMD ["fsharpi"]
 ```
 
@@ -172,20 +172,20 @@ CMD ["fsharpi"]
 	-	`sha256:b4dc22b2034a5a8736e3d7cb07f589eb19ca6aa203b7a5f5de044366fa2e4e98`  
 		Last Modified: Fri, 22 Jul 2016 17:28:21 GMT  
 		Size: 99.8 MB (99788535 bytes)
-	-	`sha256:a8941525e35f601064b9f9849ce3ff9a2603c0cb132eef9971d6cce37ef57d23`  
-		Last Modified: Fri, 22 Jul 2016 17:49:34 GMT  
-		Size: 13.5 KB (13533 bytes)
-	-	`sha256:e907201658e241b79e861323842140ed18191c31948adec9ec4ac9accdd1831d`  
-		Last Modified: Fri, 22 Jul 2016 17:49:52 GMT  
-		Size: 52.9 MB (52914891 bytes)
-	-	`sha256:786a125b7282aa651f632be64bc257ffc627e5e37e52fbca23b8bc03a6c8955d`  
-		Last Modified: Fri, 22 Jul 2016 17:57:35 GMT  
-		Size: 10.3 MB (10309805 bytes)
+	-	`sha256:0d1d097f6d518016b960ebe08e034758945330159a67ebc4d84094fee8e98dc4`  
+		Last Modified: Thu, 11 Aug 2016 22:45:53 GMT  
+		Size: 13.5 KB (13537 bytes)
+	-	`sha256:bbabfdbfb17f6e3527ce361b13ec4d917a1c4c08dbda2a587e0d3b9b0242c7cd`  
+		Last Modified: Thu, 11 Aug 2016 22:46:12 GMT  
+		Size: 59.6 MB (59636210 bytes)
+	-	`sha256:10b3c292c72aff9a92d691efe4e24fc4bbdafac90e16481a29be7eb653e289de`  
+		Last Modified: Thu, 11 Aug 2016 22:46:32 GMT  
+		Size: 10.3 MB (10309725 bytes)
 
 ## `fsharp:latest`
 
 ```console
-$ docker pull fsharp@sha256:434a3d6480e62f285ba1e03560fd25fa16377334679d456f34c7f6ca6aa805b6
+$ docker pull fsharp@sha256:dba1f120db1b0be93c43ae1869f3b1cf60ca7c8d385ab329d236ad31cd5c2ab4
 ```
 
 -	Platforms:
@@ -195,9 +195,9 @@ $ docker pull fsharp@sha256:434a3d6480e62f285ba1e03560fd25fa16377334679d456f34c7
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **262.4 MB (262401345 bytes)**  
+-	Total Size: **269.1 MB (269122588 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:03f84662e87effe102907cac2bb8622db43cd77ffef654f46061585528f286fb`
+-	Image ID: `sha256:e28ef46d75566cdaa3940318a9a991256fdd4ecf771005bd90c556c6c05ffea1`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
@@ -219,23 +219,23 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 22 Jul 2016 17:40:00 GMT
 MAINTAINER Henrik Feldt
-# Fri, 22 Jul 2016 17:40:00 GMT
-ENV MONO_VERSION=4.2.3.4
-# Fri, 22 Jul 2016 17:40:18 GMT
+# Thu, 11 Aug 2016 22:28:57 GMT
+ENV MONO_VERSION=4.4.2.11
+# Thu, 11 Aug 2016 22:29:15 GMT
 RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list
-# Fri, 22 Jul 2016 17:40:19 GMT
+# Thu, 11 Aug 2016 22:29:15 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Fri, 22 Jul 2016 17:42:07 GMT
+# Thu, 11 Aug 2016 22:31:03 GMT
 RUN apt-get -y update &&     apt-get -y --no-install-recommends install nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/*
-# Fri, 22 Jul 2016 17:50:01 GMT
+# Thu, 11 Aug 2016 22:38:20 GMT
 ENV FSHARP_VERSION=4.0.1.1
-# Fri, 22 Jul 2016 17:50:01 GMT
+# Thu, 11 Aug 2016 22:38:20 GMT
 ENV FSHARP_PREFIX=/usr FSHARP_GACDIR=/usr/lib/mono/gac FSHARP_BASENAME=fsharp-4.0.1.1 FSHARP_ARCHIVE=4.0.1.1.tar.gz FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/4.0.1.1.tar.gz
-# Fri, 22 Jul 2016 17:57:21 GMT
+# Thu, 11 Aug 2016 22:45:41 GMT
 RUN mkdir -p /tmp/src &&     cd /tmp/src &&     wget $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src
-# Fri, 22 Jul 2016 17:57:22 GMT
+# Thu, 11 Aug 2016 22:45:42 GMT
 WORKDIR /root
-# Fri, 22 Jul 2016 17:57:22 GMT
+# Thu, 11 Aug 2016 22:45:42 GMT
 CMD ["fsharpi"]
 ```
 
@@ -261,12 +261,12 @@ CMD ["fsharpi"]
 	-	`sha256:b4dc22b2034a5a8736e3d7cb07f589eb19ca6aa203b7a5f5de044366fa2e4e98`  
 		Last Modified: Fri, 22 Jul 2016 17:28:21 GMT  
 		Size: 99.8 MB (99788535 bytes)
-	-	`sha256:a8941525e35f601064b9f9849ce3ff9a2603c0cb132eef9971d6cce37ef57d23`  
-		Last Modified: Fri, 22 Jul 2016 17:49:34 GMT  
-		Size: 13.5 KB (13533 bytes)
-	-	`sha256:e907201658e241b79e861323842140ed18191c31948adec9ec4ac9accdd1831d`  
-		Last Modified: Fri, 22 Jul 2016 17:49:52 GMT  
-		Size: 52.9 MB (52914891 bytes)
-	-	`sha256:786a125b7282aa651f632be64bc257ffc627e5e37e52fbca23b8bc03a6c8955d`  
-		Last Modified: Fri, 22 Jul 2016 17:57:35 GMT  
-		Size: 10.3 MB (10309805 bytes)
+	-	`sha256:0d1d097f6d518016b960ebe08e034758945330159a67ebc4d84094fee8e98dc4`  
+		Last Modified: Thu, 11 Aug 2016 22:45:53 GMT  
+		Size: 13.5 KB (13537 bytes)
+	-	`sha256:bbabfdbfb17f6e3527ce361b13ec4d917a1c4c08dbda2a587e0d3b9b0242c7cd`  
+		Last Modified: Thu, 11 Aug 2016 22:46:12 GMT  
+		Size: 59.6 MB (59636210 bytes)
+	-	`sha256:10b3c292c72aff9a92d691efe4e24fc4bbdafac90e16481a29be7eb653e289de`  
+		Last Modified: Thu, 11 Aug 2016 22:46:32 GMT  
+		Size: 10.3 MB (10309725 bytes)
