@@ -105,7 +105,7 @@ CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
 ## `websphere-liberty:webProfile6`
 
 ```console
-$ docker pull websphere-liberty@sha256:3e339e1fbbce7a19f96e63801e5f4630da1c21b457fdf3145420537b09f1fad6
+$ docker pull websphere-liberty@sha256:54974ff243986c27f63d042c57c970a14f980fa205e4b0fbdf30c62b485eefbd
 ```
 
 -	Platforms:
@@ -115,102 +115,102 @@ $ docker pull websphere-liberty@sha256:3e339e1fbbce7a19f96e63801e5f4630da1c21b45
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **226.8 MB (226802399 bytes)**  
+-	Total Size: **227.2 MB (227155465 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3f59d32611d3cab5ae2cc3afe8fb3c075212e78fe1905ed66ba0c31d6376a640`
+-	Image ID: `sha256:149c276a8a71faec6bdbf8e2ba469d0a7625cebcb06abb79fcb9778b937e0a34`
 -	Default Command: `["\/opt\/ibm\/docker\/docker-server","run","defaultServer"]`
 
 ```dockerfile
-# Fri, 22 Jul 2016 15:19:25 GMT
-ADD file:fdbd881d78f9d7d9245d0838389ebc793bef13243b9e3269512046cd75216baf in /
-# Fri, 22 Jul 2016 15:19:27 GMT
+# Thu, 11 Aug 2016 17:46:20 GMT
+ADD file:a2427e00553ce3905be425a208168cd1a587d9d23571ea74c033a35c8f00cbc0 in /
+# Thu, 11 Aug 2016 17:46:23 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 22 Jul 2016 15:19:29 GMT
+# Thu, 11 Aug 2016 17:46:25 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 22 Jul 2016 15:19:31 GMT
+# Thu, 11 Aug 2016 17:46:28 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 22 Jul 2016 15:19:31 GMT
+# Thu, 11 Aug 2016 17:46:29 GMT
 CMD ["/bin/bash"]
-# Wed, 10 Aug 2016 18:34:48 GMT
+# Thu, 11 Aug 2016 19:12:15 GMT
 MAINTAINER Dinakar Guniguntala <dinakar.g@in.ibm.com> (@dinogun)
-# Wed, 10 Aug 2016 18:35:11 GMT
+# Thu, 11 Aug 2016 19:12:44 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Wed, 10 Aug 2016 18:35:12 GMT
+# Thu, 11 Aug 2016 19:12:46 GMT
 ENV JAVA_VERSION=1.8.0_sr3fp10
-# Wed, 10 Aug 2016 18:35:49 GMT
+# Thu, 11 Aug 2016 19:13:28 GMT
 RUN ESUM="c18b4e7d822df96aa244a01e1bd8e10d03e5fc2b806d809cbca82dca711faf54"     && BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/"     && YML_FILE="jre/linux/x86_64/index.yml"     && wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml $BASE_URL/$YML_FILE     && JAVA_URL=$(cat /tmp/index.yml | sed -n '/'$JAVA_VERSION'/{n;p}' | sed -n 's/\s*uri:\s//p' | tr -d '\r')     && wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin $JAVA_URL     && echo "$ESUM  /tmp/ibm-java.bin" | sha256sum -c -     && echo "INSTALLER_UI=silent" > /tmp/response.properties     && echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties     && echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties     && mkdir -p /opt/ibm     && chmod +x /tmp/ibm-java.bin     && /tmp/ibm-java.bin -i silent -f /tmp/response.properties     && rm -f /tmp/response.properties     && rm -f /tmp/index.yml     && rm -f /tmp/ibm-java.bin
-# Wed, 10 Aug 2016 18:35:49 GMT
+# Thu, 11 Aug 2016 19:13:29 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Aug 2016 17:51:26 GMT
+# Thu, 11 Aug 2016 22:10:59 GMT
 MAINTAINER David Currie <david_currie@uk.ibm.com> (@davidcurrie)
-# Thu, 11 Aug 2016 17:51:38 GMT
+# Thu, 11 Aug 2016 22:11:08 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends unzip     && rm -rf /var/lib/apt/lists/*
-# Thu, 11 Aug 2016 17:51:40 GMT
+# Thu, 11 Aug 2016 22:11:08 GMT
 ENV LIBERTY_VERSION=16.0.0_2
-# Thu, 11 Aug 2016 17:51:45 GMT
+# Thu, 11 Aug 2016 22:11:12 GMT
 RUN LIBERTY_URL=$(wget -q -O - https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/index.yml  | grep $LIBERTY_VERSION -A 6 | sed -n 's/\s*kernel:\s//p' | tr -d '\r')      && wget -q $LIBERTY_URL -U UA-IBM-WebSphere-Liberty-Docker -O /tmp/wlp.zip     && unzip -q /tmp/wlp.zip -d /opt/ibm     && rm /tmp/wlp.zip
-# Thu, 11 Aug 2016 17:51:46 GMT
+# Thu, 11 Aug 2016 22:11:13 GMT
 ENV PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Aug 2016 17:51:47 GMT
+# Thu, 11 Aug 2016 22:11:13 GMT
 ENV LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ibm/wlp/output
-# Thu, 11 Aug 2016 17:51:49 GMT
+# Thu, 11 Aug 2016 22:11:14 GMT
 RUN mkdir /logs     && ln -s $WLP_OUTPUT_DIR/defaultServer /output     && ln -s /opt/ibm/wlp/usr/servers/defaultServer /config
-# Thu, 11 Aug 2016 17:51:53 GMT
+# Thu, 11 Aug 2016 22:11:17 GMT
 RUN /opt/ibm/wlp/bin/server create     && rm -rf $WLP_OUTPUT_DIR/.classCache /output/workarea
-# Thu, 11 Aug 2016 17:51:55 GMT
+# Thu, 11 Aug 2016 22:11:17 GMT
 EXPOSE 9080/tcp 9443/tcp
-# Thu, 11 Aug 2016 17:51:57 GMT
+# Thu, 11 Aug 2016 22:11:17 GMT
 CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
-# Thu, 11 Aug 2016 17:52:01 GMT
+# Thu, 11 Aug 2016 22:11:18 GMT
 COPY file:88c06b07fb79e4006fd1fb7042780d25c5940fd4da63eb5d18144d89ae77aa37 in /config/
-# Thu, 11 Aug 2016 17:52:02 GMT
+# Thu, 11 Aug 2016 22:11:19 GMT
 COPY file:53b1bf224098174489129fdc8fec40f8eb4b3d0bf09e3028796a285d9a3457f1 in /opt/ibm/docker/
-# Thu, 11 Aug 2016 17:53:20 GMT
+# Thu, 11 Aug 2016 22:12:28 GMT
 RUN installUtility install --acceptLicense     collectiveMember-1.0 monitor-1.0 webCache-1.0 ldapRegistry-3.0 appSecurity-2.0 localConnector-1.0 restConnector-1.0 ssl-1.0 requestTiming-1.0 sessionDatabase-1.0     appSecurity-1.0 blueprint-1.0 concurrent-1.0 oauth-2.0 osgiConsole-1.0 serverStatus-1.0 wab-1.0 timedOperations-1.0     webProfile-6.0   && rm -rf /output/workarea /output/logs
-# Thu, 11 Aug 2016 17:53:21 GMT
+# Thu, 11 Aug 2016 22:12:29 GMT
 CMD ["/opt/ibm/docker/docker-server" "run" "defaultServer"]
 ```
 
 -	Layers:
-	-	`sha256:43db9dbdcb300fc39b23e88a1721bdaa95c7fe396bd89d6a4b1a39e8da1a2d4c`  
-		Last Modified: Mon, 18 Jul 2016 17:38:23 GMT  
-		Size: 49.3 MB (49325555 bytes)
-	-	`sha256:2dc64e8f8d4f2e7511f002e12474ae01a482a9727d620f49a3871b5882891b3f`  
-		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
-		Size: 828.0 B
-	-	`sha256:670a583e1b5043337f8c73dcad9ff019f2ac0971475456fd4fdf296f2c5b939f`  
-		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
-		Size: 442.0 B
-	-	`sha256:183b0bfcd10e095bb23120d43204762e2aa9b5a53e2060817a2460bafc76ad37`  
-		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
-		Size: 681.0 B
-	-	`sha256:6b7a8fe13fb9fdad60436ce70c80b55d3c1abfd6489dc6cd54863b8e3f6655ce`  
-		Last Modified: Wed, 10 Aug 2016 18:38:45 GMT  
-		Size: 3.1 MB (3120537 bytes)
-	-	`sha256:46cb10e8302c88d640afdca809bfe13c93c2da1eb8cbd8b51a567a55a3e8854f`  
-		Last Modified: Wed, 10 Aug 2016 18:39:02 GMT  
-		Size: 110.5 MB (110466009 bytes)
-	-	`sha256:79d29df57f48b689621cc53e4cd8c3aa1ac51e65246644199b3830944b5cd71d`  
-		Last Modified: Thu, 11 Aug 2016 17:57:04 GMT  
-		Size: 265.2 KB (265187 bytes)
-	-	`sha256:0e5b79f77de77381717e19ac289c8b4c7809caa52ce88e9c027308454b480afc`  
-		Last Modified: Thu, 11 Aug 2016 17:57:07 GMT  
-		Size: 11.5 MB (11489493 bytes)
-	-	`sha256:d562c518f82142b6c8652d7448d79b16684704b2eb8c81c5aa3466634dbe88c6`  
-		Last Modified: Thu, 11 Aug 2016 17:57:04 GMT  
+	-	`sha256:2f0243478e1f7fcb578778370ebcbcb350ef637e8b966c6a24830df61a3e89b8`  
+		Last Modified: Thu, 11 Aug 2016 17:49:30 GMT  
+		Size: 49.7 MB (49678667 bytes)
+	-	`sha256:d8909ae88469beef31d7ad33c85a0a1b2ade2cef4d51bab0c1353abd8477054d`  
+		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
+		Size: 823.0 B
+	-	`sha256:820f09abed29b404920f73274dd7107a4080d22a40351683aa9c410df3d18eeb`  
+		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
+		Size: 445.0 B
+	-	`sha256:01193a8f3d889f5c75dd4c54e7ad2a81216f10e7b2d515af571d17a4015b3d59`  
+		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
+		Size: 682.0 B
+	-	`sha256:36bf6fa22192c3dccd7449440e58a22c1dcca953e86535fbd33f2c03c658a48e`  
+		Last Modified: Thu, 11 Aug 2016 19:13:43 GMT  
+		Size: 3.1 MB (3120584 bytes)
+	-	`sha256:3218547d8df96e4aa9192e3b93372c867e704b19a20248cb360a9dcd92efecd4`  
+		Last Modified: Thu, 11 Aug 2016 19:14:00 GMT  
+		Size: 110.5 MB (110465987 bytes)
+	-	`sha256:56312c11f138263eeee9d1be8e7d3a7b9d94f67c0a6f3af9714e0584eeed7261`  
+		Last Modified: Thu, 11 Aug 2016 22:15:12 GMT  
+		Size: 265.2 KB (265185 bytes)
+	-	`sha256:d41a739c245579c77d9d91ec451d917e022398779287a91dfc8ce2167501500e`  
+		Last Modified: Thu, 11 Aug 2016 22:15:14 GMT  
+		Size: 11.5 MB (11489483 bytes)
+	-	`sha256:bc9a7b0c87f47b9661d13c67abe509ceeaad473146f63ac84f0b0d94c73c4828`  
+		Last Modified: Thu, 11 Aug 2016 22:15:12 GMT  
 		Size: 177.0 B
-	-	`sha256:03adbbb612973a0e8f78200d0435495ddacba51d55c5b62d53871731f3b73c0a`  
-		Last Modified: Thu, 11 Aug 2016 17:57:04 GMT  
-		Size: 584.0 B
-	-	`sha256:e6b8c15553ba240fd39cb915514376e8a0f38a761c546aecdebe15e76d01be1c`  
-		Last Modified: Thu, 11 Aug 2016 17:57:24 GMT  
-		Size: 538.0 B
-	-	`sha256:e64036e583892dbb5006bddf0ce2bcd6fd9813827b0e611acf32d407d4cab3f8`  
-		Last Modified: Thu, 11 Aug 2016 17:57:24 GMT  
-		Size: 457.0 B
-	-	`sha256:baf2de51cbbcb7a5fe85727fcdac54780e8d429f1ce212e1cda4055ee553a188`  
-		Last Modified: Thu, 11 Aug 2016 17:57:31 GMT  
-		Size: 52.1 MB (52131911 bytes)
+	-	`sha256:5ba17d3a125b4e6797839891f829f2b2cb5e49ac57e991b2eb74799a6da752a6`  
+		Last Modified: Thu, 11 Aug 2016 22:15:12 GMT  
+		Size: 583.0 B
+	-	`sha256:a0f1599c8e1ab6cf4831137deb4ec267f28e938ac9273166f426837859d3fb27`  
+		Last Modified: Thu, 11 Aug 2016 22:15:32 GMT  
+		Size: 535.0 B
+	-	`sha256:763afbbef5a7c2f7ad6562d2b440213272ae0f5d93b987a059f6413e345f3ac0`  
+		Last Modified: Thu, 11 Aug 2016 22:15:35 GMT  
+		Size: 456.0 B
+	-	`sha256:51bf874b4d679b704b05ff1432e224b941e4c7275cb210d9bb7f40dd8c5e686f`  
+		Last Modified: Thu, 11 Aug 2016 22:15:40 GMT  
+		Size: 52.1 MB (52131858 bytes)
 
 ## `websphere-liberty:webProfile7`
 
@@ -325,7 +325,7 @@ CMD ["/opt/ibm/docker/docker-server" "run" "defaultServer"]
 ## `websphere-liberty:javaee7`
 
 ```console
-$ docker pull websphere-liberty@sha256:76e48fef8f6f5c43f71e918fe548cd343872633fddd0b364a7efacdbff89202e
+$ docker pull websphere-liberty@sha256:30fecde7d6b39786e8f6beb7bbb877f9c36007b0e5ecb9fe77ac60641eed6e90
 ```
 
 -	Platforms:
@@ -335,112 +335,112 @@ $ docker pull websphere-liberty@sha256:76e48fef8f6f5c43f71e918fe548cd343872633fd
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **277.8 MB (277825635 bytes)**  
+-	Total Size: **278.2 MB (278178509 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cc9403ec9aa6aa3a309286ae58434a705f8e5f374641bcd23761e18fc8239844`
+-	Image ID: `sha256:10a1b6948021cc0a2442e743a3eb78ddbff32d404554d1bfd81159f08717835e`
 -	Default Command: `["\/opt\/ibm\/docker\/docker-server","run","defaultServer"]`
 
 ```dockerfile
-# Fri, 22 Jul 2016 15:19:25 GMT
-ADD file:fdbd881d78f9d7d9245d0838389ebc793bef13243b9e3269512046cd75216baf in /
-# Fri, 22 Jul 2016 15:19:27 GMT
+# Thu, 11 Aug 2016 17:46:20 GMT
+ADD file:a2427e00553ce3905be425a208168cd1a587d9d23571ea74c033a35c8f00cbc0 in /
+# Thu, 11 Aug 2016 17:46:23 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 22 Jul 2016 15:19:29 GMT
+# Thu, 11 Aug 2016 17:46:25 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 22 Jul 2016 15:19:31 GMT
+# Thu, 11 Aug 2016 17:46:28 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 22 Jul 2016 15:19:31 GMT
+# Thu, 11 Aug 2016 17:46:29 GMT
 CMD ["/bin/bash"]
-# Wed, 10 Aug 2016 18:34:48 GMT
+# Thu, 11 Aug 2016 19:12:15 GMT
 MAINTAINER Dinakar Guniguntala <dinakar.g@in.ibm.com> (@dinogun)
-# Wed, 10 Aug 2016 18:35:11 GMT
+# Thu, 11 Aug 2016 19:12:44 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Wed, 10 Aug 2016 18:35:12 GMT
+# Thu, 11 Aug 2016 19:12:46 GMT
 ENV JAVA_VERSION=1.8.0_sr3fp10
-# Wed, 10 Aug 2016 18:35:49 GMT
+# Thu, 11 Aug 2016 19:13:28 GMT
 RUN ESUM="c18b4e7d822df96aa244a01e1bd8e10d03e5fc2b806d809cbca82dca711faf54"     && BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/"     && YML_FILE="jre/linux/x86_64/index.yml"     && wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml $BASE_URL/$YML_FILE     && JAVA_URL=$(cat /tmp/index.yml | sed -n '/'$JAVA_VERSION'/{n;p}' | sed -n 's/\s*uri:\s//p' | tr -d '\r')     && wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin $JAVA_URL     && echo "$ESUM  /tmp/ibm-java.bin" | sha256sum -c -     && echo "INSTALLER_UI=silent" > /tmp/response.properties     && echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties     && echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties     && mkdir -p /opt/ibm     && chmod +x /tmp/ibm-java.bin     && /tmp/ibm-java.bin -i silent -f /tmp/response.properties     && rm -f /tmp/response.properties     && rm -f /tmp/index.yml     && rm -f /tmp/ibm-java.bin
-# Wed, 10 Aug 2016 18:35:49 GMT
+# Thu, 11 Aug 2016 19:13:29 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Aug 2016 17:51:26 GMT
+# Thu, 11 Aug 2016 22:10:59 GMT
 MAINTAINER David Currie <david_currie@uk.ibm.com> (@davidcurrie)
-# Thu, 11 Aug 2016 17:51:38 GMT
+# Thu, 11 Aug 2016 22:11:08 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends unzip     && rm -rf /var/lib/apt/lists/*
-# Thu, 11 Aug 2016 17:51:40 GMT
+# Thu, 11 Aug 2016 22:11:08 GMT
 ENV LIBERTY_VERSION=16.0.0_2
-# Thu, 11 Aug 2016 17:51:45 GMT
+# Thu, 11 Aug 2016 22:11:12 GMT
 RUN LIBERTY_URL=$(wget -q -O - https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/index.yml  | grep $LIBERTY_VERSION -A 6 | sed -n 's/\s*kernel:\s//p' | tr -d '\r')      && wget -q $LIBERTY_URL -U UA-IBM-WebSphere-Liberty-Docker -O /tmp/wlp.zip     && unzip -q /tmp/wlp.zip -d /opt/ibm     && rm /tmp/wlp.zip
-# Thu, 11 Aug 2016 17:51:46 GMT
+# Thu, 11 Aug 2016 22:11:13 GMT
 ENV PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Aug 2016 17:51:47 GMT
+# Thu, 11 Aug 2016 22:11:13 GMT
 ENV LOG_DIR=/logs WLP_OUTPUT_DIR=/opt/ibm/wlp/output
-# Thu, 11 Aug 2016 17:51:49 GMT
+# Thu, 11 Aug 2016 22:11:14 GMT
 RUN mkdir /logs     && ln -s $WLP_OUTPUT_DIR/defaultServer /output     && ln -s /opt/ibm/wlp/usr/servers/defaultServer /config
-# Thu, 11 Aug 2016 17:51:53 GMT
+# Thu, 11 Aug 2016 22:11:17 GMT
 RUN /opt/ibm/wlp/bin/server create     && rm -rf $WLP_OUTPUT_DIR/.classCache /output/workarea
-# Thu, 11 Aug 2016 17:51:55 GMT
+# Thu, 11 Aug 2016 22:11:17 GMT
 EXPOSE 9080/tcp 9443/tcp
-# Thu, 11 Aug 2016 17:51:57 GMT
+# Thu, 11 Aug 2016 22:11:17 GMT
 CMD ["/opt/ibm/wlp/bin/server" "run" "defaultServer"]
-# Thu, 11 Aug 2016 17:53:23 GMT
+# Thu, 11 Aug 2016 22:12:30 GMT
 COPY file:b61ee9a8ed6220186f1ae25d322538d94868b07c26e808b24f3c84785e60b62e in /config/
-# Thu, 11 Aug 2016 17:53:25 GMT
+# Thu, 11 Aug 2016 22:12:30 GMT
 COPY file:53b1bf224098174489129fdc8fec40f8eb4b3d0bf09e3028796a285d9a3457f1 in /opt/ibm/docker/
-# Thu, 11 Aug 2016 17:54:50 GMT
+# Thu, 11 Aug 2016 22:13:47 GMT
 RUN installUtility install --acceptLicense     collectiveMember-1.0 monitor-1.0 webCache-1.0 ldapRegistry-3.0 appSecurity-2.0 localConnector-1.0 restConnector-1.0 ssl-1.0 requestTiming-1.0 sessionDatabase-1.0     webProfile-7.0   && rm -rf /output/workarea /output/logs
-# Thu, 11 Aug 2016 17:54:51 GMT
+# Thu, 11 Aug 2016 22:13:48 GMT
 CMD ["/opt/ibm/docker/docker-server" "run" "defaultServer"]
-# Thu, 11 Aug 2016 17:54:53 GMT
+# Thu, 11 Aug 2016 22:13:49 GMT
 COPY file:a6a1a88d3f0473f85596df9cf7599a22f32111deb67c95183a9a45b654d347eb in /config/
-# Thu, 11 Aug 2016 17:55:56 GMT
+# Thu, 11 Aug 2016 22:14:36 GMT
 RUN installUtility install --acceptLicense defaultServer     && rm -rf /output/workarea /output/logs
 ```
 
 -	Layers:
-	-	`sha256:43db9dbdcb300fc39b23e88a1721bdaa95c7fe396bd89d6a4b1a39e8da1a2d4c`  
-		Last Modified: Mon, 18 Jul 2016 17:38:23 GMT  
-		Size: 49.3 MB (49325555 bytes)
-	-	`sha256:2dc64e8f8d4f2e7511f002e12474ae01a482a9727d620f49a3871b5882891b3f`  
-		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
-		Size: 828.0 B
-	-	`sha256:670a583e1b5043337f8c73dcad9ff019f2ac0971475456fd4fdf296f2c5b939f`  
-		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
-		Size: 442.0 B
-	-	`sha256:183b0bfcd10e095bb23120d43204762e2aa9b5a53e2060817a2460bafc76ad37`  
-		Last Modified: Fri, 22 Jul 2016 15:22:16 GMT  
-		Size: 681.0 B
-	-	`sha256:6b7a8fe13fb9fdad60436ce70c80b55d3c1abfd6489dc6cd54863b8e3f6655ce`  
-		Last Modified: Wed, 10 Aug 2016 18:38:45 GMT  
-		Size: 3.1 MB (3120537 bytes)
-	-	`sha256:46cb10e8302c88d640afdca809bfe13c93c2da1eb8cbd8b51a567a55a3e8854f`  
-		Last Modified: Wed, 10 Aug 2016 18:39:02 GMT  
-		Size: 110.5 MB (110466009 bytes)
-	-	`sha256:79d29df57f48b689621cc53e4cd8c3aa1ac51e65246644199b3830944b5cd71d`  
-		Last Modified: Thu, 11 Aug 2016 17:57:04 GMT  
-		Size: 265.2 KB (265187 bytes)
-	-	`sha256:0e5b79f77de77381717e19ac289c8b4c7809caa52ce88e9c027308454b480afc`  
-		Last Modified: Thu, 11 Aug 2016 17:57:07 GMT  
-		Size: 11.5 MB (11489493 bytes)
-	-	`sha256:d562c518f82142b6c8652d7448d79b16684704b2eb8c81c5aa3466634dbe88c6`  
-		Last Modified: Thu, 11 Aug 2016 17:57:04 GMT  
+	-	`sha256:2f0243478e1f7fcb578778370ebcbcb350ef637e8b966c6a24830df61a3e89b8`  
+		Last Modified: Thu, 11 Aug 2016 17:49:30 GMT  
+		Size: 49.7 MB (49678667 bytes)
+	-	`sha256:d8909ae88469beef31d7ad33c85a0a1b2ade2cef4d51bab0c1353abd8477054d`  
+		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
+		Size: 823.0 B
+	-	`sha256:820f09abed29b404920f73274dd7107a4080d22a40351683aa9c410df3d18eeb`  
+		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
+		Size: 445.0 B
+	-	`sha256:01193a8f3d889f5c75dd4c54e7ad2a81216f10e7b2d515af571d17a4015b3d59`  
+		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
+		Size: 682.0 B
+	-	`sha256:36bf6fa22192c3dccd7449440e58a22c1dcca953e86535fbd33f2c03c658a48e`  
+		Last Modified: Thu, 11 Aug 2016 19:13:43 GMT  
+		Size: 3.1 MB (3120584 bytes)
+	-	`sha256:3218547d8df96e4aa9192e3b93372c867e704b19a20248cb360a9dcd92efecd4`  
+		Last Modified: Thu, 11 Aug 2016 19:14:00 GMT  
+		Size: 110.5 MB (110465987 bytes)
+	-	`sha256:56312c11f138263eeee9d1be8e7d3a7b9d94f67c0a6f3af9714e0584eeed7261`  
+		Last Modified: Thu, 11 Aug 2016 22:15:12 GMT  
+		Size: 265.2 KB (265185 bytes)
+	-	`sha256:d41a739c245579c77d9d91ec451d917e022398779287a91dfc8ce2167501500e`  
+		Last Modified: Thu, 11 Aug 2016 22:15:14 GMT  
+		Size: 11.5 MB (11489483 bytes)
+	-	`sha256:bc9a7b0c87f47b9661d13c67abe509ceeaad473146f63ac84f0b0d94c73c4828`  
+		Last Modified: Thu, 11 Aug 2016 22:15:12 GMT  
 		Size: 177.0 B
-	-	`sha256:03adbbb612973a0e8f78200d0435495ddacba51d55c5b62d53871731f3b73c0a`  
-		Last Modified: Thu, 11 Aug 2016 17:57:04 GMT  
-		Size: 584.0 B
-	-	`sha256:eac715c739ba79566e44d1c36bb7fa448bf1054072538de3f4ad9afb6c69d24c`  
-		Last Modified: Thu, 11 Aug 2016 17:58:05 GMT  
-		Size: 537.0 B
-	-	`sha256:de36926fb595d3a5a242b816d4baa80716d1d2cb59c1aa1f8c520ff88fb5e776`  
-		Last Modified: Thu, 11 Aug 2016 17:58:05 GMT  
-		Size: 456.0 B
-	-	`sha256:1911d66dea3dafbac8d246687dbcd05a07202be5cde4dd8655ddb0cf55fbe5ff`  
-		Last Modified: Thu, 11 Aug 2016 17:58:20 GMT  
-		Size: 60.9 MB (60922227 bytes)
-	-	`sha256:7696b325363cc264855ae06e5301cea32557c2bb56594a2fa5eec5c43e28beb5`  
-		Last Modified: Thu, 11 Aug 2016 17:58:41 GMT  
-		Size: 901.0 B
-	-	`sha256:ba45f89a9afd70406b7159e7c2114471d1e7ced92b09b808650a8adedc83bbb9`  
-		Last Modified: Thu, 11 Aug 2016 17:58:46 GMT  
-		Size: 42.2 MB (42232021 bytes)
+	-	`sha256:5ba17d3a125b4e6797839891f829f2b2cb5e49ac57e991b2eb74799a6da752a6`  
+		Last Modified: Thu, 11 Aug 2016 22:15:12 GMT  
+		Size: 583.0 B
+	-	`sha256:5896f51594010dc090609c230b5125345af60a35bec1adb643a1bf02363118ad`  
+		Last Modified: Thu, 11 Aug 2016 22:15:59 GMT  
+		Size: 538.0 B
+	-	`sha256:44e2621e102539b8b6e012d5bfbf49645f87d54c5fbd4353a2e3ecd27699461c`  
+		Last Modified: Thu, 11 Aug 2016 22:15:58 GMT  
+		Size: 455.0 B
+	-	`sha256:6ed79e14dcf80cb1b83f81e3a8a756f338c4aa1ff76683b6174dad27af0cecd8`  
+		Last Modified: Thu, 11 Aug 2016 22:16:07 GMT  
+		Size: 60.9 MB (60922142 bytes)
+	-	`sha256:f6652df1a3d2732873c804320b5587c9e71d807ac5fca4572c90c9b6fa617092`  
+		Last Modified: Thu, 11 Aug 2016 22:16:25 GMT  
+		Size: 900.0 B
+	-	`sha256:73e3b97b0d1835132964a1d2f70ed4164b8a98de46155701a7cf7f90faa6bb14`  
+		Last Modified: Thu, 11 Aug 2016 22:16:31 GMT  
+		Size: 42.2 MB (42231858 bytes)
 
 ## `websphere-liberty:latest`
 
