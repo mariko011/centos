@@ -2,11 +2,16 @@
 
 # Tags of `rails`
 
+-	[`rails:5.0.0.1`](#rails5001)
 -	[`rails:5.0.0`](#rails500)
 -	[`rails:5.0`](#rails50)
 -	[`rails:5`](#rails5)
 -	[`rails:latest`](#railslatest)
 -	[`rails:onbuild`](#railsonbuild)
+
+## `rails:5.0.0.1`
+
+**does not exist** (yet?)
 
 ## `rails:5.0.0`
 
