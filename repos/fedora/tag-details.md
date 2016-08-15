@@ -14,7 +14,7 @@
 ## `fedora:latest`
 
 ```console
-$ docker pull fedora@sha256:a97914edb6ba15deb5c5acf87bd6bd5b6b0408c96f48a5cbd450b5b04509bb7d
+$ docker pull fedora@sha256:64a02df6aac27d1200c2572fe4b9949f1970d05f74d367ce4af994ba5dc3669e
 ```
 
 -	Platforms:
@@ -24,26 +24,26 @@ $ docker pull fedora@sha256:a97914edb6ba15deb5c5acf87bd6bd5b6b0408c96f48a5cbd450
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **72.9 MB (72873635 bytes)**  
+-	Total Size: **72.9 MB (72881216 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f9873d530588316311ac1d3d15e95487b947f5d8b560e72bdd6eb73a7831b2c4`
+-	Image ID: `sha256:11a5107645d4ecb36e75d933576f5cdb52358bef385eac2c2d2a91af44ad4ad7`
 
 ```dockerfile
-# Fri, 10 Jun 2016 18:44:36 GMT
-MAINTAINER Adam Miller <maxamillion@fedoraproject.org>
-# Mon, 20 Jun 2016 19:33:43 GMT
-ADD file:eca70e370936ac969828ca2923984000e0d0188655feb231c3df313a35fef2f6 in /
+# Mon, 20 Jun 2016 22:49:08 GMT
+MAINTAINER [Adam Miller <maxamillion@fedoraproject.org>] [Patrick Uiterwijk <patrick@puiterwijk.org>]
+# Mon, 15 Aug 2016 21:46:15 GMT
+ADD file:173b1e8c2abeb1c18cad816dabacfb87ca4b987e8531502eb5b88021665cb614 in /
 ```
 
 -	Layers:
-	-	`sha256:7c91a140e7a1025c3bc3aace4c80c0d9933ac4ee24b8630a6b0b5d8b9ce6b9d4`  
-		Last Modified: Mon, 20 Jun 2016 19:34:10 GMT  
-		Size: 72.9 MB (72873635 bytes)
+	-	`sha256:2bf01635e2a0f7ed3800c8cb3effc5ff46adc6b9b86f0e80743c956371efe553`  
+		Last Modified: Mon, 15 Aug 2016 21:46:56 GMT  
+		Size: 72.9 MB (72881216 bytes)
 
 ## `fedora:24`
 
 ```console
-$ docker pull fedora@sha256:a97914edb6ba15deb5c5acf87bd6bd5b6b0408c96f48a5cbd450b5b04509bb7d
+$ docker pull fedora@sha256:64a02df6aac27d1200c2572fe4b9949f1970d05f74d367ce4af994ba5dc3669e
 ```
 
 -	Platforms:
@@ -53,21 +53,21 @@ $ docker pull fedora@sha256:a97914edb6ba15deb5c5acf87bd6bd5b6b0408c96f48a5cbd450
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **72.9 MB (72873635 bytes)**  
+-	Total Size: **72.9 MB (72881216 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f9873d530588316311ac1d3d15e95487b947f5d8b560e72bdd6eb73a7831b2c4`
+-	Image ID: `sha256:11a5107645d4ecb36e75d933576f5cdb52358bef385eac2c2d2a91af44ad4ad7`
 
 ```dockerfile
-# Fri, 10 Jun 2016 18:44:36 GMT
-MAINTAINER Adam Miller <maxamillion@fedoraproject.org>
-# Mon, 20 Jun 2016 19:33:43 GMT
-ADD file:eca70e370936ac969828ca2923984000e0d0188655feb231c3df313a35fef2f6 in /
+# Mon, 20 Jun 2016 22:49:08 GMT
+MAINTAINER [Adam Miller <maxamillion@fedoraproject.org>] [Patrick Uiterwijk <patrick@puiterwijk.org>]
+# Mon, 15 Aug 2016 21:46:15 GMT
+ADD file:173b1e8c2abeb1c18cad816dabacfb87ca4b987e8531502eb5b88021665cb614 in /
 ```
 
 -	Layers:
-	-	`sha256:7c91a140e7a1025c3bc3aace4c80c0d9933ac4ee24b8630a6b0b5d8b9ce6b9d4`  
-		Last Modified: Mon, 20 Jun 2016 19:34:10 GMT  
-		Size: 72.9 MB (72873635 bytes)
+	-	`sha256:2bf01635e2a0f7ed3800c8cb3effc5ff46adc6b9b86f0e80743c956371efe553`  
+		Last Modified: Mon, 15 Aug 2016 21:46:56 GMT  
+		Size: 72.9 MB (72881216 bytes)
 
 ## `fedora:23`
 
@@ -159,7 +159,7 @@ ADD file:ad295384e519c85947873a9551ea281f8fbe18055beb43b3f730fe0c45b8ec65 in /
 ## `fedora:rawhide`
 
 ```console
-$ docker pull fedora@sha256:e72d5c6e74808353dc5849bac9c38ededfe4e197d1ba5ba213de9ff08af063f7
+$ docker pull fedora@sha256:9eddc96cc6b6173e22c93b1eb030a5fa9de15a82e29fae062a8fc051b4b92c4f
 ```
 
 -	Platforms:
@@ -169,21 +169,21 @@ $ docker pull fedora@sha256:e72d5c6e74808353dc5849bac9c38ededfe4e197d1ba5ba213de
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.3 MB (70340612 bytes)**  
+-	Total Size: **61.4 MB (61378057 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:575f262f71e04f68d67c28d0694c6f76f425253cdce16509d782944ad19eb13b`
+-	Image ID: `sha256:3bcdeb6ee43bf3dfffd130c5fe6b81d47b04aed315638a85fbf26760962d733e`
 
 ```dockerfile
-# Fri, 10 Jun 2016 18:45:28 GMT
-MAINTAINER Patrick Uiterwijk <puiterwijk@gmail.com>
-# Fri, 10 Jun 2016 18:45:52 GMT
-ADD file:dde34a6e2f9ce04246e279dae2fdbc351b18ca4493023f39fbb83b528e378f2e in /
+# Mon, 20 Jun 2016 22:49:08 GMT
+MAINTAINER [Adam Miller <maxamillion@fedoraproject.org>] [Patrick Uiterwijk <patrick@puiterwijk.org>]
+# Mon, 15 Aug 2016 21:46:28 GMT
+ADD file:56aefd413132bd011c53058f1c85815ca5fc80258feb207b3fdc911af5d0351a in /
 ```
 
 -	Layers:
-	-	`sha256:09e95d7fbe77bcb33676f7a0adb10d33628b2e7fd1d602b63928503e8b86aad8`  
-		Last Modified: Mon, 13 Jun 2016 16:35:42 GMT  
-		Size: 70.3 MB (70340612 bytes)
+	-	`sha256:5987bbaec4c970a2eb18ab92ffbec65699670768b9355a7582940e207ce6bd59`  
+		Last Modified: Mon, 15 Aug 2016 21:47:45 GMT  
+		Size: 61.4 MB (61378057 bytes)
 
 ## `fedora:20`
 
