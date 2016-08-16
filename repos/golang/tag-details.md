@@ -10,6 +10,8 @@
 -	[`golang:1.5-wheezy`](#golang15-wheezy)
 -	[`golang:1.5.4-alpine`](#golang154-alpine)
 -	[`golang:1.5-alpine`](#golang15-alpine)
+-	[`golang:1.5.4-windowsservercore`](#golang154-windowsservercore)
+-	[`golang:1.5-windowsservercore`](#golang15-windowsservercore)
 -	[`golang:1.6.3`](#golang163)
 -	[`golang:1.6`](#golang16)
 -	[`golang:1`](#golang1)
@@ -26,6 +28,10 @@
 -	[`golang:1.6-alpine`](#golang16-alpine)
 -	[`golang:1-alpine`](#golang1-alpine)
 -	[`golang:alpine`](#golangalpine)
+-	[`golang:1.6.3-windowsservercore`](#golang163-windowsservercore)
+-	[`golang:1.6-windowsservercore`](#golang16-windowsservercore)
+-	[`golang:1-windowsservercore`](#golang1-windowsservercore)
+-	[`golang:windowsservercore`](#golangwindowsservercore)
 -	[`golang:1.7rc6`](#golang17rc6)
 -	[`golang:1.7`](#golang17)
 -	[`golang:1.7rc6-onbuild`](#golang17rc6-onbuild)
@@ -34,6 +40,8 @@
 -	[`golang:1.7-wheezy`](#golang17-wheezy)
 -	[`golang:1.7rc6-alpine`](#golang17rc6-alpine)
 -	[`golang:1.7-alpine`](#golang17-alpine)
+-	[`golang:1.7rc6-windowsservercore`](#golang17rc6-windowsservercore)
+-	[`golang:1.7-windowsservercore`](#golang17-windowsservercore)
 
 ## `golang:1.5.4`
 
@@ -614,6 +622,14 @@ COPY file:ce084cb461a5ff8443f1781f7b0af0a33ad2bd4fe7ca14df213f58fa79e0172b in /u
 	-	`sha256:c1d9d7c9cb3e4bfbd999a501cf1746f7e3eba20f13544a38dff7c8c274711cfe`  
 		Last Modified: Fri, 01 Jul 2016 19:34:12 GMT  
 		Size: 1.3 KB (1348 bytes)
+
+## `golang:1.5.4-windowsservercore`
+
+**does not exist** (yet?)
+
+## `golang:1.5-windowsservercore`
+
+**does not exist** (yet?)
 
 ## `golang:1.6.3`
 
@@ -1795,6 +1811,22 @@ COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /u
 		Last Modified: Mon, 18 Jul 2016 17:30:04 GMT  
 		Size: 1.3 KB (1347 bytes)
 
+## `golang:1.6.3-windowsservercore`
+
+**does not exist** (yet?)
+
+## `golang:1.6-windowsservercore`
+
+**does not exist** (yet?)
+
+## `golang:1-windowsservercore`
+
+**does not exist** (yet?)
+
+## `golang:windowsservercore`
+
+**does not exist** (yet?)
+
 ## `golang:1.7rc6`
 
 ```console
@@ -2384,3 +2416,11 @@ COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /u
 	-	`sha256:4c277c8160a486dc7593f908e3d1e46829f765240d063035dae621ad906a051f`  
 		Last Modified: Mon, 08 Aug 2016 21:49:17 GMT  
 		Size: 1.3 KB (1346 bytes)
+
+## `golang:1.7rc6-windowsservercore`
+
+**does not exist** (yet?)
+
+## `golang:1.7-windowsservercore`
+
+**does not exist** (yet?)
