@@ -71,28 +71,36 @@ CMD ["celery" "worker"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:57aad21b9e0f8c5efec1fdc781bbbbe387f0c188b9fd34c5ffa9b796c1ac0235`  
 		Last Modified: Mon, 08 Aug 2016 21:07:23 GMT  
-		Size: 3.3 MB (3306249 bytes)
+		Size: 3.3 MB (3306249 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1edc05b1775830422108d01615e6644b9a3a4344e56caac8e6dcbd06a67ecd11`  
 		Last Modified: Tue, 09 Aug 2016 21:23:16 GMT  
-		Size: 19.5 MB (19528523 bytes)
+		Size: 19.5 MB (19528523 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:89066e65bfc86a6b61c88ee96e3dd3834ba672ee81616a0f6e2f8cc271cc2ae6`  
 		Last Modified: Tue, 09 Aug 2016 21:23:10 GMT  
-		Size: 267.0 B
+		Size: 267.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3369a647201d8c0d20ecdcec440b8d82e128bb51e4951419eda471d2a864a3d1`  
 		Last Modified: Tue, 09 Aug 2016 23:03:29 GMT  
-		Size: 4.3 KB (4338 bytes)
+		Size: 4.3 KB (4338 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:04b19c55bc4c028cd82efc8f1456ab24bda23630c7b9f6b0aad26abb6d4372ab`  
 		Last Modified: Tue, 09 Aug 2016 23:03:31 GMT  
-		Size: 1.7 MB (1732615 bytes)
+		Size: 1.7 MB (1732615 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:27101de7e419b2d51815c97b46b265213231d7a081280cae5dd4df8d3adb034c`  
 		Last Modified: Tue, 09 Aug 2016 23:03:33 GMT  
-		Size: 4.2 MB (4175754 bytes)
+		Size: 4.2 MB (4175754 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a1b24eb32950de63ada3744bf0c2ad75ceb69973f1fffe73dc04abee00e34368`  
 		Last Modified: Tue, 09 Aug 2016 23:03:30 GMT  
-		Size: 232.0 B
+		Size: 232.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `celery:3.1`
 
@@ -158,28 +166,36 @@ CMD ["celery" "worker"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:57aad21b9e0f8c5efec1fdc781bbbbe387f0c188b9fd34c5ffa9b796c1ac0235`  
 		Last Modified: Mon, 08 Aug 2016 21:07:23 GMT  
-		Size: 3.3 MB (3306249 bytes)
+		Size: 3.3 MB (3306249 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1edc05b1775830422108d01615e6644b9a3a4344e56caac8e6dcbd06a67ecd11`  
 		Last Modified: Tue, 09 Aug 2016 21:23:16 GMT  
-		Size: 19.5 MB (19528523 bytes)
+		Size: 19.5 MB (19528523 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:89066e65bfc86a6b61c88ee96e3dd3834ba672ee81616a0f6e2f8cc271cc2ae6`  
 		Last Modified: Tue, 09 Aug 2016 21:23:10 GMT  
-		Size: 267.0 B
+		Size: 267.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3369a647201d8c0d20ecdcec440b8d82e128bb51e4951419eda471d2a864a3d1`  
 		Last Modified: Tue, 09 Aug 2016 23:03:29 GMT  
-		Size: 4.3 KB (4338 bytes)
+		Size: 4.3 KB (4338 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:04b19c55bc4c028cd82efc8f1456ab24bda23630c7b9f6b0aad26abb6d4372ab`  
 		Last Modified: Tue, 09 Aug 2016 23:03:31 GMT  
-		Size: 1.7 MB (1732615 bytes)
+		Size: 1.7 MB (1732615 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:27101de7e419b2d51815c97b46b265213231d7a081280cae5dd4df8d3adb034c`  
 		Last Modified: Tue, 09 Aug 2016 23:03:33 GMT  
-		Size: 4.2 MB (4175754 bytes)
+		Size: 4.2 MB (4175754 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a1b24eb32950de63ada3744bf0c2ad75ceb69973f1fffe73dc04abee00e34368`  
 		Last Modified: Tue, 09 Aug 2016 23:03:30 GMT  
-		Size: 232.0 B
+		Size: 232.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `celery:3`
 
@@ -245,28 +261,36 @@ CMD ["celery" "worker"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:57aad21b9e0f8c5efec1fdc781bbbbe387f0c188b9fd34c5ffa9b796c1ac0235`  
 		Last Modified: Mon, 08 Aug 2016 21:07:23 GMT  
-		Size: 3.3 MB (3306249 bytes)
+		Size: 3.3 MB (3306249 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1edc05b1775830422108d01615e6644b9a3a4344e56caac8e6dcbd06a67ecd11`  
 		Last Modified: Tue, 09 Aug 2016 21:23:16 GMT  
-		Size: 19.5 MB (19528523 bytes)
+		Size: 19.5 MB (19528523 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:89066e65bfc86a6b61c88ee96e3dd3834ba672ee81616a0f6e2f8cc271cc2ae6`  
 		Last Modified: Tue, 09 Aug 2016 21:23:10 GMT  
-		Size: 267.0 B
+		Size: 267.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3369a647201d8c0d20ecdcec440b8d82e128bb51e4951419eda471d2a864a3d1`  
 		Last Modified: Tue, 09 Aug 2016 23:03:29 GMT  
-		Size: 4.3 KB (4338 bytes)
+		Size: 4.3 KB (4338 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:04b19c55bc4c028cd82efc8f1456ab24bda23630c7b9f6b0aad26abb6d4372ab`  
 		Last Modified: Tue, 09 Aug 2016 23:03:31 GMT  
-		Size: 1.7 MB (1732615 bytes)
+		Size: 1.7 MB (1732615 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:27101de7e419b2d51815c97b46b265213231d7a081280cae5dd4df8d3adb034c`  
 		Last Modified: Tue, 09 Aug 2016 23:03:33 GMT  
-		Size: 4.2 MB (4175754 bytes)
+		Size: 4.2 MB (4175754 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a1b24eb32950de63ada3744bf0c2ad75ceb69973f1fffe73dc04abee00e34368`  
 		Last Modified: Tue, 09 Aug 2016 23:03:30 GMT  
-		Size: 232.0 B
+		Size: 232.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `celery:latest`
 
@@ -332,25 +356,33 @@ CMD ["celery" "worker"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:57aad21b9e0f8c5efec1fdc781bbbbe387f0c188b9fd34c5ffa9b796c1ac0235`  
 		Last Modified: Mon, 08 Aug 2016 21:07:23 GMT  
-		Size: 3.3 MB (3306249 bytes)
+		Size: 3.3 MB (3306249 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1edc05b1775830422108d01615e6644b9a3a4344e56caac8e6dcbd06a67ecd11`  
 		Last Modified: Tue, 09 Aug 2016 21:23:16 GMT  
-		Size: 19.5 MB (19528523 bytes)
+		Size: 19.5 MB (19528523 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:89066e65bfc86a6b61c88ee96e3dd3834ba672ee81616a0f6e2f8cc271cc2ae6`  
 		Last Modified: Tue, 09 Aug 2016 21:23:10 GMT  
-		Size: 267.0 B
+		Size: 267.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3369a647201d8c0d20ecdcec440b8d82e128bb51e4951419eda471d2a864a3d1`  
 		Last Modified: Tue, 09 Aug 2016 23:03:29 GMT  
-		Size: 4.3 KB (4338 bytes)
+		Size: 4.3 KB (4338 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:04b19c55bc4c028cd82efc8f1456ab24bda23630c7b9f6b0aad26abb6d4372ab`  
 		Last Modified: Tue, 09 Aug 2016 23:03:31 GMT  
-		Size: 1.7 MB (1732615 bytes)
+		Size: 1.7 MB (1732615 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:27101de7e419b2d51815c97b46b265213231d7a081280cae5dd4df8d3adb034c`  
 		Last Modified: Tue, 09 Aug 2016 23:03:33 GMT  
-		Size: 4.2 MB (4175754 bytes)
+		Size: 4.2 MB (4175754 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a1b24eb32950de63ada3744bf0c2ad75ceb69973f1fffe73dc04abee00e34368`  
 		Last Modified: Tue, 09 Aug 2016 23:03:30 GMT  
-		Size: 232.0 B
+		Size: 232.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

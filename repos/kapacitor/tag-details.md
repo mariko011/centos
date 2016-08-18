@@ -60,19 +60,24 @@ CMD ["kapacitord"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e29f2fd1d5b59bca4e74fd78afeb7b2e063e3fd89bf33bdf5487b5146275e46b`  
 		Last Modified: Thu, 28 Jul 2016 22:14:58 GMT  
-		Size: 6.8 KB (6754 bytes)
+		Size: 6.8 KB (6754 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:dc9fa7a46d1c038368aa8d1ee40380d09acbb37fe41f50cc284c18a0264ce09f`  
 		Last Modified: Fri, 29 Jul 2016 17:03:32 GMT  
-		Size: 9.0 MB (9039422 bytes)
+		Size: 9.0 MB (9039422 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2ef61346a4e22f3d1f9d1b1a1a24652d05c52ebe5f6db181dc337683231784b5`  
 		Last Modified: Fri, 29 Jul 2016 17:03:28 GMT  
-		Size: 398.0 B
+		Size: 398.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `kapacitor:0.12.0`
 
@@ -121,19 +126,24 @@ CMD ["kapacitord"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e29f2fd1d5b59bca4e74fd78afeb7b2e063e3fd89bf33bdf5487b5146275e46b`  
 		Last Modified: Thu, 28 Jul 2016 22:14:58 GMT  
-		Size: 6.8 KB (6754 bytes)
+		Size: 6.8 KB (6754 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:dc9fa7a46d1c038368aa8d1ee40380d09acbb37fe41f50cc284c18a0264ce09f`  
 		Last Modified: Fri, 29 Jul 2016 17:03:32 GMT  
-		Size: 9.0 MB (9039422 bytes)
+		Size: 9.0 MB (9039422 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2ef61346a4e22f3d1f9d1b1a1a24652d05c52ebe5f6db181dc337683231784b5`  
 		Last Modified: Fri, 29 Jul 2016 17:03:28 GMT  
-		Size: 398.0 B
+		Size: 398.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `kapacitor:0.13`
 
@@ -182,19 +192,24 @@ CMD ["kapacitord"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e29f2fd1d5b59bca4e74fd78afeb7b2e063e3fd89bf33bdf5487b5146275e46b`  
 		Last Modified: Thu, 28 Jul 2016 22:14:58 GMT  
-		Size: 6.8 KB (6754 bytes)
+		Size: 6.8 KB (6754 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c04937c33b0d585d4f8528b54fd1214348855da7a2906cfc54da38187c22f056`  
 		Last Modified: Fri, 29 Jul 2016 17:04:45 GMT  
-		Size: 11.5 MB (11538692 bytes)
+		Size: 11.5 MB (11538692 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2bb92bdff5d7bb53ee551ef76e1a89b94be1d071d1ee8d95e3f3e9f042857d17`  
 		Last Modified: Fri, 29 Jul 2016 17:04:40 GMT  
-		Size: 229.0 B
+		Size: 229.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `kapacitor:0.13.1`
 
@@ -243,19 +258,24 @@ CMD ["kapacitord"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e29f2fd1d5b59bca4e74fd78afeb7b2e063e3fd89bf33bdf5487b5146275e46b`  
 		Last Modified: Thu, 28 Jul 2016 22:14:58 GMT  
-		Size: 6.8 KB (6754 bytes)
+		Size: 6.8 KB (6754 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c04937c33b0d585d4f8528b54fd1214348855da7a2906cfc54da38187c22f056`  
 		Last Modified: Fri, 29 Jul 2016 17:04:45 GMT  
-		Size: 11.5 MB (11538692 bytes)
+		Size: 11.5 MB (11538692 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2bb92bdff5d7bb53ee551ef76e1a89b94be1d071d1ee8d95e3f3e9f042857d17`  
 		Last Modified: Fri, 29 Jul 2016 17:04:40 GMT  
-		Size: 229.0 B
+		Size: 229.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `kapacitor:latest`
 
@@ -304,19 +324,24 @@ CMD ["kapacitord"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e29f2fd1d5b59bca4e74fd78afeb7b2e063e3fd89bf33bdf5487b5146275e46b`  
 		Last Modified: Thu, 28 Jul 2016 22:14:58 GMT  
-		Size: 6.8 KB (6754 bytes)
+		Size: 6.8 KB (6754 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c04937c33b0d585d4f8528b54fd1214348855da7a2906cfc54da38187c22f056`  
 		Last Modified: Fri, 29 Jul 2016 17:04:45 GMT  
-		Size: 11.5 MB (11538692 bytes)
+		Size: 11.5 MB (11538692 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2bb92bdff5d7bb53ee551ef76e1a89b94be1d071d1ee8d95e3f3e9f042857d17`  
 		Last Modified: Fri, 29 Jul 2016 17:04:40 GMT  
-		Size: 229.0 B
+		Size: 229.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `kapacitor:0.13-alpine`
 
@@ -359,13 +384,16 @@ CMD ["kapacitord"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a69dc4f1b496df5841fcb25dd474938776e6f41d5ec81cc5bd0e0559fc1d3196`  
 		Last Modified: Thu, 23 Jun 2016 20:41:16 GMT  
-		Size: 8.5 MB (8460050 bytes)
+		Size: 8.5 MB (8460050 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9bf71979dca177a1cab0df82aebfb52f1a577799f23e4695a2e2ec87f2f3f682`  
 		Last Modified: Thu, 23 Jun 2016 20:41:10 GMT  
-		Size: 227.0 B
+		Size: 227.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `kapacitor:0.13.1-alpine`
 
@@ -408,13 +436,16 @@ CMD ["kapacitord"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a69dc4f1b496df5841fcb25dd474938776e6f41d5ec81cc5bd0e0559fc1d3196`  
 		Last Modified: Thu, 23 Jun 2016 20:41:16 GMT  
-		Size: 8.5 MB (8460050 bytes)
+		Size: 8.5 MB (8460050 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9bf71979dca177a1cab0df82aebfb52f1a577799f23e4695a2e2ec87f2f3f682`  
 		Last Modified: Thu, 23 Jun 2016 20:41:10 GMT  
-		Size: 227.0 B
+		Size: 227.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `kapacitor:alpine`
 
@@ -457,13 +488,16 @@ CMD ["kapacitord"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a69dc4f1b496df5841fcb25dd474938776e6f41d5ec81cc5bd0e0559fc1d3196`  
 		Last Modified: Thu, 23 Jun 2016 20:41:16 GMT  
-		Size: 8.5 MB (8460050 bytes)
+		Size: 8.5 MB (8460050 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9bf71979dca177a1cab0df82aebfb52f1a577799f23e4695a2e2ec87f2f3f682`  
 		Last Modified: Thu, 23 Jun 2016 20:41:10 GMT  
-		Size: 227.0 B
+		Size: 227.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `kapacitor:1.0.0-beta3`
 
@@ -512,19 +546,24 @@ CMD ["kapacitord"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e29f2fd1d5b59bca4e74fd78afeb7b2e063e3fd89bf33bdf5487b5146275e46b`  
 		Last Modified: Thu, 28 Jul 2016 22:14:58 GMT  
-		Size: 6.8 KB (6754 bytes)
+		Size: 6.8 KB (6754 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:23e397d86ac2a49c4ea044d920821940f4a8fe7a14cc6e08651ff73e830f1184`  
 		Last Modified: Fri, 29 Jul 2016 17:04:12 GMT  
-		Size: 12.0 MB (11952593 bytes)
+		Size: 12.0 MB (11952593 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b956b15814e81c4c2bd5a2e77205772257a0ac566e54ee62c99d9d30e763438c`  
 		Last Modified: Fri, 29 Jul 2016 17:04:07 GMT  
-		Size: 229.0 B
+		Size: 229.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `kapacitor:1.0.0-beta3-alpine`
 
@@ -567,10 +606,13 @@ CMD ["kapacitord"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:29769b3f30bef503dc307a9f32ba19458b30f190d5b493c24bbb1cdc1c03652b`  
 		Last Modified: Tue, 19 Jul 2016 19:36:18 GMT  
-		Size: 8.8 MB (8763021 bytes)
+		Size: 8.8 MB (8763021 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:33c1e6dbbf94ebe2fe711d3a6305b315ccd563a2a95f8875170ff7a80432eb13`  
 		Last Modified: Tue, 19 Jul 2016 19:36:14 GMT  
-		Size: 226.0 B
+		Size: 226.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

@@ -35,7 +35,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:a7d1441e6ccadb3839aac4247d470ee57b1b39186f235dbc5bc0035093de172e`  
 		Last Modified: Tue, 16 Aug 2016 19:38:35 GMT  
-		Size: 33.1 MB (33108262 bytes)
+		Size: 33.1 MB (33108262 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clearlinux:base`
 
@@ -67,4 +68,5 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:a7d1441e6ccadb3839aac4247d470ee57b1b39186f235dbc5bc0035093de172e`  
 		Last Modified: Tue, 16 Aug 2016 19:38:35 GMT  
-		Size: 33.1 MB (33108262 bytes)
+		Size: 33.1 MB (33108262 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

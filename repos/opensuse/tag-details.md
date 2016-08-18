@@ -36,7 +36,8 @@ ADD file:4c338e205c079dbf5dadd8ca9b865f79a4d91b102779d2c6d371f4c31ce19ec1 in /
 -	Layers:
 	-	`sha256:bffa29266eb0a7022496a2d1284a842b2c2b4415e35a78f345fbf32f26debcc5`  
 		Last Modified: Wed, 13 Jul 2016 16:58:14 GMT  
-		Size: 37.9 MB (37850390 bytes)
+		Size: 37.9 MB (37850390 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `opensuse:leap`
 
@@ -65,7 +66,8 @@ ADD file:4c338e205c079dbf5dadd8ca9b865f79a4d91b102779d2c6d371f4c31ce19ec1 in /
 -	Layers:
 	-	`sha256:bffa29266eb0a7022496a2d1284a842b2c2b4415e35a78f345fbf32f26debcc5`  
 		Last Modified: Wed, 13 Jul 2016 16:58:14 GMT  
-		Size: 37.9 MB (37850390 bytes)
+		Size: 37.9 MB (37850390 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `opensuse:latest`
 
@@ -94,7 +96,8 @@ ADD file:4c338e205c079dbf5dadd8ca9b865f79a4d91b102779d2c6d371f4c31ce19ec1 in /
 -	Layers:
 	-	`sha256:bffa29266eb0a7022496a2d1284a842b2c2b4415e35a78f345fbf32f26debcc5`  
 		Last Modified: Wed, 13 Jul 2016 16:58:14 GMT  
-		Size: 37.9 MB (37850390 bytes)
+		Size: 37.9 MB (37850390 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `opensuse:13.2`
 
@@ -123,7 +126,8 @@ ADD file:ee63d25fb31627595f6e9648d295dfb3c4b7bb12e1f782da04066a4abfcb979d in /
 -	Layers:
 	-	`sha256:ee142acc9c32eef33e603ad319d46b36d3f3485e0e0bb4d7346e285e26c91802`  
 		Last Modified: Mon, 20 Jun 2016 17:33:56 GMT  
-		Size: 37.9 MB (37940081 bytes)
+		Size: 37.9 MB (37940081 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `opensuse:harlequin`
 
@@ -152,7 +156,8 @@ ADD file:ee63d25fb31627595f6e9648d295dfb3c4b7bb12e1f782da04066a4abfcb979d in /
 -	Layers:
 	-	`sha256:ee142acc9c32eef33e603ad319d46b36d3f3485e0e0bb4d7346e285e26c91802`  
 		Last Modified: Mon, 20 Jun 2016 17:33:56 GMT  
-		Size: 37.9 MB (37940081 bytes)
+		Size: 37.9 MB (37940081 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `opensuse:tumbleweed`
 
@@ -183,7 +188,9 @@ RUN zypper -n ar -f http://download.opensuse.org/tumbleweed/repo/oss repo-oss &&
 -	Layers:
 	-	`sha256:5acd6d41c69ca316947513ec90343b86857cc9fe24ceb722c6c8b7006cfd17f1`  
 		Last Modified: Wed, 15 Jun 2016 18:41:30 GMT  
-		Size: 53.9 MB (53895364 bytes)
+		Size: 53.9 MB (53895364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d7f80f831ae1394833591225d9bc0826276c1bbc3038e6ee805247515a6dcd51`  
 		Last Modified: Wed, 15 Jun 2016 18:41:15 GMT  
-		Size: 133.3 KB (133274 bytes)
+		Size: 133.3 KB (133274 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

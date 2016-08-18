@@ -56,19 +56,24 @@ CMD ["notary-server" "--help"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b8348a1fea261cbcf707a9a2f3dcb6adf29f2e09ecad7bf65b013aa70ff78615`  
 		Last Modified: Thu, 23 Jun 2016 22:31:21 GMT  
-		Size: 418.0 B
+		Size: 418.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0fc940aaefff4c28fc98eccb5d7df89e3b063cba90f85efeb46bfdacf7e3dbd5`  
 		Last Modified: Thu, 23 Jun 2016 22:31:23 GMT  
-		Size: 4.8 MB (4805120 bytes)
+		Size: 4.8 MB (4805120 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:650a2de6a8a454cc7f719652dade5d5a4304acfe4c20f9df9ffba5bf290fe5bc`  
 		Last Modified: Thu, 23 Jun 2016 22:31:21 GMT  
-		Size: 377.0 B
+		Size: 377.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:04975f42ee96980f63b77843fb618e43416e498dd93e1f22e8015eea9e8354d3`  
 		Last Modified: Thu, 23 Jun 2016 22:31:21 GMT  
-		Size: 22.3 KB (22296 bytes)
+		Size: 22.3 KB (22296 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `notary:server-0.3.0`
 
@@ -117,19 +122,24 @@ CMD ["notary-server" "--help"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b8348a1fea261cbcf707a9a2f3dcb6adf29f2e09ecad7bf65b013aa70ff78615`  
 		Last Modified: Thu, 23 Jun 2016 22:31:21 GMT  
-		Size: 418.0 B
+		Size: 418.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0fc940aaefff4c28fc98eccb5d7df89e3b063cba90f85efeb46bfdacf7e3dbd5`  
 		Last Modified: Thu, 23 Jun 2016 22:31:23 GMT  
-		Size: 4.8 MB (4805120 bytes)
+		Size: 4.8 MB (4805120 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:650a2de6a8a454cc7f719652dade5d5a4304acfe4c20f9df9ffba5bf290fe5bc`  
 		Last Modified: Thu, 23 Jun 2016 22:31:21 GMT  
-		Size: 377.0 B
+		Size: 377.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:04975f42ee96980f63b77843fb618e43416e498dd93e1f22e8015eea9e8354d3`  
 		Last Modified: Thu, 23 Jun 2016 22:31:21 GMT  
-		Size: 22.3 KB (22296 bytes)
+		Size: 22.3 KB (22296 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `notary:signer`
 
@@ -180,19 +190,24 @@ CMD ["notary-signer" "--help"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:77efbd90365f7b1193b0c4fdda6df37bd6c2d71a41cb15de6dbe3f4a3359cd2c`  
 		Last Modified: Thu, 23 Jun 2016 22:31:49 GMT  
-		Size: 348.0 B
+		Size: 348.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:83acc7703368ac5b5df060c1e2e90b1c053f44fdd20210cf5b7c94b2e2c07715`  
 		Last Modified: Thu, 23 Jun 2016 22:32:11 GMT  
-		Size: 4.5 MB (4520743 bytes)
+		Size: 4.5 MB (4520743 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9e6359c5abf8a5268f81ca7976fe401820662b07a4ad1b774c43b0bddb646e8c`  
 		Last Modified: Thu, 23 Jun 2016 22:32:09 GMT  
-		Size: 379.0 B
+		Size: 379.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5a66db56d051f712c2d6bfcefadab4266d6001566e077f0ab793ec744ad86a3e`  
 		Last Modified: Thu, 23 Jun 2016 22:32:09 GMT  
-		Size: 22.3 KB (22313 bytes)
+		Size: 22.3 KB (22313 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `notary:signer-0.3.0`
 
@@ -243,19 +258,24 @@ CMD ["notary-signer" "--help"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:77efbd90365f7b1193b0c4fdda6df37bd6c2d71a41cb15de6dbe3f4a3359cd2c`  
 		Last Modified: Thu, 23 Jun 2016 22:31:49 GMT  
-		Size: 348.0 B
+		Size: 348.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:83acc7703368ac5b5df060c1e2e90b1c053f44fdd20210cf5b7c94b2e2c07715`  
 		Last Modified: Thu, 23 Jun 2016 22:32:11 GMT  
-		Size: 4.5 MB (4520743 bytes)
+		Size: 4.5 MB (4520743 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9e6359c5abf8a5268f81ca7976fe401820662b07a4ad1b774c43b0bddb646e8c`  
 		Last Modified: Thu, 23 Jun 2016 22:32:09 GMT  
-		Size: 379.0 B
+		Size: 379.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5a66db56d051f712c2d6bfcefadab4266d6001566e077f0ab793ec744ad86a3e`  
 		Last Modified: Thu, 23 Jun 2016 22:32:09 GMT  
-		Size: 22.3 KB (22313 bytes)
+		Size: 22.3 KB (22313 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `notary:server-0.2.0`
 
@@ -304,19 +324,24 @@ CMD ["notary-server" "--help"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b8348a1fea261cbcf707a9a2f3dcb6adf29f2e09ecad7bf65b013aa70ff78615`  
 		Last Modified: Thu, 23 Jun 2016 22:31:21 GMT  
-		Size: 418.0 B
+		Size: 418.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b5ff28a2c000ca792e81aa49fbc02d274fdff04232fd8c663160e9b9c32b8bb6`  
 		Last Modified: Thu, 23 Jun 2016 22:32:39 GMT  
-		Size: 5.7 MB (5698317 bytes)
+		Size: 5.7 MB (5698317 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:dda55bccbaeb9edb457ab1e8910ed00b6881e320dd44b8fc80fb53b5a83631e5`  
 		Last Modified: Thu, 23 Jun 2016 22:32:37 GMT  
-		Size: 376.0 B
+		Size: 376.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b04f4e59c386d86960c53512f1654b966309d7c1a71bb2fe34705056f6b026de`  
 		Last Modified: Thu, 23 Jun 2016 22:32:37 GMT  
-		Size: 22.3 KB (22340 bytes)
+		Size: 22.3 KB (22340 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `notary:signer-0.2.0`
 
@@ -367,16 +392,21 @@ CMD ["notary-signer" "--help"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:77efbd90365f7b1193b0c4fdda6df37bd6c2d71a41cb15de6dbe3f4a3359cd2c`  
 		Last Modified: Thu, 23 Jun 2016 22:31:49 GMT  
-		Size: 348.0 B
+		Size: 348.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:fc06a849bf63eeb7520cfc432907796c01e43a0397495b38b339da740542d98a`  
 		Last Modified: Thu, 23 Jun 2016 22:31:51 GMT  
-		Size: 5.5 MB (5465104 bytes)
+		Size: 5.5 MB (5465104 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98a4f8e724c4229cfbb5a790c8da7762cf2f5d09ff9f0925237ff103fad40a06`  
 		Last Modified: Thu, 23 Jun 2016 22:31:49 GMT  
-		Size: 380.0 B
+		Size: 380.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:86b3d2e572e4e5950b0a7446d4cdece2e7f9d83b500446f39c5e094e27b4706f`  
 		Last Modified: Thu, 23 Jun 2016 22:31:49 GMT  
-		Size: 22.3 KB (22338 bytes)
+		Size: 22.3 KB (22338 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

@@ -38,10 +38,12 @@ ENTRYPOINT &{["/traefik"]}
 -	Layers:
 	-	`sha256:984f196cdb70cc4fdb7384fcba7926a254a4cc5a9fa188d175dd2d5ffa64ed93`  
 		Last Modified: Thu, 09 Jun 2016 22:14:52 GMT  
-		Size: 153.8 KB (153793 bytes)
+		Size: 153.8 KB (153793 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4ced881399a9de516a2c86f16ab62d42081c77c3d3a686edb6a488991659b57a`  
 		Last Modified: Wed, 03 Aug 2016 20:32:24 GMT  
-		Size: 6.5 MB (6541593 bytes)
+		Size: 6.5 MB (6541593 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:reblochon`
 
@@ -75,10 +77,12 @@ ENTRYPOINT &{["/traefik"]}
 -	Layers:
 	-	`sha256:984f196cdb70cc4fdb7384fcba7926a254a4cc5a9fa188d175dd2d5ffa64ed93`  
 		Last Modified: Thu, 09 Jun 2016 22:14:52 GMT  
-		Size: 153.8 KB (153793 bytes)
+		Size: 153.8 KB (153793 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4ced881399a9de516a2c86f16ab62d42081c77c3d3a686edb6a488991659b57a`  
 		Last Modified: Wed, 03 Aug 2016 20:32:24 GMT  
-		Size: 6.5 MB (6541593 bytes)
+		Size: 6.5 MB (6541593 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `traefik:latest`
 
@@ -112,7 +116,9 @@ ENTRYPOINT &{["/traefik"]}
 -	Layers:
 	-	`sha256:984f196cdb70cc4fdb7384fcba7926a254a4cc5a9fa188d175dd2d5ffa64ed93`  
 		Last Modified: Thu, 09 Jun 2016 22:14:52 GMT  
-		Size: 153.8 KB (153793 bytes)
+		Size: 153.8 KB (153793 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4ced881399a9de516a2c86f16ab62d42081c77c3d3a686edb6a488991659b57a`  
 		Last Modified: Wed, 03 Aug 2016 20:32:24 GMT  
-		Size: 6.5 MB (6541593 bytes)
+		Size: 6.5 MB (6541593 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

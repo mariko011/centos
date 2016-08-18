@@ -67,25 +67,32 @@ CMD ["openerp-server"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:59210089e05763d3e2d318fce03f00d2cf6e408d9a277ad96bff93985579041a`  
 		Last Modified: Mon, 01 Aug 2016 20:01:57 GMT  
-		Size: 83.8 MB (83758751 bytes)
+		Size: 83.8 MB (83758751 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:24b95c0b07d90ff1f327c3be4ba3a26032128eb32bc7d0823e67ca94f8e2d662`  
 		Last Modified: Mon, 01 Aug 2016 20:02:09 GMT  
-		Size: 130.9 MB (130944403 bytes)
+		Size: 130.9 MB (130944403 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:97035019514e539582442e72ae4a16d766bd5e5bb8506b2134774ddeff2cde91`  
 		Last Modified: Mon, 01 Aug 2016 20:01:30 GMT  
-		Size: 345.0 B
+		Size: 345.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4d7cf1a4cc3b5dbbb653134f609fdd8fccdef34adf9104190849b641f4b6d12a`  
 		Last Modified: Mon, 01 Aug 2016 20:01:29 GMT  
-		Size: 588.0 B
+		Size: 588.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e238f100332be45b0dc54eab705d9e8632af18fbde4561c64ae2f86628ed9ee3`  
 		Last Modified: Mon, 01 Aug 2016 20:01:29 GMT  
-		Size: 592.0 B
+		Size: 592.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:602249924d2bcaa133bc7f2c6f54d7acc0185c8feebae647811552d44638b756`  
 		Last Modified: Mon, 01 Aug 2016 20:01:30 GMT  
-		Size: 124.0 B
+		Size: 124.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `odoo:8`
 
@@ -146,25 +153,32 @@ CMD ["openerp-server"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:59210089e05763d3e2d318fce03f00d2cf6e408d9a277ad96bff93985579041a`  
 		Last Modified: Mon, 01 Aug 2016 20:01:57 GMT  
-		Size: 83.8 MB (83758751 bytes)
+		Size: 83.8 MB (83758751 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:24b95c0b07d90ff1f327c3be4ba3a26032128eb32bc7d0823e67ca94f8e2d662`  
 		Last Modified: Mon, 01 Aug 2016 20:02:09 GMT  
-		Size: 130.9 MB (130944403 bytes)
+		Size: 130.9 MB (130944403 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:97035019514e539582442e72ae4a16d766bd5e5bb8506b2134774ddeff2cde91`  
 		Last Modified: Mon, 01 Aug 2016 20:01:30 GMT  
-		Size: 345.0 B
+		Size: 345.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4d7cf1a4cc3b5dbbb653134f609fdd8fccdef34adf9104190849b641f4b6d12a`  
 		Last Modified: Mon, 01 Aug 2016 20:01:29 GMT  
-		Size: 588.0 B
+		Size: 588.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e238f100332be45b0dc54eab705d9e8632af18fbde4561c64ae2f86628ed9ee3`  
 		Last Modified: Mon, 01 Aug 2016 20:01:29 GMT  
-		Size: 592.0 B
+		Size: 592.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:602249924d2bcaa133bc7f2c6f54d7acc0185c8feebae647811552d44638b756`  
 		Last Modified: Mon, 01 Aug 2016 20:01:30 GMT  
-		Size: 124.0 B
+		Size: 124.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `odoo:9.0`
 
@@ -225,25 +239,32 @@ CMD ["openerp-server"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:59210089e05763d3e2d318fce03f00d2cf6e408d9a277ad96bff93985579041a`  
 		Last Modified: Mon, 01 Aug 2016 20:01:57 GMT  
-		Size: 83.8 MB (83758751 bytes)
+		Size: 83.8 MB (83758751 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:55c6ab9ddca9acb1ae3c05eb0df3838c786fcce84f86d900db1e1a9d95581ebc`  
 		Last Modified: Mon, 01 Aug 2016 20:06:01 GMT  
-		Size: 137.7 MB (137740862 bytes)
+		Size: 137.7 MB (137740862 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0ff4ee116ff2e36b0d17a1ba097cdff8dfdf93b2b32c998283aec9409a469f1b`  
 		Last Modified: Mon, 01 Aug 2016 20:05:27 GMT  
-		Size: 344.0 B
+		Size: 344.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b0e835ad7b97693cd98dfa4a95451e1b593f90a9d08c6c87c192f426432bc505`  
 		Last Modified: Mon, 01 Aug 2016 20:05:26 GMT  
-		Size: 588.0 B
+		Size: 588.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3cbd8091436be0c8e5c409f1afaa42e32de4f42b1e7cf8ef4481eb26f329b494`  
 		Last Modified: Mon, 01 Aug 2016 20:05:26 GMT  
-		Size: 590.0 B
+		Size: 590.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f943eb8cd383e18c2e3de2bab17f41b05bcc66319f468e152bd478faa9f814c4`  
 		Last Modified: Mon, 01 Aug 2016 20:05:26 GMT  
-		Size: 123.0 B
+		Size: 123.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `odoo:9`
 
@@ -304,25 +325,32 @@ CMD ["openerp-server"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:59210089e05763d3e2d318fce03f00d2cf6e408d9a277ad96bff93985579041a`  
 		Last Modified: Mon, 01 Aug 2016 20:01:57 GMT  
-		Size: 83.8 MB (83758751 bytes)
+		Size: 83.8 MB (83758751 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:55c6ab9ddca9acb1ae3c05eb0df3838c786fcce84f86d900db1e1a9d95581ebc`  
 		Last Modified: Mon, 01 Aug 2016 20:06:01 GMT  
-		Size: 137.7 MB (137740862 bytes)
+		Size: 137.7 MB (137740862 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0ff4ee116ff2e36b0d17a1ba097cdff8dfdf93b2b32c998283aec9409a469f1b`  
 		Last Modified: Mon, 01 Aug 2016 20:05:27 GMT  
-		Size: 344.0 B
+		Size: 344.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b0e835ad7b97693cd98dfa4a95451e1b593f90a9d08c6c87c192f426432bc505`  
 		Last Modified: Mon, 01 Aug 2016 20:05:26 GMT  
-		Size: 588.0 B
+		Size: 588.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3cbd8091436be0c8e5c409f1afaa42e32de4f42b1e7cf8ef4481eb26f329b494`  
 		Last Modified: Mon, 01 Aug 2016 20:05:26 GMT  
-		Size: 590.0 B
+		Size: 590.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f943eb8cd383e18c2e3de2bab17f41b05bcc66319f468e152bd478faa9f814c4`  
 		Last Modified: Mon, 01 Aug 2016 20:05:26 GMT  
-		Size: 123.0 B
+		Size: 123.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `odoo:latest`
 
@@ -383,22 +411,29 @@ CMD ["openerp-server"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:59210089e05763d3e2d318fce03f00d2cf6e408d9a277ad96bff93985579041a`  
 		Last Modified: Mon, 01 Aug 2016 20:01:57 GMT  
-		Size: 83.8 MB (83758751 bytes)
+		Size: 83.8 MB (83758751 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:55c6ab9ddca9acb1ae3c05eb0df3838c786fcce84f86d900db1e1a9d95581ebc`  
 		Last Modified: Mon, 01 Aug 2016 20:06:01 GMT  
-		Size: 137.7 MB (137740862 bytes)
+		Size: 137.7 MB (137740862 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0ff4ee116ff2e36b0d17a1ba097cdff8dfdf93b2b32c998283aec9409a469f1b`  
 		Last Modified: Mon, 01 Aug 2016 20:05:27 GMT  
-		Size: 344.0 B
+		Size: 344.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b0e835ad7b97693cd98dfa4a95451e1b593f90a9d08c6c87c192f426432bc505`  
 		Last Modified: Mon, 01 Aug 2016 20:05:26 GMT  
-		Size: 588.0 B
+		Size: 588.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3cbd8091436be0c8e5c409f1afaa42e32de4f42b1e7cf8ef4481eb26f329b494`  
 		Last Modified: Mon, 01 Aug 2016 20:05:26 GMT  
-		Size: 590.0 B
+		Size: 590.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f943eb8cd383e18c2e3de2bab17f41b05bcc66319f468e152bd478faa9f814c4`  
 		Last Modified: Mon, 01 Aug 2016 20:05:26 GMT  
-		Size: 123.0 B
+		Size: 123.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

@@ -67,28 +67,36 @@ CMD ["iex"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
 		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
-		Size: 129.7 MB (129692532 bytes)
+		Size: 129.7 MB (129692532 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:60c47b689bb9b81c96b09e8c22411bd4630f7985bda1f5088a260b34f6af3e7c`  
 		Last Modified: Thu, 28 Jul 2016 23:46:01 GMT  
-		Size: 57.9 MB (57923284 bytes)
+		Size: 57.9 MB (57923284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2cc84a64bfc653903c6f95202403a2ef62ef8a191b6f71f3b2cb72c67849c1b`  
 		Last Modified: Thu, 28 Jul 2016 23:45:48 GMT  
-		Size: 196.8 KB (196806 bytes)
+		Size: 196.8 KB (196806 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cf7345f0c41c5bb84be8b1e2161074a6f774cd1a6c8dc6886ceb09d94dd82b78`  
 		Last Modified: Thu, 28 Jul 2016 23:45:49 GMT  
-		Size: 1.6 MB (1563456 bytes)
+		Size: 1.6 MB (1563456 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:aaeb1843f8c0421111c194b6f1b3ff6fab8d6f96d9c92d8a43981e25d4f62aa9`  
 		Last Modified: Wed, 03 Aug 2016 21:05:31 GMT  
-		Size: 3.5 MB (3510308 bytes)
+		Size: 3.5 MB (3510308 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elixir:1.3`
 
@@ -144,28 +152,36 @@ CMD ["iex"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
 		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
-		Size: 129.7 MB (129692532 bytes)
+		Size: 129.7 MB (129692532 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:60c47b689bb9b81c96b09e8c22411bd4630f7985bda1f5088a260b34f6af3e7c`  
 		Last Modified: Thu, 28 Jul 2016 23:46:01 GMT  
-		Size: 57.9 MB (57923284 bytes)
+		Size: 57.9 MB (57923284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2cc84a64bfc653903c6f95202403a2ef62ef8a191b6f71f3b2cb72c67849c1b`  
 		Last Modified: Thu, 28 Jul 2016 23:45:48 GMT  
-		Size: 196.8 KB (196806 bytes)
+		Size: 196.8 KB (196806 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cf7345f0c41c5bb84be8b1e2161074a6f774cd1a6c8dc6886ceb09d94dd82b78`  
 		Last Modified: Thu, 28 Jul 2016 23:45:49 GMT  
-		Size: 1.6 MB (1563456 bytes)
+		Size: 1.6 MB (1563456 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:aaeb1843f8c0421111c194b6f1b3ff6fab8d6f96d9c92d8a43981e25d4f62aa9`  
 		Last Modified: Wed, 03 Aug 2016 21:05:31 GMT  
-		Size: 3.5 MB (3510308 bytes)
+		Size: 3.5 MB (3510308 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elixir:latest`
 
@@ -221,28 +237,36 @@ CMD ["iex"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
 		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
-		Size: 129.7 MB (129692532 bytes)
+		Size: 129.7 MB (129692532 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:60c47b689bb9b81c96b09e8c22411bd4630f7985bda1f5088a260b34f6af3e7c`  
 		Last Modified: Thu, 28 Jul 2016 23:46:01 GMT  
-		Size: 57.9 MB (57923284 bytes)
+		Size: 57.9 MB (57923284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2cc84a64bfc653903c6f95202403a2ef62ef8a191b6f71f3b2cb72c67849c1b`  
 		Last Modified: Thu, 28 Jul 2016 23:45:48 GMT  
-		Size: 196.8 KB (196806 bytes)
+		Size: 196.8 KB (196806 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cf7345f0c41c5bb84be8b1e2161074a6f774cd1a6c8dc6886ceb09d94dd82b78`  
 		Last Modified: Thu, 28 Jul 2016 23:45:49 GMT  
-		Size: 1.6 MB (1563456 bytes)
+		Size: 1.6 MB (1563456 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:aaeb1843f8c0421111c194b6f1b3ff6fab8d6f96d9c92d8a43981e25d4f62aa9`  
 		Last Modified: Wed, 03 Aug 2016 21:05:31 GMT  
-		Size: 3.5 MB (3510308 bytes)
+		Size: 3.5 MB (3510308 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elixir:1.3.2-slim`
 
@@ -284,13 +308,16 @@ CMD ["iex"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2e9242be2d6d2a4cb0cd460ea916b563f70b4ae278ff21c157795570ddbb55f9`  
 		Last Modified: Thu, 28 Jul 2016 22:52:45 GMT  
-		Size: 65.4 MB (65436211 bytes)
+		Size: 65.4 MB (65436211 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c1625d02fde2fc38e4416acbb1634f6d9e087a0eb8ae649715d2908816e8a634`  
 		Last Modified: Wed, 03 Aug 2016 21:07:33 GMT  
-		Size: 3.7 MB (3735808 bytes)
+		Size: 3.7 MB (3735808 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elixir:1.3-slim`
 
@@ -332,13 +359,16 @@ CMD ["iex"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2e9242be2d6d2a4cb0cd460ea916b563f70b4ae278ff21c157795570ddbb55f9`  
 		Last Modified: Thu, 28 Jul 2016 22:52:45 GMT  
-		Size: 65.4 MB (65436211 bytes)
+		Size: 65.4 MB (65436211 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c1625d02fde2fc38e4416acbb1634f6d9e087a0eb8ae649715d2908816e8a634`  
 		Last Modified: Wed, 03 Aug 2016 21:07:33 GMT  
-		Size: 3.7 MB (3735808 bytes)
+		Size: 3.7 MB (3735808 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elixir:slim`
 
@@ -380,13 +410,16 @@ CMD ["iex"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2e9242be2d6d2a4cb0cd460ea916b563f70b4ae278ff21c157795570ddbb55f9`  
 		Last Modified: Thu, 28 Jul 2016 22:52:45 GMT  
-		Size: 65.4 MB (65436211 bytes)
+		Size: 65.4 MB (65436211 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c1625d02fde2fc38e4416acbb1634f6d9e087a0eb8ae649715d2908816e8a634`  
 		Last Modified: Wed, 03 Aug 2016 21:07:33 GMT  
-		Size: 3.7 MB (3735808 bytes)
+		Size: 3.7 MB (3735808 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elixir:1.2.6`
 
@@ -442,28 +475,36 @@ CMD ["iex"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
 		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
-		Size: 129.7 MB (129692532 bytes)
+		Size: 129.7 MB (129692532 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0ebcb3f944032d2d964563f8d23c11bb6579c4956eeb1684b02b66fed5cda1ca`  
 		Last Modified: Thu, 28 Jul 2016 23:27:14 GMT  
-		Size: 57.7 MB (57725431 bytes)
+		Size: 57.7 MB (57725431 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0df787387a1678915b98dc70227066ccef2e7e32c1c54df053a546dd9ed8b38b`  
 		Last Modified: Thu, 28 Jul 2016 23:27:02 GMT  
-		Size: 198.0 KB (198035 bytes)
+		Size: 198.0 KB (198035 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d2e1856f707cfee392fa465df4d9d60b3c0f7359f6923e094beb2f518e781bc6`  
 		Last Modified: Thu, 28 Jul 2016 23:27:03 GMT  
-		Size: 1.6 MB (1567410 bytes)
+		Size: 1.6 MB (1567410 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a0bee1deb599593c95ed36a31f3bc6bab4197a8f6866864429c45ac72b038212`  
 		Last Modified: Wed, 03 Aug 2016 21:01:58 GMT  
-		Size: 3.3 MB (3258027 bytes)
+		Size: 3.3 MB (3258027 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elixir:1.2`
 
@@ -519,28 +560,36 @@ CMD ["iex"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
 		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
-		Size: 129.7 MB (129692532 bytes)
+		Size: 129.7 MB (129692532 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0ebcb3f944032d2d964563f8d23c11bb6579c4956eeb1684b02b66fed5cda1ca`  
 		Last Modified: Thu, 28 Jul 2016 23:27:14 GMT  
-		Size: 57.7 MB (57725431 bytes)
+		Size: 57.7 MB (57725431 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0df787387a1678915b98dc70227066ccef2e7e32c1c54df053a546dd9ed8b38b`  
 		Last Modified: Thu, 28 Jul 2016 23:27:02 GMT  
-		Size: 198.0 KB (198035 bytes)
+		Size: 198.0 KB (198035 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d2e1856f707cfee392fa465df4d9d60b3c0f7359f6923e094beb2f518e781bc6`  
 		Last Modified: Thu, 28 Jul 2016 23:27:03 GMT  
-		Size: 1.6 MB (1567410 bytes)
+		Size: 1.6 MB (1567410 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a0bee1deb599593c95ed36a31f3bc6bab4197a8f6866864429c45ac72b038212`  
 		Last Modified: Wed, 03 Aug 2016 21:01:58 GMT  
-		Size: 3.3 MB (3258027 bytes)
+		Size: 3.3 MB (3258027 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elixir:1.2.6-slim`
 
@@ -582,13 +631,16 @@ CMD ["iex"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:71cb7ff0105a8764fde9ecf875e1211ba1a003c77bd38977556518f26ea3f04a`  
 		Last Modified: Thu, 28 Jul 2016 23:58:09 GMT  
-		Size: 65.2 MB (65244648 bytes)
+		Size: 65.2 MB (65244648 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:41a40075b145317e450297568d3f7aded64836b63b1877a834e683d1bdbcea21`  
 		Last Modified: Wed, 03 Aug 2016 21:03:48 GMT  
-		Size: 3.5 MB (3484380 bytes)
+		Size: 3.5 MB (3484380 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elixir:1.2-slim`
 
@@ -630,10 +682,13 @@ CMD ["iex"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:71cb7ff0105a8764fde9ecf875e1211ba1a003c77bd38977556518f26ea3f04a`  
 		Last Modified: Thu, 28 Jul 2016 23:58:09 GMT  
-		Size: 65.2 MB (65244648 bytes)
+		Size: 65.2 MB (65244648 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:41a40075b145317e450297568d3f7aded64836b63b1877a834e683d1bdbcea21`  
 		Last Modified: Wed, 03 Aug 2016 21:03:48 GMT  
-		Size: 3.5 MB (3484380 bytes)
+		Size: 3.5 MB (3484380 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

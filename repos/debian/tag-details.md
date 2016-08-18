@@ -50,7 +50,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:8`
 
@@ -80,7 +81,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:jessie`
 
@@ -110,7 +112,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:latest`
 
@@ -140,7 +143,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:jessie-backports`
 
@@ -172,10 +176,12 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:25eb4fd61cd90d2207ae74300d5d7d1aeb22ae1afc4a3f87ee87f4454e309453`  
 		Last Modified: Thu, 28 Jul 2016 17:50:42 GMT  
-		Size: 220.0 B
+		Size: 220.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:oldstable`
 
@@ -205,7 +211,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:d871fa86d65a14834dd2e98433bfe0194a0113ea7280cf3457ed7323e48ce676`  
 		Last Modified: Thu, 28 Jul 2016 17:51:06 GMT  
-		Size: 37.2 MB (37209926 bytes)
+		Size: 37.2 MB (37209926 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:oldstable-backports`
 
@@ -237,10 +244,12 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 -	Layers:
 	-	`sha256:d871fa86d65a14834dd2e98433bfe0194a0113ea7280cf3457ed7323e48ce676`  
 		Last Modified: Thu, 28 Jul 2016 17:51:06 GMT  
-		Size: 37.2 MB (37209926 bytes)
+		Size: 37.2 MB (37209926 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:386d96516744a63ccd6e4b19c8aede91b87ff410b25c0695b2a762e330e92e95`  
 		Last Modified: Thu, 28 Jul 2016 17:51:21 GMT  
-		Size: 220.0 B
+		Size: 220.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:sid`
 
@@ -270,7 +279,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:f8e784df59625b49bca4ce9f70150e254beed293dd99fc93da5039461894ad16`  
 		Last Modified: Thu, 28 Jul 2016 17:51:47 GMT  
-		Size: 42.5 MB (42487630 bytes)
+		Size: 42.5 MB (42487630 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:stable`
 
@@ -300,7 +310,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:6f0e36e9ed69ba010ef8245494daebe273ba99cf75d61281be08272297255c72`  
 		Last Modified: Thu, 28 Jul 2016 17:52:18 GMT  
-		Size: 51.4 MB (51367231 bytes)
+		Size: 51.4 MB (51367231 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:stable-backports`
 
@@ -332,10 +343,12 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 -	Layers:
 	-	`sha256:6f0e36e9ed69ba010ef8245494daebe273ba99cf75d61281be08272297255c72`  
 		Last Modified: Thu, 28 Jul 2016 17:52:18 GMT  
-		Size: 51.4 MB (51367231 bytes)
+		Size: 51.4 MB (51367231 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8d501663c3d9dd32e249d241c99a626f29f9c5b3c762b8bd0696709267d054bd`  
 		Last Modified: Thu, 28 Jul 2016 17:52:35 GMT  
-		Size: 220.0 B
+		Size: 220.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:stretch`
 
@@ -365,7 +378,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:05a57567480c26a5f94fde377da4e0792f5e745a5d37e39f467a104fd9bd8942`  
 		Last Modified: Thu, 28 Jul 2016 17:53:00 GMT  
-		Size: 42.1 MB (42066618 bytes)
+		Size: 42.1 MB (42066618 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:testing`
 
@@ -395,7 +409,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:9cd73496e13f2dbf67a3c8b35b94572eb44bce093f8819dd7fc8e68ad24bb2f3`  
 		Last Modified: Thu, 28 Jul 2016 17:53:33 GMT  
-		Size: 42.1 MB (42066770 bytes)
+		Size: 42.1 MB (42066770 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:unstable`
 
@@ -425,7 +440,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:0259414f5a544fe64e774b001060935d4c7a813cecf88ec590e806be8423a1ac`  
 		Last Modified: Thu, 28 Jul 2016 17:54:08 GMT  
-		Size: 42.5 MB (42487628 bytes)
+		Size: 42.5 MB (42487628 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:7.11`
 
@@ -455,7 +471,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:7`
 
@@ -485,7 +502,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:wheezy`
 
@@ -515,7 +533,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:wheezy-backports`
 
@@ -547,10 +566,12 @@ RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.lis
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cc4402be4fc96d6dac557b20785cd6fa472d12705d1a52a56bdc1afa1f666051`  
 		Last Modified: Thu, 28 Jul 2016 17:55:05 GMT  
-		Size: 221.0 B
+		Size: 221.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:rc-buggy`
 
@@ -582,10 +603,12 @@ RUN awk '$1 ~ "^deb" { $3 = "rc-buggy"; print; exit }' /etc/apt/sources.list > /
 -	Layers:
 	-	`sha256:f8e784df59625b49bca4ce9f70150e254beed293dd99fc93da5039461894ad16`  
 		Last Modified: Thu, 28 Jul 2016 17:51:47 GMT  
-		Size: 42.5 MB (42487630 bytes)
+		Size: 42.5 MB (42487630 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:60e06159cb5160c852e3425d109df707b0a2405d672b30b08401fb221a775ada`  
 		Last Modified: Thu, 28 Jul 2016 17:55:19 GMT  
-		Size: 221.0 B
+		Size: 221.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:experimental`
 
@@ -617,7 +640,9 @@ RUN awk '$1 ~ "^deb" { $3 = "experimental"; print; exit }' /etc/apt/sources.list
 -	Layers:
 	-	`sha256:0259414f5a544fe64e774b001060935d4c7a813cecf88ec590e806be8423a1ac`  
 		Last Modified: Thu, 28 Jul 2016 17:54:08 GMT  
-		Size: 42.5 MB (42487628 bytes)
+		Size: 42.5 MB (42487628 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:994f0621b61274e6043c615f222d72687396b12e50cc9c4a685a5f891da69f5b`  
 		Last Modified: Thu, 28 Jul 2016 17:55:34 GMT  
-		Size: 218.0 B
+		Size: 218.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

@@ -32,10 +32,12 @@ ADD file:73ee62b144bac8d9d72c5dc76bf703a276337f870e3642587989993e1a174e52 in /
 -	Layers:
 	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
 		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+		Size: 32.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4ebd5f6e5b3a697ae43287a11a7a93c4b2b10745f6b3cce61e5d9b624ff0f303`  
 		Last Modified: Fri, 04 Mar 2016 17:44:26 GMT  
-		Size: 72.4 MB (72358211 bytes)
+		Size: 72.4 MB (72358211 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mageia:5`
 
@@ -64,7 +66,9 @@ ADD file:73ee62b144bac8d9d72c5dc76bf703a276337f870e3642587989993e1a174e52 in /
 -	Layers:
 	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
 		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+		Size: 32.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4ebd5f6e5b3a697ae43287a11a7a93c4b2b10745f6b3cce61e5d9b624ff0f303`  
 		Last Modified: Fri, 04 Mar 2016 17:44:26 GMT  
-		Size: 72.4 MB (72358211 bytes)
+		Size: 72.4 MB (72358211 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

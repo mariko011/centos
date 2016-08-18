@@ -44,7 +44,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:10ec637c060cc234336e0b7e33156e045372a32b501ba7d37ae7fea01a502b89`  
 		Last Modified: Wed, 20 Jul 2016 17:24:28 GMT  
-		Size: 97.8 MB (97837850 bytes)
+		Size: 97.8 MB (97837850 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `oraclelinux:7`
 
@@ -76,7 +77,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:10ec637c060cc234336e0b7e33156e045372a32b501ba7d37ae7fea01a502b89`  
 		Last Modified: Wed, 20 Jul 2016 17:24:28 GMT  
-		Size: 97.8 MB (97837850 bytes)
+		Size: 97.8 MB (97837850 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `oraclelinux:7.2`
 
@@ -108,7 +110,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:10ec637c060cc234336e0b7e33156e045372a32b501ba7d37ae7fea01a502b89`  
 		Last Modified: Wed, 20 Jul 2016 17:24:28 GMT  
-		Size: 97.8 MB (97837850 bytes)
+		Size: 97.8 MB (97837850 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `oraclelinux:7.1`
 
@@ -140,7 +143,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:bf4ac656fc3c4e949b1c7eab6a2dd5e0fab9888334b2127eb2741933670d95b0`  
 		Last Modified: Thu, 23 Jun 2016 17:02:34 GMT  
-		Size: 68.4 MB (68395887 bytes)
+		Size: 68.4 MB (68395887 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `oraclelinux:7.0`
 
@@ -172,7 +176,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:86e370ac1af838c2026b2d7204f9d6d3826b22e6ff1797d512d29bb074b94962`  
 		Last Modified: Fri, 17 Apr 2015 08:47:30 GMT  
-		Size: 70.3 MB (70256538 bytes)
+		Size: 70.3 MB (70256538 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `oraclelinux:6`
 
@@ -204,7 +209,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:25ffe460c30688254e42a9638c5c0fa5a119e72fd0c5c456ae440113cea31d15`  
 		Last Modified: Wed, 20 Jul 2016 17:26:00 GMT  
-		Size: 85.8 MB (85834730 bytes)
+		Size: 85.8 MB (85834730 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `oraclelinux:6.8`
 
@@ -236,7 +242,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:25ffe460c30688254e42a9638c5c0fa5a119e72fd0c5c456ae440113cea31d15`  
 		Last Modified: Wed, 20 Jul 2016 17:26:00 GMT  
-		Size: 85.8 MB (85834730 bytes)
+		Size: 85.8 MB (85834730 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `oraclelinux:6.7`
 
@@ -268,7 +275,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:07c9a9c79a23898a3d565e011582bf883391970b9c89a2ba4d29c5240d39e146`  
 		Last Modified: Thu, 23 Jun 2016 17:04:47 GMT  
-		Size: 85.1 MB (85145910 bytes)
+		Size: 85.1 MB (85145910 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `oraclelinux:6.6`
 
@@ -300,7 +308,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:f9e82477f96d8e7a23c45d6af9644f11c8a91db815b9062c851ef8ebc03e1b51`  
 		Last Modified: Thu, 23 Jun 2016 17:05:29 GMT  
-		Size: 64.4 MB (64372442 bytes)
+		Size: 64.4 MB (64372442 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `oraclelinux:5`
 
@@ -332,7 +341,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:47951a49a2be07f8b537e05c850031d1e0a7e57ddb21cdc27eb43bd1520c2cc7`  
 		Last Modified: Thu, 23 Jun 2016 17:06:16 GMT  
-		Size: 82.3 MB (82308722 bytes)
+		Size: 82.3 MB (82308722 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `oraclelinux:5.11`
 
@@ -364,4 +374,5 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:47951a49a2be07f8b537e05c850031d1e0a7e57ddb21cdc27eb43bd1520c2cc7`  
 		Last Modified: Thu, 23 Jun 2016 17:06:16 GMT  
-		Size: 82.3 MB (82308722 bytes)
+		Size: 82.3 MB (82308722 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

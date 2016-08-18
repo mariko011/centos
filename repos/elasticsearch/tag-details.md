@@ -107,46 +107,60 @@ CMD ["elasticsearch"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:587e958702ba2b8b7e2284775b712708a94c4bba8eb517f0336a8e59c7f74c15`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 807.9 KB (807928 bytes)
+		Size: 807.9 KB (807928 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2d29026b186e440fe444c687d5eb0768d581a0b02b03483ec6033693b382e04`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 1.4 KB (1447 bytes)
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:add2fca6275767e374cf3cfc8578fec2b6472f5aa11fb3a8982ccf6c3044d3bc`  
 		Last Modified: Thu, 11 Aug 2016 17:20:35 GMT  
-		Size: 226.0 B
+		Size: 226.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e70a29d372c4ae26d6573f5c462f8b08b36829b59d1bb18702cfeed640551c29`  
 		Last Modified: Thu, 11 Aug 2016 17:20:40 GMT  
-		Size: 27.1 MB (27098812 bytes)
+		Size: 27.1 MB (27098812 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e18a3e4c0e5626ce8ec0f3b985359a6646379abf0005e7aac96c0d012c8dc232`  
 		Last Modified: Thu, 11 Aug 2016 17:20:35 GMT  
-		Size: 214.0 B
+		Size: 214.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2afdcec06b271e100b201feaf6d3f5fbe2b220cd7c4f470387c2874298fbf93c`  
 		Last Modified: Thu, 11 Aug 2016 17:20:35 GMT  
-		Size: 497.0 B
+		Size: 497.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2e15438cb27ba78c60225c04f53083fced996f43be6a62074c38f59a741c2ab4`  
 		Last Modified: Thu, 11 Aug 2016 17:20:36 GMT  
-		Size: 469.0 B
+		Size: 469.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:1.5`
 
@@ -231,46 +245,60 @@ CMD ["elasticsearch"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:587e958702ba2b8b7e2284775b712708a94c4bba8eb517f0336a8e59c7f74c15`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 807.9 KB (807928 bytes)
+		Size: 807.9 KB (807928 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2d29026b186e440fe444c687d5eb0768d581a0b02b03483ec6033693b382e04`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 1.4 KB (1447 bytes)
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:add2fca6275767e374cf3cfc8578fec2b6472f5aa11fb3a8982ccf6c3044d3bc`  
 		Last Modified: Thu, 11 Aug 2016 17:20:35 GMT  
-		Size: 226.0 B
+		Size: 226.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e70a29d372c4ae26d6573f5c462f8b08b36829b59d1bb18702cfeed640551c29`  
 		Last Modified: Thu, 11 Aug 2016 17:20:40 GMT  
-		Size: 27.1 MB (27098812 bytes)
+		Size: 27.1 MB (27098812 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e18a3e4c0e5626ce8ec0f3b985359a6646379abf0005e7aac96c0d012c8dc232`  
 		Last Modified: Thu, 11 Aug 2016 17:20:35 GMT  
-		Size: 214.0 B
+		Size: 214.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2afdcec06b271e100b201feaf6d3f5fbe2b220cd7c4f470387c2874298fbf93c`  
 		Last Modified: Thu, 11 Aug 2016 17:20:35 GMT  
-		Size: 497.0 B
+		Size: 497.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2e15438cb27ba78c60225c04f53083fced996f43be6a62074c38f59a741c2ab4`  
 		Last Modified: Thu, 11 Aug 2016 17:20:36 GMT  
-		Size: 469.0 B
+		Size: 469.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:1.6.2`
 
@@ -355,46 +383,60 @@ CMD ["elasticsearch"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:587e958702ba2b8b7e2284775b712708a94c4bba8eb517f0336a8e59c7f74c15`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 807.9 KB (807928 bytes)
+		Size: 807.9 KB (807928 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2d29026b186e440fe444c687d5eb0768d581a0b02b03483ec6033693b382e04`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 1.4 KB (1447 bytes)
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:19bc0a36713068dea1219ae368872f0bec6e1fd439c4812974cd8a64ab2d2343`  
 		Last Modified: Thu, 11 Aug 2016 17:26:45 GMT  
-		Size: 226.0 B
+		Size: 226.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8d3a192529b39d8f56b5a0aa214160fa53caf9dae7fd0dcd1b06d3531979784d`  
 		Last Modified: Thu, 11 Aug 2016 17:26:49 GMT  
-		Size: 27.4 MB (27420722 bytes)
+		Size: 27.4 MB (27420722 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:56335ed8ce2bc88fdddd278fdce11a89388c192b72b063afe5d93862ee1dd00b`  
 		Last Modified: Thu, 11 Aug 2016 17:26:45 GMT  
-		Size: 216.0 B
+		Size: 216.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:67ab34a46ee3873cb21abc7113647ee47f94dfba820b07879579a66d01e6cfa9`  
 		Last Modified: Thu, 11 Aug 2016 17:26:45 GMT  
-		Size: 496.0 B
+		Size: 496.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7a14051f31e9f85e1a8bf28509855eff3a8d82ab93f7986aef8be418525922e1`  
 		Last Modified: Thu, 11 Aug 2016 17:26:45 GMT  
-		Size: 467.0 B
+		Size: 467.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:1.6`
 
@@ -479,46 +521,60 @@ CMD ["elasticsearch"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:587e958702ba2b8b7e2284775b712708a94c4bba8eb517f0336a8e59c7f74c15`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 807.9 KB (807928 bytes)
+		Size: 807.9 KB (807928 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2d29026b186e440fe444c687d5eb0768d581a0b02b03483ec6033693b382e04`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 1.4 KB (1447 bytes)
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:19bc0a36713068dea1219ae368872f0bec6e1fd439c4812974cd8a64ab2d2343`  
 		Last Modified: Thu, 11 Aug 2016 17:26:45 GMT  
-		Size: 226.0 B
+		Size: 226.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8d3a192529b39d8f56b5a0aa214160fa53caf9dae7fd0dcd1b06d3531979784d`  
 		Last Modified: Thu, 11 Aug 2016 17:26:49 GMT  
-		Size: 27.4 MB (27420722 bytes)
+		Size: 27.4 MB (27420722 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:56335ed8ce2bc88fdddd278fdce11a89388c192b72b063afe5d93862ee1dd00b`  
 		Last Modified: Thu, 11 Aug 2016 17:26:45 GMT  
-		Size: 216.0 B
+		Size: 216.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:67ab34a46ee3873cb21abc7113647ee47f94dfba820b07879579a66d01e6cfa9`  
 		Last Modified: Thu, 11 Aug 2016 17:26:45 GMT  
-		Size: 496.0 B
+		Size: 496.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7a14051f31e9f85e1a8bf28509855eff3a8d82ab93f7986aef8be418525922e1`  
 		Last Modified: Thu, 11 Aug 2016 17:26:45 GMT  
-		Size: 467.0 B
+		Size: 467.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:1.7.5`
 
@@ -603,46 +659,60 @@ CMD ["elasticsearch"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:587e958702ba2b8b7e2284775b712708a94c4bba8eb517f0336a8e59c7f74c15`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 807.9 KB (807928 bytes)
+		Size: 807.9 KB (807928 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2d29026b186e440fe444c687d5eb0768d581a0b02b03483ec6033693b382e04`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 1.4 KB (1447 bytes)
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b2360228c7a7634c94685b17518c67282630be55e91240090f092664b4f695b3`  
 		Last Modified: Thu, 11 Aug 2016 17:28:31 GMT  
-		Size: 226.0 B
+		Size: 226.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d2161da95e41149774f4a3e3e96d8045c92a5516cbefb2ffcf79ddec6792c07c`  
 		Last Modified: Thu, 11 Aug 2016 17:28:35 GMT  
-		Size: 27.4 MB (27422223 bytes)
+		Size: 27.4 MB (27422223 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a0fd2ab062b08b006838788c1cc0abade3b5481c35d9cf7bc09cefbf33b5b05`  
 		Last Modified: Thu, 11 Aug 2016 17:28:31 GMT  
-		Size: 215.0 B
+		Size: 215.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9302986d868f0c1d76b53ef6746b304f239dbd84abfc25e7ec2afb1f3ffdf870`  
 		Last Modified: Thu, 11 Aug 2016 17:28:32 GMT  
-		Size: 494.0 B
+		Size: 494.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a24c9e73e0f2bb630bb9e3e9bce895f2c45edc9b47ee6c67378e4ad51a2f6849`  
 		Last Modified: Thu, 11 Aug 2016 17:28:31 GMT  
-		Size: 469.0 B
+		Size: 469.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:1.7`
 
@@ -727,46 +797,60 @@ CMD ["elasticsearch"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:587e958702ba2b8b7e2284775b712708a94c4bba8eb517f0336a8e59c7f74c15`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 807.9 KB (807928 bytes)
+		Size: 807.9 KB (807928 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2d29026b186e440fe444c687d5eb0768d581a0b02b03483ec6033693b382e04`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 1.4 KB (1447 bytes)
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b2360228c7a7634c94685b17518c67282630be55e91240090f092664b4f695b3`  
 		Last Modified: Thu, 11 Aug 2016 17:28:31 GMT  
-		Size: 226.0 B
+		Size: 226.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d2161da95e41149774f4a3e3e96d8045c92a5516cbefb2ffcf79ddec6792c07c`  
 		Last Modified: Thu, 11 Aug 2016 17:28:35 GMT  
-		Size: 27.4 MB (27422223 bytes)
+		Size: 27.4 MB (27422223 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a0fd2ab062b08b006838788c1cc0abade3b5481c35d9cf7bc09cefbf33b5b05`  
 		Last Modified: Thu, 11 Aug 2016 17:28:31 GMT  
-		Size: 215.0 B
+		Size: 215.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9302986d868f0c1d76b53ef6746b304f239dbd84abfc25e7ec2afb1f3ffdf870`  
 		Last Modified: Thu, 11 Aug 2016 17:28:32 GMT  
-		Size: 494.0 B
+		Size: 494.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a24c9e73e0f2bb630bb9e3e9bce895f2c45edc9b47ee6c67378e4ad51a2f6849`  
 		Last Modified: Thu, 11 Aug 2016 17:28:31 GMT  
-		Size: 469.0 B
+		Size: 469.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:1`
 
@@ -851,46 +935,60 @@ CMD ["elasticsearch"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:587e958702ba2b8b7e2284775b712708a94c4bba8eb517f0336a8e59c7f74c15`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 807.9 KB (807928 bytes)
+		Size: 807.9 KB (807928 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2d29026b186e440fe444c687d5eb0768d581a0b02b03483ec6033693b382e04`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 1.4 KB (1447 bytes)
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b2360228c7a7634c94685b17518c67282630be55e91240090f092664b4f695b3`  
 		Last Modified: Thu, 11 Aug 2016 17:28:31 GMT  
-		Size: 226.0 B
+		Size: 226.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d2161da95e41149774f4a3e3e96d8045c92a5516cbefb2ffcf79ddec6792c07c`  
 		Last Modified: Thu, 11 Aug 2016 17:28:35 GMT  
-		Size: 27.4 MB (27422223 bytes)
+		Size: 27.4 MB (27422223 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a0fd2ab062b08b006838788c1cc0abade3b5481c35d9cf7bc09cefbf33b5b05`  
 		Last Modified: Thu, 11 Aug 2016 17:28:31 GMT  
-		Size: 215.0 B
+		Size: 215.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9302986d868f0c1d76b53ef6746b304f239dbd84abfc25e7ec2afb1f3ffdf870`  
 		Last Modified: Thu, 11 Aug 2016 17:28:32 GMT  
-		Size: 494.0 B
+		Size: 494.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a24c9e73e0f2bb630bb9e3e9bce895f2c45edc9b47ee6c67378e4ad51a2f6849`  
 		Last Modified: Thu, 11 Aug 2016 17:28:31 GMT  
-		Size: 469.0 B
+		Size: 469.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:2.0.2`
 
@@ -975,46 +1073,60 @@ CMD ["elasticsearch"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:587e958702ba2b8b7e2284775b712708a94c4bba8eb517f0336a8e59c7f74c15`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 807.9 KB (807928 bytes)
+		Size: 807.9 KB (807928 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2d29026b186e440fe444c687d5eb0768d581a0b02b03483ec6033693b382e04`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 1.4 KB (1447 bytes)
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:31e0b1983841826e79face586221ab71e9c0d6a4b60912cb6f268b858c40c9d4`  
 		Last Modified: Thu, 11 Aug 2016 17:30:28 GMT  
-		Size: 226.0 B
+		Size: 226.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bcc8d6526d05cb353895bec0f355175a06d8976f53d1e870b92eed1648edaa87`  
 		Last Modified: Thu, 11 Aug 2016 17:30:33 GMT  
-		Size: 28.6 MB (28583445 bytes)
+		Size: 28.6 MB (28583445 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:96d61fa6bc9becbc0d283605b90b4e968b9d45a2591cef397d4d52e78d5c9cb0`  
 		Last Modified: Thu, 11 Aug 2016 17:30:28 GMT  
-		Size: 216.0 B
+		Size: 216.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bbd26cd8247998337a31c37280847cdefcdad67fd89abe634357695459874c9d`  
 		Last Modified: Thu, 11 Aug 2016 17:30:28 GMT  
-		Size: 539.0 B
+		Size: 539.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6a41ac29fdf90152e37dfb71110c17369879de4b1982cfa650e0780ae685e2c3`  
 		Last Modified: Thu, 11 Aug 2016 17:30:28 GMT  
-		Size: 469.0 B
+		Size: 469.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:2.0`
 
@@ -1099,46 +1211,60 @@ CMD ["elasticsearch"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:587e958702ba2b8b7e2284775b712708a94c4bba8eb517f0336a8e59c7f74c15`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 807.9 KB (807928 bytes)
+		Size: 807.9 KB (807928 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2d29026b186e440fe444c687d5eb0768d581a0b02b03483ec6033693b382e04`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 1.4 KB (1447 bytes)
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:31e0b1983841826e79face586221ab71e9c0d6a4b60912cb6f268b858c40c9d4`  
 		Last Modified: Thu, 11 Aug 2016 17:30:28 GMT  
-		Size: 226.0 B
+		Size: 226.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bcc8d6526d05cb353895bec0f355175a06d8976f53d1e870b92eed1648edaa87`  
 		Last Modified: Thu, 11 Aug 2016 17:30:33 GMT  
-		Size: 28.6 MB (28583445 bytes)
+		Size: 28.6 MB (28583445 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:96d61fa6bc9becbc0d283605b90b4e968b9d45a2591cef397d4d52e78d5c9cb0`  
 		Last Modified: Thu, 11 Aug 2016 17:30:28 GMT  
-		Size: 216.0 B
+		Size: 216.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bbd26cd8247998337a31c37280847cdefcdad67fd89abe634357695459874c9d`  
 		Last Modified: Thu, 11 Aug 2016 17:30:28 GMT  
-		Size: 539.0 B
+		Size: 539.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6a41ac29fdf90152e37dfb71110c17369879de4b1982cfa650e0780ae685e2c3`  
 		Last Modified: Thu, 11 Aug 2016 17:30:28 GMT  
-		Size: 469.0 B
+		Size: 469.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:2.1.2`
 
@@ -1223,46 +1349,60 @@ CMD ["elasticsearch"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:587e958702ba2b8b7e2284775b712708a94c4bba8eb517f0336a8e59c7f74c15`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 807.9 KB (807928 bytes)
+		Size: 807.9 KB (807928 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2d29026b186e440fe444c687d5eb0768d581a0b02b03483ec6033693b382e04`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 1.4 KB (1447 bytes)
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:35cd8559b0c6a587abf23f8553c50f1d6cc63cbf36c248909d7fd1639a942384`  
 		Last Modified: Thu, 11 Aug 2016 17:32:15 GMT  
-		Size: 226.0 B
+		Size: 226.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0dd234d8e5e69d9c95e9531bbe1036310edfe0fd952226af77928e20c8bbc1e8`  
 		Last Modified: Thu, 11 Aug 2016 17:32:18 GMT  
-		Size: 29.0 MB (28998755 bytes)
+		Size: 29.0 MB (28998755 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a25dbd992d686fbcceea82c5d19352e03bf659a0c7f8144c79607521ecc258b9`  
 		Last Modified: Thu, 11 Aug 2016 17:32:14 GMT  
-		Size: 215.0 B
+		Size: 215.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7365552543c73ffeb0e6231b3997838c16a58e30ce260c2cd94c2207ff9baa0a`  
 		Last Modified: Thu, 11 Aug 2016 17:32:14 GMT  
-		Size: 540.0 B
+		Size: 540.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:81a5a14640c01990920e5a6a4c666ddc233bb1e48837ee65dc0d0bb7351efe5c`  
 		Last Modified: Thu, 11 Aug 2016 17:32:15 GMT  
-		Size: 469.0 B
+		Size: 469.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:2.1`
 
@@ -1347,46 +1487,60 @@ CMD ["elasticsearch"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:587e958702ba2b8b7e2284775b712708a94c4bba8eb517f0336a8e59c7f74c15`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 807.9 KB (807928 bytes)
+		Size: 807.9 KB (807928 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2d29026b186e440fe444c687d5eb0768d581a0b02b03483ec6033693b382e04`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 1.4 KB (1447 bytes)
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:35cd8559b0c6a587abf23f8553c50f1d6cc63cbf36c248909d7fd1639a942384`  
 		Last Modified: Thu, 11 Aug 2016 17:32:15 GMT  
-		Size: 226.0 B
+		Size: 226.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0dd234d8e5e69d9c95e9531bbe1036310edfe0fd952226af77928e20c8bbc1e8`  
 		Last Modified: Thu, 11 Aug 2016 17:32:18 GMT  
-		Size: 29.0 MB (28998755 bytes)
+		Size: 29.0 MB (28998755 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a25dbd992d686fbcceea82c5d19352e03bf659a0c7f8144c79607521ecc258b9`  
 		Last Modified: Thu, 11 Aug 2016 17:32:14 GMT  
-		Size: 215.0 B
+		Size: 215.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7365552543c73ffeb0e6231b3997838c16a58e30ce260c2cd94c2207ff9baa0a`  
 		Last Modified: Thu, 11 Aug 2016 17:32:14 GMT  
-		Size: 540.0 B
+		Size: 540.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:81a5a14640c01990920e5a6a4c666ddc233bb1e48837ee65dc0d0bb7351efe5c`  
 		Last Modified: Thu, 11 Aug 2016 17:32:15 GMT  
-		Size: 469.0 B
+		Size: 469.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:2.2.2`
 
@@ -1471,46 +1625,60 @@ CMD ["elasticsearch"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:587e958702ba2b8b7e2284775b712708a94c4bba8eb517f0336a8e59c7f74c15`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 807.9 KB (807928 bytes)
+		Size: 807.9 KB (807928 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2d29026b186e440fe444c687d5eb0768d581a0b02b03483ec6033693b382e04`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 1.4 KB (1447 bytes)
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:08f6aacd7b083f3fcdd8505b8313abb30dd0083bc7bfee6cff1cdd5f9ddf400a`  
 		Last Modified: Thu, 11 Aug 2016 17:34:02 GMT  
-		Size: 225.0 B
+		Size: 225.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a2f0ac98d3efe4b1791751533814bebf25ed85d414380d317ea3efeb165867c3`  
 		Last Modified: Thu, 11 Aug 2016 17:34:08 GMT  
-		Size: 29.4 MB (29415327 bytes)
+		Size: 29.4 MB (29415327 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ccc63ef472ad139562cbd400e5b67d2eb031b8eba3cdb3b47f68d1aecd5d1a43`  
 		Last Modified: Thu, 11 Aug 2016 17:34:02 GMT  
-		Size: 215.0 B
+		Size: 215.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a235cd019d75002718d319b6337dfcf67b3bbc2b68b53fd8b32b64d8d1241f7e`  
 		Last Modified: Thu, 11 Aug 2016 17:34:02 GMT  
-		Size: 539.0 B
+		Size: 539.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:afd8bd9d98747e0d17cbacc9e505c506f710d2cc521426b107124d2d5bbd5786`  
 		Last Modified: Thu, 11 Aug 2016 17:34:02 GMT  
-		Size: 469.0 B
+		Size: 469.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:2.2`
 
@@ -1595,46 +1763,60 @@ CMD ["elasticsearch"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:587e958702ba2b8b7e2284775b712708a94c4bba8eb517f0336a8e59c7f74c15`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 807.9 KB (807928 bytes)
+		Size: 807.9 KB (807928 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2d29026b186e440fe444c687d5eb0768d581a0b02b03483ec6033693b382e04`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 1.4 KB (1447 bytes)
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:08f6aacd7b083f3fcdd8505b8313abb30dd0083bc7bfee6cff1cdd5f9ddf400a`  
 		Last Modified: Thu, 11 Aug 2016 17:34:02 GMT  
-		Size: 225.0 B
+		Size: 225.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a2f0ac98d3efe4b1791751533814bebf25ed85d414380d317ea3efeb165867c3`  
 		Last Modified: Thu, 11 Aug 2016 17:34:08 GMT  
-		Size: 29.4 MB (29415327 bytes)
+		Size: 29.4 MB (29415327 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ccc63ef472ad139562cbd400e5b67d2eb031b8eba3cdb3b47f68d1aecd5d1a43`  
 		Last Modified: Thu, 11 Aug 2016 17:34:02 GMT  
-		Size: 215.0 B
+		Size: 215.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a235cd019d75002718d319b6337dfcf67b3bbc2b68b53fd8b32b64d8d1241f7e`  
 		Last Modified: Thu, 11 Aug 2016 17:34:02 GMT  
-		Size: 539.0 B
+		Size: 539.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:afd8bd9d98747e0d17cbacc9e505c506f710d2cc521426b107124d2d5bbd5786`  
 		Last Modified: Thu, 11 Aug 2016 17:34:02 GMT  
-		Size: 469.0 B
+		Size: 469.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:2.3.5`
 
@@ -1719,46 +1901,60 @@ CMD ["elasticsearch"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:587e958702ba2b8b7e2284775b712708a94c4bba8eb517f0336a8e59c7f74c15`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 807.9 KB (807928 bytes)
+		Size: 807.9 KB (807928 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2d29026b186e440fe444c687d5eb0768d581a0b02b03483ec6033693b382e04`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 1.4 KB (1447 bytes)
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:09f7dfb6af7f3243ceb5d9443eece51df5808f5d5b5515c267dcd751810c54e6`  
 		Last Modified: Thu, 11 Aug 2016 17:22:25 GMT  
-		Size: 224.0 B
+		Size: 224.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8fe5922f9eb7df157e294364b9f6492de20596086264b73e3523a8befabfc60d`  
 		Last Modified: Thu, 11 Aug 2016 17:22:28 GMT  
-		Size: 27.5 MB (27539239 bytes)
+		Size: 27.5 MB (27539239 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:df7240b728661d980773e1634be7268ace74150dde2311a5c1f5ad2f49a6c923`  
 		Last Modified: Thu, 11 Aug 2016 17:22:25 GMT  
-		Size: 214.0 B
+		Size: 214.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ebd5ba30c6969ccd2ae80a2ba626c1f84a07dce960fc17bf622f9cddbfc987db`  
 		Last Modified: Thu, 11 Aug 2016 17:22:25 GMT  
-		Size: 540.0 B
+		Size: 540.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2995da3129b57c4c61fc8ab5665510dcc0c83854ebc43161b677808273c14830`  
 		Last Modified: Thu, 11 Aug 2016 17:22:25 GMT  
-		Size: 470.0 B
+		Size: 470.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:2.3`
 
@@ -1843,46 +2039,60 @@ CMD ["elasticsearch"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:587e958702ba2b8b7e2284775b712708a94c4bba8eb517f0336a8e59c7f74c15`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 807.9 KB (807928 bytes)
+		Size: 807.9 KB (807928 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2d29026b186e440fe444c687d5eb0768d581a0b02b03483ec6033693b382e04`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 1.4 KB (1447 bytes)
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:09f7dfb6af7f3243ceb5d9443eece51df5808f5d5b5515c267dcd751810c54e6`  
 		Last Modified: Thu, 11 Aug 2016 17:22:25 GMT  
-		Size: 224.0 B
+		Size: 224.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8fe5922f9eb7df157e294364b9f6492de20596086264b73e3523a8befabfc60d`  
 		Last Modified: Thu, 11 Aug 2016 17:22:28 GMT  
-		Size: 27.5 MB (27539239 bytes)
+		Size: 27.5 MB (27539239 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:df7240b728661d980773e1634be7268ace74150dde2311a5c1f5ad2f49a6c923`  
 		Last Modified: Thu, 11 Aug 2016 17:22:25 GMT  
-		Size: 214.0 B
+		Size: 214.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ebd5ba30c6969ccd2ae80a2ba626c1f84a07dce960fc17bf622f9cddbfc987db`  
 		Last Modified: Thu, 11 Aug 2016 17:22:25 GMT  
-		Size: 540.0 B
+		Size: 540.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2995da3129b57c4c61fc8ab5665510dcc0c83854ebc43161b677808273c14830`  
 		Last Modified: Thu, 11 Aug 2016 17:22:25 GMT  
-		Size: 470.0 B
+		Size: 470.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:2`
 
@@ -1967,46 +2177,60 @@ CMD ["elasticsearch"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:587e958702ba2b8b7e2284775b712708a94c4bba8eb517f0336a8e59c7f74c15`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 807.9 KB (807928 bytes)
+		Size: 807.9 KB (807928 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2d29026b186e440fe444c687d5eb0768d581a0b02b03483ec6033693b382e04`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 1.4 KB (1447 bytes)
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:09f7dfb6af7f3243ceb5d9443eece51df5808f5d5b5515c267dcd751810c54e6`  
 		Last Modified: Thu, 11 Aug 2016 17:22:25 GMT  
-		Size: 224.0 B
+		Size: 224.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8fe5922f9eb7df157e294364b9f6492de20596086264b73e3523a8befabfc60d`  
 		Last Modified: Thu, 11 Aug 2016 17:22:28 GMT  
-		Size: 27.5 MB (27539239 bytes)
+		Size: 27.5 MB (27539239 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:df7240b728661d980773e1634be7268ace74150dde2311a5c1f5ad2f49a6c923`  
 		Last Modified: Thu, 11 Aug 2016 17:22:25 GMT  
-		Size: 214.0 B
+		Size: 214.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ebd5ba30c6969ccd2ae80a2ba626c1f84a07dce960fc17bf622f9cddbfc987db`  
 		Last Modified: Thu, 11 Aug 2016 17:22:25 GMT  
-		Size: 540.0 B
+		Size: 540.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2995da3129b57c4c61fc8ab5665510dcc0c83854ebc43161b677808273c14830`  
 		Last Modified: Thu, 11 Aug 2016 17:22:25 GMT  
-		Size: 470.0 B
+		Size: 470.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:latest`
 
@@ -2091,46 +2315,60 @@ CMD ["elasticsearch"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:587e958702ba2b8b7e2284775b712708a94c4bba8eb517f0336a8e59c7f74c15`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 807.9 KB (807928 bytes)
+		Size: 807.9 KB (807928 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2d29026b186e440fe444c687d5eb0768d581a0b02b03483ec6033693b382e04`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 1.4 KB (1447 bytes)
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:09f7dfb6af7f3243ceb5d9443eece51df5808f5d5b5515c267dcd751810c54e6`  
 		Last Modified: Thu, 11 Aug 2016 17:22:25 GMT  
-		Size: 224.0 B
+		Size: 224.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8fe5922f9eb7df157e294364b9f6492de20596086264b73e3523a8befabfc60d`  
 		Last Modified: Thu, 11 Aug 2016 17:22:28 GMT  
-		Size: 27.5 MB (27539239 bytes)
+		Size: 27.5 MB (27539239 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:df7240b728661d980773e1634be7268ace74150dde2311a5c1f5ad2f49a6c923`  
 		Last Modified: Thu, 11 Aug 2016 17:22:25 GMT  
-		Size: 214.0 B
+		Size: 214.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ebd5ba30c6969ccd2ae80a2ba626c1f84a07dce960fc17bf622f9cddbfc987db`  
 		Last Modified: Thu, 11 Aug 2016 17:22:25 GMT  
-		Size: 540.0 B
+		Size: 540.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2995da3129b57c4c61fc8ab5665510dcc0c83854ebc43161b677808273c14830`  
 		Last Modified: Thu, 11 Aug 2016 17:22:25 GMT  
-		Size: 470.0 B
+		Size: 470.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:5.0.0-alpha5`
 
@@ -2215,46 +2453,60 @@ CMD ["elasticsearch"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:587e958702ba2b8b7e2284775b712708a94c4bba8eb517f0336a8e59c7f74c15`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 807.9 KB (807928 bytes)
+		Size: 807.9 KB (807928 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2d29026b186e440fe444c687d5eb0768d581a0b02b03483ec6033693b382e04`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 1.4 KB (1447 bytes)
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c86de0a059936f9267b80414fc6a033f111b0226f1104691fffed7cbe0a22a13`  
 		Last Modified: Thu, 11 Aug 2016 17:24:34 GMT  
-		Size: 228.0 B
+		Size: 228.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:95b9c6422e15c1b9fe277b5af119b79798990b90112d4b71ef600cf334997c8f`  
 		Last Modified: Thu, 11 Aug 2016 17:24:39 GMT  
-		Size: 32.2 MB (32212758 bytes)
+		Size: 32.2 MB (32212758 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e33fbe434bfc76f10af8d4820d8743de01f4e6988713551d69d54a71b981766c`  
 		Last Modified: Thu, 11 Aug 2016 17:24:34 GMT  
-		Size: 213.0 B
+		Size: 213.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9cf37789f94a235c86289d19e08a0639d6d673a94de7c05edf3af9632635f105`  
 		Last Modified: Thu, 11 Aug 2016 17:24:35 GMT  
-		Size: 640.0 B
+		Size: 640.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:61a208bcb4d550743da2bc80847f73a81d648a489fbd3684de070f5b6066e090`  
 		Last Modified: Thu, 11 Aug 2016 17:24:34 GMT  
-		Size: 469.0 B
+		Size: 469.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:5.0.0`
 
@@ -2339,46 +2591,60 @@ CMD ["elasticsearch"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:587e958702ba2b8b7e2284775b712708a94c4bba8eb517f0336a8e59c7f74c15`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 807.9 KB (807928 bytes)
+		Size: 807.9 KB (807928 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2d29026b186e440fe444c687d5eb0768d581a0b02b03483ec6033693b382e04`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 1.4 KB (1447 bytes)
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c86de0a059936f9267b80414fc6a033f111b0226f1104691fffed7cbe0a22a13`  
 		Last Modified: Thu, 11 Aug 2016 17:24:34 GMT  
-		Size: 228.0 B
+		Size: 228.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:95b9c6422e15c1b9fe277b5af119b79798990b90112d4b71ef600cf334997c8f`  
 		Last Modified: Thu, 11 Aug 2016 17:24:39 GMT  
-		Size: 32.2 MB (32212758 bytes)
+		Size: 32.2 MB (32212758 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e33fbe434bfc76f10af8d4820d8743de01f4e6988713551d69d54a71b981766c`  
 		Last Modified: Thu, 11 Aug 2016 17:24:34 GMT  
-		Size: 213.0 B
+		Size: 213.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9cf37789f94a235c86289d19e08a0639d6d673a94de7c05edf3af9632635f105`  
 		Last Modified: Thu, 11 Aug 2016 17:24:35 GMT  
-		Size: 640.0 B
+		Size: 640.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:61a208bcb4d550743da2bc80847f73a81d648a489fbd3684de070f5b6066e090`  
 		Last Modified: Thu, 11 Aug 2016 17:24:34 GMT  
-		Size: 469.0 B
+		Size: 469.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:5.0`
 
@@ -2463,46 +2729,60 @@ CMD ["elasticsearch"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:587e958702ba2b8b7e2284775b712708a94c4bba8eb517f0336a8e59c7f74c15`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 807.9 KB (807928 bytes)
+		Size: 807.9 KB (807928 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2d29026b186e440fe444c687d5eb0768d581a0b02b03483ec6033693b382e04`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 1.4 KB (1447 bytes)
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c86de0a059936f9267b80414fc6a033f111b0226f1104691fffed7cbe0a22a13`  
 		Last Modified: Thu, 11 Aug 2016 17:24:34 GMT  
-		Size: 228.0 B
+		Size: 228.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:95b9c6422e15c1b9fe277b5af119b79798990b90112d4b71ef600cf334997c8f`  
 		Last Modified: Thu, 11 Aug 2016 17:24:39 GMT  
-		Size: 32.2 MB (32212758 bytes)
+		Size: 32.2 MB (32212758 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e33fbe434bfc76f10af8d4820d8743de01f4e6988713551d69d54a71b981766c`  
 		Last Modified: Thu, 11 Aug 2016 17:24:34 GMT  
-		Size: 213.0 B
+		Size: 213.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9cf37789f94a235c86289d19e08a0639d6d673a94de7c05edf3af9632635f105`  
 		Last Modified: Thu, 11 Aug 2016 17:24:35 GMT  
-		Size: 640.0 B
+		Size: 640.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:61a208bcb4d550743da2bc80847f73a81d648a489fbd3684de070f5b6066e090`  
 		Last Modified: Thu, 11 Aug 2016 17:24:34 GMT  
-		Size: 469.0 B
+		Size: 469.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:5`
 
@@ -2587,43 +2867,57 @@ CMD ["elasticsearch"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:587e958702ba2b8b7e2284775b712708a94c4bba8eb517f0336a8e59c7f74c15`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 807.9 KB (807928 bytes)
+		Size: 807.9 KB (807928 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f2d29026b186e440fe444c687d5eb0768d581a0b02b03483ec6033693b382e04`  
 		Last Modified: Thu, 11 Aug 2016 17:20:39 GMT  
-		Size: 1.4 KB (1447 bytes)
+		Size: 1.4 KB (1447 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c86de0a059936f9267b80414fc6a033f111b0226f1104691fffed7cbe0a22a13`  
 		Last Modified: Thu, 11 Aug 2016 17:24:34 GMT  
-		Size: 228.0 B
+		Size: 228.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:95b9c6422e15c1b9fe277b5af119b79798990b90112d4b71ef600cf334997c8f`  
 		Last Modified: Thu, 11 Aug 2016 17:24:39 GMT  
-		Size: 32.2 MB (32212758 bytes)
+		Size: 32.2 MB (32212758 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e33fbe434bfc76f10af8d4820d8743de01f4e6988713551d69d54a71b981766c`  
 		Last Modified: Thu, 11 Aug 2016 17:24:34 GMT  
-		Size: 213.0 B
+		Size: 213.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9cf37789f94a235c86289d19e08a0639d6d673a94de7c05edf3af9632635f105`  
 		Last Modified: Thu, 11 Aug 2016 17:24:35 GMT  
-		Size: 640.0 B
+		Size: 640.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:61a208bcb4d550743da2bc80847f73a81d648a489fbd3684de070f5b6066e090`  
 		Last Modified: Thu, 11 Aug 2016 17:24:34 GMT  
-		Size: 469.0 B
+		Size: 469.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

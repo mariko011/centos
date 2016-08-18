@@ -59,22 +59,28 @@ CMD ["chronograf"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e29f2fd1d5b59bca4e74fd78afeb7b2e063e3fd89bf33bdf5487b5146275e46b`  
 		Last Modified: Thu, 28 Jul 2016 22:14:58 GMT  
-		Size: 6.8 KB (6754 bytes)
+		Size: 6.8 KB (6754 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:06161d75e46cc6418f229d31b08faafc23751fb0fd6b17d2173d708b079336ac`  
 		Last Modified: Thu, 28 Jul 2016 22:15:00 GMT  
-		Size: 4.0 MB (3998634 bytes)
+		Size: 4.0 MB (3998634 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4e1a880e53e1a4e42900cf668d6a855ff403c31985cbc1d8798b2ae9fbc48e51`  
 		Last Modified: Thu, 28 Jul 2016 22:14:58 GMT  
-		Size: 209.0 B
+		Size: 209.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7a7e4c4d979651dd0d1820571d5ad86d4e1d5088d416970c9b6c23f743726984`  
 		Last Modified: Thu, 28 Jul 2016 22:14:58 GMT  
-		Size: 244.0 B
+		Size: 244.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `chronograf:0.12.0`
 
@@ -127,22 +133,28 @@ CMD ["chronograf"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e29f2fd1d5b59bca4e74fd78afeb7b2e063e3fd89bf33bdf5487b5146275e46b`  
 		Last Modified: Thu, 28 Jul 2016 22:14:58 GMT  
-		Size: 6.8 KB (6754 bytes)
+		Size: 6.8 KB (6754 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:06161d75e46cc6418f229d31b08faafc23751fb0fd6b17d2173d708b079336ac`  
 		Last Modified: Thu, 28 Jul 2016 22:15:00 GMT  
-		Size: 4.0 MB (3998634 bytes)
+		Size: 4.0 MB (3998634 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4e1a880e53e1a4e42900cf668d6a855ff403c31985cbc1d8798b2ae9fbc48e51`  
 		Last Modified: Thu, 28 Jul 2016 22:14:58 GMT  
-		Size: 209.0 B
+		Size: 209.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7a7e4c4d979651dd0d1820571d5ad86d4e1d5088d416970c9b6c23f743726984`  
 		Last Modified: Thu, 28 Jul 2016 22:14:58 GMT  
-		Size: 244.0 B
+		Size: 244.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `chronograf:0.13`
 
@@ -195,22 +207,28 @@ CMD ["chronograf"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e29f2fd1d5b59bca4e74fd78afeb7b2e063e3fd89bf33bdf5487b5146275e46b`  
 		Last Modified: Thu, 28 Jul 2016 22:14:58 GMT  
-		Size: 6.8 KB (6754 bytes)
+		Size: 6.8 KB (6754 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2469a9dbb75e9bccd195e6ffa36d94651b2d3757ebd5c7247b7f971e8d31ae58`  
 		Last Modified: Thu, 28 Jul 2016 22:15:41 GMT  
-		Size: 4.0 MB (4001020 bytes)
+		Size: 4.0 MB (4001020 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:33c9645dca3b618058b3dcaf897341a27e34d5f86a7fc1539ae634a17f11a368`  
 		Last Modified: Thu, 28 Jul 2016 22:15:39 GMT  
-		Size: 205.0 B
+		Size: 205.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1ffab6a1d24a68d65939f0cc0b3825df011126f1d58a3d8b35352cafd31f9966`  
 		Last Modified: Thu, 28 Jul 2016 22:15:40 GMT  
-		Size: 188.0 B
+		Size: 188.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `chronograf:0.13.0`
 
@@ -263,22 +281,28 @@ CMD ["chronograf"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e29f2fd1d5b59bca4e74fd78afeb7b2e063e3fd89bf33bdf5487b5146275e46b`  
 		Last Modified: Thu, 28 Jul 2016 22:14:58 GMT  
-		Size: 6.8 KB (6754 bytes)
+		Size: 6.8 KB (6754 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2469a9dbb75e9bccd195e6ffa36d94651b2d3757ebd5c7247b7f971e8d31ae58`  
 		Last Modified: Thu, 28 Jul 2016 22:15:41 GMT  
-		Size: 4.0 MB (4001020 bytes)
+		Size: 4.0 MB (4001020 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:33c9645dca3b618058b3dcaf897341a27e34d5f86a7fc1539ae634a17f11a368`  
 		Last Modified: Thu, 28 Jul 2016 22:15:39 GMT  
-		Size: 205.0 B
+		Size: 205.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1ffab6a1d24a68d65939f0cc0b3825df011126f1d58a3d8b35352cafd31f9966`  
 		Last Modified: Thu, 28 Jul 2016 22:15:40 GMT  
-		Size: 188.0 B
+		Size: 188.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `chronograf:latest`
 
@@ -331,19 +355,25 @@ CMD ["chronograf"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e29f2fd1d5b59bca4e74fd78afeb7b2e063e3fd89bf33bdf5487b5146275e46b`  
 		Last Modified: Thu, 28 Jul 2016 22:14:58 GMT  
-		Size: 6.8 KB (6754 bytes)
+		Size: 6.8 KB (6754 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2469a9dbb75e9bccd195e6ffa36d94651b2d3757ebd5c7247b7f971e8d31ae58`  
 		Last Modified: Thu, 28 Jul 2016 22:15:41 GMT  
-		Size: 4.0 MB (4001020 bytes)
+		Size: 4.0 MB (4001020 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:33c9645dca3b618058b3dcaf897341a27e34d5f86a7fc1539ae634a17f11a368`  
 		Last Modified: Thu, 28 Jul 2016 22:15:39 GMT  
-		Size: 205.0 B
+		Size: 205.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1ffab6a1d24a68d65939f0cc0b3825df011126f1d58a3d8b35352cafd31f9966`  
 		Last Modified: Thu, 28 Jul 2016 22:15:40 GMT  
-		Size: 188.0 B
+		Size: 188.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

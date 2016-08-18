@@ -69,28 +69,36 @@ CMD ["couchdb"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3bf97059f711c08b67eb1cf2781eb6a49176a736ebc27f4e4784e195ce700046`  
 		Last Modified: Thu, 28 Jul 2016 22:22:56 GMT  
-		Size: 2.0 KB (2048 bytes)
+		Size: 2.0 KB (2048 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ec8d239a047eba87f1fbd2f7a109995ff5d20910d940ac09836efe60821ef07d`  
 		Last Modified: Thu, 28 Jul 2016 22:23:02 GMT  
-		Size: 42.7 MB (42671671 bytes)
+		Size: 42.7 MB (42671671 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:eed6b63cc6317cc09463491b463f2a99b0e905489978d35b51dc0fe46644e6a6`  
 		Last Modified: Thu, 28 Jul 2016 22:22:54 GMT  
-		Size: 943.4 KB (943372 bytes)
+		Size: 943.4 KB (943372 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c47a5052608f984b1c688b4d89d0800b970b03b7061919f2df26bc681fa17613`  
 		Last Modified: Thu, 28 Jul 2016 22:22:54 GMT  
-		Size: 623.1 KB (623059 bytes)
+		Size: 623.1 KB (623059 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6a3fa6cdfe6835086df4867a6367d75f5bd674b4aedc9999abbcc5e9d538a20b`  
 		Last Modified: Thu, 28 Jul 2016 22:22:57 GMT  
-		Size: 8.2 MB (8177995 bytes)
+		Size: 8.2 MB (8177995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:891ac7f11cf6f1461480dd96c9fe0b99282b1d7695eeb7cbb4651dec34c9459b`  
 		Last Modified: Thu, 28 Jul 2016 22:22:54 GMT  
-		Size: 1.1 KB (1054 bytes)
+		Size: 1.1 KB (1054 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:891ac7f11cf6f1461480dd96c9fe0b99282b1d7695eeb7cbb4651dec34c9459b`  
 		Last Modified: Thu, 28 Jul 2016 22:22:54 GMT  
-		Size: 1.1 KB (1054 bytes)
+		Size: 1.1 KB (1054 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `couchdb:1.6.1`
 
@@ -151,28 +159,36 @@ CMD ["couchdb"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3bf97059f711c08b67eb1cf2781eb6a49176a736ebc27f4e4784e195ce700046`  
 		Last Modified: Thu, 28 Jul 2016 22:22:56 GMT  
-		Size: 2.0 KB (2048 bytes)
+		Size: 2.0 KB (2048 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ec8d239a047eba87f1fbd2f7a109995ff5d20910d940ac09836efe60821ef07d`  
 		Last Modified: Thu, 28 Jul 2016 22:23:02 GMT  
-		Size: 42.7 MB (42671671 bytes)
+		Size: 42.7 MB (42671671 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:eed6b63cc6317cc09463491b463f2a99b0e905489978d35b51dc0fe46644e6a6`  
 		Last Modified: Thu, 28 Jul 2016 22:22:54 GMT  
-		Size: 943.4 KB (943372 bytes)
+		Size: 943.4 KB (943372 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c47a5052608f984b1c688b4d89d0800b970b03b7061919f2df26bc681fa17613`  
 		Last Modified: Thu, 28 Jul 2016 22:22:54 GMT  
-		Size: 623.1 KB (623059 bytes)
+		Size: 623.1 KB (623059 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6a3fa6cdfe6835086df4867a6367d75f5bd674b4aedc9999abbcc5e9d538a20b`  
 		Last Modified: Thu, 28 Jul 2016 22:22:57 GMT  
-		Size: 8.2 MB (8177995 bytes)
+		Size: 8.2 MB (8177995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:891ac7f11cf6f1461480dd96c9fe0b99282b1d7695eeb7cbb4651dec34c9459b`  
 		Last Modified: Thu, 28 Jul 2016 22:22:54 GMT  
-		Size: 1.1 KB (1054 bytes)
+		Size: 1.1 KB (1054 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:891ac7f11cf6f1461480dd96c9fe0b99282b1d7695eeb7cbb4651dec34c9459b`  
 		Last Modified: Thu, 28 Jul 2016 22:22:54 GMT  
-		Size: 1.1 KB (1054 bytes)
+		Size: 1.1 KB (1054 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `couchdb:1.6`
 
@@ -233,28 +249,36 @@ CMD ["couchdb"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3bf97059f711c08b67eb1cf2781eb6a49176a736ebc27f4e4784e195ce700046`  
 		Last Modified: Thu, 28 Jul 2016 22:22:56 GMT  
-		Size: 2.0 KB (2048 bytes)
+		Size: 2.0 KB (2048 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ec8d239a047eba87f1fbd2f7a109995ff5d20910d940ac09836efe60821ef07d`  
 		Last Modified: Thu, 28 Jul 2016 22:23:02 GMT  
-		Size: 42.7 MB (42671671 bytes)
+		Size: 42.7 MB (42671671 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:eed6b63cc6317cc09463491b463f2a99b0e905489978d35b51dc0fe46644e6a6`  
 		Last Modified: Thu, 28 Jul 2016 22:22:54 GMT  
-		Size: 943.4 KB (943372 bytes)
+		Size: 943.4 KB (943372 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c47a5052608f984b1c688b4d89d0800b970b03b7061919f2df26bc681fa17613`  
 		Last Modified: Thu, 28 Jul 2016 22:22:54 GMT  
-		Size: 623.1 KB (623059 bytes)
+		Size: 623.1 KB (623059 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6a3fa6cdfe6835086df4867a6367d75f5bd674b4aedc9999abbcc5e9d538a20b`  
 		Last Modified: Thu, 28 Jul 2016 22:22:57 GMT  
-		Size: 8.2 MB (8177995 bytes)
+		Size: 8.2 MB (8177995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:891ac7f11cf6f1461480dd96c9fe0b99282b1d7695eeb7cbb4651dec34c9459b`  
 		Last Modified: Thu, 28 Jul 2016 22:22:54 GMT  
-		Size: 1.1 KB (1054 bytes)
+		Size: 1.1 KB (1054 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:891ac7f11cf6f1461480dd96c9fe0b99282b1d7695eeb7cbb4651dec34c9459b`  
 		Last Modified: Thu, 28 Jul 2016 22:22:54 GMT  
-		Size: 1.1 KB (1054 bytes)
+		Size: 1.1 KB (1054 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `couchdb:1`
 
@@ -315,28 +339,36 @@ CMD ["couchdb"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3bf97059f711c08b67eb1cf2781eb6a49176a736ebc27f4e4784e195ce700046`  
 		Last Modified: Thu, 28 Jul 2016 22:22:56 GMT  
-		Size: 2.0 KB (2048 bytes)
+		Size: 2.0 KB (2048 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ec8d239a047eba87f1fbd2f7a109995ff5d20910d940ac09836efe60821ef07d`  
 		Last Modified: Thu, 28 Jul 2016 22:23:02 GMT  
-		Size: 42.7 MB (42671671 bytes)
+		Size: 42.7 MB (42671671 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:eed6b63cc6317cc09463491b463f2a99b0e905489978d35b51dc0fe46644e6a6`  
 		Last Modified: Thu, 28 Jul 2016 22:22:54 GMT  
-		Size: 943.4 KB (943372 bytes)
+		Size: 943.4 KB (943372 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c47a5052608f984b1c688b4d89d0800b970b03b7061919f2df26bc681fa17613`  
 		Last Modified: Thu, 28 Jul 2016 22:22:54 GMT  
-		Size: 623.1 KB (623059 bytes)
+		Size: 623.1 KB (623059 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6a3fa6cdfe6835086df4867a6367d75f5bd674b4aedc9999abbcc5e9d538a20b`  
 		Last Modified: Thu, 28 Jul 2016 22:22:57 GMT  
-		Size: 8.2 MB (8177995 bytes)
+		Size: 8.2 MB (8177995 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:891ac7f11cf6f1461480dd96c9fe0b99282b1d7695eeb7cbb4651dec34c9459b`  
 		Last Modified: Thu, 28 Jul 2016 22:22:54 GMT  
-		Size: 1.1 KB (1054 bytes)
+		Size: 1.1 KB (1054 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:891ac7f11cf6f1461480dd96c9fe0b99282b1d7695eeb7cbb4651dec34c9459b`  
 		Last Modified: Thu, 28 Jul 2016 22:22:54 GMT  
-		Size: 1.1 KB (1054 bytes)
+		Size: 1.1 KB (1054 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `couchdb:1.6.1-couchperuser`
 
@@ -403,31 +435,40 @@ RUN apt-get update && apt-get install -y rebar make  && mkdir -p /usr/local/lib/
 -	Layers:
 	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
 		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
+		Size: 51.4 MB (51352535 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0fb7ff7eaec261b8ec50763f63f770f405aa3bc4e49c5bab310d48167e8d29c8`  
 		Last Modified: Thu, 28 Jul 2016 22:16:41 GMT  
-		Size: 2.0 KB (2042 bytes)
+		Size: 2.0 KB (2042 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3d730f972c9b50316cf17d28b6af09aada4d3bf0e227efc9e624b07a61a3a750`  
 		Last Modified: Thu, 28 Jul 2016 22:16:51 GMT  
-		Size: 42.7 MB (42691846 bytes)
+		Size: 42.7 MB (42691846 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8b5d011f900b577b1809b4ef95db183e0c1c5a49bfa363ca620a33606b696f83`  
 		Last Modified: Thu, 28 Jul 2016 22:16:38 GMT  
-		Size: 943.4 KB (943373 bytes)
+		Size: 943.4 KB (943373 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5251a32a1233e91d987a49adce4ee9e327c394645ca99faa291ff3bf763bcbab`  
 		Last Modified: Thu, 28 Jul 2016 22:16:39 GMT  
-		Size: 623.1 KB (623057 bytes)
+		Size: 623.1 KB (623057 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:87b1c695d5e95805d5cf6c011c6abc8ed922529d735179d96491ee2b3c9f9083`  
 		Last Modified: Thu, 28 Jul 2016 22:16:40 GMT  
-		Size: 8.2 MB (8208633 bytes)
+		Size: 8.2 MB (8208633 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:27e119f397c24d4e53a791ae3d3a7b0845e4051c88c29746877d01cddedf77f8`  
 		Last Modified: Thu, 28 Jul 2016 22:16:38 GMT  
-		Size: 1.1 KB (1054 bytes)
+		Size: 1.1 KB (1054 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:27e119f397c24d4e53a791ae3d3a7b0845e4051c88c29746877d01cddedf77f8`  
 		Last Modified: Thu, 28 Jul 2016 22:16:38 GMT  
-		Size: 1.1 KB (1054 bytes)
+		Size: 1.1 KB (1054 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42b0d2d989480b8e5469ddc7d521c3d987834c5c59ce51840cf9613ebf84de98`  
 		Last Modified: Thu, 28 Jul 2016 22:16:39 GMT  
-		Size: 10.0 MB (10018451 bytes)
+		Size: 10.0 MB (10018451 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `couchdb:1.6-couchperuser`
 
@@ -494,31 +535,40 @@ RUN apt-get update && apt-get install -y rebar make  && mkdir -p /usr/local/lib/
 -	Layers:
 	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
 		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
+		Size: 51.4 MB (51352535 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0fb7ff7eaec261b8ec50763f63f770f405aa3bc4e49c5bab310d48167e8d29c8`  
 		Last Modified: Thu, 28 Jul 2016 22:16:41 GMT  
-		Size: 2.0 KB (2042 bytes)
+		Size: 2.0 KB (2042 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3d730f972c9b50316cf17d28b6af09aada4d3bf0e227efc9e624b07a61a3a750`  
 		Last Modified: Thu, 28 Jul 2016 22:16:51 GMT  
-		Size: 42.7 MB (42691846 bytes)
+		Size: 42.7 MB (42691846 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8b5d011f900b577b1809b4ef95db183e0c1c5a49bfa363ca620a33606b696f83`  
 		Last Modified: Thu, 28 Jul 2016 22:16:38 GMT  
-		Size: 943.4 KB (943373 bytes)
+		Size: 943.4 KB (943373 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5251a32a1233e91d987a49adce4ee9e327c394645ca99faa291ff3bf763bcbab`  
 		Last Modified: Thu, 28 Jul 2016 22:16:39 GMT  
-		Size: 623.1 KB (623057 bytes)
+		Size: 623.1 KB (623057 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:87b1c695d5e95805d5cf6c011c6abc8ed922529d735179d96491ee2b3c9f9083`  
 		Last Modified: Thu, 28 Jul 2016 22:16:40 GMT  
-		Size: 8.2 MB (8208633 bytes)
+		Size: 8.2 MB (8208633 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:27e119f397c24d4e53a791ae3d3a7b0845e4051c88c29746877d01cddedf77f8`  
 		Last Modified: Thu, 28 Jul 2016 22:16:38 GMT  
-		Size: 1.1 KB (1054 bytes)
+		Size: 1.1 KB (1054 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:27e119f397c24d4e53a791ae3d3a7b0845e4051c88c29746877d01cddedf77f8`  
 		Last Modified: Thu, 28 Jul 2016 22:16:38 GMT  
-		Size: 1.1 KB (1054 bytes)
+		Size: 1.1 KB (1054 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42b0d2d989480b8e5469ddc7d521c3d987834c5c59ce51840cf9613ebf84de98`  
 		Last Modified: Thu, 28 Jul 2016 22:16:39 GMT  
-		Size: 10.0 MB (10018451 bytes)
+		Size: 10.0 MB (10018451 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `couchdb:1-couchperuser`
 
@@ -585,28 +635,37 @@ RUN apt-get update && apt-get install -y rebar make  && mkdir -p /usr/local/lib/
 -	Layers:
 	-	`sha256:5c90d4a2d1a8dfffd05ff2dd659923f0ca2d843b5e45d030e17abbcd06a11b5b`  
 		Last Modified: Thu, 09 Jun 2016 21:30:47 GMT  
-		Size: 51.4 MB (51352535 bytes)
+		Size: 51.4 MB (51352535 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0fb7ff7eaec261b8ec50763f63f770f405aa3bc4e49c5bab310d48167e8d29c8`  
 		Last Modified: Thu, 28 Jul 2016 22:16:41 GMT  
-		Size: 2.0 KB (2042 bytes)
+		Size: 2.0 KB (2042 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3d730f972c9b50316cf17d28b6af09aada4d3bf0e227efc9e624b07a61a3a750`  
 		Last Modified: Thu, 28 Jul 2016 22:16:51 GMT  
-		Size: 42.7 MB (42691846 bytes)
+		Size: 42.7 MB (42691846 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8b5d011f900b577b1809b4ef95db183e0c1c5a49bfa363ca620a33606b696f83`  
 		Last Modified: Thu, 28 Jul 2016 22:16:38 GMT  
-		Size: 943.4 KB (943373 bytes)
+		Size: 943.4 KB (943373 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5251a32a1233e91d987a49adce4ee9e327c394645ca99faa291ff3bf763bcbab`  
 		Last Modified: Thu, 28 Jul 2016 22:16:39 GMT  
-		Size: 623.1 KB (623057 bytes)
+		Size: 623.1 KB (623057 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:87b1c695d5e95805d5cf6c011c6abc8ed922529d735179d96491ee2b3c9f9083`  
 		Last Modified: Thu, 28 Jul 2016 22:16:40 GMT  
-		Size: 8.2 MB (8208633 bytes)
+		Size: 8.2 MB (8208633 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:27e119f397c24d4e53a791ae3d3a7b0845e4051c88c29746877d01cddedf77f8`  
 		Last Modified: Thu, 28 Jul 2016 22:16:38 GMT  
-		Size: 1.1 KB (1054 bytes)
+		Size: 1.1 KB (1054 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:27e119f397c24d4e53a791ae3d3a7b0845e4051c88c29746877d01cddedf77f8`  
 		Last Modified: Thu, 28 Jul 2016 22:16:38 GMT  
-		Size: 1.1 KB (1054 bytes)
+		Size: 1.1 KB (1054 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42b0d2d989480b8e5469ddc7d521c3d987834c5c59ce51840cf9613ebf84de98`  
 		Last Modified: Thu, 28 Jul 2016 22:16:39 GMT  
-		Size: 10.0 MB (10018451 bytes)
+		Size: 10.0 MB (10018451 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

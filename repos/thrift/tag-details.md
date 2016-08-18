@@ -42,10 +42,12 @@ CMD ["thrift"]
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0360fe850c08036d0a16e7c4dbd56a2a6103804f03be774cc50de7cde0ce307d`  
 		Last Modified: Tue, 02 Aug 2016 00:01:50 GMT  
-		Size: 13.4 MB (13394334 bytes)
+		Size: 13.4 MB (13394334 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `thrift:0.9.3`
 
@@ -83,10 +85,12 @@ CMD ["thrift"]
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0360fe850c08036d0a16e7c4dbd56a2a6103804f03be774cc50de7cde0ce307d`  
 		Last Modified: Tue, 02 Aug 2016 00:01:50 GMT  
-		Size: 13.4 MB (13394334 bytes)
+		Size: 13.4 MB (13394334 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `thrift:latest`
 
@@ -124,7 +128,9 @@ CMD ["thrift"]
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0360fe850c08036d0a16e7c4dbd56a2a6103804f03be774cc50de7cde0ce307d`  
 		Last Modified: Tue, 02 Aug 2016 00:01:50 GMT  
-		Size: 13.4 MB (13394334 bytes)
+		Size: 13.4 MB (13394334 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

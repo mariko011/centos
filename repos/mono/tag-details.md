@@ -101,22 +101,28 @@ RUN mozroots --machine --import --sync --quiet --file /tmp/certdata.txt
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a54a8474ab28c4287d3249d92d273db5dd73394c22e875063316a3823744ae7`  
 		Last Modified: Fri, 29 Jul 2016 20:04:54 GMT  
-		Size: 81.0 MB (80982167 bytes)
+		Size: 81.0 MB (80982167 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2e91279489e4c510da26a86b82dac6681491376d8ca60ec04eb20732e6a5234c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 181.5 KB (181537 bytes)
+		Size: 181.5 KB (181537 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0d64595f65299b67523d94740cc0df078d8ec234c4878d5b920a843bd1236df1`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 101.1 KB (101059 bytes)
+		Size: 101.1 KB (101059 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:3.10`
 
@@ -158,22 +164,28 @@ RUN mozroots --machine --import --sync --quiet --file /tmp/certdata.txt
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a54a8474ab28c4287d3249d92d273db5dd73394c22e875063316a3823744ae7`  
 		Last Modified: Fri, 29 Jul 2016 20:04:54 GMT  
-		Size: 81.0 MB (80982167 bytes)
+		Size: 81.0 MB (80982167 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2e91279489e4c510da26a86b82dac6681491376d8ca60ec04eb20732e6a5234c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 181.5 KB (181537 bytes)
+		Size: 181.5 KB (181537 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0d64595f65299b67523d94740cc0df078d8ec234c4878d5b920a843bd1236df1`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 101.1 KB (101059 bytes)
+		Size: 101.1 KB (101059 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:3.10.0-onbuild`
 
@@ -229,25 +241,32 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a54a8474ab28c4287d3249d92d273db5dd73394c22e875063316a3823744ae7`  
 		Last Modified: Fri, 29 Jul 2016 20:04:54 GMT  
-		Size: 81.0 MB (80982167 bytes)
+		Size: 81.0 MB (80982167 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2e91279489e4c510da26a86b82dac6681491376d8ca60ec04eb20732e6a5234c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 181.5 KB (181537 bytes)
+		Size: 181.5 KB (181537 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0d64595f65299b67523d94740cc0df078d8ec234c4878d5b920a843bd1236df1`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 101.1 KB (101059 bytes)
+		Size: 101.1 KB (101059 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:473bfd72b9100b912a3bc3fdc9f9032a230f43bf0b478667afcb9631625033ff`  
 		Last Modified: Fri, 29 Jul 2016 20:11:07 GMT  
-		Size: 164.0 B
+		Size: 164.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:3.10-onbuild`
 
@@ -303,25 +322,32 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a54a8474ab28c4287d3249d92d273db5dd73394c22e875063316a3823744ae7`  
 		Last Modified: Fri, 29 Jul 2016 20:04:54 GMT  
-		Size: 81.0 MB (80982167 bytes)
+		Size: 81.0 MB (80982167 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2e91279489e4c510da26a86b82dac6681491376d8ca60ec04eb20732e6a5234c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 181.5 KB (181537 bytes)
+		Size: 181.5 KB (181537 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0d64595f65299b67523d94740cc0df078d8ec234c4878d5b920a843bd1236df1`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 101.1 KB (101059 bytes)
+		Size: 101.1 KB (101059 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:473bfd72b9100b912a3bc3fdc9f9032a230f43bf0b478667afcb9631625033ff`  
 		Last Modified: Fri, 29 Jul 2016 20:11:07 GMT  
-		Size: 164.0 B
+		Size: 164.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:3.12.1`
 
@@ -359,16 +385,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b0f7a5a2ac66711ef409d0fcb9dbaa6baa37f891a85bcdfdf4b4d7fc085c87a6`  
 		Last Modified: Fri, 29 Jul 2016 20:13:19 GMT  
-		Size: 82.3 MB (82315577 bytes)
+		Size: 82.3 MB (82315577 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:3.12.0`
 
@@ -406,16 +436,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b0f7a5a2ac66711ef409d0fcb9dbaa6baa37f891a85bcdfdf4b4d7fc085c87a6`  
 		Last Modified: Fri, 29 Jul 2016 20:13:19 GMT  
-		Size: 82.3 MB (82315577 bytes)
+		Size: 82.3 MB (82315577 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:3.12`
 
@@ -453,16 +487,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b0f7a5a2ac66711ef409d0fcb9dbaa6baa37f891a85bcdfdf4b4d7fc085c87a6`  
 		Last Modified: Fri, 29 Jul 2016 20:13:19 GMT  
-		Size: 82.3 MB (82315577 bytes)
+		Size: 82.3 MB (82315577 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:3`
 
@@ -500,16 +538,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b0f7a5a2ac66711ef409d0fcb9dbaa6baa37f891a85bcdfdf4b4d7fc085c87a6`  
 		Last Modified: Fri, 29 Jul 2016 20:13:19 GMT  
-		Size: 82.3 MB (82315577 bytes)
+		Size: 82.3 MB (82315577 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:3.12.1-onbuild`
 
@@ -561,19 +603,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b0f7a5a2ac66711ef409d0fcb9dbaa6baa37f891a85bcdfdf4b4d7fc085c87a6`  
 		Last Modified: Fri, 29 Jul 2016 20:13:19 GMT  
-		Size: 82.3 MB (82315577 bytes)
+		Size: 82.3 MB (82315577 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a3f0deac510d76eddd4d2efbb58a1a5d02b9715a009bf8df236b2582cc7d2c90`  
 		Last Modified: Fri, 29 Jul 2016 20:14:20 GMT  
-		Size: 163.0 B
+		Size: 163.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:3.12.0-onbuild`
 
@@ -625,19 +672,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b0f7a5a2ac66711ef409d0fcb9dbaa6baa37f891a85bcdfdf4b4d7fc085c87a6`  
 		Last Modified: Fri, 29 Jul 2016 20:13:19 GMT  
-		Size: 82.3 MB (82315577 bytes)
+		Size: 82.3 MB (82315577 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a3f0deac510d76eddd4d2efbb58a1a5d02b9715a009bf8df236b2582cc7d2c90`  
 		Last Modified: Fri, 29 Jul 2016 20:14:20 GMT  
-		Size: 163.0 B
+		Size: 163.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:3.12-onbuild`
 
@@ -689,19 +741,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b0f7a5a2ac66711ef409d0fcb9dbaa6baa37f891a85bcdfdf4b4d7fc085c87a6`  
 		Last Modified: Fri, 29 Jul 2016 20:13:19 GMT  
-		Size: 82.3 MB (82315577 bytes)
+		Size: 82.3 MB (82315577 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a3f0deac510d76eddd4d2efbb58a1a5d02b9715a009bf8df236b2582cc7d2c90`  
 		Last Modified: Fri, 29 Jul 2016 20:14:20 GMT  
-		Size: 163.0 B
+		Size: 163.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:3-onbuild`
 
@@ -753,19 +810,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b0f7a5a2ac66711ef409d0fcb9dbaa6baa37f891a85bcdfdf4b4d7fc085c87a6`  
 		Last Modified: Fri, 29 Jul 2016 20:13:19 GMT  
-		Size: 82.3 MB (82315577 bytes)
+		Size: 82.3 MB (82315577 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a3f0deac510d76eddd4d2efbb58a1a5d02b9715a009bf8df236b2582cc7d2c90`  
 		Last Modified: Fri, 29 Jul 2016 20:14:20 GMT  
-		Size: 163.0 B
+		Size: 163.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:3.8.0`
 
@@ -807,22 +869,28 @@ RUN mozroots --machine --import --sync --quiet --file /tmp/certdata.txt
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:caa6c3eb9094bb17479b9545200c8e9637e9388d53263764ced7c9d0b42b1d23`  
 		Last Modified: Fri, 29 Jul 2016 20:16:47 GMT  
-		Size: 79.2 MB (79202257 bytes)
+		Size: 79.2 MB (79202257 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d7fc974c50743c34d84d28fe272b748604d4150596a4dfb8bbb03f2cdeacebe3`  
 		Last Modified: Fri, 29 Jul 2016 20:16:23 GMT  
-		Size: 181.5 KB (181537 bytes)
+		Size: 181.5 KB (181537 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c32e0763f444be4856bfd3492c180bd7c5f8dff38925a85ad4e220ee71102f5`  
 		Last Modified: Fri, 29 Jul 2016 20:16:23 GMT  
-		Size: 101.1 KB (101058 bytes)
+		Size: 101.1 KB (101058 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:3.8`
 
@@ -864,22 +932,28 @@ RUN mozroots --machine --import --sync --quiet --file /tmp/certdata.txt
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:caa6c3eb9094bb17479b9545200c8e9637e9388d53263764ced7c9d0b42b1d23`  
 		Last Modified: Fri, 29 Jul 2016 20:16:47 GMT  
-		Size: 79.2 MB (79202257 bytes)
+		Size: 79.2 MB (79202257 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d7fc974c50743c34d84d28fe272b748604d4150596a4dfb8bbb03f2cdeacebe3`  
 		Last Modified: Fri, 29 Jul 2016 20:16:23 GMT  
-		Size: 181.5 KB (181537 bytes)
+		Size: 181.5 KB (181537 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c32e0763f444be4856bfd3492c180bd7c5f8dff38925a85ad4e220ee71102f5`  
 		Last Modified: Fri, 29 Jul 2016 20:16:23 GMT  
-		Size: 101.1 KB (101058 bytes)
+		Size: 101.1 KB (101058 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:3.8.0-onbuild`
 
@@ -935,25 +1009,32 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:caa6c3eb9094bb17479b9545200c8e9637e9388d53263764ced7c9d0b42b1d23`  
 		Last Modified: Fri, 29 Jul 2016 20:16:47 GMT  
-		Size: 79.2 MB (79202257 bytes)
+		Size: 79.2 MB (79202257 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d7fc974c50743c34d84d28fe272b748604d4150596a4dfb8bbb03f2cdeacebe3`  
 		Last Modified: Fri, 29 Jul 2016 20:16:23 GMT  
-		Size: 181.5 KB (181537 bytes)
+		Size: 181.5 KB (181537 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c32e0763f444be4856bfd3492c180bd7c5f8dff38925a85ad4e220ee71102f5`  
 		Last Modified: Fri, 29 Jul 2016 20:16:23 GMT  
-		Size: 101.1 KB (101058 bytes)
+		Size: 101.1 KB (101058 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cd837a9b79f55e80d3274a0f905d150267eed2fd42dc9378afdedc2cf58de100`  
 		Last Modified: Fri, 29 Jul 2016 20:17:24 GMT  
-		Size: 164.0 B
+		Size: 164.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:3.8-onbuild`
 
@@ -1009,25 +1090,32 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:caa6c3eb9094bb17479b9545200c8e9637e9388d53263764ced7c9d0b42b1d23`  
 		Last Modified: Fri, 29 Jul 2016 20:16:47 GMT  
-		Size: 79.2 MB (79202257 bytes)
+		Size: 79.2 MB (79202257 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d7fc974c50743c34d84d28fe272b748604d4150596a4dfb8bbb03f2cdeacebe3`  
 		Last Modified: Fri, 29 Jul 2016 20:16:23 GMT  
-		Size: 181.5 KB (181537 bytes)
+		Size: 181.5 KB (181537 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c32e0763f444be4856bfd3492c180bd7c5f8dff38925a85ad4e220ee71102f5`  
 		Last Modified: Fri, 29 Jul 2016 20:16:23 GMT  
-		Size: 101.1 KB (101058 bytes)
+		Size: 101.1 KB (101058 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cd837a9b79f55e80d3274a0f905d150267eed2fd42dc9378afdedc2cf58de100`  
 		Last Modified: Fri, 29 Jul 2016 20:17:24 GMT  
-		Size: 164.0 B
+		Size: 164.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.0.5.1`
 
@@ -1065,16 +1153,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:22fec4208a26c8b43955e5681840ab98288a2fc7a0f037e3c4ea65ed472adc64`  
 		Last Modified: Fri, 29 Jul 2016 20:20:28 GMT  
-		Size: 184.3 MB (184290975 bytes)
+		Size: 184.3 MB (184290975 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.0.5`
 
@@ -1112,16 +1204,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:22fec4208a26c8b43955e5681840ab98288a2fc7a0f037e3c4ea65ed472adc64`  
 		Last Modified: Fri, 29 Jul 2016 20:20:28 GMT  
-		Size: 184.3 MB (184290975 bytes)
+		Size: 184.3 MB (184290975 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.0`
 
@@ -1159,16 +1255,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.0.
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:22fec4208a26c8b43955e5681840ab98288a2fc7a0f037e3c4ea65ed472adc64`  
 		Last Modified: Fri, 29 Jul 2016 20:20:28 GMT  
-		Size: 184.3 MB (184290975 bytes)
+		Size: 184.3 MB (184290975 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.0.5.1-onbuild`
 
@@ -1220,19 +1320,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:22fec4208a26c8b43955e5681840ab98288a2fc7a0f037e3c4ea65ed472adc64`  
 		Last Modified: Fri, 29 Jul 2016 20:20:28 GMT  
-		Size: 184.3 MB (184290975 bytes)
+		Size: 184.3 MB (184290975 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:84ecc3789213119d80bf464abe39f0767f76fae3ef1e9e356b085702eaaac854`  
 		Last Modified: Fri, 29 Jul 2016 20:21:23 GMT  
-		Size: 164.0 B
+		Size: 164.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.0.5-onbuild`
 
@@ -1284,19 +1389,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:22fec4208a26c8b43955e5681840ab98288a2fc7a0f037e3c4ea65ed472adc64`  
 		Last Modified: Fri, 29 Jul 2016 20:20:28 GMT  
-		Size: 184.3 MB (184290975 bytes)
+		Size: 184.3 MB (184290975 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:84ecc3789213119d80bf464abe39f0767f76fae3ef1e9e356b085702eaaac854`  
 		Last Modified: Fri, 29 Jul 2016 20:21:23 GMT  
-		Size: 164.0 B
+		Size: 164.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.0-onbuild`
 
@@ -1348,19 +1458,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:22fec4208a26c8b43955e5681840ab98288a2fc7a0f037e3c4ea65ed472adc64`  
 		Last Modified: Fri, 29 Jul 2016 20:20:28 GMT  
-		Size: 184.3 MB (184290975 bytes)
+		Size: 184.3 MB (184290975 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:84ecc3789213119d80bf464abe39f0767f76fae3ef1e9e356b085702eaaac854`  
 		Last Modified: Fri, 29 Jul 2016 20:21:23 GMT  
-		Size: 164.0 B
+		Size: 164.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.2.1.102`
 
@@ -1398,16 +1513,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4851beb38198e8a236ffc623faddfbf32dfab3e93c86c88cb7a705e133d67332`  
 		Last Modified: Fri, 29 Jul 2016 20:24:37 GMT  
-		Size: 186.2 MB (186175188 bytes)
+		Size: 186.2 MB (186175188 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.2.1`
 
@@ -1445,16 +1564,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4851beb38198e8a236ffc623faddfbf32dfab3e93c86c88cb7a705e133d67332`  
 		Last Modified: Fri, 29 Jul 2016 20:24:37 GMT  
-		Size: 186.2 MB (186175188 bytes)
+		Size: 186.2 MB (186175188 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.2.1.102-onbuild`
 
@@ -1506,19 +1629,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4851beb38198e8a236ffc623faddfbf32dfab3e93c86c88cb7a705e133d67332`  
 		Last Modified: Fri, 29 Jul 2016 20:24:37 GMT  
-		Size: 186.2 MB (186175188 bytes)
+		Size: 186.2 MB (186175188 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bc8a76768d9e03b9c6b855d4da5a281f87bb803f58e49a72a1aa5d7bc478eb05`  
 		Last Modified: Fri, 29 Jul 2016 20:25:19 GMT  
-		Size: 163.0 B
+		Size: 163.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.2.1-onbuild`
 
@@ -1570,19 +1698,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:674f621f970e99b976d2967e5205813c080c9a302aaf8bfed44c4746c23a217c`  
 		Last Modified: Fri, 29 Jul 2016 20:04:28 GMT  
-		Size: 29.3 KB (29329 bytes)
+		Size: 29.3 KB (29329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4851beb38198e8a236ffc623faddfbf32dfab3e93c86c88cb7a705e133d67332`  
 		Last Modified: Fri, 29 Jul 2016 20:24:37 GMT  
-		Size: 186.2 MB (186175188 bytes)
+		Size: 186.2 MB (186175188 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bc8a76768d9e03b9c6b855d4da5a281f87bb803f58e49a72a1aa5d7bc478eb05`  
 		Last Modified: Fri, 29 Jul 2016 20:25:19 GMT  
-		Size: 163.0 B
+		Size: 163.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.2.2.30`
 
@@ -1620,16 +1753,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4215cdbe26cbca701989bb302e45595fd3f7576afa067cd5713c0c3216a9d019`  
 		Last Modified: Fri, 29 Jul 2016 20:08:03 GMT  
-		Size: 29.3 KB (29325 bytes)
+		Size: 29.3 KB (29325 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5db5c03886c393f0dd0c9047290a9eb9c32220895191398c5d482d54a9495b96`  
 		Last Modified: Mon, 01 Aug 2016 17:02:59 GMT  
-		Size: 186.2 MB (186197034 bytes)
+		Size: 186.2 MB (186197034 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.2.2`
 
@@ -1667,16 +1804,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4215cdbe26cbca701989bb302e45595fd3f7576afa067cd5713c0c3216a9d019`  
 		Last Modified: Fri, 29 Jul 2016 20:08:03 GMT  
-		Size: 29.3 KB (29325 bytes)
+		Size: 29.3 KB (29325 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5db5c03886c393f0dd0c9047290a9eb9c32220895191398c5d482d54a9495b96`  
 		Last Modified: Mon, 01 Aug 2016 17:02:59 GMT  
-		Size: 186.2 MB (186197034 bytes)
+		Size: 186.2 MB (186197034 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.2.2.30-onbuild`
 
@@ -1728,19 +1869,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4215cdbe26cbca701989bb302e45595fd3f7576afa067cd5713c0c3216a9d019`  
 		Last Modified: Fri, 29 Jul 2016 20:08:03 GMT  
-		Size: 29.3 KB (29325 bytes)
+		Size: 29.3 KB (29325 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5db5c03886c393f0dd0c9047290a9eb9c32220895191398c5d482d54a9495b96`  
 		Last Modified: Mon, 01 Aug 2016 17:02:59 GMT  
-		Size: 186.2 MB (186197034 bytes)
+		Size: 186.2 MB (186197034 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d2fbe8589cc8ea41b8570d19d796accb4b3dd9b04aa7d237829450670f429dee`  
 		Last Modified: Mon, 01 Aug 2016 17:04:09 GMT  
-		Size: 162.0 B
+		Size: 162.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.2.2-onbuild`
 
@@ -1792,19 +1938,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4215cdbe26cbca701989bb302e45595fd3f7576afa067cd5713c0c3216a9d019`  
 		Last Modified: Fri, 29 Jul 2016 20:08:03 GMT  
-		Size: 29.3 KB (29325 bytes)
+		Size: 29.3 KB (29325 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5db5c03886c393f0dd0c9047290a9eb9c32220895191398c5d482d54a9495b96`  
 		Last Modified: Mon, 01 Aug 2016 17:02:59 GMT  
-		Size: 186.2 MB (186197034 bytes)
+		Size: 186.2 MB (186197034 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d2fbe8589cc8ea41b8570d19d796accb4b3dd9b04aa7d237829450670f429dee`  
 		Last Modified: Mon, 01 Aug 2016 17:04:09 GMT  
-		Size: 162.0 B
+		Size: 162.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.2.3.4`
 
@@ -1842,16 +1993,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4215cdbe26cbca701989bb302e45595fd3f7576afa067cd5713c0c3216a9d019`  
 		Last Modified: Fri, 29 Jul 2016 20:08:03 GMT  
-		Size: 29.3 KB (29325 bytes)
+		Size: 29.3 KB (29325 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b9a44116af893b442046e9208ec3ea891d189562bd3dc37732a0d9613fcc2fc5`  
 		Last Modified: Mon, 01 Aug 2016 17:07:42 GMT  
-		Size: 186.2 MB (186199385 bytes)
+		Size: 186.2 MB (186199385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.2.3`
 
@@ -1889,16 +2044,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4215cdbe26cbca701989bb302e45595fd3f7576afa067cd5713c0c3216a9d019`  
 		Last Modified: Fri, 29 Jul 2016 20:08:03 GMT  
-		Size: 29.3 KB (29325 bytes)
+		Size: 29.3 KB (29325 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b9a44116af893b442046e9208ec3ea891d189562bd3dc37732a0d9613fcc2fc5`  
 		Last Modified: Mon, 01 Aug 2016 17:07:42 GMT  
-		Size: 186.2 MB (186199385 bytes)
+		Size: 186.2 MB (186199385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.2.3.4-onbuild`
 
@@ -1950,19 +2109,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4215cdbe26cbca701989bb302e45595fd3f7576afa067cd5713c0c3216a9d019`  
 		Last Modified: Fri, 29 Jul 2016 20:08:03 GMT  
-		Size: 29.3 KB (29325 bytes)
+		Size: 29.3 KB (29325 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b9a44116af893b442046e9208ec3ea891d189562bd3dc37732a0d9613fcc2fc5`  
 		Last Modified: Mon, 01 Aug 2016 17:07:42 GMT  
-		Size: 186.2 MB (186199385 bytes)
+		Size: 186.2 MB (186199385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:82f902d47b55b298f41d3cbd19056f15cad160068a6b2a07d01fe6f3dff064e9`  
 		Last Modified: Mon, 01 Aug 2016 17:08:19 GMT  
-		Size: 164.0 B
+		Size: 164.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.2.3-onbuild`
 
@@ -2014,19 +2178,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4215cdbe26cbca701989bb302e45595fd3f7576afa067cd5713c0c3216a9d019`  
 		Last Modified: Fri, 29 Jul 2016 20:08:03 GMT  
-		Size: 29.3 KB (29325 bytes)
+		Size: 29.3 KB (29325 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b9a44116af893b442046e9208ec3ea891d189562bd3dc37732a0d9613fcc2fc5`  
 		Last Modified: Mon, 01 Aug 2016 17:07:42 GMT  
-		Size: 186.2 MB (186199385 bytes)
+		Size: 186.2 MB (186199385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:82f902d47b55b298f41d3cbd19056f15cad160068a6b2a07d01fe6f3dff064e9`  
 		Last Modified: Mon, 01 Aug 2016 17:08:19 GMT  
-		Size: 164.0 B
+		Size: 164.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.2.4.4`
 
@@ -2064,16 +2233,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4215cdbe26cbca701989bb302e45595fd3f7576afa067cd5713c0c3216a9d019`  
 		Last Modified: Fri, 29 Jul 2016 20:08:03 GMT  
-		Size: 29.3 KB (29325 bytes)
+		Size: 29.3 KB (29325 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f60b7bf821cb44c9999948359d6a828aa9ee6e175a5f32efee233abcbece4013`  
 		Last Modified: Mon, 01 Aug 2016 17:11:49 GMT  
-		Size: 186.2 MB (186203033 bytes)
+		Size: 186.2 MB (186203033 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.2.4`
 
@@ -2111,16 +2284,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4215cdbe26cbca701989bb302e45595fd3f7576afa067cd5713c0c3216a9d019`  
 		Last Modified: Fri, 29 Jul 2016 20:08:03 GMT  
-		Size: 29.3 KB (29325 bytes)
+		Size: 29.3 KB (29325 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f60b7bf821cb44c9999948359d6a828aa9ee6e175a5f32efee233abcbece4013`  
 		Last Modified: Mon, 01 Aug 2016 17:11:49 GMT  
-		Size: 186.2 MB (186203033 bytes)
+		Size: 186.2 MB (186203033 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.2`
 
@@ -2158,16 +2335,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4215cdbe26cbca701989bb302e45595fd3f7576afa067cd5713c0c3216a9d019`  
 		Last Modified: Fri, 29 Jul 2016 20:08:03 GMT  
-		Size: 29.3 KB (29325 bytes)
+		Size: 29.3 KB (29325 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f60b7bf821cb44c9999948359d6a828aa9ee6e175a5f32efee233abcbece4013`  
 		Last Modified: Mon, 01 Aug 2016 17:11:49 GMT  
-		Size: 186.2 MB (186203033 bytes)
+		Size: 186.2 MB (186203033 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.2.4.4-onbuild`
 
@@ -2219,19 +2400,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4215cdbe26cbca701989bb302e45595fd3f7576afa067cd5713c0c3216a9d019`  
 		Last Modified: Fri, 29 Jul 2016 20:08:03 GMT  
-		Size: 29.3 KB (29325 bytes)
+		Size: 29.3 KB (29325 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f60b7bf821cb44c9999948359d6a828aa9ee6e175a5f32efee233abcbece4013`  
 		Last Modified: Mon, 01 Aug 2016 17:11:49 GMT  
-		Size: 186.2 MB (186203033 bytes)
+		Size: 186.2 MB (186203033 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8efcd5aa125914583ba4c2c189a7e6e89aba19a93197f5e803057120e9f79cbc`  
 		Last Modified: Thu, 04 Aug 2016 01:17:37 GMT  
-		Size: 164.0 B
+		Size: 164.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.2.4-onbuild`
 
@@ -2283,19 +2469,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4215cdbe26cbca701989bb302e45595fd3f7576afa067cd5713c0c3216a9d019`  
 		Last Modified: Fri, 29 Jul 2016 20:08:03 GMT  
-		Size: 29.3 KB (29325 bytes)
+		Size: 29.3 KB (29325 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f60b7bf821cb44c9999948359d6a828aa9ee6e175a5f32efee233abcbece4013`  
 		Last Modified: Mon, 01 Aug 2016 17:11:49 GMT  
-		Size: 186.2 MB (186203033 bytes)
+		Size: 186.2 MB (186203033 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8efcd5aa125914583ba4c2c189a7e6e89aba19a93197f5e803057120e9f79cbc`  
 		Last Modified: Thu, 04 Aug 2016 01:17:37 GMT  
-		Size: 164.0 B
+		Size: 164.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.2-onbuild`
 
@@ -2347,19 +2538,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4215cdbe26cbca701989bb302e45595fd3f7576afa067cd5713c0c3216a9d019`  
 		Last Modified: Fri, 29 Jul 2016 20:08:03 GMT  
-		Size: 29.3 KB (29325 bytes)
+		Size: 29.3 KB (29325 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f60b7bf821cb44c9999948359d6a828aa9ee6e175a5f32efee233abcbece4013`  
 		Last Modified: Mon, 01 Aug 2016 17:11:49 GMT  
-		Size: 186.2 MB (186203033 bytes)
+		Size: 186.2 MB (186203033 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8efcd5aa125914583ba4c2c189a7e6e89aba19a93197f5e803057120e9f79cbc`  
 		Last Modified: Thu, 04 Aug 2016 01:17:37 GMT  
-		Size: 164.0 B
+		Size: 164.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.4.0.182`
 
@@ -2397,16 +2593,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.4.
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4215cdbe26cbca701989bb302e45595fd3f7576afa067cd5713c0c3216a9d019`  
 		Last Modified: Fri, 29 Jul 2016 20:08:03 GMT  
-		Size: 29.3 KB (29325 bytes)
+		Size: 29.3 KB (29325 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:536cffaa088fe37695b5d90dafeb14d7eda1d002eebeeda48698cfdfd5e28cfe`  
 		Last Modified: Thu, 04 Aug 2016 01:19:10 GMT  
-		Size: 207.3 MB (207326443 bytes)
+		Size: 207.3 MB (207326443 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.4.0`
 
@@ -2444,16 +2644,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.4.
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4215cdbe26cbca701989bb302e45595fd3f7576afa067cd5713c0c3216a9d019`  
 		Last Modified: Fri, 29 Jul 2016 20:08:03 GMT  
-		Size: 29.3 KB (29325 bytes)
+		Size: 29.3 KB (29325 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:536cffaa088fe37695b5d90dafeb14d7eda1d002eebeeda48698cfdfd5e28cfe`  
 		Last Modified: Thu, 04 Aug 2016 01:19:10 GMT  
-		Size: 207.3 MB (207326443 bytes)
+		Size: 207.3 MB (207326443 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.4.0.182-onbuild`
 
@@ -2505,19 +2709,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4215cdbe26cbca701989bb302e45595fd3f7576afa067cd5713c0c3216a9d019`  
 		Last Modified: Fri, 29 Jul 2016 20:08:03 GMT  
-		Size: 29.3 KB (29325 bytes)
+		Size: 29.3 KB (29325 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:536cffaa088fe37695b5d90dafeb14d7eda1d002eebeeda48698cfdfd5e28cfe`  
 		Last Modified: Thu, 04 Aug 2016 01:19:10 GMT  
-		Size: 207.3 MB (207326443 bytes)
+		Size: 207.3 MB (207326443 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6119a455f176781e5a37a18f29cc986cb417b329600d2f4daa54bc0b053b5b75`  
 		Last Modified: Thu, 04 Aug 2016 01:19:40 GMT  
-		Size: 163.0 B
+		Size: 163.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.4.0-onbuild`
 
@@ -2569,19 +2778,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6156bf0b2283e1bce2cb79eb88f97a2bb4777bad1214011be6e2dcfebf4408b5`  
 		Last Modified: Fri, 29 Jul 2016 20:04:31 GMT  
-		Size: 7.6 MB (7553771 bytes)
+		Size: 7.6 MB (7553771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4215cdbe26cbca701989bb302e45595fd3f7576afa067cd5713c0c3216a9d019`  
 		Last Modified: Fri, 29 Jul 2016 20:08:03 GMT  
-		Size: 29.3 KB (29325 bytes)
+		Size: 29.3 KB (29325 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:536cffaa088fe37695b5d90dafeb14d7eda1d002eebeeda48698cfdfd5e28cfe`  
 		Last Modified: Thu, 04 Aug 2016 01:19:10 GMT  
-		Size: 207.3 MB (207326443 bytes)
+		Size: 207.3 MB (207326443 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6119a455f176781e5a37a18f29cc986cb417b329600d2f4daa54bc0b053b5b75`  
 		Last Modified: Thu, 04 Aug 2016 01:19:40 GMT  
-		Size: 163.0 B
+		Size: 163.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.4.1.0`
 
@@ -2619,16 +2833,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.4.
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4c9d492f44f4fe3c48e1d8bde1b83df0669e24167df70ee84291d9adeb67273a`  
 		Last Modified: Thu, 04 Aug 2016 01:20:07 GMT  
-		Size: 7.6 MB (7554036 bytes)
+		Size: 7.6 MB (7554036 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6138b4d365ef9af35759faa343b9bc80c497244a8ec65463736b6fbba4e7fad1`  
 		Last Modified: Thu, 04 Aug 2016 01:20:06 GMT  
-		Size: 29.3 KB (29333 bytes)
+		Size: 29.3 KB (29333 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:65f3f8f3694700d1e3a62c4f60c692bc1655b2b198c16ba5e8a415dd0da01e01`  
 		Last Modified: Thu, 04 Aug 2016 01:21:05 GMT  
-		Size: 207.3 MB (207326857 bytes)
+		Size: 207.3 MB (207326857 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.4.1`
 
@@ -2666,16 +2884,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.4.
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4c9d492f44f4fe3c48e1d8bde1b83df0669e24167df70ee84291d9adeb67273a`  
 		Last Modified: Thu, 04 Aug 2016 01:20:07 GMT  
-		Size: 7.6 MB (7554036 bytes)
+		Size: 7.6 MB (7554036 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6138b4d365ef9af35759faa343b9bc80c497244a8ec65463736b6fbba4e7fad1`  
 		Last Modified: Thu, 04 Aug 2016 01:20:06 GMT  
-		Size: 29.3 KB (29333 bytes)
+		Size: 29.3 KB (29333 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:65f3f8f3694700d1e3a62c4f60c692bc1655b2b198c16ba5e8a415dd0da01e01`  
 		Last Modified: Thu, 04 Aug 2016 01:21:05 GMT  
-		Size: 207.3 MB (207326857 bytes)
+		Size: 207.3 MB (207326857 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.4.1.0-onbuild`
 
@@ -2727,19 +2949,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4c9d492f44f4fe3c48e1d8bde1b83df0669e24167df70ee84291d9adeb67273a`  
 		Last Modified: Thu, 04 Aug 2016 01:20:07 GMT  
-		Size: 7.6 MB (7554036 bytes)
+		Size: 7.6 MB (7554036 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6138b4d365ef9af35759faa343b9bc80c497244a8ec65463736b6fbba4e7fad1`  
 		Last Modified: Thu, 04 Aug 2016 01:20:06 GMT  
-		Size: 29.3 KB (29333 bytes)
+		Size: 29.3 KB (29333 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:65f3f8f3694700d1e3a62c4f60c692bc1655b2b198c16ba5e8a415dd0da01e01`  
 		Last Modified: Thu, 04 Aug 2016 01:21:05 GMT  
-		Size: 207.3 MB (207326857 bytes)
+		Size: 207.3 MB (207326857 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b8e8851d582fb2adbd254c8d104e5c6df87c25bfc77b2b34c3306ddb634e26fb`  
 		Last Modified: Thu, 04 Aug 2016 01:21:37 GMT  
-		Size: 164.0 B
+		Size: 164.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.4.1-onbuild`
 
@@ -2791,19 +3018,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4c9d492f44f4fe3c48e1d8bde1b83df0669e24167df70ee84291d9adeb67273a`  
 		Last Modified: Thu, 04 Aug 2016 01:20:07 GMT  
-		Size: 7.6 MB (7554036 bytes)
+		Size: 7.6 MB (7554036 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6138b4d365ef9af35759faa343b9bc80c497244a8ec65463736b6fbba4e7fad1`  
 		Last Modified: Thu, 04 Aug 2016 01:20:06 GMT  
-		Size: 29.3 KB (29333 bytes)
+		Size: 29.3 KB (29333 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:65f3f8f3694700d1e3a62c4f60c692bc1655b2b198c16ba5e8a415dd0da01e01`  
 		Last Modified: Thu, 04 Aug 2016 01:21:05 GMT  
-		Size: 207.3 MB (207326857 bytes)
+		Size: 207.3 MB (207326857 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b8e8851d582fb2adbd254c8d104e5c6df87c25bfc77b2b34c3306ddb634e26fb`  
 		Last Modified: Thu, 04 Aug 2016 01:21:37 GMT  
-		Size: 164.0 B
+		Size: 164.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.4.2.11`
 
@@ -2841,16 +3073,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.4.
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4c9d492f44f4fe3c48e1d8bde1b83df0669e24167df70ee84291d9adeb67273a`  
 		Last Modified: Thu, 04 Aug 2016 01:20:07 GMT  
-		Size: 7.6 MB (7554036 bytes)
+		Size: 7.6 MB (7554036 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6138b4d365ef9af35759faa343b9bc80c497244a8ec65463736b6fbba4e7fad1`  
 		Last Modified: Thu, 04 Aug 2016 01:20:06 GMT  
-		Size: 29.3 KB (29333 bytes)
+		Size: 29.3 KB (29333 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2ce1af140bb81e4c169ec7aabb3299676656f25d8b7bc0361c907a80d601b684`  
 		Last Modified: Thu, 04 Aug 2016 01:23:02 GMT  
-		Size: 207.4 MB (207435977 bytes)
+		Size: 207.4 MB (207435977 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.4.2`
 
@@ -2888,16 +3124,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.4.
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4c9d492f44f4fe3c48e1d8bde1b83df0669e24167df70ee84291d9adeb67273a`  
 		Last Modified: Thu, 04 Aug 2016 01:20:07 GMT  
-		Size: 7.6 MB (7554036 bytes)
+		Size: 7.6 MB (7554036 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6138b4d365ef9af35759faa343b9bc80c497244a8ec65463736b6fbba4e7fad1`  
 		Last Modified: Thu, 04 Aug 2016 01:20:06 GMT  
-		Size: 29.3 KB (29333 bytes)
+		Size: 29.3 KB (29333 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2ce1af140bb81e4c169ec7aabb3299676656f25d8b7bc0361c907a80d601b684`  
 		Last Modified: Thu, 04 Aug 2016 01:23:02 GMT  
-		Size: 207.4 MB (207435977 bytes)
+		Size: 207.4 MB (207435977 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.4`
 
@@ -2935,16 +3175,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.4.
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4c9d492f44f4fe3c48e1d8bde1b83df0669e24167df70ee84291d9adeb67273a`  
 		Last Modified: Thu, 04 Aug 2016 01:20:07 GMT  
-		Size: 7.6 MB (7554036 bytes)
+		Size: 7.6 MB (7554036 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6138b4d365ef9af35759faa343b9bc80c497244a8ec65463736b6fbba4e7fad1`  
 		Last Modified: Thu, 04 Aug 2016 01:20:06 GMT  
-		Size: 29.3 KB (29333 bytes)
+		Size: 29.3 KB (29333 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2ce1af140bb81e4c169ec7aabb3299676656f25d8b7bc0361c907a80d601b684`  
 		Last Modified: Thu, 04 Aug 2016 01:23:02 GMT  
-		Size: 207.4 MB (207435977 bytes)
+		Size: 207.4 MB (207435977 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4`
 
@@ -2982,16 +3226,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.4.
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4c9d492f44f4fe3c48e1d8bde1b83df0669e24167df70ee84291d9adeb67273a`  
 		Last Modified: Thu, 04 Aug 2016 01:20:07 GMT  
-		Size: 7.6 MB (7554036 bytes)
+		Size: 7.6 MB (7554036 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6138b4d365ef9af35759faa343b9bc80c497244a8ec65463736b6fbba4e7fad1`  
 		Last Modified: Thu, 04 Aug 2016 01:20:06 GMT  
-		Size: 29.3 KB (29333 bytes)
+		Size: 29.3 KB (29333 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2ce1af140bb81e4c169ec7aabb3299676656f25d8b7bc0361c907a80d601b684`  
 		Last Modified: Thu, 04 Aug 2016 01:23:02 GMT  
-		Size: 207.4 MB (207435977 bytes)
+		Size: 207.4 MB (207435977 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:latest`
 
@@ -3029,16 +3277,20 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.4.
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4c9d492f44f4fe3c48e1d8bde1b83df0669e24167df70ee84291d9adeb67273a`  
 		Last Modified: Thu, 04 Aug 2016 01:20:07 GMT  
-		Size: 7.6 MB (7554036 bytes)
+		Size: 7.6 MB (7554036 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6138b4d365ef9af35759faa343b9bc80c497244a8ec65463736b6fbba4e7fad1`  
 		Last Modified: Thu, 04 Aug 2016 01:20:06 GMT  
-		Size: 29.3 KB (29333 bytes)
+		Size: 29.3 KB (29333 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2ce1af140bb81e4c169ec7aabb3299676656f25d8b7bc0361c907a80d601b684`  
 		Last Modified: Thu, 04 Aug 2016 01:23:02 GMT  
-		Size: 207.4 MB (207435977 bytes)
+		Size: 207.4 MB (207435977 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.4.2.11-onbuild`
 
@@ -3090,19 +3342,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4c9d492f44f4fe3c48e1d8bde1b83df0669e24167df70ee84291d9adeb67273a`  
 		Last Modified: Thu, 04 Aug 2016 01:20:07 GMT  
-		Size: 7.6 MB (7554036 bytes)
+		Size: 7.6 MB (7554036 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6138b4d365ef9af35759faa343b9bc80c497244a8ec65463736b6fbba4e7fad1`  
 		Last Modified: Thu, 04 Aug 2016 01:20:06 GMT  
-		Size: 29.3 KB (29333 bytes)
+		Size: 29.3 KB (29333 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2ce1af140bb81e4c169ec7aabb3299676656f25d8b7bc0361c907a80d601b684`  
 		Last Modified: Thu, 04 Aug 2016 01:23:02 GMT  
-		Size: 207.4 MB (207435977 bytes)
+		Size: 207.4 MB (207435977 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cb88b2fd11af40a352f7d4e1de65431e8a2b18de61fa04e13f4c67bc8087662a`  
 		Last Modified: Thu, 04 Aug 2016 01:24:01 GMT  
-		Size: 164.0 B
+		Size: 164.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.4.2-onbuild`
 
@@ -3154,19 +3411,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4c9d492f44f4fe3c48e1d8bde1b83df0669e24167df70ee84291d9adeb67273a`  
 		Last Modified: Thu, 04 Aug 2016 01:20:07 GMT  
-		Size: 7.6 MB (7554036 bytes)
+		Size: 7.6 MB (7554036 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6138b4d365ef9af35759faa343b9bc80c497244a8ec65463736b6fbba4e7fad1`  
 		Last Modified: Thu, 04 Aug 2016 01:20:06 GMT  
-		Size: 29.3 KB (29333 bytes)
+		Size: 29.3 KB (29333 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2ce1af140bb81e4c169ec7aabb3299676656f25d8b7bc0361c907a80d601b684`  
 		Last Modified: Thu, 04 Aug 2016 01:23:02 GMT  
-		Size: 207.4 MB (207435977 bytes)
+		Size: 207.4 MB (207435977 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cb88b2fd11af40a352f7d4e1de65431e8a2b18de61fa04e13f4c67bc8087662a`  
 		Last Modified: Thu, 04 Aug 2016 01:24:01 GMT  
-		Size: 164.0 B
+		Size: 164.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.4-onbuild`
 
@@ -3218,19 +3480,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4c9d492f44f4fe3c48e1d8bde1b83df0669e24167df70ee84291d9adeb67273a`  
 		Last Modified: Thu, 04 Aug 2016 01:20:07 GMT  
-		Size: 7.6 MB (7554036 bytes)
+		Size: 7.6 MB (7554036 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6138b4d365ef9af35759faa343b9bc80c497244a8ec65463736b6fbba4e7fad1`  
 		Last Modified: Thu, 04 Aug 2016 01:20:06 GMT  
-		Size: 29.3 KB (29333 bytes)
+		Size: 29.3 KB (29333 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2ce1af140bb81e4c169ec7aabb3299676656f25d8b7bc0361c907a80d601b684`  
 		Last Modified: Thu, 04 Aug 2016 01:23:02 GMT  
-		Size: 207.4 MB (207435977 bytes)
+		Size: 207.4 MB (207435977 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cb88b2fd11af40a352f7d4e1de65431e8a2b18de61fa04e13f4c67bc8087662a`  
 		Last Modified: Thu, 04 Aug 2016 01:24:01 GMT  
-		Size: 164.0 B
+		Size: 164.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4-onbuild`
 
@@ -3282,19 +3549,24 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4c9d492f44f4fe3c48e1d8bde1b83df0669e24167df70ee84291d9adeb67273a`  
 		Last Modified: Thu, 04 Aug 2016 01:20:07 GMT  
-		Size: 7.6 MB (7554036 bytes)
+		Size: 7.6 MB (7554036 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6138b4d365ef9af35759faa343b9bc80c497244a8ec65463736b6fbba4e7fad1`  
 		Last Modified: Thu, 04 Aug 2016 01:20:06 GMT  
-		Size: 29.3 KB (29333 bytes)
+		Size: 29.3 KB (29333 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2ce1af140bb81e4c169ec7aabb3299676656f25d8b7bc0361c907a80d601b684`  
 		Last Modified: Thu, 04 Aug 2016 01:23:02 GMT  
-		Size: 207.4 MB (207435977 bytes)
+		Size: 207.4 MB (207435977 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cb88b2fd11af40a352f7d4e1de65431e8a2b18de61fa04e13f4c67bc8087662a`  
 		Last Modified: Thu, 04 Aug 2016 01:24:01 GMT  
-		Size: 164.0 B
+		Size: 164.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:onbuild`
 
@@ -3346,16 +3618,21 @@ ONBUILD WORKDIR /usr/src/app/build
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4c9d492f44f4fe3c48e1d8bde1b83df0669e24167df70ee84291d9adeb67273a`  
 		Last Modified: Thu, 04 Aug 2016 01:20:07 GMT  
-		Size: 7.6 MB (7554036 bytes)
+		Size: 7.6 MB (7554036 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6138b4d365ef9af35759faa343b9bc80c497244a8ec65463736b6fbba4e7fad1`  
 		Last Modified: Thu, 04 Aug 2016 01:20:06 GMT  
-		Size: 29.3 KB (29333 bytes)
+		Size: 29.3 KB (29333 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2ce1af140bb81e4c169ec7aabb3299676656f25d8b7bc0361c907a80d601b684`  
 		Last Modified: Thu, 04 Aug 2016 01:23:02 GMT  
-		Size: 207.4 MB (207435977 bytes)
+		Size: 207.4 MB (207435977 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cb88b2fd11af40a352f7d4e1de65431e8a2b18de61fa04e13f4c67bc8087662a`  
 		Last Modified: Thu, 04 Aug 2016 01:24:01 GMT  
-		Size: 164.0 B
+		Size: 164.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

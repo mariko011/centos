@@ -127,22 +127,28 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBI
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
 		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
-		Size: 6.7 MB (6730996 bytes)
+		Size: 6.7 MB (6730996 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8c8d9d9752348fab5a9cd1140f31df8ad6ce301aca3e7d4e303d14fde010ea14`  
 		Last Modified: Thu, 28 Jul 2016 21:53:49 GMT  
-		Size: 38.9 MB (38887392 bytes)
+		Size: 38.9 MB (38887392 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0ca2d45e149607efe0fe7b7a4434d6d2353d644e2a67eeba20912824f0751795`  
 		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
-		Size: 412.9 KB (412892 bytes)
+		Size: 412.9 KB (412892 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6801ad96bb572a3cbe1b0a4549b09e2ab61769fd420c47271efaeabea5b68270`  
 		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:729aceda2abe54d0d13efc15b66110714d5897bfdc97b146ec03dc12a37e460b`  
 		Last Modified: Fri, 29 Jul 2016 04:46:21 GMT  
-		Size: 105.3 MB (105315845 bytes)
+		Size: 105.3 MB (105315845 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:6b38`
 
@@ -190,22 +196,28 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBI
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
 		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
-		Size: 6.7 MB (6730996 bytes)
+		Size: 6.7 MB (6730996 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8c8d9d9752348fab5a9cd1140f31df8ad6ce301aca3e7d4e303d14fde010ea14`  
 		Last Modified: Thu, 28 Jul 2016 21:53:49 GMT  
-		Size: 38.9 MB (38887392 bytes)
+		Size: 38.9 MB (38887392 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0ca2d45e149607efe0fe7b7a4434d6d2353d644e2a67eeba20912824f0751795`  
 		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
-		Size: 412.9 KB (412892 bytes)
+		Size: 412.9 KB (412892 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6801ad96bb572a3cbe1b0a4549b09e2ab61769fd420c47271efaeabea5b68270`  
 		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:729aceda2abe54d0d13efc15b66110714d5897bfdc97b146ec03dc12a37e460b`  
 		Last Modified: Fri, 29 Jul 2016 04:46:21 GMT  
-		Size: 105.3 MB (105315845 bytes)
+		Size: 105.3 MB (105315845 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:6-jdk`
 
@@ -253,22 +265,28 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBI
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
 		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
-		Size: 6.7 MB (6730996 bytes)
+		Size: 6.7 MB (6730996 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8c8d9d9752348fab5a9cd1140f31df8ad6ce301aca3e7d4e303d14fde010ea14`  
 		Last Modified: Thu, 28 Jul 2016 21:53:49 GMT  
-		Size: 38.9 MB (38887392 bytes)
+		Size: 38.9 MB (38887392 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0ca2d45e149607efe0fe7b7a4434d6d2353d644e2a67eeba20912824f0751795`  
 		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
-		Size: 412.9 KB (412892 bytes)
+		Size: 412.9 KB (412892 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6801ad96bb572a3cbe1b0a4549b09e2ab61769fd420c47271efaeabea5b68270`  
 		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:729aceda2abe54d0d13efc15b66110714d5897bfdc97b146ec03dc12a37e460b`  
 		Last Modified: Fri, 29 Jul 2016 04:46:21 GMT  
-		Size: 105.3 MB (105315845 bytes)
+		Size: 105.3 MB (105315845 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:6`
 
@@ -316,22 +334,28 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBI
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
 		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
-		Size: 6.7 MB (6730996 bytes)
+		Size: 6.7 MB (6730996 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8c8d9d9752348fab5a9cd1140f31df8ad6ce301aca3e7d4e303d14fde010ea14`  
 		Last Modified: Thu, 28 Jul 2016 21:53:49 GMT  
-		Size: 38.9 MB (38887392 bytes)
+		Size: 38.9 MB (38887392 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0ca2d45e149607efe0fe7b7a4434d6d2353d644e2a67eeba20912824f0751795`  
 		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
-		Size: 412.9 KB (412892 bytes)
+		Size: 412.9 KB (412892 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6801ad96bb572a3cbe1b0a4549b09e2ab61769fd420c47271efaeabea5b68270`  
 		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:729aceda2abe54d0d13efc15b66110714d5897bfdc97b146ec03dc12a37e460b`  
 		Last Modified: Fri, 29 Jul 2016 04:46:21 GMT  
-		Size: 105.3 MB (105315845 bytes)
+		Size: 105.3 MB (105315845 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-6b38-jdk`
 
@@ -379,22 +403,28 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBI
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
 		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
-		Size: 6.7 MB (6730996 bytes)
+		Size: 6.7 MB (6730996 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8c8d9d9752348fab5a9cd1140f31df8ad6ce301aca3e7d4e303d14fde010ea14`  
 		Last Modified: Thu, 28 Jul 2016 21:53:49 GMT  
-		Size: 38.9 MB (38887392 bytes)
+		Size: 38.9 MB (38887392 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0ca2d45e149607efe0fe7b7a4434d6d2353d644e2a67eeba20912824f0751795`  
 		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
-		Size: 412.9 KB (412892 bytes)
+		Size: 412.9 KB (412892 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6801ad96bb572a3cbe1b0a4549b09e2ab61769fd420c47271efaeabea5b68270`  
 		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:729aceda2abe54d0d13efc15b66110714d5897bfdc97b146ec03dc12a37e460b`  
 		Last Modified: Fri, 29 Jul 2016 04:46:21 GMT  
-		Size: 105.3 MB (105315845 bytes)
+		Size: 105.3 MB (105315845 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-6b38`
 
@@ -442,22 +472,28 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBI
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
 		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
-		Size: 6.7 MB (6730996 bytes)
+		Size: 6.7 MB (6730996 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8c8d9d9752348fab5a9cd1140f31df8ad6ce301aca3e7d4e303d14fde010ea14`  
 		Last Modified: Thu, 28 Jul 2016 21:53:49 GMT  
-		Size: 38.9 MB (38887392 bytes)
+		Size: 38.9 MB (38887392 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0ca2d45e149607efe0fe7b7a4434d6d2353d644e2a67eeba20912824f0751795`  
 		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
-		Size: 412.9 KB (412892 bytes)
+		Size: 412.9 KB (412892 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6801ad96bb572a3cbe1b0a4549b09e2ab61769fd420c47271efaeabea5b68270`  
 		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:729aceda2abe54d0d13efc15b66110714d5897bfdc97b146ec03dc12a37e460b`  
 		Last Modified: Fri, 29 Jul 2016 04:46:21 GMT  
-		Size: 105.3 MB (105315845 bytes)
+		Size: 105.3 MB (105315845 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-6-jdk`
 
@@ -505,22 +541,28 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBI
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
 		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
-		Size: 6.7 MB (6730996 bytes)
+		Size: 6.7 MB (6730996 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8c8d9d9752348fab5a9cd1140f31df8ad6ce301aca3e7d4e303d14fde010ea14`  
 		Last Modified: Thu, 28 Jul 2016 21:53:49 GMT  
-		Size: 38.9 MB (38887392 bytes)
+		Size: 38.9 MB (38887392 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0ca2d45e149607efe0fe7b7a4434d6d2353d644e2a67eeba20912824f0751795`  
 		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
-		Size: 412.9 KB (412892 bytes)
+		Size: 412.9 KB (412892 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6801ad96bb572a3cbe1b0a4549b09e2ab61769fd420c47271efaeabea5b68270`  
 		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:729aceda2abe54d0d13efc15b66110714d5897bfdc97b146ec03dc12a37e460b`  
 		Last Modified: Fri, 29 Jul 2016 04:46:21 GMT  
-		Size: 105.3 MB (105315845 bytes)
+		Size: 105.3 MB (105315845 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-6`
 
@@ -568,22 +610,28 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBI
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
 		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
-		Size: 6.7 MB (6730996 bytes)
+		Size: 6.7 MB (6730996 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8c8d9d9752348fab5a9cd1140f31df8ad6ce301aca3e7d4e303d14fde010ea14`  
 		Last Modified: Thu, 28 Jul 2016 21:53:49 GMT  
-		Size: 38.9 MB (38887392 bytes)
+		Size: 38.9 MB (38887392 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0ca2d45e149607efe0fe7b7a4434d6d2353d644e2a67eeba20912824f0751795`  
 		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
-		Size: 412.9 KB (412892 bytes)
+		Size: 412.9 KB (412892 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6801ad96bb572a3cbe1b0a4549b09e2ab61769fd420c47271efaeabea5b68270`  
 		Last Modified: Fri, 29 Jul 2016 04:46:02 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:729aceda2abe54d0d13efc15b66110714d5897bfdc97b146ec03dc12a37e460b`  
 		Last Modified: Fri, 29 Jul 2016 04:46:21 GMT  
-		Size: 105.3 MB (105315845 bytes)
+		Size: 105.3 MB (105315845 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:6b38-jre`
 
@@ -629,19 +677,24 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jre-headless="$
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
 		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
-		Size: 6.7 MB (6730996 bytes)
+		Size: 6.7 MB (6730996 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f39a83448dd963dcae12140fcda4d992c02da8a9e0c83ebada07bc6c7b857833`  
 		Last Modified: Fri, 05 Aug 2016 22:11:42 GMT  
-		Size: 359.4 KB (359361 bytes)
+		Size: 359.4 KB (359361 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c5e9307bf3fa9f5c8a30465999373df963bd269f6207af865c052ecc2668259a`  
 		Last Modified: Fri, 05 Aug 2016 22:11:41 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:26db4ef64c3678d58819b3b67ce40a8ed0e95ea1ebb8fac0a6887c1dea74416d`  
 		Last Modified: Fri, 05 Aug 2016 22:11:51 GMT  
-		Size: 52.7 MB (52655254 bytes)
+		Size: 52.7 MB (52655254 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:6-jre`
 
@@ -687,19 +740,24 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jre-headless="$
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
 		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
-		Size: 6.7 MB (6730996 bytes)
+		Size: 6.7 MB (6730996 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f39a83448dd963dcae12140fcda4d992c02da8a9e0c83ebada07bc6c7b857833`  
 		Last Modified: Fri, 05 Aug 2016 22:11:42 GMT  
-		Size: 359.4 KB (359361 bytes)
+		Size: 359.4 KB (359361 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c5e9307bf3fa9f5c8a30465999373df963bd269f6207af865c052ecc2668259a`  
 		Last Modified: Fri, 05 Aug 2016 22:11:41 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:26db4ef64c3678d58819b3b67ce40a8ed0e95ea1ebb8fac0a6887c1dea74416d`  
 		Last Modified: Fri, 05 Aug 2016 22:11:51 GMT  
-		Size: 52.7 MB (52655254 bytes)
+		Size: 52.7 MB (52655254 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-6b38-jre`
 
@@ -745,19 +803,24 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jre-headless="$
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
 		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
-		Size: 6.7 MB (6730996 bytes)
+		Size: 6.7 MB (6730996 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f39a83448dd963dcae12140fcda4d992c02da8a9e0c83ebada07bc6c7b857833`  
 		Last Modified: Fri, 05 Aug 2016 22:11:42 GMT  
-		Size: 359.4 KB (359361 bytes)
+		Size: 359.4 KB (359361 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c5e9307bf3fa9f5c8a30465999373df963bd269f6207af865c052ecc2668259a`  
 		Last Modified: Fri, 05 Aug 2016 22:11:41 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:26db4ef64c3678d58819b3b67ce40a8ed0e95ea1ebb8fac0a6887c1dea74416d`  
 		Last Modified: Fri, 05 Aug 2016 22:11:51 GMT  
-		Size: 52.7 MB (52655254 bytes)
+		Size: 52.7 MB (52655254 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-6-jre`
 
@@ -803,19 +866,24 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jre-headless="$
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
 		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
-		Size: 6.7 MB (6730996 bytes)
+		Size: 6.7 MB (6730996 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f39a83448dd963dcae12140fcda4d992c02da8a9e0c83ebada07bc6c7b857833`  
 		Last Modified: Fri, 05 Aug 2016 22:11:42 GMT  
-		Size: 359.4 KB (359361 bytes)
+		Size: 359.4 KB (359361 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c5e9307bf3fa9f5c8a30465999373df963bd269f6207af865c052ecc2668259a`  
 		Last Modified: Fri, 05 Aug 2016 22:11:41 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:26db4ef64c3678d58819b3b67ce40a8ed0e95ea1ebb8fac0a6887c1dea74416d`  
 		Last Modified: Fri, 05 Aug 2016 22:11:51 GMT  
-		Size: 52.7 MB (52655254 bytes)
+		Size: 52.7 MB (52655254 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:7u111-jdk`
 
@@ -863,22 +931,28 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBI
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 593.2 KB (593224 bytes)
+		Size: 593.2 KB (593224 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7bbd9fac5727074a3af671d929e588dc9d9b1f78cdf87523ac35926fe8cd7e01`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 239.0 B
+		Size: 239.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:15f5ec8580f15fa5e9ab163c0e8e1ef1153596f9ef3184c4ed141f4d1e41ac4a`  
 		Last Modified: Fri, 05 Aug 2016 22:13:01 GMT  
-		Size: 139.6 MB (139604792 bytes)
+		Size: 139.6 MB (139604792 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:7u111`
 
@@ -926,22 +1000,28 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBI
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 593.2 KB (593224 bytes)
+		Size: 593.2 KB (593224 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7bbd9fac5727074a3af671d929e588dc9d9b1f78cdf87523ac35926fe8cd7e01`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 239.0 B
+		Size: 239.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:15f5ec8580f15fa5e9ab163c0e8e1ef1153596f9ef3184c4ed141f4d1e41ac4a`  
 		Last Modified: Fri, 05 Aug 2016 22:13:01 GMT  
-		Size: 139.6 MB (139604792 bytes)
+		Size: 139.6 MB (139604792 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:7-jdk`
 
@@ -989,22 +1069,28 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBI
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 593.2 KB (593224 bytes)
+		Size: 593.2 KB (593224 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7bbd9fac5727074a3af671d929e588dc9d9b1f78cdf87523ac35926fe8cd7e01`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 239.0 B
+		Size: 239.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:15f5ec8580f15fa5e9ab163c0e8e1ef1153596f9ef3184c4ed141f4d1e41ac4a`  
 		Last Modified: Fri, 05 Aug 2016 22:13:01 GMT  
-		Size: 139.6 MB (139604792 bytes)
+		Size: 139.6 MB (139604792 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:7`
 
@@ -1052,22 +1138,28 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBI
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 593.2 KB (593224 bytes)
+		Size: 593.2 KB (593224 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7bbd9fac5727074a3af671d929e588dc9d9b1f78cdf87523ac35926fe8cd7e01`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 239.0 B
+		Size: 239.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:15f5ec8580f15fa5e9ab163c0e8e1ef1153596f9ef3184c4ed141f4d1e41ac4a`  
 		Last Modified: Fri, 05 Aug 2016 22:13:01 GMT  
-		Size: 139.6 MB (139604792 bytes)
+		Size: 139.6 MB (139604792 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-7u111-jdk`
 
@@ -1115,22 +1207,28 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBI
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 593.2 KB (593224 bytes)
+		Size: 593.2 KB (593224 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7bbd9fac5727074a3af671d929e588dc9d9b1f78cdf87523ac35926fe8cd7e01`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 239.0 B
+		Size: 239.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:15f5ec8580f15fa5e9ab163c0e8e1ef1153596f9ef3184c4ed141f4d1e41ac4a`  
 		Last Modified: Fri, 05 Aug 2016 22:13:01 GMT  
-		Size: 139.6 MB (139604792 bytes)
+		Size: 139.6 MB (139604792 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-7u111`
 
@@ -1178,22 +1276,28 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBI
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 593.2 KB (593224 bytes)
+		Size: 593.2 KB (593224 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7bbd9fac5727074a3af671d929e588dc9d9b1f78cdf87523ac35926fe8cd7e01`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 239.0 B
+		Size: 239.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:15f5ec8580f15fa5e9ab163c0e8e1ef1153596f9ef3184c4ed141f4d1e41ac4a`  
 		Last Modified: Fri, 05 Aug 2016 22:13:01 GMT  
-		Size: 139.6 MB (139604792 bytes)
+		Size: 139.6 MB (139604792 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-7-jdk`
 
@@ -1241,22 +1345,28 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBI
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 593.2 KB (593224 bytes)
+		Size: 593.2 KB (593224 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7bbd9fac5727074a3af671d929e588dc9d9b1f78cdf87523ac35926fe8cd7e01`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 239.0 B
+		Size: 239.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:15f5ec8580f15fa5e9ab163c0e8e1ef1153596f9ef3184c4ed141f4d1e41ac4a`  
 		Last Modified: Fri, 05 Aug 2016 22:13:01 GMT  
-		Size: 139.6 MB (139604792 bytes)
+		Size: 139.6 MB (139604792 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-7`
 
@@ -1304,22 +1414,28 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBI
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 593.2 KB (593224 bytes)
+		Size: 593.2 KB (593224 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7bbd9fac5727074a3af671d929e588dc9d9b1f78cdf87523ac35926fe8cd7e01`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 239.0 B
+		Size: 239.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:15f5ec8580f15fa5e9ab163c0e8e1ef1153596f9ef3184c4ed141f4d1e41ac4a`  
 		Last Modified: Fri, 05 Aug 2016 22:13:01 GMT  
-		Size: 139.6 MB (139604792 bytes)
+		Size: 139.6 MB (139604792 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:7u91-jdk-alpine`
 
@@ -1360,13 +1476,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4f289d9816581c1109ebadddd142aeba536b7b854a6be789a3a8ea9be7c07021`  
 		Last Modified: Thu, 07 Jul 2016 19:08:18 GMT  
-		Size: 76.6 MB (76600018 bytes)
+		Size: 76.6 MB (76600018 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:7u91-alpine`
 
@@ -1407,13 +1526,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4f289d9816581c1109ebadddd142aeba536b7b854a6be789a3a8ea9be7c07021`  
 		Last Modified: Thu, 07 Jul 2016 19:08:18 GMT  
-		Size: 76.6 MB (76600018 bytes)
+		Size: 76.6 MB (76600018 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:7-jdk-alpine`
 
@@ -1454,13 +1576,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4f289d9816581c1109ebadddd142aeba536b7b854a6be789a3a8ea9be7c07021`  
 		Last Modified: Thu, 07 Jul 2016 19:08:18 GMT  
-		Size: 76.6 MB (76600018 bytes)
+		Size: 76.6 MB (76600018 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:7-alpine`
 
@@ -1501,13 +1626,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4f289d9816581c1109ebadddd142aeba536b7b854a6be789a3a8ea9be7c07021`  
 		Last Modified: Thu, 07 Jul 2016 19:08:18 GMT  
-		Size: 76.6 MB (76600018 bytes)
+		Size: 76.6 MB (76600018 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-7u91-jdk-alpine`
 
@@ -1548,13 +1676,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4f289d9816581c1109ebadddd142aeba536b7b854a6be789a3a8ea9be7c07021`  
 		Last Modified: Thu, 07 Jul 2016 19:08:18 GMT  
-		Size: 76.6 MB (76600018 bytes)
+		Size: 76.6 MB (76600018 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-7u91-alpine`
 
@@ -1595,13 +1726,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4f289d9816581c1109ebadddd142aeba536b7b854a6be789a3a8ea9be7c07021`  
 		Last Modified: Thu, 07 Jul 2016 19:08:18 GMT  
-		Size: 76.6 MB (76600018 bytes)
+		Size: 76.6 MB (76600018 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-7-jdk-alpine`
 
@@ -1642,13 +1776,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4f289d9816581c1109ebadddd142aeba536b7b854a6be789a3a8ea9be7c07021`  
 		Last Modified: Thu, 07 Jul 2016 19:08:18 GMT  
-		Size: 76.6 MB (76600018 bytes)
+		Size: 76.6 MB (76600018 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-7-alpine`
 
@@ -1689,13 +1826,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4f289d9816581c1109ebadddd142aeba536b7b854a6be789a3a8ea9be7c07021`  
 		Last Modified: Thu, 07 Jul 2016 19:08:18 GMT  
-		Size: 76.6 MB (76600018 bytes)
+		Size: 76.6 MB (76600018 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:7u111-jre`
 
@@ -1741,19 +1881,24 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jre-headless="$
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4e195c5e4516bd317b5ebe4b42fa95f02a270ab72961125aeb6e406561685aa2`  
 		Last Modified: Fri, 05 Aug 2016 22:15:49 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:297a64db205e5f6d8d3fb5ee1a09681c51888c39784c095011832c62e4089e5f`  
 		Last Modified: Fri, 05 Aug 2016 22:16:02 GMT  
-		Size: 77.7 MB (77712169 bytes)
+		Size: 77.7 MB (77712169 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:7-jre`
 
@@ -1799,19 +1944,24 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jre-headless="$
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4e195c5e4516bd317b5ebe4b42fa95f02a270ab72961125aeb6e406561685aa2`  
 		Last Modified: Fri, 05 Aug 2016 22:15:49 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:297a64db205e5f6d8d3fb5ee1a09681c51888c39784c095011832c62e4089e5f`  
 		Last Modified: Fri, 05 Aug 2016 22:16:02 GMT  
-		Size: 77.7 MB (77712169 bytes)
+		Size: 77.7 MB (77712169 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-7u111-jre`
 
@@ -1857,19 +2007,24 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jre-headless="$
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4e195c5e4516bd317b5ebe4b42fa95f02a270ab72961125aeb6e406561685aa2`  
 		Last Modified: Fri, 05 Aug 2016 22:15:49 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:297a64db205e5f6d8d3fb5ee1a09681c51888c39784c095011832c62e4089e5f`  
 		Last Modified: Fri, 05 Aug 2016 22:16:02 GMT  
-		Size: 77.7 MB (77712169 bytes)
+		Size: 77.7 MB (77712169 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-7-jre`
 
@@ -1915,19 +2070,24 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jre-headless="$
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4e195c5e4516bd317b5ebe4b42fa95f02a270ab72961125aeb6e406561685aa2`  
 		Last Modified: Fri, 05 Aug 2016 22:15:49 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:297a64db205e5f6d8d3fb5ee1a09681c51888c39784c095011832c62e4089e5f`  
 		Last Modified: Fri, 05 Aug 2016 22:16:02 GMT  
-		Size: 77.7 MB (77712169 bytes)
+		Size: 77.7 MB (77712169 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:7u91-jre-alpine`
 
@@ -1968,13 +2128,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk7-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e6f33160b466385eae64e23db69eaaedc763a5f149aaf7688da92a6cabd459f1`  
 		Last Modified: Thu, 07 Jul 2016 19:10:08 GMT  
-		Size: 60.3 MB (60344514 bytes)
+		Size: 60.3 MB (60344514 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:7-jre-alpine`
 
@@ -2015,13 +2178,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk7-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e6f33160b466385eae64e23db69eaaedc763a5f149aaf7688da92a6cabd459f1`  
 		Last Modified: Thu, 07 Jul 2016 19:10:08 GMT  
-		Size: 60.3 MB (60344514 bytes)
+		Size: 60.3 MB (60344514 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-7u91-jre-alpine`
 
@@ -2062,13 +2228,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk7-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e6f33160b466385eae64e23db69eaaedc763a5f149aaf7688da92a6cabd459f1`  
 		Last Modified: Thu, 07 Jul 2016 19:10:08 GMT  
-		Size: 60.3 MB (60344514 bytes)
+		Size: 60.3 MB (60344514 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-7-jre-alpine`
 
@@ -2109,13 +2278,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk7-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e6f33160b466385eae64e23db69eaaedc763a5f149aaf7688da92a6cabd459f1`  
 		Last Modified: Thu, 07 Jul 2016 19:10:08 GMT  
-		Size: 60.3 MB (60344514 bytes)
+		Size: 60.3 MB (60344514 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:8u102-jdk`
 
@@ -2169,28 +2341,36 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 593.2 KB (593224 bytes)
+		Size: 593.2 KB (593224 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
 		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 220.0 B
+		Size: 220.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
 		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 240.0 B
+		Size: 240.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e5e3695c1a93559e79e9203e80ba22855cd93c2105e5e346aaebf4c7673183eb`  
 		Last Modified: Wed, 10 Aug 2016 18:49:58 GMT  
-		Size: 130.1 MB (130071319 bytes)
+		Size: 130.1 MB (130071319 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a37afaae8f5b70acee6cc9f963e7ffe068bbc02e2eb59b01e64f4b50cafa22f0`  
 		Last Modified: Wed, 10 Aug 2016 18:49:28 GMT  
-		Size: 284.4 KB (284396 bytes)
+		Size: 284.4 KB (284396 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:8u102`
 
@@ -2244,28 +2424,36 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 593.2 KB (593224 bytes)
+		Size: 593.2 KB (593224 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
 		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 220.0 B
+		Size: 220.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
 		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 240.0 B
+		Size: 240.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e5e3695c1a93559e79e9203e80ba22855cd93c2105e5e346aaebf4c7673183eb`  
 		Last Modified: Wed, 10 Aug 2016 18:49:58 GMT  
-		Size: 130.1 MB (130071319 bytes)
+		Size: 130.1 MB (130071319 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a37afaae8f5b70acee6cc9f963e7ffe068bbc02e2eb59b01e64f4b50cafa22f0`  
 		Last Modified: Wed, 10 Aug 2016 18:49:28 GMT  
-		Size: 284.4 KB (284396 bytes)
+		Size: 284.4 KB (284396 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:8-jdk`
 
@@ -2319,28 +2507,36 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 593.2 KB (593224 bytes)
+		Size: 593.2 KB (593224 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
 		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 220.0 B
+		Size: 220.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
 		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 240.0 B
+		Size: 240.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e5e3695c1a93559e79e9203e80ba22855cd93c2105e5e346aaebf4c7673183eb`  
 		Last Modified: Wed, 10 Aug 2016 18:49:58 GMT  
-		Size: 130.1 MB (130071319 bytes)
+		Size: 130.1 MB (130071319 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a37afaae8f5b70acee6cc9f963e7ffe068bbc02e2eb59b01e64f4b50cafa22f0`  
 		Last Modified: Wed, 10 Aug 2016 18:49:28 GMT  
-		Size: 284.4 KB (284396 bytes)
+		Size: 284.4 KB (284396 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:8`
 
@@ -2394,28 +2590,36 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 593.2 KB (593224 bytes)
+		Size: 593.2 KB (593224 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
 		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 220.0 B
+		Size: 220.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
 		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 240.0 B
+		Size: 240.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e5e3695c1a93559e79e9203e80ba22855cd93c2105e5e346aaebf4c7673183eb`  
 		Last Modified: Wed, 10 Aug 2016 18:49:58 GMT  
-		Size: 130.1 MB (130071319 bytes)
+		Size: 130.1 MB (130071319 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a37afaae8f5b70acee6cc9f963e7ffe068bbc02e2eb59b01e64f4b50cafa22f0`  
 		Last Modified: Wed, 10 Aug 2016 18:49:28 GMT  
-		Size: 284.4 KB (284396 bytes)
+		Size: 284.4 KB (284396 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:jdk`
 
@@ -2469,28 +2673,36 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 593.2 KB (593224 bytes)
+		Size: 593.2 KB (593224 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
 		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 220.0 B
+		Size: 220.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
 		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 240.0 B
+		Size: 240.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e5e3695c1a93559e79e9203e80ba22855cd93c2105e5e346aaebf4c7673183eb`  
 		Last Modified: Wed, 10 Aug 2016 18:49:58 GMT  
-		Size: 130.1 MB (130071319 bytes)
+		Size: 130.1 MB (130071319 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a37afaae8f5b70acee6cc9f963e7ffe068bbc02e2eb59b01e64f4b50cafa22f0`  
 		Last Modified: Wed, 10 Aug 2016 18:49:28 GMT  
-		Size: 284.4 KB (284396 bytes)
+		Size: 284.4 KB (284396 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:latest`
 
@@ -2544,28 +2756,36 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 593.2 KB (593224 bytes)
+		Size: 593.2 KB (593224 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
 		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 220.0 B
+		Size: 220.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
 		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 240.0 B
+		Size: 240.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e5e3695c1a93559e79e9203e80ba22855cd93c2105e5e346aaebf4c7673183eb`  
 		Last Modified: Wed, 10 Aug 2016 18:49:58 GMT  
-		Size: 130.1 MB (130071319 bytes)
+		Size: 130.1 MB (130071319 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a37afaae8f5b70acee6cc9f963e7ffe068bbc02e2eb59b01e64f4b50cafa22f0`  
 		Last Modified: Wed, 10 Aug 2016 18:49:28 GMT  
-		Size: 284.4 KB (284396 bytes)
+		Size: 284.4 KB (284396 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-8u102-jdk`
 
@@ -2619,28 +2839,36 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 593.2 KB (593224 bytes)
+		Size: 593.2 KB (593224 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
 		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 220.0 B
+		Size: 220.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
 		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 240.0 B
+		Size: 240.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e5e3695c1a93559e79e9203e80ba22855cd93c2105e5e346aaebf4c7673183eb`  
 		Last Modified: Wed, 10 Aug 2016 18:49:58 GMT  
-		Size: 130.1 MB (130071319 bytes)
+		Size: 130.1 MB (130071319 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a37afaae8f5b70acee6cc9f963e7ffe068bbc02e2eb59b01e64f4b50cafa22f0`  
 		Last Modified: Wed, 10 Aug 2016 18:49:28 GMT  
-		Size: 284.4 KB (284396 bytes)
+		Size: 284.4 KB (284396 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-8u102`
 
@@ -2694,28 +2922,36 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 593.2 KB (593224 bytes)
+		Size: 593.2 KB (593224 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
 		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 220.0 B
+		Size: 220.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
 		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 240.0 B
+		Size: 240.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e5e3695c1a93559e79e9203e80ba22855cd93c2105e5e346aaebf4c7673183eb`  
 		Last Modified: Wed, 10 Aug 2016 18:49:58 GMT  
-		Size: 130.1 MB (130071319 bytes)
+		Size: 130.1 MB (130071319 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a37afaae8f5b70acee6cc9f963e7ffe068bbc02e2eb59b01e64f4b50cafa22f0`  
 		Last Modified: Wed, 10 Aug 2016 18:49:28 GMT  
-		Size: 284.4 KB (284396 bytes)
+		Size: 284.4 KB (284396 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-8-jdk`
 
@@ -2769,28 +3005,36 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 593.2 KB (593224 bytes)
+		Size: 593.2 KB (593224 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
 		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 220.0 B
+		Size: 220.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
 		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 240.0 B
+		Size: 240.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e5e3695c1a93559e79e9203e80ba22855cd93c2105e5e346aaebf4c7673183eb`  
 		Last Modified: Wed, 10 Aug 2016 18:49:58 GMT  
-		Size: 130.1 MB (130071319 bytes)
+		Size: 130.1 MB (130071319 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a37afaae8f5b70acee6cc9f963e7ffe068bbc02e2eb59b01e64f4b50cafa22f0`  
 		Last Modified: Wed, 10 Aug 2016 18:49:28 GMT  
-		Size: 284.4 KB (284396 bytes)
+		Size: 284.4 KB (284396 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-8`
 
@@ -2844,28 +3088,36 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
 		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 593.2 KB (593224 bytes)
+		Size: 593.2 KB (593224 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
 		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 220.0 B
+		Size: 220.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
 		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 240.0 B
+		Size: 240.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e5e3695c1a93559e79e9203e80ba22855cd93c2105e5e346aaebf4c7673183eb`  
 		Last Modified: Wed, 10 Aug 2016 18:49:58 GMT  
-		Size: 130.1 MB (130071319 bytes)
+		Size: 130.1 MB (130071319 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a37afaae8f5b70acee6cc9f963e7ffe068bbc02e2eb59b01e64f4b50cafa22f0`  
 		Last Modified: Wed, 10 Aug 2016 18:49:28 GMT  
-		Size: 284.4 KB (284396 bytes)
+		Size: 284.4 KB (284396 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:8u92-jdk-alpine`
 
@@ -2906,13 +3158,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:87d57f795d926435b5621342da8fc8555bd966d7c4b15c6eb202e16737505c61`  
 		Last Modified: Thu, 07 Jul 2016 19:12:16 GMT  
-		Size: 49.3 MB (49325243 bytes)
+		Size: 49.3 MB (49325243 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:8u92-alpine`
 
@@ -2953,13 +3208,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:87d57f795d926435b5621342da8fc8555bd966d7c4b15c6eb202e16737505c61`  
 		Last Modified: Thu, 07 Jul 2016 19:12:16 GMT  
-		Size: 49.3 MB (49325243 bytes)
+		Size: 49.3 MB (49325243 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:8-jdk-alpine`
 
@@ -3000,13 +3258,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:87d57f795d926435b5621342da8fc8555bd966d7c4b15c6eb202e16737505c61`  
 		Last Modified: Thu, 07 Jul 2016 19:12:16 GMT  
-		Size: 49.3 MB (49325243 bytes)
+		Size: 49.3 MB (49325243 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:8-alpine`
 
@@ -3047,13 +3308,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:87d57f795d926435b5621342da8fc8555bd966d7c4b15c6eb202e16737505c61`  
 		Last Modified: Thu, 07 Jul 2016 19:12:16 GMT  
-		Size: 49.3 MB (49325243 bytes)
+		Size: 49.3 MB (49325243 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:jdk-alpine`
 
@@ -3094,13 +3358,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:87d57f795d926435b5621342da8fc8555bd966d7c4b15c6eb202e16737505c61`  
 		Last Modified: Thu, 07 Jul 2016 19:12:16 GMT  
-		Size: 49.3 MB (49325243 bytes)
+		Size: 49.3 MB (49325243 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:alpine`
 
@@ -3141,13 +3408,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:87d57f795d926435b5621342da8fc8555bd966d7c4b15c6eb202e16737505c61`  
 		Last Modified: Thu, 07 Jul 2016 19:12:16 GMT  
-		Size: 49.3 MB (49325243 bytes)
+		Size: 49.3 MB (49325243 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-8u92-jdk-alpine`
 
@@ -3188,13 +3458,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:87d57f795d926435b5621342da8fc8555bd966d7c4b15c6eb202e16737505c61`  
 		Last Modified: Thu, 07 Jul 2016 19:12:16 GMT  
-		Size: 49.3 MB (49325243 bytes)
+		Size: 49.3 MB (49325243 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-8u92-alpine`
 
@@ -3235,13 +3508,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:87d57f795d926435b5621342da8fc8555bd966d7c4b15c6eb202e16737505c61`  
 		Last Modified: Thu, 07 Jul 2016 19:12:16 GMT  
-		Size: 49.3 MB (49325243 bytes)
+		Size: 49.3 MB (49325243 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-8-jdk-alpine`
 
@@ -3282,13 +3558,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:87d57f795d926435b5621342da8fc8555bd966d7c4b15c6eb202e16737505c61`  
 		Last Modified: Thu, 07 Jul 2016 19:12:16 GMT  
-		Size: 49.3 MB (49325243 bytes)
+		Size: 49.3 MB (49325243 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-8-alpine`
 
@@ -3329,13 +3608,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:87d57f795d926435b5621342da8fc8555bd966d7c4b15c6eb202e16737505c61`  
 		Last Modified: Thu, 07 Jul 2016 19:12:16 GMT  
-		Size: 49.3 MB (49325243 bytes)
+		Size: 49.3 MB (49325243 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:8u102-jre`
 
@@ -3387,25 +3669,32 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:8-jre`
 
@@ -3457,25 +3746,32 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:jre`
 
@@ -3527,25 +3823,32 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-8u102-jre`
 
@@ -3597,25 +3900,32 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-8-jre`
 
@@ -3667,25 +3977,32 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:42f3df3273929b5e92a50ccf25b3f47da32741b852e3920a2761922fefcc910f`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 566.7 KB (566729 bytes)
+		Size: 566.7 KB (566729 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3decae4e97632104d90258921a164f84958cf0fe012006782f004e606aa0b3df`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 217.0 B
+		Size: 217.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0a60a7e0c31dd2490489e2af5afc39c309f8aa317a718b54be8e7b3cd0400c79`  
 		Last Modified: Fri, 29 Jul 2016 16:48:02 GMT  
-		Size: 241.0 B
+		Size: 241.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b42727ba883d4796223b11b2da763151f725ebd22f9ec6e2adb617665d536c88`  
 		Last Modified: Wed, 10 Aug 2016 18:53:59 GMT  
-		Size: 53.4 MB (53401736 bytes)
+		Size: 53.4 MB (53401736 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:98299a24213cc4fe454163b76c150be38a18060a7bae26d7a55657c71475688b`  
 		Last Modified: Wed, 10 Aug 2016 18:53:48 GMT  
-		Size: 284.4 KB (284364 bytes)
+		Size: 284.4 KB (284364 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:8u92-jre-alpine`
 
@@ -3726,13 +4043,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:745c1cd94ebe79c47147dc3c57bb9cba552a51edb00465b243006e01a1e941a9`  
 		Last Modified: Thu, 07 Jul 2016 19:14:28 GMT  
-		Size: 39.6 MB (39647617 bytes)
+		Size: 39.6 MB (39647617 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:8-jre-alpine`
 
@@ -3773,13 +4093,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:745c1cd94ebe79c47147dc3c57bb9cba552a51edb00465b243006e01a1e941a9`  
 		Last Modified: Thu, 07 Jul 2016 19:14:28 GMT  
-		Size: 39.6 MB (39647617 bytes)
+		Size: 39.6 MB (39647617 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:jre-alpine`
 
@@ -3820,13 +4143,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:745c1cd94ebe79c47147dc3c57bb9cba552a51edb00465b243006e01a1e941a9`  
 		Last Modified: Thu, 07 Jul 2016 19:14:28 GMT  
-		Size: 39.6 MB (39647617 bytes)
+		Size: 39.6 MB (39647617 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-8u92-jre-alpine`
 
@@ -3867,13 +4193,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:745c1cd94ebe79c47147dc3c57bb9cba552a51edb00465b243006e01a1e941a9`  
 		Last Modified: Thu, 07 Jul 2016 19:14:28 GMT  
-		Size: 39.6 MB (39647617 bytes)
+		Size: 39.6 MB (39647617 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-8-jre-alpine`
 
@@ -3914,13 +4243,16 @@ RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5726fbb708f0cfe4f045a0616cde707fb6bcc4e579926a29863ba422c0d86839`  
 		Last Modified: Thu, 23 Jun 2016 20:35:22 GMT  
-		Size: 230.0 B
+		Size: 230.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:745c1cd94ebe79c47147dc3c57bb9cba552a51edb00465b243006e01a1e941a9`  
 		Last Modified: Thu, 07 Jul 2016 19:14:28 GMT  
-		Size: 39.6 MB (39647617 bytes)
+		Size: 39.6 MB (39647617 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:9-b130-jdk`
 
@@ -3970,25 +4302,32 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$
 -	Layers:
 	-	`sha256:f8e784df59625b49bca4ce9f70150e254beed293dd99fc93da5039461894ad16`  
 		Last Modified: Thu, 28 Jul 2016 17:51:47 GMT  
-		Size: 42.5 MB (42487630 bytes)
+		Size: 42.5 MB (42487630 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f7f43e0bc93f103915619fd63da3b1b9f0c590b992436233b8a47b78abf15cb2`  
 		Last Modified: Thu, 28 Jul 2016 21:55:19 GMT  
-		Size: 20.5 MB (20510432 bytes)
+		Size: 20.5 MB (20510432 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:aa88ad4d042668a78f51a91bda0606d38e6428ec8291c78b9ca6fc056bb7881e`  
 		Last Modified: Thu, 28 Jul 2016 21:55:32 GMT  
-		Size: 47.5 MB (47493601 bytes)
+		Size: 47.5 MB (47493601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e2a931bc6193178b4096590b2a5c51e5e1de37c31f32dc4544f2b1c899aa00ad`  
 		Last Modified: Fri, 05 Aug 2016 22:23:10 GMT  
-		Size: 595.7 KB (595719 bytes)
+		Size: 595.7 KB (595719 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1eb215ff5222e68e021e3b63c9a666bd5d3356b50b1431b62f8f1d96e7e832da`  
 		Last Modified: Fri, 05 Aug 2016 22:23:06 GMT  
-		Size: 220.0 B
+		Size: 220.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:90b7b99e80371e005bd5a6d83bb03b31b138070af3fdd92e43706ed3bd710864`  
 		Last Modified: Fri, 05 Aug 2016 22:23:06 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6390e8ca1c71ea8a4e0214ef60b956c839e9bf822bfb3323690288f49ca947d2`  
 		Last Modified: Mon, 08 Aug 2016 19:34:56 GMT  
-		Size: 127.5 MB (127522918 bytes)
+		Size: 127.5 MB (127522918 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:9-b130`
 
@@ -4038,25 +4377,32 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$
 -	Layers:
 	-	`sha256:f8e784df59625b49bca4ce9f70150e254beed293dd99fc93da5039461894ad16`  
 		Last Modified: Thu, 28 Jul 2016 17:51:47 GMT  
-		Size: 42.5 MB (42487630 bytes)
+		Size: 42.5 MB (42487630 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f7f43e0bc93f103915619fd63da3b1b9f0c590b992436233b8a47b78abf15cb2`  
 		Last Modified: Thu, 28 Jul 2016 21:55:19 GMT  
-		Size: 20.5 MB (20510432 bytes)
+		Size: 20.5 MB (20510432 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:aa88ad4d042668a78f51a91bda0606d38e6428ec8291c78b9ca6fc056bb7881e`  
 		Last Modified: Thu, 28 Jul 2016 21:55:32 GMT  
-		Size: 47.5 MB (47493601 bytes)
+		Size: 47.5 MB (47493601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e2a931bc6193178b4096590b2a5c51e5e1de37c31f32dc4544f2b1c899aa00ad`  
 		Last Modified: Fri, 05 Aug 2016 22:23:10 GMT  
-		Size: 595.7 KB (595719 bytes)
+		Size: 595.7 KB (595719 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1eb215ff5222e68e021e3b63c9a666bd5d3356b50b1431b62f8f1d96e7e832da`  
 		Last Modified: Fri, 05 Aug 2016 22:23:06 GMT  
-		Size: 220.0 B
+		Size: 220.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:90b7b99e80371e005bd5a6d83bb03b31b138070af3fdd92e43706ed3bd710864`  
 		Last Modified: Fri, 05 Aug 2016 22:23:06 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6390e8ca1c71ea8a4e0214ef60b956c839e9bf822bfb3323690288f49ca947d2`  
 		Last Modified: Mon, 08 Aug 2016 19:34:56 GMT  
-		Size: 127.5 MB (127522918 bytes)
+		Size: 127.5 MB (127522918 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:9-jdk`
 
@@ -4106,25 +4452,32 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$
 -	Layers:
 	-	`sha256:f8e784df59625b49bca4ce9f70150e254beed293dd99fc93da5039461894ad16`  
 		Last Modified: Thu, 28 Jul 2016 17:51:47 GMT  
-		Size: 42.5 MB (42487630 bytes)
+		Size: 42.5 MB (42487630 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f7f43e0bc93f103915619fd63da3b1b9f0c590b992436233b8a47b78abf15cb2`  
 		Last Modified: Thu, 28 Jul 2016 21:55:19 GMT  
-		Size: 20.5 MB (20510432 bytes)
+		Size: 20.5 MB (20510432 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:aa88ad4d042668a78f51a91bda0606d38e6428ec8291c78b9ca6fc056bb7881e`  
 		Last Modified: Thu, 28 Jul 2016 21:55:32 GMT  
-		Size: 47.5 MB (47493601 bytes)
+		Size: 47.5 MB (47493601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e2a931bc6193178b4096590b2a5c51e5e1de37c31f32dc4544f2b1c899aa00ad`  
 		Last Modified: Fri, 05 Aug 2016 22:23:10 GMT  
-		Size: 595.7 KB (595719 bytes)
+		Size: 595.7 KB (595719 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1eb215ff5222e68e021e3b63c9a666bd5d3356b50b1431b62f8f1d96e7e832da`  
 		Last Modified: Fri, 05 Aug 2016 22:23:06 GMT  
-		Size: 220.0 B
+		Size: 220.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:90b7b99e80371e005bd5a6d83bb03b31b138070af3fdd92e43706ed3bd710864`  
 		Last Modified: Fri, 05 Aug 2016 22:23:06 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6390e8ca1c71ea8a4e0214ef60b956c839e9bf822bfb3323690288f49ca947d2`  
 		Last Modified: Mon, 08 Aug 2016 19:34:56 GMT  
-		Size: 127.5 MB (127522918 bytes)
+		Size: 127.5 MB (127522918 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:9`
 
@@ -4174,25 +4527,32 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$
 -	Layers:
 	-	`sha256:f8e784df59625b49bca4ce9f70150e254beed293dd99fc93da5039461894ad16`  
 		Last Modified: Thu, 28 Jul 2016 17:51:47 GMT  
-		Size: 42.5 MB (42487630 bytes)
+		Size: 42.5 MB (42487630 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f7f43e0bc93f103915619fd63da3b1b9f0c590b992436233b8a47b78abf15cb2`  
 		Last Modified: Thu, 28 Jul 2016 21:55:19 GMT  
-		Size: 20.5 MB (20510432 bytes)
+		Size: 20.5 MB (20510432 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:aa88ad4d042668a78f51a91bda0606d38e6428ec8291c78b9ca6fc056bb7881e`  
 		Last Modified: Thu, 28 Jul 2016 21:55:32 GMT  
-		Size: 47.5 MB (47493601 bytes)
+		Size: 47.5 MB (47493601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e2a931bc6193178b4096590b2a5c51e5e1de37c31f32dc4544f2b1c899aa00ad`  
 		Last Modified: Fri, 05 Aug 2016 22:23:10 GMT  
-		Size: 595.7 KB (595719 bytes)
+		Size: 595.7 KB (595719 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1eb215ff5222e68e021e3b63c9a666bd5d3356b50b1431b62f8f1d96e7e832da`  
 		Last Modified: Fri, 05 Aug 2016 22:23:06 GMT  
-		Size: 220.0 B
+		Size: 220.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:90b7b99e80371e005bd5a6d83bb03b31b138070af3fdd92e43706ed3bd710864`  
 		Last Modified: Fri, 05 Aug 2016 22:23:06 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6390e8ca1c71ea8a4e0214ef60b956c839e9bf822bfb3323690288f49ca947d2`  
 		Last Modified: Mon, 08 Aug 2016 19:34:56 GMT  
-		Size: 127.5 MB (127522918 bytes)
+		Size: 127.5 MB (127522918 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-9-b130-jdk`
 
@@ -4242,25 +4602,32 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$
 -	Layers:
 	-	`sha256:f8e784df59625b49bca4ce9f70150e254beed293dd99fc93da5039461894ad16`  
 		Last Modified: Thu, 28 Jul 2016 17:51:47 GMT  
-		Size: 42.5 MB (42487630 bytes)
+		Size: 42.5 MB (42487630 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f7f43e0bc93f103915619fd63da3b1b9f0c590b992436233b8a47b78abf15cb2`  
 		Last Modified: Thu, 28 Jul 2016 21:55:19 GMT  
-		Size: 20.5 MB (20510432 bytes)
+		Size: 20.5 MB (20510432 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:aa88ad4d042668a78f51a91bda0606d38e6428ec8291c78b9ca6fc056bb7881e`  
 		Last Modified: Thu, 28 Jul 2016 21:55:32 GMT  
-		Size: 47.5 MB (47493601 bytes)
+		Size: 47.5 MB (47493601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e2a931bc6193178b4096590b2a5c51e5e1de37c31f32dc4544f2b1c899aa00ad`  
 		Last Modified: Fri, 05 Aug 2016 22:23:10 GMT  
-		Size: 595.7 KB (595719 bytes)
+		Size: 595.7 KB (595719 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1eb215ff5222e68e021e3b63c9a666bd5d3356b50b1431b62f8f1d96e7e832da`  
 		Last Modified: Fri, 05 Aug 2016 22:23:06 GMT  
-		Size: 220.0 B
+		Size: 220.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:90b7b99e80371e005bd5a6d83bb03b31b138070af3fdd92e43706ed3bd710864`  
 		Last Modified: Fri, 05 Aug 2016 22:23:06 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6390e8ca1c71ea8a4e0214ef60b956c839e9bf822bfb3323690288f49ca947d2`  
 		Last Modified: Mon, 08 Aug 2016 19:34:56 GMT  
-		Size: 127.5 MB (127522918 bytes)
+		Size: 127.5 MB (127522918 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-9-b130`
 
@@ -4310,25 +4677,32 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$
 -	Layers:
 	-	`sha256:f8e784df59625b49bca4ce9f70150e254beed293dd99fc93da5039461894ad16`  
 		Last Modified: Thu, 28 Jul 2016 17:51:47 GMT  
-		Size: 42.5 MB (42487630 bytes)
+		Size: 42.5 MB (42487630 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f7f43e0bc93f103915619fd63da3b1b9f0c590b992436233b8a47b78abf15cb2`  
 		Last Modified: Thu, 28 Jul 2016 21:55:19 GMT  
-		Size: 20.5 MB (20510432 bytes)
+		Size: 20.5 MB (20510432 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:aa88ad4d042668a78f51a91bda0606d38e6428ec8291c78b9ca6fc056bb7881e`  
 		Last Modified: Thu, 28 Jul 2016 21:55:32 GMT  
-		Size: 47.5 MB (47493601 bytes)
+		Size: 47.5 MB (47493601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e2a931bc6193178b4096590b2a5c51e5e1de37c31f32dc4544f2b1c899aa00ad`  
 		Last Modified: Fri, 05 Aug 2016 22:23:10 GMT  
-		Size: 595.7 KB (595719 bytes)
+		Size: 595.7 KB (595719 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1eb215ff5222e68e021e3b63c9a666bd5d3356b50b1431b62f8f1d96e7e832da`  
 		Last Modified: Fri, 05 Aug 2016 22:23:06 GMT  
-		Size: 220.0 B
+		Size: 220.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:90b7b99e80371e005bd5a6d83bb03b31b138070af3fdd92e43706ed3bd710864`  
 		Last Modified: Fri, 05 Aug 2016 22:23:06 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6390e8ca1c71ea8a4e0214ef60b956c839e9bf822bfb3323690288f49ca947d2`  
 		Last Modified: Mon, 08 Aug 2016 19:34:56 GMT  
-		Size: 127.5 MB (127522918 bytes)
+		Size: 127.5 MB (127522918 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-9-jdk`
 
@@ -4378,25 +4752,32 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$
 -	Layers:
 	-	`sha256:f8e784df59625b49bca4ce9f70150e254beed293dd99fc93da5039461894ad16`  
 		Last Modified: Thu, 28 Jul 2016 17:51:47 GMT  
-		Size: 42.5 MB (42487630 bytes)
+		Size: 42.5 MB (42487630 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f7f43e0bc93f103915619fd63da3b1b9f0c590b992436233b8a47b78abf15cb2`  
 		Last Modified: Thu, 28 Jul 2016 21:55:19 GMT  
-		Size: 20.5 MB (20510432 bytes)
+		Size: 20.5 MB (20510432 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:aa88ad4d042668a78f51a91bda0606d38e6428ec8291c78b9ca6fc056bb7881e`  
 		Last Modified: Thu, 28 Jul 2016 21:55:32 GMT  
-		Size: 47.5 MB (47493601 bytes)
+		Size: 47.5 MB (47493601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e2a931bc6193178b4096590b2a5c51e5e1de37c31f32dc4544f2b1c899aa00ad`  
 		Last Modified: Fri, 05 Aug 2016 22:23:10 GMT  
-		Size: 595.7 KB (595719 bytes)
+		Size: 595.7 KB (595719 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1eb215ff5222e68e021e3b63c9a666bd5d3356b50b1431b62f8f1d96e7e832da`  
 		Last Modified: Fri, 05 Aug 2016 22:23:06 GMT  
-		Size: 220.0 B
+		Size: 220.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:90b7b99e80371e005bd5a6d83bb03b31b138070af3fdd92e43706ed3bd710864`  
 		Last Modified: Fri, 05 Aug 2016 22:23:06 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6390e8ca1c71ea8a4e0214ef60b956c839e9bf822bfb3323690288f49ca947d2`  
 		Last Modified: Mon, 08 Aug 2016 19:34:56 GMT  
-		Size: 127.5 MB (127522918 bytes)
+		Size: 127.5 MB (127522918 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-9`
 
@@ -4446,25 +4827,32 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$
 -	Layers:
 	-	`sha256:f8e784df59625b49bca4ce9f70150e254beed293dd99fc93da5039461894ad16`  
 		Last Modified: Thu, 28 Jul 2016 17:51:47 GMT  
-		Size: 42.5 MB (42487630 bytes)
+		Size: 42.5 MB (42487630 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f7f43e0bc93f103915619fd63da3b1b9f0c590b992436233b8a47b78abf15cb2`  
 		Last Modified: Thu, 28 Jul 2016 21:55:19 GMT  
-		Size: 20.5 MB (20510432 bytes)
+		Size: 20.5 MB (20510432 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:aa88ad4d042668a78f51a91bda0606d38e6428ec8291c78b9ca6fc056bb7881e`  
 		Last Modified: Thu, 28 Jul 2016 21:55:32 GMT  
-		Size: 47.5 MB (47493601 bytes)
+		Size: 47.5 MB (47493601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e2a931bc6193178b4096590b2a5c51e5e1de37c31f32dc4544f2b1c899aa00ad`  
 		Last Modified: Fri, 05 Aug 2016 22:23:10 GMT  
-		Size: 595.7 KB (595719 bytes)
+		Size: 595.7 KB (595719 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1eb215ff5222e68e021e3b63c9a666bd5d3356b50b1431b62f8f1d96e7e832da`  
 		Last Modified: Fri, 05 Aug 2016 22:23:06 GMT  
-		Size: 220.0 B
+		Size: 220.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:90b7b99e80371e005bd5a6d83bb03b31b138070af3fdd92e43706ed3bd710864`  
 		Last Modified: Fri, 05 Aug 2016 22:23:06 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6390e8ca1c71ea8a4e0214ef60b956c839e9bf822bfb3323690288f49ca947d2`  
 		Last Modified: Mon, 08 Aug 2016 19:34:56 GMT  
-		Size: 127.5 MB (127522918 bytes)
+		Size: 127.5 MB (127522918 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:9-b130-jre`
 
@@ -4512,22 +4900,28 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jre-headless="$
 -	Layers:
 	-	`sha256:f8e784df59625b49bca4ce9f70150e254beed293dd99fc93da5039461894ad16`  
 		Last Modified: Thu, 28 Jul 2016 17:51:47 GMT  
-		Size: 42.5 MB (42487630 bytes)
+		Size: 42.5 MB (42487630 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f7f43e0bc93f103915619fd63da3b1b9f0c590b992436233b8a47b78abf15cb2`  
 		Last Modified: Thu, 28 Jul 2016 21:55:19 GMT  
-		Size: 20.5 MB (20510432 bytes)
+		Size: 20.5 MB (20510432 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8dac9c6cdc021a553de7e6d21c711d1fadd6609e7ceb78e4c398c448dab13f26`  
 		Last Modified: Fri, 05 Aug 2016 22:24:54 GMT  
-		Size: 563.0 KB (563036 bytes)
+		Size: 563.0 KB (563036 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:302fef8388a18bd393e83e098448af27ab17d62c9a669de7350588e3549edfd8`  
 		Last Modified: Fri, 05 Aug 2016 22:24:54 GMT  
-		Size: 216.0 B
+		Size: 216.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:854858b3adef4a7c2408a079b1655ff2a26e798903e810ddc5d7369294fb99a5`  
 		Last Modified: Fri, 05 Aug 2016 22:24:54 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7712566dcacdd66edc048916e80fa844505b0ab8f611911df910b30979d31804`  
 		Last Modified: Mon, 08 Aug 2016 19:36:46 GMT  
-		Size: 127.9 MB (127926611 bytes)
+		Size: 127.9 MB (127926611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:9-jre`
 
@@ -4575,22 +4969,28 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jre-headless="$
 -	Layers:
 	-	`sha256:f8e784df59625b49bca4ce9f70150e254beed293dd99fc93da5039461894ad16`  
 		Last Modified: Thu, 28 Jul 2016 17:51:47 GMT  
-		Size: 42.5 MB (42487630 bytes)
+		Size: 42.5 MB (42487630 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f7f43e0bc93f103915619fd63da3b1b9f0c590b992436233b8a47b78abf15cb2`  
 		Last Modified: Thu, 28 Jul 2016 21:55:19 GMT  
-		Size: 20.5 MB (20510432 bytes)
+		Size: 20.5 MB (20510432 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8dac9c6cdc021a553de7e6d21c711d1fadd6609e7ceb78e4c398c448dab13f26`  
 		Last Modified: Fri, 05 Aug 2016 22:24:54 GMT  
-		Size: 563.0 KB (563036 bytes)
+		Size: 563.0 KB (563036 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:302fef8388a18bd393e83e098448af27ab17d62c9a669de7350588e3549edfd8`  
 		Last Modified: Fri, 05 Aug 2016 22:24:54 GMT  
-		Size: 216.0 B
+		Size: 216.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:854858b3adef4a7c2408a079b1655ff2a26e798903e810ddc5d7369294fb99a5`  
 		Last Modified: Fri, 05 Aug 2016 22:24:54 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7712566dcacdd66edc048916e80fa844505b0ab8f611911df910b30979d31804`  
 		Last Modified: Mon, 08 Aug 2016 19:36:46 GMT  
-		Size: 127.9 MB (127926611 bytes)
+		Size: 127.9 MB (127926611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-9-b130-jre`
 
@@ -4638,22 +5038,28 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jre-headless="$
 -	Layers:
 	-	`sha256:f8e784df59625b49bca4ce9f70150e254beed293dd99fc93da5039461894ad16`  
 		Last Modified: Thu, 28 Jul 2016 17:51:47 GMT  
-		Size: 42.5 MB (42487630 bytes)
+		Size: 42.5 MB (42487630 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f7f43e0bc93f103915619fd63da3b1b9f0c590b992436233b8a47b78abf15cb2`  
 		Last Modified: Thu, 28 Jul 2016 21:55:19 GMT  
-		Size: 20.5 MB (20510432 bytes)
+		Size: 20.5 MB (20510432 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8dac9c6cdc021a553de7e6d21c711d1fadd6609e7ceb78e4c398c448dab13f26`  
 		Last Modified: Fri, 05 Aug 2016 22:24:54 GMT  
-		Size: 563.0 KB (563036 bytes)
+		Size: 563.0 KB (563036 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:302fef8388a18bd393e83e098448af27ab17d62c9a669de7350588e3549edfd8`  
 		Last Modified: Fri, 05 Aug 2016 22:24:54 GMT  
-		Size: 216.0 B
+		Size: 216.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:854858b3adef4a7c2408a079b1655ff2a26e798903e810ddc5d7369294fb99a5`  
 		Last Modified: Fri, 05 Aug 2016 22:24:54 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7712566dcacdd66edc048916e80fa844505b0ab8f611911df910b30979d31804`  
 		Last Modified: Mon, 08 Aug 2016 19:36:46 GMT  
-		Size: 127.9 MB (127926611 bytes)
+		Size: 127.9 MB (127926611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-9-jre`
 
@@ -4701,19 +5107,25 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jre-headless="$
 -	Layers:
 	-	`sha256:f8e784df59625b49bca4ce9f70150e254beed293dd99fc93da5039461894ad16`  
 		Last Modified: Thu, 28 Jul 2016 17:51:47 GMT  
-		Size: 42.5 MB (42487630 bytes)
+		Size: 42.5 MB (42487630 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f7f43e0bc93f103915619fd63da3b1b9f0c590b992436233b8a47b78abf15cb2`  
 		Last Modified: Thu, 28 Jul 2016 21:55:19 GMT  
-		Size: 20.5 MB (20510432 bytes)
+		Size: 20.5 MB (20510432 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8dac9c6cdc021a553de7e6d21c711d1fadd6609e7ceb78e4c398c448dab13f26`  
 		Last Modified: Fri, 05 Aug 2016 22:24:54 GMT  
-		Size: 563.0 KB (563036 bytes)
+		Size: 563.0 KB (563036 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:302fef8388a18bd393e83e098448af27ab17d62c9a669de7350588e3549edfd8`  
 		Last Modified: Fri, 05 Aug 2016 22:24:54 GMT  
-		Size: 216.0 B
+		Size: 216.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:854858b3adef4a7c2408a079b1655ff2a26e798903e810ddc5d7369294fb99a5`  
 		Last Modified: Fri, 05 Aug 2016 22:24:54 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7712566dcacdd66edc048916e80fa844505b0ab8f611911df910b30979d31804`  
 		Last Modified: Mon, 08 Aug 2016 19:36:46 GMT  
-		Size: 127.9 MB (127926611 bytes)
+		Size: 127.9 MB (127926611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

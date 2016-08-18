@@ -73,22 +73,28 @@ CMD ["eggdrop.conf"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ffa1aecf831608ace74ed8faaa14ed462526525d39c2eef9187f8100556551ad`  
 		Last Modified: Wed, 03 Aug 2016 20:21:56 GMT  
-		Size: 1.3 KB (1268 bytes)
+		Size: 1.3 KB (1268 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:91e5758aac6a3053351bd9552e3e76c158a4c8ec5a1184d673d2d987ec309dd6`  
 		Last Modified: Wed, 03 Aug 2016 20:21:56 GMT  
-		Size: 7.9 KB (7924 bytes)
+		Size: 7.9 KB (7924 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:366436d7caffeabe09906070d5510600ee491d7b2d947ee5a088f9052b8ea638`  
 		Last Modified: Tue, 16 Aug 2016 16:40:54 GMT  
-		Size: 6.0 MB (5951987 bytes)
+		Size: 6.0 MB (5951987 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:784857fcadcc5d81a270208da6a1bf1914936f820ef9ab60feb0f4f45e407b49`  
 		Last Modified: Tue, 16 Aug 2016 16:40:52 GMT  
-		Size: 1.6 KB (1559 bytes)
+		Size: 1.6 KB (1559 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:875e1cd6efd37f6d41e00a9eecf0962da8dbfc18e7eea68d56dee4dc6f17087c`  
 		Last Modified: Tue, 16 Aug 2016 16:40:52 GMT  
-		Size: 696.0 B
+		Size: 696.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `eggdrop:1.8.0`
 
@@ -153,22 +159,28 @@ CMD ["eggdrop.conf"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ffa1aecf831608ace74ed8faaa14ed462526525d39c2eef9187f8100556551ad`  
 		Last Modified: Wed, 03 Aug 2016 20:21:56 GMT  
-		Size: 1.3 KB (1268 bytes)
+		Size: 1.3 KB (1268 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:91e5758aac6a3053351bd9552e3e76c158a4c8ec5a1184d673d2d987ec309dd6`  
 		Last Modified: Wed, 03 Aug 2016 20:21:56 GMT  
-		Size: 7.9 KB (7924 bytes)
+		Size: 7.9 KB (7924 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:366436d7caffeabe09906070d5510600ee491d7b2d947ee5a088f9052b8ea638`  
 		Last Modified: Tue, 16 Aug 2016 16:40:54 GMT  
-		Size: 6.0 MB (5951987 bytes)
+		Size: 6.0 MB (5951987 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:784857fcadcc5d81a270208da6a1bf1914936f820ef9ab60feb0f4f45e407b49`  
 		Last Modified: Tue, 16 Aug 2016 16:40:52 GMT  
-		Size: 1.6 KB (1559 bytes)
+		Size: 1.6 KB (1559 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:875e1cd6efd37f6d41e00a9eecf0962da8dbfc18e7eea68d56dee4dc6f17087c`  
 		Last Modified: Tue, 16 Aug 2016 16:40:52 GMT  
-		Size: 696.0 B
+		Size: 696.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `eggdrop:develop`
 
@@ -233,22 +245,28 @@ CMD ["eggdrop.conf"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ffa1aecf831608ace74ed8faaa14ed462526525d39c2eef9187f8100556551ad`  
 		Last Modified: Wed, 03 Aug 2016 20:21:56 GMT  
-		Size: 1.3 KB (1268 bytes)
+		Size: 1.3 KB (1268 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:91e5758aac6a3053351bd9552e3e76c158a4c8ec5a1184d673d2d987ec309dd6`  
 		Last Modified: Wed, 03 Aug 2016 20:21:56 GMT  
-		Size: 7.9 KB (7924 bytes)
+		Size: 7.9 KB (7924 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:366436d7caffeabe09906070d5510600ee491d7b2d947ee5a088f9052b8ea638`  
 		Last Modified: Tue, 16 Aug 2016 16:40:54 GMT  
-		Size: 6.0 MB (5951987 bytes)
+		Size: 6.0 MB (5951987 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:784857fcadcc5d81a270208da6a1bf1914936f820ef9ab60feb0f4f45e407b49`  
 		Last Modified: Tue, 16 Aug 2016 16:40:52 GMT  
-		Size: 1.6 KB (1559 bytes)
+		Size: 1.6 KB (1559 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:875e1cd6efd37f6d41e00a9eecf0962da8dbfc18e7eea68d56dee4dc6f17087c`  
 		Last Modified: Tue, 16 Aug 2016 16:40:52 GMT  
-		Size: 696.0 B
+		Size: 696.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `eggdrop:1.6`
 
@@ -309,22 +327,28 @@ CMD ["eggdrop.conf"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ffa1aecf831608ace74ed8faaa14ed462526525d39c2eef9187f8100556551ad`  
 		Last Modified: Wed, 03 Aug 2016 20:21:56 GMT  
-		Size: 1.3 KB (1268 bytes)
+		Size: 1.3 KB (1268 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:91e5758aac6a3053351bd9552e3e76c158a4c8ec5a1184d673d2d987ec309dd6`  
 		Last Modified: Wed, 03 Aug 2016 20:21:56 GMT  
-		Size: 7.9 KB (7924 bytes)
+		Size: 7.9 KB (7924 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:138e075e776c05ab8fcd9c3f6edb525f3dc9a28ea33696c47cf4d68ce4a343eb`  
 		Last Modified: Wed, 03 Aug 2016 20:21:58 GMT  
-		Size: 4.0 MB (3965847 bytes)
+		Size: 4.0 MB (3965847 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:098c467c6ea47b59a97cb8b6377149c94ea7a51e200ec6a7f07c96d1967e90de`  
 		Last Modified: Wed, 03 Aug 2016 20:21:56 GMT  
-		Size: 1.6 KB (1559 bytes)
+		Size: 1.6 KB (1559 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f4e5d67f83a5a97e66966d5f94e5376727700b2d27a1e35d43039b84f45c1420`  
 		Last Modified: Wed, 03 Aug 2016 20:21:56 GMT  
-		Size: 696.0 B
+		Size: 696.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `eggdrop:1.6.21`
 
@@ -385,22 +409,28 @@ CMD ["eggdrop.conf"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ffa1aecf831608ace74ed8faaa14ed462526525d39c2eef9187f8100556551ad`  
 		Last Modified: Wed, 03 Aug 2016 20:21:56 GMT  
-		Size: 1.3 KB (1268 bytes)
+		Size: 1.3 KB (1268 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:91e5758aac6a3053351bd9552e3e76c158a4c8ec5a1184d673d2d987ec309dd6`  
 		Last Modified: Wed, 03 Aug 2016 20:21:56 GMT  
-		Size: 7.9 KB (7924 bytes)
+		Size: 7.9 KB (7924 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:138e075e776c05ab8fcd9c3f6edb525f3dc9a28ea33696c47cf4d68ce4a343eb`  
 		Last Modified: Wed, 03 Aug 2016 20:21:58 GMT  
-		Size: 4.0 MB (3965847 bytes)
+		Size: 4.0 MB (3965847 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:098c467c6ea47b59a97cb8b6377149c94ea7a51e200ec6a7f07c96d1967e90de`  
 		Last Modified: Wed, 03 Aug 2016 20:21:56 GMT  
-		Size: 1.6 KB (1559 bytes)
+		Size: 1.6 KB (1559 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f4e5d67f83a5a97e66966d5f94e5376727700b2d27a1e35d43039b84f45c1420`  
 		Last Modified: Wed, 03 Aug 2016 20:21:56 GMT  
-		Size: 696.0 B
+		Size: 696.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `eggdrop:stable`
 
@@ -461,22 +491,28 @@ CMD ["eggdrop.conf"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ffa1aecf831608ace74ed8faaa14ed462526525d39c2eef9187f8100556551ad`  
 		Last Modified: Wed, 03 Aug 2016 20:21:56 GMT  
-		Size: 1.3 KB (1268 bytes)
+		Size: 1.3 KB (1268 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:91e5758aac6a3053351bd9552e3e76c158a4c8ec5a1184d673d2d987ec309dd6`  
 		Last Modified: Wed, 03 Aug 2016 20:21:56 GMT  
-		Size: 7.9 KB (7924 bytes)
+		Size: 7.9 KB (7924 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:138e075e776c05ab8fcd9c3f6edb525f3dc9a28ea33696c47cf4d68ce4a343eb`  
 		Last Modified: Wed, 03 Aug 2016 20:21:58 GMT  
-		Size: 4.0 MB (3965847 bytes)
+		Size: 4.0 MB (3965847 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:098c467c6ea47b59a97cb8b6377149c94ea7a51e200ec6a7f07c96d1967e90de`  
 		Last Modified: Wed, 03 Aug 2016 20:21:56 GMT  
-		Size: 1.6 KB (1559 bytes)
+		Size: 1.6 KB (1559 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f4e5d67f83a5a97e66966d5f94e5376727700b2d27a1e35d43039b84f45c1420`  
 		Last Modified: Wed, 03 Aug 2016 20:21:56 GMT  
-		Size: 696.0 B
+		Size: 696.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `eggdrop:latest`
 
@@ -537,19 +573,25 @@ CMD ["eggdrop.conf"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ffa1aecf831608ace74ed8faaa14ed462526525d39c2eef9187f8100556551ad`  
 		Last Modified: Wed, 03 Aug 2016 20:21:56 GMT  
-		Size: 1.3 KB (1268 bytes)
+		Size: 1.3 KB (1268 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:91e5758aac6a3053351bd9552e3e76c158a4c8ec5a1184d673d2d987ec309dd6`  
 		Last Modified: Wed, 03 Aug 2016 20:21:56 GMT  
-		Size: 7.9 KB (7924 bytes)
+		Size: 7.9 KB (7924 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:138e075e776c05ab8fcd9c3f6edb525f3dc9a28ea33696c47cf4d68ce4a343eb`  
 		Last Modified: Wed, 03 Aug 2016 20:21:58 GMT  
-		Size: 4.0 MB (3965847 bytes)
+		Size: 4.0 MB (3965847 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:098c467c6ea47b59a97cb8b6377149c94ea7a51e200ec6a7f07c96d1967e90de`  
 		Last Modified: Wed, 03 Aug 2016 20:21:56 GMT  
-		Size: 1.6 KB (1559 bytes)
+		Size: 1.6 KB (1559 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f4e5d67f83a5a97e66966d5f94e5376727700b2d27a1e35d43039b84f45c1420`  
 		Last Modified: Wed, 03 Aug 2016 20:21:56 GMT  
-		Size: 696.0 B
+		Size: 696.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

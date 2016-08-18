@@ -35,13 +35,16 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
 		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+		Size: 32.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4a073de8a536a568bbf8d0f30c6946d4aa0e6f951d8791f710e22e1eec6143e0`  
 		Last Modified: Mon, 31 Aug 2015 16:55:18 GMT  
-		Size: 122.3 MB (122252467 bytes)
+		Size: 122.3 MB (122252467 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
 		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+		Size: 32.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `crux:3.1`
 
@@ -73,10 +76,13 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
 		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+		Size: 32.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4a073de8a536a568bbf8d0f30c6946d4aa0e6f951d8791f710e22e1eec6143e0`  
 		Last Modified: Mon, 31 Aug 2015 16:55:18 GMT  
-		Size: 122.3 MB (122252467 bytes)
+		Size: 122.3 MB (122252467 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
 		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+		Size: 32.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

@@ -54,16 +54,20 @@ CMD ["server" "-dev"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b535b9a3c0aa8962d61302b28cb507ddb70a8794867e11f1c7270e123e44d8c6`  
 		Last Modified: Thu, 21 Jul 2016 17:10:20 GMT  
-		Size: 11.9 MB (11946705 bytes)
+		Size: 11.9 MB (11946705 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:be2a222963bdd95dbdf534c45150db702dfd6bce63ec29201a8558c8bfc2773e`  
 		Last Modified: Thu, 21 Jul 2016 17:10:14 GMT  
-		Size: 148.0 B
+		Size: 148.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:79fcacb436bda52a58f4df4ccf130fc203a9c2ca2bfd64732b54d944a376b3d0`  
 		Last Modified: Thu, 21 Jul 2016 17:10:14 GMT  
-		Size: 1.1 KB (1071 bytes)
+		Size: 1.1 KB (1071 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `vault:latest`
 
@@ -114,13 +118,17 @@ CMD ["server" "-dev"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b535b9a3c0aa8962d61302b28cb507ddb70a8794867e11f1c7270e123e44d8c6`  
 		Last Modified: Thu, 21 Jul 2016 17:10:20 GMT  
-		Size: 11.9 MB (11946705 bytes)
+		Size: 11.9 MB (11946705 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:be2a222963bdd95dbdf534c45150db702dfd6bce63ec29201a8558c8bfc2773e`  
 		Last Modified: Thu, 21 Jul 2016 17:10:14 GMT  
-		Size: 148.0 B
+		Size: 148.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:79fcacb436bda52a58f4df4ccf130fc203a9c2ca2bfd64732b54d944a376b3d0`  
 		Last Modified: Thu, 21 Jul 2016 17:10:14 GMT  
-		Size: 1.1 KB (1071 bytes)
+		Size: 1.1 KB (1071 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

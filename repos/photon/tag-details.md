@@ -35,7 +35,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:93b3dcee11d6e078e2e19472924528834da21071067ea1c5ac6c72aa9a7c4530`  
 		Last Modified: Mon, 27 Jun 2016 16:56:13 GMT  
-		Size: 48.0 MB (48006645 bytes)
+		Size: 48.0 MB (48006645 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `photon:latest`
 
@@ -67,4 +68,5 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:93b3dcee11d6e078e2e19472924528834da21071067ea1c5ac6c72aa9a7c4530`  
 		Last Modified: Mon, 27 Jun 2016 16:56:13 GMT  
-		Size: 48.0 MB (48006645 bytes)
+		Size: 48.0 MB (48006645 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

@@ -63,28 +63,36 @@ CMD ["gzserver"]
 -	Layers:
 	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
 		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
-		Size: 65.7 MB (65699368 bytes)
+		Size: 65.7 MB (65699368 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
 		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 101.4 KB (101415 bytes)
+		Size: 101.4 KB (101415 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
 		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 365.0 B
+		Size: 365.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
 		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 681.0 B
+		Size: 681.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:654eb25264349aa69f086eddbab0eab960282d006ef74541469de64b125f8304`  
 		Last Modified: Fri, 24 Jun 2016 18:35:59 GMT  
-		Size: 13.1 KB (13107 bytes)
+		Size: 13.1 KB (13107 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5d8d3681a6e347340e978761403c316aae3fe8a221f0a4eecb7882d8bc891ba6`  
 		Last Modified: Fri, 24 Jun 2016 18:36:00 GMT  
-		Size: 258.2 KB (258156 bytes)
+		Size: 258.2 KB (258156 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:95b23616c88b7026065b2a03a8f4cdd96b6d20294fb16edde7cd4c455e86cf04`  
 		Last Modified: Fri, 24 Jun 2016 18:36:34 GMT  
-		Size: 143.9 MB (143894160 bytes)
+		Size: 143.9 MB (143894160 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f4f87d95a220a2bba62b3fd7769e261672746f5b0dbe8f010882a18d1889c166`  
 		Last Modified: Fri, 24 Jun 2016 18:35:59 GMT  
-		Size: 191.0 B
+		Size: 191.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `gazebo:libgazebo4`
 
@@ -143,34 +151,44 @@ RUN apt-get update && apt-get install -q -y\
 -	Layers:
 	-	`sha256:c7b8f85f8067a94bb31a13a15602bda53c6b1d213da9b43b85711f8d44994c2b`  
 		Last Modified: Fri, 06 May 2016 16:28:30 GMT  
-		Size: 231.0 MB (230972400 bytes)
+		Size: 231.0 MB (230972400 bytes)  
+		MIME: application/octet-stream
 	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
 		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+		Size: 32.0 B  
+		MIME: application/octet-stream
 	-	`sha256:c2d11fc7053715b17bb3201f8b7f0e6d49b325314350828de77b8ad7c757fd0a`  
 		Last Modified: Thu, 20 Aug 2015 01:38:05 GMT  
-		Size: 191.0 B
+		Size: 191.0 B  
+		MIME: application/octet-stream
 	-	`sha256:0bc291156ed70a8f7279e0e4fe29c57876a813f447781bb7bec0fa7c9e73339d`  
 		Last Modified: Fri, 06 May 2016 16:24:38 GMT  
-		Size: 143.9 MB (143871085 bytes)
+		Size: 143.9 MB (143871085 bytes)  
+		MIME: application/octet-stream
 	-	`sha256:877e1219535f0fbf18cad51b5693defe3e285200ad5bcbe267354604fe471da4`  
 		Last Modified: Fri, 06 May 2016 16:25:01 GMT  
-		Size: 258.2 KB (258180 bytes)
+		Size: 258.2 KB (258180 bytes)  
+		MIME: application/octet-stream
 	-	`sha256:04943db5ba6c335f810572d4123f85c613bd4faa824a4533145f3ec5f30e86f7`  
 		Last Modified: Fri, 06 May 2016 16:25:05 GMT  
-		Size: 13.1 KB (13106 bytes)
+		Size: 13.1 KB (13106 bytes)  
+		MIME: application/octet-stream
 	-	`sha256:52de432f084bc072024d55b0f483358b607d0cf46d7053e3b6aefc98beaf27bf`  
 		Last Modified: Tue, 03 May 2016 23:14:32 GMT  
-		Size: 680.0 B
+		Size: 680.0 B  
+		MIME: application/octet-stream
 	-	`sha256:f0be3084efe90c704df85e3bff8df5d858e1ff546511c8306d80de561cc18fb5`  
 		Last Modified: Tue, 03 May 2016 23:14:36 GMT  
-		Size: 365.0 B
+		Size: 365.0 B  
+		MIME: application/octet-stream
 	-	`sha256:23eda618d4513331d49c6de76aaa051919f7b57752bcd8fee3cba37f816cbafd`  
 		Last Modified: Tue, 03 May 2016 23:14:39 GMT  
-		Size: 71.5 KB (71481 bytes)
+		Size: 71.5 KB (71481 bytes)  
+		MIME: application/octet-stream
 	-	`sha256:6599cadaf950a71af51aa84b85e6cdb1990287b79f8e71a78f6986b318d4c4a0`  
 		Last Modified: Tue, 03 May 2016 23:15:04 GMT  
-		Size: 65.7 MB (65693247 bytes)
+		Size: 65.7 MB (65693247 bytes)  
+		MIME: application/octet-stream
 
 ## `gazebo:gzserver5`
 
@@ -223,28 +241,36 @@ CMD ["gzserver"]
 -	Layers:
 	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
 		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
-		Size: 65.7 MB (65699368 bytes)
+		Size: 65.7 MB (65699368 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
 		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 101.4 KB (101415 bytes)
+		Size: 101.4 KB (101415 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
 		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 365.0 B
+		Size: 365.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
 		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 681.0 B
+		Size: 681.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:654eb25264349aa69f086eddbab0eab960282d006ef74541469de64b125f8304`  
 		Last Modified: Fri, 24 Jun 2016 18:35:59 GMT  
-		Size: 13.1 KB (13107 bytes)
+		Size: 13.1 KB (13107 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5d8d3681a6e347340e978761403c316aae3fe8a221f0a4eecb7882d8bc891ba6`  
 		Last Modified: Fri, 24 Jun 2016 18:36:00 GMT  
-		Size: 258.2 KB (258156 bytes)
+		Size: 258.2 KB (258156 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:055f55c05ba24f0ec52ffb34c648601da7fa89d46fafb1fd380c598c6beadadf`  
 		Last Modified: Fri, 24 Jun 2016 18:43:49 GMT  
-		Size: 164.5 MB (164508472 bytes)
+		Size: 164.5 MB (164508472 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:72b52ca9df54724f1a24021d0bf624d809fd407d2d2165f493e876561ab2485c`  
 		Last Modified: Fri, 24 Jun 2016 18:42:56 GMT  
-		Size: 192.0 B
+		Size: 192.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `gazebo:libgazebo5`
 
@@ -303,34 +329,44 @@ RUN apt-get update && apt-get install -q -y\
 -	Layers:
 	-	`sha256:ece183f99443eb27c913c4d98913c016bc0d53afd555871d876f18bf87d5b29f`  
 		Last Modified: Fri, 06 May 2016 16:32:46 GMT  
-		Size: 259.9 MB (259906801 bytes)
+		Size: 259.9 MB (259906801 bytes)  
+		MIME: application/octet-stream
 	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
 		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+		Size: 32.0 B  
+		MIME: application/octet-stream
 	-	`sha256:d731cfd76aead22b734fad2f1846df7049e7c908972bf046983a9af15162e6ee`  
 		Last Modified: Tue, 28 Jul 2015 18:14:33 GMT  
-		Size: 192.0 B
+		Size: 192.0 B  
+		MIME: application/octet-stream
 	-	`sha256:b1bd5b3396625978ae459c6737b519e52820e238bf231e3187cbd977e82859a8`  
 		Last Modified: Fri, 06 May 2016 16:30:06 GMT  
-		Size: 164.5 MB (164485886 bytes)
+		Size: 164.5 MB (164485886 bytes)  
+		MIME: application/octet-stream
 	-	`sha256:877e1219535f0fbf18cad51b5693defe3e285200ad5bcbe267354604fe471da4`  
 		Last Modified: Fri, 06 May 2016 16:25:01 GMT  
-		Size: 258.2 KB (258180 bytes)
+		Size: 258.2 KB (258180 bytes)  
+		MIME: application/octet-stream
 	-	`sha256:04943db5ba6c335f810572d4123f85c613bd4faa824a4533145f3ec5f30e86f7`  
 		Last Modified: Fri, 06 May 2016 16:25:05 GMT  
-		Size: 13.1 KB (13106 bytes)
+		Size: 13.1 KB (13106 bytes)  
+		MIME: application/octet-stream
 	-	`sha256:52de432f084bc072024d55b0f483358b607d0cf46d7053e3b6aefc98beaf27bf`  
 		Last Modified: Tue, 03 May 2016 23:14:32 GMT  
-		Size: 680.0 B
+		Size: 680.0 B  
+		MIME: application/octet-stream
 	-	`sha256:f0be3084efe90c704df85e3bff8df5d858e1ff546511c8306d80de561cc18fb5`  
 		Last Modified: Tue, 03 May 2016 23:14:36 GMT  
-		Size: 365.0 B
+		Size: 365.0 B  
+		MIME: application/octet-stream
 	-	`sha256:23eda618d4513331d49c6de76aaa051919f7b57752bcd8fee3cba37f816cbafd`  
 		Last Modified: Tue, 03 May 2016 23:14:39 GMT  
-		Size: 71.5 KB (71481 bytes)
+		Size: 71.5 KB (71481 bytes)  
+		MIME: application/octet-stream
 	-	`sha256:6599cadaf950a71af51aa84b85e6cdb1990287b79f8e71a78f6986b318d4c4a0`  
 		Last Modified: Tue, 03 May 2016 23:15:04 GMT  
-		Size: 65.7 MB (65693247 bytes)
+		Size: 65.7 MB (65693247 bytes)  
+		MIME: application/octet-stream
 
 ## `gazebo:gzserver6`
 
@@ -383,28 +419,36 @@ CMD ["gzserver"]
 -	Layers:
 	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
 		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
-		Size: 65.7 MB (65699368 bytes)
+		Size: 65.7 MB (65699368 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
 		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 101.4 KB (101415 bytes)
+		Size: 101.4 KB (101415 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
 		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 365.0 B
+		Size: 365.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
 		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 681.0 B
+		Size: 681.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:654eb25264349aa69f086eddbab0eab960282d006ef74541469de64b125f8304`  
 		Last Modified: Fri, 24 Jun 2016 18:35:59 GMT  
-		Size: 13.1 KB (13107 bytes)
+		Size: 13.1 KB (13107 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5d8d3681a6e347340e978761403c316aae3fe8a221f0a4eecb7882d8bc891ba6`  
 		Last Modified: Fri, 24 Jun 2016 18:36:00 GMT  
-		Size: 258.2 KB (258156 bytes)
+		Size: 258.2 KB (258156 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:345e4503741cb926152a49c75bb506825f18dc7dc14042c57568fdcaa2a90e7e`  
 		Last Modified: Fri, 24 Jun 2016 18:46:59 GMT  
-		Size: 168.5 MB (168521900 bytes)
+		Size: 168.5 MB (168521900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:37ccaded634c0e5c962b675e0ba05850b47485c3819a4bb8560982a2482c6210`  
 		Last Modified: Fri, 24 Jun 2016 18:46:20 GMT  
-		Size: 191.0 B
+		Size: 191.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `gazebo:libgazebo6`
 
@@ -461,31 +505,40 @@ RUN apt-get update && apt-get install -q -y     libgazebo6-dev=6.6.0*     && rm 
 -	Layers:
 	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
 		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
-		Size: 65.7 MB (65699368 bytes)
+		Size: 65.7 MB (65699368 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
 		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 101.4 KB (101415 bytes)
+		Size: 101.4 KB (101415 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
 		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 365.0 B
+		Size: 365.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
 		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 681.0 B
+		Size: 681.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:654eb25264349aa69f086eddbab0eab960282d006ef74541469de64b125f8304`  
 		Last Modified: Fri, 24 Jun 2016 18:35:59 GMT  
-		Size: 13.1 KB (13107 bytes)
+		Size: 13.1 KB (13107 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5d8d3681a6e347340e978761403c316aae3fe8a221f0a4eecb7882d8bc891ba6`  
 		Last Modified: Fri, 24 Jun 2016 18:36:00 GMT  
-		Size: 258.2 KB (258156 bytes)
+		Size: 258.2 KB (258156 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:345e4503741cb926152a49c75bb506825f18dc7dc14042c57568fdcaa2a90e7e`  
 		Last Modified: Fri, 24 Jun 2016 18:46:59 GMT  
-		Size: 168.5 MB (168521900 bytes)
+		Size: 168.5 MB (168521900 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:37ccaded634c0e5c962b675e0ba05850b47485c3819a4bb8560982a2482c6210`  
 		Last Modified: Fri, 24 Jun 2016 18:46:20 GMT  
-		Size: 191.0 B
+		Size: 191.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:203d24810001f15290a8bc865510da63cea040c665b631cb8946e072cec03319`  
 		Last Modified: Wed, 29 Jun 2016 19:11:45 GMT  
-		Size: 249.3 MB (249343173 bytes)
+		Size: 249.3 MB (249343173 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `gazebo:gzserver7`
 
@@ -538,31 +591,40 @@ CMD ["gzserver"]
 -	Layers:
 	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
 		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+		Size: 32.0 B  
+		MIME: application/octet-stream
 	-	`sha256:121bd6d3309cfcca9d51c44172ad2140f800229c928080ff87ee5e8e2150b5b0`  
 		Last Modified: Mon, 08 Feb 2016 20:02:02 GMT  
-		Size: 191.0 B
+		Size: 191.0 B  
+		MIME: application/octet-stream
 	-	`sha256:93dad6f9f4f6419a5e286e4d48a1229dfb8b520a4c8e89a1afc9e3b3980f8964`  
 		Last Modified: Fri, 06 May 2016 16:38:44 GMT  
-		Size: 179.0 MB (178961296 bytes)
+		Size: 179.0 MB (178961296 bytes)  
+		MIME: application/octet-stream
 	-	`sha256:877e1219535f0fbf18cad51b5693defe3e285200ad5bcbe267354604fe471da4`  
 		Last Modified: Fri, 06 May 2016 16:25:01 GMT  
-		Size: 258.2 KB (258180 bytes)
+		Size: 258.2 KB (258180 bytes)  
+		MIME: application/octet-stream
 	-	`sha256:04943db5ba6c335f810572d4123f85c613bd4faa824a4533145f3ec5f30e86f7`  
 		Last Modified: Fri, 06 May 2016 16:25:05 GMT  
-		Size: 13.1 KB (13106 bytes)
+		Size: 13.1 KB (13106 bytes)  
+		MIME: application/octet-stream
 	-	`sha256:52de432f084bc072024d55b0f483358b607d0cf46d7053e3b6aefc98beaf27bf`  
 		Last Modified: Tue, 03 May 2016 23:14:32 GMT  
-		Size: 680.0 B
+		Size: 680.0 B  
+		MIME: application/octet-stream
 	-	`sha256:f0be3084efe90c704df85e3bff8df5d858e1ff546511c8306d80de561cc18fb5`  
 		Last Modified: Tue, 03 May 2016 23:14:36 GMT  
-		Size: 365.0 B
+		Size: 365.0 B  
+		MIME: application/octet-stream
 	-	`sha256:23eda618d4513331d49c6de76aaa051919f7b57752bcd8fee3cba37f816cbafd`  
 		Last Modified: Tue, 03 May 2016 23:14:39 GMT  
-		Size: 71.5 KB (71481 bytes)
+		Size: 71.5 KB (71481 bytes)  
+		MIME: application/octet-stream
 	-	`sha256:6599cadaf950a71af51aa84b85e6cdb1990287b79f8e71a78f6986b318d4c4a0`  
 		Last Modified: Tue, 03 May 2016 23:15:04 GMT  
-		Size: 65.7 MB (65693247 bytes)
+		Size: 65.7 MB (65693247 bytes)  
+		MIME: application/octet-stream
 
 ## `gazebo:libgazebo7`
 
@@ -619,31 +681,40 @@ RUN apt-get update && apt-get install -q -y     libgazebo7-dev=7.1.0*     && rm 
 -	Layers:
 	-	`sha256:6c953ac5d795ea26fd59dc5bdf4d335625c69f8bcfbdd8307d6009c2e61779c9`  
 		Last Modified: Thu, 26 May 2016 23:13:36 GMT  
-		Size: 65.7 MB (65699277 bytes)
+		Size: 65.7 MB (65699277 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:df77235a0a1ffe0dc9290f5a3322734834f6181c3cb422885e7edd8403db1a30`  
 		Last Modified: Thu, 09 Jun 2016 21:54:04 GMT  
-		Size: 101.4 KB (101391 bytes)
+		Size: 101.4 KB (101391 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8a069390c20edbbe3147b9dc9c1335d24ab87b373a6136837e487ac0a76c3aef`  
 		Last Modified: Thu, 09 Jun 2016 21:54:04 GMT  
-		Size: 365.0 B
+		Size: 365.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:325d7f72769235249695c56cc250ff910f1d11ed1cdcc27578445608f6ede3e9`  
 		Last Modified: Thu, 09 Jun 2016 21:54:04 GMT  
-		Size: 680.0 B
+		Size: 680.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:185d246ae22d64a199724307330c2255dd848af815545e1e39af2f7f93684bda`  
 		Last Modified: Fri, 24 Jun 2016 18:36:49 GMT  
-		Size: 13.1 KB (13107 bytes)
+		Size: 13.1 KB (13107 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e874e9eaffc949a102449d81ab10ba052033f165cf5d35d250d48c352482f734`  
 		Last Modified: Fri, 24 Jun 2016 18:36:52 GMT  
-		Size: 258.2 KB (258202 bytes)
+		Size: 258.2 KB (258202 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bd1442f78b338ff26be7a912cb34c5b5941b1a51733ce847b144b66d8ee19242`  
 		Last Modified: Fri, 24 Jun 2016 18:39:40 GMT  
-		Size: 179.0 MB (178991599 bytes)
+		Size: 179.0 MB (178991599 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:358b3a15bb75aaf308f13f1ed496d2952ae3539e3ba7119fda0cd218ffad1471`  
 		Last Modified: Fri, 24 Jun 2016 18:38:45 GMT  
-		Size: 192.0 B
+		Size: 192.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f35ec3e602a7ce6cc72756b48b51a7c4c234611f58ec4b2ad63b8f4834a95d55`  
 		Last Modified: Fri, 24 Jun 2016 18:40:13 GMT  
-		Size: 229.7 MB (229719660 bytes)
+		Size: 229.7 MB (229719660 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `gazebo:latest`
 
@@ -700,28 +771,37 @@ RUN apt-get update && apt-get install -q -y     libgazebo7-dev=7.1.0*     && rm 
 -	Layers:
 	-	`sha256:6c953ac5d795ea26fd59dc5bdf4d335625c69f8bcfbdd8307d6009c2e61779c9`  
 		Last Modified: Thu, 26 May 2016 23:13:36 GMT  
-		Size: 65.7 MB (65699277 bytes)
+		Size: 65.7 MB (65699277 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:df77235a0a1ffe0dc9290f5a3322734834f6181c3cb422885e7edd8403db1a30`  
 		Last Modified: Thu, 09 Jun 2016 21:54:04 GMT  
-		Size: 101.4 KB (101391 bytes)
+		Size: 101.4 KB (101391 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8a069390c20edbbe3147b9dc9c1335d24ab87b373a6136837e487ac0a76c3aef`  
 		Last Modified: Thu, 09 Jun 2016 21:54:04 GMT  
-		Size: 365.0 B
+		Size: 365.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:325d7f72769235249695c56cc250ff910f1d11ed1cdcc27578445608f6ede3e9`  
 		Last Modified: Thu, 09 Jun 2016 21:54:04 GMT  
-		Size: 680.0 B
+		Size: 680.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:185d246ae22d64a199724307330c2255dd848af815545e1e39af2f7f93684bda`  
 		Last Modified: Fri, 24 Jun 2016 18:36:49 GMT  
-		Size: 13.1 KB (13107 bytes)
+		Size: 13.1 KB (13107 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e874e9eaffc949a102449d81ab10ba052033f165cf5d35d250d48c352482f734`  
 		Last Modified: Fri, 24 Jun 2016 18:36:52 GMT  
-		Size: 258.2 KB (258202 bytes)
+		Size: 258.2 KB (258202 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bd1442f78b338ff26be7a912cb34c5b5941b1a51733ce847b144b66d8ee19242`  
 		Last Modified: Fri, 24 Jun 2016 18:39:40 GMT  
-		Size: 179.0 MB (178991599 bytes)
+		Size: 179.0 MB (178991599 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:358b3a15bb75aaf308f13f1ed496d2952ae3539e3ba7119fda0cd218ffad1471`  
 		Last Modified: Fri, 24 Jun 2016 18:38:45 GMT  
-		Size: 192.0 B
+		Size: 192.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f35ec3e602a7ce6cc72756b48b51a7c4c234611f58ec4b2ad63b8f4834a95d55`  
 		Last Modified: Fri, 24 Jun 2016 18:40:13 GMT  
-		Size: 229.7 MB (229719660 bytes)
+		Size: 229.7 MB (229719660 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

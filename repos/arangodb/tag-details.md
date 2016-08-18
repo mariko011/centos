@@ -66,13 +66,16 @@ CMD ["/usr/sbin/arangod"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2a7b24fac11f47c2fd5acf90bc2549f72d40e01d2ba752419f4c6a6c81789be2`  
 		Last Modified: Thu, 28 Jul 2016 21:40:02 GMT  
-		Size: 6.8 KB (6769 bytes)
+		Size: 6.8 KB (6769 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:59536564262325e94a0e927d54eb98da82124c469542218d7a88be49d666cc39`  
 		Last Modified: Thu, 28 Jul 2016 21:40:24 GMT  
-		Size: 55.1 MB (55094918 bytes)
+		Size: 55.1 MB (55094918 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `arangodb:2.5`
 
@@ -126,13 +129,16 @@ CMD ["/usr/sbin/arangod"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2a7b24fac11f47c2fd5acf90bc2549f72d40e01d2ba752419f4c6a6c81789be2`  
 		Last Modified: Thu, 28 Jul 2016 21:40:02 GMT  
-		Size: 6.8 KB (6769 bytes)
+		Size: 6.8 KB (6769 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:59536564262325e94a0e927d54eb98da82124c469542218d7a88be49d666cc39`  
 		Last Modified: Thu, 28 Jul 2016 21:40:24 GMT  
-		Size: 55.1 MB (55094918 bytes)
+		Size: 55.1 MB (55094918 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `arangodb:2.6`
 
@@ -186,13 +192,16 @@ CMD ["/usr/sbin/arangod"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2a7b24fac11f47c2fd5acf90bc2549f72d40e01d2ba752419f4c6a6c81789be2`  
 		Last Modified: Thu, 28 Jul 2016 21:40:02 GMT  
-		Size: 6.8 KB (6769 bytes)
+		Size: 6.8 KB (6769 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:fd25cf1d7022bc8f12a8a7ec6d2f985c5aad6a7ba8a1288612eef481535e1cf1`  
 		Last Modified: Thu, 28 Jul 2016 21:48:47 GMT  
-		Size: 73.5 MB (73546548 bytes)
+		Size: 73.5 MB (73546548 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `arangodb:2.6.10`
 
@@ -246,13 +255,16 @@ CMD ["/usr/sbin/arangod"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2a7b24fac11f47c2fd5acf90bc2549f72d40e01d2ba752419f4c6a6c81789be2`  
 		Last Modified: Thu, 28 Jul 2016 21:40:02 GMT  
-		Size: 6.8 KB (6769 bytes)
+		Size: 6.8 KB (6769 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:fd25cf1d7022bc8f12a8a7ec6d2f985c5aad6a7ba8a1288612eef481535e1cf1`  
 		Last Modified: Thu, 28 Jul 2016 21:48:47 GMT  
-		Size: 73.5 MB (73546548 bytes)
+		Size: 73.5 MB (73546548 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `arangodb:2.7`
 
@@ -306,13 +318,16 @@ CMD ["/usr/sbin/arangod"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2a7b24fac11f47c2fd5acf90bc2549f72d40e01d2ba752419f4c6a6c81789be2`  
 		Last Modified: Thu, 28 Jul 2016 21:40:02 GMT  
-		Size: 6.8 KB (6769 bytes)
+		Size: 6.8 KB (6769 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1a6a29c067d16adef4788b073d3b4b6f1af2dba657e9f7628d37b78b6d1e6759`  
 		Last Modified: Thu, 28 Jul 2016 21:51:29 GMT  
-		Size: 75.7 MB (75695852 bytes)
+		Size: 75.7 MB (75695852 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `arangodb:2.7.5`
 
@@ -366,13 +381,16 @@ CMD ["/usr/sbin/arangod"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2a7b24fac11f47c2fd5acf90bc2549f72d40e01d2ba752419f4c6a6c81789be2`  
 		Last Modified: Thu, 28 Jul 2016 21:40:02 GMT  
-		Size: 6.8 KB (6769 bytes)
+		Size: 6.8 KB (6769 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1a6a29c067d16adef4788b073d3b4b6f1af2dba657e9f7628d37b78b6d1e6759`  
 		Last Modified: Thu, 28 Jul 2016 21:51:29 GMT  
-		Size: 75.7 MB (75695852 bytes)
+		Size: 75.7 MB (75695852 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `arangodb:2.8`
 
@@ -435,19 +453,24 @@ CMD ["arangod"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2a7b24fac11f47c2fd5acf90bc2549f72d40e01d2ba752419f4c6a6c81789be2`  
 		Last Modified: Thu, 28 Jul 2016 21:40:02 GMT  
-		Size: 6.8 KB (6769 bytes)
+		Size: 6.8 KB (6769 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0876f85305006ae8df2aaa02263df42cf7051936088e720a9328fd6797e1ce56`  
 		Last Modified: Thu, 28 Jul 2016 21:43:01 GMT  
-		Size: 58.8 MB (58810676 bytes)
+		Size: 58.8 MB (58810676 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5e3c015cd897c9c4bd106c9e9416b384b2106d44ec86513ba8562b85ba11239d`  
 		Last Modified: Thu, 28 Jul 2016 21:42:42 GMT  
-		Size: 164.0 B
+		Size: 164.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0b0e15a83cef18b30546e832819484c08d6be05f58e57e75ab9e06402da29ebc`  
 		Last Modified: Thu, 28 Jul 2016 21:42:42 GMT  
-		Size: 1.1 KB (1094 bytes)
+		Size: 1.1 KB (1094 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `arangodb:2.8.11`
 
@@ -510,19 +533,24 @@ CMD ["arangod"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2a7b24fac11f47c2fd5acf90bc2549f72d40e01d2ba752419f4c6a6c81789be2`  
 		Last Modified: Thu, 28 Jul 2016 21:40:02 GMT  
-		Size: 6.8 KB (6769 bytes)
+		Size: 6.8 KB (6769 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0876f85305006ae8df2aaa02263df42cf7051936088e720a9328fd6797e1ce56`  
 		Last Modified: Thu, 28 Jul 2016 21:43:01 GMT  
-		Size: 58.8 MB (58810676 bytes)
+		Size: 58.8 MB (58810676 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5e3c015cd897c9c4bd106c9e9416b384b2106d44ec86513ba8562b85ba11239d`  
 		Last Modified: Thu, 28 Jul 2016 21:42:42 GMT  
-		Size: 164.0 B
+		Size: 164.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0b0e15a83cef18b30546e832819484c08d6be05f58e57e75ab9e06402da29ebc`  
 		Last Modified: Thu, 28 Jul 2016 21:42:42 GMT  
-		Size: 1.1 KB (1094 bytes)
+		Size: 1.1 KB (1094 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `arangodb:3.0`
 
@@ -585,22 +613,28 @@ CMD ["arangod"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9f2f96b7bdd45fdcf80fd358a9e7dee909efe96778f664915649dcbc2a153b72`  
 		Last Modified: Wed, 03 Aug 2016 20:18:41 GMT  
-		Size: 6.8 KB (6768 bytes)
+		Size: 6.8 KB (6768 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:82d8e5dbc549b1e392df9c1a8aae595c116252985d97167f76b902974cc3a2f6`  
 		Last Modified: Wed, 03 Aug 2016 20:18:44 GMT  
-		Size: 6.7 MB (6683460 bytes)
+		Size: 6.7 MB (6683460 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:74ac4713a6430d4b94a352c7b5aa0308f9473437ba9deb145064dd3c1c95684f`  
 		Last Modified: Wed, 03 Aug 2016 20:18:40 GMT  
-		Size: 110.0 B
+		Size: 110.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d04f6db8bf1fa2557ee8c77b2cdc148b53bb6a533eb908aa7a5ecb1594e87706`  
 		Last Modified: Wed, 03 Aug 2016 20:18:58 GMT  
-		Size: 61.0 MB (61036445 bytes)
+		Size: 61.0 MB (61036445 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:445bae6787fdc5c73fa423949b1b8980fc91fc8481da82ecd820a0689aa5a75b`  
 		Last Modified: Wed, 03 Aug 2016 20:18:40 GMT  
-		Size: 1.4 KB (1422 bytes)
+		Size: 1.4 KB (1422 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `arangodb:3.0.4`
 
@@ -663,22 +697,28 @@ CMD ["arangod"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9f2f96b7bdd45fdcf80fd358a9e7dee909efe96778f664915649dcbc2a153b72`  
 		Last Modified: Wed, 03 Aug 2016 20:18:41 GMT  
-		Size: 6.8 KB (6768 bytes)
+		Size: 6.8 KB (6768 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:82d8e5dbc549b1e392df9c1a8aae595c116252985d97167f76b902974cc3a2f6`  
 		Last Modified: Wed, 03 Aug 2016 20:18:44 GMT  
-		Size: 6.7 MB (6683460 bytes)
+		Size: 6.7 MB (6683460 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:74ac4713a6430d4b94a352c7b5aa0308f9473437ba9deb145064dd3c1c95684f`  
 		Last Modified: Wed, 03 Aug 2016 20:18:40 GMT  
-		Size: 110.0 B
+		Size: 110.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d04f6db8bf1fa2557ee8c77b2cdc148b53bb6a533eb908aa7a5ecb1594e87706`  
 		Last Modified: Wed, 03 Aug 2016 20:18:58 GMT  
-		Size: 61.0 MB (61036445 bytes)
+		Size: 61.0 MB (61036445 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:445bae6787fdc5c73fa423949b1b8980fc91fc8481da82ecd820a0689aa5a75b`  
 		Last Modified: Wed, 03 Aug 2016 20:18:40 GMT  
-		Size: 1.4 KB (1422 bytes)
+		Size: 1.4 KB (1422 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `arangodb:latest`
 
@@ -741,19 +781,25 @@ CMD ["arangod"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9f2f96b7bdd45fdcf80fd358a9e7dee909efe96778f664915649dcbc2a153b72`  
 		Last Modified: Wed, 03 Aug 2016 20:18:41 GMT  
-		Size: 6.8 KB (6768 bytes)
+		Size: 6.8 KB (6768 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:82d8e5dbc549b1e392df9c1a8aae595c116252985d97167f76b902974cc3a2f6`  
 		Last Modified: Wed, 03 Aug 2016 20:18:44 GMT  
-		Size: 6.7 MB (6683460 bytes)
+		Size: 6.7 MB (6683460 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:74ac4713a6430d4b94a352c7b5aa0308f9473437ba9deb145064dd3c1c95684f`  
 		Last Modified: Wed, 03 Aug 2016 20:18:40 GMT  
-		Size: 110.0 B
+		Size: 110.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d04f6db8bf1fa2557ee8c77b2cdc148b53bb6a533eb908aa7a5ecb1594e87706`  
 		Last Modified: Wed, 03 Aug 2016 20:18:58 GMT  
-		Size: 61.0 MB (61036445 bytes)
+		Size: 61.0 MB (61036445 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:445bae6787fdc5c73fa423949b1b8980fc91fc8481da82ecd820a0689aa5a75b`  
 		Last Modified: Wed, 03 Aug 2016 20:18:40 GMT  
-		Size: 1.4 KB (1422 bytes)
+		Size: 1.4 KB (1422 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

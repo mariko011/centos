@@ -62,22 +62,28 @@ CMD ["influxd"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e29f2fd1d5b59bca4e74fd78afeb7b2e063e3fd89bf33bdf5487b5146275e46b`  
 		Last Modified: Thu, 28 Jul 2016 22:14:58 GMT  
-		Size: 6.8 KB (6754 bytes)
+		Size: 6.8 KB (6754 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c2d624634ebb0a516c1340544ef045696750b05364dc07274b6e30244821b1ef`  
 		Last Modified: Fri, 29 Jul 2016 04:28:40 GMT  
-		Size: 14.7 MB (14671997 bytes)
+		Size: 14.7 MB (14671997 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:add185fcd8a0964a8d09b2fb1f034b96b8fee570435bbf5201f6b3b5bd61eaa9`  
 		Last Modified: Fri, 29 Jul 2016 04:28:34 GMT  
-		Size: 237.0 B
+		Size: 237.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1f5a89676344c70f1fa516049d8e0664cfc64a1d04800c220431f3bc2fb34c81`  
 		Last Modified: Fri, 29 Jul 2016 04:28:34 GMT  
-		Size: 320.0 B
+		Size: 320.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `influxdb:0.12.2`
 
@@ -128,22 +134,28 @@ CMD ["influxd"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e29f2fd1d5b59bca4e74fd78afeb7b2e063e3fd89bf33bdf5487b5146275e46b`  
 		Last Modified: Thu, 28 Jul 2016 22:14:58 GMT  
-		Size: 6.8 KB (6754 bytes)
+		Size: 6.8 KB (6754 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c2d624634ebb0a516c1340544ef045696750b05364dc07274b6e30244821b1ef`  
 		Last Modified: Fri, 29 Jul 2016 04:28:40 GMT  
-		Size: 14.7 MB (14671997 bytes)
+		Size: 14.7 MB (14671997 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:add185fcd8a0964a8d09b2fb1f034b96b8fee570435bbf5201f6b3b5bd61eaa9`  
 		Last Modified: Fri, 29 Jul 2016 04:28:34 GMT  
-		Size: 237.0 B
+		Size: 237.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1f5a89676344c70f1fa516049d8e0664cfc64a1d04800c220431f3bc2fb34c81`  
 		Last Modified: Fri, 29 Jul 2016 04:28:34 GMT  
-		Size: 320.0 B
+		Size: 320.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `influxdb:0.13`
 
@@ -194,22 +206,28 @@ CMD ["influxd"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e29f2fd1d5b59bca4e74fd78afeb7b2e063e3fd89bf33bdf5487b5146275e46b`  
 		Last Modified: Thu, 28 Jul 2016 22:14:58 GMT  
-		Size: 6.8 KB (6754 bytes)
+		Size: 6.8 KB (6754 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:df9cb83a5fedbbdcfd76fc21ef9161469b7ed2f13beeee4ab1ac2b1bffd7739c`  
 		Last Modified: Fri, 29 Jul 2016 04:29:56 GMT  
-		Size: 18.1 MB (18148641 bytes)
+		Size: 18.1 MB (18148641 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6ab29acac86ed69994efc6c53aab3d095a25d02d35c5fdb7ff7f879c2264a61c`  
 		Last Modified: Fri, 29 Jul 2016 04:29:49 GMT  
-		Size: 238.0 B
+		Size: 238.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:71dad7b73f976f27d3e82705ae3a936dc4734f9a56ae23ce5b0fffeb7066d6ec`  
 		Last Modified: Fri, 29 Jul 2016 04:29:49 GMT  
-		Size: 185.0 B
+		Size: 185.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `influxdb:0.13.0`
 
@@ -260,22 +278,28 @@ CMD ["influxd"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e29f2fd1d5b59bca4e74fd78afeb7b2e063e3fd89bf33bdf5487b5146275e46b`  
 		Last Modified: Thu, 28 Jul 2016 22:14:58 GMT  
-		Size: 6.8 KB (6754 bytes)
+		Size: 6.8 KB (6754 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:df9cb83a5fedbbdcfd76fc21ef9161469b7ed2f13beeee4ab1ac2b1bffd7739c`  
 		Last Modified: Fri, 29 Jul 2016 04:29:56 GMT  
-		Size: 18.1 MB (18148641 bytes)
+		Size: 18.1 MB (18148641 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6ab29acac86ed69994efc6c53aab3d095a25d02d35c5fdb7ff7f879c2264a61c`  
 		Last Modified: Fri, 29 Jul 2016 04:29:49 GMT  
-		Size: 238.0 B
+		Size: 238.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:71dad7b73f976f27d3e82705ae3a936dc4734f9a56ae23ce5b0fffeb7066d6ec`  
 		Last Modified: Fri, 29 Jul 2016 04:29:49 GMT  
-		Size: 185.0 B
+		Size: 185.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `influxdb:latest`
 
@@ -326,22 +350,28 @@ CMD ["influxd"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e29f2fd1d5b59bca4e74fd78afeb7b2e063e3fd89bf33bdf5487b5146275e46b`  
 		Last Modified: Thu, 28 Jul 2016 22:14:58 GMT  
-		Size: 6.8 KB (6754 bytes)
+		Size: 6.8 KB (6754 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:df9cb83a5fedbbdcfd76fc21ef9161469b7ed2f13beeee4ab1ac2b1bffd7739c`  
 		Last Modified: Fri, 29 Jul 2016 04:29:56 GMT  
-		Size: 18.1 MB (18148641 bytes)
+		Size: 18.1 MB (18148641 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6ab29acac86ed69994efc6c53aab3d095a25d02d35c5fdb7ff7f879c2264a61c`  
 		Last Modified: Fri, 29 Jul 2016 04:29:49 GMT  
-		Size: 238.0 B
+		Size: 238.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:71dad7b73f976f27d3e82705ae3a936dc4734f9a56ae23ce5b0fffeb7066d6ec`  
 		Last Modified: Fri, 29 Jul 2016 04:29:49 GMT  
-		Size: 185.0 B
+		Size: 185.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `influxdb:0.13-alpine`
 
@@ -386,16 +416,20 @@ CMD ["influxd"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:66227c0772b40ce242981ca3b869f573f7a470987fdae25f83eaf6d3622ea618`  
 		Last Modified: Thu, 23 Jun 2016 20:33:44 GMT  
-		Size: 13.5 MB (13527841 bytes)
+		Size: 13.5 MB (13527841 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:921f1775cf6ee585028fb1a48dffc41fd698b03b3e2588ca344043a7a1d4140b`  
 		Last Modified: Thu, 23 Jun 2016 20:33:36 GMT  
-		Size: 239.0 B
+		Size: 239.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:86ea6649d85f1fe074e41e64ddd6ae3f340fe814ac992c5de4ebad7df77eb805`  
 		Last Modified: Thu, 23 Jun 2016 20:33:36 GMT  
-		Size: 182.0 B
+		Size: 182.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `influxdb:0.13.0-alpine`
 
@@ -440,16 +474,20 @@ CMD ["influxd"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:66227c0772b40ce242981ca3b869f573f7a470987fdae25f83eaf6d3622ea618`  
 		Last Modified: Thu, 23 Jun 2016 20:33:44 GMT  
-		Size: 13.5 MB (13527841 bytes)
+		Size: 13.5 MB (13527841 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:921f1775cf6ee585028fb1a48dffc41fd698b03b3e2588ca344043a7a1d4140b`  
 		Last Modified: Thu, 23 Jun 2016 20:33:36 GMT  
-		Size: 239.0 B
+		Size: 239.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:86ea6649d85f1fe074e41e64ddd6ae3f340fe814ac992c5de4ebad7df77eb805`  
 		Last Modified: Thu, 23 Jun 2016 20:33:36 GMT  
-		Size: 182.0 B
+		Size: 182.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `influxdb:alpine`
 
@@ -494,16 +532,20 @@ CMD ["influxd"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:66227c0772b40ce242981ca3b869f573f7a470987fdae25f83eaf6d3622ea618`  
 		Last Modified: Thu, 23 Jun 2016 20:33:44 GMT  
-		Size: 13.5 MB (13527841 bytes)
+		Size: 13.5 MB (13527841 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:921f1775cf6ee585028fb1a48dffc41fd698b03b3e2588ca344043a7a1d4140b`  
 		Last Modified: Thu, 23 Jun 2016 20:33:36 GMT  
-		Size: 239.0 B
+		Size: 239.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:86ea6649d85f1fe074e41e64ddd6ae3f340fe814ac992c5de4ebad7df77eb805`  
 		Last Modified: Thu, 23 Jun 2016 20:33:36 GMT  
-		Size: 182.0 B
+		Size: 182.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `influxdb:1.0.0-beta3`
 
@@ -554,22 +596,28 @@ CMD ["influxd"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e29f2fd1d5b59bca4e74fd78afeb7b2e063e3fd89bf33bdf5487b5146275e46b`  
 		Last Modified: Thu, 28 Jul 2016 22:14:58 GMT  
-		Size: 6.8 KB (6754 bytes)
+		Size: 6.8 KB (6754 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d2e9ce34521383b72c062841ec085df5f48aa1f58b9de4cac2140c39a8516a0c`  
 		Last Modified: Fri, 29 Jul 2016 04:29:24 GMT  
-		Size: 17.6 MB (17618921 bytes)
+		Size: 17.6 MB (17618921 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a29065d13126ba5cfc25be4b87cf8ad0e36a750bbf5180232d872828f678d33f`  
 		Last Modified: Fri, 29 Jul 2016 04:29:18 GMT  
-		Size: 239.0 B
+		Size: 239.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:79717eb91e2de14c89f96ec4989ff3c4108a42bd14ce123faf9948895cb16017`  
 		Last Modified: Fri, 29 Jul 2016 04:29:18 GMT  
-		Size: 186.0 B
+		Size: 186.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `influxdb:1.0.0-beta3-alpine`
 
@@ -614,13 +662,17 @@ CMD ["influxd"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4c005a96a6fe9244215ec689abf8d3cdc06a57de68fb8a6cce2a0e37bc510021`  
 		Last Modified: Tue, 19 Jul 2016 16:31:49 GMT  
-		Size: 13.1 MB (13140795 bytes)
+		Size: 13.1 MB (13140795 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3dd630dcc0fbbe14b63abf2f3537e737ea7004f00335258ee4f0790afb4b0499`  
 		Last Modified: Tue, 19 Jul 2016 16:31:44 GMT  
-		Size: 239.0 B
+		Size: 239.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4ceeb6eb0889f4adfe2284d71121983760efe71c9b163a59652f313ff6a85d8a`  
 		Last Modified: Tue, 19 Jul 2016 16:31:44 GMT  
-		Size: 184.0 B
+		Size: 184.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

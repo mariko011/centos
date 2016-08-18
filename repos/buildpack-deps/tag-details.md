@@ -57,10 +57,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:curl`
 
@@ -92,10 +94,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:jessie-scm`
 
@@ -129,13 +133,16 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:scm`
 
@@ -169,13 +176,16 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:jessie`
 
@@ -211,16 +221,20 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		au
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
 		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
-		Size: 129.7 MB (129692532 bytes)
+		Size: 129.7 MB (129692532 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:latest`
 
@@ -256,16 +270,20 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		au
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
 		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
-		Size: 129.7 MB (129692532 bytes)
+		Size: 129.7 MB (129692532 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:precise-curl`
 
@@ -303,19 +321,24 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 -	Layers:
 	-	`sha256:76582687379951c724499c3f12ea80dd492283a4115aa509474880830e9d14f4`  
 		Last Modified: Fri, 08 Jul 2016 18:40:28 GMT  
-		Size: 44.4 MB (44362818 bytes)
+		Size: 44.4 MB (44362818 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e7a1879261142f3aca772a969c80aa83553d9775fc9b5526dbb5a37ef70ef83a`  
 		Last Modified: Fri, 22 Jul 2016 15:20:27 GMT  
-		Size: 57.9 KB (57941 bytes)
+		Size: 57.9 KB (57941 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:fd01d4f3de3b98ff4bc7b46aa9628d9371903b902de9a6a8becd95429bb6f357`  
 		Last Modified: Fri, 22 Jul 2016 15:20:27 GMT  
-		Size: 721.0 B
+		Size: 721.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c704fce22a3c117459a6dfe8018df26d97e91f6cf64db9e49752e3bd5e7470ad`  
 		Last Modified: Fri, 22 Jul 2016 15:20:27 GMT  
-		Size: 680.0 B
+		Size: 680.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b6320759d538b014fa67091b53dee85fb679bb271f31ca77ee035bfd444a63d2`  
 		Last Modified: Fri, 22 Jul 2016 17:25:27 GMT  
-		Size: 5.1 MB (5110336 bytes)
+		Size: 5.1 MB (5110336 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:precise-scm`
 
@@ -355,22 +378,28 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 -	Layers:
 	-	`sha256:76582687379951c724499c3f12ea80dd492283a4115aa509474880830e9d14f4`  
 		Last Modified: Fri, 08 Jul 2016 18:40:28 GMT  
-		Size: 44.4 MB (44362818 bytes)
+		Size: 44.4 MB (44362818 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e7a1879261142f3aca772a969c80aa83553d9775fc9b5526dbb5a37ef70ef83a`  
 		Last Modified: Fri, 22 Jul 2016 15:20:27 GMT  
-		Size: 57.9 KB (57941 bytes)
+		Size: 57.9 KB (57941 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:fd01d4f3de3b98ff4bc7b46aa9628d9371903b902de9a6a8becd95429bb6f357`  
 		Last Modified: Fri, 22 Jul 2016 15:20:27 GMT  
-		Size: 721.0 B
+		Size: 721.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c704fce22a3c117459a6dfe8018df26d97e91f6cf64db9e49752e3bd5e7470ad`  
 		Last Modified: Fri, 22 Jul 2016 15:20:27 GMT  
-		Size: 680.0 B
+		Size: 680.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b6320759d538b014fa67091b53dee85fb679bb271f31ca77ee035bfd444a63d2`  
 		Last Modified: Fri, 22 Jul 2016 17:25:27 GMT  
-		Size: 5.1 MB (5110336 bytes)
+		Size: 5.1 MB (5110336 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8187402b82cc5c749b88cf0893e114549653a9e07e9121edaed412dd0d150bc6`  
 		Last Modified: Fri, 22 Jul 2016 17:25:37 GMT  
-		Size: 30.8 MB (30846347 bytes)
+		Size: 30.8 MB (30846347 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:precise`
 
@@ -412,25 +441,32 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		au
 -	Layers:
 	-	`sha256:76582687379951c724499c3f12ea80dd492283a4115aa509474880830e9d14f4`  
 		Last Modified: Fri, 08 Jul 2016 18:40:28 GMT  
-		Size: 44.4 MB (44362818 bytes)
+		Size: 44.4 MB (44362818 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e7a1879261142f3aca772a969c80aa83553d9775fc9b5526dbb5a37ef70ef83a`  
 		Last Modified: Fri, 22 Jul 2016 15:20:27 GMT  
-		Size: 57.9 KB (57941 bytes)
+		Size: 57.9 KB (57941 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:fd01d4f3de3b98ff4bc7b46aa9628d9371903b902de9a6a8becd95429bb6f357`  
 		Last Modified: Fri, 22 Jul 2016 15:20:27 GMT  
-		Size: 721.0 B
+		Size: 721.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c704fce22a3c117459a6dfe8018df26d97e91f6cf64db9e49752e3bd5e7470ad`  
 		Last Modified: Fri, 22 Jul 2016 15:20:27 GMT  
-		Size: 680.0 B
+		Size: 680.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b6320759d538b014fa67091b53dee85fb679bb271f31ca77ee035bfd444a63d2`  
 		Last Modified: Fri, 22 Jul 2016 17:25:27 GMT  
-		Size: 5.1 MB (5110336 bytes)
+		Size: 5.1 MB (5110336 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8187402b82cc5c749b88cf0893e114549653a9e07e9121edaed412dd0d150bc6`  
 		Last Modified: Fri, 22 Jul 2016 17:25:37 GMT  
-		Size: 30.8 MB (30846347 bytes)
+		Size: 30.8 MB (30846347 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cf7c437d6ebbcebe841909f24c1f0fc2cc1ee7bb5eb02561b522b84c1c1769cd`  
 		Last Modified: Fri, 22 Jul 2016 17:25:50 GMT  
-		Size: 82.2 MB (82158460 bytes)
+		Size: 82.2 MB (82158460 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:sid-curl`
 
@@ -462,10 +498,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 -	Layers:
 	-	`sha256:f8e784df59625b49bca4ce9f70150e254beed293dd99fc93da5039461894ad16`  
 		Last Modified: Thu, 28 Jul 2016 17:51:47 GMT  
-		Size: 42.5 MB (42487630 bytes)
+		Size: 42.5 MB (42487630 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f7f43e0bc93f103915619fd63da3b1b9f0c590b992436233b8a47b78abf15cb2`  
 		Last Modified: Thu, 28 Jul 2016 21:55:19 GMT  
-		Size: 20.5 MB (20510432 bytes)
+		Size: 20.5 MB (20510432 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:sid-scm`
 
@@ -499,13 +537,16 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 -	Layers:
 	-	`sha256:f8e784df59625b49bca4ce9f70150e254beed293dd99fc93da5039461894ad16`  
 		Last Modified: Thu, 28 Jul 2016 17:51:47 GMT  
-		Size: 42.5 MB (42487630 bytes)
+		Size: 42.5 MB (42487630 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f7f43e0bc93f103915619fd63da3b1b9f0c590b992436233b8a47b78abf15cb2`  
 		Last Modified: Thu, 28 Jul 2016 21:55:19 GMT  
-		Size: 20.5 MB (20510432 bytes)
+		Size: 20.5 MB (20510432 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:aa88ad4d042668a78f51a91bda0606d38e6428ec8291c78b9ca6fc056bb7881e`  
 		Last Modified: Thu, 28 Jul 2016 21:55:32 GMT  
-		Size: 47.5 MB (47493601 bytes)
+		Size: 47.5 MB (47493601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:sid`
 
@@ -541,16 +582,20 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		au
 -	Layers:
 	-	`sha256:f8e784df59625b49bca4ce9f70150e254beed293dd99fc93da5039461894ad16`  
 		Last Modified: Thu, 28 Jul 2016 17:51:47 GMT  
-		Size: 42.5 MB (42487630 bytes)
+		Size: 42.5 MB (42487630 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f7f43e0bc93f103915619fd63da3b1b9f0c590b992436233b8a47b78abf15cb2`  
 		Last Modified: Thu, 28 Jul 2016 21:55:19 GMT  
-		Size: 20.5 MB (20510432 bytes)
+		Size: 20.5 MB (20510432 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:aa88ad4d042668a78f51a91bda0606d38e6428ec8291c78b9ca6fc056bb7881e`  
 		Last Modified: Thu, 28 Jul 2016 21:55:32 GMT  
-		Size: 47.5 MB (47493601 bytes)
+		Size: 47.5 MB (47493601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:345a2b9255111db83ad0874553edd96fb7ca1a54e25f4516ac1e3fbd76a79458`  
 		Last Modified: Thu, 28 Jul 2016 21:56:30 GMT  
-		Size: 272.0 MB (272001085 bytes)
+		Size: 272.0 MB (272001085 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:stretch-curl`
 
@@ -582,10 +627,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 -	Layers:
 	-	`sha256:05a57567480c26a5f94fde377da4e0792f5e745a5d37e39f467a104fd9bd8942`  
 		Last Modified: Thu, 28 Jul 2016 17:53:00 GMT  
-		Size: 42.1 MB (42066618 bytes)
+		Size: 42.1 MB (42066618 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b65f1c5ce8b9053174d46b6372180cacaa3ed05d007fcb63784119c492eb6c17`  
 		Last Modified: Thu, 28 Jul 2016 21:57:30 GMT  
-		Size: 20.5 MB (20514876 bytes)
+		Size: 20.5 MB (20514876 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:stretch-scm`
 
@@ -619,13 +666,16 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 -	Layers:
 	-	`sha256:05a57567480c26a5f94fde377da4e0792f5e745a5d37e39f467a104fd9bd8942`  
 		Last Modified: Thu, 28 Jul 2016 17:53:00 GMT  
-		Size: 42.1 MB (42066618 bytes)
+		Size: 42.1 MB (42066618 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b65f1c5ce8b9053174d46b6372180cacaa3ed05d007fcb63784119c492eb6c17`  
 		Last Modified: Thu, 28 Jul 2016 21:57:30 GMT  
-		Size: 20.5 MB (20514876 bytes)
+		Size: 20.5 MB (20514876 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ca3a235a952f4b8f801fbd39d587bb8aab80c57f02978f28b8c332160f507158`  
 		Last Modified: Thu, 28 Jul 2016 21:57:44 GMT  
-		Size: 49.2 MB (49244893 bytes)
+		Size: 49.2 MB (49244893 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:stretch`
 
@@ -661,16 +711,20 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		au
 -	Layers:
 	-	`sha256:05a57567480c26a5f94fde377da4e0792f5e745a5d37e39f467a104fd9bd8942`  
 		Last Modified: Thu, 28 Jul 2016 17:53:00 GMT  
-		Size: 42.1 MB (42066618 bytes)
+		Size: 42.1 MB (42066618 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b65f1c5ce8b9053174d46b6372180cacaa3ed05d007fcb63784119c492eb6c17`  
 		Last Modified: Thu, 28 Jul 2016 21:57:30 GMT  
-		Size: 20.5 MB (20514876 bytes)
+		Size: 20.5 MB (20514876 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ca3a235a952f4b8f801fbd39d587bb8aab80c57f02978f28b8c332160f507158`  
 		Last Modified: Thu, 28 Jul 2016 21:57:44 GMT  
-		Size: 49.2 MB (49244893 bytes)
+		Size: 49.2 MB (49244893 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e9afc1a5b3fcced4ff90678faffd6a681f3faa038d4f6eca8a7ccb7d776ff456`  
 		Last Modified: Thu, 28 Jul 2016 21:58:39 GMT  
-		Size: 271.6 MB (271577820 bytes)
+		Size: 271.6 MB (271577820 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:trusty-curl`
 
@@ -708,19 +762,24 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 -	Layers:
 	-	`sha256:064f9af025390d8da3dfab763fac261dd67f8807343613239d66304cda8f5d16`  
 		Last Modified: Thu, 04 Aug 2016 12:39:27 GMT  
-		Size: 65.7 MB (65699939 bytes)
+		Size: 65.7 MB (65699939 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:390957b2f4f0cd72b8577795cd8076cdc21d45c7823bbb5c895a494ae6038267`  
 		Last Modified: Thu, 11 Aug 2016 17:47:59 GMT  
-		Size: 71.6 KB (71563 bytes)
+		Size: 71.6 KB (71563 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cee0974db2b868f0408f7e3eaba93c11fce3a38f612674477653b04c10369da0`  
 		Last Modified: Thu, 11 Aug 2016 17:47:58 GMT  
-		Size: 362.0 B
+		Size: 362.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c8144262002cd241e607d7d3ecda450ce4ae8edf7dac8dbf46897d498ac667d8`  
 		Last Modified: Thu, 11 Aug 2016 17:47:58 GMT  
-		Size: 680.0 B
+		Size: 680.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0d986e0269ededfc3b013b4cc2314761bc61a0d47ea714d0f9b3958b252bef2e`  
 		Last Modified: Thu, 11 Aug 2016 18:57:38 GMT  
-		Size: 4.6 MB (4598680 bytes)
+		Size: 4.6 MB (4598680 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:trusty-scm`
 
@@ -760,22 +819,28 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 -	Layers:
 	-	`sha256:064f9af025390d8da3dfab763fac261dd67f8807343613239d66304cda8f5d16`  
 		Last Modified: Thu, 04 Aug 2016 12:39:27 GMT  
-		Size: 65.7 MB (65699939 bytes)
+		Size: 65.7 MB (65699939 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:390957b2f4f0cd72b8577795cd8076cdc21d45c7823bbb5c895a494ae6038267`  
 		Last Modified: Thu, 11 Aug 2016 17:47:59 GMT  
-		Size: 71.6 KB (71563 bytes)
+		Size: 71.6 KB (71563 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cee0974db2b868f0408f7e3eaba93c11fce3a38f612674477653b04c10369da0`  
 		Last Modified: Thu, 11 Aug 2016 17:47:58 GMT  
-		Size: 362.0 B
+		Size: 362.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c8144262002cd241e607d7d3ecda450ce4ae8edf7dac8dbf46897d498ac667d8`  
 		Last Modified: Thu, 11 Aug 2016 17:47:58 GMT  
-		Size: 680.0 B
+		Size: 680.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0d986e0269ededfc3b013b4cc2314761bc61a0d47ea714d0f9b3958b252bef2e`  
 		Last Modified: Thu, 11 Aug 2016 18:57:38 GMT  
-		Size: 4.6 MB (4598680 bytes)
+		Size: 4.6 MB (4598680 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bb8b286a223155781a4ddf47929166eb4a6c8259c6bee54de3a6e357d294d097`  
 		Last Modified: Thu, 11 Aug 2016 18:59:36 GMT  
-		Size: 29.0 MB (29004946 bytes)
+		Size: 29.0 MB (29004946 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:trusty`
 
@@ -817,25 +882,32 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		au
 -	Layers:
 	-	`sha256:96c6a1f3c3b0183063a9dad891fe6d8ec466c2fdf9571a0c19b3319ea8a58871`  
 		Last Modified: Mon, 18 Jul 2016 17:36:54 GMT  
-		Size: 65.7 MB (65699069 bytes)
+		Size: 65.7 MB (65699069 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ed40d4bcb31369df1a018c64e560e94dfd106d0b2851db25f921d3708d64fac5`  
 		Last Modified: Fri, 22 Jul 2016 15:21:07 GMT  
-		Size: 71.6 KB (71563 bytes)
+		Size: 71.6 KB (71563 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b171f9dbc13b68a99386e4d54e28e26144688973ad7bbdd9ec1f822dc8b0ac0a`  
 		Last Modified: Fri, 22 Jul 2016 15:21:06 GMT  
-		Size: 365.0 B
+		Size: 365.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ccfc4df4fbba7d591c1eff4972018e67c1142b21b64bc36fba3f93bd33f2ebd9`  
 		Last Modified: Fri, 22 Jul 2016 15:21:07 GMT  
-		Size: 680.0 B
+		Size: 680.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5036c705f4c89d1622d6199f627d63b89766bd9d524093d750c2e13b119c12dd`  
 		Last Modified: Fri, 22 Jul 2016 17:27:58 GMT  
-		Size: 4.6 MB (4598315 bytes)
+		Size: 4.6 MB (4598315 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a4f5a357f49fcc813854779c9fba583dff945e30bd330bdbc5d0bbc7f3c156eb`  
 		Last Modified: Fri, 22 Jul 2016 17:28:09 GMT  
-		Size: 29.0 MB (29004589 bytes)
+		Size: 29.0 MB (29004589 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b4dc22b2034a5a8736e3d7cb07f589eb19ca6aa203b7a5f5de044366fa2e4e98`  
 		Last Modified: Fri, 22 Jul 2016 17:28:21 GMT  
-		Size: 99.8 MB (99788535 bytes)
+		Size: 99.8 MB (99788535 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:wheezy-curl`
 
@@ -867,10 +939,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
 		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
-		Size: 6.7 MB (6730996 bytes)
+		Size: 6.7 MB (6730996 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:wheezy-scm`
 
@@ -904,13 +978,16 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
 		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
-		Size: 6.7 MB (6730996 bytes)
+		Size: 6.7 MB (6730996 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8c8d9d9752348fab5a9cd1140f31df8ad6ce301aca3e7d4e303d14fde010ea14`  
 		Last Modified: Thu, 28 Jul 2016 21:53:49 GMT  
-		Size: 38.9 MB (38887392 bytes)
+		Size: 38.9 MB (38887392 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:wheezy`
 
@@ -946,16 +1023,20 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		au
 -	Layers:
 	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
 		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
-		Size: 37.2 MB (37209635 bytes)
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
 		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
-		Size: 6.7 MB (6730996 bytes)
+		Size: 6.7 MB (6730996 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8c8d9d9752348fab5a9cd1140f31df8ad6ce301aca3e7d4e303d14fde010ea14`  
 		Last Modified: Thu, 28 Jul 2016 21:53:49 GMT  
-		Size: 38.9 MB (38887392 bytes)
+		Size: 38.9 MB (38887392 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f5d2ed216d388a756b47e2c6fe7e34b55750a9a3a8e83216f991f75f7e625ca9`  
 		Last Modified: Thu, 28 Jul 2016 21:59:54 GMT  
-		Size: 95.2 MB (95216054 bytes)
+		Size: 95.2 MB (95216054 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:xenial-curl`
 
@@ -993,19 +1074,24 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 -	Layers:
 	-	`sha256:2f0243478e1f7fcb578778370ebcbcb350ef637e8b966c6a24830df61a3e89b8`  
 		Last Modified: Thu, 11 Aug 2016 17:49:30 GMT  
-		Size: 49.7 MB (49678667 bytes)
+		Size: 49.7 MB (49678667 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d8909ae88469beef31d7ad33c85a0a1b2ade2cef4d51bab0c1353abd8477054d`  
 		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
-		Size: 823.0 B
+		Size: 823.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:820f09abed29b404920f73274dd7107a4080d22a40351683aa9c410df3d18eeb`  
 		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
-		Size: 445.0 B
+		Size: 445.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:01193a8f3d889f5c75dd4c54e7ad2a81216f10e7b2d515af571d17a4015b3d59`  
 		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
-		Size: 682.0 B
+		Size: 682.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a4c520e282868d1f4a3b26a2116724c0b38e11859acb3c7335a5aad558242768`  
 		Last Modified: Thu, 11 Aug 2016 18:53:26 GMT  
-		Size: 7.3 MB (7282347 bytes)
+		Size: 7.3 MB (7282347 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:xenial-scm`
 
@@ -1045,22 +1131,28 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 -	Layers:
 	-	`sha256:2f0243478e1f7fcb578778370ebcbcb350ef637e8b966c6a24830df61a3e89b8`  
 		Last Modified: Thu, 11 Aug 2016 17:49:30 GMT  
-		Size: 49.7 MB (49678667 bytes)
+		Size: 49.7 MB (49678667 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d8909ae88469beef31d7ad33c85a0a1b2ade2cef4d51bab0c1353abd8477054d`  
 		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
-		Size: 823.0 B
+		Size: 823.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:820f09abed29b404920f73274dd7107a4080d22a40351683aa9c410df3d18eeb`  
 		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
-		Size: 445.0 B
+		Size: 445.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:01193a8f3d889f5c75dd4c54e7ad2a81216f10e7b2d515af571d17a4015b3d59`  
 		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
-		Size: 682.0 B
+		Size: 682.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a4c520e282868d1f4a3b26a2116724c0b38e11859acb3c7335a5aad558242768`  
 		Last Modified: Thu, 11 Aug 2016 18:53:26 GMT  
-		Size: 7.3 MB (7282347 bytes)
+		Size: 7.3 MB (7282347 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4d0f488b6beabc9a78364b509cb1754f1f75baec20843c1c5e019302978d82b4`  
 		Last Modified: Thu, 11 Aug 2016 18:54:59 GMT  
-		Size: 41.2 MB (41214423 bytes)
+		Size: 41.2 MB (41214423 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:xenial`
 
@@ -1102,22 +1194,29 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		au
 -	Layers:
 	-	`sha256:2f0243478e1f7fcb578778370ebcbcb350ef637e8b966c6a24830df61a3e89b8`  
 		Last Modified: Thu, 11 Aug 2016 17:49:30 GMT  
-		Size: 49.7 MB (49678667 bytes)
+		Size: 49.7 MB (49678667 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d8909ae88469beef31d7ad33c85a0a1b2ade2cef4d51bab0c1353abd8477054d`  
 		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
-		Size: 823.0 B
+		Size: 823.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:820f09abed29b404920f73274dd7107a4080d22a40351683aa9c410df3d18eeb`  
 		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
-		Size: 445.0 B
+		Size: 445.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:01193a8f3d889f5c75dd4c54e7ad2a81216f10e7b2d515af571d17a4015b3d59`  
 		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
-		Size: 682.0 B
+		Size: 682.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a4c520e282868d1f4a3b26a2116724c0b38e11859acb3c7335a5aad558242768`  
 		Last Modified: Thu, 11 Aug 2016 18:53:26 GMT  
-		Size: 7.3 MB (7282347 bytes)
+		Size: 7.3 MB (7282347 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4d0f488b6beabc9a78364b509cb1754f1f75baec20843c1c5e019302978d82b4`  
 		Last Modified: Thu, 11 Aug 2016 18:54:59 GMT  
-		Size: 41.2 MB (41214423 bytes)
+		Size: 41.2 MB (41214423 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1822604d8da3b675c8cb3483c2b09e5efb4fa73f03b75d91500c9a423bdd558e`  
 		Last Modified: Thu, 11 Aug 2016 19:02:35 GMT  
-		Size: 133.1 MB (133097157 bytes)
+		Size: 133.1 MB (133097157 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

@@ -64,28 +64,36 @@ CMD ["telegraf"]
 -	Layers:
 	-	`sha256:064f9af025390d8da3dfab763fac261dd67f8807343613239d66304cda8f5d16`  
 		Last Modified: Thu, 04 Aug 2016 12:39:27 GMT  
-		Size: 65.7 MB (65699939 bytes)
+		Size: 65.7 MB (65699939 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:390957b2f4f0cd72b8577795cd8076cdc21d45c7823bbb5c895a494ae6038267`  
 		Last Modified: Thu, 11 Aug 2016 17:47:59 GMT  
-		Size: 71.6 KB (71563 bytes)
+		Size: 71.6 KB (71563 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cee0974db2b868f0408f7e3eaba93c11fce3a38f612674477653b04c10369da0`  
 		Last Modified: Thu, 11 Aug 2016 17:47:58 GMT  
-		Size: 362.0 B
+		Size: 362.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c8144262002cd241e607d7d3ecda450ce4ae8edf7dac8dbf46897d498ac667d8`  
 		Last Modified: Thu, 11 Aug 2016 17:47:58 GMT  
-		Size: 680.0 B
+		Size: 680.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0d986e0269ededfc3b013b4cc2314761bc61a0d47ea714d0f9b3958b252bef2e`  
 		Last Modified: Thu, 11 Aug 2016 18:57:38 GMT  
-		Size: 4.6 MB (4598680 bytes)
+		Size: 4.6 MB (4598680 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1e14ac57808b9aeb1defb488cd8481e82d2b7bb29ca34267e28e0996577be530`  
 		Last Modified: Thu, 11 Aug 2016 19:50:32 GMT  
-		Size: 6.9 KB (6855 bytes)
+		Size: 6.9 KB (6855 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:070c3dcb947385d0a6078fb12290751ce4953241b0b3a59b42cabc53249411bf`  
 		Last Modified: Thu, 11 Aug 2016 19:50:37 GMT  
-		Size: 9.0 MB (9020625 bytes)
+		Size: 9.0 MB (9020625 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e5baec5f326706e2a1f1b2af2cefcc379418c5d015df4baa547207f95a95ef2e`  
 		Last Modified: Thu, 11 Aug 2016 19:50:32 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `telegraf:0.12.0`
 
@@ -138,28 +146,36 @@ CMD ["telegraf"]
 -	Layers:
 	-	`sha256:064f9af025390d8da3dfab763fac261dd67f8807343613239d66304cda8f5d16`  
 		Last Modified: Thu, 04 Aug 2016 12:39:27 GMT  
-		Size: 65.7 MB (65699939 bytes)
+		Size: 65.7 MB (65699939 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:390957b2f4f0cd72b8577795cd8076cdc21d45c7823bbb5c895a494ae6038267`  
 		Last Modified: Thu, 11 Aug 2016 17:47:59 GMT  
-		Size: 71.6 KB (71563 bytes)
+		Size: 71.6 KB (71563 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cee0974db2b868f0408f7e3eaba93c11fce3a38f612674477653b04c10369da0`  
 		Last Modified: Thu, 11 Aug 2016 17:47:58 GMT  
-		Size: 362.0 B
+		Size: 362.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c8144262002cd241e607d7d3ecda450ce4ae8edf7dac8dbf46897d498ac667d8`  
 		Last Modified: Thu, 11 Aug 2016 17:47:58 GMT  
-		Size: 680.0 B
+		Size: 680.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0d986e0269ededfc3b013b4cc2314761bc61a0d47ea714d0f9b3958b252bef2e`  
 		Last Modified: Thu, 11 Aug 2016 18:57:38 GMT  
-		Size: 4.6 MB (4598680 bytes)
+		Size: 4.6 MB (4598680 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1e14ac57808b9aeb1defb488cd8481e82d2b7bb29ca34267e28e0996577be530`  
 		Last Modified: Thu, 11 Aug 2016 19:50:32 GMT  
-		Size: 6.9 KB (6855 bytes)
+		Size: 6.9 KB (6855 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:070c3dcb947385d0a6078fb12290751ce4953241b0b3a59b42cabc53249411bf`  
 		Last Modified: Thu, 11 Aug 2016 19:50:37 GMT  
-		Size: 9.0 MB (9020625 bytes)
+		Size: 9.0 MB (9020625 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e5baec5f326706e2a1f1b2af2cefcc379418c5d015df4baa547207f95a95ef2e`  
 		Last Modified: Thu, 11 Aug 2016 19:50:32 GMT  
-		Size: 242.0 B
+		Size: 242.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `telegraf:0.13`
 
@@ -212,28 +228,36 @@ CMD ["telegraf"]
 -	Layers:
 	-	`sha256:064f9af025390d8da3dfab763fac261dd67f8807343613239d66304cda8f5d16`  
 		Last Modified: Thu, 04 Aug 2016 12:39:27 GMT  
-		Size: 65.7 MB (65699939 bytes)
+		Size: 65.7 MB (65699939 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:390957b2f4f0cd72b8577795cd8076cdc21d45c7823bbb5c895a494ae6038267`  
 		Last Modified: Thu, 11 Aug 2016 17:47:59 GMT  
-		Size: 71.6 KB (71563 bytes)
+		Size: 71.6 KB (71563 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cee0974db2b868f0408f7e3eaba93c11fce3a38f612674477653b04c10369da0`  
 		Last Modified: Thu, 11 Aug 2016 17:47:58 GMT  
-		Size: 362.0 B
+		Size: 362.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c8144262002cd241e607d7d3ecda450ce4ae8edf7dac8dbf46897d498ac667d8`  
 		Last Modified: Thu, 11 Aug 2016 17:47:58 GMT  
-		Size: 680.0 B
+		Size: 680.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0d986e0269ededfc3b013b4cc2314761bc61a0d47ea714d0f9b3958b252bef2e`  
 		Last Modified: Thu, 11 Aug 2016 18:57:38 GMT  
-		Size: 4.6 MB (4598680 bytes)
+		Size: 4.6 MB (4598680 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1e14ac57808b9aeb1defb488cd8481e82d2b7bb29ca34267e28e0996577be530`  
 		Last Modified: Thu, 11 Aug 2016 19:50:32 GMT  
-		Size: 6.9 KB (6855 bytes)
+		Size: 6.9 KB (6855 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:59337ba97636c54ebb981b85c00cb47f4462837a1e936878dffce7c64aedcdf5`  
 		Last Modified: Thu, 11 Aug 2016 19:51:24 GMT  
-		Size: 9.2 MB (9234627 bytes)
+		Size: 9.2 MB (9234627 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6e7c2f98d88d5e9d9995fe5747a2fed6a66dad6b4c2589b9d06581f191434524`  
 		Last Modified: Thu, 11 Aug 2016 19:51:19 GMT  
-		Size: 186.0 B
+		Size: 186.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `telegraf:0.13.1`
 
@@ -286,28 +310,36 @@ CMD ["telegraf"]
 -	Layers:
 	-	`sha256:064f9af025390d8da3dfab763fac261dd67f8807343613239d66304cda8f5d16`  
 		Last Modified: Thu, 04 Aug 2016 12:39:27 GMT  
-		Size: 65.7 MB (65699939 bytes)
+		Size: 65.7 MB (65699939 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:390957b2f4f0cd72b8577795cd8076cdc21d45c7823bbb5c895a494ae6038267`  
 		Last Modified: Thu, 11 Aug 2016 17:47:59 GMT  
-		Size: 71.6 KB (71563 bytes)
+		Size: 71.6 KB (71563 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cee0974db2b868f0408f7e3eaba93c11fce3a38f612674477653b04c10369da0`  
 		Last Modified: Thu, 11 Aug 2016 17:47:58 GMT  
-		Size: 362.0 B
+		Size: 362.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c8144262002cd241e607d7d3ecda450ce4ae8edf7dac8dbf46897d498ac667d8`  
 		Last Modified: Thu, 11 Aug 2016 17:47:58 GMT  
-		Size: 680.0 B
+		Size: 680.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0d986e0269ededfc3b013b4cc2314761bc61a0d47ea714d0f9b3958b252bef2e`  
 		Last Modified: Thu, 11 Aug 2016 18:57:38 GMT  
-		Size: 4.6 MB (4598680 bytes)
+		Size: 4.6 MB (4598680 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1e14ac57808b9aeb1defb488cd8481e82d2b7bb29ca34267e28e0996577be530`  
 		Last Modified: Thu, 11 Aug 2016 19:50:32 GMT  
-		Size: 6.9 KB (6855 bytes)
+		Size: 6.9 KB (6855 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:59337ba97636c54ebb981b85c00cb47f4462837a1e936878dffce7c64aedcdf5`  
 		Last Modified: Thu, 11 Aug 2016 19:51:24 GMT  
-		Size: 9.2 MB (9234627 bytes)
+		Size: 9.2 MB (9234627 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6e7c2f98d88d5e9d9995fe5747a2fed6a66dad6b4c2589b9d06581f191434524`  
 		Last Modified: Thu, 11 Aug 2016 19:51:19 GMT  
-		Size: 186.0 B
+		Size: 186.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `telegraf:latest`
 
@@ -360,28 +392,36 @@ CMD ["telegraf"]
 -	Layers:
 	-	`sha256:064f9af025390d8da3dfab763fac261dd67f8807343613239d66304cda8f5d16`  
 		Last Modified: Thu, 04 Aug 2016 12:39:27 GMT  
-		Size: 65.7 MB (65699939 bytes)
+		Size: 65.7 MB (65699939 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:390957b2f4f0cd72b8577795cd8076cdc21d45c7823bbb5c895a494ae6038267`  
 		Last Modified: Thu, 11 Aug 2016 17:47:59 GMT  
-		Size: 71.6 KB (71563 bytes)
+		Size: 71.6 KB (71563 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cee0974db2b868f0408f7e3eaba93c11fce3a38f612674477653b04c10369da0`  
 		Last Modified: Thu, 11 Aug 2016 17:47:58 GMT  
-		Size: 362.0 B
+		Size: 362.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c8144262002cd241e607d7d3ecda450ce4ae8edf7dac8dbf46897d498ac667d8`  
 		Last Modified: Thu, 11 Aug 2016 17:47:58 GMT  
-		Size: 680.0 B
+		Size: 680.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0d986e0269ededfc3b013b4cc2314761bc61a0d47ea714d0f9b3958b252bef2e`  
 		Last Modified: Thu, 11 Aug 2016 18:57:38 GMT  
-		Size: 4.6 MB (4598680 bytes)
+		Size: 4.6 MB (4598680 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1e14ac57808b9aeb1defb488cd8481e82d2b7bb29ca34267e28e0996577be530`  
 		Last Modified: Thu, 11 Aug 2016 19:50:32 GMT  
-		Size: 6.9 KB (6855 bytes)
+		Size: 6.9 KB (6855 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:59337ba97636c54ebb981b85c00cb47f4462837a1e936878dffce7c64aedcdf5`  
 		Last Modified: Thu, 11 Aug 2016 19:51:24 GMT  
-		Size: 9.2 MB (9234627 bytes)
+		Size: 9.2 MB (9234627 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6e7c2f98d88d5e9d9995fe5747a2fed6a66dad6b4c2589b9d06581f191434524`  
 		Last Modified: Thu, 11 Aug 2016 19:51:19 GMT  
-		Size: 186.0 B
+		Size: 186.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `telegraf:0.13-alpine`
 
@@ -422,13 +462,16 @@ CMD ["telegraf"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:66a9ca73c7a6d5dc60202678d8a12060a7c6007b47a05c26ab7c3e92b41003b0`  
 		Last Modified: Thu, 23 Jun 2016 22:14:48 GMT  
-		Size: 6.6 MB (6619669 bytes)
+		Size: 6.6 MB (6619669 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2fc1e3f952f1abf6d5b5ecd94353a72886c2f4771f7fd76036918fb929b34e45`  
 		Last Modified: Thu, 23 Jun 2016 22:14:45 GMT  
-		Size: 181.0 B
+		Size: 181.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `telegraf:0.13.1-alpine`
 
@@ -469,13 +512,16 @@ CMD ["telegraf"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:66a9ca73c7a6d5dc60202678d8a12060a7c6007b47a05c26ab7c3e92b41003b0`  
 		Last Modified: Thu, 23 Jun 2016 22:14:48 GMT  
-		Size: 6.6 MB (6619669 bytes)
+		Size: 6.6 MB (6619669 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2fc1e3f952f1abf6d5b5ecd94353a72886c2f4771f7fd76036918fb929b34e45`  
 		Last Modified: Thu, 23 Jun 2016 22:14:45 GMT  
-		Size: 181.0 B
+		Size: 181.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `telegraf:alpine`
 
@@ -516,13 +562,16 @@ CMD ["telegraf"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:66a9ca73c7a6d5dc60202678d8a12060a7c6007b47a05c26ab7c3e92b41003b0`  
 		Last Modified: Thu, 23 Jun 2016 22:14:48 GMT  
-		Size: 6.6 MB (6619669 bytes)
+		Size: 6.6 MB (6619669 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2fc1e3f952f1abf6d5b5ecd94353a72886c2f4771f7fd76036918fb929b34e45`  
 		Last Modified: Thu, 23 Jun 2016 22:14:45 GMT  
-		Size: 181.0 B
+		Size: 181.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `telegraf:1.0.0-beta3`
 
@@ -575,28 +624,36 @@ CMD ["telegraf"]
 -	Layers:
 	-	`sha256:064f9af025390d8da3dfab763fac261dd67f8807343613239d66304cda8f5d16`  
 		Last Modified: Thu, 04 Aug 2016 12:39:27 GMT  
-		Size: 65.7 MB (65699939 bytes)
+		Size: 65.7 MB (65699939 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:390957b2f4f0cd72b8577795cd8076cdc21d45c7823bbb5c895a494ae6038267`  
 		Last Modified: Thu, 11 Aug 2016 17:47:59 GMT  
-		Size: 71.6 KB (71563 bytes)
+		Size: 71.6 KB (71563 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cee0974db2b868f0408f7e3eaba93c11fce3a38f612674477653b04c10369da0`  
 		Last Modified: Thu, 11 Aug 2016 17:47:58 GMT  
-		Size: 362.0 B
+		Size: 362.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c8144262002cd241e607d7d3ecda450ce4ae8edf7dac8dbf46897d498ac667d8`  
 		Last Modified: Thu, 11 Aug 2016 17:47:58 GMT  
-		Size: 680.0 B
+		Size: 680.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0d986e0269ededfc3b013b4cc2314761bc61a0d47ea714d0f9b3958b252bef2e`  
 		Last Modified: Thu, 11 Aug 2016 18:57:38 GMT  
-		Size: 4.6 MB (4598680 bytes)
+		Size: 4.6 MB (4598680 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1e14ac57808b9aeb1defb488cd8481e82d2b7bb29ca34267e28e0996577be530`  
 		Last Modified: Thu, 11 Aug 2016 19:50:32 GMT  
-		Size: 6.9 KB (6855 bytes)
+		Size: 6.9 KB (6855 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5467854d3bc990ae9c408cb72248e0abce5c9cc898ccc79b31e9c4a25b5d3b14`  
 		Last Modified: Thu, 11 Aug 2016 19:52:25 GMT  
-		Size: 10.6 MB (10560875 bytes)
+		Size: 10.6 MB (10560875 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0966b383ed52ec4d4ab513c72ce1117e9c61571f49baaa997223d9c5a0e122c7`  
 		Last Modified: Thu, 11 Aug 2016 19:52:20 GMT  
-		Size: 183.0 B
+		Size: 183.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `telegraf:1.0.0-beta3-alpine`
 
@@ -637,10 +694,13 @@ CMD ["telegraf"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:660bb42911d18ce8fb4a5b74ee0401fd9673f3166a2599ec3c4def63e1e4eee1`  
 		Last Modified: Tue, 19 Jul 2016 19:38:54 GMT  
-		Size: 7.6 MB (7620270 bytes)
+		Size: 7.6 MB (7620270 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6ada9a3df65febf84cf08f238ca0dba0baad02679da87108160ce841152d0fb9`  
 		Last Modified: Tue, 19 Jul 2016 19:38:51 GMT  
-		Size: 183.0 B
+		Size: 183.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

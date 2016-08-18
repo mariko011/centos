@@ -35,10 +35,12 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
 		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+		Size: 32.0 B  
+		MIME: application/octet-stream
 	-	`sha256:9b30baa3835d9d60c5184f30a4bd28e5d7a98af5110411ddbed56543742a1fcf`  
 		Last Modified: Wed, 14 Oct 2015 17:54:57 GMT  
-		Size: 233.4 MB (233355848 bytes)
+		Size: 233.4 MB (233355848 bytes)  
+		MIME: application/octet-stream
 
 ## `sourcemage:0.61`
 
@@ -70,7 +72,9 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
 		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+		Size: 32.0 B  
+		MIME: application/octet-stream
 	-	`sha256:9b30baa3835d9d60c5184f30a4bd28e5d7a98af5110411ddbed56543742a1fcf`  
 		Last Modified: Wed, 14 Oct 2015 17:54:57 GMT  
-		Size: 233.4 MB (233355848 bytes)
+		Size: 233.4 MB (233355848 bytes)  
+		MIME: application/octet-stream

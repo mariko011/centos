@@ -59,19 +59,24 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cc3b4ec3ebc8168586aab634db0bdb3c84fdd565c34cda38bb293a83732e9e74`  
 		Last Modified: Mon, 01 Aug 2016 23:34:04 GMT  
-		Size: 1.4 KB (1440 bytes)
+		Size: 1.4 KB (1440 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2989e9ff1b4fb740119b8d91fb6df2159ae4c05263c5f6d69a3d4a18f003eb27`  
 		Last Modified: Mon, 01 Aug 2016 23:34:04 GMT  
-		Size: 216.0 B
+		Size: 216.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:70fd146464d96ecdf9a5530b120b651494dd1779e8f1d8bf056c861850f579ff`  
 		Last Modified: Mon, 01 Aug 2016 23:34:12 GMT  
-		Size: 29.3 MB (29295579 bytes)
+		Size: 29.3 MB (29295579 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e97fbef29e269f057b03fc167885603e006055f77348362d676b91a3bc840ec8`  
 		Last Modified: Mon, 01 Aug 2016 23:34:04 GMT  
-		Size: 92.0 B
+		Size: 92.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:2.0`
 
@@ -119,19 +124,24 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cc3b4ec3ebc8168586aab634db0bdb3c84fdd565c34cda38bb293a83732e9e74`  
 		Last Modified: Mon, 01 Aug 2016 23:34:04 GMT  
-		Size: 1.4 KB (1440 bytes)
+		Size: 1.4 KB (1440 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2989e9ff1b4fb740119b8d91fb6df2159ae4c05263c5f6d69a3d4a18f003eb27`  
 		Last Modified: Mon, 01 Aug 2016 23:34:04 GMT  
-		Size: 216.0 B
+		Size: 216.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:70fd146464d96ecdf9a5530b120b651494dd1779e8f1d8bf056c861850f579ff`  
 		Last Modified: Mon, 01 Aug 2016 23:34:12 GMT  
-		Size: 29.3 MB (29295579 bytes)
+		Size: 29.3 MB (29295579 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e97fbef29e269f057b03fc167885603e006055f77348362d676b91a3bc840ec8`  
 		Last Modified: Mon, 01 Aug 2016 23:34:04 GMT  
-		Size: 92.0 B
+		Size: 92.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:2.1.6`
 
@@ -179,19 +189,24 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cc3b4ec3ebc8168586aab634db0bdb3c84fdd565c34cda38bb293a83732e9e74`  
 		Last Modified: Mon, 01 Aug 2016 23:34:04 GMT  
-		Size: 1.4 KB (1440 bytes)
+		Size: 1.4 KB (1440 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2989e9ff1b4fb740119b8d91fb6df2159ae4c05263c5f6d69a3d4a18f003eb27`  
 		Last Modified: Mon, 01 Aug 2016 23:34:04 GMT  
-		Size: 216.0 B
+		Size: 216.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6ebe14e556e100ea4bcab9606ef242c50e23d9d0d9fa18fb695ea1a42c9f4492`  
 		Last Modified: Mon, 01 Aug 2016 23:36:20 GMT  
-		Size: 23.9 MB (23917971 bytes)
+		Size: 23.9 MB (23917971 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3307cc5fe96b386556125c67015cc0a94fddfa64b738b1a47eb23e463286c3b8`  
 		Last Modified: Mon, 01 Aug 2016 23:36:11 GMT  
-		Size: 92.0 B
+		Size: 92.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:2.1`
 
@@ -239,19 +254,24 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cc3b4ec3ebc8168586aab634db0bdb3c84fdd565c34cda38bb293a83732e9e74`  
 		Last Modified: Mon, 01 Aug 2016 23:34:04 GMT  
-		Size: 1.4 KB (1440 bytes)
+		Size: 1.4 KB (1440 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2989e9ff1b4fb740119b8d91fb6df2159ae4c05263c5f6d69a3d4a18f003eb27`  
 		Last Modified: Mon, 01 Aug 2016 23:34:04 GMT  
-		Size: 216.0 B
+		Size: 216.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6ebe14e556e100ea4bcab9606ef242c50e23d9d0d9fa18fb695ea1a42c9f4492`  
 		Last Modified: Mon, 01 Aug 2016 23:36:20 GMT  
-		Size: 23.9 MB (23917971 bytes)
+		Size: 23.9 MB (23917971 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3307cc5fe96b386556125c67015cc0a94fddfa64b738b1a47eb23e463286c3b8`  
 		Last Modified: Mon, 01 Aug 2016 23:36:11 GMT  
-		Size: 92.0 B
+		Size: 92.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:2.2.6`
 
@@ -299,19 +319,24 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cc3b4ec3ebc8168586aab634db0bdb3c84fdd565c34cda38bb293a83732e9e74`  
 		Last Modified: Mon, 01 Aug 2016 23:34:04 GMT  
-		Size: 1.4 KB (1440 bytes)
+		Size: 1.4 KB (1440 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2989e9ff1b4fb740119b8d91fb6df2159ae4c05263c5f6d69a3d4a18f003eb27`  
 		Last Modified: Mon, 01 Aug 2016 23:34:04 GMT  
-		Size: 216.0 B
+		Size: 216.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:41f882a2d9d2f1c1ec8d28ee55fe4a7141623354a94fe455a44fb05825e8dae4`  
 		Last Modified: Mon, 01 Aug 2016 23:38:19 GMT  
-		Size: 24.1 MB (24099153 bytes)
+		Size: 24.1 MB (24099153 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:74407ebeb70103c61c6cee37cfddfaf711d49f19e5988ce5767f3dda8d7605ed`  
 		Last Modified: Mon, 01 Aug 2016 23:38:11 GMT  
-		Size: 92.0 B
+		Size: 92.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:2.2`
 
@@ -359,19 +384,24 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cc3b4ec3ebc8168586aab634db0bdb3c84fdd565c34cda38bb293a83732e9e74`  
 		Last Modified: Mon, 01 Aug 2016 23:34:04 GMT  
-		Size: 1.4 KB (1440 bytes)
+		Size: 1.4 KB (1440 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2989e9ff1b4fb740119b8d91fb6df2159ae4c05263c5f6d69a3d4a18f003eb27`  
 		Last Modified: Mon, 01 Aug 2016 23:34:04 GMT  
-		Size: 216.0 B
+		Size: 216.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:41f882a2d9d2f1c1ec8d28ee55fe4a7141623354a94fe455a44fb05825e8dae4`  
 		Last Modified: Mon, 01 Aug 2016 23:38:19 GMT  
-		Size: 24.1 MB (24099153 bytes)
+		Size: 24.1 MB (24099153 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:74407ebeb70103c61c6cee37cfddfaf711d49f19e5988ce5767f3dda8d7605ed`  
 		Last Modified: Mon, 01 Aug 2016 23:38:11 GMT  
-		Size: 92.0 B
+		Size: 92.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:2.3.4`
 
@@ -419,19 +449,24 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cc3b4ec3ebc8168586aab634db0bdb3c84fdd565c34cda38bb293a83732e9e74`  
 		Last Modified: Mon, 01 Aug 2016 23:34:04 GMT  
-		Size: 1.4 KB (1440 bytes)
+		Size: 1.4 KB (1440 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2989e9ff1b4fb740119b8d91fb6df2159ae4c05263c5f6d69a3d4a18f003eb27`  
 		Last Modified: Mon, 01 Aug 2016 23:34:04 GMT  
-		Size: 216.0 B
+		Size: 216.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2acf04298b5f35f7f62866ee2db81faf95cf175dededad00cc6ec69b3f686fab`  
 		Last Modified: Mon, 01 Aug 2016 23:40:24 GMT  
-		Size: 24.6 MB (24598161 bytes)
+		Size: 24.6 MB (24598161 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e23b4c5a7fad873de72fe8bbce98cb088d60a8d2d10730a98fe509a9b4a481de`  
 		Last Modified: Mon, 01 Aug 2016 23:40:16 GMT  
-		Size: 92.0 B
+		Size: 92.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:2.3`
 
@@ -479,19 +514,24 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cc3b4ec3ebc8168586aab634db0bdb3c84fdd565c34cda38bb293a83732e9e74`  
 		Last Modified: Mon, 01 Aug 2016 23:34:04 GMT  
-		Size: 1.4 KB (1440 bytes)
+		Size: 1.4 KB (1440 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2989e9ff1b4fb740119b8d91fb6df2159ae4c05263c5f6d69a3d4a18f003eb27`  
 		Last Modified: Mon, 01 Aug 2016 23:34:04 GMT  
-		Size: 216.0 B
+		Size: 216.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2acf04298b5f35f7f62866ee2db81faf95cf175dededad00cc6ec69b3f686fab`  
 		Last Modified: Mon, 01 Aug 2016 23:40:24 GMT  
-		Size: 24.6 MB (24598161 bytes)
+		Size: 24.6 MB (24598161 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e23b4c5a7fad873de72fe8bbce98cb088d60a8d2d10730a98fe509a9b4a481de`  
 		Last Modified: Mon, 01 Aug 2016 23:40:16 GMT  
-		Size: 92.0 B
+		Size: 92.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:2`
 
@@ -539,19 +579,24 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cc3b4ec3ebc8168586aab634db0bdb3c84fdd565c34cda38bb293a83732e9e74`  
 		Last Modified: Mon, 01 Aug 2016 23:34:04 GMT  
-		Size: 1.4 KB (1440 bytes)
+		Size: 1.4 KB (1440 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2989e9ff1b4fb740119b8d91fb6df2159ae4c05263c5f6d69a3d4a18f003eb27`  
 		Last Modified: Mon, 01 Aug 2016 23:34:04 GMT  
-		Size: 216.0 B
+		Size: 216.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2acf04298b5f35f7f62866ee2db81faf95cf175dededad00cc6ec69b3f686fab`  
 		Last Modified: Mon, 01 Aug 2016 23:40:24 GMT  
-		Size: 24.6 MB (24598161 bytes)
+		Size: 24.6 MB (24598161 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e23b4c5a7fad873de72fe8bbce98cb088d60a8d2d10730a98fe509a9b4a481de`  
 		Last Modified: Mon, 01 Aug 2016 23:40:16 GMT  
-		Size: 92.0 B
+		Size: 92.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:latest`
 
@@ -599,16 +644,21 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cc3b4ec3ebc8168586aab634db0bdb3c84fdd565c34cda38bb293a83732e9e74`  
 		Last Modified: Mon, 01 Aug 2016 23:34:04 GMT  
-		Size: 1.4 KB (1440 bytes)
+		Size: 1.4 KB (1440 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2989e9ff1b4fb740119b8d91fb6df2159ae4c05263c5f6d69a3d4a18f003eb27`  
 		Last Modified: Mon, 01 Aug 2016 23:34:04 GMT  
-		Size: 216.0 B
+		Size: 216.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2acf04298b5f35f7f62866ee2db81faf95cf175dededad00cc6ec69b3f686fab`  
 		Last Modified: Mon, 01 Aug 2016 23:40:24 GMT  
-		Size: 24.6 MB (24598161 bytes)
+		Size: 24.6 MB (24598161 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e23b4c5a7fad873de72fe8bbce98cb088d60a8d2d10730a98fe509a9b4a481de`  
 		Last Modified: Mon, 01 Aug 2016 23:40:16 GMT  
-		Size: 92.0 B
+		Size: 92.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

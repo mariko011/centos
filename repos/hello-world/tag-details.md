@@ -32,4 +32,5 @@ CMD ["/hello"]
 -	Layers:
 	-	`sha256:c04b14da8d1441880ed3fe6106fb2cc6fa1c9661846ac0266b8a5ec8edf37b7c`  
 		Last Modified: Fri, 01 Jul 2016 19:39:34 GMT  
-		Size: 974.0 B
+		Size: 974.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

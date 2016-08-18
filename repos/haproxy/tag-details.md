@@ -64,16 +64,20 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cc9c30f52f16b92910396d01c569000e5f8c8832574f165aecdec708ae083162`  
 		Last Modified: Fri, 29 Jul 2016 04:08:51 GMT  
-		Size: 205.0 B
+		Size: 205.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5be00c7d2e309ab864b5f275568b8f73da80eb69fcee2200561570322975f561`  
 		Last Modified: Fri, 29 Jul 2016 04:08:52 GMT  
-		Size: 3.2 MB (3201814 bytes)
+		Size: 3.2 MB (3201814 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:97288ccb237316083c5598084774e85576bd9af0b128e105666068ff0c19e781`  
 		Last Modified: Fri, 29 Jul 2016 04:08:51 GMT  
-		Size: 214.0 B
+		Size: 214.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haproxy:1.4`
 
@@ -120,16 +124,20 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cc9c30f52f16b92910396d01c569000e5f8c8832574f165aecdec708ae083162`  
 		Last Modified: Fri, 29 Jul 2016 04:08:51 GMT  
-		Size: 205.0 B
+		Size: 205.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5be00c7d2e309ab864b5f275568b8f73da80eb69fcee2200561570322975f561`  
 		Last Modified: Fri, 29 Jul 2016 04:08:52 GMT  
-		Size: 3.2 MB (3201814 bytes)
+		Size: 3.2 MB (3201814 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:97288ccb237316083c5598084774e85576bd9af0b128e105666068ff0c19e781`  
 		Last Modified: Fri, 29 Jul 2016 04:08:51 GMT  
-		Size: 214.0 B
+		Size: 214.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haproxy:1.4.27-alpine`
 
@@ -172,13 +180,16 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2799ce09ee3890b218da12ac7a53d946307f36aa177ff34103e21bb57e7d9c14`  
 		Last Modified: Thu, 23 Jun 2016 20:29:27 GMT  
-		Size: 869.2 KB (869208 bytes)
+		Size: 869.2 KB (869208 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:29c5eb870ee933fc394ee4c4ae6f1f5950081f53c555dc611bfb9e2c113c334c`  
 		Last Modified: Thu, 23 Jun 2016 20:29:26 GMT  
-		Size: 213.0 B
+		Size: 213.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haproxy:1.4-alpine`
 
@@ -221,13 +232,16 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2799ce09ee3890b218da12ac7a53d946307f36aa177ff34103e21bb57e7d9c14`  
 		Last Modified: Thu, 23 Jun 2016 20:29:27 GMT  
-		Size: 869.2 KB (869208 bytes)
+		Size: 869.2 KB (869208 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:29c5eb870ee933fc394ee4c4ae6f1f5950081f53c555dc611bfb9e2c113c334c`  
 		Last Modified: Thu, 23 Jun 2016 20:29:26 GMT  
-		Size: 213.0 B
+		Size: 213.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haproxy:1.5.18`
 
@@ -274,16 +288,20 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b2fe570be742fc4d5a9b4ba3bb31bc8b2af5224198aef596127192fadcbb4d60`  
 		Last Modified: Fri, 29 Jul 2016 04:12:21 GMT  
-		Size: 1.7 MB (1689842 bytes)
+		Size: 1.7 MB (1689842 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5cd9a79b8ed90f6e4828b72907f649f25e4434ddab02c239ed8e291aedad342a`  
 		Last Modified: Fri, 29 Jul 2016 04:15:08 GMT  
-		Size: 4.0 MB (4000735 bytes)
+		Size: 4.0 MB (4000735 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:65488b22203f88a4aedd7c40e6cf83c4a5ad057e179e9a2fa64692088172ee5c`  
 		Last Modified: Fri, 29 Jul 2016 04:15:07 GMT  
-		Size: 345.0 B
+		Size: 345.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haproxy:1.5`
 
@@ -330,16 +348,20 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b2fe570be742fc4d5a9b4ba3bb31bc8b2af5224198aef596127192fadcbb4d60`  
 		Last Modified: Fri, 29 Jul 2016 04:12:21 GMT  
-		Size: 1.7 MB (1689842 bytes)
+		Size: 1.7 MB (1689842 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5cd9a79b8ed90f6e4828b72907f649f25e4434ddab02c239ed8e291aedad342a`  
 		Last Modified: Fri, 29 Jul 2016 04:15:08 GMT  
-		Size: 4.0 MB (4000735 bytes)
+		Size: 4.0 MB (4000735 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:65488b22203f88a4aedd7c40e6cf83c4a5ad057e179e9a2fa64692088172ee5c`  
 		Last Modified: Fri, 29 Jul 2016 04:15:07 GMT  
-		Size: 345.0 B
+		Size: 345.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haproxy:1.5.18-alpine`
 
@@ -382,13 +404,16 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5f9cf5e0ec90cd0f8b258153d036af5e1e08598fc7f26de73281b18886e0d505`  
 		Last Modified: Thu, 23 Jun 2016 20:32:48 GMT  
-		Size: 2.1 MB (2062340 bytes)
+		Size: 2.1 MB (2062340 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:95f57b5198d15474413dd83d3621b1a58445a1084e94992bad5a6c01d6ab78c0`  
 		Last Modified: Thu, 23 Jun 2016 20:32:47 GMT  
-		Size: 345.0 B
+		Size: 345.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haproxy:1.5-alpine`
 
@@ -431,13 +456,16 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5f9cf5e0ec90cd0f8b258153d036af5e1e08598fc7f26de73281b18886e0d505`  
 		Last Modified: Thu, 23 Jun 2016 20:32:48 GMT  
-		Size: 2.1 MB (2062340 bytes)
+		Size: 2.1 MB (2062340 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:95f57b5198d15474413dd83d3621b1a58445a1084e94992bad5a6c01d6ab78c0`  
 		Last Modified: Thu, 23 Jun 2016 20:32:47 GMT  
-		Size: 345.0 B
+		Size: 345.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haproxy:1.6.8`
 
@@ -484,16 +512,20 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b2fe570be742fc4d5a9b4ba3bb31bc8b2af5224198aef596127192fadcbb4d60`  
 		Last Modified: Fri, 29 Jul 2016 04:12:21 GMT  
-		Size: 1.7 MB (1689842 bytes)
+		Size: 1.7 MB (1689842 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:dab62a9dcbb9e67c4e1f6562fd40dc0c45655a6d973037be3a58dc6d2953cd6f`  
 		Last Modified: Tue, 16 Aug 2016 00:14:12 GMT  
-		Size: 4.3 MB (4345000 bytes)
+		Size: 4.3 MB (4345000 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4551e6d71df7fe3d659361d8fd70ad58dcde2e550058189905348b2e43f469aa`  
 		Last Modified: Tue, 16 Aug 2016 00:14:10 GMT  
-		Size: 345.0 B
+		Size: 345.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haproxy:1.6`
 
@@ -540,16 +572,20 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b2fe570be742fc4d5a9b4ba3bb31bc8b2af5224198aef596127192fadcbb4d60`  
 		Last Modified: Fri, 29 Jul 2016 04:12:21 GMT  
-		Size: 1.7 MB (1689842 bytes)
+		Size: 1.7 MB (1689842 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:dab62a9dcbb9e67c4e1f6562fd40dc0c45655a6d973037be3a58dc6d2953cd6f`  
 		Last Modified: Tue, 16 Aug 2016 00:14:12 GMT  
-		Size: 4.3 MB (4345000 bytes)
+		Size: 4.3 MB (4345000 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4551e6d71df7fe3d659361d8fd70ad58dcde2e550058189905348b2e43f469aa`  
 		Last Modified: Tue, 16 Aug 2016 00:14:10 GMT  
-		Size: 345.0 B
+		Size: 345.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haproxy:1`
 
@@ -596,16 +632,20 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b2fe570be742fc4d5a9b4ba3bb31bc8b2af5224198aef596127192fadcbb4d60`  
 		Last Modified: Fri, 29 Jul 2016 04:12:21 GMT  
-		Size: 1.7 MB (1689842 bytes)
+		Size: 1.7 MB (1689842 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:dab62a9dcbb9e67c4e1f6562fd40dc0c45655a6d973037be3a58dc6d2953cd6f`  
 		Last Modified: Tue, 16 Aug 2016 00:14:12 GMT  
-		Size: 4.3 MB (4345000 bytes)
+		Size: 4.3 MB (4345000 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4551e6d71df7fe3d659361d8fd70ad58dcde2e550058189905348b2e43f469aa`  
 		Last Modified: Tue, 16 Aug 2016 00:14:10 GMT  
-		Size: 345.0 B
+		Size: 345.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haproxy:latest`
 
@@ -652,16 +692,20 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b2fe570be742fc4d5a9b4ba3bb31bc8b2af5224198aef596127192fadcbb4d60`  
 		Last Modified: Fri, 29 Jul 2016 04:12:21 GMT  
-		Size: 1.7 MB (1689842 bytes)
+		Size: 1.7 MB (1689842 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:dab62a9dcbb9e67c4e1f6562fd40dc0c45655a6d973037be3a58dc6d2953cd6f`  
 		Last Modified: Tue, 16 Aug 2016 00:14:12 GMT  
-		Size: 4.3 MB (4345000 bytes)
+		Size: 4.3 MB (4345000 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4551e6d71df7fe3d659361d8fd70ad58dcde2e550058189905348b2e43f469aa`  
 		Last Modified: Tue, 16 Aug 2016 00:14:10 GMT  
-		Size: 345.0 B
+		Size: 345.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haproxy:1.6.8-alpine`
 
@@ -704,13 +748,16 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a20c4a4233b15e0160c45d9ef495b5f6a4c40474419d24323ead8afec650ffd3`  
 		Last Modified: Tue, 16 Aug 2016 00:15:03 GMT  
-		Size: 2.8 MB (2806926 bytes)
+		Size: 2.8 MB (2806926 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:71315152ab293bb699050569bad8c8f9414610953b96025064852df357988620`  
 		Last Modified: Tue, 16 Aug 2016 00:15:00 GMT  
-		Size: 346.0 B
+		Size: 346.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haproxy:1.6-alpine`
 
@@ -753,13 +800,16 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a20c4a4233b15e0160c45d9ef495b5f6a4c40474419d24323ead8afec650ffd3`  
 		Last Modified: Tue, 16 Aug 2016 00:15:03 GMT  
-		Size: 2.8 MB (2806926 bytes)
+		Size: 2.8 MB (2806926 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:71315152ab293bb699050569bad8c8f9414610953b96025064852df357988620`  
 		Last Modified: Tue, 16 Aug 2016 00:15:00 GMT  
-		Size: 346.0 B
+		Size: 346.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haproxy:1-alpine`
 
@@ -802,13 +852,16 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a20c4a4233b15e0160c45d9ef495b5f6a4c40474419d24323ead8afec650ffd3`  
 		Last Modified: Tue, 16 Aug 2016 00:15:03 GMT  
-		Size: 2.8 MB (2806926 bytes)
+		Size: 2.8 MB (2806926 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:71315152ab293bb699050569bad8c8f9414610953b96025064852df357988620`  
 		Last Modified: Tue, 16 Aug 2016 00:15:00 GMT  
-		Size: 346.0 B
+		Size: 346.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haproxy:alpine`
 
@@ -851,10 +904,13 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 -	Layers:
 	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)
+		Size: 2.3 MB (2310286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a20c4a4233b15e0160c45d9ef495b5f6a4c40474419d24323ead8afec650ffd3`  
 		Last Modified: Tue, 16 Aug 2016 00:15:03 GMT  
-		Size: 2.8 MB (2806926 bytes)
+		Size: 2.8 MB (2806926 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:71315152ab293bb699050569bad8c8f9414610953b96025064852df357988620`  
 		Last Modified: Tue, 16 Aug 2016 00:15:00 GMT  
-		Size: 346.0 B
+		Size: 346.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

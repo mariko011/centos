@@ -56,7 +56,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:3d8673bd162aafaf70e94029801a409fa3210363707ea1e7956b6f8ff9351cc8`  
 		Last Modified: Fri, 29 Jul 2016 21:00:19 GMT  
-		Size: 70.6 MB (70582749 bytes)
+		Size: 70.6 MB (70582749 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `centos:centos7`
 
@@ -90,7 +91,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:3d8673bd162aafaf70e94029801a409fa3210363707ea1e7956b6f8ff9351cc8`  
 		Last Modified: Fri, 29 Jul 2016 21:00:19 GMT  
-		Size: 70.6 MB (70582749 bytes)
+		Size: 70.6 MB (70582749 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `centos:7`
 
@@ -124,7 +126,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:3d8673bd162aafaf70e94029801a409fa3210363707ea1e7956b6f8ff9351cc8`  
 		Last Modified: Fri, 29 Jul 2016 21:00:19 GMT  
-		Size: 70.6 MB (70582749 bytes)
+		Size: 70.6 MB (70582749 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `centos:centos6`
 
@@ -158,7 +161,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:08a7a0bb61228a03e099486f3ffbb4e617a7b61d69aa7e8e803d925e1c5ebaaa`  
 		Last Modified: Fri, 29 Jul 2016 21:01:18 GMT  
-		Size: 68.8 MB (68764174 bytes)
+		Size: 68.8 MB (68764174 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `centos:6`
 
@@ -192,7 +196,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:08a7a0bb61228a03e099486f3ffbb4e617a7b61d69aa7e8e803d925e1c5ebaaa`  
 		Last Modified: Fri, 29 Jul 2016 21:01:18 GMT  
-		Size: 68.8 MB (68764174 bytes)
+		Size: 68.8 MB (68764174 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `centos:centos5`
 
@@ -226,7 +231,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:d129ecdb0249b2540429964ecf04a8f426199d27bfec517ecd9f19b2c7ae21ba`  
 		Last Modified: Fri, 01 Jul 2016 22:56:11 GMT  
-		Size: 87.3 MB (87342234 bytes)
+		Size: 87.3 MB (87342234 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `centos:5`
 
@@ -260,7 +266,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:d129ecdb0249b2540429964ecf04a8f426199d27bfec517ecd9f19b2c7ae21ba`  
 		Last Modified: Fri, 01 Jul 2016 22:56:11 GMT  
-		Size: 87.3 MB (87342234 bytes)
+		Size: 87.3 MB (87342234 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `centos:centos7.2.1511`
 
@@ -298,7 +305,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:f19ed9d73b3ef2c54aef640d150f40de66926016b485da5d086f9666679ce5a0`  
 		Last Modified: Fri, 01 Jul 2016 22:56:49 GMT  
-		Size: 69.9 MB (69901359 bytes)
+		Size: 69.9 MB (69901359 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `centos:7.2.1511`
 
@@ -336,7 +344,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:f19ed9d73b3ef2c54aef640d150f40de66926016b485da5d086f9666679ce5a0`  
 		Last Modified: Fri, 01 Jul 2016 22:56:49 GMT  
-		Size: 69.9 MB (69901359 bytes)
+		Size: 69.9 MB (69901359 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `centos:centos7.1.1503`
 
@@ -368,7 +377,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:f6e4e6bc8376818ff75e2818d38b9451b87e3348e1d8256bef64ecd9000e7305`  
 		Last Modified: Fri, 01 Jul 2016 22:57:29 GMT  
-		Size: 75.7 MB (75668814 bytes)
+		Size: 75.7 MB (75668814 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `centos:7.1.1503`
 
@@ -400,7 +410,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:f6e4e6bc8376818ff75e2818d38b9451b87e3348e1d8256bef64ecd9000e7305`  
 		Last Modified: Fri, 01 Jul 2016 22:57:29 GMT  
-		Size: 75.7 MB (75668814 bytes)
+		Size: 75.7 MB (75668814 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `centos:centos7.0.1406`
 
@@ -429,7 +440,8 @@ ADD file:6a409eac27f0c7e04393da096dbeff01b929405e79b15222a0dc06a2084d3df3 in /
 -	Layers:
 	-	`sha256:2fbe3a450f5d5be9ac8ed64d7a5e2434adc4156ab2530bcf74e32376de0aa371`  
 		Last Modified: Fri, 01 Jul 2016 22:58:08 GMT  
-		Size: 75.1 MB (75068194 bytes)
+		Size: 75.1 MB (75068194 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `centos:7.0.1406`
 
@@ -458,7 +470,8 @@ ADD file:6a409eac27f0c7e04393da096dbeff01b929405e79b15222a0dc06a2084d3df3 in /
 -	Layers:
 	-	`sha256:2fbe3a450f5d5be9ac8ed64d7a5e2434adc4156ab2530bcf74e32376de0aa371`  
 		Last Modified: Fri, 01 Jul 2016 22:58:08 GMT  
-		Size: 75.1 MB (75068194 bytes)
+		Size: 75.1 MB (75068194 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `centos:centos6.8`
 
@@ -492,7 +505,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:b6d7b2ebc0a7f5c0e87724be3904839d65562ec69909232ce1b7524257eb41af`  
 		Last Modified: Fri, 01 Jul 2016 22:58:44 GMT  
-		Size: 68.7 MB (68745207 bytes)
+		Size: 68.7 MB (68745207 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `centos:6.8`
 
@@ -526,7 +540,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:b6d7b2ebc0a7f5c0e87724be3904839d65562ec69909232ce1b7524257eb41af`  
 		Last Modified: Fri, 01 Jul 2016 22:58:44 GMT  
-		Size: 68.7 MB (68745207 bytes)
+		Size: 68.7 MB (68745207 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `centos:centos6.7`
 
@@ -562,7 +577,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:5237cae4d62996a5c7e0dec4eec6a221b5cad630c4d7de33db57004d6cd2501b`  
 		Last Modified: Mon, 19 Oct 2015 20:57:27 GMT  
-		Size: 66.4 MB (66389926 bytes)
+		Size: 66.4 MB (66389926 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `centos:6.7`
 
@@ -598,7 +614,8 @@ CMD ["/bin/bash"]
 -	Layers:
 	-	`sha256:5237cae4d62996a5c7e0dec4eec6a221b5cad630c4d7de33db57004d6cd2501b`  
 		Last Modified: Mon, 19 Oct 2015 20:57:27 GMT  
-		Size: 66.4 MB (66389926 bytes)
+		Size: 66.4 MB (66389926 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `centos:centos6.6`
 
@@ -627,7 +644,8 @@ ADD file:a5c79d873c20d685b71d899211c5d58b90c08473604aba82a9d655a58fcd1488 in /
 -	Layers:
 	-	`sha256:3eaa9b70c44a88d9d4c2bcac5f8af1f7f63e12eae72fd21a029a54ad95a47f50`  
 		Last Modified: Fri, 01 Jul 2016 22:59:57 GMT  
-		Size: 72.0 MB (72038689 bytes)
+		Size: 72.0 MB (72038689 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `centos:6.6`
 
@@ -656,7 +674,8 @@ ADD file:a5c79d873c20d685b71d899211c5d58b90c08473604aba82a9d655a58fcd1488 in /
 -	Layers:
 	-	`sha256:3eaa9b70c44a88d9d4c2bcac5f8af1f7f63e12eae72fd21a029a54ad95a47f50`  
 		Last Modified: Fri, 01 Jul 2016 22:59:57 GMT  
-		Size: 72.0 MB (72038689 bytes)
+		Size: 72.0 MB (72038689 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `centos:centos5.11`
 
@@ -685,7 +704,8 @@ ADD file:5eb41b74d6ed5f4540b19132c786aec1839942f9213b842f37378a6f64da4914 in /
 -	Layers:
 	-	`sha256:ebd69957142bd0a24ecd4d5293bcfc18c2732741afb2e2401c60d13c3e80798c`  
 		Last Modified: Fri, 01 Jul 2016 23:00:46 GMT  
-		Size: 87.1 MB (87094625 bytes)
+		Size: 87.1 MB (87094625 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `centos:5.11`
 
@@ -714,4 +734,5 @@ ADD file:5eb41b74d6ed5f4540b19132c786aec1839942f9213b842f37378a6f64da4914 in /
 -	Layers:
 	-	`sha256:ebd69957142bd0a24ecd4d5293bcfc18c2732741afb2e2401c60d13c3e80798c`  
 		Last Modified: Fri, 01 Jul 2016 23:00:46 GMT  
-		Size: 87.1 MB (87094625 bytes)
+		Size: 87.1 MB (87094625 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

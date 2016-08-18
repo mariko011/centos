@@ -38,7 +38,8 @@ ADD file:173b1e8c2abeb1c18cad816dabacfb87ca4b987e8531502eb5b88021665cb614 in /
 -	Layers:
 	-	`sha256:2bf01635e2a0f7ed3800c8cb3effc5ff46adc6b9b86f0e80743c956371efe553`  
 		Last Modified: Mon, 15 Aug 2016 21:46:56 GMT  
-		Size: 72.9 MB (72881216 bytes)
+		Size: 72.9 MB (72881216 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fedora:24`
 
@@ -67,7 +68,8 @@ ADD file:173b1e8c2abeb1c18cad816dabacfb87ca4b987e8531502eb5b88021665cb614 in /
 -	Layers:
 	-	`sha256:2bf01635e2a0f7ed3800c8cb3effc5ff46adc6b9b86f0e80743c956371efe553`  
 		Last Modified: Mon, 15 Aug 2016 21:46:56 GMT  
-		Size: 72.9 MB (72881216 bytes)
+		Size: 72.9 MB (72881216 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fedora:23`
 
@@ -96,7 +98,8 @@ ADD file:6de4fbfd61cdc68ac14c9e5a50007f21d1535a378383c38abac7de569c0a90d3 in /
 -	Layers:
 	-	`sha256:14707640923fd877a8f157764c21e9bb0d003560c9928a3d40ad2454bdf8af1e`  
 		Last Modified: Mon, 20 Jun 2016 22:49:57 GMT  
-		Size: 76.7 MB (76664095 bytes)
+		Size: 76.7 MB (76664095 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fedora:22`
 
@@ -125,7 +128,8 @@ ADD file:e14b712e5cfef28691da81e314415790d59685a366414f6be248b871e42d4436 in /
 -	Layers:
 	-	`sha256:c46df4a5b63bb61e1602168743fc52dc0656de63d48b97d5983b980c60ca3a19`  
 		Last Modified: Mon, 13 Jun 2016 16:34:31 GMT  
-		Size: 67.2 MB (67211750 bytes)
+		Size: 67.2 MB (67211750 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fedora:21`
 
@@ -154,7 +158,8 @@ ADD file:ad295384e519c85947873a9551ea281f8fbe18055beb43b3f730fe0c45b8ec65 in /
 -	Layers:
 	-	`sha256:d60b4509ad7daca143824ae2a017a4b4f744831811e1c70634cd3f82e936562e`  
 		Last Modified: Mon, 13 Jun 2016 16:35:08 GMT  
-		Size: 92.5 MB (92466400 bytes)
+		Size: 92.5 MB (92466400 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fedora:rawhide`
 
@@ -183,7 +188,8 @@ ADD file:56aefd413132bd011c53058f1c85815ca5fc80258feb207b3fdc911af5d0351a in /
 -	Layers:
 	-	`sha256:5987bbaec4c970a2eb18ab92ffbec65699670768b9355a7582940e207ce6bd59`  
 		Last Modified: Mon, 15 Aug 2016 21:47:45 GMT  
-		Size: 61.4 MB (61378057 bytes)
+		Size: 61.4 MB (61378057 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fedora:20`
 
@@ -212,7 +218,8 @@ ADD file:56b76704b52912f2f27888cc30d4ee1541d646b602662dfdb43a627cb0fd917c in /
 -	Layers:
 	-	`sha256:83f0812fb6cc69c0d579c664a3611900f2305b7f41090c3e02d7d433bbbbe29b`  
 		Last Modified: Mon, 13 Jun 2016 16:36:23 GMT  
-		Size: 94.0 MB (93954059 bytes)
+		Size: 94.0 MB (93954059 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fedora:heisenbug`
 
@@ -241,4 +248,5 @@ ADD file:56b76704b52912f2f27888cc30d4ee1541d646b602662dfdb43a627cb0fd917c in /
 -	Layers:
 	-	`sha256:83f0812fb6cc69c0d579c664a3611900f2305b7f41090c3e02d7d433bbbbe29b`  
 		Last Modified: Mon, 13 Jun 2016 16:36:23 GMT  
-		Size: 94.0 MB (93954059 bytes)
+		Size: 94.0 MB (93954059 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

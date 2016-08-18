@@ -45,10 +45,12 @@ CMD ["ghci"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:aafb87211b867d16bfeb40ecbac7a8226d89915b7f9f170053e8524882e73e35`  
 		Last Modified: Fri, 29 Jul 2016 04:19:20 GMT  
-		Size: 199.7 MB (199684918 bytes)
+		Size: 199.7 MB (199684918 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haskell:8.0`
 
@@ -88,10 +90,12 @@ CMD ["ghci"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:aafb87211b867d16bfeb40ecbac7a8226d89915b7f9f170053e8524882e73e35`  
 		Last Modified: Fri, 29 Jul 2016 04:19:20 GMT  
-		Size: 199.7 MB (199684918 bytes)
+		Size: 199.7 MB (199684918 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haskell:8`
 
@@ -131,10 +135,12 @@ CMD ["ghci"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:aafb87211b867d16bfeb40ecbac7a8226d89915b7f9f170053e8524882e73e35`  
 		Last Modified: Fri, 29 Jul 2016 04:19:20 GMT  
-		Size: 199.7 MB (199684918 bytes)
+		Size: 199.7 MB (199684918 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haskell:latest`
 
@@ -174,7 +180,9 @@ CMD ["ghci"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:aafb87211b867d16bfeb40ecbac7a8226d89915b7f9f170053e8524882e73e35`  
 		Last Modified: Fri, 29 Jul 2016 04:19:20 GMT  
-		Size: 199.7 MB (199684918 bytes)
+		Size: 199.7 MB (199684918 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

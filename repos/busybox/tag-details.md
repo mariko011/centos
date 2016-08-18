@@ -47,7 +47,8 @@ CMD ["sh"]
 -	Layers:
 	-	`sha256:9495713bb019088f95e1d6e007340baab2acceb41cfbdbaac0dbae695de06044`  
 		Last Modified: Thu, 23 Jun 2016 23:23:45 GMT  
-		Size: 2.2 MB (2204582 bytes)
+		Size: 2.2 MB (2204582 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `busybox:1.25-glibc`
 
@@ -77,7 +78,8 @@ CMD ["sh"]
 -	Layers:
 	-	`sha256:9495713bb019088f95e1d6e007340baab2acceb41cfbdbaac0dbae695de06044`  
 		Last Modified: Thu, 23 Jun 2016 23:23:45 GMT  
-		Size: 2.2 MB (2204582 bytes)
+		Size: 2.2 MB (2204582 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `busybox:1-glibc`
 
@@ -107,7 +109,8 @@ CMD ["sh"]
 -	Layers:
 	-	`sha256:9495713bb019088f95e1d6e007340baab2acceb41cfbdbaac0dbae695de06044`  
 		Last Modified: Thu, 23 Jun 2016 23:23:45 GMT  
-		Size: 2.2 MB (2204582 bytes)
+		Size: 2.2 MB (2204582 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `busybox:glibc`
 
@@ -137,7 +140,8 @@ CMD ["sh"]
 -	Layers:
 	-	`sha256:9495713bb019088f95e1d6e007340baab2acceb41cfbdbaac0dbae695de06044`  
 		Last Modified: Thu, 23 Jun 2016 23:23:45 GMT  
-		Size: 2.2 MB (2204582 bytes)
+		Size: 2.2 MB (2204582 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `busybox:1.25.0-musl`
 
@@ -167,7 +171,8 @@ CMD ["sh"]
 -	Layers:
 	-	`sha256:1e26b85822f765bd4cf1101dd5f5d69aa059f0185f92add4bae7f8653895c631`  
 		Last Modified: Thu, 23 Jun 2016 23:24:18 GMT  
-		Size: 690.2 KB (690189 bytes)
+		Size: 690.2 KB (690189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `busybox:1.25-musl`
 
@@ -197,7 +202,8 @@ CMD ["sh"]
 -	Layers:
 	-	`sha256:1e26b85822f765bd4cf1101dd5f5d69aa059f0185f92add4bae7f8653895c631`  
 		Last Modified: Thu, 23 Jun 2016 23:24:18 GMT  
-		Size: 690.2 KB (690189 bytes)
+		Size: 690.2 KB (690189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `busybox:1-musl`
 
@@ -227,7 +233,8 @@ CMD ["sh"]
 -	Layers:
 	-	`sha256:1e26b85822f765bd4cf1101dd5f5d69aa059f0185f92add4bae7f8653895c631`  
 		Last Modified: Thu, 23 Jun 2016 23:24:18 GMT  
-		Size: 690.2 KB (690189 bytes)
+		Size: 690.2 KB (690189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `busybox:musl`
 
@@ -257,7 +264,8 @@ CMD ["sh"]
 -	Layers:
 	-	`sha256:1e26b85822f765bd4cf1101dd5f5d69aa059f0185f92add4bae7f8653895c631`  
 		Last Modified: Thu, 23 Jun 2016 23:24:18 GMT  
-		Size: 690.2 KB (690189 bytes)
+		Size: 690.2 KB (690189 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `busybox:1.25.0-uclibc`
 
@@ -287,7 +295,8 @@ CMD ["sh"]
 -	Layers:
 	-	`sha256:8ddc19f16526912237dd8af81971d5e4dd0587907234be2b83e249518d5b673f`  
 		Last Modified: Thu, 23 Jun 2016 23:24:52 GMT  
-		Size: 667.6 KB (667590 bytes)
+		Size: 667.6 KB (667590 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `busybox:1.25-uclibc`
 
@@ -317,7 +326,8 @@ CMD ["sh"]
 -	Layers:
 	-	`sha256:8ddc19f16526912237dd8af81971d5e4dd0587907234be2b83e249518d5b673f`  
 		Last Modified: Thu, 23 Jun 2016 23:24:52 GMT  
-		Size: 667.6 KB (667590 bytes)
+		Size: 667.6 KB (667590 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `busybox:1-uclibc`
 
@@ -347,7 +357,8 @@ CMD ["sh"]
 -	Layers:
 	-	`sha256:8ddc19f16526912237dd8af81971d5e4dd0587907234be2b83e249518d5b673f`  
 		Last Modified: Thu, 23 Jun 2016 23:24:52 GMT  
-		Size: 667.6 KB (667590 bytes)
+		Size: 667.6 KB (667590 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `busybox:uclibc`
 
@@ -377,7 +388,8 @@ CMD ["sh"]
 -	Layers:
 	-	`sha256:8ddc19f16526912237dd8af81971d5e4dd0587907234be2b83e249518d5b673f`  
 		Last Modified: Thu, 23 Jun 2016 23:24:52 GMT  
-		Size: 667.6 KB (667590 bytes)
+		Size: 667.6 KB (667590 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `busybox:1.25.0`
 
@@ -407,7 +419,8 @@ CMD ["sh"]
 -	Layers:
 	-	`sha256:8ddc19f16526912237dd8af81971d5e4dd0587907234be2b83e249518d5b673f`  
 		Last Modified: Thu, 23 Jun 2016 23:24:52 GMT  
-		Size: 667.6 KB (667590 bytes)
+		Size: 667.6 KB (667590 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `busybox:1.25`
 
@@ -437,7 +450,8 @@ CMD ["sh"]
 -	Layers:
 	-	`sha256:8ddc19f16526912237dd8af81971d5e4dd0587907234be2b83e249518d5b673f`  
 		Last Modified: Thu, 23 Jun 2016 23:24:52 GMT  
-		Size: 667.6 KB (667590 bytes)
+		Size: 667.6 KB (667590 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `busybox:1`
 
@@ -467,7 +481,8 @@ CMD ["sh"]
 -	Layers:
 	-	`sha256:8ddc19f16526912237dd8af81971d5e4dd0587907234be2b83e249518d5b673f`  
 		Last Modified: Thu, 23 Jun 2016 23:24:52 GMT  
-		Size: 667.6 KB (667590 bytes)
+		Size: 667.6 KB (667590 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `busybox:latest`
 
@@ -497,4 +512,5 @@ CMD ["sh"]
 -	Layers:
 	-	`sha256:8ddc19f16526912237dd8af81971d5e4dd0587907234be2b83e249518d5b673f`  
 		Last Modified: Thu, 23 Jun 2016 23:24:52 GMT  
-		Size: 667.6 KB (667590 bytes)
+		Size: 667.6 KB (667590 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

@@ -40,19 +40,24 @@ CMD ["/sbin/init"]
 -	Layers:
 	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
 		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+		Size: 32.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8c4568d4063684a72abcc5dbf16b74750d74ee600d4f520a5fad77308de9e195`  
 		Last Modified: Mon, 04 Jan 2016 16:49:49 GMT  
-		Size: 3.5 MB (3542150 bytes)
+		Size: 3.5 MB (3542150 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e6cc72aea3e6702f07dc862041195b47deb7def56984860d1b4ff912fb458333`  
 		Last Modified: Mon, 04 Jan 2016 21:28:36 GMT  
-		Size: 153.0 B
+		Size: 153.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b5a1edf1e076b8cd0a1befe7124b256c5757da5497a188c908d53643262047e1`  
 		Last Modified: Mon, 04 Jan 2016 21:28:33 GMT  
-		Size: 1.2 KB (1233 bytes)
+		Size: 1.2 KB (1233 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
 		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+		Size: 32.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `cirros:0.3.4`
 
@@ -88,19 +93,24 @@ CMD ["/sbin/init"]
 -	Layers:
 	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
 		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+		Size: 32.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8c4568d4063684a72abcc5dbf16b74750d74ee600d4f520a5fad77308de9e195`  
 		Last Modified: Mon, 04 Jan 2016 16:49:49 GMT  
-		Size: 3.5 MB (3542150 bytes)
+		Size: 3.5 MB (3542150 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e6cc72aea3e6702f07dc862041195b47deb7def56984860d1b4ff912fb458333`  
 		Last Modified: Mon, 04 Jan 2016 21:28:36 GMT  
-		Size: 153.0 B
+		Size: 153.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b5a1edf1e076b8cd0a1befe7124b256c5757da5497a188c908d53643262047e1`  
 		Last Modified: Mon, 04 Jan 2016 21:28:33 GMT  
-		Size: 1.2 KB (1233 bytes)
+		Size: 1.2 KB (1233 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
 		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+		Size: 32.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `cirros:0.3.3`
 
@@ -136,16 +146,21 @@ CMD ["/sbin/init"]
 -	Layers:
 	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
 		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+		Size: 32.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:78f3e58e2da9224cc693e476556047a957225ec4ef911a38f6cb05adea713035`  
 		Last Modified: Fri, 17 Apr 2015 01:21:45 GMT  
-		Size: 3.5 MB (3527868 bytes)
+		Size: 3.5 MB (3527868 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4aaa72e15498ecbac1d4cf825041a9526ad9c3e683340522d45020eeed2e63de`  
 		Last Modified: Wed, 14 Oct 2015 21:39:28 GMT  
-		Size: 152.0 B
+		Size: 152.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:0fbcaa8da3adaf959c0d33cc62528831a3b21c5b27290f694d02e7f819efab1b`  
 		Last Modified: Wed, 14 Oct 2015 21:39:23 GMT  
-		Size: 1.2 KB (1231 bytes)
+		Size: 1.2 KB (1231 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
 		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B
+		Size: 32.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

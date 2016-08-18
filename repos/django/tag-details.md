@@ -67,22 +67,28 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:57aad21b9e0f8c5efec1fdc781bbbbe387f0c188b9fd34c5ffa9b796c1ac0235`  
 		Last Modified: Mon, 08 Aug 2016 21:07:23 GMT  
-		Size: 3.3 MB (3306249 bytes)
+		Size: 3.3 MB (3306249 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1edc05b1775830422108d01615e6644b9a3a4344e56caac8e6dcbd06a67ecd11`  
 		Last Modified: Tue, 09 Aug 2016 21:23:16 GMT  
-		Size: 19.5 MB (19528523 bytes)
+		Size: 19.5 MB (19528523 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:89066e65bfc86a6b61c88ee96e3dd3834ba672ee81616a0f6e2f8cc271cc2ae6`  
 		Last Modified: Tue, 09 Aug 2016 21:23:10 GMT  
-		Size: 267.0 B
+		Size: 267.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c4afaa0907d9d98a750d6b034861fdd0b2088c7063c7652b01da21c42851778e`  
 		Last Modified: Tue, 09 Aug 2016 23:14:04 GMT  
-		Size: 68.3 MB (68310091 bytes)
+		Size: 68.3 MB (68310091 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e9f98385e5989f104327b4acb5d57528b1a2315f06fabab0fba6bf9c60072d8c`  
 		Last Modified: Tue, 09 Aug 2016 23:13:44 GMT  
-		Size: 15.3 MB (15291744 bytes)
+		Size: 15.3 MB (15291744 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `django:1-python3`
 
@@ -136,22 +142,28 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:57aad21b9e0f8c5efec1fdc781bbbbe387f0c188b9fd34c5ffa9b796c1ac0235`  
 		Last Modified: Mon, 08 Aug 2016 21:07:23 GMT  
-		Size: 3.3 MB (3306249 bytes)
+		Size: 3.3 MB (3306249 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1edc05b1775830422108d01615e6644b9a3a4344e56caac8e6dcbd06a67ecd11`  
 		Last Modified: Tue, 09 Aug 2016 21:23:16 GMT  
-		Size: 19.5 MB (19528523 bytes)
+		Size: 19.5 MB (19528523 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:89066e65bfc86a6b61c88ee96e3dd3834ba672ee81616a0f6e2f8cc271cc2ae6`  
 		Last Modified: Tue, 09 Aug 2016 21:23:10 GMT  
-		Size: 267.0 B
+		Size: 267.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c4afaa0907d9d98a750d6b034861fdd0b2088c7063c7652b01da21c42851778e`  
 		Last Modified: Tue, 09 Aug 2016 23:14:04 GMT  
-		Size: 68.3 MB (68310091 bytes)
+		Size: 68.3 MB (68310091 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e9f98385e5989f104327b4acb5d57528b1a2315f06fabab0fba6bf9c60072d8c`  
 		Last Modified: Tue, 09 Aug 2016 23:13:44 GMT  
-		Size: 15.3 MB (15291744 bytes)
+		Size: 15.3 MB (15291744 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `django:python3`
 
@@ -205,22 +217,28 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:57aad21b9e0f8c5efec1fdc781bbbbe387f0c188b9fd34c5ffa9b796c1ac0235`  
 		Last Modified: Mon, 08 Aug 2016 21:07:23 GMT  
-		Size: 3.3 MB (3306249 bytes)
+		Size: 3.3 MB (3306249 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1edc05b1775830422108d01615e6644b9a3a4344e56caac8e6dcbd06a67ecd11`  
 		Last Modified: Tue, 09 Aug 2016 21:23:16 GMT  
-		Size: 19.5 MB (19528523 bytes)
+		Size: 19.5 MB (19528523 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:89066e65bfc86a6b61c88ee96e3dd3834ba672ee81616a0f6e2f8cc271cc2ae6`  
 		Last Modified: Tue, 09 Aug 2016 21:23:10 GMT  
-		Size: 267.0 B
+		Size: 267.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c4afaa0907d9d98a750d6b034861fdd0b2088c7063c7652b01da21c42851778e`  
 		Last Modified: Tue, 09 Aug 2016 23:14:04 GMT  
-		Size: 68.3 MB (68310091 bytes)
+		Size: 68.3 MB (68310091 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e9f98385e5989f104327b4acb5d57528b1a2315f06fabab0fba6bf9c60072d8c`  
 		Last Modified: Tue, 09 Aug 2016 23:13:44 GMT  
-		Size: 15.3 MB (15291744 bytes)
+		Size: 15.3 MB (15291744 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `django:1.10`
 
@@ -274,22 +292,28 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:57aad21b9e0f8c5efec1fdc781bbbbe387f0c188b9fd34c5ffa9b796c1ac0235`  
 		Last Modified: Mon, 08 Aug 2016 21:07:23 GMT  
-		Size: 3.3 MB (3306249 bytes)
+		Size: 3.3 MB (3306249 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1edc05b1775830422108d01615e6644b9a3a4344e56caac8e6dcbd06a67ecd11`  
 		Last Modified: Tue, 09 Aug 2016 21:23:16 GMT  
-		Size: 19.5 MB (19528523 bytes)
+		Size: 19.5 MB (19528523 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:89066e65bfc86a6b61c88ee96e3dd3834ba672ee81616a0f6e2f8cc271cc2ae6`  
 		Last Modified: Tue, 09 Aug 2016 21:23:10 GMT  
-		Size: 267.0 B
+		Size: 267.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c4afaa0907d9d98a750d6b034861fdd0b2088c7063c7652b01da21c42851778e`  
 		Last Modified: Tue, 09 Aug 2016 23:14:04 GMT  
-		Size: 68.3 MB (68310091 bytes)
+		Size: 68.3 MB (68310091 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e9f98385e5989f104327b4acb5d57528b1a2315f06fabab0fba6bf9c60072d8c`  
 		Last Modified: Tue, 09 Aug 2016 23:13:44 GMT  
-		Size: 15.3 MB (15291744 bytes)
+		Size: 15.3 MB (15291744 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `django:1`
 
@@ -343,22 +367,28 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:57aad21b9e0f8c5efec1fdc781bbbbe387f0c188b9fd34c5ffa9b796c1ac0235`  
 		Last Modified: Mon, 08 Aug 2016 21:07:23 GMT  
-		Size: 3.3 MB (3306249 bytes)
+		Size: 3.3 MB (3306249 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1edc05b1775830422108d01615e6644b9a3a4344e56caac8e6dcbd06a67ecd11`  
 		Last Modified: Tue, 09 Aug 2016 21:23:16 GMT  
-		Size: 19.5 MB (19528523 bytes)
+		Size: 19.5 MB (19528523 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:89066e65bfc86a6b61c88ee96e3dd3834ba672ee81616a0f6e2f8cc271cc2ae6`  
 		Last Modified: Tue, 09 Aug 2016 21:23:10 GMT  
-		Size: 267.0 B
+		Size: 267.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c4afaa0907d9d98a750d6b034861fdd0b2088c7063c7652b01da21c42851778e`  
 		Last Modified: Tue, 09 Aug 2016 23:14:04 GMT  
-		Size: 68.3 MB (68310091 bytes)
+		Size: 68.3 MB (68310091 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e9f98385e5989f104327b4acb5d57528b1a2315f06fabab0fba6bf9c60072d8c`  
 		Last Modified: Tue, 09 Aug 2016 23:13:44 GMT  
-		Size: 15.3 MB (15291744 bytes)
+		Size: 15.3 MB (15291744 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `django:latest`
 
@@ -412,22 +442,28 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:57aad21b9e0f8c5efec1fdc781bbbbe387f0c188b9fd34c5ffa9b796c1ac0235`  
 		Last Modified: Mon, 08 Aug 2016 21:07:23 GMT  
-		Size: 3.3 MB (3306249 bytes)
+		Size: 3.3 MB (3306249 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1edc05b1775830422108d01615e6644b9a3a4344e56caac8e6dcbd06a67ecd11`  
 		Last Modified: Tue, 09 Aug 2016 21:23:16 GMT  
-		Size: 19.5 MB (19528523 bytes)
+		Size: 19.5 MB (19528523 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:89066e65bfc86a6b61c88ee96e3dd3834ba672ee81616a0f6e2f8cc271cc2ae6`  
 		Last Modified: Tue, 09 Aug 2016 21:23:10 GMT  
-		Size: 267.0 B
+		Size: 267.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c4afaa0907d9d98a750d6b034861fdd0b2088c7063c7652b01da21c42851778e`  
 		Last Modified: Tue, 09 Aug 2016 23:14:04 GMT  
-		Size: 68.3 MB (68310091 bytes)
+		Size: 68.3 MB (68310091 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e9f98385e5989f104327b4acb5d57528b1a2315f06fabab0fba6bf9c60072d8c`  
 		Last Modified: Tue, 09 Aug 2016 23:13:44 GMT  
-		Size: 15.3 MB (15291744 bytes)
+		Size: 15.3 MB (15291744 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `django:python3-onbuild`
 
@@ -497,31 +533,40 @@ CMD ["python" "manage.py" "runserver" "0.0.0.0:8000"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
 		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
-		Size: 129.7 MB (129692532 bytes)
+		Size: 129.7 MB (129692532 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4211bb5376972ebb740e54525e95b9ea6ef08c85e7519f795170501632942fbb`  
 		Last Modified: Tue, 09 Aug 2016 21:16:33 GMT  
-		Size: 2.9 MB (2888355 bytes)
+		Size: 2.9 MB (2888355 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2dec8749e88d7bbfec578dbbe7e6afd6b631798896e074a2fe503d21a6dce7bc`  
 		Last Modified: Tue, 09 Aug 2016 21:22:44 GMT  
-		Size: 19.1 MB (19141829 bytes)
+		Size: 19.1 MB (19141829 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1ac8181a9d2ecf62272fe4d8bd1977e8f2dc56d4da54d30ae7872891323e2ab2`  
 		Last Modified: Tue, 09 Aug 2016 21:22:37 GMT  
-		Size: 268.0 B
+		Size: 268.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:dbdc015d54cc1aa6ea5ae31f6eea73a4b59bf8c9f9aa8ad64f889f204d25481d`  
 		Last Modified: Tue, 09 Aug 2016 21:24:49 GMT  
-		Size: 126.0 B
+		Size: 126.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1ba86e8c8fd345eff8cf2627608a7ec113b1ec6d7a756b8df1a33710c4074d81`  
 		Last Modified: Tue, 09 Aug 2016 23:10:52 GMT  
-		Size: 16.4 MB (16375880 bytes)
+		Size: 16.4 MB (16375880 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `django:onbuild`
 
@@ -591,31 +636,40 @@ CMD ["python" "manage.py" "runserver" "0.0.0.0:8000"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
 		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
-		Size: 129.7 MB (129692532 bytes)
+		Size: 129.7 MB (129692532 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4211bb5376972ebb740e54525e95b9ea6ef08c85e7519f795170501632942fbb`  
 		Last Modified: Tue, 09 Aug 2016 21:16:33 GMT  
-		Size: 2.9 MB (2888355 bytes)
+		Size: 2.9 MB (2888355 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2dec8749e88d7bbfec578dbbe7e6afd6b631798896e074a2fe503d21a6dce7bc`  
 		Last Modified: Tue, 09 Aug 2016 21:22:44 GMT  
-		Size: 19.1 MB (19141829 bytes)
+		Size: 19.1 MB (19141829 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1ac8181a9d2ecf62272fe4d8bd1977e8f2dc56d4da54d30ae7872891323e2ab2`  
 		Last Modified: Tue, 09 Aug 2016 21:22:37 GMT  
-		Size: 268.0 B
+		Size: 268.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:dbdc015d54cc1aa6ea5ae31f6eea73a4b59bf8c9f9aa8ad64f889f204d25481d`  
 		Last Modified: Tue, 09 Aug 2016 21:24:49 GMT  
-		Size: 126.0 B
+		Size: 126.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1ba86e8c8fd345eff8cf2627608a7ec113b1ec6d7a756b8df1a33710c4074d81`  
 		Last Modified: Tue, 09 Aug 2016 23:10:52 GMT  
-		Size: 16.4 MB (16375880 bytes)
+		Size: 16.4 MB (16375880 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `django:1.10-python2`
 
@@ -667,19 +721,24 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:57aad21b9e0f8c5efec1fdc781bbbbe387f0c188b9fd34c5ffa9b796c1ac0235`  
 		Last Modified: Mon, 08 Aug 2016 21:07:23 GMT  
-		Size: 3.3 MB (3306249 bytes)
+		Size: 3.3 MB (3306249 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:167ec28ce96ddbe5d4cdb91b39a218ac30af8852bc9d437415543fdb27b12ec1`  
 		Last Modified: Tue, 09 Aug 2016 21:17:21 GMT  
-		Size: 16.3 MB (16278145 bytes)
+		Size: 16.3 MB (16278145 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d46caf95b1fca1dde109c356b20bacb00a012b8b79269ce02e4782636114c734`  
 		Last Modified: Tue, 09 Aug 2016 23:07:02 GMT  
-		Size: 68.3 MB (68310214 bytes)
+		Size: 68.3 MB (68310214 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b41866b265f05c4608dfab3749c1678da85522003fb06d7ab0673710ba20ecc9`  
 		Last Modified: Tue, 09 Aug 2016 23:06:39 GMT  
-		Size: 15.3 MB (15274817 bytes)
+		Size: 15.3 MB (15274817 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `django:1-python2`
 
@@ -731,19 +790,24 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:57aad21b9e0f8c5efec1fdc781bbbbe387f0c188b9fd34c5ffa9b796c1ac0235`  
 		Last Modified: Mon, 08 Aug 2016 21:07:23 GMT  
-		Size: 3.3 MB (3306249 bytes)
+		Size: 3.3 MB (3306249 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:167ec28ce96ddbe5d4cdb91b39a218ac30af8852bc9d437415543fdb27b12ec1`  
 		Last Modified: Tue, 09 Aug 2016 21:17:21 GMT  
-		Size: 16.3 MB (16278145 bytes)
+		Size: 16.3 MB (16278145 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d46caf95b1fca1dde109c356b20bacb00a012b8b79269ce02e4782636114c734`  
 		Last Modified: Tue, 09 Aug 2016 23:07:02 GMT  
-		Size: 68.3 MB (68310214 bytes)
+		Size: 68.3 MB (68310214 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b41866b265f05c4608dfab3749c1678da85522003fb06d7ab0673710ba20ecc9`  
 		Last Modified: Tue, 09 Aug 2016 23:06:39 GMT  
-		Size: 15.3 MB (15274817 bytes)
+		Size: 15.3 MB (15274817 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `django:python2`
 
@@ -795,19 +859,24 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:57aad21b9e0f8c5efec1fdc781bbbbe387f0c188b9fd34c5ffa9b796c1ac0235`  
 		Last Modified: Mon, 08 Aug 2016 21:07:23 GMT  
-		Size: 3.3 MB (3306249 bytes)
+		Size: 3.3 MB (3306249 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:167ec28ce96ddbe5d4cdb91b39a218ac30af8852bc9d437415543fdb27b12ec1`  
 		Last Modified: Tue, 09 Aug 2016 21:17:21 GMT  
-		Size: 16.3 MB (16278145 bytes)
+		Size: 16.3 MB (16278145 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d46caf95b1fca1dde109c356b20bacb00a012b8b79269ce02e4782636114c734`  
 		Last Modified: Tue, 09 Aug 2016 23:07:02 GMT  
-		Size: 68.3 MB (68310214 bytes)
+		Size: 68.3 MB (68310214 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b41866b265f05c4608dfab3749c1678da85522003fb06d7ab0673710ba20ecc9`  
 		Last Modified: Tue, 09 Aug 2016 23:06:39 GMT  
-		Size: 15.3 MB (15274817 bytes)
+		Size: 15.3 MB (15274817 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `django:python2-onbuild`
 
@@ -877,28 +946,37 @@ CMD ["python" "manage.py" "runserver" "0.0.0.0:8000"]
 -	Layers:
 	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
 		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)
+		Size: 42.5 MB (42495385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
 		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
-		Size: 129.7 MB (129692532 bytes)
+		Size: 129.7 MB (129692532 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4211bb5376972ebb740e54525e95b9ea6ef08c85e7519f795170501632942fbb`  
 		Last Modified: Tue, 09 Aug 2016 21:16:33 GMT  
-		Size: 2.9 MB (2888355 bytes)
+		Size: 2.9 MB (2888355 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c48f01f3aad75cf808f5f61aea7d18e8f81cc341a3f08191327a13fa65206876`  
 		Last Modified: Tue, 09 Aug 2016 21:16:40 GMT  
-		Size: 15.9 MB (15855552 bytes)
+		Size: 15.9 MB (15855552 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:72d54f32484a90bba43b7ebda8e464825d677c9a6cfc6511c9e56fd9494ae206`  
 		Last Modified: Tue, 09 Aug 2016 21:16:34 GMT  
-		Size: 4.9 MB (4940614 bytes)
+		Size: 4.9 MB (4940614 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:169ee3fa9bd1742b7efcc44a2b6aae57243b4ee07dd20bc61bee78f4c5cf6a0a`  
 		Last Modified: Tue, 09 Aug 2016 21:19:22 GMT  
-		Size: 127.0 B
+		Size: 127.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f79bcae67a751d55d3663f0383112e5ab177447be9bcb1c16065c528d3dc29d2`  
 		Last Modified: Tue, 09 Aug 2016 23:09:08 GMT  
-		Size: 16.4 MB (16376024 bytes)
+		Size: 16.4 MB (16376024 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
