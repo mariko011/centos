@@ -25,6 +25,7 @@ for repo in "${repos[@]}"; do
 		echo 'skipping'
 		continue
 	fi
+	mkdir -p "repos/$repo"
 	{
 		echo "<!-- THIS FILE IS GENERATED VIA '$0' -->"
 		echo
