@@ -13,6 +13,9 @@ my $mediaManifestV2 = 'application/vnd.docker.distribution.manifest.v2+json';
 my $mediaManifestV1 = 'application/vnd.docker.distribution.manifest.v1+json';
 my $mediaForeignLayer = 'application/vnd.docker.image.rootfs.foreign.diff.tar.gzip';
 
+# this isn't correct for Windows images, but ours usually use "SHELL" anyhow
+my @defaultShell = ('/bin/sh', '-c');
+
 my $ua = Mojo::UserAgent->new->max_redirects(10);
 $ua->transactor->name(join ' ',
 	# https://github.com/docker/docker/blob/v1.11.2/dockerversion/useragent.go#L13-L34
@@ -252,6 +255,7 @@ sub parse_manifest_v2_data {
 		dockerVersion => $config->{docker_version},
 		entrypoint => $config->{config}{Entrypoint},
 		defaultCommand => $config->{config}{Cmd},
+		shell => $config->{config}{Shell},
 		layers => $manifest->{layers} // [],
 		commands => $config->{history} // [],
 	};
@@ -343,7 +347,7 @@ sub get_image_data {
 		$image->{commands} //= [];
 		for my $command (@{ $image->{commands} }) {
 			$command->{command} //= [ $command->{created_by} ];
-			$command->{dockerfile} //= cmd_to_dockerfile($command->{command});
+			$command->{dockerfile} //= cmd_to_dockerfile($command->{command}, $image->{shell});
 		}
 	}
 
@@ -364,19 +368,22 @@ sub platform_string {
 }
 
 sub cmd_to_dockerfile {
-	my ($cmd) = @_;
+	my ($cmd, $shell) = @_;
 
 	if (@$cmd == 1) {
 		# likely 1.10+ squashed string :(
 		# https://github.com/docker/docker/issues/22436
 		# let's strip and "parse" to get as close to readable as we can
 
-		my $shC = '/bin/sh -c ';
-		my $nop = '#(nop) ';
+		my @shells = (join ' ', @defaultShell);
+		push @shells, join ' ', @$shell if $shell;
+		@shells = map { "\Q$_ \E" } @shells;
+		my $shellRegex = '(?:' . join('|', @shells) . ')';
+		my $nopRegex = "\Q#(nop)\E +";
 
 		my $str = $cmd->[0];
 		my @prefix = ();
-		if ($str =~ s!^[|]\d+ (.*?) (\Q$shC\E)!$2!) {
+		if ($str =~ s!^[|]\d+ (.*?) $shellRegex!$2!) {
 			push @prefix, '# ARGS: ' . $1;
 		}
 		if (substr($str, 0, 1) eq '|' && !@prefix) {
@@ -385,8 +392,8 @@ sub cmd_to_dockerfile {
 			# (and thus impossible to parse as-is)
 			return '# unable to parse image command string further:' . "\n" . $str;
 		}
-		$str =~ s!^\Q$shC\E!!;
-		unless ($str =~ s!^\Q$nop\E!!) {
+		$str =~ s!^$shellRegex!!;
+		unless ($str =~ s!^$nopRegex!!) {
 			# if we don't have "#(nop)", RUN is implied
 			$str = 'RUN ' . $str;
 		}
@@ -490,6 +497,7 @@ while (my $image = shift) {
 		say "-\t" . 'Image ID: `' . $imageData->{imageId} . '`' if $imageData->{imageId};
 		say "-\t" . 'Entrypoint: `' . Mojo::JSON::encode_json($imageData->{entrypoint}) . '`' if $imageData->{entrypoint} && @{ $imageData->{entrypoint} };
 		say "-\t" . 'Default Command: `' . Mojo::JSON::encode_json($imageData->{defaultCommand}) . '`' if $imageData->{defaultCommand};
+		say "-\t" . '`SHELL`: `' . Mojo::JSON::encode_json($imageData->{shell}) . '`' if $imageData->{shell};
 
 		print "\n";
 		say '```dockerfile';
