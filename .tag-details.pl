@@ -324,7 +324,6 @@ sub get_image_data {
 		$image->{platform} //= {};
 
 		$image->{layers} //= [];
-		$image->{size} = 0;
 		for my $layer (@{ $image->{layers} }) {
 			if (defined $layer->{mediaType} && $layer->{mediaType} eq 'application/vnd.docker.image.rootfs.foreign.diff.tar.gzip') {
 				# skip foreign layers -- we can't fetch them (likely Windows base layer, which 404s unless authorized properly)
@@ -334,7 +333,10 @@ sub get_image_data {
 			$layer->{size} //= $headers->content_length;
 			$layer->{mediaType} //= $headers->content_type;
 			$layer->{lastModified} //= $headers->last_modified;
-			$image->{size} += $layer->{size};
+		}
+		$image->{size} = 0;
+		for my $layer (@{ $image->{layers} }) {
+			$image->{size} += $layer->{size} if defined $layer->{size};
 		}
 
 		$image->{commands} //= [];
