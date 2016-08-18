@@ -324,13 +324,19 @@ sub get_image_data {
 		$image->{platform} //= {};
 
 		$image->{layers} //= [];
-		$image->{size} = 0;
 		for my $layer (@{ $image->{layers} }) {
+			if (defined $layer->{mediaType} && $layer->{mediaType} eq 'application/vnd.docker.image.rootfs.foreign.diff.tar.gzip') {
+				# skip foreign layers -- we can't fetch them (likely Windows base layer, which 404s unless authorized properly)
+				next;
+			}
 			my $headers = get_blob_headers($repo, $layer->{digest});
 			$layer->{size} //= $headers->content_length;
 			$layer->{mediaType} //= $headers->content_type;
 			$layer->{lastModified} //= $headers->last_modified;
-			$image->{size} += $layer->{size};
+		}
+		$image->{size} = 0;
+		for my $layer (@{ $image->{layers} }) {
+			$image->{size} += $layer->{size} if defined $layer->{size};
 		}
 
 		$image->{commands} //= [];
@@ -496,8 +502,9 @@ while (my $image = shift) {
 		say "-\t" . 'Layers:';
 		for my $layer (@{ $imageData->{layers} }) {
 			say "\t-\t" . '`' . $layer->{digest} . '`  ';
-			say "\t\t" . 'Last Modified: ' . date($layer->{lastModified}) . '  ';
-			say "\t\t" . 'Size: ' . size($layer->{size});
+			say "\t\t" . 'Last Modified: ' . date($layer->{lastModified}) . '  ' if defined $layer->{lastModified};
+			say "\t\t" . 'Size: ' . size($layer->{size}) . '  ' if defined $layer->{size};
+			say "\t\t" . 'MIME: ' . $layer->{mediaType};
 		}
 	}
 }
