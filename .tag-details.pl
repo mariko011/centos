@@ -11,6 +11,7 @@ die 'no images specified' unless @ARGV;
 my $mediaManifestList = 'application/vnd.docker.distribution.manifest.list.v2+json';
 my $mediaManifestV2 = 'application/vnd.docker.distribution.manifest.v2+json';
 my $mediaManifestV1 = 'application/vnd.docker.distribution.manifest.v1+json';
+my $mediaForeignLayer = 'application/vnd.docker.image.rootfs.foreign.diff.tar.gzip';
 
 my $ua = Mojo::UserAgent->new->max_redirects(10);
 $ua->transactor->name(join ' ',
@@ -325,7 +326,7 @@ sub get_image_data {
 
 		$image->{layers} //= [];
 		for my $layer (@{ $image->{layers} }) {
-			if (defined $layer->{mediaType} && $layer->{mediaType} eq 'application/vnd.docker.image.rootfs.foreign.diff.tar.gzip') {
+			if (defined $layer->{mediaType} && $layer->{mediaType} eq $mediaForeignLayer) {
 				# skip foreign layers -- we can't fetch them (likely Windows base layer, which 404s unless authorized properly)
 				next;
 			}
