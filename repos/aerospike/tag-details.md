@@ -2,25 +2,25 @@
 
 # Tags of `aerospike`
 
--	[`aerospike:3.9.0.3`](#aerospike3903)
+-	[`aerospike:3.9.1`](#aerospike391)
 -	[`aerospike:latest`](#aerospikelatest)
 
-## `aerospike:3.9.0.3`
+## `aerospike:3.9.1`
 
 ```console
-$ docker pull aerospike@sha256:b28c9f1c6e4b987a9c8b6c2988e0f88abdb9791490c467a2187fec1061b20f32
+$ docker pull aerospike@sha256:152af809c834879833f0403cded1803142a156a746438f4a472c89065c4319fe
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `aerospike:3.9.0.3` - linux; amd64
+### `aerospike:3.9.1` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.7 MB (68725328 bytes)**  
+-	Total Size: **68.8 MB (68841966 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9dc38524df1e5225069be3c22ce0375eb4eed06d57ff3a536eb0781d6f1fc8ca`
+-	Image ID: `sha256:6f82fe12d77f2747b22fc76b6a07ee47c8748a00f9545437613294f3fb613c3b`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["asd"]`
 
@@ -35,23 +35,23 @@ RUN rm -rf /var/lib/apt/lists/*
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 # Thu, 11 Aug 2016 17:46:29 GMT
 CMD ["/bin/bash"]
-# Thu, 11 Aug 2016 18:44:14 GMT
-ENV AEROSPIKE_VERSION=3.9.0.3
-# Thu, 11 Aug 2016 18:44:16 GMT
-ENV AEROSPIKE_SHA256=49597f4d82da22fe3d6b10a54676a7b0a864279f90cc2f92928f1dbbc76385c8
-# Thu, 11 Aug 2016 18:45:08 GMT
+# Tue, 23 Aug 2016 18:19:57 GMT
+ENV AEROSPIKE_VERSION=3.9.1
+# Tue, 23 Aug 2016 18:19:58 GMT
+ENV AEROSPIKE_SHA256=7bb3236d478559cc19658b87cb5877aa023dba7d5dd788c89b7cf75cad3fdf89
+# Tue, 23 Aug 2016 18:20:29 GMT
 RUN apt-get update -y   &&  apt-get install -y wget python logrotate ca-certificates   && wget "https://www.aerospike.com/artifacts/aerospike-server-community/${AEROSPIKE_VERSION}/aerospike-server-community-${AEROSPIKE_VERSION}-ubuntu16.04.tgz" -O aerospike-server.tgz   && echo "$AEROSPIKE_SHA256 *aerospike-server.tgz" | sha256sum -c -   && mkdir aerospike   && tar xzf aerospike-server.tgz --strip-components=1 -C aerospike   && dpkg -i aerospike/aerospike-server-*.deb   && mkdir -p /var/log/aerospike/   && mkdir -p /var/run/aerospike/   && rm -rf aerospike-server.tgz aerospike /var/lib/apt/lists/*
-# Thu, 11 Aug 2016 18:45:11 GMT
+# Tue, 23 Aug 2016 18:20:33 GMT
 COPY file:59f374b27ea4d0d2d9576cccc7c2a2a8893a36c2b0498759af9fde54286c59e8 in /etc/aerospike/aerospike.conf
-# Thu, 11 Aug 2016 18:45:14 GMT
+# Tue, 23 Aug 2016 18:20:34 GMT
 COPY file:ae9470d86ba973bb1d9911d608b000e6da810777ec7bb4e93d778fdbdeae4501 in /entrypoint.sh
-# Thu, 11 Aug 2016 18:45:15 GMT
+# Tue, 23 Aug 2016 18:20:35 GMT
 VOLUME [/opt/aerospike/data]
-# Thu, 11 Aug 2016 18:45:18 GMT
+# Tue, 23 Aug 2016 18:20:36 GMT
 EXPOSE 3000/tcp 3001/tcp 3002/tcp 3003/tcp
-# Thu, 11 Aug 2016 18:45:20 GMT
+# Tue, 23 Aug 2016 18:20:37 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 11 Aug 2016 18:45:21 GMT
+# Tue, 23 Aug 2016 18:20:38 GMT
 CMD ["asd"]
 ```
 
@@ -72,23 +72,23 @@ CMD ["asd"]
 		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
 		Size: 682.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a21b59bdf519dd91fb19c6ac08a8acddedc1a17662f83175a1b74d69ec2a90a`  
-		Last Modified: Thu, 11 Aug 2016 18:45:51 GMT  
-		Size: 19.0 MB (19043434 bytes)  
+	-	`sha256:a82ef8620c3d3d454ab108c29c9c0ed69c7c3811ea52c46a6b2f96b27951864d`  
+		Last Modified: Tue, 23 Aug 2016 18:20:55 GMT  
+		Size: 19.2 MB (19160072 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8673aaf07f021909796df35cb26cdaa67c9c7fdf0687a7fb26e2755a04605902`  
-		Last Modified: Thu, 11 Aug 2016 18:45:39 GMT  
-		Size: 966.0 B  
+	-	`sha256:dc44fc4fb2358d803c66aec18558c3df93bf0f3d4dcb7045617a8a9a9f487b4f`  
+		Last Modified: Tue, 23 Aug 2016 18:20:49 GMT  
+		Size: 967.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:262184b66bc6e9332f5f5d2298609e24b3b07f09b097144052c5ed9714c75876`  
-		Last Modified: Thu, 11 Aug 2016 18:45:38 GMT  
-		Size: 311.0 B  
+	-	`sha256:1b63c54111c2b8b5a0099a7d9a99018dc236e32e4ed18d5a2664448ad4347599`  
+		Last Modified: Tue, 23 Aug 2016 18:20:50 GMT  
+		Size: 310.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `aerospike:latest`
 
 ```console
-$ docker pull aerospike@sha256:b28c9f1c6e4b987a9c8b6c2988e0f88abdb9791490c467a2187fec1061b20f32
+$ docker pull aerospike@sha256:152af809c834879833f0403cded1803142a156a746438f4a472c89065c4319fe
 ```
 
 -	Platforms:
@@ -98,9 +98,9 @@ $ docker pull aerospike@sha256:b28c9f1c6e4b987a9c8b6c2988e0f88abdb9791490c467a21
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.7 MB (68725328 bytes)**  
+-	Total Size: **68.8 MB (68841966 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9dc38524df1e5225069be3c22ce0375eb4eed06d57ff3a536eb0781d6f1fc8ca`
+-	Image ID: `sha256:6f82fe12d77f2747b22fc76b6a07ee47c8748a00f9545437613294f3fb613c3b`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["asd"]`
 
@@ -115,23 +115,23 @@ RUN rm -rf /var/lib/apt/lists/*
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 # Thu, 11 Aug 2016 17:46:29 GMT
 CMD ["/bin/bash"]
-# Thu, 11 Aug 2016 18:44:14 GMT
-ENV AEROSPIKE_VERSION=3.9.0.3
-# Thu, 11 Aug 2016 18:44:16 GMT
-ENV AEROSPIKE_SHA256=49597f4d82da22fe3d6b10a54676a7b0a864279f90cc2f92928f1dbbc76385c8
-# Thu, 11 Aug 2016 18:45:08 GMT
+# Tue, 23 Aug 2016 18:19:57 GMT
+ENV AEROSPIKE_VERSION=3.9.1
+# Tue, 23 Aug 2016 18:19:58 GMT
+ENV AEROSPIKE_SHA256=7bb3236d478559cc19658b87cb5877aa023dba7d5dd788c89b7cf75cad3fdf89
+# Tue, 23 Aug 2016 18:20:29 GMT
 RUN apt-get update -y   &&  apt-get install -y wget python logrotate ca-certificates   && wget "https://www.aerospike.com/artifacts/aerospike-server-community/${AEROSPIKE_VERSION}/aerospike-server-community-${AEROSPIKE_VERSION}-ubuntu16.04.tgz" -O aerospike-server.tgz   && echo "$AEROSPIKE_SHA256 *aerospike-server.tgz" | sha256sum -c -   && mkdir aerospike   && tar xzf aerospike-server.tgz --strip-components=1 -C aerospike   && dpkg -i aerospike/aerospike-server-*.deb   && mkdir -p /var/log/aerospike/   && mkdir -p /var/run/aerospike/   && rm -rf aerospike-server.tgz aerospike /var/lib/apt/lists/*
-# Thu, 11 Aug 2016 18:45:11 GMT
+# Tue, 23 Aug 2016 18:20:33 GMT
 COPY file:59f374b27ea4d0d2d9576cccc7c2a2a8893a36c2b0498759af9fde54286c59e8 in /etc/aerospike/aerospike.conf
-# Thu, 11 Aug 2016 18:45:14 GMT
+# Tue, 23 Aug 2016 18:20:34 GMT
 COPY file:ae9470d86ba973bb1d9911d608b000e6da810777ec7bb4e93d778fdbdeae4501 in /entrypoint.sh
-# Thu, 11 Aug 2016 18:45:15 GMT
+# Tue, 23 Aug 2016 18:20:35 GMT
 VOLUME [/opt/aerospike/data]
-# Thu, 11 Aug 2016 18:45:18 GMT
+# Tue, 23 Aug 2016 18:20:36 GMT
 EXPOSE 3000/tcp 3001/tcp 3002/tcp 3003/tcp
-# Thu, 11 Aug 2016 18:45:20 GMT
+# Tue, 23 Aug 2016 18:20:37 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 11 Aug 2016 18:45:21 GMT
+# Tue, 23 Aug 2016 18:20:38 GMT
 CMD ["asd"]
 ```
 
@@ -152,15 +152,15 @@ CMD ["asd"]
 		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
 		Size: 682.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a21b59bdf519dd91fb19c6ac08a8acddedc1a17662f83175a1b74d69ec2a90a`  
-		Last Modified: Thu, 11 Aug 2016 18:45:51 GMT  
-		Size: 19.0 MB (19043434 bytes)  
+	-	`sha256:a82ef8620c3d3d454ab108c29c9c0ed69c7c3811ea52c46a6b2f96b27951864d`  
+		Last Modified: Tue, 23 Aug 2016 18:20:55 GMT  
+		Size: 19.2 MB (19160072 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8673aaf07f021909796df35cb26cdaa67c9c7fdf0687a7fb26e2755a04605902`  
-		Last Modified: Thu, 11 Aug 2016 18:45:39 GMT  
-		Size: 966.0 B  
+	-	`sha256:dc44fc4fb2358d803c66aec18558c3df93bf0f3d4dcb7045617a8a9a9f487b4f`  
+		Last Modified: Tue, 23 Aug 2016 18:20:49 GMT  
+		Size: 967.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:262184b66bc6e9332f5f5d2298609e24b3b07f09b097144052c5ed9714c75876`  
-		Last Modified: Thu, 11 Aug 2016 18:45:38 GMT  
-		Size: 311.0 B  
+	-	`sha256:1b63c54111c2b8b5a0099a7d9a99018dc236e32e4ed18d5a2664448ad4347599`  
+		Last Modified: Tue, 23 Aug 2016 18:20:50 GMT  
+		Size: 310.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
