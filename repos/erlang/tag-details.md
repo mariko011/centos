@@ -1769,7 +1769,7 @@ CMD ["erl"]
 ## `erlang:17.5.6`
 
 ```console
-$ docker pull erlang@sha256:b0b77ec3d06c86ffd1f5a0c939e6ca03f2820327f29b0ad355b932d4f0a87728
+$ docker pull erlang@sha256:ef06b0f1c250a38306889efd72f111e57e54bc67c8f7010fbdbb81b63aea4328
 ```
 
 -	Platforms:
@@ -1779,9 +1779,9 @@ $ docker pull erlang@sha256:b0b77ec3d06c86ffd1f5a0c939e6ca03f2820327f29b0ad355b9
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.4 MB (298399334 bytes)**  
+-	Total Size: **299.0 MB (298954065 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:828ef31c2d405111290c67fee6e9b7239af92b6bb246b9b04bb3332510a7551e`
+-	Image ID: `sha256:1bb5c490f02b569ccead54c98575c86292fd9f4cc69f8820774aeb8b5ad9a42d`
 -	Default Command: `["erl"]`
 
 ```dockerfile
@@ -1793,13 +1793,13 @@ CMD ["/bin/bash"]
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 # Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 28 Jul 2016 18:23:42 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 28 Jul 2016 22:23:38 GMT
+# Wed, 24 Aug 2016 16:42:21 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 24 Aug 2016 19:32:08 GMT
 ENV OTP_VERSION=17.5.6.9
-# Thu, 28 Jul 2016 22:33:43 GMT
+# Wed, 24 Aug 2016 19:42:18 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-$OTP_VERSION.tar.gz" 	&& OTP_DOWNLOAD_SHA256="387c612d1bc5ffbc68db7d05c3655804b310facc8bad921a3e0f3391970bc522" 	&& runtimeDeps='libodbc1' 	&& buildDeps='unixodbc-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& ./configure 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
-# Thu, 28 Jul 2016 22:33:44 GMT
+# Wed, 24 Aug 2016 19:42:18 GMT
 CMD ["erl"]
 ```
 
@@ -1816,19 +1816,19 @@ CMD ["erl"]
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
 		Size: 42.5 MB (42495385 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
-		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
-		Size: 129.7 MB (129692532 bytes)  
+	-	`sha256:855820c726566646e66b20293d2eeeb642e888fbe4302a3cdf6021af5f304c26`  
+		Last Modified: Wed, 24 Aug 2016 16:53:02 GMT  
+		Size: 130.2 MB (130245689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f77611b6c4e4be8aac769b1f96e2e4ef68e8c7432e6a7fb76789ed4d9eb0a39`  
-		Last Modified: Thu, 28 Jul 2016 22:34:05 GMT  
-		Size: 56.3 MB (56318828 bytes)  
+	-	`sha256:7fa1fc8d91d7e8bd1a8b6ba3554e3da080994e462b96115cd26a1ba3a2f57a3f`  
+		Last Modified: Wed, 24 Aug 2016 19:42:45 GMT  
+		Size: 56.3 MB (56320402 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `erlang:17.5`
 
 ```console
-$ docker pull erlang@sha256:b0b77ec3d06c86ffd1f5a0c939e6ca03f2820327f29b0ad355b932d4f0a87728
+$ docker pull erlang@sha256:ef06b0f1c250a38306889efd72f111e57e54bc67c8f7010fbdbb81b63aea4328
 ```
 
 -	Platforms:
@@ -1838,9 +1838,9 @@ $ docker pull erlang@sha256:b0b77ec3d06c86ffd1f5a0c939e6ca03f2820327f29b0ad355b9
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.4 MB (298399334 bytes)**  
+-	Total Size: **299.0 MB (298954065 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:828ef31c2d405111290c67fee6e9b7239af92b6bb246b9b04bb3332510a7551e`
+-	Image ID: `sha256:1bb5c490f02b569ccead54c98575c86292fd9f4cc69f8820774aeb8b5ad9a42d`
 -	Default Command: `["erl"]`
 
 ```dockerfile
@@ -1852,13 +1852,13 @@ CMD ["/bin/bash"]
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 # Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 28 Jul 2016 18:23:42 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 28 Jul 2016 22:23:38 GMT
+# Wed, 24 Aug 2016 16:42:21 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 24 Aug 2016 19:32:08 GMT
 ENV OTP_VERSION=17.5.6.9
-# Thu, 28 Jul 2016 22:33:43 GMT
+# Wed, 24 Aug 2016 19:42:18 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-$OTP_VERSION.tar.gz" 	&& OTP_DOWNLOAD_SHA256="387c612d1bc5ffbc68db7d05c3655804b310facc8bad921a3e0f3391970bc522" 	&& runtimeDeps='libodbc1' 	&& buildDeps='unixodbc-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& ./configure 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
-# Thu, 28 Jul 2016 22:33:44 GMT
+# Wed, 24 Aug 2016 19:42:18 GMT
 CMD ["erl"]
 ```
 
@@ -1875,19 +1875,19 @@ CMD ["erl"]
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
 		Size: 42.5 MB (42495385 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
-		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
-		Size: 129.7 MB (129692532 bytes)  
+	-	`sha256:855820c726566646e66b20293d2eeeb642e888fbe4302a3cdf6021af5f304c26`  
+		Last Modified: Wed, 24 Aug 2016 16:53:02 GMT  
+		Size: 130.2 MB (130245689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f77611b6c4e4be8aac769b1f96e2e4ef68e8c7432e6a7fb76789ed4d9eb0a39`  
-		Last Modified: Thu, 28 Jul 2016 22:34:05 GMT  
-		Size: 56.3 MB (56318828 bytes)  
+	-	`sha256:7fa1fc8d91d7e8bd1a8b6ba3554e3da080994e462b96115cd26a1ba3a2f57a3f`  
+		Last Modified: Wed, 24 Aug 2016 19:42:45 GMT  
+		Size: 56.3 MB (56320402 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `erlang:17`
 
 ```console
-$ docker pull erlang@sha256:b0b77ec3d06c86ffd1f5a0c939e6ca03f2820327f29b0ad355b932d4f0a87728
+$ docker pull erlang@sha256:ef06b0f1c250a38306889efd72f111e57e54bc67c8f7010fbdbb81b63aea4328
 ```
 
 -	Platforms:
@@ -1897,9 +1897,9 @@ $ docker pull erlang@sha256:b0b77ec3d06c86ffd1f5a0c939e6ca03f2820327f29b0ad355b9
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **298.4 MB (298399334 bytes)**  
+-	Total Size: **299.0 MB (298954065 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:828ef31c2d405111290c67fee6e9b7239af92b6bb246b9b04bb3332510a7551e`
+-	Image ID: `sha256:1bb5c490f02b569ccead54c98575c86292fd9f4cc69f8820774aeb8b5ad9a42d`
 -	Default Command: `["erl"]`
 
 ```dockerfile
@@ -1911,13 +1911,13 @@ CMD ["/bin/bash"]
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 # Thu, 28 Jul 2016 17:59:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 28 Jul 2016 18:23:42 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 28 Jul 2016 22:23:38 GMT
+# Wed, 24 Aug 2016 16:42:21 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 24 Aug 2016 19:32:08 GMT
 ENV OTP_VERSION=17.5.6.9
-# Thu, 28 Jul 2016 22:33:43 GMT
+# Wed, 24 Aug 2016 19:42:18 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-$OTP_VERSION.tar.gz" 	&& OTP_DOWNLOAD_SHA256="387c612d1bc5ffbc68db7d05c3655804b310facc8bad921a3e0f3391970bc522" 	&& runtimeDeps='libodbc1' 	&& buildDeps='unixodbc-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& ./configure 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
-# Thu, 28 Jul 2016 22:33:44 GMT
+# Wed, 24 Aug 2016 19:42:18 GMT
 CMD ["erl"]
 ```
 
@@ -1934,13 +1934,13 @@ CMD ["erl"]
 		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
 		Size: 42.5 MB (42495385 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ceb711c7e301352864df69931a5fa92b005f10713fa09c57ffe790f251234034`  
-		Last Modified: Thu, 28 Jul 2016 21:52:37 GMT  
-		Size: 129.7 MB (129692532 bytes)  
+	-	`sha256:855820c726566646e66b20293d2eeeb642e888fbe4302a3cdf6021af5f304c26`  
+		Last Modified: Wed, 24 Aug 2016 16:53:02 GMT  
+		Size: 130.2 MB (130245689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f77611b6c4e4be8aac769b1f96e2e4ef68e8c7432e6a7fb76789ed4d9eb0a39`  
-		Last Modified: Thu, 28 Jul 2016 22:34:05 GMT  
-		Size: 56.3 MB (56318828 bytes)  
+	-	`sha256:7fa1fc8d91d7e8bd1a8b6ba3554e3da080994e462b96115cd26a1ba3a2f57a3f`  
+		Last Modified: Wed, 24 Aug 2016 19:42:45 GMT  
+		Size: 56.3 MB (56320402 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `erlang:17.5.6.9-slim`
