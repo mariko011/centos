@@ -7,6 +7,7 @@
 -	[`chronograf:0.13`](#chronograf013)
 -	[`chronograf:0.13.0`](#chronograf0130)
 -	[`chronograf:latest`](#chronograflatest)
+-	[`chronograf:1.0.0-rc1`](#chronograf100-rc1)
 
 ## `chronograf:0.12`
 
@@ -375,5 +376,79 @@ CMD ["chronograf"]
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1ffab6a1d24a68d65939f0cc0b3825df011126f1d58a3d8b35352cafd31f9966`  
 		Last Modified: Thu, 28 Jul 2016 22:15:40 GMT  
+		Size: 188.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `chronograf:1.0.0-rc1`
+
+```console
+$ docker pull chronograf@sha256:38288ec8e5489a629d785d7c3ff2b163f897fd62d265e618a0d584486977e7c0
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `chronograf:1.0.0-rc1` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **73.9 MB (73915873 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6b20e7b6c171b9212b368cddc400a9009d2c280fa81b7ee55777501c479b8da2`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["chronograf"]`
+
+```dockerfile
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
+CMD ["/bin/bash"]
+# Thu, 28 Jul 2016 17:57:57 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 28 Jul 2016 22:14:37 GMT
+RUN gpg     --keyserver hkp://ha.pool.sks-keyservers.net     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
+# Thu, 25 Aug 2016 19:29:02 GMT
+ENV CHRONOGRAF_VERSION=1.0.0-rc1
+# Thu, 25 Aug 2016 19:29:08 GMT
+RUN wget -q https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_amd64.deb.asc &&     wget -q https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_amd64.deb &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_amd64.deb.asc chronograf_${CHRONOGRAF_VERSION}_amd64.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_amd64.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_amd64.deb*
+# Thu, 25 Aug 2016 19:29:09 GMT
+COPY file:6bd8f62167b75e75bb429d6dda670ec917256913ff3370f929e2c8d9e14b475e in /etc/chronograf/chronograf.conf
+# Thu, 25 Aug 2016 19:29:10 GMT
+EXPOSE 10000/tcp
+# Thu, 25 Aug 2016 19:29:11 GMT
+ENV PATH=/opt/chronograf:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Thu, 25 Aug 2016 19:29:12 GMT
+VOLUME [/var/lib/chronograf]
+# Thu, 25 Aug 2016 19:29:13 GMT
+COPY file:fc95049005144e726efe031fc5e003a8eedf95c50f0041c41c3161e64cf9dbbe in /entrypoint.sh
+# Thu, 25 Aug 2016 19:29:14 GMT
+ENTRYPOINT &{["/entrypoint.sh"]}
+# Thu, 25 Aug 2016 19:29:15 GMT
+CMD ["chronograf"]
+```
+
+-	Layers:
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e29f2fd1d5b59bca4e74fd78afeb7b2e063e3fd89bf33bdf5487b5146275e46b`  
+		Last Modified: Thu, 28 Jul 2016 22:14:58 GMT  
+		Size: 6.8 KB (6754 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e925d014cff21a652a4c033116c89d8b0abe40428ab37cd0e02302d89f9f6e17`  
+		Last Modified: Thu, 25 Aug 2016 19:30:35 GMT  
+		Size: 4.0 MB (4016137 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:58cee0698d8dc9b2be617f7fc704bca4cf6dda6ae9eb2532e7be7d85aef65966`  
+		Last Modified: Thu, 25 Aug 2016 19:30:32 GMT  
+		Size: 205.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:de2cacf79434e0bfa12103fbcfea74594569545ff272c54a9f0c4e7816e6f6f3`  
+		Last Modified: Thu, 25 Aug 2016 19:30:33 GMT  
 		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

@@ -10,8 +10,8 @@
 -	[`kapacitor:0.13-alpine`](#kapacitor013-alpine)
 -	[`kapacitor:0.13.1-alpine`](#kapacitor0131-alpine)
 -	[`kapacitor:alpine`](#kapacitoralpine)
--	[`kapacitor:1.0.0-beta3`](#kapacitor100-beta3)
--	[`kapacitor:1.0.0-beta3-alpine`](#kapacitor100-beta3-alpine)
+-	[`kapacitor:1.0.0-rc1`](#kapacitor100-rc1)
+-	[`kapacitor:1.0.0-rc1-alpine`](#kapacitor100-rc1-alpine)
 
 ## `kapacitor:0.12`
 
@@ -499,22 +499,22 @@ CMD ["kapacitord"]
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `kapacitor:1.0.0-beta3`
+## `kapacitor:1.0.0-rc1`
 
 ```console
-$ docker pull kapacitor@sha256:765a9c10686904fb9a87363c1d863d33c1c43bd5daeec4750f2d0ea605ad48fe
+$ docker pull kapacitor@sha256:5757aa6e89ccdcd8c410ab1d211618b917780875b34696b490a450ddd4abd135
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `kapacitor:1.0.0-beta3` - linux; amd64
+### `kapacitor:1.0.0-rc1` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.9 MB (81852165 bytes)**  
+-	Total Size: **82.0 MB (81956818 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:377df0efab2fa8b6e43e5aa00bea17a2295cd6121c697530769ea87d012b76cb`
+-	Image ID: `sha256:2f5937d9c80d994dd1703d1fc0e4175efb4e7150b7206cebed21616a6065bd40`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["kapacitord"]`
 
@@ -527,19 +527,21 @@ CMD ["/bin/bash"]
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 # Thu, 28 Jul 2016 22:14:37 GMT
 RUN gpg     --keyserver hkp://ha.pool.sks-keyservers.net     --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5
-# Fri, 29 Jul 2016 17:03:48 GMT
-ENV KAPACITOR_VERSION=1.0.0~beta3
-# Fri, 29 Jul 2016 17:03:55 GMT
+# Thu, 25 Aug 2016 19:34:32 GMT
+ENV KAPACITOR_VERSION=1.0.0~rc1
+# Thu, 25 Aug 2016 19:34:41 GMT
 RUN wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}_amd64.deb.asc &&     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor_${KAPACITOR_VERSION}_amd64.deb &&     gpg --batch --verify kapacitor_${KAPACITOR_VERSION}_amd64.deb.asc kapacitor_${KAPACITOR_VERSION}_amd64.deb &&     dpkg -i kapacitor_${KAPACITOR_VERSION}_amd64.deb &&     rm -f kapacitor_${KAPACITOR_VERSION}_amd64.deb*
-# Fri, 29 Jul 2016 17:03:56 GMT
+# Thu, 25 Aug 2016 19:34:42 GMT
+COPY file:965f70a8f6603417e3e4564d3c3f35b5941a4ba7cb09a86047810948e33d0831 in /etc/kapacitor/kapacitor.conf
+# Thu, 25 Aug 2016 19:34:43 GMT
 EXPOSE 9092/tcp
-# Fri, 29 Jul 2016 17:03:57 GMT
+# Thu, 25 Aug 2016 19:34:44 GMT
 VOLUME [/var/lib/kapacitor]
-# Fri, 29 Jul 2016 17:03:58 GMT
+# Thu, 25 Aug 2016 19:34:46 GMT
 COPY file:e5d90b0779cb7845ca3a7981c04a97fd959fea211a2ce19c8da8b949f9d9d04c in /entrypoint.sh
-# Fri, 29 Jul 2016 17:03:58 GMT
+# Thu, 25 Aug 2016 19:34:47 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Fri, 29 Jul 2016 17:03:59 GMT
+# Thu, 25 Aug 2016 19:34:48 GMT
 CMD ["kapacitord"]
 ```
 
@@ -556,50 +558,56 @@ CMD ["kapacitord"]
 		Last Modified: Thu, 28 Jul 2016 22:14:58 GMT  
 		Size: 6.8 KB (6754 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:23e397d86ac2a49c4ea044d920821940f4a8fe7a14cc6e08651ff73e830f1184`  
-		Last Modified: Fri, 29 Jul 2016 17:04:12 GMT  
-		Size: 12.0 MB (11952593 bytes)  
+	-	`sha256:2c4e5705882a0300f9c9c3ad5439f2c219d6d692f7d7aa55c6bc364c59232d04`  
+		Last Modified: Thu, 25 Aug 2016 19:37:32 GMT  
+		Size: 12.1 MB (12057027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b956b15814e81c4c2bd5a2e77205772257a0ac566e54ee62c99d9d30e763438c`  
-		Last Modified: Fri, 29 Jul 2016 17:04:07 GMT  
+	-	`sha256:85219554e3a606cb8f5fdc7e9f31fb49dac5faf5f67daf3689f00c49be77b571`  
+		Last Modified: Thu, 25 Aug 2016 19:37:26 GMT  
+		Size: 219.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aed434e9bccf7b68a3c52fab77e8c9efa46c3c60959697794fede7adf978b9e5`  
+		Last Modified: Thu, 25 Aug 2016 19:37:25 GMT  
 		Size: 229.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `kapacitor:1.0.0-beta3-alpine`
+## `kapacitor:1.0.0-rc1-alpine`
 
 ```console
-$ docker pull kapacitor@sha256:000ade2a0d5be6fe6928002c94dd8af559b69e21a104672553ecef64d94ed256
+$ docker pull kapacitor@sha256:e0d459e1c71c1ccdbc1cf9e2e09ed718baf4cd9d8620f5b91c5734eefc1d35ce
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `kapacitor:1.0.0-beta3-alpine` - linux; amd64
+### `kapacitor:1.0.0-rc1-alpine` - linux; amd64
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **11.1 MB (11073533 bytes)**  
+-	Total Size: **11.2 MB (11150609 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50e278bb3d009d9d26b67f00edea11db6a024f9df0bfabaa998c9260ef6f2692`
+-	Image ID: `sha256:3a951469a1c11dabd25c0bed76296eb4c61da2766ecbf727f53e78eaa38f31f8`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["kapacitord"]`
 
 ```dockerfile
 # Thu, 23 Jun 2016 19:55:18 GMT
 ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
-# Tue, 19 Jul 2016 19:34:09 GMT
-ENV KAPACITOR_VERSION=1.0.0~beta3
-# Tue, 19 Jul 2016 19:34:25 GMT
+# Thu, 25 Aug 2016 19:34:49 GMT
+ENV KAPACITOR_VERSION=1.0.0~rc1
+# Thu, 25 Aug 2016 19:35:06 GMT
 RUN apk add --no-cache --virtual .build-deps wget gnupg tar ca-certificates &&     update-ca-certificates &&     gpg --keyserver hkp://ha.pool.sks-keyservers.net         --recv-keys 05CE15085FC09D18E99EFB22684A14CF2582E0C5 &&     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz.asc &&     wget -q https://dl.influxdata.com/kapacitor/releases/kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz &&     gpg --batch --verify kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz.asc kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz &&     mkdir -p /usr/src &&     tar -C /usr/src -xzf kapacitor-${KAPACITOR_VERSION}-static_linux_amd64.tar.gz &&     rm -f /usr/src/kapacitor-*/kapacitor.conf &&     chmod +x /usr/src/kapacitor-*/* &&     cp -a /usr/src/kapacitor-*/* /usr/bin/ &&     rm -rf *.tar.gz* /usr/src /root/.gnupg &&     apk del .build-deps
-# Tue, 19 Jul 2016 19:34:25 GMT
+# Thu, 25 Aug 2016 19:35:08 GMT
+COPY file:965f70a8f6603417e3e4564d3c3f35b5941a4ba7cb09a86047810948e33d0831 in /etc/kapacitor/kapacitor.conf
+# Thu, 25 Aug 2016 19:35:09 GMT
 EXPOSE 9092/tcp
-# Tue, 19 Jul 2016 19:34:25 GMT
+# Thu, 25 Aug 2016 19:35:10 GMT
 VOLUME [/var/lib/kapacitor]
-# Tue, 19 Jul 2016 19:34:26 GMT
+# Thu, 25 Aug 2016 19:35:11 GMT
 COPY file:440a837280df72a19ed72b91fab9bdcfd268250b241bbc22509699f880fe0d17 in /entrypoint.sh
-# Tue, 19 Jul 2016 19:34:26 GMT
+# Thu, 25 Aug 2016 19:35:12 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Tue, 19 Jul 2016 19:34:27 GMT
+# Thu, 25 Aug 2016 19:35:13 GMT
 CMD ["kapacitord"]
 ```
 
@@ -608,11 +616,15 @@ CMD ["kapacitord"]
 		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
 		Size: 2.3 MB (2310286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:29769b3f30bef503dc307a9f32ba19458b30f190d5b493c24bbb1cdc1c03652b`  
-		Last Modified: Tue, 19 Jul 2016 19:36:18 GMT  
-		Size: 8.8 MB (8763021 bytes)  
+	-	`sha256:85f1d733aa8c8852ded10d1e7ffdc3af0e8b9e3189a64f152454f4e661e83de8`  
+		Last Modified: Thu, 25 Aug 2016 19:37:59 GMT  
+		Size: 8.8 MB (8839877 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:33c1e6dbbf94ebe2fe711d3a6305b315ccd563a2a95f8875170ff7a80432eb13`  
-		Last Modified: Tue, 19 Jul 2016 19:36:14 GMT  
-		Size: 226.0 B  
+	-	`sha256:625c33e086eca83009c3961d36569cd6edd11716740a13e19fcd7cfce3713193`  
+		Last Modified: Thu, 25 Aug 2016 19:37:52 GMT  
+		Size: 219.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d31322c9c2ae9748ef8c4369757261eee907fc1840a39a4a3cfd7a93e6ac5874`  
+		Last Modified: Thu, 25 Aug 2016 19:37:52 GMT  
+		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
