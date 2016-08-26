@@ -8,7 +8,7 @@
 ## `aerospike:3.9.1.1`
 
 ```console
-$ docker pull aerospike@sha256:e96031e09c975f719acc813f07ff2d1960094c705c14f45ba8c24b69c4f59faa
+$ docker pull aerospike@sha256:98ede3e4dbe29c75e43631e04e4fd7a7d597629e531c071d50d3c32495b451b6
 ```
 
 -	Platforms:
@@ -18,77 +18,83 @@ $ docker pull aerospike@sha256:e96031e09c975f719acc813f07ff2d1960094c705c14f45ba
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.8 MB (68841957 bytes)**  
+-	Total Size: **68.9 MB (68897589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90d11b8c4e1a46f167a3034a24db3d46538f91040f887d189ff53dca7133183a`
+-	Image ID: `sha256:c7a5563a44fe0c7226108d80f6d8c875185cf948253edfa496b533b7bcf82261`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["asd"]`
 
 ```dockerfile
-# Thu, 11 Aug 2016 17:46:20 GMT
-ADD file:a2427e00553ce3905be425a208168cd1a587d9d23571ea74c033a35c8f00cbc0 in /
-# Thu, 11 Aug 2016 17:46:23 GMT
+# Fri, 26 Aug 2016 18:50:09 GMT
+ADD file:902bff94e00fb3d9ebb11dc5000a0f0f2400885c56f4fbfb00de394534e282f7 in /
+# Fri, 26 Aug 2016 18:50:14 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 11 Aug 2016 17:46:25 GMT
+# Fri, 26 Aug 2016 18:50:16 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 11 Aug 2016 17:46:28 GMT
+# Fri, 26 Aug 2016 18:50:18 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Thu, 11 Aug 2016 17:46:29 GMT
+# Fri, 26 Aug 2016 18:50:26 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Fri, 26 Aug 2016 18:50:27 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Aug 2016 18:19:57 GMT
+# Fri, 26 Aug 2016 19:54:14 GMT
 ENV AEROSPIKE_VERSION=3.9.1
-# Tue, 23 Aug 2016 18:19:58 GMT
+# Fri, 26 Aug 2016 19:54:15 GMT
 ENV AEROSPIKE_SHA256=7bb3236d478559cc19658b87cb5877aa023dba7d5dd788c89b7cf75cad3fdf89
-# Tue, 23 Aug 2016 18:20:29 GMT
+# Fri, 26 Aug 2016 19:55:05 GMT
 RUN apt-get update -y   &&  apt-get install -y wget python logrotate ca-certificates   && wget "https://www.aerospike.com/artifacts/aerospike-server-community/${AEROSPIKE_VERSION}/aerospike-server-community-${AEROSPIKE_VERSION}-ubuntu16.04.tgz" -O aerospike-server.tgz   && echo "$AEROSPIKE_SHA256 *aerospike-server.tgz" | sha256sum -c -   && mkdir aerospike   && tar xzf aerospike-server.tgz --strip-components=1 -C aerospike   && dpkg -i aerospike/aerospike-server-*.deb   && mkdir -p /var/log/aerospike/   && mkdir -p /var/run/aerospike/   && rm -rf aerospike-server.tgz aerospike /var/lib/apt/lists/*
-# Thu, 25 Aug 2016 19:27:59 GMT
+# Fri, 26 Aug 2016 19:55:07 GMT
 COPY file:093d7a00aab96cb51e62585206fdff0b1b8ad319574f6d5ef61e515e761c9c0f in /etc/aerospike/aerospike.conf
-# Thu, 25 Aug 2016 19:27:59 GMT
+# Fri, 26 Aug 2016 19:55:08 GMT
 COPY file:ae9470d86ba973bb1d9911d608b000e6da810777ec7bb4e93d778fdbdeae4501 in /entrypoint.sh
-# Thu, 25 Aug 2016 19:28:00 GMT
+# Fri, 26 Aug 2016 19:55:10 GMT
 VOLUME [/opt/aerospike/data]
-# Thu, 25 Aug 2016 19:28:01 GMT
+# Fri, 26 Aug 2016 19:55:11 GMT
 EXPOSE 3000/tcp 3001/tcp 3002/tcp 3003/tcp
-# Thu, 25 Aug 2016 19:28:01 GMT
+# Fri, 26 Aug 2016 19:55:12 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 25 Aug 2016 19:28:02 GMT
+# Fri, 26 Aug 2016 19:55:13 GMT
 CMD ["asd"]
 ```
 
 -	Layers:
-	-	`sha256:2f0243478e1f7fcb578778370ebcbcb350ef637e8b966c6a24830df61a3e89b8`  
-		Last Modified: Thu, 11 Aug 2016 17:49:30 GMT  
-		Size: 49.7 MB (49678667 bytes)  
+	-	`sha256:952132ac251a8df1f831b354a0b9a4cc7cd460b9c332ed664b4c205db6f22c29`  
+		Last Modified: Fri, 26 Aug 2016 18:55:29 GMT  
+		Size: 49.7 MB (49732675 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8909ae88469beef31d7ad33c85a0a1b2ade2cef4d51bab0c1353abd8477054d`  
-		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
+	-	`sha256:82659f8f1b7628b94f8919ece229321a16ec0b7139cf289e010b7c064f603516`  
+		Last Modified: Fri, 26 Aug 2016 18:55:05 GMT  
 		Size: 823.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:820f09abed29b404920f73274dd7107a4080d22a40351683aa9c410df3d18eeb`  
-		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
-		Size: 445.0 B  
+	-	`sha256:c19118ca682dcd394eeed77409fbac93d9fa94c0bcff633344dc0a71ead74a66`  
+		Last Modified: Fri, 26 Aug 2016 18:55:05 GMT  
+		Size: 446.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01193a8f3d889f5c75dd4c54e7ad2a81216f10e7b2d515af571d17a4015b3d59`  
-		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
-		Size: 682.0 B  
+	-	`sha256:8296858250fed454169c737c0706958c8a4a130e0bfdca3cf869fa767a19b4f1`  
+		Last Modified: Fri, 26 Aug 2016 18:55:05 GMT  
+		Size: 678.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a82ef8620c3d3d454ab108c29c9c0ed69c7c3811ea52c46a6b2f96b27951864d`  
-		Last Modified: Tue, 23 Aug 2016 18:20:55 GMT  
-		Size: 19.2 MB (19160072 bytes)  
+	-	`sha256:24e0251a0e2ccc2fedbdf51dd44f851622f504c7ddfad56ce0f1c63e1101cb20`  
+		Last Modified: Fri, 26 Aug 2016 18:55:06 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0eb88b32d2010e036b343b15c50b0bada0dba41ba17437624abe497e53386c0d`  
-		Last Modified: Thu, 25 Aug 2016 19:28:20 GMT  
-		Size: 957.0 B  
+	-	`sha256:5e490bec95716d045901d48f15442cbe4719b32d67ee4ee47ae1e14247dc9eb9`  
+		Last Modified: Fri, 26 Aug 2016 19:55:35 GMT  
+		Size: 19.2 MB (19161535 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3106c0737f4ecb3be9ef62af5d18e9b8b1f32b85bf2d5c6159f992ae48e00bf`  
-		Last Modified: Thu, 25 Aug 2016 19:28:21 GMT  
+	-	`sha256:e501ffe4c61af0c05fa31fa0f2f4a756412f5192823bfe0f9922237f3c7f285e`  
+		Last Modified: Fri, 26 Aug 2016 19:55:27 GMT  
+		Size: 961.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:65277404a8ca1868404475ee0b8da66e512ac3ff6cad89756c9a0e6c86733a71`  
+		Last Modified: Fri, 26 Aug 2016 19:55:27 GMT  
 		Size: 311.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `aerospike:latest`
 
 ```console
-$ docker pull aerospike@sha256:e96031e09c975f719acc813f07ff2d1960094c705c14f45ba8c24b69c4f59faa
+$ docker pull aerospike@sha256:98ede3e4dbe29c75e43631e04e4fd7a7d597629e531c071d50d3c32495b451b6
 ```
 
 -	Platforms:
@@ -98,69 +104,75 @@ $ docker pull aerospike@sha256:e96031e09c975f719acc813f07ff2d1960094c705c14f45ba
 
 -	Docker Version: 1.10.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.8 MB (68841957 bytes)**  
+-	Total Size: **68.9 MB (68897589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90d11b8c4e1a46f167a3034a24db3d46538f91040f887d189ff53dca7133183a`
+-	Image ID: `sha256:c7a5563a44fe0c7226108d80f6d8c875185cf948253edfa496b533b7bcf82261`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["asd"]`
 
 ```dockerfile
-# Thu, 11 Aug 2016 17:46:20 GMT
-ADD file:a2427e00553ce3905be425a208168cd1a587d9d23571ea74c033a35c8f00cbc0 in /
-# Thu, 11 Aug 2016 17:46:23 GMT
+# Fri, 26 Aug 2016 18:50:09 GMT
+ADD file:902bff94e00fb3d9ebb11dc5000a0f0f2400885c56f4fbfb00de394534e282f7 in /
+# Fri, 26 Aug 2016 18:50:14 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 11 Aug 2016 17:46:25 GMT
+# Fri, 26 Aug 2016 18:50:16 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 11 Aug 2016 17:46:28 GMT
+# Fri, 26 Aug 2016 18:50:18 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Thu, 11 Aug 2016 17:46:29 GMT
+# Fri, 26 Aug 2016 18:50:26 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Fri, 26 Aug 2016 18:50:27 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Aug 2016 18:19:57 GMT
+# Fri, 26 Aug 2016 19:54:14 GMT
 ENV AEROSPIKE_VERSION=3.9.1
-# Tue, 23 Aug 2016 18:19:58 GMT
+# Fri, 26 Aug 2016 19:54:15 GMT
 ENV AEROSPIKE_SHA256=7bb3236d478559cc19658b87cb5877aa023dba7d5dd788c89b7cf75cad3fdf89
-# Tue, 23 Aug 2016 18:20:29 GMT
+# Fri, 26 Aug 2016 19:55:05 GMT
 RUN apt-get update -y   &&  apt-get install -y wget python logrotate ca-certificates   && wget "https://www.aerospike.com/artifacts/aerospike-server-community/${AEROSPIKE_VERSION}/aerospike-server-community-${AEROSPIKE_VERSION}-ubuntu16.04.tgz" -O aerospike-server.tgz   && echo "$AEROSPIKE_SHA256 *aerospike-server.tgz" | sha256sum -c -   && mkdir aerospike   && tar xzf aerospike-server.tgz --strip-components=1 -C aerospike   && dpkg -i aerospike/aerospike-server-*.deb   && mkdir -p /var/log/aerospike/   && mkdir -p /var/run/aerospike/   && rm -rf aerospike-server.tgz aerospike /var/lib/apt/lists/*
-# Thu, 25 Aug 2016 19:27:59 GMT
+# Fri, 26 Aug 2016 19:55:07 GMT
 COPY file:093d7a00aab96cb51e62585206fdff0b1b8ad319574f6d5ef61e515e761c9c0f in /etc/aerospike/aerospike.conf
-# Thu, 25 Aug 2016 19:27:59 GMT
+# Fri, 26 Aug 2016 19:55:08 GMT
 COPY file:ae9470d86ba973bb1d9911d608b000e6da810777ec7bb4e93d778fdbdeae4501 in /entrypoint.sh
-# Thu, 25 Aug 2016 19:28:00 GMT
+# Fri, 26 Aug 2016 19:55:10 GMT
 VOLUME [/opt/aerospike/data]
-# Thu, 25 Aug 2016 19:28:01 GMT
+# Fri, 26 Aug 2016 19:55:11 GMT
 EXPOSE 3000/tcp 3001/tcp 3002/tcp 3003/tcp
-# Thu, 25 Aug 2016 19:28:01 GMT
+# Fri, 26 Aug 2016 19:55:12 GMT
 ENTRYPOINT &{["/entrypoint.sh"]}
-# Thu, 25 Aug 2016 19:28:02 GMT
+# Fri, 26 Aug 2016 19:55:13 GMT
 CMD ["asd"]
 ```
 
 -	Layers:
-	-	`sha256:2f0243478e1f7fcb578778370ebcbcb350ef637e8b966c6a24830df61a3e89b8`  
-		Last Modified: Thu, 11 Aug 2016 17:49:30 GMT  
-		Size: 49.7 MB (49678667 bytes)  
+	-	`sha256:952132ac251a8df1f831b354a0b9a4cc7cd460b9c332ed664b4c205db6f22c29`  
+		Last Modified: Fri, 26 Aug 2016 18:55:29 GMT  
+		Size: 49.7 MB (49732675 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8909ae88469beef31d7ad33c85a0a1b2ade2cef4d51bab0c1353abd8477054d`  
-		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
+	-	`sha256:82659f8f1b7628b94f8919ece229321a16ec0b7139cf289e010b7c064f603516`  
+		Last Modified: Fri, 26 Aug 2016 18:55:05 GMT  
 		Size: 823.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:820f09abed29b404920f73274dd7107a4080d22a40351683aa9c410df3d18eeb`  
-		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
-		Size: 445.0 B  
+	-	`sha256:c19118ca682dcd394eeed77409fbac93d9fa94c0bcff633344dc0a71ead74a66`  
+		Last Modified: Fri, 26 Aug 2016 18:55:05 GMT  
+		Size: 446.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01193a8f3d889f5c75dd4c54e7ad2a81216f10e7b2d515af571d17a4015b3d59`  
-		Last Modified: Thu, 11 Aug 2016 17:49:14 GMT  
-		Size: 682.0 B  
+	-	`sha256:8296858250fed454169c737c0706958c8a4a130e0bfdca3cf869fa767a19b4f1`  
+		Last Modified: Fri, 26 Aug 2016 18:55:05 GMT  
+		Size: 678.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a82ef8620c3d3d454ab108c29c9c0ed69c7c3811ea52c46a6b2f96b27951864d`  
-		Last Modified: Tue, 23 Aug 2016 18:20:55 GMT  
-		Size: 19.2 MB (19160072 bytes)  
+	-	`sha256:24e0251a0e2ccc2fedbdf51dd44f851622f504c7ddfad56ce0f1c63e1101cb20`  
+		Last Modified: Fri, 26 Aug 2016 18:55:06 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0eb88b32d2010e036b343b15c50b0bada0dba41ba17437624abe497e53386c0d`  
-		Last Modified: Thu, 25 Aug 2016 19:28:20 GMT  
-		Size: 957.0 B  
+	-	`sha256:5e490bec95716d045901d48f15442cbe4719b32d67ee4ee47ae1e14247dc9eb9`  
+		Last Modified: Fri, 26 Aug 2016 19:55:35 GMT  
+		Size: 19.2 MB (19161535 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3106c0737f4ecb3be9ef62af5d18e9b8b1f32b85bf2d5c6159f992ae48e00bf`  
-		Last Modified: Thu, 25 Aug 2016 19:28:21 GMT  
+	-	`sha256:e501ffe4c61af0c05fa31fa0f2f4a756412f5192823bfe0f9922237f3c7f285e`  
+		Last Modified: Fri, 26 Aug 2016 19:55:27 GMT  
+		Size: 961.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:65277404a8ca1868404475ee0b8da66e512ac3ff6cad89756c9a0e6c86733a71`  
+		Last Modified: Fri, 26 Aug 2016 19:55:27 GMT  
 		Size: 311.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
