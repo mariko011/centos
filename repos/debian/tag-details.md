@@ -25,7 +25,7 @@
 ## `debian:8.5`
 
 ```console
-$ docker pull debian@sha256:ffb60fdbc401b2a692eef8d04616fca15905dce259d1499d96521970ed0bec36
+$ docker pull debian@sha256:2340a704d1f8f9ecb51c24d9cbce9f5ecd301b6b8ea1ca5eaba9edee46a2436d
 ```
 
 -	Platforms:
@@ -33,30 +33,30 @@ $ docker pull debian@sha256:ffb60fdbc401b2a692eef8d04616fca15905dce259d1499d9652
 
 ### `debian:8.5` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.4 MB (51365611 bytes)**  
+-	Total Size: **51.4 MB (51367268 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b01529cc499d51767c62f9fc8083043610546b4e050898809ec54e00dbb1a34`
+-	Image ID: `sha256:031143c1c662878cf5be0099ff759dd219f907a22113eb60241251d29344bb96`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 28 Jul 2016 17:47:54 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
-# Thu, 28 Jul 2016 17:47:55 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:8`
 
 ```console
-$ docker pull debian@sha256:ffb60fdbc401b2a692eef8d04616fca15905dce259d1499d96521970ed0bec36
+$ docker pull debian@sha256:2340a704d1f8f9ecb51c24d9cbce9f5ecd301b6b8ea1ca5eaba9edee46a2436d
 ```
 
 -	Platforms:
@@ -64,30 +64,30 @@ $ docker pull debian@sha256:ffb60fdbc401b2a692eef8d04616fca15905dce259d1499d9652
 
 ### `debian:8` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.4 MB (51365611 bytes)**  
+-	Total Size: **51.4 MB (51367268 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b01529cc499d51767c62f9fc8083043610546b4e050898809ec54e00dbb1a34`
+-	Image ID: `sha256:031143c1c662878cf5be0099ff759dd219f907a22113eb60241251d29344bb96`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 28 Jul 2016 17:47:54 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
-# Thu, 28 Jul 2016 17:47:55 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:jessie`
 
 ```console
-$ docker pull debian@sha256:ffb60fdbc401b2a692eef8d04616fca15905dce259d1499d96521970ed0bec36
+$ docker pull debian@sha256:2340a704d1f8f9ecb51c24d9cbce9f5ecd301b6b8ea1ca5eaba9edee46a2436d
 ```
 
 -	Platforms:
@@ -95,30 +95,30 @@ $ docker pull debian@sha256:ffb60fdbc401b2a692eef8d04616fca15905dce259d1499d9652
 
 ### `debian:jessie` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.4 MB (51365611 bytes)**  
+-	Total Size: **51.4 MB (51367268 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b01529cc499d51767c62f9fc8083043610546b4e050898809ec54e00dbb1a34`
+-	Image ID: `sha256:031143c1c662878cf5be0099ff759dd219f907a22113eb60241251d29344bb96`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 28 Jul 2016 17:47:54 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
-# Thu, 28 Jul 2016 17:47:55 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:latest`
 
 ```console
-$ docker pull debian@sha256:ffb60fdbc401b2a692eef8d04616fca15905dce259d1499d96521970ed0bec36
+$ docker pull debian@sha256:2340a704d1f8f9ecb51c24d9cbce9f5ecd301b6b8ea1ca5eaba9edee46a2436d
 ```
 
 -	Platforms:
@@ -126,30 +126,30 @@ $ docker pull debian@sha256:ffb60fdbc401b2a692eef8d04616fca15905dce259d1499d9652
 
 ### `debian:latest` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.4 MB (51365611 bytes)**  
+-	Total Size: **51.4 MB (51367268 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b01529cc499d51767c62f9fc8083043610546b4e050898809ec54e00dbb1a34`
+-	Image ID: `sha256:031143c1c662878cf5be0099ff759dd219f907a22113eb60241251d29344bb96`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 28 Jul 2016 17:47:54 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
-# Thu, 28 Jul 2016 17:47:55 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:jessie-backports`
 
 ```console
-$ docker pull debian@sha256:cef2d2046218bf0b1d1188e3a443ea3d3d05a4a03f6c1dac7cc8fa7fc5089b71
+$ docker pull debian@sha256:5aec71184531ac04ac9eff7db7877f43874ea998d89a6eb0a736746b163b3cc4
 ```
 
 -	Platforms:
@@ -157,36 +157,36 @@ $ docker pull debian@sha256:cef2d2046218bf0b1d1188e3a443ea3d3d05a4a03f6c1dac7cc8
 
 ### `debian:jessie-backports` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.4 MB (51365831 bytes)**  
+-	Total Size: **51.4 MB (51367488 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56e997898da4683b9ef63537f398e462b7469e7fbb8d2aba1ee2e6673b8c6979`
+-	Image ID: `sha256:75bc26d8ae1b93aaa487038343ca4ae48ad0ed89386c2af2b2c6f0b8dc3aa2e8`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 28 Jul 2016 17:47:54 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
-# Thu, 28 Jul 2016 17:47:55 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Thu, 28 Jul 2016 17:47:57 GMT
+# Tue, 30 Aug 2016 21:00:53 GMT
 RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25eb4fd61cd90d2207ae74300d5d7d1aeb22ae1afc4a3f87ee87f4454e309453`  
-		Last Modified: Thu, 28 Jul 2016 17:50:42 GMT  
+	-	`sha256:155a5eea8c2415a63cd38cc2b2d5498c1adf54b5e8a5bdcd04458bfe4a87c894`  
+		Last Modified: Tue, 30 Aug 2016 21:02:32 GMT  
 		Size: 220.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:oldstable`
 
 ```console
-$ docker pull debian@sha256:a97e85ee1a91f4a739de5a94acae5bf087262a8f80af4302773361d6a92b1e3b
+$ docker pull debian@sha256:1473a2a0f735906ef8aeb61b6010aa4a95ab8be5aeda2f6bf4469199a87558c4
 ```
 
 -	Platforms:
@@ -194,30 +194,30 @@ $ docker pull debian@sha256:a97e85ee1a91f4a739de5a94acae5bf087262a8f80af43027733
 
 ### `debian:oldstable` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.2 MB (37209926 bytes)**  
+-	Total Size: **37.2 MB (37215133 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23d2236e004b4637a5890c6b89334dfec1816b9157106efe890452331504b912`
+-	Image ID: `sha256:153d60c9f4de30011966c123c9792d74e4219d8a069c29ac4d7a333017025920`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 28 Jul 2016 17:48:09 GMT
-ADD file:74b658fa0b9034cd6fd9749dc98d412b6552e960c940a5719192bb1fa43dc7e8 in /
-# Thu, 28 Jul 2016 17:48:09 GMT
+# Tue, 30 Aug 2016 21:00:58 GMT
+ADD file:a7b326efe7f07dbfb923302e5839eaf2687fe07d26f0e4c6459f0af691269267 in / 
+# Tue, 30 Aug 2016 21:00:58 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:d871fa86d65a14834dd2e98433bfe0194a0113ea7280cf3457ed7323e48ce676`  
-		Last Modified: Thu, 28 Jul 2016 17:51:06 GMT  
-		Size: 37.2 MB (37209926 bytes)  
+	-	`sha256:f405e6692c1480ac79fb41032bcbf5ffe298193c4df53df0224d5cbb6b28cb90`  
+		Last Modified: Tue, 30 Aug 2016 21:02:54 GMT  
+		Size: 37.2 MB (37215133 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:oldstable-backports`
 
 ```console
-$ docker pull debian@sha256:05ee458d06c39e80946b1f924935a170ac6ce921602078d7fccbcf10d93718af
+$ docker pull debian@sha256:d4ed94c9ef6a3b0276c7a629079ebc67e3483768713d28cbb5793e8f17760931
 ```
 
 -	Platforms:
@@ -225,36 +225,36 @@ $ docker pull debian@sha256:05ee458d06c39e80946b1f924935a170ac6ce921602078d7fccb
 
 ### `debian:oldstable-backports` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.2 MB (37210146 bytes)**  
+-	Total Size: **37.2 MB (37215354 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad755e72dcb6e5f3988a80f655cbd97bfcd8cec645d603893ef328fe96f90dfc`
+-	Image ID: `sha256:228101db4ba677b64a3bf0e1b7fdcff05d158fd305b9e9f33440b44eab5e6833`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 28 Jul 2016 17:48:09 GMT
-ADD file:74b658fa0b9034cd6fd9749dc98d412b6552e960c940a5719192bb1fa43dc7e8 in /
-# Thu, 28 Jul 2016 17:48:09 GMT
+# Tue, 30 Aug 2016 21:00:58 GMT
+ADD file:a7b326efe7f07dbfb923302e5839eaf2687fe07d26f0e4c6459f0af691269267 in / 
+# Tue, 30 Aug 2016 21:00:58 GMT
 CMD ["/bin/bash"]
-# Thu, 28 Jul 2016 17:48:11 GMT
+# Tue, 30 Aug 2016 21:00:59 GMT
 RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
 ```
 
 -	Layers:
-	-	`sha256:d871fa86d65a14834dd2e98433bfe0194a0113ea7280cf3457ed7323e48ce676`  
-		Last Modified: Thu, 28 Jul 2016 17:51:06 GMT  
-		Size: 37.2 MB (37209926 bytes)  
+	-	`sha256:f405e6692c1480ac79fb41032bcbf5ffe298193c4df53df0224d5cbb6b28cb90`  
+		Last Modified: Tue, 30 Aug 2016 21:02:54 GMT  
+		Size: 37.2 MB (37215133 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:386d96516744a63ccd6e4b19c8aede91b87ff410b25c0695b2a762e330e92e95`  
-		Last Modified: Thu, 28 Jul 2016 17:51:21 GMT  
-		Size: 220.0 B  
+	-	`sha256:7ccf8d575e8e2354c3b0352233102b63641ccc7e898c550108949bfbcd6f04e4`  
+		Last Modified: Tue, 30 Aug 2016 21:03:07 GMT  
+		Size: 221.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:sid`
 
 ```console
-$ docker pull debian@sha256:c463cafb67f3ccca4bbf1c906900786db794e19aad2189400b1eca9319f57973
+$ docker pull debian@sha256:4fe2d8b72a99a52e57301ef444e333575d406cc22b15f2e2624702e738c78947
 ```
 
 -	Platforms:
@@ -262,30 +262,30 @@ $ docker pull debian@sha256:c463cafb67f3ccca4bbf1c906900786db794e19aad2189400b1e
 
 ### `debian:sid` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.5 MB (42487630 bytes)**  
+-	Total Size: **42.5 MB (42455191 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43a75bb0dc5e339c7a01408324298bc5f69dbf225ff63f6def2da6e52cb708ca`
+-	Image ID: `sha256:63270afd9014d448045050ddbe566d124cbbed54cb247c0f615b6c52353305ec`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 28 Jul 2016 17:48:23 GMT
-ADD file:ef6cd3ee88d7045391cb7b6c1014d225d1abe9c0539fa50b9260639774032866 in /
-# Thu, 28 Jul 2016 17:48:24 GMT
+# Tue, 30 Aug 2016 21:01:05 GMT
+ADD file:cde9313f179951bdf9a85569736d1720e757e4b3710e422228ba66a1789469a9 in / 
+# Tue, 30 Aug 2016 21:01:05 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:f8e784df59625b49bca4ce9f70150e254beed293dd99fc93da5039461894ad16`  
-		Last Modified: Thu, 28 Jul 2016 17:51:47 GMT  
-		Size: 42.5 MB (42487630 bytes)  
+	-	`sha256:f45860c16bdb654da5c2c7bea335dcb2db33cf95ace30c719175aef1a0d41fbb`  
+		Last Modified: Tue, 30 Aug 2016 21:03:28 GMT  
+		Size: 42.5 MB (42455191 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:stable`
 
 ```console
-$ docker pull debian@sha256:33bd29f0ea52eed0039ea2a633116d8e9ffe723002acba9a47417af13e62fb32
+$ docker pull debian@sha256:9aed8eefdf43c06f685d7c5a6c69216f3fac3f92803981abd658c9138f3afd20
 ```
 
 -	Platforms:
@@ -293,30 +293,30 @@ $ docker pull debian@sha256:33bd29f0ea52eed0039ea2a633116d8e9ffe723002acba9a4741
 
 ### `debian:stable` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.4 MB (51367231 bytes)**  
+-	Total Size: **51.4 MB (51368454 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eaa6a79eaf93557c838e08433f13240ccd31ecb15503c6d42a523d94f8d5ce88`
+-	Image ID: `sha256:1b360f8c34cdea57648267a3bba4859e519606c54acf46819e53f06da9deaa3b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 28 Jul 2016 17:48:37 GMT
-ADD file:8fda2628a33b0261dfc57f39e1cc8ee68363d492515cfef36a40a67ea30e2cac in /
-# Thu, 28 Jul 2016 17:48:38 GMT
+# Tue, 30 Aug 2016 21:01:12 GMT
+ADD file:ea28c318ba89a361e2616b50a48d4b065c1dcbafe4611d194f26950e80d74778 in / 
+# Tue, 30 Aug 2016 21:01:12 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:6f0e36e9ed69ba010ef8245494daebe273ba99cf75d61281be08272297255c72`  
-		Last Modified: Thu, 28 Jul 2016 17:52:18 GMT  
-		Size: 51.4 MB (51367231 bytes)  
+	-	`sha256:052b8aa64291b02cf599cb76bd1c62b022c52ad6f0234bff4b227ac41f1a3033`  
+		Last Modified: Tue, 30 Aug 2016 21:03:55 GMT  
+		Size: 51.4 MB (51368454 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `debian:stable-backports`
 
 ```console
-$ docker pull debian@sha256:4e0c142a0a08830b2ab31dc7fce8a75f281bd14ab6c50ea69340c0d86d72fbe7
+$ docker pull debian@sha256:4ba01b0f9108df9eb7104cbab205e7ef81234bb2712f910c29e3438f168b0833
 ```
 
 -	Platforms:
@@ -324,29 +324,29 @@ $ docker pull debian@sha256:4e0c142a0a08830b2ab31dc7fce8a75f281bd14ab6c50ea69340
 
 ### `debian:stable-backports` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.4 MB (51367451 bytes)**  
+-	Total Size: **51.4 MB (51368674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d207e4b860a3981a5009b496b4558a56a13f553d826cec14fa3a238000a74a53`
+-	Image ID: `sha256:7bddecc71f33abb6e4e9a6967389343733527428f02c51a2b8b0fbf0494da517`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 28 Jul 2016 17:48:37 GMT
-ADD file:8fda2628a33b0261dfc57f39e1cc8ee68363d492515cfef36a40a67ea30e2cac in /
-# Thu, 28 Jul 2016 17:48:38 GMT
+# Tue, 30 Aug 2016 21:01:12 GMT
+ADD file:ea28c318ba89a361e2616b50a48d4b065c1dcbafe4611d194f26950e80d74778 in / 
+# Tue, 30 Aug 2016 21:01:12 GMT
 CMD ["/bin/bash"]
-# Thu, 28 Jul 2016 17:48:40 GMT
+# Tue, 30 Aug 2016 21:01:13 GMT
 RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
 ```
 
 -	Layers:
-	-	`sha256:6f0e36e9ed69ba010ef8245494daebe273ba99cf75d61281be08272297255c72`  
-		Last Modified: Thu, 28 Jul 2016 17:52:18 GMT  
-		Size: 51.4 MB (51367231 bytes)  
+	-	`sha256:052b8aa64291b02cf599cb76bd1c62b022c52ad6f0234bff4b227ac41f1a3033`  
+		Last Modified: Tue, 30 Aug 2016 21:03:55 GMT  
+		Size: 51.4 MB (51368454 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d501663c3d9dd32e249d241c99a626f29f9c5b3c762b8bd0696709267d054bd`  
-		Last Modified: Thu, 28 Jul 2016 17:52:35 GMT  
+	-	`sha256:60df0332cd5322c87fee781605649e208ed35cc61a2fc2a8cd12fccc9bc1114e`  
+		Last Modified: Tue, 30 Aug 2016 21:04:08 GMT  
 		Size: 220.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
