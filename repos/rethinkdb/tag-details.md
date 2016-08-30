@@ -9,6 +9,7 @@
 -	[`rethinkdb:2.2.6`](#rethinkdb226)
 -	[`rethinkdb:2.2`](#rethinkdb22)
 -	[`rethinkdb:2.3.4`](#rethinkdb234)
+-	[`rethinkdb:2.3.5`](#rethinkdb235)
 -	[`rethinkdb:2.3`](#rethinkdb23)
 -	[`rethinkdb:2`](#rethinkdb2)
 -	[`rethinkdb:latest`](#rethinkdblatest)
@@ -467,6 +468,10 @@ EXPOSE 28015/tcp 29015/tcp 8080/tcp
 		Last Modified: Mon, 01 Aug 2016 23:40:16 GMT  
 		Size: 92.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `rethinkdb:2.3.5`
+
+**does not exist** (yet?)
 
 ## `rethinkdb:2.3`
 
