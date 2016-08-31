@@ -30,7 +30,7 @@
 ## `jetty:9.3.11`
 
 ```console
-$ docker pull jetty@sha256:8d6438365ea025f4829b39524822ae2ceae656ccc1e8af1dae48dedfe731156a
+$ docker pull jetty@sha256:dec6d4c9cd58e1d8526aa202092ef7a293997aa63e68c8f471e54a6ec4a4f29d
 ```
 
 -	Platforms:
@@ -40,141 +40,141 @@ $ docker pull jetty@sha256:8d6438365ea025f4829b39524822ae2ceae656ccc1e8af1dae48d
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **132.1 MB (132061893 bytes)**  
+-	Total Size: **132.1 MB (132064528 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b50ad66d99bdfa38a8242cf8d0b8669dfdf1b9590b9c4e0ba30f2ba43ce554a`
+-	Image ID: `sha256:08a848f43aef4870d1eda1c0825a4ffd2e33663f4832ea9521dbf50d75f0fdd7`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Tue, 30 Aug 2016 00:24:21 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in / 
-# Tue, 30 Aug 2016 00:24:21 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 18:01:24 GMT
+# Tue, 30 Aug 2016 21:52:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:53:35 GMT
+# Wed, 31 Aug 2016 17:13:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:55:40 GMT
+# Wed, 31 Aug 2016 17:16:06 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_VERSION=8u102
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 30 Aug 2016 19:56:03 GMT
+# Wed, 31 Aug 2016 17:16:42 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 30 Aug 2016 19:56:04 GMT
+# Wed, 31 Aug 2016 17:16:44 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 30 Aug 2016 20:05:34 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 WORKDIR /usr/local/jetty
-# Tue, 30 Aug 2016 21:09:11 GMT
+# Wed, 31 Aug 2016 20:51:53 GMT
 ENV JETTY_VERSION=9.3.11.v20160721
-# Tue, 30 Aug 2016 21:09:11 GMT
+# Wed, 31 Aug 2016 20:51:54 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.3.11.v20160721/jetty-distribution-9.3.11.v20160721.tar.gz
-# Tue, 30 Aug 2016 21:09:12 GMT
+# Wed, 31 Aug 2016 20:51:54 GMT
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E372283E7AE839CD7C58886
-# Tue, 30 Aug 2016 21:09:14 GMT
+# Wed, 31 Aug 2016 20:51:56 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -r "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm -fr demo-base javadoc 	&& rm jetty.tar.gz*
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:57 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:57 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:58 GMT
 WORKDIR /var/lib/jetty
-# Tue, 30 Aug 2016 21:09:17 GMT
+# Wed, 31 Aug 2016 20:51:59 GMT
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" 	&& set -xe 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
-# Tue, 30 Aug 2016 21:09:17 GMT
+# Wed, 31 Aug 2016 20:51:59 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:00 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR" "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:00 GMT
 COPY file:4f7da2906a90932cfb90db54a45ee08f86b17253747db62085f7512c9efd46ad in / 
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 EXPOSE 8080/tcp
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 30 Aug 2016 21:09:19 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8a4cf2cc675828e73bd8d18bce3caa936d93fedb555040bdbec021319451802`  
-		Last Modified: Tue, 30 Aug 2016 21:10:14 GMT  
-		Size: 18.5 MB (18526925 bytes)  
+	-	`sha256:751fe39c4d348c7fc411d46929c1dac390e3d7107efc9f8f69641b50e14459f7`  
+		Last Modified: Tue, 30 Aug 2016 21:59:08 GMT  
+		Size: 18.5 MB (18527264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0074002c1ca76702061f6dfe93bdb1b5201bbf68fc2e007cd11af7d8ab54e301`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 566.7 KB (566663 bytes)  
+	-	`sha256:b165e84cccc10bc56e89091e37339ab98afbef36d1f06cd9c1c531af4dc18aa1`  
+		Last Modified: Wed, 31 Aug 2016 17:24:31 GMT  
+		Size: 566.9 KB (566898 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce7f795b9b456275a51a7fa8e1f606e89d007b2ef0e0950a51f7563296f1ba7c`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 219.0 B  
+	-	`sha256:acfcc7cbc59b7a596fd525d7565bb8df98f7cc2eef6aecde5b2428910a55d40f`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:289ba16233e6d6ee8d69109b2926d89a165dccc2cee41dff3f63f9e5dab2dd52`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 241.0 B  
+	-	`sha256:04b7a9efc4af31d0be1ab9c42ea79d4fd37ab4f37819484dee0432c6f970887b`  
+		Last Modified: Wed, 31 Aug 2016 17:29:32 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42d9f6ba2021d41864dea4f9511518360e27d0b5d7acf9ee5dda1ca1ed3f8cc2`  
-		Last Modified: Tue, 30 Aug 2016 21:10:19 GMT  
-		Size: 53.4 MB (53402046 bytes)  
+	-	`sha256:b16e55fe528577cd1aef5bb088da95b07521d9489bb895d68885ba7cd3cf296c`  
+		Last Modified: Wed, 31 Aug 2016 17:29:56 GMT  
+		Size: 53.4 MB (53402358 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a272f25f79cc92da8fb2ea837afd1fb963800adc87c103221417940142da6b13`  
-		Last Modified: Tue, 30 Aug 2016 21:10:04 GMT  
-		Size: 284.2 KB (284198 bytes)  
+	-	`sha256:8c5cbb866b5570e0aced559ab8b213a73d5fd87a9a7b9465c3e3a47c532b4c4e`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 284.3 KB (284257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e9be70dacf03ab795659f46b1ef58e904a3c968b89b2def933b2ce2e5d6379e`  
-		Last Modified: Tue, 30 Aug 2016 21:10:03 GMT  
-		Size: 2.1 KB (2085 bytes)  
+	-	`sha256:df1b868bb644dee5e6a070e4dcf3fcb49c1b88c2b3a9f9753e8e37f318097308`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
+		Size: 2.1 KB (2081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0b88539157f3687bed39f9e835f3d6ca0d21739842a7ce65d0eafffa8c4dc30`  
-		Last Modified: Tue, 30 Aug 2016 21:10:02 GMT  
+	-	`sha256:6ff2fb0f04a0b5a0d2d5427d98a8302454f38a808ad5acb82545dc9994288450`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
 		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9665cba0d9a5ec18b1b0f6c66dace60f624cd2231b39b173259d29b73129be48`  
-		Last Modified: Tue, 30 Aug 2016 21:10:01 GMT  
-		Size: 7.9 MB (7909397 bytes)  
+	-	`sha256:4f0cbb80f7b85ed9e536d522f2a575cfe41a84fd64087b1c765c740c784a7d79`  
+		Last Modified: Wed, 31 Aug 2016 20:52:08 GMT  
+		Size: 7.9 MB (7909436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8dd0a62e29ee6135010442feba47dd1adb446af681e6e5fd8318c9576e54cc2`  
-		Last Modified: Tue, 30 Aug 2016 21:10:00 GMT  
-		Size: 131.0 B  
+	-	`sha256:a1e413c8c0e6d1e7530339e1759963b9c2204c88b04ddffb5f3e5472339a3c14`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92fbe5ad3a2dbe8e13bd97efb0bd90dc178d48cb08ba798cf4ce35e66e881e9b`  
-		Last Modified: Tue, 30 Aug 2016 21:09:59 GMT  
-		Size: 1.8 KB (1830 bytes)  
+	-	`sha256:a9fc1960218b02081ae9a8ca6096ddfcdea1405d384b8b1e24730ebb45219f61`  
+		Last Modified: Wed, 31 Aug 2016 20:52:06 GMT  
+		Size: 1.8 KB (1829 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd7eb021ab782604013d87a717f694ed7504b351e6770b9a3f49e5a085a56bb1`  
-		Last Modified: Tue, 30 Aug 2016 21:09:59 GMT  
-		Size: 1.8 KB (1831 bytes)  
+	-	`sha256:77d424dbfeb88109e371eaef1030c9e8ed7da195bc45d899671deb9f812acf3e`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 1.8 KB (1832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6d501aa6e2e5063aa796394f2257f78155b0e61ac28ddd4595d2d790161db5d`  
-		Last Modified: Tue, 30 Aug 2016 21:10:00 GMT  
-		Size: 569.0 B  
+	-	`sha256:b32909f00a87f6ee6ac76af2508effdca7430633492deeb2510d62222cb6e936`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 570.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jetty:9.3`
 
 ```console
-$ docker pull jetty@sha256:8d6438365ea025f4829b39524822ae2ceae656ccc1e8af1dae48dedfe731156a
+$ docker pull jetty@sha256:dec6d4c9cd58e1d8526aa202092ef7a293997aa63e68c8f471e54a6ec4a4f29d
 ```
 
 -	Platforms:
@@ -184,141 +184,141 @@ $ docker pull jetty@sha256:8d6438365ea025f4829b39524822ae2ceae656ccc1e8af1dae48d
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **132.1 MB (132061893 bytes)**  
+-	Total Size: **132.1 MB (132064528 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b50ad66d99bdfa38a8242cf8d0b8669dfdf1b9590b9c4e0ba30f2ba43ce554a`
+-	Image ID: `sha256:08a848f43aef4870d1eda1c0825a4ffd2e33663f4832ea9521dbf50d75f0fdd7`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Tue, 30 Aug 2016 00:24:21 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in / 
-# Tue, 30 Aug 2016 00:24:21 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 18:01:24 GMT
+# Tue, 30 Aug 2016 21:52:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:53:35 GMT
+# Wed, 31 Aug 2016 17:13:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:55:40 GMT
+# Wed, 31 Aug 2016 17:16:06 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_VERSION=8u102
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 30 Aug 2016 19:56:03 GMT
+# Wed, 31 Aug 2016 17:16:42 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 30 Aug 2016 19:56:04 GMT
+# Wed, 31 Aug 2016 17:16:44 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 30 Aug 2016 20:05:34 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 WORKDIR /usr/local/jetty
-# Tue, 30 Aug 2016 21:09:11 GMT
+# Wed, 31 Aug 2016 20:51:53 GMT
 ENV JETTY_VERSION=9.3.11.v20160721
-# Tue, 30 Aug 2016 21:09:11 GMT
+# Wed, 31 Aug 2016 20:51:54 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.3.11.v20160721/jetty-distribution-9.3.11.v20160721.tar.gz
-# Tue, 30 Aug 2016 21:09:12 GMT
+# Wed, 31 Aug 2016 20:51:54 GMT
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E372283E7AE839CD7C58886
-# Tue, 30 Aug 2016 21:09:14 GMT
+# Wed, 31 Aug 2016 20:51:56 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -r "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm -fr demo-base javadoc 	&& rm jetty.tar.gz*
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:57 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:57 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:58 GMT
 WORKDIR /var/lib/jetty
-# Tue, 30 Aug 2016 21:09:17 GMT
+# Wed, 31 Aug 2016 20:51:59 GMT
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" 	&& set -xe 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
-# Tue, 30 Aug 2016 21:09:17 GMT
+# Wed, 31 Aug 2016 20:51:59 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:00 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR" "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:00 GMT
 COPY file:4f7da2906a90932cfb90db54a45ee08f86b17253747db62085f7512c9efd46ad in / 
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 EXPOSE 8080/tcp
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 30 Aug 2016 21:09:19 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8a4cf2cc675828e73bd8d18bce3caa936d93fedb555040bdbec021319451802`  
-		Last Modified: Tue, 30 Aug 2016 21:10:14 GMT  
-		Size: 18.5 MB (18526925 bytes)  
+	-	`sha256:751fe39c4d348c7fc411d46929c1dac390e3d7107efc9f8f69641b50e14459f7`  
+		Last Modified: Tue, 30 Aug 2016 21:59:08 GMT  
+		Size: 18.5 MB (18527264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0074002c1ca76702061f6dfe93bdb1b5201bbf68fc2e007cd11af7d8ab54e301`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 566.7 KB (566663 bytes)  
+	-	`sha256:b165e84cccc10bc56e89091e37339ab98afbef36d1f06cd9c1c531af4dc18aa1`  
+		Last Modified: Wed, 31 Aug 2016 17:24:31 GMT  
+		Size: 566.9 KB (566898 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce7f795b9b456275a51a7fa8e1f606e89d007b2ef0e0950a51f7563296f1ba7c`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 219.0 B  
+	-	`sha256:acfcc7cbc59b7a596fd525d7565bb8df98f7cc2eef6aecde5b2428910a55d40f`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:289ba16233e6d6ee8d69109b2926d89a165dccc2cee41dff3f63f9e5dab2dd52`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 241.0 B  
+	-	`sha256:04b7a9efc4af31d0be1ab9c42ea79d4fd37ab4f37819484dee0432c6f970887b`  
+		Last Modified: Wed, 31 Aug 2016 17:29:32 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42d9f6ba2021d41864dea4f9511518360e27d0b5d7acf9ee5dda1ca1ed3f8cc2`  
-		Last Modified: Tue, 30 Aug 2016 21:10:19 GMT  
-		Size: 53.4 MB (53402046 bytes)  
+	-	`sha256:b16e55fe528577cd1aef5bb088da95b07521d9489bb895d68885ba7cd3cf296c`  
+		Last Modified: Wed, 31 Aug 2016 17:29:56 GMT  
+		Size: 53.4 MB (53402358 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a272f25f79cc92da8fb2ea837afd1fb963800adc87c103221417940142da6b13`  
-		Last Modified: Tue, 30 Aug 2016 21:10:04 GMT  
-		Size: 284.2 KB (284198 bytes)  
+	-	`sha256:8c5cbb866b5570e0aced559ab8b213a73d5fd87a9a7b9465c3e3a47c532b4c4e`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 284.3 KB (284257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e9be70dacf03ab795659f46b1ef58e904a3c968b89b2def933b2ce2e5d6379e`  
-		Last Modified: Tue, 30 Aug 2016 21:10:03 GMT  
-		Size: 2.1 KB (2085 bytes)  
+	-	`sha256:df1b868bb644dee5e6a070e4dcf3fcb49c1b88c2b3a9f9753e8e37f318097308`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
+		Size: 2.1 KB (2081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0b88539157f3687bed39f9e835f3d6ca0d21739842a7ce65d0eafffa8c4dc30`  
-		Last Modified: Tue, 30 Aug 2016 21:10:02 GMT  
+	-	`sha256:6ff2fb0f04a0b5a0d2d5427d98a8302454f38a808ad5acb82545dc9994288450`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
 		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9665cba0d9a5ec18b1b0f6c66dace60f624cd2231b39b173259d29b73129be48`  
-		Last Modified: Tue, 30 Aug 2016 21:10:01 GMT  
-		Size: 7.9 MB (7909397 bytes)  
+	-	`sha256:4f0cbb80f7b85ed9e536d522f2a575cfe41a84fd64087b1c765c740c784a7d79`  
+		Last Modified: Wed, 31 Aug 2016 20:52:08 GMT  
+		Size: 7.9 MB (7909436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8dd0a62e29ee6135010442feba47dd1adb446af681e6e5fd8318c9576e54cc2`  
-		Last Modified: Tue, 30 Aug 2016 21:10:00 GMT  
-		Size: 131.0 B  
+	-	`sha256:a1e413c8c0e6d1e7530339e1759963b9c2204c88b04ddffb5f3e5472339a3c14`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92fbe5ad3a2dbe8e13bd97efb0bd90dc178d48cb08ba798cf4ce35e66e881e9b`  
-		Last Modified: Tue, 30 Aug 2016 21:09:59 GMT  
-		Size: 1.8 KB (1830 bytes)  
+	-	`sha256:a9fc1960218b02081ae9a8ca6096ddfcdea1405d384b8b1e24730ebb45219f61`  
+		Last Modified: Wed, 31 Aug 2016 20:52:06 GMT  
+		Size: 1.8 KB (1829 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd7eb021ab782604013d87a717f694ed7504b351e6770b9a3f49e5a085a56bb1`  
-		Last Modified: Tue, 30 Aug 2016 21:09:59 GMT  
-		Size: 1.8 KB (1831 bytes)  
+	-	`sha256:77d424dbfeb88109e371eaef1030c9e8ed7da195bc45d899671deb9f812acf3e`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 1.8 KB (1832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6d501aa6e2e5063aa796394f2257f78155b0e61ac28ddd4595d2d790161db5d`  
-		Last Modified: Tue, 30 Aug 2016 21:10:00 GMT  
-		Size: 569.0 B  
+	-	`sha256:b32909f00a87f6ee6ac76af2508effdca7430633492deeb2510d62222cb6e936`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 570.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jetty:9`
 
 ```console
-$ docker pull jetty@sha256:8d6438365ea025f4829b39524822ae2ceae656ccc1e8af1dae48dedfe731156a
+$ docker pull jetty@sha256:dec6d4c9cd58e1d8526aa202092ef7a293997aa63e68c8f471e54a6ec4a4f29d
 ```
 
 -	Platforms:
@@ -328,141 +328,141 @@ $ docker pull jetty@sha256:8d6438365ea025f4829b39524822ae2ceae656ccc1e8af1dae48d
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **132.1 MB (132061893 bytes)**  
+-	Total Size: **132.1 MB (132064528 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b50ad66d99bdfa38a8242cf8d0b8669dfdf1b9590b9c4e0ba30f2ba43ce554a`
+-	Image ID: `sha256:08a848f43aef4870d1eda1c0825a4ffd2e33663f4832ea9521dbf50d75f0fdd7`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Tue, 30 Aug 2016 00:24:21 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in / 
-# Tue, 30 Aug 2016 00:24:21 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 18:01:24 GMT
+# Tue, 30 Aug 2016 21:52:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:53:35 GMT
+# Wed, 31 Aug 2016 17:13:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:55:40 GMT
+# Wed, 31 Aug 2016 17:16:06 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_VERSION=8u102
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 30 Aug 2016 19:56:03 GMT
+# Wed, 31 Aug 2016 17:16:42 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 30 Aug 2016 19:56:04 GMT
+# Wed, 31 Aug 2016 17:16:44 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 30 Aug 2016 20:05:34 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 WORKDIR /usr/local/jetty
-# Tue, 30 Aug 2016 21:09:11 GMT
+# Wed, 31 Aug 2016 20:51:53 GMT
 ENV JETTY_VERSION=9.3.11.v20160721
-# Tue, 30 Aug 2016 21:09:11 GMT
+# Wed, 31 Aug 2016 20:51:54 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.3.11.v20160721/jetty-distribution-9.3.11.v20160721.tar.gz
-# Tue, 30 Aug 2016 21:09:12 GMT
+# Wed, 31 Aug 2016 20:51:54 GMT
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E372283E7AE839CD7C58886
-# Tue, 30 Aug 2016 21:09:14 GMT
+# Wed, 31 Aug 2016 20:51:56 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -r "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm -fr demo-base javadoc 	&& rm jetty.tar.gz*
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:57 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:57 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:58 GMT
 WORKDIR /var/lib/jetty
-# Tue, 30 Aug 2016 21:09:17 GMT
+# Wed, 31 Aug 2016 20:51:59 GMT
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" 	&& set -xe 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
-# Tue, 30 Aug 2016 21:09:17 GMT
+# Wed, 31 Aug 2016 20:51:59 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:00 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR" "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:00 GMT
 COPY file:4f7da2906a90932cfb90db54a45ee08f86b17253747db62085f7512c9efd46ad in / 
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 EXPOSE 8080/tcp
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 30 Aug 2016 21:09:19 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8a4cf2cc675828e73bd8d18bce3caa936d93fedb555040bdbec021319451802`  
-		Last Modified: Tue, 30 Aug 2016 21:10:14 GMT  
-		Size: 18.5 MB (18526925 bytes)  
+	-	`sha256:751fe39c4d348c7fc411d46929c1dac390e3d7107efc9f8f69641b50e14459f7`  
+		Last Modified: Tue, 30 Aug 2016 21:59:08 GMT  
+		Size: 18.5 MB (18527264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0074002c1ca76702061f6dfe93bdb1b5201bbf68fc2e007cd11af7d8ab54e301`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 566.7 KB (566663 bytes)  
+	-	`sha256:b165e84cccc10bc56e89091e37339ab98afbef36d1f06cd9c1c531af4dc18aa1`  
+		Last Modified: Wed, 31 Aug 2016 17:24:31 GMT  
+		Size: 566.9 KB (566898 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce7f795b9b456275a51a7fa8e1f606e89d007b2ef0e0950a51f7563296f1ba7c`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 219.0 B  
+	-	`sha256:acfcc7cbc59b7a596fd525d7565bb8df98f7cc2eef6aecde5b2428910a55d40f`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:289ba16233e6d6ee8d69109b2926d89a165dccc2cee41dff3f63f9e5dab2dd52`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 241.0 B  
+	-	`sha256:04b7a9efc4af31d0be1ab9c42ea79d4fd37ab4f37819484dee0432c6f970887b`  
+		Last Modified: Wed, 31 Aug 2016 17:29:32 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42d9f6ba2021d41864dea4f9511518360e27d0b5d7acf9ee5dda1ca1ed3f8cc2`  
-		Last Modified: Tue, 30 Aug 2016 21:10:19 GMT  
-		Size: 53.4 MB (53402046 bytes)  
+	-	`sha256:b16e55fe528577cd1aef5bb088da95b07521d9489bb895d68885ba7cd3cf296c`  
+		Last Modified: Wed, 31 Aug 2016 17:29:56 GMT  
+		Size: 53.4 MB (53402358 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a272f25f79cc92da8fb2ea837afd1fb963800adc87c103221417940142da6b13`  
-		Last Modified: Tue, 30 Aug 2016 21:10:04 GMT  
-		Size: 284.2 KB (284198 bytes)  
+	-	`sha256:8c5cbb866b5570e0aced559ab8b213a73d5fd87a9a7b9465c3e3a47c532b4c4e`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 284.3 KB (284257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e9be70dacf03ab795659f46b1ef58e904a3c968b89b2def933b2ce2e5d6379e`  
-		Last Modified: Tue, 30 Aug 2016 21:10:03 GMT  
-		Size: 2.1 KB (2085 bytes)  
+	-	`sha256:df1b868bb644dee5e6a070e4dcf3fcb49c1b88c2b3a9f9753e8e37f318097308`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
+		Size: 2.1 KB (2081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0b88539157f3687bed39f9e835f3d6ca0d21739842a7ce65d0eafffa8c4dc30`  
-		Last Modified: Tue, 30 Aug 2016 21:10:02 GMT  
+	-	`sha256:6ff2fb0f04a0b5a0d2d5427d98a8302454f38a808ad5acb82545dc9994288450`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
 		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9665cba0d9a5ec18b1b0f6c66dace60f624cd2231b39b173259d29b73129be48`  
-		Last Modified: Tue, 30 Aug 2016 21:10:01 GMT  
-		Size: 7.9 MB (7909397 bytes)  
+	-	`sha256:4f0cbb80f7b85ed9e536d522f2a575cfe41a84fd64087b1c765c740c784a7d79`  
+		Last Modified: Wed, 31 Aug 2016 20:52:08 GMT  
+		Size: 7.9 MB (7909436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8dd0a62e29ee6135010442feba47dd1adb446af681e6e5fd8318c9576e54cc2`  
-		Last Modified: Tue, 30 Aug 2016 21:10:00 GMT  
-		Size: 131.0 B  
+	-	`sha256:a1e413c8c0e6d1e7530339e1759963b9c2204c88b04ddffb5f3e5472339a3c14`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92fbe5ad3a2dbe8e13bd97efb0bd90dc178d48cb08ba798cf4ce35e66e881e9b`  
-		Last Modified: Tue, 30 Aug 2016 21:09:59 GMT  
-		Size: 1.8 KB (1830 bytes)  
+	-	`sha256:a9fc1960218b02081ae9a8ca6096ddfcdea1405d384b8b1e24730ebb45219f61`  
+		Last Modified: Wed, 31 Aug 2016 20:52:06 GMT  
+		Size: 1.8 KB (1829 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd7eb021ab782604013d87a717f694ed7504b351e6770b9a3f49e5a085a56bb1`  
-		Last Modified: Tue, 30 Aug 2016 21:09:59 GMT  
-		Size: 1.8 KB (1831 bytes)  
+	-	`sha256:77d424dbfeb88109e371eaef1030c9e8ed7da195bc45d899671deb9f812acf3e`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 1.8 KB (1832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6d501aa6e2e5063aa796394f2257f78155b0e61ac28ddd4595d2d790161db5d`  
-		Last Modified: Tue, 30 Aug 2016 21:10:00 GMT  
-		Size: 569.0 B  
+	-	`sha256:b32909f00a87f6ee6ac76af2508effdca7430633492deeb2510d62222cb6e936`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 570.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jetty:9.3.11-jre8`
 
 ```console
-$ docker pull jetty@sha256:8d6438365ea025f4829b39524822ae2ceae656ccc1e8af1dae48dedfe731156a
+$ docker pull jetty@sha256:dec6d4c9cd58e1d8526aa202092ef7a293997aa63e68c8f471e54a6ec4a4f29d
 ```
 
 -	Platforms:
@@ -472,141 +472,141 @@ $ docker pull jetty@sha256:8d6438365ea025f4829b39524822ae2ceae656ccc1e8af1dae48d
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **132.1 MB (132061893 bytes)**  
+-	Total Size: **132.1 MB (132064528 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b50ad66d99bdfa38a8242cf8d0b8669dfdf1b9590b9c4e0ba30f2ba43ce554a`
+-	Image ID: `sha256:08a848f43aef4870d1eda1c0825a4ffd2e33663f4832ea9521dbf50d75f0fdd7`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Tue, 30 Aug 2016 00:24:21 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in / 
-# Tue, 30 Aug 2016 00:24:21 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 18:01:24 GMT
+# Tue, 30 Aug 2016 21:52:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:53:35 GMT
+# Wed, 31 Aug 2016 17:13:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:55:40 GMT
+# Wed, 31 Aug 2016 17:16:06 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_VERSION=8u102
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 30 Aug 2016 19:56:03 GMT
+# Wed, 31 Aug 2016 17:16:42 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 30 Aug 2016 19:56:04 GMT
+# Wed, 31 Aug 2016 17:16:44 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 30 Aug 2016 20:05:34 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 WORKDIR /usr/local/jetty
-# Tue, 30 Aug 2016 21:09:11 GMT
+# Wed, 31 Aug 2016 20:51:53 GMT
 ENV JETTY_VERSION=9.3.11.v20160721
-# Tue, 30 Aug 2016 21:09:11 GMT
+# Wed, 31 Aug 2016 20:51:54 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.3.11.v20160721/jetty-distribution-9.3.11.v20160721.tar.gz
-# Tue, 30 Aug 2016 21:09:12 GMT
+# Wed, 31 Aug 2016 20:51:54 GMT
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E372283E7AE839CD7C58886
-# Tue, 30 Aug 2016 21:09:14 GMT
+# Wed, 31 Aug 2016 20:51:56 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -r "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm -fr demo-base javadoc 	&& rm jetty.tar.gz*
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:57 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:57 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:58 GMT
 WORKDIR /var/lib/jetty
-# Tue, 30 Aug 2016 21:09:17 GMT
+# Wed, 31 Aug 2016 20:51:59 GMT
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" 	&& set -xe 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
-# Tue, 30 Aug 2016 21:09:17 GMT
+# Wed, 31 Aug 2016 20:51:59 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:00 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR" "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:00 GMT
 COPY file:4f7da2906a90932cfb90db54a45ee08f86b17253747db62085f7512c9efd46ad in / 
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 EXPOSE 8080/tcp
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 30 Aug 2016 21:09:19 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8a4cf2cc675828e73bd8d18bce3caa936d93fedb555040bdbec021319451802`  
-		Last Modified: Tue, 30 Aug 2016 21:10:14 GMT  
-		Size: 18.5 MB (18526925 bytes)  
+	-	`sha256:751fe39c4d348c7fc411d46929c1dac390e3d7107efc9f8f69641b50e14459f7`  
+		Last Modified: Tue, 30 Aug 2016 21:59:08 GMT  
+		Size: 18.5 MB (18527264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0074002c1ca76702061f6dfe93bdb1b5201bbf68fc2e007cd11af7d8ab54e301`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 566.7 KB (566663 bytes)  
+	-	`sha256:b165e84cccc10bc56e89091e37339ab98afbef36d1f06cd9c1c531af4dc18aa1`  
+		Last Modified: Wed, 31 Aug 2016 17:24:31 GMT  
+		Size: 566.9 KB (566898 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce7f795b9b456275a51a7fa8e1f606e89d007b2ef0e0950a51f7563296f1ba7c`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 219.0 B  
+	-	`sha256:acfcc7cbc59b7a596fd525d7565bb8df98f7cc2eef6aecde5b2428910a55d40f`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:289ba16233e6d6ee8d69109b2926d89a165dccc2cee41dff3f63f9e5dab2dd52`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 241.0 B  
+	-	`sha256:04b7a9efc4af31d0be1ab9c42ea79d4fd37ab4f37819484dee0432c6f970887b`  
+		Last Modified: Wed, 31 Aug 2016 17:29:32 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42d9f6ba2021d41864dea4f9511518360e27d0b5d7acf9ee5dda1ca1ed3f8cc2`  
-		Last Modified: Tue, 30 Aug 2016 21:10:19 GMT  
-		Size: 53.4 MB (53402046 bytes)  
+	-	`sha256:b16e55fe528577cd1aef5bb088da95b07521d9489bb895d68885ba7cd3cf296c`  
+		Last Modified: Wed, 31 Aug 2016 17:29:56 GMT  
+		Size: 53.4 MB (53402358 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a272f25f79cc92da8fb2ea837afd1fb963800adc87c103221417940142da6b13`  
-		Last Modified: Tue, 30 Aug 2016 21:10:04 GMT  
-		Size: 284.2 KB (284198 bytes)  
+	-	`sha256:8c5cbb866b5570e0aced559ab8b213a73d5fd87a9a7b9465c3e3a47c532b4c4e`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 284.3 KB (284257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e9be70dacf03ab795659f46b1ef58e904a3c968b89b2def933b2ce2e5d6379e`  
-		Last Modified: Tue, 30 Aug 2016 21:10:03 GMT  
-		Size: 2.1 KB (2085 bytes)  
+	-	`sha256:df1b868bb644dee5e6a070e4dcf3fcb49c1b88c2b3a9f9753e8e37f318097308`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
+		Size: 2.1 KB (2081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0b88539157f3687bed39f9e835f3d6ca0d21739842a7ce65d0eafffa8c4dc30`  
-		Last Modified: Tue, 30 Aug 2016 21:10:02 GMT  
+	-	`sha256:6ff2fb0f04a0b5a0d2d5427d98a8302454f38a808ad5acb82545dc9994288450`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
 		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9665cba0d9a5ec18b1b0f6c66dace60f624cd2231b39b173259d29b73129be48`  
-		Last Modified: Tue, 30 Aug 2016 21:10:01 GMT  
-		Size: 7.9 MB (7909397 bytes)  
+	-	`sha256:4f0cbb80f7b85ed9e536d522f2a575cfe41a84fd64087b1c765c740c784a7d79`  
+		Last Modified: Wed, 31 Aug 2016 20:52:08 GMT  
+		Size: 7.9 MB (7909436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8dd0a62e29ee6135010442feba47dd1adb446af681e6e5fd8318c9576e54cc2`  
-		Last Modified: Tue, 30 Aug 2016 21:10:00 GMT  
-		Size: 131.0 B  
+	-	`sha256:a1e413c8c0e6d1e7530339e1759963b9c2204c88b04ddffb5f3e5472339a3c14`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92fbe5ad3a2dbe8e13bd97efb0bd90dc178d48cb08ba798cf4ce35e66e881e9b`  
-		Last Modified: Tue, 30 Aug 2016 21:09:59 GMT  
-		Size: 1.8 KB (1830 bytes)  
+	-	`sha256:a9fc1960218b02081ae9a8ca6096ddfcdea1405d384b8b1e24730ebb45219f61`  
+		Last Modified: Wed, 31 Aug 2016 20:52:06 GMT  
+		Size: 1.8 KB (1829 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd7eb021ab782604013d87a717f694ed7504b351e6770b9a3f49e5a085a56bb1`  
-		Last Modified: Tue, 30 Aug 2016 21:09:59 GMT  
-		Size: 1.8 KB (1831 bytes)  
+	-	`sha256:77d424dbfeb88109e371eaef1030c9e8ed7da195bc45d899671deb9f812acf3e`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 1.8 KB (1832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6d501aa6e2e5063aa796394f2257f78155b0e61ac28ddd4595d2d790161db5d`  
-		Last Modified: Tue, 30 Aug 2016 21:10:00 GMT  
-		Size: 569.0 B  
+	-	`sha256:b32909f00a87f6ee6ac76af2508effdca7430633492deeb2510d62222cb6e936`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 570.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jetty:9.3-jre8`
 
 ```console
-$ docker pull jetty@sha256:8d6438365ea025f4829b39524822ae2ceae656ccc1e8af1dae48dedfe731156a
+$ docker pull jetty@sha256:dec6d4c9cd58e1d8526aa202092ef7a293997aa63e68c8f471e54a6ec4a4f29d
 ```
 
 -	Platforms:
@@ -616,141 +616,141 @@ $ docker pull jetty@sha256:8d6438365ea025f4829b39524822ae2ceae656ccc1e8af1dae48d
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **132.1 MB (132061893 bytes)**  
+-	Total Size: **132.1 MB (132064528 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b50ad66d99bdfa38a8242cf8d0b8669dfdf1b9590b9c4e0ba30f2ba43ce554a`
+-	Image ID: `sha256:08a848f43aef4870d1eda1c0825a4ffd2e33663f4832ea9521dbf50d75f0fdd7`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Tue, 30 Aug 2016 00:24:21 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in / 
-# Tue, 30 Aug 2016 00:24:21 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 18:01:24 GMT
+# Tue, 30 Aug 2016 21:52:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:53:35 GMT
+# Wed, 31 Aug 2016 17:13:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:55:40 GMT
+# Wed, 31 Aug 2016 17:16:06 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_VERSION=8u102
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 30 Aug 2016 19:56:03 GMT
+# Wed, 31 Aug 2016 17:16:42 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 30 Aug 2016 19:56:04 GMT
+# Wed, 31 Aug 2016 17:16:44 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 30 Aug 2016 20:05:34 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 WORKDIR /usr/local/jetty
-# Tue, 30 Aug 2016 21:09:11 GMT
+# Wed, 31 Aug 2016 20:51:53 GMT
 ENV JETTY_VERSION=9.3.11.v20160721
-# Tue, 30 Aug 2016 21:09:11 GMT
+# Wed, 31 Aug 2016 20:51:54 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.3.11.v20160721/jetty-distribution-9.3.11.v20160721.tar.gz
-# Tue, 30 Aug 2016 21:09:12 GMT
+# Wed, 31 Aug 2016 20:51:54 GMT
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E372283E7AE839CD7C58886
-# Tue, 30 Aug 2016 21:09:14 GMT
+# Wed, 31 Aug 2016 20:51:56 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -r "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm -fr demo-base javadoc 	&& rm jetty.tar.gz*
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:57 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:57 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:58 GMT
 WORKDIR /var/lib/jetty
-# Tue, 30 Aug 2016 21:09:17 GMT
+# Wed, 31 Aug 2016 20:51:59 GMT
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" 	&& set -xe 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
-# Tue, 30 Aug 2016 21:09:17 GMT
+# Wed, 31 Aug 2016 20:51:59 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:00 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR" "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:00 GMT
 COPY file:4f7da2906a90932cfb90db54a45ee08f86b17253747db62085f7512c9efd46ad in / 
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 EXPOSE 8080/tcp
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 30 Aug 2016 21:09:19 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8a4cf2cc675828e73bd8d18bce3caa936d93fedb555040bdbec021319451802`  
-		Last Modified: Tue, 30 Aug 2016 21:10:14 GMT  
-		Size: 18.5 MB (18526925 bytes)  
+	-	`sha256:751fe39c4d348c7fc411d46929c1dac390e3d7107efc9f8f69641b50e14459f7`  
+		Last Modified: Tue, 30 Aug 2016 21:59:08 GMT  
+		Size: 18.5 MB (18527264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0074002c1ca76702061f6dfe93bdb1b5201bbf68fc2e007cd11af7d8ab54e301`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 566.7 KB (566663 bytes)  
+	-	`sha256:b165e84cccc10bc56e89091e37339ab98afbef36d1f06cd9c1c531af4dc18aa1`  
+		Last Modified: Wed, 31 Aug 2016 17:24:31 GMT  
+		Size: 566.9 KB (566898 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce7f795b9b456275a51a7fa8e1f606e89d007b2ef0e0950a51f7563296f1ba7c`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 219.0 B  
+	-	`sha256:acfcc7cbc59b7a596fd525d7565bb8df98f7cc2eef6aecde5b2428910a55d40f`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:289ba16233e6d6ee8d69109b2926d89a165dccc2cee41dff3f63f9e5dab2dd52`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 241.0 B  
+	-	`sha256:04b7a9efc4af31d0be1ab9c42ea79d4fd37ab4f37819484dee0432c6f970887b`  
+		Last Modified: Wed, 31 Aug 2016 17:29:32 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42d9f6ba2021d41864dea4f9511518360e27d0b5d7acf9ee5dda1ca1ed3f8cc2`  
-		Last Modified: Tue, 30 Aug 2016 21:10:19 GMT  
-		Size: 53.4 MB (53402046 bytes)  
+	-	`sha256:b16e55fe528577cd1aef5bb088da95b07521d9489bb895d68885ba7cd3cf296c`  
+		Last Modified: Wed, 31 Aug 2016 17:29:56 GMT  
+		Size: 53.4 MB (53402358 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a272f25f79cc92da8fb2ea837afd1fb963800adc87c103221417940142da6b13`  
-		Last Modified: Tue, 30 Aug 2016 21:10:04 GMT  
-		Size: 284.2 KB (284198 bytes)  
+	-	`sha256:8c5cbb866b5570e0aced559ab8b213a73d5fd87a9a7b9465c3e3a47c532b4c4e`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 284.3 KB (284257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e9be70dacf03ab795659f46b1ef58e904a3c968b89b2def933b2ce2e5d6379e`  
-		Last Modified: Tue, 30 Aug 2016 21:10:03 GMT  
-		Size: 2.1 KB (2085 bytes)  
+	-	`sha256:df1b868bb644dee5e6a070e4dcf3fcb49c1b88c2b3a9f9753e8e37f318097308`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
+		Size: 2.1 KB (2081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0b88539157f3687bed39f9e835f3d6ca0d21739842a7ce65d0eafffa8c4dc30`  
-		Last Modified: Tue, 30 Aug 2016 21:10:02 GMT  
+	-	`sha256:6ff2fb0f04a0b5a0d2d5427d98a8302454f38a808ad5acb82545dc9994288450`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
 		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9665cba0d9a5ec18b1b0f6c66dace60f624cd2231b39b173259d29b73129be48`  
-		Last Modified: Tue, 30 Aug 2016 21:10:01 GMT  
-		Size: 7.9 MB (7909397 bytes)  
+	-	`sha256:4f0cbb80f7b85ed9e536d522f2a575cfe41a84fd64087b1c765c740c784a7d79`  
+		Last Modified: Wed, 31 Aug 2016 20:52:08 GMT  
+		Size: 7.9 MB (7909436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8dd0a62e29ee6135010442feba47dd1adb446af681e6e5fd8318c9576e54cc2`  
-		Last Modified: Tue, 30 Aug 2016 21:10:00 GMT  
-		Size: 131.0 B  
+	-	`sha256:a1e413c8c0e6d1e7530339e1759963b9c2204c88b04ddffb5f3e5472339a3c14`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92fbe5ad3a2dbe8e13bd97efb0bd90dc178d48cb08ba798cf4ce35e66e881e9b`  
-		Last Modified: Tue, 30 Aug 2016 21:09:59 GMT  
-		Size: 1.8 KB (1830 bytes)  
+	-	`sha256:a9fc1960218b02081ae9a8ca6096ddfcdea1405d384b8b1e24730ebb45219f61`  
+		Last Modified: Wed, 31 Aug 2016 20:52:06 GMT  
+		Size: 1.8 KB (1829 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd7eb021ab782604013d87a717f694ed7504b351e6770b9a3f49e5a085a56bb1`  
-		Last Modified: Tue, 30 Aug 2016 21:09:59 GMT  
-		Size: 1.8 KB (1831 bytes)  
+	-	`sha256:77d424dbfeb88109e371eaef1030c9e8ed7da195bc45d899671deb9f812acf3e`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 1.8 KB (1832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6d501aa6e2e5063aa796394f2257f78155b0e61ac28ddd4595d2d790161db5d`  
-		Last Modified: Tue, 30 Aug 2016 21:10:00 GMT  
-		Size: 569.0 B  
+	-	`sha256:b32909f00a87f6ee6ac76af2508effdca7430633492deeb2510d62222cb6e936`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 570.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jetty:9-jre8`
 
 ```console
-$ docker pull jetty@sha256:8d6438365ea025f4829b39524822ae2ceae656ccc1e8af1dae48dedfe731156a
+$ docker pull jetty@sha256:dec6d4c9cd58e1d8526aa202092ef7a293997aa63e68c8f471e54a6ec4a4f29d
 ```
 
 -	Platforms:
@@ -760,141 +760,141 @@ $ docker pull jetty@sha256:8d6438365ea025f4829b39524822ae2ceae656ccc1e8af1dae48d
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **132.1 MB (132061893 bytes)**  
+-	Total Size: **132.1 MB (132064528 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b50ad66d99bdfa38a8242cf8d0b8669dfdf1b9590b9c4e0ba30f2ba43ce554a`
+-	Image ID: `sha256:08a848f43aef4870d1eda1c0825a4ffd2e33663f4832ea9521dbf50d75f0fdd7`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Tue, 30 Aug 2016 00:24:21 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in / 
-# Tue, 30 Aug 2016 00:24:21 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 18:01:24 GMT
+# Tue, 30 Aug 2016 21:52:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:53:35 GMT
+# Wed, 31 Aug 2016 17:13:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:55:40 GMT
+# Wed, 31 Aug 2016 17:16:06 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_VERSION=8u102
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 30 Aug 2016 19:56:03 GMT
+# Wed, 31 Aug 2016 17:16:42 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 30 Aug 2016 19:56:04 GMT
+# Wed, 31 Aug 2016 17:16:44 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 30 Aug 2016 20:05:34 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 WORKDIR /usr/local/jetty
-# Tue, 30 Aug 2016 21:09:11 GMT
+# Wed, 31 Aug 2016 20:51:53 GMT
 ENV JETTY_VERSION=9.3.11.v20160721
-# Tue, 30 Aug 2016 21:09:11 GMT
+# Wed, 31 Aug 2016 20:51:54 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.3.11.v20160721/jetty-distribution-9.3.11.v20160721.tar.gz
-# Tue, 30 Aug 2016 21:09:12 GMT
+# Wed, 31 Aug 2016 20:51:54 GMT
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E372283E7AE839CD7C58886
-# Tue, 30 Aug 2016 21:09:14 GMT
+# Wed, 31 Aug 2016 20:51:56 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -r "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm -fr demo-base javadoc 	&& rm jetty.tar.gz*
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:57 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:57 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:58 GMT
 WORKDIR /var/lib/jetty
-# Tue, 30 Aug 2016 21:09:17 GMT
+# Wed, 31 Aug 2016 20:51:59 GMT
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" 	&& set -xe 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
-# Tue, 30 Aug 2016 21:09:17 GMT
+# Wed, 31 Aug 2016 20:51:59 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:00 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR" "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:00 GMT
 COPY file:4f7da2906a90932cfb90db54a45ee08f86b17253747db62085f7512c9efd46ad in / 
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 EXPOSE 8080/tcp
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 30 Aug 2016 21:09:19 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8a4cf2cc675828e73bd8d18bce3caa936d93fedb555040bdbec021319451802`  
-		Last Modified: Tue, 30 Aug 2016 21:10:14 GMT  
-		Size: 18.5 MB (18526925 bytes)  
+	-	`sha256:751fe39c4d348c7fc411d46929c1dac390e3d7107efc9f8f69641b50e14459f7`  
+		Last Modified: Tue, 30 Aug 2016 21:59:08 GMT  
+		Size: 18.5 MB (18527264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0074002c1ca76702061f6dfe93bdb1b5201bbf68fc2e007cd11af7d8ab54e301`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 566.7 KB (566663 bytes)  
+	-	`sha256:b165e84cccc10bc56e89091e37339ab98afbef36d1f06cd9c1c531af4dc18aa1`  
+		Last Modified: Wed, 31 Aug 2016 17:24:31 GMT  
+		Size: 566.9 KB (566898 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce7f795b9b456275a51a7fa8e1f606e89d007b2ef0e0950a51f7563296f1ba7c`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 219.0 B  
+	-	`sha256:acfcc7cbc59b7a596fd525d7565bb8df98f7cc2eef6aecde5b2428910a55d40f`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:289ba16233e6d6ee8d69109b2926d89a165dccc2cee41dff3f63f9e5dab2dd52`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 241.0 B  
+	-	`sha256:04b7a9efc4af31d0be1ab9c42ea79d4fd37ab4f37819484dee0432c6f970887b`  
+		Last Modified: Wed, 31 Aug 2016 17:29:32 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42d9f6ba2021d41864dea4f9511518360e27d0b5d7acf9ee5dda1ca1ed3f8cc2`  
-		Last Modified: Tue, 30 Aug 2016 21:10:19 GMT  
-		Size: 53.4 MB (53402046 bytes)  
+	-	`sha256:b16e55fe528577cd1aef5bb088da95b07521d9489bb895d68885ba7cd3cf296c`  
+		Last Modified: Wed, 31 Aug 2016 17:29:56 GMT  
+		Size: 53.4 MB (53402358 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a272f25f79cc92da8fb2ea837afd1fb963800adc87c103221417940142da6b13`  
-		Last Modified: Tue, 30 Aug 2016 21:10:04 GMT  
-		Size: 284.2 KB (284198 bytes)  
+	-	`sha256:8c5cbb866b5570e0aced559ab8b213a73d5fd87a9a7b9465c3e3a47c532b4c4e`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 284.3 KB (284257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e9be70dacf03ab795659f46b1ef58e904a3c968b89b2def933b2ce2e5d6379e`  
-		Last Modified: Tue, 30 Aug 2016 21:10:03 GMT  
-		Size: 2.1 KB (2085 bytes)  
+	-	`sha256:df1b868bb644dee5e6a070e4dcf3fcb49c1b88c2b3a9f9753e8e37f318097308`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
+		Size: 2.1 KB (2081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0b88539157f3687bed39f9e835f3d6ca0d21739842a7ce65d0eafffa8c4dc30`  
-		Last Modified: Tue, 30 Aug 2016 21:10:02 GMT  
+	-	`sha256:6ff2fb0f04a0b5a0d2d5427d98a8302454f38a808ad5acb82545dc9994288450`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
 		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9665cba0d9a5ec18b1b0f6c66dace60f624cd2231b39b173259d29b73129be48`  
-		Last Modified: Tue, 30 Aug 2016 21:10:01 GMT  
-		Size: 7.9 MB (7909397 bytes)  
+	-	`sha256:4f0cbb80f7b85ed9e536d522f2a575cfe41a84fd64087b1c765c740c784a7d79`  
+		Last Modified: Wed, 31 Aug 2016 20:52:08 GMT  
+		Size: 7.9 MB (7909436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8dd0a62e29ee6135010442feba47dd1adb446af681e6e5fd8318c9576e54cc2`  
-		Last Modified: Tue, 30 Aug 2016 21:10:00 GMT  
-		Size: 131.0 B  
+	-	`sha256:a1e413c8c0e6d1e7530339e1759963b9c2204c88b04ddffb5f3e5472339a3c14`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92fbe5ad3a2dbe8e13bd97efb0bd90dc178d48cb08ba798cf4ce35e66e881e9b`  
-		Last Modified: Tue, 30 Aug 2016 21:09:59 GMT  
-		Size: 1.8 KB (1830 bytes)  
+	-	`sha256:a9fc1960218b02081ae9a8ca6096ddfcdea1405d384b8b1e24730ebb45219f61`  
+		Last Modified: Wed, 31 Aug 2016 20:52:06 GMT  
+		Size: 1.8 KB (1829 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd7eb021ab782604013d87a717f694ed7504b351e6770b9a3f49e5a085a56bb1`  
-		Last Modified: Tue, 30 Aug 2016 21:09:59 GMT  
-		Size: 1.8 KB (1831 bytes)  
+	-	`sha256:77d424dbfeb88109e371eaef1030c9e8ed7da195bc45d899671deb9f812acf3e`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 1.8 KB (1832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6d501aa6e2e5063aa796394f2257f78155b0e61ac28ddd4595d2d790161db5d`  
-		Last Modified: Tue, 30 Aug 2016 21:10:00 GMT  
-		Size: 569.0 B  
+	-	`sha256:b32909f00a87f6ee6ac76af2508effdca7430633492deeb2510d62222cb6e936`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 570.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jetty:latest`
 
 ```console
-$ docker pull jetty@sha256:8d6438365ea025f4829b39524822ae2ceae656ccc1e8af1dae48dedfe731156a
+$ docker pull jetty@sha256:dec6d4c9cd58e1d8526aa202092ef7a293997aa63e68c8f471e54a6ec4a4f29d
 ```
 
 -	Platforms:
@@ -904,141 +904,141 @@ $ docker pull jetty@sha256:8d6438365ea025f4829b39524822ae2ceae656ccc1e8af1dae48d
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **132.1 MB (132061893 bytes)**  
+-	Total Size: **132.1 MB (132064528 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b50ad66d99bdfa38a8242cf8d0b8669dfdf1b9590b9c4e0ba30f2ba43ce554a`
+-	Image ID: `sha256:08a848f43aef4870d1eda1c0825a4ffd2e33663f4832ea9521dbf50d75f0fdd7`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Tue, 30 Aug 2016 00:24:21 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in / 
-# Tue, 30 Aug 2016 00:24:21 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 18:01:24 GMT
+# Tue, 30 Aug 2016 21:52:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:53:35 GMT
+# Wed, 31 Aug 2016 17:13:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:55:40 GMT
+# Wed, 31 Aug 2016 17:16:06 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_VERSION=8u102
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 30 Aug 2016 19:56:03 GMT
+# Wed, 31 Aug 2016 17:16:42 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 30 Aug 2016 19:56:04 GMT
+# Wed, 31 Aug 2016 17:16:44 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 30 Aug 2016 20:05:34 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 WORKDIR /usr/local/jetty
-# Tue, 30 Aug 2016 21:09:11 GMT
+# Wed, 31 Aug 2016 20:51:53 GMT
 ENV JETTY_VERSION=9.3.11.v20160721
-# Tue, 30 Aug 2016 21:09:11 GMT
+# Wed, 31 Aug 2016 20:51:54 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.3.11.v20160721/jetty-distribution-9.3.11.v20160721.tar.gz
-# Tue, 30 Aug 2016 21:09:12 GMT
+# Wed, 31 Aug 2016 20:51:54 GMT
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E372283E7AE839CD7C58886
-# Tue, 30 Aug 2016 21:09:14 GMT
+# Wed, 31 Aug 2016 20:51:56 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -r "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm -fr demo-base javadoc 	&& rm jetty.tar.gz*
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:57 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:57 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:58 GMT
 WORKDIR /var/lib/jetty
-# Tue, 30 Aug 2016 21:09:17 GMT
+# Wed, 31 Aug 2016 20:51:59 GMT
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" 	&& set -xe 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
-# Tue, 30 Aug 2016 21:09:17 GMT
+# Wed, 31 Aug 2016 20:51:59 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:00 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR" "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:00 GMT
 COPY file:4f7da2906a90932cfb90db54a45ee08f86b17253747db62085f7512c9efd46ad in / 
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 EXPOSE 8080/tcp
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 30 Aug 2016 21:09:19 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8a4cf2cc675828e73bd8d18bce3caa936d93fedb555040bdbec021319451802`  
-		Last Modified: Tue, 30 Aug 2016 21:10:14 GMT  
-		Size: 18.5 MB (18526925 bytes)  
+	-	`sha256:751fe39c4d348c7fc411d46929c1dac390e3d7107efc9f8f69641b50e14459f7`  
+		Last Modified: Tue, 30 Aug 2016 21:59:08 GMT  
+		Size: 18.5 MB (18527264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0074002c1ca76702061f6dfe93bdb1b5201bbf68fc2e007cd11af7d8ab54e301`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 566.7 KB (566663 bytes)  
+	-	`sha256:b165e84cccc10bc56e89091e37339ab98afbef36d1f06cd9c1c531af4dc18aa1`  
+		Last Modified: Wed, 31 Aug 2016 17:24:31 GMT  
+		Size: 566.9 KB (566898 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce7f795b9b456275a51a7fa8e1f606e89d007b2ef0e0950a51f7563296f1ba7c`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 219.0 B  
+	-	`sha256:acfcc7cbc59b7a596fd525d7565bb8df98f7cc2eef6aecde5b2428910a55d40f`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:289ba16233e6d6ee8d69109b2926d89a165dccc2cee41dff3f63f9e5dab2dd52`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 241.0 B  
+	-	`sha256:04b7a9efc4af31d0be1ab9c42ea79d4fd37ab4f37819484dee0432c6f970887b`  
+		Last Modified: Wed, 31 Aug 2016 17:29:32 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42d9f6ba2021d41864dea4f9511518360e27d0b5d7acf9ee5dda1ca1ed3f8cc2`  
-		Last Modified: Tue, 30 Aug 2016 21:10:19 GMT  
-		Size: 53.4 MB (53402046 bytes)  
+	-	`sha256:b16e55fe528577cd1aef5bb088da95b07521d9489bb895d68885ba7cd3cf296c`  
+		Last Modified: Wed, 31 Aug 2016 17:29:56 GMT  
+		Size: 53.4 MB (53402358 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a272f25f79cc92da8fb2ea837afd1fb963800adc87c103221417940142da6b13`  
-		Last Modified: Tue, 30 Aug 2016 21:10:04 GMT  
-		Size: 284.2 KB (284198 bytes)  
+	-	`sha256:8c5cbb866b5570e0aced559ab8b213a73d5fd87a9a7b9465c3e3a47c532b4c4e`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 284.3 KB (284257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e9be70dacf03ab795659f46b1ef58e904a3c968b89b2def933b2ce2e5d6379e`  
-		Last Modified: Tue, 30 Aug 2016 21:10:03 GMT  
-		Size: 2.1 KB (2085 bytes)  
+	-	`sha256:df1b868bb644dee5e6a070e4dcf3fcb49c1b88c2b3a9f9753e8e37f318097308`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
+		Size: 2.1 KB (2081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0b88539157f3687bed39f9e835f3d6ca0d21739842a7ce65d0eafffa8c4dc30`  
-		Last Modified: Tue, 30 Aug 2016 21:10:02 GMT  
+	-	`sha256:6ff2fb0f04a0b5a0d2d5427d98a8302454f38a808ad5acb82545dc9994288450`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
 		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9665cba0d9a5ec18b1b0f6c66dace60f624cd2231b39b173259d29b73129be48`  
-		Last Modified: Tue, 30 Aug 2016 21:10:01 GMT  
-		Size: 7.9 MB (7909397 bytes)  
+	-	`sha256:4f0cbb80f7b85ed9e536d522f2a575cfe41a84fd64087b1c765c740c784a7d79`  
+		Last Modified: Wed, 31 Aug 2016 20:52:08 GMT  
+		Size: 7.9 MB (7909436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8dd0a62e29ee6135010442feba47dd1adb446af681e6e5fd8318c9576e54cc2`  
-		Last Modified: Tue, 30 Aug 2016 21:10:00 GMT  
-		Size: 131.0 B  
+	-	`sha256:a1e413c8c0e6d1e7530339e1759963b9c2204c88b04ddffb5f3e5472339a3c14`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92fbe5ad3a2dbe8e13bd97efb0bd90dc178d48cb08ba798cf4ce35e66e881e9b`  
-		Last Modified: Tue, 30 Aug 2016 21:09:59 GMT  
-		Size: 1.8 KB (1830 bytes)  
+	-	`sha256:a9fc1960218b02081ae9a8ca6096ddfcdea1405d384b8b1e24730ebb45219f61`  
+		Last Modified: Wed, 31 Aug 2016 20:52:06 GMT  
+		Size: 1.8 KB (1829 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd7eb021ab782604013d87a717f694ed7504b351e6770b9a3f49e5a085a56bb1`  
-		Last Modified: Tue, 30 Aug 2016 21:09:59 GMT  
-		Size: 1.8 KB (1831 bytes)  
+	-	`sha256:77d424dbfeb88109e371eaef1030c9e8ed7da195bc45d899671deb9f812acf3e`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 1.8 KB (1832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6d501aa6e2e5063aa796394f2257f78155b0e61ac28ddd4595d2d790161db5d`  
-		Last Modified: Tue, 30 Aug 2016 21:10:00 GMT  
-		Size: 569.0 B  
+	-	`sha256:b32909f00a87f6ee6ac76af2508effdca7430633492deeb2510d62222cb6e936`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 570.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jetty:jre8`
 
 ```console
-$ docker pull jetty@sha256:8d6438365ea025f4829b39524822ae2ceae656ccc1e8af1dae48dedfe731156a
+$ docker pull jetty@sha256:dec6d4c9cd58e1d8526aa202092ef7a293997aa63e68c8f471e54a6ec4a4f29d
 ```
 
 -	Platforms:
@@ -1048,135 +1048,135 @@ $ docker pull jetty@sha256:8d6438365ea025f4829b39524822ae2ceae656ccc1e8af1dae48d
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **132.1 MB (132061893 bytes)**  
+-	Total Size: **132.1 MB (132064528 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b50ad66d99bdfa38a8242cf8d0b8669dfdf1b9590b9c4e0ba30f2ba43ce554a`
+-	Image ID: `sha256:08a848f43aef4870d1eda1c0825a4ffd2e33663f4832ea9521dbf50d75f0fdd7`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Tue, 30 Aug 2016 00:24:21 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in / 
-# Tue, 30 Aug 2016 00:24:21 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 18:01:24 GMT
+# Tue, 30 Aug 2016 21:52:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:53:35 GMT
+# Wed, 31 Aug 2016 17:13:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:55:40 GMT
+# Wed, 31 Aug 2016 17:16:06 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_VERSION=8u102
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 30 Aug 2016 19:56:03 GMT
+# Wed, 31 Aug 2016 17:16:42 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 30 Aug 2016 19:56:04 GMT
+# Wed, 31 Aug 2016 17:16:44 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 30 Aug 2016 20:05:34 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 WORKDIR /usr/local/jetty
-# Tue, 30 Aug 2016 21:09:11 GMT
+# Wed, 31 Aug 2016 20:51:53 GMT
 ENV JETTY_VERSION=9.3.11.v20160721
-# Tue, 30 Aug 2016 21:09:11 GMT
+# Wed, 31 Aug 2016 20:51:54 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.3.11.v20160721/jetty-distribution-9.3.11.v20160721.tar.gz
-# Tue, 30 Aug 2016 21:09:12 GMT
+# Wed, 31 Aug 2016 20:51:54 GMT
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E372283E7AE839CD7C58886
-# Tue, 30 Aug 2016 21:09:14 GMT
+# Wed, 31 Aug 2016 20:51:56 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -r "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm -fr demo-base javadoc 	&& rm jetty.tar.gz*
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:57 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:57 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:15 GMT
+# Wed, 31 Aug 2016 20:51:58 GMT
 WORKDIR /var/lib/jetty
-# Tue, 30 Aug 2016 21:09:17 GMT
+# Wed, 31 Aug 2016 20:51:59 GMT
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" 	&& set -xe 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
-# Tue, 30 Aug 2016 21:09:17 GMT
+# Wed, 31 Aug 2016 20:51:59 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:00 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR" "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:00 GMT
 COPY file:4f7da2906a90932cfb90db54a45ee08f86b17253747db62085f7512c9efd46ad in / 
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 EXPOSE 8080/tcp
-# Tue, 30 Aug 2016 21:09:18 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 30 Aug 2016 21:09:19 GMT
+# Wed, 31 Aug 2016 20:52:01 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8a4cf2cc675828e73bd8d18bce3caa936d93fedb555040bdbec021319451802`  
-		Last Modified: Tue, 30 Aug 2016 21:10:14 GMT  
-		Size: 18.5 MB (18526925 bytes)  
+	-	`sha256:751fe39c4d348c7fc411d46929c1dac390e3d7107efc9f8f69641b50e14459f7`  
+		Last Modified: Tue, 30 Aug 2016 21:59:08 GMT  
+		Size: 18.5 MB (18527264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0074002c1ca76702061f6dfe93bdb1b5201bbf68fc2e007cd11af7d8ab54e301`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 566.7 KB (566663 bytes)  
+	-	`sha256:b165e84cccc10bc56e89091e37339ab98afbef36d1f06cd9c1c531af4dc18aa1`  
+		Last Modified: Wed, 31 Aug 2016 17:24:31 GMT  
+		Size: 566.9 KB (566898 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce7f795b9b456275a51a7fa8e1f606e89d007b2ef0e0950a51f7563296f1ba7c`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 219.0 B  
+	-	`sha256:acfcc7cbc59b7a596fd525d7565bb8df98f7cc2eef6aecde5b2428910a55d40f`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:289ba16233e6d6ee8d69109b2926d89a165dccc2cee41dff3f63f9e5dab2dd52`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 241.0 B  
+	-	`sha256:04b7a9efc4af31d0be1ab9c42ea79d4fd37ab4f37819484dee0432c6f970887b`  
+		Last Modified: Wed, 31 Aug 2016 17:29:32 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42d9f6ba2021d41864dea4f9511518360e27d0b5d7acf9ee5dda1ca1ed3f8cc2`  
-		Last Modified: Tue, 30 Aug 2016 21:10:19 GMT  
-		Size: 53.4 MB (53402046 bytes)  
+	-	`sha256:b16e55fe528577cd1aef5bb088da95b07521d9489bb895d68885ba7cd3cf296c`  
+		Last Modified: Wed, 31 Aug 2016 17:29:56 GMT  
+		Size: 53.4 MB (53402358 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a272f25f79cc92da8fb2ea837afd1fb963800adc87c103221417940142da6b13`  
-		Last Modified: Tue, 30 Aug 2016 21:10:04 GMT  
-		Size: 284.2 KB (284198 bytes)  
+	-	`sha256:8c5cbb866b5570e0aced559ab8b213a73d5fd87a9a7b9465c3e3a47c532b4c4e`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 284.3 KB (284257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e9be70dacf03ab795659f46b1ef58e904a3c968b89b2def933b2ce2e5d6379e`  
-		Last Modified: Tue, 30 Aug 2016 21:10:03 GMT  
-		Size: 2.1 KB (2085 bytes)  
+	-	`sha256:df1b868bb644dee5e6a070e4dcf3fcb49c1b88c2b3a9f9753e8e37f318097308`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
+		Size: 2.1 KB (2081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0b88539157f3687bed39f9e835f3d6ca0d21739842a7ce65d0eafffa8c4dc30`  
-		Last Modified: Tue, 30 Aug 2016 21:10:02 GMT  
+	-	`sha256:6ff2fb0f04a0b5a0d2d5427d98a8302454f38a808ad5acb82545dc9994288450`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
 		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9665cba0d9a5ec18b1b0f6c66dace60f624cd2231b39b173259d29b73129be48`  
-		Last Modified: Tue, 30 Aug 2016 21:10:01 GMT  
-		Size: 7.9 MB (7909397 bytes)  
+	-	`sha256:4f0cbb80f7b85ed9e536d522f2a575cfe41a84fd64087b1c765c740c784a7d79`  
+		Last Modified: Wed, 31 Aug 2016 20:52:08 GMT  
+		Size: 7.9 MB (7909436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8dd0a62e29ee6135010442feba47dd1adb446af681e6e5fd8318c9576e54cc2`  
-		Last Modified: Tue, 30 Aug 2016 21:10:00 GMT  
-		Size: 131.0 B  
+	-	`sha256:a1e413c8c0e6d1e7530339e1759963b9c2204c88b04ddffb5f3e5472339a3c14`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92fbe5ad3a2dbe8e13bd97efb0bd90dc178d48cb08ba798cf4ce35e66e881e9b`  
-		Last Modified: Tue, 30 Aug 2016 21:09:59 GMT  
-		Size: 1.8 KB (1830 bytes)  
+	-	`sha256:a9fc1960218b02081ae9a8ca6096ddfcdea1405d384b8b1e24730ebb45219f61`  
+		Last Modified: Wed, 31 Aug 2016 20:52:06 GMT  
+		Size: 1.8 KB (1829 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd7eb021ab782604013d87a717f694ed7504b351e6770b9a3f49e5a085a56bb1`  
-		Last Modified: Tue, 30 Aug 2016 21:09:59 GMT  
-		Size: 1.8 KB (1831 bytes)  
+	-	`sha256:77d424dbfeb88109e371eaef1030c9e8ed7da195bc45d899671deb9f812acf3e`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 1.8 KB (1832 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6d501aa6e2e5063aa796394f2257f78155b0e61ac28ddd4595d2d790161db5d`  
-		Last Modified: Tue, 30 Aug 2016 21:10:00 GMT  
-		Size: 569.0 B  
+	-	`sha256:b32909f00a87f6ee6ac76af2508effdca7430633492deeb2510d62222cb6e936`  
+		Last Modified: Wed, 31 Aug 2016 20:52:07 GMT  
+		Size: 570.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jetty:9.3.11-alpine`
@@ -2078,7 +2078,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ## `jetty:9.2.18`
 
 ```console
-$ docker pull jetty@sha256:da7880d2597645cf86cec733932c0f795d1765ac49fe9b166bf4bb654664d205
+$ docker pull jetty@sha256:f012cca471cd41a8838a4dc0b866aef7389bd7c0b6d7203eef6e6e38bc998c6f
 ```
 
 -	Platforms:
@@ -2088,141 +2088,141 @@ $ docker pull jetty@sha256:da7880d2597645cf86cec733932c0f795d1765ac49fe9b166bf4b
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.2 MB (134156212 bytes)**  
+-	Total Size: **134.2 MB (134158814 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f4bd44abf45e23b2f2cbbf9258c334b1d9479e64a238be108c1ac8e3325a00ce`
+-	Image ID: `sha256:9391d22dfe6b41904b3dcda286fb7c52b13be7a2fb39f72fa370e3120c450c23`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Tue, 30 Aug 2016 00:24:21 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in / 
-# Tue, 30 Aug 2016 00:24:21 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 18:01:24 GMT
+# Tue, 30 Aug 2016 21:52:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:53:35 GMT
+# Wed, 31 Aug 2016 17:13:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:55:40 GMT
+# Wed, 31 Aug 2016 17:16:06 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_VERSION=8u102
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 30 Aug 2016 19:56:03 GMT
+# Wed, 31 Aug 2016 17:16:42 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 30 Aug 2016 19:56:04 GMT
+# Wed, 31 Aug 2016 17:16:44 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 30 Aug 2016 20:05:34 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 WORKDIR /usr/local/jetty
-# Tue, 30 Aug 2016 21:09:37 GMT
+# Wed, 31 Aug 2016 20:51:05 GMT
 ENV JETTY_VERSION=9.2.18.v20160721
-# Tue, 30 Aug 2016 21:09:38 GMT
+# Wed, 31 Aug 2016 20:51:05 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.18.v20160721/jetty-distribution-9.2.18.v20160721.tar.gz
-# Tue, 30 Aug 2016 21:09:38 GMT
+# Wed, 31 Aug 2016 20:51:05 GMT
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E372283E7AE839CD7C58886
-# Tue, 30 Aug 2016 21:09:40 GMT
+# Wed, 31 Aug 2016 20:51:08 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -r "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm -fr demo-base javadoc 	&& rm jetty.tar.gz*
-# Tue, 30 Aug 2016 21:09:40 GMT
+# Wed, 31 Aug 2016 20:51:08 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 30 Aug 2016 21:09:41 GMT
+# Wed, 31 Aug 2016 20:51:09 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:41 GMT
+# Wed, 31 Aug 2016 20:51:09 GMT
 WORKDIR /var/lib/jetty
-# Tue, 30 Aug 2016 21:09:42 GMT
+# Wed, 31 Aug 2016 20:51:14 GMT
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" 	&& set -xe 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
-# Tue, 30 Aug 2016 21:09:43 GMT
+# Wed, 31 Aug 2016 20:51:14 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 30 Aug 2016 21:09:43 GMT
+# Wed, 31 Aug 2016 20:51:15 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR" "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:44 GMT
+# Wed, 31 Aug 2016 20:51:15 GMT
 COPY file:4f7da2906a90932cfb90db54a45ee08f86b17253747db62085f7512c9efd46ad in / 
-# Tue, 30 Aug 2016 21:09:44 GMT
+# Wed, 31 Aug 2016 20:51:16 GMT
 EXPOSE 8080/tcp
-# Tue, 30 Aug 2016 21:09:44 GMT
+# Wed, 31 Aug 2016 20:51:16 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 30 Aug 2016 21:09:44 GMT
+# Wed, 31 Aug 2016 20:51:16 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8a4cf2cc675828e73bd8d18bce3caa936d93fedb555040bdbec021319451802`  
-		Last Modified: Tue, 30 Aug 2016 21:10:14 GMT  
-		Size: 18.5 MB (18526925 bytes)  
+	-	`sha256:751fe39c4d348c7fc411d46929c1dac390e3d7107efc9f8f69641b50e14459f7`  
+		Last Modified: Tue, 30 Aug 2016 21:59:08 GMT  
+		Size: 18.5 MB (18527264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0074002c1ca76702061f6dfe93bdb1b5201bbf68fc2e007cd11af7d8ab54e301`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 566.7 KB (566663 bytes)  
+	-	`sha256:b165e84cccc10bc56e89091e37339ab98afbef36d1f06cd9c1c531af4dc18aa1`  
+		Last Modified: Wed, 31 Aug 2016 17:24:31 GMT  
+		Size: 566.9 KB (566898 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce7f795b9b456275a51a7fa8e1f606e89d007b2ef0e0950a51f7563296f1ba7c`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 219.0 B  
+	-	`sha256:acfcc7cbc59b7a596fd525d7565bb8df98f7cc2eef6aecde5b2428910a55d40f`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:289ba16233e6d6ee8d69109b2926d89a165dccc2cee41dff3f63f9e5dab2dd52`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 241.0 B  
+	-	`sha256:04b7a9efc4af31d0be1ab9c42ea79d4fd37ab4f37819484dee0432c6f970887b`  
+		Last Modified: Wed, 31 Aug 2016 17:29:32 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42d9f6ba2021d41864dea4f9511518360e27d0b5d7acf9ee5dda1ca1ed3f8cc2`  
-		Last Modified: Tue, 30 Aug 2016 21:10:19 GMT  
-		Size: 53.4 MB (53402046 bytes)  
+	-	`sha256:b16e55fe528577cd1aef5bb088da95b07521d9489bb895d68885ba7cd3cf296c`  
+		Last Modified: Wed, 31 Aug 2016 17:29:56 GMT  
+		Size: 53.4 MB (53402358 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a272f25f79cc92da8fb2ea837afd1fb963800adc87c103221417940142da6b13`  
-		Last Modified: Tue, 30 Aug 2016 21:10:04 GMT  
-		Size: 284.2 KB (284198 bytes)  
+	-	`sha256:8c5cbb866b5570e0aced559ab8b213a73d5fd87a9a7b9465c3e3a47c532b4c4e`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 284.3 KB (284257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e9be70dacf03ab795659f46b1ef58e904a3c968b89b2def933b2ce2e5d6379e`  
-		Last Modified: Tue, 30 Aug 2016 21:10:03 GMT  
-		Size: 2.1 KB (2085 bytes)  
+	-	`sha256:df1b868bb644dee5e6a070e4dcf3fcb49c1b88c2b3a9f9753e8e37f318097308`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
+		Size: 2.1 KB (2081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0b88539157f3687bed39f9e835f3d6ca0d21739842a7ce65d0eafffa8c4dc30`  
-		Last Modified: Tue, 30 Aug 2016 21:10:02 GMT  
+	-	`sha256:6ff2fb0f04a0b5a0d2d5427d98a8302454f38a808ad5acb82545dc9994288450`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
 		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99c3b67399fceccb995265ca116dcf962ddc495b693a62142497a8062b9c1b3e`  
-		Last Modified: Tue, 30 Aug 2016 21:12:34 GMT  
-		Size: 10.0 MB (10004234 bytes)  
+	-	`sha256:12c04d53bd348ede1a43030cbec2ae5a42e4fd4754e0bbbe3df4686546117f14`  
+		Last Modified: Wed, 31 Aug 2016 20:51:23 GMT  
+		Size: 10.0 MB (10004233 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62d610ba016ce92f643bc1c443bf6280c299922c3b60d2603819f1bcd813dbca`  
-		Last Modified: Tue, 30 Aug 2016 21:12:32 GMT  
+	-	`sha256:e3401fd2089cc21b1fc8e800e9cbd8b027d0cf74e9bfd328948850786580f496`  
+		Last Modified: Wed, 31 Aug 2016 20:51:21 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41932f80224ffde4e88d3e7e82bec8b301741804fdd6fde696848a9329d6961e`  
-		Last Modified: Tue, 30 Aug 2016 21:12:32 GMT  
-		Size: 1.6 KB (1569 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba9d90b17aafc50fca96daf2350850bda014d04b215c842b147df0f49903968e`  
-		Last Modified: Tue, 30 Aug 2016 21:12:34 GMT  
+	-	`sha256:c462393c9e6d22249153a576e0d291705b1c1ca1486c91eaf39ff8e3d691ee54`  
+		Last Modified: Wed, 31 Aug 2016 20:51:22 GMT  
 		Size: 1.6 KB (1575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c9e06c34ae3a3c2723ee3d4116bb1d161b35cc6113446e755e7ed82701ac163`  
-		Last Modified: Tue, 30 Aug 2016 21:12:32 GMT  
-		Size: 570.0 B  
+	-	`sha256:2a26fb6df1012571282eea3f69ce6d567e37f5593d5bbfdf0fa249e45f727206`  
+		Last Modified: Wed, 31 Aug 2016 20:51:21 GMT  
+		Size: 1.6 KB (1572 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a6ea6110298109810f8e7b0c03a046f52e4bd8793e77885f962fdce3de030de1`  
+		Last Modified: Wed, 31 Aug 2016 20:51:21 GMT  
+		Size: 572.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jetty:9.2`
 
 ```console
-$ docker pull jetty@sha256:da7880d2597645cf86cec733932c0f795d1765ac49fe9b166bf4bb654664d205
+$ docker pull jetty@sha256:f012cca471cd41a8838a4dc0b866aef7389bd7c0b6d7203eef6e6e38bc998c6f
 ```
 
 -	Platforms:
@@ -2232,141 +2232,141 @@ $ docker pull jetty@sha256:da7880d2597645cf86cec733932c0f795d1765ac49fe9b166bf4b
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.2 MB (134156212 bytes)**  
+-	Total Size: **134.2 MB (134158814 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f4bd44abf45e23b2f2cbbf9258c334b1d9479e64a238be108c1ac8e3325a00ce`
+-	Image ID: `sha256:9391d22dfe6b41904b3dcda286fb7c52b13be7a2fb39f72fa370e3120c450c23`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Tue, 30 Aug 2016 00:24:21 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in / 
-# Tue, 30 Aug 2016 00:24:21 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 18:01:24 GMT
+# Tue, 30 Aug 2016 21:52:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:53:35 GMT
+# Wed, 31 Aug 2016 17:13:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:55:40 GMT
+# Wed, 31 Aug 2016 17:16:06 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_VERSION=8u102
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 30 Aug 2016 19:56:03 GMT
+# Wed, 31 Aug 2016 17:16:42 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 30 Aug 2016 19:56:04 GMT
+# Wed, 31 Aug 2016 17:16:44 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 30 Aug 2016 20:05:34 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 WORKDIR /usr/local/jetty
-# Tue, 30 Aug 2016 21:09:37 GMT
+# Wed, 31 Aug 2016 20:51:05 GMT
 ENV JETTY_VERSION=9.2.18.v20160721
-# Tue, 30 Aug 2016 21:09:38 GMT
+# Wed, 31 Aug 2016 20:51:05 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.18.v20160721/jetty-distribution-9.2.18.v20160721.tar.gz
-# Tue, 30 Aug 2016 21:09:38 GMT
+# Wed, 31 Aug 2016 20:51:05 GMT
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E372283E7AE839CD7C58886
-# Tue, 30 Aug 2016 21:09:40 GMT
+# Wed, 31 Aug 2016 20:51:08 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -r "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm -fr demo-base javadoc 	&& rm jetty.tar.gz*
-# Tue, 30 Aug 2016 21:09:40 GMT
+# Wed, 31 Aug 2016 20:51:08 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 30 Aug 2016 21:09:41 GMT
+# Wed, 31 Aug 2016 20:51:09 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:41 GMT
+# Wed, 31 Aug 2016 20:51:09 GMT
 WORKDIR /var/lib/jetty
-# Tue, 30 Aug 2016 21:09:42 GMT
+# Wed, 31 Aug 2016 20:51:14 GMT
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" 	&& set -xe 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
-# Tue, 30 Aug 2016 21:09:43 GMT
+# Wed, 31 Aug 2016 20:51:14 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 30 Aug 2016 21:09:43 GMT
+# Wed, 31 Aug 2016 20:51:15 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR" "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:44 GMT
+# Wed, 31 Aug 2016 20:51:15 GMT
 COPY file:4f7da2906a90932cfb90db54a45ee08f86b17253747db62085f7512c9efd46ad in / 
-# Tue, 30 Aug 2016 21:09:44 GMT
+# Wed, 31 Aug 2016 20:51:16 GMT
 EXPOSE 8080/tcp
-# Tue, 30 Aug 2016 21:09:44 GMT
+# Wed, 31 Aug 2016 20:51:16 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 30 Aug 2016 21:09:44 GMT
+# Wed, 31 Aug 2016 20:51:16 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8a4cf2cc675828e73bd8d18bce3caa936d93fedb555040bdbec021319451802`  
-		Last Modified: Tue, 30 Aug 2016 21:10:14 GMT  
-		Size: 18.5 MB (18526925 bytes)  
+	-	`sha256:751fe39c4d348c7fc411d46929c1dac390e3d7107efc9f8f69641b50e14459f7`  
+		Last Modified: Tue, 30 Aug 2016 21:59:08 GMT  
+		Size: 18.5 MB (18527264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0074002c1ca76702061f6dfe93bdb1b5201bbf68fc2e007cd11af7d8ab54e301`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 566.7 KB (566663 bytes)  
+	-	`sha256:b165e84cccc10bc56e89091e37339ab98afbef36d1f06cd9c1c531af4dc18aa1`  
+		Last Modified: Wed, 31 Aug 2016 17:24:31 GMT  
+		Size: 566.9 KB (566898 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce7f795b9b456275a51a7fa8e1f606e89d007b2ef0e0950a51f7563296f1ba7c`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 219.0 B  
+	-	`sha256:acfcc7cbc59b7a596fd525d7565bb8df98f7cc2eef6aecde5b2428910a55d40f`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:289ba16233e6d6ee8d69109b2926d89a165dccc2cee41dff3f63f9e5dab2dd52`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 241.0 B  
+	-	`sha256:04b7a9efc4af31d0be1ab9c42ea79d4fd37ab4f37819484dee0432c6f970887b`  
+		Last Modified: Wed, 31 Aug 2016 17:29:32 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42d9f6ba2021d41864dea4f9511518360e27d0b5d7acf9ee5dda1ca1ed3f8cc2`  
-		Last Modified: Tue, 30 Aug 2016 21:10:19 GMT  
-		Size: 53.4 MB (53402046 bytes)  
+	-	`sha256:b16e55fe528577cd1aef5bb088da95b07521d9489bb895d68885ba7cd3cf296c`  
+		Last Modified: Wed, 31 Aug 2016 17:29:56 GMT  
+		Size: 53.4 MB (53402358 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a272f25f79cc92da8fb2ea837afd1fb963800adc87c103221417940142da6b13`  
-		Last Modified: Tue, 30 Aug 2016 21:10:04 GMT  
-		Size: 284.2 KB (284198 bytes)  
+	-	`sha256:8c5cbb866b5570e0aced559ab8b213a73d5fd87a9a7b9465c3e3a47c532b4c4e`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 284.3 KB (284257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e9be70dacf03ab795659f46b1ef58e904a3c968b89b2def933b2ce2e5d6379e`  
-		Last Modified: Tue, 30 Aug 2016 21:10:03 GMT  
-		Size: 2.1 KB (2085 bytes)  
+	-	`sha256:df1b868bb644dee5e6a070e4dcf3fcb49c1b88c2b3a9f9753e8e37f318097308`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
+		Size: 2.1 KB (2081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0b88539157f3687bed39f9e835f3d6ca0d21739842a7ce65d0eafffa8c4dc30`  
-		Last Modified: Tue, 30 Aug 2016 21:10:02 GMT  
+	-	`sha256:6ff2fb0f04a0b5a0d2d5427d98a8302454f38a808ad5acb82545dc9994288450`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
 		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99c3b67399fceccb995265ca116dcf962ddc495b693a62142497a8062b9c1b3e`  
-		Last Modified: Tue, 30 Aug 2016 21:12:34 GMT  
-		Size: 10.0 MB (10004234 bytes)  
+	-	`sha256:12c04d53bd348ede1a43030cbec2ae5a42e4fd4754e0bbbe3df4686546117f14`  
+		Last Modified: Wed, 31 Aug 2016 20:51:23 GMT  
+		Size: 10.0 MB (10004233 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62d610ba016ce92f643bc1c443bf6280c299922c3b60d2603819f1bcd813dbca`  
-		Last Modified: Tue, 30 Aug 2016 21:12:32 GMT  
+	-	`sha256:e3401fd2089cc21b1fc8e800e9cbd8b027d0cf74e9bfd328948850786580f496`  
+		Last Modified: Wed, 31 Aug 2016 20:51:21 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41932f80224ffde4e88d3e7e82bec8b301741804fdd6fde696848a9329d6961e`  
-		Last Modified: Tue, 30 Aug 2016 21:12:32 GMT  
-		Size: 1.6 KB (1569 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba9d90b17aafc50fca96daf2350850bda014d04b215c842b147df0f49903968e`  
-		Last Modified: Tue, 30 Aug 2016 21:12:34 GMT  
+	-	`sha256:c462393c9e6d22249153a576e0d291705b1c1ca1486c91eaf39ff8e3d691ee54`  
+		Last Modified: Wed, 31 Aug 2016 20:51:22 GMT  
 		Size: 1.6 KB (1575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c9e06c34ae3a3c2723ee3d4116bb1d161b35cc6113446e755e7ed82701ac163`  
-		Last Modified: Tue, 30 Aug 2016 21:12:32 GMT  
-		Size: 570.0 B  
+	-	`sha256:2a26fb6df1012571282eea3f69ce6d567e37f5593d5bbfdf0fa249e45f727206`  
+		Last Modified: Wed, 31 Aug 2016 20:51:21 GMT  
+		Size: 1.6 KB (1572 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a6ea6110298109810f8e7b0c03a046f52e4bd8793e77885f962fdce3de030de1`  
+		Last Modified: Wed, 31 Aug 2016 20:51:21 GMT  
+		Size: 572.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jetty:9.2.18-jre8`
 
 ```console
-$ docker pull jetty@sha256:da7880d2597645cf86cec733932c0f795d1765ac49fe9b166bf4bb654664d205
+$ docker pull jetty@sha256:f012cca471cd41a8838a4dc0b866aef7389bd7c0b6d7203eef6e6e38bc998c6f
 ```
 
 -	Platforms:
@@ -2376,141 +2376,141 @@ $ docker pull jetty@sha256:da7880d2597645cf86cec733932c0f795d1765ac49fe9b166bf4b
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.2 MB (134156212 bytes)**  
+-	Total Size: **134.2 MB (134158814 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f4bd44abf45e23b2f2cbbf9258c334b1d9479e64a238be108c1ac8e3325a00ce`
+-	Image ID: `sha256:9391d22dfe6b41904b3dcda286fb7c52b13be7a2fb39f72fa370e3120c450c23`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Tue, 30 Aug 2016 00:24:21 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in / 
-# Tue, 30 Aug 2016 00:24:21 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 18:01:24 GMT
+# Tue, 30 Aug 2016 21:52:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:53:35 GMT
+# Wed, 31 Aug 2016 17:13:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:55:40 GMT
+# Wed, 31 Aug 2016 17:16:06 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_VERSION=8u102
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 30 Aug 2016 19:56:03 GMT
+# Wed, 31 Aug 2016 17:16:42 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 30 Aug 2016 19:56:04 GMT
+# Wed, 31 Aug 2016 17:16:44 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 30 Aug 2016 20:05:34 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 WORKDIR /usr/local/jetty
-# Tue, 30 Aug 2016 21:09:37 GMT
+# Wed, 31 Aug 2016 20:51:05 GMT
 ENV JETTY_VERSION=9.2.18.v20160721
-# Tue, 30 Aug 2016 21:09:38 GMT
+# Wed, 31 Aug 2016 20:51:05 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.18.v20160721/jetty-distribution-9.2.18.v20160721.tar.gz
-# Tue, 30 Aug 2016 21:09:38 GMT
+# Wed, 31 Aug 2016 20:51:05 GMT
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E372283E7AE839CD7C58886
-# Tue, 30 Aug 2016 21:09:40 GMT
+# Wed, 31 Aug 2016 20:51:08 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -r "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm -fr demo-base javadoc 	&& rm jetty.tar.gz*
-# Tue, 30 Aug 2016 21:09:40 GMT
+# Wed, 31 Aug 2016 20:51:08 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 30 Aug 2016 21:09:41 GMT
+# Wed, 31 Aug 2016 20:51:09 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:41 GMT
+# Wed, 31 Aug 2016 20:51:09 GMT
 WORKDIR /var/lib/jetty
-# Tue, 30 Aug 2016 21:09:42 GMT
+# Wed, 31 Aug 2016 20:51:14 GMT
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" 	&& set -xe 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
-# Tue, 30 Aug 2016 21:09:43 GMT
+# Wed, 31 Aug 2016 20:51:14 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 30 Aug 2016 21:09:43 GMT
+# Wed, 31 Aug 2016 20:51:15 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR" "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:44 GMT
+# Wed, 31 Aug 2016 20:51:15 GMT
 COPY file:4f7da2906a90932cfb90db54a45ee08f86b17253747db62085f7512c9efd46ad in / 
-# Tue, 30 Aug 2016 21:09:44 GMT
+# Wed, 31 Aug 2016 20:51:16 GMT
 EXPOSE 8080/tcp
-# Tue, 30 Aug 2016 21:09:44 GMT
+# Wed, 31 Aug 2016 20:51:16 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 30 Aug 2016 21:09:44 GMT
+# Wed, 31 Aug 2016 20:51:16 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8a4cf2cc675828e73bd8d18bce3caa936d93fedb555040bdbec021319451802`  
-		Last Modified: Tue, 30 Aug 2016 21:10:14 GMT  
-		Size: 18.5 MB (18526925 bytes)  
+	-	`sha256:751fe39c4d348c7fc411d46929c1dac390e3d7107efc9f8f69641b50e14459f7`  
+		Last Modified: Tue, 30 Aug 2016 21:59:08 GMT  
+		Size: 18.5 MB (18527264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0074002c1ca76702061f6dfe93bdb1b5201bbf68fc2e007cd11af7d8ab54e301`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 566.7 KB (566663 bytes)  
+	-	`sha256:b165e84cccc10bc56e89091e37339ab98afbef36d1f06cd9c1c531af4dc18aa1`  
+		Last Modified: Wed, 31 Aug 2016 17:24:31 GMT  
+		Size: 566.9 KB (566898 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce7f795b9b456275a51a7fa8e1f606e89d007b2ef0e0950a51f7563296f1ba7c`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 219.0 B  
+	-	`sha256:acfcc7cbc59b7a596fd525d7565bb8df98f7cc2eef6aecde5b2428910a55d40f`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:289ba16233e6d6ee8d69109b2926d89a165dccc2cee41dff3f63f9e5dab2dd52`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 241.0 B  
+	-	`sha256:04b7a9efc4af31d0be1ab9c42ea79d4fd37ab4f37819484dee0432c6f970887b`  
+		Last Modified: Wed, 31 Aug 2016 17:29:32 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42d9f6ba2021d41864dea4f9511518360e27d0b5d7acf9ee5dda1ca1ed3f8cc2`  
-		Last Modified: Tue, 30 Aug 2016 21:10:19 GMT  
-		Size: 53.4 MB (53402046 bytes)  
+	-	`sha256:b16e55fe528577cd1aef5bb088da95b07521d9489bb895d68885ba7cd3cf296c`  
+		Last Modified: Wed, 31 Aug 2016 17:29:56 GMT  
+		Size: 53.4 MB (53402358 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a272f25f79cc92da8fb2ea837afd1fb963800adc87c103221417940142da6b13`  
-		Last Modified: Tue, 30 Aug 2016 21:10:04 GMT  
-		Size: 284.2 KB (284198 bytes)  
+	-	`sha256:8c5cbb866b5570e0aced559ab8b213a73d5fd87a9a7b9465c3e3a47c532b4c4e`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 284.3 KB (284257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e9be70dacf03ab795659f46b1ef58e904a3c968b89b2def933b2ce2e5d6379e`  
-		Last Modified: Tue, 30 Aug 2016 21:10:03 GMT  
-		Size: 2.1 KB (2085 bytes)  
+	-	`sha256:df1b868bb644dee5e6a070e4dcf3fcb49c1b88c2b3a9f9753e8e37f318097308`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
+		Size: 2.1 KB (2081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0b88539157f3687bed39f9e835f3d6ca0d21739842a7ce65d0eafffa8c4dc30`  
-		Last Modified: Tue, 30 Aug 2016 21:10:02 GMT  
+	-	`sha256:6ff2fb0f04a0b5a0d2d5427d98a8302454f38a808ad5acb82545dc9994288450`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
 		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99c3b67399fceccb995265ca116dcf962ddc495b693a62142497a8062b9c1b3e`  
-		Last Modified: Tue, 30 Aug 2016 21:12:34 GMT  
-		Size: 10.0 MB (10004234 bytes)  
+	-	`sha256:12c04d53bd348ede1a43030cbec2ae5a42e4fd4754e0bbbe3df4686546117f14`  
+		Last Modified: Wed, 31 Aug 2016 20:51:23 GMT  
+		Size: 10.0 MB (10004233 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62d610ba016ce92f643bc1c443bf6280c299922c3b60d2603819f1bcd813dbca`  
-		Last Modified: Tue, 30 Aug 2016 21:12:32 GMT  
+	-	`sha256:e3401fd2089cc21b1fc8e800e9cbd8b027d0cf74e9bfd328948850786580f496`  
+		Last Modified: Wed, 31 Aug 2016 20:51:21 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41932f80224ffde4e88d3e7e82bec8b301741804fdd6fde696848a9329d6961e`  
-		Last Modified: Tue, 30 Aug 2016 21:12:32 GMT  
-		Size: 1.6 KB (1569 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba9d90b17aafc50fca96daf2350850bda014d04b215c842b147df0f49903968e`  
-		Last Modified: Tue, 30 Aug 2016 21:12:34 GMT  
+	-	`sha256:c462393c9e6d22249153a576e0d291705b1c1ca1486c91eaf39ff8e3d691ee54`  
+		Last Modified: Wed, 31 Aug 2016 20:51:22 GMT  
 		Size: 1.6 KB (1575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c9e06c34ae3a3c2723ee3d4116bb1d161b35cc6113446e755e7ed82701ac163`  
-		Last Modified: Tue, 30 Aug 2016 21:12:32 GMT  
-		Size: 570.0 B  
+	-	`sha256:2a26fb6df1012571282eea3f69ce6d567e37f5593d5bbfdf0fa249e45f727206`  
+		Last Modified: Wed, 31 Aug 2016 20:51:21 GMT  
+		Size: 1.6 KB (1572 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a6ea6110298109810f8e7b0c03a046f52e4bd8793e77885f962fdce3de030de1`  
+		Last Modified: Wed, 31 Aug 2016 20:51:21 GMT  
+		Size: 572.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jetty:9.2-jre8`
 
 ```console
-$ docker pull jetty@sha256:da7880d2597645cf86cec733932c0f795d1765ac49fe9b166bf4bb654664d205
+$ docker pull jetty@sha256:f012cca471cd41a8838a4dc0b866aef7389bd7c0b6d7203eef6e6e38bc998c6f
 ```
 
 -	Platforms:
@@ -2520,141 +2520,141 @@ $ docker pull jetty@sha256:da7880d2597645cf86cec733932c0f795d1765ac49fe9b166bf4b
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.2 MB (134156212 bytes)**  
+-	Total Size: **134.2 MB (134158814 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f4bd44abf45e23b2f2cbbf9258c334b1d9479e64a238be108c1ac8e3325a00ce`
+-	Image ID: `sha256:9391d22dfe6b41904b3dcda286fb7c52b13be7a2fb39f72fa370e3120c450c23`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Tue, 30 Aug 2016 00:24:21 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in / 
-# Tue, 30 Aug 2016 00:24:21 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 18:01:24 GMT
+# Tue, 30 Aug 2016 21:52:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:53:35 GMT
+# Wed, 31 Aug 2016 17:13:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:55:40 GMT
+# Wed, 31 Aug 2016 17:16:06 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 19:55:41 GMT
+# Wed, 31 Aug 2016 17:16:07 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_VERSION=8u102
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Tue, 30 Aug 2016 19:55:42 GMT
+# Wed, 31 Aug 2016 17:16:08 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 30 Aug 2016 19:56:03 GMT
+# Wed, 31 Aug 2016 17:16:42 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 30 Aug 2016 19:56:04 GMT
+# Wed, 31 Aug 2016 17:16:44 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 30 Aug 2016 20:05:32 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:03 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 30 Aug 2016 20:05:33 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 30 Aug 2016 20:05:34 GMT
+# Wed, 31 Aug 2016 20:51:04 GMT
 WORKDIR /usr/local/jetty
-# Tue, 30 Aug 2016 21:09:37 GMT
+# Wed, 31 Aug 2016 20:51:05 GMT
 ENV JETTY_VERSION=9.2.18.v20160721
-# Tue, 30 Aug 2016 21:09:38 GMT
+# Wed, 31 Aug 2016 20:51:05 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.18.v20160721/jetty-distribution-9.2.18.v20160721.tar.gz
-# Tue, 30 Aug 2016 21:09:38 GMT
+# Wed, 31 Aug 2016 20:51:05 GMT
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E372283E7AE839CD7C58886
-# Tue, 30 Aug 2016 21:09:40 GMT
+# Wed, 31 Aug 2016 20:51:08 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -r "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm -fr demo-base javadoc 	&& rm jetty.tar.gz*
-# Tue, 30 Aug 2016 21:09:40 GMT
+# Wed, 31 Aug 2016 20:51:08 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 30 Aug 2016 21:09:41 GMT
+# Wed, 31 Aug 2016 20:51:09 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:41 GMT
+# Wed, 31 Aug 2016 20:51:09 GMT
 WORKDIR /var/lib/jetty
-# Tue, 30 Aug 2016 21:09:42 GMT
+# Wed, 31 Aug 2016 20:51:14 GMT
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" 	&& set -xe 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
-# Tue, 30 Aug 2016 21:09:43 GMT
+# Wed, 31 Aug 2016 20:51:14 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 30 Aug 2016 21:09:43 GMT
+# Wed, 31 Aug 2016 20:51:15 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR" "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:44 GMT
+# Wed, 31 Aug 2016 20:51:15 GMT
 COPY file:4f7da2906a90932cfb90db54a45ee08f86b17253747db62085f7512c9efd46ad in / 
-# Tue, 30 Aug 2016 21:09:44 GMT
+# Wed, 31 Aug 2016 20:51:16 GMT
 EXPOSE 8080/tcp
-# Tue, 30 Aug 2016 21:09:44 GMT
+# Wed, 31 Aug 2016 20:51:16 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 30 Aug 2016 21:09:44 GMT
+# Wed, 31 Aug 2016 20:51:16 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8a4cf2cc675828e73bd8d18bce3caa936d93fedb555040bdbec021319451802`  
-		Last Modified: Tue, 30 Aug 2016 21:10:14 GMT  
-		Size: 18.5 MB (18526925 bytes)  
+	-	`sha256:751fe39c4d348c7fc411d46929c1dac390e3d7107efc9f8f69641b50e14459f7`  
+		Last Modified: Tue, 30 Aug 2016 21:59:08 GMT  
+		Size: 18.5 MB (18527264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0074002c1ca76702061f6dfe93bdb1b5201bbf68fc2e007cd11af7d8ab54e301`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 566.7 KB (566663 bytes)  
+	-	`sha256:b165e84cccc10bc56e89091e37339ab98afbef36d1f06cd9c1c531af4dc18aa1`  
+		Last Modified: Wed, 31 Aug 2016 17:24:31 GMT  
+		Size: 566.9 KB (566898 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce7f795b9b456275a51a7fa8e1f606e89d007b2ef0e0950a51f7563296f1ba7c`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 219.0 B  
+	-	`sha256:acfcc7cbc59b7a596fd525d7565bb8df98f7cc2eef6aecde5b2428910a55d40f`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:289ba16233e6d6ee8d69109b2926d89a165dccc2cee41dff3f63f9e5dab2dd52`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 241.0 B  
+	-	`sha256:04b7a9efc4af31d0be1ab9c42ea79d4fd37ab4f37819484dee0432c6f970887b`  
+		Last Modified: Wed, 31 Aug 2016 17:29:32 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42d9f6ba2021d41864dea4f9511518360e27d0b5d7acf9ee5dda1ca1ed3f8cc2`  
-		Last Modified: Tue, 30 Aug 2016 21:10:19 GMT  
-		Size: 53.4 MB (53402046 bytes)  
+	-	`sha256:b16e55fe528577cd1aef5bb088da95b07521d9489bb895d68885ba7cd3cf296c`  
+		Last Modified: Wed, 31 Aug 2016 17:29:56 GMT  
+		Size: 53.4 MB (53402358 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a272f25f79cc92da8fb2ea837afd1fb963800adc87c103221417940142da6b13`  
-		Last Modified: Tue, 30 Aug 2016 21:10:04 GMT  
-		Size: 284.2 KB (284198 bytes)  
+	-	`sha256:8c5cbb866b5570e0aced559ab8b213a73d5fd87a9a7b9465c3e3a47c532b4c4e`  
+		Last Modified: Wed, 31 Aug 2016 17:29:33 GMT  
+		Size: 284.3 KB (284257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e9be70dacf03ab795659f46b1ef58e904a3c968b89b2def933b2ce2e5d6379e`  
-		Last Modified: Tue, 30 Aug 2016 21:10:03 GMT  
-		Size: 2.1 KB (2085 bytes)  
+	-	`sha256:df1b868bb644dee5e6a070e4dcf3fcb49c1b88c2b3a9f9753e8e37f318097308`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
+		Size: 2.1 KB (2081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0b88539157f3687bed39f9e835f3d6ca0d21739842a7ce65d0eafffa8c4dc30`  
-		Last Modified: Tue, 30 Aug 2016 21:10:02 GMT  
+	-	`sha256:6ff2fb0f04a0b5a0d2d5427d98a8302454f38a808ad5acb82545dc9994288450`  
+		Last Modified: Wed, 31 Aug 2016 20:51:24 GMT  
 		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99c3b67399fceccb995265ca116dcf962ddc495b693a62142497a8062b9c1b3e`  
-		Last Modified: Tue, 30 Aug 2016 21:12:34 GMT  
-		Size: 10.0 MB (10004234 bytes)  
+	-	`sha256:12c04d53bd348ede1a43030cbec2ae5a42e4fd4754e0bbbe3df4686546117f14`  
+		Last Modified: Wed, 31 Aug 2016 20:51:23 GMT  
+		Size: 10.0 MB (10004233 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62d610ba016ce92f643bc1c443bf6280c299922c3b60d2603819f1bcd813dbca`  
-		Last Modified: Tue, 30 Aug 2016 21:12:32 GMT  
+	-	`sha256:e3401fd2089cc21b1fc8e800e9cbd8b027d0cf74e9bfd328948850786580f496`  
+		Last Modified: Wed, 31 Aug 2016 20:51:21 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41932f80224ffde4e88d3e7e82bec8b301741804fdd6fde696848a9329d6961e`  
-		Last Modified: Tue, 30 Aug 2016 21:12:32 GMT  
-		Size: 1.6 KB (1569 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba9d90b17aafc50fca96daf2350850bda014d04b215c842b147df0f49903968e`  
-		Last Modified: Tue, 30 Aug 2016 21:12:34 GMT  
+	-	`sha256:c462393c9e6d22249153a576e0d291705b1c1ca1486c91eaf39ff8e3d691ee54`  
+		Last Modified: Wed, 31 Aug 2016 20:51:22 GMT  
 		Size: 1.6 KB (1575 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c9e06c34ae3a3c2723ee3d4116bb1d161b35cc6113446e755e7ed82701ac163`  
-		Last Modified: Tue, 30 Aug 2016 21:12:32 GMT  
-		Size: 570.0 B  
+	-	`sha256:2a26fb6df1012571282eea3f69ce6d567e37f5593d5bbfdf0fa249e45f727206`  
+		Last Modified: Wed, 31 Aug 2016 20:51:21 GMT  
+		Size: 1.6 KB (1572 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a6ea6110298109810f8e7b0c03a046f52e4bd8793e77885f962fdce3de030de1`  
+		Last Modified: Wed, 31 Aug 2016 20:51:21 GMT  
+		Size: 572.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jetty:9.2.18-jre7`
 
 ```console
-$ docker pull jetty@sha256:c88ead72600d07b304955b05638e7790cb4df81be8dbf16eb4902e3df8a5172a
+$ docker pull jetty@sha256:a50c2225eca8629707827075c7ce1fda3d81a7a1dec14e6e1e334edfbfd39bf3
 ```
 
 -	Platforms:
@@ -2664,127 +2664,127 @@ $ docker pull jetty@sha256:c88ead72600d07b304955b05638e7790cb4df81be8dbf16eb4902
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **158.2 MB (158182288 bytes)**  
+-	Total Size: **158.2 MB (158185034 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e8d4b14899b4246ae02160b2865d41fbccab84309daefacec159ec4a14c4f3d7`
+-	Image ID: `sha256:252074490a22cf73cac50061cdfbcd04c456e07b88407961dfb50b24c0776f75`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Tue, 30 Aug 2016 00:24:21 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in / 
-# Tue, 30 Aug 2016 00:24:21 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 18:01:24 GMT
+# Tue, 30 Aug 2016 21:52:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:53:35 GMT
+# Wed, 31 Aug 2016 17:13:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:53:36 GMT
+# Wed, 31 Aug 2016 17:13:55 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 19:53:36 GMT
+# Wed, 31 Aug 2016 17:13:56 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 30 Aug 2016 19:53:37 GMT
+# Wed, 31 Aug 2016 17:13:56 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
-# Tue, 30 Aug 2016 19:53:37 GMT
+# Wed, 31 Aug 2016 17:13:57 GMT
 ENV JAVA_VERSION=7u111
-# Tue, 30 Aug 2016 19:53:37 GMT
+# Wed, 31 Aug 2016 17:13:57 GMT
 ENV JAVA_DEBIAN_VERSION=7u111-2.6.7-1~deb8u1
-# Tue, 30 Aug 2016 19:54:13 GMT
+# Wed, 31 Aug 2016 17:15:00 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jre-headless="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 30 Aug 2016 20:06:02 GMT
+# Wed, 31 Aug 2016 20:53:59 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 30 Aug 2016 20:06:03 GMT
+# Wed, 31 Aug 2016 20:54:00 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 30 Aug 2016 20:06:03 GMT
+# Wed, 31 Aug 2016 20:54:00 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 30 Aug 2016 20:06:04 GMT
+# Wed, 31 Aug 2016 20:54:01 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 30 Aug 2016 20:06:04 GMT
+# Wed, 31 Aug 2016 20:54:01 GMT
 WORKDIR /usr/local/jetty
-# Tue, 30 Aug 2016 21:09:45 GMT
+# Wed, 31 Aug 2016 20:54:01 GMT
 ENV JETTY_VERSION=9.2.18.v20160721
-# Tue, 30 Aug 2016 21:09:45 GMT
+# Wed, 31 Aug 2016 20:54:02 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.18.v20160721/jetty-distribution-9.2.18.v20160721.tar.gz
-# Tue, 30 Aug 2016 21:09:45 GMT
+# Wed, 31 Aug 2016 20:54:02 GMT
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E372283E7AE839CD7C58886
-# Tue, 30 Aug 2016 21:09:47 GMT
+# Wed, 31 Aug 2016 20:54:05 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -r "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm -fr demo-base javadoc 	&& rm jetty.tar.gz*
-# Tue, 30 Aug 2016 21:09:48 GMT
+# Wed, 31 Aug 2016 20:54:05 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 30 Aug 2016 21:09:49 GMT
+# Wed, 31 Aug 2016 20:54:06 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:49 GMT
+# Wed, 31 Aug 2016 20:54:06 GMT
 WORKDIR /var/lib/jetty
-# Tue, 30 Aug 2016 21:09:52 GMT
+# Wed, 31 Aug 2016 20:54:09 GMT
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" 	&& set -xe 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
-# Tue, 30 Aug 2016 21:09:52 GMT
+# Wed, 31 Aug 2016 20:54:09 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 30 Aug 2016 21:09:53 GMT
+# Wed, 31 Aug 2016 20:54:10 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR" "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:54 GMT
+# Wed, 31 Aug 2016 20:54:11 GMT
 COPY file:4f7da2906a90932cfb90db54a45ee08f86b17253747db62085f7512c9efd46ad in / 
-# Tue, 30 Aug 2016 21:09:54 GMT
+# Wed, 31 Aug 2016 20:54:11 GMT
 EXPOSE 8080/tcp
-# Tue, 30 Aug 2016 21:09:54 GMT
+# Wed, 31 Aug 2016 20:54:11 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 30 Aug 2016 21:09:54 GMT
+# Wed, 31 Aug 2016 20:54:11 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8a4cf2cc675828e73bd8d18bce3caa936d93fedb555040bdbec021319451802`  
-		Last Modified: Tue, 30 Aug 2016 21:10:14 GMT  
-		Size: 18.5 MB (18526925 bytes)  
+	-	`sha256:751fe39c4d348c7fc411d46929c1dac390e3d7107efc9f8f69641b50e14459f7`  
+		Last Modified: Tue, 30 Aug 2016 21:59:08 GMT  
+		Size: 18.5 MB (18527264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0074002c1ca76702061f6dfe93bdb1b5201bbf68fc2e007cd11af7d8ab54e301`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 566.7 KB (566663 bytes)  
+	-	`sha256:b165e84cccc10bc56e89091e37339ab98afbef36d1f06cd9c1c531af4dc18aa1`  
+		Last Modified: Wed, 31 Aug 2016 17:24:31 GMT  
+		Size: 566.9 KB (566898 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e90c17f561d17c5f595aa211d721de8f0d7154d48b49616b90a79c4b4a6f036`  
-		Last Modified: Tue, 30 Aug 2016 21:13:08 GMT  
-		Size: 241.0 B  
+	-	`sha256:65f65ec902a1b1e7ebbd6d2f0be784334776d98e700d95657308a4e93becdf32`  
+		Last Modified: Wed, 31 Aug 2016 17:24:30 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41423c830a15264d281c65936b0c3b0a1db6376d0b9b780a092f2c3f06dab4cc`  
-		Last Modified: Tue, 30 Aug 2016 21:13:25 GMT  
-		Size: 77.7 MB (77712533 bytes)  
+	-	`sha256:c7e29d14c31c0752f233600a073a4e0e439dcf16305d5fe8e081684071e6381f`  
+		Last Modified: Wed, 31 Aug 2016 17:24:48 GMT  
+		Size: 77.7 MB (77713068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aba30ef4cf5746c788fc2df9abbd8edd1edd324540a6dea1e3e60b72e39bd927`  
-		Last Modified: Tue, 30 Aug 2016 21:13:07 GMT  
-		Size: 2.1 KB (2086 bytes)  
+	-	`sha256:8dce28e54d1f9227089efdaba6f3265623d5fe4083e0adda89daea59cc503ab4`  
+		Last Modified: Wed, 31 Aug 2016 20:54:20 GMT  
+		Size: 2.1 KB (2082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e81591adfade6c9ea697bf6e921eaa1f90da757c9ad6467e0621a6fc5895800`  
-		Last Modified: Tue, 30 Aug 2016 21:13:06 GMT  
+	-	`sha256:112226fdbf95e35d78343aafd8f995972e393dc27a2a7d38028175653c187119`  
+		Last Modified: Wed, 31 Aug 2016 20:54:20 GMT  
 		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b2ac6d9a5714dca9d4b12071b39273db3b778bc1a654f204d435f63887075d3`  
-		Last Modified: Tue, 30 Aug 2016 21:13:05 GMT  
-		Size: 10.0 MB (10004229 bytes)  
+	-	`sha256:ed96e1340437b42d8ff918e66bc23ae812e3d1b4551f3893912659c4c5b29a34`  
+		Last Modified: Wed, 31 Aug 2016 20:54:18 GMT  
+		Size: 10.0 MB (10004221 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddc5954f170b4479bf170e00e9228f5d8145862b93a87ffacd8c0b3ad7a299b9`  
-		Last Modified: Tue, 30 Aug 2016 21:13:04 GMT  
-		Size: 130.0 B  
+	-	`sha256:215e18171f5a5c5f27a0b37468109fd60b0c82346ef9188dfb16421ed25531e7`  
+		Last Modified: Wed, 31 Aug 2016 20:54:17 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f598b87f4c87c3e8e4293a3e84e42abc4bb54003657a6f7611ec54ea38f020c`  
-		Last Modified: Tue, 30 Aug 2016 21:13:05 GMT  
-		Size: 1.6 KB (1576 bytes)  
+	-	`sha256:6cc2356ee4bae12e9ce0991a0f9f95f9fad7685d604b4e1283e964199cd4520f`  
+		Last Modified: Wed, 31 Aug 2016 20:54:17 GMT  
+		Size: 1.6 KB (1572 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95657c6d6f92e14eba324b1d27f2b30949c877dcf347dd007c72c0d4c5497576`  
-		Last Modified: Tue, 30 Aug 2016 21:13:05 GMT  
-		Size: 1.6 KB (1577 bytes)  
+	-	`sha256:58921901f7be4e1febd005b95fd8e6237b1e2ba61e84ae2d2de7c39c45f5d7d0`  
+		Last Modified: Wed, 31 Aug 2016 20:54:16 GMT  
+		Size: 1.6 KB (1572 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63470ad5af56ba5a6737e477848a588803bb25604ec5ba86c108f051da20eaba`  
-		Last Modified: Tue, 30 Aug 2016 21:13:04 GMT  
-		Size: 570.0 B  
+	-	`sha256:56e44b56a5e8245925aa93a7c0552f9e2135de25dfa954922ad69347a0087f3f`  
+		Last Modified: Wed, 31 Aug 2016 20:54:17 GMT  
+		Size: 572.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jetty:9.2-jre7`
 
 ```console
-$ docker pull jetty@sha256:c88ead72600d07b304955b05638e7790cb4df81be8dbf16eb4902e3df8a5172a
+$ docker pull jetty@sha256:a50c2225eca8629707827075c7ce1fda3d81a7a1dec14e6e1e334edfbfd39bf3
 ```
 
 -	Platforms:
@@ -2794,127 +2794,127 @@ $ docker pull jetty@sha256:c88ead72600d07b304955b05638e7790cb4df81be8dbf16eb4902
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **158.2 MB (158182288 bytes)**  
+-	Total Size: **158.2 MB (158185034 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e8d4b14899b4246ae02160b2865d41fbccab84309daefacec159ec4a14c4f3d7`
+-	Image ID: `sha256:252074490a22cf73cac50061cdfbcd04c456e07b88407961dfb50b24c0776f75`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Tue, 30 Aug 2016 00:24:21 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in / 
-# Tue, 30 Aug 2016 00:24:21 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 18:01:24 GMT
+# Tue, 30 Aug 2016 21:52:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:53:35 GMT
+# Wed, 31 Aug 2016 17:13:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:53:36 GMT
+# Wed, 31 Aug 2016 17:13:55 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 19:53:36 GMT
+# Wed, 31 Aug 2016 17:13:56 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 30 Aug 2016 19:53:37 GMT
+# Wed, 31 Aug 2016 17:13:56 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
-# Tue, 30 Aug 2016 19:53:37 GMT
+# Wed, 31 Aug 2016 17:13:57 GMT
 ENV JAVA_VERSION=7u111
-# Tue, 30 Aug 2016 19:53:37 GMT
+# Wed, 31 Aug 2016 17:13:57 GMT
 ENV JAVA_DEBIAN_VERSION=7u111-2.6.7-1~deb8u1
-# Tue, 30 Aug 2016 19:54:13 GMT
+# Wed, 31 Aug 2016 17:15:00 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jre-headless="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 30 Aug 2016 20:06:02 GMT
+# Wed, 31 Aug 2016 20:53:59 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 30 Aug 2016 20:06:03 GMT
+# Wed, 31 Aug 2016 20:54:00 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 30 Aug 2016 20:06:03 GMT
+# Wed, 31 Aug 2016 20:54:00 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 30 Aug 2016 20:06:04 GMT
+# Wed, 31 Aug 2016 20:54:01 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 30 Aug 2016 20:06:04 GMT
+# Wed, 31 Aug 2016 20:54:01 GMT
 WORKDIR /usr/local/jetty
-# Tue, 30 Aug 2016 21:09:45 GMT
+# Wed, 31 Aug 2016 20:54:01 GMT
 ENV JETTY_VERSION=9.2.18.v20160721
-# Tue, 30 Aug 2016 21:09:45 GMT
+# Wed, 31 Aug 2016 20:54:02 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.18.v20160721/jetty-distribution-9.2.18.v20160721.tar.gz
-# Tue, 30 Aug 2016 21:09:45 GMT
+# Wed, 31 Aug 2016 20:54:02 GMT
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E372283E7AE839CD7C58886
-# Tue, 30 Aug 2016 21:09:47 GMT
+# Wed, 31 Aug 2016 20:54:05 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -r "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm -fr demo-base javadoc 	&& rm jetty.tar.gz*
-# Tue, 30 Aug 2016 21:09:48 GMT
+# Wed, 31 Aug 2016 20:54:05 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 30 Aug 2016 21:09:49 GMT
+# Wed, 31 Aug 2016 20:54:06 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:49 GMT
+# Wed, 31 Aug 2016 20:54:06 GMT
 WORKDIR /var/lib/jetty
-# Tue, 30 Aug 2016 21:09:52 GMT
+# Wed, 31 Aug 2016 20:54:09 GMT
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" 	&& set -xe 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
-# Tue, 30 Aug 2016 21:09:52 GMT
+# Wed, 31 Aug 2016 20:54:09 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 30 Aug 2016 21:09:53 GMT
+# Wed, 31 Aug 2016 20:54:10 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR" "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:54 GMT
+# Wed, 31 Aug 2016 20:54:11 GMT
 COPY file:4f7da2906a90932cfb90db54a45ee08f86b17253747db62085f7512c9efd46ad in / 
-# Tue, 30 Aug 2016 21:09:54 GMT
+# Wed, 31 Aug 2016 20:54:11 GMT
 EXPOSE 8080/tcp
-# Tue, 30 Aug 2016 21:09:54 GMT
+# Wed, 31 Aug 2016 20:54:11 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 30 Aug 2016 21:09:54 GMT
+# Wed, 31 Aug 2016 20:54:11 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8a4cf2cc675828e73bd8d18bce3caa936d93fedb555040bdbec021319451802`  
-		Last Modified: Tue, 30 Aug 2016 21:10:14 GMT  
-		Size: 18.5 MB (18526925 bytes)  
+	-	`sha256:751fe39c4d348c7fc411d46929c1dac390e3d7107efc9f8f69641b50e14459f7`  
+		Last Modified: Tue, 30 Aug 2016 21:59:08 GMT  
+		Size: 18.5 MB (18527264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0074002c1ca76702061f6dfe93bdb1b5201bbf68fc2e007cd11af7d8ab54e301`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 566.7 KB (566663 bytes)  
+	-	`sha256:b165e84cccc10bc56e89091e37339ab98afbef36d1f06cd9c1c531af4dc18aa1`  
+		Last Modified: Wed, 31 Aug 2016 17:24:31 GMT  
+		Size: 566.9 KB (566898 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e90c17f561d17c5f595aa211d721de8f0d7154d48b49616b90a79c4b4a6f036`  
-		Last Modified: Tue, 30 Aug 2016 21:13:08 GMT  
-		Size: 241.0 B  
+	-	`sha256:65f65ec902a1b1e7ebbd6d2f0be784334776d98e700d95657308a4e93becdf32`  
+		Last Modified: Wed, 31 Aug 2016 17:24:30 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41423c830a15264d281c65936b0c3b0a1db6376d0b9b780a092f2c3f06dab4cc`  
-		Last Modified: Tue, 30 Aug 2016 21:13:25 GMT  
-		Size: 77.7 MB (77712533 bytes)  
+	-	`sha256:c7e29d14c31c0752f233600a073a4e0e439dcf16305d5fe8e081684071e6381f`  
+		Last Modified: Wed, 31 Aug 2016 17:24:48 GMT  
+		Size: 77.7 MB (77713068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aba30ef4cf5746c788fc2df9abbd8edd1edd324540a6dea1e3e60b72e39bd927`  
-		Last Modified: Tue, 30 Aug 2016 21:13:07 GMT  
-		Size: 2.1 KB (2086 bytes)  
+	-	`sha256:8dce28e54d1f9227089efdaba6f3265623d5fe4083e0adda89daea59cc503ab4`  
+		Last Modified: Wed, 31 Aug 2016 20:54:20 GMT  
+		Size: 2.1 KB (2082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e81591adfade6c9ea697bf6e921eaa1f90da757c9ad6467e0621a6fc5895800`  
-		Last Modified: Tue, 30 Aug 2016 21:13:06 GMT  
+	-	`sha256:112226fdbf95e35d78343aafd8f995972e393dc27a2a7d38028175653c187119`  
+		Last Modified: Wed, 31 Aug 2016 20:54:20 GMT  
 		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b2ac6d9a5714dca9d4b12071b39273db3b778bc1a654f204d435f63887075d3`  
-		Last Modified: Tue, 30 Aug 2016 21:13:05 GMT  
-		Size: 10.0 MB (10004229 bytes)  
+	-	`sha256:ed96e1340437b42d8ff918e66bc23ae812e3d1b4551f3893912659c4c5b29a34`  
+		Last Modified: Wed, 31 Aug 2016 20:54:18 GMT  
+		Size: 10.0 MB (10004221 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddc5954f170b4479bf170e00e9228f5d8145862b93a87ffacd8c0b3ad7a299b9`  
-		Last Modified: Tue, 30 Aug 2016 21:13:04 GMT  
-		Size: 130.0 B  
+	-	`sha256:215e18171f5a5c5f27a0b37468109fd60b0c82346ef9188dfb16421ed25531e7`  
+		Last Modified: Wed, 31 Aug 2016 20:54:17 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f598b87f4c87c3e8e4293a3e84e42abc4bb54003657a6f7611ec54ea38f020c`  
-		Last Modified: Tue, 30 Aug 2016 21:13:05 GMT  
-		Size: 1.6 KB (1576 bytes)  
+	-	`sha256:6cc2356ee4bae12e9ce0991a0f9f95f9fad7685d604b4e1283e964199cd4520f`  
+		Last Modified: Wed, 31 Aug 2016 20:54:17 GMT  
+		Size: 1.6 KB (1572 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95657c6d6f92e14eba324b1d27f2b30949c877dcf347dd007c72c0d4c5497576`  
-		Last Modified: Tue, 30 Aug 2016 21:13:05 GMT  
-		Size: 1.6 KB (1577 bytes)  
+	-	`sha256:58921901f7be4e1febd005b95fd8e6237b1e2ba61e84ae2d2de7c39c45f5d7d0`  
+		Last Modified: Wed, 31 Aug 2016 20:54:16 GMT  
+		Size: 1.6 KB (1572 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63470ad5af56ba5a6737e477848a588803bb25604ec5ba86c108f051da20eaba`  
-		Last Modified: Tue, 30 Aug 2016 21:13:04 GMT  
-		Size: 570.0 B  
+	-	`sha256:56e44b56a5e8245925aa93a7c0552f9e2135de25dfa954922ad69347a0087f3f`  
+		Last Modified: Wed, 31 Aug 2016 20:54:17 GMT  
+		Size: 572.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jetty:9-jre7`
 
 ```console
-$ docker pull jetty@sha256:c88ead72600d07b304955b05638e7790cb4df81be8dbf16eb4902e3df8a5172a
+$ docker pull jetty@sha256:a50c2225eca8629707827075c7ce1fda3d81a7a1dec14e6e1e334edfbfd39bf3
 ```
 
 -	Platforms:
@@ -2924,127 +2924,127 @@ $ docker pull jetty@sha256:c88ead72600d07b304955b05638e7790cb4df81be8dbf16eb4902
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **158.2 MB (158182288 bytes)**  
+-	Total Size: **158.2 MB (158185034 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e8d4b14899b4246ae02160b2865d41fbccab84309daefacec159ec4a14c4f3d7`
+-	Image ID: `sha256:252074490a22cf73cac50061cdfbcd04c456e07b88407961dfb50b24c0776f75`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Tue, 30 Aug 2016 00:24:21 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in / 
-# Tue, 30 Aug 2016 00:24:21 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 18:01:24 GMT
+# Tue, 30 Aug 2016 21:52:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:53:35 GMT
+# Wed, 31 Aug 2016 17:13:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:53:36 GMT
+# Wed, 31 Aug 2016 17:13:55 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 19:53:36 GMT
+# Wed, 31 Aug 2016 17:13:56 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 30 Aug 2016 19:53:37 GMT
+# Wed, 31 Aug 2016 17:13:56 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
-# Tue, 30 Aug 2016 19:53:37 GMT
+# Wed, 31 Aug 2016 17:13:57 GMT
 ENV JAVA_VERSION=7u111
-# Tue, 30 Aug 2016 19:53:37 GMT
+# Wed, 31 Aug 2016 17:13:57 GMT
 ENV JAVA_DEBIAN_VERSION=7u111-2.6.7-1~deb8u1
-# Tue, 30 Aug 2016 19:54:13 GMT
+# Wed, 31 Aug 2016 17:15:00 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jre-headless="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 30 Aug 2016 20:06:02 GMT
+# Wed, 31 Aug 2016 20:53:59 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 30 Aug 2016 20:06:03 GMT
+# Wed, 31 Aug 2016 20:54:00 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 30 Aug 2016 20:06:03 GMT
+# Wed, 31 Aug 2016 20:54:00 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 30 Aug 2016 20:06:04 GMT
+# Wed, 31 Aug 2016 20:54:01 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 30 Aug 2016 20:06:04 GMT
+# Wed, 31 Aug 2016 20:54:01 GMT
 WORKDIR /usr/local/jetty
-# Tue, 30 Aug 2016 21:09:45 GMT
+# Wed, 31 Aug 2016 20:54:01 GMT
 ENV JETTY_VERSION=9.2.18.v20160721
-# Tue, 30 Aug 2016 21:09:45 GMT
+# Wed, 31 Aug 2016 20:54:02 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.18.v20160721/jetty-distribution-9.2.18.v20160721.tar.gz
-# Tue, 30 Aug 2016 21:09:45 GMT
+# Wed, 31 Aug 2016 20:54:02 GMT
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E372283E7AE839CD7C58886
-# Tue, 30 Aug 2016 21:09:47 GMT
+# Wed, 31 Aug 2016 20:54:05 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -r "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm -fr demo-base javadoc 	&& rm jetty.tar.gz*
-# Tue, 30 Aug 2016 21:09:48 GMT
+# Wed, 31 Aug 2016 20:54:05 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 30 Aug 2016 21:09:49 GMT
+# Wed, 31 Aug 2016 20:54:06 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:49 GMT
+# Wed, 31 Aug 2016 20:54:06 GMT
 WORKDIR /var/lib/jetty
-# Tue, 30 Aug 2016 21:09:52 GMT
+# Wed, 31 Aug 2016 20:54:09 GMT
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" 	&& set -xe 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
-# Tue, 30 Aug 2016 21:09:52 GMT
+# Wed, 31 Aug 2016 20:54:09 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 30 Aug 2016 21:09:53 GMT
+# Wed, 31 Aug 2016 20:54:10 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR" "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:54 GMT
+# Wed, 31 Aug 2016 20:54:11 GMT
 COPY file:4f7da2906a90932cfb90db54a45ee08f86b17253747db62085f7512c9efd46ad in / 
-# Tue, 30 Aug 2016 21:09:54 GMT
+# Wed, 31 Aug 2016 20:54:11 GMT
 EXPOSE 8080/tcp
-# Tue, 30 Aug 2016 21:09:54 GMT
+# Wed, 31 Aug 2016 20:54:11 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 30 Aug 2016 21:09:54 GMT
+# Wed, 31 Aug 2016 20:54:11 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8a4cf2cc675828e73bd8d18bce3caa936d93fedb555040bdbec021319451802`  
-		Last Modified: Tue, 30 Aug 2016 21:10:14 GMT  
-		Size: 18.5 MB (18526925 bytes)  
+	-	`sha256:751fe39c4d348c7fc411d46929c1dac390e3d7107efc9f8f69641b50e14459f7`  
+		Last Modified: Tue, 30 Aug 2016 21:59:08 GMT  
+		Size: 18.5 MB (18527264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0074002c1ca76702061f6dfe93bdb1b5201bbf68fc2e007cd11af7d8ab54e301`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 566.7 KB (566663 bytes)  
+	-	`sha256:b165e84cccc10bc56e89091e37339ab98afbef36d1f06cd9c1c531af4dc18aa1`  
+		Last Modified: Wed, 31 Aug 2016 17:24:31 GMT  
+		Size: 566.9 KB (566898 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e90c17f561d17c5f595aa211d721de8f0d7154d48b49616b90a79c4b4a6f036`  
-		Last Modified: Tue, 30 Aug 2016 21:13:08 GMT  
-		Size: 241.0 B  
+	-	`sha256:65f65ec902a1b1e7ebbd6d2f0be784334776d98e700d95657308a4e93becdf32`  
+		Last Modified: Wed, 31 Aug 2016 17:24:30 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41423c830a15264d281c65936b0c3b0a1db6376d0b9b780a092f2c3f06dab4cc`  
-		Last Modified: Tue, 30 Aug 2016 21:13:25 GMT  
-		Size: 77.7 MB (77712533 bytes)  
+	-	`sha256:c7e29d14c31c0752f233600a073a4e0e439dcf16305d5fe8e081684071e6381f`  
+		Last Modified: Wed, 31 Aug 2016 17:24:48 GMT  
+		Size: 77.7 MB (77713068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aba30ef4cf5746c788fc2df9abbd8edd1edd324540a6dea1e3e60b72e39bd927`  
-		Last Modified: Tue, 30 Aug 2016 21:13:07 GMT  
-		Size: 2.1 KB (2086 bytes)  
+	-	`sha256:8dce28e54d1f9227089efdaba6f3265623d5fe4083e0adda89daea59cc503ab4`  
+		Last Modified: Wed, 31 Aug 2016 20:54:20 GMT  
+		Size: 2.1 KB (2082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e81591adfade6c9ea697bf6e921eaa1f90da757c9ad6467e0621a6fc5895800`  
-		Last Modified: Tue, 30 Aug 2016 21:13:06 GMT  
+	-	`sha256:112226fdbf95e35d78343aafd8f995972e393dc27a2a7d38028175653c187119`  
+		Last Modified: Wed, 31 Aug 2016 20:54:20 GMT  
 		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b2ac6d9a5714dca9d4b12071b39273db3b778bc1a654f204d435f63887075d3`  
-		Last Modified: Tue, 30 Aug 2016 21:13:05 GMT  
-		Size: 10.0 MB (10004229 bytes)  
+	-	`sha256:ed96e1340437b42d8ff918e66bc23ae812e3d1b4551f3893912659c4c5b29a34`  
+		Last Modified: Wed, 31 Aug 2016 20:54:18 GMT  
+		Size: 10.0 MB (10004221 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddc5954f170b4479bf170e00e9228f5d8145862b93a87ffacd8c0b3ad7a299b9`  
-		Last Modified: Tue, 30 Aug 2016 21:13:04 GMT  
-		Size: 130.0 B  
+	-	`sha256:215e18171f5a5c5f27a0b37468109fd60b0c82346ef9188dfb16421ed25531e7`  
+		Last Modified: Wed, 31 Aug 2016 20:54:17 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f598b87f4c87c3e8e4293a3e84e42abc4bb54003657a6f7611ec54ea38f020c`  
-		Last Modified: Tue, 30 Aug 2016 21:13:05 GMT  
-		Size: 1.6 KB (1576 bytes)  
+	-	`sha256:6cc2356ee4bae12e9ce0991a0f9f95f9fad7685d604b4e1283e964199cd4520f`  
+		Last Modified: Wed, 31 Aug 2016 20:54:17 GMT  
+		Size: 1.6 KB (1572 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95657c6d6f92e14eba324b1d27f2b30949c877dcf347dd007c72c0d4c5497576`  
-		Last Modified: Tue, 30 Aug 2016 21:13:05 GMT  
-		Size: 1.6 KB (1577 bytes)  
+	-	`sha256:58921901f7be4e1febd005b95fd8e6237b1e2ba61e84ae2d2de7c39c45f5d7d0`  
+		Last Modified: Wed, 31 Aug 2016 20:54:16 GMT  
+		Size: 1.6 KB (1572 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63470ad5af56ba5a6737e477848a588803bb25604ec5ba86c108f051da20eaba`  
-		Last Modified: Tue, 30 Aug 2016 21:13:04 GMT  
-		Size: 570.0 B  
+	-	`sha256:56e44b56a5e8245925aa93a7c0552f9e2135de25dfa954922ad69347a0087f3f`  
+		Last Modified: Wed, 31 Aug 2016 20:54:17 GMT  
+		Size: 572.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `jetty:jre7`
 
 ```console
-$ docker pull jetty@sha256:c88ead72600d07b304955b05638e7790cb4df81be8dbf16eb4902e3df8a5172a
+$ docker pull jetty@sha256:a50c2225eca8629707827075c7ce1fda3d81a7a1dec14e6e1e334edfbfd39bf3
 ```
 
 -	Platforms:
@@ -3054,119 +3054,119 @@ $ docker pull jetty@sha256:c88ead72600d07b304955b05638e7790cb4df81be8dbf16eb4902
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **158.2 MB (158182288 bytes)**  
+-	Total Size: **158.2 MB (158185034 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e8d4b14899b4246ae02160b2865d41fbccab84309daefacec159ec4a14c4f3d7`
+-	Image ID: `sha256:252074490a22cf73cac50061cdfbcd04c456e07b88407961dfb50b24c0776f75`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Tue, 30 Aug 2016 00:24:21 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in / 
-# Tue, 30 Aug 2016 00:24:21 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 18:01:24 GMT
+# Tue, 30 Aug 2016 21:52:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:53:35 GMT
+# Wed, 31 Aug 2016 17:13:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 19:53:36 GMT
+# Wed, 31 Aug 2016 17:13:55 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 19:53:36 GMT
+# Wed, 31 Aug 2016 17:13:56 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 30 Aug 2016 19:53:37 GMT
+# Wed, 31 Aug 2016 17:13:56 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
-# Tue, 30 Aug 2016 19:53:37 GMT
+# Wed, 31 Aug 2016 17:13:57 GMT
 ENV JAVA_VERSION=7u111
-# Tue, 30 Aug 2016 19:53:37 GMT
+# Wed, 31 Aug 2016 17:13:57 GMT
 ENV JAVA_DEBIAN_VERSION=7u111-2.6.7-1~deb8u1
-# Tue, 30 Aug 2016 19:54:13 GMT
+# Wed, 31 Aug 2016 17:15:00 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jre-headless="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 30 Aug 2016 20:06:02 GMT
+# Wed, 31 Aug 2016 20:53:59 GMT
 RUN groupadd -r jetty && useradd -r -g jetty jetty
-# Tue, 30 Aug 2016 20:06:03 GMT
+# Wed, 31 Aug 2016 20:54:00 GMT
 ENV JETTY_HOME=/usr/local/jetty
-# Tue, 30 Aug 2016 20:06:03 GMT
+# Wed, 31 Aug 2016 20:54:00 GMT
 ENV PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 30 Aug 2016 20:06:04 GMT
+# Wed, 31 Aug 2016 20:54:01 GMT
 RUN mkdir -p "$JETTY_HOME"
-# Tue, 30 Aug 2016 20:06:04 GMT
+# Wed, 31 Aug 2016 20:54:01 GMT
 WORKDIR /usr/local/jetty
-# Tue, 30 Aug 2016 21:09:45 GMT
+# Wed, 31 Aug 2016 20:54:01 GMT
 ENV JETTY_VERSION=9.2.18.v20160721
-# Tue, 30 Aug 2016 21:09:45 GMT
+# Wed, 31 Aug 2016 20:54:02 GMT
 ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.18.v20160721/jetty-distribution-9.2.18.v20160721.tar.gz
-# Tue, 30 Aug 2016 21:09:45 GMT
+# Wed, 31 Aug 2016 20:54:02 GMT
 ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E372283E7AE839CD7C58886
-# Tue, 30 Aug 2016 21:09:47 GMT
+# Wed, 31 Aug 2016 20:54:05 GMT
 RUN set -xe 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -r "$GNUPGHOME" 	&& tar -xvf jetty.tar.gz --strip-components=1 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm -fr demo-base javadoc 	&& rm jetty.tar.gz*
-# Tue, 30 Aug 2016 21:09:48 GMT
+# Wed, 31 Aug 2016 20:54:05 GMT
 ENV JETTY_BASE=/var/lib/jetty
-# Tue, 30 Aug 2016 21:09:49 GMT
+# Wed, 31 Aug 2016 20:54:06 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:49 GMT
+# Wed, 31 Aug 2016 20:54:06 GMT
 WORKDIR /var/lib/jetty
-# Tue, 30 Aug 2016 21:09:52 GMT
+# Wed, 31 Aug 2016 20:54:09 GMT
 RUN modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" 	&& set -xe 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid"
-# Tue, 30 Aug 2016 21:09:52 GMT
+# Wed, 31 Aug 2016 20:54:09 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 30 Aug 2016 21:09:53 GMT
+# Wed, 31 Aug 2016 20:54:10 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR" "$JETTY_BASE"
-# Tue, 30 Aug 2016 21:09:54 GMT
+# Wed, 31 Aug 2016 20:54:11 GMT
 COPY file:4f7da2906a90932cfb90db54a45ee08f86b17253747db62085f7512c9efd46ad in / 
-# Tue, 30 Aug 2016 21:09:54 GMT
+# Wed, 31 Aug 2016 20:54:11 GMT
 EXPOSE 8080/tcp
-# Tue, 30 Aug 2016 21:09:54 GMT
+# Wed, 31 Aug 2016 20:54:11 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 30 Aug 2016 21:09:54 GMT
+# Wed, 31 Aug 2016 20:54:11 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8a4cf2cc675828e73bd8d18bce3caa936d93fedb555040bdbec021319451802`  
-		Last Modified: Tue, 30 Aug 2016 21:10:14 GMT  
-		Size: 18.5 MB (18526925 bytes)  
+	-	`sha256:751fe39c4d348c7fc411d46929c1dac390e3d7107efc9f8f69641b50e14459f7`  
+		Last Modified: Tue, 30 Aug 2016 21:59:08 GMT  
+		Size: 18.5 MB (18527264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0074002c1ca76702061f6dfe93bdb1b5201bbf68fc2e007cd11af7d8ab54e301`  
-		Last Modified: Tue, 30 Aug 2016 21:10:06 GMT  
-		Size: 566.7 KB (566663 bytes)  
+	-	`sha256:b165e84cccc10bc56e89091e37339ab98afbef36d1f06cd9c1c531af4dc18aa1`  
+		Last Modified: Wed, 31 Aug 2016 17:24:31 GMT  
+		Size: 566.9 KB (566898 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e90c17f561d17c5f595aa211d721de8f0d7154d48b49616b90a79c4b4a6f036`  
-		Last Modified: Tue, 30 Aug 2016 21:13:08 GMT  
-		Size: 241.0 B  
+	-	`sha256:65f65ec902a1b1e7ebbd6d2f0be784334776d98e700d95657308a4e93becdf32`  
+		Last Modified: Wed, 31 Aug 2016 17:24:30 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41423c830a15264d281c65936b0c3b0a1db6376d0b9b780a092f2c3f06dab4cc`  
-		Last Modified: Tue, 30 Aug 2016 21:13:25 GMT  
-		Size: 77.7 MB (77712533 bytes)  
+	-	`sha256:c7e29d14c31c0752f233600a073a4e0e439dcf16305d5fe8e081684071e6381f`  
+		Last Modified: Wed, 31 Aug 2016 17:24:48 GMT  
+		Size: 77.7 MB (77713068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aba30ef4cf5746c788fc2df9abbd8edd1edd324540a6dea1e3e60b72e39bd927`  
-		Last Modified: Tue, 30 Aug 2016 21:13:07 GMT  
-		Size: 2.1 KB (2086 bytes)  
+	-	`sha256:8dce28e54d1f9227089efdaba6f3265623d5fe4083e0adda89daea59cc503ab4`  
+		Last Modified: Wed, 31 Aug 2016 20:54:20 GMT  
+		Size: 2.1 KB (2082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e81591adfade6c9ea697bf6e921eaa1f90da757c9ad6467e0621a6fc5895800`  
-		Last Modified: Tue, 30 Aug 2016 21:13:06 GMT  
+	-	`sha256:112226fdbf95e35d78343aafd8f995972e393dc27a2a7d38028175653c187119`  
+		Last Modified: Wed, 31 Aug 2016 20:54:20 GMT  
 		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b2ac6d9a5714dca9d4b12071b39273db3b778bc1a654f204d435f63887075d3`  
-		Last Modified: Tue, 30 Aug 2016 21:13:05 GMT  
-		Size: 10.0 MB (10004229 bytes)  
+	-	`sha256:ed96e1340437b42d8ff918e66bc23ae812e3d1b4551f3893912659c4c5b29a34`  
+		Last Modified: Wed, 31 Aug 2016 20:54:18 GMT  
+		Size: 10.0 MB (10004221 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ddc5954f170b4479bf170e00e9228f5d8145862b93a87ffacd8c0b3ad7a299b9`  
-		Last Modified: Tue, 30 Aug 2016 21:13:04 GMT  
-		Size: 130.0 B  
+	-	`sha256:215e18171f5a5c5f27a0b37468109fd60b0c82346ef9188dfb16421ed25531e7`  
+		Last Modified: Wed, 31 Aug 2016 20:54:17 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f598b87f4c87c3e8e4293a3e84e42abc4bb54003657a6f7611ec54ea38f020c`  
-		Last Modified: Tue, 30 Aug 2016 21:13:05 GMT  
-		Size: 1.6 KB (1576 bytes)  
+	-	`sha256:6cc2356ee4bae12e9ce0991a0f9f95f9fad7685d604b4e1283e964199cd4520f`  
+		Last Modified: Wed, 31 Aug 2016 20:54:17 GMT  
+		Size: 1.6 KB (1572 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95657c6d6f92e14eba324b1d27f2b30949c877dcf347dd007c72c0d4c5497576`  
-		Last Modified: Tue, 30 Aug 2016 21:13:05 GMT  
-		Size: 1.6 KB (1577 bytes)  
+	-	`sha256:58921901f7be4e1febd005b95fd8e6237b1e2ba61e84ae2d2de7c39c45f5d7d0`  
+		Last Modified: Wed, 31 Aug 2016 20:54:16 GMT  
+		Size: 1.6 KB (1572 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63470ad5af56ba5a6737e477848a588803bb25604ec5ba86c108f051da20eaba`  
-		Last Modified: Tue, 30 Aug 2016 21:13:04 GMT  
-		Size: 570.0 B  
+	-	`sha256:56e44b56a5e8245925aa93a7c0552f9e2135de25dfa954922ad69347a0087f3f`  
+		Last Modified: Wed, 31 Aug 2016 20:54:17 GMT  
+		Size: 572.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

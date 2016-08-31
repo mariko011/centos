@@ -11,7 +11,7 @@
 ## `glassfish:4.0-jdk7`
 
 ```console
-$ docker pull glassfish@sha256:d648bc87665a3e217894561dbfe2f5c1b2b86543519b98d58bcd7051c6c1f672
+$ docker pull glassfish@sha256:39d7aca6d06c6c8fe496b3a9d412a0bd3e4d4d8365f493232a2c54d470db6157
 ```
 
 -	Platforms:
@@ -19,92 +19,92 @@ $ docker pull glassfish@sha256:d648bc87665a3e217894561dbfe2f5c1b2b86543519b98d58
 
 ### `glassfish:4.0-jdk7` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **354.8 MB (354775750 bytes)**  
+-	Total Size: **354.3 MB (354280250 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:22104e73ab968f8110bd6dc9fd89c4c6fc1fb89f10f5c43e8002df2a332e3afb`
+-	Image ID: `sha256:9017ed8b84b2c1448e43cbf1ae4448db1d8f3954e480b0a2db9605d4da2dd399`
 -	Default Command: `["\/bin\/sh","-c","asadmin start-domain --verbose"]`
 
 ```dockerfile
-# Thu, 28 Jul 2016 17:47:54 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
-# Thu, 28 Jul 2016 17:47:55 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Thu, 28 Jul 2016 17:57:57 GMT
+# Tue, 30 Aug 2016 21:52:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 28 Jul 2016 17:59:13 GMT
+# Tue, 30 Aug 2016 21:52:34 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 05 Aug 2016 22:02:58 GMT
+# Wed, 31 Aug 2016 17:12:26 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 05 Aug 2016 22:02:59 GMT
+# Wed, 31 Aug 2016 17:12:26 GMT
 ENV LANG=C.UTF-8
-# Fri, 05 Aug 2016 22:03:00 GMT
+# Wed, 31 Aug 2016 17:12:27 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Fri, 05 Aug 2016 22:03:01 GMT
+# Wed, 31 Aug 2016 17:12:28 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-# Fri, 05 Aug 2016 22:03:02 GMT
+# Wed, 31 Aug 2016 17:12:28 GMT
 ENV JAVA_VERSION=7u111
-# Fri, 05 Aug 2016 22:03:03 GMT
+# Wed, 31 Aug 2016 17:12:28 GMT
 ENV JAVA_DEBIAN_VERSION=7u111-2.6.7-1~deb8u1
-# Fri, 05 Aug 2016 22:05:01 GMT
+# Wed, 31 Aug 2016 17:13:45 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Mon, 08 Aug 2016 17:40:17 GMT
+# Wed, 31 Aug 2016 20:48:01 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-# Mon, 08 Aug 2016 17:40:18 GMT
+# Wed, 31 Aug 2016 20:48:01 GMT
 ENV GLASSFISH_HOME=/usr/local/glassfish4
-# Mon, 08 Aug 2016 17:40:18 GMT
+# Wed, 31 Aug 2016 20:48:02 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-7-openjdk-amd64/bin:/usr/local/glassfish4/bin
-# Mon, 08 Aug 2016 17:41:21 GMT
+# Wed, 31 Aug 2016 20:48:10 GMT
 RUN apt-get update &&             apt-get install -y curl unzip zip inotify-tools &&             rm -rf /var/lib/apt/lists/*
-# Mon, 08 Aug 2016 17:41:32 GMT
+# Wed, 31 Aug 2016 20:48:16 GMT
 RUN curl -L -o /tmp/glassfish-4.0.zip http://download.java.net/glassfish/4.0/release/glassfish-4.0.zip &&             unzip /tmp/glassfish-4.0.zip -d /usr/local &&             rm -f /tmp/glassfish-4.0.zip
-# Mon, 08 Aug 2016 17:41:33 GMT
+# Wed, 31 Aug 2016 20:48:16 GMT
 EXPOSE 4848/tcp 8080/tcp 8181/tcp
-# Mon, 08 Aug 2016 17:41:34 GMT
+# Wed, 31 Aug 2016 20:48:16 GMT
 WORKDIR /usr/local/glassfish4
-# Mon, 08 Aug 2016 17:41:35 GMT
+# Wed, 31 Aug 2016 20:48:16 GMT
 CMD ["/bin/sh" "-c" "asadmin start-domain --verbose"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
-		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)  
+	-	`sha256:751fe39c4d348c7fc411d46929c1dac390e3d7107efc9f8f69641b50e14459f7`  
+		Last Modified: Tue, 30 Aug 2016 21:59:08 GMT  
+		Size: 18.5 MB (18527264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
-		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)  
+	-	`sha256:ae3b77eefc06095198ecb7e758833493eab01708fae7f408b0631e6463c31a48`  
+		Last Modified: Tue, 30 Aug 2016 21:59:22 GMT  
+		Size: 42.5 MB (42495629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
-		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 593.2 KB (593224 bytes)  
+	-	`sha256:8b357fc28db91a380d7af3e914aecbd0f395b8a84892ace50c54abb56460fe87`  
+		Last Modified: Wed, 31 Aug 2016 17:21:39 GMT  
+		Size: 593.3 KB (593342 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7bbd9fac5727074a3af671d929e588dc9d9b1f78cdf87523ac35926fe8cd7e01`  
-		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
+	-	`sha256:a20e1d6ebfbde12fa4aedce90247d62e887e340cdcdce54a960ed189adb5aa7e`  
+		Last Modified: Wed, 31 Aug 2016 17:21:38 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15f5ec8580f15fa5e9ab163c0e8e1ef1153596f9ef3184c4ed141f4d1e41ac4a`  
-		Last Modified: Fri, 05 Aug 2016 22:13:01 GMT  
-		Size: 139.6 MB (139604792 bytes)  
+	-	`sha256:617f4f214be685f5db5a232b29b8842c9a6db561aa0c0e90942a2c862fe212ea`  
+		Last Modified: Wed, 31 Aug 2016 17:22:19 GMT  
+		Size: 139.6 MB (139611253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:552f51f5921e4825e9026da1a6c0cba4ff50d6854231c785be46d9d2a3b4fb36`  
-		Last Modified: Mon, 08 Aug 2016 17:41:45 GMT  
-		Size: 1.1 MB (1082077 bytes)  
+	-	`sha256:958edb780ea4b67b0778f2090b5394e1c99f55a5bd299d4a12ac80e681b9a391`  
+		Last Modified: Wed, 31 Aug 2016 20:48:24 GMT  
+		Size: 577.8 KB (577818 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6d5e5cc77f76519461cbf7669d49dfd84684230738683d6b0c513a2e4d47275`  
-		Last Modified: Mon, 08 Aug 2016 17:41:53 GMT  
-		Size: 101.1 MB (101107444 bytes)  
+	-	`sha256:edd8198d9dde514250dc64ab5bdeb33c367b33700256944f001fb067988e57ec`  
+		Last Modified: Wed, 31 Aug 2016 20:48:33 GMT  
+		Size: 101.1 MB (101107437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `glassfish:4.0`
 
 ```console
-$ docker pull glassfish@sha256:d648bc87665a3e217894561dbfe2f5c1b2b86543519b98d58bcd7051c6c1f672
+$ docker pull glassfish@sha256:39d7aca6d06c6c8fe496b3a9d412a0bd3e4d4d8365f493232a2c54d470db6157
 ```
 
 -	Platforms:
@@ -112,92 +112,92 @@ $ docker pull glassfish@sha256:d648bc87665a3e217894561dbfe2f5c1b2b86543519b98d58
 
 ### `glassfish:4.0` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **354.8 MB (354775750 bytes)**  
+-	Total Size: **354.3 MB (354280250 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:22104e73ab968f8110bd6dc9fd89c4c6fc1fb89f10f5c43e8002df2a332e3afb`
+-	Image ID: `sha256:9017ed8b84b2c1448e43cbf1ae4448db1d8f3954e480b0a2db9605d4da2dd399`
 -	Default Command: `["\/bin\/sh","-c","asadmin start-domain --verbose"]`
 
 ```dockerfile
-# Thu, 28 Jul 2016 17:47:54 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
-# Thu, 28 Jul 2016 17:47:55 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Thu, 28 Jul 2016 17:57:57 GMT
+# Tue, 30 Aug 2016 21:52:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 28 Jul 2016 17:59:13 GMT
+# Tue, 30 Aug 2016 21:52:34 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 05 Aug 2016 22:02:58 GMT
+# Wed, 31 Aug 2016 17:12:26 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 05 Aug 2016 22:02:59 GMT
+# Wed, 31 Aug 2016 17:12:26 GMT
 ENV LANG=C.UTF-8
-# Fri, 05 Aug 2016 22:03:00 GMT
+# Wed, 31 Aug 2016 17:12:27 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Fri, 05 Aug 2016 22:03:01 GMT
+# Wed, 31 Aug 2016 17:12:28 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-# Fri, 05 Aug 2016 22:03:02 GMT
+# Wed, 31 Aug 2016 17:12:28 GMT
 ENV JAVA_VERSION=7u111
-# Fri, 05 Aug 2016 22:03:03 GMT
+# Wed, 31 Aug 2016 17:12:28 GMT
 ENV JAVA_DEBIAN_VERSION=7u111-2.6.7-1~deb8u1
-# Fri, 05 Aug 2016 22:05:01 GMT
+# Wed, 31 Aug 2016 17:13:45 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Mon, 08 Aug 2016 17:40:17 GMT
+# Wed, 31 Aug 2016 20:48:01 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-# Mon, 08 Aug 2016 17:40:18 GMT
+# Wed, 31 Aug 2016 20:48:01 GMT
 ENV GLASSFISH_HOME=/usr/local/glassfish4
-# Mon, 08 Aug 2016 17:40:18 GMT
+# Wed, 31 Aug 2016 20:48:02 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-7-openjdk-amd64/bin:/usr/local/glassfish4/bin
-# Mon, 08 Aug 2016 17:41:21 GMT
+# Wed, 31 Aug 2016 20:48:10 GMT
 RUN apt-get update &&             apt-get install -y curl unzip zip inotify-tools &&             rm -rf /var/lib/apt/lists/*
-# Mon, 08 Aug 2016 17:41:32 GMT
+# Wed, 31 Aug 2016 20:48:16 GMT
 RUN curl -L -o /tmp/glassfish-4.0.zip http://download.java.net/glassfish/4.0/release/glassfish-4.0.zip &&             unzip /tmp/glassfish-4.0.zip -d /usr/local &&             rm -f /tmp/glassfish-4.0.zip
-# Mon, 08 Aug 2016 17:41:33 GMT
+# Wed, 31 Aug 2016 20:48:16 GMT
 EXPOSE 4848/tcp 8080/tcp 8181/tcp
-# Mon, 08 Aug 2016 17:41:34 GMT
+# Wed, 31 Aug 2016 20:48:16 GMT
 WORKDIR /usr/local/glassfish4
-# Mon, 08 Aug 2016 17:41:35 GMT
+# Wed, 31 Aug 2016 20:48:16 GMT
 CMD ["/bin/sh" "-c" "asadmin start-domain --verbose"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
-		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)  
+	-	`sha256:751fe39c4d348c7fc411d46929c1dac390e3d7107efc9f8f69641b50e14459f7`  
+		Last Modified: Tue, 30 Aug 2016 21:59:08 GMT  
+		Size: 18.5 MB (18527264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
-		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)  
+	-	`sha256:ae3b77eefc06095198ecb7e758833493eab01708fae7f408b0631e6463c31a48`  
+		Last Modified: Tue, 30 Aug 2016 21:59:22 GMT  
+		Size: 42.5 MB (42495629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
-		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 593.2 KB (593224 bytes)  
+	-	`sha256:8b357fc28db91a380d7af3e914aecbd0f395b8a84892ace50c54abb56460fe87`  
+		Last Modified: Wed, 31 Aug 2016 17:21:39 GMT  
+		Size: 593.3 KB (593342 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7bbd9fac5727074a3af671d929e588dc9d9b1f78cdf87523ac35926fe8cd7e01`  
-		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
+	-	`sha256:a20e1d6ebfbde12fa4aedce90247d62e887e340cdcdce54a960ed189adb5aa7e`  
+		Last Modified: Wed, 31 Aug 2016 17:21:38 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15f5ec8580f15fa5e9ab163c0e8e1ef1153596f9ef3184c4ed141f4d1e41ac4a`  
-		Last Modified: Fri, 05 Aug 2016 22:13:01 GMT  
-		Size: 139.6 MB (139604792 bytes)  
+	-	`sha256:617f4f214be685f5db5a232b29b8842c9a6db561aa0c0e90942a2c862fe212ea`  
+		Last Modified: Wed, 31 Aug 2016 17:22:19 GMT  
+		Size: 139.6 MB (139611253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:552f51f5921e4825e9026da1a6c0cba4ff50d6854231c785be46d9d2a3b4fb36`  
-		Last Modified: Mon, 08 Aug 2016 17:41:45 GMT  
-		Size: 1.1 MB (1082077 bytes)  
+	-	`sha256:958edb780ea4b67b0778f2090b5394e1c99f55a5bd299d4a12ac80e681b9a391`  
+		Last Modified: Wed, 31 Aug 2016 20:48:24 GMT  
+		Size: 577.8 KB (577818 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a6d5e5cc77f76519461cbf7669d49dfd84684230738683d6b0c513a2e4d47275`  
-		Last Modified: Mon, 08 Aug 2016 17:41:53 GMT  
-		Size: 101.1 MB (101107444 bytes)  
+	-	`sha256:edd8198d9dde514250dc64ab5bdeb33c367b33700256944f001fb067988e57ec`  
+		Last Modified: Wed, 31 Aug 2016 20:48:33 GMT  
+		Size: 101.1 MB (101107437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `glassfish:4.1-jdk8`
 
 ```console
-$ docker pull glassfish@sha256:50d6081ae0285d35cf589e4af5eeb3d146f2dcd64e19bb3c92c002a53814a05c
+$ docker pull glassfish@sha256:a2fe5b97b07833684c6531c4b0a33b209fe90397c621f805794a212f4761dc02
 ```
 
 -	Platforms:
@@ -205,106 +205,106 @@ $ docker pull glassfish@sha256:50d6081ae0285d35cf589e4af5eeb3d146f2dcd64e19bb3c9
 
 ### `glassfish:4.1-jdk8` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **351.1 MB (351096663 bytes)**  
+-	Total Size: **350.6 MB (350596906 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8eec71077267fd5ef2226cbc06b005b85b3feef28e1562484d2c0f1dc6b9b77a`
+-	Image ID: `sha256:1631e1e4abb5db2228889523b1185b393197bb5cb7892f703ed6c777eeef01b7`
 -	Default Command: `["\/bin\/sh","-c","asadmin start-domain --verbose"]`
 
 ```dockerfile
-# Thu, 28 Jul 2016 17:47:54 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
-# Thu, 28 Jul 2016 17:47:55 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Thu, 28 Jul 2016 17:57:57 GMT
+# Tue, 30 Aug 2016 21:52:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 28 Jul 2016 17:59:13 GMT
+# Tue, 30 Aug 2016 21:52:34 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 05 Aug 2016 22:02:58 GMT
+# Wed, 31 Aug 2016 17:12:26 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 05 Aug 2016 22:06:43 GMT
+# Wed, 31 Aug 2016 17:15:01 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Fri, 05 Aug 2016 22:06:43 GMT
+# Wed, 31 Aug 2016 17:15:01 GMT
 ENV LANG=C.UTF-8
-# Fri, 05 Aug 2016 22:06:45 GMT
+# Wed, 31 Aug 2016 17:15:02 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Fri, 05 Aug 2016 22:06:46 GMT
+# Wed, 31 Aug 2016 17:15:02 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Wed, 10 Aug 2016 18:34:54 GMT
+# Wed, 31 Aug 2016 17:15:02 GMT
 ENV JAVA_VERSION=8u102
-# Wed, 10 Aug 2016 18:34:55 GMT
+# Wed, 31 Aug 2016 17:15:03 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Wed, 10 Aug 2016 18:34:55 GMT
+# Wed, 31 Aug 2016 17:15:03 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Wed, 10 Aug 2016 18:41:25 GMT
+# Wed, 31 Aug 2016 17:16:04 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 10 Aug 2016 18:41:32 GMT
+# Wed, 31 Aug 2016 17:16:05 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Thu, 11 Aug 2016 17:34:50 GMT
+# Wed, 31 Aug 2016 20:48:49 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Thu, 11 Aug 2016 17:34:50 GMT
+# Wed, 31 Aug 2016 20:48:50 GMT
 ENV GLASSFISH_HOME=/usr/local/glassfish4
-# Thu, 11 Aug 2016 17:34:51 GMT
+# Wed, 31 Aug 2016 20:48:50 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-8-openjdk-amd64/bin:/usr/local/glassfish4/bin
-# Thu, 11 Aug 2016 17:35:55 GMT
+# Wed, 31 Aug 2016 20:48:58 GMT
 RUN apt-get update &&             apt-get install -y curl unzip zip inotify-tools &&             rm -rf /var/lib/apt/lists/*
-# Thu, 11 Aug 2016 17:36:06 GMT
+# Wed, 31 Aug 2016 20:49:17 GMT
 RUN curl -L -o /tmp/glassfish-4.1.zip http://download.java.net/glassfish/4.1/release/glassfish-4.1.zip &&             unzip /tmp/glassfish-4.1.zip -d /usr/local &&             rm -f /tmp/glassfish-4.1.zip
-# Thu, 11 Aug 2016 17:36:07 GMT
+# Wed, 31 Aug 2016 20:49:17 GMT
 EXPOSE 4848/tcp 8080/tcp 8181/tcp
-# Thu, 11 Aug 2016 17:36:08 GMT
+# Wed, 31 Aug 2016 20:49:18 GMT
 WORKDIR /usr/local/glassfish4
-# Thu, 11 Aug 2016 17:36:09 GMT
+# Wed, 31 Aug 2016 20:49:18 GMT
 CMD ["/bin/sh" "-c" "asadmin start-domain --verbose"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
-		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)  
+	-	`sha256:751fe39c4d348c7fc411d46929c1dac390e3d7107efc9f8f69641b50e14459f7`  
+		Last Modified: Tue, 30 Aug 2016 21:59:08 GMT  
+		Size: 18.5 MB (18527264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
-		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)  
+	-	`sha256:ae3b77eefc06095198ecb7e758833493eab01708fae7f408b0631e6463c31a48`  
+		Last Modified: Tue, 30 Aug 2016 21:59:22 GMT  
+		Size: 42.5 MB (42495629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
-		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 593.2 KB (593224 bytes)  
+	-	`sha256:8b357fc28db91a380d7af3e914aecbd0f395b8a84892ace50c54abb56460fe87`  
+		Last Modified: Wed, 31 Aug 2016 17:21:39 GMT  
+		Size: 593.3 KB (593342 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
-		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 220.0 B  
+	-	`sha256:1a614fcb4b1be6e9b94f188ac859803e5214d24c2af86c6437bd74817e75613d`  
+		Last Modified: Wed, 31 Aug 2016 17:26:12 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
-		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+	-	`sha256:1fcd29499236d6a936fbacb8d65340eeb7177b930148fb1c401d5fa71ab88c82`  
+		Last Modified: Wed, 31 Aug 2016 17:26:12 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5e3695c1a93559e79e9203e80ba22855cd93c2105e5e346aaebf4c7673183eb`  
-		Last Modified: Wed, 10 Aug 2016 18:49:58 GMT  
-		Size: 130.1 MB (130071319 bytes)  
+	-	`sha256:1df99ed2f401ca635670635998c2b540cc748e390ffd8b47a2092815e6cb56b6`  
+		Last Modified: Wed, 31 Aug 2016 17:26:53 GMT  
+		Size: 130.1 MB (130073666 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a37afaae8f5b70acee6cc9f963e7ffe068bbc02e2eb59b01e64f4b50cafa22f0`  
-		Last Modified: Wed, 10 Aug 2016 18:49:28 GMT  
-		Size: 284.4 KB (284396 bytes)  
+	-	`sha256:c4b6cf75aef4eade93918ef73b6c2896c664f50fdb8e6f5e4c586c05a3d4c864`  
+		Last Modified: Wed, 31 Aug 2016 17:26:13 GMT  
+		Size: 284.2 KB (284227 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:22c45aff491831ad8caa645c639cec9661a3bc7b09b7db54b2f4dddeeeb0c3c9`  
-		Last Modified: Thu, 11 Aug 2016 17:36:20 GMT  
-		Size: 1.1 MB (1080426 bytes)  
+	-	`sha256:acc9457f01bb1aa3df4fc9c85fc3199da0cf768a13052ea3262ffad263ed23ca`  
+		Last Modified: Wed, 31 Aug 2016 20:49:24 GMT  
+		Size: 576.1 KB (576141 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66747d3b7fd143e7a9d0f730a089498bf39079264bd294f49a300df399dc04f3`  
-		Last Modified: Thu, 11 Aug 2016 17:36:31 GMT  
-		Size: 106.7 MB (106678864 bytes)  
+	-	`sha256:4f67e70ed4138e430b855072344ba9b224fef8245b0fea8dec163e7f42018e29`  
+		Last Modified: Wed, 31 Aug 2016 20:49:34 GMT  
+		Size: 106.7 MB (106678911 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `glassfish:4.1`
 
 ```console
-$ docker pull glassfish@sha256:50d6081ae0285d35cf589e4af5eeb3d146f2dcd64e19bb3c92c002a53814a05c
+$ docker pull glassfish@sha256:a2fe5b97b07833684c6531c4b0a33b209fe90397c621f805794a212f4761dc02
 ```
 
 -	Platforms:
@@ -312,106 +312,106 @@ $ docker pull glassfish@sha256:50d6081ae0285d35cf589e4af5eeb3d146f2dcd64e19bb3c9
 
 ### `glassfish:4.1` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **351.1 MB (351096663 bytes)**  
+-	Total Size: **350.6 MB (350596906 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8eec71077267fd5ef2226cbc06b005b85b3feef28e1562484d2c0f1dc6b9b77a`
+-	Image ID: `sha256:1631e1e4abb5db2228889523b1185b393197bb5cb7892f703ed6c777eeef01b7`
 -	Default Command: `["\/bin\/sh","-c","asadmin start-domain --verbose"]`
 
 ```dockerfile
-# Thu, 28 Jul 2016 17:47:54 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
-# Thu, 28 Jul 2016 17:47:55 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Thu, 28 Jul 2016 17:57:57 GMT
+# Tue, 30 Aug 2016 21:52:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 28 Jul 2016 17:59:13 GMT
+# Tue, 30 Aug 2016 21:52:34 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 05 Aug 2016 22:02:58 GMT
+# Wed, 31 Aug 2016 17:12:26 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 05 Aug 2016 22:06:43 GMT
+# Wed, 31 Aug 2016 17:15:01 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Fri, 05 Aug 2016 22:06:43 GMT
+# Wed, 31 Aug 2016 17:15:01 GMT
 ENV LANG=C.UTF-8
-# Fri, 05 Aug 2016 22:06:45 GMT
+# Wed, 31 Aug 2016 17:15:02 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Fri, 05 Aug 2016 22:06:46 GMT
+# Wed, 31 Aug 2016 17:15:02 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Wed, 10 Aug 2016 18:34:54 GMT
+# Wed, 31 Aug 2016 17:15:02 GMT
 ENV JAVA_VERSION=8u102
-# Wed, 10 Aug 2016 18:34:55 GMT
+# Wed, 31 Aug 2016 17:15:03 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Wed, 10 Aug 2016 18:34:55 GMT
+# Wed, 31 Aug 2016 17:15:03 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Wed, 10 Aug 2016 18:41:25 GMT
+# Wed, 31 Aug 2016 17:16:04 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 10 Aug 2016 18:41:32 GMT
+# Wed, 31 Aug 2016 17:16:05 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Thu, 11 Aug 2016 17:34:50 GMT
+# Wed, 31 Aug 2016 20:48:49 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Thu, 11 Aug 2016 17:34:50 GMT
+# Wed, 31 Aug 2016 20:48:50 GMT
 ENV GLASSFISH_HOME=/usr/local/glassfish4
-# Thu, 11 Aug 2016 17:34:51 GMT
+# Wed, 31 Aug 2016 20:48:50 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-8-openjdk-amd64/bin:/usr/local/glassfish4/bin
-# Thu, 11 Aug 2016 17:35:55 GMT
+# Wed, 31 Aug 2016 20:48:58 GMT
 RUN apt-get update &&             apt-get install -y curl unzip zip inotify-tools &&             rm -rf /var/lib/apt/lists/*
-# Thu, 11 Aug 2016 17:36:06 GMT
+# Wed, 31 Aug 2016 20:49:17 GMT
 RUN curl -L -o /tmp/glassfish-4.1.zip http://download.java.net/glassfish/4.1/release/glassfish-4.1.zip &&             unzip /tmp/glassfish-4.1.zip -d /usr/local &&             rm -f /tmp/glassfish-4.1.zip
-# Thu, 11 Aug 2016 17:36:07 GMT
+# Wed, 31 Aug 2016 20:49:17 GMT
 EXPOSE 4848/tcp 8080/tcp 8181/tcp
-# Thu, 11 Aug 2016 17:36:08 GMT
+# Wed, 31 Aug 2016 20:49:18 GMT
 WORKDIR /usr/local/glassfish4
-# Thu, 11 Aug 2016 17:36:09 GMT
+# Wed, 31 Aug 2016 20:49:18 GMT
 CMD ["/bin/sh" "-c" "asadmin start-domain --verbose"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
-		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)  
+	-	`sha256:751fe39c4d348c7fc411d46929c1dac390e3d7107efc9f8f69641b50e14459f7`  
+		Last Modified: Tue, 30 Aug 2016 21:59:08 GMT  
+		Size: 18.5 MB (18527264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
-		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)  
+	-	`sha256:ae3b77eefc06095198ecb7e758833493eab01708fae7f408b0631e6463c31a48`  
+		Last Modified: Tue, 30 Aug 2016 21:59:22 GMT  
+		Size: 42.5 MB (42495629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
-		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 593.2 KB (593224 bytes)  
+	-	`sha256:8b357fc28db91a380d7af3e914aecbd0f395b8a84892ace50c54abb56460fe87`  
+		Last Modified: Wed, 31 Aug 2016 17:21:39 GMT  
+		Size: 593.3 KB (593342 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
-		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 220.0 B  
+	-	`sha256:1a614fcb4b1be6e9b94f188ac859803e5214d24c2af86c6437bd74817e75613d`  
+		Last Modified: Wed, 31 Aug 2016 17:26:12 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
-		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+	-	`sha256:1fcd29499236d6a936fbacb8d65340eeb7177b930148fb1c401d5fa71ab88c82`  
+		Last Modified: Wed, 31 Aug 2016 17:26:12 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5e3695c1a93559e79e9203e80ba22855cd93c2105e5e346aaebf4c7673183eb`  
-		Last Modified: Wed, 10 Aug 2016 18:49:58 GMT  
-		Size: 130.1 MB (130071319 bytes)  
+	-	`sha256:1df99ed2f401ca635670635998c2b540cc748e390ffd8b47a2092815e6cb56b6`  
+		Last Modified: Wed, 31 Aug 2016 17:26:53 GMT  
+		Size: 130.1 MB (130073666 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a37afaae8f5b70acee6cc9f963e7ffe068bbc02e2eb59b01e64f4b50cafa22f0`  
-		Last Modified: Wed, 10 Aug 2016 18:49:28 GMT  
-		Size: 284.4 KB (284396 bytes)  
+	-	`sha256:c4b6cf75aef4eade93918ef73b6c2896c664f50fdb8e6f5e4c586c05a3d4c864`  
+		Last Modified: Wed, 31 Aug 2016 17:26:13 GMT  
+		Size: 284.2 KB (284227 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:22c45aff491831ad8caa645c639cec9661a3bc7b09b7db54b2f4dddeeeb0c3c9`  
-		Last Modified: Thu, 11 Aug 2016 17:36:20 GMT  
-		Size: 1.1 MB (1080426 bytes)  
+	-	`sha256:acc9457f01bb1aa3df4fc9c85fc3199da0cf768a13052ea3262ffad263ed23ca`  
+		Last Modified: Wed, 31 Aug 2016 20:49:24 GMT  
+		Size: 576.1 KB (576141 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66747d3b7fd143e7a9d0f730a089498bf39079264bd294f49a300df399dc04f3`  
-		Last Modified: Thu, 11 Aug 2016 17:36:31 GMT  
-		Size: 106.7 MB (106678864 bytes)  
+	-	`sha256:4f67e70ed4138e430b855072344ba9b224fef8245b0fea8dec163e7f42018e29`  
+		Last Modified: Wed, 31 Aug 2016 20:49:34 GMT  
+		Size: 106.7 MB (106678911 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `glassfish:latest`
 
 ```console
-$ docker pull glassfish@sha256:50d6081ae0285d35cf589e4af5eeb3d146f2dcd64e19bb3c92c002a53814a05c
+$ docker pull glassfish@sha256:a2fe5b97b07833684c6531c4b0a33b209fe90397c621f805794a212f4761dc02
 ```
 
 -	Platforms:
@@ -419,98 +419,98 @@ $ docker pull glassfish@sha256:50d6081ae0285d35cf589e4af5eeb3d146f2dcd64e19bb3c9
 
 ### `glassfish:latest` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **351.1 MB (351096663 bytes)**  
+-	Total Size: **350.6 MB (350596906 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8eec71077267fd5ef2226cbc06b005b85b3feef28e1562484d2c0f1dc6b9b77a`
+-	Image ID: `sha256:1631e1e4abb5db2228889523b1185b393197bb5cb7892f703ed6c777eeef01b7`
 -	Default Command: `["\/bin\/sh","-c","asadmin start-domain --verbose"]`
 
 ```dockerfile
-# Thu, 28 Jul 2016 17:47:54 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
-# Thu, 28 Jul 2016 17:47:55 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Thu, 28 Jul 2016 17:57:57 GMT
+# Tue, 30 Aug 2016 21:52:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 28 Jul 2016 17:59:13 GMT
+# Tue, 30 Aug 2016 21:52:34 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 05 Aug 2016 22:02:58 GMT
+# Wed, 31 Aug 2016 17:12:26 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 05 Aug 2016 22:06:43 GMT
+# Wed, 31 Aug 2016 17:15:01 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Fri, 05 Aug 2016 22:06:43 GMT
+# Wed, 31 Aug 2016 17:15:01 GMT
 ENV LANG=C.UTF-8
-# Fri, 05 Aug 2016 22:06:45 GMT
+# Wed, 31 Aug 2016 17:15:02 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Fri, 05 Aug 2016 22:06:46 GMT
+# Wed, 31 Aug 2016 17:15:02 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Wed, 10 Aug 2016 18:34:54 GMT
+# Wed, 31 Aug 2016 17:15:02 GMT
 ENV JAVA_VERSION=8u102
-# Wed, 10 Aug 2016 18:34:55 GMT
+# Wed, 31 Aug 2016 17:15:03 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Wed, 10 Aug 2016 18:34:55 GMT
+# Wed, 31 Aug 2016 17:15:03 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Wed, 10 Aug 2016 18:41:25 GMT
+# Wed, 31 Aug 2016 17:16:04 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 10 Aug 2016 18:41:32 GMT
+# Wed, 31 Aug 2016 17:16:05 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Thu, 11 Aug 2016 17:34:50 GMT
+# Wed, 31 Aug 2016 20:48:49 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Thu, 11 Aug 2016 17:34:50 GMT
+# Wed, 31 Aug 2016 20:48:50 GMT
 ENV GLASSFISH_HOME=/usr/local/glassfish4
-# Thu, 11 Aug 2016 17:34:51 GMT
+# Wed, 31 Aug 2016 20:48:50 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-8-openjdk-amd64/bin:/usr/local/glassfish4/bin
-# Thu, 11 Aug 2016 17:35:55 GMT
+# Wed, 31 Aug 2016 20:48:58 GMT
 RUN apt-get update &&             apt-get install -y curl unzip zip inotify-tools &&             rm -rf /var/lib/apt/lists/*
-# Thu, 11 Aug 2016 17:36:06 GMT
+# Wed, 31 Aug 2016 20:49:17 GMT
 RUN curl -L -o /tmp/glassfish-4.1.zip http://download.java.net/glassfish/4.1/release/glassfish-4.1.zip &&             unzip /tmp/glassfish-4.1.zip -d /usr/local &&             rm -f /tmp/glassfish-4.1.zip
-# Thu, 11 Aug 2016 17:36:07 GMT
+# Wed, 31 Aug 2016 20:49:17 GMT
 EXPOSE 4848/tcp 8080/tcp 8181/tcp
-# Thu, 11 Aug 2016 17:36:08 GMT
+# Wed, 31 Aug 2016 20:49:18 GMT
 WORKDIR /usr/local/glassfish4
-# Thu, 11 Aug 2016 17:36:09 GMT
+# Wed, 31 Aug 2016 20:49:18 GMT
 CMD ["/bin/sh" "-c" "asadmin start-domain --verbose"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
-		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
-		Size: 18.5 MB (18526978 bytes)  
+	-	`sha256:751fe39c4d348c7fc411d46929c1dac390e3d7107efc9f8f69641b50e14459f7`  
+		Last Modified: Tue, 30 Aug 2016 21:59:08 GMT  
+		Size: 18.5 MB (18527264 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c0732d5313c8ec8477e518f3e0af81796bdb047ed48cf256333785fc9916ba1`  
-		Last Modified: Thu, 28 Jul 2016 21:52:20 GMT  
-		Size: 42.5 MB (42495385 bytes)  
+	-	`sha256:ae3b77eefc06095198ecb7e758833493eab01708fae7f408b0631e6463c31a48`  
+		Last Modified: Tue, 30 Aug 2016 21:59:22 GMT  
+		Size: 42.5 MB (42495629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:557cb7f84eb963a60165663691b52690b01249b98c7c106228ee789eaa5070a3`  
-		Last Modified: Fri, 05 Aug 2016 22:12:36 GMT  
-		Size: 593.2 KB (593224 bytes)  
+	-	`sha256:8b357fc28db91a380d7af3e914aecbd0f395b8a84892ace50c54abb56460fe87`  
+		Last Modified: Wed, 31 Aug 2016 17:21:39 GMT  
+		Size: 593.3 KB (593342 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:831d48be5871bba311d21a7394b6b46f4cb6ed31881212987bf0aae298230354`  
-		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
-		Size: 220.0 B  
+	-	`sha256:1a614fcb4b1be6e9b94f188ac859803e5214d24c2af86c6437bd74817e75613d`  
+		Last Modified: Wed, 31 Aug 2016 17:26:12 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fecf7eeb197dc492abce9acd7f0519424c7e5f34f4ffeffd721bf0277652d4d7`  
-		Last Modified: Fri, 05 Aug 2016 22:17:28 GMT  
+	-	`sha256:1fcd29499236d6a936fbacb8d65340eeb7177b930148fb1c401d5fa71ab88c82`  
+		Last Modified: Wed, 31 Aug 2016 17:26:12 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5e3695c1a93559e79e9203e80ba22855cd93c2105e5e346aaebf4c7673183eb`  
-		Last Modified: Wed, 10 Aug 2016 18:49:58 GMT  
-		Size: 130.1 MB (130071319 bytes)  
+	-	`sha256:1df99ed2f401ca635670635998c2b540cc748e390ffd8b47a2092815e6cb56b6`  
+		Last Modified: Wed, 31 Aug 2016 17:26:53 GMT  
+		Size: 130.1 MB (130073666 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a37afaae8f5b70acee6cc9f963e7ffe068bbc02e2eb59b01e64f4b50cafa22f0`  
-		Last Modified: Wed, 10 Aug 2016 18:49:28 GMT  
-		Size: 284.4 KB (284396 bytes)  
+	-	`sha256:c4b6cf75aef4eade93918ef73b6c2896c664f50fdb8e6f5e4c586c05a3d4c864`  
+		Last Modified: Wed, 31 Aug 2016 17:26:13 GMT  
+		Size: 284.2 KB (284227 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:22c45aff491831ad8caa645c639cec9661a3bc7b09b7db54b2f4dddeeeb0c3c9`  
-		Last Modified: Thu, 11 Aug 2016 17:36:20 GMT  
-		Size: 1.1 MB (1080426 bytes)  
+	-	`sha256:acc9457f01bb1aa3df4fc9c85fc3199da0cf768a13052ea3262ffad263ed23ca`  
+		Last Modified: Wed, 31 Aug 2016 20:49:24 GMT  
+		Size: 576.1 KB (576141 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66747d3b7fd143e7a9d0f730a089498bf39079264bd294f49a300df399dc04f3`  
-		Last Modified: Thu, 11 Aug 2016 17:36:31 GMT  
-		Size: 106.7 MB (106678864 bytes)  
+	-	`sha256:4f67e70ed4138e430b855072344ba9b224fef8245b0fea8dec163e7f42018e29`  
+		Last Modified: Wed, 31 Aug 2016 20:49:34 GMT  
+		Size: 106.7 MB (106678911 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
