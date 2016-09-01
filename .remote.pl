@@ -6,8 +6,6 @@ use open ':encoding(utf8)';
 
 use Mojo::UserAgent;
 
-die 'no images specified' unless @ARGV;
-
 my $mediaManifestList = 'application/vnd.docker.distribution.manifest.list.v2+json';
 my $mediaManifestV2 = 'application/vnd.docker.distribution.manifest.v2+json';
 my $mediaManifestV1 = 'application/vnd.docker.distribution.manifest.v1+json';
@@ -115,8 +113,8 @@ sub get_manifest {
 	my ($repo, $tag) = @_;
 
 	my $image = "$repo:$tag";
-	state %manifests;
-	return $manifests{$image} if $manifests{$image};
+	state (%manifests, %digests);
+	return ($digests{$image}, $manifests{$image}) if $digests{$image} and $manifests{$image};
 
 	my $manifestTx = registry_req(get => $repo => "manifests/$tag" => (
 			# prefer a "version 2" manifest
@@ -130,7 +128,7 @@ sub get_manifest {
 	return () if $manifestTx->res->code == 404; # tag doesn't exist
 	die "failed to get manifest for $image" unless $manifestTx->success;
 	return (
-		$manifestTx->res->headers->header('Docker-Content-Digest'),
+		$digests{$image} = $manifestTx->res->headers->header('Docker-Content-Digest'),
 		$manifests{$image} = $manifestTx->res->json,
 	);
 }
@@ -383,7 +381,7 @@ sub cmd_to_dockerfile {
 
 		my $str = $cmd->[0];
 		my @prefix = ();
-		if ($str =~ s!^[|]\d+ (.*?) $shellRegex!$2!) {
+		if ($str =~ s!^[|]\d+ (.*?) ($shellRegex)!$2!) {
 			push @prefix, '# ARGS: ' . $1;
 		}
 		if (substr($str, 0, 1) eq '|' && !@prefix) {
@@ -450,70 +448,98 @@ sub date {
 	return $date->to_string;
 }
 
-while (my $image = shift) {
-	print "\n";
+sub image_to_markdown {
+	my $image = shift;
 
-	say '## `' . $image . '`';
+	my $ret = '## `' . $image . '`' . "\n";
 
 	my $data = get_image_data($image);
 
 	unless ($data) {
 		# tag must not exist yet!
-		say "\n", '**does not exist** (yet?)';
-		next;
+		$ret .= "\n" . '**does not exist** (yet?)' . "\n";
+		return $ret;
 	}
 
 	my $repo = $data->{repo};
 	$repo =~ s!^library/!!;
 
-	print "\n";
-	say '```console';
-	say '$ docker pull ' . $repo . '@' . $data->{digest};
-	say '```';
+	$ret .= "\n";
+	$ret .= '```console' . "\n";
+	$ret .= '$ docker pull ' . $repo . '@' . $data->{digest} . "\n";
+	$ret .= '```' . "\n";
 
-	print "\n";
-	say "-\t" . 'Manifest MIME: `' . $data->{manifestVersion} . '`' if $data->{manifestVersion};
-	say "-\t" . 'Platforms:';
+	$ret .= "\n";
+	$ret .= "-\t" . 'Manifest MIME: `' . $data->{manifestVersion} . '`' . "\n" if $data->{manifestVersion};
+	$ret .= "-\t" . 'Platforms:' . "\n";
 	for my $imageData (@{ $data->{images} }) {
-		say "\t-\t" . platform_string($imageData->{platform});
+		$ret .= "\t-\t" . platform_string($imageData->{platform}) . "\n";
 	}
 
 	for my $imageData (@{ $data->{images} }) {
-		print "\n";
-		say '### `' . $image . '` - ' . platform_string($imageData->{platform});
+		$ret .= "\n";
+		$ret .= '### `' . $image . '` - ' . platform_string($imageData->{platform}) . "\n";
 
 		if ($imageData->{digest}) {
-			print "\n";
-			say '```console';
-			say '$ docker pull ' . $repo . '@' . $imageData->{digest};
-			say '```';
+			$ret .= "\n";
+			$ret .= '```console' . "\n";
+			$ret .= '$ docker pull ' . $repo . '@' . $imageData->{digest} . "\n";
+			$ret .= '```' . "\n";
 		}
 
-		print "\n";
-		say "-\t" . 'Docker Version: ' . $imageData->{dockerVersion} if $imageData->{dockerVersion};
-		say "-\t" . 'Manifest MIME: `' . $imageData->{manifestVersion} . '`' if $imageData->{manifestVersion};
-		say "-\t" . 'Total Size: **' . size($imageData->{size}) . '**  ';
-		say "\t" . '(compressed transfer size, not on-disk size)';
-		say "-\t" . 'Image ID: `' . $imageData->{imageId} . '`' if $imageData->{imageId};
-		say "-\t" . 'Entrypoint: `' . Mojo::JSON::encode_json($imageData->{entrypoint}) . '`' if $imageData->{entrypoint} && @{ $imageData->{entrypoint} };
-		say "-\t" . 'Default Command: `' . Mojo::JSON::encode_json($imageData->{defaultCommand}) . '`' if $imageData->{defaultCommand};
-		say "-\t" . '`SHELL`: `' . Mojo::JSON::encode_json($imageData->{shell}) . '`' if $imageData->{shell};
+		$ret .= "\n";
+		$ret .= "-\t" . 'Docker Version: ' . $imageData->{dockerVersion} . "\n" if $imageData->{dockerVersion};
+		$ret .= "-\t" . 'Manifest MIME: `' . $imageData->{manifestVersion} . '`' . "\n" if $imageData->{manifestVersion};
+		$ret .= "-\t" . 'Total Size: **' . size($imageData->{size}) . '**  ' . "\n";
+		$ret .= "\t" . '(compressed transfer size, not on-disk size)' . "\n";
+		$ret .= "-\t" . 'Image ID: `' . $imageData->{imageId} . '`' . "\n" if $imageData->{imageId};
+		$ret .= "-\t" . 'Entrypoint: `' . Mojo::JSON::encode_json($imageData->{entrypoint}) . '`' . "\n" if $imageData->{entrypoint} && @{ $imageData->{entrypoint} };
+		$ret .= "-\t" . 'Default Command: `' . Mojo::JSON::encode_json($imageData->{defaultCommand}) . '`' . "\n" if $imageData->{defaultCommand};
+		$ret .= "-\t" . '`SHELL`: `' . Mojo::JSON::encode_json($imageData->{shell}) . '`' . "\n" if $imageData->{shell};
 
-		print "\n";
-		say '```dockerfile';
+		$ret .= "\n";
+		$ret .= '```dockerfile' . "\n";
 		for my $command (@{ $imageData->{commands} }) {
-			say '# ' . date($command->{created});
-			say $command->{dockerfile};
+			$ret .= '# ' . date($command->{created}) . "\n";
+			$ret .= $command->{dockerfile} . "\n";
 		}
-		say '```';
+		$ret .= '```' . "\n";
 
-		print "\n";
-		say "-\t" . 'Layers:';
+		$ret .= "\n";
+		$ret .= "-\t" . 'Layers:' . "\n";
 		for my $layer (@{ $imageData->{layers} }) {
-			say "\t-\t" . '`' . $layer->{digest} . '`  ';
-			say "\t\t" . 'Last Modified: ' . date($layer->{lastModified}) . '  ' if defined $layer->{lastModified};
-			say "\t\t" . 'Size: ' . size($layer->{size}) . '  ' if defined $layer->{size};
-			say "\t\t" . 'MIME: ' . $layer->{mediaType};
+			$ret .= "\t-\t" . '`' . $layer->{digest} . '`  ' . "\n";
+			$ret .= "\t\t" . 'Last Modified: ' . date($layer->{lastModified}) . '  ' . "\n" if defined $layer->{lastModified};
+			$ret .= "\t\t" . 'Size: ' . size($layer->{size}) . '  ' . "\n" if defined $layer->{size};
+			$ret .= "\t\t" . 'MIME: ' . $layer->{mediaType} . "\n";
 		}
 	}
+
+	return $ret;
 }
+
+if (@ARGV && $ARGV[0] eq '--') {
+	# if the first argument is "--", we want to just generate markdown for images directly (no server)
+
+	shift;
+	die 'no images specified' unless @ARGV;
+
+	while (my $image = shift) {
+		print "\n" . image_to_markdown($image);
+	}
+
+	exit;
+}
+
+use Mojolicious::Lite;
+
+get '/markdown/*image' => sub {
+	my $c = shift;
+
+	my $image = $c->param('image');
+
+	$c->res->headers->content_type('text/plain');
+	$c->render(text => image_to_markdown($image));
+};
+
+app->start;

@@ -6,7 +6,7 @@ trap 'echo >&2 Ctrl+C captured, exiting; exit 1' SIGINT
 # going for "bashbrew: command not found"
 bashbrew --help > /dev/null
 
-docker build --pull -t repo-info:tag-details -q -f Dockerfile.tag-details . > /dev/null
+docker build --pull -t repo-info:remote -q -f Dockerfile.remote . > /dev/null
 
 repos=( "$@" )
 if [ ${#repos[@]} -eq 0 ]; then
@@ -39,7 +39,7 @@ for repo in "${repos[@]}"; do
 			href="#${href,,}"
 			echo $'-\t[`'"$tag"'`]('"$href"')'
 		done
-		docker run -i --rm repo-info:tag-details "${tags[@]}"
+		docker run -i --rm repo-info:remote -- "${tags[@]}"
 	} > "repos/$repo/tag-details.md"
 	echo 'done'
 done

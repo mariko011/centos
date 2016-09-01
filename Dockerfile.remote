@@ -17,5 +17,5 @@ RUN cpanm IO::Socket::IP
 RUN cpanm --notest IO::Socket::SSL
 # the tests for IO::Socket::SSL like to hang... :(
 
-COPY .tag-details.pl /usr/local/bin/tag-details.pl
-ENTRYPOINT ["tag-details.pl"]
+COPY .remote.pl /usr/local/bin/remote.pl
+ENTRYPOINT ["remote.pl"]
