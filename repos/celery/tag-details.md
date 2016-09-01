@@ -1,4 +1,4 @@
-<!-- THIS FILE IS GENERATED VIA './update-tag-details.sh' -->
+<!-- THIS FILE IS GENERATED VIA './update-remote.sh' -->
 
 # Tags of `celery`
 
