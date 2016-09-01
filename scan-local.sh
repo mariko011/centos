@@ -5,9 +5,9 @@ trap 'echo >&2 Ctrl+C captured, exiting; exit 1' SIGINT
 
 image="$1"; shift
 
-docker build --pull -t repo-info:scan -q -f Dockerfile.scan . > /dev/null
+docker build --pull -t repo-info:local -q -f Dockerfile.local . > /dev/null
 
-name="repo-info-scan-$RANDOM"
+name="repo-info-local-$RANDOM"
 trap "docker rm -f '$name-data' '$name' > /dev/null" EXIT
 
 docker create \
@@ -18,7 +18,7 @@ docker create \
 	"$image" \
 	bogus > /dev/null
 
-docker run -d --name "$name" --volumes-from "$name-data" repo-info:scan > /dev/null
+docker run -d --name "$name" --volumes-from "$name-data" repo-info:local > /dev/null
 
 echo '# `'"$image"'`'
 
