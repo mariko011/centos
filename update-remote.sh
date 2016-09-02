@@ -18,11 +18,14 @@ docker build --pull -t repo-info:remote -q -f Dockerfile.remote . > /dev/null
 trap 'docker rm -f repo-info-remote > /dev/null' EXIT
 docker run -d --name repo-info-remote repo-info:remote daemon > /dev/null
 
-repoInfoDaemon="http://$(docker inspect -f '{{ .NetworkSettings.IPAddress }}' repo-info-remote):3000"
+repoInfoDaemon='http://localhost:3000' # since we're using "docker exec", we can just hit localhost
+curl() {
+	docker exec -i repo-info-remote curl "$@"
+}
 
-tries=30
-while [ "$(curl -fsSL "$repoInfoDaemon" -o /dev/null &> /dev/null || echo "$?")" = '7' ]; do
-	(( --tries ))
+tries=10
+while [ "$(curl --max-time 2 -fsSL "$repoInfoDaemon" -o /dev/null &> /dev/null || echo "$?")" = '7' ]; do
+	(( --tries )) || :
 	if [ "$tries" -eq 0 ]; then
 		echo >&2 "error: repo-info:remote daemon did not start up in a reasonable amount of time"
 		exit 1
