@@ -38,7 +38,7 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 # Fri, 26 Aug 2016 18:49:52 GMT
 CMD ["/bin/bash"]
 # Fri, 26 Aug 2016 19:56:01 GMT
-MAINTAINER Jérémy Jacquier-Roux <jeremy.jacquier-roux@bonitasoft.org>
+MAINTAINER JÃ©rÃ©my Jacquier-Roux <jeremy.jacquier-roux@bonitasoft.org>
 # Fri, 26 Aug 2016 19:57:43 GMT
 RUN apt-get update && apt-get install -y   mysql-client-core-5.5   openjdk-7-jre-headless   postgresql-client   unzip   wget   zip   && rm -rf /var/lib/apt/lists/*
 # Fri, 26 Aug 2016 19:57:46 GMT
@@ -169,7 +169,7 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 # Fri, 26 Aug 2016 18:49:52 GMT
 CMD ["/bin/bash"]
 # Fri, 26 Aug 2016 19:56:01 GMT
-MAINTAINER Jérémy Jacquier-Roux <jeremy.jacquier-roux@bonitasoft.org>
+MAINTAINER JÃ©rÃ©my Jacquier-Roux <jeremy.jacquier-roux@bonitasoft.org>
 # Fri, 26 Aug 2016 19:57:43 GMT
 RUN apt-get update && apt-get install -y   mysql-client-core-5.5   openjdk-7-jre-headless   postgresql-client   unzip   wget   zip   && rm -rf /var/lib/apt/lists/*
 # Fri, 26 Aug 2016 19:57:46 GMT
@@ -300,7 +300,7 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 # Fri, 26 Aug 2016 18:49:52 GMT
 CMD ["/bin/bash"]
 # Fri, 26 Aug 2016 19:56:01 GMT
-MAINTAINER Jérémy Jacquier-Roux <jeremy.jacquier-roux@bonitasoft.org>
+MAINTAINER JÃ©rÃ©my Jacquier-Roux <jeremy.jacquier-roux@bonitasoft.org>
 # Fri, 26 Aug 2016 19:57:43 GMT
 RUN apt-get update && apt-get install -y   mysql-client-core-5.5   openjdk-7-jre-headless   postgresql-client   unzip   wget   zip   && rm -rf /var/lib/apt/lists/*
 # Fri, 26 Aug 2016 19:57:46 GMT

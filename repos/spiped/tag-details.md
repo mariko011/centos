@@ -36,7 +36,7 @@ ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
 # Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
 # Mon, 01 Aug 2016 23:53:17 GMT
-MAINTAINER Tim Düsterhus
+MAINTAINER Tim DÃ¼sterhus
 # Mon, 01 Aug 2016 23:53:19 GMT
 RUN groupadd -r spiped &&	useradd -r -g spiped spiped
 # Mon, 01 Aug 2016 23:54:24 GMT
@@ -118,7 +118,7 @@ ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
 # Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
 # Mon, 01 Aug 2016 23:53:17 GMT
-MAINTAINER Tim Düsterhus
+MAINTAINER Tim DÃ¼sterhus
 # Mon, 01 Aug 2016 23:53:19 GMT
 RUN groupadd -r spiped &&	useradd -r -g spiped spiped
 # Mon, 01 Aug 2016 23:54:24 GMT
@@ -200,7 +200,7 @@ ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
 # Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
 # Mon, 01 Aug 2016 23:53:17 GMT
-MAINTAINER Tim Düsterhus
+MAINTAINER Tim DÃ¼sterhus
 # Mon, 01 Aug 2016 23:53:19 GMT
 RUN groupadd -r spiped &&	useradd -r -g spiped spiped
 # Mon, 01 Aug 2016 23:54:24 GMT
@@ -282,7 +282,7 @@ ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
 # Thu, 28 Jul 2016 17:47:55 GMT
 CMD ["/bin/bash"]
 # Mon, 01 Aug 2016 23:53:17 GMT
-MAINTAINER Tim Düsterhus
+MAINTAINER Tim DÃ¼sterhus
 # Mon, 01 Aug 2016 23:53:19 GMT
 RUN groupadd -r spiped &&	useradd -r -g spiped spiped
 # Mon, 01 Aug 2016 23:54:24 GMT
@@ -362,7 +362,7 @@ $ docker pull spiped@sha256:ff74278f96d52303b5f691c8b7e449992119b3b9410ae5f4c465
 # Thu, 23 Jun 2016 19:55:18 GMT
 ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
 # Wed, 20 Jul 2016 22:27:59 GMT
-MAINTAINER Tim Düsterhus
+MAINTAINER Tim DÃ¼sterhus
 # Wed, 20 Jul 2016 22:28:00 GMT
 RUN addgroup -S spiped &&	adduser -S -G spiped spiped
 # Wed, 20 Jul 2016 22:28:04 GMT
@@ -442,7 +442,7 @@ $ docker pull spiped@sha256:ff74278f96d52303b5f691c8b7e449992119b3b9410ae5f4c465
 # Thu, 23 Jun 2016 19:55:18 GMT
 ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
 # Wed, 20 Jul 2016 22:27:59 GMT
-MAINTAINER Tim Düsterhus
+MAINTAINER Tim DÃ¼sterhus
 # Wed, 20 Jul 2016 22:28:00 GMT
 RUN addgroup -S spiped &&	adduser -S -G spiped spiped
 # Wed, 20 Jul 2016 22:28:04 GMT
@@ -522,7 +522,7 @@ $ docker pull spiped@sha256:ff74278f96d52303b5f691c8b7e449992119b3b9410ae5f4c465
 # Thu, 23 Jun 2016 19:55:18 GMT
 ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
 # Wed, 20 Jul 2016 22:27:59 GMT
-MAINTAINER Tim Düsterhus
+MAINTAINER Tim DÃ¼sterhus
 # Wed, 20 Jul 2016 22:28:00 GMT
 RUN addgroup -S spiped &&	adduser -S -G spiped spiped
 # Wed, 20 Jul 2016 22:28:04 GMT
@@ -602,7 +602,7 @@ $ docker pull spiped@sha256:ff74278f96d52303b5f691c8b7e449992119b3b9410ae5f4c465
 # Thu, 23 Jun 2016 19:55:18 GMT
 ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /
 # Wed, 20 Jul 2016 22:27:59 GMT
-MAINTAINER Tim Düsterhus
+MAINTAINER Tim DÃ¼sterhus
 # Wed, 20 Jul 2016 22:28:00 GMT
 RUN addgroup -S spiped &&	adduser -S -G spiped spiped
 # Wed, 20 Jul 2016 22:28:04 GMT
