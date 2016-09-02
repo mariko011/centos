@@ -6,8 +6,6 @@ trap 'echo >&2 Ctrl+C captured, exiting; exit 1' SIGINT
 # going for "bashbrew: command not found"
 bashbrew --help > /dev/null
 
-docker build --pull -t repo-info:remote -q -f Dockerfile.remote . > /dev/null
-
 repos=( "$@" )
 if [ ${#repos[@]} -eq 0 ]; then
 	IFS=$'\n'
@@ -15,6 +13,22 @@ if [ ${#repos[@]} -eq 0 ]; then
 	unset IFS
 fi
 repos=( "${repos[@]%/}" )
+
+docker build --pull -t repo-info:remote -q -f Dockerfile.remote . > /dev/null
+trap 'docker rm -f repo-info-remote > /dev/null' EXIT
+docker run -d --name repo-info-remote repo-info:remote daemon > /dev/null
+
+repoInfoDaemon="http://$(docker inspect -f '{{ .NetworkSettings.IPAddress }}' repo-info-remote):3000"
+
+tries=30
+while [ "$(curl -fsSL "$repoInfoDaemon" -o /dev/null &> /dev/null || echo "$?")" = '7' ]; do
+	(( --tries ))
+	if [ "$tries" -eq 0 ]; then
+		echo >&2 "error: repo-info:remote daemon did not start up in a reasonable amount of time"
+		exit 1
+	fi
+	sleep 1
+done
 
 for repo in "${repos[@]}"; do
 	echo -n "$repo ... "
@@ -39,7 +53,11 @@ for repo in "${repos[@]}"; do
 			href="#${href,,}"
 			echo $'-\t[`'"$tag"'`]('"$href"')'
 		done
-		docker run -i --rm repo-info:remote -- "${tags[@]}"
+		# fetch each markdown
+		for tag in "${tags[@]}"; do
+			echo
+			curl -fsSL "$repoInfoDaemon/markdown/$tag"
+		done
 	} > "repos/$repo/tag-details.md"
 	echo 'done'
 done
