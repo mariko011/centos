@@ -1,9 +1,9 @@
-# `debian:8.5`
+# `debian:stable`
 
 ## Docker Metadata
 
-- Image ID: `sha256:031143c1c662878cf5be0099ff759dd219f907a22113eb60241251d29344bb96`
-- Created: `2016-08-30T21:00:52.158026785Z`
+- Image ID: `sha256:1b360f8c34cdea57648267a3bba4859e519606c54acf46819e53f06da9deaa3b`
+- Created: `2016-08-30T21:01:12.501816352Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -760,9 +760,10 @@ Likely also available for browsing at:
 
 Binary Packages:
 
+- `iproute=1:3.16.0-2`
 - `iproute2=3.16.0-2`
 
-Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
+Licenses: (parsed from: `/usr/share/doc/iproute/copyright`, `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 

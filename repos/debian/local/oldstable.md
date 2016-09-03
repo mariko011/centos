@@ -1,9 +1,9 @@
-# `debian:7.11`
+# `debian:oldstable`
 
 ## Docker Metadata
 
-- Image ID: `sha256:92e3b9f596559622a7818e367bb47f0a45a8447960d799962268ab524e749caf`
-- Created: `2016-08-30T21:01:39.653959349Z`
+- Image ID: `sha256:153d60c9f4de30011966c123c9792d74e4219d8a069c29ac4d7a333017025920`
+- Created: `2016-08-30T21:00:58.741777578Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
