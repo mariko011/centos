@@ -970,12 +970,8 @@ Licenses: (parsed from: `/usr/share/doc/ubuntu-keyring/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2016.05.13.dsc' ubuntu-keyring_2016.05.13.dsc 1483 SHA256:cd398e032607f7ceef8a3c0b1656ef4ab4776e77526b36c54f06559e613d6746
-'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2016.05.13.tar.gz' ubuntu-keyring_2016.05.13.tar.gz 18585 SHA256:5aa02bd199845d43f41a5d94e9521034e85c6d6d7a38fe1fc0c6fdbc17f93aa0
-```
 
 ### `dpkg` source package: `ustr=1.0.4-5`
 
