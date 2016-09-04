@@ -1651,18 +1651,8 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/m/mercurial/mercurial_3.9-1.dsc' mercurial_3.9-1.dsc 2382 SHA256:83a8ef268d78edd34e377db646b4c66c54df3b2332a7e54c2cb245983aca6203
-'http://httpredir.debian.org/debian/pool/main/m/mercurial/mercurial_3.9.orig.tar.gz' mercurial_3.9.orig.tar.gz 4796280 SHA256:834f25dcff44994198fb8a7ba161a6e24204dbd63c8e6270577e06e6cedbdabc
-'http://httpredir.debian.org/debian/pool/main/m/mercurial/mercurial_3.9-1.debian.tar.xz' mercurial_3.9-1.debian.tar.xz 45384 SHA256:5c35f42837805717f69d91eca7e132dd27f697147a95d1fb6b4613814feec247
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mercurial/3.9-1/
-- https://sources.debian.net/src/mercurial/3.9-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mime-support=3.60`
 
