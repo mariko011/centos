@@ -3922,18 +3922,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.13.0-1.dsc' nghttp2_1.13.0-1.dsc 2224 SHA256:318b9079e6d52693baa26b38df85a011d9f3c5588ff22bd502a14db7970bbbff
-'http://httpredir.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.13.0.orig.tar.bz2' nghttp2_1.13.0.orig.tar.bz2 1744120 SHA256:d4801aced0d10b9ccf5f6dcdc5efd927b9f5dc3c4a1af3b7a687284e4765d679
-'http://httpredir.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.13.0-1.debian.tar.xz' nghttp2_1.13.0-1.debian.tar.xz 11220 SHA256:47fef9be5a6a76443dc0f106a7fddb5c23d70bb05377211c96eff46747bfae5b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.13.0-1/
-- https://sources.debian.net/src/nghttp2/1.13.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openexr=2.2.0-11`
 

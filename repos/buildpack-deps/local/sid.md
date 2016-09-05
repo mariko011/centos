@@ -3399,18 +3399,8 @@ Licenses: (parsed from: `/usr/share/doc/libyaml-0-2/copyright`, `/usr/share/doc/
 - `Expat`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/liby/libyaml/libyaml_0.1.6-3.dsc' libyaml_0.1.6-3.dsc 1893 SHA256:ed5bc299d3bcc0b038206f8780639d4682e65f521dff571b9336e2f8626d0011
-'http://httpredir.debian.org/debian/pool/main/liby/libyaml/libyaml_0.1.6.orig.tar.gz' libyaml_0.1.6.orig.tar.gz 503012 SHA256:7da6971b4bd08a986dd2a61353bc422362bd0edcc67d7ebaac68c95f74182749
-'http://httpredir.debian.org/debian/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libyaml/0.1.6-3/
-- https://sources.debian.net/src/libyaml/0.1.6-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `linux=4.7.2-1`
 
@@ -4571,18 +4561,8 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/s/subversion/subversion_1.9.4-2.dsc' subversion_1.9.4-2.dsc 3035 SHA256:be75bf94ae76787ae97c25c1317d5ac9a6ef75c9f67d60fc51085d3825fe4bac
-'http://httpredir.debian.org/debian/pool/main/s/subversion/subversion_1.9.4.orig.tar.gz' subversion_1.9.4.orig.tar.gz 10603019 SHA256:11f738063f322b06f8c81e42bc26c33e0cb1e465539647109e534274d4a8540c
-'http://httpredir.debian.org/debian/pool/main/s/subversion/subversion_1.9.4-2.diff.gz' subversion_1.9.4-2.diff.gz 2422221 SHA256:fd4c81a7c3e9557b97aa7a2c595b3375f7f0c2060ab1aa831c8bdfdf752582a9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/subversion/1.9.4-2/
-- https://sources.debian.net/src/subversion/1.9.4-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `systemd=231-5`
 
