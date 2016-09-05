@@ -3281,18 +3281,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.7-ckt25-2+deb8u3.dsc' linux_3.16.7-ckt25-2+deb8u3.dsc 140630 SHA256:774b8116d488e2b71bd833a3c64d8c25c09cdd58e2eb51a23ffdb4c065642167
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.7-ckt25.orig.tar.xz' linux_3.16.7-ckt25.orig.tar.xz 81763696 SHA256:1db16d165b7e77a9476fe3f2efcdaf596573c0730b9233bd28a8293e65885a8a
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.7-ckt25-2+deb8u3.debian.tar.xz' linux_3.16.7-ckt25-2+deb8u3.debian.tar.xz 3229848 SHA256:72f90d63854e37be8e41a2dd09fd8b2580c6ba6f1c91067b1e711311c271cebd
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/3.16.7-ckt25-2+deb8u3/
-- https://sources.debian.net/src/linux/3.16.7-ckt25-2+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
