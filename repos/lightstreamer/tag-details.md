@@ -2,27 +2,27 @@
 
 # Tags of `lightstreamer`
 
--	[`lightstreamer:6.0.2`](#lightstreamer602)
+-	[`lightstreamer:6.0.3`](#lightstreamer603)
 -	[`lightstreamer:6.0`](#lightstreamer60)
 -	[`lightstreamer:6`](#lightstreamer6)
 -	[`lightstreamer:latest`](#lightstreamerlatest)
 
-## `lightstreamer:6.0.2`
+## `lightstreamer:6.0.3`
 
 ```console
-$ docker pull lightstreamer@sha256:f392ef5c8da40f3d916ac8e14fc436d6a8346bff8e9100dddc49a4fddc2b10fe
+$ docker pull lightstreamer@sha256:e39eac710710bef49b55d25c3b3c6455c769cc969ed363ad3c4e03d03ce23468
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `lightstreamer:6.0.2` - linux; amd64
+### `lightstreamer:6.0.3` - linux; amd64
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **163.3 MB (163348579 bytes)**  
+-	Total Size: **161.8 MB (161782576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1484288b0f8eea6fd41319bcee18cb35ca7d8f2368af3e6e46abd1e007c200d4`
+-	Image ID: `sha256:a72541e35d6f34bfeaebca9d10974ef12b624ecf5ac30dbec5fd0b54d3342213`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -58,19 +58,19 @@ MAINTAINER Lightstreamer Server Development Team <support@lightreamer.com>
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
 # Wed, 31 Aug 2016 21:01:39 GMT
 ENV LIGHSTREAMER_EDITION=Allegro-Presto-Vivace
-# Wed, 31 Aug 2016 21:01:39 GMT
-ENV LIGHSTREAMER_VERSION=6_0_2_20160510
-# Wed, 31 Aug 2016 21:01:39 GMT
-ENV LIGHSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_Allegro-Presto-Vivace_6_0_2_20160510.tar.gz
-# Wed, 31 Aug 2016 21:01:40 GMT
+# Tue, 06 Sep 2016 19:54:28 GMT
+ENV LIGHSTREAMER_VERSION=6_0_3_20160905
+# Tue, 06 Sep 2016 19:54:29 GMT
+ENV LIGHSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_Allegro-Presto-Vivace_6_0_3_20160905.tar.gz
+# Tue, 06 Sep 2016 19:54:29 GMT
 WORKDIR /lightstreamer
-# Wed, 31 Aug 2016 21:01:47 GMT
+# Tue, 06 Sep 2016 19:54:37 GMT
 RUN set -x         && curl -fSL -o Lightstreamer.tar.gz ${LIGHSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc         && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh         && sed -i -e '123,$s/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<appender-ref ref="LSDailyRolling" \/>/ d' conf/lightstreamer_log_conf.xml
-# Wed, 31 Aug 2016 21:01:48 GMT
+# Tue, 06 Sep 2016 19:54:37 GMT
 EXPOSE 8080/tcp
-# Wed, 31 Aug 2016 21:01:48 GMT
+# Tue, 06 Sep 2016 19:54:37 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 31 Aug 2016 21:01:48 GMT
+# Tue, 06 Sep 2016 19:54:38 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -107,19 +107,19 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Wed, 31 Aug 2016 21:01:54 GMT  
 		Size: 5.6 KB (5610 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c200d0e4cad60416df557faf2b4184556682b8cd65bdd06f0127ce6e30ab69ef`  
-		Last Modified: Wed, 31 Aug 2016 21:01:54 GMT  
-		Size: 101.0 B  
+	-	`sha256:813e4b458c2384e4f2bdcc04815ffe34b4f21a64f02f86c6ac922874e020d61a`  
+		Last Modified: Tue, 06 Sep 2016 19:54:44 GMT  
+		Size: 100.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe88afb7cf2920c3c19bfaef113b583b2232ab02ccda4272bd0a96564024e6c9`  
-		Last Modified: Wed, 31 Aug 2016 21:02:01 GMT  
-		Size: 39.2 MB (39194363 bytes)  
+	-	`sha256:2717e921236f53f3acae2301082917905813a880c68d0d37660ae4357e48f877`  
+		Last Modified: Tue, 06 Sep 2016 19:54:49 GMT  
+		Size: 37.6 MB (37628361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `lightstreamer:6.0`
 
 ```console
-$ docker pull lightstreamer@sha256:f392ef5c8da40f3d916ac8e14fc436d6a8346bff8e9100dddc49a4fddc2b10fe
+$ docker pull lightstreamer@sha256:e39eac710710bef49b55d25c3b3c6455c769cc969ed363ad3c4e03d03ce23468
 ```
 
 -	Platforms:
@@ -129,9 +129,9 @@ $ docker pull lightstreamer@sha256:f392ef5c8da40f3d916ac8e14fc436d6a8346bff8e910
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **163.3 MB (163348579 bytes)**  
+-	Total Size: **161.8 MB (161782576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1484288b0f8eea6fd41319bcee18cb35ca7d8f2368af3e6e46abd1e007c200d4`
+-	Image ID: `sha256:a72541e35d6f34bfeaebca9d10974ef12b624ecf5ac30dbec5fd0b54d3342213`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -167,19 +167,19 @@ MAINTAINER Lightstreamer Server Development Team <support@lightreamer.com>
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
 # Wed, 31 Aug 2016 21:01:39 GMT
 ENV LIGHSTREAMER_EDITION=Allegro-Presto-Vivace
-# Wed, 31 Aug 2016 21:01:39 GMT
-ENV LIGHSTREAMER_VERSION=6_0_2_20160510
-# Wed, 31 Aug 2016 21:01:39 GMT
-ENV LIGHSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_Allegro-Presto-Vivace_6_0_2_20160510.tar.gz
-# Wed, 31 Aug 2016 21:01:40 GMT
+# Tue, 06 Sep 2016 19:54:28 GMT
+ENV LIGHSTREAMER_VERSION=6_0_3_20160905
+# Tue, 06 Sep 2016 19:54:29 GMT
+ENV LIGHSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_Allegro-Presto-Vivace_6_0_3_20160905.tar.gz
+# Tue, 06 Sep 2016 19:54:29 GMT
 WORKDIR /lightstreamer
-# Wed, 31 Aug 2016 21:01:47 GMT
+# Tue, 06 Sep 2016 19:54:37 GMT
 RUN set -x         && curl -fSL -o Lightstreamer.tar.gz ${LIGHSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc         && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh         && sed -i -e '123,$s/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<appender-ref ref="LSDailyRolling" \/>/ d' conf/lightstreamer_log_conf.xml
-# Wed, 31 Aug 2016 21:01:48 GMT
+# Tue, 06 Sep 2016 19:54:37 GMT
 EXPOSE 8080/tcp
-# Wed, 31 Aug 2016 21:01:48 GMT
+# Tue, 06 Sep 2016 19:54:37 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 31 Aug 2016 21:01:48 GMT
+# Tue, 06 Sep 2016 19:54:38 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -216,19 +216,19 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Wed, 31 Aug 2016 21:01:54 GMT  
 		Size: 5.6 KB (5610 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c200d0e4cad60416df557faf2b4184556682b8cd65bdd06f0127ce6e30ab69ef`  
-		Last Modified: Wed, 31 Aug 2016 21:01:54 GMT  
-		Size: 101.0 B  
+	-	`sha256:813e4b458c2384e4f2bdcc04815ffe34b4f21a64f02f86c6ac922874e020d61a`  
+		Last Modified: Tue, 06 Sep 2016 19:54:44 GMT  
+		Size: 100.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe88afb7cf2920c3c19bfaef113b583b2232ab02ccda4272bd0a96564024e6c9`  
-		Last Modified: Wed, 31 Aug 2016 21:02:01 GMT  
-		Size: 39.2 MB (39194363 bytes)  
+	-	`sha256:2717e921236f53f3acae2301082917905813a880c68d0d37660ae4357e48f877`  
+		Last Modified: Tue, 06 Sep 2016 19:54:49 GMT  
+		Size: 37.6 MB (37628361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `lightstreamer:6`
 
 ```console
-$ docker pull lightstreamer@sha256:f392ef5c8da40f3d916ac8e14fc436d6a8346bff8e9100dddc49a4fddc2b10fe
+$ docker pull lightstreamer@sha256:e39eac710710bef49b55d25c3b3c6455c769cc969ed363ad3c4e03d03ce23468
 ```
 
 -	Platforms:
@@ -238,9 +238,9 @@ $ docker pull lightstreamer@sha256:f392ef5c8da40f3d916ac8e14fc436d6a8346bff8e910
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **163.3 MB (163348579 bytes)**  
+-	Total Size: **161.8 MB (161782576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1484288b0f8eea6fd41319bcee18cb35ca7d8f2368af3e6e46abd1e007c200d4`
+-	Image ID: `sha256:a72541e35d6f34bfeaebca9d10974ef12b624ecf5ac30dbec5fd0b54d3342213`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -276,19 +276,19 @@ MAINTAINER Lightstreamer Server Development Team <support@lightreamer.com>
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
 # Wed, 31 Aug 2016 21:01:39 GMT
 ENV LIGHSTREAMER_EDITION=Allegro-Presto-Vivace
-# Wed, 31 Aug 2016 21:01:39 GMT
-ENV LIGHSTREAMER_VERSION=6_0_2_20160510
-# Wed, 31 Aug 2016 21:01:39 GMT
-ENV LIGHSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_Allegro-Presto-Vivace_6_0_2_20160510.tar.gz
-# Wed, 31 Aug 2016 21:01:40 GMT
+# Tue, 06 Sep 2016 19:54:28 GMT
+ENV LIGHSTREAMER_VERSION=6_0_3_20160905
+# Tue, 06 Sep 2016 19:54:29 GMT
+ENV LIGHSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_Allegro-Presto-Vivace_6_0_3_20160905.tar.gz
+# Tue, 06 Sep 2016 19:54:29 GMT
 WORKDIR /lightstreamer
-# Wed, 31 Aug 2016 21:01:47 GMT
+# Tue, 06 Sep 2016 19:54:37 GMT
 RUN set -x         && curl -fSL -o Lightstreamer.tar.gz ${LIGHSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc         && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh         && sed -i -e '123,$s/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<appender-ref ref="LSDailyRolling" \/>/ d' conf/lightstreamer_log_conf.xml
-# Wed, 31 Aug 2016 21:01:48 GMT
+# Tue, 06 Sep 2016 19:54:37 GMT
 EXPOSE 8080/tcp
-# Wed, 31 Aug 2016 21:01:48 GMT
+# Tue, 06 Sep 2016 19:54:37 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 31 Aug 2016 21:01:48 GMT
+# Tue, 06 Sep 2016 19:54:38 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -325,19 +325,19 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Wed, 31 Aug 2016 21:01:54 GMT  
 		Size: 5.6 KB (5610 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c200d0e4cad60416df557faf2b4184556682b8cd65bdd06f0127ce6e30ab69ef`  
-		Last Modified: Wed, 31 Aug 2016 21:01:54 GMT  
-		Size: 101.0 B  
+	-	`sha256:813e4b458c2384e4f2bdcc04815ffe34b4f21a64f02f86c6ac922874e020d61a`  
+		Last Modified: Tue, 06 Sep 2016 19:54:44 GMT  
+		Size: 100.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe88afb7cf2920c3c19bfaef113b583b2232ab02ccda4272bd0a96564024e6c9`  
-		Last Modified: Wed, 31 Aug 2016 21:02:01 GMT  
-		Size: 39.2 MB (39194363 bytes)  
+	-	`sha256:2717e921236f53f3acae2301082917905813a880c68d0d37660ae4357e48f877`  
+		Last Modified: Tue, 06 Sep 2016 19:54:49 GMT  
+		Size: 37.6 MB (37628361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `lightstreamer:latest`
 
 ```console
-$ docker pull lightstreamer@sha256:f392ef5c8da40f3d916ac8e14fc436d6a8346bff8e9100dddc49a4fddc2b10fe
+$ docker pull lightstreamer@sha256:e39eac710710bef49b55d25c3b3c6455c769cc969ed363ad3c4e03d03ce23468
 ```
 
 -	Platforms:
@@ -347,9 +347,9 @@ $ docker pull lightstreamer@sha256:f392ef5c8da40f3d916ac8e14fc436d6a8346bff8e910
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **163.3 MB (163348579 bytes)**  
+-	Total Size: **161.8 MB (161782576 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1484288b0f8eea6fd41319bcee18cb35ca7d8f2368af3e6e46abd1e007c200d4`
+-	Image ID: `sha256:a72541e35d6f34bfeaebca9d10974ef12b624ecf5ac30dbec5fd0b54d3342213`
 -	Default Command: `[".\/LS.sh","run"]`
 
 ```dockerfile
@@ -385,19 +385,19 @@ MAINTAINER Lightstreamer Server Development Team <support@lightreamer.com>
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 9B90BFD14309C7DA5EF58D7D4A8C08966F29B4D2
 # Wed, 31 Aug 2016 21:01:39 GMT
 ENV LIGHSTREAMER_EDITION=Allegro-Presto-Vivace
-# Wed, 31 Aug 2016 21:01:39 GMT
-ENV LIGHSTREAMER_VERSION=6_0_2_20160510
-# Wed, 31 Aug 2016 21:01:39 GMT
-ENV LIGHSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_Allegro-Presto-Vivace_6_0_2_20160510.tar.gz
-# Wed, 31 Aug 2016 21:01:40 GMT
+# Tue, 06 Sep 2016 19:54:28 GMT
+ENV LIGHSTREAMER_VERSION=6_0_3_20160905
+# Tue, 06 Sep 2016 19:54:29 GMT
+ENV LIGHSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_Allegro-Presto-Vivace_6_0_3_20160905.tar.gz
+# Tue, 06 Sep 2016 19:54:29 GMT
 WORKDIR /lightstreamer
-# Wed, 31 Aug 2016 21:01:47 GMT
+# Tue, 06 Sep 2016 19:54:37 GMT
 RUN set -x         && curl -fSL -o Lightstreamer.tar.gz ${LIGHSTREAMER_URL_DOWNLOAD}         && curl -fSL -o Lightstreamer.tar.gz.asc ${LIGHSTREAMER_URL_DOWNLOAD}.asc         && gpg --batch --verify Lightstreamer.tar.gz.asc Lightstreamer.tar.gz         && tar -xvf Lightstreamer.tar.gz --strip-components=1         && rm Lightstreamer.tar.gz Lightstreamer.tar.gz.asc         && sed -i -- 's/\/usr\/jdk1.8.0/$JAVA_HOME/' bin/unix-like/LS.sh         && sed -i -e '123,$s/<appender-ref ref="LSDailyRolling" \/>/<appender-ref ref="LSConsole" \/>/'                   -e '/<appender-ref ref="LSDailyRolling" \/>/ d' conf/lightstreamer_log_conf.xml
-# Wed, 31 Aug 2016 21:01:48 GMT
+# Tue, 06 Sep 2016 19:54:37 GMT
 EXPOSE 8080/tcp
-# Wed, 31 Aug 2016 21:01:48 GMT
+# Tue, 06 Sep 2016 19:54:37 GMT
 WORKDIR /lightstreamer/bin/unix-like
-# Wed, 31 Aug 2016 21:01:48 GMT
+# Tue, 06 Sep 2016 19:54:38 GMT
 CMD ["./LS.sh" "run"]
 ```
 
@@ -434,11 +434,11 @@ CMD ["./LS.sh" "run"]
 		Last Modified: Wed, 31 Aug 2016 21:01:54 GMT  
 		Size: 5.6 KB (5610 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c200d0e4cad60416df557faf2b4184556682b8cd65bdd06f0127ce6e30ab69ef`  
-		Last Modified: Wed, 31 Aug 2016 21:01:54 GMT  
-		Size: 101.0 B  
+	-	`sha256:813e4b458c2384e4f2bdcc04815ffe34b4f21a64f02f86c6ac922874e020d61a`  
+		Last Modified: Tue, 06 Sep 2016 19:54:44 GMT  
+		Size: 100.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe88afb7cf2920c3c19bfaef113b583b2232ab02ccda4272bd0a96564024e6c9`  
-		Last Modified: Wed, 31 Aug 2016 21:02:01 GMT  
-		Size: 39.2 MB (39194363 bytes)  
+	-	`sha256:2717e921236f53f3acae2301082917905813a880c68d0d37660ae4357e48f877`  
+		Last Modified: Tue, 06 Sep 2016 19:54:49 GMT  
+		Size: 37.6 MB (37628361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
