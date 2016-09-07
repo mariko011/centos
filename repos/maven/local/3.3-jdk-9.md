@@ -1120,18 +1120,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.3-3.dsc' gnutls28_3.5.3-3.dsc 2847 SHA256:3fad39243afe630f8a0ad1d912b3cdd286b3e0ce423007b299c64c6b86c2deb0
-'http://httpredir.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.3.orig.tar.xz' gnutls28_3.5.3.orig.tar.xz 6895068 SHA256:92c4bc999a10a1b95299ebefaeea8333f19d8a98d957a35b5eae74881bdb1fef
-'http://httpredir.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.3-3.debian.tar.xz' gnutls28_3.5.3-3.debian.tar.xz 98696 SHA256:ad9e9142a9ae9ba3d0a19d1b04b33656ad9eb17f7d5c687b3e9dfac8a994a32f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnutls28/3.5.3-3/
-- https://sources.debian.net/src/gnutls28/3.5.3-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.25-6`
 
@@ -1363,18 +1353,8 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/k/krb5/krb5_1.14.3+dfsg-1.dsc' krb5_1.14.3+dfsg-1.dsc 3303 SHA256:4fbc43c8b2648b25df20cd3cfad3f6b39dd8794dbffe15ab25b2a8c8728ad468
-'http://httpredir.debian.org/debian/pool/main/k/krb5/krb5_1.14.3+dfsg.orig.tar.gz' krb5_1.14.3+dfsg.orig.tar.gz 12057621 SHA256:305cab368db7d33f6eb0c0105fbc898440c9ac7976ede2f26716b956d5680179
-'http://httpredir.debian.org/debian/pool/main/k/krb5/krb5_1.14.3+dfsg-1.debian.tar.xz' krb5_1.14.3+dfsg-1.debian.tar.xz 141500 SHA256:f1bc73ebbb473851683bf4c2804a937676b95eb0566bee344067db1e6769496d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/krb5/1.14.3+dfsg-1/
-- https://sources.debian.net/src/krb5/1.14.3+dfsg-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lcms2=2.7-1`
 
@@ -1683,18 +1663,8 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 - `expat`
 - `libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.24-2.dsc' libpng1.6_1.6.24-2.dsc 2220 SHA256:0e652c9b326a20caf2c039ca9b70efa1da580b5eecd6fe44a78852b1403b9638
-'http://httpredir.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.24.orig.tar.xz' libpng1.6_1.6.24.orig.tar.xz 977532 SHA256:7932dc9e5e45d55ece9d204e90196bbb5f2c82741ccb0f7e10d07d364a6fd6dd
-'http://httpredir.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.24-2.debian.tar.xz' libpng1.6_1.6.24-2.debian.tar.xz 21900 SHA256:3c8d03cc45589912a5eb71a463f3acfe8b88115e6bc5a18a7b84733ee28db867
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libpng1.6/1.6.24-2/
-- https://sources.debian.net/src/libpng1.6/1.6.24-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpsl=0.14.0-1`
 
