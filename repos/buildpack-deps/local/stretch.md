@@ -1442,18 +1442,8 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.48.1-3.dsc' glib2.0_2.48.1-3.dsc 3122 SHA256:49e321b09198384182e1f482db2ad8749852d8a840099570098856e7508a1682
-'http://httpredir.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.48.1.orig.tar.xz' glib2.0_2.48.1.orig.tar.xz 7441032 SHA256:74411bff489cb2a3527bac743a51018841a56a4d896cc1e0d0d54f8166a14612
-'http://httpredir.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.48.1-3.debian.tar.xz' glib2.0_2.48.1-3.debian.tar.xz 69760 SHA256:d506037f483c2548118d70c09fafdcb6b52d2a89b1943605629a7d0de7651cb1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/glib2.0/2.48.1-3/
-- https://sources.debian.net/src/glib2.0/2.48.1-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.23-5`
 
@@ -1575,18 +1565,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.3-3.dsc' gnutls28_3.5.3-3.dsc 2847 SHA256:3fad39243afe630f8a0ad1d912b3cdd286b3e0ce423007b299c64c6b86c2deb0
-'http://httpredir.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.3.orig.tar.xz' gnutls28_3.5.3.orig.tar.xz 6895068 SHA256:92c4bc999a10a1b95299ebefaeea8333f19d8a98d957a35b5eae74881bdb1fef
-'http://httpredir.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.3-3.debian.tar.xz' gnutls28_3.5.3-3.debian.tar.xz 98696 SHA256:ad9e9142a9ae9ba3d0a19d1b04b33656ad9eb17f7d5c687b3e9dfac8a994a32f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnutls28/3.5.3-3/
-- https://sources.debian.net/src/gnutls28/3.5.3-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gobject-introspection=1.48.0-3`
 
@@ -1605,18 +1585,8 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `LGPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.48.0-3.dsc' gobject-introspection_1.48.0-3.dsc 2932 SHA256:a2424eae7d25bcc249190885d827074316d9faf3b77040f97d5f5b1f339dd50e
-'http://httpredir.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.48.0.orig.tar.xz' gobject-introspection_1.48.0.orig.tar.xz 1371308 SHA256:fa275aaccdbfc91ec0bc9a6fd0562051acdba731e7d584b64a277fec60e75877
-'http://httpredir.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.48.0-3.debian.tar.xz' gobject-introspection_1.48.0-3.debian.tar.xz 19172 SHA256:7e545417e99e745b12efad4a17673ea35e6ac35d997beee0b616f47bebd843e1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gobject-introspection/1.48.0-3/
-- https://sources.debian.net/src/gobject-introspection/1.48.0-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `graphite2=1.3.8-1`
 
@@ -1747,18 +1717,8 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`)
 - `LGPL-2.1+`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.20.9-1.dsc' gtk+3.0_3.20.9-1.dsc 4167 SHA256:359fdf95ccca4845bc3abb94ba824aa0a926c43c3d416bdf1cf2710668696536
-'http://httpredir.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.20.9.orig.tar.xz' gtk+3.0_3.20.9.orig.tar.xz 17174872 SHA256:83a609ba2f3424b5509e73967c49c67833af466d6f91081b24ee5c64fce6ac17
-'http://httpredir.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.20.9-1.debian.tar.xz' gtk+3.0_3.20.9-1.debian.tar.xz 143324 SHA256:6b89c4c3675d8f7effd0fe86a7bad4b1d3f2b4018d8fd218d4f9737b86adbf92
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gtk+3.0/3.20.9-1/
-- https://sources.debian.net/src/gtk+3.0/3.20.9-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gts=0.7.6+darcs121130-1.2`
 
@@ -4432,18 +4392,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.5-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.2-3.dsc' python3.5_3.5.2-3.dsc 3327 SHA256:07620c97276e45951b3c75b8eeca6931e50039e28dec0a8e0b4f43a7ad7ee0c7
-'http://httpredir.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.2.orig.tar.xz' python3.5_3.5.2.orig.tar.xz 15222676 SHA256:0010f56100b9b74259ebcd5d4b295a32324b58b517403a10d1a2aa7cb22bca40
-'http://httpredir.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.2-3.debian.tar.xz' python3.5_3.5.2-3.debian.tar.xz 391756 SHA256:da1ec2a42cded56b6851be2f5deb3717d77272f08918aaf126118198bc9b053d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/python3.5/3.5.2-3/
-- https://sources.debian.net/src/python3.5/3.5.2-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `readline6=6.3-8`
 
@@ -4505,18 +4455,8 @@ Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/s/sed/sed_4.2.2-7.1.dsc' sed_4.2.2-7.1.dsc 1835 SHA256:bb8abec206fc01c66afbcc2ed4f3da2d663511c587ab2ecbb19c6ed90cdd43fb
-'http://httpredir.debian.org/debian/pool/main/s/sed/sed_4.2.2.orig.tar.bz2' sed_4.2.2.orig.tar.bz2 1059414 SHA256:f048d1838da284c8bc9753e4506b85a1e0cc1ea8999d36f6995bcb9460cddbd7
-'http://httpredir.debian.org/debian/pool/main/s/sed/sed_4.2.2-7.1.debian.tar.xz' sed_4.2.2-7.1.debian.tar.xz 84704 SHA256:d44e38cc710cf363be58baf5e8884859de85031ceeb59366ef93608aaae37957
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sed/4.2.2-7.1/
-- https://sources.debian.net/src/sed/4.2.2-7.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sensible-utils=0.0.9`
 

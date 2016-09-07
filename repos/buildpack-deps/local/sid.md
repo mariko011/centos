@@ -1346,18 +1346,8 @@ Licenses: (parsed from: `/usr/share/doc/geoip-bin/copyright`, `/usr/share/doc/li
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/g/geoip/geoip_1.6.9-2.dsc' geoip_1.6.9-2.dsc 1885 SHA256:e23a0824ab46ac0c41fb508c40318575d588da43d520b0a46a3b5de8c0e2bd35
-'http://httpredir.debian.org/debian/pool/main/g/geoip/geoip_1.6.9.orig.tar.gz' geoip_1.6.9.orig.tar.gz 158576 SHA256:05468adbb6bdbddc588ee6f0df990f47b1b24d278519c35d59f7a8058a2a9825
-'http://httpredir.debian.org/debian/pool/main/g/geoip/geoip_1.6.9-2.debian.tar.xz' geoip_1.6.9-2.debian.tar.xz 22076 SHA256:cfd94d7602e73b00792c6771f650d1664838791c37dd1c9a8b3d79414eee2d11
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/geoip/1.6.9-2/
-- https://sources.debian.net/src/geoip/1.6.9-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `git=1:2.9.3-1`
 
@@ -1533,18 +1523,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.3-3.dsc' gnutls28_3.5.3-3.dsc 2847 SHA256:3fad39243afe630f8a0ad1d912b3cdd286b3e0ce423007b299c64c6b86c2deb0
-'http://httpredir.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.3.orig.tar.xz' gnutls28_3.5.3.orig.tar.xz 6895068 SHA256:92c4bc999a10a1b95299ebefaeea8333f19d8a98d957a35b5eae74881bdb1fef
-'http://httpredir.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.3-3.debian.tar.xz' gnutls28_3.5.3-3.debian.tar.xz 98696 SHA256:ad9e9142a9ae9ba3d0a19d1b04b33656ad9eb17f7d5c687b3e9dfac8a994a32f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnutls28/3.5.3-3/
-- https://sources.debian.net/src/gnutls28/3.5.3-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gobject-introspection=1.48.0-3`
 

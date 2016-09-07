@@ -968,18 +968,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.3-3.dsc' gnutls28_3.5.3-3.dsc 2847 SHA256:3fad39243afe630f8a0ad1d912b3cdd286b3e0ce423007b299c64c6b86c2deb0
-'http://httpredir.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.3.orig.tar.xz' gnutls28_3.5.3.orig.tar.xz 6895068 SHA256:92c4bc999a10a1b95299ebefaeea8333f19d8a98d957a35b5eae74881bdb1fef
-'http://httpredir.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.3-3.debian.tar.xz' gnutls28_3.5.3-3.debian.tar.xz 98696 SHA256:ad9e9142a9ae9ba3d0a19d1b04b33656ad9eb17f7d5c687b3e9dfac8a994a32f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnutls28/3.5.3-3/
-- https://sources.debian.net/src/gnutls28/3.5.3-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.25-6`
 
@@ -2160,18 +2150,8 @@ Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/s/sed/sed_4.2.2-7.1.dsc' sed_4.2.2-7.1.dsc 1835 SHA256:bb8abec206fc01c66afbcc2ed4f3da2d663511c587ab2ecbb19c6ed90cdd43fb
-'http://httpredir.debian.org/debian/pool/main/s/sed/sed_4.2.2.orig.tar.bz2' sed_4.2.2.orig.tar.bz2 1059414 SHA256:f048d1838da284c8bc9753e4506b85a1e0cc1ea8999d36f6995bcb9460cddbd7
-'http://httpredir.debian.org/debian/pool/main/s/sed/sed_4.2.2-7.1.debian.tar.xz' sed_4.2.2-7.1.debian.tar.xz 84704 SHA256:d44e38cc710cf363be58baf5e8884859de85031ceeb59366ef93608aaae37957
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sed/4.2.2-7.1/
-- https://sources.debian.net/src/sed/4.2.2-7.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sensible-utils=0.0.9`
 
