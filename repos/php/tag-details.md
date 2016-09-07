@@ -2,6 +2,22 @@
 
 # Tags of `php`
 
+-	[`php:7.1.0RC1-cli`](#php710rc1-cli)
+-	[`php:7.1-cli`](#php71-cli)
+-	[`php:7.1.0RC1`](#php710rc1)
+-	[`php:7.1`](#php71)
+-	[`php:7.1.0RC1-alpine`](#php710rc1-alpine)
+-	[`php:7.1-alpine`](#php71-alpine)
+-	[`php:7.1.0RC1-apache`](#php710rc1-apache)
+-	[`php:7.1-apache`](#php71-apache)
+-	[`php:7.1.0RC1-fpm`](#php710rc1-fpm)
+-	[`php:7.1-fpm`](#php71-fpm)
+-	[`php:7.1.0RC1-fpm-alpine`](#php710rc1-fpm-alpine)
+-	[`php:7.1-fpm-alpine`](#php71-fpm-alpine)
+-	[`php:7.1.0RC1-zts`](#php710rc1-zts)
+-	[`php:7.1-zts`](#php71-zts)
+-	[`php:7.1.0RC1-zts-alpine`](#php710rc1-zts-alpine)
+-	[`php:7.1-zts-alpine`](#php71-zts-alpine)
 -	[`php:7.0.10-cli`](#php7010-cli)
 -	[`php:7.0-cli`](#php70-cli)
 -	[`php:7-cli`](#php7-cli)
@@ -58,6 +74,70 @@
 -	[`php:5.6.25-zts-alpine`](#php5625-zts-alpine)
 -	[`php:5.6-zts-alpine`](#php56-zts-alpine)
 -	[`php:5-zts-alpine`](#php5-zts-alpine)
+
+## `php:7.1.0RC1-cli`
+
+**does not exist** (yet?)
+
+## `php:7.1-cli`
+
+**does not exist** (yet?)
+
+## `php:7.1.0RC1`
+
+**does not exist** (yet?)
+
+## `php:7.1`
+
+**does not exist** (yet?)
+
+## `php:7.1.0RC1-alpine`
+
+**does not exist** (yet?)
+
+## `php:7.1-alpine`
+
+**does not exist** (yet?)
+
+## `php:7.1.0RC1-apache`
+
+**does not exist** (yet?)
+
+## `php:7.1-apache`
+
+**does not exist** (yet?)
+
+## `php:7.1.0RC1-fpm`
+
+**does not exist** (yet?)
+
+## `php:7.1-fpm`
+
+**does not exist** (yet?)
+
+## `php:7.1.0RC1-fpm-alpine`
+
+**does not exist** (yet?)
+
+## `php:7.1-fpm-alpine`
+
+**does not exist** (yet?)
+
+## `php:7.1.0RC1-zts`
+
+**does not exist** (yet?)
+
+## `php:7.1-zts`
+
+**does not exist** (yet?)
+
+## `php:7.1.0RC1-zts-alpine`
+
+**does not exist** (yet?)
+
+## `php:7.1-zts-alpine`
+
+**does not exist** (yet?)
 
 ## `php:7.0.10-cli`
 
