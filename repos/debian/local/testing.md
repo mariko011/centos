@@ -1181,18 +1181,8 @@ Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/s/sed/sed_4.2.2-7.1.dsc' sed_4.2.2-7.1.dsc 1835 SHA256:bb8abec206fc01c66afbcc2ed4f3da2d663511c587ab2ecbb19c6ed90cdd43fb
-'http://httpredir.debian.org/debian/pool/main/s/sed/sed_4.2.2.orig.tar.bz2' sed_4.2.2.orig.tar.bz2 1059414 SHA256:f048d1838da284c8bc9753e4506b85a1e0cc1ea8999d36f6995bcb9460cddbd7
-'http://httpredir.debian.org/debian/pool/main/s/sed/sed_4.2.2-7.1.debian.tar.xz' sed_4.2.2-7.1.debian.tar.xz 84704 SHA256:d44e38cc710cf363be58baf5e8884859de85031ceeb59366ef93608aaae37957
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sed/4.2.2-7.1/
-- https://sources.debian.net/src/sed/4.2.2-7.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sensible-utils=0.0.9`
 
