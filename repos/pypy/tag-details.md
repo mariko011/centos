@@ -36,7 +36,7 @@
 ## `pypy:2-5.4.1`
 
 ```console
-$ docker pull pypy@sha256:f38538ed34826b32a3e6119cebbb3aa0453256f9c815d8af4586051a14b0cf5e
+$ docker pull pypy@sha256:3ed0061091554589bfee762399f93c934a2ff32f2ad3c61a432a025112a2c6b3
 ```
 
 -	Platforms:
@@ -46,9 +46,9 @@ $ docker pull pypy@sha256:f38538ed34826b32a3e6119cebbb3aa0453256f9c815d8af458605
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **272.0 MB (271989259 bytes)**  
+-	Total Size: **272.8 MB (272791122 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:666642fcf7c3551f46256c08f47f303d660b93663f4e462f3faa12bd64f9f275`
+-	Image ID: `sha256:69f9503bcd6fef80b6cf5a5537cc3ca32f927945f3b0fe9e1993a9fe83775ade`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
@@ -62,19 +62,21 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 30 Aug 2016 21:53:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:36:14 GMT
-RUN apt-get purge -y python.*
-# Wed, 31 Aug 2016 02:36:14 GMT
+# Wed, 31 Aug 2016 02:37:38 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:37:39 GMT
 ENV LANG=C.UTF-8
-# Wed, 07 Sep 2016 19:11:42 GMT
+# Wed, 31 Aug 2016 02:37:46 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:53:07 GMT
 ENV PYPY_VERSION=5.4.1
-# Wed, 07 Sep 2016 19:11:50 GMT
-RUN set -x 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1
-# Wed, 07 Sep 2016 19:11:50 GMT
+# Thu, 08 Sep 2016 20:53:07 GMT
+ENV PYPY_SHA256SUM=9c85319778224d7fb0c348f55fe3fada15bb579c5f3870a13ad63b42a737dd72
+# Thu, 08 Sep 2016 20:53:07 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 07 Sep 2016 19:11:57 GMT
-RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
-# Wed, 07 Sep 2016 19:11:57 GMT
+# Thu, 08 Sep 2016 20:53:24 GMT
+RUN set -ex 	&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 			&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	&& pip install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:53:25 GMT
 CMD ["pypy"]
 ```
 
@@ -95,23 +97,19 @@ CMD ["pypy"]
 		Last Modified: Tue, 30 Aug 2016 21:59:41 GMT  
 		Size: 129.8 MB (129750077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bbef2adf4f22ac366181c03c92a5198e482ef965a23ed31e1f864cf07c78ef`  
-		Last Modified: Wed, 31 Aug 2016 17:54:14 GMT  
-		Size: 222.4 KB (222442 bytes)  
+	-	`sha256:b7fc86da4ddd9e9b9bc328141589c42d8eded7305efe70f94c08e7dada014f8f`  
+		Last Modified: Wed, 07 Sep 2016 18:04:01 GMT  
+		Size: 2.9 MB (2888768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b16c86cdea04a3a3eb6b34ac537fd9b7b74e7ba0e6edd0c82ea15622f0019e13`  
-		Last Modified: Wed, 07 Sep 2016 19:12:38 GMT  
-		Size: 24.2 MB (24243647 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e000f40baae9204f6eb3a52dd0dc441d48ed49251d2126ef4993bd05dd73358`  
-		Last Modified: Wed, 07 Sep 2016 19:12:31 GMT  
-		Size: 5.4 MB (5382932 bytes)  
+	-	`sha256:521592bec51e5846f0cb609757b9bcfa1393310ff541178887591d31315f9af4`  
+		Last Modified: Thu, 08 Sep 2016 20:55:12 GMT  
+		Size: 27.8 MB (27762116 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:2-5.4`
 
 ```console
-$ docker pull pypy@sha256:f38538ed34826b32a3e6119cebbb3aa0453256f9c815d8af4586051a14b0cf5e
+$ docker pull pypy@sha256:3ed0061091554589bfee762399f93c934a2ff32f2ad3c61a432a025112a2c6b3
 ```
 
 -	Platforms:
@@ -121,9 +119,9 @@ $ docker pull pypy@sha256:f38538ed34826b32a3e6119cebbb3aa0453256f9c815d8af458605
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **272.0 MB (271989259 bytes)**  
+-	Total Size: **272.8 MB (272791122 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:666642fcf7c3551f46256c08f47f303d660b93663f4e462f3faa12bd64f9f275`
+-	Image ID: `sha256:69f9503bcd6fef80b6cf5a5537cc3ca32f927945f3b0fe9e1993a9fe83775ade`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
@@ -137,19 +135,21 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 30 Aug 2016 21:53:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:36:14 GMT
-RUN apt-get purge -y python.*
-# Wed, 31 Aug 2016 02:36:14 GMT
+# Wed, 31 Aug 2016 02:37:38 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:37:39 GMT
 ENV LANG=C.UTF-8
-# Wed, 07 Sep 2016 19:11:42 GMT
+# Wed, 31 Aug 2016 02:37:46 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:53:07 GMT
 ENV PYPY_VERSION=5.4.1
-# Wed, 07 Sep 2016 19:11:50 GMT
-RUN set -x 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1
-# Wed, 07 Sep 2016 19:11:50 GMT
+# Thu, 08 Sep 2016 20:53:07 GMT
+ENV PYPY_SHA256SUM=9c85319778224d7fb0c348f55fe3fada15bb579c5f3870a13ad63b42a737dd72
+# Thu, 08 Sep 2016 20:53:07 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 07 Sep 2016 19:11:57 GMT
-RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
-# Wed, 07 Sep 2016 19:11:57 GMT
+# Thu, 08 Sep 2016 20:53:24 GMT
+RUN set -ex 	&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 			&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	&& pip install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:53:25 GMT
 CMD ["pypy"]
 ```
 
@@ -170,23 +170,19 @@ CMD ["pypy"]
 		Last Modified: Tue, 30 Aug 2016 21:59:41 GMT  
 		Size: 129.8 MB (129750077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bbef2adf4f22ac366181c03c92a5198e482ef965a23ed31e1f864cf07c78ef`  
-		Last Modified: Wed, 31 Aug 2016 17:54:14 GMT  
-		Size: 222.4 KB (222442 bytes)  
+	-	`sha256:b7fc86da4ddd9e9b9bc328141589c42d8eded7305efe70f94c08e7dada014f8f`  
+		Last Modified: Wed, 07 Sep 2016 18:04:01 GMT  
+		Size: 2.9 MB (2888768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b16c86cdea04a3a3eb6b34ac537fd9b7b74e7ba0e6edd0c82ea15622f0019e13`  
-		Last Modified: Wed, 07 Sep 2016 19:12:38 GMT  
-		Size: 24.2 MB (24243647 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e000f40baae9204f6eb3a52dd0dc441d48ed49251d2126ef4993bd05dd73358`  
-		Last Modified: Wed, 07 Sep 2016 19:12:31 GMT  
-		Size: 5.4 MB (5382932 bytes)  
+	-	`sha256:521592bec51e5846f0cb609757b9bcfa1393310ff541178887591d31315f9af4`  
+		Last Modified: Thu, 08 Sep 2016 20:55:12 GMT  
+		Size: 27.8 MB (27762116 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:2-5`
 
 ```console
-$ docker pull pypy@sha256:f38538ed34826b32a3e6119cebbb3aa0453256f9c815d8af4586051a14b0cf5e
+$ docker pull pypy@sha256:3ed0061091554589bfee762399f93c934a2ff32f2ad3c61a432a025112a2c6b3
 ```
 
 -	Platforms:
@@ -196,9 +192,9 @@ $ docker pull pypy@sha256:f38538ed34826b32a3e6119cebbb3aa0453256f9c815d8af458605
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **272.0 MB (271989259 bytes)**  
+-	Total Size: **272.8 MB (272791122 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:666642fcf7c3551f46256c08f47f303d660b93663f4e462f3faa12bd64f9f275`
+-	Image ID: `sha256:69f9503bcd6fef80b6cf5a5537cc3ca32f927945f3b0fe9e1993a9fe83775ade`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
@@ -212,19 +208,21 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 30 Aug 2016 21:53:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:36:14 GMT
-RUN apt-get purge -y python.*
-# Wed, 31 Aug 2016 02:36:14 GMT
+# Wed, 31 Aug 2016 02:37:38 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:37:39 GMT
 ENV LANG=C.UTF-8
-# Wed, 07 Sep 2016 19:11:42 GMT
+# Wed, 31 Aug 2016 02:37:46 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:53:07 GMT
 ENV PYPY_VERSION=5.4.1
-# Wed, 07 Sep 2016 19:11:50 GMT
-RUN set -x 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1
-# Wed, 07 Sep 2016 19:11:50 GMT
+# Thu, 08 Sep 2016 20:53:07 GMT
+ENV PYPY_SHA256SUM=9c85319778224d7fb0c348f55fe3fada15bb579c5f3870a13ad63b42a737dd72
+# Thu, 08 Sep 2016 20:53:07 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 07 Sep 2016 19:11:57 GMT
-RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
-# Wed, 07 Sep 2016 19:11:57 GMT
+# Thu, 08 Sep 2016 20:53:24 GMT
+RUN set -ex 	&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 			&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	&& pip install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:53:25 GMT
 CMD ["pypy"]
 ```
 
@@ -245,23 +243,19 @@ CMD ["pypy"]
 		Last Modified: Tue, 30 Aug 2016 21:59:41 GMT  
 		Size: 129.8 MB (129750077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bbef2adf4f22ac366181c03c92a5198e482ef965a23ed31e1f864cf07c78ef`  
-		Last Modified: Wed, 31 Aug 2016 17:54:14 GMT  
-		Size: 222.4 KB (222442 bytes)  
+	-	`sha256:b7fc86da4ddd9e9b9bc328141589c42d8eded7305efe70f94c08e7dada014f8f`  
+		Last Modified: Wed, 07 Sep 2016 18:04:01 GMT  
+		Size: 2.9 MB (2888768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b16c86cdea04a3a3eb6b34ac537fd9b7b74e7ba0e6edd0c82ea15622f0019e13`  
-		Last Modified: Wed, 07 Sep 2016 19:12:38 GMT  
-		Size: 24.2 MB (24243647 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e000f40baae9204f6eb3a52dd0dc441d48ed49251d2126ef4993bd05dd73358`  
-		Last Modified: Wed, 07 Sep 2016 19:12:31 GMT  
-		Size: 5.4 MB (5382932 bytes)  
+	-	`sha256:521592bec51e5846f0cb609757b9bcfa1393310ff541178887591d31315f9af4`  
+		Last Modified: Thu, 08 Sep 2016 20:55:12 GMT  
+		Size: 27.8 MB (27762116 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:2`
 
 ```console
-$ docker pull pypy@sha256:f38538ed34826b32a3e6119cebbb3aa0453256f9c815d8af4586051a14b0cf5e
+$ docker pull pypy@sha256:3ed0061091554589bfee762399f93c934a2ff32f2ad3c61a432a025112a2c6b3
 ```
 
 -	Platforms:
@@ -271,9 +265,9 @@ $ docker pull pypy@sha256:f38538ed34826b32a3e6119cebbb3aa0453256f9c815d8af458605
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **272.0 MB (271989259 bytes)**  
+-	Total Size: **272.8 MB (272791122 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:666642fcf7c3551f46256c08f47f303d660b93663f4e462f3faa12bd64f9f275`
+-	Image ID: `sha256:69f9503bcd6fef80b6cf5a5537cc3ca32f927945f3b0fe9e1993a9fe83775ade`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
@@ -287,19 +281,21 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 30 Aug 2016 21:53:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:36:14 GMT
-RUN apt-get purge -y python.*
-# Wed, 31 Aug 2016 02:36:14 GMT
+# Wed, 31 Aug 2016 02:37:38 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:37:39 GMT
 ENV LANG=C.UTF-8
-# Wed, 07 Sep 2016 19:11:42 GMT
+# Wed, 31 Aug 2016 02:37:46 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:53:07 GMT
 ENV PYPY_VERSION=5.4.1
-# Wed, 07 Sep 2016 19:11:50 GMT
-RUN set -x 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1
-# Wed, 07 Sep 2016 19:11:50 GMT
+# Thu, 08 Sep 2016 20:53:07 GMT
+ENV PYPY_SHA256SUM=9c85319778224d7fb0c348f55fe3fada15bb579c5f3870a13ad63b42a737dd72
+# Thu, 08 Sep 2016 20:53:07 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 07 Sep 2016 19:11:57 GMT
-RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
-# Wed, 07 Sep 2016 19:11:57 GMT
+# Thu, 08 Sep 2016 20:53:24 GMT
+RUN set -ex 	&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 			&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	&& pip install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:53:25 GMT
 CMD ["pypy"]
 ```
 
@@ -320,23 +316,19 @@ CMD ["pypy"]
 		Last Modified: Tue, 30 Aug 2016 21:59:41 GMT  
 		Size: 129.8 MB (129750077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bbef2adf4f22ac366181c03c92a5198e482ef965a23ed31e1f864cf07c78ef`  
-		Last Modified: Wed, 31 Aug 2016 17:54:14 GMT  
-		Size: 222.4 KB (222442 bytes)  
+	-	`sha256:b7fc86da4ddd9e9b9bc328141589c42d8eded7305efe70f94c08e7dada014f8f`  
+		Last Modified: Wed, 07 Sep 2016 18:04:01 GMT  
+		Size: 2.9 MB (2888768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b16c86cdea04a3a3eb6b34ac537fd9b7b74e7ba0e6edd0c82ea15622f0019e13`  
-		Last Modified: Wed, 07 Sep 2016 19:12:38 GMT  
-		Size: 24.2 MB (24243647 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e000f40baae9204f6eb3a52dd0dc441d48ed49251d2126ef4993bd05dd73358`  
-		Last Modified: Wed, 07 Sep 2016 19:12:31 GMT  
-		Size: 5.4 MB (5382932 bytes)  
+	-	`sha256:521592bec51e5846f0cb609757b9bcfa1393310ff541178887591d31315f9af4`  
+		Last Modified: Thu, 08 Sep 2016 20:55:12 GMT  
+		Size: 27.8 MB (27762116 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:2-5.4.1-slim`
 
 ```console
-$ docker pull pypy@sha256:ab81d224b26c273f1c26d718e5ad3be461df57f08a719b68f3f7803eb8eb6436
+$ docker pull pypy@sha256:ba9576262f52186c872622a9119b7c08b28e6c2adb04cf5dfe97734999f2498d
 ```
 
 -	Platforms:
@@ -346,9 +338,9 @@ $ docker pull pypy@sha256:ab81d224b26c273f1c26d718e5ad3be461df57f08a719b68f3f780
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.5 MB (86498933 bytes)**  
+-	Total Size: **82.7 MB (82663067 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:461346653f84c82bdce602363e161c2bea7cba7153ac697478b101c10649f7ca`
+-	Image ID: `sha256:cd6c164a8c1f14facc57cb270a5ee328551b28ded7d3df7227e8f413a0b1a291`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
@@ -356,19 +348,21 @@ $ docker pull pypy@sha256:ab81d224b26c273f1c26d718e5ad3be461df57f08a719b68f3f780
 ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
 # Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 21:09:07 GMT
-RUN apt-get purge -y python.*
-# Tue, 30 Aug 2016 21:09:07 GMT
+# Wed, 31 Aug 2016 02:39:27 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:39:27 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 21:09:17 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 07 Sep 2016 19:11:58 GMT
+# Thu, 08 Sep 2016 20:53:34 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libffi6 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:53:34 GMT
 ENV PYPY_VERSION=5.4.1
-# Wed, 07 Sep 2016 19:11:58 GMT
+# Thu, 08 Sep 2016 20:53:34 GMT
+ENV PYPY_SHA256SUM=9c85319778224d7fb0c348f55fe3fada15bb579c5f3870a13ad63b42a737dd72
+# Thu, 08 Sep 2016 20:53:35 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 07 Sep 2016 19:12:20 GMT
-RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
-# Wed, 07 Sep 2016 19:12:21 GMT
+# Thu, 08 Sep 2016 20:53:59 GMT
+RUN set -ex 	&& fetchDeps=' 		bzip2 		wget 	' 	&& apt-get update && apt-get install -y $fetchDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 			&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	&& pip install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& apt-get purge -y --auto-remove $fetchDeps 	&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:54:00 GMT
 CMD ["pypy"]
 ```
 
@@ -377,19 +371,19 @@ CMD ["pypy"]
 		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
 		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:107c2f6f9f84689c4d85a21149424704a735f71716123a38c8a4efbd3aa45e62`  
-		Last Modified: Wed, 31 Aug 2016 17:55:05 GMT  
-		Size: 3.4 MB (3442217 bytes)  
+	-	`sha256:3201fa3d047251e1cd4d144a7c8182853606fd2d2cd67e45c29632c208c16e7b`  
+		Last Modified: Thu, 08 Sep 2016 20:55:48 GMT  
+		Size: 3.5 MB (3464735 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7245ebf7e25eeb4e9885d5d7096978a5a77e81c1c54f59c2e7e5803e34ef95bc`  
-		Last Modified: Wed, 07 Sep 2016 19:13:21 GMT  
-		Size: 31.7 MB (31689448 bytes)  
+	-	`sha256:e7bc72e615503c96103b8c6e885e536d3947764eb5e2b4a4f0e839bceaf8f3c5`  
+		Last Modified: Thu, 08 Sep 2016 20:56:00 GMT  
+		Size: 27.8 MB (27831064 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:2-5.4-slim`
 
 ```console
-$ docker pull pypy@sha256:ab81d224b26c273f1c26d718e5ad3be461df57f08a719b68f3f7803eb8eb6436
+$ docker pull pypy@sha256:ba9576262f52186c872622a9119b7c08b28e6c2adb04cf5dfe97734999f2498d
 ```
 
 -	Platforms:
@@ -399,9 +393,9 @@ $ docker pull pypy@sha256:ab81d224b26c273f1c26d718e5ad3be461df57f08a719b68f3f780
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.5 MB (86498933 bytes)**  
+-	Total Size: **82.7 MB (82663067 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:461346653f84c82bdce602363e161c2bea7cba7153ac697478b101c10649f7ca`
+-	Image ID: `sha256:cd6c164a8c1f14facc57cb270a5ee328551b28ded7d3df7227e8f413a0b1a291`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
@@ -409,19 +403,21 @@ $ docker pull pypy@sha256:ab81d224b26c273f1c26d718e5ad3be461df57f08a719b68f3f780
 ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
 # Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 21:09:07 GMT
-RUN apt-get purge -y python.*
-# Tue, 30 Aug 2016 21:09:07 GMT
+# Wed, 31 Aug 2016 02:39:27 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:39:27 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 21:09:17 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 07 Sep 2016 19:11:58 GMT
+# Thu, 08 Sep 2016 20:53:34 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libffi6 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:53:34 GMT
 ENV PYPY_VERSION=5.4.1
-# Wed, 07 Sep 2016 19:11:58 GMT
+# Thu, 08 Sep 2016 20:53:34 GMT
+ENV PYPY_SHA256SUM=9c85319778224d7fb0c348f55fe3fada15bb579c5f3870a13ad63b42a737dd72
+# Thu, 08 Sep 2016 20:53:35 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 07 Sep 2016 19:12:20 GMT
-RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
-# Wed, 07 Sep 2016 19:12:21 GMT
+# Thu, 08 Sep 2016 20:53:59 GMT
+RUN set -ex 	&& fetchDeps=' 		bzip2 		wget 	' 	&& apt-get update && apt-get install -y $fetchDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 			&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	&& pip install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& apt-get purge -y --auto-remove $fetchDeps 	&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:54:00 GMT
 CMD ["pypy"]
 ```
 
@@ -430,19 +426,19 @@ CMD ["pypy"]
 		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
 		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:107c2f6f9f84689c4d85a21149424704a735f71716123a38c8a4efbd3aa45e62`  
-		Last Modified: Wed, 31 Aug 2016 17:55:05 GMT  
-		Size: 3.4 MB (3442217 bytes)  
+	-	`sha256:3201fa3d047251e1cd4d144a7c8182853606fd2d2cd67e45c29632c208c16e7b`  
+		Last Modified: Thu, 08 Sep 2016 20:55:48 GMT  
+		Size: 3.5 MB (3464735 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7245ebf7e25eeb4e9885d5d7096978a5a77e81c1c54f59c2e7e5803e34ef95bc`  
-		Last Modified: Wed, 07 Sep 2016 19:13:21 GMT  
-		Size: 31.7 MB (31689448 bytes)  
+	-	`sha256:e7bc72e615503c96103b8c6e885e536d3947764eb5e2b4a4f0e839bceaf8f3c5`  
+		Last Modified: Thu, 08 Sep 2016 20:56:00 GMT  
+		Size: 27.8 MB (27831064 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:2-5-slim`
 
 ```console
-$ docker pull pypy@sha256:ab81d224b26c273f1c26d718e5ad3be461df57f08a719b68f3f7803eb8eb6436
+$ docker pull pypy@sha256:ba9576262f52186c872622a9119b7c08b28e6c2adb04cf5dfe97734999f2498d
 ```
 
 -	Platforms:
@@ -452,9 +448,9 @@ $ docker pull pypy@sha256:ab81d224b26c273f1c26d718e5ad3be461df57f08a719b68f3f780
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.5 MB (86498933 bytes)**  
+-	Total Size: **82.7 MB (82663067 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:461346653f84c82bdce602363e161c2bea7cba7153ac697478b101c10649f7ca`
+-	Image ID: `sha256:cd6c164a8c1f14facc57cb270a5ee328551b28ded7d3df7227e8f413a0b1a291`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
@@ -462,19 +458,21 @@ $ docker pull pypy@sha256:ab81d224b26c273f1c26d718e5ad3be461df57f08a719b68f3f780
 ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
 # Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 21:09:07 GMT
-RUN apt-get purge -y python.*
-# Tue, 30 Aug 2016 21:09:07 GMT
+# Wed, 31 Aug 2016 02:39:27 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:39:27 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 21:09:17 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 07 Sep 2016 19:11:58 GMT
+# Thu, 08 Sep 2016 20:53:34 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libffi6 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:53:34 GMT
 ENV PYPY_VERSION=5.4.1
-# Wed, 07 Sep 2016 19:11:58 GMT
+# Thu, 08 Sep 2016 20:53:34 GMT
+ENV PYPY_SHA256SUM=9c85319778224d7fb0c348f55fe3fada15bb579c5f3870a13ad63b42a737dd72
+# Thu, 08 Sep 2016 20:53:35 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 07 Sep 2016 19:12:20 GMT
-RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
-# Wed, 07 Sep 2016 19:12:21 GMT
+# Thu, 08 Sep 2016 20:53:59 GMT
+RUN set -ex 	&& fetchDeps=' 		bzip2 		wget 	' 	&& apt-get update && apt-get install -y $fetchDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 			&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	&& pip install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& apt-get purge -y --auto-remove $fetchDeps 	&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:54:00 GMT
 CMD ["pypy"]
 ```
 
@@ -483,19 +481,19 @@ CMD ["pypy"]
 		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
 		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:107c2f6f9f84689c4d85a21149424704a735f71716123a38c8a4efbd3aa45e62`  
-		Last Modified: Wed, 31 Aug 2016 17:55:05 GMT  
-		Size: 3.4 MB (3442217 bytes)  
+	-	`sha256:3201fa3d047251e1cd4d144a7c8182853606fd2d2cd67e45c29632c208c16e7b`  
+		Last Modified: Thu, 08 Sep 2016 20:55:48 GMT  
+		Size: 3.5 MB (3464735 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7245ebf7e25eeb4e9885d5d7096978a5a77e81c1c54f59c2e7e5803e34ef95bc`  
-		Last Modified: Wed, 07 Sep 2016 19:13:21 GMT  
-		Size: 31.7 MB (31689448 bytes)  
+	-	`sha256:e7bc72e615503c96103b8c6e885e536d3947764eb5e2b4a4f0e839bceaf8f3c5`  
+		Last Modified: Thu, 08 Sep 2016 20:56:00 GMT  
+		Size: 27.8 MB (27831064 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:2-slim`
 
 ```console
-$ docker pull pypy@sha256:ab81d224b26c273f1c26d718e5ad3be461df57f08a719b68f3f7803eb8eb6436
+$ docker pull pypy@sha256:ba9576262f52186c872622a9119b7c08b28e6c2adb04cf5dfe97734999f2498d
 ```
 
 -	Platforms:
@@ -505,9 +503,9 @@ $ docker pull pypy@sha256:ab81d224b26c273f1c26d718e5ad3be461df57f08a719b68f3f780
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.5 MB (86498933 bytes)**  
+-	Total Size: **82.7 MB (82663067 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:461346653f84c82bdce602363e161c2bea7cba7153ac697478b101c10649f7ca`
+-	Image ID: `sha256:cd6c164a8c1f14facc57cb270a5ee328551b28ded7d3df7227e8f413a0b1a291`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
@@ -515,19 +513,21 @@ $ docker pull pypy@sha256:ab81d224b26c273f1c26d718e5ad3be461df57f08a719b68f3f780
 ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
 # Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 21:09:07 GMT
-RUN apt-get purge -y python.*
-# Tue, 30 Aug 2016 21:09:07 GMT
+# Wed, 31 Aug 2016 02:39:27 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:39:27 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 21:09:17 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 07 Sep 2016 19:11:58 GMT
+# Thu, 08 Sep 2016 20:53:34 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libffi6 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:53:34 GMT
 ENV PYPY_VERSION=5.4.1
-# Wed, 07 Sep 2016 19:11:58 GMT
+# Thu, 08 Sep 2016 20:53:34 GMT
+ENV PYPY_SHA256SUM=9c85319778224d7fb0c348f55fe3fada15bb579c5f3870a13ad63b42a737dd72
+# Thu, 08 Sep 2016 20:53:35 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 07 Sep 2016 19:12:20 GMT
-RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
-# Wed, 07 Sep 2016 19:12:21 GMT
+# Thu, 08 Sep 2016 20:53:59 GMT
+RUN set -ex 	&& fetchDeps=' 		bzip2 		wget 	' 	&& apt-get update && apt-get install -y $fetchDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 			&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	&& pip install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& apt-get purge -y --auto-remove $fetchDeps 	&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:54:00 GMT
 CMD ["pypy"]
 ```
 
@@ -536,19 +536,19 @@ CMD ["pypy"]
 		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
 		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:107c2f6f9f84689c4d85a21149424704a735f71716123a38c8a4efbd3aa45e62`  
-		Last Modified: Wed, 31 Aug 2016 17:55:05 GMT  
-		Size: 3.4 MB (3442217 bytes)  
+	-	`sha256:3201fa3d047251e1cd4d144a7c8182853606fd2d2cd67e45c29632c208c16e7b`  
+		Last Modified: Thu, 08 Sep 2016 20:55:48 GMT  
+		Size: 3.5 MB (3464735 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7245ebf7e25eeb4e9885d5d7096978a5a77e81c1c54f59c2e7e5803e34ef95bc`  
-		Last Modified: Wed, 07 Sep 2016 19:13:21 GMT  
-		Size: 31.7 MB (31689448 bytes)  
+	-	`sha256:e7bc72e615503c96103b8c6e885e536d3947764eb5e2b4a4f0e839bceaf8f3c5`  
+		Last Modified: Thu, 08 Sep 2016 20:56:00 GMT  
+		Size: 27.8 MB (27831064 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:2-5.4.1-onbuild`
 
 ```console
-$ docker pull pypy@sha256:33cc8cabc2e9e84c94e5389a166ac3a7e0007b8516682beffd2814279d839e82
+$ docker pull pypy@sha256:6376acdb0266cb0d0157c16d7cc9e466345f444d4355b5aee483443311df25ca
 ```
 
 -	Platforms:
@@ -558,9 +558,9 @@ $ docker pull pypy@sha256:33cc8cabc2e9e84c94e5389a166ac3a7e0007b8516682beffd2814
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **272.0 MB (271989386 bytes)**  
+-	Total Size: **272.8 MB (272791247 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48441afc9722f78e46703fbb5c93c5bcc2346ae1c6efa4e4742e74acab19a707`
+-	Image ID: `sha256:985bd840007fd39643b08ac68da229ea3f0052f24bc717e8bbd8dfc1c995ae83`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
@@ -574,29 +574,31 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 30 Aug 2016 21:53:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:36:14 GMT
-RUN apt-get purge -y python.*
-# Wed, 31 Aug 2016 02:36:14 GMT
+# Wed, 31 Aug 2016 02:37:38 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:37:39 GMT
 ENV LANG=C.UTF-8
-# Wed, 07 Sep 2016 19:11:42 GMT
+# Wed, 31 Aug 2016 02:37:46 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:53:07 GMT
 ENV PYPY_VERSION=5.4.1
-# Wed, 07 Sep 2016 19:11:50 GMT
-RUN set -x 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1
-# Wed, 07 Sep 2016 19:11:50 GMT
+# Thu, 08 Sep 2016 20:53:07 GMT
+ENV PYPY_SHA256SUM=9c85319778224d7fb0c348f55fe3fada15bb579c5f3870a13ad63b42a737dd72
+# Thu, 08 Sep 2016 20:53:07 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 07 Sep 2016 19:11:57 GMT
-RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
-# Wed, 07 Sep 2016 19:11:57 GMT
+# Thu, 08 Sep 2016 20:53:24 GMT
+RUN set -ex 	&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 			&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	&& pip install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:53:25 GMT
 CMD ["pypy"]
-# Wed, 07 Sep 2016 19:12:22 GMT
+# Thu, 08 Sep 2016 20:54:01 GMT
 RUN mkdir -p /usr/src/app
-# Wed, 07 Sep 2016 19:12:22 GMT
+# Thu, 08 Sep 2016 20:54:01 GMT
 WORKDIR /usr/src/app
-# Wed, 07 Sep 2016 19:12:22 GMT
+# Thu, 08 Sep 2016 20:54:01 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Wed, 07 Sep 2016 19:12:23 GMT
+# Thu, 08 Sep 2016 20:54:01 GMT
 ONBUILD RUN pip install -r requirements.txt
-# Wed, 07 Sep 2016 19:12:23 GMT
+# Thu, 08 Sep 2016 20:54:02 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -617,27 +619,23 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Tue, 30 Aug 2016 21:59:41 GMT  
 		Size: 129.8 MB (129750077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bbef2adf4f22ac366181c03c92a5198e482ef965a23ed31e1f864cf07c78ef`  
-		Last Modified: Wed, 31 Aug 2016 17:54:14 GMT  
-		Size: 222.4 KB (222442 bytes)  
+	-	`sha256:b7fc86da4ddd9e9b9bc328141589c42d8eded7305efe70f94c08e7dada014f8f`  
+		Last Modified: Wed, 07 Sep 2016 18:04:01 GMT  
+		Size: 2.9 MB (2888768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b16c86cdea04a3a3eb6b34ac537fd9b7b74e7ba0e6edd0c82ea15622f0019e13`  
-		Last Modified: Wed, 07 Sep 2016 19:12:38 GMT  
-		Size: 24.2 MB (24243647 bytes)  
+	-	`sha256:521592bec51e5846f0cb609757b9bcfa1393310ff541178887591d31315f9af4`  
+		Last Modified: Thu, 08 Sep 2016 20:55:12 GMT  
+		Size: 27.8 MB (27762116 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e000f40baae9204f6eb3a52dd0dc441d48ed49251d2126ef4993bd05dd73358`  
-		Last Modified: Wed, 07 Sep 2016 19:12:31 GMT  
-		Size: 5.4 MB (5382932 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be2c91f82f171685536fa9075d1f90d2548e1b80d10e77d97422aeae87018692`  
-		Last Modified: Wed, 07 Sep 2016 19:13:57 GMT  
-		Size: 127.0 B  
+	-	`sha256:604f2d1b00a730459a709a735ea81e485fd2c73359d27f33fe994eaac9112cfc`  
+		Last Modified: Thu, 08 Sep 2016 20:56:33 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:2-5.4-onbuild`
 
 ```console
-$ docker pull pypy@sha256:33cc8cabc2e9e84c94e5389a166ac3a7e0007b8516682beffd2814279d839e82
+$ docker pull pypy@sha256:6376acdb0266cb0d0157c16d7cc9e466345f444d4355b5aee483443311df25ca
 ```
 
 -	Platforms:
@@ -647,9 +645,9 @@ $ docker pull pypy@sha256:33cc8cabc2e9e84c94e5389a166ac3a7e0007b8516682beffd2814
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **272.0 MB (271989386 bytes)**  
+-	Total Size: **272.8 MB (272791247 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48441afc9722f78e46703fbb5c93c5bcc2346ae1c6efa4e4742e74acab19a707`
+-	Image ID: `sha256:985bd840007fd39643b08ac68da229ea3f0052f24bc717e8bbd8dfc1c995ae83`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
@@ -663,29 +661,31 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 30 Aug 2016 21:53:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:36:14 GMT
-RUN apt-get purge -y python.*
-# Wed, 31 Aug 2016 02:36:14 GMT
+# Wed, 31 Aug 2016 02:37:38 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:37:39 GMT
 ENV LANG=C.UTF-8
-# Wed, 07 Sep 2016 19:11:42 GMT
+# Wed, 31 Aug 2016 02:37:46 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:53:07 GMT
 ENV PYPY_VERSION=5.4.1
-# Wed, 07 Sep 2016 19:11:50 GMT
-RUN set -x 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1
-# Wed, 07 Sep 2016 19:11:50 GMT
+# Thu, 08 Sep 2016 20:53:07 GMT
+ENV PYPY_SHA256SUM=9c85319778224d7fb0c348f55fe3fada15bb579c5f3870a13ad63b42a737dd72
+# Thu, 08 Sep 2016 20:53:07 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 07 Sep 2016 19:11:57 GMT
-RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
-# Wed, 07 Sep 2016 19:11:57 GMT
+# Thu, 08 Sep 2016 20:53:24 GMT
+RUN set -ex 	&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 			&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	&& pip install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:53:25 GMT
 CMD ["pypy"]
-# Wed, 07 Sep 2016 19:12:22 GMT
+# Thu, 08 Sep 2016 20:54:01 GMT
 RUN mkdir -p /usr/src/app
-# Wed, 07 Sep 2016 19:12:22 GMT
+# Thu, 08 Sep 2016 20:54:01 GMT
 WORKDIR /usr/src/app
-# Wed, 07 Sep 2016 19:12:22 GMT
+# Thu, 08 Sep 2016 20:54:01 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Wed, 07 Sep 2016 19:12:23 GMT
+# Thu, 08 Sep 2016 20:54:01 GMT
 ONBUILD RUN pip install -r requirements.txt
-# Wed, 07 Sep 2016 19:12:23 GMT
+# Thu, 08 Sep 2016 20:54:02 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -706,27 +706,23 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Tue, 30 Aug 2016 21:59:41 GMT  
 		Size: 129.8 MB (129750077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bbef2adf4f22ac366181c03c92a5198e482ef965a23ed31e1f864cf07c78ef`  
-		Last Modified: Wed, 31 Aug 2016 17:54:14 GMT  
-		Size: 222.4 KB (222442 bytes)  
+	-	`sha256:b7fc86da4ddd9e9b9bc328141589c42d8eded7305efe70f94c08e7dada014f8f`  
+		Last Modified: Wed, 07 Sep 2016 18:04:01 GMT  
+		Size: 2.9 MB (2888768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b16c86cdea04a3a3eb6b34ac537fd9b7b74e7ba0e6edd0c82ea15622f0019e13`  
-		Last Modified: Wed, 07 Sep 2016 19:12:38 GMT  
-		Size: 24.2 MB (24243647 bytes)  
+	-	`sha256:521592bec51e5846f0cb609757b9bcfa1393310ff541178887591d31315f9af4`  
+		Last Modified: Thu, 08 Sep 2016 20:55:12 GMT  
+		Size: 27.8 MB (27762116 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e000f40baae9204f6eb3a52dd0dc441d48ed49251d2126ef4993bd05dd73358`  
-		Last Modified: Wed, 07 Sep 2016 19:12:31 GMT  
-		Size: 5.4 MB (5382932 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be2c91f82f171685536fa9075d1f90d2548e1b80d10e77d97422aeae87018692`  
-		Last Modified: Wed, 07 Sep 2016 19:13:57 GMT  
-		Size: 127.0 B  
+	-	`sha256:604f2d1b00a730459a709a735ea81e485fd2c73359d27f33fe994eaac9112cfc`  
+		Last Modified: Thu, 08 Sep 2016 20:56:33 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:2-5-onbuild`
 
 ```console
-$ docker pull pypy@sha256:a2a856c315b529845bc1e8d7c24a436b7422075cc7f147331f06d9ebd6be9364
+$ docker pull pypy@sha256:6376acdb0266cb0d0157c16d7cc9e466345f444d4355b5aee483443311df25ca
 ```
 
 -	Platforms:
@@ -736,9 +732,9 @@ $ docker pull pypy@sha256:a2a856c315b529845bc1e8d7c24a436b7422075cc7f147331f06d9
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **272.0 MB (271988271 bytes)**  
+-	Total Size: **272.8 MB (272791247 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:72c3e1a3d7dc04a4a33f6191490dfcd8a1d5087ce42c4757e6fbc26dc1f9ceb2`
+-	Image ID: `sha256:985bd840007fd39643b08ac68da229ea3f0052f24bc717e8bbd8dfc1c995ae83`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
@@ -752,29 +748,31 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 30 Aug 2016 21:53:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:36:14 GMT
-RUN apt-get purge -y python.*
-# Wed, 31 Aug 2016 02:36:14 GMT
+# Wed, 31 Aug 2016 02:37:38 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:37:39 GMT
 ENV LANG=C.UTF-8
-# Wed, 31 Aug 2016 17:52:58 GMT
-ENV PYPY_VERSION=5.4.0
-# Wed, 31 Aug 2016 17:53:10 GMT
-RUN set -x 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1
-# Wed, 31 Aug 2016 17:53:10 GMT
+# Wed, 31 Aug 2016 02:37:46 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:53:07 GMT
+ENV PYPY_VERSION=5.4.1
+# Thu, 08 Sep 2016 20:53:07 GMT
+ENV PYPY_SHA256SUM=9c85319778224d7fb0c348f55fe3fada15bb579c5f3870a13ad63b42a737dd72
+# Thu, 08 Sep 2016 20:53:07 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 31 Aug 2016 17:53:23 GMT
-RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
-# Wed, 31 Aug 2016 17:53:23 GMT
+# Thu, 08 Sep 2016 20:53:24 GMT
+RUN set -ex 	&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 			&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	&& pip install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:53:25 GMT
 CMD ["pypy"]
-# Wed, 31 Aug 2016 17:54:03 GMT
+# Thu, 08 Sep 2016 20:54:01 GMT
 RUN mkdir -p /usr/src/app
-# Wed, 31 Aug 2016 17:54:03 GMT
+# Thu, 08 Sep 2016 20:54:01 GMT
 WORKDIR /usr/src/app
-# Wed, 31 Aug 2016 17:54:04 GMT
+# Thu, 08 Sep 2016 20:54:01 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Wed, 31 Aug 2016 17:54:04 GMT
+# Thu, 08 Sep 2016 20:54:01 GMT
 ONBUILD RUN pip install -r requirements.txt
-# Wed, 31 Aug 2016 17:54:04 GMT
+# Thu, 08 Sep 2016 20:54:02 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -795,27 +793,23 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Tue, 30 Aug 2016 21:59:41 GMT  
 		Size: 129.8 MB (129750077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bbef2adf4f22ac366181c03c92a5198e482ef965a23ed31e1f864cf07c78ef`  
-		Last Modified: Wed, 31 Aug 2016 17:54:14 GMT  
-		Size: 222.4 KB (222442 bytes)  
+	-	`sha256:b7fc86da4ddd9e9b9bc328141589c42d8eded7305efe70f94c08e7dada014f8f`  
+		Last Modified: Wed, 07 Sep 2016 18:04:01 GMT  
+		Size: 2.9 MB (2888768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0340452152167d1d1c14246bdac8c377063c869c4451d16c0febfd37260e31a0`  
-		Last Modified: Wed, 31 Aug 2016 17:54:26 GMT  
-		Size: 24.2 MB (24242409 bytes)  
+	-	`sha256:521592bec51e5846f0cb609757b9bcfa1393310ff541178887591d31315f9af4`  
+		Last Modified: Thu, 08 Sep 2016 20:55:12 GMT  
+		Size: 27.8 MB (27762116 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03f1a4b1f51271c7a871bef683721af1a7fc323f415a1a7bf09a22a79d09214e`  
-		Last Modified: Wed, 31 Aug 2016 17:54:15 GMT  
-		Size: 5.4 MB (5383055 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4306d85bc1d0bdea9e18cde42294b0b1b0907cab3796a0f570ea741cd8660ebd`  
-		Last Modified: Wed, 31 Aug 2016 17:55:55 GMT  
-		Size: 127.0 B  
+	-	`sha256:604f2d1b00a730459a709a735ea81e485fd2c73359d27f33fe994eaac9112cfc`  
+		Last Modified: Thu, 08 Sep 2016 20:56:33 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:2-onbuild`
 
 ```console
-$ docker pull pypy@sha256:33cc8cabc2e9e84c94e5389a166ac3a7e0007b8516682beffd2814279d839e82
+$ docker pull pypy@sha256:6376acdb0266cb0d0157c16d7cc9e466345f444d4355b5aee483443311df25ca
 ```
 
 -	Platforms:
@@ -825,9 +819,9 @@ $ docker pull pypy@sha256:33cc8cabc2e9e84c94e5389a166ac3a7e0007b8516682beffd2814
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **272.0 MB (271989386 bytes)**  
+-	Total Size: **272.8 MB (272791247 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48441afc9722f78e46703fbb5c93c5bcc2346ae1c6efa4e4742e74acab19a707`
+-	Image ID: `sha256:985bd840007fd39643b08ac68da229ea3f0052f24bc717e8bbd8dfc1c995ae83`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
@@ -841,29 +835,31 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 30 Aug 2016 21:53:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:36:14 GMT
-RUN apt-get purge -y python.*
-# Wed, 31 Aug 2016 02:36:14 GMT
+# Wed, 31 Aug 2016 02:37:38 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:37:39 GMT
 ENV LANG=C.UTF-8
-# Wed, 07 Sep 2016 19:11:42 GMT
+# Wed, 31 Aug 2016 02:37:46 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:53:07 GMT
 ENV PYPY_VERSION=5.4.1
-# Wed, 07 Sep 2016 19:11:50 GMT
-RUN set -x 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1
-# Wed, 07 Sep 2016 19:11:50 GMT
+# Thu, 08 Sep 2016 20:53:07 GMT
+ENV PYPY_SHA256SUM=9c85319778224d7fb0c348f55fe3fada15bb579c5f3870a13ad63b42a737dd72
+# Thu, 08 Sep 2016 20:53:07 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 07 Sep 2016 19:11:57 GMT
-RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
-# Wed, 07 Sep 2016 19:11:57 GMT
+# Thu, 08 Sep 2016 20:53:24 GMT
+RUN set -ex 	&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 			&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	&& pip install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:53:25 GMT
 CMD ["pypy"]
-# Wed, 07 Sep 2016 19:12:22 GMT
+# Thu, 08 Sep 2016 20:54:01 GMT
 RUN mkdir -p /usr/src/app
-# Wed, 07 Sep 2016 19:12:22 GMT
+# Thu, 08 Sep 2016 20:54:01 GMT
 WORKDIR /usr/src/app
-# Wed, 07 Sep 2016 19:12:22 GMT
+# Thu, 08 Sep 2016 20:54:01 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Wed, 07 Sep 2016 19:12:23 GMT
+# Thu, 08 Sep 2016 20:54:01 GMT
 ONBUILD RUN pip install -r requirements.txt
-# Wed, 07 Sep 2016 19:12:23 GMT
+# Thu, 08 Sep 2016 20:54:02 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -884,27 +880,23 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Tue, 30 Aug 2016 21:59:41 GMT  
 		Size: 129.8 MB (129750077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bbef2adf4f22ac366181c03c92a5198e482ef965a23ed31e1f864cf07c78ef`  
-		Last Modified: Wed, 31 Aug 2016 17:54:14 GMT  
-		Size: 222.4 KB (222442 bytes)  
+	-	`sha256:b7fc86da4ddd9e9b9bc328141589c42d8eded7305efe70f94c08e7dada014f8f`  
+		Last Modified: Wed, 07 Sep 2016 18:04:01 GMT  
+		Size: 2.9 MB (2888768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b16c86cdea04a3a3eb6b34ac537fd9b7b74e7ba0e6edd0c82ea15622f0019e13`  
-		Last Modified: Wed, 07 Sep 2016 19:12:38 GMT  
-		Size: 24.2 MB (24243647 bytes)  
+	-	`sha256:521592bec51e5846f0cb609757b9bcfa1393310ff541178887591d31315f9af4`  
+		Last Modified: Thu, 08 Sep 2016 20:55:12 GMT  
+		Size: 27.8 MB (27762116 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e000f40baae9204f6eb3a52dd0dc441d48ed49251d2126ef4993bd05dd73358`  
-		Last Modified: Wed, 07 Sep 2016 19:12:31 GMT  
-		Size: 5.4 MB (5382932 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be2c91f82f171685536fa9075d1f90d2548e1b80d10e77d97422aeae87018692`  
-		Last Modified: Wed, 07 Sep 2016 19:13:57 GMT  
-		Size: 127.0 B  
+	-	`sha256:604f2d1b00a730459a709a735ea81e485fd2c73359d27f33fe994eaac9112cfc`  
+		Last Modified: Thu, 08 Sep 2016 20:56:33 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:3-5.2.0-alpha1`
 
 ```console
-$ docker pull pypy@sha256:49bb0856b96975f0271145551801f8b7255fa0f2383247afed1fd96263f137db
+$ docker pull pypy@sha256:d5675f27a55f0a07c747c9795328514672e850b019c9823aa32dce09aad9a01c
 ```
 
 -	Platforms:
@@ -914,9 +906,9 @@ $ docker pull pypy@sha256:49bb0856b96975f0271145551801f8b7255fa0f2383247afed1fd9
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.4 MB (269407875 bytes)**  
+-	Total Size: **270.3 MB (270271970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9d03d276071273400e590b78f83e7c76d5765dd6612b0a6d1edf9a6c6584122`
+-	Image ID: `sha256:98cb4470f49a6a06311d2dbe988bddb0cb948ee1320c237a6a8608a9fc8a198e`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -930,19 +922,21 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 30 Aug 2016 21:53:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:36:14 GMT
-RUN apt-get purge -y python.*
-# Wed, 31 Aug 2016 02:36:14 GMT
+# Wed, 31 Aug 2016 02:37:38 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:37:39 GMT
 ENV LANG=C.UTF-8
-# Wed, 31 Aug 2016 02:36:56 GMT
+# Wed, 31 Aug 2016 02:37:46 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:54:02 GMT
 ENV PYPY_VERSION=5.2.0-alpha1
-# Wed, 31 Aug 2016 02:37:03 GMT
-RUN set -x 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1
-# Wed, 31 Aug 2016 02:37:04 GMT
+# Thu, 08 Sep 2016 20:54:02 GMT
+ENV PYPY_SHA256SUM=f5e66ab24267d6ddf662d07c512d06c10ebc732ae62093dabbd775ac63b9060a
+# Thu, 08 Sep 2016 20:54:03 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 31 Aug 2016 02:37:11 GMT
-RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:54:26 GMT
+RUN set -ex 	&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:54:26 GMT
 CMD ["pypy3"]
 ```
 
@@ -963,23 +957,19 @@ CMD ["pypy3"]
 		Last Modified: Tue, 30 Aug 2016 21:59:41 GMT  
 		Size: 129.8 MB (129750077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bbef2adf4f22ac366181c03c92a5198e482ef965a23ed31e1f864cf07c78ef`  
-		Last Modified: Wed, 31 Aug 2016 17:54:14 GMT  
-		Size: 222.4 KB (222442 bytes)  
+	-	`sha256:b7fc86da4ddd9e9b9bc328141589c42d8eded7305efe70f94c08e7dada014f8f`  
+		Last Modified: Wed, 07 Sep 2016 18:04:01 GMT  
+		Size: 2.9 MB (2888768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5f13ef8d9bc2a97c4e9cc49b2c5b5d7c5c6a538193f9e64965a29822eb83781`  
-		Last Modified: Wed, 31 Aug 2016 17:56:45 GMT  
-		Size: 21.4 MB (21358047 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14983c6fa790adda977c40253b46d8035c12b060bef7a1db65ab0c0f909d401d`  
-		Last Modified: Wed, 31 Aug 2016 17:56:35 GMT  
-		Size: 5.7 MB (5687148 bytes)  
+	-	`sha256:c1729d2d381d07295997446b8c3362367f98db06e5ca5f3608bc524f9d35d234`  
+		Last Modified: Thu, 08 Sep 2016 20:57:15 GMT  
+		Size: 25.2 MB (25242964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:3-5.2.0`
 
 ```console
-$ docker pull pypy@sha256:49bb0856b96975f0271145551801f8b7255fa0f2383247afed1fd96263f137db
+$ docker pull pypy@sha256:d5675f27a55f0a07c747c9795328514672e850b019c9823aa32dce09aad9a01c
 ```
 
 -	Platforms:
@@ -989,9 +979,9 @@ $ docker pull pypy@sha256:49bb0856b96975f0271145551801f8b7255fa0f2383247afed1fd9
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.4 MB (269407875 bytes)**  
+-	Total Size: **270.3 MB (270271970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9d03d276071273400e590b78f83e7c76d5765dd6612b0a6d1edf9a6c6584122`
+-	Image ID: `sha256:98cb4470f49a6a06311d2dbe988bddb0cb948ee1320c237a6a8608a9fc8a198e`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -1005,19 +995,21 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 30 Aug 2016 21:53:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:36:14 GMT
-RUN apt-get purge -y python.*
-# Wed, 31 Aug 2016 02:36:14 GMT
+# Wed, 31 Aug 2016 02:37:38 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:37:39 GMT
 ENV LANG=C.UTF-8
-# Wed, 31 Aug 2016 02:36:56 GMT
+# Wed, 31 Aug 2016 02:37:46 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:54:02 GMT
 ENV PYPY_VERSION=5.2.0-alpha1
-# Wed, 31 Aug 2016 02:37:03 GMT
-RUN set -x 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1
-# Wed, 31 Aug 2016 02:37:04 GMT
+# Thu, 08 Sep 2016 20:54:02 GMT
+ENV PYPY_SHA256SUM=f5e66ab24267d6ddf662d07c512d06c10ebc732ae62093dabbd775ac63b9060a
+# Thu, 08 Sep 2016 20:54:03 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 31 Aug 2016 02:37:11 GMT
-RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:54:26 GMT
+RUN set -ex 	&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:54:26 GMT
 CMD ["pypy3"]
 ```
 
@@ -1038,23 +1030,19 @@ CMD ["pypy3"]
 		Last Modified: Tue, 30 Aug 2016 21:59:41 GMT  
 		Size: 129.8 MB (129750077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bbef2adf4f22ac366181c03c92a5198e482ef965a23ed31e1f864cf07c78ef`  
-		Last Modified: Wed, 31 Aug 2016 17:54:14 GMT  
-		Size: 222.4 KB (222442 bytes)  
+	-	`sha256:b7fc86da4ddd9e9b9bc328141589c42d8eded7305efe70f94c08e7dada014f8f`  
+		Last Modified: Wed, 07 Sep 2016 18:04:01 GMT  
+		Size: 2.9 MB (2888768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5f13ef8d9bc2a97c4e9cc49b2c5b5d7c5c6a538193f9e64965a29822eb83781`  
-		Last Modified: Wed, 31 Aug 2016 17:56:45 GMT  
-		Size: 21.4 MB (21358047 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14983c6fa790adda977c40253b46d8035c12b060bef7a1db65ab0c0f909d401d`  
-		Last Modified: Wed, 31 Aug 2016 17:56:35 GMT  
-		Size: 5.7 MB (5687148 bytes)  
+	-	`sha256:c1729d2d381d07295997446b8c3362367f98db06e5ca5f3608bc524f9d35d234`  
+		Last Modified: Thu, 08 Sep 2016 20:57:15 GMT  
+		Size: 25.2 MB (25242964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:3-5.2`
 
 ```console
-$ docker pull pypy@sha256:49bb0856b96975f0271145551801f8b7255fa0f2383247afed1fd96263f137db
+$ docker pull pypy@sha256:d5675f27a55f0a07c747c9795328514672e850b019c9823aa32dce09aad9a01c
 ```
 
 -	Platforms:
@@ -1064,9 +1052,9 @@ $ docker pull pypy@sha256:49bb0856b96975f0271145551801f8b7255fa0f2383247afed1fd9
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.4 MB (269407875 bytes)**  
+-	Total Size: **270.3 MB (270271970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9d03d276071273400e590b78f83e7c76d5765dd6612b0a6d1edf9a6c6584122`
+-	Image ID: `sha256:98cb4470f49a6a06311d2dbe988bddb0cb948ee1320c237a6a8608a9fc8a198e`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -1080,19 +1068,21 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 30 Aug 2016 21:53:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:36:14 GMT
-RUN apt-get purge -y python.*
-# Wed, 31 Aug 2016 02:36:14 GMT
+# Wed, 31 Aug 2016 02:37:38 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:37:39 GMT
 ENV LANG=C.UTF-8
-# Wed, 31 Aug 2016 02:36:56 GMT
+# Wed, 31 Aug 2016 02:37:46 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:54:02 GMT
 ENV PYPY_VERSION=5.2.0-alpha1
-# Wed, 31 Aug 2016 02:37:03 GMT
-RUN set -x 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1
-# Wed, 31 Aug 2016 02:37:04 GMT
+# Thu, 08 Sep 2016 20:54:02 GMT
+ENV PYPY_SHA256SUM=f5e66ab24267d6ddf662d07c512d06c10ebc732ae62093dabbd775ac63b9060a
+# Thu, 08 Sep 2016 20:54:03 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 31 Aug 2016 02:37:11 GMT
-RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:54:26 GMT
+RUN set -ex 	&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:54:26 GMT
 CMD ["pypy3"]
 ```
 
@@ -1113,23 +1103,19 @@ CMD ["pypy3"]
 		Last Modified: Tue, 30 Aug 2016 21:59:41 GMT  
 		Size: 129.8 MB (129750077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bbef2adf4f22ac366181c03c92a5198e482ef965a23ed31e1f864cf07c78ef`  
-		Last Modified: Wed, 31 Aug 2016 17:54:14 GMT  
-		Size: 222.4 KB (222442 bytes)  
+	-	`sha256:b7fc86da4ddd9e9b9bc328141589c42d8eded7305efe70f94c08e7dada014f8f`  
+		Last Modified: Wed, 07 Sep 2016 18:04:01 GMT  
+		Size: 2.9 MB (2888768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5f13ef8d9bc2a97c4e9cc49b2c5b5d7c5c6a538193f9e64965a29822eb83781`  
-		Last Modified: Wed, 31 Aug 2016 17:56:45 GMT  
-		Size: 21.4 MB (21358047 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14983c6fa790adda977c40253b46d8035c12b060bef7a1db65ab0c0f909d401d`  
-		Last Modified: Wed, 31 Aug 2016 17:56:35 GMT  
-		Size: 5.7 MB (5687148 bytes)  
+	-	`sha256:c1729d2d381d07295997446b8c3362367f98db06e5ca5f3608bc524f9d35d234`  
+		Last Modified: Thu, 08 Sep 2016 20:57:15 GMT  
+		Size: 25.2 MB (25242964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:3-5`
 
 ```console
-$ docker pull pypy@sha256:49bb0856b96975f0271145551801f8b7255fa0f2383247afed1fd96263f137db
+$ docker pull pypy@sha256:d5675f27a55f0a07c747c9795328514672e850b019c9823aa32dce09aad9a01c
 ```
 
 -	Platforms:
@@ -1139,9 +1125,9 @@ $ docker pull pypy@sha256:49bb0856b96975f0271145551801f8b7255fa0f2383247afed1fd9
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.4 MB (269407875 bytes)**  
+-	Total Size: **270.3 MB (270271970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9d03d276071273400e590b78f83e7c76d5765dd6612b0a6d1edf9a6c6584122`
+-	Image ID: `sha256:98cb4470f49a6a06311d2dbe988bddb0cb948ee1320c237a6a8608a9fc8a198e`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -1155,19 +1141,21 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 30 Aug 2016 21:53:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:36:14 GMT
-RUN apt-get purge -y python.*
-# Wed, 31 Aug 2016 02:36:14 GMT
+# Wed, 31 Aug 2016 02:37:38 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:37:39 GMT
 ENV LANG=C.UTF-8
-# Wed, 31 Aug 2016 02:36:56 GMT
+# Wed, 31 Aug 2016 02:37:46 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:54:02 GMT
 ENV PYPY_VERSION=5.2.0-alpha1
-# Wed, 31 Aug 2016 02:37:03 GMT
-RUN set -x 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1
-# Wed, 31 Aug 2016 02:37:04 GMT
+# Thu, 08 Sep 2016 20:54:02 GMT
+ENV PYPY_SHA256SUM=f5e66ab24267d6ddf662d07c512d06c10ebc732ae62093dabbd775ac63b9060a
+# Thu, 08 Sep 2016 20:54:03 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 31 Aug 2016 02:37:11 GMT
-RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:54:26 GMT
+RUN set -ex 	&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:54:26 GMT
 CMD ["pypy3"]
 ```
 
@@ -1188,23 +1176,19 @@ CMD ["pypy3"]
 		Last Modified: Tue, 30 Aug 2016 21:59:41 GMT  
 		Size: 129.8 MB (129750077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bbef2adf4f22ac366181c03c92a5198e482ef965a23ed31e1f864cf07c78ef`  
-		Last Modified: Wed, 31 Aug 2016 17:54:14 GMT  
-		Size: 222.4 KB (222442 bytes)  
+	-	`sha256:b7fc86da4ddd9e9b9bc328141589c42d8eded7305efe70f94c08e7dada014f8f`  
+		Last Modified: Wed, 07 Sep 2016 18:04:01 GMT  
+		Size: 2.9 MB (2888768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5f13ef8d9bc2a97c4e9cc49b2c5b5d7c5c6a538193f9e64965a29822eb83781`  
-		Last Modified: Wed, 31 Aug 2016 17:56:45 GMT  
-		Size: 21.4 MB (21358047 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14983c6fa790adda977c40253b46d8035c12b060bef7a1db65ab0c0f909d401d`  
-		Last Modified: Wed, 31 Aug 2016 17:56:35 GMT  
-		Size: 5.7 MB (5687148 bytes)  
+	-	`sha256:c1729d2d381d07295997446b8c3362367f98db06e5ca5f3608bc524f9d35d234`  
+		Last Modified: Thu, 08 Sep 2016 20:57:15 GMT  
+		Size: 25.2 MB (25242964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:3`
 
 ```console
-$ docker pull pypy@sha256:49bb0856b96975f0271145551801f8b7255fa0f2383247afed1fd96263f137db
+$ docker pull pypy@sha256:d5675f27a55f0a07c747c9795328514672e850b019c9823aa32dce09aad9a01c
 ```
 
 -	Platforms:
@@ -1214,9 +1198,9 @@ $ docker pull pypy@sha256:49bb0856b96975f0271145551801f8b7255fa0f2383247afed1fd9
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.4 MB (269407875 bytes)**  
+-	Total Size: **270.3 MB (270271970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9d03d276071273400e590b78f83e7c76d5765dd6612b0a6d1edf9a6c6584122`
+-	Image ID: `sha256:98cb4470f49a6a06311d2dbe988bddb0cb948ee1320c237a6a8608a9fc8a198e`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -1230,19 +1214,21 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 30 Aug 2016 21:53:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:36:14 GMT
-RUN apt-get purge -y python.*
-# Wed, 31 Aug 2016 02:36:14 GMT
+# Wed, 31 Aug 2016 02:37:38 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:37:39 GMT
 ENV LANG=C.UTF-8
-# Wed, 31 Aug 2016 02:36:56 GMT
+# Wed, 31 Aug 2016 02:37:46 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:54:02 GMT
 ENV PYPY_VERSION=5.2.0-alpha1
-# Wed, 31 Aug 2016 02:37:03 GMT
-RUN set -x 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1
-# Wed, 31 Aug 2016 02:37:04 GMT
+# Thu, 08 Sep 2016 20:54:02 GMT
+ENV PYPY_SHA256SUM=f5e66ab24267d6ddf662d07c512d06c10ebc732ae62093dabbd775ac63b9060a
+# Thu, 08 Sep 2016 20:54:03 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 31 Aug 2016 02:37:11 GMT
-RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:54:26 GMT
+RUN set -ex 	&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:54:26 GMT
 CMD ["pypy3"]
 ```
 
@@ -1263,23 +1249,19 @@ CMD ["pypy3"]
 		Last Modified: Tue, 30 Aug 2016 21:59:41 GMT  
 		Size: 129.8 MB (129750077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bbef2adf4f22ac366181c03c92a5198e482ef965a23ed31e1f864cf07c78ef`  
-		Last Modified: Wed, 31 Aug 2016 17:54:14 GMT  
-		Size: 222.4 KB (222442 bytes)  
+	-	`sha256:b7fc86da4ddd9e9b9bc328141589c42d8eded7305efe70f94c08e7dada014f8f`  
+		Last Modified: Wed, 07 Sep 2016 18:04:01 GMT  
+		Size: 2.9 MB (2888768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5f13ef8d9bc2a97c4e9cc49b2c5b5d7c5c6a538193f9e64965a29822eb83781`  
-		Last Modified: Wed, 31 Aug 2016 17:56:45 GMT  
-		Size: 21.4 MB (21358047 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14983c6fa790adda977c40253b46d8035c12b060bef7a1db65ab0c0f909d401d`  
-		Last Modified: Wed, 31 Aug 2016 17:56:35 GMT  
-		Size: 5.7 MB (5687148 bytes)  
+	-	`sha256:c1729d2d381d07295997446b8c3362367f98db06e5ca5f3608bc524f9d35d234`  
+		Last Modified: Thu, 08 Sep 2016 20:57:15 GMT  
+		Size: 25.2 MB (25242964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:latest`
 
 ```console
-$ docker pull pypy@sha256:49bb0856b96975f0271145551801f8b7255fa0f2383247afed1fd96263f137db
+$ docker pull pypy@sha256:d5675f27a55f0a07c747c9795328514672e850b019c9823aa32dce09aad9a01c
 ```
 
 -	Platforms:
@@ -1289,9 +1271,9 @@ $ docker pull pypy@sha256:49bb0856b96975f0271145551801f8b7255fa0f2383247afed1fd9
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.4 MB (269407875 bytes)**  
+-	Total Size: **270.3 MB (270271970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9d03d276071273400e590b78f83e7c76d5765dd6612b0a6d1edf9a6c6584122`
+-	Image ID: `sha256:98cb4470f49a6a06311d2dbe988bddb0cb948ee1320c237a6a8608a9fc8a198e`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -1305,19 +1287,21 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 30 Aug 2016 21:53:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:36:14 GMT
-RUN apt-get purge -y python.*
-# Wed, 31 Aug 2016 02:36:14 GMT
+# Wed, 31 Aug 2016 02:37:38 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:37:39 GMT
 ENV LANG=C.UTF-8
-# Wed, 31 Aug 2016 02:36:56 GMT
+# Wed, 31 Aug 2016 02:37:46 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:54:02 GMT
 ENV PYPY_VERSION=5.2.0-alpha1
-# Wed, 31 Aug 2016 02:37:03 GMT
-RUN set -x 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1
-# Wed, 31 Aug 2016 02:37:04 GMT
+# Thu, 08 Sep 2016 20:54:02 GMT
+ENV PYPY_SHA256SUM=f5e66ab24267d6ddf662d07c512d06c10ebc732ae62093dabbd775ac63b9060a
+# Thu, 08 Sep 2016 20:54:03 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 31 Aug 2016 02:37:11 GMT
-RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:54:26 GMT
+RUN set -ex 	&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:54:26 GMT
 CMD ["pypy3"]
 ```
 
@@ -1338,23 +1322,19 @@ CMD ["pypy3"]
 		Last Modified: Tue, 30 Aug 2016 21:59:41 GMT  
 		Size: 129.8 MB (129750077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bbef2adf4f22ac366181c03c92a5198e482ef965a23ed31e1f864cf07c78ef`  
-		Last Modified: Wed, 31 Aug 2016 17:54:14 GMT  
-		Size: 222.4 KB (222442 bytes)  
+	-	`sha256:b7fc86da4ddd9e9b9bc328141589c42d8eded7305efe70f94c08e7dada014f8f`  
+		Last Modified: Wed, 07 Sep 2016 18:04:01 GMT  
+		Size: 2.9 MB (2888768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5f13ef8d9bc2a97c4e9cc49b2c5b5d7c5c6a538193f9e64965a29822eb83781`  
-		Last Modified: Wed, 31 Aug 2016 17:56:45 GMT  
-		Size: 21.4 MB (21358047 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14983c6fa790adda977c40253b46d8035c12b060bef7a1db65ab0c0f909d401d`  
-		Last Modified: Wed, 31 Aug 2016 17:56:35 GMT  
-		Size: 5.7 MB (5687148 bytes)  
+	-	`sha256:c1729d2d381d07295997446b8c3362367f98db06e5ca5f3608bc524f9d35d234`  
+		Last Modified: Thu, 08 Sep 2016 20:57:15 GMT  
+		Size: 25.2 MB (25242964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:3-5.2.0-alpha1-slim`
 
 ```console
-$ docker pull pypy@sha256:9cda3d5a8a1bd88395011e8d3b3eb682c259f354964928e050fbe252ad68a6a3
+$ docker pull pypy@sha256:0000d7a98f2a801861661c80d254e1cb17df186401b479933e490844330d2988
 ```
 
 -	Platforms:
@@ -1364,9 +1344,9 @@ $ docker pull pypy@sha256:9cda3d5a8a1bd88395011e8d3b3eb682c259f354964928e050fbe2
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.0 MB (83995860 bytes)**  
+-	Total Size: **80.1 MB (80147580 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47b2e1ad200ab0e9e52faa0cbd0ee1d5239ecad01c441650af208ed09d5c5f01`
+-	Image ID: `sha256:0a4e2b44bab4fc6a1dc94db2e1681650de4ecaa3ca067b9bb6734cbf2bae18ed`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -1374,19 +1354,21 @@ $ docker pull pypy@sha256:9cda3d5a8a1bd88395011e8d3b3eb682c259f354964928e050fbe2
 ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
 # Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 21:09:07 GMT
-RUN apt-get purge -y python.*
-# Tue, 30 Aug 2016 21:09:07 GMT
+# Wed, 31 Aug 2016 02:39:27 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:39:27 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 21:09:17 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:53:34 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libffi6 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:54:26 GMT
 ENV PYPY_VERSION=5.2.0-alpha1
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:54:27 GMT
+ENV PYPY_SHA256SUM=f5e66ab24267d6ddf662d07c512d06c10ebc732ae62093dabbd775ac63b9060a
+# Thu, 08 Sep 2016 20:54:27 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 31 Aug 2016 02:37:35 GMT
-RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
-# Wed, 31 Aug 2016 02:37:36 GMT
+# Thu, 08 Sep 2016 20:54:54 GMT
+RUN set -ex 	&& fetchDeps=' 		bzip2 		wget 	' 	&& apt-get update && apt-get install -y $fetchDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& apt-get purge -y --auto-remove $fetchDeps 	&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:54:54 GMT
 CMD ["pypy3"]
 ```
 
@@ -1395,19 +1377,19 @@ CMD ["pypy3"]
 		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
 		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:107c2f6f9f84689c4d85a21149424704a735f71716123a38c8a4efbd3aa45e62`  
-		Last Modified: Wed, 31 Aug 2016 17:55:05 GMT  
-		Size: 3.4 MB (3442217 bytes)  
+	-	`sha256:3201fa3d047251e1cd4d144a7c8182853606fd2d2cd67e45c29632c208c16e7b`  
+		Last Modified: Thu, 08 Sep 2016 20:55:48 GMT  
+		Size: 3.5 MB (3464735 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11c7ee3c5131353ae8db7bdcb486b671e29b78950e7b27be00b5b811a1407827`  
-		Last Modified: Wed, 31 Aug 2016 17:57:53 GMT  
-		Size: 29.2 MB (29186375 bytes)  
+	-	`sha256:061b6fe40e37cfb01170de30a0297d4f18d48bcd37c9c0be3d779b20a6336a8d`  
+		Last Modified: Thu, 08 Sep 2016 20:58:13 GMT  
+		Size: 25.3 MB (25315577 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:3-5.2.0-slim`
 
 ```console
-$ docker pull pypy@sha256:9cda3d5a8a1bd88395011e8d3b3eb682c259f354964928e050fbe252ad68a6a3
+$ docker pull pypy@sha256:0000d7a98f2a801861661c80d254e1cb17df186401b479933e490844330d2988
 ```
 
 -	Platforms:
@@ -1417,9 +1399,9 @@ $ docker pull pypy@sha256:9cda3d5a8a1bd88395011e8d3b3eb682c259f354964928e050fbe2
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.0 MB (83995860 bytes)**  
+-	Total Size: **80.1 MB (80147580 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47b2e1ad200ab0e9e52faa0cbd0ee1d5239ecad01c441650af208ed09d5c5f01`
+-	Image ID: `sha256:0a4e2b44bab4fc6a1dc94db2e1681650de4ecaa3ca067b9bb6734cbf2bae18ed`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -1427,19 +1409,21 @@ $ docker pull pypy@sha256:9cda3d5a8a1bd88395011e8d3b3eb682c259f354964928e050fbe2
 ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
 # Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 21:09:07 GMT
-RUN apt-get purge -y python.*
-# Tue, 30 Aug 2016 21:09:07 GMT
+# Wed, 31 Aug 2016 02:39:27 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:39:27 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 21:09:17 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:53:34 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libffi6 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:54:26 GMT
 ENV PYPY_VERSION=5.2.0-alpha1
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:54:27 GMT
+ENV PYPY_SHA256SUM=f5e66ab24267d6ddf662d07c512d06c10ebc732ae62093dabbd775ac63b9060a
+# Thu, 08 Sep 2016 20:54:27 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 31 Aug 2016 02:37:35 GMT
-RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
-# Wed, 31 Aug 2016 02:37:36 GMT
+# Thu, 08 Sep 2016 20:54:54 GMT
+RUN set -ex 	&& fetchDeps=' 		bzip2 		wget 	' 	&& apt-get update && apt-get install -y $fetchDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& apt-get purge -y --auto-remove $fetchDeps 	&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:54:54 GMT
 CMD ["pypy3"]
 ```
 
@@ -1448,19 +1432,19 @@ CMD ["pypy3"]
 		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
 		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:107c2f6f9f84689c4d85a21149424704a735f71716123a38c8a4efbd3aa45e62`  
-		Last Modified: Wed, 31 Aug 2016 17:55:05 GMT  
-		Size: 3.4 MB (3442217 bytes)  
+	-	`sha256:3201fa3d047251e1cd4d144a7c8182853606fd2d2cd67e45c29632c208c16e7b`  
+		Last Modified: Thu, 08 Sep 2016 20:55:48 GMT  
+		Size: 3.5 MB (3464735 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11c7ee3c5131353ae8db7bdcb486b671e29b78950e7b27be00b5b811a1407827`  
-		Last Modified: Wed, 31 Aug 2016 17:57:53 GMT  
-		Size: 29.2 MB (29186375 bytes)  
+	-	`sha256:061b6fe40e37cfb01170de30a0297d4f18d48bcd37c9c0be3d779b20a6336a8d`  
+		Last Modified: Thu, 08 Sep 2016 20:58:13 GMT  
+		Size: 25.3 MB (25315577 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:3-5.2-slim`
 
 ```console
-$ docker pull pypy@sha256:9cda3d5a8a1bd88395011e8d3b3eb682c259f354964928e050fbe252ad68a6a3
+$ docker pull pypy@sha256:0000d7a98f2a801861661c80d254e1cb17df186401b479933e490844330d2988
 ```
 
 -	Platforms:
@@ -1470,9 +1454,9 @@ $ docker pull pypy@sha256:9cda3d5a8a1bd88395011e8d3b3eb682c259f354964928e050fbe2
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.0 MB (83995860 bytes)**  
+-	Total Size: **80.1 MB (80147580 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47b2e1ad200ab0e9e52faa0cbd0ee1d5239ecad01c441650af208ed09d5c5f01`
+-	Image ID: `sha256:0a4e2b44bab4fc6a1dc94db2e1681650de4ecaa3ca067b9bb6734cbf2bae18ed`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -1480,19 +1464,21 @@ $ docker pull pypy@sha256:9cda3d5a8a1bd88395011e8d3b3eb682c259f354964928e050fbe2
 ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
 # Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 21:09:07 GMT
-RUN apt-get purge -y python.*
-# Tue, 30 Aug 2016 21:09:07 GMT
+# Wed, 31 Aug 2016 02:39:27 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:39:27 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 21:09:17 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:53:34 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libffi6 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:54:26 GMT
 ENV PYPY_VERSION=5.2.0-alpha1
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:54:27 GMT
+ENV PYPY_SHA256SUM=f5e66ab24267d6ddf662d07c512d06c10ebc732ae62093dabbd775ac63b9060a
+# Thu, 08 Sep 2016 20:54:27 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 31 Aug 2016 02:37:35 GMT
-RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
-# Wed, 31 Aug 2016 02:37:36 GMT
+# Thu, 08 Sep 2016 20:54:54 GMT
+RUN set -ex 	&& fetchDeps=' 		bzip2 		wget 	' 	&& apt-get update && apt-get install -y $fetchDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& apt-get purge -y --auto-remove $fetchDeps 	&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:54:54 GMT
 CMD ["pypy3"]
 ```
 
@@ -1501,19 +1487,19 @@ CMD ["pypy3"]
 		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
 		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:107c2f6f9f84689c4d85a21149424704a735f71716123a38c8a4efbd3aa45e62`  
-		Last Modified: Wed, 31 Aug 2016 17:55:05 GMT  
-		Size: 3.4 MB (3442217 bytes)  
+	-	`sha256:3201fa3d047251e1cd4d144a7c8182853606fd2d2cd67e45c29632c208c16e7b`  
+		Last Modified: Thu, 08 Sep 2016 20:55:48 GMT  
+		Size: 3.5 MB (3464735 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11c7ee3c5131353ae8db7bdcb486b671e29b78950e7b27be00b5b811a1407827`  
-		Last Modified: Wed, 31 Aug 2016 17:57:53 GMT  
-		Size: 29.2 MB (29186375 bytes)  
+	-	`sha256:061b6fe40e37cfb01170de30a0297d4f18d48bcd37c9c0be3d779b20a6336a8d`  
+		Last Modified: Thu, 08 Sep 2016 20:58:13 GMT  
+		Size: 25.3 MB (25315577 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:3-5-slim`
 
 ```console
-$ docker pull pypy@sha256:9cda3d5a8a1bd88395011e8d3b3eb682c259f354964928e050fbe252ad68a6a3
+$ docker pull pypy@sha256:0000d7a98f2a801861661c80d254e1cb17df186401b479933e490844330d2988
 ```
 
 -	Platforms:
@@ -1523,9 +1509,9 @@ $ docker pull pypy@sha256:9cda3d5a8a1bd88395011e8d3b3eb682c259f354964928e050fbe2
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.0 MB (83995860 bytes)**  
+-	Total Size: **80.1 MB (80147580 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47b2e1ad200ab0e9e52faa0cbd0ee1d5239ecad01c441650af208ed09d5c5f01`
+-	Image ID: `sha256:0a4e2b44bab4fc6a1dc94db2e1681650de4ecaa3ca067b9bb6734cbf2bae18ed`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -1533,19 +1519,21 @@ $ docker pull pypy@sha256:9cda3d5a8a1bd88395011e8d3b3eb682c259f354964928e050fbe2
 ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
 # Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 21:09:07 GMT
-RUN apt-get purge -y python.*
-# Tue, 30 Aug 2016 21:09:07 GMT
+# Wed, 31 Aug 2016 02:39:27 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:39:27 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 21:09:17 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:53:34 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libffi6 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:54:26 GMT
 ENV PYPY_VERSION=5.2.0-alpha1
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:54:27 GMT
+ENV PYPY_SHA256SUM=f5e66ab24267d6ddf662d07c512d06c10ebc732ae62093dabbd775ac63b9060a
+# Thu, 08 Sep 2016 20:54:27 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 31 Aug 2016 02:37:35 GMT
-RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
-# Wed, 31 Aug 2016 02:37:36 GMT
+# Thu, 08 Sep 2016 20:54:54 GMT
+RUN set -ex 	&& fetchDeps=' 		bzip2 		wget 	' 	&& apt-get update && apt-get install -y $fetchDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& apt-get purge -y --auto-remove $fetchDeps 	&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:54:54 GMT
 CMD ["pypy3"]
 ```
 
@@ -1554,19 +1542,19 @@ CMD ["pypy3"]
 		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
 		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:107c2f6f9f84689c4d85a21149424704a735f71716123a38c8a4efbd3aa45e62`  
-		Last Modified: Wed, 31 Aug 2016 17:55:05 GMT  
-		Size: 3.4 MB (3442217 bytes)  
+	-	`sha256:3201fa3d047251e1cd4d144a7c8182853606fd2d2cd67e45c29632c208c16e7b`  
+		Last Modified: Thu, 08 Sep 2016 20:55:48 GMT  
+		Size: 3.5 MB (3464735 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11c7ee3c5131353ae8db7bdcb486b671e29b78950e7b27be00b5b811a1407827`  
-		Last Modified: Wed, 31 Aug 2016 17:57:53 GMT  
-		Size: 29.2 MB (29186375 bytes)  
+	-	`sha256:061b6fe40e37cfb01170de30a0297d4f18d48bcd37c9c0be3d779b20a6336a8d`  
+		Last Modified: Thu, 08 Sep 2016 20:58:13 GMT  
+		Size: 25.3 MB (25315577 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:3-slim`
 
 ```console
-$ docker pull pypy@sha256:9cda3d5a8a1bd88395011e8d3b3eb682c259f354964928e050fbe252ad68a6a3
+$ docker pull pypy@sha256:0000d7a98f2a801861661c80d254e1cb17df186401b479933e490844330d2988
 ```
 
 -	Platforms:
@@ -1576,9 +1564,9 @@ $ docker pull pypy@sha256:9cda3d5a8a1bd88395011e8d3b3eb682c259f354964928e050fbe2
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.0 MB (83995860 bytes)**  
+-	Total Size: **80.1 MB (80147580 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47b2e1ad200ab0e9e52faa0cbd0ee1d5239ecad01c441650af208ed09d5c5f01`
+-	Image ID: `sha256:0a4e2b44bab4fc6a1dc94db2e1681650de4ecaa3ca067b9bb6734cbf2bae18ed`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -1586,19 +1574,21 @@ $ docker pull pypy@sha256:9cda3d5a8a1bd88395011e8d3b3eb682c259f354964928e050fbe2
 ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
 # Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 21:09:07 GMT
-RUN apt-get purge -y python.*
-# Tue, 30 Aug 2016 21:09:07 GMT
+# Wed, 31 Aug 2016 02:39:27 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:39:27 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 21:09:17 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:53:34 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libffi6 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:54:26 GMT
 ENV PYPY_VERSION=5.2.0-alpha1
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:54:27 GMT
+ENV PYPY_SHA256SUM=f5e66ab24267d6ddf662d07c512d06c10ebc732ae62093dabbd775ac63b9060a
+# Thu, 08 Sep 2016 20:54:27 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 31 Aug 2016 02:37:35 GMT
-RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
-# Wed, 31 Aug 2016 02:37:36 GMT
+# Thu, 08 Sep 2016 20:54:54 GMT
+RUN set -ex 	&& fetchDeps=' 		bzip2 		wget 	' 	&& apt-get update && apt-get install -y $fetchDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& apt-get purge -y --auto-remove $fetchDeps 	&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:54:54 GMT
 CMD ["pypy3"]
 ```
 
@@ -1607,19 +1597,19 @@ CMD ["pypy3"]
 		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
 		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:107c2f6f9f84689c4d85a21149424704a735f71716123a38c8a4efbd3aa45e62`  
-		Last Modified: Wed, 31 Aug 2016 17:55:05 GMT  
-		Size: 3.4 MB (3442217 bytes)  
+	-	`sha256:3201fa3d047251e1cd4d144a7c8182853606fd2d2cd67e45c29632c208c16e7b`  
+		Last Modified: Thu, 08 Sep 2016 20:55:48 GMT  
+		Size: 3.5 MB (3464735 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11c7ee3c5131353ae8db7bdcb486b671e29b78950e7b27be00b5b811a1407827`  
-		Last Modified: Wed, 31 Aug 2016 17:57:53 GMT  
-		Size: 29.2 MB (29186375 bytes)  
+	-	`sha256:061b6fe40e37cfb01170de30a0297d4f18d48bcd37c9c0be3d779b20a6336a8d`  
+		Last Modified: Thu, 08 Sep 2016 20:58:13 GMT  
+		Size: 25.3 MB (25315577 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:slim`
 
 ```console
-$ docker pull pypy@sha256:9cda3d5a8a1bd88395011e8d3b3eb682c259f354964928e050fbe252ad68a6a3
+$ docker pull pypy@sha256:0000d7a98f2a801861661c80d254e1cb17df186401b479933e490844330d2988
 ```
 
 -	Platforms:
@@ -1629,9 +1619,9 @@ $ docker pull pypy@sha256:9cda3d5a8a1bd88395011e8d3b3eb682c259f354964928e050fbe2
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.0 MB (83995860 bytes)**  
+-	Total Size: **80.1 MB (80147580 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47b2e1ad200ab0e9e52faa0cbd0ee1d5239ecad01c441650af208ed09d5c5f01`
+-	Image ID: `sha256:0a4e2b44bab4fc6a1dc94db2e1681650de4ecaa3ca067b9bb6734cbf2bae18ed`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -1639,19 +1629,21 @@ $ docker pull pypy@sha256:9cda3d5a8a1bd88395011e8d3b3eb682c259f354964928e050fbe2
 ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
 # Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 21:09:07 GMT
-RUN apt-get purge -y python.*
-# Tue, 30 Aug 2016 21:09:07 GMT
+# Wed, 31 Aug 2016 02:39:27 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:39:27 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 21:09:17 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:53:34 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libffi6 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:54:26 GMT
 ENV PYPY_VERSION=5.2.0-alpha1
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:54:27 GMT
+ENV PYPY_SHA256SUM=f5e66ab24267d6ddf662d07c512d06c10ebc732ae62093dabbd775ac63b9060a
+# Thu, 08 Sep 2016 20:54:27 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 31 Aug 2016 02:37:35 GMT
-RUN set -x 	&& apt-get update && apt-get install -y bzip2 curl --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1 	&& curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION 	&& apt-get purge -y --auto-remove bzip2 curl
-# Wed, 31 Aug 2016 02:37:36 GMT
+# Thu, 08 Sep 2016 20:54:54 GMT
+RUN set -ex 	&& fetchDeps=' 		bzip2 		wget 	' 	&& apt-get update && apt-get install -y $fetchDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& apt-get purge -y --auto-remove $fetchDeps 	&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:54:54 GMT
 CMD ["pypy3"]
 ```
 
@@ -1660,19 +1652,19 @@ CMD ["pypy3"]
 		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
 		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:107c2f6f9f84689c4d85a21149424704a735f71716123a38c8a4efbd3aa45e62`  
-		Last Modified: Wed, 31 Aug 2016 17:55:05 GMT  
-		Size: 3.4 MB (3442217 bytes)  
+	-	`sha256:3201fa3d047251e1cd4d144a7c8182853606fd2d2cd67e45c29632c208c16e7b`  
+		Last Modified: Thu, 08 Sep 2016 20:55:48 GMT  
+		Size: 3.5 MB (3464735 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11c7ee3c5131353ae8db7bdcb486b671e29b78950e7b27be00b5b811a1407827`  
-		Last Modified: Wed, 31 Aug 2016 17:57:53 GMT  
-		Size: 29.2 MB (29186375 bytes)  
+	-	`sha256:061b6fe40e37cfb01170de30a0297d4f18d48bcd37c9c0be3d779b20a6336a8d`  
+		Last Modified: Thu, 08 Sep 2016 20:58:13 GMT  
+		Size: 25.3 MB (25315577 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:3-5.2.0-alpha1-onbuild`
 
 ```console
-$ docker pull pypy@sha256:2ce4f3f854c23037a23206a1983f5499368d91b51570dee70c22d896a0853921
+$ docker pull pypy@sha256:75fe58361725c54176bd924b27b9092962d13dc89bf1b73025a53610b989e967
 ```
 
 -	Platforms:
@@ -1682,9 +1674,9 @@ $ docker pull pypy@sha256:2ce4f3f854c23037a23206a1983f5499368d91b51570dee70c22d8
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.4 MB (269408001 bytes)**  
+-	Total Size: **270.3 MB (270272095 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b86766c4ba101825481e159f27f998e26669b3f96065fafb5ac94774a1ebc484`
+-	Image ID: `sha256:6ec7f764141fa119cebee08b4cd63ee129db61c8c44a0db6414802559af4331e`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -1698,29 +1690,31 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 30 Aug 2016 21:53:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:36:14 GMT
-RUN apt-get purge -y python.*
-# Wed, 31 Aug 2016 02:36:14 GMT
+# Wed, 31 Aug 2016 02:37:38 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:37:39 GMT
 ENV LANG=C.UTF-8
-# Wed, 31 Aug 2016 02:36:56 GMT
+# Wed, 31 Aug 2016 02:37:46 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:54:02 GMT
 ENV PYPY_VERSION=5.2.0-alpha1
-# Wed, 31 Aug 2016 02:37:03 GMT
-RUN set -x 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1
-# Wed, 31 Aug 2016 02:37:04 GMT
+# Thu, 08 Sep 2016 20:54:02 GMT
+ENV PYPY_SHA256SUM=f5e66ab24267d6ddf662d07c512d06c10ebc732ae62093dabbd775ac63b9060a
+# Thu, 08 Sep 2016 20:54:03 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 31 Aug 2016 02:37:11 GMT
-RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:54:26 GMT
+RUN set -ex 	&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:54:26 GMT
 CMD ["pypy3"]
-# Wed, 31 Aug 2016 02:37:37 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 RUN mkdir -p /usr/src/app
-# Wed, 31 Aug 2016 02:37:37 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 WORKDIR /usr/src/app
-# Wed, 31 Aug 2016 02:37:37 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Wed, 31 Aug 2016 02:37:38 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 ONBUILD RUN pip install -r requirements.txt
-# Wed, 31 Aug 2016 02:37:38 GMT
+# Thu, 08 Sep 2016 20:54:57 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -1741,27 +1735,23 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Tue, 30 Aug 2016 21:59:41 GMT  
 		Size: 129.8 MB (129750077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bbef2adf4f22ac366181c03c92a5198e482ef965a23ed31e1f864cf07c78ef`  
-		Last Modified: Wed, 31 Aug 2016 17:54:14 GMT  
-		Size: 222.4 KB (222442 bytes)  
+	-	`sha256:b7fc86da4ddd9e9b9bc328141589c42d8eded7305efe70f94c08e7dada014f8f`  
+		Last Modified: Wed, 07 Sep 2016 18:04:01 GMT  
+		Size: 2.9 MB (2888768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5f13ef8d9bc2a97c4e9cc49b2c5b5d7c5c6a538193f9e64965a29822eb83781`  
-		Last Modified: Wed, 31 Aug 2016 17:56:45 GMT  
-		Size: 21.4 MB (21358047 bytes)  
+	-	`sha256:c1729d2d381d07295997446b8c3362367f98db06e5ca5f3608bc524f9d35d234`  
+		Last Modified: Thu, 08 Sep 2016 20:57:15 GMT  
+		Size: 25.2 MB (25242964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14983c6fa790adda977c40253b46d8035c12b060bef7a1db65ab0c0f909d401d`  
-		Last Modified: Wed, 31 Aug 2016 17:56:35 GMT  
-		Size: 5.7 MB (5687148 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:770248eccfbb7579787c2c8eb658d48f0a58f4ad10251a867fa3b4743505ef6c`  
-		Last Modified: Wed, 31 Aug 2016 17:58:45 GMT  
-		Size: 126.0 B  
+	-	`sha256:88e51e3504b461ad57be351464e3c12619a90ab6185edda4f97512acaacde064`  
+		Last Modified: Thu, 08 Sep 2016 20:58:59 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:3-5.2.0-onbuild`
 
 ```console
-$ docker pull pypy@sha256:2ce4f3f854c23037a23206a1983f5499368d91b51570dee70c22d896a0853921
+$ docker pull pypy@sha256:75fe58361725c54176bd924b27b9092962d13dc89bf1b73025a53610b989e967
 ```
 
 -	Platforms:
@@ -1771,9 +1761,9 @@ $ docker pull pypy@sha256:2ce4f3f854c23037a23206a1983f5499368d91b51570dee70c22d8
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.4 MB (269408001 bytes)**  
+-	Total Size: **270.3 MB (270272095 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b86766c4ba101825481e159f27f998e26669b3f96065fafb5ac94774a1ebc484`
+-	Image ID: `sha256:6ec7f764141fa119cebee08b4cd63ee129db61c8c44a0db6414802559af4331e`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -1787,29 +1777,31 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 30 Aug 2016 21:53:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:36:14 GMT
-RUN apt-get purge -y python.*
-# Wed, 31 Aug 2016 02:36:14 GMT
+# Wed, 31 Aug 2016 02:37:38 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:37:39 GMT
 ENV LANG=C.UTF-8
-# Wed, 31 Aug 2016 02:36:56 GMT
+# Wed, 31 Aug 2016 02:37:46 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:54:02 GMT
 ENV PYPY_VERSION=5.2.0-alpha1
-# Wed, 31 Aug 2016 02:37:03 GMT
-RUN set -x 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1
-# Wed, 31 Aug 2016 02:37:04 GMT
+# Thu, 08 Sep 2016 20:54:02 GMT
+ENV PYPY_SHA256SUM=f5e66ab24267d6ddf662d07c512d06c10ebc732ae62093dabbd775ac63b9060a
+# Thu, 08 Sep 2016 20:54:03 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 31 Aug 2016 02:37:11 GMT
-RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:54:26 GMT
+RUN set -ex 	&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:54:26 GMT
 CMD ["pypy3"]
-# Wed, 31 Aug 2016 02:37:37 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 RUN mkdir -p /usr/src/app
-# Wed, 31 Aug 2016 02:37:37 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 WORKDIR /usr/src/app
-# Wed, 31 Aug 2016 02:37:37 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Wed, 31 Aug 2016 02:37:38 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 ONBUILD RUN pip install -r requirements.txt
-# Wed, 31 Aug 2016 02:37:38 GMT
+# Thu, 08 Sep 2016 20:54:57 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -1830,27 +1822,23 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Tue, 30 Aug 2016 21:59:41 GMT  
 		Size: 129.8 MB (129750077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bbef2adf4f22ac366181c03c92a5198e482ef965a23ed31e1f864cf07c78ef`  
-		Last Modified: Wed, 31 Aug 2016 17:54:14 GMT  
-		Size: 222.4 KB (222442 bytes)  
+	-	`sha256:b7fc86da4ddd9e9b9bc328141589c42d8eded7305efe70f94c08e7dada014f8f`  
+		Last Modified: Wed, 07 Sep 2016 18:04:01 GMT  
+		Size: 2.9 MB (2888768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5f13ef8d9bc2a97c4e9cc49b2c5b5d7c5c6a538193f9e64965a29822eb83781`  
-		Last Modified: Wed, 31 Aug 2016 17:56:45 GMT  
-		Size: 21.4 MB (21358047 bytes)  
+	-	`sha256:c1729d2d381d07295997446b8c3362367f98db06e5ca5f3608bc524f9d35d234`  
+		Last Modified: Thu, 08 Sep 2016 20:57:15 GMT  
+		Size: 25.2 MB (25242964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14983c6fa790adda977c40253b46d8035c12b060bef7a1db65ab0c0f909d401d`  
-		Last Modified: Wed, 31 Aug 2016 17:56:35 GMT  
-		Size: 5.7 MB (5687148 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:770248eccfbb7579787c2c8eb658d48f0a58f4ad10251a867fa3b4743505ef6c`  
-		Last Modified: Wed, 31 Aug 2016 17:58:45 GMT  
-		Size: 126.0 B  
+	-	`sha256:88e51e3504b461ad57be351464e3c12619a90ab6185edda4f97512acaacde064`  
+		Last Modified: Thu, 08 Sep 2016 20:58:59 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:3-5.2-onbuild`
 
 ```console
-$ docker pull pypy@sha256:2ce4f3f854c23037a23206a1983f5499368d91b51570dee70c22d896a0853921
+$ docker pull pypy@sha256:75fe58361725c54176bd924b27b9092962d13dc89bf1b73025a53610b989e967
 ```
 
 -	Platforms:
@@ -1860,9 +1848,9 @@ $ docker pull pypy@sha256:2ce4f3f854c23037a23206a1983f5499368d91b51570dee70c22d8
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.4 MB (269408001 bytes)**  
+-	Total Size: **270.3 MB (270272095 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b86766c4ba101825481e159f27f998e26669b3f96065fafb5ac94774a1ebc484`
+-	Image ID: `sha256:6ec7f764141fa119cebee08b4cd63ee129db61c8c44a0db6414802559af4331e`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -1876,29 +1864,31 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 30 Aug 2016 21:53:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:36:14 GMT
-RUN apt-get purge -y python.*
-# Wed, 31 Aug 2016 02:36:14 GMT
+# Wed, 31 Aug 2016 02:37:38 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:37:39 GMT
 ENV LANG=C.UTF-8
-# Wed, 31 Aug 2016 02:36:56 GMT
+# Wed, 31 Aug 2016 02:37:46 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:54:02 GMT
 ENV PYPY_VERSION=5.2.0-alpha1
-# Wed, 31 Aug 2016 02:37:03 GMT
-RUN set -x 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1
-# Wed, 31 Aug 2016 02:37:04 GMT
+# Thu, 08 Sep 2016 20:54:02 GMT
+ENV PYPY_SHA256SUM=f5e66ab24267d6ddf662d07c512d06c10ebc732ae62093dabbd775ac63b9060a
+# Thu, 08 Sep 2016 20:54:03 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 31 Aug 2016 02:37:11 GMT
-RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:54:26 GMT
+RUN set -ex 	&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:54:26 GMT
 CMD ["pypy3"]
-# Wed, 31 Aug 2016 02:37:37 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 RUN mkdir -p /usr/src/app
-# Wed, 31 Aug 2016 02:37:37 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 WORKDIR /usr/src/app
-# Wed, 31 Aug 2016 02:37:37 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Wed, 31 Aug 2016 02:37:38 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 ONBUILD RUN pip install -r requirements.txt
-# Wed, 31 Aug 2016 02:37:38 GMT
+# Thu, 08 Sep 2016 20:54:57 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -1919,27 +1909,23 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Tue, 30 Aug 2016 21:59:41 GMT  
 		Size: 129.8 MB (129750077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bbef2adf4f22ac366181c03c92a5198e482ef965a23ed31e1f864cf07c78ef`  
-		Last Modified: Wed, 31 Aug 2016 17:54:14 GMT  
-		Size: 222.4 KB (222442 bytes)  
+	-	`sha256:b7fc86da4ddd9e9b9bc328141589c42d8eded7305efe70f94c08e7dada014f8f`  
+		Last Modified: Wed, 07 Sep 2016 18:04:01 GMT  
+		Size: 2.9 MB (2888768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5f13ef8d9bc2a97c4e9cc49b2c5b5d7c5c6a538193f9e64965a29822eb83781`  
-		Last Modified: Wed, 31 Aug 2016 17:56:45 GMT  
-		Size: 21.4 MB (21358047 bytes)  
+	-	`sha256:c1729d2d381d07295997446b8c3362367f98db06e5ca5f3608bc524f9d35d234`  
+		Last Modified: Thu, 08 Sep 2016 20:57:15 GMT  
+		Size: 25.2 MB (25242964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14983c6fa790adda977c40253b46d8035c12b060bef7a1db65ab0c0f909d401d`  
-		Last Modified: Wed, 31 Aug 2016 17:56:35 GMT  
-		Size: 5.7 MB (5687148 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:770248eccfbb7579787c2c8eb658d48f0a58f4ad10251a867fa3b4743505ef6c`  
-		Last Modified: Wed, 31 Aug 2016 17:58:45 GMT  
-		Size: 126.0 B  
+	-	`sha256:88e51e3504b461ad57be351464e3c12619a90ab6185edda4f97512acaacde064`  
+		Last Modified: Thu, 08 Sep 2016 20:58:59 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:3-5-onbuild`
 
 ```console
-$ docker pull pypy@sha256:2ce4f3f854c23037a23206a1983f5499368d91b51570dee70c22d896a0853921
+$ docker pull pypy@sha256:75fe58361725c54176bd924b27b9092962d13dc89bf1b73025a53610b989e967
 ```
 
 -	Platforms:
@@ -1949,9 +1935,9 @@ $ docker pull pypy@sha256:2ce4f3f854c23037a23206a1983f5499368d91b51570dee70c22d8
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.4 MB (269408001 bytes)**  
+-	Total Size: **270.3 MB (270272095 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b86766c4ba101825481e159f27f998e26669b3f96065fafb5ac94774a1ebc484`
+-	Image ID: `sha256:6ec7f764141fa119cebee08b4cd63ee129db61c8c44a0db6414802559af4331e`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -1965,29 +1951,31 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 30 Aug 2016 21:53:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:36:14 GMT
-RUN apt-get purge -y python.*
-# Wed, 31 Aug 2016 02:36:14 GMT
+# Wed, 31 Aug 2016 02:37:38 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:37:39 GMT
 ENV LANG=C.UTF-8
-# Wed, 31 Aug 2016 02:36:56 GMT
+# Wed, 31 Aug 2016 02:37:46 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:54:02 GMT
 ENV PYPY_VERSION=5.2.0-alpha1
-# Wed, 31 Aug 2016 02:37:03 GMT
-RUN set -x 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1
-# Wed, 31 Aug 2016 02:37:04 GMT
+# Thu, 08 Sep 2016 20:54:02 GMT
+ENV PYPY_SHA256SUM=f5e66ab24267d6ddf662d07c512d06c10ebc732ae62093dabbd775ac63b9060a
+# Thu, 08 Sep 2016 20:54:03 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 31 Aug 2016 02:37:11 GMT
-RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:54:26 GMT
+RUN set -ex 	&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:54:26 GMT
 CMD ["pypy3"]
-# Wed, 31 Aug 2016 02:37:37 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 RUN mkdir -p /usr/src/app
-# Wed, 31 Aug 2016 02:37:37 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 WORKDIR /usr/src/app
-# Wed, 31 Aug 2016 02:37:37 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Wed, 31 Aug 2016 02:37:38 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 ONBUILD RUN pip install -r requirements.txt
-# Wed, 31 Aug 2016 02:37:38 GMT
+# Thu, 08 Sep 2016 20:54:57 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -2008,27 +1996,23 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Tue, 30 Aug 2016 21:59:41 GMT  
 		Size: 129.8 MB (129750077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bbef2adf4f22ac366181c03c92a5198e482ef965a23ed31e1f864cf07c78ef`  
-		Last Modified: Wed, 31 Aug 2016 17:54:14 GMT  
-		Size: 222.4 KB (222442 bytes)  
+	-	`sha256:b7fc86da4ddd9e9b9bc328141589c42d8eded7305efe70f94c08e7dada014f8f`  
+		Last Modified: Wed, 07 Sep 2016 18:04:01 GMT  
+		Size: 2.9 MB (2888768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5f13ef8d9bc2a97c4e9cc49b2c5b5d7c5c6a538193f9e64965a29822eb83781`  
-		Last Modified: Wed, 31 Aug 2016 17:56:45 GMT  
-		Size: 21.4 MB (21358047 bytes)  
+	-	`sha256:c1729d2d381d07295997446b8c3362367f98db06e5ca5f3608bc524f9d35d234`  
+		Last Modified: Thu, 08 Sep 2016 20:57:15 GMT  
+		Size: 25.2 MB (25242964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14983c6fa790adda977c40253b46d8035c12b060bef7a1db65ab0c0f909d401d`  
-		Last Modified: Wed, 31 Aug 2016 17:56:35 GMT  
-		Size: 5.7 MB (5687148 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:770248eccfbb7579787c2c8eb658d48f0a58f4ad10251a867fa3b4743505ef6c`  
-		Last Modified: Wed, 31 Aug 2016 17:58:45 GMT  
-		Size: 126.0 B  
+	-	`sha256:88e51e3504b461ad57be351464e3c12619a90ab6185edda4f97512acaacde064`  
+		Last Modified: Thu, 08 Sep 2016 20:58:59 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:3-onbuild`
 
 ```console
-$ docker pull pypy@sha256:2ce4f3f854c23037a23206a1983f5499368d91b51570dee70c22d896a0853921
+$ docker pull pypy@sha256:75fe58361725c54176bd924b27b9092962d13dc89bf1b73025a53610b989e967
 ```
 
 -	Platforms:
@@ -2038,9 +2022,9 @@ $ docker pull pypy@sha256:2ce4f3f854c23037a23206a1983f5499368d91b51570dee70c22d8
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.4 MB (269408001 bytes)**  
+-	Total Size: **270.3 MB (270272095 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b86766c4ba101825481e159f27f998e26669b3f96065fafb5ac94774a1ebc484`
+-	Image ID: `sha256:6ec7f764141fa119cebee08b4cd63ee129db61c8c44a0db6414802559af4331e`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -2054,29 +2038,31 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 30 Aug 2016 21:53:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:36:14 GMT
-RUN apt-get purge -y python.*
-# Wed, 31 Aug 2016 02:36:14 GMT
+# Wed, 31 Aug 2016 02:37:38 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:37:39 GMT
 ENV LANG=C.UTF-8
-# Wed, 31 Aug 2016 02:36:56 GMT
+# Wed, 31 Aug 2016 02:37:46 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:54:02 GMT
 ENV PYPY_VERSION=5.2.0-alpha1
-# Wed, 31 Aug 2016 02:37:03 GMT
-RUN set -x 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1
-# Wed, 31 Aug 2016 02:37:04 GMT
+# Thu, 08 Sep 2016 20:54:02 GMT
+ENV PYPY_SHA256SUM=f5e66ab24267d6ddf662d07c512d06c10ebc732ae62093dabbd775ac63b9060a
+# Thu, 08 Sep 2016 20:54:03 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 31 Aug 2016 02:37:11 GMT
-RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:54:26 GMT
+RUN set -ex 	&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:54:26 GMT
 CMD ["pypy3"]
-# Wed, 31 Aug 2016 02:37:37 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 RUN mkdir -p /usr/src/app
-# Wed, 31 Aug 2016 02:37:37 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 WORKDIR /usr/src/app
-# Wed, 31 Aug 2016 02:37:37 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Wed, 31 Aug 2016 02:37:38 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 ONBUILD RUN pip install -r requirements.txt
-# Wed, 31 Aug 2016 02:37:38 GMT
+# Thu, 08 Sep 2016 20:54:57 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -2097,27 +2083,23 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Tue, 30 Aug 2016 21:59:41 GMT  
 		Size: 129.8 MB (129750077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bbef2adf4f22ac366181c03c92a5198e482ef965a23ed31e1f864cf07c78ef`  
-		Last Modified: Wed, 31 Aug 2016 17:54:14 GMT  
-		Size: 222.4 KB (222442 bytes)  
+	-	`sha256:b7fc86da4ddd9e9b9bc328141589c42d8eded7305efe70f94c08e7dada014f8f`  
+		Last Modified: Wed, 07 Sep 2016 18:04:01 GMT  
+		Size: 2.9 MB (2888768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5f13ef8d9bc2a97c4e9cc49b2c5b5d7c5c6a538193f9e64965a29822eb83781`  
-		Last Modified: Wed, 31 Aug 2016 17:56:45 GMT  
-		Size: 21.4 MB (21358047 bytes)  
+	-	`sha256:c1729d2d381d07295997446b8c3362367f98db06e5ca5f3608bc524f9d35d234`  
+		Last Modified: Thu, 08 Sep 2016 20:57:15 GMT  
+		Size: 25.2 MB (25242964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14983c6fa790adda977c40253b46d8035c12b060bef7a1db65ab0c0f909d401d`  
-		Last Modified: Wed, 31 Aug 2016 17:56:35 GMT  
-		Size: 5.7 MB (5687148 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:770248eccfbb7579787c2c8eb658d48f0a58f4ad10251a867fa3b4743505ef6c`  
-		Last Modified: Wed, 31 Aug 2016 17:58:45 GMT  
-		Size: 126.0 B  
+	-	`sha256:88e51e3504b461ad57be351464e3c12619a90ab6185edda4f97512acaacde064`  
+		Last Modified: Thu, 08 Sep 2016 20:58:59 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `pypy:onbuild`
 
 ```console
-$ docker pull pypy@sha256:2ce4f3f854c23037a23206a1983f5499368d91b51570dee70c22d896a0853921
+$ docker pull pypy@sha256:75fe58361725c54176bd924b27b9092962d13dc89bf1b73025a53610b989e967
 ```
 
 -	Platforms:
@@ -2127,9 +2109,9 @@ $ docker pull pypy@sha256:2ce4f3f854c23037a23206a1983f5499368d91b51570dee70c22d8
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.4 MB (269408001 bytes)**  
+-	Total Size: **270.3 MB (270272095 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b86766c4ba101825481e159f27f998e26669b3f96065fafb5ac94774a1ebc484`
+-	Image ID: `sha256:6ec7f764141fa119cebee08b4cd63ee129db61c8c44a0db6414802559af4331e`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -2143,29 +2125,31 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 30 Aug 2016 21:53:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 02:36:14 GMT
-RUN apt-get purge -y python.*
-# Wed, 31 Aug 2016 02:36:14 GMT
+# Wed, 31 Aug 2016 02:37:38 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 31 Aug 2016 02:37:39 GMT
 ENV LANG=C.UTF-8
-# Wed, 31 Aug 2016 02:36:56 GMT
+# Wed, 31 Aug 2016 02:37:46 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 08 Sep 2016 20:54:02 GMT
 ENV PYPY_VERSION=5.2.0-alpha1
-# Wed, 31 Aug 2016 02:37:03 GMT
-RUN set -x 	&& curl -SL "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 		| tar -xjC /usr/local --strip-components=1
-# Wed, 31 Aug 2016 02:37:04 GMT
+# Thu, 08 Sep 2016 20:54:02 GMT
+ENV PYPY_SHA256SUM=f5e66ab24267d6ddf662d07c512d06c10ebc732ae62093dabbd775ac63b9060a
+# Thu, 08 Sep 2016 20:54:03 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Wed, 31 Aug 2016 02:37:11 GMT
-RUN curl -SL 'https://bootstrap.pypa.io/get-pip.py' | pypy3 	&& pip install --upgrade pip==$PYTHON_PIP_VERSION
-# Wed, 31 Aug 2016 02:37:12 GMT
+# Thu, 08 Sep 2016 20:54:26 GMT
+RUN set -ex 	&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& rm -rf ~/.cache
+# Thu, 08 Sep 2016 20:54:26 GMT
 CMD ["pypy3"]
-# Wed, 31 Aug 2016 02:37:37 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 RUN mkdir -p /usr/src/app
-# Wed, 31 Aug 2016 02:37:37 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 WORKDIR /usr/src/app
-# Wed, 31 Aug 2016 02:37:37 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Wed, 31 Aug 2016 02:37:38 GMT
+# Thu, 08 Sep 2016 20:54:56 GMT
 ONBUILD RUN pip install -r requirements.txt
-# Wed, 31 Aug 2016 02:37:38 GMT
+# Thu, 08 Sep 2016 20:54:57 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -2186,19 +2170,15 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Tue, 30 Aug 2016 21:59:41 GMT  
 		Size: 129.8 MB (129750077 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:63bbef2adf4f22ac366181c03c92a5198e482ef965a23ed31e1f864cf07c78ef`  
-		Last Modified: Wed, 31 Aug 2016 17:54:14 GMT  
-		Size: 222.4 KB (222442 bytes)  
+	-	`sha256:b7fc86da4ddd9e9b9bc328141589c42d8eded7305efe70f94c08e7dada014f8f`  
+		Last Modified: Wed, 07 Sep 2016 18:04:01 GMT  
+		Size: 2.9 MB (2888768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5f13ef8d9bc2a97c4e9cc49b2c5b5d7c5c6a538193f9e64965a29822eb83781`  
-		Last Modified: Wed, 31 Aug 2016 17:56:45 GMT  
-		Size: 21.4 MB (21358047 bytes)  
+	-	`sha256:c1729d2d381d07295997446b8c3362367f98db06e5ca5f3608bc524f9d35d234`  
+		Last Modified: Thu, 08 Sep 2016 20:57:15 GMT  
+		Size: 25.2 MB (25242964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14983c6fa790adda977c40253b46d8035c12b060bef7a1db65ab0c0f909d401d`  
-		Last Modified: Wed, 31 Aug 2016 17:56:35 GMT  
-		Size: 5.7 MB (5687148 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:770248eccfbb7579787c2c8eb658d48f0a58f4ad10251a867fa3b4743505ef6c`  
-		Last Modified: Wed, 31 Aug 2016 17:58:45 GMT  
-		Size: 126.0 B  
+	-	`sha256:88e51e3504b461ad57be351464e3c12619a90ab6185edda4f97512acaacde064`  
+		Last Modified: Thu, 08 Sep 2016 20:58:59 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
