@@ -42,7 +42,8 @@ for repo in "${repos[@]}"; do
 		echo 'skipping'
 		continue
 	fi
-	mkdir -p "repos/$repo"
+	rm -rf "repos/$repo/remote"
+	mkdir -p "repos/$repo/remote"
 	{
 		echo "<!-- THIS FILE IS GENERATED VIA '$0' -->"
 		echo
@@ -59,7 +60,8 @@ for repo in "${repos[@]}"; do
 		# fetch each markdown
 		for tag in "${tags[@]}"; do
 			echo
-			curl -fsSL "$repoInfoDaemon/markdown/$tag"
+			curl -fsSL "$repoInfoDaemon/markdown/$tag" \
+				| tee "repos/$repo/remote/${tag#*:}.md"
 		done
 	} > "repos/$repo/tag-details.md"
 	echo 'done'
