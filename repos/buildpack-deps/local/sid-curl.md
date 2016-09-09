@@ -637,18 +637,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`, `/usr/share/doc/l
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0-1.dsc' gcc-6_6.2.0-1.dsc 26153 SHA256:9b4b78bf6a84c9723eccb59b811481d640bee49f0778fa627b186090d8d09a3e
-'http://httpredir.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0.orig.tar.gz' gcc-6_6.2.0.orig.tar.gz 82473068 SHA256:5c92f14fd520a90dceec8c76bbe400ab572bfb4095e332b73013d3cc59d0fda1
-'http://httpredir.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0-1.diff.gz' gcc-6_6.2.0-1.diff.gz 639139 SHA256:0e18322fc57e4310742c2485eaef036c146167998bf031222ee26a42e18d92a9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-6/6.2.0-1/
-- https://sources.debian.net/src/gcc-6/6.2.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.23-5`
 
@@ -824,18 +814,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/i/icu/icu_57.1-3.dsc' icu_57.1-3.dsc 2091 SHA256:50fd84e24765c3da989927141af81e18edb9af95b001e5018907839961f688c8
-'http://httpredir.debian.org/debian/pool/main/i/icu/icu_57.1.orig.tar.gz' icu_57.1.orig.tar.gz 22360664 SHA256:ff8c67cb65949b1e7808f2359f2b80f722697048e90e7cfc382ec1fe229e9581
-'http://httpredir.debian.org/debian/pool/main/i/icu/icu_57.1-3.debian.tar.xz' icu_57.1-3.debian.tar.xz 26604 SHA256:ee089ddf4893c2865e361b2ce18078450aa6a4ba749c10dab889f99af4a09c2b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/icu/57.1-3/
-- https://sources.debian.net/src/icu/57.1-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9.4-2`
 
@@ -952,18 +932,8 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/k/krb5/krb5_1.14.3+dfsg-1.dsc' krb5_1.14.3+dfsg-1.dsc 3303 SHA256:4fbc43c8b2648b25df20cd3cfad3f6b39dd8794dbffe15ab25b2a8c8728ad468
-'http://httpredir.debian.org/debian/pool/main/k/krb5/krb5_1.14.3+dfsg.orig.tar.gz' krb5_1.14.3+dfsg.orig.tar.gz 12057621 SHA256:305cab368db7d33f6eb0c0105fbc898440c9ac7976ede2f26716b956d5680179
-'http://httpredir.debian.org/debian/pool/main/k/krb5/krb5_1.14.3+dfsg-1.debian.tar.xz' krb5_1.14.3+dfsg-1.debian.tar.xz 141500 SHA256:f1bc73ebbb473851683bf4c2804a937676b95eb0566bee344067db1e6769496d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/krb5/1.14.3+dfsg-1/
-- https://sources.debian.net/src/krb5/1.14.3+dfsg-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libcap-ng=0.7.7-3`
 

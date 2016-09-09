@@ -1245,18 +1245,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp-6/copyright`, `/usr/share/doc/g++-6/
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0-1.dsc' gcc-6_6.2.0-1.dsc 26153 SHA256:9b4b78bf6a84c9723eccb59b811481d640bee49f0778fa627b186090d8d09a3e
-'http://httpredir.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0.orig.tar.gz' gcc-6_6.2.0.orig.tar.gz 82473068 SHA256:5c92f14fd520a90dceec8c76bbe400ab572bfb4095e332b73013d3cc59d0fda1
-'http://httpredir.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0-1.diff.gz' gcc-6_6.2.0-1.diff.gz 639139 SHA256:0e18322fc57e4310742c2485eaef036c146167998bf031222ee26a42e18d92a9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-6/6.2.0-1/
-- https://sources.debian.net/src/gcc-6/6.2.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-defaults=1.163`
 
@@ -1805,18 +1795,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/i/icu/icu_57.1-3.dsc' icu_57.1-3.dsc 2091 SHA256:50fd84e24765c3da989927141af81e18edb9af95b001e5018907839961f688c8
-'http://httpredir.debian.org/debian/pool/main/i/icu/icu_57.1.orig.tar.gz' icu_57.1.orig.tar.gz 22360664 SHA256:ff8c67cb65949b1e7808f2359f2b80f722697048e90e7cfc382ec1fe229e9581
-'http://httpredir.debian.org/debian/pool/main/i/icu/icu_57.1-3.debian.tar.xz' icu_57.1-3.debian.tar.xz 26604 SHA256:ee089ddf4893c2865e361b2ce18078450aa6a4ba749c10dab889f99af4a09c2b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/icu/57.1-3/
-- https://sources.debian.net/src/icu/57.1-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ilmbase=2.2.0-11`
 
@@ -2087,18 +2067,8 @@ Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/do
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/k/krb5/krb5_1.14.3+dfsg-1.dsc' krb5_1.14.3+dfsg-1.dsc 3303 SHA256:4fbc43c8b2648b25df20cd3cfad3f6b39dd8794dbffe15ab25b2a8c8728ad468
-'http://httpredir.debian.org/debian/pool/main/k/krb5/krb5_1.14.3+dfsg.orig.tar.gz' krb5_1.14.3+dfsg.orig.tar.gz 12057621 SHA256:305cab368db7d33f6eb0c0105fbc898440c9ac7976ede2f26716b956d5680179
-'http://httpredir.debian.org/debian/pool/main/k/krb5/krb5_1.14.3+dfsg-1.debian.tar.xz' krb5_1.14.3+dfsg-1.debian.tar.xz 141500 SHA256:f1bc73ebbb473851683bf4c2804a937676b95eb0566bee344067db1e6769496d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/krb5/1.14.3+dfsg-1/
-- https://sources.debian.net/src/krb5/1.14.3+dfsg-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lcms2=2.7-1`
 
@@ -2600,18 +2570,8 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `expat`
 - `libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.24-2.dsc' libpng1.6_1.6.24-2.dsc 2220 SHA256:0e652c9b326a20caf2c039ca9b70efa1da580b5eecd6fe44a78852b1403b9638
-'http://httpredir.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.24.orig.tar.xz' libpng1.6_1.6.24.orig.tar.xz 977532 SHA256:7932dc9e5e45d55ece9d204e90196bbb5f2c82741ccb0f7e10d07d364a6fd6dd
-'http://httpredir.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.24-2.debian.tar.xz' libpng1.6_1.6.24-2.debian.tar.xz 21900 SHA256:3c8d03cc45589912a5eb71a463f3acfe8b88115e6bc5a18a7b84733ee28db867
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libpng1.6/1.6.24-2/
-- https://sources.debian.net/src/libpng1.6/1.6.24-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpsl=0.14.0-1`
 
@@ -4465,18 +4425,8 @@ Licenses: (parsed from: `/usr/share/doc/shared-mime-info/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/s/shared-mime-info/shared-mime-info_1.6-1.dsc' shared-mime-info_1.6-1.dsc 2131 SHA256:c4579fd5e0c1d3b2b1d11048a1b8bc6424c481f8341585b22c3640042043062a
-'http://httpredir.debian.org/debian/pool/main/s/shared-mime-info/shared-mime-info_1.6.orig.tar.xz' shared-mime-info_1.6.orig.tar.xz 557240 SHA256:b2f8f85b6467933824180d0252bbcaee523f550a8fbc95cc4391bd43c03bc34c
-'http://httpredir.debian.org/debian/pool/main/s/shared-mime-info/shared-mime-info_1.6-1.debian.tar.xz' shared-mime-info_1.6-1.debian.tar.xz 10288 SHA256:3833b8f6d2935904776046d19e30da813ee45ad76ea0bc00bca4df6ecca81495
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/shared-mime-info/1.6-1/
-- https://sources.debian.net/src/shared-mime-info/1.6-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `six=1.10.0-3`
 

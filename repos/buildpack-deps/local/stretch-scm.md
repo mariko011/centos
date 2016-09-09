@@ -115,17 +115,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/a/apt/apt_1.3~rc2.dsc' apt_1.3~rc2.dsc 2531 SHA256:885bb48af3fa4d74a2f8cb66d8e8d63e516e1569595655a9d6032e7c4fe55cc3
-'http://httpredir.debian.org/debian/pool/main/a/apt/apt_1.3~rc2.tar.xz' apt_1.3~rc2.tar.xz 2033240 SHA256:96e63bd2d04bce992b81bff2d4887c05d1888fc3f9e9c85749934446755aa869
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.3~rc2/
-- https://sources.debian.net/src/apt/1.3~rc2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -2079,18 +2070,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.12-2.dsc' python2.7_2.7.12-2.dsc 3304 SHA256:eff5d1b04e07a17e5c20454b703133fcb914f9ff3593a56dc9cd79d69748f682
-'http://httpredir.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.12.orig.tar.gz' python2.7_2.7.12.orig.tar.gz 16935960 SHA256:3cb522d17463dfa69a155ab18cffa399b358c966c0363d6c8b5b3bf1384da4b6
-'http://httpredir.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.12-2.diff.gz' python2.7_2.7.12-2.diff.gz 350039 SHA256:86174067fa4e3188dfd63463a9c3ca279e3acf70ef859dfef8a343565f49b535
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/python2.7/2.7.12-2/
-- https://sources.debian.net/src/python2.7/2.7.12-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `readline6=6.3-8`
 
