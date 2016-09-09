@@ -1,9 +1,9 @@
-# `tomcat:8.0.36-jre8`
+# `tomcat:8.0.37-jre8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:945050cf462d19a61b840fa5dbdaf75512621c25ffd9031c09147463fce2db84`
-- Created: `2016-08-31T22:06:00.029931362Z`
+- Image ID: `sha256:18ff744ffbdaf1e631a3af12ba7347e2a545d41da64145027c2b33c4dbf3f798`
+- Created: `2016-09-07T19:20:08.85773922Z`
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
 - Environment:
@@ -18,8 +18,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `OPENSSL_VERSION=1.0.2h-1`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.0.36`
-  - `TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.36/bin/apache-tomcat-8.0.36.tar.gz`
+  - `TOMCAT_VERSION=8.0.37`
+  - `TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.37/bin/apache-tomcat-8.0.37.tar.gz`
 
 ## `dpkg` (`.deb`-based packages)
 
