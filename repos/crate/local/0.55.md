@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1c4cbe4bb7bd35e0442623390c1fc17ac89fadac3061a76083a7a81d4d386e33`
-- Created: `2016-08-17T17:12:47.061265131Z`
+- Image ID: `sha256:4957b26379e65b42e2f41dddc600962535af4accd8c917351093ee04e7af2e8f`
+- Created: `2016-08-31T04:40:20.281732726Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["crate"]`
