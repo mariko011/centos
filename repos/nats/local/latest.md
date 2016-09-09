@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6057c5dae1e2196c1dc2d32749d001d8d8d9ae7ea9bf9ac682ec6a9e7d45b873`
-- Created: `2016-08-18T17:10:36.096043691Z`
+- Image ID: `sha256:1a94f6e42778e2f9009b3b8f0413fb70cd915e993a99fd74f065528f5fbb0bb7`
+- Created: `2016-08-30T16:25:55.597842006Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gnatsd","-c","/gnatsd.conf"]`
 - Environment:
