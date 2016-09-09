@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9cb27f4f542da398d1618a59aa742e033b64ad97a96a5ca09a64b352c128fe49`
-- Created: `2016-06-23T20:08:01.727220088Z`
+- Image ID: `sha256:d3293d3d5a14432ccbd5e7c76f411609576dc7e8c2afc3abdc6bced2e0849281`
+- Created: `2016-08-30T00:36:30.749924974Z`
 - Arch: `linux`/`amd64`
 - Command: `["irssi"]`
 - Environment:
