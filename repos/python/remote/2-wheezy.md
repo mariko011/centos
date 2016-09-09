@@ -1,0 +1,78 @@
+## `python:2-wheezy`
+
+```console
+$ docker pull python@sha256:7e8693ec668676080c4b0e2b5314479a1156e84458852d13cd9b3434f0ce0be6
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `python:2-wheezy` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **203.6 MB (203575813 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:cb409139e357a156409dd048c839912d7f861662998582434bd1331955d0be10`
+-	Default Command: `["python2"]`
+
+```dockerfile
+# Thu, 28 Jul 2016 17:49:29 GMT
+ADD file:0d2a68d1c5a4a52b0bddd8921fe9f3d603a5d69911d4bba61c5e2460e6500d76 in /
+# Thu, 28 Jul 2016 17:49:29 GMT
+CMD ["/bin/bash"]
+# Thu, 28 Jul 2016 18:27:55 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 28 Jul 2016 18:28:21 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Wed, 24 Aug 2016 16:49:50 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
+# Fri, 26 Aug 2016 20:53:51 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 26 Aug 2016 20:53:52 GMT
+ENV LANG=C.UTF-8
+# Fri, 26 Aug 2016 20:54:03 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
+# Fri, 26 Aug 2016 20:54:04 GMT
+ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
+# Fri, 26 Aug 2016 20:54:05 GMT
+ENV PYTHON_VERSION=2.7.12
+# Fri, 26 Aug 2016 20:54:05 GMT
+ENV PYTHON_PIP_VERSION=8.1.2
+# Fri, 26 Aug 2016 20:56:48 GMT
+RUN set -ex 	&& buildDeps=' 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-shared 		--enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 			&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& python2 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	&& pip install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& find /usr/local -depth 		\( 			\( -type d -a -name test -o -name tests \) 			-o 			\( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
+# Fri, 26 Aug 2016 20:56:52 GMT
+RUN pip install --no-cache-dir virtualenv
+# Fri, 26 Aug 2016 20:56:54 GMT
+CMD ["python2"]
+```
+
+-	Layers:
+	-	`sha256:5c68a10e9f3f9e2757d1f2b0a51ad5ac41f5395a190bbbe3907a6b6fffa9bcea`  
+		Last Modified: Thu, 28 Jul 2016 17:54:32 GMT  
+		Size: 37.2 MB (37209635 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9c81f9b5104e75c51d678d80525193ab71008b9c25c1a1e4694996b0744c6cbe`  
+		Last Modified: Thu, 28 Jul 2016 21:53:17 GMT  
+		Size: 6.7 MB (6730996 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8c8d9d9752348fab5a9cd1140f31df8ad6ce301aca3e7d4e303d14fde010ea14`  
+		Last Modified: Thu, 28 Jul 2016 21:53:49 GMT  
+		Size: 38.9 MB (38887392 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0b30224dea391f0bd70ef3e7354666d3eed71719eb457a9b98662fa6f306b0a4`  
+		Last Modified: Wed, 24 Aug 2016 17:01:32 GMT  
+		Size: 96.3 MB (96313338 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2b79c01d069f2a2e3bbfbd18d45d5d5c926a4da3cbc67c56e339100ef349d5ec`  
+		Last Modified: Fri, 26 Aug 2016 20:57:08 GMT  
+		Size: 3.2 MB (3228001 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:150cc08e3cdfaec22bd89d48c4128747ef511e4be2b704de0dd3e41031aa066b`  
+		Last Modified: Fri, 26 Aug 2016 20:57:14 GMT  
+		Size: 16.3 MB (16265804 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8c4652fbf1177c3bfd084a21919ec4300ed18b073e299976cf816f59ac816b05`  
+		Last Modified: Fri, 26 Aug 2016 20:57:09 GMT  
+		Size: 4.9 MB (4940647 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

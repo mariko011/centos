@@ -1,0 +1,54 @@
+## `iojs:2-slim`
+
+```console
+$ docker pull iojs@sha256:106711a18f4b39a7aee9b07e3aeffcb214b9ed54c69c510d2c83028c8bec95d7
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `iojs:2-slim` - linux; amd64
+
+-	Docker Version: 1.10.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **79.2 MB (79173457 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:9a5e5934a6df7d573df39391f1ba92d8203fe994eef7907a328c620af5564fe1`
+-	Default Command: `["iojs"]`
+
+```dockerfile
+# Thu, 28 Jul 2016 17:47:54 GMT
+ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
+# Thu, 28 Jul 2016 17:47:55 GMT
+CMD ["/bin/bash"]
+# Thu, 28 Jul 2016 17:57:57 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Fri, 29 Jul 2016 04:35:00 GMT
+RUN set -ex   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"   ; done
+# Fri, 29 Jul 2016 04:35:00 GMT
+ENV NPM_CONFIG_LOGLEVEL=info
+# Fri, 29 Jul 2016 04:38:48 GMT
+ENV IOJS_VERSION=2.5.0
+# Fri, 29 Jul 2016 04:38:54 GMT
+RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x64.tar.gz"   && curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/SHASUMS256.txt.asc"   && gpg --verify SHASUMS256.txt.asc   && grep " iojs-v$IOJS_VERSION-linux-x64.tar.gz\$" SHASUMS256.txt.asc | sha256sum -c -   && tar -xzf "iojs-v$IOJS_VERSION-linux-x64.tar.gz" -C /usr/local --strip-components=1   && rm "iojs-v$IOJS_VERSION-linux-x64.tar.gz" SHASUMS256.txt.asc
+# Fri, 29 Jul 2016 04:38:55 GMT
+CMD ["iojs"]
+```
+
+-	Layers:
+	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
+		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
+		Size: 51.4 MB (51365611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:52befadefd24601247558f63fcb2ccd96b79cbc447a148ea1d0aa2719a9ac3b1`  
+		Last Modified: Thu, 28 Jul 2016 21:52:07 GMT  
+		Size: 18.5 MB (18526978 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:07903f253134fec8bf9c4113894fac39b5c32e55f37df5701979dfeddfc9d76d`  
+		Last Modified: Fri, 29 Jul 2016 04:35:20 GMT  
+		Size: 29.6 KB (29620 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a6d964e92a8dae420e96d257e24092dc0b7b71ac2867081829100a577e6d93b1`  
+		Last Modified: Fri, 29 Jul 2016 04:39:07 GMT  
+		Size: 9.3 MB (9251248 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
