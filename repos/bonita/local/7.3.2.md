@@ -1104,13 +1104,8 @@ Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.5.dsc' isc-dhcp_4.2.4-7ubuntu12.5.dsc 2806 SHA256:47dad8f4b4600777c781ee024d6bfcda650b94eca1de23e17a8591a55fd95c28
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.5.debian.tar.xz' isc-dhcp_4.2.4-7ubuntu12.5.debian.tar.xz 106536 SHA256:e5b9e41c9be50211544682d3c0b045fc68f49fdb9fbdc8c5c3b18e3335cf0dd5
-```
 
 ### `dpkg` source package: `java-common=0.51`
 
