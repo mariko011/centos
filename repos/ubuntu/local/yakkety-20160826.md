@@ -94,13 +94,8 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.6.5-1ubuntu1.dsc' audit_2.6.5-1ubuntu1.dsc 2742 SHA256:35bbc47631f4ceda661c2fbdf041b3cb12c7a60a409eef740f6c4fb73d3b0ab4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.6.5.orig.tar.gz' audit_2.6.5.orig.tar.gz 1078910 SHA256:d99339a63fc6efaaee89efe7fa0e0c395f661392a4ae5056b2c9d10c67ca63a1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.6.5-1ubuntu1.debian.tar.xz' audit_2.6.5-1ubuntu1.debian.tar.xz 19844 SHA256:eb7186b001ba76f4e61c639d1a382604c6de30af5ef648f15324979286502e7c
-```
 
 ### `dpkg` source package: `base-files=9.6ubuntu4`
 
@@ -413,13 +408,8 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/c
 - `GPL-3+ with OpenSSL exception`
 - `RFC-Reference`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.20-6ubuntu1.dsc' gnupg_1.4.20-6ubuntu1.dsc 2354 SHA256:43919a63696dbb3c6a17930d0598e8901d19a1f1e4c4715adbf6113f26a7f925
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.20.orig.tar.gz' gnupg_1.4.20.orig.tar.gz 5156447 SHA256:dc1f1a6028488303a4efb01aadda480b9cd0f49f65aef94c432628fdd127e586
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.20-6ubuntu1.debian.tar.xz' gnupg_1.4.20-6ubuntu1.debian.tar.xz 38496 SHA256:8732eea984b6efedced7f0dc2175276fbd2d4b847065f453a36521277e217761
-```
 
 ### `dpkg` source package: `grep=2.25-6`
 
