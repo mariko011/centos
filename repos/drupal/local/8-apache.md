@@ -1,9 +1,9 @@
-# `drupal:8.1.8-apache`
+# `drupal:8.1.9-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e680b91e713042824ce3b38050c5d1b1ab99d4b00dec9ffcd98685b1430645b9`
-- Created: `2016-08-31T16:55:54.151274671Z`
+- Image ID: `sha256:a2a7ff9f5a77e274a9547ea51e2328c9dc8c2ba94814ba37b601b4b0cfa1d244`
+- Created: `2016-09-08T17:52:33.787236398Z`
 - Arch: `linux`/`amd64`
 - Command: `["apache2-foreground"]`
 - Environment:
@@ -18,8 +18,8 @@
   - `PHP_VERSION=7.0.10`
   - `PHP_FILENAME=php-7.0.10.tar.xz`
   - `PHP_SHA256=348476ff7ba8d95a1e28e1059430c10470c5f8110f6d9133d30153dda4cdf56a`
-  - `DRUPAL_VERSION=8.1.8`
-  - `DRUPAL_MD5=7c00b318590a22f2df7a18cf70df06dc`
+  - `DRUPAL_VERSION=8.1.9`
+  - `DRUPAL_MD5=4de7c001ecbd5c27e5837c97e40facc2`
 
 ## `dpkg` (`.deb`-based packages)
 
