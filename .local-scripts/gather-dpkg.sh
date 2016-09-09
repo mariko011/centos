@@ -101,11 +101,13 @@ for src in "${sortedSources[@]}"; do
 		echo
 	fi
 
-	if aptSource="$(apt-get source -qq --print-uris "$src" 2>/dev/null)" && [ -n "$aptSource" ]; then
+	aptSourceArgs=( apt-get source -qq --print-uris "$src" )
+	if aptSource="$("${aptSourceArgs[@]}" 2>/dev/null)" && [ -n "$aptSource" ]; then
 		echo
 		echo 'Source:'
 		echo
-		echo '```'
+		echo '```console'
+		echo '$' "${aptSourceArgs[@]}"
 		echo "$aptSource"
 		echo '```'
 		case "$aptSource" in
