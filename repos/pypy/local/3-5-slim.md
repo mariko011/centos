@@ -2,14 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:47b2e1ad200ab0e9e52faa0cbd0ee1d5239ecad01c441650af208ed09d5c5f01`
-- Created: `2016-08-31T02:37:36.229751334Z`
+- Image ID: `sha256:0a4e2b44bab4fc6a1dc94db2e1681650de4ecaa3ca067b9bb6734cbf2bae18ed`
+- Created: `2016-09-08T20:54:54.965942748Z`
 - Arch: `linux`/`amd64`
 - Command: `["pypy3"]`
 - Environment:
-  - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `PYPY_VERSION=5.2.0-alpha1`
+  - `PYPY_SHA256SUM=f5e66ab24267d6ddf662d07c512d06c10ebc732ae62093dabbd775ac63b9060a`
   - `PYTHON_PIP_VERSION=8.1.2`
 
 ## `dpkg` (`.deb`-based packages)
@@ -317,35 +318,6 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
-
-Binary Packages:
-
-- `libsasl2-2:amd64=2.1.26.dfsg1-13+deb8u1`
-- `libsasl2-modules-db:amd64=2.1.26.dfsg1-13+deb8u1`
-
-Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
-
-- `BSD-2-clause`
-- `BSD-4-clause`
-- `GPL-2`
-- `GPL-2+`
-- `GPL-3`
-- `GPL-3+`
-
-Source:
-
-```
-'http://httpredir.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.dsc' cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.dsc 3461 SHA256:ed1cba2b699aaf1ad08b99ea82d40c583c02817f6fbd765b9bbcd940d72fc3f3
-'http://httpredir.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1.orig.tar.gz' cyrus-sasl2_2.1.26.dfsg1.orig.tar.gz 1494337 SHA256:172c39555012f479543ce7305949db75df708771fe8f8b34248027f09e53bb85
-'http://httpredir.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.debian.tar.xz' cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.debian.tar.xz 94284 SHA256:14e00798c41b6fae965211f1af8b47a67d22001146d0019f81af0fc7be9f162f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cyrus-sasl2/2.1.26.dfsg1-13+deb8u1/
-- https://sources.debian.net/src/cyrus-sasl2/2.1.26.dfsg1-13+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `dash=0.5.7-4`
 
@@ -664,32 +636,6 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/glibc/2.19-18+deb8u4/
 - https://sources.debian.net/src/glibc/2.19-18+deb8u4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gmp=2:6.0.0+dfsg-6`
-
-Binary Packages:
-
-- `libgmp10:amd64=2:6.0.0+dfsg-6`
-
-Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
-
-- `GPL`
-- `GPL-2`
-- `GPL-3`
-- `LGPL-3`
-
-Source:
-
-```
-'http://httpredir.debian.org/debian/pool/main/g/gmp/gmp_6.0.0+dfsg-6.dsc' gmp_6.0.0+dfsg-6.dsc 1840 SHA256:40f44bfae4ed9df69a8c64fe9bf9deded10cc4a75844c95bbfbfc3307976f53a
-'http://httpredir.debian.org/debian/pool/main/g/gmp/gmp_6.0.0+dfsg.orig.tar.xz' gmp_6.0.0+dfsg.orig.tar.xz 1756792 SHA256:7539e094815fc321f4dc64b0a6968db9e1bee85a459bc64d4cc2b9dd0f6729a5
-'http://httpredir.debian.org/debian/pool/main/g/gmp/gmp_6.0.0+dfsg-6.debian.tar.xz' gmp_6.0.0+dfsg-6.debian.tar.xz 21024 SHA256:83219073eab9fb886dd1123b6b571b45fbe2f7c290c4201b07696784ffcf7fd1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gmp/2:6.0.0+dfsg-6/
-- https://sources.debian.net/src/gmp/2:6.0.0+dfsg-6/debian/copyright (for direct copyright/license information)
-
 ### `dpkg` source package: `gnupg=1.4.18-7+deb8u2`
 
 Binary Packages:
@@ -715,37 +661,6 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/gnupg/1.4.18-7+deb8u2/
 - https://sources.debian.net/src/gnupg/1.4.18-7+deb8u2/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `gnutls28=3.3.8-6+deb8u3`
-
-Binary Packages:
-
-- `libgnutls-deb0-28:amd64=3.3.8-6+deb8u3`
-
-Licenses: (parsed from: `/usr/share/doc/libgnutls-deb0-28/copyright`)
-
-- `GFDL-1.3`
-- `GPL`
-- `GPL-3`
-- `GPLv3+`
-- `LGPL`
-- `LGPL-3`
-- `LGPL2.1`
-- `The main library is licensed under GNU Lesser`
-- `nonstandard, see below`
-
-Source:
-
-```
-'http://httpredir.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.3.8-6+deb8u3.dsc' gnutls28_3.3.8-6+deb8u3.dsc 2941 SHA256:5c1cd78b2eb4547377ef5c0894de48945265251dbdca2303526cef894e77e46d
-'http://httpredir.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.3.8.orig.tar.xz' gnutls28_3.3.8.orig.tar.xz 6153180 SHA256:bd4642f180e19632f4ed3a1e62d60c824c7b695f5cddf41a8fba1b272eaef046
-'http://httpredir.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.3.8-6+deb8u3.debian.tar.xz' gnutls28_3.3.8-6+deb8u3.debian.tar.xz 95104 SHA256:fe56f1f7a79b855577a5539202408e91a5a7a57095751550d983368cc0c08f8d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnutls28/3.3.8-6+deb8u3/
-- https://sources.debian.net/src/gnutls28/3.3.8-6+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.20-4.1`
 
@@ -1134,32 +1049,6 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libsepol/2.3-2/
 - https://sources.debian.net/src/libsepol/2.3-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libtasn1-6=4.2-3+deb8u2`
-
-Binary Packages:
-
-- `libtasn1-6:amd64=4.2-3+deb8u2`
-
-Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
-
-- `GFDL-1.3`
-- `GPL-3`
-- `LGPL`
-- `LGPL-2.1`
-
-Source:
-
-```
-'http://httpredir.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.2-3+deb8u2.dsc' libtasn1-6_4.2-3+deb8u2.dsc 2434 SHA256:b22337782c8f2edf9adf6e42c37808f116ad4cfab2b81c1e30a6fddb8aa0acf2
-'http://httpredir.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.2.orig.tar.gz' libtasn1-6_4.2.orig.tar.gz 1866192 SHA256:693b41cb36c2ac02d5990180b0712a79a591168e93d85f7fcbb75a0a0be4cdbb
-'http://httpredir.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.2-3+deb8u2.debian.tar.xz' libtasn1-6_4.2-3+deb8u2.debian.tar.xz 58556 SHA256:0f7587e82f702eb757c2ad842f4511ff1619b286bd2ccc3d61fa8bb490b839d1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libtasn1-6/4.2-3+deb8u2/
-- https://sources.debian.net/src/libtasn1-6/4.2-3+deb8u2/debian/copyright (for direct copyright/license information)
-
 ### `dpkg` source package: `libtext-charwidth-perl=0.04-7`
 
 Binary Packages:
@@ -1375,62 +1264,6 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/netbase/5.3/
 - https://sources.debian.net/src/netbase/5.3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `nettle=2.7.1-5+deb8u1`
-
-Binary Packages:
-
-- `libhogweed2:amd64=2.7.1-5+deb8u1`
-- `libnettle4:amd64=2.7.1-5+deb8u1`
-
-Licenses: (parsed from: `/usr/share/doc/libhogweed2/copyright`, `/usr/share/doc/libnettle4/copyright`)
-
-- `GAP`
-- `GPL`
-- `GPL-2`
-- `GPL-2+`
-- `LGPL`
-- `LGPL-2`
-- `LGPL-2+`
-- `LGPL-2.1+`
-- `other`
-- `public-domain`
-
-Source:
-
-```
-'http://httpredir.debian.org/debian/pool/main/n/nettle/nettle_2.7.1-5+deb8u1.dsc' nettle_2.7.1-5+deb8u1.dsc 2096 SHA256:9be625f7f50ee4844c8c4f776fb8d040141707760b481acd2f739a9280fa6dc5
-'http://httpredir.debian.org/debian/pool/main/n/nettle/nettle_2.7.1.orig.tar.gz' nettle_2.7.1.orig.tar.gz 1558863 SHA256:bc71ebd43435537d767799e414fce88e521b7278d48c860651216e1fc6555b40
-'http://httpredir.debian.org/debian/pool/main/n/nettle/nettle_2.7.1-5+deb8u1.debian.tar.xz' nettle_2.7.1-5+deb8u1.debian.tar.xz 19472 SHA256:ef01d799c2bae969afe33cf433a0cd8a9d507fe8510a775b5ff8ddc73e86559c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nettle/2.7.1-5+deb8u1/
-- https://sources.debian.net/src/nettle/2.7.1-5+deb8u1/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `openldap=2.4.40+dfsg-1+deb8u2`
-
-Binary Packages:
-
-- `libldap-2.4-2:amd64=2.4.40+dfsg-1+deb8u2`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```
-'http://httpredir.debian.org/debian/pool/main/o/openldap/openldap_2.4.40+dfsg-1+deb8u2.dsc' openldap_2.4.40+dfsg-1+deb8u2.dsc 2819 SHA256:fa6859696d15e6e2a40a940cb4f4356d0c04b5994faf02717f64c1e51517e877
-'http://httpredir.debian.org/debian/pool/main/o/openldap/openldap_2.4.40+dfsg.orig.tar.gz' openldap_2.4.40+dfsg.orig.tar.gz 4797667 SHA256:86c0326dc3dc5f1a9b3c25f7106b96f3eafcdf5da090b1fc586dec57d56e0e7f
-'http://httpredir.debian.org/debian/pool/main/o/openldap/openldap_2.4.40+dfsg-1+deb8u2.diff.gz' openldap_2.4.40+dfsg-1+deb8u2.diff.gz 179809 SHA256:aa5cb8c89c602c3625e121555de6dea53df051c811da49dc0f4487f4b859061a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u2/
-- https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u2/debian/copyright (for direct copyright/license information)
-
 ### `dpkg` source package: `openssl=1.0.1t-1+deb8u2`
 
 Binary Packages:
@@ -1454,31 +1287,6 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/openssl/1.0.1t-1+deb8u2/
 - https://sources.debian.net/src/openssl/1.0.1t-1+deb8u2/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `p11-kit=0.20.7-1`
-
-Binary Packages:
-
-- `libp11-kit0:amd64=0.20.7-1`
-
-Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
-
-- `BSD-3-Clause`
-- `This file is distributed under the same license as the debian`
-- `This file is distributed under the same license as the p11-kit`
-
-Source:
-
-```
-'http://httpredir.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.20.7-1.dsc' p11-kit_0.20.7-1.dsc 2221 SHA256:459d56241f560163471eb5ec789eb5691ca97c5aa9a1bca98dabcf613a2d4bc3
-'http://httpredir.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.20.7.orig.tar.gz' p11-kit_0.20.7.orig.tar.gz 986731 SHA256:68405492fe466b33927d461302aa98e703db3b8a596411585508bc33084484d2
-'http://httpredir.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.20.7-1.debian.tar.xz' p11-kit_0.20.7-1.debian.tar.xz 14208 SHA256:515dfcc279d284bfbee4d172c9cf1db3befe52d55e6d3f50d024c8f72d56574d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/p11-kit/0.20.7-1/
-- https://sources.debian.net/src/p11-kit/0.20.7-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `pam=1.1.8-3.1+deb8u1`
 
