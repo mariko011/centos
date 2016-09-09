@@ -1,17 +1,17 @@
-# `java:9-b133-jdk`
+# `java:9-b134-jdk`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c973c98eecf9b66d03fbcfb127f95c375a96ade66d71c5e4050b52e227ea02d3`
-- Created: `2016-08-31T17:17:38.386904621Z`
+- Image ID: `sha256:267b3e7ae0bf2d9fda2b69023f71667fe70a5112bb42f55bfde363284dd6e2cc`
+- Created: `2016-09-07T18:08:28.109307777Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64`
-  - `JAVA_VERSION=9~b133`
-  - `JAVA_DEBIAN_VERSION=9~b133-1`
+  - `JAVA_VERSION=9~b134`
+  - `JAVA_DEBIAN_VERSION=9~b134-2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -948,18 +948,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`, `/usr/share/doc/l
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0-1.dsc' gcc-6_6.2.0-1.dsc 26153 SHA256:9b4b78bf6a84c9723eccb59b811481d640bee49f0778fa627b186090d8d09a3e
-'http://httpredir.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0.orig.tar.gz' gcc-6_6.2.0.orig.tar.gz 82473068 SHA256:5c92f14fd520a90dceec8c76bbe400ab572bfb4095e332b73013d3cc59d0fda1
-'http://httpredir.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0-1.diff.gz' gcc-6_6.2.0-1.diff.gz 639139 SHA256:0e18322fc57e4310742c2485eaef036c146167998bf031222ee26a42e18d92a9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-6/6.2.0-1/
-- https://sources.debian.net/src/gcc-6/6.2.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gdbm=1.8.3-14`
 
@@ -1199,18 +1189,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/i/icu/icu_57.1-3.dsc' icu_57.1-3.dsc 2091 SHA256:50fd84e24765c3da989927141af81e18edb9af95b001e5018907839961f688c8
-'http://httpredir.debian.org/debian/pool/main/i/icu/icu_57.1.orig.tar.gz' icu_57.1.orig.tar.gz 22360664 SHA256:ff8c67cb65949b1e7808f2359f2b80f722697048e90e7cfc382ec1fe229e9581
-'http://httpredir.debian.org/debian/pool/main/i/icu/icu_57.1-3.debian.tar.xz' icu_57.1-3.debian.tar.xz 26604 SHA256:ee089ddf4893c2865e361b2ce18078450aa6a4ba749c10dab889f99af4a09c2b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/icu/57.1-3/
-- https://sources.debian.net/src/icu/57.1-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9.4-2`
 
@@ -1646,11 +1626,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libmnl/1.0.4-1/
 - https://sources.debian.net/src/libmnl/1.0.4-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libpng1.6=1.6.24-2`
+### `dpkg` source package: `libpng1.6=1.6.25-1`
 
 Binary Packages:
 
-- `libpng16-16:amd64=1.6.24-2`
+- `libpng16-16:amd64=1.6.25-1`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 
@@ -1660,8 +1640,18 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 - `expat`
 - `libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```
+'http://httpredir.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.25-1.dsc' libpng1.6_1.6.25-1.dsc 2220 SHA256:3bea5d38b1fa3ce297bc973180dd250df8476d41cda96c44e89a5fe539f207fe
+'http://httpredir.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.25.orig.tar.xz' libpng1.6_1.6.25.orig.tar.xz 982204 SHA256:09fe8d8341e8bfcfb3263100d9ac7ea2155b28dd8535f179111c1672ac8d8811
+'http://httpredir.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.25-1.debian.tar.xz' libpng1.6_1.6.25-1.debian.tar.xz 21964 SHA256:71d2420e2e6224239a7300348cfd1235baea12049fcbb3688ad7b7975295c51d
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libpng1.6/1.6.25-1/
+- https://sources.debian.net/src/libpng1.6/1.6.25-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpsl=0.14.0-1`
 
@@ -2261,12 +2251,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nss/2:3.26-1/
 - https://sources.debian.net/src/nss/2:3.26-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openjdk-9=9~b133-1`
+### `dpkg` source package: `openjdk-9=9~b134-2`
 
 Binary Packages:
 
-- `openjdk-9-jdk-headless:amd64=9~b133-1`
-- `openjdk-9-jre-headless:amd64=9~b133-1`
+- `openjdk-9-jdk-headless:amd64=9~b134-2`
+- `openjdk-9-jre-headless:amd64=9~b134-2`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-9-jdk-headless/copyright`, `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 
@@ -2275,8 +2265,18 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jdk-headless/copyright`, `/usr
 - `LGPL-2`
 - `LGPL-2-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```
+'http://httpredir.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b134-2.dsc' openjdk-9_9~b134-2.dsc 4351 SHA256:8d883f1fec30b32ed89be8b5da190ec9b6aea1b540c1c06f87afda697c56737b
+'http://httpredir.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b134.orig.tar.gz' openjdk-9_9~b134.orig.tar.gz 70456142 SHA256:405a1b4053ff6fc21222c763295b243e76e0e49ac485b4ef486fa8b6442b2287
+'http://httpredir.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b134-2.debian.tar.xz' openjdk-9_9~b134-2.debian.tar.xz 188876 SHA256:7b351a6ecd3b7ffd8248388dbb7511bfaa2d041495007feedc6dfb27874f8d90
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/openjdk-9/9~b134-2/
+- https://sources.debian.net/src/openjdk-9/9~b134-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.42+dfsg-2`
 
