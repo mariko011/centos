@@ -1008,18 +1008,8 @@ Licenses: (parsed from: `/usr/share/doc/libksba8/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/libk/libksba/libksba_1.3.4-4.dsc' libksba_1.3.4-4.dsc 2297 SHA256:4655542fed34bc66f6b8bca9a6650542fa793febff3927bf43c7bcc941cd446a
-'http://httpredir.debian.org/debian/pool/main/libk/libksba/libksba_1.3.4.orig.tar.bz2' libksba_1.3.4.orig.tar.bz2 619373 SHA256:f6c2883cebec5608692d8730843d87f237c0964d923bbe7aa89c05f20558ad4f
-'http://httpredir.debian.org/debian/pool/main/libk/libksba/libksba_1.3.4-4.debian.tar.xz' libksba_1.3.4-4.debian.tar.xz 13780 SHA256:bbd3bf7620de212a1ced17804b57e940ccc0c4a38898580bbd2bf5582c0a54fd
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libksba/1.3.4-4/
-- https://sources.debian.net/src/libksba/1.3.4-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libselinux=2.5-3`
 
