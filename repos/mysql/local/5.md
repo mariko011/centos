@@ -1,9 +1,9 @@
-# `mysql:5.7.14`
+# `mysql:5.7.15`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4b3b6b994512e9a50b94f0c87a01535806834fc4e755493ab93ec8e87574c8d6`
-- Created: `2016-08-22T19:20:13.661099365Z`
+- Image ID: `sha256:b7dc0600619272d4049e001231ab2eac80449c6e9fbbc010f00b30b08d295519`
+- Created: `2016-09-07T18:19:09.661835098Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["mysqld"]`
@@ -11,7 +11,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.7`
   - `MYSQL_MAJOR=5.7`
-  - `MYSQL_VERSION=5.7.14-1debian8`
+  - `MYSQL_VERSION=5.7.15-1debian8`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -612,12 +612,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/glibc/2.19-18+deb8u4/
 - https://sources.debian.net/src/glibc/2.19-18+deb8u4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gnupg=1.4.18-7+deb8u1`
+### `dpkg` source package: `gnupg=1.4.18-7+deb8u2`
 
 Binary Packages:
 
-- `gnupg=1.4.18-7+deb8u1`
-- `gpgv=1.4.18-7+deb8u1`
+- `gnupg=1.4.18-7+deb8u2`
+- `gpgv=1.4.18-7+deb8u2`
 
 Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/copyright`)
 
@@ -628,15 +628,15 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/c
 Source:
 
 ```
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18-7+deb8u1.dsc' gnupg_1.4.18-7+deb8u1.dsc 2552 SHA256:58f647fa1328b20bb32172b10a777f60226d119f799191a4d53172469e4f0f1d
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18.orig.tar.gz' gnupg_1.4.18.orig.tar.gz 5047888 SHA256:10a8936b76ccadb98521535b5f41cc5b41b3c159a6c2915f062bd4dc8ac12d12
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18-7+deb8u1.debian.tar.xz' gnupg_1.4.18-7+deb8u1.debian.tar.xz 298856 SHA256:883aa0dbaf494661d1a64a456505b60ae6233e9fb8ae8a1fca5efc71199fc1db
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.18-7+deb8u2.dsc' gnupg_1.4.18-7+deb8u2.dsc 2432 SHA256:0f520654648b9771b3f3a70dde845accbcdc6107aa2de3328ee23e538db6fd57
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.18.orig.tar.gz' gnupg_1.4.18.orig.tar.gz 5047888 SHA256:10a8936b76ccadb98521535b5f41cc5b41b3c159a6c2915f062bd4dc8ac12d12
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.18-7+deb8u2.debian.tar.xz' gnupg_1.4.18-7+deb8u2.debian.tar.xz 300340 SHA256:7bc0c60645d6fa4135daf7b9aee862e75e4443a44e90e0d27b272895f5a701d3
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u1/
-- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u2/
+- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.20-4.1`
 
@@ -881,11 +881,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libcap2/1:2.24-8/
 - https://sources.debian.net/src/libcap2/1:2.24-8/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libgcrypt20=1.6.3-2+deb8u1`
+### `dpkg` source package: `libgcrypt20=1.6.3-2+deb8u2`
 
 Binary Packages:
 
-- `libgcrypt20:amd64=1.6.3-2+deb8u1`
+- `libgcrypt20:amd64=1.6.3-2+deb8u2`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
@@ -895,15 +895,15 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 Source:
 
 ```
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u1.dsc' libgcrypt20_1.6.3-2+deb8u1.dsc 2573 SHA256:5073f7b0ea4777d73d4c99ab4303064ae350d015db535e2b3b9f03b6da692da8
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3.orig.tar.bz2' libgcrypt20_1.6.3.orig.tar.bz2 2494052 SHA256:41b4917b93ae34c6a0e2127378d7a4d66d805a2a86a09911d4f9bd871db7025f
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u1.debian.tar.xz' libgcrypt20_1.6.3-2+deb8u1.debian.tar.xz 28712 SHA256:84a3360762b8ba29ee99f0c95fa55ee28e1eed5fd0d2f5e86340925e5dd8d066
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u2.dsc' libgcrypt20_1.6.3-2+deb8u2.dsc 2583 SHA256:982179928629a477dad47b667ac64708eb791f77241807cafbee2b730c94654d
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3.orig.tar.bz2' libgcrypt20_1.6.3.orig.tar.bz2 2494052 SHA256:41b4917b93ae34c6a0e2127378d7a4d66d805a2a86a09911d4f9bd871db7025f
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u2.debian.tar.xz' libgcrypt20_1.6.3-2+deb8u2.debian.tar.xz 30964 SHA256:49cea0b68a4eb67461909088ffa190bcb13296dfe2da4821f7968dd992ed97a6
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u1/
-- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u2/
+- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.17-3`
 
@@ -1217,22 +1217,27 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/mecab/0.996-1.1/
 - https://sources.debian.net/src/mecab/0.996-1.1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `mysql-community=5.7.14-1debian8`
+### `dpkg` source package: `mysql-community=5.7.15-1debian8`
 
 Binary Packages:
 
-- `mysql-client=5.7.14-1debian8`
-- `mysql-common=5.7.14-1debian8`
-- `mysql-community-client=5.7.14-1debian8`
-- `mysql-community-server=5.7.14-1debian8`
-- `mysql-server=5.7.14-1debian8`
+- `mysql-client=5.7.15-1debian8`
+- `mysql-common=5.7.15-1debian8`
+- `mysql-community-client=5.7.15-1debian8`
+- `mysql-community-server=5.7.15-1debian8`
+- `mysql-server=5.7.15-1debian8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```
+'http://repo.mysql.com/apt/debian/pool/mysql-5.7/m/mysql-community/mysql-community_5.7.15-1debian8.dsc' mysql-community_5.7.15-1debian8.dsc 1820 SHA256:9ffb3b3bd3638b84a09b279a6ce994ffe4d9d66b1a1e6e97a6224559e76c6869
+'http://repo.mysql.com/apt/debian/pool/mysql-5.7/m/mysql-community/mysql-community_5.7.15.orig.tar.gz' mysql-community_5.7.15.orig.tar.gz 50539618 SHA256:9085353143bfda59c90aa959e79a35622a22aa592e710993416e193b37eb9956
+'http://repo.mysql.com/apt/debian/pool/mysql-5.7/m/mysql-community/mysql-community_5.7.15-1debian8.debian.tar.xz' mysql-community_5.7.15-1debian8.debian.tar.xz 79801368 SHA256:41592c985cd29d01189e21e9ed1c79879fd859f868fbe4fb9d92f65e96493234
+```
 
 ### `dpkg` source package: `ncurses=5.9+20140913-1`
 
