@@ -555,18 +555,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`, `/usr/share/doc/l
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0-1.dsc' gcc-6_6.2.0-1.dsc 26153 SHA256:9b4b78bf6a84c9723eccb59b811481d640bee49f0778fa627b186090d8d09a3e
-'http://httpredir.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0.orig.tar.gz' gcc-6_6.2.0.orig.tar.gz 82473068 SHA256:5c92f14fd520a90dceec8c76bbe400ab572bfb4095e332b73013d3cc59d0fda1
-'http://httpredir.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0-1.diff.gz' gcc-6_6.2.0-1.diff.gz 639139 SHA256:0e18322fc57e4310742c2485eaef036c146167998bf031222ee26a42e18d92a9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-6/6.2.0-1/
-- https://sources.debian.net/src/gcc-6/6.2.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.23-5`
 

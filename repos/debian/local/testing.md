@@ -69,17 +69,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```
-'http://httpredir.debian.org/debian/pool/main/a/apt/apt_1.3~rc2.dsc' apt_1.3~rc2.dsc 2531 SHA256:885bb48af3fa4d74a2f8cb66d8e8d63e516e1569595655a9d6032e7c4fe55cc3
-'http://httpredir.debian.org/debian/pool/main/a/apt/apt_1.3~rc2.tar.xz' apt_1.3~rc2.tar.xz 2033240 SHA256:96e63bd2d04bce992b81bff2d4887c05d1888fc3f9e9c85749934446755aa869
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.3~rc2/
-- https://sources.debian.net/src/apt/1.3~rc2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
