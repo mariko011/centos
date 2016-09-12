@@ -1,19 +1,19 @@
-## `websphere-liberty:kernel`
+## `websphere-liberty:microProfile`
 
 ```console
-$ docker pull websphere-liberty@sha256:fe36accb24a33c51b5b894a0fd81504fb4bde6c49585ab864baa7753a4f437a3
+$ docker pull websphere-liberty@sha256:b07686cabef01d307380f67baf10880fff5ad3ed7ab8a06925ea39ed83017622
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `websphere-liberty:kernel` - linux; amd64
+### `websphere-liberty:microProfile` - linux; amd64
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **175.1 MB (175103755 bytes)**  
+-	Total Size: **199.7 MB (199680862 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ebbbab3eb0c1c006d02ee38aec9734cdf14ab5bc3f24693bf1a9e3effc69d6f5`
+-	Image ID: `sha256:b9cf0d9124207595ff4cda67f4664083ff66dc580918c662db63ae02a88e1b46`
 -	Default Command: `["\/opt\/ibm\/docker\/docker-server","run","defaultServer"]`
 
 ```dockerfile
@@ -68,6 +68,13 @@ COPY file:53b1bf224098174489129fdc8fec40f8eb4b3d0bf09e3028796a285d9a3457f1 in /o
 EXPOSE 9080/tcp 9443/tcp
 # Mon, 12 Sep 2016 19:56:55 GMT
 CMD ["/opt/ibm/docker/docker-server" "run" "defaultServer"]
+# Mon, 12 Sep 2016 19:56:56 GMT
+ARG REPOSITORIES_PROPERTIES=
+# Mon, 12 Sep 2016 19:56:56 GMT
+COPY file:7e33ebe3d4cf699a812e91a3ed546388ac6e041f50a40239e60feef681e88583 in /config/ 
+# Mon, 12 Sep 2016 19:57:32 GMT
+# ARGS: REPOSITORIES_PROPERTIES=
+RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/     && echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties; fi     && installUtility install --acceptLicense     appSecurity-2.0 cdi-1.2 distributedMap-1.0 jaxrs-2.0 jaxrsClient-2.0 jndi-1.0 json-1.0 jsonp-1.0 localConnector-1.0 servlet-3.1 ssl-1.0     && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi     && rm -rf /output/workarea /output/logs
 ```
 
 -	Layers:
@@ -118,4 +125,12 @@ CMD ["/opt/ibm/docker/docker-server" "run" "defaultServer"]
 	-	`sha256:7b062e804f5f473c80d30403ea1de17b96becd9a5a7784f3ce6b2bc6da1f902f`  
 		Last Modified: Mon, 12 Sep 2016 20:00:41 GMT  
 		Size: 458.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:31a8c05d1ba0af8c8193dbc3e5456323459413d386d703284a03f9dc89c45393`  
+		Last Modified: Mon, 12 Sep 2016 20:00:56 GMT  
+		Size: 546.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a8d664e0770113994454640ddc1131747f786943896a1a6ef051161ebc1337c5`  
+		Last Modified: Mon, 12 Sep 2016 20:00:59 GMT  
+		Size: 24.6 MB (24576561 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
