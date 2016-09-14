@@ -1,9 +1,9 @@
-# `websphere-liberty:kernel`
+# `websphere-liberty:microProfile`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ebbbab3eb0c1c006d02ee38aec9734cdf14ab5bc3f24693bf1a9e3effc69d6f5`
-- Created: `2016-09-12T19:56:55.593849006Z`
+- Image ID: `sha256:b9cf0d9124207595ff4cda67f4664083ff66dc580918c662db63ae02a88e1b46`
+- Created: `2016-09-12T19:57:32.770092443Z`
 - Arch: `linux`/`amd64`
 - Command: `["/opt/ibm/docker/docker-server","run","defaultServer"]`
 - Environment:
