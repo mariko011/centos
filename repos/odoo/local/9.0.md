@@ -29,7 +29,8 @@ Licenses: (parsed from: `/usr/share/doc/acl/copyright`, `/usr/share/doc/libacl1/
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris acl=2.2.52-2
 'http://httpredir.debian.org/debian/pool/main/a/acl/acl_2.2.52-2.dsc' acl_2.2.52-2.dsc 2025 SHA256:015097e04740e84fefbe6c890d02c603f79edece45c51cbb5c18431647cd7aad
 'http://httpredir.debian.org/debian/pool/main/a/acl/acl_2.2.52.orig.tar.bz2' acl_2.2.52.orig.tar.bz2 312128 SHA256:59d05b38af76baf2eddccbf08c7968a17451cc785ffecc657fcb46ce32b2631d
 'http://httpredir.debian.org/debian/pool/main/a/acl/acl_2.2.52-2.debian.tar.xz' acl_2.2.52-2.debian.tar.xz 8524 SHA256:de81ec13cab6d33538db24a53c17838c5bdb32dd0e00e0b0b5d3325114e64e10
@@ -52,7 +53,8 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris adduser=3.113+nmu3
 'http://httpredir.debian.org/debian/pool/main/a/adduser/adduser_3.113+nmu3.dsc' adduser_3.113+nmu3.dsc 1733 SHA256:7f9fa8841080591834389fd56352e2d05ca3d86eb4df15d2f13bea9faf4a6f2d
 'http://httpredir.debian.org/debian/pool/main/a/adduser/adduser_3.113+nmu3.tar.gz' adduser_3.113+nmu3.tar.gz 342554 SHA256:02682be3f51f3e732121f20a3e4922bb8bef15cfacb8767fc250a01d09502122
 ```
@@ -79,7 +81,8 @@ Licenses: (parsed from: `/usr/share/doc/python-antlr/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris antlr=2.7.7+dfsg-6
 'http://httpredir.debian.org/debian/pool/main/a/antlr/antlr_2.7.7+dfsg-6.dsc' antlr_2.7.7+dfsg-6.dsc 2404 SHA256:52bd5564633dec6a4bad6479c39a01f20450d48f710cf446a3f78d55fe4dc009
 'http://httpredir.debian.org/debian/pool/main/a/antlr/antlr_2.7.7+dfsg.orig.tar.gz' antlr_2.7.7+dfsg.orig.tar.gz 1822765 SHA256:1a01f8080da10a93b3f3b78c70cc87893474111bd2d4e0fdb2cca2016b1a3771
 'http://httpredir.debian.org/debian/pool/main/a/antlr/antlr_2.7.7+dfsg-6.debian.tar.xz' antlr_2.7.7+dfsg-6.debian.tar.xz 13864 SHA256:fcd032025d7cc63e34b93751e70c39cd6c4c20e1330488f8be67740f15ccf175
@@ -104,7 +107,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris apt=1.0.9.8.3
 'http://httpredir.debian.org/debian/pool/main/a/apt/apt_1.0.9.8.3.dsc' apt_1.0.9.8.3.dsc 2343 SHA256:4c5f22ffe244e7e4471b1db137117efb13f43e29086c9b58eb5b1884bce55075
 'http://httpredir.debian.org/debian/pool/main/a/apt/apt_1.0.9.8.3.tar.xz' apt_1.0.9.8.3.tar.xz 1794824 SHA256:e78f6736b69621e2c55d0c81680a41a511a3f0c097f9ea8515611e0fcb651950
 ```
@@ -127,7 +131,8 @@ Licenses: (parsed from: `/usr/share/doc/libattr1/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris attr=1:2.4.47-2
 'http://httpredir.debian.org/debian/pool/main/a/attr/attr_2.4.47-2.dsc' attr_2.4.47-2.dsc 2027 SHA256:ee842d6d62d473acf02b494c432cf33128fa46455a09d3172c77c252449fa1a6
 'http://httpredir.debian.org/debian/pool/main/a/attr/attr_2.4.47.orig.tar.bz2' attr_2.4.47.orig.tar.bz2 281877 SHA256:6c1208035757f5ce9b516402dd45b8299a53ae4d69ad2c352116f9cb8d7bc274
 'http://httpredir.debian.org/debian/pool/main/a/attr/attr_2.4.47-2.debian.tar.xz' attr_2.4.47-2.debian.tar.xz 8096 SHA256:f65909562def601b1556393f5656032c058dc574ba622414ad3eb80c7b05a42a
@@ -152,7 +157,8 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris audit=1:2.4-1
 'http://httpredir.debian.org/debian/pool/main/a/audit/audit_2.4-1.dsc' audit_2.4-1.dsc 2068 SHA256:01d240bd783697b8ab4cd941f944612eebc81e1f535a8afb36b25ab3021cd15f
 'http://httpredir.debian.org/debian/pool/main/a/audit/audit_2.4.orig.tar.gz' audit_2.4.orig.tar.gz 937809 SHA256:6e5d39e7af9d00477ef60f824be8c93bd23a227869d6993ff36b7e7fa28fe99b
 'http://httpredir.debian.org/debian/pool/main/a/audit/audit_2.4-1.debian.tar.xz' audit_2.4-1.debian.tar.xz 15808 SHA256:c18c1b88c41f3b8be9e59d3041563599f822994cb10574ffc17f00f0a157c12c
@@ -175,7 +181,8 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris base-files=8+deb8u5
 'http://httpredir.debian.org/debian/pool/main/b/base-files/base-files_8+deb8u5.dsc' base-files_8+deb8u5.dsc 1040 SHA256:a1ce90475e0fd42608c0edee465a5f31e7db4e0a2027aaf479495af033ad7973
 'http://httpredir.debian.org/debian/pool/main/b/base-files/base-files_8+deb8u5.tar.xz' base-files_8+deb8u5.tar.xz 53176 SHA256:edab6afbc6ee8196252947095797e4fe9c69923cda0926691888c4d2d3b23316
 ```
@@ -198,7 +205,8 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris base-passwd=3.5.37
 'http://httpredir.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.37.dsc' base-passwd_3.5.37.dsc 1733 SHA256:211a49b6a3bbfdb61a91e9b5d9994c59d8a511a047c2cfc489c03c4c379d6cfe
 'http://httpredir.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.37.tar.xz' base-passwd_3.5.37.tar.xz 51392 SHA256:7cb1cdd8e4aee39b5f59a3dc42d63619590fc4a2136db482fdb6be6e74bb3d04
 ```
@@ -220,7 +228,8 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris bash=4.3-11
 'http://httpredir.debian.org/debian/pool/main/b/bash/bash_4.3-11.dsc' bash_4.3-11.dsc 1540 SHA256:81394eb07c09c244e5d01c6be19e69fc60153575f11923cb10ea1ed87b71ce5b
 'http://httpredir.debian.org/debian/pool/main/b/bash/bash_4.3.orig.tar.gz' bash_4.3.orig.tar.gz 7516231 SHA256:b2fe79ddf9e7abdb4695e3070afa866d2a94a58d1cc9d731585330c753815491
 'http://httpredir.debian.org/debian/pool/main/b/bash/bash_4.3-11.debian.tar.xz' bash_4.3-11.debian.tar.xz 78732 SHA256:e042d5be5df8df339a516290bb27b1cdf027cbba0bd6c695e62f6782b4d72dba
@@ -243,7 +252,8 @@ Licenses: (parsed from: `/usr/share/doc/libbz2-1.0/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris bzip2=1.0.6-7
 'http://httpredir.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.6-7.dsc' bzip2_1.0.6-7.dsc 2261 SHA256:098b7e38d1d634fc361847602bf85753dadeca121b9531f6dba2614b16e0637c
 'http://httpredir.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.6.orig.tar.bz2' bzip2_1.0.6.orig.tar.bz2 708737 SHA256:d70a9ccd8bdf47e302d96c69fecd54925f45d9c7b966bb4ef5f56b770960afa7
 'http://httpredir.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.6-7.debian.tar.bz2' bzip2_1.0.6-7.debian.tar.bz2 59542 SHA256:17e030ccb2908d15553c1510869e09d8ef41b5f8e72c7c65d1d5503396a5bd3a
@@ -266,7 +276,8 @@ Licenses: (parsed from: `/usr/share/doc/libc-ares2/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris c-ares=1.10.0-2
 'http://httpredir.debian.org/debian/pool/main/c/c-ares/c-ares_1.10.0-2.dsc' c-ares_1.10.0-2.dsc 1948 SHA256:bad707c795ac05cabbb6d564008bfe7c6775b82cb3cd9902685239915a2b97f2
 'http://httpredir.debian.org/debian/pool/main/c/c-ares/c-ares_1.10.0.orig.tar.gz' c-ares_1.10.0.orig.tar.gz 809073 SHA256:3d701674615d1158e56a59aaede7891f2dde3da0f46a6d3c684e0ae70f52d3db
 'http://httpredir.debian.org/debian/pool/main/c/c-ares/c-ares_1.10.0-2.debian.tar.gz' c-ares_1.10.0-2.debian.tar.gz 5295 SHA256:aef89b3b5bb7f1aae8332eea2f04930badb47f4e3582ec4dac9ba71256d8299a
@@ -291,7 +302,8 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris ca-certificates=20141019+deb8u1
 'http://httpredir.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20141019+deb8u1.dsc' ca-certificates_20141019+deb8u1.dsc 1433 SHA256:d1f91f7a31060dae8611347b31c1afca8f7afe600f4b7adefcb966d80f60368a
 'http://httpredir.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20141019+deb8u1.tar.xz' ca-certificates_20141019+deb8u1.tar.xz 295128 SHA256:2066818ba8214001053c8889f409d062826cb37971723e1067cb1a830df8b18a
 ```
@@ -313,7 +325,8 @@ Licenses: (parsed from: `/usr/share/doc/libcairo2/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris cairo=1.14.0-2.1+deb8u1
 'http://httpredir.debian.org/debian/pool/main/c/cairo/cairo_1.14.0-2.1+deb8u1.dsc' cairo_1.14.0-2.1+deb8u1.dsc 2900 SHA256:922f113d5d1127f6a4862ba0d24926355c14ea402f63f6c5a18eb0b5aedb0f00
 'http://httpredir.debian.org/debian/pool/main/c/cairo/cairo_1.14.0.orig.tar.xz' cairo_1.14.0.orig.tar.xz 36584076 SHA256:2cf5f81432e77ea4359af9dcd0f4faf37d015934501391c311bfd2d19a0134b7
 'http://httpredir.debian.org/debian/pool/main/c/cairo/cairo_1.14.0-2.1+deb8u1.debian.tar.xz' cairo_1.14.0-2.1+deb8u1.debian.tar.xz 30948 SHA256:242ab7b131e6424761459048516db858060cb9feb2ecde58153baf3e9c6e1287
@@ -336,7 +349,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris cdebconf=0.192
 'http://httpredir.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.192.dsc' cdebconf_0.192.dsc 2574 SHA256:85d39068de77c67036b6e2ca5ebdf3990e19a6c5b0f01422608ff7656c166dbd
 'http://httpredir.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.192.tar.xz' cdebconf_0.192.tar.xz 266320 SHA256:bb09e6c04b514dd12684dbc6eacde57fb03e282f67f0199e67078c13ffffd667
 ```
@@ -359,7 +373,8 @@ Licenses: (parsed from: `/usr/share/doc/python-chardet/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris chardet=2.3.0-1
 'http://httpredir.debian.org/debian/pool/main/c/chardet/chardet_2.3.0-1.dsc' chardet_2.3.0-1.dsc 2264 SHA256:dd7fcd88d4ef2a8191c2e973ae769c0dfac0c32b7f395aa6680a3a04dc2f4ea3
 'http://httpredir.debian.org/debian/pool/main/c/chardet/chardet_2.3.0.orig.tar.gz' chardet_2.3.0.orig.tar.gz 164346 SHA256:e53e38b3a4afe6d1132de62b7400a4ac363452dc5dfcf8d88e8e0cce663c68aa
 'http://httpredir.debian.org/debian/pool/main/c/chardet/chardet_2.3.0-1.debian.tar.xz' chardet_2.3.0-1.debian.tar.xz 3724 SHA256:0879f30586f26af7d512a3b12bd5740e80c55c2b3360bd8390596750f5028f91
@@ -382,7 +397,8 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris coreutils=8.23-4
 'http://httpredir.debian.org/debian/pool/main/c/coreutils/coreutils_8.23-4.dsc' coreutils_8.23-4.dsc 1942 SHA256:280ace2d2f1740c2319338e96da6b5000b9e65ddb9549c772917123633afe772
 'http://httpredir.debian.org/debian/pool/main/c/coreutils/coreutils_8.23.orig.tar.gz' coreutils_8.23.orig.tar.gz 12582141 SHA256:d606551dccd8c4ed079d7aa8d74af152b1d16215cae763d86b40b26fdbde9c73
 'http://httpredir.debian.org/debian/pool/main/c/coreutils/coreutils_8.23-4.diff.gz' coreutils_8.23-4.diff.gz 48759 SHA256:19ab6ff1b82f29e8a8f8107f925eec91b1eaad53b690f2d7154ab07101bf8c01
@@ -406,7 +422,8 @@ Licenses: (parsed from: `/usr/share/doc/libcryptsetup4/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris cryptsetup=2:1.6.6-5
 'http://httpredir.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_1.6.6-5.dsc' cryptsetup_1.6.6-5.dsc 2624 SHA256:f7582c8becb38fecaed22aa531bd748dee2ebdbdac64e00c7e39e45afe7eaae1
 'http://httpredir.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_1.6.6.orig.tar.xz' cryptsetup_1.6.6.orig.tar.xz 1145940 SHA256:2d2ce28e4e1137dd599d87884b62ef6dbf14fd7848b2a2bf7d61cf125fbd8e6f
 'http://httpredir.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_1.6.6-5.debian.tar.xz' cryptsetup_1.6.6-5.debian.tar.xz 82944 SHA256:fa12da2f5448e0b02e1e5c89357de3749f854b2b96441f9c56737766c11cded0
@@ -433,7 +450,8 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u3
 'http://httpredir.debian.org/debian/pool/main/c/curl/curl_7.38.0-4+deb8u3.dsc' curl_7.38.0-4+deb8u3.dsc 2655 SHA256:ff078bf3a2491118aa042b824fd28a0482a2e2b1fae14a69377dd6f368f4bfd1
 'http://httpredir.debian.org/debian/pool/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
 'http://httpredir.debian.org/debian/pool/main/c/curl/curl_7.38.0-4+deb8u3.debian.tar.xz' curl_7.38.0-4+deb8u3.debian.tar.xz 33672 SHA256:4fabe8fcc105f370fd245bf6d4d4f66c51057e39f7a46369e2e4e4781e24c02f
@@ -462,7 +480,8 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris cyrus-sasl2=2.1.26.dfsg1-13+deb8u1
 'http://httpredir.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.dsc' cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.dsc 3461 SHA256:ed1cba2b699aaf1ad08b99ea82d40c583c02817f6fbd765b9bbcd940d72fc3f3
 'http://httpredir.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1.orig.tar.gz' cyrus-sasl2_2.1.26.dfsg1.orig.tar.gz 1494337 SHA256:172c39555012f479543ce7305949db75df708771fe8f8b34248027f09e53bb85
 'http://httpredir.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.debian.tar.xz' cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.debian.tar.xz 94284 SHA256:14e00798c41b6fae965211f1af8b47a67d22001146d0019f81af0fc7be9f162f
@@ -485,7 +504,8 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris dash=0.5.7-4
 'http://httpredir.debian.org/debian/pool/main/d/dash/dash_0.5.7-4.dsc' dash_0.5.7-4.dsc 1105 SHA256:c77f4baef8cbdc105a783bf6e4d3253ae10671ad98c27bf8537c8c731f073310
 'http://httpredir.debian.org/debian/pool/main/d/dash/dash_0.5.7.orig.tar.gz' dash_0.5.7.orig.tar.gz 223794 SHA256:ae89fa9f1145b7748cf0740e1df04cd52fdf8a285da4911dd0f04983efba4e39
 'http://httpredir.debian.org/debian/pool/main/d/dash/dash_0.5.7-4.diff.gz' dash_0.5.7-4.diff.gz 42834 SHA256:649d97aa0c48dc0db73c08d7e89a004b9d413279a823388161940342016284f0
@@ -508,7 +528,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris db5.3=5.3.28-9
 'http://httpredir.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28-9.dsc' db5.3_5.3.28-9.dsc 3166 SHA256:0020cd1491a10a2bfc7a125eb5f3a4db3745387e2d5f8f8f079be27ddfbdcf05
 'http://httpredir.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28.orig.tar.xz' db5.3_5.3.28.orig.tar.xz 24154920 SHA256:e1f85c8b6ebd0ed3ca72fa0ae97b65006f6d0bd0cd6f4ac24bed103cb5497bf5
 'http://httpredir.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28-9.debian.tar.xz' db5.3_5.3.28-9.debian.tar.xz 27664 SHA256:62adde71eda43c1300cdff51118721cef03dbc4bbe219f2669db5dcd90278ac3
@@ -532,7 +553,8 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`, `/usr/share/doc/debc
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris debconf=1.5.56
 'http://httpredir.debian.org/debian/pool/main/d/debconf/debconf_1.5.56.dsc' debconf_1.5.56.dsc 1977 SHA256:584e73f5a84791f4b25ac0bcb65dd5a63de10e5398d986cb005597566fd23ca4
 'http://httpredir.debian.org/debian/pool/main/d/debconf/debconf_1.5.56.tar.gz' debconf_1.5.56.tar.gz 1004238 SHA256:e8371becb1ad91b69b0f2b2e580d30a0a4c63b4c2803dea2fb8e3136b662bfa5
 ```
@@ -554,7 +576,8 @@ Licenses: (parsed from: `/usr/share/doc/debian-archive-keyring/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris debian-archive-keyring=2014.3
 'http://httpredir.debian.org/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2014.3.dsc' debian-archive-keyring_2014.3.dsc 1597 SHA256:2a3e604f936b8fbaf1beeea0a7611a1a88cacffd26571df4cc58c16ecefa362a
 'http://httpredir.debian.org/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2014.3.tar.xz' debian-archive-keyring_2014.3.tar.xz 61380 SHA256:46be978ec2f72b0277d9e71bda30ea1b2b9aa00b1952cb35e8b22a2c016f5e22
 ```
@@ -576,7 +599,8 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris debianutils=4.4
 'http://httpredir.debian.org/debian/pool/main/d/debianutils/debianutils_4.4.dsc' debianutils_4.4.dsc 1560 SHA256:e365ad42af528f46eb117ef244216aaf265372f2b92635b28452a8f0d981bb17
 'http://httpredir.debian.org/debian/pool/main/d/debianutils/debianutils_4.4.tar.gz' debianutils_4.4.tar.gz 272098 SHA256:190850cdd6b5302e0a1ba1aaed1bc7074d67d3bd8d04c613f242f7145afa53a6
 ```
@@ -599,7 +623,8 @@ Licenses: (parsed from: `/usr/share/doc/diffutils/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris diffutils=1:3.3-1
 'http://httpredir.debian.org/debian/pool/main/d/diffutils/diffutils_3.3-1.dsc' diffutils_3.3-1.dsc 1427 SHA256:72df1fed003b47509a063dfa8aa89108c884cd3bf52a06ce40e1ffb61f5a256c
 'http://httpredir.debian.org/debian/pool/main/d/diffutils/diffutils_3.3.orig.tar.xz' diffutils_3.3.orig.tar.xz 1197832 SHA256:a25e89a8ab65fded1731e4186be1bb25cda967834b6df973599cdcd5abdfc19c
 'http://httpredir.debian.org/debian/pool/main/d/diffutils/diffutils_3.3-1.debian.tar.gz' diffutils_3.3-1.debian.tar.gz 10584 SHA256:23765ea43cd1b4e5e504ce0984a16e27d5c01e9272cba489ebbebd217f227fc7
@@ -625,7 +650,8 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris dpkg=1.17.27
 'http://httpredir.debian.org/debian/pool/main/d/dpkg/dpkg_1.17.27.dsc' dpkg_1.17.27.dsc 2018 SHA256:730ad9445990322551acf79a752515d27ffca5c8b6d978b3276d28e88d60e34f
 'http://httpredir.debian.org/debian/pool/main/d/dpkg/dpkg_1.17.27.tar.xz' dpkg_1.17.27.tar.xz 4413092 SHA256:90749c31b9f1fceb46dd9fab5b50de34272efef333cc16d9e144f514fd944bb6
 ```
@@ -651,7 +677,8 @@ Licenses: (parsed from: `/usr/share/doc/e2fslibs/copyright`, `/usr/share/doc/e2f
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris e2fsprogs=1.42.12-1.1
 'http://httpredir.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.42.12-1.1.dsc' e2fsprogs_1.42.12-1.1.dsc 3248 SHA256:33c85f83658ceab06e34ff13c9fa94c67ebfa8f53d2f0efab85c443c41de7039
 'http://httpredir.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.42.12.orig.tar.gz' e2fsprogs_1.42.12.orig.tar.gz 6381695 SHA256:e17846d91a0edd89fa59b064bde8f8e5cec5851e35f587bcccb4014dbd63186c
 'http://httpredir.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.42.12-1.1.debian.tar.xz' e2fsprogs_1.42.12-1.1.debian.tar.xz 65312 SHA256:f3d340f7cc76a4999297399b49e11ab29b8e4c4337c82c9afc60d2d4a340d106
@@ -674,7 +701,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris expat=2.1.0-6+deb8u3
 'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-6+deb8u3.dsc' expat_2.1.0-6+deb8u3.dsc 2278 SHA256:3485be5c4ffc922aea14718c48c4107b04559ec013cc0e98a61597da50320e25
 'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
 'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-6+deb8u3.debian.tar.xz' expat_2.1.0-6+deb8u3.debian.tar.xz 21716 SHA256:5e756a68a7634b7b7109024bd33df4df3c5964ea0d0f5e8db0ca98f623bcd841
@@ -698,7 +726,8 @@ Licenses: (parsed from: `/usr/share/doc/python-feedparser/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris feedparser=5.1.3-3
 'http://httpredir.debian.org/debian/pool/main/f/feedparser/feedparser_5.1.3-3.dsc' feedparser_5.1.3-3.dsc 2114 SHA256:888e58aa36581a44679eabb1a6ed6d4f9499b6b89a43c6c71550de90be193f56
 'http://httpredir.debian.org/debian/pool/main/f/feedparser/feedparser_5.1.3.orig.tar.gz' feedparser_5.1.3.orig.tar.gz 283614 SHA256:ad543639e89d43685e2f1d3b6e48711562eec3be379e6958a920fbeaf4c63bce
 'http://httpredir.debian.org/debian/pool/main/f/feedparser/feedparser_5.1.3-3.debian.tar.xz' feedparser_5.1.3-3.debian.tar.xz 6984 SHA256:f67b1d33c420fccab6c8dae453110c7ab393b1ca33f070dee1121ff32a9374cf
@@ -722,7 +751,8 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris findutils=4.4.2-9
 'http://httpredir.debian.org/debian/pool/main/f/findutils/findutils_4.4.2-9.dsc' findutils_4.4.2-9.dsc 1996 SHA256:0dd9d96af8260d2e81c5819d2e5536f95cb894e771c9adcab44ba70726adb13e
 'http://httpredir.debian.org/debian/pool/main/f/findutils/findutils_4.4.2.orig.tar.gz' findutils_4.4.2.orig.tar.gz 2149838 SHA256:434f32d171cbc0a5e72cfc5372c6fc4cb0e681f8dce566a0de5b6fccd702b62a
 'http://httpredir.debian.org/debian/pool/main/f/findutils/findutils_4.4.2-9.debian.tar.xz' findutils_4.4.2-9.debian.tar.xz 27384 SHA256:8a9f5fb20c255b833994d7dfff1999b3f4f95dea6008495f2b0ef6c549d62c34
@@ -747,7 +777,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris fontconfig=2.11.0-6.3
 'http://httpredir.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.11.0-6.3.dsc' fontconfig_2.11.0-6.3.dsc 2207 SHA256:e68538738aa0116675721840b2b16e7b121080554ce3a638823a46b3fba706bf
 'http://httpredir.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.11.0.orig.tar.xz' fontconfig_2.11.0.orig.tar.xz 319652 SHA256:f19c7366d59dc4e79eaf3eedabd44b6375b238f29316db5020a183c7d9a78db9
 'http://httpredir.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.11.0-6.3.debian.tar.xz' fontconfig_2.11.0-6.3.debian.tar.xz 1071060 SHA256:52ce90b8a6af768256100628a4aad458030eb73524f40573080959241ecdc967
@@ -771,7 +802,8 @@ Licenses: (parsed from: `/usr/share/doc/fonts-dejavu-core/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris fonts-dejavu=2.34-1
 'http://httpredir.debian.org/debian/pool/main/f/fonts-dejavu/fonts-dejavu_2.34-1.dsc' fonts-dejavu_2.34-1.dsc 2484 SHA256:843b22fff349667b83f66cf3ab2e93a187ff016f4bd90fbfbe9001bf82a9d66d
 'http://httpredir.debian.org/debian/pool/main/f/fonts-dejavu/fonts-dejavu_2.34.orig.tar.bz2' fonts-dejavu_2.34.orig.tar.bz2 11329547 SHA256:b5ca9e671635a9fe04c791cdc82c707ba57380c2cc8de3f92451a039134b9027
 'http://httpredir.debian.org/debian/pool/main/f/fonts-dejavu/fonts-dejavu_2.34-1.debian.tar.gz' fonts-dejavu_2.34-1.debian.tar.gz 11231 SHA256:46044164bdc385037a1694a07e8c5a1c183511cb68743914219ebb93750dac19
@@ -801,7 +833,8 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris freetype=2.5.2-3+deb8u1
 'http://httpredir.debian.org/debian/pool/main/f/freetype/freetype_2.5.2-3+deb8u1.dsc' freetype_2.5.2-3+deb8u1.dsc 2096 SHA256:a56cdf04463a7d9b13c1a2fd1c257b9626f28516efc7243fd2ee34eae2f14a13
 'http://httpredir.debian.org/debian/pool/main/f/freetype/freetype_2.5.2.orig.tar.gz' freetype_2.5.2.orig.tar.gz 1971155 SHA256:5fda4996e43cfdf9b602a0eb5abde014f1a3c3b2d82bbb9b86942011c63f5c3a
 'http://httpredir.debian.org/debian/pool/main/f/freetype/freetype_2.5.2-3+deb8u1.diff.gz' freetype_2.5.2-3+deb8u1.diff.gz 68796 SHA256:196918fc99a74441d7f7e6e85133b0ba7d6b85b2d5b5cd764fc32edd7dd97923
@@ -828,7 +861,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-4.8-base/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris gcc-4.8=4.8.4-1
 'http://httpredir.debian.org/debian/pool/main/g/gcc-4.8/gcc-4.8_4.8.4-1.dsc' gcc-4.8_4.8.4-1.dsc 10638 SHA256:9ba284727055aba04bb3122ef7f857587a403a5c9a2f924948829da49ca2ef02
 'http://httpredir.debian.org/debian/pool/main/g/gcc-4.8/gcc-4.8_4.8.4-1.tar.gz' gcc-4.8_4.8.4-1.tar.gz 187653934 SHA256:c38d9687b6fef3010f250adaf89a3f1bd0f12c9cd82ed531a52e7d394b8226cf
 ```
@@ -856,7 +890,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-4.9-base/copyright`, `/usr/share/doc
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris gcc-4.9=4.9.2-10
 'http://httpredir.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2-10.dsc' gcc-4.9_4.9.2-10.dsc 19222 SHA256:591b7db6bd972dd1a7b99953e367a89f859deb3a13efa8531034c2ab568314b1
 'http://httpredir.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2.orig.tar.gz' gcc-4.9_4.9.2.orig.tar.gz 73565212 SHA256:861aa811d5f9e9ecf32d8195d2346fc434eba7e17330878ed3d876c49a32ec4e
 'http://httpredir.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2-10.diff.gz' gcc-4.9_4.9.2-10.diff.gz 848893 SHA256:7e566640487ea9456186656848bfc1e43242ed448766ed3553b79fee16d25edb
@@ -879,7 +914,8 @@ Licenses: (parsed from: `/usr/share/doc/libgdbm3/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris gdbm=1.8.3-13.1
 'http://httpredir.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3-13.1.dsc' gdbm_1.8.3-13.1.dsc 1830 SHA256:b1d8bef30edc491315c337930cbe2b61f44f55035adfc26ae945bab5ca57d5c9
 'http://httpredir.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3.orig.tar.bz2' gdbm_1.8.3.orig.tar.bz2 172796 SHA256:1d5995b6e9e6be4ff62c8126d019f184a083dd8e6f75f6c74b9fe023b5b9440e
 'http://httpredir.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3-13.1.debian.tar.xz' gdbm_1.8.3-13.1.debian.tar.xz 14748 SHA256:251401e1f5210226f384e936b1b7ea1df40119a918d9f3dbf48b2e51d4df8983
@@ -902,7 +938,8 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris glib2.0=2.42.1-1
 'http://httpredir.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.42.1-1.dsc' glib2.0_2.42.1-1.dsc 3119 SHA256:61b01cb94e8bb8b9fdd1799b2e1bed907371dc45d364beec4b79a129745f588f
 'http://httpredir.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.42.1.orig.tar.xz' glib2.0_2.42.1.orig.tar.xz 6985120 SHA256:8f3f0865280e45b8ce840e176ef83bcfd511148918cc8d39df2ee89b67dcf89a
 'http://httpredir.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.42.1-1.debian.tar.xz' glib2.0_2.42.1-1.debian.tar.xz 68072 SHA256:1cd368c2bce6100c07b8a07ff7f3f38572679d88563356b8784560606fcfac56
@@ -928,7 +965,8 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris glibc=2.19-18+deb8u4
 'http://httpredir.debian.org/debian/pool/main/g/glibc/glibc_2.19-18+deb8u4.dsc' glibc_2.19-18+deb8u4.dsc 8238 SHA256:facc6d2a13d53176d5e2c01f369e5c17c4218f9c9c45fab746d85b2f38c0c58a
 'http://httpredir.debian.org/debian/pool/main/g/glibc/glibc_2.19.orig.tar.xz' glibc_2.19.orig.tar.xz 12387008 SHA256:746e52bb4fc9b2f30bcd33d415172a40ab56c5fff6c494052d31b0795593cc60
 'http://httpredir.debian.org/debian/pool/main/g/glibc/glibc_2.19-18+deb8u4.debian.tar.xz' glibc_2.19-18+deb8u4.debian.tar.xz 1043764 SHA256:4272638e963894dbdd1afb88f4154715049a0843f4f6cdcf6bade5bc7f85ef1a
@@ -954,7 +992,8 @@ Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris gmp=2:6.0.0+dfsg-6
 'http://httpredir.debian.org/debian/pool/main/g/gmp/gmp_6.0.0+dfsg-6.dsc' gmp_6.0.0+dfsg-6.dsc 1840 SHA256:40f44bfae4ed9df69a8c64fe9bf9deded10cc4a75844c95bbfbfc3307976f53a
 'http://httpredir.debian.org/debian/pool/main/g/gmp/gmp_6.0.0+dfsg.orig.tar.xz' gmp_6.0.0+dfsg.orig.tar.xz 1756792 SHA256:7539e094815fc321f4dc64b0a6968db9e1bee85a459bc64d4cc2b9dd0f6729a5
 'http://httpredir.debian.org/debian/pool/main/g/gmp/gmp_6.0.0+dfsg-6.debian.tar.xz' gmp_6.0.0+dfsg-6.debian.tar.xz 21024 SHA256:83219073eab9fb886dd1123b6b571b45fbe2f7c290c4201b07696784ffcf7fd1
@@ -980,7 +1019,8 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/c
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris gnupg=1.4.18-7+deb8u1
 'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18-7+deb8u1.dsc' gnupg_1.4.18-7+deb8u1.dsc 2552 SHA256:58f647fa1328b20bb32172b10a777f60226d119f799191a4d53172469e4f0f1d
 'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18.orig.tar.gz' gnupg_1.4.18.orig.tar.gz 5047888 SHA256:10a8936b76ccadb98521535b5f41cc5b41b3c159a6c2915f062bd4dc8ac12d12
 'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18-7+deb8u1.debian.tar.xz' gnupg_1.4.18-7+deb8u1.debian.tar.xz 298856 SHA256:883aa0dbaf494661d1a64a456505b60ae6233e9fb8ae8a1fca5efc71199fc1db
@@ -1011,7 +1051,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls-deb0-28/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris gnutls28=3.3.8-6+deb8u3
 'http://httpredir.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.3.8-6+deb8u3.dsc' gnutls28_3.3.8-6+deb8u3.dsc 2941 SHA256:5c1cd78b2eb4547377ef5c0894de48945265251dbdca2303526cef894e77e46d
 'http://httpredir.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.3.8.orig.tar.xz' gnutls28_3.3.8.orig.tar.xz 6153180 SHA256:bd4642f180e19632f4ed3a1e62d60c824c7b695f5cddf41a8fba1b272eaef046
 'http://httpredir.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.3.8-6+deb8u3.debian.tar.xz' gnutls28_3.3.8-6+deb8u3.debian.tar.xz 95104 SHA256:fe56f1f7a79b855577a5539202408e91a5a7a57095751550d983368cc0c08f8d
@@ -1042,7 +1083,8 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris graphite2=1.3.6-1~deb8u1
 'http://httpredir.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.6-1~deb8u1.dsc' graphite2_1.3.6-1~deb8u1.dsc 2173 SHA256:efb076e920bf14c190af776076711d1e3ea35ea55046cec43e48afbdbc647efc
 'http://httpredir.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.6.orig.tar.gz' graphite2_1.3.6.orig.tar.gz 3881106 SHA256:475e7657ac606ed8805518031729c1273cf7d9d422169ac6f7882e01d832af75
 'http://httpredir.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.6-1~deb8u1.debian.tar.xz' graphite2_1.3.6-1~deb8u1.debian.tar.xz 9664 SHA256:200c6dc8b54801dbc0080a857c00ef8856ab5bd36624c8d3918d00efd779ff4d
@@ -1072,7 +1114,8 @@ Licenses: (parsed from: `/usr/share/doc/graphviz/copyright`, `/usr/share/doc/lib
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris graphviz=2.38.0-7
 'http://httpredir.debian.org/debian/pool/main/g/graphviz/graphviz_2.38.0-7.dsc' graphviz_2.38.0-7.dsc 3266 SHA256:62883ac0dd3915c6cf67cda5cadd8c6423314c004bd791b781618d8743674bdc
 'http://httpredir.debian.org/debian/pool/main/g/graphviz/graphviz_2.38.0.orig.tar.gz' graphviz_2.38.0.orig.tar.gz 25848858 SHA256:81aa238d9d4a010afa73a9d2a704fc3221c731e1e06577c2ab3496bdef67859e
 'http://httpredir.debian.org/debian/pool/main/g/graphviz/graphviz_2.38.0-7.debian.tar.xz' graphviz_2.38.0-7.debian.tar.xz 44120 SHA256:312ab8215fbe1800664675cfc284aecfeff3ce699407523b5bdefee64cf1a53c
@@ -1096,7 +1139,8 @@ Licenses: (parsed from: `/usr/share/doc/grep/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris grep=2.20-4.1
 'http://httpredir.debian.org/debian/pool/main/g/grep/grep_2.20-4.1.dsc' grep_2.20-4.1.dsc 2627 SHA256:62ae6c19839e940462d27b2a234e925210cdb9209e2a4080b695fcec439c1d04
 'http://httpredir.debian.org/debian/pool/main/g/grep/grep_2.20.orig.tar.xz' grep_2.20.orig.tar.xz 1237196 SHA256:f0af452bc0d09464b6d089b6d56a0a3c16672e9ed9118fbe37b0b6aeaf069a65
 'http://httpredir.debian.org/debian/pool/main/g/grep/grep_2.20-4.1.debian.tar.bz2' grep_2.20-4.1.debian.tar.bz2 113054 SHA256:4aa8c4487d05dc82498668deeb485a9d4891a74df29466adf74e2faf738d2917
@@ -1119,7 +1163,8 @@ Licenses: (parsed from: `/usr/share/doc/gsfonts/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris gsfonts=1:8.11+urwcyr1.0.7~pre44-4.2
 'http://httpredir.debian.org/debian/pool/main/g/gsfonts/gsfonts_8.11+urwcyr1.0.7~pre44-4.2.dsc' gsfonts_8.11+urwcyr1.0.7~pre44-4.2.dsc 1946 SHA256:5316aab0893213fe29d108258854374b8c23eb9350a61f5ed1bccfe3bd8da51e
 'http://httpredir.debian.org/debian/pool/main/g/gsfonts/gsfonts_8.11+urwcyr1.0.7~pre44.orig.tar.gz' gsfonts_8.11+urwcyr1.0.7~pre44.orig.tar.gz 3390551 SHA256:9f2a598998bf05e023546ac981aa2a857aa1635d2e0e3020a3c3004ad564dc00
 'http://httpredir.debian.org/debian/pool/main/g/gsfonts/gsfonts_8.11+urwcyr1.0.7~pre44-4.2.diff.gz' gsfonts_8.11+urwcyr1.0.7~pre44-4.2.diff.gz 6683 SHA256:d9aee6ccaf3da1c3511538186ad8931bcf328078af918377220ebcee71463a50
@@ -1142,7 +1187,8 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris gzip=1.6-4
 'http://httpredir.debian.org/debian/pool/main/g/gzip/gzip_1.6-4.dsc' gzip_1.6-4.dsc 1853 SHA256:9605bb67aa336e3f1dd68429fa713a80dff3439d67f944160895b14c98503147
 'http://httpredir.debian.org/debian/pool/main/g/gzip/gzip_1.6.orig.tar.gz' gzip_1.6.orig.tar.gz 1074924 SHA256:97eb83b763d9e5ad35f351fe5517e6b71521d7aac7acf3e3cacdb6b1496d8f7e
 'http://httpredir.debian.org/debian/pool/main/g/gzip/gzip_1.6-4.debian.tar.xz' gzip_1.6-4.debian.tar.xz 14476 SHA256:20a474283cc0063de7db623ccc3b17da7df6bc15f681de4e9e1da12b990a2743
@@ -1165,7 +1211,8 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris harfbuzz=0.9.35-2
 'http://httpredir.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_0.9.35-2.dsc' harfbuzz_0.9.35-2.dsc 2303 SHA256:6e9428c29ecbb4beeb186a00121fda23362eebb4d389eb6f24f398cef1e1b9ec
 'http://httpredir.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_0.9.35.orig.tar.bz2' harfbuzz_0.9.35.orig.tar.bz2 1165359 SHA256:0aa1a8aba6f502321cf6fef3c9d2c73dde48389c5ed1d3615a7691944c2a06ed
 'http://httpredir.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_0.9.35-2.debian.tar.xz' harfbuzz_0.9.35-2.debian.tar.xz 7440 SHA256:a51eef8e3a9565865fc10d19fcd0d8d5be421a715f3f1445a9015274a8778532
@@ -1188,7 +1235,8 @@ Licenses: (parsed from: `/usr/share/doc/hostname/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris hostname=3.15
 'http://httpredir.debian.org/debian/pool/main/h/hostname/hostname_3.15.dsc' hostname_3.15.dsc 804 SHA256:e787dec3ac9ee20ff564d6d7afde242103e71830907ee8fa63367162b04e9844
 'http://httpredir.debian.org/debian/pool/main/h/hostname/hostname_3.15.tar.gz' hostname_3.15.tar.gz 13039 SHA256:b6d10114ed14306b21745d2cac1b9adf7a2546f16b9fd719bec14bd7cec61d20
 ```
@@ -1216,7 +1264,8 @@ Licenses: (parsed from: `/usr/share/doc/inetutils-ping/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris inetutils=2:1.9.2.39.3a460-3
 'http://httpredir.debian.org/debian/pool/main/i/inetutils/inetutils_1.9.2.39.3a460-3.dsc' inetutils_1.9.2.39.3a460-3.dsc 2700 SHA256:021a37cd7a0f71452f02390ee449974892b88b07605ec73b1393138950c2783a
 'http://httpredir.debian.org/debian/pool/main/i/inetutils/inetutils_1.9.2.39.3a460.orig.tar.xz' inetutils_1.9.2.39.3a460.orig.tar.xz 1337612 SHA256:b24c6ebe9c4a3ae10d421c4b59cc173fc72ea9cddf03386553c3740d247d0865
 'http://httpredir.debian.org/debian/pool/main/i/inetutils/inetutils_1.9.2.39.3a460-3.debian.tar.xz' inetutils_1.9.2.39.3a460-3.debian.tar.xz 75536 SHA256:496fbacdb8b0aad5669a55ac04cbd0f7eefe03227e2fc9e140f4f676116e7ef6
@@ -1241,7 +1290,8 @@ Licenses: (parsed from: `/usr/share/doc/init/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris init-system-helpers=1.22
 'http://httpredir.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.22.dsc' init-system-helpers_1.22.dsc 1880 SHA256:f2ba7e0e1804b56d9c2967ed60be92274619068d7d3894c2dc750f31dbb0ff25
 'http://httpredir.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.22.tar.xz' init-system-helpers_1.22.tar.xz 30728 SHA256:4f64b9fd86f2c68a3996903e03d6024d73f637ff8a06f1bd4f73bedcf8154124
 ```
@@ -1263,7 +1313,8 @@ Licenses: (parsed from: `/usr/share/doc/insserv/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris insserv=1.14.0-5
 'http://httpredir.debian.org/debian/pool/main/i/insserv/insserv_1.14.0-5.dsc' insserv_1.14.0-5.dsc 1947 SHA256:183dbcd57db6061d61e781197231275fe49c321f6600ec147546d5c24a8ba021
 'http://httpredir.debian.org/debian/pool/main/i/insserv/insserv_1.14.0.orig.tar.gz' insserv_1.14.0.orig.tar.gz 53851 SHA256:da74dcf5225a00aa8aef4d5afc6a20e009b2ed9af328dabd55fef1cb3a32140e
 'http://httpredir.debian.org/debian/pool/main/i/insserv/insserv_1.14.0-5.debian.tar.gz' insserv_1.14.0-5.debian.tar.gz 53943 SHA256:496a3ece3cf4b53ff19f45eeffab6b5a7714785d1db524087c9cbe9cbdd88b2a
@@ -1286,7 +1337,8 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris iproute2=3.16.0-2
 'http://httpredir.debian.org/debian/pool/main/i/iproute2/iproute2_3.16.0-2.dsc' iproute2_3.16.0-2.dsc 1693 SHA256:dd657e1707a85c7a15a3a2ba17e3e02fbf133aac4513ed86e4d8b1d6e4cd6a45
 'http://httpredir.debian.org/debian/pool/main/i/iproute2/iproute2_3.16.0.orig.tar.xz' iproute2_3.16.0.orig.tar.xz 438820 SHA256:1f0a8a6c0e872166f75433f5cbf9766f3002b5c2f13501b3bb8c51846a127b79
 'http://httpredir.debian.org/debian/pool/main/i/iproute2/iproute2_3.16.0-2.debian.tar.xz' iproute2_3.16.0-2.debian.tar.xz 27032 SHA256:9e5c631b4465ee258a2d61150f6a591f37d116b1b465b363f9e50d496e0359ab
@@ -1310,7 +1362,8 @@ Licenses: (parsed from: `/usr/share/doc/libjbig0/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris jbigkit=2.1-3.1
 'http://httpredir.debian.org/debian/pool/main/j/jbigkit/jbigkit_2.1-3.1.dsc' jbigkit_2.1-3.1.dsc 1299 SHA256:62c8812d508958c5d35f2b1579dc3052fb5bd8d2e77d023fad064c4b48c8c3f8
 'http://httpredir.debian.org/debian/pool/main/j/jbigkit/jbigkit_2.1.orig.tar.gz' jbigkit_2.1.orig.tar.gz 438710 SHA256:de7106b6bfaf495d6865c7dd7ac6ca1381bd12e0d81405ea81e7f2167263d932
 'http://httpredir.debian.org/debian/pool/main/j/jbigkit/jbigkit_2.1-3.1.debian.tar.xz' jbigkit_2.1-3.1.debian.tar.xz 7600 SHA256:ebc3c52deaf37d52baea54d648a713640dc262926abda7bf05cd08e7db5dd1ee
@@ -1333,7 +1386,8 @@ Licenses: (parsed from: `/usr/share/doc/python-jinja2/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris jinja2=2.7.3-1
 'http://httpredir.debian.org/debian/pool/main/j/jinja2/jinja2_2.7.3-1.dsc' jinja2_2.7.3-1.dsc 2199 SHA256:de61790cb7b104e3a7dc872b40728791e1c547483af7fa695959b3157f3ae760
 'http://httpredir.debian.org/debian/pool/main/j/jinja2/jinja2_2.7.3.orig.tar.gz' jinja2_2.7.3.orig.tar.gz 378470 SHA256:2e24ac5d004db5714976a04ac0e80c6df6e47e98c354cb2c0d82f8879d4f8fdb
 'http://httpredir.debian.org/debian/pool/main/j/jinja2/jinja2_2.7.3-1.debian.tar.xz' jinja2_2.7.3-1.debian.tar.xz 7836 SHA256:93b43141aec41edc3287c7d5f73937d8ac8256b92e09ea7e8d73ca5ab6b7c70d
@@ -1359,7 +1413,8 @@ Licenses: (parsed from: `/usr/share/doc/libjs-jquery/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris jquery=1.7.2+dfsg-3.2
 'http://httpredir.debian.org/debian/pool/main/j/jquery/jquery_1.7.2+dfsg-3.2.dsc' jquery_1.7.2+dfsg-3.2.dsc 1657 SHA256:1f77761ba508bdedff0ce97b3b723ac2aabbb252c23b1686cbc8a5c1233c1d75
 'http://httpredir.debian.org/debian/pool/main/j/jquery/jquery_1.7.2+dfsg.orig.tar.gz' jquery_1.7.2+dfsg.orig.tar.gz 147053 SHA256:43384d8c975c723a3b7d6f46e7ff1518d161760e0781a37675eeda1a05a503fe
 'http://httpredir.debian.org/debian/pool/main/j/jquery/jquery_1.7.2+dfsg-3.2.debian.tar.xz' jquery_1.7.2+dfsg-3.2.debian.tar.xz 5868 SHA256:9a42b97c3dad850c40a139354dd9d6c2fe3c2c8da67572062b7e0d3c3d2898e5
@@ -1385,7 +1440,8 @@ Licenses: (parsed from: `/usr/share/doc/libkeyutils1/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris keyutils=1.5.9-5
 'http://httpredir.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.9-5.dsc' keyutils_1.5.9-5.dsc 2080 SHA256:8c8ca9ef9274046901b107f143260bd1255387939ee517ae842829bd167fd49d
 'http://httpredir.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.9.orig.tar.bz2' keyutils_1.5.9.orig.tar.bz2 74683 SHA256:4da2c5552c688b65ab14d4fd40fbdf720c8b396d8ece643e040cf6e707e083ae
 'http://httpredir.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.9-5.debian.tar.xz' keyutils_1.5.9-5.debian.tar.xz 14596 SHA256:8cef47fc1fd688cc54e36cbb7cee26f38b38d10a1c59af8d8dc0869a0e4359fc
@@ -1409,7 +1465,8 @@ Licenses: (parsed from: `/usr/share/doc/libkmod2/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris kmod=18-3
 'http://httpredir.debian.org/debian/pool/main/k/kmod/kmod_18-3.dsc' kmod_18-3.dsc 1865 SHA256:f16ef133e00db0fa360dcfb0d4723afc31e3803141b5f864e4df6a8b810eaeea
 'http://httpredir.debian.org/debian/pool/main/k/kmod/kmod_18.orig.tar.gz' kmod_18.orig.tar.gz 3692996 SHA256:cdd7c8627e9bbfe5e39232886d08db2c87b4cc2ea7e9f8d3034577324809f2c0
 'http://httpredir.debian.org/debian/pool/main/k/kmod/kmod_18-3.debian.tar.xz' kmod_18-3.debian.tar.xz 10468 SHA256:7a55a9d2c97913cdfde6e29d2784b5b82c7fdad6581d466b4aa571eef3270ea2
@@ -1435,7 +1492,8 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris krb5=1.12.1+dfsg-19+deb8u2
 'http://httpredir.debian.org/debian/pool/main/k/krb5/krb5_1.12.1+dfsg-19+deb8u2.dsc' krb5_1.12.1+dfsg-19+deb8u2.dsc 3368 SHA256:2b10ecb8b8c3015a12a764e4e6eb99fcca45cc1946d211a18db64b46dfa2cb81
 'http://httpredir.debian.org/debian/pool/main/k/krb5/krb5_1.12.1+dfsg.orig.tar.gz' krb5_1.12.1+dfsg.orig.tar.gz 11792370 SHA256:eb29959f1e9f8d71e7401f5809daefae067296eb5b0da1176366280a16bdd784
 'http://httpredir.debian.org/debian/pool/main/k/krb5/krb5_1.12.1+dfsg-19+deb8u2.debian.tar.xz' krb5_1.12.1+dfsg-19+deb8u2.debian.tar.xz 123456 SHA256:242155b4ac6add762c1bac60e6eaa73b25abd985fb41bcdd13d4eae022f592ec
@@ -1460,7 +1518,8 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris lcms2=2.6-3
 'http://httpredir.debian.org/debian/pool/main/l/lcms2/lcms2_2.6-3.dsc' lcms2_2.6-3.dsc 2090 SHA256:679674cc000015f583c9813a1514ae8f4ebf2c354657bcc41552bce6a65d6f74
 'http://httpredir.debian.org/debian/pool/main/l/lcms2/lcms2_2.6.orig.tar.gz' lcms2_2.6.orig.tar.gz 4583389 SHA256:5172528839647c54c3da211837225e221be93e4733f5b5e9f57668f7107e14b1
 'http://httpredir.debian.org/debian/pool/main/l/lcms2/lcms2_2.6-3.debian.tar.xz' lcms2_2.6-3.debian.tar.xz 2416412 SHA256:992bf65f7edc2cd65d00914fe73abdc0d2d70c152c7fe18c001c17a69572ad34
@@ -1487,7 +1546,8 @@ Licenses: (parsed from: `/usr/share/doc/node-less/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris less.js=1.4.2-1
 'http://httpredir.debian.org/debian/pool/main/l/less.js/less.js_1.4.2-1.dsc' less.js_1.4.2-1.dsc 2032 SHA256:9cc0ef3de069825d9c6aa25ca82235a2648fbe85e51d3f96d9870ab9770db3d2
 'http://httpredir.debian.org/debian/pool/main/l/less.js/less.js_1.4.2.orig.tar.gz' less.js_1.4.2.orig.tar.gz 1183428 SHA256:da1dc5a08bcc9d110a50b0e4d8b6d220fc039ff82665569acf9269842f7523bb
 'http://httpredir.debian.org/debian/pool/main/l/less.js/less.js_1.4.2-1.debian.tar.gz' less.js_1.4.2-1.debian.tar.gz 10256 SHA256:54f040e191e0e26d4168ba4e9ee053218c9b99c886cfc2693362fa6394a26eec
@@ -1510,7 +1570,8 @@ Licenses: (parsed from: `/usr/share/doc/libart-2.0-2/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libart-lgpl=2.3.21-2
 'http://httpredir.debian.org/debian/pool/main/liba/libart-lgpl/libart-lgpl_2.3.21-2.dsc' libart-lgpl_2.3.21-2.dsc 2186 SHA256:5e9103a5db5f20b183e1c0f72d6eb17503f4e596f261f6c7f164728678a38ea4
 'http://httpredir.debian.org/debian/pool/main/liba/libart-lgpl/libart-lgpl_2.3.21.orig.tar.gz' libart-lgpl_2.3.21.orig.tar.gz 400560 SHA256:2a10b1c884bb37c7bd5c5eba59dbd0d28bf68e64a42d7f2083c836f60f8e98fa
 'http://httpredir.debian.org/debian/pool/main/liba/libart-lgpl/libart-lgpl_2.3.21-2.debian.tar.gz' libart-lgpl_2.3.21-2.debian.tar.gz 6347 SHA256:ec311bbc1b038c81024d4b2f501cb6af1d2694ef9f27204563369480750f83b9
@@ -1533,7 +1594,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libbsd=0.7.0-2
 'http://httpredir.debian.org/debian/pool/main/libb/libbsd/libbsd_0.7.0-2.dsc' libbsd_0.7.0-2.dsc 2007 SHA256:6d5fce0095a6eda36d3c24a68769b70720eefb5b3704ae96419533e23748947a
 'http://httpredir.debian.org/debian/pool/main/libb/libbsd/libbsd_0.7.0.orig.tar.xz' libbsd_0.7.0.orig.tar.xz 322908 SHA256:0f3b0e17e5c34c038126e0a04351b11e23c6101a7d0ce3beeab29bb6415c10bb
 'http://httpredir.debian.org/debian/pool/main/libb/libbsd/libbsd_0.7.0-2.debian.tar.xz' libbsd_0.7.0-2.debian.tar.xz 16272 SHA256:b3ff7556ecde7d1c4100f90a1cbce102699d4d2fdb8e5a328bf7977e48d3b757
@@ -1559,7 +1621,8 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`, `/usr/share/doc/libc
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libcap2=1:2.24-8
 'http://httpredir.debian.org/debian/pool/main/libc/libcap2/libcap2_2.24-8.dsc' libcap2_2.24-8.dsc 2134 SHA256:b042a6c89079d02113bd15ec52948f265edb6c725830d1b79434af06c4e6006a
 'http://httpredir.debian.org/debian/pool/main/libc/libcap2/libcap2_2.24.orig.tar.xz' libcap2_2.24.orig.tar.xz 63264 SHA256:51cd1c568a2baf1e687573bd6117a94b07f33b46a05acaa50ee208792a830b79
 'http://httpredir.debian.org/debian/pool/main/libc/libcap2/libcap2_2.24-8.debian.tar.xz' libcap2_2.24-8.debian.tar.xz 17528 SHA256:d1dd71eb19ce4cb7ea37f827c155382773e7724d5356619539874dca647aa94e
@@ -1585,7 +1648,8 @@ Licenses: (parsed from: `/usr/share/doc/libdatrie1/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libdatrie=0.2.8-1
 'http://httpredir.debian.org/debian/pool/main/libd/libdatrie/libdatrie_0.2.8-1.dsc' libdatrie_0.2.8-1.dsc 2082 SHA256:4cea8f61d67778ae16fa24eb28c413b5c3cc3203f84a50ba0944956a9bba05a2
 'http://httpredir.debian.org/debian/pool/main/libd/libdatrie/libdatrie_0.2.8.orig.tar.xz' libdatrie_0.2.8.orig.tar.xz 286428 SHA256:6a14d55c5687fc325216fffb5db0cf55d31b108cce65314a6d5c8042417ab7c2
 'http://httpredir.debian.org/debian/pool/main/libd/libdatrie/libdatrie_0.2.8-1.debian.tar.gz' libdatrie_0.2.8-1.debian.tar.gz 7651 SHA256:7563b262c917cb507d17b35437a484c54c2964cff9994ffbbac1f78fb5f3c59b
@@ -1608,7 +1672,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libedit=3.1-20140620-2
 'http://httpredir.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20140620-2.dsc' libedit_3.1-20140620-2.dsc 2235 SHA256:ca5af1e511d53595d6f518c9f4805feba66af23d3c468a92d9e84c1987af7512
 'http://httpredir.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20140620.orig.tar.gz' libedit_3.1-20140620.orig.tar.gz 483857 SHA256:a22b9b2a8cf4aec9ff51a57e8c848b69640d0195282159d245d8137a19bfcaf2
 'http://httpredir.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20140620-2.debian.tar.bz2' libedit_3.1-20140620-2.debian.tar.bz2 17637 SHA256:610d08273c7f73a83dad62b322a520497c12b9714bb1d9b54918c7bc0b3bb6ff
@@ -1631,7 +1696,8 @@ Licenses: (parsed from: `/usr/share/doc/libffi6/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libffi=3.1-2
 'http://httpredir.debian.org/debian/pool/main/libf/libffi/libffi_3.1-2.dsc' libffi_3.1-2.dsc 1358 SHA256:6249efd7d44527de06e9e1fba9c7695c069d93b0fa5149f604435792c5a30f6c
 'http://httpredir.debian.org/debian/pool/main/libf/libffi/libffi_3.1.orig.tar.gz' libffi_3.1.orig.tar.gz 937214 SHA256:97feeeadca5e21870fa4433bc953d1b3af3f698d5df8a428f68b73cd60aef6eb
 'http://httpredir.debian.org/debian/pool/main/libf/libffi/libffi_3.1-2.debian.tar.xz' libffi_3.1-2.debian.tar.xz 8408 SHA256:7e7826c1ee6152d31a3e341efc34df923ec903b6caecc2701694dc95f2efd3ab
@@ -1654,7 +1720,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libfontenc=1:1.1.2-1
 'http://httpredir.debian.org/debian/pool/main/libf/libfontenc/libfontenc_1.1.2-1.dsc' libfontenc_1.1.2-1.dsc 2179 SHA256:402fcfb27dacf5edc2df60bb5f58c99739326d1a87440dd8e3eb6aafcf8a4aa7
 'http://httpredir.debian.org/debian/pool/main/libf/libfontenc/libfontenc_1.1.2.orig.tar.gz' libfontenc_1.1.2.orig.tar.gz 354734 SHA256:39f68902073dbd3ca0c9d8ddaf8bdfe5418de8d1edddff4f359e2a548aff458a
 'http://httpredir.debian.org/debian/pool/main/libf/libfontenc/libfontenc_1.1.2-1.diff.gz' libfontenc_1.1.2-1.diff.gz 6088 SHA256:6501e9bc32312b2de032bc2e3862f88bf876a754f14e16fb039f053d549a1844
@@ -1678,7 +1745,8 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libgcrypt20=1.6.3-2+deb8u1
 'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u1.dsc' libgcrypt20_1.6.3-2+deb8u1.dsc 2573 SHA256:5073f7b0ea4777d73d4c99ab4303064ae350d015db535e2b3b9f03b6da692da8
 'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3.orig.tar.bz2' libgcrypt20_1.6.3.orig.tar.bz2 2494052 SHA256:41b4917b93ae34c6a0e2127378d7a4d66d805a2a86a09911d4f9bd871db7025f
 'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u1.debian.tar.xz' libgcrypt20_1.6.3-2+deb8u1.debian.tar.xz 28712 SHA256:84a3360762b8ba29ee99f0c95fa55ee28e1eed5fd0d2f5e86340925e5dd8d066
@@ -1711,7 +1779,8 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libgd2=2.1.0-5+deb8u6
 'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.1.0-5+deb8u6.dsc' libgd2_2.1.0-5+deb8u6.dsc 2467 SHA256:ba1600809c35caef09027fddff08bc363eda774eb6fb4d516401b0c582c4310a
 'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.1.0.orig.tar.xz' libgd2_2.1.0.orig.tar.xz 2004304 SHA256:fa6665dfe3d898019671293c84d77067a3d2ede50884dbcb6df899d508370e5a
 'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.1.0-5+deb8u6.debian.tar.xz' libgd2_2.1.0-5+deb8u6.debian.tar.xz 43100 SHA256:11a7e4de4107e7faf8d77b9f50b8c21484b430cb951a77503226db1f68dfaf6a
@@ -1735,7 +1804,8 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libgpg-error=1.17-3
 'http://httpredir.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.17-3.dsc' libgpg-error_1.17-3.dsc 2344 SHA256:42d9ff8517b1149b453d947b515cef088b83ac6a6b4fdcbd143570c42e2216c9
 'http://httpredir.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.17.orig.tar.bz2' libgpg-error_1.17.orig.tar.bz2 669914 SHA256:3ff4e5a71116eb862cd14185fcd282850927b8608e3b4186834fd940fbef57b5
 'http://httpredir.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.17-3.debian.tar.xz' libgpg-error_1.17-3.debian.tar.xz 38460 SHA256:3e0af89c65e61ed2b53555eaecd5dc7fa19519490ef447313f441728ae490f29
@@ -1758,7 +1828,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libice=2:1.0.9-1
 'http://httpredir.debian.org/debian/pool/main/libi/libice/libice_1.0.9-1.dsc' libice_1.0.9-1.dsc 2140 SHA256:f90a79944f147b5db208677d92381fd0886c201616172bac0b28ef0e85912ebd
 'http://httpredir.debian.org/debian/pool/main/libi/libice/libice_1.0.9.orig.tar.gz' libice_1.0.9.orig.tar.gz 455871 SHA256:7812a824a66dd654c830d21982749b3b563d9c2dfe0b88b203cefc14a891edc0
 'http://httpredir.debian.org/debian/pool/main/libi/libice/libice_1.0.9-1.diff.gz' libice_1.0.9-1.diff.gz 6260 SHA256:85d68a69d5e6b25b352eb98c6c33fa7a324da8dd913d7e84a049852fb87287e7
@@ -1791,7 +1862,8 @@ Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libidn=1.29-1+deb8u1
 'http://httpredir.debian.org/debian/pool/main/libi/libidn/libidn_1.29-1+deb8u1.dsc' libidn_1.29-1+deb8u1.dsc 2157 SHA256:6c4e7da9694fae780799ca9eef6a808de637679de3fd1cc37ae7df857b3206d7
 'http://httpredir.debian.org/debian/pool/main/libi/libidn/libidn_1.29.orig.tar.gz' libidn_1.29.orig.tar.gz 3474087 SHA256:fb82747dbbf9b36f703ed27293317d818d7e851d4f5773dedf3efa4db32a7c7c
 'http://httpredir.debian.org/debian/pool/main/libi/libidn/libidn_1.29-1+deb8u1.debian.tar.xz' libidn_1.29-1+deb8u1.debian.tar.xz 51956 SHA256:d5acafa99385a93993da91875e26210ab0edc4dc951d8c975a514658c762cc92
@@ -1816,7 +1888,8 @@ Licenses: (parsed from: `/usr/share/doc/libjpeg62-turbo/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libjpeg-turbo=1:1.3.1-12
 'http://httpredir.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.3.1-12.dsc' libjpeg-turbo_1.3.1-12.dsc 2650 SHA256:1606a068d653c40da819e0ac4f9c560cf891d665ad5299c0eb994168830ce95d
 'http://httpredir.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.3.1.orig.tar.gz' libjpeg-turbo_1.3.1.orig.tar.gz 1390282 SHA256:c132907417ddc40ed552fe53d6b91d5fecbb14a356a60ddc7ea50d6be9666fb9
 'http://httpredir.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.3.1-12.debian.tar.xz' libjpeg-turbo_1.3.1-12.debian.tar.xz 78596 SHA256:046f88108246665a433cc60b0e9cec6c243b0163899c039542dbfb183fef6e71
@@ -1841,7 +1914,8 @@ Licenses: (parsed from: `/usr/share/doc/liblocale-gettext-perl/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris liblocale-gettext-perl=1.05-8
 'http://httpredir.debian.org/debian/pool/main/libl/liblocale-gettext-perl/liblocale-gettext-perl_1.05-8.dsc' liblocale-gettext-perl_1.05-8.dsc 2114 SHA256:0549ab2b517c1aed9fb12e2fee3ee2eded5efa80758491089f531b3ca10cc4ab
 'http://httpredir.debian.org/debian/pool/main/libl/liblocale-gettext-perl/liblocale-gettext-perl_1.05.orig.tar.gz' liblocale-gettext-perl_1.05.orig.tar.gz 7693 SHA256:27367f3dc1be79c9ed178732756e37e4cfce45f9e2a27ebf26e1f40d80124694
 'http://httpredir.debian.org/debian/pool/main/libl/liblocale-gettext-perl/liblocale-gettext-perl_1.05-8.debian.tar.xz' liblocale-gettext-perl_1.05-8.debian.tar.xz 5472 SHA256:2bd28828012a6289052e1905779f0505d2e09f279d77a79611990ad8d2f27ba1
@@ -1864,7 +1938,8 @@ Licenses: (parsed from: `/usr/share/doc/libpng12-0/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libpng=1.2.50-2+deb8u2
 'http://httpredir.debian.org/debian/pool/main/libp/libpng/libpng_1.2.50-2+deb8u2.dsc' libpng_1.2.50-2+deb8u2.dsc 2036 SHA256:ba814b51b9faaac1c0d1c3637013dd37facf87ea9e47348be423747f20f1fb9d
 'http://httpredir.debian.org/debian/pool/main/libp/libpng/libpng_1.2.50.orig.tar.xz' libpng_1.2.50.orig.tar.xz 539152 SHA256:4724f81f8c92ac7f360ad1fbf173396ea7c535923424db9fbaff07bfd9d8e8e7
 'http://httpredir.debian.org/debian/pool/main/libp/libpng/libpng_1.2.50-2+deb8u2.debian.tar.xz' libpng_1.2.50-2+deb8u2.debian.tar.xz 21496 SHA256:04b9bda0c27bc2d5628f8419e4674500b74d5cfc75219c5952c5c5b2de2f8106
@@ -1888,7 +1963,8 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libselinux=2.3-2
 'http://httpredir.debian.org/debian/pool/main/libs/libselinux/libselinux_2.3-2.dsc' libselinux_2.3-2.dsc 2024 SHA256:aea0e0502dd1d4df17be644efb0bfe2d38e32ba2e0769eaaf8a2b64a0eb99786
 'http://httpredir.debian.org/debian/pool/main/libs/libselinux/libselinux_2.3.orig.tar.gz' libselinux_2.3.orig.tar.gz 171254 SHA256:0b1e0b43ecd84a812713d09564019b08e7c205d89072b5cbcd07b052cd8e77b2
 'http://httpredir.debian.org/debian/pool/main/libs/libselinux/libselinux_2.3-2.debian.tar.xz' libselinux_2.3-2.debian.tar.xz 24384 SHA256:8ec4bdb5acc066d1b369877e9a94ec1a723e4d31691753e0e1861d0884b3fd1a
@@ -1913,7 +1989,8 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libsemanage=2.3-1
 'http://httpredir.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.3-1.dsc' libsemanage_2.3-1.dsc 2131 SHA256:21b321c61399deeb3d1b04b76a0c9f43e968371f3afc8a8eb859e3cc79f295aa
 'http://httpredir.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.3.orig.tar.gz' libsemanage_2.3.orig.tar.gz 138231 SHA256:03e09e35e611c286e446bef92b6023ef2623815996f5a53394bb02e49a312e4b
 'http://httpredir.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.3-1.debian.tar.xz' libsemanage_2.3-1.debian.tar.xz 14848 SHA256:e6e8002ae5084daf6628ac836e4724005dd7591f9a015203bb55e445508e55e6
@@ -1937,7 +2014,8 @@ Licenses: (parsed from: `/usr/share/doc/libsepol1/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libsepol=2.3-2
 'http://httpredir.debian.org/debian/pool/main/libs/libsepol/libsepol_2.3-2.dsc' libsepol_2.3-2.dsc 1762 SHA256:115ab27d7662fc03e64d9e70ed20b5dcb2adb6206155ba2577072352a5b79b6a
 'http://httpredir.debian.org/debian/pool/main/libs/libsepol/libsepol_2.3.orig.tar.gz' libsepol_2.3.orig.tar.gz 209570 SHA256:cc8d8642c3b7b95d6928d65dcbca2ab0627abc1c05166637851e63c1a6eae68f
 'http://httpredir.debian.org/debian/pool/main/libs/libsepol/libsepol_2.3-2.debian.tar.xz' libsepol_2.3-2.debian.tar.xz 12904 SHA256:4fea6f6de03cf6a8ba80579988ad56202d3652fe3153b0d2f8c65c89bba097a5
@@ -1960,7 +2038,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libsm=2:1.2.2-1
 'http://httpredir.debian.org/debian/pool/main/libs/libsm/libsm_1.2.2-1.dsc' libsm_1.2.2-1.dsc 2107 SHA256:1347efa550751179c0a3f1042a9f8ae43ee0c22cf0c2283921fa83e52a68433f
 'http://httpredir.debian.org/debian/pool/main/libs/libsm/libsm_1.2.2.orig.tar.gz' libsm_1.2.2.orig.tar.gz 415990 SHA256:14bb7c669ce2b8ff712fbdbf48120e3742a77edcd5e025d6b3325ed30cf120f4
 'http://httpredir.debian.org/debian/pool/main/libs/libsm/libsm_1.2.2-1.diff.gz' libsm_1.2.2-1.diff.gz 6183 SHA256:9848714292ead15fcc48ab2d337f2cc5fc08910abbdfaf69d3ef1b89d3fdb2d5
@@ -1983,7 +2062,8 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libssh2=1.4.3-4.1+deb8u1
 'http://httpredir.debian.org/debian/pool/main/libs/libssh2/libssh2_1.4.3-4.1+deb8u1.dsc' libssh2_1.4.3-4.1+deb8u1.dsc 1882 SHA256:38e3ec8ae8014a721d2f08f83494c927fe42aae11f8cf1592104205da2857ca8
 'http://httpredir.debian.org/debian/pool/main/libs/libssh2/libssh2_1.4.3.orig.tar.gz' libssh2_1.4.3.orig.tar.gz 685712 SHA256:eac6f85f9df9db2e6386906a6227eb2cd7b3245739561cad7d6dc1d5d021b96d
 'http://httpredir.debian.org/debian/pool/main/libs/libssh2/libssh2_1.4.3-4.1+deb8u1.debian.tar.xz' libssh2_1.4.3-4.1+deb8u1.debian.tar.xz 8276 SHA256:5da712fcae528ca559be8865dc9521ef11f006bda68c39e0bde8c0495e5a2cb7
@@ -2009,7 +2089,8 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libtasn1-6=4.2-3+deb8u2
 'http://httpredir.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.2-3+deb8u2.dsc' libtasn1-6_4.2-3+deb8u2.dsc 2434 SHA256:b22337782c8f2edf9adf6e42c37808f116ad4cfab2b81c1e30a6fddb8aa0acf2
 'http://httpredir.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.2.orig.tar.gz' libtasn1-6_4.2.orig.tar.gz 1866192 SHA256:693b41cb36c2ac02d5990180b0712a79a591168e93d85f7fcbb75a0a0be4cdbb
 'http://httpredir.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.2-3+deb8u2.debian.tar.xz' libtasn1-6_4.2-3+deb8u2.debian.tar.xz 58556 SHA256:0f7587e82f702eb757c2ad842f4511ff1619b286bd2ccc3d61fa8bb490b839d1
@@ -2033,7 +2114,8 @@ Licenses: (parsed from: `/usr/share/doc/libtext-charwidth-perl/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libtext-charwidth-perl=0.04-7
 'http://httpredir.debian.org/debian/pool/main/libt/libtext-charwidth-perl/libtext-charwidth-perl_0.04-7.dsc' libtext-charwidth-perl_0.04-7.dsc 1810 SHA256:482493991d54786bc12b38f26b90d2bbc9234ac87c3e54e0474ac00cd979dd68
 'http://httpredir.debian.org/debian/pool/main/libt/libtext-charwidth-perl/libtext-charwidth-perl_0.04.orig.tar.bz2' libtext-charwidth-perl_0.04.orig.tar.bz2 8327 SHA256:2990c13c3f4a5479d7dbc5a94b86c23798cf0dc7df54ffe54e065f072558b6ed
 'http://httpredir.debian.org/debian/pool/main/libt/libtext-charwidth-perl/libtext-charwidth-perl_0.04-7.debian.tar.bz2' libtext-charwidth-perl_0.04-7.debian.tar.bz2 3220 SHA256:4aa60af66136cad15d3c9ed73696b822c9f944a3b8484b03c388393302fa6038
@@ -2057,7 +2139,8 @@ Licenses: (parsed from: `/usr/share/doc/libtext-iconv-perl/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libtext-iconv-perl=1.7-5
 'http://httpredir.debian.org/debian/pool/main/libt/libtext-iconv-perl/libtext-iconv-perl_1.7-5.dsc' libtext-iconv-perl_1.7-5.dsc 1828 SHA256:6f049f3ed556a9c429f00c88a28ce595446f26996f2f5173e02f51f51277749d
 'http://httpredir.debian.org/debian/pool/main/libt/libtext-iconv-perl/libtext-iconv-perl_1.7.orig.tar.bz2' libtext-iconv-perl_1.7.orig.tar.bz2 9977 SHA256:815c5169b7afc40bc6f681b4c615ff8fb0e073d87422280c8c759a4666567490
 'http://httpredir.debian.org/debian/pool/main/libt/libtext-iconv-perl/libtext-iconv-perl_1.7-5.debian.tar.bz2' libtext-iconv-perl_1.7-5.debian.tar.bz2 3157 SHA256:e0ee2ae3908bbde6d43098a6491284fdc7a0a117229053d1e9c539eb66127092
@@ -2081,7 +2164,8 @@ Licenses: (parsed from: `/usr/share/doc/libtext-wrapi18n-perl/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libtext-wrapi18n-perl=0.06-7
 'http://httpredir.debian.org/debian/pool/main/libt/libtext-wrapi18n-perl/libtext-wrapi18n-perl_0.06-7.dsc' libtext-wrapi18n-perl_0.06-7.dsc 1156 SHA256:777dd5309172c3fa6ccea73b3c821cf6533ddb72b4adbe4def9d45fd8902b544
 'http://httpredir.debian.org/debian/pool/main/libt/libtext-wrapi18n-perl/libtext-wrapi18n-perl_0.06.orig.tar.gz' libtext-wrapi18n-perl_0.06.orig.tar.gz 3797 SHA256:432c2a801efe9f12d631124c1163439eac4c99449ba13d80133c45ecacc627f5
 'http://httpredir.debian.org/debian/pool/main/libt/libtext-wrapi18n-perl/libtext-wrapi18n-perl_0.06-7.diff.gz' libtext-wrapi18n-perl_0.06-7.diff.gz 3031 SHA256:fae1a435e8b2604bf78666e58e4603728990495db302a9799d63cb099e3b4001
@@ -2108,7 +2192,8 @@ Licenses: (parsed from: `/usr/share/doc/libthai-data/copyright`, `/usr/share/doc
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libthai=0.1.21-1
 'http://httpredir.debian.org/debian/pool/main/libt/libthai/libthai_0.1.21-1.dsc' libthai_0.1.21-1.dsc 2161 SHA256:ad9171fb789a184ed1061ced80c453e6229d0b4b299d7e91fcb39655f5f29e83
 'http://httpredir.debian.org/debian/pool/main/libt/libthai/libthai_0.1.21.orig.tar.xz' libthai_0.1.21.orig.tar.xz 385384 SHA256:ff0e41143a8be7e01a785778c2addae48945c8bad4a275d2135afec35959fae3
 'http://httpredir.debian.org/debian/pool/main/libt/libthai/libthai_0.1.21-1.debian.tar.xz' libthai_0.1.21-1.debian.tar.xz 10024 SHA256:5ad02dcfe536379884f43b1a540c641567a29a17ef6d3fcceb814c67bd2959b3
@@ -2132,7 +2217,8 @@ Licenses: (parsed from: `/usr/share/doc/libltdl7/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libtool=2.4.2-1.11
 'http://httpredir.debian.org/debian/pool/main/libt/libtool/libtool_2.4.2-1.11.dsc' libtool_2.4.2-1.11.dsc 1467 SHA256:155ccf84638725c278b641fbd1c5c76a98d612cacf00f5f00a10f8e6826e643f
 'http://httpredir.debian.org/debian/pool/main/libt/libtool/libtool_2.4.2.orig.tar.gz' libtool_2.4.2.orig.tar.gz 2632347 SHA256:b38de44862a987293cd3d8dfae1c409d514b6c4e794ebc93648febf9afc38918
 'http://httpredir.debian.org/debian/pool/main/libt/libtool/libtool_2.4.2-1.11.debian.tar.xz' libtool_2.4.2-1.11.debian.tar.xz 17408 SHA256:524c916ae9bdf39311aa9e713024ca7b48b0367481c8e6217f407e194e908a7b
@@ -2155,7 +2241,8 @@ Licenses: (parsed from: `/usr/share/doc/libusb-0.1-4/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libusb=2:0.1.12-25
 'http://httpredir.debian.org/debian/pool/main/libu/libusb/libusb_0.1.12-25.dsc' libusb_0.1.12-25.dsc 1958 SHA256:905e7cc36c9ba24f6d58e416f8882bc2522673cfb9f63687b48c62c9e3b6c80c
 'http://httpredir.debian.org/debian/pool/main/libu/libusb/libusb_0.1.12.orig.tar.gz' libusb_0.1.12.orig.tar.gz 389343 SHA256:37f6f7d9de74196eb5fc0bbe0aea9b5c939de7f500acba3af6fd643f3b538b44
 'http://httpredir.debian.org/debian/pool/main/libu/libusb/libusb_0.1.12-25.debian.tar.xz' libusb_0.1.12-25.debian.tar.xz 22008 SHA256:9e42ea2a8e0ec85b13cb8c9df7dc3aff58ee82e3692a7656558ae91ceeabf7d1
@@ -2188,7 +2275,8 @@ Licenses: (parsed from: `/usr/share/doc/libv8-3.14.5/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libv8-3.14=3.14.5.8-8.1
 'http://httpredir.debian.org/debian/pool/main/libv/libv8-3.14/libv8-3.14_3.14.5.8-8.1.dsc' libv8-3.14_3.14.5.8-8.1.dsc 3235 SHA256:3d4c8583b3231c11958dfda90fc74b9224df5c22526bdbe648ea91b376e6b75e
 'http://httpredir.debian.org/debian/pool/main/libv/libv8-3.14/libv8-3.14_3.14.5.8.orig.tar.gz' libv8-3.14_3.14.5.8.orig.tar.gz 11711639 SHA256:a3316c181a31139ac80013d436d8d217cec72ddf22f2bb3c8b22d02bdf4780fd
 'http://httpredir.debian.org/debian/pool/main/libv/libv8-3.14/libv8-3.14_3.14.5.8-8.1.debian.tar.xz' libv8-3.14_3.14.5.8-8.1.debian.tar.xz 42008 SHA256:be307ca966a837606de9a9cfccc1fdb4396230654f240a119421783d10e08de9
@@ -2212,7 +2300,8 @@ Licenses: (parsed from: `/usr/share/doc/libvpx1/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libvpx=1.3.0-3
 'http://httpredir.debian.org/debian/pool/main/libv/libvpx/libvpx_1.3.0-3.dsc' libvpx_1.3.0-3.dsc 2129 SHA256:aa468780484234775c62ed22a9e2140f343d7ec4d855dd80d6a6f4625e737431
 'http://httpredir.debian.org/debian/pool/main/libv/libvpx/libvpx_1.3.0.orig.tar.bz2' libvpx_1.3.0.orig.tar.bz2 2077846 SHA256:bd5af97b74d53a111b48852dfcd1791b2c758f1fe972833b363fe34a83a7750a
 'http://httpredir.debian.org/debian/pool/main/libv/libvpx/libvpx_1.3.0-3.debian.tar.xz' libvpx_1.3.0-3.debian.tar.xz 11248 SHA256:9fe4ff76aeb929f5b6efd999d3e19d7ec5186c13763e05001a552aa4a3b3fce0
@@ -2237,7 +2326,8 @@ Licenses: (parsed from: `/usr/share/doc/libwebp5/copyright`, `/usr/share/doc/lib
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libwebp=0.4.1-1.2
 'http://httpredir.debian.org/debian/pool/main/libw/libwebp/libwebp_0.4.1-1.2.dsc' libwebp_0.4.1-1.2.dsc 2070 SHA256:8dd2b0c27d80c56934433512db1a11ef16a2871edf0bdc91753ce16e3e9dfb2a
 'http://httpredir.debian.org/debian/pool/main/libw/libwebp/libwebp_0.4.1.orig.tar.gz' libwebp_0.4.1.orig.tar.gz 966358 SHA256:00b646e6f66550a8faa998711fe70aabee9ed3bc562a8437c89042901674d027
 'http://httpredir.debian.org/debian/pool/main/libw/libwebp/libwebp_0.4.1-1.2.debian.tar.xz' libwebp_0.4.1-1.2.debian.tar.xz 4328 SHA256:5e8f7c18da9a6da0c839864a583c76d7831fdfe89847170186d44404b80e37e6
@@ -2261,7 +2351,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libx11=2:1.6.2-3
 'http://httpredir.debian.org/debian/pool/main/libx/libx11/libx11_1.6.2-3.dsc' libx11_1.6.2-3.dsc 2510 SHA256:fa8e2912122ccd6bbf06060aa14afc84c5a7e76c603d63f29071081513907737
 'http://httpredir.debian.org/debian/pool/main/libx/libx11/libx11_1.6.2.orig.tar.gz' libx11_1.6.2.orig.tar.gz 3119924 SHA256:b93739bcd517723121f508bcaf0c213c1bae9c5eacffdca571ff0d86c30ead3e
 'http://httpredir.debian.org/debian/pool/main/libx/libx11/libx11_1.6.2-3.diff.gz' libx11_1.6.2-3.diff.gz 72788 SHA256:5d516aa06837bfe29e8b5f9015f1028835e61e5fb52f1b7d28feb22668547cdc
@@ -2284,7 +2375,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libxau=1:1.0.8-1
 'http://httpredir.debian.org/debian/pool/main/libx/libxau/libxau_1.0.8-1.dsc' libxau_1.0.8-1.dsc 2040 SHA256:3ddb5f2c7a49ef7507b8d1e63e891238db877b4d1bb1c5486a3e3242c8523602
 'http://httpredir.debian.org/debian/pool/main/libx/libxau/libxau_1.0.8.orig.tar.gz' libxau_1.0.8.orig.tar.gz 362044 SHA256:c343b4ef66d66a6b3e0e27aa46b37ad5cab0f11a5c565eafb4a1c7590bc71d7b
 'http://httpredir.debian.org/debian/pool/main/libx/libxau/libxau_1.0.8-1.diff.gz' libxau_1.0.8-1.diff.gz 15287 SHA256:b493479d6a52a0e753dd357ad8a4bc5c4296015f3f7b96cf546f7c5c5843cbb0
@@ -2307,7 +2399,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libxaw=2:1.0.12-2
 'http://httpredir.debian.org/debian/pool/main/libx/libxaw/libxaw_1.0.12-2.dsc' libxaw_1.0.12-2.dsc 2191 SHA256:c32b7c8be46ef95ccc5b55b0d7199f948b04f399c3e12c5cb5ce0063af37a669
 'http://httpredir.debian.org/debian/pool/main/libx/libxaw/libxaw_1.0.12.orig.tar.gz' libxaw_1.0.12.orig.tar.gz 843780 SHA256:e32abc68d759ffb643f842329838f8b6c157e31023cc91059aabf730e7222ad2
 'http://httpredir.debian.org/debian/pool/main/libx/libxaw/libxaw_1.0.12-2.diff.gz' libxaw_1.0.12-2.diff.gz 9737 SHA256:e28dd95eae44d763e0f1baeb25e07118ac997f64a414d50a2d56c6374246529d
@@ -2332,7 +2425,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libxcb=1.10-3
 'http://httpredir.debian.org/debian/pool/main/libx/libxcb/libxcb_1.10-3.dsc' libxcb_1.10-3.dsc 6940 SHA256:d9915049a5efb76badb8c05d1cf2cdc695910cae5c1c4719a37be1256abdbeab
 'http://httpredir.debian.org/debian/pool/main/libx/libxcb/libxcb_1.10.orig.tar.gz' libxcb_1.10.orig.tar.gz 601241 SHA256:c4cd324ac7bf810e95b1c1b56f413b13850eaa1d7eca60ddc46c61ac9d5f4441
 'http://httpredir.debian.org/debian/pool/main/libx/libxcb/libxcb_1.10-3.diff.gz' libxcb_1.10-3.diff.gz 24425 SHA256:c9c6dc0fedfe20e4a00dc96cb37dfe96ee2980063e941a07f0758b3e6bec57cd
@@ -2355,7 +2449,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libxdmcp=1:1.1.1-1
 'http://httpredir.debian.org/debian/pool/main/libx/libxdmcp/libxdmcp_1.1.1-1.dsc' libxdmcp_1.1.1-1.dsc 2102 SHA256:1713ac047ad1d235fe51476f2224d0dc0f170e9623c0735d1941c474942b24d3
 'http://httpredir.debian.org/debian/pool/main/libx/libxdmcp/libxdmcp_1.1.1.orig.tar.gz' libxdmcp_1.1.1.orig.tar.gz 376525 SHA256:ae6e677911e2696a2976b2f565f116ba9ce99e89cc7e140c4a791270c3aff96f
 'http://httpredir.debian.org/debian/pool/main/libx/libxdmcp/libxdmcp_1.1.1-1.diff.gz' libxdmcp_1.1.1-1.diff.gz 14891 SHA256:bb79bc8439d63d5bed6bf7544f1ed14b4606c246f724523da2fa921cc9929f19
@@ -2378,7 +2473,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libxext=2:1.3.3-1
 'http://httpredir.debian.org/debian/pool/main/libx/libxext/libxext_1.3.3-1.dsc' libxext_1.3.3-1.dsc 2221 SHA256:47106df75b8f3db1e43803e8e94a2e966cd23f7daa8cfc393af739a9e33ef955
 'http://httpredir.debian.org/debian/pool/main/libx/libxext/libxext_1.3.3.orig.tar.gz' libxext_1.3.3.orig.tar.gz 468441 SHA256:eb0b88050491fef4716da4b06a4d92b4fc9e76f880d6310b2157df604342cfe5
 'http://httpredir.debian.org/debian/pool/main/libx/libxext/libxext_1.3.3-1.diff.gz' libxext_1.3.3-1.diff.gz 20763 SHA256:e294a4884eb68acbd151312cb0c973aad63268b637b15ccf1911864b7197557e
@@ -2401,7 +2497,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libxfont=1:1.5.1-1
 'http://httpredir.debian.org/debian/pool/main/libx/libxfont/libxfont_1.5.1-1.dsc' libxfont_1.5.1-1.dsc 2228 SHA256:627dd07fa34d4760e935445bf6409d6eab82f83b04cb71a890a69ef37ab12d29
 'http://httpredir.debian.org/debian/pool/main/libx/libxfont/libxfont_1.5.1.orig.tar.gz' libxfont_1.5.1.orig.tar.gz 626873 SHA256:7c65c8ac581a162ff4c8cd86c1db9e9f425132eb65b1cba0c9e905c6cb8a45f5
 'http://httpredir.debian.org/debian/pool/main/libx/libxfont/libxfont_1.5.1-1.diff.gz' libxfont_1.5.1-1.diff.gz 12991 SHA256:b463e997327548774c1c9212a6c712e8d763106059d12cf55b9cda7facb234cf
@@ -2425,7 +2522,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.1+dfsg1-5+deb8u2
 'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u2.dsc' libxml2_2.9.1+dfsg1-5+deb8u2.dsc 2591 SHA256:a3bdc94653d45c2095f9bab65c46b5c7ab2bb63c31e1b41ad6190eca66f7e717
 'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1.orig.tar.gz' libxml2_2.9.1+dfsg1.orig.tar.gz 3793894 SHA256:f3ec5256412192f74833286c4490672500b232ed1c9195214db2c641df064a28
 'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u2.debian.tar.xz' libxml2_2.9.1+dfsg1-5+deb8u2.debian.tar.xz 62880 SHA256:5440d0031fc34880733fec681bf3e5acf3630b5412ae0731e6418f68ca2d0b81
@@ -2448,7 +2546,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libxmu=2:1.1.2-1
 'http://httpredir.debian.org/debian/pool/main/libx/libxmu/libxmu_1.1.2-1.dsc' libxmu_1.1.2-1.dsc 2338 SHA256:63be1a0be054298bcde9455f8b728dcbcc62b932479645f1d176373f9112ff60
 'http://httpredir.debian.org/debian/pool/main/libx/libxmu/libxmu_1.1.2.orig.tar.gz' libxmu_1.1.2.orig.tar.gz 469019 SHA256:e5fd4bacef068f9509b8226017205040e38d3fba8d2de55037200e7176c13dba
 'http://httpredir.debian.org/debian/pool/main/libx/libxmu/libxmu_1.1.2-1.diff.gz' libxmu_1.1.2-1.diff.gz 6653 SHA256:7b5f0b0536c951cad486c89805b089f535ae357a44602267c787b234c8dcd78f
@@ -2471,7 +2570,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libxpm=1:3.5.11-1
 'http://httpredir.debian.org/debian/pool/main/libx/libxpm/libxpm_3.5.11-1.dsc' libxpm_3.5.11-1.dsc 2110 SHA256:0a11be8c795d991b916bfcbc7b187d1e345048130392946a6995dfc1fd258dea
 'http://httpredir.debian.org/debian/pool/main/libx/libxpm/libxpm_3.5.11.orig.tar.gz' libxpm_3.5.11.orig.tar.gz 527020 SHA256:53ddf924441b7ed2de994d4934358c13d9abf4828b1b16e1255ade5032b31df7
 'http://httpredir.debian.org/debian/pool/main/libx/libxpm/libxpm_3.5.11-1.diff.gz' libxpm_3.5.11-1.diff.gz 15272 SHA256:651f287bb39fde1192aec1ecdfc8963119cd8ee6a2b6c4f044a4ffe59df5d371
@@ -2494,7 +2594,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libxrender=1:0.9.8-1
 'http://httpredir.debian.org/debian/pool/main/libx/libxrender/libxrender_0.9.8-1.dsc' libxrender_0.9.8-1.dsc 2161 SHA256:af7f6e3d257cc75eb70fc964d8db281d69eb204f0c9af7677419c8462a90e69f
 'http://httpredir.debian.org/debian/pool/main/libx/libxrender/libxrender_0.9.8.orig.tar.gz' libxrender_0.9.8.orig.tar.gz 363551 SHA256:c3acffff4cd5c91585e8c4fdf1ec29fc234482f661ed548112b4d52db19963d1
 'http://httpredir.debian.org/debian/pool/main/libx/libxrender/libxrender_0.9.8-1.diff.gz' libxrender_0.9.8-1.diff.gz 18898 SHA256:e3d0fe59c5bb680e0fd1e115c54a6cb2fa2c9fe208679b7fbe7b8de7040ffe16
@@ -2518,7 +2619,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libxslt=1.1.28-2+deb8u1
 'http://security.debian.org/pool/updates/main/libx/libxslt/libxslt_1.1.28-2+deb8u1.dsc' libxslt_1.1.28-2+deb8u1.dsc 2389 SHA256:d084d58d3f25cea908acf99a26bf79a6aa4d03ebd94ec3cccb3d427175ed0c80
 'http://security.debian.org/pool/updates/main/libx/libxslt/libxslt_1.1.28.orig.tar.gz' libxslt_1.1.28.orig.tar.gz 3435907 SHA256:5fc7151a57b89c03d7b825df5a0fae0a8d5f05674c0e7cf2937ecec4d54a028c
 'http://security.debian.org/pool/updates/main/libx/libxslt/libxslt_1.1.28-2+deb8u1.debian.tar.xz' libxslt_1.1.28-2+deb8u1.debian.tar.xz 37208 SHA256:11a8ec5df714a2ac1a55776b1baede5d0612a29b7c5ab6cbbda22d1d49801655
@@ -2541,7 +2643,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libxt=1:1.1.4-1
 'http://httpredir.debian.org/debian/pool/main/libx/libxt/libxt_1.1.4-1.dsc' libxt_1.1.4-1.dsc 2130 SHA256:2158838b3cc889d51bc267c2a1832b753a38a507b22274daa5b9341d88b2109e
 'http://httpredir.debian.org/debian/pool/main/libx/libxt/libxt_1.1.4.orig.tar.gz' libxt_1.1.4.orig.tar.gz 950463 SHA256:823109a0d14dfaef7ede1b3fd28318078daa2cc2f005c439a21c33bdac3d3784
 'http://httpredir.debian.org/debian/pool/main/libx/libxt/libxt_1.1.4-1.diff.gz' libxt_1.1.4-1.diff.gz 11246 SHA256:4414e80a2d36a7122de644d3fe67dadbd12a636d80366eda9b6840f1c7d328bc
@@ -2565,7 +2668,8 @@ Licenses: (parsed from: `/usr/share/doc/libyaml-0-2/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://httpredir.debian.org/debian/pool/main/liby/libyaml/libyaml_0.1.6-3.dsc' libyaml_0.1.6-3.dsc 1893 SHA256:ed5bc299d3bcc0b038206f8780639d4682e65f521dff571b9336e2f8626d0011
 'http://httpredir.debian.org/debian/pool/main/liby/libyaml/libyaml_0.1.6.orig.tar.gz' libyaml_0.1.6.orig.tar.gz 503012 SHA256:7da6971b4bd08a986dd2a61353bc422362bd0edcc67d7ebaac68c95f74182749
 'http://httpredir.debian.org/debian/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
@@ -2589,7 +2693,8 @@ Licenses: (parsed from: `/usr/share/doc/lsb-base/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris lsb=4.1+Debian13+nmu1
 'http://httpredir.debian.org/debian/pool/main/l/lsb/lsb_4.1+Debian13+nmu1.dsc' lsb_4.1+Debian13+nmu1.dsc 2449 SHA256:ef70a3302cf4b50c02ad3cfb90d7997968dd509dc0dbb77562b76f23b617c254
 'http://httpredir.debian.org/debian/pool/main/l/lsb/lsb_4.1+Debian13+nmu1.tar.xz' lsb_4.1+Debian13+nmu1.tar.xz 59880 SHA256:7f5fbd13c04de166d0f658c0b71ed97c3fe07e01e165f5c0bd68ff5977bee72d
 ```
@@ -2613,7 +2718,8 @@ Licenses: (parsed from: `/usr/share/doc/dmsetup/copyright`, `/usr/share/doc/libd
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris lvm2=2.02.111-2.2+deb8u1
 'http://httpredir.debian.org/debian/pool/main/l/lvm2/lvm2_2.02.111-2.2+deb8u1.dsc' lvm2_2.02.111-2.2+deb8u1.dsc 2474 SHA256:9e67627d50ef43b88f29a42b5ff4d48b0bfeeb35d98c09da33c6ce51e99c5d96
 'http://httpredir.debian.org/debian/pool/main/l/lvm2/lvm2_2.02.111.orig.tar.gz' lvm2_2.02.111.orig.tar.gz 1497626 SHA256:ff358054ee821503ada8a33b327688cd4d64a2fc448c667a85c332c545aae4f6
 'http://httpredir.debian.org/debian/pool/main/l/lvm2/lvm2_2.02.111-2.2+deb8u1.debian.tar.xz' lvm2_2.02.111-2.2+deb8u1.debian.tar.xz 29476 SHA256:df657682e06f9559d04719c1543285e8bcb51fb4647f673b787538fb34ebe26f
@@ -2638,7 +2744,8 @@ Licenses: (parsed from: `/usr/share/doc/python-lxml/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris lxml=3.4.0-1
 'http://httpredir.debian.org/debian/pool/main/l/lxml/lxml_3.4.0-1.dsc' lxml_3.4.0-1.dsc 1466 SHA256:489c239cb6f2f2a8a680b6ba11e7ad56cf492bb9f664ad35f2532d86c4afe1cb
 'http://httpredir.debian.org/debian/pool/main/l/lxml/lxml_3.4.0.orig.tar.gz' lxml_3.4.0.orig.tar.gz 3522134 SHA256:714a68bf567fdec2bb7959560dc8376c0bfc688cfceb135f43b9bd87af7a956a
 'http://httpredir.debian.org/debian/pool/main/l/lxml/lxml_3.4.0-1.diff.gz' lxml_3.4.0-1.diff.gz 6987 SHA256:694776f2cb5526f4620f1b8c1ad46983be7dfc19d28a6c7bccb35f666d73bc47
@@ -2661,7 +2768,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris mako=1.0.0+dfsg-0.1
 'http://httpredir.debian.org/debian/pool/main/m/mako/mako_1.0.0+dfsg-0.1.dsc' mako_1.0.0+dfsg-0.1.dsc 2321 SHA256:1b6075a4f91d70eb6de9d46b0361e9f27e28afbf09cc3f78cd10a4c0d0e1d16d
 'http://httpredir.debian.org/debian/pool/main/m/mako/mako_1.0.0+dfsg.orig.tar.gz' mako_1.0.0+dfsg.orig.tar.gz 420406 SHA256:ba17aaa6b44b3642d1d9cfaf643daa54c0991fe7152eedada05ca7311e2520f3
 'http://httpredir.debian.org/debian/pool/main/m/mako/mako_1.0.0+dfsg-0.1.debian.tar.xz' mako_1.0.0+dfsg-0.1.debian.tar.xz 10428 SHA256:90341cd8594c7650479b91697ac1df57a09ee73bc4a1076eb15711f006bb0a9d
@@ -2684,7 +2792,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris markupsafe=0.23-1
 'http://httpredir.debian.org/debian/pool/main/m/markupsafe/markupsafe_0.23-1.dsc' markupsafe_0.23-1.dsc 2342 SHA256:76adb1a09aeba049e6a01232873f20d1d01dd0f41e2f8262a61a2de58949eaa6
 'http://httpredir.debian.org/debian/pool/main/m/markupsafe/markupsafe_0.23.orig.tar.gz' markupsafe_0.23.orig.tar.gz 13416 SHA256:a4ec1aff59b95a14b45eb2e23761a0179e98319da5a7eb76b56ea8cdc7b871c3
 'http://httpredir.debian.org/debian/pool/main/m/markupsafe/markupsafe_0.23-1.debian.tar.xz' markupsafe_0.23-1.debian.tar.xz 3308 SHA256:c5cdade0541a37b805a378a747e9887bb6cb03faeaf562cc02377411b6763afa
@@ -2707,7 +2816,8 @@ Licenses: (parsed from: `/usr/share/doc/mawk/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris mawk=1.3.3-17
 'http://httpredir.debian.org/debian/pool/main/m/mawk/mawk_1.3.3-17.dsc' mawk_1.3.3-17.dsc 1801 SHA256:f98ce6e153e8ac1faf8165bbf77447a4279313f1c18f6bfeec0c5ce35e4b9c03
 'http://httpredir.debian.org/debian/pool/main/m/mawk/mawk_1.3.3.orig.tar.gz' mawk_1.3.3.orig.tar.gz 209942 SHA256:32649c46063d4ef0777a12ae6e9a26bcc920833d54e1abca7edb8d37481e7485
 'http://httpredir.debian.org/debian/pool/main/m/mawk/mawk_1.3.3-17.diff.gz' mawk_1.3.3-17.diff.gz 63506 SHA256:13cb66b6eb5ee654d5626621d5ef476ede6b0bebac18ce765516de810e58490c
@@ -2731,7 +2841,8 @@ Licenses: (parsed from: `/usr/share/doc/mime-support/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris mime-support=3.58
 'http://httpredir.debian.org/debian/pool/main/m/mime-support/mime-support_3.58.dsc' mime-support_3.58.dsc 1604 SHA256:3279480870a7bd6c7e2a85f7f1e5deba50c3cb5edcbd6ce69a3cfc7fe0266284
 'http://httpredir.debian.org/debian/pool/main/m/mime-support/mime-support_3.58.tar.gz' mime-support_3.58.tar.gz 34995 SHA256:3d9ca5115e93edb3ada3fb120cde88ac3d866903e18a41ca124428d77dd1721e
 ```
@@ -2757,7 +2868,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris ncurses=5.9+20140913-1
 'http://httpredir.debian.org/debian/pool/main/n/ncurses/ncurses_5.9+20140913-1.dsc' ncurses_5.9+20140913-1.dsc 3463 SHA256:c45d894baa8bd4814e41308edc573e2a5c0f14bdc849925a4a9281e0f3b3b640
 'http://httpredir.debian.org/debian/pool/main/n/ncurses/ncurses_5.9+20140913.orig.tar.gz' ncurses_5.9+20140913.orig.tar.gz 2987249 SHA256:c4247ad81ee9d743caba8a2db6dd96d36878530b2e76e376af1c00b067a2dec9
 'http://httpredir.debian.org/debian/pool/main/n/ncurses/ncurses_5.9+20140913-1.debian.tar.xz' ncurses_5.9+20140913-1.debian.tar.xz 51252 SHA256:ff102696241674e40cc0e525ae6cd4b10d249e29f2c77aa9c983af0bcebdd4ff
@@ -2780,7 +2892,8 @@ Licenses: (parsed from: `/usr/share/doc/netbase/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris netbase=5.3
 'http://httpredir.debian.org/debian/pool/main/n/netbase/netbase_5.3.dsc' netbase_5.3.dsc 1308 SHA256:fcb9c97fe55277f775fd5a39933ca0189b9a983c6cf1abc8184fc29b8e1d77cb
 'http://httpredir.debian.org/debian/pool/main/n/netbase/netbase_5.3.tar.xz' netbase_5.3.tar.xz 31292 SHA256:81f6c69795044d62b8ad959cf9daf049d0545fd466c52860ad3f933b1e97b88b
 ```
@@ -2812,7 +2925,8 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed2/copyright`, `/usr/share/doc/
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris nettle=2.7.1-5+deb8u1
 'http://httpredir.debian.org/debian/pool/main/n/nettle/nettle_2.7.1-5+deb8u1.dsc' nettle_2.7.1-5+deb8u1.dsc 2096 SHA256:9be625f7f50ee4844c8c4f776fb8d040141707760b481acd2f739a9280fa6dc5
 'http://httpredir.debian.org/debian/pool/main/n/nettle/nettle_2.7.1.orig.tar.gz' nettle_2.7.1.orig.tar.gz 1558863 SHA256:bc71ebd43435537d767799e414fce88e521b7278d48c860651216e1fc6555b40
 'http://httpredir.debian.org/debian/pool/main/n/nettle/nettle_2.7.1-5+deb8u1.debian.tar.xz' nettle_2.7.1-5+deb8u1.debian.tar.xz 19472 SHA256:ef01d799c2bae969afe33cf433a0cd8a9d507fe8510a775b5ff8ddc73e86559c
@@ -2835,7 +2949,8 @@ Licenses: (parsed from: `/usr/share/doc/node-clean-css/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris node-clean-css=1.0.12-1
 'http://httpredir.debian.org/debian/pool/main/n/node-clean-css/node-clean-css_1.0.12-1.dsc' node-clean-css_1.0.12-1.dsc 2042 SHA256:4289e09fba2ad79c46fcb013e4e1dc362f19dffdd3cd069c2a55a64bf5f60615
 'http://httpredir.debian.org/debian/pool/main/n/node-clean-css/node-clean-css_1.0.12.orig.tar.gz' node-clean-css_1.0.12.orig.tar.gz 281465 SHA256:23d65089ea6b3778536aaba90937573ebebe3497ec30f6a34f989fb64d6ca295
 'http://httpredir.debian.org/debian/pool/main/n/node-clean-css/node-clean-css_1.0.12-1.debian.tar.gz' node-clean-css_1.0.12-1.debian.tar.gz 3642 SHA256:541de6f1d6d4f7a9ae3ce39e81e3c023b545a347fe7d42dbd258f5866609db17
@@ -2858,7 +2973,8 @@ Licenses: (parsed from: `/usr/share/doc/node-commander/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris node-commander=2.4.0-1
 'http://httpredir.debian.org/debian/pool/main/n/node-commander/node-commander_2.4.0-1.dsc' node-commander_2.4.0-1.dsc 2085 SHA256:27d35942ba3e5051cd81712d93d0c948efcfcacc04365c2c9334a6aaff4831cb
 'http://httpredir.debian.org/debian/pool/main/n/node-commander/node-commander_2.4.0.orig.tar.gz' node-commander_2.4.0.orig.tar.gz 14614 SHA256:91220275fa19f09a064eeee06e389e932be09893fcd7b391c584b311e92cb837
 'http://httpredir.debian.org/debian/pool/main/n/node-commander/node-commander_2.4.0-1.debian.tar.xz' node-commander_2.4.0-1.debian.tar.xz 3440 SHA256:a92754b46423f6d92effe7847bd1a4fe2248bdaca53ba8555eab7f76a3881f1e
@@ -2894,7 +3010,8 @@ Licenses: (parsed from: `/usr/share/doc/nodejs/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris nodejs=0.10.29~dfsg-2
 'http://httpredir.debian.org/debian/pool/main/n/nodejs/nodejs_0.10.29~dfsg-2.dsc' nodejs_0.10.29~dfsg-2.dsc 2377 SHA256:5496484b75278c631e25cd3b1c862179faf1a2c57fc6be415abe19363dc68259
 'http://httpredir.debian.org/debian/pool/main/n/nodejs/nodejs_0.10.29~dfsg.orig.tar.gz' nodejs_0.10.29~dfsg.orig.tar.gz 6082803 SHA256:9968cb38781331a517def6ac039da74e9f0aab8f9fee433672ead73b0ae562d3
 'http://httpredir.debian.org/debian/pool/main/n/nodejs/nodejs_0.10.29~dfsg-2.debian.tar.xz' nodejs_0.10.29~dfsg-2.debian.tar.xz 40340 SHA256:210a22bcd7271be149d0d34c672a284f97a14b0f7c928b3a74a3aade3689e81a
@@ -2930,7 +3047,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris openldap=2.4.40+dfsg-1+deb8u2
 'http://httpredir.debian.org/debian/pool/main/o/openldap/openldap_2.4.40+dfsg-1+deb8u2.dsc' openldap_2.4.40+dfsg-1+deb8u2.dsc 2819 SHA256:fa6859696d15e6e2a40a940cb4f4356d0c04b5994faf02717f64c1e51517e877
 'http://httpredir.debian.org/debian/pool/main/o/openldap/openldap_2.4.40+dfsg.orig.tar.gz' openldap_2.4.40+dfsg.orig.tar.gz 4797667 SHA256:86c0326dc3dc5f1a9b3c25f7106b96f3eafcdf5da090b1fc586dec57d56e0e7f
 'http://httpredir.debian.org/debian/pool/main/o/openldap/openldap_2.4.40+dfsg-1+deb8u2.diff.gz' openldap_2.4.40+dfsg-1+deb8u2.diff.gz 179809 SHA256:aa5cb8c89c602c3625e121555de6dea53df051c811da49dc0f4487f4b859061a
@@ -2954,7 +3072,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u2
 'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u2.dsc' openssl_1.0.1t-1+deb8u2.dsc 2255 SHA256:db94455340a311e601b566bc6c67e875cb9bec9748793000f8934e8708a47616
 'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
 'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u2.debian.tar.xz' openssl_1.0.1t-1+deb8u2.debian.tar.xz 96512 SHA256:171a3ec0eefb0df65a48fe27edd40c0817a2d5a9bfe82f85e79f15208563f3a2
@@ -2979,7 +3098,8 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris p11-kit=0.20.7-1
 'http://httpredir.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.20.7-1.dsc' p11-kit_0.20.7-1.dsc 2221 SHA256:459d56241f560163471eb5ec789eb5691ca97c5aa9a1bca98dabcf613a2d4bc3
 'http://httpredir.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.20.7.orig.tar.gz' p11-kit_0.20.7.orig.tar.gz 986731 SHA256:68405492fe466b33927d461302aa98e703db3b8a596411585508bc33084484d2
 'http://httpredir.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.20.7-1.debian.tar.xz' p11-kit_0.20.7-1.debian.tar.xz 14208 SHA256:515dfcc279d284bfbee4d172c9cf1db3befe52d55e6d3f50d024c8f72d56574d
@@ -3005,7 +3125,8 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris pam=1.1.8-3.1+deb8u1
 'http://httpredir.debian.org/debian/pool/main/p/pam/pam_1.1.8-3.1+deb8u1.dsc' pam_1.1.8-3.1+deb8u1.dsc 2490 SHA256:4d13711e521437f821647bcccdcd464f7791dddd54c6eda86acecd03cc7817f2
 'http://httpredir.debian.org/debian/pool/main/p/pam/pam_1.1.8.orig.tar.gz' pam_1.1.8.orig.tar.gz 1892765 SHA256:4183409a450708a976eca5af561dbf4f0490141a08e86e4a1e649c7c1b094876
 'http://httpredir.debian.org/debian/pool/main/p/pam/pam_1.1.8-3.1+deb8u1.diff.gz' pam_1.1.8-3.1+deb8u1.diff.gz 134556 SHA256:5b6b66c660eab29b12d298e30189d647a3fa02c9551c71fdfcb62ec2caf165d2
@@ -3031,7 +3152,8 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris pango1.0=1.36.8-3
 'http://httpredir.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.36.8-3.dsc' pango1.0_1.36.8-3.dsc 3169 SHA256:8a0e51c2c4a33e4136dd4cabe670b265e48cf92e740d6d9889623c2183940a1e
 'http://httpredir.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.36.8.orig.tar.xz' pango1.0_1.36.8.orig.tar.xz 1033528 SHA256:18dbb51b8ae12bae0ab7a958e7cf3317c9acfc8a1e1103ec2f147164a0fc2d07
 'http://httpredir.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.36.8-3.debian.tar.xz' pango1.0_1.36.8-3.debian.tar.xz 31668 SHA256:4249e9e29a186994abe8d5d57debc81c446916a6c7ea872171597c4df4d8f6ea
@@ -3054,7 +3176,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris pcre3=2:8.35-3.3+deb8u4
 'http://httpredir.debian.org/debian/pool/main/p/pcre3/pcre3_8.35-3.3+deb8u4.dsc' pcre3_8.35-3.3+deb8u4.dsc 1985 SHA256:862ee7365c8cc9916f58856617701e2e2f3dcd384a34375379ddfa52b642c649
 'http://httpredir.debian.org/debian/pool/main/p/pcre3/pcre3_8.35.orig.tar.gz' pcre3_8.35.orig.tar.gz 1996552 SHA256:1c9ee292943ba2737f127b481a3f72f44c13fbd09a7b5b4eb8fa58650cfa56a0
 'http://httpredir.debian.org/debian/pool/main/p/pcre3/pcre3_8.35-3.3+deb8u4.debian.tar.gz' pcre3_8.35-3.3+deb8u4.debian.tar.gz 38081 SHA256:93e38ad38d4cdb21d346226eebc7e2ad419cbfe0261b27d2910e8e5c3a946fb9
@@ -3102,7 +3225,8 @@ Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-ba
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris perl=5.20.2-3+deb8u6
 'http://security.debian.org/pool/updates/main/p/perl/perl_5.20.2-3+deb8u6.dsc' perl_5.20.2-3+deb8u6.dsc 2322 SHA256:b7569ffa209fcd84bc4d487a9c242b21b0db591b3a9222ae0e1140bab67c6106
 'http://security.debian.org/pool/updates/main/p/perl/perl_5.20.2.orig.tar.bz2' perl_5.20.2.orig.tar.bz2 13717128 SHA256:e5a4713bc65e1da98ebd833dce425c000768bfe84d17ec5183ec5ca249db71ab
 'http://security.debian.org/pool/updates/main/p/perl/perl_5.20.2-3+deb8u6.debian.tar.xz' perl_5.20.2-3+deb8u6.debian.tar.xz 147848 SHA256:f6d31a96ea22b2f2626bb017c4960bcbdf1ac1e11e5639175cd9418fdccda812
@@ -3126,7 +3250,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris pillow=2.6.1-2+deb8u2
 'http://httpredir.debian.org/debian/pool/main/p/pillow/pillow_2.6.1-2+deb8u2.dsc' pillow_2.6.1-2+deb8u2.dsc 2996 SHA256:73e7254db8734df77ff9289e60cc0e7a4ed41bd8ae4a82ce253dcb3f5e6f496f
 'http://httpredir.debian.org/debian/pool/main/p/pillow/pillow_2.6.1.orig.tar.gz' pillow_2.6.1.orig.tar.gz 7299315 SHA256:78647bc8980c98f9d57659083c7a7e30d6a8bdd2c385f5b250f301e85a6acbad
 'http://httpredir.debian.org/debian/pool/main/p/pillow/pillow_2.6.1-2+deb8u2.debian.tar.xz' pillow_2.6.1-2+deb8u2.debian.tar.xz 216760 SHA256:7adf470443d9b44608e8fb7fc01956237cf80defd11a95deaaa6d8e04d6f0288
@@ -3149,7 +3274,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris pixman=0.32.6-3
 'http://httpredir.debian.org/debian/pool/main/p/pixman/pixman_0.32.6-3.dsc' pixman_0.32.6-3.dsc 2002 SHA256:bc1090a051b5ce887976c06e8f1e389941f906bc6fc5b95f88a17cc2f5f887f1
 'http://httpredir.debian.org/debian/pool/main/p/pixman/pixman_0.32.6.orig.tar.gz' pixman_0.32.6.orig.tar.gz 816702 SHA256:3dfed13b8060eadabf0a4945c7045b7793cc7e3e910e748a8bb0f0dc3e794904
 'http://httpredir.debian.org/debian/pool/main/p/pixman/pixman_0.32.6-3.diff.gz' pixman_0.32.6-3.diff.gz 283461 SHA256:d7343e301c4c79a931d38cfb3fcf6189c50a6904b3a26ea484481cba4fdef13c
@@ -3174,7 +3300,8 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris postgresql-9.4=9.4.8-0+deb8u1
 'http://httpredir.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.8-0+deb8u1.dsc' postgresql-9.4_9.4.8-0+deb8u1.dsc 3525 SHA256:a1fef31d67b43b50789f3190f924af2d04169a245168a94f98d5528d59453dd9
 'http://httpredir.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.8.orig.tar.bz2' postgresql-9.4_9.4.8.orig.tar.bz2 17740626 SHA256:4a10640e180e0d9adb587bc25a82dcce6bf507b033637e7fb9d4eeffa33a6b4c
 'http://httpredir.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.8-0+deb8u1.debian.tar.xz' postgresql-9.4_9.4.8-0+deb8u1.debian.tar.xz 21524 SHA256:d1cd08e5bd947484e9786aab21f263663eb8410e92922361be86daec80612004
@@ -3199,7 +3326,8 @@ Licenses: (parsed from: `/usr/share/doc/postgresql-client/copyright`, `/usr/shar
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris postgresql-common=165+deb8u1
 'http://httpredir.debian.org/debian/pool/main/p/postgresql-common/postgresql-common_165+deb8u1.dsc' postgresql-common_165+deb8u1.dsc 2290 SHA256:90995e95c0afbbd26092666a8cc5bc16faa197865a1ebc3ccef1f87f5e9c006f
 'http://httpredir.debian.org/debian/pool/main/p/postgresql-common/postgresql-common_165+deb8u1.tar.xz' postgresql-common_165+deb8u1.tar.xz 187316 SHA256:60df4de3921d2b051077ea8da6492e19b42a4aac442e1a4d356b89bfaa319a5d
 ```
@@ -3223,7 +3351,8 @@ Licenses: (parsed from: `/usr/share/doc/libprocps3/copyright`, `/usr/share/doc/p
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris procps=2:3.3.9-9
 'http://httpredir.debian.org/debian/pool/main/p/procps/procps_3.3.9-9.dsc' procps_3.3.9-9.dsc 2052 SHA256:b4ee0cb8b2cfb6362bf5a9b6ad2ac1a921098638c8c396fae5823080a159935d
 'http://httpredir.debian.org/debian/pool/main/p/procps/procps_3.3.9.orig.tar.xz' procps_3.3.9.orig.tar.xz 560812 SHA256:00f0cb0fadf968ddf605b0ef119846af07386629244d4f3da711a2cecf4e8663
 'http://httpredir.debian.org/debian/pool/main/p/procps/procps_3.3.9-9.debian.tar.xz' procps_3.3.9-9.debian.tar.xz 35096 SHA256:d66ade0f2d1b44ef55404cc612e25c0f031e7ed2f05e5ab628a0de8c27ed19bf
@@ -3246,7 +3375,8 @@ Licenses: (parsed from: `/usr/share/doc/python-psycopg2/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris psycopg2=2.5.4+dfsg-1
 'http://httpredir.debian.org/debian/pool/main/p/psycopg2/psycopg2_2.5.4+dfsg-1.dsc' psycopg2_2.5.4+dfsg-1.dsc 2517 SHA256:9e22b48ed8031a308996d0d3a7a5c9875c9ab0bb637fbf9920c67afeec366841
 'http://httpredir.debian.org/debian/pool/main/p/psycopg2/psycopg2_2.5.4+dfsg.orig.tar.gz' psycopg2_2.5.4+dfsg.orig.tar.gz 648018 SHA256:7884bc5d7e965e8955acc0c2967254bd6d7a6c4ef6a21527acbb417c0bc6c767
 'http://httpredir.debian.org/debian/pool/main/p/psycopg2/psycopg2_2.5.4+dfsg-1.diff.gz' psycopg2_2.5.4+dfsg-1.diff.gz 13112 SHA256:60228f2f76ef103282a1d8f91370274f60071972c04176a4894ce85472ad0c20
@@ -3269,7 +3399,8 @@ Licenses: (parsed from: `/usr/share/doc/python-pydot/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris pydot=1.0.28-1
 'http://httpredir.debian.org/debian/pool/main/p/pydot/pydot_1.0.28-1.dsc' pydot_1.0.28-1.dsc 1526 SHA256:0d81a132805b702f4eae899c57ebff846158f35db62e2bf1037046735fde279e
 'http://httpredir.debian.org/debian/pool/main/p/pydot/pydot_1.0.28.orig.tar.gz' pydot_1.0.28.orig.tar.gz 19711 SHA256:1eeaff7b104fb8f305a98318dafde0b2d15f1efcdf8b16206465551cd46ed9df
 'http://httpredir.debian.org/debian/pool/main/p/pydot/pydot_1.0.28-1.debian.tar.xz' pydot_1.0.28-1.debian.tar.xz 221044 SHA256:2dadddf57809af1e6e4c3293e198e46dc6266754883599d117d7b1edb7879253
@@ -3293,7 +3424,8 @@ Licenses: (parsed from: `/usr/share/doc/python-pyinotify/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris pyinotify=0.9.4-1
 'http://httpredir.debian.org/debian/pool/main/p/pyinotify/pyinotify_0.9.4-1.dsc' pyinotify_0.9.4-1.dsc 2170 SHA256:074754b28c2932051ef8fc64f617cd4fea03cc31f43494438b4f6ec46df0ee25
 'http://httpredir.debian.org/debian/pool/main/p/pyinotify/pyinotify_0.9.4.orig.tar.gz' pyinotify_0.9.4.orig.tar.gz 60255 SHA256:16f2b9ea135879f8455f2297c9ed0571409f801fe5697181a40aafccd4232119
 'http://httpredir.debian.org/debian/pool/main/p/pyinotify/pyinotify_0.9.4-1.debian.tar.gz' pyinotify_0.9.4-1.debian.tar.gz 5562 SHA256:4e669e8d48696b039862a1e991926c17bf7fa093266605f91019793a48da3e5b
@@ -3316,7 +3448,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris pyparsing=2.0.3+dfsg1-1
 'http://httpredir.debian.org/debian/pool/main/p/pyparsing/pyparsing_2.0.3+dfsg1-1.dsc' pyparsing_2.0.3+dfsg1-1.dsc 2325 SHA256:25782c319cb8f68ca9cca726541dd02c78cbeda3be5e72a011d98cb68cfe8e03
 'http://httpredir.debian.org/debian/pool/main/p/pyparsing/pyparsing_2.0.3+dfsg1.orig.tar.gz' pyparsing_2.0.3+dfsg1.orig.tar.gz 1375115 SHA256:79dacc5cec938d38012e8e99c16f562856cba83c5515f5b80d5b4366afd3efbe
 'http://httpredir.debian.org/debian/pool/main/p/pyparsing/pyparsing_2.0.3+dfsg1-1.debian.tar.xz' pyparsing_2.0.3+dfsg1-1.debian.tar.xz 6268 SHA256:b6b184787e161eab2545932ede2d5e863efcb28c60cd1610e086b2c8795c6791
@@ -3343,7 +3476,8 @@ Licenses: (parsed from: `/usr/share/doc/python-babel/copyright`, `/usr/share/doc
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris python-babel=1.3+dfsg.1-5
 'http://httpredir.debian.org/debian/pool/main/p/python-babel/python-babel_1.3+dfsg.1-5.dsc' python-babel_1.3+dfsg.1-5.dsc 2514 SHA256:de469978e379ad1eaba57e8f45dbe45fd2d57abb0d8ec2fb44aa51abc0ca7f14
 'http://httpredir.debian.org/debian/pool/main/p/python-babel/python-babel_1.3+dfsg.1.orig.tar.xz' python-babel_1.3+dfsg.1.orig.tar.xz 4372244 SHA256:eb838b2159000534ba7503ac1b535195bf15bd60e46f8f490ee3968c73f06b5c
 'http://httpredir.debian.org/debian/pool/main/p/python-babel/python-babel_1.3+dfsg.1-5.debian.tar.xz' python-babel_1.3+dfsg.1-5.debian.tar.xz 23176 SHA256:aa1709bc36ab7eafcd83f39eef925866b9b025cdb6930c34750cba876cab32ad
@@ -3366,7 +3500,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris python-dateutil=2.2-2
 'http://httpredir.debian.org/debian/pool/main/p/python-dateutil/python-dateutil_2.2-2.dsc' python-dateutil_2.2-2.dsc 2018 SHA256:98d0a24158421ec870d22474ee64ad23068872d6f45cc5ccf98f6ffa675bb6fd
 'http://httpredir.debian.org/debian/pool/main/p/python-dateutil/python-dateutil_2.2.orig.tar.gz' python-dateutil_2.2.orig.tar.gz 259085 SHA256:eec865307ebe7f329a6a9945c15453265a449cdaaf3710340828a1934d53e468
 'http://httpredir.debian.org/debian/pool/main/p/python-dateutil/python-dateutil_2.2-2.debian.tar.xz' python-dateutil_2.2-2.debian.tar.xz 8204 SHA256:816b53d2dd06da1611f74591b73827db10e0c140a948758e1209f532f2a04441
@@ -3389,7 +3524,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris python-decorator=3.4.0-2
 'http://httpredir.debian.org/debian/pool/main/p/python-decorator/python-decorator_3.4.0-2.dsc' python-decorator_3.4.0-2.dsc 2228 SHA256:0565f3cb1b74056d77763d08d4ee7e6d7962318014648cbe281ceec6fa519378
 'http://httpredir.debian.org/debian/pool/main/p/python-decorator/python-decorator_3.4.0.orig.tar.gz' python-decorator_3.4.0.orig.tar.gz 30333 SHA256:c20b404cbb7ee5cebd506688e0114e3cd76f5ce233805a51f36e1a7988d9d783
 'http://httpredir.debian.org/debian/pool/main/p/python-decorator/python-decorator_3.4.0-2.debian.tar.gz' python-decorator_3.4.0-2.debian.tar.gz 3747 SHA256:5d15836bbe7af78c0cc4c9240dc97322cae7c1644b0e3d78d1eaccfd785fadcc
@@ -3414,7 +3550,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris python-defaults=2.7.9-1
 'http://httpredir.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.9-1.dsc' python-defaults_2.7.9-1.dsc 2625 SHA256:1bd64d97e03fd08b1563adba7213117020779b786eb0855facc2bbd382739612
 'http://httpredir.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.9-1.tar.gz' python-defaults_2.7.9-1.tar.gz 280698 SHA256:8e3d58c49b65744867edb5ee8713affd51ad068b2efd09201f56f12a57ef24e7
 ```
@@ -3444,7 +3581,8 @@ Licenses: (parsed from: `/usr/share/doc/docutils-common/copyright`, `/usr/share/
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris python-docutils=0.12+dfsg-1
 'http://httpredir.debian.org/debian/pool/main/p/python-docutils/python-docutils_0.12+dfsg-1.dsc' python-docutils_0.12+dfsg-1.dsc 2413 SHA256:31a1084d7612de374d876c540fcc18cfaf17f7a8cca7c8f8a15b4bad9cb16711
 'http://httpredir.debian.org/debian/pool/main/p/python-docutils/python-docutils_0.12+dfsg.orig.tar.gz' python-docutils_0.12+dfsg.orig.tar.gz 1624713 SHA256:644b21131ce0503047b754613d017852a943807bb73e616f7f0c3b3e8a22b21d
 'http://httpredir.debian.org/debian/pool/main/p/python-docutils/python-docutils_0.12+dfsg-1.debian.tar.xz' python-docutils_0.12+dfsg-1.debian.tar.xz 29520 SHA256:b5a9e07208579f92d76d8689c35b16635ee6cbdbfe8f8f2a4d5277007f0cc489
@@ -3467,7 +3605,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris python-ldap=2.4.10-1
 'http://httpredir.debian.org/debian/pool/main/p/python-ldap/python-ldap_2.4.10-1.dsc' python-ldap_2.4.10-1.dsc 1212 SHA256:978dfb27789de8cb4afa3c16e3672b5efa99ddc780ef2d595ee2197f53f6915a
 'http://httpredir.debian.org/debian/pool/main/p/python-ldap/python-ldap_2.4.10.orig.tar.gz' python-ldap_2.4.10.orig.tar.gz 134153 SHA256:67cc7801bf24c29386ab99966ceb68d6a60fa9e0566cc95a4fbb2c4695a8ce54
 'http://httpredir.debian.org/debian/pool/main/p/python-ldap/python-ldap_2.4.10-1.debian.tar.gz' python-ldap_2.4.10-1.debian.tar.gz 6076 SHA256:1e9d227f181197e8dc677707d4b8c417cbf0da6fea63232bfeb12248e796d094
@@ -3490,7 +3629,8 @@ Licenses: (parsed from: `/usr/share/doc/python-mock/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris python-mock=1.0.1-3
 'http://httpredir.debian.org/debian/pool/main/p/python-mock/python-mock_1.0.1-3.dsc' python-mock_1.0.1-3.dsc 2289 SHA256:3355b6938067efc4e54d75dc2bba61381b590cbfe843c1721fd3c6859c0bacf4
 'http://httpredir.debian.org/debian/pool/main/p/python-mock/python-mock_1.0.1.orig.tar.gz' python-mock_1.0.1.orig.tar.gz 818644 SHA256:b839dd2d9c117c701430c149956918a423a9863b48b09c90e30a6013e7d2f44f
 'http://httpredir.debian.org/debian/pool/main/p/python-mock/python-mock_1.0.1-3.debian.tar.xz' python-mock_1.0.1-3.debian.tar.xz 4612 SHA256:7dede852ede16af28bbd8d15e3d0031375d424b84bb914d8eae1ae21c5a51f21
@@ -3513,7 +3653,8 @@ Licenses: (parsed from: `/usr/share/doc/python-openid/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris python-openid=2.2.5-6
 'http://httpredir.debian.org/debian/pool/main/p/python-openid/python-openid_2.2.5-6.dsc' python-openid_2.2.5-6.dsc 2162 SHA256:71958658be07d026c0a3fc77ca08f8368e0f46f544642542bf636299832c1c96
 'http://httpredir.debian.org/debian/pool/main/p/python-openid/python-openid_2.2.5.orig.tar.gz' python-openid_2.2.5.orig.tar.gz 300524 SHA256:cb518b0804ccfa859d143753d33f49204c7d994cb08d1a2736fb841a1e7722e3
 'http://httpredir.debian.org/debian/pool/main/p/python-openid/python-openid_2.2.5-6.debian.tar.xz' python-openid_2.2.5-6.debian.tar.xz 4944 SHA256:0e66e621a4ac57f6c1053ef5ae9ac9d6a2142373e3f023f901e7427b2b60c867
@@ -3536,7 +3677,8 @@ Licenses: (parsed from: `/usr/share/doc/python-passlib/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris python-passlib=1.6.1-1
 'http://httpredir.debian.org/debian/pool/main/p/python-passlib/python-passlib_1.6.1-1.dsc' python-passlib_1.6.1-1.dsc 1925 SHA256:a364c4f9ae500d431131fa9a917c0538b26ac841192df437f4d86c3aa53484c7
 'http://httpredir.debian.org/debian/pool/main/p/python-passlib/python-passlib_1.6.1.orig.tar.gz' python-passlib_1.6.1.orig.tar.gz 395855 SHA256:00cfb564feb2d97ebaf6b28acdc9277a0c73c3c1df7b2a7b65605c76e724177b
 'http://httpredir.debian.org/debian/pool/main/p/python-passlib/python-passlib_1.6.1-1.debian.tar.gz' python-passlib_1.6.1-1.debian.tar.gz 2069 SHA256:074978bced7247f10ac25217e64de130e132427160d960aedd46487516a1056e
@@ -3559,7 +3701,8 @@ Licenses: (parsed from: `/usr/share/doc/python-psutil/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris python-psutil=2.1.1-1
 'http://httpredir.debian.org/debian/pool/main/p/python-psutil/python-psutil_2.1.1-1.dsc' python-psutil_2.1.1-1.dsc 1538 SHA256:1c551948755baf7dc0829af900561e2db41c18e24e779647245f56b82dd3055f
 'http://httpredir.debian.org/debian/pool/main/p/python-psutil/python-psutil_2.1.1.orig.tar.gz' python-psutil_2.1.1.orig.tar.gz 216796 SHA256:bf812a4aa6a41147d0e96e63d826eb7582fda6b54ad8f22534354b7f8ac45593
 'http://httpredir.debian.org/debian/pool/main/p/python-psutil/python-psutil_2.1.1-1.debian.tar.xz' python-psutil_2.1.1-1.debian.tar.xz 4508 SHA256:b5c966c48d3c7076d373dfc3dc487b442e58a82a1878ed1bde97262695482894
@@ -3584,7 +3727,8 @@ Licenses: (parsed from: `/usr/share/doc/python-pychart/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris python-pychart=1.39-7
 'http://httpredir.debian.org/debian/pool/main/p/python-pychart/python-pychart_1.39-7.dsc' python-pychart_1.39-7.dsc 1412 SHA256:57d97412c1934e5dd3679ca7e9a8e178ed08f4d89e6cc83ec3cc8553995938af
 'http://httpredir.debian.org/debian/pool/main/p/python-pychart/python-pychart_1.39.orig.tar.gz' python-pychart_1.39.orig.tar.gz 419556 SHA256:72521ad9a64adf2be1c157e81cf92d3c5f7bb8a544a10a911626b25bdbc6a82f
 'http://httpredir.debian.org/debian/pool/main/p/python-pychart/python-pychart_1.39-7.diff.gz' python-pychart_1.39-7.diff.gz 3308 SHA256:17954f43c3a288c1ac2b74bc1cf721dcac4909847822c3713e5021ff07af9369
@@ -3607,7 +3751,8 @@ Licenses: (parsed from: `/usr/share/doc/python-pypdf/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris python-pypdf=1:1.13-2
 'http://httpredir.debian.org/debian/pool/main/p/python-pypdf/python-pypdf_1.13-2.dsc' python-pypdf_1.13-2.dsc 1614 SHA256:b05975bdaa8462f1df91d15af6da00a08248efa38951c4d80f65314aa35aa40e
 'http://httpredir.debian.org/debian/pool/main/p/python-pypdf/python-pypdf_1.13-2.tar.gz' python-pypdf_1.13-2.tar.gz 58336 SHA256:4d090fc312eade5a90f007efc360988ad2707f762a036f8a6b824dcf3a0f1194
 ```
@@ -3632,7 +3777,8 @@ Licenses: (parsed from: `/usr/share/doc/python-renderpm/copyright`, `/usr/share/
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris python-reportlab=3.1.8-3+deb8u1
 'http://httpredir.debian.org/debian/pool/main/p/python-reportlab/python-reportlab_3.1.8-3+deb8u1.dsc' python-reportlab_3.1.8-3+deb8u1.dsc 2555 SHA256:5f31a21d3eaa0ddac45bd7e9c8300c4dea56e9a4d5262c4a32bb492bd32bb325
 'http://httpredir.debian.org/debian/pool/main/p/python-reportlab/python-reportlab_3.1.8.orig.tar.gz' python-reportlab_3.1.8.orig.tar.gz 1936964 SHA256:35177c86ad52a3a3a15678f2f442694f1ff909cc303364899e8ca241934a262b
 'http://httpredir.debian.org/debian/pool/main/p/python-reportlab/python-reportlab_3.1.8-3+deb8u1.debian.tar.xz' python-reportlab_3.1.8-3+deb8u1.debian.tar.xz 11604 SHA256:b01b0bf70592788b8c51cbfbd018e83b218d513b684614029a4293ede1137bc2
@@ -3656,7 +3802,8 @@ Licenses: (parsed from: `/usr/share/doc/python-roman/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris python-roman=2.0.0-1
 'http://httpredir.debian.org/debian/pool/main/p/python-roman/python-roman_2.0.0-1.dsc' python-roman_2.0.0-1.dsc 2135 SHA256:9172299b91e04542ad9aa3db1977a7dfa0ac949b27fe83bd720cd571c218348e
 'http://httpredir.debian.org/debian/pool/main/p/python-roman/python-roman_2.0.0.orig.tar.gz' python-roman_2.0.0.orig.tar.gz 4968 SHA256:98f2c0fb3cdcfba465d12c85b3b7139fc4cd2177f1325f1bacfe00878c8fa7b9
 'http://httpredir.debian.org/debian/pool/main/p/python-roman/python-roman_2.0.0-1.debian.tar.gz' python-roman_2.0.0-1.debian.tar.gz 8569 SHA256:55aba5a6469152a09a320ec745cff799a4a07774d0c79598880a22b72e686296
@@ -3679,7 +3826,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris python-setuptools=5.5.1-1
 'http://httpredir.debian.org/debian/pool/main/p/python-setuptools/python-setuptools_5.5.1-1.dsc' python-setuptools_5.5.1-1.dsc 1675 SHA256:5d38481302f8b5312af0f58d6ea486e941c8091674e6dd32eb3bc47d281ee643
 'http://httpredir.debian.org/debian/pool/main/p/python-setuptools/python-setuptools_5.5.1.orig.tar.gz' python-setuptools_5.5.1.orig.tar.gz 1017931 SHA256:0a930d7b76d3791f7d1e7cf62e9ca74d3a89b653a86577b0a73969a6ad9e427c
 'http://httpredir.debian.org/debian/pool/main/p/python-setuptools/python-setuptools_5.5.1-1.debian.tar.xz' python-setuptools_5.5.1-1.debian.tar.xz 12928 SHA256:efbfdf88e002bf5ebc712255f034de2c4873a6752f1abe2ed0bece4faeb59714
@@ -3703,7 +3851,8 @@ Licenses: (parsed from: `/usr/share/doc/python-stdnum/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris python-stdnum=1.0-1
 'http://httpredir.debian.org/debian/pool/main/p/python-stdnum/python-stdnum_1.0-1.dsc' python-stdnum_1.0-1.dsc 1557 SHA256:f20078637c51315ea1e989401795b265c802232358f4d3082394ec2bd43ed603
 'http://httpredir.debian.org/debian/pool/main/p/python-stdnum/python-stdnum_1.0.orig.tar.gz' python-stdnum_1.0.orig.tar.gz 183712 SHA256:71c72762ccb37dca92bc58062a799acc824595b9e52a0329fb64dd0c24b6c05e
 'http://httpredir.debian.org/debian/pool/main/p/python-stdnum/python-stdnum_1.0-1.debian.tar.xz' python-stdnum_1.0-1.debian.tar.xz 78584 SHA256:74b27f28534800079bafd012afb1714364bc5cf9132a83a8aaa71eb5cde9439a
@@ -3726,7 +3875,8 @@ Licenses: (parsed from: `/usr/share/doc/python-support/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris python-support=1.0.15
 'http://httpredir.debian.org/debian/pool/main/p/python-support/python-support_1.0.15.dsc' python-support_1.0.15.dsc 1725 SHA256:e9988c2a231ff08c0b4695031ceb169a9547401f260b90dede0751b7b133b6a3
 'http://httpredir.debian.org/debian/pool/main/p/python-support/python-support_1.0.15.tar.gz' python-support_1.0.15.tar.gz 38442 SHA256:d499b5e5daac0a7066a44de983ec1ef79310f62ba199d5b8fb0a5b5ee21c6e75
 ```
@@ -3748,7 +3898,8 @@ Licenses: (parsed from: `/usr/share/doc/python-tz/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris python-tz=2012c+dfsg-0.1
 'http://httpredir.debian.org/debian/pool/main/p/python-tz/python-tz_2012c+dfsg-0.1.dsc' python-tz_2012c+dfsg-0.1.dsc 2136 SHA256:56bf8603c57ae0e315f1b86a5cf570ca6f95bfc0914ed2ac33d72b30db986c02
 'http://httpredir.debian.org/debian/pool/main/p/python-tz/python-tz_2012c+dfsg.orig.tar.gz' python-tz_2012c+dfsg.orig.tar.gz 41812 SHA256:721334b9529c845663f0acc85414a4b793931a8abb1f855fb0be80a5a41aca1c
 'http://httpredir.debian.org/debian/pool/main/p/python-tz/python-tz_2012c+dfsg-0.1.debian.tar.xz' python-tz_2012c+dfsg-0.1.debian.tar.xz 5520 SHA256:6646cfbdc549e1be8d0d942516f065892619939f11ed8fb3ab831bbcf8376317
@@ -3772,7 +3923,8 @@ Licenses: (parsed from: `/usr/share/doc/python-urllib3/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris python-urllib3=1.9.1-3
 'http://httpredir.debian.org/debian/pool/main/p/python-urllib3/python-urllib3_1.9.1-3.dsc' python-urllib3_1.9.1-3.dsc 1750 SHA256:af8b947bfecd8f4ab9fb9285fc1a4980eb30aaedef14448bc9b3f1e6f86de5c8
 'http://httpredir.debian.org/debian/pool/main/p/python-urllib3/python-urllib3_1.9.1.orig.tar.gz' python-urllib3_1.9.1.orig.tar.gz 171086 SHA256:d858379ef5988d4534bb8909432d697422100aaff272299d661339836b6dae9b
 'http://httpredir.debian.org/debian/pool/main/p/python-urllib3/python-urllib3_1.9.1-3.debian.tar.xz' python-urllib3_1.9.1-3.debian.tar.xz 8080 SHA256:1d73103bf4b7c0f84140830ffa63cf1b9b8d43ca0de17cc8e1d0bc125f803453
@@ -3795,7 +3947,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris python-vobject=0.8.1c-4
 'http://httpredir.debian.org/debian/pool/main/p/python-vobject/python-vobject_0.8.1c-4.dsc' python-vobject_0.8.1c-4.dsc 1359 SHA256:f8fe0d49bbd4ab2e2d1d05958ab4c712f4024cf217706ac53e6a8601ca9d92c9
 'http://httpredir.debian.org/debian/pool/main/p/python-vobject/python-vobject_0.8.1c.orig.tar.gz' python-vobject_0.8.1c.orig.tar.gz 59925 SHA256:594113117f2017ed837c8f3ce727616f9053baa5a5463a7420c8249b8fc556f5
 'http://httpredir.debian.org/debian/pool/main/p/python-vobject/python-vobject_0.8.1c-4.diff.gz' python-vobject_0.8.1c-4.diff.gz 6809 SHA256:ef6b624af6128b2aada9c8926e0b2a6efdd636c013c97b43ddb9023db796d0b1
@@ -3822,7 +3975,8 @@ Licenses: (parsed from: `/usr/share/doc/python-werkzeug/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris python-werkzeug=0.9.6+dfsg-1
 'http://httpredir.debian.org/debian/pool/main/p/python-werkzeug/python-werkzeug_0.9.6+dfsg-1.dsc' python-werkzeug_0.9.6+dfsg-1.dsc 2492 SHA256:83a5b81a456d0b4458e996db92e9aed83bfaf8ff3e6ef6f3fcdcc208c6e5b164
 'http://httpredir.debian.org/debian/pool/main/p/python-werkzeug/python-werkzeug_0.9.6+dfsg.orig.tar.xz' python-werkzeug_0.9.6+dfsg.orig.tar.xz 991104 SHA256:7c841b2844e49585e23459864de3eaef8069e73a6bd1fc4c98c3e9051406d9af
 'http://httpredir.debian.org/debian/pool/main/p/python-werkzeug/python-werkzeug_0.9.6+dfsg-1.debian.tar.xz' python-werkzeug_0.9.6+dfsg-1.debian.tar.xz 6860 SHA256:7c16d30546c5b2b2370c0d776cfd316176764d0077ecdcf8ea5e738ec62435d0
@@ -3856,7 +4010,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7/copyright`, `/usr/share/doc
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris python2.7=2.7.9-2
 'http://httpredir.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.9-2.dsc' python2.7_2.7.9-2.dsc 3243 SHA256:77416ef849a46bfa3ee521af9eed578f8af474b55d8a212082ee4613c9b6f0c3
 'http://httpredir.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.9.orig.tar.gz' python2.7_2.7.9.orig.tar.gz 15148821 SHA256:46454dc4cb20e1f9b85aef63985890fa7e247f5941991761afd97d68e69b1901
 'http://httpredir.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.9-2.diff.gz' python2.7_2.7.9-2.diff.gz 264761 SHA256:45b10e5de087807f1165c0dc4eba79bb733051f43d184488ff07bde8701697dd
@@ -3879,7 +4034,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris pyyaml=3.11-2
 'http://httpredir.debian.org/debian/pool/main/p/pyyaml/pyyaml_3.11-2.dsc' pyyaml_3.11-2.dsc 2206 SHA256:351634320968bc8df4da50c01903b25ddd510a87b0596c02400f3dc62385bff7
 'http://httpredir.debian.org/debian/pool/main/p/pyyaml/pyyaml_3.11.orig.tar.gz' pyyaml_3.11.orig.tar.gz 248685 SHA256:c36c938a872e5ff494938b33b14aaa156cb439ec67548fcab3535bb78b0846e8
 'http://httpredir.debian.org/debian/pool/main/p/pyyaml/pyyaml_3.11-2.diff.gz' pyyaml_3.11-2.diff.gz 6638 SHA256:09c12f8d975147929fdf719dbee47c2e9349797da096082c811191ecee4e0773
@@ -3903,7 +4059,8 @@ Licenses: (parsed from: `/usr/share/doc/libreadline6/copyright`, `/usr/share/doc
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris readline6=6.3-8
 'http://httpredir.debian.org/debian/pool/main/r/readline6/readline6_6.3-8.dsc' readline6_6.3-8.dsc 1941 SHA256:f7ab77b8580cbdb10b3906f40c3da12d0acc93bef786ff217c65aabc32973cec
 'http://httpredir.debian.org/debian/pool/main/r/readline6/readline6_6.3.orig.tar.gz' readline6_6.3.orig.tar.gz 2468560 SHA256:56ba6071b9462f980c5a72ab0023893b65ba6debb4eeb475d7a563dc65cafd43
 'http://httpredir.debian.org/debian/pool/main/r/readline6/readline6_6.3-8.debian.tar.xz' readline6_6.3-8.debian.tar.xz 30576 SHA256:c2b55fdd221136f46fa1e0cbf0bf2e37b70ddf97929312fbab6032e9129d58b5
@@ -3931,7 +4088,8 @@ Licenses: (parsed from: `/usr/share/doc/python-requests/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris requests=2.4.3-6
 'http://httpredir.debian.org/debian/pool/main/r/requests/requests_2.4.3-6.dsc' requests_2.4.3-6.dsc 2272 SHA256:44437f9970857a1dea8558adb86e46ffb808da547c24ab5121009d999d75701e
 'http://httpredir.debian.org/debian/pool/main/r/requests/requests_2.4.3.orig.tar.gz' requests_2.4.3.orig.tar.gz 438132 SHA256:53c68313c5c6149b1a899234c000296e60a8900682accf73d6f0c6d608afc6b1
 'http://httpredir.debian.org/debian/pool/main/r/requests/requests_2.4.3-6.debian.tar.xz' requests_2.4.3-6.debian.tar.xz 8688 SHA256:e10d3fd38ca599f34c8a90787dc379b954dc52b3bbfac30b166801aa1ef52bf2
@@ -3955,7 +4113,8 @@ Licenses: (parsed from: `/usr/share/doc/librtmp1/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris rtmpdump=2.4+20150115.gita107cef-1
 'http://httpredir.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4+20150115.gita107cef-1.dsc' rtmpdump_2.4+20150115.gita107cef-1.dsc 2257 SHA256:acfa72b9e6e0a96b4a514201b2e11e8ec9ae3173596f0467f6a5eb300d5fecdd
 'http://httpredir.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4+20150115.gita107cef.orig.tar.gz' rtmpdump_2.4+20150115.gita107cef.orig.tar.gz 142030 SHA256:d47ef3a07815079bf73eb5d053001c4341407fcbebf39f34e6213c4b772cb29a
 'http://httpredir.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4+20150115.gita107cef-1.debian.tar.xz' rtmpdump_2.4+20150115.gita107cef-1.debian.tar.xz 7004 SHA256:68d430d4f97be9767674920fb0a7821761ad1633578aa3cd6144b919ebbfcca4
@@ -3978,7 +4137,8 @@ Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris sed=4.2.2-4
 'http://httpredir.debian.org/debian/pool/main/s/sed/sed_4.2.2-4.dsc' sed_4.2.2-4.dsc 1825 SHA256:6da9792019d46b284ddeae274b86a9087f70a9628b5c1c5b5249fece473c7811
 'http://httpredir.debian.org/debian/pool/main/s/sed/sed_4.2.2.orig.tar.bz2' sed_4.2.2.orig.tar.bz2 1059414 SHA256:f048d1838da284c8bc9753e4506b85a1e0cc1ea8999d36f6995bcb9460cddbd7
 'http://httpredir.debian.org/debian/pool/main/s/sed/sed_4.2.2-4.debian.tar.xz' sed_4.2.2-4.debian.tar.xz 57644 SHA256:bcceb809e26ad0088b7a468c03d62ab3865809d0ea7b97dcad0188a69217438e
@@ -4001,7 +4161,8 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris sensible-utils=0.0.9
 'http://httpredir.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9.dsc' sensible-utils_0.0.9.dsc 1405 SHA256:390c29b31a09ab7f31f8b5fc0fd82e47c25f15b22b17c614fb87f12d3b091070
 'http://httpredir.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9.tar.gz' sensible-utils_0.0.9.tar.gz 74331 SHA256:6fcb5cc0f7f1cf80421840cfa17b1b3fa5afaf3fe852dc984a789023af2f70c6
 ```
@@ -4023,7 +4184,8 @@ Licenses: (parsed from: `/usr/share/doc/sgml-base/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris sgml-base=1.26+nmu4
 'http://httpredir.debian.org/debian/pool/main/s/sgml-base/sgml-base_1.26+nmu4.dsc' sgml-base_1.26+nmu4.dsc 1482 SHA256:967c5dad980d13a5b235b4b6b4a66428303ba85a0e64b7c7f4659b69d9203ec6
 'http://httpredir.debian.org/debian/pool/main/s/sgml-base/sgml-base_1.26+nmu4.tar.gz' sgml-base_1.26+nmu4.tar.gz 12845 SHA256:7aea8d5d404476754363763e2bef2bafd52e90e68eb7055366432624cab6c667
 ```
@@ -4046,7 +4208,8 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris shadow=1:4.2-3+deb8u1
 'http://httpredir.debian.org/debian/pool/main/s/shadow/shadow_4.2-3+deb8u1.dsc' shadow_4.2-3+deb8u1.dsc 1997 SHA256:70707cb99ecf37c23abf020506dfd4a76834dd334317e3d34addcdee1c8fe8e8
 'http://httpredir.debian.org/debian/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
 'http://httpredir.debian.org/debian/pool/main/s/shadow/shadow_4.2-3+deb8u1.debian.tar.xz' shadow_4.2-3+deb8u1.debian.tar.xz 496336 SHA256:f189d31410ef30fb53dac5373c3973109233a7afb345b237a879f0d32d2511ab
@@ -4069,7 +4232,8 @@ Licenses: (parsed from: `/usr/share/doc/python-six/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris six=1.8.0-1
 'http://httpredir.debian.org/debian/pool/main/s/six/six_1.8.0-1.dsc' six_1.8.0-1.dsc 2190 SHA256:0a834968d7b904daeef77c2c1747483b24354e2502ddac3345247482f50ca53f
 'http://httpredir.debian.org/debian/pool/main/s/six/six_1.8.0.orig.tar.gz' six_1.8.0.orig.tar.gz 26925 SHA256:047bbbba41bac37c444c75ddfdf0573dd6e2f1fbd824e6247bb26fa7d8fa3830
 'http://httpredir.debian.org/debian/pool/main/s/six/six_1.8.0-1.debian.tar.xz' six_1.8.0-1.debian.tar.xz 2868 SHA256:0b1c06ec11d8d8369d8cace4bcf135ac093b848e0129390f0913a4f4b0a8e4ae
@@ -4093,7 +4257,8 @@ Licenses: (parsed from: `/usr/share/doc/libslang2/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris slang2=2.3.0-2
 'http://httpredir.debian.org/debian/pool/main/s/slang2/slang2_2.3.0-2.dsc' slang2_2.3.0-2.dsc 2329 SHA256:2d6ede702782aec9758a3fb6001837ef6d2191d3989db63aa55333da74d5b05e
 'http://httpredir.debian.org/debian/pool/main/s/slang2/slang2_2.3.0.orig.tar.xz' slang2_2.3.0.orig.tar.xz 1250392 SHA256:cdd5b9582959b3afdae403ee6f4be9de8efc7e205e4a7de18c1a847ea5ef0472
 'http://httpredir.debian.org/debian/pool/main/s/slang2/slang2_2.3.0-2.debian.tar.xz' slang2_2.3.0-2.debian.tar.xz 21864 SHA256:8b088f54be2a284eedee56d74968feb4cc662410d352280a7e351cc02bef57b2
@@ -4118,7 +4283,8 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris sqlite3=3.8.7.1-1+deb8u1
 'http://httpredir.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.8.7.1-1+deb8u1.dsc' sqlite3_3.8.7.1-1+deb8u1.dsc 2540 SHA256:f1c3e9473c9aeca789be009d265d1de6df4d21c4ad959da1eeaa12986df8cef0
 'http://httpredir.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.8.7.1.orig-www.tar.bz2' sqlite3_3.8.7.1.orig-www.tar.bz2 3337784 SHA256:e642657752f20144f42d002895510ea635e0384b14f276f1a2f281b73252bc64
 'http://httpredir.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.8.7.1.orig.tar.bz2' sqlite3_3.8.7.1.orig.tar.bz2 4082068 SHA256:2632a999feba925aa0f1828fa669a091b165a719676765fb542f538345bfa7b9
@@ -4143,7 +4309,8 @@ Licenses: (parsed from: `/usr/share/doc/startpar/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris startpar=0.59-3
 'http://httpredir.debian.org/debian/pool/main/s/startpar/startpar_0.59-3.dsc' startpar_0.59-3.dsc 1496 SHA256:f8fdfac7902c1b0cf5d627421893deaa8e041e9e23096ae60a33fe84464526ff
 'http://httpredir.debian.org/debian/pool/main/s/startpar/startpar_0.59.orig.tar.bz2' startpar_0.59.orig.tar.bz2 22747 SHA256:30a30c8d27a694e3743c1839fb6f60563b2882cddf0e61c698120c4cbde1d7b9
 'http://httpredir.debian.org/debian/pool/main/s/startpar/startpar_0.59-3.debian.tar.xz' startpar_0.59-3.debian.tar.xz 38428 SHA256:abd4650e507cd4e63e7caf2199972b6ee5367aea34ae8f53a19caf126bd2248c
@@ -4167,7 +4334,8 @@ Licenses: (parsed from: `/usr/share/doc/python-suds/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris suds=0.4.1-15
 'http://httpredir.debian.org/debian/pool/main/s/suds/suds_0.4.1-15.dsc' suds_0.4.1-15.dsc 1911 SHA256:23e4e32eb61aa35a0bfd233c8923c016537f2101b4cf990ec1c71300d66d5933
 'http://httpredir.debian.org/debian/pool/main/s/suds/suds_0.4.1.orig.tar.xz' suds_0.4.1.orig.tar.xz 84396 SHA256:aba80c9667d8c84557b41c39ca835d0c7331a4a1ce79fd21de66ce475dba3aff
 'http://httpredir.debian.org/debian/pool/main/s/suds/suds_0.4.1-15.debian.tar.xz' suds_0.4.1-15.debian.tar.xz 18832 SHA256:32953d66e6ab623da73d8e2b8c8020ef35a763a102f9904e035b25ad35c4abca
@@ -4199,7 +4367,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris systemd=215-17+deb8u4
 'http://httpredir.debian.org/debian/pool/main/s/systemd/systemd_215-17+deb8u4.dsc' systemd_215-17+deb8u4.dsc 4135 SHA256:491ed139204121141008720b1bc8c63d0b44c87152932d89050c99f3603d308b
 'http://httpredir.debian.org/debian/pool/main/s/systemd/systemd_215.orig.tar.xz' systemd_215.orig.tar.xz 2888652 SHA256:ce76a3c05e7d4adc806a3446a5510c0c9b76a33f19adc32754b69a0945124505
 'http://httpredir.debian.org/debian/pool/main/s/systemd/systemd_215-17+deb8u4.debian.tar.xz' systemd_215-17+deb8u4.debian.tar.xz 215280 SHA256:5f97a41ad841b0ffe7f67cc67eeafeadf3b86d4593da09964e754fad2f05c28e
@@ -4224,7 +4393,8 @@ Licenses: (parsed from: `/usr/share/doc/initscripts/copyright`, `/usr/share/doc/
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris sysvinit=2.88dsf-59
 'http://httpredir.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf-59.dsc' sysvinit_2.88dsf-59.dsc 2467 SHA256:0201f6d34c1be692ac0e594a4006e7e0b921eda7ffb37b4373abc949bf7181b2
 'http://httpredir.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf.orig.tar.gz' sysvinit_2.88dsf.orig.tar.gz 125330 SHA256:b016f937958d2809a020d407e1287bdc09abf1d44efaa96530e2ea57f544f4e8
 'http://httpredir.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf-59.debian.tar.xz' sysvinit_2.88dsf-59.debian.tar.xz 152316 SHA256:cfd1ff3423b7cfb2239f2311088eba8e5b8abde1835cb25806fb0983d159635f
@@ -4248,7 +4418,8 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris tar=1.27.1-2
 'http://httpredir.debian.org/debian/pool/main/t/tar/tar_1.27.1-2.dsc' tar_1.27.1-2.dsc 1859 SHA256:c79d3621eb195c92fd60bfccaedb6fc37c117549f8ef11a44e8b0dc7c14fc1fc
 'http://httpredir.debian.org/debian/pool/main/t/tar/tar_1.27.1.orig.tar.xz' tar_1.27.1.orig.tar.xz 1704252 SHA256:58169c5a03c04be20d3fb91010b01e822c6a58060a96e7cf2f9c1944de0151ab
 'http://httpredir.debian.org/debian/pool/main/t/tar/tar_1.27.1-2.debian.tar.xz' tar_1.27.1-2.debian.tar.xz 31996 SHA256:e2fab717e4574b2add8fc97ddf9fa7eb23a55152536c8c5e51383675f8774645
@@ -4271,7 +4442,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris tiff=4.0.3-12.3+deb8u1
 'http://httpredir.debian.org/debian/pool/main/t/tiff/tiff_4.0.3-12.3+deb8u1.dsc' tiff_4.0.3-12.3+deb8u1.dsc 2226 SHA256:eb8d25c4f28aafb3ddbe29d29f91876c13539da38011837ad974f65838cf5fec
 'http://httpredir.debian.org/debian/pool/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
 'http://httpredir.debian.org/debian/pool/main/t/tiff/tiff_4.0.3-12.3+deb8u1.debian.tar.xz' tiff_4.0.3-12.3+deb8u1.debian.tar.xz 31764 SHA256:a689adbd64ff8220fb095bceface04417068e69d6ec98063db3489f1c02410a6
@@ -4294,7 +4466,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris tzdata=2016f-0+deb8u1
 'http://httpredir.debian.org/debian/pool/main/t/tzdata/tzdata_2016f-0+deb8u1.dsc' tzdata_2016f-0+deb8u1.dsc 1971 SHA256:0474098d0be64feddf5cb231581b20381e9ba450ddcbbd9378c82a1fee89b046
 'http://httpredir.debian.org/debian/pool/main/t/tzdata/tzdata_2016f.orig.tar.gz' tzdata_2016f.orig.tar.gz 313286 SHA256:ed8c951008d12f1db55a11e96fc055718c6571233327d9de16a7f8475e2502b0
 'http://httpredir.debian.org/debian/pool/main/t/tzdata/tzdata_2016f-0+deb8u1.debian.tar.xz' tzdata_2016f-0+deb8u1.debian.tar.xz 101612 SHA256:fe51e05f855921da01f0dcff74f2fb0d4f9b10860ed579ca1a407de1021c96fa
@@ -4317,7 +4490,8 @@ Licenses: (parsed from: `/usr/share/doc/ucf/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris ucf=3.0030
 'http://httpredir.debian.org/debian/pool/main/u/ucf/ucf_3.0030.dsc' ucf_3.0030.dsc 1300 SHA256:7e1861964217317a6be7fe83c1baaeb578e27a33850c33f14d168e40811b9115
 'http://httpredir.debian.org/debian/pool/main/u/ucf/ucf_3.0030.tar.xz' ucf_3.0030.tar.xz 63524 SHA256:65b681c509f49bca586f12d57c5244ad93cf0d047f886e307fb2018abf3d802d
 ```
@@ -4344,7 +4518,8 @@ Licenses: (parsed from: `/usr/share/doc/libustr-1.0-1/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris ustr=1.0.4-3
 'http://httpredir.debian.org/debian/pool/main/u/ustr/ustr_1.0.4-3.dsc' ustr_1.0.4-3.dsc 1992 SHA256:ca6043d523fd9f677446b6cac95ce5263768f3ccc5ee38ef10e1551b2cf1c00a
 'http://httpredir.debian.org/debian/pool/main/u/ustr/ustr_1.0.4.orig.tar.gz' ustr_1.0.4.orig.tar.gz 301345 SHA256:4d293b6b9d9fe51d58441f4b09b1f0005fcad8256ae8048587789bf5dbefb62e
 'http://httpredir.debian.org/debian/pool/main/u/ustr/ustr_1.0.4-3.diff.gz' ustr_1.0.4-3.diff.gz 11415 SHA256:8349cbdef416e9b919d434c6a88c7e29700a00df3e81f21b7d8127ffd7e4945a
@@ -4388,7 +4563,8 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris util-linux=2.25.2-6
 'http://httpredir.debian.org/debian/pool/main/u/util-linux/util-linux_2.25.2-6.dsc' util-linux_2.25.2-6.dsc 3443 SHA256:742a9c6378132c30d4bfc31722904e73a608c2fee1eab89d1d832c5e5672a82f
 'http://httpredir.debian.org/debian/pool/main/u/util-linux/util-linux_2.25.2.orig.tar.xz' util-linux_2.25.2.orig.tar.xz 3703644 SHA256:e0457f715b73f4a349e1acb08cb410bf0edc9a74a3f75c357070f31f70e33cd6
 'http://httpredir.debian.org/debian/pool/main/u/util-linux/util-linux_2.25.2-6.debian.tar.xz' util-linux_2.25.2-6.debian.tar.xz 304292 SHA256:b500d70a60f2814d6552492cee5f40c27063029ef74ddea53bc713503680527b
@@ -4412,7 +4588,8 @@ Licenses: (parsed from: `/usr/share/doc/python-vatnumber/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris vatnumber=1:1.2-3
 'http://httpredir.debian.org/debian/pool/main/v/vatnumber/vatnumber_1.2-3.dsc' vatnumber_1.2-3.dsc 2062 SHA256:fdf148f68705203a693684ee10ff60dd1b506230c4dfb58ffa5d4584a2cab308
 'http://httpredir.debian.org/debian/pool/main/v/vatnumber/vatnumber_1.2.orig.tar.gz' vatnumber_1.2.orig.tar.gz 19074 SHA256:4e9e9cabcff6076d8deb8a347edfd5d0ab8cab1ed344fdbe5dd4a6110a2f2c7b
 'http://httpredir.debian.org/debian/pool/main/v/vatnumber/vatnumber_1.2-3.debian.tar.xz' vatnumber_1.2-3.debian.tar.xz 17468 SHA256:053f184f6f10ce0cc12940d37251042cd01279180a90c9a309c33914d7eb1104
@@ -4448,7 +4625,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris xfonts-75dpi=1:1.0.3
 'http://httpredir.debian.org/debian/pool/main/x/xfonts-75dpi/xfonts-75dpi_1.0.3.dsc' xfonts-75dpi_1.0.3.dsc 891 SHA256:16a6610d80d7dc91968c0d3912515ca81b8be4ee65dd3b3e3fe8b8bfcebf2386
 'http://httpredir.debian.org/debian/pool/main/x/xfonts-75dpi/xfonts-75dpi_1.0.3.tar.gz' xfonts-75dpi_1.0.3.tar.gz 3018137 SHA256:5ea538b6ba9afc621330026e4252bcc8fca3c612df3cfccf0c6b07ba34503dcc
 ```
@@ -4470,7 +4648,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris xfonts-base=1:1.0.3
 'http://httpredir.debian.org/debian/pool/main/x/xfonts-base/xfonts-base_1.0.3.dsc' xfonts-base_1.0.3.dsc 901 SHA256:75a3e9343cb04f660855ee0f3f1144d36abc95bacf4ab620a0f11869334b8e89
 'http://httpredir.debian.org/debian/pool/main/x/xfonts-base/xfonts-base_1.0.3.tar.gz' xfonts-base_1.0.3.tar.gz 6721472 SHA256:b4a6111998ff8d9c9e043bdaa67f4a096ae9fa6251ad7929f5541175fd0d19bd
 ```
@@ -4492,7 +4671,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris xfonts-encodings=1:1.0.4-2
 'http://httpredir.debian.org/debian/pool/main/x/xfonts-encodings/xfonts-encodings_1.0.4-2.dsc' xfonts-encodings_1.0.4-2.dsc 1960 SHA256:f9ea7a7a5b5574b4b3ec5f68ff64ee4c1938d2daf3aa46237ac4a8ce6fc85858
 'http://httpredir.debian.org/debian/pool/main/x/xfonts-encodings/xfonts-encodings_1.0.4.orig.tar.gz' xfonts-encodings_1.0.4.orig.tar.gz 768589 SHA256:55861d9cf456bd717a3d30a3193402c02174ed3c0dcee828798165fe307ee324
 'http://httpredir.debian.org/debian/pool/main/x/xfonts-encodings/xfonts-encodings_1.0.4-2.diff.gz' xfonts-encodings_1.0.4-2.diff.gz 13939 SHA256:20c87283a2b8ea4bb72d547234149fa5c459f539793bc938ac2056bc2079966c
@@ -4515,7 +4695,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris xfonts-utils=1:7.7+2
 'http://httpredir.debian.org/debian/pool/main/x/xfonts-utils/xfonts-utils_7.7+2.dsc' xfonts-utils_7.7+2.dsc 1705 SHA256:e630c88359affebc7566d4a8ff20e41f35d8eaad5f2899ea02edb2cec81b2a8b
 'http://httpredir.debian.org/debian/pool/main/x/xfonts-utils/xfonts-utils_7.7+2.tar.gz' xfonts-utils_7.7+2.tar.gz 787043 SHA256:2385a5bfc72f6d4221a8b5004757e60ce0ea60455dec5241cdca425eb787a5e1
 ```
@@ -4537,7 +4718,8 @@ Licenses: (parsed from: `/usr/share/doc/python-xlwt/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris xlwt=0.7.5+debian1-1
 'http://httpredir.debian.org/debian/pool/main/x/xlwt/xlwt_0.7.5+debian1-1.dsc' xlwt_0.7.5+debian1-1.dsc 1706 SHA256:6334385269db44c94dae9a5944c135aa96fccd818438f852c62252f7226ab91d
 'http://httpredir.debian.org/debian/pool/main/x/xlwt/xlwt_0.7.5+debian1.orig.tar.gz' xlwt_0.7.5+debian1.orig.tar.gz 101568 SHA256:3d130a06c5b1a2866998d4569712313e8e70cbdbc47b8d8f60b7b216161470a9
 'http://httpredir.debian.org/debian/pool/main/x/xlwt/xlwt_0.7.5+debian1-1.debian.tar.xz' xlwt_0.7.5+debian1-1.debian.tar.xz 6680 SHA256:624461b0d2a950cbeb4e76fc005b033438c707542d1abb390944c9335c922fab
@@ -4560,7 +4742,8 @@ Licenses: (parsed from: `/usr/share/doc/xml-core/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris xml-core=0.13+nmu2
 'http://httpredir.debian.org/debian/pool/main/x/xml-core/xml-core_0.13+nmu2.dsc' xml-core_0.13+nmu2.dsc 1738 SHA256:edf913f3aee9865480143bdd91f5f6a0838ca61ddc8674ea316e48a22d65fecb
 'http://httpredir.debian.org/debian/pool/main/x/xml-core/xml-core_0.13+nmu2.tar.gz' xml-core_0.13+nmu2.tar.gz 23436 SHA256:cd3f5402265a9ab0e7e4a6efafdc5eb9cb02d33c3e75d1ff1ecb0ac0899e242b
 ```
@@ -4582,7 +4765,8 @@ Licenses: (parsed from: `/usr/share/doc/x11-common/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris xorg=1:7.7+7
 'http://httpredir.debian.org/debian/pool/main/x/xorg/xorg_7.7+7.dsc' xorg_7.7+7.dsc 1934 SHA256:fdba3ef7ef9309f4d038d56b028935d3a2e06c2f68f4168d8f27683c9279da3c
 'http://httpredir.debian.org/debian/pool/main/x/xorg/xorg_7.7+7.tar.gz' xorg_7.7+7.tar.gz 919132 SHA256:ac9dd34ee30176e71a954bc1b922f7ccb81d759bd57674d1972bc14a93916667
 ```
@@ -4618,7 +4802,8 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris xz-utils=5.1.1alpha+20120614-2
 'http://httpredir.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.1.1alpha+20120614-2.dsc' xz-utils_5.1.1alpha+20120614-2.dsc 2325 SHA256:d7d87c6c7aa6d2fe45d8d55a8929ab12f0688f7f17bcfc6233ecfa94f6f7a298
 'http://httpredir.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.1.1alpha+20120614.orig.tar.gz' xz-utils_5.1.1alpha+20120614.orig.tar.gz 556454 SHA256:b168e63400db449a6e7b3a06e668f557ca27e3d70accbd29d2b5a98e15c00fee
 'http://httpredir.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.1.1alpha+20120614-2.debian.tar.gz' xz-utils_5.1.1alpha+20120614-2.debian.tar.gz 154298 SHA256:4e2873ab7b1ee44b7d580caf2a5ca761b10cb2725691b2c2a9b21edb0d771f39
@@ -4641,7 +4826,8 @@ Binary Packages:
 
 Source:
 
-```
+```console
+$ apt-get source -qq --print-uris zlib=1:1.2.8.dfsg-2
 'http://httpredir.debian.org/debian/pool/main/z/zlib/zlib_1.2.8.dfsg-2.dsc' zlib_1.2.8.dfsg-2.dsc 2458 SHA256:5dddd28d2b15fc0881177d720a3b5bf41a87eee7aaec296e4b20719a9fe18b7e
 'http://httpredir.debian.org/debian/pool/main/z/zlib/zlib_1.2.8.dfsg.orig.tar.gz' zlib_1.2.8.dfsg.orig.tar.gz 361943 SHA256:2caecc2c3f1ef8b87b8f72b128a03e61c307e8c14f5ec9b422ef7914ba75cf9f
 'http://httpredir.debian.org/debian/pool/main/z/zlib/zlib_1.2.8.dfsg-2.debian.tar.xz' zlib_1.2.8.dfsg-2.debian.tar.xz 14768 SHA256:39af7ea4b264c229f856ed342bb316a796cb2f1e1278a059f2dc5a4f3ffc9f31
