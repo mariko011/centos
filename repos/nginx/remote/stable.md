@@ -1,7 +1,7 @@
 ## `nginx:stable`
 
 ```console
-$ docker pull nginx@sha256:4c54f4d6e452a8d4f610c13f2b7d72e7870ac9fadfab17e09e729707280f6592
+$ docker pull nginx@sha256:710f8b868757507762d0709bbf555ac43336384ae0481c040e9742bb49c7c869
 ```
 
 -	Platforms:
@@ -9,42 +9,42 @@ $ docker pull nginx@sha256:4c54f4d6e452a8d4f610c13f2b7d72e7870ac9fadfab17e09e729
 
 ### `nginx:stable` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.2 MB (71195391 bytes)**  
+-	Total Size: **71.2 MB (71196657 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70d396eb911f4740dc9deb4025bdaf48230bd3721f8ca9b7dba959417926c587`
+-	Image ID: `sha256:5c9792e3619e4a8590bab9cba8dce5090c8d44b010bd42a95771e4b95593f7a5`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Thu, 28 Jul 2016 17:47:54 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
-# Thu, 28 Jul 2016 17:47:55 GMT
+# Tue, 30 Aug 2016 21:00:51 GMT
+ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
+# Tue, 30 Aug 2016 21:00:52 GMT
 CMD ["/bin/bash"]
-# Tue, 23 Aug 2016 18:49:31 GMT
+# Wed, 31 Aug 2016 00:10:25 GMT
 MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
-# Tue, 23 Aug 2016 18:53:05 GMT
+# Wed, 31 Aug 2016 00:10:46 GMT
 ENV NGINX_VERSION=1.10.1-1~jessie
-# Tue, 23 Aug 2016 18:54:42 GMT
+# Wed, 31 Aug 2016 00:11:03 GMT
 RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62 	&& echo "deb http://nginx.org/packages/debian/ jessie nginx" >> /etc/apt/sources.list 	&& apt-get update 	&& apt-get install --no-install-recommends --no-install-suggests -y 						ca-certificates 						nginx=${NGINX_VERSION} 						nginx-module-xslt 						nginx-module-geoip 						nginx-module-image-filter 						nginx-module-perl 						nginx-module-njs 						gettext-base 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 23 Aug 2016 18:54:47 GMT
+# Wed, 31 Aug 2016 00:11:04 GMT
 RUN ln -sf /dev/stdout /var/log/nginx/access.log 	&& ln -sf /dev/stderr /var/log/nginx/error.log
-# Tue, 23 Aug 2016 18:54:48 GMT
+# Wed, 31 Aug 2016 00:11:05 GMT
 EXPOSE 443/tcp 80/tcp
-# Tue, 23 Aug 2016 18:54:49 GMT
+# Wed, 31 Aug 2016 00:11:05 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
+		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
+		Size: 51.4 MB (51367268 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21af961bc3ea42f82ab64f411a39432937188d9ab7a210b4dfd179174790d44a`  
-		Last Modified: Tue, 23 Aug 2016 18:58:59 GMT  
-		Size: 19.8 MB (19829585 bytes)  
+	-	`sha256:e913803e4a8a00c4bc6e0d071a40057e749649d21b08ee56066adf3ffb1a7e01`  
+		Last Modified: Thu, 15 Sep 2016 19:13:53 GMT  
+		Size: 19.8 MB (19829193 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0790d050b1cc391f388d36a3311b3814f3f50a6a62a6f0ea7bc2068d3950079a`  
-		Last Modified: Tue, 23 Aug 2016 18:58:51 GMT  
-		Size: 195.0 B  
+	-	`sha256:de52ecb3282078271107c22a4f76bb7a4a25aab57b6dda85a65c8568d19473fe`  
+		Last Modified: Thu, 15 Sep 2016 19:13:46 GMT  
+		Size: 196.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
