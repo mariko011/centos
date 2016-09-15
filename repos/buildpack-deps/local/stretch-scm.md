@@ -2007,19 +2007,8 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.22/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris perl=5.22.2-3
-'http://httpredir.debian.org/debian/pool/main/p/perl/perl_5.22.2-3.dsc' perl_5.22.2-3.dsc 2333 SHA256:a79e735efc06695a21ea3f4ab426bac99ee02815176d5bdc2c35c64e2d637a49
-'http://httpredir.debian.org/debian/pool/main/p/perl/perl_5.22.2.orig.tar.xz' perl_5.22.2.orig.tar.xz 11224216 SHA256:b34dab1eabec056bec5a6682a57b55dab1bcf6afc60b098c9e2d99433dedc295
-'http://httpredir.debian.org/debian/pool/main/p/perl/perl_5.22.2-3.debian.tar.xz' perl_5.22.2-3.debian.tar.xz 161824 SHA256:9831b979c752b97a4c6ca399dfb51e57b2c2c9dcd6bf30ff47cc97440974a0cc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/perl/5.22.2-3/
-- https://sources.debian.net/src/perl/5.22.2-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `procps=2:3.3.12-2`
 
@@ -2295,19 +2284,8 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris subversion=1.9.4-2
-'http://httpredir.debian.org/debian/pool/main/s/subversion/subversion_1.9.4-2.dsc' subversion_1.9.4-2.dsc 3035 SHA256:be75bf94ae76787ae97c25c1317d5ac9a6ef75c9f67d60fc51085d3825fe4bac
-'http://httpredir.debian.org/debian/pool/main/s/subversion/subversion_1.9.4.orig.tar.gz' subversion_1.9.4.orig.tar.gz 10603019 SHA256:11f738063f322b06f8c81e42bc26c33e0cb1e465539647109e534274d4a8540c
-'http://httpredir.debian.org/debian/pool/main/s/subversion/subversion_1.9.4-2.diff.gz' subversion_1.9.4-2.diff.gz 2422221 SHA256:fd4c81a7c3e9557b97aa7a2c595b3375f7f0c2060ab1aa831c8bdfdf752582a9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/subversion/1.9.4-2/
-- https://sources.debian.net/src/subversion/1.9.4-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `systemd=231-4`
 
