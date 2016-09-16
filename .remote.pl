@@ -14,7 +14,7 @@ my $mediaForeignLayer = 'application/vnd.docker.image.rootfs.foreign.diff.tar.gz
 # this isn't correct for Windows images, but ours usually use "SHELL" anyhow
 my @defaultShell = ('/bin/sh', '-c');
 
-my $ua = Mojo::UserAgent->new->max_redirects(10);
+my $ua = Mojo::UserAgent->new->max_redirects(10)->connect_timeout(20)->inactivity_timeout(20);
 $ua->transactor->name(join ' ',
 	# https://github.com/docker/docker/blob/v1.11.2/dockerversion/useragent.go#L13-L34
 	'docker/1.11.2',
@@ -26,17 +26,38 @@ $ua->transactor->name(join ' ',
 	# BOGUS USER AGENTS FOR THE BOGUS USER AGENT THRONE
 );
 
-my $maxRetries = 3;
+my $maxRetries = 5;
 sub ua_req {
 	my $method = shift;
+	my $callback = pop;
+	my @methodArgs = @_;
+
 	my $tries = $maxRetries;
-	my $tx;
-	do {
-		--$tries;
-		$tx = $ua->$method(@_);
-		return $tx if $tx->success or $tx->res->code == 401 or $tx->res->code == 404;
-	} while ($tries > 0);
-	return $tx;
+	my $ua_req_sub;
+	$ua_req_sub = sub {
+		$ua->$method(@methodArgs => sub {
+			my ($ua, $tx) = @_;
+			--$tries;
+			if (
+				$tries <= 0
+				|| $tx->success
+				|| (
+					# if "$tx->res->code" is undefined, that usually is indicative of some kind of timeout (connect/inactivity)
+					$tx->res->code
+					&& (
+						$tx->res->code == 401 # "Unauthorized"
+						|| $tx->res->code == 404 # "Not Found"
+					)
+				)
+			) {
+				return $callback->($tx);
+			}
+			say {*STDERR} 'UA error: ' . $tx->error->{message};
+			return $ua_req_sub->();
+		});
+	};
+
+	return $ua_req_sub->();
 }
 
 sub split_image_name {
@@ -62,13 +83,15 @@ sub registry_req {
 	my $method = shift;
 	my $repo = shift;
 	my $url = shift;
+	my $callback = pop;
 	my %extHeaders = @_;
 
 	state %tokens;
 
 	$url = "https://registry-1.docker.io/v2/$repo/$url";
 
-	for (;;) {
+	my $do_work;
+	$do_work = sub {
 		my %headers = (
 			%extHeaders,
 		);
@@ -77,46 +100,52 @@ sub registry_req {
 			$headers{Authorization} = "Bearer $token";
 		}
 
-		my $tx = ua_req($method => $url => \%headers);
+		return ua_req($method => $url => \%headers => sub {
+			my $tx = shift;
 
-		if ($tx->res->code == 401) {
-			my $auth = $tx->res->headers->www_authenticate;
-			die "unexpected WWW-Authenticate header: $auth" unless $auth =~ m{ ^ Bearer \s+ (\S.*) $ }x;
-			my $realm = $1;
-			my $authUrl = Mojo::URL->new;
-			while ($realm =~ m{
-				# key="val",
-				([^=]+)
-				=
-				"([^"]+)"
-				,?
-			}xg) {
-				my ($key, $val) = ($1, $2);
-				if ($key eq 'realm') {
-					$authUrl->base(Mojo::URL->new($val));
-				} else {
-					$authUrl->query->append($key => $val);
+			if ($tx->res->code == 401) {
+				my $auth = $tx->res->headers->www_authenticate;
+				die "unexpected WWW-Authenticate header: $auth" unless $auth =~ m{ ^ Bearer \s+ (\S.*) $ }x;
+				my $realm = $1;
+				my $authUrl = Mojo::URL->new;
+				while ($realm =~ m{
+					# key="val",
+					([^=]+)
+					=
+					"([^"]+)"
+					,?
+				}xg) {
+					my ($key, $val) = ($1, $2);
+					if ($key eq 'realm') {
+						$authUrl->base(Mojo::URL->new($val));
+					} else {
+						$authUrl->query->append($key => $val);
+					}
 				}
+				$authUrl = $authUrl->to_abs;
+				return ua_req(get => $authUrl => sub {
+					my $tokenTx = shift;
+					die "failed to fetch token for $repo" unless $tokenTx->success;
+					$tokens{$repo} = $tokenTx->res->json->{token};
+					return $do_work->();
+				});
 			}
-			$authUrl = $authUrl->to_abs;
-			my $tokenTx = ua_req(get => $authUrl);
-			die "failed to fetch token for $repo" unless $tokenTx->success;
-			$tokens{$repo} = $tokenTx->res->json->{token};
-			next;
-		}
 
-		return $tx;
-	}
+			return $callback->($tx);
+		});
+	};
+
+	return $do_work->();
 }
 
 sub get_manifest {
-	my ($repo, $tag) = @_;
+	my ($repo, $tag, $callback) = @_;
 
 	my $image = "$repo:$tag";
 	state (%manifests, %digests);
-	return ($digests{$image}, $manifests{$image}) if $digests{$image} and $manifests{$image};
+	return $callback->($digests{$image}, $manifests{$image}) if $digests{$image} and $manifests{$image};
 
-	my $manifestTx = registry_req(get => $repo => "manifests/$tag" => (
+	return registry_req(get => $repo => "manifests/$tag" => (
 			# prefer a "version 2" manifest
 			# https://docs.docker.com/registry/spec/manifest-v2-2/
 			Accept => [
@@ -124,67 +153,56 @@ sub get_manifest {
 				$mediaManifestV2,
 				$mediaManifestV1,
 			],
-		));
-	return () if $manifestTx->res->code == 404; # tag doesn't exist
-	die "failed to get manifest for $image" unless $manifestTx->success;
-	return (
-		$digests{$image} = $manifestTx->res->headers->header('Docker-Content-Digest'),
-		$manifests{$image} = $manifestTx->res->json,
-	);
+		) => sub {
+			my $manifestTx = shift;
+			return $callback->(undef, undef) if $manifestTx->res->code == 404; # tag doesn't exist
+			die "failed to get manifest for $image" unless $manifestTx->success;
+			return $callback->(
+				$digests{$image} = $manifestTx->res->headers->header('Docker-Content-Digest'),
+				$manifests{$image} = $manifestTx->res->json,
+			);
+		});
 }
 
 sub blob_req {
 	my $method = shift;
 	my $repo = shift;
 	my $blob = shift;
+	my $callback = pop;
 	my %extHeaders = @_;
-	return registry_req($method => $repo => "blobs/$blob" => %extHeaders);
+	return registry_req($method => $repo => "blobs/$blob" => %extHeaders => $callback);
 }
 
 sub get_blob_json {
-	my ($repo, $blob) = @_;
+	my ($repo, $blob, $callback) = @_;
 
 	my $key = $repo . '@' . $blob;
 	state %blobs;
-	return $blobs{$key} if $blobs{$key};
+	return $callback->($blobs{$key}) if $blobs{$key};
 
-	my $tx = blob_req(get => ($repo, $blob) => ());
-	die "failed to get blob data for $key" unless $tx->success;
-	return $blobs{$key} = $tx->res->json;
+	return blob_req(get => ($repo, $blob) => () => sub {
+		my $tx = shift;
+		die "failed to get blob data for $key" unless $tx->success;
+		return $callback->($blobs{$key} = $tx->res->json);
+	});
 }
 
 sub get_blob_headers {
-	my ($repo, $blob) = @_;
+	my ($repo, $blob, $callback) = @_;
 
 	my $key = $repo . '@' . $blob;
 	state %headers;
-	return $headers{$key} if $headers{$key};
+	return $callback->($headers{$key}) if $headers{$key};
 
-	my $headersTx = blob_req(head => ($repo, $blob) => ());
-	die "failed to get headers for $key" unless $headersTx->success;
-	return $headers{$key} = $headersTx->res->headers;
-}
-
-sub get_layer_data {
-	my ($repo, $id, $blob, $v1) = @_;
-	$id //= $v1->{id};
-	state %layers;
-	return $layers{$id} if $layers{$id};
-	die "missing v1/blob data for layer $id" unless $blob and $v1;
-	my $data = {
-		map({ $_ => $v1->{$_} } qw(id created parent docker_version)),
-		container_command => $v1->{container_config}{Cmd},
-		virtual_size => $v1->{Size} // 0,
-		blob => $blob,
-	};
-	my $blobHeaders = get_blob_headers($repo, $blob);
-	$data->{blob_content_length} = $blobHeaders->content_length;
-	$data->{blob_last_modified} = $blobHeaders->last_modified;
-	return $layers{$id} = $data;
+	return blob_req(head => ($repo, $blob) => () => sub {
+		my $headersTx = shift;
+		die "failed to get headers for $key" unless $headersTx->success;
+		return $callback->($headers{$key} = $headersTx->res->headers);
+	});
 }
 
 sub parse_manifest_v1_data {
-	my ($repo, $manifest) = @_;
+	my ($repo, $manifest, $callback) = @_;
 
 	my $data = {
 		manifestVersion => $mediaManifestV1,
@@ -232,124 +250,161 @@ sub parse_manifest_v1_data {
 		};
 	}
 
-	return $data;
+	return $callback->($data);
 }
 
 sub parse_manifest_v2_data {
-	my ($repo, $manifest) = @_;
+	my ($repo, $manifest, $callback) = @_;
 
 	my $configDigest = $manifest->{config}{digest};
-	my $config = get_blob_json($repo, $configDigest);
 
-	return {
-		manifestVersion => $mediaManifestV2,
-		manifest => $manifest,
-		imageId => $configDigest,
-		config => $config,
-		platform => {
-			os => $config->{os},
-			architecture => $config->{architecture},
-		},
-		dockerVersion => $config->{docker_version},
-		entrypoint => $config->{config}{Entrypoint},
-		defaultCommand => $config->{config}{Cmd},
-		shell => $config->{config}{Shell},
-		layers => $manifest->{layers} // [],
-		commands => $config->{history} // [],
-	};
+	return get_blob_json($repo, $configDigest, sub {
+		my $config = shift;
+
+		return $callback->({
+			manifestVersion => $mediaManifestV2,
+			manifest => $manifest,
+			imageId => $configDigest,
+			config => $config,
+			platform => {
+				os => $config->{os},
+				architecture => $config->{architecture},
+			},
+			dockerVersion => $config->{docker_version},
+			entrypoint => $config->{config}{Entrypoint},
+			defaultCommand => $config->{config}{Cmd},
+			shell => $config->{config}{Shell},
+			layers => $manifest->{layers} // [],
+			commands => $config->{history} // [],
+		});
+	});
 }
 
 sub get_image_data {
-	my ($image) = @_;
+	my ($image, $callback) = @_;
 
 	my ($repo, $tag) = split_image_name($image);
 
-	my ($digest, $manifest) = get_manifest($repo, $tag);
+	return get_manifest($repo, $tag, sub {
+		my ($digest, $manifest) = @_;
 
-	unless (defined $digest && defined $manifest) {
-		# tag must not exist!
-		return;
-	}
-
-	my $data = {
-		repo => $repo,
-		tag => $tag,
-		digest => $digest,
-		images => [],
-	};
-
-	if ($manifest->{schemaVersion} eq '1') {
-		# https://docs.docker.com/registry/spec/manifest-v2-1/
-		push @{$data->{images}}, parse_manifest_v1_data($repo, $manifest);
-	}
-	elsif ($manifest->{schemaVersion} eq '2') {
-		# https://docs.docker.com/registry/spec/manifest-v2-2/
-		if ($manifest->{mediaType} eq $mediaManifestV2) {
-			push @{$data->{images}}, parse_manifest_v2_data($repo, $manifest);
+		unless (defined $digest && defined $manifest) {
+			# tag must not exist!
+			return $callback->(undef);
 		}
-		elsif ($manifest->{mediaType} eq $mediaManifestList) {
-			$data->{manifest} = $manifest;
-			$data->{manifestVersion} = $manifest->{mediaType};
 
-			for my $sub (@{ $manifest->{manifests} // [] }) {
-				my $digest = $sub->{digest};
-				die "sub-manifest missing digest!" unless $digest;
+		my $data = {
+			repo => $repo,
+			tag => $tag,
+			digest => $digest,
+			images => [],
+		};
 
-				my $subManifest = get_manifest($repo, $digest);
-				die "manifest $digest does not exist!" unless defined $subManifest;
+		# gather data for $data->{images}
+		my $imagesDelay = Mojo::IOLoop->delay;
 
-				my $subData;
-				if ($sub->{mediaType} eq $mediaManifestV1) {
-					$subData = parse_manifest_v1_data($repo, $subManifest);
+		$imagesDelay->once(finish => sub {
+			my $delay = shift;
+			push @{ $data->{images} }, @_;
+
+			my $layerHeadersDelay = Mojo::IOLoop->delay;
+
+			$layerHeadersDelay->once(finish => sub {
+				my $delay = shift;
+
+				for my $image (@{ $data->{images} }) {
+					$image->{platform} //= {};
+
+					$image->{size} = 0;
+					for my $layer (@{ $image->{layers} }) {
+						$image->{size} += $layer->{size} if defined $layer->{size};
+					}
+
+					$image->{commands} //= [];
+					for my $command (@{ $image->{commands} }) {
+						$command->{command} //= [ $command->{created_by} ];
+						$command->{dockerfile} //= cmd_to_dockerfile($command->{command}, $image->{shell});
+					}
 				}
-				elsif ($sub->{mediaType} eq $mediaManifestV2) {
-					$subData = parse_manifest_v2_data($repo, $subManifest);
-				}
-				else {
-					die "unknown mediaType $manifest->{mediaType} for $digest";
-				}
 
-				$subData->{digest} = $digest;
-				$subData->{platform} = $sub->{platform};
+				return $callback->($data);
+			});
 
-				push @{$data->{images}}, $subData;
+			my $layerHeadersDelayMutex = $layerHeadersDelay->begin(0);
+			for my $image (@{ $data->{images} }) {
+				$image->{layers} //= [];
+				for my $layer (@{ $image->{layers} }) {
+					if (defined $layer->{mediaType} && $layer->{mediaType} eq $mediaForeignLayer) {
+						# skip foreign layers -- we can't fetch them (likely Windows base layer, which 404s unless authorized properly)
+						next;
+					}
+					my $layerHeadersEnd = $layerHeadersDelay->begin(0);
+					get_blob_headers($repo, $layer->{digest}, sub {
+						my $headers = shift;
+						$layer->{size} //= $headers->content_length;
+						$layer->{mediaType} //= $headers->content_type;
+						$layer->{lastModified} //= $headers->last_modified;
+						$layerHeadersEnd->();
+					});
+				}
+			}
+			$layerHeadersDelayMutex->();
+
+			$layerHeadersDelay->wait;
+		});
+
+		my $imagesDelayMutex = $imagesDelay->begin(0); # ensure we don't accidentally "finish" too soon
+		if ($manifest->{schemaVersion} eq '1') {
+			# https://docs.docker.com/registry/spec/manifest-v2-1/
+			parse_manifest_v1_data($repo, $manifest, $imagesDelay->begin(0));
+		}
+		elsif ($manifest->{schemaVersion} eq '2') {
+			# https://docs.docker.com/registry/spec/manifest-v2-2/
+			if ($manifest->{mediaType} eq $mediaManifestV2) {
+				parse_manifest_v2_data($repo, $manifest, $imagesDelay->begin(0));
+			}
+			elsif ($manifest->{mediaType} eq $mediaManifestList) {
+				$data->{manifest} = $manifest;
+				$data->{manifestVersion} = $manifest->{mediaType};
+
+				for my $sub (@{ $manifest->{manifests} // [] }) {
+					my $digest = $sub->{digest};
+					die "sub-manifest missing digest!" unless $digest;
+
+					my $subManifestEnd = $imagesDelay->begin(0);
+					get_manifest($repo, $digest, sub {
+						my $subManifest = shift;
+						die "manifest $digest does not exist!" unless defined $subManifest;
+
+						my $subDataCallback = sub {
+							my $subData = shift;
+							$subData->{digest} = $digest;
+							$subData->{platform} = $sub->{platform};
+							$subManifestEnd->($subData);
+						};
+						if ($sub->{mediaType} eq $mediaManifestV1) {
+							parse_manifest_v1_data($repo, $subManifest, $subDataCallback);
+						}
+						elsif ($sub->{mediaType} eq $mediaManifestV2) {
+							parse_manifest_v2_data($repo, $subManifest, $subDataCallback);
+						}
+						else {
+							die "unknown mediaType $manifest->{mediaType} for $digest";
+						}
+					});
+				}
+			}
+			else {
+				die "unknown mediaType $manifest->{mediaType} for schemaVersion 2";
 			}
 		}
 		else {
-			die "unknown mediaType $manifest->{mediaType} for schemaVersion 2";
+			die "unknown schemaVersion: $manifest->{schemaVersion}";
 		}
-	}
-	else {
-		die "unknown schemaVersion: $manifest->{schemaVersion}";
-	}
+		$imagesDelayMutex->();
 
-	for my $image (@{ $data->{images} }) {
-		$image->{platform} //= {};
-
-		$image->{layers} //= [];
-		for my $layer (@{ $image->{layers} }) {
-			if (defined $layer->{mediaType} && $layer->{mediaType} eq $mediaForeignLayer) {
-				# skip foreign layers -- we can't fetch them (likely Windows base layer, which 404s unless authorized properly)
-				next;
-			}
-			my $headers = get_blob_headers($repo, $layer->{digest});
-			$layer->{size} //= $headers->content_length;
-			$layer->{mediaType} //= $headers->content_type;
-			$layer->{lastModified} //= $headers->last_modified;
-		}
-		$image->{size} = 0;
-		for my $layer (@{ $image->{layers} }) {
-			$image->{size} += $layer->{size} if defined $layer->{size};
-		}
-
-		$image->{commands} //= [];
-		for my $command (@{ $image->{commands} }) {
-			$command->{command} //= [ $command->{created_by} ];
-			$command->{dockerfile} //= cmd_to_dockerfile($command->{command}, $image->{shell});
-		}
-	}
-
-	return $data;
+		$imagesDelay->wait;
+	});
 }
 
 sub platform_string {
@@ -450,72 +505,75 @@ sub date {
 
 sub image_to_markdown {
 	my $image = shift;
+	my $callback = shift;
 
 	my $ret = '## `' . $image . '`' . "\n";
 
-	my $data = get_image_data($image);
+	return get_image_data($image, sub {
+		my $data = shift;
 
-	unless ($data) {
-		# tag must not exist yet!
-		$ret .= "\n" . '**does not exist** (yet?)' . "\n";
-		return $ret;
-	}
-
-	my $repo = $data->{repo};
-	$repo =~ s!^library/!!;
-
-	$ret .= "\n";
-	$ret .= '```console' . "\n";
-	$ret .= '$ docker pull ' . $repo . '@' . $data->{digest} . "\n";
-	$ret .= '```' . "\n";
-
-	$ret .= "\n";
-	$ret .= "-\t" . 'Manifest MIME: `' . $data->{manifestVersion} . '`' . "\n" if $data->{manifestVersion};
-	$ret .= "-\t" . 'Platforms:' . "\n";
-	for my $imageData (@{ $data->{images} }) {
-		$ret .= "\t-\t" . platform_string($imageData->{platform}) . "\n";
-	}
-
-	for my $imageData (@{ $data->{images} }) {
-		$ret .= "\n";
-		$ret .= '### `' . $image . '` - ' . platform_string($imageData->{platform}) . "\n";
-
-		if ($imageData->{digest}) {
-			$ret .= "\n";
-			$ret .= '```console' . "\n";
-			$ret .= '$ docker pull ' . $repo . '@' . $imageData->{digest} . "\n";
-			$ret .= '```' . "\n";
+		unless ($data) {
+			# tag must not exist yet!
+			$ret .= "\n" . '**does not exist** (yet?)' . "\n";
+			return $callback->($ret);
 		}
 
-		$ret .= "\n";
-		$ret .= "-\t" . 'Docker Version: ' . $imageData->{dockerVersion} . "\n" if $imageData->{dockerVersion};
-		$ret .= "-\t" . 'Manifest MIME: `' . $imageData->{manifestVersion} . '`' . "\n" if $imageData->{manifestVersion};
-		$ret .= "-\t" . 'Total Size: **' . size($imageData->{size}) . '**  ' . "\n";
-		$ret .= "\t" . '(compressed transfer size, not on-disk size)' . "\n";
-		$ret .= "-\t" . 'Image ID: `' . $imageData->{imageId} . '`' . "\n" if $imageData->{imageId};
-		$ret .= "-\t" . 'Entrypoint: `' . Mojo::JSON::encode_json($imageData->{entrypoint}) . '`' . "\n" if $imageData->{entrypoint} && @{ $imageData->{entrypoint} };
-		$ret .= "-\t" . 'Default Command: `' . Mojo::JSON::encode_json($imageData->{defaultCommand}) . '`' . "\n" if $imageData->{defaultCommand};
-		$ret .= "-\t" . '`SHELL`: `' . Mojo::JSON::encode_json($imageData->{shell}) . '`' . "\n" if $imageData->{shell};
+		my $repo = $data->{repo};
+		$repo =~ s!^library/!!;
 
 		$ret .= "\n";
-		$ret .= '```dockerfile' . "\n";
-		for my $command (@{ $imageData->{commands} }) {
-			$ret .= '# ' . date($command->{created}) . "\n";
-			$ret .= $command->{dockerfile} . "\n";
-		}
+		$ret .= '```console' . "\n";
+		$ret .= '$ docker pull ' . $repo . '@' . $data->{digest} . "\n";
 		$ret .= '```' . "\n";
 
 		$ret .= "\n";
-		$ret .= "-\t" . 'Layers:' . "\n";
-		for my $layer (@{ $imageData->{layers} }) {
-			$ret .= "\t-\t" . '`' . $layer->{digest} . '`  ' . "\n";
-			$ret .= "\t\t" . 'Last Modified: ' . date($layer->{lastModified}) . '  ' . "\n" if defined $layer->{lastModified};
-			$ret .= "\t\t" . 'Size: ' . size($layer->{size}) . '  ' . "\n" if defined $layer->{size};
-			$ret .= "\t\t" . 'MIME: ' . $layer->{mediaType} . "\n";
+		$ret .= "-\t" . 'Manifest MIME: `' . $data->{manifestVersion} . '`' . "\n" if $data->{manifestVersion};
+		$ret .= "-\t" . 'Platforms:' . "\n";
+		for my $imageData (@{ $data->{images} }) {
+			$ret .= "\t-\t" . platform_string($imageData->{platform}) . "\n";
 		}
-	}
 
-	return $ret;
+		for my $imageData (@{ $data->{images} }) {
+			$ret .= "\n";
+			$ret .= '### `' . $image . '` - ' . platform_string($imageData->{platform}) . "\n";
+
+			if ($imageData->{digest}) {
+				$ret .= "\n";
+				$ret .= '```console' . "\n";
+				$ret .= '$ docker pull ' . $repo . '@' . $imageData->{digest} . "\n";
+				$ret .= '```' . "\n";
+			}
+
+			$ret .= "\n";
+			$ret .= "-\t" . 'Docker Version: ' . $imageData->{dockerVersion} . "\n" if $imageData->{dockerVersion};
+			$ret .= "-\t" . 'Manifest MIME: `' . $imageData->{manifestVersion} . '`' . "\n" if $imageData->{manifestVersion};
+			$ret .= "-\t" . 'Total Size: **' . size($imageData->{size}) . '**  ' . "\n";
+			$ret .= "\t" . '(compressed transfer size, not on-disk size)' . "\n";
+			$ret .= "-\t" . 'Image ID: `' . $imageData->{imageId} . '`' . "\n" if $imageData->{imageId};
+			$ret .= "-\t" . 'Entrypoint: `' . Mojo::JSON::encode_json($imageData->{entrypoint}) . '`' . "\n" if $imageData->{entrypoint} && @{ $imageData->{entrypoint} };
+			$ret .= "-\t" . 'Default Command: `' . Mojo::JSON::encode_json($imageData->{defaultCommand}) . '`' . "\n" if $imageData->{defaultCommand};
+			$ret .= "-\t" . '`SHELL`: `' . Mojo::JSON::encode_json($imageData->{shell}) . '`' . "\n" if $imageData->{shell};
+
+			$ret .= "\n";
+			$ret .= '```dockerfile' . "\n";
+			for my $command (@{ $imageData->{commands} }) {
+				$ret .= '# ' . date($command->{created}) . "\n";
+				$ret .= $command->{dockerfile} . "\n";
+			}
+			$ret .= '```' . "\n";
+
+			$ret .= "\n";
+			$ret .= "-\t" . 'Layers:' . "\n";
+			for my $layer (@{ $imageData->{layers} }) {
+				$ret .= "\t-\t" . '`' . $layer->{digest} . '`  ' . "\n";
+				$ret .= "\t\t" . 'Last Modified: ' . date($layer->{lastModified}) . '  ' . "\n" if defined $layer->{lastModified};
+				$ret .= "\t\t" . 'Size: ' . size($layer->{size}) . '  ' . "\n" if defined $layer->{size};
+				$ret .= "\t\t" . 'MIME: ' . $layer->{mediaType} . "\n";
+			}
+		}
+
+		return $callback->($ret);
+	});
 }
 
 if (@ARGV && $ARGV[0] eq '--') {
@@ -524,9 +582,25 @@ if (@ARGV && $ARGV[0] eq '--') {
 	shift;
 	die 'no images specified' unless @ARGV;
 
+	my $markdownDelay = Mojo::IOLoop->delay;
+
+	$markdownDelay->once(finish => sub {
+		my $delay = shift;
+		for my $markdown (@_) {
+			print $markdown;
+		}
+	});
+
+	my $markdownDelayMutex = $markdownDelay->begin(0); # ensure we don't accidentally "finish" too soon
 	while (my $image = shift) {
-		print "\n" . image_to_markdown($image);
+		my $markdownEnd = $markdownDelay->begin(0);
+		image_to_markdown($image, sub {
+			$markdownEnd->("\n" . shift);
+		});
 	}
+	$markdownDelayMutex->();
+
+	$markdownDelay->wait;
 
 	exit;
 }
@@ -538,8 +612,12 @@ get '/markdown/*image' => sub {
 
 	my $image = $c->param('image');
 
-	$c->res->headers->content_type('text/plain');
-	$c->render(text => image_to_markdown($image));
+	$c->render_later;
+
+	image_to_markdown($image, sub {
+		$c->res->headers->content_type('text/plain');
+		$c->render(text => shift);
+	});
 };
 
 app->start;

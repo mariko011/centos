@@ -19,12 +19,10 @@ trap 'docker rm -f repo-info-remote > /dev/null' EXIT
 docker run -d --name repo-info-remote repo-info:remote daemon > /dev/null
 
 repoInfoDaemon='http://localhost:3000' # since we're using "docker exec", we can just hit localhost
-curl() {
-	docker exec -i repo-info-remote curl "$@"
-}
+curl=( docker exec -i repo-info-remote curl -fsSL )
 
 tries=10
-while [ "$(curl --max-time 2 -fsSL "$repoInfoDaemon" -o /dev/null &> /dev/null || echo "$?")" = '7' ]; do
+while [ "$("${curl[@]}" --max-time 2 "$repoInfoDaemon" -o /dev/null &> /dev/null || echo "$?")" = '7' ]; do
 	(( --tries )) || :
 	if [ "$tries" -eq 0 ]; then
 		echo >&2 "error: repo-info:remote daemon did not start up in a reasonable amount of time"
@@ -32,6 +30,13 @@ while [ "$(curl --max-time 2 -fsSL "$repoInfoDaemon" -o /dev/null &> /dev/null |
 	fi
 	sleep 1
 done
+
+# use "xargs" parallelism to pre-fill our new daemon's cache a bit (which should help speed things up in the long run)
+echo -n 'pre-filling cache ... '
+bashbrew list --repos "${repos[@]}" 2>/dev/null \
+	| sed 's!^!'"$repoInfoDaemon"'/markdown/!' \
+	| xargs -n 1 -P 20 "${curl[@]}" -o /dev/null
+echo 'done'
 
 for repo in "${repos[@]}"; do
 	echo -n "$repo ... "
@@ -60,7 +65,7 @@ for repo in "${repos[@]}"; do
 		# fetch each markdown
 		for tag in "${tags[@]}"; do
 			echo
-			curl -fsSL "$repoInfoDaemon/markdown/$tag" \
+			"${curl[@]}" "$repoInfoDaemon/markdown/$tag" \
 				| tee "repos/$repo/remote/${tag#*:}.md"
 		done
 	} > "repos/$repo/tag-details.md"
