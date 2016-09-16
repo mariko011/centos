@@ -9,5 +9,8 @@ if [ -e /etc/apt/sources.list ]; then
 			-e 'p; s/^deb /deb-src /' \
 			'{}' +
 
-	apt-get update -qq
+	if ! apt-get update -qq; then
+		# retry up to one time
+		apt-get update -qq
+	fi
 fi
