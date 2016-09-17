@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3faabe5fa089fab8562149389e5c84731c2500aeab771beeeeb8735590eddfc9`
-- Created: `2016-09-08T17:52:40.928186897Z`
+- Image ID: `sha256:e00e3dbadf1f5b38e9dec3b1c47aa982e0f3970c422a40ca2ec7c84bc2b94074`
+- Created: `2016-09-16T21:49:28.845935707Z`
 - Arch: `linux`/`amd64`
 - Command: `["php-fpm"]`
 - Environment:
@@ -12,9 +12,9 @@
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763`
-  - `PHP_VERSION=7.0.10`
-  - `PHP_FILENAME=php-7.0.10.tar.xz`
-  - `PHP_SHA256=348476ff7ba8d95a1e28e1059430c10470c5f8110f6d9133d30153dda4cdf56a`
+  - `PHP_VERSION=7.0.11`
+  - `PHP_FILENAME=php-7.0.11.tar.xz`
+  - `PHP_SHA256=d4cccea8da1d27c11b89386f8b8e95692ad3356610d571253d00ca67d524c735`
   - `DRUPAL_VERSION=8.1.9`
   - `DRUPAL_MD5=4de7c001ecbd5c27e5837c97e40facc2`
 

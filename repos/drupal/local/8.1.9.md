@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a2a7ff9f5a77e274a9547ea51e2328c9dc8c2ba94814ba37b601b4b0cfa1d244`
-- Created: `2016-09-08T17:52:33.787236398Z`
+- Image ID: `sha256:56a2055bf7c47a519fa285e673cf98f81787f1e5bddb510de8183dace397bb22`
+- Created: `2016-09-16T21:48:06.366886038Z`
 - Arch: `linux`/`amd64`
 - Command: `["apache2-foreground"]`
 - Environment:
@@ -15,9 +15,9 @@
   - `PHP_EXTRA_BUILD_DEPS=apache2-dev`
   - `PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763`
-  - `PHP_VERSION=7.0.10`
-  - `PHP_FILENAME=php-7.0.10.tar.xz`
-  - `PHP_SHA256=348476ff7ba8d95a1e28e1059430c10470c5f8110f6d9133d30153dda4cdf56a`
+  - `PHP_VERSION=7.0.11`
+  - `PHP_FILENAME=php-7.0.11.tar.xz`
+  - `PHP_SHA256=d4cccea8da1d27c11b89386f8b8e95692ad3356610d571253d00ca67d524c735`
   - `DRUPAL_VERSION=8.1.9`
   - `DRUPAL_MD5=4de7c001ecbd5c27e5837c97e40facc2`
 
