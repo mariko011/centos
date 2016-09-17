@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f5ea24e735bd9c3781a5d16810a70f52b4858f5ea0f1a15a6b5c9ce74cec00ed`
-- Created: `2016-08-31T02:01:24.517868555Z`
+- Image ID: `sha256:fcdbeaa4442bcbece1318a3263f3d9cc41e21743fb6f56f815b01d025af9b6f6`
+- Created: `2016-09-16T22:01:11.413775224Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["php-fpm"]`
@@ -13,9 +13,9 @@
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.25`
-  - `PHP_FILENAME=php-5.6.25.tar.xz`
-  - `PHP_SHA256=7535cd6e20040ccec4594cc386c6f15c3f2c88f24163294a31068cf7dfe7f644`
+  - `PHP_VERSION=5.6.26`
+  - `PHP_FILENAME=php-5.6.26.tar.xz`
+  - `PHP_SHA256=203a854f0f243cb2810d1c832bc871ff133eccdf1ff69d32846f93bc1bef58a8`
   - `JOOMLA_VERSION=3.6.2`
   - `JOOMLA_SHA1=fdaa25337aaabd0d673aafc0ff90e7375de2d6e3`
 

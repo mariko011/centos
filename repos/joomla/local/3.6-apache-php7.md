@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f5f07354e642039b179bb88c09fb0558130208d7439ad6fb6d9a18989c87f842`
-- Created: `2016-08-31T01:59:55.69805947Z`
+- Image ID: `sha256:b2693865450d8214022b09b5c9a7cefe075f6f3278b4847d1e830191d178235a`
+- Created: `2016-09-16T22:03:48.277857527Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["apache2-foreground"]`
@@ -16,9 +16,9 @@
   - `PHP_EXTRA_BUILD_DEPS=apache2-dev`
   - `PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763`
-  - `PHP_VERSION=7.0.10`
-  - `PHP_FILENAME=php-7.0.10.tar.xz`
-  - `PHP_SHA256=348476ff7ba8d95a1e28e1059430c10470c5f8110f6d9133d30153dda4cdf56a`
+  - `PHP_VERSION=7.0.11`
+  - `PHP_FILENAME=php-7.0.11.tar.xz`
+  - `PHP_SHA256=d4cccea8da1d27c11b89386f8b8e95692ad3356610d571253d00ca67d524c735`
   - `JOOMLA_VERSION=3.6.2`
   - `JOOMLA_SHA1=fdaa25337aaabd0d673aafc0ff90e7375de2d6e3`
 
