@@ -1,9 +1,9 @@
-# `php:5.6.25-cli`
+# `php:5.6.26-cli`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f0b4aec254af62e559ba49cfa578af35d8ee4c121b2305331f8dcca644dcffdc`
-- Created: `2016-08-31T00:34:47.717828016Z`
+- Image ID: `sha256:5c58939ac1411f6407cac73e17084dc33ec22b86bf92efa75e0b36da3469ab5b`
+- Created: `2016-09-16T20:31:44.877748219Z`
 - Arch: `linux`/`amd64`
 - Command: `["php","-a"]`
 - Environment:
@@ -11,9 +11,9 @@
   - `PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.25`
-  - `PHP_FILENAME=php-5.6.25.tar.xz`
-  - `PHP_SHA256=7535cd6e20040ccec4594cc386c6f15c3f2c88f24163294a31068cf7dfe7f644`
+  - `PHP_VERSION=5.6.26`
+  - `PHP_FILENAME=php-5.6.26.tar.xz`
+  - `PHP_SHA256=203a854f0f243cb2810d1c832bc871ff133eccdf1ff69d32846f93bc1bef58a8`
 
 ## `dpkg` (`.deb`-based packages)
 

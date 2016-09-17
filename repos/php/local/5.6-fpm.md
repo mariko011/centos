@@ -1,9 +1,9 @@
-# `php:5.6.25-fpm`
+# `php:5.6.26-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:03a0115cad1f9014e300da87874d43c6b2f2fe1b19ca330e0093d1f2195af740`
-- Created: `2016-08-31T00:40:38.293773277Z`
+- Image ID: `sha256:c90bf43470d10e29dc69ae521af3426326b4905f3115f54e6d057b2d37c0e789`
+- Created: `2016-09-16T20:41:20.357729541Z`
 - Arch: `linux`/`amd64`
 - Command: `["php-fpm"]`
 - Environment:
@@ -12,9 +12,9 @@
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.25`
-  - `PHP_FILENAME=php-5.6.25.tar.xz`
-  - `PHP_SHA256=7535cd6e20040ccec4594cc386c6f15c3f2c88f24163294a31068cf7dfe7f644`
+  - `PHP_VERSION=5.6.26`
+  - `PHP_FILENAME=php-5.6.26.tar.xz`
+  - `PHP_SHA256=203a854f0f243cb2810d1c832bc871ff133eccdf1ff69d32846f93bc1bef58a8`
 
 ## `dpkg` (`.deb`-based packages)
 

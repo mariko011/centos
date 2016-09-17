@@ -1,9 +1,9 @@
-# `php:7.0.10-zts-alpine`
+# `php:7.0.11-zts-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:88ec48e052ea20c9e92f60f7e7e63e0161a9127c68d534ed10c0ed2129c96f3d`
-- Created: `2016-08-30T17:00:51.653910327Z`
+- Image ID: `sha256:d1164263e3d6f1b8e21ff4d36729378bc4cda0a8fb5747271f479a878638097f`
+- Created: `2016-09-16T20:28:21.404529888Z`
 - Arch: `linux`/`amd64`
 - Command: `["php","-a"]`
 - Environment:
@@ -12,6 +12,6 @@
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763`
-  - `PHP_VERSION=7.0.10`
-  - `PHP_FILENAME=php-7.0.10.tar.xz`
-  - `PHP_SHA256=348476ff7ba8d95a1e28e1059430c10470c5f8110f6d9133d30153dda4cdf56a`
+  - `PHP_VERSION=7.0.11`
+  - `PHP_FILENAME=php-7.0.11.tar.xz`
+  - `PHP_SHA256=d4cccea8da1d27c11b89386f8b8e95692ad3356610d571253d00ca67d524c735`

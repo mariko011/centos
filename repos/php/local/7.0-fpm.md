@@ -1,9 +1,9 @@
-# `php:7.0.10-fpm`
+# `php:7.0.11-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6a7d2279aafaed724707fa1439dde603b1ebcea27c59a04e02675dd485abbe22`
-- Created: `2016-08-31T00:27:37.973855672Z`
+- Image ID: `sha256:be4c0157602355928336d8885a7266ed18258028104a7fd24c753217a1e378de`
+- Created: `2016-09-16T20:16:38.085831191Z`
 - Arch: `linux`/`amd64`
 - Command: `["php-fpm"]`
 - Environment:
@@ -12,9 +12,9 @@
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763`
-  - `PHP_VERSION=7.0.10`
-  - `PHP_FILENAME=php-7.0.10.tar.xz`
-  - `PHP_SHA256=348476ff7ba8d95a1e28e1059430c10470c5f8110f6d9133d30153dda4cdf56a`
+  - `PHP_VERSION=7.0.11`
+  - `PHP_FILENAME=php-7.0.11.tar.xz`
+  - `PHP_SHA256=d4cccea8da1d27c11b89386f8b8e95692ad3356610d571253d00ca67d524c735`
 
 ## `dpkg` (`.deb`-based packages)
 
