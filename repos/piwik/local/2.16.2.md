@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:227247c82ae51a480098771f91351b5ca1ff42f9f3e4836dc9bad902cb670614`
-- Created: `2016-08-31T00:45:38.59397577Z`
+- Image ID: `sha256:aeb4bea96ff11ac4305b17d4cd85f26769d1aeb25297e51c96e8f5846353d2dd`
+- Created: `2016-09-16T22:46:17.958015526Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["php-fpm"]`
@@ -13,9 +13,9 @@
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.25`
-  - `PHP_FILENAME=php-5.6.25.tar.xz`
-  - `PHP_SHA256=7535cd6e20040ccec4594cc386c6f15c3f2c88f24163294a31068cf7dfe7f644`
+  - `PHP_VERSION=5.6.26`
+  - `PHP_FILENAME=php-5.6.26.tar.xz`
+  - `PHP_SHA256=203a854f0f243cb2810d1c832bc871ff133eccdf1ff69d32846f93bc1bef58a8`
   - `PIWIK_VERSION=2.16.2`
 
 ## `dpkg` (`.deb`-based packages)
