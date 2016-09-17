@@ -1,14 +1,14 @@
-# `erlang:19.0.5-slim`
+# `erlang:19.0.7-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:672039d534fb6c10e59fc969d20b620cdddf39febd910cba00fc251cfc80c028`
-- Created: `2016-08-22T17:30:11.474474343Z`
+- Image ID: `sha256:36a6c328fe8bef092872f800ac7bc1d8356b814588d71b094be06fe67965dafc`
+- Created: `2016-09-15T23:24:09.013830624Z`
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=19.0.5`
+  - `OTP_VERSION=19.0.7`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -669,12 +669,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gmp/2:6.0.0+dfsg-6/
 - https://sources.debian.net/src/gmp/2:6.0.0+dfsg-6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gnupg=1.4.18-7+deb8u1`
+### `dpkg` source package: `gnupg=1.4.18-7+deb8u2`
 
 Binary Packages:
 
-- `gnupg=1.4.18-7+deb8u1`
-- `gpgv=1.4.18-7+deb8u1`
+- `gnupg=1.4.18-7+deb8u2`
+- `gpgv=1.4.18-7+deb8u2`
 
 Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/copyright`)
 
@@ -685,16 +685,16 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/c
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg=1.4.18-7+deb8u1
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18-7+deb8u1.dsc' gnupg_1.4.18-7+deb8u1.dsc 2552 SHA256:58f647fa1328b20bb32172b10a777f60226d119f799191a4d53172469e4f0f1d
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18.orig.tar.gz' gnupg_1.4.18.orig.tar.gz 5047888 SHA256:10a8936b76ccadb98521535b5f41cc5b41b3c159a6c2915f062bd4dc8ac12d12
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18-7+deb8u1.debian.tar.xz' gnupg_1.4.18-7+deb8u1.debian.tar.xz 298856 SHA256:883aa0dbaf494661d1a64a456505b60ae6233e9fb8ae8a1fca5efc71199fc1db
+$ apt-get source -qq --print-uris gnupg=1.4.18-7+deb8u2
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.18-7+deb8u2.dsc' gnupg_1.4.18-7+deb8u2.dsc 2432 SHA256:0f520654648b9771b3f3a70dde845accbcdc6107aa2de3328ee23e538db6fd57
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.18.orig.tar.gz' gnupg_1.4.18.orig.tar.gz 5047888 SHA256:10a8936b76ccadb98521535b5f41cc5b41b3c159a6c2915f062bd4dc8ac12d12
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.18-7+deb8u2.debian.tar.xz' gnupg_1.4.18-7+deb8u2.debian.tar.xz 300340 SHA256:7bc0c60645d6fa4135daf7b9aee862e75e4443a44e90e0d27b272895f5a701d3
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u1/
-- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u2/
+- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls28=3.3.8-6+deb8u3`
 
@@ -979,11 +979,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libffi/3.1-2/
 - https://sources.debian.net/src/libffi/3.1-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libgcrypt20=1.6.3-2+deb8u1`
+### `dpkg` source package: `libgcrypt20=1.6.3-2+deb8u2`
 
 Binary Packages:
 
-- `libgcrypt20:amd64=1.6.3-2+deb8u1`
+- `libgcrypt20:amd64=1.6.3-2+deb8u2`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
@@ -993,16 +993,16 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libgcrypt20=1.6.3-2+deb8u1
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u1.dsc' libgcrypt20_1.6.3-2+deb8u1.dsc 2573 SHA256:5073f7b0ea4777d73d4c99ab4303064ae350d015db535e2b3b9f03b6da692da8
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3.orig.tar.bz2' libgcrypt20_1.6.3.orig.tar.bz2 2494052 SHA256:41b4917b93ae34c6a0e2127378d7a4d66d805a2a86a09911d4f9bd871db7025f
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u1.debian.tar.xz' libgcrypt20_1.6.3-2+deb8u1.debian.tar.xz 28712 SHA256:84a3360762b8ba29ee99f0c95fa55ee28e1eed5fd0d2f5e86340925e5dd8d066
+$ apt-get source -qq --print-uris libgcrypt20=1.6.3-2+deb8u2
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u2.dsc' libgcrypt20_1.6.3-2+deb8u2.dsc 2583 SHA256:982179928629a477dad47b667ac64708eb791f77241807cafbee2b730c94654d
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3.orig.tar.bz2' libgcrypt20_1.6.3.orig.tar.bz2 2494052 SHA256:41b4917b93ae34c6a0e2127378d7a4d66d805a2a86a09911d4f9bd871db7025f
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u2.debian.tar.xz' libgcrypt20_1.6.3-2+deb8u2.debian.tar.xz 30964 SHA256:49cea0b68a4eb67461909088ffa190bcb13296dfe2da4821f7968dd992ed97a6
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u1/
-- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u2/
+- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.17-3`
 
@@ -1282,11 +1282,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libusb/2:0.1.12-25/
 - https://sources.debian.net/src/libusb/2:0.1.12-25/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `linux=3.16.7-ckt25-2+deb8u3`
+### `dpkg` source package: `linux=3.16.36-1+deb8u1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.16.7-ckt25-2+deb8u3`
+- `linux-libc-dev:amd64=3.16.36-1+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1294,8 +1294,19 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.16.36-1+deb8u1
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.36-1+deb8u1.dsc' linux_3.16.36-1+deb8u1.dsc 140605 SHA256:5cb95413d654550ab51db1efee0f7a5bb6ef1e17466ce9d074d9ebb356d3b326
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.36.orig.tar.xz' linux_3.16.36.orig.tar.xz 81786052 SHA256:5dd1766c3ab3dd2e90f6b3c67fa05b7dedcf844a9c0a71a0147a3d0e6694333a
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.36-1+deb8u1.debian.tar.xz' linux_3.16.36-1+deb8u1.debian.tar.xz 3224840 SHA256:591feee26152a8d63867804411577a051b4d98fdc245aac72a3d4a1ed6469bb8
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/linux/3.16.36-1+deb8u1/
+- https://sources.debian.net/src/linux/3.16.36-1+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-2`
 
