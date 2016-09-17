@@ -3796,19 +3796,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ncurses=6.0+20160625-1
-'http://httpredir.debian.org/debian/pool/main/n/ncurses/ncurses_6.0+20160625-1.dsc' ncurses_6.0+20160625-1.dsc 3742 SHA256:676762505dde61298bcc87de15d9d7b98853a22240e7df6c24cf4b2b14b99d3c
-'http://httpredir.debian.org/debian/pool/main/n/ncurses/ncurses_6.0+20160625.orig.tar.gz' ncurses_6.0+20160625.orig.tar.gz 3167182 SHA256:aaccc026de6f2f112dd56085ec7f38923429edc91a010ae1c8e68b5c53c60acd
-'http://httpredir.debian.org/debian/pool/main/n/ncurses/ncurses_6.0+20160625-1.debian.tar.xz' ncurses_6.0+20160625-1.debian.tar.xz 52508 SHA256:5e01e261431c57e2f8856de0c8fe58565814ae2bc737ae991ae161406772bbc6
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/ncurses/6.0+20160625-1/
-- https://sources.debian.net/src/ncurses/6.0+20160625-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `netbase=5.3`
 
@@ -4579,20 +4568,8 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.14.1-1
-'http://httpredir.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.14.1-1.dsc' sqlite3_3.14.1-1.dsc 2496 SHA256:ba0937b26b46a44980cfb387236821f346766ca3cbee6ef41495916e8233f3d3
-'http://httpredir.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.14.1.orig-www.tar.xz' sqlite3_3.14.1.orig-www.tar.xz 3288208 SHA256:7138c0713e9c6f3abe2aaafcf10857216172eca1c8219251c2fb4561c230a2bb
-'http://httpredir.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.14.1.orig.tar.xz' sqlite3_3.14.1.orig.tar.xz 5286048 SHA256:0910cf20748f64c69d0f660799b76163f13d2263ec5427eecbb0faf4ead39d63
-'http://httpredir.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.14.1-1.debian.tar.xz' sqlite3_3.14.1-1.debian.tar.xz 16616 SHA256:ee5e243361458d29f7fb28966a6d67067dbfaece67acf79113fbe9d19d6dc55b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sqlite3/3.14.1-1/
-- https://sources.debian.net/src/sqlite3/3.14.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `subversion=1.9.4-2`
 

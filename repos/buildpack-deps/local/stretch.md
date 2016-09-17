@@ -3485,19 +3485,8 @@ Licenses: (parsed from: `/usr/share/doc/libyaml-0-2/copyright`, `/usr/share/doc/
 - `Expat`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libyaml=0.1.6-3
-'http://httpredir.debian.org/debian/pool/main/liby/libyaml/libyaml_0.1.6-3.dsc' libyaml_0.1.6-3.dsc 1893 SHA256:ed5bc299d3bcc0b038206f8780639d4682e65f521dff571b9336e2f8626d0011
-'http://httpredir.debian.org/debian/pool/main/liby/libyaml/libyaml_0.1.6.orig.tar.gz' libyaml_0.1.6.orig.tar.gz 503012 SHA256:7da6971b4bd08a986dd2a61353bc422362bd0edcc67d7ebaac68c95f74182749
-'http://httpredir.debian.org/debian/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libyaml/0.1.6-3/
-- https://sources.debian.net/src/libyaml/0.1.6-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `linux=4.6.4-1`
 
