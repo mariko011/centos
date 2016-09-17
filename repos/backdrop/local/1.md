@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:49b4dd47283cd665a6f155d55d6053ba7b472a92fb541f566cd9bc16c44cf9aa`
-- Created: `2016-08-31T01:09:55.689778833Z`
+- Image ID: `sha256:5bb18578bb2a760d1ba174ef9cc0088a091418c33b892a59ca5925fcdd1cab31`
+- Created: `2016-09-16T21:33:28.265781599Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["apache2-foreground"]`
@@ -16,9 +16,9 @@
   - `PHP_EXTRA_BUILD_DEPS=apache2-dev`
   - `PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.25`
-  - `PHP_FILENAME=php-5.6.25.tar.xz`
-  - `PHP_SHA256=7535cd6e20040ccec4594cc386c6f15c3f2c88f24163294a31068cf7dfe7f644`
+  - `PHP_VERSION=5.6.26`
+  - `PHP_FILENAME=php-5.6.26.tar.xz`
+  - `PHP_SHA256=203a854f0f243cb2810d1c832bc871ff133eccdf1ff69d32846f93bc1bef58a8`
   - `BACKDROP_VERSION=1.3.4`
   - `BACKDROP_MD5=1bcfacab25cd71743ad87bdf391a53c8`
 
