@@ -1,17 +1,17 @@
-# `java:9-b134-jre`
+# `java:9-b135-jre`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b2cae916b06e6ba425f4c2bf8349cea069894e5e2177662a7746f215e74d9192`
-- Created: `2016-09-07T18:08:53.764166597Z`
+- Image ID: `sha256:5c29121cb1ac17fe20dc626a79ecafef9273a12de004322ffc384e55d9bb0f9b`
+- Created: `2016-09-16T19:18:07.555219911Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64`
-  - `JAVA_VERSION=9~b134`
-  - `JAVA_DEBIAN_VERSION=9~b134-2`
+  - `JAVA_VERSION=9~b135`
+  - `JAVA_DEBIAN_VERSION=9~b135-1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1985,11 +1985,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nss/2:3.26-1/
 - https://sources.debian.net/src/nss/2:3.26-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openjdk-9=9~b134-2`
+### `dpkg` source package: `openjdk-9=9~b135-1`
 
 Binary Packages:
 
-- `openjdk-9-jre-headless:amd64=9~b134-2`
+- `openjdk-9-jre-headless:amd64=9~b135-1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 
@@ -2001,16 +2001,16 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-9=9~b134-2
-'http://httpredir.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b134-2.dsc' openjdk-9_9~b134-2.dsc 4351 SHA256:8d883f1fec30b32ed89be8b5da190ec9b6aea1b540c1c06f87afda697c56737b
-'http://httpredir.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b134.orig.tar.gz' openjdk-9_9~b134.orig.tar.gz 70456142 SHA256:405a1b4053ff6fc21222c763295b243e76e0e49ac485b4ef486fa8b6442b2287
-'http://httpredir.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b134-2.debian.tar.xz' openjdk-9_9~b134-2.debian.tar.xz 188876 SHA256:7b351a6ecd3b7ffd8248388dbb7511bfaa2d041495007feedc6dfb27874f8d90
+$ apt-get source -qq --print-uris openjdk-9=9~b135-1
+'http://httpredir.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b135-1.dsc' openjdk-9_9~b135-1.dsc 4351 SHA256:980c0d27446938ce466ca28fe9786b1dfc7cdbaf01dfcfabd945e1a03ff25fce
+'http://httpredir.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b135.orig.tar.gz' openjdk-9_9~b135.orig.tar.gz 70514262 SHA256:f539d30eb8a28ffa234c378d156cc68ebf55a0de1ec04fd94560da225de7181f
+'http://httpredir.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b135-1.debian.tar.xz' openjdk-9_9~b135-1.debian.tar.xz 188940 SHA256:beaacd7c680ce5e5221915b1f921305fade362314813997d797ad95a235fb44a
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openjdk-9/9~b134-2/
-- https://sources.debian.net/src/openjdk-9/9~b134-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openjdk-9/9~b135-1/
+- https://sources.debian.net/src/openjdk-9/9~b135-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.42+dfsg-2`
 
@@ -2303,11 +2303,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/shadow/1:4.2-3.1/
 - https://sources.debian.net/src/shadow/1:4.2-3.1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `sqlite3=3.14.1-1`
+### `dpkg` source package: `sqlite3=3.14.2-1`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.14.1-1`
+- `libsqlite3-0:amd64=3.14.2-1`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2315,8 +2315,20 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.14.2-1
+'http://httpredir.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.14.2-1.dsc' sqlite3_3.14.2-1.dsc 2496 SHA256:48d506a4bef34812d9f69c91d0399f95c191ad412c5fc17b51070a42fbb4b6b0
+'http://httpredir.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.14.2.orig-www.tar.xz' sqlite3_3.14.2.orig-www.tar.xz 3311132 SHA256:eb70802f0cbad2c3b30fefaa3eb934cf8689ca68c24259fb516ab0dbcad5572d
+'http://httpredir.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.14.2.orig.tar.xz' sqlite3_3.14.2.orig.tar.xz 5292032 SHA256:36d063ec7581e29720e576b5915062b39e6e0b434841332cef46fe9ef653ea0a
+'http://httpredir.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.14.2-1.debian.tar.xz' sqlite3_3.14.2-1.debian.tar.xz 16612 SHA256:53f387407501643b9c1c708b4c77d44c10fae1bd140c1a928b339feb668a1083
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/sqlite3/3.14.2-1/
+- https://sources.debian.net/src/sqlite3/3.14.2-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `systemd=231-5`
 
