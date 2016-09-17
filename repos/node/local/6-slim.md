@@ -1,15 +1,15 @@
-# `node:6.5.0-slim`
+# `node:6.6.0-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1bf7b23c46acee2d9623145ae872714d78ba91654bc5591c7f13fcd9dc603232`
-- Created: `2016-08-30T22:03:04.837838472Z`
+- Image ID: `sha256:1e875d2b8a67d19fee425410ce04447bb5c68d2782e4bda3ba2c2190ded16281`
+- Created: `2016-09-16T16:04:48.825967009Z`
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=6.5.0`
+  - `NODE_VERSION=6.6.0`
 
 ## `dpkg` (`.deb`-based packages)
 
