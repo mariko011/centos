@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8e7f96cd90672b51b9f8eaec8afc8e8767b666012bb2b5d8682837062de54f6c`
-- Created: `2016-08-22T21:12:09.549725432Z`
+- Image ID: `sha256:e9fb651b76e863406bd080b377f417ee84875c0d6fc0242c39019efcad0ae53b`
+- Created: `2016-08-31T03:06:05.761759181Z`
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
 - Environment:
@@ -605,14 +605,14 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `curl=7.38.0-4+deb8u3`
+### `dpkg` source package: `curl=7.38.0-4+deb8u4`
 
 Binary Packages:
 
-- `curl=7.38.0-4+deb8u3`
-- `libcurl3:amd64=7.38.0-4+deb8u3`
-- `libcurl3-gnutls:amd64=7.38.0-4+deb8u3`
-- `libcurl4-openssl-dev:amd64=7.38.0-4+deb8u3`
+- `curl=7.38.0-4+deb8u4`
+- `libcurl3:amd64=7.38.0-4+deb8u4`
+- `libcurl3-gnutls:amd64=7.38.0-4+deb8u4`
+- `libcurl4-openssl-dev:amd64=7.38.0-4+deb8u4`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -624,16 +624,16 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u3
-'http://httpredir.debian.org/debian/pool/main/c/curl/curl_7.38.0-4+deb8u3.dsc' curl_7.38.0-4+deb8u3.dsc 2655 SHA256:ff078bf3a2491118aa042b824fd28a0482a2e2b1fae14a69377dd6f368f4bfd1
-'http://httpredir.debian.org/debian/pool/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
-'http://httpredir.debian.org/debian/pool/main/c/curl/curl_7.38.0-4+deb8u3.debian.tar.xz' curl_7.38.0-4+deb8u3.debian.tar.xz 33672 SHA256:4fabe8fcc105f370fd245bf6d4d4f66c51057e39f7a46369e2e4e4781e24c02f
+$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u4
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u4.dsc' curl_7.38.0-4+deb8u4.dsc 2655 SHA256:0b99d6f0ee0b92cc34b924252a99ca5bc0d9cf18b3243acf3f2cd4c1391b73e3
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u4.debian.tar.xz' curl_7.38.0-4+deb8u4.debian.tar.xz 34628 SHA256:4cd6d52ce3208ce02cba6adae87cbae0c799f55b1eb6812a6f22c5be1fdd52cf
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u3/
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u4/
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
@@ -1040,14 +1040,14 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/findutils/4.4.2-9/
 - https://sources.debian.net/src/findutils/4.4.2-9/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `fontconfig=2.11.0-6.3`
+### `dpkg` source package: `fontconfig=2.11.0-6.3+deb8u1`
 
 Binary Packages:
 
-- `fontconfig=2.11.0-6.3`
-- `fontconfig-config=2.11.0-6.3`
-- `libfontconfig1:amd64=2.11.0-6.3`
-- `libfontconfig1-dev:amd64=2.11.0-6.3`
+- `fontconfig=2.11.0-6.3+deb8u1`
+- `fontconfig-config=2.11.0-6.3+deb8u1`
+- `libfontconfig1:amd64=2.11.0-6.3+deb8u1`
+- `libfontconfig1-dev:amd64=2.11.0-6.3+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1056,16 +1056,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris fontconfig=2.11.0-6.3
-'http://httpredir.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.11.0-6.3.dsc' fontconfig_2.11.0-6.3.dsc 2207 SHA256:e68538738aa0116675721840b2b16e7b121080554ce3a638823a46b3fba706bf
-'http://httpredir.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.11.0.orig.tar.xz' fontconfig_2.11.0.orig.tar.xz 319652 SHA256:f19c7366d59dc4e79eaf3eedabd44b6375b238f29316db5020a183c7d9a78db9
-'http://httpredir.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.11.0-6.3.debian.tar.xz' fontconfig_2.11.0-6.3.debian.tar.xz 1071060 SHA256:52ce90b8a6af768256100628a4aad458030eb73524f40573080959241ecdc967
+$ apt-get source -qq --print-uris fontconfig=2.11.0-6.3+deb8u1
+'http://security.debian.org/pool/updates/main/f/fontconfig/fontconfig_2.11.0-6.3+deb8u1.dsc' fontconfig_2.11.0-6.3+deb8u1.dsc 2235 SHA256:c496170e75ece48a19c5b60745eef5522b62ae1a817c23125ebd9745bc255fcd
+'http://security.debian.org/pool/updates/main/f/fontconfig/fontconfig_2.11.0.orig.tar.xz' fontconfig_2.11.0.orig.tar.xz 319652 SHA256:f19c7366d59dc4e79eaf3eedabd44b6375b238f29316db5020a183c7d9a78db9
+'http://security.debian.org/pool/updates/main/f/fontconfig/fontconfig_2.11.0-6.3+deb8u1.debian.tar.xz' fontconfig_2.11.0-6.3+deb8u1.debian.tar.xz 1073796 SHA256:a8140c4576a2c43614930e8a307966018551ae71ad448af5f75faf4f47f70173
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/fontconfig/2.11.0-6.3/
-- https://sources.debian.net/src/fontconfig/2.11.0-6.3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/fontconfig/2.11.0-6.3+deb8u1/
+- https://sources.debian.net/src/fontconfig/2.11.0-6.3+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `fonts-dejavu=2.34-1`
 
@@ -1423,12 +1423,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gmp/2:6.0.0+dfsg-6/
 - https://sources.debian.net/src/gmp/2:6.0.0+dfsg-6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gnupg=1.4.18-7+deb8u1`
+### `dpkg` source package: `gnupg=1.4.18-7+deb8u2`
 
 Binary Packages:
 
-- `gnupg=1.4.18-7+deb8u1`
-- `gpgv=1.4.18-7+deb8u1`
+- `gnupg=1.4.18-7+deb8u2`
+- `gpgv=1.4.18-7+deb8u2`
 
 Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/copyright`)
 
@@ -1439,16 +1439,16 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/c
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg=1.4.18-7+deb8u1
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18-7+deb8u1.dsc' gnupg_1.4.18-7+deb8u1.dsc 2552 SHA256:58f647fa1328b20bb32172b10a777f60226d119f799191a4d53172469e4f0f1d
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18.orig.tar.gz' gnupg_1.4.18.orig.tar.gz 5047888 SHA256:10a8936b76ccadb98521535b5f41cc5b41b3c159a6c2915f062bd4dc8ac12d12
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18-7+deb8u1.debian.tar.xz' gnupg_1.4.18-7+deb8u1.debian.tar.xz 298856 SHA256:883aa0dbaf494661d1a64a456505b60ae6233e9fb8ae8a1fca5efc71199fc1db
+$ apt-get source -qq --print-uris gnupg=1.4.18-7+deb8u2
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.18-7+deb8u2.dsc' gnupg_1.4.18-7+deb8u2.dsc 2432 SHA256:0f520654648b9771b3f3a70dde845accbcdc6107aa2de3328ee23e538db6fd57
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.18.orig.tar.gz' gnupg_1.4.18.orig.tar.gz 5047888 SHA256:10a8936b76ccadb98521535b5f41cc5b41b3c159a6c2915f062bd4dc8ac12d12
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.18-7+deb8u2.debian.tar.xz' gnupg_1.4.18-7+deb8u2.debian.tar.xz 300340 SHA256:7bc0c60645d6fa4135daf7b9aee862e75e4443a44e90e0d27b272895f5a701d3
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u1/
-- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u2/
+- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls28=3.3.8-6+deb8u3`
 
@@ -1743,23 +1743,23 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/ilmbase/1.0.1-6.1/
 - https://sources.debian.net/src/ilmbase/1.0.1-6.1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `imagemagick=8:6.8.9.9-5+deb8u3`
+### `dpkg` source package: `imagemagick=8:6.8.9.9-5+deb8u4`
 
 Binary Packages:
 
-- `imagemagick=8:6.8.9.9-5+deb8u3`
-- `imagemagick-6.q16=8:6.8.9.9-5+deb8u3`
-- `imagemagick-common=8:6.8.9.9-5+deb8u3`
-- `libmagickcore-6-arch-config:amd64=8:6.8.9.9-5+deb8u3`
-- `libmagickcore-6-headers=8:6.8.9.9-5+deb8u3`
-- `libmagickcore-6.q16-2:amd64=8:6.8.9.9-5+deb8u3`
-- `libmagickcore-6.q16-2-extra:amd64=8:6.8.9.9-5+deb8u3`
-- `libmagickcore-6.q16-dev:amd64=8:6.8.9.9-5+deb8u3`
-- `libmagickcore-dev=8:6.8.9.9-5+deb8u3`
-- `libmagickwand-6-headers=8:6.8.9.9-5+deb8u3`
-- `libmagickwand-6.q16-2:amd64=8:6.8.9.9-5+deb8u3`
-- `libmagickwand-6.q16-dev:amd64=8:6.8.9.9-5+deb8u3`
-- `libmagickwand-dev=8:6.8.9.9-5+deb8u3`
+- `imagemagick=8:6.8.9.9-5+deb8u4`
+- `imagemagick-6.q16=8:6.8.9.9-5+deb8u4`
+- `imagemagick-common=8:6.8.9.9-5+deb8u4`
+- `libmagickcore-6-arch-config:amd64=8:6.8.9.9-5+deb8u4`
+- `libmagickcore-6-headers=8:6.8.9.9-5+deb8u4`
+- `libmagickcore-6.q16-2:amd64=8:6.8.9.9-5+deb8u4`
+- `libmagickcore-6.q16-2-extra:amd64=8:6.8.9.9-5+deb8u4`
+- `libmagickcore-6.q16-dev:amd64=8:6.8.9.9-5+deb8u4`
+- `libmagickcore-dev=8:6.8.9.9-5+deb8u4`
+- `libmagickwand-6-headers=8:6.8.9.9-5+deb8u4`
+- `libmagickwand-6.q16-2:amd64=8:6.8.9.9-5+deb8u4`
+- `libmagickwand-6.q16-dev:amd64=8:6.8.9.9-5+deb8u4`
+- `libmagickwand-dev=8:6.8.9.9-5+deb8u4`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/imagemagick-common/copyright`, `/usr/share/doc/libmagickcore-6-arch-config/copyright`, `/usr/share/doc/libmagickcore-6-headers/copyright`, `/usr/share/doc/libmagickcore-6.q16-2/copyright`, `/usr/share/doc/libmagickcore-6.q16-2-extra/copyright`, `/usr/share/doc/libmagickcore-6.q16-dev/copyright`, `/usr/share/doc/libmagickcore-dev/copyright`, `/usr/share/doc/libmagickwand-6-headers/copyright`, `/usr/share/doc/libmagickwand-6.q16-2/copyright`, `/usr/share/doc/libmagickwand-6.q16-dev/copyright`, `/usr/share/doc/libmagickwand-dev/copyright`)
 
@@ -1777,8 +1777,19 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris imagemagick=8:6.8.9.9-5+deb8u4
+'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u4.dsc' imagemagick_6.8.9.9-5+deb8u4.dsc 4228 SHA256:e74a8760b0ebbf547ab220ecc41bf93958ae2025c3d48ee5c99c735c61a7dec9
+'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9.orig.tar.xz' imagemagick_6.8.9.9.orig.tar.xz 7891624 SHA256:a4cccc70179ff2c67550e063cdcb2e62907338ef3e68b45bb1c41931e515b3eb
+'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u4.debian.tar.xz' imagemagick_6.8.9.9-5+deb8u4.debian.tar.xz 246016 SHA256:b7f35645ce3814966fc6b9d820068df06f6895edc0f53635600a169f9dde5f62
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u4/
+- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9.2.39.3a460-3`
 
@@ -2052,9 +2063,10 @@ Binary Packages:
 - `libkadm5srv-mit9:amd64=1.12.1+dfsg-19+deb8u2`
 - `libkdb5-7:amd64=1.12.1+dfsg-19+deb8u2`
 - `libkrb5-3:amd64=1.12.1+dfsg-19+deb8u2`
+- `libkrb5-dev=1.12.1+dfsg-19+deb8u2`
 - `libkrb5support0:amd64=1.12.1+dfsg-19+deb8u2`
 
-Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libgssrpc4/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkadm5clnt-mit9/copyright`, `/usr/share/doc/libkadm5srv-mit9/copyright`, `/usr/share/doc/libkdb5-7/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libgssrpc4/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkadm5clnt-mit9/copyright`, `/usr/share/doc/libkadm5srv-mit9/copyright`, `/usr/share/doc/libkdb5-7/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5-dev/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
@@ -2357,11 +2369,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libffi/3.1-2/
 - https://sources.debian.net/src/libffi/3.1-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libgcrypt20=1.6.3-2+deb8u1`
+### `dpkg` source package: `libgcrypt20=1.6.3-2+deb8u2`
 
 Binary Packages:
 
-- `libgcrypt20:amd64=1.6.3-2+deb8u1`
+- `libgcrypt20:amd64=1.6.3-2+deb8u2`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
@@ -2371,16 +2383,16 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libgcrypt20=1.6.3-2+deb8u1
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u1.dsc' libgcrypt20_1.6.3-2+deb8u1.dsc 2573 SHA256:5073f7b0ea4777d73d4c99ab4303064ae350d015db535e2b3b9f03b6da692da8
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3.orig.tar.bz2' libgcrypt20_1.6.3.orig.tar.bz2 2494052 SHA256:41b4917b93ae34c6a0e2127378d7a4d66d805a2a86a09911d4f9bd871db7025f
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u1.debian.tar.xz' libgcrypt20_1.6.3-2+deb8u1.debian.tar.xz 28712 SHA256:84a3360762b8ba29ee99f0c95fa55ee28e1eed5fd0d2f5e86340925e5dd8d066
+$ apt-get source -qq --print-uris libgcrypt20=1.6.3-2+deb8u2
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u2.dsc' libgcrypt20_1.6.3-2+deb8u2.dsc 2583 SHA256:982179928629a477dad47b667ac64708eb791f77241807cafbee2b730c94654d
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3.orig.tar.bz2' libgcrypt20_1.6.3.orig.tar.bz2 2494052 SHA256:41b4917b93ae34c6a0e2127378d7a4d66d805a2a86a09911d4f9bd871db7025f
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u2.debian.tar.xz' libgcrypt20_1.6.3-2+deb8u2.debian.tar.xz 30964 SHA256:49cea0b68a4eb67461909088ffa190bcb13296dfe2da4821f7968dd992ed97a6
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u1/
-- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u2/
+- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgd2=2.1.0-5+deb8u6`
 
@@ -3682,19 +3694,8 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mysql-5.5=5.5.50-0+deb8u1
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.50-0+deb8u1.dsc' mysql-5.5_5.5.50-0+deb8u1.dsc 3093 SHA256:87678cddeb36bdb260a9a3da1664596b1b4d93ba2fcb70aac58658facabc29a9
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.50.orig.tar.gz' mysql-5.5_5.5.50.orig.tar.gz 21029856 SHA256:5eac55c8b1b2b18233c006935d90775d805a8422942e6deacf8b5bded432f951
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.50-0+deb8u1.debian.tar.xz' mysql-5.5_5.5.50-0+deb8u1.debian.tar.xz 232212 SHA256:11fe3f1a8935a4eca357038dc08fb399a88dc7b1f6f49d803e059585138db9cb
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mysql-5.5/5.5.50-0+deb8u1/
-- https://sources.debian.net/src/mysql-5.5/5.5.50-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ncurses=5.9+20140913-1`
 
@@ -4110,12 +4111,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/pkg-config/0.28-1/
 - https://sources.debian.net/src/pkg-config/0.28-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `postgresql-9.4=9.4.8-0+deb8u1`
+### `dpkg` source package: `postgresql-9.4=9.4.9-0+deb8u1`
 
 Binary Packages:
 
-- `libpq-dev=9.4.8-0+deb8u1`
-- `libpq5:amd64=9.4.8-0+deb8u1`
+- `libpq-dev=9.4.9-0+deb8u1`
+- `libpq5:amd64=9.4.9-0+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -4125,16 +4126,16 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-9.4=9.4.8-0+deb8u1
-'http://httpredir.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.8-0+deb8u1.dsc' postgresql-9.4_9.4.8-0+deb8u1.dsc 3525 SHA256:a1fef31d67b43b50789f3190f924af2d04169a245168a94f98d5528d59453dd9
-'http://httpredir.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.8.orig.tar.bz2' postgresql-9.4_9.4.8.orig.tar.bz2 17740626 SHA256:4a10640e180e0d9adb587bc25a82dcce6bf507b033637e7fb9d4eeffa33a6b4c
-'http://httpredir.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.8-0+deb8u1.debian.tar.xz' postgresql-9.4_9.4.8-0+deb8u1.debian.tar.xz 21524 SHA256:d1cd08e5bd947484e9786aab21f263663eb8410e92922361be86daec80612004
+$ apt-get source -qq --print-uris postgresql-9.4=9.4.9-0+deb8u1
+'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.9-0+deb8u1.dsc' postgresql-9.4_9.4.9-0+deb8u1.dsc 3525 SHA256:6aca81ec5b66c4f868733ef841a4b78beaf0b581bc0b9ab48f83336cd7d65513
+'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.9.orig.tar.bz2' postgresql-9.4_9.4.9.orig.tar.bz2 17763281 SHA256:c120a62e90214c20d9160da3ca3fbaec97d5f1656f1dd033f60e7297b7a1e1c9
+'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.9-0+deb8u1.debian.tar.xz' postgresql-9.4_9.4.9-0+deb8u1.debian.tar.xz 22404 SHA256:1ae3b228dc8c392a276bcc78ac7e5ae1ecc8cc1bcb5f182478979babd0b20c21
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/postgresql-9.4/9.4.8-0+deb8u1/
-- https://sources.debian.net/src/postgresql-9.4/9.4.8-0+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/postgresql-9.4/9.4.9-0+deb8u1/
+- https://sources.debian.net/src/postgresql-9.4/9.4.9-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `procps=2:3.3.9-9`
 

@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cb409139e357a156409dd048c839912d7f861662998582434bd1331955d0be10`
-- Created: `2016-08-26T20:56:54.055222744Z`
+- Image ID: `sha256:ab3a3f148e8d4047332cbad1a16c8f9fa4bbb55a5bb462e93b471434ad165f2d`
+- Created: `2016-08-31T02:45:10.581801712Z`
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
 - Environment:
@@ -495,42 +495,16 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/coreutils/8.13-3.5/
 - https://sources.debian.net/src/coreutils/8.13-3.5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `curl=7.26.0-1+wheezy13`
-
-Binary Packages:
-
-- `libcurl3-gnutls:amd64=7.26.0-1+wheezy13`
-
-Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
-
-- `BSD-3-Clause`
-- `BSD-4-Clause`
-- `ISC`
-- `curl`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy13
-'http://httpredir.debian.org/debian/pool/main/c/curl/curl_7.26.0-1+wheezy13.dsc' curl_7.26.0-1+wheezy13.dsc 2520 SHA256:ec60b84d5c94e20c20ed69e2ecd73dfe1d4f6c044d592c8642752d4556b4305c
-'http://httpredir.debian.org/debian/pool/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
-'http://httpredir.debian.org/debian/pool/main/c/curl/curl_7.26.0-1+wheezy13.debian.tar.gz' curl_7.26.0-1+wheezy13.debian.tar.gz 42245 SHA256:72492ae7016aca39f0b3a45273ac634c6373e617c1ac9e8725983104ff1947c0
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/curl/7.26.0-1+wheezy13/
-- https://sources.debian.net/src/curl/7.26.0-1+wheezy13/debian/copyright (for direct copyright/license information)
-
 ### `dpkg` source package: `curl=7.26.0-1+wheezy14`
 
 Binary Packages:
 
 - `curl=7.26.0-1+wheezy14`
 - `libcurl3:amd64=7.26.0-1+wheezy14`
+- `libcurl3-gnutls:amd64=7.26.0-1+wheezy14`
 - `libcurl4-openssl-dev=7.26.0-1+wheezy14`
 
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -1234,12 +1208,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gmp/2:5.0.5+dfsg-2/
 - https://sources.debian.net/src/gmp/2:5.0.5+dfsg-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gnupg=1.4.12-7+deb7u7`
+### `dpkg` source package: `gnupg=1.4.12-7+deb7u8`
 
 Binary Packages:
 
-- `gnupg=1.4.12-7+deb7u7`
-- `gpgv=1.4.12-7+deb7u7`
+- `gnupg=1.4.12-7+deb7u8`
+- `gpgv=1.4.12-7+deb7u8`
 
 Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/copyright`)
 
@@ -1249,16 +1223,16 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/c
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg=1.4.12-7+deb7u7
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.12-7+deb7u7.dsc' gnupg_1.4.12-7+deb7u7.dsc 2322 SHA256:edf571e8ebcdb13404c347d5e51041814eb3d1b1b1d9d02e4b18e84b1c90f831
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.12.orig.tar.gz' gnupg_1.4.12.orig.tar.gz 4939171 SHA256:bb94222fa263e55a5096fdc1c6cd60e9992602ce5067bc453a4ada77bb31e367
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.12-7+deb7u7.debian.tar.gz' gnupg_1.4.12-7+deb7u7.debian.tar.gz 120475 SHA256:0f9b3f60f6f3d3925f30cef59bdee2fdf3e06930cd00b396f4338b14aee0aa82
+$ apt-get source -qq --print-uris gnupg=1.4.12-7+deb7u8
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12-7+deb7u8.dsc' gnupg_1.4.12-7+deb7u8.dsc 2306 SHA256:2b6afe20bfe9da633bf3e81b669663c2a8285521680e1d8bad5b46d93fb2df3a
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12.orig.tar.gz' gnupg_1.4.12.orig.tar.gz 4939171 SHA256:bb94222fa263e55a5096fdc1c6cd60e9992602ce5067bc453a4ada77bb31e367
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12-7+deb7u8.debian.tar.gz' gnupg_1.4.12-7+deb7u8.debian.tar.gz 122627 SHA256:1ae5183aa658be8f611a50040aa3edb7e870b753a81b251909384b5e1d75be21
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u7/
-- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u7/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u8/
+- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls26=2.12.20-8+deb7u5`
 
@@ -3208,19 +3182,8 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mysql-5.5=5.5.50-0+deb7u2
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.50-0+deb7u2.dsc' mysql-5.5_5.5.50-0+deb7u2.dsc 2939 SHA256:6d52a2a20eb6134d077909f7b05b8ddb600277aa18d4f9984b6a731b738533a1
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.50.orig.tar.gz' mysql-5.5_5.5.50.orig.tar.gz 21029856 SHA256:5eac55c8b1b2b18233c006935d90775d805a8422942e6deacf8b5bded432f951
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.50-0+deb7u2.debian.tar.gz' mysql-5.5_5.5.50-0+deb7u2.debian.tar.gz 380014 SHA256:fee8d183e0d37c95b5e243780f4ccacb2dc2f234f15c619dd949d4fe98bc91ca
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mysql-5.5/5.5.50-0+deb7u2/
-- https://sources.debian.net/src/mysql-5.5/5.5.50-0+deb7u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ncurses=5.9-10`
 
@@ -3350,11 +3313,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/openldap/2.4.31-2+deb7u2/
 - https://sources.debian.net/src/openldap/2.4.31-2+deb7u2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openssh=1:6.0p1-4+deb7u4`
+### `dpkg` source package: `openssh=1:6.0p1-4+deb7u6`
 
 Binary Packages:
 
-- `openssh-client=1:6.0p1-4+deb7u4`
+- `openssh-client=1:6.0p1-4+deb7u6`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -3363,16 +3326,16 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssh=1:6.0p1-4+deb7u4
-'http://httpredir.debian.org/debian/pool/main/o/openssh/openssh_6.0p1-4+deb7u4.dsc' openssh_6.0p1-4+deb7u4.dsc 2490 SHA256:5a9d473a76cb79291e46d330520bfd6f0cebe3bef7cb157dcdd09abfb3b6cf59
-'http://httpredir.debian.org/debian/pool/main/o/openssh/openssh_6.0p1.orig.tar.gz' openssh_6.0p1.orig.tar.gz 1126034 SHA256:589d48e952d6c017e667873486b5df63222f9133d417d0002bd6429d9bd882de
-'http://httpredir.debian.org/debian/pool/main/o/openssh/openssh_6.0p1-4+deb7u4.debian.tar.gz' openssh_6.0p1-4+deb7u4.debian.tar.gz 250300 SHA256:208923775bb4fa820398df15259302ee272b5458ef2ecac37b2b74eeb29b5d9e
+$ apt-get source -qq --print-uris openssh=1:6.0p1-4+deb7u6
+'http://security.debian.org/pool/updates/main/o/openssh/openssh_6.0p1-4+deb7u6.dsc' openssh_6.0p1-4+deb7u6.dsc 2507 SHA256:8db1d63db2c60fd0740554a4ba69a496c026284bf6aabd83b0df455d28d12057
+'http://security.debian.org/pool/updates/main/o/openssh/openssh_6.0p1.orig.tar.gz' openssh_6.0p1.orig.tar.gz 1126034 SHA256:589d48e952d6c017e667873486b5df63222f9133d417d0002bd6429d9bd882de
+'http://security.debian.org/pool/updates/main/o/openssh/openssh_6.0p1-4+deb7u6.debian.tar.gz' openssh_6.0p1-4+deb7u6.debian.tar.gz 257424 SHA256:80d2076136c5c8f8dbc52eecd1ec6a4f188f30187db130fdeed6c23ee215333e
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openssh/1:6.0p1-4+deb7u4/
-- https://sources.debian.net/src/openssh/1:6.0p1-4+deb7u4/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openssh/1:6.0p1-4+deb7u6/
+- https://sources.debian.net/src/openssh/1:6.0p1-4+deb7u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssl=1.0.1e-2+deb7u21`
 
