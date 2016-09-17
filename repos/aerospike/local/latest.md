@@ -1,16 +1,16 @@
-# `aerospike:3.9.1.1`
+# `aerospike:3.9.1-1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c7a5563a44fe0c7226108d80f6d8c875185cf948253edfa496b533b7bcf82261`
-- Created: `2016-08-26T19:55:13.088289889Z`
+- Image ID: `sha256:f236831c11a2199ab5ecdad81e1cd534fb3cb222859d3f5a930bbfac64435c74`
+- Created: `2016-09-15T23:39:41.481790071Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["asd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `AEROSPIKE_VERSION=3.9.1`
-  - `AEROSPIKE_SHA256=7bb3236d478559cc19658b87cb5877aa023dba7d5dd788c89b7cf75cad3fdf89`
+  - `AEROSPIKE_VERSION=3.9.1.1`
+  - `AEROSPIKE_SHA256=05d049f83a1fce9d4acc6ad6f1fbbe86af2dfb462d47eafbfae1ae4dbbb943c1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -52,11 +52,11 @@ $ apt-get source -qq --print-uris adduser=3.113+nmu3ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.113+nmu3ubuntu4.tar.gz' adduser_3.113+nmu3ubuntu4.tar.gz 367980 SHA256:6e4d44c8388b9ba85fc175fa4a48ed43bf6500913c2c631fda0e4419ae63c65a
 ```
 
-### `dpkg` source package: `aerospike-server-community=3.9.1-1`
+### `dpkg` source package: `aerospike-server-community=3.9.1.1-1`
 
 Binary Packages:
 
-- `aerospike-server-community=3.9.1-1`
+- `aerospike-server-community=3.9.1.1-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -222,26 +222,6 @@ $ apt-get source -qq --print-uris bzip2=1.0.6-8
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-8.dsc' bzip2_1.0.6-8.dsc 2042 SHA256:46df0e8112487065532829f2340ffd6ca64d46b6ab01b0000694751d3e67fb11
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6.orig.tar.bz2' bzip2_1.0.6.orig.tar.bz2 708737 SHA256:d70a9ccd8bdf47e302d96c69fecd54925f45d9c7b966bb4ef5f56b770960afa7
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-8.debian.tar.bz2' bzip2_1.0.6-8.debian.tar.bz2 59494 SHA256:60fe87fd3942c385e5921786255a27daf9a962ebc7301a60dfd8d1e1a5c8ce78
-```
-
-### `dpkg` source package: `ca-certificates=20160104ubuntu1`
-
-Binary Packages:
-
-- `ca-certificates=20160104ubuntu1`
-
-Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
-
-- `GPL-2`
-- `GPL-2+`
-- `MPL-2.0`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris ca-certificates=20160104ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20160104ubuntu1.dsc' ca-certificates_20160104ubuntu1.dsc 1858 SHA256:e7572ca55c517a86793943ebc172accc7246e40693b8f37848020b617c5f4fd0
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20160104ubuntu1.tar.xz' ca-certificates_20160104ubuntu1.tar.xz 293852 SHA256:321a9e2cdaf0d02077fc5ac755024cdf0d354ef10ab1581bff14694cc391a16e
 ```
 
 ### `dpkg` source package: `cdebconf=0.198ubuntu1`
@@ -1111,7 +1091,6 @@ $ apt-get source -qq --print-uris ncurses=6.0+20160213-1ubuntu1
 Binary Packages:
 
 - `libssl1.0.0:amd64=1.0.2g-1ubuntu4.2`
-- `openssl=1.0.2g-1ubuntu4.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
