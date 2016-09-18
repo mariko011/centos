@@ -209,18 +209,8 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-files=8+deb8u5
-'http://httpredir.debian.org/debian/pool/main/b/base-files/base-files_8+deb8u5.dsc' base-files_8+deb8u5.dsc 1040 SHA256:a1ce90475e0fd42608c0edee465a5f31e7db4e0a2027aaf479495af033ad7973
-'http://httpredir.debian.org/debian/pool/main/b/base-files/base-files_8+deb8u5.tar.xz' base-files_8+deb8u5.tar.xz 53176 SHA256:edab6afbc6ee8196252947095797e4fe9c69923cda0926691888c4d2d3b23316
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/base-files/8+deb8u5/
-- https://sources.debian.net/src/base-files/8+deb8u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `base-passwd=3.5.37`
 
@@ -706,9 +696,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris expat=2.1.0-6+deb8u3
-'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-6+deb8u3.dsc' expat_2.1.0-6+deb8u3.dsc 2278 SHA256:3485be5c4ffc922aea14718c48c4107b04559ec013cc0e98a61597da50320e25
-'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
-'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-6+deb8u3.debian.tar.xz' expat_2.1.0-6+deb8u3.debian.tar.xz 21716 SHA256:5e756a68a7634b7b7109024bd33df4df3c5964ea0d0f5e8db0ca98f623bcd841
+'http://httpredir.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u3.dsc' expat_2.1.0-6+deb8u3.dsc 2278 SHA256:3485be5c4ffc922aea14718c48c4107b04559ec013cc0e98a61597da50320e25
+'http://httpredir.debian.org/debian/pool/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
+'http://httpredir.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u3.debian.tar.xz' expat_2.1.0-6+deb8u3.debian.tar.xz 21716 SHA256:5e756a68a7634b7b7109024bd33df4df3c5964ea0d0f5e8db0ca98f623bcd841
 ```
 
 Likely also available for browsing at:
@@ -731,19 +721,8 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 - `MIT-Old-Style-with-legal-disclaimer-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris file=1:5.22+15-2+deb8u1
-'http://httpredir.debian.org/debian/pool/main/f/file/file_5.22+15-2+deb8u1.dsc' file_5.22+15-2+deb8u1.dsc 2082 SHA256:bedde02bd923907aa125a3e1cf5a9aa47a1f5f703194d51189189bd7c1177d91
-'http://httpredir.debian.org/debian/pool/main/f/file/file_5.22+15.orig.tar.xz' file_5.22+15.orig.tar.xz 569332 SHA256:c021e9f73b3eb3b6cc2532c5d9a77af1a92902935013c2740ba3fef83f1804d2
-'http://httpredir.debian.org/debian/pool/main/f/file/file_5.22+15-2+deb8u1.debian.tar.xz' file_5.22+15-2+deb8u1.debian.tar.xz 29844 SHA256:01e040a31271639aa39f064752b214dfa1b48da65d5b73cb5e2e74f60f830a26
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/file/1:5.22+15-2+deb8u1/
-- https://sources.debian.net/src/file/1:5.22+15-2+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `findutils=4.4.2-9`
 
@@ -785,9 +764,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris fontconfig=2.11.0-6.3
-'http://httpredir.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.11.0-6.3.dsc' fontconfig_2.11.0-6.3.dsc 2207 SHA256:e68538738aa0116675721840b2b16e7b121080554ce3a638823a46b3fba706bf
+'http://httpredir.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.11.0-6.3+deb8u1.dsc' fontconfig_2.11.0-6.3+deb8u1.dsc 2235 SHA256:c496170e75ece48a19c5b60745eef5522b62ae1a817c23125ebd9745bc255fcd
 'http://httpredir.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.11.0.orig.tar.xz' fontconfig_2.11.0.orig.tar.xz 319652 SHA256:f19c7366d59dc4e79eaf3eedabd44b6375b238f29316db5020a183c7d9a78db9
-'http://httpredir.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.11.0-6.3.debian.tar.xz' fontconfig_2.11.0-6.3.debian.tar.xz 1071060 SHA256:52ce90b8a6af768256100628a4aad458030eb73524f40573080959241ecdc967
+'http://httpredir.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.11.0-6.3+deb8u1.debian.tar.xz' fontconfig_2.11.0-6.3+deb8u1.debian.tar.xz 1073796 SHA256:a8140c4576a2c43614930e8a307966018551ae71ad448af5f75faf4f47f70173
 ```
 
 Likely also available for browsing at:
@@ -999,19 +978,8 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/c
 - `GPL-3+ with OpenSSL exception`
 - `RFC-Reference`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnupg=1.4.18-7+deb8u1
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18-7+deb8u1.dsc' gnupg_1.4.18-7+deb8u1.dsc 2552 SHA256:58f647fa1328b20bb32172b10a777f60226d119f799191a4d53172469e4f0f1d
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18.orig.tar.gz' gnupg_1.4.18.orig.tar.gz 5047888 SHA256:10a8936b76ccadb98521535b5f41cc5b41b3c159a6c2915f062bd4dc8ac12d12
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18-7+deb8u1.debian.tar.xz' gnupg_1.4.18-7+deb8u1.debian.tar.xz 298856 SHA256:883aa0dbaf494661d1a64a456505b60ae6233e9fb8ae8a1fca5efc71199fc1db
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u1/
-- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls28=3.3.8-6+deb8u3`
 
@@ -1745,19 +1713,8 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.6.3-2+deb8u1
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u1.dsc' libgcrypt20_1.6.3-2+deb8u1.dsc 2573 SHA256:5073f7b0ea4777d73d4c99ab4303064ae350d015db535e2b3b9f03b6da692da8
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3.orig.tar.bz2' libgcrypt20_1.6.3.orig.tar.bz2 2494052 SHA256:41b4917b93ae34c6a0e2127378d7a4d66d805a2a86a09911d4f9bd871db7025f
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u1.debian.tar.xz' libgcrypt20_1.6.3-2+deb8u1.debian.tar.xz 28712 SHA256:84a3360762b8ba29ee99f0c95fa55ee28e1eed5fd0d2f5e86340925e5dd8d066
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u1/
-- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.17-3`
 
@@ -1905,9 +1862,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libmodule-build-perl=0.421000-2+deb8u1
-'http://security.debian.org/pool/updates/main/libm/libmodule-build-perl/libmodule-build-perl_0.421000-2+deb8u1.dsc' libmodule-build-perl_0.421000-2+deb8u1.dsc 2686 SHA256:89a30cd9ab9efdf1a8162f1d466cc41d90378f099b58efae793e2019ff314822
-'http://security.debian.org/pool/updates/main/libm/libmodule-build-perl/libmodule-build-perl_0.421000.orig.tar.gz' libmodule-build-perl_0.421000.orig.tar.gz 308569 SHA256:592471e27800180044016011ae580f4be308c15635162795269b472cfe991fb5
-'http://security.debian.org/pool/updates/main/libm/libmodule-build-perl/libmodule-build-perl_0.421000-2+deb8u1.debian.tar.xz' libmodule-build-perl_0.421000-2+deb8u1.debian.tar.xz 11388 SHA256:23683624c12b2d2e802dd7dade4f55af4134da4dd38caef7694b3466f8c6adc4
+'http://httpredir.debian.org/debian/pool/main/libm/libmodule-build-perl/libmodule-build-perl_0.421000-2+deb8u1.dsc' libmodule-build-perl_0.421000-2+deb8u1.dsc 2686 SHA256:89a30cd9ab9efdf1a8162f1d466cc41d90378f099b58efae793e2019ff314822
+'http://httpredir.debian.org/debian/pool/main/libm/libmodule-build-perl/libmodule-build-perl_0.421000.orig.tar.gz' libmodule-build-perl_0.421000.orig.tar.gz 308569 SHA256:592471e27800180044016011ae580f4be308c15635162795269b472cfe991fb5
+'http://httpredir.debian.org/debian/pool/main/libm/libmodule-build-perl/libmodule-build-perl_0.421000-2+deb8u1.debian.tar.xz' libmodule-build-perl_0.421000-2+deb8u1.debian.tar.xz 11388 SHA256:23683624c12b2d2e802dd7dade4f55af4134da4dd38caef7694b3466f8c6adc4
 ```
 
 Likely also available for browsing at:
@@ -2948,9 +2905,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ntp=1:4.2.6.p5+dfsg-7+deb8u2
-'http://security.debian.org/pool/updates/main/n/ntp/ntp_4.2.6.p5+dfsg-7+deb8u2.dsc' ntp_4.2.6.p5+dfsg-7+deb8u2.dsc 2244 SHA256:c1724bde35db6beba85d41912e438fdac0bc60e9a406c81f6fa3f12347754545
-'http://security.debian.org/pool/updates/main/n/ntp/ntp_4.2.6.p5+dfsg.orig.tar.gz' ntp_4.2.6.p5+dfsg.orig.tar.gz 4111997 SHA256:17f0b63e7e27de5cc999a4afdb96b2dbdf76c75181fca50e2395e49e5773dfc9
-'http://security.debian.org/pool/updates/main/n/ntp/ntp_4.2.6.p5+dfsg-7+deb8u2.debian.tar.xz' ntp_4.2.6.p5+dfsg-7+deb8u2.debian.tar.xz 92416 SHA256:c527ea49a9e5778b5ee593ffeacd232b9a6372e1a217763ed87eb08c14f63b1e
+'http://httpredir.debian.org/debian/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-7+deb8u2.dsc' ntp_4.2.6.p5+dfsg-7+deb8u2.dsc 2244 SHA256:c1724bde35db6beba85d41912e438fdac0bc60e9a406c81f6fa3f12347754545
+'http://httpredir.debian.org/debian/pool/main/n/ntp/ntp_4.2.6.p5+dfsg.orig.tar.gz' ntp_4.2.6.p5+dfsg.orig.tar.gz 4111997 SHA256:17f0b63e7e27de5cc999a4afdb96b2dbdf76c75181fca50e2395e49e5773dfc9
+'http://httpredir.debian.org/debian/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-7+deb8u2.debian.tar.xz' ntp_4.2.6.p5+dfsg-7+deb8u2.debian.tar.xz 92416 SHA256:c527ea49a9e5778b5ee593ffeacd232b9a6372e1a217763ed87eb08c14f63b1e
 ```
 
 Likely also available for browsing at:
@@ -2985,19 +2942,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u2
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u2.dsc' openssl_1.0.1t-1+deb8u2.dsc 2255 SHA256:db94455340a311e601b566bc6c67e875cb9bec9748793000f8934e8708a47616
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u2.debian.tar.xz' openssl_1.0.1t-1+deb8u2.debian.tar.xz 96512 SHA256:171a3ec0eefb0df65a48fe27edd40c0817a2d5a9bfe82f85e79f15208563f3a2
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u2/
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
@@ -3143,9 +3089,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris perl=5.20.2-3+deb8u6
-'http://security.debian.org/pool/updates/main/p/perl/perl_5.20.2-3+deb8u6.dsc' perl_5.20.2-3+deb8u6.dsc 2322 SHA256:b7569ffa209fcd84bc4d487a9c242b21b0db591b3a9222ae0e1140bab67c6106
-'http://security.debian.org/pool/updates/main/p/perl/perl_5.20.2.orig.tar.bz2' perl_5.20.2.orig.tar.bz2 13717128 SHA256:e5a4713bc65e1da98ebd833dce425c000768bfe84d17ec5183ec5ca249db71ab
-'http://security.debian.org/pool/updates/main/p/perl/perl_5.20.2-3+deb8u6.debian.tar.xz' perl_5.20.2-3+deb8u6.debian.tar.xz 147848 SHA256:f6d31a96ea22b2f2626bb017c4960bcbdf1ac1e11e5639175cd9418fdccda812
+'http://httpredir.debian.org/debian/pool/main/p/perl/perl_5.20.2-3+deb8u6.dsc' perl_5.20.2-3+deb8u6.dsc 2322 SHA256:b7569ffa209fcd84bc4d487a9c242b21b0db591b3a9222ae0e1140bab67c6106
+'http://httpredir.debian.org/debian/pool/main/p/perl/perl_5.20.2.orig.tar.bz2' perl_5.20.2.orig.tar.bz2 13717128 SHA256:e5a4713bc65e1da98ebd833dce425c000768bfe84d17ec5183ec5ca249db71ab
+'http://httpredir.debian.org/debian/pool/main/p/perl/perl_5.20.2-3+deb8u6.debian.tar.xz' perl_5.20.2-3+deb8u6.debian.tar.xz 147848 SHA256:f6d31a96ea22b2f2626bb017c4960bcbdf1ac1e11e5639175cd9418fdccda812
 ```
 
 Likely also available for browsing at:
@@ -3224,19 +3170,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `This software is provided as-is, without express`
 - `implied`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.9-2
-'http://httpredir.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.9-2.dsc' python2.7_2.7.9-2.dsc 3243 SHA256:77416ef849a46bfa3ee521af9eed578f8af474b55d8a212082ee4613c9b6f0c3
-'http://httpredir.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.9.orig.tar.gz' python2.7_2.7.9.orig.tar.gz 15148821 SHA256:46454dc4cb20e1f9b85aef63985890fa7e247f5941991761afd97d68e69b1901
-'http://httpredir.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.9-2.diff.gz' python2.7_2.7.9-2.diff.gz 264761 SHA256:45b10e5de087807f1165c0dc4eba79bb733051f43d184488ff07bde8701697dd
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/python2.7/2.7.9-2/
-- https://sources.debian.net/src/python2.7/2.7.9-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `readline6=6.3-8`
 
@@ -3402,10 +3337,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sqlite3=3.8.7.1-1+deb8u1
-'http://httpredir.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.8.7.1-1+deb8u1.dsc' sqlite3_3.8.7.1-1+deb8u1.dsc 2540 SHA256:f1c3e9473c9aeca789be009d265d1de6df4d21c4ad959da1eeaa12986df8cef0
-'http://httpredir.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.8.7.1.orig-www.tar.bz2' sqlite3_3.8.7.1.orig-www.tar.bz2 3337784 SHA256:e642657752f20144f42d002895510ea635e0384b14f276f1a2f281b73252bc64
-'http://httpredir.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.8.7.1.orig.tar.bz2' sqlite3_3.8.7.1.orig.tar.bz2 4082068 SHA256:2632a999feba925aa0f1828fa669a091b165a719676765fb542f538345bfa7b9
-'http://httpredir.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.8.7.1-1+deb8u1.debian.tar.xz' sqlite3_3.8.7.1-1+deb8u1.debian.tar.xz 19400 SHA256:32c8956369009637df141762f4ef23a17b9779a402fd15c915f98b5b8efefd7a
+'http://security.debian.org/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1-1+deb8u1.dsc' sqlite3_3.8.7.1-1+deb8u1.dsc 2540 SHA256:f1c3e9473c9aeca789be009d265d1de6df4d21c4ad959da1eeaa12986df8cef0
+'http://security.debian.org/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1.orig-www.tar.bz2' sqlite3_3.8.7.1.orig-www.tar.bz2 3337784 SHA256:e642657752f20144f42d002895510ea635e0384b14f276f1a2f281b73252bc64
+'http://security.debian.org/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1.orig.tar.bz2' sqlite3_3.8.7.1.orig.tar.bz2 4082068 SHA256:2632a999feba925aa0f1828fa669a091b165a719676765fb542f538345bfa7b9
+'http://security.debian.org/pool/updates/main/s/sqlite3/sqlite3_3.8.7.1-1+deb8u1.debian.tar.xz' sqlite3_3.8.7.1-1+deb8u1.debian.tar.xz 19400 SHA256:32c8956369009637df141762f4ef23a17b9779a402fd15c915f98b5b8efefd7a
 ```
 
 Likely also available for browsing at:
@@ -3457,19 +3392,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=215-17+deb8u4
-'http://httpredir.debian.org/debian/pool/main/s/systemd/systemd_215-17+deb8u4.dsc' systemd_215-17+deb8u4.dsc 4135 SHA256:491ed139204121141008720b1bc8c63d0b44c87152932d89050c99f3603d308b
-'http://httpredir.debian.org/debian/pool/main/s/systemd/systemd_215.orig.tar.xz' systemd_215.orig.tar.xz 2888652 SHA256:ce76a3c05e7d4adc806a3446a5510c0c9b76a33f19adc32754b69a0945124505
-'http://httpredir.debian.org/debian/pool/main/s/systemd/systemd_215-17+deb8u4.debian.tar.xz' systemd_215-17+deb8u4.debian.tar.xz 215280 SHA256:5f97a41ad841b0ffe7f67cc67eeafeadf3b86d4593da09964e754fad2f05c28e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/systemd/215-17+deb8u4/
-- https://sources.debian.net/src/systemd/215-17+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59`
 
