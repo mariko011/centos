@@ -173,19 +173,8 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bash=4.3-15
-'http://httpredir.debian.org/debian/pool/main/b/bash/bash_4.3-15.dsc' bash_4.3-15.dsc 2194 SHA256:924cbaac162af73479fb4a7c8681345d26e06ab9a0ceac46def94d70216353ef
-'http://httpredir.debian.org/debian/pool/main/b/bash/bash_4.3.orig.tar.gz' bash_4.3.orig.tar.gz 7516231 SHA256:b2fe79ddf9e7abdb4695e3070afa866d2a94a58d1cc9d731585330c753815491
-'http://httpredir.debian.org/debian/pool/main/b/bash/bash_4.3-15.debian.tar.xz' bash_4.3-15.debian.tar.xz 86360 SHA256:32216687915af228ef1215de74ba2829c991fa9fc9a09f305b0f8bf9151fee83
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/bash/4.3-15/
-- https://sources.debian.net/src/bash/4.3-15/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bzip2=1.0.6-8`
 
