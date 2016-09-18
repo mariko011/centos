@@ -2582,14 +2582,8 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.23.2-3
-'http://http.debian.net/debian/pool/main/p/p11-kit/p11-kit_0.23.2-3.dsc' p11-kit_0.23.2-3.dsc 2174 SHA256:6cb6f549699e6ca34839bd8f9a1f7cf3400f9a6aa872a4fb4f6cba45acafdcfd
-'http://http.debian.net/debian/pool/main/p/p11-kit/p11-kit_0.23.2.orig.tar.gz' p11-kit_0.23.2.orig.tar.gz 1022733 SHA256:ba726ea8303c97467a33fca50ee79b7b35212964be808ecf9b145e9042fdfaf0
-'http://http.debian.net/debian/pool/main/p/p11-kit/p11-kit_0.23.2-3.debian.tar.xz' p11-kit_0.23.2-3.debian.tar.xz 15088 SHA256:0180529c0e73d94106285152185dd4f9b5a40b031f335f9f50cf5463328c6da2
-```
 
 ### `dpkg` source package: `pam=1.1.8-3.3`
 
