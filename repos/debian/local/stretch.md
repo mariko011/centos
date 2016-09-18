@@ -757,18 +757,8 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.42
-'http://httpredir.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.42.dsc' init-system-helpers_1.42.dsc 1953 SHA256:db992acc514a4c18b849d38683a221b5ad0172b88d346e880f9a99b26cb86c62
-'http://httpredir.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.42.tar.xz' init-system-helpers_1.42.tar.xz 42188 SHA256:a94a341c732dc9f4e31cd0c0eb015eb6c384c3c61643453aec20cce1e72932a2
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/init-system-helpers/1.42/
-- https://sources.debian.net/src/init-system-helpers/1.42/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `iproute2=4.6.0-4`
 
