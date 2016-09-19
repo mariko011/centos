@@ -1991,18 +1991,8 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.42
-'http://httpredir.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.42.dsc' init-system-helpers_1.42.dsc 1953 SHA256:db992acc514a4c18b849d38683a221b5ad0172b88d346e880f9a99b26cb86c62
-'http://httpredir.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.42.tar.xz' init-system-helpers_1.42.tar.xz 42188 SHA256:a94a341c732dc9f4e31cd0c0eb015eb6c384c3c61643453aec20cce1e72932a2
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/init-system-helpers/1.42/
-- https://sources.debian.net/src/init-system-helpers/1.42/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `iproute2=4.6.0-4`
 
@@ -3336,19 +3326,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-1
-'http://httpredir.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-1.dsc' libxml2_2.9.4+dfsg1-1.dsc 2229 SHA256:6fb2ae041a273877193ef6c625ceb8cb355e824b692c77aa12e83cd64c195175
-'http://httpredir.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
-'http://httpredir.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-1.debian.tar.xz' libxml2_2.9.4+dfsg1-1.debian.tar.xz 24648 SHA256:c30d73590a114274dc2e2c9db743b1c040d8f13a0dd1571670b497593725dd3e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-1/
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxpm=1:3.5.11-1`
 

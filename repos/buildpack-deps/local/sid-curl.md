@@ -620,19 +620,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-5=5.4.1-1
-'http://httpredir.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1-1.dsc' gcc-5_5.4.1-1.dsc 17530 SHA256:7dd08ffd2fdabfe0ab6fd73477ef6cc6c13541fffabe107e052c7934fa9fc5d0
-'http://httpredir.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1.orig.tar.gz' gcc-5_5.4.1.orig.tar.gz 76812822 SHA256:2a84447f34cd062066d38300ac8a1fb528eb301a504b48e1d017e547e5abfcdb
-'http://httpredir.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1-1.diff.gz' gcc-5_5.4.1-1.diff.gz 3180769 SHA256:f22c6b02a058c3a8c21aef454922e1d93b9219ba8daec1f970879b7885c3bef3
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-5/5.4.1-1/
-- https://sources.debian.net/src/gcc-5/5.4.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-6=6.2.0-1`
 
