@@ -1,7 +1,7 @@
 ## `gcc:latest`
 
 ```console
-$ docker pull gcc@sha256:9d44d464022c0a9103ebe8a96a764b4c38428cd5fab0ad7625a04b33b5495844
+$ docker pull gcc@sha256:38b3e1f1423ff5afd7e8baac4e1b58aca4deff5ae83c03d33bbd34fc9535f358
 ```
 
 -	Platforms:
@@ -11,66 +11,66 @@ $ docker pull gcc@sha256:9d44d464022c0a9103ebe8a96a764b4c38428cd5fab0ad7625a04b3
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **453.3 MB (453321876 bytes)**  
+-	Total Size: **454.1 MB (454075988 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9963e9acf5da5b37d4913b4d3869a2357199d8a9bf083f934c5e9bb2db074884`
+-	Image ID: `sha256:7fb5107587414772ae6b78519a310f78701760e73a5df15b1687e656ca0d2c94`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 30 Aug 2016 21:00:51 GMT
-ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
-# Tue, 30 Aug 2016 21:00:52 GMT
+# Mon, 19 Sep 2016 17:42:37 GMT
+ADD file:cae7a35a0d8c43d5ba00fa03413136b37e0a0bf8f4d5311dda779748e64ef425 in / 
+# Mon, 19 Sep 2016 17:42:37 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 21:52:11 GMT
+# Mon, 19 Sep 2016 17:46:27 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 21:52:34 GMT
+# Mon, 19 Sep 2016 17:46:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 21:53:46 GMT
+# Mon, 19 Sep 2016 17:48:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 31 Aug 2016 16:28:15 GMT
+# Tue, 20 Sep 2016 00:03:31 GMT
 ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06
-# Wed, 31 Aug 2016 16:28:20 GMT
+# Tue, 20 Sep 2016 00:03:35 GMT
 RUN set -xe 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
-# Wed, 31 Aug 2016 18:26:19 GMT
-ENV GCC_VERSION=6.1.0
-# Wed, 31 Aug 2016 19:25:55 GMT
+# Tue, 20 Sep 2016 02:53:37 GMT
+ENV GCC_VERSION=6.2.0
+# Tue, 20 Sep 2016 04:51:30 GMT
 RUN buildDeps='flex' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -r /var/lib/apt/lists/* 	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2" -o gcc.tar.bz2 	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2.sig" -o gcc.tar.bz2.sig 	&& gpg --batch --verify gcc.tar.bz2.sig gcc.tar.bz2 	&& mkdir -p /usr/src/gcc 	&& tar -xf gcc.tar.bz2 -C /usr/src/gcc --strip-components=1 	&& rm gcc.tar.bz2* 	&& cd /usr/src/gcc 	&& ./contrib/download_prerequisites 	&& { rm *.tar.* || true; } 	&& dir="$(mktemp -d)" 	&& cd "$dir" 	&& /usr/src/gcc/configure 		--disable-multilib 		--enable-languages=c,c++,fortran,go 	&& make -j"$(nproc)" 	&& make install-strip 	&& cd .. 	&& rm -rf "$dir" 	&& apt-get purge -y --auto-remove $buildDeps
-# Wed, 31 Aug 2016 19:25:57 GMT
+# Tue, 20 Sep 2016 04:51:35 GMT
 RUN echo '/usr/local/lib64' > /etc/ld.so.conf.d/local-lib64.conf 	&& ldconfig -v
-# Wed, 31 Aug 2016 19:26:00 GMT
+# Tue, 20 Sep 2016 04:51:40 GMT
 RUN set -x 	&& dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc 	&& dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++ 	&& dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran 	&& update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999
 ```
 
 -	Layers:
-	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
-		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
-		Size: 51.4 MB (51367268 bytes)  
+	-	`sha256:2f5fbf61137445d75e8077a9ac5b9b89a2b8eda2dc7486ef42c93da4c5d8760b`  
+		Last Modified: Mon, 19 Sep 2016 17:44:31 GMT  
+		Size: 51.4 MB (51354569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:751fe39c4d348c7fc411d46929c1dac390e3d7107efc9f8f69641b50e14459f7`  
-		Last Modified: Tue, 30 Aug 2016 21:59:08 GMT  
-		Size: 18.5 MB (18527264 bytes)  
+	-	`sha256:9338b080890fe86641e5bb99e8cc0ca75a4b9aae160ef6f826a36865d53cc281`  
+		Last Modified: Mon, 19 Sep 2016 17:54:20 GMT  
+		Size: 18.5 MB (18527624 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae3b77eefc06095198ecb7e758833493eab01708fae7f408b0631e6463c31a48`  
-		Last Modified: Tue, 30 Aug 2016 21:59:22 GMT  
-		Size: 42.5 MB (42495629 bytes)  
+	-	`sha256:27e9f9640562cf88eb4fbb29ff94d3c527e1abcaada715ce9b71011b7b9cdbc7`  
+		Last Modified: Mon, 19 Sep 2016 17:55:02 GMT  
+		Size: 42.5 MB (42496798 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7783aac582eca48746c3b7c353905e07377738cac64bf9958afe989161cf2731`  
-		Last Modified: Tue, 30 Aug 2016 21:59:41 GMT  
-		Size: 129.8 MB (129750077 bytes)  
+	-	`sha256:5dff8d6297fa7aafd7d118ff8070d252c076e8fa52d79f36a98f1f4a39de0c61`  
+		Last Modified: Mon, 19 Sep 2016 17:56:01 GMT  
+		Size: 129.8 MB (129760900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:650577d4d8b21d98e9cf7eac12b64204eb9e3dc212daeb7c2bea45ad4c9256a9`  
-		Last Modified: Fri, 16 Sep 2016 19:06:44 GMT  
-		Size: 98.8 KB (98774 bytes)  
+	-	`sha256:89103637f081e49f6cfce0d577aaa57b755a9aba07d6d60de6aa1218b4167312`  
+		Last Modified: Tue, 20 Sep 2016 04:55:25 GMT  
+		Size: 98.8 KB (98772 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5af968f2882054669bec34660ffefcc7e46e3cc9604611ad5bb384cd2a55c6ae`  
-		Last Modified: Fri, 16 Sep 2016 19:11:14 GMT  
-		Size: 211.1 MB (211070317 bytes)  
+	-	`sha256:377827dcca4c77d21118484fa24657fa7de1bb17afc22c3dce41ba071e22530e`  
+		Last Modified: Tue, 20 Sep 2016 05:02:27 GMT  
+		Size: 211.8 MB (211824817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a04a10c1958de6fbf4119a1fdb4d0d04dcaaca249c28a8c67b3703a38754581`  
-		Last Modified: Fri, 16 Sep 2016 19:09:07 GMT  
-		Size: 10.7 KB (10721 bytes)  
+	-	`sha256:7217e653e1c762539ca2895ed0d16dfedae0ff1af674ac31bfc0381dfeecb41d`  
+		Last Modified: Tue, 20 Sep 2016 05:00:38 GMT  
+		Size: 10.7 KB (10687 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:568359e234999b7237b79ac46a6a009d72fd1627bda7de31a2a867729e6d09b2`  
-		Last Modified: Fri, 16 Sep 2016 19:09:07 GMT  
-		Size: 1.8 KB (1826 bytes)  
+	-	`sha256:ddf4486e0d6c065c5d2bb6cdeeec4f5d1524e3ea9abba2f247b04273dc789a1a`  
+		Last Modified: Tue, 20 Sep 2016 05:00:39 GMT  
+		Size: 1.8 KB (1821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
