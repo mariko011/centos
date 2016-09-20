@@ -1,7 +1,7 @@
 ## `java:jdk-alpine`
 
 ```console
-$ docker pull java@sha256:a91ea7d4e91de12244a8edf302e2db725026c2bb0b91d2270f702fdadb4ab371
+$ docker pull java@sha256:d53f18366af42911d369a78a96c515893e554f90bbdcdef16b6e6c975952ada8
 ```
 
 -	Platforms:
@@ -11,39 +11,39 @@ $ docker pull java@sha256:a91ea7d4e91de12244a8edf302e2db725026c2bb0b91d2270f702f
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.6 MB (51635848 bytes)**  
+-	Total Size: **51.6 MB (51636362 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7dc136ad22ec6f905b4e3b833acfa02d39037a66f583d01783f8233a05ccfaa`
+-	Image ID: `sha256:400aff5215e79500b80c820e6ce7187ce9f14209b5c2f09c17b7f772cd61d2b2`
 
 ```dockerfile
-# Mon, 29 Aug 2016 23:49:14 GMT
-ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in / 
-# Tue, 30 Aug 2016 19:53:16 GMT
+# Mon, 19 Sep 2016 23:24:18 GMT
+ADD file:fd71807f3b22f7f51f502e8aed6bd23067e6822ae08dec31e7477044d770cf48 in / 
+# Tue, 20 Sep 2016 00:20:18 GMT
 ENV LANG=C.UTF-8
-# Tue, 30 Aug 2016 19:53:17 GMT
+# Tue, 20 Sep 2016 00:20:19 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 30 Aug 2016 19:55:33 GMT
+# Tue, 20 Sep 2016 00:24:54 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
-# Tue, 30 Aug 2016 19:55:33 GMT
+# Tue, 20 Sep 2016 00:24:54 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 30 Aug 2016 19:55:34 GMT
+# Tue, 20 Sep 2016 00:24:55 GMT
 ENV JAVA_VERSION=8u92
-# Tue, 30 Aug 2016 19:55:34 GMT
+# Tue, 20 Sep 2016 00:24:55 GMT
 ENV JAVA_ALPINE_VERSION=8.92.14-r1
-# Tue, 30 Aug 2016 19:55:39 GMT
+# Tue, 20 Sep 2016 00:25:02 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
 -	Layers:
-	-	`sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58`  
-		Last Modified: Thu, 23 Jun 2016 19:56:16 GMT  
-		Size: 2.3 MB (2310286 bytes)  
+	-	`sha256:117f30b7ae3d50ac80e38e390a39f70848edcfc916127c2821604a8114c080aa`  
+		Last Modified: Mon, 19 Sep 2016 23:25:22 GMT  
+		Size: 2.3 MB (2311053 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a696cba1f6e865421664a7bf9bf585bcfaa924d56b7d2a112a799e00a7433791`  
-		Last Modified: Tue, 30 Aug 2016 21:11:27 GMT  
-		Size: 232.0 B  
+	-	`sha256:187ddf52152d8d92e51722e536dd02ec43d2f66b476ea87b4151c382fc922fea`  
+		Last Modified: Tue, 20 Sep 2016 00:20:42 GMT  
+		Size: 228.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0f0d61cd0d229546b1e33b0c92036ad3f35b42dd2c9a945aeaf67f84684ce26`  
-		Last Modified: Tue, 30 Aug 2016 21:56:07 GMT  
-		Size: 49.3 MB (49325330 bytes)  
+	-	`sha256:bbf67fd54f62e201ba82c703badd08312a6e2eca50d5b9f17b8c3cc7c574d426`  
+		Last Modified: Tue, 20 Sep 2016 00:25:28 GMT  
+		Size: 49.3 MB (49325081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
