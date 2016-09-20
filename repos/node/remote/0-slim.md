@@ -1,7 +1,7 @@
 ## `node:0-slim`
 
 ```console
-$ docker pull node@sha256:cf45a355cb57b51e1563766109f6b567f36a45c53d2b95a67c9444e1f3bca536
+$ docker pull node@sha256:7e38e9bcf8e213c9147472f65651dbd91e77a1e54e0eb204f80cd23a3a979179
 ```
 
 -	Platforms:
@@ -11,42 +11,42 @@ $ docker pull node@sha256:cf45a355cb57b51e1563766109f6b567f36a45c53d2b95a67c9444
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.2 MB (80163212 bytes)**  
+-	Total Size: **80.2 MB (80160034 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:abb5fee6a36ff6e9ead81ab4aa889777e5a493e5ee79b3d3093976d122a54079`
+-	Image ID: `sha256:66758f6ed309da061d062bca1b767993d6fcb46ce34b9c6042027d22ef530cee`
 -	Default Command: `["node"]`
 
 ```dockerfile
-# Tue, 30 Aug 2016 21:00:51 GMT
-ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
-# Tue, 30 Aug 2016 21:00:52 GMT
+# Mon, 19 Sep 2016 17:42:37 GMT
+ADD file:cae7a35a0d8c43d5ba00fa03413136b37e0a0bf8f4d5311dda779748e64ef425 in / 
+# Mon, 19 Sep 2016 17:42:37 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 21:52:11 GMT
+# Mon, 19 Sep 2016 17:46:27 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 22:01:06 GMT
+# Tue, 20 Sep 2016 16:47:31 GMT
 RUN set -ex   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";   done
-# Tue, 30 Aug 2016 22:01:39 GMT
+# Tue, 20 Sep 2016 16:47:53 GMT
 ENV NODE_VERSION=0.12.15
-# Tue, 30 Aug 2016 22:01:48 GMT
+# Tue, 20 Sep 2016 16:48:02 GMT
 RUN buildDeps='xz-utils'     && set -x     && apt-get update && apt-get install -y $buildDeps --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz"     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1     && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && apt-get purge -y --auto-remove $buildDeps     && ln -s /usr/local/bin/node /usr/local/bin/nodejs
-# Tue, 30 Aug 2016 22:01:48 GMT
+# Tue, 20 Sep 2016 16:48:02 GMT
 CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
-		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
-		Size: 51.4 MB (51367268 bytes)  
+	-	`sha256:2f5fbf61137445d75e8077a9ac5b9b89a2b8eda2dc7486ef42c93da4c5d8760b`  
+		Last Modified: Mon, 19 Sep 2016 17:44:31 GMT  
+		Size: 51.4 MB (51354569 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:751fe39c4d348c7fc411d46929c1dac390e3d7107efc9f8f69641b50e14459f7`  
-		Last Modified: Tue, 30 Aug 2016 21:59:08 GMT  
-		Size: 18.5 MB (18527264 bytes)  
+	-	`sha256:9338b080890fe86641e5bb99e8cc0ca75a4b9aae160ef6f826a36865d53cc281`  
+		Last Modified: Mon, 19 Sep 2016 17:54:20 GMT  
+		Size: 18.5 MB (18527624 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c8031bea3fa7a9ab51e491ccfebaa75d172cda490602b2101b5cb2c0c8cdea5`  
-		Last Modified: Tue, 30 Aug 2016 23:09:38 GMT  
-		Size: 71.8 KB (71848 bytes)  
+	-	`sha256:07a1b758f2aa154857cfef1a4c0c5083735a194a593a5e04337ca47576627697`  
+		Last Modified: Tue, 20 Sep 2016 17:53:36 GMT  
+		Size: 81.4 KB (81385 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7cc62743e9144dd5842e4127860c86b5597ef35c0090659a0c124bae625ef82`  
-		Last Modified: Tue, 30 Aug 2016 23:11:20 GMT  
-		Size: 10.2 MB (10196832 bytes)  
+	-	`sha256:f0976679349a6626cd4b3e44059347b41f2d289132f9c9304ce22c96119ede50`  
+		Last Modified: Tue, 20 Sep 2016 17:55:48 GMT  
+		Size: 10.2 MB (10196456 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
