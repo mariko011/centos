@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bd3d4369aebc4945be269859df0e15b1d32fefa2645f5699037d7d8c6b415a10`
-- Created: `2016-08-26T18:50:27.629952966Z`
+- Image ID: `sha256:45bc58500fa3d3c0d67233d4a7798134b46b486af1389ca87000c543f46c3d24`
+- Created: `2016-09-19T17:01:21.293792111Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -1104,14 +1104,14 @@ $ apt-get source -qq --print-uris shadow=1:4.2-3.1ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.1ubuntu5.debian.tar.xz' shadow_4.2-3.1ubuntu5.debian.tar.xz 504168 SHA256:7a18a238c463b562e69e9a3cd4e18d87212c7d68bc58e5f8ba31f3a7e33cad6e
 ```
 
-### `dpkg` source package: `systemd=229-4ubuntu7`
+### `dpkg` source package: `systemd=229-4ubuntu8`
 
 Binary Packages:
 
-- `libsystemd0:amd64=229-4ubuntu7`
-- `libudev1:amd64=229-4ubuntu7`
-- `systemd=229-4ubuntu7`
-- `systemd-sysv=229-4ubuntu7`
+- `libsystemd0:amd64=229-4ubuntu8`
+- `libudev1:amd64=229-4ubuntu8`
+- `systemd=229-4ubuntu8`
+- `systemd-sysv=229-4ubuntu8`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
@@ -1123,8 +1123,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=229-4ubuntu8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu8.dsc' systemd_229-4ubuntu8.dsc 4423 SHA256:0773690165bf76ced81b0942bed0a87cf2b79510e71ecaa44d2a07522ac53312
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu8.debian.tar.xz' systemd_229-4ubuntu8.debian.tar.xz 149884 SHA256:877dd790c3a80e55ada658c756fa7baf47c3b8b1a2e188b1e24ece0e431353dc
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
