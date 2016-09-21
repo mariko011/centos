@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dccf7b1565a9793a820f8b4cc87cb997032906cafd7c9f670162e4646e8c9384`
-- Created: `2016-08-26T20:12:04.422514533Z`
+- Image ID: `sha256:d326bbda57d15d21a03db943910b82a9ecc38b1cae2a8f2b149829f35dfd5bfb`
+- Created: `2016-08-30T18:19:56.08592772Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["couchbase-server"]`

@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fb2cbc1226fdfccd14153335fb443394fa48d5f74251ab69e4441ae6d0905d2e`
-- Created: `2016-08-26T20:16:40.052459736Z`
+- Image ID: `sha256:b4606a18f237de4f51976d7d6b63f7dd7a17c39cd931dac30b9f13e39bef31ba`
+- Created: `2016-09-19T17:17:59.861794267Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["couchbase-server"]`
@@ -976,19 +976,25 @@ $ apt-get source -qq --print-uris iputils=3:20121221-4ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iputils/iputils_20121221-4ubuntu1.1.debian.tar.gz' iputils_20121221-4ubuntu1.1.debian.tar.gz 16143 SHA256:4eb3ca79e68dfc5f5e66df7be3113c230168fbca2420da232adadc6475056c6a
 ```
 
-### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.5`
+### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.6`
 
 Binary Packages:
 
-- `isc-dhcp-client=4.2.4-7ubuntu12.5`
-- `isc-dhcp-common=4.2.4-7ubuntu12.5`
+- `isc-dhcp-client=4.2.4-7ubuntu12.6`
+- `isc-dhcp-common=4.2.4-7ubuntu12.6`
 
 Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/doc/isc-dhcp-common/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris isc-dhcp=4.2.4-7ubuntu12.6
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.6.dsc' isc-dhcp_4.2.4-7ubuntu12.6.dsc 2806 SHA256:97c3415f9e053ef1d43a186f018685ecd053b7a88238faa84b66ecbbdebc4be1
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.6.debian.tar.xz' isc-dhcp_4.2.4-7ubuntu12.6.debian.tar.xz 107952 SHA256:862195056d4aca81916f2e3d3a4a694c6e376cecc7378ec23d2a8e98d92b805f
+```
 
 ### `dpkg` source package: `json-c=0.11-3ubuntu1.2`
 
@@ -1722,20 +1728,25 @@ $ apt-get source -qq --print-uris logrotate=3.8.7-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-1ubuntu1.debian.tar.gz' logrotate_3.8.7-1ubuntu1.debian.tar.gz 23842 SHA256:d8f09d0bcf0ec2d334acb40f7d158a5f9df2a536f38586a58d253d79209a623f
 ```
 
-### `dpkg` source package: `lsb=4.1+Debian11ubuntu6.1`
+### `dpkg` source package: `lsb=4.1+Debian11ubuntu6.2`
 
 Binary Packages:
 
-- `lsb-base=4.1+Debian11ubuntu6.1`
-- `lsb-release=4.1+Debian11ubuntu6.1`
+- `lsb-base=4.1+Debian11ubuntu6.2`
+- `lsb-release=4.1+Debian11ubuntu6.2`
 
 Licenses: (parsed from: `/usr/share/doc/lsb-base/copyright`, `/usr/share/doc/lsb-release/copyright`)
 
 - `BSD-3-clause`
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris lsb=4.1+Debian11ubuntu6.2
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lsb/lsb_4.1+Debian11ubuntu6.2.dsc' lsb_4.1+Debian11ubuntu6.2.dsc 2431 SHA256:d5d317e5d5af01cb0e833fe517c38594cba0a4f6585f9d92beac54445e8598ad
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lsb/lsb_4.1+Debian11ubuntu6.2.tar.xz' lsb_4.1+Debian11ubuntu6.2.tar.xz 66156 SHA256:14eac458299596fd70cde7bb696c1ae9f34df5277491de23d13868489fb4bcb6
+```
 
 ### `dpkg` source package: `lshw=02.16-2ubuntu1.3`
 
