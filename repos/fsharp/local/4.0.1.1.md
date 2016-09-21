@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8458aa112fe55aead342d763332cd51175371f5e6c94d6238f9643bc2be182c0`
-- Created: `2016-08-26T20:42:43.491654738Z`
+- Image ID: `sha256:1079ee4b83a9d770cd09acc06ffcb4e5dae1fca6fcea49834cc5ba55b9e574d2`
+- Created: `2016-09-19T17:32:17.853771896Z`
 - Arch: `linux`/`amd64`
 - Command: `["fsharpi"]`
 - Environment:
@@ -704,14 +704,14 @@ $ apt-get source -qq --print-uris cups=1.7.2-0ubuntu1.7
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_1.7.2-0ubuntu1.7.debian.tar.gz' cups_1.7.2-0ubuntu1.7.debian.tar.gz 448114 SHA256:fa276e0c44e98bb562ff2710260fd4c7e5ee9ce19ed35cdea11bd7702a427cd4
 ```
 
-### `dpkg` source package: `curl=7.35.0-1ubuntu2.8`
+### `dpkg` source package: `curl=7.35.0-1ubuntu2.9`
 
 Binary Packages:
 
-- `curl=7.35.0-1ubuntu2.8`
-- `libcurl3:amd64=7.35.0-1ubuntu2.8`
-- `libcurl3-gnutls:amd64=7.35.0-1ubuntu2.8`
-- `libcurl4-openssl-dev:amd64=7.35.0-1ubuntu2.8`
+- `curl=7.35.0-1ubuntu2.9`
+- `libcurl3:amd64=7.35.0-1ubuntu2.9`
+- `libcurl3-gnutls:amd64=7.35.0-1ubuntu2.9`
+- `libcurl4-openssl-dev:amd64=7.35.0-1ubuntu2.9`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -723,10 +723,10 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.35.0-1ubuntu2.8
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.8.dsc' curl_7.35.0-1ubuntu2.8.dsc 2737 SHA256:55d7b5e60993744f659f9d3d994edea5a24572d9c4f6ad86b238e9b147972345
+$ apt-get source -qq --print-uris curl=7.35.0-1ubuntu2.9
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.9.dsc' curl_7.35.0-1ubuntu2.9.dsc 2832 SHA256:e9371620d3ca719192e498928499536bfc82999a3b804bf76848548113efde36
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0.orig.tar.gz' curl_7.35.0.orig.tar.gz 3544496 SHA256:917d118fc5d61e9dd1538d6519bd93bbebf2e866882419781c2e0fdb2bc42121
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.8.debian.tar.gz' curl_7.35.0-1ubuntu2.8.debian.tar.gz 48510 SHA256:cf0f6f4adf108a0cd1a423edb034bd3e4debc06ef5e4d7e780ead5ebd5d230ae
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.9.debian.tar.xz' curl_7.35.0-1ubuntu2.9.debian.tar.xz 41136 SHA256:3081f64c893dd038bc1a26df344a6e109aa02f6ee8a0962f1662781fee0d57d0
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-17build1`
@@ -1944,19 +1944,25 @@ $ apt-get source -qq --print-uris iputils=3:20121221-4ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iputils/iputils_20121221-4ubuntu1.1.debian.tar.gz' iputils_20121221-4ubuntu1.1.debian.tar.gz 16143 SHA256:4eb3ca79e68dfc5f5e66df7be3113c230168fbca2420da232adadc6475056c6a
 ```
 
-### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.5`
+### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.6`
 
 Binary Packages:
 
-- `isc-dhcp-client=4.2.4-7ubuntu12.5`
-- `isc-dhcp-common=4.2.4-7ubuntu12.5`
+- `isc-dhcp-client=4.2.4-7ubuntu12.6`
+- `isc-dhcp-common=4.2.4-7ubuntu12.6`
 
 Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/doc/isc-dhcp-common/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris isc-dhcp=4.2.4-7ubuntu12.6
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.6.dsc' isc-dhcp_4.2.4-7ubuntu12.6.dsc 2806 SHA256:97c3415f9e053ef1d43a186f018685ecd053b7a88238faa84b66ecbbdebc4be1
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.6.debian.tar.xz' isc-dhcp_4.2.4-7ubuntu12.6.debian.tar.xz 107952 SHA256:862195056d4aca81916f2e3d3a4a694c6e376cecc7378ec23d2a8e98d92b805f
+```
 
 ### `dpkg` source package: `isl=0.12.2-1`
 
@@ -3837,18 +3843,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.4-3ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.4-3ubuntu3.1.debian.tar.gz' libyaml_0.1.4-3ubuntu3.1.debian.tar.gz 6404 SHA256:816422e1c743180409aff9247f3a298c8f98260d91da29c7315ce8bd576d53c2
 ```
 
-### `dpkg` source package: `linux=3.13.0-93.140`
+### `dpkg` source package: `linux=3.13.0-96.143`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-93.140`
+- `linux-libc-dev:amd64=3.13.0-96.143`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.13.0-96.143
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-96.143.dsc' linux_3.13.0-96.143.dsc 9072 SHA256:abda7f134f62fc4e144e8b397086b4e1433cb466132ddae1a35be7b3bd45fff1
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-96.143.diff.gz' linux_3.13.0-96.143.diff.gz 9303322 SHA256:7bc48d45f30fef32beff91b8449945b12c3b9df378bc34c9682e76eeb06d39c0
+```
 
 ### `dpkg` source package: `lockfile-progs=0.1.17`
 
@@ -3887,20 +3899,25 @@ $ apt-get source -qq --print-uris logrotate=3.8.7-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-1ubuntu1.debian.tar.gz' logrotate_3.8.7-1ubuntu1.debian.tar.gz 23842 SHA256:d8f09d0bcf0ec2d334acb40f7d158a5f9df2a536f38586a58d253d79209a623f
 ```
 
-### `dpkg` source package: `lsb=4.1+Debian11ubuntu6.1`
+### `dpkg` source package: `lsb=4.1+Debian11ubuntu6.2`
 
 Binary Packages:
 
-- `lsb-base=4.1+Debian11ubuntu6.1`
-- `lsb-release=4.1+Debian11ubuntu6.1`
+- `lsb-base=4.1+Debian11ubuntu6.2`
+- `lsb-release=4.1+Debian11ubuntu6.2`
 
 Licenses: (parsed from: `/usr/share/doc/lsb-base/copyright`, `/usr/share/doc/lsb-release/copyright`)
 
 - `BSD-3-clause`
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris lsb=4.1+Debian11ubuntu6.2
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lsb/lsb_4.1+Debian11ubuntu6.2.dsc' lsb_4.1+Debian11ubuntu6.2.dsc 2431 SHA256:d5d317e5d5af01cb0e833fe517c38594cba0a4f6585f9d92beac54445e8598ad
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lsb/lsb_4.1+Debian11ubuntu6.2.tar.xz' lsb_4.1+Debian11ubuntu6.2.tar.xz 66156 SHA256:14eac458299596fd70cde7bb696c1ae9f34df5277491de23d13868489fb4bcb6
+```
 
 ### `dpkg` source package: `lvm2=2.02.98-6ubuntu2`
 
@@ -4318,13 +4335,13 @@ $ apt-get source -qq --print-uris mpfr4=3.1.2-1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_3.1.2-1.debian.tar.gz' mpfr4_3.1.2-1.debian.tar.gz 13473 SHA256:91967c4fe85996504574e882491527d09dad835b4ba05bd4145f3ae8a3f5db0e
 ```
 
-### `dpkg` source package: `mysql-5.5=5.5.50-0ubuntu0.14.04.1`
+### `dpkg` source package: `mysql-5.5=5.5.52-0ubuntu0.14.04.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.5.50-0ubuntu0.14.04.1`
-- `libmysqlclient18:amd64=5.5.50-0ubuntu0.14.04.1`
-- `mysql-common=5.5.50-0ubuntu0.14.04.1`
+- `libmysqlclient-dev=5.5.52-0ubuntu0.14.04.1`
+- `libmysqlclient18:amd64=5.5.52-0ubuntu0.14.04.1`
+- `mysql-common=5.5.52-0ubuntu0.14.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -4342,8 +4359,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.5=5.5.52-0ubuntu0.14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.52-0ubuntu0.14.04.1.dsc' mysql-5.5_5.5.52-0ubuntu0.14.04.1.dsc 3173 SHA256:ae4ee12c5e90ea7068768e27645b397c208806f243f012ee3ae9af8bcdb6e27a
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.52.orig.tar.gz' mysql-5.5_5.5.52.orig.tar.gz 21032776 SHA256:7820e13de6b3f4dadd255e12b2e9f3de43daf4507c218018c382d45aad8162fd
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.52-0ubuntu0.14.04.1.debian.tar.gz' mysql-5.5_5.5.52-0ubuntu0.14.04.1.debian.tar.gz 314353 SHA256:b2dac1ef7f747f5b787b860cbb1d071a901dde5b50f3d936bdcc2b58f79e74d1
+```
 
 ### `dpkg` source package: `ncurses=5.9+20140118-1ubuntu1`
 
