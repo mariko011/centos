@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:87ec762b5790c9159cc05ce8222360d375904100d6b24f385884a0aae88e5182`
-- Created: `2016-08-30T19:56:10.771655619Z`
+- Image ID: `sha256:0d935f4b122ad022125424bb64fdd10a7b624203839b1344317740af9ec20760`
+- Created: `2016-09-20T00:22:24.834737177Z`
 - Arch: `linux`/`amd64`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin`

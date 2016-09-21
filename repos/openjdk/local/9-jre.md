@@ -381,19 +381,8 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cups=2.1.4-4
-'http://httpredir.debian.org/debian/pool/main/c/cups/cups_2.1.4-4.dsc' cups_2.1.4-4.dsc 3391 SHA256:249e20fb1adabe7ce7250ef6c69946ffdb9efc900a4bfbb50461280c4766daf2
-'http://httpredir.debian.org/debian/pool/main/c/cups/cups_2.1.4.orig.tar.gz' cups_2.1.4.orig.tar.gz 9572653 SHA256:1f182f145489e2454969b221056b6b9bac2beb4e38cd75fa12a9ec15d24d5301
-'http://httpredir.debian.org/debian/pool/main/c/cups/cups_2.1.4-4.debian.tar.xz' cups_2.1.4-4.debian.tar.xz 350668 SHA256:3bc6d41650602119e86c92f10d7fc3bd212c2de500f839672d170404d297707a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cups/2.1.4-4/
-- https://sources.debian.net/src/cups/2.1.4-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `curl=7.50.1-1`
 
@@ -793,19 +782,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-4.9-base/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-4.9=4.9.4-2
-'http://httpredir.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.4-2.dsc' gcc-4.9_4.9.4-2.dsc 10688 SHA256:c5baccabf4a3f7e729c7d9da3341d28934bd89ef468e6e60d9f4911dcaf7274c
-'http://httpredir.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.4.orig.tar.gz' gcc-4.9_4.9.4.orig.tar.gz 73346264 SHA256:ac67beee071cc2a6fc032cc370c9b6b819f648524ce2df555fb901fe6206013d
-'http://httpredir.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.4-2.diff.gz' gcc-4.9_4.9.4-2.diff.gz 1003777 SHA256:77a91b1f32c12e3753b7615d9af8e2c533dddcd69c1fe5412c7483e55db0746e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-4.9/4.9.4-2/
-- https://sources.debian.net/src/gcc-4.9/4.9.4-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-5=5.4.1-1`
 
@@ -2267,19 +2245,8 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.2-3.1
-'http://httpredir.debian.org/debian/pool/main/s/shadow/shadow_4.2-3.1.dsc' shadow_4.2-3.1.dsc 1991 SHA256:f3eb8f3486d5b7e3a936f59b60afdb9b69ed0c45c9bbd6ce3b758380f834f507
-'http://httpredir.debian.org/debian/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://httpredir.debian.org/debian/pool/main/s/shadow/shadow_4.2-3.1.debian.tar.xz' shadow_4.2-3.1.debian.tar.xz 496576 SHA256:31ee4c501609b969662c4e99d0e80d13ffff2d464097e82706a59c4abd9e73cb
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/shadow/1:4.2-3.1/
-- https://sources.debian.net/src/shadow/1:4.2-3.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sqlite3=3.14.2-1`
 
