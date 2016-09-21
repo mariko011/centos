@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dc6cab1ce71986c8408adbb7d9cdc5f7e0e0bdf2a74b3c23b582f713b41a2312`
-- Created: `2016-09-07T23:10:52.434213352Z`
+- Image ID: `sha256:20a3df059c908d152831cce3425c3b0831d58efaf2d8c04d218d5a91e4bef6ae`
+- Created: `2016-09-20T00:03:22.945946933Z`
 - Arch: `linux`/`amd64`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
