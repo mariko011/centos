@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:38a8abd65c82ae8e2f850b7412f6bb6e9cd5650f6e820aeb0f4b2c3fc0fe5d56`
-- Created: `2016-08-30T17:45:01.637828584Z`
+- Image ID: `sha256:b9e5ca55104a8fbe7adfe4199e8f00e131c5be4fef969708b36fb78b5c75ed87`
+- Created: `2016-09-20T03:03:52.417506785Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["spiped"]`
