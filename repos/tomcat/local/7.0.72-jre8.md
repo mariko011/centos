@@ -1,9 +1,9 @@
-# `tomcat:7.0.70-jre8`
+# `tomcat:7.0.72-jre8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ad9917e9b9d07a22d68e3fee36976e040aadf9be2b341dfe15eeef0e2b945602`
-- Created: `2016-08-31T22:01:22.237930374Z`
+- Image ID: `sha256:0a28b2d4b41fad9b7d477137c1c7217253eb6506a3186096ea5b2e4dd848812b`
+- Created: `2016-09-20T05:11:30.437776319Z`
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
 - Environment:
@@ -18,8 +18,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `OPENSSL_VERSION=1.0.2h-1`
   - `TOMCAT_MAJOR=7`
-  - `TOMCAT_VERSION=7.0.70`
-  - `TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-7/v7.0.70/bin/apache-tomcat-7.0.70.tar.gz`
+  - `TOMCAT_VERSION=7.0.72`
+  - `TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-7/v7.0.72/bin/apache-tomcat-7.0.72.tar.gz`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -915,10 +915,9 @@ Likely also available for browsing at:
 Binary Packages:
 
 - `libc-bin=2.19-18+deb8u4`
-- `libc6:amd64=2.19-18+deb8u4`
 - `multiarch-support=2.19-18+deb8u4`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/multiarch-support/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -936,6 +935,31 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/glibc/2.19-18+deb8u4/
 - https://sources.debian.net/src/glibc/2.19-18+deb8u4/debian/copyright (for direct copyright/license information)
+
+### `dpkg` source package: `glibc=2.19-18+deb8u6`
+
+Binary Packages:
+
+- `libc6:amd64=2.19-18+deb8u6`
+
+Licenses: (parsed from: `/usr/share/doc/libc6/copyright`)
+
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.19-18+deb8u6
+'http://httpredir.debian.org/debian/pool/main/g/glibc/glibc_2.19-18+deb8u6.dsc' glibc_2.19-18+deb8u6.dsc 8220 SHA256:e84bc32d28a021e1d17e41ae2b3c862efe927160525b0fdb2b2bab9151f845b2
+'http://httpredir.debian.org/debian/pool/main/g/glibc/glibc_2.19.orig.tar.xz' glibc_2.19.orig.tar.xz 12387008 SHA256:746e52bb4fc9b2f30bcd33d415172a40ab56c5fff6c494052d31b0795593cc60
+'http://httpredir.debian.org/debian/pool/main/g/glibc/glibc_2.19-18+deb8u6.debian.tar.xz' glibc_2.19-18+deb8u6.debian.tar.xz 1062520 SHA256:21ce25c8a325df5a0864217910c9161c0874d1d5f58a18044bf4bdb056311d06
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/glibc/2.19-18+deb8u6/
+- https://sources.debian.net/src/glibc/2.19-18+deb8u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gmp=2:6.0.0+dfsg-6`
 
