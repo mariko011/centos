@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d64c4a2b96a9dc7be90ab3794171005441253bea62f0c1ccbba19e169d4737b5`
-- Created: `2016-09-15T19:12:03.861809856Z`
+- Image ID: `sha256:003b948d107668eee3d2f17bc0be5eafc188db9f42ba57ec12dcb0c6334d15de`
+- Created: `2016-09-20T00:31:53.809902088Z`
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
