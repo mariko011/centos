@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f236831c11a2199ab5ecdad81e1cd534fb3cb222859d3f5a930bbfac64435c74`
-- Created: `2016-09-15T23:39:41.481790071Z`
+- Image ID: `sha256:f858b45d8c1f318a5c4e45b422c8a8898acbecfcedef478ac4346e05cf6f93ea`
+- Created: `2016-09-19T17:07:24.933983547Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["asd"]`
@@ -1392,14 +1392,14 @@ $ apt-get source -qq --print-uris sqlite3=3.11.0-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.11.0-1ubuntu1.debian.tar.xz' sqlite3_3.11.0-1ubuntu1.debian.tar.xz 16272 SHA256:b81ff12e88d62abc111b609b7aed3571bc1ce902d097058ad1d53fb18076098d
 ```
 
-### `dpkg` source package: `systemd=229-4ubuntu7`
+### `dpkg` source package: `systemd=229-4ubuntu8`
 
 Binary Packages:
 
-- `libsystemd0:amd64=229-4ubuntu7`
-- `libudev1:amd64=229-4ubuntu7`
-- `systemd=229-4ubuntu7`
-- `systemd-sysv=229-4ubuntu7`
+- `libsystemd0:amd64=229-4ubuntu8`
+- `libudev1:amd64=229-4ubuntu8`
+- `systemd=229-4ubuntu8`
+- `systemd-sysv=229-4ubuntu8`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
@@ -1411,8 +1411,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=229-4ubuntu8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu8.dsc' systemd_229-4ubuntu8.dsc 4423 SHA256:0773690165bf76ced81b0942bed0a87cf2b79510e71ecaa44d2a07522ac53312
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu8.debian.tar.xz' systemd_229-4ubuntu8.debian.tar.xz 149884 SHA256:877dd790c3a80e55ada658c756fa7baf47c3b8b1a2e188b1e24ece0e431353dc
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
