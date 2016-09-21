@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:153d60c9f4de30011966c123c9792d74e4219d8a069c29ac4d7a333017025920`
-- Created: `2016-08-30T21:00:58.741777578Z`
+- Image ID: `sha256:e6b78b4f1d4bb11be1e8f4d31b431eec6ccb26bb3d6ab40dfe2b59a2f6acb0f8`
+- Created: `2016-09-19T17:42:46.723825171Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
