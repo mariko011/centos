@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f99be8b1a1a925e0ccc8c14192c8e320eca095ff7f44a958f3a47d5ead3b8178`
-- Created: `2016-08-30T22:02:16.827225386Z`
+- Image ID: `sha256:744a5d2a324d8030dafbd976016c87a3169ad0d2723a16fa3b663cb5efe85627`
+- Created: `2016-09-20T16:48:35.429868869Z`
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
@@ -493,14 +493,14 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/coreutils/8.13-3.5/
 - https://sources.debian.net/src/coreutils/8.13-3.5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `curl=7.26.0-1+wheezy14`
+### `dpkg` source package: `curl=7.26.0-1+wheezy16`
 
 Binary Packages:
 
-- `curl=7.26.0-1+wheezy14`
-- `libcurl3:amd64=7.26.0-1+wheezy14`
-- `libcurl3-gnutls:amd64=7.26.0-1+wheezy14`
-- `libcurl4-openssl-dev=7.26.0-1+wheezy14`
+- `curl=7.26.0-1+wheezy16`
+- `libcurl3:amd64=7.26.0-1+wheezy16`
+- `libcurl3-gnutls:amd64=7.26.0-1+wheezy16`
+- `libcurl4-openssl-dev=7.26.0-1+wheezy16`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -509,8 +509,19 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy16
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy16.dsc' curl_7.26.0-1+wheezy16.dsc 2520 SHA256:b1b2dd8ecab246d62f4610cfc1020fee540a19a7adce07f6a53ae0579a010d64
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy16.debian.tar.gz' curl_7.26.0-1+wheezy16.debian.tar.gz 47203 SHA256:03e4688e14293eea339415618c02a2f989aea3a5c9ea2090c8a98638676f0337
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy16/
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy16/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
 
@@ -2924,18 +2935,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libyaml/0.1.4-2+deb7u5/
 - https://sources.debian.net/src/libyaml/0.1.4-2+deb7u5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `linux=3.2.81-1`
+### `dpkg` source package: `linux=3.2.81-2`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.2.81-1`
+- `linux-libc-dev:amd64=3.2.81-2`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.2.81-2
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.81-2.dsc' linux_3.2.81-2.dsc 103011 SHA256:abbbe3106d167c100c3373d6edb470b784ee9872520674d5f4ceb89457634ea0
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.81.orig.tar.xz' linux_3.2.81.orig.tar.xz 65977248 SHA256:fe7b9cf9cfa0a6ab9d6a3fcb1a9bf0a8fb2b47417b90fb67dbbe19b5ea16991a
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.81-2.debian.tar.xz' linux_3.2.81-2.debian.tar.xz 3729392 SHA256:0382994bf30811e7dcdeea5635a9ab0add294ae7841fb19059b865f420eed7e8
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/linux/3.2.81-2/
+- https://sources.debian.net/src/linux/3.2.81-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian8+deb7u1`
 
@@ -3132,13 +3154,13 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/mpfr4/3.1.0-5/
 - https://sources.debian.net/src/mpfr4/3.1.0-5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `mysql-5.5=5.5.50-0+deb7u2`
+### `dpkg` source package: `mysql-5.5=5.5.52-0+deb7u1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.5.50-0+deb7u2`
-- `libmysqlclient18:amd64=5.5.50-0+deb7u2`
-- `mysql-common=5.5.50-0+deb7u2`
+- `libmysqlclient-dev=5.5.52-0+deb7u1`
+- `libmysqlclient18:amd64=5.5.52-0+deb7u1`
+- `mysql-common=5.5.52-0+deb7u1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -3156,8 +3178,19 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.5=5.5.52-0+deb7u1
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.52-0+deb7u1.dsc' mysql-5.5_5.5.52-0+deb7u1.dsc 2957 SHA256:d13dc66e734affe6aca83447fa0a41147512b2e52d2d7413681582deeada4f2a
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.52.orig.tar.gz' mysql-5.5_5.5.52.orig.tar.gz 21032776 SHA256:7820e13de6b3f4dadd255e12b2e9f3de43daf4507c218018c382d45aad8162fd
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.52-0+deb7u1.debian.tar.gz' mysql-5.5_5.5.52-0+deb7u1.debian.tar.gz 379231 SHA256:9009d0960892a0bd4c6ccce5afea5c138091deb44183fbd3d7f140d5e5ec617b
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/mysql-5.5/5.5.52-0+deb7u1/
+- https://sources.debian.net/src/mysql-5.5/5.5.52-0+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ncurses=5.9-10`
 
@@ -3952,13 +3985,13 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tar/1.26+dfsg-0.1/
 - https://sources.debian.net/src/tar/1.26+dfsg-0.1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tiff3=3.9.6-11`
+### `dpkg` source package: `tiff3=3.9.6-11+deb7u1`
 
 Binary Packages:
 
-- `libtiff4:amd64=3.9.6-11`
-- `libtiff4-dev=3.9.6-11`
-- `libtiffxx0c2:amd64=3.9.6-11`
+- `libtiff4:amd64=3.9.6-11+deb7u1`
+- `libtiff4-dev=3.9.6-11+deb7u1`
+- `libtiffxx0c2:amd64=3.9.6-11+deb7u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3967,16 +4000,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tiff3=3.9.6-11
-'http://httpredir.debian.org/debian/pool/main/t/tiff3/tiff3_3.9.6-11.dsc' tiff3_3.9.6-11.dsc 1933 SHA256:42d9a9b62256a5df6f67b9a722f16cdcf0b0a57f9632e673ecfbd5bbbd4ce9ea
-'http://httpredir.debian.org/debian/pool/main/t/tiff3/tiff3_3.9.6.orig.tar.gz' tiff3_3.9.6.orig.tar.gz 1454196 SHA256:0fba119156236074343a14afbd3a47907e3a5952c9c86102305d4eeb06ad6833
-'http://httpredir.debian.org/debian/pool/main/t/tiff3/tiff3_3.9.6-11.debian.tar.gz' tiff3_3.9.6-11.debian.tar.gz 18023 SHA256:c854644467e2df28b816168755312bf1c93293747340868ccaef62876f1de252
+$ apt-get source -qq --print-uris tiff3=3.9.6-11+deb7u1
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u1.dsc' tiff3_3.9.6-11+deb7u1.dsc 2082 SHA256:464d03b9552acdfffe6848727394d239d0652b19f4b4c273767e7eda7d7c5aa7
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6.orig.tar.gz' tiff3_3.9.6.orig.tar.gz 1454196 SHA256:0fba119156236074343a14afbd3a47907e3a5952c9c86102305d4eeb06ad6833
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u1.debian.tar.gz' tiff3_3.9.6-11+deb7u1.debian.tar.gz 37477 SHA256:a7fe76d92150d14e1061aacc6f9da72ed4811f00c0d3506316053292bc41b4f3
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/tiff3/3.9.6-11/
-- https://sources.debian.net/src/tiff3/3.9.6-11/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u1/
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ttf-dejavu=2.33-3`
 
