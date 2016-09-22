@@ -539,19 +539,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-4.9-base/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-4.9=4.9.3-14
-'http://httpredir.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.3-14.dsc' gcc-4.9_4.9.3-14.dsc 10692 SHA256:8b77e20e74466f0db65fd0af8500b4d605a4031ba18245112d31b498b9a8f04a
-'http://httpredir.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.3.orig.tar.gz' gcc-4.9_4.9.3.orig.tar.gz 73135279 SHA256:b70161f3db097bcde5c1a39a9d7073eae6046feaea5b0287d96b3445e7953de2
-'http://httpredir.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.3-14.diff.gz' gcc-4.9_4.9.3-14.diff.gz 1601294 SHA256:0dcdb736d20360192a749cf56d310bd9e61c9e38b34cd10794968ea79573812b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-4.9/4.9.3-14/
-- https://sources.debian.net/src/gcc-4.9/4.9.3-14/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-5=5.4.1-1`
 

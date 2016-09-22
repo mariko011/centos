@@ -71,18 +71,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.3~rc4
-'http://httpredir.debian.org/debian/pool/main/a/apt/apt_1.3~rc4.dsc' apt_1.3~rc4.dsc 2504 SHA256:1d8c9675f3fe6c7d36aa06fcb55606a7a4d70897f621948bd6a562f5d0e92359
-'http://httpredir.debian.org/debian/pool/main/a/apt/apt_1.3~rc4.tar.xz' apt_1.3~rc4.tar.xz 2041020 SHA256:5c834057ae82f81580c0cc6bb4d5e90d9aeed24b327a51e84d6724ed49890a69
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.3~rc4/
-- https://sources.debian.net/src/apt/1.3~rc4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -241,18 +231,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.216
-'http://httpredir.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.216.dsc' cdebconf_0.216.dsc 2662 SHA256:2f9832ab9f740761b4ac73d2177e4556db79f1769693fce0b211d2cefd4b0a4c
-'http://httpredir.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.216.tar.xz' cdebconf_0.216.tar.xz 272456 SHA256:024632e9e066f50a929210d91b7d04ef5c52dc45fee87b4d6e88882041eb91c1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cdebconf/0.216/
-- https://sources.debian.net/src/cdebconf/0.216/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `coreutils=8.25-2`
 
@@ -1067,19 +1047,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ncurses=6.0+20160910-1
-'http://httpredir.debian.org/debian/pool/main/n/ncurses/ncurses_6.0+20160910-1.dsc' ncurses_6.0+20160910-1.dsc 3748 SHA256:8dcac2c54f47b1f1034408e6f24a5d0b661ca0244913925b2c6bbe0fd311e0df
-'http://httpredir.debian.org/debian/pool/main/n/ncurses/ncurses_6.0+20160910.orig.tar.gz' ncurses_6.0+20160910.orig.tar.gz 3178246 SHA256:c965297dfd4941da8ff677780c49fe161d6a9177eef3d2b8c2e54aae510b2be3
-'http://httpredir.debian.org/debian/pool/main/n/ncurses/ncurses_6.0+20160910-1.debian.tar.xz' ncurses_6.0+20160910-1.debian.tar.xz 52644 SHA256:4b88a0f47c1c28e68f6c077b4a9c1ae96a4ad19e777faca3008ca6426906dc7a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/ncurses/6.0+20160910-1/
-- https://sources.debian.net/src/ncurses/6.0+20160910-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `netbase=5.3`
 
