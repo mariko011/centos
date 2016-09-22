@@ -1,13 +1,13 @@
-# `irssi:0.8.19-alpine`
+# `irssi:0.8.20-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:af5124928e40eb97917dabf6c02aa90e9efbfa2d757d954fb2903cd26db5756c`
-- Created: `2016-09-20T00:19:07.581916087Z`
+- Image ID: `sha256:854156801ac5610f81c167d6e64f2207bd4a0938fd63820e3e714a349a9ad7ac`
+- Created: `2016-09-21T21:00:51.605744902Z`
 - Arch: `linux`/`amd64`
 - Command: `["irssi"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `HOME=/home/user`
   - `LANG=C.UTF-8`
-  - `IRSSI_VERSION=0.8.19`
+  - `IRSSI_VERSION=0.8.20`
