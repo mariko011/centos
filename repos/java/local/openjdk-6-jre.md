@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:221434b693531e3eabf36489f8fe7472aeed9984e7322fcfd5e0e3ec2b33fed3`
-- Created: `2016-08-31T17:12:16.096962401Z`
+- Image ID: `sha256:e456ca8865c76662bfea030f60ad086584b3cecf2b916d3eb935fbe450a96cf8`
+- Created: `2016-09-20T04:51:41.317206793Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -333,12 +333,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/cups/1.5.3-5+deb7u6/
 - https://sources.debian.net/src/cups/1.5.3-5+deb7u6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `curl=7.26.0-1+wheezy14`
+### `dpkg` source package: `curl=7.26.0-1+wheezy16`
 
 Binary Packages:
 
-- `curl=7.26.0-1+wheezy14`
-- `libcurl3:amd64=7.26.0-1+wheezy14`
+- `curl=7.26.0-1+wheezy16`
+- `libcurl3:amd64=7.26.0-1+wheezy16`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -347,8 +347,19 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy16
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy16.dsc' curl_7.26.0-1+wheezy16.dsc 2520 SHA256:b1b2dd8ecab246d62f4610cfc1020fee540a19a7adce07f6a53ae0579a010d64
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy16.debian.tar.gz' curl_7.26.0-1+wheezy16.debian.tar.gz 47203 SHA256:03e4688e14293eea339415618c02a2f989aea3a5c9ea2090c8a98638676f0337
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy16/
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy16/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
 
