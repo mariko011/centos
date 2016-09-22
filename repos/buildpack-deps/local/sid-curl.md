@@ -71,18 +71,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.3~rc4
-'http://httpredir.debian.org/debian/pool/main/a/apt/apt_1.3~rc4.dsc' apt_1.3~rc4.dsc 2504 SHA256:1d8c9675f3fe6c7d36aa06fcb55606a7a4d70897f621948bd6a562f5d0e92359
-'http://httpredir.debian.org/debian/pool/main/a/apt/apt_1.3~rc4.tar.xz' apt_1.3~rc4.tar.xz 2041020 SHA256:5c834057ae82f81580c0cc6bb4d5e90d9aeed24b327a51e84d6724ed49890a69
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.3~rc4/
-- https://sources.debian.net/src/apt/1.3~rc4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -266,18 +256,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.216
-'http://httpredir.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.216.dsc' cdebconf_0.216.dsc 2662 SHA256:2f9832ab9f740761b4ac73d2177e4556db79f1769693fce0b211d2cefd4b0a4c
-'http://httpredir.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.216.tar.xz' cdebconf_0.216.tar.xz 272456 SHA256:024632e9e066f50a929210d91b7d04ef5c52dc45fee87b4d6e88882041eb91c1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cdebconf/0.216/
-- https://sources.debian.net/src/cdebconf/0.216/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `coreutils=8.25-2`
 
@@ -624,19 +604,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-4.9-base/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-4.9=4.9.4-2
-'http://httpredir.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.4-2.dsc' gcc-4.9_4.9.4-2.dsc 10688 SHA256:c5baccabf4a3f7e729c7d9da3341d28934bd89ef468e6e60d9f4911dcaf7274c
-'http://httpredir.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.4.orig.tar.gz' gcc-4.9_4.9.4.orig.tar.gz 73346264 SHA256:ac67beee071cc2a6fc032cc370c9b6b819f648524ce2df555fb901fe6206013d
-'http://httpredir.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.4-2.diff.gz' gcc-4.9_4.9.4-2.diff.gz 1003777 SHA256:77a91b1f32c12e3753b7615d9af8e2c533dddcd69c1fe5412c7483e55db0746e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-4.9/4.9.4-2/
-- https://sources.debian.net/src/gcc-4.9/4.9.4-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-5=5.4.1-2`
 
@@ -1829,19 +1798,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=231-6
-'http://httpredir.debian.org/debian/pool/main/s/systemd/systemd_231-6.dsc' systemd_231-6.dsc 4443 SHA256:6f25f5805aff35926af0730fb8e5f03ad33a80fd5ef702e89389e498885e8fc8
-'http://httpredir.debian.org/debian/pool/main/s/systemd/systemd_231.orig.tar.gz' systemd_231.orig.tar.gz 4381464 SHA256:899733ad6c157cedbb89aec4efe3bc824dcfd65a1d6f6bebc7b043f7924e39b4
-'http://httpredir.debian.org/debian/pool/main/s/systemd/systemd_231-6.debian.tar.xz' systemd_231-6.debian.tar.xz 141460 SHA256:df4115a6c83c5395ce974fff846f7a357a656ec9972f8127e84a363be7c8525a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/systemd/231-6/
-- https://sources.debian.net/src/systemd/231-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8`
 
