@@ -2248,19 +2248,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.26-1
-'http://httpredir.debian.org/debian/pool/main/n/nss/nss_3.26-1.dsc' nss_3.26-1.dsc 2209 SHA256:09e8fc4cf22b353c92fbd4752b4f7b508ed8a7a8b6bfb6cc224c5bc676928a8d
-'http://httpredir.debian.org/debian/pool/main/n/nss/nss_3.26.orig.tar.gz' nss_3.26.orig.tar.gz 7386943 SHA256:91783a570ab953693eb977ce47c501f04c104cec287fa011c91bcc8970d1c564
-'http://httpredir.debian.org/debian/pool/main/n/nss/nss_3.26-1.debian.tar.xz' nss_3.26-1.debian.tar.xz 25520 SHA256:0a4638fc55683bc7f37cab384c1b4aadbfdf24438b72dd40bc675dcd6d33267a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nss/2:3.26-1/
-- https://sources.debian.net/src/nss/2:3.26-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openjdk-9=9~b135-1`
 
@@ -2276,19 +2265,8 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jdk-headless/copyright`, `/usr
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openjdk-9=9~b135-1
-'http://httpredir.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b135-1.dsc' openjdk-9_9~b135-1.dsc 4351 SHA256:980c0d27446938ce466ca28fe9786b1dfc7cdbaf01dfcfabd945e1a03ff25fce
-'http://httpredir.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b135.orig.tar.gz' openjdk-9_9~b135.orig.tar.gz 70514262 SHA256:f539d30eb8a28ffa234c378d156cc68ebf55a0de1ec04fd94560da225de7181f
-'http://httpredir.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b135-1.debian.tar.xz' openjdk-9_9~b135-1.debian.tar.xz 188940 SHA256:beaacd7c680ce5e5221915b1f921305fade362314813997d797ad95a235fb44a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openjdk-9/9~b135-1/
-- https://sources.debian.net/src/openjdk-9/9~b135-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.42+dfsg-2`
 
