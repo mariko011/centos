@@ -1587,14 +1587,8 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.30.7-0ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.30.7-0ubuntu1.2.dsc' gdk-pixbuf_2.30.7-0ubuntu1.2.dsc 2923 SHA256:0c08ffcee66408ea5d95cde3da7bdecb854831f876d62e15be465a7b31874d1b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.30.7.orig.tar.xz' gdk-pixbuf_2.30.7.orig.tar.xz 1329096 SHA256:0aafc365eab1083a53f15e4828333b968219ffcb1a995ac6289c0147c9ffad06
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.30.7-0ubuntu1.2.debian.tar.gz' gdk-pixbuf_2.30.7-0ubuntu1.2.debian.tar.gz 17493 SHA256:d3576866da655916051ccd8c4016567319755af8237b9f7b7d8e35cc62631d47
-```
 
 ### `dpkg` source package: `geos=3.4.2-4ubuntu1`
 
