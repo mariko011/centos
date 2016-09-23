@@ -1237,14 +1237,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1-4ubuntu5.36
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1-4ubuntu5.36.dsc' openssl_1.0.1-4ubuntu5.36.dsc 2365 SHA256:8279a8e7475b325d3db2daf5f1c882cfec562ffa91df47a965cdd5554ffd452b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1.orig.tar.gz' openssl_1.0.1.orig.tar.gz 4453920 SHA256:4d9f0a594a9a89b28e1a04a9504c04104f6508ee27ad1e0efdd17a7a6dbbeeee
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1-4ubuntu5.36.debian.tar.gz' openssl_1.0.1-4ubuntu5.36.debian.tar.gz 250026 SHA256:18d527232fd0382924ef42e338f25ebbcfecef91f80e10e98291b8ffbbf2c2b5
-```
 
 ### `dpkg` source package: `pam=1.1.3-7ubuntu2.3`
 
