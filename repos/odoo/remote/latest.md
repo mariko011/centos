@@ -1,7 +1,7 @@
 ## `odoo:latest`
 
 ```console
-$ docker pull odoo@sha256:2886ffdea7cb80682d83e6688ac2545c04ad1aa6432db9751af3e7a823e836ed
+$ docker pull odoo@sha256:b9250b90e8acdd9c4e116db29d6fe225d15897f09eefe4a4162036ec0bd31a7b
 ```
 
 -	Platforms:
@@ -9,77 +9,77 @@ $ docker pull odoo@sha256:2886ffdea7cb80682d83e6688ac2545c04ad1aa6432db9751af3e7
 
 ### `odoo:latest` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **272.9 MB (272866869 bytes)**  
+-	Total Size: **272.9 MB (272867551 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2765898f2e476a2ffac9e59851823c7fe50bc79d675f676a1405089c8237585d`
+-	Image ID: `sha256:ab1c2589aa2eb8a4a93319d19a05de55337e87f3be3beb0b0165a05e1261754a`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["openerp-server"]`
 
 ```dockerfile
-# Thu, 28 Jul 2016 17:47:54 GMT
-ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /
-# Thu, 28 Jul 2016 17:47:55 GMT
+# Fri, 23 Sep 2016 18:08:50 GMT
+ADD file:c6c23585ab140b0b320d4e99bc1b0eb544c9e96c24d90fec5e069a6d57d335ca in / 
+# Fri, 23 Sep 2016 18:08:51 GMT
 CMD ["/bin/bash"]
-# Mon, 01 Aug 2016 19:56:14 GMT
+# Fri, 23 Sep 2016 21:04:58 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Mon, 01 Aug 2016 19:58:29 GMT
+# Fri, 23 Sep 2016 21:05:36 GMT
 RUN set -x;         apt-get update         && apt-get install -y --no-install-recommends             ca-certificates             curl             node-less             node-clean-css             python-pyinotify             python-renderpm             python-support         && curl -o wkhtmltox.deb -SL http://nightly.odoo.com/extra/wkhtmltox-0.12.1.2_linux-jessie-amd64.deb         && echo '40e8b906de658a2221b15e4e8cd82565a47d7ee8 wkhtmltox.deb' | sha1sum -c -         && dpkg --force-depends -i wkhtmltox.deb         && apt-get -y install -f --no-install-recommends         && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false npm         && rm -rf /var/lib/apt/lists/* wkhtmltox.deb
-# Mon, 01 Aug 2016 20:02:28 GMT
+# Fri, 23 Sep 2016 21:07:46 GMT
 ENV ODOO_VERSION=9.0
-# Mon, 01 Aug 2016 20:02:29 GMT
+# Fri, 23 Sep 2016 21:07:46 GMT
 ENV ODOO_RELEASE=20160726
-# Mon, 01 Aug 2016 20:05:03 GMT
+# Fri, 23 Sep 2016 21:08:48 GMT
 RUN set -x;         curl -o odoo.deb -SL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}c.${ODOO_RELEASE}_all.deb         && echo 'cbd0cbaed27da28eaae1c6460f36d398c8acbf77 odoo.deb' | sha1sum -c -         && dpkg --force-depends -i odoo.deb         && apt-get update         && apt-get -y install -f --no-install-recommends         && rm -rf /var/lib/apt/lists/* odoo.deb
-# Mon, 01 Aug 2016 20:05:05 GMT
-COPY file:156abbd9c6016388d9d2e1584d9e9c49a4085dba32d97d1ed88fee992bb89e61 in /
-# Mon, 01 Aug 2016 20:05:06 GMT
-COPY file:1172e26dac1f2b6dd4d3b3ae484c69b33109695606154cdb13dcfa032d798e88 in /etc/odoo/
-# Mon, 01 Aug 2016 20:05:08 GMT
+# Fri, 23 Sep 2016 21:08:49 GMT
+COPY file:156abbd9c6016388d9d2e1584d9e9c49a4085dba32d97d1ed88fee992bb89e61 in / 
+# Fri, 23 Sep 2016 21:08:49 GMT
+COPY file:1172e26dac1f2b6dd4d3b3ae484c69b33109695606154cdb13dcfa032d798e88 in /etc/odoo/ 
+# Fri, 23 Sep 2016 21:08:50 GMT
 RUN chown odoo /etc/odoo/openerp-server.conf
-# Mon, 01 Aug 2016 20:05:10 GMT
+# Fri, 23 Sep 2016 21:08:51 GMT
 RUN mkdir -p /mnt/extra-addons         && chown -R odoo /mnt/extra-addons
-# Mon, 01 Aug 2016 20:05:11 GMT
+# Fri, 23 Sep 2016 21:08:52 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Mon, 01 Aug 2016 20:05:12 GMT
+# Fri, 23 Sep 2016 21:08:53 GMT
 EXPOSE 8069/tcp 8071/tcp
-# Mon, 01 Aug 2016 20:05:14 GMT
+# Fri, 23 Sep 2016 21:08:53 GMT
 ENV OPENERP_SERVER=/etc/odoo/openerp-server.conf
-# Mon, 01 Aug 2016 20:05:16 GMT
+# Fri, 23 Sep 2016 21:08:53 GMT
 USER [odoo]
-# Mon, 01 Aug 2016 20:05:16 GMT
-ENTRYPOINT &{["/entrypoint.sh"]}
-# Mon, 01 Aug 2016 20:05:17 GMT
+# Fri, 23 Sep 2016 21:08:54 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Fri, 23 Sep 2016 21:08:54 GMT
 CMD ["openerp-server"]
 ```
 
 -	Layers:
-	-	`sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab`  
-		Last Modified: Thu, 28 Jul 2016 17:49:58 GMT  
-		Size: 51.4 MB (51365611 bytes)  
+	-	`sha256:6a5a5368e0c2d3e5909184fa28ddfd56072e7ff3ee9a945876f7eee5896ef5bb`  
+		Last Modified: Fri, 23 Sep 2016 18:10:19 GMT  
+		Size: 51.4 MB (51354364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59210089e05763d3e2d318fce03f00d2cf6e408d9a277ad96bff93985579041a`  
-		Last Modified: Mon, 01 Aug 2016 20:01:57 GMT  
-		Size: 83.8 MB (83758751 bytes)  
+	-	`sha256:6afdfded51717318d73884bdc073220ad2bfdf57197cc1d426c8f1a7a08835cb`  
+		Last Modified: Fri, 23 Sep 2016 21:07:17 GMT  
+		Size: 83.8 MB (83761036 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55c6ab9ddca9acb1ae3c05eb0df3838c786fcce84f86d900db1e1a9d95581ebc`  
-		Last Modified: Mon, 01 Aug 2016 20:06:01 GMT  
-		Size: 137.7 MB (137740862 bytes)  
+	-	`sha256:521b12ee82dd0283b2386902b5d30babed6045a881acaefa11527eeba3ed782f`  
+		Last Modified: Fri, 23 Sep 2016 21:09:35 GMT  
+		Size: 137.8 MB (137750509 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ff4ee116ff2e36b0d17a1ba097cdff8dfdf93b2b32c998283aec9409a469f1b`  
-		Last Modified: Mon, 01 Aug 2016 20:05:27 GMT  
-		Size: 344.0 B  
+	-	`sha256:5990bfae0061ad97994b891f91e49ed64259c33d3f04c9b4dee25d17342f6dcd`  
+		Last Modified: Fri, 23 Sep 2016 21:09:04 GMT  
+		Size: 342.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0e835ad7b97693cd98dfa4a95451e1b593f90a9d08c6c87c192f426432bc505`  
-		Last Modified: Mon, 01 Aug 2016 20:05:26 GMT  
-		Size: 588.0 B  
+	-	`sha256:c5172aab1152580b5bf448ffdd067d5865ae51591314bfb17703171f6e20aa17`  
+		Last Modified: Fri, 23 Sep 2016 21:09:03 GMT  
+		Size: 586.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3cbd8091436be0c8e5c409f1afaa42e32de4f42b1e7cf8ef4481eb26f329b494`  
-		Last Modified: Mon, 01 Aug 2016 20:05:26 GMT  
+	-	`sha256:fee67f4068d0f92d18af2bfe968ee2ecc497abca4f0d91a657906e8079e4ee4d`  
+		Last Modified: Fri, 23 Sep 2016 21:09:02 GMT  
 		Size: 590.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f943eb8cd383e18c2e3de2bab17f41b05bcc66319f468e152bd478faa9f814c4`  
-		Last Modified: Mon, 01 Aug 2016 20:05:26 GMT  
-		Size: 123.0 B  
+	-	`sha256:c5b0744d0e9863157fa756f15ad7ba0c28017139bcb5a896f030f43e53446360`  
+		Last Modified: Fri, 23 Sep 2016 21:09:03 GMT  
+		Size: 124.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
