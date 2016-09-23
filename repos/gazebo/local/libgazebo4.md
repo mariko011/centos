@@ -5126,14 +5126,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1f-1ubuntu2.19
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.19.dsc' openssl_1.0.1f-1ubuntu2.19.dsc 2370 SHA256:ca2d104ed091d6dfe0a9b3fca7f364899d36a10a3e22e2fd28959088d7bc169e
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f.orig.tar.gz' openssl_1.0.1f.orig.tar.gz 4509212 SHA256:6cc2a80b17d64de6b7bac985745fdaba971d54ffd7d38d3556f998d7c0c9cb5a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.19.debian.tar.gz' openssl_1.0.1f-1ubuntu2.19.debian.tar.gz 224624 SHA256:72435366409ae98a0ab836010d682a7ffbbd50db40ca5ffefd79c705cabb25b2
-```
 
 ### `dpkg` source package: `opus=1.1-0ubuntu1`
 
@@ -5689,14 +5683,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.4-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python3.4=3.4.3-1ubuntu1~14.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3-1ubuntu1~14.04.3.dsc' python3.4_3.4.3-1ubuntu1~14.04.3.dsc 3351 SHA256:1b1bd9f18726d0ce05527517fc06785debbd2fdf46565d0d9597dfe7b5766294
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3.orig.tar.xz' python3.4_3.4.3.orig.tar.xz 12690456 SHA256:9151f6d2975471e6b6189aa2de836b48ba0361b145dd8fc143e986efbbed9f3a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3-1ubuntu1~14.04.3.debian.tar.xz' python3.4_3.4.3-1ubuntu1~14.04.3.debian.tar.xz 202424 SHA256:45c8332a1e5a357e34b127d571595d9c130f1877286a8434282156260fb7ee24
-```
 
 ### `dpkg` source package: `qt4-x11=4:4.8.5+git192-g085f851+dfsg-2ubuntu4.1`
 
