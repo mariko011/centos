@@ -1,7 +1,7 @@
 ## `rethinkdb:latest`
 
 ```console
-$ docker pull rethinkdb@sha256:7689656221baf133abab96f887636afa35bae8ca28680de7ebb67b33771ab7d3
+$ docker pull rethinkdb@sha256:d258f29351a75ee4efaeadd173e3da78cf6644df6b18debe1543543dcc6f5e20
 ```
 
 -	Platforms:
@@ -11,54 +11,54 @@ $ docker pull rethinkdb@sha256:7689656221baf133abab96f887636afa35bae8ca28680de7e
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.0 MB (75971785 bytes)**  
+-	Total Size: **76.0 MB (75959405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e30940c8232c8dace45d647308df2ae79100c2ea0951a29f352877db5b71e3d4`
+-	Image ID: `sha256:d10cc6435528da5d3018dd5dd65768fb01b5be930e53e225cd39ed126b00f3bc`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Tue, 30 Aug 2016 21:00:51 GMT
-ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / 
-# Tue, 30 Aug 2016 21:00:52 GMT
+# Fri, 23 Sep 2016 18:08:50 GMT
+ADD file:c6c23585ab140b0b320d4e99bc1b0eb544c9e96c24d90fec5e069a6d57d335ca in / 
+# Fri, 23 Sep 2016 18:08:51 GMT
 CMD ["/bin/bash"]
-# Tue, 30 Aug 2016 23:10:33 GMT
+# Fri, 23 Sep 2016 23:08:33 GMT
 MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
-# Tue, 30 Aug 2016 23:10:34 GMT
+# Fri, 23 Sep 2016 23:08:34 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
-# Tue, 30 Aug 2016 23:10:35 GMT
+# Fri, 23 Sep 2016 23:08:35 GMT
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
-# Tue, 30 Aug 2016 23:11:57 GMT
+# Fri, 23 Sep 2016 23:08:36 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.3.5~0jessie
-# Tue, 30 Aug 2016 23:12:15 GMT
+# Fri, 23 Sep 2016 23:08:50 GMT
 RUN apt-get update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 30 Aug 2016 23:12:15 GMT
+# Fri, 23 Sep 2016 23:08:50 GMT
 VOLUME [/data]
-# Tue, 30 Aug 2016 23:12:16 GMT
+# Fri, 23 Sep 2016 23:08:51 GMT
 WORKDIR /data
-# Tue, 30 Aug 2016 23:12:16 GMT
+# Fri, 23 Sep 2016 23:08:51 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Tue, 30 Aug 2016 23:12:16 GMT
+# Fri, 23 Sep 2016 23:08:52 GMT
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
 -	Layers:
-	-	`sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f`  
-		Last Modified: Tue, 30 Aug 2016 21:02:02 GMT  
-		Size: 51.4 MB (51367268 bytes)  
+	-	`sha256:6a5a5368e0c2d3e5909184fa28ddfd56072e7ff3ee9a945876f7eee5896ef5bb`  
+		Last Modified: Fri, 23 Sep 2016 18:10:19 GMT  
+		Size: 51.4 MB (51354364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4bfcd4f5772d6e3e4d5afec0fe010322a068ca00b1ad62504b92134d9970d513`  
-		Last Modified: Tue, 30 Aug 2016 23:12:22 GMT  
-		Size: 1.4 KB (1437 bytes)  
+	-	`sha256:3833f76d45bacfc30dc4871a87a41f6a45f472828eeaca54c01e15260cdbb4b5`  
+		Last Modified: Fri, 23 Sep 2016 23:09:00 GMT  
+		Size: 1.4 KB (1433 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21c1b8deb49fa372e5cac1462a353ee5a06353461d89c0c88a53195d49352991`  
-		Last Modified: Tue, 30 Aug 2016 23:12:22 GMT  
-		Size: 217.0 B  
+	-	`sha256:10178b7f19dbaeafc069e27b46ea91773ce62f620136e20de34ad948a0595ee2`  
+		Last Modified: Fri, 23 Sep 2016 23:09:00 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6141c54ca574af470301edd84d94e2f07f05fcdd60b57bc8b81f7df9135e39d3`  
-		Last Modified: Tue, 30 Aug 2016 23:13:59 GMT  
-		Size: 24.6 MB (24602772 bytes)  
+	-	`sha256:00908b07826c2438120027a90571cfd1d270532ef76bb9db3bc54d660169b021`  
+		Last Modified: Fri, 23 Sep 2016 23:09:08 GMT  
+		Size: 24.6 MB (24603300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17c7067e3c219d1aebc254560926b731c8ae47ea3ae20e7cf22a1265417b955f`  
-		Last Modified: Tue, 30 Aug 2016 23:13:53 GMT  
-		Size: 91.0 B  
+	-	`sha256:7fdc9444c2b4fbb300e3df206dd38e8d76adaa1a12d1b48d962f320c64b3754e`  
+		Last Modified: Fri, 23 Sep 2016 23:09:00 GMT  
+		Size: 92.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
