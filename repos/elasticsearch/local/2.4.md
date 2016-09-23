@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:31347bae83b824dd5568d541f5534a8b26398efb9f594b0c7000172aa2c69872`
-- Created: `2016-08-31T17:30:44.617910779Z`
+- Image ID: `sha256:e8413094f5d590d78de216b60354f0749eee8e8fa55a691459cdef378663469f`
+- Created: `2016-09-20T18:57:37.141841126Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["elasticsearch"]`
