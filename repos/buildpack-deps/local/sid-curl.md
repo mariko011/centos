@@ -1405,19 +1405,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ncurses=6.0+20160910-1
-'http://httpredir.debian.org/debian/pool/main/n/ncurses/ncurses_6.0+20160910-1.dsc' ncurses_6.0+20160910-1.dsc 3748 SHA256:8dcac2c54f47b1f1034408e6f24a5d0b661ca0244913925b2c6bbe0fd311e0df
-'http://httpredir.debian.org/debian/pool/main/n/ncurses/ncurses_6.0+20160910.orig.tar.gz' ncurses_6.0+20160910.orig.tar.gz 3178246 SHA256:c965297dfd4941da8ff677780c49fe161d6a9177eef3d2b8c2e54aae510b2be3
-'http://httpredir.debian.org/debian/pool/main/n/ncurses/ncurses_6.0+20160910-1.debian.tar.xz' ncurses_6.0+20160910-1.debian.tar.xz 52644 SHA256:4b88a0f47c1c28e68f6c077b4a9c1ae96a4ad19e777faca3008ca6426906dc7a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/ncurses/6.0+20160910-1/
-- https://sources.debian.net/src/ncurses/6.0+20160910-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `netbase=5.3`
 
