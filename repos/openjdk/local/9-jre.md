@@ -2478,19 +2478,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016f-1
-'http://httpredir.debian.org/debian/pool/main/t/tzdata/tzdata_2016f-1.dsc' tzdata_2016f-1.dsc 1991 SHA256:8d2a0d27767dec81cf5d3250d3915949cb10eab8672dc729c3665798a1490052
-'http://httpredir.debian.org/debian/pool/main/t/tzdata/tzdata_2016f.orig.tar.gz' tzdata_2016f.orig.tar.gz 313286 SHA256:ed8c951008d12f1db55a11e96fc055718c6571233327d9de16a7f8475e2502b0
-'http://httpredir.debian.org/debian/pool/main/t/tzdata/tzdata_2016f-1.debian.tar.xz' tzdata_2016f-1.debian.tar.xz 100160 SHA256:bc1174d4160b63d14a9d40fd7b473ef03f97419285a9d8ec090e5bc718c75174
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2016f-1/
-- https://sources.debian.net/src/tzdata/2016f-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `unzip=6.0-20`
 
@@ -2602,19 +2591,8 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris wget=1.18-2
-'http://httpredir.debian.org/debian/pool/main/w/wget/wget_1.18-2.dsc' wget_1.18-2.dsc 1863 SHA256:355dc5ea1e26505e352698183fa1c507cebdc48bdae04051600726d01ab57aa9
-'http://httpredir.debian.org/debian/pool/main/w/wget/wget_1.18.orig.tar.gz' wget_1.18.orig.tar.gz 3865525 SHA256:a00a65fab84cc46e24c53ce88c45604668a7a479276e037dc2f558e34717fb2d
-'http://httpredir.debian.org/debian/pool/main/w/wget/wget_1.18-2.debian.tar.xz' wget_1.18-2.debian.tar.xz 20552 SHA256:c40bbc49f5014bae3b4da8485b6929d9aed30b01c552467cc56a36c688d45c05
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/wget/1.18-2/
-- https://sources.debian.net/src/wget/1.18-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `xorg=1:7.7+16`
 
