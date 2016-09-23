@@ -2579,14 +2579,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.1.dsc' openssl_1.0.2g-1ubuntu4.1.dsc 2435 SHA256:8433c5edf8a08811e830e8a46df836ac8ab69d8b2e6a163c8ff0520eaf9aebee
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.1.debian.tar.xz' openssl_1.0.2g-1ubuntu4.1.debian.tar.xz 190704 SHA256:73b42892129d84320806b25242f78e37cc7578e44c3e9c0f0a8b40951a4c7fc7
-```
 
 ### `dpkg` source package: `p11-kit=0.23.2-3`
 
@@ -3195,14 +3189,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.5-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python3.5=3.5.2-2~16.01
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.2-2~16.01.dsc' python3.5_3.5.2-2~16.01.dsc 3253 SHA256:0db009a1f4735967b71930692299822df21f525dfb5b434e263f45703e5b0e6a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.2.orig.tar.xz' python3.5_3.5.2.orig.tar.xz 15222676 SHA256:0010f56100b9b74259ebcd5d4b295a32324b58b517403a10d1a2aa7cb22bca40
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.2-2~16.01.debian.tar.xz' python3.5_3.5.2-2~16.01.debian.tar.xz 211436 SHA256:f06e96b1e17d8a59c3ec80d4e233fbe3be0ffa891644da27f6e9d9a517bb1eae
-```
 
 ### `dpkg` source package: `pyyaml=3.11-3build1`
 
