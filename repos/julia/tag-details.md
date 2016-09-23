@@ -10,7 +10,7 @@
 ## `julia:0.5.0`
 
 ```console
-$ docker pull julia@sha256:9cdb7d7bb9130b3a0d4ae155846b6f4718a3efa83beec358f0f8ef05a84c8718
+$ docker pull julia@sha256:882464c838d3f492d4918dc5974ddcf2da8fe1b6f351ef2508cc98cb7968adee
 ```
 
 -	Platforms:
@@ -20,48 +20,48 @@ $ docker pull julia@sha256:9cdb7d7bb9130b3a0d4ae155846b6f4718a3efa83beec358f0f8e
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.2 MB (141175974 bytes)**  
+-	Total Size: **141.2 MB (141176666 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf27f213dd700e98b7eeb7075b800ab4957d8225b5ee335eff0f454cdeca9af8`
+-	Image ID: `sha256:ac9e7bbc2ed9e6055107d57f250868796710c83c5f490299e410ab1eac96124c`
 -	Default Command: `["julia"]`
 
 ```dockerfile
-# Mon, 19 Sep 2016 17:42:37 GMT
-ADD file:cae7a35a0d8c43d5ba00fa03413136b37e0a0bf8f4d5311dda779748e64ef425 in / 
-# Mon, 19 Sep 2016 17:42:37 GMT
+# Fri, 23 Sep 2016 18:08:50 GMT
+ADD file:c6c23585ab140b0b320d4e99bc1b0eb544c9e96c24d90fec5e069a6d57d335ca in / 
+# Fri, 23 Sep 2016 18:08:51 GMT
 CMD ["/bin/bash"]
-# Mon, 19 Sep 2016 20:04:06 GMT
+# Fri, 23 Sep 2016 19:46:08 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends ca-certificates git 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 19 Sep 2016 20:04:06 GMT
+# Fri, 23 Sep 2016 19:46:09 GMT
 ENV JULIA_PATH=/usr/local/julia
-# Wed, 21 Sep 2016 23:05:39 GMT
+# Fri, 23 Sep 2016 19:46:09 GMT
 ENV JULIA_VERSION=0.5.0
-# Wed, 21 Sep 2016 23:06:00 GMT
+# Fri, 23 Sep 2016 19:46:27 GMT
 RUN mkdir $JULIA_PATH 	&& apt-get update && apt-get install -y curl 	&& curl -sSL "https://julialang.s3.amazonaws.com/bin/linux/x64/${JULIA_VERSION%[.-]*}/julia-${JULIA_VERSION}-linux-x86_64.tar.gz" -o julia.tar.gz 	&& curl -sSL "https://julialang.s3.amazonaws.com/bin/linux/x64/${JULIA_VERSION%[.-]*}/julia-${JULIA_VERSION}-linux-x86_64.tar.gz.asc" -o julia.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 3673DF529D9049477F76B37566E3C7DC03D6E495 	&& gpg --batch --verify julia.tar.gz.asc julia.tar.gz 	&& rm -r "$GNUPGHOME" julia.tar.gz.asc 	&& tar -xzf julia.tar.gz -C $JULIA_PATH --strip-components 1 	&& rm -rf /var/lib/apt/lists/* julia.tar.gz*
-# Wed, 21 Sep 2016 23:06:01 GMT
+# Fri, 23 Sep 2016 19:46:27 GMT
 ENV PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Sep 2016 23:06:01 GMT
+# Fri, 23 Sep 2016 19:46:28 GMT
 CMD ["julia"]
 ```
 
 -	Layers:
-	-	`sha256:2f5fbf61137445d75e8077a9ac5b9b89a2b8eda2dc7486ef42c93da4c5d8760b`  
-		Last Modified: Mon, 19 Sep 2016 17:44:31 GMT  
-		Size: 51.4 MB (51354569 bytes)  
+	-	`sha256:6a5a5368e0c2d3e5909184fa28ddfd56072e7ff3ee9a945876f7eee5896ef5bb`  
+		Last Modified: Fri, 23 Sep 2016 18:10:19 GMT  
+		Size: 51.4 MB (51354364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:adeb55ec4d2ee0f4b8b96028f38d5fda1dc879d99e52ab3c244101783353953b`  
-		Last Modified: Wed, 21 Sep 2016 23:06:18 GMT  
-		Size: 26.8 MB (26773548 bytes)  
+	-	`sha256:d9607e2e70459b52379fc860bfd676b2345dd1f1b50acf48a202530da999e7f4`  
+		Last Modified: Fri, 23 Sep 2016 19:46:44 GMT  
+		Size: 26.8 MB (26774365 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6d5cbf35fcc7be61e4446624da907bb95cae0276dd4b25d8f084976bb183518`  
-		Last Modified: Wed, 21 Sep 2016 23:06:33 GMT  
-		Size: 63.0 MB (63047857 bytes)  
+	-	`sha256:0e707bddf79ff09272566eaba890d98296d1050b16eb14b6dff60223bc4f21c8`  
+		Last Modified: Fri, 23 Sep 2016 19:46:59 GMT  
+		Size: 63.0 MB (63047937 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `julia:0.5`
 
 ```console
-$ docker pull julia@sha256:9cdb7d7bb9130b3a0d4ae155846b6f4718a3efa83beec358f0f8ef05a84c8718
+$ docker pull julia@sha256:882464c838d3f492d4918dc5974ddcf2da8fe1b6f351ef2508cc98cb7968adee
 ```
 
 -	Platforms:
@@ -71,48 +71,48 @@ $ docker pull julia@sha256:9cdb7d7bb9130b3a0d4ae155846b6f4718a3efa83beec358f0f8e
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.2 MB (141175974 bytes)**  
+-	Total Size: **141.2 MB (141176666 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf27f213dd700e98b7eeb7075b800ab4957d8225b5ee335eff0f454cdeca9af8`
+-	Image ID: `sha256:ac9e7bbc2ed9e6055107d57f250868796710c83c5f490299e410ab1eac96124c`
 -	Default Command: `["julia"]`
 
 ```dockerfile
-# Mon, 19 Sep 2016 17:42:37 GMT
-ADD file:cae7a35a0d8c43d5ba00fa03413136b37e0a0bf8f4d5311dda779748e64ef425 in / 
-# Mon, 19 Sep 2016 17:42:37 GMT
+# Fri, 23 Sep 2016 18:08:50 GMT
+ADD file:c6c23585ab140b0b320d4e99bc1b0eb544c9e96c24d90fec5e069a6d57d335ca in / 
+# Fri, 23 Sep 2016 18:08:51 GMT
 CMD ["/bin/bash"]
-# Mon, 19 Sep 2016 20:04:06 GMT
+# Fri, 23 Sep 2016 19:46:08 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends ca-certificates git 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 19 Sep 2016 20:04:06 GMT
+# Fri, 23 Sep 2016 19:46:09 GMT
 ENV JULIA_PATH=/usr/local/julia
-# Wed, 21 Sep 2016 23:05:39 GMT
+# Fri, 23 Sep 2016 19:46:09 GMT
 ENV JULIA_VERSION=0.5.0
-# Wed, 21 Sep 2016 23:06:00 GMT
+# Fri, 23 Sep 2016 19:46:27 GMT
 RUN mkdir $JULIA_PATH 	&& apt-get update && apt-get install -y curl 	&& curl -sSL "https://julialang.s3.amazonaws.com/bin/linux/x64/${JULIA_VERSION%[.-]*}/julia-${JULIA_VERSION}-linux-x86_64.tar.gz" -o julia.tar.gz 	&& curl -sSL "https://julialang.s3.amazonaws.com/bin/linux/x64/${JULIA_VERSION%[.-]*}/julia-${JULIA_VERSION}-linux-x86_64.tar.gz.asc" -o julia.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 3673DF529D9049477F76B37566E3C7DC03D6E495 	&& gpg --batch --verify julia.tar.gz.asc julia.tar.gz 	&& rm -r "$GNUPGHOME" julia.tar.gz.asc 	&& tar -xzf julia.tar.gz -C $JULIA_PATH --strip-components 1 	&& rm -rf /var/lib/apt/lists/* julia.tar.gz*
-# Wed, 21 Sep 2016 23:06:01 GMT
+# Fri, 23 Sep 2016 19:46:27 GMT
 ENV PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Sep 2016 23:06:01 GMT
+# Fri, 23 Sep 2016 19:46:28 GMT
 CMD ["julia"]
 ```
 
 -	Layers:
-	-	`sha256:2f5fbf61137445d75e8077a9ac5b9b89a2b8eda2dc7486ef42c93da4c5d8760b`  
-		Last Modified: Mon, 19 Sep 2016 17:44:31 GMT  
-		Size: 51.4 MB (51354569 bytes)  
+	-	`sha256:6a5a5368e0c2d3e5909184fa28ddfd56072e7ff3ee9a945876f7eee5896ef5bb`  
+		Last Modified: Fri, 23 Sep 2016 18:10:19 GMT  
+		Size: 51.4 MB (51354364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:adeb55ec4d2ee0f4b8b96028f38d5fda1dc879d99e52ab3c244101783353953b`  
-		Last Modified: Wed, 21 Sep 2016 23:06:18 GMT  
-		Size: 26.8 MB (26773548 bytes)  
+	-	`sha256:d9607e2e70459b52379fc860bfd676b2345dd1f1b50acf48a202530da999e7f4`  
+		Last Modified: Fri, 23 Sep 2016 19:46:44 GMT  
+		Size: 26.8 MB (26774365 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6d5cbf35fcc7be61e4446624da907bb95cae0276dd4b25d8f084976bb183518`  
-		Last Modified: Wed, 21 Sep 2016 23:06:33 GMT  
-		Size: 63.0 MB (63047857 bytes)  
+	-	`sha256:0e707bddf79ff09272566eaba890d98296d1050b16eb14b6dff60223bc4f21c8`  
+		Last Modified: Fri, 23 Sep 2016 19:46:59 GMT  
+		Size: 63.0 MB (63047937 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `julia:0`
 
 ```console
-$ docker pull julia@sha256:9cdb7d7bb9130b3a0d4ae155846b6f4718a3efa83beec358f0f8ef05a84c8718
+$ docker pull julia@sha256:882464c838d3f492d4918dc5974ddcf2da8fe1b6f351ef2508cc98cb7968adee
 ```
 
 -	Platforms:
@@ -122,48 +122,48 @@ $ docker pull julia@sha256:9cdb7d7bb9130b3a0d4ae155846b6f4718a3efa83beec358f0f8e
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.2 MB (141175974 bytes)**  
+-	Total Size: **141.2 MB (141176666 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf27f213dd700e98b7eeb7075b800ab4957d8225b5ee335eff0f454cdeca9af8`
+-	Image ID: `sha256:ac9e7bbc2ed9e6055107d57f250868796710c83c5f490299e410ab1eac96124c`
 -	Default Command: `["julia"]`
 
 ```dockerfile
-# Mon, 19 Sep 2016 17:42:37 GMT
-ADD file:cae7a35a0d8c43d5ba00fa03413136b37e0a0bf8f4d5311dda779748e64ef425 in / 
-# Mon, 19 Sep 2016 17:42:37 GMT
+# Fri, 23 Sep 2016 18:08:50 GMT
+ADD file:c6c23585ab140b0b320d4e99bc1b0eb544c9e96c24d90fec5e069a6d57d335ca in / 
+# Fri, 23 Sep 2016 18:08:51 GMT
 CMD ["/bin/bash"]
-# Mon, 19 Sep 2016 20:04:06 GMT
+# Fri, 23 Sep 2016 19:46:08 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends ca-certificates git 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 19 Sep 2016 20:04:06 GMT
+# Fri, 23 Sep 2016 19:46:09 GMT
 ENV JULIA_PATH=/usr/local/julia
-# Wed, 21 Sep 2016 23:05:39 GMT
+# Fri, 23 Sep 2016 19:46:09 GMT
 ENV JULIA_VERSION=0.5.0
-# Wed, 21 Sep 2016 23:06:00 GMT
+# Fri, 23 Sep 2016 19:46:27 GMT
 RUN mkdir $JULIA_PATH 	&& apt-get update && apt-get install -y curl 	&& curl -sSL "https://julialang.s3.amazonaws.com/bin/linux/x64/${JULIA_VERSION%[.-]*}/julia-${JULIA_VERSION}-linux-x86_64.tar.gz" -o julia.tar.gz 	&& curl -sSL "https://julialang.s3.amazonaws.com/bin/linux/x64/${JULIA_VERSION%[.-]*}/julia-${JULIA_VERSION}-linux-x86_64.tar.gz.asc" -o julia.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 3673DF529D9049477F76B37566E3C7DC03D6E495 	&& gpg --batch --verify julia.tar.gz.asc julia.tar.gz 	&& rm -r "$GNUPGHOME" julia.tar.gz.asc 	&& tar -xzf julia.tar.gz -C $JULIA_PATH --strip-components 1 	&& rm -rf /var/lib/apt/lists/* julia.tar.gz*
-# Wed, 21 Sep 2016 23:06:01 GMT
+# Fri, 23 Sep 2016 19:46:27 GMT
 ENV PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Sep 2016 23:06:01 GMT
+# Fri, 23 Sep 2016 19:46:28 GMT
 CMD ["julia"]
 ```
 
 -	Layers:
-	-	`sha256:2f5fbf61137445d75e8077a9ac5b9b89a2b8eda2dc7486ef42c93da4c5d8760b`  
-		Last Modified: Mon, 19 Sep 2016 17:44:31 GMT  
-		Size: 51.4 MB (51354569 bytes)  
+	-	`sha256:6a5a5368e0c2d3e5909184fa28ddfd56072e7ff3ee9a945876f7eee5896ef5bb`  
+		Last Modified: Fri, 23 Sep 2016 18:10:19 GMT  
+		Size: 51.4 MB (51354364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:adeb55ec4d2ee0f4b8b96028f38d5fda1dc879d99e52ab3c244101783353953b`  
-		Last Modified: Wed, 21 Sep 2016 23:06:18 GMT  
-		Size: 26.8 MB (26773548 bytes)  
+	-	`sha256:d9607e2e70459b52379fc860bfd676b2345dd1f1b50acf48a202530da999e7f4`  
+		Last Modified: Fri, 23 Sep 2016 19:46:44 GMT  
+		Size: 26.8 MB (26774365 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6d5cbf35fcc7be61e4446624da907bb95cae0276dd4b25d8f084976bb183518`  
-		Last Modified: Wed, 21 Sep 2016 23:06:33 GMT  
-		Size: 63.0 MB (63047857 bytes)  
+	-	`sha256:0e707bddf79ff09272566eaba890d98296d1050b16eb14b6dff60223bc4f21c8`  
+		Last Modified: Fri, 23 Sep 2016 19:46:59 GMT  
+		Size: 63.0 MB (63047937 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `julia:latest`
 
 ```console
-$ docker pull julia@sha256:9cdb7d7bb9130b3a0d4ae155846b6f4718a3efa83beec358f0f8ef05a84c8718
+$ docker pull julia@sha256:882464c838d3f492d4918dc5974ddcf2da8fe1b6f351ef2508cc98cb7968adee
 ```
 
 -	Platforms:
@@ -173,40 +173,40 @@ $ docker pull julia@sha256:9cdb7d7bb9130b3a0d4ae155846b6f4718a3efa83beec358f0f8e
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.2 MB (141175974 bytes)**  
+-	Total Size: **141.2 MB (141176666 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf27f213dd700e98b7eeb7075b800ab4957d8225b5ee335eff0f454cdeca9af8`
+-	Image ID: `sha256:ac9e7bbc2ed9e6055107d57f250868796710c83c5f490299e410ab1eac96124c`
 -	Default Command: `["julia"]`
 
 ```dockerfile
-# Mon, 19 Sep 2016 17:42:37 GMT
-ADD file:cae7a35a0d8c43d5ba00fa03413136b37e0a0bf8f4d5311dda779748e64ef425 in / 
-# Mon, 19 Sep 2016 17:42:37 GMT
+# Fri, 23 Sep 2016 18:08:50 GMT
+ADD file:c6c23585ab140b0b320d4e99bc1b0eb544c9e96c24d90fec5e069a6d57d335ca in / 
+# Fri, 23 Sep 2016 18:08:51 GMT
 CMD ["/bin/bash"]
-# Mon, 19 Sep 2016 20:04:06 GMT
+# Fri, 23 Sep 2016 19:46:08 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends ca-certificates git 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 19 Sep 2016 20:04:06 GMT
+# Fri, 23 Sep 2016 19:46:09 GMT
 ENV JULIA_PATH=/usr/local/julia
-# Wed, 21 Sep 2016 23:05:39 GMT
+# Fri, 23 Sep 2016 19:46:09 GMT
 ENV JULIA_VERSION=0.5.0
-# Wed, 21 Sep 2016 23:06:00 GMT
+# Fri, 23 Sep 2016 19:46:27 GMT
 RUN mkdir $JULIA_PATH 	&& apt-get update && apt-get install -y curl 	&& curl -sSL "https://julialang.s3.amazonaws.com/bin/linux/x64/${JULIA_VERSION%[.-]*}/julia-${JULIA_VERSION}-linux-x86_64.tar.gz" -o julia.tar.gz 	&& curl -sSL "https://julialang.s3.amazonaws.com/bin/linux/x64/${JULIA_VERSION%[.-]*}/julia-${JULIA_VERSION}-linux-x86_64.tar.gz.asc" -o julia.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 3673DF529D9049477F76B37566E3C7DC03D6E495 	&& gpg --batch --verify julia.tar.gz.asc julia.tar.gz 	&& rm -r "$GNUPGHOME" julia.tar.gz.asc 	&& tar -xzf julia.tar.gz -C $JULIA_PATH --strip-components 1 	&& rm -rf /var/lib/apt/lists/* julia.tar.gz*
-# Wed, 21 Sep 2016 23:06:01 GMT
+# Fri, 23 Sep 2016 19:46:27 GMT
 ENV PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 21 Sep 2016 23:06:01 GMT
+# Fri, 23 Sep 2016 19:46:28 GMT
 CMD ["julia"]
 ```
 
 -	Layers:
-	-	`sha256:2f5fbf61137445d75e8077a9ac5b9b89a2b8eda2dc7486ef42c93da4c5d8760b`  
-		Last Modified: Mon, 19 Sep 2016 17:44:31 GMT  
-		Size: 51.4 MB (51354569 bytes)  
+	-	`sha256:6a5a5368e0c2d3e5909184fa28ddfd56072e7ff3ee9a945876f7eee5896ef5bb`  
+		Last Modified: Fri, 23 Sep 2016 18:10:19 GMT  
+		Size: 51.4 MB (51354364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:adeb55ec4d2ee0f4b8b96028f38d5fda1dc879d99e52ab3c244101783353953b`  
-		Last Modified: Wed, 21 Sep 2016 23:06:18 GMT  
-		Size: 26.8 MB (26773548 bytes)  
+	-	`sha256:d9607e2e70459b52379fc860bfd676b2345dd1f1b50acf48a202530da999e7f4`  
+		Last Modified: Fri, 23 Sep 2016 19:46:44 GMT  
+		Size: 26.8 MB (26774365 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6d5cbf35fcc7be61e4446624da907bb95cae0276dd4b25d8f084976bb183518`  
-		Last Modified: Wed, 21 Sep 2016 23:06:33 GMT  
-		Size: 63.0 MB (63047857 bytes)  
+	-	`sha256:0e707bddf79ff09272566eaba890d98296d1050b16eb14b6dff60223bc4f21c8`  
+		Last Modified: Fri, 23 Sep 2016 19:46:59 GMT  
+		Size: 63.0 MB (63047937 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
