@@ -1,7 +1,7 @@
 ## `sonarqube:latest`
 
 ```console
-$ docker pull sonarqube@sha256:937550cead11cdb226a486364491b2af8a0cea973ef40fa134121e3cab300c19
+$ docker pull sonarqube@sha256:bd4e76dda3fd20fd3abe9e55826ec6d42db7c55572eb8beeddce6d077f0fea16
 ```
 
 -	Platforms:
@@ -11,96 +11,96 @@ $ docker pull sonarqube@sha256:937550cead11cdb226a486364491b2af8a0cea973ef40fa13
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **368.2 MB (368241749 bytes)**  
+-	Total Size: **368.2 MB (368241869 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a14fcad085d5030ebed8e40b0e5da4fc35cf0c7159533edeb6aa3c4ed660d90a`
+-	Image ID: `sha256:b81c88bdf1fc50ac99ca7df904ba244154d3d4f53a54b6b7420aa1fe9af5423b`
 -	Entrypoint: `[".\/bin\/run.sh"]`
 
 ```dockerfile
-# Mon, 19 Sep 2016 17:42:37 GMT
-ADD file:cae7a35a0d8c43d5ba00fa03413136b37e0a0bf8f4d5311dda779748e64ef425 in / 
-# Mon, 19 Sep 2016 17:42:37 GMT
+# Fri, 23 Sep 2016 18:08:50 GMT
+ADD file:c6c23585ab140b0b320d4e99bc1b0eb544c9e96c24d90fec5e069a6d57d335ca in / 
+# Fri, 23 Sep 2016 18:08:51 GMT
 CMD ["/bin/bash"]
-# Mon, 19 Sep 2016 17:46:27 GMT
+# Fri, 23 Sep 2016 18:25:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 19 Sep 2016 17:46:48 GMT
+# Fri, 23 Sep 2016 18:26:18 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 20 Sep 2016 04:55:27 GMT
+# Fri, 23 Sep 2016 19:29:52 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 20 Sep 2016 16:31:31 GMT
+# Fri, 23 Sep 2016 19:34:26 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 20 Sep 2016 16:31:32 GMT
+# Fri, 23 Sep 2016 19:34:26 GMT
 ENV LANG=C.UTF-8
-# Tue, 20 Sep 2016 16:31:32 GMT
+# Fri, 23 Sep 2016 19:34:27 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 20 Sep 2016 16:31:32 GMT
+# Fri, 23 Sep 2016 19:34:27 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Tue, 20 Sep 2016 16:31:33 GMT
+# Fri, 23 Sep 2016 19:34:27 GMT
 ENV JAVA_VERSION=8u102
-# Tue, 20 Sep 2016 16:31:33 GMT
+# Fri, 23 Sep 2016 19:34:28 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Tue, 20 Sep 2016 16:31:33 GMT
+# Fri, 23 Sep 2016 19:34:28 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 20 Sep 2016 16:32:38 GMT
+# Fri, 23 Sep 2016 19:35:33 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 20 Sep 2016 16:32:39 GMT
+# Fri, 23 Sep 2016 19:35:35 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 20 Sep 2016 18:44:13 GMT
+# Fri, 23 Sep 2016 23:40:33 GMT
 MAINTAINER David Gageot <david.gageot@sonarsource.com>
-# Tue, 20 Sep 2016 18:44:13 GMT
+# Fri, 23 Sep 2016 23:41:21 GMT
 ENV SONAR_VERSION=6.0 SONARQUBE_HOME=/opt/sonarqube SONARQUBE_JDBC_USERNAME=sonar SONARQUBE_JDBC_PASSWORD=sonar SONARQUBE_JDBC_URL=
-# Tue, 20 Sep 2016 18:44:14 GMT
+# Fri, 23 Sep 2016 23:41:22 GMT
 EXPOSE 9000/tcp
-# Wed, 21 Sep 2016 16:56:25 GMT
+# Fri, 23 Sep 2016 23:41:29 GMT
 RUN set -x     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys F1182E81C792928921DBCAB4CFCA4A29D26468DE     && cd /opt     && curl -o sonarqube.zip -fSL https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip     && curl -o sonarqube.zip.asc -fSL https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip.asc     && gpg --batch --verify sonarqube.zip.asc sonarqube.zip     && unzip sonarqube.zip     && mv sonarqube-$SONAR_VERSION sonarqube     && rm sonarqube.zip*     && rm -rf $SONARQUBE_HOME/bin/*
-# Wed, 21 Sep 2016 16:56:25 GMT
+# Fri, 23 Sep 2016 23:41:29 GMT
 VOLUME [/opt/sonarqube/data /opt/sonarqube/extensions]
-# Wed, 21 Sep 2016 16:56:26 GMT
+# Fri, 23 Sep 2016 23:41:30 GMT
 WORKDIR /opt/sonarqube
-# Wed, 21 Sep 2016 16:56:26 GMT
+# Fri, 23 Sep 2016 23:41:31 GMT
 COPY file:137c5d28bd342cc8742a0ad6123eb8bd930c44da4719a82c9d33387b567c147c in /opt/sonarqube/bin/ 
-# Wed, 21 Sep 2016 16:56:27 GMT
+# Fri, 23 Sep 2016 23:41:31 GMT
 ENTRYPOINT ["./bin/run.sh"]
 ```
 
 -	Layers:
-	-	`sha256:2f5fbf61137445d75e8077a9ac5b9b89a2b8eda2dc7486ef42c93da4c5d8760b`  
-		Last Modified: Mon, 19 Sep 2016 17:44:31 GMT  
-		Size: 51.4 MB (51354569 bytes)  
+	-	`sha256:6a5a5368e0c2d3e5909184fa28ddfd56072e7ff3ee9a945876f7eee5896ef5bb`  
+		Last Modified: Fri, 23 Sep 2016 18:10:19 GMT  
+		Size: 51.4 MB (51354364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9338b080890fe86641e5bb99e8cc0ca75a4b9aae160ef6f826a36865d53cc281`  
-		Last Modified: Mon, 19 Sep 2016 17:54:20 GMT  
-		Size: 18.5 MB (18527624 bytes)  
+	-	`sha256:7b9457ec39de00bc70af1c9631b9ae6ede5a3ab715e6492c0a2641868ec1deda`  
+		Last Modified: Fri, 23 Sep 2016 18:25:33 GMT  
+		Size: 18.5 MB (18528257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27e9f9640562cf88eb4fbb29ff94d3c527e1abcaada715ce9b71011b7b9cdbc7`  
-		Last Modified: Mon, 19 Sep 2016 17:55:02 GMT  
-		Size: 42.5 MB (42496798 bytes)  
+	-	`sha256:ff18e19c2db42055e6f34323700737bde3c819b413997cddace2c1b7180d7efd`  
+		Last Modified: Fri, 23 Sep 2016 18:26:43 GMT  
+		Size: 42.5 MB (42495967 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5bb34190d78de660a5162c939bf1b690a7aa136c429d2aafac110d76b7bcad3`  
-		Last Modified: Wed, 21 Sep 2016 16:59:32 GMT  
-		Size: 592.9 KB (592910 bytes)  
+	-	`sha256:edd38215a2fae624e391280d5d9edb6cdb993a0ee5f3acb2188819336f993e80`  
+		Last Modified: Fri, 23 Sep 2016 19:31:08 GMT  
+		Size: 593.0 KB (593001 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3c99c854a7534fbe1ce2ee13ec1522172b6b4fc8ef2c79ee47e4dc47bb9e6e3`  
-		Last Modified: Wed, 21 Sep 2016 16:59:31 GMT  
-		Size: 218.0 B  
+	-	`sha256:5b26cafa72d5c36eb885c0fa4d359dac87ce0ecbb1f8c8dbf8d7f17b4a7385c6`  
+		Last Modified: Fri, 23 Sep 2016 19:35:42 GMT  
+		Size: 219.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8843ac35975edea0b8abf9c6c70819188a606fd845de4333631de18997b86081`  
-		Last Modified: Wed, 21 Sep 2016 16:59:28 GMT  
-		Size: 241.0 B  
+	-	`sha256:f340301a2a0fd2ddb7dd16b2ea7e7319d473a865c7bc9f93aac4dfb5e9e3a665`  
+		Last Modified: Fri, 23 Sep 2016 19:35:42 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba41c7e179c2b55e4a4cdd7c6e1b993932e4cbdd309860d169799d1f92e7610a`  
-		Last Modified: Wed, 21 Sep 2016 17:00:06 GMT  
-		Size: 130.1 MB (130073726 bytes)  
+	-	`sha256:e8512ca758302270e4f0a519f8afd1e4aaab0bbdb9f4bb369d93e3a547e53bf4`  
+		Last Modified: Fri, 23 Sep 2016 19:36:13 GMT  
+		Size: 130.1 MB (130074162 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f56d642a190474a7297f62fe8ad3eb8a88a0094b558a47acc0fc2a10c1a7ab1`  
-		Last Modified: Wed, 21 Sep 2016 16:59:29 GMT  
-		Size: 284.2 KB (284198 bytes)  
+	-	`sha256:c76b0eeb6b4da36f6af1f62ec8b07597883176035553ff18633821edfd3750ad`  
+		Last Modified: Fri, 23 Sep 2016 19:35:43 GMT  
+		Size: 284.2 KB (284191 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e935aa0753a05acbc1f5a72c15d53ddc1fdf3328632a7f6e906d4a39e047a74`  
-		Last Modified: Wed, 21 Sep 2016 16:59:44 GMT  
+	-	`sha256:50fce4263d3bd79016659c985c61d3aad7d5d54e2aacc112685459f42191adb5`  
+		Last Modified: Fri, 23 Sep 2016 23:41:50 GMT  
 		Size: 124.9 MB (124911032 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:856e035113fc94f1313130de73fb6e3d87f9bd64d0b98ecfd9c82592bbefe7bb`  
-		Last Modified: Wed, 21 Sep 2016 16:59:28 GMT  
-		Size: 433.0 B  
+	-	`sha256:c0126a239d51c9d27d7ee365961deaf267b7cba6c43d902e349e441da23f55e9`  
+		Last Modified: Fri, 23 Sep 2016 23:41:40 GMT  
+		Size: 434.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

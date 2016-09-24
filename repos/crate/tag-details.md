@@ -275,7 +275,7 @@ CMD ["crate"]
 ## `crate:0.52`
 
 ```console
-$ docker pull crate@sha256:99f1978c124700725e59c3c66b42b8dc7d14a0890fae96f0923212e679908917
+$ docker pull crate@sha256:68d336d48c0a34b0794721d9667a1eac5f2d90d22c6c16f0f14f3be6334c2373
 ```
 
 -	Platforms:
@@ -285,116 +285,116 @@ $ docker pull crate@sha256:99f1978c124700725e59c3c66b42b8dc7d14a0890fae96f092321
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **181.0 MB (180953329 bytes)**  
+-	Total Size: **181.0 MB (180953619 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a29671bdbec05ec7f7403a7cfdab64d67b643ca97e095c20371190e9ff3d862c`
+-	Image ID: `sha256:88a381a0b3d0cb1d4e97693cff3cff8767aaccb6b100391f22a4ad56bdbcb357`
 -	Default Command: `["crate"]`
 
 ```dockerfile
-# Mon, 19 Sep 2016 17:42:37 GMT
-ADD file:cae7a35a0d8c43d5ba00fa03413136b37e0a0bf8f4d5311dda779748e64ef425 in / 
-# Mon, 19 Sep 2016 17:42:37 GMT
+# Fri, 23 Sep 2016 18:08:50 GMT
+ADD file:c6c23585ab140b0b320d4e99bc1b0eb544c9e96c24d90fec5e069a6d57d335ca in / 
+# Fri, 23 Sep 2016 18:08:51 GMT
 CMD ["/bin/bash"]
-# Mon, 19 Sep 2016 17:46:27 GMT
+# Fri, 23 Sep 2016 18:25:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 20 Sep 2016 16:30:49 GMT
+# Fri, 23 Sep 2016 19:32:51 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 20 Sep 2016 16:32:41 GMT
+# Fri, 23 Sep 2016 19:37:42 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 20 Sep 2016 16:32:41 GMT
+# Fri, 23 Sep 2016 19:37:42 GMT
 ENV LANG=C.UTF-8
-# Tue, 20 Sep 2016 16:32:42 GMT
+# Fri, 23 Sep 2016 19:37:43 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 20 Sep 2016 16:32:42 GMT
+# Fri, 23 Sep 2016 19:37:44 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Tue, 20 Sep 2016 16:32:42 GMT
+# Fri, 23 Sep 2016 19:37:44 GMT
 ENV JAVA_VERSION=8u102
-# Tue, 20 Sep 2016 16:32:42 GMT
+# Fri, 23 Sep 2016 19:37:44 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Tue, 20 Sep 2016 16:32:43 GMT
+# Fri, 23 Sep 2016 19:37:45 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 20 Sep 2016 16:33:06 GMT
+# Fri, 23 Sep 2016 19:38:04 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 20 Sep 2016 16:33:08 GMT
+# Fri, 23 Sep 2016 19:38:06 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 20 Sep 2016 17:50:14 GMT
+# Sat, 24 Sep 2016 00:23:20 GMT
 MAINTAINER Crate Technology GmbH <office@crate.io>
-# Tue, 20 Sep 2016 17:50:29 GMT
+# Sat, 24 Sep 2016 00:23:32 GMT
 RUN apt-get update &&     apt-get install -y python3 &&     rm -rf /var/lib/apt &&     ln -s /usr/bin/python3 /usr/bin/python
-# Tue, 20 Sep 2016 17:50:29 GMT
+# Sat, 24 Sep 2016 00:23:32 GMT
 ENV CRATE_VERSION=0.52.4
-# Tue, 20 Sep 2016 17:50:39 GMT
+# Sat, 24 Sep 2016 00:23:35 GMT
 RUN mkdir /crate &&   wget -nv -O - "https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz"   | tar -xzC /crate --strip-components=1
-# Tue, 20 Sep 2016 17:50:39 GMT
+# Sat, 24 Sep 2016 00:23:35 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 20 Sep 2016 17:50:40 GMT
+# Sat, 24 Sep 2016 00:23:35 GMT
 VOLUME [/data]
-# Tue, 20 Sep 2016 17:50:40 GMT
+# Sat, 24 Sep 2016 00:23:36 GMT
 ADD file:33e1eb95331f2fdac6f7aa4f37d1379542d54d333f63db873d8bfbf0aaa86e2d in /crate/config/crate.yml 
-# Tue, 20 Sep 2016 17:50:41 GMT
+# Sat, 24 Sep 2016 00:23:37 GMT
 ADD file:a3aa60dd23939bb1b0c1bf558d768d3f06cead16fd33d36cdad411bd43d16448 in /crate/config/logging.yml 
-# Tue, 20 Sep 2016 17:50:41 GMT
+# Sat, 24 Sep 2016 00:23:37 GMT
 WORKDIR /data
-# Tue, 20 Sep 2016 17:50:41 GMT
+# Sat, 24 Sep 2016 00:23:37 GMT
 EXPOSE 4200/tcp 4300/tcp
-# Tue, 20 Sep 2016 17:50:41 GMT
+# Sat, 24 Sep 2016 00:23:38 GMT
 CMD ["crate"]
 ```
 
 -	Layers:
-	-	`sha256:2f5fbf61137445d75e8077a9ac5b9b89a2b8eda2dc7486ef42c93da4c5d8760b`  
-		Last Modified: Mon, 19 Sep 2016 17:44:31 GMT  
-		Size: 51.4 MB (51354569 bytes)  
+	-	`sha256:6a5a5368e0c2d3e5909184fa28ddfd56072e7ff3ee9a945876f7eee5896ef5bb`  
+		Last Modified: Fri, 23 Sep 2016 18:10:19 GMT  
+		Size: 51.4 MB (51354364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9338b080890fe86641e5bb99e8cc0ca75a4b9aae160ef6f826a36865d53cc281`  
-		Last Modified: Mon, 19 Sep 2016 17:54:20 GMT  
-		Size: 18.5 MB (18527624 bytes)  
+	-	`sha256:7b9457ec39de00bc70af1c9631b9ae6ede5a3ab715e6492c0a2641868ec1deda`  
+		Last Modified: Fri, 23 Sep 2016 18:25:33 GMT  
+		Size: 18.5 MB (18528257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c87f2f89c161af8dfa0770ee0e44ec93a98d6c15e168d9f05dda67de7276cec1`  
-		Last Modified: Tue, 20 Sep 2016 17:51:51 GMT  
-		Size: 566.5 KB (566473 bytes)  
+	-	`sha256:d5cc639e6fca6aa608423c71badb1c40bacbd0b4a1bbe563b439d831a3c55298`  
+		Last Modified: Fri, 23 Sep 2016 19:33:38 GMT  
+		Size: 566.5 KB (566547 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99229495b0d91514a9718bfbf95be433fb260463d4e2752210bc575fc56bcb02`  
-		Last Modified: Tue, 20 Sep 2016 17:51:50 GMT  
+	-	`sha256:2cac98b7f5b9c75d78082095f3348899dc83c3d6f1968dc68877c9d32798f65d`  
+		Last Modified: Fri, 23 Sep 2016 19:38:15 GMT  
 		Size: 219.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6265be8411bd9cfcbfad197fa68f3e053a024c7c7a7928cb14c60c74b104387`  
-		Last Modified: Tue, 20 Sep 2016 17:51:48 GMT  
-		Size: 241.0 B  
+	-	`sha256:bf96dd67c9aae18b5b25c15de2a12d9cb64d6fb227e3f25fdb4e453da4293c64`  
+		Last Modified: Fri, 23 Sep 2016 19:38:14 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5657d2fa38148c2704ec1bb7dfa31601c92a495a70e830d99d64820512d64566`  
-		Last Modified: Tue, 20 Sep 2016 17:52:02 GMT  
-		Size: 53.4 MB (53401890 bytes)  
+	-	`sha256:ab05ba8362e2ac429a4c24286f80d2f623a6ba32184abfe76174e635304d7afa`  
+		Last Modified: Fri, 23 Sep 2016 19:38:25 GMT  
+		Size: 53.4 MB (53401902 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14ae83b1cf879f87ed280704ebddbd44a982952afe3eaec80ddfaceb0979bc82`  
-		Last Modified: Tue, 20 Sep 2016 17:51:47 GMT  
-		Size: 284.2 KB (284200 bytes)  
+	-	`sha256:fa7e8f9f253c0a41ebf41be1054ebb4c2b7e6d465bb59135f16a01614a7c8370`  
+		Last Modified: Fri, 23 Sep 2016 19:38:14 GMT  
+		Size: 284.2 KB (284172 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2f221e348edd9d590952a4b441c12ef8f1590270ed44b4e3d9a5eae69af1fc2`  
-		Last Modified: Tue, 20 Sep 2016 17:51:47 GMT  
-		Size: 9.5 MB (9505533 bytes)  
+	-	`sha256:c9f1a8ff52d355b9af0473a3f3bf18827f4a65b35989735b01ea860cfb630461`  
+		Last Modified: Sat, 24 Sep 2016 00:23:49 GMT  
+		Size: 9.5 MB (9505353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37d677b99ba015577e0a25fbd0241eed9d2cef506c6c579f18ab76f15e973250`  
-		Last Modified: Tue, 20 Sep 2016 17:51:50 GMT  
-		Size: 47.3 MB (47311871 bytes)  
+	-	`sha256:ad6873ae7b54d9cd7599c7797372ab85ce144eb4506c0fd005949340bbdfa134`  
+		Last Modified: Sat, 24 Sep 2016 00:23:54 GMT  
+		Size: 47.3 MB (47311853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:642283d6f0a1db839383a87d35346dc338079c32a9136a937e5b07ebea501bc1`  
-		Last Modified: Tue, 20 Sep 2016 17:51:43 GMT  
+	-	`sha256:abef1f414cdf1c22e9386b509525ea1ae9b378da2e5ccb036c7c59d53babfc1a`  
+		Last Modified: Sat, 24 Sep 2016 00:23:45 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e103e3480438eab12d9c850477bbaf0d47e41bb77a3fdf9690023585ebc7271c`  
-		Last Modified: Tue, 20 Sep 2016 17:51:45 GMT  
-		Size: 391.0 B  
+	-	`sha256:bc319924cd086ca17e1ef49c16fb8c74f0593c4a6d9b0921f961d25d7bea28ac`  
+		Last Modified: Sat, 24 Sep 2016 00:23:45 GMT  
+		Size: 392.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:094a624b1c11dcd356da6cb6dc43f7dab9d9566216370a26c01252aa78b5169a`  
-		Last Modified: Tue, 20 Sep 2016 17:51:44 GMT  
+	-	`sha256:27b544b0d50cb11057b6b0b5e159446d8f89dcd7479ebc4fbae2c475b0363452`  
+		Last Modified: Sat, 24 Sep 2016 00:23:45 GMT  
 		Size: 92.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `crate:0.52.4`
 
 ```console
-$ docker pull crate@sha256:99f1978c124700725e59c3c66b42b8dc7d14a0890fae96f0923212e679908917
+$ docker pull crate@sha256:68d336d48c0a34b0794721d9667a1eac5f2d90d22c6c16f0f14f3be6334c2373
 ```
 
 -	Platforms:
@@ -404,108 +404,108 @@ $ docker pull crate@sha256:99f1978c124700725e59c3c66b42b8dc7d14a0890fae96f092321
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **181.0 MB (180953329 bytes)**  
+-	Total Size: **181.0 MB (180953619 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a29671bdbec05ec7f7403a7cfdab64d67b643ca97e095c20371190e9ff3d862c`
+-	Image ID: `sha256:88a381a0b3d0cb1d4e97693cff3cff8767aaccb6b100391f22a4ad56bdbcb357`
 -	Default Command: `["crate"]`
 
 ```dockerfile
-# Mon, 19 Sep 2016 17:42:37 GMT
-ADD file:cae7a35a0d8c43d5ba00fa03413136b37e0a0bf8f4d5311dda779748e64ef425 in / 
-# Mon, 19 Sep 2016 17:42:37 GMT
+# Fri, 23 Sep 2016 18:08:50 GMT
+ADD file:c6c23585ab140b0b320d4e99bc1b0eb544c9e96c24d90fec5e069a6d57d335ca in / 
+# Fri, 23 Sep 2016 18:08:51 GMT
 CMD ["/bin/bash"]
-# Mon, 19 Sep 2016 17:46:27 GMT
+# Fri, 23 Sep 2016 18:25:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 20 Sep 2016 16:30:49 GMT
+# Fri, 23 Sep 2016 19:32:51 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 20 Sep 2016 16:32:41 GMT
+# Fri, 23 Sep 2016 19:37:42 GMT
 RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 20 Sep 2016 16:32:41 GMT
+# Fri, 23 Sep 2016 19:37:42 GMT
 ENV LANG=C.UTF-8
-# Tue, 20 Sep 2016 16:32:42 GMT
+# Fri, 23 Sep 2016 19:37:43 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 20 Sep 2016 16:32:42 GMT
+# Fri, 23 Sep 2016 19:37:44 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Tue, 20 Sep 2016 16:32:42 GMT
+# Fri, 23 Sep 2016 19:37:44 GMT
 ENV JAVA_VERSION=8u102
-# Tue, 20 Sep 2016 16:32:42 GMT
+# Fri, 23 Sep 2016 19:37:44 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Tue, 20 Sep 2016 16:32:43 GMT
+# Fri, 23 Sep 2016 19:37:45 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 20 Sep 2016 16:33:06 GMT
+# Fri, 23 Sep 2016 19:38:04 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 20 Sep 2016 16:33:08 GMT
+# Fri, 23 Sep 2016 19:38:06 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 20 Sep 2016 17:50:14 GMT
+# Sat, 24 Sep 2016 00:23:20 GMT
 MAINTAINER Crate Technology GmbH <office@crate.io>
-# Tue, 20 Sep 2016 17:50:29 GMT
+# Sat, 24 Sep 2016 00:23:32 GMT
 RUN apt-get update &&     apt-get install -y python3 &&     rm -rf /var/lib/apt &&     ln -s /usr/bin/python3 /usr/bin/python
-# Tue, 20 Sep 2016 17:50:29 GMT
+# Sat, 24 Sep 2016 00:23:32 GMT
 ENV CRATE_VERSION=0.52.4
-# Tue, 20 Sep 2016 17:50:39 GMT
+# Sat, 24 Sep 2016 00:23:35 GMT
 RUN mkdir /crate &&   wget -nv -O - "https://cdn.crate.io/downloads/releases/crate-$CRATE_VERSION.tar.gz"   | tar -xzC /crate --strip-components=1
-# Tue, 20 Sep 2016 17:50:39 GMT
+# Sat, 24 Sep 2016 00:23:35 GMT
 ENV PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 20 Sep 2016 17:50:40 GMT
+# Sat, 24 Sep 2016 00:23:35 GMT
 VOLUME [/data]
-# Tue, 20 Sep 2016 17:50:40 GMT
+# Sat, 24 Sep 2016 00:23:36 GMT
 ADD file:33e1eb95331f2fdac6f7aa4f37d1379542d54d333f63db873d8bfbf0aaa86e2d in /crate/config/crate.yml 
-# Tue, 20 Sep 2016 17:50:41 GMT
+# Sat, 24 Sep 2016 00:23:37 GMT
 ADD file:a3aa60dd23939bb1b0c1bf558d768d3f06cead16fd33d36cdad411bd43d16448 in /crate/config/logging.yml 
-# Tue, 20 Sep 2016 17:50:41 GMT
+# Sat, 24 Sep 2016 00:23:37 GMT
 WORKDIR /data
-# Tue, 20 Sep 2016 17:50:41 GMT
+# Sat, 24 Sep 2016 00:23:37 GMT
 EXPOSE 4200/tcp 4300/tcp
-# Tue, 20 Sep 2016 17:50:41 GMT
+# Sat, 24 Sep 2016 00:23:38 GMT
 CMD ["crate"]
 ```
 
 -	Layers:
-	-	`sha256:2f5fbf61137445d75e8077a9ac5b9b89a2b8eda2dc7486ef42c93da4c5d8760b`  
-		Last Modified: Mon, 19 Sep 2016 17:44:31 GMT  
-		Size: 51.4 MB (51354569 bytes)  
+	-	`sha256:6a5a5368e0c2d3e5909184fa28ddfd56072e7ff3ee9a945876f7eee5896ef5bb`  
+		Last Modified: Fri, 23 Sep 2016 18:10:19 GMT  
+		Size: 51.4 MB (51354364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9338b080890fe86641e5bb99e8cc0ca75a4b9aae160ef6f826a36865d53cc281`  
-		Last Modified: Mon, 19 Sep 2016 17:54:20 GMT  
-		Size: 18.5 MB (18527624 bytes)  
+	-	`sha256:7b9457ec39de00bc70af1c9631b9ae6ede5a3ab715e6492c0a2641868ec1deda`  
+		Last Modified: Fri, 23 Sep 2016 18:25:33 GMT  
+		Size: 18.5 MB (18528257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c87f2f89c161af8dfa0770ee0e44ec93a98d6c15e168d9f05dda67de7276cec1`  
-		Last Modified: Tue, 20 Sep 2016 17:51:51 GMT  
-		Size: 566.5 KB (566473 bytes)  
+	-	`sha256:d5cc639e6fca6aa608423c71badb1c40bacbd0b4a1bbe563b439d831a3c55298`  
+		Last Modified: Fri, 23 Sep 2016 19:33:38 GMT  
+		Size: 566.5 KB (566547 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:99229495b0d91514a9718bfbf95be433fb260463d4e2752210bc575fc56bcb02`  
-		Last Modified: Tue, 20 Sep 2016 17:51:50 GMT  
+	-	`sha256:2cac98b7f5b9c75d78082095f3348899dc83c3d6f1968dc68877c9d32798f65d`  
+		Last Modified: Fri, 23 Sep 2016 19:38:15 GMT  
 		Size: 219.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d6265be8411bd9cfcbfad197fa68f3e053a024c7c7a7928cb14c60c74b104387`  
-		Last Modified: Tue, 20 Sep 2016 17:51:48 GMT  
-		Size: 241.0 B  
+	-	`sha256:bf96dd67c9aae18b5b25c15de2a12d9cb64d6fb227e3f25fdb4e453da4293c64`  
+		Last Modified: Fri, 23 Sep 2016 19:38:14 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5657d2fa38148c2704ec1bb7dfa31601c92a495a70e830d99d64820512d64566`  
-		Last Modified: Tue, 20 Sep 2016 17:52:02 GMT  
-		Size: 53.4 MB (53401890 bytes)  
+	-	`sha256:ab05ba8362e2ac429a4c24286f80d2f623a6ba32184abfe76174e635304d7afa`  
+		Last Modified: Fri, 23 Sep 2016 19:38:25 GMT  
+		Size: 53.4 MB (53401902 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:14ae83b1cf879f87ed280704ebddbd44a982952afe3eaec80ddfaceb0979bc82`  
-		Last Modified: Tue, 20 Sep 2016 17:51:47 GMT  
-		Size: 284.2 KB (284200 bytes)  
+	-	`sha256:fa7e8f9f253c0a41ebf41be1054ebb4c2b7e6d465bb59135f16a01614a7c8370`  
+		Last Modified: Fri, 23 Sep 2016 19:38:14 GMT  
+		Size: 284.2 KB (284172 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2f221e348edd9d590952a4b441c12ef8f1590270ed44b4e3d9a5eae69af1fc2`  
-		Last Modified: Tue, 20 Sep 2016 17:51:47 GMT  
-		Size: 9.5 MB (9505533 bytes)  
+	-	`sha256:c9f1a8ff52d355b9af0473a3f3bf18827f4a65b35989735b01ea860cfb630461`  
+		Last Modified: Sat, 24 Sep 2016 00:23:49 GMT  
+		Size: 9.5 MB (9505353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37d677b99ba015577e0a25fbd0241eed9d2cef506c6c579f18ab76f15e973250`  
-		Last Modified: Tue, 20 Sep 2016 17:51:50 GMT  
-		Size: 47.3 MB (47311871 bytes)  
+	-	`sha256:ad6873ae7b54d9cd7599c7797372ab85ce144eb4506c0fd005949340bbdfa134`  
+		Last Modified: Sat, 24 Sep 2016 00:23:54 GMT  
+		Size: 47.3 MB (47311853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:642283d6f0a1db839383a87d35346dc338079c32a9136a937e5b07ebea501bc1`  
-		Last Modified: Tue, 20 Sep 2016 17:51:43 GMT  
+	-	`sha256:abef1f414cdf1c22e9386b509525ea1ae9b378da2e5ccb036c7c59d53babfc1a`  
+		Last Modified: Sat, 24 Sep 2016 00:23:45 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e103e3480438eab12d9c850477bbaf0d47e41bb77a3fdf9690023585ebc7271c`  
-		Last Modified: Tue, 20 Sep 2016 17:51:45 GMT  
-		Size: 391.0 B  
+	-	`sha256:bc319924cd086ca17e1ef49c16fb8c74f0593c4a6d9b0921f961d25d7bea28ac`  
+		Last Modified: Sat, 24 Sep 2016 00:23:45 GMT  
+		Size: 392.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:094a624b1c11dcd356da6cb6dc43f7dab9d9566216370a26c01252aa78b5169a`  
-		Last Modified: Tue, 20 Sep 2016 17:51:44 GMT  
+	-	`sha256:27b544b0d50cb11057b6b0b5e159446d8f89dcd7479ebc4fbae2c475b0363452`  
+		Last Modified: Sat, 24 Sep 2016 00:23:45 GMT  
 		Size: 92.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
