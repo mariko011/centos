@@ -1,7 +1,7 @@
 ## `rocket.chat:latest`
 
 ```console
-$ docker pull rocket.chat@sha256:53ea137311ac2fae7428023377c3daa94f8c15b26420007553afa73349c45929
+$ docker pull rocket.chat@sha256:65bb17b9e55b8fb980404d2a380801a25e1015c3c11ff41c6352af51f2ea0e2b
 ```
 
 -	Platforms:
@@ -11,80 +11,80 @@ $ docker pull rocket.chat@sha256:53ea137311ac2fae7428023377c3daa94f8c15b26420007
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **161.3 MB (161282113 bytes)**  
+-	Total Size: **160.7 MB (160721508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bff39fc8d7a0e6a3afab8156775ee04e517d2b8ebd09fde9d2807633bade3e8d`
+-	Image ID: `sha256:d67c4ebcb58673345ea98110186720c910aa6a5a5735cd65f6312a2e108b5791`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
-# Mon, 19 Sep 2016 17:42:37 GMT
-ADD file:cae7a35a0d8c43d5ba00fa03413136b37e0a0bf8f4d5311dda779748e64ef425 in / 
-# Mon, 19 Sep 2016 17:42:37 GMT
+# Fri, 23 Sep 2016 18:08:50 GMT
+ADD file:c6c23585ab140b0b320d4e99bc1b0eb544c9e96c24d90fec5e069a6d57d335ca in / 
+# Fri, 23 Sep 2016 18:08:51 GMT
 CMD ["/bin/bash"]
-# Mon, 19 Sep 2016 17:46:27 GMT
+# Fri, 23 Sep 2016 18:25:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 20 Sep 2016 16:47:31 GMT
+# Fri, 23 Sep 2016 20:53:33 GMT
 RUN set -ex   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";   done
-# Tue, 20 Sep 2016 16:48:17 GMT
+# Fri, 23 Sep 2016 20:54:54 GMT
 ENV NPM_CONFIG_LOGLEVEL=info
-# Tue, 20 Sep 2016 16:48:18 GMT
+# Fri, 23 Sep 2016 20:54:54 GMT
 ENV NODE_VERSION=4.5.0
-# Tue, 20 Sep 2016 16:48:27 GMT
+# Fri, 23 Sep 2016 20:55:03 GMT
 RUN buildDeps='xz-utils'     && set -x     && apt-get update && apt-get install -y $buildDeps --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz"     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1     && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && apt-get purge -y --auto-remove $buildDeps     && ln -s /usr/local/bin/node /usr/local/bin/nodejs
-# Tue, 20 Sep 2016 16:48:30 GMT
+# Fri, 23 Sep 2016 20:55:04 GMT
 CMD ["node"]
-# Wed, 21 Sep 2016 23:31:21 GMT
+# Mon, 26 Sep 2016 16:56:21 GMT
 MAINTAINER buildmaster@rocket.chat
-# Wed, 21 Sep 2016 23:31:22 GMT
+# Mon, 26 Sep 2016 16:56:22 GMT
 RUN groupadd -r rocketchat &&  useradd -r -g rocketchat rocketchat
-# Wed, 21 Sep 2016 23:31:22 GMT
+# Mon, 26 Sep 2016 16:56:22 GMT
 VOLUME [/app/uploads]
-# Wed, 21 Sep 2016 23:31:25 GMT
+# Mon, 26 Sep 2016 16:56:25 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104
-# Wed, 21 Sep 2016 23:31:25 GMT
-ENV RC_VERSION=0.40.0
-# Wed, 21 Sep 2016 23:31:25 GMT
+# Mon, 26 Sep 2016 16:56:25 GMT
+ENV RC_VERSION=0.40.1
+# Mon, 26 Sep 2016 16:56:25 GMT
 WORKDIR /app
-# Wed, 21 Sep 2016 23:31:51 GMT
+# Mon, 26 Sep 2016 16:56:51 GMT
 RUN curl -fSL "https://rocket.chat/releases/${RC_VERSION}/download" -o rocket.chat.tgz &&  curl -fSL "https://rocket.chat/releases/${RC_VERSION}/asc" -o rocket.chat.tgz.asc &&  gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz &&  tar zxvf rocket.chat.tgz &&  rm rocket.chat.tgz rocket.chat.tgz.asc &&  cd bundle/programs/server &&  npm install
-# Wed, 21 Sep 2016 23:31:52 GMT
+# Mon, 26 Sep 2016 16:56:52 GMT
 USER [rocketchat]
-# Wed, 21 Sep 2016 23:31:52 GMT
+# Mon, 26 Sep 2016 16:56:53 GMT
 WORKDIR /app/bundle
-# Wed, 21 Sep 2016 23:31:53 GMT
+# Mon, 26 Sep 2016 16:56:53 GMT
 ENV MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000 Accounts_AvatarStorePath=/app/uploads
-# Wed, 21 Sep 2016 23:31:53 GMT
+# Mon, 26 Sep 2016 16:56:53 GMT
 EXPOSE 3000/tcp
-# Wed, 21 Sep 2016 23:31:53 GMT
+# Mon, 26 Sep 2016 16:56:54 GMT
 CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:2f5fbf61137445d75e8077a9ac5b9b89a2b8eda2dc7486ef42c93da4c5d8760b`  
-		Last Modified: Mon, 19 Sep 2016 17:44:31 GMT  
-		Size: 51.4 MB (51354569 bytes)  
+	-	`sha256:6a5a5368e0c2d3e5909184fa28ddfd56072e7ff3ee9a945876f7eee5896ef5bb`  
+		Last Modified: Fri, 23 Sep 2016 18:10:19 GMT  
+		Size: 51.4 MB (51354364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9338b080890fe86641e5bb99e8cc0ca75a4b9aae160ef6f826a36865d53cc281`  
-		Last Modified: Mon, 19 Sep 2016 17:54:20 GMT  
-		Size: 18.5 MB (18527624 bytes)  
+	-	`sha256:7b9457ec39de00bc70af1c9631b9ae6ede5a3ab715e6492c0a2641868ec1deda`  
+		Last Modified: Fri, 23 Sep 2016 18:25:33 GMT  
+		Size: 18.5 MB (18528257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07a1b758f2aa154857cfef1a4c0c5083735a194a593a5e04337ca47576627697`  
-		Last Modified: Tue, 20 Sep 2016 17:53:36 GMT  
-		Size: 81.4 KB (81385 bytes)  
+	-	`sha256:22cf98377d301224c76357ac0c702e179f8eadeb311ba0bb6e8e96a0f78f088a`  
+		Last Modified: Fri, 23 Sep 2016 20:53:50 GMT  
+		Size: 88.8 KB (88821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c9ed5e61d3aadd408ac4e7a1660d255934c492f6b68684455c9ecb6dd1dc67a`  
-		Last Modified: Tue, 20 Sep 2016 17:58:37 GMT  
-		Size: 12.3 MB (12272821 bytes)  
+	-	`sha256:09b76fbb6cf5a1661e37c97b93c568c5a180b0adaa5f222eed83e66b876c6d23`  
+		Last Modified: Fri, 23 Sep 2016 20:55:16 GMT  
+		Size: 12.3 MB (12272898 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f80af1c799eff801537decc6162bcf576659b2178f79bf813a25fb6914ebfe1`  
-		Last Modified: Wed, 21 Sep 2016 23:32:01 GMT  
-		Size: 2.0 KB (2043 bytes)  
+	-	`sha256:125621d53fac75ca94083f81c13f18ac4609a18add0675b02d4507242d111d68`  
+		Last Modified: Mon, 26 Sep 2016 16:57:03 GMT  
+		Size: 2.0 KB (2047 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de8d7b64a122a567bbc673308390ef4cf376339d84ff5e7f8288329043481467`  
-		Last Modified: Wed, 21 Sep 2016 23:32:01 GMT  
-		Size: 78.8 KB (78797 bytes)  
+	-	`sha256:e5985b636df6b7cd1dfb317e88f82de4f1978f3097a42bd39f2989adbf80e0ef`  
+		Last Modified: Mon, 26 Sep 2016 16:57:02 GMT  
+		Size: 86.2 KB (86247 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1410610282249a583aaf7f6939cd604fbf8de340675ae271080c36981c0c4669`  
-		Last Modified: Wed, 21 Sep 2016 23:32:21 GMT  
-		Size: 79.0 MB (78964874 bytes)  
+	-	`sha256:706cfa8658cbd1abf0858360402c6796bf8df8ad45a0ad6425debc0a6c1605a5`  
+		Last Modified: Mon, 26 Sep 2016 16:57:24 GMT  
+		Size: 78.4 MB (78388874 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
