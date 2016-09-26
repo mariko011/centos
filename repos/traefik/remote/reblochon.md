@@ -1,7 +1,7 @@
 ## `traefik:reblochon`
 
 ```console
-$ docker pull traefik@sha256:534c7420c7ff7c53d15f90f605f5631e20a210ff6ead6c6c65f6e32f30a1355f
+$ docker pull traefik@sha256:9bfbc036eecb73b60d9a4ecb07eb9b7f90dec37a8112326151b4cd2ef3fbd7f3
 ```
 
 -	Platforms:
@@ -9,30 +9,30 @@ $ docker pull traefik@sha256:534c7420c7ff7c53d15f90f605f5631e20a210ff6ead6c6c65f
 
 ### `traefik:reblochon` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.7 MB (6695386 bytes)**  
+-	Total Size: **6.7 MB (6696297 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc07acffadc14c097aa07a79366baa91a2c008e1dd24d6af65c6138e5d208144`
+-	Image ID: `sha256:b484f287e16089871d375770bb57c18b0df79b53d6d30b4d4a51c7e3da0f5712`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 20:30:37 GMT
-COPY file:cf2d208eee34f301179807ffea35c3a9cceb36e80d7484fadabbb6cda7c15bfb in /etc/ssl/certs/
-# Wed, 03 Aug 2016 20:32:04 GMT
-COPY file:b96b6b3feacf1faf4545f469fd1c3296e727f5200eab6c5844f3ff9af3e2debc in /
-# Wed, 03 Aug 2016 20:32:10 GMT
+# Tue, 30 Aug 2016 17:47:39 GMT
+COPY file:cf2d208eee34f301179807ffea35c3a9cceb36e80d7484fadabbb6cda7c15bfb in /etc/ssl/certs/ 
+# Mon, 26 Sep 2016 20:43:56 GMT
+COPY file:74f4dad4add12da450dc791f785641321170d0758990b7114eeae35d2a481cd0 in / 
+# Mon, 26 Sep 2016 20:43:57 GMT
 EXPOSE 80/tcp
-# Wed, 03 Aug 2016 20:32:11 GMT
-ENTRYPOINT &{["/traefik"]}
+# Mon, 26 Sep 2016 20:43:57 GMT
+ENTRYPOINT ["/traefik"]
 ```
 
 -	Layers:
-	-	`sha256:984f196cdb70cc4fdb7384fcba7926a254a4cc5a9fa188d175dd2d5ffa64ed93`  
-		Last Modified: Thu, 09 Jun 2016 22:14:52 GMT  
-		Size: 153.8 KB (153793 bytes)  
+	-	`sha256:895d64059c56a06236d7b4d0c91cdeb1601186b9d6f771b0575ca7d034406d17`  
+		Last Modified: Mon, 26 Sep 2016 20:44:06 GMT  
+		Size: 153.8 KB (153795 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ced881399a9de516a2c86f16ab62d42081c77c3d3a686edb6a488991659b57a`  
-		Last Modified: Wed, 03 Aug 2016 20:32:24 GMT  
-		Size: 6.5 MB (6541593 bytes)  
+	-	`sha256:00f2e3c65ef44f67ba0963b931fb369fc8ac53c63a7922ce32542e0b0b82eaa6`  
+		Last Modified: Mon, 26 Sep 2016 20:44:08 GMT  
+		Size: 6.5 MB (6542502 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
