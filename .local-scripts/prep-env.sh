@@ -9,8 +9,13 @@ if [ -e /etc/apt/sources.list ]; then
 			-e 'p; s/^deb /deb-src /' \
 			'{}' +
 
-	if ! apt-get update -qq; then
-		# retry up to one time
-		apt-get update -qq
-	fi
+	# retry a few times if "apt-get update" fails
+	tries=5
+	while ! apt-get update -qq; do
+		(( --tries )) || :
+		if [ "$tries" -le 0 ]; then
+			echo >&2 'error: failed to "apt-get update" after multiple attempts'
+			exit 1
+		fi
+	done
 fi
