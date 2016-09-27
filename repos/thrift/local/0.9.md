@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f54f50c48ba442f8f0bde98713e566c9d979cd39a66f1ec309de83638e7646ef`
-- Created: `2016-08-02T00:01:33.452064786Z`
+- Image ID: `sha256:8c441d15e2302e9b525a5fcfb0ceda5f184211f6af568b9dd09ee9c7c9a1b936`
+- Created: `2016-09-20T00:49:56.926239193Z`
 - Arch: `linux`/`amd64`
 - Command: `["thrift"]`
 - Environment:
@@ -539,12 +539,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gcc-4.7/4.7.2-5/
 - https://sources.debian.net/src/gcc-4.7/4.7.2-5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gnupg=1.4.12-7+deb7u7`
+### `dpkg` source package: `gnupg=1.4.12-7+deb7u8`
 
 Binary Packages:
 
-- `gnupg=1.4.12-7+deb7u7`
-- `gpgv=1.4.12-7+deb7u7`
+- `gnupg=1.4.12-7+deb7u8`
+- `gpgv=1.4.12-7+deb7u8`
 
 Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/copyright`)
 
@@ -554,16 +554,16 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/c
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg=1.4.12-7+deb7u7
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.12-7+deb7u7.dsc' gnupg_1.4.12-7+deb7u7.dsc 2322 SHA256:edf571e8ebcdb13404c347d5e51041814eb3d1b1b1d9d02e4b18e84b1c90f831
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.12.orig.tar.gz' gnupg_1.4.12.orig.tar.gz 4939171 SHA256:bb94222fa263e55a5096fdc1c6cd60e9992602ce5067bc453a4ada77bb31e367
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.12-7+deb7u7.debian.tar.gz' gnupg_1.4.12-7+deb7u7.debian.tar.gz 120475 SHA256:0f9b3f60f6f3d3925f30cef59bdee2fdf3e06930cd00b396f4338b14aee0aa82
+$ apt-get source -qq --print-uris gnupg=1.4.12-7+deb7u8
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12-7+deb7u8.dsc' gnupg_1.4.12-7+deb7u8.dsc 2306 SHA256:2b6afe20bfe9da633bf3e81b669663c2a8285521680e1d8bad5b46d93fb2df3a
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12.orig.tar.gz' gnupg_1.4.12.orig.tar.gz 4939171 SHA256:bb94222fa263e55a5096fdc1c6cd60e9992602ce5067bc453a4ada77bb31e367
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12-7+deb7u8.debian.tar.gz' gnupg_1.4.12-7+deb7u8.debian.tar.gz 122627 SHA256:1ae5183aa658be8f611a50040aa3edb7e870b753a81b251909384b5e1d75be21
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u7/
-- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u7/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u8/
+- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls26=2.12.20-8+deb7u5`
 
@@ -737,11 +737,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/iproute/20120521-3/
 - https://sources.debian.net/src/iproute/20120521-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libgcrypt11=1.5.0-5+deb7u4`
+### `dpkg` source package: `libgcrypt11=1.5.0-5+deb7u5`
 
 Binary Packages:
 
-- `libgcrypt11:amd64=1.5.0-5+deb7u4`
+- `libgcrypt11:amd64=1.5.0-5+deb7u5`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt11/copyright`)
 
@@ -751,16 +751,16 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt11/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libgcrypt11=1.5.0-5+deb7u4
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt11/libgcrypt11_1.5.0-5+deb7u4.dsc' libgcrypt11_1.5.0-5+deb7u4.dsc 2474 SHA256:7f3aa3d224ebc3f624a59956a9b392a9d4a48c6a12a64cc9ea56a0ef419438d2
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt11/libgcrypt11_1.5.0.orig.tar.bz2' libgcrypt11_1.5.0.orig.tar.bz2 1433506 SHA256:4b62fc516004940a0571025401a0581d49199f1a76dfb5ce6fd63f50db8173fa
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt11/libgcrypt11_1.5.0-5+deb7u4.debian.tar.gz' libgcrypt11_1.5.0-5+deb7u4.debian.tar.gz 31590 SHA256:45d14d1d4fdc1b8927bd3a2df663e237a6a0124896c2b4ffe2f1a2c7e8c85240
+$ apt-get source -qq --print-uris libgcrypt11=1.5.0-5+deb7u5
+'http://security.debian.org/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0-5+deb7u5.dsc' libgcrypt11_1.5.0-5+deb7u5.dsc 2491 SHA256:9ea67ebeb8ccca5d0ef8302e93612fbc97c9151a08500a5cbcb379ebd66d0352
+'http://security.debian.org/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0.orig.tar.bz2' libgcrypt11_1.5.0.orig.tar.bz2 1433506 SHA256:4b62fc516004940a0571025401a0581d49199f1a76dfb5ce6fd63f50db8173fa
+'http://security.debian.org/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0-5+deb7u5.debian.tar.gz' libgcrypt11_1.5.0-5+deb7u5.debian.tar.gz 35373 SHA256:6f193b37ab6779b13b217f093ee773311f34978ddbfff102216206639769c48c
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libgcrypt11/1.5.0-5+deb7u4/
-- https://sources.debian.net/src/libgcrypt11/1.5.0-5+deb7u4/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libgcrypt11/1.5.0-5+deb7u5/
+- https://sources.debian.net/src/libgcrypt11/1.5.0-5+deb7u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.10-3.1`
 
