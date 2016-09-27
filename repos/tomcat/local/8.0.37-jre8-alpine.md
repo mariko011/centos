@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c08c5791368a1601cf5b04365eae7c44e373d536833f1345713c17404b80a7c9`
-- Created: `2016-09-20T05:12:35.846025465Z`
+- Image ID: `sha256:4a33154772109862df843291b2b1f0061b9afb9675156c8963472307137b3ff9`
+- Created: `2016-09-26T16:59:13.889842568Z`
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
 - Environment:
@@ -17,4 +17,5 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=8`
   - `TOMCAT_VERSION=8.0.37`
-  - `TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.37/bin/apache-tomcat-8.0.37.tar.gz`
+  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.37/bin/apache-tomcat-8.0.37.tar.gz`
+  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.37/bin/apache-tomcat-8.0.37.tar.gz.asc`

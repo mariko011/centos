@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8f4c532a415e30747260797acff8fcb8de7d8e6c34bd94bfca0072e88df49417`
-- Created: `2016-09-20T18:50:19.797963326Z`
+- Image ID: `sha256:871f8c6211e4eaa4025b4d84f1a630f62404b968ee1f8e79e90b70f5d026d365`
+- Created: `2016-09-23T23:51:59.617889421Z`
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
 - Environment:
@@ -16,10 +16,11 @@
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
-  - `OPENSSL_VERSION=1.0.2h-1`
+  - `OPENSSL_VERSION=1.0.2i-1`
   - `TOMCAT_MAJOR=7`
   - `TOMCAT_VERSION=7.0.72`
-  - `TOMCAT_TGZ_URL=https://www.apache.org/dist/tomcat/tomcat-7/v7.0.72/bin/apache-tomcat-7.0.72.tar.gz`
+  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-7/v7.0.72/bin/apache-tomcat-7.0.72.tar.gz`
+  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-7/v7.0.72/bin/apache-tomcat-7.0.72.tar.gz.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2300,54 +2301,32 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u2/
 - https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb8u3`
+### `dpkg` source package: `openssl=1.0.1t-1+deb8u4`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1t-1+deb8u3`
+- `libssl1.0.0:amd64=1.0.1t-1+deb8u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u3
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u3.dsc' openssl_1.0.1t-1+deb8u3.dsc 2255 SHA256:aad37a98b1fd87c5ba5ae8fd724655cdbdbd9fd4c58818858c57045a36c02ff6
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u3.debian.tar.xz' openssl_1.0.1t-1+deb8u3.debian.tar.xz 97104 SHA256:fb078fe66d58cf3ef6606c1470b5dc7c8a3ae57bed669d436d26592f82175d24
-```
 
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u3/
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u3/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `openssl=1.0.2h-1`
+### `dpkg` source package: `openssl=1.0.2i-1`
 
 Binary Packages:
 
-- `libssl1.0.2:amd64=1.0.2h-1`
-- `openssl=1.0.2h-1`
+- `libssl1.0.2:amd64=1.0.2i-1`
+- `openssl=1.0.2i-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.2h-1
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.2h-1.dsc' openssl_1.0.2h-1.dsc 2303 SHA256:deca464d2afbc06dd8dc06ffa33d2673fd36325417a8d6ff593e2fdf5628a992
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.2h.orig.tar.gz' openssl_1.0.2h.orig.tar.gz 5274412 SHA256:1d4007e53aad94a5b2002fe045ee7bb0b3d98f1a47f8b2bc851dcd1c74332919
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.2h-1.debian.tar.xz' openssl_1.0.2h-1.debian.tar.xz 76440 SHA256:0301f727deaf82d1c0dfc71b33821b1fd7a8c2a55f50fcb98e999d6e33818830
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssl/1.0.2h-1/
-- https://sources.debian.net/src/openssl/1.0.2h-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
