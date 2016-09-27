@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bc3dde59966ad083fbe71c5cc6c92f522fca6f57b3b60e0fe2f46afd448189d6`
-- Created: `2016-09-19T18:06:33.481910431Z`
+- Image ID: `sha256:ac3d2088aed6640a91d36a98f5a2ed4431c8717ae3d107f221d8a533c2ad0861`
+- Created: `2016-09-26T22:38:32.741842666Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["telegraf"]`
@@ -1008,14 +1008,8 @@ Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris isc-dhcp=4.2.4-7ubuntu12.6
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.6.dsc' isc-dhcp_4.2.4-7ubuntu12.6.dsc 2806 SHA256:97c3415f9e053ef1d43a186f018685ecd053b7a88238faa84b66ecbbdebc4be1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.6.debian.tar.xz' isc-dhcp_4.2.4-7ubuntu12.6.debian.tar.xz 107952 SHA256:862195056d4aca81916f2e3d3a4a694c6e376cecc7378ec23d2a8e98d92b805f
-```
 
 ### `dpkg` source package: `json-c=0.11-3ubuntu1.2`
 
@@ -2030,19 +2024,25 @@ $ apt-get source -qq --print-uris openldap=2.4.31-1+nmu2ubuntu8.3
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.3.diff.gz' openldap_2.4.31-1+nmu2ubuntu8.3.diff.gz 175837 SHA256:6cb56364d5a7483f62e3918d5d0d60778ec736b69d5b60baaabcb1406ad18bbf
 ```
 
-### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.19`
+### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.21`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1f-1ubuntu2.19`
-- `openssl=1.0.1f-1ubuntu2.19`
+- `libssl1.0.0:amd64=1.0.1f-1ubuntu2.21`
+- `openssl=1.0.1f-1ubuntu2.21`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1f-1ubuntu2.21
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.21.dsc' openssl_1.0.1f-1ubuntu2.21.dsc 2370 SHA256:039cf14a9f8f7f89264da8a8b9ed5f25d61dd1df06b076c3ab3335ed21680a31
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f.orig.tar.gz' openssl_1.0.1f.orig.tar.gz 4509212 SHA256:6cc2a80b17d64de6b7bac985745fdaba971d54ffd7d38d3556f998d7c0c9cb5a
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.21.debian.tar.gz' openssl_1.0.1f-1ubuntu2.21.debian.tar.gz 256838 SHA256:fdc961260478ccf4e94dc88add2bd5c4f0f0afe57e532333b63ecf54cb4e15ee
+```
 
 ### `dpkg` source package: `p11-kit=0.20.2-2ubuntu2`
 
@@ -2233,14 +2233,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.4.0-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.4.0-0ubuntu2.tar.gz' python3-defaults_3.4.0-0ubuntu2.tar.gz 127619 SHA256:4a1a9019e69ba130213268cc83d8bef9216cda8596bd71546b2369a389650730
 ```
 
-### `dpkg` source package: `python3.4=3.4.3-1ubuntu1~14.04.3`
+### `dpkg` source package: `python3.4=3.4.3-1ubuntu1~14.04.4`
 
 Binary Packages:
 
-- `libpython3.4-minimal:amd64=3.4.3-1ubuntu1~14.04.3`
-- `libpython3.4-stdlib:amd64=3.4.3-1ubuntu1~14.04.3`
-- `python3.4=3.4.3-1ubuntu1~14.04.3`
-- `python3.4-minimal=3.4.3-1ubuntu1~14.04.3`
+- `libpython3.4-minimal:amd64=3.4.3-1ubuntu1~14.04.4`
+- `libpython3.4-stdlib:amd64=3.4.3-1ubuntu1~14.04.4`
+- `python3.4=3.4.3-1ubuntu1~14.04.4`
+- `python3.4-minimal=3.4.3-1ubuntu1~14.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.4-minimal/copyright`, `/usr/share/doc/libpython3.4-stdlib/copyright`, `/usr/share/doc/python3.4/copyright`, `/usr/share/doc/python3.4-minimal/copyright`)
 
@@ -2262,8 +2262,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.4-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.4=3.4.3-1ubuntu1~14.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3-1ubuntu1~14.04.4.dsc' python3.4_3.4.3-1ubuntu1~14.04.4.dsc 3229 SHA256:4981ecafed3a39e5fcb5ffd2472512a0771ce6049a9f2e6b5c3be40927062a34
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3.orig.tar.xz' python3.4_3.4.3.orig.tar.xz 12690456 SHA256:9151f6d2975471e6b6189aa2de836b48ba0361b145dd8fc143e986efbbed9f3a
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3-1ubuntu1~14.04.4.debian.tar.gz' python3.4_3.4.3-1ubuntu1~14.04.4.debian.tar.gz 258416 SHA256:2bb185de636d4013b32fb7c6c283be77a965cd4c7ef3e71b333d915c441647d8
+```
 
 ### `dpkg` source package: `readline6=6.3-4ubuntu2`
 
