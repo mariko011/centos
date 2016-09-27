@@ -1,16 +1,16 @@
-# `rocket.chat:0.40.0`
+# `rocket.chat:0.40.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bff39fc8d7a0e6a3afab8156775ee04e517d2b8ebd09fde9d2807633bade3e8d`
-- Created: `2016-09-21T23:31:53.865734801Z`
+- Image ID: `sha256:d67c4ebcb58673345ea98110186720c910aa6a5a5735cd65f6312a2e108b5791`
+- Created: `2016-09-26T16:56:54.101839813Z`
 - Arch: `linux`/`amd64`
 - Command: `["node","main.js"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
   - `NODE_VERSION=4.5.0`
-  - `RC_VERSION=0.40.0`
+  - `RC_VERSION=0.40.1`
   - `MONGO_URL=mongodb://db:27017/meteor`
   - `HOME=/tmp`
   - `PORT=3000`
@@ -1660,30 +1660,19 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u2/
 - https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb8u3`
+### `dpkg` source package: `openssl=1.0.1t-1+deb8u4`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1t-1+deb8u3`
-- `openssl=1.0.1t-1+deb8u3`
+- `libssl1.0.0:amd64=1.0.1t-1+deb8u4`
+- `openssl=1.0.1t-1+deb8u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u3
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u3.dsc' openssl_1.0.1t-1+deb8u3.dsc 2255 SHA256:aad37a98b1fd87c5ba5ae8fd724655cdbdbd9fd4c58818858c57045a36c02ff6
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u3.debian.tar.xz' openssl_1.0.1t-1+deb8u3.debian.tar.xz 97104 SHA256:fb078fe66d58cf3ef6606c1470b5dc7c8a3ae57bed669d436d26592f82175d24
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u3/
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
