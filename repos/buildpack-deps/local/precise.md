@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8ec0ef8d4413f46e67ea1d9707851995f23038cbe7ea9585a258bddd9e87a6e1`
-- Created: `2016-08-30T18:04:37.844155034Z`
+- Image ID: `sha256:8c229373ba66ad4c82dc0ec18ce63f5ee789f6fc72213f3385ef6680e658e406`
+- Created: `2016-09-26T22:45:55.389591103Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -988,22 +988,28 @@ $ apt-get source -qq --print-uris gdbm=1.8.3-10
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.8.3-10.diff.gz' gdbm_1.8.3-10.diff.gz 14658 SHA256:be31244d33748095b6d09ec148790f85aaedeb11a1f2380c2c2cf3b2186b219a
 ```
 
-### `dpkg` source package: `gdk-pixbuf=2.26.1-1ubuntu1.3`
+### `dpkg` source package: `gdk-pixbuf=2.26.1-1ubuntu1.5`
 
 Binary Packages:
 
-- `gir1.2-gdkpixbuf-2.0=2.26.1-1ubuntu1.3`
-- `libgdk-pixbuf2.0-0:amd64=2.26.1-1ubuntu1.3`
-- `libgdk-pixbuf2.0-common=2.26.1-1ubuntu1.3`
-- `libgdk-pixbuf2.0-dev=2.26.1-1ubuntu1.3`
+- `gir1.2-gdkpixbuf-2.0=2.26.1-1ubuntu1.5`
+- `libgdk-pixbuf2.0-0:amd64=2.26.1-1ubuntu1.5`
+- `libgdk-pixbuf2.0-common=2.26.1-1ubuntu1.5`
+- `libgdk-pixbuf2.0-dev=2.26.1-1ubuntu1.5`
 
 Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-dev/copyright`)
 
 - `GPL-2`
 - `LGPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gdk-pixbuf=2.26.1-1ubuntu1.5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1-1ubuntu1.5.dsc' gdk-pixbuf_2.26.1-1ubuntu1.5.dsc 2783 SHA256:8899169a51ad1578482f25f9284965bf76f90fdc81139340332ba4e9c4e05e30
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1.orig.tar.xz' gdk-pixbuf_2.26.1.orig.tar.xz 1167608 SHA256:a60af12b58d9cc15ba4c680c6730ce5d38e8d664af1d575a379385b94b4ec7ba
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.26.1-1ubuntu1.5.debian.tar.gz' gdk-pixbuf_2.26.1-1ubuntu1.5.debian.tar.gz 17360 SHA256:75e203493223c5b81ff2533857cd5976c15c08e0cab91b3b20d2646d429d3a98
+```
 
 ### `dpkg` source package: `geoip=1.4.8+dfsg-2`
 
@@ -2614,11 +2620,11 @@ $ apt-get source -qq --print-uris libyaml=0.1.4-2ubuntu0.12.04.4
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.4-2ubuntu0.12.04.4.debian.tar.gz' libyaml_0.1.4-2ubuntu0.12.04.4.debian.tar.gz 6152 SHA256:2941cb245fd1fdf53a576f02931f24cf5368649d51e2965bb7b6ba29c7ab4835
 ```
 
-### `dpkg` source package: `linux=3.2.0-109.150`
+### `dpkg` source package: `linux=3.2.0-110.151`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.2.0-109.150`
+- `linux-libc-dev:amd64=3.2.0-110.151`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2838,13 +2844,13 @@ $ apt-get source -qq --print-uris mpfr4=3.1.0-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_3.1.0-3ubuntu2.debian.tar.gz' mpfr4_3.1.0-3ubuntu2.debian.tar.gz 12168 SHA256:fab90bc1bde0d58aa7ccc23d1db61c8f3d362e9ecf7476ccda9d0e7689c246f6
 ```
 
-### `dpkg` source package: `mysql-5.5=5.5.50-0ubuntu0.12.04.1`
+### `dpkg` source package: `mysql-5.5=5.5.52-0ubuntu0.12.04.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.5.50-0ubuntu0.12.04.1`
-- `libmysqlclient18:amd64=5.5.50-0ubuntu0.12.04.1`
-- `mysql-common=5.5.50-0ubuntu0.12.04.1`
+- `libmysqlclient-dev=5.5.52-0ubuntu0.12.04.1`
+- `libmysqlclient18:amd64=5.5.52-0ubuntu0.12.04.1`
+- `mysql-common=5.5.52-0ubuntu0.12.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -2862,8 +2868,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `UNKNOWN`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.5=5.5.52-0ubuntu0.12.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.52-0ubuntu0.12.04.1.dsc' mysql-5.5_5.5.52-0ubuntu0.12.04.1.dsc 3154 SHA256:a8589d3cc58059bad7888c9a707bfe2b08a56d81f1fb7ae49d3ab39f5b0bc32f
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.52.orig.tar.gz' mysql-5.5_5.5.52.orig.tar.gz 21032776 SHA256:7820e13de6b3f4dadd255e12b2e9f3de43daf4507c218018c382d45aad8162fd
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.52-0ubuntu0.12.04.1.debian.tar.gz' mysql-5.5_5.5.52-0ubuntu0.12.04.1.debian.tar.gz 302460 SHA256:fd786f51e52c397fea7a89f809efb9d2b0c6242ba683066fec2c0339c9b5cb77
+```
 
 ### `dpkg` source package: `ncurses=5.9-4`
 
@@ -2969,20 +2981,26 @@ $ apt-get source -qq --print-uris openssh=1:5.9p1-5ubuntu1.10
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_5.9p1-5ubuntu1.10.debian.tar.gz' openssh_5.9p1-5ubuntu1.10.debian.tar.gz 265940 SHA256:7b2713a9bfe6c33c188e872888a076dd54cb773c4bfdfa4efe56cb071eab514b
 ```
 
-### `dpkg` source package: `openssl=1.0.1-4ubuntu5.36`
+### `dpkg` source package: `openssl=1.0.1-4ubuntu5.38`
 
 Binary Packages:
 
-- `libssl-dev=1.0.1-4ubuntu5.36`
-- `libssl1.0.0:amd64=1.0.1-4ubuntu5.36`
-- `openssl=1.0.1-4ubuntu5.36`
+- `libssl-dev=1.0.1-4ubuntu5.38`
+- `libssl1.0.0:amd64=1.0.1-4ubuntu5.38`
+- `openssl=1.0.1-4ubuntu5.38`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1-4ubuntu5.38
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1-4ubuntu5.38.dsc' openssl_1.0.1-4ubuntu5.38.dsc 2365 SHA256:6db69efdd4176b150563b642e14194f227d40ea90315d084e4fe47b21f204aeb
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1.orig.tar.gz' openssl_1.0.1.orig.tar.gz 4453920 SHA256:4d9f0a594a9a89b28e1a04a9504c04104f6508ee27ad1e0efdd17a7a6dbbeeee
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1-4ubuntu5.38.debian.tar.gz' openssl_1.0.1-4ubuntu5.38.debian.tar.gz 281787 SHA256:77fdd53b9e1300d1ed20d58fe9aba7a429fe7f32a19bf880e75852ba37a75ac9
+```
 
 ### `dpkg` source package: `p11-kit=0.12-2ubuntu1`
 

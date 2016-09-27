@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:75a6b285ff345861860b6c29f446cc2457c91a70cebe5eebd33ff82375aa5ad3`
-- Created: `2016-09-19T17:50:27.39730115Z`
+- Image ID: `sha256:a2b3b8e34b966751a0450d380c8fa9fba1ce7421de8643b79b091b469ab5a0af`
+- Created: `2016-09-23T18:29:12.322662112Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -119,18 +119,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.3~rc4
-'http://httpredir.debian.org/debian/pool/main/a/apt/apt_1.3~rc4.dsc' apt_1.3~rc4.dsc 2504 SHA256:1d8c9675f3fe6c7d36aa06fcb55606a7a4d70897f621948bd6a562f5d0e92359
-'http://httpredir.debian.org/debian/pool/main/a/apt/apt_1.3~rc4.tar.xz' apt_1.3~rc4.tar.xz 2041020 SHA256:5c834057ae82f81580c0cc6bb4d5e90d9aeed24b327a51e84d6724ed49890a69
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.3~rc4/
-- https://sources.debian.net/src/apt/1.3~rc4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -231,11 +221,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/base-passwd/3.5.40/
 - https://sources.debian.net/src/base-passwd/3.5.40/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `bash=4.3-15`
+### `dpkg` source package: `bash=4.4-1`
 
 Binary Packages:
 
-- `bash=4.3-15`
+- `bash=4.4-1`
 
 Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
@@ -244,16 +234,16 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris bash=4.3-15
-'http://httpredir.debian.org/debian/pool/main/b/bash/bash_4.3-15.dsc' bash_4.3-15.dsc 2194 SHA256:924cbaac162af73479fb4a7c8681345d26e06ab9a0ceac46def94d70216353ef
-'http://httpredir.debian.org/debian/pool/main/b/bash/bash_4.3.orig.tar.gz' bash_4.3.orig.tar.gz 7516231 SHA256:b2fe79ddf9e7abdb4695e3070afa866d2a94a58d1cc9d731585330c753815491
-'http://httpredir.debian.org/debian/pool/main/b/bash/bash_4.3-15.debian.tar.xz' bash_4.3-15.debian.tar.xz 86360 SHA256:32216687915af228ef1215de74ba2829c991fa9fc9a09f305b0f8bf9151fee83
+$ apt-get source -qq --print-uris bash=4.4-1
+'http://httpredir.debian.org/debian/pool/main/b/bash/bash_4.4-1.dsc' bash_4.4-1.dsc 2196 SHA256:a5c6479f2281af967c940c1bf734170dfae6cc334ebfd9f54276227d37e6920e
+'http://httpredir.debian.org/debian/pool/main/b/bash/bash_4.4.orig.tar.xz' bash_4.4.orig.tar.xz 4878580 SHA256:819ebb6a23799e9e4ca56ac579778c46902005bd5ade4f131ed293d9f77108e7
+'http://httpredir.debian.org/debian/pool/main/b/bash/bash_4.4-1.debian.tar.xz' bash_4.4-1.debian.tar.xz 59008 SHA256:a97e9b07e116b7109126440ad1124e0147f7a6f3f0a2c1c87ea3ac5504733ba0
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/bash/4.3-15/
-- https://sources.debian.net/src/bash/4.3-15/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/bash/4.4-1/
+- https://sources.debian.net/src/bash/4.4-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bzip2=1.0.6-8`
 
@@ -756,23 +746,6 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/findutils/4.6.0+git+20160703-2/
 - https://sources.debian.net/src/findutils/4.6.0+git+20160703-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gcc-4.9=4.9.3-14`
-
-Binary Packages:
-
-- `gcc-4.9-base:amd64=4.9.3-14`
-
-Licenses: (parsed from: `/usr/share/doc/gcc-4.9-base/copyright`)
-
-- `Artistic`
-- `GFDL-1.2`
-- `GPL`
-- `GPL-2`
-- `GPL-3`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
-
-
 ### `dpkg` source package: `gcc-5=5.4.1-1`
 
 Binary Packages:
@@ -1148,18 +1121,8 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.44
-'http://httpredir.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.44.dsc' init-system-helpers_1.44.dsc 1935 SHA256:a988526fa7fce139056343151afba60eb75b5dfba62842f1c837dc454ffbc1bc
-'http://httpredir.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.44.tar.xz' init-system-helpers_1.44.tar.xz 42404 SHA256:892c79e75f5a42db8f3346699cd4c998b30f88c4377dcb8949841ae4817f0a41
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/init-system-helpers/1.44/
-- https://sources.debian.net/src/init-system-helpers/1.44/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `iproute2=4.6.0-4`
 
@@ -2307,19 +2270,8 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.2-3.1
-'http://httpredir.debian.org/debian/pool/main/s/shadow/shadow_4.2-3.1.dsc' shadow_4.2-3.1.dsc 1991 SHA256:f3eb8f3486d5b7e3a936f59b60afdb9b69ed0c45c9bbd6ce3b758380f834f507
-'http://httpredir.debian.org/debian/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://httpredir.debian.org/debian/pool/main/s/shadow/shadow_4.2-3.1.debian.tar.xz' shadow_4.2-3.1.debian.tar.xz 496576 SHA256:31ee4c501609b969662c4e99d0e80d13ffff2d464097e82706a59c4abd9e73cb
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/shadow/1:4.2-3.1/
-- https://sources.debian.net/src/shadow/1:4.2-3.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `six=1.10.0-3`
 
@@ -2357,20 +2309,8 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.14.1-1
-'http://httpredir.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.14.1-1.dsc' sqlite3_3.14.1-1.dsc 2496 SHA256:ba0937b26b46a44980cfb387236821f346766ca3cbee6ef41495916e8233f3d3
-'http://httpredir.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.14.1.orig-www.tar.xz' sqlite3_3.14.1.orig-www.tar.xz 3288208 SHA256:7138c0713e9c6f3abe2aaafcf10857216172eca1c8219251c2fb4561c230a2bb
-'http://httpredir.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.14.1.orig.tar.xz' sqlite3_3.14.1.orig.tar.xz 5286048 SHA256:0910cf20748f64c69d0f660799b76163f13d2263ec5427eecbb0faf4ead39d63
-'http://httpredir.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.14.1-1.debian.tar.xz' sqlite3_3.14.1-1.debian.tar.xz 16616 SHA256:ee5e243361458d29f7fb28966a6d67067dbfaece67acf79113fbe9d19d6dc55b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sqlite3/3.14.1-1/
-- https://sources.debian.net/src/sqlite3/3.14.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `subversion=1.9.4-3`
 

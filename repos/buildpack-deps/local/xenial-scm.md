@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b664a4c8b9349f892eb0154e5b16e0209b8b3da04e43940051b56857aa0b7952`
-- Created: `2016-09-19T17:04:21.673405523Z`
+- Image ID: `sha256:35bf726d603ac7802a4f6e38d7927b191dcb09eb94c5d3b1657663fc56f1f413`
+- Created: `2016-09-26T21:41:04.406303196Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -1532,19 +1532,25 @@ $ apt-get source -qq --print-uris openssh=1:7.2p2-4ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2-4ubuntu2.1.debian.tar.xz' openssh_7.2p2-4ubuntu2.1.debian.tar.xz 153228 SHA256:dbd4cae1c64e1b2d3504caf5c3aa12186afd6b8a64284841015b096796671a24
 ```
 
-### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.2`
+### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.5`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.2`
-- `openssl=1.0.2g-1ubuntu4.2`
+- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.5`
+- `openssl=1.0.2g-1ubuntu4.5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.5
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.5.dsc' openssl_1.0.2g-1ubuntu4.5.dsc 2435 SHA256:fc55e338a2961d19c863f5a867ba20bb00ffc0425ba29fff5e6ea435a0d6ebd2
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.5.debian.tar.xz' openssl_1.0.2g-1ubuntu4.5.debian.tar.xz 106972 SHA256:00dffee17a8b9be0eb80602895eeae30fdc5e2b2558614ae0974e3219ad80c31
+```
 
 ### `dpkg` source package: `p11-kit=0.23.2-5~ubuntu16.04.1`
 

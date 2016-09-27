@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1029721de18ab3c6f5ae3c5305a37112022c8ae812fdf6669b2621fff79883e2`
-- Created: `2016-08-30T18:03:37.454452373Z`
+- Image ID: `sha256:0b0311b0c7f7ab8ccaa2d6e5fe3287306c839e8853eec18c8886742fd65e0244`
+- Created: `2016-09-26T21:37:28.747184518Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -1191,19 +1191,25 @@ $ apt-get source -qq --print-uris openldap=2.4.28-1.1ubuntu4.6
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.28-1.1ubuntu4.6.diff.gz' openldap_2.4.28-1.1ubuntu4.6.diff.gz 179770 SHA256:7867bdf2f9e428f637929526b7de9f58c7b8ccf84040da5231d9c30d67176367
 ```
 
-### `dpkg` source package: `openssl=1.0.1-4ubuntu5.36`
+### `dpkg` source package: `openssl=1.0.1-4ubuntu5.38`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1-4ubuntu5.36`
-- `openssl=1.0.1-4ubuntu5.36`
+- `libssl1.0.0:amd64=1.0.1-4ubuntu5.38`
+- `openssl=1.0.1-4ubuntu5.38`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1-4ubuntu5.38
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1-4ubuntu5.38.dsc' openssl_1.0.1-4ubuntu5.38.dsc 2365 SHA256:6db69efdd4176b150563b642e14194f227d40ea90315d084e4fe47b21f204aeb
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1.orig.tar.gz' openssl_1.0.1.orig.tar.gz 4453920 SHA256:4d9f0a594a9a89b28e1a04a9504c04104f6508ee27ad1e0efdd17a7a6dbbeeee
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1-4ubuntu5.38.debian.tar.gz' openssl_1.0.1-4ubuntu5.38.debian.tar.gz 281787 SHA256:77fdd53b9e1300d1ed20d58fe9aba7a429fe7f32a19bf880e75852ba37a75ac9
+```
 
 ### `dpkg` source package: `p11-kit=0.12-2ubuntu1`
 

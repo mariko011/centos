@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d26c3a55c051a52aad091a141557cc7135a6fcf679a6cda2f463f4d70f37e12d`
-- Created: `2016-08-30T18:03:56.052228752Z`
+- Image ID: `sha256:fd436ee65d7bf12ad548678e1d27dcb0aa14d90e732cc35d54d3f1e7a3f66b8c`
+- Created: `2016-09-26T21:38:10.556541705Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -1560,19 +1560,25 @@ $ apt-get source -qq --print-uris openssh=1:5.9p1-5ubuntu1.10
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_5.9p1-5ubuntu1.10.debian.tar.gz' openssh_5.9p1-5ubuntu1.10.debian.tar.gz 265940 SHA256:7b2713a9bfe6c33c188e872888a076dd54cb773c4bfdfa4efe56cb071eab514b
 ```
 
-### `dpkg` source package: `openssl=1.0.1-4ubuntu5.36`
+### `dpkg` source package: `openssl=1.0.1-4ubuntu5.38`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1-4ubuntu5.36`
-- `openssl=1.0.1-4ubuntu5.36`
+- `libssl1.0.0:amd64=1.0.1-4ubuntu5.38`
+- `openssl=1.0.1-4ubuntu5.38`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1-4ubuntu5.38
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1-4ubuntu5.38.dsc' openssl_1.0.1-4ubuntu5.38.dsc 2365 SHA256:6db69efdd4176b150563b642e14194f227d40ea90315d084e4fe47b21f204aeb
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1.orig.tar.gz' openssl_1.0.1.orig.tar.gz 4453920 SHA256:4d9f0a594a9a89b28e1a04a9504c04104f6508ee27ad1e0efdd17a7a6dbbeeee
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1-4ubuntu5.38.debian.tar.gz' openssl_1.0.1-4ubuntu5.38.debian.tar.gz 281787 SHA256:77fdd53b9e1300d1ed20d58fe9aba7a429fe7f32a19bf880e75852ba37a75ac9
+```
 
 ### `dpkg` source package: `p11-kit=0.12-2ubuntu1`
 

@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d6ca5f06c4a85ef7501c8ff0c0a3dc633ade830a7de6e97f54d3837d2b684343`
-- Created: `2016-09-19T17:05:10.935750379Z`
+- Image ID: `sha256:9f699473fe5f3bed58a265a2f3fd3a513010bf5e20b12aca8de64c358d6fe8d7`
+- Created: `2016-09-26T22:49:27.546873803Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -1014,14 +1014,14 @@ $ apt-get source -qq --print-uris gdbm=1.8.3-13.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.8.3-13.1.debian.tar.xz' gdbm_1.8.3-13.1.debian.tar.xz 14748 SHA256:251401e1f5210226f384e936b1b7ea1df40119a918d9f3dbf48b2e51d4df8983
 ```
 
-### `dpkg` source package: `gdk-pixbuf=2.32.2-1ubuntu1`
+### `dpkg` source package: `gdk-pixbuf=2.32.2-1ubuntu1.2`
 
 Binary Packages:
 
-- `gir1.2-gdkpixbuf-2.0:amd64=2.32.2-1ubuntu1`
-- `libgdk-pixbuf2.0-0:amd64=2.32.2-1ubuntu1`
-- `libgdk-pixbuf2.0-common=2.32.2-1ubuntu1`
-- `libgdk-pixbuf2.0-dev=2.32.2-1ubuntu1`
+- `gir1.2-gdkpixbuf-2.0:amd64=2.32.2-1ubuntu1.2`
+- `libgdk-pixbuf2.0-0:amd64=2.32.2-1ubuntu1.2`
+- `libgdk-pixbuf2.0-common=2.32.2-1ubuntu1.2`
+- `libgdk-pixbuf2.0-dev=2.32.2-1ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-dev/copyright`)
 
@@ -1031,10 +1031,10 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.32.2-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.dsc' gdk-pixbuf_2.32.2-1ubuntu1.dsc 2608 SHA256:333c65d112f945b83822254288cd97fa5be07ce991f81cce1dd5ebe6d9163543
+$ apt-get source -qq --print-uris gdk-pixbuf=2.32.2-1ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.2.dsc' gdk-pixbuf_2.32.2-1ubuntu1.2.dsc 2896 SHA256:349ac29ab0a63011a7c3ca2755330622d7b1787fdda9873c1a33becc03857536
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2.orig.tar.xz' gdk-pixbuf_2.32.2.orig.tar.xz 2429268 SHA256:d3ab06fc123b13effed4c27c77cebdfad2173ff20628d82c397b7660ae926145
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.debian.tar.xz' gdk-pixbuf_2.32.2-1ubuntu1.debian.tar.xz 12848 SHA256:dcca72af974de17fb8d7864222ff8517a3ad2f85010c54358392448160452d75
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2-1ubuntu1.2.debian.tar.xz' gdk-pixbuf_2.32.2-1ubuntu1.2.debian.tar.xz 15152 SHA256:ccc3aa20de5ede571a57caecaaccb9c22efaf586da5c7befeff4083cc670b7a0
 ```
 
 ### `dpkg` source package: `geoip=1.6.9-1`
@@ -3054,20 +3054,26 @@ $ apt-get source -qq --print-uris openssh=1:7.2p2-4ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2-4ubuntu2.1.debian.tar.xz' openssh_7.2p2-4ubuntu2.1.debian.tar.xz 153228 SHA256:dbd4cae1c64e1b2d3504caf5c3aa12186afd6b8a64284841015b096796671a24
 ```
 
-### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.2`
+### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.5`
 
 Binary Packages:
 
-- `libssl-dev:amd64=1.0.2g-1ubuntu4.2`
-- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.2`
-- `openssl=1.0.2g-1ubuntu4.2`
+- `libssl-dev:amd64=1.0.2g-1ubuntu4.5`
+- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.5`
+- `openssl=1.0.2g-1ubuntu4.5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.5
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.5.dsc' openssl_1.0.2g-1ubuntu4.5.dsc 2435 SHA256:fc55e338a2961d19c863f5a867ba20bb00ffc0425ba29fff5e6ea435a0d6ebd2
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.5.debian.tar.xz' openssl_1.0.2g-1ubuntu4.5.debian.tar.xz 106972 SHA256:00dffee17a8b9be0eb80602895eeae30fdc5e2b2558614ae0974e3219ad80c31
+```
 
 ### `dpkg` source package: `p11-kit=0.23.2-5~ubuntu16.04.1`
 
