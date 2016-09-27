@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:da4878ae7dcd174f1fb1524f28a7596d5b62bd88645fe159cad46738c92f6bc7`
-- Created: `2016-09-19T18:07:34.886002873Z`
+- Image ID: `sha256:d3eb0c434eab1dc6e30b240ae6b59edbf60c186d67ca2a0a82bc2698b3747ca1`
+- Created: `2016-09-26T22:39:36.613862692Z`
 - Arch: `linux`/`amd64`
 - Command: `["/opt/ibm/wlp/bin/server","run","defaultServer"]`
 - Environment:
   - `PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_VERSION=1.8.0_sr3fp11`
   - `JAVA_HOME=/opt/ibm/java/jre`
-  - `LIBERTY_VERSION=2016.9.0_0`
+  - `LIBERTY_VERSION=2016.9.0_1`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ibm/wlp/output`
 
@@ -972,19 +972,25 @@ $ apt-get source -qq --print-uris ncurses=6.0+20160213-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.0+20160213-1ubuntu1.debian.tar.xz' ncurses_6.0+20160213-1ubuntu1.debian.tar.xz 54496 SHA256:9551738e1bdc425d12897cc459ce5ce40b5e12530b144b731c0a7b3e077c07c7
 ```
 
-### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.2`
+### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.5`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.2`
-- `openssl=1.0.2g-1ubuntu4.2`
+- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.5`
+- `openssl=1.0.2g-1ubuntu4.5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.5
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.5.dsc' openssl_1.0.2g-1ubuntu4.5.dsc 2435 SHA256:fc55e338a2961d19c863f5a867ba20bb00ffc0425ba29fff5e6ea435a0d6ebd2
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.5.debian.tar.xz' openssl_1.0.2g-1ubuntu4.5.debian.tar.xz 106972 SHA256:00dffee17a8b9be0eb80602895eeae30fdc5e2b2558614ae0974e3219ad80c31
+```
 
 ### `dpkg` source package: `pam=1.1.8-3.2ubuntu2`
 
