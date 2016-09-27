@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:16cbed6fae6adab97c48dd12f948c66dcc73ce102f73d464c456f2461b54092e`
-- Created: `2016-07-08T19:31:28.96208424Z`
+- Image ID: `sha256:f8f2d197ef9a4ecddcc5e6ecf2d000e2b6eeb023a8c1700fca70e587ff091c23`
+- Created: `2016-09-26T23:09:00.624607029Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
 - Command: `["bash"]`
@@ -203,13 +203,13 @@ $ apt-get source -qq --print-uris audit=1:2.3.2-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.3.2-2ubuntu1.debian.tar.gz' audit_2.3.2-2ubuntu1.debian.tar.gz 14702 SHA256:9aa22280f6248f0f750a6aea84624907d796872ecdca17936cd48888a50a4104
 ```
 
-### `dpkg` source package: `avahi=0.6.31-4ubuntu1`
+### `dpkg` source package: `avahi=0.6.31-4ubuntu1.1`
 
 Binary Packages:
 
-- `libavahi-client3:amd64=0.6.31-4ubuntu1`
-- `libavahi-common-data:amd64=0.6.31-4ubuntu1`
-- `libavahi-common3:amd64=0.6.31-4ubuntu1`
+- `libavahi-client3:amd64=0.6.31-4ubuntu1.1`
+- `libavahi-common-data:amd64=0.6.31-4ubuntu1.1`
+- `libavahi-common3:amd64=0.6.31-4ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share/doc/libavahi-common-data/copyright`, `/usr/share/doc/libavahi-common3/copyright`)
 
@@ -220,24 +220,29 @@ Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris avahi=0.6.31-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.31-4ubuntu1.dsc' avahi_0.6.31-4ubuntu1.dsc 4177 SHA256:b9c26857208b7a323595b583fb0473723ba052091a3870436bead2bd9acfa448
+$ apt-get source -qq --print-uris avahi=0.6.31-4ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.31-4ubuntu1.1.dsc' avahi_0.6.31-4ubuntu1.1.dsc 4431 SHA256:c17f79f97416f57b3b728497900ecb04f993136c8a405ebea6caaa8d910cb2ee
 'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.31.orig.tar.gz' avahi_0.6.31.orig.tar.gz 1268686 SHA256:8372719b24e2dd75de6f59bb1315e600db4fd092805bd1201ed0cb651a2dab48
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.31-4ubuntu1.debian.tar.gz' avahi_0.6.31-4ubuntu1.debian.tar.gz 41045 SHA256:1fb198aded51a6fa8ca444ac228fd294326cac75e2261bb62cef4c75bdc66428
+'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.31-4ubuntu1.1.debian.tar.xz' avahi_0.6.31-4ubuntu1.1.debian.tar.xz 34848 SHA256:9cab5139830788e0e13b486796925c6123d367e912e2352884e182f9ca66a695
 ```
 
-### `dpkg` source package: `base-files=7.2ubuntu5.4`
+### `dpkg` source package: `base-files=7.2ubuntu5.5`
 
 Binary Packages:
 
-- `base-files=7.2ubuntu5.4`
+- `base-files=7.2ubuntu5.5`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=7.2ubuntu5.5
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_7.2ubuntu5.5.dsc' base-files_7.2ubuntu5.5.dsc 1557 SHA256:594a4444d2fcddc11ba05e3c178d8f6eb3dd68ce10567b1f7d39bf13e7c75823
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_7.2ubuntu5.5.tar.xz' base-files_7.2ubuntu5.5.tar.xz 60544 SHA256:9b08be5d3fd11ce1536c3ce0ebd887d5041a9388cf1b4937f0dfd00cc372b2d3
+```
 
 ### `dpkg` source package: `base-passwd=3.5.33`
 
@@ -835,23 +840,30 @@ $ apt-get source -qq --print-uris cups=1.7.2-0ubuntu1.7
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_1.7.2-0ubuntu1.7.debian.tar.gz' cups_1.7.2-0ubuntu1.7.debian.tar.gz 448114 SHA256:fa276e0c44e98bb562ff2710260fd4c7e5ee9ce19ed35cdea11bd7702a427cd4
 ```
 
-### `dpkg` source package: `curl=7.35.0-1ubuntu2.6`
+### `dpkg` source package: `curl=7.35.0-1ubuntu2.9`
 
 Binary Packages:
 
-- `libcurl3:amd64=7.35.0-1ubuntu2.6`
-- `libcurl3-gnutls:amd64=7.35.0-1ubuntu2.6`
-- `libcurl4-openssl-dev:amd64=7.35.0-1ubuntu2.6`
+- `curl=7.35.0-1ubuntu2.9`
+- `libcurl3:amd64=7.35.0-1ubuntu2.9`
+- `libcurl3-gnutls:amd64=7.35.0-1ubuntu2.9`
+- `libcurl4-openssl-dev:amd64=7.35.0-1ubuntu2.9`
 
-Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.35.0-1ubuntu2.9
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.9.dsc' curl_7.35.0-1ubuntu2.9.dsc 2832 SHA256:e9371620d3ca719192e498928499536bfc82999a3b804bf76848548113efde36
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0.orig.tar.gz' curl_7.35.0.orig.tar.gz 3544496 SHA256:917d118fc5d61e9dd1538d6519bd93bbebf2e866882419781c2e0fdb2bc42121
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.9.debian.tar.xz' curl_7.35.0-1ubuntu2.9.debian.tar.xz 41136 SHA256:3081f64c893dd038bc1a26df344a6e109aa02f6ee8a0962f1662781fee0d57d0
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-17build1`
 
@@ -1215,20 +1227,26 @@ $ apt-get source -qq --print-uris findutils=4.4.2-7
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.4.2-7.debian.tar.gz' findutils_4.4.2-7.debian.tar.gz 25449 SHA256:251b00023cab27e8d85b3844f1c69f009319d34d33aa4a996b183056c3cfe48a
 ```
 
-### `dpkg` source package: `fontconfig=2.11.0-0ubuntu4.1`
+### `dpkg` source package: `fontconfig=2.11.0-0ubuntu4.2`
 
 Binary Packages:
 
-- `fontconfig=2.11.0-0ubuntu4.1`
-- `fontconfig-config=2.11.0-0ubuntu4.1`
-- `libfontconfig1:amd64=2.11.0-0ubuntu4.1`
+- `fontconfig=2.11.0-0ubuntu4.2`
+- `fontconfig-config=2.11.0-0ubuntu4.2`
+- `libfontconfig1:amd64=2.11.0-0ubuntu4.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris fontconfig=2.11.0-0ubuntu4.2
+'http://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/fontconfig_2.11.0-0ubuntu4.2.dsc' fontconfig_2.11.0-0ubuntu4.2.dsc 2230 SHA256:8aa798708812fc7075b54ef61ac590b41c9a1c89417c3b851e0a0b4587643368
+'http://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/fontconfig_2.11.0.orig.tar.bz2' fontconfig_2.11.0.orig.tar.bz2 1541382 SHA256:cb0e0ef6f03bc8568e95653840bb07d5859dc89d7ce2cade9d94fcccf8c1a467
+'http://archive.ubuntu.com/ubuntu/pool/main/f/fontconfig/fontconfig_2.11.0-0ubuntu4.2.debian.tar.gz' fontconfig_2.11.0-0ubuntu4.2.debian.tar.gz 32363 SHA256:d14dfacc32e5e88e010c50164d4e1a19ba1d27c23f09e4ba718f51db72580a8e
+```
 
 ### `dpkg` source package: `fonts-dejavu=2.34-1ubuntu1`
 
@@ -1411,20 +1429,26 @@ $ apt-get source -qq --print-uris gdbm=1.8.3-12build1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.8.3-12build1.debian.tar.bz2' gdbm_1.8.3-12build1.debian.tar.bz2 15091 SHA256:5e511c9a6419501dd31e21af84431f41f8785e0f48d6475ebfc48fa49f20fdba
 ```
 
-### `dpkg` source package: `gdk-pixbuf=2.30.7-0ubuntu1.2`
+### `dpkg` source package: `gdk-pixbuf=2.30.7-0ubuntu1.6`
 
 Binary Packages:
 
-- `libgdk-pixbuf2.0-0:amd64=2.30.7-0ubuntu1.2`
-- `libgdk-pixbuf2.0-common=2.30.7-0ubuntu1.2`
+- `libgdk-pixbuf2.0-0:amd64=2.30.7-0ubuntu1.6`
+- `libgdk-pixbuf2.0-common=2.30.7-0ubuntu1.6`
 
 Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`)
 
 - `GPL-2`
 - `LGPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gdk-pixbuf=2.30.7-0ubuntu1.6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.30.7-0ubuntu1.6.dsc' gdk-pixbuf_2.30.7-0ubuntu1.6.dsc 2921 SHA256:6761bb4d398c25e96cae902d6a5dba70d623cac2658aefca2c7cc7d459fcf510
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.30.7.orig.tar.xz' gdk-pixbuf_2.30.7.orig.tar.xz 1329096 SHA256:0aafc365eab1083a53f15e4828333b968219ffcb1a995ac6289c0147c9ffad06
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.30.7-0ubuntu1.6.debian.tar.gz' gdk-pixbuf_2.30.7-0ubuntu1.6.debian.tar.gz 21408 SHA256:6920d25bd0798d765bdc5f4e7c27fe979f8e52c20fe8cf325a6378cf84e93542
+```
 
 ### `dpkg` source package: `git=1:1.9.1-1ubuntu0.3`
 
@@ -1504,20 +1528,26 @@ $ apt-get source -qq --print-uris gmp=2:5.1.3+dfsg-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_5.1.3+dfsg-1ubuntu1.debian.tar.gz' gmp_5.1.3+dfsg-1ubuntu1.debian.tar.gz 22621 SHA256:952795400f79b3e749a05d13d3eafd0930ce24e8fbde5e440d89e6060c41b361
 ```
 
-### `dpkg` source package: `gnupg=1.4.16-1ubuntu2.3`
+### `dpkg` source package: `gnupg=1.4.16-1ubuntu2.4`
 
 Binary Packages:
 
-- `gnupg=1.4.16-1ubuntu2.3`
-- `gpgv=1.4.16-1ubuntu2.3`
+- `gnupg=1.4.16-1ubuntu2.4`
+- `gpgv=1.4.16-1ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/copyright`)
 
 - `GPL-3`
 - `GPL-3+ with OpenSSL exception`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnupg=1.4.16-1ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.16-1ubuntu2.4.dsc' gnupg_1.4.16-1ubuntu2.4.dsc 2354 SHA256:484156d1517096273053973420f965bb3941762d094d37878984220aad1604af
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.16.orig.tar.gz' gnupg_1.4.16.orig.tar.gz 5073484 SHA256:f3af2f9c34c305869ad38b4ee7ab9e1487f50884ee8d9d42cccb31e1ced5cdef
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.16-1ubuntu2.4.debian.tar.gz' gnupg_1.4.16-1ubuntu2.4.debian.tar.gz 56430 SHA256:dbc2738c30cdcedb459e0ff0a9d1ec42e7b238b96c4a9326cae84a0afdae6441
+```
 
 ### `dpkg` source package: `gnutls26=2.12.23-12ubuntu2.5`
 
@@ -1716,18 +1746,24 @@ $ apt-get source -qq --print-uris gzip=1.6-3ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.6-3ubuntu1.debian.tar.gz' gzip_1.6-3ubuntu1.debian.tar.gz 16107 SHA256:159c1bb8838ad53ee293a923598d100b06571b4efbeb6879646d5029130b650b
 ```
 
-### `dpkg` source package: `harfbuzz=0.9.27-1ubuntu1`
+### `dpkg` source package: `harfbuzz=0.9.27-1ubuntu1.1`
 
 Binary Packages:
 
-- `libharfbuzz0b:amd64=0.9.27-1ubuntu1`
+- `libharfbuzz0b:amd64=0.9.27-1ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris harfbuzz=0.9.27-1ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_0.9.27-1ubuntu1.1.dsc' harfbuzz_0.9.27-1ubuntu1.1.dsc 2673 SHA256:40ae71edf7e248e95b81ac3b40db1709afd2bc513a7c978e71a2550160333760
+'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_0.9.27.orig.tar.bz2' harfbuzz_0.9.27.orig.tar.bz2 1062180 SHA256:08584ae91c98d5b14d5f2c45b01410a12b030c9397bd73135bd2155297b447db
+'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_0.9.27-1ubuntu1.1.debian.tar.gz' harfbuzz_0.9.27-1ubuntu1.1.debian.tar.gz 8433 SHA256:fde8b041695af6a04923a8492c14437da72a0d7aef4688c5dce8fcb61d76826e
+```
 
 ### `dpkg` source package: `hddtemp=0.3-beta15-52`
 
@@ -1891,19 +1927,24 @@ $ apt-get source -qq --print-uris init-system-helpers=1.14
 'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.14.tar.gz' init-system-helpers_1.14.tar.gz 17729 SHA256:9eea2b3fb46b8382cd1c59e607ad1ce3c14bfcb58494919912131448fbf18f32
 ```
 
-### `dpkg` source package: `initramfs-tools=0.103ubuntu4.3`
+### `dpkg` source package: `initramfs-tools=0.103ubuntu4.4`
 
 Binary Packages:
 
-- `initramfs-tools=0.103ubuntu4.3`
-- `initramfs-tools-bin=0.103ubuntu4.3`
+- `initramfs-tools=0.103ubuntu4.4`
+- `initramfs-tools-bin=0.103ubuntu4.4`
 
 Licenses: (parsed from: `/usr/share/doc/initramfs-tools/copyright`, `/usr/share/doc/initramfs-tools-bin/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris initramfs-tools=0.103ubuntu4.4
+'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.4.dsc' initramfs-tools_0.103ubuntu4.4.dsc 1858 SHA256:40bda019b9181c408504e8b13ddb46682a449746ceb84c3cf29bf408deef9715
+'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.4.tar.xz' initramfs-tools_0.103ubuntu4.4.tar.xz 94424 SHA256:0d098dcb2e38577cc78a44e1db6ce74a57321ec3a8cec7d354129e5db4ec6a66
+```
 
 ### `dpkg` source package: `insserv=1.14.0-5ubuntu2`
 
@@ -1962,25 +2003,19 @@ $ apt-get source -qq --print-uris iputils=3:20121221-4ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iputils/iputils_20121221-4ubuntu1.1.debian.tar.gz' iputils_20121221-4ubuntu1.1.debian.tar.gz 16143 SHA256:4eb3ca79e68dfc5f5e66df7be3113c230168fbca2420da232adadc6475056c6a
 ```
 
-### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.4`
+### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.6`
 
 Binary Packages:
 
-- `isc-dhcp-client=4.2.4-7ubuntu12.4`
-- `isc-dhcp-common=4.2.4-7ubuntu12.4`
+- `isc-dhcp-client=4.2.4-7ubuntu12.6`
+- `isc-dhcp-common=4.2.4-7ubuntu12.6`
 
 Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/doc/isc-dhcp-common/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris isc-dhcp=4.2.4-7ubuntu12.4
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.4.dsc' isc-dhcp_4.2.4-7ubuntu12.4.dsc 2720 SHA256:b68d69e75a9f809d5e7dcfb87a40078877bf058ca265af39e4e836df8e288165
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.4.debian.tar.gz' isc-dhcp_4.2.4-7ubuntu12.4.debian.tar.gz 136001 SHA256:6a88070c19a6c0f6834475933950cd0c60bd7f19cfb835866eed07e857bdb70c
-```
 
 ### `dpkg` source package: `isl=0.12.2-1`
 
@@ -2269,18 +2304,24 @@ $ apt-get source -qq --print-uris libarchive-extract-perl=0.70-1
 'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive-extract-perl/libarchive-extract-perl_0.70-1.debian.tar.gz' libarchive-extract-perl_0.70-1.debian.tar.gz 1589 SHA256:f3dc3a4857760ad48e08c4ca8f2d52c93bd934ddb0e9e53e5037105d375db606
 ```
 
-### `dpkg` source package: `libarchive=3.1.2-7ubuntu2.2`
+### `dpkg` source package: `libarchive=3.1.2-7ubuntu2.3`
 
 Binary Packages:
 
-- `libarchive13:amd64=3.1.2-7ubuntu2.2`
+- `libarchive13:amd64=3.1.2-7ubuntu2.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libarchive=3.1.2-7ubuntu2.3
+'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2-7ubuntu2.3.dsc' libarchive_3.1.2-7ubuntu2.3.dsc 2398 SHA256:ed409db9fdb8a6c84d85e562899a6ba7758f7d0d04e39d1648ec4b5bb0192c7c
+'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2.orig.tar.gz' libarchive_3.1.2.orig.tar.gz 4527540 SHA256:eb87eacd8fe49e8d90c8fdc189813023ccc319c5e752b01fb6ad0cc7b2c53d5e
+'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2-7ubuntu2.3.debian.tar.gz' libarchive_3.1.2-7ubuntu2.3.debian.tar.gz 34453 SHA256:83a703ae4d7096217a19b3c60064e82c220f5b5a34ac934088021d7ebef7bd20
+```
 
 ### `dpkg` source package: `libbsd=0.6.0-2ubuntu1`
 
@@ -2344,21 +2385,27 @@ $ apt-get source -qq --print-uris libdatrie=0.2.8-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdatrie/libdatrie_0.2.8-1.debian.tar.gz' libdatrie_0.2.8-1.debian.tar.gz 7651 SHA256:7563b262c917cb507d17b35437a484c54c2964cff9994ffbbac1f78fb5f3c59b
 ```
 
-### `dpkg` source package: `libdrm=2.4.64-1~ubuntu14.04.1`
+### `dpkg` source package: `libdrm=2.4.67-1ubuntu0.14.04.1`
 
 Binary Packages:
 
-- `libdrm-intel1:amd64=2.4.64-1~ubuntu14.04.1`
-- `libdrm-nouveau2:amd64=2.4.64-1~ubuntu14.04.1`
-- `libdrm-radeon1:amd64=2.4.64-1~ubuntu14.04.1`
-- `libdrm2:amd64=2.4.64-1~ubuntu14.04.1`
+- `libdrm-intel1:amd64=2.4.67-1ubuntu0.14.04.1`
+- `libdrm-nouveau2:amd64=2.4.67-1ubuntu0.14.04.1`
+- `libdrm-radeon1:amd64=2.4.67-1ubuntu0.14.04.1`
+- `libdrm2:amd64=2.4.67-1ubuntu0.14.04.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libdrm=2.4.67-1ubuntu0.14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.67-1ubuntu0.14.04.1.dsc' libdrm_2.4.67-1ubuntu0.14.04.1.dsc 3548 SHA256:17a5e251218df1f4b04e6e4b599ceaa59f233cec8f0fbf5778e11760cf2346c3
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.67.orig.tar.gz' libdrm_2.4.67.orig.tar.gz 957783 SHA256:4ae392513c4df30d88f10e69bf425a1dff960a5b4ccd4da621d9fc88523f7acb
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.67-1ubuntu0.14.04.1.diff.gz' libdrm_2.4.67-1ubuntu0.14.04.1.diff.gz 37980 SHA256:d8d9f1b3b144d2f307e6362f2a4e7f8800797fa525bf3fa82a23836185cd14d5
+```
 
 ### `dpkg` source package: `liberror-perl=0.17-1.1`
 
@@ -2418,26 +2465,32 @@ $ apt-get source -qq --print-uris libffi=3.1~rc1+r3.0.13-12ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libf/libffi/libffi_3.1~rc1+r3.0.13-12ubuntu0.1.debian.tar.xz' libffi_3.1~rc1+r3.0.13-12ubuntu0.1.debian.tar.xz 48188 SHA256:260827506b832f348584a35e38c2ccee9deb5efcf859aebe8d7d25733256f108
 ```
 
-### `dpkg` source package: `libgcrypt11=1.5.3-2ubuntu4.3`
+### `dpkg` source package: `libgcrypt11=1.5.3-2ubuntu4.4`
 
 Binary Packages:
 
-- `libgcrypt11:amd64=1.5.3-2ubuntu4.3`
-- `libgcrypt11-dev=1.5.3-2ubuntu4.3`
+- `libgcrypt11:amd64=1.5.3-2ubuntu4.4`
+- `libgcrypt11-dev=1.5.3-2ubuntu4.4`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt11/copyright`, `/usr/share/doc/libgcrypt11-dev/copyright`)
 
 - `GPL-2`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libgcrypt11=1.5.3-2ubuntu4.4
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.3-2ubuntu4.4.dsc' libgcrypt11_1.5.3-2ubuntu4.4.dsc 2580 SHA256:0487f1b4333938bfa14969077a2031ab443ef2f63aed12abe8e912fb469fd8a9
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.3.orig.tar.bz2' libgcrypt11_1.5.3.orig.tar.bz2 1508530 SHA256:bcf5334e7da352c45de6aec5d2084ce9a1d30029ff4a4a5da13f1848874759d1
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.3-2ubuntu4.4.debian.tar.gz' libgcrypt11_1.5.3-2ubuntu4.4.debian.tar.gz 32367 SHA256:ab2960a9eda97781d5562fe2b60b4e0b040d3a4d0dd8f0e651a17065a8ab994d
+```
 
-### `dpkg` source package: `libgd2=2.1.0-3ubuntu0.1`
+### `dpkg` source package: `libgd2=2.1.0-3ubuntu0.3`
 
 Binary Packages:
 
-- `libgd3:amd64=2.1.0-3ubuntu0.1`
+- `libgd3:amd64=2.1.0-3ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 
@@ -2453,8 +2506,14 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 - `WEBP`
 - `XFIG`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libgd2=2.1.0-3ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.0-3ubuntu0.3.dsc' libgd2_2.1.0-3ubuntu0.3.dsc 2412 SHA256:5e4583f6bba1d7ee721a89218e2fd776eff8b475d2f6a352586851a2b67bd9e9
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.0.orig.tar.xz' libgd2_2.1.0.orig.tar.xz 2004304 SHA256:fa6665dfe3d898019671293c84d77067a3d2ede50884dbcb6df899d508370e5a
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.0-3ubuntu0.3.debian.tar.gz' libgd2_2.1.0-3ubuntu0.3.debian.tar.gz 63124 SHA256:9e9192c718b2ce7601e119971cfcee45e1fd56d3337f3f7f09175fc6cc64b447
+```
 
 ### `dpkg` source package: `libgpg-error=1.12-0.2ubuntu1`
 
@@ -2515,12 +2574,12 @@ $ apt-get source -qq --print-uris libice=2:1.0.8-2
 'http://archive.ubuntu.com/ubuntu/pool/main/libi/libice/libice_1.0.8-2.diff.gz' libice_1.0.8-2.diff.gz 15480 SHA256:1c0d0174a668ced313c2478d733318ba0769892bbf12def235e2261277916a8a
 ```
 
-### `dpkg` source package: `libidn=1.28-1ubuntu2`
+### `dpkg` source package: `libidn=1.28-1ubuntu2.1`
 
 Binary Packages:
 
-- `libidn11:amd64=1.28-1ubuntu2`
-- `libidn11-dev=1.28-1ubuntu2`
+- `libidn11:amd64=1.28-1ubuntu2.1`
+- `libidn11-dev=1.28-1ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`, `/usr/share/doc/libidn11-dev/copyright`)
 
@@ -2539,10 +2598,10 @@ Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libidn=1.28-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.28-1ubuntu2.dsc' libidn_1.28-1ubuntu2.dsc 1614 SHA256:01d4a49753f4c5c319fe7a1e4c0a05331db21660470e44cc5e33b6f525de4a81
+$ apt-get source -qq --print-uris libidn=1.28-1ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.28-1ubuntu2.1.dsc' libidn_1.28-1ubuntu2.1.dsc 2264 SHA256:7b111cff79738a91e3b553cd59f01e034a1800ad3d5eb7b157aeda249f360e27
 'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.28.orig.tar.gz' libidn_1.28.orig.tar.gz 3476317 SHA256:dd357a968449abc97c7e5fa088a4a384de57cb36564f9d4e0d898ecc6373abfb
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.28-1ubuntu2.debian.tar.gz' libidn_1.28-1ubuntu2.debian.tar.gz 11898 SHA256:e22fc6bd1445e3e45888618f28fbdd75ea93568213e39cd20719e7fa3f442863
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn/libidn_1.28-1ubuntu2.1.debian.tar.gz' libidn_1.28-1ubuntu2.1.debian.tar.gz 47763 SHA256:511a2cfd43a0f3717152434d6735ddcddc12c85914b0b40e5df83a27bc9f0271
 ```
 
 ### `dpkg` source package: `libjpeg-turbo=1.3.0-0ubuntu2`
@@ -3350,11 +3409,11 @@ $ apt-get source -qq --print-uris libxpm=1:3.5.10-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.10-1.diff.gz' libxpm_3.5.10-1.diff.gz 15461 SHA256:6ffce2a378b594130d4ac422c2ce0221e4d774b3aa678aed3628927f705524fe
 ```
 
-### `dpkg` source package: `libxrandr=2:1.4.2-1`
+### `dpkg` source package: `libxrandr=2:1.5.0-1~trusty1`
 
 Binary Packages:
 
-- `libxrandr2:amd64=2:1.4.2-1`
+- `libxrandr2:amd64=2:1.5.0-1~trusty1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3363,10 +3422,10 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxrandr=2:1.4.2-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxrandr/libxrandr_1.4.2-1.dsc' libxrandr_1.4.2-1.dsc 2091 SHA256:cdc60b31275d8a80c2aaf8105aa015e35e54368fc1fb435e728f1926720fa203
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxrandr/libxrandr_1.4.2.orig.tar.gz' libxrandr_1.4.2.orig.tar.gz 384543 SHA256:fdccecde43daf8caf5697884fe7855c6560e4804957c57f71f65439544b847d4
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxrandr/libxrandr_1.4.2-1.diff.gz' libxrandr_1.4.2-1.diff.gz 16357 SHA256:c2a1630e677713eab84e4e074aa0400bcc2558fb3b38dcccf1ba01190c5f595e
+$ apt-get source -qq --print-uris libxrandr=2:1.5.0-1~trusty1
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxrandr/libxrandr_1.5.0-1~trusty1.dsc' libxrandr_1.5.0-1~trusty1.dsc 2157 SHA256:45d8e109cec58108344025c2b686fb4d27a6349bd0f20077e1b122f24d0fc015
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxrandr/libxrandr_1.5.0.orig.tar.gz' libxrandr_1.5.0.orig.tar.gz 382147 SHA256:1b594a149e6b124aab7149446f2fd886461e2935eca8dca43fe83a70cf8ec451
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxrandr/libxrandr_1.5.0-1~trusty1.diff.gz' libxrandr_1.5.0-1~trusty1.diff.gz 13569 SHA256:1ac7f6396cd337f9735ac83bf29d3e7f6e02e1ae00c196ba47ff1dc8676b7497
 ```
 
 ### `dpkg` source package: `libxrender=1:0.9.8-1build0.14.04.1`
@@ -3464,18 +3523,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.4-3ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.4-3ubuntu3.1.debian.tar.gz' libyaml_0.1.4-3ubuntu3.1.debian.tar.gz 6404 SHA256:816422e1c743180409aff9247f3a298c8f98260d91da29c7315ce8bd576d53c2
 ```
 
-### `dpkg` source package: `linux=3.13.0-88.135`
+### `dpkg` source package: `linux=3.13.0-96.143`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-88.135`
+- `linux-libc-dev:amd64=3.13.0-96.143`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.13.0-96.143
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-96.143.dsc' linux_3.13.0-96.143.dsc 9072 SHA256:abda7f134f62fc4e144e8b397086b4e1433cb466132ddae1a35be7b3bd45fff1
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-96.143.diff.gz' linux_3.13.0-96.143.diff.gz 9303322 SHA256:7bc48d45f30fef32beff91b8449945b12c3b9df378bc34c9682e76eeb06d39c0
+```
 
 ### `dpkg` source package: `lksctp-tools=1.0.15+dfsg-1`
 
@@ -3583,20 +3648,25 @@ $ apt-get source -qq --print-uris logrotate=3.8.7-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-1ubuntu1.debian.tar.gz' logrotate_3.8.7-1ubuntu1.debian.tar.gz 23842 SHA256:d8f09d0bcf0ec2d334acb40f7d158a5f9df2a536f38586a58d253d79209a623f
 ```
 
-### `dpkg` source package: `lsb=4.1+Debian11ubuntu6.1`
+### `dpkg` source package: `lsb=4.1+Debian11ubuntu6.2`
 
 Binary Packages:
 
-- `lsb-base=4.1+Debian11ubuntu6.1`
-- `lsb-release=4.1+Debian11ubuntu6.1`
+- `lsb-base=4.1+Debian11ubuntu6.2`
+- `lsb-release=4.1+Debian11ubuntu6.2`
 
 Licenses: (parsed from: `/usr/share/doc/lsb-base/copyright`, `/usr/share/doc/lsb-release/copyright`)
 
 - `BSD-3-clause`
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris lsb=4.1+Debian11ubuntu6.2
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lsb/lsb_4.1+Debian11ubuntu6.2.dsc' lsb_4.1+Debian11ubuntu6.2.dsc 2431 SHA256:d5d317e5d5af01cb0e833fe517c38594cba0a4f6585f9d92beac54445e8598ad
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lsb/lsb_4.1+Debian11ubuntu6.2.tar.xz' lsb_4.1+Debian11ubuntu6.2.tar.xz 66156 SHA256:14eac458299596fd70cde7bb696c1ae9f34df5277491de23d13868489fb4bcb6
+```
 
 ### `dpkg` source package: `lvm2=2.02.98-6ubuntu2`
 
@@ -3897,13 +3967,13 @@ $ apt-get source -qq --print-uris mpi-defaults=1.0.2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/universe/m/mpi-defaults/mpi-defaults_1.0.2ubuntu1.tar.gz' mpi-defaults_1.0.2ubuntu1.tar.gz 3648 SHA256:9217770e757a716021d24391b24b796bb5e4d7b0a7235a5d8c06acbe9e46106c
 ```
 
-### `dpkg` source package: `mysql-5.5=5.5.49-0ubuntu0.14.04.1`
+### `dpkg` source package: `mysql-5.5=5.5.52-0ubuntu0.14.04.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.5.49-0ubuntu0.14.04.1`
-- `libmysqlclient18:amd64=5.5.49-0ubuntu0.14.04.1`
-- `mysql-common=5.5.49-0ubuntu0.14.04.1`
+- `libmysqlclient-dev=5.5.52-0ubuntu0.14.04.1`
+- `libmysqlclient18:amd64=5.5.52-0ubuntu0.14.04.1`
+- `mysql-common=5.5.52-0ubuntu0.14.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -3921,8 +3991,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.5=5.5.52-0ubuntu0.14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.52-0ubuntu0.14.04.1.dsc' mysql-5.5_5.5.52-0ubuntu0.14.04.1.dsc 3173 SHA256:ae4ee12c5e90ea7068768e27645b397c208806f243f012ee3ae9af8bcdb6e27a
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.52.orig.tar.gz' mysql-5.5_5.5.52.orig.tar.gz 21032776 SHA256:7820e13de6b3f4dadd255e12b2e9f3de43daf4507c218018c382d45aad8162fd
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.52-0ubuntu0.14.04.1.debian.tar.gz' mysql-5.5_5.5.52-0ubuntu0.14.04.1.debian.tar.gz 314353 SHA256:b2dac1ef7f747f5b787b860cbb1d071a901dde5b50f3d936bdcc2b58f79e74d1
+```
 
 ### `dpkg` source package: `ncurses=5.9+20140118-1ubuntu1`
 
@@ -4151,12 +4227,12 @@ $ apt-get source -qq --print-uris ocl-icd=2.1.3-4
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/ocl-icd/ocl-icd_2.1.3-4.debian.tar.xz' ocl-icd_2.1.3-4.debian.tar.xz 9920 SHA256:9f8665d99bda401d69ce5ae55b43a76215509377917be6b076343b3091a3de68
 ```
 
-### `dpkg` source package: `openldap=2.4.31-1+nmu2ubuntu8.2`
+### `dpkg` source package: `openldap=2.4.31-1+nmu2ubuntu8.3`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.31-1+nmu2ubuntu8.2`
-- `libldap2-dev:amd64=2.4.31-1+nmu2ubuntu8.2`
+- `libldap-2.4-2:amd64=2.4.31-1+nmu2ubuntu8.3`
+- `libldap2-dev:amd64=2.4.31-1+nmu2ubuntu8.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4165,10 +4241,10 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openldap=2.4.31-1+nmu2ubuntu8.2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.2.dsc' openldap_2.4.31-1+nmu2ubuntu8.2.dsc 2890 SHA256:10b7e397f4de5f4ba76056200cac8175ec15efa65d27d5522098e59af8ed988f
+$ apt-get source -qq --print-uris openldap=2.4.31-1+nmu2ubuntu8.3
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.3.dsc' openldap_2.4.31-1+nmu2ubuntu8.3.dsc 2949 SHA256:e1271cf0647886f1eb8a3ec088ab46f2fa031c5154d5ad8b4a3725a9af963c92
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31.orig.tar.gz' openldap_2.4.31.orig.tar.gz 4720612 SHA256:dff60c1044021217ab97a7bdda5a7016015f042db0fbfd566d52abb266d19239
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.2.diff.gz' openldap_2.4.31-1+nmu2ubuntu8.2.diff.gz 175553 SHA256:07da980b40808033e9b04043a67e147bd7bffe2b3ec248c97efa4af2465955ce
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.3.diff.gz' openldap_2.4.31-1+nmu2ubuntu8.3.diff.gz 175837 SHA256:6cb56364d5a7483f62e3918d5d0d60778ec736b69d5b60baaabcb1406ad18bbf
 ```
 
 ### `dpkg` source package: `openmpi=1.6.5-8`
@@ -4193,21 +4269,27 @@ $ apt-get source -qq --print-uris openmpi=1.6.5-8
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/openmpi/openmpi_1.6.5-8.debian.tar.gz' openmpi_1.6.5-8.debian.tar.gz 32299 SHA256:8d31dc0de96f2b38db33bacb81d9dcccb876c5d86736ea1dff12be12a2790943
 ```
 
-### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.19`
+### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.21`
 
 Binary Packages:
 
-- `libssl-dev:amd64=1.0.1f-1ubuntu2.19`
-- `libssl-doc=1.0.1f-1ubuntu2.19`
-- `libssl1.0.0:amd64=1.0.1f-1ubuntu2.19`
-- `openssl=1.0.1f-1ubuntu2.19`
+- `libssl-dev:amd64=1.0.1f-1ubuntu2.21`
+- `libssl-doc=1.0.1f-1ubuntu2.21`
+- `libssl1.0.0:amd64=1.0.1f-1ubuntu2.21`
+- `openssl=1.0.1f-1ubuntu2.21`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1f-1ubuntu2.21
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.21.dsc' openssl_1.0.1f-1ubuntu2.21.dsc 2370 SHA256:039cf14a9f8f7f89264da8a8b9ed5f25d61dd1df06b076c3ab3335ed21680a31
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f.orig.tar.gz' openssl_1.0.1f.orig.tar.gz 4509212 SHA256:6cc2a80b17d64de6b7bac985745fdaba971d54ffd7d38d3556f998d7c0c9cb5a
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.21.debian.tar.gz' openssl_1.0.1f-1ubuntu2.21.debian.tar.gz 256838 SHA256:fdc961260478ccf4e94dc88add2bd5c4f0f0afe57e532333b63ecf54cb4e15ee
+```
 
 ### `dpkg` source package: `orc=1:0.4.18-1ubuntu1`
 
@@ -4508,12 +4590,12 @@ $ apt-get source -qq --print-uris popt=1.16-8ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/popt/popt_1.16-8ubuntu1.debian.tar.gz' popt_1.16-8ubuntu1.debian.tar.gz 15563 SHA256:f56a14f2dd571a3f14f0d340d54e502b50ae5fcae3f9303b93d9cc0f20c8cf29
 ```
 
-### `dpkg` source package: `postgresql-9.3=9.3.13-0ubuntu0.14.04`
+### `dpkg` source package: `postgresql-9.3=9.3.14-0ubuntu0.14.04`
 
 Binary Packages:
 
-- `libpq-dev=9.3.13-0ubuntu0.14.04`
-- `libpq5=9.3.13-0ubuntu0.14.04`
+- `libpq-dev=9.3.14-0ubuntu0.14.04`
+- `libpq5=9.3.14-0ubuntu0.14.04`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -4522,8 +4604,14 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `GPL-1`
 - `Tcl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-9.3=9.3.14-0ubuntu0.14.04
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.14-0ubuntu0.14.04.dsc' postgresql-9.3_9.3.14-0ubuntu0.14.04.dsc 3455 SHA256:988895bc036fd52a15822503c06a76dc76b62def826fb967a0b651bcbe668926
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.14.orig.tar.bz2' postgresql-9.3_9.3.14.orig.tar.bz2 17042199 SHA256:5c4322f1c42ba1ff4b28383069c56663b46160bb08e85d41fa2ab9a5009d039d
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.14-0ubuntu0.14.04.debian.tar.gz' postgresql-9.3_9.3.14-0ubuntu0.14.04.debian.tar.gz 32487 SHA256:678626c5a0b2892b44ee6b5643be0134c7fb04c62313dee1060a776dae1eeb82
+```
 
 ### `dpkg` source package: `procps=1:3.3.9-1ubuntu2.2`
 
@@ -4544,6 +4632,25 @@ $ apt-get source -qq --print-uris procps=1:3.3.9-1ubuntu2.2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.9-1ubuntu2.2.dsc' procps_3.3.9-1ubuntu2.2.dsc 2150 SHA256:3c6247185c4c2658865143d97e62703ee5a19fe8767f8ca459bf2f8649581ebd
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.9.orig.tar.xz' procps_3.3.9.orig.tar.xz 560812 SHA256:00f0cb0fadf968ddf605b0ef119846af07386629244d4f3da711a2cecf4e8663
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.9-1ubuntu2.2.debian.tar.gz' procps_3.3.9-1ubuntu2.2.debian.tar.gz 40730 SHA256:b1a99cac5af53633118cc25a3fd6cf5ddb8dd23dbf1f15eb8cb07b7306d8448f
+```
+
+### `dpkg` source package: `pycurl=7.19.3-0ubuntu3`
+
+Binary Packages:
+
+- `python-pycurl=7.19.3-0ubuntu3`
+
+Licenses: (parsed from: `/usr/share/doc/python-pycurl/copyright`)
+
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris pycurl=7.19.3-0ubuntu3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pycurl/pycurl_7.19.3-0ubuntu3.dsc' pycurl_7.19.3-0ubuntu3.dsc 1749 SHA256:e2a28df2be2cb506e0aff8f499c82d365f5f32ef9552932d086e22f7a617b5e5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pycurl/pycurl_7.19.3.orig.tar.gz' pycurl_7.19.3.orig.tar.gz 113771 SHA256:05e48835fe445ff327dcd373f49d9970e0b828a07cd4d08a23264507a742d616
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pycurl/pycurl_7.19.3-0ubuntu3.debian.tar.gz' pycurl_7.19.3-0ubuntu3.debian.tar.gz 8117 SHA256:d81d5f56339ed934b1b99aec2b1a0858e530d27b4daf4cf09712aa715c053826
 ```
 
 ### `dpkg` source package: `python-catkin-pkg=0.2.10-1`
@@ -4744,18 +4851,24 @@ $ apt-get source -qq --print-uris python-rosinstall=0.7.8-1
 'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosinstall/python-rosinstall_0.7.8-1.debian.tar.gz' python-rosinstall_0.7.8-1.debian.tar.gz 1008 SHA256:218375984f09c4fcfd9febfa9d08af30706a37c83e0c88925e682d84b6d44c7d
 ```
 
-### `dpkg` source package: `python-rospkg=1.0.39-1`
+### `dpkg` source package: `python-rospkg=1.0.40-1`
 
 Binary Packages:
 
-- `python-rospkg=1.0.39-1`
+- `python-rospkg=1.0.40-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rospkg=1.0.40-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.0.40-1.dsc' python-rospkg_1.0.40-1.dsc 880 SHA256:1e2f13ae00884d47e4e122c39f0ae724abe315f666609434d9a90a09529b2cec
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.0.40.orig.tar.gz' python-rospkg_1.0.40.orig.tar.gz 39546 SHA256:ea5b6e716b08f3e0a24f62ba9d52bbf11d8d6d8b031c41b39ad9b6d6736f7401
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.0.40-1.debian.tar.gz' python-rospkg_1.0.40-1.debian.tar.gz 980 SHA256:d03386d8c36b88af5c3534c5562a04fcc1aa3f8f07cd340b123fa8cf56a8cbac
+```
 
 ### `dpkg` source package: `python-setuptools=3.3-1ubuntu2`
 
@@ -4777,18 +4890,24 @@ $ apt-get source -qq --print-uris python-setuptools=3.3-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-setuptools/python-setuptools_3.3-1ubuntu2.debian.tar.gz' python-setuptools_3.3-1ubuntu2.debian.tar.gz 13982 SHA256:c23290ec74002d59fd6bf5a63f5a822568d02cecaedc0f1195684c56c3bf5e2a
 ```
 
-### `dpkg` source package: `python-vcstools=0.1.38-1`
+### `dpkg` source package: `python-vcstools=0.1.39-1`
 
 Binary Packages:
 
-- `python-vcstools=0.1.38-1`
+- `python-vcstools=0.1.39-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-vcstools=0.1.39-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-vcstools/python-vcstools_0.1.39-1.dsc' python-vcstools_0.1.39-1.dsc 935 SHA256:f94fc53f2763be3b2b751ad8a0633d301947daf11e62acdfffa2b4acdb2c5121
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-vcstools/python-vcstools_0.1.39.orig.tar.gz' python-vcstools_0.1.39.orig.tar.gz 51606 SHA256:0570be9318e0bcd33a81a96107b033d86e629868a320f6620f370ba2fc26d44d
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-vcstools/python-vcstools_0.1.39-1.debian.tar.xz' python-vcstools_0.1.39-1.debian.tar.xz 1112 SHA256:47f7c1f5b1d610dd5a95aa73233b79aa4fad16fc0048c4ad2547a1c666346a74
+```
 
 ### `dpkg` source package: `python-wstool=0.1.13-1`
 
@@ -4861,14 +4980,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.4.0-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.4.0-0ubuntu2.tar.gz' python3-defaults_3.4.0-0ubuntu2.tar.gz 127619 SHA256:4a1a9019e69ba130213268cc83d8bef9216cda8596bd71546b2369a389650730
 ```
 
-### `dpkg` source package: `python3.4=3.4.3-1ubuntu1~14.04.3`
+### `dpkg` source package: `python3.4=3.4.3-1ubuntu1~14.04.4`
 
 Binary Packages:
 
-- `libpython3.4-minimal:amd64=3.4.3-1ubuntu1~14.04.3`
-- `libpython3.4-stdlib:amd64=3.4.3-1ubuntu1~14.04.3`
-- `python3.4=3.4.3-1ubuntu1~14.04.3`
-- `python3.4-minimal=3.4.3-1ubuntu1~14.04.3`
+- `libpython3.4-minimal:amd64=3.4.3-1ubuntu1~14.04.4`
+- `libpython3.4-stdlib:amd64=3.4.3-1ubuntu1~14.04.4`
+- `python3.4=3.4.3-1ubuntu1~14.04.4`
+- `python3.4-minimal=3.4.3-1ubuntu1~14.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.4-minimal/copyright`, `/usr/share/doc/libpython3.4-stdlib/copyright`, `/usr/share/doc/python3.4/copyright`, `/usr/share/doc/python3.4-minimal/copyright`)
 
@@ -4890,8 +5009,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.4-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.4=3.4.3-1ubuntu1~14.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3-1ubuntu1~14.04.4.dsc' python3.4_3.4.3-1ubuntu1~14.04.4.dsc 3229 SHA256:4981ecafed3a39e5fcb5ffd2472512a0771ce6049a9f2e6b5c3be40927062a34
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3.orig.tar.xz' python3.4_3.4.3.orig.tar.xz 12690456 SHA256:9151f6d2975471e6b6189aa2de836b48ba0361b145dd8fc143e986efbbed9f3a
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3-1ubuntu1~14.04.4.debian.tar.gz' python3.4_3.4.3-1ubuntu1~14.04.4.debian.tar.gz 258416 SHA256:2bb185de636d4013b32fb7c6c283be77a965cd4c7ef3e71b333d915c441647d8
+```
 
 ### `dpkg` source package: `pyyaml=3.10-4ubuntu0.1`
 
@@ -4971,11 +5096,11 @@ $ apt-get source -qq --print-uris resolvconf=1.69ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/r/resolvconf/resolvconf_1.69ubuntu1.1.tar.xz' resolvconf_1.69ubuntu1.1.tar.xz 71684 SHA256:46b1d11741afb5cf8e472678e0f518c1cef755ece617e7325895be83924e6636
 ```
 
-### `dpkg` source package: `ros-indigo-actionlib-msgs=1.11.9-0trusty-20160419-171409-0700`
+### `dpkg` source package: `ros-indigo-actionlib-msgs=1.11.9-0trusty-20160627-170357-0700`
 
 Binary Packages:
 
-- `ros-indigo-actionlib-msgs=1.11.9-0trusty-20160419-171409-0700`
+- `ros-indigo-actionlib-msgs=1.11.9-0trusty-20160627-170357-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4984,11 +5109,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-actionlib=1.11.5-0trusty-20160420-051725-0700`
+### `dpkg` source package: `ros-indigo-actionlib=1.11.6-0trusty-20160628-074812-0700`
 
 Binary Packages:
 
-- `ros-indigo-actionlib=1.11.5-0trusty-20160420-051725-0700`
+- `ros-indigo-actionlib=1.11.6-0trusty-20160628-074812-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5010,11 +5135,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-bond-core=1.7.16-0trusty-20160419-220842-0700`
+### `dpkg` source package: `ros-indigo-bond-core=1.7.17-0trusty-20160627-233957-0700`
 
 Binary Packages:
 
-- `ros-indigo-bond-core=1.7.16-0trusty-20160419-220842-0700`
+- `ros-indigo-bond-core=1.7.17-0trusty-20160627-233957-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5023,11 +5148,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-bond=1.7.16-0trusty-20160419-171424-0700`
+### `dpkg` source package: `ros-indigo-bond=1.7.17-0trusty-20160627-190853-0700`
 
 Binary Packages:
 
-- `ros-indigo-bond=1.7.16-0trusty-20160419-171424-0700`
+- `ros-indigo-bond=1.7.17-0trusty-20160627-190853-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5036,11 +5161,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-bondcpp=1.7.16-0trusty-20160419-201244-0700`
+### `dpkg` source package: `ros-indigo-bondcpp=1.7.17-0trusty-20160627-191126-0700`
 
 Binary Packages:
 
-- `ros-indigo-bondcpp=1.7.16-0trusty-20160419-201244-0700`
+- `ros-indigo-bondcpp=1.7.17-0trusty-20160627-191126-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5049,11 +5174,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-bondpy=1.7.16-0trusty-20160419-215747-0700`
+### `dpkg` source package: `ros-indigo-bondpy=1.7.17-0trusty-20160627-233335-0700`
 
 Binary Packages:
 
-- `ros-indigo-bondpy=1.7.16-0trusty-20160419-215747-0700`
+- `ros-indigo-bondpy=1.7.17-0trusty-20160627-233335-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5075,11 +5200,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-class-loader=0.3.3-1trusty-20160321-180921-0700`
+### `dpkg` source package: `ros-indigo-class-loader=0.3.4-0trusty-20160627-155156-0700`
 
 Binary Packages:
 
-- `ros-indigo-class-loader=0.3.3-1trusty-20160321-180921-0700`
+- `ros-indigo-class-loader=0.3.4-0trusty-20160627-155156-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5114,11 +5239,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-collada-urdf=1.11.11-0trusty-20160628-110446-0700`
+### `dpkg` source package: `ros-indigo-collada-urdf=1.11.11-0trusty-20160801-102724-0700`
 
 Binary Packages:
 
-- `ros-indigo-collada-urdf=1.11.11-0trusty-20160628-110446-0700`
+- `ros-indigo-collada-urdf=1.11.11-0trusty-20160801-102724-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5127,11 +5252,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-common-msgs=1.11.9-0trusty-20160419-201222-0700`
+### `dpkg` source package: `ros-indigo-common-msgs=1.11.9-0trusty-20160627-191210-0700`
 
 Binary Packages:
 
-- `ros-indigo-common-msgs=1.11.9-0trusty-20160419-201222-0700`
+- `ros-indigo-common-msgs=1.11.9-0trusty-20160627-191210-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5205,11 +5330,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-diagnostic-msgs=1.11.9-0trusty-20160419-172026-0700`
+### `dpkg` source package: `ros-indigo-diagnostic-msgs=1.11.9-0trusty-20160627-170323-0700`
 
 Binary Packages:
 
-- `ros-indigo-diagnostic-msgs=1.11.9-0trusty-20160419-172026-0700`
+- `ros-indigo-diagnostic-msgs=1.11.9-0trusty-20160627-170323-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5244,11 +5369,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-dynamic-reconfigure=1.5.43-0trusty-20160420-054730-0700`
+### `dpkg` source package: `ros-indigo-dynamic-reconfigure=1.5.44-0trusty-20160628-074605-0700`
 
 Binary Packages:
 
-- `ros-indigo-dynamic-reconfigure=1.5.43-0trusty-20160420-054730-0700`
+- `ros-indigo-dynamic-reconfigure=1.5.44-0trusty-20160628-074605-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5309,11 +5434,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-gencpp=0.5.4-0trusty-20160321-110217-0700`
+### `dpkg` source package: `ros-indigo-gencpp=0.5.5-0trusty-20160627-155159-0700`
 
 Binary Packages:
 
-- `ros-indigo-gencpp=0.5.4-0trusty-20160321-110217-0700`
+- `ros-indigo-gencpp=0.5.5-0trusty-20160627-155159-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5348,11 +5473,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-genpy=0.5.9-0trusty-20160419-132811-0700`
+### `dpkg` source package: `ros-indigo-genpy=0.5.10-0trusty-20160627-155125-0700`
 
 Binary Packages:
 
-- `ros-indigo-genpy=0.5.9-0trusty-20160419-132811-0700`
+- `ros-indigo-genpy=0.5.10-0trusty-20160627-155125-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5361,11 +5486,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-geometric-shapes=0.4.4-0trusty-20160627-191917-0700`
+### `dpkg` source package: `ros-indigo-geometric-shapes=0.4.4-0trusty-20160801-101433-0700`
 
 Binary Packages:
 
-- `ros-indigo-geometric-shapes=0.4.4-0trusty-20160627-191917-0700`
+- `ros-indigo-geometric-shapes=0.4.4-0trusty-20160801-101433-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5374,11 +5499,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-geometry-msgs=1.11.9-0trusty-20160419-172829-0700`
+### `dpkg` source package: `ros-indigo-geometry-msgs=1.11.9-0trusty-20160627-170848-0700`
 
 Binary Packages:
 
-- `ros-indigo-geometry-msgs=1.11.9-0trusty-20160419-172829-0700`
+- `ros-indigo-geometry-msgs=1.11.9-0trusty-20160627-170848-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5439,11 +5564,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-message-filters=1.11.19-0trusty-20160420-031832-0700`
+### `dpkg` source package: `ros-indigo-message-filters=1.11.20-0trusty-20160628-071948-0700`
 
 Binary Packages:
 
-- `ros-indigo-message-filters=1.11.19-0trusty-20160420-031832-0700`
+- `ros-indigo-message-filters=1.11.20-0trusty-20160628-071948-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5452,11 +5577,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-message-generation=0.2.10-0trusty-20160419-135825-0700`
+### `dpkg` source package: `ros-indigo-message-generation=0.2.10-0trusty-20160627-161830-0700`
 
 Binary Packages:
 
-- `ros-indigo-message-generation=0.2.10-0trusty-20160419-135825-0700`
+- `ros-indigo-message-generation=0.2.10-0trusty-20160627-161830-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5465,11 +5590,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-message-runtime=0.4.12-0trusty-20160419-135706-0700`
+### `dpkg` source package: `ros-indigo-message-runtime=0.4.12-0trusty-20160627-161852-0700`
 
 Binary Packages:
 
-- `ros-indigo-message-runtime=0.4.12-0trusty-20160419-135706-0700`
+- `ros-indigo-message-runtime=0.4.12-0trusty-20160627-161852-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5478,11 +5603,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-mk=1.11.12-0trusty-20160419-193734-0700`
+### `dpkg` source package: `ros-indigo-mk=1.11.13-0trusty-20160627-162427-0700`
 
 Binary Packages:
 
-- `ros-indigo-mk=1.11.12-0trusty-20160419-193734-0700`
+- `ros-indigo-mk=1.11.13-0trusty-20160627-162427-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5491,11 +5616,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-nav-msgs=1.11.9-0trusty-20160419-180412-0700`
+### `dpkg` source package: `ros-indigo-nav-msgs=1.11.9-0trusty-20160627-171232-0700`
 
 Binary Packages:
 
-- `ros-indigo-nav-msgs=1.11.9-0trusty-20160419-180412-0700`
+- `ros-indigo-nav-msgs=1.11.9-0trusty-20160627-171232-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5504,11 +5629,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-nodelet-core=1.9.4-0trusty-20160420-071635-0700`
+### `dpkg` source package: `ros-indigo-nodelet-core=1.9.5-0trusty-20160628-075706-0700`
 
 Binary Packages:
 
-- `ros-indigo-nodelet-core=1.9.4-0trusty-20160420-071635-0700`
+- `ros-indigo-nodelet-core=1.9.5-0trusty-20160628-075706-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5517,11 +5642,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-nodelet-topic-tools=1.9.4-0trusty-20160420-064926-0700`
+### `dpkg` source package: `ros-indigo-nodelet-topic-tools=1.9.5-0trusty-20160628-075220-0700`
 
 Binary Packages:
 
-- `ros-indigo-nodelet-topic-tools=1.9.4-0trusty-20160420-064926-0700`
+- `ros-indigo-nodelet-topic-tools=1.9.5-0trusty-20160628-075220-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5530,11 +5655,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-nodelet=1.9.4-0trusty-20160419-215324-0700`
+### `dpkg` source package: `ros-indigo-nodelet=1.9.5-0trusty-20160627-233357-0700`
 
 Binary Packages:
 
-- `ros-indigo-nodelet=1.9.4-0trusty-20160419-215324-0700`
+- `ros-indigo-nodelet=1.9.5-0trusty-20160627-233357-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5569,11 +5694,11 @@ Licenses: (parsed from: `/usr/share/doc/ros-indigo-orocos-kdl/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-pluginlib=1.10.2-0trusty-20160419-193550-0700`
+### `dpkg` source package: `ros-indigo-pluginlib=1.10.3-0trusty-20160627-163139-0700`
 
 Binary Packages:
 
-- `ros-indigo-pluginlib=1.10.2-0trusty-20160419-193550-0700`
+- `ros-indigo-pluginlib=1.10.3-0trusty-20160627-163139-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5608,11 +5733,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-resource-retriever=1.11.6-0trusty-20160627-180731-0700`
+### `dpkg` source package: `ros-indigo-resource-retriever=1.11.7-1trusty-20160801-091730-0700`
 
 Binary Packages:
 
-- `ros-indigo-resource-retriever=1.11.6-0trusty-20160627-180731-0700`
+- `ros-indigo-resource-retriever=1.11.7-1trusty-20160801-091730-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5621,11 +5746,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-robot-model=1.11.11-0trusty-20160628-112941-0700`
+### `dpkg` source package: `ros-indigo-robot-model=1.11.11-0trusty-20160801-105746-0700`
 
 Binary Packages:
 
-- `ros-indigo-robot-model=1.11.11-0trusty-20160628-112941-0700`
+- `ros-indigo-robot-model=1.11.11-0trusty-20160801-105746-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5647,11 +5772,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-robot=1.1.4-0trusty-20160628-235150-0700`
+### `dpkg` source package: `ros-indigo-robot=1.1.4-0trusty-20160801-152541-0700`
 
 Binary Packages:
 
-- `ros-indigo-robot=1.1.4-0trusty-20160628-235150-0700`
+- `ros-indigo-robot=1.1.4-0trusty-20160801-152541-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5660,11 +5785,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-ros-base=1.1.4-0trusty-20160420-072935-0700`
+### `dpkg` source package: `ros-indigo-ros-base=1.1.4-0trusty-20160628-080307-0700`
 
 Binary Packages:
 
-- `ros-indigo-ros-base=1.1.4-0trusty-20160420-072935-0700`
+- `ros-indigo-ros-base=1.1.4-0trusty-20160628-080307-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5673,11 +5798,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-ros-comm=1.11.19-0trusty-20160420-055141-0700`
+### `dpkg` source package: `ros-indigo-ros-comm=1.11.20-0trusty-20160628-075453-0700`
 
 Binary Packages:
 
-- `ros-indigo-ros-comm=1.11.19-0trusty-20160420-055141-0700`
+- `ros-indigo-ros-comm=1.11.20-0trusty-20160628-075453-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5686,11 +5811,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-ros-core=1.1.4-0trusty-20160420-055415-0700`
+### `dpkg` source package: `ros-indigo-ros-core=1.1.4-0trusty-20160628-075935-0700`
 
 Binary Packages:
 
-- `ros-indigo-ros-core=1.1.4-0trusty-20160420-055415-0700`
+- `ros-indigo-ros-core=1.1.4-0trusty-20160628-075935-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5699,11 +5824,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-ros=1.11.12-0trusty-20160419-194440-0700`
+### `dpkg` source package: `ros-indigo-ros=1.11.13-0trusty-20160627-162641-0700`
 
 Binary Packages:
 
-- `ros-indigo-ros=1.11.12-0trusty-20160419-194440-0700`
+- `ros-indigo-ros=1.11.13-0trusty-20160627-162641-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5725,11 +5850,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-rosbag-storage=1.11.19-0trusty-20160419-134837-0700`
+### `dpkg` source package: `ros-indigo-rosbag-storage=1.11.20-0trusty-20160627-162925-0700`
 
 Binary Packages:
 
-- `ros-indigo-rosbag-storage=1.11.19-0trusty-20160419-134837-0700`
+- `ros-indigo-rosbag-storage=1.11.20-0trusty-20160627-162925-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5738,11 +5863,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-rosbag=1.11.19-0trusty-20160420-050519-0700`
+### `dpkg` source package: `ros-indigo-rosbag=1.11.20-0trusty-20160628-072916-0700`
 
 Binary Packages:
 
-- `ros-indigo-rosbag=1.11.19-0trusty-20160420-050519-0700`
+- `ros-indigo-rosbag=1.11.20-0trusty-20160628-072916-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5751,11 +5876,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-rosbash=1.11.12-0trusty-20160321-181612-0700`
+### `dpkg` source package: `ros-indigo-rosbash=1.11.13-0trusty-20160627-155208-0700`
 
 Binary Packages:
 
-- `ros-indigo-rosbash=1.11.12-0trusty-20160321-181612-0700`
+- `ros-indigo-rosbash=1.11.13-0trusty-20160627-155208-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5764,11 +5889,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-rosboost-cfg=1.11.12-0trusty-20160321-105606-0700`
+### `dpkg` source package: `ros-indigo-rosboost-cfg=1.11.13-0trusty-20160627-155233-0700`
 
 Binary Packages:
 
-- `ros-indigo-rosboost-cfg=1.11.12-0trusty-20160321-105606-0700`
+- `ros-indigo-rosboost-cfg=1.11.13-0trusty-20160627-155233-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5777,11 +5902,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-rosbuild=1.11.12-0trusty-20160419-142152-0700`
+### `dpkg` source package: `ros-indigo-rosbuild=1.11.13-0trusty-20160627-162117-0700`
 
 Binary Packages:
 
-- `ros-indigo-rosbuild=1.11.12-0trusty-20160419-142152-0700`
+- `ros-indigo-rosbuild=1.11.13-0trusty-20160627-162117-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5790,11 +5915,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-rosclean=1.11.12-0trusty-20160321-105715-0700`
+### `dpkg` source package: `ros-indigo-rosclean=1.11.13-0trusty-20160627-155229-0700`
 
 Binary Packages:
 
-- `ros-indigo-rosclean=1.11.12-0trusty-20160321-105715-0700`
+- `ros-indigo-rosclean=1.11.13-0trusty-20160627-155229-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5803,11 +5928,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-rosconsole-bridge=0.4.4-0trusty-20160419-144051-0700`
+### `dpkg` source package: `ros-indigo-rosconsole-bridge=0.4.4-0trusty-20160627-184905-0700`
 
 Binary Packages:
 
-- `ros-indigo-rosconsole-bridge=0.4.4-0trusty-20160419-144051-0700`
+- `ros-indigo-rosconsole-bridge=0.4.4-0trusty-20160627-184905-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5816,11 +5941,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-rosconsole=1.11.19-0trusty-20160419-143005-0700`
+### `dpkg` source package: `ros-indigo-rosconsole=1.11.20-0trusty-20160627-162441-0700`
 
 Binary Packages:
 
-- `ros-indigo-rosconsole=1.11.19-0trusty-20160419-143005-0700`
+- `ros-indigo-rosconsole=1.11.20-0trusty-20160627-162441-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5868,11 +5993,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-roscpp=1.11.19-0trusty-20160419-190711-0700`
+### `dpkg` source package: `ros-indigo-roscpp=1.11.20-0trusty-20160627-173849-0700`
 
 Binary Packages:
 
-- `ros-indigo-roscpp=1.11.19-0trusty-20160419-190711-0700`
+- `ros-indigo-roscpp=1.11.20-0trusty-20160627-173849-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5881,11 +6006,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-roscreate=1.11.12-0trusty-20160321-105953-0700`
+### `dpkg` source package: `ros-indigo-roscreate=1.11.13-0trusty-20160627-155240-0700`
 
 Binary Packages:
 
-- `ros-indigo-roscreate=1.11.12-0trusty-20160321-105953-0700`
+- `ros-indigo-roscreate=1.11.13-0trusty-20160627-155240-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5894,11 +6019,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-rosgraph-msgs=1.11.2-0trusty-20160419-185918-0700`
+### `dpkg` source package: `ros-indigo-rosgraph-msgs=1.11.2-0trusty-20160627-173606-0700`
 
 Binary Packages:
 
-- `ros-indigo-rosgraph-msgs=1.11.2-0trusty-20160419-185918-0700`
+- `ros-indigo-rosgraph-msgs=1.11.2-0trusty-20160627-173606-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5907,11 +6032,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-rosgraph=1.11.19-0trusty-20160419-132822-0700`
+### `dpkg` source package: `ros-indigo-rosgraph=1.11.20-0trusty-20160627-155404-0700`
 
 Binary Packages:
 
-- `ros-indigo-rosgraph=1.11.19-0trusty-20160419-132822-0700`
+- `ros-indigo-rosgraph=1.11.20-0trusty-20160627-155404-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5920,11 +6045,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-roslang=1.11.12-0trusty-20160321-110004-0700`
+### `dpkg` source package: `ros-indigo-roslang=1.11.13-0trusty-20160627-161927-0700`
 
 Binary Packages:
 
-- `ros-indigo-roslang=1.11.12-0trusty-20160321-110004-0700`
+- `ros-indigo-roslang=1.11.13-0trusty-20160627-161927-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5933,11 +6058,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-roslaunch=1.11.19-0trusty-20160419-215338-0700`
+### `dpkg` source package: `ros-indigo-roslaunch=1.11.20-0trusty-20160627-233650-0700`
 
 Binary Packages:
 
-- `ros-indigo-roslaunch=1.11.19-0trusty-20160419-215338-0700`
+- `ros-indigo-roslaunch=1.11.20-0trusty-20160627-233650-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5946,11 +6071,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-roslib=1.11.12-0trusty-20160321-181337-0700`
+### `dpkg` source package: `ros-indigo-roslib=1.11.13-0trusty-20160627-161857-0700`
 
 Binary Packages:
 
-- `ros-indigo-roslib=1.11.12-0trusty-20160321-181337-0700`
+- `ros-indigo-roslib=1.11.13-0trusty-20160627-161857-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5959,11 +6084,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-roslisp=1.9.20-0trusty-20160419-195200-0700`
+### `dpkg` source package: `ros-indigo-roslisp=1.9.20-0trusty-20160627-173840-0700`
 
 Binary Packages:
 
-- `ros-indigo-roslisp=1.9.20-0trusty-20160419-195200-0700`
+- `ros-indigo-roslisp=1.9.20-0trusty-20160627-173840-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5972,11 +6097,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-roslz4=1.11.19-0trusty-20160419-132822-0700`
+### `dpkg` source package: `ros-indigo-roslz4=1.11.20-0trusty-20160627-162443-0700`
 
 Binary Packages:
 
-- `ros-indigo-roslz4=1.11.19-0trusty-20160419-132822-0700`
+- `ros-indigo-roslz4=1.11.20-0trusty-20160627-162443-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5985,11 +6110,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-rosmake=1.11.12-0trusty-20160321-105735-0700`
+### `dpkg` source package: `ros-indigo-rosmake=1.11.13-0trusty-20160627-160641-0700`
 
 Binary Packages:
 
-- `ros-indigo-rosmake=1.11.12-0trusty-20160321-105735-0700`
+- `ros-indigo-rosmake=1.11.13-0trusty-20160627-160641-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5998,11 +6123,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-rosmaster=1.11.19-0trusty-20160419-134636-0700`
+### `dpkg` source package: `ros-indigo-rosmaster=1.11.20-0trusty-20160627-160812-0700`
 
 Binary Packages:
 
-- `ros-indigo-rosmaster=1.11.19-0trusty-20160419-134636-0700`
+- `ros-indigo-rosmaster=1.11.20-0trusty-20160627-160812-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6011,11 +6136,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-rosmsg=1.11.19-0trusty-20160420-054027-0700`
+### `dpkg` source package: `ros-indigo-rosmsg=1.11.20-0trusty-20160628-073830-0700`
 
 Binary Packages:
 
-- `ros-indigo-rosmsg=1.11.19-0trusty-20160420-054027-0700`
+- `ros-indigo-rosmsg=1.11.20-0trusty-20160628-073830-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6024,11 +6149,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-rosnode=1.11.19-0trusty-20160420-051422-0700`
+### `dpkg` source package: `ros-indigo-rosnode=1.11.20-0trusty-20160628-074352-0700`
 
 Binary Packages:
 
-- `ros-indigo-rosnode=1.11.19-0trusty-20160420-051422-0700`
+- `ros-indigo-rosnode=1.11.20-0trusty-20160628-074352-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6037,11 +6162,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-rosout=1.11.19-0trusty-20160419-215110-0700`
+### `dpkg` source package: `ros-indigo-rosout=1.11.20-0trusty-20160627-233309-0700`
 
 Binary Packages:
 
-- `ros-indigo-rosout=1.11.19-0trusty-20160419-215110-0700`
+- `ros-indigo-rosout=1.11.20-0trusty-20160627-233309-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6050,11 +6175,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-rospack=2.2.6-0trusty-20160321-180808-0700`
+### `dpkg` source package: `ros-indigo-rospack=2.2.7-0trusty-20160627-160632-0700`
 
 Binary Packages:
 
-- `ros-indigo-rospack=2.2.6-0trusty-20160321-180808-0700`
+- `ros-indigo-rospack=2.2.7-0trusty-20160627-160632-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6063,11 +6188,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-rosparam=1.11.19-0trusty-20160419-135115-0700`
+### `dpkg` source package: `ros-indigo-rosparam=1.11.20-0trusty-20160627-160830-0700`
 
 Binary Packages:
 
-- `ros-indigo-rosparam=1.11.19-0trusty-20160419-135115-0700`
+- `ros-indigo-rosparam=1.11.20-0trusty-20160627-160830-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6076,11 +6201,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-rospy=1.11.19-0trusty-20160419-215120-0700`
+### `dpkg` source package: `ros-indigo-rospy=1.11.20-0trusty-20160627-233030-0700`
 
 Binary Packages:
 
-- `ros-indigo-rospy=1.11.19-0trusty-20160419-215120-0700`
+- `ros-indigo-rospy=1.11.20-0trusty-20160627-233030-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6089,11 +6214,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-rosservice=1.11.19-0trusty-20160420-054352-0700`
+### `dpkg` source package: `ros-indigo-rosservice=1.11.20-0trusty-20160628-074148-0700`
 
 Binary Packages:
 
-- `ros-indigo-rosservice=1.11.19-0trusty-20160420-054352-0700`
+- `ros-indigo-rosservice=1.11.20-0trusty-20160628-074148-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6102,11 +6227,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-rostest=1.11.19-0trusty-20160420-012507-0700`
+### `dpkg` source package: `ros-indigo-rostest=1.11.20-0trusty-20160628-071319-0700`
 
 Binary Packages:
 
-- `ros-indigo-rostest=1.11.19-0trusty-20160420-012507-0700`
+- `ros-indigo-rostest=1.11.20-0trusty-20160628-071319-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6128,11 +6253,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-rostopic=1.11.19-0trusty-20160420-051155-0700`
+### `dpkg` source package: `ros-indigo-rostopic=1.11.20-0trusty-20160628-073905-0700`
 
 Binary Packages:
 
-- `ros-indigo-rostopic=1.11.19-0trusty-20160420-051155-0700`
+- `ros-indigo-rostopic=1.11.20-0trusty-20160628-073905-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6141,11 +6266,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-rosunit=1.11.12-0trusty-20160321-181855-0700`
+### `dpkg` source package: `ros-indigo-rosunit=1.11.13-0trusty-20160627-162230-0700`
 
 Binary Packages:
 
-- `ros-indigo-rosunit=1.11.12-0trusty-20160321-181855-0700`
+- `ros-indigo-rosunit=1.11.13-0trusty-20160627-162230-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6154,11 +6279,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-roswtf=1.11.19-0trusty-20160420-054650-0700`
+### `dpkg` source package: `ros-indigo-roswtf=1.11.20-0trusty-20160628-074840-0700`
 
 Binary Packages:
 
-- `ros-indigo-roswtf=1.11.19-0trusty-20160420-054650-0700`
+- `ros-indigo-roswtf=1.11.20-0trusty-20160628-074840-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6180,11 +6305,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-sensor-msgs=1.11.9-0trusty-20160419-181534-0700`
+### `dpkg` source package: `ros-indigo-sensor-msgs=1.11.9-0trusty-20160627-171726-0700`
 
 Binary Packages:
 
-- `ros-indigo-sensor-msgs=1.11.9-0trusty-20160419-181534-0700`
+- `ros-indigo-sensor-msgs=1.11.9-0trusty-20160627-171726-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6193,11 +6318,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-shape-msgs=1.11.9-0trusty-20160419-181512-0700`
+### `dpkg` source package: `ros-indigo-shape-msgs=1.11.9-0trusty-20160627-171147-0700`
 
 Binary Packages:
 
-- `ros-indigo-shape-msgs=1.11.9-0trusty-20160419-181512-0700`
+- `ros-indigo-shape-msgs=1.11.9-0trusty-20160627-171147-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6245,11 +6370,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-smclib=1.7.16-0trusty-20160321-180031-0700`
+### `dpkg` source package: `ros-indigo-smclib=1.7.17-0trusty-20160627-160749-0700`
 
 Binary Packages:
 
-- `ros-indigo-smclib=1.7.16-0trusty-20160321-180031-0700`
+- `ros-indigo-smclib=1.7.17-0trusty-20160627-160749-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6258,11 +6383,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-std-msgs=0.5.10-0trusty-20160419-160953-0700`
+### `dpkg` source package: `ros-indigo-std-msgs=0.5.10-0trusty-20160627-165942-0700`
 
 Binary Packages:
 
-- `ros-indigo-std-msgs=0.5.10-0trusty-20160419-160953-0700`
+- `ros-indigo-std-msgs=0.5.10-0trusty-20160627-165942-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6271,11 +6396,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-std-srvs=1.11.2-0trusty-20160419-160958-0700`
+### `dpkg` source package: `ros-indigo-std-srvs=1.11.2-0trusty-20160627-162456-0700`
 
 Binary Packages:
 
-- `ros-indigo-std-srvs=1.11.2-0trusty-20160419-160958-0700`
+- `ros-indigo-std-srvs=1.11.2-0trusty-20160627-162456-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6284,11 +6409,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-stereo-msgs=1.11.9-0trusty-20160419-185111-0700`
+### `dpkg` source package: `ros-indigo-stereo-msgs=1.11.9-0trusty-20160627-173442-0700`
 
 Binary Packages:
 
-- `ros-indigo-stereo-msgs=1.11.9-0trusty-20160419-185111-0700`
+- `ros-indigo-stereo-msgs=1.11.9-0trusty-20160627-173442-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6388,11 +6513,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-topic-tools=1.11.19-0trusty-20160420-024832-0700`
+### `dpkg` source package: `ros-indigo-topic-tools=1.11.20-0trusty-20160628-072012-0700`
 
 Binary Packages:
 
-- `ros-indigo-topic-tools=1.11.19-0trusty-20160420-024832-0700`
+- `ros-indigo-topic-tools=1.11.20-0trusty-20160628-072012-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6401,11 +6526,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-trajectory-msgs=1.11.9-0trusty-20160419-182032-0700`
+### `dpkg` source package: `ros-indigo-trajectory-msgs=1.11.9-0trusty-20160627-171807-0700`
 
 Binary Packages:
 
-- `ros-indigo-trajectory-msgs=1.11.9-0trusty-20160419-182032-0700`
+- `ros-indigo-trajectory-msgs=1.11.9-0trusty-20160627-171807-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6440,11 +6565,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-visualization-msgs=1.11.9-0trusty-20160419-182207-0700`
+### `dpkg` source package: `ros-indigo-visualization-msgs=1.11.9-0trusty-20160627-171203-0700`
 
 Binary Packages:
 
-- `ros-indigo-visualization-msgs=1.11.9-0trusty-20160419-182207-0700`
+- `ros-indigo-visualization-msgs=1.11.9-0trusty-20160627-171203-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6466,11 +6591,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-indigo-xmlrpcpp=1.11.19-0trusty-20160419-133124-0700`
+### `dpkg` source package: `ros-indigo-xmlrpcpp=1.11.20-0trusty-20160627-160810-0700`
 
 Binary Packages:
 
-- `ros-indigo-xmlrpcpp=1.11.19-0trusty-20160419-133124-0700`
+- `ros-indigo-xmlrpcpp=1.11.20-0trusty-20160627-160810-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6905,18 +7030,24 @@ $ apt-get source -qq --print-uris torque=2.4.16+dfsg-1.3ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/universe/t/torque/torque_2.4.16+dfsg-1.3ubuntu1.debian.tar.gz' torque_2.4.16+dfsg-1.3ubuntu1.debian.tar.gz 21720 SHA256:c573894b063f5b1e6db0b4ad6e82f24e97733da03b80c3a08835438b17cf36a4
 ```
 
-### `dpkg` source package: `tzdata=2016d-0ubuntu0.14.04`
+### `dpkg` source package: `tzdata=2016f-0ubuntu0.14.04`
 
 Binary Packages:
 
-- `tzdata=2016d-0ubuntu0.14.04`
+- `tzdata=2016f-0ubuntu0.14.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2016f-0ubuntu0.14.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016f-0ubuntu0.14.04.dsc' tzdata_2016f-0ubuntu0.14.04.dsc 2066 SHA256:321ec8bb22ff5bd8e752788f12d03dc146a1666ac569c275468306d2eac43029
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016f.orig.tar.gz' tzdata_2016f.orig.tar.gz 313286 SHA256:ed8c951008d12f1db55a11e96fc055718c6571233327d9de16a7f8475e2502b0
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016f-0ubuntu0.14.04.debian.tar.xz' tzdata_2016f-0ubuntu0.14.04.debian.tar.xz 100396 SHA256:ca5272fcaf5c3c6bf9923c4cc63aaab5752920e92abe277428f1092ff21a77c7
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 
@@ -7092,6 +7223,26 @@ $ apt-get source -qq --print-uris uriparser=0.7.5-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/universe/u/uriparser/uriparser_0.7.5-1ubuntu2.dsc' uriparser_0.7.5-1ubuntu2.dsc 1915 SHA256:6b684b6c3a062d49c8b970dd8f5b26c3f8e70133fc250c1a73c447e27e9cfa8f
 'http://archive.ubuntu.com/ubuntu/pool/universe/u/uriparser/uriparser_0.7.5.orig.tar.gz' uriparser_0.7.5.orig.tar.gz 532294 SHA256:fe41585df67cf125fbf3c84a08293f535f072a4ef0609dbb05313bcee56d238f
 'http://archive.ubuntu.com/ubuntu/pool/universe/u/uriparser/uriparser_0.7.5-1ubuntu2.debian.tar.gz' uriparser_0.7.5-1ubuntu2.debian.tar.gz 4703 SHA256:43aa4a717f523369b80a4eb709b6abdb1de9b0fc592f5d663e4ad7bf652036d5
+```
+
+### `dpkg` source package: `urlgrabber=3.9.1-4ubuntu3.14.04.1`
+
+Binary Packages:
+
+- `python-urlgrabber=3.9.1-4ubuntu3.14.04.1`
+
+Licenses: (parsed from: `/usr/share/doc/python-urlgrabber/copyright`)
+
+- `GPL`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris urlgrabber=3.9.1-4ubuntu3.14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/u/urlgrabber/urlgrabber_3.9.1-4ubuntu3.14.04.1.dsc' urlgrabber_3.9.1-4ubuntu3.14.04.1.dsc 1836 SHA256:09b6bb62fa55b42094a31703f84b83609735eb9d12347f0d9d09b4029b1872b2
+'http://archive.ubuntu.com/ubuntu/pool/main/u/urlgrabber/urlgrabber_3.9.1.orig.tar.gz' urlgrabber_3.9.1.orig.tar.gz 72343 SHA256:4437076c8708e5754ea04540e46c7f4f233734ee3590bb8a96389264fb0650d0
+'http://archive.ubuntu.com/ubuntu/pool/main/u/urlgrabber/urlgrabber_3.9.1-4ubuntu3.14.04.1.debian.tar.gz' urlgrabber_3.9.1-4ubuntu3.14.04.1.debian.tar.gz 12175 SHA256:df39d7b19096bcc9aac4a51c71955775cb3709cf87bde6a67a40e27d460ceab7
 ```
 
 ### `dpkg` source package: `ustr=1.0.4-3ubuntu2`
