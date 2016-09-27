@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d68cfed018fe031905ff62f603aa62cfd96cc7735e7056cae0e6c3d66a6341bf`
-- Created: `2016-09-19T17:01:32.325793417Z`
+- Image ID: `sha256:ad8ee902e9bbe18dc665ae2df0dafe41b82c508b7cbaf76d086357034ba755f3`
+- Created: `2016-09-26T21:26:37.862278713Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -517,11 +517,11 @@ $ apt-get source -qq --print-uris hostname=3.18
 'http://archive.ubuntu.com/ubuntu/pool/main/h/hostname/hostname_3.18.tar.gz' hostname_3.18.tar.gz 13732 SHA256:5cc3ec120967b8f911e86b9561b53977bcc77191c84fe9c607177ccd09f8d207
 ```
 
-### `dpkg` source package: `init-system-helpers=1.44`
+### `dpkg` source package: `init-system-helpers=1.45`
 
 Binary Packages:
 
-- `init-system-helpers=1.44`
+- `init-system-helpers=1.45`
 
 Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 
@@ -529,8 +529,13 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL`
 - `GPL-3+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris init-system-helpers=1.45
+'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.45.dsc' init-system-helpers_1.45.dsc 1935 SHA256:405fbcc253fee78013e7de1dc1241f981ae55a54fabd76c33907940a942f741e
+'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.45.tar.xz' init-system-helpers_1.45.tar.xz 42556 SHA256:d4e8cd7a2a6fb668a0841abf2fa4e72114b4adfa80e15820b4aaec014da3bfa4
+```
 
 ### `dpkg` source package: `libassuan=2.4.3-1`
 
@@ -962,18 +967,24 @@ $ apt-get source -qq --print-uris readline=7.0-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_7.0-0ubuntu2.debian.tar.xz' readline_7.0-0ubuntu2.debian.tar.xz 28524 SHA256:61334a69abb593401d775386f7616df20e7aaf8c571e91d5158c71546123ffa7
 ```
 
-### `dpkg` source package: `sed=4.2.2-7.1`
+### `dpkg` source package: `sed=4.2.2-8`
 
 Binary Packages:
 
-- `sed=4.2.2-7.1`
+- `sed=4.2.2-8`
 
 Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 
-- `GPL`
+- `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris sed=4.2.2-8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.2.2-8.dsc' sed_4.2.2-8.dsc 1983 SHA256:1ed436e5f31808e411ffe628a8c64d5743794edd4e0dedb640f53efc08739203
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.2.2.orig.tar.bz2' sed_4.2.2.orig.tar.bz2 1059414 SHA256:f048d1838da284c8bc9753e4506b85a1e0cc1ea8999d36f6995bcb9460cddbd7
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.2.2-8.debian.tar.xz' sed_4.2.2-8.debian.tar.xz 85104 SHA256:16c35745df5187642865d3bccf5d3ee151fe1d36481da4a72f2fb8c3e54e50dd
+```
 
 ### `dpkg` source package: `sensible-utils=0.0.9`
 
@@ -993,25 +1004,31 @@ $ apt-get source -qq --print-uris sensible-utils=0.0.9
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.9.tar.gz' sensible-utils_0.0.9.tar.gz 74331 SHA256:6fcb5cc0f7f1cf80421840cfa17b1b3fa5afaf3fe852dc984a789023af2f70c6
 ```
 
-### `dpkg` source package: `shadow=1:4.2-3.1ubuntu6`
+### `dpkg` source package: `shadow=1:4.2-3.2ubuntu1`
 
 Binary Packages:
 
-- `login=1:4.2-3.1ubuntu6`
-- `passwd=1:4.2-3.1ubuntu6`
+- `login=1:4.2-3.2ubuntu1`
+- `passwd=1:4.2-3.2ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris shadow=1:4.2-3.2ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu1.dsc' shadow_4.2-3.2ubuntu1.dsc 2432 SHA256:a5d12dae23f17fa0ab7360b7164f1069e2df885a6d5139aead3ffac706b1c5b1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu1.debian.tar.xz' shadow_4.2-3.2ubuntu1.debian.tar.xz 504272 SHA256:8cf6c74b2c41c436e98ca63e229002363a5f62b31f3c5698cfdee49361a7bdf5
+```
 
-### `dpkg` source package: `sqlite3=3.14.1-1`
+### `dpkg` source package: `sqlite3=3.14.1-1build1`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.14.1-1`
+- `libsqlite3-0:amd64=3.14.1-1build1`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -1022,19 +1039,19 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sqlite3=3.14.1-1
+$ apt-get source -qq --print-uris sqlite3=3.14.1-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.14.1-1build1.dsc' sqlite3_3.14.1-1build1.dsc 2526 SHA256:77277132fa0d064837f4a42766069be070929f11f9efe29ff627cdd050663cc5
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.14.1.orig-www.tar.xz' sqlite3_3.14.1.orig-www.tar.xz 3288208 SHA256:7138c0713e9c6f3abe2aaafcf10857216172eca1c8219251c2fb4561c230a2bb
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.14.1.orig.tar.xz' sqlite3_3.14.1.orig.tar.xz 5286048 SHA256:0910cf20748f64c69d0f660799b76163f13d2263ec5427eecbb0faf4ead39d63
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.14.1-1build1.debian.tar.xz' sqlite3_3.14.1-1build1.debian.tar.xz 16580 SHA256:0b32301f6f4a4477e5f69992fa11fc3c2db84118faf9c7b36265101ccb529d01
 ```
 
-### `dpkg` source package: `systemd=231-6`
+### `dpkg` source package: `systemd=231-6git1`
 
 Binary Packages:
 
-- `libsystemd0:amd64=231-6`
-- `libudev1:amd64=231-6`
+- `libsystemd0:amd64=231-6git1`
+- `libudev1:amd64=231-6git1`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1049,7 +1066,7 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=231-6
+$ apt-get source -qq --print-uris systemd=231-6git1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-6git1.dsc' systemd_231-6git1.dsc 4459 SHA256:c1bb5a0af0c9a7cd1d45c8376d6068672ed597e6797d29547f8c1f33bb4d255e
 'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231.orig.tar.gz' systemd_231.orig.tar.gz 4381464 SHA256:899733ad6c157cedbb89aec4efe3bc824dcfd65a1d6f6bebc7b043f7924e39b4
 'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-6git1.debian.tar.xz' systemd_231-6git1.debian.tar.xz 141884 SHA256:6a3cb132e85f2163061aabe039d8270262d397dfe80135316b5cbe3d1f4953db
@@ -1113,18 +1130,23 @@ $ apt-get source -qq --print-uris tzdata=2016f-1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016f-1.debian.tar.xz' tzdata_2016f-1.debian.tar.xz 100160 SHA256:bc1174d4160b63d14a9d40fd7b473ef03f97419285a9d8ec090e5bc718c75174
 ```
 
-### `dpkg` source package: `ubuntu-keyring=2016.09.01`
+### `dpkg` source package: `ubuntu-keyring=2016.09.19`
 
 Binary Packages:
 
-- `ubuntu-keyring=2016.09.01`
+- `ubuntu-keyring=2016.09.19`
 
 Licenses: (parsed from: `/usr/share/doc/ubuntu-keyring/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris ubuntu-keyring=2016.09.19
+'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2016.09.19.dsc' ubuntu-keyring_2016.09.19.dsc 1174 SHA256:9180419a4b3b1789a203175f619df3b549485ebf7c2685879a69b0b12a267ea7
+'http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-keyring/ubuntu-keyring_2016.09.19.tar.gz' ubuntu-keyring_2016.09.19.tar.gz 20282 SHA256:e43ddc7e123b3c620778dc0a849b006f3cdff27093e917212d797eff56177492
+```
 
 ### `dpkg` source package: `ustr=1.0.4-5`
 
