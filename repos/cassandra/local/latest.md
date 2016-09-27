@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b120a57b27eb1a35870a2c5695eef5e957f8b4af0a9a2a7931bcc70fb7c0ec7c`
-- Created: `2016-09-20T01:06:03.099976526Z`
+- Image ID: `sha256:0e8fe2480b492efde0e1e01e71b701172ec564f32ed09e530b9756225014ef89`
+- Created: `2016-09-23T18:34:51.861812646Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["cassandra","-f"]`
@@ -2985,30 +2985,19 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/openjdk-8/8u102-b14.1-1~bpo8+1/
 - https://sources.debian.net/src/openjdk-8/8u102-b14.1-1~bpo8+1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb8u3`
+### `dpkg` source package: `openssl=1.0.1t-1+deb8u4`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1t-1+deb8u3`
-- `openssl=1.0.1t-1+deb8u3`
+- `libssl1.0.0:amd64=1.0.1t-1+deb8u4`
+- `openssl=1.0.1t-1+deb8u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u3
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u3.dsc' openssl_1.0.1t-1+deb8u3.dsc 2255 SHA256:aad37a98b1fd87c5ba5ae8fd724655cdbdbd9fd4c58818858c57045a36c02ff6
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u3.debian.tar.xz' openssl_1.0.1t-1+deb8u3.debian.tar.xz 97104 SHA256:fb078fe66d58cf3ef6606c1470b5dc7c8a3ae57bed669d436d26592f82175d24
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u3/
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
