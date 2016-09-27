@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:48b8b08dca4d307feb5b560650be81d8e5cba8e9849dbf6a21df41b48dcf340c`
-- Created: `2016-08-31T17:40:57.653982213Z`
+- Image ID: `sha256:c6d2bbc1f992fabadfcd8450b3d000149fc64ddd824bdad17f388776b1053493`
+- Created: `2016-09-23T20:06:38.497793333Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["mongod"]`
