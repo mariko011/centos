@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:32625c53a6f0b5b59932a6af9e0bc25519fd9a55e7eff41296978c331d0b5508`
-- Created: `2016-09-20T16:47:18.02186939Z`
+- Image ID: `sha256:a497aa03f8529658fc2d1b785eb60ec1cde2d9e010e725ac4e36c1e80966da40`
+- Created: `2016-09-23T18:52:53.805811296Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["java","-jar","/usr/local/jetty/start.jar"]`
