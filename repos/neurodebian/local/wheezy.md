@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c475a192a29e8a7252521d8a66aeae73560b0250199b3beb359d63458ad3a37b`
-- Created: `2016-08-26T22:00:31.324556247Z`
+- Image ID: `sha256:cc19588d2fedcfa1e0babcd134659851e163c9cbe4a85e438083e2bb037ec949`
+- Created: `2016-09-19T23:16:16.974649881Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -481,12 +481,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gcc-4.7/4.7.2-5/
 - https://sources.debian.net/src/gcc-4.7/4.7.2-5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gnupg=1.4.12-7+deb7u7`
+### `dpkg` source package: `gnupg=1.4.12-7+deb7u8`
 
 Binary Packages:
 
-- `gnupg=1.4.12-7+deb7u7`
-- `gpgv=1.4.12-7+deb7u7`
+- `gnupg=1.4.12-7+deb7u8`
+- `gpgv=1.4.12-7+deb7u8`
 
 Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/copyright`)
 
@@ -496,16 +496,16 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/c
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg=1.4.12-7+deb7u7
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.12-7+deb7u7.dsc' gnupg_1.4.12-7+deb7u7.dsc 2322 SHA256:edf571e8ebcdb13404c347d5e51041814eb3d1b1b1d9d02e4b18e84b1c90f831
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.12.orig.tar.gz' gnupg_1.4.12.orig.tar.gz 4939171 SHA256:bb94222fa263e55a5096fdc1c6cd60e9992602ce5067bc453a4ada77bb31e367
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.12-7+deb7u7.debian.tar.gz' gnupg_1.4.12-7+deb7u7.debian.tar.gz 120475 SHA256:0f9b3f60f6f3d3925f30cef59bdee2fdf3e06930cd00b396f4338b14aee0aa82
+$ apt-get source -qq --print-uris gnupg=1.4.12-7+deb7u8
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12-7+deb7u8.dsc' gnupg_1.4.12-7+deb7u8.dsc 2306 SHA256:2b6afe20bfe9da633bf3e81b669663c2a8285521680e1d8bad5b46d93fb2df3a
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12.orig.tar.gz' gnupg_1.4.12.orig.tar.gz 4939171 SHA256:bb94222fa263e55a5096fdc1c6cd60e9992602ce5067bc453a4ada77bb31e367
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12-7+deb7u8.debian.tar.gz' gnupg_1.4.12-7+deb7u8.debian.tar.gz 122627 SHA256:1ae5183aa658be8f611a50040aa3edb7e870b753a81b251909384b5e1d75be21
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u7/
-- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u7/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u8/
+- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.12-2`
 
@@ -977,11 +977,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/pam/1.1.3-7.1/
 - https://sources.debian.net/src/pam/1.1.3-7.1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `perl=5.14.2-21+deb7u3`
+### `dpkg` source package: `perl=5.14.2-21+deb7u4`
 
 Binary Packages:
 
-- `perl-base=5.14.2-21+deb7u3`
+- `perl-base=5.14.2-21+deb7u4`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -1011,16 +1011,16 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.14.2-21+deb7u3
-'http://httpredir.debian.org/debian/pool/main/p/perl/perl_5.14.2-21+deb7u3.dsc' perl_5.14.2-21+deb7u3.dsc 2448 SHA256:e2f41a12d5f3c8383fe62cbe53ac9d2e6e7549272af7c8eb3a7736f9752a9466
-'http://httpredir.debian.org/debian/pool/main/p/perl/perl_5.14.2.orig.tar.bz2' perl_5.14.2.orig.tar.bz2 13226972 SHA256:c2a2362e8d1fdd2bfbfde801fcd78241f154c164f00fba76065ab8cc5c7b06cd
-'http://httpredir.debian.org/debian/pool/main/p/perl/perl_5.14.2-21+deb7u3.debian.tar.xz' perl_5.14.2-21+deb7u3.debian.tar.xz 141716 SHA256:b86b743aa6444ee1e6bdb0ee8243a1ec599bc0e210f2201ac87c78e49034276f
+$ apt-get source -qq --print-uris perl=5.14.2-21+deb7u4
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.14.2-21+deb7u4.dsc' perl_5.14.2-21+deb7u4.dsc 2446 SHA256:4bd0ab0fcc868af8b9a4644742fcc341164596ca61fcdbe5698b9a69fc655a9b
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.14.2.orig.tar.bz2' perl_5.14.2.orig.tar.bz2 13226972 SHA256:c2a2362e8d1fdd2bfbfde801fcd78241f154c164f00fba76065ab8cc5c7b06cd
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.14.2-21+deb7u4.debian.tar.xz' perl_5.14.2-21+deb7u4.debian.tar.xz 153344 SHA256:ee94ab9aa3a5b764f5c26f2eff989f1a8618e9a959f19073b3dd9016a6351a2a
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/perl/5.14.2-21+deb7u3/
-- https://sources.debian.net/src/perl/5.14.2-21+deb7u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/perl/5.14.2-21+deb7u4/
+- https://sources.debian.net/src/perl/5.14.2-21+deb7u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `readline6=6.2+dfsg-0.1`
 

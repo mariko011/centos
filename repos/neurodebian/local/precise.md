@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6d7ee4caa5541aa61e2540f881c5050d4df13726095b47a400894a5d4662608a`
-- Created: `2016-08-30T20:19:03.974025125Z`
+- Image ID: `sha256:53336aea67008ff7aec29f424e3ac718a75c2511173606ade919efe66c0feffc`
+- Created: `2016-09-26T21:54:29.871360819Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -925,18 +925,24 @@ $ apt-get source -qq --print-uris ncurses=5.9-4
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_5.9-4.debian.tar.gz' ncurses_5.9-4.debian.tar.gz 58782 SHA256:349ae51b2731bb566baa04e879e8d9f5da2979807c984fdb591be1ee2b67638b
 ```
 
-### `dpkg` source package: `openssl=1.0.1-4ubuntu5.36`
+### `dpkg` source package: `openssl=1.0.1-4ubuntu5.38`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1-4ubuntu5.36`
+- `libssl1.0.0:amd64=1.0.1-4ubuntu5.38`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1-4ubuntu5.38
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1-4ubuntu5.38.dsc' openssl_1.0.1-4ubuntu5.38.dsc 2365 SHA256:6db69efdd4176b150563b642e14194f227d40ea90315d084e4fe47b21f204aeb
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1.orig.tar.gz' openssl_1.0.1.orig.tar.gz 4453920 SHA256:4d9f0a594a9a89b28e1a04a9504c04104f6508ee27ad1e0efdd17a7a6dbbeeee
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1-4ubuntu5.38.debian.tar.gz' openssl_1.0.1-4ubuntu5.38.debian.tar.gz 281787 SHA256:77fdd53b9e1300d1ed20d58fe9aba7a429fe7f32a19bf880e75852ba37a75ac9
+```
 
 ### `dpkg` source package: `pam=1.1.3-7ubuntu2.3`
 
