@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c2c15ad13b6ed6c9d0397e814892c3488ceef97251386415d8641556e7118562`
-- Created: `2016-09-22T21:36:20.87803135Z`
+- Image ID: `sha256:c254150469feb880e13c38596356c5ff000351011a3cf13f0dc8d52f4b3c3bd1`
+- Created: `2016-09-24T00:37:13.397855326Z`
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
@@ -1533,19 +1533,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u4
-'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u4.dsc' openssl_1.0.1t-1+deb8u4.dsc 2258 SHA256:c689eccb864078dc6ad723b04b3ecbda77f27a8eb71e9c33e9c406552a73c7c5
-'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u4.debian.tar.xz' openssl_1.0.1t-1+deb8u4.debian.tar.xz 106992 SHA256:16aa5bbe9fc3b89daf1bb72928e29b5b6b2d1472a7b6fb90c0970bc7212acd3d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u4/
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
