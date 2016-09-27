@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:52e6d448ec400401ba50b0e68a408621854d4cc0ddf940bc6957d8eb1abc533b`
-- Created: `2016-09-20T19:06:41.425906549Z`
+- Image ID: `sha256:7addddbdd730b1bc8dd9deab5e045589ee9a677d4868df22215dfeb1d0248351`
+- Created: `2016-09-24T04:15:08.117948084Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
 - Command: `["mvn"]`
@@ -3822,30 +3822,19 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/openssh/1:6.7p1-5+deb8u3/
 - https://sources.debian.net/src/openssh/1:6.7p1-5+deb8u3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb8u3`
+### `dpkg` source package: `openssl=1.0.1t-1+deb8u4`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1t-1+deb8u3`
-- `openssl=1.0.1t-1+deb8u3`
+- `libssl1.0.0:amd64=1.0.1t-1+deb8u4`
+- `openssl=1.0.1t-1+deb8u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u3
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u3.dsc' openssl_1.0.1t-1+deb8u3.dsc 2255 SHA256:aad37a98b1fd87c5ba5ae8fd724655cdbdbd9fd4c58818858c57045a36c02ff6
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u3.debian.tar.xz' openssl_1.0.1t-1+deb8u3.debian.tar.xz 97104 SHA256:fb078fe66d58cf3ef6606c1470b5dc7c8a3ae57bed669d436d26592f82175d24
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u3/
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `orbit2=1:2.14.19-0.3`
 
