@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:68bcdcac2ef875b893c578cd59b55db5b5e1ee52611116347552a7bfd363a101`
-- Created: `2016-09-22T21:15:13.214056527Z`
+- Image ID: `sha256:fc8c7e8eab4874333bc44630d4b44e6d059d3205682a032b5a1c0dd3a95b2e16`
+- Created: `2016-09-24T00:57:13.749159364Z`
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
@@ -1742,23 +1742,23 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/ilmbase/1.0.1-6.1/
 - https://sources.debian.net/src/ilmbase/1.0.1-6.1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `imagemagick=8:6.8.9.9-5+deb8u4`
+### `dpkg` source package: `imagemagick=8:6.8.9.9-5+deb8u5`
 
 Binary Packages:
 
-- `imagemagick=8:6.8.9.9-5+deb8u4`
-- `imagemagick-6.q16=8:6.8.9.9-5+deb8u4`
-- `imagemagick-common=8:6.8.9.9-5+deb8u4`
-- `libmagickcore-6-arch-config:amd64=8:6.8.9.9-5+deb8u4`
-- `libmagickcore-6-headers=8:6.8.9.9-5+deb8u4`
-- `libmagickcore-6.q16-2:amd64=8:6.8.9.9-5+deb8u4`
-- `libmagickcore-6.q16-2-extra:amd64=8:6.8.9.9-5+deb8u4`
-- `libmagickcore-6.q16-dev:amd64=8:6.8.9.9-5+deb8u4`
-- `libmagickcore-dev=8:6.8.9.9-5+deb8u4`
-- `libmagickwand-6-headers=8:6.8.9.9-5+deb8u4`
-- `libmagickwand-6.q16-2:amd64=8:6.8.9.9-5+deb8u4`
-- `libmagickwand-6.q16-dev:amd64=8:6.8.9.9-5+deb8u4`
-- `libmagickwand-dev=8:6.8.9.9-5+deb8u4`
+- `imagemagick=8:6.8.9.9-5+deb8u5`
+- `imagemagick-6.q16=8:6.8.9.9-5+deb8u5`
+- `imagemagick-common=8:6.8.9.9-5+deb8u5`
+- `libmagickcore-6-arch-config:amd64=8:6.8.9.9-5+deb8u5`
+- `libmagickcore-6-headers=8:6.8.9.9-5+deb8u5`
+- `libmagickcore-6.q16-2:amd64=8:6.8.9.9-5+deb8u5`
+- `libmagickcore-6.q16-2-extra:amd64=8:6.8.9.9-5+deb8u5`
+- `libmagickcore-6.q16-dev:amd64=8:6.8.9.9-5+deb8u5`
+- `libmagickcore-dev=8:6.8.9.9-5+deb8u5`
+- `libmagickwand-6-headers=8:6.8.9.9-5+deb8u5`
+- `libmagickwand-6.q16-2:amd64=8:6.8.9.9-5+deb8u5`
+- `libmagickwand-6.q16-dev:amd64=8:6.8.9.9-5+deb8u5`
+- `libmagickwand-dev=8:6.8.9.9-5+deb8u5`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/imagemagick-common/copyright`, `/usr/share/doc/libmagickcore-6-arch-config/copyright`, `/usr/share/doc/libmagickcore-6-headers/copyright`, `/usr/share/doc/libmagickcore-6.q16-2/copyright`, `/usr/share/doc/libmagickcore-6.q16-2-extra/copyright`, `/usr/share/doc/libmagickcore-6.q16-dev/copyright`, `/usr/share/doc/libmagickcore-dev/copyright`, `/usr/share/doc/libmagickwand-6-headers/copyright`, `/usr/share/doc/libmagickwand-6.q16-2/copyright`, `/usr/share/doc/libmagickwand-6.q16-dev/copyright`, `/usr/share/doc/libmagickwand-dev/copyright`)
 
@@ -1779,16 +1779,16 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris imagemagick=8:6.8.9.9-5+deb8u4
-'http://httpredir.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u4.dsc' imagemagick_6.8.9.9-5+deb8u4.dsc 4228 SHA256:e74a8760b0ebbf547ab220ecc41bf93958ae2025c3d48ee5c99c735c61a7dec9
-'http://httpredir.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.8.9.9.orig.tar.xz' imagemagick_6.8.9.9.orig.tar.xz 7891624 SHA256:a4cccc70179ff2c67550e063cdcb2e62907338ef3e68b45bb1c41931e515b3eb
-'http://httpredir.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u4.debian.tar.xz' imagemagick_6.8.9.9-5+deb8u4.debian.tar.xz 246016 SHA256:b7f35645ce3814966fc6b9d820068df06f6895edc0f53635600a169f9dde5f62
+$ apt-get source -qq --print-uris imagemagick=8:6.8.9.9-5+deb8u5
+'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u5.dsc' imagemagick_6.8.9.9-5+deb8u5.dsc 4228 SHA256:29b6c3ff5b91aed3756d22a536be23b7cad044134fd749bb0089d61be0231481
+'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9.orig.tar.xz' imagemagick_6.8.9.9.orig.tar.xz 7891624 SHA256:a4cccc70179ff2c67550e063cdcb2e62907338ef3e68b45bb1c41931e515b3eb
+'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u5.debian.tar.xz' imagemagick_6.8.9.9-5+deb8u5.debian.tar.xz 248320 SHA256:79f75e21d59fb86adab75b2af39d3829702538f1699c6fb3be5ea64893f5ed47
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u4/
-- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u4/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u5/
+- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9.2.39.3a460-3`
 
@@ -3882,13 +3882,25 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/openssh/1:6.7p1-5+deb8u3/
 - https://sources.debian.net/src/openssh/1:6.7p1-5+deb8u3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb8u3`
+### `dpkg` source package: `openssl=1.0.1t-1+deb8u4`
 
 Binary Packages:
 
-- `libssl-dev:amd64=1.0.1t-1+deb8u3`
-- `libssl1.0.0:amd64=1.0.1t-1+deb8u3`
-- `openssl=1.0.1t-1+deb8u3`
+- `openssl=1.0.1t-1+deb8u4`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
+  If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+
+
+### `dpkg` source package: `openssl=1.0.1t-1+deb8u5`
+
+Binary Packages:
+
+- `libssl-dev:amd64=1.0.1t-1+deb8u5`
+- `libssl1.0.0:amd64=1.0.1t-1+deb8u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3897,16 +3909,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u3
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u3.dsc' openssl_1.0.1t-1+deb8u3.dsc 2255 SHA256:aad37a98b1fd87c5ba5ae8fd724655cdbdbd9fd4c58818858c57045a36c02ff6
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u3.debian.tar.xz' openssl_1.0.1t-1+deb8u3.debian.tar.xz 97104 SHA256:fb078fe66d58cf3ef6606c1470b5dc7c8a3ae57bed669d436d26592f82175d24
+$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u5
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u5.dsc' openssl_1.0.1t-1+deb8u5.dsc 2258 SHA256:165eb617542ab1e9bf810c215b586a57b926f3f6977c1a72af752754c7c90bea
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u5.debian.tar.xz' openssl_1.0.1t-1+deb8u5.debian.tar.xz 106720 SHA256:c6723fbf370ec5544c9b1753d5ad06d4b343a341560fb8650dda135506312cd9
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u3/
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
