@@ -12,7 +12,7 @@
 ## `rails:5.0.0.1`
 
 ```console
-$ docker pull rails@sha256:32eeb3c494ebadf532400ba18bbfdd558673b76ff5d816192d70afd0f66da135
+$ docker pull rails@sha256:5afa6d911acb66f87f1e952f472820b05ac808e397156cf4756cf5dc9371db68
 ```
 
 -	Platforms:
@@ -22,9 +22,9 @@ $ docker pull rails@sha256:32eeb3c494ebadf532400ba18bbfdd558673b76ff5d816192d70a
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **319.3 MB (319297451 bytes)**  
+-	Total Size: **319.3 MB (319294132 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea97f97ce73a78086e7e7568752158a1c2366793367341cc589bf72ac0835dac`
+-	Image ID: `sha256:9df3ff98cd15e12da9249a5d8e5f359c5a7cd69cf814f7fd43a384b85e463352`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -46,31 +46,31 @@ ENV RUBY_MAJOR=2.3
 ENV RUBY_VERSION=2.3.1
 # Sat, 24 Sep 2016 05:42:23 GMT
 ENV RUBY_DOWNLOAD_SHA256=b87c738cb2032bf4920fef8e3864dc5cf8eae9d89d8d523ce0236945c5797dcd
-# Sat, 24 Sep 2016 05:42:23 GMT
-ENV RUBYGEMS_VERSION=2.6.6
-# Sat, 24 Sep 2016 05:44:46 GMT
+# Wed, 28 Sep 2016 21:10:05 GMT
+ENV RUBYGEMS_VERSION=2.6.7
+# Wed, 28 Sep 2016 21:12:26 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.gz "https://cache.ruby-lang.org/pub/ruby/$RUBY_MAJOR/ruby-$RUBY_VERSION.tar.gz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.gz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xzf ruby.tar.gz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.gz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& ./configure --disable-install-doc 	&& make -j"$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION"
-# Sat, 24 Sep 2016 05:44:46 GMT
+# Wed, 28 Sep 2016 21:12:26 GMT
 ENV BUNDLER_VERSION=1.13.1
-# Sat, 24 Sep 2016 05:44:48 GMT
+# Wed, 28 Sep 2016 21:12:28 GMT
 RUN gem install bundler --version "$BUNDLER_VERSION"
-# Sat, 24 Sep 2016 05:44:48 GMT
+# Wed, 28 Sep 2016 21:12:28 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Sat, 24 Sep 2016 05:44:48 GMT
+# Wed, 28 Sep 2016 21:12:28 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Sat, 24 Sep 2016 05:44:49 GMT
+# Wed, 28 Sep 2016 21:12:29 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 24 Sep 2016 05:44:50 GMT
+# Wed, 28 Sep 2016 21:12:30 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Sat, 24 Sep 2016 05:44:50 GMT
+# Wed, 28 Sep 2016 21:12:30 GMT
 CMD ["irb"]
-# Sat, 24 Sep 2016 05:58:04 GMT
+# Wed, 28 Sep 2016 21:29:43 GMT
 RUN apt-get update && apt-get install -y nodejs --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Sat, 24 Sep 2016 05:58:12 GMT
+# Wed, 28 Sep 2016 21:29:53 GMT
 RUN apt-get update && apt-get install -y mysql-client postgresql-client sqlite3 --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Sat, 24 Sep 2016 05:58:13 GMT
+# Wed, 28 Sep 2016 21:29:54 GMT
 ENV RAILS_VERSION=5.0.0.1
-# Sat, 24 Sep 2016 05:59:02 GMT
+# Wed, 28 Sep 2016 21:30:45 GMT
 RUN gem install rails --version "$RAILS_VERSION"
 ```
 
@@ -95,29 +95,29 @@ RUN gem install rails --version "$RAILS_VERSION"
 		Last Modified: Sat, 24 Sep 2016 05:44:59 GMT  
 		Size: 202.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9626c13fb27a18a346dc329fcc60277345647f9e1bb554ad567f98ab1f547bff`  
-		Last Modified: Sat, 24 Sep 2016 05:45:14 GMT  
-		Size: 35.3 MB (35292440 bytes)  
+	-	`sha256:e7587c67cc39abede471241226dee3063ac292034c2b73d878884e1d042df631`  
+		Last Modified: Wed, 28 Sep 2016 21:22:24 GMT  
+		Size: 35.3 MB (35289236 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:33cca82b34cd39a33e10296f920a86dd5eff71d3f7f8aed0302af2d9aa763081`  
-		Last Modified: Sat, 24 Sep 2016 05:45:00 GMT  
-		Size: 609.9 KB (609934 bytes)  
+	-	`sha256:85a2fd7d1a6bcc5ecfb7b0eea3f3d10db73cfe44ebb6c551c9965ffb765913b3`  
+		Last Modified: Wed, 28 Sep 2016 21:22:13 GMT  
+		Size: 609.9 KB (609932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5b1afc1156add3b5c843e8cedff5a847d1dd372670bb4a124c3ec7657b87ce5`  
-		Last Modified: Sat, 24 Sep 2016 05:44:59 GMT  
+	-	`sha256:8d545703443d8ea078113ce724826bfd6786bdde37e69c06bc480e2697d7caef`  
+		Last Modified: Wed, 28 Sep 2016 21:22:13 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f71faf086450c292d425d4a191872968975ee5a8931cdee421411c009129209d`  
-		Last Modified: Sat, 24 Sep 2016 05:59:12 GMT  
-		Size: 2.9 MB (2879132 bytes)  
+	-	`sha256:7d220bc55a37f9da50ecb3949819dc385912ab3d6c611ee23ef247d9551a7d6f`  
+		Last Modified: Wed, 28 Sep 2016 21:30:57 GMT  
+		Size: 2.9 MB (2879160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0db3f6fd1f3bc479df85348ef9b7a97814258f329f50f99086e8283a8e389b5c`  
-		Last Modified: Sat, 24 Sep 2016 05:59:14 GMT  
-		Size: 13.7 MB (13747402 bytes)  
+	-	`sha256:95855fcdfed646e5287c874db9ba3c1fbfa29c74fc7592d1fed55decf8829678`  
+		Last Modified: Wed, 28 Sep 2016 21:31:01 GMT  
+		Size: 13.7 MB (13747412 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd607a6804fa48d65ed07f468f3282cc9d8f8ebb65468f00b71ab44d44486376`  
-		Last Modified: Sat, 24 Sep 2016 05:59:16 GMT  
-		Size: 23.3 MB (23345786 bytes)  
+	-	`sha256:f15377e36f082f8c83570556630bb0f97d8eaf86c569b9c26566b65a5d830f36`  
+		Last Modified: Wed, 28 Sep 2016 21:31:06 GMT  
+		Size: 23.3 MB (23345635 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rails:5.0.0`
@@ -456,7 +456,7 @@ RUN gem install rails --version "$RAILS_VERSION"
 ## `rails:latest`
 
 ```console
-$ docker pull rails@sha256:32eeb3c494ebadf532400ba18bbfdd558673b76ff5d816192d70afd0f66da135
+$ docker pull rails@sha256:5afa6d911acb66f87f1e952f472820b05ac808e397156cf4756cf5dc9371db68
 ```
 
 -	Platforms:
@@ -466,9 +466,9 @@ $ docker pull rails@sha256:32eeb3c494ebadf532400ba18bbfdd558673b76ff5d816192d70a
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **319.3 MB (319297451 bytes)**  
+-	Total Size: **319.3 MB (319294132 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea97f97ce73a78086e7e7568752158a1c2366793367341cc589bf72ac0835dac`
+-	Image ID: `sha256:9df3ff98cd15e12da9249a5d8e5f359c5a7cd69cf814f7fd43a384b85e463352`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -490,31 +490,31 @@ ENV RUBY_MAJOR=2.3
 ENV RUBY_VERSION=2.3.1
 # Sat, 24 Sep 2016 05:42:23 GMT
 ENV RUBY_DOWNLOAD_SHA256=b87c738cb2032bf4920fef8e3864dc5cf8eae9d89d8d523ce0236945c5797dcd
-# Sat, 24 Sep 2016 05:42:23 GMT
-ENV RUBYGEMS_VERSION=2.6.6
-# Sat, 24 Sep 2016 05:44:46 GMT
+# Wed, 28 Sep 2016 21:10:05 GMT
+ENV RUBYGEMS_VERSION=2.6.7
+# Wed, 28 Sep 2016 21:12:26 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.gz "https://cache.ruby-lang.org/pub/ruby/$RUBY_MAJOR/ruby-$RUBY_VERSION.tar.gz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.gz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xzf ruby.tar.gz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.gz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& ./configure --disable-install-doc 	&& make -j"$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION"
-# Sat, 24 Sep 2016 05:44:46 GMT
+# Wed, 28 Sep 2016 21:12:26 GMT
 ENV BUNDLER_VERSION=1.13.1
-# Sat, 24 Sep 2016 05:44:48 GMT
+# Wed, 28 Sep 2016 21:12:28 GMT
 RUN gem install bundler --version "$BUNDLER_VERSION"
-# Sat, 24 Sep 2016 05:44:48 GMT
+# Wed, 28 Sep 2016 21:12:28 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Sat, 24 Sep 2016 05:44:48 GMT
+# Wed, 28 Sep 2016 21:12:28 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Sat, 24 Sep 2016 05:44:49 GMT
+# Wed, 28 Sep 2016 21:12:29 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 24 Sep 2016 05:44:50 GMT
+# Wed, 28 Sep 2016 21:12:30 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Sat, 24 Sep 2016 05:44:50 GMT
+# Wed, 28 Sep 2016 21:12:30 GMT
 CMD ["irb"]
-# Sat, 24 Sep 2016 05:58:04 GMT
+# Wed, 28 Sep 2016 21:29:43 GMT
 RUN apt-get update && apt-get install -y nodejs --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Sat, 24 Sep 2016 05:58:12 GMT
+# Wed, 28 Sep 2016 21:29:53 GMT
 RUN apt-get update && apt-get install -y mysql-client postgresql-client sqlite3 --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Sat, 24 Sep 2016 05:58:13 GMT
+# Wed, 28 Sep 2016 21:29:54 GMT
 ENV RAILS_VERSION=5.0.0.1
-# Sat, 24 Sep 2016 05:59:02 GMT
+# Wed, 28 Sep 2016 21:30:45 GMT
 RUN gem install rails --version "$RAILS_VERSION"
 ```
 
@@ -539,29 +539,29 @@ RUN gem install rails --version "$RAILS_VERSION"
 		Last Modified: Sat, 24 Sep 2016 05:44:59 GMT  
 		Size: 202.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9626c13fb27a18a346dc329fcc60277345647f9e1bb554ad567f98ab1f547bff`  
-		Last Modified: Sat, 24 Sep 2016 05:45:14 GMT  
-		Size: 35.3 MB (35292440 bytes)  
+	-	`sha256:e7587c67cc39abede471241226dee3063ac292034c2b73d878884e1d042df631`  
+		Last Modified: Wed, 28 Sep 2016 21:22:24 GMT  
+		Size: 35.3 MB (35289236 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:33cca82b34cd39a33e10296f920a86dd5eff71d3f7f8aed0302af2d9aa763081`  
-		Last Modified: Sat, 24 Sep 2016 05:45:00 GMT  
-		Size: 609.9 KB (609934 bytes)  
+	-	`sha256:85a2fd7d1a6bcc5ecfb7b0eea3f3d10db73cfe44ebb6c551c9965ffb765913b3`  
+		Last Modified: Wed, 28 Sep 2016 21:22:13 GMT  
+		Size: 609.9 KB (609932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5b1afc1156add3b5c843e8cedff5a847d1dd372670bb4a124c3ec7657b87ce5`  
-		Last Modified: Sat, 24 Sep 2016 05:44:59 GMT  
+	-	`sha256:8d545703443d8ea078113ce724826bfd6786bdde37e69c06bc480e2697d7caef`  
+		Last Modified: Wed, 28 Sep 2016 21:22:13 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f71faf086450c292d425d4a191872968975ee5a8931cdee421411c009129209d`  
-		Last Modified: Sat, 24 Sep 2016 05:59:12 GMT  
-		Size: 2.9 MB (2879132 bytes)  
+	-	`sha256:7d220bc55a37f9da50ecb3949819dc385912ab3d6c611ee23ef247d9551a7d6f`  
+		Last Modified: Wed, 28 Sep 2016 21:30:57 GMT  
+		Size: 2.9 MB (2879160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0db3f6fd1f3bc479df85348ef9b7a97814258f329f50f99086e8283a8e389b5c`  
-		Last Modified: Sat, 24 Sep 2016 05:59:14 GMT  
-		Size: 13.7 MB (13747402 bytes)  
+	-	`sha256:95855fcdfed646e5287c874db9ba3c1fbfa29c74fc7592d1fed55decf8829678`  
+		Last Modified: Wed, 28 Sep 2016 21:31:01 GMT  
+		Size: 13.7 MB (13747412 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd607a6804fa48d65ed07f468f3282cc9d8f8ebb65468f00b71ab44d44486376`  
-		Last Modified: Sat, 24 Sep 2016 05:59:16 GMT  
-		Size: 23.3 MB (23345786 bytes)  
+	-	`sha256:f15377e36f082f8c83570556630bb0f97d8eaf86c569b9c26566b65a5d830f36`  
+		Last Modified: Wed, 28 Sep 2016 21:31:06 GMT  
+		Size: 23.3 MB (23345635 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rails:onbuild`
