@@ -607,19 +607,8 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cups=2.1.4-4
-'http://httpredir.debian.org/debian/pool/main/c/cups/cups_2.1.4-4.dsc' cups_2.1.4-4.dsc 3391 SHA256:249e20fb1adabe7ce7250ef6c69946ffdb9efc900a4bfbb50461280c4766daf2
-'http://httpredir.debian.org/debian/pool/main/c/cups/cups_2.1.4.orig.tar.gz' cups_2.1.4.orig.tar.gz 9572653 SHA256:1f182f145489e2454969b221056b6b9bac2beb4e38cd75fa12a9ec15d24d5301
-'http://httpredir.debian.org/debian/pool/main/c/cups/cups_2.1.4-4.debian.tar.xz' cups_2.1.4-4.debian.tar.xz 350668 SHA256:3bc6d41650602119e86c92f10d7fc3bd212c2de500f839672d170404d297707a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cups/2.1.4-4/
-- https://sources.debian.net/src/cups/2.1.4-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `curl=7.50.1-1`
 
@@ -2321,19 +2310,8 @@ Licenses: (parsed from: `/usr/share/doc/libcroco3/copyright`)
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libcroco=0.6.11-1
-'http://httpredir.debian.org/debian/pool/main/libc/libcroco/libcroco_0.6.11-1.dsc' libcroco_0.6.11-1.dsc 2256 SHA256:5b614275709f3aeb92b4f4049f792b43035c304b300637d97b8205b9d3da39a6
-'http://httpredir.debian.org/debian/pool/main/libc/libcroco/libcroco_0.6.11.orig.tar.xz' libcroco_0.6.11.orig.tar.xz 477312 SHA256:132b528a948586b0dfa05d7e9e059901bca5a3be675b6071a90a90b81ae5a056
-'http://httpredir.debian.org/debian/pool/main/libc/libcroco/libcroco_0.6.11-1.debian.tar.xz' libcroco_0.6.11-1.debian.tar.xz 6624 SHA256:55bc5a89e557c2615e1d3c46697c9ef564328f356a1f312523bd7aea966911a3
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libcroco/0.6.11-1/
-- https://sources.debian.net/src/libcroco/0.6.11-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libdatrie=0.2.10-2`
 
