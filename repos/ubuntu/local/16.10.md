@@ -61,13 +61,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.3~rc4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.3~rc4ubuntu1.dsc' apt_1.3~rc4ubuntu1.dsc 2611 SHA256:baab7883f56fc70f66f456066e00e028b15f2ee386672f887ae37394813ef47e
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.3~rc4ubuntu1.tar.xz' apt_1.3~rc4ubuntu1.tar.xz 2041124 SHA256:879b6c539073d1b330bf6465bd009cba9531e869a75879fedc4444204f3dd9a7
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -451,14 +446,8 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.1.15-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.1.15-1ubuntu3.dsc' gnupg2_2.1.15-1ubuntu3.dsc 3160 SHA256:72f68bb49640393520656a8ab6cfe2ac7e5379fc28198e4b7720a2d24160325c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.1.15.orig.tar.bz2' gnupg2_2.1.15.orig.tar.bz2 5723689 SHA256:c28c1a208f1b8ad63bdb6b88d252f6734ff4d33de6b54e38494b11d49e00ffdd
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.1.15-1ubuntu3.debian.tar.bz2' gnupg2_2.1.15-1ubuntu3.debian.tar.bz2 41754 SHA256:ce7e25cbec6056c55dea19400ee3b3d0e2f9b225389421b6793955985c055701
-```
 
 ### `dpkg` source package: `grep=2.25-6`
 
@@ -1063,14 +1052,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=231-6git1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-6git1.dsc' systemd_231-6git1.dsc 4459 SHA256:c1bb5a0af0c9a7cd1d45c8376d6068672ed597e6797d29547f8c1f33bb4d255e
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231.orig.tar.gz' systemd_231.orig.tar.gz 4381464 SHA256:899733ad6c157cedbb89aec4efe3bc824dcfd65a1d6f6bebc7b043f7924e39b4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-6git1.debian.tar.xz' systemd_231-6git1.debian.tar.xz 141884 SHA256:6a3cb132e85f2163061aabe039d8270262d397dfe80135316b5cbe3d1f4953db
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`
 
