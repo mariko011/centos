@@ -1,7 +1,7 @@
 ## `clojure:onbuild`
 
 ```console
-$ docker pull clojure@sha256:60a016b60ba31149db8ea0cbe5067e9c3a6e4a8e556efcab33bec1dea5e91603
+$ docker pull clojure@sha256:a96222fb8d2d703ac876512f1e12bf64deb4ebb91028f2b13cc53b25270631a2
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull clojure@sha256:60a016b60ba31149db8ea0cbe5067e9c3a6e4a8e556efcab33b
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **257.3 MB (257340595 bytes)**  
+-	Total Size: **257.3 MB (257345240 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:854c998fa5d79a47f97aef767ce47f69ccb61bc2ad9bb1e30c3981ed06ca2a92`
+-	Image ID: `sha256:478f8e2fb62f74ca71df118494587e7c7d098bc1059a253c06e7e0bb5c9f62f5`
 -	Default Command: `["lein","run"]`
 
 ```dockerfile
@@ -47,31 +47,31 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBI
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 # Sat, 24 Sep 2016 00:22:03 GMT
 MAINTAINER Paul Lam <paul@quantisan.com>
-# Sat, 24 Sep 2016 00:22:03 GMT
-ENV LEIN_VERSION=2.7.0
-# Sat, 24 Sep 2016 00:22:03 GMT
+# Wed, 28 Sep 2016 20:42:09 GMT
+ENV LEIN_VERSION=2.7.1
+# Wed, 28 Sep 2016 20:42:10 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Sat, 24 Sep 2016 00:22:04 GMT
+# Wed, 28 Sep 2016 20:42:10 GMT
 WORKDIR /tmp
-# Sat, 24 Sep 2016 00:22:19 GMT
-RUN mkdir -p $LEIN_INSTALL   && wget --quiet https://github.com/technomancy/leiningen/archive/$LEIN_VERSION.tar.gz   && echo "Comparing archive checksum ..."   && echo "b4624548ada176c1d122dd9867a1bed09706fcd0 *$LEIN_VERSION.tar.gz" | sha1sum -c -   && mkdir ./leiningen   && tar -xzf $LEIN_VERSION.tar.gz  -C ./leiningen/ --strip-components=1   && mv leiningen/bin/lein-pkg $LEIN_INSTALL/lein   && rm -rf $LEIN_VERSION.tar.gz ./leiningen   && chmod 0755 $LEIN_INSTALL/lein   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2E708FB2FCECA07FF8184E275A92E04305696D78   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar   &&  apt-get update && apt-get install rlfe && rm -rf /var/lib/apt/lists/*
-# Sat, 24 Sep 2016 00:22:20 GMT
+# Wed, 28 Sep 2016 20:42:25 GMT
+RUN mkdir -p $LEIN_INSTALL   && wget --quiet https://github.com/technomancy/leiningen/archive/$LEIN_VERSION.tar.gz   && echo "Comparing archive checksum ..."   && echo "876221e884780c865c2ce5c9aa5675a7cae9f215 *$LEIN_VERSION.tar.gz" | sha1sum -c -   && mkdir ./leiningen   && tar -xzf $LEIN_VERSION.tar.gz  -C ./leiningen/ --strip-components=1   && mv leiningen/bin/lein-pkg $LEIN_INSTALL/lein   && rm -rf $LEIN_VERSION.tar.gz ./leiningen   && chmod 0755 $LEIN_INSTALL/lein   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip   && wget --quiet https://github.com/technomancy/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.zip.asc   && gpg --keyserver pool.sks-keyservers.net --recv-key 2E708FB2FCECA07FF8184E275A92E04305696D78   && echo "Verifying Jar file signature ..."   && gpg --verify leiningen-$LEIN_VERSION-standalone.zip.asc   && rm leiningen-$LEIN_VERSION-standalone.zip.asc   && mv leiningen-$LEIN_VERSION-standalone.zip /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar   &&  apt-get update && apt-get install rlfe && rm -rf /var/lib/apt/lists/*
+# Wed, 28 Sep 2016 20:42:26 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Sat, 24 Sep 2016 00:22:20 GMT
+# Wed, 28 Sep 2016 20:42:26 GMT
 ENV LEIN_ROOT=1
-# Sat, 24 Sep 2016 00:22:26 GMT
+# Wed, 28 Sep 2016 20:42:32 GMT
 RUN lein
-# Sat, 24 Sep 2016 00:22:54 GMT
+# Wed, 28 Sep 2016 20:42:32 GMT
 MAINTAINER Kirillov Alexandr <kirillov@evrone.ru>
-# Sat, 24 Sep 2016 00:22:54 GMT
+# Wed, 28 Sep 2016 20:42:33 GMT
 WORKDIR /usr/src/app
-# Sat, 24 Sep 2016 00:22:54 GMT
+# Wed, 28 Sep 2016 20:42:33 GMT
 ONBUILD COPY project.clj /usr/src/app/
-# Sat, 24 Sep 2016 00:22:55 GMT
+# Wed, 28 Sep 2016 20:42:33 GMT
 ONBUILD RUN lein deps
-# Sat, 24 Sep 2016 00:22:55 GMT
+# Wed, 28 Sep 2016 20:42:34 GMT
 ONBUILD COPY . /usr/src/app
-# Sat, 24 Sep 2016 00:22:55 GMT
+# Wed, 28 Sep 2016 20:42:34 GMT
 CMD ["lein" "run"]
 ```
 
@@ -108,15 +108,15 @@ CMD ["lein" "run"]
 		Last Modified: Fri, 23 Sep 2016 19:35:43 GMT  
 		Size: 284.2 KB (284191 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d88e09075acf489bfd46db9e0285adc1357417c6bc89d3fabbb4e3dc282269e4`  
-		Last Modified: Sat, 24 Sep 2016 00:22:37 GMT  
-		Size: 14.0 MB (14009898 bytes)  
+	-	`sha256:194249f17aee2be0f4922bac499bf37bd8dc3880b19adb93d9036acc835f78e2`  
+		Last Modified: Wed, 28 Sep 2016 20:43:21 GMT  
+		Size: 14.0 MB (14014542 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40a81947c884885fdcd3e671de716e20ed13a3281fabc444958835acd160720b`  
-		Last Modified: Sat, 24 Sep 2016 00:22:35 GMT  
-		Size: 167.0 B  
+	-	`sha256:0b2d973af6e11aca317b673ba4de7215d5495fec81d57a3e64fd3759b08003b0`  
+		Last Modified: Wed, 28 Sep 2016 20:43:19 GMT  
+		Size: 168.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c21ce3bd80a9a58e2430889e0f4c328f5cabe356f693dfd74c71c1e1a0295b4`  
-		Last Modified: Sat, 24 Sep 2016 00:23:04 GMT  
+	-	`sha256:e2f4db432addd36513c685dbe3515d7a061bb630666279e97e386b3e4e4a1ff9`  
+		Last Modified: Wed, 28 Sep 2016 20:43:52 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
