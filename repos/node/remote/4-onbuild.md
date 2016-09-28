@@ -1,7 +1,7 @@
 ## `node:4-onbuild`
 
 ```console
-$ docker pull node@sha256:b6e183f6bb1d427741f12bdf9f6e9a4ded8ceecffe67ab01964ff16969dee30a
+$ docker pull node@sha256:c017b540e25e2b6c6f79bd2f8cadd29bb3b131dbe0a4ad6cf5d59ca34ed00b82
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull node@sha256:b6e183f6bb1d427741f12bdf9f6e9a4ded8ceecffe67ab01964ff1
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.7 MB (255705736 bytes)**  
+-	Total Size: **255.7 MB (255677420 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b255a110674870d5931ee64f41a7d6dab43586a067a413be4b01d9077d6c493`
+-	Image ID: `sha256:5534f8bfa1f53f356b3944f0c18229d78f6a7311e44046e162a38fa112f41564`
 -	Default Command: `["npm","start"]`
 
 ```dockerfile
@@ -31,27 +31,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		au
 RUN set -ex   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";   done
 # Sat, 24 Sep 2016 04:23:39 GMT
 ENV NPM_CONFIG_LOGLEVEL=info
-# Sat, 24 Sep 2016 04:23:40 GMT
-ENV NODE_VERSION=4.5.0
-# Sat, 24 Sep 2016 04:23:44 GMT
+# Wed, 28 Sep 2016 17:22:22 GMT
+ENV NODE_VERSION=4.6.0
+# Wed, 28 Sep 2016 17:22:27 GMT
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz"   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1   && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs
-# Sat, 24 Sep 2016 04:23:45 GMT
+# Wed, 28 Sep 2016 17:22:27 GMT
 CMD ["node"]
-# Sat, 24 Sep 2016 04:24:34 GMT
+# Wed, 28 Sep 2016 17:22:28 GMT
 RUN mkdir -p /usr/src/app
-# Sat, 24 Sep 2016 04:24:34 GMT
+# Wed, 28 Sep 2016 17:22:29 GMT
 WORKDIR /usr/src/app
-# Sat, 24 Sep 2016 04:24:34 GMT
+# Wed, 28 Sep 2016 17:22:29 GMT
 ONBUILD ARG NODE_ENV
-# Sat, 24 Sep 2016 04:24:35 GMT
+# Wed, 28 Sep 2016 17:22:29 GMT
 ONBUILD ENV NODE_ENV $NODE_ENV
-# Sat, 24 Sep 2016 04:24:35 GMT
+# Wed, 28 Sep 2016 17:22:30 GMT
 ONBUILD COPY package.json /usr/src/app/
-# Sat, 24 Sep 2016 04:24:35 GMT
+# Wed, 28 Sep 2016 17:22:30 GMT
 ONBUILD RUN npm install
-# Sat, 24 Sep 2016 04:24:36 GMT
+# Wed, 28 Sep 2016 17:22:30 GMT
 ONBUILD COPY . /usr/src/app
-# Sat, 24 Sep 2016 04:24:36 GMT
+# Wed, 28 Sep 2016 17:22:30 GMT
 CMD ["npm" "start"]
 ```
 
@@ -76,11 +76,11 @@ CMD ["npm" "start"]
 		Last Modified: Sat, 24 Sep 2016 04:20:39 GMT  
 		Size: 88.8 KB (88823 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da5ea90634096ae135f9399ea4666dd0fb8893902fc050662a38a58d48714ad5`  
-		Last Modified: Sat, 24 Sep 2016 04:23:57 GMT  
-		Size: 12.2 MB (12194395 bytes)  
+	-	`sha256:35d6896e21e986de9caf7f0099fccf552c61a6d55c76e4e987836c615f18be51`  
+		Last Modified: Wed, 28 Sep 2016 17:27:07 GMT  
+		Size: 12.2 MB (12166078 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe12f00f795988d51a85fe057b5cd9b32be973cdaead0b470e0608036eab1d91`  
-		Last Modified: Sat, 24 Sep 2016 04:24:44 GMT  
-		Size: 124.0 B  
+	-	`sha256:1316f1cdd45f1b3276d3e3a12f1c955c5935f3fe8103894534a6d7a9ec9171ea`  
+		Last Modified: Wed, 28 Sep 2016 17:27:53 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
