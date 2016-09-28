@@ -2,19 +2,19 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d43130e4d7736f686880b90e6a2ee14daa6be2157d9e8c32b12cd2ebd0abb6b6`
-- Created: `2016-09-23T19:39:37.917830944Z`
+- Image ID: `sha256:b584d9e285a793194c7fed32fff0cf50ba6aa2126d792a872cab8d78eb35dd38`
+- Created: `2016-09-27T17:35:42.153783021Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["arangod"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `ARCHITECTURE=amd64`
-  - `ARANGO_VERSION=3.0.9`
+  - `ARANGO_VERSION=3.0.10`
   - `ARANGO_URL=https://www.arangodb.com/repositories/arangodb3/Debian_8.0`
-  - `ARANGO_PACKAGE=arangodb3_3.0.9_amd64.deb`
-  - `ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb3/Debian_8.0/amd64/arangodb3_3.0.9_amd64.deb`
-  - `ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb3/Debian_8.0/amd64/arangodb3_3.0.9_amd64.deb.asc`
+  - `ARANGO_PACKAGE=arangodb3_3.0.10_amd64.deb`
+  - `ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb3/Debian_8.0/amd64/arangodb3_3.0.10_amd64.deb`
+  - `ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb3/Debian_8.0/amd64/arangodb3_3.0.10_amd64.deb.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -92,11 +92,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/apt/1.0.9.8.3/
 - https://sources.debian.net/src/apt/1.0.9.8.3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `arangodb=3.0.9`
+### `dpkg` source package: `arangodb=3.0.10`
 
 Binary Packages:
 
-- `arangodb3=3.0.9`
+- `arangodb3=3.0.10`
 
 Licenses: (parsed from: `/usr/share/doc/arangodb3/copyright`)
 
@@ -1621,19 +1621,30 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u2/
 - https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb8u4`
+### `dpkg` source package: `openssl=1.0.1t-1+deb8u5`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1t-1+deb8u4`
-- `openssl=1.0.1t-1+deb8u4`
+- `libssl1.0.0:amd64=1.0.1t-1+deb8u5`
+- `openssl=1.0.1t-1+deb8u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u5
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u5.dsc' openssl_1.0.1t-1+deb8u5.dsc 2258 SHA256:165eb617542ab1e9bf810c215b586a57b926f3f6977c1a72af752754c7c90bea
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u5.debian.tar.xz' openssl_1.0.1t-1+deb8u5.debian.tar.xz 106720 SHA256:c6723fbf370ec5544c9b1753d5ad06d4b343a341560fb8650dda135506312cd9
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
