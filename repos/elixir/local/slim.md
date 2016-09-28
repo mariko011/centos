@@ -1,15 +1,15 @@
-# `elixir:1.3.2-slim`
+# `elixir:1.3.3-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c254150469feb880e13c38596356c5ff000351011a3cf13f0dc8d52f4b3c3bd1`
-- Created: `2016-09-24T00:37:13.397855326Z`
+- Image ID: `sha256:e4b157feb043a5998a8c948155e5824f38e3302780840e7bbb6bf96d4f44df3d`
+- Created: `2016-09-27T17:38:33.121910182Z`
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `OTP_VERSION=19.1`
-  - `ELIXIR_VERSION=v1.3.2`
+  - `ELIXIR_VERSION=v1.3.3`
   - `LANG=C.UTF-8`
 
 ## `dpkg` (`.deb`-based packages)

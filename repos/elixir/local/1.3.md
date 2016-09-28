@@ -1,9 +1,9 @@
-# `elixir:1.3.2`
+# `elixir:1.3.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:069b8876aa54d2e086333e09cc985b9cf6e7ad2fb41b17bc966ca7641c8cfd19`
-- Created: `2016-09-24T05:55:39.853109178Z`
+- Image ID: `sha256:b80c8e9d71f9114d0818fc812246b55350bffd3c9efe67334d47a60e24e5d08d`
+- Created: `2016-09-27T17:38:14.878408532Z`
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
@@ -11,7 +11,7 @@
   - `OTP_VERSION=19.1`
   - `REBAR_VERSION=2.6.4`
   - `REBAR3_VERSION=3.3.1`
-  - `ELIXIR_VERSION=v1.3.2`
+  - `ELIXIR_VERSION=v1.3.3`
   - `LANG=C.UTF-8`
 
 ## `dpkg` (`.deb`-based packages)
