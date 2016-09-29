@@ -807,7 +807,7 @@ CMD ["mongod"]
 ## `mongo:3`
 
 ```console
-$ docker pull mongo@sha256:27cfe059af7d5fad5b1a0381e0cf85fa52e3222915adfe96e0d3004bd9851d0b
+$ docker pull mongo@sha256:d0c2d118a28778514fc3478bf69f603aac961ec93c7988639fb7b994b0887fb6
 ```
 
 -	Platforms:
