@@ -1,7 +1,7 @@
 ## `mono:latest`
 
 ```console
-$ docker pull mono@sha256:d72152d0f876176cfd895cdeda7d6b67692e90b2113bca3874146bebb8a76d02
+$ docker pull mono@sha256:af8c88cc0855e3c8f4633413cbb24c72bb8e209e44ee7befe6bf0ee1ae8f14d1
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull mono@sha256:d72152d0f876176cfd895cdeda7d6b67692e90b2113bca3874146b
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **142.9 MB (142875794 bytes)**  
+-	Total Size: **143.0 MB (143029657 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e5a4e90ac8a1dda8893f82170ae820b51f37268ea5247a605207eeb66e27be9f`
+-	Image ID: `sha256:7a744e3446a923e467f09fa90ff1fb51742ba9f2bc479d17a2f953648f69263e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -27,8 +27,8 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 RUN apt-get update   && apt-get install -y curl   && rm -rf /var/lib/apt/lists/*
 # Mon, 19 Sep 2016 21:05:36 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-# Wed, 21 Sep 2016 17:54:34 GMT
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.6.0.245 main" > /etc/apt/sources.list.d/mono-xamarin.list   && apt-get update   && apt-get install -y binutils mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl   && rm -rf /var/lib/apt/lists/* /tmp/*
+# Fri, 30 Sep 2016 17:01:52 GMT
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.6.1.3 main" > /etc/apt/sources.list.d/mono-xamarin.list   && apt-get update   && apt-get install -y binutils mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl   && rm -rf /var/lib/apt/lists/* /tmp/*
 ```
 
 -	Layers:
@@ -44,7 +44,7 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.6.
 		Last Modified: Wed, 21 Sep 2016 18:10:57 GMT  
 		Size: 29.3 KB (29330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd0466fd115c268705db8b345b93c53d7da55719bb6001095ef65e1ff25c0f35`  
-		Last Modified: Wed, 21 Sep 2016 18:15:39 GMT  
-		Size: 98.1 MB (98077412 bytes)  
+	-	`sha256:3330d0c1fdc2172fdf91485e0f923b76d294d7fd46f4314febc2f1fbb73d43f9`  
+		Last Modified: Fri, 30 Sep 2016 17:11:59 GMT  
+		Size: 98.2 MB (98231275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

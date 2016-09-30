@@ -1970,7 +1970,7 @@ ONBUILD WORKDIR /usr/src/app/build
 ## `mono:4.2.3.4`
 
 ```console
-$ docker pull mono@sha256:fdd14fc68d226894bf0b76022e4a0babedf14a0260c08e396f87395a8fbd715d
+$ docker pull mono@sha256:4afb519ca48c651aa1a7c840ae9f99e6efd33f11c6dd4253a121d81ce171f13a
 ```
 
 -	Platforms:
@@ -2210,7 +2210,7 @@ ONBUILD WORKDIR /usr/src/app/build
 ## `mono:4.2.4.4`
 
 ```console
-$ docker pull mono@sha256:dbff7d9f50193a1c0c7df3410c9d018d17f5979c1468885387773fed984d5181
+$ docker pull mono@sha256:d2b9d9ba48a35b9f95c96ddb19e39aca15f9629ee12aa1df01ff432120d63a41
 ```
 
 -	Platforms:
@@ -2261,7 +2261,7 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.
 ## `mono:4.2.4`
 
 ```console
-$ docker pull mono@sha256:dbff7d9f50193a1c0c7df3410c9d018d17f5979c1468885387773fed984d5181
+$ docker pull mono@sha256:d2b9d9ba48a35b9f95c96ddb19e39aca15f9629ee12aa1df01ff432120d63a41
 ```
 
 -	Platforms:
@@ -3272,7 +3272,7 @@ ONBUILD WORKDIR /usr/src/app/build
 ## `mono:4.4.2-onbuild`
 
 ```console
-$ docker pull mono@sha256:c29f2b2df239dd216bb62cf0d74c05fcf223e68fe2a66998bc13aff0d0dc8a37
+$ docker pull mono@sha256:d59610f71bdeba50c01d16fab4030de679b888c5767ea336027817538c360b33
 ```
 
 -	Platforms:
@@ -3410,7 +3410,7 @@ ONBUILD WORKDIR /usr/src/app/build
 ## `mono:4.6.0.245`
 
 ```console
-$ docker pull mono@sha256:d72152d0f876176cfd895cdeda7d6b67692e90b2113bca3874146bebb8a76d02
+$ docker pull mono@sha256:83a92fec61cb97750248e12accd8f54a337ed98a67779be9679b4fefe882113d
 ```
 
 -	Platforms:
@@ -3581,7 +3581,7 @@ ONBUILD WORKDIR /usr/src/app/build
 ## `mono:4.6.0-onbuild`
 
 ```console
-$ docker pull mono@sha256:ddb550d199762a9c1f83f536744fc7c24de81f21bf736a7a053092547adbec55
+$ docker pull mono@sha256:0f1b519e8ff8504fa7e87779462e7964fe4c5608949d212efccdb9703bb47e82
 ```
 
 -	Platforms:
@@ -3649,16 +3649,110 @@ ONBUILD WORKDIR /usr/src/app/build
 
 ## `mono:4.6.1.3`
 
-**does not exist** (yet?)
+```console
+$ docker pull mono@sha256:af8c88cc0855e3c8f4633413cbb24c72bb8e209e44ee7befe6bf0ee1ae8f14d1
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `mono:4.6.1.3` - linux; amd64
+
+-	Docker Version: 1.12.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **143.0 MB (143029657 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7a744e3446a923e467f09fa90ff1fb51742ba9f2bc479d17a2f953648f69263e`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Mon, 19 Sep 2016 17:43:34 GMT
+ADD file:b06eab13504d045bfba673dde1c6f5831a875e95146504a385baa101124f58f5 in / 
+# Mon, 19 Sep 2016 17:43:35 GMT
+CMD ["/bin/bash"]
+# Mon, 19 Sep 2016 20:12:44 GMT
+MAINTAINER Jo Shields <jo.shields@xamarin.com>
+# Mon, 19 Sep 2016 21:05:34 GMT
+RUN apt-get update   && apt-get install -y curl   && rm -rf /var/lib/apt/lists/*
+# Mon, 19 Sep 2016 21:05:36 GMT
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+# Fri, 30 Sep 2016 17:01:52 GMT
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.6.1.3 main" > /etc/apt/sources.list.d/mono-xamarin.list   && apt-get update   && apt-get install -y binutils mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl   && rm -rf /var/lib/apt/lists/* /tmp/*
+```
+
+-	Layers:
+	-	`sha256:0fbab137f56aaa195d66eae971694eb98df3e4ff6a91eb4fa9905994ef40e5a1`  
+		Last Modified: Mon, 19 Sep 2016 17:48:55 GMT  
+		Size: 37.2 MB (37214522 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8fd4fae63c6a077b6d7e08b60cc62ac59c8674e444bf60eaaac99c8c202d4215`  
+		Last Modified: Wed, 21 Sep 2016 18:10:58 GMT  
+		Size: 7.6 MB (7554530 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:577c85bbb02e0673e738fb5e6e43a949778ca01877d1eb21ad13ecf754f31516`  
+		Last Modified: Wed, 21 Sep 2016 18:10:57 GMT  
+		Size: 29.3 KB (29330 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3330d0c1fdc2172fdf91485e0f923b76d294d7fd46f4314febc2f1fbb73d43f9`  
+		Last Modified: Fri, 30 Sep 2016 17:11:59 GMT  
+		Size: 98.2 MB (98231275 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.6.1`
 
-**does not exist** (yet?)
+```console
+$ docker pull mono@sha256:af8c88cc0855e3c8f4633413cbb24c72bb8e209e44ee7befe6bf0ee1ae8f14d1
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `mono:4.6.1` - linux; amd64
+
+-	Docker Version: 1.12.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **143.0 MB (143029657 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7a744e3446a923e467f09fa90ff1fb51742ba9f2bc479d17a2f953648f69263e`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Mon, 19 Sep 2016 17:43:34 GMT
+ADD file:b06eab13504d045bfba673dde1c6f5831a875e95146504a385baa101124f58f5 in / 
+# Mon, 19 Sep 2016 17:43:35 GMT
+CMD ["/bin/bash"]
+# Mon, 19 Sep 2016 20:12:44 GMT
+MAINTAINER Jo Shields <jo.shields@xamarin.com>
+# Mon, 19 Sep 2016 21:05:34 GMT
+RUN apt-get update   && apt-get install -y curl   && rm -rf /var/lib/apt/lists/*
+# Mon, 19 Sep 2016 21:05:36 GMT
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+# Fri, 30 Sep 2016 17:01:52 GMT
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.6.1.3 main" > /etc/apt/sources.list.d/mono-xamarin.list   && apt-get update   && apt-get install -y binutils mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl   && rm -rf /var/lib/apt/lists/* /tmp/*
+```
+
+-	Layers:
+	-	`sha256:0fbab137f56aaa195d66eae971694eb98df3e4ff6a91eb4fa9905994ef40e5a1`  
+		Last Modified: Mon, 19 Sep 2016 17:48:55 GMT  
+		Size: 37.2 MB (37214522 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8fd4fae63c6a077b6d7e08b60cc62ac59c8674e444bf60eaaac99c8c202d4215`  
+		Last Modified: Wed, 21 Sep 2016 18:10:58 GMT  
+		Size: 7.6 MB (7554530 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:577c85bbb02e0673e738fb5e6e43a949778ca01877d1eb21ad13ecf754f31516`  
+		Last Modified: Wed, 21 Sep 2016 18:10:57 GMT  
+		Size: 29.3 KB (29330 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3330d0c1fdc2172fdf91485e0f923b76d294d7fd46f4314febc2f1fbb73d43f9`  
+		Last Modified: Fri, 30 Sep 2016 17:11:59 GMT  
+		Size: 98.2 MB (98231275 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.6`
 
 ```console
-$ docker pull mono@sha256:d72152d0f876176cfd895cdeda7d6b67692e90b2113bca3874146bebb8a76d02
+$ docker pull mono@sha256:af8c88cc0855e3c8f4633413cbb24c72bb8e209e44ee7befe6bf0ee1ae8f14d1
 ```
 
 -	Platforms:
@@ -3668,9 +3762,9 @@ $ docker pull mono@sha256:d72152d0f876176cfd895cdeda7d6b67692e90b2113bca3874146b
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **142.9 MB (142875794 bytes)**  
+-	Total Size: **143.0 MB (143029657 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e5a4e90ac8a1dda8893f82170ae820b51f37268ea5247a605207eeb66e27be9f`
+-	Image ID: `sha256:7a744e3446a923e467f09fa90ff1fb51742ba9f2bc479d17a2f953648f69263e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -3684,8 +3778,8 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 RUN apt-get update   && apt-get install -y curl   && rm -rf /var/lib/apt/lists/*
 # Mon, 19 Sep 2016 21:05:36 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-# Wed, 21 Sep 2016 17:54:34 GMT
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.6.0.245 main" > /etc/apt/sources.list.d/mono-xamarin.list   && apt-get update   && apt-get install -y binutils mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl   && rm -rf /var/lib/apt/lists/* /tmp/*
+# Fri, 30 Sep 2016 17:01:52 GMT
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.6.1.3 main" > /etc/apt/sources.list.d/mono-xamarin.list   && apt-get update   && apt-get install -y binutils mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl   && rm -rf /var/lib/apt/lists/* /tmp/*
 ```
 
 -	Layers:
@@ -3701,15 +3795,15 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.6.
 		Last Modified: Wed, 21 Sep 2016 18:10:57 GMT  
 		Size: 29.3 KB (29330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd0466fd115c268705db8b345b93c53d7da55719bb6001095ef65e1ff25c0f35`  
-		Last Modified: Wed, 21 Sep 2016 18:15:39 GMT  
-		Size: 98.1 MB (98077412 bytes)  
+	-	`sha256:3330d0c1fdc2172fdf91485e0f923b76d294d7fd46f4314febc2f1fbb73d43f9`  
+		Last Modified: Fri, 30 Sep 2016 17:11:59 GMT  
+		Size: 98.2 MB (98231275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4`
 
 ```console
-$ docker pull mono@sha256:d72152d0f876176cfd895cdeda7d6b67692e90b2113bca3874146bebb8a76d02
+$ docker pull mono@sha256:af8c88cc0855e3c8f4633413cbb24c72bb8e209e44ee7befe6bf0ee1ae8f14d1
 ```
 
 -	Platforms:
@@ -3719,9 +3813,9 @@ $ docker pull mono@sha256:d72152d0f876176cfd895cdeda7d6b67692e90b2113bca3874146b
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **142.9 MB (142875794 bytes)**  
+-	Total Size: **143.0 MB (143029657 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e5a4e90ac8a1dda8893f82170ae820b51f37268ea5247a605207eeb66e27be9f`
+-	Image ID: `sha256:7a744e3446a923e467f09fa90ff1fb51742ba9f2bc479d17a2f953648f69263e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -3735,8 +3829,8 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 RUN apt-get update   && apt-get install -y curl   && rm -rf /var/lib/apt/lists/*
 # Mon, 19 Sep 2016 21:05:36 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-# Wed, 21 Sep 2016 17:54:34 GMT
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.6.0.245 main" > /etc/apt/sources.list.d/mono-xamarin.list   && apt-get update   && apt-get install -y binutils mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl   && rm -rf /var/lib/apt/lists/* /tmp/*
+# Fri, 30 Sep 2016 17:01:52 GMT
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.6.1.3 main" > /etc/apt/sources.list.d/mono-xamarin.list   && apt-get update   && apt-get install -y binutils mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl   && rm -rf /var/lib/apt/lists/* /tmp/*
 ```
 
 -	Layers:
@@ -3752,15 +3846,15 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.6.
 		Last Modified: Wed, 21 Sep 2016 18:10:57 GMT  
 		Size: 29.3 KB (29330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd0466fd115c268705db8b345b93c53d7da55719bb6001095ef65e1ff25c0f35`  
-		Last Modified: Wed, 21 Sep 2016 18:15:39 GMT  
-		Size: 98.1 MB (98077412 bytes)  
+	-	`sha256:3330d0c1fdc2172fdf91485e0f923b76d294d7fd46f4314febc2f1fbb73d43f9`  
+		Last Modified: Fri, 30 Sep 2016 17:11:59 GMT  
+		Size: 98.2 MB (98231275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:latest`
 
 ```console
-$ docker pull mono@sha256:d72152d0f876176cfd895cdeda7d6b67692e90b2113bca3874146bebb8a76d02
+$ docker pull mono@sha256:af8c88cc0855e3c8f4633413cbb24c72bb8e209e44ee7befe6bf0ee1ae8f14d1
 ```
 
 -	Platforms:
@@ -3770,9 +3864,9 @@ $ docker pull mono@sha256:d72152d0f876176cfd895cdeda7d6b67692e90b2113bca3874146b
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **142.9 MB (142875794 bytes)**  
+-	Total Size: **143.0 MB (143029657 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e5a4e90ac8a1dda8893f82170ae820b51f37268ea5247a605207eeb66e27be9f`
+-	Image ID: `sha256:7a744e3446a923e467f09fa90ff1fb51742ba9f2bc479d17a2f953648f69263e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -3786,8 +3880,8 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 RUN apt-get update   && apt-get install -y curl   && rm -rf /var/lib/apt/lists/*
 # Mon, 19 Sep 2016 21:05:36 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-# Wed, 21 Sep 2016 17:54:34 GMT
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.6.0.245 main" > /etc/apt/sources.list.d/mono-xamarin.list   && apt-get update   && apt-get install -y binutils mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl   && rm -rf /var/lib/apt/lists/* /tmp/*
+# Fri, 30 Sep 2016 17:01:52 GMT
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.6.1.3 main" > /etc/apt/sources.list.d/mono-xamarin.list   && apt-get update   && apt-get install -y binutils mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl   && rm -rf /var/lib/apt/lists/* /tmp/*
 ```
 
 -	Layers:
@@ -3803,14 +3897,79 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.6.
 		Last Modified: Wed, 21 Sep 2016 18:10:57 GMT  
 		Size: 29.3 KB (29330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd0466fd115c268705db8b345b93c53d7da55719bb6001095ef65e1ff25c0f35`  
-		Last Modified: Wed, 21 Sep 2016 18:15:39 GMT  
-		Size: 98.1 MB (98077412 bytes)  
+	-	`sha256:3330d0c1fdc2172fdf91485e0f923b76d294d7fd46f4314febc2f1fbb73d43f9`  
+		Last Modified: Fri, 30 Sep 2016 17:11:59 GMT  
+		Size: 98.2 MB (98231275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.6.1.3-onbuild`
 
-**does not exist** (yet?)
+```console
+$ docker pull mono@sha256:fa792ab6bf5e6e04761151eea7715c98766c4cf6c6e1400b3bba07b85fa795fe
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `mono:4.6.1.3-onbuild` - linux; amd64
+
+-	Docker Version: 1.12.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **143.0 MB (143029821 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:cd402b5f7b4ed63c80b556319a47f09e2839946c2cef30392cc72b111d7ca3d8`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Mon, 19 Sep 2016 17:43:34 GMT
+ADD file:b06eab13504d045bfba673dde1c6f5831a875e95146504a385baa101124f58f5 in / 
+# Mon, 19 Sep 2016 17:43:35 GMT
+CMD ["/bin/bash"]
+# Mon, 19 Sep 2016 20:12:44 GMT
+MAINTAINER Jo Shields <jo.shields@xamarin.com>
+# Mon, 19 Sep 2016 21:05:34 GMT
+RUN apt-get update   && apt-get install -y curl   && rm -rf /var/lib/apt/lists/*
+# Mon, 19 Sep 2016 21:05:36 GMT
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+# Fri, 30 Sep 2016 17:01:52 GMT
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.6.1.3 main" > /etc/apt/sources.list.d/mono-xamarin.list   && apt-get update   && apt-get install -y binutils mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl   && rm -rf /var/lib/apt/lists/* /tmp/*
+# Fri, 30 Sep 2016 17:01:52 GMT
+MAINTAINER Jo Shields <jo.shields@xamarin.com>
+# Fri, 30 Sep 2016 17:01:53 GMT
+RUN mkdir -p /usr/src/app/source /usr/src/app/build
+# Fri, 30 Sep 2016 17:01:54 GMT
+WORKDIR /usr/src/app/source
+# Fri, 30 Sep 2016 17:01:54 GMT
+ONBUILD COPY . /usr/src/app/source
+# Fri, 30 Sep 2016 17:01:54 GMT
+ONBUILD RUN nuget restore -NonInteractive
+# Fri, 30 Sep 2016 17:01:55 GMT
+ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app/build/
+# Fri, 30 Sep 2016 17:01:55 GMT
+ONBUILD WORKDIR /usr/src/app/build
+```
+
+-	Layers:
+	-	`sha256:0fbab137f56aaa195d66eae971694eb98df3e4ff6a91eb4fa9905994ef40e5a1`  
+		Last Modified: Mon, 19 Sep 2016 17:48:55 GMT  
+		Size: 37.2 MB (37214522 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8fd4fae63c6a077b6d7e08b60cc62ac59c8674e444bf60eaaac99c8c202d4215`  
+		Last Modified: Wed, 21 Sep 2016 18:10:58 GMT  
+		Size: 7.6 MB (7554530 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:577c85bbb02e0673e738fb5e6e43a949778ca01877d1eb21ad13ecf754f31516`  
+		Last Modified: Wed, 21 Sep 2016 18:10:57 GMT  
+		Size: 29.3 KB (29330 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3330d0c1fdc2172fdf91485e0f923b76d294d7fd46f4314febc2f1fbb73d43f9`  
+		Last Modified: Fri, 30 Sep 2016 17:11:59 GMT  
+		Size: 98.2 MB (98231275 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ae963cce83f924ec5c84565bd51b1517d74d731440668690532b8a88d563de7b`  
+		Last Modified: Fri, 30 Sep 2016 17:12:54 GMT  
+		Size: 164.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mono:4.6.1-onbuild`
 
@@ -3884,7 +4043,7 @@ ONBUILD WORKDIR /usr/src/app/build
 ## `mono:4.6-onbuild`
 
 ```console
-$ docker pull mono@sha256:ddb550d199762a9c1f83f536744fc7c24de81f21bf736a7a053092547adbec55
+$ docker pull mono@sha256:fa792ab6bf5e6e04761151eea7715c98766c4cf6c6e1400b3bba07b85fa795fe
 ```
 
 -	Platforms:
@@ -3894,9 +4053,9 @@ $ docker pull mono@sha256:ddb550d199762a9c1f83f536744fc7c24de81f21bf736a7a053092
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **142.9 MB (142875958 bytes)**  
+-	Total Size: **143.0 MB (143029821 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1684881bc7515d222720373079ec422dafabc64e9f1a38dd9ecffd7c4ea573de`
+-	Image ID: `sha256:cd402b5f7b4ed63c80b556319a47f09e2839946c2cef30392cc72b111d7ca3d8`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -3910,21 +4069,21 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 RUN apt-get update   && apt-get install -y curl   && rm -rf /var/lib/apt/lists/*
 # Mon, 19 Sep 2016 21:05:36 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-# Wed, 21 Sep 2016 17:54:34 GMT
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.6.0.245 main" > /etc/apt/sources.list.d/mono-xamarin.list   && apt-get update   && apt-get install -y binutils mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl   && rm -rf /var/lib/apt/lists/* /tmp/*
-# Wed, 21 Sep 2016 17:54:35 GMT
+# Fri, 30 Sep 2016 17:01:52 GMT
+RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.6.1.3 main" > /etc/apt/sources.list.d/mono-xamarin.list   && apt-get update   && apt-get install -y binutils mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl   && rm -rf /var/lib/apt/lists/* /tmp/*
+# Fri, 30 Sep 2016 17:01:52 GMT
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
-# Wed, 21 Sep 2016 17:54:36 GMT
+# Fri, 30 Sep 2016 17:01:53 GMT
 RUN mkdir -p /usr/src/app/source /usr/src/app/build
-# Wed, 21 Sep 2016 17:54:36 GMT
+# Fri, 30 Sep 2016 17:01:54 GMT
 WORKDIR /usr/src/app/source
-# Wed, 21 Sep 2016 17:54:36 GMT
+# Fri, 30 Sep 2016 17:01:54 GMT
 ONBUILD COPY . /usr/src/app/source
-# Wed, 21 Sep 2016 17:54:36 GMT
+# Fri, 30 Sep 2016 17:01:54 GMT
 ONBUILD RUN nuget restore -NonInteractive
-# Wed, 21 Sep 2016 17:54:37 GMT
+# Fri, 30 Sep 2016 17:01:55 GMT
 ONBUILD RUN xbuild /property:Configuration=Release /property:OutDir=/usr/src/app/build/
-# Wed, 21 Sep 2016 17:54:37 GMT
+# Fri, 30 Sep 2016 17:01:55 GMT
 ONBUILD WORKDIR /usr/src/app/build
 ```
 
@@ -3941,12 +4100,12 @@ ONBUILD WORKDIR /usr/src/app/build
 		Last Modified: Wed, 21 Sep 2016 18:10:57 GMT  
 		Size: 29.3 KB (29330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd0466fd115c268705db8b345b93c53d7da55719bb6001095ef65e1ff25c0f35`  
-		Last Modified: Wed, 21 Sep 2016 18:15:39 GMT  
-		Size: 98.1 MB (98077412 bytes)  
+	-	`sha256:3330d0c1fdc2172fdf91485e0f923b76d294d7fd46f4314febc2f1fbb73d43f9`  
+		Last Modified: Fri, 30 Sep 2016 17:11:59 GMT  
+		Size: 98.2 MB (98231275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc9cb54eaaf237db57b0cc3f7efa728493b7e4c15d6610d97fffa49f8389b7d0`  
-		Last Modified: Wed, 21 Sep 2016 18:16:26 GMT  
+	-	`sha256:ae963cce83f924ec5c84565bd51b1517d74d731440668690532b8a88d563de7b`  
+		Last Modified: Fri, 30 Sep 2016 17:12:54 GMT  
 		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
