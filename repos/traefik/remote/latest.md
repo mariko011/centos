@@ -1,7 +1,7 @@
 ## `traefik:latest`
 
 ```console
-$ docker pull traefik@sha256:9bfbc036eecb73b60d9a4ecb07eb9b7f90dec37a8112326151b4cd2ef3fbd7f3
+$ docker pull traefik@sha256:58a445b720f40bbb99f572838bdb2845a7e5857070aebf624ceff11fa70ba5cb
 ```
 
 -	Platforms:
