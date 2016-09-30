@@ -18,7 +18,7 @@
 ## `irssi:0.8.20`
 
 ```console
-$ docker pull irssi@sha256:cdd5a0a3a3cbf3e6a517678999480b4578f83115f2a3ed2a1894f77fd0fbc588
+$ docker pull irssi@sha256:e993681216b2bd1f0e300e27ab03cea16097839d34a426557cc4e5b8951e5362
 ```
 
 -	Platforms:
@@ -144,7 +144,7 @@ CMD ["irssi"]
 ## `irssi:0`
 
 ```console
-$ docker pull irssi@sha256:cdd5a0a3a3cbf3e6a517678999480b4578f83115f2a3ed2a1894f77fd0fbc588
+$ docker pull irssi@sha256:e993681216b2bd1f0e300e27ab03cea16097839d34a426557cc4e5b8951e5362
 ```
 
 -	Platforms:
@@ -270,7 +270,7 @@ CMD ["irssi"]
 ## `irssi:0.8.20-debian`
 
 ```console
-$ docker pull irssi@sha256:cdd5a0a3a3cbf3e6a517678999480b4578f83115f2a3ed2a1894f77fd0fbc588
+$ docker pull irssi@sha256:e993681216b2bd1f0e300e27ab03cea16097839d34a426557cc4e5b8951e5362
 ```
 
 -	Platforms:
@@ -333,7 +333,7 @@ CMD ["irssi"]
 ## `irssi:0.8-debian`
 
 ```console
-$ docker pull irssi@sha256:cdd5a0a3a3cbf3e6a517678999480b4578f83115f2a3ed2a1894f77fd0fbc588
+$ docker pull irssi@sha256:e993681216b2bd1f0e300e27ab03cea16097839d34a426557cc4e5b8951e5362
 ```
 
 -	Platforms:
@@ -396,7 +396,7 @@ CMD ["irssi"]
 ## `irssi:0-debian`
 
 ```console
-$ docker pull irssi@sha256:cdd5a0a3a3cbf3e6a517678999480b4578f83115f2a3ed2a1894f77fd0fbc588
+$ docker pull irssi@sha256:e993681216b2bd1f0e300e27ab03cea16097839d34a426557cc4e5b8951e5362
 ```
 
 -	Platforms:
@@ -644,7 +644,7 @@ CMD ["irssi"]
 ## `irssi:0-alpine`
 
 ```console
-$ docker pull irssi@sha256:7b63b548c77487100329ffdf44c7321d71d338524ffc93b238355106566ba1e3
+$ docker pull irssi@sha256:731c9b9d62a1021844b4a906e756473669764e5380174acc10aeb38f6ce79078
 ```
 
 -	Platforms:
@@ -705,7 +705,7 @@ CMD ["irssi"]
 ## `irssi:alpine`
 
 ```console
-$ docker pull irssi@sha256:7b63b548c77487100329ffdf44c7321d71d338524ffc93b238355106566ba1e3
+$ docker pull irssi@sha256:731c9b9d62a1021844b4a906e756473669764e5380174acc10aeb38f6ce79078
 ```
 
 -	Platforms:
