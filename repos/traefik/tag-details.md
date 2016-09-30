@@ -2,9 +2,19 @@
 
 # Tags of `traefik`
 
+-	[`traefik:v1.1.0-rc1`](#traefikv110-rc1)
+-	[`traefik:camembert`](#traefikcamembert)
 -	[`traefik:v1.0.3`](#traefikv103)
 -	[`traefik:reblochon`](#traefikreblochon)
 -	[`traefik:latest`](#traefiklatest)
+
+## `traefik:v1.1.0-rc1`
+
+**does not exist** (yet?)
+
+## `traefik:camembert`
+
+**does not exist** (yet?)
 
 ## `traefik:v1.0.3`
 
