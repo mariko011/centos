@@ -1,7 +1,7 @@
 ## `jetty:9-jre8`
 
 ```console
-$ docker pull jetty@sha256:24ffc296e4c7d73cc8852aa37de5a850740972d3811462f2144510e09dac2a73
+$ docker pull jetty@sha256:43d7d221803020395952bbdafb3ba754f843a8e6721a8816452cb1e38dadc577
 ```
 
 -	Platforms:

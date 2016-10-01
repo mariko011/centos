@@ -1,7 +1,7 @@
 ## `php:7-cli`
 
 ```console
-$ docker pull php@sha256:1314e33cf30bfef3264f8148208fcd974bbdfe8ecd325f241cf9ad84e4df214c
+$ docker pull php@sha256:2da79eabd2f0bbd8c27ce16a3f2f931667a58f5a613d1e5174e801f80db6e9f6
 ```
 
 -	Platforms:

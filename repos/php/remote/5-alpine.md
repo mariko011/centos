@@ -1,7 +1,7 @@
 ## `php:5-alpine`
 
 ```console
-$ docker pull php@sha256:5805bde89139acaef23a297afe723e660bc9e4f278e7aac35c7464746bc9bde1
+$ docker pull php@sha256:bb1aa8c9000a6cd21029f093a471ac7bc4eed4391704e73bc90cf775202b5b9e
 ```
 
 -	Platforms:
