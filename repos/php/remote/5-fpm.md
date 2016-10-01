@@ -1,7 +1,7 @@
 ## `php:5-fpm`
 
 ```console
-$ docker pull php@sha256:dfb6057b315a12badcaeecfda2ff5f540e9c186e4e1bf3bdd4cb3badc5f23808
+$ docker pull php@sha256:61c370a47b7c59a027532fa9304ca9bb6881315465bdabcfbecce8bff5ee1740
 ```
 
 -	Platforms:

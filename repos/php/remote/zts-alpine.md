@@ -1,7 +1,7 @@
 ## `php:zts-alpine`
 
 ```console
-$ docker pull php@sha256:4809fab1e8bdb05d8e4c03796919b8dae751bf02cd6833fe78661ace8febc1b5
+$ docker pull php@sha256:9a029bfda680dc58653d0276300ef415688cb11b7cbdb83f278f9d95a6f5098d
 ```
 
 -	Platforms:
