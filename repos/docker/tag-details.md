@@ -2798,7 +2798,7 @@ RUN apk add --no-cache 		git 		openssh-client
 ## `docker:1.12-experimental-git`
 
 ```console
-$ docker pull docker@sha256:7f587534e2ffdde8e2e28b4041dd4ca608c6ab60b06e5a1c3cee062079b57270
+$ docker pull docker@sha256:2af6950f151f6a02fa11021f596db1b5f6d3386c88586462966809e18312e183
 ```
 
 -	Platforms:
@@ -2862,7 +2862,7 @@ RUN apk add --no-cache 		git 		openssh-client
 ## `docker:1-experimental-git`
 
 ```console
-$ docker pull docker@sha256:7f587534e2ffdde8e2e28b4041dd4ca608c6ab60b06e5a1c3cee062079b57270
+$ docker pull docker@sha256:2af6950f151f6a02fa11021f596db1b5f6d3386c88586462966809e18312e183
 ```
 
 -	Platforms:
@@ -2926,7 +2926,7 @@ RUN apk add --no-cache 		git 		openssh-client
 ## `docker:experimental-git`
 
 ```console
-$ docker pull docker@sha256:7f587534e2ffdde8e2e28b4041dd4ca608c6ab60b06e5a1c3cee062079b57270
+$ docker pull docker@sha256:2af6950f151f6a02fa11021f596db1b5f6d3386c88586462966809e18312e183
 ```
 
 -	Platforms:
@@ -2990,7 +2990,7 @@ RUN apk add --no-cache 		git 		openssh-client
 ## `docker:1.11.2`
 
 ```console
-$ docker pull docker@sha256:e30ae4095b5efe42a5dff3aab2a86afff17a777aa7f7cfcb00b6a5817a461370
+$ docker pull docker@sha256:9d643ef4a94d67e527d97cae0e6157d9998d81a2137294953dfada840a16756a
 ```
 
 -	Platforms:
@@ -3048,7 +3048,7 @@ CMD ["sh"]
 ## `docker:1.11`
 
 ```console
-$ docker pull docker@sha256:e30ae4095b5efe42a5dff3aab2a86afff17a777aa7f7cfcb00b6a5817a461370
+$ docker pull docker@sha256:9d643ef4a94d67e527d97cae0e6157d9998d81a2137294953dfada840a16756a
 ```
 
 -	Platforms:
@@ -3106,7 +3106,7 @@ CMD ["sh"]
 ## `docker:1.11.2-dind`
 
 ```console
-$ docker pull docker@sha256:27b8cce015c0ef618d1fb0924cac85d0462e11c1e1c3009770960a60fc36a210
+$ docker pull docker@sha256:f16a8e6cddc97a0949181057727832d87ade69c81977e14972e5adf3714a7796
 ```
 
 -	Platforms:
@@ -3198,7 +3198,7 @@ CMD []
 ## `docker:1.11-dind`
 
 ```console
-$ docker pull docker@sha256:27b8cce015c0ef618d1fb0924cac85d0462e11c1e1c3009770960a60fc36a210
+$ docker pull docker@sha256:f16a8e6cddc97a0949181057727832d87ade69c81977e14972e5adf3714a7796
 ```
 
 -	Platforms:
@@ -3290,7 +3290,7 @@ CMD []
 ## `docker:1.11.2-git`
 
 ```console
-$ docker pull docker@sha256:54916afad4199a6f1ee09397194e8adf104517c6bd2c8c835160ed0fa3aaadc0
+$ docker pull docker@sha256:e430ac8a9fc6d3e8df6706b0750f01928ff783931e2a56cb6ffe6e3f567b2a99
 ```
 
 -	Platforms:
@@ -3354,7 +3354,7 @@ RUN apk add --no-cache 		git 		openssh-client
 ## `docker:1.11-git`
 
 ```console
-$ docker pull docker@sha256:54916afad4199a6f1ee09397194e8adf104517c6bd2c8c835160ed0fa3aaadc0
+$ docker pull docker@sha256:e430ac8a9fc6d3e8df6706b0750f01928ff783931e2a56cb6ffe6e3f567b2a99
 ```
 
 -	Platforms:

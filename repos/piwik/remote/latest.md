@@ -1,7 +1,7 @@
 ## `piwik:latest`
 
 ```console
-$ docker pull piwik@sha256:497fef57a8db841accbdf1381166f4ac1f8e5114d5ba39bd119f07eeb84c4e1a
+$ docker pull piwik@sha256:f44ee7ffc045c5bd8835378206db012ae63e345e843af54029b66b62491ae98e
 ```
 
 -	Platforms:

@@ -1,7 +1,7 @@
 ## `drupal:7-fpm`
 
 ```console
-$ docker pull drupal@sha256:dd0f2399407ac38864a4bbed3cc04ecf3d397a9b7c42af152d5fd639c6fab3c6
+$ docker pull drupal@sha256:449764c4bbacfffb258a27f557aeb1446423835038cb65f28ae445153dcb209c
 ```
 
 -	Platforms:
