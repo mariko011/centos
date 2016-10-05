@@ -1,7 +1,7 @@
 ## `docker:1-experimental`
 
 ```console
-$ docker pull docker@sha256:021a9bb41e35fbdb5a950970fbbeaecd4d36922ec6f4af2075c5158caa49c5bf
+$ docker pull docker@sha256:5d0583f976a3988e31c5cfdf9ee191add62e5c1de6c4d00bfaee0285d9962fcf
 ```
 
 -	Platforms:

@@ -1,7 +1,7 @@
 ## `docker:1-git`
 
 ```console
-$ docker pull docker@sha256:df0d9b73d8ddec0a6ade65adb66372a77fcaf0e25b211f51a22852aa271d787a
+$ docker pull docker@sha256:1a1bfd53fa1ebe7d32e2ca7a4a6a28f33422bdf456947968d395ddfc9162c45b
 ```
 
 -	Platforms:

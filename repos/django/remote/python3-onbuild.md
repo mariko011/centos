@@ -1,7 +1,7 @@
 ## `django:python3-onbuild`
 
 ```console
-$ docker pull django@sha256:cb0936521eb420f34f6242a295409dcd0aa07e3da9fd8fbc8ca97b7521e79fef
+$ docker pull django@sha256:7a147bd34c90d7df323e96485b3eceb865d1a7d2f86b52f405e94292d4c0a17c
 ```
 
 -	Platforms:

@@ -1,7 +1,7 @@
 ## `docker:1-experimental-dind`
 
 ```console
-$ docker pull docker@sha256:db17dd4f5b6f44f2cfba01ef0e1d591b2af1bb74c9fc0d3a6bc8ecffb6069218
+$ docker pull docker@sha256:42db886646228dc89f45208cb5e6b8f6688b80175c9ec610e2a51e6ccba6d209
 ```
 
 -	Platforms:
