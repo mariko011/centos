@@ -1,7 +1,7 @@
 ## `influxdb:latest`
 
 ```console
-$ docker pull influxdb@sha256:0858fa01876dd0303ab3cf8b2e73fb22481ba78dd6e03a3598a6a30b139052b1
+$ docker pull influxdb@sha256:7ff3de2dc47f3f5121e17de8d4846b437d4a73589690a04c3971d53bab25498a
 ```
 
 -	Platforms:

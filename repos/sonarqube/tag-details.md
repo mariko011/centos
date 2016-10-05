@@ -121,7 +121,7 @@ ENTRYPOINT ["./bin/run.sh"]
 ## `sonarqube:6.0`
 
 ```console
-$ docker pull sonarqube@sha256:bd4e76dda3fd20fd3abe9e55826ec6d42db7c55572eb8beeddce6d077f0fea16
+$ docker pull sonarqube@sha256:05869a4997ca2e8c0adb92c3fa43de11cf3de781a16181a89e94d5553000f3af
 ```
 
 -	Platforms:
