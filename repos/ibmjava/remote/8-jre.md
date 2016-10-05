@@ -1,7 +1,7 @@
 ## `ibmjava:8-jre`
 
 ```console
-$ docker pull ibmjava@sha256:bb1aa2368f64d3e9bf80fffb016caaa1ea1a4ad1ec593b500a4b6b777c60294c
+$ docker pull ibmjava@sha256:a293598d030b6ad7e7d933fd91519415b414962bd044310148bb76ffed7bb52a
 ```
 
 -	Platforms:
