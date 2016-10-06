@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:854c998fa5d79a47f97aef767ce47f69ccb61bc2ad9bb1e30c3981ed06ca2a92`
-- Created: `2016-09-24T00:22:55.870032899Z`
+- Image ID: `sha256:478f8e2fb62f74ca71df118494587e7c7d098bc1059a253c06e7e0bb5c9f62f5`
+- Created: `2016-09-28T20:42:34.369734213Z`
 - Arch: `linux`/`amd64`
 - Command: `["lein","run"]`
 - Environment:
@@ -13,7 +13,7 @@
   - `JAVA_VERSION=8u102`
   - `JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1`
   - `CA_CERTIFICATES_JAVA_VERSION=20140324`
-  - `LEIN_VERSION=2.7.0`
+  - `LEIN_VERSION=2.7.1`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
 
