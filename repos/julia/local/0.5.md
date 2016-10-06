@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ac9e7bbc2ed9e6055107d57f250868796710c83c5f490299e410ab1eac96124c`
-- Created: `2016-09-23T19:46:28.161757679Z`
+- Image ID: `sha256:ed321747647121bd431cb11924457284fcca11c71bb25d93b2c2f3b8396ce79c`
+- Created: `2016-09-28T20:54:20.237750984Z`
 - Arch: `linux`/`amd64`
 - Command: `["julia"]`
 - Environment:
@@ -336,9 +336,8 @@ Binary Packages:
 
 - `curl=7.38.0-4+deb8u4`
 - `libcurl3:amd64=7.38.0-4+deb8u4`
-- `libcurl3-gnutls:amd64=7.38.0-4+deb8u4`
 
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -364,9 +363,10 @@ Likely also available for browsing at:
 Binary Packages:
 
 - `libsasl2-2:amd64=2.1.26.dfsg1-13+deb8u1`
+- `libsasl2-modules:amd64=2.1.26.dfsg1-13+deb8u1`
 - `libsasl2-modules-db:amd64=2.1.26.dfsg1-13+deb8u1`
 
-Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
 
 - `BSD-2-clause`
 - `BSD-4-clause`
@@ -586,30 +586,6 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/e2fsprogs/1.42.12-2/
 - https://sources.debian.net/src/e2fsprogs/1.42.12-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `expat=2.1.0-6+deb8u3`
-
-Binary Packages:
-
-- `libexpat1:amd64=2.1.0-6+deb8u3`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris expat=2.1.0-6+deb8u3
-'http://httpredir.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u3.dsc' expat_2.1.0-6+deb8u3.dsc 2278 SHA256:3485be5c4ffc922aea14718c48c4107b04559ec013cc0e98a61597da50320e25
-'http://httpredir.debian.org/debian/pool/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
-'http://httpredir.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u3.debian.tar.xz' expat_2.1.0-6+deb8u3.debian.tar.xz 21716 SHA256:5e756a68a7634b7b7109024bd33df4df3c5964ea0d0f5e8db0ca98f623bcd841
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/expat/2.1.0-6+deb8u3/
-- https://sources.debian.net/src/expat/2.1.0-6+deb8u3/debian/copyright (for direct copyright/license information)
-
 ### `dpkg` source package: `findutils=4.4.2-9`
 
 Binary Packages:
@@ -691,72 +667,6 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/gcc-4.9/4.9.2-10/
 - https://sources.debian.net/src/gcc-4.9/4.9.2-10/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `gdbm=1.8.3-13.1`
-
-Binary Packages:
-
-- `libgdbm3:amd64=1.8.3-13.1`
-
-Licenses: (parsed from: `/usr/share/doc/libgdbm3/copyright`)
-
-- `GPL-2`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris gdbm=1.8.3-13.1
-'http://httpredir.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3-13.1.dsc' gdbm_1.8.3-13.1.dsc 1830 SHA256:b1d8bef30edc491315c337930cbe2b61f44f55035adfc26ae945bab5ca57d5c9
-'http://httpredir.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3.orig.tar.bz2' gdbm_1.8.3.orig.tar.bz2 172796 SHA256:1d5995b6e9e6be4ff62c8126d019f184a083dd8e6f75f6c74b9fe023b5b9440e
-'http://httpredir.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3-13.1.debian.tar.xz' gdbm_1.8.3-13.1.debian.tar.xz 14748 SHA256:251401e1f5210226f384e936b1b7ea1df40119a918d9f3dbf48b2e51d4df8983
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gdbm/1.8.3-13.1/
-- https://sources.debian.net/src/gdbm/1.8.3-13.1/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `git=1:2.1.4-2.1+deb8u2`
-
-Binary Packages:
-
-- `git=1:2.1.4-2.1+deb8u2`
-- `git-man=1:2.1.4-2.1+deb8u2`
-
-Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
-
-- `Apache-2.0`
-- `Artistic`
-- `Artistic-1`
-- `BSD-2-clause`
-- `Boost`
-- `EDL-1.0`
-- `Expat`
-- `GPL`
-- `GPL-1+`
-- `GPL-2`
-- `GPL-2+`
-- `ISC`
-- `LGPL-2`
-- `LGPL-2+`
-- `LGPL-2.1`
-- `LGPL-2.1+`
-- `dlmalloc`
-- `mingw-runtime`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris git=1:2.1.4-2.1+deb8u2
-'http://httpredir.debian.org/debian/pool/main/g/git/git_2.1.4-2.1+deb8u2.dsc' git_2.1.4-2.1+deb8u2.dsc 2803 SHA256:acc2cf0a4b5099336e57fae72ae9fdfbcf1fdd083ef824364a17a2d6e22e722d
-'http://httpredir.debian.org/debian/pool/main/g/git/git_2.1.4.orig.tar.xz' git_2.1.4.orig.tar.xz 3544804 SHA256:a04968b9b10cbcb31a7054aa3a0d11ac47c83556ecd270ddef1987df5d3d053e
-'http://httpredir.debian.org/debian/pool/main/g/git/git_2.1.4-2.1+deb8u2.debian.tar.xz' git_2.1.4-2.1+deb8u2.debian.tar.xz 472524 SHA256:392c84599070db4550bdcab86709d083cd9d8543d1358a0fed9b272ec60c9d0c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/git/1:2.1.4-2.1+deb8u2/
-- https://sources.debian.net/src/git/1:2.1.4-2.1+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.19-18+deb8u6`
 
@@ -1102,12 +1012,13 @@ Likely also available for browsing at:
 
 Binary Packages:
 
+- `krb5-locales=1.12.1+dfsg-19+deb8u2`
 - `libgssapi-krb5-2:amd64=1.12.1+dfsg-19+deb8u2`
 - `libk5crypto3:amd64=1.12.1+dfsg-19+deb8u2`
 - `libkrb5-3:amd64=1.12.1+dfsg-19+deb8u2`
 - `libkrb5support0:amd64=1.12.1+dfsg-19+deb8u2`
 
-Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/krb5-locales/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
@@ -1151,31 +1062,6 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/libcap2/1:2.24-8/
 - https://sources.debian.net/src/libcap2/1:2.24-8/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `liberror-perl=0.17-1.1`
-
-Binary Packages:
-
-- `liberror-perl=0.17-1.1`
-
-Licenses: (parsed from: `/usr/share/doc/liberror-perl/copyright`)
-
-- `Artistic`
-- `GPL`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris liberror-perl=0.17-1.1
-'http://httpredir.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17-1.1.dsc' liberror-perl_0.17-1.1.dsc 1707 SHA256:b042cdc85fca61bbc96765dfa9dc1043319b0259485d502b26856addc2ad1969
-'http://httpredir.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17.orig.tar.gz' liberror-perl_0.17.orig.tar.gz 17266 SHA256:2e8157981a77e87d37d26d8b6b3183560dddc541b491b0b32fcda010730b257c
-'http://httpredir.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17-1.1.diff.gz' liberror-perl_0.17-1.1.diff.gz 3541 SHA256:ff276a25fc81edf38681f03a9f44346516226b5ab3c95f552d8d7f24686ab7d9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/liberror-perl/0.17-1.1/
-- https://sources.debian.net/src/liberror-perl/0.17-1.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libffi=3.1-2`
 
@@ -1720,19 +1606,30 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u2/
 - https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb8u4`
+### `dpkg` source package: `openssl=1.0.1t-1+deb8u5`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1t-1+deb8u4`
-- `openssl=1.0.1t-1+deb8u4`
+- `libssl1.0.0:amd64=1.0.1t-1+deb8u5`
+- `openssl=1.0.1t-1+deb8u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u5
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u5.dsc' openssl_1.0.1t-1+deb8u5.dsc 2258 SHA256:165eb617542ab1e9bf810c215b586a57b926f3f6977c1a72af752754c7c90bea
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u5.debian.tar.xz' openssl_1.0.1t-1+deb8u5.debian.tar.xz 106720 SHA256:c6723fbf370ec5544c9b1753d5ad06d4b343a341560fb8650dda135506312cd9
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
@@ -1815,11 +1712,9 @@ Likely also available for browsing at:
 
 Binary Packages:
 
-- `perl=5.20.2-3+deb8u6`
 - `perl-base=5.20.2-3+deb8u6`
-- `perl-modules=5.20.2-3+deb8u6`
 
-Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules/copyright`)
+Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
 - `Artistic`
 - `Artistic,`
