@@ -673,14 +673,8 @@ Licenses: (parsed from: `/usr/share/doc/cmake/copyright`, `/usr/share/doc/cmake-
 - `MIT-like`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cmake=3.5.1-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cmake/cmake_3.5.1-1ubuntu2.dsc' cmake_3.5.1-1ubuntu2.dsc 2554 SHA256:23fd70c82e151ff8e03524cfbce886a80547d0ef1089b33e8a757c260011d9b9
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cmake/cmake_3.5.1.orig.tar.gz' cmake_3.5.1.orig.tar.gz 6863121 SHA256:93d651a754bcf6f0124669646391dd5774c0fc4d407c384e3ae76ef9a60477e8
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cmake/cmake_3.5.1-1ubuntu2.debian.tar.xz' cmake_3.5.1-1ubuntu2.debian.tar.xz 33268 SHA256:eb3a85715fafca0200ff756ee48752bcbce1433c4414184c216d4ebfc4a25ac0
-```
 
 ### `dpkg` source package: `configobj=5.0.6-2`
 
@@ -6912,14 +6906,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-rospkg=1.0.40-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.0.40-1.dsc' python-rospkg_1.0.40-1.dsc 880 SHA256:1e2f13ae00884d47e4e122c39f0ae724abe315f666609434d9a90a09529b2cec
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.0.40.orig.tar.gz' python-rospkg_1.0.40.orig.tar.gz 39546 SHA256:ea5b6e716b08f3e0a24f62ba9d52bbf11d8d6d8b031c41b39ad9b6d6736f7401
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.0.40-1.debian.tar.gz' python-rospkg_1.0.40-1.debian.tar.gz 980 SHA256:d03386d8c36b88af5c3534c5562a04fcc1aa3f8f07cd340b123fa8cf56a8cbac
-```
 
 ### `dpkg` source package: `python-service-identity=16.0.0-2`
 
@@ -9510,14 +9498,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=229-4ubuntu8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu8.dsc' systemd_229-4ubuntu8.dsc 4423 SHA256:0773690165bf76ced81b0942bed0a87cf2b79510e71ecaa44d2a07522ac53312
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu8.debian.tar.xz' systemd_229-4ubuntu8.debian.tar.xz 149884 SHA256:877dd790c3a80e55ada658c756fa7baf47c3b8b1a2e188b1e24ece0e431353dc
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 

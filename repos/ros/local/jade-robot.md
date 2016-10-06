@@ -4178,14 +4178,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.8
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.8.dsc' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.8.dsc 2387 SHA256:965de37445c1208fa9aa9c1edae8e4eeee24c7d97a6a038ce64891df3e488674
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg.orig.tar.gz' ntp_4.2.6.p5+dfsg.orig.tar.gz 4111997 SHA256:17f0b63e7e27de5cc999a4afdb96b2dbdf76c75181fca50e2395e49e5773dfc9
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.8.debian.tar.xz' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.8.debian.tar.xz 96592 SHA256:61c6e7d58a13b717409a99d123ece111f57ab1170ba5475a89bd27c969a9c602
-```
 
 ### `dpkg` source package: `numactl=2.0.9~rc5-1ubuntu3.14.04.2`
 
@@ -4841,14 +4835,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-rospkg=1.0.40-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.0.40-1.dsc' python-rospkg_1.0.40-1.dsc 880 SHA256:1e2f13ae00884d47e4e122c39f0ae724abe315f666609434d9a90a09529b2cec
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.0.40.orig.tar.gz' python-rospkg_1.0.40.orig.tar.gz 39546 SHA256:ea5b6e716b08f3e0a24f62ba9d52bbf11d8d6d8b031c41b39ad9b6d6736f7401
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.0.40-1.debian.tar.gz' python-rospkg_1.0.40-1.debian.tar.gz 980 SHA256:d03386d8c36b88af5c3534c5562a04fcc1aa3f8f07cd340b123fa8cf56a8cbac
-```
 
 ### `dpkg` source package: `python-setuptools=3.3-1ubuntu2`
 
