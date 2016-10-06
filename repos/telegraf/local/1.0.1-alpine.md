@@ -2,11 +2,11 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f6cd36842ae6557230d065ac4a4999d8352aaad63c8704bee4bb83460b1491a7`
-- Created: `2016-09-23T18:37:47.197847166Z`
+- Image ID: `sha256:06b1511931ae80fef9a92017791f5d524246d80001bc955c0d07cdc859719d69`
+- Created: `2016-09-28T21:30:11.433885424Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["telegraf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `TELEGRAF_VERSION=1.0.0`
+  - `TELEGRAF_VERSION=1.0.1`
