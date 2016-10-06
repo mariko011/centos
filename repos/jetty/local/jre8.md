@@ -1,9 +1,9 @@
-# `jetty:9.3.11`
+# `jetty:9.3.12`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a2f98b38e251e9ba64a756bd664f06faa85dc14dc2069b32d695a9728ec789cc`
-- Created: `2016-09-24T03:52:14.693918231Z`
+- Image ID: `sha256:75a25755d66648f463d4ed84c042186a822c4fcf691e574f269a035cad29d16b`
+- Created: `2016-09-30T23:35:27.621841705Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["java","-jar","/usr/local/jetty/start.jar"]`
@@ -15,8 +15,8 @@
   - `JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1`
   - `CA_CERTIFICATES_JAVA_VERSION=20140324`
   - `JETTY_HOME=/usr/local/jetty`
-  - `JETTY_VERSION=9.3.11.v20160721`
-  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.3.11.v20160721/jetty-distribution-9.3.11.v20160721.tar.gz`
+  - `JETTY_VERSION=9.3.12.v20160915`
+  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.3.12.v20160915/jetty-distribution-9.3.12.v20160915.tar.gz`
   - `JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E372283E7AE839CD7C58886`
   - `JETTY_BASE=/var/lib/jetty`
   - `TMPDIR=/tmp/jetty`
