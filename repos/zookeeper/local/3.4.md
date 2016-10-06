@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9d902210c01a89c2b474c231c1c938e3ce932ea65f00aa857803e79aacd68563`
-- Created: `2016-09-23T18:49:24.947195071Z`
+- Image ID: `sha256:6dcd253cae80993f0dcf7fd888f637b2f60a25c6302635941776909e43e471fd`
+- Created: `2016-09-30T19:46:35.861763149Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["zkServer.sh","start-foreground"]`
