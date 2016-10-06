@@ -2,13 +2,13 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d3eb0c434eab1dc6e30b240ae6b59edbf60c186d67ca2a0a82bc2698b3747ca1`
-- Created: `2016-09-26T22:39:36.613862692Z`
+- Image ID: `sha256:4169e482e9c95990b0e0e4807d559c9e639f07dd122fcd3f53e83307b9bea7c7`
+- Created: `2016-10-05T19:05:33.045862732Z`
 - Arch: `linux`/`amd64`
 - Command: `["/opt/ibm/wlp/bin/server","run","defaultServer"]`
 - Environment:
   - `PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr3fp11`
+  - `JAVA_VERSION=1.8.0_sr3fp12`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `LIBERTY_VERSION=2016.9.0_1`
   - `LOG_DIR=/logs`
@@ -1198,14 +1198,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=229-4ubuntu8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu8.dsc' systemd_229-4ubuntu8.dsc 4423 SHA256:0773690165bf76ced81b0942bed0a87cf2b79510e71ecaa44d2a07522ac53312
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu8.debian.tar.xz' systemd_229-4ubuntu8.debian.tar.xz 149884 SHA256:877dd790c3a80e55ada658c756fa7baf47c3b8b1a2e188b1e24ece0e431353dc
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
