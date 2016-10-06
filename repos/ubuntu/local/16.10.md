@@ -348,14 +348,8 @@ Licenses: (parsed from: `/usr/share/doc/e2fslibs/copyright`, `/usr/share/doc/e2f
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.43.1-1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.43.1-1.dsc' e2fsprogs_1.43.1-1.dsc 2028 SHA256:741365b54fd5cdb1868291fa149dd091999c21fa8d322749662c763730500804
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.43.1.orig.tar.gz' e2fsprogs_1.43.1.orig.tar.gz 7009831 SHA256:83dba1d96dfdba06f1ca0da6a77d539c22391b99fbd9bd733699689ca25dbebc
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.43.1-1.debian.tar.xz' e2fsprogs_1.43.1-1.debian.tar.xz 75208 SHA256:ff37d1e5f272f5c6794c072f95596e1fb17f973096e8970ed386214e92f2d68d
-```
 
 ### `dpkg` source package: `findutils=4.6.0+git+20160703-2`
 
@@ -393,14 +387,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`, `/usr/share/doc/l
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.2.0-3ubuntu15
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-6/gcc-6_6.2.0-3ubuntu15.dsc' gcc-6_6.2.0-3ubuntu15.dsc 29737 SHA256:6a8d5d5157edaffa05fd35f15bc325d6f3add0ac236d9845544ee5bb2a4edc3b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-6/gcc-6_6.2.0.orig.tar.gz' gcc-6_6.2.0.orig.tar.gz 78122458 SHA256:506055fdf0688029c79730200b1c068df2dddd43449de2ba7b5fde8b1bfa262a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-6/gcc-6_6.2.0-3ubuntu15.diff.gz' gcc-6_6.2.0-3ubuntu15.diff.gz 4011784 SHA256:82a616b07eb4e3ed87306282379e771e9e1805cb47ddf1dbde766307280e5ce2
-```
 
 ### `dpkg` source package: `glibc=2.24-0ubuntu1`
 
@@ -1104,14 +1092,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016f-1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016f-1.dsc' tzdata_2016f-1.dsc 1991 SHA256:8d2a0d27767dec81cf5d3250d3915949cb10eab8672dc729c3665798a1490052
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016f.orig.tar.gz' tzdata_2016f.orig.tar.gz 313286 SHA256:ed8c951008d12f1db55a11e96fc055718c6571233327d9de16a7f8475e2502b0
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016f-1.debian.tar.xz' tzdata_2016f-1.debian.tar.xz 100160 SHA256:bc1174d4160b63d14a9d40fd7b473ef03f97419285a9d8ec090e5bc718c75174
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2016.09.19`
 
