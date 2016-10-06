@@ -151,18 +151,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.3
-'http://httpredir.debian.org/debian/pool/main/a/apt/apt_1.3.dsc' apt_1.3.dsc 2488 SHA256:15f48897f34f963ecbd4b6e119e5c33c6af95a6ff863cfa800528f3a284bd898
-'http://httpredir.debian.org/debian/pool/main/a/apt/apt_1.3.tar.xz' apt_1.3.tar.xz 2035756 SHA256:711c601a62f94fe4810dc37ef585a25e321caeeed483621104a97e8e77e161bb
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.3/
-- https://sources.debian.net/src/apt/1.3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -489,20 +479,8 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.0-2
-'http://httpredir.debian.org/debian/pool/main/c/cups/cups_2.2.0-2.dsc' cups_2.2.0-2.dsc 3367 SHA256:1e10cbeba981c13ffea15a5f0b457ad7ac6079e423b830157b1ec2637ac147d0
-'http://httpredir.debian.org/debian/pool/main/c/cups/cups_2.2.0.orig.tar.gz' cups_2.2.0.orig.tar.gz 9481862 SHA256:cc6945b8bb631fc1a6dbdec8b598c41c19dc86b979c5fe518eec760d93c3ab4c
-'http://httpredir.debian.org/debian/pool/main/c/cups/cups_2.2.0.orig.tar.gz.asc' cups_2.2.0.orig.tar.gz.asc 797 SHA256:6e2b1fd15eb4c2d862e556eb00089d05f944e6129a5d76816e56e7f1a5d043d6
-'http://httpredir.debian.org/debian/pool/main/c/cups/cups_2.2.0-2.debian.tar.xz' cups_2.2.0-2.debian.tar.xz 359248 SHA256:fcbcbe1f17ab14a68b33869cf4840fa2d308cf1a5871f041711548c62bf33c45
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cups/2.2.0-2/
-- https://sources.debian.net/src/cups/2.2.0-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `curl=7.50.1-1`
 
@@ -967,19 +945,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`, `/usr/share/doc/l
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.2.0-4
-'http://httpredir.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0-4.dsc' gcc-6_6.2.0-4.dsc 26156 SHA256:fb595e0b11002aae30a711b42480c0a96d9118c7a0001e20e2b19d434dffda8c
-'http://httpredir.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0.orig.tar.gz' gcc-6_6.2.0.orig.tar.gz 82473068 SHA256:5c92f14fd520a90dceec8c76bbe400ab572bfb4095e332b73013d3cc59d0fda1
-'http://httpredir.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0-4.diff.gz' gcc-6_6.2.0-4.diff.gz 4156679 SHA256:c825384aad217ace750deed60061b6ac3c5a29fece29bd30f2eafe541dd3ebf3
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-6/6.2.0-4/
-- https://sources.debian.net/src/gcc-6/6.2.0-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gdbm=1.8.3-14`
 
@@ -1178,19 +1145,8 @@ Licenses: (parsed from: `/usr/share/doc/grep/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris grep=2.25-6
-'http://httpredir.debian.org/debian/pool/main/g/grep/grep_2.25-6.dsc' grep_2.25-6.dsc 1969 SHA256:f5969dc2db35392f3a1b23d41578706a9632f3dea346aea4406194fbb18469c9
-'http://httpredir.debian.org/debian/pool/main/g/grep/grep_2.25.orig.tar.xz' grep_2.25.orig.tar.xz 1327856 SHA256:e21e83bac50450e0d0d61a42c154ee0dceaacdbf4f604ef6e79071cb8e596830
-'http://httpredir.debian.org/debian/pool/main/g/grep/grep_2.25-6.debian.tar.bz2' grep_2.25-6.debian.tar.bz2 110173 SHA256:08b1b1e05122e57e03b47ba9711272590abf341b42ddbd68a07f086699c45f6e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/grep/2.25-6/
-- https://sources.debian.net/src/grep/2.25-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gzip=1.6-5`
 
@@ -1710,19 +1666,8 @@ Licenses: (parsed from: `/usr/share/doc/libmnl0/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libmnl=1.0.4-1
-'http://httpredir.debian.org/debian/pool/main/libm/libmnl/libmnl_1.0.4-1.dsc' libmnl_1.0.4-1.dsc 2012 SHA256:b0ebf2c9c02f8223b21f8a9f2ce12d68f22aebf178dda1f015e76839194f663f
-'http://httpredir.debian.org/debian/pool/main/libm/libmnl/libmnl_1.0.4.orig.tar.bz2' libmnl_1.0.4.orig.tar.bz2 301270 SHA256:171f89699f286a5854b72b91d06e8f8e3683064c5901fb09d954a9ab6f551f81
-'http://httpredir.debian.org/debian/pool/main/libm/libmnl/libmnl_1.0.4-1.debian.tar.xz' libmnl_1.0.4-1.debian.tar.xz 7332 SHA256:7ac2ad19eb7fb1a81f389781072b1ea1207593a2c50522562d84dc9204a3bf8b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libmnl/1.0.4-1/
-- https://sources.debian.net/src/libmnl/1.0.4-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpng1.6=1.6.25-1`
 
@@ -2282,19 +2227,8 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed4/copyright`, `/usr/share/doc/
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nettle=3.2-1
-'http://httpredir.debian.org/debian/pool/main/n/nettle/nettle_3.2-1.dsc' nettle_3.2-1.dsc 2061 SHA256:3dc8b00c4bcafa165b3c27d11c7a47181b1c2a83724721b9fac85ad2cd588797
-'http://httpredir.debian.org/debian/pool/main/n/nettle/nettle_3.2.orig.tar.gz' nettle_3.2.orig.tar.gz 1879604 SHA256:ea4283def236413edab5a4cf9cf32adf540c8df1b9b67641cfc2302fca849d97
-'http://httpredir.debian.org/debian/pool/main/n/nettle/nettle_3.2-1.debian.tar.xz' nettle_3.2-1.debian.tar.xz 19340 SHA256:0d39af8dc279d246c5f816ac78a60372c1901ebb55506420d7a795b4345359bb
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nettle/3.2-1/
-- https://sources.debian.net/src/nettle/3.2-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `nghttp2=1.14.1-1`
 
@@ -2312,19 +2246,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.14.1-1
-'http://httpredir.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.14.1-1.dsc' nghttp2_1.14.1-1.dsc 2224 SHA256:b7de188f8e9c1f46dc93c973692172336ea81077e1af24d2983646121414bb12
-'http://httpredir.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.14.1.orig.tar.bz2' nghttp2_1.14.1.orig.tar.bz2 1753359 SHA256:f2208e3947f998baf8eaebe8de55c67cdef06426fd1f85599d50aae9ee98fa34
-'http://httpredir.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.14.1-1.debian.tar.xz' nghttp2_1.14.1-1.debian.tar.xz 11276 SHA256:85f3719dd6aef629990534aae2299022f72f037a692ff933538c092e664c0e76
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.14.1-1/
-- https://sources.debian.net/src/nghttp2/1.14.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `nspr=2:4.12-6`
 
@@ -2991,19 +2914,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=231-7
-'http://httpredir.debian.org/debian/pool/main/s/systemd/systemd_231-7.dsc' systemd_231-7.dsc 4443 SHA256:07e3648b6505a9d9cbcabf7565d1240d72f8de8eb407b8def2e5976782f509b1
-'http://httpredir.debian.org/debian/pool/main/s/systemd/systemd_231.orig.tar.gz' systemd_231.orig.tar.gz 4381464 SHA256:899733ad6c157cedbb89aec4efe3bc824dcfd65a1d6f6bebc7b043f7924e39b4
-'http://httpredir.debian.org/debian/pool/main/s/systemd/systemd_231-7.debian.tar.xz' systemd_231-7.debian.tar.xz 140600 SHA256:c540c392ac83bc6378490b5441d766a2b46aa7e27d04fffe7a77a8d5d1364bb4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/systemd/231-7/
-- https://sources.debian.net/src/systemd/231-7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8`
 
