@@ -1826,14 +1826,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.8
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.8.dsc' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.8.dsc 2387 SHA256:965de37445c1208fa9aa9c1edae8e4eeee24c7d97a6a038ce64891df3e488674
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg.orig.tar.gz' ntp_4.2.6.p5+dfsg.orig.tar.gz 4111997 SHA256:17f0b63e7e27de5cc999a4afdb96b2dbdf76c75181fca50e2395e49e5773dfc9
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.8.debian.tar.xz' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.8.debian.tar.xz 96592 SHA256:61c6e7d58a13b717409a99d123ece111f57ab1170ba5475a89bd27c969a9c602
-```
 
 ### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.21`
 
