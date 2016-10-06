@@ -1,9 +1,9 @@
-# `mariadb:10.1.17`
+# `mariadb:10.1.18`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bae1077764d3ad5f99a71db12e46511fb145727d00119d24da6bf06203c8408c`
-- Created: `2016-09-23T19:59:24.325742088Z`
+- Image ID: `sha256:be4475fa21512106819983a66d40c8c49aa701ced6c46bc5a46019d53b37fc89`
+- Created: `2016-09-30T23:41:50.261821825Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["mysqld"]`
@@ -11,7 +11,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.7`
   - `MARIADB_MAJOR=10.1`
-  - `MARIADB_VERSION=10.1.17+maria-1~jessie`
+  - `MARIADB_VERSION=10.1.18+maria-1~jessie`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -613,11 +613,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/findutils/4.4.2-9/
 - https://sources.debian.net/src/findutils/4.4.2-9/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `galera-3=25.3.17-jessie`
+### `dpkg` source package: `galera-3=25.3.18-jessie`
 
 Binary Packages:
 
-- `galera-3=25.3.17-jessie`
+- `galera-3=25.3.18-jessie`
 
 Licenses: (parsed from: `/usr/share/doc/galera-3/copyright`)
 
@@ -2486,19 +2486,19 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/lvm2/2.02.111-2.2+deb8u1/
 - https://sources.debian.net/src/lvm2/2.02.111-2.2+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `mariadb-10.1=10.1.17+maria-1~jessie`
+### `dpkg` source package: `mariadb-10.1=10.1.18+maria-1~jessie`
 
 Binary Packages:
 
-- `libmariadbclient18=10.1.17+maria-1~jessie`
-- `libmysqlclient18=10.1.17+maria-1~jessie`
-- `mariadb-client-10.1=10.1.17+maria-1~jessie`
-- `mariadb-client-core-10.1=10.1.17+maria-1~jessie`
-- `mariadb-common=10.1.17+maria-1~jessie`
-- `mariadb-server=10.1.17+maria-1~jessie`
-- `mariadb-server-10.1=10.1.17+maria-1~jessie`
-- `mariadb-server-core-10.1=10.1.17+maria-1~jessie`
-- `mysql-common=10.1.17+maria-1~jessie`
+- `libmariadbclient18=10.1.18+maria-1~jessie`
+- `libmysqlclient18=10.1.18+maria-1~jessie`
+- `mariadb-client-10.1=10.1.18+maria-1~jessie`
+- `mariadb-client-core-10.1=10.1.18+maria-1~jessie`
+- `mariadb-common=10.1.18+maria-1~jessie`
+- `mariadb-server=10.1.18+maria-1~jessie`
+- `mariadb-server-10.1=10.1.18+maria-1~jessie`
+- `mariadb-server-core-10.1=10.1.18+maria-1~jessie`
+- `mysql-common=10.1.18+maria-1~jessie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2507,9 +2507,9 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mariadb-10.1=10.1.17+maria-1~jessie
-'http://ftp.osuosl.org/pub/mariadb/repo/10.1/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.17+maria-1~jessie.dsc' mariadb-10.1_10.1.17+maria-1~jessie.dsc 2506 SHA256:6204442ecaf41c9f99bb40e2c8cd54de68edb7ac57cf006425051795e4bc9000
-'http://ftp.osuosl.org/pub/mariadb/repo/10.1/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.17+maria-1~jessie.tar.gz' mariadb-10.1_10.1.17+maria-1~jessie.tar.gz 61557186 SHA256:d58e65ec68c1e0852bb8f83fe8cdcdde78621761410f0b113bc0c689f1f6df0d
+$ apt-get source -qq --print-uris mariadb-10.1=10.1.18+maria-1~jessie
+'http://ftp.osuosl.org/pub/mariadb/repo/10.1/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.18+maria-1~jessie.dsc' mariadb-10.1_10.1.18+maria-1~jessie.dsc 2506 SHA256:5816cefc031499ea61ba29fd2e62821d77b180322621e6c5d6ee8452bacd8908
+'http://ftp.osuosl.org/pub/mariadb/repo/10.1/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.18+maria-1~jessie.tar.gz' mariadb-10.1_10.1.18+maria-1~jessie.tar.gz 61583054 SHA256:4d9f46d1d086a740e71c3ddcb6856e379e6f008bff8133aa6761426ecfd35295
 ```
 
 ### `dpkg` source package: `mawk=1.3.3-17`
