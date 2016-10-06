@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7f2a227950234c4eb81c4ade35061fc4d3f79ac19b72144ce20859a0989f979e`
-- Created: `2016-09-23T19:05:53.797858219Z`
+- Image ID: `sha256:087c714ab437d5d01ac0616b8e32e29511ea6f0c4f7b49bca65a32b96de4bbdb`
+- Created: `2016-09-28T20:46:45.449921485Z`
 - Arch: `linux`/`amd64`
 - Command: `["go-wrapper","run"]`
 - Environment:
@@ -973,6 +973,30 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/git/1:2.1.4-2.1+deb8u2/
 - https://sources.debian.net/src/git/1:2.1.4-2.1+deb8u2/debian/copyright (for direct copyright/license information)
+
+### `dpkg` source package: `glib2.0=2.42.1-1`
+
+Binary Packages:
+
+- `libglib2.0-0:amd64=2.42.1-1+b1`
+
+Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
+
+- `LGPL`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glib2.0=2.42.1-1
+'http://httpredir.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.42.1-1.dsc' glib2.0_2.42.1-1.dsc 3119 SHA256:61b01cb94e8bb8b9fdd1799b2e1bed907371dc45d364beec4b79a129745f588f
+'http://httpredir.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.42.1.orig.tar.xz' glib2.0_2.42.1.orig.tar.xz 6985120 SHA256:8f3f0865280e45b8ce840e176ef83bcfd511148918cc8d39df2ee89b67dcf89a
+'http://httpredir.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.42.1-1.debian.tar.xz' glib2.0_2.42.1-1.debian.tar.xz 68072 SHA256:1cd368c2bce6100c07b8a07ff7f3f38572679d88563356b8784560606fcfac56
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/glib2.0/2.42.1-1/
+- https://sources.debian.net/src/glib2.0/2.42.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.19-18+deb8u6`
 
@@ -2375,6 +2399,30 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/perl/5.20.2-3+deb8u6/
 - https://sources.debian.net/src/perl/5.20.2-3+deb8u6/debian/copyright (for direct copyright/license information)
+
+### `dpkg` source package: `pkg-config=0.28-1`
+
+Binary Packages:
+
+- `pkg-config=0.28-1`
+
+Licenses: (parsed from: `/usr/share/doc/pkg-config/copyright`)
+
+- `GPL`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris pkg-config=0.28-1
+'http://httpredir.debian.org/debian/pool/main/p/pkg-config/pkg-config_0.28-1.dsc' pkg-config_0.28-1.dsc 1733 SHA256:d4a855310665e61dea83b858b70465cf7174797b322f75142863e9853ca35960
+'http://httpredir.debian.org/debian/pool/main/p/pkg-config/pkg-config_0.28.orig.tar.gz' pkg-config_0.28.orig.tar.gz 1931203 SHA256:6b6eb31c6ec4421174578652c7e141fdaae2dabad1021f420d8713206ac1f845
+'http://httpredir.debian.org/debian/pool/main/p/pkg-config/pkg-config_0.28-1.diff.gz' pkg-config_0.28-1.diff.gz 5942 SHA256:c5f6afcbadeded6a9cf192efc3bd882095e9ba73576de0544e393184e989992f
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/pkg-config/0.28-1/
+- https://sources.debian.net/src/pkg-config/0.28-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `procps=2:3.3.9-9`
 
