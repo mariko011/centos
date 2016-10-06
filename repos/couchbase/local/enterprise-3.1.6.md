@@ -2,17 +2,13 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dcad7ad125a61cd2e73647252eb0ae37b2f6a5bd9bade88e695ceaa457cb35ce`
-- Created: `2016-09-26T21:42:45.477839494Z`
+- Image ID: `sha256:247f1193cc3a21c93e23cd710872e202d2533b058c8a125c184bc07e9d83a5f8`
+- Created: `2016-09-30T18:14:46.117781794Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["couchbase-server"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/couchbase/bin:/opt/couchbase/bin/tools:/opt/couchbase/bin/install`
-  - `CB_VERSION=3.1.6`
-  - `CB_RELEASE_URL=http://packages.couchbase.com/releases`
-  - `CB_PACKAGE=couchbase-server-enterprise_3.1.6-ubuntu12.04_amd64.deb`
-  - `CB_SHA256=b13964639f2effcf7026834f0c023b43b22f44d12d7567712b5760bd1829ad6b`
 
 ## `dpkg` (`.deb`-based packages)
 

@@ -2,17 +2,13 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:77fd761bc306efac5d61e1ea29b5fc3a608dd19dd5103f97d9be73037cfeac59`
-- Created: `2016-09-26T21:47:08.301904055Z`
+- Image ID: `sha256:2081d4c907e801c3289766e5971f6a41f6132488f9c33cbf1f79bd5596c956b1`
+- Created: `2016-09-30T18:13:55.141936686Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["couchbase-server"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/couchbase/bin:/opt/couchbase/bin/tools:/opt/couchbase/bin/install`
-  - `CB_VERSION=4.1.0`
-  - `CB_RELEASE_URL=http://packages.couchbase.com/releases`
-  - `CB_PACKAGE=couchbase-server-community_4.1.0-ubuntu14.04_amd64.deb`
-  - `CB_SHA256=400263bd03e32b69259ec9b821bf58922030ba9e2a266e2ef4a0d4ac162188ea`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2014,14 +2010,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.8
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.8.dsc' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.8.dsc 2387 SHA256:965de37445c1208fa9aa9c1edae8e4eeee24c7d97a6a038ce64891df3e488674
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg.orig.tar.gz' ntp_4.2.6.p5+dfsg.orig.tar.gz 4111997 SHA256:17f0b63e7e27de5cc999a4afdb96b2dbdf76c75181fca50e2395e49e5773dfc9
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.8.debian.tar.xz' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.8.debian.tar.xz 96592 SHA256:61c6e7d58a13b717409a99d123ece111f57ab1170ba5475a89bd27c969a9c602
-```
 
 ### `dpkg` source package: `numactl=2.0.9~rc5-1ubuntu3.14.04.2`
 

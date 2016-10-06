@@ -2,17 +2,13 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c5e0d7e99888cd6b471328dd6f3d45c08a4c8a333d38a6e6723d4e2a0c7428fe`
-- Created: `2016-09-26T21:45:15.15781162Z`
+- Image ID: `sha256:1624f7b1fd6c6262c334ab3d13686e995b24bbbfd7ac5c0ffd74f597e730e9ac`
+- Created: `2016-09-30T18:13:29.014021412Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["couchbase-server"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/couchbase/bin:/opt/couchbase/bin/tools:/opt/couchbase/bin/install`
-  - `CB_VERSION=4.5.0`
-  - `CB_RELEASE_URL=http://packages.couchbase.com/releases`
-  - `CB_PACKAGE=couchbase-server-enterprise_4.5.0-ubuntu14.04_amd64.deb`
-  - `CB_SHA256=441398302210c0d73f27bdab741b471fc9da116bf45f521b314345f04560716e`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -328,11 +324,11 @@ $ apt-get source -qq --print-uris coreutils=8.21-1ubuntu5.4
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.21-1ubuntu5.4.diff.gz' coreutils_8.21-1ubuntu5.4.diff.gz 44759 SHA256:0d2690aab7f9d8aa65861b5648c3bebc8a5d872fe68a694aae70ddf9393d8372
 ```
 
-### `dpkg` source package: `couchbase-server=4.5.0-2601-1`
+### `dpkg` source package: `couchbase-server=4.5.1-2844-1`
 
 Binary Packages:
 
-- `couchbase-server=4.5.0-2601-1`
+- `couchbase-server=4.5.1-2844-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2014,14 +2010,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.8
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.8.dsc' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.8.dsc 2387 SHA256:965de37445c1208fa9aa9c1edae8e4eeee24c7d97a6a038ce64891df3e488674
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg.orig.tar.gz' ntp_4.2.6.p5+dfsg.orig.tar.gz 4111997 SHA256:17f0b63e7e27de5cc999a4afdb96b2dbdf76c75181fca50e2395e49e5773dfc9
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.8.debian.tar.xz' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.8.debian.tar.xz 96592 SHA256:61c6e7d58a13b717409a99d123ece111f57ab1170ba5475a89bd27c969a9c602
-```
 
 ### `dpkg` source package: `numactl=2.0.9~rc5-1ubuntu3.14.04.2`
 
