@@ -1,14 +1,14 @@
-# `node:0.12.15-slim`
+# `node:0.12.16-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e546cabec758ad9c7dbc679f572349e5cfbb7616fec48e5720b3e2f31de812e4`
-- Created: `2016-09-23T20:53:42.589773744Z`
+- Image ID: `sha256:4837fc524bff5750f8ec927b95525c7d5de98aa63756b59d3d3c6e6b6bd35ce0`
+- Created: `2016-09-28T17:23:09.477994596Z`
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=0.12.15`
+  - `NODE_VERSION=0.12.16`
 
 ## `dpkg` (`.deb`-based packages)
 

@@ -1,14 +1,14 @@
-# `node:0.12.15-onbuild`
+# `node:0.12.16-onbuild`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d4d65961eac79cfcd858725e6b6893235ec1a593eff47edda0ee4dad7fabd0a5`
-- Created: `2016-09-24T04:21:16.613988961Z`
+- Image ID: `sha256:b6a7dc8afa78b69a67fa26a4544288756b5d3c5f76150014184c1295fc40e973`
+- Created: `2016-09-28T17:23:00.597838341Z`
 - Arch: `linux`/`amd64`
 - Command: `["npm","start"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=0.12.15`
+  - `NODE_VERSION=0.12.16`
 
 ## `dpkg` (`.deb`-based packages)
 
