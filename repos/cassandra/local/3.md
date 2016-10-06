@@ -1,16 +1,17 @@
-# `cassandra:3.7`
+# `cassandra:3.9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0e8fe2480b492efde0e1e01e71b701172ec564f32ed09e530b9756225014ef89`
-- Created: `2016-09-23T18:34:51.861812646Z`
+- Image ID: `sha256:a552f6550254e19928bf364e094700e7f878af46111d0e8c3abd28cd20813368`
+- Created: `2016-10-05T20:11:26.48593158Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["cassandra","-f"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.7`
-  - `CASSANDRA_VERSION=3.7`
+  - `GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA`
+  - `CASSANDRA_VERSION=3.9`
   - `CASSANDRA_CONFIG=/etc/cassandra`
 
 ## `dpkg` (`.deb`-based packages)
@@ -342,11 +343,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/ca-certificates/20141019+deb8u1/
 - https://sources.debian.net/src/ca-certificates/20141019+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `cassandra=3.7`
+### `dpkg` source package: `cassandra=3.9`
 
 Binary Packages:
 
-- `cassandra=3.7`
+- `cassandra=3.9`
 
 Licenses: (parsed from: `/usr/share/doc/cassandra/copyright`)
 
@@ -355,10 +356,10 @@ Licenses: (parsed from: `/usr/share/doc/cassandra/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cassandra=3.7
-'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.7.dsc' cassandra_3.7.dsc 1999 SHA256:76216e4572292de41ecdd88ac2d2b2cace9e1e4c37284158e56e819cd98208af
-'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.7.orig.tar.gz' cassandra_3.7.orig.tar.gz 31637925 SHA256:58710471dff1f4dbea5a69092962a96ed977305ca761f63a8c021e3cb242fc2b
-'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.7.diff.gz' cassandra_3.7.diff.gz 20 SHA256:f61f27bd17de546264aa58f40f3aafaac7021e0ef69c17f6b1b4cd7664a037ec
+$ apt-get source -qq --print-uris cassandra=3.9
+'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.9.dsc' cassandra_3.9.dsc 2001 SHA256:4f2f034d6d48dcc334058798470e85b06d16cf29d5b5d29651181baf9e3514ec
+'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.9.orig.tar.gz' cassandra_3.9.orig.tar.gz 33582575 SHA256:3c23771cc32e580ea25599d730e97c92622dce2b12225080fcb955c1cc34053a
+'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.9.diff.gz' cassandra_3.9.diff.gz 20 SHA256:f61f27bd17de546264aa58f40f3aafaac7021e0ef69c17f6b1b4cd7664a037ec
 ```
 
 ### `dpkg` source package: `cdebconf=0.192`
@@ -2886,11 +2887,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nettle/2.7.1-5+deb8u1/
 - https://sources.debian.net/src/nettle/2.7.1-5+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `nspr=2:4.10.7-1+deb8u1`
+### `dpkg` source package: `nspr=2:4.12-1+debu8u1`
 
 Binary Packages:
 
-- `libnspr4:amd64=2:4.10.7-1+deb8u1`
+- `libnspr4:amd64=2:4.12-1+debu8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2899,22 +2900,22 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nspr=2:4.10.7-1+deb8u1
-'http://httpredir.debian.org/debian/pool/main/n/nspr/nspr_4.10.7-1+deb8u1.dsc' nspr_4.10.7-1+deb8u1.dsc 2115 SHA256:de90a14cd9abd490af1e93a83cd5884953c4574b30517455930635f65d907260
-'http://httpredir.debian.org/debian/pool/main/n/nspr/nspr_4.10.7.orig.tar.gz' nspr_4.10.7.orig.tar.gz 1131171 SHA256:389af5cfa863ea9bc6de7b30c15f8a4f9bddd8002f8c6fdc8b33caef43893938
-'http://httpredir.debian.org/debian/pool/main/n/nspr/nspr_4.10.7-1+deb8u1.debian.tar.xz' nspr_4.10.7-1+deb8u1.debian.tar.xz 16216 SHA256:2a777b66a06ba78049a63fb249aca7d5358d72df1eb4e007c7f095a3b1e462f5
+$ apt-get source -qq --print-uris nspr=2:4.12-1+debu8u1
+'http://security.debian.org/pool/updates/main/n/nspr/nspr_4.12-1+debu8u1.dsc' nspr_4.12-1+debu8u1.dsc 1792 SHA256:421dcd3e6bf4c26793d7c06dddf28945d4cb46829b06160d80a07a8b26244563
+'http://security.debian.org/pool/updates/main/n/nspr/nspr_4.12.orig.tar.gz' nspr_4.12.orig.tar.gz 1135458 SHA256:e0b10a1e569153668ff8bdea6c7e491b389fab69c2f18285a1ebf7c2ea4269de
+'http://security.debian.org/pool/updates/main/n/nspr/nspr_4.12-1+debu8u1.debian.tar.xz' nspr_4.12-1+debu8u1.debian.tar.xz 14276 SHA256:d69e39fd076a58b4aab9809d7defe6505fc327edc421bdfc5b8348ff2d843cf3
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/nspr/2:4.10.7-1+deb8u1/
-- https://sources.debian.net/src/nspr/2:4.10.7-1+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/nspr/2:4.12-1+debu8u1/
+- https://sources.debian.net/src/nspr/2:4.12-1+debu8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `nss=2:3.17.2-1.1+deb8u2`
+### `dpkg` source package: `nss=2:3.26-1+debu8u1`
 
 Binary Packages:
 
-- `libnss3:amd64=2:3.17.2-1.1+deb8u2`
+- `libnss3:amd64=2:3.26-1+debu8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2923,16 +2924,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nss=2:3.17.2-1.1+deb8u2
-'http://httpredir.debian.org/debian/pool/main/n/nss/nss_3.17.2-1.1+deb8u2.dsc' nss_3.17.2-1.1+deb8u2.dsc 2244 SHA256:dc43c075d62525694ecd38a758f90c507714674cdb51fd21dba7d95b55afbc1a
-'http://httpredir.debian.org/debian/pool/main/n/nss/nss_3.17.2.orig.tar.gz' nss_3.17.2.orig.tar.gz 6927414 SHA256:134929e44e44b968a4883f4ee513a71ae45d55b486cee41ee8e26c3cc84dab8b
-'http://httpredir.debian.org/debian/pool/main/n/nss/nss_3.17.2-1.1+deb8u2.debian.tar.xz' nss_3.17.2-1.1+deb8u2.debian.tar.xz 31936 SHA256:ba12505a8fa68bb75a7fea9dbc74669b64787290ff2c2db58b6ebe5254e4b9c8
+$ apt-get source -qq --print-uris nss=2:3.26-1+debu8u1
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26-1+debu8u1.dsc' nss_3.26-1+debu8u1.dsc 1907 SHA256:778a3f74cd338ef1ee41144bc20648ce0afa0507b8320516d53b98a363f0ade3
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26.orig.tar.gz' nss_3.26.orig.tar.gz 7386943 SHA256:91783a570ab953693eb977ce47c501f04c104cec287fa011c91bcc8970d1c564
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26-1+debu8u1.debian.tar.xz' nss_3.26-1+debu8u1.debian.tar.xz 24352 SHA256:b9512797152852d8bd7a71ea8cb6a6e4b77c8c8d98a541cdbf8d2ac78bac67d2
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/nss/2:3.17.2-1.1+deb8u2/
-- https://sources.debian.net/src/nss/2:3.17.2-1.1+deb8u2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/nss/2:3.26-1+debu8u1/
+- https://sources.debian.net/src/nss/2:3.26-1+debu8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ntp=1:4.2.6.p5+dfsg-7+deb8u2`
 
@@ -2985,19 +2986,30 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/openjdk-8/8u102-b14.1-1~bpo8+1/
 - https://sources.debian.net/src/openjdk-8/8u102-b14.1-1~bpo8+1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb8u4`
+### `dpkg` source package: `openssl=1.0.1t-1+deb8u5`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1t-1+deb8u4`
-- `openssl=1.0.1t-1+deb8u4`
+- `libssl1.0.0:amd64=1.0.1t-1+deb8u5`
+- `openssl=1.0.1t-1+deb8u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u5
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u5.dsc' openssl_1.0.1t-1+deb8u5.dsc 2258 SHA256:165eb617542ab1e9bf810c215b586a57b926f3f6977c1a72af752754c7c90bea
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u5.debian.tar.xz' openssl_1.0.1t-1+deb8u5.debian.tar.xz 106720 SHA256:c6723fbf370ec5544c9b1753d5ad06d4b343a341560fb8650dda135506312cd9
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
