@@ -1,4 +1,4 @@
-## `wordpress:4.6`
+## `wordpress:php5.6-apache`
 
 ```console
 $ docker pull wordpress@sha256:2ee64ecdbf173b535551070d80ce773a88bc1c6b5a23d41464f0529fd84f494c
@@ -7,7 +7,7 @@ $ docker pull wordpress@sha256:2ee64ecdbf173b535551070d80ce773a88bc1c6b5a23d4146
 -	Platforms:
 	-	linux; amd64
 
-### `wordpress:4.6` - linux; amd64
+### `wordpress:php5.6-apache` - linux; amd64
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
