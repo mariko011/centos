@@ -1,9 +1,9 @@
-# `django:1.10.1-python2`
+# `django:1.10.2-python2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6c656c0f0840a5d785e35e4193aca9d5224bfe34583ca34b3ee2f65bca0f1ed6`
-- Created: `2016-09-24T00:27:24.117189396Z`
+- Image ID: `sha256:1d2688e37cc051355f0fd307905eb5ca8acc4ffac5a637ad00cf601d500e4fb1`
+- Created: `2016-10-05T20:18:15.074281277Z`
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
 - Environment:
@@ -12,7 +12,7 @@
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
   - `PYTHON_VERSION=2.7.12`
   - `PYTHON_PIP_VERSION=8.1.2`
-  - `DJANGO_VERSION=1.10.1`
+  - `DJANGO_VERSION=1.10.2`
 
 ## `dpkg` (`.deb`-based packages)
 

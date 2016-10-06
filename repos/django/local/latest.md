@@ -1,9 +1,9 @@
-# `django:1.10.1-python3`
+# `django:1.10.2-python3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a1330314259768d5c66e03430306b5ae65070aae97c226a8ca885b9951f97ef1`
-- Created: `2016-09-24T00:25:04.022394431Z`
+- Image ID: `sha256:6ec9e56097a7b0a6634f8022f8e0513152e0619a0a66ef6313fe5a57d4b67732`
+- Created: `2016-10-05T20:17:57.919625368Z`
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
 - Environment:
@@ -12,7 +12,7 @@
   - `GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D`
   - `PYTHON_VERSION=3.4.5`
   - `PYTHON_PIP_VERSION=8.1.2`
-  - `DJANGO_VERSION=1.10.1`
+  - `DJANGO_VERSION=1.10.2`
 
 ## `dpkg` (`.deb`-based packages)
 
