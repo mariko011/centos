@@ -3011,9 +3011,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris xz-utils=5.1.1alpha+20120614-2
-'http://httpredir.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.1.1alpha+20120614-2.1.dsc' xz-utils_5.1.1alpha+20120614-2.1.dsc 2351 SHA256:8bf2971c48f2146be4765a3b360c90d4afb09f7671f5064d46b252fad30123ef
+'http://httpredir.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.1.1alpha+20120614-2.dsc' xz-utils_5.1.1alpha+20120614-2.dsc 2325 SHA256:d7d87c6c7aa6d2fe45d8d55a8929ab12f0688f7f17bcfc6233ecfa94f6f7a298
 'http://httpredir.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.1.1alpha+20120614.orig.tar.gz' xz-utils_5.1.1alpha+20120614.orig.tar.gz 556454 SHA256:b168e63400db449a6e7b3a06e668f557ca27e3d70accbd29d2b5a98e15c00fee
-'http://httpredir.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.1.1alpha+20120614-2.1.debian.tar.xz' xz-utils_5.1.1alpha+20120614-2.1.debian.tar.xz 123748 SHA256:3705306d051dd74c4f0bfb1183ebf236ac718232298e2497776fe68e2461bafd
+'http://httpredir.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.1.1alpha+20120614-2.debian.tar.gz' xz-utils_5.1.1alpha+20120614-2.debian.tar.gz 154298 SHA256:4e2873ab7b1ee44b7d580caf2a5ca761b10cb2725691b2c2a9b21edb0d771f39
 ```
 
 Likely also available for browsing at:
