@@ -2,10 +2,10 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:88e010fa60ea99e1fcdf5a2b44ad71ee32bc2e2bbefe139745b502fcee8cead6`
-- Created: `2016-09-24T00:01:36.089789989Z`
+- Image ID: `sha256:f3cd009872fac37a057c2a799637c6f35a01f747a2a35dd0608985cae902a0d2`
+- Created: `2016-10-06T23:15:08.553809153Z`
 - Arch: `linux`/`amd64`
-- Entrypoint: `["/entrypoint.sh"]`
+- Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["apache2-foreground"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`

@@ -1,9 +1,9 @@
-# `wordpress:4.6.1-fpm`
+# `wordpress:4.6.1-php7.0-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:24ee62e68330f3daac966fcad00e0ec9b3feeccbdad19b7fcbd9311926f17890`
-- Created: `2016-10-06T23:15:14.813792333Z`
+- Image ID: `sha256:7882d9327552519cf7ffca67d0dfaf3c85b75a955f4c8790047bc8bece9a62eb`
+- Created: `2016-10-06T23:16:37.646125732Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["php-fpm"]`
@@ -12,10 +12,10 @@
   - `PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data`
-  - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.26`
-  - `PHP_FILENAME=php-5.6.26.tar.xz`
-  - `PHP_SHA256=203a854f0f243cb2810d1c832bc871ff133eccdf1ff69d32846f93bc1bef58a8`
+  - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763`
+  - `PHP_VERSION=7.0.11`
+  - `PHP_FILENAME=php-7.0.11.tar.xz`
+  - `PHP_SHA256=d4cccea8da1d27c11b89386f8b8e95692ad3356610d571253d00ca67d524c735`
   - `WORDPRESS_VERSION=4.6.1`
   - `WORDPRESS_SHA1=027e065d30a64720624a7404a1820e6c6fff1202`
 
