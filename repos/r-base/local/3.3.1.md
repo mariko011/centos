@@ -1056,19 +1056,8 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.50.0-1
-'http://httpredir.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.50.0-1.dsc' glib2.0_2.50.0-1.dsc 3190 SHA256:1f11ef61c588effe341fc2219220c1b3ce78d418234bf454fe0cc5fd03f52ae2
-'http://httpredir.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.50.0.orig.tar.xz' glib2.0_2.50.0.orig.tar.xz 7513808 SHA256:830b551fa626bda06e12729205b3c5bb0d82b924a8cf64d948945878f01b7d70
-'http://httpredir.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.50.0-1.debian.tar.xz' glib2.0_2.50.0-1.debian.tar.xz 69800 SHA256:f423a303ca2b0d0ac9b59400c7f42a3de03243dc194119ac9ef63c64630c1720
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/glib2.0/2.50.0-1/
-- https://sources.debian.net/src/glib2.0/2.50.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.23-5`
 
