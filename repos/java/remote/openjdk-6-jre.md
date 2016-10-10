@@ -1,7 +1,7 @@
 ## `java:openjdk-6-jre`
 
 ```console
-$ docker pull java@sha256:ac22a8618b835dc954ede33451843bb8b62fcb70ca769c25bad0e9da94a1ce29
+$ docker pull java@sha256:9ce6e71955a1f66dd986410e6aa5c28c27a3a43fcf919d8aa662b433ea0b7a91
 ```
 
 -	Platforms:

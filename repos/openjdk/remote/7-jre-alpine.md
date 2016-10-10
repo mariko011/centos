@@ -1,7 +1,7 @@
 ## `openjdk:7-jre-alpine`
 
 ```console
-$ docker pull openjdk@sha256:88fb942a90fcd7e1c531d51e31e306ffa136fd1268fc9b06579c5aecfbee9ffb
+$ docker pull openjdk@sha256:085efbbbdf19bd0aac24c6ff97511ae76ea9729fdca97db7b9b0c59d7b69ae52
 ```
 
 -	Platforms:

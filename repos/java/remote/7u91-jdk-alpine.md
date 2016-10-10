@@ -1,7 +1,7 @@
 ## `java:7u91-jdk-alpine`
 
 ```console
-$ docker pull java@sha256:a616979e6e846b36ee640ec8e0e2776d8bd407b71872efa16ed6618b9918fa58
+$ docker pull java@sha256:46ee8fc34b29513caf1c19e5c14f84bf370a671ac0698f0254729aec383147e5
 ```
 
 -	Platforms:

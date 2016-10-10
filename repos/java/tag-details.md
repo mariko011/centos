@@ -68,23 +68,23 @@
 -	[`java:jre-alpine`](#javajre-alpine)
 -	[`java:openjdk-8u92-jre-alpine`](#javaopenjdk-8u92-jre-alpine)
 -	[`java:openjdk-8-jre-alpine`](#javaopenjdk-8-jre-alpine)
--	[`java:9-b136-jdk`](#java9-b136-jdk)
--	[`java:9-b136`](#java9-b136)
+-	[`java:9-b139-jdk`](#java9-b139-jdk)
+-	[`java:9-b139`](#java9-b139)
 -	[`java:9-jdk`](#java9-jdk)
 -	[`java:9`](#java9)
--	[`java:openjdk-9-b136-jdk`](#javaopenjdk-9-b136-jdk)
--	[`java:openjdk-9-b136`](#javaopenjdk-9-b136)
+-	[`java:openjdk-9-b139-jdk`](#javaopenjdk-9-b139-jdk)
+-	[`java:openjdk-9-b139`](#javaopenjdk-9-b139)
 -	[`java:openjdk-9-jdk`](#javaopenjdk-9-jdk)
 -	[`java:openjdk-9`](#javaopenjdk-9)
--	[`java:9-b136-jre`](#java9-b136-jre)
+-	[`java:9-b139-jre`](#java9-b139-jre)
 -	[`java:9-jre`](#java9-jre)
--	[`java:openjdk-9-b136-jre`](#javaopenjdk-9-b136-jre)
+-	[`java:openjdk-9-b139-jre`](#javaopenjdk-9-b139-jre)
 -	[`java:openjdk-9-jre`](#javaopenjdk-9-jre)
 
 ## `java:6b38-jdk`
 
 ```console
-$ docker pull java@sha256:645319a05bda784fc9f91038fe35af87bd0cd79f5395c501f22f5c32118bcbeb
+$ docker pull java@sha256:542473afe2b26a81dd7d9ea9b8a19dae4e96d94790698d70667be8ad5e4a9ac1
 ```
 
 -	Platforms:
@@ -153,7 +153,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBI
 ## `java:6b38`
 
 ```console
-$ docker pull java@sha256:645319a05bda784fc9f91038fe35af87bd0cd79f5395c501f22f5c32118bcbeb
+$ docker pull java@sha256:542473afe2b26a81dd7d9ea9b8a19dae4e96d94790698d70667be8ad5e4a9ac1
 ```
 
 -	Platforms:
@@ -222,7 +222,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBI
 ## `java:6-jdk`
 
 ```console
-$ docker pull java@sha256:645319a05bda784fc9f91038fe35af87bd0cd79f5395c501f22f5c32118bcbeb
+$ docker pull java@sha256:542473afe2b26a81dd7d9ea9b8a19dae4e96d94790698d70667be8ad5e4a9ac1
 ```
 
 -	Platforms:
@@ -291,7 +291,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBI
 ## `java:6`
 
 ```console
-$ docker pull java@sha256:645319a05bda784fc9f91038fe35af87bd0cd79f5395c501f22f5c32118bcbeb
+$ docker pull java@sha256:542473afe2b26a81dd7d9ea9b8a19dae4e96d94790698d70667be8ad5e4a9ac1
 ```
 
 -	Platforms:
@@ -360,7 +360,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBI
 ## `java:openjdk-6b38-jdk`
 
 ```console
-$ docker pull java@sha256:645319a05bda784fc9f91038fe35af87bd0cd79f5395c501f22f5c32118bcbeb
+$ docker pull java@sha256:542473afe2b26a81dd7d9ea9b8a19dae4e96d94790698d70667be8ad5e4a9ac1
 ```
 
 -	Platforms:
@@ -429,7 +429,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBI
 ## `java:openjdk-6b38`
 
 ```console
-$ docker pull java@sha256:645319a05bda784fc9f91038fe35af87bd0cd79f5395c501f22f5c32118bcbeb
+$ docker pull java@sha256:542473afe2b26a81dd7d9ea9b8a19dae4e96d94790698d70667be8ad5e4a9ac1
 ```
 
 -	Platforms:
@@ -498,7 +498,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBI
 ## `java:openjdk-6-jdk`
 
 ```console
-$ docker pull java@sha256:645319a05bda784fc9f91038fe35af87bd0cd79f5395c501f22f5c32118bcbeb
+$ docker pull java@sha256:542473afe2b26a81dd7d9ea9b8a19dae4e96d94790698d70667be8ad5e4a9ac1
 ```
 
 -	Platforms:
@@ -567,7 +567,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBI
 ## `java:openjdk-6`
 
 ```console
-$ docker pull java@sha256:645319a05bda784fc9f91038fe35af87bd0cd79f5395c501f22f5c32118bcbeb
+$ docker pull java@sha256:542473afe2b26a81dd7d9ea9b8a19dae4e96d94790698d70667be8ad5e4a9ac1
 ```
 
 -	Platforms:
@@ -636,7 +636,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jdk="$JAVA_DEBI
 ## `java:6b38-jre`
 
 ```console
-$ docker pull java@sha256:ac22a8618b835dc954ede33451843bb8b62fcb70ca769c25bad0e9da94a1ce29
+$ docker pull java@sha256:9ce6e71955a1f66dd986410e6aa5c28c27a3a43fcf919d8aa662b433ea0b7a91
 ```
 
 -	Platforms:
@@ -699,7 +699,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jre-headless="$
 ## `java:6-jre`
 
 ```console
-$ docker pull java@sha256:ac22a8618b835dc954ede33451843bb8b62fcb70ca769c25bad0e9da94a1ce29
+$ docker pull java@sha256:9ce6e71955a1f66dd986410e6aa5c28c27a3a43fcf919d8aa662b433ea0b7a91
 ```
 
 -	Platforms:
@@ -762,7 +762,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jre-headless="$
 ## `java:openjdk-6b38-jre`
 
 ```console
-$ docker pull java@sha256:ac22a8618b835dc954ede33451843bb8b62fcb70ca769c25bad0e9da94a1ce29
+$ docker pull java@sha256:9ce6e71955a1f66dd986410e6aa5c28c27a3a43fcf919d8aa662b433ea0b7a91
 ```
 
 -	Platforms:
@@ -825,7 +825,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jre-headless="$
 ## `java:openjdk-6-jre`
 
 ```console
-$ docker pull java@sha256:ac22a8618b835dc954ede33451843bb8b62fcb70ca769c25bad0e9da94a1ce29
+$ docker pull java@sha256:9ce6e71955a1f66dd986410e6aa5c28c27a3a43fcf919d8aa662b433ea0b7a91
 ```
 
 -	Platforms:
@@ -888,7 +888,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-6-jre-headless="$
 ## `java:7u111-jdk`
 
 ```console
-$ docker pull java@sha256:1420c9d4b9ee90bdcba354b245305609b3d7ef984f8a5280641eedfa49fbc721
+$ docker pull java@sha256:c533cb98f029ed0a87d3494f697761acb2d257ef49a9dd9c9cc704c7ba178639
 ```
 
 -	Platforms:
@@ -957,7 +957,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBI
 ## `java:7u111`
 
 ```console
-$ docker pull java@sha256:1420c9d4b9ee90bdcba354b245305609b3d7ef984f8a5280641eedfa49fbc721
+$ docker pull java@sha256:c533cb98f029ed0a87d3494f697761acb2d257ef49a9dd9c9cc704c7ba178639
 ```
 
 -	Platforms:
@@ -1026,7 +1026,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBI
 ## `java:7-jdk`
 
 ```console
-$ docker pull java@sha256:1420c9d4b9ee90bdcba354b245305609b3d7ef984f8a5280641eedfa49fbc721
+$ docker pull java@sha256:c533cb98f029ed0a87d3494f697761acb2d257ef49a9dd9c9cc704c7ba178639
 ```
 
 -	Platforms:
@@ -1095,7 +1095,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBI
 ## `java:7`
 
 ```console
-$ docker pull java@sha256:1420c9d4b9ee90bdcba354b245305609b3d7ef984f8a5280641eedfa49fbc721
+$ docker pull java@sha256:c533cb98f029ed0a87d3494f697761acb2d257ef49a9dd9c9cc704c7ba178639
 ```
 
 -	Platforms:
@@ -1164,7 +1164,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBI
 ## `java:openjdk-7u111-jdk`
 
 ```console
-$ docker pull java@sha256:1420c9d4b9ee90bdcba354b245305609b3d7ef984f8a5280641eedfa49fbc721
+$ docker pull java@sha256:c533cb98f029ed0a87d3494f697761acb2d257ef49a9dd9c9cc704c7ba178639
 ```
 
 -	Platforms:
@@ -1233,7 +1233,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBI
 ## `java:openjdk-7u111`
 
 ```console
-$ docker pull java@sha256:1420c9d4b9ee90bdcba354b245305609b3d7ef984f8a5280641eedfa49fbc721
+$ docker pull java@sha256:c533cb98f029ed0a87d3494f697761acb2d257ef49a9dd9c9cc704c7ba178639
 ```
 
 -	Platforms:
@@ -1302,7 +1302,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBI
 ## `java:openjdk-7-jdk`
 
 ```console
-$ docker pull java@sha256:1420c9d4b9ee90bdcba354b245305609b3d7ef984f8a5280641eedfa49fbc721
+$ docker pull java@sha256:c533cb98f029ed0a87d3494f697761acb2d257ef49a9dd9c9cc704c7ba178639
 ```
 
 -	Platforms:
@@ -1371,7 +1371,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBI
 ## `java:openjdk-7`
 
 ```console
-$ docker pull java@sha256:1420c9d4b9ee90bdcba354b245305609b3d7ef984f8a5280641eedfa49fbc721
+$ docker pull java@sha256:c533cb98f029ed0a87d3494f697761acb2d257ef49a9dd9c9cc704c7ba178639
 ```
 
 -	Platforms:
@@ -1440,7 +1440,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jdk="$JAVA_DEBI
 ## `java:7u91-jdk-alpine`
 
 ```console
-$ docker pull java@sha256:a616979e6e846b36ee640ec8e0e2776d8bd407b71872efa16ed6618b9918fa58
+$ docker pull java@sha256:46ee8fc34b29513caf1c19e5c14f84bf370a671ac0698f0254729aec383147e5
 ```
 
 -	Platforms:
@@ -1490,7 +1490,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 ## `java:7u91-alpine`
 
 ```console
-$ docker pull java@sha256:a616979e6e846b36ee640ec8e0e2776d8bd407b71872efa16ed6618b9918fa58
+$ docker pull java@sha256:46ee8fc34b29513caf1c19e5c14f84bf370a671ac0698f0254729aec383147e5
 ```
 
 -	Platforms:
@@ -1540,7 +1540,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 ## `java:7-jdk-alpine`
 
 ```console
-$ docker pull java@sha256:a616979e6e846b36ee640ec8e0e2776d8bd407b71872efa16ed6618b9918fa58
+$ docker pull java@sha256:46ee8fc34b29513caf1c19e5c14f84bf370a671ac0698f0254729aec383147e5
 ```
 
 -	Platforms:
@@ -1590,7 +1590,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 ## `java:7-alpine`
 
 ```console
-$ docker pull java@sha256:a616979e6e846b36ee640ec8e0e2776d8bd407b71872efa16ed6618b9918fa58
+$ docker pull java@sha256:46ee8fc34b29513caf1c19e5c14f84bf370a671ac0698f0254729aec383147e5
 ```
 
 -	Platforms:
@@ -1640,7 +1640,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 ## `java:openjdk-7u91-jdk-alpine`
 
 ```console
-$ docker pull java@sha256:a616979e6e846b36ee640ec8e0e2776d8bd407b71872efa16ed6618b9918fa58
+$ docker pull java@sha256:46ee8fc34b29513caf1c19e5c14f84bf370a671ac0698f0254729aec383147e5
 ```
 
 -	Platforms:
@@ -1690,7 +1690,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 ## `java:openjdk-7u91-alpine`
 
 ```console
-$ docker pull java@sha256:a616979e6e846b36ee640ec8e0e2776d8bd407b71872efa16ed6618b9918fa58
+$ docker pull java@sha256:46ee8fc34b29513caf1c19e5c14f84bf370a671ac0698f0254729aec383147e5
 ```
 
 -	Platforms:
@@ -1740,7 +1740,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 ## `java:openjdk-7-jdk-alpine`
 
 ```console
-$ docker pull java@sha256:a616979e6e846b36ee640ec8e0e2776d8bd407b71872efa16ed6618b9918fa58
+$ docker pull java@sha256:46ee8fc34b29513caf1c19e5c14f84bf370a671ac0698f0254729aec383147e5
 ```
 
 -	Platforms:
@@ -1790,7 +1790,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 ## `java:openjdk-7-alpine`
 
 ```console
-$ docker pull java@sha256:a616979e6e846b36ee640ec8e0e2776d8bd407b71872efa16ed6618b9918fa58
+$ docker pull java@sha256:46ee8fc34b29513caf1c19e5c14f84bf370a671ac0698f0254729aec383147e5
 ```
 
 -	Platforms:
@@ -1840,7 +1840,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 ## `java:7u111-jre`
 
 ```console
-$ docker pull java@sha256:3c20d06ec883604b23a4c8bb3b12f6a404cb16b19c3fbdc3a8d6d88cae8d2892
+$ docker pull java@sha256:dde48f3d6b5cc1f5d136b95623a16c3f4a0f3db72054a8360581d8aa30d6c7bd
 ```
 
 -	Platforms:
@@ -1903,7 +1903,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jre-headless="$
 ## `java:7-jre`
 
 ```console
-$ docker pull java@sha256:3c20d06ec883604b23a4c8bb3b12f6a404cb16b19c3fbdc3a8d6d88cae8d2892
+$ docker pull java@sha256:dde48f3d6b5cc1f5d136b95623a16c3f4a0f3db72054a8360581d8aa30d6c7bd
 ```
 
 -	Platforms:
@@ -1966,7 +1966,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jre-headless="$
 ## `java:openjdk-7u111-jre`
 
 ```console
-$ docker pull java@sha256:3c20d06ec883604b23a4c8bb3b12f6a404cb16b19c3fbdc3a8d6d88cae8d2892
+$ docker pull java@sha256:dde48f3d6b5cc1f5d136b95623a16c3f4a0f3db72054a8360581d8aa30d6c7bd
 ```
 
 -	Platforms:
@@ -2029,7 +2029,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jre-headless="$
 ## `java:openjdk-7-jre`
 
 ```console
-$ docker pull java@sha256:3c20d06ec883604b23a4c8bb3b12f6a404cb16b19c3fbdc3a8d6d88cae8d2892
+$ docker pull java@sha256:dde48f3d6b5cc1f5d136b95623a16c3f4a0f3db72054a8360581d8aa30d6c7bd
 ```
 
 -	Platforms:
@@ -2092,7 +2092,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-7-jre-headless="$
 ## `java:7u91-jre-alpine`
 
 ```console
-$ docker pull java@sha256:88fb942a90fcd7e1c531d51e31e306ffa136fd1268fc9b06579c5aecfbee9ffb
+$ docker pull java@sha256:085efbbbdf19bd0aac24c6ff97511ae76ea9729fdca97db7b9b0c59d7b69ae52
 ```
 
 -	Platforms:
@@ -2142,7 +2142,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk7-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 ## `java:7-jre-alpine`
 
 ```console
-$ docker pull java@sha256:88fb942a90fcd7e1c531d51e31e306ffa136fd1268fc9b06579c5aecfbee9ffb
+$ docker pull java@sha256:085efbbbdf19bd0aac24c6ff97511ae76ea9729fdca97db7b9b0c59d7b69ae52
 ```
 
 -	Platforms:
@@ -2192,7 +2192,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk7-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 ## `java:openjdk-7u91-jre-alpine`
 
 ```console
-$ docker pull java@sha256:88fb942a90fcd7e1c531d51e31e306ffa136fd1268fc9b06579c5aecfbee9ffb
+$ docker pull java@sha256:085efbbbdf19bd0aac24c6ff97511ae76ea9729fdca97db7b9b0c59d7b69ae52
 ```
 
 -	Platforms:
@@ -2242,7 +2242,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk7-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 ## `java:openjdk-7-jre-alpine`
 
 ```console
-$ docker pull java@sha256:88fb942a90fcd7e1c531d51e31e306ffa136fd1268fc9b06579c5aecfbee9ffb
+$ docker pull java@sha256:085efbbbdf19bd0aac24c6ff97511ae76ea9729fdca97db7b9b0c59d7b69ae52
 ```
 
 -	Platforms:
@@ -2292,7 +2292,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk7-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 ## `java:8u102-jdk`
 
 ```console
-$ docker pull java@sha256:a76a32b1d66571052acee1b6a66bf31dd447eaf0fe741f6635b55bdf852c9341
+$ docker pull java@sha256:50d1654fa6d56a48a45e89d083f9b37969b3753b36d18ca60daaa59d8e4ce730
 ```
 
 -	Platforms:
@@ -2375,7 +2375,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ## `java:8u102`
 
 ```console
-$ docker pull java@sha256:a76a32b1d66571052acee1b6a66bf31dd447eaf0fe741f6635b55bdf852c9341
+$ docker pull java@sha256:50d1654fa6d56a48a45e89d083f9b37969b3753b36d18ca60daaa59d8e4ce730
 ```
 
 -	Platforms:
@@ -2458,7 +2458,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ## `java:8-jdk`
 
 ```console
-$ docker pull java@sha256:a76a32b1d66571052acee1b6a66bf31dd447eaf0fe741f6635b55bdf852c9341
+$ docker pull java@sha256:50d1654fa6d56a48a45e89d083f9b37969b3753b36d18ca60daaa59d8e4ce730
 ```
 
 -	Platforms:
@@ -2541,7 +2541,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ## `java:8`
 
 ```console
-$ docker pull java@sha256:a76a32b1d66571052acee1b6a66bf31dd447eaf0fe741f6635b55bdf852c9341
+$ docker pull java@sha256:50d1654fa6d56a48a45e89d083f9b37969b3753b36d18ca60daaa59d8e4ce730
 ```
 
 -	Platforms:
@@ -2624,7 +2624,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ## `java:jdk`
 
 ```console
-$ docker pull java@sha256:a76a32b1d66571052acee1b6a66bf31dd447eaf0fe741f6635b55bdf852c9341
+$ docker pull java@sha256:50d1654fa6d56a48a45e89d083f9b37969b3753b36d18ca60daaa59d8e4ce730
 ```
 
 -	Platforms:
@@ -2707,7 +2707,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ## `java:latest`
 
 ```console
-$ docker pull java@sha256:a76a32b1d66571052acee1b6a66bf31dd447eaf0fe741f6635b55bdf852c9341
+$ docker pull java@sha256:50d1654fa6d56a48a45e89d083f9b37969b3753b36d18ca60daaa59d8e4ce730
 ```
 
 -	Platforms:
@@ -2790,7 +2790,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ## `java:openjdk-8u102-jdk`
 
 ```console
-$ docker pull java@sha256:a76a32b1d66571052acee1b6a66bf31dd447eaf0fe741f6635b55bdf852c9341
+$ docker pull java@sha256:50d1654fa6d56a48a45e89d083f9b37969b3753b36d18ca60daaa59d8e4ce730
 ```
 
 -	Platforms:
@@ -2873,7 +2873,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ## `java:openjdk-8u102`
 
 ```console
-$ docker pull java@sha256:a76a32b1d66571052acee1b6a66bf31dd447eaf0fe741f6635b55bdf852c9341
+$ docker pull java@sha256:50d1654fa6d56a48a45e89d083f9b37969b3753b36d18ca60daaa59d8e4ce730
 ```
 
 -	Platforms:
@@ -2956,7 +2956,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ## `java:openjdk-8-jdk`
 
 ```console
-$ docker pull java@sha256:a76a32b1d66571052acee1b6a66bf31dd447eaf0fe741f6635b55bdf852c9341
+$ docker pull java@sha256:50d1654fa6d56a48a45e89d083f9b37969b3753b36d18ca60daaa59d8e4ce730
 ```
 
 -	Platforms:
@@ -3039,7 +3039,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ## `java:openjdk-8`
 
 ```console
-$ docker pull java@sha256:a76a32b1d66571052acee1b6a66bf31dd447eaf0fe741f6635b55bdf852c9341
+$ docker pull java@sha256:50d1654fa6d56a48a45e89d083f9b37969b3753b36d18ca60daaa59d8e4ce730
 ```
 
 -	Platforms:
@@ -3122,7 +3122,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ## `java:8u92-jdk-alpine`
 
 ```console
-$ docker pull java@sha256:33c019af49123e8f22871c9e3fce6aa670a78efc757f29f8608de7f2b747060a
+$ docker pull java@sha256:094295609dcfbb1fc5cc16ba84937bbbc19572ac4fb473239a555557ce1cd148
 ```
 
 -	Platforms:
@@ -3172,7 +3172,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 ## `java:8u92-alpine`
 
 ```console
-$ docker pull java@sha256:33c019af49123e8f22871c9e3fce6aa670a78efc757f29f8608de7f2b747060a
+$ docker pull java@sha256:094295609dcfbb1fc5cc16ba84937bbbc19572ac4fb473239a555557ce1cd148
 ```
 
 -	Platforms:
@@ -3222,7 +3222,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 ## `java:8-jdk-alpine`
 
 ```console
-$ docker pull java@sha256:33c019af49123e8f22871c9e3fce6aa670a78efc757f29f8608de7f2b747060a
+$ docker pull java@sha256:094295609dcfbb1fc5cc16ba84937bbbc19572ac4fb473239a555557ce1cd148
 ```
 
 -	Platforms:
@@ -3272,7 +3272,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 ## `java:8-alpine`
 
 ```console
-$ docker pull java@sha256:33c019af49123e8f22871c9e3fce6aa670a78efc757f29f8608de7f2b747060a
+$ docker pull java@sha256:094295609dcfbb1fc5cc16ba84937bbbc19572ac4fb473239a555557ce1cd148
 ```
 
 -	Platforms:
@@ -3322,7 +3322,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 ## `java:jdk-alpine`
 
 ```console
-$ docker pull java@sha256:33c019af49123e8f22871c9e3fce6aa670a78efc757f29f8608de7f2b747060a
+$ docker pull java@sha256:094295609dcfbb1fc5cc16ba84937bbbc19572ac4fb473239a555557ce1cd148
 ```
 
 -	Platforms:
@@ -3372,7 +3372,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 ## `java:alpine`
 
 ```console
-$ docker pull java@sha256:33c019af49123e8f22871c9e3fce6aa670a78efc757f29f8608de7f2b747060a
+$ docker pull java@sha256:094295609dcfbb1fc5cc16ba84937bbbc19572ac4fb473239a555557ce1cd148
 ```
 
 -	Platforms:
@@ -3422,7 +3422,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 ## `java:openjdk-8u92-jdk-alpine`
 
 ```console
-$ docker pull java@sha256:33c019af49123e8f22871c9e3fce6aa670a78efc757f29f8608de7f2b747060a
+$ docker pull java@sha256:094295609dcfbb1fc5cc16ba84937bbbc19572ac4fb473239a555557ce1cd148
 ```
 
 -	Platforms:
@@ -3472,7 +3472,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 ## `java:openjdk-8u92-alpine`
 
 ```console
-$ docker pull java@sha256:33c019af49123e8f22871c9e3fce6aa670a78efc757f29f8608de7f2b747060a
+$ docker pull java@sha256:094295609dcfbb1fc5cc16ba84937bbbc19572ac4fb473239a555557ce1cd148
 ```
 
 -	Platforms:
@@ -3522,7 +3522,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 ## `java:openjdk-8-jdk-alpine`
 
 ```console
-$ docker pull java@sha256:33c019af49123e8f22871c9e3fce6aa670a78efc757f29f8608de7f2b747060a
+$ docker pull java@sha256:094295609dcfbb1fc5cc16ba84937bbbc19572ac4fb473239a555557ce1cd148
 ```
 
 -	Platforms:
@@ -3572,7 +3572,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 ## `java:openjdk-8-alpine`
 
 ```console
-$ docker pull java@sha256:33c019af49123e8f22871c9e3fce6aa670a78efc757f29f8608de7f2b747060a
+$ docker pull java@sha256:094295609dcfbb1fc5cc16ba84937bbbc19572ac4fb473239a555557ce1cd148
 ```
 
 -	Platforms:
@@ -3622,7 +3622,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA
 ## `java:8u102-jre`
 
 ```console
-$ docker pull java@sha256:b4b9299ec015c17a1e38d6cf4fda5fefe3a383ddbe77f289884679073385bc50
+$ docker pull java@sha256:ef26a3b5b789807092d054b54f0e50c9da854ab08bde6326908b240d48ac6f5e
 ```
 
 -	Platforms:
@@ -3699,7 +3699,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ## `java:8-jre`
 
 ```console
-$ docker pull java@sha256:b4b9299ec015c17a1e38d6cf4fda5fefe3a383ddbe77f289884679073385bc50
+$ docker pull java@sha256:ef26a3b5b789807092d054b54f0e50c9da854ab08bde6326908b240d48ac6f5e
 ```
 
 -	Platforms:
@@ -3776,7 +3776,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ## `java:jre`
 
 ```console
-$ docker pull java@sha256:b4b9299ec015c17a1e38d6cf4fda5fefe3a383ddbe77f289884679073385bc50
+$ docker pull java@sha256:ef26a3b5b789807092d054b54f0e50c9da854ab08bde6326908b240d48ac6f5e
 ```
 
 -	Platforms:
@@ -3853,7 +3853,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ## `java:openjdk-8u102-jre`
 
 ```console
-$ docker pull java@sha256:b4b9299ec015c17a1e38d6cf4fda5fefe3a383ddbe77f289884679073385bc50
+$ docker pull java@sha256:ef26a3b5b789807092d054b54f0e50c9da854ab08bde6326908b240d48ac6f5e
 ```
 
 -	Platforms:
@@ -3930,7 +3930,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ## `java:openjdk-8-jre`
 
 ```console
-$ docker pull java@sha256:b4b9299ec015c17a1e38d6cf4fda5fefe3a383ddbe77f289884679073385bc50
+$ docker pull java@sha256:ef26a3b5b789807092d054b54f0e50c9da854ab08bde6326908b240d48ac6f5e
 ```
 
 -	Platforms:
@@ -4007,7 +4007,7 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ## `java:8u92-jre-alpine`
 
 ```console
-$ docker pull java@sha256:e5bd6fb6f98c5411ca23097d0ce28d31ce7d157b4461dc881dd66f25866f6125
+$ docker pull java@sha256:fd33e359b5ed5d3d420b75fd36b94ab77711ff886f821796a30f403cfca3dee4
 ```
 
 -	Platforms:
@@ -4057,7 +4057,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 ## `java:8-jre-alpine`
 
 ```console
-$ docker pull java@sha256:e5bd6fb6f98c5411ca23097d0ce28d31ce7d157b4461dc881dd66f25866f6125
+$ docker pull java@sha256:fd33e359b5ed5d3d420b75fd36b94ab77711ff886f821796a30f403cfca3dee4
 ```
 
 -	Platforms:
@@ -4107,7 +4107,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 ## `java:jre-alpine`
 
 ```console
-$ docker pull java@sha256:e5bd6fb6f98c5411ca23097d0ce28d31ce7d157b4461dc881dd66f25866f6125
+$ docker pull java@sha256:fd33e359b5ed5d3d420b75fd36b94ab77711ff886f821796a30f403cfca3dee4
 ```
 
 -	Platforms:
@@ -4157,7 +4157,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 ## `java:openjdk-8u92-jre-alpine`
 
 ```console
-$ docker pull java@sha256:e5bd6fb6f98c5411ca23097d0ce28d31ce7d157b4461dc881dd66f25866f6125
+$ docker pull java@sha256:fd33e359b5ed5d3d420b75fd36b94ab77711ff886f821796a30f403cfca3dee4
 ```
 
 -	Platforms:
@@ -4207,7 +4207,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 ## `java:openjdk-8-jre-alpine`
 
 ```console
-$ docker pull java@sha256:e5bd6fb6f98c5411ca23097d0ce28d31ce7d157b4461dc881dd66f25866f6125
+$ docker pull java@sha256:fd33e359b5ed5d3d420b75fd36b94ab77711ff886f821796a30f403cfca3dee4
 ```
 
 -	Platforms:
@@ -4254,22 +4254,22 @@ RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 		Size: 39.6 MB (39647465 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `java:9-b136-jdk`
+## `java:9-b139-jdk`
 
 ```console
-$ docker pull java@sha256:dadb5ed28780e2871f165bf217feda44bab10dcced4263b7fba95674b6ddadf4
+$ docker pull java@sha256:57a27d25a8ab2b99bfeba0fa483553c92d0ecdadb4224d845d571f3c0011267b
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `java:9-b136-jdk` - linux; amd64
+### `java:9-b139-jdk` - linux; amd64
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.1 MB (245118659 bytes)**  
+-	Total Size: **247.2 MB (247241515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2c71df7073650ad622ed16bb737574595ce9bf63b36cfb44d0156dae69875ae`
+-	Image ID: `sha256:37872b43b654ca84ea7a8d0603601678266c54452a2f4bf7ef87881d99b6f406`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -4291,11 +4291,11 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Fri, 23 Sep 2016 19:39:19 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
-# Fri, 23 Sep 2016 19:39:19 GMT
-ENV JAVA_VERSION=9~b136
-# Fri, 23 Sep 2016 19:39:20 GMT
-ENV JAVA_DEBIAN_VERSION=9~b136-1
-# Fri, 23 Sep 2016 19:39:56 GMT
+# Mon, 10 Oct 2016 23:14:13 GMT
+ENV JAVA_VERSION=9~b139
+# Mon, 10 Oct 2016 23:14:13 GMT
+ENV JAVA_DEBIAN_VERSION=9~b139-1
+# Mon, 10 Oct 2016 23:14:40 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
@@ -4324,27 +4324,27 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$
 		Last Modified: Fri, 23 Sep 2016 19:40:03 GMT  
 		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:688ee1a7ff8dfa0cd12e4cc0458513f2fc461c0f92135f5a6162fca1a6b7dd31`  
-		Last Modified: Fri, 23 Sep 2016 19:40:24 GMT  
-		Size: 128.5 MB (128482936 bytes)  
+	-	`sha256:6fec70b88aabb3b349a16f0b3d7fa4b8d63ff33a80f5f9fbcb6bb4ebf1acef6d`  
+		Last Modified: Mon, 10 Oct 2016 23:26:13 GMT  
+		Size: 130.6 MB (130605792 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `java:9-b136`
+## `java:9-b139`
 
 ```console
-$ docker pull java@sha256:dadb5ed28780e2871f165bf217feda44bab10dcced4263b7fba95674b6ddadf4
+$ docker pull java@sha256:57a27d25a8ab2b99bfeba0fa483553c92d0ecdadb4224d845d571f3c0011267b
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `java:9-b136` - linux; amd64
+### `java:9-b139` - linux; amd64
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.1 MB (245118659 bytes)**  
+-	Total Size: **247.2 MB (247241515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2c71df7073650ad622ed16bb737574595ce9bf63b36cfb44d0156dae69875ae`
+-	Image ID: `sha256:37872b43b654ca84ea7a8d0603601678266c54452a2f4bf7ef87881d99b6f406`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -4366,11 +4366,11 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Fri, 23 Sep 2016 19:39:19 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
-# Fri, 23 Sep 2016 19:39:19 GMT
-ENV JAVA_VERSION=9~b136
-# Fri, 23 Sep 2016 19:39:20 GMT
-ENV JAVA_DEBIAN_VERSION=9~b136-1
-# Fri, 23 Sep 2016 19:39:56 GMT
+# Mon, 10 Oct 2016 23:14:13 GMT
+ENV JAVA_VERSION=9~b139
+# Mon, 10 Oct 2016 23:14:13 GMT
+ENV JAVA_DEBIAN_VERSION=9~b139-1
+# Mon, 10 Oct 2016 23:14:40 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
@@ -4399,15 +4399,15 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$
 		Last Modified: Fri, 23 Sep 2016 19:40:03 GMT  
 		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:688ee1a7ff8dfa0cd12e4cc0458513f2fc461c0f92135f5a6162fca1a6b7dd31`  
-		Last Modified: Fri, 23 Sep 2016 19:40:24 GMT  
-		Size: 128.5 MB (128482936 bytes)  
+	-	`sha256:6fec70b88aabb3b349a16f0b3d7fa4b8d63ff33a80f5f9fbcb6bb4ebf1acef6d`  
+		Last Modified: Mon, 10 Oct 2016 23:26:13 GMT  
+		Size: 130.6 MB (130605792 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:9-jdk`
 
 ```console
-$ docker pull java@sha256:dadb5ed28780e2871f165bf217feda44bab10dcced4263b7fba95674b6ddadf4
+$ docker pull java@sha256:57a27d25a8ab2b99bfeba0fa483553c92d0ecdadb4224d845d571f3c0011267b
 ```
 
 -	Platforms:
@@ -4417,9 +4417,9 @@ $ docker pull java@sha256:dadb5ed28780e2871f165bf217feda44bab10dcced4263b7fba956
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.1 MB (245118659 bytes)**  
+-	Total Size: **247.2 MB (247241515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2c71df7073650ad622ed16bb737574595ce9bf63b36cfb44d0156dae69875ae`
+-	Image ID: `sha256:37872b43b654ca84ea7a8d0603601678266c54452a2f4bf7ef87881d99b6f406`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -4441,11 +4441,11 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Fri, 23 Sep 2016 19:39:19 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
-# Fri, 23 Sep 2016 19:39:19 GMT
-ENV JAVA_VERSION=9~b136
-# Fri, 23 Sep 2016 19:39:20 GMT
-ENV JAVA_DEBIAN_VERSION=9~b136-1
-# Fri, 23 Sep 2016 19:39:56 GMT
+# Mon, 10 Oct 2016 23:14:13 GMT
+ENV JAVA_VERSION=9~b139
+# Mon, 10 Oct 2016 23:14:13 GMT
+ENV JAVA_DEBIAN_VERSION=9~b139-1
+# Mon, 10 Oct 2016 23:14:40 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
@@ -4474,15 +4474,15 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$
 		Last Modified: Fri, 23 Sep 2016 19:40:03 GMT  
 		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:688ee1a7ff8dfa0cd12e4cc0458513f2fc461c0f92135f5a6162fca1a6b7dd31`  
-		Last Modified: Fri, 23 Sep 2016 19:40:24 GMT  
-		Size: 128.5 MB (128482936 bytes)  
+	-	`sha256:6fec70b88aabb3b349a16f0b3d7fa4b8d63ff33a80f5f9fbcb6bb4ebf1acef6d`  
+		Last Modified: Mon, 10 Oct 2016 23:26:13 GMT  
+		Size: 130.6 MB (130605792 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:9`
 
 ```console
-$ docker pull java@sha256:dadb5ed28780e2871f165bf217feda44bab10dcced4263b7fba95674b6ddadf4
+$ docker pull java@sha256:57a27d25a8ab2b99bfeba0fa483553c92d0ecdadb4224d845d571f3c0011267b
 ```
 
 -	Platforms:
@@ -4492,9 +4492,9 @@ $ docker pull java@sha256:dadb5ed28780e2871f165bf217feda44bab10dcced4263b7fba956
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.1 MB (245118659 bytes)**  
+-	Total Size: **247.2 MB (247241515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2c71df7073650ad622ed16bb737574595ce9bf63b36cfb44d0156dae69875ae`
+-	Image ID: `sha256:37872b43b654ca84ea7a8d0603601678266c54452a2f4bf7ef87881d99b6f406`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -4516,11 +4516,11 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Fri, 23 Sep 2016 19:39:19 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
-# Fri, 23 Sep 2016 19:39:19 GMT
-ENV JAVA_VERSION=9~b136
-# Fri, 23 Sep 2016 19:39:20 GMT
-ENV JAVA_DEBIAN_VERSION=9~b136-1
-# Fri, 23 Sep 2016 19:39:56 GMT
+# Mon, 10 Oct 2016 23:14:13 GMT
+ENV JAVA_VERSION=9~b139
+# Mon, 10 Oct 2016 23:14:13 GMT
+ENV JAVA_DEBIAN_VERSION=9~b139-1
+# Mon, 10 Oct 2016 23:14:40 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
@@ -4549,27 +4549,27 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$
 		Last Modified: Fri, 23 Sep 2016 19:40:03 GMT  
 		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:688ee1a7ff8dfa0cd12e4cc0458513f2fc461c0f92135f5a6162fca1a6b7dd31`  
-		Last Modified: Fri, 23 Sep 2016 19:40:24 GMT  
-		Size: 128.5 MB (128482936 bytes)  
+	-	`sha256:6fec70b88aabb3b349a16f0b3d7fa4b8d63ff33a80f5f9fbcb6bb4ebf1acef6d`  
+		Last Modified: Mon, 10 Oct 2016 23:26:13 GMT  
+		Size: 130.6 MB (130605792 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `java:openjdk-9-b136-jdk`
+## `java:openjdk-9-b139-jdk`
 
 ```console
-$ docker pull java@sha256:dadb5ed28780e2871f165bf217feda44bab10dcced4263b7fba95674b6ddadf4
+$ docker pull java@sha256:57a27d25a8ab2b99bfeba0fa483553c92d0ecdadb4224d845d571f3c0011267b
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `java:openjdk-9-b136-jdk` - linux; amd64
+### `java:openjdk-9-b139-jdk` - linux; amd64
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.1 MB (245118659 bytes)**  
+-	Total Size: **247.2 MB (247241515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2c71df7073650ad622ed16bb737574595ce9bf63b36cfb44d0156dae69875ae`
+-	Image ID: `sha256:37872b43b654ca84ea7a8d0603601678266c54452a2f4bf7ef87881d99b6f406`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -4591,11 +4591,11 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Fri, 23 Sep 2016 19:39:19 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
-# Fri, 23 Sep 2016 19:39:19 GMT
-ENV JAVA_VERSION=9~b136
-# Fri, 23 Sep 2016 19:39:20 GMT
-ENV JAVA_DEBIAN_VERSION=9~b136-1
-# Fri, 23 Sep 2016 19:39:56 GMT
+# Mon, 10 Oct 2016 23:14:13 GMT
+ENV JAVA_VERSION=9~b139
+# Mon, 10 Oct 2016 23:14:13 GMT
+ENV JAVA_DEBIAN_VERSION=9~b139-1
+# Mon, 10 Oct 2016 23:14:40 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
@@ -4624,27 +4624,27 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$
 		Last Modified: Fri, 23 Sep 2016 19:40:03 GMT  
 		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:688ee1a7ff8dfa0cd12e4cc0458513f2fc461c0f92135f5a6162fca1a6b7dd31`  
-		Last Modified: Fri, 23 Sep 2016 19:40:24 GMT  
-		Size: 128.5 MB (128482936 bytes)  
+	-	`sha256:6fec70b88aabb3b349a16f0b3d7fa4b8d63ff33a80f5f9fbcb6bb4ebf1acef6d`  
+		Last Modified: Mon, 10 Oct 2016 23:26:13 GMT  
+		Size: 130.6 MB (130605792 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `java:openjdk-9-b136`
+## `java:openjdk-9-b139`
 
 ```console
-$ docker pull java@sha256:dadb5ed28780e2871f165bf217feda44bab10dcced4263b7fba95674b6ddadf4
+$ docker pull java@sha256:57a27d25a8ab2b99bfeba0fa483553c92d0ecdadb4224d845d571f3c0011267b
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `java:openjdk-9-b136` - linux; amd64
+### `java:openjdk-9-b139` - linux; amd64
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.1 MB (245118659 bytes)**  
+-	Total Size: **247.2 MB (247241515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2c71df7073650ad622ed16bb737574595ce9bf63b36cfb44d0156dae69875ae`
+-	Image ID: `sha256:37872b43b654ca84ea7a8d0603601678266c54452a2f4bf7ef87881d99b6f406`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -4666,11 +4666,11 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Fri, 23 Sep 2016 19:39:19 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
-# Fri, 23 Sep 2016 19:39:19 GMT
-ENV JAVA_VERSION=9~b136
-# Fri, 23 Sep 2016 19:39:20 GMT
-ENV JAVA_DEBIAN_VERSION=9~b136-1
-# Fri, 23 Sep 2016 19:39:56 GMT
+# Mon, 10 Oct 2016 23:14:13 GMT
+ENV JAVA_VERSION=9~b139
+# Mon, 10 Oct 2016 23:14:13 GMT
+ENV JAVA_DEBIAN_VERSION=9~b139-1
+# Mon, 10 Oct 2016 23:14:40 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
@@ -4699,15 +4699,15 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$
 		Last Modified: Fri, 23 Sep 2016 19:40:03 GMT  
 		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:688ee1a7ff8dfa0cd12e4cc0458513f2fc461c0f92135f5a6162fca1a6b7dd31`  
-		Last Modified: Fri, 23 Sep 2016 19:40:24 GMT  
-		Size: 128.5 MB (128482936 bytes)  
+	-	`sha256:6fec70b88aabb3b349a16f0b3d7fa4b8d63ff33a80f5f9fbcb6bb4ebf1acef6d`  
+		Last Modified: Mon, 10 Oct 2016 23:26:13 GMT  
+		Size: 130.6 MB (130605792 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-9-jdk`
 
 ```console
-$ docker pull java@sha256:dadb5ed28780e2871f165bf217feda44bab10dcced4263b7fba95674b6ddadf4
+$ docker pull java@sha256:57a27d25a8ab2b99bfeba0fa483553c92d0ecdadb4224d845d571f3c0011267b
 ```
 
 -	Platforms:
@@ -4717,9 +4717,9 @@ $ docker pull java@sha256:dadb5ed28780e2871f165bf217feda44bab10dcced4263b7fba956
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.1 MB (245118659 bytes)**  
+-	Total Size: **247.2 MB (247241515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2c71df7073650ad622ed16bb737574595ce9bf63b36cfb44d0156dae69875ae`
+-	Image ID: `sha256:37872b43b654ca84ea7a8d0603601678266c54452a2f4bf7ef87881d99b6f406`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -4741,11 +4741,11 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Fri, 23 Sep 2016 19:39:19 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
-# Fri, 23 Sep 2016 19:39:19 GMT
-ENV JAVA_VERSION=9~b136
-# Fri, 23 Sep 2016 19:39:20 GMT
-ENV JAVA_DEBIAN_VERSION=9~b136-1
-# Fri, 23 Sep 2016 19:39:56 GMT
+# Mon, 10 Oct 2016 23:14:13 GMT
+ENV JAVA_VERSION=9~b139
+# Mon, 10 Oct 2016 23:14:13 GMT
+ENV JAVA_DEBIAN_VERSION=9~b139-1
+# Mon, 10 Oct 2016 23:14:40 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
@@ -4774,15 +4774,15 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$
 		Last Modified: Fri, 23 Sep 2016 19:40:03 GMT  
 		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:688ee1a7ff8dfa0cd12e4cc0458513f2fc461c0f92135f5a6162fca1a6b7dd31`  
-		Last Modified: Fri, 23 Sep 2016 19:40:24 GMT  
-		Size: 128.5 MB (128482936 bytes)  
+	-	`sha256:6fec70b88aabb3b349a16f0b3d7fa4b8d63ff33a80f5f9fbcb6bb4ebf1acef6d`  
+		Last Modified: Mon, 10 Oct 2016 23:26:13 GMT  
+		Size: 130.6 MB (130605792 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-9`
 
 ```console
-$ docker pull java@sha256:dadb5ed28780e2871f165bf217feda44bab10dcced4263b7fba95674b6ddadf4
+$ docker pull java@sha256:57a27d25a8ab2b99bfeba0fa483553c92d0ecdadb4224d845d571f3c0011267b
 ```
 
 -	Platforms:
@@ -4792,9 +4792,9 @@ $ docker pull java@sha256:dadb5ed28780e2871f165bf217feda44bab10dcced4263b7fba956
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **245.1 MB (245118659 bytes)**  
+-	Total Size: **247.2 MB (247241515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2c71df7073650ad622ed16bb737574595ce9bf63b36cfb44d0156dae69875ae`
+-	Image ID: `sha256:37872b43b654ca84ea7a8d0603601678266c54452a2f4bf7ef87881d99b6f406`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -4816,11 +4816,11 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Fri, 23 Sep 2016 19:39:19 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
-# Fri, 23 Sep 2016 19:39:19 GMT
-ENV JAVA_VERSION=9~b136
-# Fri, 23 Sep 2016 19:39:20 GMT
-ENV JAVA_DEBIAN_VERSION=9~b136-1
-# Fri, 23 Sep 2016 19:39:56 GMT
+# Mon, 10 Oct 2016 23:14:13 GMT
+ENV JAVA_VERSION=9~b139
+# Mon, 10 Oct 2016 23:14:13 GMT
+ENV JAVA_DEBIAN_VERSION=9~b139-1
+# Mon, 10 Oct 2016 23:14:40 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
@@ -4849,27 +4849,27 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$
 		Last Modified: Fri, 23 Sep 2016 19:40:03 GMT  
 		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:688ee1a7ff8dfa0cd12e4cc0458513f2fc461c0f92135f5a6162fca1a6b7dd31`  
-		Last Modified: Fri, 23 Sep 2016 19:40:24 GMT  
-		Size: 128.5 MB (128482936 bytes)  
+	-	`sha256:6fec70b88aabb3b349a16f0b3d7fa4b8d63ff33a80f5f9fbcb6bb4ebf1acef6d`  
+		Last Modified: Mon, 10 Oct 2016 23:26:13 GMT  
+		Size: 130.6 MB (130605792 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `java:9-b136-jre`
+## `java:9-b139-jre`
 
 ```console
-$ docker pull java@sha256:933524c77c44d4f851bd3912cce18f6422522ee2d1050200e02b33ff4a1ae088
+$ docker pull java@sha256:ba763720e30c8da41e835fb35d4ee91e4032d0d461131313a89d3f5c79f8d756
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `java:9-b136-jre` - linux; amd64
+### `java:9-b139-jre` - linux; amd64
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **193.2 MB (193160504 bytes)**  
+-	Total Size: **195.3 MB (195283300 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88fc12e908170a37866236dc2480d81a12d102d758266a9c34d472f7331c0516`
+-	Image ID: `sha256:a96246b4b05b7ba77a38612bd8dd90368e836dd8535e9ed2208e6f29547b76c7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -4889,11 +4889,11 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Fri, 23 Sep 2016 19:41:47 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
-# Fri, 23 Sep 2016 19:41:47 GMT
-ENV JAVA_VERSION=9~b136
-# Fri, 23 Sep 2016 19:41:47 GMT
-ENV JAVA_DEBIAN_VERSION=9~b136-1
-# Fri, 23 Sep 2016 19:42:06 GMT
+# Mon, 10 Oct 2016 23:14:41 GMT
+ENV JAVA_VERSION=9~b139
+# Mon, 10 Oct 2016 23:14:41 GMT
+ENV JAVA_DEBIAN_VERSION=9~b139-1
+# Mon, 10 Oct 2016 23:15:01 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jre-headless="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
@@ -4918,15 +4918,15 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jre-headless="$
 		Last Modified: Fri, 23 Sep 2016 19:42:13 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:907aeacd64b3e9bab5a0d492d9a12a4aba0fddba157e990211015ac2820a0f75`  
-		Last Modified: Fri, 23 Sep 2016 19:42:33 GMT  
-		Size: 128.9 MB (128893091 bytes)  
+	-	`sha256:910d4658ebfcf3e5df16607e9bc5dcc8889ec521b90dd8308b5b803759ae37ad`  
+		Last Modified: Mon, 10 Oct 2016 23:27:59 GMT  
+		Size: 131.0 MB (131015887 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:9-jre`
 
 ```console
-$ docker pull java@sha256:933524c77c44d4f851bd3912cce18f6422522ee2d1050200e02b33ff4a1ae088
+$ docker pull java@sha256:ba763720e30c8da41e835fb35d4ee91e4032d0d461131313a89d3f5c79f8d756
 ```
 
 -	Platforms:
@@ -4936,9 +4936,9 @@ $ docker pull java@sha256:933524c77c44d4f851bd3912cce18f6422522ee2d1050200e02b33
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **193.2 MB (193160504 bytes)**  
+-	Total Size: **195.3 MB (195283300 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88fc12e908170a37866236dc2480d81a12d102d758266a9c34d472f7331c0516`
+-	Image ID: `sha256:a96246b4b05b7ba77a38612bd8dd90368e836dd8535e9ed2208e6f29547b76c7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -4958,11 +4958,11 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Fri, 23 Sep 2016 19:41:47 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
-# Fri, 23 Sep 2016 19:41:47 GMT
-ENV JAVA_VERSION=9~b136
-# Fri, 23 Sep 2016 19:41:47 GMT
-ENV JAVA_DEBIAN_VERSION=9~b136-1
-# Fri, 23 Sep 2016 19:42:06 GMT
+# Mon, 10 Oct 2016 23:14:41 GMT
+ENV JAVA_VERSION=9~b139
+# Mon, 10 Oct 2016 23:14:41 GMT
+ENV JAVA_DEBIAN_VERSION=9~b139-1
+# Mon, 10 Oct 2016 23:15:01 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jre-headless="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
@@ -4987,27 +4987,27 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jre-headless="$
 		Last Modified: Fri, 23 Sep 2016 19:42:13 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:907aeacd64b3e9bab5a0d492d9a12a4aba0fddba157e990211015ac2820a0f75`  
-		Last Modified: Fri, 23 Sep 2016 19:42:33 GMT  
-		Size: 128.9 MB (128893091 bytes)  
+	-	`sha256:910d4658ebfcf3e5df16607e9bc5dcc8889ec521b90dd8308b5b803759ae37ad`  
+		Last Modified: Mon, 10 Oct 2016 23:27:59 GMT  
+		Size: 131.0 MB (131015887 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `java:openjdk-9-b136-jre`
+## `java:openjdk-9-b139-jre`
 
 ```console
-$ docker pull java@sha256:933524c77c44d4f851bd3912cce18f6422522ee2d1050200e02b33ff4a1ae088
+$ docker pull java@sha256:ba763720e30c8da41e835fb35d4ee91e4032d0d461131313a89d3f5c79f8d756
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `java:openjdk-9-b136-jre` - linux; amd64
+### `java:openjdk-9-b139-jre` - linux; amd64
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **193.2 MB (193160504 bytes)**  
+-	Total Size: **195.3 MB (195283300 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88fc12e908170a37866236dc2480d81a12d102d758266a9c34d472f7331c0516`
+-	Image ID: `sha256:a96246b4b05b7ba77a38612bd8dd90368e836dd8535e9ed2208e6f29547b76c7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -5027,11 +5027,11 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Fri, 23 Sep 2016 19:41:47 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
-# Fri, 23 Sep 2016 19:41:47 GMT
-ENV JAVA_VERSION=9~b136
-# Fri, 23 Sep 2016 19:41:47 GMT
-ENV JAVA_DEBIAN_VERSION=9~b136-1
-# Fri, 23 Sep 2016 19:42:06 GMT
+# Mon, 10 Oct 2016 23:14:41 GMT
+ENV JAVA_VERSION=9~b139
+# Mon, 10 Oct 2016 23:14:41 GMT
+ENV JAVA_DEBIAN_VERSION=9~b139-1
+# Mon, 10 Oct 2016 23:15:01 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jre-headless="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
@@ -5056,15 +5056,15 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jre-headless="$
 		Last Modified: Fri, 23 Sep 2016 19:42:13 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:907aeacd64b3e9bab5a0d492d9a12a4aba0fddba157e990211015ac2820a0f75`  
-		Last Modified: Fri, 23 Sep 2016 19:42:33 GMT  
-		Size: 128.9 MB (128893091 bytes)  
+	-	`sha256:910d4658ebfcf3e5df16607e9bc5dcc8889ec521b90dd8308b5b803759ae37ad`  
+		Last Modified: Mon, 10 Oct 2016 23:27:59 GMT  
+		Size: 131.0 MB (131015887 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `java:openjdk-9-jre`
 
 ```console
-$ docker pull java@sha256:933524c77c44d4f851bd3912cce18f6422522ee2d1050200e02b33ff4a1ae088
+$ docker pull java@sha256:ba763720e30c8da41e835fb35d4ee91e4032d0d461131313a89d3f5c79f8d756
 ```
 
 -	Platforms:
@@ -5074,9 +5074,9 @@ $ docker pull java@sha256:933524c77c44d4f851bd3912cce18f6422522ee2d1050200e02b33
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **193.2 MB (193160504 bytes)**  
+-	Total Size: **195.3 MB (195283300 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88fc12e908170a37866236dc2480d81a12d102d758266a9c34d472f7331c0516`
+-	Image ID: `sha256:a96246b4b05b7ba77a38612bd8dd90368e836dd8535e9ed2208e6f29547b76c7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -5096,11 +5096,11 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Fri, 23 Sep 2016 19:41:47 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
-# Fri, 23 Sep 2016 19:41:47 GMT
-ENV JAVA_VERSION=9~b136
-# Fri, 23 Sep 2016 19:41:47 GMT
-ENV JAVA_DEBIAN_VERSION=9~b136-1
-# Fri, 23 Sep 2016 19:42:06 GMT
+# Mon, 10 Oct 2016 23:14:41 GMT
+ENV JAVA_VERSION=9~b139
+# Mon, 10 Oct 2016 23:14:41 GMT
+ENV JAVA_DEBIAN_VERSION=9~b139-1
+# Mon, 10 Oct 2016 23:15:01 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jre-headless="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
@@ -5125,7 +5125,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jre-headless="$
 		Last Modified: Fri, 23 Sep 2016 19:42:13 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:907aeacd64b3e9bab5a0d492d9a12a4aba0fddba157e990211015ac2820a0f75`  
-		Last Modified: Fri, 23 Sep 2016 19:42:33 GMT  
-		Size: 128.9 MB (128893091 bytes)  
+	-	`sha256:910d4658ebfcf3e5df16607e9bc5dcc8889ec521b90dd8308b5b803759ae37ad`  
+		Last Modified: Mon, 10 Oct 2016 23:27:59 GMT  
+		Size: 131.0 MB (131015887 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

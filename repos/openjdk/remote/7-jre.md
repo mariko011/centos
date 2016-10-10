@@ -1,7 +1,7 @@
 ## `openjdk:7-jre`
 
 ```console
-$ docker pull openjdk@sha256:3c20d06ec883604b23a4c8bb3b12f6a404cb16b19c3fbdc3a8d6d88cae8d2892
+$ docker pull openjdk@sha256:dde48f3d6b5cc1f5d136b95623a16c3f4a0f3db72054a8360581d8aa30d6c7bd
 ```
 
 -	Platforms:

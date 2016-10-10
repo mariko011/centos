@@ -1,7 +1,7 @@
 ## `java:8-jre`
 
 ```console
-$ docker pull java@sha256:b4b9299ec015c17a1e38d6cf4fda5fefe3a383ddbe77f289884679073385bc50
+$ docker pull java@sha256:ef26a3b5b789807092d054b54f0e50c9da854ab08bde6326908b240d48ac6f5e
 ```
 
 -	Platforms:
