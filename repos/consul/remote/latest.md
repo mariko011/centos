@@ -1,7 +1,7 @@
 ## `consul:latest`
 
 ```console
-$ docker pull consul@sha256:004634b499ab0144aff74e49578833502f03791ea37bddf4e9b95f02a123208a
+$ docker pull consul@sha256:3c084b6e6ec1bc5a97265e9f0922f4faf2f53a88b0292e476cc88e7a375df0a0
 ```
 
 -	Platforms:
