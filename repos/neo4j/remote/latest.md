@@ -1,7 +1,7 @@
 ## `neo4j:latest`
 
 ```console
-$ docker pull neo4j@sha256:906b5b511e852dd4248d0b8c2077dfafb6001026f5469418c4e06a772afbb34c
+$ docker pull neo4j@sha256:ad76f262b39205a9bb93d5db2435e76bbb76afb31444e7a8789fce21cc586c7f
 ```
 
 -	Platforms:

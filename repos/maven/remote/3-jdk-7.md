@@ -1,7 +1,7 @@
 ## `maven:3-jdk-7`
 
 ```console
-$ docker pull maven@sha256:1ab1dab08e84de1d2434d0dc4d945e2b696c27a1a79b8a1e5da3c6a453fac977
+$ docker pull maven@sha256:87d1cf55dcc7acf74141db53aeec1adb5a952d14881ff6d863cf7aa6de7ddea2
 ```
 
 -	Platforms:

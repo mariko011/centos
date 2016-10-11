@@ -1,7 +1,7 @@
 ## `clojure:alpine`
 
 ```console
-$ docker pull clojure@sha256:f627a2f0e1c5a850377be3e5aadc211002efaad015e73dc75a5b52aa92227c39
+$ docker pull clojure@sha256:a9c06a03b797a3a5a7e26f8d3645d6bed498d27655d90d227ce89a2c23ff4b1a
 ```
 
 -	Platforms:

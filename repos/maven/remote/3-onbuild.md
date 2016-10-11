@@ -1,7 +1,7 @@
 ## `maven:3-onbuild`
 
 ```console
-$ docker pull maven@sha256:e952a73c2f0b65dce99ef8ce62ab890ee60a261ab6eae5e1ffb128019b0b8428
+$ docker pull maven@sha256:eb73da2f513b303f2b9959e7657f982d495b063a49b2e76ea92d4d172b775ae3
 ```
 
 -	Platforms:

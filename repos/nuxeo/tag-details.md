@@ -18,7 +18,7 @@
 ## `nuxeo:latest`
 
 ```console
-$ docker pull nuxeo@sha256:35046c2d4cb0e94aeb88c27d0284ee5b050a128998f38466b0d1db78d842d92a
+$ docker pull nuxeo@sha256:0b732ebcab8f61c46bbaa35eb6ae5463065c26e3ad1f75f94bdad98d58c0fa0f
 ```
 
 -	Platforms:
@@ -156,7 +156,7 @@ CMD ["nuxeoctl" "console"]
 ## `nuxeo:FT`
 
 ```console
-$ docker pull nuxeo@sha256:35046c2d4cb0e94aeb88c27d0284ee5b050a128998f38466b0d1db78d842d92a
+$ docker pull nuxeo@sha256:0b732ebcab8f61c46bbaa35eb6ae5463065c26e3ad1f75f94bdad98d58c0fa0f
 ```
 
 -	Platforms:
@@ -294,7 +294,7 @@ CMD ["nuxeoctl" "console"]
 ## `nuxeo:8`
 
 ```console
-$ docker pull nuxeo@sha256:35046c2d4cb0e94aeb88c27d0284ee5b050a128998f38466b0d1db78d842d92a
+$ docker pull nuxeo@sha256:0b732ebcab8f61c46bbaa35eb6ae5463065c26e3ad1f75f94bdad98d58c0fa0f
 ```
 
 -	Platforms:
@@ -432,7 +432,7 @@ CMD ["nuxeoctl" "console"]
 ## `nuxeo:8.3`
 
 ```console
-$ docker pull nuxeo@sha256:35046c2d4cb0e94aeb88c27d0284ee5b050a128998f38466b0d1db78d842d92a
+$ docker pull nuxeo@sha256:0b732ebcab8f61c46bbaa35eb6ae5463065c26e3ad1f75f94bdad98d58c0fa0f
 ```
 
 -	Platforms:
@@ -570,7 +570,7 @@ CMD ["nuxeoctl" "console"]
 ## `nuxeo:8.2`
 
 ```console
-$ docker pull nuxeo@sha256:4b5f6654451b811d8891c59048c674d965152d697515f713aaa847b911cf4101
+$ docker pull nuxeo@sha256:7bd7407fce28510cfe3523bd03fac46aed06306bb8e162fb452c98f82ac0f134
 ```
 
 -	Platforms:
@@ -714,7 +714,7 @@ CMD ["nuxeoctl" "console"]
 ## `nuxeo:LTS-2015`
 
 ```console
-$ docker pull nuxeo@sha256:b2b875344f87f4d4f60f5faac8468872dfc8b647906b8d60746e843f0d3536d7
+$ docker pull nuxeo@sha256:9b91db055977e43ef8c15bbc5656ede429a62ef20ce9d75ab0f523364e9e5ae3
 ```
 
 -	Platforms:
@@ -858,7 +858,7 @@ CMD ["nuxeoctl" "console"]
 ## `nuxeo:LTS`
 
 ```console
-$ docker pull nuxeo@sha256:b2b875344f87f4d4f60f5faac8468872dfc8b647906b8d60746e843f0d3536d7
+$ docker pull nuxeo@sha256:9b91db055977e43ef8c15bbc5656ede429a62ef20ce9d75ab0f523364e9e5ae3
 ```
 
 -	Platforms:
@@ -1002,7 +1002,7 @@ CMD ["nuxeoctl" "console"]
 ## `nuxeo:7`
 
 ```console
-$ docker pull nuxeo@sha256:b2b875344f87f4d4f60f5faac8468872dfc8b647906b8d60746e843f0d3536d7
+$ docker pull nuxeo@sha256:9b91db055977e43ef8c15bbc5656ede429a62ef20ce9d75ab0f523364e9e5ae3
 ```
 
 -	Platforms:
@@ -1146,7 +1146,7 @@ CMD ["nuxeoctl" "console"]
 ## `nuxeo:7.10`
 
 ```console
-$ docker pull nuxeo@sha256:b2b875344f87f4d4f60f5faac8468872dfc8b647906b8d60746e843f0d3536d7
+$ docker pull nuxeo@sha256:9b91db055977e43ef8c15bbc5656ede429a62ef20ce9d75ab0f523364e9e5ae3
 ```
 
 -	Platforms:
@@ -1290,7 +1290,7 @@ CMD ["nuxeoctl" "console"]
 ## `nuxeo:LTS-2014`
 
 ```console
-$ docker pull nuxeo@sha256:b78b744f0e2c6ca08e24d891df39c279e1401cd459bcdae4542f2d3eeedf03ea
+$ docker pull nuxeo@sha256:a75e57ee530a244543563beccd6c402199fcdd6ea3fb9b3b0e662e46de0d2fae
 ```
 
 -	Platforms:
@@ -1434,7 +1434,7 @@ CMD ["nuxeoctl" "console"]
 ## `nuxeo:6`
 
 ```console
-$ docker pull nuxeo@sha256:b78b744f0e2c6ca08e24d891df39c279e1401cd459bcdae4542f2d3eeedf03ea
+$ docker pull nuxeo@sha256:a75e57ee530a244543563beccd6c402199fcdd6ea3fb9b3b0e662e46de0d2fae
 ```
 
 -	Platforms:
@@ -1578,7 +1578,7 @@ CMD ["nuxeoctl" "console"]
 ## `nuxeo:6.0`
 
 ```console
-$ docker pull nuxeo@sha256:b78b744f0e2c6ca08e24d891df39c279e1401cd459bcdae4542f2d3eeedf03ea
+$ docker pull nuxeo@sha256:a75e57ee530a244543563beccd6c402199fcdd6ea3fb9b3b0e662e46de0d2fae
 ```
 
 -	Platforms:

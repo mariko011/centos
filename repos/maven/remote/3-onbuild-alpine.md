@@ -1,7 +1,7 @@
 ## `maven:3-onbuild-alpine`
 
 ```console
-$ docker pull maven@sha256:14bf26785bff19db8a47a1a67fdec376f94f3ef276dc9b85783b1a988aab396e
+$ docker pull maven@sha256:3dc0fb742b802469b4042b56a16c37544622e93238c5935ae6a647f4b26d8fa1
 ```
 
 -	Platforms:

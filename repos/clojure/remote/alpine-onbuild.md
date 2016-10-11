@@ -1,7 +1,7 @@
 ## `clojure:alpine-onbuild`
 
 ```console
-$ docker pull clojure@sha256:31e66a993ea05f83abb969f2a5e189c1080535abe144139c5800a7f5688c3661
+$ docker pull clojure@sha256:b8fcb56fa4a2dbd98bde427c57f94908f25799a938ff56537b666c6102abdba7
 ```
 
 -	Platforms:

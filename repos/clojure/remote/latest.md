@@ -1,7 +1,7 @@
 ## `clojure:latest`
 
 ```console
-$ docker pull clojure@sha256:c5527bd6cc482d7110b68314565db8ef7a96fa8def3221044dc8ba618843bb4a
+$ docker pull clojure@sha256:76bbd6db37631572443cc5f1072fbb61e01843c663aaca8db957c1bd5fda88ab
 ```
 
 -	Platforms:

@@ -1,7 +1,7 @@
 ## `solr:6-alpine`
 
 ```console
-$ docker pull solr@sha256:7bbd71d6ea6d3f3dffb555b146c641cc0731fb61a3668a52fc40beb68d550325
+$ docker pull solr@sha256:d997f6abea054c100c2ca7fc06a4214f1f5c30d7919ca0827a59d53b6979f23a
 ```
 
 -	Platforms:

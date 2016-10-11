@@ -10,7 +10,7 @@
 ## `lightstreamer:6.0.3`
 
 ```console
-$ docker pull lightstreamer@sha256:19b13c9293681a83bee2b557af07cf0e3c426cd038f09098a8128c38091707da
+$ docker pull lightstreamer@sha256:d9dffbe5e5581f6a3e9e7244d625ad8662fc3293049501b641a134cbebf9b1b3
 ```
 
 -	Platforms:
@@ -119,7 +119,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:6.0`
 
 ```console
-$ docker pull lightstreamer@sha256:19b13c9293681a83bee2b557af07cf0e3c426cd038f09098a8128c38091707da
+$ docker pull lightstreamer@sha256:d9dffbe5e5581f6a3e9e7244d625ad8662fc3293049501b641a134cbebf9b1b3
 ```
 
 -	Platforms:
@@ -228,7 +228,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:6`
 
 ```console
-$ docker pull lightstreamer@sha256:19b13c9293681a83bee2b557af07cf0e3c426cd038f09098a8128c38091707da
+$ docker pull lightstreamer@sha256:d9dffbe5e5581f6a3e9e7244d625ad8662fc3293049501b641a134cbebf9b1b3
 ```
 
 -	Platforms:
@@ -337,7 +337,7 @@ CMD ["./LS.sh" "run"]
 ## `lightstreamer:latest`
 
 ```console
-$ docker pull lightstreamer@sha256:19b13c9293681a83bee2b557af07cf0e3c426cd038f09098a8128c38091707da
+$ docker pull lightstreamer@sha256:d9dffbe5e5581f6a3e9e7244d625ad8662fc3293049501b641a134cbebf9b1b3
 ```
 
 -	Platforms:

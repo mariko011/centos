@@ -1,7 +1,7 @@
 ## `kaazing-gateway:latest`
 
 ```console
-$ docker pull kaazing-gateway@sha256:aca7ee29df27852263ef7edce340ff643f1d0602909cca54d0c5399014e48f4b
+$ docker pull kaazing-gateway@sha256:2ff4bb8d3e616e05bd82154a2dec3615fc27bf4f17caae1f7fae5d0196bee44f
 ```
 
 -	Platforms:

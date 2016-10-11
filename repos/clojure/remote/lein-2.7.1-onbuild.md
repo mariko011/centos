@@ -1,7 +1,7 @@
 ## `clojure:lein-2.7.1-onbuild`
 
 ```console
-$ docker pull clojure@sha256:a96222fb8d2d703ac876512f1e12bf64deb4ebb91028f2b13cc53b25270631a2
+$ docker pull clojure@sha256:91f73cc5b4e21c180d20cbd753bda3ea29c13114a9507ddb70aaa8715f1f619d
 ```
 
 -	Platforms:

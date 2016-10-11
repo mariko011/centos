@@ -1,7 +1,7 @@
 ## `nuxeo:LTS`
 
 ```console
-$ docker pull nuxeo@sha256:b2b875344f87f4d4f60f5faac8468872dfc8b647906b8d60746e843f0d3536d7
+$ docker pull nuxeo@sha256:9b91db055977e43ef8c15bbc5656ede429a62ef20ce9d75ab0f523364e9e5ae3
 ```
 
 -	Platforms:

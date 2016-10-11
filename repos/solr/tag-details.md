@@ -36,7 +36,7 @@
 ## `solr:5.3.2`
 
 ```console
-$ docker pull solr@sha256:8723f8c094e4a7dbc76557714b3c9d51caca3b7ea0f7b3e714cee45a3cdac62c
+$ docker pull solr@sha256:cd2f0886161c52f7951be890a76906468b61f0d7efee648fb39b5f94303e9dd9
 ```
 
 -	Platforms:
@@ -182,7 +182,7 @@ CMD ["solr"]
 ## `solr:5.3`
 
 ```console
-$ docker pull solr@sha256:8723f8c094e4a7dbc76557714b3c9d51caca3b7ea0f7b3e714cee45a3cdac62c
+$ docker pull solr@sha256:cd2f0886161c52f7951be890a76906468b61f0d7efee648fb39b5f94303e9dd9
 ```
 
 -	Platforms:
@@ -328,7 +328,7 @@ CMD ["solr"]
 ## `solr:5.3.2-alpine`
 
 ```console
-$ docker pull solr@sha256:4a0c55f5aa5a1ca186abcdf67c09a82121caae89d778638b92e0de22f7795a0b
+$ docker pull solr@sha256:04962d9a223f328bd5e27954832b1f0064d6ff8bb6af54302c05087dad2256ac
 ```
 
 -	Platforms:
@@ -460,7 +460,7 @@ CMD ["solr"]
 ## `solr:5.3-alpine`
 
 ```console
-$ docker pull solr@sha256:4a0c55f5aa5a1ca186abcdf67c09a82121caae89d778638b92e0de22f7795a0b
+$ docker pull solr@sha256:04962d9a223f328bd5e27954832b1f0064d6ff8bb6af54302c05087dad2256ac
 ```
 
 -	Platforms:
@@ -592,7 +592,7 @@ CMD ["solr"]
 ## `solr:5.4.1`
 
 ```console
-$ docker pull solr@sha256:d0753e6f5b48b3fd14521ef0737885dc840655a1da438464d3387145ac0cf4be
+$ docker pull solr@sha256:0de08cb158d8da5c31d4aabdff4f81795f644c7d9e48dfbe7d9427f3e1345338
 ```
 
 -	Platforms:
@@ -738,7 +738,7 @@ CMD ["solr"]
 ## `solr:5.4`
 
 ```console
-$ docker pull solr@sha256:d0753e6f5b48b3fd14521ef0737885dc840655a1da438464d3387145ac0cf4be
+$ docker pull solr@sha256:0de08cb158d8da5c31d4aabdff4f81795f644c7d9e48dfbe7d9427f3e1345338
 ```
 
 -	Platforms:
@@ -884,7 +884,7 @@ CMD ["solr"]
 ## `solr:5.4.1-alpine`
 
 ```console
-$ docker pull solr@sha256:6bfe3404101e87eac1084b465a289e94faa2b8c1a3997306fdddf5eef6bfa63f
+$ docker pull solr@sha256:16663a4da4154194907d7ea76fb50f98349d6234be151b004e2e1cd38a42becc
 ```
 
 -	Platforms:
@@ -1016,7 +1016,7 @@ CMD ["solr"]
 ## `solr:5.4-alpine`
 
 ```console
-$ docker pull solr@sha256:6bfe3404101e87eac1084b465a289e94faa2b8c1a3997306fdddf5eef6bfa63f
+$ docker pull solr@sha256:16663a4da4154194907d7ea76fb50f98349d6234be151b004e2e1cd38a42becc
 ```
 
 -	Platforms:
@@ -1148,7 +1148,7 @@ CMD ["solr"]
 ## `solr:5.5.3`
 
 ```console
-$ docker pull solr@sha256:c033e7729f26d080dacca54456e6b162c7762ac248e9396e2b8b871890fd5737
+$ docker pull solr@sha256:41a3343362fd758a305ebed4db703a212cfe9c5bdd7ee296cf41339668fa9463
 ```
 
 -	Platforms:
@@ -1294,7 +1294,7 @@ CMD ["solr"]
 ## `solr:5.5`
 
 ```console
-$ docker pull solr@sha256:c033e7729f26d080dacca54456e6b162c7762ac248e9396e2b8b871890fd5737
+$ docker pull solr@sha256:41a3343362fd758a305ebed4db703a212cfe9c5bdd7ee296cf41339668fa9463
 ```
 
 -	Platforms:
@@ -1440,7 +1440,7 @@ CMD ["solr"]
 ## `solr:5`
 
 ```console
-$ docker pull solr@sha256:c033e7729f26d080dacca54456e6b162c7762ac248e9396e2b8b871890fd5737
+$ docker pull solr@sha256:41a3343362fd758a305ebed4db703a212cfe9c5bdd7ee296cf41339668fa9463
 ```
 
 -	Platforms:
@@ -1586,7 +1586,7 @@ CMD ["solr"]
 ## `solr:5.5.3-alpine`
 
 ```console
-$ docker pull solr@sha256:7f7d86adad0ec02615a24ec5152389b1dea29294f49209dab832ca46206388c0
+$ docker pull solr@sha256:81264cd5d4f0b50f673035909067f71ac90aa79a338fcee8b825321f2a0c334f
 ```
 
 -	Platforms:
@@ -1718,7 +1718,7 @@ CMD ["solr"]
 ## `solr:5.5-alpine`
 
 ```console
-$ docker pull solr@sha256:7f7d86adad0ec02615a24ec5152389b1dea29294f49209dab832ca46206388c0
+$ docker pull solr@sha256:81264cd5d4f0b50f673035909067f71ac90aa79a338fcee8b825321f2a0c334f
 ```
 
 -	Platforms:
@@ -1850,7 +1850,7 @@ CMD ["solr"]
 ## `solr:5-alpine`
 
 ```console
-$ docker pull solr@sha256:7f7d86adad0ec02615a24ec5152389b1dea29294f49209dab832ca46206388c0
+$ docker pull solr@sha256:81264cd5d4f0b50f673035909067f71ac90aa79a338fcee8b825321f2a0c334f
 ```
 
 -	Platforms:
@@ -1982,7 +1982,7 @@ CMD ["solr"]
 ## `solr:6.0.1`
 
 ```console
-$ docker pull solr@sha256:54916c872421a0bfb18248e30094bbc04946183f491705cf6b6e2dc13a6c4f87
+$ docker pull solr@sha256:415a00f8a32e095b8c8cc0dace81e698eb5c74f5e29d995c4374614fa61eba2c
 ```
 
 -	Platforms:
@@ -2128,7 +2128,7 @@ CMD ["solr"]
 ## `solr:6.0`
 
 ```console
-$ docker pull solr@sha256:54916c872421a0bfb18248e30094bbc04946183f491705cf6b6e2dc13a6c4f87
+$ docker pull solr@sha256:415a00f8a32e095b8c8cc0dace81e698eb5c74f5e29d995c4374614fa61eba2c
 ```
 
 -	Platforms:
@@ -2274,7 +2274,7 @@ CMD ["solr"]
 ## `solr:6.0.1-alpine`
 
 ```console
-$ docker pull solr@sha256:cabf4960065d840927159a69ba83b0c88d2aa2a0fad88ed6447c919e48b9caf4
+$ docker pull solr@sha256:7b0b7d2410760200251fc629e3cba90fb7c1671c4af8317d69ff5a8dd2b6e01d
 ```
 
 -	Platforms:
@@ -2406,7 +2406,7 @@ CMD ["solr"]
 ## `solr:6.0-alpine`
 
 ```console
-$ docker pull solr@sha256:cabf4960065d840927159a69ba83b0c88d2aa2a0fad88ed6447c919e48b9caf4
+$ docker pull solr@sha256:7b0b7d2410760200251fc629e3cba90fb7c1671c4af8317d69ff5a8dd2b6e01d
 ```
 
 -	Platforms:
@@ -2538,7 +2538,7 @@ CMD ["solr"]
 ## `solr:6.1.0`
 
 ```console
-$ docker pull solr@sha256:459182ae161e1d1d3c999861c01f718348673f7e980bc5d1875615a5bb96fa61
+$ docker pull solr@sha256:5dca424951ef6626a2fe9f640946527e2556769d4c7b4042b3c879f57245cfb9
 ```
 
 -	Platforms:
@@ -2684,7 +2684,7 @@ CMD ["solr"]
 ## `solr:6.1`
 
 ```console
-$ docker pull solr@sha256:459182ae161e1d1d3c999861c01f718348673f7e980bc5d1875615a5bb96fa61
+$ docker pull solr@sha256:5dca424951ef6626a2fe9f640946527e2556769d4c7b4042b3c879f57245cfb9
 ```
 
 -	Platforms:
@@ -2830,7 +2830,7 @@ CMD ["solr"]
 ## `solr:6.1.0-alpine`
 
 ```console
-$ docker pull solr@sha256:b71e5dbfbc12a6842baf9c43811e17140724538871569a1073765dfa37b46a68
+$ docker pull solr@sha256:2f9534b221fcdeb89ccf8d6f9ed2cb8ae83715ed0672adcdce3e59c8d3dcfe7b
 ```
 
 -	Platforms:
@@ -2962,7 +2962,7 @@ CMD ["solr"]
 ## `solr:6.1-alpine`
 
 ```console
-$ docker pull solr@sha256:b71e5dbfbc12a6842baf9c43811e17140724538871569a1073765dfa37b46a68
+$ docker pull solr@sha256:2f9534b221fcdeb89ccf8d6f9ed2cb8ae83715ed0672adcdce3e59c8d3dcfe7b
 ```
 
 -	Platforms:
@@ -3094,7 +3094,7 @@ CMD ["solr"]
 ## `solr:6.2.1`
 
 ```console
-$ docker pull solr@sha256:4cd98048bca27ec304ecff731c19878d6e7d80285c059f9752e46b14ede2830a
+$ docker pull solr@sha256:e7f8d9de9a57f641644d0a2c50e950039ec05a753cfa77fc057b271f8fae8dca
 ```
 
 -	Platforms:
@@ -3240,7 +3240,7 @@ CMD ["solr"]
 ## `solr:6.2`
 
 ```console
-$ docker pull solr@sha256:4cd98048bca27ec304ecff731c19878d6e7d80285c059f9752e46b14ede2830a
+$ docker pull solr@sha256:e7f8d9de9a57f641644d0a2c50e950039ec05a753cfa77fc057b271f8fae8dca
 ```
 
 -	Platforms:
@@ -3386,7 +3386,7 @@ CMD ["solr"]
 ## `solr:6`
 
 ```console
-$ docker pull solr@sha256:4cd98048bca27ec304ecff731c19878d6e7d80285c059f9752e46b14ede2830a
+$ docker pull solr@sha256:e7f8d9de9a57f641644d0a2c50e950039ec05a753cfa77fc057b271f8fae8dca
 ```
 
 -	Platforms:
@@ -3678,7 +3678,7 @@ CMD ["solr"]
 ## `solr:6.2.1-alpine`
 
 ```console
-$ docker pull solr@sha256:7bbd71d6ea6d3f3dffb555b146c641cc0731fb61a3668a52fc40beb68d550325
+$ docker pull solr@sha256:d997f6abea054c100c2ca7fc06a4214f1f5c30d7919ca0827a59d53b6979f23a
 ```
 
 -	Platforms:
@@ -3810,7 +3810,7 @@ CMD ["solr"]
 ## `solr:6.2-alpine`
 
 ```console
-$ docker pull solr@sha256:7bbd71d6ea6d3f3dffb555b146c641cc0731fb61a3668a52fc40beb68d550325
+$ docker pull solr@sha256:d997f6abea054c100c2ca7fc06a4214f1f5c30d7919ca0827a59d53b6979f23a
 ```
 
 -	Platforms:
@@ -3942,7 +3942,7 @@ CMD ["solr"]
 ## `solr:6-alpine`
 
 ```console
-$ docker pull solr@sha256:7bbd71d6ea6d3f3dffb555b146c641cc0731fb61a3668a52fc40beb68d550325
+$ docker pull solr@sha256:d997f6abea054c100c2ca7fc06a4214f1f5c30d7919ca0827a59d53b6979f23a
 ```
 
 -	Platforms:
@@ -4074,7 +4074,7 @@ CMD ["solr"]
 ## `solr:alpine`
 
 ```console
-$ docker pull solr@sha256:7bbd71d6ea6d3f3dffb555b146c641cc0731fb61a3668a52fc40beb68d550325
+$ docker pull solr@sha256:d997f6abea054c100c2ca7fc06a4214f1f5c30d7919ca0827a59d53b6979f23a
 ```
 
 -	Platforms:
