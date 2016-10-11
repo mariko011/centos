@@ -1,7 +1,7 @@
 ## `pypy:2-slim`
 
 ```console
-$ docker pull pypy@sha256:1baa7a0729aa5db98e53954c60fb603abb8efc8739baf3ca65669810e8b7a56f
+$ docker pull pypy@sha256:f502d48622fdc05b2907e3189747c01396906cd71e3107b3587975ea0eeaf786
 ```
 
 -	Platforms:
