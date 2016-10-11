@@ -1,7 +1,7 @@
 ## `jruby:9-onbuild`
 
 ```console
-$ docker pull jruby@sha256:1c5acc3bdd2b33f94203bb2cbe0bcf26df3ffd355e05e8dd142bcabda9793064
+$ docker pull jruby@sha256:4f24bfe7d338defe1bd7c33a98d97e56ffe8d7050ee3cc82c130a9a27be2ec0b
 ```
 
 -	Platforms:

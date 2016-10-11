@@ -1,7 +1,7 @@
 ## `solr:latest`
 
 ```console
-$ docker pull solr@sha256:4cd98048bca27ec304ecff731c19878d6e7d80285c059f9752e46b14ede2830a
+$ docker pull solr@sha256:e7f8d9de9a57f641644d0a2c50e950039ec05a753cfa77fc057b271f8fae8dca
 ```
 
 -	Platforms:

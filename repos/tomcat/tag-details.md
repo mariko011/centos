@@ -2115,7 +2115,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:7.0.72-alpine`
 
 ```console
-$ docker pull tomcat@sha256:482800308fb7ebff44bbb7ffb0fbdc006854dfb9b60bb551beab5f45b274189a
+$ docker pull tomcat@sha256:896f831d88d45cc8f26e22d09db9db09ac49499608880be2497570d172bc5f29
 ```
 
 -	Platforms:
@@ -2218,7 +2218,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:7.0-alpine`
 
 ```console
-$ docker pull tomcat@sha256:482800308fb7ebff44bbb7ffb0fbdc006854dfb9b60bb551beab5f45b274189a
+$ docker pull tomcat@sha256:896f831d88d45cc8f26e22d09db9db09ac49499608880be2497570d172bc5f29
 ```
 
 -	Platforms:
@@ -2321,7 +2321,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:7-alpine`
 
 ```console
-$ docker pull tomcat@sha256:482800308fb7ebff44bbb7ffb0fbdc006854dfb9b60bb551beab5f45b274189a
+$ docker pull tomcat@sha256:896f831d88d45cc8f26e22d09db9db09ac49499608880be2497570d172bc5f29
 ```
 
 -	Platforms:
@@ -2424,7 +2424,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:7.0.72-jre8`
 
 ```console
-$ docker pull tomcat@sha256:982854665725fbafd6258e2dd6698f11a41cd7800aa16fd62e4d209d7f1187d6
+$ docker pull tomcat@sha256:30a12ba28d9a2f66e2ca0c79b90c13435e7f45b5f5aee3cb14a6f58dea9d7b33
 ```
 
 -	Platforms:
@@ -2561,7 +2561,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:7.0-jre8`
 
 ```console
-$ docker pull tomcat@sha256:982854665725fbafd6258e2dd6698f11a41cd7800aa16fd62e4d209d7f1187d6
+$ docker pull tomcat@sha256:30a12ba28d9a2f66e2ca0c79b90c13435e7f45b5f5aee3cb14a6f58dea9d7b33
 ```
 
 -	Platforms:
@@ -2698,7 +2698,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:7-jre8`
 
 ```console
-$ docker pull tomcat@sha256:982854665725fbafd6258e2dd6698f11a41cd7800aa16fd62e4d209d7f1187d6
+$ docker pull tomcat@sha256:30a12ba28d9a2f66e2ca0c79b90c13435e7f45b5f5aee3cb14a6f58dea9d7b33
 ```
 
 -	Platforms:
@@ -2835,7 +2835,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:7.0.72-jre8-alpine`
 
 ```console
-$ docker pull tomcat@sha256:2a5df70f12a738ca8b135f414a281dad3f06b246a8e2dcb204c40f1414f20345
+$ docker pull tomcat@sha256:76835e65adc264c004f6713a0dc657847beb9d15ac9ede93b93a91e11756703e
 ```
 
 -	Platforms:
@@ -2938,7 +2938,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:7.0-jre8-alpine`
 
 ```console
-$ docker pull tomcat@sha256:2a5df70f12a738ca8b135f414a281dad3f06b246a8e2dcb204c40f1414f20345
+$ docker pull tomcat@sha256:76835e65adc264c004f6713a0dc657847beb9d15ac9ede93b93a91e11756703e
 ```
 
 -	Platforms:
@@ -3041,7 +3041,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:7-jre8-alpine`
 
 ```console
-$ docker pull tomcat@sha256:2a5df70f12a738ca8b135f414a281dad3f06b246a8e2dcb204c40f1414f20345
+$ docker pull tomcat@sha256:76835e65adc264c004f6713a0dc657847beb9d15ac9ede93b93a91e11756703e
 ```
 
 -	Platforms:
@@ -3144,7 +3144,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.0.37-jre7`
 
 ```console
-$ docker pull tomcat@sha256:87025ccebdd5534826b4d315ceda1a97ba75e35431075eeaacaf616998a46ed0
+$ docker pull tomcat@sha256:4c878796e09584128e4eb3a17c9d6cb66c33e3678db377aa1921110116e2b4da
 ```
 
 -	Platforms:
@@ -3267,7 +3267,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.0-jre7`
 
 ```console
-$ docker pull tomcat@sha256:87025ccebdd5534826b4d315ceda1a97ba75e35431075eeaacaf616998a46ed0
+$ docker pull tomcat@sha256:4c878796e09584128e4eb3a17c9d6cb66c33e3678db377aa1921110116e2b4da
 ```
 
 -	Platforms:
@@ -3390,7 +3390,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8-jre7`
 
 ```console
-$ docker pull tomcat@sha256:87025ccebdd5534826b4d315ceda1a97ba75e35431075eeaacaf616998a46ed0
+$ docker pull tomcat@sha256:4c878796e09584128e4eb3a17c9d6cb66c33e3678db377aa1921110116e2b4da
 ```
 
 -	Platforms:
@@ -3513,7 +3513,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:jre7`
 
 ```console
-$ docker pull tomcat@sha256:87025ccebdd5534826b4d315ceda1a97ba75e35431075eeaacaf616998a46ed0
+$ docker pull tomcat@sha256:4c878796e09584128e4eb3a17c9d6cb66c33e3678db377aa1921110116e2b4da
 ```
 
 -	Platforms:
@@ -3636,7 +3636,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.0.37`
 
 ```console
-$ docker pull tomcat@sha256:87025ccebdd5534826b4d315ceda1a97ba75e35431075eeaacaf616998a46ed0
+$ docker pull tomcat@sha256:4c878796e09584128e4eb3a17c9d6cb66c33e3678db377aa1921110116e2b4da
 ```
 
 -	Platforms:
@@ -3759,7 +3759,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.0`
 
 ```console
-$ docker pull tomcat@sha256:87025ccebdd5534826b4d315ceda1a97ba75e35431075eeaacaf616998a46ed0
+$ docker pull tomcat@sha256:4c878796e09584128e4eb3a17c9d6cb66c33e3678db377aa1921110116e2b4da
 ```
 
 -	Platforms:
@@ -3882,7 +3882,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8`
 
 ```console
-$ docker pull tomcat@sha256:87025ccebdd5534826b4d315ceda1a97ba75e35431075eeaacaf616998a46ed0
+$ docker pull tomcat@sha256:4c878796e09584128e4eb3a17c9d6cb66c33e3678db377aa1921110116e2b4da
 ```
 
 -	Platforms:
@@ -4005,7 +4005,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:latest`
 
 ```console
-$ docker pull tomcat@sha256:87025ccebdd5534826b4d315ceda1a97ba75e35431075eeaacaf616998a46ed0
+$ docker pull tomcat@sha256:4c878796e09584128e4eb3a17c9d6cb66c33e3678db377aa1921110116e2b4da
 ```
 
 -	Platforms:
@@ -4128,7 +4128,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.0.37-jre7-alpine`
 
 ```console
-$ docker pull tomcat@sha256:1861ebfe1ce67c56619ebe9993d149f2d3cbfeb64609cc31233c761d4d9b1e15
+$ docker pull tomcat@sha256:7862dabb84f6ce35bfc88b1c23cf4898c8c66f162566cacd1dad12c43c692b14
 ```
 
 -	Platforms:
@@ -4231,7 +4231,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.0-jre7-alpine`
 
 ```console
-$ docker pull tomcat@sha256:1861ebfe1ce67c56619ebe9993d149f2d3cbfeb64609cc31233c761d4d9b1e15
+$ docker pull tomcat@sha256:7862dabb84f6ce35bfc88b1c23cf4898c8c66f162566cacd1dad12c43c692b14
 ```
 
 -	Platforms:
@@ -4334,7 +4334,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8-jre7-alpine`
 
 ```console
-$ docker pull tomcat@sha256:1861ebfe1ce67c56619ebe9993d149f2d3cbfeb64609cc31233c761d4d9b1e15
+$ docker pull tomcat@sha256:7862dabb84f6ce35bfc88b1c23cf4898c8c66f162566cacd1dad12c43c692b14
 ```
 
 -	Platforms:
@@ -4437,7 +4437,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:jre7-alpine`
 
 ```console
-$ docker pull tomcat@sha256:1861ebfe1ce67c56619ebe9993d149f2d3cbfeb64609cc31233c761d4d9b1e15
+$ docker pull tomcat@sha256:7862dabb84f6ce35bfc88b1c23cf4898c8c66f162566cacd1dad12c43c692b14
 ```
 
 -	Platforms:
@@ -4540,7 +4540,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.0.37-alpine`
 
 ```console
-$ docker pull tomcat@sha256:1861ebfe1ce67c56619ebe9993d149f2d3cbfeb64609cc31233c761d4d9b1e15
+$ docker pull tomcat@sha256:7862dabb84f6ce35bfc88b1c23cf4898c8c66f162566cacd1dad12c43c692b14
 ```
 
 -	Platforms:
@@ -4643,7 +4643,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.0-alpine`
 
 ```console
-$ docker pull tomcat@sha256:1861ebfe1ce67c56619ebe9993d149f2d3cbfeb64609cc31233c761d4d9b1e15
+$ docker pull tomcat@sha256:7862dabb84f6ce35bfc88b1c23cf4898c8c66f162566cacd1dad12c43c692b14
 ```
 
 -	Platforms:
@@ -4746,7 +4746,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8-alpine`
 
 ```console
-$ docker pull tomcat@sha256:1861ebfe1ce67c56619ebe9993d149f2d3cbfeb64609cc31233c761d4d9b1e15
+$ docker pull tomcat@sha256:7862dabb84f6ce35bfc88b1c23cf4898c8c66f162566cacd1dad12c43c692b14
 ```
 
 -	Platforms:
@@ -4849,7 +4849,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:alpine`
 
 ```console
-$ docker pull tomcat@sha256:1861ebfe1ce67c56619ebe9993d149f2d3cbfeb64609cc31233c761d4d9b1e15
+$ docker pull tomcat@sha256:7862dabb84f6ce35bfc88b1c23cf4898c8c66f162566cacd1dad12c43c692b14
 ```
 
 -	Platforms:
@@ -4952,7 +4952,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.0.37-jre8`
 
 ```console
-$ docker pull tomcat@sha256:1075f15b5ceeec76e6a3ef8a2c9665faf7f18ae355d885d305d7945fc46704aa
+$ docker pull tomcat@sha256:022e47e2325c9c1ca7aef2f444e039a3a8ce402cd4709332a26edfaa89778bf0
 ```
 
 -	Platforms:
@@ -5089,7 +5089,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.0-jre8`
 
 ```console
-$ docker pull tomcat@sha256:1075f15b5ceeec76e6a3ef8a2c9665faf7f18ae355d885d305d7945fc46704aa
+$ docker pull tomcat@sha256:022e47e2325c9c1ca7aef2f444e039a3a8ce402cd4709332a26edfaa89778bf0
 ```
 
 -	Platforms:
@@ -5226,7 +5226,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8-jre8`
 
 ```console
-$ docker pull tomcat@sha256:1075f15b5ceeec76e6a3ef8a2c9665faf7f18ae355d885d305d7945fc46704aa
+$ docker pull tomcat@sha256:022e47e2325c9c1ca7aef2f444e039a3a8ce402cd4709332a26edfaa89778bf0
 ```
 
 -	Platforms:
@@ -5363,7 +5363,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:jre8`
 
 ```console
-$ docker pull tomcat@sha256:1075f15b5ceeec76e6a3ef8a2c9665faf7f18ae355d885d305d7945fc46704aa
+$ docker pull tomcat@sha256:022e47e2325c9c1ca7aef2f444e039a3a8ce402cd4709332a26edfaa89778bf0
 ```
 
 -	Platforms:
@@ -5500,7 +5500,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.0.37-jre8-alpine`
 
 ```console
-$ docker pull tomcat@sha256:619d97f0546db2dbf62a198e0ed5cec678c1b5ebbc9b39848ccc0997fa1a382e
+$ docker pull tomcat@sha256:10306cd5984c78cfde1af58c50b546fb675560d48081903743af390af8fda0c6
 ```
 
 -	Platforms:
@@ -5603,7 +5603,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.0-jre8-alpine`
 
 ```console
-$ docker pull tomcat@sha256:619d97f0546db2dbf62a198e0ed5cec678c1b5ebbc9b39848ccc0997fa1a382e
+$ docker pull tomcat@sha256:10306cd5984c78cfde1af58c50b546fb675560d48081903743af390af8fda0c6
 ```
 
 -	Platforms:
@@ -5706,7 +5706,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8-jre8-alpine`
 
 ```console
-$ docker pull tomcat@sha256:619d97f0546db2dbf62a198e0ed5cec678c1b5ebbc9b39848ccc0997fa1a382e
+$ docker pull tomcat@sha256:10306cd5984c78cfde1af58c50b546fb675560d48081903743af390af8fda0c6
 ```
 
 -	Platforms:
@@ -5809,7 +5809,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:jre8-alpine`
 
 ```console
-$ docker pull tomcat@sha256:619d97f0546db2dbf62a198e0ed5cec678c1b5ebbc9b39848ccc0997fa1a382e
+$ docker pull tomcat@sha256:10306cd5984c78cfde1af58c50b546fb675560d48081903743af390af8fda0c6
 ```
 
 -	Platforms:
@@ -5912,7 +5912,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.5.5-jre8`
 
 ```console
-$ docker pull tomcat@sha256:ebe4c67f56b2437edfff54d34c8978138a590aac8bec399c478b6a12bfd4c44c
+$ docker pull tomcat@sha256:f40792e844bd2dffd50e1e733d98603b941b7704fa78a8dfa59070105718f427
 ```
 
 -	Platforms:
@@ -6049,7 +6049,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.5-jre8`
 
 ```console
-$ docker pull tomcat@sha256:ebe4c67f56b2437edfff54d34c8978138a590aac8bec399c478b6a12bfd4c44c
+$ docker pull tomcat@sha256:f40792e844bd2dffd50e1e733d98603b941b7704fa78a8dfa59070105718f427
 ```
 
 -	Platforms:
@@ -6186,7 +6186,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.5.5`
 
 ```console
-$ docker pull tomcat@sha256:ebe4c67f56b2437edfff54d34c8978138a590aac8bec399c478b6a12bfd4c44c
+$ docker pull tomcat@sha256:f40792e844bd2dffd50e1e733d98603b941b7704fa78a8dfa59070105718f427
 ```
 
 -	Platforms:
@@ -6323,7 +6323,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.5`
 
 ```console
-$ docker pull tomcat@sha256:ebe4c67f56b2437edfff54d34c8978138a590aac8bec399c478b6a12bfd4c44c
+$ docker pull tomcat@sha256:f40792e844bd2dffd50e1e733d98603b941b7704fa78a8dfa59070105718f427
 ```
 
 -	Platforms:
@@ -6460,7 +6460,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.5.5-jre8-alpine`
 
 ```console
-$ docker pull tomcat@sha256:ec53d75072873c449021c89eb37266d3497e32fee4d44780f4e384e1085a1398
+$ docker pull tomcat@sha256:1011a87605cab717643199f9772a7b0568056bc6ac2870f9da29cc33d3e2a5b0
 ```
 
 -	Platforms:
@@ -6563,7 +6563,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.5-jre8-alpine`
 
 ```console
-$ docker pull tomcat@sha256:ec53d75072873c449021c89eb37266d3497e32fee4d44780f4e384e1085a1398
+$ docker pull tomcat@sha256:1011a87605cab717643199f9772a7b0568056bc6ac2870f9da29cc33d3e2a5b0
 ```
 
 -	Platforms:
@@ -6666,7 +6666,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.5.5-alpine`
 
 ```console
-$ docker pull tomcat@sha256:ec53d75072873c449021c89eb37266d3497e32fee4d44780f4e384e1085a1398
+$ docker pull tomcat@sha256:1011a87605cab717643199f9772a7b0568056bc6ac2870f9da29cc33d3e2a5b0
 ```
 
 -	Platforms:
@@ -6769,7 +6769,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:8.5-alpine`
 
 ```console
-$ docker pull tomcat@sha256:ec53d75072873c449021c89eb37266d3497e32fee4d44780f4e384e1085a1398
+$ docker pull tomcat@sha256:1011a87605cab717643199f9772a7b0568056bc6ac2870f9da29cc33d3e2a5b0
 ```
 
 -	Platforms:
@@ -6872,7 +6872,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:9.0.0.M10-jre8`
 
 ```console
-$ docker pull tomcat@sha256:27f4581cf27b79c03bf8b8877925359f194367c2b63be47f16edfbd19be813c4
+$ docker pull tomcat@sha256:bb889c68d3db49c7c59f0792c5bfeed8128b4f416684e60a9eeabf59a82214fe
 ```
 
 -	Platforms:
@@ -7009,7 +7009,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:9.0.0-jre8`
 
 ```console
-$ docker pull tomcat@sha256:27f4581cf27b79c03bf8b8877925359f194367c2b63be47f16edfbd19be813c4
+$ docker pull tomcat@sha256:bb889c68d3db49c7c59f0792c5bfeed8128b4f416684e60a9eeabf59a82214fe
 ```
 
 -	Platforms:
@@ -7146,7 +7146,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:9.0-jre8`
 
 ```console
-$ docker pull tomcat@sha256:27f4581cf27b79c03bf8b8877925359f194367c2b63be47f16edfbd19be813c4
+$ docker pull tomcat@sha256:bb889c68d3db49c7c59f0792c5bfeed8128b4f416684e60a9eeabf59a82214fe
 ```
 
 -	Platforms:
@@ -7283,7 +7283,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:9-jre8`
 
 ```console
-$ docker pull tomcat@sha256:27f4581cf27b79c03bf8b8877925359f194367c2b63be47f16edfbd19be813c4
+$ docker pull tomcat@sha256:bb889c68d3db49c7c59f0792c5bfeed8128b4f416684e60a9eeabf59a82214fe
 ```
 
 -	Platforms:
@@ -7420,7 +7420,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:9.0.0.M10`
 
 ```console
-$ docker pull tomcat@sha256:27f4581cf27b79c03bf8b8877925359f194367c2b63be47f16edfbd19be813c4
+$ docker pull tomcat@sha256:bb889c68d3db49c7c59f0792c5bfeed8128b4f416684e60a9eeabf59a82214fe
 ```
 
 -	Platforms:
@@ -7557,7 +7557,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:9.0.0`
 
 ```console
-$ docker pull tomcat@sha256:27f4581cf27b79c03bf8b8877925359f194367c2b63be47f16edfbd19be813c4
+$ docker pull tomcat@sha256:bb889c68d3db49c7c59f0792c5bfeed8128b4f416684e60a9eeabf59a82214fe
 ```
 
 -	Platforms:
@@ -7694,7 +7694,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:9.0`
 
 ```console
-$ docker pull tomcat@sha256:27f4581cf27b79c03bf8b8877925359f194367c2b63be47f16edfbd19be813c4
+$ docker pull tomcat@sha256:bb889c68d3db49c7c59f0792c5bfeed8128b4f416684e60a9eeabf59a82214fe
 ```
 
 -	Platforms:
@@ -7831,7 +7831,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:9`
 
 ```console
-$ docker pull tomcat@sha256:27f4581cf27b79c03bf8b8877925359f194367c2b63be47f16edfbd19be813c4
+$ docker pull tomcat@sha256:bb889c68d3db49c7c59f0792c5bfeed8128b4f416684e60a9eeabf59a82214fe
 ```
 
 -	Platforms:
@@ -7968,7 +7968,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:9.0.0.M10-jre8-alpine`
 
 ```console
-$ docker pull tomcat@sha256:096620e1e62f3bfe302fcc134104b3ee66f21e594f5b14bea6e448986bf20019
+$ docker pull tomcat@sha256:0aaf31fd52a1bdbc5dd786e5e5e9525aa55c7481b03d061f344dbbb25a3c6ec8
 ```
 
 -	Platforms:
@@ -8071,7 +8071,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:9.0.0-jre8-alpine`
 
 ```console
-$ docker pull tomcat@sha256:096620e1e62f3bfe302fcc134104b3ee66f21e594f5b14bea6e448986bf20019
+$ docker pull tomcat@sha256:0aaf31fd52a1bdbc5dd786e5e5e9525aa55c7481b03d061f344dbbb25a3c6ec8
 ```
 
 -	Platforms:
@@ -8174,7 +8174,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:9.0-jre8-alpine`
 
 ```console
-$ docker pull tomcat@sha256:096620e1e62f3bfe302fcc134104b3ee66f21e594f5b14bea6e448986bf20019
+$ docker pull tomcat@sha256:0aaf31fd52a1bdbc5dd786e5e5e9525aa55c7481b03d061f344dbbb25a3c6ec8
 ```
 
 -	Platforms:
@@ -8277,7 +8277,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:9-jre8-alpine`
 
 ```console
-$ docker pull tomcat@sha256:096620e1e62f3bfe302fcc134104b3ee66f21e594f5b14bea6e448986bf20019
+$ docker pull tomcat@sha256:0aaf31fd52a1bdbc5dd786e5e5e9525aa55c7481b03d061f344dbbb25a3c6ec8
 ```
 
 -	Platforms:
@@ -8380,7 +8380,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:9.0.0.M10-alpine`
 
 ```console
-$ docker pull tomcat@sha256:096620e1e62f3bfe302fcc134104b3ee66f21e594f5b14bea6e448986bf20019
+$ docker pull tomcat@sha256:0aaf31fd52a1bdbc5dd786e5e5e9525aa55c7481b03d061f344dbbb25a3c6ec8
 ```
 
 -	Platforms:
@@ -8483,7 +8483,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:9.0.0-alpine`
 
 ```console
-$ docker pull tomcat@sha256:096620e1e62f3bfe302fcc134104b3ee66f21e594f5b14bea6e448986bf20019
+$ docker pull tomcat@sha256:0aaf31fd52a1bdbc5dd786e5e5e9525aa55c7481b03d061f344dbbb25a3c6ec8
 ```
 
 -	Platforms:
@@ -8586,7 +8586,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:9.0-alpine`
 
 ```console
-$ docker pull tomcat@sha256:096620e1e62f3bfe302fcc134104b3ee66f21e594f5b14bea6e448986bf20019
+$ docker pull tomcat@sha256:0aaf31fd52a1bdbc5dd786e5e5e9525aa55c7481b03d061f344dbbb25a3c6ec8
 ```
 
 -	Platforms:
@@ -8689,7 +8689,7 @@ CMD ["catalina.sh" "run"]
 ## `tomcat:9-alpine`
 
 ```console
-$ docker pull tomcat@sha256:096620e1e62f3bfe302fcc134104b3ee66f21e594f5b14bea6e448986bf20019
+$ docker pull tomcat@sha256:0aaf31fd52a1bdbc5dd786e5e5e9525aa55c7481b03d061f344dbbb25a3c6ec8
 ```
 
 -	Platforms:

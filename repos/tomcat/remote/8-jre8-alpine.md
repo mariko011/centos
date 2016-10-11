@@ -1,7 +1,7 @@
 ## `tomcat:8-jre8-alpine`
 
 ```console
-$ docker pull tomcat@sha256:619d97f0546db2dbf62a198e0ed5cec678c1b5ebbc9b39848ccc0997fa1a382e
+$ docker pull tomcat@sha256:10306cd5984c78cfde1af58c50b546fb675560d48081903743af390af8fda0c6
 ```
 
 -	Platforms:

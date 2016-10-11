@@ -1,7 +1,7 @@
 ## `tomcat:jre8`
 
 ```console
-$ docker pull tomcat@sha256:1075f15b5ceeec76e6a3ef8a2c9665faf7f18ae355d885d305d7945fc46704aa
+$ docker pull tomcat@sha256:022e47e2325c9c1ca7aef2f444e039a3a8ce402cd4709332a26edfaa89778bf0
 ```
 
 -	Platforms:
