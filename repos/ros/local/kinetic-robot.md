@@ -1926,13 +1926,8 @@ Licenses: (parsed from: `/usr/share/doc/init/copyright`, `/usr/share/doc/init-sy
 - `GPL`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.29ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.29ubuntu2.dsc' init-system-helpers_1.29ubuntu2.dsc 1982 SHA256:7b7675ad61cc24cd7eebd675e65654a25be9274b9f289e98257ea985e1896ed1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.29ubuntu2.tar.xz' init-system-helpers_1.29ubuntu2.tar.xz 57832 SHA256:d8985b75e0b66b0361586daedf2d730dd301e3f41f86095baee5cc81a295a997
-```
 
 ### `dpkg` source package: `insserv=1.14.0-5ubuntu3`
 
@@ -3558,14 +3553,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-38.57
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-38.57.dsc' linux_4.4.0-38.57.dsc 9613 SHA256:64d9b3dfc7e5ccdcf1dd998c47da376298ef59995c0b9f168e4af20de8306ba6
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-38.57.diff.gz' linux_4.4.0-38.57.diff.gz 11741582 SHA256:7b9c8db1d70b066512523ed523e54cf311e4f99f80cbb8e4ca86f6cbd8b685d0
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
 
