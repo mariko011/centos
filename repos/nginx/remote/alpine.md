@@ -1,7 +1,7 @@
 ## `nginx:alpine`
 
 ```console
-$ docker pull nginx@sha256:d4803fa2f3a05c4867c23a88c114f55026126eec494b11bc546689cf595836ca
+$ docker pull nginx@sha256:36b95728c0d9b6668bb8e4aa31476de27aeedbeba07dcddb6821b76fb72830b2
 ```
 
 -	Platforms:
