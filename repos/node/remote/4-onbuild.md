@@ -1,7 +1,7 @@
 ## `node:4-onbuild`
 
 ```console
-$ docker pull node@sha256:c017b540e25e2b6c6f79bd2f8cadd29bb3b131dbe0a4ad6cf5d59ca34ed00b82
+$ docker pull node@sha256:b2b1495afc41fe8277623b6f141f5b1763cc450df6028ce7f0d735f8075b922f
 ```
 
 -	Platforms:

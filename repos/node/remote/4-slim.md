@@ -1,7 +1,7 @@
 ## `node:4-slim`
 
 ```console
-$ docker pull node@sha256:49613de809fd3de5b1967cef756676f89a459ce489c336471a43374fc96a5032
+$ docker pull node@sha256:35ba733782db82b41da5709e3801d8038e0dd2e0a6c9fb58dce1d8efcb152cbf
 ```
 
 -	Platforms:

@@ -1,7 +1,7 @@
 ## `node:0-wheezy`
 
 ```console
-$ docker pull node@sha256:6f52f2daf097dd184ce874e227ef4f5a49bf20c97adbe97ae1cb1f796eee796e
+$ docker pull node@sha256:869518bbced016a501f20b74df77221945d19ef9488a3a22f0cb2d47f8e00e3e
 ```
 
 -	Platforms:

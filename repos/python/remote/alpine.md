@@ -1,7 +1,7 @@
 ## `python:alpine`
 
 ```console
-$ docker pull python@sha256:51164da08a22663b0165c4849cfb98fddc7e07eb695b2e10c5e0510ed380979f
+$ docker pull python@sha256:49601073d25d95ef6813e935560a356586f5eb251855511b25c6e91092cfd335
 ```
 
 -	Platforms:
