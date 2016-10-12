@@ -885,19 +885,8 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-foreign/copyright`)
 - `GPL`
 - `GPL `
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris foreign=0.8.66-2
-'http://httpredir.debian.org/debian/pool/main/f/foreign/foreign_0.8.66-2.dsc' foreign_0.8.66-2.dsc 1658 SHA256:811eb7d898befb92603ec0d0efa2b334b658c6a69e64511c7a68b5c23a9da38a
-'http://httpredir.debian.org/debian/pool/main/f/foreign/foreign_0.8.66.orig.tar.gz' foreign_0.8.66.orig.tar.gz 333209 SHA256:d7401e5fcab9ce6e697d3520dbb8475e229c30341c0004c4fa489c82aa4447a4
-'http://httpredir.debian.org/debian/pool/main/f/foreign/foreign_0.8.66-2.diff.gz' foreign_0.8.66-2.diff.gz 3839 SHA256:9cdb98816f05845b25c42dc0f536f3c698276317b6c271cc72c3d12806fbbe64
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/foreign/0.8.66-2/
-- https://sources.debian.net/src/foreign/0.8.66-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `freetype=2.6.3-3`
 
@@ -944,19 +933,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-5=5.4.1-1
-'http://httpredir.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1-1.dsc' gcc-5_5.4.1-1.dsc 17530 SHA256:7dd08ffd2fdabfe0ab6fd73477ef6cc6c13541fffabe107e052c7934fa9fc5d0
-'http://httpredir.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1.orig.tar.gz' gcc-5_5.4.1.orig.tar.gz 76812822 SHA256:2a84447f34cd062066d38300ac8a1fb528eb301a504b48e1d017e547e5abfcdb
-'http://httpredir.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1-1.diff.gz' gcc-5_5.4.1-1.diff.gz 3180769 SHA256:f22c6b02a058c3a8c21aef454922e1d93b9219ba8daec1f970879b7885c3bef3
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-5/5.4.1-1/
-- https://sources.debian.net/src/gcc-5/5.4.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-6=6.2.0-4`
 
@@ -1835,19 +1813,8 @@ Licenses: (parsed from: `/usr/share/doc/libmnl0/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libmnl=1.0.4-1
-'http://httpredir.debian.org/debian/pool/main/libm/libmnl/libmnl_1.0.4-1.dsc' libmnl_1.0.4-1.dsc 2012 SHA256:b0ebf2c9c02f8223b21f8a9f2ce12d68f22aebf178dda1f015e76839194f663f
-'http://httpredir.debian.org/debian/pool/main/libm/libmnl/libmnl_1.0.4.orig.tar.bz2' libmnl_1.0.4.orig.tar.bz2 301270 SHA256:171f89699f286a5854b72b91d06e8f8e3683064c5901fb09d954a9ab6f551f81
-'http://httpredir.debian.org/debian/pool/main/libm/libmnl/libmnl_1.0.4-1.debian.tar.xz' libmnl_1.0.4-1.debian.tar.xz 7332 SHA256:7ac2ad19eb7fb1a81f389781072b1ea1207593a2c50522562d84dc9204a3bf8b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libmnl/1.0.4-1/
-- https://sources.debian.net/src/libmnl/1.0.4-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpaper=1.1.24+nmu4`
 
@@ -2441,19 +2408,8 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-mgcv/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mgcv=1.8-14-1
-'http://httpredir.debian.org/debian/pool/main/m/mgcv/mgcv_1.8-14-1.dsc' mgcv_1.8-14-1.dsc 1659 SHA256:f2c007b3edd05441c116eae60faaef23145053c9369140641735546c3f732ff7
-'http://httpredir.debian.org/debian/pool/main/m/mgcv/mgcv_1.8-14.orig.tar.gz' mgcv_1.8-14.orig.tar.gz 837586 SHA256:2e094b5bc9a6ec366795584564c08027152691d412a3a53356a74d8387e8c953
-'http://httpredir.debian.org/debian/pool/main/m/mgcv/mgcv_1.8-14-1.diff.gz' mgcv_1.8-14-1.diff.gz 4690 SHA256:bb831cf4f3d8af08dbb93d9588a0bff253ef52fc3c8c2c79519586cfbce1a5a4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mgcv/1.8-14-1/
-- https://sources.debian.net/src/mgcv/1.8-14-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mpclib3=1.0.3-1`
 
@@ -3031,19 +2987,8 @@ Licenses: (parsed from: `/usr/share/doc/libreadline-dev/copyright`, `/usr/share/
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris readline6=6.3-8
-'http://httpredir.debian.org/debian/pool/main/r/readline6/readline6_6.3-8.dsc' readline6_6.3-8.dsc 1941 SHA256:f7ab77b8580cbdb10b3906f40c3da12d0acc93bef786ff217c65aabc32973cec
-'http://httpredir.debian.org/debian/pool/main/r/readline6/readline6_6.3.orig.tar.gz' readline6_6.3.orig.tar.gz 2468560 SHA256:56ba6071b9462f980c5a72ab0023893b65ba6debb4eeb475d7a563dc65cafd43
-'http://httpredir.debian.org/debian/pool/main/r/readline6/readline6_6.3-8.debian.tar.xz' readline6_6.3-8.debian.tar.xz 30576 SHA256:c2b55fdd221136f46fa1e0cbf0bf2e37b70ddf97929312fbab6032e9129d58b5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/readline6/6.3-8/
-- https://sources.debian.net/src/readline6/6.3-8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `rmatrix=1.2-7.1-1`
 
