@@ -220,18 +220,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.217
-'http://httpredir.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.217.dsc' cdebconf_0.217.dsc 2662 SHA256:177b119f110e3647759aed5d132fc4cfb330b571892867f5f2a99c47d25ebdf1
-'http://httpredir.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.217.tar.xz' cdebconf_0.217.tar.xz 272464 SHA256:000f5584477f0afe82fd1f76902ff447d9d80f08b1813f2bcbfc0c3be1b6c247
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cdebconf/0.217/
-- https://sources.debian.net/src/cdebconf/0.217/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `coreutils=8.25-2`
 
@@ -597,19 +587,8 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.1.15-3
-'http://httpredir.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.15-3.dsc' gnupg2_2.1.15-3.dsc 3191 SHA256:873693e194498b03e3a6c984920b6c88779e9a121782bc3c0b51f99fde6812f0
-'http://httpredir.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.15.orig.tar.bz2' gnupg2_2.1.15.orig.tar.bz2 5723689 SHA256:c28c1a208f1b8ad63bdb6b88d252f6734ff4d33de6b54e38494b11d49e00ffdd
-'http://httpredir.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.15-3.debian.tar.bz2' gnupg2_2.1.15-3.debian.tar.bz2 53648 SHA256:7870c91a2431a7db3bf64a865c8563630b4b5b0da52f42d694d930f554e704f1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnupg2/2.1.15-3/
-- https://sources.debian.net/src/gnupg2/2.1.15-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.25-6`
 
