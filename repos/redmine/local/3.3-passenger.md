@@ -1,9 +1,9 @@
-# `redmine:3.3.0-passenger`
+# `redmine:3.3.1-passenger`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fe33da0697b201ffc9c99e15b7356642abd16dff6727cb5be53bcad7b37e3944`
-- Created: `2016-09-28T21:37:27.157777134Z`
+- Image ID: `sha256:0e585736ae43ed358c84089f87ced19a4f1661c73a6408e51b67529778c0e059`
+- Created: `2016-10-10T23:50:53.743024513Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["passenger","start"]`
@@ -13,7 +13,7 @@
   - `RUBY_VERSION=2.2.5`
   - `RUBY_DOWNLOAD_SHA256=30c4b31697a4ca4ea0c8db8ad30cf45e6690a0f09687e5d483c933c03ca335e3`
   - `RUBYGEMS_VERSION=2.6.7`
-  - `BUNDLER_VERSION=1.13.1`
+  - `BUNDLER_VERSION=1.13.2`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_PATH=/usr/local/bundle`
   - `BUNDLE_BIN=/usr/local/bundle/bin`
@@ -22,8 +22,8 @@
   - `GOSU_VERSION=1.7`
   - `TINI_VERSION=v0.9.0`
   - `RAILS_ENV=production`
-  - `REDMINE_VERSION=3.3.0`
-  - `REDMINE_DOWNLOAD_MD5=0c0abb2d4efde455c3505d8caf01cb2d`
+  - `REDMINE_VERSION=3.3.1`
+  - `REDMINE_DOWNLOAD_MD5=cb8aab3e03cae7d21d003a307e51c176`
   - `PASSENGER_VERSION=5.0.30`
 
 ## `dpkg` (`.deb`-based packages)
