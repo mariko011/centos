@@ -381,19 +381,8 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris binutils=2.26.1-1
-'http://httpredir.debian.org/debian/pool/main/b/binutils/binutils_2.26.1-1.dsc' binutils_2.26.1-1.dsc 4892 SHA256:7dd098b3353f9eb2d5bdf0471c2b9097ce08375087fe3389b485c4e591c2a9aa
-'http://httpredir.debian.org/debian/pool/main/b/binutils/binutils_2.26.1.orig.tar.gz' binutils_2.26.1.orig.tar.gz 36275441 SHA256:3de389993a6df3fe6be5bebb266b3445857de8df4b218fd6982f85d5a8781101
-'http://httpredir.debian.org/debian/pool/main/b/binutils/binutils_2.26.1-1.diff.gz' binutils_2.26.1-1.diff.gz 216039 SHA256:082713ee3ba9588bc686dc8b86a33bf935c4ded2501606879907ac4032ba5436
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/binutils/2.26.1-1/
-- https://sources.debian.net/src/binutils/2.26.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bzip2=1.0.6-8`
 
@@ -1038,19 +1027,8 @@ Licenses: (parsed from: `/usr/share/doc/libfftw3-double3/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris fftw3=3.3.4-2
-'http://httpredir.debian.org/debian/pool/main/f/fftw3/fftw3_3.3.4-2.dsc' fftw3_3.3.4-2.dsc 2860 SHA256:56e65d2b02fc7dae23a76eb082aee6ea3cdb6613897ed7f5f777beb462eaaf2b
-'http://httpredir.debian.org/debian/pool/main/f/fftw3/fftw3_3.3.4.orig.tar.gz' fftw3_3.3.4.orig.tar.gz 3940427 SHA256:8f0cde90929bc05587c3368d2f15cd0530a60b8a9912a8e2979a72dbe5af0982
-'http://httpredir.debian.org/debian/pool/main/f/fftw3/fftw3_3.3.4-2.debian.tar.xz' fftw3_3.3.4-2.debian.tar.xz 12568 SHA256:788fe6fdf0a0070436e14407ed0065e65876f46a935b24bed0c9753f07887e7e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/fftw3/3.3.4-2/
-- https://sources.debian.net/src/fftw3/3.3.4-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `file=1:5.28-4`
 
@@ -1206,19 +1184,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-5=5.4.1-1
-'http://httpredir.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1-1.dsc' gcc-5_5.4.1-1.dsc 17530 SHA256:7dd08ffd2fdabfe0ab6fd73477ef6cc6c13541fffabe107e052c7934fa9fc5d0
-'http://httpredir.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1.orig.tar.gz' gcc-5_5.4.1.orig.tar.gz 76812822 SHA256:2a84447f34cd062066d38300ac8a1fb528eb301a504b48e1d017e547e5abfcdb
-'http://httpredir.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1-1.diff.gz' gcc-5_5.4.1-1.diff.gz 3180769 SHA256:f22c6b02a058c3a8c21aef454922e1d93b9219ba8daec1f970879b7885c3bef3
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-5/5.4.1-1/
-- https://sources.debian.net/src/gcc-5/5.4.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-6=6.1.1-11`
 
@@ -2597,19 +2564,8 @@ Licenses: (parsed from: `/usr/share/doc/libmnl0/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libmnl=1.0.4-1
-'http://httpredir.debian.org/debian/pool/main/libm/libmnl/libmnl_1.0.4-1.dsc' libmnl_1.0.4-1.dsc 2012 SHA256:b0ebf2c9c02f8223b21f8a9f2ce12d68f22aebf178dda1f015e76839194f663f
-'http://httpredir.debian.org/debian/pool/main/libm/libmnl/libmnl_1.0.4.orig.tar.bz2' libmnl_1.0.4.orig.tar.bz2 301270 SHA256:171f89699f286a5854b72b91d06e8f8e3683064c5901fb09d954a9ab6f551f81
-'http://httpredir.debian.org/debian/pool/main/libm/libmnl/libmnl_1.0.4-1.debian.tar.xz' libmnl_1.0.4-1.debian.tar.xz 7332 SHA256:7ac2ad19eb7fb1a81f389781072b1ea1207593a2c50522562d84dc9204a3bf8b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libmnl/1.0.4-1/
-- https://sources.debian.net/src/libmnl/1.0.4-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpng1.6=1.6.24-2`
 
@@ -4124,19 +4080,8 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.22/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris perl=5.22.2-5
-'http://httpredir.debian.org/debian/pool/main/p/perl/perl_5.22.2-5.dsc' perl_5.22.2-5.dsc 2331 SHA256:501b914035e014aad06fcbbdbd103cbcd61790c12668c838a6a954a00e06829e
-'http://httpredir.debian.org/debian/pool/main/p/perl/perl_5.22.2.orig.tar.xz' perl_5.22.2.orig.tar.xz 11224216 SHA256:b34dab1eabec056bec5a6682a57b55dab1bcf6afc60b098c9e2d99433dedc295
-'http://httpredir.debian.org/debian/pool/main/p/perl/perl_5.22.2-5.debian.tar.xz' perl_5.22.2-5.debian.tar.xz 163392 SHA256:ca690305d903c6003418962f4fc505ec83b4cf5a4e653a9f906a6dbf6a9f2f6c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/perl/5.22.2-5/
-- https://sources.debian.net/src/perl/5.22.2-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `pixman=0.33.6-1`
 
@@ -4390,19 +4335,8 @@ Licenses: (parsed from: `/usr/share/doc/libreadline-dev/copyright`, `/usr/share/
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris readline6=6.3-8
-'http://httpredir.debian.org/debian/pool/main/r/readline6/readline6_6.3-8.dsc' readline6_6.3-8.dsc 1941 SHA256:f7ab77b8580cbdb10b3906f40c3da12d0acc93bef786ff217c65aabc32973cec
-'http://httpredir.debian.org/debian/pool/main/r/readline6/readline6_6.3.orig.tar.gz' readline6_6.3.orig.tar.gz 2468560 SHA256:56ba6071b9462f980c5a72ab0023893b65ba6debb4eeb475d7a563dc65cafd43
-'http://httpredir.debian.org/debian/pool/main/r/readline6/readline6_6.3-8.debian.tar.xz' readline6_6.3-8.debian.tar.xz 30576 SHA256:c2b55fdd221136f46fa1e0cbf0bf2e37b70ddf97929312fbab6032e9129d58b5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/readline6/6.3-8/
-- https://sources.debian.net/src/readline6/6.3-8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-1`
 
