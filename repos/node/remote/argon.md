@@ -1,7 +1,7 @@
 ## `node:argon`
 
 ```console
-$ docker pull node@sha256:c3988aae11d8f7223129846942a0e6698ca7518771920ecd6a74e1c6131cd317
+$ docker pull node@sha256:3a1b737b538a17ab2a8998f442e4eca0d2feeb87ce916f12dea3c520d9feb45c
 ```
 
 -	Platforms:
