@@ -1330,19 +1330,8 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed4/copyright`, `/usr/share/doc/
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nettle=3.2-1
-'http://httpredir.debian.org/debian/pool/main/n/nettle/nettle_3.2-1.dsc' nettle_3.2-1.dsc 2061 SHA256:3dc8b00c4bcafa165b3c27d11c7a47181b1c2a83724721b9fac85ad2cd588797
-'http://httpredir.debian.org/debian/pool/main/n/nettle/nettle_3.2.orig.tar.gz' nettle_3.2.orig.tar.gz 1879604 SHA256:ea4283def236413edab5a4cf9cf32adf540c8df1b9b67641cfc2302fca849d97
-'http://httpredir.debian.org/debian/pool/main/n/nettle/nettle_3.2-1.debian.tar.xz' nettle_3.2-1.debian.tar.xz 19340 SHA256:0d39af8dc279d246c5f816ac78a60372c1901ebb55506420d7a795b4345359bb
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nettle/3.2-1/
-- https://sources.debian.net/src/nettle/3.2-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `npth=1.2-3`
 
