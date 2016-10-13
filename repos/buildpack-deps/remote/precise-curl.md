@@ -1,7 +1,7 @@
 ## `buildpack-deps:precise-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:ae0f65b1bf331927cf9ab0719698e445899586bfd1ea14c1420624e405cfc5df
+$ docker pull buildpack-deps@sha256:50837f0f5d956f874b2ecfdffe58fc4702f602676cd14df4ec5b6a5b32b64c0b
 ```
 
 -	Platforms:

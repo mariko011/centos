@@ -1,7 +1,7 @@
 ## `buildpack-deps:precise-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:68369080635f73cc9910d23e838d52bba519d13a9344415183ec5d0145a6a8f2
+$ docker pull buildpack-deps@sha256:f4cd625a08496d392c6933ec07827cda8f316be57781242f12924496bf8ec854
 ```
 
 -	Platforms:
