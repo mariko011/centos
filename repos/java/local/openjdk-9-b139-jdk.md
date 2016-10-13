@@ -1674,19 +1674,8 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 - `expat`
 - `libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.25-1
-'http://httpredir.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.25-1.dsc' libpng1.6_1.6.25-1.dsc 2220 SHA256:3bea5d38b1fa3ce297bc973180dd250df8476d41cda96c44e89a5fe539f207fe
-'http://httpredir.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.25.orig.tar.xz' libpng1.6_1.6.25.orig.tar.xz 982204 SHA256:09fe8d8341e8bfcfb3263100d9ac7ea2155b28dd8535f179111c1672ac8d8811
-'http://httpredir.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.25-1.debian.tar.xz' libpng1.6_1.6.25-1.debian.tar.xz 21964 SHA256:71d2420e2e6224239a7300348cfd1235baea12049fcbb3688ad7b7975295c51d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libpng1.6/1.6.25-1/
-- https://sources.debian.net/src/libpng1.6/1.6.25-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpsl=0.14.0-1`
 
