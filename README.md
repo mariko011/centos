@@ -8,5 +8,4 @@ It's still a firm Work In Progress, and concrete suggestions for improvement in 
 
 -	[Automated `update-remote.sh`:  
 	![build status badge](https://doi-janky.infosiftr.net/job/repo-info/job/remote/badge/icon)](https://doi-janky.infosiftr.net/job/repo-info/job/remote/)
--	[Automated `scan-local.sh`:  
-	![build status badge](https://doi-janky.infosiftr.net/job/repo-info/job/local/badge/icon)](https://doi-janky.infosiftr.net/job/repo-info/job/local/)
+-	[Automated `scan-local.sh` (one job per repo)](https://doi-janky.infosiftr.net/job/repo-info/job/local/)
