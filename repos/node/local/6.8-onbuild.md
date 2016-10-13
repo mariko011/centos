@@ -1,15 +1,15 @@
-# `node:6.7.0-onbuild`
+# `node:6.8.0-onbuild`
 
 ## Docker Metadata
 
-- Image ID: `sha256:275dae106538dc820d46776d493e71a0a7476125825e3f87426ac33b475274ef`
-- Created: `2016-09-28T17:22:03.845830745Z`
+- Image ID: `sha256:115ffa68b1356644e20c9d4ada848b6174a7665abf74a8f83c0604948e2bcb47`
+- Created: `2016-10-12T22:00:18.781849136Z`
 - Arch: `linux`/`amd64`
 - Command: `["npm","start"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=6.7.0`
+  - `NODE_VERSION=6.8.0`
 
 ## `dpkg` (`.deb`-based packages)
 
