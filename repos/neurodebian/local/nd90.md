@@ -729,19 +729,8 @@ Licenses: (parsed from: `/usr/share/doc/grep/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris grep=2.25-6
-'http://httpredir.debian.org/debian/pool/main/g/grep/grep_2.25-6.dsc' grep_2.25-6.dsc 1969 SHA256:f5969dc2db35392f3a1b23d41578706a9632f3dea346aea4406194fbb18469c9
-'http://httpredir.debian.org/debian/pool/main/g/grep/grep_2.25.orig.tar.xz' grep_2.25.orig.tar.xz 1327856 SHA256:e21e83bac50450e0d0d61a42c154ee0dceaacdbf4f604ef6e79071cb8e596830
-'http://httpredir.debian.org/debian/pool/main/g/grep/grep_2.25-6.debian.tar.bz2' grep_2.25-6.debian.tar.bz2 110173 SHA256:08b1b1e05122e57e03b47ba9711272590abf341b42ddbd68a07f086699c45f6e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/grep/2.25-6/
-- https://sources.debian.net/src/grep/2.25-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gzip=1.6-5`
 
