@@ -1,16 +1,16 @@
-# `bonita:7.3.2`
+# `bonita:7.3.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5171171584dc8b7945c2a6204aa2dcdea0a02924e744a86f21ce8345ed067bfe`
-- Created: `2016-09-26T21:36:35.897838704Z`
+- Image ID: `sha256:0a7f302b6ed35b62c570fbe4bca03e1206cb3ba51597190d8c761cb379998791`
+- Created: `2016-10-13T21:47:24.205862893Z`
 - Arch: `linux`/`amd64`
 - Command: `["/opt/files/startup.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `BONITA_VERSION=7.3.2`
+  - `BONITA_VERSION=7.3.3`
   - `TOMCAT_VERSION=7.0.67`
-  - `BONITA_SHA256=d021aaf96f50655e679526a9e8d77aa84fd159ff285cf2c280863c8b3fb88e40`
+  - `BONITA_SHA256=128911e3b6241e135b2dbc496d8ce383d921f2f2478fc5fad4331e1fd362eb4f`
   - `POSTGRES_JDBC_DRIVER=postgresql-9.3-1102.jdbc41.jar`
   - `POSTGRES_SHA256=b78749d536da75c382d0a71c717cde6850df64e16594676fc7cacb5a74541d66`
   - `MYSQL_JDBC_DRIVER=mysql-connector-java-5.1.26`
@@ -1149,19 +1149,25 @@ $ apt-get source -qq --print-uris iputils=3:20121221-4ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iputils/iputils_20121221-4ubuntu1.1.debian.tar.gz' iputils_20121221-4ubuntu1.1.debian.tar.gz 16143 SHA256:4eb3ca79e68dfc5f5e66df7be3113c230168fbca2420da232adadc6475056c6a
 ```
 
-### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.6`
+### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.7`
 
 Binary Packages:
 
-- `isc-dhcp-client=4.2.4-7ubuntu12.6`
-- `isc-dhcp-common=4.2.4-7ubuntu12.6`
+- `isc-dhcp-client=4.2.4-7ubuntu12.7`
+- `isc-dhcp-common=4.2.4-7ubuntu12.7`
 
 Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/doc/isc-dhcp-common/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris isc-dhcp=4.2.4-7ubuntu12.7
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.7.dsc' isc-dhcp_4.2.4-7ubuntu12.7.dsc 2806 SHA256:0bffebc1f6d3002dd955fb8bfaeb9bb40a0aaeda2d16093122951222f2fc1aa0
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.7.debian.tar.xz' isc-dhcp_4.2.4-7ubuntu12.7.debian.tar.xz 108332 SHA256:2f5ffdb3a552bf131cb3ec72d48decc5f58febf308ac51cb46d258abfd8c190e
+```
 
 ### `dpkg` source package: `java-common=0.51`
 
@@ -2462,18 +2468,24 @@ $ apt-get source -qq --print-uris nss=2:3.23-0ubuntu0.14.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.23-0ubuntu0.14.04.1.debian.tar.gz' nss_3.23-0ubuntu0.14.04.1.debian.tar.gz 28558 SHA256:1fc6f6955c71e0da450288488d5e7a955a15267283697f24efb000806c45c6f2
 ```
 
-### `dpkg` source package: `ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.8`
+### `dpkg` source package: `ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.10`
 
 Binary Packages:
 
-- `ntpdate=1:4.2.6.p5+dfsg-3ubuntu2.14.04.8`
+- `ntpdate=1:4.2.6.p5+dfsg-3ubuntu2.14.04.10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.10
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.dsc' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.dsc 2371 SHA256:e37b5b5f3a508f5fd0b8b5224ff303a37e51c116b9d88e73d0848872480fc543
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg.orig.tar.gz' ntp_4.2.6.p5+dfsg.orig.tar.gz 4111997 SHA256:17f0b63e7e27de5cc999a4afdb96b2dbdf76c75181fca50e2395e49e5773dfc9
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.debian.tar.gz' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.debian.tar.gz 147591 SHA256:4097803a1422a5c6fa5381e496c35cb2306988c8d48dbd9136a8c31b55208451
+```
 
 ### `dpkg` source package: `openjdk-7=7u111-2.6.7-0ubuntu0.14.04.3`
 
