@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1624f7b1fd6c6262c334ab3d13686e995b24bbbfd7ac5c0ffd74f597e730e9ac`
-- Created: `2016-09-30T18:13:29.014021412Z`
+- Image ID: `sha256:c62ee511b6d13583d724a664edbd7b0d595dd754895a3d45cbdb63cd66427c81`
+- Created: `2016-10-13T21:52:56.925990133Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["couchbase-server"]`
@@ -972,19 +972,25 @@ $ apt-get source -qq --print-uris iputils=3:20121221-4ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iputils/iputils_20121221-4ubuntu1.1.debian.tar.gz' iputils_20121221-4ubuntu1.1.debian.tar.gz 16143 SHA256:4eb3ca79e68dfc5f5e66df7be3113c230168fbca2420da232adadc6475056c6a
 ```
 
-### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.6`
+### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.7`
 
 Binary Packages:
 
-- `isc-dhcp-client=4.2.4-7ubuntu12.6`
-- `isc-dhcp-common=4.2.4-7ubuntu12.6`
+- `isc-dhcp-client=4.2.4-7ubuntu12.7`
+- `isc-dhcp-common=4.2.4-7ubuntu12.7`
 
 Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/doc/isc-dhcp-common/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris isc-dhcp=4.2.4-7ubuntu12.7
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.7.dsc' isc-dhcp_4.2.4-7ubuntu12.7.dsc 2806 SHA256:0bffebc1f6d3002dd955fb8bfaeb9bb40a0aaeda2d16093122951222f2fc1aa0
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.7.debian.tar.xz' isc-dhcp_4.2.4-7ubuntu12.7.debian.tar.xz 108332 SHA256:2f5ffdb3a552bf131cb3ec72d48decc5f58febf308ac51cb46d258abfd8c190e
+```
 
 ### `dpkg` source package: `json-c=0.11-3ubuntu1.2`
 
@@ -2000,18 +2006,24 @@ $ apt-get source -qq --print-uris newt=0.52.15-2ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/n/newt/newt_0.52.15-2ubuntu5.debian.tar.gz' newt_0.52.15-2ubuntu5.debian.tar.gz 51483 SHA256:3fcff25cd0f6f6e657ce27ec3cc3c10f92be86acb387d32b6fd91822db514a4b
 ```
 
-### `dpkg` source package: `ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.8`
+### `dpkg` source package: `ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.10`
 
 Binary Packages:
 
-- `ntpdate=1:4.2.6.p5+dfsg-3ubuntu2.14.04.8`
+- `ntpdate=1:4.2.6.p5+dfsg-3ubuntu2.14.04.10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.10
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.dsc' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.dsc 2371 SHA256:e37b5b5f3a508f5fd0b8b5224ff303a37e51c116b9d88e73d0848872480fc543
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg.orig.tar.gz' ntp_4.2.6.p5+dfsg.orig.tar.gz 4111997 SHA256:17f0b63e7e27de5cc999a4afdb96b2dbdf76c75181fca50e2395e49e5773dfc9
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.debian.tar.gz' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.debian.tar.gz 147591 SHA256:4097803a1422a5c6fa5381e496c35cb2306988c8d48dbd9136a8c31b55208451
+```
 
 ### `dpkg` source package: `numactl=2.0.9~rc5-1ubuntu3.14.04.2`
 
