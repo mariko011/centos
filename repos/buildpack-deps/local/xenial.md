@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9f699473fe5f3bed58a265a2f3fd3a513010bf5e20b12aca8de64c358d6fe8d7`
-- Created: `2016-09-26T22:49:27.546873803Z`
+- Image ID: `sha256:e493caa3b903e96a7b280465a3a90c6a75cb2d77aa8641805ce8b5a1b7c9dbec`
+- Created: `2016-10-14T00:03:00.716762345Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -1500,12 +1500,12 @@ $ apt-get source -qq --print-uris imagemagick=8:6.8.9.9-7ubuntu5.1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9-7ubuntu5.1.debian.tar.xz' imagemagick_6.8.9.9-7ubuntu5.1.debian.tar.xz 209432 SHA256:0b6d28aac8ff290c14e551934e56af7be2f043ec8b4d2bc5b95fd36ef547ae76
 ```
 
-### `dpkg` source package: `init-system-helpers=1.29ubuntu2`
+### `dpkg` source package: `init-system-helpers=1.29ubuntu3`
 
 Binary Packages:
 
-- `init=1.29ubuntu2`
-- `init-system-helpers=1.29ubuntu2`
+- `init=1.29ubuntu3`
+- `init-system-helpers=1.29ubuntu3`
 
 Licenses: (parsed from: `/usr/share/doc/init/copyright`, `/usr/share/doc/init-system-helpers/copyright`)
 
@@ -1513,8 +1513,13 @@ Licenses: (parsed from: `/usr/share/doc/init/copyright`, `/usr/share/doc/init-sy
 - `GPL`
 - `GPL-3+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris init-system-helpers=1.29ubuntu3
+'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.29ubuntu3.dsc' init-system-helpers_1.29ubuntu3.dsc 2011 SHA256:a07fa1c88fb0028ae38ce78d4273a47fd406b95a5c1d905385f5885a297198d4
+'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.29ubuntu3.tar.xz' init-system-helpers_1.29ubuntu3.tar.xz 58224 SHA256:65fc0f654fa14d02ffebdbf8ea111927564f520c0c1c4db550d3b6bef192a037
+```
 
 ### `dpkg` source package: `insserv=1.14.0-5ubuntu3`
 
@@ -2648,18 +2653,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
 ```
 
-### `dpkg` source package: `linux=4.4.0-38.57`
+### `dpkg` source package: `linux=4.4.0-43.63`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-38.57`
+- `linux-libc-dev:amd64=4.4.0-43.63`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.4.0-43.63
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-43.63.dsc' linux_4.4.0-43.63.dsc 9613 SHA256:1a7d197250671e9d2b545b46809eecb7c9ff509100011da68a6bebfaca63d857
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-43.63.diff.gz' linux_4.4.0-43.63.diff.gz 11831222 SHA256:a2ac03aaafe0ff1ce1541c030f00ca9b5273c49048aa4563c5e4af01697d421e
+```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu0.2`
 
@@ -3561,14 +3572,14 @@ $ apt-get source -qq --print-uris subversion=1.9.3-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.3-2ubuntu1.diff.gz' subversion_1.9.3-2ubuntu1.diff.gz 2428266 SHA256:5abd3b260a156c1a15a5203a5097ad557740a3056577e48c0b66f4f74c145a69
 ```
 
-### `dpkg` source package: `systemd=229-4ubuntu8`
+### `dpkg` source package: `systemd=229-4ubuntu10`
 
 Binary Packages:
 
-- `libsystemd0:amd64=229-4ubuntu8`
-- `libudev1:amd64=229-4ubuntu8`
-- `systemd=229-4ubuntu8`
-- `systemd-sysv=229-4ubuntu8`
+- `libsystemd0:amd64=229-4ubuntu10`
+- `libudev1:amd64=229-4ubuntu10`
+- `systemd=229-4ubuntu10`
+- `systemd-sysv=229-4ubuntu10`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
@@ -3580,8 +3591,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=229-4ubuntu10
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu10.dsc' systemd_229-4ubuntu10.dsc 4184 SHA256:4efd03604bdd7b32d231a70a6596288a6440d969017fe2b7b2284ef0d9684af3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu10.debian.tar.xz' systemd_229-4ubuntu10.debian.tar.xz 149716 SHA256:6aff622a8d8aebd80194a408173a963ac453377c693f6675af189a4bb7e011d0
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
@@ -3655,14 +3672,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016f-0ubuntu0.16.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016f-0ubuntu0.16.04.dsc' tzdata_2016f-0ubuntu0.16.04.dsc 2119 SHA256:e2f98cfac5596a3b6e1b8f2221e85eb9995ce6d5fd51e02749ed73300873b9bb
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016f.orig.tar.gz' tzdata_2016f.orig.tar.gz 313286 SHA256:ed8c951008d12f1db55a11e96fc055718c6571233327d9de16a7f8475e2502b0
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016f-0ubuntu0.16.04.debian.tar.xz' tzdata_2016f-0ubuntu0.16.04.debian.tar.xz 99720 SHA256:1fd68819cbf3111fb6d5946e74305aa052fdda48bc012f342bc72854f2412fc3
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 
