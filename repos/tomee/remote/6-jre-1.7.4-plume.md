@@ -1,7 +1,7 @@
 ## `tomee:6-jre-1.7.4-plume`
 
 ```console
-$ docker pull tomee@sha256:fd1c04d7d088c8701700f26277e4ba10fc8d82cd5c977d51ee8f7c6119ed780f
+$ docker pull tomee@sha256:c438772f1ea498e344554326946960e531d923ee6589ebceaf65eedb59b5dcb9
 ```
 
 -	Platforms:

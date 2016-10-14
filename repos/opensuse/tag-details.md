@@ -12,7 +12,7 @@
 ## `opensuse:42.1`
 
 ```console
-$ docker pull opensuse@sha256:3811b9d30e880288844ddcb481cb265136637cc4175984b618243c9b96602375
+$ docker pull opensuse@sha256:47eade8cb0da90be61445982055eb9cb0e3a859dcc6a928d6c99eade58751a69
 ```
 
 -	Platforms:
@@ -20,29 +20,29 @@ $ docker pull opensuse@sha256:3811b9d30e880288844ddcb481cb265136637cc4175984b618
 
 ### `opensuse:42.1` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.9 MB (37850390 bytes)**  
+-	Total Size: **37.9 MB (37859337 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:642bc8a45961ae5b4793e221b67422186dc6e04d08c603a6f755bb74599ddfa0`
+-	Image ID: `sha256:63c4e5e0fa497963defdbac080fb7256147d169cb2f154b7bdc823e008a81955`
 
 ```dockerfile
-# Fri, 10 Jun 2016 18:46:21 GMT
-MAINTAINER Flavio Castelli <fcastelli@suse.com>
-# Wed, 13 Jul 2016 16:57:59 GMT
-ADD file:4c338e205c079dbf5dadd8ca9b865f79a4d91b102779d2c6d371f4c31ce19ec1 in /
+# Fri, 14 Oct 2016 17:14:07 GMT
+MAINTAINER SUSE Containers Team <containers@suse.com>
+# Fri, 14 Oct 2016 17:14:11 GMT
+ADD file:916b9334fc76500a660c7e160f744b3de7ce388c18f61dd21633030a715c98f9 in / 
 ```
 
 -	Layers:
-	-	`sha256:bffa29266eb0a7022496a2d1284a842b2c2b4415e35a78f345fbf32f26debcc5`  
-		Last Modified: Wed, 13 Jul 2016 16:58:14 GMT  
-		Size: 37.9 MB (37850390 bytes)  
+	-	`sha256:9b1c614d9263d0f37d9c3abacac11ad8228bba24b4c4c536171b00ede7967786`  
+		Last Modified: Fri, 14 Oct 2016 17:14:44 GMT  
+		Size: 37.9 MB (37859337 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `opensuse:leap`
 
 ```console
-$ docker pull opensuse@sha256:3811b9d30e880288844ddcb481cb265136637cc4175984b618243c9b96602375
+$ docker pull opensuse@sha256:47eade8cb0da90be61445982055eb9cb0e3a859dcc6a928d6c99eade58751a69
 ```
 
 -	Platforms:
@@ -50,29 +50,29 @@ $ docker pull opensuse@sha256:3811b9d30e880288844ddcb481cb265136637cc4175984b618
 
 ### `opensuse:leap` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.9 MB (37850390 bytes)**  
+-	Total Size: **37.9 MB (37859337 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:642bc8a45961ae5b4793e221b67422186dc6e04d08c603a6f755bb74599ddfa0`
+-	Image ID: `sha256:63c4e5e0fa497963defdbac080fb7256147d169cb2f154b7bdc823e008a81955`
 
 ```dockerfile
-# Fri, 10 Jun 2016 18:46:21 GMT
-MAINTAINER Flavio Castelli <fcastelli@suse.com>
-# Wed, 13 Jul 2016 16:57:59 GMT
-ADD file:4c338e205c079dbf5dadd8ca9b865f79a4d91b102779d2c6d371f4c31ce19ec1 in /
+# Fri, 14 Oct 2016 17:14:07 GMT
+MAINTAINER SUSE Containers Team <containers@suse.com>
+# Fri, 14 Oct 2016 17:14:11 GMT
+ADD file:916b9334fc76500a660c7e160f744b3de7ce388c18f61dd21633030a715c98f9 in / 
 ```
 
 -	Layers:
-	-	`sha256:bffa29266eb0a7022496a2d1284a842b2c2b4415e35a78f345fbf32f26debcc5`  
-		Last Modified: Wed, 13 Jul 2016 16:58:14 GMT  
-		Size: 37.9 MB (37850390 bytes)  
+	-	`sha256:9b1c614d9263d0f37d9c3abacac11ad8228bba24b4c4c536171b00ede7967786`  
+		Last Modified: Fri, 14 Oct 2016 17:14:44 GMT  
+		Size: 37.9 MB (37859337 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `opensuse:latest`
 
 ```console
-$ docker pull opensuse@sha256:3811b9d30e880288844ddcb481cb265136637cc4175984b618243c9b96602375
+$ docker pull opensuse@sha256:47eade8cb0da90be61445982055eb9cb0e3a859dcc6a928d6c99eade58751a69
 ```
 
 -	Platforms:
@@ -80,29 +80,29 @@ $ docker pull opensuse@sha256:3811b9d30e880288844ddcb481cb265136637cc4175984b618
 
 ### `opensuse:latest` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.9 MB (37850390 bytes)**  
+-	Total Size: **37.9 MB (37859337 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:642bc8a45961ae5b4793e221b67422186dc6e04d08c603a6f755bb74599ddfa0`
+-	Image ID: `sha256:63c4e5e0fa497963defdbac080fb7256147d169cb2f154b7bdc823e008a81955`
 
 ```dockerfile
-# Fri, 10 Jun 2016 18:46:21 GMT
-MAINTAINER Flavio Castelli <fcastelli@suse.com>
-# Wed, 13 Jul 2016 16:57:59 GMT
-ADD file:4c338e205c079dbf5dadd8ca9b865f79a4d91b102779d2c6d371f4c31ce19ec1 in /
+# Fri, 14 Oct 2016 17:14:07 GMT
+MAINTAINER SUSE Containers Team <containers@suse.com>
+# Fri, 14 Oct 2016 17:14:11 GMT
+ADD file:916b9334fc76500a660c7e160f744b3de7ce388c18f61dd21633030a715c98f9 in / 
 ```
 
 -	Layers:
-	-	`sha256:bffa29266eb0a7022496a2d1284a842b2c2b4415e35a78f345fbf32f26debcc5`  
-		Last Modified: Wed, 13 Jul 2016 16:58:14 GMT  
-		Size: 37.9 MB (37850390 bytes)  
+	-	`sha256:9b1c614d9263d0f37d9c3abacac11ad8228bba24b4c4c536171b00ede7967786`  
+		Last Modified: Fri, 14 Oct 2016 17:14:44 GMT  
+		Size: 37.9 MB (37859337 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `opensuse:13.2`
 
 ```console
-$ docker pull opensuse@sha256:20401fa2ca64bcee363adaabb6f128fc747215ad74f4097ec44a696ebe3a0900
+$ docker pull opensuse@sha256:28a26ebd23e6b1283faf2842a8f448984ccec1ccb138e757fb137bde97dd73db
 ```
 
 -	Platforms:
@@ -110,29 +110,29 @@ $ docker pull opensuse@sha256:20401fa2ca64bcee363adaabb6f128fc747215ad74f4097ec4
 
 ### `opensuse:13.2` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.9 MB (37940081 bytes)**  
+-	Total Size: **38.0 MB (37955043 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34cfed1780746c138dc5cf36d1a1dbd18940db7f4dfe9e46d471e3ae402c9a08`
+-	Image ID: `sha256:fb78b4cadb69710aa1dcaa5a67ccef384bd50b6a2b2042e2c45ba35034f3f05a`
 
 ```dockerfile
-# Fri, 10 Jun 2016 18:46:21 GMT
-MAINTAINER Flavio Castelli <fcastelli@suse.com>
-# Mon, 20 Jun 2016 17:33:16 GMT
-ADD file:ee63d25fb31627595f6e9648d295dfb3c4b7bb12e1f782da04066a4abfcb979d in /
+# Fri, 14 Oct 2016 17:14:07 GMT
+MAINTAINER SUSE Containers Team <containers@suse.com>
+# Fri, 14 Oct 2016 17:14:19 GMT
+ADD file:655c037abdbdf7b37eabaeb86e63f6063d482b8b2edad39821da6fd1509b32d6 in / 
 ```
 
 -	Layers:
-	-	`sha256:ee142acc9c32eef33e603ad319d46b36d3f3485e0e0bb4d7346e285e26c91802`  
-		Last Modified: Mon, 20 Jun 2016 17:33:56 GMT  
-		Size: 37.9 MB (37940081 bytes)  
+	-	`sha256:84d5c71488d72913515705e2c19f9c1369f2705aca6f6042b7326bbcb1a516f1`  
+		Last Modified: Fri, 14 Oct 2016 17:15:21 GMT  
+		Size: 38.0 MB (37955043 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `opensuse:harlequin`
 
 ```console
-$ docker pull opensuse@sha256:20401fa2ca64bcee363adaabb6f128fc747215ad74f4097ec44a696ebe3a0900
+$ docker pull opensuse@sha256:28a26ebd23e6b1283faf2842a8f448984ccec1ccb138e757fb137bde97dd73db
 ```
 
 -	Platforms:
@@ -140,29 +140,29 @@ $ docker pull opensuse@sha256:20401fa2ca64bcee363adaabb6f128fc747215ad74f4097ec4
 
 ### `opensuse:harlequin` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.9 MB (37940081 bytes)**  
+-	Total Size: **38.0 MB (37955043 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34cfed1780746c138dc5cf36d1a1dbd18940db7f4dfe9e46d471e3ae402c9a08`
+-	Image ID: `sha256:fb78b4cadb69710aa1dcaa5a67ccef384bd50b6a2b2042e2c45ba35034f3f05a`
 
 ```dockerfile
-# Fri, 10 Jun 2016 18:46:21 GMT
-MAINTAINER Flavio Castelli <fcastelli@suse.com>
-# Mon, 20 Jun 2016 17:33:16 GMT
-ADD file:ee63d25fb31627595f6e9648d295dfb3c4b7bb12e1f782da04066a4abfcb979d in /
+# Fri, 14 Oct 2016 17:14:07 GMT
+MAINTAINER SUSE Containers Team <containers@suse.com>
+# Fri, 14 Oct 2016 17:14:19 GMT
+ADD file:655c037abdbdf7b37eabaeb86e63f6063d482b8b2edad39821da6fd1509b32d6 in / 
 ```
 
 -	Layers:
-	-	`sha256:ee142acc9c32eef33e603ad319d46b36d3f3485e0e0bb4d7346e285e26c91802`  
-		Last Modified: Mon, 20 Jun 2016 17:33:56 GMT  
-		Size: 37.9 MB (37940081 bytes)  
+	-	`sha256:84d5c71488d72913515705e2c19f9c1369f2705aca6f6042b7326bbcb1a516f1`  
+		Last Modified: Fri, 14 Oct 2016 17:15:21 GMT  
+		Size: 38.0 MB (37955043 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `opensuse:tumbleweed`
 
 ```console
-$ docker pull opensuse@sha256:fde67f4c3c8c99e04d73b2d8a6bcdd7c25e6cb5355ea9f63ab9a9cd82b0e7768
+$ docker pull opensuse@sha256:e8b70ab7d3e2e7c2f985d87765c845daac0cdd64c05fdeb4c1c275a46b676cef
 ```
 
 -	Platforms:
@@ -170,27 +170,21 @@ $ docker pull opensuse@sha256:fde67f4c3c8c99e04d73b2d8a6bcdd7c25e6cb5355ea9f63ab
 
 ### `opensuse:tumbleweed` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.0 MB (54028638 bytes)**  
+-	Total Size: **54.8 MB (54816121 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9df0fef5f7c3a2a39179f538b2d33db97eeeec4fbc1cc6bf3df66935ceec39e7`
+-	Image ID: `sha256:b679350d8c969cfef61427b00c68eec89c696c3d679d387e7a960f19ffe71fe0`
 
 ```dockerfile
-# Fri, 10 Jun 2016 18:46:21 GMT
-MAINTAINER Flavio Castelli <fcastelli@suse.com>
-# Wed, 15 Jun 2016 16:58:32 GMT
-ADD file:e98a4512aad4a282ac8018ad71d07e29fe2da824944e9ec761a5350339cd3130 in /
-# Wed, 15 Jun 2016 16:58:49 GMT
-RUN zypper -n ar -f http://download.opensuse.org/tumbleweed/repo/oss repo-oss &&     zypper -n ar -f http://download.opensuse.org/tumbleweed/repo/non-oss repo-non-oss &&     zypper -n ar -f http://download.opensuse.org/update/tumbleweed/ repo-update &&     zypper -n ar -f -d http://download.opensuse.org/tumbleweed/repo/debug repo-debug
+# Fri, 14 Oct 2016 17:14:07 GMT
+MAINTAINER SUSE Containers Team <containers@suse.com>
+# Fri, 14 Oct 2016 17:14:27 GMT
+ADD file:4fac5261d5ea8ccf07e8ae96f68dbe4d11f72c256be888998037d0cc5b2ad4be in / 
 ```
 
 -	Layers:
-	-	`sha256:5acd6d41c69ca316947513ec90343b86857cc9fe24ceb722c6c8b7006cfd17f1`  
-		Last Modified: Wed, 15 Jun 2016 18:41:30 GMT  
-		Size: 53.9 MB (53895364 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d7f80f831ae1394833591225d9bc0826276c1bbc3038e6ee805247515a6dcd51`  
-		Last Modified: Wed, 15 Jun 2016 18:41:15 GMT  
-		Size: 133.3 KB (133274 bytes)  
+	-	`sha256:28d517b8e42c15fa6cfdad59e3d3516469c7ec0ff9706c5eaf9addd5698ccb73`  
+		Last Modified: Fri, 14 Oct 2016 17:15:56 GMT  
+		Size: 54.8 MB (54816121 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
