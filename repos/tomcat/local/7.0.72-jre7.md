@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:79af9e9e45a9a7664e2231e054a6d14b2db43d1953756a090b83da8cd4d532ba`
-- Created: `2016-09-23T23:49:41.354011562Z`
+- Image ID: `sha256:4e0741275d71ba189129391b73e183ffb8080ad14f97777ad923ebf15925e862`
+- Created: `2016-10-14T18:01:58.825864666Z`
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
 - Environment:
@@ -15,7 +15,7 @@
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
-  - `OPENSSL_VERSION=1.0.2i-1`
+  - `OPENSSL_VERSION=1.0.2j-1`
   - `TOMCAT_MAJOR=7`
   - `TOMCAT_VERSION=7.0.72`
   - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-7/v7.0.72/bin/apache-tomcat-7.0.72.tar.gz`
@@ -3294,19 +3294,31 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `openssl=1.0.2i-1`
+### `dpkg` source package: `openssl=1.0.2j-1`
 
 Binary Packages:
 
-- `libssl1.0.2:amd64=1.0.2i-1`
-- `openssl=1.0.2i-1`
+- `libssl1.0.2:amd64=1.0.2j-1`
+- `openssl=1.0.2j-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.2j-1
+'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.2j-1.dsc' openssl_1.0.2j-1.dsc 2550 SHA256:9f68517da4791cd36e75f9a63fff4c703e9273c0c1af5cb9efd6bfb1d842dba6
+'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.2j.orig.tar.gz' openssl_1.0.2j.orig.tar.gz 5307912 SHA256:e7aff292be21c259c6af26469c7a9b3ba26e9abaaffd325e3dccc9785256c431
+'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.2j.orig.tar.gz.asc' openssl_1.0.2j.orig.tar.gz.asc 473 SHA256:b3551e17fef7df2eb901aa9c1cbc41e5cf7c9d5d10e546936145f24d1e52efdc
+'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.2j-1.debian.tar.xz' openssl_1.0.2j-1.debian.tar.xz 76404 SHA256:91203925576731b63f1eb0e4d575db09d43c237aa4905ac660655eafcd47ba4f
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/openssl/1.0.2j-1/
+- https://sources.debian.net/src/openssl/1.0.2j-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 

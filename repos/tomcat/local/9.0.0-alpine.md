@@ -1,9 +1,9 @@
-# `tomcat:9.0.0.M10-jre8-alpine`
+# `tomcat:9.0.0.M11-jre8-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f10c75d528ff4cac5a6db98ed2f0e8a0c584fae41666640470dd82c362a01fe8`
-- Created: `2016-09-26T16:59:59.038077434Z`
+- Image ID: `sha256:fcd84efc758351856c8abcd4f604be929929f0f8bf190f81867a15c236a92e35`
+- Created: `2016-10-14T18:28:16.493912476Z`
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
 - Environment:
@@ -16,6 +16,6 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.0.M10`
-  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.0.M10/bin/apache-tomcat-9.0.0.M10.tar.gz`
-  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-9/v9.0.0.M10/bin/apache-tomcat-9.0.0.M10.tar.gz.asc`
+  - `TOMCAT_VERSION=9.0.0.M11`
+  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.0.M11/bin/apache-tomcat-9.0.0.M11.tar.gz`
+  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-9/v9.0.0.M11/bin/apache-tomcat-9.0.0.M11.tar.gz.asc`
