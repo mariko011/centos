@@ -2,14 +2,14 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ac3d2088aed6640a91d36a98f5a2ed4431c8717ae3d107f221d8a533c2ad0861`
-- Created: `2016-09-26T22:38:32.741842666Z`
+- Image ID: `sha256:3339f7202c0866e109cd3f18ee773c276f807de6477bced801640a1ef4b24a4c`
+- Created: `2016-10-13T23:46:40.445931526Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["telegraf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `TELEGRAF_VERSION=1.0.0`
+  - `TELEGRAF_VERSION=1.0.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -997,19 +997,25 @@ $ apt-get source -qq --print-uris iputils=3:20121221-4ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iputils/iputils_20121221-4ubuntu1.1.debian.tar.gz' iputils_20121221-4ubuntu1.1.debian.tar.gz 16143 SHA256:4eb3ca79e68dfc5f5e66df7be3113c230168fbca2420da232adadc6475056c6a
 ```
 
-### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.6`
+### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.7`
 
 Binary Packages:
 
-- `isc-dhcp-client=4.2.4-7ubuntu12.6`
-- `isc-dhcp-common=4.2.4-7ubuntu12.6`
+- `isc-dhcp-client=4.2.4-7ubuntu12.7`
+- `isc-dhcp-common=4.2.4-7ubuntu12.7`
 
 Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/doc/isc-dhcp-common/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris isc-dhcp=4.2.4-7ubuntu12.7
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.7.dsc' isc-dhcp_4.2.4-7ubuntu12.7.dsc 2806 SHA256:0bffebc1f6d3002dd955fb8bfaeb9bb40a0aaeda2d16093122951222f2fc1aa0
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.7.debian.tar.xz' isc-dhcp_4.2.4-7ubuntu12.7.debian.tar.xz 108332 SHA256:2f5ffdb3a552bf131cb3ec72d48decc5f58febf308ac51cb46d258abfd8c190e
+```
 
 ### `dpkg` source package: `json-c=0.11-3ubuntu1.2`
 
@@ -1986,18 +1992,24 @@ $ apt-get source -qq --print-uris newt=0.52.15-2ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/n/newt/newt_0.52.15-2ubuntu5.debian.tar.gz' newt_0.52.15-2ubuntu5.debian.tar.gz 51483 SHA256:3fcff25cd0f6f6e657ce27ec3cc3c10f92be86acb387d32b6fd91822db514a4b
 ```
 
-### `dpkg` source package: `ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.8`
+### `dpkg` source package: `ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.10`
 
 Binary Packages:
 
-- `ntpdate=1:4.2.6.p5+dfsg-3ubuntu2.14.04.8`
+- `ntpdate=1:4.2.6.p5+dfsg-3ubuntu2.14.04.10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.10
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.dsc' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.dsc 2371 SHA256:e37b5b5f3a508f5fd0b8b5224ff303a37e51c116b9d88e73d0848872480fc543
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg.orig.tar.gz' ntp_4.2.6.p5+dfsg.orig.tar.gz 4111997 SHA256:17f0b63e7e27de5cc999a4afdb96b2dbdf76c75181fca50e2395e49e5773dfc9
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.debian.tar.gz' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.debian.tar.gz 147591 SHA256:4097803a1422a5c6fa5381e496c35cb2306988c8d48dbd9136a8c31b55208451
+```
 
 ### `dpkg` source package: `openldap=2.4.31-1+nmu2ubuntu8.3`
 
@@ -2532,11 +2544,11 @@ $ apt-get source -qq --print-uris tar=1.27.1-1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.27.1-1.debian.tar.xz' tar_1.27.1-1.debian.tar.xz 19540 SHA256:fea78ca36ff59f3fe84c060adf039283b1b8238ef9ce3428e85fe04c4812815c
 ```
 
-### `dpkg` source package: `telegraf=1.0.0-1`
+### `dpkg` source package: `telegraf=1.0.1-1`
 
 Binary Packages:
 
-- `telegraf=1.0.0-1`
+- `telegraf=1.0.1-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2555,14 +2567,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016f-0ubuntu0.14.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016f-0ubuntu0.14.04.dsc' tzdata_2016f-0ubuntu0.14.04.dsc 2066 SHA256:321ec8bb22ff5bd8e752788f12d03dc146a1666ac569c275468306d2eac43029
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016f.orig.tar.gz' tzdata_2016f.orig.tar.gz 313286 SHA256:ed8c951008d12f1db55a11e96fc055718c6571233327d9de16a7f8475e2502b0
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016f-0ubuntu0.14.04.debian.tar.xz' tzdata_2016f-0ubuntu0.14.04.debian.tar.xz 100396 SHA256:ca5272fcaf5c3c6bf9923c4cc63aaab5752920e92abe277428f1092ff21a77c7
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 
