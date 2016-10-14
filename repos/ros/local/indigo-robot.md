@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f8f2d197ef9a4ecddcc5e6ecf2d000e2b6eeb023a8c1700fca70e587ff091c23`
-- Created: `2016-09-26T23:09:00.624607029Z`
+- Image ID: `sha256:913ccb386a8d44c23781ddfd62e06dba1cf78378edfcf6f53abf10e2bcb5cb22`
+- Created: `2016-10-14T00:22:40.15447146Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
 - Command: `["bash"]`
@@ -2003,19 +2003,25 @@ $ apt-get source -qq --print-uris iputils=3:20121221-4ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iputils/iputils_20121221-4ubuntu1.1.debian.tar.gz' iputils_20121221-4ubuntu1.1.debian.tar.gz 16143 SHA256:4eb3ca79e68dfc5f5e66df7be3113c230168fbca2420da232adadc6475056c6a
 ```
 
-### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.6`
+### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.7`
 
 Binary Packages:
 
-- `isc-dhcp-client=4.2.4-7ubuntu12.6`
-- `isc-dhcp-common=4.2.4-7ubuntu12.6`
+- `isc-dhcp-client=4.2.4-7ubuntu12.7`
+- `isc-dhcp-common=4.2.4-7ubuntu12.7`
 
 Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/doc/isc-dhcp-common/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris isc-dhcp=4.2.4-7ubuntu12.7
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.7.dsc' isc-dhcp_4.2.4-7ubuntu12.7.dsc 2806 SHA256:0bffebc1f6d3002dd955fb8bfaeb9bb40a0aaeda2d16093122951222f2fc1aa0
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.7.debian.tar.xz' isc-dhcp_4.2.4-7ubuntu12.7.debian.tar.xz 108332 SHA256:2f5ffdb3a552bf131cb3ec72d48decc5f58febf308ac51cb46d258abfd8c190e
+```
 
 ### `dpkg` source package: `isl=0.12.2-1`
 
@@ -3523,18 +3529,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.4-3ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.4-3ubuntu3.1.debian.tar.gz' libyaml_0.1.4-3ubuntu3.1.debian.tar.gz 6404 SHA256:816422e1c743180409aff9247f3a298c8f98260d91da29c7315ce8bd576d53c2
 ```
 
-### `dpkg` source package: `linux=3.13.0-96.143`
+### `dpkg` source package: `linux=3.13.0-98.145`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-96.143`
+- `linux-libc-dev:amd64=3.13.0-98.145`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.13.0-98.145
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-98.145.dsc' linux_3.13.0-98.145.dsc 9072 SHA256:7d44afbf6cffb7728be93a89347ba226605474acb1b970163bb4c6b355413741
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-98.145.diff.gz' linux_3.13.0-98.145.diff.gz 9322597 SHA256:ecade98d5c1c61970cf38e8095caa0cf35672dbee3b97ef261e267ef90c49122
+```
 
 ### `dpkg` source package: `lksctp-tools=1.0.15+dfsg-1`
 
@@ -4163,18 +4175,24 @@ $ apt-get source -qq --print-uris nose=1.3.1-2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nose/nose_1.3.1-2.debian.tar.xz' nose_1.3.1-2.debian.tar.xz 8644 SHA256:1f9e6f8f2cb0da69918b0a2ab4d6a11512bb66eaa9d10b3785ce64ae28fd5613
 ```
 
-### `dpkg` source package: `ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.8`
+### `dpkg` source package: `ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.10`
 
 Binary Packages:
 
-- `ntpdate=1:4.2.6.p5+dfsg-3ubuntu2.14.04.8`
+- `ntpdate=1:4.2.6.p5+dfsg-3ubuntu2.14.04.10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.10
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.dsc' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.dsc 2371 SHA256:e37b5b5f3a508f5fd0b8b5224ff303a37e51c116b9d88e73d0848872480fc543
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg.orig.tar.gz' ntp_4.2.6.p5+dfsg.orig.tar.gz 4111997 SHA256:17f0b63e7e27de5cc999a4afdb96b2dbdf76c75181fca50e2395e49e5773dfc9
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.debian.tar.gz' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.debian.tar.gz 147591 SHA256:4097803a1422a5c6fa5381e496c35cb2306988c8d48dbd9136a8c31b55208451
+```
 
 ### `dpkg` source package: `numactl=2.0.9~rc5-1ubuntu3.14.04.2`
 
@@ -4839,18 +4857,24 @@ $ apt-get source -qq --print-uris python-rosinstall=0.7.8-1
 'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosinstall/python-rosinstall_0.7.8-1.debian.tar.gz' python-rosinstall_0.7.8-1.debian.tar.gz 1008 SHA256:218375984f09c4fcfd9febfa9d08af30706a37c83e0c88925e682d84b6d44c7d
 ```
 
-### `dpkg` source package: `python-rospkg=1.0.40-1`
+### `dpkg` source package: `python-rospkg=1.0.41-1`
 
 Binary Packages:
 
-- `python-rospkg=1.0.40-1`
+- `python-rospkg=1.0.41-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rospkg=1.0.41-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.0.41-1.dsc' python-rospkg_1.0.41-1.dsc 888 SHA256:f85d49e47ea2868558154500abe090f53661d347e084f62e557c1df1ac0d0328
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.0.41.orig.tar.gz' python-rospkg_1.0.41.orig.tar.gz 39565 SHA256:62ff806ad5d08945329a3960bb499cb41f5e442b3402d080ad6117707db98f55
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.0.41-1.debian.tar.xz' python-rospkg_1.0.41-1.debian.tar.xz 1032 SHA256:baeaea5b0040113b4bbfe6ecbcbc779dedd5305ca306515c9b16b5d0db8bb904
+```
 
 ### `dpkg` source package: `python-setuptools=3.3-1ubuntu2`
 
