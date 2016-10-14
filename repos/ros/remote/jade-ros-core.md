@@ -1,7 +1,7 @@
 ## `ros:jade-ros-core`
 
 ```console
-$ docker pull ros@sha256:54bb342db0d75b309abd23b479730c8e5a336ce85329bdd31987cbf8ef799946
+$ docker pull ros@sha256:41cb2c2a9e19f923ea408f8900861966cf8db8f50454ed0e1dcdf324dde6eda2
 ```
 
 -	Platforms:

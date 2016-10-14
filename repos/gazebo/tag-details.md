@@ -15,7 +15,7 @@
 ## `gazebo:gzserver4`
 
 ```console
-$ docker pull gazebo@sha256:392787ff894265945f89f33a7850388efc3e6fafaaacde7e9ad09e0fa93dff2e
+$ docker pull gazebo@sha256:73a9dfd5f33f7df07409a0b387c85720f582e4f16ff51639597d96e835e93fc0
 ```
 
 -	Platforms:
@@ -23,81 +23,87 @@ $ docker pull gazebo@sha256:392787ff894265945f89f33a7850388efc3e6fafaaacde7e9ad0
 
 ### `gazebo:gzserver4` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **210.0 MB (209967443 bytes)**  
+-	Total Size: **209.9 MB (209941673 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:14cbce53d235a17cebd98f16243812763f5202efb184ad89c3eef58c1b4f8a84`
+-	Image ID: `sha256:11cc14b6b03a9e3e45e24a395e5b2f3a557e9485723ea4c244c0386187d73e35`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
 ```dockerfile
-# Fri, 24 Jun 2016 17:29:06 GMT
-ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
-# Fri, 24 Jun 2016 17:29:10 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 24 Jun 2016 17:29:11 GMT
+# Thu, 13 Oct 2016 21:13:01 GMT
+ADD file:bc2e0eb31424a88aadc42486b6762c321e3457527daa43bcad45819d38c3a2ed in / 
+# Thu, 13 Oct 2016 21:13:02 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Thu, 13 Oct 2016 21:13:03 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 17:29:13 GMT
+# Thu, 13 Oct 2016 21:13:04 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 24 Jun 2016 17:29:14 GMT
+# Thu, 13 Oct 2016 21:13:05 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Thu, 13 Oct 2016 21:13:06 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Jun 2016 18:33:26 GMT
+# Thu, 13 Oct 2016 23:12:27 GMT
 MAINTAINER Steven Peters scpeters+buildfarm@osrfoundation.org
-# Fri, 24 Jun 2016 18:33:44 GMT
+# Thu, 13 Oct 2016 23:12:29 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
-# Fri, 24 Jun 2016 18:33:45 GMT
+# Thu, 13 Oct 2016 23:12:30 GMT
 RUN echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Fri, 24 Jun 2016 18:35:47 GMT
+# Thu, 13 Oct 2016 23:13:34 GMT
 RUN apt-get update && apt-get install -q -y     gazebo4=4.1.3*     && rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 18:35:49 GMT
+# Thu, 13 Oct 2016 23:13:35 GMT
 EXPOSE 11345/tcp
-# Fri, 24 Jun 2016 18:35:51 GMT
-COPY file:5869092530419fa234b6d43a32bf8687d0d509fced55597b2e241dd58b3d1335 in /
-# Fri, 24 Jun 2016 18:35:52 GMT
-ENTRYPOINT &{["/gzserver_entrypoint.sh"]}
-# Fri, 24 Jun 2016 18:35:52 GMT
+# Thu, 13 Oct 2016 23:13:35 GMT
+COPY file:5869092530419fa234b6d43a32bf8687d0d509fced55597b2e241dd58b3d1335 in / 
+# Thu, 13 Oct 2016 23:13:36 GMT
+ENTRYPOINT ["/gzserver_entrypoint.sh"]
+# Thu, 13 Oct 2016 23:13:36 GMT
 CMD ["gzserver"]
 ```
 
 -	Layers:
-	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
-		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
-		Size: 65.7 MB (65699368 bytes)  
+	-	`sha256:bf5d463153227eaf2c0a3d3f479bb5f2357f060fbce8088e61b2329d3d312d0c`  
+		Last Modified: Thu, 13 Oct 2016 21:14:45 GMT  
+		Size: 65.7 MB (65703010 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 101.4 KB (101415 bytes)  
+	-	`sha256:9f13e0ac480c2c862ae7aca8536bf2250b4d410468e6d33dc2f8ade1d368e184`  
+		Last Modified: Thu, 13 Oct 2016 21:14:23 GMT  
+		Size: 71.5 KB (71550 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 365.0 B  
+	-	`sha256:e8988b5b3097ba5b9f10f45cd3545adea8b70bf9779f987d5b99cca08be818c3`  
+		Last Modified: Thu, 13 Oct 2016 21:14:22 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 681.0 B  
+	-	`sha256:40af181810e71ae2b871c81aed2bc990d2748f0e11adedda056f12cb4af08712`  
+		Last Modified: Thu, 13 Oct 2016 21:14:23 GMT  
+		Size: 678.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:654eb25264349aa69f086eddbab0eab960282d006ef74541469de64b125f8304`  
-		Last Modified: Fri, 24 Jun 2016 18:35:59 GMT  
-		Size: 13.1 KB (13107 bytes)  
+	-	`sha256:e6f7c7e5c03ef6687a44551a4675336e6500f5379f4cc7e5b14b20ac05f127c4`  
+		Last Modified: Thu, 13 Oct 2016 21:14:22 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d8d3681a6e347340e978761403c316aae3fe8a221f0a4eecb7882d8bc891ba6`  
-		Last Modified: Fri, 24 Jun 2016 18:36:00 GMT  
-		Size: 258.2 KB (258156 bytes)  
+	-	`sha256:a7b726c2f9bda2ba796bc3d4df533c8dcc31f64e8bc2b66d0557a21f795703d9`  
+		Last Modified: Thu, 13 Oct 2016 23:31:01 GMT  
+		Size: 13.1 KB (13103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:95b23616c88b7026065b2a03a8f4cdd96b6d20294fb16edde7cd4c455e86cf04`  
-		Last Modified: Fri, 24 Jun 2016 18:36:34 GMT  
-		Size: 143.9 MB (143894160 bytes)  
+	-	`sha256:966872b650b159f9ef5c396b8901e9fe3d9db7f3d7d83259846a34ad9ebd30f0`  
+		Last Modified: Thu, 13 Oct 2016 23:31:02 GMT  
+		Size: 258.1 KB (258126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4f87d95a220a2bba62b3fd7769e261672746f5b0dbe8f010882a18d1889c166`  
-		Last Modified: Fri, 24 Jun 2016 18:35:59 GMT  
-		Size: 191.0 B  
+	-	`sha256:817dfbb5feb3c1e8809e0a8a79afcd6967697bce568dc701bc8f894d197b0047`  
+		Last Modified: Thu, 13 Oct 2016 23:31:47 GMT  
+		Size: 143.9 MB (143894493 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ebeb7991f72b3a1eb65884aadeba38e413bb5dbf2061602abd18fcd4f611096b`  
+		Last Modified: Thu, 13 Oct 2016 23:31:02 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `gazebo:libgazebo4`
 
 ```console
-$ docker pull gazebo@sha256:2b2ac8d7ff0d4b92d356f673cdd4311d54cf4b13db54825e66b7850dabc60001
+$ docker pull gazebo@sha256:99a822adb3327f33d3d02fb1359f30a5416573631692178c5f9c878999125c46
 ```
 
 -	Platforms:
@@ -105,95 +111,95 @@ $ docker pull gazebo@sha256:2b2ac8d7ff0d4b92d356f673cdd4311d54cf4b13db54825e66b7
 
 ### `gazebo:libgazebo4` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **440.9 MB (440880767 bytes)**  
+-	Docker Version: 1.12.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **440.9 MB (440928939 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `d4c899c9fd8843606077432c99edac770433babc0dab7d42c880fbe0d4cc11b5`
+-	Image ID: `sha256:0a219228007cf8e8e7078f64228e17eaf35d46aea6fcbafbcacd8e80cfe07be3`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
 ```dockerfile
-# Tue, 03 May 2016 23:10:55 GMT
-ADD file:b64f702c5b33d12426b57d1e25d5c6de0f2331d390d78b6dff16289914ad6098 in /
-# Tue, 03 May 2016 23:11:00 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Tue, 03 May 2016 23:11:02 GMT
+# Thu, 13 Oct 2016 21:13:01 GMT
+ADD file:bc2e0eb31424a88aadc42486b6762c321e3457527daa43bcad45819d38c3a2ed in / 
+# Thu, 13 Oct 2016 21:13:02 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Thu, 13 Oct 2016 21:13:03 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 03 May 2016 23:11:03 GMT
+# Thu, 13 Oct 2016 21:13:04 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Tue, 03 May 2016 23:11:04 GMT
+# Thu, 13 Oct 2016 21:13:05 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Thu, 13 Oct 2016 21:13:06 GMT
 CMD ["/bin/bash"]
-# Thu, 05 May 2016 07:54:57 GMT
+# Thu, 13 Oct 2016 23:12:27 GMT
 MAINTAINER Steven Peters scpeters+buildfarm@osrfoundation.org
-# Thu, 05 May 2016 07:55:08 GMT
+# Thu, 13 Oct 2016 23:12:29 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
-# Thu, 05 May 2016 07:55:10 GMT
+# Thu, 13 Oct 2016 23:12:30 GMT
 RUN echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Thu, 05 May 2016 07:56:32 GMT
+# Thu, 13 Oct 2016 23:13:34 GMT
 RUN apt-get update && apt-get install -q -y     gazebo4=4.1.3*     && rm -rf /var/lib/apt/lists/*
-# Thu, 05 May 2016 07:56:35 GMT
+# Thu, 13 Oct 2016 23:13:35 GMT
 EXPOSE 11345/tcp
-# Thu, 05 May 2016 07:56:36 GMT
-COPY file:cf363986766dbc3a89db72970f261ead18c8314539e0041f16f3f35c98e6a424 in /
-# Thu, 05 May 2016 07:56:36 GMT
-ENTRYPOINT &{["/gzserver_entrypoint.sh"]}
-# Thu, 05 May 2016 07:56:37 GMT
+# Thu, 13 Oct 2016 23:13:35 GMT
+COPY file:5869092530419fa234b6d43a32bf8687d0d509fced55597b2e241dd58b3d1335 in / 
+# Thu, 13 Oct 2016 23:13:36 GMT
+ENTRYPOINT ["/gzserver_entrypoint.sh"]
+# Thu, 13 Oct 2016 23:13:36 GMT
 CMD ["gzserver"]
-# Thu, 05 May 2016 07:56:38 GMT
+# Thu, 13 Oct 2016 23:13:36 GMT
 MAINTAINER Steven Peters scpeters+buildfarm@osrfoundation.org
-# Thu, 05 May 2016 08:00:14 GMT
-RUN apt-get update && apt-get install -q -y\
-     libgazebo4-dev=4.1.3*\
-     && rm -rf /var/lib/apt/lists/*
+# Thu, 13 Oct 2016 23:16:38 GMT
+RUN apt-get update && apt-get install -q -y     libgazebo4-dev=4.1.3*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:c7b8f85f8067a94bb31a13a15602bda53c6b1d213da9b43b85711f8d44994c2b`  
-		Last Modified: Fri, 06 May 2016 16:28:30 GMT  
-		Size: 231.0 MB (230972400 bytes)  
-		MIME: application/octet-stream
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B  
-		MIME: application/octet-stream
-	-	`sha256:c2d11fc7053715b17bb3201f8b7f0e6d49b325314350828de77b8ad7c757fd0a`  
-		Last Modified: Thu, 20 Aug 2015 01:38:05 GMT  
-		Size: 191.0 B  
-		MIME: application/octet-stream
-	-	`sha256:0bc291156ed70a8f7279e0e4fe29c57876a813f447781bb7bec0fa7c9e73339d`  
-		Last Modified: Fri, 06 May 2016 16:24:38 GMT  
-		Size: 143.9 MB (143871085 bytes)  
-		MIME: application/octet-stream
-	-	`sha256:877e1219535f0fbf18cad51b5693defe3e285200ad5bcbe267354604fe471da4`  
-		Last Modified: Fri, 06 May 2016 16:25:01 GMT  
-		Size: 258.2 KB (258180 bytes)  
-		MIME: application/octet-stream
-	-	`sha256:04943db5ba6c335f810572d4123f85c613bd4faa824a4533145f3ec5f30e86f7`  
-		Last Modified: Fri, 06 May 2016 16:25:05 GMT  
-		Size: 13.1 KB (13106 bytes)  
-		MIME: application/octet-stream
-	-	`sha256:52de432f084bc072024d55b0f483358b607d0cf46d7053e3b6aefc98beaf27bf`  
-		Last Modified: Tue, 03 May 2016 23:14:32 GMT  
-		Size: 680.0 B  
-		MIME: application/octet-stream
-	-	`sha256:f0be3084efe90c704df85e3bff8df5d858e1ff546511c8306d80de561cc18fb5`  
-		Last Modified: Tue, 03 May 2016 23:14:36 GMT  
-		Size: 365.0 B  
-		MIME: application/octet-stream
-	-	`sha256:23eda618d4513331d49c6de76aaa051919f7b57752bcd8fee3cba37f816cbafd`  
-		Last Modified: Tue, 03 May 2016 23:14:39 GMT  
-		Size: 71.5 KB (71481 bytes)  
-		MIME: application/octet-stream
-	-	`sha256:6599cadaf950a71af51aa84b85e6cdb1990287b79f8e71a78f6986b318d4c4a0`  
-		Last Modified: Tue, 03 May 2016 23:15:04 GMT  
-		Size: 65.7 MB (65693247 bytes)  
-		MIME: application/octet-stream
+	-	`sha256:bf5d463153227eaf2c0a3d3f479bb5f2357f060fbce8088e61b2329d3d312d0c`  
+		Last Modified: Thu, 13 Oct 2016 21:14:45 GMT  
+		Size: 65.7 MB (65703010 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9f13e0ac480c2c862ae7aca8536bf2250b4d410468e6d33dc2f8ade1d368e184`  
+		Last Modified: Thu, 13 Oct 2016 21:14:23 GMT  
+		Size: 71.5 KB (71550 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e8988b5b3097ba5b9f10f45cd3545adea8b70bf9779f987d5b99cca08be818c3`  
+		Last Modified: Thu, 13 Oct 2016 21:14:22 GMT  
+		Size: 364.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:40af181810e71ae2b871c81aed2bc990d2748f0e11adedda056f12cb4af08712`  
+		Last Modified: Thu, 13 Oct 2016 21:14:23 GMT  
+		Size: 678.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e6f7c7e5c03ef6687a44551a4675336e6500f5379f4cc7e5b14b20ac05f127c4`  
+		Last Modified: Thu, 13 Oct 2016 21:14:22 GMT  
+		Size: 162.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a7b726c2f9bda2ba796bc3d4df533c8dcc31f64e8bc2b66d0557a21f795703d9`  
+		Last Modified: Thu, 13 Oct 2016 23:31:01 GMT  
+		Size: 13.1 KB (13103 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:966872b650b159f9ef5c396b8901e9fe3d9db7f3d7d83259846a34ad9ebd30f0`  
+		Last Modified: Thu, 13 Oct 2016 23:31:02 GMT  
+		Size: 258.1 KB (258126 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:817dfbb5feb3c1e8809e0a8a79afcd6967697bce568dc701bc8f894d197b0047`  
+		Last Modified: Thu, 13 Oct 2016 23:31:47 GMT  
+		Size: 143.9 MB (143894493 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ebeb7991f72b3a1eb65884aadeba38e413bb5dbf2061602abd18fcd4f611096b`  
+		Last Modified: Thu, 13 Oct 2016 23:31:02 GMT  
+		Size: 187.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d680cfeb27056531f05ea12ed482ee8c4bff4619d60d71617866079a1d395b37`  
+		Last Modified: Thu, 13 Oct 2016 23:33:32 GMT  
+		Size: 231.0 MB (230987266 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `gazebo:gzserver5`
 
 ```console
-$ docker pull gazebo@sha256:f479fd3338b9c278c61c541dea11a345aa4c92ff850252c82a79cd9f1ea7ae57
+$ docker pull gazebo@sha256:ce96efa3faab2f5975e3694d929cdb91ddc197fc3dc2945af8d9fde868e7b65f
 ```
 
 -	Platforms:
@@ -201,81 +207,87 @@ $ docker pull gazebo@sha256:f479fd3338b9c278c61c541dea11a345aa4c92ff850252c82a79
 
 ### `gazebo:gzserver5` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **230.6 MB (230581756 bytes)**  
+-	Total Size: **230.5 MB (230541658 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:006a29e47f6a3cf30730634a6df92256d6fafc67225cdbb6001be90c6356ca35`
+-	Image ID: `sha256:7ddfd9a604cd8ba644267fa551b03f402c69bda54e6143e6658593dd5b4e9a9a`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
 ```dockerfile
-# Fri, 24 Jun 2016 17:29:06 GMT
-ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
-# Fri, 24 Jun 2016 17:29:10 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 24 Jun 2016 17:29:11 GMT
+# Thu, 13 Oct 2016 21:13:01 GMT
+ADD file:bc2e0eb31424a88aadc42486b6762c321e3457527daa43bcad45819d38c3a2ed in / 
+# Thu, 13 Oct 2016 21:13:02 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Thu, 13 Oct 2016 21:13:03 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 17:29:13 GMT
+# Thu, 13 Oct 2016 21:13:04 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 24 Jun 2016 17:29:14 GMT
+# Thu, 13 Oct 2016 21:13:05 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Thu, 13 Oct 2016 21:13:06 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Jun 2016 18:33:26 GMT
+# Thu, 13 Oct 2016 23:12:27 GMT
 MAINTAINER Steven Peters scpeters+buildfarm@osrfoundation.org
-# Fri, 24 Jun 2016 18:33:44 GMT
+# Thu, 13 Oct 2016 23:12:29 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
-# Fri, 24 Jun 2016 18:33:45 GMT
+# Thu, 13 Oct 2016 23:12:30 GMT
 RUN echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Fri, 24 Jun 2016 18:42:45 GMT
+# Thu, 13 Oct 2016 23:17:48 GMT
 RUN apt-get update && apt-get install -q -y     gazebo5=5.3.0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 18:42:47 GMT
+# Thu, 13 Oct 2016 23:17:48 GMT
 EXPOSE 11345/tcp
-# Fri, 24 Jun 2016 18:42:48 GMT
-COPY file:5869092530419fa234b6d43a32bf8687d0d509fced55597b2e241dd58b3d1335 in /
-# Fri, 24 Jun 2016 18:42:49 GMT
-ENTRYPOINT &{["/gzserver_entrypoint.sh"]}
-# Fri, 24 Jun 2016 18:42:49 GMT
+# Thu, 13 Oct 2016 23:17:49 GMT
+COPY file:5869092530419fa234b6d43a32bf8687d0d509fced55597b2e241dd58b3d1335 in / 
+# Thu, 13 Oct 2016 23:17:49 GMT
+ENTRYPOINT ["/gzserver_entrypoint.sh"]
+# Thu, 13 Oct 2016 23:17:49 GMT
 CMD ["gzserver"]
 ```
 
 -	Layers:
-	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
-		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
-		Size: 65.7 MB (65699368 bytes)  
+	-	`sha256:bf5d463153227eaf2c0a3d3f479bb5f2357f060fbce8088e61b2329d3d312d0c`  
+		Last Modified: Thu, 13 Oct 2016 21:14:45 GMT  
+		Size: 65.7 MB (65703010 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 101.4 KB (101415 bytes)  
+	-	`sha256:9f13e0ac480c2c862ae7aca8536bf2250b4d410468e6d33dc2f8ade1d368e184`  
+		Last Modified: Thu, 13 Oct 2016 21:14:23 GMT  
+		Size: 71.5 KB (71550 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 365.0 B  
+	-	`sha256:e8988b5b3097ba5b9f10f45cd3545adea8b70bf9779f987d5b99cca08be818c3`  
+		Last Modified: Thu, 13 Oct 2016 21:14:22 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 681.0 B  
+	-	`sha256:40af181810e71ae2b871c81aed2bc990d2748f0e11adedda056f12cb4af08712`  
+		Last Modified: Thu, 13 Oct 2016 21:14:23 GMT  
+		Size: 678.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:654eb25264349aa69f086eddbab0eab960282d006ef74541469de64b125f8304`  
-		Last Modified: Fri, 24 Jun 2016 18:35:59 GMT  
-		Size: 13.1 KB (13107 bytes)  
+	-	`sha256:e6f7c7e5c03ef6687a44551a4675336e6500f5379f4cc7e5b14b20ac05f127c4`  
+		Last Modified: Thu, 13 Oct 2016 21:14:22 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d8d3681a6e347340e978761403c316aae3fe8a221f0a4eecb7882d8bc891ba6`  
-		Last Modified: Fri, 24 Jun 2016 18:36:00 GMT  
-		Size: 258.2 KB (258156 bytes)  
+	-	`sha256:a7b726c2f9bda2ba796bc3d4df533c8dcc31f64e8bc2b66d0557a21f795703d9`  
+		Last Modified: Thu, 13 Oct 2016 23:31:01 GMT  
+		Size: 13.1 KB (13103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:055f55c05ba24f0ec52ffb34c648601da7fa89d46fafb1fd380c598c6beadadf`  
-		Last Modified: Fri, 24 Jun 2016 18:43:49 GMT  
-		Size: 164.5 MB (164508472 bytes)  
+	-	`sha256:966872b650b159f9ef5c396b8901e9fe3d9db7f3d7d83259846a34ad9ebd30f0`  
+		Last Modified: Thu, 13 Oct 2016 23:31:02 GMT  
+		Size: 258.1 KB (258126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72b52ca9df54724f1a24021d0bf624d809fd407d2d2165f493e876561ab2485c`  
-		Last Modified: Fri, 24 Jun 2016 18:42:56 GMT  
-		Size: 192.0 B  
+	-	`sha256:cfe8e268aa477ca1a2d984f5c782a0fd7dfecd3243bd4c9752837be258547e09`  
+		Last Modified: Thu, 13 Oct 2016 23:34:47 GMT  
+		Size: 164.5 MB (164494476 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1795a73429c7feb4f1bcce25716fb0080584af604c8157b45922cf0da030cf6d`  
+		Last Modified: Thu, 13 Oct 2016 23:33:55 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `gazebo:libgazebo5`
 
 ```console
-$ docker pull gazebo@sha256:d2ca59df7f58e4d1cb69bd9b3e95752b27f0408bb3d29ff730fbf1cf10fe422b
+$ docker pull gazebo@sha256:f58ecc4ec3a8a29fca1ccddf543083584787ca15423a623940091fe030cdf443
 ```
 
 -	Platforms:
@@ -283,95 +295,95 @@ $ docker pull gazebo@sha256:d2ca59df7f58e4d1cb69bd9b3e95752b27f0408bb3d29ff730fb
 
 ### `gazebo:libgazebo5` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **490.4 MB (490429970 bytes)**  
+-	Docker Version: 1.12.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **490.5 MB (490466545 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `684c36520970f5ea213ae2717177d6f7f9c31221425d9f037cc154e263a6fbf4`
+-	Image ID: `sha256:d0906a184c5e75aa6682e66c803ce655b98e965a1ce3e72e46e828b41982aa22`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
 ```dockerfile
-# Tue, 03 May 2016 23:10:55 GMT
-ADD file:b64f702c5b33d12426b57d1e25d5c6de0f2331d390d78b6dff16289914ad6098 in /
-# Tue, 03 May 2016 23:11:00 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Tue, 03 May 2016 23:11:02 GMT
+# Thu, 13 Oct 2016 21:13:01 GMT
+ADD file:bc2e0eb31424a88aadc42486b6762c321e3457527daa43bcad45819d38c3a2ed in / 
+# Thu, 13 Oct 2016 21:13:02 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Thu, 13 Oct 2016 21:13:03 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 03 May 2016 23:11:03 GMT
+# Thu, 13 Oct 2016 21:13:04 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Tue, 03 May 2016 23:11:04 GMT
+# Thu, 13 Oct 2016 21:13:05 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Thu, 13 Oct 2016 21:13:06 GMT
 CMD ["/bin/bash"]
-# Thu, 05 May 2016 07:54:57 GMT
+# Thu, 13 Oct 2016 23:12:27 GMT
 MAINTAINER Steven Peters scpeters+buildfarm@osrfoundation.org
-# Thu, 05 May 2016 07:55:08 GMT
+# Thu, 13 Oct 2016 23:12:29 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
-# Thu, 05 May 2016 07:55:10 GMT
+# Thu, 13 Oct 2016 23:12:30 GMT
 RUN echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Thu, 05 May 2016 08:03:30 GMT
+# Thu, 13 Oct 2016 23:17:48 GMT
 RUN apt-get update && apt-get install -q -y     gazebo5=5.3.0*     && rm -rf /var/lib/apt/lists/*
-# Thu, 05 May 2016 08:03:33 GMT
+# Thu, 13 Oct 2016 23:17:48 GMT
 EXPOSE 11345/tcp
-# Thu, 05 May 2016 08:03:34 GMT
-COPY file:cf363986766dbc3a89db72970f261ead18c8314539e0041f16f3f35c98e6a424 in /
-# Thu, 05 May 2016 08:03:35 GMT
-ENTRYPOINT &{["/gzserver_entrypoint.sh"]}
-# Thu, 05 May 2016 08:03:35 GMT
+# Thu, 13 Oct 2016 23:17:49 GMT
+COPY file:5869092530419fa234b6d43a32bf8687d0d509fced55597b2e241dd58b3d1335 in / 
+# Thu, 13 Oct 2016 23:17:49 GMT
+ENTRYPOINT ["/gzserver_entrypoint.sh"]
+# Thu, 13 Oct 2016 23:17:49 GMT
 CMD ["gzserver"]
-# Thu, 05 May 2016 08:03:36 GMT
+# Thu, 13 Oct 2016 23:17:50 GMT
 MAINTAINER Steven Peters scpeters+buildfarm@osrfoundation.org
-# Thu, 05 May 2016 08:06:38 GMT
-RUN apt-get update && apt-get install -q -y\
-     libgazebo5-dev=5.3.0*\
-     && rm -rf /var/lib/apt/lists/*
+# Thu, 13 Oct 2016 23:21:08 GMT
+RUN apt-get update && apt-get install -q -y     libgazebo5-dev=5.3.0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:ece183f99443eb27c913c4d98913c016bc0d53afd555871d876f18bf87d5b29f`  
-		Last Modified: Fri, 06 May 2016 16:32:46 GMT  
-		Size: 259.9 MB (259906801 bytes)  
-		MIME: application/octet-stream
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B  
-		MIME: application/octet-stream
-	-	`sha256:d731cfd76aead22b734fad2f1846df7049e7c908972bf046983a9af15162e6ee`  
-		Last Modified: Tue, 28 Jul 2015 18:14:33 GMT  
-		Size: 192.0 B  
-		MIME: application/octet-stream
-	-	`sha256:b1bd5b3396625978ae459c6737b519e52820e238bf231e3187cbd977e82859a8`  
-		Last Modified: Fri, 06 May 2016 16:30:06 GMT  
-		Size: 164.5 MB (164485886 bytes)  
-		MIME: application/octet-stream
-	-	`sha256:877e1219535f0fbf18cad51b5693defe3e285200ad5bcbe267354604fe471da4`  
-		Last Modified: Fri, 06 May 2016 16:25:01 GMT  
-		Size: 258.2 KB (258180 bytes)  
-		MIME: application/octet-stream
-	-	`sha256:04943db5ba6c335f810572d4123f85c613bd4faa824a4533145f3ec5f30e86f7`  
-		Last Modified: Fri, 06 May 2016 16:25:05 GMT  
-		Size: 13.1 KB (13106 bytes)  
-		MIME: application/octet-stream
-	-	`sha256:52de432f084bc072024d55b0f483358b607d0cf46d7053e3b6aefc98beaf27bf`  
-		Last Modified: Tue, 03 May 2016 23:14:32 GMT  
-		Size: 680.0 B  
-		MIME: application/octet-stream
-	-	`sha256:f0be3084efe90c704df85e3bff8df5d858e1ff546511c8306d80de561cc18fb5`  
-		Last Modified: Tue, 03 May 2016 23:14:36 GMT  
-		Size: 365.0 B  
-		MIME: application/octet-stream
-	-	`sha256:23eda618d4513331d49c6de76aaa051919f7b57752bcd8fee3cba37f816cbafd`  
-		Last Modified: Tue, 03 May 2016 23:14:39 GMT  
-		Size: 71.5 KB (71481 bytes)  
-		MIME: application/octet-stream
-	-	`sha256:6599cadaf950a71af51aa84b85e6cdb1990287b79f8e71a78f6986b318d4c4a0`  
-		Last Modified: Tue, 03 May 2016 23:15:04 GMT  
-		Size: 65.7 MB (65693247 bytes)  
-		MIME: application/octet-stream
+	-	`sha256:bf5d463153227eaf2c0a3d3f479bb5f2357f060fbce8088e61b2329d3d312d0c`  
+		Last Modified: Thu, 13 Oct 2016 21:14:45 GMT  
+		Size: 65.7 MB (65703010 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9f13e0ac480c2c862ae7aca8536bf2250b4d410468e6d33dc2f8ade1d368e184`  
+		Last Modified: Thu, 13 Oct 2016 21:14:23 GMT  
+		Size: 71.5 KB (71550 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e8988b5b3097ba5b9f10f45cd3545adea8b70bf9779f987d5b99cca08be818c3`  
+		Last Modified: Thu, 13 Oct 2016 21:14:22 GMT  
+		Size: 364.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:40af181810e71ae2b871c81aed2bc990d2748f0e11adedda056f12cb4af08712`  
+		Last Modified: Thu, 13 Oct 2016 21:14:23 GMT  
+		Size: 678.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e6f7c7e5c03ef6687a44551a4675336e6500f5379f4cc7e5b14b20ac05f127c4`  
+		Last Modified: Thu, 13 Oct 2016 21:14:22 GMT  
+		Size: 162.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a7b726c2f9bda2ba796bc3d4df533c8dcc31f64e8bc2b66d0557a21f795703d9`  
+		Last Modified: Thu, 13 Oct 2016 23:31:01 GMT  
+		Size: 13.1 KB (13103 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:966872b650b159f9ef5c396b8901e9fe3d9db7f3d7d83259846a34ad9ebd30f0`  
+		Last Modified: Thu, 13 Oct 2016 23:31:02 GMT  
+		Size: 258.1 KB (258126 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cfe8e268aa477ca1a2d984f5c782a0fd7dfecd3243bd4c9752837be258547e09`  
+		Last Modified: Thu, 13 Oct 2016 23:34:47 GMT  
+		Size: 164.5 MB (164494476 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1795a73429c7feb4f1bcce25716fb0080584af604c8157b45922cf0da030cf6d`  
+		Last Modified: Thu, 13 Oct 2016 23:33:55 GMT  
+		Size: 189.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ac48235680aa67ccb4f3337486964ff6cbc39323b36e19cbd79df74cce2eaa57`  
+		Last Modified: Thu, 13 Oct 2016 23:36:45 GMT  
+		Size: 259.9 MB (259924887 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `gazebo:gzserver6`
 
 ```console
-$ docker pull gazebo@sha256:1fb6b938ad67affff45706a1496a1c3061e3201a82dc050f269ad7f3f8225cda
+$ docker pull gazebo@sha256:95c191e19aa291a637aa5d87880a3289433583cb13371d050769fa2ec05865c4
 ```
 
 -	Platforms:
@@ -379,81 +391,87 @@ $ docker pull gazebo@sha256:1fb6b938ad67affff45706a1496a1c3061e3201a82dc050f269a
 
 ### `gazebo:gzserver6` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **234.6 MB (234595183 bytes)**  
+-	Total Size: **234.6 MB (234570909 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e10ae426601566c2cf7951aba7b78fec8d7efec3ca8a1d4545a339243c7f86b`
+-	Image ID: `sha256:fafe472620b6e03d674151132eb1fdc6d9bc3f2787bacdf131a7460b6ad0dcf1`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
 ```dockerfile
-# Fri, 24 Jun 2016 17:29:06 GMT
-ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
-# Fri, 24 Jun 2016 17:29:10 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 24 Jun 2016 17:29:11 GMT
+# Thu, 13 Oct 2016 21:13:01 GMT
+ADD file:bc2e0eb31424a88aadc42486b6762c321e3457527daa43bcad45819d38c3a2ed in / 
+# Thu, 13 Oct 2016 21:13:02 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Thu, 13 Oct 2016 21:13:03 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 17:29:13 GMT
+# Thu, 13 Oct 2016 21:13:04 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 24 Jun 2016 17:29:14 GMT
+# Thu, 13 Oct 2016 21:13:05 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Thu, 13 Oct 2016 21:13:06 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Jun 2016 18:33:26 GMT
+# Thu, 13 Oct 2016 23:12:27 GMT
 MAINTAINER Steven Peters scpeters+buildfarm@osrfoundation.org
-# Fri, 24 Jun 2016 18:33:44 GMT
+# Thu, 13 Oct 2016 23:12:29 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
-# Fri, 24 Jun 2016 18:33:45 GMT
+# Thu, 13 Oct 2016 23:12:30 GMT
 RUN echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Fri, 24 Jun 2016 18:46:10 GMT
+# Thu, 13 Oct 2016 23:22:22 GMT
 RUN apt-get update && apt-get install -q -y     gazebo6=6.6.0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 18:46:12 GMT
+# Thu, 13 Oct 2016 23:22:23 GMT
 EXPOSE 11345/tcp
-# Fri, 24 Jun 2016 18:46:13 GMT
-COPY file:5869092530419fa234b6d43a32bf8687d0d509fced55597b2e241dd58b3d1335 in /
-# Fri, 24 Jun 2016 18:46:13 GMT
-ENTRYPOINT &{["/gzserver_entrypoint.sh"]}
-# Fri, 24 Jun 2016 18:46:14 GMT
+# Thu, 13 Oct 2016 23:22:23 GMT
+COPY file:5869092530419fa234b6d43a32bf8687d0d509fced55597b2e241dd58b3d1335 in / 
+# Thu, 13 Oct 2016 23:22:23 GMT
+ENTRYPOINT ["/gzserver_entrypoint.sh"]
+# Thu, 13 Oct 2016 23:22:24 GMT
 CMD ["gzserver"]
 ```
 
 -	Layers:
-	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
-		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
-		Size: 65.7 MB (65699368 bytes)  
+	-	`sha256:bf5d463153227eaf2c0a3d3f479bb5f2357f060fbce8088e61b2329d3d312d0c`  
+		Last Modified: Thu, 13 Oct 2016 21:14:45 GMT  
+		Size: 65.7 MB (65703010 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 101.4 KB (101415 bytes)  
+	-	`sha256:9f13e0ac480c2c862ae7aca8536bf2250b4d410468e6d33dc2f8ade1d368e184`  
+		Last Modified: Thu, 13 Oct 2016 21:14:23 GMT  
+		Size: 71.5 KB (71550 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 365.0 B  
+	-	`sha256:e8988b5b3097ba5b9f10f45cd3545adea8b70bf9779f987d5b99cca08be818c3`  
+		Last Modified: Thu, 13 Oct 2016 21:14:22 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 681.0 B  
+	-	`sha256:40af181810e71ae2b871c81aed2bc990d2748f0e11adedda056f12cb4af08712`  
+		Last Modified: Thu, 13 Oct 2016 21:14:23 GMT  
+		Size: 678.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:654eb25264349aa69f086eddbab0eab960282d006ef74541469de64b125f8304`  
-		Last Modified: Fri, 24 Jun 2016 18:35:59 GMT  
-		Size: 13.1 KB (13107 bytes)  
+	-	`sha256:e6f7c7e5c03ef6687a44551a4675336e6500f5379f4cc7e5b14b20ac05f127c4`  
+		Last Modified: Thu, 13 Oct 2016 21:14:22 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d8d3681a6e347340e978761403c316aae3fe8a221f0a4eecb7882d8bc891ba6`  
-		Last Modified: Fri, 24 Jun 2016 18:36:00 GMT  
-		Size: 258.2 KB (258156 bytes)  
+	-	`sha256:a7b726c2f9bda2ba796bc3d4df533c8dcc31f64e8bc2b66d0557a21f795703d9`  
+		Last Modified: Thu, 13 Oct 2016 23:31:01 GMT  
+		Size: 13.1 KB (13103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:345e4503741cb926152a49c75bb506825f18dc7dc14042c57568fdcaa2a90e7e`  
-		Last Modified: Fri, 24 Jun 2016 18:46:59 GMT  
-		Size: 168.5 MB (168521900 bytes)  
+	-	`sha256:966872b650b159f9ef5c396b8901e9fe3d9db7f3d7d83259846a34ad9ebd30f0`  
+		Last Modified: Thu, 13 Oct 2016 23:31:02 GMT  
+		Size: 258.1 KB (258126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37ccaded634c0e5c962b675e0ba05850b47485c3819a4bb8560982a2482c6210`  
-		Last Modified: Fri, 24 Jun 2016 18:46:20 GMT  
-		Size: 191.0 B  
+	-	`sha256:1858bf2187cf771d3469caf4c41baf277f92a5a14be7dcab553ced9c858166d9`  
+		Last Modified: Thu, 13 Oct 2016 23:37:55 GMT  
+		Size: 168.5 MB (168523728 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bdfb39e9421012482b6161ca3cbde9d46d8419d8c97a7ead0187f481125ab286`  
+		Last Modified: Thu, 13 Oct 2016 23:37:02 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `gazebo:libgazebo6`
 
 ```console
-$ docker pull gazebo@sha256:637567758ad5f480b2b6012e8fe818b8e4b35c9f0d3e913b7b4b6a901f68fd01
+$ docker pull gazebo@sha256:42c95803ec20e9a179bd1e91cb4065241b03986dc736c96aade0a8cd68e8f208
 ```
 
 -	Platforms:
@@ -461,89 +479,95 @@ $ docker pull gazebo@sha256:637567758ad5f480b2b6012e8fe818b8e4b35c9f0d3e913b7b4b
 
 ### `gazebo:libgazebo6` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **483.9 MB (483938356 bytes)**  
+-	Total Size: **483.9 MB (483896931 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3dcf7197141cbbae099ad50e6a698a109f9f6039efe0fa26845545a7b0806b7a`
+-	Image ID: `sha256:1f16138b8e9b8d27bad243cbce10c5a17ddfe8a30f7356e8127bf7602ed462ac`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
 ```dockerfile
-# Fri, 24 Jun 2016 17:29:06 GMT
-ADD file:b6ff401cf2a7a08c11d2bdfbfec31c7ec105fd7ab29c529fb90025762b077e2c in /
-# Fri, 24 Jun 2016 17:29:10 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Fri, 24 Jun 2016 17:29:11 GMT
+# Thu, 13 Oct 2016 21:13:01 GMT
+ADD file:bc2e0eb31424a88aadc42486b6762c321e3457527daa43bcad45819d38c3a2ed in / 
+# Thu, 13 Oct 2016 21:13:02 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Thu, 13 Oct 2016 21:13:03 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 17:29:13 GMT
+# Thu, 13 Oct 2016 21:13:04 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 24 Jun 2016 17:29:14 GMT
+# Thu, 13 Oct 2016 21:13:05 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Thu, 13 Oct 2016 21:13:06 GMT
 CMD ["/bin/bash"]
-# Fri, 24 Jun 2016 18:33:26 GMT
+# Thu, 13 Oct 2016 23:12:27 GMT
 MAINTAINER Steven Peters scpeters+buildfarm@osrfoundation.org
-# Fri, 24 Jun 2016 18:33:44 GMT
+# Thu, 13 Oct 2016 23:12:29 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
-# Fri, 24 Jun 2016 18:33:45 GMT
+# Thu, 13 Oct 2016 23:12:30 GMT
 RUN echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Fri, 24 Jun 2016 18:46:10 GMT
+# Thu, 13 Oct 2016 23:22:22 GMT
 RUN apt-get update && apt-get install -q -y     gazebo6=6.6.0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 24 Jun 2016 18:46:12 GMT
+# Thu, 13 Oct 2016 23:22:23 GMT
 EXPOSE 11345/tcp
-# Fri, 24 Jun 2016 18:46:13 GMT
-COPY file:5869092530419fa234b6d43a32bf8687d0d509fced55597b2e241dd58b3d1335 in /
-# Fri, 24 Jun 2016 18:46:13 GMT
-ENTRYPOINT &{["/gzserver_entrypoint.sh"]}
-# Fri, 24 Jun 2016 18:46:14 GMT
+# Thu, 13 Oct 2016 23:22:23 GMT
+COPY file:5869092530419fa234b6d43a32bf8687d0d509fced55597b2e241dd58b3d1335 in / 
+# Thu, 13 Oct 2016 23:22:23 GMT
+ENTRYPOINT ["/gzserver_entrypoint.sh"]
+# Thu, 13 Oct 2016 23:22:24 GMT
 CMD ["gzserver"]
-# Wed, 29 Jun 2016 19:05:57 GMT
+# Thu, 13 Oct 2016 23:22:24 GMT
 MAINTAINER Steven Peters scpeters+buildfarm@osrfoundation.org
-# Wed, 29 Jun 2016 19:10:28 GMT
+# Thu, 13 Oct 2016 23:25:53 GMT
 RUN apt-get update && apt-get install -q -y     libgazebo6-dev=6.6.0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:56eb14001cebec19f2255d95e125c9f5199c9e1d97dd708e1f3ebda3d32e5da7`  
-		Last Modified: Fri, 24 Jun 2016 17:30:48 GMT  
-		Size: 65.7 MB (65699368 bytes)  
+	-	`sha256:bf5d463153227eaf2c0a3d3f479bb5f2357f060fbce8088e61b2329d3d312d0c`  
+		Last Modified: Thu, 13 Oct 2016 21:14:45 GMT  
+		Size: 65.7 MB (65703010 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ff49c327d838cf14f7db33fa44f6057b7209298e9c03369257485a085e231df`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 101.4 KB (101415 bytes)  
+	-	`sha256:9f13e0ac480c2c862ae7aca8536bf2250b4d410468e6d33dc2f8ade1d368e184`  
+		Last Modified: Thu, 13 Oct 2016 21:14:23 GMT  
+		Size: 71.5 KB (71550 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e532f87f96dd5821006d02e65e7d4729a4e6957a34c3f4ec72046e221eb7c52`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 365.0 B  
+	-	`sha256:e8988b5b3097ba5b9f10f45cd3545adea8b70bf9779f987d5b99cca08be818c3`  
+		Last Modified: Thu, 13 Oct 2016 21:14:22 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ce63537e70c2c250fbc41b5f04bfb31f445be4034effc4b4c513bf8899dfa0a`  
-		Last Modified: Fri, 24 Jun 2016 17:30:29 GMT  
-		Size: 681.0 B  
+	-	`sha256:40af181810e71ae2b871c81aed2bc990d2748f0e11adedda056f12cb4af08712`  
+		Last Modified: Thu, 13 Oct 2016 21:14:23 GMT  
+		Size: 678.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:654eb25264349aa69f086eddbab0eab960282d006ef74541469de64b125f8304`  
-		Last Modified: Fri, 24 Jun 2016 18:35:59 GMT  
-		Size: 13.1 KB (13107 bytes)  
+	-	`sha256:e6f7c7e5c03ef6687a44551a4675336e6500f5379f4cc7e5b14b20ac05f127c4`  
+		Last Modified: Thu, 13 Oct 2016 21:14:22 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d8d3681a6e347340e978761403c316aae3fe8a221f0a4eecb7882d8bc891ba6`  
-		Last Modified: Fri, 24 Jun 2016 18:36:00 GMT  
-		Size: 258.2 KB (258156 bytes)  
+	-	`sha256:a7b726c2f9bda2ba796bc3d4df533c8dcc31f64e8bc2b66d0557a21f795703d9`  
+		Last Modified: Thu, 13 Oct 2016 23:31:01 GMT  
+		Size: 13.1 KB (13103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:345e4503741cb926152a49c75bb506825f18dc7dc14042c57568fdcaa2a90e7e`  
-		Last Modified: Fri, 24 Jun 2016 18:46:59 GMT  
-		Size: 168.5 MB (168521900 bytes)  
+	-	`sha256:966872b650b159f9ef5c396b8901e9fe3d9db7f3d7d83259846a34ad9ebd30f0`  
+		Last Modified: Thu, 13 Oct 2016 23:31:02 GMT  
+		Size: 258.1 KB (258126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37ccaded634c0e5c962b675e0ba05850b47485c3819a4bb8560982a2482c6210`  
-		Last Modified: Fri, 24 Jun 2016 18:46:20 GMT  
-		Size: 191.0 B  
+	-	`sha256:1858bf2187cf771d3469caf4c41baf277f92a5a14be7dcab553ced9c858166d9`  
+		Last Modified: Thu, 13 Oct 2016 23:37:55 GMT  
+		Size: 168.5 MB (168523728 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:203d24810001f15290a8bc865510da63cea040c665b631cb8946e072cec03319`  
-		Last Modified: Wed, 29 Jun 2016 19:11:45 GMT  
-		Size: 249.3 MB (249343173 bytes)  
+	-	`sha256:bdfb39e9421012482b6161ca3cbde9d46d8419d8c97a7ead0187f481125ab286`  
+		Last Modified: Thu, 13 Oct 2016 23:37:02 GMT  
+		Size: 188.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2bc898e8e08648f9dfe113e2f3603b23abd399c2ac6a53061d035dab87477821`  
+		Last Modified: Thu, 13 Oct 2016 23:39:51 GMT  
+		Size: 249.3 MB (249326022 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `gazebo:gzserver7`
 
 ```console
-$ docker pull gazebo@sha256:de9f8bba71c92fbead7506af0555dc481aaf2d6d98854e9bd6f5c4ccc9026cb4
+$ docker pull gazebo@sha256:5241d1ecd94d20891b110664cbaffc065eb8afdec917a8bad9a6a2cefd46b238
 ```
 
 -	Platforms:
@@ -551,85 +575,87 @@ $ docker pull gazebo@sha256:de9f8bba71c92fbead7506af0555dc481aaf2d6d98854e9bd6f5
 
 ### `gazebo:gzserver7` - linux; amd64
 
--	Docker Version: 1.9.1
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v1+json`
--	Total Size: **245.0 MB (244998578 bytes)**  
+-	Docker Version: 1.12.1
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **242.4 MB (242431601 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `548b43461c648e3f57d44721f9e468f6900f2e6beeefa4f4014f0533372b41fe`
+-	Image ID: `sha256:b3e7f829d9ece2c460464dc5efe6cf4fe444ad30d8f8efe01695c4579d592fd9`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
 ```dockerfile
-# Tue, 03 May 2016 23:10:55 GMT
-ADD file:b64f702c5b33d12426b57d1e25d5c6de0f2331d390d78b6dff16289914ad6098 in /
-# Tue, 03 May 2016 23:11:00 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Tue, 03 May 2016 23:11:02 GMT
+# Thu, 13 Oct 2016 21:13:01 GMT
+ADD file:bc2e0eb31424a88aadc42486b6762c321e3457527daa43bcad45819d38c3a2ed in / 
+# Thu, 13 Oct 2016 21:13:02 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Thu, 13 Oct 2016 21:13:03 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Tue, 03 May 2016 23:11:03 GMT
+# Thu, 13 Oct 2016 21:13:04 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Tue, 03 May 2016 23:11:04 GMT
+# Thu, 13 Oct 2016 21:13:05 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Thu, 13 Oct 2016 21:13:06 GMT
 CMD ["/bin/bash"]
-# Thu, 05 May 2016 07:54:57 GMT
+# Thu, 13 Oct 2016 23:12:27 GMT
 MAINTAINER Steven Peters scpeters+buildfarm@osrfoundation.org
-# Thu, 05 May 2016 07:55:08 GMT
+# Thu, 13 Oct 2016 23:12:29 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
-# Thu, 05 May 2016 07:55:10 GMT
+# Thu, 13 Oct 2016 23:12:30 GMT
 RUN echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Thu, 05 May 2016 08:17:43 GMT
-RUN apt-get update && apt-get install -q -y     gazebo7=7.1.0*     && rm -rf /var/lib/apt/lists/*
-# Thu, 05 May 2016 08:17:47 GMT
+# Thu, 13 Oct 2016 23:27:11 GMT
+RUN apt-get update && apt-get install -q -y     gazebo7=7.4.0*     && rm -rf /var/lib/apt/lists/*
+# Thu, 13 Oct 2016 23:27:52 GMT
 EXPOSE 11345/tcp
-# Thu, 05 May 2016 08:17:48 GMT
-COPY file:cf363986766dbc3a89db72970f261ead18c8314539e0041f16f3f35c98e6a424 in /
-# Thu, 05 May 2016 08:17:48 GMT
-ENTRYPOINT &{["/gzserver_entrypoint.sh"]}
-# Thu, 05 May 2016 08:17:49 GMT
+# Thu, 13 Oct 2016 23:27:53 GMT
+COPY file:5869092530419fa234b6d43a32bf8687d0d509fced55597b2e241dd58b3d1335 in / 
+# Thu, 13 Oct 2016 23:27:53 GMT
+ENTRYPOINT ["/gzserver_entrypoint.sh"]
+# Thu, 13 Oct 2016 23:27:53 GMT
 CMD ["gzserver"]
 ```
 
 -	Layers:
-	-	`sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4`  
-		Last Modified: Sat, 14 Nov 2015 09:09:44 GMT  
-		Size: 32.0 B  
-		MIME: application/octet-stream
-	-	`sha256:121bd6d3309cfcca9d51c44172ad2140f800229c928080ff87ee5e8e2150b5b0`  
-		Last Modified: Mon, 08 Feb 2016 20:02:02 GMT  
-		Size: 191.0 B  
-		MIME: application/octet-stream
-	-	`sha256:93dad6f9f4f6419a5e286e4d48a1229dfb8b520a4c8e89a1afc9e3b3980f8964`  
-		Last Modified: Fri, 06 May 2016 16:38:44 GMT  
-		Size: 179.0 MB (178961296 bytes)  
-		MIME: application/octet-stream
-	-	`sha256:877e1219535f0fbf18cad51b5693defe3e285200ad5bcbe267354604fe471da4`  
-		Last Modified: Fri, 06 May 2016 16:25:01 GMT  
-		Size: 258.2 KB (258180 bytes)  
-		MIME: application/octet-stream
-	-	`sha256:04943db5ba6c335f810572d4123f85c613bd4faa824a4533145f3ec5f30e86f7`  
-		Last Modified: Fri, 06 May 2016 16:25:05 GMT  
-		Size: 13.1 KB (13106 bytes)  
-		MIME: application/octet-stream
-	-	`sha256:52de432f084bc072024d55b0f483358b607d0cf46d7053e3b6aefc98beaf27bf`  
-		Last Modified: Tue, 03 May 2016 23:14:32 GMT  
-		Size: 680.0 B  
-		MIME: application/octet-stream
-	-	`sha256:f0be3084efe90c704df85e3bff8df5d858e1ff546511c8306d80de561cc18fb5`  
-		Last Modified: Tue, 03 May 2016 23:14:36 GMT  
-		Size: 365.0 B  
-		MIME: application/octet-stream
-	-	`sha256:23eda618d4513331d49c6de76aaa051919f7b57752bcd8fee3cba37f816cbafd`  
-		Last Modified: Tue, 03 May 2016 23:14:39 GMT  
-		Size: 71.5 KB (71481 bytes)  
-		MIME: application/octet-stream
-	-	`sha256:6599cadaf950a71af51aa84b85e6cdb1990287b79f8e71a78f6986b318d4c4a0`  
-		Last Modified: Tue, 03 May 2016 23:15:04 GMT  
-		Size: 65.7 MB (65693247 bytes)  
-		MIME: application/octet-stream
+	-	`sha256:bf5d463153227eaf2c0a3d3f479bb5f2357f060fbce8088e61b2329d3d312d0c`  
+		Last Modified: Thu, 13 Oct 2016 21:14:45 GMT  
+		Size: 65.7 MB (65703010 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9f13e0ac480c2c862ae7aca8536bf2250b4d410468e6d33dc2f8ade1d368e184`  
+		Last Modified: Thu, 13 Oct 2016 21:14:23 GMT  
+		Size: 71.5 KB (71550 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e8988b5b3097ba5b9f10f45cd3545adea8b70bf9779f987d5b99cca08be818c3`  
+		Last Modified: Thu, 13 Oct 2016 21:14:22 GMT  
+		Size: 364.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:40af181810e71ae2b871c81aed2bc990d2748f0e11adedda056f12cb4af08712`  
+		Last Modified: Thu, 13 Oct 2016 21:14:23 GMT  
+		Size: 678.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e6f7c7e5c03ef6687a44551a4675336e6500f5379f4cc7e5b14b20ac05f127c4`  
+		Last Modified: Thu, 13 Oct 2016 21:14:22 GMT  
+		Size: 162.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a7b726c2f9bda2ba796bc3d4df533c8dcc31f64e8bc2b66d0557a21f795703d9`  
+		Last Modified: Thu, 13 Oct 2016 23:31:01 GMT  
+		Size: 13.1 KB (13103 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:966872b650b159f9ef5c396b8901e9fe3d9db7f3d7d83259846a34ad9ebd30f0`  
+		Last Modified: Thu, 13 Oct 2016 23:31:02 GMT  
+		Size: 258.1 KB (258126 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4e57bf87411cfad48233c8cac67ddaadd0218c21439e31e77d08eda0a489ce5d`  
+		Last Modified: Thu, 13 Oct 2016 23:41:06 GMT  
+		Size: 176.4 MB (176384419 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:51eb369f2115f005a90cd696176ad8a21825776c7966a8a9a5e3289173896c51`  
+		Last Modified: Thu, 13 Oct 2016 23:40:08 GMT  
+		Size: 189.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `gazebo:libgazebo7`
 
 ```console
-$ docker pull gazebo@sha256:bc11bc000373704829df302ee3e134e167e14f63c041dadad62dc44aef5d3e7d
+$ docker pull gazebo@sha256:34cd22869f32caaad0de70c33bf8c1ab7c15687118e8e4df8298a95a5632ec9f
 ```
 
 -	Platforms:
@@ -637,89 +663,95 @@ $ docker pull gazebo@sha256:bc11bc000373704829df302ee3e134e167e14f63c041dadad62d
 
 ### `gazebo:libgazebo7` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **474.8 MB (474784473 bytes)**  
+-	Total Size: **472.1 MB (472140810 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba645fbf89cf6f93a64a3a9b5d2b9c42715f988caeaa40af3c1b45dd2074dd6e`
+-	Image ID: `sha256:c7be6ad690a65978f5b4a39b515b0643a5fef8dd11b7abc87355514af1262975`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 20:31:06 GMT
-ADD file:cd748aa6f0d26a270cc30a0a6ba5ce74dbabb758bf0d9381c1ce96c9f1c9b4cd in /
-# Wed, 08 Jun 2016 20:31:07 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Wed, 08 Jun 2016 20:31:09 GMT
+# Thu, 13 Oct 2016 21:13:01 GMT
+ADD file:bc2e0eb31424a88aadc42486b6762c321e3457527daa43bcad45819d38c3a2ed in / 
+# Thu, 13 Oct 2016 21:13:02 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Thu, 13 Oct 2016 21:13:03 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 20:31:10 GMT
+# Thu, 13 Oct 2016 21:13:04 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Wed, 08 Jun 2016 20:31:10 GMT
+# Thu, 13 Oct 2016 21:13:05 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Thu, 13 Oct 2016 21:13:06 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 22:29:24 GMT
+# Thu, 13 Oct 2016 23:12:27 GMT
 MAINTAINER Steven Peters scpeters+buildfarm@osrfoundation.org
-# Wed, 08 Jun 2016 22:29:42 GMT
+# Thu, 13 Oct 2016 23:12:29 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
-# Wed, 08 Jun 2016 22:29:43 GMT
+# Thu, 13 Oct 2016 23:12:30 GMT
 RUN echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Wed, 08 Jun 2016 22:51:35 GMT
-RUN apt-get update && apt-get install -q -y     gazebo7=7.1.0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 22:51:35 GMT
+# Thu, 13 Oct 2016 23:27:11 GMT
+RUN apt-get update && apt-get install -q -y     gazebo7=7.4.0*     && rm -rf /var/lib/apt/lists/*
+# Thu, 13 Oct 2016 23:27:52 GMT
 EXPOSE 11345/tcp
-# Wed, 08 Jun 2016 22:51:35 GMT
-COPY file:5869092530419fa234b6d43a32bf8687d0d509fced55597b2e241dd58b3d1335 in /
-# Wed, 08 Jun 2016 22:51:36 GMT
-ENTRYPOINT &{["/gzserver_entrypoint.sh"]}
-# Wed, 08 Jun 2016 22:51:36 GMT
+# Thu, 13 Oct 2016 23:27:53 GMT
+COPY file:5869092530419fa234b6d43a32bf8687d0d509fced55597b2e241dd58b3d1335 in / 
+# Thu, 13 Oct 2016 23:27:53 GMT
+ENTRYPOINT ["/gzserver_entrypoint.sh"]
+# Thu, 13 Oct 2016 23:27:53 GMT
 CMD ["gzserver"]
-# Wed, 08 Jun 2016 22:51:36 GMT
+# Thu, 13 Oct 2016 23:27:54 GMT
 MAINTAINER Steven Peters scpeters+buildfarm@osrfoundation.org
-# Wed, 08 Jun 2016 22:55:54 GMT
-RUN apt-get update && apt-get install -q -y     libgazebo7-dev=7.1.0*     && rm -rf /var/lib/apt/lists/*
+# Thu, 13 Oct 2016 23:30:50 GMT
+RUN apt-get update && apt-get install -q -y     libgazebo7-dev=7.4.0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:6c953ac5d795ea26fd59dc5bdf4d335625c69f8bcfbdd8307d6009c2e61779c9`  
-		Last Modified: Thu, 26 May 2016 23:13:36 GMT  
-		Size: 65.7 MB (65699277 bytes)  
+	-	`sha256:bf5d463153227eaf2c0a3d3f479bb5f2357f060fbce8088e61b2329d3d312d0c`  
+		Last Modified: Thu, 13 Oct 2016 21:14:45 GMT  
+		Size: 65.7 MB (65703010 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df77235a0a1ffe0dc9290f5a3322734834f6181c3cb422885e7edd8403db1a30`  
-		Last Modified: Thu, 09 Jun 2016 21:54:04 GMT  
-		Size: 101.4 KB (101391 bytes)  
+	-	`sha256:9f13e0ac480c2c862ae7aca8536bf2250b4d410468e6d33dc2f8ade1d368e184`  
+		Last Modified: Thu, 13 Oct 2016 21:14:23 GMT  
+		Size: 71.5 KB (71550 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a069390c20edbbe3147b9dc9c1335d24ab87b373a6136837e487ac0a76c3aef`  
-		Last Modified: Thu, 09 Jun 2016 21:54:04 GMT  
-		Size: 365.0 B  
+	-	`sha256:e8988b5b3097ba5b9f10f45cd3545adea8b70bf9779f987d5b99cca08be818c3`  
+		Last Modified: Thu, 13 Oct 2016 21:14:22 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:325d7f72769235249695c56cc250ff910f1d11ed1cdcc27578445608f6ede3e9`  
-		Last Modified: Thu, 09 Jun 2016 21:54:04 GMT  
-		Size: 680.0 B  
+	-	`sha256:40af181810e71ae2b871c81aed2bc990d2748f0e11adedda056f12cb4af08712`  
+		Last Modified: Thu, 13 Oct 2016 21:14:23 GMT  
+		Size: 678.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:185d246ae22d64a199724307330c2255dd848af815545e1e39af2f7f93684bda`  
-		Last Modified: Fri, 24 Jun 2016 18:36:49 GMT  
-		Size: 13.1 KB (13107 bytes)  
+	-	`sha256:e6f7c7e5c03ef6687a44551a4675336e6500f5379f4cc7e5b14b20ac05f127c4`  
+		Last Modified: Thu, 13 Oct 2016 21:14:22 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e874e9eaffc949a102449d81ab10ba052033f165cf5d35d250d48c352482f734`  
-		Last Modified: Fri, 24 Jun 2016 18:36:52 GMT  
-		Size: 258.2 KB (258202 bytes)  
+	-	`sha256:a7b726c2f9bda2ba796bc3d4df533c8dcc31f64e8bc2b66d0557a21f795703d9`  
+		Last Modified: Thu, 13 Oct 2016 23:31:01 GMT  
+		Size: 13.1 KB (13103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd1442f78b338ff26be7a912cb34c5b5941b1a51733ce847b144b66d8ee19242`  
-		Last Modified: Fri, 24 Jun 2016 18:39:40 GMT  
-		Size: 179.0 MB (178991599 bytes)  
+	-	`sha256:966872b650b159f9ef5c396b8901e9fe3d9db7f3d7d83259846a34ad9ebd30f0`  
+		Last Modified: Thu, 13 Oct 2016 23:31:02 GMT  
+		Size: 258.1 KB (258126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:358b3a15bb75aaf308f13f1ed496d2952ae3539e3ba7119fda0cd218ffad1471`  
-		Last Modified: Fri, 24 Jun 2016 18:38:45 GMT  
-		Size: 192.0 B  
+	-	`sha256:4e57bf87411cfad48233c8cac67ddaadd0218c21439e31e77d08eda0a489ce5d`  
+		Last Modified: Thu, 13 Oct 2016 23:41:06 GMT  
+		Size: 176.4 MB (176384419 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f35ec3e602a7ce6cc72756b48b51a7c4c234611f58ec4b2ad63b8f4834a95d55`  
-		Last Modified: Fri, 24 Jun 2016 18:40:13 GMT  
-		Size: 229.7 MB (229719660 bytes)  
+	-	`sha256:51eb369f2115f005a90cd696176ad8a21825776c7966a8a9a5e3289173896c51`  
+		Last Modified: Thu, 13 Oct 2016 23:40:08 GMT  
+		Size: 189.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8f9e3d5b86ee0a5603eb2f6465d81fd8274f5b268f61d30b64a5a8adeb76fd9e`  
+		Last Modified: Thu, 13 Oct 2016 23:42:54 GMT  
+		Size: 229.7 MB (229709209 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `gazebo:latest`
 
 ```console
-$ docker pull gazebo@sha256:bc11bc000373704829df302ee3e134e167e14f63c041dadad62dc44aef5d3e7d
+$ docker pull gazebo@sha256:34cd22869f32caaad0de70c33bf8c1ab7c15687118e8e4df8298a95a5632ec9f
 ```
 
 -	Platforms:
@@ -727,81 +759,87 @@ $ docker pull gazebo@sha256:bc11bc000373704829df302ee3e134e167e14f63c041dadad62d
 
 ### `gazebo:latest` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **474.8 MB (474784473 bytes)**  
+-	Total Size: **472.1 MB (472140810 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba645fbf89cf6f93a64a3a9b5d2b9c42715f988caeaa40af3c1b45dd2074dd6e`
+-	Image ID: `sha256:c7be6ad690a65978f5b4a39b515b0643a5fef8dd11b7abc87355514af1262975`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
 ```dockerfile
-# Wed, 08 Jun 2016 20:31:06 GMT
-ADD file:cd748aa6f0d26a270cc30a0a6ba5ce74dbabb758bf0d9381c1ce96c9f1c9b4cd in /
-# Wed, 08 Jun 2016 20:31:07 GMT
-RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes
-# Wed, 08 Jun 2016 20:31:09 GMT
+# Thu, 13 Oct 2016 21:13:01 GMT
+ADD file:bc2e0eb31424a88aadc42486b6762c321e3457527daa43bcad45819d38c3a2ed in / 
+# Thu, 13 Oct 2016 21:13:02 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Thu, 13 Oct 2016 21:13:03 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 20:31:10 GMT
+# Thu, 13 Oct 2016 21:13:04 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Wed, 08 Jun 2016 20:31:10 GMT
+# Thu, 13 Oct 2016 21:13:05 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Thu, 13 Oct 2016 21:13:06 GMT
 CMD ["/bin/bash"]
-# Wed, 08 Jun 2016 22:29:24 GMT
+# Thu, 13 Oct 2016 23:12:27 GMT
 MAINTAINER Steven Peters scpeters+buildfarm@osrfoundation.org
-# Wed, 08 Jun 2016 22:29:42 GMT
+# Thu, 13 Oct 2016 23:12:29 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
-# Wed, 08 Jun 2016 22:29:43 GMT
+# Thu, 13 Oct 2016 23:12:30 GMT
 RUN echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-latest.list
-# Wed, 08 Jun 2016 22:51:35 GMT
-RUN apt-get update && apt-get install -q -y     gazebo7=7.1.0*     && rm -rf /var/lib/apt/lists/*
-# Wed, 08 Jun 2016 22:51:35 GMT
+# Thu, 13 Oct 2016 23:27:11 GMT
+RUN apt-get update && apt-get install -q -y     gazebo7=7.4.0*     && rm -rf /var/lib/apt/lists/*
+# Thu, 13 Oct 2016 23:27:52 GMT
 EXPOSE 11345/tcp
-# Wed, 08 Jun 2016 22:51:35 GMT
-COPY file:5869092530419fa234b6d43a32bf8687d0d509fced55597b2e241dd58b3d1335 in /
-# Wed, 08 Jun 2016 22:51:36 GMT
-ENTRYPOINT &{["/gzserver_entrypoint.sh"]}
-# Wed, 08 Jun 2016 22:51:36 GMT
+# Thu, 13 Oct 2016 23:27:53 GMT
+COPY file:5869092530419fa234b6d43a32bf8687d0d509fced55597b2e241dd58b3d1335 in / 
+# Thu, 13 Oct 2016 23:27:53 GMT
+ENTRYPOINT ["/gzserver_entrypoint.sh"]
+# Thu, 13 Oct 2016 23:27:53 GMT
 CMD ["gzserver"]
-# Wed, 08 Jun 2016 22:51:36 GMT
+# Thu, 13 Oct 2016 23:27:54 GMT
 MAINTAINER Steven Peters scpeters+buildfarm@osrfoundation.org
-# Wed, 08 Jun 2016 22:55:54 GMT
-RUN apt-get update && apt-get install -q -y     libgazebo7-dev=7.1.0*     && rm -rf /var/lib/apt/lists/*
+# Thu, 13 Oct 2016 23:30:50 GMT
+RUN apt-get update && apt-get install -q -y     libgazebo7-dev=7.4.0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:6c953ac5d795ea26fd59dc5bdf4d335625c69f8bcfbdd8307d6009c2e61779c9`  
-		Last Modified: Thu, 26 May 2016 23:13:36 GMT  
-		Size: 65.7 MB (65699277 bytes)  
+	-	`sha256:bf5d463153227eaf2c0a3d3f479bb5f2357f060fbce8088e61b2329d3d312d0c`  
+		Last Modified: Thu, 13 Oct 2016 21:14:45 GMT  
+		Size: 65.7 MB (65703010 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df77235a0a1ffe0dc9290f5a3322734834f6181c3cb422885e7edd8403db1a30`  
-		Last Modified: Thu, 09 Jun 2016 21:54:04 GMT  
-		Size: 101.4 KB (101391 bytes)  
+	-	`sha256:9f13e0ac480c2c862ae7aca8536bf2250b4d410468e6d33dc2f8ade1d368e184`  
+		Last Modified: Thu, 13 Oct 2016 21:14:23 GMT  
+		Size: 71.5 KB (71550 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a069390c20edbbe3147b9dc9c1335d24ab87b373a6136837e487ac0a76c3aef`  
-		Last Modified: Thu, 09 Jun 2016 21:54:04 GMT  
-		Size: 365.0 B  
+	-	`sha256:e8988b5b3097ba5b9f10f45cd3545adea8b70bf9779f987d5b99cca08be818c3`  
+		Last Modified: Thu, 13 Oct 2016 21:14:22 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:325d7f72769235249695c56cc250ff910f1d11ed1cdcc27578445608f6ede3e9`  
-		Last Modified: Thu, 09 Jun 2016 21:54:04 GMT  
-		Size: 680.0 B  
+	-	`sha256:40af181810e71ae2b871c81aed2bc990d2748f0e11adedda056f12cb4af08712`  
+		Last Modified: Thu, 13 Oct 2016 21:14:23 GMT  
+		Size: 678.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:185d246ae22d64a199724307330c2255dd848af815545e1e39af2f7f93684bda`  
-		Last Modified: Fri, 24 Jun 2016 18:36:49 GMT  
-		Size: 13.1 KB (13107 bytes)  
+	-	`sha256:e6f7c7e5c03ef6687a44551a4675336e6500f5379f4cc7e5b14b20ac05f127c4`  
+		Last Modified: Thu, 13 Oct 2016 21:14:22 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e874e9eaffc949a102449d81ab10ba052033f165cf5d35d250d48c352482f734`  
-		Last Modified: Fri, 24 Jun 2016 18:36:52 GMT  
-		Size: 258.2 KB (258202 bytes)  
+	-	`sha256:a7b726c2f9bda2ba796bc3d4df533c8dcc31f64e8bc2b66d0557a21f795703d9`  
+		Last Modified: Thu, 13 Oct 2016 23:31:01 GMT  
+		Size: 13.1 KB (13103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd1442f78b338ff26be7a912cb34c5b5941b1a51733ce847b144b66d8ee19242`  
-		Last Modified: Fri, 24 Jun 2016 18:39:40 GMT  
-		Size: 179.0 MB (178991599 bytes)  
+	-	`sha256:966872b650b159f9ef5c396b8901e9fe3d9db7f3d7d83259846a34ad9ebd30f0`  
+		Last Modified: Thu, 13 Oct 2016 23:31:02 GMT  
+		Size: 258.1 KB (258126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:358b3a15bb75aaf308f13f1ed496d2952ae3539e3ba7119fda0cd218ffad1471`  
-		Last Modified: Fri, 24 Jun 2016 18:38:45 GMT  
-		Size: 192.0 B  
+	-	`sha256:4e57bf87411cfad48233c8cac67ddaadd0218c21439e31e77d08eda0a489ce5d`  
+		Last Modified: Thu, 13 Oct 2016 23:41:06 GMT  
+		Size: 176.4 MB (176384419 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f35ec3e602a7ce6cc72756b48b51a7c4c234611f58ec4b2ad63b8f4834a95d55`  
-		Last Modified: Fri, 24 Jun 2016 18:40:13 GMT  
-		Size: 229.7 MB (229719660 bytes)  
+	-	`sha256:51eb369f2115f005a90cd696176ad8a21825776c7966a8a9a5e3289173896c51`  
+		Last Modified: Thu, 13 Oct 2016 23:40:08 GMT  
+		Size: 189.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:8f9e3d5b86ee0a5603eb2f6465d81fd8274f5b268f61d30b64a5a8adeb76fd9e`  
+		Last Modified: Thu, 13 Oct 2016 23:42:54 GMT  
+		Size: 229.7 MB (229709209 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

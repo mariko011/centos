@@ -1,7 +1,7 @@
 ## `buildpack-deps:precise`
 
 ```console
-$ docker pull buildpack-deps@sha256:3682146739b79d9627f031aa9da94764b8748a12feff38a200220e8062fbfeeb
+$ docker pull buildpack-deps@sha256:eab53f5d8aaa713afa84aee22edd69a4cb60426e1287f723398b24f82b0d81fc
 ```
 
 -	Platforms:

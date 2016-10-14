@@ -416,7 +416,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 ## `buildpack-deps:precise`
 
 ```console
-$ docker pull buildpack-deps@sha256:3682146739b79d9627f031aa9da94764b8748a12feff38a200220e8062fbfeeb
+$ docker pull buildpack-deps@sha256:eab53f5d8aaa713afa84aee22edd69a4cb60426e1287f723398b24f82b0d81fc
 ```
 
 -	Platforms:
@@ -875,7 +875,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 ## `buildpack-deps:trusty`
 
 ```console
-$ docker pull buildpack-deps@sha256:48e165befac0a3f68f4f5d7b830fd294e658c1b588530af6d223f89212424513
+$ docker pull buildpack-deps@sha256:d1a2aa86312f69bb563227c56583acd88c82618ab48cebbf1f48d185c2beec2a
 ```
 
 -	Platforms:
@@ -885,64 +885,64 @@ $ docker pull buildpack-deps@sha256:48e165befac0a3f68f4f5d7b830fd294e658c1b58853
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **199.2 MB (199169425 bytes)**  
+-	Total Size: **199.2 MB (199168372 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90b171f4bd9a1030d623740467add1d917added20ac57b55a5e4c4a0471b7255`
+-	Image ID: `sha256:ea16a5d0fcfc25527517f6b0fc0e02f29c9789f82dbdfb96247321f419d84bfc`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 26 Sep 2016 21:26:04 GMT
-ADD file:561625b38aa88058c3af9d99be9d8b8d07f24e9d1737869e422540deeebb4443 in / 
-# Mon, 26 Sep 2016 21:26:06 GMT
+# Thu, 13 Oct 2016 21:13:01 GMT
+ADD file:bc2e0eb31424a88aadc42486b6762c321e3457527daa43bcad45819d38c3a2ed in / 
+# Thu, 13 Oct 2016 21:13:02 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 26 Sep 2016 21:26:07 GMT
+# Thu, 13 Oct 2016 21:13:03 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Mon, 26 Sep 2016 21:26:08 GMT
+# Thu, 13 Oct 2016 21:13:04 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Mon, 26 Sep 2016 21:26:08 GMT
+# Thu, 13 Oct 2016 21:13:05 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 26 Sep 2016 21:26:09 GMT
+# Thu, 13 Oct 2016 21:13:06 GMT
 CMD ["/bin/bash"]
-# Mon, 26 Sep 2016 21:38:57 GMT
+# Thu, 13 Oct 2016 21:48:43 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 26 Sep 2016 21:39:41 GMT
+# Thu, 13 Oct 2016 21:49:26 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 26 Sep 2016 22:47:53 GMT
+# Fri, 14 Oct 2016 00:01:21 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:04c996abc2442fb0534f018543f0352647de3a65a3b321628b8cd1ceecedc3f6`  
-		Last Modified: Mon, 26 Sep 2016 21:28:04 GMT  
-		Size: 65.7 MB (65702977 bytes)  
+	-	`sha256:bf5d463153227eaf2c0a3d3f479bb5f2357f060fbce8088e61b2329d3d312d0c`  
+		Last Modified: Thu, 13 Oct 2016 21:14:45 GMT  
+		Size: 65.7 MB (65703010 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d394d3da86fe44806b96c68b5c51bd6e38d287b2dde4ef89c011243ffc6542b9`  
-		Last Modified: Mon, 26 Sep 2016 21:27:45 GMT  
-		Size: 71.6 KB (71555 bytes)  
+	-	`sha256:9f13e0ac480c2c862ae7aca8536bf2250b4d410468e6d33dc2f8ade1d368e184`  
+		Last Modified: Thu, 13 Oct 2016 21:14:23 GMT  
+		Size: 71.5 KB (71550 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bac77aae22d4292624c1db7efe5c2face4a104d8967c9f63e22230aebfeceda8`  
-		Last Modified: Mon, 26 Sep 2016 21:27:45 GMT  
-		Size: 360.0 B  
+	-	`sha256:e8988b5b3097ba5b9f10f45cd3545adea8b70bf9779f987d5b99cca08be818c3`  
+		Last Modified: Thu, 13 Oct 2016 21:14:22 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b48b86b78e975768669fb7f9e20166f994ab4949a878b642927c28f3f169390d`  
-		Last Modified: Mon, 26 Sep 2016 21:27:45 GMT  
-		Size: 682.0 B  
+	-	`sha256:40af181810e71ae2b871c81aed2bc990d2748f0e11adedda056f12cb4af08712`  
+		Last Modified: Thu, 13 Oct 2016 21:14:23 GMT  
+		Size: 678.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09b3dd842bf5577e855c84e1273582a799616748c6b13ac9ecb2a49ee2477cbc`  
-		Last Modified: Mon, 26 Sep 2016 21:27:45 GMT  
-		Size: 164.0 B  
+	-	`sha256:e6f7c7e5c03ef6687a44551a4675336e6500f5379f4cc7e5b14b20ac05f127c4`  
+		Last Modified: Thu, 13 Oct 2016 21:14:22 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:70de19fefb15d042ac7a96f8ec1da03c48a16d07132cfff85f8e4a6da2d9f41b`  
-		Last Modified: Mon, 26 Sep 2016 21:39:07 GMT  
-		Size: 4.6 MB (4599256 bytes)  
+	-	`sha256:0b7c1c3b6a26ed2a16e4d861e2dab766b6c11c0dd23227ae57701f751af6d8a5`  
+		Last Modified: Thu, 13 Oct 2016 21:48:54 GMT  
+		Size: 4.6 MB (4599261 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:70444d5d47249cbdb5d1644c445430b17cdc6409363c7f09abee779a0376718f`  
-		Last Modified: Mon, 26 Sep 2016 21:40:02 GMT  
-		Size: 29.0 MB (29004407 bytes)  
+	-	`sha256:e73ee3874ecbc5e033bad21f689d336baefedfbc581a80f52f118bb13ee83115`  
+		Last Modified: Thu, 13 Oct 2016 21:49:44 GMT  
+		Size: 29.0 MB (29003104 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a2364dc919b887bb8281bd836ab6c32a124f41fff942b362afdeb365fa9e14b`  
-		Last Modified: Mon, 26 Sep 2016 22:48:25 GMT  
-		Size: 99.8 MB (99790024 bytes)  
+	-	`sha256:8e61f597b3aba58926141e574f8b2ee3b6ab3a0e1504aeaede71e41bc8248e95`  
+		Last Modified: Fri, 14 Oct 2016 00:01:54 GMT  
+		Size: 99.8 MB (99790243 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:wheezy-curl`
@@ -1205,7 +1205,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 ## `buildpack-deps:xenial`
 
 ```console
-$ docker pull buildpack-deps@sha256:421b5d9d531a734dfe8fb89fc4261317038bc87151b021751515e2ff864a502f
+$ docker pull buildpack-deps@sha256:f37223156dcfbb0088b6059178b37d7c4096ae8ecae3bb2445111452a08c315f
 ```
 
 -	Platforms:
@@ -1215,62 +1215,62 @@ $ docker pull buildpack-deps@sha256:421b5d9d531a734dfe8fb89fc4261317038bc87151b0
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **231.3 MB (231325708 bytes)**  
+-	Total Size: **231.4 MB (231357521 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9f699473fe5f3bed58a265a2f3fd3a513010bf5e20b12aca8de64c358d6fe8d7`
+-	Image ID: `sha256:e493caa3b903e96a7b280465a3a90c6a75cb2d77aa8641805ce8b5a1b7c9dbec`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 26 Sep 2016 21:26:19 GMT
-ADD file:cd937b840fff16e04e1f59d56f4424d08544b0bb8ac30d9804d25e28fb15ded3 in / 
-# Mon, 26 Sep 2016 21:26:20 GMT
+# Thu, 13 Oct 2016 21:13:17 GMT
+ADD file:b1cd0e54ba28cb1d6db4b93f98d5e02f5e2bcd96c55cb91731ba499861001e30 in / 
+# Thu, 13 Oct 2016 21:13:18 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Mon, 26 Sep 2016 21:26:21 GMT
+# Thu, 13 Oct 2016 21:13:19 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Mon, 26 Sep 2016 21:26:22 GMT
+# Thu, 13 Oct 2016 21:13:20 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Mon, 26 Sep 2016 21:26:23 GMT
+# Thu, 13 Oct 2016 21:13:21 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Mon, 26 Sep 2016 21:26:23 GMT
+# Thu, 13 Oct 2016 21:13:21 GMT
 CMD ["/bin/bash"]
-# Mon, 26 Sep 2016 21:40:25 GMT
+# Thu, 13 Oct 2016 21:50:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 26 Sep 2016 21:41:04 GMT
+# Thu, 13 Oct 2016 21:50:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 26 Sep 2016 22:49:27 GMT
+# Fri, 14 Oct 2016 00:03:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:cad964aed91d2ace084302c587dfc502b5869c5b1d15a1f0e458a45e3cadfaa6`  
-		Last Modified: Mon, 26 Sep 2016 21:29:04 GMT  
-		Size: 49.8 MB (49830405 bytes)  
+	-	`sha256:6bbedd9b76a496816d86a0af731ea984f40467ef8fb23be752f801cb80436ac6`  
+		Last Modified: Wed, 12 Oct 2016 16:22:30 GMT  
+		Size: 49.9 MB (49866926 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a80a22fea63572c387efb1943e6095587f9ea8343af129934d4c81e593374a4`  
-		Last Modified: Mon, 26 Sep 2016 21:28:50 GMT  
+	-	`sha256:fc19d60a83f11bbddc7bd2dfca6095b49100314bfde61d83729112a6b6e11d48`  
+		Last Modified: Thu, 13 Oct 2016 21:15:32 GMT  
 		Size: 824.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:50de990d7957c304603ac78d094f3acf634c1261a3a5a89229fa81d18cdb7945`  
-		Last Modified: Mon, 26 Sep 2016 21:28:50 GMT  
-		Size: 448.0 B  
+	-	`sha256:de413bb911fd848383ef2e5068a42c258c898d6ee869fb441fb2391eb327b576`  
+		Last Modified: Thu, 13 Oct 2016 21:15:31 GMT  
+		Size: 444.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61e032b8f2cb04e7a2d4efa83eb6837c6b92bd1553cbe46cffa76121091d8301`  
-		Last Modified: Mon, 26 Sep 2016 21:28:50 GMT  
-		Size: 682.0 B  
+	-	`sha256:2879a7ad31445fe2cea410b8ba76704003c11ee05c0a4d32d1113009ea1a1aae`  
+		Last Modified: Thu, 13 Oct 2016 21:15:31 GMT  
+		Size: 678.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f03ce1741bf604c84258a4c4f1dc98cc35aebdd76c14ed4ffeb6bc3584c1f9b`  
-		Last Modified: Mon, 26 Sep 2016 21:28:50 GMT  
-		Size: 162.0 B  
+	-	`sha256:668604fde02e75dddb4b44c80d4ce20baaac4832c41c3a945f4a236cd7d2f164`  
+		Last Modified: Thu, 13 Oct 2016 21:15:31 GMT  
+		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:492955b2c53a6666565defae8732a58ebad222cf49653abf3599a1b867fa0e43`  
-		Last Modified: Mon, 26 Sep 2016 21:40:36 GMT  
-		Size: 7.2 MB (7235743 bytes)  
+	-	`sha256:2a9c81707a9f04c3eeb3b479831fc2bfacea2be2b1adefc0c05a8ce9d5c63745`  
+		Last Modified: Thu, 13 Oct 2016 21:50:18 GMT  
+		Size: 7.2 MB (7235780 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f4fdf9da388ce75d3309c5a5ffb900cd352357de88bb6b0b3672664576fa272`  
-		Last Modified: Mon, 26 Sep 2016 21:41:27 GMT  
-		Size: 41.2 MB (41210794 bytes)  
+	-	`sha256:4c4c3a1e0f2edba575b941148b2a42255bd77b72f5f169e191cd3c51a44d09a6`  
+		Last Modified: Thu, 13 Oct 2016 21:51:12 GMT  
+		Size: 41.2 MB (41207190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:423fdcdde9db0a2b5521ff25143bcd629956872b584e7abf8f6af72c5a4a145e`  
-		Last Modified: Mon, 26 Sep 2016 22:50:12 GMT  
-		Size: 133.0 MB (133046650 bytes)  
+	-	`sha256:7a3181eb4a018db01386389645450fc5369c6cf691aa9ce312464e53db924878`  
+		Last Modified: Fri, 14 Oct 2016 00:03:43 GMT  
+		Size: 133.0 MB (133045519 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

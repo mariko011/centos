@@ -1,7 +1,7 @@
 ## `ros:jade-perception`
 
 ```console
-$ docker pull ros@sha256:f8f2de1393be08b069cea1d52a417debff8cded81adfd55cb3ca2fbcef6697f6
+$ docker pull ros@sha256:2ec9d9a8d58c32cb7352ef3eec4d2cdf091a7b1c08974b7104450b60453a4198
 ```
 
 -	Platforms:
