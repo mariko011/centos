@@ -2,6 +2,9 @@
 
 # Tags of `mysql`
 
+-	[`mysql:8.0.0`](#mysql800)
+-	[`mysql:8.0`](#mysql80)
+-	[`mysql:8`](#mysql8)
 -	[`mysql:5.7.16`](#mysql5716)
 -	[`mysql:5.7`](#mysql57)
 -	[`mysql:5`](#mysql5)
@@ -10,6 +13,18 @@
 -	[`mysql:5.6`](#mysql56)
 -	[`mysql:5.5.53`](#mysql5553)
 -	[`mysql:5.5`](#mysql55)
+
+## `mysql:8.0.0`
+
+**does not exist** (yet?)
+
+## `mysql:8.0`
+
+**does not exist** (yet?)
+
+## `mysql:8`
+
+**does not exist** (yet?)
 
 ## `mysql:5.7.16`
 
