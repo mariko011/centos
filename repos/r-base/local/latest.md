@@ -1673,16 +1673,11 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libgcrypt20=1.7.3-1
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.3-1.dsc' libgcrypt20_1.7.3-1.dsc 2882 SHA256:e7a19624eddbc32510774cbc12a59b097d571af9fb97d8a175fbc6b81f0dfced
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.3.orig.tar.bz2' libgcrypt20_1.7.3.orig.tar.bz2 2861294 SHA256:ddac6111077d0a1612247587be238c5294dd0ee4d76dc7ba783cc55fb0337071
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.3.orig.tar.bz2.asc' libgcrypt20_1.7.3.orig.tar.bz2.asc 287 SHA256:9ff9779dea2bc7e23cb241c136abc4eec720ef6630826d45abdf60313cbb73ea
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.3-1.debian.tar.xz' libgcrypt20_1.7.3-1.debian.tar.xz 30396 SHA256:cebcd40467ad4cb17abcc403cff08f80eed506ffad9e12c47f262e1ccdb5c6db
+'http://http.debian.net/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.3-1.dsc' libgcrypt20_1.7.3-1.dsc 2882 SHA256:e7a19624eddbc32510774cbc12a59b097d571af9fb97d8a175fbc6b81f0dfced
+'http://http.debian.net/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.3.orig.tar.bz2' libgcrypt20_1.7.3.orig.tar.bz2 2861294 SHA256:ddac6111077d0a1612247587be238c5294dd0ee4d76dc7ba783cc55fb0337071
+'http://http.debian.net/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.3.orig.tar.bz2.asc' libgcrypt20_1.7.3.orig.tar.bz2.asc 287 SHA256:9ff9779dea2bc7e23cb241c136abc4eec720ef6630826d45abdf60313cbb73ea
+'http://http.debian.net/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.3-1.debian.tar.xz' libgcrypt20_1.7.3-1.debian.tar.xz 30396 SHA256:cebcd40467ad4cb17abcc403cff08f80eed506ffad9e12c47f262e1ccdb5c6db
 ```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libgcrypt20/1.7.3-1/
-- https://sources.debian.net/src/libgcrypt20/1.7.3-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.24-1`
 
