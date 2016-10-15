@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:52bfaae1cb3a3aa53f22c6f6fdb288fa81872bbb9a3323fe2fbdf9ab92a4a5c4`
-- Created: `2016-09-24T06:01:31.285809161Z`
+- Image ID: `sha256:8cbe193896c013b2862aad6e1d2f9d7943fd28270d44b0e20b9beb9eb36a924c`
+- Created: `2016-10-14T18:28:39.010047764Z`
 - Arch: `linux`/`amd64`
 - Command: `["rails","server","-b","0.0.0.0"]`
 - Environment:
@@ -11,8 +11,8 @@
   - `RUBY_MAJOR=2.3`
   - `RUBY_VERSION=2.3.1`
   - `RUBY_DOWNLOAD_SHA256=b87c738cb2032bf4920fef8e3864dc5cf8eae9d89d8d523ce0236945c5797dcd`
-  - `RUBYGEMS_VERSION=2.6.6`
-  - `BUNDLER_VERSION=1.13.1`
+  - `RUBYGEMS_VERSION=2.6.7`
+  - `BUNDLER_VERSION=1.13.3`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_PATH=/usr/local/bundle`
   - `BUNDLE_BIN=/usr/local/bundle/bin`
@@ -436,11 +436,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/bzr/2.6.0+bzr6595-6/
 - https://sources.debian.net/src/bzr/2.6.0+bzr6595-6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `c-ares=1.10.0-2`
+### `dpkg` source package: `c-ares=1.10.0-2+deb8u1`
 
 Binary Packages:
 
-- `libc-ares2:amd64=1.10.0-2`
+- `libc-ares2:amd64=1.10.0-2+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libc-ares2/copyright`)
 
@@ -449,16 +449,16 @@ Licenses: (parsed from: `/usr/share/doc/libc-ares2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris c-ares=1.10.0-2
-'http://httpredir.debian.org/debian/pool/main/c/c-ares/c-ares_1.10.0-2.dsc' c-ares_1.10.0-2.dsc 1948 SHA256:bad707c795ac05cabbb6d564008bfe7c6775b82cb3cd9902685239915a2b97f2
-'http://httpredir.debian.org/debian/pool/main/c/c-ares/c-ares_1.10.0.orig.tar.gz' c-ares_1.10.0.orig.tar.gz 809073 SHA256:3d701674615d1158e56a59aaede7891f2dde3da0f46a6d3c684e0ae70f52d3db
-'http://httpredir.debian.org/debian/pool/main/c/c-ares/c-ares_1.10.0-2.debian.tar.gz' c-ares_1.10.0-2.debian.tar.gz 5295 SHA256:aef89b3b5bb7f1aae8332eea2f04930badb47f4e3582ec4dac9ba71256d8299a
+$ apt-get source -qq --print-uris c-ares=1.10.0-2+deb8u1
+'http://security.debian.org/pool/updates/main/c/c-ares/c-ares_1.10.0-2+deb8u1.dsc' c-ares_1.10.0-2+deb8u1.dsc 1642 SHA256:146a7599f25c9fc19494d4c211724a59615e5875d066a3782c0f0dd9115c4c85
+'http://security.debian.org/pool/updates/main/c/c-ares/c-ares_1.10.0.orig.tar.gz' c-ares_1.10.0.orig.tar.gz 809073 SHA256:3d701674615d1158e56a59aaede7891f2dde3da0f46a6d3c684e0ae70f52d3db
+'http://security.debian.org/pool/updates/main/c/c-ares/c-ares_1.10.0-2+deb8u1.debian.tar.xz' c-ares_1.10.0-2+deb8u1.debian.tar.xz 6496 SHA256:ec75bcca4210757db03408f31c485fa43c1baba2cd8e196cf6fe8bbd51c12f89
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/c-ares/1.10.0-2/
-- https://sources.debian.net/src/c-ares/1.10.0-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/c-ares/1.10.0-2+deb8u1/
+- https://sources.debian.net/src/c-ares/1.10.0-2+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ca-certificates=20141019+deb8u1`
 
@@ -2243,11 +2243,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libdatrie/0.2.8-1/
 - https://sources.debian.net/src/libdatrie/0.2.8-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libdbd-mysql-perl=4.028-2+deb8u1`
+### `dpkg` source package: `libdbd-mysql-perl=4.028-2+deb8u2`
 
 Binary Packages:
 
-- `libdbd-mysql-perl=4.028-2+deb8u1`
+- `libdbd-mysql-perl=4.028-2+deb8u2`
 
 Licenses: (parsed from: `/usr/share/doc/libdbd-mysql-perl/copyright`)
 
@@ -2260,16 +2260,16 @@ Licenses: (parsed from: `/usr/share/doc/libdbd-mysql-perl/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libdbd-mysql-perl=4.028-2+deb8u1
-'http://httpredir.debian.org/debian/pool/main/libd/libdbd-mysql-perl/libdbd-mysql-perl_4.028-2+deb8u1.dsc' libdbd-mysql-perl_4.028-2+deb8u1.dsc 2228 SHA256:0107b21e78ef5b5f97aebee9783195e339307310bb2e0c05c890b2f1804622eb
-'http://httpredir.debian.org/debian/pool/main/libd/libdbd-mysql-perl/libdbd-mysql-perl_4.028.orig.tar.gz' libdbd-mysql-perl_4.028.orig.tar.gz 138614 SHA256:5842b24affdabce8b17122f910cd5b5b253bf266d7e5084af5df4248523811ed
-'http://httpredir.debian.org/debian/pool/main/libd/libdbd-mysql-perl/libdbd-mysql-perl_4.028-2+deb8u1.debian.tar.xz' libdbd-mysql-perl_4.028-2+deb8u1.debian.tar.xz 9416 SHA256:7362689157b70f1b085ac09352373ba7ebe6e386c0eb0a7851d9a99f4e9d89d7
+$ apt-get source -qq --print-uris libdbd-mysql-perl=4.028-2+deb8u2
+'http://security.debian.org/pool/updates/main/libd/libdbd-mysql-perl/libdbd-mysql-perl_4.028-2+deb8u2.dsc' libdbd-mysql-perl_4.028-2+deb8u2.dsc 1900 SHA256:a40c7f900833413800921633332aefff4b29b584567322eb2e1f473b9f127b62
+'http://security.debian.org/pool/updates/main/libd/libdbd-mysql-perl/libdbd-mysql-perl_4.028.orig.tar.gz' libdbd-mysql-perl_4.028.orig.tar.gz 138614 SHA256:5842b24affdabce8b17122f910cd5b5b253bf266d7e5084af5df4248523811ed
+'http://security.debian.org/pool/updates/main/libd/libdbd-mysql-perl/libdbd-mysql-perl_4.028-2+deb8u2.debian.tar.xz' libdbd-mysql-perl_4.028-2+deb8u2.debian.tar.xz 10008 SHA256:48a1dd9d575a91c3a1541ef417786cc5b122c1d326b4c978d8a4071d5e1090e5
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libdbd-mysql-perl/4.028-2+deb8u1/
-- https://sources.debian.net/src/libdbd-mysql-perl/4.028-2+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libdbd-mysql-perl/4.028-2+deb8u2/
+- https://sources.debian.net/src/libdbd-mysql-perl/4.028-2+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libdbi-perl=1.631-3`
 
