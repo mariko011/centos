@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5838096167ee3b777d75d6c68355bc15b1f68b572a749c4b7436aec91a9e0bc1`
-- Created: `2016-10-01T00:29:59.925766079Z`
+- Image ID: `sha256:2fba56946f027e4afa6c177ad160ffb19a34e7fd4d70894a862c1b25eeb6985c`
+- Created: `2016-10-14T23:56:43.357943612Z`
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
@@ -12,7 +12,7 @@
   - `RUBY_VERSION=2.3.1`
   - `RUBY_DOWNLOAD_SHA256=b87c738cb2032bf4920fef8e3864dc5cf8eae9d89d8d523ce0236945c5797dcd`
   - `RUBYGEMS_VERSION=2.6.7`
-  - `BUNDLER_VERSION=1.13.2`
+  - `BUNDLER_VERSION=1.13.4`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_PATH=/usr/local/bundle`
   - `BUNDLE_BIN=/usr/local/bundle/bin`
