@@ -15,7 +15,7 @@
 ## `mariadb:10.1.18`
 
 ```console
-$ docker pull mariadb@sha256:d17cfbf8e7e9b9ed79f2de17125a01f66f350ddf5bcdd8b62da20634cfa0b425
+$ docker pull mariadb@sha256:2092b4328148ed2f18759d615ca73a79968ba87f99ad67bcbbc99f8202824a1c
 ```
 
 -	Platforms:
@@ -25,9 +25,9 @@ $ docker pull mariadb@sha256:d17cfbf8e7e9b9ed79f2de17125a01f66f350ddf5bcdd8b62da
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.0 MB (130999973 bytes)**  
+-	Total Size: **131.0 MB (131000122 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:be4475fa21512106819983a66d40c8c49aa701ced6c46bc5a46019d53b37fc89`
+-	Image ID: `sha256:63d91190a69eed2d037b212719f4a06203c6cc001fb3487ee7970c9ab8ce180c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -62,15 +62,15 @@ RUN { 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password password '
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
 # Fri, 30 Sep 2016 23:41:47 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 30 Sep 2016 23:41:48 GMT
-COPY file:3d6c735eabd780a3659135a57698f5a17ff1f72725728f21cf72250880e02926 in /usr/local/bin/ 
-# Fri, 30 Sep 2016 23:41:49 GMT
+# Fri, 14 Oct 2016 23:08:43 GMT
+COPY file:c38424786fef36048757ce9163e6884f3aadef4ecd3505a138402d64aac38c4e in /usr/local/bin/ 
+# Fri, 14 Oct 2016 23:08:43 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Fri, 30 Sep 2016 23:41:49 GMT
+# Fri, 14 Oct 2016 23:08:44 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 30 Sep 2016 23:41:49 GMT
+# Fri, 14 Oct 2016 23:08:44 GMT
 EXPOSE 3306/tcp
-# Fri, 30 Sep 2016 23:41:50 GMT
+# Fri, 14 Oct 2016 23:08:45 GMT
 CMD ["mysqld"]
 ```
 
@@ -115,19 +115,19 @@ CMD ["mysqld"]
 		Last Modified: Fri, 30 Sep 2016 23:41:59 GMT  
 		Size: 2.6 KB (2642 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7feb58de3974fb11436c5050158549f0339e8372a20efe5b05af9894e983eb49`  
-		Last Modified: Fri, 30 Sep 2016 23:41:58 GMT  
-		Size: 1.7 KB (1664 bytes)  
+	-	`sha256:beb44718230b73ceed3ca90497ef90adc1ca28f66131c2acadd4e2b00bc352d0`  
+		Last Modified: Fri, 14 Oct 2016 23:09:00 GMT  
+		Size: 1.8 KB (1815 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2674c3e23b0b5bf1b09ee0396a7eab6dc2e100068596a50bfd64320b663e1fff`  
-		Last Modified: Fri, 30 Sep 2016 23:41:58 GMT  
-		Size: 120.0 B  
+	-	`sha256:45046d6898ad78d0b24f020c30537e48202a48b3f855a7127636e6c15c1993ae`  
+		Last Modified: Fri, 14 Oct 2016 23:09:00 GMT  
+		Size: 118.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mariadb:10.1`
 
 ```console
-$ docker pull mariadb@sha256:d17cfbf8e7e9b9ed79f2de17125a01f66f350ddf5bcdd8b62da20634cfa0b425
+$ docker pull mariadb@sha256:2092b4328148ed2f18759d615ca73a79968ba87f99ad67bcbbc99f8202824a1c
 ```
 
 -	Platforms:
@@ -137,9 +137,9 @@ $ docker pull mariadb@sha256:d17cfbf8e7e9b9ed79f2de17125a01f66f350ddf5bcdd8b62da
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.0 MB (130999973 bytes)**  
+-	Total Size: **131.0 MB (131000122 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:be4475fa21512106819983a66d40c8c49aa701ced6c46bc5a46019d53b37fc89`
+-	Image ID: `sha256:63d91190a69eed2d037b212719f4a06203c6cc001fb3487ee7970c9ab8ce180c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -174,15 +174,15 @@ RUN { 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password password '
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
 # Fri, 30 Sep 2016 23:41:47 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 30 Sep 2016 23:41:48 GMT
-COPY file:3d6c735eabd780a3659135a57698f5a17ff1f72725728f21cf72250880e02926 in /usr/local/bin/ 
-# Fri, 30 Sep 2016 23:41:49 GMT
+# Fri, 14 Oct 2016 23:08:43 GMT
+COPY file:c38424786fef36048757ce9163e6884f3aadef4ecd3505a138402d64aac38c4e in /usr/local/bin/ 
+# Fri, 14 Oct 2016 23:08:43 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Fri, 30 Sep 2016 23:41:49 GMT
+# Fri, 14 Oct 2016 23:08:44 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 30 Sep 2016 23:41:49 GMT
+# Fri, 14 Oct 2016 23:08:44 GMT
 EXPOSE 3306/tcp
-# Fri, 30 Sep 2016 23:41:50 GMT
+# Fri, 14 Oct 2016 23:08:45 GMT
 CMD ["mysqld"]
 ```
 
@@ -227,19 +227,19 @@ CMD ["mysqld"]
 		Last Modified: Fri, 30 Sep 2016 23:41:59 GMT  
 		Size: 2.6 KB (2642 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7feb58de3974fb11436c5050158549f0339e8372a20efe5b05af9894e983eb49`  
-		Last Modified: Fri, 30 Sep 2016 23:41:58 GMT  
-		Size: 1.7 KB (1664 bytes)  
+	-	`sha256:beb44718230b73ceed3ca90497ef90adc1ca28f66131c2acadd4e2b00bc352d0`  
+		Last Modified: Fri, 14 Oct 2016 23:09:00 GMT  
+		Size: 1.8 KB (1815 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2674c3e23b0b5bf1b09ee0396a7eab6dc2e100068596a50bfd64320b663e1fff`  
-		Last Modified: Fri, 30 Sep 2016 23:41:58 GMT  
-		Size: 120.0 B  
+	-	`sha256:45046d6898ad78d0b24f020c30537e48202a48b3f855a7127636e6c15c1993ae`  
+		Last Modified: Fri, 14 Oct 2016 23:09:00 GMT  
+		Size: 118.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mariadb:10`
 
 ```console
-$ docker pull mariadb@sha256:d17cfbf8e7e9b9ed79f2de17125a01f66f350ddf5bcdd8b62da20634cfa0b425
+$ docker pull mariadb@sha256:2092b4328148ed2f18759d615ca73a79968ba87f99ad67bcbbc99f8202824a1c
 ```
 
 -	Platforms:
@@ -249,9 +249,9 @@ $ docker pull mariadb@sha256:d17cfbf8e7e9b9ed79f2de17125a01f66f350ddf5bcdd8b62da
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.0 MB (130999973 bytes)**  
+-	Total Size: **131.0 MB (131000122 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:be4475fa21512106819983a66d40c8c49aa701ced6c46bc5a46019d53b37fc89`
+-	Image ID: `sha256:63d91190a69eed2d037b212719f4a06203c6cc001fb3487ee7970c9ab8ce180c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -286,15 +286,15 @@ RUN { 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password password '
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
 # Fri, 30 Sep 2016 23:41:47 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 30 Sep 2016 23:41:48 GMT
-COPY file:3d6c735eabd780a3659135a57698f5a17ff1f72725728f21cf72250880e02926 in /usr/local/bin/ 
-# Fri, 30 Sep 2016 23:41:49 GMT
+# Fri, 14 Oct 2016 23:08:43 GMT
+COPY file:c38424786fef36048757ce9163e6884f3aadef4ecd3505a138402d64aac38c4e in /usr/local/bin/ 
+# Fri, 14 Oct 2016 23:08:43 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Fri, 30 Sep 2016 23:41:49 GMT
+# Fri, 14 Oct 2016 23:08:44 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 30 Sep 2016 23:41:49 GMT
+# Fri, 14 Oct 2016 23:08:44 GMT
 EXPOSE 3306/tcp
-# Fri, 30 Sep 2016 23:41:50 GMT
+# Fri, 14 Oct 2016 23:08:45 GMT
 CMD ["mysqld"]
 ```
 
@@ -339,19 +339,19 @@ CMD ["mysqld"]
 		Last Modified: Fri, 30 Sep 2016 23:41:59 GMT  
 		Size: 2.6 KB (2642 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7feb58de3974fb11436c5050158549f0339e8372a20efe5b05af9894e983eb49`  
-		Last Modified: Fri, 30 Sep 2016 23:41:58 GMT  
-		Size: 1.7 KB (1664 bytes)  
+	-	`sha256:beb44718230b73ceed3ca90497ef90adc1ca28f66131c2acadd4e2b00bc352d0`  
+		Last Modified: Fri, 14 Oct 2016 23:09:00 GMT  
+		Size: 1.8 KB (1815 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2674c3e23b0b5bf1b09ee0396a7eab6dc2e100068596a50bfd64320b663e1fff`  
-		Last Modified: Fri, 30 Sep 2016 23:41:58 GMT  
-		Size: 120.0 B  
+	-	`sha256:45046d6898ad78d0b24f020c30537e48202a48b3f855a7127636e6c15c1993ae`  
+		Last Modified: Fri, 14 Oct 2016 23:09:00 GMT  
+		Size: 118.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mariadb:latest`
 
 ```console
-$ docker pull mariadb@sha256:d17cfbf8e7e9b9ed79f2de17125a01f66f350ddf5bcdd8b62da20634cfa0b425
+$ docker pull mariadb@sha256:2092b4328148ed2f18759d615ca73a79968ba87f99ad67bcbbc99f8202824a1c
 ```
 
 -	Platforms:
@@ -361,9 +361,9 @@ $ docker pull mariadb@sha256:d17cfbf8e7e9b9ed79f2de17125a01f66f350ddf5bcdd8b62da
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.0 MB (130999973 bytes)**  
+-	Total Size: **131.0 MB (131000122 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:be4475fa21512106819983a66d40c8c49aa701ced6c46bc5a46019d53b37fc89`
+-	Image ID: `sha256:63d91190a69eed2d037b212719f4a06203c6cc001fb3487ee7970c9ab8ce180c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -398,15 +398,15 @@ RUN { 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password password '
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
 # Fri, 30 Sep 2016 23:41:47 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 30 Sep 2016 23:41:48 GMT
-COPY file:3d6c735eabd780a3659135a57698f5a17ff1f72725728f21cf72250880e02926 in /usr/local/bin/ 
-# Fri, 30 Sep 2016 23:41:49 GMT
+# Fri, 14 Oct 2016 23:08:43 GMT
+COPY file:c38424786fef36048757ce9163e6884f3aadef4ecd3505a138402d64aac38c4e in /usr/local/bin/ 
+# Fri, 14 Oct 2016 23:08:43 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Fri, 30 Sep 2016 23:41:49 GMT
+# Fri, 14 Oct 2016 23:08:44 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 30 Sep 2016 23:41:49 GMT
+# Fri, 14 Oct 2016 23:08:44 GMT
 EXPOSE 3306/tcp
-# Fri, 30 Sep 2016 23:41:50 GMT
+# Fri, 14 Oct 2016 23:08:45 GMT
 CMD ["mysqld"]
 ```
 
@@ -451,13 +451,13 @@ CMD ["mysqld"]
 		Last Modified: Fri, 30 Sep 2016 23:41:59 GMT  
 		Size: 2.6 KB (2642 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7feb58de3974fb11436c5050158549f0339e8372a20efe5b05af9894e983eb49`  
-		Last Modified: Fri, 30 Sep 2016 23:41:58 GMT  
-		Size: 1.7 KB (1664 bytes)  
+	-	`sha256:beb44718230b73ceed3ca90497ef90adc1ca28f66131c2acadd4e2b00bc352d0`  
+		Last Modified: Fri, 14 Oct 2016 23:09:00 GMT  
+		Size: 1.8 KB (1815 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2674c3e23b0b5bf1b09ee0396a7eab6dc2e100068596a50bfd64320b663e1fff`  
-		Last Modified: Fri, 30 Sep 2016 23:41:58 GMT  
-		Size: 120.0 B  
+	-	`sha256:45046d6898ad78d0b24f020c30537e48202a48b3f855a7127636e6c15c1993ae`  
+		Last Modified: Fri, 14 Oct 2016 23:09:00 GMT  
+		Size: 118.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mariadb:10.0.27`
@@ -575,7 +575,7 @@ CMD ["mysqld"]
 ## `mariadb:10.0`
 
 ```console
-$ docker pull mariadb@sha256:a731e635394f851a70cca4a25388747a488cae9356307bfbed5e3bd13d8cfffa
+$ docker pull mariadb@sha256:a15cbe7b8497d6f57bea9f78870677b9da84d3c176478d1529bbf761e1fb2ad9
 ```
 
 -	Platforms:
@@ -585,9 +585,9 @@ $ docker pull mariadb@sha256:a731e635394f851a70cca4a25388747a488cae9356307bfbed5
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.7 MB (117741891 bytes)**  
+-	Total Size: **117.7 MB (117742034 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e91974860691bb31cfb10686f67e2ba09576081aa5bdfb53eaef727c7855af1`
+-	Image ID: `sha256:bbc55cb3219f0d82af15d70aad03b62fdfa4b1cc2e3950c9166c304543d22237`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -622,15 +622,15 @@ RUN { 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password password '
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
 # Fri, 23 Sep 2016 20:01:42 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 23 Sep 2016 20:01:43 GMT
-COPY file:3d6c735eabd780a3659135a57698f5a17ff1f72725728f21cf72250880e02926 in /usr/local/bin/ 
-# Fri, 23 Sep 2016 20:01:44 GMT
+# Fri, 14 Oct 2016 23:08:45 GMT
+COPY file:c38424786fef36048757ce9163e6884f3aadef4ecd3505a138402d64aac38c4e in /usr/local/bin/ 
+# Fri, 14 Oct 2016 23:08:46 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Fri, 23 Sep 2016 20:01:44 GMT
+# Fri, 14 Oct 2016 23:08:46 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 23 Sep 2016 20:01:44 GMT
+# Fri, 14 Oct 2016 23:08:47 GMT
 EXPOSE 3306/tcp
-# Fri, 23 Sep 2016 20:01:45 GMT
+# Fri, 14 Oct 2016 23:08:47 GMT
 CMD ["mysqld"]
 ```
 
@@ -675,19 +675,19 @@ CMD ["mysqld"]
 		Last Modified: Fri, 23 Sep 2016 20:01:52 GMT  
 		Size: 2.5 KB (2489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:227ddb47dcd3266127f83f118aaa37c6592ad1235da42f72191247686f0b3893`  
-		Last Modified: Fri, 23 Sep 2016 20:01:52 GMT  
-		Size: 1.7 KB (1667 bytes)  
+	-	`sha256:4facd80b14edd03240614806ddcc43945cc42b7604ef1a363b48baa174c58050`  
+		Last Modified: Fri, 14 Oct 2016 23:09:47 GMT  
+		Size: 1.8 KB (1811 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:692c399e2223ccab41dc1a429949325aef6652ed0f371028fda9148d17aedaa7`  
-		Last Modified: Fri, 23 Sep 2016 20:01:52 GMT  
-		Size: 119.0 B  
+	-	`sha256:e851d5a43fe53d6db2929f12b2978b606c5740ae0a1e8dfcc9d98b35473dd2e8`  
+		Last Modified: Fri, 14 Oct 2016 23:09:46 GMT  
+		Size: 118.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mariadb:5.5.52`
 
 ```console
-$ docker pull mariadb@sha256:7f5adfe3e99645408a65e34034cfc8f72f063b7bb9910bf53d8edba9de8dcee9
+$ docker pull mariadb@sha256:0d7c3f047aa88801b409c4ebc5f763e3f8a53958e428a475cfdfffec77299532
 ```
 
 -	Platforms:
@@ -697,9 +697,9 @@ $ docker pull mariadb@sha256:7f5adfe3e99645408a65e34034cfc8f72f063b7bb9910bf53d8
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **95.8 MB (95840102 bytes)**  
+-	Total Size: **95.8 MB (95840253 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8c22d6422820f2792888e4682051f10d6581095a7a5d789f7d9e2be61057297f`
+-	Image ID: `sha256:1416b6069a80660ae7a46182d08d8bdc341a603b9a2eee0efbbb58242c6072c7`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -734,15 +734,15 @@ RUN { 		echo mariadb-server-$MARIADB_MAJOR mysql-server/root_password password '
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo 'skip-host-cache\nskip-name-resolve' | awk '{ print } $1 == "[mysqld]" && c == 0 { c = 1; system("cat") }' /etc/mysql/my.cnf > /tmp/my.cnf 	&& mv /tmp/my.cnf /etc/mysql/my.cnf
 # Mon, 19 Sep 2016 20:08:53 GMT
 VOLUME [/var/lib/mysql]
-# Mon, 19 Sep 2016 20:08:53 GMT
-COPY file:3d6c735eabd780a3659135a57698f5a17ff1f72725728f21cf72250880e02926 in /usr/local/bin/ 
-# Mon, 19 Sep 2016 20:08:54 GMT
+# Fri, 14 Oct 2016 23:08:48 GMT
+COPY file:c38424786fef36048757ce9163e6884f3aadef4ecd3505a138402d64aac38c4e in /usr/local/bin/ 
+# Fri, 14 Oct 2016 23:08:50 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Mon, 19 Sep 2016 20:08:54 GMT
+# Fri, 14 Oct 2016 23:08:50 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 19 Sep 2016 20:08:55 GMT
+# Fri, 14 Oct 2016 23:08:50 GMT
 EXPOSE 3306/tcp
-# Mon, 19 Sep 2016 20:08:55 GMT
+# Fri, 14 Oct 2016 23:08:50 GMT
 CMD ["mysqld"]
 ```
 
@@ -787,13 +787,13 @@ CMD ["mysqld"]
 		Last Modified: Fri, 23 Sep 2016 20:02:37 GMT  
 		Size: 2.5 KB (2491 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba5d45519a817f00b03435d378e5e0daa902ec2e6e4da8425f4bb26eb6eabc1f`  
-		Last Modified: Fri, 23 Sep 2016 20:02:36 GMT  
-		Size: 1.7 KB (1663 bytes)  
+	-	`sha256:5d1647b02bcd60526548089fc1b77d3b8d5be6d23a227c555432f303b506b823`  
+		Last Modified: Fri, 14 Oct 2016 23:10:13 GMT  
+		Size: 1.8 KB (1816 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44473f7049389710b259eb123b84acfec31dd4706144643e376b605dbe627f73`  
-		Last Modified: Fri, 23 Sep 2016 20:02:36 GMT  
-		Size: 120.0 B  
+	-	`sha256:47bfbb4e927c58314fcad81df1379ee9ed3fd4765ce7cd24775a311495db24ed`  
+		Last Modified: Fri, 14 Oct 2016 23:10:13 GMT  
+		Size: 118.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mariadb:5.5`
