@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3bf46fa073e5a8d33ef8a4cbc037aba720a991c3e67d83ce4eee6c21733cd4c1`
-- Created: `2016-09-24T04:07:24.497757493Z`
+- Image ID: `sha256:1ca34df702f8dba3300cc248ff4925cb83ed16aa648575c1fc7988150bb74858`
+- Created: `2016-10-14T17:28:39.522006526Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["-e",""]`
@@ -15,6 +15,5 @@
   - `JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1`
   - `CA_CERTIFICATES_JAVA_VERSION=20140324`
   - `GOSU_VERSION=1.7`
-  - `LOGSTASH_MAJOR=2.4`
   - `LOGSTASH_VERSION=1:2.4.0-1`
   - `LS_SETTINGS_DIR=/etc/logstash`
