@@ -1,9 +1,9 @@
-# `php:7.0.11-cli`
+# `php:7.0.12-cli`
 
 ## Docker Metadata
 
-- Image ID: `sha256:43418939e90f6a71eb4196e89e1105b0ecb8011be10cba2253d080e9f074fe83`
-- Created: `2016-09-23T21:39:58.538145746Z`
+- Image ID: `sha256:8a24b2cedce05adc51407d4d634f184d857a71d8fdc61cb6178459d3c87e1191`
+- Created: `2016-10-14T23:19:09.230105916Z`
 - Arch: `linux`/`amd64`
 - Command: `["php","-a"]`
 - Environment:
@@ -11,9 +11,9 @@
   - `PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763`
-  - `PHP_VERSION=7.0.11`
-  - `PHP_FILENAME=php-7.0.11.tar.xz`
-  - `PHP_SHA256=d4cccea8da1d27c11b89386f8b8e95692ad3356610d571253d00ca67d524c735`
+  - `PHP_VERSION=7.0.12`
+  - `PHP_FILENAME=php-7.0.12.tar.xz`
+  - `PHP_SHA256=f3d6c49e1c242e5995dec15e503fde996c327eb86cd7ec45c690e93c971b83ff`
 
 ## `dpkg` (`.deb`-based packages)
 

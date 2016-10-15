@@ -1,9 +1,9 @@
-# `php:7.0.11-alpine`
+# `php:7.0.12-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:59e395d51604ba23cc5dfbc1dca0357ac4b072f7d50d096912563fa76115c409`
-- Created: `2016-09-23T17:35:48.949923078Z`
+- Image ID: `sha256:2b5f9501da1a0b5b1857be0803d9624ebc3d91ecdee1f3aa802d05db188b2fd6`
+- Created: `2016-10-14T23:23:11.261984189Z`
 - Arch: `linux`/`amd64`
 - Command: `["php","-a"]`
 - Environment:
@@ -11,6 +11,6 @@
   - `PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763`
-  - `PHP_VERSION=7.0.11`
-  - `PHP_FILENAME=php-7.0.11.tar.xz`
-  - `PHP_SHA256=d4cccea8da1d27c11b89386f8b8e95692ad3356610d571253d00ca67d524c735`
+  - `PHP_VERSION=7.0.12`
+  - `PHP_FILENAME=php-7.0.12.tar.xz`
+  - `PHP_SHA256=f3d6c49e1c242e5995dec15e503fde996c327eb86cd7ec45c690e93c971b83ff`

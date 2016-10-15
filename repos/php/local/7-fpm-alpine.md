@@ -1,9 +1,9 @@
-# `php:7.0.11-fpm-alpine`
+# `php:7.0.12-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b97c018d80bd33ff3dab7c02731298afa180783d8e01b9f3f95b5fed114f4ff9`
-- Created: `2016-09-23T17:40:40.949764069Z`
+- Image ID: `sha256:02a39f19d6310919cc44acd83fbf07ff671c0224b0ccde36ba4eeaf91c976f67`
+- Created: `2016-10-14T23:33:31.905872447Z`
 - Arch: `linux`/`amd64`
 - Command: `["php-fpm"]`
 - Environment:
@@ -12,6 +12,6 @@
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763`
-  - `PHP_VERSION=7.0.11`
-  - `PHP_FILENAME=php-7.0.11.tar.xz`
-  - `PHP_SHA256=d4cccea8da1d27c11b89386f8b8e95692ad3356610d571253d00ca67d524c735`
+  - `PHP_VERSION=7.0.12`
+  - `PHP_FILENAME=php-7.0.12.tar.xz`
+  - `PHP_SHA256=f3d6c49e1c242e5995dec15e503fde996c327eb86cd7ec45c690e93c971b83ff`
