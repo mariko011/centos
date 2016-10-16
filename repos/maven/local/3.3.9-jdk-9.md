@@ -80,19 +80,8 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.10.95-4
-'http://httpredir.debian.org/debian/pool/main/a/apparmor/apparmor_2.10.95-4.dsc' apparmor_2.10.95-4.dsc 3173 SHA256:72a0648f133d70c81283d8354cc9bd14b901838e73890e12d1c42c339ea16113
-'http://httpredir.debian.org/debian/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
-'http://httpredir.debian.org/debian/pool/main/a/apparmor/apparmor_2.10.95-4.debian.tar.xz' apparmor_2.10.95-4.debian.tar.xz 78524 SHA256:457444af5afabc202948166ed25c546b521050eb402f4e3bf965bb4d12534121
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apparmor/2.10.95-4/
-- https://sources.debian.net/src/apparmor/2.10.95-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apr-util=1.5.4-2`
 
