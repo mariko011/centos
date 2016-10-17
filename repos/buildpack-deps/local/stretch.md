@@ -729,19 +729,8 @@ Licenses: (parsed from: `/usr/share/doc/libdbus-1-3/copyright`)
 - `Tcl-BSDish`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dbus=1.10.10-1
-'http://httpredir.debian.org/debian/pool/main/d/dbus/dbus_1.10.10-1.dsc' dbus_1.10.10-1.dsc 3055 SHA256:227fb4b73607143bbb8b3dd099c6c124c3652437e45d0459e6cc637d62f4a4fe
-'http://httpredir.debian.org/debian/pool/main/d/dbus/dbus_1.10.10.orig.tar.gz' dbus_1.10.10.orig.tar.gz 1984077 SHA256:9d8f1d069ab4d1a0255d7b400ea3bcef4430c42e729b1012abb2890e3f739a43
-'http://httpredir.debian.org/debian/pool/main/d/dbus/dbus_1.10.10-1.debian.tar.xz' dbus_1.10.10-1.debian.tar.xz 54276 SHA256:d3303c9dcd2fc81102936dcffc80f6386ce6cd309bc9c996155a4a89ae21a7b0
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dbus/1.10.10-1/
-- https://sources.debian.net/src/dbus/1.10.10-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `debconf=1.5.59`
 

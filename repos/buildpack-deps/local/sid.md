@@ -1325,19 +1325,8 @@ Licenses: (parsed from: `/usr/share/doc/geoip-bin/copyright`, `/usr/share/doc/li
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris geoip=1.6.9-3
-'http://httpredir.debian.org/debian/pool/main/g/geoip/geoip_1.6.9-3.dsc' geoip_1.6.9-3.dsc 1885 SHA256:8262211a52f50250b9c17e40e3b3ecb7b7d76d9b17246fbfea39e0ef360d83c5
-'http://httpredir.debian.org/debian/pool/main/g/geoip/geoip_1.6.9.orig.tar.gz' geoip_1.6.9.orig.tar.gz 158576 SHA256:05468adbb6bdbddc588ee6f0df990f47b1b24d278519c35d59f7a8058a2a9825
-'http://httpredir.debian.org/debian/pool/main/g/geoip/geoip_1.6.9-3.debian.tar.xz' geoip_1.6.9-3.debian.tar.xz 22168 SHA256:30b50b04e8da3747ef841f070cbf9ed4775264e2f46ac2aab038f7f2a4ac9df9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/geoip/1.6.9-3/
-- https://sources.debian.net/src/geoip/1.6.9-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `git=1:2.9.3-1`
 
@@ -2905,19 +2894,8 @@ Licenses: (parsed from: `/usr/share/doc/libthai-data/copyright`, `/usr/share/doc
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libthai=0.1.25-1
-'http://httpredir.debian.org/debian/pool/main/libt/libthai/libthai_0.1.25-1.dsc' libthai_0.1.25-1.dsc 2336 SHA256:9b2cabacd33cd9e10f1e8fd4d0301ad123bb68987a135cfee2348dd1b096a3af
-'http://httpredir.debian.org/debian/pool/main/libt/libthai/libthai_0.1.25.orig.tar.xz' libthai_0.1.25.orig.tar.xz 408740 SHA256:0e22462a526e486d1e3e536c1ad7b45fae52f03bdfebfa969bec829ff9965a8b
-'http://httpredir.debian.org/debian/pool/main/libt/libthai/libthai_0.1.25-1.debian.tar.xz' libthai_0.1.25-1.debian.tar.xz 10564 SHA256:eb32ce6a369dead220753fc8d552d578a92027c6a7889c98207870a8cee14ea7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libthai/0.1.25-1/
-- https://sources.debian.net/src/libthai/0.1.25-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libtool=2.4.6-2`
 
@@ -3453,18 +3431,8 @@ Licenses: (parsed from: `/usr/share/doc/lsb-base/copyright`)
 - `BSD-3-clause`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris lsb=9.20160629
-'http://httpredir.debian.org/debian/pool/main/l/lsb/lsb_9.20160629.dsc' lsb_9.20160629.dsc 1612 SHA256:3da707687dc83f2b13305f6d7c682b3b9be7fa32069b299e1b55f5219b9737a6
-'http://httpredir.debian.org/debian/pool/main/l/lsb/lsb_9.20160629.tar.xz' lsb_9.20160629.tar.xz 55060 SHA256:879c7f305f13fc195d4309671066a39960d84b69b0078ad8bca5b44635a17d8d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/lsb/9.20160629/
-- https://sources.debian.net/src/lsb/9.20160629/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lz4=0.0~r131-2`
 

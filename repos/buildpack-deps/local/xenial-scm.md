@@ -258,14 +258,8 @@ Licenses: (parsed from: `/usr/share/doc/bzr/copyright`, `/usr/share/doc/python-b
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bzr=2.7.0-2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0-2ubuntu2.dsc' bzr_2.7.0-2ubuntu2.dsc 2661 SHA256:afd0e9061252e3f1a376bddf94b7c15b0c6f125fb04900437bad4cadca441ffe
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0.orig.tar.gz' bzr_2.7.0.orig.tar.gz 10944322 SHA256:5204369dc80e5738d7f4f5db5920e010cc5cb89097cf165462685ab70d9ab00b
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0-2ubuntu2.debian.tar.xz' bzr_2.7.0-2ubuntu2.debian.tar.xz 40572 SHA256:b9b8cc47964efa5b9c0ba27834cefc67f338bbe4558a8c791c5d07740569e293
-```
 
 ### `dpkg` source package: `ca-certificates=20160104ubuntu1`
 
