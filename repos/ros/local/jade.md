@@ -106,13 +106,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/apt-util
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.0.1ubuntu2.14
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.14.dsc' apt_1.0.1ubuntu2.14.dsc 1821 SHA256:c188b969225970570dedb568bf3b121866c822307d1d5dabbc50834258cbc1af
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.14.tar.xz' apt_1.0.1ubuntu2.14.tar.xz 1792384 SHA256:ad1a662b0aa9a6a8bd2776bcc2b2724a9ce2cb55e38fea2c700e1237be2481c3
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-1ubuntu1`
 
