@@ -777,10 +777,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris elfutils=0.166-2
-'http://httpredir.debian.org/debian/pool/main/e/elfutils/elfutils_0.166-2.dsc' elfutils_0.166-2.dsc 2510 SHA256:b61f7a80abd820e0ba5b391a6ac69e1efeb5d635fd7c57701e039e97fa1293dd
+'http://httpredir.debian.org/debian/pool/main/e/elfutils/elfutils_0.166-2.2.dsc' elfutils_0.166-2.2.dsc 2516 SHA256:27c83c2cad0f4fc130195add32a26ef4f2162e133ae797e0017d5a0d1598582a
 'http://httpredir.debian.org/debian/pool/main/e/elfutils/elfutils_0.166.orig.tar.bz2' elfutils_0.166.orig.tar.bz2 6496225 SHA256:3c056914c8a438b210be0d790463b960fc79d234c3f05ce707cbff80e94cba30
 'http://httpredir.debian.org/debian/pool/main/e/elfutils/elfutils_0.166.orig.tar.bz2.asc' elfutils_0.166.orig.tar.bz2.asc 479 SHA256:81a30e6ed226960d76d7bdbf5b1a65751ce48cf39a209fa5b820932b64e9d18b
-'http://httpredir.debian.org/debian/pool/main/e/elfutils/elfutils_0.166-2.debian.tar.xz' elfutils_0.166-2.debian.tar.xz 38372 SHA256:3813afd220305e45ce9864a25791abef5c86e7e605d7c7a3876fc983b82654ca
+'http://httpredir.debian.org/debian/pool/main/e/elfutils/elfutils_0.166-2.2.debian.tar.xz' elfutils_0.166-2.2.debian.tar.xz 40804 SHA256:46898297b94ef02dad180938bc8bca1070a0f0ba1529d92f03bbd0bab55a9286
 ```
 
 Likely also available for browsing at:
@@ -2281,19 +2281,8 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jdk-headless/copyright`, `/usr
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openjdk-9=9~b139-1
-'http://httpredir.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b139-1.dsc' openjdk-9_9~b139-1.dsc 4345 SHA256:d92f36be472f0c8cd74b42763bef2a8014bfe94e40ff2ab036ee298f6ab57f19
-'http://httpredir.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b139.orig.tar.gz' openjdk-9_9~b139.orig.tar.gz 72325671 SHA256:249c7001477fdd957db6e354da10f83e3f6bfd5ceefb391b4a51bf870f9d4e13
-'http://httpredir.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b139-1.debian.tar.xz' openjdk-9_9~b139-1.debian.tar.xz 188632 SHA256:b560c215d4bc13b8d6d3f5684c658d6bc39b7c2cac0252742bb4fcaac9008ac6
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openjdk-9/9~b139-1/
-- https://sources.debian.net/src/openjdk-9/9~b139-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.42+dfsg-2`
 
