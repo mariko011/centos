@@ -1,66 +1,86 @@
-## `node:4.6.0-wheezy`
+## `node:boron-onbuild`
 
 ```console
-$ docker pull node@sha256:4fe9e126316649ed7003cac46399c940be0fc934119331eddbabde22ca75da65
+$ docker pull node@sha256:dec3b7ef8860e0052085c3fbb4dc042fa8e3932bbcc6d8b88510f6c7f0841f1c
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `node:4.6.0-wheezy` - linux; amd64
+### `node:boron-onbuild` - linux; amd64
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **188.8 MB (188776727 bytes)**  
+-	Total Size: **257.5 MB (257459237 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c4a41ef8b1fb39a36306b936a137e9ecb86ece764234854aa45bd582f4760fdf`
--	Default Command: `["node"]`
+-	Image ID: `sha256:2d7f90b63592689a93a36624b48b4d2b573cd7dce0b7f1855df33f93e84592fc`
+-	Default Command: `["npm","start"]`
 
 ```dockerfile
-# Mon, 19 Sep 2016 17:43:34 GMT
-ADD file:b06eab13504d045bfba673dde1c6f5831a875e95146504a385baa101124f58f5 in / 
-# Mon, 19 Sep 2016 17:43:35 GMT
+# Fri, 23 Sep 2016 18:08:50 GMT
+ADD file:c6c23585ab140b0b320d4e99bc1b0eb544c9e96c24d90fec5e069a6d57d335ca in / 
+# Fri, 23 Sep 2016 18:08:51 GMT
 CMD ["/bin/bash"]
-# Mon, 19 Sep 2016 17:52:12 GMT
+# Fri, 23 Sep 2016 18:25:17 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 19 Sep 2016 17:52:33 GMT
+# Fri, 23 Sep 2016 18:26:18 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 19 Sep 2016 17:53:18 GMT
+# Sat, 24 Sep 2016 00:13:01 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 20 Sep 2016 16:47:15 GMT
+# Sat, 24 Sep 2016 04:20:26 GMT
 RUN set -ex   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";   done
-# Tue, 20 Sep 2016 16:47:16 GMT
+# Sat, 24 Sep 2016 04:23:39 GMT
 ENV NPM_CONFIG_LOGLEVEL=info
-# Wed, 28 Sep 2016 17:22:47 GMT
-ENV NODE_VERSION=4.6.0
-# Wed, 28 Sep 2016 17:22:51 GMT
+# Tue, 18 Oct 2016 19:27:17 GMT
+ENV NODE_VERSION=6.9.0
+# Tue, 18 Oct 2016 19:27:22 GMT
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz"   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1   && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs
-# Wed, 28 Sep 2016 17:22:52 GMT
+# Tue, 18 Oct 2016 19:27:23 GMT
 CMD ["node"]
+# Tue, 18 Oct 2016 19:27:24 GMT
+RUN mkdir -p /usr/src/app
+# Tue, 18 Oct 2016 19:27:24 GMT
+WORKDIR /usr/src/app
+# Tue, 18 Oct 2016 19:27:25 GMT
+ONBUILD ARG NODE_ENV
+# Tue, 18 Oct 2016 19:27:25 GMT
+ONBUILD ENV NODE_ENV $NODE_ENV
+# Tue, 18 Oct 2016 19:27:25 GMT
+ONBUILD COPY package.json /usr/src/app/
+# Tue, 18 Oct 2016 19:27:26 GMT
+ONBUILD RUN npm install
+# Tue, 18 Oct 2016 19:27:26 GMT
+ONBUILD COPY . /usr/src/app
+# Tue, 18 Oct 2016 19:27:26 GMT
+CMD ["npm" "start"]
 ```
 
 -	Layers:
-	-	`sha256:0fbab137f56aaa195d66eae971694eb98df3e4ff6a91eb4fa9905994ef40e5a1`  
-		Last Modified: Mon, 19 Sep 2016 17:48:55 GMT  
-		Size: 37.2 MB (37214522 bytes)  
+	-	`sha256:6a5a5368e0c2d3e5909184fa28ddfd56072e7ff3ee9a945876f7eee5896ef5bb`  
+		Last Modified: Fri, 23 Sep 2016 18:10:19 GMT  
+		Size: 51.4 MB (51354364 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75c99d281faeeb2fa2099fbbcaa380e4a96a4e83bd7bb3583d410667debf7aaa`  
-		Last Modified: Mon, 19 Sep 2016 18:03:18 GMT  
-		Size: 6.7 MB (6731221 bytes)  
+	-	`sha256:7b9457ec39de00bc70af1c9631b9ae6ede5a3ab715e6492c0a2641868ec1deda`  
+		Last Modified: Fri, 23 Sep 2016 18:25:33 GMT  
+		Size: 18.5 MB (18528257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c75c691829ac57648477d2256c2be0844f91886837a7738ff1d35ba143ddff16`  
-		Last Modified: Mon, 19 Sep 2016 18:03:47 GMT  
-		Size: 37.4 MB (37365131 bytes)  
+	-	`sha256:ff18e19c2db42055e6f34323700737bde3c819b413997cddace2c1b7180d7efd`  
+		Last Modified: Fri, 23 Sep 2016 18:26:43 GMT  
+		Size: 42.5 MB (42495967 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4338d76c60b168c60a487a479a85b8005903be829a8fb38cf8bac70e6ac0b8c`  
-		Last Modified: Mon, 19 Sep 2016 18:04:35 GMT  
-		Size: 95.2 MB (95218381 bytes)  
+	-	`sha256:6a3d69edbe90ef916e1ecd8d197f056de873ed08bcfd55a1cd0b43588f3dbb9a`  
+		Last Modified: Sat, 24 Sep 2016 00:13:39 GMT  
+		Size: 131.0 MB (131043806 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9277e82a040aa7021b880073a6db002ee9a629a1f7c7fb771d957cec00d6701c`  
-		Last Modified: Tue, 20 Sep 2016 17:54:04 GMT  
-		Size: 81.4 KB (81384 bytes)  
+	-	`sha256:0ce4b037e17fe0acf550faad6cfccaf454e96698ba56e902efcc2c934147ee52`  
+		Last Modified: Sat, 24 Sep 2016 04:20:39 GMT  
+		Size: 88.8 KB (88823 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93e4bec07e92ee7582ab39762ac8af7426fa065c1ae066eec87ad84c53baabc8`  
-		Last Modified: Wed, 28 Sep 2016 17:29:34 GMT  
-		Size: 12.2 MB (12166088 bytes)  
+	-	`sha256:6ba674c3fd3bd8308bbd1155a0c709e10b9c03c6e719ae82de4f6e280a23d882`  
+		Last Modified: Tue, 18 Oct 2016 19:29:06 GMT  
+		Size: 13.9 MB (13947892 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:345c3555173840e448c0bb7f741df9310e167ec5036db3a0708269249fa18906`  
+		Last Modified: Tue, 18 Oct 2016 19:30:06 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
