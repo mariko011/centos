@@ -1,7 +1,7 @@
 ## `debian:rc-buggy`
 
 ```console
-$ docker pull debian@sha256:167dc3a717ae5f27541e3098731a27539f9a1831d697a6fc741ff7c711ec8f94
+$ docker pull debian@sha256:5cb401ffc7f4ee50e192f76ff05b9c05b73efdd5f9f8c4d2c7ad2ef62cb36079
 ```
 
 -	Platforms:
@@ -11,26 +11,26 @@ $ docker pull debian@sha256:167dc3a717ae5f27541e3098731a27539f9a1831d697a6fc741f
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **43.1 MB (43149894 bytes)**  
+-	Total Size: **43.2 MB (43195264 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b485e4a7d0da4721b0ea0a2ff679a36dfff5cc48b30381c84dba2512db5199c7`
+-	Image ID: `sha256:b8a8c245f52696af0f8b5f1f6aeb60506e09435c4c3f65dbd112acebda62f47d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 23 Sep 2016 18:09:05 GMT
-ADD file:38fc3f9aecc8de28ee67c48e4f26a9dd74b238023b7f92c19da2f642b9d0fc14 in / 
-# Fri, 23 Sep 2016 18:09:06 GMT
+# Mon, 17 Oct 2016 21:26:09 GMT
+ADD file:7a91bb1a28e088d8d427022bb612873476ea54ec75cb559e5943b771d7412386 in / 
+# Mon, 17 Oct 2016 21:26:10 GMT
 CMD ["/bin/bash"]
-# Fri, 23 Sep 2016 18:09:55 GMT
+# Mon, 17 Oct 2016 23:43:08 GMT
 RUN awk '$1 ~ "^deb" { $3 = "rc-buggy"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/experimental.list
 ```
 
 -	Layers:
-	-	`sha256:8d7c8b969090899eedb896dfcdfc11e08596be2a94b1ae77609086ede354ab53`  
-		Last Modified: Fri, 23 Sep 2016 18:11:54 GMT  
-		Size: 43.1 MB (43149672 bytes)  
+	-	`sha256:279daf9814f4ba6feba147fd51356389273017b7d4a057e5a7cf724467c2fbcd`  
+		Last Modified: Mon, 17 Oct 2016 21:26:30 GMT  
+		Size: 43.2 MB (43195045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e21653385cf8c2073ac97c7ee8b8d0db3c5e9feb748192f4ba2a616598e57a26`  
-		Last Modified: Fri, 23 Sep 2016 18:14:57 GMT  
-		Size: 222.0 B  
+	-	`sha256:769e280b9ecbf9928a16f3ecc6c2cfce6a23ca7b4180d9e607c17af7f3ded490`  
+		Last Modified: Mon, 17 Oct 2016 23:43:18 GMT  
+		Size: 219.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

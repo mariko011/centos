@@ -1,7 +1,7 @@
 ## `buildpack-deps:sid-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:9d69a6af00b136470ab5ba5fa93b9e2e1c1a379bb65182b50ede3a5e1e9622b9
+$ docker pull buildpack-deps@sha256:492023d248f574f62181898044cb2ef17d69729345d7be4ce56373a15a266df6
 ```
 
 -	Platforms:
@@ -11,26 +11,26 @@ $ docker pull buildpack-deps@sha256:9d69a6af00b136470ab5ba5fa93b9e2e1c1a379bb651
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.7 MB (63708611 bytes)**  
+-	Total Size: **63.8 MB (63776050 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1ad60143183ba73a8053eaf70ec9e7aecf0f1d120966604013c7735763007eb8`
+-	Image ID: `sha256:dcbcf9423532e5b176cd39885bab0b0fa5119b4fce99d9c0d53ccca52fd63da4`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 23 Sep 2016 18:09:05 GMT
-ADD file:38fc3f9aecc8de28ee67c48e4f26a9dd74b238023b7f92c19da2f642b9d0fc14 in / 
-# Fri, 23 Sep 2016 18:09:06 GMT
+# Mon, 17 Oct 2016 21:26:09 GMT
+ADD file:7a91bb1a28e088d8d427022bb612873476ea54ec75cb559e5943b771d7412386 in / 
+# Mon, 17 Oct 2016 21:26:10 GMT
 CMD ["/bin/bash"]
-# Fri, 23 Sep 2016 18:27:12 GMT
+# Mon, 17 Oct 2016 23:39:43 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:8d7c8b969090899eedb896dfcdfc11e08596be2a94b1ae77609086ede354ab53`  
-		Last Modified: Fri, 23 Sep 2016 18:11:54 GMT  
-		Size: 43.1 MB (43149672 bytes)  
+	-	`sha256:279daf9814f4ba6feba147fd51356389273017b7d4a057e5a7cf724467c2fbcd`  
+		Last Modified: Mon, 17 Oct 2016 21:26:30 GMT  
+		Size: 43.2 MB (43195045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5cf27ef20a0d684a2f113fab4b3cf58cdb4b5e3ec312e688e979add4df4d9cb`  
-		Last Modified: Fri, 23 Sep 2016 18:27:26 GMT  
-		Size: 20.6 MB (20558939 bytes)  
+	-	`sha256:bee53d9e55ce8c4310eed9df888489b1e79dc22764f3c442d8e767d0f4218b57`  
+		Last Modified: Mon, 17 Oct 2016 23:40:01 GMT  
+		Size: 20.6 MB (20581005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
