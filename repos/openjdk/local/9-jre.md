@@ -77,19 +77,8 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.10.95-4
-'http://httpredir.debian.org/debian/pool/main/a/apparmor/apparmor_2.10.95-4.dsc' apparmor_2.10.95-4.dsc 3173 SHA256:72a0648f133d70c81283d8354cc9bd14b901838e73890e12d1c42c339ea16113
-'http://httpredir.debian.org/debian/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
-'http://httpredir.debian.org/debian/pool/main/a/apparmor/apparmor_2.10.95-4.debian.tar.xz' apparmor_2.10.95-4.debian.tar.xz 78524 SHA256:457444af5afabc202948166ed25c546b521050eb402f4e3bf965bb4d12534121
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apparmor/2.10.95-4/
-- https://sources.debian.net/src/apparmor/2.10.95-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apt=1.3`
 
@@ -1754,18 +1743,8 @@ Licenses: (parsed from: `/usr/share/doc/lsb-base/copyright`)
 - `BSD-3-clause`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris lsb=9.20160629
-'http://httpredir.debian.org/debian/pool/main/l/lsb/lsb_9.20160629.dsc' lsb_9.20160629.dsc 1612 SHA256:3da707687dc83f2b13305f6d7c682b3b9be7fa32069b299e1b55f5219b9737a6
-'http://httpredir.debian.org/debian/pool/main/l/lsb/lsb_9.20160629.tar.xz' lsb_9.20160629.tar.xz 55060 SHA256:879c7f305f13fc195d4309671066a39960d84b69b0078ad8bca5b44635a17d8d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/lsb/9.20160629/
-- https://sources.debian.net/src/lsb/9.20160629/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lz4=0.0~r131-2`
 
