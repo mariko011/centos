@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:68fdd289dcd9d135f28dcd10ef513902a0c36ff2378f66393d7962772e369fbe`
-- Created: `2016-10-14T17:36:58.33403392Z`
+- Image ID: `sha256:31547e0bbcbcb77482abe35ad1f66c753c5bcd34e594324ae89b4e082f73332e`
+- Created: `2016-10-18T23:40:18.245888363Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["memcached"]`
