@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:83c2cc5130f139b418827483ddc6adb0aa8c0b59d1ef80e68cd61abe94bb6641`
-- Created: `2016-09-26T21:15:31.861842524Z`
+- Image ID: `sha256:80a9f4d16b121a605bcb60127b16ee2e07840dc355985dd8e1ccb90521b1dbd2`
+- Created: `2016-10-18T23:17:16.244157618Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["apache2-foreground"]`
@@ -16,9 +16,11 @@
   - `PHP_EXTRA_BUILD_DEPS=apache2-dev`
   - `PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.26`
-  - `PHP_FILENAME=php-5.6.26.tar.xz`
-  - `PHP_SHA256=203a854f0f243cb2810d1c832bc871ff133eccdf1ff69d32846f93bc1bef58a8`
+  - `PHP_VERSION=5.6.27`
+  - `PHP_URL=https://secure.php.net/get/php-5.6.27.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.27.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=16eb544498339d1d855292826e2e547ab01a31600141094959073e5e10e93ab5`
+  - `PHP_MD5=9ce6efc96d5ab81ef808f8ed6b1f242d`
   - `BACKDROP_VERSION=1.5.0`
   - `BACKDROP_MD5=1eed54dd43304e8bae2b77ab3d4659e1`
 

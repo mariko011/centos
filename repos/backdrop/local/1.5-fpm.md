@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cf4c5230174b63988fe846a51822b14d2f2ca2b6f298115353afa1c2113c8b5b`
-- Created: `2016-09-26T21:15:37.653865429Z`
+- Image ID: `sha256:312a4d22e4f3f077e3a3e556f9f880bf4e6f75667ddd522a51709b5c740b379f`
+- Created: `2016-10-18T23:20:46.722279046Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["php-fpm"]`
@@ -13,9 +13,11 @@
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.26`
-  - `PHP_FILENAME=php-5.6.26.tar.xz`
-  - `PHP_SHA256=203a854f0f243cb2810d1c832bc871ff133eccdf1ff69d32846f93bc1bef58a8`
+  - `PHP_VERSION=5.6.27`
+  - `PHP_URL=https://secure.php.net/get/php-5.6.27.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.27.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=16eb544498339d1d855292826e2e547ab01a31600141094959073e5e10e93ab5`
+  - `PHP_MD5=9ce6efc96d5ab81ef808f8ed6b1f242d`
   - `BACKDROP_VERSION=1.5.0`
   - `BACKDROP_MD5=1eed54dd43304e8bae2b77ab3d4659e1`
 
