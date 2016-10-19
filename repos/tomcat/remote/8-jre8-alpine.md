@@ -1,7 +1,7 @@
 ## `tomcat:8-jre8-alpine`
 
 ```console
-$ docker pull tomcat@sha256:66cec16e9ef3ff6ea186bb8bfaa10478d25727b8c6dd930b8b2924135eddec12
+$ docker pull tomcat@sha256:9a6e1029212bea93f6d4751935cd8919b32944d9927f8395ba3fc3c6e800db48
 ```
 
 -	Platforms:
@@ -11,92 +11,92 @@ $ docker pull tomcat@sha256:66cec16e9ef3ff6ea186bb8bfaa10478d25727b8c6dd930b8b29
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **57.6 MB (57638693 bytes)**  
+-	Total Size: **56.4 MB (56399851 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:664ef08e9e2c6e5b3828ea03e59e885f9049eb66836c6de2425d5f99a10aa084`
+-	Image ID: `sha256:2318d8579ed504612372c16cb1f29d66b4ebc7633e0ad6630a69570cffa543a8`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
-# Fri, 23 Sep 2016 16:29:57 GMT
-ADD file:d6ee3ba7a4d59b161917082cc7242c660c61bb3f3cc1549c7e2dfff2b0de7104 in / 
-# Fri, 23 Sep 2016 17:02:28 GMT
+# Tue, 18 Oct 2016 20:31:22 GMT
+ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in / 
+# Tue, 18 Oct 2016 20:39:57 GMT
 ENV LANG=C.UTF-8
-# Fri, 23 Sep 2016 17:02:29 GMT
+# Tue, 18 Oct 2016 20:39:58 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Fri, 23 Sep 2016 17:07:01 GMT
+# Tue, 18 Oct 2016 20:40:34 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
-# Fri, 23 Sep 2016 17:07:01 GMT
+# Tue, 18 Oct 2016 20:40:35 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Fri, 23 Sep 2016 17:07:01 GMT
+# Tue, 18 Oct 2016 20:40:35 GMT
 ENV JAVA_VERSION=8u92
-# Fri, 23 Sep 2016 17:07:02 GMT
+# Tue, 18 Oct 2016 20:40:35 GMT
 ENV JAVA_ALPINE_VERSION=8.92.14-r1
-# Fri, 23 Sep 2016 17:07:05 GMT
+# Tue, 18 Oct 2016 20:40:41 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 23 Sep 2016 18:40:00 GMT
+# Wed, 19 Oct 2016 00:29:42 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Fri, 23 Sep 2016 18:40:00 GMT
+# Wed, 19 Oct 2016 00:29:42 GMT
 ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Fri, 23 Sep 2016 18:40:01 GMT
+# Wed, 19 Oct 2016 00:29:43 GMT
 RUN mkdir -p "$CATALINA_HOME"
-# Fri, 23 Sep 2016 18:40:01 GMT
+# Wed, 19 Oct 2016 00:29:43 GMT
 WORKDIR /usr/local/tomcat
-# Fri, 23 Sep 2016 18:40:02 GMT
+# Wed, 19 Oct 2016 00:29:44 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Fri, 23 Sep 2016 18:40:02 GMT
+# Wed, 19 Oct 2016 00:29:44 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Fri, 23 Sep 2016 18:40:05 GMT
+# Wed, 19 Oct 2016 00:29:47 GMT
 RUN apk add --no-cache gnupg
-# Fri, 23 Sep 2016 18:40:18 GMT
+# Wed, 19 Oct 2016 00:30:15 GMT
 RUN set -ex 	&& for key in 		05AB33110949707C93A279E3D3EFE6B686867BA6 		07E48665A34DCAFAE522E5E6266191C37C037D42 		47309207D818FFD8DCD3F83F1931D684307A10A5 		541FBE7D8F78B25E055DDEE13C370389288584E7 		61B832AC2F1C5A90F0F9B00A1C506407564C17A3 		713DA88BE50911535FE716F5208B0AB1D63011C7 		79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 		9BA44C2621385CB966EBA586F72C284D731FABEE 		A27677289986DB50844682F8ACB77FC2E86E29AC 		A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 		DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 		F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE 		F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23 	; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
-# Fri, 23 Sep 2016 18:42:54 GMT
+# Wed, 19 Oct 2016 00:33:05 GMT
 ENV TOMCAT_MAJOR=8
-# Fri, 14 Oct 2016 18:23:19 GMT
+# Wed, 19 Oct 2016 00:33:06 GMT
 ENV TOMCAT_VERSION=8.0.38
-# Fri, 14 Oct 2016 18:23:20 GMT
+# Wed, 19 Oct 2016 00:33:06 GMT
 ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.38/bin/apache-tomcat-8.0.38.tar.gz
-# Fri, 14 Oct 2016 18:23:20 GMT
+# Wed, 19 Oct 2016 00:33:06 GMT
 ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.38/bin/apache-tomcat-8.0.38.tar.gz.asc
-# Fri, 14 Oct 2016 18:23:37 GMT
+# Wed, 19 Oct 2016 00:33:16 GMT
 RUN set -x 		&& apk add --no-cache --virtual .fetch-deps 		ca-certificates 		tar 		openssl 	&& wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 	&& wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& apk add --no-cache --virtual .native-build-deps 		apr-dev 		gcc 		libc-dev 		make 		"openjdk${JAVA_VERSION%%[-~bu]*}"="$JAVA_ALPINE_VERSION" 		openssl-dev 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& ./configure 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j$(getconf _NPROCESSORS_ONLN) 		&& make install 	) 	&& runDeps="$( 		scanelf --needed --nobanner --recursive "$TOMCAT_NATIVE_LIBDIR" 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .tomcat-native-rundeps $runDeps 	&& apk del .fetch-deps .native-build-deps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz
-# Fri, 14 Oct 2016 18:23:43 GMT
+# Wed, 19 Oct 2016 00:33:18 GMT
 RUN set -e 	&& nativeLines="$(catalina.sh configtest 2>&1)" 	&& nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')" 	&& nativeLines="$(echo "$nativeLines" | sort -u)" 	&& if ! echo "$nativeLines" | grep 'INFO: Loaded APR based Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Fri, 14 Oct 2016 18:23:47 GMT
+# Wed, 19 Oct 2016 00:33:18 GMT
 EXPOSE 8080/tcp
-# Fri, 14 Oct 2016 18:23:48 GMT
+# Wed, 19 Oct 2016 00:33:18 GMT
 CMD ["catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:c0cb142e43453ebb1f82b905aa472e6e66017efd43872135bc5372e4fac04031`  
-		Last Modified: Fri, 23 Sep 2016 16:30:54 GMT  
-		Size: 2.3 MB (2312930 bytes)  
+	-	`sha256:3690ec4760f95690944da86dc4496148a63d85c9e3100669a318110092f6862f`  
+		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
+		Size: 2.3 MB (2312958 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf00e3870fb3e40e4a8e049bc0cd0d95ccd634da7b4b9980004b819f064fa174`  
-		Last Modified: Fri, 23 Sep 2016 17:02:49 GMT  
-		Size: 231.0 B  
+	-	`sha256:cfdb77eb56b4c44907a822ccdf607323c1f42fd024b7db6be146dd049d95f305`  
+		Last Modified: Tue, 18 Oct 2016 20:45:34 GMT  
+		Size: 230.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69001e8f079b82a7067ea481b58cb7076d7e3154a5e2da4b8eb4fc9670ebab2d`  
-		Last Modified: Fri, 23 Sep 2016 17:07:21 GMT  
-		Size: 39.6 MB (39647465 bytes)  
+	-	`sha256:b8876cfd96b2fd6c8a3d85d8ed9a02cfce486c97320fd18e3ce681486569ea72`  
+		Last Modified: Tue, 18 Oct 2016 20:53:40 GMT  
+		Size: 39.6 MB (39648817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1be0773f41c656f9d0baf27403905334664fceefd47c454d870596b29ab207e`  
-		Last Modified: Fri, 23 Sep 2016 18:40:49 GMT  
+	-	`sha256:481c7683217782a6bce0af3fcd195aadbe26d47887f2b9deccfbc884a66a872a`  
+		Last Modified: Wed, 19 Oct 2016 00:30:44 GMT  
+		Size: 133.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9558bb32d028782b865a0b77a2dd4b552117e5a3aac62ca8e12143f06a87e21c`  
+		Last Modified: Wed, 19 Oct 2016 00:30:45 GMT  
+		Size: 4.0 MB (3985846 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1b3f75b2bf882386933c2241f549d05989e184367e377345d28b537d178d411e`  
+		Last Modified: Wed, 19 Oct 2016 00:30:44 GMT  
+		Size: 106.7 KB (106730 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e819d852463b255417f560280fb51a711002476e3b5f3729582db2e55b44af70`  
+		Last Modified: Wed, 19 Oct 2016 00:33:29 GMT  
+		Size: 10.3 MB (10345006 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f27dbdca6b3eb86eaf9a2cb416bdf1e34a0dc20fe6e8f1415871e3f400a1ef4d`  
+		Last Modified: Wed, 19 Oct 2016 00:33:28 GMT  
 		Size: 131.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:394cbbd7f669b45cca7c630e807096a17759a34bfed901fae84d64e9b84239ab`  
-		Last Modified: Fri, 23 Sep 2016 18:40:48 GMT  
-		Size: 4.0 MB (3985843 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66b2e3ed45eeca4fe72efd6280354daf35be8ad39820ad29f677bf076679dc62`  
-		Last Modified: Fri, 23 Sep 2016 18:40:47 GMT  
-		Size: 106.2 KB (106202 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5c9f7024279f380a711eb6e8dc9cdb93ebe069ff2518abad67ace4f6bd2567c`  
-		Last Modified: Fri, 14 Oct 2016 18:37:44 GMT  
-		Size: 11.6 MB (11585762 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:65f3631900c125fe040acb30c08baa90e63aba0558920fbc6bb14177cd1d7f14`  
-		Last Modified: Fri, 14 Oct 2016 18:37:42 GMT  
-		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
