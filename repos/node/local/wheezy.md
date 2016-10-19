@@ -1,15 +1,15 @@
-# `node:6.8.1-wheezy`
+# `node:6.9.0-wheezy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e6fb78b44daa753848a6da4d71412c585f0495c05b2c6005856ffe960a9b9174`
-- Created: `2016-10-17T17:30:25.789905391Z`
+- Image ID: `sha256:d609031be624519297b06688e1ee9d71ff4ef03c380f05b463b2967c6491f354`
+- Created: `2016-10-18T19:27:43.878008044Z`
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=6.8.1`
+  - `NODE_VERSION=6.9.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2039,19 +2039,8 @@ Licenses: (parsed from: `/usr/share/doc/libgd2-noxpm/copyright`)
 - `HPND`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.0.36~rc1~dfsg-6.1+deb7u5
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u5.dsc' libgd2_2.0.36~rc1~dfsg-6.1+deb7u5.dsc 2541 SHA256:fc00af66cff1bfc24980369155f53cb08d92f2dce86ca5ea7aa702cb179e4b21
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg.orig.tar.gz' libgd2_2.0.36~rc1~dfsg.orig.tar.gz 761899 SHA256:919df21310ad4a8b6155df01411138110589cc6c50b1bc414dc62aebb0a7f41a
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u5.debian.tar.gz' libgd2_2.0.36~rc1~dfsg-6.1+deb7u5.debian.tar.gz 29870 SHA256:c0a27933feeff08d970d7a5a601914ce6679fefd092de80e2bcf78a956740f8b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libgd2/2.0.36~rc1~dfsg-6.1+deb7u5/
-- https://sources.debian.net/src/libgd2/2.0.36~rc1~dfsg-6.1+deb7u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.10-3.1`
 
