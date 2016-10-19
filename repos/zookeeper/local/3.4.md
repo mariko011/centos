@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cbc00d234ae5aaaae29e2cad20c7f2f4f4391f6055f49404be3cd4fda598b533`
-- Created: `2016-10-12T16:54:28.973880912Z`
+- Image ID: `sha256:ae952b380d94f9ea49bf01d2fe1dffa88e8ea1728319d8c727d6119adb220fcf`
+- Created: `2016-10-19T00:40:18.557848972Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["zkServer.sh","start-foreground"]`
@@ -18,4 +18,7 @@
   - `ZOO_DATA_DIR=/data`
   - `ZOO_DATA_LOG_DIR=/datalog`
   - `ZOO_PORT=2181`
+  - `ZOO_TICK_TIME=2000`
+  - `ZOO_INIT_LIMIT=5`
+  - `ZOO_SYNC_LIMIT=2`
   - `ZOOCFGDIR=/conf`
