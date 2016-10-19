@@ -1,19 +1,19 @@
-## `java:7u91-jre-alpine`
+## `java:7u111-jdk-alpine`
 
 ```console
-$ docker pull java@sha256:e5ac7e2b2d6dba7a6b32aec3df94baf7069f9a41112f429a8fee9b8a553aec6a
+$ docker pull java@sha256:67bebf6b0a1fce67a060f396624cc795b9118c2e464902a7a847d0cb600805a7
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `java:7u91-jre-alpine` - linux; amd64
+### `java:7u111-jdk-alpine` - linux; amd64
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **62.7 MB (62664179 bytes)**  
+-	Total Size: **77.9 MB (77862668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:987f344b5eb2ca4de8e7bb3c3456b190725ac2eb3e768eb4cbb8db52a68f38bf`
+-	Image ID: `sha256:b4d7cb1353eeefbba248492002354d69dbd68950e40f190d795df952a1c25bf1`
 
 ```dockerfile
 # Tue, 18 Oct 2016 20:31:22 GMT
@@ -22,16 +22,16 @@ ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in /
 ENV LANG=C.UTF-8
 # Tue, 18 Oct 2016 20:39:58 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 18 Oct 2016 20:40:13 GMT
-ENV JAVA_HOME=/usr/lib/jvm/java-1.7-openjdk/jre
-# Tue, 18 Oct 2016 20:40:13 GMT
+# Tue, 18 Oct 2016 20:39:59 GMT
+ENV JAVA_HOME=/usr/lib/jvm/java-1.7-openjdk
+# Tue, 18 Oct 2016 20:39:59 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.7-openjdk/jre/bin:/usr/lib/jvm/java-1.7-openjdk/bin
-# Tue, 18 Oct 2016 20:40:13 GMT
-ENV JAVA_VERSION=7u91
-# Tue, 18 Oct 2016 20:40:14 GMT
-ENV JAVA_ALPINE_VERSION=7.91.2.6.3-r2
-# Tue, 18 Oct 2016 20:40:24 GMT
-RUN set -x 	&& apk add --no-cache 		openjdk7-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
+# Wed, 19 Oct 2016 22:02:07 GMT
+ENV JAVA_VERSION=7u111
+# Wed, 19 Oct 2016 22:02:07 GMT
+ENV JAVA_ALPINE_VERSION=7.111.2.6.7-r2
+# Wed, 19 Oct 2016 22:02:17 GMT
+RUN set -x 	&& apk add --no-cache 		openjdk7="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
 -	Layers:
@@ -43,7 +43,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk7-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 		Last Modified: Tue, 18 Oct 2016 20:45:34 GMT  
 		Size: 230.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25092d337590f0d72d494e3c122a4e0530685562cbf40b31ae9319673a17f2ae`  
-		Last Modified: Tue, 18 Oct 2016 20:48:13 GMT  
-		Size: 60.4 MB (60350991 bytes)  
+	-	`sha256:5e87eeb13ad9ed22981f9c0b7753f79568a84073d032ad7ac2310f0b494bfa1a`  
+		Last Modified: Wed, 19 Oct 2016 22:06:24 GMT  
+		Size: 75.5 MB (75549480 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
