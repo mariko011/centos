@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:342a635c00d494a50c08450d405622f3fb808eec2a3d729cc6d29192e64b5f28`
-- Created: `2016-10-14T17:20:38.8262373Z`
+- Image ID: `sha256:35406a1fb0cc989664e26812a5fd3fdfa5c62d176ba6bc43fdd484646c5a4add`
+- Created: `2016-10-18T23:31:01.376870398Z`
 - Arch: `linux`/`amd64`
 - Command: `["apache2-foreground"]`
 - Environment:
@@ -15,9 +15,11 @@
   - `PHP_EXTRA_BUILD_DEPS=apache2-dev`
   - `PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763`
-  - `PHP_VERSION=7.0.11`
-  - `PHP_FILENAME=php-7.0.11.tar.xz`
-  - `PHP_SHA256=d4cccea8da1d27c11b89386f8b8e95692ad3356610d571253d00ca67d524c735`
+  - `PHP_VERSION=7.0.12`
+  - `PHP_URL=https://secure.php.net/get/php-7.0.12.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.12.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=f3d6c49e1c242e5995dec15e503fde996c327eb86cd7ec45c690e93c971b83ff`
+  - `PHP_MD5=bdcc4dbdac90c2a39422786653059f70`
   - `DRUPAL_VERSION=8.2.1`
   - `DRUPAL_MD5=ad5ab19697ee0f7d786184ceaa7ddf6a`
 

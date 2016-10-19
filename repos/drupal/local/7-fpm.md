@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6de99991e94b3baa07b473b67e141c0ad2031844c126a3bdd3a22efdaae12ca3`
-- Created: `2016-10-06T19:23:49.362462925Z`
+- Image ID: `sha256:92a75a73ddf013191c3617a0b01c95bd1f83aedb508fc1c21de74dacf9713eb7`
+- Created: `2016-10-18T23:28:34.60049227Z`
 - Arch: `linux`/`amd64`
 - Command: `["php-fpm"]`
 - Environment:
@@ -12,9 +12,11 @@
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763`
-  - `PHP_VERSION=7.0.11`
-  - `PHP_FILENAME=php-7.0.11.tar.xz`
-  - `PHP_SHA256=d4cccea8da1d27c11b89386f8b8e95692ad3356610d571253d00ca67d524c735`
+  - `PHP_VERSION=7.0.12`
+  - `PHP_URL=https://secure.php.net/get/php-7.0.12.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.12.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=f3d6c49e1c242e5995dec15e503fde996c327eb86cd7ec45c690e93c971b83ff`
+  - `PHP_MD5=bdcc4dbdac90c2a39422786653059f70`
   - `DRUPAL_VERSION=7.51`
   - `DRUPAL_MD5=49f82c1cac8e4bd4941ca160fcbee93d`
 
