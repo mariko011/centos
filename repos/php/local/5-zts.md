@@ -1,9 +1,9 @@
-# `php:5.6.26-zts`
+# `php:5.6.27-zts`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7ddc2056ac93c94c68bad3df7cb5f19d6b8489ac21792fec2518c28d321e4960`
-- Created: `2016-09-23T21:35:49.717786678Z`
+- Image ID: `sha256:1a1aa9052aa7e27c33923964625b2010c092abe15336bd308a4b0e7c31522a21`
+- Created: `2016-10-18T22:30:01.12794267Z`
 - Arch: `linux`/`amd64`
 - Command: `["php","-a"]`
 - Environment:
@@ -12,9 +12,11 @@
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.26`
-  - `PHP_FILENAME=php-5.6.26.tar.xz`
-  - `PHP_SHA256=203a854f0f243cb2810d1c832bc871ff133eccdf1ff69d32846f93bc1bef58a8`
+  - `PHP_VERSION=5.6.27`
+  - `PHP_URL=https://secure.php.net/get/php-5.6.27.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.27.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=16eb544498339d1d855292826e2e547ab01a31600141094959073e5e10e93ab5`
+  - `PHP_MD5=9ce6efc96d5ab81ef808f8ed6b1f242d`
 
 ## `dpkg` (`.deb`-based packages)
 

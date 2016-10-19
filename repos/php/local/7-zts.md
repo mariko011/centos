@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b8924ca33a8735e08e96d21d58963c243c8a3dfc9e33e958138910b173c40669`
-- Created: `2016-10-14T23:37:29.637954342Z`
+- Image ID: `sha256:2c5646171642c632086cd13f94dc1af7bbc85c4d29aca7e4f5b058a0afedff0c`
+- Created: `2016-10-18T22:04:39.941848729Z`
 - Arch: `linux`/`amd64`
 - Command: `["php","-a"]`
 - Environment:
@@ -13,8 +13,10 @@
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763`
   - `PHP_VERSION=7.0.12`
-  - `PHP_FILENAME=php-7.0.12.tar.xz`
+  - `PHP_URL=https://secure.php.net/get/php-7.0.12.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.12.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=f3d6c49e1c242e5995dec15e503fde996c327eb86cd7ec45c690e93c971b83ff`
+  - `PHP_MD5=bdcc4dbdac90c2a39422786653059f70`
 
 ## `dpkg` (`.deb`-based packages)
 

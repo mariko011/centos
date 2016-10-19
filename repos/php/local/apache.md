@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f41e38c51e7c2ab655de37d44e0e6a4ff26ce259d32a00cb0c522a0616301b7a`
-- Created: `2016-10-14T23:25:46.458024365Z`
+- Image ID: `sha256:5b1001da6b5ecafe6c48042dcae116f1b354e1fcc5207009e643442e96ab4a8d`
+- Created: `2016-10-18T21:52:05.958056823Z`
 - Arch: `linux`/`amd64`
 - Command: `["apache2-foreground"]`
 - Environment:
@@ -16,8 +16,10 @@
   - `PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763`
   - `PHP_VERSION=7.0.12`
-  - `PHP_FILENAME=php-7.0.12.tar.xz`
+  - `PHP_URL=https://secure.php.net/get/php-7.0.12.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.12.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=f3d6c49e1c242e5995dec15e503fde996c327eb86cd7ec45c690e93c971b83ff`
+  - `PHP_MD5=bdcc4dbdac90c2a39422786653059f70`
 
 ## `dpkg` (`.deb`-based packages)
 

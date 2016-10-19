@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ec8399b7d5f50fe6095dbd2db4a8aea6ed83c35d16f3e5a280fbe97386ceadb4`
-- Created: `2016-09-30T23:50:26.812257032Z`
+- Image ID: `sha256:c4f27256e411d017f14d95d0918815bd9b371de7b7ee750ec9c1b2bac9de6f90`
+- Created: `2016-10-18T21:17:32.873630051Z`
 - Arch: `linux`/`amd64`
 - Command: `["php","-a"]`
 - Environment:
@@ -12,7 +12,10 @@
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0`
   - `PHP_VERSION=7.1.0RC3`
-  - `PHP_FILENAME=php-7.1.0RC3.tar.xz`
+  - `PHP_URL=http://downloads.php.net/~davey/php-7.1.0RC3.tar.xz`
+  - `PHP_ASC_URL=http://downloads.php.net/~davey/php-7.1.0RC3.tar.xz.asc`
+  - `PHP_SHA256=`
+  - `PHP_MD5=2bfa0ad51de4fce87d0175d655f6bf69`
 
 ## `dpkg` (`.deb`-based packages)
 
