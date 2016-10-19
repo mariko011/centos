@@ -1,7 +1,7 @@
 ## `rails:onbuild`
 
 ```console
-$ docker pull rails@sha256:ea5e27a95702d723bc3e0a7587d72be4af646ade75935d5132bf7e3f7a4ba092
+$ docker pull rails@sha256:3cdcc85210e5bc379f4b58e4c24ef049126e64e34a18aef53498785f0ec5f3ab
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull rails@sha256:ea5e27a95702d723bc3e0a7587d72be4af646ade75935d5132bf7
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **296.0 MB (295951205 bytes)**  
+-	Total Size: **296.0 MB (295951764 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8cbe193896c013b2862aad6e1d2f9d7943fd28270d44b0e20b9beb9eb36a924c`
+-	Image ID: `sha256:3ab7c85ad528f621ef0e4c6a26ea90b2d1d4c06470ced64a53749bcd62116689`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
 ```dockerfile
@@ -39,41 +39,41 @@ ENV RUBY_DOWNLOAD_SHA256=b87c738cb2032bf4920fef8e3864dc5cf8eae9d89d8d523ce023694
 ENV RUBYGEMS_VERSION=2.6.7
 # Wed, 28 Sep 2016 21:12:26 GMT
 RUN set -ex 		&& buildDeps=' 		bison 		libgdbm-dev 		ruby 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& rm -rf /var/lib/apt/lists/* 		&& wget -O ruby.tar.gz "https://cache.ruby-lang.org/pub/ruby/$RUBY_MAJOR/ruby-$RUBY_VERSION.tar.gz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.gz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xzf ruby.tar.gz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.gz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& ./configure --disable-install-doc 	&& make -j"$(nproc)" 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION"
-# Fri, 14 Oct 2016 17:53:29 GMT
-ENV BUNDLER_VERSION=1.13.3
-# Fri, 14 Oct 2016 17:53:32 GMT
+# Tue, 18 Oct 2016 22:58:31 GMT
+ENV BUNDLER_VERSION=1.13.5
+# Tue, 18 Oct 2016 22:58:34 GMT
 RUN gem install bundler --version "$BUNDLER_VERSION"
-# Fri, 14 Oct 2016 17:53:32 GMT
+# Tue, 18 Oct 2016 22:58:34 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Fri, 14 Oct 2016 17:53:32 GMT
+# Tue, 18 Oct 2016 22:58:34 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Fri, 14 Oct 2016 17:53:33 GMT
+# Tue, 18 Oct 2016 22:58:35 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 14 Oct 2016 17:53:34 GMT
+# Tue, 18 Oct 2016 22:58:36 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Fri, 14 Oct 2016 17:53:34 GMT
+# Tue, 18 Oct 2016 22:58:36 GMT
 CMD ["irb"]
-# Fri, 14 Oct 2016 17:53:46 GMT
+# Tue, 18 Oct 2016 23:01:04 GMT
 RUN bundle config --global frozen 1
-# Fri, 14 Oct 2016 17:53:47 GMT
+# Tue, 18 Oct 2016 23:01:05 GMT
 RUN mkdir -p /usr/src/app
-# Fri, 14 Oct 2016 17:53:47 GMT
+# Tue, 18 Oct 2016 23:01:06 GMT
 WORKDIR /usr/src/app
-# Fri, 14 Oct 2016 17:53:48 GMT
+# Tue, 18 Oct 2016 23:01:06 GMT
 ONBUILD COPY Gemfile /usr/src/app/
-# Fri, 14 Oct 2016 17:53:48 GMT
+# Tue, 18 Oct 2016 23:01:06 GMT
 ONBUILD COPY Gemfile.lock /usr/src/app/
-# Fri, 14 Oct 2016 17:53:48 GMT
+# Tue, 18 Oct 2016 23:01:06 GMT
 ONBUILD RUN bundle install
-# Fri, 14 Oct 2016 17:53:49 GMT
+# Tue, 18 Oct 2016 23:01:07 GMT
 ONBUILD COPY . /usr/src/app
-# Fri, 14 Oct 2016 18:28:30 GMT
+# Wed, 19 Oct 2016 18:11:33 GMT
 RUN apt-get update && apt-get install -y nodejs --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Fri, 14 Oct 2016 18:28:38 GMT
+# Wed, 19 Oct 2016 18:11:42 GMT
 RUN apt-get update && apt-get install -y mysql-client postgresql-client sqlite3 --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Fri, 14 Oct 2016 18:28:38 GMT
+# Wed, 19 Oct 2016 18:11:42 GMT
 EXPOSE 3000/tcp
-# Fri, 14 Oct 2016 18:28:39 GMT
+# Wed, 19 Oct 2016 18:11:43 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -102,27 +102,27 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Last Modified: Wed, 28 Sep 2016 21:22:24 GMT  
 		Size: 35.3 MB (35289236 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:614f3475bd070010c5872892c598bf5861a251aad52fd8ff7be9b24820f6a905`  
-		Last Modified: Fri, 14 Oct 2016 17:57:28 GMT  
-		Size: 611.9 KB (611871 bytes)  
+	-	`sha256:74aaebd65a9e0d5aff58691261f9912e39e81229ccd5321b2e9be49465d78269`  
+		Last Modified: Tue, 18 Oct 2016 23:05:33 GMT  
+		Size: 612.3 KB (612343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bd67136d0aea4fb6442c729719d2ac5a3f424daec805cfa94a22af5319a2799`  
-		Last Modified: Fri, 14 Oct 2016 17:57:28 GMT  
+	-	`sha256:804477bacc8f499d048f8c1b2528beb124cb7a5ccd4a22df917402a21255f298`  
+		Last Modified: Tue, 18 Oct 2016 23:05:30 GMT  
 		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0a4b6f41e8b3a87a4a9635fe221b0bc473dab316a6aaa15903752f25d0a1e39`  
-		Last Modified: Fri, 14 Oct 2016 17:59:50 GMT  
-		Size: 183.0 B  
+	-	`sha256:4f4811b25ee7abc95ed7c6a2007ef8eb9fef4e6e08fe23b49efa4c7a7f02029e`  
+		Last Modified: Tue, 18 Oct 2016 23:08:19 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8172faf15602f2a8531642e8f8704ba2d2a6539e57ae1893701ea1e7604dbf00`  
-		Last Modified: Fri, 14 Oct 2016 17:59:49 GMT  
-		Size: 126.0 B  
+	-	`sha256:68db29b412602844675213eb769ac25b52e82e7b7b1e5c055bdc81a2fe710c6e`  
+		Last Modified: Tue, 18 Oct 2016 23:08:20 GMT  
+		Size: 127.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef48c4b645619f16bd7cfe578bdc851a4edd68353e1c8964a4c410814ce20bb2`  
-		Last Modified: Fri, 14 Oct 2016 18:28:49 GMT  
-		Size: 2.9 MB (2879458 bytes)  
+	-	`sha256:e2cf687afc0f77e9f450900e23a905d41608ef351645047ad1ba5d156cc6cf1d`  
+		Last Modified: Wed, 19 Oct 2016 18:11:54 GMT  
+		Size: 2.9 MB (2879472 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e966c1064b77092f6b6804a6cd47b549660bdbb583a637cdfd190179b9e0a2bc`  
-		Last Modified: Fri, 14 Oct 2016 18:28:52 GMT  
-		Size: 13.7 MB (13747573 bytes)  
+	-	`sha256:4daafc3ef550dc4070a16e80396852f1204a89ea56b7eaeb43036b8d2230fbb1`  
+		Last Modified: Wed, 19 Oct 2016 18:11:55 GMT  
+		Size: 13.7 MB (13747643 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
