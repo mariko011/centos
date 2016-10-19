@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:93a4637d9b28d7282ba18cc7a7202b043f4b4ed6030d6fde3f4b08b9c175e6bf`
-- Created: `2016-10-06T22:47:25.034007121Z`
+- Image ID: `sha256:8dc286d9eb13a4b84a39861107f13f98b17fc92e940603b3988cfe6528d14582`
+- Created: `2016-10-19T00:42:09.966125598Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/bin/tini","--","/usr/local/bin/jenkins.sh"]`
 - Environment:
