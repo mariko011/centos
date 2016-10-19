@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1863d4c816c4359612a0d83693f27a60c50003e38a0912fddfb074229bb9ed03`
-- Created: `2016-09-28T20:43:10.565774558Z`
+- Image ID: `sha256:50fa4509d4755f53b61dae98a03363fb42b2d240efe49ff4f6cccf9b0da473a8`
+- Created: `2016-10-18T23:22:47.341912176Z`
 - Arch: `linux`/`amd64`
 - Command: `["lein","run"]`
 - Environment:
