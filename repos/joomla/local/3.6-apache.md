@@ -1,9 +1,9 @@
-# `joomla:3.6.2-apache`
+# `joomla:3.6.3-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d49d9d93022bfc4008d39417a8d99487d77bea938d0462647bff41683afe2cae`
-- Created: `2016-09-24T03:56:27.97375815Z`
+- Image ID: `sha256:b0d71786c1f5e13188d3a98e60d0b43bf4d9eb77a221fc76123b42a966766734`
+- Created: `2016-10-18T23:27:50.65000452Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["apache2-foreground"]`
@@ -16,11 +16,13 @@
   - `PHP_EXTRA_BUILD_DEPS=apache2-dev`
   - `PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.26`
-  - `PHP_FILENAME=php-5.6.26.tar.xz`
-  - `PHP_SHA256=203a854f0f243cb2810d1c832bc871ff133eccdf1ff69d32846f93bc1bef58a8`
-  - `JOOMLA_VERSION=3.6.2`
-  - `JOOMLA_SHA1=fdaa25337aaabd0d673aafc0ff90e7375de2d6e3`
+  - `PHP_VERSION=5.6.27`
+  - `PHP_URL=https://secure.php.net/get/php-5.6.27.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.27.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=16eb544498339d1d855292826e2e547ab01a31600141094959073e5e10e93ab5`
+  - `PHP_MD5=9ce6efc96d5ab81ef808f8ed6b1f242d`
+  - `JOOMLA_VERSION=3.6.3`
+  - `JOOMLA_SHA1=01eb3724e191fcfd034b54f54745703a8a4f288e`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1635,6 +1637,31 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/liblocale-gettext-perl/1.05-8/
 - https://sources.debian.net/src/liblocale-gettext-perl/1.05-8/debian/copyright (for direct copyright/license information)
+
+### `dpkg` source package: `libmcrypt=2.5.8-3.3`
+
+Binary Packages:
+
+- `libmcrypt-dev=2.5.8-3.3`
+- `libmcrypt4=2.5.8-3.3`
+
+Licenses: (parsed from: `/usr/share/doc/libmcrypt-dev/copyright`, `/usr/share/doc/libmcrypt4/copyright`)
+
+- `LGPL-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libmcrypt=2.5.8-3.3
+'http://httpredir.debian.org/debian/pool/main/libm/libmcrypt/libmcrypt_2.5.8-3.3.dsc' libmcrypt_2.5.8-3.3.dsc 1926 SHA256:83ea31a37aa86161f980b68d392dc293ee2d65b0b61ddc38ea7a9969df39863a
+'http://httpredir.debian.org/debian/pool/main/libm/libmcrypt/libmcrypt_2.5.8.orig.tar.gz' libmcrypt_2.5.8.orig.tar.gz 1335178 SHA256:e4eb6c074bbab168ac47b947c195ff8cef9d51a211cdd18ca9c9ef34d27a373e
+'http://httpredir.debian.org/debian/pool/main/libm/libmcrypt/libmcrypt_2.5.8-3.3.diff.gz' libmcrypt_2.5.8-3.3.diff.gz 5469 SHA256:bb55c2d5c86ecd620be4cf2888b0b7a57217670d3e36738d491dc3d4a72fabc3
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libmcrypt/2.5.8-3.3/
+- https://sources.debian.net/src/libmcrypt/2.5.8-3.3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpng=1.2.50-2+deb8u2`
 
