@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3fb31f5a2b6ccb7fb8a55f7954176d77b31a7f79e16fe0ecb5d864c058899530`
-- Created: `2016-09-23T16:51:23.66977638Z`
+- Image ID: `sha256:bd58e0d7bd0705ee3b07844742693ef337c5e5101e47c531ec05b2b3a09c1e79`
+- Created: `2016-10-18T23:18:49.897924137Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["haproxy","-f","/usr/local/etc/haproxy/haproxy.cfg"]`
