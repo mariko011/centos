@@ -19,6 +19,8 @@
 -	[`bash:3`](#bash3)
 -	[`bash:3.1.23`](#bash3123)
 -	[`bash:3.1`](#bash31)
+-	[`bash:3.0.22`](#bash3022)
+-	[`bash:3.0`](#bash30)
 
 ## `bash:4.4.0`
 
@@ -784,3 +786,11 @@ CMD ["bash"]
 		Last Modified: Tue, 18 Oct 2016 23:26:32 GMT  
 		Size: 1.7 MB (1743195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `bash:3.0.22`
+
+**does not exist** (yet?)
+
+## `bash:3.0`
+
+**does not exist** (yet?)
