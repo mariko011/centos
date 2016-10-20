@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7882d9327552519cf7ffca67d0dfaf3c85b75a955f4c8790047bc8bece9a62eb`
-- Created: `2016-10-06T23:16:37.646125732Z`
+- Image ID: `sha256:91b725f58cba43380d90e39446390f403d1b5fe73185d79eb60ddbc6dd7844ca`
+- Created: `2016-10-19T20:38:18.461919665Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["php-fpm"]`
@@ -13,9 +13,11 @@
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763`
-  - `PHP_VERSION=7.0.11`
-  - `PHP_FILENAME=php-7.0.11.tar.xz`
-  - `PHP_SHA256=d4cccea8da1d27c11b89386f8b8e95692ad3356610d571253d00ca67d524c735`
+  - `PHP_VERSION=7.0.12`
+  - `PHP_URL=https://secure.php.net/get/php-7.0.12.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.12.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=f3d6c49e1c242e5995dec15e503fde996c327eb86cd7ec45c690e93c971b83ff`
+  - `PHP_MD5=bdcc4dbdac90c2a39422786653059f70`
   - `WORDPRESS_VERSION=4.6.1`
   - `WORDPRESS_SHA1=027e065d30a64720624a7404a1820e6c6fff1202`
 
