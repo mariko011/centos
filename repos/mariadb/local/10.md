@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:63d91190a69eed2d037b212719f4a06203c6cc001fb3487ee7970c9ab8ce180c`
-- Created: `2016-10-14T23:08:45.005484515Z`
+- Image ID: `sha256:4e1ae09402bfb3d514bd38b7022004a35b9d13e04f87ba4e4b049e76c76d3363`
+- Created: `2016-10-19T17:27:09.517869473Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["mysqld"]`
@@ -1417,11 +1417,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libdata-section-perl/0.200006-1/
 - https://sources.debian.net/src/libdata-section-perl/0.200006-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libdbd-mysql-perl=4.028-2+deb8u1`
+### `dpkg` source package: `libdbd-mysql-perl=4.028-2+deb8u2`
 
 Binary Packages:
 
-- `libdbd-mysql-perl=4.028-2+deb8u1`
+- `libdbd-mysql-perl=4.028-2+deb8u2`
 
 Licenses: (parsed from: `/usr/share/doc/libdbd-mysql-perl/copyright`)
 
@@ -1434,16 +1434,16 @@ Licenses: (parsed from: `/usr/share/doc/libdbd-mysql-perl/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libdbd-mysql-perl=4.028-2+deb8u1
-'http://httpredir.debian.org/debian/pool/main/libd/libdbd-mysql-perl/libdbd-mysql-perl_4.028-2+deb8u1.dsc' libdbd-mysql-perl_4.028-2+deb8u1.dsc 2228 SHA256:0107b21e78ef5b5f97aebee9783195e339307310bb2e0c05c890b2f1804622eb
-'http://httpredir.debian.org/debian/pool/main/libd/libdbd-mysql-perl/libdbd-mysql-perl_4.028.orig.tar.gz' libdbd-mysql-perl_4.028.orig.tar.gz 138614 SHA256:5842b24affdabce8b17122f910cd5b5b253bf266d7e5084af5df4248523811ed
-'http://httpredir.debian.org/debian/pool/main/libd/libdbd-mysql-perl/libdbd-mysql-perl_4.028-2+deb8u1.debian.tar.xz' libdbd-mysql-perl_4.028-2+deb8u1.debian.tar.xz 9416 SHA256:7362689157b70f1b085ac09352373ba7ebe6e386c0eb0a7851d9a99f4e9d89d7
+$ apt-get source -qq --print-uris libdbd-mysql-perl=4.028-2+deb8u2
+'http://security.debian.org/pool/updates/main/libd/libdbd-mysql-perl/libdbd-mysql-perl_4.028-2+deb8u2.dsc' libdbd-mysql-perl_4.028-2+deb8u2.dsc 1900 SHA256:a40c7f900833413800921633332aefff4b29b584567322eb2e1f473b9f127b62
+'http://security.debian.org/pool/updates/main/libd/libdbd-mysql-perl/libdbd-mysql-perl_4.028.orig.tar.gz' libdbd-mysql-perl_4.028.orig.tar.gz 138614 SHA256:5842b24affdabce8b17122f910cd5b5b253bf266d7e5084af5df4248523811ed
+'http://security.debian.org/pool/updates/main/libd/libdbd-mysql-perl/libdbd-mysql-perl_4.028-2+deb8u2.debian.tar.xz' libdbd-mysql-perl_4.028-2+deb8u2.debian.tar.xz 10008 SHA256:48a1dd9d575a91c3a1541ef417786cc5b122c1d326b4c978d8a4071d5e1090e5
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libdbd-mysql-perl/4.028-2+deb8u1/
-- https://sources.debian.net/src/libdbd-mysql-perl/4.028-2+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libdbd-mysql-perl/4.028-2+deb8u2/
+- https://sources.debian.net/src/libdbd-mysql-perl/4.028-2+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libdbi-perl=1.631-3`
 
