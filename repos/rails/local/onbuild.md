@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8cbe193896c013b2862aad6e1d2f9d7943fd28270d44b0e20b9beb9eb36a924c`
-- Created: `2016-10-14T18:28:39.010047764Z`
+- Image ID: `sha256:3ab7c85ad528f621ef0e4c6a26ea90b2d1d4c06470ced64a53749bcd62116689`
+- Created: `2016-10-19T18:11:43.045984485Z`
 - Arch: `linux`/`amd64`
 - Command: `["rails","server","-b","0.0.0.0"]`
 - Environment:
@@ -12,7 +12,7 @@
   - `RUBY_VERSION=2.3.1`
   - `RUBY_DOWNLOAD_SHA256=b87c738cb2032bf4920fef8e3864dc5cf8eae9d89d8d523ce0236945c5797dcd`
   - `RUBYGEMS_VERSION=2.6.7`
-  - `BUNDLER_VERSION=1.13.3`
+  - `BUNDLER_VERSION=1.13.5`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_PATH=/usr/local/bundle`
   - `BUNDLE_BIN=/usr/local/bundle/bin`
