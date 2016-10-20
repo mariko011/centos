@@ -1,15 +1,15 @@
-# `node:6.9.0`
+# `node:6.9.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:00d59d4fc3609df8b30a83d5fc5ed95d77fbc6f2651f78bd8304489ba3d65262`
-- Created: `2016-10-18T19:27:23.297507098Z`
+- Image ID: `sha256:b18ccd36cf1e802c04797015ac408b8a671700e4991d3db27a5a8fbce3ba9e9c`
+- Created: `2016-10-19T23:36:36.181888422Z`
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=6.9.0`
+  - `NODE_VERSION=6.9.1`
 
 ## `dpkg` (`.deb`-based packages)
 
