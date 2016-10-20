@@ -1,16 +1,16 @@
-# `golang:1.7.1-wheezy`
+# `golang:1.7.3-wheezy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4ac068e84d8cea83e6fa5e43533f63aa2c21c4b55b63eb168565ee2627d6d932`
-- Created: `2016-09-28T20:46:58.094442699Z`
+- Image ID: `sha256:97d87380597d6580d5ee27b6f2bec4d15cb0feb431b9a9562b85f0f0b24e5634`
+- Created: `2016-10-19T21:55:09.918032752Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.7.1`
-  - `GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.7.1.linux-amd64.tar.gz`
-  - `GOLANG_DOWNLOAD_SHA256=43ad621c9b014cde8db17393dc108378d37bc853aa351a6c74bf6432c1bbd182`
+  - `GOLANG_VERSION=1.7.3`
+  - `GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.7.3.linux-amd64.tar.gz`
+  - `GOLANG_DOWNLOAD_SHA256=508028aac0654e993564b6e2014bf2d4a9751e3b286661b0b0040046cf18028e`
   - `GOPATH=/go`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1655,19 +1655,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=3.2.81-2
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.81-2.dsc' linux_3.2.81-2.dsc 103011 SHA256:abbbe3106d167c100c3373d6edb470b784ee9872520674d5f4ceb89457634ea0
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.81.orig.tar.xz' linux_3.2.81.orig.tar.xz 65977248 SHA256:fe7b9cf9cfa0a6ab9d6a3fcb1a9bf0a8fb2b47417b90fb67dbbe19b5ea16991a
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.81-2.debian.tar.xz' linux_3.2.81-2.debian.tar.xz 3729392 SHA256:0382994bf30811e7dcdeea5635a9ab0add294ae7841fb19059b865f420eed7e8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/3.2.81-2/
-- https://sources.debian.net/src/linux/3.2.81-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian8+deb7u1`
 
