@@ -423,10 +423,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cluster=2.0.5-1
-'http://http.debian.net/debian/pool/main/c/cluster/cluster_2.0.5-1.dsc' cluster_2.0.5-1.dsc 1651 SHA256:826feff8afb3049feef3705e790edd9685ba9d3ccc348a2b4a57acb3e7ec157b
-'http://http.debian.net/debian/pool/main/c/cluster/cluster_2.0.5.orig.tar.gz' cluster_2.0.5.orig.tar.gz 295549 SHA256:4b309133bc2ad7b8fe4fa538dd69635bc8a4cd724a3c95f01084098876c57bae
-'http://http.debian.net/debian/pool/main/c/cluster/cluster_2.0.5-1.diff.gz' cluster_2.0.5-1.diff.gz 3398 SHA256:1762c8c41016d56b711a7cfe852742564aa9b2920ee45f3efa12d6dc0ae8c523
+'http://deb.debian.org/debian/pool/main/c/cluster/cluster_2.0.5-1.dsc' cluster_2.0.5-1.dsc 1651 SHA256:826feff8afb3049feef3705e790edd9685ba9d3ccc348a2b4a57acb3e7ec157b
+'http://deb.debian.org/debian/pool/main/c/cluster/cluster_2.0.5.orig.tar.gz' cluster_2.0.5.orig.tar.gz 295549 SHA256:4b309133bc2ad7b8fe4fa538dd69635bc8a4cd724a3c95f01084098876c57bae
+'http://deb.debian.org/debian/pool/main/c/cluster/cluster_2.0.5-1.diff.gz' cluster_2.0.5-1.diff.gz 3398 SHA256:1762c8c41016d56b711a7cfe852742564aa9b2920ee45f3efa12d6dc0ae8c523
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/cluster/2.0.5-1/
+- https://sources.debian.net/src/cluster/2.0.5-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `codetools=0.2-15-1`
 
@@ -442,10 +447,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris codetools=0.2-15-1
-'http://http.debian.net/debian/pool/main/c/codetools/codetools_0.2-15-1.dsc' codetools_0.2-15-1.dsc 1673 SHA256:91bc75fd18e71d46bb1a7ba1530e8908c9abaf05e83e789dfa8b61e9fa586863
-'http://http.debian.net/debian/pool/main/c/codetools/codetools_0.2-15.orig.tar.gz' codetools_0.2-15.orig.tar.gz 12930 SHA256:4e0798ed79281a614f8cdd199e25f2c1bd8f35ecec902b03016544bd7795fa40
-'http://http.debian.net/debian/pool/main/c/codetools/codetools_0.2-15-1.diff.gz' codetools_0.2-15-1.diff.gz 2283 SHA256:22c1b572229215f6c77184a96fa4c7fe8a3a4963395685323f6f21fbf550311c
+'http://deb.debian.org/debian/pool/main/c/codetools/codetools_0.2-15-1.dsc' codetools_0.2-15-1.dsc 1673 SHA256:91bc75fd18e71d46bb1a7ba1530e8908c9abaf05e83e789dfa8b61e9fa586863
+'http://deb.debian.org/debian/pool/main/c/codetools/codetools_0.2-15.orig.tar.gz' codetools_0.2-15.orig.tar.gz 12930 SHA256:4e0798ed79281a614f8cdd199e25f2c1bd8f35ecec902b03016544bd7795fa40
+'http://deb.debian.org/debian/pool/main/c/codetools/codetools_0.2-15-1.diff.gz' codetools_0.2-15-1.diff.gz 2283 SHA256:22c1b572229215f6c77184a96fa4c7fe8a3a4963395685323f6f21fbf550311c
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/codetools/0.2-15-1/
+- https://sources.debian.net/src/codetools/0.2-15-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `coreutils=8.25-2`
 
@@ -1713,10 +1723,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libdatrie=0.2.10-4
-'http://http.debian.net/debian/pool/main/libd/libdatrie/libdatrie_0.2.10-4.dsc' libdatrie_0.2.10-4.dsc 2195 SHA256:2d80d21cfb574258e2602239c11e3df638b79334c5495430d2490763dff6b1a4
-'http://http.debian.net/debian/pool/main/libd/libdatrie/libdatrie_0.2.10.orig.tar.xz' libdatrie_0.2.10.orig.tar.xz 294380 SHA256:180eff7b0309ca19a02d5864e744185d715f021398a096fec6cf960f8ebfaa2b
-'http://http.debian.net/debian/pool/main/libd/libdatrie/libdatrie_0.2.10-4.debian.tar.xz' libdatrie_0.2.10-4.debian.tar.xz 7364 SHA256:52da724dc19ec0a27860b29b1192f2f529eeeaf27a848b75253711e9195578be
+'http://deb.debian.org/debian/pool/main/libd/libdatrie/libdatrie_0.2.10-4.dsc' libdatrie_0.2.10-4.dsc 2195 SHA256:2d80d21cfb574258e2602239c11e3df638b79334c5495430d2490763dff6b1a4
+'http://deb.debian.org/debian/pool/main/libd/libdatrie/libdatrie_0.2.10.orig.tar.xz' libdatrie_0.2.10.orig.tar.xz 294380 SHA256:180eff7b0309ca19a02d5864e744185d715f021398a096fec6cf960f8ebfaa2b
+'http://deb.debian.org/debian/pool/main/libd/libdatrie/libdatrie_0.2.10-4.debian.tar.xz' libdatrie_0.2.10-4.debian.tar.xz 7364 SHA256:52da724dc19ec0a27860b29b1192f2f529eeeaf27a848b75253711e9195578be
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libdatrie/0.2.10-4/
+- https://sources.debian.net/src/libdatrie/0.2.10-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libffi=3.2.1-6`
 
