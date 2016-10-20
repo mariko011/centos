@@ -1,13 +1,13 @@
-# `java:7u91-jdk-alpine`
+# `java:7u111-jdk-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e41d2f045b20c66d5f7dab0cc88c4f9b8ae17d2279a93f46651afc04f8c381dd`
-- Created: `2016-10-18T20:40:12.11778035Z`
+- Image ID: `sha256:b4d7cb1353eeefbba248492002354d69dbd68950e40f190d795df952a1c25bf1`
+- Created: `2016-10-19T22:02:17.615372782Z`
 - Arch: `linux`/`amd64`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.7-openjdk/jre/bin:/usr/lib/jvm/java-1.7-openjdk/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-1.7-openjdk`
-  - `JAVA_VERSION=7u91`
-  - `JAVA_ALPINE_VERSION=7.91.2.6.3-r2`
+  - `JAVA_VERSION=7u111`
+  - `JAVA_ALPINE_VERSION=7.111.2.6.7-r2`
