@@ -1,9 +1,9 @@
-# `php:7.1.0RC3-cli`
+# `php:7.1.0RC4-cli`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c4f27256e411d017f14d95d0918815bd9b371de7b7ee750ec9c1b2bac9de6f90`
-- Created: `2016-10-18T21:17:32.873630051Z`
+- Image ID: `sha256:969d29e8f44ba4087bef19bf3cf68901ebbb40b66986cd4caa5f8b0ae0fd6eab`
+- Created: `2016-10-19T22:28:29.821861949Z`
 - Arch: `linux`/`amd64`
 - Command: `["php","-a"]`
 - Environment:
@@ -11,11 +11,11 @@
   - `PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0`
-  - `PHP_VERSION=7.1.0RC3`
-  - `PHP_URL=http://downloads.php.net/~davey/php-7.1.0RC3.tar.xz`
-  - `PHP_ASC_URL=http://downloads.php.net/~davey/php-7.1.0RC3.tar.xz.asc`
-  - `PHP_SHA256=`
-  - `PHP_MD5=2bfa0ad51de4fce87d0175d655f6bf69`
+  - `PHP_VERSION=7.1.0RC4`
+  - `PHP_URL=http://downloads.php.net/~krakjoe/php-7.1.0RC4.tar.xz`
+  - `PHP_ASC_URL=`
+  - `PHP_SHA256=aa06af4cd4674b4a57969d39566497d700c291f433209f8c83b75ffc1128d258`
+  - `PHP_MD5=3493df23aa02af833198df94227cb6d9`
 
 ## `dpkg` (`.deb`-based packages)
 

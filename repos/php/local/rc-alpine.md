@@ -1,9 +1,9 @@
-# `php:7.1.0RC3-alpine`
+# `php:7.1.0RC4-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f787882f29d271d70917bed4ba42738e28b24976fbbd9e6da613471d1480a090`
-- Created: `2016-10-18T21:21:54.168288884Z`
+- Image ID: `sha256:49a1a51abbaecee64db19f3ac6ff66e4b4ad5955a5099c7faa4768de20975103`
+- Created: `2016-10-19T22:32:42.181956629Z`
 - Arch: `linux`/`amd64`
 - Command: `["php","-a"]`
 - Environment:
@@ -11,8 +11,8 @@
   - `PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0`
-  - `PHP_VERSION=7.1.0RC3`
-  - `PHP_URL=http://downloads.php.net/~davey/php-7.1.0RC3.tar.xz`
-  - `PHP_ASC_URL=http://downloads.php.net/~davey/php-7.1.0RC3.tar.xz.asc`
-  - `PHP_SHA256=`
-  - `PHP_MD5=2bfa0ad51de4fce87d0175d655f6bf69`
+  - `PHP_VERSION=7.1.0RC4`
+  - `PHP_URL=http://downloads.php.net/~krakjoe/php-7.1.0RC4.tar.xz`
+  - `PHP_ASC_URL=`
+  - `PHP_SHA256=aa06af4cd4674b4a57969d39566497d700c291f433209f8c83b75ffc1128d258`
+  - `PHP_MD5=3493df23aa02af833198df94227cb6d9`

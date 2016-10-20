@@ -1,9 +1,9 @@
-# `php:7.1.0RC3-zts-alpine`
+# `php:7.1.0RC4-zts-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3664baa0bb4eec1bad671055ee7ee13ed2a992de26d471eb8d4871832d882ac9`
-- Created: `2016-10-18T21:41:47.690235709Z`
+- Image ID: `sha256:a631c367c80811bad95750e24b2b242b9787d230eaa23d6cd3a887d2fe0bf126`
+- Created: `2016-10-19T22:52:30.081242195Z`
 - Arch: `linux`/`amd64`
 - Command: `["php","-a"]`
 - Environment:
@@ -12,8 +12,8 @@
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts`
   - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0`
-  - `PHP_VERSION=7.1.0RC3`
-  - `PHP_URL=http://downloads.php.net/~davey/php-7.1.0RC3.tar.xz`
-  - `PHP_ASC_URL=http://downloads.php.net/~davey/php-7.1.0RC3.tar.xz.asc`
-  - `PHP_SHA256=`
-  - `PHP_MD5=2bfa0ad51de4fce87d0175d655f6bf69`
+  - `PHP_VERSION=7.1.0RC4`
+  - `PHP_URL=http://downloads.php.net/~krakjoe/php-7.1.0RC4.tar.xz`
+  - `PHP_ASC_URL=`
+  - `PHP_SHA256=aa06af4cd4674b4a57969d39566497d700c291f433209f8c83b75ffc1128d258`
+  - `PHP_MD5=3493df23aa02af833198df94227cb6d9`

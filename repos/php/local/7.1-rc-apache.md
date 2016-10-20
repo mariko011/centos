@@ -1,9 +1,9 @@
-# `php:7.1.0RC3-apache`
+# `php:7.1.0RC4-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ef28027ca8e6171148e4b38120223b26821893837620d6bdb86399041510141a`
-- Created: `2016-10-18T21:24:44.613859075Z`
+- Image ID: `sha256:aa0d294137993e8d5bd83ff0918c9412eee64b2fd9274cc8245803ec9b0a5ddf`
+- Created: `2016-10-19T22:35:28.033871898Z`
 - Arch: `linux`/`amd64`
 - Command: `["apache2-foreground"]`
 - Environment:
@@ -15,11 +15,11 @@
   - `PHP_EXTRA_BUILD_DEPS=apache2-dev`
   - `PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2`
   - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0`
-  - `PHP_VERSION=7.1.0RC3`
-  - `PHP_URL=http://downloads.php.net/~davey/php-7.1.0RC3.tar.xz`
-  - `PHP_ASC_URL=http://downloads.php.net/~davey/php-7.1.0RC3.tar.xz.asc`
-  - `PHP_SHA256=`
-  - `PHP_MD5=2bfa0ad51de4fce87d0175d655f6bf69`
+  - `PHP_VERSION=7.1.0RC4`
+  - `PHP_URL=http://downloads.php.net/~krakjoe/php-7.1.0RC4.tar.xz`
+  - `PHP_ASC_URL=`
+  - `PHP_SHA256=aa06af4cd4674b4a57969d39566497d700c291f433209f8c83b75ffc1128d258`
+  - `PHP_MD5=3493df23aa02af833198df94227cb6d9`
 
 ## `dpkg` (`.deb`-based packages)
 
