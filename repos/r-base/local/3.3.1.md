@@ -1138,14 +1138,8 @@ Licenses: (parsed from: `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris glibc=2.24-4
-'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.24-4.dsc' glibc_2.24-4.dsc 8297 SHA256:66f5cb3a7f27fe61354844df079ba88a7891acc6739fc2b5ff94bf17019cf9db
-'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.24.orig.tar.xz' glibc_2.24.orig.tar.xz 13921912 SHA256:ed71e8afd2b270f7947a2cea2457a31e1ca4fac08e2731d80edd7ec1730ec84f
-'http://http.debian.net/debian/pool/main/g/glibc/glibc_2.24-4.debian.tar.xz' glibc_2.24-4.debian.tar.xz 916172 SHA256:b13d1f1fb5a4c1e169810dcad1fe6565f5ceba58bc28988de217c911a6354df1
-```
 
 ### `dpkg` source package: `gmp=2:6.1.1+dfsg-1`
 
@@ -1229,16 +1223,11 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gnutls28=3.5.4-2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.4-2.dsc' gnutls28_3.5.4-2.dsc 3115 SHA256:2a47baaa2b4413347350eb3f823e46a95a839c49fa064cc755c625f9b4685aeb
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.4.orig.tar.xz' gnutls28_3.5.4.orig.tar.xz 6930620 SHA256:4e38014332e0f70c5d19b0eca8d85025ccd0d8be85894c0aaa498b42f6b9a8eb
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.4.orig.tar.xz.asc' gnutls28_3.5.4.orig.tar.xz.asc 287 SHA256:760972326c3a132bac25ea43fc8668e6e2679c7151dba67e6dd5d8712bd57114
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.4-2.debian.tar.xz' gnutls28_3.5.4-2.debian.tar.xz 97352 SHA256:6849d305b11728f4284f8565f384cd8a5eae59539280233ee833655f60639464
+'http://http.debian.net/debian/pool/main/g/gnutls28/gnutls28_3.5.4-2.dsc' gnutls28_3.5.4-2.dsc 3115 SHA256:2a47baaa2b4413347350eb3f823e46a95a839c49fa064cc755c625f9b4685aeb
+'http://http.debian.net/debian/pool/main/g/gnutls28/gnutls28_3.5.4.orig.tar.xz' gnutls28_3.5.4.orig.tar.xz 6930620 SHA256:4e38014332e0f70c5d19b0eca8d85025ccd0d8be85894c0aaa498b42f6b9a8eb
+'http://http.debian.net/debian/pool/main/g/gnutls28/gnutls28_3.5.4.orig.tar.xz.asc' gnutls28_3.5.4.orig.tar.xz.asc 287 SHA256:760972326c3a132bac25ea43fc8668e6e2679c7151dba67e6dd5d8712bd57114
+'http://http.debian.net/debian/pool/main/g/gnutls28/gnutls28_3.5.4-2.debian.tar.xz' gnutls28_3.5.4-2.debian.tar.xz 97352 SHA256:6849d305b11728f4284f8565f384cd8a5eae59539280233ee833655f60639464
 ```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnutls28/3.5.4-2/
-- https://sources.debian.net/src/gnutls28/3.5.4-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `graphite2=1.3.8-1`
 
@@ -1881,14 +1870,8 @@ Licenses: (parsed from: `/usr/share/doc/libjpeg-dev/copyright`, `/usr/share/doc/
 - `BSD-BY-LC-NE`
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libjpeg-turbo=1:1.5.1-1
-'http://http.debian.net/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.1-1.dsc' libjpeg-turbo_1.5.1-1.dsc 2420 SHA256:c510d0712672db99dfcceda37ecdbde38c1a33ccd4acb8caed210070a648db89
-'http://http.debian.net/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.1.orig.tar.gz' libjpeg-turbo_1.5.1.orig.tar.gz 1650647 SHA256:41429d3d253017433f66e3d472b8c7d998491d2f41caa7306b8d9a6f2a2c666c
-'http://http.debian.net/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.1-1.debian.tar.xz' libjpeg-turbo_1.5.1-1.debian.tar.xz 78168 SHA256:345a5cb6d59edbe5a977fcf4277b829597b92a18ecfb55888c600487c87d0e5a
-```
 
 ### `dpkg` source package: `libmnl=1.0.4-2`
 
@@ -2163,10 +2146,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libthai=0.1.25-2
-'http://http.debian.net/debian/pool/main/libt/libthai/libthai_0.1.25-2.dsc' libthai_0.1.25-2.dsc 2320 SHA256:c3765ed67e3313c6839a91af0e6ad4912460218c5fa1e2d577540cf0536077d3
-'http://http.debian.net/debian/pool/main/libt/libthai/libthai_0.1.25.orig.tar.xz' libthai_0.1.25.orig.tar.xz 408740 SHA256:0e22462a526e486d1e3e536c1ad7b45fae52f03bdfebfa969bec829ff9965a8b
-'http://http.debian.net/debian/pool/main/libt/libthai/libthai_0.1.25-2.debian.tar.xz' libthai_0.1.25-2.debian.tar.xz 10704 SHA256:904b84ce4e6a6a3fca81e0b5a4295b32af335592236d0b08a167be3795024d08
+'http://deb.debian.org/debian/pool/main/libt/libthai/libthai_0.1.25-2.dsc' libthai_0.1.25-2.dsc 2320 SHA256:c3765ed67e3313c6839a91af0e6ad4912460218c5fa1e2d577540cf0536077d3
+'http://deb.debian.org/debian/pool/main/libt/libthai/libthai_0.1.25.orig.tar.xz' libthai_0.1.25.orig.tar.xz 408740 SHA256:0e22462a526e486d1e3e536c1ad7b45fae52f03bdfebfa969bec829ff9965a8b
+'http://deb.debian.org/debian/pool/main/libt/libthai/libthai_0.1.25-2.debian.tar.xz' libthai_0.1.25-2.debian.tar.xz 10704 SHA256:904b84ce4e6a6a3fca81e0b5a4295b32af335592236d0b08a167be3795024d08
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libthai/0.1.25-2/
+- https://sources.debian.net/src/libthai/0.1.25-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libx11=2:1.6.3-1`
 
