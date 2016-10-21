@@ -1,7 +1,7 @@
 ## `debian:oldstable-backports`
 
 ```console
-$ docker pull debian@sha256:e51e33103e2308b9b22586189707da802e8a07d2b6aa74c2241a8c7ee2193705
+$ docker pull debian@sha256:e53660cbdaf7ac95646e59fd50fd305b1e38dba6afce7353b9e3fa8b0a41faf8
 ```
 
 -	Platforms:
@@ -11,26 +11,26 @@ $ docker pull debian@sha256:e51e33103e2308b9b22586189707da802e8a07d2b6aa74c2241a
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.2 MB (37214813 bytes)**  
+-	Total Size: **37.2 MB (37215474 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19c21c5b41212e6615ecac7e1962c1cde96f4c0a844f0438e1a860a045383ffb`
+-	Image ID: `sha256:d9e9752b2ef94dbe5c55e0611c04b2b145bcc3b37d56975a9e0b6a05e4711cd3`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 19 Sep 2016 17:42:46 GMT
-ADD file:ca1b2e757bad42bc767a110c41f0aed349f1aa7e653fba5d4f7f3ee1f837e5eb in / 
-# Mon, 19 Sep 2016 17:42:46 GMT
+# Fri, 21 Oct 2016 16:24:06 GMT
+ADD file:cf469eea38c12856948191a24e3378840d8296b1f888391495a22a87c0ce4b72 in / 
+# Fri, 21 Oct 2016 16:24:06 GMT
 CMD ["/bin/bash"]
-# Mon, 19 Sep 2016 17:42:47 GMT
+# Fri, 21 Oct 2016 16:24:37 GMT
 RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
 ```
 
 -	Layers:
-	-	`sha256:b4821cbc85929832c9673733fce1111e9dc2e2892ccaf6b853d9e27f438d4767`  
-		Last Modified: Mon, 19 Sep 2016 17:45:28 GMT  
-		Size: 37.2 MB (37214592 bytes)  
+	-	`sha256:827b6e3ea0092e4fd1f52c39d8ca9f72c8902435abf043255ce75dce1a9667a3`  
+		Last Modified: Fri, 21 Oct 2016 16:24:26 GMT  
+		Size: 37.2 MB (37215257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81812662d0a160b29cc87c5ec19af69399a6bf2dbd0695e6cb36e6007051564b`  
-		Last Modified: Mon, 19 Sep 2016 17:45:47 GMT  
-		Size: 221.0 B  
+	-	`sha256:53ef8cd6320dbc2c5c9d44ffc8571c36c047af189548d973d560088d0182d1e6`  
+		Last Modified: Fri, 21 Oct 2016 16:24:46 GMT  
+		Size: 217.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
