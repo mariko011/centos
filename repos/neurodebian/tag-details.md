@@ -670,7 +670,7 @@ RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ## `neurodebian:wheezy`
 
 ```console
-$ docker pull neurodebian@sha256:b96996b8596d081bb7170cc6409c0f6b698d8135677651d2f6ff3dec04c02f6d
+$ docker pull neurodebian@sha256:36d2718c291ce0c17af09def12b944d0f039a9e9ad87ecff70900d1892c0c787
 ```
 
 -	Platforms:
@@ -680,54 +680,54 @@ $ docker pull neurodebian@sha256:b96996b8596d081bb7170cc6409c0f6b698d8135677651d
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.2 MB (37247334 bytes)**  
+-	Total Size: **37.2 MB (37247950 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cc19588d2fedcfa1e0babcd134659851e163c9cbe4a85e438083e2bb037ec949`
+-	Image ID: `sha256:59e497a9510633e2efb2f931e7a665c63e1034a4d04e748d082800fdcffad748`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 19 Sep 2016 17:43:34 GMT
-ADD file:b06eab13504d045bfba673dde1c6f5831a875e95146504a385baa101124f58f5 in / 
-# Mon, 19 Sep 2016 17:43:35 GMT
+# Fri, 21 Oct 2016 16:26:06 GMT
+ADD file:93883f863ccd9e401e4f945206887f251075a63d25a8129c9bd73e707397f109 in / 
+# Fri, 21 Oct 2016 16:26:06 GMT
 CMD ["/bin/bash"]
-# Mon, 19 Sep 2016 23:16:13 GMT
+# Fri, 21 Oct 2016 22:30:35 GMT
 RUN which gpg || { apt-get update && apt-get install -y --no-install-recommends gnupg dirmngr && rm -rf /var/lib/apt/lists/*; }
-# Mon, 19 Sep 2016 23:16:14 GMT
+# Fri, 21 Oct 2016 22:30:36 GMT
 RUN echo 'deb http://neuro.debian.net/debian wheezy main' > /etc/apt/sources.list.d/neurodebian.sources.list
-# Mon, 19 Sep 2016 23:16:14 GMT
+# Fri, 21 Oct 2016 22:30:37 GMT
 RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list.d/neurodebian.sources.list
-# Mon, 19 Sep 2016 23:16:15 GMT
+# Fri, 21 Oct 2016 22:30:38 GMT
 RUN echo '#deb-src http://neuro.debian.net/debian-devel wheezy main' >> /etc/apt/sources.list.d/neurodebian.sources.list
-# Mon, 19 Sep 2016 23:16:16 GMT
+# Fri, 21 Oct 2016 22:30:39 GMT
 RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ```
 
 -	Layers:
-	-	`sha256:0fbab137f56aaa195d66eae971694eb98df3e4ff6a91eb4fa9905994ef40e5a1`  
-		Last Modified: Mon, 19 Sep 2016 17:48:55 GMT  
-		Size: 37.2 MB (37214522 bytes)  
+	-	`sha256:d44a3b2e3fc2a79a071282b2ad5f6bcbefc929c0e816750b0b76f6ec5580ae23`  
+		Last Modified: Fri, 21 Oct 2016 16:26:27 GMT  
+		Size: 37.2 MB (37215139 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f3645783c47a40e1b7e6758cd3998c627be1acfe150a8da4748e9434147d4ce`  
-		Last Modified: Fri, 23 Sep 2016 20:50:19 GMT  
-		Size: 216.0 B  
+	-	`sha256:d650e95304fe53685ff8453cae238d9f8ed6309b2e005413641995ca9c8d9319`  
+		Last Modified: Fri, 21 Oct 2016 22:30:49 GMT  
+		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04002ab370cabf68d7ce700752d47840e9fadb1008c5331a2fb39041ec380511`  
-		Last Modified: Fri, 23 Sep 2016 20:50:18 GMT  
+	-	`sha256:9b3d783484f3f5507c65f53db2329d56f5588a89836f4d6456a9ad2878ff9ae1`  
+		Last Modified: Fri, 21 Oct 2016 22:30:48 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:568ea35d1c0de4bcc08950706620fe007645ea4e28fae2c7bb809eeeb90c4c58`  
-		Last Modified: Fri, 23 Sep 2016 20:50:18 GMT  
-		Size: 241.0 B  
+	-	`sha256:155ac87606e94bdadcfa35dae29ca4aacb363cb75cef1ddf2c5a6ffb5f4eb3eb`  
+		Last Modified: Fri, 21 Oct 2016 22:30:51 GMT  
+		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:488bbeec3f481f1eccced31af55505077d147021c77bf17e24dca88c02258bed`  
-		Last Modified: Fri, 23 Sep 2016 20:50:19 GMT  
-		Size: 32.1 KB (32132 bytes)  
+	-	`sha256:c83d4f95735c09cedea4881c0afa972dbcf48e8301ec5d4c48866fd2d8fc21a4`  
+		Last Modified: Fri, 21 Oct 2016 22:30:48 GMT  
+		Size: 32.1 KB (32135 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:nd70`
 
 ```console
-$ docker pull neurodebian@sha256:b96996b8596d081bb7170cc6409c0f6b698d8135677651d2f6ff3dec04c02f6d
+$ docker pull neurodebian@sha256:36d2718c291ce0c17af09def12b944d0f039a9e9ad87ecff70900d1892c0c787
 ```
 
 -	Platforms:
@@ -737,54 +737,54 @@ $ docker pull neurodebian@sha256:b96996b8596d081bb7170cc6409c0f6b698d8135677651d
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.2 MB (37247334 bytes)**  
+-	Total Size: **37.2 MB (37247950 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cc19588d2fedcfa1e0babcd134659851e163c9cbe4a85e438083e2bb037ec949`
+-	Image ID: `sha256:59e497a9510633e2efb2f931e7a665c63e1034a4d04e748d082800fdcffad748`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 19 Sep 2016 17:43:34 GMT
-ADD file:b06eab13504d045bfba673dde1c6f5831a875e95146504a385baa101124f58f5 in / 
-# Mon, 19 Sep 2016 17:43:35 GMT
+# Fri, 21 Oct 2016 16:26:06 GMT
+ADD file:93883f863ccd9e401e4f945206887f251075a63d25a8129c9bd73e707397f109 in / 
+# Fri, 21 Oct 2016 16:26:06 GMT
 CMD ["/bin/bash"]
-# Mon, 19 Sep 2016 23:16:13 GMT
+# Fri, 21 Oct 2016 22:30:35 GMT
 RUN which gpg || { apt-get update && apt-get install -y --no-install-recommends gnupg dirmngr && rm -rf /var/lib/apt/lists/*; }
-# Mon, 19 Sep 2016 23:16:14 GMT
+# Fri, 21 Oct 2016 22:30:36 GMT
 RUN echo 'deb http://neuro.debian.net/debian wheezy main' > /etc/apt/sources.list.d/neurodebian.sources.list
-# Mon, 19 Sep 2016 23:16:14 GMT
+# Fri, 21 Oct 2016 22:30:37 GMT
 RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list.d/neurodebian.sources.list
-# Mon, 19 Sep 2016 23:16:15 GMT
+# Fri, 21 Oct 2016 22:30:38 GMT
 RUN echo '#deb-src http://neuro.debian.net/debian-devel wheezy main' >> /etc/apt/sources.list.d/neurodebian.sources.list
-# Mon, 19 Sep 2016 23:16:16 GMT
+# Fri, 21 Oct 2016 22:30:39 GMT
 RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ```
 
 -	Layers:
-	-	`sha256:0fbab137f56aaa195d66eae971694eb98df3e4ff6a91eb4fa9905994ef40e5a1`  
-		Last Modified: Mon, 19 Sep 2016 17:48:55 GMT  
-		Size: 37.2 MB (37214522 bytes)  
+	-	`sha256:d44a3b2e3fc2a79a071282b2ad5f6bcbefc929c0e816750b0b76f6ec5580ae23`  
+		Last Modified: Fri, 21 Oct 2016 16:26:27 GMT  
+		Size: 37.2 MB (37215139 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f3645783c47a40e1b7e6758cd3998c627be1acfe150a8da4748e9434147d4ce`  
-		Last Modified: Fri, 23 Sep 2016 20:50:19 GMT  
-		Size: 216.0 B  
+	-	`sha256:d650e95304fe53685ff8453cae238d9f8ed6309b2e005413641995ca9c8d9319`  
+		Last Modified: Fri, 21 Oct 2016 22:30:49 GMT  
+		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04002ab370cabf68d7ce700752d47840e9fadb1008c5331a2fb39041ec380511`  
-		Last Modified: Fri, 23 Sep 2016 20:50:18 GMT  
+	-	`sha256:9b3d783484f3f5507c65f53db2329d56f5588a89836f4d6456a9ad2878ff9ae1`  
+		Last Modified: Fri, 21 Oct 2016 22:30:48 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:568ea35d1c0de4bcc08950706620fe007645ea4e28fae2c7bb809eeeb90c4c58`  
-		Last Modified: Fri, 23 Sep 2016 20:50:18 GMT  
-		Size: 241.0 B  
+	-	`sha256:155ac87606e94bdadcfa35dae29ca4aacb363cb75cef1ddf2c5a6ffb5f4eb3eb`  
+		Last Modified: Fri, 21 Oct 2016 22:30:51 GMT  
+		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:488bbeec3f481f1eccced31af55505077d147021c77bf17e24dca88c02258bed`  
-		Last Modified: Fri, 23 Sep 2016 20:50:19 GMT  
-		Size: 32.1 KB (32132 bytes)  
+	-	`sha256:c83d4f95735c09cedea4881c0afa972dbcf48e8301ec5d4c48866fd2d8fc21a4`  
+		Last Modified: Fri, 21 Oct 2016 22:30:48 GMT  
+		Size: 32.1 KB (32135 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:jessie`
 
 ```console
-$ docker pull neurodebian@sha256:a29107b1e9df310d567aff987fda03ac5ad167e22834dca8027049dc673356c7
+$ docker pull neurodebian@sha256:290406e5439b63d4dbb811c3272e0c7ea1b230e3205ea1302b7d9747fedb238e
 ```
 
 -	Platforms:
@@ -794,54 +794,54 @@ $ docker pull neurodebian@sha256:a29107b1e9df310d567aff987fda03ac5ad167e22834dca
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.4 MB (51358204 bytes)**  
+-	Total Size: **51.4 MB (51356958 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e734160d3b3a0f89ecbaa709d650bba277bf1cf9d38f45c75e7776c50f090852`
+-	Image ID: `sha256:ba0f6b9cdf10e7b61733578f73085a91174ad43429e340ce9649a60200b3299c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 23 Sep 2016 18:08:50 GMT
-ADD file:c6c23585ab140b0b320d4e99bc1b0eb544c9e96c24d90fec5e069a6d57d335ca in / 
-# Fri, 23 Sep 2016 18:08:51 GMT
+# Fri, 21 Oct 2016 16:22:34 GMT
+ADD file:23aa4f893e3288698c017b90be657911b72d54edb3b3a7c4d05c308f50f9228f in / 
+# Fri, 21 Oct 2016 16:22:34 GMT
 CMD ["/bin/bash"]
-# Fri, 23 Sep 2016 20:49:05 GMT
+# Fri, 21 Oct 2016 22:30:03 GMT
 RUN which gpg || { apt-get update && apt-get install -y --no-install-recommends gnupg dirmngr && rm -rf /var/lib/apt/lists/*; }
-# Fri, 23 Sep 2016 20:49:06 GMT
+# Fri, 21 Oct 2016 22:30:04 GMT
 RUN echo 'deb http://neuro.debian.net/debian jessie main' > /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 23 Sep 2016 20:49:06 GMT
+# Fri, 21 Oct 2016 22:30:05 GMT
 RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 23 Sep 2016 20:49:07 GMT
+# Fri, 21 Oct 2016 22:30:06 GMT
 RUN echo '#deb-src http://neuro.debian.net/debian-devel jessie main' >> /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 23 Sep 2016 20:49:08 GMT
+# Fri, 21 Oct 2016 22:30:07 GMT
 RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ```
 
 -	Layers:
-	-	`sha256:6a5a5368e0c2d3e5909184fa28ddfd56072e7ff3ee9a945876f7eee5896ef5bb`  
-		Last Modified: Fri, 23 Sep 2016 18:10:19 GMT  
-		Size: 51.4 MB (51354364 bytes)  
+	-	`sha256:43c265008fae5d1f3cbee0dac9697235320b174d85acbed002a4fe44236adec0`  
+		Last Modified: Fri, 21 Oct 2016 16:22:58 GMT  
+		Size: 51.4 MB (51353125 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35030452da95817043071c08285ec55c6caef93013fabdc9bc501901ae1d8532`  
-		Last Modified: Fri, 23 Sep 2016 20:49:16 GMT  
-		Size: 214.0 B  
+	-	`sha256:15699712ef1b5295d8fd90500448673882e661b6fa9633a5fc72e753e93b6227`  
+		Last Modified: Fri, 21 Oct 2016 22:30:17 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91b00bf8773afc235e7c75f015c1117d4f1217f7d3ad34c852838e1d761d5931`  
-		Last Modified: Fri, 23 Sep 2016 20:49:16 GMT  
-		Size: 221.0 B  
+	-	`sha256:0d5dfb88e76ba6455889c4442e9bff2898c865dd6e8caa4379a580360803ac10`  
+		Last Modified: Fri, 21 Oct 2016 22:30:17 GMT  
+		Size: 217.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2010075f25befecf9840b6017b016595b9283a0f5ae96425c17daac90e44877`  
-		Last Modified: Fri, 23 Sep 2016 20:49:16 GMT  
-		Size: 238.0 B  
+	-	`sha256:ceea3c336b780354054c14c5c613dfd8cebc39216ab50a9de7b07a0a494b9f11`  
+		Last Modified: Fri, 21 Oct 2016 22:30:17 GMT  
+		Size: 236.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f453478092aa83c134bafbfa060b741ab595e6109e7071caf77b011177b0132e`  
-		Last Modified: Fri, 23 Sep 2016 20:49:16 GMT  
+	-	`sha256:cd7eb0300bf5c19cd3ca1d07ed44e838ba8b435460fb10e844bb13b7d23e2f54`  
+		Last Modified: Fri, 21 Oct 2016 22:30:17 GMT  
 		Size: 3.2 KB (3167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `neurodebian:nd80`
 
 ```console
-$ docker pull neurodebian@sha256:a29107b1e9df310d567aff987fda03ac5ad167e22834dca8027049dc673356c7
+$ docker pull neurodebian@sha256:290406e5439b63d4dbb811c3272e0c7ea1b230e3205ea1302b7d9747fedb238e
 ```
 
 -	Platforms:
@@ -851,47 +851,47 @@ $ docker pull neurodebian@sha256:a29107b1e9df310d567aff987fda03ac5ad167e22834dca
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.4 MB (51358204 bytes)**  
+-	Total Size: **51.4 MB (51356958 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e734160d3b3a0f89ecbaa709d650bba277bf1cf9d38f45c75e7776c50f090852`
+-	Image ID: `sha256:ba0f6b9cdf10e7b61733578f73085a91174ad43429e340ce9649a60200b3299c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 23 Sep 2016 18:08:50 GMT
-ADD file:c6c23585ab140b0b320d4e99bc1b0eb544c9e96c24d90fec5e069a6d57d335ca in / 
-# Fri, 23 Sep 2016 18:08:51 GMT
+# Fri, 21 Oct 2016 16:22:34 GMT
+ADD file:23aa4f893e3288698c017b90be657911b72d54edb3b3a7c4d05c308f50f9228f in / 
+# Fri, 21 Oct 2016 16:22:34 GMT
 CMD ["/bin/bash"]
-# Fri, 23 Sep 2016 20:49:05 GMT
+# Fri, 21 Oct 2016 22:30:03 GMT
 RUN which gpg || { apt-get update && apt-get install -y --no-install-recommends gnupg dirmngr && rm -rf /var/lib/apt/lists/*; }
-# Fri, 23 Sep 2016 20:49:06 GMT
+# Fri, 21 Oct 2016 22:30:04 GMT
 RUN echo 'deb http://neuro.debian.net/debian jessie main' > /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 23 Sep 2016 20:49:06 GMT
+# Fri, 21 Oct 2016 22:30:05 GMT
 RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 23 Sep 2016 20:49:07 GMT
+# Fri, 21 Oct 2016 22:30:06 GMT
 RUN echo '#deb-src http://neuro.debian.net/debian-devel jessie main' >> /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 23 Sep 2016 20:49:08 GMT
+# Fri, 21 Oct 2016 22:30:07 GMT
 RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ```
 
 -	Layers:
-	-	`sha256:6a5a5368e0c2d3e5909184fa28ddfd56072e7ff3ee9a945876f7eee5896ef5bb`  
-		Last Modified: Fri, 23 Sep 2016 18:10:19 GMT  
-		Size: 51.4 MB (51354364 bytes)  
+	-	`sha256:43c265008fae5d1f3cbee0dac9697235320b174d85acbed002a4fe44236adec0`  
+		Last Modified: Fri, 21 Oct 2016 16:22:58 GMT  
+		Size: 51.4 MB (51353125 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:35030452da95817043071c08285ec55c6caef93013fabdc9bc501901ae1d8532`  
-		Last Modified: Fri, 23 Sep 2016 20:49:16 GMT  
-		Size: 214.0 B  
+	-	`sha256:15699712ef1b5295d8fd90500448673882e661b6fa9633a5fc72e753e93b6227`  
+		Last Modified: Fri, 21 Oct 2016 22:30:17 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91b00bf8773afc235e7c75f015c1117d4f1217f7d3ad34c852838e1d761d5931`  
-		Last Modified: Fri, 23 Sep 2016 20:49:16 GMT  
-		Size: 221.0 B  
+	-	`sha256:0d5dfb88e76ba6455889c4442e9bff2898c865dd6e8caa4379a580360803ac10`  
+		Last Modified: Fri, 21 Oct 2016 22:30:17 GMT  
+		Size: 217.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2010075f25befecf9840b6017b016595b9283a0f5ae96425c17daac90e44877`  
-		Last Modified: Fri, 23 Sep 2016 20:49:16 GMT  
-		Size: 238.0 B  
+	-	`sha256:ceea3c336b780354054c14c5c613dfd8cebc39216ab50a9de7b07a0a494b9f11`  
+		Last Modified: Fri, 21 Oct 2016 22:30:17 GMT  
+		Size: 236.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f453478092aa83c134bafbfa060b741ab595e6109e7071caf77b011177b0132e`  
-		Last Modified: Fri, 23 Sep 2016 20:49:16 GMT  
+	-	`sha256:cd7eb0300bf5c19cd3ca1d07ed44e838ba8b435460fb10e844bb13b7d23e2f54`  
+		Last Modified: Fri, 21 Oct 2016 22:30:17 GMT  
 		Size: 3.2 KB (3167 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
