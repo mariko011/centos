@@ -918,20 +918,8 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.7.3-1
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.3-1.dsc' libgcrypt20_1.7.3-1.dsc 2882 SHA256:e7a19624eddbc32510774cbc12a59b097d571af9fb97d8a175fbc6b81f0dfced
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.3.orig.tar.bz2' libgcrypt20_1.7.3.orig.tar.bz2 2861294 SHA256:ddac6111077d0a1612247587be238c5294dd0ee4d76dc7ba783cc55fb0337071
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.3.orig.tar.bz2.asc' libgcrypt20_1.7.3.orig.tar.bz2.asc 287 SHA256:9ff9779dea2bc7e23cb241c136abc4eec720ef6630826d45abdf60313cbb73ea
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.3-1.debian.tar.xz' libgcrypt20_1.7.3-1.debian.tar.xz 30396 SHA256:cebcd40467ad4cb17abcc403cff08f80eed506ffad9e12c47f262e1ccdb5c6db
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libgcrypt20/1.7.3-1/
-- https://sources.debian.net/src/libgcrypt20/1.7.3-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.24-1`
 
@@ -1642,19 +1630,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016g-1
-'http://httpredir.debian.org/debian/pool/main/t/tzdata/tzdata_2016g-1.dsc' tzdata_2016g-1.dsc 2138 SHA256:1747bf9b3f0de5060a8f983490bc617425beb4fc06d03ae43317bd206b77dc8a
-'http://httpredir.debian.org/debian/pool/main/t/tzdata/tzdata_2016g.orig.tar.gz' tzdata_2016g.orig.tar.gz 316669 SHA256:3c7137b2bc47323b0de47b77786bacf81ed503d4b2c693ff8ada2fbd1281ebd1
-'http://httpredir.debian.org/debian/pool/main/t/tzdata/tzdata_2016g-1.debian.tar.xz' tzdata_2016g-1.debian.tar.xz 100132 SHA256:e9c1d902baa31ea17297ad684cbf2fa4c090c14a57754341dcc4e6527686d31b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2016g-1/
-- https://sources.debian.net/src/tzdata/2016g-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ustr=1.0.4-5`
 
