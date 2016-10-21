@@ -1071,19 +1071,8 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris glibc=2.24-4
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.24-4.dsc' glibc_2.24-4.dsc 8297 SHA256:66f5cb3a7f27fe61354844df079ba88a7891acc6739fc2b5ff94bf17019cf9db
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.24.orig.tar.xz' glibc_2.24.orig.tar.xz 13921912 SHA256:ed71e8afd2b270f7947a2cea2457a31e1ca4fac08e2731d80edd7ec1730ec84f
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.24-4.debian.tar.xz' glibc_2.24-4.debian.tar.xz 916172 SHA256:b13d1f1fb5a4c1e169810dcad1fe6565f5ceba58bc28988de217c911a6354df1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/glibc/2.24-4/
-- https://sources.debian.net/src/glibc/2.24-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gmp=2:6.1.1+dfsg-1`
 
@@ -1696,19 +1685,8 @@ Licenses: (parsed from: `/usr/share/doc/libjpeg62-turbo/copyright`)
 - `BSD-BY-LC-NE`
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libjpeg-turbo=1:1.5.1-1
-'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.1-1.dsc' libjpeg-turbo_1.5.1-1.dsc 2420 SHA256:c510d0712672db99dfcceda37ecdbde38c1a33ccd4acb8caed210070a648db89
-'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.1.orig.tar.gz' libjpeg-turbo_1.5.1.orig.tar.gz 1650647 SHA256:41429d3d253017433f66e3d472b8c7d998491d2f41caa7306b8d9a6f2a2c666c
-'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.1-1.debian.tar.xz' libjpeg-turbo_1.5.1-1.debian.tar.xz 78168 SHA256:345a5cb6d59edbe5a977fcf4277b829597b92a18ecfb55888c600487c87d0e5a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libjpeg-turbo/1:1.5.1-1/
-- https://sources.debian.net/src/libjpeg-turbo/1:1.5.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libmnl=1.0.4-2`
 
@@ -3050,19 +3028,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016g-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016g-1.dsc' tzdata_2016g-1.dsc 2138 SHA256:1747bf9b3f0de5060a8f983490bc617425beb4fc06d03ae43317bd206b77dc8a
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016g.orig.tar.gz' tzdata_2016g.orig.tar.gz 316669 SHA256:3c7137b2bc47323b0de47b77786bacf81ed503d4b2c693ff8ada2fbd1281ebd1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016g-1.debian.tar.xz' tzdata_2016g-1.debian.tar.xz 100132 SHA256:e9c1d902baa31ea17297ad684cbf2fa4c090c14a57754341dcc4e6527686d31b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2016g-1/
-- https://sources.debian.net/src/tzdata/2016g-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ucf=3.0036`
 
