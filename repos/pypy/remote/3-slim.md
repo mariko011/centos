@@ -1,7 +1,7 @@
 ## `pypy:3-slim`
 
 ```console
-$ docker pull pypy@sha256:64b7af9eef54a0bb3690f629c0fc366d9dd974d25fbd2b38ba21d3dc3912190a
+$ docker pull pypy@sha256:e4ea49253e1cd8424954844e68841619710a93103cb59783c508bb8b56a54378
 ```
 
 -	Platforms:
@@ -11,44 +11,44 @@ $ docker pull pypy@sha256:64b7af9eef54a0bb3690f629c0fc366d9dd974d25fbd2b38ba21d3
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.4 MB (80425038 bytes)**  
+-	Total Size: **80.4 MB (80433559 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:421a71d875b56b37027f5ba70ec76804286a685424eb18698cd26f4e71fe503e`
+-	Image ID: `sha256:c42193d00ef54cec5afde39edc81b7e8228998b126e6884a8364d255be5858e0`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
-# Fri, 23 Sep 2016 18:08:50 GMT
-ADD file:c6c23585ab140b0b320d4e99bc1b0eb544c9e96c24d90fec5e069a6d57d335ca in / 
-# Fri, 23 Sep 2016 18:08:51 GMT
+# Fri, 21 Oct 2016 16:22:34 GMT
+ADD file:23aa4f893e3288698c017b90be657911b72d54edb3b3a7c4d05c308f50f9228f in / 
+# Fri, 21 Oct 2016 16:22:34 GMT
 CMD ["/bin/bash"]
-# Fri, 23 Sep 2016 22:21:23 GMT
+# Sat, 22 Oct 2016 00:28:13 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 23 Sep 2016 22:21:23 GMT
+# Sat, 22 Oct 2016 00:28:13 GMT
 ENV LANG=C.UTF-8
-# Fri, 23 Sep 2016 22:21:31 GMT
+# Sat, 22 Oct 2016 00:28:23 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libffi6 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 10 Oct 2016 23:35:46 GMT
+# Sat, 22 Oct 2016 00:29:51 GMT
 ENV PYPY_VERSION=5.5.0-alpha
-# Mon, 10 Oct 2016 23:35:46 GMT
+# Sat, 22 Oct 2016 00:29:51 GMT
 ENV PYPY_SHA256SUM=41ef7c25fd04eeb20deaa83c5d88c10aef2bbc8bcfd9e53e7cc61136220861cc
-# Mon, 10 Oct 2016 23:35:47 GMT
+# Sat, 22 Oct 2016 00:29:51 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Mon, 10 Oct 2016 23:36:13 GMT
+# Sat, 22 Oct 2016 00:30:19 GMT
 RUN set -ex 	&& fetchDeps=' 		bzip2 		wget 	' 	&& apt-get update && apt-get install -y $fetchDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& apt-get purge -y --auto-remove $fetchDeps 	&& rm -rf ~/.cache
-# Mon, 10 Oct 2016 23:36:14 GMT
+# Sat, 22 Oct 2016 00:30:20 GMT
 CMD ["pypy3"]
 ```
 
 -	Layers:
-	-	`sha256:6a5a5368e0c2d3e5909184fa28ddfd56072e7ff3ee9a945876f7eee5896ef5bb`  
-		Last Modified: Fri, 23 Sep 2016 18:10:19 GMT  
-		Size: 51.4 MB (51354364 bytes)  
+	-	`sha256:43c265008fae5d1f3cbee0dac9697235320b174d85acbed002a4fe44236adec0`  
+		Last Modified: Fri, 21 Oct 2016 16:22:58 GMT  
+		Size: 51.4 MB (51353125 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0773653d4b8996f254fe25db22c20e1a0f9c07f953ff88ed7c9d743a0bfaccf6`  
-		Last Modified: Fri, 23 Sep 2016 22:22:14 GMT  
-		Size: 3.5 MB (3464867 bytes)  
+	-	`sha256:44189fe69bebd2cf6be6fc5f04c1ae414af4b3f33180b4fde2de45f38dc2e5ed`  
+		Last Modified: Sat, 22 Oct 2016 00:29:03 GMT  
+		Size: 3.5 MB (3464898 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa21986d11a6a21e08c41f5e763d11493eca4dbc39501c6d7e912ae638937e62`  
-		Last Modified: Mon, 10 Oct 2016 23:39:41 GMT  
-		Size: 25.6 MB (25605807 bytes)  
+	-	`sha256:e2ecb548b5da842845395a65fdcd5c503f627194e8a1c57d37d2b4c07610c6a6`  
+		Last Modified: Sat, 22 Oct 2016 00:30:38 GMT  
+		Size: 25.6 MB (25615536 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
