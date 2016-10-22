@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:654b61cc82aad75c69948f6e92fc07371dfdfb95e5e294ca2c06c522114772cc`
-- Created: `2016-09-29T17:18:23.045862231Z`
+- Image ID: `sha256:bff88803c2dfb3174fc38adef3a080640e89c712e4d5b902582bf5d4a66738a0`
+- Created: `2016-10-22T00:20:17.013863046Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["postgres"]`
@@ -33,9 +33,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris acl=2.2.52-2
-'http://httpredir.debian.org/debian/pool/main/a/acl/acl_2.2.52-2.dsc' acl_2.2.52-2.dsc 2025 SHA256:015097e04740e84fefbe6c890d02c603f79edece45c51cbb5c18431647cd7aad
-'http://httpredir.debian.org/debian/pool/main/a/acl/acl_2.2.52.orig.tar.bz2' acl_2.2.52.orig.tar.bz2 312128 SHA256:59d05b38af76baf2eddccbf08c7968a17451cc785ffecc657fcb46ce32b2631d
-'http://httpredir.debian.org/debian/pool/main/a/acl/acl_2.2.52-2.debian.tar.xz' acl_2.2.52-2.debian.tar.xz 8524 SHA256:de81ec13cab6d33538db24a53c17838c5bdb32dd0e00e0b0b5d3325114e64e10
+'http://deb.debian.org/debian/pool/main/a/acl/acl_2.2.52-2.dsc' acl_2.2.52-2.dsc 2025 SHA256:015097e04740e84fefbe6c890d02c603f79edece45c51cbb5c18431647cd7aad
+'http://deb.debian.org/debian/pool/main/a/acl/acl_2.2.52.orig.tar.bz2' acl_2.2.52.orig.tar.bz2 312128 SHA256:59d05b38af76baf2eddccbf08c7968a17451cc785ffecc657fcb46ce32b2631d
+'http://deb.debian.org/debian/pool/main/a/acl/acl_2.2.52-2.debian.tar.xz' acl_2.2.52-2.debian.tar.xz 8524 SHA256:de81ec13cab6d33538db24a53c17838c5bdb32dd0e00e0b0b5d3325114e64e10
 ```
 
 Likely also available for browsing at:
@@ -57,8 +57,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris adduser=3.113+nmu3
-'http://httpredir.debian.org/debian/pool/main/a/adduser/adduser_3.113+nmu3.dsc' adduser_3.113+nmu3.dsc 1733 SHA256:7f9fa8841080591834389fd56352e2d05ca3d86eb4df15d2f13bea9faf4a6f2d
-'http://httpredir.debian.org/debian/pool/main/a/adduser/adduser_3.113+nmu3.tar.gz' adduser_3.113+nmu3.tar.gz 342554 SHA256:02682be3f51f3e732121f20a3e4922bb8bef15cfacb8767fc250a01d09502122
+'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.113+nmu3.dsc' adduser_3.113+nmu3.dsc 1733 SHA256:7f9fa8841080591834389fd56352e2d05ca3d86eb4df15d2f13bea9faf4a6f2d
+'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.113+nmu3.tar.gz' adduser_3.113+nmu3.tar.gz 342554 SHA256:02682be3f51f3e732121f20a3e4922bb8bef15cfacb8767fc250a01d09502122
 ```
 
 Likely also available for browsing at:
@@ -82,8 +82,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apt=1.0.9.8.3
-'http://httpredir.debian.org/debian/pool/main/a/apt/apt_1.0.9.8.3.dsc' apt_1.0.9.8.3.dsc 2343 SHA256:4c5f22ffe244e7e4471b1db137117efb13f43e29086c9b58eb5b1884bce55075
-'http://httpredir.debian.org/debian/pool/main/a/apt/apt_1.0.9.8.3.tar.xz' apt_1.0.9.8.3.tar.xz 1794824 SHA256:e78f6736b69621e2c55d0c81680a41a511a3f0c097f9ea8515611e0fcb651950
+'http://deb.debian.org/debian/pool/main/a/apt/apt_1.0.9.8.3.dsc' apt_1.0.9.8.3.dsc 2343 SHA256:4c5f22ffe244e7e4471b1db137117efb13f43e29086c9b58eb5b1884bce55075
+'http://deb.debian.org/debian/pool/main/a/apt/apt_1.0.9.8.3.tar.xz' apt_1.0.9.8.3.tar.xz 1794824 SHA256:e78f6736b69621e2c55d0c81680a41a511a3f0c097f9ea8515611e0fcb651950
 ```
 
 Likely also available for browsing at:
@@ -106,9 +106,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris attr=1:2.4.47-2
-'http://httpredir.debian.org/debian/pool/main/a/attr/attr_2.4.47-2.dsc' attr_2.4.47-2.dsc 2027 SHA256:ee842d6d62d473acf02b494c432cf33128fa46455a09d3172c77c252449fa1a6
-'http://httpredir.debian.org/debian/pool/main/a/attr/attr_2.4.47.orig.tar.bz2' attr_2.4.47.orig.tar.bz2 281877 SHA256:6c1208035757f5ce9b516402dd45b8299a53ae4d69ad2c352116f9cb8d7bc274
-'http://httpredir.debian.org/debian/pool/main/a/attr/attr_2.4.47-2.debian.tar.xz' attr_2.4.47-2.debian.tar.xz 8096 SHA256:f65909562def601b1556393f5656032c058dc574ba622414ad3eb80c7b05a42a
+'http://deb.debian.org/debian/pool/main/a/attr/attr_2.4.47-2.dsc' attr_2.4.47-2.dsc 2027 SHA256:ee842d6d62d473acf02b494c432cf33128fa46455a09d3172c77c252449fa1a6
+'http://deb.debian.org/debian/pool/main/a/attr/attr_2.4.47.orig.tar.bz2' attr_2.4.47.orig.tar.bz2 281877 SHA256:6c1208035757f5ce9b516402dd45b8299a53ae4d69ad2c352116f9cb8d7bc274
+'http://deb.debian.org/debian/pool/main/a/attr/attr_2.4.47-2.debian.tar.xz' attr_2.4.47-2.debian.tar.xz 8096 SHA256:f65909562def601b1556393f5656032c058dc574ba622414ad3eb80c7b05a42a
 ```
 
 Likely also available for browsing at:
@@ -132,9 +132,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris audit=1:2.4-1
-'http://httpredir.debian.org/debian/pool/main/a/audit/audit_2.4-1.dsc' audit_2.4-1.dsc 2068 SHA256:01d240bd783697b8ab4cd941f944612eebc81e1f535a8afb36b25ab3021cd15f
-'http://httpredir.debian.org/debian/pool/main/a/audit/audit_2.4.orig.tar.gz' audit_2.4.orig.tar.gz 937809 SHA256:6e5d39e7af9d00477ef60f824be8c93bd23a227869d6993ff36b7e7fa28fe99b
-'http://httpredir.debian.org/debian/pool/main/a/audit/audit_2.4-1.debian.tar.xz' audit_2.4-1.debian.tar.xz 15808 SHA256:c18c1b88c41f3b8be9e59d3041563599f822994cb10574ffc17f00f0a157c12c
+'http://deb.debian.org/debian/pool/main/a/audit/audit_2.4-1.dsc' audit_2.4-1.dsc 2068 SHA256:01d240bd783697b8ab4cd941f944612eebc81e1f535a8afb36b25ab3021cd15f
+'http://deb.debian.org/debian/pool/main/a/audit/audit_2.4.orig.tar.gz' audit_2.4.orig.tar.gz 937809 SHA256:6e5d39e7af9d00477ef60f824be8c93bd23a227869d6993ff36b7e7fa28fe99b
+'http://deb.debian.org/debian/pool/main/a/audit/audit_2.4-1.debian.tar.xz' audit_2.4-1.debian.tar.xz 15808 SHA256:c18c1b88c41f3b8be9e59d3041563599f822994cb10574ffc17f00f0a157c12c
 ```
 
 Likely also available for browsing at:
@@ -156,8 +156,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris base-files=8+deb8u6
-'http://httpredir.debian.org/debian/pool/main/b/base-files/base-files_8+deb8u6.dsc' base-files_8+deb8u6.dsc 1026 SHA256:3433a64763c55e32323a89e34153b8c9d4c74bf95cfde3bc50f7717eae764ab8
-'http://httpredir.debian.org/debian/pool/main/b/base-files/base-files_8+deb8u6.tar.xz' base-files_8+deb8u6.tar.xz 53156 SHA256:2d7dcd1d16150516d0b3bf7773da2aba054720d7aa257046c30f5b1dace47df1
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_8+deb8u6.dsc' base-files_8+deb8u6.dsc 1026 SHA256:3433a64763c55e32323a89e34153b8c9d4c74bf95cfde3bc50f7717eae764ab8
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_8+deb8u6.tar.xz' base-files_8+deb8u6.tar.xz 53156 SHA256:2d7dcd1d16150516d0b3bf7773da2aba054720d7aa257046c30f5b1dace47df1
 ```
 
 Likely also available for browsing at:
@@ -180,8 +180,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris base-passwd=3.5.37
-'http://httpredir.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.37.dsc' base-passwd_3.5.37.dsc 1733 SHA256:211a49b6a3bbfdb61a91e9b5d9994c59d8a511a047c2cfc489c03c4c379d6cfe
-'http://httpredir.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.37.tar.xz' base-passwd_3.5.37.tar.xz 51392 SHA256:7cb1cdd8e4aee39b5f59a3dc42d63619590fc4a2136db482fdb6be6e74bb3d04
+'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.37.dsc' base-passwd_3.5.37.dsc 1733 SHA256:211a49b6a3bbfdb61a91e9b5d9994c59d8a511a047c2cfc489c03c4c379d6cfe
+'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.37.tar.xz' base-passwd_3.5.37.tar.xz 51392 SHA256:7cb1cdd8e4aee39b5f59a3dc42d63619590fc4a2136db482fdb6be6e74bb3d04
 ```
 
 Likely also available for browsing at:
@@ -203,9 +203,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris bash=4.3-11
-'http://httpredir.debian.org/debian/pool/main/b/bash/bash_4.3-11.dsc' bash_4.3-11.dsc 1540 SHA256:81394eb07c09c244e5d01c6be19e69fc60153575f11923cb10ea1ed87b71ce5b
-'http://httpredir.debian.org/debian/pool/main/b/bash/bash_4.3.orig.tar.gz' bash_4.3.orig.tar.gz 7516231 SHA256:b2fe79ddf9e7abdb4695e3070afa866d2a94a58d1cc9d731585330c753815491
-'http://httpredir.debian.org/debian/pool/main/b/bash/bash_4.3-11.debian.tar.xz' bash_4.3-11.debian.tar.xz 78732 SHA256:e042d5be5df8df339a516290bb27b1cdf027cbba0bd6c695e62f6782b4d72dba
+'http://deb.debian.org/debian/pool/main/b/bash/bash_4.3-11.dsc' bash_4.3-11.dsc 1540 SHA256:81394eb07c09c244e5d01c6be19e69fc60153575f11923cb10ea1ed87b71ce5b
+'http://deb.debian.org/debian/pool/main/b/bash/bash_4.3.orig.tar.gz' bash_4.3.orig.tar.gz 7516231 SHA256:b2fe79ddf9e7abdb4695e3070afa866d2a94a58d1cc9d731585330c753815491
+'http://deb.debian.org/debian/pool/main/b/bash/bash_4.3-11.debian.tar.xz' bash_4.3-11.debian.tar.xz 78732 SHA256:e042d5be5df8df339a516290bb27b1cdf027cbba0bd6c695e62f6782b4d72dba
 ```
 
 Likely also available for browsing at:
@@ -227,9 +227,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris bsd-mailx=8.1.2-0.20141216cvs-2
-'http://httpredir.debian.org/debian/pool/main/b/bsd-mailx/bsd-mailx_8.1.2-0.20141216cvs-2.dsc' bsd-mailx_8.1.2-0.20141216cvs-2.dsc 1950 SHA256:005d4b3ef272e75c997fa5474b5f9d60aa28075308c0e6b8b6cf2d7912034682
-'http://httpredir.debian.org/debian/pool/main/b/bsd-mailx/bsd-mailx_8.1.2-0.20141216cvs.orig.tar.bz2' bsd-mailx_8.1.2-0.20141216cvs.orig.tar.bz2 76532 SHA256:69c4b3acfd7565103ea98b78814718be116e4f4c040f432c08251569035ad98b
-'http://httpredir.debian.org/debian/pool/main/b/bsd-mailx/bsd-mailx_8.1.2-0.20141216cvs-2.debian.tar.xz' bsd-mailx_8.1.2-0.20141216cvs-2.debian.tar.xz 41564 SHA256:b7f9aa80212ad7c517531bb3800efae1a0fca1aaa7f064491f35a68ebf90a5fb
+'http://deb.debian.org/debian/pool/main/b/bsd-mailx/bsd-mailx_8.1.2-0.20141216cvs-2.dsc' bsd-mailx_8.1.2-0.20141216cvs-2.dsc 1950 SHA256:005d4b3ef272e75c997fa5474b5f9d60aa28075308c0e6b8b6cf2d7912034682
+'http://deb.debian.org/debian/pool/main/b/bsd-mailx/bsd-mailx_8.1.2-0.20141216cvs.orig.tar.bz2' bsd-mailx_8.1.2-0.20141216cvs.orig.tar.bz2 76532 SHA256:69c4b3acfd7565103ea98b78814718be116e4f4c040f432c08251569035ad98b
+'http://deb.debian.org/debian/pool/main/b/bsd-mailx/bsd-mailx_8.1.2-0.20141216cvs-2.debian.tar.xz' bsd-mailx_8.1.2-0.20141216cvs-2.debian.tar.xz 41564 SHA256:b7f9aa80212ad7c517531bb3800efae1a0fca1aaa7f064491f35a68ebf90a5fb
 ```
 
 Likely also available for browsing at:
@@ -252,9 +252,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris bzip2=1.0.6-7
-'http://httpredir.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.6-7.dsc' bzip2_1.0.6-7.dsc 2261 SHA256:098b7e38d1d634fc361847602bf85753dadeca121b9531f6dba2614b16e0637c
-'http://httpredir.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.6.orig.tar.bz2' bzip2_1.0.6.orig.tar.bz2 708737 SHA256:d70a9ccd8bdf47e302d96c69fecd54925f45d9c7b966bb4ef5f56b770960afa7
-'http://httpredir.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.6-7.debian.tar.bz2' bzip2_1.0.6-7.debian.tar.bz2 59542 SHA256:17e030ccb2908d15553c1510869e09d8ef41b5f8e72c7c65d1d5503396a5bd3a
+'http://deb.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.6-7.dsc' bzip2_1.0.6-7.dsc 2261 SHA256:098b7e38d1d634fc361847602bf85753dadeca121b9531f6dba2614b16e0637c
+'http://deb.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.6.orig.tar.bz2' bzip2_1.0.6.orig.tar.bz2 708737 SHA256:d70a9ccd8bdf47e302d96c69fecd54925f45d9c7b966bb4ef5f56b770960afa7
+'http://deb.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.6-7.debian.tar.bz2' bzip2_1.0.6-7.debian.tar.bz2 59542 SHA256:17e030ccb2908d15553c1510869e09d8ef41b5f8e72c7c65d1d5503396a5bd3a
 ```
 
 Likely also available for browsing at:
@@ -276,8 +276,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cdebconf=0.192
-'http://httpredir.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.192.dsc' cdebconf_0.192.dsc 2574 SHA256:85d39068de77c67036b6e2ca5ebdf3990e19a6c5b0f01422608ff7656c166dbd
-'http://httpredir.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.192.tar.xz' cdebconf_0.192.tar.xz 266320 SHA256:bb09e6c04b514dd12684dbc6eacde57fb03e282f67f0199e67078c13ffffd667
+'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.192.dsc' cdebconf_0.192.dsc 2574 SHA256:85d39068de77c67036b6e2ca5ebdf3990e19a6c5b0f01422608ff7656c166dbd
+'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.192.tar.xz' cdebconf_0.192.tar.xz 266320 SHA256:bb09e6c04b514dd12684dbc6eacde57fb03e282f67f0199e67078c13ffffd667
 ```
 
 Likely also available for browsing at:
@@ -299,9 +299,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris coreutils=8.23-4
-'http://httpredir.debian.org/debian/pool/main/c/coreutils/coreutils_8.23-4.dsc' coreutils_8.23-4.dsc 1942 SHA256:280ace2d2f1740c2319338e96da6b5000b9e65ddb9549c772917123633afe772
-'http://httpredir.debian.org/debian/pool/main/c/coreutils/coreutils_8.23.orig.tar.gz' coreutils_8.23.orig.tar.gz 12582141 SHA256:d606551dccd8c4ed079d7aa8d74af152b1d16215cae763d86b40b26fdbde9c73
-'http://httpredir.debian.org/debian/pool/main/c/coreutils/coreutils_8.23-4.diff.gz' coreutils_8.23-4.diff.gz 48759 SHA256:19ab6ff1b82f29e8a8f8107f925eec91b1eaad53b690f2d7154ab07101bf8c01
+'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.23-4.dsc' coreutils_8.23-4.dsc 1942 SHA256:280ace2d2f1740c2319338e96da6b5000b9e65ddb9549c772917123633afe772
+'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.23.orig.tar.gz' coreutils_8.23.orig.tar.gz 12582141 SHA256:d606551dccd8c4ed079d7aa8d74af152b1d16215cae763d86b40b26fdbde9c73
+'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.23-4.diff.gz' coreutils_8.23-4.diff.gz 48759 SHA256:19ab6ff1b82f29e8a8f8107f925eec91b1eaad53b690f2d7154ab07101bf8c01
 ```
 
 Likely also available for browsing at:
@@ -327,9 +327,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cron=3.0pl1-127+deb8u1
-'http://httpredir.debian.org/debian/pool/main/c/cron/cron_3.0pl1-127+deb8u1.dsc' cron_3.0pl1-127+deb8u1.dsc 1939 SHA256:d3255452473d33e576c5a1fcf55b3c2d61e37edcb656f07edb5289aa1ff066c2
-'http://httpredir.debian.org/debian/pool/main/c/cron/cron_3.0pl1.orig.tar.gz' cron_3.0pl1.orig.tar.gz 59245 SHA256:d931e0688005dfa85cfdb60e19bf0a3848ebfa3ee3415bf2a6ea3ea9e5bcfd21
-'http://httpredir.debian.org/debian/pool/main/c/cron/cron_3.0pl1-127+deb8u1.diff.gz' cron_3.0pl1-127+deb8u1.diff.gz 98972 SHA256:48a26d94033ba7918cdf6aa12036e230112090043001b8491900b0328b441229
+'http://deb.debian.org/debian/pool/main/c/cron/cron_3.0pl1-127+deb8u1.dsc' cron_3.0pl1-127+deb8u1.dsc 1939 SHA256:d3255452473d33e576c5a1fcf55b3c2d61e37edcb656f07edb5289aa1ff066c2
+'http://deb.debian.org/debian/pool/main/c/cron/cron_3.0pl1.orig.tar.gz' cron_3.0pl1.orig.tar.gz 59245 SHA256:d931e0688005dfa85cfdb60e19bf0a3848ebfa3ee3415bf2a6ea3ea9e5bcfd21
+'http://deb.debian.org/debian/pool/main/c/cron/cron_3.0pl1-127+deb8u1.diff.gz' cron_3.0pl1-127+deb8u1.diff.gz 98972 SHA256:48a26d94033ba7918cdf6aa12036e230112090043001b8491900b0328b441229
 ```
 
 Likely also available for browsing at:
@@ -352,9 +352,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cryptsetup=2:1.6.6-5
-'http://httpredir.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_1.6.6-5.dsc' cryptsetup_1.6.6-5.dsc 2624 SHA256:f7582c8becb38fecaed22aa531bd748dee2ebdbdac64e00c7e39e45afe7eaae1
-'http://httpredir.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_1.6.6.orig.tar.xz' cryptsetup_1.6.6.orig.tar.xz 1145940 SHA256:2d2ce28e4e1137dd599d87884b62ef6dbf14fd7848b2a2bf7d61cf125fbd8e6f
-'http://httpredir.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_1.6.6-5.debian.tar.xz' cryptsetup_1.6.6-5.debian.tar.xz 82944 SHA256:fa12da2f5448e0b02e1e5c89357de3749f854b2b96441f9c56737766c11cded0
+'http://deb.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_1.6.6-5.dsc' cryptsetup_1.6.6-5.dsc 2624 SHA256:f7582c8becb38fecaed22aa531bd748dee2ebdbdac64e00c7e39e45afe7eaae1
+'http://deb.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_1.6.6.orig.tar.xz' cryptsetup_1.6.6.orig.tar.xz 1145940 SHA256:2d2ce28e4e1137dd599d87884b62ef6dbf14fd7848b2a2bf7d61cf125fbd8e6f
+'http://deb.debian.org/debian/pool/main/c/cryptsetup/cryptsetup_1.6.6-5.debian.tar.xz' cryptsetup_1.6.6-5.debian.tar.xz 82944 SHA256:fa12da2f5448e0b02e1e5c89357de3749f854b2b96441f9c56737766c11cded0
 ```
 
 Likely also available for browsing at:
@@ -383,9 +383,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cyrus-sasl2=2.1.26.dfsg1-13+deb8u1
-'http://httpredir.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.dsc' cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.dsc 3461 SHA256:ed1cba2b699aaf1ad08b99ea82d40c583c02817f6fbd765b9bbcd940d72fc3f3
-'http://httpredir.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1.orig.tar.gz' cyrus-sasl2_2.1.26.dfsg1.orig.tar.gz 1494337 SHA256:172c39555012f479543ce7305949db75df708771fe8f8b34248027f09e53bb85
-'http://httpredir.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.debian.tar.xz' cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.debian.tar.xz 94284 SHA256:14e00798c41b6fae965211f1af8b47a67d22001146d0019f81af0fc7be9f162f
+'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.dsc' cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.dsc 3461 SHA256:ed1cba2b699aaf1ad08b99ea82d40c583c02817f6fbd765b9bbcd940d72fc3f3
+'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1.orig.tar.gz' cyrus-sasl2_2.1.26.dfsg1.orig.tar.gz 1494337 SHA256:172c39555012f479543ce7305949db75df708771fe8f8b34248027f09e53bb85
+'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.debian.tar.xz' cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.debian.tar.xz 94284 SHA256:14e00798c41b6fae965211f1af8b47a67d22001146d0019f81af0fc7be9f162f
 ```
 
 Likely also available for browsing at:
@@ -407,9 +407,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris dash=0.5.7-4
-'http://httpredir.debian.org/debian/pool/main/d/dash/dash_0.5.7-4.dsc' dash_0.5.7-4.dsc 1105 SHA256:c77f4baef8cbdc105a783bf6e4d3253ae10671ad98c27bf8537c8c731f073310
-'http://httpredir.debian.org/debian/pool/main/d/dash/dash_0.5.7.orig.tar.gz' dash_0.5.7.orig.tar.gz 223794 SHA256:ae89fa9f1145b7748cf0740e1df04cd52fdf8a285da4911dd0f04983efba4e39
-'http://httpredir.debian.org/debian/pool/main/d/dash/dash_0.5.7-4.diff.gz' dash_0.5.7-4.diff.gz 42834 SHA256:649d97aa0c48dc0db73c08d7e89a004b9d413279a823388161940342016284f0
+'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.7-4.dsc' dash_0.5.7-4.dsc 1105 SHA256:c77f4baef8cbdc105a783bf6e4d3253ae10671ad98c27bf8537c8c731f073310
+'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.7.orig.tar.gz' dash_0.5.7.orig.tar.gz 223794 SHA256:ae89fa9f1145b7748cf0740e1df04cd52fdf8a285da4911dd0f04983efba4e39
+'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.7-4.diff.gz' dash_0.5.7-4.diff.gz 42834 SHA256:649d97aa0c48dc0db73c08d7e89a004b9d413279a823388161940342016284f0
 ```
 
 Likely also available for browsing at:
@@ -431,9 +431,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris db5.3=5.3.28-9
-'http://httpredir.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28-9.dsc' db5.3_5.3.28-9.dsc 3166 SHA256:0020cd1491a10a2bfc7a125eb5f3a4db3745387e2d5f8f8f079be27ddfbdcf05
-'http://httpredir.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28.orig.tar.xz' db5.3_5.3.28.orig.tar.xz 24154920 SHA256:e1f85c8b6ebd0ed3ca72fa0ae97b65006f6d0bd0cd6f4ac24bed103cb5497bf5
-'http://httpredir.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28-9.debian.tar.xz' db5.3_5.3.28-9.debian.tar.xz 27664 SHA256:62adde71eda43c1300cdff51118721cef03dbc4bbe219f2669db5dcd90278ac3
+'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28-9.dsc' db5.3_5.3.28-9.dsc 3166 SHA256:0020cd1491a10a2bfc7a125eb5f3a4db3745387e2d5f8f8f079be27ddfbdcf05
+'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28.orig.tar.xz' db5.3_5.3.28.orig.tar.xz 24154920 SHA256:e1f85c8b6ebd0ed3ca72fa0ae97b65006f6d0bd0cd6f4ac24bed103cb5497bf5
+'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28-9.debian.tar.xz' db5.3_5.3.28-9.debian.tar.xz 27664 SHA256:62adde71eda43c1300cdff51118721cef03dbc4bbe219f2669db5dcd90278ac3
 ```
 
 Likely also available for browsing at:
@@ -456,8 +456,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris debconf=1.5.56
-'http://httpredir.debian.org/debian/pool/main/d/debconf/debconf_1.5.56.dsc' debconf_1.5.56.dsc 1977 SHA256:584e73f5a84791f4b25ac0bcb65dd5a63de10e5398d986cb005597566fd23ca4
-'http://httpredir.debian.org/debian/pool/main/d/debconf/debconf_1.5.56.tar.gz' debconf_1.5.56.tar.gz 1004238 SHA256:e8371becb1ad91b69b0f2b2e580d30a0a4c63b4c2803dea2fb8e3136b662bfa5
+'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.56.dsc' debconf_1.5.56.dsc 1977 SHA256:584e73f5a84791f4b25ac0bcb65dd5a63de10e5398d986cb005597566fd23ca4
+'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.56.tar.gz' debconf_1.5.56.tar.gz 1004238 SHA256:e8371becb1ad91b69b0f2b2e580d30a0a4c63b4c2803dea2fb8e3136b662bfa5
 ```
 
 Likely also available for browsing at:
@@ -479,8 +479,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris debian-archive-keyring=2014.3
-'http://httpredir.debian.org/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2014.3.dsc' debian-archive-keyring_2014.3.dsc 1597 SHA256:2a3e604f936b8fbaf1beeea0a7611a1a88cacffd26571df4cc58c16ecefa362a
-'http://httpredir.debian.org/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2014.3.tar.xz' debian-archive-keyring_2014.3.tar.xz 61380 SHA256:46be978ec2f72b0277d9e71bda30ea1b2b9aa00b1952cb35e8b22a2c016f5e22
+'http://deb.debian.org/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2014.3.dsc' debian-archive-keyring_2014.3.dsc 1597 SHA256:2a3e604f936b8fbaf1beeea0a7611a1a88cacffd26571df4cc58c16ecefa362a
+'http://deb.debian.org/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2014.3.tar.xz' debian-archive-keyring_2014.3.tar.xz 61380 SHA256:46be978ec2f72b0277d9e71bda30ea1b2b9aa00b1952cb35e8b22a2c016f5e22
 ```
 
 Likely also available for browsing at:
@@ -502,8 +502,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris debianutils=4.4
-'http://httpredir.debian.org/debian/pool/main/d/debianutils/debianutils_4.4.dsc' debianutils_4.4.dsc 1560 SHA256:e365ad42af528f46eb117ef244216aaf265372f2b92635b28452a8f0d981bb17
-'http://httpredir.debian.org/debian/pool/main/d/debianutils/debianutils_4.4.tar.gz' debianutils_4.4.tar.gz 272098 SHA256:190850cdd6b5302e0a1ba1aaed1bc7074d67d3bd8d04c613f242f7145afa53a6
+'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.4.dsc' debianutils_4.4.dsc 1560 SHA256:e365ad42af528f46eb117ef244216aaf265372f2b92635b28452a8f0d981bb17
+'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.4.tar.gz' debianutils_4.4.tar.gz 272098 SHA256:190850cdd6b5302e0a1ba1aaed1bc7074d67d3bd8d04c613f242f7145afa53a6
 ```
 
 Likely also available for browsing at:
@@ -526,9 +526,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris diffutils=1:3.3-1
-'http://httpredir.debian.org/debian/pool/main/d/diffutils/diffutils_3.3-1.dsc' diffutils_3.3-1.dsc 1427 SHA256:72df1fed003b47509a063dfa8aa89108c884cd3bf52a06ce40e1ffb61f5a256c
-'http://httpredir.debian.org/debian/pool/main/d/diffutils/diffutils_3.3.orig.tar.xz' diffutils_3.3.orig.tar.xz 1197832 SHA256:a25e89a8ab65fded1731e4186be1bb25cda967834b6df973599cdcd5abdfc19c
-'http://httpredir.debian.org/debian/pool/main/d/diffutils/diffutils_3.3-1.debian.tar.gz' diffutils_3.3-1.debian.tar.gz 10584 SHA256:23765ea43cd1b4e5e504ce0984a16e27d5c01e9272cba489ebbebd217f227fc7
+'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.3-1.dsc' diffutils_3.3-1.dsc 1427 SHA256:72df1fed003b47509a063dfa8aa89108c884cd3bf52a06ce40e1ffb61f5a256c
+'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.3.orig.tar.xz' diffutils_3.3.orig.tar.xz 1197832 SHA256:a25e89a8ab65fded1731e4186be1bb25cda967834b6df973599cdcd5abdfc19c
+'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.3-1.debian.tar.gz' diffutils_3.3-1.debian.tar.gz 10584 SHA256:23765ea43cd1b4e5e504ce0984a16e27d5c01e9272cba489ebbebd217f227fc7
 ```
 
 Likely also available for browsing at:
@@ -553,8 +553,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris dpkg=1.17.27
-'http://httpredir.debian.org/debian/pool/main/d/dpkg/dpkg_1.17.27.dsc' dpkg_1.17.27.dsc 2018 SHA256:730ad9445990322551acf79a752515d27ffca5c8b6d978b3276d28e88d60e34f
-'http://httpredir.debian.org/debian/pool/main/d/dpkg/dpkg_1.17.27.tar.xz' dpkg_1.17.27.tar.xz 4413092 SHA256:90749c31b9f1fceb46dd9fab5b50de34272efef333cc16d9e144f514fd944bb6
+'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.17.27.dsc' dpkg_1.17.27.dsc 2018 SHA256:730ad9445990322551acf79a752515d27ffca5c8b6d978b3276d28e88d60e34f
+'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.17.27.tar.xz' dpkg_1.17.27.tar.xz 4413092 SHA256:90749c31b9f1fceb46dd9fab5b50de34272efef333cc16d9e144f514fd944bb6
 ```
 
 Likely also available for browsing at:
@@ -580,9 +580,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris e2fsprogs=1.42.12-2
-'http://httpredir.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.42.12-2.dsc' e2fsprogs_1.42.12-2.dsc 2200 SHA256:c0edf462e2d55c64bc0e8278602066f458efd1b744627238a1d2b38e4ac2af94
-'http://httpredir.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.42.12.orig.tar.gz' e2fsprogs_1.42.12.orig.tar.gz 6381695 SHA256:e17846d91a0edd89fa59b064bde8f8e5cec5851e35f587bcccb4014dbd63186c
-'http://httpredir.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.42.12-2.debian.tar.xz' e2fsprogs_1.42.12-2.debian.tar.xz 68700 SHA256:23b927df5556f4854ea26bb8e7c55cdc9a31b920d1dd0be7a2965378dde30bd4
+'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.42.12-2.dsc' e2fsprogs_1.42.12-2.dsc 2200 SHA256:c0edf462e2d55c64bc0e8278602066f458efd1b744627238a1d2b38e4ac2af94
+'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.42.12.orig.tar.gz' e2fsprogs_1.42.12.orig.tar.gz 6381695 SHA256:e17846d91a0edd89fa59b064bde8f8e5cec5851e35f587bcccb4014dbd63186c
+'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.42.12-2.debian.tar.xz' e2fsprogs_1.42.12-2.debian.tar.xz 68700 SHA256:23b927df5556f4854ea26bb8e7c55cdc9a31b920d1dd0be7a2965378dde30bd4
 ```
 
 Likely also available for browsing at:
@@ -609,9 +609,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris exim4=4.84.2-2+deb8u1
-'http://httpredir.debian.org/debian/pool/main/e/exim4/exim4_4.84.2-2+deb8u1.dsc' exim4_4.84.2-2+deb8u1.dsc 2813 SHA256:d0f1ca84f3ebfd9a74b49647441216acd0c5755f806a4c102f6146b03e601803
-'http://httpredir.debian.org/debian/pool/main/e/exim4/exim4_4.84.2.orig.tar.bz2' exim4_4.84.2.orig.tar.bz2 1745970 SHA256:eb082aedf9349a29e25120e53f9e67a7ca6c4a6dad579c1425da1e131599bf52
-'http://httpredir.debian.org/debian/pool/main/e/exim4/exim4_4.84.2-2+deb8u1.debian.tar.xz' exim4_4.84.2-2+deb8u1.debian.tar.xz 423116 SHA256:52ad302191fefd910ff6f7a7ccfcc1bf036c6d08003c2485783fc8dfc42d0266
+'http://deb.debian.org/debian/pool/main/e/exim4/exim4_4.84.2-2+deb8u1.dsc' exim4_4.84.2-2+deb8u1.dsc 2813 SHA256:d0f1ca84f3ebfd9a74b49647441216acd0c5755f806a4c102f6146b03e601803
+'http://deb.debian.org/debian/pool/main/e/exim4/exim4_4.84.2.orig.tar.bz2' exim4_4.84.2.orig.tar.bz2 1745970 SHA256:eb082aedf9349a29e25120e53f9e67a7ca6c4a6dad579c1425da1e131599bf52
+'http://deb.debian.org/debian/pool/main/e/exim4/exim4_4.84.2-2+deb8u1.debian.tar.xz' exim4_4.84.2-2+deb8u1.debian.tar.xz 423116 SHA256:52ad302191fefd910ff6f7a7ccfcc1bf036c6d08003c2485783fc8dfc42d0266
 ```
 
 Likely also available for browsing at:
@@ -633,9 +633,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris expat=2.1.0-6+deb8u3
-'http://httpredir.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u3.dsc' expat_2.1.0-6+deb8u3.dsc 2278 SHA256:3485be5c4ffc922aea14718c48c4107b04559ec013cc0e98a61597da50320e25
-'http://httpredir.debian.org/debian/pool/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
-'http://httpredir.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u3.debian.tar.xz' expat_2.1.0-6+deb8u3.debian.tar.xz 21716 SHA256:5e756a68a7634b7b7109024bd33df4df3c5964ea0d0f5e8db0ca98f623bcd841
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u3.dsc' expat_2.1.0-6+deb8u3.dsc 2278 SHA256:3485be5c4ffc922aea14718c48c4107b04559ec013cc0e98a61597da50320e25
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u3.debian.tar.xz' expat_2.1.0-6+deb8u3.debian.tar.xz 21716 SHA256:5e756a68a7634b7b7109024bd33df4df3c5964ea0d0f5e8db0ca98f623bcd841
 ```
 
 Likely also available for browsing at:
@@ -662,9 +662,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris file=1:5.22+15-2+deb8u2
-'http://httpredir.debian.org/debian/pool/main/f/file/file_5.22+15-2+deb8u2.dsc' file_5.22+15-2+deb8u2.dsc 2082 SHA256:92617d204716436098950fdd3fddf7fa833f2cc70fb79f4ee1a68d5764a4518e
-'http://httpredir.debian.org/debian/pool/main/f/file/file_5.22+15.orig.tar.xz' file_5.22+15.orig.tar.xz 569332 SHA256:c021e9f73b3eb3b6cc2532c5d9a77af1a92902935013c2740ba3fef83f1804d2
-'http://httpredir.debian.org/debian/pool/main/f/file/file_5.22+15-2+deb8u2.debian.tar.xz' file_5.22+15-2+deb8u2.debian.tar.xz 30212 SHA256:f3695289c706c6f221bd88af5cb841ed1a649e31ed8e2627b628ff0746f42eee
+'http://deb.debian.org/debian/pool/main/f/file/file_5.22+15-2+deb8u2.dsc' file_5.22+15-2+deb8u2.dsc 2082 SHA256:92617d204716436098950fdd3fddf7fa833f2cc70fb79f4ee1a68d5764a4518e
+'http://deb.debian.org/debian/pool/main/f/file/file_5.22+15.orig.tar.xz' file_5.22+15.orig.tar.xz 569332 SHA256:c021e9f73b3eb3b6cc2532c5d9a77af1a92902935013c2740ba3fef83f1804d2
+'http://deb.debian.org/debian/pool/main/f/file/file_5.22+15-2+deb8u2.debian.tar.xz' file_5.22+15-2+deb8u2.debian.tar.xz 30212 SHA256:f3695289c706c6f221bd88af5cb841ed1a649e31ed8e2627b628ff0746f42eee
 ```
 
 Likely also available for browsing at:
@@ -687,9 +687,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris findutils=4.4.2-9
-'http://httpredir.debian.org/debian/pool/main/f/findutils/findutils_4.4.2-9.dsc' findutils_4.4.2-9.dsc 1996 SHA256:0dd9d96af8260d2e81c5819d2e5536f95cb894e771c9adcab44ba70726adb13e
-'http://httpredir.debian.org/debian/pool/main/f/findutils/findutils_4.4.2.orig.tar.gz' findutils_4.4.2.orig.tar.gz 2149838 SHA256:434f32d171cbc0a5e72cfc5372c6fc4cb0e681f8dce566a0de5b6fccd702b62a
-'http://httpredir.debian.org/debian/pool/main/f/findutils/findutils_4.4.2-9.debian.tar.xz' findutils_4.4.2-9.debian.tar.xz 27384 SHA256:8a9f5fb20c255b833994d7dfff1999b3f4f95dea6008495f2b0ef6c549d62c34
+'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.4.2-9.dsc' findutils_4.4.2-9.dsc 1996 SHA256:0dd9d96af8260d2e81c5819d2e5536f95cb894e771c9adcab44ba70726adb13e
+'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.4.2.orig.tar.gz' findutils_4.4.2.orig.tar.gz 2149838 SHA256:434f32d171cbc0a5e72cfc5372c6fc4cb0e681f8dce566a0de5b6fccd702b62a
+'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.4.2-9.debian.tar.xz' findutils_4.4.2-9.debian.tar.xz 27384 SHA256:8a9f5fb20c255b833994d7dfff1999b3f4f95dea6008495f2b0ef6c549d62c34
 ```
 
 Likely also available for browsing at:
@@ -715,8 +715,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-4.8=4.8.4-1
-'http://httpredir.debian.org/debian/pool/main/g/gcc-4.8/gcc-4.8_4.8.4-1.dsc' gcc-4.8_4.8.4-1.dsc 10638 SHA256:9ba284727055aba04bb3122ef7f857587a403a5c9a2f924948829da49ca2ef02
-'http://httpredir.debian.org/debian/pool/main/g/gcc-4.8/gcc-4.8_4.8.4-1.tar.gz' gcc-4.8_4.8.4-1.tar.gz 187653934 SHA256:c38d9687b6fef3010f250adaf89a3f1bd0f12c9cd82ed531a52e7d394b8226cf
+'http://deb.debian.org/debian/pool/main/g/gcc-4.8/gcc-4.8_4.8.4-1.dsc' gcc-4.8_4.8.4-1.dsc 10638 SHA256:9ba284727055aba04bb3122ef7f857587a403a5c9a2f924948829da49ca2ef02
+'http://deb.debian.org/debian/pool/main/g/gcc-4.8/gcc-4.8_4.8.4-1.tar.gz' gcc-4.8_4.8.4-1.tar.gz 187653934 SHA256:c38d9687b6fef3010f250adaf89a3f1bd0f12c9cd82ed531a52e7d394b8226cf
 ```
 
 Likely also available for browsing at:
@@ -744,9 +744,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-4.9=4.9.2-10
-'http://httpredir.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2-10.dsc' gcc-4.9_4.9.2-10.dsc 19222 SHA256:591b7db6bd972dd1a7b99953e367a89f859deb3a13efa8531034c2ab568314b1
-'http://httpredir.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2.orig.tar.gz' gcc-4.9_4.9.2.orig.tar.gz 73565212 SHA256:861aa811d5f9e9ecf32d8195d2346fc434eba7e17330878ed3d876c49a32ec4e
-'http://httpredir.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2-10.diff.gz' gcc-4.9_4.9.2-10.diff.gz 848893 SHA256:7e566640487ea9456186656848bfc1e43242ed448766ed3553b79fee16d25edb
+'http://deb.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2-10.dsc' gcc-4.9_4.9.2-10.dsc 19222 SHA256:591b7db6bd972dd1a7b99953e367a89f859deb3a13efa8531034c2ab568314b1
+'http://deb.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2.orig.tar.gz' gcc-4.9_4.9.2.orig.tar.gz 73565212 SHA256:861aa811d5f9e9ecf32d8195d2346fc434eba7e17330878ed3d876c49a32ec4e
+'http://deb.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9_4.9.2-10.diff.gz' gcc-4.9_4.9.2-10.diff.gz 848893 SHA256:7e566640487ea9456186656848bfc1e43242ed448766ed3553b79fee16d25edb
 ```
 
 Likely also available for browsing at:
@@ -768,9 +768,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gdbm=1.8.3-13.1
-'http://httpredir.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3-13.1.dsc' gdbm_1.8.3-13.1.dsc 1830 SHA256:b1d8bef30edc491315c337930cbe2b61f44f55035adfc26ae945bab5ca57d5c9
-'http://httpredir.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3.orig.tar.bz2' gdbm_1.8.3.orig.tar.bz2 172796 SHA256:1d5995b6e9e6be4ff62c8126d019f184a083dd8e6f75f6c74b9fe023b5b9440e
-'http://httpredir.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3-13.1.debian.tar.xz' gdbm_1.8.3-13.1.debian.tar.xz 14748 SHA256:251401e1f5210226f384e936b1b7ea1df40119a918d9f3dbf48b2e51d4df8983
+'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3-13.1.dsc' gdbm_1.8.3-13.1.dsc 1830 SHA256:b1d8bef30edc491315c337930cbe2b61f44f55035adfc26ae945bab5ca57d5c9
+'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3.orig.tar.bz2' gdbm_1.8.3.orig.tar.bz2 172796 SHA256:1d5995b6e9e6be4ff62c8126d019f184a083dd8e6f75f6c74b9fe023b5b9440e
+'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3-13.1.debian.tar.xz' gdbm_1.8.3-13.1.debian.tar.xz 14748 SHA256:251401e1f5210226f384e936b1b7ea1df40119a918d9f3dbf48b2e51d4df8983
 ```
 
 Likely also available for browsing at:
@@ -796,9 +796,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glibc=2.19-18+deb8u6
-'http://httpredir.debian.org/debian/pool/main/g/glibc/glibc_2.19-18+deb8u6.dsc' glibc_2.19-18+deb8u6.dsc 8220 SHA256:e84bc32d28a021e1d17e41ae2b3c862efe927160525b0fdb2b2bab9151f845b2
-'http://httpredir.debian.org/debian/pool/main/g/glibc/glibc_2.19.orig.tar.xz' glibc_2.19.orig.tar.xz 12387008 SHA256:746e52bb4fc9b2f30bcd33d415172a40ab56c5fff6c494052d31b0795593cc60
-'http://httpredir.debian.org/debian/pool/main/g/glibc/glibc_2.19-18+deb8u6.debian.tar.xz' glibc_2.19-18+deb8u6.debian.tar.xz 1062520 SHA256:21ce25c8a325df5a0864217910c9161c0874d1d5f58a18044bf4bdb056311d06
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.19-18+deb8u6.dsc' glibc_2.19-18+deb8u6.dsc 8220 SHA256:e84bc32d28a021e1d17e41ae2b3c862efe927160525b0fdb2b2bab9151f845b2
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.19.orig.tar.xz' glibc_2.19.orig.tar.xz 12387008 SHA256:746e52bb4fc9b2f30bcd33d415172a40ab56c5fff6c494052d31b0795593cc60
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.19-18+deb8u6.debian.tar.xz' glibc_2.19-18+deb8u6.debian.tar.xz 1062520 SHA256:21ce25c8a325df5a0864217910c9161c0874d1d5f58a18044bf4bdb056311d06
 ```
 
 Likely also available for browsing at:
@@ -823,9 +823,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gmp=2:6.0.0+dfsg-6
-'http://httpredir.debian.org/debian/pool/main/g/gmp/gmp_6.0.0+dfsg-6.dsc' gmp_6.0.0+dfsg-6.dsc 1840 SHA256:40f44bfae4ed9df69a8c64fe9bf9deded10cc4a75844c95bbfbfc3307976f53a
-'http://httpredir.debian.org/debian/pool/main/g/gmp/gmp_6.0.0+dfsg.orig.tar.xz' gmp_6.0.0+dfsg.orig.tar.xz 1756792 SHA256:7539e094815fc321f4dc64b0a6968db9e1bee85a459bc64d4cc2b9dd0f6729a5
-'http://httpredir.debian.org/debian/pool/main/g/gmp/gmp_6.0.0+dfsg-6.debian.tar.xz' gmp_6.0.0+dfsg-6.debian.tar.xz 21024 SHA256:83219073eab9fb886dd1123b6b571b45fbe2f7c290c4201b07696784ffcf7fd1
+'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.0.0+dfsg-6.dsc' gmp_6.0.0+dfsg-6.dsc 1840 SHA256:40f44bfae4ed9df69a8c64fe9bf9deded10cc4a75844c95bbfbfc3307976f53a
+'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.0.0+dfsg.orig.tar.xz' gmp_6.0.0+dfsg.orig.tar.xz 1756792 SHA256:7539e094815fc321f4dc64b0a6968db9e1bee85a459bc64d4cc2b9dd0f6729a5
+'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.0.0+dfsg-6.debian.tar.xz' gmp_6.0.0+dfsg-6.debian.tar.xz 21024 SHA256:83219073eab9fb886dd1123b6b571b45fbe2f7c290c4201b07696784ffcf7fd1
 ```
 
 Likely also available for browsing at:
@@ -850,9 +850,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gnupg=1.4.18-7+deb8u3
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18-7+deb8u3.dsc' gnupg_1.4.18-7+deb8u3.dsc 2432 SHA256:936c6e278b978f3edd24264940fca2f16d3c22c58437400578cdc7a9e6cb4148
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18.orig.tar.gz' gnupg_1.4.18.orig.tar.gz 5047888 SHA256:10a8936b76ccadb98521535b5f41cc5b41b3c159a6c2915f062bd4dc8ac12d12
-'http://httpredir.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18-7+deb8u3.debian.tar.xz' gnupg_1.4.18-7+deb8u3.debian.tar.xz 301204 SHA256:2117df33f763efb2afbd9c154b6bfbf6a91c0ef1c1bee73357c03fd15f18605f
+'http://deb.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18-7+deb8u3.dsc' gnupg_1.4.18-7+deb8u3.dsc 2432 SHA256:936c6e278b978f3edd24264940fca2f16d3c22c58437400578cdc7a9e6cb4148
+'http://deb.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18.orig.tar.gz' gnupg_1.4.18.orig.tar.gz 5047888 SHA256:10a8936b76ccadb98521535b5f41cc5b41b3c159a6c2915f062bd4dc8ac12d12
+'http://deb.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18-7+deb8u3.debian.tar.xz' gnupg_1.4.18-7+deb8u3.debian.tar.xz 301204 SHA256:2117df33f763efb2afbd9c154b6bfbf6a91c0ef1c1bee73357c03fd15f18605f
 ```
 
 Likely also available for browsing at:
@@ -882,9 +882,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gnutls28=3.3.8-6+deb8u3
-'http://httpredir.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.3.8-6+deb8u3.dsc' gnutls28_3.3.8-6+deb8u3.dsc 2941 SHA256:5c1cd78b2eb4547377ef5c0894de48945265251dbdca2303526cef894e77e46d
-'http://httpredir.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.3.8.orig.tar.xz' gnutls28_3.3.8.orig.tar.xz 6153180 SHA256:bd4642f180e19632f4ed3a1e62d60c824c7b695f5cddf41a8fba1b272eaef046
-'http://httpredir.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.3.8-6+deb8u3.debian.tar.xz' gnutls28_3.3.8-6+deb8u3.debian.tar.xz 95104 SHA256:fe56f1f7a79b855577a5539202408e91a5a7a57095751550d983368cc0c08f8d
+'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.3.8-6+deb8u3.dsc' gnutls28_3.3.8-6+deb8u3.dsc 2941 SHA256:5c1cd78b2eb4547377ef5c0894de48945265251dbdca2303526cef894e77e46d
+'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.3.8.orig.tar.xz' gnutls28_3.3.8.orig.tar.xz 6153180 SHA256:bd4642f180e19632f4ed3a1e62d60c824c7b695f5cddf41a8fba1b272eaef046
+'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.3.8-6+deb8u3.debian.tar.xz' gnutls28_3.3.8-6+deb8u3.debian.tar.xz 95104 SHA256:fe56f1f7a79b855577a5539202408e91a5a7a57095751550d983368cc0c08f8d
 ```
 
 Likely also available for browsing at:
@@ -907,9 +907,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris grep=2.20-4.1
-'http://httpredir.debian.org/debian/pool/main/g/grep/grep_2.20-4.1.dsc' grep_2.20-4.1.dsc 2627 SHA256:62ae6c19839e940462d27b2a234e925210cdb9209e2a4080b695fcec439c1d04
-'http://httpredir.debian.org/debian/pool/main/g/grep/grep_2.20.orig.tar.xz' grep_2.20.orig.tar.xz 1237196 SHA256:f0af452bc0d09464b6d089b6d56a0a3c16672e9ed9118fbe37b0b6aeaf069a65
-'http://httpredir.debian.org/debian/pool/main/g/grep/grep_2.20-4.1.debian.tar.bz2' grep_2.20-4.1.debian.tar.bz2 113054 SHA256:4aa8c4487d05dc82498668deeb485a9d4891a74df29466adf74e2faf738d2917
+'http://deb.debian.org/debian/pool/main/g/grep/grep_2.20-4.1.dsc' grep_2.20-4.1.dsc 2627 SHA256:62ae6c19839e940462d27b2a234e925210cdb9209e2a4080b695fcec439c1d04
+'http://deb.debian.org/debian/pool/main/g/grep/grep_2.20.orig.tar.xz' grep_2.20.orig.tar.xz 1237196 SHA256:f0af452bc0d09464b6d089b6d56a0a3c16672e9ed9118fbe37b0b6aeaf069a65
+'http://deb.debian.org/debian/pool/main/g/grep/grep_2.20-4.1.debian.tar.bz2' grep_2.20-4.1.debian.tar.bz2 113054 SHA256:4aa8c4487d05dc82498668deeb485a9d4891a74df29466adf74e2faf738d2917
 ```
 
 Likely also available for browsing at:
@@ -931,9 +931,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gzip=1.6-4
-'http://httpredir.debian.org/debian/pool/main/g/gzip/gzip_1.6-4.dsc' gzip_1.6-4.dsc 1853 SHA256:9605bb67aa336e3f1dd68429fa713a80dff3439d67f944160895b14c98503147
-'http://httpredir.debian.org/debian/pool/main/g/gzip/gzip_1.6.orig.tar.gz' gzip_1.6.orig.tar.gz 1074924 SHA256:97eb83b763d9e5ad35f351fe5517e6b71521d7aac7acf3e3cacdb6b1496d8f7e
-'http://httpredir.debian.org/debian/pool/main/g/gzip/gzip_1.6-4.debian.tar.xz' gzip_1.6-4.debian.tar.xz 14476 SHA256:20a474283cc0063de7db623ccc3b17da7df6bc15f681de4e9e1da12b990a2743
+'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.6-4.dsc' gzip_1.6-4.dsc 1853 SHA256:9605bb67aa336e3f1dd68429fa713a80dff3439d67f944160895b14c98503147
+'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.6.orig.tar.gz' gzip_1.6.orig.tar.gz 1074924 SHA256:97eb83b763d9e5ad35f351fe5517e6b71521d7aac7acf3e3cacdb6b1496d8f7e
+'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.6-4.debian.tar.xz' gzip_1.6-4.debian.tar.xz 14476 SHA256:20a474283cc0063de7db623ccc3b17da7df6bc15f681de4e9e1da12b990a2743
 ```
 
 Likely also available for browsing at:
@@ -955,8 +955,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris hostname=3.15
-'http://httpredir.debian.org/debian/pool/main/h/hostname/hostname_3.15.dsc' hostname_3.15.dsc 804 SHA256:e787dec3ac9ee20ff564d6d7afde242103e71830907ee8fa63367162b04e9844
-'http://httpredir.debian.org/debian/pool/main/h/hostname/hostname_3.15.tar.gz' hostname_3.15.tar.gz 13039 SHA256:b6d10114ed14306b21745d2cac1b9adf7a2546f16b9fd719bec14bd7cec61d20
+'http://deb.debian.org/debian/pool/main/h/hostname/hostname_3.15.dsc' hostname_3.15.dsc 804 SHA256:e787dec3ac9ee20ff564d6d7afde242103e71830907ee8fa63367162b04e9844
+'http://deb.debian.org/debian/pool/main/h/hostname/hostname_3.15.tar.gz' hostname_3.15.tar.gz 13039 SHA256:b6d10114ed14306b21745d2cac1b9adf7a2546f16b9fd719bec14bd7cec61d20
 ```
 
 Likely also available for browsing at:
@@ -984,9 +984,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris inetutils=2:1.9.2.39.3a460-3
-'http://httpredir.debian.org/debian/pool/main/i/inetutils/inetutils_1.9.2.39.3a460-3.dsc' inetutils_1.9.2.39.3a460-3.dsc 2700 SHA256:021a37cd7a0f71452f02390ee449974892b88b07605ec73b1393138950c2783a
-'http://httpredir.debian.org/debian/pool/main/i/inetutils/inetutils_1.9.2.39.3a460.orig.tar.xz' inetutils_1.9.2.39.3a460.orig.tar.xz 1337612 SHA256:b24c6ebe9c4a3ae10d421c4b59cc173fc72ea9cddf03386553c3740d247d0865
-'http://httpredir.debian.org/debian/pool/main/i/inetutils/inetutils_1.9.2.39.3a460-3.debian.tar.xz' inetutils_1.9.2.39.3a460-3.debian.tar.xz 75536 SHA256:496fbacdb8b0aad5669a55ac04cbd0f7eefe03227e2fc9e140f4f676116e7ef6
+'http://deb.debian.org/debian/pool/main/i/inetutils/inetutils_1.9.2.39.3a460-3.dsc' inetutils_1.9.2.39.3a460-3.dsc 2700 SHA256:021a37cd7a0f71452f02390ee449974892b88b07605ec73b1393138950c2783a
+'http://deb.debian.org/debian/pool/main/i/inetutils/inetutils_1.9.2.39.3a460.orig.tar.xz' inetutils_1.9.2.39.3a460.orig.tar.xz 1337612 SHA256:b24c6ebe9c4a3ae10d421c4b59cc173fc72ea9cddf03386553c3740d247d0865
+'http://deb.debian.org/debian/pool/main/i/inetutils/inetutils_1.9.2.39.3a460-3.debian.tar.xz' inetutils_1.9.2.39.3a460-3.debian.tar.xz 75536 SHA256:496fbacdb8b0aad5669a55ac04cbd0f7eefe03227e2fc9e140f4f676116e7ef6
 ```
 
 Likely also available for browsing at:
@@ -1011,8 +1011,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris init-system-helpers=1.22
-'http://httpredir.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.22.dsc' init-system-helpers_1.22.dsc 1880 SHA256:f2ba7e0e1804b56d9c2967ed60be92274619068d7d3894c2dc750f31dbb0ff25
-'http://httpredir.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.22.tar.xz' init-system-helpers_1.22.tar.xz 30728 SHA256:4f64b9fd86f2c68a3996903e03d6024d73f637ff8a06f1bd4f73bedcf8154124
+'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.22.dsc' init-system-helpers_1.22.dsc 1880 SHA256:f2ba7e0e1804b56d9c2967ed60be92274619068d7d3894c2dc750f31dbb0ff25
+'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.22.tar.xz' init-system-helpers_1.22.tar.xz 30728 SHA256:4f64b9fd86f2c68a3996903e03d6024d73f637ff8a06f1bd4f73bedcf8154124
 ```
 
 Likely also available for browsing at:
@@ -1034,9 +1034,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris insserv=1.14.0-5
-'http://httpredir.debian.org/debian/pool/main/i/insserv/insserv_1.14.0-5.dsc' insserv_1.14.0-5.dsc 1947 SHA256:183dbcd57db6061d61e781197231275fe49c321f6600ec147546d5c24a8ba021
-'http://httpredir.debian.org/debian/pool/main/i/insserv/insserv_1.14.0.orig.tar.gz' insserv_1.14.0.orig.tar.gz 53851 SHA256:da74dcf5225a00aa8aef4d5afc6a20e009b2ed9af328dabd55fef1cb3a32140e
-'http://httpredir.debian.org/debian/pool/main/i/insserv/insserv_1.14.0-5.debian.tar.gz' insserv_1.14.0-5.debian.tar.gz 53943 SHA256:496a3ece3cf4b53ff19f45eeffab6b5a7714785d1db524087c9cbe9cbdd88b2a
+'http://deb.debian.org/debian/pool/main/i/insserv/insserv_1.14.0-5.dsc' insserv_1.14.0-5.dsc 1947 SHA256:183dbcd57db6061d61e781197231275fe49c321f6600ec147546d5c24a8ba021
+'http://deb.debian.org/debian/pool/main/i/insserv/insserv_1.14.0.orig.tar.gz' insserv_1.14.0.orig.tar.gz 53851 SHA256:da74dcf5225a00aa8aef4d5afc6a20e009b2ed9af328dabd55fef1cb3a32140e
+'http://deb.debian.org/debian/pool/main/i/insserv/insserv_1.14.0-5.debian.tar.gz' insserv_1.14.0-5.debian.tar.gz 53943 SHA256:496a3ece3cf4b53ff19f45eeffab6b5a7714785d1db524087c9cbe9cbdd88b2a
 ```
 
 Likely also available for browsing at:
@@ -1058,9 +1058,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris iproute2=3.16.0-2
-'http://httpredir.debian.org/debian/pool/main/i/iproute2/iproute2_3.16.0-2.dsc' iproute2_3.16.0-2.dsc 1693 SHA256:dd657e1707a85c7a15a3a2ba17e3e02fbf133aac4513ed86e4d8b1d6e4cd6a45
-'http://httpredir.debian.org/debian/pool/main/i/iproute2/iproute2_3.16.0.orig.tar.xz' iproute2_3.16.0.orig.tar.xz 438820 SHA256:1f0a8a6c0e872166f75433f5cbf9766f3002b5c2f13501b3bb8c51846a127b79
-'http://httpredir.debian.org/debian/pool/main/i/iproute2/iproute2_3.16.0-2.debian.tar.xz' iproute2_3.16.0-2.debian.tar.xz 27032 SHA256:9e5c631b4465ee258a2d61150f6a591f37d116b1b465b363f9e50d496e0359ab
+'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_3.16.0-2.dsc' iproute2_3.16.0-2.dsc 1693 SHA256:dd657e1707a85c7a15a3a2ba17e3e02fbf133aac4513ed86e4d8b1d6e4cd6a45
+'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_3.16.0.orig.tar.xz' iproute2_3.16.0.orig.tar.xz 438820 SHA256:1f0a8a6c0e872166f75433f5cbf9766f3002b5c2f13501b3bb8c51846a127b79
+'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_3.16.0-2.debian.tar.xz' iproute2_3.16.0-2.debian.tar.xz 27032 SHA256:9e5c631b4465ee258a2d61150f6a591f37d116b1b465b363f9e50d496e0359ab
 ```
 
 Likely also available for browsing at:
@@ -1085,9 +1085,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris keyutils=1.5.9-5
-'http://httpredir.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.9-5.dsc' keyutils_1.5.9-5.dsc 2080 SHA256:8c8ca9ef9274046901b107f143260bd1255387939ee517ae842829bd167fd49d
-'http://httpredir.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.9.orig.tar.bz2' keyutils_1.5.9.orig.tar.bz2 74683 SHA256:4da2c5552c688b65ab14d4fd40fbdf720c8b396d8ece643e040cf6e707e083ae
-'http://httpredir.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.9-5.debian.tar.xz' keyutils_1.5.9-5.debian.tar.xz 14596 SHA256:8cef47fc1fd688cc54e36cbb7cee26f38b38d10a1c59af8d8dc0869a0e4359fc
+'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.9-5.dsc' keyutils_1.5.9-5.dsc 2080 SHA256:8c8ca9ef9274046901b107f143260bd1255387939ee517ae842829bd167fd49d
+'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.9.orig.tar.bz2' keyutils_1.5.9.orig.tar.bz2 74683 SHA256:4da2c5552c688b65ab14d4fd40fbdf720c8b396d8ece643e040cf6e707e083ae
+'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.5.9-5.debian.tar.xz' keyutils_1.5.9-5.debian.tar.xz 14596 SHA256:8cef47fc1fd688cc54e36cbb7cee26f38b38d10a1c59af8d8dc0869a0e4359fc
 ```
 
 Likely also available for browsing at:
@@ -1110,9 +1110,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris kmod=18-3
-'http://httpredir.debian.org/debian/pool/main/k/kmod/kmod_18-3.dsc' kmod_18-3.dsc 1865 SHA256:f16ef133e00db0fa360dcfb0d4723afc31e3803141b5f864e4df6a8b810eaeea
-'http://httpredir.debian.org/debian/pool/main/k/kmod/kmod_18.orig.tar.gz' kmod_18.orig.tar.gz 3692996 SHA256:cdd7c8627e9bbfe5e39232886d08db2c87b4cc2ea7e9f8d3034577324809f2c0
-'http://httpredir.debian.org/debian/pool/main/k/kmod/kmod_18-3.debian.tar.xz' kmod_18-3.debian.tar.xz 10468 SHA256:7a55a9d2c97913cdfde6e29d2784b5b82c7fdad6581d466b4aa571eef3270ea2
+'http://deb.debian.org/debian/pool/main/k/kmod/kmod_18-3.dsc' kmod_18-3.dsc 1865 SHA256:f16ef133e00db0fa360dcfb0d4723afc31e3803141b5f864e4df6a8b810eaeea
+'http://deb.debian.org/debian/pool/main/k/kmod/kmod_18.orig.tar.gz' kmod_18.orig.tar.gz 3692996 SHA256:cdd7c8627e9bbfe5e39232886d08db2c87b4cc2ea7e9f8d3034577324809f2c0
+'http://deb.debian.org/debian/pool/main/k/kmod/kmod_18-3.debian.tar.xz' kmod_18-3.debian.tar.xz 10468 SHA256:7a55a9d2c97913cdfde6e29d2784b5b82c7fdad6581d466b4aa571eef3270ea2
 ```
 
 Likely also available for browsing at:
@@ -1138,9 +1138,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris krb5=1.12.1+dfsg-19+deb8u2
-'http://httpredir.debian.org/debian/pool/main/k/krb5/krb5_1.12.1+dfsg-19+deb8u2.dsc' krb5_1.12.1+dfsg-19+deb8u2.dsc 3368 SHA256:2b10ecb8b8c3015a12a764e4e6eb99fcca45cc1946d211a18db64b46dfa2cb81
-'http://httpredir.debian.org/debian/pool/main/k/krb5/krb5_1.12.1+dfsg.orig.tar.gz' krb5_1.12.1+dfsg.orig.tar.gz 11792370 SHA256:eb29959f1e9f8d71e7401f5809daefae067296eb5b0da1176366280a16bdd784
-'http://httpredir.debian.org/debian/pool/main/k/krb5/krb5_1.12.1+dfsg-19+deb8u2.debian.tar.xz' krb5_1.12.1+dfsg-19+deb8u2.debian.tar.xz 123456 SHA256:242155b4ac6add762c1bac60e6eaa73b25abd985fb41bcdd13d4eae022f592ec
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.12.1+dfsg-19+deb8u2.dsc' krb5_1.12.1+dfsg-19+deb8u2.dsc 3368 SHA256:2b10ecb8b8c3015a12a764e4e6eb99fcca45cc1946d211a18db64b46dfa2cb81
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.12.1+dfsg.orig.tar.gz' krb5_1.12.1+dfsg.orig.tar.gz 11792370 SHA256:eb29959f1e9f8d71e7401f5809daefae067296eb5b0da1176366280a16bdd784
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.12.1+dfsg-19+deb8u2.debian.tar.xz' krb5_1.12.1+dfsg-19+deb8u2.debian.tar.xz 123456 SHA256:242155b4ac6add762c1bac60e6eaa73b25abd985fb41bcdd13d4eae022f592ec
 ```
 
 Likely also available for browsing at:
@@ -1164,9 +1164,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libalgorithm-c3-perl=0.09-1
-'http://httpredir.debian.org/debian/pool/main/liba/libalgorithm-c3-perl/libalgorithm-c3-perl_0.09-1.dsc' libalgorithm-c3-perl_0.09-1.dsc 2184 SHA256:43c821823cfe09eb17269e8798d5653e35642764ef2a5b2442c63bcc85b43bff
-'http://httpredir.debian.org/debian/pool/main/liba/libalgorithm-c3-perl/libalgorithm-c3-perl_0.09.orig.tar.gz' libalgorithm-c3-perl_0.09.orig.tar.gz 12430 SHA256:0fe9b5f806c8679dd70fe8eeeaaa570d70a34d449f844759b16e805bbf7322a0
-'http://httpredir.debian.org/debian/pool/main/liba/libalgorithm-c3-perl/libalgorithm-c3-perl_0.09-1.debian.tar.xz' libalgorithm-c3-perl_0.09-1.debian.tar.xz 2516 SHA256:88b3ab34f82909e95533dfcb3fe09bf0dad0c2802e9cd02983bb8c906fda542a
+'http://deb.debian.org/debian/pool/main/liba/libalgorithm-c3-perl/libalgorithm-c3-perl_0.09-1.dsc' libalgorithm-c3-perl_0.09-1.dsc 2184 SHA256:43c821823cfe09eb17269e8798d5653e35642764ef2a5b2442c63bcc85b43bff
+'http://deb.debian.org/debian/pool/main/liba/libalgorithm-c3-perl/libalgorithm-c3-perl_0.09.orig.tar.gz' libalgorithm-c3-perl_0.09.orig.tar.gz 12430 SHA256:0fe9b5f806c8679dd70fe8eeeaaa570d70a34d449f844759b16e805bbf7322a0
+'http://deb.debian.org/debian/pool/main/liba/libalgorithm-c3-perl/libalgorithm-c3-perl_0.09-1.debian.tar.xz' libalgorithm-c3-perl_0.09-1.debian.tar.xz 2516 SHA256:88b3ab34f82909e95533dfcb3fe09bf0dad0c2802e9cd02983bb8c906fda542a
 ```
 
 Likely also available for browsing at:
@@ -1190,9 +1190,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libarchive-extract-perl=0.72-1
-'http://httpredir.debian.org/debian/pool/main/liba/libarchive-extract-perl/libarchive-extract-perl_0.72-1.dsc' libarchive-extract-perl_0.72-1.dsc 2223 SHA256:ff75e3b4270dc08758bf811a23bb4fa05004764aea0615c40f0c3b0dcee06894
-'http://httpredir.debian.org/debian/pool/main/liba/libarchive-extract-perl/libarchive-extract-perl_0.72.orig.tar.gz' libarchive-extract-perl_0.72.orig.tar.gz 27421 SHA256:e86acd52e75a7cc3cb602a3b84c831cb408067b4ad2d7fb7ba122d156fd745df
-'http://httpredir.debian.org/debian/pool/main/liba/libarchive-extract-perl/libarchive-extract-perl_0.72-1.debian.tar.xz' libarchive-extract-perl_0.72-1.debian.tar.xz 1576 SHA256:b82b856d687a8d3ecf0124ad346c7386258f4f64ab746cca09cb9a376685f623
+'http://deb.debian.org/debian/pool/main/liba/libarchive-extract-perl/libarchive-extract-perl_0.72-1.dsc' libarchive-extract-perl_0.72-1.dsc 2223 SHA256:ff75e3b4270dc08758bf811a23bb4fa05004764aea0615c40f0c3b0dcee06894
+'http://deb.debian.org/debian/pool/main/liba/libarchive-extract-perl/libarchive-extract-perl_0.72.orig.tar.gz' libarchive-extract-perl_0.72.orig.tar.gz 27421 SHA256:e86acd52e75a7cc3cb602a3b84c831cb408067b4ad2d7fb7ba122d156fd745df
+'http://deb.debian.org/debian/pool/main/liba/libarchive-extract-perl/libarchive-extract-perl_0.72-1.debian.tar.xz' libarchive-extract-perl_0.72-1.debian.tar.xz 1576 SHA256:b82b856d687a8d3ecf0124ad346c7386258f4f64ab746cca09cb9a376685f623
 ```
 
 Likely also available for browsing at:
@@ -1214,9 +1214,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libbsd=0.7.0-2
-'http://httpredir.debian.org/debian/pool/main/libb/libbsd/libbsd_0.7.0-2.dsc' libbsd_0.7.0-2.dsc 2007 SHA256:6d5fce0095a6eda36d3c24a68769b70720eefb5b3704ae96419533e23748947a
-'http://httpredir.debian.org/debian/pool/main/libb/libbsd/libbsd_0.7.0.orig.tar.xz' libbsd_0.7.0.orig.tar.xz 322908 SHA256:0f3b0e17e5c34c038126e0a04351b11e23c6101a7d0ce3beeab29bb6415c10bb
-'http://httpredir.debian.org/debian/pool/main/libb/libbsd/libbsd_0.7.0-2.debian.tar.xz' libbsd_0.7.0-2.debian.tar.xz 16272 SHA256:b3ff7556ecde7d1c4100f90a1cbce102699d4d2fdb8e5a328bf7977e48d3b757
+'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.7.0-2.dsc' libbsd_0.7.0-2.dsc 2007 SHA256:6d5fce0095a6eda36d3c24a68769b70720eefb5b3704ae96419533e23748947a
+'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.7.0.orig.tar.xz' libbsd_0.7.0.orig.tar.xz 322908 SHA256:0f3b0e17e5c34c038126e0a04351b11e23c6101a7d0ce3beeab29bb6415c10bb
+'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.7.0-2.debian.tar.xz' libbsd_0.7.0-2.debian.tar.xz 16272 SHA256:b3ff7556ecde7d1c4100f90a1cbce102699d4d2fdb8e5a328bf7977e48d3b757
 ```
 
 Likely also available for browsing at:
@@ -1241,9 +1241,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libcap2=1:2.24-8
-'http://httpredir.debian.org/debian/pool/main/libc/libcap2/libcap2_2.24-8.dsc' libcap2_2.24-8.dsc 2134 SHA256:b042a6c89079d02113bd15ec52948f265edb6c725830d1b79434af06c4e6006a
-'http://httpredir.debian.org/debian/pool/main/libc/libcap2/libcap2_2.24.orig.tar.xz' libcap2_2.24.orig.tar.xz 63264 SHA256:51cd1c568a2baf1e687573bd6117a94b07f33b46a05acaa50ee208792a830b79
-'http://httpredir.debian.org/debian/pool/main/libc/libcap2/libcap2_2.24-8.debian.tar.xz' libcap2_2.24-8.debian.tar.xz 17528 SHA256:d1dd71eb19ce4cb7ea37f827c155382773e7724d5356619539874dca647aa94e
+'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.24-8.dsc' libcap2_2.24-8.dsc 2134 SHA256:b042a6c89079d02113bd15ec52948f265edb6c725830d1b79434af06c4e6006a
+'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.24.orig.tar.xz' libcap2_2.24.orig.tar.xz 63264 SHA256:51cd1c568a2baf1e687573bd6117a94b07f33b46a05acaa50ee208792a830b79
+'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.24-8.debian.tar.xz' libcap2_2.24-8.debian.tar.xz 17528 SHA256:d1dd71eb19ce4cb7ea37f827c155382773e7724d5356619539874dca647aa94e
 ```
 
 Likely also available for browsing at:
@@ -1267,9 +1267,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libcgi-fast-perl=1:2.04-1
-'http://httpredir.debian.org/debian/pool/main/libc/libcgi-fast-perl/libcgi-fast-perl_2.04-1.dsc' libcgi-fast-perl_2.04-1.dsc 2297 SHA256:01e20a4b0a53006223077140ba3b00d4f56977f1a875660fb23f03ef86695208
-'http://httpredir.debian.org/debian/pool/main/libc/libcgi-fast-perl/libcgi-fast-perl_2.04.orig.tar.gz' libcgi-fast-perl_2.04.orig.tar.gz 7647 SHA256:5eaf29e57e18e062408b35688c3f65a014f9ec965f54696481126801e0815e8c
-'http://httpredir.debian.org/debian/pool/main/libc/libcgi-fast-perl/libcgi-fast-perl_2.04-1.debian.tar.xz' libcgi-fast-perl_2.04-1.debian.tar.xz 2412 SHA256:4959e02a93949adc289d44d3ed8ecceb17f81d49bdff61f7db2ef60ff377efac
+'http://deb.debian.org/debian/pool/main/libc/libcgi-fast-perl/libcgi-fast-perl_2.04-1.dsc' libcgi-fast-perl_2.04-1.dsc 2297 SHA256:01e20a4b0a53006223077140ba3b00d4f56977f1a875660fb23f03ef86695208
+'http://deb.debian.org/debian/pool/main/libc/libcgi-fast-perl/libcgi-fast-perl_2.04.orig.tar.gz' libcgi-fast-perl_2.04.orig.tar.gz 7647 SHA256:5eaf29e57e18e062408b35688c3f65a014f9ec965f54696481126801e0815e8c
+'http://deb.debian.org/debian/pool/main/libc/libcgi-fast-perl/libcgi-fast-perl_2.04-1.debian.tar.xz' libcgi-fast-perl_2.04-1.debian.tar.xz 2412 SHA256:4959e02a93949adc289d44d3ed8ecceb17f81d49bdff61f7db2ef60ff377efac
 ```
 
 Likely also available for browsing at:
@@ -1294,9 +1294,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libcgi-pm-perl=4.09-1
-'http://httpredir.debian.org/debian/pool/main/libc/libcgi-pm-perl/libcgi-pm-perl_4.09-1.dsc' libcgi-pm-perl_4.09-1.dsc 2410 SHA256:05348cbd2e24dacd8e14c3bf3a6cb93310a6ea746b617443995187f3e776355f
-'http://httpredir.debian.org/debian/pool/main/libc/libcgi-pm-perl/libcgi-pm-perl_4.09.orig.tar.gz' libcgi-pm-perl_4.09.orig.tar.gz 182709 SHA256:d05688ac8597f6db2a9085c2d5f90aeec5169b757d9ff51b062034cd19bd48a6
-'http://httpredir.debian.org/debian/pool/main/libc/libcgi-pm-perl/libcgi-pm-perl_4.09-1.debian.tar.xz' libcgi-pm-perl_4.09-1.debian.tar.xz 8720 SHA256:1c61fc46fe6d044f2004b523dcf9bab8e0e71852ee6e2e96e5a2a4f6c542ff3f
+'http://deb.debian.org/debian/pool/main/libc/libcgi-pm-perl/libcgi-pm-perl_4.09-1.dsc' libcgi-pm-perl_4.09-1.dsc 2410 SHA256:05348cbd2e24dacd8e14c3bf3a6cb93310a6ea746b617443995187f3e776355f
+'http://deb.debian.org/debian/pool/main/libc/libcgi-pm-perl/libcgi-pm-perl_4.09.orig.tar.gz' libcgi-pm-perl_4.09.orig.tar.gz 182709 SHA256:d05688ac8597f6db2a9085c2d5f90aeec5169b757d9ff51b062034cd19bd48a6
+'http://deb.debian.org/debian/pool/main/libc/libcgi-pm-perl/libcgi-pm-perl_4.09-1.debian.tar.xz' libcgi-pm-perl_4.09-1.debian.tar.xz 8720 SHA256:1c61fc46fe6d044f2004b523dcf9bab8e0e71852ee6e2e96e5a2a4f6c542ff3f
 ```
 
 Likely also available for browsing at:
@@ -1320,9 +1320,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libclass-c3-perl=0.26-1
-'http://httpredir.debian.org/debian/pool/main/libc/libclass-c3-perl/libclass-c3-perl_0.26-1.dsc' libclass-c3-perl_0.26-1.dsc 2355 SHA256:f4f6de3c0bb1d092bc4255f192cce152223d397d89c0ffa37bd53dd49761f5e0
-'http://httpredir.debian.org/debian/pool/main/libc/libclass-c3-perl/libclass-c3-perl_0.26.orig.tar.gz' libclass-c3-perl_0.26.orig.tar.gz 25528 SHA256:daf4f2742af827a558fb9bf7d91a02c31d0ebf03efba8f6573e2e2e29e791d01
-'http://httpredir.debian.org/debian/pool/main/libc/libclass-c3-perl/libclass-c3-perl_0.26-1.debian.tar.xz' libclass-c3-perl_0.26-1.debian.tar.xz 2944 SHA256:0794de945da522d079fd5932fb654b2fe2ca6d20d53b76dbdf3e74ce409c7935
+'http://deb.debian.org/debian/pool/main/libc/libclass-c3-perl/libclass-c3-perl_0.26-1.dsc' libclass-c3-perl_0.26-1.dsc 2355 SHA256:f4f6de3c0bb1d092bc4255f192cce152223d397d89c0ffa37bd53dd49761f5e0
+'http://deb.debian.org/debian/pool/main/libc/libclass-c3-perl/libclass-c3-perl_0.26.orig.tar.gz' libclass-c3-perl_0.26.orig.tar.gz 25528 SHA256:daf4f2742af827a558fb9bf7d91a02c31d0ebf03efba8f6573e2e2e29e791d01
+'http://deb.debian.org/debian/pool/main/libc/libclass-c3-perl/libclass-c3-perl_0.26-1.debian.tar.xz' libclass-c3-perl_0.26-1.debian.tar.xz 2944 SHA256:0794de945da522d079fd5932fb654b2fe2ca6d20d53b76dbdf3e74ce409c7935
 ```
 
 Likely also available for browsing at:
@@ -1346,9 +1346,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libclass-c3-xs-perl=0.13-2
-'http://httpredir.debian.org/debian/pool/main/libc/libclass-c3-xs-perl/libclass-c3-xs-perl_0.13-2.dsc' libclass-c3-xs-perl_0.13-2.dsc 2262 SHA256:8f112f82b35f654227e7b3b41bf2676fe75724478ce8a6b8edd54bbe3db93a62
-'http://httpredir.debian.org/debian/pool/main/libc/libclass-c3-xs-perl/libclass-c3-xs-perl_0.13.orig.tar.gz' libclass-c3-xs-perl_0.13.orig.tar.gz 26105 SHA256:faa55a03d5d4caf0bae49856b45a5de628392d26cac04e65f006024f912a21ab
-'http://httpredir.debian.org/debian/pool/main/libc/libclass-c3-xs-perl/libclass-c3-xs-perl_0.13-2.debian.tar.xz' libclass-c3-xs-perl_0.13-2.debian.tar.xz 2576 SHA256:5a1614f4d4f818e972d74a6af6fac57fc5f65975daa94e3dacb5a20b3b2817c9
+'http://deb.debian.org/debian/pool/main/libc/libclass-c3-xs-perl/libclass-c3-xs-perl_0.13-2.dsc' libclass-c3-xs-perl_0.13-2.dsc 2262 SHA256:8f112f82b35f654227e7b3b41bf2676fe75724478ce8a6b8edd54bbe3db93a62
+'http://deb.debian.org/debian/pool/main/libc/libclass-c3-xs-perl/libclass-c3-xs-perl_0.13.orig.tar.gz' libclass-c3-xs-perl_0.13.orig.tar.gz 26105 SHA256:faa55a03d5d4caf0bae49856b45a5de628392d26cac04e65f006024f912a21ab
+'http://deb.debian.org/debian/pool/main/libc/libclass-c3-xs-perl/libclass-c3-xs-perl_0.13-2.debian.tar.xz' libclass-c3-xs-perl_0.13-2.debian.tar.xz 2576 SHA256:5a1614f4d4f818e972d74a6af6fac57fc5f65975daa94e3dacb5a20b3b2817c9
 ```
 
 Likely also available for browsing at:
@@ -1372,9 +1372,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libcpan-meta-perl=2.142690-1
-'http://httpredir.debian.org/debian/pool/main/libc/libcpan-meta-perl/libcpan-meta-perl_2.142690-1.dsc' libcpan-meta-perl_2.142690-1.dsc 2550 SHA256:43896408851cbf15653b91e020610e12c19823f16af77b01aceeb494f58041d9
-'http://httpredir.debian.org/debian/pool/main/libc/libcpan-meta-perl/libcpan-meta-perl_2.142690.orig.tar.gz' libcpan-meta-perl_2.142690.orig.tar.gz 98282 SHA256:495770e22e91e3d2bd04dc364f05061cabacfdce35baa3868bc0c05733d145db
-'http://httpredir.debian.org/debian/pool/main/libc/libcpan-meta-perl/libcpan-meta-perl_2.142690-1.debian.tar.xz' libcpan-meta-perl_2.142690-1.debian.tar.xz 3720 SHA256:35018bd6684fbc01db4e42a13ebb7781ad0d1d3dfe7e08d75df9dd93956f84c5
+'http://deb.debian.org/debian/pool/main/libc/libcpan-meta-perl/libcpan-meta-perl_2.142690-1.dsc' libcpan-meta-perl_2.142690-1.dsc 2550 SHA256:43896408851cbf15653b91e020610e12c19823f16af77b01aceeb494f58041d9
+'http://deb.debian.org/debian/pool/main/libc/libcpan-meta-perl/libcpan-meta-perl_2.142690.orig.tar.gz' libcpan-meta-perl_2.142690.orig.tar.gz 98282 SHA256:495770e22e91e3d2bd04dc364f05061cabacfdce35baa3868bc0c05733d145db
+'http://deb.debian.org/debian/pool/main/libc/libcpan-meta-perl/libcpan-meta-perl_2.142690-1.debian.tar.xz' libcpan-meta-perl_2.142690-1.debian.tar.xz 3720 SHA256:35018bd6684fbc01db4e42a13ebb7781ad0d1d3dfe7e08d75df9dd93956f84c5
 ```
 
 Likely also available for browsing at:
@@ -1398,9 +1398,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libdata-optlist-perl=0.109-1
-'http://httpredir.debian.org/debian/pool/main/libd/libdata-optlist-perl/libdata-optlist-perl_0.109-1.dsc' libdata-optlist-perl_0.109-1.dsc 2336 SHA256:221b88cf8c6e2940387779c6cc10386c0112a06fe9db01b25dff1b1ee19def75
-'http://httpredir.debian.org/debian/pool/main/libd/libdata-optlist-perl/libdata-optlist-perl_0.109.orig.tar.gz' libdata-optlist-perl_0.109.orig.tar.gz 16110 SHA256:1cd7c781c4c102810e4e0c878da3746fe8df46b49d01c4d6c034dfab45cd84c8
-'http://httpredir.debian.org/debian/pool/main/libd/libdata-optlist-perl/libdata-optlist-perl_0.109-1.debian.tar.gz' libdata-optlist-perl_0.109-1.debian.tar.gz 2826 SHA256:be2e00189b3cdb07823b414c6ae8f1f2a730de5c36b278b81f0153f23915a248
+'http://deb.debian.org/debian/pool/main/libd/libdata-optlist-perl/libdata-optlist-perl_0.109-1.dsc' libdata-optlist-perl_0.109-1.dsc 2336 SHA256:221b88cf8c6e2940387779c6cc10386c0112a06fe9db01b25dff1b1ee19def75
+'http://deb.debian.org/debian/pool/main/libd/libdata-optlist-perl/libdata-optlist-perl_0.109.orig.tar.gz' libdata-optlist-perl_0.109.orig.tar.gz 16110 SHA256:1cd7c781c4c102810e4e0c878da3746fe8df46b49d01c4d6c034dfab45cd84c8
+'http://deb.debian.org/debian/pool/main/libd/libdata-optlist-perl/libdata-optlist-perl_0.109-1.debian.tar.gz' libdata-optlist-perl_0.109-1.debian.tar.gz 2826 SHA256:be2e00189b3cdb07823b414c6ae8f1f2a730de5c36b278b81f0153f23915a248
 ```
 
 Likely also available for browsing at:
@@ -1424,9 +1424,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libdata-section-perl=0.200006-1
-'http://httpredir.debian.org/debian/pool/main/libd/libdata-section-perl/libdata-section-perl_0.200006-1.dsc' libdata-section-perl_0.200006-1.dsc 2461 SHA256:1aa314b5aed572d333c8b63b21df6816bfbe71a9d544ff726e1a513ba737bef8
-'http://httpredir.debian.org/debian/pool/main/libd/libdata-section-perl/libdata-section-perl_0.200006.orig.tar.gz' libdata-section-perl_0.200006.orig.tar.gz 19396 SHA256:348501f99dab0adbe6d32143f4e79c2cbb6558c84d183cffc4c1275cacd35b5f
-'http://httpredir.debian.org/debian/pool/main/libd/libdata-section-perl/libdata-section-perl_0.200006-1.debian.tar.xz' libdata-section-perl_0.200006-1.debian.tar.xz 2768 SHA256:eaaa8ef543b99820c3b867b245bf14c4d11ba6d09e05cabc3bcab646dbe614db
+'http://deb.debian.org/debian/pool/main/libd/libdata-section-perl/libdata-section-perl_0.200006-1.dsc' libdata-section-perl_0.200006-1.dsc 2461 SHA256:1aa314b5aed572d333c8b63b21df6816bfbe71a9d544ff726e1a513ba737bef8
+'http://deb.debian.org/debian/pool/main/libd/libdata-section-perl/libdata-section-perl_0.200006.orig.tar.gz' libdata-section-perl_0.200006.orig.tar.gz 19396 SHA256:348501f99dab0adbe6d32143f4e79c2cbb6558c84d183cffc4c1275cacd35b5f
+'http://deb.debian.org/debian/pool/main/libd/libdata-section-perl/libdata-section-perl_0.200006-1.debian.tar.xz' libdata-section-perl_0.200006-1.debian.tar.xz 2768 SHA256:eaaa8ef543b99820c3b867b245bf14c4d11ba6d09e05cabc3bcab646dbe614db
 ```
 
 Likely also available for browsing at:
@@ -1448,9 +1448,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libedit=3.1-20140620-2
-'http://httpredir.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20140620-2.dsc' libedit_3.1-20140620-2.dsc 2235 SHA256:ca5af1e511d53595d6f518c9f4805feba66af23d3c468a92d9e84c1987af7512
-'http://httpredir.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20140620.orig.tar.gz' libedit_3.1-20140620.orig.tar.gz 483857 SHA256:a22b9b2a8cf4aec9ff51a57e8c848b69640d0195282159d245d8137a19bfcaf2
-'http://httpredir.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20140620-2.debian.tar.bz2' libedit_3.1-20140620-2.debian.tar.bz2 17637 SHA256:610d08273c7f73a83dad62b322a520497c12b9714bb1d9b54918c7bc0b3bb6ff
+'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20140620-2.dsc' libedit_3.1-20140620-2.dsc 2235 SHA256:ca5af1e511d53595d6f518c9f4805feba66af23d3c468a92d9e84c1987af7512
+'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20140620.orig.tar.gz' libedit_3.1-20140620.orig.tar.gz 483857 SHA256:a22b9b2a8cf4aec9ff51a57e8c848b69640d0195282159d245d8137a19bfcaf2
+'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20140620-2.debian.tar.bz2' libedit_3.1-20140620-2.debian.tar.bz2 17637 SHA256:610d08273c7f73a83dad62b322a520497c12b9714bb1d9b54918c7bc0b3bb6ff
 ```
 
 Likely also available for browsing at:
@@ -1473,9 +1473,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libfcgi-perl=0.77-1
-'http://httpredir.debian.org/debian/pool/main/libf/libfcgi-perl/libfcgi-perl_0.77-1.dsc' libfcgi-perl_0.77-1.dsc 2174 SHA256:d8a0ee0e92163acc7f296bf0cac68673bd50adc42726b3e9dfd6d2ca23a8db17
-'http://httpredir.debian.org/debian/pool/main/libf/libfcgi-perl/libfcgi-perl_0.77.orig.tar.gz' libfcgi-perl_0.77.orig.tar.gz 90561 SHA256:352cdfe3309d77c2815aa18fe7fbd9b4be68e8b1b26d062039e78f8664aa25a8
-'http://httpredir.debian.org/debian/pool/main/libf/libfcgi-perl/libfcgi-perl_0.77-1.debian.tar.xz' libfcgi-perl_0.77-1.debian.tar.xz 4524 SHA256:6652bba38d891fc4076c63dc1c35d361578533151fa2c4d026f083d440fcd9fa
+'http://deb.debian.org/debian/pool/main/libf/libfcgi-perl/libfcgi-perl_0.77-1.dsc' libfcgi-perl_0.77-1.dsc 2174 SHA256:d8a0ee0e92163acc7f296bf0cac68673bd50adc42726b3e9dfd6d2ca23a8db17
+'http://deb.debian.org/debian/pool/main/libf/libfcgi-perl/libfcgi-perl_0.77.orig.tar.gz' libfcgi-perl_0.77.orig.tar.gz 90561 SHA256:352cdfe3309d77c2815aa18fe7fbd9b4be68e8b1b26d062039e78f8664aa25a8
+'http://deb.debian.org/debian/pool/main/libf/libfcgi-perl/libfcgi-perl_0.77-1.debian.tar.xz' libfcgi-perl_0.77-1.debian.tar.xz 4524 SHA256:6652bba38d891fc4076c63dc1c35d361578533151fa2c4d026f083d440fcd9fa
 ```
 
 Likely also available for browsing at:
@@ -1497,9 +1497,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libffi=3.1-2
-'http://httpredir.debian.org/debian/pool/main/libf/libffi/libffi_3.1-2.dsc' libffi_3.1-2.dsc 1358 SHA256:6249efd7d44527de06e9e1fba9c7695c069d93b0fa5149f604435792c5a30f6c
-'http://httpredir.debian.org/debian/pool/main/libf/libffi/libffi_3.1.orig.tar.gz' libffi_3.1.orig.tar.gz 937214 SHA256:97feeeadca5e21870fa4433bc953d1b3af3f698d5df8a428f68b73cd60aef6eb
-'http://httpredir.debian.org/debian/pool/main/libf/libffi/libffi_3.1-2.debian.tar.xz' libffi_3.1-2.debian.tar.xz 8408 SHA256:7e7826c1ee6152d31a3e341efc34df923ec903b6caecc2701694dc95f2efd3ab
+'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.1-2.dsc' libffi_3.1-2.dsc 1358 SHA256:6249efd7d44527de06e9e1fba9c7695c069d93b0fa5149f604435792c5a30f6c
+'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.1.orig.tar.gz' libffi_3.1.orig.tar.gz 937214 SHA256:97feeeadca5e21870fa4433bc953d1b3af3f698d5df8a428f68b73cd60aef6eb
+'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.1-2.debian.tar.xz' libffi_3.1-2.debian.tar.xz 8408 SHA256:7e7826c1ee6152d31a3e341efc34df923ec903b6caecc2701694dc95f2efd3ab
 ```
 
 Likely also available for browsing at:
@@ -1522,9 +1522,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libgcrypt20=1.6.3-2+deb8u2
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u2.dsc' libgcrypt20_1.6.3-2+deb8u2.dsc 2583 SHA256:982179928629a477dad47b667ac64708eb791f77241807cafbee2b730c94654d
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3.orig.tar.bz2' libgcrypt20_1.6.3.orig.tar.bz2 2494052 SHA256:41b4917b93ae34c6a0e2127378d7a4d66d805a2a86a09911d4f9bd871db7025f
-'http://httpredir.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u2.debian.tar.xz' libgcrypt20_1.6.3-2+deb8u2.debian.tar.xz 30964 SHA256:49cea0b68a4eb67461909088ffa190bcb13296dfe2da4821f7968dd992ed97a6
+'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u2.dsc' libgcrypt20_1.6.3-2+deb8u2.dsc 2583 SHA256:982179928629a477dad47b667ac64708eb791f77241807cafbee2b730c94654d
+'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3.orig.tar.bz2' libgcrypt20_1.6.3.orig.tar.bz2 2494052 SHA256:41b4917b93ae34c6a0e2127378d7a4d66d805a2a86a09911d4f9bd871db7025f
+'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u2.debian.tar.xz' libgcrypt20_1.6.3-2+deb8u2.debian.tar.xz 30964 SHA256:49cea0b68a4eb67461909088ffa190bcb13296dfe2da4821f7968dd992ed97a6
 ```
 
 Likely also available for browsing at:
@@ -1547,9 +1547,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libgpg-error=1.17-3
-'http://httpredir.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.17-3.dsc' libgpg-error_1.17-3.dsc 2344 SHA256:42d9ff8517b1149b453d947b515cef088b83ac6a6b4fdcbd143570c42e2216c9
-'http://httpredir.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.17.orig.tar.bz2' libgpg-error_1.17.orig.tar.bz2 669914 SHA256:3ff4e5a71116eb862cd14185fcd282850927b8608e3b4186834fd940fbef57b5
-'http://httpredir.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.17-3.debian.tar.xz' libgpg-error_1.17-3.debian.tar.xz 38460 SHA256:3e0af89c65e61ed2b53555eaecd5dc7fa19519490ef447313f441728ae490f29
+'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.17-3.dsc' libgpg-error_1.17-3.dsc 2344 SHA256:42d9ff8517b1149b453d947b515cef088b83ac6a6b4fdcbd143570c42e2216c9
+'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.17.orig.tar.bz2' libgpg-error_1.17.orig.tar.bz2 669914 SHA256:3ff4e5a71116eb862cd14185fcd282850927b8608e3b4186834fd940fbef57b5
+'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.17-3.debian.tar.xz' libgpg-error_1.17-3.debian.tar.xz 38460 SHA256:3e0af89c65e61ed2b53555eaecd5dc7fa19519490ef447313f441728ae490f29
 ```
 
 Likely also available for browsing at:
@@ -1573,9 +1573,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris liblocale-gettext-perl=1.05-8
-'http://httpredir.debian.org/debian/pool/main/libl/liblocale-gettext-perl/liblocale-gettext-perl_1.05-8.dsc' liblocale-gettext-perl_1.05-8.dsc 2114 SHA256:0549ab2b517c1aed9fb12e2fee3ee2eded5efa80758491089f531b3ca10cc4ab
-'http://httpredir.debian.org/debian/pool/main/libl/liblocale-gettext-perl/liblocale-gettext-perl_1.05.orig.tar.gz' liblocale-gettext-perl_1.05.orig.tar.gz 7693 SHA256:27367f3dc1be79c9ed178732756e37e4cfce45f9e2a27ebf26e1f40d80124694
-'http://httpredir.debian.org/debian/pool/main/libl/liblocale-gettext-perl/liblocale-gettext-perl_1.05-8.debian.tar.xz' liblocale-gettext-perl_1.05-8.debian.tar.xz 5472 SHA256:2bd28828012a6289052e1905779f0505d2e09f279d77a79611990ad8d2f27ba1
+'http://deb.debian.org/debian/pool/main/libl/liblocale-gettext-perl/liblocale-gettext-perl_1.05-8.dsc' liblocale-gettext-perl_1.05-8.dsc 2114 SHA256:0549ab2b517c1aed9fb12e2fee3ee2eded5efa80758491089f531b3ca10cc4ab
+'http://deb.debian.org/debian/pool/main/libl/liblocale-gettext-perl/liblocale-gettext-perl_1.05.orig.tar.gz' liblocale-gettext-perl_1.05.orig.tar.gz 7693 SHA256:27367f3dc1be79c9ed178732756e37e4cfce45f9e2a27ebf26e1f40d80124694
+'http://deb.debian.org/debian/pool/main/libl/liblocale-gettext-perl/liblocale-gettext-perl_1.05-8.debian.tar.xz' liblocale-gettext-perl_1.05-8.debian.tar.xz 5472 SHA256:2bd28828012a6289052e1905779f0505d2e09f279d77a79611990ad8d2f27ba1
 ```
 
 Likely also available for browsing at:
@@ -1598,9 +1598,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris liblockfile=1.09-6
-'http://httpredir.debian.org/debian/pool/main/libl/liblockfile/liblockfile_1.09-6.dsc' liblockfile_1.09-6.dsc 1860 SHA256:2c1236efcd9857e9f76e83c91e141d316510fea89d3f9d00a7002a7d57a07c91
-'http://httpredir.debian.org/debian/pool/main/libl/liblockfile/liblockfile_1.09.orig.tar.gz' liblockfile_1.09.orig.tar.gz 32178 SHA256:16979eba05396365e1d6af7100431ae9d32f9bc063930d1de66298a0695f1b7f
-'http://httpredir.debian.org/debian/pool/main/libl/liblockfile/liblockfile_1.09-6.debian.tar.bz2' liblockfile_1.09-6.debian.tar.bz2 8258 SHA256:d45eacb7c637c16d03c777c55989d98da494ae9584a0783fe6dbf0db60fa290f
+'http://deb.debian.org/debian/pool/main/libl/liblockfile/liblockfile_1.09-6.dsc' liblockfile_1.09-6.dsc 1860 SHA256:2c1236efcd9857e9f76e83c91e141d316510fea89d3f9d00a7002a7d57a07c91
+'http://deb.debian.org/debian/pool/main/libl/liblockfile/liblockfile_1.09.orig.tar.gz' liblockfile_1.09.orig.tar.gz 32178 SHA256:16979eba05396365e1d6af7100431ae9d32f9bc063930d1de66298a0695f1b7f
+'http://deb.debian.org/debian/pool/main/libl/liblockfile/liblockfile_1.09-6.debian.tar.bz2' liblockfile_1.09-6.debian.tar.bz2 8258 SHA256:d45eacb7c637c16d03c777c55989d98da494ae9584a0783fe6dbf0db60fa290f
 ```
 
 Likely also available for browsing at:
@@ -1624,9 +1624,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris liblog-message-perl=0.8-1
-'http://httpredir.debian.org/debian/pool/main/libl/liblog-message-perl/liblog-message-perl_0.8-1.dsc' liblog-message-perl_0.8-1.dsc 2064 SHA256:e84a08c91724b0c7efdf7581762b8634bfcd2dbc51378451e78e74e6c8801a62
-'http://httpredir.debian.org/debian/pool/main/libl/liblog-message-perl/liblog-message-perl_0.8.orig.tar.gz' liblog-message-perl_0.8.orig.tar.gz 12507 SHA256:bd697dd62aaf26d118e9f0a0813429deb1c544e4501559879b61fcbdfe99fe46
-'http://httpredir.debian.org/debian/pool/main/libl/liblog-message-perl/liblog-message-perl_0.8-1.debian.tar.gz' liblog-message-perl_0.8-1.debian.tar.gz 1549 SHA256:caa307b5374da54a8c6fc512a355a9bc97a39dc78344ba43d6b7ea060163f8db
+'http://deb.debian.org/debian/pool/main/libl/liblog-message-perl/liblog-message-perl_0.8-1.dsc' liblog-message-perl_0.8-1.dsc 2064 SHA256:e84a08c91724b0c7efdf7581762b8634bfcd2dbc51378451e78e74e6c8801a62
+'http://deb.debian.org/debian/pool/main/libl/liblog-message-perl/liblog-message-perl_0.8.orig.tar.gz' liblog-message-perl_0.8.orig.tar.gz 12507 SHA256:bd697dd62aaf26d118e9f0a0813429deb1c544e4501559879b61fcbdfe99fe46
+'http://deb.debian.org/debian/pool/main/libl/liblog-message-perl/liblog-message-perl_0.8-1.debian.tar.gz' liblog-message-perl_0.8-1.debian.tar.gz 1549 SHA256:caa307b5374da54a8c6fc512a355a9bc97a39dc78344ba43d6b7ea060163f8db
 ```
 
 Likely also available for browsing at:
@@ -1650,9 +1650,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris liblog-message-simple-perl=0.10-2
-'http://httpredir.debian.org/debian/pool/main/libl/liblog-message-simple-perl/liblog-message-simple-perl_0.10-2.dsc' liblog-message-simple-perl_0.10-2.dsc 2269 SHA256:3272f02527fc6121eacb75ae2d54f1e17db90b375645e8b723de253337a1e484
-'http://httpredir.debian.org/debian/pool/main/libl/liblog-message-simple-perl/liblog-message-simple-perl_0.10.orig.tar.gz' liblog-message-simple-perl_0.10.orig.tar.gz 5717 SHA256:aa12d1a4c0ac260b94d448fa01feba242a8a85cb6cbfdc66432e3b5b468add96
-'http://httpredir.debian.org/debian/pool/main/libl/liblog-message-simple-perl/liblog-message-simple-perl_0.10-2.debian.tar.xz' liblog-message-simple-perl_0.10-2.debian.tar.xz 1504 SHA256:16afbbb5287c234afa1badcac71b66173fd80f7cf9ffded4d191dc4bcc9c5faa
+'http://deb.debian.org/debian/pool/main/libl/liblog-message-simple-perl/liblog-message-simple-perl_0.10-2.dsc' liblog-message-simple-perl_0.10-2.dsc 2269 SHA256:3272f02527fc6121eacb75ae2d54f1e17db90b375645e8b723de253337a1e484
+'http://deb.debian.org/debian/pool/main/libl/liblog-message-simple-perl/liblog-message-simple-perl_0.10.orig.tar.gz' liblog-message-simple-perl_0.10.orig.tar.gz 5717 SHA256:aa12d1a4c0ac260b94d448fa01feba242a8a85cb6cbfdc66432e3b5b468add96
+'http://deb.debian.org/debian/pool/main/libl/liblog-message-simple-perl/liblog-message-simple-perl_0.10-2.debian.tar.xz' liblog-message-simple-perl_0.10-2.debian.tar.xz 1504 SHA256:16afbbb5287c234afa1badcac71b66173fd80f7cf9ffded4d191dc4bcc9c5faa
 ```
 
 Likely also available for browsing at:
@@ -1677,9 +1677,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libmodule-build-perl=0.421000-2+deb8u1
-'http://httpredir.debian.org/debian/pool/main/libm/libmodule-build-perl/libmodule-build-perl_0.421000-2+deb8u1.dsc' libmodule-build-perl_0.421000-2+deb8u1.dsc 2686 SHA256:89a30cd9ab9efdf1a8162f1d466cc41d90378f099b58efae793e2019ff314822
-'http://httpredir.debian.org/debian/pool/main/libm/libmodule-build-perl/libmodule-build-perl_0.421000.orig.tar.gz' libmodule-build-perl_0.421000.orig.tar.gz 308569 SHA256:592471e27800180044016011ae580f4be308c15635162795269b472cfe991fb5
-'http://httpredir.debian.org/debian/pool/main/libm/libmodule-build-perl/libmodule-build-perl_0.421000-2+deb8u1.debian.tar.xz' libmodule-build-perl_0.421000-2+deb8u1.debian.tar.xz 11388 SHA256:23683624c12b2d2e802dd7dade4f55af4134da4dd38caef7694b3466f8c6adc4
+'http://deb.debian.org/debian/pool/main/libm/libmodule-build-perl/libmodule-build-perl_0.421000-2+deb8u1.dsc' libmodule-build-perl_0.421000-2+deb8u1.dsc 2686 SHA256:89a30cd9ab9efdf1a8162f1d466cc41d90378f099b58efae793e2019ff314822
+'http://deb.debian.org/debian/pool/main/libm/libmodule-build-perl/libmodule-build-perl_0.421000.orig.tar.gz' libmodule-build-perl_0.421000.orig.tar.gz 308569 SHA256:592471e27800180044016011ae580f4be308c15635162795269b472cfe991fb5
+'http://deb.debian.org/debian/pool/main/libm/libmodule-build-perl/libmodule-build-perl_0.421000-2+deb8u1.debian.tar.xz' libmodule-build-perl_0.421000-2+deb8u1.debian.tar.xz 11388 SHA256:23683624c12b2d2e802dd7dade4f55af4134da4dd38caef7694b3466f8c6adc4
 ```
 
 Likely also available for browsing at:
@@ -1703,9 +1703,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libmodule-pluggable-perl=5.1-1
-'http://httpredir.debian.org/debian/pool/main/libm/libmodule-pluggable-perl/libmodule-pluggable-perl_5.1-1.dsc' libmodule-pluggable-perl_5.1-1.dsc 2186 SHA256:c85da4b7e21a95f92d9bbf25f9c382698d25536edb7f3d30e7025e01e9cd91a6
-'http://httpredir.debian.org/debian/pool/main/libm/libmodule-pluggable-perl/libmodule-pluggable-perl_5.1.orig.tar.gz' libmodule-pluggable-perl_5.1.orig.tar.gz 29418 SHA256:e2dc354043bb16f1f3df8c4bb26070b26e594819f218cf8b8ac19e79c720916f
-'http://httpredir.debian.org/debian/pool/main/libm/libmodule-pluggable-perl/libmodule-pluggable-perl_5.1-1.debian.tar.gz' libmodule-pluggable-perl_5.1-1.debian.tar.gz 1699 SHA256:4e3c2b6a7b934598a6d73cfa0ca2f35f21651ba30201a0461ca3da43dd8fb5d0
+'http://deb.debian.org/debian/pool/main/libm/libmodule-pluggable-perl/libmodule-pluggable-perl_5.1-1.dsc' libmodule-pluggable-perl_5.1-1.dsc 2186 SHA256:c85da4b7e21a95f92d9bbf25f9c382698d25536edb7f3d30e7025e01e9cd91a6
+'http://deb.debian.org/debian/pool/main/libm/libmodule-pluggable-perl/libmodule-pluggable-perl_5.1.orig.tar.gz' libmodule-pluggable-perl_5.1.orig.tar.gz 29418 SHA256:e2dc354043bb16f1f3df8c4bb26070b26e594819f218cf8b8ac19e79c720916f
+'http://deb.debian.org/debian/pool/main/libm/libmodule-pluggable-perl/libmodule-pluggable-perl_5.1-1.debian.tar.gz' libmodule-pluggable-perl_5.1-1.debian.tar.gz 1699 SHA256:4e3c2b6a7b934598a6d73cfa0ca2f35f21651ba30201a0461ca3da43dd8fb5d0
 ```
 
 Likely also available for browsing at:
@@ -1730,9 +1730,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libmodule-signature-perl=0.73-1+deb8u2
-'http://httpredir.debian.org/debian/pool/main/libm/libmodule-signature-perl/libmodule-signature-perl_0.73-1+deb8u2.dsc' libmodule-signature-perl_0.73-1+deb8u2.dsc 2267 SHA256:821869e1fd4bf9750492f91c2681453c3a05d759a4d899c3a346105e926bf8f6
-'http://httpredir.debian.org/debian/pool/main/libm/libmodule-signature-perl/libmodule-signature-perl_0.73.orig.tar.gz' libmodule-signature-perl_0.73.orig.tar.gz 77407 SHA256:718520721888ac4a7d930e26c4cd628ca24d60b2b18bddb081b331731a94bbc5
-'http://httpredir.debian.org/debian/pool/main/libm/libmodule-signature-perl/libmodule-signature-perl_0.73-1+deb8u2.debian.tar.xz' libmodule-signature-perl_0.73-1+deb8u2.debian.tar.xz 9760 SHA256:41fca286bee81808b223cec4ee737b9571fe8d4398d05efafade88fa1cfd4355
+'http://deb.debian.org/debian/pool/main/libm/libmodule-signature-perl/libmodule-signature-perl_0.73-1+deb8u2.dsc' libmodule-signature-perl_0.73-1+deb8u2.dsc 2267 SHA256:821869e1fd4bf9750492f91c2681453c3a05d759a4d899c3a346105e926bf8f6
+'http://deb.debian.org/debian/pool/main/libm/libmodule-signature-perl/libmodule-signature-perl_0.73.orig.tar.gz' libmodule-signature-perl_0.73.orig.tar.gz 77407 SHA256:718520721888ac4a7d930e26c4cd628ca24d60b2b18bddb081b331731a94bbc5
+'http://deb.debian.org/debian/pool/main/libm/libmodule-signature-perl/libmodule-signature-perl_0.73-1+deb8u2.debian.tar.xz' libmodule-signature-perl_0.73-1+deb8u2.debian.tar.xz 9760 SHA256:41fca286bee81808b223cec4ee737b9571fe8d4398d05efafade88fa1cfd4355
 ```
 
 Likely also available for browsing at:
@@ -1756,9 +1756,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libmro-compat-perl=0.12-1
-'http://httpredir.debian.org/debian/pool/main/libm/libmro-compat-perl/libmro-compat-perl_0.12-1.dsc' libmro-compat-perl_0.12-1.dsc 2302 SHA256:e40f6ca2735397fd29ae9a021f5ed00be02db54ca232f4db079b8d390456bfb9
-'http://httpredir.debian.org/debian/pool/main/libm/libmro-compat-perl/libmro-compat-perl_0.12.orig.tar.gz' libmro-compat-perl_0.12.orig.tar.gz 24230 SHA256:bba5b93869aa537a3389949669d682f047d3014d53bc3a2d7209c6819e5015d6
-'http://httpredir.debian.org/debian/pool/main/libm/libmro-compat-perl/libmro-compat-perl_0.12-1.debian.tar.gz' libmro-compat-perl_0.12-1.debian.tar.gz 2929 SHA256:3e147d92a8574e98058e1ef86ac85b595b5e10a21f1cf6f30d73ba245f7fb16d
+'http://deb.debian.org/debian/pool/main/libm/libmro-compat-perl/libmro-compat-perl_0.12-1.dsc' libmro-compat-perl_0.12-1.dsc 2302 SHA256:e40f6ca2735397fd29ae9a021f5ed00be02db54ca232f4db079b8d390456bfb9
+'http://deb.debian.org/debian/pool/main/libm/libmro-compat-perl/libmro-compat-perl_0.12.orig.tar.gz' libmro-compat-perl_0.12.orig.tar.gz 24230 SHA256:bba5b93869aa537a3389949669d682f047d3014d53bc3a2d7209c6819e5015d6
+'http://deb.debian.org/debian/pool/main/libm/libmro-compat-perl/libmro-compat-perl_0.12-1.debian.tar.gz' libmro-compat-perl_0.12-1.debian.tar.gz 2929 SHA256:3e147d92a8574e98058e1ef86ac85b595b5e10a21f1cf6f30d73ba245f7fb16d
 ```
 
 Likely also available for browsing at:
@@ -1782,9 +1782,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libpackage-constants-perl=0.04-1
-'http://httpredir.debian.org/debian/pool/main/libp/libpackage-constants-perl/libpackage-constants-perl_0.04-1.dsc' libpackage-constants-perl_0.04-1.dsc 2133 SHA256:12d7825b31de077ef5f99e97c99d89d40bc66eb89daf323b5c2a4f8f14c4b8c9
-'http://httpredir.debian.org/debian/pool/main/libp/libpackage-constants-perl/libpackage-constants-perl_0.04.orig.tar.gz' libpackage-constants-perl_0.04.orig.tar.gz 3582 SHA256:7e09a88da2c0df24f498eb3a133f7d979404a7bc853f21afa2ba68dfd859a880
-'http://httpredir.debian.org/debian/pool/main/libp/libpackage-constants-perl/libpackage-constants-perl_0.04-1.debian.tar.xz' libpackage-constants-perl_0.04-1.debian.tar.xz 1400 SHA256:a0d2581c0b70bec48c9b695af73c742dc00aa9c86104a386c57962eea65dd644
+'http://deb.debian.org/debian/pool/main/libp/libpackage-constants-perl/libpackage-constants-perl_0.04-1.dsc' libpackage-constants-perl_0.04-1.dsc 2133 SHA256:12d7825b31de077ef5f99e97c99d89d40bc66eb89daf323b5c2a4f8f14c4b8c9
+'http://deb.debian.org/debian/pool/main/libp/libpackage-constants-perl/libpackage-constants-perl_0.04.orig.tar.gz' libpackage-constants-perl_0.04.orig.tar.gz 3582 SHA256:7e09a88da2c0df24f498eb3a133f7d979404a7bc853f21afa2ba68dfd859a880
+'http://deb.debian.org/debian/pool/main/libp/libpackage-constants-perl/libpackage-constants-perl_0.04-1.debian.tar.xz' libpackage-constants-perl_0.04-1.debian.tar.xz 1400 SHA256:a0d2581c0b70bec48c9b695af73c742dc00aa9c86104a386c57962eea65dd644
 ```
 
 Likely also available for browsing at:
@@ -1808,9 +1808,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libparams-util-perl=1.07-2
-'http://httpredir.debian.org/debian/pool/main/libp/libparams-util-perl/libparams-util-perl_1.07-2.dsc' libparams-util-perl_1.07-2.dsc 2212 SHA256:4e4c9c593507782ede448174cd9150d24a562b3928f69c071de7ce394abed1b8
-'http://httpredir.debian.org/debian/pool/main/libp/libparams-util-perl/libparams-util-perl_1.07.orig.tar.gz' libparams-util-perl_1.07.orig.tar.gz 40726 SHA256:30f1ec3f2cf9ff66ae96f973333f23c5f558915bb6266881eac7423f52d7c76c
-'http://httpredir.debian.org/debian/pool/main/libp/libparams-util-perl/libparams-util-perl_1.07-2.debian.tar.xz' libparams-util-perl_1.07-2.debian.tar.xz 2096 SHA256:13b78b35e927df65acf2dfd9264514cee4f096a79ee9535b72d294e85b85f62b
+'http://deb.debian.org/debian/pool/main/libp/libparams-util-perl/libparams-util-perl_1.07-2.dsc' libparams-util-perl_1.07-2.dsc 2212 SHA256:4e4c9c593507782ede448174cd9150d24a562b3928f69c071de7ce394abed1b8
+'http://deb.debian.org/debian/pool/main/libp/libparams-util-perl/libparams-util-perl_1.07.orig.tar.gz' libparams-util-perl_1.07.orig.tar.gz 40726 SHA256:30f1ec3f2cf9ff66ae96f973333f23c5f558915bb6266881eac7423f52d7c76c
+'http://deb.debian.org/debian/pool/main/libp/libparams-util-perl/libparams-util-perl_1.07-2.debian.tar.xz' libparams-util-perl_1.07-2.debian.tar.xz 2096 SHA256:13b78b35e927df65acf2dfd9264514cee4f096a79ee9535b72d294e85b85f62b
 ```
 
 Likely also available for browsing at:
@@ -1834,9 +1834,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libpod-latex-perl=0.61-1
-'http://httpredir.debian.org/debian/pool/main/libp/libpod-latex-perl/libpod-latex-perl_0.61-1.dsc' libpod-latex-perl_0.61-1.dsc 2102 SHA256:a2be8be9a67928e3db5808d744792506b1eb9970b2c48ecf4b7ad5f13e1c3761
-'http://httpredir.debian.org/debian/pool/main/libp/libpod-latex-perl/libpod-latex-perl_0.61.orig.tar.gz' libpod-latex-perl_0.61.orig.tar.gz 32618 SHA256:15a840ea1c8a76cd3c865fbbf2fec33b03615c0daa50f9c800c54e0cf0659d46
-'http://httpredir.debian.org/debian/pool/main/libp/libpod-latex-perl/libpod-latex-perl_0.61-1.debian.tar.gz' libpod-latex-perl_0.61-1.debian.tar.gz 1733 SHA256:df7afa5f5bfc0c54a72a4641ae915e5c13106a741535f4028555921f01ca42b3
+'http://deb.debian.org/debian/pool/main/libp/libpod-latex-perl/libpod-latex-perl_0.61-1.dsc' libpod-latex-perl_0.61-1.dsc 2102 SHA256:a2be8be9a67928e3db5808d744792506b1eb9970b2c48ecf4b7ad5f13e1c3761
+'http://deb.debian.org/debian/pool/main/libp/libpod-latex-perl/libpod-latex-perl_0.61.orig.tar.gz' libpod-latex-perl_0.61.orig.tar.gz 32618 SHA256:15a840ea1c8a76cd3c865fbbf2fec33b03615c0daa50f9c800c54e0cf0659d46
+'http://deb.debian.org/debian/pool/main/libp/libpod-latex-perl/libpod-latex-perl_0.61-1.debian.tar.gz' libpod-latex-perl_0.61-1.debian.tar.gz 1733 SHA256:df7afa5f5bfc0c54a72a4641ae915e5c13106a741535f4028555921f01ca42b3
 ```
 
 Likely also available for browsing at:
@@ -1860,9 +1860,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libpod-readme-perl=0.11-1
-'http://httpredir.debian.org/debian/pool/main/libp/libpod-readme-perl/libpod-readme-perl_0.11-1.dsc' libpod-readme-perl_0.11-1.dsc 2039 SHA256:071efd11dae7266d099aeff3a396ea35f71225fcb080a8231be0b81c32d66d5d
-'http://httpredir.debian.org/debian/pool/main/libp/libpod-readme-perl/libpod-readme-perl_0.11.orig.tar.gz' libpod-readme-perl_0.11.orig.tar.gz 8022 SHA256:0d747b6ec2fda18c58ca8855f9923f8aad035e0ca7712153e1765f78dbb41ae9
-'http://httpredir.debian.org/debian/pool/main/libp/libpod-readme-perl/libpod-readme-perl_0.11-1.debian.tar.gz' libpod-readme-perl_0.11-1.debian.tar.gz 2292 SHA256:cf8bf9fa20ed08483827e0199a9e7f4f3d0fe34994077b685c48d5c688db06d0
+'http://deb.debian.org/debian/pool/main/libp/libpod-readme-perl/libpod-readme-perl_0.11-1.dsc' libpod-readme-perl_0.11-1.dsc 2039 SHA256:071efd11dae7266d099aeff3a396ea35f71225fcb080a8231be0b81c32d66d5d
+'http://deb.debian.org/debian/pool/main/libp/libpod-readme-perl/libpod-readme-perl_0.11.orig.tar.gz' libpod-readme-perl_0.11.orig.tar.gz 8022 SHA256:0d747b6ec2fda18c58ca8855f9923f8aad035e0ca7712153e1765f78dbb41ae9
+'http://deb.debian.org/debian/pool/main/libp/libpod-readme-perl/libpod-readme-perl_0.11-1.debian.tar.gz' libpod-readme-perl_0.11-1.debian.tar.gz 2292 SHA256:cf8bf9fa20ed08483827e0199a9e7f4f3d0fe34994077b685c48d5c688db06d0
 ```
 
 Likely also available for browsing at:
@@ -1889,9 +1889,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libregexp-common-perl=2013031301-1
-'http://httpredir.debian.org/debian/pool/main/libr/libregexp-common-perl/libregexp-common-perl_2013031301-1.dsc' libregexp-common-perl_2013031301-1.dsc 2305 SHA256:11c548d2cc82ca7c51d225ea5e2430147b01c5cdc4fc376ed38d2909d5b9a56a
-'http://httpredir.debian.org/debian/pool/main/libr/libregexp-common-perl/libregexp-common-perl_2013031301.orig.tar.gz' libregexp-common-perl_2013031301.orig.tar.gz 115724 SHA256:729a8198d264aa64ecbb233ff990507f97fbb66bda746b95f3286f50f5f25c84
-'http://httpredir.debian.org/debian/pool/main/libr/libregexp-common-perl/libregexp-common-perl_2013031301-1.debian.tar.gz' libregexp-common-perl_2013031301-1.debian.tar.gz 8160 SHA256:457d1bf327badedd3ff9c01d3915e805f5879ed4c4b7cc67f0d22debf53aba4f
+'http://deb.debian.org/debian/pool/main/libr/libregexp-common-perl/libregexp-common-perl_2013031301-1.dsc' libregexp-common-perl_2013031301-1.dsc 2305 SHA256:11c548d2cc82ca7c51d225ea5e2430147b01c5cdc4fc376ed38d2909d5b9a56a
+'http://deb.debian.org/debian/pool/main/libr/libregexp-common-perl/libregexp-common-perl_2013031301.orig.tar.gz' libregexp-common-perl_2013031301.orig.tar.gz 115724 SHA256:729a8198d264aa64ecbb233ff990507f97fbb66bda746b95f3286f50f5f25c84
+'http://deb.debian.org/debian/pool/main/libr/libregexp-common-perl/libregexp-common-perl_2013031301-1.debian.tar.gz' libregexp-common-perl_2013031301-1.debian.tar.gz 8160 SHA256:457d1bf327badedd3ff9c01d3915e805f5879ed4c4b7cc67f0d22debf53aba4f
 ```
 
 Likely also available for browsing at:
@@ -1914,9 +1914,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libselinux=2.3-2
-'http://httpredir.debian.org/debian/pool/main/libs/libselinux/libselinux_2.3-2.dsc' libselinux_2.3-2.dsc 2024 SHA256:aea0e0502dd1d4df17be644efb0bfe2d38e32ba2e0769eaaf8a2b64a0eb99786
-'http://httpredir.debian.org/debian/pool/main/libs/libselinux/libselinux_2.3.orig.tar.gz' libselinux_2.3.orig.tar.gz 171254 SHA256:0b1e0b43ecd84a812713d09564019b08e7c205d89072b5cbcd07b052cd8e77b2
-'http://httpredir.debian.org/debian/pool/main/libs/libselinux/libselinux_2.3-2.debian.tar.xz' libselinux_2.3-2.debian.tar.xz 24384 SHA256:8ec4bdb5acc066d1b369877e9a94ec1a723e4d31691753e0e1861d0884b3fd1a
+'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_2.3-2.dsc' libselinux_2.3-2.dsc 2024 SHA256:aea0e0502dd1d4df17be644efb0bfe2d38e32ba2e0769eaaf8a2b64a0eb99786
+'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_2.3.orig.tar.gz' libselinux_2.3.orig.tar.gz 171254 SHA256:0b1e0b43ecd84a812713d09564019b08e7c205d89072b5cbcd07b052cd8e77b2
+'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_2.3-2.debian.tar.xz' libselinux_2.3-2.debian.tar.xz 24384 SHA256:8ec4bdb5acc066d1b369877e9a94ec1a723e4d31691753e0e1861d0884b3fd1a
 ```
 
 Likely also available for browsing at:
@@ -1940,9 +1940,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libsemanage=2.3-1
-'http://httpredir.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.3-1.dsc' libsemanage_2.3-1.dsc 2131 SHA256:21b321c61399deeb3d1b04b76a0c9f43e968371f3afc8a8eb859e3cc79f295aa
-'http://httpredir.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.3.orig.tar.gz' libsemanage_2.3.orig.tar.gz 138231 SHA256:03e09e35e611c286e446bef92b6023ef2623815996f5a53394bb02e49a312e4b
-'http://httpredir.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.3-1.debian.tar.xz' libsemanage_2.3-1.debian.tar.xz 14848 SHA256:e6e8002ae5084daf6628ac836e4724005dd7591f9a015203bb55e445508e55e6
+'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.3-1.dsc' libsemanage_2.3-1.dsc 2131 SHA256:21b321c61399deeb3d1b04b76a0c9f43e968371f3afc8a8eb859e3cc79f295aa
+'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.3.orig.tar.gz' libsemanage_2.3.orig.tar.gz 138231 SHA256:03e09e35e611c286e446bef92b6023ef2623815996f5a53394bb02e49a312e4b
+'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.3-1.debian.tar.xz' libsemanage_2.3-1.debian.tar.xz 14848 SHA256:e6e8002ae5084daf6628ac836e4724005dd7591f9a015203bb55e445508e55e6
 ```
 
 Likely also available for browsing at:
@@ -1965,9 +1965,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libsepol=2.3-2
-'http://httpredir.debian.org/debian/pool/main/libs/libsepol/libsepol_2.3-2.dsc' libsepol_2.3-2.dsc 1762 SHA256:115ab27d7662fc03e64d9e70ed20b5dcb2adb6206155ba2577072352a5b79b6a
-'http://httpredir.debian.org/debian/pool/main/libs/libsepol/libsepol_2.3.orig.tar.gz' libsepol_2.3.orig.tar.gz 209570 SHA256:cc8d8642c3b7b95d6928d65dcbca2ab0627abc1c05166637851e63c1a6eae68f
-'http://httpredir.debian.org/debian/pool/main/libs/libsepol/libsepol_2.3-2.debian.tar.xz' libsepol_2.3-2.debian.tar.xz 12904 SHA256:4fea6f6de03cf6a8ba80579988ad56202d3652fe3153b0d2f8c65c89bba097a5
+'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_2.3-2.dsc' libsepol_2.3-2.dsc 1762 SHA256:115ab27d7662fc03e64d9e70ed20b5dcb2adb6206155ba2577072352a5b79b6a
+'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_2.3.orig.tar.gz' libsepol_2.3.orig.tar.gz 209570 SHA256:cc8d8642c3b7b95d6928d65dcbca2ab0627abc1c05166637851e63c1a6eae68f
+'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_2.3-2.debian.tar.xz' libsepol_2.3-2.debian.tar.xz 12904 SHA256:4fea6f6de03cf6a8ba80579988ad56202d3652fe3153b0d2f8c65c89bba097a5
 ```
 
 Likely also available for browsing at:
@@ -1991,9 +1991,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libsoftware-license-perl=0.103010-3
-'http://httpredir.debian.org/debian/pool/main/libs/libsoftware-license-perl/libsoftware-license-perl_0.103010-3.dsc' libsoftware-license-perl_0.103010-3.dsc 2533 SHA256:eccb6ad74509580ecbe5e75c812d1188106d9104487aef6e0e2653d293f94bde
-'http://httpredir.debian.org/debian/pool/main/libs/libsoftware-license-perl/libsoftware-license-perl_0.103010.orig.tar.gz' libsoftware-license-perl_0.103010.orig.tar.gz 108794 SHA256:929fbace96f69a0977a0380000820c93fc1af4e973a422c73e6cd254405fa47c
-'http://httpredir.debian.org/debian/pool/main/libs/libsoftware-license-perl/libsoftware-license-perl_0.103010-3.debian.tar.xz' libsoftware-license-perl_0.103010-3.debian.tar.xz 15536 SHA256:b61cd460f2d643664f8c2eb5399ee82c28eba3289b98e343f957d57225e8aeba
+'http://deb.debian.org/debian/pool/main/libs/libsoftware-license-perl/libsoftware-license-perl_0.103010-3.dsc' libsoftware-license-perl_0.103010-3.dsc 2533 SHA256:eccb6ad74509580ecbe5e75c812d1188106d9104487aef6e0e2653d293f94bde
+'http://deb.debian.org/debian/pool/main/libs/libsoftware-license-perl/libsoftware-license-perl_0.103010.orig.tar.gz' libsoftware-license-perl_0.103010.orig.tar.gz 108794 SHA256:929fbace96f69a0977a0380000820c93fc1af4e973a422c73e6cd254405fa47c
+'http://deb.debian.org/debian/pool/main/libs/libsoftware-license-perl/libsoftware-license-perl_0.103010-3.debian.tar.xz' libsoftware-license-perl_0.103010-3.debian.tar.xz 15536 SHA256:b61cd460f2d643664f8c2eb5399ee82c28eba3289b98e343f957d57225e8aeba
 ```
 
 Likely also available for browsing at:
@@ -2017,9 +2017,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libsub-exporter-perl=0.986-1
-'http://httpredir.debian.org/debian/pool/main/libs/libsub-exporter-perl/libsub-exporter-perl_0.986-1.dsc' libsub-exporter-perl_0.986-1.dsc 2251 SHA256:4bbed3b86e5e74c8d7ea164b57e6c70ff555d43e0d82a05b3226ec292a2d5465
-'http://httpredir.debian.org/debian/pool/main/libs/libsub-exporter-perl/libsub-exporter-perl_0.986.orig.tar.gz' libsub-exporter-perl_0.986.orig.tar.gz 45295 SHA256:a7456c3216552a40f66426764d8c81815dc80bc53e3fdf67bf9234e7830b9661
-'http://httpredir.debian.org/debian/pool/main/libs/libsub-exporter-perl/libsub-exporter-perl_0.986-1.debian.tar.gz' libsub-exporter-perl_0.986-1.debian.tar.gz 3311 SHA256:e8660681a00b55083dbba7c1ee012ef70f0230376531d51905454243027fa54a
+'http://deb.debian.org/debian/pool/main/libs/libsub-exporter-perl/libsub-exporter-perl_0.986-1.dsc' libsub-exporter-perl_0.986-1.dsc 2251 SHA256:4bbed3b86e5e74c8d7ea164b57e6c70ff555d43e0d82a05b3226ec292a2d5465
+'http://deb.debian.org/debian/pool/main/libs/libsub-exporter-perl/libsub-exporter-perl_0.986.orig.tar.gz' libsub-exporter-perl_0.986.orig.tar.gz 45295 SHA256:a7456c3216552a40f66426764d8c81815dc80bc53e3fdf67bf9234e7830b9661
+'http://deb.debian.org/debian/pool/main/libs/libsub-exporter-perl/libsub-exporter-perl_0.986-1.debian.tar.gz' libsub-exporter-perl_0.986-1.debian.tar.gz 3311 SHA256:e8660681a00b55083dbba7c1ee012ef70f0230376531d51905454243027fa54a
 ```
 
 Likely also available for browsing at:
@@ -2043,9 +2043,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libsub-install-perl=0.928-1
-'http://httpredir.debian.org/debian/pool/main/libs/libsub-install-perl/libsub-install-perl_0.928-1.dsc' libsub-install-perl_0.928-1.dsc 2334 SHA256:70a2db2db106e926476f689c544f3a6cfeea0e32690566860f7300e20a7c8080
-'http://httpredir.debian.org/debian/pool/main/libs/libsub-install-perl/libsub-install-perl_0.928.orig.tar.gz' libsub-install-perl_0.928.orig.tar.gz 18669 SHA256:61e567a7679588887b7b86d427bc476ea6d77fffe7e0d17d640f89007d98ef0f
-'http://httpredir.debian.org/debian/pool/main/libs/libsub-install-perl/libsub-install-perl_0.928-1.debian.tar.xz' libsub-install-perl_0.928-1.debian.tar.xz 2772 SHA256:5fa2f240464bd682bdc447e99a559327f585d00c1a019790b70fe28bd6c0eac2
+'http://deb.debian.org/debian/pool/main/libs/libsub-install-perl/libsub-install-perl_0.928-1.dsc' libsub-install-perl_0.928-1.dsc 2334 SHA256:70a2db2db106e926476f689c544f3a6cfeea0e32690566860f7300e20a7c8080
+'http://deb.debian.org/debian/pool/main/libs/libsub-install-perl/libsub-install-perl_0.928.orig.tar.gz' libsub-install-perl_0.928.orig.tar.gz 18669 SHA256:61e567a7679588887b7b86d427bc476ea6d77fffe7e0d17d640f89007d98ef0f
+'http://deb.debian.org/debian/pool/main/libs/libsub-install-perl/libsub-install-perl_0.928-1.debian.tar.xz' libsub-install-perl_0.928-1.debian.tar.xz 2772 SHA256:5fa2f240464bd682bdc447e99a559327f585d00c1a019790b70fe28bd6c0eac2
 ```
 
 Likely also available for browsing at:
@@ -2070,9 +2070,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libtasn1-6=4.2-3+deb8u2
-'http://httpredir.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.2-3+deb8u2.dsc' libtasn1-6_4.2-3+deb8u2.dsc 2434 SHA256:b22337782c8f2edf9adf6e42c37808f116ad4cfab2b81c1e30a6fddb8aa0acf2
-'http://httpredir.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.2.orig.tar.gz' libtasn1-6_4.2.orig.tar.gz 1866192 SHA256:693b41cb36c2ac02d5990180b0712a79a591168e93d85f7fcbb75a0a0be4cdbb
-'http://httpredir.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.2-3+deb8u2.debian.tar.xz' libtasn1-6_4.2-3+deb8u2.debian.tar.xz 58556 SHA256:0f7587e82f702eb757c2ad842f4511ff1619b286bd2ccc3d61fa8bb490b839d1
+'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.2-3+deb8u2.dsc' libtasn1-6_4.2-3+deb8u2.dsc 2434 SHA256:b22337782c8f2edf9adf6e42c37808f116ad4cfab2b81c1e30a6fddb8aa0acf2
+'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.2.orig.tar.gz' libtasn1-6_4.2.orig.tar.gz 1866192 SHA256:693b41cb36c2ac02d5990180b0712a79a591168e93d85f7fcbb75a0a0be4cdbb
+'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.2-3+deb8u2.debian.tar.xz' libtasn1-6_4.2-3+deb8u2.debian.tar.xz 58556 SHA256:0f7587e82f702eb757c2ad842f4511ff1619b286bd2ccc3d61fa8bb490b839d1
 ```
 
 Likely also available for browsing at:
@@ -2096,9 +2096,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libterm-ui-perl=0.42-1
-'http://httpredir.debian.org/debian/pool/main/libt/libterm-ui-perl/libterm-ui-perl_0.42-1.dsc' libterm-ui-perl_0.42-1.dsc 2068 SHA256:50d0e629750be73ccf424c1ea05e3beb2f61268961fe54e1de322deb581429ad
-'http://httpredir.debian.org/debian/pool/main/libt/libterm-ui-perl/libterm-ui-perl_0.42.orig.tar.gz' libterm-ui-perl_0.42.orig.tar.gz 12276 SHA256:380d1ad5c56a9375182eb3051fd3f350137ceac1517a95ffecb8107c1d4fb7ea
-'http://httpredir.debian.org/debian/pool/main/libt/libterm-ui-perl/libterm-ui-perl_0.42-1.debian.tar.gz' libterm-ui-perl_0.42-1.debian.tar.gz 1744 SHA256:43803d1531609ba7008ff4f6b553bfad63c0ff28628abaaa11cf73b450ef8329
+'http://deb.debian.org/debian/pool/main/libt/libterm-ui-perl/libterm-ui-perl_0.42-1.dsc' libterm-ui-perl_0.42-1.dsc 2068 SHA256:50d0e629750be73ccf424c1ea05e3beb2f61268961fe54e1de322deb581429ad
+'http://deb.debian.org/debian/pool/main/libt/libterm-ui-perl/libterm-ui-perl_0.42.orig.tar.gz' libterm-ui-perl_0.42.orig.tar.gz 12276 SHA256:380d1ad5c56a9375182eb3051fd3f350137ceac1517a95ffecb8107c1d4fb7ea
+'http://deb.debian.org/debian/pool/main/libt/libterm-ui-perl/libterm-ui-perl_0.42-1.debian.tar.gz' libterm-ui-perl_0.42-1.debian.tar.gz 1744 SHA256:43803d1531609ba7008ff4f6b553bfad63c0ff28628abaaa11cf73b450ef8329
 ```
 
 Likely also available for browsing at:
@@ -2121,9 +2121,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libtext-charwidth-perl=0.04-7
-'http://httpredir.debian.org/debian/pool/main/libt/libtext-charwidth-perl/libtext-charwidth-perl_0.04-7.dsc' libtext-charwidth-perl_0.04-7.dsc 1810 SHA256:482493991d54786bc12b38f26b90d2bbc9234ac87c3e54e0474ac00cd979dd68
-'http://httpredir.debian.org/debian/pool/main/libt/libtext-charwidth-perl/libtext-charwidth-perl_0.04.orig.tar.bz2' libtext-charwidth-perl_0.04.orig.tar.bz2 8327 SHA256:2990c13c3f4a5479d7dbc5a94b86c23798cf0dc7df54ffe54e065f072558b6ed
-'http://httpredir.debian.org/debian/pool/main/libt/libtext-charwidth-perl/libtext-charwidth-perl_0.04-7.debian.tar.bz2' libtext-charwidth-perl_0.04-7.debian.tar.bz2 3220 SHA256:4aa60af66136cad15d3c9ed73696b822c9f944a3b8484b03c388393302fa6038
+'http://deb.debian.org/debian/pool/main/libt/libtext-charwidth-perl/libtext-charwidth-perl_0.04-7.dsc' libtext-charwidth-perl_0.04-7.dsc 1810 SHA256:482493991d54786bc12b38f26b90d2bbc9234ac87c3e54e0474ac00cd979dd68
+'http://deb.debian.org/debian/pool/main/libt/libtext-charwidth-perl/libtext-charwidth-perl_0.04.orig.tar.bz2' libtext-charwidth-perl_0.04.orig.tar.bz2 8327 SHA256:2990c13c3f4a5479d7dbc5a94b86c23798cf0dc7df54ffe54e065f072558b6ed
+'http://deb.debian.org/debian/pool/main/libt/libtext-charwidth-perl/libtext-charwidth-perl_0.04-7.debian.tar.bz2' libtext-charwidth-perl_0.04-7.debian.tar.bz2 3220 SHA256:4aa60af66136cad15d3c9ed73696b822c9f944a3b8484b03c388393302fa6038
 ```
 
 Likely also available for browsing at:
@@ -2146,9 +2146,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libtext-iconv-perl=1.7-5
-'http://httpredir.debian.org/debian/pool/main/libt/libtext-iconv-perl/libtext-iconv-perl_1.7-5.dsc' libtext-iconv-perl_1.7-5.dsc 1828 SHA256:6f049f3ed556a9c429f00c88a28ce595446f26996f2f5173e02f51f51277749d
-'http://httpredir.debian.org/debian/pool/main/libt/libtext-iconv-perl/libtext-iconv-perl_1.7.orig.tar.bz2' libtext-iconv-perl_1.7.orig.tar.bz2 9977 SHA256:815c5169b7afc40bc6f681b4c615ff8fb0e073d87422280c8c759a4666567490
-'http://httpredir.debian.org/debian/pool/main/libt/libtext-iconv-perl/libtext-iconv-perl_1.7-5.debian.tar.bz2' libtext-iconv-perl_1.7-5.debian.tar.bz2 3157 SHA256:e0ee2ae3908bbde6d43098a6491284fdc7a0a117229053d1e9c539eb66127092
+'http://deb.debian.org/debian/pool/main/libt/libtext-iconv-perl/libtext-iconv-perl_1.7-5.dsc' libtext-iconv-perl_1.7-5.dsc 1828 SHA256:6f049f3ed556a9c429f00c88a28ce595446f26996f2f5173e02f51f51277749d
+'http://deb.debian.org/debian/pool/main/libt/libtext-iconv-perl/libtext-iconv-perl_1.7.orig.tar.bz2' libtext-iconv-perl_1.7.orig.tar.bz2 9977 SHA256:815c5169b7afc40bc6f681b4c615ff8fb0e073d87422280c8c759a4666567490
+'http://deb.debian.org/debian/pool/main/libt/libtext-iconv-perl/libtext-iconv-perl_1.7-5.debian.tar.bz2' libtext-iconv-perl_1.7-5.debian.tar.bz2 3157 SHA256:e0ee2ae3908bbde6d43098a6491284fdc7a0a117229053d1e9c539eb66127092
 ```
 
 Likely also available for browsing at:
@@ -2173,9 +2173,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libtext-soundex-perl=3.4-1
-'http://httpredir.debian.org/debian/pool/main/libt/libtext-soundex-perl/libtext-soundex-perl_3.4-1.dsc' libtext-soundex-perl_3.4-1.dsc 2062 SHA256:16778de7f51bea71faa5bc19f45b7f28dc6b88ad8f45f2c858026ed0659016ab
-'http://httpredir.debian.org/debian/pool/main/libt/libtext-soundex-perl/libtext-soundex-perl_3.4.orig.tar.gz' libtext-soundex-perl_3.4.orig.tar.gz 9024 SHA256:2e56bb4324ee0186b908b3bd78463643affe7295624af0628e81491e910283d9
-'http://httpredir.debian.org/debian/pool/main/libt/libtext-soundex-perl/libtext-soundex-perl_3.4-1.debian.tar.gz' libtext-soundex-perl_3.4-1.debian.tar.gz 1611 SHA256:d35dc62c0a31b860a0b611eb63308fdcbe6dfed93d7596f0410e603e0db6fd0e
+'http://deb.debian.org/debian/pool/main/libt/libtext-soundex-perl/libtext-soundex-perl_3.4-1.dsc' libtext-soundex-perl_3.4-1.dsc 2062 SHA256:16778de7f51bea71faa5bc19f45b7f28dc6b88ad8f45f2c858026ed0659016ab
+'http://deb.debian.org/debian/pool/main/libt/libtext-soundex-perl/libtext-soundex-perl_3.4.orig.tar.gz' libtext-soundex-perl_3.4.orig.tar.gz 9024 SHA256:2e56bb4324ee0186b908b3bd78463643affe7295624af0628e81491e910283d9
+'http://deb.debian.org/debian/pool/main/libt/libtext-soundex-perl/libtext-soundex-perl_3.4-1.debian.tar.gz' libtext-soundex-perl_3.4-1.debian.tar.gz 1611 SHA256:d35dc62c0a31b860a0b611eb63308fdcbe6dfed93d7596f0410e603e0db6fd0e
 ```
 
 Likely also available for browsing at:
@@ -2199,9 +2199,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libtext-template-perl=1.46-1
-'http://httpredir.debian.org/debian/pool/main/libt/libtext-template-perl/libtext-template-perl_1.46-1.dsc' libtext-template-perl_1.46-1.dsc 2142 SHA256:38d11695c66a26a10bf2157038feb1808545bc3404b222015c2b92079b8bad77
-'http://httpredir.debian.org/debian/pool/main/libt/libtext-template-perl/libtext-template-perl_1.46.orig.tar.gz' libtext-template-perl_1.46.orig.tar.gz 43952 SHA256:77d812cb86e48091bcd59aa8522ef887b33a0ff758f8a269da8c2b733889d580
-'http://httpredir.debian.org/debian/pool/main/libt/libtext-template-perl/libtext-template-perl_1.46-1.debian.tar.gz' libtext-template-perl_1.46-1.debian.tar.gz 3906 SHA256:2a7e6c6708b5a6bfd882515df4a245a0be7f611a8554076e3673ebf90b06ab2a
+'http://deb.debian.org/debian/pool/main/libt/libtext-template-perl/libtext-template-perl_1.46-1.dsc' libtext-template-perl_1.46-1.dsc 2142 SHA256:38d11695c66a26a10bf2157038feb1808545bc3404b222015c2b92079b8bad77
+'http://deb.debian.org/debian/pool/main/libt/libtext-template-perl/libtext-template-perl_1.46.orig.tar.gz' libtext-template-perl_1.46.orig.tar.gz 43952 SHA256:77d812cb86e48091bcd59aa8522ef887b33a0ff758f8a269da8c2b733889d580
+'http://deb.debian.org/debian/pool/main/libt/libtext-template-perl/libtext-template-perl_1.46-1.debian.tar.gz' libtext-template-perl_1.46-1.debian.tar.gz 3906 SHA256:2a7e6c6708b5a6bfd882515df4a245a0be7f611a8554076e3673ebf90b06ab2a
 ```
 
 Likely also available for browsing at:
@@ -2224,9 +2224,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libtext-wrapi18n-perl=0.06-7
-'http://httpredir.debian.org/debian/pool/main/libt/libtext-wrapi18n-perl/libtext-wrapi18n-perl_0.06-7.dsc' libtext-wrapi18n-perl_0.06-7.dsc 1156 SHA256:777dd5309172c3fa6ccea73b3c821cf6533ddb72b4adbe4def9d45fd8902b544
-'http://httpredir.debian.org/debian/pool/main/libt/libtext-wrapi18n-perl/libtext-wrapi18n-perl_0.06.orig.tar.gz' libtext-wrapi18n-perl_0.06.orig.tar.gz 3797 SHA256:432c2a801efe9f12d631124c1163439eac4c99449ba13d80133c45ecacc627f5
-'http://httpredir.debian.org/debian/pool/main/libt/libtext-wrapi18n-perl/libtext-wrapi18n-perl_0.06-7.diff.gz' libtext-wrapi18n-perl_0.06-7.diff.gz 3031 SHA256:fae1a435e8b2604bf78666e58e4603728990495db302a9799d63cb099e3b4001
+'http://deb.debian.org/debian/pool/main/libt/libtext-wrapi18n-perl/libtext-wrapi18n-perl_0.06-7.dsc' libtext-wrapi18n-perl_0.06-7.dsc 1156 SHA256:777dd5309172c3fa6ccea73b3c821cf6533ddb72b4adbe4def9d45fd8902b544
+'http://deb.debian.org/debian/pool/main/libt/libtext-wrapi18n-perl/libtext-wrapi18n-perl_0.06.orig.tar.gz' libtext-wrapi18n-perl_0.06.orig.tar.gz 3797 SHA256:432c2a801efe9f12d631124c1163439eac4c99449ba13d80133c45ecacc627f5
+'http://deb.debian.org/debian/pool/main/libt/libtext-wrapi18n-perl/libtext-wrapi18n-perl_0.06-7.diff.gz' libtext-wrapi18n-perl_0.06-7.diff.gz 3031 SHA256:fae1a435e8b2604bf78666e58e4603728990495db302a9799d63cb099e3b4001
 ```
 
 Likely also available for browsing at:
@@ -2248,9 +2248,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libusb=2:0.1.12-25
-'http://httpredir.debian.org/debian/pool/main/libu/libusb/libusb_0.1.12-25.dsc' libusb_0.1.12-25.dsc 1958 SHA256:905e7cc36c9ba24f6d58e416f8882bc2522673cfb9f63687b48c62c9e3b6c80c
-'http://httpredir.debian.org/debian/pool/main/libu/libusb/libusb_0.1.12.orig.tar.gz' libusb_0.1.12.orig.tar.gz 389343 SHA256:37f6f7d9de74196eb5fc0bbe0aea9b5c939de7f500acba3af6fd643f3b538b44
-'http://httpredir.debian.org/debian/pool/main/libu/libusb/libusb_0.1.12-25.debian.tar.xz' libusb_0.1.12-25.debian.tar.xz 22008 SHA256:9e42ea2a8e0ec85b13cb8c9df7dc3aff58ee82e3692a7656558ae91ceeabf7d1
+'http://deb.debian.org/debian/pool/main/libu/libusb/libusb_0.1.12-25.dsc' libusb_0.1.12-25.dsc 1958 SHA256:905e7cc36c9ba24f6d58e416f8882bc2522673cfb9f63687b48c62c9e3b6c80c
+'http://deb.debian.org/debian/pool/main/libu/libusb/libusb_0.1.12.orig.tar.gz' libusb_0.1.12.orig.tar.gz 389343 SHA256:37f6f7d9de74196eb5fc0bbe0aea9b5c939de7f500acba3af6fd643f3b538b44
+'http://deb.debian.org/debian/pool/main/libu/libusb/libusb_0.1.12-25.debian.tar.xz' libusb_0.1.12-25.debian.tar.xz 22008 SHA256:9e42ea2a8e0ec85b13cb8c9df7dc3aff58ee82e3692a7656558ae91ceeabf7d1
 ```
 
 Likely also available for browsing at:
@@ -2272,9 +2272,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libxml2=2.9.1+dfsg1-5+deb8u3
-'http://httpredir.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u3.dsc' libxml2_2.9.1+dfsg1-5+deb8u3.dsc 2591 SHA256:57c260e91d7892f2b778b2f8b132b206dcc325a004d4c193ae6913c593a8bc2f
-'http://httpredir.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1.orig.tar.gz' libxml2_2.9.1+dfsg1.orig.tar.gz 3793894 SHA256:f3ec5256412192f74833286c4490672500b232ed1c9195214db2c641df064a28
-'http://httpredir.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u3.debian.tar.xz' libxml2_2.9.1+dfsg1-5+deb8u3.debian.tar.xz 64108 SHA256:072644c58b39997efee6e25781900c5b53b07dc41ada219945285a876e3abc1e
+'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u3.dsc' libxml2_2.9.1+dfsg1-5+deb8u3.dsc 2591 SHA256:57c260e91d7892f2b778b2f8b132b206dcc325a004d4c193ae6913c593a8bc2f
+'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1.orig.tar.gz' libxml2_2.9.1+dfsg1.orig.tar.gz 3793894 SHA256:f3ec5256412192f74833286c4490672500b232ed1c9195214db2c641df064a28
+'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u3.debian.tar.xz' libxml2_2.9.1+dfsg1-5+deb8u3.debian.tar.xz 64108 SHA256:072644c58b39997efee6e25781900c5b53b07dc41ada219945285a876e3abc1e
 ```
 
 Likely also available for browsing at:
@@ -2296,9 +2296,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libxslt=1.1.28-2+deb8u1
-'http://httpredir.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.28-2+deb8u1.dsc' libxslt_1.1.28-2+deb8u1.dsc 2389 SHA256:d084d58d3f25cea908acf99a26bf79a6aa4d03ebd94ec3cccb3d427175ed0c80
-'http://httpredir.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.28.orig.tar.gz' libxslt_1.1.28.orig.tar.gz 3435907 SHA256:5fc7151a57b89c03d7b825df5a0fae0a8d5f05674c0e7cf2937ecec4d54a028c
-'http://httpredir.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.28-2+deb8u1.debian.tar.xz' libxslt_1.1.28-2+deb8u1.debian.tar.xz 37208 SHA256:11a8ec5df714a2ac1a55776b1baede5d0612a29b7c5ab6cbbda22d1d49801655
+'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.28-2+deb8u1.dsc' libxslt_1.1.28-2+deb8u1.dsc 2389 SHA256:d084d58d3f25cea908acf99a26bf79a6aa4d03ebd94ec3cccb3d427175ed0c80
+'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.28.orig.tar.gz' libxslt_1.1.28.orig.tar.gz 3435907 SHA256:5fc7151a57b89c03d7b825df5a0fae0a8d5f05674c0e7cf2937ecec4d54a028c
+'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.28-2+deb8u1.debian.tar.xz' libxslt_1.1.28-2+deb8u1.debian.tar.xz 37208 SHA256:11a8ec5df714a2ac1a55776b1baede5d0612a29b7c5ab6cbbda22d1d49801655
 ```
 
 Likely also available for browsing at:
@@ -2321,9 +2321,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris lm-sensors=1:3.3.5-2
-'http://httpredir.debian.org/debian/pool/main/l/lm-sensors/lm-sensors_3.3.5-2.dsc' lm-sensors_3.3.5-2.dsc 1967 SHA256:094f34e8a55667abdf53690fae26d7ab07d6f0e21e6145669aed5c5844386f48
-'http://httpredir.debian.org/debian/pool/main/l/lm-sensors/lm-sensors_3.3.5.orig.tar.bz2' lm-sensors_3.3.5.orig.tar.bz2 173609 SHA256:5dae6a665e1150159a93743c4ff1943a7efe02cd9d3bb12c4805e7d7adcf4fcf
-'http://httpredir.debian.org/debian/pool/main/l/lm-sensors/lm-sensors_3.3.5-2.debian.tar.xz' lm-sensors_3.3.5-2.debian.tar.xz 28312 SHA256:bedd632a169189764383727bbf7cb718c6543e0afa4d368ba0c1bb202593512c
+'http://deb.debian.org/debian/pool/main/l/lm-sensors/lm-sensors_3.3.5-2.dsc' lm-sensors_3.3.5-2.dsc 1967 SHA256:094f34e8a55667abdf53690fae26d7ab07d6f0e21e6145669aed5c5844386f48
+'http://deb.debian.org/debian/pool/main/l/lm-sensors/lm-sensors_3.3.5.orig.tar.bz2' lm-sensors_3.3.5.orig.tar.bz2 173609 SHA256:5dae6a665e1150159a93743c4ff1943a7efe02cd9d3bb12c4805e7d7adcf4fcf
+'http://deb.debian.org/debian/pool/main/l/lm-sensors/lm-sensors_3.3.5-2.debian.tar.xz' lm-sensors_3.3.5-2.debian.tar.xz 28312 SHA256:bedd632a169189764383727bbf7cb718c6543e0afa4d368ba0c1bb202593512c
 ```
 
 Likely also available for browsing at:
@@ -2345,9 +2345,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris logrotate=3.8.7-1
-'http://httpredir.debian.org/debian/pool/main/l/logrotate/logrotate_3.8.7-1.dsc' logrotate_3.8.7-1.dsc 1804 SHA256:f49e9d157043ba02fed832d78cb10a4ec770eb2d35ac3a953c37fe4e4ee9e337
-'http://httpredir.debian.org/debian/pool/main/l/logrotate/logrotate_3.8.7.orig.tar.gz' logrotate_3.8.7.orig.tar.gz 58898 SHA256:f6ba691f40e30e640efa2752c1f9499a3f9738257660994de70a45fe00d12b64
-'http://httpredir.debian.org/debian/pool/main/l/logrotate/logrotate_3.8.7-1.debian.tar.xz' logrotate_3.8.7-1.debian.tar.xz 20148 SHA256:3a32236b117905809212c1543304caec1c5b7d6316f2a1c5308f3a880ee01696
+'http://deb.debian.org/debian/pool/main/l/logrotate/logrotate_3.8.7-1.dsc' logrotate_3.8.7-1.dsc 1804 SHA256:f49e9d157043ba02fed832d78cb10a4ec770eb2d35ac3a953c37fe4e4ee9e337
+'http://deb.debian.org/debian/pool/main/l/logrotate/logrotate_3.8.7.orig.tar.gz' logrotate_3.8.7.orig.tar.gz 58898 SHA256:f6ba691f40e30e640efa2752c1f9499a3f9738257660994de70a45fe00d12b64
+'http://deb.debian.org/debian/pool/main/l/logrotate/logrotate_3.8.7-1.debian.tar.xz' logrotate_3.8.7-1.debian.tar.xz 20148 SHA256:3a32236b117905809212c1543304caec1c5b7d6316f2a1c5308f3a880ee01696
 ```
 
 Likely also available for browsing at:
@@ -2371,8 +2371,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris lsb=4.1+Debian13+nmu1
-'http://httpredir.debian.org/debian/pool/main/l/lsb/lsb_4.1+Debian13+nmu1.dsc' lsb_4.1+Debian13+nmu1.dsc 2449 SHA256:ef70a3302cf4b50c02ad3cfb90d7997968dd509dc0dbb77562b76f23b617c254
-'http://httpredir.debian.org/debian/pool/main/l/lsb/lsb_4.1+Debian13+nmu1.tar.xz' lsb_4.1+Debian13+nmu1.tar.xz 59880 SHA256:7f5fbd13c04de166d0f658c0b71ed97c3fe07e01e165f5c0bd68ff5977bee72d
+'http://deb.debian.org/debian/pool/main/l/lsb/lsb_4.1+Debian13+nmu1.dsc' lsb_4.1+Debian13+nmu1.dsc 2449 SHA256:ef70a3302cf4b50c02ad3cfb90d7997968dd509dc0dbb77562b76f23b617c254
+'http://deb.debian.org/debian/pool/main/l/lsb/lsb_4.1+Debian13+nmu1.tar.xz' lsb_4.1+Debian13+nmu1.tar.xz 59880 SHA256:7f5fbd13c04de166d0f658c0b71ed97c3fe07e01e165f5c0bd68ff5977bee72d
 ```
 
 Likely also available for browsing at:
@@ -2396,9 +2396,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris lvm2=2.02.111-2.2+deb8u1
-'http://httpredir.debian.org/debian/pool/main/l/lvm2/lvm2_2.02.111-2.2+deb8u1.dsc' lvm2_2.02.111-2.2+deb8u1.dsc 2474 SHA256:9e67627d50ef43b88f29a42b5ff4d48b0bfeeb35d98c09da33c6ce51e99c5d96
-'http://httpredir.debian.org/debian/pool/main/l/lvm2/lvm2_2.02.111.orig.tar.gz' lvm2_2.02.111.orig.tar.gz 1497626 SHA256:ff358054ee821503ada8a33b327688cd4d64a2fc448c667a85c332c545aae4f6
-'http://httpredir.debian.org/debian/pool/main/l/lvm2/lvm2_2.02.111-2.2+deb8u1.debian.tar.xz' lvm2_2.02.111-2.2+deb8u1.debian.tar.xz 29476 SHA256:df657682e06f9559d04719c1543285e8bcb51fb4647f673b787538fb34ebe26f
+'http://deb.debian.org/debian/pool/main/l/lvm2/lvm2_2.02.111-2.2+deb8u1.dsc' lvm2_2.02.111-2.2+deb8u1.dsc 2474 SHA256:9e67627d50ef43b88f29a42b5ff4d48b0bfeeb35d98c09da33c6ce51e99c5d96
+'http://deb.debian.org/debian/pool/main/l/lvm2/lvm2_2.02.111.orig.tar.gz' lvm2_2.02.111.orig.tar.gz 1497626 SHA256:ff358054ee821503ada8a33b327688cd4d64a2fc448c667a85c332c545aae4f6
+'http://deb.debian.org/debian/pool/main/l/lvm2/lvm2_2.02.111-2.2+deb8u1.debian.tar.xz' lvm2_2.02.111-2.2+deb8u1.debian.tar.xz 29476 SHA256:df657682e06f9559d04719c1543285e8bcb51fb4647f673b787538fb34ebe26f
 ```
 
 Likely also available for browsing at:
@@ -2420,9 +2420,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris mawk=1.3.3-17
-'http://httpredir.debian.org/debian/pool/main/m/mawk/mawk_1.3.3-17.dsc' mawk_1.3.3-17.dsc 1801 SHA256:f98ce6e153e8ac1faf8165bbf77447a4279313f1c18f6bfeec0c5ce35e4b9c03
-'http://httpredir.debian.org/debian/pool/main/m/mawk/mawk_1.3.3.orig.tar.gz' mawk_1.3.3.orig.tar.gz 209942 SHA256:32649c46063d4ef0777a12ae6e9a26bcc920833d54e1abca7edb8d37481e7485
-'http://httpredir.debian.org/debian/pool/main/m/mawk/mawk_1.3.3-17.diff.gz' mawk_1.3.3-17.diff.gz 63506 SHA256:13cb66b6eb5ee654d5626621d5ef476ede6b0bebac18ce765516de810e58490c
+'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.3-17.dsc' mawk_1.3.3-17.dsc 1801 SHA256:f98ce6e153e8ac1faf8165bbf77447a4279313f1c18f6bfeec0c5ce35e4b9c03
+'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.3.orig.tar.gz' mawk_1.3.3.orig.tar.gz 209942 SHA256:32649c46063d4ef0777a12ae6e9a26bcc920833d54e1abca7edb8d37481e7485
+'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.3-17.diff.gz' mawk_1.3.3-17.diff.gz 63506 SHA256:13cb66b6eb5ee654d5626621d5ef476ede6b0bebac18ce765516de810e58490c
 ```
 
 Likely also available for browsing at:
@@ -2445,8 +2445,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris mime-support=3.58
-'http://httpredir.debian.org/debian/pool/main/m/mime-support/mime-support_3.58.dsc' mime-support_3.58.dsc 1604 SHA256:3279480870a7bd6c7e2a85f7f1e5deba50c3cb5edcbd6ce69a3cfc7fe0266284
-'http://httpredir.debian.org/debian/pool/main/m/mime-support/mime-support_3.58.tar.gz' mime-support_3.58.tar.gz 34995 SHA256:3d9ca5115e93edb3ada3fb120cde88ac3d866903e18a41ca124428d77dd1721e
+'http://deb.debian.org/debian/pool/main/m/mime-support/mime-support_3.58.dsc' mime-support_3.58.dsc 1604 SHA256:3279480870a7bd6c7e2a85f7f1e5deba50c3cb5edcbd6ce69a3cfc7fe0266284
+'http://deb.debian.org/debian/pool/main/m/mime-support/mime-support_3.58.tar.gz' mime-support_3.58.tar.gz 34995 SHA256:3d9ca5115e93edb3ada3fb120cde88ac3d866903e18a41ca124428d77dd1721e
 ```
 
 Likely also available for browsing at:
@@ -2472,9 +2472,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ncurses=5.9+20140913-1
-'http://httpredir.debian.org/debian/pool/main/n/ncurses/ncurses_5.9+20140913-1.dsc' ncurses_5.9+20140913-1.dsc 3463 SHA256:c45d894baa8bd4814e41308edc573e2a5c0f14bdc849925a4a9281e0f3b3b640
-'http://httpredir.debian.org/debian/pool/main/n/ncurses/ncurses_5.9+20140913.orig.tar.gz' ncurses_5.9+20140913.orig.tar.gz 2987249 SHA256:c4247ad81ee9d743caba8a2db6dd96d36878530b2e76e376af1c00b067a2dec9
-'http://httpredir.debian.org/debian/pool/main/n/ncurses/ncurses_5.9+20140913-1.debian.tar.xz' ncurses_5.9+20140913-1.debian.tar.xz 51252 SHA256:ff102696241674e40cc0e525ae6cd4b10d249e29f2c77aa9c983af0bcebdd4ff
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_5.9+20140913-1.dsc' ncurses_5.9+20140913-1.dsc 3463 SHA256:c45d894baa8bd4814e41308edc573e2a5c0f14bdc849925a4a9281e0f3b3b640
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_5.9+20140913.orig.tar.gz' ncurses_5.9+20140913.orig.tar.gz 2987249 SHA256:c4247ad81ee9d743caba8a2db6dd96d36878530b2e76e376af1c00b067a2dec9
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_5.9+20140913-1.debian.tar.xz' ncurses_5.9+20140913-1.debian.tar.xz 51252 SHA256:ff102696241674e40cc0e525ae6cd4b10d249e29f2c77aa9c983af0bcebdd4ff
 ```
 
 Likely also available for browsing at:
@@ -2496,8 +2496,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris netbase=5.3
-'http://httpredir.debian.org/debian/pool/main/n/netbase/netbase_5.3.dsc' netbase_5.3.dsc 1308 SHA256:fcb9c97fe55277f775fd5a39933ca0189b9a983c6cf1abc8184fc29b8e1d77cb
-'http://httpredir.debian.org/debian/pool/main/n/netbase/netbase_5.3.tar.xz' netbase_5.3.tar.xz 31292 SHA256:81f6c69795044d62b8ad959cf9daf049d0545fd466c52860ad3f933b1e97b88b
+'http://deb.debian.org/debian/pool/main/n/netbase/netbase_5.3.dsc' netbase_5.3.dsc 1308 SHA256:fcb9c97fe55277f775fd5a39933ca0189b9a983c6cf1abc8184fc29b8e1d77cb
+'http://deb.debian.org/debian/pool/main/n/netbase/netbase_5.3.tar.xz' netbase_5.3.tar.xz 31292 SHA256:81f6c69795044d62b8ad959cf9daf049d0545fd466c52860ad3f933b1e97b88b
 ```
 
 Likely also available for browsing at:
@@ -2529,9 +2529,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris nettle=2.7.1-5+deb8u1
-'http://httpredir.debian.org/debian/pool/main/n/nettle/nettle_2.7.1-5+deb8u1.dsc' nettle_2.7.1-5+deb8u1.dsc 2096 SHA256:9be625f7f50ee4844c8c4f776fb8d040141707760b481acd2f739a9280fa6dc5
-'http://httpredir.debian.org/debian/pool/main/n/nettle/nettle_2.7.1.orig.tar.gz' nettle_2.7.1.orig.tar.gz 1558863 SHA256:bc71ebd43435537d767799e414fce88e521b7278d48c860651216e1fc6555b40
-'http://httpredir.debian.org/debian/pool/main/n/nettle/nettle_2.7.1-5+deb8u1.debian.tar.xz' nettle_2.7.1-5+deb8u1.debian.tar.xz 19472 SHA256:ef01d799c2bae969afe33cf433a0cd8a9d507fe8510a775b5ff8ddc73e86559c
+'http://deb.debian.org/debian/pool/main/n/nettle/nettle_2.7.1-5+deb8u1.dsc' nettle_2.7.1-5+deb8u1.dsc 2096 SHA256:9be625f7f50ee4844c8c4f776fb8d040141707760b481acd2f739a9280fa6dc5
+'http://deb.debian.org/debian/pool/main/n/nettle/nettle_2.7.1.orig.tar.gz' nettle_2.7.1.orig.tar.gz 1558863 SHA256:bc71ebd43435537d767799e414fce88e521b7278d48c860651216e1fc6555b40
+'http://deb.debian.org/debian/pool/main/n/nettle/nettle_2.7.1-5+deb8u1.debian.tar.xz' nettle_2.7.1-5+deb8u1.debian.tar.xz 19472 SHA256:ef01d799c2bae969afe33cf433a0cd8a9d507fe8510a775b5ff8ddc73e86559c
 ```
 
 Likely also available for browsing at:
@@ -2553,9 +2553,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openldap=2.4.40+dfsg-1+deb8u2
-'http://httpredir.debian.org/debian/pool/main/o/openldap/openldap_2.4.40+dfsg-1+deb8u2.dsc' openldap_2.4.40+dfsg-1+deb8u2.dsc 2819 SHA256:fa6859696d15e6e2a40a940cb4f4356d0c04b5994faf02717f64c1e51517e877
-'http://httpredir.debian.org/debian/pool/main/o/openldap/openldap_2.4.40+dfsg.orig.tar.gz' openldap_2.4.40+dfsg.orig.tar.gz 4797667 SHA256:86c0326dc3dc5f1a9b3c25f7106b96f3eafcdf5da090b1fc586dec57d56e0e7f
-'http://httpredir.debian.org/debian/pool/main/o/openldap/openldap_2.4.40+dfsg-1+deb8u2.diff.gz' openldap_2.4.40+dfsg-1+deb8u2.diff.gz 179809 SHA256:aa5cb8c89c602c3625e121555de6dea53df051c811da49dc0f4487f4b859061a
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.40+dfsg-1+deb8u2.dsc' openldap_2.4.40+dfsg-1+deb8u2.dsc 2819 SHA256:fa6859696d15e6e2a40a940cb4f4356d0c04b5994faf02717f64c1e51517e877
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.40+dfsg.orig.tar.gz' openldap_2.4.40+dfsg.orig.tar.gz 4797667 SHA256:86c0326dc3dc5f1a9b3c25f7106b96f3eafcdf5da090b1fc586dec57d56e0e7f
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.40+dfsg-1+deb8u2.diff.gz' openldap_2.4.40+dfsg-1+deb8u2.diff.gz 179809 SHA256:aa5cb8c89c602c3625e121555de6dea53df051c811da49dc0f4487f4b859061a
 ```
 
 Likely also available for browsing at:
@@ -2604,9 +2604,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris p11-kit=0.20.7-1
-'http://httpredir.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.20.7-1.dsc' p11-kit_0.20.7-1.dsc 2221 SHA256:459d56241f560163471eb5ec789eb5691ca97c5aa9a1bca98dabcf613a2d4bc3
-'http://httpredir.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.20.7.orig.tar.gz' p11-kit_0.20.7.orig.tar.gz 986731 SHA256:68405492fe466b33927d461302aa98e703db3b8a596411585508bc33084484d2
-'http://httpredir.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.20.7-1.debian.tar.xz' p11-kit_0.20.7-1.debian.tar.xz 14208 SHA256:515dfcc279d284bfbee4d172c9cf1db3befe52d55e6d3f50d024c8f72d56574d
+'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.20.7-1.dsc' p11-kit_0.20.7-1.dsc 2221 SHA256:459d56241f560163471eb5ec789eb5691ca97c5aa9a1bca98dabcf613a2d4bc3
+'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.20.7.orig.tar.gz' p11-kit_0.20.7.orig.tar.gz 986731 SHA256:68405492fe466b33927d461302aa98e703db3b8a596411585508bc33084484d2
+'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.20.7-1.debian.tar.xz' p11-kit_0.20.7-1.debian.tar.xz 14208 SHA256:515dfcc279d284bfbee4d172c9cf1db3befe52d55e6d3f50d024c8f72d56574d
 ```
 
 Likely also available for browsing at:
@@ -2631,9 +2631,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris pam=1.1.8-3.1+deb8u1
-'http://httpredir.debian.org/debian/pool/main/p/pam/pam_1.1.8-3.1+deb8u1.dsc' pam_1.1.8-3.1+deb8u1.dsc 2490 SHA256:4d13711e521437f821647bcccdcd464f7791dddd54c6eda86acecd03cc7817f2
-'http://httpredir.debian.org/debian/pool/main/p/pam/pam_1.1.8.orig.tar.gz' pam_1.1.8.orig.tar.gz 1892765 SHA256:4183409a450708a976eca5af561dbf4f0490141a08e86e4a1e649c7c1b094876
-'http://httpredir.debian.org/debian/pool/main/p/pam/pam_1.1.8-3.1+deb8u1.diff.gz' pam_1.1.8-3.1+deb8u1.diff.gz 134556 SHA256:5b6b66c660eab29b12d298e30189d647a3fa02c9551c71fdfcb62ec2caf165d2
+'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8-3.1+deb8u1.dsc' pam_1.1.8-3.1+deb8u1.dsc 2490 SHA256:4d13711e521437f821647bcccdcd464f7791dddd54c6eda86acecd03cc7817f2
+'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8.orig.tar.gz' pam_1.1.8.orig.tar.gz 1892765 SHA256:4183409a450708a976eca5af561dbf4f0490141a08e86e4a1e649c7c1b094876
+'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8-3.1+deb8u1.diff.gz' pam_1.1.8-3.1+deb8u1.diff.gz 134556 SHA256:5b6b66c660eab29b12d298e30189d647a3fa02c9551c71fdfcb62ec2caf165d2
 ```
 
 Likely also available for browsing at:
@@ -2655,9 +2655,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris pcre3=2:8.35-3.3+deb8u4
-'http://httpredir.debian.org/debian/pool/main/p/pcre3/pcre3_8.35-3.3+deb8u4.dsc' pcre3_8.35-3.3+deb8u4.dsc 1985 SHA256:862ee7365c8cc9916f58856617701e2e2f3dcd384a34375379ddfa52b642c649
-'http://httpredir.debian.org/debian/pool/main/p/pcre3/pcre3_8.35.orig.tar.gz' pcre3_8.35.orig.tar.gz 1996552 SHA256:1c9ee292943ba2737f127b481a3f72f44c13fbd09a7b5b4eb8fa58650cfa56a0
-'http://httpredir.debian.org/debian/pool/main/p/pcre3/pcre3_8.35-3.3+deb8u4.debian.tar.gz' pcre3_8.35-3.3+deb8u4.debian.tar.gz 38081 SHA256:93e38ad38d4cdb21d346226eebc7e2ad419cbfe0261b27d2910e8e5c3a946fb9
+'http://deb.debian.org/debian/pool/main/p/pcre3/pcre3_8.35-3.3+deb8u4.dsc' pcre3_8.35-3.3+deb8u4.dsc 1985 SHA256:862ee7365c8cc9916f58856617701e2e2f3dcd384a34375379ddfa52b642c649
+'http://deb.debian.org/debian/pool/main/p/pcre3/pcre3_8.35.orig.tar.gz' pcre3_8.35.orig.tar.gz 1996552 SHA256:1c9ee292943ba2737f127b481a3f72f44c13fbd09a7b5b4eb8fa58650cfa56a0
+'http://deb.debian.org/debian/pool/main/p/pcre3/pcre3_8.35-3.3+deb8u4.debian.tar.gz' pcre3_8.35-3.3+deb8u4.debian.tar.gz 38081 SHA256:93e38ad38d4cdb21d346226eebc7e2ad419cbfe0261b27d2910e8e5c3a946fb9
 ```
 
 Likely also available for browsing at:
@@ -2704,9 +2704,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris perl=5.20.2-3+deb8u6
-'http://httpredir.debian.org/debian/pool/main/p/perl/perl_5.20.2-3+deb8u6.dsc' perl_5.20.2-3+deb8u6.dsc 2322 SHA256:b7569ffa209fcd84bc4d487a9c242b21b0db591b3a9222ae0e1140bab67c6106
-'http://httpredir.debian.org/debian/pool/main/p/perl/perl_5.20.2.orig.tar.bz2' perl_5.20.2.orig.tar.bz2 13717128 SHA256:e5a4713bc65e1da98ebd833dce425c000768bfe84d17ec5183ec5ca249db71ab
-'http://httpredir.debian.org/debian/pool/main/p/perl/perl_5.20.2-3+deb8u6.debian.tar.xz' perl_5.20.2-3+deb8u6.debian.tar.xz 147848 SHA256:f6d31a96ea22b2f2626bb017c4960bcbdf1ac1e11e5639175cd9418fdccda812
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.20.2-3+deb8u6.dsc' perl_5.20.2-3+deb8u6.dsc 2322 SHA256:b7569ffa209fcd84bc4d487a9c242b21b0db591b3a9222ae0e1140bab67c6106
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.20.2.orig.tar.bz2' perl_5.20.2.orig.tar.bz2 13717128 SHA256:e5a4713bc65e1da98ebd833dce425c000768bfe84d17ec5183ec5ca249db71ab
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.20.2-3+deb8u6.debian.tar.xz' perl_5.20.2-3+deb8u6.debian.tar.xz 147848 SHA256:f6d31a96ea22b2f2626bb017c4960bcbdf1ac1e11e5639175cd9418fdccda812
 ```
 
 Likely also available for browsing at:
@@ -2748,9 +2748,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris popt=1.16-10
-'http://httpredir.debian.org/debian/pool/main/p/popt/popt_1.16-10.dsc' popt_1.16-10.dsc 1800 SHA256:874c8f002ef0f8d0c704cf136af58079983e7dc2646bf4322f6fe9261ddfe4a7
-'http://httpredir.debian.org/debian/pool/main/p/popt/popt_1.16.orig.tar.gz' popt_1.16.orig.tar.gz 702769 SHA256:e728ed296fe9f069a0e005003c3d6b2dde3d9cad453422a10d6558616d304cc8
-'http://httpredir.debian.org/debian/pool/main/p/popt/popt_1.16-10.debian.tar.xz' popt_1.16-10.debian.tar.xz 14136 SHA256:8300cbb47148f59fc6edc2f8ebe227a319b080ed26d17db846d1e346f0614899
+'http://deb.debian.org/debian/pool/main/p/popt/popt_1.16-10.dsc' popt_1.16-10.dsc 1800 SHA256:874c8f002ef0f8d0c704cf136af58079983e7dc2646bf4322f6fe9261ddfe4a7
+'http://deb.debian.org/debian/pool/main/p/popt/popt_1.16.orig.tar.gz' popt_1.16.orig.tar.gz 702769 SHA256:e728ed296fe9f069a0e005003c3d6b2dde3d9cad453422a10d6558616d304cc8
+'http://deb.debian.org/debian/pool/main/p/popt/popt_1.16-10.debian.tar.xz' popt_1.16-10.debian.tar.xz 14136 SHA256:8300cbb47148f59fc6edc2f8ebe227a319b080ed26d17db846d1e346f0614899
 ```
 
 Likely also available for browsing at:
@@ -2829,9 +2829,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris procps=2:3.3.9-9
-'http://httpredir.debian.org/debian/pool/main/p/procps/procps_3.3.9-9.dsc' procps_3.3.9-9.dsc 2052 SHA256:b4ee0cb8b2cfb6362bf5a9b6ad2ac1a921098638c8c396fae5823080a159935d
-'http://httpredir.debian.org/debian/pool/main/p/procps/procps_3.3.9.orig.tar.xz' procps_3.3.9.orig.tar.xz 560812 SHA256:00f0cb0fadf968ddf605b0ef119846af07386629244d4f3da711a2cecf4e8663
-'http://httpredir.debian.org/debian/pool/main/p/procps/procps_3.3.9-9.debian.tar.xz' procps_3.3.9-9.debian.tar.xz 35096 SHA256:d66ade0f2d1b44ef55404cc612e25c0f031e7ed2f05e5ab628a0de8c27ed19bf
+'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.9-9.dsc' procps_3.3.9-9.dsc 2052 SHA256:b4ee0cb8b2cfb6362bf5a9b6ad2ac1a921098638c8c396fae5823080a159935d
+'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.9.orig.tar.xz' procps_3.3.9.orig.tar.xz 560812 SHA256:00f0cb0fadf968ddf605b0ef119846af07386629244d4f3da711a2cecf4e8663
+'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.9-9.debian.tar.xz' procps_3.3.9-9.debian.tar.xz 35096 SHA256:d66ade0f2d1b44ef55404cc612e25c0f031e7ed2f05e5ab628a0de8c27ed19bf
 ```
 
 Likely also available for browsing at:
@@ -2854,9 +2854,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris psmisc=22.21-2
-'http://httpredir.debian.org/debian/pool/main/p/psmisc/psmisc_22.21-2.dsc' psmisc_22.21-2.dsc 1652 SHA256:8eba6fdd0f04fa7d4566af3d98091e322c77f1aeaa713c28e4106eaec7a1836a
-'http://httpredir.debian.org/debian/pool/main/p/psmisc/psmisc_22.21.orig.tar.gz' psmisc_22.21.orig.tar.gz 457702 SHA256:97323cad619210845b696d7d722c383852b2acb5c49b5b0852c4f29c77a8145a
-'http://httpredir.debian.org/debian/pool/main/p/psmisc/psmisc_22.21-2.debian.tar.xz' psmisc_22.21-2.debian.tar.xz 6668 SHA256:ba3e5cc5852ed23b5fc495668d52569e16b8c46098e56db04d93f8ec6904832d
+'http://deb.debian.org/debian/pool/main/p/psmisc/psmisc_22.21-2.dsc' psmisc_22.21-2.dsc 1652 SHA256:8eba6fdd0f04fa7d4566af3d98091e322c77f1aeaa713c28e4106eaec7a1836a
+'http://deb.debian.org/debian/pool/main/p/psmisc/psmisc_22.21.orig.tar.gz' psmisc_22.21.orig.tar.gz 457702 SHA256:97323cad619210845b696d7d722c383852b2acb5c49b5b0852c4f29c77a8145a
+'http://deb.debian.org/debian/pool/main/p/psmisc/psmisc_22.21-2.debian.tar.xz' psmisc_22.21-2.debian.tar.xz 6668 SHA256:ba3e5cc5852ed23b5fc495668d52569e16b8c46098e56db04d93f8ec6904832d
 ```
 
 Likely also available for browsing at:
@@ -2880,8 +2880,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris python-defaults=2.7.9-1
-'http://httpredir.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.9-1.dsc' python-defaults_2.7.9-1.dsc 2625 SHA256:1bd64d97e03fd08b1563adba7213117020779b786eb0855facc2bbd382739612
-'http://httpredir.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.9-1.tar.gz' python-defaults_2.7.9-1.tar.gz 280698 SHA256:8e3d58c49b65744867edb5ee8713affd51ad068b2efd09201f56f12a57ef24e7
+'http://deb.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.9-1.dsc' python-defaults_2.7.9-1.dsc 2625 SHA256:1bd64d97e03fd08b1563adba7213117020779b786eb0855facc2bbd382739612
+'http://deb.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.9-1.tar.gz' python-defaults_2.7.9-1.tar.gz 280698 SHA256:8e3d58c49b65744867edb5ee8713affd51ad068b2efd09201f56f12a57ef24e7
 ```
 
 Likely also available for browsing at:
@@ -2913,9 +2913,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris python2.7=2.7.9-2+deb8u1
-'http://httpredir.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.9-2+deb8u1.dsc' python2.7_2.7.9-2+deb8u1.dsc 3271 SHA256:274c293e7156edf59cb9f0a9d8cedcd94fa801df35adf39b8a9f3d776a250ead
-'http://httpredir.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.9.orig.tar.gz' python2.7_2.7.9.orig.tar.gz 15148821 SHA256:46454dc4cb20e1f9b85aef63985890fa7e247f5941991761afd97d68e69b1901
-'http://httpredir.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.9-2+deb8u1.diff.gz' python2.7_2.7.9-2+deb8u1.diff.gz 267710 SHA256:9f1931dc2b365ef6dce88d35fd5b443a388c9780fb42e3809dbbed7156fc8b6f
+'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.9-2+deb8u1.dsc' python2.7_2.7.9-2+deb8u1.dsc 3271 SHA256:274c293e7156edf59cb9f0a9d8cedcd94fa801df35adf39b8a9f3d776a250ead
+'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.9.orig.tar.gz' python2.7_2.7.9.orig.tar.gz 15148821 SHA256:46454dc4cb20e1f9b85aef63985890fa7e247f5941991761afd97d68e69b1901
+'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.9-2+deb8u1.diff.gz' python2.7_2.7.9-2+deb8u1.diff.gz 267710 SHA256:9f1931dc2b365ef6dce88d35fd5b443a388c9780fb42e3809dbbed7156fc8b6f
 ```
 
 Likely also available for browsing at:
@@ -2938,9 +2938,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris readline6=6.3-8
-'http://httpredir.debian.org/debian/pool/main/r/readline6/readline6_6.3-8.dsc' readline6_6.3-8.dsc 1941 SHA256:f7ab77b8580cbdb10b3906f40c3da12d0acc93bef786ff217c65aabc32973cec
-'http://httpredir.debian.org/debian/pool/main/r/readline6/readline6_6.3.orig.tar.gz' readline6_6.3.orig.tar.gz 2468560 SHA256:56ba6071b9462f980c5a72ab0023893b65ba6debb4eeb475d7a563dc65cafd43
-'http://httpredir.debian.org/debian/pool/main/r/readline6/readline6_6.3-8.debian.tar.xz' readline6_6.3-8.debian.tar.xz 30576 SHA256:c2b55fdd221136f46fa1e0cbf0bf2e37b70ddf97929312fbab6032e9129d58b5
+'http://deb.debian.org/debian/pool/main/r/readline6/readline6_6.3-8.dsc' readline6_6.3-8.dsc 1941 SHA256:f7ab77b8580cbdb10b3906f40c3da12d0acc93bef786ff217c65aabc32973cec
+'http://deb.debian.org/debian/pool/main/r/readline6/readline6_6.3.orig.tar.gz' readline6_6.3.orig.tar.gz 2468560 SHA256:56ba6071b9462f980c5a72ab0023893b65ba6debb4eeb475d7a563dc65cafd43
+'http://deb.debian.org/debian/pool/main/r/readline6/readline6_6.3-8.debian.tar.xz' readline6_6.3-8.debian.tar.xz 30576 SHA256:c2b55fdd221136f46fa1e0cbf0bf2e37b70ddf97929312fbab6032e9129d58b5
 ```
 
 Likely also available for browsing at:
@@ -2964,9 +2964,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris rename=0.20-3
-'http://httpredir.debian.org/debian/pool/main/r/rename/rename_0.20-3.dsc' rename_0.20-3.dsc 1937 SHA256:2ba3135af866913ee9a0c3b2466a87cb48e3381616f9114683c99a453411e30a
-'http://httpredir.debian.org/debian/pool/main/r/rename/rename_0.20.orig.tar.gz' rename_0.20.orig.tar.gz 10301 SHA256:5eee75ea92a987930c5bec4a631ee0201f23c77908ba322e553df80845efc6b1
-'http://httpredir.debian.org/debian/pool/main/r/rename/rename_0.20-3.debian.tar.xz' rename_0.20-3.debian.tar.xz 1868 SHA256:626af1157599a8fe71f3a4554ba2bef46c7e2e1745c9b104403a561246d7b1c2
+'http://deb.debian.org/debian/pool/main/r/rename/rename_0.20-3.dsc' rename_0.20-3.dsc 1937 SHA256:2ba3135af866913ee9a0c3b2466a87cb48e3381616f9114683c99a453411e30a
+'http://deb.debian.org/debian/pool/main/r/rename/rename_0.20.orig.tar.gz' rename_0.20.orig.tar.gz 10301 SHA256:5eee75ea92a987930c5bec4a631ee0201f23c77908ba322e553df80845efc6b1
+'http://deb.debian.org/debian/pool/main/r/rename/rename_0.20-3.debian.tar.xz' rename_0.20-3.debian.tar.xz 1868 SHA256:626af1157599a8fe71f3a4554ba2bef46c7e2e1745c9b104403a561246d7b1c2
 ```
 
 Likely also available for browsing at:
@@ -2988,9 +2988,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sed=4.2.2-4
-'http://httpredir.debian.org/debian/pool/main/s/sed/sed_4.2.2-4.dsc' sed_4.2.2-4.dsc 1825 SHA256:6da9792019d46b284ddeae274b86a9087f70a9628b5c1c5b5249fece473c7811
-'http://httpredir.debian.org/debian/pool/main/s/sed/sed_4.2.2.orig.tar.bz2' sed_4.2.2.orig.tar.bz2 1059414 SHA256:f048d1838da284c8bc9753e4506b85a1e0cc1ea8999d36f6995bcb9460cddbd7
-'http://httpredir.debian.org/debian/pool/main/s/sed/sed_4.2.2-4.debian.tar.xz' sed_4.2.2-4.debian.tar.xz 57644 SHA256:bcceb809e26ad0088b7a468c03d62ab3865809d0ea7b97dcad0188a69217438e
+'http://deb.debian.org/debian/pool/main/s/sed/sed_4.2.2-4.dsc' sed_4.2.2-4.dsc 1825 SHA256:6da9792019d46b284ddeae274b86a9087f70a9628b5c1c5b5249fece473c7811
+'http://deb.debian.org/debian/pool/main/s/sed/sed_4.2.2.orig.tar.bz2' sed_4.2.2.orig.tar.bz2 1059414 SHA256:f048d1838da284c8bc9753e4506b85a1e0cc1ea8999d36f6995bcb9460cddbd7
+'http://deb.debian.org/debian/pool/main/s/sed/sed_4.2.2-4.debian.tar.xz' sed_4.2.2-4.debian.tar.xz 57644 SHA256:bcceb809e26ad0088b7a468c03d62ab3865809d0ea7b97dcad0188a69217438e
 ```
 
 Likely also available for browsing at:
@@ -3012,8 +3012,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sensible-utils=0.0.9
-'http://httpredir.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9.dsc' sensible-utils_0.0.9.dsc 1405 SHA256:390c29b31a09ab7f31f8b5fc0fd82e47c25f15b22b17c614fb87f12d3b091070
-'http://httpredir.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9.tar.gz' sensible-utils_0.0.9.tar.gz 74331 SHA256:6fcb5cc0f7f1cf80421840cfa17b1b3fa5afaf3fe852dc984a789023af2f70c6
+'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9.dsc' sensible-utils_0.0.9.dsc 1405 SHA256:390c29b31a09ab7f31f8b5fc0fd82e47c25f15b22b17c614fb87f12d3b091070
+'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9.tar.gz' sensible-utils_0.0.9.tar.gz 74331 SHA256:6fcb5cc0f7f1cf80421840cfa17b1b3fa5afaf3fe852dc984a789023af2f70c6
 ```
 
 Likely also available for browsing at:
@@ -3035,8 +3035,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sgml-base=1.26+nmu4
-'http://httpredir.debian.org/debian/pool/main/s/sgml-base/sgml-base_1.26+nmu4.dsc' sgml-base_1.26+nmu4.dsc 1482 SHA256:967c5dad980d13a5b235b4b6b4a66428303ba85a0e64b7c7f4659b69d9203ec6
-'http://httpredir.debian.org/debian/pool/main/s/sgml-base/sgml-base_1.26+nmu4.tar.gz' sgml-base_1.26+nmu4.tar.gz 12845 SHA256:7aea8d5d404476754363763e2bef2bafd52e90e68eb7055366432624cab6c667
+'http://deb.debian.org/debian/pool/main/s/sgml-base/sgml-base_1.26+nmu4.dsc' sgml-base_1.26+nmu4.dsc 1482 SHA256:967c5dad980d13a5b235b4b6b4a66428303ba85a0e64b7c7f4659b69d9203ec6
+'http://deb.debian.org/debian/pool/main/s/sgml-base/sgml-base_1.26+nmu4.tar.gz' sgml-base_1.26+nmu4.tar.gz 12845 SHA256:7aea8d5d404476754363763e2bef2bafd52e90e68eb7055366432624cab6c667
 ```
 
 Likely also available for browsing at:
@@ -3059,9 +3059,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris shadow=1:4.2-3+deb8u1
-'http://httpredir.debian.org/debian/pool/main/s/shadow/shadow_4.2-3+deb8u1.dsc' shadow_4.2-3+deb8u1.dsc 1997 SHA256:70707cb99ecf37c23abf020506dfd4a76834dd334317e3d34addcdee1c8fe8e8
-'http://httpredir.debian.org/debian/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://httpredir.debian.org/debian/pool/main/s/shadow/shadow_4.2-3+deb8u1.debian.tar.xz' shadow_4.2-3+deb8u1.debian.tar.xz 496336 SHA256:f189d31410ef30fb53dac5373c3973109233a7afb345b237a879f0d32d2511ab
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3+deb8u1.dsc' shadow_4.2-3+deb8u1.dsc 1997 SHA256:70707cb99ecf37c23abf020506dfd4a76834dd334317e3d34addcdee1c8fe8e8
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3+deb8u1.debian.tar.xz' shadow_4.2-3+deb8u1.debian.tar.xz 496336 SHA256:f189d31410ef30fb53dac5373c3973109233a7afb345b237a879f0d32d2511ab
 ```
 
 Likely also available for browsing at:
@@ -3084,9 +3084,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris slang2=2.3.0-2
-'http://httpredir.debian.org/debian/pool/main/s/slang2/slang2_2.3.0-2.dsc' slang2_2.3.0-2.dsc 2329 SHA256:2d6ede702782aec9758a3fb6001837ef6d2191d3989db63aa55333da74d5b05e
-'http://httpredir.debian.org/debian/pool/main/s/slang2/slang2_2.3.0.orig.tar.xz' slang2_2.3.0.orig.tar.xz 1250392 SHA256:cdd5b9582959b3afdae403ee6f4be9de8efc7e205e4a7de18c1a847ea5ef0472
-'http://httpredir.debian.org/debian/pool/main/s/slang2/slang2_2.3.0-2.debian.tar.xz' slang2_2.3.0-2.debian.tar.xz 21864 SHA256:8b088f54be2a284eedee56d74968feb4cc662410d352280a7e351cc02bef57b2
+'http://deb.debian.org/debian/pool/main/s/slang2/slang2_2.3.0-2.dsc' slang2_2.3.0-2.dsc 2329 SHA256:2d6ede702782aec9758a3fb6001837ef6d2191d3989db63aa55333da74d5b05e
+'http://deb.debian.org/debian/pool/main/s/slang2/slang2_2.3.0.orig.tar.xz' slang2_2.3.0.orig.tar.xz 1250392 SHA256:cdd5b9582959b3afdae403ee6f4be9de8efc7e205e4a7de18c1a847ea5ef0472
+'http://deb.debian.org/debian/pool/main/s/slang2/slang2_2.3.0-2.debian.tar.xz' slang2_2.3.0-2.debian.tar.xz 21864 SHA256:8b088f54be2a284eedee56d74968feb4cc662410d352280a7e351cc02bef57b2
 ```
 
 Likely also available for browsing at:
@@ -3110,10 +3110,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sqlite3=3.8.7.1-1+deb8u2
-'http://httpredir.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.8.7.1-1+deb8u2.dsc' sqlite3_3.8.7.1-1+deb8u2.dsc 2540 SHA256:a99074d920a3b6c95bbc55402ff62ccddbfeed2f1a0ed63423bf79e7e4faeff9
-'http://httpredir.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.8.7.1.orig-www.tar.bz2' sqlite3_3.8.7.1.orig-www.tar.bz2 3337784 SHA256:e642657752f20144f42d002895510ea635e0384b14f276f1a2f281b73252bc64
-'http://httpredir.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.8.7.1.orig.tar.bz2' sqlite3_3.8.7.1.orig.tar.bz2 4082068 SHA256:2632a999feba925aa0f1828fa669a091b165a719676765fb542f538345bfa7b9
-'http://httpredir.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.8.7.1-1+deb8u2.debian.tar.xz' sqlite3_3.8.7.1-1+deb8u2.debian.tar.xz 20428 SHA256:e3ef272994d4423c0dbed82c1171d774d7c0a459db44eb1750a4a61d719fbbd2
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.8.7.1-1+deb8u2.dsc' sqlite3_3.8.7.1-1+deb8u2.dsc 2540 SHA256:a99074d920a3b6c95bbc55402ff62ccddbfeed2f1a0ed63423bf79e7e4faeff9
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.8.7.1.orig-www.tar.bz2' sqlite3_3.8.7.1.orig-www.tar.bz2 3337784 SHA256:e642657752f20144f42d002895510ea635e0384b14f276f1a2f281b73252bc64
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.8.7.1.orig.tar.bz2' sqlite3_3.8.7.1.orig.tar.bz2 4082068 SHA256:2632a999feba925aa0f1828fa669a091b165a719676765fb542f538345bfa7b9
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.8.7.1-1+deb8u2.debian.tar.xz' sqlite3_3.8.7.1-1+deb8u2.debian.tar.xz 20428 SHA256:e3ef272994d4423c0dbed82c1171d774d7c0a459db44eb1750a4a61d719fbbd2
 ```
 
 Likely also available for browsing at:
@@ -3135,8 +3135,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ssl-cert=1.0.35
-'http://httpredir.debian.org/debian/pool/main/s/ssl-cert/ssl-cert_1.0.35.dsc' ssl-cert_1.0.35.dsc 1622 SHA256:58490558cf47af82e46512d5b14b8cca1d0d717e8feef45bd85682709e46a721
-'http://httpredir.debian.org/debian/pool/main/s/ssl-cert/ssl-cert_1.0.35.tar.xz' ssl-cert_1.0.35.tar.xz 24836 SHA256:faa19cd34990b8214e37d717ffbd1786b98dd61b62d0ff545fab9dcbfabaede5
+'http://deb.debian.org/debian/pool/main/s/ssl-cert/ssl-cert_1.0.35.dsc' ssl-cert_1.0.35.dsc 1622 SHA256:58490558cf47af82e46512d5b14b8cca1d0d717e8feef45bd85682709e46a721
+'http://deb.debian.org/debian/pool/main/s/ssl-cert/ssl-cert_1.0.35.tar.xz' ssl-cert_1.0.35.tar.xz 24836 SHA256:faa19cd34990b8214e37d717ffbd1786b98dd61b62d0ff545fab9dcbfabaede5
 ```
 
 Likely also available for browsing at:
@@ -3159,9 +3159,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris startpar=0.59-3
-'http://httpredir.debian.org/debian/pool/main/s/startpar/startpar_0.59-3.dsc' startpar_0.59-3.dsc 1496 SHA256:f8fdfac7902c1b0cf5d627421893deaa8e041e9e23096ae60a33fe84464526ff
-'http://httpredir.debian.org/debian/pool/main/s/startpar/startpar_0.59.orig.tar.bz2' startpar_0.59.orig.tar.bz2 22747 SHA256:30a30c8d27a694e3743c1839fb6f60563b2882cddf0e61c698120c4cbde1d7b9
-'http://httpredir.debian.org/debian/pool/main/s/startpar/startpar_0.59-3.debian.tar.xz' startpar_0.59-3.debian.tar.xz 38428 SHA256:abd4650e507cd4e63e7caf2199972b6ee5367aea34ae8f53a19caf126bd2248c
+'http://deb.debian.org/debian/pool/main/s/startpar/startpar_0.59-3.dsc' startpar_0.59-3.dsc 1496 SHA256:f8fdfac7902c1b0cf5d627421893deaa8e041e9e23096ae60a33fe84464526ff
+'http://deb.debian.org/debian/pool/main/s/startpar/startpar_0.59.orig.tar.bz2' startpar_0.59.orig.tar.bz2 22747 SHA256:30a30c8d27a694e3743c1839fb6f60563b2882cddf0e61c698120c4cbde1d7b9
+'http://deb.debian.org/debian/pool/main/s/startpar/startpar_0.59-3.debian.tar.xz' startpar_0.59-3.debian.tar.xz 38428 SHA256:abd4650e507cd4e63e7caf2199972b6ee5367aea34ae8f53a19caf126bd2248c
 ```
 
 Likely also available for browsing at:
@@ -3184,9 +3184,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sysstat=11.0.1-1
-'http://httpredir.debian.org/debian/pool/main/s/sysstat/sysstat_11.0.1-1.dsc' sysstat_11.0.1-1.dsc 1293 SHA256:3b2017e926425b7c8be2d307c5fd59a237a6eba200958b3ba836b6fa58d9cb9f
-'http://httpredir.debian.org/debian/pool/main/s/sysstat/sysstat_11.0.1.orig.tar.xz' sysstat_11.0.1.orig.tar.xz 290576 SHA256:587d66763f8bc07d8220972d9da1955e806208af848c6c681c79caa377d78fb3
-'http://httpredir.debian.org/debian/pool/main/s/sysstat/sysstat_11.0.1-1.debian.tar.xz' sysstat_11.0.1-1.debian.tar.xz 33480 SHA256:6f0fefee7a76d25aae96cbd164f8c57b58388b8620fc19830216aa09f88ddc5a
+'http://deb.debian.org/debian/pool/main/s/sysstat/sysstat_11.0.1-1.dsc' sysstat_11.0.1-1.dsc 1293 SHA256:3b2017e926425b7c8be2d307c5fd59a237a6eba200958b3ba836b6fa58d9cb9f
+'http://deb.debian.org/debian/pool/main/s/sysstat/sysstat_11.0.1.orig.tar.xz' sysstat_11.0.1.orig.tar.xz 290576 SHA256:587d66763f8bc07d8220972d9da1955e806208af848c6c681c79caa377d78fb3
+'http://deb.debian.org/debian/pool/main/s/sysstat/sysstat_11.0.1-1.debian.tar.xz' sysstat_11.0.1-1.debian.tar.xz 33480 SHA256:6f0fefee7a76d25aae96cbd164f8c57b58388b8620fc19830216aa09f88ddc5a
 ```
 
 Likely also available for browsing at:
@@ -3217,9 +3217,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=215-17+deb8u5
-'http://httpredir.debian.org/debian/pool/main/s/systemd/systemd_215-17+deb8u5.dsc' systemd_215-17+deb8u5.dsc 4117 SHA256:d66e49ebfb1693e637a5568e8250303c696b7955e303a455036cbd7c0ec0d336
-'http://httpredir.debian.org/debian/pool/main/s/systemd/systemd_215.orig.tar.xz' systemd_215.orig.tar.xz 2888652 SHA256:ce76a3c05e7d4adc806a3446a5510c0c9b76a33f19adc32754b69a0945124505
-'http://httpredir.debian.org/debian/pool/main/s/systemd/systemd_215-17+deb8u5.debian.tar.xz' systemd_215-17+deb8u5.debian.tar.xz 218268 SHA256:797a9ea4554fd4d2e6f5a40d0a71d565e2cb11bb88eb042f0c454c964e83a97b
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_215-17+deb8u5.dsc' systemd_215-17+deb8u5.dsc 4117 SHA256:d66e49ebfb1693e637a5568e8250303c696b7955e303a455036cbd7c0ec0d336
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_215.orig.tar.xz' systemd_215.orig.tar.xz 2888652 SHA256:ce76a3c05e7d4adc806a3446a5510c0c9b76a33f19adc32754b69a0945124505
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_215-17+deb8u5.debian.tar.xz' systemd_215-17+deb8u5.debian.tar.xz 218268 SHA256:797a9ea4554fd4d2e6f5a40d0a71d565e2cb11bb88eb042f0c454c964e83a97b
 ```
 
 Likely also available for browsing at:
@@ -3243,9 +3243,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sysvinit=2.88dsf-59
-'http://httpredir.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf-59.dsc' sysvinit_2.88dsf-59.dsc 2467 SHA256:0201f6d34c1be692ac0e594a4006e7e0b921eda7ffb37b4373abc949bf7181b2
-'http://httpredir.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf.orig.tar.gz' sysvinit_2.88dsf.orig.tar.gz 125330 SHA256:b016f937958d2809a020d407e1287bdc09abf1d44efaa96530e2ea57f544f4e8
-'http://httpredir.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf-59.debian.tar.xz' sysvinit_2.88dsf-59.debian.tar.xz 152316 SHA256:cfd1ff3423b7cfb2239f2311088eba8e5b8abde1835cb25806fb0983d159635f
+'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf-59.dsc' sysvinit_2.88dsf-59.dsc 2467 SHA256:0201f6d34c1be692ac0e594a4006e7e0b921eda7ffb37b4373abc949bf7181b2
+'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf.orig.tar.gz' sysvinit_2.88dsf.orig.tar.gz 125330 SHA256:b016f937958d2809a020d407e1287bdc09abf1d44efaa96530e2ea57f544f4e8
+'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf-59.debian.tar.xz' sysvinit_2.88dsf-59.debian.tar.xz 152316 SHA256:cfd1ff3423b7cfb2239f2311088eba8e5b8abde1835cb25806fb0983d159635f
 ```
 
 Likely also available for browsing at:
@@ -3268,9 +3268,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tar=1.27.1-2
-'http://httpredir.debian.org/debian/pool/main/t/tar/tar_1.27.1-2.dsc' tar_1.27.1-2.dsc 1859 SHA256:c79d3621eb195c92fd60bfccaedb6fc37c117549f8ef11a44e8b0dc7c14fc1fc
-'http://httpredir.debian.org/debian/pool/main/t/tar/tar_1.27.1.orig.tar.xz' tar_1.27.1.orig.tar.xz 1704252 SHA256:58169c5a03c04be20d3fb91010b01e822c6a58060a96e7cf2f9c1944de0151ab
-'http://httpredir.debian.org/debian/pool/main/t/tar/tar_1.27.1-2.debian.tar.xz' tar_1.27.1-2.debian.tar.xz 31996 SHA256:e2fab717e4574b2add8fc97ddf9fa7eb23a55152536c8c5e51383675f8774645
+'http://deb.debian.org/debian/pool/main/t/tar/tar_1.27.1-2.dsc' tar_1.27.1-2.dsc 1859 SHA256:c79d3621eb195c92fd60bfccaedb6fc37c117549f8ef11a44e8b0dc7c14fc1fc
+'http://deb.debian.org/debian/pool/main/t/tar/tar_1.27.1.orig.tar.xz' tar_1.27.1.orig.tar.xz 1704252 SHA256:58169c5a03c04be20d3fb91010b01e822c6a58060a96e7cf2f9c1944de0151ab
+'http://deb.debian.org/debian/pool/main/t/tar/tar_1.27.1-2.debian.tar.xz' tar_1.27.1-2.debian.tar.xz 31996 SHA256:e2fab717e4574b2add8fc97ddf9fa7eb23a55152536c8c5e51383675f8774645
 ```
 
 Likely also available for browsing at:
@@ -3292,9 +3292,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tzdata=2016f-0+deb8u1
-'http://httpredir.debian.org/debian/pool/main/t/tzdata/tzdata_2016f-0+deb8u1.dsc' tzdata_2016f-0+deb8u1.dsc 1971 SHA256:0474098d0be64feddf5cb231581b20381e9ba450ddcbbd9378c82a1fee89b046
-'http://httpredir.debian.org/debian/pool/main/t/tzdata/tzdata_2016f.orig.tar.gz' tzdata_2016f.orig.tar.gz 313286 SHA256:ed8c951008d12f1db55a11e96fc055718c6571233327d9de16a7f8475e2502b0
-'http://httpredir.debian.org/debian/pool/main/t/tzdata/tzdata_2016f-0+deb8u1.debian.tar.xz' tzdata_2016f-0+deb8u1.debian.tar.xz 101612 SHA256:fe51e05f855921da01f0dcff74f2fb0d4f9b10860ed579ca1a407de1021c96fa
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016f-0+deb8u1.dsc' tzdata_2016f-0+deb8u1.dsc 1971 SHA256:0474098d0be64feddf5cb231581b20381e9ba450ddcbbd9378c82a1fee89b046
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016f.orig.tar.gz' tzdata_2016f.orig.tar.gz 313286 SHA256:ed8c951008d12f1db55a11e96fc055718c6571233327d9de16a7f8475e2502b0
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016f-0+deb8u1.debian.tar.xz' tzdata_2016f-0+deb8u1.debian.tar.xz 101612 SHA256:fe51e05f855921da01f0dcff74f2fb0d4f9b10860ed579ca1a407de1021c96fa
 ```
 
 Likely also available for browsing at:
@@ -3316,8 +3316,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ucf=3.0030
-'http://httpredir.debian.org/debian/pool/main/u/ucf/ucf_3.0030.dsc' ucf_3.0030.dsc 1300 SHA256:7e1861964217317a6be7fe83c1baaeb578e27a33850c33f14d168e40811b9115
-'http://httpredir.debian.org/debian/pool/main/u/ucf/ucf_3.0030.tar.xz' ucf_3.0030.tar.xz 63524 SHA256:65b681c509f49bca586f12d57c5244ad93cf0d047f886e307fb2018abf3d802d
+'http://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0030.dsc' ucf_3.0030.dsc 1300 SHA256:7e1861964217317a6be7fe83c1baaeb578e27a33850c33f14d168e40811b9115
+'http://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0030.tar.xz' ucf_3.0030.tar.xz 63524 SHA256:65b681c509f49bca586f12d57c5244ad93cf0d047f886e307fb2018abf3d802d
 ```
 
 Likely also available for browsing at:
@@ -3344,9 +3344,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ustr=1.0.4-3
-'http://httpredir.debian.org/debian/pool/main/u/ustr/ustr_1.0.4-3.dsc' ustr_1.0.4-3.dsc 1992 SHA256:ca6043d523fd9f677446b6cac95ce5263768f3ccc5ee38ef10e1551b2cf1c00a
-'http://httpredir.debian.org/debian/pool/main/u/ustr/ustr_1.0.4.orig.tar.gz' ustr_1.0.4.orig.tar.gz 301345 SHA256:4d293b6b9d9fe51d58441f4b09b1f0005fcad8256ae8048587789bf5dbefb62e
-'http://httpredir.debian.org/debian/pool/main/u/ustr/ustr_1.0.4-3.diff.gz' ustr_1.0.4-3.diff.gz 11415 SHA256:8349cbdef416e9b919d434c6a88c7e29700a00df3e81f21b7d8127ffd7e4945a
+'http://deb.debian.org/debian/pool/main/u/ustr/ustr_1.0.4-3.dsc' ustr_1.0.4-3.dsc 1992 SHA256:ca6043d523fd9f677446b6cac95ce5263768f3ccc5ee38ef10e1551b2cf1c00a
+'http://deb.debian.org/debian/pool/main/u/ustr/ustr_1.0.4.orig.tar.gz' ustr_1.0.4.orig.tar.gz 301345 SHA256:4d293b6b9d9fe51d58441f4b09b1f0005fcad8256ae8048587789bf5dbefb62e
+'http://deb.debian.org/debian/pool/main/u/ustr/ustr_1.0.4-3.diff.gz' ustr_1.0.4-3.diff.gz 11415 SHA256:8349cbdef416e9b919d434c6a88c7e29700a00df3e81f21b7d8127ffd7e4945a
 ```
 
 Likely also available for browsing at:
@@ -3389,9 +3389,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris util-linux=2.25.2-6
-'http://httpredir.debian.org/debian/pool/main/u/util-linux/util-linux_2.25.2-6.dsc' util-linux_2.25.2-6.dsc 3443 SHA256:742a9c6378132c30d4bfc31722904e73a608c2fee1eab89d1d832c5e5672a82f
-'http://httpredir.debian.org/debian/pool/main/u/util-linux/util-linux_2.25.2.orig.tar.xz' util-linux_2.25.2.orig.tar.xz 3703644 SHA256:e0457f715b73f4a349e1acb08cb410bf0edc9a74a3f75c357070f31f70e33cd6
-'http://httpredir.debian.org/debian/pool/main/u/util-linux/util-linux_2.25.2-6.debian.tar.xz' util-linux_2.25.2-6.debian.tar.xz 304292 SHA256:b500d70a60f2814d6552492cee5f40c27063029ef74ddea53bc713503680527b
+'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.25.2-6.dsc' util-linux_2.25.2-6.dsc 3443 SHA256:742a9c6378132c30d4bfc31722904e73a608c2fee1eab89d1d832c5e5672a82f
+'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.25.2.orig.tar.xz' util-linux_2.25.2.orig.tar.xz 3703644 SHA256:e0457f715b73f4a349e1acb08cb410bf0edc9a74a3f75c357070f31f70e33cd6
+'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.25.2-6.debian.tar.xz' util-linux_2.25.2-6.debian.tar.xz 304292 SHA256:b500d70a60f2814d6552492cee5f40c27063029ef74ddea53bc713503680527b
 ```
 
 Likely also available for browsing at:
@@ -3413,8 +3413,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris xml-core=0.13+nmu2
-'http://httpredir.debian.org/debian/pool/main/x/xml-core/xml-core_0.13+nmu2.dsc' xml-core_0.13+nmu2.dsc 1738 SHA256:edf913f3aee9865480143bdd91f5f6a0838ca61ddc8674ea316e48a22d65fecb
-'http://httpredir.debian.org/debian/pool/main/x/xml-core/xml-core_0.13+nmu2.tar.gz' xml-core_0.13+nmu2.tar.gz 23436 SHA256:cd3f5402265a9ab0e7e4a6efafdc5eb9cb02d33c3e75d1ff1ecb0ac0899e242b
+'http://deb.debian.org/debian/pool/main/x/xml-core/xml-core_0.13+nmu2.dsc' xml-core_0.13+nmu2.dsc 1738 SHA256:edf913f3aee9865480143bdd91f5f6a0838ca61ddc8674ea316e48a22d65fecb
+'http://deb.debian.org/debian/pool/main/x/xml-core/xml-core_0.13+nmu2.tar.gz' xml-core_0.13+nmu2.tar.gz 23436 SHA256:cd3f5402265a9ab0e7e4a6efafdc5eb9cb02d33c3e75d1ff1ecb0ac0899e242b
 ```
 
 Likely also available for browsing at:
@@ -3450,9 +3450,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris xz-utils=5.1.1alpha+20120614-2
-'http://httpredir.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.1.1alpha+20120614-2.dsc' xz-utils_5.1.1alpha+20120614-2.dsc 2325 SHA256:d7d87c6c7aa6d2fe45d8d55a8929ab12f0688f7f17bcfc6233ecfa94f6f7a298
-'http://httpredir.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.1.1alpha+20120614.orig.tar.gz' xz-utils_5.1.1alpha+20120614.orig.tar.gz 556454 SHA256:b168e63400db449a6e7b3a06e668f557ca27e3d70accbd29d2b5a98e15c00fee
-'http://httpredir.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.1.1alpha+20120614-2.debian.tar.gz' xz-utils_5.1.1alpha+20120614-2.debian.tar.gz 154298 SHA256:4e2873ab7b1ee44b7d580caf2a5ca761b10cb2725691b2c2a9b21edb0d771f39
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.1.1alpha+20120614-2.dsc' xz-utils_5.1.1alpha+20120614-2.dsc 2325 SHA256:d7d87c6c7aa6d2fe45d8d55a8929ab12f0688f7f17bcfc6233ecfa94f6f7a298
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.1.1alpha+20120614.orig.tar.gz' xz-utils_5.1.1alpha+20120614.orig.tar.gz 556454 SHA256:b168e63400db449a6e7b3a06e668f557ca27e3d70accbd29d2b5a98e15c00fee
+'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.1.1alpha+20120614-2.debian.tar.gz' xz-utils_5.1.1alpha+20120614-2.debian.tar.gz 154298 SHA256:4e2873ab7b1ee44b7d580caf2a5ca761b10cb2725691b2c2a9b21edb0d771f39
 ```
 
 Likely also available for browsing at:
@@ -3474,9 +3474,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris zlib=1:1.2.8.dfsg-2
-'http://httpredir.debian.org/debian/pool/main/z/zlib/zlib_1.2.8.dfsg-2.dsc' zlib_1.2.8.dfsg-2.dsc 2458 SHA256:5dddd28d2b15fc0881177d720a3b5bf41a87eee7aaec296e4b20719a9fe18b7e
-'http://httpredir.debian.org/debian/pool/main/z/zlib/zlib_1.2.8.dfsg.orig.tar.gz' zlib_1.2.8.dfsg.orig.tar.gz 361943 SHA256:2caecc2c3f1ef8b87b8f72b128a03e61c307e8c14f5ec9b422ef7914ba75cf9f
-'http://httpredir.debian.org/debian/pool/main/z/zlib/zlib_1.2.8.dfsg-2.debian.tar.xz' zlib_1.2.8.dfsg-2.debian.tar.xz 14768 SHA256:39af7ea4b264c229f856ed342bb316a796cb2f1e1278a059f2dc5a4f3ffc9f31
+'http://deb.debian.org/debian/pool/main/z/zlib/zlib_1.2.8.dfsg-2.dsc' zlib_1.2.8.dfsg-2.dsc 2458 SHA256:5dddd28d2b15fc0881177d720a3b5bf41a87eee7aaec296e4b20719a9fe18b7e
+'http://deb.debian.org/debian/pool/main/z/zlib/zlib_1.2.8.dfsg.orig.tar.gz' zlib_1.2.8.dfsg.orig.tar.gz 361943 SHA256:2caecc2c3f1ef8b87b8f72b128a03e61c307e8c14f5ec9b422ef7914ba75cf9f
+'http://deb.debian.org/debian/pool/main/z/zlib/zlib_1.2.8.dfsg-2.debian.tar.xz' zlib_1.2.8.dfsg-2.debian.tar.xz 14768 SHA256:39af7ea4b264c229f856ed342bb316a796cb2f1e1278a059f2dc5a4f3ffc9f31
 ```
 
 Likely also available for browsing at:
