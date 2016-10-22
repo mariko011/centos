@@ -1,7 +1,7 @@
 ## `pypy:3-onbuild`
 
 ```console
-$ docker pull pypy@sha256:41527fba41e1f695712ce80b11b5163dc11ea96d7645a7c3c7107538cb99129c
+$ docker pull pypy@sha256:598c0ae4e16bda647f6db6ff188b7c4483b1be202a93c15593c47945ad4b47c6
 ```
 
 -	Platforms:
@@ -11,76 +11,76 @@ $ docker pull pypy@sha256:41527fba41e1f695712ce80b11b5163dc11ea96d7645a7c3c71075
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **271.8 MB (271847244 bytes)**  
+-	Total Size: **270.6 MB (270581963 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c648ae3e7ae192d9f2d1f6616e9b8c759b0d198b815bcd46fd2ac04242a1b2a7`
+-	Image ID: `sha256:b574b8e25ccb3a96b0fd733eb9966c5fe41fc21b8febfa05b2072fef5ea9beb8`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
-# Fri, 23 Sep 2016 18:08:50 GMT
-ADD file:c6c23585ab140b0b320d4e99bc1b0eb544c9e96c24d90fec5e069a6d57d335ca in / 
-# Fri, 23 Sep 2016 18:08:51 GMT
+# Fri, 21 Oct 2016 16:22:34 GMT
+ADD file:23aa4f893e3288698c017b90be657911b72d54edb3b3a7c4d05c308f50f9228f in / 
+# Fri, 21 Oct 2016 16:22:34 GMT
 CMD ["/bin/bash"]
-# Fri, 23 Sep 2016 18:25:17 GMT
+# Fri, 21 Oct 2016 16:36:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 23 Sep 2016 18:26:18 GMT
+# Fri, 21 Oct 2016 16:37:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 24 Sep 2016 00:13:01 GMT
+# Sat, 22 Oct 2016 02:35:40 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 24 Sep 2016 05:13:41 GMT
+# Sat, 22 Oct 2016 08:13:48 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 24 Sep 2016 05:13:41 GMT
+# Sat, 22 Oct 2016 08:13:48 GMT
 ENV LANG=C.UTF-8
-# Sat, 24 Sep 2016 05:13:53 GMT
+# Sat, 22 Oct 2016 08:14:04 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 10 Oct 2016 23:35:26 GMT
+# Sat, 22 Oct 2016 08:16:22 GMT
 ENV PYPY_VERSION=5.5.0-alpha
-# Mon, 10 Oct 2016 23:35:26 GMT
+# Sat, 22 Oct 2016 08:16:23 GMT
 ENV PYPY_SHA256SUM=41ef7c25fd04eeb20deaa83c5d88c10aef2bbc8bcfd9e53e7cc61136220861cc
-# Mon, 10 Oct 2016 23:35:27 GMT
+# Sat, 22 Oct 2016 08:16:23 GMT
 ENV PYTHON_PIP_VERSION=8.1.2
-# Mon, 10 Oct 2016 23:35:45 GMT
+# Sat, 22 Oct 2016 08:16:43 GMT
 RUN set -ex 	&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3.3-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& rm -rf ~/.cache
-# Mon, 10 Oct 2016 23:35:45 GMT
+# Sat, 22 Oct 2016 08:16:43 GMT
 CMD ["pypy3"]
-# Mon, 10 Oct 2016 23:36:15 GMT
+# Sat, 22 Oct 2016 08:18:07 GMT
 RUN mkdir -p /usr/src/app
-# Mon, 10 Oct 2016 23:36:15 GMT
+# Sat, 22 Oct 2016 08:18:08 GMT
 WORKDIR /usr/src/app
-# Mon, 10 Oct 2016 23:36:15 GMT
+# Sat, 22 Oct 2016 08:18:08 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Mon, 10 Oct 2016 23:36:16 GMT
+# Sat, 22 Oct 2016 08:18:09 GMT
 ONBUILD RUN pip install -r requirements.txt
-# Mon, 10 Oct 2016 23:36:16 GMT
+# Sat, 22 Oct 2016 08:18:09 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
 -	Layers:
-	-	`sha256:6a5a5368e0c2d3e5909184fa28ddfd56072e7ff3ee9a945876f7eee5896ef5bb`  
-		Last Modified: Fri, 23 Sep 2016 18:10:19 GMT  
-		Size: 51.4 MB (51354364 bytes)  
+	-	`sha256:43c265008fae5d1f3cbee0dac9697235320b174d85acbed002a4fe44236adec0`  
+		Last Modified: Fri, 21 Oct 2016 16:22:58 GMT  
+		Size: 51.4 MB (51353125 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b9457ec39de00bc70af1c9631b9ae6ede5a3ab715e6492c0a2641868ec1deda`  
-		Last Modified: Fri, 23 Sep 2016 18:25:33 GMT  
-		Size: 18.5 MB (18528257 bytes)  
+	-	`sha256:af36d2c7a1481ae5554241fcb6bc20472bf7a6b7b2be24465c76e168c278a03f`  
+		Last Modified: Fri, 21 Oct 2016 16:36:48 GMT  
+		Size: 18.5 MB (18528131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff18e19c2db42055e6f34323700737bde3c819b413997cddace2c1b7180d7efd`  
-		Last Modified: Fri, 23 Sep 2016 18:26:43 GMT  
-		Size: 42.5 MB (42495967 bytes)  
+	-	`sha256:143e9d501644c63b3e69d854e8b4c238797cdf3fc87fd79a686c1262fe61e9b5`  
+		Last Modified: Fri, 21 Oct 2016 16:37:53 GMT  
+		Size: 42.5 MB (42500812 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a3d69edbe90ef916e1ecd8d197f056de873ed08bcfd55a1cd0b43588f3dbb9a`  
-		Last Modified: Sat, 24 Sep 2016 00:13:39 GMT  
-		Size: 131.0 MB (131043806 bytes)  
+	-	`sha256:f6a5aab6cd0c9e8c0895dcbb6164cfaaf108910a09cc047037e0a1bf48b17ab0`  
+		Last Modified: Sat, 22 Oct 2016 02:36:21 GMT  
+		Size: 129.8 MB (129765263 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:766692404ca72f4e31e248eb82f8eca6b2fcc15b22930ec50e3804cc3efe0aba`  
-		Last Modified: Sat, 24 Sep 2016 05:14:22 GMT  
-		Size: 2.9 MB (2888618 bytes)  
+	-	`sha256:132c9d27525983cb3721ca71e5394563226dd5875b1b908cecd516f6919380ad`  
+		Last Modified: Sat, 22 Oct 2016 08:14:37 GMT  
+		Size: 2.9 MB (2888599 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89ad59b70e83d52b78ea6bffa3671ee0be84a5b078fe4a21e4414d93d7e28cb3`  
-		Last Modified: Mon, 10 Oct 2016 23:38:29 GMT  
-		Size: 25.5 MB (25536105 bytes)  
+	-	`sha256:d3c56533d0b004d8ce7b2d56ed2e414fffae9186bc4d9bda12aff9ddfe07389d`  
+		Last Modified: Sat, 22 Oct 2016 08:17:02 GMT  
+		Size: 25.5 MB (25545908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:182ba753e134dce7897f1c5bf764f5b898ec8877933449ccff5aa4ac4c3969a3`  
-		Last Modified: Mon, 10 Oct 2016 23:40:42 GMT  
-		Size: 127.0 B  
+	-	`sha256:dd1ebe6140ba77d1c96c6de046e1af9402a1f49899c1c184fa2548abca1a36cd`  
+		Last Modified: Sat, 22 Oct 2016 08:18:19 GMT  
+		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
