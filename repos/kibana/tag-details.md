@@ -12,7 +12,7 @@
 -	[`kibana:4.4`](#kibana44)
 -	[`kibana:4.5.4`](#kibana454)
 -	[`kibana:4.5`](#kibana45)
--	[`kibana:4.6.1`](#kibana461)
+-	[`kibana:4.6.2`](#kibana462)
 -	[`kibana:4.6`](#kibana46)
 -	[`kibana:4`](#kibana4)
 -	[`kibana:latest`](#kibanalatest)
@@ -909,22 +909,22 @@ CMD ["kibana"]
 		Size: 343.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `kibana:4.6.1`
+## `kibana:4.6.2`
 
 ```console
-$ docker pull kibana@sha256:feb4ac2ba4d740a9387198256bccd089d434dcef9749f9381a681bfb8f0ed50e
+$ docker pull kibana@sha256:d76d3d72a02dfed60b3c02475501b176178aee9e42fb22f63064eed6ef23ad98
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `kibana:4.6.1` - linux; amd64
+### `kibana:4.6.2` - linux; amd64
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **103.1 MB (103056885 bytes)**  
+-	Total Size: **103.1 MB (103070100 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1cda90447b2b2d723ba68d06a221ca850fd674f2629ffd5500e68aaf7ae5a2bc`
+-	Image ID: `sha256:547e03cb364b324e35b933ccddc0f58cc409545fd6b82d28c0341b5bd571bd1f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kibana"]`
 
@@ -949,21 +949,21 @@ RUN set -x 	&& wget -O /usr/local/bin/tini "https://github.com/krallin/tini/rele
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 # Fri, 21 Oct 2016 20:25:02 GMT
 ENV KIBANA_MAJOR=4.6
-# Fri, 21 Oct 2016 20:25:02 GMT
-ENV KIBANA_VERSION=4.6.1
-# Fri, 21 Oct 2016 20:25:03 GMT
+# Mon, 24 Oct 2016 18:57:34 GMT
+ENV KIBANA_VERSION=4.6.2
+# Mon, 24 Oct 2016 18:57:34 GMT
 RUN echo "deb http://packages.elastic.co/kibana/${KIBANA_MAJOR}/debian stable main" > /etc/apt/sources.list.d/kibana.list
-# Fri, 21 Oct 2016 20:25:21 GMT
+# Mon, 24 Oct 2016 18:57:52 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends kibana=$KIBANA_VERSION 	&& chown -R kibana:kibana /opt/kibana 	&& rm -rf /var/lib/apt/lists/* 		&& sed -ri "s!^(\#\s*)?(elasticsearch\.url:).*!\2 'http://elasticsearch:9200'!" /opt/kibana/config/kibana.yml 	&& grep -q 'elasticsearch:9200' /opt/kibana/config/kibana.yml
-# Fri, 21 Oct 2016 20:25:21 GMT
+# Mon, 24 Oct 2016 18:57:53 GMT
 ENV PATH=/opt/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 21 Oct 2016 20:25:22 GMT
+# Mon, 24 Oct 2016 18:57:53 GMT
 COPY file:1afe35294cf65766b0d19e7df5bfc671213b2d4cffe59decdc1cb601f7387d43 in / 
-# Fri, 21 Oct 2016 20:25:22 GMT
+# Mon, 24 Oct 2016 18:57:54 GMT
 EXPOSE 5601/tcp
-# Fri, 21 Oct 2016 20:25:23 GMT
+# Mon, 24 Oct 2016 18:57:54 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 21 Oct 2016 20:25:23 GMT
+# Mon, 24 Oct 2016 18:57:54 GMT
 CMD ["kibana"]
 ```
 
@@ -992,23 +992,23 @@ CMD ["kibana"]
 		Last Modified: Fri, 21 Oct 2016 20:25:33 GMT  
 		Size: 1.4 KB (1444 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4aebcd01d66b6ce3d27676f237251639250e47ec2996a2552cd958225edc6ae`  
-		Last Modified: Fri, 21 Oct 2016 20:25:32 GMT  
+	-	`sha256:94e4024e7395542e90ca9757d389c0f19cde97620290674d66ee7e25bfb3200c`  
+		Last Modified: Mon, 24 Oct 2016 19:00:10 GMT  
 		Size: 221.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8cc4ee3c0a425e6e7acbbcf926f525a3d253c1ec3b9dbdeb37b6dad89f92b34`  
-		Last Modified: Fri, 21 Oct 2016 20:25:47 GMT  
-		Size: 34.3 MB (34272733 bytes)  
+	-	`sha256:1a3ce6adf34f5c16f021c118151a2d2ad2904a76fa26cf512561e7d0a83dc0bf`  
+		Last Modified: Mon, 24 Oct 2016 19:00:18 GMT  
+		Size: 34.3 MB (34285946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afd2dca21d2f2ef92938941cc1b7ef979241a3999186ae614663210da9c5f1a4`  
-		Last Modified: Fri, 21 Oct 2016 20:25:33 GMT  
-		Size: 344.0 B  
+	-	`sha256:20ef3273f68483e15347793e58b9365ba218e54282c7f31e31231cef2c8d81ba`  
+		Last Modified: Mon, 24 Oct 2016 19:00:06 GMT  
+		Size: 346.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `kibana:4.6`
 
 ```console
-$ docker pull kibana@sha256:feb4ac2ba4d740a9387198256bccd089d434dcef9749f9381a681bfb8f0ed50e
+$ docker pull kibana@sha256:d76d3d72a02dfed60b3c02475501b176178aee9e42fb22f63064eed6ef23ad98
 ```
 
 -	Platforms:
@@ -1018,9 +1018,9 @@ $ docker pull kibana@sha256:feb4ac2ba4d740a9387198256bccd089d434dcef9749f9381a68
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **103.1 MB (103056885 bytes)**  
+-	Total Size: **103.1 MB (103070100 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1cda90447b2b2d723ba68d06a221ca850fd674f2629ffd5500e68aaf7ae5a2bc`
+-	Image ID: `sha256:547e03cb364b324e35b933ccddc0f58cc409545fd6b82d28c0341b5bd571bd1f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kibana"]`
 
@@ -1045,21 +1045,21 @@ RUN set -x 	&& wget -O /usr/local/bin/tini "https://github.com/krallin/tini/rele
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 # Fri, 21 Oct 2016 20:25:02 GMT
 ENV KIBANA_MAJOR=4.6
-# Fri, 21 Oct 2016 20:25:02 GMT
-ENV KIBANA_VERSION=4.6.1
-# Fri, 21 Oct 2016 20:25:03 GMT
+# Mon, 24 Oct 2016 18:57:34 GMT
+ENV KIBANA_VERSION=4.6.2
+# Mon, 24 Oct 2016 18:57:34 GMT
 RUN echo "deb http://packages.elastic.co/kibana/${KIBANA_MAJOR}/debian stable main" > /etc/apt/sources.list.d/kibana.list
-# Fri, 21 Oct 2016 20:25:21 GMT
+# Mon, 24 Oct 2016 18:57:52 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends kibana=$KIBANA_VERSION 	&& chown -R kibana:kibana /opt/kibana 	&& rm -rf /var/lib/apt/lists/* 		&& sed -ri "s!^(\#\s*)?(elasticsearch\.url:).*!\2 'http://elasticsearch:9200'!" /opt/kibana/config/kibana.yml 	&& grep -q 'elasticsearch:9200' /opt/kibana/config/kibana.yml
-# Fri, 21 Oct 2016 20:25:21 GMT
+# Mon, 24 Oct 2016 18:57:53 GMT
 ENV PATH=/opt/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 21 Oct 2016 20:25:22 GMT
+# Mon, 24 Oct 2016 18:57:53 GMT
 COPY file:1afe35294cf65766b0d19e7df5bfc671213b2d4cffe59decdc1cb601f7387d43 in / 
-# Fri, 21 Oct 2016 20:25:22 GMT
+# Mon, 24 Oct 2016 18:57:54 GMT
 EXPOSE 5601/tcp
-# Fri, 21 Oct 2016 20:25:23 GMT
+# Mon, 24 Oct 2016 18:57:54 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 21 Oct 2016 20:25:23 GMT
+# Mon, 24 Oct 2016 18:57:54 GMT
 CMD ["kibana"]
 ```
 
@@ -1088,23 +1088,23 @@ CMD ["kibana"]
 		Last Modified: Fri, 21 Oct 2016 20:25:33 GMT  
 		Size: 1.4 KB (1444 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4aebcd01d66b6ce3d27676f237251639250e47ec2996a2552cd958225edc6ae`  
-		Last Modified: Fri, 21 Oct 2016 20:25:32 GMT  
+	-	`sha256:94e4024e7395542e90ca9757d389c0f19cde97620290674d66ee7e25bfb3200c`  
+		Last Modified: Mon, 24 Oct 2016 19:00:10 GMT  
 		Size: 221.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8cc4ee3c0a425e6e7acbbcf926f525a3d253c1ec3b9dbdeb37b6dad89f92b34`  
-		Last Modified: Fri, 21 Oct 2016 20:25:47 GMT  
-		Size: 34.3 MB (34272733 bytes)  
+	-	`sha256:1a3ce6adf34f5c16f021c118151a2d2ad2904a76fa26cf512561e7d0a83dc0bf`  
+		Last Modified: Mon, 24 Oct 2016 19:00:18 GMT  
+		Size: 34.3 MB (34285946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afd2dca21d2f2ef92938941cc1b7ef979241a3999186ae614663210da9c5f1a4`  
-		Last Modified: Fri, 21 Oct 2016 20:25:33 GMT  
-		Size: 344.0 B  
+	-	`sha256:20ef3273f68483e15347793e58b9365ba218e54282c7f31e31231cef2c8d81ba`  
+		Last Modified: Mon, 24 Oct 2016 19:00:06 GMT  
+		Size: 346.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `kibana:4`
 
 ```console
-$ docker pull kibana@sha256:feb4ac2ba4d740a9387198256bccd089d434dcef9749f9381a681bfb8f0ed50e
+$ docker pull kibana@sha256:d76d3d72a02dfed60b3c02475501b176178aee9e42fb22f63064eed6ef23ad98
 ```
 
 -	Platforms:
@@ -1114,9 +1114,9 @@ $ docker pull kibana@sha256:feb4ac2ba4d740a9387198256bccd089d434dcef9749f9381a68
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **103.1 MB (103056885 bytes)**  
+-	Total Size: **103.1 MB (103070100 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1cda90447b2b2d723ba68d06a221ca850fd674f2629ffd5500e68aaf7ae5a2bc`
+-	Image ID: `sha256:547e03cb364b324e35b933ccddc0f58cc409545fd6b82d28c0341b5bd571bd1f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kibana"]`
 
@@ -1141,21 +1141,21 @@ RUN set -x 	&& wget -O /usr/local/bin/tini "https://github.com/krallin/tini/rele
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 # Fri, 21 Oct 2016 20:25:02 GMT
 ENV KIBANA_MAJOR=4.6
-# Fri, 21 Oct 2016 20:25:02 GMT
-ENV KIBANA_VERSION=4.6.1
-# Fri, 21 Oct 2016 20:25:03 GMT
+# Mon, 24 Oct 2016 18:57:34 GMT
+ENV KIBANA_VERSION=4.6.2
+# Mon, 24 Oct 2016 18:57:34 GMT
 RUN echo "deb http://packages.elastic.co/kibana/${KIBANA_MAJOR}/debian stable main" > /etc/apt/sources.list.d/kibana.list
-# Fri, 21 Oct 2016 20:25:21 GMT
+# Mon, 24 Oct 2016 18:57:52 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends kibana=$KIBANA_VERSION 	&& chown -R kibana:kibana /opt/kibana 	&& rm -rf /var/lib/apt/lists/* 		&& sed -ri "s!^(\#\s*)?(elasticsearch\.url:).*!\2 'http://elasticsearch:9200'!" /opt/kibana/config/kibana.yml 	&& grep -q 'elasticsearch:9200' /opt/kibana/config/kibana.yml
-# Fri, 21 Oct 2016 20:25:21 GMT
+# Mon, 24 Oct 2016 18:57:53 GMT
 ENV PATH=/opt/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 21 Oct 2016 20:25:22 GMT
+# Mon, 24 Oct 2016 18:57:53 GMT
 COPY file:1afe35294cf65766b0d19e7df5bfc671213b2d4cffe59decdc1cb601f7387d43 in / 
-# Fri, 21 Oct 2016 20:25:22 GMT
+# Mon, 24 Oct 2016 18:57:54 GMT
 EXPOSE 5601/tcp
-# Fri, 21 Oct 2016 20:25:23 GMT
+# Mon, 24 Oct 2016 18:57:54 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 21 Oct 2016 20:25:23 GMT
+# Mon, 24 Oct 2016 18:57:54 GMT
 CMD ["kibana"]
 ```
 
@@ -1184,23 +1184,23 @@ CMD ["kibana"]
 		Last Modified: Fri, 21 Oct 2016 20:25:33 GMT  
 		Size: 1.4 KB (1444 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4aebcd01d66b6ce3d27676f237251639250e47ec2996a2552cd958225edc6ae`  
-		Last Modified: Fri, 21 Oct 2016 20:25:32 GMT  
+	-	`sha256:94e4024e7395542e90ca9757d389c0f19cde97620290674d66ee7e25bfb3200c`  
+		Last Modified: Mon, 24 Oct 2016 19:00:10 GMT  
 		Size: 221.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8cc4ee3c0a425e6e7acbbcf926f525a3d253c1ec3b9dbdeb37b6dad89f92b34`  
-		Last Modified: Fri, 21 Oct 2016 20:25:47 GMT  
-		Size: 34.3 MB (34272733 bytes)  
+	-	`sha256:1a3ce6adf34f5c16f021c118151a2d2ad2904a76fa26cf512561e7d0a83dc0bf`  
+		Last Modified: Mon, 24 Oct 2016 19:00:18 GMT  
+		Size: 34.3 MB (34285946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afd2dca21d2f2ef92938941cc1b7ef979241a3999186ae614663210da9c5f1a4`  
-		Last Modified: Fri, 21 Oct 2016 20:25:33 GMT  
-		Size: 344.0 B  
+	-	`sha256:20ef3273f68483e15347793e58b9365ba218e54282c7f31e31231cef2c8d81ba`  
+		Last Modified: Mon, 24 Oct 2016 19:00:06 GMT  
+		Size: 346.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `kibana:latest`
 
 ```console
-$ docker pull kibana@sha256:feb4ac2ba4d740a9387198256bccd089d434dcef9749f9381a681bfb8f0ed50e
+$ docker pull kibana@sha256:d76d3d72a02dfed60b3c02475501b176178aee9e42fb22f63064eed6ef23ad98
 ```
 
 -	Platforms:
@@ -1210,9 +1210,9 @@ $ docker pull kibana@sha256:feb4ac2ba4d740a9387198256bccd089d434dcef9749f9381a68
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **103.1 MB (103056885 bytes)**  
+-	Total Size: **103.1 MB (103070100 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1cda90447b2b2d723ba68d06a221ca850fd674f2629ffd5500e68aaf7ae5a2bc`
+-	Image ID: `sha256:547e03cb364b324e35b933ccddc0f58cc409545fd6b82d28c0341b5bd571bd1f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kibana"]`
 
@@ -1237,21 +1237,21 @@ RUN set -x 	&& wget -O /usr/local/bin/tini "https://github.com/krallin/tini/rele
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 # Fri, 21 Oct 2016 20:25:02 GMT
 ENV KIBANA_MAJOR=4.6
-# Fri, 21 Oct 2016 20:25:02 GMT
-ENV KIBANA_VERSION=4.6.1
-# Fri, 21 Oct 2016 20:25:03 GMT
+# Mon, 24 Oct 2016 18:57:34 GMT
+ENV KIBANA_VERSION=4.6.2
+# Mon, 24 Oct 2016 18:57:34 GMT
 RUN echo "deb http://packages.elastic.co/kibana/${KIBANA_MAJOR}/debian stable main" > /etc/apt/sources.list.d/kibana.list
-# Fri, 21 Oct 2016 20:25:21 GMT
+# Mon, 24 Oct 2016 18:57:52 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends kibana=$KIBANA_VERSION 	&& chown -R kibana:kibana /opt/kibana 	&& rm -rf /var/lib/apt/lists/* 		&& sed -ri "s!^(\#\s*)?(elasticsearch\.url:).*!\2 'http://elasticsearch:9200'!" /opt/kibana/config/kibana.yml 	&& grep -q 'elasticsearch:9200' /opt/kibana/config/kibana.yml
-# Fri, 21 Oct 2016 20:25:21 GMT
+# Mon, 24 Oct 2016 18:57:53 GMT
 ENV PATH=/opt/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 21 Oct 2016 20:25:22 GMT
+# Mon, 24 Oct 2016 18:57:53 GMT
 COPY file:1afe35294cf65766b0d19e7df5bfc671213b2d4cffe59decdc1cb601f7387d43 in / 
-# Fri, 21 Oct 2016 20:25:22 GMT
+# Mon, 24 Oct 2016 18:57:54 GMT
 EXPOSE 5601/tcp
-# Fri, 21 Oct 2016 20:25:23 GMT
+# Mon, 24 Oct 2016 18:57:54 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 21 Oct 2016 20:25:23 GMT
+# Mon, 24 Oct 2016 18:57:54 GMT
 CMD ["kibana"]
 ```
 
@@ -1280,17 +1280,17 @@ CMD ["kibana"]
 		Last Modified: Fri, 21 Oct 2016 20:25:33 GMT  
 		Size: 1.4 KB (1444 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4aebcd01d66b6ce3d27676f237251639250e47ec2996a2552cd958225edc6ae`  
-		Last Modified: Fri, 21 Oct 2016 20:25:32 GMT  
+	-	`sha256:94e4024e7395542e90ca9757d389c0f19cde97620290674d66ee7e25bfb3200c`  
+		Last Modified: Mon, 24 Oct 2016 19:00:10 GMT  
 		Size: 221.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8cc4ee3c0a425e6e7acbbcf926f525a3d253c1ec3b9dbdeb37b6dad89f92b34`  
-		Last Modified: Fri, 21 Oct 2016 20:25:47 GMT  
-		Size: 34.3 MB (34272733 bytes)  
+	-	`sha256:1a3ce6adf34f5c16f021c118151a2d2ad2904a76fa26cf512561e7d0a83dc0bf`  
+		Last Modified: Mon, 24 Oct 2016 19:00:18 GMT  
+		Size: 34.3 MB (34285946 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afd2dca21d2f2ef92938941cc1b7ef979241a3999186ae614663210da9c5f1a4`  
-		Last Modified: Fri, 21 Oct 2016 20:25:33 GMT  
-		Size: 344.0 B  
+	-	`sha256:20ef3273f68483e15347793e58b9365ba218e54282c7f31e31231cef2c8d81ba`  
+		Last Modified: Mon, 24 Oct 2016 19:00:06 GMT  
+		Size: 346.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `kibana:5.0.0-rc1`
