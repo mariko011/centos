@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d10cc6435528da5d3018dd5dd65768fb01b5be930e53e225cd39ed126b00f3bc`
-- Created: `2016-09-23T23:08:52.285777958Z`
+- Image ID: `sha256:98772db29d5646f0a61c7f2b5c7ff69868531ff03ec44913a456d4d9fb756f39`
+- Created: `2016-10-22T01:08:16.105868322Z`
 - Arch: `linux`/`amd64`
 - Command: `["rethinkdb","--bind","all"]`
 - Environment:
