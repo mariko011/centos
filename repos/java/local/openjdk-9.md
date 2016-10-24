@@ -948,19 +948,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-5=5.4.1-2
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1-2.dsc' gcc-5_5.4.1-2.dsc 17536 SHA256:c089b7d5e86ec85e0f4a132e91ddc5a3a49cdf320d3ec55240fdebe1d751926b
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1.orig.tar.gz' gcc-5_5.4.1.orig.tar.gz 76812822 SHA256:2a84447f34cd062066d38300ac8a1fb528eb301a504b48e1d017e547e5abfcdb
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1-2.diff.gz' gcc-5_5.4.1-2.diff.gz 3203931 SHA256:43ac9635b46df55a96af81d4330ac6081b5d659378e34e426fb0d750938572e0
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-5/5.4.1-2/
-- https://sources.debian.net/src/gcc-5/5.4.1-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-6=6.2.0-6`
 
@@ -1044,19 +1033,8 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris git=1:2.9.3-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.9.3-1.dsc' git_2.9.3-1.dsc 2800 SHA256:3f77d0124d6ccb5f8c818eabfe3ce5c086f5201ed2cd42a2fcc07ddbf31a6810
-'http://deb.debian.org/debian/pool/main/g/git/git_2.9.3.orig.tar.xz' git_2.9.3.orig.tar.xz 4025288 SHA256:9f1473350c1792310b51af03a9cb5cce841f68202f835b20d46312a30232fa63
-'http://deb.debian.org/debian/pool/main/g/git/git_2.9.3-1.debian.tar.xz' git_2.9.3-1.debian.tar.xz 504708 SHA256:21004128421d91aa8357149b636f2916a8c6e12fcd14f63685daa098690a8462
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/git/1:2.9.3-1/
-- https://sources.debian.net/src/git/1:2.9.3-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.24-4`
 
@@ -1071,19 +1049,8 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris glibc=2.24-4
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.24-4.dsc' glibc_2.24-4.dsc 8297 SHA256:66f5cb3a7f27fe61354844df079ba88a7891acc6739fc2b5ff94bf17019cf9db
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.24.orig.tar.xz' glibc_2.24.orig.tar.xz 13921912 SHA256:ed71e8afd2b270f7947a2cea2457a31e1ca4fac08e2731d80edd7ec1730ec84f
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.24-4.debian.tar.xz' glibc_2.24-4.debian.tar.xz 916172 SHA256:b13d1f1fb5a4c1e169810dcad1fe6565f5ceba58bc28988de217c911a6354df1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/glibc/2.24-4/
-- https://sources.debian.net/src/glibc/2.24-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gmp=2:6.1.1+dfsg-1`
 
@@ -1696,19 +1663,8 @@ Licenses: (parsed from: `/usr/share/doc/libjpeg62-turbo/copyright`)
 - `BSD-BY-LC-NE`
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libjpeg-turbo=1:1.5.1-1
-'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.1-1.dsc' libjpeg-turbo_1.5.1-1.dsc 2420 SHA256:c510d0712672db99dfcceda37ecdbde38c1a33ccd4acb8caed210070a648db89
-'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.1.orig.tar.gz' libjpeg-turbo_1.5.1.orig.tar.gz 1650647 SHA256:41429d3d253017433f66e3d472b8c7d998491d2f41caa7306b8d9a6f2a2c666c
-'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.1-1.debian.tar.xz' libjpeg-turbo_1.5.1-1.debian.tar.xz 78168 SHA256:345a5cb6d59edbe5a977fcf4277b829597b92a18ecfb55888c600487c87d0e5a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libjpeg-turbo/1:1.5.1-1/
-- https://sources.debian.net/src/libjpeg-turbo/1:1.5.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libmnl=1.0.4-2`
 
@@ -2195,19 +2151,8 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mercurial=3.9.1-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_3.9.1-1.dsc' mercurial_3.9.1-1.dsc 2378 SHA256:bd9e31db3a3b9a7803b2227d43ace6e7130a58bbfc9a5d749bd85e7b13addde6
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_3.9.1.orig.tar.gz' mercurial_3.9.1.orig.tar.gz 4797967 SHA256:625e4fc7e85ec2278c2828bdc547fce74091b3bbe4d9eeeba2d61af51195df74
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_3.9.1-1.debian.tar.xz' mercurial_3.9.1-1.debian.tar.xz 95404 SHA256:baf6e83cc8918b0842d52fad6ac85d2f261b19aa4521a539cd275949d02b98b9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mercurial/3.9.1-1/
-- https://sources.debian.net/src/mercurial/3.9.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mime-support=3.60`
 
@@ -2411,8 +2356,19 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jdk-headless/copyright`, `/usr
 - `LGPL-2`
 - `LGPL-2-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openjdk-9=9~b140-1
+'http://httpredir.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b140-1.dsc' openjdk-9_9~b140-1.dsc 4345 SHA256:deb1ee753409921f7d0653781badcd45e3067a6a834bedc414572e1d7df856e9
+'http://httpredir.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b140.orig.tar.gz' openjdk-9_9~b140.orig.tar.gz 72379416 SHA256:a69e0bfa3991b47228bbefdf9e6b0cd243bd669e566b9e1bb07ad32d4e054b47
+'http://httpredir.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b140-1.debian.tar.xz' openjdk-9_9~b140-1.debian.tar.xz 188716 SHA256:d5d020d66ffade5b2ccee75b4682df8804b778cdccd5e8a558f3bb92450b45f5
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/openjdk-9/9~b140-1/
+- https://sources.debian.net/src/openjdk-9/9~b140-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.42+dfsg-2`
 
@@ -3039,19 +2995,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016g-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016g-1.dsc' tzdata_2016g-1.dsc 2138 SHA256:1747bf9b3f0de5060a8f983490bc617425beb4fc06d03ae43317bd206b77dc8a
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016g.orig.tar.gz' tzdata_2016g.orig.tar.gz 316669 SHA256:3c7137b2bc47323b0de47b77786bacf81ed503d4b2c693ff8ada2fbd1281ebd1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016g-1.debian.tar.xz' tzdata_2016g-1.debian.tar.xz 100132 SHA256:e9c1d902baa31ea17297ad684cbf2fa4c090c14a57754341dcc4e6527686d31b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2016g-1/
-- https://sources.debian.net/src/tzdata/2016g-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ucf=3.0036`
 
