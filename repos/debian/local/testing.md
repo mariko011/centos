@@ -489,10 +489,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris elfutils=0.166-2
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.166-2.dsc' elfutils_0.166-2.dsc 2510 SHA256:b61f7a80abd820e0ba5b391a6ac69e1efeb5d635fd7c57701e039e97fa1293dd
+'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.166-2.2.dsc' elfutils_0.166-2.2.dsc 2516 SHA256:27c83c2cad0f4fc130195add32a26ef4f2162e133ae797e0017d5a0d1598582a
 'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.166.orig.tar.bz2' elfutils_0.166.orig.tar.bz2 6496225 SHA256:3c056914c8a438b210be0d790463b960fc79d234c3f05ce707cbff80e94cba30
 'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.166.orig.tar.bz2.asc' elfutils_0.166.orig.tar.bz2.asc 479 SHA256:81a30e6ed226960d76d7bdbf5b1a65751ce48cf39a209fa5b820932b64e9d18b
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.166-2.debian.tar.xz' elfutils_0.166-2.debian.tar.xz 38372 SHA256:3813afd220305e45ce9864a25791abef5c86e7e605d7c7a3876fc983b82654ca
+'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.166-2.2.debian.tar.xz' elfutils_0.166-2.2.debian.tar.xz 40804 SHA256:46898297b94ef02dad180938bc8bca1070a0f0ba1529d92f03bbd0bab55a9286
 ```
 
 Likely also available for browsing at:
@@ -984,18 +984,8 @@ Licenses: (parsed from: `/usr/share/doc/lsb-base/copyright`)
 - `BSD-3-clause`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris lsb=9.20160629
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_9.20160629.dsc' lsb_9.20160629.dsc 1612 SHA256:3da707687dc83f2b13305f6d7c682b3b9be7fa32069b299e1b55f5219b9737a6
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_9.20160629.tar.xz' lsb_9.20160629.tar.xz 55060 SHA256:879c7f305f13fc195d4309671066a39960d84b69b0078ad8bca5b44635a17d8d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/lsb/9.20160629/
-- https://sources.debian.net/src/lsb/9.20160629/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lz4=0.0~r131-2`
 
@@ -1361,19 +1351,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016g-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016g-1.dsc' tzdata_2016g-1.dsc 2138 SHA256:1747bf9b3f0de5060a8f983490bc617425beb4fc06d03ae43317bd206b77dc8a
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016g.orig.tar.gz' tzdata_2016g.orig.tar.gz 316669 SHA256:3c7137b2bc47323b0de47b77786bacf81ed503d4b2c693ff8ada2fbd1281ebd1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016g-1.debian.tar.xz' tzdata_2016g-1.debian.tar.xz 100132 SHA256:e9c1d902baa31ea17297ad684cbf2fa4c090c14a57754341dcc4e6527686d31b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2016g-1/
-- https://sources.debian.net/src/tzdata/2016g-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ustr=1.0.4-5`
 
