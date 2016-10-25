@@ -1,4 +1,4 @@
-## `node:wheezy`
+## `node:7-wheezy`
 
 ```console
 $ docker pull node@sha256:0c7fb39e065da8b8142aeb1096e6ebc9ba30d5e1db5e4c79447f7c5d1fae5b88
@@ -7,7 +7,7 @@ $ docker pull node@sha256:0c7fb39e065da8b8142aeb1096e6ebc9ba30d5e1db5e4c79447f7c
 -	Platforms:
 	-	linux; amd64
 
-### `node:wheezy` - linux; amd64
+### `node:7-wheezy` - linux; amd64
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
