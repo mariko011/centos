@@ -951,19 +951,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-5=5.4.1-2
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1-2.dsc' gcc-5_5.4.1-2.dsc 17536 SHA256:c089b7d5e86ec85e0f4a132e91ddc5a3a49cdf320d3ec55240fdebe1d751926b
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1.orig.tar.gz' gcc-5_5.4.1.orig.tar.gz 76812822 SHA256:2a84447f34cd062066d38300ac8a1fb528eb301a504b48e1d017e547e5abfcdb
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1-2.diff.gz' gcc-5_5.4.1-2.diff.gz 3203931 SHA256:43ac9635b46df55a96af81d4330ac6081b5d659378e34e426fb0d750938572e0
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-5/5.4.1-2/
-- https://sources.debian.net/src/gcc-5/5.4.1-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-6=6.2.0-6`
 
@@ -1047,19 +1036,8 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris git=1:2.9.3-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.9.3-1.dsc' git_2.9.3-1.dsc 2800 SHA256:3f77d0124d6ccb5f8c818eabfe3ce5c086f5201ed2cd42a2fcc07ddbf31a6810
-'http://deb.debian.org/debian/pool/main/g/git/git_2.9.3.orig.tar.xz' git_2.9.3.orig.tar.xz 4025288 SHA256:9f1473350c1792310b51af03a9cb5cce841f68202f835b20d46312a30232fa63
-'http://deb.debian.org/debian/pool/main/g/git/git_2.9.3-1.debian.tar.xz' git_2.9.3-1.debian.tar.xz 504708 SHA256:21004128421d91aa8357149b636f2916a8c6e12fcd14f63685daa098690a8462
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/git/1:2.9.3-1/
-- https://sources.debian.net/src/git/1:2.9.3-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.24-4`
 
@@ -2176,19 +2154,8 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mercurial=3.9.1-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_3.9.1-1.dsc' mercurial_3.9.1-1.dsc 2378 SHA256:bd9e31db3a3b9a7803b2227d43ace6e7130a58bbfc9a5d749bd85e7b13addde6
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_3.9.1.orig.tar.gz' mercurial_3.9.1.orig.tar.gz 4797967 SHA256:625e4fc7e85ec2278c2828bdc547fce74091b3bbe4d9eeeba2d61af51195df74
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_3.9.1-1.debian.tar.xz' mercurial_3.9.1-1.debian.tar.xz 95404 SHA256:baf6e83cc8918b0842d52fad6ac85d2f261b19aa4521a539cd275949d02b98b9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mercurial/3.9.1-1/
-- https://sources.debian.net/src/mercurial/3.9.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mime-support=3.60`
 
