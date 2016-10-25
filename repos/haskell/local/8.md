@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:45c154163a5dfb755b4338b9ea893563491894c29fc7254a07a1283d0dcd3f08`
-- Created: `2016-09-23T19:14:51.574005116Z`
+- Image ID: `sha256:3fdc855e1dc5dbd0a3f0229720e116aa22477d93144310773c682d47626c9c5b`
+- Created: `2016-10-21T19:49:50.429964085Z`
 - Arch: `linux`/`amd64`
 - Command: `["ghci"]`
 - Environment:
