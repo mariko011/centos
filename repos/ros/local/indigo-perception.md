@@ -6080,14 +6080,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-rosdistro=0.4.7-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.4.7-1.dsc' python-rosdistro_0.4.7-1.dsc 906 SHA256:f986dcec473e2545cc5c1b4c13a04ea6b8010fce62dc9412cadebe8ec7c196d7
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.4.7.orig.tar.gz' python-rosdistro_0.4.7.orig.tar.gz 36252 SHA256:ac78aa4a061cdb67ca2679c10ea0a0ebb3099534f82702604969805e79d26dee
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.4.7-1.debian.tar.gz' python-rosdistro_0.4.7-1.debian.tar.gz 962 SHA256:036748574dcce8f3b9869a40f37aac99a007bcb7f2518a387facab687bb777b9
-```
 
 ### `dpkg` source package: `python-rosinstall=0.7.8-1`
 
