@@ -1,9 +1,9 @@
-# `joomla:3.6.3-fpm`
+# `joomla:3.6.4-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:75e447983782f10a7b913ae5747fa7ea342a577ff9ef644ce67a8f5dea11997f`
-- Created: `2016-10-22T06:40:01.973962521Z`
+- Image ID: `sha256:a8ccc81c24a3476e336b9b0553df2aa1a4d0f0a092d6352211b9889a382f0d7d`
+- Created: `2016-10-25T17:01:21.469871144Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["php-fpm"]`
@@ -18,8 +18,8 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.27.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=16eb544498339d1d855292826e2e547ab01a31600141094959073e5e10e93ab5`
   - `PHP_MD5=9ce6efc96d5ab81ef808f8ed6b1f242d`
-  - `JOOMLA_VERSION=3.6.3`
-  - `JOOMLA_SHA1=01eb3724e191fcfd034b54f54745703a8a4f288e`
+  - `JOOMLA_VERSION=3.6.4`
+  - `JOOMLA_SHA1=81ecad99727fd336f72756439666808eaabcc716`
 
 ## `dpkg` (`.deb`-based packages)
 
