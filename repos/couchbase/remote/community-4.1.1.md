@@ -1,19 +1,19 @@
-## `couchbase:community-4.1.0`
+## `couchbase:community-4.1.1`
 
 ```console
-$ docker pull couchbase@sha256:6b3b4458f1d7734623122f6d413fc158a8eb8d2941ac471b2d911b164321ae4b
+$ docker pull couchbase@sha256:fd53464d6fa0984f93499770bd83e1a33b8560549510c9940c04167c0770b4de
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `couchbase:community-4.1.0` - linux; amd64
+### `couchbase:community-4.1.1` - linux; amd64
 
--	Docker Version: 1.12.1
+-	Docker Version: 1.12.2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.4 MB (164371069 bytes)**  
+-	Total Size: **164.4 MB (164374829 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2a72d7104c781ebd6d1a6f6cd7d21fa91caf16c9c3b6f5bf63fc808c750cffc3`
+-	Image ID: `sha256:918bf6251d53b0458004378192e3c3dd874937a45d78b70dd8679e0702e2a294`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["couchbase-server"]`
 
@@ -34,41 +34,41 @@ CMD ["/bin/bash"]
 MAINTAINER Couchbase Docker Team <docker@couchbase.com>
 # Thu, 13 Oct 2016 21:52:25 GMT
 RUN apt-get update &&     apt-get install -yq runit wget python-httplib2 chrpath     lsof lshw sysstat net-tools numactl  &&     apt-get autoremove && apt-get clean &&     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-# Thu, 13 Oct 2016 21:54:21 GMT
-ARG CB_VERSION=4.1.0
-# Thu, 13 Oct 2016 21:54:21 GMT
+# Wed, 26 Oct 2016 17:11:27 GMT
+ARG CB_VERSION=4.1.1
+# Wed, 26 Oct 2016 17:11:27 GMT
 ARG CB_RELEASE_URL=http://packages.couchbase.com/releases
-# Thu, 13 Oct 2016 21:54:21 GMT
-ARG CB_PACKAGE=couchbase-server-community_4.1.0-ubuntu14.04_amd64.deb
-# Thu, 13 Oct 2016 21:54:22 GMT
-ARG CB_SHA256=400263bd03e32b69259ec9b821bf58922030ba9e2a266e2ef4a0d4ac162188ea
-# Thu, 13 Oct 2016 21:54:22 GMT
+# Wed, 26 Oct 2016 17:11:28 GMT
+ARG CB_PACKAGE=couchbase-server-community_4.1.1-ubuntu14.04_amd64.deb
+# Wed, 26 Oct 2016 17:11:28 GMT
+ARG CB_SHA256=237b530643bb6c7bc2fd36363a235957b4f6ac9558e50ba5b1dad094b8a50883
+# Wed, 26 Oct 2016 17:11:28 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/couchbase/bin:/opt/couchbase/bin/tools:/opt/couchbase/bin/install
-# Thu, 13 Oct 2016 21:54:23 GMT
-# ARGS: CB_PACKAGE=couchbase-server-community_4.1.0-ubuntu14.04_amd64.deb CB_RELEASE_URL=http://packages.couchbase.com/releases CB_SHA256=400263bd03e32b69259ec9b821bf58922030ba9e2a266e2ef4a0d4ac162188ea CB_VERSION=4.1.0
+# Wed, 26 Oct 2016 17:11:36 GMT
+# ARGS: CB_PACKAGE=couchbase-server-community_4.1.1-ubuntu14.04_amd64.deb CB_RELEASE_URL=http://packages.couchbase.com/releases CB_SHA256=237b530643bb6c7bc2fd36363a235957b4f6ac9558e50ba5b1dad094b8a50883 CB_VERSION=4.1.1
 RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M
-# Thu, 13 Oct 2016 21:54:41 GMT
-# ARGS: CB_PACKAGE=couchbase-server-community_4.1.0-ubuntu14.04_amd64.deb CB_RELEASE_URL=http://packages.couchbase.com/releases CB_SHA256=400263bd03e32b69259ec9b821bf58922030ba9e2a266e2ef4a0d4ac162188ea CB_VERSION=4.1.0
+# Wed, 26 Oct 2016 17:11:59 GMT
+# ARGS: CB_PACKAGE=couchbase-server-community_4.1.1-ubuntu14.04_amd64.deb CB_RELEASE_URL=http://packages.couchbase.com/releases CB_SHA256=237b530643bb6c7bc2fd36363a235957b4f6ac9558e50ba5b1dad094b8a50883 CB_VERSION=4.1.1
 RUN wget -N $CB_RELEASE_URL/$CB_VERSION/$CB_PACKAGE &&     echo "$CB_SHA256  $CB_PACKAGE" | sha256sum -c - &&     dpkg -i ./$CB_PACKAGE && rm -f ./$CB_PACKAGE
-# Thu, 13 Oct 2016 21:54:42 GMT
+# Wed, 26 Oct 2016 17:12:00 GMT
 COPY file:f14849552c5fb3935cb7300d639612403e6af00af7528886bc07e8a778689a7e in /etc/service/couchbase-server/run 
-# Thu, 13 Oct 2016 21:54:43 GMT
+# Wed, 26 Oct 2016 17:12:01 GMT
 COPY file:8196fd8e201c5fc3873a0faa3cec28b0d85633e363c0c5788434f5b9a81cfa5b in /usr/local/bin/ 
-# Thu, 13 Oct 2016 21:54:43 GMT
-# ARGS: CB_PACKAGE=couchbase-server-community_4.1.0-ubuntu14.04_amd64.deb CB_RELEASE_URL=http://packages.couchbase.com/releases CB_SHA256=400263bd03e32b69259ec9b821bf58922030ba9e2a266e2ef4a0d4ac162188ea CB_VERSION=4.1.0
+# Wed, 26 Oct 2016 17:12:02 GMT
+# ARGS: CB_PACKAGE=couchbase-server-community_4.1.1-ubuntu14.04_amd64.deb CB_RELEASE_URL=http://packages.couchbase.com/releases CB_SHA256=237b530643bb6c7bc2fd36363a235957b4f6ac9558e50ba5b1dad094b8a50883 CB_VERSION=4.1.1
 RUN ln -s dummy.sh /usr/local/bin/iptables-save &&     ln -s dummy.sh /usr/local/bin/lvdisplay &&     ln -s dummy.sh /usr/local/bin/vgdisplay &&     ln -s dummy.sh /usr/local/bin/pvdisplay
-# Thu, 13 Oct 2016 21:54:44 GMT
-# ARGS: CB_PACKAGE=couchbase-server-community_4.1.0-ubuntu14.04_amd64.deb CB_RELEASE_URL=http://packages.couchbase.com/releases CB_SHA256=400263bd03e32b69259ec9b821bf58922030ba9e2a266e2ef4a0d4ac162188ea CB_VERSION=4.1.0
+# Wed, 26 Oct 2016 17:12:03 GMT
+# ARGS: CB_PACKAGE=couchbase-server-community_4.1.1-ubuntu14.04_amd64.deb CB_RELEASE_URL=http://packages.couchbase.com/releases CB_SHA256=237b530643bb6c7bc2fd36363a235957b4f6ac9558e50ba5b1dad094b8a50883 CB_VERSION=4.1.1
 RUN chrpath -r '$ORIGIN/../lib' /opt/couchbase/bin/curl
-# Thu, 13 Oct 2016 21:54:45 GMT
+# Wed, 26 Oct 2016 17:12:09 GMT
 COPY file:cc6a884f330c854d49f23323bc8c5cc1aa1b48965d4f0c7fe4d46a54871f866f in / 
-# Thu, 13 Oct 2016 21:54:45 GMT
+# Wed, 26 Oct 2016 17:12:10 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 13 Oct 2016 21:54:45 GMT
+# Wed, 26 Oct 2016 17:12:10 GMT
 CMD ["couchbase-server"]
-# Thu, 13 Oct 2016 21:54:46 GMT
+# Wed, 26 Oct 2016 17:12:10 GMT
 EXPOSE 11207/tcp 11210/tcp 11211/tcp 18091/tcp 18092/tcp 18093/tcp 8091/tcp 8092/tcp 8093/tcp 8094/tcp
-# Thu, 13 Oct 2016 21:54:46 GMT
+# Wed, 26 Oct 2016 17:12:11 GMT
 VOLUME [/opt/couchbase/var]
 ```
 
@@ -97,31 +97,31 @@ VOLUME [/opt/couchbase/var]
 		Last Modified: Thu, 13 Oct 2016 21:53:12 GMT  
 		Size: 11.3 MB (11254535 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:705a5e0d7ec2b9df96cd7c1d25aec934aac1bfd0c9dd1079096a588d370ae641`  
-		Last Modified: Thu, 13 Oct 2016 21:54:57 GMT  
-		Size: 1.9 KB (1863 bytes)  
+	-	`sha256:80fc9ef52f9806f31615074de35a6c8dc044d2c40ead058c80c711db34bf2221`  
+		Last Modified: Wed, 26 Oct 2016 17:13:15 GMT  
+		Size: 1.9 KB (1852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a592a9cbb4e5d55cd5708ad25655e33c26d797435dcad053a13cb2ec72da318c`  
-		Last Modified: Thu, 13 Oct 2016 21:55:19 GMT  
-		Size: 87.2 MB (87238736 bytes)  
+	-	`sha256:5c77376153102cb85e881787bf58ef3e4a5f39091752208883a09125ed12eb19`  
+		Last Modified: Wed, 26 Oct 2016 17:13:35 GMT  
+		Size: 87.2 MB (87242497 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:453b6d2099db225b32a6a6bc5e7411388496b232a6b3ae0b2b47e64499fe33fa`  
-		Last Modified: Thu, 13 Oct 2016 21:54:54 GMT  
-		Size: 357.0 B  
+	-	`sha256:fd27d258f322939150e00bba4ead8d016561b2415d3b3027f1bd5b43a577c3f7`  
+		Last Modified: Wed, 26 Oct 2016 17:13:12 GMT  
+		Size: 360.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58ae91d1d5bd013e6802f83bdf8a2edbf0036cabb1832f9e69e90e7545060c94`  
-		Last Modified: Thu, 13 Oct 2016 21:54:54 GMT  
-		Size: 228.0 B  
+	-	`sha256:13dab2311d0ede285884bd936dc8b0a97adcff43bc2cd0fc490fcb0b9c5190b8`  
+		Last Modified: Wed, 26 Oct 2016 17:13:13 GMT  
+		Size: 230.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4867bc08951f86402e5377d6175d3ddbfa6f893c3c4fe5596e8bf70f52cad2b`  
-		Last Modified: Thu, 13 Oct 2016 21:54:55 GMT  
-		Size: 209.0 B  
+	-	`sha256:968576a59da2c022cbef72fa8f5ae3a7b727b1f19c421e582e7598e5ddb4b8e0`  
+		Last Modified: Wed, 26 Oct 2016 17:13:10 GMT  
+		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b6c736be6694fedf973ecba14f482f3465644abd25ca1a5c250fb311144fd7a`  
-		Last Modified: Thu, 13 Oct 2016 21:54:55 GMT  
-		Size: 99.1 KB (99100 bytes)  
+	-	`sha256:42b0ceafa5a3e3669290346584efdeeb27a9cfbc32fa049b06f021d7fd075461`  
+		Last Modified: Wed, 26 Oct 2016 17:13:11 GMT  
+		Size: 99.1 KB (99102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c8706e47587f347ba75444e826f76b2eec1ab9d0f943c4260f67ddef25c7478`  
-		Last Modified: Thu, 13 Oct 2016 21:54:55 GMT  
+	-	`sha256:3ee8dc197e4cd15425da59010aaf88ada550e0125c37bb3bddd66f11f095c1c1`  
+		Last Modified: Wed, 26 Oct 2016 17:13:11 GMT  
 		Size: 277.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
