@@ -1538,19 +1538,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nspr=2:4.9.2-1+deb7u4
-'http://security.debian.org/pool/updates/main/n/nspr/nspr_4.9.2-1+deb7u4.dsc' nspr_4.9.2-1+deb7u4.dsc 2094 SHA256:e116485d666a9935309c380335b6a3bf35019d22639c023f0fff2349a21eb546
-'http://security.debian.org/pool/updates/main/n/nspr/nspr_4.9.2.orig.tar.gz' nspr_4.9.2.orig.tar.gz 1171705 SHA256:a4ca5ad9bce7cf439db8aefcff81be767f27c630d4d614ba088e8e6cf5520ade
-'http://security.debian.org/pool/updates/main/n/nspr/nspr_4.9.2-1+deb7u4.debian.tar.gz' nspr_4.9.2-1+deb7u4.debian.tar.gz 19894 SHA256:11889052a00dd394517fffdbc4d2e307c62561d71d8d50b1a6ade73fe4325804
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nspr/2:4.9.2-1+deb7u4/
-- https://sources.debian.net/src/nspr/2:4.9.2-1+deb7u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `nss=2:3.14.5-1+deb7u8`
 
