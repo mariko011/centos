@@ -1709,19 +1709,8 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 - `expat`
 - `libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.25-2
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.25-2.dsc' libpng1.6_1.6.25-2.dsc 2220 SHA256:faa138eeaaeb814b80ea70108fa0e394174bec2cdf2f52cdf082e7f922d26d44
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.25.orig.tar.xz' libpng1.6_1.6.25.orig.tar.xz 982204 SHA256:09fe8d8341e8bfcfb3263100d9ac7ea2155b28dd8535f179111c1672ac8d8811
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.25-2.debian.tar.xz' libpng1.6_1.6.25-2.debian.tar.xz 22028 SHA256:136023176759fad376b6cfe3b5ea17df2c235892d1e3c12f01af5ffe5faf48e3
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libpng1.6/1.6.25-2/
-- https://sources.debian.net/src/libpng1.6/1.6.25-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpsl=0.14.0-1`
 
@@ -2407,19 +2396,8 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.3p1-1
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.3p1-1.dsc' openssh_7.3p1-1.dsc 2884 SHA256:61e8414cb2ed2a72ee15053511d3a2f55ace4b8fb76fff2d901ec67d4a1cf5ba
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.3p1.orig.tar.gz' openssh_7.3p1.orig.tar.gz 1522617 SHA256:3ffb989a6dcaa69594c3b550d4855a5a2e1718ccdde7f5e36387b424220fbecc
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.3p1-1.debian.tar.xz' openssh_7.3p1-1.debian.tar.xz 153400 SHA256:a9a96b33427697afb344d6c82078abc54da411f108b19949c9f3378b947b4971
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssh/1:7.3p1-1/
-- https://sources.debian.net/src/openssh/1:7.3p1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssl=1.0.2j-1`
 
