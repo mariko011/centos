@@ -2868,14 +2868,8 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `UNKNOWN`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mysql-5.5=5.5.52-0ubuntu0.12.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.52-0ubuntu0.12.04.1.dsc' mysql-5.5_5.5.52-0ubuntu0.12.04.1.dsc 3154 SHA256:a8589d3cc58059bad7888c9a707bfe2b08a56d81f1fb7ae49d3ab39f5b0bc32f
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.52.orig.tar.gz' mysql-5.5_5.5.52.orig.tar.gz 21032776 SHA256:7820e13de6b3f4dadd255e12b2e9f3de43daf4507c218018c382d45aad8162fd
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.52-0ubuntu0.12.04.1.debian.tar.gz' mysql-5.5_5.5.52-0ubuntu0.12.04.1.debian.tar.gz 302460 SHA256:fd786f51e52c397fea7a89f809efb9d2b0c6242ba683066fec2c0339c9b5cb77
-```
 
 ### `dpkg` source package: `ncurses=5.9-4`
 
