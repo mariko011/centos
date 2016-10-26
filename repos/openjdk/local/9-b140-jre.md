@@ -953,20 +953,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.5-2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5-2.dsc' gnutls28_3.5.5-2.dsc 3115 SHA256:178311cac5d70091d5984536dafc2e0834a9926920628f593bd8b3b944dac7a3
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5.orig.tar.xz' gnutls28_3.5.5.orig.tar.xz 6974628 SHA256:86994fe7804ee16d2811e366b9bf2f75304f8e470ae0e3716d60ffeedac0e529
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5.orig.tar.xz.asc' gnutls28_3.5.5.orig.tar.xz.asc 287 SHA256:e875ac977d00a4557c2da5ce155d2d1872601e6234afbfa58ee9dd1359e295bd
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5-2.debian.tar.xz' gnutls28_3.5.5-2.debian.tar.xz 97408 SHA256:c87988c99c9db6bd00effb67ad0a00012fcc24c1b014b30a0110c667138e2c67
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnutls28/3.5.5-2/
-- https://sources.debian.net/src/gnutls28/3.5.5-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.26-1`
 
@@ -1962,19 +1950,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.15.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.15.0-1.dsc' nghttp2_1.15.0-1.dsc 2224 SHA256:336af34c5f5c16eafe7f8087c45a9e7e34eb682eaccf6e6d7c0627f2609f35bf
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.15.0.orig.tar.bz2' nghttp2_1.15.0.orig.tar.bz2 1771704 SHA256:35d5e27b8c63722f3035ef98e73abf3ddfaed41983476d7b4948ebb102cbd250
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.15.0-1.debian.tar.xz' nghttp2_1.15.0-1.debian.tar.xz 11336 SHA256:b8e994d6792127764941bcf4bf58ddf2ab51dc42e57cef7d64dad7ff64cf2adc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.15.0-1/
-- https://sources.debian.net/src/nghttp2/1.15.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `nspr=2:4.12-6`
 
