@@ -1,9 +1,9 @@
-# `elasticsearch:2.4.1`
+# `elasticsearch:5.0.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3429053f4435687ce9112b36878f28a5280839ab8e31ef744f89be1459184a72`
-- Created: `2016-10-22T02:59:30.753964531Z`
+- Image ID: `sha256:3c1ce0d0adcce3f91f4639702b240fc3faaac3ef3918fc107d8a7feb0dc5569a`
+- Created: `2016-10-26T20:26:04.599896266Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["elasticsearch"]`
@@ -15,4 +15,4 @@
   - `JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1`
   - `CA_CERTIFICATES_JAVA_VERSION=20140324`
   - `GOSU_VERSION=1.7`
-  - `ELASTICSEARCH_VERSION=2.4.1`
+  - `ELASTICSEARCH_VERSION=5.0.0`
