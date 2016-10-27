@@ -1283,19 +1283,8 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.6.0-4
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.6.0-4.dsc' iproute2_4.6.0-4.dsc 2383 SHA256:21328e55f4f18cea980c0754c7c9779df3361404fea5c893e7afbee7734bd20b
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.6.0.orig.tar.xz' iproute2_4.6.0.orig.tar.xz 570960 SHA256:74fc6a8ad085be095a159f8158bbaf385b42af9e101619f233f1ae466829d406
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.6.0-4.debian.tar.xz' iproute2_4.6.0-4.debian.tar.xz 26592 SHA256:2ecfe720d613c5a9b70c7c4959be59c40fa42e59d5b14369ecc3f80338e06fa7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/iproute2/4.6.0-4/
-- https://sources.debian.net/src/iproute2/4.6.0-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `java-common=0.57`
 
@@ -2866,19 +2855,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=231-9
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_231-9.dsc' systemd_231-9.dsc 4443 SHA256:0c79d706caed0e10d39dfb4ef830fe8d177d80dc2833250c42df0304942d3606
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_231.orig.tar.gz' systemd_231.orig.tar.gz 4381464 SHA256:899733ad6c157cedbb89aec4efe3bc824dcfd65a1d6f6bebc7b043f7924e39b4
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_231-9.debian.tar.xz' systemd_231-9.debian.tar.xz 147884 SHA256:897a8f83bc5115e6e99ed1585884ca3c7257ea380837808b009c8ec4a7f55330
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/systemd/231-9/
-- https://sources.debian.net/src/systemd/231-9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8`
 
