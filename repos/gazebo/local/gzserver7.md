@@ -4541,14 +4541,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sudo=1.8.9p5-1ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.2.dsc' sudo_1.8.9p5-1ubuntu1.2.dsc 1392 SHA256:4b2f378c62fb8a2bddd3d310d15ff0ef86aa79f2d54d35cfccf3ac79d8ecd2ea
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5.orig.tar.gz' sudo_1.8.9p5.orig.tar.gz 2179066 SHA256:bc9d5c96de5f8b4d2b014f87a37870aef60d2891c869202454069150a21a5c21
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.2.debian.tar.xz' sudo_1.8.9p5-1ubuntu1.2.debian.tar.xz 33112 SHA256:4fb5020904c9076d1779552c9b237c501689552a466c0b485fcf82bf50126c6b
-```
 
 ### `dpkg` source package: `systemd=204-5ubuntu20.19`
 
