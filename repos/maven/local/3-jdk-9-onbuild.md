@@ -1101,19 +1101,8 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.1.15-4
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.15-4.dsc' gnupg2_2.1.15-4.dsc 3191 SHA256:b3f4e95084340dff2ca0be35c383b48d2d2af402b146ce05678888dd9286042a
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.15.orig.tar.bz2' gnupg2_2.1.15.orig.tar.bz2 5723689 SHA256:c28c1a208f1b8ad63bdb6b88d252f6734ff4d33de6b54e38494b11d49e00ffdd
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.15-4.debian.tar.bz2' gnupg2_2.1.15-4.debian.tar.bz2 80948 SHA256:0d4ec544425f48e3a67954d5c1d7c0580379ceea53f2ed65817cf252880ef754
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnupg2/2.1.15-4/
-- https://sources.debian.net/src/gnupg2/2.1.15-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls28=3.5.5-2`
 
@@ -1133,20 +1122,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.5-2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5-2.dsc' gnutls28_3.5.5-2.dsc 3115 SHA256:178311cac5d70091d5984536dafc2e0834a9926920628f593bd8b3b944dac7a3
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5.orig.tar.xz' gnutls28_3.5.5.orig.tar.xz 6974628 SHA256:86994fe7804ee16d2811e366b9bf2f75304f8e470ae0e3716d60ffeedac0e529
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5.orig.tar.xz.asc' gnutls28_3.5.5.orig.tar.xz.asc 287 SHA256:e875ac977d00a4557c2da5ce155d2d1872601e6234afbfa58ee9dd1359e295bd
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5-2.debian.tar.xz' gnutls28_3.5.5-2.debian.tar.xz 97408 SHA256:c87988c99c9db6bd00effb67ad0a00012fcc24c1b014b30a0110c667138e2c67
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnutls28/3.5.5-2/
-- https://sources.debian.net/src/gnutls28/3.5.5-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.26-1`
 
@@ -1309,19 +1286,8 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.6.0-4
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.6.0-4.dsc' iproute2_4.6.0-4.dsc 2383 SHA256:21328e55f4f18cea980c0754c7c9779df3361404fea5c893e7afbee7734bd20b
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.6.0.orig.tar.xz' iproute2_4.6.0.orig.tar.xz 570960 SHA256:74fc6a8ad085be095a159f8158bbaf385b42af9e101619f233f1ae466829d406
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.6.0-4.debian.tar.xz' iproute2_4.6.0-4.debian.tar.xz 26592 SHA256:2ecfe720d613c5a9b70c7c4959be59c40fa42e59d5b14369ecc3f80338e06fa7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/iproute2/4.6.0-4/
-- https://sources.debian.net/src/iproute2/4.6.0-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `java-common=0.57`
 
@@ -2272,19 +2238,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.15.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.15.0-1.dsc' nghttp2_1.15.0-1.dsc 2224 SHA256:336af34c5f5c16eafe7f8087c45a9e7e34eb682eaccf6e6d7c0627f2609f35bf
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.15.0.orig.tar.bz2' nghttp2_1.15.0.orig.tar.bz2 1771704 SHA256:35d5e27b8c63722f3035ef98e73abf3ddfaed41983476d7b4948ebb102cbd250
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.15.0-1.debian.tar.xz' nghttp2_1.15.0-1.debian.tar.xz 11336 SHA256:b8e994d6792127764941bcf4bf58ddf2ab51dc42e57cef7d64dad7ff64cf2adc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.15.0-1/
-- https://sources.debian.net/src/nghttp2/1.15.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `nspr=2:4.12-6`
 
@@ -2903,19 +2858,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=231-9
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_231-9.dsc' systemd_231-9.dsc 4443 SHA256:0c79d706caed0e10d39dfb4ef830fe8d177d80dc2833250c42df0304942d3606
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_231.orig.tar.gz' systemd_231.orig.tar.gz 4381464 SHA256:899733ad6c157cedbb89aec4efe3bc824dcfd65a1d6f6bebc7b043f7924e39b4
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_231-9.debian.tar.xz' systemd_231-9.debian.tar.xz 147884 SHA256:897a8f83bc5115e6e99ed1585884ca3c7257ea380837808b009c8ec4a7f55330
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/systemd/231-9/
-- https://sources.debian.net/src/systemd/231-9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8`
 
