@@ -79,14 +79,8 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.2.dsc' apparmor_2.10.95-0ubuntu2.2.dsc 3252 SHA256:0f97c174c7e6379a4e6f57a70ecbc40d0ac112c35051f6666f94050123990274
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.2.debian.tar.xz' apparmor_2.10.95-0ubuntu2.2.debian.tar.xz 92064 SHA256:38f93a6d28685a11cefb3e5c8c44587852e648bd49feeba9256d2027ab9e66a2
-```
 
 ### `dpkg` source package: `apt=1.2.12~ubuntu16.04.1`
 
