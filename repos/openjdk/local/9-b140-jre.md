@@ -921,8 +921,19 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnupg2=2.1.15-4
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.15-4.dsc' gnupg2_2.1.15-4.dsc 3191 SHA256:b3f4e95084340dff2ca0be35c383b48d2d2af402b146ce05678888dd9286042a
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.15.orig.tar.bz2' gnupg2_2.1.15.orig.tar.bz2 5723689 SHA256:c28c1a208f1b8ad63bdb6b88d252f6734ff4d33de6b54e38494b11d49e00ffdd
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.15-4.debian.tar.bz2' gnupg2_2.1.15-4.debian.tar.bz2 80948 SHA256:0d4ec544425f48e3a67954d5c1d7c0580379ceea53f2ed65817cf252880ef754
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/gnupg2/2.1.15-4/
+- https://sources.debian.net/src/gnupg2/2.1.15-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls28=3.5.5-2`
 
@@ -2342,8 +2353,19 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=231-9
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_231-9.dsc' systemd_231-9.dsc 4443 SHA256:0c79d706caed0e10d39dfb4ef830fe8d177d80dc2833250c42df0304942d3606
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_231.orig.tar.gz' systemd_231.orig.tar.gz 4381464 SHA256:899733ad6c157cedbb89aec4efe3bc824dcfd65a1d6f6bebc7b043f7924e39b4
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_231-9.debian.tar.xz' systemd_231-9.debian.tar.xz 147884 SHA256:897a8f83bc5115e6e99ed1585884ca3c7257ea380837808b009c8ec4a7f55330
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/systemd/231-9/
+- https://sources.debian.net/src/systemd/231-9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8`
 
