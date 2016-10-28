@@ -1533,19 +1533,8 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 - `ZLIB`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ghostscript=9.06~dfsg-2+deb8u3
-'http://security.debian.org/pool/updates/main/g/ghostscript/ghostscript_9.06~dfsg-2+deb8u3.dsc' ghostscript_9.06~dfsg-2+deb8u3.dsc 3015 SHA256:a689038dd7f76cc88b0a42f944ceab129d5ae63cbd712f1ef33fc74a52780dfe
-'http://security.debian.org/pool/updates/main/g/ghostscript/ghostscript_9.06~dfsg.orig.tar.gz' ghostscript_9.06~dfsg.orig.tar.gz 18454793 SHA256:4a98384df28f0a1cc90943292714311ce33d600c6358c24c80e182a40592dbbf
-'http://security.debian.org/pool/updates/main/g/ghostscript/ghostscript_9.06~dfsg-2+deb8u3.debian.tar.xz' ghostscript_9.06~dfsg-2+deb8u3.debian.tar.xz 96812 SHA256:2c5b8347f50d1773f537e4281e54165c9a35068523dcbc576be78ec9d2af8251
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/ghostscript/9.06~dfsg-2+deb8u3/
-- https://sources.debian.net/src/ghostscript/9.06~dfsg-2+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glew=1.10.0-3`
 
