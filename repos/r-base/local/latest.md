@@ -1007,15 +1007,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-6=6.2.0-6
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0-6.dsc' gcc-6_6.2.0-6.dsc 26156 SHA256:0c2d4bc203a0d958fb90253f9c22e9405dea98ffa9817ad3a737f98088001871
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0.orig.tar.gz' gcc-6_6.2.0.orig.tar.gz 82473068 SHA256:5c92f14fd520a90dceec8c76bbe400ab572bfb4095e332b73013d3cc59d0fda1
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0-6.diff.gz' gcc-6_6.2.0-6.diff.gz 4207704 SHA256:1128100115443a053818ce61e58bd968c9128fb77192ba0f6da7a31b26c75646
+'http://http.debian.net/debian/pool/main/g/gcc-6/gcc-6_6.2.0-6.dsc' gcc-6_6.2.0-6.dsc 26156 SHA256:0c2d4bc203a0d958fb90253f9c22e9405dea98ffa9817ad3a737f98088001871
+'http://http.debian.net/debian/pool/main/g/gcc-6/gcc-6_6.2.0.orig.tar.gz' gcc-6_6.2.0.orig.tar.gz 82473068 SHA256:5c92f14fd520a90dceec8c76bbe400ab572bfb4095e332b73013d3cc59d0fda1
+'http://http.debian.net/debian/pool/main/g/gcc-6/gcc-6_6.2.0-6.diff.gz' gcc-6_6.2.0-6.diff.gz 4207704 SHA256:1128100115443a053818ce61e58bd968c9128fb77192ba0f6da7a31b26c75646
 ```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-6/6.2.0-6/
-- https://sources.debian.net/src/gcc-6/6.2.0-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-defaults=1.163`
 
