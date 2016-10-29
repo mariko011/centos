@@ -970,19 +970,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`, `/usr/share/doc/l
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.2.0-6
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0-6.dsc' gcc-6_6.2.0-6.dsc 26156 SHA256:0c2d4bc203a0d958fb90253f9c22e9405dea98ffa9817ad3a737f98088001871
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0.orig.tar.gz' gcc-6_6.2.0.orig.tar.gz 82473068 SHA256:5c92f14fd520a90dceec8c76bbe400ab572bfb4095e332b73013d3cc59d0fda1
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0-6.diff.gz' gcc-6_6.2.0-6.diff.gz 4207704 SHA256:1128100115443a053818ce61e58bd968c9128fb77192ba0f6da7a31b26c75646
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-6/6.2.0-6/
-- https://sources.debian.net/src/gcc-6/6.2.0-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gdbm=1.8.3-14`
 
@@ -1101,8 +1090,19 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnupg2=2.1.15-4
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.15-4.dsc' gnupg2_2.1.15-4.dsc 3191 SHA256:b3f4e95084340dff2ca0be35c383b48d2d2af402b146ce05678888dd9286042a
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.15.orig.tar.bz2' gnupg2_2.1.15.orig.tar.bz2 5723689 SHA256:c28c1a208f1b8ad63bdb6b88d252f6734ff4d33de6b54e38494b11d49e00ffdd
+'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.15-4.debian.tar.bz2' gnupg2_2.1.15-4.debian.tar.bz2 80948 SHA256:0d4ec544425f48e3a67954d5c1d7c0580379ceea53f2ed65817cf252880ef754
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/gnupg2/2.1.15-4/
+- https://sources.debian.net/src/gnupg2/2.1.15-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls28=3.5.5-2`
 
@@ -2351,8 +2351,19 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssh=1:7.3p1-1
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.3p1-1.dsc' openssh_7.3p1-1.dsc 2884 SHA256:61e8414cb2ed2a72ee15053511d3a2f55ace4b8fb76fff2d901ec67d4a1cf5ba
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.3p1.orig.tar.gz' openssh_7.3p1.orig.tar.gz 1522617 SHA256:3ffb989a6dcaa69594c3b550d4855a5a2e1718ccdde7f5e36387b424220fbecc
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.3p1-1.debian.tar.xz' openssh_7.3p1-1.debian.tar.xz 153400 SHA256:a9a96b33427697afb344d6c82078abc54da411f108b19949c9f3378b947b4971
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/openssh/1:7.3p1-1/
+- https://sources.debian.net/src/openssh/1:7.3p1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssl=1.0.2j-1`
 
@@ -2858,8 +2869,19 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=231-9
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_231-9.dsc' systemd_231-9.dsc 4443 SHA256:0c79d706caed0e10d39dfb4ef830fe8d177d80dc2833250c42df0304942d3606
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_231.orig.tar.gz' systemd_231.orig.tar.gz 4381464 SHA256:899733ad6c157cedbb89aec4efe3bc824dcfd65a1d6f6bebc7b043f7924e39b4
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_231-9.debian.tar.xz' systemd_231-9.debian.tar.xz 147884 SHA256:897a8f83bc5115e6e99ed1585884ca3c7257ea380837808b009c8ec4a7f55330
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/systemd/231-9/
+- https://sources.debian.net/src/systemd/231-9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8`
 
