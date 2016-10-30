@@ -2966,19 +2966,8 @@ Licenses: (parsed from: `/usr/share/doc/r-base/copyright`, `/usr/share/doc/r-bas
 - `LGPL-2.1`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris r-base=3.3.1-1
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_3.3.1-1.dsc' r-base_3.3.1-1.dsc 2825 SHA256:f19020f7aa6d6c506b76a1f1594e08252162e7005984400e556c12967d7bbf43
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_3.3.1.orig.tar.gz' r-base_3.3.1.orig.tar.gz 29848329 SHA256:3dc59ae5831f5380f83c169bac2103ad052efe0ecec4ffa74bde4d85a0fda9e2
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_3.3.1-1.diff.gz' r-base_3.3.1-1.diff.gz 105559 SHA256:803fe1fa659f765727f64f069b1240c31f85e69ec39abf1b2ccbf2a683bc4c91
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/r-base/3.3.1-1/
-- https://sources.debian.net/src/r-base/3.3.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `r-cran-class=7.3-14-1`
 
