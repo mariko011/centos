@@ -1762,19 +1762,8 @@ Licenses: (parsed from: `/usr/share/doc/libsepol1/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libsepol=2.5-1
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_2.5-1.dsc' libsepol_2.5-1.dsc 1775 SHA256:2c13a381d737e1c37be0fc737c9000e832077363592c01effabcca9aae1022e9
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_2.5.orig.tar.gz' libsepol_2.5.orig.tar.gz 438730 SHA256:2bdeec56d0a08b082b93b40703b4b3329cc5562152f7254d8f6ef6b56afe850a
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_2.5-1.debian.tar.xz' libsepol_2.5-1.debian.tar.xz 13356 SHA256:0cf8d5d285c66d72290f2c5fd08ac0b690781352b5eda1c395cbaf7694851905
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libsepol/2.5-1/
-- https://sources.debian.net/src/libsepol/2.5-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libssh2=1.7.0-1`
 
