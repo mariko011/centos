@@ -239,7 +239,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		au
 ## `buildpack-deps:latest`
 
 ```console
-$ docker pull buildpack-deps@sha256:32c4f373ed55156c60faa65fa29517feb26d20004bfdde98cfb950bd2f38784d
+$ docker pull buildpack-deps@sha256:8df2ae129b937fb0b9243d64bf5b64087d6f971eb037d2b8ccd79595db411f21
 ```
 
 -	Platforms:
@@ -247,11 +247,11 @@ $ docker pull buildpack-deps@sha256:32c4f373ed55156c60faa65fa29517feb26d20004bfd
 
 ### `buildpack-deps:latest` - linux; amd64
 
--	Docker Version: 1.12.1
+-	Docker Version: 1.12.2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.1 MB (242147331 bytes)**  
+-	Total Size: **242.2 MB (242201686 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ae9d12fb4ab981b17d9ac34ff59484d0333decb9666c4d94d659aecb2892ae04`
+-	Image ID: `sha256:8de66b3d44d92a5b7ed8f5ebee20dee19051f854e8ad47532e84655144116473`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -263,8 +263,8 @@ CMD ["/bin/bash"]
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 21 Oct 2016 16:37:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 22 Oct 2016 02:35:40 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
+# Mon, 31 Oct 2016 21:26:48 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -280,9 +280,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		au
 		Last Modified: Fri, 21 Oct 2016 16:37:53 GMT  
 		Size: 42.5 MB (42500812 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6a5aab6cd0c9e8c0895dcbb6164cfaaf108910a09cc047037e0a1bf48b17ab0`  
-		Last Modified: Sat, 22 Oct 2016 02:36:21 GMT  
-		Size: 129.8 MB (129765263 bytes)  
+	-	`sha256:df720fc8e4f160444441c03d14894b21f295241ab4ff4d9f6e625f203c1fb944`  
+		Last Modified: Mon, 31 Oct 2016 21:38:14 GMT  
+		Size: 129.8 MB (129819618 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:precise-curl`
@@ -416,7 +416,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 ## `buildpack-deps:precise`
 
 ```console
-$ docker pull buildpack-deps@sha256:eab53f5d8aaa713afa84aee22edd69a4cb60426e1287f723398b24f82b0d81fc
+$ docker pull buildpack-deps@sha256:8e1723005b8d9861bc54afa1371149952263f586811fdc645597e97dac4038b3
 ```
 
 -	Platforms:
@@ -424,11 +424,11 @@ $ docker pull buildpack-deps@sha256:eab53f5d8aaa713afa84aee22edd69a4cb60426e1287
 
 ### `buildpack-deps:precise` - linux; amd64
 
--	Docker Version: 1.12.1
+-	Docker Version: 1.12.2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.3 MB (157259397 bytes)**  
+-	Total Size: **157.3 MB (157277036 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8c229373ba66ad4c82dc0ec18ce63f5ee789f6fc72213f3385ef6680e658e406`
+-	Image ID: `sha256:ca0e9336dea1181a1753429337f48616d1e86f241717c8749e79cacf74ff6062`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -448,8 +448,8 @@ CMD ["/bin/bash"]
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 # Mon, 26 Sep 2016 21:38:10 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 26 Sep 2016 22:45:55 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
+# Mon, 31 Oct 2016 21:28:57 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -481,9 +481,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		au
 		Last Modified: Mon, 26 Sep 2016 21:38:29 GMT  
 		Size: 30.8 MB (30846490 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:293a05641e0f50b02b7cbff23932e6cefe62c395cf310e2c53612b70be46f0a5`  
-		Last Modified: Mon, 26 Sep 2016 22:46:26 GMT  
-		Size: 82.2 MB (82160734 bytes)  
+	-	`sha256:317cb0a139eecf24ee687cb197b4255992d6270bb5f1f59073673f11afd6418e`  
+		Last Modified: Mon, 31 Oct 2016 21:39:35 GMT  
+		Size: 82.2 MB (82178373 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:sid-curl`
@@ -569,7 +569,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 ## `buildpack-deps:sid`
 
 ```console
-$ docker pull buildpack-deps@sha256:6486704af2cca2cf250f6601d63d6952847c5a5780fa2e075c85edfa4a30c83c
+$ docker pull buildpack-deps@sha256:136ae2f96dad2c666653bf097400386a664f948a4116522586fc12daab8d3955
 ```
 
 -	Platforms:
@@ -577,11 +577,11 @@ $ docker pull buildpack-deps@sha256:6486704af2cca2cf250f6601d63d6952847c5a5780fa
 
 ### `buildpack-deps:sid` - linux; amd64
 
--	Docker Version: 1.12.1
+-	Docker Version: 1.12.2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **309.7 MB (309687373 bytes)**  
+-	Total Size: **312.6 MB (312584873 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a87bbc884ae1a901c91408668c1a4761b67111ff116aa8d4f39a8937c55c5fba`
+-	Image ID: `sha256:978864212cf590cb761de07d1e5ad9b35819ec430e35894484337c85aff8891a`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -593,8 +593,8 @@ CMD ["/bin/bash"]
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 # Mon, 17 Oct 2016 23:40:37 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 18 Oct 2016 00:18:01 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
+# Mon, 31 Oct 2016 21:30:39 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -610,9 +610,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		au
 		Last Modified: Mon, 17 Oct 2016 23:41:03 GMT  
 		Size: 48.3 MB (48288494 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08994e63e0b2b1e7dd620834b92604ea646df5c65e540048f67fd10a3a22465d`  
-		Last Modified: Tue, 18 Oct 2016 00:18:57 GMT  
-		Size: 197.6 MB (197622829 bytes)  
+	-	`sha256:104b4dcc54477251d7ef5e2ee4b62b6e37d7c6b181dc9ef7dc5a55b6ef1375b0`  
+		Last Modified: Mon, 31 Oct 2016 21:41:03 GMT  
+		Size: 200.5 MB (200520329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:stretch-curl`
@@ -698,7 +698,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 ## `buildpack-deps:stretch`
 
 ```console
-$ docker pull buildpack-deps@sha256:16125c5c3531bcd33a6b15dde4333bf33dedf57b4a7f3c2cee359c1f647d5bfb
+$ docker pull buildpack-deps@sha256:e19a7723c487dfa14b665a2467bb9df538e369d842b32d343233cf6dc3e6433a
 ```
 
 -	Platforms:
@@ -706,11 +706,11 @@ $ docker pull buildpack-deps@sha256:16125c5c3531bcd33a6b15dde4333bf33dedf57b4a7f
 
 ### `buildpack-deps:stretch` - linux; amd64
 
--	Docker Version: 1.12.1
+-	Docker Version: 1.12.2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **309.2 MB (309154571 bytes)**  
+-	Total Size: **311.9 MB (311904646 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4d87c762f80e572747148ec97010dc2ed7ee7637de00e876df9ba79152df4524`
+-	Image ID: `sha256:b9bc308b29314a8709573e76e39973a68513015a55f582fb43eaee9d0e131b0e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -722,8 +722,8 @@ CMD ["/bin/bash"]
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 # Mon, 17 Oct 2016 23:42:12 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 18 Oct 2016 00:20:47 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
+# Mon, 31 Oct 2016 21:31:50 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -739,9 +739,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		au
 		Last Modified: Mon, 17 Oct 2016 23:42:41 GMT  
 		Size: 48.2 MB (48243962 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c500387ed332e221d1e132445b74839ae7ed1e6261f1a11e8efb09fd76024ab7`  
-		Last Modified: Tue, 18 Oct 2016 00:21:46 GMT  
-		Size: 197.1 MB (197136740 bytes)  
+	-	`sha256:d1cf8f61b2b5d175d4994b904729c3cc834629ddaf8f1ed712c68f45f02e0754`  
+		Last Modified: Mon, 31 Oct 2016 21:42:35 GMT  
+		Size: 199.9 MB (199886815 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:trusty-curl`
@@ -875,7 +875,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 ## `buildpack-deps:trusty`
 
 ```console
-$ docker pull buildpack-deps@sha256:d1a2aa86312f69bb563227c56583acd88c82618ab48cebbf1f48d185c2beec2a
+$ docker pull buildpack-deps@sha256:6ad1fd24aeb60a0f3d9d592891478052f3a4d49e35e0739f40bd7a3cb3b43a41
 ```
 
 -	Platforms:
@@ -883,11 +883,11 @@ $ docker pull buildpack-deps@sha256:d1a2aa86312f69bb563227c56583acd88c82618ab48c
 
 ### `buildpack-deps:trusty` - linux; amd64
 
--	Docker Version: 1.12.1
+-	Docker Version: 1.12.2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **199.2 MB (199168372 bytes)**  
+-	Total Size: **199.2 MB (199199613 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea16a5d0fcfc25527517f6b0fc0e02f29c9789f82dbdfb96247321f419d84bfc`
+-	Image ID: `sha256:5f737805da6fcfb113da1b33a99c40875e737b62b1b0b1f7e1d5e543f76d89e7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -907,8 +907,8 @@ CMD ["/bin/bash"]
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 # Thu, 13 Oct 2016 21:49:26 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 14 Oct 2016 00:01:21 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
+# Mon, 31 Oct 2016 21:33:41 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -940,9 +940,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		au
 		Last Modified: Thu, 13 Oct 2016 21:49:44 GMT  
 		Size: 29.0 MB (29003104 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e61f597b3aba58926141e574f8b2ee3b6ab3a0e1504aeaede71e41bc8248e95`  
-		Last Modified: Fri, 14 Oct 2016 00:01:54 GMT  
-		Size: 99.8 MB (99790243 bytes)  
+	-	`sha256:53125365e10a0fd977d0be4368d067df3683952bf4d2445a8324c278853d1637`  
+		Last Modified: Mon, 31 Oct 2016 21:43:44 GMT  
+		Size: 99.8 MB (99821484 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:wheezy-curl`
@@ -1028,7 +1028,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 ## `buildpack-deps:wheezy`
 
 ```console
-$ docker pull buildpack-deps@sha256:b0dd9403a3a746e695cf4a767f053a69b3d276cbb264c7e9e3a8984927ea00c8
+$ docker pull buildpack-deps@sha256:06f30bb2df99d18f8f310a9217117e9fc9723e38f38d8b13c24a4d132c46c3ad
 ```
 
 -	Platforms:
@@ -1036,11 +1036,11 @@ $ docker pull buildpack-deps@sha256:b0dd9403a3a746e695cf4a767f053a69b3d276cbb264
 
 ### `buildpack-deps:wheezy` - linux; amd64
 
--	Docker Version: 1.12.1
+-	Docker Version: 1.12.2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **176.6 MB (176580936 bytes)**  
+-	Total Size: **177.5 MB (177540965 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:080e4881a75b2b896ed6622bc80e916db75d0e1d4993c34778eb9a989c2f3cf2`
+-	Image ID: `sha256:bf965da4a624d1966a0ea3d7123ee821887b68976950c0edb69c5622e3270ca8`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -1052,8 +1052,8 @@ CMD ["/bin/bash"]
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 21 Oct 2016 16:39:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 22 Oct 2016 02:37:43 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
+# Mon, 31 Oct 2016 21:35:07 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -1069,9 +1069,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		au
 		Last Modified: Fri, 21 Oct 2016 16:39:37 GMT  
 		Size: 37.4 MB (37366571 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e259933ab762f954d54768e368104983fddc34145c400e221b2d4d513d79677`  
-		Last Modified: Sat, 22 Oct 2016 02:38:22 GMT  
-		Size: 95.3 MB (95250706 bytes)  
+	-	`sha256:5d5d933df43eb4719cde4b56b9745a76c926dd7e623ff5bbe269d83e19496d1d`  
+		Last Modified: Mon, 31 Oct 2016 21:44:50 GMT  
+		Size: 96.2 MB (96210735 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:xenial-curl`
@@ -1205,7 +1205,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 ## `buildpack-deps:xenial`
 
 ```console
-$ docker pull buildpack-deps@sha256:f37223156dcfbb0088b6059178b37d7c4096ae8ecae3bb2445111452a08c315f
+$ docker pull buildpack-deps@sha256:e02efcac794724f213fc03774569441c807ab7c4758f80968038f307d748a2b9
 ```
 
 -	Platforms:
@@ -1213,11 +1213,11 @@ $ docker pull buildpack-deps@sha256:f37223156dcfbb0088b6059178b37d7c4096ae8ecae3
 
 ### `buildpack-deps:xenial` - linux; amd64
 
--	Docker Version: 1.12.1
+-	Docker Version: 1.12.2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **231.4 MB (231357521 bytes)**  
+-	Total Size: **236.5 MB (236512128 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e493caa3b903e96a7b280465a3a90c6a75cb2d77aa8641805ce8b5a1b7c9dbec`
+-	Image ID: `sha256:e7cca558b01aea93ca103eb04376eab228e7e83ff762fc955ecd1046be4dde2d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -1237,8 +1237,8 @@ CMD ["/bin/bash"]
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 # Thu, 13 Oct 2016 21:50:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 14 Oct 2016 00:03:00 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
+# Mon, 31 Oct 2016 21:36:50 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -1270,7 +1270,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		au
 		Last Modified: Thu, 13 Oct 2016 21:51:12 GMT  
 		Size: 41.2 MB (41207190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a3181eb4a018db01386389645450fc5369c6cf691aa9ce312464e53db924878`  
-		Last Modified: Fri, 14 Oct 2016 00:03:43 GMT  
-		Size: 133.0 MB (133045519 bytes)  
+	-	`sha256:f43bab75573a5f7d962c87a52558d70263a319a8bafc1c347989642ba1cf0a33`  
+		Last Modified: Mon, 31 Oct 2016 21:46:06 GMT  
+		Size: 138.2 MB (138200126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
