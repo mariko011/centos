@@ -273,19 +273,8 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.26.dfsg1-15
-'http://httpredir.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1-15.dsc' cyrus-sasl2_2.1.26.dfsg1-15.dsc 3433 SHA256:4a6fbe05074f04521d5ba4a8507080dfda4d9be0e93bf19074b539c915220ab8
-'http://httpredir.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1.orig.tar.gz' cyrus-sasl2_2.1.26.dfsg1.orig.tar.gz 1494337 SHA256:172c39555012f479543ce7305949db75df708771fe8f8b34248027f09e53bb85
-'http://httpredir.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1-15.debian.tar.xz' cyrus-sasl2_2.1.26.dfsg1-15.debian.tar.xz 96008 SHA256:edfee3d077d084c75e664df1c7228a1cf16556dae6eb479a004350593e056636
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cyrus-sasl2/2.1.26.dfsg1-15/
-- https://sources.debian.net/src/cyrus-sasl2/2.1.26.dfsg1-15/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `dash=0.5.8-2.3`
 
