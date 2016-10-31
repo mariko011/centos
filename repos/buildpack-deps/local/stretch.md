@@ -680,19 +680,8 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.26.dfsg1-15
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1-15.dsc' cyrus-sasl2_2.1.26.dfsg1-15.dsc 3433 SHA256:4a6fbe05074f04521d5ba4a8507080dfda4d9be0e93bf19074b539c915220ab8
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1.orig.tar.gz' cyrus-sasl2_2.1.26.dfsg1.orig.tar.gz 1494337 SHA256:172c39555012f479543ce7305949db75df708771fe8f8b34248027f09e53bb85
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1-15.debian.tar.xz' cyrus-sasl2_2.1.26.dfsg1-15.debian.tar.xz 96008 SHA256:edfee3d077d084c75e664df1c7228a1cf16556dae6eb479a004350593e056636
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cyrus-sasl2/2.1.26.dfsg1-15/
-- https://sources.debian.net/src/cyrus-sasl2/2.1.26.dfsg1-15/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `dash=0.5.8-2.3`
 
@@ -1112,19 +1101,8 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 - `MIT-Old-Style-with-legal-disclaimer-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris file=1:5.28-4
-'http://deb.debian.org/debian/pool/main/f/file/file_5.28-4.dsc' file_5.28-4.dsc 2117 SHA256:7f2e50fb978f13a9b4183302900c3e3b2d593752d198ae80c7a5386d7903f5d5
-'http://deb.debian.org/debian/pool/main/f/file/file_5.28.orig.tar.xz' file_5.28.orig.tar.xz 568344 SHA256:e27029925606b5e2f25b4e4b43a813ff2bd904c9d12ac08bba3031525fad5f0a
-'http://deb.debian.org/debian/pool/main/f/file/file_5.28-4.debian.tar.xz' file_5.28-4.debian.tar.xz 29904 SHA256:7996432cad90d341020c91e1cbaad8d9a9f535966e4a7e8ba85da5599fb14476
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/file/1:5.28-4/
-- https://sources.debian.net/src/file/1:5.28-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20160703-2`
 
@@ -1738,19 +1716,8 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`)
 - `LGPL-2.1+`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gtk+3.0=3.22.1-1
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.1-1.dsc' gtk+3.0_3.22.1-1.dsc 3916 SHA256:f9f14eda2778439cfd51d5148b25f0620c92d1c10a24ecb0f4d1502e908b76b5
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.1.orig.tar.xz' gtk+3.0_3.22.1.orig.tar.xz 20779708 SHA256:127c8c5cfc32681f9ab3cb542eb0d5c16c1c02faba68bf8fcac9a3cf278ef471
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.1-1.debian.tar.xz' gtk+3.0_3.22.1-1.debian.tar.xz 142756 SHA256:da58be1c335ace9c850814d8ca83dfe0ecff4ee533b3317730699e29b0f12dab
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gtk+3.0/3.22.1-1/
-- https://sources.debian.net/src/gtk+3.0/3.22.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gts=0.7.6+darcs121130-1.2`
 
@@ -3945,19 +3912,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.15.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.15.0-1.dsc' nghttp2_1.15.0-1.dsc 2224 SHA256:336af34c5f5c16eafe7f8087c45a9e7e34eb682eaccf6e6d7c0627f2609f35bf
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.15.0.orig.tar.bz2' nghttp2_1.15.0.orig.tar.bz2 1771704 SHA256:35d5e27b8c63722f3035ef98e73abf3ddfaed41983476d7b4948ebb102cbd250
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.15.0-1.debian.tar.xz' nghttp2_1.15.0-1.debian.tar.xz 11336 SHA256:b8e994d6792127764941bcf4bf58ddf2ab51dc42e57cef7d64dad7ff64cf2adc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.15.0-1/
-- https://sources.debian.net/src/nghttp2/1.15.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openexr=2.2.0-11`
 

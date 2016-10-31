@@ -2783,19 +2783,8 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libsemanage=2.5-1
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.5-1.dsc' libsemanage_2.5-1.dsc 2297 SHA256:fff73764c9415f150b251490c1bb89d20401404ff4f6e4fd8ad54d52df955d35
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.5.orig.tar.gz' libsemanage_2.5.orig.tar.gz 152884 SHA256:46e2f36254369b6e91d1eea0460c262b139361b055a3a67d3ceea2d8ef72e006
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.5-1.debian.tar.xz' libsemanage_2.5-1.debian.tar.xz 16328 SHA256:e39babffb2bafbf36792adffec4e6ab2c09c87a2c27275fb775c35e601f746e0
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libsemanage/2.5-1/
-- https://sources.debian.net/src/libsemanage/2.5-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libsepol=2.5-1`
 
@@ -2808,19 +2797,8 @@ Licenses: (parsed from: `/usr/share/doc/libsepol1/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libsepol=2.5-1
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_2.5-1.dsc' libsepol_2.5-1.dsc 1775 SHA256:2c13a381d737e1c37be0fc737c9000e832077363592c01effabcca9aae1022e9
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_2.5.orig.tar.gz' libsepol_2.5.orig.tar.gz 438730 SHA256:2bdeec56d0a08b082b93b40703b4b3329cc5562152f7254d8f6ef6b56afe850a
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_2.5-1.debian.tar.xz' libsepol_2.5-1.debian.tar.xz 13356 SHA256:0cf8d5d285c66d72290f2c5fd08ac0b690781352b5eda1c395cbaf7694851905
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libsepol/2.5-1/
-- https://sources.debian.net/src/libsepol/2.5-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libsigsegv=2.10-5`
 
@@ -3315,19 +3293,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-2
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.dsc' libxml2_2.9.4+dfsg1-2.dsc 2498 SHA256:650aa2ad7a9041d17989ad8c5899f9eaef1bf3bbf64d2d5416e1ebcc563a5cd2
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.debian.tar.xz' libxml2_2.9.4+dfsg1-2.debian.tar.xz 25032 SHA256:bed6b4f17000fa0e96258bad162909e8bd9b4bcecc129c78210c9836e0b9b0af
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2/
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxpm=1:3.5.11-1`
 
@@ -3413,19 +3380,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxslt=1.1.29-1
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.29-1.dsc' libxslt_1.1.29-1.dsc 2008 SHA256:5e338b41be35a2994c546673dee6682303f0849df9a78d4664e6924e4e3eaafd
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.29.orig.tar.gz' libxslt_1.1.29.orig.tar.gz 3428524 SHA256:b5976e3857837e7617b29f2249ebb5eeac34e249208d31f1fbf7a6ba7a4090ce
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.29-1.debian.tar.xz' libxslt_1.1.29-1.debian.tar.xz 27388 SHA256:484c2fe11d32e1d60608c0eb4766140e5c0208385259cdbf9ea08604657f03a9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libxslt/1.1.29-1/
-- https://sources.debian.net/src/libxslt/1.1.29-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxt=1:1.1.5-1`
 

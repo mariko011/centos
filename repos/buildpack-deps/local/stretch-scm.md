@@ -447,19 +447,8 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.26.dfsg1-15
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1-15.dsc' cyrus-sasl2_2.1.26.dfsg1-15.dsc 3433 SHA256:4a6fbe05074f04521d5ba4a8507080dfda4d9be0e93bf19074b539c915220ab8
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1.orig.tar.gz' cyrus-sasl2_2.1.26.dfsg1.orig.tar.gz 1494337 SHA256:172c39555012f479543ce7305949db75df708771fe8f8b34248027f09e53bb85
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1-15.debian.tar.xz' cyrus-sasl2_2.1.26.dfsg1-15.debian.tar.xz 96008 SHA256:edfee3d077d084c75e664df1c7228a1cf16556dae6eb479a004350593e056636
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cyrus-sasl2/2.1.26.dfsg1-15/
-- https://sources.debian.net/src/cyrus-sasl2/2.1.26.dfsg1-15/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `dash=0.5.8-2.3`
 
@@ -1794,19 +1783,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.15.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.15.0-1.dsc' nghttp2_1.15.0-1.dsc 2224 SHA256:336af34c5f5c16eafe7f8087c45a9e7e34eb682eaccf6e6d7c0627f2609f35bf
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.15.0.orig.tar.bz2' nghttp2_1.15.0.orig.tar.bz2 1771704 SHA256:35d5e27b8c63722f3035ef98e73abf3ddfaed41983476d7b4948ebb102cbd250
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.15.0-1.debian.tar.xz' nghttp2_1.15.0-1.debian.tar.xz 11336 SHA256:b8e994d6792127764941bcf4bf58ddf2ab51dc42e57cef7d64dad7ff64cf2adc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.15.0-1/
-- https://sources.debian.net/src/nghttp2/1.15.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.42+dfsg-2`
 
