@@ -1737,19 +1737,8 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libsemanage=2.5-1
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.5-1.dsc' libsemanage_2.5-1.dsc 2297 SHA256:fff73764c9415f150b251490c1bb89d20401404ff4f6e4fd8ad54d52df955d35
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.5.orig.tar.gz' libsemanage_2.5.orig.tar.gz 152884 SHA256:46e2f36254369b6e91d1eea0460c262b139361b055a3a67d3ceea2d8ef72e006
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.5-1.debian.tar.xz' libsemanage_2.5-1.debian.tar.xz 16328 SHA256:e39babffb2bafbf36792adffec4e6ab2c09c87a2c27275fb775c35e601f746e0
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libsemanage/2.5-1/
-- https://sources.debian.net/src/libsemanage/2.5-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libsepol=2.5-1`
 
@@ -1762,19 +1751,8 @@ Licenses: (parsed from: `/usr/share/doc/libsepol1/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libsepol=2.5-1
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_2.5-1.dsc' libsepol_2.5-1.dsc 1775 SHA256:2c13a381d737e1c37be0fc737c9000e832077363592c01effabcca9aae1022e9
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_2.5.orig.tar.gz' libsepol_2.5.orig.tar.gz 438730 SHA256:2bdeec56d0a08b082b93b40703b4b3329cc5562152f7254d8f6ef6b56afe850a
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_2.5-1.debian.tar.xz' libsepol_2.5-1.debian.tar.xz 13356 SHA256:0cf8d5d285c66d72290f2c5fd08ac0b690781352b5eda1c395cbaf7694851905
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libsepol/2.5-1/
-- https://sources.debian.net/src/libsepol/2.5-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libssh2=1.7.0-1`
 
@@ -2272,19 +2250,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.26-2
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26-2.dsc' nss_3.26-2.dsc 2191 SHA256:82dded885b438276f3909a5b26f87774d91858e3c2790102f0b5d1df7d08534f
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26.orig.tar.gz' nss_3.26.orig.tar.gz 7386943 SHA256:91783a570ab953693eb977ce47c501f04c104cec287fa011c91bcc8970d1c564
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26-2.debian.tar.xz' nss_3.26-2.debian.tar.xz 25576 SHA256:636189bba23df6845a91765c975fc7dc51077be06b82f7d801b2422de521974a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nss/2:3.26-2/
-- https://sources.debian.net/src/nss/2:3.26-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openjdk-9=9~b140-1`
 
@@ -2300,19 +2267,8 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jdk-headless/copyright`, `/usr
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openjdk-9=9~b140-1
-'http://httpredir.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b140-1.dsc' openjdk-9_9~b140-1.dsc 4345 SHA256:deb1ee753409921f7d0653781badcd45e3067a6a834bedc414572e1d7df856e9
-'http://httpredir.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b140.orig.tar.gz' openjdk-9_9~b140.orig.tar.gz 72379416 SHA256:a69e0bfa3991b47228bbefdf9e6b0cd243bd669e566b9e1bb07ad32d4e054b47
-'http://httpredir.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b140-1.debian.tar.xz' openjdk-9_9~b140-1.debian.tar.xz 188716 SHA256:d5d020d66ffade5b2ccee75b4682df8804b778cdccd5e8a558f3bb92450b45f5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openjdk-9/9~b140-1/
-- https://sources.debian.net/src/openjdk-9/9~b140-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.42+dfsg-2`
 
