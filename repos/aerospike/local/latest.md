@@ -153,13 +153,8 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-files=9.4ubuntu4.2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.2.dsc' base-files_9.4ubuntu4.2.dsc 1557 SHA256:88badae89a8b32406cd3a6cdd7e77e25168e7cc9396d3690c80569bf761d9d52
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.2.tar.xz' base-files_9.4ubuntu4.2.tar.xz 62920 SHA256:3b7da5e75a2aa6d6edb8f5f59885197d1da7921214f4df350face977fd077990
-```
 
 ### `dpkg` source package: `base-passwd=3.5.39`
 
