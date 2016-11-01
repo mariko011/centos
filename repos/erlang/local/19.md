@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:53ca923009aad9c77cd22d9adbb9603ba8b73b98e527095ca91a67357f4e72f1`
-- Created: `2016-10-22T03:26:52.364819995Z`
+- Image ID: `sha256:ae25e98df8e270e3bb988872596f7bf8d75ebfabca66bfb7b1ecde78de625f24`
+- Created: `2016-11-01T02:08:50.839430649Z`
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
@@ -1223,9 +1223,10 @@ Likely also available for browsing at:
 
 Binary Packages:
 
+- `libgdbm-dev=1.8.3-13.1`
 - `libgdbm3:amd64=1.8.3-13.1`
 
-Licenses: (parsed from: `/usr/share/doc/libgdbm3/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libgdbm-dev/copyright`, `/usr/share/doc/libgdbm3/copyright`)
 
 - `GPL-2`
 
