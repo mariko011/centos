@@ -1,9 +1,9 @@
-# `postgres:9.6.0`
+# `postgres:9.6.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bff88803c2dfb3174fc38adef3a080640e89c712e4d5b902582bf5d4a66738a0`
-- Created: `2016-10-22T00:20:17.013863046Z`
+- Image ID: `sha256:0267f82ab721308a5a6e1bf4e0ad82223315c9a81fdf6d912d6ebcbdf788c37d`
+- Created: `2016-10-31T23:37:47.008575812Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["postgres"]`
@@ -12,7 +12,7 @@
   - `GOSU_VERSION=1.7`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=9.6`
-  - `PG_VERSION=9.6.0-1.pgdg80+1`
+  - `PG_VERSION=9.6.1-1.pgdg80+1`
   - `PGDATA=/var/lib/postgresql/data`
 
 ## `dpkg` (`.deb`-based packages)
@@ -2758,14 +2758,14 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/popt/1.16-10/
 - https://sources.debian.net/src/popt/1.16-10/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `postgresql-9.6=9.6.0-1.pgdg80+1`
+### `dpkg` source package: `postgresql-9.6=9.6.1-1.pgdg80+1`
 
 Binary Packages:
 
-- `libpq5:amd64=9.6.0-1.pgdg80+1`
-- `postgresql-9.6=9.6.0-1.pgdg80+1`
-- `postgresql-client-9.6=9.6.0-1.pgdg80+1`
-- `postgresql-contrib-9.6=9.6.0-1.pgdg80+1`
+- `libpq5:amd64=9.6.1-1.pgdg80+1`
+- `postgresql-9.6=9.6.1-1.pgdg80+1`
+- `postgresql-client-9.6=9.6.1-1.pgdg80+1`
+- `postgresql-contrib-9.6=9.6.1-1.pgdg80+1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-9.6/copyright`, `/usr/share/doc/postgresql-client-9.6/copyright`, `/usr/share/doc/postgresql-contrib-9.6/copyright`)
 
@@ -2784,8 +2784,14 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 - `nagaysau-ishii`
 - `rijndael`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-9.6=9.6.1-1.pgdg80+1
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.1-1.pgdg80+1.dsc' postgresql-9.6_9.6.1-1.pgdg80+1.dsc 2714 SHA256:8015e4f3b697f7908f60ec1f81d953ff17d862f2e3153c8d855716debfc96a8e
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.1.orig.tar.bz2' postgresql-9.6_9.6.1.orig.tar.bz2 19260568 SHA256:e5101e0a49141fc12a7018c6dad594694d3a3325f5ab71e93e0e51bd94e51fcd
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.1-1.pgdg80+1.debian.tar.xz' postgresql-9.6_9.6.1-1.pgdg80+1.debian.tar.xz 20264 SHA256:0876a2368a770bf45c4609388482cf9a0f86e45e25e086d89f7a7b03b426d5ba
+```
 
 ### `dpkg` source package: `postgresql-common=177.pgdg80+1`
 
