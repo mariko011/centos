@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7794119dca3b5c82b8ec143838973c966cf14c13f34e6867111c7dbbf5bbf86b`
-- Created: `2016-10-14T00:16:11.605978624Z`
+- Image ID: `sha256:909b1b6a129a6c2d1ce40f5dbeb947c2f166053dfb13c95151c041c1be05c45e`
+- Created: `2016-11-01T02:22:31.203904242Z`
 - Arch: `linux`/`amd64`
 - Command: `["fsharpi"]`
 - Environment:
@@ -1321,9 +1321,10 @@ $ apt-get source -qq --print-uris gconf=3.2.6-0ubuntu2
 
 Binary Packages:
 
+- `libgdbm-dev=1.8.3-12build1`
 - `libgdbm3:amd64=1.8.3-12build1`
 
-Licenses: (parsed from: `/usr/share/doc/libgdbm3/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libgdbm-dev/copyright`, `/usr/share/doc/libgdbm3/copyright`)
 
 - `GPL-2`
 
@@ -3838,18 +3839,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.4-3ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.4-3ubuntu3.1.debian.tar.gz' libyaml_0.1.4-3ubuntu3.1.debian.tar.gz 6404 SHA256:816422e1c743180409aff9247f3a298c8f98260d91da29c7315ce8bd576d53c2
 ```
 
-### `dpkg` source package: `linux=3.13.0-98.145`
+### `dpkg` source package: `linux=3.13.0-100.147`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-98.145`
+- `linux-libc-dev:amd64=3.13.0-100.147`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.13.0-100.147
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-100.147.dsc' linux_3.13.0-100.147.dsc 8127 SHA256:482922098505716d1c2b08ee066bbb42393d9ba548a8aadd81ff688632488338
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-100.147.diff.gz' linux_3.13.0-100.147.diff.gz 9322527 SHA256:b967867db1d3657660d9a024aaf0a388fff42e5df887ac7bb4029a7a9f15a637
+```
 
 ### `dpkg` source package: `lockfile-progs=0.1.17`
 
@@ -4324,13 +4331,13 @@ $ apt-get source -qq --print-uris mpfr4=3.1.2-1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_3.1.2-1.debian.tar.gz' mpfr4_3.1.2-1.debian.tar.gz 13473 SHA256:91967c4fe85996504574e882491527d09dad835b4ba05bd4145f3ae8a3f5db0e
 ```
 
-### `dpkg` source package: `mysql-5.5=5.5.52-0ubuntu0.14.04.1`
+### `dpkg` source package: `mysql-5.5=5.5.53-0ubuntu0.14.04.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.5.52-0ubuntu0.14.04.1`
-- `libmysqlclient18:amd64=5.5.52-0ubuntu0.14.04.1`
-- `mysql-common=5.5.52-0ubuntu0.14.04.1`
+- `libmysqlclient-dev=5.5.53-0ubuntu0.14.04.1`
+- `libmysqlclient18:amd64=5.5.53-0ubuntu0.14.04.1`
+- `mysql-common=5.5.53-0ubuntu0.14.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -4348,8 +4355,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.5=5.5.53-0ubuntu0.14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.53-0ubuntu0.14.04.1.dsc' mysql-5.5_5.5.53-0ubuntu0.14.04.1.dsc 3173 SHA256:916b1b652861ecff9097895858f51d3854bc93cf54169d7555be1384d84f240f
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.53.orig.tar.gz' mysql-5.5_5.5.53.orig.tar.gz 21035716 SHA256:a7a86dd42524e698c9dd8dab2520e6e75377cde077ed71eaf5a3b5a3d1f7d6ea
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.53-0ubuntu0.14.04.1.debian.tar.gz' mysql-5.5_5.5.53-0ubuntu0.14.04.1.debian.tar.gz 314427 SHA256:212c492a208672462046fe54f48bdc087ccbb453d2b1bf11605e96e43da5665d
+```
 
 ### `dpkg` source package: `ncurses=5.9+20140118-1ubuntu1`
 
