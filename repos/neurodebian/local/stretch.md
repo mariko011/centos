@@ -633,19 +633,8 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`)
 - `RFC-Reference`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.1.11-7
-'http://httpredir.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.11-7.dsc' gnupg2_2.1.11-7.dsc 2992 SHA256:4f8da8792e62c8c810c8a73179cb1b33be43f0532b8d101b1a5c37713c83fece
-'http://httpredir.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.11.orig.tar.bz2' gnupg2_2.1.11.orig.tar.bz2 5224007 SHA256:b7b0fb2c8c5d47d7ec916d4a1097c0ddcb94a12bb1c0ac424ad86b1ee316b61a
-'http://httpredir.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.11-7.debian.tar.bz2' gnupg2_2.1.11-7.debian.tar.bz2 34188 SHA256:10421a7bca0280a4f229f101e301d9b11adf8c9287ac320719f37e62e46fa401
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnupg2/2.1.11-7/
-- https://sources.debian.net/src/gnupg2/2.1.11-7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnupg=1.4.20-6`
 
@@ -811,19 +800,8 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.6.0-4
-'http://httpredir.debian.org/debian/pool/main/i/iproute2/iproute2_4.6.0-4.dsc' iproute2_4.6.0-4.dsc 2383 SHA256:21328e55f4f18cea980c0754c7c9779df3361404fea5c893e7afbee7734bd20b
-'http://httpredir.debian.org/debian/pool/main/i/iproute2/iproute2_4.6.0.orig.tar.xz' iproute2_4.6.0.orig.tar.xz 570960 SHA256:74fc6a8ad085be095a159f8158bbaf385b42af9e101619f233f1ae466829d406
-'http://httpredir.debian.org/debian/pool/main/i/iproute2/iproute2_4.6.0-4.debian.tar.xz' iproute2_4.6.0-4.debian.tar.xz 26592 SHA256:2ecfe720d613c5a9b70c7c4959be59c40fa42e59d5b14369ecc3f80338e06fa7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/iproute2/4.6.0-4/
-- https://sources.debian.net/src/iproute2/4.6.0-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libassuan=2.4.3-1`
 
@@ -895,19 +873,8 @@ Licenses: (parsed from: `/usr/share/doc/libffi6/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libffi=3.2.1-4
-'http://httpredir.debian.org/debian/pool/main/libf/libffi/libffi_3.2.1-4.dsc' libffi_3.2.1-4.dsc 1914 SHA256:e2bdb4202f1c8be9d3cec5bf459a4a1619f494241938d982d6029e15a8b1da9e
-'http://httpredir.debian.org/debian/pool/main/libf/libffi/libffi_3.2.1.orig.tar.gz' libffi_3.2.1.orig.tar.gz 940837 SHA256:d06ebb8e1d9a22d19e38d63fdb83954253f39bedc5d46232a05645685722ca37
-'http://httpredir.debian.org/debian/pool/main/libf/libffi/libffi_3.2.1-4.debian.tar.xz' libffi_3.2.1-4.debian.tar.xz 8932 SHA256:4d7d5f9172e8a8d3e412ed47e14755e27a0657054a7786b578eb6327b0d08b2d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libffi/3.2.1-4/
-- https://sources.debian.net/src/libffi/3.2.1-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgcrypt20=1.7.3-1`
 
