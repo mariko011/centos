@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b6cf1a5cca99303bb3b1e9d114c4f21c55bb3625c4b197895d5e2572b012d567`
-- Created: `2016-10-21T20:33:06.589911159Z`
+- Image ID: `sha256:f3aaf1f76b0566a0562fcb2d760083a13fd422f072a3b77ab69b63019e0b1355`
+- Created: `2016-11-01T05:42:40.908097201Z`
 - Arch: `linux`/`amd64`
 - Command: `["./LS.sh","run"]`
 - Environment:
@@ -2238,9 +2238,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openjdk-8=8u102-b14.1-1~bpo8+1
-'http://httpredir.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u102-b14.1-1~bpo8+1.dsc' openjdk-8_8u102-b14.1-1~bpo8+1.dsc 4489 SHA256:a0d58b38e8074eec1fac29bc2e376867f1113ffba2593bd589daad2b05af6bf3
-'http://httpredir.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u102-b14.1.orig.tar.gz' openjdk-8_8u102-b14.1.orig.tar.gz 63713669 SHA256:e2f871cccf32336f44e7ae919aef80a405328cc83c0105723e0d286becd5dae7
-'http://httpredir.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u102-b14.1-1~bpo8+1.debian.tar.xz' openjdk-8_8u102-b14.1-1~bpo8+1.debian.tar.xz 228040 SHA256:90961fc766b8494663493aadbfdc89d9fd5d70f1e67a106ba2afd1184b30d77b
+'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u102-b14.1-1~bpo8+1.dsc' openjdk-8_8u102-b14.1-1~bpo8+1.dsc 4489 SHA256:a0d58b38e8074eec1fac29bc2e376867f1113ffba2593bd589daad2b05af6bf3
+'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u102-b14.1.orig.tar.gz' openjdk-8_8u102-b14.1.orig.tar.gz 63713669 SHA256:e2f871cccf32336f44e7ae919aef80a405328cc83c0105723e0d286becd5dae7
+'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u102-b14.1-1~bpo8+1.debian.tar.xz' openjdk-8_8u102-b14.1-1~bpo8+1.debian.tar.xz 228040 SHA256:90961fc766b8494663493aadbfdc89d9fd5d70f1e67a106ba2afd1184b30d77b
 ```
 
 Likely also available for browsing at:
@@ -2748,9 +2748,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tar=1.27.1-2
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.27.1-2.dsc' tar_1.27.1-2.dsc 1859 SHA256:c79d3621eb195c92fd60bfccaedb6fc37c117549f8ef11a44e8b0dc7c14fc1fc
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.27.1.orig.tar.xz' tar_1.27.1.orig.tar.xz 1704252 SHA256:58169c5a03c04be20d3fb91010b01e822c6a58060a96e7cf2f9c1944de0151ab
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.27.1-2.debian.tar.xz' tar_1.27.1-2.debian.tar.xz 31996 SHA256:e2fab717e4574b2add8fc97ddf9fa7eb23a55152536c8c5e51383675f8774645
+'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1-2+deb8u1.dsc' tar_1.27.1-2+deb8u1.dsc 2049 SHA256:e42e96a9cdf325d7f030306735a1380276670deb72541a7f97ffe59a1e32e67b
+'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1.orig.tar.xz' tar_1.27.1.orig.tar.xz 1704252 SHA256:58169c5a03c04be20d3fb91010b01e822c6a58060a96e7cf2f9c1944de0151ab
+'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1-2+deb8u1.debian.tar.xz' tar_1.27.1-2+deb8u1.debian.tar.xz 32632 SHA256:dc2e495770f6c1c79a4e299d4008c8cb1f91a48e823751bc95d7f26ae498f995
 ```
 
 Likely also available for browsing at:
