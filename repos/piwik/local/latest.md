@@ -1,9 +1,9 @@
-# `piwik:2.16.5`
+# `piwik:2.17.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cf12519684e7a97eb8326ba854e72b767a93e545bb5d440122b12f15ac748958`
-- Created: `2016-10-22T00:18:08.297874892Z`
+- Image ID: `sha256:8e0ccfd895aec0ff9dfcb06c11a8651b6fa313c3e13d8696506d71eb8350b17a`
+- Created: `2016-10-31T23:12:59.4478749Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["php-fpm"]`
@@ -18,7 +18,7 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.27.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=16eb544498339d1d855292826e2e547ab01a31600141094959073e5e10e93ab5`
   - `PHP_MD5=9ce6efc96d5ab81ef808f8ed6b1f242d`
-  - `PIWIK_VERSION=2.16.5`
+  - `PIWIK_VERSION=2.17.0`
 
 ## `dpkg` (`.deb`-based packages)
 
