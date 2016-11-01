@@ -10,7 +10,7 @@
 ## `orientdb:2.0.18`
 
 ```console
-$ docker pull orientdb@sha256:b41e55468f0d3b3adaf40289c1e48a8668c16eaacbb141f4949f9390a4cd8647
+$ docker pull orientdb@sha256:fadf73c214da4b22ed2f310a9d73b2793e754f0fa573417fca53171d85415a7e
 ```
 
 -	Platforms:
@@ -18,11 +18,11 @@ $ docker pull orientdb@sha256:b41e55468f0d3b3adaf40289c1e48a8668c16eaacbb141f494
 
 ### `orientdb:2.0.18` - linux; amd64
 
--	Docker Version: 1.12.1
+-	Docker Version: 1.12.2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **289.9 MB (289908601 bytes)**  
+-	Total Size: **289.9 MB (289908768 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6efa2d20d6bea797788578ed786aa37b7ed3257940d798ee9c82f0eb54e7aad4`
+-	Image ID: `sha256:3265a3ea81b51dadc580217c4ceb0edece04f6186c0cbdf8c88deb8d6be2285c`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
@@ -36,45 +36,45 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 21 Oct 2016 20:07:28 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 21 Oct 2016 20:12:10 GMT
-RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Fri, 21 Oct 2016 20:12:11 GMT
+# Mon, 31 Oct 2016 21:53:46 GMT
+RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
+# Mon, 31 Oct 2016 21:53:47 GMT
 ENV LANG=C.UTF-8
-# Fri, 21 Oct 2016 20:12:12 GMT
+# Mon, 31 Oct 2016 21:53:48 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Fri, 21 Oct 2016 20:12:12 GMT
+# Mon, 31 Oct 2016 21:53:48 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-# Fri, 21 Oct 2016 20:12:13 GMT
+# Mon, 31 Oct 2016 21:53:48 GMT
 ENV JAVA_VERSION=8u102
-# Fri, 21 Oct 2016 20:12:13 GMT
+# Mon, 31 Oct 2016 21:53:49 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Fri, 21 Oct 2016 20:12:13 GMT
+# Mon, 31 Oct 2016 21:53:49 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Fri, 21 Oct 2016 20:13:06 GMT
+# Mon, 31 Oct 2016 21:54:58 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 21 Oct 2016 20:13:08 GMT
+# Mon, 31 Oct 2016 21:55:00 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Fri, 21 Oct 2016 22:56:10 GMT
+# Tue, 01 Nov 2016 06:47:21 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
-# Fri, 21 Oct 2016 22:56:11 GMT
+# Tue, 01 Nov 2016 06:47:22 GMT
 ENV ORIENTDB_VERSION=2.0.18
-# Fri, 21 Oct 2016 22:56:11 GMT
+# Tue, 01 Nov 2016 06:47:22 GMT
 ENV ORIENTDB_DOWNLOAD_MD5=9e7b7e7b6d95795b188adb4e5898a1b8
-# Fri, 21 Oct 2016 22:56:11 GMT
+# Tue, 01 Nov 2016 06:47:23 GMT
 ENV ORIENTDB_DOWNLOAD_SHA1=f562794536bbf8ae2145f96153e58b1e5d9211b3
-# Fri, 21 Oct 2016 22:56:18 GMT
+# Tue, 01 Nov 2016 06:47:33 GMT
 RUN mkdir /orientdb &&   wget  "http://central.maven.org/maven2/com/orientechnologies/orientdb-community/$ORIENTDB_VERSION/orientdb-community-$ORIENTDB_VERSION.tar.gz"   && echo "$ORIENTDB_DOWNLOAD_MD5 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | md5sum -c -   && echo "$ORIENTDB_DOWNLOAD_SHA1 *orientdb-community-$ORIENTDB_VERSION.tar.gz" | sha1sum -c -   && tar -xvzf orientdb-community-$ORIENTDB_VERSION.tar.gz -C /orientdb --strip-components=1  && rm orientdb-community-$ORIENTDB_VERSION.tar.gz   && rm -rf /orientdb/databases/*
-# Fri, 21 Oct 2016 22:56:19 GMT
+# Tue, 01 Nov 2016 06:47:33 GMT
 ENV PATH=/orientdb/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 21 Oct 2016 22:56:19 GMT
+# Tue, 01 Nov 2016 06:47:34 GMT
 VOLUME [/orientdb/backup /orientdb/databases /orientdb/config]
-# Fri, 21 Oct 2016 22:56:20 GMT
+# Tue, 01 Nov 2016 06:47:34 GMT
 WORKDIR /orientdb
-# Fri, 21 Oct 2016 22:56:20 GMT
+# Tue, 01 Nov 2016 06:47:35 GMT
 EXPOSE 2424/tcp
-# Fri, 21 Oct 2016 22:56:21 GMT
+# Tue, 01 Nov 2016 06:47:35 GMT
 EXPOSE 2480/tcp
-# Fri, 21 Oct 2016 22:56:22 GMT
+# Tue, 01 Nov 2016 06:47:36 GMT
 CMD ["server.sh"]
 ```
 
@@ -95,25 +95,25 @@ CMD ["server.sh"]
 		Last Modified: Fri, 21 Oct 2016 20:08:28 GMT  
 		Size: 593.0 KB (593002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7bbb0894483a51f34474c923a88ef7038cb509d584f8048fdbaf09518d5b3737`  
-		Last Modified: Fri, 21 Oct 2016 20:13:18 GMT  
-		Size: 219.0 B  
+	-	`sha256:38c6fc3e9968f5b8fb198a1ea206d24c695ca2ba720f3c60465eb766378eb661`  
+		Last Modified: Tue, 01 Nov 2016 05:34:59 GMT  
+		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:343785c6e48e1e95c98308a513facd5e3ee23ab245f10e67a6271367d6dc67ef`  
-		Last Modified: Fri, 21 Oct 2016 20:13:18 GMT  
-		Size: 243.0 B  
+	-	`sha256:0bfa8d5153bb17cb57f744591779c9cae37e3ce60ef7f251a06de8a52b4a5dc4`  
+		Last Modified: Tue, 01 Nov 2016 05:34:59 GMT  
+		Size: 242.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80bc278f201eb43353bc396e8958e529c288a3ff484a328ddf58ede0a5f44fd1`  
-		Last Modified: Fri, 21 Oct 2016 20:13:50 GMT  
-		Size: 130.1 MB (130104036 bytes)  
+	-	`sha256:05bc8d0fffcad18701b038c987358882834e50c5f8880d80e596b1b53a10452b`  
+		Last Modified: Tue, 01 Nov 2016 05:35:36 GMT  
+		Size: 130.1 MB (130104197 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7dc7493162d145324aed82c992e3d730dd85dc4aa9a48fe8a4128f18a03b03a3`  
-		Last Modified: Fri, 21 Oct 2016 20:13:18 GMT  
+	-	`sha256:f1266a2a7ecbe81ae03360bc3e8bf9300175665db11e6d02fa7be79d485b530e`  
+		Last Modified: Tue, 01 Nov 2016 05:34:58 GMT  
 		Size: 284.2 KB (284198 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b59282cd5b3033bca5d84a533398f341c43d2ca4aea5cbedda3c91deba285971`  
-		Last Modified: Fri, 21 Oct 2016 22:56:38 GMT  
-		Size: 46.5 MB (46544835 bytes)  
+	-	`sha256:1e5f5ccc400680513f2251b623b6efa3d2f8c1583822f3fce04ac80011976ca4`  
+		Last Modified: Tue, 01 Nov 2016 06:48:04 GMT  
+		Size: 46.5 MB (46544846 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `orientdb:2.1.23`
