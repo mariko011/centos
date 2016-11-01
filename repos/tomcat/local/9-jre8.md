@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b1443963c53119fe4decbf2cce89efd6b64c2ce175891ee6003e5a193dbf8914`
-- Created: `2016-10-22T02:04:34.093886446Z`
+- Image ID: `sha256:0a90d14f7f97e716074f4647a7289f0e8adaa15ab57fdd0302ca0c3ed5a366eb`
+- Created: `2016-11-01T01:11:12.200123892Z`
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
 - Environment:
@@ -2341,10 +2341,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssl=1.0.2j-1
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.2j-1.dsc' openssl_1.0.2j-1.dsc 2550 SHA256:9f68517da4791cd36e75f9a63fff4c703e9273c0c1af5cb9efd6bfb1d842dba6
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.2j.orig.tar.gz' openssl_1.0.2j.orig.tar.gz 5307912 SHA256:e7aff292be21c259c6af26469c7a9b3ba26e9abaaffd325e3dccc9785256c431
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.2j.orig.tar.gz.asc' openssl_1.0.2j.orig.tar.gz.asc 473 SHA256:b3551e17fef7df2eb901aa9c1cbc41e5cf7c9d5d10e546936145f24d1e52efdc
-'http://httpredir.debian.org/debian/pool/main/o/openssl/openssl_1.0.2j-1.debian.tar.xz' openssl_1.0.2j-1.debian.tar.xz 76404 SHA256:91203925576731b63f1eb0e4d575db09d43c237aa4905ac660655eafcd47ba4f
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.2j-1.dsc' openssl_1.0.2j-1.dsc 2550 SHA256:9f68517da4791cd36e75f9a63fff4c703e9273c0c1af5cb9efd6bfb1d842dba6
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.2j.orig.tar.gz' openssl_1.0.2j.orig.tar.gz 5307912 SHA256:e7aff292be21c259c6af26469c7a9b3ba26e9abaaffd325e3dccc9785256c431
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.2j.orig.tar.gz.asc' openssl_1.0.2j.orig.tar.gz.asc 473 SHA256:b3551e17fef7df2eb901aa9c1cbc41e5cf7c9d5d10e546936145f24d1e52efdc
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.2j-1.debian.tar.xz' openssl_1.0.2j-1.debian.tar.xz 76404 SHA256:91203925576731b63f1eb0e4d575db09d43c237aa4905ac660655eafcd47ba4f
 ```
 
 Likely also available for browsing at:
@@ -2803,9 +2803,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tar=1.27.1-2
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.27.1-2.dsc' tar_1.27.1-2.dsc 1859 SHA256:c79d3621eb195c92fd60bfccaedb6fc37c117549f8ef11a44e8b0dc7c14fc1fc
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.27.1.orig.tar.xz' tar_1.27.1.orig.tar.xz 1704252 SHA256:58169c5a03c04be20d3fb91010b01e822c6a58060a96e7cf2f9c1944de0151ab
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.27.1-2.debian.tar.xz' tar_1.27.1-2.debian.tar.xz 31996 SHA256:e2fab717e4574b2add8fc97ddf9fa7eb23a55152536c8c5e51383675f8774645
+'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1-2+deb8u1.dsc' tar_1.27.1-2+deb8u1.dsc 2049 SHA256:e42e96a9cdf325d7f030306735a1380276670deb72541a7f97ffe59a1e32e67b
+'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1.orig.tar.xz' tar_1.27.1.orig.tar.xz 1704252 SHA256:58169c5a03c04be20d3fb91010b01e822c6a58060a96e7cf2f9c1944de0151ab
+'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1-2+deb8u1.debian.tar.xz' tar_1.27.1-2+deb8u1.debian.tar.xz 32632 SHA256:dc2e495770f6c1c79a4e299d4008c8cb1f91a48e823751bc95d7f26ae498f995
 ```
 
 Likely also available for browsing at:
