@@ -28,7 +28,7 @@
 ## `elasticsearch:1.5.2`
 
 ```console
-$ docker pull elasticsearch@sha256:47e7b1633b457330f5439bf5f00a7ec11592408f94aaaec3e06ce321220d06f2
+$ docker pull elasticsearch@sha256:fa85d35947083a9b3f4e54299d86ccc2ff6567d21fa0b89fc4424f2a88c2fdaf
 ```
 
 -	Platforms:
@@ -36,11 +36,11 @@ $ docker pull elasticsearch@sha256:47e7b1633b457330f5439bf5f00a7ec11592408f94aaa
 
 ### `elasticsearch:1.5.2` - linux; amd64
 
--	Docker Version: 1.12.1
+-	Docker Version: 1.12.2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **152.6 MB (152617556 bytes)**  
+-	Total Size: **152.6 MB (152617621 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c6a6122578ae42e55e483c77d6e966fc5becd594fd96ae4e47f3dd5be705b8cd`
+-	Image ID: `sha256:a9f376ad5951c34dc18cf08b03f8709dbfa491815a0441a7a28ca0faa331e368`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["elasticsearch"]`
 
@@ -53,53 +53,53 @@ CMD ["/bin/bash"]
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 21 Oct 2016 20:10:24 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 21 Oct 2016 20:15:38 GMT
-RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Fri, 21 Oct 2016 20:15:38 GMT
+# Mon, 31 Oct 2016 21:55:01 GMT
+RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
+# Mon, 31 Oct 2016 21:55:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 21 Oct 2016 20:15:39 GMT
+# Mon, 31 Oct 2016 21:55:03 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Fri, 21 Oct 2016 20:15:40 GMT
+# Mon, 31 Oct 2016 21:55:03 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Fri, 21 Oct 2016 20:15:40 GMT
+# Mon, 31 Oct 2016 21:55:03 GMT
 ENV JAVA_VERSION=8u102
-# Fri, 21 Oct 2016 20:15:40 GMT
+# Mon, 31 Oct 2016 21:55:04 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Fri, 21 Oct 2016 20:15:41 GMT
+# Mon, 31 Oct 2016 21:55:04 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Fri, 21 Oct 2016 20:15:58 GMT
+# Mon, 31 Oct 2016 21:55:22 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 21 Oct 2016 20:15:59 GMT
+# Mon, 31 Oct 2016 21:55:24 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Sat, 22 Oct 2016 02:56:13 GMT
+# Tue, 01 Nov 2016 20:20:53 GMT
 ENV GOSU_VERSION=1.7
-# Sat, 22 Oct 2016 02:56:18 GMT
+# Tue, 01 Nov 2016 20:20:58 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Sat, 22 Oct 2016 02:56:20 GMT
+# Tue, 01 Nov 2016 20:21:00 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Sat, 22 Oct 2016 02:57:32 GMT
+# Tue, 01 Nov 2016 20:22:13 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends apt-transport-https && rm -rf /var/lib/apt/lists/* 	&& echo 'deb http://packages.elasticsearch.org/elasticsearch/1.5/debian stable main' > /etc/apt/sources.list.d/elasticsearch.list
-# Sat, 22 Oct 2016 02:57:33 GMT
+# Tue, 01 Nov 2016 20:22:13 GMT
 ENV ELASTICSEARCH_VERSION=1.5.2
-# Sat, 22 Oct 2016 02:57:43 GMT
+# Tue, 01 Nov 2016 20:22:23 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends elasticsearch=$ELASTICSEARCH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 22 Oct 2016 02:57:43 GMT
+# Tue, 01 Nov 2016 20:22:23 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 22 Oct 2016 02:57:43 GMT
+# Tue, 01 Nov 2016 20:22:24 GMT
 WORKDIR /usr/share/elasticsearch
-# Sat, 22 Oct 2016 02:57:44 GMT
+# Tue, 01 Nov 2016 20:22:25 GMT
 RUN set -ex 	&& for path in 		./data 		./logs 		./config 		./config/scripts 	; do 		mkdir -p "$path"; 		chown -R elasticsearch:elasticsearch "$path"; 	done
-# Sat, 22 Oct 2016 02:57:45 GMT
+# Tue, 01 Nov 2016 20:22:25 GMT
 COPY dir:31f8476cce13d884e30d94ee9384cd924f19b02a6833943b9d501f833cd60885 in ./config 
-# Sat, 22 Oct 2016 02:57:45 GMT
+# Tue, 01 Nov 2016 20:22:26 GMT
 VOLUME [/usr/share/elasticsearch/data]
-# Sat, 22 Oct 2016 02:57:46 GMT
+# Tue, 01 Nov 2016 20:22:26 GMT
 COPY file:4e7f545ce5a4556808c0760a1dbf219cb9aab1bf750b56480663d05716aac376 in / 
-# Sat, 22 Oct 2016 02:57:46 GMT
+# Tue, 01 Nov 2016 20:22:27 GMT
 EXPOSE 9200/tcp 9300/tcp
-# Sat, 22 Oct 2016 02:57:47 GMT
+# Tue, 01 Nov 2016 20:22:27 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 22 Oct 2016 02:57:47 GMT
+# Tue, 01 Nov 2016 20:22:27 GMT
 CMD ["elasticsearch"]
 ```
 
@@ -116,49 +116,49 @@ CMD ["elasticsearch"]
 		Last Modified: Fri, 21 Oct 2016 20:11:17 GMT  
 		Size: 566.6 KB (566556 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f7579daddb2fdbdd09c93996fd074457a138526c049279c1959559824aa1d0c`  
-		Last Modified: Fri, 21 Oct 2016 20:16:08 GMT  
+	-	`sha256:f264389d8f2fec4e89e2293411211bb57154f24ad836163d897d019b97d5fd5c`  
+		Last Modified: Tue, 01 Nov 2016 05:33:16 GMT  
 		Size: 217.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a985511f24689704c7520b5fdad710cee0d1f42bd20a8945589c83daa683c695`  
-		Last Modified: Fri, 21 Oct 2016 20:16:09 GMT  
-		Size: 242.0 B  
+	-	`sha256:1a2c46e93f4ac4f4f2f114c689f42a1435409b2db78ab6d19f525866037de473`  
+		Last Modified: Tue, 01 Nov 2016 05:33:12 GMT  
+		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c2b485fcc3e915fb4d2cf1739a2fb9b2b0a88d48536f4e632225783279766e4`  
-		Last Modified: Fri, 21 Oct 2016 20:16:20 GMT  
-		Size: 53.4 MB (53439616 bytes)  
+	-	`sha256:f9506bb322c04c882de48ee789337b636c47cf67c89c402a686f4a03dc6c1eb9`  
+		Last Modified: Tue, 01 Nov 2016 05:33:24 GMT  
+		Size: 53.4 MB (53439646 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:00b73c83b440f03854f136863a7f99e307ea721f990cee9bef6287d6385f5ddb`  
-		Last Modified: Fri, 21 Oct 2016 20:16:10 GMT  
-		Size: 284.2 KB (284214 bytes)  
+	-	`sha256:96f5dad14c2c78802e41cc9c1722caf14f5d7437a81c6d59855b9a835102d67a`  
+		Last Modified: Tue, 01 Nov 2016 05:33:10 GMT  
+		Size: 284.2 KB (284204 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a389758618238e8c9156f17f152f470d3030808297985e00feb870118a96117a`  
-		Last Modified: Sat, 22 Oct 2016 02:56:55 GMT  
-		Size: 807.9 KB (807934 bytes)  
+	-	`sha256:cadc6056da8217e858139fc68f44f81dfc7e75dea114b53d0b2ef5e036327508`  
+		Last Modified: Tue, 01 Nov 2016 20:21:34 GMT  
+		Size: 807.9 KB (807935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9d0b4aaf93486c82cbc91d0ade9990ce9e543370d618071d69efc6d8a7ce56b`  
-		Last Modified: Sat, 22 Oct 2016 02:56:54 GMT  
-		Size: 1.4 KB (1446 bytes)  
+	-	`sha256:eadefad3924e58cdff651e0e487ddd3fab137537124e2c7473858db77f6235f7`  
+		Last Modified: Tue, 01 Nov 2016 20:21:34 GMT  
+		Size: 1.4 KB (1445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e853b02ea10f13ca77c8d625ede46c3fa53a9ace2d016843c30d13afb313be99`  
-		Last Modified: Sat, 22 Oct 2016 02:57:58 GMT  
-		Size: 535.4 KB (535420 bytes)  
+	-	`sha256:b8628c7fe638236fcba41da3b513d45a67caa5932ee245b952b88f94a3f6b2af`  
+		Last Modified: Tue, 01 Nov 2016 20:22:39 GMT  
+		Size: 535.5 KB (535455 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fd8c85514fd657e3c65461a7ad1b5a6a148a5282424a4e6d6eb82e8fafcc18f4`  
-		Last Modified: Sat, 22 Oct 2016 02:58:00 GMT  
-		Size: 27.1 MB (27099475 bytes)  
+	-	`sha256:6c9782630369ee147065d49f431eda523b3a507f544d55fc6edf7c6bcabeff11`  
+		Last Modified: Tue, 01 Nov 2016 20:22:42 GMT  
+		Size: 27.1 MB (27099487 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ab8ee8b586cc436840613889432aa8a5a9c03cc7911c487dcda4084785dbde95`  
-		Last Modified: Sat, 22 Oct 2016 02:57:58 GMT  
+	-	`sha256:29a84aa484aa670dea646cee5d7bb36cb22e26c6b5426c2f9b778bb12fdc8eae`  
+		Last Modified: Tue, 01 Nov 2016 20:22:38 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90433f799d2748cab6980fef7976ccf71c49520960aa3551bcb58c47166f6d06`  
-		Last Modified: Sat, 22 Oct 2016 02:57:58 GMT  
-		Size: 496.0 B  
+	-	`sha256:0538ade3a2cb9978763e2c646b8926e87e8f60266263893a4a3ceaea640dbad3`  
+		Last Modified: Tue, 01 Nov 2016 20:22:39 GMT  
+		Size: 498.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a00b7f2cc6f053f0b52358d94bf70a77dafd8403d5496c409fb6a5fd8a320446`  
-		Last Modified: Sat, 22 Oct 2016 02:57:57 GMT  
-		Size: 470.0 B  
+	-	`sha256:f45883020b8281dd0c3ea8d18a5c110de31aa96d55db6a0859827b0048f41db6`  
+		Last Modified: Tue, 01 Nov 2016 20:22:39 GMT  
+		Size: 469.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:1.5`
@@ -436,7 +436,7 @@ CMD ["elasticsearch"]
 ## `elasticsearch:1.6`
 
 ```console
-$ docker pull elasticsearch@sha256:edf5c640e5d66afee83b84d226ca16353f0ffc70ba915ce81cd60a6fe5a57ca8
+$ docker pull elasticsearch@sha256:dfbd006027c349f8c018bffb946f3380baebcc83d3b9476543eabb15df98e792
 ```
 
 -	Platforms:
@@ -444,11 +444,11 @@ $ docker pull elasticsearch@sha256:edf5c640e5d66afee83b84d226ca16353f0ffc70ba915
 
 ### `elasticsearch:1.6` - linux; amd64
 
--	Docker Version: 1.12.1
+-	Docker Version: 1.12.2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **152.9 MB (152939416 bytes)**  
+-	Total Size: **152.9 MB (152939473 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69a115c90ef41cc51c0cf20aaec4a0869acaf71d334727a62ad95ab136da1516`
+-	Image ID: `sha256:0a1dee4cba6e3ab239144dd535f3152612fc00db81db143a1dad4e4736dd61a7`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["elasticsearch"]`
 
@@ -461,53 +461,53 @@ CMD ["/bin/bash"]
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 21 Oct 2016 20:10:24 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 21 Oct 2016 20:15:38 GMT
-RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Fri, 21 Oct 2016 20:15:38 GMT
+# Mon, 31 Oct 2016 21:55:01 GMT
+RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
+# Mon, 31 Oct 2016 21:55:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 21 Oct 2016 20:15:39 GMT
+# Mon, 31 Oct 2016 21:55:03 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Fri, 21 Oct 2016 20:15:40 GMT
+# Mon, 31 Oct 2016 21:55:03 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Fri, 21 Oct 2016 20:15:40 GMT
+# Mon, 31 Oct 2016 21:55:03 GMT
 ENV JAVA_VERSION=8u102
-# Fri, 21 Oct 2016 20:15:40 GMT
+# Mon, 31 Oct 2016 21:55:04 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Fri, 21 Oct 2016 20:15:41 GMT
+# Mon, 31 Oct 2016 21:55:04 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Fri, 21 Oct 2016 20:15:58 GMT
+# Mon, 31 Oct 2016 21:55:22 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 21 Oct 2016 20:15:59 GMT
+# Mon, 31 Oct 2016 21:55:24 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Sat, 22 Oct 2016 02:56:13 GMT
+# Tue, 01 Nov 2016 20:20:53 GMT
 ENV GOSU_VERSION=1.7
-# Sat, 22 Oct 2016 02:56:18 GMT
+# Tue, 01 Nov 2016 20:20:58 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Sat, 22 Oct 2016 02:56:20 GMT
+# Tue, 01 Nov 2016 20:21:00 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Sat, 22 Oct 2016 02:58:26 GMT
+# Tue, 01 Nov 2016 20:23:08 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends apt-transport-https && rm -rf /var/lib/apt/lists/* 	&& echo 'deb http://packages.elasticsearch.org/elasticsearch/1.6/debian stable main' > /etc/apt/sources.list.d/elasticsearch.list
-# Sat, 22 Oct 2016 02:58:26 GMT
+# Tue, 01 Nov 2016 20:23:09 GMT
 ENV ELASTICSEARCH_VERSION=1.6.2
-# Sat, 22 Oct 2016 02:58:36 GMT
+# Tue, 01 Nov 2016 20:23:18 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends elasticsearch=$ELASTICSEARCH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 22 Oct 2016 02:58:36 GMT
+# Tue, 01 Nov 2016 20:23:18 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 22 Oct 2016 02:58:37 GMT
+# Tue, 01 Nov 2016 20:23:19 GMT
 WORKDIR /usr/share/elasticsearch
-# Sat, 22 Oct 2016 02:58:37 GMT
+# Tue, 01 Nov 2016 20:23:20 GMT
 RUN set -ex 	&& for path in 		./data 		./logs 		./config 		./config/scripts 	; do 		mkdir -p "$path"; 		chown -R elasticsearch:elasticsearch "$path"; 	done
-# Sat, 22 Oct 2016 02:58:38 GMT
+# Tue, 01 Nov 2016 20:23:20 GMT
 COPY dir:31f8476cce13d884e30d94ee9384cd924f19b02a6833943b9d501f833cd60885 in ./config 
-# Sat, 22 Oct 2016 02:58:38 GMT
+# Tue, 01 Nov 2016 20:23:21 GMT
 VOLUME [/usr/share/elasticsearch/data]
-# Sat, 22 Oct 2016 02:58:39 GMT
+# Tue, 01 Nov 2016 20:23:21 GMT
 COPY file:4e7f545ce5a4556808c0760a1dbf219cb9aab1bf750b56480663d05716aac376 in / 
-# Sat, 22 Oct 2016 02:58:39 GMT
+# Tue, 01 Nov 2016 20:23:22 GMT
 EXPOSE 9200/tcp 9300/tcp
-# Sat, 22 Oct 2016 02:58:40 GMT
+# Tue, 01 Nov 2016 20:23:22 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 22 Oct 2016 02:58:40 GMT
+# Tue, 01 Nov 2016 20:23:22 GMT
 CMD ["elasticsearch"]
 ```
 
@@ -524,48 +524,48 @@ CMD ["elasticsearch"]
 		Last Modified: Fri, 21 Oct 2016 20:11:17 GMT  
 		Size: 566.6 KB (566556 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f7579daddb2fdbdd09c93996fd074457a138526c049279c1959559824aa1d0c`  
-		Last Modified: Fri, 21 Oct 2016 20:16:08 GMT  
+	-	`sha256:f264389d8f2fec4e89e2293411211bb57154f24ad836163d897d019b97d5fd5c`  
+		Last Modified: Tue, 01 Nov 2016 05:33:16 GMT  
 		Size: 217.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a985511f24689704c7520b5fdad710cee0d1f42bd20a8945589c83daa683c695`  
-		Last Modified: Fri, 21 Oct 2016 20:16:09 GMT  
-		Size: 242.0 B  
+	-	`sha256:1a2c46e93f4ac4f4f2f114c689f42a1435409b2db78ab6d19f525866037de473`  
+		Last Modified: Tue, 01 Nov 2016 05:33:12 GMT  
+		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c2b485fcc3e915fb4d2cf1739a2fb9b2b0a88d48536f4e632225783279766e4`  
-		Last Modified: Fri, 21 Oct 2016 20:16:20 GMT  
-		Size: 53.4 MB (53439616 bytes)  
+	-	`sha256:f9506bb322c04c882de48ee789337b636c47cf67c89c402a686f4a03dc6c1eb9`  
+		Last Modified: Tue, 01 Nov 2016 05:33:24 GMT  
+		Size: 53.4 MB (53439646 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:00b73c83b440f03854f136863a7f99e307ea721f990cee9bef6287d6385f5ddb`  
-		Last Modified: Fri, 21 Oct 2016 20:16:10 GMT  
-		Size: 284.2 KB (284214 bytes)  
+	-	`sha256:96f5dad14c2c78802e41cc9c1722caf14f5d7437a81c6d59855b9a835102d67a`  
+		Last Modified: Tue, 01 Nov 2016 05:33:10 GMT  
+		Size: 284.2 KB (284204 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a389758618238e8c9156f17f152f470d3030808297985e00feb870118a96117a`  
-		Last Modified: Sat, 22 Oct 2016 02:56:55 GMT  
-		Size: 807.9 KB (807934 bytes)  
+	-	`sha256:cadc6056da8217e858139fc68f44f81dfc7e75dea114b53d0b2ef5e036327508`  
+		Last Modified: Tue, 01 Nov 2016 20:21:34 GMT  
+		Size: 807.9 KB (807935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9d0b4aaf93486c82cbc91d0ade9990ce9e543370d618071d69efc6d8a7ce56b`  
-		Last Modified: Sat, 22 Oct 2016 02:56:54 GMT  
-		Size: 1.4 KB (1446 bytes)  
+	-	`sha256:eadefad3924e58cdff651e0e487ddd3fab137537124e2c7473858db77f6235f7`  
+		Last Modified: Tue, 01 Nov 2016 20:21:34 GMT  
+		Size: 1.4 KB (1445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a4d157ff05b95fadb43232cc163a0d50f57424fc22c7a031eb8596b7d82ed8d`  
-		Last Modified: Sat, 22 Oct 2016 02:58:52 GMT  
-		Size: 535.4 KB (535420 bytes)  
+	-	`sha256:eccafc7782a957dc61d9d399ba0fe4aba6322fe38f46704b3db71e9c5ffb4d63`  
+		Last Modified: Tue, 01 Nov 2016 20:23:34 GMT  
+		Size: 535.4 KB (535442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:001597af342c8a6edf72113d067ae8a59d89b66f36cdc8e1a672ab91dd72de66`  
-		Last Modified: Sat, 22 Oct 2016 02:58:52 GMT  
-		Size: 27.4 MB (27421334 bytes)  
+	-	`sha256:1ce66b48a146f0c707122ecd0b786c7e165142764c95f0087d6361ea285e6dd8`  
+		Last Modified: Tue, 01 Nov 2016 20:23:38 GMT  
+		Size: 27.4 MB (27421356 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69993c4baeed2512c69b261a565a84481435319b1d0cb3d24e465529b6c26a19`  
-		Last Modified: Sat, 22 Oct 2016 02:58:51 GMT  
-		Size: 216.0 B  
+	-	`sha256:aad1440e2acad6ca774e2b3f9c750816af75035144e4ae68532e7fa3e656f984`  
+		Last Modified: Tue, 01 Nov 2016 20:23:36 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:929d08ee4edccc1436f3f30fc3d3885e1eee608331084017152b9b481a026bd7`  
-		Last Modified: Sat, 22 Oct 2016 02:58:51 GMT  
-		Size: 496.0 B  
+	-	`sha256:aa0814ba1cbe7bda7029bbec963789b288b609e2117c79f8c8950924bb91ccac`  
+		Last Modified: Tue, 01 Nov 2016 20:23:34 GMT  
+		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d7ce60639f5be2ff4c2deaa72648e8a90230eb90c1603414ab113ae59bab83c2`  
-		Last Modified: Sat, 22 Oct 2016 02:58:50 GMT  
+	-	`sha256:c1890aa9d2bc4b08d4d6417b70baf258ab512720de0c38adba69aacbcedbad1a`  
+		Last Modified: Tue, 01 Nov 2016 20:23:33 GMT  
 		Size: 469.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1524,7 +1524,7 @@ CMD ["elasticsearch"]
 ## `elasticsearch:2.2.2`
 
 ```console
-$ docker pull elasticsearch@sha256:24b90c679dcc0ffdb8207d9f911802fffcfdd5fff874c30545d9c6b3a40c4340
+$ docker pull elasticsearch@sha256:a46c6337a3519be08ab0b46cb1ed8dcb3770208b1cc9824dbdc322fa10738081
 ```
 
 -	Platforms:
@@ -1532,11 +1532,11 @@ $ docker pull elasticsearch@sha256:24b90c679dcc0ffdb8207d9f911802fffcfdd5fff874c
 
 ### `elasticsearch:2.2.2` - linux; amd64
 
--	Docker Version: 1.12.1
+-	Docker Version: 1.12.2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **154.9 MB (154934011 bytes)**  
+-	Total Size: **154.9 MB (154934154 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c0088e2f5f9501eaa12bb8ccd7eac4a1f7e544f410f06bd19b01be8af046db38`
+-	Image ID: `sha256:42e4f7f1f21616a7195b7ee1599ddfd0617ee65031d93b7bf97ccbac19254d21`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["elasticsearch"]`
 
@@ -1549,53 +1549,53 @@ CMD ["/bin/bash"]
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 21 Oct 2016 20:10:24 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 21 Oct 2016 20:15:38 GMT
-RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Fri, 21 Oct 2016 20:15:38 GMT
+# Mon, 31 Oct 2016 21:55:01 GMT
+RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
+# Mon, 31 Oct 2016 21:55:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 21 Oct 2016 20:15:39 GMT
+# Mon, 31 Oct 2016 21:55:03 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Fri, 21 Oct 2016 20:15:40 GMT
+# Mon, 31 Oct 2016 21:55:03 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Fri, 21 Oct 2016 20:15:40 GMT
+# Mon, 31 Oct 2016 21:55:03 GMT
 ENV JAVA_VERSION=8u102
-# Fri, 21 Oct 2016 20:15:40 GMT
+# Mon, 31 Oct 2016 21:55:04 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Fri, 21 Oct 2016 20:15:41 GMT
+# Mon, 31 Oct 2016 21:55:04 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Fri, 21 Oct 2016 20:15:58 GMT
+# Mon, 31 Oct 2016 21:55:22 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 21 Oct 2016 20:15:59 GMT
+# Mon, 31 Oct 2016 21:55:24 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Sat, 22 Oct 2016 02:56:13 GMT
+# Tue, 01 Nov 2016 20:20:53 GMT
 ENV GOSU_VERSION=1.7
-# Sat, 22 Oct 2016 02:56:18 GMT
+# Tue, 01 Nov 2016 20:20:58 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Sat, 22 Oct 2016 02:56:20 GMT
+# Tue, 01 Nov 2016 20:21:00 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Sat, 22 Oct 2016 02:59:16 GMT
+# Tue, 01 Nov 2016 20:24:03 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends apt-transport-https && rm -rf /var/lib/apt/lists/* 	&& echo 'deb http://packages.elasticsearch.org/elasticsearch/2.x/debian stable main' > /etc/apt/sources.list.d/elasticsearch.list
-# Sat, 22 Oct 2016 03:02:01 GMT
+# Tue, 01 Nov 2016 20:26:47 GMT
 ENV ELASTICSEARCH_VERSION=2.2.2
-# Sat, 22 Oct 2016 03:02:11 GMT
+# Tue, 01 Nov 2016 20:26:58 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends elasticsearch=$ELASTICSEARCH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 22 Oct 2016 03:02:11 GMT
+# Tue, 01 Nov 2016 20:26:58 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 22 Oct 2016 03:02:11 GMT
+# Tue, 01 Nov 2016 20:26:59 GMT
 WORKDIR /usr/share/elasticsearch
-# Sat, 22 Oct 2016 03:02:12 GMT
+# Tue, 01 Nov 2016 20:26:59 GMT
 RUN set -ex 	&& for path in 		./data 		./logs 		./config 		./config/scripts 	; do 		mkdir -p "$path"; 		chown -R elasticsearch:elasticsearch "$path"; 	done
-# Sat, 22 Oct 2016 03:02:13 GMT
+# Tue, 01 Nov 2016 20:27:00 GMT
 COPY dir:5ec5fadebeaa388fd27b7738b6b8d6306c5b8b7d9ef468d45d3efa4b858b338f in ./config 
-# Sat, 22 Oct 2016 03:02:13 GMT
+# Tue, 01 Nov 2016 20:27:01 GMT
 VOLUME [/usr/share/elasticsearch/data]
-# Sat, 22 Oct 2016 03:02:14 GMT
+# Tue, 01 Nov 2016 20:27:01 GMT
 COPY file:4e7f545ce5a4556808c0760a1dbf219cb9aab1bf750b56480663d05716aac376 in / 
-# Sat, 22 Oct 2016 03:02:14 GMT
+# Tue, 01 Nov 2016 20:27:02 GMT
 EXPOSE 9200/tcp 9300/tcp
-# Sat, 22 Oct 2016 03:02:15 GMT
+# Tue, 01 Nov 2016 20:27:02 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 22 Oct 2016 03:02:15 GMT
+# Tue, 01 Nov 2016 20:27:02 GMT
 CMD ["elasticsearch"]
 ```
 
@@ -1612,49 +1612,49 @@ CMD ["elasticsearch"]
 		Last Modified: Fri, 21 Oct 2016 20:11:17 GMT  
 		Size: 566.6 KB (566556 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f7579daddb2fdbdd09c93996fd074457a138526c049279c1959559824aa1d0c`  
-		Last Modified: Fri, 21 Oct 2016 20:16:08 GMT  
+	-	`sha256:f264389d8f2fec4e89e2293411211bb57154f24ad836163d897d019b97d5fd5c`  
+		Last Modified: Tue, 01 Nov 2016 05:33:16 GMT  
 		Size: 217.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a985511f24689704c7520b5fdad710cee0d1f42bd20a8945589c83daa683c695`  
-		Last Modified: Fri, 21 Oct 2016 20:16:09 GMT  
-		Size: 242.0 B  
+	-	`sha256:1a2c46e93f4ac4f4f2f114c689f42a1435409b2db78ab6d19f525866037de473`  
+		Last Modified: Tue, 01 Nov 2016 05:33:12 GMT  
+		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c2b485fcc3e915fb4d2cf1739a2fb9b2b0a88d48536f4e632225783279766e4`  
-		Last Modified: Fri, 21 Oct 2016 20:16:20 GMT  
-		Size: 53.4 MB (53439616 bytes)  
+	-	`sha256:f9506bb322c04c882de48ee789337b636c47cf67c89c402a686f4a03dc6c1eb9`  
+		Last Modified: Tue, 01 Nov 2016 05:33:24 GMT  
+		Size: 53.4 MB (53439646 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:00b73c83b440f03854f136863a7f99e307ea721f990cee9bef6287d6385f5ddb`  
-		Last Modified: Fri, 21 Oct 2016 20:16:10 GMT  
-		Size: 284.2 KB (284214 bytes)  
+	-	`sha256:96f5dad14c2c78802e41cc9c1722caf14f5d7437a81c6d59855b9a835102d67a`  
+		Last Modified: Tue, 01 Nov 2016 05:33:10 GMT  
+		Size: 284.2 KB (284204 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a389758618238e8c9156f17f152f470d3030808297985e00feb870118a96117a`  
-		Last Modified: Sat, 22 Oct 2016 02:56:55 GMT  
-		Size: 807.9 KB (807934 bytes)  
+	-	`sha256:cadc6056da8217e858139fc68f44f81dfc7e75dea114b53d0b2ef5e036327508`  
+		Last Modified: Tue, 01 Nov 2016 20:21:34 GMT  
+		Size: 807.9 KB (807935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9d0b4aaf93486c82cbc91d0ade9990ce9e543370d618071d69efc6d8a7ce56b`  
-		Last Modified: Sat, 22 Oct 2016 02:56:54 GMT  
-		Size: 1.4 KB (1446 bytes)  
+	-	`sha256:eadefad3924e58cdff651e0e487ddd3fab137537124e2c7473858db77f6235f7`  
+		Last Modified: Tue, 01 Nov 2016 20:21:34 GMT  
+		Size: 1.4 KB (1445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc1c5aedfddbc5d03205673b4662906c12b58a5f9abcf77e19c5e20101ee0a29`  
-		Last Modified: Sat, 22 Oct 2016 02:59:40 GMT  
-		Size: 535.4 KB (535417 bytes)  
+	-	`sha256:4298e51a1654730e4e3770ea16456f595ac917aab1b1f955c334128cd1f74e54`  
+		Last Modified: Tue, 01 Nov 2016 20:24:29 GMT  
+		Size: 535.5 KB (535454 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1256451fab8623810dda62a2ce999bc5efd3ec1164e4578e4ca05c5656ac51e`  
-		Last Modified: Sat, 22 Oct 2016 03:02:28 GMT  
-		Size: 29.4 MB (29415893 bytes)  
+	-	`sha256:5d879ac1da984c8eaaba89e9f2008138d32e719c0b33be659d59abccaabf1aa5`  
+		Last Modified: Tue, 01 Nov 2016 20:27:17 GMT  
+		Size: 29.4 MB (29415980 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6527e19bdb2ff51b4af7b2669406bb6621afac3d635f44fb95842841f421f3ab`  
-		Last Modified: Sat, 22 Oct 2016 03:02:25 GMT  
-		Size: 214.0 B  
+	-	`sha256:c9a283a69d48078b0e850d1495d61da049cebb23deacc91685c9cf7696ff3bb1`  
+		Last Modified: Tue, 01 Nov 2016 20:27:13 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:372bc5e014cc1188291eb3422a410e03abf0909f3c161f4a0c71e53d73b10518`  
-		Last Modified: Sat, 22 Oct 2016 03:02:25 GMT  
-		Size: 538.0 B  
+	-	`sha256:96ba84ba4f68073201788ed099337c326c3a34d40054c6f62ebf295c64ffa65d`  
+		Last Modified: Tue, 01 Nov 2016 20:27:14 GMT  
+		Size: 537.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79304222506b29612e6edb75a6d3386890af90385f26e4eccfa04f2dabee8252`  
-		Last Modified: Sat, 22 Oct 2016 03:02:25 GMT  
-		Size: 468.0 B  
+	-	`sha256:b7e6ad1a3e6321e93499c56f53b5bb0c6cacf08ac40539deb3aeae711e6028fe`  
+		Last Modified: Tue, 01 Nov 2016 20:27:13 GMT  
+		Size: 469.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:2.2`
@@ -2068,7 +2068,7 @@ CMD ["elasticsearch"]
 ## `elasticsearch:2.4.1`
 
 ```console
-$ docker pull elasticsearch@sha256:fccdceb6711913f37bd8f58f01cb50c320322711e760ae80d052c59147cc2f08
+$ docker pull elasticsearch@sha256:7e5f4918d2b00b37a22ae044a4f8ed2c44db0056a71780ada3edc6860e47aadf
 ```
 
 -	Platforms:
@@ -2076,11 +2076,11 @@ $ docker pull elasticsearch@sha256:fccdceb6711913f37bd8f58f01cb50c320322711e760a
 
 ### `elasticsearch:2.4.1` - linux; amd64
 
--	Docker Version: 1.12.1
+-	Docker Version: 1.12.2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **152.9 MB (152875443 bytes)**  
+-	Total Size: **152.9 MB (152875466 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3429053f4435687ce9112b36878f28a5280839ab8e31ef744f89be1459184a72`
+-	Image ID: `sha256:4786da38369e1a4eced30a334ebe6820480e342c9fc2f13e909fa559b866fd78`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["elasticsearch"]`
 
@@ -2093,53 +2093,53 @@ CMD ["/bin/bash"]
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 21 Oct 2016 20:10:24 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 21 Oct 2016 20:15:38 GMT
-RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Fri, 21 Oct 2016 20:15:38 GMT
+# Mon, 31 Oct 2016 21:55:01 GMT
+RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
+# Mon, 31 Oct 2016 21:55:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 21 Oct 2016 20:15:39 GMT
+# Mon, 31 Oct 2016 21:55:03 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Fri, 21 Oct 2016 20:15:40 GMT
+# Mon, 31 Oct 2016 21:55:03 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Fri, 21 Oct 2016 20:15:40 GMT
+# Mon, 31 Oct 2016 21:55:03 GMT
 ENV JAVA_VERSION=8u102
-# Fri, 21 Oct 2016 20:15:40 GMT
+# Mon, 31 Oct 2016 21:55:04 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Fri, 21 Oct 2016 20:15:41 GMT
+# Mon, 31 Oct 2016 21:55:04 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Fri, 21 Oct 2016 20:15:58 GMT
+# Mon, 31 Oct 2016 21:55:22 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 21 Oct 2016 20:15:59 GMT
+# Mon, 31 Oct 2016 21:55:24 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Sat, 22 Oct 2016 02:56:13 GMT
+# Tue, 01 Nov 2016 20:20:53 GMT
 ENV GOSU_VERSION=1.7
-# Sat, 22 Oct 2016 02:56:18 GMT
+# Tue, 01 Nov 2016 20:20:58 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Sat, 22 Oct 2016 02:56:20 GMT
+# Tue, 01 Nov 2016 20:21:00 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Sat, 22 Oct 2016 02:59:16 GMT
+# Tue, 01 Nov 2016 20:24:03 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends apt-transport-https && rm -rf /var/lib/apt/lists/* 	&& echo 'deb http://packages.elasticsearch.org/elasticsearch/2.x/debian stable main' > /etc/apt/sources.list.d/elasticsearch.list
-# Sat, 22 Oct 2016 02:59:17 GMT
+# Tue, 01 Nov 2016 20:24:04 GMT
 ENV ELASTICSEARCH_VERSION=2.4.1
-# Sat, 22 Oct 2016 02:59:26 GMT
+# Tue, 01 Nov 2016 20:24:13 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends elasticsearch=$ELASTICSEARCH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 22 Oct 2016 02:59:26 GMT
+# Tue, 01 Nov 2016 20:24:14 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 22 Oct 2016 02:59:26 GMT
+# Tue, 01 Nov 2016 20:24:14 GMT
 WORKDIR /usr/share/elasticsearch
-# Sat, 22 Oct 2016 02:59:27 GMT
+# Tue, 01 Nov 2016 20:24:15 GMT
 RUN set -ex 	&& for path in 		./data 		./logs 		./config 		./config/scripts 	; do 		mkdir -p "$path"; 		chown -R elasticsearch:elasticsearch "$path"; 	done
-# Sat, 22 Oct 2016 02:59:28 GMT
+# Tue, 01 Nov 2016 20:24:16 GMT
 COPY dir:5ec5fadebeaa388fd27b7738b6b8d6306c5b8b7d9ef468d45d3efa4b858b338f in ./config 
-# Sat, 22 Oct 2016 02:59:28 GMT
+# Tue, 01 Nov 2016 20:24:16 GMT
 VOLUME [/usr/share/elasticsearch/data]
-# Sat, 22 Oct 2016 02:59:29 GMT
+# Tue, 01 Nov 2016 20:24:17 GMT
 COPY file:4e7f545ce5a4556808c0760a1dbf219cb9aab1bf750b56480663d05716aac376 in / 
-# Sat, 22 Oct 2016 02:59:29 GMT
+# Tue, 01 Nov 2016 20:24:17 GMT
 EXPOSE 9200/tcp 9300/tcp
-# Sat, 22 Oct 2016 02:59:30 GMT
+# Tue, 01 Nov 2016 20:24:18 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 22 Oct 2016 02:59:30 GMT
+# Tue, 01 Nov 2016 20:24:18 GMT
 CMD ["elasticsearch"]
 ```
 
@@ -2156,49 +2156,49 @@ CMD ["elasticsearch"]
 		Last Modified: Fri, 21 Oct 2016 20:11:17 GMT  
 		Size: 566.6 KB (566556 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f7579daddb2fdbdd09c93996fd074457a138526c049279c1959559824aa1d0c`  
-		Last Modified: Fri, 21 Oct 2016 20:16:08 GMT  
+	-	`sha256:f264389d8f2fec4e89e2293411211bb57154f24ad836163d897d019b97d5fd5c`  
+		Last Modified: Tue, 01 Nov 2016 05:33:16 GMT  
 		Size: 217.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a985511f24689704c7520b5fdad710cee0d1f42bd20a8945589c83daa683c695`  
-		Last Modified: Fri, 21 Oct 2016 20:16:09 GMT  
-		Size: 242.0 B  
+	-	`sha256:1a2c46e93f4ac4f4f2f114c689f42a1435409b2db78ab6d19f525866037de473`  
+		Last Modified: Tue, 01 Nov 2016 05:33:12 GMT  
+		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c2b485fcc3e915fb4d2cf1739a2fb9b2b0a88d48536f4e632225783279766e4`  
-		Last Modified: Fri, 21 Oct 2016 20:16:20 GMT  
-		Size: 53.4 MB (53439616 bytes)  
+	-	`sha256:f9506bb322c04c882de48ee789337b636c47cf67c89c402a686f4a03dc6c1eb9`  
+		Last Modified: Tue, 01 Nov 2016 05:33:24 GMT  
+		Size: 53.4 MB (53439646 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:00b73c83b440f03854f136863a7f99e307ea721f990cee9bef6287d6385f5ddb`  
-		Last Modified: Fri, 21 Oct 2016 20:16:10 GMT  
-		Size: 284.2 KB (284214 bytes)  
+	-	`sha256:96f5dad14c2c78802e41cc9c1722caf14f5d7437a81c6d59855b9a835102d67a`  
+		Last Modified: Tue, 01 Nov 2016 05:33:10 GMT  
+		Size: 284.2 KB (284204 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a389758618238e8c9156f17f152f470d3030808297985e00feb870118a96117a`  
-		Last Modified: Sat, 22 Oct 2016 02:56:55 GMT  
-		Size: 807.9 KB (807934 bytes)  
+	-	`sha256:cadc6056da8217e858139fc68f44f81dfc7e75dea114b53d0b2ef5e036327508`  
+		Last Modified: Tue, 01 Nov 2016 20:21:34 GMT  
+		Size: 807.9 KB (807935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9d0b4aaf93486c82cbc91d0ade9990ce9e543370d618071d69efc6d8a7ce56b`  
-		Last Modified: Sat, 22 Oct 2016 02:56:54 GMT  
-		Size: 1.4 KB (1446 bytes)  
+	-	`sha256:eadefad3924e58cdff651e0e487ddd3fab137537124e2c7473858db77f6235f7`  
+		Last Modified: Tue, 01 Nov 2016 20:21:34 GMT  
+		Size: 1.4 KB (1445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc1c5aedfddbc5d03205673b4662906c12b58a5f9abcf77e19c5e20101ee0a29`  
-		Last Modified: Sat, 22 Oct 2016 02:59:40 GMT  
-		Size: 535.4 KB (535417 bytes)  
+	-	`sha256:4298e51a1654730e4e3770ea16456f595ac917aab1b1f955c334128cd1f74e54`  
+		Last Modified: Tue, 01 Nov 2016 20:24:29 GMT  
+		Size: 535.5 KB (535454 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:67a2da3d6cdaba7314c01211f7b99401f2dcc29171c0e14b4a1e197a80edf502`  
-		Last Modified: Sat, 22 Oct 2016 02:59:44 GMT  
-		Size: 27.4 MB (27357322 bytes)  
+	-	`sha256:d40f5f601c9498dc8cdc8121bf872516ec20f4d89779103a35fbde3a2b41f956`  
+		Last Modified: Tue, 01 Nov 2016 20:24:33 GMT  
+		Size: 27.4 MB (27357290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ea07945b6310a66a88019f9087e584d48b6f60c8a5588c08dca100971e1c249`  
-		Last Modified: Sat, 22 Oct 2016 02:59:41 GMT  
-		Size: 214.0 B  
+	-	`sha256:9c201bf4391c18886445b54b976a3e5d5ff89c8da0dfeb3f340dcad43d1a2c9b`  
+		Last Modified: Tue, 01 Nov 2016 20:24:30 GMT  
+		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd656e7dd97753d6708f44662d7d847545122cc2fa948f6a10774db4ea03200e`  
-		Last Modified: Sat, 22 Oct 2016 02:59:40 GMT  
-		Size: 540.0 B  
+	-	`sha256:e0ca820d39fb200e31f665204846e57c42abe46f5d687713e89b4d1ced322e4d`  
+		Last Modified: Tue, 01 Nov 2016 20:24:29 GMT  
+		Size: 539.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e69e863389313e18474062dd843bab6879f3a8094328e2f5b59975bdc707aa22`  
-		Last Modified: Sat, 22 Oct 2016 02:59:40 GMT  
-		Size: 469.0 B  
+	-	`sha256:b9ff5bb87d85b3efb7c8d8d3f60bf262aba08b191e67740481e62921d08c69d8`  
+		Last Modified: Tue, 01 Nov 2016 20:24:29 GMT  
+		Size: 470.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:2.4`
@@ -2476,7 +2476,7 @@ CMD ["elasticsearch"]
 ## `elasticsearch:5.0.0`
 
 ```console
-$ docker pull elasticsearch@sha256:29205bca045c8d083f777dfc453f4f1ff3d2c08ea4f529f88795166c58e5607e
+$ docker pull elasticsearch@sha256:4793bd531e816478703810c7414b97d60df710f3a5c76d3e7d0be1ad9ae6b7b8
 ```
 
 -	Platforms:
@@ -2486,9 +2486,9 @@ $ docker pull elasticsearch@sha256:29205bca045c8d083f777dfc453f4f1ff3d2c08ea4f52
 
 -	Docker Version: 1.12.2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **158.5 MB (158483708 bytes)**  
+-	Total Size: **158.5 MB (158483697 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3c1ce0d0adcce3f91f4639702b240fc3faaac3ef3918fc107d8a7feb0dc5569a`
+-	Image ID: `sha256:5a62a28797b389eff55e92cbfb883029fb8893a52fc99b4f7edf4c4e27621f73`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["elasticsearch"]`
 
@@ -2501,53 +2501,53 @@ CMD ["/bin/bash"]
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 21 Oct 2016 20:10:24 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 21 Oct 2016 20:15:38 GMT
-RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Fri, 21 Oct 2016 20:15:38 GMT
+# Mon, 31 Oct 2016 21:55:01 GMT
+RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
+# Mon, 31 Oct 2016 21:55:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 21 Oct 2016 20:15:39 GMT
+# Mon, 31 Oct 2016 21:55:03 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Fri, 21 Oct 2016 20:15:40 GMT
+# Mon, 31 Oct 2016 21:55:03 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Fri, 21 Oct 2016 20:15:40 GMT
+# Mon, 31 Oct 2016 21:55:03 GMT
 ENV JAVA_VERSION=8u102
-# Fri, 21 Oct 2016 20:15:40 GMT
+# Mon, 31 Oct 2016 21:55:04 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Fri, 21 Oct 2016 20:15:41 GMT
+# Mon, 31 Oct 2016 21:55:04 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Fri, 21 Oct 2016 20:15:58 GMT
+# Mon, 31 Oct 2016 21:55:22 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 21 Oct 2016 20:15:59 GMT
+# Mon, 31 Oct 2016 21:55:24 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Sat, 22 Oct 2016 02:56:13 GMT
+# Tue, 01 Nov 2016 20:20:53 GMT
 ENV GOSU_VERSION=1.7
-# Sat, 22 Oct 2016 02:56:18 GMT
+# Tue, 01 Nov 2016 20:20:58 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Sat, 22 Oct 2016 02:56:20 GMT
+# Tue, 01 Nov 2016 20:21:00 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Wed, 26 Oct 2016 20:25:49 GMT
+# Tue, 01 Nov 2016 20:28:40 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends apt-transport-https && rm -rf /var/lib/apt/lists/* 	&& echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' > /etc/apt/sources.list.d/elasticsearch.list
-# Wed, 26 Oct 2016 20:25:50 GMT
+# Tue, 01 Nov 2016 20:28:41 GMT
 ENV ELASTICSEARCH_VERSION=5.0.0
-# Wed, 26 Oct 2016 20:26:00 GMT
+# Tue, 01 Nov 2016 20:28:51 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends elasticsearch=$ELASTICSEARCH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 26 Oct 2016 20:26:00 GMT
+# Tue, 01 Nov 2016 20:28:52 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 26 Oct 2016 20:26:01 GMT
+# Tue, 01 Nov 2016 20:28:52 GMT
 WORKDIR /usr/share/elasticsearch
-# Wed, 26 Oct 2016 20:26:02 GMT
+# Tue, 01 Nov 2016 20:28:53 GMT
 RUN set -ex 	&& for path in 		./data 		./logs 		./config 		./config/scripts 	; do 		mkdir -p "$path"; 		chown -R elasticsearch:elasticsearch "$path"; 	done
-# Wed, 26 Oct 2016 20:26:02 GMT
+# Tue, 01 Nov 2016 20:28:54 GMT
 COPY dir:aacebf91dc4c741fe8e3adf41add1f566e09f1d20f104cc9c8f9d6afb4190fe6 in ./config 
-# Wed, 26 Oct 2016 20:26:03 GMT
+# Tue, 01 Nov 2016 20:28:54 GMT
 VOLUME [/usr/share/elasticsearch/data]
-# Wed, 26 Oct 2016 20:26:03 GMT
+# Tue, 01 Nov 2016 20:28:55 GMT
 COPY file:4e7f545ce5a4556808c0760a1dbf219cb9aab1bf750b56480663d05716aac376 in / 
-# Wed, 26 Oct 2016 20:26:03 GMT
+# Tue, 01 Nov 2016 20:28:55 GMT
 EXPOSE 9200/tcp 9300/tcp
-# Wed, 26 Oct 2016 20:26:04 GMT
+# Tue, 01 Nov 2016 20:28:56 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 26 Oct 2016 20:26:04 GMT
+# Tue, 01 Nov 2016 20:28:56 GMT
 CMD ["elasticsearch"]
 ```
 
@@ -2564,49 +2564,49 @@ CMD ["elasticsearch"]
 		Last Modified: Fri, 21 Oct 2016 20:11:17 GMT  
 		Size: 566.6 KB (566556 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f7579daddb2fdbdd09c93996fd074457a138526c049279c1959559824aa1d0c`  
-		Last Modified: Fri, 21 Oct 2016 20:16:08 GMT  
+	-	`sha256:f264389d8f2fec4e89e2293411211bb57154f24ad836163d897d019b97d5fd5c`  
+		Last Modified: Tue, 01 Nov 2016 05:33:16 GMT  
 		Size: 217.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a985511f24689704c7520b5fdad710cee0d1f42bd20a8945589c83daa683c695`  
-		Last Modified: Fri, 21 Oct 2016 20:16:09 GMT  
-		Size: 242.0 B  
+	-	`sha256:1a2c46e93f4ac4f4f2f114c689f42a1435409b2db78ab6d19f525866037de473`  
+		Last Modified: Tue, 01 Nov 2016 05:33:12 GMT  
+		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c2b485fcc3e915fb4d2cf1739a2fb9b2b0a88d48536f4e632225783279766e4`  
-		Last Modified: Fri, 21 Oct 2016 20:16:20 GMT  
-		Size: 53.4 MB (53439616 bytes)  
+	-	`sha256:f9506bb322c04c882de48ee789337b636c47cf67c89c402a686f4a03dc6c1eb9`  
+		Last Modified: Tue, 01 Nov 2016 05:33:24 GMT  
+		Size: 53.4 MB (53439646 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:00b73c83b440f03854f136863a7f99e307ea721f990cee9bef6287d6385f5ddb`  
-		Last Modified: Fri, 21 Oct 2016 20:16:10 GMT  
-		Size: 284.2 KB (284214 bytes)  
+	-	`sha256:96f5dad14c2c78802e41cc9c1722caf14f5d7437a81c6d59855b9a835102d67a`  
+		Last Modified: Tue, 01 Nov 2016 05:33:10 GMT  
+		Size: 284.2 KB (284204 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a389758618238e8c9156f17f152f470d3030808297985e00feb870118a96117a`  
-		Last Modified: Sat, 22 Oct 2016 02:56:55 GMT  
-		Size: 807.9 KB (807934 bytes)  
+	-	`sha256:cadc6056da8217e858139fc68f44f81dfc7e75dea114b53d0b2ef5e036327508`  
+		Last Modified: Tue, 01 Nov 2016 20:21:34 GMT  
+		Size: 807.9 KB (807935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9d0b4aaf93486c82cbc91d0ade9990ce9e543370d618071d69efc6d8a7ce56b`  
-		Last Modified: Sat, 22 Oct 2016 02:56:54 GMT  
-		Size: 1.4 KB (1446 bytes)  
+	-	`sha256:eadefad3924e58cdff651e0e487ddd3fab137537124e2c7473858db77f6235f7`  
+		Last Modified: Tue, 01 Nov 2016 20:21:34 GMT  
+		Size: 1.4 KB (1445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5f25bb3de04358630b8040660b975cb1e7c538ba9e7a1e841590bd391b2b83c`  
-		Last Modified: Wed, 26 Oct 2016 20:29:51 GMT  
-		Size: 535.5 KB (535456 bytes)  
+	-	`sha256:fc190fce53b81b6510a8254a20330d080eb8479fd7a9e72b850dfb5c92e7c5d6`  
+		Last Modified: Tue, 01 Nov 2016 20:29:08 GMT  
+		Size: 535.4 KB (535427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93426e1e8953a58d2c849dcdd15e98460108c126f25af66488da8bd75ef9ef62`  
-		Last Modified: Wed, 26 Oct 2016 20:29:54 GMT  
-		Size: 33.0 MB (32965576 bytes)  
+	-	`sha256:640fa8a31bc878eea6974778033b033c3d28fbc1282c89c2e2adb2a166627701`  
+		Last Modified: Tue, 01 Nov 2016 20:29:11 GMT  
+		Size: 33.0 MB (32965574 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:590c2ab9b639cd140e59ff17b77a1690f90a72d30bf0c48bf0159ea937908398`  
-		Last Modified: Wed, 26 Oct 2016 20:29:52 GMT  
+	-	`sha256:07d7ccc98bd3ea77371d5ca7f686f94ae1a38d539309009b6a4bd6d71fefc820`  
+		Last Modified: Tue, 01 Nov 2016 20:29:07 GMT  
 		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31bf488506010277db8df766f43022cf60e5e331043a938387ed0cbd8611e630`  
-		Last Modified: Wed, 26 Oct 2016 20:29:52 GMT  
-		Size: 510.0 B  
+	-	`sha256:0346acaed89af0522b4a6bdb8e768a1631d151278be7dbcd36d86ef86f7b3d39`  
+		Last Modified: Tue, 01 Nov 2016 20:29:07 GMT  
+		Size: 514.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21aad7ce70fa2669e354f277b1dd42061a6609eafa5a8f80299d2943b4ad2ed6`  
-		Last Modified: Wed, 26 Oct 2016 20:29:50 GMT  
-		Size: 470.0 B  
+	-	`sha256:0f1e24eb6480011c17169454c49254ce6bc35906e85dd8289c31b0bd178dfb2a`  
+		Last Modified: Tue, 01 Nov 2016 20:29:07 GMT  
+		Size: 469.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:5.0`
@@ -2748,7 +2748,7 @@ CMD ["elasticsearch"]
 ## `elasticsearch:5`
 
 ```console
-$ docker pull elasticsearch@sha256:29205bca045c8d083f777dfc453f4f1ff3d2c08ea4f529f88795166c58e5607e
+$ docker pull elasticsearch@sha256:4793bd531e816478703810c7414b97d60df710f3a5c76d3e7d0be1ad9ae6b7b8
 ```
 
 -	Platforms:
@@ -2758,9 +2758,9 @@ $ docker pull elasticsearch@sha256:29205bca045c8d083f777dfc453f4f1ff3d2c08ea4f52
 
 -	Docker Version: 1.12.2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **158.5 MB (158483708 bytes)**  
+-	Total Size: **158.5 MB (158483697 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3c1ce0d0adcce3f91f4639702b240fc3faaac3ef3918fc107d8a7feb0dc5569a`
+-	Image ID: `sha256:5a62a28797b389eff55e92cbfb883029fb8893a52fc99b4f7edf4c4e27621f73`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["elasticsearch"]`
 
@@ -2773,53 +2773,53 @@ CMD ["/bin/bash"]
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 21 Oct 2016 20:10:24 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 21 Oct 2016 20:15:38 GMT
-RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Fri, 21 Oct 2016 20:15:38 GMT
+# Mon, 31 Oct 2016 21:55:01 GMT
+RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
+# Mon, 31 Oct 2016 21:55:02 GMT
 ENV LANG=C.UTF-8
-# Fri, 21 Oct 2016 20:15:39 GMT
+# Mon, 31 Oct 2016 21:55:03 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Fri, 21 Oct 2016 20:15:40 GMT
+# Mon, 31 Oct 2016 21:55:03 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Fri, 21 Oct 2016 20:15:40 GMT
+# Mon, 31 Oct 2016 21:55:03 GMT
 ENV JAVA_VERSION=8u102
-# Fri, 21 Oct 2016 20:15:40 GMT
+# Mon, 31 Oct 2016 21:55:04 GMT
 ENV JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1
-# Fri, 21 Oct 2016 20:15:41 GMT
+# Mon, 31 Oct 2016 21:55:04 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Fri, 21 Oct 2016 20:15:58 GMT
+# Mon, 31 Oct 2016 21:55:22 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 21 Oct 2016 20:15:59 GMT
+# Mon, 31 Oct 2016 21:55:24 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Sat, 22 Oct 2016 02:56:13 GMT
+# Tue, 01 Nov 2016 20:20:53 GMT
 ENV GOSU_VERSION=1.7
-# Sat, 22 Oct 2016 02:56:18 GMT
+# Tue, 01 Nov 2016 20:20:58 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Sat, 22 Oct 2016 02:56:20 GMT
+# Tue, 01 Nov 2016 20:21:00 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Wed, 26 Oct 2016 20:25:49 GMT
+# Tue, 01 Nov 2016 20:28:40 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends apt-transport-https && rm -rf /var/lib/apt/lists/* 	&& echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' > /etc/apt/sources.list.d/elasticsearch.list
-# Wed, 26 Oct 2016 20:25:50 GMT
+# Tue, 01 Nov 2016 20:28:41 GMT
 ENV ELASTICSEARCH_VERSION=5.0.0
-# Wed, 26 Oct 2016 20:26:00 GMT
+# Tue, 01 Nov 2016 20:28:51 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends elasticsearch=$ELASTICSEARCH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 26 Oct 2016 20:26:00 GMT
+# Tue, 01 Nov 2016 20:28:52 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 26 Oct 2016 20:26:01 GMT
+# Tue, 01 Nov 2016 20:28:52 GMT
 WORKDIR /usr/share/elasticsearch
-# Wed, 26 Oct 2016 20:26:02 GMT
+# Tue, 01 Nov 2016 20:28:53 GMT
 RUN set -ex 	&& for path in 		./data 		./logs 		./config 		./config/scripts 	; do 		mkdir -p "$path"; 		chown -R elasticsearch:elasticsearch "$path"; 	done
-# Wed, 26 Oct 2016 20:26:02 GMT
+# Tue, 01 Nov 2016 20:28:54 GMT
 COPY dir:aacebf91dc4c741fe8e3adf41add1f566e09f1d20f104cc9c8f9d6afb4190fe6 in ./config 
-# Wed, 26 Oct 2016 20:26:03 GMT
+# Tue, 01 Nov 2016 20:28:54 GMT
 VOLUME [/usr/share/elasticsearch/data]
-# Wed, 26 Oct 2016 20:26:03 GMT
+# Tue, 01 Nov 2016 20:28:55 GMT
 COPY file:4e7f545ce5a4556808c0760a1dbf219cb9aab1bf750b56480663d05716aac376 in / 
-# Wed, 26 Oct 2016 20:26:03 GMT
+# Tue, 01 Nov 2016 20:28:55 GMT
 EXPOSE 9200/tcp 9300/tcp
-# Wed, 26 Oct 2016 20:26:04 GMT
+# Tue, 01 Nov 2016 20:28:56 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 26 Oct 2016 20:26:04 GMT
+# Tue, 01 Nov 2016 20:28:56 GMT
 CMD ["elasticsearch"]
 ```
 
@@ -2836,49 +2836,49 @@ CMD ["elasticsearch"]
 		Last Modified: Fri, 21 Oct 2016 20:11:17 GMT  
 		Size: 566.6 KB (566556 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f7579daddb2fdbdd09c93996fd074457a138526c049279c1959559824aa1d0c`  
-		Last Modified: Fri, 21 Oct 2016 20:16:08 GMT  
+	-	`sha256:f264389d8f2fec4e89e2293411211bb57154f24ad836163d897d019b97d5fd5c`  
+		Last Modified: Tue, 01 Nov 2016 05:33:16 GMT  
 		Size: 217.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a985511f24689704c7520b5fdad710cee0d1f42bd20a8945589c83daa683c695`  
-		Last Modified: Fri, 21 Oct 2016 20:16:09 GMT  
-		Size: 242.0 B  
+	-	`sha256:1a2c46e93f4ac4f4f2f114c689f42a1435409b2db78ab6d19f525866037de473`  
+		Last Modified: Tue, 01 Nov 2016 05:33:12 GMT  
+		Size: 239.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c2b485fcc3e915fb4d2cf1739a2fb9b2b0a88d48536f4e632225783279766e4`  
-		Last Modified: Fri, 21 Oct 2016 20:16:20 GMT  
-		Size: 53.4 MB (53439616 bytes)  
+	-	`sha256:f9506bb322c04c882de48ee789337b636c47cf67c89c402a686f4a03dc6c1eb9`  
+		Last Modified: Tue, 01 Nov 2016 05:33:24 GMT  
+		Size: 53.4 MB (53439646 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:00b73c83b440f03854f136863a7f99e307ea721f990cee9bef6287d6385f5ddb`  
-		Last Modified: Fri, 21 Oct 2016 20:16:10 GMT  
-		Size: 284.2 KB (284214 bytes)  
+	-	`sha256:96f5dad14c2c78802e41cc9c1722caf14f5d7437a81c6d59855b9a835102d67a`  
+		Last Modified: Tue, 01 Nov 2016 05:33:10 GMT  
+		Size: 284.2 KB (284204 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a389758618238e8c9156f17f152f470d3030808297985e00feb870118a96117a`  
-		Last Modified: Sat, 22 Oct 2016 02:56:55 GMT  
-		Size: 807.9 KB (807934 bytes)  
+	-	`sha256:cadc6056da8217e858139fc68f44f81dfc7e75dea114b53d0b2ef5e036327508`  
+		Last Modified: Tue, 01 Nov 2016 20:21:34 GMT  
+		Size: 807.9 KB (807935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9d0b4aaf93486c82cbc91d0ade9990ce9e543370d618071d69efc6d8a7ce56b`  
-		Last Modified: Sat, 22 Oct 2016 02:56:54 GMT  
-		Size: 1.4 KB (1446 bytes)  
+	-	`sha256:eadefad3924e58cdff651e0e487ddd3fab137537124e2c7473858db77f6235f7`  
+		Last Modified: Tue, 01 Nov 2016 20:21:34 GMT  
+		Size: 1.4 KB (1445 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5f25bb3de04358630b8040660b975cb1e7c538ba9e7a1e841590bd391b2b83c`  
-		Last Modified: Wed, 26 Oct 2016 20:29:51 GMT  
-		Size: 535.5 KB (535456 bytes)  
+	-	`sha256:fc190fce53b81b6510a8254a20330d080eb8479fd7a9e72b850dfb5c92e7c5d6`  
+		Last Modified: Tue, 01 Nov 2016 20:29:08 GMT  
+		Size: 535.4 KB (535427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93426e1e8953a58d2c849dcdd15e98460108c126f25af66488da8bd75ef9ef62`  
-		Last Modified: Wed, 26 Oct 2016 20:29:54 GMT  
-		Size: 33.0 MB (32965576 bytes)  
+	-	`sha256:640fa8a31bc878eea6974778033b033c3d28fbc1282c89c2e2adb2a166627701`  
+		Last Modified: Tue, 01 Nov 2016 20:29:11 GMT  
+		Size: 33.0 MB (32965574 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:590c2ab9b639cd140e59ff17b77a1690f90a72d30bf0c48bf0159ea937908398`  
-		Last Modified: Wed, 26 Oct 2016 20:29:52 GMT  
+	-	`sha256:07d7ccc98bd3ea77371d5ca7f686f94ae1a38d539309009b6a4bd6d71fefc820`  
+		Last Modified: Tue, 01 Nov 2016 20:29:07 GMT  
 		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31bf488506010277db8df766f43022cf60e5e331043a938387ed0cbd8611e630`  
-		Last Modified: Wed, 26 Oct 2016 20:29:52 GMT  
-		Size: 510.0 B  
+	-	`sha256:0346acaed89af0522b4a6bdb8e768a1631d151278be7dbcd36d86ef86f7b3d39`  
+		Last Modified: Tue, 01 Nov 2016 20:29:07 GMT  
+		Size: 514.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21aad7ce70fa2669e354f277b1dd42061a6609eafa5a8f80299d2943b4ad2ed6`  
-		Last Modified: Wed, 26 Oct 2016 20:29:50 GMT  
-		Size: 470.0 B  
+	-	`sha256:0f1e24eb6480011c17169454c49254ce6bc35906e85dd8289c31b0bd178dfb2a`  
+		Last Modified: Tue, 01 Nov 2016 20:29:07 GMT  
+		Size: 469.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elasticsearch:latest`
