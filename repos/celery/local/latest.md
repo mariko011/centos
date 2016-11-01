@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:535960c3f7238e3cdce56a1b472db147dcccba84ad81dc0b9eb76ac8ec4b9a2d`
-- Created: `2016-10-22T02:38:44.941909333Z`
+- Image ID: `sha256:6fa2be3bc459bea2dd5daa2599ce364d48255d3077a1d8db55295a0e7243ab59`
+- Created: `2016-11-01T01:27:40.211844473Z`
 - Arch: `linux`/`amd64`
 - Command: `["celery","worker"]`
 - Environment:
@@ -612,6 +612,30 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/gcc-4.9/4.9.2-10/
 - https://sources.debian.net/src/gcc-4.9/4.9.2-10/debian/copyright (for direct copyright/license information)
+
+### `dpkg` source package: `gdbm=1.8.3-13.1`
+
+Binary Packages:
+
+- `libgdbm3:amd64=1.8.3-13.1`
+
+Licenses: (parsed from: `/usr/share/doc/libgdbm3/copyright`)
+
+- `GPL-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris gdbm=1.8.3-13.1
+'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3-13.1.dsc' gdbm_1.8.3-13.1.dsc 1830 SHA256:b1d8bef30edc491315c337930cbe2b61f44f55035adfc26ae945bab5ca57d5c9
+'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3.orig.tar.bz2' gdbm_1.8.3.orig.tar.bz2 172796 SHA256:1d5995b6e9e6be4ff62c8126d019f184a083dd8e6f75f6c74b9fe023b5b9440e
+'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3-13.1.debian.tar.xz' gdbm_1.8.3-13.1.debian.tar.xz 14748 SHA256:251401e1f5210226f384e936b1b7ea1df40119a918d9f3dbf48b2e51d4df8983
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/gdbm/1.8.3-13.1/
+- https://sources.debian.net/src/gdbm/1.8.3-13.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.19-18+deb8u6`
 
