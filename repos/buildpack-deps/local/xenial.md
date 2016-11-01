@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e493caa3b903e96a7b280465a3a90c6a75cb2d77aa8641805ce8b5a1b7c9dbec`
-- Created: `2016-10-14T00:03:00.716762345Z`
+- Image ID: `sha256:e7cca558b01aea93ca103eb04376eab228e7e83ff762fc955ecd1046be4dde2d`
+- Created: `2016-10-31T21:36:50.403697596Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -253,13 +253,8 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-files=9.4ubuntu4.2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.2.dsc' base-files_9.4ubuntu4.2.dsc 1557 SHA256:88badae89a8b32406cd3a6cdd7e77e25168e7cc9396d3690c80569bf761d9d52
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.2.tar.xz' base-files_9.4ubuntu4.2.tar.xz 62920 SHA256:3b7da5e75a2aa6d6edb8f5f59885197d1da7921214f4df350face977fd077990
-```
 
 ### `dpkg` source package: `base-passwd=3.5.39`
 
@@ -987,9 +982,10 @@ $ apt-get source -qq --print-uris gccgo-6=6.0.1-0ubuntu1
 
 Binary Packages:
 
+- `libgdbm-dev=1.8.3-13.1`
 - `libgdbm3:amd64=1.8.3-13.1`
 
-Licenses: (parsed from: `/usr/share/doc/libgdbm3/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libgdbm-dev/copyright`, `/usr/share/doc/libgdbm3/copyright`)
 
 - `GPL-2`
 
@@ -1112,13 +1108,10 @@ $ apt-get source -qq --print-uris glib2.0=2.48.1-1~ubuntu16.04.1
 Binary Packages:
 
 - `libc-bin=2.23-0ubuntu3`
-- `libc-dev-bin=2.23-0ubuntu3`
-- `libc6:amd64=2.23-0ubuntu3`
-- `libc6-dev:amd64=2.23-0ubuntu3`
 - `locales=2.23-0ubuntu3`
 - `multiarch-support=2.23-0ubuntu3`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/locales/copyright`, `/usr/share/doc/multiarch-support/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/locales/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -1130,6 +1123,28 @@ $ apt-get source -qq --print-uris glibc=2.23-0ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu3.dsc' glibc_2.23-0ubuntu3.dsc 8521 SHA256:647f33e229b3d838ff72b3dcb80242d2c6c61ff93aa9798009962b9a21992260
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23.orig.tar.xz' glibc_2.23.orig.tar.xz 13849968 SHA256:bf6c528eeebefcacc295270068b79330c1fb2b22458ff66285b4175d23442c96
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu3.debian.tar.xz' glibc_2.23-0ubuntu3.debian.tar.xz 1296684 SHA256:5e01dd448c8d78e850661ca88f5009f19011b00c6a7031f7578fe09c330a41d3
+```
+
+### `dpkg` source package: `glibc=2.23-0ubuntu4`
+
+Binary Packages:
+
+- `libc-dev-bin=2.23-0ubuntu4`
+- `libc6:amd64=2.23-0ubuntu4`
+- `libc6-dev:amd64=2.23-0ubuntu4`
+
+Licenses: (parsed from: `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
+
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.23-0ubuntu4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu4.dsc' glibc_2.23-0ubuntu4.dsc 8532 SHA256:23c867505fc784d7c0e2f924d71a463a13c01e8ce8d4558030533279b79bedfb
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23.orig.tar.xz' glibc_2.23.orig.tar.xz 13849968 SHA256:bf6c528eeebefcacc295270068b79330c1fb2b22458ff66285b4175d23442c96
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu4.debian.tar.xz' glibc_2.23-0ubuntu4.debian.tar.xz 1339492 SHA256:ac0892d83bcc6225a738a28028b4d7222b4dfc150eafe1cea44dd38e864977ae
 ```
 
 ### `dpkg` source package: `gmp=2:6.1.0+dfsg-2`
@@ -2641,18 +2656,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
 ```
 
-### `dpkg` source package: `linux=4.4.0-43.63`
+### `dpkg` source package: `linux=4.4.0-45.66`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-43.63`
+- `linux-libc-dev:amd64=4.4.0-45.66`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.4.0-45.66
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-45.66.dsc' linux_4.4.0-45.66.dsc 9613 SHA256:f096e5b72106b56776c6577d6b7dc6408f2c4083fbfd832f2e4df1bc3b55aea0
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-45.66.diff.gz' linux_4.4.0-45.66.diff.gz 11831805 SHA256:c6e4bcfb02995ee3faa379a193059bf72635d87f52d9a5aa05ae1fc49bd6ff33
+```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu0.2`
 
@@ -2890,13 +2911,13 @@ $ apt-get source -qq --print-uris mpfr4=3.1.4-1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_3.1.4-1.debian.tar.xz' mpfr4_3.1.4-1.debian.tar.xz 9656 SHA256:e0562521ac0ef9fc2039ef1305962ee1ad529ae2210e197cee0080b1facc4d60
 ```
 
-### `dpkg` source package: `mysql-5.7=5.7.15-0ubuntu0.16.04.1`
+### `dpkg` source package: `mysql-5.7=5.7.16-0ubuntu0.16.04.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.7.15-0ubuntu0.16.04.1`
-- `libmysqlclient20:amd64=5.7.15-0ubuntu0.16.04.1`
-- `mysql-common=5.7.15-0ubuntu0.16.04.1`
+- `libmysqlclient-dev=5.7.16-0ubuntu0.16.04.1`
+- `libmysqlclient20:amd64=5.7.16-0ubuntu0.16.04.1`
+- `mysql-common=5.7.16-0ubuntu0.16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient20/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -2914,8 +2935,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.7=5.7.16-0ubuntu0.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.16-0ubuntu0.16.04.1.dsc' mysql-5.7_5.7.16-0ubuntu0.16.04.1.dsc 3344 SHA256:8d5dd7a431ddcfec804f90d73941dc5148fd36af55083abf5d0c5b4abb5cfce8
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.16.orig.tar.gz' mysql-5.7_5.7.16.orig.tar.gz 60556473 SHA256:43fc282f807353ff77ead21efb5f85f7f214c2a5362762a8cc370ae1c075095a
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.16-0ubuntu0.16.04.1.debian.tar.xz' mysql-5.7_5.7.16-0ubuntu0.16.04.1.debian.tar.xz 3388008 SHA256:ac5f5f90309001d471b9c6de3f229dd511c28ca080ab29b79067d136e2e35dbf
+```
 
 ### `dpkg` source package: `ncurses=6.0+20160213-1ubuntu1`
 

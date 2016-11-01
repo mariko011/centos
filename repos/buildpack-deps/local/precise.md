@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8c229373ba66ad4c82dc0ec18ce63f5ee789f6fc72213f3385ef6680e658e406`
-- Created: `2016-09-26T22:45:55.389591103Z`
+- Image ID: `sha256:ca0e9336dea1181a1753429337f48616d1e86f241717c8749e79cacf74ff6062`
+- Created: `2016-10-31T21:28:57.86238035Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -973,9 +973,10 @@ $ apt-get source -qq --print-uris gcc-defaults=1.112ubuntu5
 
 Binary Packages:
 
+- `libgdbm-dev=1.8.3-10`
 - `libgdbm3:amd64=1.8.3-10`
 
-Licenses: (parsed from: `/usr/share/doc/libgdbm3/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libgdbm-dev/copyright`, `/usr/share/doc/libgdbm3/copyright`)
 
 - `GPL-2`
 
@@ -2620,11 +2621,11 @@ $ apt-get source -qq --print-uris libyaml=0.1.4-2ubuntu0.12.04.4
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.4-2ubuntu0.12.04.4.debian.tar.gz' libyaml_0.1.4-2ubuntu0.12.04.4.debian.tar.gz 6152 SHA256:2941cb245fd1fdf53a576f02931f24cf5368649d51e2965bb7b6ba29c7ab4835
 ```
 
-### `dpkg` source package: `linux=3.2.0-110.151`
+### `dpkg` source package: `linux=3.2.0-113.155`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.2.0-110.151`
+- `linux-libc-dev:amd64=3.2.0-113.155`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2844,13 +2845,13 @@ $ apt-get source -qq --print-uris mpfr4=3.1.0-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_3.1.0-3ubuntu2.debian.tar.gz' mpfr4_3.1.0-3ubuntu2.debian.tar.gz 12168 SHA256:fab90bc1bde0d58aa7ccc23d1db61c8f3d362e9ecf7476ccda9d0e7689c246f6
 ```
 
-### `dpkg` source package: `mysql-5.5=5.5.52-0ubuntu0.12.04.1`
+### `dpkg` source package: `mysql-5.5=5.5.53-0ubuntu0.12.04.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.5.52-0ubuntu0.12.04.1`
-- `libmysqlclient18:amd64=5.5.52-0ubuntu0.12.04.1`
-- `mysql-common=5.5.52-0ubuntu0.12.04.1`
+- `libmysqlclient-dev=5.5.53-0ubuntu0.12.04.1`
+- `libmysqlclient18:amd64=5.5.53-0ubuntu0.12.04.1`
+- `mysql-common=5.5.53-0ubuntu0.12.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -2868,8 +2869,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `UNKNOWN`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.5=5.5.53-0ubuntu0.12.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.53-0ubuntu0.12.04.1.dsc' mysql-5.5_5.5.53-0ubuntu0.12.04.1.dsc 3154 SHA256:1faa0ade92d7ed384ea5a61f2c56719ec35f6a5e081a2c4d0d53e66b9f11a224
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.53.orig.tar.gz' mysql-5.5_5.5.53.orig.tar.gz 21035716 SHA256:a7a86dd42524e698c9dd8dab2520e6e75377cde077ed71eaf5a3b5a3d1f7d6ea
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.53-0ubuntu0.12.04.1.debian.tar.gz' mysql-5.5_5.5.53-0ubuntu0.12.04.1.debian.tar.gz 302560 SHA256:873eae5e07162318943d74f2132abae8e0eb8f2cae71d5dc2987d3986f0270c7
+```
 
 ### `dpkg` source package: `ncurses=5.9-4`
 
