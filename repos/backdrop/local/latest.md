@@ -1,9 +1,9 @@
-# `backdrop:1.5.0`
+# `backdrop:1.5.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d58a152c9b3887309843ab36fef26076db7e9c32eccecb79810c0dadaea2e912`
-- Created: `2016-10-22T02:30:32.925980867Z`
+- Image ID: `sha256:d0b857fd7d421695eeb9857862b2d839df8dc59a236745e9ccaabd1fb27ce0d4`
+- Created: `2016-10-31T22:36:15.305436986Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["apache2-foreground"]`
@@ -21,8 +21,8 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.27.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=16eb544498339d1d855292826e2e547ab01a31600141094959073e5e10e93ab5`
   - `PHP_MD5=9ce6efc96d5ab81ef808f8ed6b1f242d`
-  - `BACKDROP_VERSION=1.5.0`
-  - `BACKDROP_MD5=1eed54dd43304e8bae2b77ab3d4659e1`
+  - `BACKDROP_VERSION=1.5.1`
+  - `BACKDROP_MD5=59481db12d492c9579807f670803fa20`
 
 ## `dpkg` (`.deb`-based packages)
 
