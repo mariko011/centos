@@ -12,6 +12,8 @@
 -	[`kapacitor:1.0-alpine`](#kapacitor10-alpine)
 -	[`kapacitor:1.0.2-alpine`](#kapacitor102-alpine)
 -	[`kapacitor:alpine`](#kapacitoralpine)
+-	[`kapacitor:1.1.0-rc1`](#kapacitor110-rc1)
+-	[`kapacitor:1.1.0-rc1-alpine`](#kapacitor110-rc1-alpine)
 
 ## `kapacitor:0.13`
 
@@ -638,3 +640,11 @@ CMD ["kapacitord"]
 		Last Modified: Tue, 18 Oct 2016 23:39:33 GMT  
 		Size: 227.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `kapacitor:1.1.0-rc1`
+
+**does not exist** (yet?)
+
+## `kapacitor:1.1.0-rc1-alpine`
+
+**does not exist** (yet?)
