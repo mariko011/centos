@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:674219105f69a5dd3a4d0e93645a9407d0a56ea8e6727cc5ca973ad5e7e9b6a4`
-- Created: `2016-10-22T07:12:35.453866768Z`
+- Image ID: `sha256:d96f452a9b93c676d3ac1155701282ac6d8c6f39532668bb07a186628f064de4`
+- Created: `2016-11-01T06:33:30.78285822Z`
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
@@ -418,14 +418,14 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/ca-certificates/20130119+deb7u1/
 - https://sources.debian.net/src/ca-certificates/20130119+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `cairo=1.12.2-3`
+### `dpkg` source package: `cairo=1.12.2-3+deb7u1`
 
 Binary Packages:
 
-- `libcairo-gobject2:amd64=1.12.2-3`
-- `libcairo-script-interpreter2:amd64=1.12.2-3`
-- `libcairo2:amd64=1.12.2-3`
-- `libcairo2-dev=1.12.2-3`
+- `libcairo-gobject2:amd64=1.12.2-3+deb7u1`
+- `libcairo-script-interpreter2:amd64=1.12.2-3+deb7u1`
+- `libcairo2:amd64=1.12.2-3+deb7u1`
+- `libcairo2-dev=1.12.2-3+deb7u1`
 
 Licenses: (parsed from: `/usr/share/doc/libcairo-gobject2/copyright`, `/usr/share/doc/libcairo-script-interpreter2/copyright`, `/usr/share/doc/libcairo2/copyright`, `/usr/share/doc/libcairo2-dev/copyright`)
 
@@ -434,16 +434,16 @@ Licenses: (parsed from: `/usr/share/doc/libcairo-gobject2/copyright`, `/usr/shar
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cairo=1.12.2-3
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.12.2-3.dsc' cairo_1.12.2-3.dsc 2656 SHA256:1ba1bbe2d819810783b95d58d3341b7e4316ecc23bd4fac977db97384fc94a0d
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.12.2.orig.tar.xz' cairo_1.12.2.orig.tar.xz 42051584 SHA256:b786bc4a70542bcb09f2d9d13e5e6a0c86408cbf6d1edde5f0de807eecf93f96
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.12.2-3.debian.tar.gz' cairo_1.12.2-3.debian.tar.gz 35933 SHA256:33b53cd4f2a49d9a0b72d20fbb164045941d16cbcce8d94654e3fb1ce87b2f06
+$ apt-get source -qq --print-uris cairo=1.12.2-3+deb7u1
+'http://security.debian.org/pool/updates/main/c/cairo/cairo_1.12.2-3+deb7u1.dsc' cairo_1.12.2-3+deb7u1.dsc 2649 SHA256:9bea0482d932c5e791e01785d67e82a9ac2210d470a7fb23ce4a4e22896c596a
+'http://security.debian.org/pool/updates/main/c/cairo/cairo_1.12.2.orig.tar.xz' cairo_1.12.2.orig.tar.xz 42051584 SHA256:b786bc4a70542bcb09f2d9d13e5e6a0c86408cbf6d1edde5f0de807eecf93f96
+'http://security.debian.org/pool/updates/main/c/cairo/cairo_1.12.2-3+deb7u1.debian.tar.gz' cairo_1.12.2-3+deb7u1.debian.tar.gz 36579 SHA256:cc84faa0d160ec8d00dd42d90b1998c72f12dace179ee40c1beff4948fbe98e7
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/cairo/1.12.2-3/
-- https://sources.debian.net/src/cairo/1.12.2-3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/cairo/1.12.2-3+deb7u1/
+- https://sources.debian.net/src/cairo/1.12.2-3+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `configobj=4.7.2+ds-4`
 
@@ -1050,9 +1050,10 @@ Likely also available for browsing at:
 
 Binary Packages:
 
+- `libgdbm-dev=1.8.3-11`
 - `libgdbm3:amd64=1.8.3-11`
 
-Licenses: (parsed from: `/usr/share/doc/libgdbm3/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libgdbm-dev/copyright`, `/usr/share/doc/libgdbm3/copyright`)
 
 - `GPL-2`
 
@@ -2680,13 +2681,13 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libwmf/0.2.8.4-10.3+deb7u1/
 - https://sources.debian.net/src/libwmf/0.2.8.4-10.3+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libx11=2:1.5.0-1+deb7u2`
+### `dpkg` source package: `libx11=2:1.5.0-1+deb7u3`
 
 Binary Packages:
 
-- `libx11-6:amd64=2:1.5.0-1+deb7u2`
-- `libx11-data=2:1.5.0-1+deb7u2`
-- `libx11-dev:amd64=2:1.5.0-1+deb7u2`
+- `libx11-6:amd64=2:1.5.0-1+deb7u3`
+- `libx11-data=2:1.5.0-1+deb7u3`
+- `libx11-dev:amd64=2:1.5.0-1+deb7u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2695,16 +2696,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libx11=2:1.5.0-1+deb7u2
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.5.0-1+deb7u2.dsc' libx11_1.5.0-1+deb7u2.dsc 2496 SHA256:89efebd0e567e75c4beab68d24e78eb8bf3c26476919fd21c5e5b711c6d72f9d
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.5.0.orig.tar.gz' libx11_1.5.0.orig.tar.gz 3073820 SHA256:2ddc05170baf70dd650ee6108c5882eb657cafaf61a5b5261badb26703122518
-'http://deb.debian.org/debian/pool/main/libx/libx11/libx11_1.5.0-1+deb7u2.diff.gz' libx11_1.5.0-1+deb7u2.diff.gz 106245 SHA256:301bd5ec66a2866979e8b809d2c9cfc879fa43801005a955926ff27813c89a88
+$ apt-get source -qq --print-uris libx11=2:1.5.0-1+deb7u3
+'http://security.debian.org/pool/updates/main/libx/libx11/libx11_1.5.0-1+deb7u3.dsc' libx11_1.5.0-1+deb7u3.dsc 2480 SHA256:706e16c11038fbf4578a6fb3f4b6593f8dbb62d1f65aa94b1ef6399af7607184
+'http://security.debian.org/pool/updates/main/libx/libx11/libx11_1.5.0.orig.tar.gz' libx11_1.5.0.orig.tar.gz 3073820 SHA256:2ddc05170baf70dd650ee6108c5882eb657cafaf61a5b5261badb26703122518
+'http://security.debian.org/pool/updates/main/libx/libx11/libx11_1.5.0-1+deb7u3.diff.gz' libx11_1.5.0-1+deb7u3.diff.gz 107409 SHA256:3c6a45a0868be9e16beea169621e21fa972514c26820ffa4f35b344de03f3d90
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libx11/2:1.5.0-1+deb7u2/
-- https://sources.debian.net/src/libx11/2:1.5.0-1+deb7u2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libx11/2:1.5.0-1+deb7u3/
+- https://sources.debian.net/src/libx11/2:1.5.0-1+deb7u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxau=1:1.0.7-1`
 
@@ -2810,12 +2811,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libxext/2:1.3.1-2+deb7u1/
 - https://sources.debian.net/src/libxext/2:1.3.1-2+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libxml2=2.8.0+dfsg1-7+wheezy6`
+### `dpkg` source package: `libxml2=2.8.0+dfsg1-7+wheezy7`
 
 Binary Packages:
 
-- `libxml2:amd64=2.8.0+dfsg1-7+wheezy6`
-- `libxml2-dev:amd64=2.8.0+dfsg1-7+wheezy6`
+- `libxml2:amd64=2.8.0+dfsg1-7+wheezy7`
+- `libxml2-dev:amd64=2.8.0+dfsg1-7+wheezy7`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2824,16 +2825,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxml2=2.8.0+dfsg1-7+wheezy6
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy6.dsc' libxml2_2.8.0+dfsg1-7+wheezy6.dsc 2500 SHA256:8218f3c5c930bd569953a4eff2a0f1a27d9162ae1114ee527bfad203965ff2b0
+$ apt-get source -qq --print-uris libxml2=2.8.0+dfsg1-7+wheezy7
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy7.dsc' libxml2_2.8.0+dfsg1-7+wheezy7.dsc 2640 SHA256:555c6d36a0b6f7f1fa10cd2901e608c05dca4bbf14770c9235f085d33181aa10
 'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1.orig.tar.gz' libxml2_2.8.0+dfsg1.orig.tar.gz 3554683 SHA256:46f339843967e861e81f8427373ff2a3d0a8cb608022dea16aa1d345ddcee338
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy6.debian.tar.gz' libxml2_2.8.0+dfsg1-7+wheezy6.debian.tar.gz 64503 SHA256:b8e8d46f55f1d96e29580f4e40756fe825ed56222b1f0937d01c161df8e2ed0c
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy7.debian.tar.gz' libxml2_2.8.0+dfsg1-7+wheezy7.debian.tar.gz 69016 SHA256:78cd3a18f432203109f8b717523488b5b25ef812cb1141088944ec4bacfd0f90
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy6/
-- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy6/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy7/
+- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxrender=1:0.9.7-1+deb7u3`
 
