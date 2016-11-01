@@ -585,7 +585,7 @@ CMD ["perl5.24.0" "-de0"]
 ## `perl:5-threaded`
 
 ```console
-$ docker pull perl@sha256:3f9e6c9241319742526aee7bd5755671db5654dd69105592c1c56e5719bcca6b
+$ docker pull perl@sha256:1af50aa0a888ea768a0dba912f1613aae7e3733b7b865174ad748986f317bea4
 ```
 
 -	Platforms:
@@ -593,11 +593,11 @@ $ docker pull perl@sha256:3f9e6c9241319742526aee7bd5755671db5654dd69105592c1c56e
 
 ### `perl:5-threaded` - linux; amd64
 
--	Docker Version: 1.12.1
+-	Docker Version: 1.12.2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.9 MB (254891037 bytes)**  
+-	Total Size: **255.0 MB (254965491 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dbafef793dab225b97b65beb43fbf0673d44d8c1abd3f5f473b744c555993fc0`
+-	Image ID: `sha256:12dd2b12402c12beb132e51d2b6533b3eca93bab967dabbef11faa8a4f34b4a9`
 -	Default Command: `["perl5.24.0","-de0"]`
 
 ```dockerfile
@@ -609,23 +609,23 @@ CMD ["/bin/bash"]
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 21 Oct 2016 16:37:29 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 22 Oct 2016 02:35:40 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 22 Oct 2016 07:37:59 GMT
+# Mon, 31 Oct 2016 21:26:48 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
+# Tue, 01 Nov 2016 06:56:47 GMT
 MAINTAINER Peter Martini <PeterCMartini@GMail.com>
-# Sat, 22 Oct 2016 07:38:05 GMT
+# Tue, 01 Nov 2016 06:56:53 GMT
 RUN apt-get update     && apt-get install -y curl procps     && rm -fr /var/lib/apt/lists/*
-# Sat, 22 Oct 2016 07:38:06 GMT
+# Tue, 01 Nov 2016 06:56:54 GMT
 RUN mkdir /usr/src/perl
-# Sat, 22 Oct 2016 07:38:06 GMT
+# Tue, 01 Nov 2016 06:56:55 GMT
 COPY file:21749e9b9dd48119d6468e64e9fc7ba979cd3bac662c7c9978b4a6d3262fa809 in /usr/src/perl/ 
-# Sat, 22 Oct 2016 07:38:07 GMT
+# Tue, 01 Nov 2016 06:56:55 GMT
 WORKDIR /usr/src/perl
-# Sat, 22 Oct 2016 07:49:57 GMT
+# Tue, 01 Nov 2016 07:08:50 GMT
 RUN curl -SL https://cpan.metacpan.org/authors/id/R/RJ/RJBS/perl-5.24.0.tar.bz2 -o perl-5.24.0.tar.bz2     && echo '298fa605138c1a00dab95643130ae0edab369b4d *perl-5.24.0.tar.bz2' | sha1sum -c -     && tar --strip-components=1 -xjf perl-5.24.0.tar.bz2 -C /usr/src/perl     && rm perl-5.24.0.tar.bz2     && cat *.patch | patch -p1     && ./Configure -Dusethreads -Duse64bitall -Duseshrplib  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://raw.githubusercontent.com/miyagawa/cpanminus/master/cpanm     && chmod +x cpanm     && ./cpanm App::cpanminus     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /tmp/*
-# Sat, 22 Oct 2016 07:49:57 GMT
+# Tue, 01 Nov 2016 07:08:51 GMT
 WORKDIR /root
-# Sat, 22 Oct 2016 07:49:58 GMT
+# Tue, 01 Nov 2016 07:08:51 GMT
 CMD ["perl5.24.0" "-de0"]
 ```
 
@@ -642,25 +642,25 @@ CMD ["perl5.24.0" "-de0"]
 		Last Modified: Fri, 21 Oct 2016 16:37:53 GMT  
 		Size: 42.5 MB (42500812 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6a5aab6cd0c9e8c0895dcbb6164cfaaf108910a09cc047037e0a1bf48b17ab0`  
-		Last Modified: Sat, 22 Oct 2016 02:36:21 GMT  
-		Size: 129.8 MB (129765263 bytes)  
+	-	`sha256:df720fc8e4f160444441c03d14894b21f295241ab4ff4d9f6e625f203c1fb944`  
+		Last Modified: Mon, 31 Oct 2016 21:38:14 GMT  
+		Size: 129.8 MB (129819618 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e4fb2641fb2bca925b35748db16386b0fd39a1914bad82b965348dfcdecf241`  
-		Last Modified: Sat, 22 Oct 2016 07:43:30 GMT  
-		Size: 168.0 B  
+	-	`sha256:6c42b90e8a1233238d5f6855c2752d73477d114e01837b7637390dabf33c56bd`  
+		Last Modified: Tue, 01 Nov 2016 07:02:22 GMT  
+		Size: 166.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a777141d840edbd22186cc1e6eab01e312ba398a7328698c7d2d66936948bbad`  
-		Last Modified: Sat, 22 Oct 2016 07:43:31 GMT  
-		Size: 129.0 B  
+	-	`sha256:48c09694799f1b0908c4d96fa41717a48501b4ffb132a9a78f5f59f77d237e4a`  
+		Last Modified: Tue, 01 Nov 2016 07:02:22 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c0f8dc835f8583524e880f9b3812009c9706d1afa05132940e6b90e8b393fb1`  
-		Last Modified: Sat, 22 Oct 2016 07:43:29 GMT  
-		Size: 397.0 B  
+	-	`sha256:1f856ac78cd3c0ee52cda29df467499a971921b8bbe2d7b16e20e38d1984fd83`  
+		Last Modified: Tue, 01 Nov 2016 07:02:23 GMT  
+		Size: 396.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d1d81a5098c9d9c7cfebde87cea9929da40e1249033b48861acc746f4700a14a`  
-		Last Modified: Sat, 22 Oct 2016 07:50:12 GMT  
-		Size: 12.7 MB (12743012 bytes)  
+	-	`sha256:bfa55aa759af556e8664223f3e9f2ca72292dcd24a76d21f95d8859921a448c8`  
+		Last Modified: Tue, 01 Nov 2016 07:09:06 GMT  
+		Size: 12.8 MB (12763115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `perl:5.24-threaded`
