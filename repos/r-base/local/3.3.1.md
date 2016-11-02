@@ -2332,14 +2332,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.7.6-1
-'http://http.debian.net/debian/pool/main/l/linux/linux_4.7.6-1.dsc' linux_4.7.6-1.dsc 85447 SHA256:8cf69bd0f59fbe050b19f001ded234006e47d0b9cf34f4220d28330bb1efabf1
-'http://http.debian.net/debian/pool/main/l/linux/linux_4.7.6.orig.tar.xz' linux_4.7.6.orig.tar.xz 91659160 SHA256:2e3bd7ea45e564227317e857a9b3d86ac74547a700f4514cd3c0cf535593c02d
-'http://http.debian.net/debian/pool/main/l/linux/linux_4.7.6-1.debian.tar.xz' linux_4.7.6-1.debian.tar.xz 2657968 SHA256:448ca9680d20a9bcddd6c5f87fd2539c5aa91f77fdaa2518e88e2c50d480ffef
-```
 
 ### `dpkg` source package: `littler=0.3.1-1`
 
