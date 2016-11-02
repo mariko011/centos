@@ -2,12 +2,15 @@
 
 # Tags of `erlang`
 
+-	[`erlang:19.1.5`](#erlang1915)
 -	[`erlang:19.1`](#erlang191)
 -	[`erlang:19`](#erlang19)
 -	[`erlang:latest`](#erlanglatest)
+-	[`erlang:19.1.5-slim`](#erlang1915-slim)
 -	[`erlang:19.1-slim`](#erlang191-slim)
 -	[`erlang:19-slim`](#erlang19-slim)
 -	[`erlang:slim`](#erlangslim)
+-	[`erlang:19.1.5-onbuild`](#erlang1915-onbuild)
 -	[`erlang:19.1-onbuild`](#erlang191-onbuild)
 -	[`erlang:19-onbuild`](#erlang19-onbuild)
 -	[`erlang:onbuild`](#erlangonbuild)
@@ -31,6 +34,10 @@
 -	[`erlang:17.5.6-slim`](#erlang1756-slim)
 -	[`erlang:17.5-slim`](#erlang175-slim)
 -	[`erlang:17-slim`](#erlang17-slim)
+
+## `erlang:19.1.5`
+
+**does not exist** (yet?)
 
 ## `erlang:19.1`
 
@@ -257,6 +264,10 @@ RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${
 		Size: 1.8 MB (1833084 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `erlang:19.1.5-slim`
+
+**does not exist** (yet?)
+
 ## `erlang:19.1-slim`
 
 ```console
@@ -379,6 +390,10 @@ CMD ["erl"]
 		Last Modified: Fri, 21 Oct 2016 19:36:37 GMT  
 		Size: 65.6 MB (65550367 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `erlang:19.1.5-onbuild`
+
+**does not exist** (yet?)
 
 ## `erlang:19.1-onbuild`
 
