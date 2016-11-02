@@ -281,13 +281,8 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-files=9.4ubuntu4.2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.2.dsc' base-files_9.4ubuntu4.2.dsc 1557 SHA256:88badae89a8b32406cd3a6cdd7e77e25168e7cc9396d3690c80569bf761d9d52
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.2.tar.xz' base-files_9.4ubuntu4.2.tar.xz 62920 SHA256:3b7da5e75a2aa6d6edb8f5f59885197d1da7921214f4df350face977fd077990
-```
 
 ### `dpkg` source package: `base-passwd=3.5.39`
 
@@ -3285,14 +3280,8 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 - `WEBP`
 - `XFIG`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.1.1-4ubuntu0.16.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1-4ubuntu0.16.04.3.dsc' libgd2_2.1.1-4ubuntu0.16.04.3.dsc 2334 SHA256:e9add0bbf13b1cec7d9fe870f5cf05a17fb9a4dd8b6a7ef14e1c7f4484bbfa91
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1.orig.tar.gz' libgd2_2.1.1.orig.tar.gz 2033791 SHA256:a68c69d2fe3eaab9db63b1c4d391dd549c26d3b47bfba484d5ed2d433c55d4d8
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1-4ubuntu0.16.04.3.debian.tar.xz' libgd2_2.1.1-4ubuntu0.16.04.3.debian.tar.xz 31568 SHA256:920545b96bbab9f59a91c8d31db253363071dc251a1c5af4b7f1931d6ab99e82
-```
 
 ### `dpkg` source package: `libglu=9.0.0-2.1`
 

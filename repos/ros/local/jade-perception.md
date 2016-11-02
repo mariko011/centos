@@ -948,14 +948,8 @@ Licenses: (parsed from: `/usr/share/doc/libdbus-1-3/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dbus=1.6.18-0ubuntu4.3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18-0ubuntu4.3.dsc' dbus_1.6.18-0ubuntu4.3.dsc 2671 SHA256:8e1aea973ce66566868960472d4aae5c740667a5de5d71d7c51a278d26014c16
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18.orig.tar.gz' dbus_1.6.18.orig.tar.gz 1916553 SHA256:7085a0895a9eb11a952394cdbea6d8b4358e17cb991fed0e8fb85e2b9e686dcd
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18-0ubuntu4.3.debian.tar.gz' dbus_1.6.18-0ubuntu4.3.debian.tar.gz 81309 SHA256:242cda682ee67147d6fcc734326a1efb2b5d03f38fc01ebf9f2163ec3f8429d1
-```
 
 ### `dpkg` source package: `debconf=1.5.51ubuntu2`
 
@@ -2998,14 +2992,8 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 - `WEBP`
 - `XFIG`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.1.0-3ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.0-3ubuntu0.3.dsc' libgd2_2.1.0-3ubuntu0.3.dsc 2412 SHA256:5e4583f6bba1d7ee721a89218e2fd776eff8b475d2f6a352586851a2b67bd9e9
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.0.orig.tar.xz' libgd2_2.1.0.orig.tar.xz 2004304 SHA256:fa6665dfe3d898019671293c84d77067a3d2ede50884dbcb6df899d508370e5a
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.0-3ubuntu0.3.debian.tar.gz' libgd2_2.1.0-3ubuntu0.3.debian.tar.gz 63124 SHA256:9e9192c718b2ce7601e119971cfcee45e1fd56d3337f3f7f09175fc6cc64b447
-```
 
 ### `dpkg` source package: `libglu=9.0.0-2`
 
