@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c5c3db262598fb412df71d7170c96e4f7869ea4cf57a072d5057ad162b370098`
-- Created: `2016-10-22T06:43:05.43803497Z`
+- Image ID: `sha256:cc59e1b16a6b514db7b6c060c0721cad6428384d47162d0caa09dda6fb5d5993`
+- Created: `2016-11-01T20:40:42.543858714Z`
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
@@ -2270,9 +2270,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openjdk-8=8u102-b14.1-1~bpo8+1
-'http://httpredir.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u102-b14.1-1~bpo8+1.dsc' openjdk-8_8u102-b14.1-1~bpo8+1.dsc 4489 SHA256:a0d58b38e8074eec1fac29bc2e376867f1113ffba2593bd589daad2b05af6bf3
-'http://httpredir.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u102-b14.1.orig.tar.gz' openjdk-8_8u102-b14.1.orig.tar.gz 63713669 SHA256:e2f871cccf32336f44e7ae919aef80a405328cc83c0105723e0d286becd5dae7
-'http://httpredir.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u102-b14.1-1~bpo8+1.debian.tar.xz' openjdk-8_8u102-b14.1-1~bpo8+1.debian.tar.xz 228040 SHA256:90961fc766b8494663493aadbfdc89d9fd5d70f1e67a106ba2afd1184b30d77b
+'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u102-b14.1-1~bpo8+1.dsc' openjdk-8_8u102-b14.1-1~bpo8+1.dsc 4489 SHA256:a0d58b38e8074eec1fac29bc2e376867f1113ffba2593bd589daad2b05af6bf3
+'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u102-b14.1.orig.tar.gz' openjdk-8_8u102-b14.1.orig.tar.gz 63713669 SHA256:e2f871cccf32336f44e7ae919aef80a405328cc83c0105723e0d286becd5dae7
+'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u102-b14.1-1~bpo8+1.debian.tar.xz' openjdk-8_8u102-b14.1-1~bpo8+1.debian.tar.xz 228040 SHA256:90961fc766b8494663493aadbfdc89d9fd5d70f1e67a106ba2afd1184b30d77b
 ```
 
 Likely also available for browsing at:
