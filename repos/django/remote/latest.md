@@ -1,7 +1,7 @@
 ## `django:latest`
 
 ```console
-$ docker pull django@sha256:a605f025fec7eff832060ccdfbed3c1f7bd86b4f8fa10f480bed2efceafb9031
+$ docker pull django@sha256:46b7f2ef31131c07fde62405b6a2157bb504030a6856840656492dc6aa82052c
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull django@sha256:a605f025fec7eff832060ccdfbed3c1f7bd86b4f8fa10f480bed
 
 -	Docker Version: 1.12.2
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.9 MB (157929492 bytes)**  
+-	Total Size: **157.9 MB (157934907 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a8d1a20c299e5b941bf59fa2834c816973ec357186828fdedd5e43fcc4b85c76`
+-	Image ID: `sha256:9ea3a5940491d8741d6cf29dd87bca0ed95e38a97a7f5a78d352cc4a127469e6`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -41,9 +41,9 @@ RUN cd /usr/local/bin 	&& { [ -e easy_install ] || ln -s easy_install-* easy_ins
 CMD ["python3"]
 # Tue, 01 Nov 2016 01:32:06 GMT
 RUN apt-get update && apt-get install -y 		gcc 		gettext 		mysql-client libmysqlclient-dev 		postgresql-client libpq-dev 		sqlite3 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 01 Nov 2016 01:32:06 GMT
-ENV DJANGO_VERSION=1.10.2
-# Tue, 01 Nov 2016 01:32:26 GMT
+# Tue, 01 Nov 2016 23:23:35 GMT
+ENV DJANGO_VERSION=1.10.3
+# Tue, 01 Nov 2016 23:24:00 GMT
 RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 ```
 
@@ -68,7 +68,7 @@ RUN pip install mysqlclient psycopg2 django=="$DJANGO_VERSION"
 		Last Modified: Tue, 01 Nov 2016 01:32:57 GMT  
 		Size: 68.3 MB (68293492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc10d0d12c4fcee20354a7553936c054d25367fd3eee7ba95bd6588b635922b7`  
-		Last Modified: Tue, 01 Nov 2016 01:32:42 GMT  
-		Size: 15.4 MB (15375157 bytes)  
+	-	`sha256:d7e6bb67cb2ca3b61b898f320398919fe341053e31746818c5b1388b9baf5378`  
+		Last Modified: Tue, 01 Nov 2016 23:24:36 GMT  
+		Size: 15.4 MB (15380572 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
