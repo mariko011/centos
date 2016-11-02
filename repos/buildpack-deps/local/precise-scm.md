@@ -434,14 +434,8 @@ Licenses: (parsed from: `/usr/share/doc/libdbus-1-3/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dbus=1.4.18-1ubuntu1.7
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.4.18-1ubuntu1.7.dsc' dbus_1.4.18-1ubuntu1.7.dsc 2614 SHA256:f47fe98278619faa676c905458b2b5176fcca059efb878afd2d40d996a1685a3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.4.18.orig.tar.gz' dbus_1.4.18.orig.tar.gz 1893155 SHA256:b5e0c3bd37fa0ca5e86e8d17c375d754de6cd5c1d46d5f2158a36ddd51de18cf
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.4.18-1ubuntu1.7.debian.tar.gz' dbus_1.4.18-1ubuntu1.7.debian.tar.gz 64850 SHA256:eb116f2c64a6876991aad02a169dd0bcd47f8c97dbc1372911930a52c49812c9
-```
 
 ### `dpkg` source package: `debconf=1.5.42ubuntu1`
 

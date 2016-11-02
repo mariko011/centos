@@ -644,14 +644,8 @@ Licenses: (parsed from: `/usr/share/doc/libdbus-1-3/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dbus=1.4.18-1ubuntu1.7
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.4.18-1ubuntu1.7.dsc' dbus_1.4.18-1ubuntu1.7.dsc 2614 SHA256:f47fe98278619faa676c905458b2b5176fcca059efb878afd2d40d996a1685a3
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.4.18.orig.tar.gz' dbus_1.4.18.orig.tar.gz 1893155 SHA256:b5e0c3bd37fa0ca5e86e8d17c375d754de6cd5c1d46d5f2158a36ddd51de18cf
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.4.18-1ubuntu1.7.debian.tar.gz' dbus_1.4.18-1ubuntu1.7.debian.tar.gz 64850 SHA256:eb116f2c64a6876991aad02a169dd0bcd47f8c97dbc1372911930a52c49812c9
-```
 
 ### `dpkg` source package: `debconf=1.5.42ubuntu1`
 
@@ -1847,14 +1841,8 @@ Licenses: (parsed from: `/usr/share/doc/libgd2-noxpm/copyright`)
 - `HPND`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.0.36~rc1~dfsg-6ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6ubuntu2.2.dsc' libgd2_2.0.36~rc1~dfsg-6ubuntu2.2.dsc 2452 SHA256:d64e9ba3fe88fa02fd262f8378fccbbfee220c515d7c43cd6a57928500798270
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg.orig.tar.gz' libgd2_2.0.36~rc1~dfsg.orig.tar.gz 761899 SHA256:919df21310ad4a8b6155df01411138110589cc6c50b1bc414dc62aebb0a7f41a
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6ubuntu2.2.debian.tar.gz' libgd2_2.0.36~rc1~dfsg-6ubuntu2.2.debian.tar.gz 30938 SHA256:7ad40a8244c60be8466976399f3655c862bd668370c0f15629a424b7c29d1033
-```
 
 ### `dpkg` source package: `libgpg-error=1.10-2ubuntu1`
 

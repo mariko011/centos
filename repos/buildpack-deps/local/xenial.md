@@ -1957,14 +1957,8 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 - `WEBP`
 - `XFIG`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.1.1-4ubuntu0.16.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1-4ubuntu0.16.04.3.dsc' libgd2_2.1.1-4ubuntu0.16.04.3.dsc 2334 SHA256:e9add0bbf13b1cec7d9fe870f5cf05a17fb9a4dd8b6a7ef14e1c7f4484bbfa91
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1.orig.tar.gz' libgd2_2.1.1.orig.tar.gz 2033791 SHA256:a68c69d2fe3eaab9db63b1c4d391dd549c26d3b47bfba484d5ed2d433c55d4d8
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1-4ubuntu0.16.04.3.debian.tar.xz' libgd2_2.1.1-4ubuntu0.16.04.3.debian.tar.xz 31568 SHA256:920545b96bbab9f59a91c8d31db253363071dc251a1c5af4b7f1931d6ab99e82
-```
 
 ### `dpkg` source package: `libgpg-error=1.21-2ubuntu1`
 

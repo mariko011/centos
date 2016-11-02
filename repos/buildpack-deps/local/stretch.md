@@ -3504,19 +3504,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxslt=1.1.29-1
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.29-1.dsc' libxslt_1.1.29-1.dsc 2008 SHA256:5e338b41be35a2994c546673dee6682303f0849df9a78d4664e6924e4e3eaafd
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.29.orig.tar.gz' libxslt_1.1.29.orig.tar.gz 3428524 SHA256:b5976e3857837e7617b29f2249ebb5eeac34e249208d31f1fbf7a6ba7a4090ce
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.29-1.debian.tar.xz' libxslt_1.1.29-1.debian.tar.xz 27388 SHA256:484c2fe11d32e1d60608c0eb4766140e5c0208385259cdbf9ea08604657f03a9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libxslt/1.1.29-1/
-- https://sources.debian.net/src/libxslt/1.1.29-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxt=1:1.1.5-1`
 
