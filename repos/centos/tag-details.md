@@ -202,7 +202,7 @@ CMD ["/bin/bash"]
 ## `centos:centos5`
 
 ```console
-$ docker pull centos@sha256:d4bf3d8f4efaf9c2f2be4735385da0f1c910f2b2fa89b6fe833890a125b676d5
+$ docker pull centos@sha256:70fffd687ff9545662c30f9043108489c698662861cd5f76070f7e2cd350564f
 ```
 
 -	Platforms:
@@ -237,7 +237,7 @@ CMD ["/bin/bash"]
 ## `centos:5`
 
 ```console
-$ docker pull centos@sha256:d4bf3d8f4efaf9c2f2be4735385da0f1c910f2b2fa89b6fe833890a125b676d5
+$ docker pull centos@sha256:70fffd687ff9545662c30f9043108489c698662861cd5f76070f7e2cd350564f
 ```
 
 -	Platforms:
@@ -350,7 +350,7 @@ CMD ["/bin/bash"]
 ## `centos:centos7.1.1503`
 
 ```console
-$ docker pull centos@sha256:98c7685ff425415f7784b036de441714548fe9862f7a6a5615c176c6c8c8a1b8
+$ docker pull centos@sha256:cb462399353506bfdfa311ed08274e9d3f595ada38ace7309aec2bc86b2885b5
 ```
 
 -	Platforms:
@@ -416,7 +416,7 @@ CMD ["/bin/bash"]
 ## `centos:centos7.0.1406`
 
 ```console
-$ docker pull centos@sha256:55a28fe16008c3d7884232613d651c82787f2819d7010f9ff7ca13f49a2343a6
+$ docker pull centos@sha256:7793b39617b28c6cd35774c00383b89a1265f3abf6efcaf0b8f4aafe4e0662d2
 ```
 
 -	Platforms:
@@ -446,7 +446,7 @@ ADD file:6a409eac27f0c7e04393da096dbeff01b929405e79b15222a0dc06a2084d3df3 in /
 ## `centos:7.0.1406`
 
 ```console
-$ docker pull centos@sha256:55a28fe16008c3d7884232613d651c82787f2819d7010f9ff7ca13f49a2343a6
+$ docker pull centos@sha256:7793b39617b28c6cd35774c00383b89a1265f3abf6efcaf0b8f4aafe4e0662d2
 ```
 
 -	Platforms:
@@ -476,7 +476,7 @@ ADD file:6a409eac27f0c7e04393da096dbeff01b929405e79b15222a0dc06a2084d3df3 in /
 ## `centos:centos6.8`
 
 ```console
-$ docker pull centos@sha256:699d6ab3b404f286b5f5e88415e05668b7af39413d2941aa2bdf1a843b77e9ed
+$ docker pull centos@sha256:37ee2dcd9a3a430136b566efb4aa1111ed332bfdef8b0de51a25d26891689fd7
 ```
 
 -	Platforms:
@@ -546,7 +546,7 @@ CMD ["/bin/bash"]
 ## `centos:centos6.7`
 
 ```console
-$ docker pull centos@sha256:1f4e3e2e3450b60d02445ff85818699e65f4eec00671b0a41bf60a0271a68997
+$ docker pull centos@sha256:c475cc98cc4a87d55b8dab3b61bf7b7e725ab0f0bf6891a656d5d557b7d55f36
 ```
 
 -	Platforms:
@@ -650,7 +650,7 @@ ADD file:a5c79d873c20d685b71d899211c5d58b90c08473604aba82a9d655a58fcd1488 in /
 ## `centos:6.6`
 
 ```console
-$ docker pull centos@sha256:91010f787aaade33757898348054c8d6dc8ec7361a6d53c2b62cf67022476b6e
+$ docker pull centos@sha256:e21297742183af3e64cbd42585c1718b53c677797a77044ba13c1425c21ef06b
 ```
 
 -	Platforms:
@@ -680,7 +680,7 @@ ADD file:a5c79d873c20d685b71d899211c5d58b90c08473604aba82a9d655a58fcd1488 in /
 ## `centos:centos5.11`
 
 ```console
-$ docker pull centos@sha256:f5ac6bb54c5042387c79c83fca93eff7b721da54ab995fd64a20b23f6785465d
+$ docker pull centos@sha256:c40041f5894293d0df8f5c6c2049b92a82c53f1718ecdd73cbf3c1826a08ba4a
 ```
 
 -	Platforms:
@@ -710,7 +710,7 @@ ADD file:5eb41b74d6ed5f4540b19132c786aec1839942f9213b842f37378a6f64da4914 in /
 ## `centos:5.11`
 
 ```console
-$ docker pull centos@sha256:f5ac6bb54c5042387c79c83fca93eff7b721da54ab995fd64a20b23f6785465d
+$ docker pull centos@sha256:c40041f5894293d0df8f5c6c2049b92a82c53f1718ecdd73cbf3c1826a08ba4a
 ```
 
 -	Platforms:

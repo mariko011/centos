@@ -1,7 +1,7 @@
 ## `centos:centos7.0.1406`
 
 ```console
-$ docker pull centos@sha256:55a28fe16008c3d7884232613d651c82787f2819d7010f9ff7ca13f49a2343a6
+$ docker pull centos@sha256:7793b39617b28c6cd35774c00383b89a1265f3abf6efcaf0b8f4aafe4e0662d2
 ```
 
 -	Platforms:

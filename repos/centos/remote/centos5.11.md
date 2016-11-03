@@ -1,7 +1,7 @@
 ## `centos:centos5.11`
 
 ```console
-$ docker pull centos@sha256:f5ac6bb54c5042387c79c83fca93eff7b721da54ab995fd64a20b23f6785465d
+$ docker pull centos@sha256:c40041f5894293d0df8f5c6c2049b92a82c53f1718ecdd73cbf3c1826a08ba4a
 ```
 
 -	Platforms:
