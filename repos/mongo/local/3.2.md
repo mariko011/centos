@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:092cc6fb995c169e0d49677f72a716bee87fa1b83b192cadc4afbf8ed368af0a`
-- Created: `2016-10-21T20:43:54.781865469Z`
+- Image ID: `sha256:135883d5d0b960b498e4c6c2009444b243b322d3fcb8fc4aa0cc741542dd6528`
+- Created: `2016-11-01T23:31:04.120003872Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["mongod"]`
@@ -13,3 +13,4 @@
   - `GPG_KEYS=DFFA3DCF326E302C4787673A01C4E7FAAAB2461C 	42F3E95A2C4F08279C4960ADD68FA50FEA312927`
   - `MONGO_MAJOR=3.2`
   - `MONGO_VERSION=3.2.10`
+  - `MONGO_PACKAGE=mongodb-org`
