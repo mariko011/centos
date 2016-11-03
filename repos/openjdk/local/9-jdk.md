@@ -2031,18 +2031,8 @@ Licenses: (parsed from: `/usr/share/doc/lsb-base/copyright`)
 - `BSD-3-clause`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris lsb=9.20161016
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_9.20161016.dsc' lsb_9.20161016.dsc 1664 SHA256:a51a6e59175dee4cf85f5d8e25b4fca8a5468ed53b035682c485785e3db0dcfb
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_9.20161016.tar.xz' lsb_9.20161016.tar.xz 42884 SHA256:d6756bad64a5f71fe5b5fbcc6887907ef54ec0d1a3452811627d70dfb4c0f31c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/lsb/9.20161016/
-- https://sources.debian.net/src/lsb/9.20161016/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lz4=0.0~r131-2`
 
