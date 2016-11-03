@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:699b680e9bdabd948761b85bdba429961257b2405a28637d6b787e5c73c8399f`
-- Created: `2016-10-19T17:41:14.461914739Z`
+- Image ID: `sha256:d1410423cb508c4c25c4e2788b10de9b7d3db6e579f1b00738a8b502dcfba690`
+- Created: `2016-11-01T21:09:49.592140304Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
 - Command: `["mvn"]`
@@ -11,8 +11,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64`
-  - `JAVA_VERSION=9~b140`
-  - `JAVA_DEBIAN_VERSION=9~b140-1`
+  - `JAVA_VERSION=9~b142`
+  - `JAVA_DEBIAN_VERSION=9~b142-1`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 
@@ -1620,11 +1620,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libidn/1.33-1/
 - https://sources.debian.net/src/libidn/1.33-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libjpeg-turbo=1:1.5.1-1`
+### `dpkg` source package: `libjpeg-turbo=1:1.5.1-2`
 
 Binary Packages:
 
-- `libjpeg62-turbo:amd64=1:1.5.1-1`
+- `libjpeg62-turbo:amd64=1:1.5.1-2`
 
 Licenses: (parsed from: `/usr/share/doc/libjpeg62-turbo/copyright`)
 
@@ -1632,8 +1632,19 @@ Licenses: (parsed from: `/usr/share/doc/libjpeg62-turbo/copyright`)
 - `BSD-BY-LC-NE`
 - `Expat`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libjpeg-turbo=1:1.5.1-2
+'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.1-2.dsc' libjpeg-turbo_1.5.1-2.dsc 2420 SHA256:9f755bfafa4795f91c689cb742194559f6e543e35ba135e0d30f6b51eed1eba2
+'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.1.orig.tar.gz' libjpeg-turbo_1.5.1.orig.tar.gz 1650647 SHA256:41429d3d253017433f66e3d472b8c7d998491d2f41caa7306b8d9a6f2a2c666c
+'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.1-2.debian.tar.xz' libjpeg-turbo_1.5.1-2.debian.tar.xz 78576 SHA256:0077c9e2b7ec2abe25c7a591e65a08750045a28dcd00207a928079a3d31b3cc4
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libjpeg-turbo/1:1.5.1-2/
+- https://sources.debian.net/src/libjpeg-turbo/1:1.5.1-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libmnl=1.0.4-2`
 
@@ -1661,11 +1672,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libmnl/1.0.4-2/
 - https://sources.debian.net/src/libmnl/1.0.4-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libpng1.6=1.6.25-2`
+### `dpkg` source package: `libpng1.6=1.6.26-1`
 
 Binary Packages:
 
-- `libpng16-16:amd64=1.6.25-2`
+- `libpng16-16:amd64=1.6.26-1`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 
@@ -1678,16 +1689,16 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.25-2
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.25-2.dsc' libpng1.6_1.6.25-2.dsc 2220 SHA256:faa138eeaaeb814b80ea70108fa0e394174bec2cdf2f52cdf082e7f922d26d44
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.25.orig.tar.xz' libpng1.6_1.6.25.orig.tar.xz 982204 SHA256:09fe8d8341e8bfcfb3263100d9ac7ea2155b28dd8535f179111c1672ac8d8811
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.25-2.debian.tar.xz' libpng1.6_1.6.25-2.debian.tar.xz 22028 SHA256:136023176759fad376b6cfe3b5ea17df2c235892d1e3c12f01af5ffe5faf48e3
+$ apt-get source -qq --print-uris libpng1.6=1.6.26-1
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.26-1.dsc' libpng1.6_1.6.26-1.dsc 2206 SHA256:74e796a08fa0f7daa20d416f52ea44527188f3d4cfa14523f1797be6731112f7
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.26.orig.tar.xz' libpng1.6_1.6.26.orig.tar.xz 983576 SHA256:266743a326986c3dbcee9d89b640595f6b16a293fd02b37d8c91348d317b73f9
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.26-1.debian.tar.xz' libpng1.6_1.6.26-1.debian.tar.xz 22072 SHA256:42edccfd98db984566529eaec59fa5d192f9d218ffad94d758eea54c48053765
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libpng1.6/1.6.25-2/
-- https://sources.debian.net/src/libpng1.6/1.6.25-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libpng1.6/1.6.26-1/
+- https://sources.debian.net/src/libpng1.6/1.6.26-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpsl=0.14.0-1`
 
@@ -2023,18 +2034,8 @@ Licenses: (parsed from: `/usr/share/doc/lsb-base/copyright`)
 - `BSD-3-clause`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris lsb=9.20161016
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_9.20161016.dsc' lsb_9.20161016.dsc 1664 SHA256:a51a6e59175dee4cf85f5d8e25b4fca8a5468ed53b035682c485785e3db0dcfb
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_9.20161016.tar.xz' lsb_9.20161016.tar.xz 42884 SHA256:d6756bad64a5f71fe5b5fbcc6887907ef54ec0d1a3452811627d70dfb4c0f31c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/lsb/9.20161016/
-- https://sources.debian.net/src/lsb/9.20161016/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lz4=0.0~r131-2`
 
@@ -2254,25 +2255,36 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nspr/2:4.12-6/
 - https://sources.debian.net/src/nspr/2:4.12-6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `nss=2:3.26-2`
+### `dpkg` source package: `nss=2:3.26.2-1`
 
 Binary Packages:
 
-- `libnss3:amd64=2:3.26-2`
+- `libnss3:amd64=2:3.26.2-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris nss=2:3.26.2-1
+'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26.2-1.dsc' nss_3.26.2-1.dsc 2205 SHA256:d68ef2fba84d7cff20faf3c387b0dc4f09dc29656b06ef2a2856bdd2e3f97be9
+'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26.2.orig.tar.gz' nss_3.26.2.orig.tar.gz 7388390 SHA256:13a40a2f97edf5fab3d4c7fdd928e77df36dc539cd8354b6b5d79ab93a131a5a
+'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26.2-1.debian.tar.xz' nss_3.26.2-1.debian.tar.xz 25540 SHA256:ed8c6babfce3910e50c9e82c68e9ae6e788881eca87a84e646f27992d6902a41
+```
 
-### `dpkg` source package: `openjdk-9=9~b140-1`
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/nss/2:3.26.2-1/
+- https://sources.debian.net/src/nss/2:3.26.2-1/debian/copyright (for direct copyright/license information)
+
+### `dpkg` source package: `openjdk-9=9~b142-1`
 
 Binary Packages:
 
-- `openjdk-9-jdk-headless:amd64=9~b140-1`
-- `openjdk-9-jre-headless:amd64=9~b140-1`
+- `openjdk-9-jdk-headless:amd64=9~b142-1`
+- `openjdk-9-jre-headless:amd64=9~b142-1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-9-jdk-headless/copyright`, `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 
@@ -2281,8 +2293,19 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jdk-headless/copyright`, `/usr
 - `LGPL-2`
 - `LGPL-2-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openjdk-9=9~b142-1
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b142-1.dsc' openjdk-9_9~b142-1.dsc 4345 SHA256:d932d9e4719ff67654b36ffd029a8efdfe523bae454fb95135401d6cad2ac7af
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b142.orig.tar.gz' openjdk-9_9~b142.orig.tar.gz 72402485 SHA256:001abf19e10308918ef81f6c7c33243045c129cc08f2c3118e67e2203ad9b0a1
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b142-1.debian.tar.xz' openjdk-9_9~b142-1.debian.tar.xz 188748 SHA256:1331e77daab4d4d2799b328e05f6735941918aba8125beb8905f46389a8c8494
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/openjdk-9/9~b142-1/
+- https://sources.debian.net/src/openjdk-9/9~b142-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.42+dfsg-2`
 
