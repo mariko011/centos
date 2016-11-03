@@ -1693,19 +1693,8 @@ Licenses: (parsed from: `/usr/share/doc/libcdt5/copyright`, `/usr/share/doc/libc
 - `X/MIT`
 - `zlib-style`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris graphviz=2.38.0-15
-'http://deb.debian.org/debian/pool/main/g/graphviz/graphviz_2.38.0-15.dsc' graphviz_2.38.0-15.dsc 3228 SHA256:5a063bc895b172b583e8d260bbf3ffb730bec6428facfdfedaae02f9c0291dfc
-'http://deb.debian.org/debian/pool/main/g/graphviz/graphviz_2.38.0.orig.tar.gz' graphviz_2.38.0.orig.tar.gz 25848858 SHA256:81aa238d9d4a010afa73a9d2a704fc3221c731e1e06577c2ab3496bdef67859e
-'http://deb.debian.org/debian/pool/main/g/graphviz/graphviz_2.38.0-15.debian.tar.xz' graphviz_2.38.0-15.debian.tar.xz 43056 SHA256:69b95ca8ab23b5289ad2f7e578055601262369054c2506a0a5223207446f8322
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/graphviz/2.38.0-15/
-- https://sources.debian.net/src/graphviz/2.38.0-15/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.26-1`
 
@@ -4920,19 +4909,8 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`, `/usr/share/doc/lib
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.6-2
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.6-2.dsc' tiff_4.0.6-2.dsc 2270 SHA256:e0537b2e1ae7992f53d8bae9a0a81198cd97f2aea22862a7ffc1112b0dbde15c
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.6.orig.tar.gz' tiff_4.0.6.orig.tar.gz 2192991 SHA256:4d57a50907b510e3049a4bba0d7888930fdfc16ce49f1bf693e5b6247370d68c
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.6-2.debian.tar.xz' tiff_4.0.6-2.debian.tar.xz 19960 SHA256:82a0ef3f713d2a22d40b9be71fd121b9136657d313ae6b76b51430302a7b9f8b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff/4.0.6-2/
-- https://sources.debian.net/src/tiff/4.0.6-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tzdata=2016g-1`
 

@@ -265,19 +265,8 @@ Licenses: (parsed from: `/usr/share/doc/automake/copyright`)
 - `GPL-3+`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris automake-1.15=1:1.15-4
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15-4.dsc' automake-1.15_1.15-4.dsc 2266 SHA256:deb5cb895a6061b9506db23981517b3073a72358a64a0a6037b8954f96b9c03b
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15.orig.tar.xz' automake-1.15_1.15.orig.tar.xz 1496708 SHA256:9908c75aabd49d13661d6dcb1bc382252d22cc77bf733a2d55e87f2aa2db8636
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15-4.debian.tar.xz' automake-1.15_1.15-4.debian.tar.xz 12116 SHA256:c18981578f1c212f85b1523044cfa9d0a2b6c6e2268789cf0b1dcb4c8973da34
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/automake-1.15/1:1.15-4/
-- https://sources.debian.net/src/automake-1.15/1:1.15-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `autotools-dev=20160430.1`
 
@@ -491,18 +480,8 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20160104
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20160104.dsc' ca-certificates_20160104.dsc 1405 SHA256:2225db22cec974a89121390db30cbdd7dc1198f6f17fb508d9ef6d435984ae49
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20160104.tar.xz' ca-certificates_20160104.tar.xz 293632 SHA256:09eb770122e23260316120c0cbbddc8a1d33e7147210ce44e146084d5d5abcdd
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/ca-certificates/20160104/
-- https://sources.debian.net/src/ca-certificates/20160104/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cairo=1.14.6-1`
 
@@ -2435,19 +2414,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libevent=2.0.21-stable-2
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.0.21-stable-2.dsc' libevent_2.0.21-stable-2.dsc 2392 SHA256:1d4bdc39ab31730ebc8c09d29cfd4247238d81294204722a9b038513a17d6992
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.0.21-stable.orig.tar.gz' libevent_2.0.21-stable.orig.tar.gz 850772 SHA256:22a530a8a5ba1cb9c080cba033206b17dacd21437762155c6d30ee6469f574f5
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.0.21-stable-2.debian.tar.xz' libevent_2.0.21-stable-2.debian.tar.xz 10736 SHA256:34ae24e760a426fd1cf38d372b2b1c5887987bc5705507ef13158fbe61a7492e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libevent/2.0.21-stable-2/
-- https://sources.debian.net/src/libevent/2.0.21-stable-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libexif=0.6.21-2`
 
@@ -4388,19 +4356,8 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.6=9.6.1-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.1-1.dsc' postgresql-9.6_9.6.1-1.dsc 3628 SHA256:ae82b54cc996e9e738247ccf451966f33fce78e253217e9eb13d10a76f22fc66
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.1.orig.tar.bz2' postgresql-9.6_9.6.1.orig.tar.bz2 19260568 SHA256:e5101e0a49141fc12a7018c6dad594694d3a3325f5ab71e93e0e51bd94e51fcd
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.1-1.debian.tar.xz' postgresql-9.6_9.6.1-1.debian.tar.xz 20204 SHA256:cf0bbde920965762b46f7e8d2b9006b4cd28218476ab09b35afad69282e57cc0
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/postgresql-9.6/9.6.1-1/
-- https://sources.debian.net/src/postgresql-9.6/9.6.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `procps=2:3.3.12-2`
 
