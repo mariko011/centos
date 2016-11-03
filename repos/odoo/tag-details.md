@@ -529,7 +529,7 @@ CMD ["odoo"]
 ## `odoo:latest`
 
 ```console
-$ docker pull odoo@sha256:5eae87cb1e65730105fe5a98c6fb27a27c966e1cad53c0ec3d87ca523346cf4f
+$ docker pull odoo@sha256:9dda179a2b818130c4346e4ad2ae830d4a44a140070c68cb4e24e53ca7b2514e
 ```
 
 -	Platforms:
@@ -537,13 +537,13 @@ $ docker pull odoo@sha256:5eae87cb1e65730105fe5a98c6fb27a27c966e1cad53c0ec3d87ca
 
 ### `odoo:latest` - linux; amd64
 
--	Docker Version: 1.12.1
+-	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **272.9 MB (272865288 bytes)**  
+-	Total Size: **271.7 MB (271723061 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ccd7044ca256b5f90c4d61b9ad4aef5cf5239547442d40fb24958cf64f5bd91f`
+-	Image ID: `sha256:9e0de364896f833048a8ba1ac8d4f79a61c126c06270dc0650181be327241dbe`
 -	Entrypoint: `["\/entrypoint.sh"]`
--	Default Command: `["openerp-server"]`
+-	Default Command: `["odoo"]`
 
 ```dockerfile
 # Fri, 21 Oct 2016 16:22:34 GMT
@@ -552,34 +552,34 @@ ADD file:23aa4f893e3288698c017b90be657911b72d54edb3b3a7c4d05c308f50f9228f in /
 CMD ["/bin/bash"]
 # Fri, 21 Oct 2016 22:46:26 GMT
 MAINTAINER Odoo S.A. <info@odoo.com>
-# Fri, 21 Oct 2016 22:47:04 GMT
-RUN set -x;         apt-get update         && apt-get install -y --no-install-recommends             ca-certificates             curl             node-less             node-clean-css             python-pyinotify             python-renderpm             python-support         && curl -o wkhtmltox.deb -SL http://nightly.odoo.com/extra/wkhtmltox-0.12.1.2_linux-jessie-amd64.deb         && echo '40e8b906de658a2221b15e4e8cd82565a47d7ee8 wkhtmltox.deb' | sha1sum -c -         && dpkg --force-depends -i wkhtmltox.deb         && apt-get -y install -f --no-install-recommends         && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false npm         && rm -rf /var/lib/apt/lists/* wkhtmltox.deb
-# Fri, 21 Oct 2016 22:49:33 GMT
-ENV ODOO_VERSION=9.0
-# Fri, 21 Oct 2016 22:49:33 GMT
-ENV ODOO_RELEASE=20160726
-# Fri, 21 Oct 2016 22:50:43 GMT
-RUN set -x;         curl -o odoo.deb -SL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}c.${ODOO_RELEASE}_all.deb         && echo 'cbd0cbaed27da28eaae1c6460f36d398c8acbf77 odoo.deb' | sha1sum -c -         && dpkg --force-depends -i odoo.deb         && apt-get update         && apt-get -y install -f --no-install-recommends         && rm -rf /var/lib/apt/lists/* odoo.deb
-# Fri, 21 Oct 2016 22:50:44 GMT
-COPY file:156abbd9c6016388d9d2e1584d9e9c49a4085dba32d97d1ed88fee992bb89e61 in / 
-# Fri, 21 Oct 2016 22:50:45 GMT
-COPY file:1172e26dac1f2b6dd4d3b3ae484c69b33109695606154cdb13dcfa032d798e88 in /etc/odoo/ 
-# Fri, 21 Oct 2016 22:50:46 GMT
-RUN chown odoo /etc/odoo/openerp-server.conf
-# Fri, 21 Oct 2016 22:50:47 GMT
+# Mon, 31 Oct 2016 23:38:44 GMT
+RUN set -x;         apt-get update         && apt-get install -y --no-install-recommends             ca-certificates             curl             node-less             python-gevent             python-pip             python-pyinotify             python-renderpm             python-support         && curl -o wkhtmltox.deb -SL http://nightly.odoo.com/extra/wkhtmltox-0.12.1.2_linux-jessie-amd64.deb         && echo '40e8b906de658a2221b15e4e8cd82565a47d7ee8 wkhtmltox.deb' | sha1sum -c -         && dpkg --force-depends -i wkhtmltox.deb         && apt-get -y install -f --no-install-recommends         && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false npm         && rm -rf /var/lib/apt/lists/* wkhtmltox.deb         && pip install psycogreen==1.0
+# Mon, 31 Oct 2016 23:40:03 GMT
+ENV ODOO_VERSION=10.0
+# Thu, 03 Nov 2016 19:28:18 GMT
+ENV ODOO_RELEASE=20161103
+# Thu, 03 Nov 2016 19:29:07 GMT
+RUN set -x;         curl -o odoo.deb -SL http://nightly.odoo.com/${ODOO_VERSION}/nightly/deb/odoo_${ODOO_VERSION}.${ODOO_RELEASE}_all.deb         && echo '298b9a3c752fbe8df1e6bc7e5ab9d84ce7d0061b odoo.deb' | sha1sum -c -         && dpkg --force-depends -i odoo.deb         && apt-get update         && apt-get -y install -f --no-install-recommends         && rm -rf /var/lib/apt/lists/* odoo.deb
+# Thu, 03 Nov 2016 19:29:09 GMT
+COPY file:47d94ca963470d9d965c44f9ee07bdfed21bf7be5b46925e55818de15ce0bdb1 in / 
+# Thu, 03 Nov 2016 19:29:09 GMT
+COPY file:5cd4425a11ba7c482740572351bc33ea5b877795c1d6240fe07667b118dc3740 in /etc/odoo/ 
+# Thu, 03 Nov 2016 19:29:10 GMT
+RUN chown odoo /etc/odoo/odoo.conf
+# Thu, 03 Nov 2016 19:29:11 GMT
 RUN mkdir -p /mnt/extra-addons         && chown -R odoo /mnt/extra-addons
-# Fri, 21 Oct 2016 22:50:48 GMT
+# Thu, 03 Nov 2016 19:29:11 GMT
 VOLUME [/var/lib/odoo /mnt/extra-addons]
-# Fri, 21 Oct 2016 22:50:48 GMT
+# Thu, 03 Nov 2016 19:29:11 GMT
 EXPOSE 8069/tcp 8071/tcp
-# Fri, 21 Oct 2016 22:50:49 GMT
-ENV OPENERP_SERVER=/etc/odoo/openerp-server.conf
-# Fri, 21 Oct 2016 22:50:49 GMT
+# Thu, 03 Nov 2016 19:29:11 GMT
+ENV ODOO_RC=/etc/odoo/odoo.conf
+# Thu, 03 Nov 2016 19:29:12 GMT
 USER [odoo]
-# Fri, 21 Oct 2016 22:50:50 GMT
+# Thu, 03 Nov 2016 19:29:12 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 21 Oct 2016 22:50:50 GMT
-CMD ["openerp-server"]
+# Thu, 03 Nov 2016 19:29:12 GMT
+CMD ["odoo"]
 ```
 
 -	Layers:
@@ -587,27 +587,27 @@ CMD ["openerp-server"]
 		Last Modified: Fri, 21 Oct 2016 16:22:58 GMT  
 		Size: 51.4 MB (51353125 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6375b07c7849e0d471e91ca88343dcbe4a6be7c4b9c38cbf28db75ddc030a7b`  
-		Last Modified: Fri, 21 Oct 2016 22:49:01 GMT  
-		Size: 83.8 MB (83760554 bytes)  
+	-	`sha256:71ffed833a60de1cd27e448c5ce63cb4c8c78e1ac896b4b2da23986e17266ab9`  
+		Last Modified: Mon, 31 Oct 2016 23:43:50 GMT  
+		Size: 86.0 MB (85980676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2560e081973b243d915385b4305da386e0309328a98b54db71542d1c50bf64a9`  
-		Last Modified: Fri, 21 Oct 2016 22:51:32 GMT  
-		Size: 137.7 MB (137749969 bytes)  
+	-	`sha256:3c77683ace25f2af113a296edcb0dc42eb6a4b50f37dbe8c3b6575babe107e7f`  
+		Last Modified: Thu, 03 Nov 2016 19:32:15 GMT  
+		Size: 134.4 MB (134387567 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc328cc11980215ff40cfd8fb3083ba62924bfe3c5a2335706cfeb90b252ddcc`  
-		Last Modified: Fri, 21 Oct 2016 22:51:01 GMT  
-		Size: 341.0 B  
+	-	`sha256:365b0a5bd1ab8c65575e07e5a062631252283adb13941d6367644c9b1cc8eb51`  
+		Last Modified: Thu, 03 Nov 2016 19:31:38 GMT  
+		Size: 416.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c4d94a068afdaabde8d31f888eeaa2d3f6e93b3fb5a50ae15bd97a71cd66f82`  
-		Last Modified: Fri, 21 Oct 2016 22:51:00 GMT  
-		Size: 587.0 B  
+	-	`sha256:4b79415104a9484c3a9143b70d235cca577a98ad0722e86112119c8d06d67e34`  
+		Last Modified: Thu, 03 Nov 2016 19:31:41 GMT  
+		Size: 577.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d1323e3e12aa21d723ffe68cbc7a6b368f3a7a3ee94400ab7aea748727d7438`  
-		Last Modified: Fri, 21 Oct 2016 22:51:00 GMT  
-		Size: 589.0 B  
+	-	`sha256:7fa217fe0543fe1c753123206a8f943600650a1a3d795d02a6870489c1ca5090`  
+		Last Modified: Thu, 03 Nov 2016 19:31:39 GMT  
+		Size: 579.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d6e4f4cffbcd03dcc01f54b540dca9f78b148405ab3a67c6dbc98e359d46546`  
-		Last Modified: Fri, 21 Oct 2016 22:51:00 GMT  
-		Size: 123.0 B  
+	-	`sha256:472160712c3802434e4108921db5318d1fcc7693a00381eb6be70cc5dd975106`  
+		Last Modified: Thu, 03 Nov 2016 19:31:39 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
