@@ -1,14 +1,14 @@
-# `erlang:19.1-slim`
+# `erlang:19.1.5-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b60d0ee0bceb53a88b0d419e1ad47f98914c9670cd9e2fecca23afc06a1ca567`
-- Created: `2016-10-21T19:36:08.757962559Z`
+- Image ID: `sha256:d3a7b0f49d8e239e584a47b5cc80eb653262b9635770ef94b30aa0ecc3be0b10`
+- Created: `2016-11-02T20:22:23.431935621Z`
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=19.1`
+  - `OTP_VERSION=19.1.5`
 
 ## `dpkg` (`.deb`-based packages)
 

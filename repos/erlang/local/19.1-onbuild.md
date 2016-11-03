@@ -1,16 +1,16 @@
-# `erlang:19.1-onbuild`
+# `erlang:19.1.5-onbuild`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7c08441f55402c7f8bd31a4ecd4633e92d7d860ab7c0251f7845da5481aa84c7`
-- Created: `2016-11-01T02:09:49.451859266Z`
+- Image ID: `sha256:84df688113c2b4d101705effedb6f9720c477ae64cb0767f274d4dc4ef35def2`
+- Created: `2016-11-02T20:22:26.143898164Z`
 - Arch: `linux`/`amd64`
 - Command: `["rebar3","shell"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=19.1`
+  - `OTP_VERSION=19.1.5`
   - `REBAR_VERSION=2.6.4`
-  - `REBAR3_VERSION=3.3.1`
+  - `REBAR3_VERSION=3.3.2`
 
 ## `dpkg` (`.deb`-based packages)
 
