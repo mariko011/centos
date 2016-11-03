@@ -1,16 +1,16 @@
-# `rocket.chat:0.43.0`
+# `rocket.chat:0.45.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:07d5b82601e180e100fca9675e2476976ee91ffbd4f8efd42f1b0086271d46b0`
-- Created: `2016-10-25T21:55:20.781840479Z`
+- Image ID: `sha256:36d566db0b0cdd4489dfd34de3871e7f599c8990188739e95df7aad9a41c056f`
+- Created: `2016-11-01T23:40:56.439973181Z`
 - Arch: `linux`/`amd64`
 - Command: `["node","main.js"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
   - `NODE_VERSION=4.6.1`
-  - `RC_VERSION=0.43.0`
+  - `RC_VERSION=0.45.0`
   - `MONGO_URL=mongodb://db:27017/meteor`
   - `HOME=/tmp`
   - `PORT=3000`
@@ -2081,9 +2081,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tar=1.27.1-2
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.27.1-2.dsc' tar_1.27.1-2.dsc 1859 SHA256:c79d3621eb195c92fd60bfccaedb6fc37c117549f8ef11a44e8b0dc7c14fc1fc
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.27.1.orig.tar.xz' tar_1.27.1.orig.tar.xz 1704252 SHA256:58169c5a03c04be20d3fb91010b01e822c6a58060a96e7cf2f9c1944de0151ab
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.27.1-2.debian.tar.xz' tar_1.27.1-2.debian.tar.xz 31996 SHA256:e2fab717e4574b2add8fc97ddf9fa7eb23a55152536c8c5e51383675f8774645
+'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1-2+deb8u1.dsc' tar_1.27.1-2+deb8u1.dsc 2049 SHA256:e42e96a9cdf325d7f030306735a1380276670deb72541a7f97ffe59a1e32e67b
+'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1.orig.tar.xz' tar_1.27.1.orig.tar.xz 1704252 SHA256:58169c5a03c04be20d3fb91010b01e822c6a58060a96e7cf2f9c1944de0151ab
+'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1-2+deb8u1.debian.tar.xz' tar_1.27.1-2+deb8u1.debian.tar.xz 32632 SHA256:dc2e495770f6c1c79a4e299d4008c8cb1f91a48e823751bc95d7f26ae498f995
 ```
 
 Likely also available for browsing at:
