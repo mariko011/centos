@@ -1,9 +1,9 @@
-# `sentry:8.9.0-onbuild`
+# `sentry:8.10.0-onbuild`
 
 ## Docker Metadata
 
-- Image ID: `sha256:390438839d88e337327d46b45bd1641f910c136cbdacb66e1043455e63fad491`
-- Created: `2016-11-01T07:59:39.175853255Z`
+- Image ID: `sha256:51f071e25a180853f331a29c928031705ebc9c1f3cf9d178eb736c324b358d88`
+- Created: `2016-11-02T20:05:36.799933082Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["run","web"]`
@@ -15,9 +15,9 @@
   - `PYTHON_PIP_VERSION=8.1.2`
   - `PIP_NO_CACHE_DIR=off`
   - `PIP_DISABLE_PIP_VERSION_CHECK=on`
-  - `GOSU_VERSION=1.9`
-  - `TINI_VERSION=v0.9.0`
-  - `SENTRY_VERSION=8.9.0`
+  - `GOSU_VERSION=1.10`
+  - `TINI_VERSION=v0.10.0`
+  - `SENTRY_VERSION=8.10.0`
   - `SENTRY_CONF=/etc/sentry`
   - `SENTRY_FILESTORE_DIR=/var/lib/sentry/files`
   - `PYTHONPATH=/usr/src/sentry`
