@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f37173c7d88cc6ec498713248f36ad057a145798eadb61228bd504729a2c62b5`
-- Created: `2016-10-31T23:41:21.491918808Z`
+- Image ID: `sha256:9e0de364896f833048a8ba1ac8d4f79a61c126c06270dc0650181be327241dbe`
+- Created: `2016-11-03T19:29:12.791912005Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["odoo"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `ODOO_VERSION=10.0`
-  - `ODOO_RELEASE=20161025`
+  - `ODOO_RELEASE=20161103`
   - `ODOO_RC=/etc/odoo/odoo.conf`
 
 ## `dpkg` (`.deb`-based packages)
@@ -3023,11 +3023,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nodejs/0.10.29~dfsg-2/
 - https://sources.debian.net/src/nodejs/0.10.29~dfsg-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `odoo=10.0.20161025`
+### `dpkg` source package: `odoo=10.0.20161103`
 
 Binary Packages:
 
-- `odoo=10.0.20161025`
+- `odoo=10.0.20161103`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -3467,9 +3467,8 @@ Binary Packages:
 
 - `python-babel=1.3+dfsg.1-5`
 - `python-babel-localedata=1.3+dfsg.1-5`
-- `python-pybabel=1.3+dfsg.1-5`
 
-Licenses: (parsed from: `/usr/share/doc/python-babel/copyright`, `/usr/share/doc/python-babel-localedata/copyright`, `/usr/share/doc/python-pybabel/copyright`)
+Licenses: (parsed from: `/usr/share/doc/python-babel/copyright`, `/usr/share/doc/python-babel-localedata/copyright`)
 
 - `BSD-3-clause`
 - `GPL-2`
