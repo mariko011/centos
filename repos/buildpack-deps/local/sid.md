@@ -596,20 +596,8 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.1-1
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1-1.dsc' cups_2.2.1-1.dsc 3367 SHA256:cfe0ea5c1e914e1d9fa9fa3aa22bd4b90599a9e9dddf701a048ec0b2afda1d50
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1.orig.tar.gz' cups_2.2.1.orig.tar.gz 9486635 SHA256:83b8730aa977cc055e7410df6a3a682548994c113994ca630a16513017e419d5
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1.orig.tar.gz.asc' cups_2.2.1.orig.tar.gz.asc 797 SHA256:37c2e6215b2794c33864e543bc0caf6aefa724844e41b4c9659c87f28d125c2a
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1-1.debian.tar.xz' cups_2.2.1-1.debian.tar.xz 361248 SHA256:3893854db828c20468b15c7a28295e54fdee7507e0e6ba57b697ad1408ba18d7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cups/2.2.1-1/
-- https://sources.debian.net/src/cups/2.2.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `curl=7.50.1-1`
 
@@ -629,19 +617,8 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris curl=7.50.1-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.50.1-1.dsc' curl_7.50.1-1.dsc 2713 SHA256:0dc812ada7fccc111c6497e51977e395e01024bbf94325e7b0c515da9d89a756
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.50.1.orig.tar.gz' curl_7.50.1.orig.tar.gz 8894258 SHA256:3e392cf600822b817be82d9080b377fcbab70538d5a8bf525a1cd66e157b99ea
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.50.1-1.debian.tar.xz' curl_7.50.1-1.debian.tar.xz 26948 SHA256:62cfd79dd0eaae5f2aff1941a60ae0f8ecef089ca9aadfa6e75b59c9f4dda63b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/curl/7.50.1-1/
-- https://sources.debian.net/src/curl/7.50.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-15`
 
@@ -906,19 +883,8 @@ Licenses: (parsed from: `/usr/share/doc/libdjvulibre-dev/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris djvulibre=3.5.27.1-6
-'http://deb.debian.org/debian/pool/main/d/djvulibre/djvulibre_3.5.27.1-6.dsc' djvulibre_3.5.27.1-6.dsc 2456 SHA256:9c0e90aa769dc2c394bf297660d98ea05c5b9cb2c62daa3ccdf61142211f64ca
-'http://deb.debian.org/debian/pool/main/d/djvulibre/djvulibre_3.5.27.1.orig.tar.gz' djvulibre_3.5.27.1.orig.tar.gz 3231662 SHA256:77f07de3f1039aa19eba2eb3170d9ce9a0918ba7b704a59cfaf08f42fcc52144
-'http://deb.debian.org/debian/pool/main/d/djvulibre/djvulibre_3.5.27.1-6.debian.tar.xz' djvulibre_3.5.27.1-6.debian.tar.xz 31012 SHA256:f9ec3d565b5cb9c6a45efd8f3c8d762d82f75719e73f99bcb8046deafde1ff34
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/djvulibre/3.5.27.1-6/
-- https://sources.debian.net/src/djvulibre/3.5.27.1-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `dpkg=1.18.10`
 
@@ -4442,19 +4408,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.12-3
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.12-3.dsc' python2.7_2.7.12-3.dsc 3310 SHA256:70753fe22198f705ab62e07024d057bf5f422c3dd7630ba00fd691fd8b5bcb08
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.12.orig.tar.gz' python2.7_2.7.12.orig.tar.gz 16935960 SHA256:3cb522d17463dfa69a155ab18cffa399b358c966c0363d6c8b5b3bf1384da4b6
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.12-3.diff.gz' python2.7_2.7.12-3.diff.gz 375825 SHA256:aad1a7005ece1f9d4cbd7084623da2d9ff82b435bbfa1281dedd46a1595d9fff
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/python2.7/2.7.12-3/
-- https://sources.debian.net/src/python2.7/2.7.12-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `python3-defaults=3.5.1-4`
 
@@ -4519,19 +4474,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.5-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python3.5=3.5.2-6
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.2-6.dsc' python3.5_3.5.2-6.dsc 3317 SHA256:1b088264e4adb986781d10e6469ff607dc0fbddda8b76803630c8767a969b4ce
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.2.orig.tar.xz' python3.5_3.5.2.orig.tar.xz 15222676 SHA256:0010f56100b9b74259ebcd5d4b295a32324b58b517403a10d1a2aa7cb22bca40
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.2-6.debian.tar.xz' python3.5_3.5.2-6.debian.tar.xz 521124 SHA256:5767ca0006a4a5c86a6482f80b5ce1825d9717e0031db6bb1dd3550efa3141c5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/python3.5/3.5.2-6/
-- https://sources.debian.net/src/python3.5/3.5.2-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `readline=7.0-1`
 

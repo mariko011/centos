@@ -407,19 +407,8 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris curl=7.50.1-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.50.1-1.dsc' curl_7.50.1-1.dsc 2713 SHA256:0dc812ada7fccc111c6497e51977e395e01024bbf94325e7b0c515da9d89a756
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.50.1.orig.tar.gz' curl_7.50.1.orig.tar.gz 8894258 SHA256:3e392cf600822b817be82d9080b377fcbab70538d5a8bf525a1cd66e157b99ea
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.50.1-1.debian.tar.xz' curl_7.50.1-1.debian.tar.xz 26948 SHA256:62cfd79dd0eaae5f2aff1941a60ae0f8ecef089ca9aadfa6e75b59c9f4dda63b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/curl/7.50.1-1/
-- https://sources.debian.net/src/curl/7.50.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-15`
 
@@ -2032,19 +2021,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.12-3
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.12-3.dsc' python2.7_2.7.12-3.dsc 3310 SHA256:70753fe22198f705ab62e07024d057bf5f422c3dd7630ba00fd691fd8b5bcb08
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.12.orig.tar.gz' python2.7_2.7.12.orig.tar.gz 16935960 SHA256:3cb522d17463dfa69a155ab18cffa399b358c966c0363d6c8b5b3bf1384da4b6
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.12-3.diff.gz' python2.7_2.7.12-3.diff.gz 375825 SHA256:aad1a7005ece1f9d4cbd7084623da2d9ff82b435bbfa1281dedd46a1595d9fff
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/python2.7/2.7.12-3/
-- https://sources.debian.net/src/python2.7/2.7.12-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `readline=7.0-1`
 
