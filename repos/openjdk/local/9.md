@@ -401,18 +401,8 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20160104
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20160104.dsc' ca-certificates_20160104.dsc 1405 SHA256:2225db22cec974a89121390db30cbdd7dc1198f6f17fb508d9ef6d435984ae49
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20160104.tar.xz' ca-certificates_20160104.tar.xz 293632 SHA256:09eb770122e23260316120c0cbbddc8a1d33e7147210ce44e146084d5d5abcdd
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/ca-certificates/20160104/
-- https://sources.debian.net/src/ca-certificates/20160104/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cdebconf=0.218`
 
@@ -500,20 +490,8 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.1-1
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1-1.dsc' cups_2.2.1-1.dsc 3367 SHA256:cfe0ea5c1e914e1d9fa9fa3aa22bd4b90599a9e9dddf701a048ec0b2afda1d50
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1.orig.tar.gz' cups_2.2.1.orig.tar.gz 9486635 SHA256:83b8730aa977cc055e7410df6a3a682548994c113994ca630a16513017e419d5
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1.orig.tar.gz.asc' cups_2.2.1.orig.tar.gz.asc 797 SHA256:37c2e6215b2794c33864e543bc0caf6aefa724844e41b4c9659c87f28d125c2a
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1-1.debian.tar.xz' cups_2.2.1-1.debian.tar.xz 361248 SHA256:3893854db828c20468b15c7a28295e54fdee7507e0e6ba57b697ad1408ba18d7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cups/2.2.1-1/
-- https://sources.debian.net/src/cups/2.2.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `curl=7.50.1-1`
 
