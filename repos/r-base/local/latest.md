@@ -3199,19 +3199,8 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-survival/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris survival=2.39-5-1
-'http://deb.debian.org/debian/pool/main/s/survival/survival_2.39-5-1.dsc' survival_2.39-5-1.dsc 1685 SHA256:265eb10d5d9e4531c550f2a5567e0632fc5e5dda4a911e9c695060a8c8ee35c1
-'http://deb.debian.org/debian/pool/main/s/survival/survival_2.39-5.orig.tar.gz' survival_2.39-5.orig.tar.gz 4541205 SHA256:607170ebe36080d102e884cf13c3b29df01d6bb3b593258afffa67fee2a0ada7
-'http://deb.debian.org/debian/pool/main/s/survival/survival_2.39-5-1.diff.gz' survival_2.39-5-1.diff.gz 3375 SHA256:7b7f38e43e9d98d6bc5158bf1f9890f5a3a488de158b2bc936014eef22ff6400
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/survival/2.39-5-1/
-- https://sources.debian.net/src/survival/2.39-5-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `systemd=231-9`
 
@@ -3279,19 +3268,8 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tar=1.29b-1
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.29b-1.dsc' tar_1.29b-1.dsc 1901 SHA256:dc65003ce17fe782dbd482ff686951d8ccf92b87c3d0e80eec8bd23c050420b8
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.29b.orig.tar.xz' tar_1.29b.orig.tar.xz 1822008 SHA256:6a59706ebee384a6cd2fb3ee1dbfbfc20c5c66c7efd7cedb28edc054fca8ba00
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.29b-1.debian.tar.xz' tar_1.29b-1.debian.tar.xz 27992 SHA256:6f7570040cdc982ec61a64fa05701cde9826594d0f1a3a60827c31a9b48ccd19
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tar/1.29b-1/
-- https://sources.debian.net/src/tar/1.29b-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tcl8.6=8.6.6+dfsg-1`
 
