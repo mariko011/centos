@@ -2872,19 +2872,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxslt=1.1.26-14.1+deb7u1
-'http://security.debian.org/pool/updates/main/libx/libxslt/libxslt_1.1.26-14.1+deb7u1.dsc' libxslt_1.1.26-14.1+deb7u1.dsc 2337 SHA256:a0e975d7a31d70fef8d4300c3aae9e97824a431d29f164f901b10cdf08238048
-'http://security.debian.org/pool/updates/main/libx/libxslt/libxslt_1.1.26.orig.tar.gz' libxslt_1.1.26.orig.tar.gz 3401513 SHA256:55dd52b42861f8a02989d701ef716d6280bfa02971e967c285016f99c66e3db1
-'http://security.debian.org/pool/updates/main/libx/libxslt/libxslt_1.1.26-14.1+deb7u1.debian.tar.gz' libxslt_1.1.26-14.1+deb7u1.debian.tar.gz 46532 SHA256:981d893b0c53a1d03d73f5616ec30e0f028272cc4acac91cf828490a78998edc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libxslt/1.1.26-14.1+deb7u1/
-- https://sources.debian.net/src/libxslt/1.1.26-14.1+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxt=1:1.1.3-1+deb7u1`
 
