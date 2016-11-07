@@ -1,7 +1,7 @@
 ## `ghost:latest`
 
 ```console
-$ docker pull ghost@sha256:d27f84d8a363a648ef88db15095308c0e58d787ac9d1ff43f51de80036f786bd
+$ docker pull ghost@sha256:d32d3fd79d530a32fd3d1df2a4ad5b212caa506930f2df8bde9fbe06765febbf
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull ghost@sha256:d27f84d8a363a648ef88db15095308c0e58d787ac9d1ff43f51de
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.4 MB (126360022 bytes)**  
+-	Total Size: **126.7 MB (126725673 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c099a2a082d276711dcf2174f9dfc78f5920ef3b4cb2f656510b3c111bd06499`
+-	Image ID: `sha256:e3ff982dc90b1ea20ae546593ccd47a724a9a7a417911bab074034a7fb9b91ef`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["npm","start"]`
 
@@ -46,23 +46,23 @@ RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/relea
 ENV GHOST_SOURCE=/usr/src/ghost
 # Thu, 03 Nov 2016 22:04:44 GMT
 WORKDIR /usr/src/ghost
-# Thu, 03 Nov 2016 22:04:44 GMT
-ENV GHOST_VERSION=0.11.2
-# Thu, 03 Nov 2016 22:05:33 GMT
+# Mon, 07 Nov 2016 19:00:38 GMT
+ENV GHOST_VERSION=0.11.3
+# Mon, 07 Nov 2016 19:01:27 GMT
 RUN buildDeps=' 		gcc 		make 		python 		unzip 	' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& wget -O ghost.zip "https://ghost.org/archives/ghost-${GHOST_VERSION}.zip" 	&& unzip ghost.zip 	&& npm install --production 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps 	&& rm ghost.zip 	&& npm cache clean 	&& rm -rf /tmp/npm*
-# Thu, 03 Nov 2016 22:05:33 GMT
+# Mon, 07 Nov 2016 19:01:28 GMT
 ENV GHOST_CONTENT=/var/lib/ghost
-# Thu, 03 Nov 2016 22:05:34 GMT
+# Mon, 07 Nov 2016 19:01:29 GMT
 RUN mkdir -p "$GHOST_CONTENT" && chown -R user:user "$GHOST_CONTENT"
-# Thu, 03 Nov 2016 22:05:34 GMT
+# Mon, 07 Nov 2016 19:01:29 GMT
 VOLUME [/var/lib/ghost]
-# Thu, 03 Nov 2016 22:05:35 GMT
+# Mon, 07 Nov 2016 19:01:30 GMT
 COPY file:c0bc882b990efd55f75953224ed07d533c09aeac8158a4698a92e623b1c79ce9 in /entrypoint.sh 
-# Thu, 03 Nov 2016 22:05:35 GMT
+# Mon, 07 Nov 2016 19:01:30 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 03 Nov 2016 22:05:35 GMT
+# Mon, 07 Nov 2016 19:01:30 GMT
 EXPOSE 2368/tcp
-# Thu, 03 Nov 2016 22:05:36 GMT
+# Mon, 07 Nov 2016 19:01:31 GMT
 CMD ["npm" "start"]
 ```
 
@@ -99,15 +99,15 @@ CMD ["npm" "start"]
 		Last Modified: Thu, 03 Nov 2016 22:05:46 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:147677f5310e6beebcabdca7bbeed873108933bb5ef1702241b85dcffd60ecc0`  
-		Last Modified: Thu, 03 Nov 2016 22:05:57 GMT  
-		Size: 43.3 MB (43321091 bytes)  
+	-	`sha256:3da420ec6967eb964859747f1d06340bcc23ebb238d3f1d2f768e44047a1c57c`  
+		Last Modified: Mon, 07 Nov 2016 19:01:53 GMT  
+		Size: 43.7 MB (43686744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e12546a485facc2d3844e2f0011b919b43e44921be4935bd11d3b00d91244bbb`  
-		Last Modified: Thu, 03 Nov 2016 22:05:47 GMT  
-		Size: 138.0 B  
+	-	`sha256:b9614fffc519826eaa26fa8c06b7915c1dd18493d3bf499467d4a8b4c8fd5ce1`  
+		Last Modified: Mon, 07 Nov 2016 19:01:42 GMT  
+		Size: 137.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:67c95ef461cd5572040ccb92d750f873af0868752f3773d3ba0c810f32f47dd3`  
-		Last Modified: Thu, 03 Nov 2016 22:05:47 GMT  
-		Size: 472.0 B  
+	-	`sha256:48a88a2f30abf31dfbba325f000d0c99d74d458cfae403187c179c6885f85ada`  
+		Last Modified: Mon, 07 Nov 2016 19:01:44 GMT  
+		Size: 471.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
