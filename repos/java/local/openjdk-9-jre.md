@@ -302,18 +302,8 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates-java/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ca-certificates-java=20160321
-'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20160321.dsc' ca-certificates-java_20160321.dsc 1843 SHA256:75469c1d2d4f1bbd556916cc31245db65581f67fc7c1bcbffcaf0fb3ddeeddfb
-'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20160321.tar.xz' ca-certificates-java_20160321.tar.xz 15712 SHA256:3caf93b56caa98b2c06ca704d85efc1e5ef7ca14fda8dc8392b15e6fc27aa849
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/ca-certificates-java/20160321/
-- https://sources.debian.net/src/ca-certificates-java/20160321/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ca-certificates=20160104`
 
@@ -633,18 +623,8 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.10
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.10.dsc' dpkg_1.18.10.dsc 2030 SHA256:c80b88e0b0293f0524978dc4526927b5e68bc0636c260c594ed1fb8c41859d91
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.10.tar.xz' dpkg_1.18.10.tar.xz 4645448 SHA256:025524da41ba18b183ff11e388eb8686f7cc58ee835ed7d48bd159c46a8b6dc5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dpkg/1.18.10/
-- https://sources.debian.net/src/dpkg/1.18.10/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `e2fsprogs=1.43.3-1`
 
@@ -1050,18 +1030,8 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.45
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.45.dsc' init-system-helpers_1.45.dsc 1935 SHA256:2cd1ec8775009e093ea2df3a5c8c4bf82605059956675b7f979b43258e68a920
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.45.tar.xz' init-system-helpers_1.45.tar.xz 42556 SHA256:d4e8cd7a2a6fb668a0841abf2fa4e72114b4adfa80e15820b4aaec014da3bfa4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/init-system-helpers/1.45/
-- https://sources.debian.net/src/init-system-helpers/1.45/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `iproute2=4.6.0-4`
 
@@ -2279,20 +2249,8 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.15.0-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.15.0-1.dsc' sqlite3_3.15.0-1.dsc 2478 SHA256:f1b1f00a7c6ef9cfa91db69da82c7f19384438536025bb7be2d56036d4ac8a87
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.15.0.orig-www.tar.xz' sqlite3_3.15.0.orig-www.tar.xz 3337960 SHA256:9bc6a33348508342d979da0a0a439b1044335fd57203c3011a02348911f8e142
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.15.0.orig.tar.xz' sqlite3_3.15.0.orig.tar.xz 5318748 SHA256:656d8573d15896455cbdcfaeb6cbeed5b654e87fa52b8e797eb2bbd7d04f7639
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.15.0-1.debian.tar.xz' sqlite3_3.15.0-1.debian.tar.xz 16660 SHA256:94d19d9d43112351549de29faedd4b0855680855f58512b3bc418a2aa395632e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sqlite3/3.15.0-1/
-- https://sources.debian.net/src/sqlite3/3.15.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `systemd=231-9`
 
