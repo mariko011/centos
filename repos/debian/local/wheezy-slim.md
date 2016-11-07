@@ -1,9 +1,9 @@
-# `debian:wheezy-backports`
+# `debian:wheezy-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e6399f1743aaa9e7a2eb822726fb315983228d3a075c011710366053fc9a3572`
-- Created: `2016-11-07T20:33:36.741165817Z`
+- Image ID: `sha256:dbb999842f6378168399d7ffc969ee62d7ff56ad2c9d602ccacae1916bca2ba0`
+- Created: `2016-11-07T20:33:35.55791465Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -260,7 +260,7 @@ Binary Packages:
 - `debconf=1.5.49`
 - `debconf-i18n=1.5.49`
 
-Licenses: (parsed from: `/usr/share/doc/debconf/copyright`, `/usr/share/doc/debconf-i18n/copyright`)
+Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
@@ -459,7 +459,7 @@ Binary Packages:
 - `libgcc1:amd64=1:4.7.2-5`
 - `libstdc++6:amd64=4.7.2-5`
 
-Licenses: (parsed from: `/usr/share/doc/gcc-4.7-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gcc-4.7-base/copyright`)
 
 - `Artistic`
 - `GFDL-1.2`
@@ -983,30 +983,9 @@ Binary Packages:
 
 - `perl-base=5.14.2-21+deb7u4`
 
-Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
+  If source is available (seen below), check the contents of `debian/copyright` within it.
 
-- `Artistic`
-- `Artistic,`
-- `Artistic-2`
-- `BSD-3-clause`
-- `BSD-3-clause-GENERIC`
-- `BSD-4-clause`
-- `BSD-4-clause-POWERDOG`
-- `BZIP`
-- `DONT-CHANGE-THE-GPL`
-- `Expat`
-- `GPL`
-- `GPL-1+`
-- `GPL-2+`
-- `PERLDOCS`
-- `REGCOMP`
-- `REGCOMP,`
-- `S2P`
-- `SDBM-PUBLIC-DOMAIN`
-- `TEXT-SOUNDEX`
-- `TEXT-TABS`
-- `Unicode`
-- `ZLIB`
 
 Source:
 

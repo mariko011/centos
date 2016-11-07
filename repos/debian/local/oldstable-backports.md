@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d9e9752b2ef94dbe5c55e0611c04b2b145bcc3b37d56975a9e0b6a05e4711cd3`
-- Created: `2016-10-21T16:24:37.489510474Z`
+- Image ID: `sha256:756384c4dd80e61a153b7b398c922264f659bf0b5b629ef37f92ba1b30d6777d`
+- Created: `2016-11-07T20:31:04.450213296Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -133,11 +133,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/base-passwd/3.5.26/
 - https://sources.debian.net/src/base-passwd/3.5.26/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `bash=4.2+dfsg-0.1+deb7u3`
+### `dpkg` source package: `bash=4.2+dfsg-0.1+deb7u4`
 
 Binary Packages:
 
-- `bash=4.2+dfsg-0.1+deb7u3`
+- `bash=4.2+dfsg-0.1+deb7u4`
 
 Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
@@ -146,16 +146,16 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris bash=4.2+dfsg-0.1+deb7u3
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.2+dfsg-0.1+deb7u3.dsc' bash_4.2+dfsg-0.1+deb7u3.dsc 2169 SHA256:c1b9ab8a687eefc7ed59a0011901ff829ec09400866671ba6be87d82b93a892e
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.2+dfsg.orig.tar.gz' bash_4.2+dfsg.orig.tar.gz 2749569 SHA256:a8cdf3d4e526d626ae42c11fde79f9f8ba323ec3b3745510410fc5f50463ccff
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.2+dfsg-0.1+deb7u3.diff.gz' bash_4.2+dfsg-0.1+deb7u3.diff.gz 92118 SHA256:8761f0532fcdc1b09ecb659107943454bc827e33412c64ca51582f75a1c4438f
+$ apt-get source -qq --print-uris bash=4.2+dfsg-0.1+deb7u4
+'http://security.debian.org/pool/updates/main/b/bash/bash_4.2+dfsg-0.1+deb7u4.dsc' bash_4.2+dfsg-0.1+deb7u4.dsc 2186 SHA256:3b353fe62c0931101eb11cd9263eac5d08e9d324bfada342fdd8a95373b6257f
+'http://security.debian.org/pool/updates/main/b/bash/bash_4.2+dfsg.orig.tar.gz' bash_4.2+dfsg.orig.tar.gz 2749569 SHA256:a8cdf3d4e526d626ae42c11fde79f9f8ba323ec3b3745510410fc5f50463ccff
+'http://security.debian.org/pool/updates/main/b/bash/bash_4.2+dfsg-0.1+deb7u4.diff.gz' bash_4.2+dfsg-0.1+deb7u4.diff.gz 92229 SHA256:935bfaf7f9542de61fd97328006f0d59b729292bd453e36e8c9d302dc5129e11
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/bash/4.2+dfsg-0.1+deb7u3/
-- https://sources.debian.net/src/bash/4.2+dfsg-0.1+deb7u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/bash/4.2+dfsg-0.1+deb7u4/
+- https://sources.debian.net/src/bash/4.2+dfsg-0.1+deb7u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bzip2=1.0.6-4`
 
@@ -1171,11 +1171,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/sysvinit/2.88dsf-41+deb7u1/
 - https://sources.debian.net/src/sysvinit/2.88dsf-41+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tar=1.26+dfsg-0.1`
+### `dpkg` source package: `tar=1.26+dfsg-0.1+deb7u1`
 
 Binary Packages:
 
-- `tar=1.26+dfsg-0.1`
+- `tar=1.26+dfsg-0.1+deb7u1`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
@@ -1185,40 +1185,29 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tar=1.26+dfsg-0.1
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.26+dfsg-0.1.dsc' tar_1.26+dfsg-0.1.dsc 1812 SHA256:d59b8de2f3581c8ae8b69187a2e45c2a75f2fac3e00636d81589d522ebab10ba
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.26+dfsg.orig.tar.xz' tar_1.26+dfsg.orig.tar.xz 1557888 SHA256:2791c99df400cd05afb1d78f29c4a412b6f038e5f38aa4759264cb434d715df6
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.26+dfsg-0.1.debian.tar.gz' tar_1.26+dfsg-0.1.debian.tar.gz 32886 SHA256:318ec7a664020c839e7d17af520f96955d7e33ae02319ad1569632d64fcff597
+$ apt-get source -qq --print-uris tar=1.26+dfsg-0.1+deb7u1
+'http://security.debian.org/pool/updates/main/t/tar/tar_1.26+dfsg-0.1+deb7u1.dsc' tar_1.26+dfsg-0.1+deb7u1.dsc 1823 SHA256:ace9b8c6105a452791fe4d1f28ded50a9a06e499bfa5f3d8c86ee17e32f9e6ed
+'http://security.debian.org/pool/updates/main/t/tar/tar_1.26+dfsg.orig.tar.xz' tar_1.26+dfsg.orig.tar.xz 1557888 SHA256:2791c99df400cd05afb1d78f29c4a412b6f038e5f38aa4759264cb434d715df6
+'http://security.debian.org/pool/updates/main/t/tar/tar_1.26+dfsg-0.1+deb7u1.debian.tar.gz' tar_1.26+dfsg-0.1+deb7u1.debian.tar.gz 33515 SHA256:49a050cb0c1ed62f6688f0e7f32f44994fab029b4195b8eaf295afd9a0013f4b
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/tar/1.26+dfsg-0.1/
-- https://sources.debian.net/src/tar/1.26+dfsg-0.1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/tar/1.26+dfsg-0.1+deb7u1/
+- https://sources.debian.net/src/tar/1.26+dfsg-0.1+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tzdata=2016d-0+deb7u1`
+### `dpkg` source package: `tzdata=2016h-0+deb7u1`
 
 Binary Packages:
 
-- `tzdata=2016d-0+deb7u1`
+- `tzdata=2016h-0+deb7u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016d-0+deb7u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016d-0+deb7u1.dsc' tzdata_2016d-0+deb7u1.dsc 1909 SHA256:675751e9b26e0349441b82da2bca83c9e92794c9f1acf2e96759a61607110f08
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016d.orig.tar.gz' tzdata_2016d.orig.tar.gz 312481 SHA256:d9554dfba0efd76053582bd89e8c7036ef12eee14fdd506675b08a5b59f0a1b4
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016d-0+deb7u1.debian.tar.xz' tzdata_2016d-0+deb7u1.debian.tar.xz 101300 SHA256:5a2fe25be75848314338fcdfaa624f595f177b481a6a1ba74795bdc46e06d7a8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2016d-0+deb7u1/
-- https://sources.debian.net/src/tzdata/2016d-0+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 

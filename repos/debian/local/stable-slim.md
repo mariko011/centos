@@ -1,9 +1,9 @@
-# `debian:stable`
+# `debian:stable-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a3375ad5d214431892c9e4389417f26680c823297ce1e0268792d79701112a32`
-- Created: `2016-11-07T20:31:42.999977265Z`
+- Image ID: `sha256:d2103c196fdefdfda0bf0782464723ed1f0c0c86616da44dd7bc5c683e1b6f58`
+- Created: `2016-11-07T20:31:55.631283857Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -358,7 +358,7 @@ Binary Packages:
 - `debconf=1.5.56`
 - `debconf-i18n=1.5.56`
 
-Licenses: (parsed from: `/usr/share/doc/debconf/copyright`, `/usr/share/doc/debconf-i18n/copyright`)
+Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
@@ -560,7 +560,7 @@ Binary Packages:
 - `libgcc1:amd64=1:4.9.2-10`
 - `libstdc++6:amd64=4.9.2-10`
 
-Licenses: (parsed from: `/usr/share/doc/gcc-4.9-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gcc-4.9-base/copyright`)
 
 - `Artistic`
 - `GFDL-1.2`
@@ -1297,32 +1297,9 @@ Binary Packages:
 
 - `perl-base=5.20.2-3+deb8u6`
 
-Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
+  If source is available (seen below), check the contents of `debian/copyright` within it.
 
-- `Artistic`
-- `Artistic,`
-- `Artistic-2`
-- `BSD-3-clause`
-- `BSD-3-clause-GENERIC`
-- `BSD-4-clause`
-- `BSD-4-clause-POWERDOG`
-- `BZIP`
-- `DONT-CHANGE-THE-GPL`
-- `Expat`
-- `GPL-1`
-- `GPL-1+`
-- `GPL-2+`
-- `GPL-3+-WITH-BISON-EXCEPTION`
-- `HSIEH-BSD`
-- `HSIEH-DERIVATIVE`
-- `LGPL-2.1`
-- `REGCOMP`
-- `REGCOMP,`
-- `S2P`
-- `SDBM-PUBLIC-DOMAIN`
-- `TEXT-TABS`
-- `Unicode`
-- `ZLIB`
 
 Source:
 
@@ -1521,7 +1498,7 @@ Binary Packages:
 - `systemd-sysv=215-17+deb8u5`
 - `udev=215-17+deb8u5`
 
-Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`, `/usr/share/doc/udev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
 - `Expat`
 - `GPL-2`

@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:60b8db83595fda251f231b8d4bfca1248b5acc1c42dfc40b61733e3793a51766`
-- Created: `2016-10-21T16:25:40.054155263Z`
+- Image ID: `sha256:84ddcaa64325055210050f97a65dd711769be49cde5c6f8f5b15f8f9d9b9630f`
+- Created: `2016-11-07T20:31:56.864994936Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -1570,11 +1570,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/sysvinit/2.88dsf-59/
 - https://sources.debian.net/src/sysvinit/2.88dsf-59/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tar=1.27.1-2`
+### `dpkg` source package: `tar=1.27.1-2+deb8u1`
 
 Binary Packages:
 
-- `tar=1.27.1-2+b1`
+- `tar=1.27.1-2+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
@@ -1584,7 +1584,7 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tar=1.27.1-2
+$ apt-get source -qq --print-uris tar=1.27.1-2+deb8u1
 'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1-2+deb8u1.dsc' tar_1.27.1-2+deb8u1.dsc 2049 SHA256:e42e96a9cdf325d7f030306735a1380276670deb72541a7f97ffe59a1e32e67b
 'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1.orig.tar.xz' tar_1.27.1.orig.tar.xz 1704252 SHA256:58169c5a03c04be20d3fb91010b01e822c6a58060a96e7cf2f9c1944de0151ab
 'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1-2+deb8u1.debian.tar.xz' tar_1.27.1-2+deb8u1.debian.tar.xz 32632 SHA256:dc2e495770f6c1c79a4e299d4008c8cb1f91a48e823751bc95d7f26ae498f995
@@ -1592,14 +1592,14 @@ $ apt-get source -qq --print-uris tar=1.27.1-2
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/tar/1.27.1-2/
-- https://sources.debian.net/src/tar/1.27.1-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/tar/1.27.1-2+deb8u1/
+- https://sources.debian.net/src/tar/1.27.1-2+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tzdata=2016f-0+deb8u1`
+### `dpkg` source package: `tzdata=2016h-0+deb8u1`
 
 Binary Packages:
 
-- `tzdata=2016f-0+deb8u1`
+- `tzdata=2016h-0+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1608,16 +1608,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2016f-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016f-0+deb8u1.dsc' tzdata_2016f-0+deb8u1.dsc 1971 SHA256:0474098d0be64feddf5cb231581b20381e9ba450ddcbbd9378c82a1fee89b046
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016f.orig.tar.gz' tzdata_2016f.orig.tar.gz 313286 SHA256:ed8c951008d12f1db55a11e96fc055718c6571233327d9de16a7f8475e2502b0
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016f-0+deb8u1.debian.tar.xz' tzdata_2016f-0+deb8u1.debian.tar.xz 101612 SHA256:fe51e05f855921da01f0dcff74f2fb0d4f9b10860ed579ca1a407de1021c96fa
+$ apt-get source -qq --print-uris tzdata=2016h-0+deb8u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016h-0+deb8u1.dsc' tzdata_2016h-0+deb8u1.dsc 1953 SHA256:7c7fc6a4f1a2cc8a392c6b31d753bf179424c790296d941890e3e3639975010a
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016h.orig.tar.gz' tzdata_2016h.orig.tar.gz 318714 SHA256:da1b74fc2dec2ce8b64948dafb0bfc2f923c830d421a7ae4d016226135697a64
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016h-0+deb8u1.debian.tar.xz' tzdata_2016h-0+deb8u1.debian.tar.xz 101916 SHA256:fd3a2a95166fdc84802ca3642f346a20926840681783193c7b70a86e449808e8
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/tzdata/2016f-0+deb8u1/
-- https://sources.debian.net/src/tzdata/2016f-0+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/tzdata/2016h-0+deb8u1/
+- https://sources.debian.net/src/tzdata/2016h-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 
