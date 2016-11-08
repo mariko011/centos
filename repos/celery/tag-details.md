@@ -2,30 +2,30 @@
 
 # Tags of `celery`
 
--	[`celery:4.0.0rc6`](#celery400rc6)
+-	[`celery:4.0.0rc7`](#celery400rc7)
 -	[`celery:4.0`](#celery40)
 -	[`celery:4`](#celery4)
--	[`celery:3.1.24`](#celery3124)
+-	[`celery:3.1.25`](#celery3125)
 -	[`celery:3.1`](#celery31)
 -	[`celery:3`](#celery3)
 -	[`celery:latest`](#celerylatest)
 
-## `celery:4.0.0rc6`
+## `celery:4.0.0rc7`
 
 ```console
-$ docker pull celery@sha256:89926963b3fcb5f66facdfc70854edbf08a1163986fb7779692ae3e308ce4371
+$ docker pull celery@sha256:cb36605904f84ea41f2c65de1fef215eff779a9df99bae0b0d3aa87cda298d2b
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `celery:4.0.0rc6` - linux; amd64
+### `celery:4.0.0rc7` - linux; amd64
 
--	Docker Version: 1.12.2
+-	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.9 MB (80854365 bytes)**  
+-	Total Size: **80.4 MB (80368857 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f4bc7ac82d891ed82d3fe955ee9b85bbda0f29b103d57d795db81ba594c6d6b`
+-	Image ID: `sha256:51b37105ee20d13d8bfcbfca165e0a6b267d784e113f2506c5e114ad127f336e`
 -	Default Command: `["celery","worker"]`
 
 ```dockerfile
@@ -57,17 +57,17 @@ RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
 WORKDIR /home/user
 # Tue, 01 Nov 2016 01:27:25 GMT
 RUN pip install redis
-# Tue, 01 Nov 2016 01:27:25 GMT
-ENV CELERY_VERSION=4.0.0rc6
-# Tue, 01 Nov 2016 01:27:29 GMT
+# Tue, 08 Nov 2016 18:42:00 GMT
+ENV CELERY_VERSION=4.0.0rc7
+# Tue, 08 Nov 2016 18:42:06 GMT
 RUN pip install celery=="$CELERY_VERSION"
-# Tue, 01 Nov 2016 01:27:30 GMT
+# Tue, 08 Nov 2016 18:42:07 GMT
 RUN { 	echo 'import os'; 	echo "BROKER_URL = os.environ.get('CELERY_BROKER_URL', 'amqp://')"; } > celeryconfig.py
-# Tue, 01 Nov 2016 01:27:31 GMT
+# Tue, 08 Nov 2016 18:42:08 GMT
 ENV CELERY_BROKER_URL=amqp://guest@rabbit
-# Tue, 01 Nov 2016 01:27:31 GMT
+# Tue, 08 Nov 2016 18:42:08 GMT
 USER [user]
-# Tue, 01 Nov 2016 01:27:31 GMT
+# Tue, 08 Nov 2016 18:42:08 GMT
 CMD ["celery" "worker"]
 ```
 
@@ -96,19 +96,19 @@ CMD ["celery" "worker"]
 		Last Modified: Tue, 01 Nov 2016 01:27:51 GMT  
 		Size: 1.8 MB (1797081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75ad195e932622589ed9de6c24f43d8227142488564eccb355f60dcfd3dabd54`  
-		Last Modified: Tue, 01 Nov 2016 01:27:54 GMT  
-		Size: 3.5 MB (3516456 bytes)  
+	-	`sha256:b7c6bda2bd4d5ef23c411049f9fce62e4adf1c6c54ccc66f2568fe208d391c2f`  
+		Last Modified: Tue, 08 Nov 2016 18:42:31 GMT  
+		Size: 3.0 MB (3030951 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10fcf1dbca8f33092150a93b57909bda03455473239400fed0d4fe49e686a214`  
-		Last Modified: Tue, 01 Nov 2016 01:27:54 GMT  
-		Size: 234.0 B  
+	-	`sha256:089179813aa2048593437523f4ed05daf7d76a14da49bf9ed379c631c8000ff4`  
+		Last Modified: Tue, 08 Nov 2016 18:42:29 GMT  
+		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `celery:4.0`
 
 ```console
-$ docker pull celery@sha256:89926963b3fcb5f66facdfc70854edbf08a1163986fb7779692ae3e308ce4371
+$ docker pull celery@sha256:cb36605904f84ea41f2c65de1fef215eff779a9df99bae0b0d3aa87cda298d2b
 ```
 
 -	Platforms:
@@ -116,11 +116,11 @@ $ docker pull celery@sha256:89926963b3fcb5f66facdfc70854edbf08a1163986fb7779692a
 
 ### `celery:4.0` - linux; amd64
 
--	Docker Version: 1.12.2
+-	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.9 MB (80854365 bytes)**  
+-	Total Size: **80.4 MB (80368857 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f4bc7ac82d891ed82d3fe955ee9b85bbda0f29b103d57d795db81ba594c6d6b`
+-	Image ID: `sha256:51b37105ee20d13d8bfcbfca165e0a6b267d784e113f2506c5e114ad127f336e`
 -	Default Command: `["celery","worker"]`
 
 ```dockerfile
@@ -152,17 +152,17 @@ RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
 WORKDIR /home/user
 # Tue, 01 Nov 2016 01:27:25 GMT
 RUN pip install redis
-# Tue, 01 Nov 2016 01:27:25 GMT
-ENV CELERY_VERSION=4.0.0rc6
-# Tue, 01 Nov 2016 01:27:29 GMT
+# Tue, 08 Nov 2016 18:42:00 GMT
+ENV CELERY_VERSION=4.0.0rc7
+# Tue, 08 Nov 2016 18:42:06 GMT
 RUN pip install celery=="$CELERY_VERSION"
-# Tue, 01 Nov 2016 01:27:30 GMT
+# Tue, 08 Nov 2016 18:42:07 GMT
 RUN { 	echo 'import os'; 	echo "BROKER_URL = os.environ.get('CELERY_BROKER_URL', 'amqp://')"; } > celeryconfig.py
-# Tue, 01 Nov 2016 01:27:31 GMT
+# Tue, 08 Nov 2016 18:42:08 GMT
 ENV CELERY_BROKER_URL=amqp://guest@rabbit
-# Tue, 01 Nov 2016 01:27:31 GMT
+# Tue, 08 Nov 2016 18:42:08 GMT
 USER [user]
-# Tue, 01 Nov 2016 01:27:31 GMT
+# Tue, 08 Nov 2016 18:42:08 GMT
 CMD ["celery" "worker"]
 ```
 
@@ -191,19 +191,19 @@ CMD ["celery" "worker"]
 		Last Modified: Tue, 01 Nov 2016 01:27:51 GMT  
 		Size: 1.8 MB (1797081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75ad195e932622589ed9de6c24f43d8227142488564eccb355f60dcfd3dabd54`  
-		Last Modified: Tue, 01 Nov 2016 01:27:54 GMT  
-		Size: 3.5 MB (3516456 bytes)  
+	-	`sha256:b7c6bda2bd4d5ef23c411049f9fce62e4adf1c6c54ccc66f2568fe208d391c2f`  
+		Last Modified: Tue, 08 Nov 2016 18:42:31 GMT  
+		Size: 3.0 MB (3030951 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10fcf1dbca8f33092150a93b57909bda03455473239400fed0d4fe49e686a214`  
-		Last Modified: Tue, 01 Nov 2016 01:27:54 GMT  
-		Size: 234.0 B  
+	-	`sha256:089179813aa2048593437523f4ed05daf7d76a14da49bf9ed379c631c8000ff4`  
+		Last Modified: Tue, 08 Nov 2016 18:42:29 GMT  
+		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `celery:4`
 
 ```console
-$ docker pull celery@sha256:89926963b3fcb5f66facdfc70854edbf08a1163986fb7779692ae3e308ce4371
+$ docker pull celery@sha256:cb36605904f84ea41f2c65de1fef215eff779a9df99bae0b0d3aa87cda298d2b
 ```
 
 -	Platforms:
@@ -211,11 +211,11 @@ $ docker pull celery@sha256:89926963b3fcb5f66facdfc70854edbf08a1163986fb7779692a
 
 ### `celery:4` - linux; amd64
 
--	Docker Version: 1.12.2
+-	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.9 MB (80854365 bytes)**  
+-	Total Size: **80.4 MB (80368857 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f4bc7ac82d891ed82d3fe955ee9b85bbda0f29b103d57d795db81ba594c6d6b`
+-	Image ID: `sha256:51b37105ee20d13d8bfcbfca165e0a6b267d784e113f2506c5e114ad127f336e`
 -	Default Command: `["celery","worker"]`
 
 ```dockerfile
@@ -247,17 +247,17 @@ RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
 WORKDIR /home/user
 # Tue, 01 Nov 2016 01:27:25 GMT
 RUN pip install redis
-# Tue, 01 Nov 2016 01:27:25 GMT
-ENV CELERY_VERSION=4.0.0rc6
-# Tue, 01 Nov 2016 01:27:29 GMT
+# Tue, 08 Nov 2016 18:42:00 GMT
+ENV CELERY_VERSION=4.0.0rc7
+# Tue, 08 Nov 2016 18:42:06 GMT
 RUN pip install celery=="$CELERY_VERSION"
-# Tue, 01 Nov 2016 01:27:30 GMT
+# Tue, 08 Nov 2016 18:42:07 GMT
 RUN { 	echo 'import os'; 	echo "BROKER_URL = os.environ.get('CELERY_BROKER_URL', 'amqp://')"; } > celeryconfig.py
-# Tue, 01 Nov 2016 01:27:31 GMT
+# Tue, 08 Nov 2016 18:42:08 GMT
 ENV CELERY_BROKER_URL=amqp://guest@rabbit
-# Tue, 01 Nov 2016 01:27:31 GMT
+# Tue, 08 Nov 2016 18:42:08 GMT
 USER [user]
-# Tue, 01 Nov 2016 01:27:31 GMT
+# Tue, 08 Nov 2016 18:42:08 GMT
 CMD ["celery" "worker"]
 ```
 
@@ -286,31 +286,31 @@ CMD ["celery" "worker"]
 		Last Modified: Tue, 01 Nov 2016 01:27:51 GMT  
 		Size: 1.8 MB (1797081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75ad195e932622589ed9de6c24f43d8227142488564eccb355f60dcfd3dabd54`  
-		Last Modified: Tue, 01 Nov 2016 01:27:54 GMT  
-		Size: 3.5 MB (3516456 bytes)  
+	-	`sha256:b7c6bda2bd4d5ef23c411049f9fce62e4adf1c6c54ccc66f2568fe208d391c2f`  
+		Last Modified: Tue, 08 Nov 2016 18:42:31 GMT  
+		Size: 3.0 MB (3030951 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10fcf1dbca8f33092150a93b57909bda03455473239400fed0d4fe49e686a214`  
-		Last Modified: Tue, 01 Nov 2016 01:27:54 GMT  
-		Size: 234.0 B  
+	-	`sha256:089179813aa2048593437523f4ed05daf7d76a14da49bf9ed379c631c8000ff4`  
+		Last Modified: Tue, 08 Nov 2016 18:42:29 GMT  
+		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `celery:3.1.24`
+## `celery:3.1.25`
 
 ```console
-$ docker pull celery@sha256:e41b25e7f9453e6b5854c83d2be22bd3b00e80dc739476185e2d358fcb463508
+$ docker pull celery@sha256:6c4932485b98ba5a4ce47e229a271bc9fc610cdb001ac1e3ed2b013ad15ca62b
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `celery:3.1.24` - linux; amd64
+### `celery:3.1.25` - linux; amd64
 
--	Docker Version: 1.12.2
+-	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.5 MB (81524127 bytes)**  
+-	Total Size: **81.5 MB (81546376 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6fa2be3bc459bea2dd5daa2599ce364d48255d3077a1d8db55295a0e7243ab59`
+-	Image ID: `sha256:74afbe58b13ddda9bcde5970be477277969fd8ca1d4515540fd3639d6f7a6bbf`
 -	Default Command: `["celery","worker"]`
 
 ```dockerfile
@@ -342,17 +342,17 @@ RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
 WORKDIR /home/user
 # Tue, 01 Nov 2016 01:27:25 GMT
 RUN pip install redis
-# Tue, 01 Nov 2016 01:27:32 GMT
-ENV CELERY_VERSION=3.1.24
-# Tue, 01 Nov 2016 01:27:38 GMT
+# Tue, 08 Nov 2016 18:42:09 GMT
+ENV CELERY_VERSION=3.1.25
+# Tue, 08 Nov 2016 18:42:16 GMT
 RUN pip install celery=="$CELERY_VERSION"
-# Tue, 01 Nov 2016 01:27:39 GMT
+# Tue, 08 Nov 2016 18:42:17 GMT
 RUN { 	echo 'import os'; 	echo "BROKER_URL = os.environ.get('CELERY_BROKER_URL', 'amqp://')"; } > celeryconfig.py
-# Tue, 01 Nov 2016 01:27:39 GMT
+# Tue, 08 Nov 2016 18:42:17 GMT
 ENV CELERY_BROKER_URL=amqp://guest@rabbit
-# Tue, 01 Nov 2016 01:27:39 GMT
+# Tue, 08 Nov 2016 18:42:18 GMT
 USER [user]
-# Tue, 01 Nov 2016 01:27:40 GMT
+# Tue, 08 Nov 2016 18:42:18 GMT
 CMD ["celery" "worker"]
 ```
 
@@ -381,19 +381,19 @@ CMD ["celery" "worker"]
 		Last Modified: Tue, 01 Nov 2016 01:27:51 GMT  
 		Size: 1.8 MB (1797081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf9cc242639f111eddcfde584bb63abd194633ccaf6329689eeebfcdecfc9243`  
-		Last Modified: Tue, 01 Nov 2016 01:28:36 GMT  
-		Size: 4.2 MB (4186219 bytes)  
+	-	`sha256:1ddc181e0bb3f96eb27093e3ddaa5640aaae4081644be8ddfaf781bcf4941f66`  
+		Last Modified: Tue, 08 Nov 2016 18:43:16 GMT  
+		Size: 4.2 MB (4208469 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ec907743a2d5ac1e8b38664a8970f50f965bcca32d711ffd0823457b6c979ae`  
-		Last Modified: Tue, 01 Nov 2016 01:28:35 GMT  
-		Size: 233.0 B  
+	-	`sha256:424277396846155bafb1d20d5c4f011cf24d1467a7209f06160f2beb401e6ba4`  
+		Last Modified: Tue, 08 Nov 2016 18:43:15 GMT  
+		Size: 232.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `celery:3.1`
 
 ```console
-$ docker pull celery@sha256:e41b25e7f9453e6b5854c83d2be22bd3b00e80dc739476185e2d358fcb463508
+$ docker pull celery@sha256:6c4932485b98ba5a4ce47e229a271bc9fc610cdb001ac1e3ed2b013ad15ca62b
 ```
 
 -	Platforms:
@@ -401,11 +401,11 @@ $ docker pull celery@sha256:e41b25e7f9453e6b5854c83d2be22bd3b00e80dc739476185e2d
 
 ### `celery:3.1` - linux; amd64
 
--	Docker Version: 1.12.2
+-	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.5 MB (81524127 bytes)**  
+-	Total Size: **81.5 MB (81546376 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6fa2be3bc459bea2dd5daa2599ce364d48255d3077a1d8db55295a0e7243ab59`
+-	Image ID: `sha256:74afbe58b13ddda9bcde5970be477277969fd8ca1d4515540fd3639d6f7a6bbf`
 -	Default Command: `["celery","worker"]`
 
 ```dockerfile
@@ -437,17 +437,17 @@ RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
 WORKDIR /home/user
 # Tue, 01 Nov 2016 01:27:25 GMT
 RUN pip install redis
-# Tue, 01 Nov 2016 01:27:32 GMT
-ENV CELERY_VERSION=3.1.24
-# Tue, 01 Nov 2016 01:27:38 GMT
+# Tue, 08 Nov 2016 18:42:09 GMT
+ENV CELERY_VERSION=3.1.25
+# Tue, 08 Nov 2016 18:42:16 GMT
 RUN pip install celery=="$CELERY_VERSION"
-# Tue, 01 Nov 2016 01:27:39 GMT
+# Tue, 08 Nov 2016 18:42:17 GMT
 RUN { 	echo 'import os'; 	echo "BROKER_URL = os.environ.get('CELERY_BROKER_URL', 'amqp://')"; } > celeryconfig.py
-# Tue, 01 Nov 2016 01:27:39 GMT
+# Tue, 08 Nov 2016 18:42:17 GMT
 ENV CELERY_BROKER_URL=amqp://guest@rabbit
-# Tue, 01 Nov 2016 01:27:39 GMT
+# Tue, 08 Nov 2016 18:42:18 GMT
 USER [user]
-# Tue, 01 Nov 2016 01:27:40 GMT
+# Tue, 08 Nov 2016 18:42:18 GMT
 CMD ["celery" "worker"]
 ```
 
@@ -476,19 +476,19 @@ CMD ["celery" "worker"]
 		Last Modified: Tue, 01 Nov 2016 01:27:51 GMT  
 		Size: 1.8 MB (1797081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf9cc242639f111eddcfde584bb63abd194633ccaf6329689eeebfcdecfc9243`  
-		Last Modified: Tue, 01 Nov 2016 01:28:36 GMT  
-		Size: 4.2 MB (4186219 bytes)  
+	-	`sha256:1ddc181e0bb3f96eb27093e3ddaa5640aaae4081644be8ddfaf781bcf4941f66`  
+		Last Modified: Tue, 08 Nov 2016 18:43:16 GMT  
+		Size: 4.2 MB (4208469 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ec907743a2d5ac1e8b38664a8970f50f965bcca32d711ffd0823457b6c979ae`  
-		Last Modified: Tue, 01 Nov 2016 01:28:35 GMT  
-		Size: 233.0 B  
+	-	`sha256:424277396846155bafb1d20d5c4f011cf24d1467a7209f06160f2beb401e6ba4`  
+		Last Modified: Tue, 08 Nov 2016 18:43:15 GMT  
+		Size: 232.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `celery:3`
 
 ```console
-$ docker pull celery@sha256:e41b25e7f9453e6b5854c83d2be22bd3b00e80dc739476185e2d358fcb463508
+$ docker pull celery@sha256:6c4932485b98ba5a4ce47e229a271bc9fc610cdb001ac1e3ed2b013ad15ca62b
 ```
 
 -	Platforms:
@@ -496,11 +496,11 @@ $ docker pull celery@sha256:e41b25e7f9453e6b5854c83d2be22bd3b00e80dc739476185e2d
 
 ### `celery:3` - linux; amd64
 
--	Docker Version: 1.12.2
+-	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.5 MB (81524127 bytes)**  
+-	Total Size: **81.5 MB (81546376 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6fa2be3bc459bea2dd5daa2599ce364d48255d3077a1d8db55295a0e7243ab59`
+-	Image ID: `sha256:74afbe58b13ddda9bcde5970be477277969fd8ca1d4515540fd3639d6f7a6bbf`
 -	Default Command: `["celery","worker"]`
 
 ```dockerfile
@@ -532,17 +532,17 @@ RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
 WORKDIR /home/user
 # Tue, 01 Nov 2016 01:27:25 GMT
 RUN pip install redis
-# Tue, 01 Nov 2016 01:27:32 GMT
-ENV CELERY_VERSION=3.1.24
-# Tue, 01 Nov 2016 01:27:38 GMT
+# Tue, 08 Nov 2016 18:42:09 GMT
+ENV CELERY_VERSION=3.1.25
+# Tue, 08 Nov 2016 18:42:16 GMT
 RUN pip install celery=="$CELERY_VERSION"
-# Tue, 01 Nov 2016 01:27:39 GMT
+# Tue, 08 Nov 2016 18:42:17 GMT
 RUN { 	echo 'import os'; 	echo "BROKER_URL = os.environ.get('CELERY_BROKER_URL', 'amqp://')"; } > celeryconfig.py
-# Tue, 01 Nov 2016 01:27:39 GMT
+# Tue, 08 Nov 2016 18:42:17 GMT
 ENV CELERY_BROKER_URL=amqp://guest@rabbit
-# Tue, 01 Nov 2016 01:27:39 GMT
+# Tue, 08 Nov 2016 18:42:18 GMT
 USER [user]
-# Tue, 01 Nov 2016 01:27:40 GMT
+# Tue, 08 Nov 2016 18:42:18 GMT
 CMD ["celery" "worker"]
 ```
 
@@ -571,19 +571,19 @@ CMD ["celery" "worker"]
 		Last Modified: Tue, 01 Nov 2016 01:27:51 GMT  
 		Size: 1.8 MB (1797081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf9cc242639f111eddcfde584bb63abd194633ccaf6329689eeebfcdecfc9243`  
-		Last Modified: Tue, 01 Nov 2016 01:28:36 GMT  
-		Size: 4.2 MB (4186219 bytes)  
+	-	`sha256:1ddc181e0bb3f96eb27093e3ddaa5640aaae4081644be8ddfaf781bcf4941f66`  
+		Last Modified: Tue, 08 Nov 2016 18:43:16 GMT  
+		Size: 4.2 MB (4208469 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ec907743a2d5ac1e8b38664a8970f50f965bcca32d711ffd0823457b6c979ae`  
-		Last Modified: Tue, 01 Nov 2016 01:28:35 GMT  
-		Size: 233.0 B  
+	-	`sha256:424277396846155bafb1d20d5c4f011cf24d1467a7209f06160f2beb401e6ba4`  
+		Last Modified: Tue, 08 Nov 2016 18:43:15 GMT  
+		Size: 232.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `celery:latest`
 
 ```console
-$ docker pull celery@sha256:e41b25e7f9453e6b5854c83d2be22bd3b00e80dc739476185e2d358fcb463508
+$ docker pull celery@sha256:6c4932485b98ba5a4ce47e229a271bc9fc610cdb001ac1e3ed2b013ad15ca62b
 ```
 
 -	Platforms:
@@ -591,11 +591,11 @@ $ docker pull celery@sha256:e41b25e7f9453e6b5854c83d2be22bd3b00e80dc739476185e2d
 
 ### `celery:latest` - linux; amd64
 
--	Docker Version: 1.12.2
+-	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.5 MB (81524127 bytes)**  
+-	Total Size: **81.5 MB (81546376 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6fa2be3bc459bea2dd5daa2599ce364d48255d3077a1d8db55295a0e7243ab59`
+-	Image ID: `sha256:74afbe58b13ddda9bcde5970be477277969fd8ca1d4515540fd3639d6f7a6bbf`
 -	Default Command: `["celery","worker"]`
 
 ```dockerfile
@@ -627,17 +627,17 @@ RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
 WORKDIR /home/user
 # Tue, 01 Nov 2016 01:27:25 GMT
 RUN pip install redis
-# Tue, 01 Nov 2016 01:27:32 GMT
-ENV CELERY_VERSION=3.1.24
-# Tue, 01 Nov 2016 01:27:38 GMT
+# Tue, 08 Nov 2016 18:42:09 GMT
+ENV CELERY_VERSION=3.1.25
+# Tue, 08 Nov 2016 18:42:16 GMT
 RUN pip install celery=="$CELERY_VERSION"
-# Tue, 01 Nov 2016 01:27:39 GMT
+# Tue, 08 Nov 2016 18:42:17 GMT
 RUN { 	echo 'import os'; 	echo "BROKER_URL = os.environ.get('CELERY_BROKER_URL', 'amqp://')"; } > celeryconfig.py
-# Tue, 01 Nov 2016 01:27:39 GMT
+# Tue, 08 Nov 2016 18:42:17 GMT
 ENV CELERY_BROKER_URL=amqp://guest@rabbit
-# Tue, 01 Nov 2016 01:27:39 GMT
+# Tue, 08 Nov 2016 18:42:18 GMT
 USER [user]
-# Tue, 01 Nov 2016 01:27:40 GMT
+# Tue, 08 Nov 2016 18:42:18 GMT
 CMD ["celery" "worker"]
 ```
 
@@ -666,11 +666,11 @@ CMD ["celery" "worker"]
 		Last Modified: Tue, 01 Nov 2016 01:27:51 GMT  
 		Size: 1.8 MB (1797081 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf9cc242639f111eddcfde584bb63abd194633ccaf6329689eeebfcdecfc9243`  
-		Last Modified: Tue, 01 Nov 2016 01:28:36 GMT  
-		Size: 4.2 MB (4186219 bytes)  
+	-	`sha256:1ddc181e0bb3f96eb27093e3ddaa5640aaae4081644be8ddfaf781bcf4941f66`  
+		Last Modified: Tue, 08 Nov 2016 18:43:16 GMT  
+		Size: 4.2 MB (4208469 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ec907743a2d5ac1e8b38664a8970f50f965bcca32d711ffd0823457b6c979ae`  
-		Last Modified: Tue, 01 Nov 2016 01:28:35 GMT  
-		Size: 233.0 B  
+	-	`sha256:424277396846155bafb1d20d5c4f011cf24d1467a7209f06160f2beb401e6ba4`  
+		Last Modified: Tue, 08 Nov 2016 18:43:15 GMT  
+		Size: 232.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
