@@ -1,9 +1,9 @@
-# `ghost:0.11.2`
+# `ghost:0.11.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c099a2a082d276711dcf2174f9dfc78f5920ef3b4cb2f656510b3c111bd06499`
-- Created: `2016-11-03T22:05:36.039881773Z`
+- Image ID: `sha256:e3ff982dc90b1ea20ae546593ccd47a724a9a7a417911bab074034a7fb9b91ef`
+- Created: `2016-11-07T19:01:31.060002568Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["npm","start"]`
@@ -13,7 +13,7 @@
   - `NODE_VERSION=4.6.1`
   - `GOSU_VERSION=1.7`
   - `GHOST_SOURCE=/usr/src/ghost`
-  - `GHOST_VERSION=0.11.2`
+  - `GHOST_VERSION=0.11.3`
   - `GHOST_CONTENT=/var/lib/ghost`
 
 ## `dpkg` (`.deb`-based packages)
