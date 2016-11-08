@@ -1,15 +1,15 @@
-# `telegraf:1.0`
+# `telegraf:1.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3339f7202c0866e109cd3f18ee773c276f807de6477bced801640a1ef4b24a4c`
-- Created: `2016-10-13T23:46:40.445931526Z`
+- Image ID: `sha256:bb7178bb5f2f0c0dac129c8e11dd5f7292e3b5cf47fa1b034a2474984302f47b`
+- Created: `2016-11-08T22:41:41.895948478Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["telegraf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `TELEGRAF_VERSION=1.0.1`
+  - `TELEGRAF_VERSION=1.1.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2521,11 +2521,11 @@ $ apt-get source -qq --print-uris tar=1.27.1-1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.27.1-1.debian.tar.xz' tar_1.27.1-1.debian.tar.xz 19540 SHA256:fea78ca36ff59f3fe84c060adf039283b1b8238ef9ce3428e85fe04c4812815c
 ```
 
-### `dpkg` source package: `telegraf=1.0.1-1`
+### `dpkg` source package: `telegraf=1.1.0-1`
 
 Binary Packages:
 
-- `telegraf=1.0.1-1`
+- `telegraf=1.1.0-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
