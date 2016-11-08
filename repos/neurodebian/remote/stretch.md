@@ -1,7 +1,7 @@
 ## `neurodebian:stretch`
 
 ```console
-$ docker pull neurodebian@sha256:8eddac390e6696a4e6795963e52d3c33e911833ad828cbc1125a3d7c61ceee10
+$ docker pull neurodebian@sha256:7e7c1303b6a1a9473f73b635ef416b6839b09d968bac6564e9bf6532591c39f2
 ```
 
 -	Platforms:
@@ -9,52 +9,52 @@ $ docker pull neurodebian@sha256:8eddac390e6696a4e6795963e52d3c33e911833ad828cbc
 
 ### `neurodebian:stretch` - linux; amd64
 
--	Docker Version: 1.12.1
+-	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.1 MB (48062309 bytes)**  
+-	Total Size: **49.1 MB (49127066 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f4bd63ddf33b3e3f257e769018c8eb6c6f632c51a2c09f9e6d5cee0b795a57d`
+-	Image ID: `sha256:8083da31be0163d23851b2309fe0d6a082acff1bc7fc8a9674c3e0122965ab06`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 23 Sep 2016 18:09:28 GMT
-ADD file:7ce6519c11433fef38ac7510dc2d21c40998ab6534cdea84a05c7901b03312b0 in / 
-# Fri, 23 Sep 2016 18:09:29 GMT
+# Mon, 07 Nov 2016 20:32:09 GMT
+ADD file:de2806ecf4d136cd7c460d60fea41c6870c8ab6e418e8795696aabe598706b1f in / 
+# Mon, 07 Nov 2016 20:32:10 GMT
 CMD ["/bin/bash"]
-# Fri, 23 Sep 2016 20:50:44 GMT
+# Tue, 08 Nov 2016 22:38:55 GMT
 RUN which gpg || { apt-get update && apt-get install -y --no-install-recommends gnupg dirmngr && rm -rf /var/lib/apt/lists/*; }
-# Fri, 23 Sep 2016 20:50:45 GMT
+# Tue, 08 Nov 2016 22:39:00 GMT
 RUN echo 'deb http://neuro.debian.net/debian stretch main' > /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 23 Sep 2016 20:50:46 GMT
+# Tue, 08 Nov 2016 22:39:08 GMT
 RUN echo 'deb http://neuro.debian.net/debian data main' >> /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 23 Sep 2016 20:50:46 GMT
+# Tue, 08 Nov 2016 22:39:16 GMT
 RUN echo '#deb-src http://neuro.debian.net/debian-devel stretch main' >> /etc/apt/sources.list.d/neurodebian.sources.list
-# Fri, 23 Sep 2016 20:50:48 GMT
+# Tue, 08 Nov 2016 22:39:19 GMT
 RUN apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9
 ```
 
 -	Layers:
-	-	`sha256:1c8605a31c0121c5be301d0e0941e101cf3a2e97d241a5c63665eb1e5f45a8cf`  
-		Last Modified: Fri, 23 Sep 2016 18:13:08 GMT  
-		Size: 42.6 MB (42646885 bytes)  
+	-	`sha256:e643679981aeea654a0348b1e068356da942b158b26e3e89a3e0956a1bab37cd`  
+		Last Modified: Mon, 07 Nov 2016 20:39:41 GMT  
+		Size: 43.2 MB (43247274 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:945eab8fe099e92c5e78407750d152ed9813d0a423dc756df6450810086d2285`  
-		Last Modified: Fri, 23 Sep 2016 20:50:57 GMT  
-		Size: 5.4 MB (5411648 bytes)  
+	-	`sha256:ee02f341f4f290ce329d015dadf58fe22bd3bc87e9d21774320fa4f04ca8014c`  
+		Last Modified: Tue, 08 Nov 2016 22:39:36 GMT  
+		Size: 5.9 MB (5876023 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3730d71f0c17fbbdfb7a89582e6d9b11932c6e87260895ba06eb565b8e373a2`  
-		Last Modified: Fri, 23 Sep 2016 20:50:55 GMT  
-		Size: 213.0 B  
+	-	`sha256:15b72269a4944083c8ce9f8b5b3439adfff7eb645bdab3b88e3d4f0502bc857e`  
+		Last Modified: Tue, 08 Nov 2016 22:39:33 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dce1a92c3666a8dd61140c3d135006a51c18c12a2ef40e41f06e50ec5ef96bb7`  
-		Last Modified: Fri, 23 Sep 2016 20:50:55 GMT  
+	-	`sha256:4edfb8349a6215644f610fa295cee558d64d6fd3e65c86d10c94f6bb852de90a`  
+		Last Modified: Tue, 08 Nov 2016 22:39:31 GMT  
 		Size: 220.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e72177e977de0ce46f4c4ffa3b23ad9431fca1f8cdaf45b46512d3b71c442ab`  
-		Last Modified: Fri, 23 Sep 2016 20:50:56 GMT  
-		Size: 238.0 B  
+	-	`sha256:3f1cabf7ce059d1b15feee02fead7ef4c36de8d71bebf05bbe00d44d02929a18`  
+		Last Modified: Tue, 08 Nov 2016 22:39:32 GMT  
+		Size: 235.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:146e8f2158910aa0d9efa39ac3eb31a088cee744c0cffc4b58c09b69e5d3b2ab`  
-		Last Modified: Fri, 23 Sep 2016 20:50:55 GMT  
-		Size: 3.1 KB (3105 bytes)  
+	-	`sha256:c1697a725319c8f8ba296293d0dc6e1e84434c28db7a77b50bdf7f433052ee30`  
+		Last Modified: Tue, 08 Nov 2016 22:39:31 GMT  
+		Size: 3.1 KB (3104 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
