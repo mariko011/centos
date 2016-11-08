@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cc59e1b16a6b514db7b6c060c0721cad6428384d47162d0caa09dda6fb5d5993`
-- Created: `2016-11-01T20:40:42.543858714Z`
+- Image ID: `sha256:fdc2ca01c6d3c53273bccae5f2785dda9e1b2e106107108d50f2e1563b9157bb`
+- Created: `2016-11-08T22:07:03.6312952Z`
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre`
-  - `JAVA_VERSION=8u102`
-  - `JAVA_DEBIAN_VERSION=8u102-b14.1-1~bpo8+1`
+  - `JAVA_VERSION=8u111`
+  - `JAVA_DEBIAN_VERSION=8u111-b14-2~bpo8+1`
   - `CA_CERTIFICATES_JAVA_VERSION=20140324`
   - `JRUBY_VERSION=9.1.5.0`
   - `JRUBY_SHA256=28e4f3aefbb4497c5c5edc04246778b3305105c3d3d6de11be067826cc5bb766`
@@ -419,12 +419,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/cups/1.7.5-11+deb8u1/
 - https://sources.debian.net/src/cups/1.7.5-11+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `curl=7.38.0-4+deb8u4`
+### `dpkg` source package: `curl=7.38.0-4+deb8u5`
 
 Binary Packages:
 
-- `curl=7.38.0-4+deb8u4`
-- `libcurl3:amd64=7.38.0-4+deb8u4`
+- `curl=7.38.0-4+deb8u5`
+- `libcurl3:amd64=7.38.0-4+deb8u5`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -436,16 +436,16 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u4
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.38.0-4+deb8u4.dsc' curl_7.38.0-4+deb8u4.dsc 2655 SHA256:0b99d6f0ee0b92cc34b924252a99ca5bc0d9cf18b3243acf3f2cd4c1391b73e3
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.38.0-4+deb8u4.debian.tar.xz' curl_7.38.0-4+deb8u4.debian.tar.xz 34628 SHA256:4cd6d52ce3208ce02cba6adae87cbae0c799f55b1eb6812a6f22c5be1fdd52cf
+$ apt-get source -qq --print-uris curl=7.38.0-4+deb8u5
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u5.dsc' curl_7.38.0-4+deb8u5.dsc 2637 SHA256:2b5e0bf7ea27efaa23d3274a487227436a8b6777dc571c957ae1c9fb4e455d8d
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0.orig.tar.gz' curl_7.38.0.orig.tar.gz 4094034 SHA256:5661028aa6532882fa228cd23c99ddbb8b87643dbb1a7ea55c068d34a943dff1
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.38.0-4+deb8u5.debian.tar.xz' curl_7.38.0-4+deb8u5.debian.tar.xz 40224 SHA256:3f917091d1694a77852fe05293dafff079382e70d93f62f7de5c61f1812cf69d
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u4/
-- https://sources.debian.net/src/curl/7.38.0-4+deb8u4/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u5/
+- https://sources.debian.net/src/curl/7.38.0-4+deb8u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
 
@@ -2253,11 +2253,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nss/2:3.26-1+debu8u1/
 - https://sources.debian.net/src/nss/2:3.26-1+debu8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openjdk-8=8u102-b14.1-1~bpo8+1`
+### `dpkg` source package: `openjdk-8=8u111-b14-2~bpo8+1`
 
 Binary Packages:
 
-- `openjdk-8-jre-headless:amd64=8u102-b14.1-1~bpo8+1`
+- `openjdk-8-jre-headless:amd64=8u111-b14-2~bpo8+1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 
@@ -2269,16 +2269,16 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-8=8u102-b14.1-1~bpo8+1
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u102-b14.1-1~bpo8+1.dsc' openjdk-8_8u102-b14.1-1~bpo8+1.dsc 4489 SHA256:a0d58b38e8074eec1fac29bc2e376867f1113ffba2593bd589daad2b05af6bf3
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u102-b14.1.orig.tar.gz' openjdk-8_8u102-b14.1.orig.tar.gz 63713669 SHA256:e2f871cccf32336f44e7ae919aef80a405328cc83c0105723e0d286becd5dae7
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u102-b14.1-1~bpo8+1.debian.tar.xz' openjdk-8_8u102-b14.1-1~bpo8+1.debian.tar.xz 228040 SHA256:90961fc766b8494663493aadbfdc89d9fd5d70f1e67a106ba2afd1184b30d77b
+$ apt-get source -qq --print-uris openjdk-8=8u111-b14-2~bpo8+1
+'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u111-b14-2~bpo8+1.dsc' openjdk-8_8u111-b14-2~bpo8+1.dsc 4467 SHA256:2d87581b8eff48856a00aa4f998eff74125fcdcd4ee36c4e90761d20a5d6901d
+'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u111-b14.orig.tar.gz' openjdk-8_8u111-b14.orig.tar.gz 63946090 SHA256:353e7382c88bcf2b10d673b9b305c87ed733bd00c02b8497c565b37741ae1c30
+'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u111-b14-2~bpo8+1.debian.tar.xz' openjdk-8_8u111-b14-2~bpo8+1.debian.tar.xz 235244 SHA256:f2190a03825e4e5af03cea44a24b7f091803788a6cd14a40ad708b5efa85b5e9
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openjdk-8/8u102-b14.1-1~bpo8+1/
-- https://sources.debian.net/src/openjdk-8/8u102-b14.1-1~bpo8+1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openjdk-8/8u111-b14-2~bpo8+1/
+- https://sources.debian.net/src/openjdk-8/8u111-b14-2~bpo8+1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.40+dfsg-1+deb8u2`
 
@@ -2765,11 +2765,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/sysvinit/2.88dsf-59/
 - https://sources.debian.net/src/sysvinit/2.88dsf-59/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tar=1.27.1-2`
+### `dpkg` source package: `tar=1.27.1-2+deb8u1`
 
 Binary Packages:
 
-- `tar=1.27.1-2+b1`
+- `tar=1.27.1-2+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
@@ -2779,7 +2779,7 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tar=1.27.1-2
+$ apt-get source -qq --print-uris tar=1.27.1-2+deb8u1
 'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1-2+deb8u1.dsc' tar_1.27.1-2+deb8u1.dsc 2049 SHA256:e42e96a9cdf325d7f030306735a1380276670deb72541a7f97ffe59a1e32e67b
 'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1.orig.tar.xz' tar_1.27.1.orig.tar.xz 1704252 SHA256:58169c5a03c04be20d3fb91010b01e822c6a58060a96e7cf2f9c1944de0151ab
 'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1-2+deb8u1.debian.tar.xz' tar_1.27.1-2+deb8u1.debian.tar.xz 32632 SHA256:dc2e495770f6c1c79a4e299d4008c8cb1f91a48e823751bc95d7f26ae498f995
@@ -2787,32 +2787,21 @@ $ apt-get source -qq --print-uris tar=1.27.1-2
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/tar/1.27.1-2/
-- https://sources.debian.net/src/tar/1.27.1-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/tar/1.27.1-2+deb8u1/
+- https://sources.debian.net/src/tar/1.27.1-2+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tzdata=2016f-0+deb8u1`
+### `dpkg` source package: `tzdata=2016h-0+deb8u1`
 
 Binary Packages:
 
-- `tzdata=2016f-0+deb8u1`
+- `tzdata=2016h-0+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016f-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016f-0+deb8u1.dsc' tzdata_2016f-0+deb8u1.dsc 1971 SHA256:0474098d0be64feddf5cb231581b20381e9ba450ddcbbd9378c82a1fee89b046
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016f.orig.tar.gz' tzdata_2016f.orig.tar.gz 313286 SHA256:ed8c951008d12f1db55a11e96fc055718c6571233327d9de16a7f8475e2502b0
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016f-0+deb8u1.debian.tar.xz' tzdata_2016f-0+deb8u1.debian.tar.xz 101612 SHA256:fe51e05f855921da01f0dcff74f2fb0d4f9b10860ed579ca1a407de1021c96fa
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2016f-0+deb8u1/
-- https://sources.debian.net/src/tzdata/2016f-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ucf=3.0030`
 
