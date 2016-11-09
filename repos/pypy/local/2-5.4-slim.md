@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a063d6543b7b91d2a226f19245be98520d7a468086ca8467550f1d9fa251ebb9`
-- Created: `2016-10-22T00:28:51.945884547Z`
+- Image ID: `sha256:85b3c918836b57b3eca873c2f9eacfd644babf51cd5e2ac27a52adba5daccc5b`
+- Created: `2016-11-08T19:47:06.799981874Z`
 - Arch: `linux`/`amd64`
 - Command: `["pypy"]`
 - Environment:
@@ -11,7 +11,7 @@
   - `LANG=C.UTF-8`
   - `PYPY_VERSION=5.4.1`
   - `PYPY_SHA256SUM=9c85319778224d7fb0c348f55fe3fada15bb579c5f3870a13ad63b42a737dd72`
-  - `PYTHON_PIP_VERSION=8.1.2`
+  - `PYTHON_PIP_VERSION=9.0.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -634,6 +634,30 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/gcc-4.9/4.9.2-10/
 - https://sources.debian.net/src/gcc-4.9/4.9.2-10/debian/copyright (for direct copyright/license information)
+
+### `dpkg` source package: `gdbm=1.8.3-13.1`
+
+Binary Packages:
+
+- `libgdbm3:amd64=1.8.3-13.1`
+
+Licenses: (parsed from: `/usr/share/doc/libgdbm3/copyright`)
+
+- `GPL-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris gdbm=1.8.3-13.1
+'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3-13.1.dsc' gdbm_1.8.3-13.1.dsc 1830 SHA256:b1d8bef30edc491315c337930cbe2b61f44f55035adfc26ae945bab5ca57d5c9
+'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3.orig.tar.bz2' gdbm_1.8.3.orig.tar.bz2 172796 SHA256:1d5995b6e9e6be4ff62c8126d019f184a083dd8e6f75f6c74b9fe023b5b9440e
+'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3-13.1.debian.tar.xz' gdbm_1.8.3-13.1.debian.tar.xz 14748 SHA256:251401e1f5210226f384e936b1b7ea1df40119a918d9f3dbf48b2e51d4df8983
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/gdbm/1.8.3-13.1/
+- https://sources.debian.net/src/gdbm/1.8.3-13.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.19-18+deb8u6`
 
@@ -1698,11 +1722,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/sysvinit/2.88dsf-59/
 - https://sources.debian.net/src/sysvinit/2.88dsf-59/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tar=1.27.1-2`
+### `dpkg` source package: `tar=1.27.1-2+deb8u1`
 
 Binary Packages:
 
-- `tar=1.27.1-2+b1`
+- `tar=1.27.1-2+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
@@ -1712,7 +1736,7 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tar=1.27.1-2
+$ apt-get source -qq --print-uris tar=1.27.1-2+deb8u1
 'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1-2+deb8u1.dsc' tar_1.27.1-2+deb8u1.dsc 2049 SHA256:e42e96a9cdf325d7f030306735a1380276670deb72541a7f97ffe59a1e32e67b
 'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1.orig.tar.xz' tar_1.27.1.orig.tar.xz 1704252 SHA256:58169c5a03c04be20d3fb91010b01e822c6a58060a96e7cf2f9c1944de0151ab
 'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1-2+deb8u1.debian.tar.xz' tar_1.27.1-2+deb8u1.debian.tar.xz 32632 SHA256:dc2e495770f6c1c79a4e299d4008c8cb1f91a48e823751bc95d7f26ae498f995
@@ -1720,32 +1744,21 @@ $ apt-get source -qq --print-uris tar=1.27.1-2
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/tar/1.27.1-2/
-- https://sources.debian.net/src/tar/1.27.1-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/tar/1.27.1-2+deb8u1/
+- https://sources.debian.net/src/tar/1.27.1-2+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tzdata=2016f-0+deb8u1`
+### `dpkg` source package: `tzdata=2016h-0+deb8u1`
 
 Binary Packages:
 
-- `tzdata=2016f-0+deb8u1`
+- `tzdata=2016h-0+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016f-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016f-0+deb8u1.dsc' tzdata_2016f-0+deb8u1.dsc 1971 SHA256:0474098d0be64feddf5cb231581b20381e9ba450ddcbbd9378c82a1fee89b046
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016f.orig.tar.gz' tzdata_2016f.orig.tar.gz 313286 SHA256:ed8c951008d12f1db55a11e96fc055718c6571233327d9de16a7f8475e2502b0
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016f-0+deb8u1.debian.tar.xz' tzdata_2016f-0+deb8u1.debian.tar.xz 101612 SHA256:fe51e05f855921da01f0dcff74f2fb0d4f9b10860ed579ca1a407de1021c96fa
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2016f-0+deb8u1/
-- https://sources.debian.net/src/tzdata/2016f-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 
