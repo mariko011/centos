@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e43d811ce2f4986aa69bc8ba6c92f0789537f604d1601e0b6ec024e1c38062b4`
-- Created: `2016-10-21T22:31:25.501926479Z`
+- Image ID: `sha256:05a60462f8bafb215ddc5c20a364b5fb637670200a74a5bb13a1b23f64515561`
+- Created: `2016-11-08T22:41:15.912313785Z`
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
@@ -1599,11 +1599,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libxpm/1:3.5.11-1/
 - https://sources.debian.net/src/libxpm/1:3.5.11-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libxslt=1.1.28-2+deb8u1`
+### `dpkg` source package: `libxslt=1.1.28-2+deb8u2`
 
 Binary Packages:
 
-- `libxslt1.1:amd64=1.1.28-2+deb8u1`
+- `libxslt1.1:amd64=1.1.28-2+deb8u2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1612,16 +1612,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxslt=1.1.28-2+deb8u1
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.28-2+deb8u1.dsc' libxslt_1.1.28-2+deb8u1.dsc 2389 SHA256:d084d58d3f25cea908acf99a26bf79a6aa4d03ebd94ec3cccb3d427175ed0c80
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.28.orig.tar.gz' libxslt_1.1.28.orig.tar.gz 3435907 SHA256:5fc7151a57b89c03d7b825df5a0fae0a8d5f05674c0e7cf2937ecec4d54a028c
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.28-2+deb8u1.debian.tar.xz' libxslt_1.1.28-2+deb8u1.debian.tar.xz 37208 SHA256:11a8ec5df714a2ac1a55776b1baede5d0612a29b7c5ab6cbbda22d1d49801655
+$ apt-get source -qq --print-uris libxslt=1.1.28-2+deb8u2
+'http://security.debian.org/pool/updates/main/libx/libxslt/libxslt_1.1.28-2+deb8u2.dsc' libxslt_1.1.28-2+deb8u2.dsc 2529 SHA256:e5a1286006f7c9d136f1a2441e4993deb35551ed359d4cb7492d3128835f6f64
+'http://security.debian.org/pool/updates/main/libx/libxslt/libxslt_1.1.28.orig.tar.gz' libxslt_1.1.28.orig.tar.gz 3435907 SHA256:5fc7151a57b89c03d7b825df5a0fae0a8d5f05674c0e7cf2937ecec4d54a028c
+'http://security.debian.org/pool/updates/main/libx/libxslt/libxslt_1.1.28-2+deb8u2.debian.tar.xz' libxslt_1.1.28-2+deb8u2.debian.tar.xz 37564 SHA256:218aa08affb2a5c8b8935a8b44d09e7727cbf453576b4c3e0886fd86a966cca0
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libxslt/1.1.28-2+deb8u1/
-- https://sources.debian.net/src/libxslt/1.1.28-2+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxslt/1.1.28-2+deb8u2/
+- https://sources.debian.net/src/libxslt/1.1.28-2+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
@@ -1786,11 +1786,11 @@ $ apt-get source -qq --print-uris nginx-module-image-filter=1.11.5-1~jessie
 'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-image-filter/nginx-module-image-filter_1.11.5-1~jessie.debian.tar.xz' nginx-module-image-filter_1.11.5-1~jessie.debian.tar.xz 3100 SHA256:995e672396219e2715a6dc229f492d4e432c7bc418cd84d867f91615840b6860
 ```
 
-### `dpkg` source package: `nginx-module-njs=1.11.5.0.1.3-1~jessie`
+### `dpkg` source package: `nginx-module-njs=1.11.5.0.1.4-1~jessie`
 
 Binary Packages:
 
-- `nginx-module-njs=1.11.5.0.1.3-1~jessie`
+- `nginx-module-njs=1.11.5.0.1.4-1~jessie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1799,10 +1799,10 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nginx-module-njs=1.11.5.0.1.3-1~jessie
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.11.5.0.1.3-1~jessie.dsc' nginx-module-njs_1.11.5.0.1.3-1~jessie.dsc 1658 SHA256:632ff0d07e7042e926eb1718f11cf69c6e80c13fb73372b08d02b76549926a10
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.11.5.0.1.3.orig.tar.gz' nginx-module-njs_1.11.5.0.1.3.orig.tar.gz 956517 SHA256:223f8a2345a75f891098cf26ccdf208b293350388f51ce69083674c9432db6f6
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.11.5.0.1.3-1~jessie.debian.tar.xz' nginx-module-njs_1.11.5.0.1.3-1~jessie.debian.tar.xz 134620 SHA256:9262ab057e9a8214ebdcb8f874ea977590331e6ba059c6091ab14ec8c7b4ab27
+$ apt-get source -qq --print-uris nginx-module-njs=1.11.5.0.1.4-1~jessie
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.11.5.0.1.4-1~jessie.dsc' nginx-module-njs_1.11.5.0.1.4-1~jessie.dsc 1658 SHA256:e8cf7c33d6c6786376804301f296a095cc5474ebfba46c968930e9d25d5a755e
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.11.5.0.1.4.orig.tar.gz' nginx-module-njs_1.11.5.0.1.4.orig.tar.gz 956517 SHA256:223f8a2345a75f891098cf26ccdf208b293350388f51ce69083674c9432db6f6
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.11.5.0.1.4-1~jessie.debian.tar.xz' nginx-module-njs_1.11.5.0.1.4-1~jessie.debian.tar.xz 135024 SHA256:2fa7c3695bc80c7c2cdaa9d9bb49656677bc2154ed917c047674d603fb7f62a7
 ```
 
 ### `dpkg` source package: `nginx-module-perl=1.11.5-1~jessie`
@@ -2220,11 +2220,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/sysvinit/2.88dsf-59/
 - https://sources.debian.net/src/sysvinit/2.88dsf-59/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tar=1.27.1-2`
+### `dpkg` source package: `tar=1.27.1-2+deb8u1`
 
 Binary Packages:
 
-- `tar=1.27.1-2+b1`
+- `tar=1.27.1-2+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
@@ -2234,7 +2234,7 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tar=1.27.1-2
+$ apt-get source -qq --print-uris tar=1.27.1-2+deb8u1
 'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1-2+deb8u1.dsc' tar_1.27.1-2+deb8u1.dsc 2049 SHA256:e42e96a9cdf325d7f030306735a1380276670deb72541a7f97ffe59a1e32e67b
 'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1.orig.tar.xz' tar_1.27.1.orig.tar.xz 1704252 SHA256:58169c5a03c04be20d3fb91010b01e822c6a58060a96e7cf2f9c1944de0151ab
 'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1-2+deb8u1.debian.tar.xz' tar_1.27.1-2+deb8u1.debian.tar.xz 32632 SHA256:dc2e495770f6c1c79a4e299d4008c8cb1f91a48e823751bc95d7f26ae498f995
@@ -2242,8 +2242,8 @@ $ apt-get source -qq --print-uris tar=1.27.1-2
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/tar/1.27.1-2/
-- https://sources.debian.net/src/tar/1.27.1-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/tar/1.27.1-2+deb8u1/
+- https://sources.debian.net/src/tar/1.27.1-2+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tiff=4.0.3-12.3+deb8u1`
 
@@ -2269,29 +2269,18 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u1/
 - https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tzdata=2016f-0+deb8u1`
+### `dpkg` source package: `tzdata=2016h-0+deb8u1`
 
 Binary Packages:
 
-- `tzdata=2016f-0+deb8u1`
+- `tzdata=2016h-0+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016f-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016f-0+deb8u1.dsc' tzdata_2016f-0+deb8u1.dsc 1971 SHA256:0474098d0be64feddf5cb231581b20381e9ba450ddcbbd9378c82a1fee89b046
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016f.orig.tar.gz' tzdata_2016f.orig.tar.gz 313286 SHA256:ed8c951008d12f1db55a11e96fc055718c6571233327d9de16a7f8475e2502b0
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016f-0+deb8u1.debian.tar.xz' tzdata_2016f-0+deb8u1.debian.tar.xz 101612 SHA256:fe51e05f855921da01f0dcff74f2fb0d4f9b10860ed579ca1a407de1021c96fa
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2016f-0+deb8u1/
-- https://sources.debian.net/src/tzdata/2016f-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ucf=3.0030`
 
