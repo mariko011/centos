@@ -1792,19 +1792,8 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`)
 - `LGPL-2.1+`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gtk+3.0=3.22.2-1
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.2-1.dsc' gtk+3.0_3.22.2-1.dsc 3916 SHA256:e0853fb78816a8f17e772db67006ab03d504641ea54a5e79ae1c40b8912c09ad
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.2.orig.tar.xz' gtk+3.0_3.22.2.orig.tar.xz 18257964 SHA256:2343dcaed2fc237ef718136ff4110fef7eb1ebfe178a9b064aa21cd74ecb6946
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.2-1.debian.tar.xz' gtk+3.0_3.22.2-1.debian.tar.xz 142848 SHA256:4214febc4446dc6fc9c89c736aadfa96acc2a7473b1e0a0be288383f6295c3b7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gtk+3.0/3.22.2-1/
-- https://sources.debian.net/src/gtk+3.0/3.22.2-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gts=0.7.6+darcs121130-1.2`
 
@@ -3901,19 +3890,8 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mysql-5.7=5.7.15-1
-'http://deb.debian.org/debian/pool/main/m/mysql-5.7/mysql-5.7_5.7.15-1.dsc' mysql-5.7_5.7.15-1.dsc 3181 SHA256:ce18c3eca3fb9fee260b6799422216d9fa220961d4b740c92b245d9975125548
-'http://deb.debian.org/debian/pool/main/m/mysql-5.7/mysql-5.7_5.7.15.orig.tar.gz' mysql-5.7_5.7.15.orig.tar.gz 60583907 SHA256:7342a3a3e40878378dfaee252d42a3a5b06c58237f49c2544424d27316738945
-'http://deb.debian.org/debian/pool/main/m/mysql-5.7/mysql-5.7_5.7.15-1.debian.tar.xz' mysql-5.7_5.7.15-1.debian.tar.xz 3386104 SHA256:ffdc43e5f6eee8897905eaa1dab3cb310e1cfedad5b12ac73b1f4930eb9e77e5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mysql-5.7/5.7.15-1/
-- https://sources.debian.net/src/mysql-5.7/5.7.15-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mysql-defaults=1.0.0`
 

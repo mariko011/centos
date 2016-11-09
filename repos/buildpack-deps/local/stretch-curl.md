@@ -243,18 +243,8 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20160104
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20160104.dsc' ca-certificates_20160104.dsc 1405 SHA256:2225db22cec974a89121390db30cbdd7dc1198f6f17fb508d9ef6d435984ae49
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20160104.tar.xz' ca-certificates_20160104.tar.xz 293632 SHA256:09eb770122e23260316120c0cbbddc8a1d33e7147210ce44e146084d5d5abcdd
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/ca-certificates/20160104/
-- https://sources.debian.net/src/ca-certificates/20160104/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cdebconf=0.218`
 
