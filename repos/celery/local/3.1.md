@@ -1,9 +1,9 @@
-# `celery:3.1.24`
+# `celery:3.1.25`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6fa2be3bc459bea2dd5daa2599ce364d48255d3077a1d8db55295a0e7243ab59`
-- Created: `2016-11-01T01:27:40.211844473Z`
+- Image ID: `sha256:74afbe58b13ddda9bcde5970be477277969fd8ca1d4515540fd3639d6f7a6bbf`
+- Created: `2016-11-08T18:42:18.447959183Z`
 - Arch: `linux`/`amd64`
 - Command: `["celery","worker"]`
 - Environment:
@@ -12,7 +12,7 @@
   - `GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D`
   - `PYTHON_VERSION=3.5.2`
   - `PYTHON_PIP_VERSION=8.1.2`
-  - `CELERY_VERSION=3.1.24`
+  - `CELERY_VERSION=3.1.25`
   - `CELERY_BROKER_URL=amqp://guest@rabbit`
 
 ## `dpkg` (`.deb`-based packages)
