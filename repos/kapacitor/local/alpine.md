@@ -1,12 +1,12 @@
-# `kapacitor:1.0-alpine`
+# `kapacitor:1.1-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e80dea0594edb29423f996f365fea2a6e1a359fbaeb0299a3a6eedd872575f2a`
-- Created: `2016-10-18T23:39:24.445838619Z`
+- Image ID: `sha256:59be1f2192711a782853802614593078c7afbd960119291b5027c484523b5fdf`
+- Created: `2016-11-08T22:31:48.583831897Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["kapacitord"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `KAPACITOR_VERSION=1.0.2`
+  - `KAPACITOR_VERSION=1.1.0`
