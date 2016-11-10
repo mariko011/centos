@@ -1282,19 +1282,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libedit=3.1-20150325-1
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20150325-1.dsc' libedit_3.1-20150325-1.dsc 2235 SHA256:e07b228f461a6e2212621888d92dd19d5d5363659faccb265c2caa740c712be8
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20150325.orig.tar.gz' libedit_3.1-20150325.orig.tar.gz 502792 SHA256:c88a5e4af83c5f40dda8455886ac98923a9c33125699742603a88a0253fcc8c5
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20150325-1.debian.tar.bz2' libedit_3.1-20150325-1.debian.tar.bz2 10813 SHA256:c720298eed547eea490e16642c33fe00f22d7d6934b1875e5c74c912d87e24ce
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libedit/3.1-20150325-1/
-- https://sources.debian.net/src/libedit/3.1-20150325-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `liberror-perl=0.17024-1`
 

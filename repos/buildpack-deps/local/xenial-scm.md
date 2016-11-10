@@ -602,14 +602,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`, `/usr/share/doc/l
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-5=5.4.0-6ubuntu1~16.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.2.dsc' gcc-5_5.4.0-6ubuntu1~16.04.2.dsc 28620 SHA256:ec87d3abbe966eecead9c1adecce5501bfb9f8623629229eef646199eb19c3a7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0.orig.tar.gz' gcc-5_5.4.0.orig.tar.gz 73530162 SHA256:00f73e8382aa8653aa501ce2263597c2c4429912bfa18102f47cc362f00ed88d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.2.diff.gz' gcc-5_5.4.0-6ubuntu1~16.04.2.diff.gz 1451005 SHA256:054be60bd4d1de950f2c2bf9a001877dc67fe928df317d1b8b9bec15935e4214
-```
 
 ### `dpkg` source package: `gccgo-6=6.0.1-0ubuntu1`
 
