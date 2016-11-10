@@ -985,10 +985,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-6=6.2.0-11
-'http://http.debian.net/debian/pool/main/g/gcc-6/gcc-6_6.2.0-11.dsc' gcc-6_6.2.0-11.dsc 26160 SHA256:74f7e9cbda3e9d4015a03d836f23eb766d46a70a9c7d246a0bb7ec35a7cb2112
-'http://http.debian.net/debian/pool/main/g/gcc-6/gcc-6_6.2.0.orig.tar.gz' gcc-6_6.2.0.orig.tar.gz 82473068 SHA256:5c92f14fd520a90dceec8c76bbe400ab572bfb4095e332b73013d3cc59d0fda1
-'http://http.debian.net/debian/pool/main/g/gcc-6/gcc-6_6.2.0-11.diff.gz' gcc-6_6.2.0-11.diff.gz 4638039 SHA256:a08295b4e3d188253f00af5bf159ee2b69aa0cf7f26030c01e6e1bb2ae737c8c
+'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0-11.dsc' gcc-6_6.2.0-11.dsc 26160 SHA256:74f7e9cbda3e9d4015a03d836f23eb766d46a70a9c7d246a0bb7ec35a7cb2112
+'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0.orig.tar.gz' gcc-6_6.2.0.orig.tar.gz 82473068 SHA256:5c92f14fd520a90dceec8c76bbe400ab572bfb4095e332b73013d3cc59d0fda1
+'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0-11.diff.gz' gcc-6_6.2.0-11.diff.gz 4638039 SHA256:a08295b4e3d188253f00af5bf159ee2b69aa0cf7f26030c01e6e1bb2ae737c8c
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/gcc-6/6.2.0-11/
+- https://sources.debian.net/src/gcc-6/6.2.0-11/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-defaults=1.163`
 
@@ -1054,10 +1059,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glib2.0=2.50.2-1
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.50.2-1.dsc' glib2.0_2.50.2-1.dsc 3312 SHA256:856f07a75c473315c8b3497b379a07146f95b4860a7ae6c7ca81cc6eb643603f
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.50.2.orig.tar.xz' glib2.0_2.50.2.orig.tar.xz 7582312 SHA256:be68737c1f268c05493e503b3b654d2b7f43d7d0b8c5556f7e4651b870acfbf5
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.50.2-1.debian.tar.xz' glib2.0_2.50.2-1.debian.tar.xz 70096 SHA256:09e8894806fbdcd86e746459c5dfca9e01f012a76378f52944c98f08bd1aa781
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.50.2-1.dsc' glib2.0_2.50.2-1.dsc 3312 SHA256:856f07a75c473315c8b3497b379a07146f95b4860a7ae6c7ca81cc6eb643603f
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.50.2.orig.tar.xz' glib2.0_2.50.2.orig.tar.xz 7582312 SHA256:be68737c1f268c05493e503b3b654d2b7f43d7d0b8c5556f7e4651b870acfbf5
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.50.2-1.debian.tar.xz' glib2.0_2.50.2-1.debian.tar.xz 70096 SHA256:09e8894806fbdcd86e746459c5dfca9e01f012a76378f52944c98f08bd1aa781
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/glib2.0/2.50.2-1/
+- https://sources.debian.net/src/glib2.0/2.50.2-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.24-5`
 
