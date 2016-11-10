@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fdc2ca01c6d3c53273bccae5f2785dda9e1b2e106107108d50f2e1563b9157bb`
-- Created: `2016-11-08T22:07:03.6312952Z`
+- Image ID: `sha256:4b254d7704eb4f8597694c4b68022f6a097084bbbcf6bcda571b4d281b651c70`
+- Created: `2016-11-10T02:43:00.880120341Z`
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
@@ -13,8 +13,8 @@
   - `JAVA_VERSION=8u111`
   - `JAVA_DEBIAN_VERSION=8u111-b14-2~bpo8+1`
   - `CA_CERTIFICATES_JAVA_VERSION=20140324`
-  - `JRUBY_VERSION=9.1.5.0`
-  - `JRUBY_SHA256=28e4f3aefbb4497c5c5edc04246778b3305105c3d3d6de11be067826cc5bb766`
+  - `JRUBY_VERSION=9.1.6.0`
+  - `JRUBY_SHA256=a32dc54b80aa0069323654e06b84fdcea077d3601ec54208a67c4b969f369b89`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_PATH=/usr/local/bundle`
   - `BUNDLE_BIN=/usr/local/bundle/bin`
