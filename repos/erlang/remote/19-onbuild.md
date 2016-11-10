@@ -1,7 +1,7 @@
 ## `erlang:19-onbuild`
 
 ```console
-$ docker pull erlang@sha256:ee01e6811402faf80bbe6838e51b4792cd1fcff3779fa6a1c4d3010fc8d07ff8
+$ docker pull erlang@sha256:ce0c4a6bc3f826ea427ab166c731f4947b3da04576a21671c99129b4f85aa0dd
 ```
 
 -	Platforms:
@@ -11,82 +11,82 @@ $ docker pull erlang@sha256:ee01e6811402faf80bbe6838e51b4792cd1fcff3779fa6a1c4d3
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **302.3 MB (302263527 bytes)**  
+-	Total Size: **302.3 MB (302274721 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84df688113c2b4d101705effedb6f9720c477ae64cb0767f274d4dc4ef35def2`
+-	Image ID: `sha256:bf6477248ff33f3ea4c3f519feb2cd2294b4fb43b2a6de30a3b635230ccb0c4a`
 -	Default Command: `["rebar3","shell"]`
 
 ```dockerfile
-# Fri, 21 Oct 2016 16:22:34 GMT
-ADD file:23aa4f893e3288698c017b90be657911b72d54edb3b3a7c4d05c308f50f9228f in / 
-# Fri, 21 Oct 2016 16:22:34 GMT
+# Mon, 07 Nov 2016 20:30:25 GMT
+ADD file:41ea5187c50116884c38d9ec51d920d79cfaeb2a61c52e07a97f457419a10a4f in / 
+# Mon, 07 Nov 2016 20:30:26 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Oct 2016 16:36:32 GMT
+# Mon, 07 Nov 2016 22:27:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 21 Oct 2016 16:37:29 GMT
+# Mon, 07 Nov 2016 22:27:51 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 31 Oct 2016 21:26:48 GMT
+# Mon, 07 Nov 2016 22:28:43 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 02 Nov 2016 20:11:17 GMT
+# Thu, 10 Nov 2016 03:37:06 GMT
 ENV OTP_VERSION=19.1.5
-# Wed, 02 Nov 2016 20:16:40 GMT
+# Thu, 10 Nov 2016 03:42:17 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="1de52d8292b9d1a1a146f888788d32ce9f1f3eec17a5db59d94d38d8e257c240" 	&& runtimeDeps='libodbc1 			libsctp1' 	&& buildDeps='unixodbc-dev 			libsctp-dev' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& ./configure --enable-sctp 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
-# Wed, 02 Nov 2016 20:16:41 GMT
+# Thu, 10 Nov 2016 03:42:17 GMT
 CMD ["erl"]
-# Wed, 02 Nov 2016 20:16:41 GMT
+# Thu, 10 Nov 2016 03:42:18 GMT
 ENV REBAR_VERSION=2.6.4
-# Wed, 02 Nov 2016 20:16:45 GMT
+# Thu, 10 Nov 2016 03:42:21 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src
-# Wed, 02 Nov 2016 20:16:45 GMT
+# Thu, 10 Nov 2016 03:42:22 GMT
 ENV REBAR3_VERSION=3.3.2
-# Wed, 02 Nov 2016 20:17:07 GMT
+# Thu, 10 Nov 2016 03:42:44 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="ccbc27355727090b1fdde7497ab2485c3509e2fd14b48a93276b285b5760d092" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
-# Wed, 02 Nov 2016 20:22:24 GMT
+# Thu, 10 Nov 2016 03:43:57 GMT
 RUN mkdir -p /usr/src/app
-# Wed, 02 Nov 2016 20:22:24 GMT
+# Thu, 10 Nov 2016 03:43:57 GMT
 WORKDIR /usr/src/app
-# Wed, 02 Nov 2016 20:22:25 GMT
+# Thu, 10 Nov 2016 03:43:58 GMT
 ONBUILD COPY rebar.config /usr/src/app/
-# Wed, 02 Nov 2016 20:22:25 GMT
+# Thu, 10 Nov 2016 03:43:58 GMT
 ONBUILD RUN rebar3 update
-# Wed, 02 Nov 2016 20:22:25 GMT
+# Thu, 10 Nov 2016 03:43:58 GMT
 ONBUILD COPY . /usr/src/app
-# Wed, 02 Nov 2016 20:22:25 GMT
+# Thu, 10 Nov 2016 03:43:59 GMT
 ONBUILD RUN rebar3 release
-# Wed, 02 Nov 2016 20:22:26 GMT
+# Thu, 10 Nov 2016 03:43:59 GMT
 CMD ["rebar3" "shell"]
 ```
 
 -	Layers:
-	-	`sha256:43c265008fae5d1f3cbee0dac9697235320b174d85acbed002a4fe44236adec0`  
-		Last Modified: Fri, 21 Oct 2016 16:22:58 GMT  
-		Size: 51.4 MB (51353125 bytes)  
+	-	`sha256:386a066cd84a33a04d560c42bef66d1dd64ebfc76de78550e5fd0f8d57778bca`  
+		Last Modified: Mon, 07 Nov 2016 20:34:04 GMT  
+		Size: 51.4 MB (51356989 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af36d2c7a1481ae5554241fcb6bc20472bf7a6b7b2be24465c76e168c278a03f`  
-		Last Modified: Fri, 21 Oct 2016 16:36:48 GMT  
-		Size: 18.5 MB (18528131 bytes)  
+	-	`sha256:75ea8418708338e40dce9179cfe97fd116831f1601be50fef48ea6011653c986`  
+		Last Modified: Mon, 07 Nov 2016 22:57:05 GMT  
+		Size: 18.5 MB (18528477 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:143e9d501644c63b3e69d854e8b4c238797cdf3fc87fd79a686c1262fe61e9b5`  
-		Last Modified: Fri, 21 Oct 2016 16:37:53 GMT  
-		Size: 42.5 MB (42500812 bytes)  
+	-	`sha256:88b459c9f665cc39ff5fc09071b5dada4dad766573d962276f999d0c466d5405`  
+		Last Modified: Mon, 07 Nov 2016 22:57:53 GMT  
+		Size: 42.5 MB (42498243 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df720fc8e4f160444441c03d14894b21f295241ab4ff4d9f6e625f203c1fb944`  
-		Last Modified: Mon, 31 Oct 2016 21:38:14 GMT  
-		Size: 129.8 MB (129819618 bytes)  
+	-	`sha256:1e3ee139a57774dc3728a4bf9675bc379458093585e42f384852e644b1b272ac`  
+		Last Modified: Mon, 07 Nov 2016 22:59:05 GMT  
+		Size: 129.8 MB (129808774 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b07e8c3560fe09e14fd334bedea1174ff3447f3b2ff4bf81d181f4748bbc8bf3`  
-		Last Modified: Wed, 02 Nov 2016 20:22:54 GMT  
-		Size: 58.0 MB (58020048 bytes)  
+	-	`sha256:e168ac0edd381c623353884381bb4313f6950c8fe3f6c8ec8e56179866791616`  
+		Last Modified: Thu, 10 Nov 2016 03:43:10 GMT  
+		Size: 58.0 MB (58023148 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa2064075f03e665741904196b550ec518e0b72e0c9d8169b8434a814e8ea83c`  
-		Last Modified: Wed, 02 Nov 2016 20:22:40 GMT  
-		Size: 199.1 KB (199114 bytes)  
+	-	`sha256:4149198279446121fb58c98bdeca50dcd3589298ddfede7c16a6910cbdb92d65`  
+		Last Modified: Thu, 10 Nov 2016 03:42:56 GMT  
+		Size: 199.2 KB (199197 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d7fb316004f43e7cda2000b9352d6d4422310da20a47d9b59e5fe00799f4e8c`  
-		Last Modified: Wed, 02 Nov 2016 20:22:40 GMT  
-		Size: 1.8 MB (1842555 bytes)  
+	-	`sha256:1e022f09a0ee68850ea4d5d646b80a0f1d744d1166a6d2806de897ccc1f28f03`  
+		Last Modified: Thu, 10 Nov 2016 03:42:57 GMT  
+		Size: 1.9 MB (1859767 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc053fc488cfd383c9a0e1d8c3bf01ca42f678e3763c9df0512596db795120fa`  
-		Last Modified: Wed, 02 Nov 2016 20:25:01 GMT  
-		Size: 124.0 B  
+	-	`sha256:e57f32cb50f17f8d6bda4bbf575cb37b95b755f3e0855bd74433986408e086fb`  
+		Last Modified: Thu, 10 Nov 2016 03:44:11 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
