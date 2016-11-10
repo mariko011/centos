@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:928919371a33f782f9b23859e70a0d3decda5d65309ec81f856168f22062c1a5`
-- Created: `2016-10-22T00:49:50.806112771Z`
+- Image ID: `sha256:5335b737c38052271dcfe6277287cb47fb82d0d18d940c742471c980f5500710`
+- Created: `2016-11-09T00:51:19.559887515Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["rabbitmq-server"]`
