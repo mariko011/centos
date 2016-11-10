@@ -1,7 +1,7 @@
 ## `iojs:latest`
 
 ```console
-$ docker pull iojs@sha256:971f5e83299615d16912015ce562fdfdbdbe0e75b5ca849605ffb2cb85975e67
+$ docker pull iojs@sha256:168f7eb2bf00e99c14a50173f90add3b51ad91479c52d168e2ca33d51b07c09b
 ```
 
 -	Platforms:
@@ -9,58 +9,58 @@ $ docker pull iojs@sha256:971f5e83299615d16912015ce562fdfdbdbe0e75b5ca849605ffb2
 
 ### `iojs:latest` - linux; amd64
 
--	Docker Version: 1.12.2
+-	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **253.8 MB (253753386 bytes)**  
+-	Total Size: **253.7 MB (253744195 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36e8b40769cc827ae3f0cee7da963d4ec8080986fe2e2ae17cca88af36d700ac`
+-	Image ID: `sha256:9bc148e3ccc35a18bcb9dde1289f1a89349d4710c1eea4ca98704e03899ebdc6`
 -	Default Command: `["iojs"]`
 
 ```dockerfile
-# Fri, 21 Oct 2016 16:22:34 GMT
-ADD file:23aa4f893e3288698c017b90be657911b72d54edb3b3a7c4d05c308f50f9228f in / 
-# Fri, 21 Oct 2016 16:22:34 GMT
+# Mon, 07 Nov 2016 20:30:25 GMT
+ADD file:41ea5187c50116884c38d9ec51d920d79cfaeb2a61c52e07a97f457419a10a4f in / 
+# Mon, 07 Nov 2016 20:30:26 GMT
 CMD ["/bin/bash"]
-# Fri, 21 Oct 2016 16:36:32 GMT
+# Mon, 07 Nov 2016 22:27:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 21 Oct 2016 16:37:29 GMT
+# Mon, 07 Nov 2016 22:27:51 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 31 Oct 2016 21:26:48 GMT
+# Mon, 07 Nov 2016 22:28:43 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 01 Nov 2016 05:15:00 GMT
+# Thu, 10 Nov 2016 06:40:05 GMT
 RUN set -ex   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"   ; done
-# Tue, 01 Nov 2016 05:15:01 GMT
+# Thu, 10 Nov 2016 06:40:05 GMT
 ENV NPM_CONFIG_LOGLEVEL=info
-# Tue, 01 Nov 2016 05:19:24 GMT
+# Thu, 10 Nov 2016 06:43:29 GMT
 ENV IOJS_VERSION=3.3.0
-# Tue, 01 Nov 2016 05:19:29 GMT
+# Thu, 10 Nov 2016 06:43:33 GMT
 RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x64.tar.gz"   && curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/SHASUMS256.txt.asc"   && gpg --verify SHASUMS256.txt.asc   && grep " iojs-v$IOJS_VERSION-linux-x64.tar.gz\$" SHASUMS256.txt.asc | sha256sum -c -   && tar -xzf "iojs-v$IOJS_VERSION-linux-x64.tar.gz" -C /usr/local --strip-components=1   && rm "iojs-v$IOJS_VERSION-linux-x64.tar.gz" SHASUMS256.txt.asc
-# Tue, 01 Nov 2016 05:19:30 GMT
+# Thu, 10 Nov 2016 06:43:34 GMT
 CMD ["iojs"]
 ```
 
 -	Layers:
-	-	`sha256:43c265008fae5d1f3cbee0dac9697235320b174d85acbed002a4fe44236adec0`  
-		Last Modified: Fri, 21 Oct 2016 16:22:58 GMT  
-		Size: 51.4 MB (51353125 bytes)  
+	-	`sha256:386a066cd84a33a04d560c42bef66d1dd64ebfc76de78550e5fd0f8d57778bca`  
+		Last Modified: Mon, 07 Nov 2016 20:34:04 GMT  
+		Size: 51.4 MB (51356989 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af36d2c7a1481ae5554241fcb6bc20472bf7a6b7b2be24465c76e168c278a03f`  
-		Last Modified: Fri, 21 Oct 2016 16:36:48 GMT  
-		Size: 18.5 MB (18528131 bytes)  
+	-	`sha256:75ea8418708338e40dce9179cfe97fd116831f1601be50fef48ea6011653c986`  
+		Last Modified: Mon, 07 Nov 2016 22:57:05 GMT  
+		Size: 18.5 MB (18528477 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:143e9d501644c63b3e69d854e8b4c238797cdf3fc87fd79a686c1262fe61e9b5`  
-		Last Modified: Fri, 21 Oct 2016 16:37:53 GMT  
-		Size: 42.5 MB (42500812 bytes)  
+	-	`sha256:88b459c9f665cc39ff5fc09071b5dada4dad766573d962276f999d0c466d5405`  
+		Last Modified: Mon, 07 Nov 2016 22:57:53 GMT  
+		Size: 42.5 MB (42498243 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df720fc8e4f160444441c03d14894b21f295241ab4ff4d9f6e625f203c1fb944`  
-		Last Modified: Mon, 31 Oct 2016 21:38:14 GMT  
-		Size: 129.8 MB (129819618 bytes)  
+	-	`sha256:1e3ee139a57774dc3728a4bf9675bc379458093585e42f384852e644b1b272ac`  
+		Last Modified: Mon, 07 Nov 2016 22:59:05 GMT  
+		Size: 129.8 MB (129808774 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cac707db4d43766e24edc009a749e282eb5106ddeabf68ec72335a9914398dc5`  
-		Last Modified: Tue, 01 Nov 2016 05:15:19 GMT  
+	-	`sha256:167701b31686baaaf63475f1f1f7ddab8abc0b9b863049e14027ce1e733a57d4`  
+		Last Modified: Thu, 10 Nov 2016 06:40:26 GMT  
 		Size: 69.4 KB (69382 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02f746a7362f6714bc6c5eea51739b888810b9568d55053f208ad06930339bec`  
-		Last Modified: Tue, 01 Nov 2016 05:19:44 GMT  
-		Size: 11.5 MB (11482318 bytes)  
+	-	`sha256:529a4198ce6356ef0757915b79a9720e42c8c0b30b06dfaf9720310cef3ecb66`  
+		Last Modified: Thu, 10 Nov 2016 06:43:50 GMT  
+		Size: 11.5 MB (11482330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
