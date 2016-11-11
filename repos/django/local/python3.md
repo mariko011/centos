@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9ea3a5940491d8741d6cf29dd87bca0ed95e38a97a7f5a78d352cc4a127469e6`
-- Created: `2016-11-01T23:24:00.81937954Z`
+- Image ID: `sha256:5bbe9bf6510d13766aa3cfd3c4eb7731a86da0f06e888ead41ba2123aac62996`
+- Created: `2016-11-10T03:00:59.795603333Z`
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
 - Environment:
@@ -1921,15 +1921,15 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/mpfr4/3.1.2-2/
 - https://sources.debian.net/src/mpfr4/3.1.2-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `mysql-5.5=5.5.52-0+deb8u1`
+### `dpkg` source package: `mysql-5.5=5.5.53-0+deb8u1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.5.52-0+deb8u1`
-- `libmysqlclient18:amd64=5.5.52-0+deb8u1`
-- `mysql-client=5.5.52-0+deb8u1`
-- `mysql-client-5.5=5.5.52-0+deb8u1`
-- `mysql-common=5.5.52-0+deb8u1`
+- `libmysqlclient-dev=5.5.53-0+deb8u1`
+- `libmysqlclient18:amd64=5.5.53-0+deb8u1`
+- `mysql-client=5.5.53-0+deb8u1`
+- `mysql-client-5.5=5.5.53-0+deb8u1`
+- `mysql-common=5.5.53-0+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-client/copyright`, `/usr/share/doc/mysql-client-5.5/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -1947,8 +1947,19 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.5=5.5.53-0+deb8u1
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.53-0+deb8u1.dsc' mysql-5.5_5.5.53-0+deb8u1.dsc 3233 SHA256:631ee00029cf7403c5b569ec599f97a6e0378af75441f5b6e16030f2b18d9ca5
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.53.orig.tar.gz' mysql-5.5_5.5.53.orig.tar.gz 21035716 SHA256:a7a86dd42524e698c9dd8dab2520e6e75377cde077ed71eaf5a3b5a3d1f7d6ea
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.53-0+deb8u1.debian.tar.xz' mysql-5.5_5.5.53-0+deb8u1.debian.tar.xz 232272 SHA256:063d2601b47dc24a3e86acadd1797abfbd09c22ecdbebfe8bff6862d3f0702b0
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/mysql-5.5/5.5.53-0+deb8u1/
+- https://sources.debian.net/src/mysql-5.5/5.5.53-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ncurses=5.9+20140913-1`
 
@@ -2523,11 +2534,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/sysvinit/2.88dsf-59/
 - https://sources.debian.net/src/sysvinit/2.88dsf-59/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tar=1.27.1-2`
+### `dpkg` source package: `tar=1.27.1-2+deb8u1`
 
 Binary Packages:
 
-- `tar=1.27.1-2+b1`
+- `tar=1.27.1-2+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
@@ -2537,7 +2548,7 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tar=1.27.1-2
+$ apt-get source -qq --print-uris tar=1.27.1-2+deb8u1
 'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1-2+deb8u1.dsc' tar_1.27.1-2+deb8u1.dsc 2049 SHA256:e42e96a9cdf325d7f030306735a1380276670deb72541a7f97ffe59a1e32e67b
 'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1.orig.tar.xz' tar_1.27.1.orig.tar.xz 1704252 SHA256:58169c5a03c04be20d3fb91010b01e822c6a58060a96e7cf2f9c1944de0151ab
 'http://security.debian.org/pool/updates/main/t/tar/tar_1.27.1-2+deb8u1.debian.tar.xz' tar_1.27.1-2+deb8u1.debian.tar.xz 32632 SHA256:dc2e495770f6c1c79a4e299d4008c8cb1f91a48e823751bc95d7f26ae498f995
@@ -2545,32 +2556,21 @@ $ apt-get source -qq --print-uris tar=1.27.1-2
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/tar/1.27.1-2/
-- https://sources.debian.net/src/tar/1.27.1-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/tar/1.27.1-2+deb8u1/
+- https://sources.debian.net/src/tar/1.27.1-2+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tzdata=2016f-0+deb8u1`
+### `dpkg` source package: `tzdata=2016h-0+deb8u1`
 
 Binary Packages:
 
-- `tzdata=2016f-0+deb8u1`
+- `tzdata=2016h-0+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016f-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016f-0+deb8u1.dsc' tzdata_2016f-0+deb8u1.dsc 1971 SHA256:0474098d0be64feddf5cb231581b20381e9ba450ddcbbd9378c82a1fee89b046
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016f.orig.tar.gz' tzdata_2016f.orig.tar.gz 313286 SHA256:ed8c951008d12f1db55a11e96fc055718c6571233327d9de16a7f8475e2502b0
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016f-0+deb8u1.debian.tar.xz' tzdata_2016f-0+deb8u1.debian.tar.xz 101612 SHA256:fe51e05f855921da01f0dcff74f2fb0d4f9b10860ed579ca1a407de1021c96fa
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2016f-0+deb8u1/
-- https://sources.debian.net/src/tzdata/2016f-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 
