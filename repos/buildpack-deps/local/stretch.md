@@ -1397,19 +1397,8 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris git=1:2.10.2-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.10.2-1.dsc' git_2.10.2-1.dsc 2839 SHA256:925b3b072bd9dddac85b1c13c336d71edf8d3f548cbb8e0b155856edf09fe856
-'http://deb.debian.org/debian/pool/main/g/git/git_2.10.2.orig.tar.xz' git_2.10.2.orig.tar.xz 4106108 SHA256:94802903dd707d85ca3b9a2be35e936a54ce86375f52c6a789efe7ce7e238671
-'http://deb.debian.org/debian/pool/main/g/git/git_2.10.2-1.debian.tar.xz' git_2.10.2-1.debian.tar.xz 509888 SHA256:ac0670fb117014c7d82671e9b244affbf608a81299a3a8049ee56291ebaf2373
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/git/1:2.10.2-1/
-- https://sources.debian.net/src/git/1:2.10.2-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glib2.0=2.50.1-1`
 
