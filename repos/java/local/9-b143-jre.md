@@ -962,20 +962,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.5-6
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5-6.dsc' gnutls28_3.5.5-6.dsc 3138 SHA256:3daaa121d262736028e20bc9fe0fe6f84a8d8cc0c9172a03d90be6af56b3ed85
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5.orig.tar.xz' gnutls28_3.5.5.orig.tar.xz 6974628 SHA256:86994fe7804ee16d2811e366b9bf2f75304f8e470ae0e3716d60ffeedac0e529
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5.orig.tar.xz.asc' gnutls28_3.5.5.orig.tar.xz.asc 287 SHA256:e875ac977d00a4557c2da5ce155d2d1872601e6234afbfa58ee9dd1359e295bd
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5-6.debian.tar.xz' gnutls28_3.5.5-6.debian.tar.xz 104132 SHA256:4e98d941b2bcbaeb0e762d286ec190e1c57c762cf91f746c5db191e1dd430fdc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnutls28/3.5.5-6/
-- https://sources.debian.net/src/gnutls28/3.5.5-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.26-1`
 
@@ -2096,20 +2084,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.0b-2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0b-2.dsc' openssl_1.1.0b-2.dsc 2552 SHA256:228701033ca49199dee3b46a166f70bd5380ab4e2d7a9c2e257227fe0d7c4f2e
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0b.orig.tar.gz' openssl_1.1.0b.orig.tar.gz 5162355 SHA256:a45de072bf9be4dea437230aaf036000f0e68c6a665931c57e76b5b036cef6f7
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0b.orig.tar.gz.asc' openssl_1.1.0b.orig.tar.gz.asc 473 SHA256:c05f5de460013a98dcb1ab838388f459f9a0b9252329b816744f10b15d23c001
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0b-2.debian.tar.xz' openssl_1.1.0b-2.debian.tar.xz 53920 SHA256:e34fbc2c265b9798d136e4228adad6cf954ab4ff8ec826c511c0bfe5d10febc0
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssl/1.1.0b-2/
-- https://sources.debian.net/src/openssl/1.1.0b-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.23.2-5`
 
