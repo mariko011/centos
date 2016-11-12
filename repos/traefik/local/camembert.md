@@ -1,9 +1,9 @@
-# `traefik:v1.1.0-rc3`
+# `traefik:v1.1.0-rc4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:36bd546e2bbb61c89cc75330ba614b082e788ff730f63bf19ed2764f7c16ab46`
-- Created: `2016-10-26T17:11:28.128625138Z`
+- Image ID: `sha256:9a6db66bb4efcda76aca413df9fe2d70165649171e60e37f2776db51eb46eb29`
+- Created: `2016-11-11T15:49:22.632088537Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/traefik"]`
 - Environment:
