@@ -675,13 +675,8 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-de
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.13
-'http://http.debian.net/debian/pool/main/d/dpkg/dpkg_1.18.13.dsc' dpkg_1.18.13.dsc 2000 SHA256:b240633797b9bb4780643dd1420232bcc150876a14d37b7f944f5f11e00ddb20
-'http://http.debian.net/debian/pool/main/d/dpkg/dpkg_1.18.13.tar.xz' dpkg_1.18.13.tar.xz 4489244 SHA256:51f98e37ccf21c8df1ba919d6670286bc48b905ff20d6e4cf9620d9b318a3990
-```
 
 ### `dpkg` source package: `e2fsprogs=1.43.3-1`
 
@@ -1389,18 +1384,8 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.45
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.45.dsc' init-system-helpers_1.45.dsc 1935 SHA256:2cd1ec8775009e093ea2df3a5c8c4bf82605059956675b7f979b43258e68a920
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.45.tar.xz' init-system-helpers_1.45.tar.xz 42556 SHA256:d4e8cd7a2a6fb668a0841abf2fa4e72114b4adfa80e15820b4aaec014da3bfa4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/init-system-helpers/1.45/
-- https://sources.debian.net/src/init-system-helpers/1.45/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `iproute2=4.8.0-1`
 
