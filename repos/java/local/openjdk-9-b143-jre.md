@@ -230,18 +230,8 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.5.40
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.40.dsc' base-passwd_3.5.40.dsc 1717 SHA256:5044c0964d6fadf21e795e6e8d7e10a5acaca7b2bf97f4c9cfa2d5a771acba84
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.40.tar.xz' base-passwd_3.5.40.tar.xz 52244 SHA256:834e0b23186d90339c1dfa91366906ce6a327d1d31cce925b53e745b7cb44f55
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/base-passwd/3.5.40/
-- https://sources.debian.net/src/base-passwd/3.5.40/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bash=4.4-1`
 
@@ -2035,19 +2025,8 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openjdk-9=9~b143-2
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b143-2.dsc' openjdk-9_9~b143-2.dsc 4429 SHA256:ea373b3d9ea441bfb219fb653d709dafb9cbe06930b97b0d8fd4ec95463a6d94
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b143.orig.tar.gz' openjdk-9_9~b143.orig.tar.gz 72444675 SHA256:dfae02d234050341ff17158ae0c481368a52d31c55c4ca99c146804ada4f4512
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b143-2.debian.tar.xz' openjdk-9_9~b143-2.debian.tar.xz 186256 SHA256:e6c358b7512fe55dc134bf2749e44fd1c4c9acbff7e65a48866e3e67827a8e3c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openjdk-9/9~b143-2/
-- https://sources.debian.net/src/openjdk-9/9~b143-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.42+dfsg-2`
 
