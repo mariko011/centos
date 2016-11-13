@@ -289,18 +289,8 @@ Licenses: (parsed from: `/usr/share/doc/autotools-dev/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris autotools-dev=20160430.1
-'http://deb.debian.org/debian/pool/main/a/autotools-dev/autotools-dev_20160430.1.dsc' autotools-dev_20160430.1.dsc 1641 SHA256:91533f61bc6ac642c72734f29c57de7c231f4b972bf28bc37275b8fb1fe598e1
-'http://deb.debian.org/debian/pool/main/a/autotools-dev/autotools-dev_20160430.1.tar.xz' autotools-dev_20160430.1.tar.xz 63312 SHA256:c7f1806eb62a12e5706cef413e9eca2d599f00d898eff59f30d83c1cc814848c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/autotools-dev/20160430.1/
-- https://sources.debian.net/src/autotools-dev/20160430.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `avahi=0.6.32-1`
 
@@ -1114,19 +1104,8 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `GFDL-1.3`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris findutils=4.6.0+git+20160703-2
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20160703-2.dsc' findutils_4.6.0+git+20160703-2.dsc 2206 SHA256:57ac43fa49afd844bc15255410f3c52e904269b95c51dcf19a078321a9582a98
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20160703.orig.tar.xz' findutils_4.6.0+git+20160703.orig.tar.xz 1913856 SHA256:990125960c3e17c2d591b53ef7cb525fb963250f36b6af10a73adb8c0a85b633
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20160703-2.debian.tar.xz' findutils_4.6.0+git+20160703-2.debian.tar.xz 26192 SHA256:562d9c9b08830bc5afa5afd03d4aacd6d410ca6a1e01b0a62e5ef906468f100d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/findutils/4.6.0+git+20160703-2/
-- https://sources.debian.net/src/findutils/4.6.0+git+20160703-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `fontconfig=2.11.0-6.7`
 
@@ -3061,19 +3040,8 @@ Licenses: (parsed from: `/usr/share/doc/libwmf-dev/copyright`, `/usr/share/doc/l
 
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libwmf=0.2.8.4-10.5
-'http://deb.debian.org/debian/pool/main/libw/libwmf/libwmf_0.2.8.4-10.5.dsc' libwmf_0.2.8.4-10.5.dsc 2064 SHA256:f8e927eaeec13e08e07f86d889c99469196fb10336df8aa5d18bf9822fc5323a
-'http://deb.debian.org/debian/pool/main/libw/libwmf/libwmf_0.2.8.4.orig.tar.gz' libwmf_0.2.8.4.orig.tar.gz 2169375 SHA256:5b345c69220545d003ad52bfd035d5d6f4f075e65204114a9e875e84895a7cf8
-'http://deb.debian.org/debian/pool/main/libw/libwmf/libwmf_0.2.8.4-10.5.debian.tar.xz' libwmf_0.2.8.4-10.5.debian.tar.xz 10804 SHA256:3f230d73634d0cb5978ba3cd07251da4772e49ee3ced96f7002252cb8bd745d9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libwmf/0.2.8.4-10.5/
-- https://sources.debian.net/src/libwmf/0.2.8.4-10.5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libx11=2:1.6.3-1`
 
