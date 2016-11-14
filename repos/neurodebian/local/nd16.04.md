@@ -78,13 +78,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.2.12~ubuntu16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.12~ubuntu16.04.1.dsc' apt_1.2.12~ubuntu16.04.1.dsc 2492 SHA256:fb3671ddd019c310d9f85b448dcaad1f21cf749ad8f926d5b130b8c6b6f1c987
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.12~ubuntu16.04.1.tar.xz' apt_1.2.12~ubuntu16.04.1.tar.xz 2046600 SHA256:4c3ddcc13d5ba58e790058123d99a872cc34a825fd8e2a0eec43c5fb877c37ba
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
