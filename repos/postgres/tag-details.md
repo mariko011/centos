@@ -6,14 +6,26 @@
 -	[`postgres:9.6`](#postgres96)
 -	[`postgres:9`](#postgres9)
 -	[`postgres:latest`](#postgreslatest)
+-	[`postgres:9.6.1-alpine`](#postgres961-alpine)
+-	[`postgres:9.6-alpine`](#postgres96-alpine)
+-	[`postgres:9-alpine`](#postgres9-alpine)
+-	[`postgres:alpine`](#postgresalpine)
 -	[`postgres:9.5.5`](#postgres955)
 -	[`postgres:9.5`](#postgres95)
+-	[`postgres:9.5.5-alpine`](#postgres955-alpine)
+-	[`postgres:9.5-alpine`](#postgres95-alpine)
 -	[`postgres:9.4.10`](#postgres9410)
 -	[`postgres:9.4`](#postgres94)
+-	[`postgres:9.4.10-alpine`](#postgres9410-alpine)
+-	[`postgres:9.4-alpine`](#postgres94-alpine)
 -	[`postgres:9.3.15`](#postgres9315)
 -	[`postgres:9.3`](#postgres93)
+-	[`postgres:9.3.15-alpine`](#postgres9315-alpine)
+-	[`postgres:9.3-alpine`](#postgres93-alpine)
 -	[`postgres:9.2.19`](#postgres9219)
 -	[`postgres:9.2`](#postgres92)
+-	[`postgres:9.2.19-alpine`](#postgres9219-alpine)
+-	[`postgres:9.2-alpine`](#postgres92-alpine)
 
 ## `postgres:9.6.1`
 
@@ -463,6 +475,22 @@ CMD ["postgres"]
 		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `postgres:9.6.1-alpine`
+
+**does not exist** (yet?)
+
+## `postgres:9.6-alpine`
+
+**does not exist** (yet?)
+
+## `postgres:9-alpine`
+
+**does not exist** (yet?)
+
+## `postgres:alpine`
+
+**does not exist** (yet?)
+
 ## `postgres:9.5.5`
 
 ```console
@@ -686,6 +714,14 @@ CMD ["postgres"]
 		Last Modified: Wed, 09 Nov 2016 00:25:28 GMT  
 		Size: 1.3 KB (1270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `postgres:9.5.5-alpine`
+
+**does not exist** (yet?)
+
+## `postgres:9.5-alpine`
+
+**does not exist** (yet?)
 
 ## `postgres:9.4.10`
 
@@ -911,6 +947,14 @@ CMD ["postgres"]
 		Size: 1.3 KB (1270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `postgres:9.4.10-alpine`
+
+**does not exist** (yet?)
+
+## `postgres:9.4-alpine`
+
+**does not exist** (yet?)
+
 ## `postgres:9.3.15`
 
 ```console
@@ -1135,6 +1179,14 @@ CMD ["postgres"]
 		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `postgres:9.3.15-alpine`
+
+**does not exist** (yet?)
+
+## `postgres:9.3-alpine`
+
+**does not exist** (yet?)
+
 ## `postgres:9.2.19`
 
 ```console
@@ -1358,3 +1410,11 @@ CMD ["postgres"]
 		Last Modified: Wed, 09 Nov 2016 00:21:18 GMT  
 		Size: 1.3 KB (1270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `postgres:9.2.19-alpine`
+
+**does not exist** (yet?)
+
+## `postgres:9.2-alpine`
+
+**does not exist** (yet?)
