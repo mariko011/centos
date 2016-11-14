@@ -3829,18 +3829,8 @@ Licenses: (parsed from: `/usr/share/doc/mysql-common/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mysql-defaults=1.0.0
-'http://deb.debian.org/debian/pool/main/m/mysql-defaults/mysql-defaults_1.0.0.dsc' mysql-defaults_1.0.0.dsc 2167 SHA256:0b1df0cbd75a580d4cf7075e86e911c93d048a6199476dc614d3861d022b7ec2
-'http://deb.debian.org/debian/pool/main/m/mysql-defaults/mysql-defaults_1.0.0.tar.xz' mysql-defaults_1.0.0.tar.xz 5252 SHA256:095f16f6dd88bce7786776129fec32a212730c3006cd95fe3e88ca53dedab9d9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mysql-defaults/1.0.0/
-- https://sources.debian.net/src/mysql-defaults/1.0.0/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ncurses=6.0+20160917-1`
 

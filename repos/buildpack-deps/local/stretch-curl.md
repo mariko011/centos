@@ -1192,19 +1192,8 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libselinux=2.6-1
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_2.6-1.dsc' libselinux_2.6-1.dsc 2135 SHA256:17d6c2166b2c38d6d05b268656bebc2489af0007c1c8f3649b4e1fa84859e4e4
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_2.6.orig.tar.gz' libselinux_2.6.orig.tar.gz 203119 SHA256:4ea2dde50665c202253ba5caac7738370ea0337c47b251ba981c60d24e1a118a
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_2.6-1.debian.tar.xz' libselinux_2.6-1.debian.tar.xz 23356 SHA256:abc10f65414347d82baf2f0aff8e18d038477e6d1cbad05698430564e92e2ff7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libselinux/2.6-1/
-- https://sources.debian.net/src/libselinux/2.6-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libsemanage=2.6-1`
 

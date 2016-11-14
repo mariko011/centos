@@ -2513,19 +2513,8 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 - `WEBP`
 - `XFIG`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.2.3-3
-'http://deb.debian.org/debian/pool/main/libg/libgd2/libgd2_2.2.3-3.dsc' libgd2_2.2.3-3.dsc 2326 SHA256:a1cac3c848818571234b301369fbf1d5815d06b1ea50587854278b9a074c2cb4
-'http://deb.debian.org/debian/pool/main/libg/libgd2/libgd2_2.2.3.orig.tar.xz' libgd2_2.2.3.orig.tar.xz 2164152 SHA256:746b6cbd6769a22ff3ba6f5756f3512a769bd4cdf4695dff17f4867f25fa7d3c
-'http://deb.debian.org/debian/pool/main/libg/libgd2/libgd2_2.2.3-3.debian.tar.xz' libgd2_2.2.3-3.debian.tar.xz 23856 SHA256:3270da15265bce97e77681007671ee079de689b193d877606ac33440ee15d528
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libgd2/2.2.3-3/
-- https://sources.debian.net/src/libgd2/2.2.3-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.24-1`
 
@@ -2812,19 +2801,8 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libselinux=2.6-1
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_2.6-1.dsc' libselinux_2.6-1.dsc 2135 SHA256:17d6c2166b2c38d6d05b268656bebc2489af0007c1c8f3649b4e1fa84859e4e4
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_2.6.orig.tar.gz' libselinux_2.6.orig.tar.gz 203119 SHA256:4ea2dde50665c202253ba5caac7738370ea0337c47b251ba981c60d24e1a118a
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_2.6-1.debian.tar.xz' libselinux_2.6-1.debian.tar.xz 23356 SHA256:abc10f65414347d82baf2f0aff8e18d038477e6d1cbad05698430564e92e2ff7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libselinux/2.6-1/
-- https://sources.debian.net/src/libselinux/2.6-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libsemanage=2.6-1`
 
