@@ -1,4 +1,4 @@
-## `notary:signer`
+## `notary:signer-0.5.0`
 
 ```console
 $ docker pull notary@sha256:841cbe89a87b0c50eb57063a0ba8cfc919979ce3994ca2cd72149ccfce09fa46
@@ -7,7 +7,7 @@ $ docker pull notary@sha256:841cbe89a87b0c50eb57063a0ba8cfc919979ce3994ca2cd7214
 -	Platforms:
 	-	linux; amd64
 
-### `notary:signer` - linux; amd64
+### `notary:signer-0.5.0` - linux; amd64
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`

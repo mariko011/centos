@@ -1,19 +1,19 @@
-## `notary:signer`
+## `notary:signer-0.4.2`
 
 ```console
-$ docker pull notary@sha256:841cbe89a87b0c50eb57063a0ba8cfc919979ce3994ca2cd72149ccfce09fa46
+$ docker pull notary@sha256:a5fbc2af03fc76e9f7b3c62fabd8abd6e302e377ec6398bdc141c7c58667d7c1
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `notary:signer` - linux; amd64
+### `notary:signer-0.4.2` - linux; amd64
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5918849 bytes)**  
+-	Total Size: **5.8 MB (5839145 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8846e47d915ef6d2bdd17f4f1063af302b7814291c2b9f685bdd7bad4a8caee0`
+-	Image ID: `sha256:6c2c7156c56bdca28494d380f552b1f5059c7fd79de7993f3d832177aa8fb4b5`
 -	Entrypoint: `["entrypoint.sh"]`
 -	Default Command: `["notary-signer","--help"]`
 
@@ -26,21 +26,21 @@ EXPOSE 4444/tcp
 EXPOSE 7899/tcp
 # Tue, 18 Oct 2016 23:45:27 GMT
 COPY file:cfc28ba1c6b9fd3e055210e061c2ad2c9b41eb542b23eb7d3c9adca0a0dd775d in /notary/signer/ 
-# Mon, 14 Nov 2016 23:22:07 GMT
-COPY file:b4880bc0053393461a478577052beead051248deb6011be41a90f10b7243c4a0 in /notary/signer/ 
-# Mon, 14 Nov 2016 23:22:08 GMT
+# Mon, 14 Nov 2016 23:22:32 GMT
+COPY file:474d7f8bc88dc235a670fcf18a8fbc823a30d2d26867bcb8d7aaa1ea66d0cd00 in /notary/signer/ 
+# Mon, 14 Nov 2016 23:22:33 GMT
 COPY file:659a7bf8bfc297520f9f4ea7e10ccff4b6686bd694f08c0471bc2da01551deb8 in /notary/signer/ 
-# Mon, 14 Nov 2016 23:22:08 GMT
+# Mon, 14 Nov 2016 23:22:33 GMT
 WORKDIR /notary/signer
-# Mon, 14 Nov 2016 23:22:09 GMT
+# Mon, 14 Nov 2016 23:22:34 GMT
 RUN adduser -D -H -g "" notary
-# Mon, 14 Nov 2016 23:22:09 GMT
+# Mon, 14 Nov 2016 23:22:35 GMT
 USER [notary]
-# Mon, 14 Nov 2016 23:22:10 GMT
+# Mon, 14 Nov 2016 23:22:35 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/notary/signer
-# Mon, 14 Nov 2016 23:22:10 GMT
+# Mon, 14 Nov 2016 23:22:35 GMT
 ENTRYPOINT ["entrypoint.sh"]
-# Mon, 14 Nov 2016 23:22:10 GMT
+# Mon, 14 Nov 2016 23:22:36 GMT
 CMD ["notary-signer" "--help"]
 ```
 
@@ -53,15 +53,15 @@ CMD ["notary-signer" "--help"]
 		Last Modified: Tue, 18 Oct 2016 23:45:41 GMT  
 		Size: 348.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:22332c45092f86e1e75a475e7fbb5555eacbcd3575e346548b1667dea01f4abb`  
-		Last Modified: Mon, 14 Nov 2016 23:23:35 GMT  
-		Size: 3.6 MB (3603960 bytes)  
+	-	`sha256:57b3a30fb4d56968964f71b86fa9e46c92ada10c848853c33c9acc079db48b2f`  
+		Last Modified: Mon, 14 Nov 2016 23:24:32 GMT  
+		Size: 3.5 MB (3524255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:896cdaa51e0b7cd5af5167da072b0d64061b8f083d64d760ec06389953de8a7a`  
-		Last Modified: Mon, 14 Nov 2016 23:23:33 GMT  
-		Size: 380.0 B  
+	-	`sha256:141078e8525e1b4946d4dac7fb8651dab6d9af15e8b1908a1dcf1f0f01d74b13`  
+		Last Modified: Mon, 14 Nov 2016 23:24:30 GMT  
+		Size: 379.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18d81f107f154c41b8dad05e10afa4bb8947ff93882638f0d0e20c084775c907`  
-		Last Modified: Mon, 14 Nov 2016 23:23:34 GMT  
-		Size: 1.2 KB (1203 bytes)  
+	-	`sha256:577f9c0ea931e8c02ae0a23c8fa940b7600394946119986078e1de1b2bc3b054`  
+		Last Modified: Mon, 14 Nov 2016 23:24:30 GMT  
+		Size: 1.2 KB (1205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
