@@ -1,17 +1,17 @@
-# `openjdk:9-b143-jre`
+# `openjdk:9-b144-jre`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4d337c4ac9d8edb497ac7c8c634cea74402414f2901dae40253f26626ee56ef3`
-- Created: `2016-11-08T18:55:35.662771117Z`
+- Image ID: `sha256:512ebd18d4348b5ede0eddeb8f5e5acf673a413bd38f48a978384dfd195626f8`
+- Created: `2016-11-14T22:52:18.622010695Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64`
-  - `JAVA_VERSION=9~b143`
-  - `JAVA_DEBIAN_VERSION=9~b143-2`
+  - `JAVA_VERSION=9~b144`
+  - `JAVA_DEBIAN_VERSION=9~b144-1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -63,11 +63,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/adduser/3.115/
 - https://sources.debian.net/src/adduser/3.115/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `apparmor=2.10.95-5`
+### `dpkg` source package: `apparmor=2.10.95-6`
 
 Binary Packages:
 
-- `libapparmor1:amd64=2.10.95-5`
+- `libapparmor1:amd64=2.10.95-6`
 
 Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 
@@ -80,16 +80,16 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apparmor=2.10.95-5
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.10.95-5.dsc' apparmor_2.10.95-5.dsc 3176 SHA256:ef35a3219e401078e10f6d3615c541b2e269b3fe46f73fa0f36436f8d79b5d42
+$ apt-get source -qq --print-uris apparmor=2.10.95-6
+'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.10.95-6.dsc' apparmor_2.10.95-6.dsc 3176 SHA256:8ab037358c16f9c0cfc4b2241203ad8f84065da97579e1205a423dbdbd684a1b
 'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.10.95-5.debian.tar.xz' apparmor_2.10.95-5.debian.tar.xz 100276 SHA256:cd4cb464314bcd0c5feecb3a8dbf83541f56c390814cb894f08671953b7aabc0
+'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.10.95-6.debian.tar.xz' apparmor_2.10.95-6.debian.tar.xz 100196 SHA256:da3e356e6af743b786fd0285cff91d41df242a41218188ec8960745ed7fd1899
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/apparmor/2.10.95-5/
-- https://sources.debian.net/src/apparmor/2.10.95-5/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/apparmor/2.10.95-6/
+- https://sources.debian.net/src/apparmor/2.10.95-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apt=1.3.1`
 
@@ -1691,11 +1691,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libxext/2:1.3.3-1/
 - https://sources.debian.net/src/libxext/2:1.3.3-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libxi=2:1.7.6-1`
+### `dpkg` source package: `libxi=2:1.7.6-1.1`
 
 Binary Packages:
 
-- `libxi6:amd64=2:1.7.6-1`
+- `libxi6:amd64=2:1.7.6-1.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1704,16 +1704,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxi=2:1.7.6-1
-'http://deb.debian.org/debian/pool/main/libx/libxi/libxi_1.7.6-1.dsc' libxi_1.7.6-1.dsc 2269 SHA256:b0d205346b418dbfbdd36dadc164e6050bcfa5cd691f190c9aa0ac91d2a0e5e8
+$ apt-get source -qq --print-uris libxi=2:1.7.6-1.1
+'http://deb.debian.org/debian/pool/main/libx/libxi/libxi_1.7.6-1.1.dsc' libxi_1.7.6-1.1.dsc 2283 SHA256:5cb72b982888c859cac81ae76a3dfef9f7994547144de8b6e50834c7ace1c575
 'http://deb.debian.org/debian/pool/main/libx/libxi/libxi_1.7.6.orig.tar.gz' libxi_1.7.6.orig.tar.gz 601628 SHA256:4e88fa7decd287e58140ea72238f8d54e4791de302938c83695fc0c9ac102b7e
-'http://deb.debian.org/debian/pool/main/libx/libxi/libxi_1.7.6-1.diff.gz' libxi_1.7.6-1.diff.gz 10149 SHA256:ae61f11cd06263d7a4caf25835fdd8ba4e8ad319781acb1e0cd177eab82ce8a7
+'http://deb.debian.org/debian/pool/main/libx/libxi/libxi_1.7.6-1.1.diff.gz' libxi_1.7.6-1.1.diff.gz 10784 SHA256:31049376865c3e96585f56613da52cba4b7be975faf4b87c31d14df86dea19b6
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libxi/2:1.7.6-1/
-- https://sources.debian.net/src/libxi/2:1.7.6-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxi/2:1.7.6-1.1/
+- https://sources.debian.net/src/libxi/2:1.7.6-1.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxrender=1:0.9.9-2`
 
@@ -2001,11 +2001,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nss/2:3.26.2-1/
 - https://sources.debian.net/src/nss/2:3.26.2-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openjdk-9=9~b143-2`
+### `dpkg` source package: `openjdk-9=9~b144-1`
 
 Binary Packages:
 
-- `openjdk-9-jre-headless:amd64=9~b143-2`
+- `openjdk-9-jre-headless:amd64=9~b144-1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 
@@ -2014,8 +2014,19 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 - `LGPL-2`
 - `LGPL-2-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openjdk-9=9~b144-1
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b144-1.dsc' openjdk-9_9~b144-1.dsc 4462 SHA256:fb3d745d7e78442c53bf54029ac38d4ac7fb09189b7cb85bbfaf0a4d9a2f956a
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b144.orig.tar.gz' openjdk-9_9~b144.orig.tar.gz 72525905 SHA256:625442d8b4606190b699a31e1a17a517745713c2556a0c0f16152c6949666dee
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b144-1.debian.tar.xz' openjdk-9_9~b144-1.debian.tar.xz 186240 SHA256:921dc825221c732457abe397b769d686f4964a4ba8a6d03f38f47600c9e45f5d
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/openjdk-9/9~b144-1/
+- https://sources.debian.net/src/openjdk-9/9~b144-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.42+dfsg-2`
 
