@@ -1,16 +1,16 @@
-# `pypy:2-5.4.1-slim`
+# `pypy:2-5.6.0-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:85b3c918836b57b3eca873c2f9eacfd644babf51cd5e2ac27a52adba5daccc5b`
-- Created: `2016-11-08T19:47:06.799981874Z`
+- Image ID: `sha256:4067e4f70df5e449348b5c263710864e7db99f130de00392c6e9d4ccb4b2d8dc`
+- Created: `2016-11-15T01:36:14.216097135Z`
 - Arch: `linux`/`amd64`
 - Command: `["pypy"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `PYPY_VERSION=5.4.1`
-  - `PYPY_SHA256SUM=9c85319778224d7fb0c348f55fe3fada15bb579c5f3870a13ad63b42a737dd72`
+  - `PYPY_VERSION=5.6.0`
+  - `PYPY_SHA256SUM=aad55328cb0673a60b2633dcc3c36cf452917ac906b577eb3aed5876a7666fca`
   - `PYTHON_PIP_VERSION=9.0.1`
 
 ## `dpkg` (`.deb`-based packages)
