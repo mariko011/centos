@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:819c6fff05724dc9aab13d97976b8ccedc3109a8f778f4a51f01bc217b6a74a7`
-- Created: `2016-11-08T18:57:48.06788161Z`
+- Image ID: `sha256:b5782481efe9b62b1eea16ec8748d2ca577603e5600a60c29521910c38233718`
+- Created: `2016-11-14T22:46:36.319925168Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["cassandra","-f"]`
@@ -1243,6 +1243,30 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/java-common/0.52/
 - https://sources.debian.net/src/java-common/0.52/debian/copyright (for direct copyright/license information)
+
+### `dpkg` source package: `jemalloc=3.6.0-3`
+
+Binary Packages:
+
+- `libjemalloc1=3.6.0-3`
+
+Licenses: (parsed from: `/usr/share/doc/libjemalloc1/copyright`)
+
+- `BSD-3-Clause`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris jemalloc=3.6.0-3
+'http://deb.debian.org/debian/pool/main/j/jemalloc/jemalloc_3.6.0-3.dsc' jemalloc_3.6.0-3.dsc 1379 SHA256:e23bcf280dab72eb0ff605363401d909fb8617fe3dd1211e89cb7062fe85523c
+'http://deb.debian.org/debian/pool/main/j/jemalloc/jemalloc_3.6.0.orig.tar.bz2' jemalloc_3.6.0.orig.tar.bz2 338964 SHA256:e16c2159dd3c81ca2dc3b5c9ef0d43e1f2f45b04548f42db12e7c12d7bdf84fe
+'http://deb.debian.org/debian/pool/main/j/jemalloc/jemalloc_3.6.0-3.debian.tar.xz' jemalloc_3.6.0-3.debian.tar.xz 10328 SHA256:a5203e66f100894c95498519dd4720211235cacf0d9a5479da8d05f1639ee676
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/jemalloc/3.6.0-3/
+- https://sources.debian.net/src/jemalloc/3.6.0-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `keyutils=1.5.9-5`
 
