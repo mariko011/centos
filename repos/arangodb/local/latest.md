@@ -1,4 +1,4 @@
-# `arangodb:3.0`
+# `arangodb:latest`
 
 ## Docker Metadata
 
