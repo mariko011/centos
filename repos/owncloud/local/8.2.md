@@ -1,9 +1,9 @@
-# `owncloud:8.2.8-apache`
+# `owncloud:8.2.9-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:26aa67704d577aacb441d1b5958ae052903d69b7d0adf3bcd535b30a452fdbb7`
-- Created: `2016-11-10T07:16:20.264127787Z`
+- Image ID: `sha256:78b802c68133c9927adbccae0a3da8f729980fd08d1d24b0c5fc03f63a8aa7fc`
+- Created: `2016-11-15T02:00:21.632033302Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["apache2-foreground"]`
@@ -16,12 +16,12 @@
   - `PHP_EXTRA_BUILD_DEPS=apache2-dev`
   - `PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.27`
-  - `PHP_URL=https://secure.php.net/get/php-5.6.27.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.27.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=16eb544498339d1d855292826e2e547ab01a31600141094959073e5e10e93ab5`
-  - `PHP_MD5=9ce6efc96d5ab81ef808f8ed6b1f242d`
-  - `OWNCLOUD_VERSION=8.2.8`
+  - `PHP_VERSION=5.6.28`
+  - `PHP_URL=https://secure.php.net/get/php-5.6.28.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.28.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=07187ba2870f89cef334cd2ad6cb801aeec5eaf283da0293a9a6be75d6786d11`
+  - `PHP_MD5=1e01c66b2e67ab3b56a6180ee560fe4c`
+  - `OWNCLOUD_VERSION=8.2.9`
 
 ## `dpkg` (`.deb`-based packages)
 
