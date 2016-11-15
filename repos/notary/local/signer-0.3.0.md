@@ -1,4 +1,4 @@
-# `notary:signer`
+# `notary:signer-0.3.0`
 
 ## Docker Metadata
 
