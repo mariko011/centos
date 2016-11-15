@@ -1,9 +1,9 @@
-# `piwik:2.17.0`
+# `piwik:2.17.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8148c75d6dbe3935485aabd4b10c2bb5ffeb98955100944f27329aa736f92702`
-- Created: `2016-11-09T00:17:02.836138692Z`
+- Image ID: `sha256:73d3a312fb6825dfafef77682c01492ec8cf334f62b195907fd344e1093ac47b`
+- Created: `2016-11-15T01:18:05.771982549Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["php-fpm"]`
@@ -13,12 +13,12 @@
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.27`
-  - `PHP_URL=https://secure.php.net/get/php-5.6.27.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.27.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=16eb544498339d1d855292826e2e547ab01a31600141094959073e5e10e93ab5`
-  - `PHP_MD5=9ce6efc96d5ab81ef808f8ed6b1f242d`
-  - `PIWIK_VERSION=2.17.0`
+  - `PHP_VERSION=5.6.28`
+  - `PHP_URL=https://secure.php.net/get/php-5.6.28.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.28.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=07187ba2870f89cef334cd2ad6cb801aeec5eaf283da0293a9a6be75d6786d11`
+  - `PHP_MD5=1e01c66b2e67ab3b56a6180ee560fe4c`
+  - `PIWIK_VERSION=2.17.1`
 
 ## `dpkg` (`.deb`-based packages)
 
