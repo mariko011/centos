@@ -1,7 +1,7 @@
 ## `pypy:2-slim`
 
 ```console
-$ docker pull pypy@sha256:bb554120536a4e16ecc10c749bff342ac7be9d403fcef9099d9306838488249f
+$ docker pull pypy@sha256:65529e6d066bc3a822e4802e28e99e3d3ccafcae61a2e11dd3976d2ec5242d97
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull pypy@sha256:bb554120536a4e16ecc10c749bff342ac7be9d403fcef9099d9306
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.8 MB (82812307 bytes)**  
+-	Total Size: **83.2 MB (83207455 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:85b3c918836b57b3eca873c2f9eacfd644babf51cd5e2ac27a52adba5daccc5b`
+-	Image ID: `sha256:4067e4f70df5e449348b5c263710864e7db99f130de00392c6e9d4ccb4b2d8dc`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
@@ -27,15 +27,15 @@ ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:
 ENV LANG=C.UTF-8
 # Tue, 08 Nov 2016 19:46:36 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libexpat1 		libffi6 		libgdbm3 		libsqlite3-0 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 08 Nov 2016 19:46:37 GMT
-ENV PYPY_VERSION=5.4.1
-# Tue, 08 Nov 2016 19:46:37 GMT
-ENV PYPY_SHA256SUM=9c85319778224d7fb0c348f55fe3fada15bb579c5f3870a13ad63b42a737dd72
-# Tue, 08 Nov 2016 19:46:38 GMT
+# Tue, 15 Nov 2016 01:35:41 GMT
+ENV PYPY_VERSION=5.6.0
+# Tue, 15 Nov 2016 01:35:42 GMT
+ENV PYPY_SHA256SUM=aad55328cb0673a60b2633dcc3c36cf452917ac906b577eb3aed5876a7666fca
+# Tue, 15 Nov 2016 01:35:42 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Tue, 08 Nov 2016 19:47:06 GMT
+# Tue, 15 Nov 2016 01:36:13 GMT
 RUN set -ex 	&& fetchDeps=' 		bzip2 		wget 	' 	&& apt-get update && apt-get install -y $fetchDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 			&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	&& pip install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& apt-get purge -y --auto-remove $fetchDeps 	&& rm -rf ~/.cache
-# Tue, 08 Nov 2016 19:47:06 GMT
+# Tue, 15 Nov 2016 01:36:14 GMT
 CMD ["pypy"]
 ```
 
@@ -48,7 +48,7 @@ CMD ["pypy"]
 		Last Modified: Tue, 08 Nov 2016 19:52:05 GMT  
 		Size: 3.5 MB (3495227 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:36a9057f468e9abefc70e5d9c024cb6de0ea28506bcaa6b6341a39fa7ed83786`  
-		Last Modified: Tue, 08 Nov 2016 19:52:13 GMT  
-		Size: 28.0 MB (27960091 bytes)  
+	-	`sha256:068c0a366210caaca9c3cd5481201cb39d1e4ff635e3ca19decc5420735ed67d`  
+		Last Modified: Tue, 15 Nov 2016 01:37:49 GMT  
+		Size: 28.4 MB (28355239 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
