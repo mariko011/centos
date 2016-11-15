@@ -226,10 +226,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris binutils=2.27.51.20161108-1
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.27.51.20161108-1.dsc' binutils_2.27.51.20161108-1.dsc 5029 SHA256:2f6cf7aec3f15d83484f0e933d3aa422d1b7b841d69def5f5a0eb00a6990027a
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.27.51.20161108.orig.tar.gz' binutils_2.27.51.20161108.orig.tar.gz 32935186 SHA256:cbe24687c81b21646d4ad2ae4cd05f898d371ad6d60ee9aaf525847405aab128
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.27.51.20161108-1.diff.gz' binutils_2.27.51.20161108-1.diff.gz 87768 SHA256:c67a210ee560b7cbfc93935f41dd8667e773a7a2f452bad70e57e150df227c30
+'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.27.51.20161108-1.dsc' binutils_2.27.51.20161108-1.dsc 5029 SHA256:2f6cf7aec3f15d83484f0e933d3aa422d1b7b841d69def5f5a0eb00a6990027a
+'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.27.51.20161108.orig.tar.gz' binutils_2.27.51.20161108.orig.tar.gz 32935186 SHA256:cbe24687c81b21646d4ad2ae4cd05f898d371ad6d60ee9aaf525847405aab128
+'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.27.51.20161108-1.diff.gz' binutils_2.27.51.20161108-1.diff.gz 87768 SHA256:c67a210ee560b7cbfc93935f41dd8667e773a7a2f452bad70e57e150df227c30
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/binutils/2.27.51.20161108-1/
+- https://sources.debian.net/src/binutils/2.27.51.20161108-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `boot=1.3-18-2`
 
@@ -333,10 +338,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cairo=1.14.6-1.1
-'http://http.debian.net/debian/pool/main/c/cairo/cairo_1.14.6-1.1.dsc' cairo_1.14.6-1.1.dsc 3061 SHA256:644bf639e93ad4a4c3586149565c70f840767aa16e51be8ba8722f85e157a16a
-'http://http.debian.net/debian/pool/main/c/cairo/cairo_1.14.6.orig.tar.xz' cairo_1.14.6.orig.tar.xz 36040596 SHA256:613cb38447b76a93ff7235e17acd55a78b52ea84a9df128c3f2257f8eaa7b252
-'http://http.debian.net/debian/pool/main/c/cairo/cairo_1.14.6-1.1.debian.tar.xz' cairo_1.14.6-1.1.debian.tar.xz 28860 SHA256:ed4a884c2a0929dd57aa19a3961463c217221cc0370bc6b5a36a4fc9d7b81731
+'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.14.6-1.1.dsc' cairo_1.14.6-1.1.dsc 3061 SHA256:644bf639e93ad4a4c3586149565c70f840767aa16e51be8ba8722f85e157a16a
+'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.14.6.orig.tar.xz' cairo_1.14.6.orig.tar.xz 36040596 SHA256:613cb38447b76a93ff7235e17acd55a78b52ea84a9df128c3f2257f8eaa7b252
+'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.14.6-1.1.debian.tar.xz' cairo_1.14.6-1.1.debian.tar.xz 28860 SHA256:ed4a884c2a0929dd57aa19a3961463c217221cc0370bc6b5a36a4fc9d7b81731
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/cairo/1.14.6-1.1/
+- https://sources.debian.net/src/cairo/1.14.6-1.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cdbs=0.4.148`
 
@@ -1897,10 +1907,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libpng1.6=1.6.26-1
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.26-1.dsc' libpng1.6_1.6.26-1.dsc 2206 SHA256:74e796a08fa0f7daa20d416f52ea44527188f3d4cfa14523f1797be6731112f7
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.26.orig.tar.xz' libpng1.6_1.6.26.orig.tar.xz 983576 SHA256:266743a326986c3dbcee9d89b640595f6b16a293fd02b37d8c91348d317b73f9
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.26-1.debian.tar.xz' libpng1.6_1.6.26-1.debian.tar.xz 22072 SHA256:42edccfd98db984566529eaec59fa5d192f9d218ffad94d758eea54c48053765
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.26-1.dsc' libpng1.6_1.6.26-1.dsc 2206 SHA256:74e796a08fa0f7daa20d416f52ea44527188f3d4cfa14523f1797be6731112f7
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.26.orig.tar.xz' libpng1.6_1.6.26.orig.tar.xz 983576 SHA256:266743a326986c3dbcee9d89b640595f6b16a293fd02b37d8c91348d317b73f9
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.26-1.debian.tar.xz' libpng1.6_1.6.26-1.debian.tar.xz 22072 SHA256:42edccfd98db984566529eaec59fa5d192f9d218ffad94d758eea54c48053765
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libpng1.6/1.6.26-1/
+- https://sources.debian.net/src/libpng1.6/1.6.26-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpsl=0.14.0-1`
 
@@ -1938,19 +1953,8 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libselinux=2.6-1
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_2.6-1.dsc' libselinux_2.6-1.dsc 2135 SHA256:17d6c2166b2c38d6d05b268656bebc2489af0007c1c8f3649b4e1fa84859e4e4
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_2.6.orig.tar.gz' libselinux_2.6.orig.tar.gz 203119 SHA256:4ea2dde50665c202253ba5caac7738370ea0337c47b251ba981c60d24e1a118a
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_2.6-1.debian.tar.xz' libselinux_2.6-1.debian.tar.xz 23356 SHA256:abc10f65414347d82baf2f0aff8e18d038477e6d1cbad05698430564e92e2ff7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libselinux/2.6-1/
-- https://sources.debian.net/src/libselinux/2.6-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libsemanage=2.6-1`
 
@@ -2818,10 +2822,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris pango1.0=1.40.3-3
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.40.3-3.dsc' pango1.0_1.40.3-3.dsc 3201 SHA256:2dcddc7c25a0a7c83e4636a6aa68eb6c27b99d02c348ca6fd7a94502e73b9f7c
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.40.3.orig.tar.xz' pango1.0_1.40.3.orig.tar.xz 1061044 SHA256:abba8b5ce728520c3a0f1535eab19eac3c14aeef7faa5aded90017ceac2711d3
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.40.3-3.debian.tar.xz' pango1.0_1.40.3-3.debian.tar.xz 27372 SHA256:aca66bb3069d6a57d44d45a4986968c2a7ac8e43e8e84c32d66f26a1bd1c2ff0
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.3-3.dsc' pango1.0_1.40.3-3.dsc 3201 SHA256:2dcddc7c25a0a7c83e4636a6aa68eb6c27b99d02c348ca6fd7a94502e73b9f7c
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.3.orig.tar.xz' pango1.0_1.40.3.orig.tar.xz 1061044 SHA256:abba8b5ce728520c3a0f1535eab19eac3c14aeef7faa5aded90017ceac2711d3
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.3-3.debian.tar.xz' pango1.0_1.40.3-3.debian.tar.xz 27372 SHA256:aca66bb3069d6a57d44d45a4986968c2a7ac8e43e8e84c32d66f26a1bd1c2ff0
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/pango1.0/1.40.3-3/
+- https://sources.debian.net/src/pango1.0/1.40.3-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `patch=2.7.5-1`
 
