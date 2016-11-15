@@ -1,9 +1,9 @@
-# `mongo:3.4.0-rc2`
+# `mongo:3.4.0-rc3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fa47137ea200a85d9cd098bf869470236952dec1427252a56149fd13eed62af5`
-- Created: `2016-11-08T19:29:01.34803772Z`
+- Image ID: `sha256:d14a8bab0b3c7946a69e7e0230e09f73e608567fe2e5c0e8f30a1b022ff1f882`
+- Created: `2016-11-14T23:11:41.591879553Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["mongod"]`
@@ -11,5 +11,5 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.7`
   - `MONGO_MAJOR=testing`
-  - `MONGO_VERSION=3.4.0~rc2`
+  - `MONGO_VERSION=3.4.0~rc3`
   - `MONGO_PACKAGE=mongodb-org`
