@@ -1,9 +1,9 @@
-# `php:7.0.12-apache`
+# `php:7.0.13-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7dea5b089190f82df40aeb2716d9477a54211110f8bf5c472837813a5d9b9b71`
-- Created: `2016-11-08T23:45:23.199940121Z`
+- Image ID: `sha256:336e2be8a34336e577a47d34831a8ecf46db9dece2b21b63c2bcc63454d1c28b`
+- Created: `2016-11-15T00:04:25.736121454Z`
 - Arch: `linux`/`amd64`
 - Command: `["apache2-foreground"]`
 - Environment:
@@ -15,11 +15,11 @@
   - `PHP_EXTRA_BUILD_DEPS=apache2-dev`
   - `PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763`
-  - `PHP_VERSION=7.0.12`
-  - `PHP_URL=https://secure.php.net/get/php-7.0.12.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.12.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=f3d6c49e1c242e5995dec15e503fde996c327eb86cd7ec45c690e93c971b83ff`
-  - `PHP_MD5=bdcc4dbdac90c2a39422786653059f70`
+  - `PHP_VERSION=7.0.13`
+  - `PHP_URL=https://secure.php.net/get/php-7.0.13.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.13.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=357ba7f93975d7d836abed0852dc3ed96a988af539e87750613294cbee82f1bf`
+  - `PHP_MD5=eb117bf1d1efc99c522f132b265a3402`
 
 ## `dpkg` (`.deb`-based packages)
 

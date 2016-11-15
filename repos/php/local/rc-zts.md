@@ -1,9 +1,9 @@
-# `php:7.1.0RC5-zts`
+# `php:7.1.0RC6-zts`
 
 ## Docker Metadata
 
-- Image ID: `sha256:165f4e042280265d41e16a5acdaf19760e3f4820e56b8877aa7adfb6a7a5f4b5`
-- Created: `2016-11-09T00:15:07.431922284Z`
+- Image ID: `sha256:4ec9d34ca98aa5565f12309ab7bf5a9e78105f677dad48969cd04718c8287a21`
+- Created: `2016-11-14T23:49:46.618824477Z`
 - Arch: `linux`/`amd64`
 - Command: `["php","-a"]`
 - Environment:
@@ -12,11 +12,11 @@
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts`
   - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0`
-  - `PHP_VERSION=7.1.0RC5`
-  - `PHP_URL=http://downloads.php.net/~krakjoe/php-7.1.0RC5.tar.xz`
+  - `PHP_VERSION=7.1.0RC6`
+  - `PHP_URL=http://downloads.php.net/~krakjoe/php-7.1.0RC6.tar.xz`
   - `PHP_ASC_URL=`
-  - `PHP_SHA256=55a1b47cfa090760bb26438eb4faa7c62cd16eca4e527759e3941b38941f8f14`
-  - `PHP_MD5=1d195b0aeb63914a308fb215671445a5`
+  - `PHP_SHA256=3812b54ff84b32cb3750994088161e9c6455000499f4716b635b7c1e64a75a2c`
+  - `PHP_MD5=26bb2d5dc690b3463a0fea3d71fcf935`
 
 ## `dpkg` (`.deb`-based packages)
 

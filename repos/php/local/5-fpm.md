@@ -1,9 +1,9 @@
-# `php:5.6.27-fpm`
+# `php:5.6.28-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e151bc1bb5c3dbb1a0144b0fb0b99f79d28f17630ab2314f95b626a37f2ae880`
-- Created: `2016-11-08T23:30:13.327882146Z`
+- Image ID: `sha256:338acf3adb4c52cbe90926a83fdd78c7d5ad4344a5be279425565af6227d77f2`
+- Created: `2016-11-15T00:42:53.304015868Z`
 - Arch: `linux`/`amd64`
 - Command: `["php-fpm"]`
 - Environment:
@@ -12,11 +12,11 @@
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.27`
-  - `PHP_URL=https://secure.php.net/get/php-5.6.27.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.27.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=16eb544498339d1d855292826e2e547ab01a31600141094959073e5e10e93ab5`
-  - `PHP_MD5=9ce6efc96d5ab81ef808f8ed6b1f242d`
+  - `PHP_VERSION=5.6.28`
+  - `PHP_URL=https://secure.php.net/get/php-5.6.28.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.28.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=07187ba2870f89cef334cd2ad6cb801aeec5eaf283da0293a9a6be75d6786d11`
+  - `PHP_MD5=1e01c66b2e67ab3b56a6180ee560fe4c`
 
 ## `dpkg` (`.deb`-based packages)
 

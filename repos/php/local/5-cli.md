@@ -1,9 +1,9 @@
-# `php:5.6.27-cli`
+# `php:5.6.28-cli`
 
 ## Docker Metadata
 
-- Image ID: `sha256:519b76cf096b12f7c3de972d81483bc3efe95e1d88a50546a53a21b818765d89`
-- Created: `2016-11-08T23:20:32.216286458Z`
+- Image ID: `sha256:d252acd793d5b18016f3ebc901b1d16d9ced095bac98f3111138ffa1255e6a46`
+- Created: `2016-11-15T00:31:05.629129747Z`
 - Arch: `linux`/`amd64`
 - Command: `["php","-a"]`
 - Environment:
@@ -11,11 +11,11 @@
   - `PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.27`
-  - `PHP_URL=https://secure.php.net/get/php-5.6.27.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.27.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=16eb544498339d1d855292826e2e547ab01a31600141094959073e5e10e93ab5`
-  - `PHP_MD5=9ce6efc96d5ab81ef808f8ed6b1f242d`
+  - `PHP_VERSION=5.6.28`
+  - `PHP_URL=https://secure.php.net/get/php-5.6.28.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.28.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=07187ba2870f89cef334cd2ad6cb801aeec5eaf283da0293a9a6be75d6786d11`
+  - `PHP_MD5=1e01c66b2e67ab3b56a6180ee560fe4c`
 
 ## `dpkg` (`.deb`-based packages)
 

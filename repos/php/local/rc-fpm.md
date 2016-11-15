@@ -1,9 +1,9 @@
-# `php:7.1.0RC5-fpm`
+# `php:7.1.0RC6-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a305056aaae5707ffd6c07e21b12f2f6af456fc4a00fa3f2bbd6bdec9e873a58`
-- Created: `2016-11-09T00:10:06.487895943Z`
+- Image ID: `sha256:9b8d71df2d4d427d769b27ccfd7207b52e9f7e3e3d72f08a808e25e7f90d9fd6`
+- Created: `2016-11-14T23:41:14.271939703Z`
 - Arch: `linux`/`amd64`
 - Command: `["php-fpm"]`
 - Environment:
@@ -12,11 +12,11 @@
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data`
   - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0`
-  - `PHP_VERSION=7.1.0RC5`
-  - `PHP_URL=http://downloads.php.net/~krakjoe/php-7.1.0RC5.tar.xz`
+  - `PHP_VERSION=7.1.0RC6`
+  - `PHP_URL=http://downloads.php.net/~krakjoe/php-7.1.0RC6.tar.xz`
   - `PHP_ASC_URL=`
-  - `PHP_SHA256=55a1b47cfa090760bb26438eb4faa7c62cd16eca4e527759e3941b38941f8f14`
-  - `PHP_MD5=1d195b0aeb63914a308fb215671445a5`
+  - `PHP_SHA256=3812b54ff84b32cb3750994088161e9c6455000499f4716b635b7c1e64a75a2c`
+  - `PHP_MD5=26bb2d5dc690b3463a0fea3d71fcf935`
 
 ## `dpkg` (`.deb`-based packages)
 
