@@ -2,8 +2,10 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:11a5107645d4ecb36e75d933576f5cdb52358bef385eac2c2d2a91af44ad4ad7`
-- Created: `2016-08-15T21:46:15.78392612Z`
+- Image ID: `sha256:f623aaef07f0542f72d0a09a8817b1489622f6dc202dc6c5d3e846ba25d455d2`
+- Created: `2016-11-15T21:13:44.623467426Z`
 - Arch: `linux`/`amd64`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `DISTTAG=f24docker`
+  - `FGC=f24`
