@@ -2,13 +2,13 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a787c9ada648be03d7f39d9e44be72a90f7c1f69da7e067158352aad58002da8`
-- Created: `2016-11-10T03:21:13.01196Z`
+- Image ID: `sha256:cb8efccf3f59965415cb1b9c9c7600345807cac05255678cf336d1a262f1bff7`
+- Created: `2016-11-15T17:30:52.519879265Z`
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=19.1.5`
+  - `OTP_VERSION=19.1.6`
   - `ELIXIR_VERSION=v1.3.4`
   - `LANG=C.UTF-8`
 

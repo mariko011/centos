@@ -2,13 +2,13 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4b1c8e4ff2a7cb71acfa26e4ba47a96e2b2208d589d7396a3e365eca9f0d3152`
-- Created: `2016-11-10T09:11:32.760792803Z`
+- Image ID: `sha256:324bac0a11652d4caa20191553c588c052aac7566602a06b8c33161e78d88e58`
+- Created: `2016-11-15T17:29:40.771965703Z`
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=19.1.5`
+  - `OTP_VERSION=19.1.6`
   - `REBAR_VERSION=2.6.4`
   - `REBAR3_VERSION=3.3.2`
   - `ELIXIR_VERSION=v1.3.4`
