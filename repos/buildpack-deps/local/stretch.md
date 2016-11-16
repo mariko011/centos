@@ -909,18 +909,8 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/libdpkg
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.10
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.10.dsc' dpkg_1.18.10.dsc 2030 SHA256:c80b88e0b0293f0524978dc4526927b5e68bc0636c260c594ed1fb8c41859d91
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.10.tar.xz' dpkg_1.18.10.tar.xz 4645448 SHA256:025524da41ba18b183ff11e388eb8686f7cc58ee835ed7d48bd159c46a8b6dc5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dpkg/1.18.10/
-- https://sources.debian.net/src/dpkg/1.18.10/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `e2fsprogs=1.43.3-1`
 
@@ -1737,19 +1727,8 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`)
 - `LGPL-2.1+`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gtk+3.0=3.22.2-1
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.2-1.dsc' gtk+3.0_3.22.2-1.dsc 3916 SHA256:e0853fb78816a8f17e772db67006ab03d504641ea54a5e79ae1c40b8912c09ad
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.2.orig.tar.xz' gtk+3.0_3.22.2.orig.tar.xz 18257964 SHA256:2343dcaed2fc237ef718136ff4110fef7eb1ebfe178a9b064aa21cd74ecb6946
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.2-1.debian.tar.xz' gtk+3.0_3.22.2-1.debian.tar.xz 142848 SHA256:4214febc4446dc6fc9c89c736aadfa96acc2a7473b1e0a0be288383f6295c3b7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gtk+3.0/3.22.2-1/
-- https://sources.debian.net/src/gtk+3.0/3.22.2-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gts=0.7.6+darcs121130-1.2`
 

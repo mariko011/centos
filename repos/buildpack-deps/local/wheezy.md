@@ -3177,19 +3177,8 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mysql-5.5=5.5.52-0+deb7u1
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.52-0+deb7u1.dsc' mysql-5.5_5.5.52-0+deb7u1.dsc 2957 SHA256:d13dc66e734affe6aca83447fa0a41147512b2e52d2d7413681582deeada4f2a
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.52.orig.tar.gz' mysql-5.5_5.5.52.orig.tar.gz 21032776 SHA256:7820e13de6b3f4dadd255e12b2e9f3de43daf4507c218018c382d45aad8162fd
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.52-0+deb7u1.debian.tar.gz' mysql-5.5_5.5.52-0+deb7u1.debian.tar.gz 379231 SHA256:9009d0960892a0bd4c6ccce5afea5c138091deb44183fbd3d7f140d5e5ec617b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mysql-5.5/5.5.52-0+deb7u1/
-- https://sources.debian.net/src/mysql-5.5/5.5.52-0+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ncurses=5.9-10`
 
@@ -3633,19 +3622,8 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `Perl / BSD`
 - `Tcl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.1=9.1.23-0+deb7u1
-'http://security.debian.org/pool/updates/main/p/postgresql-9.1/postgresql-9.1_9.1.23-0+deb7u1.dsc' postgresql-9.1_9.1.23-0+deb7u1.dsc 3339 SHA256:22b36898a0d5875572a194e94caae9bb6fb1a53c9bd3fb38785f4f15c532fe66
-'http://security.debian.org/pool/updates/main/p/postgresql-9.1/postgresql-9.1_9.1.23.orig.tar.bz2' postgresql-9.1_9.1.23.orig.tar.bz2 15856178 SHA256:7f7471e8b3b369726f1c1df0e6a163dde63b6546c4bba985c1f36a574c75f6d5
-'http://security.debian.org/pool/updates/main/p/postgresql-9.1/postgresql-9.1_9.1.23-0+deb7u1.debian.tar.gz' postgresql-9.1_9.1.23-0+deb7u1.debian.tar.gz 41227 SHA256:7eed53b001fd6652813893003e020e3db636b1b80210a0c83023b3b8899a75bf
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/postgresql-9.1/9.1.23-0+deb7u1/
-- https://sources.debian.net/src/postgresql-9.1/9.1.23-0+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `procps=1:3.3.3-3`
 
