@@ -461,18 +461,8 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.10
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.10.dsc' dpkg_1.18.10.dsc 2030 SHA256:c80b88e0b0293f0524978dc4526927b5e68bc0636c260c594ed1fb8c41859d91
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.10.tar.xz' dpkg_1.18.10.tar.xz 4645448 SHA256:025524da41ba18b183ff11e388eb8686f7cc58ee835ed7d48bd159c46a8b6dc5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dpkg/1.18.10/
-- https://sources.debian.net/src/dpkg/1.18.10/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `e2fsprogs=1.43.3-1`
 
