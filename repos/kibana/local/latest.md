@@ -1,9 +1,9 @@
-# `kibana:5.0.0`
+# `kibana:5.0.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d5ebb286d47c9fdfaad27d9f23c27a4be02b2d7dc0be024d767874fe0cdcf5bb`
-- Created: `2016-11-08T20:32:50.336030929Z`
+- Image ID: `sha256:a13b5459ba2849cf894b6b6e6feba170bf07bfc70db68cf2971d56066df6af07`
+- Created: `2016-11-15T20:54:35.903960749Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["kibana"]`
@@ -12,4 +12,4 @@
   - `GOSU_VERSION=1.7`
   - `TINI_VERSION=v0.9.0`
   - `KIBANA_MAJOR=5.0`
-  - `KIBANA_VERSION=5.0.0`
+  - `KIBANA_VERSION=5.0.1`
