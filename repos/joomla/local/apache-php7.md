@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2e1d83659604722d901cfdbb3e9d1179def4568c68a2949a8253e6ee24785ece`
-- Created: `2016-11-10T06:53:01.936037373Z`
+- Image ID: `sha256:6e038b4651af122cb37b2f4cb202dc0d512e3d0c1cc7d27094842918a990a87a`
+- Created: `2016-11-15T18:02:18.923936177Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["apache2-foreground"]`
@@ -16,11 +16,11 @@
   - `PHP_EXTRA_BUILD_DEPS=apache2-dev`
   - `PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763`
-  - `PHP_VERSION=7.0.12`
-  - `PHP_URL=https://secure.php.net/get/php-7.0.12.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.12.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=f3d6c49e1c242e5995dec15e503fde996c327eb86cd7ec45c690e93c971b83ff`
-  - `PHP_MD5=bdcc4dbdac90c2a39422786653059f70`
+  - `PHP_VERSION=7.0.13`
+  - `PHP_URL=https://secure.php.net/get/php-7.0.13.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.13.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=357ba7f93975d7d836abed0852dc3ed96a988af539e87750613294cbee82f1bf`
+  - `PHP_MD5=eb117bf1d1efc99c522f132b265a3402`
   - `JOOMLA_VERSION=3.6.4`
   - `JOOMLA_SHA1=81ecad99727fd336f72756439666808eaabcc716`
 
