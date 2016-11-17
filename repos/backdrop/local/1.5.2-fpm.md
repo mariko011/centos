@@ -1,9 +1,9 @@
-# `backdrop:1.5.1-fpm`
+# `backdrop:1.5.2-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:39422d5c483dd25f3267aaf29e836a669c7b4934ed26c50706ad9c3cba42dd5e`
-- Created: `2016-11-10T02:55:37.355815451Z`
+- Image ID: `sha256:40df1a7426815ce83442f17dfc2243e24be55ca6f5b37141804508c6e051ed68`
+- Created: `2016-11-17T00:36:43.348058145Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["php-fpm"]`
@@ -13,13 +13,13 @@
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.27`
-  - `PHP_URL=https://secure.php.net/get/php-5.6.27.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.27.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=16eb544498339d1d855292826e2e547ab01a31600141094959073e5e10e93ab5`
-  - `PHP_MD5=9ce6efc96d5ab81ef808f8ed6b1f242d`
-  - `BACKDROP_VERSION=1.5.1`
-  - `BACKDROP_MD5=59481db12d492c9579807f670803fa20`
+  - `PHP_VERSION=5.6.28`
+  - `PHP_URL=https://secure.php.net/get/php-5.6.28.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.28.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=07187ba2870f89cef334cd2ad6cb801aeec5eaf283da0293a9a6be75d6786d11`
+  - `PHP_MD5=1e01c66b2e67ab3b56a6180ee560fe4c`
+  - `BACKDROP_VERSION=1.5.2`
+  - `BACKDROP_MD5=dbc73ec1841af1b824277a6c1c445250`
 
 ## `dpkg` (`.deb`-based packages)
 
