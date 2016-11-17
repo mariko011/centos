@@ -1,7 +1,7 @@
 ## `drupal:7-fpm`
 
 ```console
-$ docker pull drupal@sha256:d6127e140428d1df2a5f4ad0a84e3efe332b5808d3f8b46982e22e2e113af70d
+$ docker pull drupal@sha256:327db24f0f21e3f5f4c2e49b0fbd8909a0d0c5a3ce19505b5cd6d5a7df27d1ef
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull drupal@sha256:d6127e140428d1df2a5f4ad0a84e3efe332b5808d3f8b46982e2
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.7 MB (165674430 bytes)**  
+-	Total Size: **165.7 MB (165675734 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c89894402c8b4413eb2475961e8cdcb4e151f802116c65a80dd1d85244403799`
+-	Image ID: `sha256:6df70de0bbe82dbbfb44b705aa7acef6a59ff8755e88367378c670a7f19f43cc`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
@@ -59,11 +59,11 @@ CMD ["php-fpm"]
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
 # Tue, 15 Nov 2016 17:40:06 GMT
 WORKDIR /var/www/html
-# Tue, 15 Nov 2016 17:40:07 GMT
-ENV DRUPAL_VERSION=7.51
-# Tue, 15 Nov 2016 17:40:07 GMT
-ENV DRUPAL_MD5=49f82c1cac8e4bd4941ca160fcbee93d
-# Tue, 15 Nov 2016 17:40:10 GMT
+# Thu, 17 Nov 2016 21:42:26 GMT
+ENV DRUPAL_VERSION=7.52
+# Thu, 17 Nov 2016 21:42:27 GMT
+ENV DRUPAL_MD5=4963e68ca12918d3a3eae56054214191
+# Thu, 17 Nov 2016 21:42:29 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
@@ -108,7 +108,7 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Tue, 15 Nov 2016 17:40:25 GMT  
 		Size: 8.1 MB (8053218 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8a0ca8f1ca16b846deb5486fa83ac61a4e7cccb3eddbe80186b1533a9ce87fd7`  
-		Last Modified: Tue, 15 Nov 2016 17:40:24 GMT  
-		Size: 3.3 MB (3287022 bytes)  
+	-	`sha256:4d57cfe1726fda09479e6bf82c5b5a3968a3a8b53cd938a3f736efc1d3d6217e`  
+		Last Modified: Thu, 17 Nov 2016 21:46:59 GMT  
+		Size: 3.3 MB (3288326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
