@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:df4ba6fcd70ecf95a378c1caa59f4ff185f91398b8b7b06645dc5f70b036941a`
-- Created: `2016-10-13T21:13:35.693892952Z`
+- Image ID: `sha256:4956c568850feb5dda00d23d4e31d9632a063537e33c56f6165fd86fd292f26a`
+- Created: `2016-11-16T20:58:58.41079327Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -1046,12 +1046,12 @@ $ apt-get source -qq --print-uris sqlite3=3.14.1-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.14.1-1build1.debian.tar.xz' sqlite3_3.14.1-1build1.debian.tar.xz 16580 SHA256:0b32301f6f4a4477e5f69992fa11fc3c2db84118faf9c7b36265101ccb529d01
 ```
 
-### `dpkg` source package: `systemd=231-9git1`
+### `dpkg` source package: `systemd=231-9ubuntu1`
 
 Binary Packages:
 
-- `libsystemd0:amd64=231-9git1`
-- `libudev1:amd64=231-9git1`
+- `libsystemd0:amd64=231-9ubuntu1`
+- `libudev1:amd64=231-9ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1066,10 +1066,10 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=231-9git1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-9git1.dsc' systemd_231-9git1.dsc 4459 SHA256:e25d73cf929bd06557864a842bb81db9c209403a23dc2189f846cda0bbda66d2
+$ apt-get source -qq --print-uris systemd=231-9ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-9ubuntu1.dsc' systemd_231-9ubuntu1.dsc 4550 SHA256:41eb445545d3a11dca7bc790dcbd18e799045962ad27de8f844f0a57b4622a7c
 'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231.orig.tar.gz' systemd_231.orig.tar.gz 4381464 SHA256:899733ad6c157cedbb89aec4efe3bc824dcfd65a1d6f6bebc7b043f7924e39b4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-9git1.debian.tar.xz' systemd_231-9git1.debian.tar.xz 151716 SHA256:4184b7cd6c9bc50efbe97d86c203d50b3443c6344e1768acd6efd1faf37d8eb5
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-9ubuntu1.debian.tar.xz' systemd_231-9ubuntu1.debian.tar.xz 152384 SHA256:c58982e666e7a39aa1b605c590e53bc1ad3b84694f4a39f9ffc37d5ae5105e13
 ```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`
@@ -1111,11 +1111,11 @@ $ apt-get source -qq --print-uris tar=1.29b-1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.29b-1.debian.tar.xz' tar_1.29b-1.debian.tar.xz 27992 SHA256:6f7570040cdc982ec61a64fa05701cde9826594d0f1a3a60827c31a9b48ccd19
 ```
 
-### `dpkg` source package: `tzdata=2016g-1`
+### `dpkg` source package: `tzdata=2016h-0ubuntu0.16.10`
 
 Binary Packages:
 
-- `tzdata=2016g-1`
+- `tzdata=2016h-0ubuntu0.16.10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1124,10 +1124,10 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2016g-1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016g-1.dsc' tzdata_2016g-1.dsc 2138 SHA256:1747bf9b3f0de5060a8f983490bc617425beb4fc06d03ae43317bd206b77dc8a
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016g.orig.tar.gz' tzdata_2016g.orig.tar.gz 316669 SHA256:3c7137b2bc47323b0de47b77786bacf81ed503d4b2c693ff8ada2fbd1281ebd1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016g-1.debian.tar.xz' tzdata_2016g-1.debian.tar.xz 100132 SHA256:e9c1d902baa31ea17297ad684cbf2fa4c090c14a57754341dcc4e6527686d31b
+$ apt-get source -qq --print-uris tzdata=2016h-0ubuntu0.16.10
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h-0ubuntu0.16.10.dsc' tzdata_2016h-0ubuntu0.16.10.dsc 2104 SHA256:645d8aa5dd2f11304c80a418558ea1332f2d30edbd03273c7440f8b63cde0540
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h.orig.tar.gz' tzdata_2016h.orig.tar.gz 318714 SHA256:da1b74fc2dec2ce8b64948dafb0bfc2f923c830d421a7ae4d016226135697a64
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h-0ubuntu0.16.10.debian.tar.xz' tzdata_2016h-0ubuntu0.16.10.debian.tar.xz 100324 SHA256:0028b5c0dbd04ec3ae116ca9d656b0d1b675d49fa9c630344907099052b5d6ee
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2016.09.19`

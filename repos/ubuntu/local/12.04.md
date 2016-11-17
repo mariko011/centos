@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e216a057b1cb1efc11f8a268f37ef62083e70b1b38323ba252e25ac88904a7e8`
-- Created: `2016-09-26T21:25:51.86229662Z`
+- Image ID: `sha256:aefa163f7a7ed2324292a397eff927a9309552783f68cae04cced508a0f527cd`
+- Created: `2016-11-16T20:57:29.39088701Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -259,18 +259,24 @@ $ apt-get source -qq --print-uris db=5.1.25-11build1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/db/db_5.1.25-11build1.debian.tar.gz' db_5.1.25-11build1.debian.tar.gz 28673 SHA256:24b18acd12cafb07d8bc47ff286b818157d4fca7dab961db4abc8e4c412f61a3
 ```
 
-### `dpkg` source package: `dbus=1.4.18-1ubuntu1.7`
+### `dpkg` source package: `dbus=1.4.18-1ubuntu1.8`
 
 Binary Packages:
 
-- `libdbus-1-3:amd64=1.4.18-1ubuntu1.7`
+- `libdbus-1-3:amd64=1.4.18-1ubuntu1.8`
 
 Licenses: (parsed from: `/usr/share/doc/libdbus-1-3/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris dbus=1.4.18-1ubuntu1.8
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.4.18-1ubuntu1.8.dsc' dbus_1.4.18-1ubuntu1.8.dsc 2614 SHA256:eed01acdfbe93b77f11afe171c18253935d9de27d615e76957573666801524a9
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.4.18.orig.tar.gz' dbus_1.4.18.orig.tar.gz 1893155 SHA256:b5e0c3bd37fa0ca5e86e8d17c375d754de6cd5c1d46d5f2158a36ddd51de18cf
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.4.18-1ubuntu1.8.debian.tar.gz' dbus_1.4.18-1ubuntu1.8.debian.tar.gz 66219 SHA256:11ecfd9d01fc4b5417a984b9ec8f1e35ea501a39e50c9661c9cc42ba66f54741
+```
 
 ### `dpkg` source package: `debconf=1.5.42ubuntu1`
 
@@ -1240,18 +1246,24 @@ $ apt-get source -qq --print-uris tar=1.26-4ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.26-4ubuntu1.debian.tar.gz' tar_1.26-4ubuntu1.debian.tar.gz 33205 SHA256:9b7d9b3b2b178782d60b1bda8eb0eae77cf6432178a6d970e481cdc9e71eb059
 ```
 
-### `dpkg` source package: `tzdata=2016f-0ubuntu0.12.04`
+### `dpkg` source package: `tzdata=2016h-0ubuntu0.12.04`
 
 Binary Packages:
 
-- `tzdata=2016f-0ubuntu0.12.04`
+- `tzdata=2016h-0ubuntu0.12.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2016h-0ubuntu0.12.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h-0ubuntu0.12.04.dsc' tzdata_2016h-0ubuntu0.12.04.dsc 2008 SHA256:979902428762069e4ad2c8e7b617e2684a3db993821d8fe0fb0945ff92ecbc93
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h.orig.tar.gz' tzdata_2016h.orig.tar.gz 318714 SHA256:da1b74fc2dec2ce8b64948dafb0bfc2f923c830d421a7ae4d016226135697a64
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h-0ubuntu0.12.04.debian.tar.xz' tzdata_2016h-0ubuntu0.12.04.debian.tar.xz 101464 SHA256:58c288f4d299feb77ef8c6c6746bb97056bdf730084a1b47ec1b893a1539e649
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2011.11.21.1`
 

@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f2d8ce9fa988ed844dda693fe260b9afd393b9a65b647aa02f62d6eecdb7b635`
-- Created: `2016-09-26T21:26:09.229860896Z`
+- Image ID: `sha256:4d44acee901c27c707bce645738b25616ea821bcfcedb7fd25e0a4c7e42297a4`
+- Created: `2016-11-16T20:57:54.170783313Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -49,22 +49,27 @@ $ apt-get source -qq --print-uris adduser=3.113+nmu3ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.113+nmu3ubuntu3.tar.gz' adduser_3.113+nmu3ubuntu3.tar.gz 358527 SHA256:6126a4e8db7aa1c05780405ce5fb0225a4d5909bbb2a7bf75148ec8d4c4e239c
 ```
 
-### `dpkg` source package: `apt=1.0.1ubuntu2.14`
+### `dpkg` source package: `apt=1.0.1ubuntu2.15`
 
 Binary Packages:
 
-- `apt=1.0.1ubuntu2.14`
-- `apt-utils=1.0.1ubuntu2.14`
-- `libapt-inst1.5:amd64=1.0.1ubuntu2.14`
-- `libapt-pkg4.12:amd64=1.0.1ubuntu2.14`
+- `apt=1.0.1ubuntu2.15`
+- `apt-utils=1.0.1ubuntu2.15`
+- `libapt-inst1.5:amd64=1.0.1ubuntu2.15`
+- `libapt-pkg4.12:amd64=1.0.1ubuntu2.15`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/apt-utils/copyright`, `/usr/share/doc/libapt-inst1.5/copyright`, `/usr/share/doc/libapt-pkg4.12/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=1.0.1ubuntu2.15
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.15.dsc' apt_1.0.1ubuntu2.15.dsc 2461 SHA256:d6ed6382957e9993b8466d20fc2b231cf9328c073ea670a7e5b859b9315fde62
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.15.tar.xz' apt_1.0.1ubuntu2.15.tar.xz 1781580 SHA256:d034fc6a361feac817223c9ed75f3d5fb87a8019666d81100fb524bba7d97c6d
+```
 
 ### `dpkg` source package: `attr=1:2.4.47-1ubuntu1`
 
@@ -359,18 +364,24 @@ $ apt-get source -qq --print-uris db5.3=5.3.28-3ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-3ubuntu3.debian.tar.gz' db5.3_5.3.28-3ubuntu3.debian.tar.gz 31731 SHA256:5d95c5c9d64931463cbf5d525bd9e874ab985304a45e9b585dfe8218e2ead209
 ```
 
-### `dpkg` source package: `dbus=1.6.18-0ubuntu4.3`
+### `dpkg` source package: `dbus=1.6.18-0ubuntu4.4`
 
 Binary Packages:
 
-- `libdbus-1-3:amd64=1.6.18-0ubuntu4.3`
+- `libdbus-1-3:amd64=1.6.18-0ubuntu4.4`
 
 Licenses: (parsed from: `/usr/share/doc/libdbus-1-3/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris dbus=1.6.18-0ubuntu4.4
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18-0ubuntu4.4.dsc' dbus_1.6.18-0ubuntu4.4.dsc 2671 SHA256:8984675882f3b45c0fbf7a838392782509495907c6833a12aabfdaa19ce8bc7b
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18.orig.tar.gz' dbus_1.6.18.orig.tar.gz 1916553 SHA256:7085a0895a9eb11a952394cdbea6d8b4358e17cb991fed0e8fb85e2b9e686dcd
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18-0ubuntu4.4.debian.tar.gz' dbus_1.6.18-0ubuntu4.4.debian.tar.gz 82808 SHA256:eed67c2dd9ffd5c7a8f97e7365a38a840fc37747d1a5335829c7a595ca4710ad
+```
 
 ### `dpkg` source package: `debconf=1.5.51ubuntu2`
 
@@ -889,19 +900,25 @@ $ apt-get source -qq --print-uris iputils=3:20121221-4ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iputils/iputils_20121221-4ubuntu1.1.debian.tar.gz' iputils_20121221-4ubuntu1.1.debian.tar.gz 16143 SHA256:4eb3ca79e68dfc5f5e66df7be3113c230168fbca2420da232adadc6475056c6a
 ```
 
-### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.6`
+### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.7`
 
 Binary Packages:
 
-- `isc-dhcp-client=4.2.4-7ubuntu12.6`
-- `isc-dhcp-common=4.2.4-7ubuntu12.6`
+- `isc-dhcp-client=4.2.4-7ubuntu12.7`
+- `isc-dhcp-common=4.2.4-7ubuntu12.7`
 
 Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/doc/isc-dhcp-common/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris isc-dhcp=4.2.4-7ubuntu12.7
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.7.dsc' isc-dhcp_4.2.4-7ubuntu12.7.dsc 2806 SHA256:0bffebc1f6d3002dd955fb8bfaeb9bb40a0aaeda2d16093122951222f2fc1aa0
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.7.debian.tar.xz' isc-dhcp_4.2.4-7ubuntu12.7.debian.tar.xz 108332 SHA256:2f5ffdb3a552bf131cb3ec72d48decc5f58febf308ac51cb46d258abfd8c190e
+```
 
 ### `dpkg` source package: `json-c=0.11-3ubuntu1.2`
 
@@ -1805,18 +1822,24 @@ $ apt-get source -qq --print-uris newt=0.52.15-2ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/n/newt/newt_0.52.15-2ubuntu5.debian.tar.gz' newt_0.52.15-2ubuntu5.debian.tar.gz 51483 SHA256:3fcff25cd0f6f6e657ce27ec3cc3c10f92be86acb387d32b6fd91822db514a4b
 ```
 
-### `dpkg` source package: `ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.8`
+### `dpkg` source package: `ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.10`
 
 Binary Packages:
 
-- `ntpdate=1:4.2.6.p5+dfsg-3ubuntu2.14.04.8`
+- `ntpdate=1:4.2.6.p5+dfsg-3ubuntu2.14.04.10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.10
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.dsc' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.dsc 2371 SHA256:e37b5b5f3a508f5fd0b8b5224ff303a37e51c116b9d88e73d0848872480fc543
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg.orig.tar.gz' ntp_4.2.6.p5+dfsg.orig.tar.gz 4111997 SHA256:17f0b63e7e27de5cc999a4afdb96b2dbdf76c75181fca50e2395e49e5773dfc9
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.debian.tar.gz' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.debian.tar.gz 147591 SHA256:4097803a1422a5c6fa5381e496c35cb2306988c8d48dbd9136a8c31b55208451
+```
 
 ### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.21`
 
@@ -2226,18 +2249,24 @@ $ apt-get source -qq --print-uris sqlite3=3.8.2-1ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.8.2-1ubuntu2.1.debian.tar.gz' sqlite3_3.8.2-1ubuntu2.1.debian.tar.gz 24599 SHA256:80bc6b9e2c4e5b064507b9a03df4f3f786c7246831ad5d5309cdc178ceacfb26
 ```
 
-### `dpkg` source package: `sudo=1.8.9p5-1ubuntu1.2`
+### `dpkg` source package: `sudo=1.8.9p5-1ubuntu1.3`
 
 Binary Packages:
 
-- `sudo=1.8.9p5-1ubuntu1.2`
+- `sudo=1.8.9p5-1ubuntu1.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris sudo=1.8.9p5-1ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.3.dsc' sudo_1.8.9p5-1ubuntu1.3.dsc 2032 SHA256:629845f03bef3c3c2e886561e47b0ca7bbf366a5301f29170df10ee82a4a2855
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5.orig.tar.gz' sudo_1.8.9p5.orig.tar.gz 2179066 SHA256:bc9d5c96de5f8b4d2b014f87a37870aef60d2891c869202454069150a21a5c21
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.3.debian.tar.xz' sudo_1.8.9p5-1ubuntu1.3.debian.tar.xz 33260 SHA256:bae36c26cf8a5f171035b17087f06f23bd44b510273e9c7f1f54dfb147d67850
+```
 
 ### `dpkg` source package: `systemd=204-5ubuntu20.19`
 
@@ -2305,18 +2334,24 @@ $ apt-get source -qq --print-uris tar=1.27.1-1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.27.1-1.debian.tar.xz' tar_1.27.1-1.debian.tar.xz 19540 SHA256:fea78ca36ff59f3fe84c060adf039283b1b8238ef9ce3428e85fe04c4812815c
 ```
 
-### `dpkg` source package: `tzdata=2016f-0ubuntu0.14.04`
+### `dpkg` source package: `tzdata=2016h-0ubuntu0.14.04`
 
 Binary Packages:
 
-- `tzdata=2016f-0ubuntu0.14.04`
+- `tzdata=2016h-0ubuntu0.14.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2016h-0ubuntu0.14.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h-0ubuntu0.14.04.dsc' tzdata_2016h-0ubuntu0.14.04.dsc 2048 SHA256:734a5f544c55a71c4464da0e523e86fe70182244904ac44aba957202ed4df29c
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h.orig.tar.gz' tzdata_2016h.orig.tar.gz 318714 SHA256:da1b74fc2dec2ce8b64948dafb0bfc2f923c830d421a7ae4d016226135697a64
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h-0ubuntu0.14.04.debian.tar.xz' tzdata_2016h-0ubuntu0.14.04.debian.tar.xz 100444 SHA256:59709bb8abbb149be2e5a0187b5ea7e51f9a4fd4adccb6c309b88a9255340d6d
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 
