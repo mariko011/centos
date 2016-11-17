@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0d4a564bd5d1fa830ddb372a3d6537bf35fd4d6e60ff50c398f34876d017661c`
-- Created: `2016-10-14T00:30:39.051595581Z`
+- Image ID: `sha256:da630ac0e699ed198e168d255a4e1e987a2031375c84d69995bdacbe3bba3905`
+- Created: `2016-11-17T01:11:41.823566682Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
 - Command: `["bash"]`
@@ -52,11 +52,11 @@ $ apt-get source -qq --print-uris adduser=3.113+nmu3ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.113+nmu3ubuntu4.tar.gz' adduser_3.113+nmu3ubuntu4.tar.gz 367980 SHA256:6e4d44c8388b9ba85fc175fa4a48ed43bf6500913c2c631fda0e4419ae63c65a
 ```
 
-### `dpkg` source package: `apparmor=2.10.95-0ubuntu2.2`
+### `dpkg` source package: `apparmor=2.10.95-0ubuntu2.5`
 
 Binary Packages:
 
-- `libapparmor1:amd64=2.10.95-0ubuntu2.2`
+- `libapparmor1:amd64=2.10.95-0ubuntu2.5`
 
 Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 
@@ -66,8 +66,14 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.5
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.5.dsc' apparmor_2.10.95-0ubuntu2.5.dsc 3252 SHA256:d0df28b367aecd5cbd86c5c89cc9e8fc4e44a3cee348b0dc4acbec623bb9c7af
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.5.debian.tar.xz' apparmor_2.10.95-0ubuntu2.5.debian.tar.xz 94420 SHA256:e24893c41b4bc0e0b63f1aaa649ab99a853a5c2959fefb787ab2968fd221040f
+```
 
 ### `dpkg` source package: `apr-util=1.5.4-1build1`
 
@@ -109,20 +115,25 @@ $ apt-get source -qq --print-uris apr=1.5.2-3
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.5.2-3.debian.tar.xz' apr_1.5.2-3.debian.tar.xz 18572 SHA256:442ffb9a7225cf405fe7a2b4a4624543fcb93e6f14cccf22acd57916cfa8348d
 ```
 
-### `dpkg` source package: `apt=1.2.12~ubuntu16.04.1`
+### `dpkg` source package: `apt=1.2.15`
 
 Binary Packages:
 
-- `apt=1.2.12~ubuntu16.04.1`
-- `libapt-pkg5.0:amd64=1.2.12~ubuntu16.04.1`
+- `apt=1.2.15`
+- `libapt-pkg5.0:amd64=1.2.15`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=1.2.15
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.15.dsc' apt_1.2.15.dsc 2363 SHA256:d524c39eb042c56bbc98f7266779a7e8a2c147ec07698fcdc66522c15b434814
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.15.tar.xz' apt_1.2.15.tar.xz 2053780 SHA256:d2bd7654f9847c3cfba95e7fa5280bb30ad5af8f2a582161ee42fff052b1b07f
+```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -183,18 +194,23 @@ $ apt-get source -qq --print-uris autotools-dev=20150820.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/autotools-dev/autotools-dev_20150820.1.tar.xz' autotools-dev_20150820.1.tar.xz 61792 SHA256:fa40ff0ad94a8790357324f22a64bd8673383d5d56687dbebd3df5afe046c81f
 ```
 
-### `dpkg` source package: `base-files=9.4ubuntu4.2`
+### `dpkg` source package: `base-files=9.4ubuntu4.3`
 
 Binary Packages:
 
-- `base-files=9.4ubuntu4.2`
+- `base-files=9.4ubuntu4.3`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=9.4ubuntu4.3
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.3.dsc' base-files_9.4ubuntu4.3.dsc 1557 SHA256:d11ddec0ad1599faeef008b23f7f4c29d95f2d83ff99b36bd010725c29b368a8
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.3.tar.xz' base-files_9.4ubuntu4.3.tar.xz 62960 SHA256:8b57107c1da1d31718271466d12d253bd6944f2e60d5abcf9c48cdd6aa7affc2
+```
 
 ### `dpkg` source package: `base-passwd=3.5.39`
 
@@ -432,20 +448,26 @@ $ apt-get source -qq --print-uris bzip2=1.0.6-8
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-8.debian.tar.bz2' bzip2_1.0.6-8.debian.tar.bz2 59494 SHA256:60fe87fd3942c385e5921786255a27daf9a962ebc7301a60dfd8d1e1a5c8ce78
 ```
 
-### `dpkg` source package: `bzr=2.7.0-2ubuntu2`
+### `dpkg` source package: `bzr=2.7.0-2ubuntu3`
 
 Binary Packages:
 
-- `bzr=2.7.0-2ubuntu2`
-- `python-bzrlib=2.7.0-2ubuntu2`
+- `bzr=2.7.0-2ubuntu3`
+- `python-bzrlib=2.7.0-2ubuntu3`
 
 Licenses: (parsed from: `/usr/share/doc/bzr/copyright`, `/usr/share/doc/python-bzrlib/copyright`)
 
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris bzr=2.7.0-2ubuntu3
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0-2ubuntu3.dsc' bzr_2.7.0-2ubuntu3.dsc 2717 SHA256:152351da6fcc50aa80b5f8fb7f086c0de822737137e8e3ea560dafe22213f8ca
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0.orig.tar.gz' bzr_2.7.0.orig.tar.gz 10944322 SHA256:5204369dc80e5738d7f4f5db5920e010cc5cb89097cf165462685ab70d9ab00b
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0-2ubuntu3.debian.tar.xz' bzr_2.7.0-2ubuntu3.debian.tar.xz 41196 SHA256:431d0ec17a2267c3a7b9ec14769dfafe3ec3d8947680870d58930e0e830f43f4
+```
 
 ### `dpkg` source package: `ca-certificates=20160104ubuntu1`
 
@@ -593,12 +615,12 @@ $ apt-get source -qq --print-uris cryptsetup=2:1.6.6-5ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_1.6.6-5ubuntu2.debian.tar.xz' cryptsetup_1.6.6-5ubuntu2.debian.tar.xz 91088 SHA256:11dd7ecd756bec8c19342f82cccc3634e620d506daa425716879456fabb49c76
 ```
 
-### `dpkg` source package: `curl=7.47.0-1ubuntu2.1`
+### `dpkg` source package: `curl=7.47.0-1ubuntu2.2`
 
 Binary Packages:
 
-- `libcurl3:amd64=7.47.0-1ubuntu2.1`
-- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.1`
+- `libcurl3:amd64=7.47.0-1ubuntu2.2`
+- `libcurl3-gnutls:amd64=7.47.0-1ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -609,8 +631,14 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/lib
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.47.0-1ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.2.dsc' curl_7.47.0-1ubuntu2.2.dsc 2715 SHA256:d386b77cfb463ae8cf3c3f12b5dc29ec53deb51c4c403bb6feb330af9a64804d
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0.orig.tar.gz' curl_7.47.0.orig.tar.gz 4563163 SHA256:df01bd42af361978d9de7de8529718bcafe01897a544a7650139a1954c55bdfe
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.2.debian.tar.xz' curl_7.47.0-1ubuntu2.2.debian.tar.xz 38164 SHA256:4a0154bfec096266dba8bfc9c27fa0772b35e427defc019b0758c3ac6a8d0e0c
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-14build1`
 
@@ -768,11 +796,11 @@ $ apt-get source -qq --print-uris diffutils=1:3.3-3
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.3-3.debian.tar.xz' diffutils_3.3-3.debian.tar.xz 18356 SHA256:a0d1946979196f793a8ca55b21ab7891227de08f15bac2578ed84f4911e8b755
 ```
 
-### `dpkg` source package: `distro-info-data=0.28ubuntu0.1`
+### `dpkg` source package: `distro-info-data=0.28ubuntu0.2`
 
 Binary Packages:
 
-- `distro-info-data=0.28ubuntu0.1`
+- `distro-info-data=0.28ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
 
@@ -781,9 +809,9 @@ Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris distro-info-data=0.28ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.1.dsc' distro-info-data_0.28ubuntu0.1.dsc 1318 SHA256:cee4e536c4a32a028c10b0094a66a773840a598d5d4ed16626433aff977b4c00
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.1.tar.xz' distro-info-data_0.28ubuntu0.1.tar.xz 6048 SHA256:17bed147cf149888956b419ffb8374469a82cf79f053cd56407ac98c082a7fb6
+$ apt-get source -qq --print-uris distro-info-data=0.28ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.2.dsc' distro-info-data_0.28ubuntu0.2.dsc 1725 SHA256:b9de83f06d83cb2df38e54cb0e2235dc15754145d9f1cb79ba64a123be5a85e2
+'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.2.tar.xz' distro-info-data_0.28ubuntu0.2.tar.xz 6176 SHA256:45517b60c5a3c16fd40fb7db91d67cf9b5b3f4314a3e4acf455f66ce4e614fa8
 ```
 
 ### `dpkg` source package: `dpkg=1.18.4ubuntu1.1`
@@ -983,29 +1011,29 @@ $ apt-get source -qq --print-uris gcc-4.8=4.8.5-4ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/gcc-4.8/gcc-4.8_4.8.5-4ubuntu2.diff.gz' gcc-4.8_4.8.5-4ubuntu2.diff.gz 950839 SHA256:ee26de30eb1e0b5d73f73e387853539b6e609fcb25ec581c11081f49c9332a9a
 ```
 
-### `dpkg` source package: `gcc-5=5.4.0-6ubuntu1~16.04.2`
+### `dpkg` source package: `gcc-5=5.4.0-6ubuntu1~16.04.4`
 
 Binary Packages:
 
-- `cpp-5=5.4.0-6ubuntu1~16.04.2`
-- `g++-5=5.4.0-6ubuntu1~16.04.2`
-- `gcc-5=5.4.0-6ubuntu1~16.04.2`
-- `gcc-5-base:amd64=5.4.0-6ubuntu1~16.04.2`
-- `libasan2:amd64=5.4.0-6ubuntu1~16.04.2`
-- `libatomic1:amd64=5.4.0-6ubuntu1~16.04.2`
-- `libcc1-0:amd64=5.4.0-6ubuntu1~16.04.2`
-- `libcilkrts5:amd64=5.4.0-6ubuntu1~16.04.2`
-- `libgcc-5-dev:amd64=5.4.0-6ubuntu1~16.04.2`
-- `libgfortran3:amd64=5.4.0-6ubuntu1~16.04.2`
-- `libgomp1:amd64=5.4.0-6ubuntu1~16.04.2`
-- `libitm1:amd64=5.4.0-6ubuntu1~16.04.2`
-- `liblsan0:amd64=5.4.0-6ubuntu1~16.04.2`
-- `libmpx0:amd64=5.4.0-6ubuntu1~16.04.2`
-- `libquadmath0:amd64=5.4.0-6ubuntu1~16.04.2`
-- `libstdc++-5-dev:amd64=5.4.0-6ubuntu1~16.04.2`
-- `libstdc++6:amd64=5.4.0-6ubuntu1~16.04.2`
-- `libtsan0:amd64=5.4.0-6ubuntu1~16.04.2`
-- `libubsan0:amd64=5.4.0-6ubuntu1~16.04.2`
+- `cpp-5=5.4.0-6ubuntu1~16.04.4`
+- `g++-5=5.4.0-6ubuntu1~16.04.4`
+- `gcc-5=5.4.0-6ubuntu1~16.04.4`
+- `gcc-5-base:amd64=5.4.0-6ubuntu1~16.04.4`
+- `libasan2:amd64=5.4.0-6ubuntu1~16.04.4`
+- `libatomic1:amd64=5.4.0-6ubuntu1~16.04.4`
+- `libcc1-0:amd64=5.4.0-6ubuntu1~16.04.4`
+- `libcilkrts5:amd64=5.4.0-6ubuntu1~16.04.4`
+- `libgcc-5-dev:amd64=5.4.0-6ubuntu1~16.04.4`
+- `libgfortran3:amd64=5.4.0-6ubuntu1~16.04.4`
+- `libgomp1:amd64=5.4.0-6ubuntu1~16.04.4`
+- `libitm1:amd64=5.4.0-6ubuntu1~16.04.4`
+- `liblsan0:amd64=5.4.0-6ubuntu1~16.04.4`
+- `libmpx0:amd64=5.4.0-6ubuntu1~16.04.4`
+- `libquadmath0:amd64=5.4.0-6ubuntu1~16.04.4`
+- `libstdc++-5-dev:amd64=5.4.0-6ubuntu1~16.04.4`
+- `libstdc++6:amd64=5.4.0-6ubuntu1~16.04.4`
+- `libtsan0:amd64=5.4.0-6ubuntu1~16.04.4`
+- `libubsan0:amd64=5.4.0-6ubuntu1~16.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/cpp-5/copyright`, `/usr/share/doc/g++-5/copyright`, `/usr/share/doc/gcc-5/copyright`, `/usr/share/doc/gcc-5-base/copyright`, `/usr/share/doc/libasan2/copyright`, `/usr/share/doc/libatomic1/copyright`, `/usr/share/doc/libcc1-0/copyright`, `/usr/share/doc/libcilkrts5/copyright`, `/usr/share/doc/libgcc-5-dev/copyright`, `/usr/share/doc/libgfortran3/copyright`, `/usr/share/doc/libgomp1/copyright`, `/usr/share/doc/libitm1/copyright`, `/usr/share/doc/liblsan0/copyright`, `/usr/share/doc/libmpx0/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++-5-dev/copyright`, `/usr/share/doc/libstdc++6/copyright`, `/usr/share/doc/libtsan0/copyright`, `/usr/share/doc/libubsan0/copyright`)
 
@@ -1015,8 +1043,14 @@ Licenses: (parsed from: `/usr/share/doc/cpp-5/copyright`, `/usr/share/doc/g++-5/
 - `GPL-2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gcc-5=5.4.0-6ubuntu1~16.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.4.dsc' gcc-5_5.4.0-6ubuntu1~16.04.4.dsc 28631 SHA256:aa1bf24191d929638953b9420d6c90df7f3dbd82d0bb2e27f02b9bd598c489c5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0.orig.tar.gz' gcc-5_5.4.0.orig.tar.gz 73530162 SHA256:00f73e8382aa8653aa501ce2263597c2c4429912bfa18102f47cc362f00ed88d
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-5/gcc-5_5.4.0-6ubuntu1~16.04.4.diff.gz' gcc-5_5.4.0-6ubuntu1~16.04.4.diff.gz 1451941 SHA256:87c63d2da53e46bf05bef082b015ac14ffcb46467e2fdfd87a4891d742d4697d
+```
 
 ### `dpkg` source package: `gcc-defaults=1.150ubuntu1`
 
@@ -1139,16 +1173,16 @@ $ apt-get source -qq --print-uris glib2.0=2.48.1-1~ubuntu16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.1-1~ubuntu16.04.1.debian.tar.xz' glib2.0_2.48.1-1~ubuntu16.04.1.debian.tar.xz 68624 SHA256:b44ad954b23e1cbf35f2a4555b622d2141efeebe499b504bdd46b27e353f2721
 ```
 
-### `dpkg` source package: `glibc=2.23-0ubuntu3`
+### `dpkg` source package: `glibc=2.23-0ubuntu4`
 
 Binary Packages:
 
-- `libc-bin=2.23-0ubuntu3`
-- `libc-dev-bin=2.23-0ubuntu3`
-- `libc6:amd64=2.23-0ubuntu3`
-- `libc6-dev:amd64=2.23-0ubuntu3`
-- `locales=2.23-0ubuntu3`
-- `multiarch-support=2.23-0ubuntu3`
+- `libc-bin=2.23-0ubuntu4`
+- `libc-dev-bin=2.23-0ubuntu4`
+- `libc6:amd64=2.23-0ubuntu4`
+- `libc6-dev:amd64=2.23-0ubuntu4`
+- `locales=2.23-0ubuntu4`
+- `multiarch-support=2.23-0ubuntu4`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/locales/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
@@ -1158,10 +1192,10 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.23-0ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu3.dsc' glibc_2.23-0ubuntu3.dsc 8521 SHA256:647f33e229b3d838ff72b3dcb80242d2c6c61ff93aa9798009962b9a21992260
+$ apt-get source -qq --print-uris glibc=2.23-0ubuntu4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu4.dsc' glibc_2.23-0ubuntu4.dsc 8532 SHA256:23c867505fc784d7c0e2f924d71a463a13c01e8ce8d4558030533279b79bedfb
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23.orig.tar.xz' glibc_2.23.orig.tar.xz 13849968 SHA256:bf6c528eeebefcacc295270068b79330c1fb2b22458ff66285b4175d23442c96
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu3.debian.tar.xz' glibc_2.23-0ubuntu3.debian.tar.xz 1296684 SHA256:5e01dd448c8d78e850661ca88f5009f19011b00c6a7031f7578fe09c330a41d3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu4.debian.tar.xz' glibc_2.23-0ubuntu4.debian.tar.xz 1339492 SHA256:ac0892d83bcc6225a738a28028b4d7222b4dfc150eafe1cea44dd38e864977ae
 ```
 
 ### `dpkg` source package: `gmp=2:6.1.0+dfsg-2`
@@ -2029,18 +2063,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
 ```
 
-### `dpkg` source package: `linux=4.4.0-43.63`
+### `dpkg` source package: `linux=4.4.0-47.68`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-43.63`
+- `linux-libc-dev:amd64=4.4.0-47.68`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.4.0-47.68
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-47.68.dsc' linux_4.4.0-47.68.dsc 9613 SHA256:dfc17d6aaf29288167c51ec7a2982fd7073fc618926518e08e95bd33121424c8
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-47.68.diff.gz' linux_4.4.0-47.68.diff.gz 12000806 SHA256:ad39cfbaea9add01813c0e4192b1d9c0a6784d9b20217a1114e4a7571a700161
+```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
 
@@ -2375,12 +2415,12 @@ $ apt-get source -qq --print-uris mpi-defaults=1.4
 'http://archive.ubuntu.com/ubuntu/pool/universe/m/mpi-defaults/mpi-defaults_1.4.tar.xz' mpi-defaults_1.4.tar.xz 4544 SHA256:aa85c486ad60c23eb6d8c44353e5fa1985e935314d54b2d5b86f8fb844386ce3
 ```
 
-### `dpkg` source package: `mysql-5.7=5.7.15-0ubuntu0.16.04.1`
+### `dpkg` source package: `mysql-5.7=5.7.16-0ubuntu0.16.04.1`
 
 Binary Packages:
 
-- `libmysqlclient20:amd64=5.7.15-0ubuntu0.16.04.1`
-- `mysql-common=5.7.15-0ubuntu0.16.04.1`
+- `libmysqlclient20:amd64=5.7.16-0ubuntu0.16.04.1`
+- `mysql-common=5.7.16-0ubuntu0.16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient20/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -2398,8 +2438,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient20/copyright`, `/usr/share
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.7=5.7.16-0ubuntu0.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.16-0ubuntu0.16.04.1.dsc' mysql-5.7_5.7.16-0ubuntu0.16.04.1.dsc 3344 SHA256:8d5dd7a431ddcfec804f90d73941dc5148fd36af55083abf5d0c5b4abb5cfce8
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.16.orig.tar.gz' mysql-5.7_5.7.16.orig.tar.gz 60556473 SHA256:43fc282f807353ff77ead21efb5f85f7f214c2a5362762a8cc370ae1c075095a
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.16-0ubuntu0.16.04.1.debian.tar.xz' mysql-5.7_5.7.16-0ubuntu0.16.04.1.debian.tar.xz 3388008 SHA256:ac5f5f90309001d471b9c6de3f229dd511c28ca080ab29b79067d136e2e35dbf
+```
 
 ### `dpkg` source package: `ncurses=6.0+20160213-1ubuntu1`
 
@@ -3046,18 +3092,24 @@ $ apt-get source -qq --print-uris python-rosdep=0.11.5-1
 'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.11.5-1.debian.tar.gz' python-rosdep_0.11.5-1.debian.tar.gz 1038 SHA256:6180f59402dd9b7a1ff5e9d768e9fce8019400eb882f0daef57eeb4a8103fd96
 ```
 
-### `dpkg` source package: `python-rosdistro=0.4.7-1`
+### `dpkg` source package: `python-rosdistro=0.5.0-1`
 
 Binary Packages:
 
-- `python-rosdistro=0.4.7-1`
+- `python-rosdistro=0.5.0-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-rosdistro=0.5.0-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.5.0-1.dsc' python-rosdistro_0.5.0-1.dsc 914 SHA256:bf87d0bbbf805df787bcee6cf286b56462ec72dd5c5d530404af95957e40dc84
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.5.0.orig.tar.gz' python-rosdistro_0.5.0.orig.tar.gz 41493 SHA256:bfea9d1c559b631e57b37680fb2fe4a2558afde7e723b38225c98e80fa1db779
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.5.0-1.debian.tar.xz' python-rosdistro_0.5.0-1.debian.tar.xz 1032 SHA256:02ff6b4d6a41a471801c6255d3e7a829c30e3c9946959405b1b8d689f1f1ed1e
+```
 
 ### `dpkg` source package: `python-rosinstall=0.7.8-1`
 
@@ -3320,11 +3372,11 @@ $ apt-get source -qq --print-uris ros-catkin-pkg=0.2.10-2
 'http://archive.ubuntu.com/ubuntu/pool/universe/r/ros-catkin-pkg/ros-catkin-pkg_0.2.10-2.debian.tar.xz' ros-catkin-pkg_0.2.10-2.debian.tar.xz 3724 SHA256:9d3a4d4af13799dd32b5d9ba337c4210ea299d81eb87fad49b40964cd6941a85
 ```
 
-### `dpkg` source package: `ros-kinetic-actionlib-msgs=1.12.5-0xenial-20160930-201921-0700`
+### `dpkg` source package: `ros-kinetic-actionlib-msgs=1.12.5-0xenial-20161026-181654-0700`
 
 Binary Packages:
 
-- `ros-kinetic-actionlib-msgs=1.12.5-0xenial-20160930-201921-0700`
+- `ros-kinetic-actionlib-msgs=1.12.5-0xenial-20161026-181654-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3333,11 +3385,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-actionlib=1.11.6-0xenial-20160930-202323-0700`
+### `dpkg` source package: `ros-kinetic-actionlib=1.11.7-0xenial-20161026-193631-0700`
 
 Binary Packages:
 
-- `ros-kinetic-actionlib=1.11.6-0xenial-20160930-202323-0700`
+- `ros-kinetic-actionlib=1.11.7-0xenial-20161026-193631-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3346,11 +3398,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-bond-core=1.7.17-0xenial-20160930-212432-0700`
+### `dpkg` source package: `ros-kinetic-bond-core=1.7.18-0xenial-20161026-192056-0700`
 
 Binary Packages:
 
-- `ros-kinetic-bond-core=1.7.17-0xenial-20160930-212432-0700`
+- `ros-kinetic-bond-core=1.7.18-0xenial-20161026-192056-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3359,11 +3411,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-bond=1.7.17-0xenial-20160925-131832-0700`
+### `dpkg` source package: `ros-kinetic-bond=1.7.18-0xenial-20161026-183618-0700`
 
 Binary Packages:
 
-- `ros-kinetic-bond=1.7.17-0xenial-20160925-131832-0700`
+- `ros-kinetic-bond=1.7.18-0xenial-20161026-183618-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3372,11 +3424,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-bondcpp=1.7.17-0xenial-20160930-192609-0700`
+### `dpkg` source package: `ros-kinetic-bondcpp=1.7.18-0xenial-20161026-183822-0700`
 
 Binary Packages:
 
-- `ros-kinetic-bondcpp=1.7.17-0xenial-20160930-192609-0700`
+- `ros-kinetic-bondcpp=1.7.18-0xenial-20161026-183822-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3385,11 +3437,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-bondpy=1.7.17-0xenial-20160930-193144-0700`
+### `dpkg` source package: `ros-kinetic-bondpy=1.7.18-0xenial-20161026-191803-0700`
 
 Binary Packages:
 
-- `ros-kinetic-bondpy=1.7.17-0xenial-20160930-193144-0700`
+- `ros-kinetic-bondpy=1.7.18-0xenial-20161026-191803-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3411,11 +3463,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-class-loader=0.3.5-0xenial-20160925-091824-0700`
+### `dpkg` source package: `ros-kinetic-class-loader=0.3.6-0xenial-20161026-175000-0700`
 
 Binary Packages:
 
-- `ros-kinetic-class-loader=0.3.5-0xenial-20160925-091824-0700`
+- `ros-kinetic-class-loader=0.3.6-0xenial-20161026-175000-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3437,11 +3489,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-common-msgs=1.12.5-0xenial-20160930-205918-0700`
+### `dpkg` source package: `ros-kinetic-common-msgs=1.12.5-0xenial-20161026-190403-0700`
 
 Binary Packages:
 
-- `ros-kinetic-common-msgs=1.12.5-0xenial-20160930-205918-0700`
+- `ros-kinetic-common-msgs=1.12.5-0xenial-20161026-190403-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3463,11 +3515,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-diagnostic-msgs=1.12.5-0xenial-20160930-201737-0700`
+### `dpkg` source package: `ros-kinetic-diagnostic-msgs=1.12.5-0xenial-20161026-181729-0700`
 
 Binary Packages:
 
-- `ros-kinetic-diagnostic-msgs=1.12.5-0xenial-20160930-201737-0700`
+- `ros-kinetic-diagnostic-msgs=1.12.5-0xenial-20161026-181729-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3476,11 +3528,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-dynamic-reconfigure=1.5.43-0xenial-20160930-192241-0700`
+### `dpkg` source package: `ros-kinetic-dynamic-reconfigure=1.5.45-0xenial-20161026-193531-0700`
 
 Binary Packages:
 
-- `ros-kinetic-dynamic-reconfigure=1.5.43-0xenial-20160930-192241-0700`
+- `ros-kinetic-dynamic-reconfigure=1.5.45-0xenial-20161026-193531-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3554,11 +3606,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-genpy=0.6.2-0xenial-20160925-092417-0700`
+### `dpkg` source package: `ros-kinetic-genpy=0.6.3-0xenial-20161026-175113-0700`
 
 Binary Packages:
 
-- `ros-kinetic-genpy=0.6.2-0xenial-20160925-092417-0700`
+- `ros-kinetic-genpy=0.6.3-0xenial-20161026-175113-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3567,11 +3619,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-geometry-msgs=1.12.5-0xenial-20160930-201850-0700`
+### `dpkg` source package: `ros-kinetic-geometry-msgs=1.12.5-0xenial-20161026-181759-0700`
 
 Binary Packages:
 
-- `ros-kinetic-geometry-msgs=1.12.5-0xenial-20160930-201850-0700`
+- `ros-kinetic-geometry-msgs=1.12.5-0xenial-20161026-181759-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3580,11 +3632,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-message-filters=1.12.5-0xenial-20160930-160013-0700`
+### `dpkg` source package: `ros-kinetic-message-filters=1.12.6-0xenial-20161026-192040-0700`
 
 Binary Packages:
 
-- `ros-kinetic-message-filters=1.12.5-0xenial-20160930-160013-0700`
+- `ros-kinetic-message-filters=1.12.6-0xenial-20161026-192040-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3593,11 +3645,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-message-generation=0.4.0-0xenial-20160925-093143-0700`
+### `dpkg` source package: `ros-kinetic-message-generation=0.4.0-0xenial-20161026-175826-0700`
 
 Binary Packages:
 
-- `ros-kinetic-message-generation=0.4.0-0xenial-20160925-093143-0700`
+- `ros-kinetic-message-generation=0.4.0-0xenial-20161026-175826-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3606,11 +3658,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-message-runtime=0.4.12-0xenial-20160925-131125-0700`
+### `dpkg` source package: `ros-kinetic-message-runtime=0.4.12-0xenial-20161026-180213-0700`
 
 Binary Packages:
 
-- `ros-kinetic-message-runtime=0.4.12-0xenial-20160925-131125-0700`
+- `ros-kinetic-message-runtime=0.4.12-0xenial-20161026-180213-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3619,11 +3671,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-mk=1.13.4-0xenial-20160925-132017-0700`
+### `dpkg` source package: `ros-kinetic-mk=1.13.4-0xenial-20161026-181219-0700`
 
 Binary Packages:
 
-- `ros-kinetic-mk=1.13.4-0xenial-20160925-132017-0700`
+- `ros-kinetic-mk=1.13.4-0xenial-20161026-181219-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3632,11 +3684,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-nav-msgs=1.12.5-0xenial-20160930-203335-0700`
+### `dpkg` source package: `ros-kinetic-nav-msgs=1.12.5-0xenial-20161026-182233-0700`
 
 Binary Packages:
 
-- `ros-kinetic-nav-msgs=1.12.5-0xenial-20160930-203335-0700`
+- `ros-kinetic-nav-msgs=1.12.5-0xenial-20161026-182233-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3645,11 +3697,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-nodelet-core=1.9.6-0xenial-20160930-212242-0700`
+### `dpkg` source package: `ros-kinetic-nodelet-core=1.9.7-0xenial-20161026-194045-0700`
 
 Binary Packages:
 
-- `ros-kinetic-nodelet-core=1.9.6-0xenial-20160930-212242-0700`
+- `ros-kinetic-nodelet-core=1.9.7-0xenial-20161026-194045-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3658,11 +3710,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-nodelet-topic-tools=1.9.6-0xenial-20160930-193231-0700`
+### `dpkg` source package: `ros-kinetic-nodelet-topic-tools=1.9.7-0xenial-20161026-193845-0700`
 
 Binary Packages:
 
-- `ros-kinetic-nodelet-topic-tools=1.9.6-0xenial-20160930-193231-0700`
+- `ros-kinetic-nodelet-topic-tools=1.9.7-0xenial-20161026-193845-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3671,11 +3723,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-nodelet=1.9.6-0xenial-20160930-192920-0700`
+### `dpkg` source package: `ros-kinetic-nodelet=1.9.7-0xenial-20161026-191752-0700`
 
 Binary Packages:
 
-- `ros-kinetic-nodelet=1.9.6-0xenial-20160930-192920-0700`
+- `ros-kinetic-nodelet=1.9.7-0xenial-20161026-191752-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3684,11 +3736,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-pluginlib=1.10.4-0xenial-20160930-183719-0700`
+### `dpkg` source package: `ros-kinetic-pluginlib=1.10.4-0xenial-20161026-181455-0700`
 
 Binary Packages:
 
-- `ros-kinetic-pluginlib=1.10.4-0xenial-20160930-183719-0700`
+- `ros-kinetic-pluginlib=1.10.4-0xenial-20161026-181455-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3697,11 +3749,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-ros-base=1.3.0-0xenial-20160930-213311-0700`
+### `dpkg` source package: `ros-kinetic-ros-base=1.3.0-0xenial-20161026-194228-0700`
 
 Binary Packages:
 
-- `ros-kinetic-ros-base=1.3.0-0xenial-20160930-213311-0700`
+- `ros-kinetic-ros-base=1.3.0-0xenial-20161026-194228-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3710,11 +3762,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-ros-comm=1.12.5-0xenial-20160930-164037-0700`
+### `dpkg` source package: `ros-kinetic-ros-comm=1.12.6-0xenial-20161026-193907-0700`
 
 Binary Packages:
 
-- `ros-kinetic-ros-comm=1.12.5-0xenial-20160930-164037-0700`
+- `ros-kinetic-ros-comm=1.12.6-0xenial-20161026-193907-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3723,11 +3775,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-ros-core=1.3.0-0xenial-20160930-210038-0700`
+### `dpkg` source package: `ros-kinetic-ros-core=1.3.0-0xenial-20161026-194024-0700`
 
 Binary Packages:
 
-- `ros-kinetic-ros-core=1.3.0-0xenial-20160930-210038-0700`
+- `ros-kinetic-ros-core=1.3.0-0xenial-20161026-194024-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3736,11 +3788,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-ros=1.13.4-0xenial-20160925-150304-0700`
+### `dpkg` source package: `ros-kinetic-ros=1.13.4-0xenial-20161026-183547-0700`
 
 Binary Packages:
 
-- `ros-kinetic-ros=1.13.4-0xenial-20160925-150304-0700`
+- `ros-kinetic-ros=1.13.4-0xenial-20161026-183547-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3762,11 +3814,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-rosbag-storage=1.12.5-0xenial-20160930-150358-0700`
+### `dpkg` source package: `ros-kinetic-rosbag-storage=1.12.6-0xenial-20161026-180016-0700`
 
 Binary Packages:
 
-- `ros-kinetic-rosbag-storage=1.12.5-0xenial-20160930-150358-0700`
+- `ros-kinetic-rosbag-storage=1.12.6-0xenial-20161026-180016-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3775,11 +3827,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-rosbag=1.12.5-0xenial-20160930-160657-0700`
+### `dpkg` source package: `ros-kinetic-rosbag=1.12.6-0xenial-20161026-192526-0700`
 
 Binary Packages:
 
-- `ros-kinetic-rosbag=1.12.5-0xenial-20160930-160657-0700`
+- `ros-kinetic-rosbag=1.12.6-0xenial-20161026-192526-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3814,11 +3866,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-rosbuild=1.13.4-0xenial-20160925-131535-0700`
+### `dpkg` source package: `ros-kinetic-rosbuild=1.13.4-0xenial-20161026-180801-0700`
 
 Binary Packages:
 
-- `ros-kinetic-rosbuild=1.13.4-0xenial-20160925-131535-0700`
+- `ros-kinetic-rosbuild=1.13.4-0xenial-20161026-180801-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3840,11 +3892,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-rosconsole-bridge=0.4.4-0xenial-20160930-183656-0700`
+### `dpkg` source package: `ros-kinetic-rosconsole-bridge=0.4.4-0xenial-20161026-183918-0700`
 
 Binary Packages:
 
-- `ros-kinetic-rosconsole-bridge=0.4.4-0xenial-20160930-183656-0700`
+- `ros-kinetic-rosconsole-bridge=0.4.4-0xenial-20161026-183918-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3853,11 +3905,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-rosconsole=1.12.5-0xenial-20160930-144455-0700`
+### `dpkg` source package: `ros-kinetic-rosconsole=1.12.6-0xenial-20161026-181000-0700`
 
 Binary Packages:
 
-- `ros-kinetic-rosconsole=1.12.5-0xenial-20160930-144455-0700`
+- `ros-kinetic-rosconsole=1.12.6-0xenial-20161026-181000-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3905,11 +3957,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-roscpp=1.12.5-0xenial-20160930-151700-0700`
+### `dpkg` source package: `ros-kinetic-roscpp=1.12.6-0xenial-20161026-182734-0700`
 
 Binary Packages:
 
-- `ros-kinetic-roscpp=1.12.5-0xenial-20160930-151700-0700`
+- `ros-kinetic-roscpp=1.12.6-0xenial-20161026-182734-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3931,11 +3983,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-rosgraph-msgs=1.11.2-0xenial-20160925-132033-0700`
+### `dpkg` source package: `ros-kinetic-rosgraph-msgs=1.11.2-0xenial-20161026-182105-0700`
 
 Binary Packages:
 
-- `ros-kinetic-rosgraph-msgs=1.11.2-0xenial-20160925-132033-0700`
+- `ros-kinetic-rosgraph-msgs=1.11.2-0xenial-20161026-182105-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3944,11 +3996,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-rosgraph=1.12.5-0xenial-20160930-145028-0700`
+### `dpkg` source package: `ros-kinetic-rosgraph=1.12.6-0xenial-20161026-175423-0700`
 
 Binary Packages:
 
-- `ros-kinetic-rosgraph=1.12.5-0xenial-20160930-145028-0700`
+- `ros-kinetic-rosgraph=1.12.6-0xenial-20161026-175423-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3970,11 +4022,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-roslaunch=1.12.5-0xenial-20160930-154013-0700`
+### `dpkg` source package: `ros-kinetic-roslaunch=1.12.6-0xenial-20161026-184852-0700`
 
 Binary Packages:
 
-- `ros-kinetic-roslaunch=1.12.5-0xenial-20160930-154013-0700`
+- `ros-kinetic-roslaunch=1.12.6-0xenial-20161026-184852-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3996,11 +4048,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-roslisp=1.9.20-0xenial-20160925-132429-0700`
+### `dpkg` source package: `ros-kinetic-roslisp=1.9.20-0xenial-20161026-183603-0700`
 
 Binary Packages:
 
-- `ros-kinetic-roslisp=1.9.20-0xenial-20160925-132429-0700`
+- `ros-kinetic-roslisp=1.9.20-0xenial-20161026-183603-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4009,11 +4061,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-roslz4=1.12.5-0xenial-20160930-145415-0700`
+### `dpkg` source package: `ros-kinetic-roslz4=1.12.6-0xenial-20161026-175145-0700`
 
 Binary Packages:
 
-- `ros-kinetic-roslz4=1.12.5-0xenial-20160930-145415-0700`
+- `ros-kinetic-roslz4=1.12.6-0xenial-20161026-175145-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4035,11 +4087,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-rosmaster=1.12.5-0xenial-20160930-145837-0700`
+### `dpkg` source package: `ros-kinetic-rosmaster=1.12.6-0xenial-20161026-180001-0700`
 
 Binary Packages:
 
-- `ros-kinetic-rosmaster=1.12.5-0xenial-20160930-145837-0700`
+- `ros-kinetic-rosmaster=1.12.6-0xenial-20161026-180001-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4048,11 +4100,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-rosmsg=1.12.5-0xenial-20160930-161619-0700`
+### `dpkg` source package: `ros-kinetic-rosmsg=1.12.6-0xenial-20161026-193111-0700`
 
 Binary Packages:
 
-- `ros-kinetic-rosmsg=1.12.5-0xenial-20160930-161619-0700`
+- `ros-kinetic-rosmsg=1.12.6-0xenial-20161026-193111-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4061,11 +4113,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-rosnode=1.12.5-0xenial-20160930-162527-0700`
+### `dpkg` source package: `ros-kinetic-rosnode=1.12.6-0xenial-20161026-193330-0700`
 
 Binary Packages:
 
-- `ros-kinetic-rosnode=1.12.5-0xenial-20160930-162527-0700`
+- `ros-kinetic-rosnode=1.12.6-0xenial-20161026-193330-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4074,11 +4126,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-rosout=1.12.5-0xenial-20160930-152905-0700`
+### `dpkg` source package: `ros-kinetic-rosout=1.12.6-0xenial-20161026-183947-0700`
 
 Binary Packages:
 
-- `ros-kinetic-rosout=1.12.5-0xenial-20160930-152905-0700`
+- `ros-kinetic-rosout=1.12.6-0xenial-20161026-183947-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4100,11 +4152,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-rosparam=1.12.5-0xenial-20160930-150357-0700`
+### `dpkg` source package: `ros-kinetic-rosparam=1.12.6-0xenial-20161026-180150-0700`
 
 Binary Packages:
 
-- `ros-kinetic-rosparam=1.12.5-0xenial-20160930-150357-0700`
+- `ros-kinetic-rosparam=1.12.6-0xenial-20161026-180150-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4113,11 +4165,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-rospy=1.12.5-0xenial-20160930-153225-0700`
+### `dpkg` source package: `ros-kinetic-rospy=1.12.6-0xenial-20161026-191631-0700`
 
 Binary Packages:
 
-- `ros-kinetic-rospy=1.12.5-0xenial-20160930-153225-0700`
+- `ros-kinetic-rospy=1.12.6-0xenial-20161026-191631-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4126,11 +4178,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-rosservice=1.12.5-0xenial-20160930-162225-0700`
+### `dpkg` source package: `ros-kinetic-rosservice=1.12.6-0xenial-20161026-193333-0700`
 
 Binary Packages:
 
-- `ros-kinetic-rosservice=1.12.5-0xenial-20160930-162225-0700`
+- `ros-kinetic-rosservice=1.12.6-0xenial-20161026-193333-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4139,11 +4191,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-rostest=1.12.5-0xenial-20160930-155305-0700`
+### `dpkg` source package: `ros-kinetic-rostest=1.12.6-0xenial-20161026-191806-0700`
 
 Binary Packages:
 
-- `ros-kinetic-rostest=1.12.5-0xenial-20160930-155305-0700`
+- `ros-kinetic-rostest=1.12.6-0xenial-20161026-191806-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4165,11 +4217,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-rostopic=1.12.5-0xenial-20160930-161734-0700`
+### `dpkg` source package: `ros-kinetic-rostopic=1.12.6-0xenial-20161026-193044-0700`
 
 Binary Packages:
 
-- `ros-kinetic-rostopic=1.12.5-0xenial-20160930-161734-0700`
+- `ros-kinetic-rostopic=1.12.6-0xenial-20161026-193044-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4191,11 +4243,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-roswtf=1.12.5-0xenial-20160930-163320-0700`
+### `dpkg` source package: `ros-kinetic-roswtf=1.12.6-0xenial-20161026-193640-0700`
 
 Binary Packages:
 
-- `ros-kinetic-roswtf=1.12.5-0xenial-20160930-163320-0700`
+- `ros-kinetic-roswtf=1.12.6-0xenial-20161026-193640-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4204,11 +4256,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-sensor-msgs=1.12.5-0xenial-20160930-203357-0700`
+### `dpkg` source package: `ros-kinetic-sensor-msgs=1.12.5-0xenial-20161026-182145-0700`
 
 Binary Packages:
 
-- `ros-kinetic-sensor-msgs=1.12.5-0xenial-20160930-203357-0700`
+- `ros-kinetic-sensor-msgs=1.12.5-0xenial-20161026-182145-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4217,11 +4269,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-shape-msgs=1.12.5-0xenial-20160930-203401-0700`
+### `dpkg` source package: `ros-kinetic-shape-msgs=1.12.5-0xenial-20161026-182134-0700`
 
 Binary Packages:
 
-- `ros-kinetic-shape-msgs=1.12.5-0xenial-20160930-203401-0700`
+- `ros-kinetic-shape-msgs=1.12.5-0xenial-20161026-182134-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4230,11 +4282,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-smclib=1.7.17-0xenial-20160925-093312-0700`
+### `dpkg` source package: `ros-kinetic-smclib=1.7.18-0xenial-20161026-175547-0700`
 
 Binary Packages:
 
-- `ros-kinetic-smclib=1.7.17-0xenial-20160925-093312-0700`
+- `ros-kinetic-smclib=1.7.18-0xenial-20161026-175547-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4243,11 +4295,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-std-msgs=0.5.10-0xenial-20160925-131455-0700`
+### `dpkg` source package: `ros-kinetic-std-msgs=0.5.10-0xenial-20161026-180811-0700`
 
 Binary Packages:
 
-- `ros-kinetic-std-msgs=0.5.10-0xenial-20160925-131455-0700`
+- `ros-kinetic-std-msgs=0.5.10-0xenial-20161026-180811-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4256,11 +4308,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-std-srvs=1.11.2-0xenial-20160925-131659-0700`
+### `dpkg` source package: `ros-kinetic-std-srvs=1.11.2-0xenial-20161026-180832-0700`
 
 Binary Packages:
 
-- `ros-kinetic-std-srvs=1.11.2-0xenial-20160925-131659-0700`
+- `ros-kinetic-std-srvs=1.11.2-0xenial-20161026-180832-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4269,11 +4321,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-stereo-msgs=1.12.5-0xenial-20160930-205703-0700`
+### `dpkg` source package: `ros-kinetic-stereo-msgs=1.12.5-0xenial-20161026-183035-0700`
 
 Binary Packages:
 
-- `ros-kinetic-stereo-msgs=1.12.5-0xenial-20160930-205703-0700`
+- `ros-kinetic-stereo-msgs=1.12.5-0xenial-20161026-183035-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4282,11 +4334,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-topic-tools=1.12.5-0xenial-20160930-155932-0700`
+### `dpkg` source package: `ros-kinetic-topic-tools=1.12.6-0xenial-20161026-192045-0700`
 
 Binary Packages:
 
-- `ros-kinetic-topic-tools=1.12.5-0xenial-20160930-155932-0700`
+- `ros-kinetic-topic-tools=1.12.6-0xenial-20161026-192045-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4295,11 +4347,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-trajectory-msgs=1.12.5-0xenial-20160930-203437-0700`
+### `dpkg` source package: `ros-kinetic-trajectory-msgs=1.12.5-0xenial-20161026-182140-0700`
 
 Binary Packages:
 
-- `ros-kinetic-trajectory-msgs=1.12.5-0xenial-20160930-203437-0700`
+- `ros-kinetic-trajectory-msgs=1.12.5-0xenial-20161026-182140-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4308,11 +4360,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-visualization-msgs=1.12.5-0xenial-20160930-203412-0700`
+### `dpkg` source package: `ros-kinetic-visualization-msgs=1.12.5-0xenial-20161026-182207-0700`
 
 Binary Packages:
 
-- `ros-kinetic-visualization-msgs=1.12.5-0xenial-20160930-203412-0700`
+- `ros-kinetic-visualization-msgs=1.12.5-0xenial-20161026-182207-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4321,11 +4373,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-xmlrpcpp=1.12.5-0xenial-20160930-151029-0700`
+### `dpkg` source package: `ros-kinetic-xmlrpcpp=1.12.6-0xenial-20161026-175123-0700`
 
 Binary Packages:
 
-- `ros-kinetic-xmlrpcpp=1.12.5-0xenial-20160930-151029-0700`
+- `ros-kinetic-xmlrpcpp=1.12.6-0xenial-20161026-175123-0700`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4543,14 +4595,14 @@ $ apt-get source -qq --print-uris subversion=1.9.3-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.3-2ubuntu1.diff.gz' subversion_1.9.3-2ubuntu1.diff.gz 2428266 SHA256:5abd3b260a156c1a15a5203a5097ad557740a3056577e48c0b66f4f74c145a69
 ```
 
-### `dpkg` source package: `systemd=229-4ubuntu10`
+### `dpkg` source package: `systemd=229-4ubuntu12`
 
 Binary Packages:
 
-- `libsystemd0:amd64=229-4ubuntu10`
-- `libudev1:amd64=229-4ubuntu10`
-- `systemd=229-4ubuntu10`
-- `systemd-sysv=229-4ubuntu10`
+- `libsystemd0:amd64=229-4ubuntu12`
+- `libudev1:amd64=229-4ubuntu12`
+- `systemd=229-4ubuntu12`
+- `systemd-sysv=229-4ubuntu12`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
@@ -4565,10 +4617,10 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=229-4ubuntu10
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu10.dsc' systemd_229-4ubuntu10.dsc 4184 SHA256:4efd03604bdd7b32d231a70a6596288a6440d969017fe2b7b2284ef0d9684af3
+$ apt-get source -qq --print-uris systemd=229-4ubuntu12
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu12.dsc' systemd_229-4ubuntu12.dsc 4409 SHA256:67308ab67210a8f74f3dc9921cfe4a8fff02485e18c71665d675fe2b2b659198
 'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu10.debian.tar.xz' systemd_229-4ubuntu10.debian.tar.xz 149716 SHA256:6aff622a8d8aebd80194a408173a963ac453377c693f6675af189a4bb7e011d0
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu12.debian.tar.xz' systemd_229-4ubuntu12.debian.tar.xz 234780 SHA256:57a3e2a65e403884398c38976a1fed19c2ff23c18ef404882ee1fdb2d1b59fef
 ```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
@@ -4632,18 +4684,24 @@ $ apt-get source -qq --print-uris tinyxml=2.6.2-3
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tinyxml/tinyxml_2.6.2-3.debian.tar.xz' tinyxml_2.6.2-3.debian.tar.xz 4152 SHA256:f592529ece8b36a0ae2bacfb9d13ebb67ee3d4409af10c92f7bb9f73f3ba1423
 ```
 
-### `dpkg` source package: `tzdata=2016f-0ubuntu0.16.04`
+### `dpkg` source package: `tzdata=2016h-0ubuntu0.16.04`
 
 Binary Packages:
 
-- `tzdata=2016f-0ubuntu0.16.04`
+- `tzdata=2016h-0ubuntu0.16.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2016h-0ubuntu0.16.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h-0ubuntu0.16.04.dsc' tzdata_2016h-0ubuntu0.16.04.dsc 2101 SHA256:4bd38d917373c61d05c6f8caf2a069a68ce543cbf0f7a14595625f709c212a88
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h.orig.tar.gz' tzdata_2016h.orig.tar.gz 318714 SHA256:da1b74fc2dec2ce8b64948dafb0bfc2f923c830d421a7ae4d016226135697a64
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h-0ubuntu0.16.04.debian.tar.xz' tzdata_2016h-0ubuntu0.16.04.debian.tar.xz 99832 SHA256:4ae6adca94b88b4c30a427cdf81c6097396a3915dfb21873ff6a56f454d67c1e
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 
