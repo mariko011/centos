@@ -1,7 +1,7 @@
 ## `backdrop:1-fpm`
 
 ```console
-$ docker pull backdrop@sha256:e3098930a3a49777a7a62135d5ce4405f79b14ef7714d5bf313af0f76cf3d6ba
+$ docker pull backdrop@sha256:ccc288b0a41445cb3bdf1f972f628db306c86a6fdb5a34a552849ac4388e641d
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull backdrop@sha256:e3098930a3a49777a7a62135d5ce4405f79b14ef7714d5bf31
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **166.7 MB (166658209 bytes)**  
+-	Total Size: **166.7 MB (166660143 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84ecbdcfc4a198310fd792ab0f8489fad91ded205bf3e6b2a79f53a0e1316504`
+-	Image ID: `sha256:40df1a7426815ce83442f17dfc2243e24be55ca6f5b37141804508c6e051ed68`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -60,17 +60,17 @@ CMD ["php-fpm"]
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
 # Tue, 15 Nov 2016 17:33:31 GMT
 WORKDIR /var/www/html
-# Tue, 15 Nov 2016 17:33:31 GMT
-ENV BACKDROP_VERSION=1.5.1
-# Tue, 15 Nov 2016 17:33:32 GMT
-ENV BACKDROP_MD5=59481db12d492c9579807f670803fa20
-# Tue, 15 Nov 2016 17:33:35 GMT
+# Thu, 17 Nov 2016 00:36:37 GMT
+ENV BACKDROP_VERSION=1.5.2
+# Thu, 17 Nov 2016 00:36:37 GMT
+ENV BACKDROP_MD5=dbc73ec1841af1b824277a6c1c445250
+# Thu, 17 Nov 2016 00:36:41 GMT
 RUN curl -fSL "https://github.com/backdrop/backdrop/archive/${BACKDROP_VERSION}.tar.gz" -o backdrop.tar.gz 	&& echo "${BACKDROP_MD5} *backdrop.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f backdrop.tar.gz 	&& rm backdrop.tar.gz 	&& chown -R www-data:www-data sites
-# Tue, 15 Nov 2016 17:33:36 GMT
+# Thu, 17 Nov 2016 00:36:42 GMT
 COPY file:c0486d85988902f1e562ad397588637d225d7c83881bf98527f6b5585f66ee13 in /entrypoint.sh 
-# Tue, 15 Nov 2016 17:33:36 GMT
+# Thu, 17 Nov 2016 00:36:42 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 15 Nov 2016 17:33:37 GMT
+# Thu, 17 Nov 2016 00:36:43 GMT
 CMD ["php-fpm"]
 ```
 
@@ -115,11 +115,11 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 15 Nov 2016 17:33:52 GMT  
 		Size: 8.2 MB (8231618 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5b90e309ba66e05d839387ac4a00efad27b734287442375ecb6028affc85843`  
-		Last Modified: Tue, 15 Nov 2016 17:33:52 GMT  
-		Size: 8.1 MB (8070741 bytes)  
+	-	`sha256:361aaaaee6fc211a4be443a28feef9f8e0be36fad9770649c5deadd025d701a8`  
+		Last Modified: Thu, 17 Nov 2016 00:39:20 GMT  
+		Size: 8.1 MB (8072676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61dae76b14d763b33dffa1a0680397992653a4c954a59d810a7be337eea0c791`  
-		Last Modified: Tue, 15 Nov 2016 17:33:50 GMT  
-		Size: 947.0 B  
+	-	`sha256:8d8acf16c5ffa819b52a2781dbe8dc14474bb41296d77ff4ca712af78495bcbb`  
+		Last Modified: Thu, 17 Nov 2016 00:39:17 GMT  
+		Size: 946.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
