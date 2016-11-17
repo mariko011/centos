@@ -170,18 +170,8 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.5.40
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.40.dsc' base-passwd_3.5.40.dsc 1717 SHA256:5044c0964d6fadf21e795e6e8d7e10a5acaca7b2bf97f4c9cfa2d5a771acba84
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.40.tar.xz' base-passwd_3.5.40.tar.xz 52244 SHA256:834e0b23186d90339c1dfa91366906ce6a327d1d31cce925b53e745b7cb44f55
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/base-passwd/3.5.40/
-- https://sources.debian.net/src/base-passwd/3.5.40/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bash=4.4-1`
 
@@ -559,19 +549,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`, `/usr/share/doc/l
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.2.0-10
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0-10.dsc' gcc-6_6.2.0-10.dsc 26160 SHA256:a970ca1f9497430b205c7afec3a2d0bf84398438ca3b5fe228129be6bae4d94f
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0.orig.tar.gz' gcc-6_6.2.0.orig.tar.gz 82473068 SHA256:5c92f14fd520a90dceec8c76bbe400ab572bfb4095e332b73013d3cc59d0fda1
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0-10.diff.gz' gcc-6_6.2.0-10.diff.gz 4616753 SHA256:0ae992e7d6e853c673602f4d8dea9b9d0cd67a2ebdc525b9eb7f03e33751a71d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-6/6.2.0-10/
-- https://sources.debian.net/src/gcc-6/6.2.0-10/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.24-5`
 
