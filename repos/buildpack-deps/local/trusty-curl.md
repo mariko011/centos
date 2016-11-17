@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:155df250e4ae9f209fdf079af5980a63354db87f6ffe8983c585c79abe4dc889`
-- Created: `2016-10-13T21:48:43.498366342Z`
+- Image ID: `sha256:947050355846f204098a94528c330f441748fc03eb83a8ea1308dd344b25f1f3`
+- Created: `2016-11-16T22:58:04.638019032Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -49,22 +49,27 @@ $ apt-get source -qq --print-uris adduser=3.113+nmu3ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.113+nmu3ubuntu3.tar.gz' adduser_3.113+nmu3ubuntu3.tar.gz 358527 SHA256:6126a4e8db7aa1c05780405ce5fb0225a4d5909bbb2a7bf75148ec8d4c4e239c
 ```
 
-### `dpkg` source package: `apt=1.0.1ubuntu2.14`
+### `dpkg` source package: `apt=1.0.1ubuntu2.15`
 
 Binary Packages:
 
-- `apt=1.0.1ubuntu2.14`
-- `apt-utils=1.0.1ubuntu2.14`
-- `libapt-inst1.5:amd64=1.0.1ubuntu2.14`
-- `libapt-pkg4.12:amd64=1.0.1ubuntu2.14`
+- `apt=1.0.1ubuntu2.15`
+- `apt-utils=1.0.1ubuntu2.15`
+- `libapt-inst1.5:amd64=1.0.1ubuntu2.15`
+- `libapt-pkg4.12:amd64=1.0.1ubuntu2.15`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/apt-utils/copyright`, `/usr/share/doc/libapt-inst1.5/copyright`, `/usr/share/doc/libapt-pkg4.12/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=1.0.1ubuntu2.15
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.15.dsc' apt_1.0.1ubuntu2.15.dsc 2461 SHA256:d6ed6382957e9993b8466d20fc2b231cf9328c073ea670a7e5b859b9315fde62
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.15.tar.xz' apt_1.0.1ubuntu2.15.tar.xz 1781580 SHA256:d034fc6a361feac817223c9ed75f3d5fb87a8019666d81100fb524bba7d97c6d
+```
 
 ### `dpkg` source package: `attr=1:2.4.47-1ubuntu1`
 
@@ -341,12 +346,12 @@ $ apt-get source -qq --print-uris cron=3.0pl1-124ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cron/cron_3.0pl1-124ubuntu2.diff.gz' cron_3.0pl1-124ubuntu2.diff.gz 98350 SHA256:282213a327434e44b0f0f6ac23da5f0f4024cf284ca6e008a0b774bb76102dab
 ```
 
-### `dpkg` source package: `curl=7.35.0-1ubuntu2.9`
+### `dpkg` source package: `curl=7.35.0-1ubuntu2.10`
 
 Binary Packages:
 
-- `curl=7.35.0-1ubuntu2.9`
-- `libcurl3:amd64=7.35.0-1ubuntu2.9`
+- `curl=7.35.0-1ubuntu2.10`
+- `libcurl3:amd64=7.35.0-1ubuntu2.10`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -355,8 +360,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.35.0-1ubuntu2.10
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.10.dsc' curl_7.35.0-1ubuntu2.10.dsc 2741 SHA256:2fb4cdd91ed6bd0e262c16d1e6e32a33a6f9d4003834ef3e9b010ed2e24afc06
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0.orig.tar.gz' curl_7.35.0.orig.tar.gz 3544496 SHA256:917d118fc5d61e9dd1538d6519bd93bbebf2e866882419781c2e0fdb2bc42121
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.35.0-1ubuntu2.10.debian.tar.gz' curl_7.35.0-1ubuntu2.10.debian.tar.gz 59782 SHA256:72a2c03db7f4eac287a70a8063d3031620e9cf9d86f0e357dd78ba755e926c18
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-17build1`
 
@@ -421,18 +432,24 @@ $ apt-get source -qq --print-uris db5.3=5.3.28-3ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-3ubuntu3.debian.tar.gz' db5.3_5.3.28-3ubuntu3.debian.tar.gz 31731 SHA256:5d95c5c9d64931463cbf5d525bd9e874ab985304a45e9b585dfe8218e2ead209
 ```
 
-### `dpkg` source package: `dbus=1.6.18-0ubuntu4.3`
+### `dpkg` source package: `dbus=1.6.18-0ubuntu4.4`
 
 Binary Packages:
 
-- `libdbus-1-3:amd64=1.6.18-0ubuntu4.3`
+- `libdbus-1-3:amd64=1.6.18-0ubuntu4.4`
 
 Licenses: (parsed from: `/usr/share/doc/libdbus-1-3/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris dbus=1.6.18-0ubuntu4.4
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18-0ubuntu4.4.dsc' dbus_1.6.18-0ubuntu4.4.dsc 2671 SHA256:8984675882f3b45c0fbf7a838392782509495907c6833a12aabfdaa19ce8bc7b
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18.orig.tar.gz' dbus_1.6.18.orig.tar.gz 1916553 SHA256:7085a0895a9eb11a952394cdbea6d8b4358e17cb991fed0e8fb85e2b9e686dcd
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18-0ubuntu4.4.debian.tar.gz' dbus_1.6.18-0ubuntu4.4.debian.tar.gz 82808 SHA256:eed67c2dd9ffd5c7a8f97e7365a38a840fc37747d1a5335829c7a595ca4710ad
+```
 
 ### `dpkg` source package: `debconf=1.5.51ubuntu2`
 
@@ -1073,14 +1090,8 @@ Licenses: (parsed from: `/usr/share/doc/klibc-utils/copyright`, `/usr/share/doc/
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris klibc=2.0.3-0ubuntu1.14.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/klibc/klibc_2.0.3-0ubuntu1.14.04.1.dsc' klibc_2.0.3-0ubuntu1.14.04.1.dsc 2389 SHA256:ae3e3975055aa3f70e5e17f9a962cf5b374f1da2dd7bb6bdd577faaa1929a501
-'http://archive.ubuntu.com/ubuntu/pool/main/k/klibc/klibc_2.0.3.orig.tar.bz2' klibc_2.0.3.orig.tar.bz2 517788 SHA256:1f9a49c62faf3e166a8deee6c36ad0f4527bb4aa2050123853a4957802235dca
-'http://archive.ubuntu.com/ubuntu/pool/main/k/klibc/klibc_2.0.3-0ubuntu1.14.04.1.debian.tar.xz' klibc_2.0.3-0ubuntu1.14.04.1.debian.tar.xz 20276 SHA256:b2ffe0a1396af9bd9ad74de0c88b0477d2145f5e62af1d48083d19819e8a9460
-```
 
 ### `dpkg` source package: `kmod=15-0ubuntu6`
 
@@ -2440,18 +2451,24 @@ $ apt-get source -qq --print-uris sqlite3=3.8.2-1ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.8.2-1ubuntu2.1.debian.tar.gz' sqlite3_3.8.2-1ubuntu2.1.debian.tar.gz 24599 SHA256:80bc6b9e2c4e5b064507b9a03df4f3f786c7246831ad5d5309cdc178ceacfb26
 ```
 
-### `dpkg` source package: `sudo=1.8.9p5-1ubuntu1.2`
+### `dpkg` source package: `sudo=1.8.9p5-1ubuntu1.3`
 
 Binary Packages:
 
-- `sudo=1.8.9p5-1ubuntu1.2`
+- `sudo=1.8.9p5-1ubuntu1.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris sudo=1.8.9p5-1ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.3.dsc' sudo_1.8.9p5-1ubuntu1.3.dsc 2032 SHA256:629845f03bef3c3c2e886561e47b0ca7bbf366a5301f29170df10ee82a4a2855
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5.orig.tar.gz' sudo_1.8.9p5.orig.tar.gz 2179066 SHA256:bc9d5c96de5f8b4d2b014f87a37870aef60d2891c869202454069150a21a5c21
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.3.debian.tar.xz' sudo_1.8.9p5-1ubuntu1.3.debian.tar.xz 33260 SHA256:bae36c26cf8a5f171035b17087f06f23bd44b510273e9c7f1f54dfb147d67850
+```
 
 ### `dpkg` source package: `systemd=204-5ubuntu20.19`
 
@@ -2519,18 +2536,24 @@ $ apt-get source -qq --print-uris tar=1.27.1-1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.27.1-1.debian.tar.xz' tar_1.27.1-1.debian.tar.xz 19540 SHA256:fea78ca36ff59f3fe84c060adf039283b1b8238ef9ce3428e85fe04c4812815c
 ```
 
-### `dpkg` source package: `tzdata=2016f-0ubuntu0.14.04`
+### `dpkg` source package: `tzdata=2016h-0ubuntu0.14.04`
 
 Binary Packages:
 
-- `tzdata=2016f-0ubuntu0.14.04`
+- `tzdata=2016h-0ubuntu0.14.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2016h-0ubuntu0.14.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h-0ubuntu0.14.04.dsc' tzdata_2016h-0ubuntu0.14.04.dsc 2048 SHA256:734a5f544c55a71c4464da0e523e86fe70182244904ac44aba957202ed4df29c
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h.orig.tar.gz' tzdata_2016h.orig.tar.gz 318714 SHA256:da1b74fc2dec2ce8b64948dafb0bfc2f923c830d421a7ae4d016226135697a64
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h-0ubuntu0.14.04.debian.tar.xz' tzdata_2016h-0ubuntu0.14.04.debian.tar.xz 100444 SHA256:59709bb8abbb149be2e5a0187b5ea7e51f9a4fd4adccb6c309b88a9255340d6d
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 

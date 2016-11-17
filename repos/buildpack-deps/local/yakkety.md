@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4a4a42636cdc66bfca1f815c879c4c1142fc81a2fa4705c77abc69a2297f01ac`
-- Created: `2016-11-08T20:02:26.835325719Z`
+- Image ID: `sha256:fcf61edd1b2c0e88912a4b7441dbc868d47a5a69182ff81e32d009a5a7c0e9e7`
+- Created: `2016-11-16T23:07:39.162783041Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -2885,18 +2885,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
 ```
 
-### `dpkg` source package: `linux=4.8.0-26.28`
+### `dpkg` source package: `linux=4.8.0-27.29`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.8.0-26.28`
+- `linux-libc-dev:amd64=4.8.0-27.29`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.8.0-27.29
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0-27.29.dsc' linux_4.8.0-27.29.dsc 8764 SHA256:3bdc7a40c1b753dc259e94f6950cd5d703b9d8ea2b4650a48bdd1958d8aaf7cd
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0.orig.tar.gz' linux_4.8.0.orig.tar.gz 139977270 SHA256:80229497a1584076d534e96acf529a01a0fc00044eba9e6c00ae936e453dbd3c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0-27.29.diff.gz' linux_4.8.0-27.29.diff.gz 9026053 SHA256:adc12ccb4a4466de9bee18d667728fe93d1b40a6e9fe20c09f8a53272d63ff52
+```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu5`
 
@@ -3894,12 +3900,12 @@ $ apt-get source -qq --print-uris subversion=1.9.4-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.4-1ubuntu1.diff.gz' subversion_1.9.4-1ubuntu1.diff.gz 2429159 SHA256:b10c57622ab3b3c727a8e56775e68dd724768e225d8edffa38023e245a85f49d
 ```
 
-### `dpkg` source package: `systemd=231-9git1`
+### `dpkg` source package: `systemd=231-9ubuntu1`
 
 Binary Packages:
 
-- `libsystemd0:amd64=231-9git1`
-- `libudev1:amd64=231-9git1`
+- `libsystemd0:amd64=231-9ubuntu1`
+- `libudev1:amd64=231-9ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -3914,10 +3920,10 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=231-9git1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-9git1.dsc' systemd_231-9git1.dsc 4459 SHA256:e25d73cf929bd06557864a842bb81db9c209403a23dc2189f846cda0bbda66d2
+$ apt-get source -qq --print-uris systemd=231-9ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-9ubuntu1.dsc' systemd_231-9ubuntu1.dsc 4550 SHA256:41eb445545d3a11dca7bc790dcbd18e799045962ad27de8f844f0a57b4622a7c
 'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231.orig.tar.gz' systemd_231.orig.tar.gz 4381464 SHA256:899733ad6c157cedbb89aec4efe3bc824dcfd65a1d6f6bebc7b043f7924e39b4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-9git1.debian.tar.xz' systemd_231-9git1.debian.tar.xz 151716 SHA256:4184b7cd6c9bc50efbe97d86c203d50b3443c6344e1768acd6efd1faf37d8eb5
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-9ubuntu1.debian.tar.xz' systemd_231-9ubuntu1.debian.tar.xz 152384 SHA256:c58982e666e7a39aa1b605c590e53bc1ad3b84694f4a39f9ffc37d5ae5105e13
 ```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`
@@ -3980,11 +3986,11 @@ $ apt-get source -qq --print-uris tiff=4.0.6-2
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6-2.debian.tar.xz' tiff_4.0.6-2.debian.tar.xz 19960 SHA256:82a0ef3f713d2a22d40b9be71fd121b9136657d313ae6b76b51430302a7b9f8b
 ```
 
-### `dpkg` source package: `tzdata=2016g-1`
+### `dpkg` source package: `tzdata=2016h-0ubuntu0.16.10`
 
 Binary Packages:
 
-- `tzdata=2016g-1`
+- `tzdata=2016h-0ubuntu0.16.10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3993,10 +3999,10 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2016g-1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016g-1.dsc' tzdata_2016g-1.dsc 2138 SHA256:1747bf9b3f0de5060a8f983490bc617425beb4fc06d03ae43317bd206b77dc8a
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016g.orig.tar.gz' tzdata_2016g.orig.tar.gz 316669 SHA256:3c7137b2bc47323b0de47b77786bacf81ed503d4b2c693ff8ada2fbd1281ebd1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016g-1.debian.tar.xz' tzdata_2016g-1.debian.tar.xz 100132 SHA256:e9c1d902baa31ea17297ad684cbf2fa4c090c14a57754341dcc4e6527686d31b
+$ apt-get source -qq --print-uris tzdata=2016h-0ubuntu0.16.10
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h-0ubuntu0.16.10.dsc' tzdata_2016h-0ubuntu0.16.10.dsc 2104 SHA256:645d8aa5dd2f11304c80a418558ea1332f2d30edbd03273c7440f8b63cde0540
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h.orig.tar.gz' tzdata_2016h.orig.tar.gz 318714 SHA256:da1b74fc2dec2ce8b64948dafb0bfc2f923c830d421a7ae4d016226135697a64
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h-0ubuntu0.16.10.debian.tar.xz' tzdata_2016h-0ubuntu0.16.10.debian.tar.xz 100324 SHA256:0028b5c0dbd04ec3ae116ca9d656b0d1b675d49fa9c630344907099052b5d6ee
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2016.09.19`

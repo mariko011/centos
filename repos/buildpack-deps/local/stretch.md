@@ -353,18 +353,8 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.5.40
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.40.dsc' base-passwd_3.5.40.dsc 1717 SHA256:5044c0964d6fadf21e795e6e8d7e10a5acaca7b2bf97f4c9cfa2d5a771acba84
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.40.tar.xz' base-passwd_3.5.40.tar.xz 52244 SHA256:834e0b23186d90339c1dfa91366906ce6a327d1d31cce925b53e745b7cb44f55
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/base-passwd/3.5.40/
-- https://sources.debian.net/src/base-passwd/3.5.40/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bash=4.4-1`
 
@@ -1239,19 +1229,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp-6/copyright`, `/usr/share/doc/g++-6/
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.2.0-10
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0-10.dsc' gcc-6_6.2.0-10.dsc 26160 SHA256:a970ca1f9497430b205c7afec3a2d0bf84398438ca3b5fe228129be6bae4d94f
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0.orig.tar.gz' gcc-6_6.2.0.orig.tar.gz 82473068 SHA256:5c92f14fd520a90dceec8c76bbe400ab572bfb4095e332b73013d3cc59d0fda1
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.0-10.diff.gz' gcc-6_6.2.0-10.diff.gz 4616753 SHA256:0ae992e7d6e853c673602f4d8dea9b9d0cd67a2ebdc525b9eb7f03e33751a71d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-6/6.2.0-10/
-- https://sources.debian.net/src/gcc-6/6.2.0-10/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-defaults=1.163`
 
@@ -4729,20 +4708,8 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.15.0-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.15.0-1.dsc' sqlite3_3.15.0-1.dsc 2478 SHA256:f1b1f00a7c6ef9cfa91db69da82c7f19384438536025bb7be2d56036d4ac8a87
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.15.0.orig-www.tar.xz' sqlite3_3.15.0.orig-www.tar.xz 3337960 SHA256:9bc6a33348508342d979da0a0a439b1044335fd57203c3011a02348911f8e142
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.15.0.orig.tar.xz' sqlite3_3.15.0.orig.tar.xz 5318748 SHA256:656d8573d15896455cbdcfaeb6cbeed5b654e87fa52b8e797eb2bbd7d04f7639
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.15.0-1.debian.tar.xz' sqlite3_3.15.0-1.debian.tar.xz 16660 SHA256:94d19d9d43112351549de29faedd4b0855680855f58512b3bc418a2aa395632e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sqlite3/3.15.0-1/
-- https://sources.debian.net/src/sqlite3/3.15.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `subversion=1.9.4-3`
 
