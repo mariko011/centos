@@ -291,19 +291,8 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bash=4.4-1
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4-1.dsc' bash_4.4-1.dsc 2196 SHA256:a5c6479f2281af967c940c1bf734170dfae6cc334ebfd9f54276227d37e6920e
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4.orig.tar.xz' bash_4.4.orig.tar.xz 4878580 SHA256:819ebb6a23799e9e4ca56ac579778c46902005bd5ade4f131ed293d9f77108e7
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4-1.debian.tar.xz' bash_4.4-1.debian.tar.xz 59008 SHA256:a97e9b07e116b7109126440ad1124e0147f7a6f3f0a2c1c87ea3ac5504733ba0
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/bash/4.4-1/
-- https://sources.debian.net/src/bash/4.4-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bzip2=1.0.6-8`
 
@@ -1010,19 +999,8 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris git=1:2.10.2-2
-'http://deb.debian.org/debian/pool/main/g/git/git_2.10.2-2.dsc' git_2.10.2-2.dsc 2839 SHA256:81e2d19cc28416a49c122e0e1d59c34dafa4340994110d309bcdb41303b3c892
-'http://deb.debian.org/debian/pool/main/g/git/git_2.10.2.orig.tar.xz' git_2.10.2.orig.tar.xz 4106108 SHA256:94802903dd707d85ca3b9a2be35e936a54ce86375f52c6a789efe7ce7e238671
-'http://deb.debian.org/debian/pool/main/g/git/git_2.10.2-2.debian.tar.xz' git_2.10.2-2.debian.tar.xz 511468 SHA256:6b39f43c310f756042769f7aa72e1f8a6859192f28f9fedc3435514977738cdb
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/git/1:2.10.2-2/
-- https://sources.debian.net/src/git/1:2.10.2-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.24-5`
 
@@ -1708,19 +1686,8 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 - `Chromium`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.14.0-1
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.14.0-1.dsc' libpsl_0.14.0-1.dsc 2268 SHA256:09e263ac7523d87e3c1305c481d7b0d0def47da863d86db29c80d1229e2771a3
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.14.0.orig.tar.gz' libpsl_0.14.0.orig.tar.gz 46002 SHA256:f1cb683b9848c2865f81bcde26baf953f8ed4564dbe01735edfcc31f516ef007
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.14.0-1.debian.tar.xz' libpsl_0.14.0-1.debian.tar.xz 8128 SHA256:cddd2a569d43034b305b05059c1e058502fa5b976432a82ed8ce39f6ab4e4ee7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libpsl/0.14.0-1/
-- https://sources.debian.net/src/libpsl/0.14.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libselinux=2.6-1`
 
