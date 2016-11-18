@@ -1,7 +1,7 @@
 ## `python:3-onbuild`
 
 ```console
-$ docker pull python@sha256:97c942e0be3c9d2caea5b8c60668c44994dc32dc64946a84bb357b954462adb7
+$ docker pull python@sha256:62f4bd1171e987747e4f9be9f2a75ccda8ddc469d05fe1301faf68227e92c4d0
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull python@sha256:97c942e0be3c9d2caea5b8c60668c44994dc32dc64946a84bb35
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.5 MB (265504211 bytes)**  
+-	Total Size: **265.6 MB (265556547 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a8248d5dec647d5e5447cc684aa0fc8fb070210ecdab96d5b5a81aae3837e52e`
+-	Image ID: `sha256:82d1760f18972da75fbe6eff54acbe0ba717313dee5b67dade637df85dfa9a49`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -37,23 +37,23 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& 
 ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
 # Thu, 10 Nov 2016 08:24:28 GMT
 ENV PYTHON_VERSION=3.5.2
-# Thu, 10 Nov 2016 08:24:29 GMT
-ENV PYTHON_PIP_VERSION=8.1.2
-# Thu, 10 Nov 2016 08:26:02 GMT
+# Thu, 17 Nov 2016 22:42:02 GMT
+ENV PYTHON_PIP_VERSION=9.0.1
+# Thu, 17 Nov 2016 22:43:38 GMT
 RUN set -ex 	&& buildDeps=' 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-loadable-sqlite-extensions 		--enable-shared 	&& make -j$(nproc) 	&& make install 	&& ldconfig 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& python3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& find /usr/local -depth 		\( 			\( -type d -a -name test -o -name tests \) 			-o 			\( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Thu, 10 Nov 2016 08:26:03 GMT
+# Thu, 17 Nov 2016 22:43:39 GMT
 RUN cd /usr/local/bin 	&& { [ -e easy_install ] || ln -s easy_install-* easy_install; } 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Thu, 10 Nov 2016 08:26:04 GMT
+# Thu, 17 Nov 2016 22:43:39 GMT
 CMD ["python3"]
-# Thu, 10 Nov 2016 08:27:09 GMT
+# Thu, 17 Nov 2016 22:47:33 GMT
 RUN mkdir -p /usr/src/app
-# Thu, 10 Nov 2016 08:27:10 GMT
+# Thu, 17 Nov 2016 22:47:33 GMT
 WORKDIR /usr/src/app
-# Thu, 10 Nov 2016 08:27:10 GMT
+# Thu, 17 Nov 2016 22:47:33 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Thu, 10 Nov 2016 08:27:11 GMT
+# Thu, 17 Nov 2016 22:47:34 GMT
 ONBUILD RUN pip install --no-cache-dir -r requirements.txt
-# Thu, 10 Nov 2016 08:27:11 GMT
+# Thu, 17 Nov 2016 22:47:34 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -78,15 +78,15 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Tue, 08 Nov 2016 19:50:50 GMT  
 		Size: 2.9 MB (2889210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6792e43546b23c2901dd53a2b8b53db8d5f529cae80317d65f7d412248047101`  
-		Last Modified: Thu, 10 Nov 2016 08:26:22 GMT  
-		Size: 20.4 MB (20422126 bytes)  
+	-	`sha256:e7fb7abf1a5319a6c5fa6342cb6142eec078025dac45887530bc29836d19d126`  
+		Last Modified: Thu, 17 Nov 2016 23:04:17 GMT  
+		Size: 20.5 MB (20474462 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61cd79806d9e933d36aa5a43190a1c562cdf6685be59367fc6b0801fd3a5fc8e`  
-		Last Modified: Thu, 10 Nov 2016 08:26:15 GMT  
+	-	`sha256:dcf1c87e959fd83fe7004a8bf9772a279fa7b6c39137be9a3d904c9c779435a5`  
+		Last Modified: Thu, 17 Nov 2016 23:04:10 GMT  
 		Size: 265.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3973f9b543cd9dfee402c77984b985ef6ed376e074cbb4fe84c9b7d8dcf5df3`  
-		Last Modified: Thu, 10 Nov 2016 08:27:23 GMT  
+	-	`sha256:db9d99d344ade2b7f9aa8dd45c72db910779310bf596b9cf125c9a915085c741`  
+		Last Modified: Thu, 17 Nov 2016 23:07:37 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
