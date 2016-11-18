@@ -820,18 +820,8 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris debianutils=4.8
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.dsc' debianutils_4.8.dsc 1703 SHA256:d1730beb7688dac01c584843af75cf88e066ee58e126eae3a19777922501249c
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.tar.xz' debianutils_4.8.tar.xz 155692 SHA256:afa95bbe6b6fd3ef3c0c838b2d7232f09fabeff593ca4b5583cffa6748567ee2
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/debianutils/4.8/
-- https://sources.debian.net/src/debianutils/4.8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `dh-python=2.20160818`
 
@@ -1602,19 +1592,8 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 - `MPL-1.1 | GPL-2 | LGPL-2.1`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris graphite2=1.3.8-1
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.8-1.dsc' graphite2_1.3.8-1.dsc 2124 SHA256:5f2f5ec61c98fd5a836516fdbb9e7139483efe0932aa7c77d2dab0b531ca1b61
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.8.orig.tar.gz' graphite2_1.3.8.orig.tar.gz 3885841 SHA256:9f3f25b3a8495ce0782e77f69075c0dd9b7c054847b9bf9ff130bec38f4c8cc2
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.8-1.debian.tar.xz' graphite2_1.3.8-1.debian.tar.xz 9880 SHA256:3e72d7b1511b5b646ec7349289938995830a93045b913181f5153b624722d81e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/graphite2/1.3.8-1/
-- https://sources.debian.net/src/graphite2/1.3.8-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `graphviz=2.38.0-16`
 
