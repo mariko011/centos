@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:eee8de5aae92b749b66b37ed67f1076eda7290dd25bc4f02c1ad74dd9a2c6204`
-- Created: `2016-11-10T02:56:56.663866001Z`
+- Image ID: `sha256:2e0a93680a55db3928384d9b9989d69ebb7f9b323bd52a9057301ccb3f7aedbf`
+- Created: `2016-11-18T00:53:50.840054231Z`
 - Arch: `linux`/`amd64`
 - Command: `["celery","worker"]`
 - Environment:
@@ -11,7 +11,7 @@
   - `LANG=C.UTF-8`
   - `GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D`
   - `PYTHON_VERSION=3.5.2`
-  - `PYTHON_PIP_VERSION=8.1.2`
+  - `PYTHON_PIP_VERSION=9.0.1`
   - `CELERY_VERSION=3.1.25`
   - `CELERY_BROKER_URL=amqp://guest@rabbit`
 
