@@ -1500,19 +1500,8 @@ Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
 - `LGPL-3+`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris pinentry=0.9.7-6
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_0.9.7-6.dsc' pinentry_0.9.7-6.dsc 2688 SHA256:f0c3782abc4ab1262116554e5949f5e98d9050765e2c14cd950645033182d968
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_0.9.7.orig.tar.bz2' pinentry_0.9.7.orig.tar.bz2 432978 SHA256:6398208394972bbf897c3325780195584682a0d0c164ca5a0da35b93b1e4e7b2
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_0.9.7-6.debian.tar.xz' pinentry_0.9.7-6.debian.tar.xz 17948 SHA256:7578eb934ca4c66927cb74096c121d8b6c13af6af383531eca650fc8661bb617
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/pinentry/0.9.7-6/
-- https://sources.debian.net/src/pinentry/0.9.7-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `readline=7.0-1`
 
