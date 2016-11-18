@@ -1,9 +1,9 @@
-# `drupal:7.51-apache`
+# `drupal:7.52-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:40b02f72aaff3a6feed49599bcb80147f08af1bd2d634fbc9abacbb84d2fca72`
-- Created: `2016-11-15T17:37:49.181629403Z`
+- Image ID: `sha256:4226f18b1b270206d37c5da6830dc7a0a6279aa52dd00e2f1647411231f15733`
+- Created: `2016-11-17T21:42:26.136846298Z`
 - Arch: `linux`/`amd64`
 - Command: `["apache2-foreground"]`
 - Environment:
@@ -20,8 +20,8 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.13.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=357ba7f93975d7d836abed0852dc3ed96a988af539e87750613294cbee82f1bf`
   - `PHP_MD5=eb117bf1d1efc99c522f132b265a3402`
-  - `DRUPAL_VERSION=7.51`
-  - `DRUPAL_MD5=49f82c1cac8e4bd4941ca160fcbee93d`
+  - `DRUPAL_VERSION=7.52`
+  - `DRUPAL_MD5=4963e68ca12918d3a3eae56054214191`
 
 ## `dpkg` (`.deb`-based packages)
 
