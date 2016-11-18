@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:078f6a1771c84107ab8a655bcf68f444deadea3df6bc8fe2e109e9ef392fc5fb`
-- Created: `2016-11-10T08:47:18.187000672Z`
+- Image ID: `sha256:e38d0ee6316c88a01a0804b0c5dd9276e4fbe7de73ee3abfe118df633afaea54`
+- Created: `2016-11-18T02:25:31.65666479Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["passenger","start"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUBY_MAJOR=2.2`
-  - `RUBY_VERSION=2.2.5`
-  - `RUBY_DOWNLOAD_SHA256=30c4b31697a4ca4ea0c8db8ad30cf45e6690a0f09687e5d483c933c03ca335e3`
+  - `RUBY_VERSION=2.2.6`
+  - `RUBY_DOWNLOAD_SHA256=de8e192791cb157d610c48a9a9ff6e7f19d67ce86052feae62b82e3682cc675f`
   - `RUBYGEMS_VERSION=2.6.8`
   - `BUNDLER_VERSION=1.13.6`
   - `GEM_HOME=/usr/local/bundle`
