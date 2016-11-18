@@ -1262,14 +1262,8 @@ Licenses: (parsed from: `/usr/share/doc/klibc-utils/copyright`, `/usr/share/doc/
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris klibc=2.0.3-0ubuntu1.14.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/klibc/klibc_2.0.3-0ubuntu1.14.04.1.dsc' klibc_2.0.3-0ubuntu1.14.04.1.dsc 2389 SHA256:ae3e3975055aa3f70e5e17f9a962cf5b374f1da2dd7bb6bdd577faaa1929a501
-'http://archive.ubuntu.com/ubuntu/pool/main/k/klibc/klibc_2.0.3.orig.tar.bz2' klibc_2.0.3.orig.tar.bz2 517788 SHA256:1f9a49c62faf3e166a8deee6c36ad0f4527bb4aa2050123853a4957802235dca
-'http://archive.ubuntu.com/ubuntu/pool/main/k/klibc/klibc_2.0.3-0ubuntu1.14.04.1.debian.tar.xz' klibc_2.0.3-0ubuntu1.14.04.1.debian.tar.xz 20276 SHA256:b2ffe0a1396af9bd9ad74de0c88b0477d2145f5e62af1d48083d19819e8a9460
-```
 
 ### `dpkg` source package: `kmod=15-0ubuntu6`
 
@@ -2499,14 +2493,8 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-7-jre-headless/copyright`)
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openjdk-7=7u111-2.6.7-0ubuntu0.14.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-7/openjdk-7_7u111-2.6.7-0ubuntu0.14.04.3.dsc' openjdk-7_7u111-2.6.7-0ubuntu0.14.04.3.dsc 4797 SHA256:1f892beb76ab7d29c869c8b9ff2ad520732eba6b1bce455ee6dd472687c6a660
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-7/openjdk-7_7u111-2.6.7.orig.tar.gz' openjdk-7_7u111-2.6.7.orig.tar.gz 58314652 SHA256:6a6fc6733cb3c090c3012772d5ede4ac398041548f561c63e9f3ce6e9fd64d7e
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-7/openjdk-7_7u111-2.6.7-0ubuntu0.14.04.3.debian.tar.xz' openjdk-7_7u111-2.6.7-0ubuntu0.14.04.3.debian.tar.xz 163300 SHA256:665f4c2ec6e987cc76ad14857c8275cd42ce1d9b736ee22debfb15c73556b1dd
-```
 
 ### `dpkg` source package: `openldap=2.4.31-1+nmu2ubuntu8.3`
 
