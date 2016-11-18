@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3d633e95620d3e8c32dc05e1e673a00c0a0af1aabc580b7749a7211c8882aa3e`
-- Created: `2016-11-15T18:44:20.083951583Z`
+- Image ID: `sha256:4f13e87bd337b92a2b4773122bcc55bb30396f834299b895d7d8e50f4392d84b`
+- Created: `2016-11-18T02:48:43.991889809Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["solr-foreground"]`
@@ -11,8 +11,8 @@
   - `PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre`
-  - `JAVA_VERSION=8u92`
-  - `JAVA_ALPINE_VERSION=8.92.14-r1`
+  - `JAVA_VERSION=8u111`
+  - `JAVA_ALPINE_VERSION=8.111.14-r0`
   - `SOLR_USER=solr`
   - `SOLR_UID=8983`
   - `SOLR_KEY=EDF961FF03E647F9CA8A9C2C758051CCA3A13A7F`
