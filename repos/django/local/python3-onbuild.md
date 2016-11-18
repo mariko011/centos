@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0f546bfd396fe037e3b18a2546fe48ae3bb81dc64fdd36d036418eadb3c66a18`
-- Created: `2016-11-10T09:09:23.343853718Z`
+- Image ID: `sha256:19af2f4248662aa19dd3f5f76b83fb09bcf6d85c0191fb60b9d707d491d09efa`
+- Created: `2016-11-18T00:58:31.064011218Z`
 - Arch: `linux`/`amd64`
 - Command: `["python","manage.py","runserver","0.0.0.0:8000"]`
 - Environment:
@@ -11,7 +11,7 @@
   - `LANG=C.UTF-8`
   - `GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D`
   - `PYTHON_VERSION=3.4.5`
-  - `PYTHON_PIP_VERSION=8.1.2`
+  - `PYTHON_PIP_VERSION=9.0.1`
 
 ## `dpkg` (`.deb`-based packages)
 
