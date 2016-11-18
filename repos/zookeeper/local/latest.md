@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ae952b380d94f9ea49bf01d2fe1dffa88e8ea1728319d8c727d6119adb220fcf`
-- Created: `2016-10-19T00:40:18.557848972Z`
+- Image ID: `sha256:5aaf139e56a66f73397a749e57b8708517de6384c2f59673fc5b50114e926d8c`
+- Created: `2016-11-18T03:12:42.055894007Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["zkServer.sh","start-foreground"]`
@@ -11,8 +11,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/zookeeper-3.4.9/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre`
-  - `JAVA_VERSION=8u92`
-  - `JAVA_ALPINE_VERSION=8.92.14-r1`
+  - `JAVA_VERSION=8u111`
+  - `JAVA_ALPINE_VERSION=8.111.14-r0`
   - `ZOO_USER=zookeeper`
   - `ZOO_CONF_DIR=/conf`
   - `ZOO_DATA_DIR=/data`
