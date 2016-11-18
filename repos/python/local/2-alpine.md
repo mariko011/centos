@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:055c3b9a96561b9e3684d8f489d2aaacfbd4aa63261b90af5bac36a835c8e558`
-- Created: `2016-10-18T23:57:13.605868598Z`
+- Image ID: `sha256:9c8c07c0f9b7aece6f72e42c9a642382070709e544e49371398d5c57f0c55c07`
+- Created: `2016-11-17T22:23:09.855231248Z`
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
 - Environment:
@@ -11,4 +11,4 @@
   - `LANG=C.UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
   - `PYTHON_VERSION=2.7.12`
-  - `PYTHON_PIP_VERSION=8.1.2`
+  - `PYTHON_PIP_VERSION=9.0.1`
