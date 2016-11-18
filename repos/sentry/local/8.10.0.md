@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:90ff5b75274cb7becdbb73b13b011c8373a1e99551ead40b6104c514b2607ba5`
-- Created: `2016-11-09T01:28:58.76788231Z`
+- Image ID: `sha256:aa1bb2af66ae61f59db8facf5363b4e56549b54f0dbaa7dba71bc97fb37897ea`
+- Created: `2016-11-18T02:34:58.743886451Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["run","web"]`
@@ -12,7 +12,7 @@
   - `LANG=C.UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
   - `PYTHON_VERSION=2.7.12`
-  - `PYTHON_PIP_VERSION=8.1.2`
+  - `PYTHON_PIP_VERSION=9.0.1`
   - `PIP_NO_CACHE_DIR=off`
   - `PIP_DISABLE_PIP_VERSION_CHECK=on`
   - `GOSU_VERSION=1.10`
