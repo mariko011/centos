@@ -348,19 +348,8 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy16
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy16.dsc' curl_7.26.0-1+wheezy16.dsc 2520 SHA256:b1b2dd8ecab246d62f4610cfc1020fee540a19a7adce07f6a53ae0579a010d64
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy16.debian.tar.gz' curl_7.26.0-1+wheezy16.debian.tar.gz 47203 SHA256:03e4688e14293eea339415618c02a2f989aea3a5c9ea2090c8a98638676f0337
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/curl/7.26.0-1+wheezy16/
-- https://sources.debian.net/src/curl/7.26.0-1+wheezy16/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
 
