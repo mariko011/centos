@@ -1,9 +1,9 @@
-# `opensuse:42.1`
+# `opensuse:42.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:63c4e5e0fa497963defdbac080fb7256147d169cb2f154b7bdc823e008a81955`
-- Created: `2016-10-14T17:14:11.862916734Z`
+- Image ID: `sha256:166c348fcfb503ee04ad71e35e3ca34e63db9241fd1b230b3e7d68cd1e277dcf`
+- Created: `2016-11-18T18:33:10.397131991Z`
 - Arch: `linux`/`amd64`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
