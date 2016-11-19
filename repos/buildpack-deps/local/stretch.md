@@ -278,18 +278,8 @@ Licenses: (parsed from: `/usr/share/doc/autotools-dev/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris autotools-dev=20160430.1
-'http://deb.debian.org/debian/pool/main/a/autotools-dev/autotools-dev_20160430.1.dsc' autotools-dev_20160430.1.dsc 1641 SHA256:91533f61bc6ac642c72734f29c57de7c231f4b972bf28bc37275b8fb1fe598e1
-'http://deb.debian.org/debian/pool/main/a/autotools-dev/autotools-dev_20160430.1.tar.xz' autotools-dev_20160430.1.tar.xz 63312 SHA256:c7f1806eb62a12e5706cef413e9eca2d599f00d898eff59f30d83c1cc814848c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/autotools-dev/20160430.1/
-- https://sources.debian.net/src/autotools-dev/20160430.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `avahi=0.6.32-1`
 
@@ -1527,20 +1517,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.5-6
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5-6.dsc' gnutls28_3.5.5-6.dsc 3138 SHA256:3daaa121d262736028e20bc9fe0fe6f84a8d8cc0c9172a03d90be6af56b3ed85
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5.orig.tar.xz' gnutls28_3.5.5.orig.tar.xz 6974628 SHA256:86994fe7804ee16d2811e366b9bf2f75304f8e470ae0e3716d60ffeedac0e529
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5.orig.tar.xz.asc' gnutls28_3.5.5.orig.tar.xz.asc 287 SHA256:e875ac977d00a4557c2da5ce155d2d1872601e6234afbfa58ee9dd1359e295bd
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5-6.debian.tar.xz' gnutls28_3.5.5-6.debian.tar.xz 104132 SHA256:4e98d941b2bcbaeb0e762d286ec190e1c57c762cf91f746c5db191e1dd430fdc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnutls28/3.5.5-6/
-- https://sources.debian.net/src/gnutls28/3.5.5-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gobject-introspection=1.50.0-1`
 
@@ -2996,19 +2974,8 @@ Licenses: (parsed from: `/usr/share/doc/libwmf-dev/copyright`, `/usr/share/doc/l
 
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libwmf=0.2.8.4-10.5
-'http://deb.debian.org/debian/pool/main/libw/libwmf/libwmf_0.2.8.4-10.5.dsc' libwmf_0.2.8.4-10.5.dsc 2064 SHA256:f8e927eaeec13e08e07f86d889c99469196fb10336df8aa5d18bf9822fc5323a
-'http://deb.debian.org/debian/pool/main/libw/libwmf/libwmf_0.2.8.4.orig.tar.gz' libwmf_0.2.8.4.orig.tar.gz 2169375 SHA256:5b345c69220545d003ad52bfd035d5d6f4f075e65204114a9e875e84895a7cf8
-'http://deb.debian.org/debian/pool/main/libw/libwmf/libwmf_0.2.8.4-10.5.debian.tar.xz' libwmf_0.2.8.4-10.5.debian.tar.xz 10804 SHA256:3f230d73634d0cb5978ba3cd07251da4772e49ee3ced96f7002252cb8bd745d9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libwmf/0.2.8.4-10.5/
-- https://sources.debian.net/src/libwmf/0.2.8.4-10.5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libx11=2:1.6.3-1`
 

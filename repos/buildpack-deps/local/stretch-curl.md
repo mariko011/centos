@@ -729,20 +729,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.5-6
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5-6.dsc' gnutls28_3.5.5-6.dsc 3138 SHA256:3daaa121d262736028e20bc9fe0fe6f84a8d8cc0c9172a03d90be6af56b3ed85
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5.orig.tar.xz' gnutls28_3.5.5.orig.tar.xz 6974628 SHA256:86994fe7804ee16d2811e366b9bf2f75304f8e470ae0e3716d60ffeedac0e529
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5.orig.tar.xz.asc' gnutls28_3.5.5.orig.tar.xz.asc 287 SHA256:e875ac977d00a4557c2da5ce155d2d1872601e6234afbfa58ee9dd1359e295bd
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5-6.debian.tar.xz' gnutls28_3.5.5-6.debian.tar.xz 104132 SHA256:4e98d941b2bcbaeb0e762d286ec190e1c57c762cf91f746c5db191e1dd430fdc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnutls28/3.5.5-6/
-- https://sources.debian.net/src/gnutls28/3.5.5-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.26-1`
 
