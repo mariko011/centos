@@ -1,20 +1,21 @@
-# `arangodb:latest`
+# `arangodb:3.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7697f3e45ffb9ac5ef24afca2b24114234d9ba56b5e54a747dfce0375d298762`
-- Created: `2016-11-08T18:50:17.428971548Z`
+- Image ID: `sha256:e3b144ab9089ff06be9560e0be727d745b0d994af83f947bbd4e108015fcd1c7`
+- Created: `2016-11-18T18:12:05.031957513Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["arangod"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `ARCHITECTURE=amd64`
-  - `ARANGO_VERSION=3.0.10`
-  - `ARANGO_URL=https://www.arangodb.com/repositories/arangodb3/Debian_8.0`
-  - `ARANGO_PACKAGE=arangodb3_3.0.10_amd64.deb`
-  - `ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb3/Debian_8.0/amd64/arangodb3_3.0.10_amd64.deb`
-  - `ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb3/Debian_8.0/amd64/arangodb3_3.0.10_amd64.deb.asc`
+  - `DEB_PACKAGE_VERSION=1`
+  - `ARANGO_VERSION=3.1.1`
+  - `ARANGO_URL=https://www.arangodb.com/repositories/arangodb31/Debian_8.0`
+  - `ARANGO_PACKAGE=arangodb3-3.1.1-1_amd64.deb`
+  - `ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb31/Debian_8.0/amd64/arangodb3-3.1.1-1_amd64.deb`
+  - `ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb31/Debian_8.0/amd64/arangodb3-3.1.1-1_amd64.deb.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -92,15 +93,15 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/apt/1.0.9.8.3/
 - https://sources.debian.net/src/apt/1.0.9.8.3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `arangodb=3.0.10`
+### `dpkg` source package: `arangodb3=3.1.1`
 
 Binary Packages:
 
-- `arangodb3=3.0.10`
+- `arangodb3=3.1.1`
 
-Licenses: (parsed from: `/usr/share/doc/arangodb3/copyright`)
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
+  If source is available (seen below), check the contents of `debian/copyright` within it.
 
-- `Apache-2.0`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
