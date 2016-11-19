@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:31e32da42a6969e3b9bd03f7c31a3edbc336db055e51be6bd081384ba54cfb1c`
-- Created: `2016-11-10T03:03:55.996083711Z`
+- Image ID: `sha256:12c979cf8e4852ada5e033f83536bb3b1ab016e1e6032408611b925b2f24aa80`
+- Created: `2016-11-18T00:57:19.231550154Z`
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
 - Environment:
@@ -11,7 +11,7 @@
   - `LANG=C.UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
   - `PYTHON_VERSION=2.7.12`
-  - `PYTHON_PIP_VERSION=8.1.2`
+  - `PYTHON_PIP_VERSION=9.0.1`
   - `DJANGO_VERSION=1.10.3`
 
 ## `dpkg` (`.deb`-based packages)
