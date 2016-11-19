@@ -357,18 +357,8 @@ Licenses: (parsed from: `/usr/share/doc/cdbs/copyright`)
 - `GPL-3+`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cdbs=0.4.148
-'http://deb.debian.org/debian/pool/main/c/cdbs/cdbs_0.4.148.dsc' cdbs_0.4.148.dsc 1846 SHA256:82223f9faa032ec13a5c70f2e42a3557e33b446539925b9377b89fba33615e34
-'http://deb.debian.org/debian/pool/main/c/cdbs/cdbs_0.4.148.tar.xz' cdbs_0.4.148.tar.xz 204632 SHA256:98bf0268da2c2e898e5408d6796ea5dbdf263326588f2a6b69d27f6b6dcc9d6e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cdbs/0.4.148/
-- https://sources.debian.net/src/cdbs/0.4.148/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cdebconf=0.218`
 
@@ -1173,20 +1163,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.5-6
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5-6.dsc' gnutls28_3.5.5-6.dsc 3138 SHA256:3daaa121d262736028e20bc9fe0fe6f84a8d8cc0c9172a03d90be6af56b3ed85
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5.orig.tar.xz' gnutls28_3.5.5.orig.tar.xz 6974628 SHA256:86994fe7804ee16d2811e366b9bf2f75304f8e470ae0e3716d60ffeedac0e529
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5.orig.tar.xz.asc' gnutls28_3.5.5.orig.tar.xz.asc 287 SHA256:e875ac977d00a4557c2da5ce155d2d1872601e6234afbfa58ee9dd1359e295bd
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.5-6.debian.tar.xz' gnutls28_3.5.5-6.debian.tar.xz 104132 SHA256:4e98d941b2bcbaeb0e762d286ec190e1c57c762cf91f746c5db191e1dd430fdc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnutls28/3.5.5-6/
-- https://sources.debian.net/src/gnutls28/3.5.5-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `graphite2=1.3.8-1`
 
@@ -1865,18 +1843,8 @@ Licenses: (parsed from: `/usr/share/doc/libpaper-utils/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpaper=1.1.24+nmu4
-'http://deb.debian.org/debian/pool/main/libp/libpaper/libpaper_1.1.24+nmu4.dsc' libpaper_1.1.24+nmu4.dsc 1748 SHA256:8d152b3bad6bdfc1bbd62c608bd3fee9c021ec920f721a531f5dc3505da79ec2
-'http://deb.debian.org/debian/pool/main/libp/libpaper/libpaper_1.1.24+nmu4.tar.gz' libpaper_1.1.24+nmu4.tar.gz 370195 SHA256:2491fce3f590d922d2d3070555df4425921b89c76a18e1c62e36336d6657526a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libpaper/1.1.24+nmu4/
-- https://sources.debian.net/src/libpaper/1.1.24+nmu4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpng1.6=1.6.26-1`
 
@@ -2471,19 +2439,8 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-mgcv/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mgcv=1.8-15-1
-'http://deb.debian.org/debian/pool/main/m/mgcv/mgcv_1.8-15-1.dsc' mgcv_1.8-15-1.dsc 1659 SHA256:ed9638fae67290a7252ab27dc5f866dede1de1f8659faed0f9c052bd14cfcdf9
-'http://deb.debian.org/debian/pool/main/m/mgcv/mgcv_1.8-15.orig.tar.gz' mgcv_1.8-15.orig.tar.gz 840958 SHA256:5aeae5bff9489683477d0c2a642dd6618f962a620a460f326022f950baaebf17
-'http://deb.debian.org/debian/pool/main/m/mgcv/mgcv_1.8-15-1.diff.gz' mgcv_1.8-15-1.diff.gz 4749 SHA256:f61ec68146efd4722777d46b505ec7e2209ad43ccb9ebf894f0c3efffef9b31c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mgcv/1.8-15-1/
-- https://sources.debian.net/src/mgcv/1.8-15-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mpclib3=1.0.3-1`
 
@@ -3594,19 +3551,8 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris vim=2:8.0.0022-1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.0.0022-1.dsc' vim_8.0.0022-1.dsc 2932 SHA256:278d52aecf49d435a9806a9cb0ed5e24ee339fed84d270317adccb2f1740f22a
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.0.0022.orig.tar.gz' vim_8.0.0022.orig.tar.gz 12929201 SHA256:2f854b1747423a66a347a7a424eaaa5bc7bf202209af2f0f68a2ff9c7094173b
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.0.0022-1.debian.tar.xz' vim_8.0.0022-1.debian.tar.xz 149132 SHA256:a9383869e97900c93e0dab22a1687bc7fc17e32d0c697a60caf2ac9fc190df5b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/vim/2:8.0.0022-1/
-- https://sources.debian.net/src/vim/2:8.0.0022-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `wget=1.18-4`
 
