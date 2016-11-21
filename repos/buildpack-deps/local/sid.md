@@ -4821,19 +4821,8 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`, `/usr/share/doc/lib
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.6-3
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.6-3.dsc' tiff_4.0.6-3.dsc 2125 SHA256:4630f34a2f56a90eff104bf01dcb843f21683f883eb4135f52782af111deaae2
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.6.orig.tar.gz' tiff_4.0.6.orig.tar.gz 2192991 SHA256:4d57a50907b510e3049a4bba0d7888930fdfc16ce49f1bf693e5b6247370d68c
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.6-3.debian.tar.xz' tiff_4.0.6-3.debian.tar.xz 22272 SHA256:cc650116c1dafed9c3721302f91e5e79b670f46712ebf2b86dea989c102e5c94
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff/4.0.6-3/
-- https://sources.debian.net/src/tiff/4.0.6-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tzdata=2016h-1`
 

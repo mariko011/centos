@@ -1390,14 +1390,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.6.9.7-5ubuntu3.4
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.6.9.7-5ubuntu3.4.dsc' imagemagick_6.6.9.7-5ubuntu3.4.dsc 3156 SHA256:16586dba0f323400091e2461371a059ef40db330fb994ca1e066704ce3ef7c47
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.6.9.7.orig.tar.gz' imagemagick_6.6.9.7.orig.tar.gz 12825250 SHA256:c2f77859257f3ff3d51e70a6cdebed7a24a1b77c0cbe6edb8170330a7c18dbfa
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.6.9.7-5ubuntu3.4.debian.tar.bz2' imagemagick_6.6.9.7-5ubuntu3.4.debian.tar.bz2 52232 SHA256:a0378f876424f214d1a68bd619d6ce754312a0dcef957be3115ce36689445dae
-```
 
 ### `dpkg` source package: `initramfs-tools=0.99ubuntu13.5`
 
