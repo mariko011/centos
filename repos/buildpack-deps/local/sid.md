@@ -4340,19 +4340,8 @@ Licenses: (parsed from: `/usr/share/doc/libprocps6/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris procps=2:3.3.12-2
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.12-2.dsc' procps_3.3.12-2.dsc 2136 SHA256:ba3339c5b84b53f01942d17fbd10dfaa4e9c61ae7d849eb7204660e292811172
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.12.orig.tar.xz' procps_3.3.12.orig.tar.xz 840540 SHA256:042fcc93e1850aee4c193c51c03f369293fb64fe47e37b38852be6693d12a3af
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.12-2.debian.tar.xz' procps_3.3.12-2.debian.tar.xz 26820 SHA256:f2dc5de6bf7a5d73b3e012633afdc7dd8d0b466ea768c57934a7de9b81e4bb9e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/procps/2:3.3.12-2/
-- https://sources.debian.net/src/procps/2:3.3.12-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `python-defaults=2.7.11-2`
 
@@ -4407,19 +4396,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.12-5
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.12-5.dsc' python2.7_2.7.12-5.dsc 3310 SHA256:2254c288eb5f4c9360ec28b035127bda736371606e814e88c02e8f9168aaa2c9
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.12.orig.tar.gz' python2.7_2.7.12.orig.tar.gz 16935960 SHA256:3cb522d17463dfa69a155ab18cffa399b358c966c0363d6c8b5b3bf1384da4b6
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.12-5.diff.gz' python2.7_2.7.12-5.diff.gz 507143 SHA256:6cf7be507c67c349108d3b5c44275e41105456de860c2fd8558e52d7eee0fb04
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/python2.7/2.7.12-5/
-- https://sources.debian.net/src/python2.7/2.7.12-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `python3-defaults=3.5.1-4`
 
@@ -4484,19 +4462,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.5-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python3.5=3.5.2-7
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.2-7.dsc' python3.5_3.5.2-7.dsc 3317 SHA256:d9a83212dcaae68f1b99068fa6e55317458d295f68b1a65d53b671310822eeeb
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.2.orig.tar.xz' python3.5_3.5.2.orig.tar.xz 15222676 SHA256:0010f56100b9b74259ebcd5d4b295a32324b58b517403a10d1a2aa7cb22bca40
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.2-7.debian.tar.xz' python3.5_3.5.2-7.debian.tar.xz 625180 SHA256:48d2907c8e2e4ef78c030ebf760af9437118fa415699b064a3d92f243c669991
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/python3.5/3.5.2-7/
-- https://sources.debian.net/src/python3.5/3.5.2-7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `readline=7.0-1`
 
