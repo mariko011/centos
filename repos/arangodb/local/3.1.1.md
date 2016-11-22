@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e3b144ab9089ff06be9560e0be727d745b0d994af83f947bbd4e108015fcd1c7`
-- Created: `2016-11-18T18:12:05.031957513Z`
+- Image ID: `sha256:e02bcfb7dc90a3876f144f1821ad9b5281d5543a32283d07ad8d2d27777af96a`
+- Created: `2016-11-21T17:35:07.638428769Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["arangod"]`
