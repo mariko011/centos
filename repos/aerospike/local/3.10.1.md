@@ -1,16 +1,16 @@
-# `aerospike:3.10.0.3`
+# `aerospike:3.10.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b3ece97b4a0e181e02630b6e7b5a9d40da9ccf0cfd3a9a1fbf021f0b2e1ab8ac`
-- Created: `2016-11-16T22:52:57.51991405Z`
+- Image ID: `sha256:c925a33d89ae484520cac8b441d5f2eca7104934661459e3c0b6c0d856eb6256`
+- Created: `2016-11-21T17:29:58.627897586Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["asd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `AEROSPIKE_VERSION=3.10.0.3`
-  - `AEROSPIKE_SHA256=0625a38b6bbef7686ef6fa2fd451ea35e93c50fc418eadfc3d7e5181451ed672`
+  - `AEROSPIKE_VERSION=3.10.1`
+  - `AEROSPIKE_SHA256=1b0a80ce512d1b24b71593719c96e47d8f1b4bf8322b99897ef3d1abd83a76a8`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -52,11 +52,24 @@ $ apt-get source -qq --print-uris adduser=3.113+nmu3ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.113+nmu3ubuntu4.tar.gz' adduser_3.113+nmu3ubuntu4.tar.gz 367980 SHA256:6e4d44c8388b9ba85fc175fa4a48ed43bf6500913c2c631fda0e4419ae63c65a
 ```
 
-### `dpkg` source package: `aerospike-server-community=3.10.0.3-1`
+### `dpkg` source package: `aerospike-server-community=3.10.1-1`
 
 Binary Packages:
 
-- `aerospike-server-community=3.10.0.3-1`
+- `aerospike-server-community=3.10.1-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
+  If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+
+
+### `dpkg` source package: `aerospike-tools=3.10.2`
+
+Binary Packages:
+
+- `aerospike-tools=3.10.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1481,6 +1494,47 @@ $ apt-get source -qq --print-uris procps=2:3.3.10-4ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.debian.tar.xz' procps_3.3.10-4ubuntu2.debian.tar.xz 36776 SHA256:7b8a62c79386c2d75eea39bd1896ee62128d82e3193b7d669df4ecc016294d02
 ```
 
+### `dpkg` source package: `python-bcrypt=2.0.0-2build1`
+
+Binary Packages:
+
+- `python-bcrypt=2.0.0-2build1`
+
+Licenses: (parsed from: `/usr/share/doc/python-bcrypt/copyright`)
+
+- `Apache-2.0`
+- `GPL-3`
+- `GPL-3+`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python-bcrypt=2.0.0-2build1
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-bcrypt/python-bcrypt_2.0.0-2build1.dsc' python-bcrypt_2.0.0-2build1.dsc 2309 SHA256:5d36e5af6407c1aa524a0a17a0bbd502eafa164a0ebb3f89b7885cdc12131ed5
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-bcrypt/python-bcrypt_2.0.0.orig.tar.xz' python-bcrypt_2.0.0.orig.tar.xz 33416 SHA256:72099d8517f065e35c1ab93346200057d503fa417c81eb7483e8e5027074432f
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-bcrypt/python-bcrypt_2.0.0-2build1.debian.tar.xz' python-bcrypt_2.0.0-2build1.debian.tar.xz 40360 SHA256:296cffe2ed40c8001598290dd57ce669fc99514fdc9cd46fcdb3fc00bffb271a
+```
+
+### `dpkg` source package: `python-cffi=1.5.2-1ubuntu1`
+
+Binary Packages:
+
+- `python-cffi-backend=1.5.2-1ubuntu1`
+
+Licenses: (parsed from: `/usr/share/doc/python-cffi-backend/copyright`)
+
+- `Expat`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python-cffi=1.5.2-1ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cffi/python-cffi_1.5.2-1ubuntu1.dsc' python-cffi_1.5.2-1ubuntu1.dsc 2370 SHA256:245282bfafce5df00833e59c4f5a5727edac40d05ffa868a8efe10c023059097
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cffi/python-cffi_1.5.2.orig.tar.gz' python-cffi_1.5.2.orig.tar.gz 388793 SHA256:da9bde99872e46f7bb5cff40a9b1cc08406765efafb583c704de108b6cb821dd
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cffi/python-cffi_1.5.2-1ubuntu1.debian.tar.xz' python-cffi_1.5.2-1ubuntu1.debian.tar.xz 5836 SHA256:335b88a8e8cd52a0c6f61fb39bf3aac4f77aad03a65b9c0c41469dfe95416729
+```
+
 ### `dpkg` source package: `python-defaults=2.7.11-1`
 
 Binary Packages:
@@ -1613,6 +1667,25 @@ $ apt-get source -qq --print-uris shadow=1:4.2-3.1ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.1ubuntu5.dsc' shadow_4.2-3.1ubuntu5.dsc 2458 SHA256:3da12b56933a7414f1b8f01a4b64d8d204a2a44bbca941bf033a8c206726fdac
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.1ubuntu5.debian.tar.xz' shadow_4.2-3.1ubuntu5.debian.tar.xz 504168 SHA256:7a18a238c463b562e69e9a3cd4e18d87212c7d68bc58e5f8ba31f3a7e33cad6e
+```
+
+### `dpkg` source package: `six=1.10.0-3`
+
+Binary Packages:
+
+- `python-six=1.10.0-3`
+
+Licenses: (parsed from: `/usr/share/doc/python-six/copyright`)
+
+- `Expat`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris six=1.10.0-3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/six/six_1.10.0-3.dsc' six_1.10.0-3.dsc 2158 SHA256:71f2d5ff8b999c471cc2e92712befe482351a5ae226321e0e795bc683c8729cb
+'http://archive.ubuntu.com/ubuntu/pool/main/s/six/six_1.10.0.orig.tar.gz' six_1.10.0.orig.tar.gz 29630 SHA256:105f8d68616f8248e24bf0e9372ef04d3cc10104f1980f54d57b2ce73a5ad56a
+'http://archive.ubuntu.com/ubuntu/pool/main/s/six/six_1.10.0-3.debian.tar.xz' six_1.10.0-3.debian.tar.xz 3668 SHA256:860cc57244ea4e69eb4ee3ad1b823472c20d868c1cc25745b236ba6c9e1f3563
 ```
 
 ### `dpkg` source package: `sqlite3=3.11.0-1ubuntu1`
