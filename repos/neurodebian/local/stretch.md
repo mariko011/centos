@@ -840,19 +840,8 @@ Licenses: (parsed from: `/usr/share/doc/libassuan0/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libassuan=2.4.3-1
-'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.4.3-1.dsc' libassuan_2.4.3-1.dsc 2402 SHA256:9b63e2376ede632a76a31f12271583abed919415600d858201d5a0ce7fd71226
-'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.4.3.orig.tar.bz2' libassuan_2.4.3.orig.tar.bz2 559867 SHA256:22843a3bdb256f59be49842abf24da76700354293a066d82ade8134bb5aa2b71
-'http://deb.debian.org/debian/pool/main/liba/libassuan/libassuan_2.4.3-1.debian.tar.xz' libassuan_2.4.3-1.debian.tar.xz 14460 SHA256:d8cba4816fc697571e5d033fd8193e940875b06fa887dfdb87ff3c1ded8d7e53
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libassuan/2.4.3-1/
-- https://sources.debian.net/src/libassuan/2.4.3-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libcap-ng=0.7.7-3`
 
