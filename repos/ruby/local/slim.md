@@ -1,16 +1,16 @@
-# `ruby:2.3.2-slim`
+# `ruby:2.3.3-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7e109fd4329ef53bddd123ff63c9432708e04d9015e8b2595c6951ceb79224b0`
-- Created: `2016-11-17T23:24:41.533155614Z`
+- Image ID: `sha256:dd787759187f2c5bc0c726cf282b443b0a586eb6dd2ec4b735d8419d3d8a9948`
+- Created: `2016-11-21T20:43:44.125030972Z`
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUBY_MAJOR=2.3`
-  - `RUBY_VERSION=2.3.2`
-  - `RUBY_DOWNLOAD_SHA256=8d7f6ca0f16d77e3d242b24da38985b7539f58dc0da177ec633a83d0c8f5b197`
+  - `RUBY_VERSION=2.3.3`
+  - `RUBY_DOWNLOAD_SHA256=241408c8c555b258846368830a06146e4849a1d58dcaf6b14a3b6a73058115b7`
   - `RUBYGEMS_VERSION=2.6.8`
   - `BUNDLER_VERSION=1.13.6`
   - `GEM_HOME=/usr/local/bundle`
