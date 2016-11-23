@@ -1,7 +1,7 @@
 ## `python:rc`
 
 ```console
-$ docker pull python@sha256:53ad402378ee9a6d9d9e35b1acf3841d4e211a10d4abf79afe273c1833157fd4
+$ docker pull python@sha256:eaf8972c320a6390ccffac87f2fe4f5419e28ea143b4cd10a1ac25bcaa9fcba1
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull python@sha256:53ad402378ee9a6d9d9e35b1acf3841d4e211a10d4abf79afe27
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.8 MB (265824981 bytes)**  
+-	Total Size: **265.9 MB (265899927 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d844082def83ce2587f4c3bf79ff4efc75cd3a194eb57bd87f7d6cb3592b9e7`
+-	Image ID: `sha256:ade1ef7d251ab545fcb236ea2b8834d77390eace20318e4c5458f8c7b025eebd`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -35,15 +35,15 @@ ENV LANG=C.UTF-8
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
 # Thu, 10 Nov 2016 08:39:05 GMT
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Thu, 17 Nov 2016 22:47:35 GMT
-ENV PYTHON_VERSION=3.6.0b3
-# Thu, 17 Nov 2016 22:47:35 GMT
+# Wed, 23 Nov 2016 21:31:13 GMT
+ENV PYTHON_VERSION=3.6.0b4
+# Wed, 23 Nov 2016 21:31:14 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Thu, 17 Nov 2016 22:49:11 GMT
+# Wed, 23 Nov 2016 21:33:02 GMT
 RUN set -ex 	&& buildDeps=' 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-loadable-sqlite-extensions 		--enable-shared 	&& make -j$(nproc) 	&& make install 	&& ldconfig 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& python3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& find /usr/local -depth 		\( 			\( -type d -a -name test -o -name tests \) 			-o 			\( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Thu, 17 Nov 2016 22:49:12 GMT
+# Wed, 23 Nov 2016 21:33:03 GMT
 RUN cd /usr/local/bin 	&& { [ -e easy_install ] || ln -s easy_install-* easy_install; } 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Thu, 17 Nov 2016 22:49:12 GMT
+# Wed, 23 Nov 2016 21:33:04 GMT
 CMD ["python3"]
 ```
 
@@ -68,11 +68,11 @@ CMD ["python3"]
 		Last Modified: Tue, 08 Nov 2016 19:50:50 GMT  
 		Size: 2.9 MB (2889210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d80e4f8b1d0c8a9b08ff8e425ec96e998f51e633706fe53a83b4f4ea0295107a`  
-		Last Modified: Thu, 17 Nov 2016 23:08:45 GMT  
-		Size: 20.7 MB (20743020 bytes)  
+	-	`sha256:6fa74472b48484b92d51813628be6f0c7a761b2237575c29c68b383c896fd583`  
+		Last Modified: Wed, 23 Nov 2016 21:49:24 GMT  
+		Size: 20.8 MB (20817968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff0ff4dc2bbb46fa7bb49300c0e9cbbfd8b8f9390040d870a7b0b604f5a1cbcf`  
-		Last Modified: Thu, 17 Nov 2016 23:08:37 GMT  
-		Size: 268.0 B  
+	-	`sha256:dcec7740743e591be81b9eaa4c4b69d3889bec3e3ecec56a512c19dbb11516a4`  
+		Last Modified: Wed, 23 Nov 2016 21:49:17 GMT  
+		Size: 266.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
