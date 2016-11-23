@@ -3176,14 +3176,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7/copyright`, `/usr/share/doc
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.12-1~16.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1~16.04.dsc' python2.7_2.7.12-1~16.04.dsc 3253 SHA256:f4c24dd38af4223ec9be0f99af1465a5ba297e566855085042b4b3c5a79f4095
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12.orig.tar.gz' python2.7_2.7.12.orig.tar.gz 16935960 SHA256:3cb522d17463dfa69a155ab18cffa399b358c966c0363d6c8b5b3bf1384da4b6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1~16.04.diff.gz' python2.7_2.7.12-1~16.04.diff.gz 274731 SHA256:2fdeca565f5b456be943a85a2cf6c9a5d745e754bf04e80bc92a2f4ea1ac1b43
-```
 
 ### `dpkg` source package: `python3-defaults=3.5.1-3`
 
@@ -3243,14 +3237,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.5-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python3.5=3.5.2-2~16.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.2-2~16.04.dsc' python3.5_3.5.2-2~16.04.dsc 3253 SHA256:700e20c56e4f682bcd24dacc5fe766785a58a2717c07e5e2728070d3a42d979c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.2.orig.tar.xz' python3.5_3.5.2.orig.tar.xz 15222676 SHA256:0010f56100b9b74259ebcd5d4b295a32324b58b517403a10d1a2aa7cb22bca40
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.5/python3.5_3.5.2-2~16.04.debian.tar.xz' python3.5_3.5.2-2~16.04.debian.tar.xz 211644 SHA256:8b035ac0d9d6d3b9408419b4f99b608040f50d0fc1ba41db9b94dec5d664643a
-```
 
 ### `dpkg` source package: `pyyaml=3.11-3build1`
 
