@@ -388,18 +388,8 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris debianutils=4.8
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.dsc' debianutils_4.8.dsc 1703 SHA256:d1730beb7688dac01c584843af75cf88e066ee58e126eae3a19777922501249c
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.tar.xz' debianutils_4.8.tar.xz 155692 SHA256:afa95bbe6b6fd3ef3c0c838b2d7232f09fabeff593ca4b5583cffa6748567ee2
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/debianutils/4.8/
-- https://sources.debian.net/src/debianutils/4.8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `diffutils=1:3.5-1`
 
