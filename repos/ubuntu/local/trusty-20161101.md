@@ -2072,14 +2072,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.4-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python3.4=3.4.3-1ubuntu1~14.04.4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3-1ubuntu1~14.04.4.dsc' python3.4_3.4.3-1ubuntu1~14.04.4.dsc 3229 SHA256:4981ecafed3a39e5fcb5ffd2472512a0771ce6049a9f2e6b5c3be40927062a34
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3.orig.tar.xz' python3.4_3.4.3.orig.tar.xz 12690456 SHA256:9151f6d2975471e6b6189aa2de836b48ba0361b145dd8fc143e986efbbed9f3a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3-1ubuntu1~14.04.4.debian.tar.gz' python3.4_3.4.3-1ubuntu1~14.04.4.debian.tar.gz 258416 SHA256:2bb185de636d4013b32fb7c6c283be77a965cd4c7ef3e71b333d915c441647d8
-```
 
 ### `dpkg` source package: `readline6=6.3-4ubuntu2`
 
