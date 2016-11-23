@@ -1761,14 +1761,8 @@ Licenses: (parsed from: `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/py
 - `This software is provided as-is, without express`
 - `implied`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.3-0ubuntu3.8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.3-0ubuntu3.8.dsc' python2.7_2.7.3-0ubuntu3.8.dsc 2791 SHA256:177eaf60e9423b768f02af4f692f55e48a3ac1afeb288f1b65991e871f65920a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.3.orig.tar.gz' python2.7_2.7.3.orig.tar.gz 14216076 SHA256:68bddd390a22ce9a9946ad711fc0042c831889be1f8ff79c0945f7a973e05bda
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.3-0ubuntu3.8.diff.gz' python2.7_2.7.3-0ubuntu3.8.diff.gz 271334 SHA256:67110ef9c105788ce9eebb8f349f83c65ac5e43c0be2cfc44083457b64de26db
-```
 
 ### `dpkg` source package: `readline6=6.2-8`
 
