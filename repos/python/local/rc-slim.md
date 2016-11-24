@@ -1,16 +1,16 @@
-# `python:3.6.0b3-slim`
+# `python:3.6.0b4-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cd5190f437878bf8ca780f84d1b3265c397999b3f68fdecd20fb83d87d095efa`
-- Created: `2016-11-17T22:51:25.400325336Z`
+- Image ID: `sha256:0df2039776f93524c7121c8169c9d4d2b5ad7c1ecc97920ab94961b711da9dca`
+- Created: `2016-11-23T21:35:19.044154658Z`
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D`
-  - `PYTHON_VERSION=3.6.0b3`
+  - `PYTHON_VERSION=3.6.0b4`
   - `PYTHON_PIP_VERSION=9.0.1`
 
 ## `dpkg` (`.deb`-based packages)
