@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5f472c272abf4ebf2629960db1263c90f9b8a897ae584d98090bbea0570f30dc`
-- Created: `2016-11-18T02:25:13.991891714Z`
+- Image ID: `sha256:89fc2d7c4626137ecf42d734ea09af6624a86bd787a6bfbc7b24a94e03048388`
+- Created: `2016-11-23T21:55:53.432058039Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["rails","server","-b","0.0.0.0"]`
