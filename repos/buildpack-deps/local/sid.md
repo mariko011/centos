@@ -1915,19 +1915,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.6.2+dfsg-2
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.6.2+dfsg-2.dsc' imagemagick_6.9.6.2+dfsg-2.dsc 4337 SHA256:39d08c14521057502a3c41bba55bd196ebc0d8ccd03ce9da4a7d0af90a286f53
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.6.2+dfsg.orig.tar.xz' imagemagick_6.9.6.2+dfsg.orig.tar.xz 8996652 SHA256:2b82e076ad077385e147856111704f59661eda7b60a5227222a8375158335ec9
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.6.2+dfsg-2.debian.tar.xz' imagemagick_6.9.6.2+dfsg-2.debian.tar.xz 206544 SHA256:ac88bd42e46d07d5fe86abe998636992e8b4eafdfff5e05536fddbe5cb7c00da
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/imagemagick/8:6.9.6.2+dfsg-2/
-- https://sources.debian.net/src/imagemagick/8:6.9.6.2+dfsg-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9.4-2`
 
@@ -4842,19 +4831,8 @@ Licenses: (parsed from: `/usr/share/doc/libustr-1.0-1/copyright`)
 - `LGPL-2.1`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ustr=1.0.4-5
-'http://deb.debian.org/debian/pool/main/u/ustr/ustr_1.0.4-5.dsc' ustr_1.0.4-5.dsc 2016 SHA256:3c06f54e4c05e76bf7c4d7192bbf3a7b259372c7448a4245e8317115808cf7c9
-'http://deb.debian.org/debian/pool/main/u/ustr/ustr_1.0.4.orig.tar.gz' ustr_1.0.4.orig.tar.gz 301345 SHA256:4d293b6b9d9fe51d58441f4b09b1f0005fcad8256ae8048587789bf5dbefb62e
-'http://deb.debian.org/debian/pool/main/u/ustr/ustr_1.0.4-5.debian.tar.xz' ustr_1.0.4-5.debian.tar.xz 24948 SHA256:a21e78acf82dcccef2893932ef7b85852419bfd9b18382e63c34e7710c1d7762
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/ustr/1.0.4-5/
-- https://sources.debian.net/src/ustr/1.0.4-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `util-linux=2.28.2-1`
 
