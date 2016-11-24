@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:98e6ab1d5ab079c5aa5b1d231fa16fd43c761315109f283e39efa5d8e0da0f2f`
-- Created: `2016-11-08T22:56:41.455869175Z`
+- Image ID: `sha256:941bc81d2f8ad7c4b74968d3ff9b9e521a394f9bd7267cb7b722711418d86a9d`
+- Created: `2016-11-23T20:13:54.286435655Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["odoo"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `ODOO_VERSION=10.0`
-  - `ODOO_RELEASE=20161103`
+  - `ODOO_RELEASE=20161123`
   - `ODOO_RC=/etc/odoo/odoo.conf`
 
 ## `dpkg` (`.deb`-based packages)
@@ -3023,11 +3023,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nodejs/0.10.29~dfsg-2/
 - https://sources.debian.net/src/nodejs/0.10.29~dfsg-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `odoo=10.0.20161103`
+### `dpkg` source package: `odoo=10.0.20161123`
 
 Binary Packages:
 
-- `odoo=10.0.20161103`
+- `odoo=10.0.20161123`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -3238,12 +3238,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/perl/5.20.2-3+deb8u6/
 - https://sources.debian.net/src/perl/5.20.2-3+deb8u6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `pillow=2.6.1-2+deb8u2`
+### `dpkg` source package: `pillow=2.6.1-2+deb8u3`
 
 Binary Packages:
 
-- `python-imaging=2.6.1-2+deb8u2`
-- `python-pil:amd64=2.6.1-2+deb8u2`
+- `python-imaging=2.6.1-2+deb8u3`
+- `python-pil:amd64=2.6.1-2+deb8u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3252,16 +3252,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pillow=2.6.1-2+deb8u2
-'http://deb.debian.org/debian/pool/main/p/pillow/pillow_2.6.1-2+deb8u2.dsc' pillow_2.6.1-2+deb8u2.dsc 2996 SHA256:73e7254db8734df77ff9289e60cc0e7a4ed41bd8ae4a82ce253dcb3f5e6f496f
-'http://deb.debian.org/debian/pool/main/p/pillow/pillow_2.6.1.orig.tar.gz' pillow_2.6.1.orig.tar.gz 7299315 SHA256:78647bc8980c98f9d57659083c7a7e30d6a8bdd2c385f5b250f301e85a6acbad
-'http://deb.debian.org/debian/pool/main/p/pillow/pillow_2.6.1-2+deb8u2.debian.tar.xz' pillow_2.6.1-2+deb8u2.debian.tar.xz 216760 SHA256:7adf470443d9b44608e8fb7fc01956237cf80defd11a95deaaa6d8e04d6f0288
+$ apt-get source -qq --print-uris pillow=2.6.1-2+deb8u3
+'http://security.debian.org/pool/updates/main/p/pillow/pillow_2.6.1-2+deb8u3.dsc' pillow_2.6.1-2+deb8u3.dsc 2978 SHA256:8f72334d1af316942d28f7cce605ea357c34112c851dc4eb50dee30ff0f11b0c
+'http://security.debian.org/pool/updates/main/p/pillow/pillow_2.6.1.orig.tar.gz' pillow_2.6.1.orig.tar.gz 7299315 SHA256:78647bc8980c98f9d57659083c7a7e30d6a8bdd2c385f5b250f301e85a6acbad
+'http://security.debian.org/pool/updates/main/p/pillow/pillow_2.6.1-2+deb8u3.debian.tar.xz' pillow_2.6.1-2+deb8u3.debian.tar.xz 217984 SHA256:c095d9ac8f0d8a96b69bdb8b402c53b0a7eb1dcff3311d59eba727c20cd2a723
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/pillow/2.6.1-2+deb8u2/
-- https://sources.debian.net/src/pillow/2.6.1-2+deb8u2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/pillow/2.6.1-2+deb8u3/
+- https://sources.debian.net/src/pillow/2.6.1-2+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `pixman=0.32.6-3`
 
