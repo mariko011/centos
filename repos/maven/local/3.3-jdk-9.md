@@ -2997,19 +2997,8 @@ Licenses: (parsed from: `/usr/share/doc/libustr-1.0-1/copyright`)
 - `LGPL-2.1`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ustr=1.0.4-5
-'http://deb.debian.org/debian/pool/main/u/ustr/ustr_1.0.4-5.dsc' ustr_1.0.4-5.dsc 2016 SHA256:3c06f54e4c05e76bf7c4d7192bbf3a7b259372c7448a4245e8317115808cf7c9
-'http://deb.debian.org/debian/pool/main/u/ustr/ustr_1.0.4.orig.tar.gz' ustr_1.0.4.orig.tar.gz 301345 SHA256:4d293b6b9d9fe51d58441f4b09b1f0005fcad8256ae8048587789bf5dbefb62e
-'http://deb.debian.org/debian/pool/main/u/ustr/ustr_1.0.4-5.debian.tar.xz' ustr_1.0.4-5.debian.tar.xz 24948 SHA256:a21e78acf82dcccef2893932ef7b85852419bfd9b18382e63c34e7710c1d7762
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/ustr/1.0.4-5/
-- https://sources.debian.net/src/ustr/1.0.4-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `util-linux=2.28.2-1`
 
