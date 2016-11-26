@@ -71,18 +71,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.3.1
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.3.1.dsc' apt_1.3.1.dsc 2496 SHA256:43fe1710f0d1a5e27233779187a25727165119837be9767f11e36e6445835e68
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.3.1.tar.xz' apt_1.3.1.tar.xz 2035460 SHA256:7ae8ebc1e371d10c4bfe1b0009cbdb6d22944963a616ae6407c74d122234fa58
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.3.1/
-- https://sources.debian.net/src/apt/1.3.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -911,18 +901,8 @@ Licenses: (parsed from: `/usr/share/doc/lsb-base/copyright`)
 - `BSD-3-clause`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris lsb=9.20161101
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_9.20161101.dsc' lsb_9.20161101.dsc 1668 SHA256:85175a5ee13c1892709cf8ac9673ec3047940528f48c2580b56cc0a5578d7bfe
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_9.20161101.tar.xz' lsb_9.20161101.tar.xz 43000 SHA256:52521cfeb985f7e00bc00abec2f1e55798373e3ad828b7794829548ec7505cf5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/lsb/9.20161101/
-- https://sources.debian.net/src/lsb/9.20161101/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lz4=0.0~r131-2`
 
