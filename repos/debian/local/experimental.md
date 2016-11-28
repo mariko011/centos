@@ -136,18 +136,8 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-files=9.6
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.6.dsc' base-files_9.6.dsc 1052 SHA256:f402149afa784750c093d09bb10aa9a9a00d32aaee52eda62f056211a304ebed
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.6.tar.xz' base-files_9.6.tar.xz 53728 SHA256:5cb5339aa852af14653ac187f8baf55f5ad6fc8ee2d903e5a336f0ee556dcf44
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/base-files/9.6/
-- https://sources.debian.net/src/base-files/9.6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `base-passwd=3.5.40`
 
@@ -1153,19 +1143,8 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.2-3.2
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3.2.dsc' shadow_4.2-3.2.dsc 2289 SHA256:9377f2adb0d3bf01dbdd36a6b550f1bc2e1d60840cf39d5314cca4474a7ff857
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3.2.debian.tar.xz' shadow_4.2-3.2.debian.tar.xz 497092 SHA256:0483a19f500c8eb8b26ef3fd408a014f32171c375b76d3ed7762cf97934bee4c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/shadow/1:4.2-3.2/
-- https://sources.debian.net/src/shadow/1:4.2-3.2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `systemd=232-1`
 
