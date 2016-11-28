@@ -370,7 +370,7 @@ CMD ["node"]
 ## `node:7.2.0-alpine`
 
 ```console
-$ docker pull node@sha256:5ea77c57b78b069ade6db7a1ffad94c556dcce425ef3cdb22f5aa341baca1158
+$ docker pull node@sha256:cb154d07bd26ed0cc70dd1afafd4efeb1787e0f2896249ab63ac0788e13d6066
 ```
 
 -	Platforms:
@@ -380,9 +380,9 @@ $ docker pull node@sha256:5ea77c57b78b069ade6db7a1ffad94c556dcce425ef3cdb22f5aa3
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.1 MB (19149403 bytes)**  
+-	Total Size: **19.1 MB (19149334 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3f62636b02413eb06d087424062033e64104f86aedc8b57cea87743521a86859`
+-	Image ID: `sha256:164dad592f49adcb831c7658ddecc522db9ac27aa236fc7f58246d64201591c8`
 -	Default Command: `["node"]`
 
 ```dockerfile
@@ -392,9 +392,9 @@ ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in /
 ENV NPM_CONFIG_LOGLEVEL=info
 # Wed, 23 Nov 2016 19:04:58 GMT
 ENV NODE_VERSION=7.2.0
-# Wed, 23 Nov 2016 19:19:16 GMT
-RUN adduser -D -u 1000 node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         binutils-gold         curl         g++         gcc         gnupg         libgcc         linux-headers         make         python         tar   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";   done     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.gz"     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.gz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.gz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN)     && make install     && apk del .build-deps     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.gz" SHASUMS256.txt.asc SHASUMS256.txt
-# Wed, 23 Nov 2016 19:19:16 GMT
+# Mon, 28 Nov 2016 20:07:47 GMT
+RUN adduser -D -u 1000 node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         binutils-gold         curl         g++         gcc         gnupg         libgcc         linux-headers         make         python   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";   done     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN)     && make install     && apk del .build-deps     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt
+# Mon, 28 Nov 2016 20:07:48 GMT
 CMD ["node"]
 ```
 
@@ -403,15 +403,15 @@ CMD ["node"]
 		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
 		Size: 2.3 MB (2312958 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57528b039108065361df6e66aa8100a74c4fdffa8912a1c6354ffed943488959`  
-		Last Modified: Wed, 23 Nov 2016 19:43:43 GMT  
-		Size: 16.8 MB (16836445 bytes)  
+	-	`sha256:3ef3180ff781c70d2e9e53f2f646949062fe80ffea053c95fe121a8438cd61b7`  
+		Last Modified: Mon, 28 Nov 2016 20:27:34 GMT  
+		Size: 16.8 MB (16836376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `node:7.2-alpine`
 
 ```console
-$ docker pull node@sha256:5ea77c57b78b069ade6db7a1ffad94c556dcce425ef3cdb22f5aa341baca1158
+$ docker pull node@sha256:cb154d07bd26ed0cc70dd1afafd4efeb1787e0f2896249ab63ac0788e13d6066
 ```
 
 -	Platforms:
@@ -421,9 +421,9 @@ $ docker pull node@sha256:5ea77c57b78b069ade6db7a1ffad94c556dcce425ef3cdb22f5aa3
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.1 MB (19149403 bytes)**  
+-	Total Size: **19.1 MB (19149334 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3f62636b02413eb06d087424062033e64104f86aedc8b57cea87743521a86859`
+-	Image ID: `sha256:164dad592f49adcb831c7658ddecc522db9ac27aa236fc7f58246d64201591c8`
 -	Default Command: `["node"]`
 
 ```dockerfile
@@ -433,9 +433,9 @@ ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in /
 ENV NPM_CONFIG_LOGLEVEL=info
 # Wed, 23 Nov 2016 19:04:58 GMT
 ENV NODE_VERSION=7.2.0
-# Wed, 23 Nov 2016 19:19:16 GMT
-RUN adduser -D -u 1000 node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         binutils-gold         curl         g++         gcc         gnupg         libgcc         linux-headers         make         python         tar   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";   done     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.gz"     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.gz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.gz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN)     && make install     && apk del .build-deps     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.gz" SHASUMS256.txt.asc SHASUMS256.txt
-# Wed, 23 Nov 2016 19:19:16 GMT
+# Mon, 28 Nov 2016 20:07:47 GMT
+RUN adduser -D -u 1000 node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         binutils-gold         curl         g++         gcc         gnupg         libgcc         linux-headers         make         python   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";   done     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN)     && make install     && apk del .build-deps     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt
+# Mon, 28 Nov 2016 20:07:48 GMT
 CMD ["node"]
 ```
 
@@ -444,15 +444,15 @@ CMD ["node"]
 		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
 		Size: 2.3 MB (2312958 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57528b039108065361df6e66aa8100a74c4fdffa8912a1c6354ffed943488959`  
-		Last Modified: Wed, 23 Nov 2016 19:43:43 GMT  
-		Size: 16.8 MB (16836445 bytes)  
+	-	`sha256:3ef3180ff781c70d2e9e53f2f646949062fe80ffea053c95fe121a8438cd61b7`  
+		Last Modified: Mon, 28 Nov 2016 20:27:34 GMT  
+		Size: 16.8 MB (16836376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `node:7-alpine`
 
 ```console
-$ docker pull node@sha256:5ea77c57b78b069ade6db7a1ffad94c556dcce425ef3cdb22f5aa341baca1158
+$ docker pull node@sha256:cb154d07bd26ed0cc70dd1afafd4efeb1787e0f2896249ab63ac0788e13d6066
 ```
 
 -	Platforms:
@@ -462,9 +462,9 @@ $ docker pull node@sha256:5ea77c57b78b069ade6db7a1ffad94c556dcce425ef3cdb22f5aa3
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.1 MB (19149403 bytes)**  
+-	Total Size: **19.1 MB (19149334 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3f62636b02413eb06d087424062033e64104f86aedc8b57cea87743521a86859`
+-	Image ID: `sha256:164dad592f49adcb831c7658ddecc522db9ac27aa236fc7f58246d64201591c8`
 -	Default Command: `["node"]`
 
 ```dockerfile
@@ -474,9 +474,9 @@ ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in /
 ENV NPM_CONFIG_LOGLEVEL=info
 # Wed, 23 Nov 2016 19:04:58 GMT
 ENV NODE_VERSION=7.2.0
-# Wed, 23 Nov 2016 19:19:16 GMT
-RUN adduser -D -u 1000 node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         binutils-gold         curl         g++         gcc         gnupg         libgcc         linux-headers         make         python         tar   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";   done     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.gz"     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.gz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.gz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN)     && make install     && apk del .build-deps     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.gz" SHASUMS256.txt.asc SHASUMS256.txt
-# Wed, 23 Nov 2016 19:19:16 GMT
+# Mon, 28 Nov 2016 20:07:47 GMT
+RUN adduser -D -u 1000 node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         binutils-gold         curl         g++         gcc         gnupg         libgcc         linux-headers         make         python   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";   done     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN)     && make install     && apk del .build-deps     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt
+# Mon, 28 Nov 2016 20:07:48 GMT
 CMD ["node"]
 ```
 
@@ -485,15 +485,15 @@ CMD ["node"]
 		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
 		Size: 2.3 MB (2312958 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57528b039108065361df6e66aa8100a74c4fdffa8912a1c6354ffed943488959`  
-		Last Modified: Wed, 23 Nov 2016 19:43:43 GMT  
-		Size: 16.8 MB (16836445 bytes)  
+	-	`sha256:3ef3180ff781c70d2e9e53f2f646949062fe80ffea053c95fe121a8438cd61b7`  
+		Last Modified: Mon, 28 Nov 2016 20:27:34 GMT  
+		Size: 16.8 MB (16836376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `node:alpine`
 
 ```console
-$ docker pull node@sha256:5ea77c57b78b069ade6db7a1ffad94c556dcce425ef3cdb22f5aa341baca1158
+$ docker pull node@sha256:cb154d07bd26ed0cc70dd1afafd4efeb1787e0f2896249ab63ac0788e13d6066
 ```
 
 -	Platforms:
@@ -503,9 +503,9 @@ $ docker pull node@sha256:5ea77c57b78b069ade6db7a1ffad94c556dcce425ef3cdb22f5aa3
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.1 MB (19149403 bytes)**  
+-	Total Size: **19.1 MB (19149334 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3f62636b02413eb06d087424062033e64104f86aedc8b57cea87743521a86859`
+-	Image ID: `sha256:164dad592f49adcb831c7658ddecc522db9ac27aa236fc7f58246d64201591c8`
 -	Default Command: `["node"]`
 
 ```dockerfile
@@ -515,9 +515,9 @@ ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in /
 ENV NPM_CONFIG_LOGLEVEL=info
 # Wed, 23 Nov 2016 19:04:58 GMT
 ENV NODE_VERSION=7.2.0
-# Wed, 23 Nov 2016 19:19:16 GMT
-RUN adduser -D -u 1000 node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         binutils-gold         curl         g++         gcc         gnupg         libgcc         linux-headers         make         python         tar   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";   done     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.gz"     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.gz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.gz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN)     && make install     && apk del .build-deps     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.gz" SHASUMS256.txt.asc SHASUMS256.txt
-# Wed, 23 Nov 2016 19:19:16 GMT
+# Mon, 28 Nov 2016 20:07:47 GMT
+RUN adduser -D -u 1000 node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         binutils-gold         curl         g++         gcc         gnupg         libgcc         linux-headers         make         python   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";   done     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN)     && make install     && apk del .build-deps     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt
+# Mon, 28 Nov 2016 20:07:48 GMT
 CMD ["node"]
 ```
 
@@ -526,9 +526,9 @@ CMD ["node"]
 		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
 		Size: 2.3 MB (2312958 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57528b039108065361df6e66aa8100a74c4fdffa8912a1c6354ffed943488959`  
-		Last Modified: Wed, 23 Nov 2016 19:43:43 GMT  
-		Size: 16.8 MB (16836445 bytes)  
+	-	`sha256:3ef3180ff781c70d2e9e53f2f646949062fe80ffea053c95fe121a8438cd61b7`  
+		Last Modified: Mon, 28 Nov 2016 20:27:34 GMT  
+		Size: 16.8 MB (16836376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `node:7.2.0-onbuild`
@@ -1734,7 +1734,7 @@ CMD ["node"]
 ## `node:6.9.1-alpine`
 
 ```console
-$ docker pull node@sha256:fbc54a458ec78b338e7b655e6a23c6bab9e19dc70ed60e266e514eab18d8cf9f
+$ docker pull node@sha256:89f054ffcabab2a016a74fc6313f7be8826156157517e529c0c19d061299dd82
 ```
 
 -	Platforms:
@@ -1744,9 +1744,9 @@ $ docker pull node@sha256:fbc54a458ec78b338e7b655e6a23c6bab9e19dc70ed60e266e514e
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.6 MB (17609808 bytes)**  
+-	Total Size: **17.6 MB (17609687 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:913761cb9de8c1aac6bac10feb98e7000a1c96cbf45b2ed778917ddb72753810`
+-	Image ID: `sha256:3c6fe43f14cad1edc3f4fa12298886ea2724a0eaca9d04b983c66c599f347eb1`
 -	Default Command: `["node"]`
 
 ```dockerfile
@@ -1756,9 +1756,9 @@ ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in /
 ENV NPM_CONFIG_LOGLEVEL=info
 # Fri, 11 Nov 2016 20:41:12 GMT
 ENV NODE_VERSION=6.9.1
-# Wed, 23 Nov 2016 19:31:30 GMT
-RUN adduser -D -u 1000 node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         binutils-gold         curl         g++         gcc         gnupg         libgcc         linux-headers         make         python         tar   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";   done     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.gz"     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.gz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.gz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN)     && make install     && apk del .build-deps     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.gz" SHASUMS256.txt.asc SHASUMS256.txt
-# Wed, 23 Nov 2016 19:31:30 GMT
+# Mon, 28 Nov 2016 20:19:06 GMT
+RUN adduser -D -u 1000 node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         binutils-gold         curl         g++         gcc         gnupg         libgcc         linux-headers         make         python   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";   done     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN)     && make install     && apk del .build-deps     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt
+# Mon, 28 Nov 2016 20:19:07 GMT
 CMD ["node"]
 ```
 
@@ -1767,15 +1767,15 @@ CMD ["node"]
 		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
 		Size: 2.3 MB (2312958 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46cd47e3e0e2349cfbbfa5960781276e1d4f3074a43fe9e08b2161414709a1ea`  
-		Last Modified: Wed, 23 Nov 2016 19:49:23 GMT  
-		Size: 15.3 MB (15296850 bytes)  
+	-	`sha256:419f814deb4fe2b0a36c15c54145ad09624c3ce1050e2669508081c459410cee`  
+		Last Modified: Mon, 28 Nov 2016 20:32:26 GMT  
+		Size: 15.3 MB (15296729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `node:6.9-alpine`
 
 ```console
-$ docker pull node@sha256:fbc54a458ec78b338e7b655e6a23c6bab9e19dc70ed60e266e514eab18d8cf9f
+$ docker pull node@sha256:89f054ffcabab2a016a74fc6313f7be8826156157517e529c0c19d061299dd82
 ```
 
 -	Platforms:
@@ -1785,9 +1785,9 @@ $ docker pull node@sha256:fbc54a458ec78b338e7b655e6a23c6bab9e19dc70ed60e266e514e
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.6 MB (17609808 bytes)**  
+-	Total Size: **17.6 MB (17609687 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:913761cb9de8c1aac6bac10feb98e7000a1c96cbf45b2ed778917ddb72753810`
+-	Image ID: `sha256:3c6fe43f14cad1edc3f4fa12298886ea2724a0eaca9d04b983c66c599f347eb1`
 -	Default Command: `["node"]`
 
 ```dockerfile
@@ -1797,9 +1797,9 @@ ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in /
 ENV NPM_CONFIG_LOGLEVEL=info
 # Fri, 11 Nov 2016 20:41:12 GMT
 ENV NODE_VERSION=6.9.1
-# Wed, 23 Nov 2016 19:31:30 GMT
-RUN adduser -D -u 1000 node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         binutils-gold         curl         g++         gcc         gnupg         libgcc         linux-headers         make         python         tar   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";   done     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.gz"     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.gz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.gz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN)     && make install     && apk del .build-deps     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.gz" SHASUMS256.txt.asc SHASUMS256.txt
-# Wed, 23 Nov 2016 19:31:30 GMT
+# Mon, 28 Nov 2016 20:19:06 GMT
+RUN adduser -D -u 1000 node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         binutils-gold         curl         g++         gcc         gnupg         libgcc         linux-headers         make         python   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";   done     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN)     && make install     && apk del .build-deps     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt
+# Mon, 28 Nov 2016 20:19:07 GMT
 CMD ["node"]
 ```
 
@@ -1808,15 +1808,15 @@ CMD ["node"]
 		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
 		Size: 2.3 MB (2312958 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46cd47e3e0e2349cfbbfa5960781276e1d4f3074a43fe9e08b2161414709a1ea`  
-		Last Modified: Wed, 23 Nov 2016 19:49:23 GMT  
-		Size: 15.3 MB (15296850 bytes)  
+	-	`sha256:419f814deb4fe2b0a36c15c54145ad09624c3ce1050e2669508081c459410cee`  
+		Last Modified: Mon, 28 Nov 2016 20:32:26 GMT  
+		Size: 15.3 MB (15296729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `node:6-alpine`
 
 ```console
-$ docker pull node@sha256:fbc54a458ec78b338e7b655e6a23c6bab9e19dc70ed60e266e514eab18d8cf9f
+$ docker pull node@sha256:89f054ffcabab2a016a74fc6313f7be8826156157517e529c0c19d061299dd82
 ```
 
 -	Platforms:
@@ -1826,9 +1826,9 @@ $ docker pull node@sha256:fbc54a458ec78b338e7b655e6a23c6bab9e19dc70ed60e266e514e
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.6 MB (17609808 bytes)**  
+-	Total Size: **17.6 MB (17609687 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:913761cb9de8c1aac6bac10feb98e7000a1c96cbf45b2ed778917ddb72753810`
+-	Image ID: `sha256:3c6fe43f14cad1edc3f4fa12298886ea2724a0eaca9d04b983c66c599f347eb1`
 -	Default Command: `["node"]`
 
 ```dockerfile
@@ -1838,9 +1838,9 @@ ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in /
 ENV NPM_CONFIG_LOGLEVEL=info
 # Fri, 11 Nov 2016 20:41:12 GMT
 ENV NODE_VERSION=6.9.1
-# Wed, 23 Nov 2016 19:31:30 GMT
-RUN adduser -D -u 1000 node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         binutils-gold         curl         g++         gcc         gnupg         libgcc         linux-headers         make         python         tar   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";   done     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.gz"     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.gz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.gz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN)     && make install     && apk del .build-deps     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.gz" SHASUMS256.txt.asc SHASUMS256.txt
-# Wed, 23 Nov 2016 19:31:30 GMT
+# Mon, 28 Nov 2016 20:19:06 GMT
+RUN adduser -D -u 1000 node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         binutils-gold         curl         g++         gcc         gnupg         libgcc         linux-headers         make         python   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";   done     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN)     && make install     && apk del .build-deps     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt
+# Mon, 28 Nov 2016 20:19:07 GMT
 CMD ["node"]
 ```
 
@@ -1849,15 +1849,15 @@ CMD ["node"]
 		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
 		Size: 2.3 MB (2312958 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46cd47e3e0e2349cfbbfa5960781276e1d4f3074a43fe9e08b2161414709a1ea`  
-		Last Modified: Wed, 23 Nov 2016 19:49:23 GMT  
-		Size: 15.3 MB (15296850 bytes)  
+	-	`sha256:419f814deb4fe2b0a36c15c54145ad09624c3ce1050e2669508081c459410cee`  
+		Last Modified: Mon, 28 Nov 2016 20:32:26 GMT  
+		Size: 15.3 MB (15296729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `node:boron-alpine`
 
 ```console
-$ docker pull node@sha256:fbc54a458ec78b338e7b655e6a23c6bab9e19dc70ed60e266e514eab18d8cf9f
+$ docker pull node@sha256:89f054ffcabab2a016a74fc6313f7be8826156157517e529c0c19d061299dd82
 ```
 
 -	Platforms:
@@ -1867,9 +1867,9 @@ $ docker pull node@sha256:fbc54a458ec78b338e7b655e6a23c6bab9e19dc70ed60e266e514e
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.6 MB (17609808 bytes)**  
+-	Total Size: **17.6 MB (17609687 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:913761cb9de8c1aac6bac10feb98e7000a1c96cbf45b2ed778917ddb72753810`
+-	Image ID: `sha256:3c6fe43f14cad1edc3f4fa12298886ea2724a0eaca9d04b983c66c599f347eb1`
 -	Default Command: `["node"]`
 
 ```dockerfile
@@ -1879,9 +1879,9 @@ ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in /
 ENV NPM_CONFIG_LOGLEVEL=info
 # Fri, 11 Nov 2016 20:41:12 GMT
 ENV NODE_VERSION=6.9.1
-# Wed, 23 Nov 2016 19:31:30 GMT
-RUN adduser -D -u 1000 node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         binutils-gold         curl         g++         gcc         gnupg         libgcc         linux-headers         make         python         tar   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";   done     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.gz"     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.gz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.gz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN)     && make install     && apk del .build-deps     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.gz" SHASUMS256.txt.asc SHASUMS256.txt
-# Wed, 23 Nov 2016 19:31:30 GMT
+# Mon, 28 Nov 2016 20:19:06 GMT
+RUN adduser -D -u 1000 node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         binutils-gold         curl         g++         gcc         gnupg         libgcc         linux-headers         make         python   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";   done     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN)     && make install     && apk del .build-deps     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt
+# Mon, 28 Nov 2016 20:19:07 GMT
 CMD ["node"]
 ```
 
@@ -1890,9 +1890,9 @@ CMD ["node"]
 		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
 		Size: 2.3 MB (2312958 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46cd47e3e0e2349cfbbfa5960781276e1d4f3074a43fe9e08b2161414709a1ea`  
-		Last Modified: Wed, 23 Nov 2016 19:49:23 GMT  
-		Size: 15.3 MB (15296850 bytes)  
+	-	`sha256:419f814deb4fe2b0a36c15c54145ad09624c3ce1050e2669508081c459410cee`  
+		Last Modified: Mon, 28 Nov 2016 20:32:26 GMT  
+		Size: 15.3 MB (15296729 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `node:6.9.1-onbuild`
