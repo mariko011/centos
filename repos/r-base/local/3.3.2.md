@@ -1466,10 +1466,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris krb5=1.15~beta1-1
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.15~beta1-1.dsc' krb5_1.15~beta1-1.dsc 3261 SHA256:fbded00e724725b7266a484629343d5a5b8aebc6178737ba461f2b9af2d298d2
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.15~beta1.orig.tar.gz' krb5_1.15~beta1.orig.tar.gz 9328801 SHA256:957ff239dc1d327cb4a0e8ec53ff619fef7dd1ecd5cec99004ca440f617974c2
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.15~beta1-1.debian.tar.xz' krb5_1.15~beta1-1.debian.tar.xz 141900 SHA256:2f506202acf5a09a38b3ddd8ebda5628517e13e27b7b9af3ad5ef62f5acb1370
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15~beta1-1.dsc' krb5_1.15~beta1-1.dsc 3261 SHA256:fbded00e724725b7266a484629343d5a5b8aebc6178737ba461f2b9af2d298d2
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15~beta1.orig.tar.gz' krb5_1.15~beta1.orig.tar.gz 9328801 SHA256:957ff239dc1d327cb4a0e8ec53ff619fef7dd1ecd5cec99004ca440f617974c2
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15~beta1-1.debian.tar.xz' krb5_1.15~beta1-1.debian.tar.xz 141900 SHA256:2f506202acf5a09a38b3ddd8ebda5628517e13e27b7b9af3ad5ef62f5acb1370
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/krb5/1.15~beta1-1/
+- https://sources.debian.net/src/krb5/1.15~beta1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lapack=3.6.1-2`
 
@@ -2589,15 +2594,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.42+dfsg-2.dsc' openldap_2.4.42+dfsg-2.dsc 2902 SHA256:66bd0c7ccc8997008a4e8c734cb2ee7fed5ac6897217389dc5647ff86bfbac01
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.42+dfsg.orig.tar.gz' openldap_2.4.42+dfsg.orig.tar.gz 4813173 SHA256:5f56e4e3584f7a4b4c8437a2c985b2f519836946be77ef1aa43a5d20c02ea97b
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.42+dfsg-2.debian.tar.xz' openldap_2.4.42+dfsg-2.debian.tar.xz 152620 SHA256:6a9bb42aeb745dd2b18765ab067401d450bbf97f8822356fa175397cb9257199
+'http://http.debian.net/debian/pool/main/o/openldap/openldap_2.4.42+dfsg-2.dsc' openldap_2.4.42+dfsg-2.dsc 2902 SHA256:66bd0c7ccc8997008a4e8c734cb2ee7fed5ac6897217389dc5647ff86bfbac01
+'http://http.debian.net/debian/pool/main/o/openldap/openldap_2.4.42+dfsg.orig.tar.gz' openldap_2.4.42+dfsg.orig.tar.gz 4813173 SHA256:5f56e4e3584f7a4b4c8437a2c985b2f519836946be77ef1aa43a5d20c02ea97b
+'http://http.debian.net/debian/pool/main/o/openldap/openldap_2.4.42+dfsg-2.debian.tar.xz' openldap_2.4.42+dfsg-2.debian.tar.xz 152620 SHA256:6a9bb42aeb745dd2b18765ab067401d450bbf97f8822356fa175397cb9257199
 ```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openldap/2.4.42+dfsg-2/
-- https://sources.debian.net/src/openldap/2.4.42+dfsg-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssl=1.0.2j-1`
 
