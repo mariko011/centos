@@ -196,18 +196,8 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-files=9.6
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.6.dsc' base-files_9.6.dsc 1052 SHA256:f402149afa784750c093d09bb10aa9a9a00d32aaee52eda62f056211a304ebed
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.6.tar.xz' base-files_9.6.tar.xz 53728 SHA256:5cb5339aa852af14653ac187f8baf55f5ad6fc8ee2d903e5a336f0ee556dcf44
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/base-files/9.6/
-- https://sources.debian.net/src/base-files/9.6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `base-passwd=3.5.40`
 
@@ -984,19 +974,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris icu=57.1-4
-'http://deb.debian.org/debian/pool/main/i/icu/icu_57.1-4.dsc' icu_57.1-4.dsc 2091 SHA256:d3f3f599d2762b7606a7e3d63bbe27fe94442e28014994226d3c8f3f261c69f6
-'http://deb.debian.org/debian/pool/main/i/icu/icu_57.1.orig.tar.gz' icu_57.1.orig.tar.gz 22360664 SHA256:ff8c67cb65949b1e7808f2359f2b80f722697048e90e7cfc382ec1fe229e9581
-'http://deb.debian.org/debian/pool/main/i/icu/icu_57.1-4.debian.tar.xz' icu_57.1-4.debian.tar.xz 29364 SHA256:1681e8cade102c58a0555c324fbcad4950d0c32bb10aea9ec55e7a7dbade8b3d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/icu/57.1-4/
-- https://sources.debian.net/src/icu/57.1-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9.4-2`
 
@@ -1876,19 +1855,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.16.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.16.0-1.dsc' nghttp2_1.16.0-1.dsc 2231 SHA256:6679dc2340b573ba2b54a41dca4d834b1008599ee9b5f64aa063cf7848d20e19
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.16.0.orig.tar.bz2' nghttp2_1.16.0.orig.tar.bz2 1783873 SHA256:bc53bed532b8a0e284b692b0446325894c2b1783935290ccd2ac7a3e1bc5c6ae
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.16.0-1.debian.tar.xz' nghttp2_1.16.0-1.debian.tar.xz 11352 SHA256:52a8b14cf2bcc8f792106284fab9c2d5381b21c5c32536e62110ba0dc299fa74
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.16.0-1/
-- https://sources.debian.net/src/nghttp2/1.16.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `nspr=2:4.12-6`
 
@@ -2146,19 +2114,8 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris perl=5.24.1~rc3-3
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1~rc3-3.dsc' perl_5.24.1~rc3-3.dsc 2347 SHA256:9328c6e667267ed5a20618b06dffc9f96180d0ea519f2422e8964d0d173c66d4
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1~rc3.orig.tar.xz' perl_5.24.1~rc3.orig.tar.xz 11552388 SHA256:18a25373d80e5d5c39928790e45427c7bc34a98499b25645de2b5fb2ab7ba7b5
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1~rc3-3.debian.tar.xz' perl_5.24.1~rc3-3.debian.tar.xz 162980 SHA256:c52663a4148af33561e3c8db88fa4b07e8fe62ffc3670f7a78f521ebb1ec7759
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/perl/5.24.1~rc3-3/
-- https://sources.debian.net/src/perl/5.24.1~rc3-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-1`
 
@@ -2243,19 +2200,8 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.2-3.2
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3.2.dsc' shadow_4.2-3.2.dsc 2289 SHA256:9377f2adb0d3bf01dbdd36a6b550f1bc2e1d60840cf39d5314cca4474a7ff857
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3.2.debian.tar.xz' shadow_4.2-3.2.debian.tar.xz 497092 SHA256:0483a19f500c8eb8b26ef3fd408a014f32171c375b76d3ed7762cf97934bee4c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/shadow/1:4.2-3.2/
-- https://sources.debian.net/src/shadow/1:4.2-3.2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sqlite3=3.15.1-1`
 
