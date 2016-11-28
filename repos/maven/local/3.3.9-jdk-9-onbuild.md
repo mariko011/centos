@@ -324,19 +324,8 @@ Licenses: (parsed from: `/usr/share/doc/bzr/copyright`, `/usr/share/doc/python-b
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bzr=2.7.0+bzr6619-2
-'http://deb.debian.org/debian/pool/main/b/bzr/bzr_2.7.0+bzr6619-2.dsc' bzr_2.7.0+bzr6619-2.dsc 2811 SHA256:ae5603f5568ce8c67c75ae65042fcdd2eb132d31f2baef6fad258ad05e6e57f0
-'http://deb.debian.org/debian/pool/main/b/bzr/bzr_2.7.0+bzr6619.orig.tar.gz' bzr_2.7.0+bzr6619.orig.tar.gz 10945598 SHA256:a0192999245457fbd564702518bc96453ac0f9b38ea031a466679839b346fa14
-'http://deb.debian.org/debian/pool/main/b/bzr/bzr_2.7.0+bzr6619-2.debian.tar.xz' bzr_2.7.0+bzr6619-2.debian.tar.xz 66348 SHA256:919aad3d0f040bcfc0c36d635a811510514df193f46ed26c920900aceee80ccb
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/bzr/2.7.0+bzr6619-2/
-- https://sources.debian.net/src/bzr/2.7.0+bzr6619-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ca-certificates-java=20161107`
 
@@ -1164,19 +1153,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris icu=57.1-4
-'http://deb.debian.org/debian/pool/main/i/icu/icu_57.1-4.dsc' icu_57.1-4.dsc 2091 SHA256:d3f3f599d2762b7606a7e3d63bbe27fe94442e28014994226d3c8f3f261c69f6
-'http://deb.debian.org/debian/pool/main/i/icu/icu_57.1.orig.tar.gz' icu_57.1.orig.tar.gz 22360664 SHA256:ff8c67cb65949b1e7808f2359f2b80f722697048e90e7cfc382ec1fe229e9581
-'http://deb.debian.org/debian/pool/main/i/icu/icu_57.1-4.debian.tar.xz' icu_57.1-4.debian.tar.xz 29364 SHA256:1681e8cade102c58a0555c324fbcad4950d0c32bb10aea9ec55e7a7dbade8b3d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/icu/57.1-4/
-- https://sources.debian.net/src/icu/57.1-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9.4-2`
 
@@ -2186,19 +2164,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.16.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.16.0-1.dsc' nghttp2_1.16.0-1.dsc 2231 SHA256:6679dc2340b573ba2b54a41dca4d834b1008599ee9b5f64aa063cf7848d20e19
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.16.0.orig.tar.bz2' nghttp2_1.16.0.orig.tar.bz2 1783873 SHA256:bc53bed532b8a0e284b692b0446325894c2b1783935290ccd2ac7a3e1bc5c6ae
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.16.0-1.debian.tar.xz' nghttp2_1.16.0-1.debian.tar.xz 11352 SHA256:52a8b14cf2bcc8f792106284fab9c2d5381b21c5c32536e62110ba0dc299fa74
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.16.0-1/
-- https://sources.debian.net/src/nghttp2/1.16.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `nspr=2:4.12-6`
 
@@ -2517,19 +2484,8 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.24/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris perl=5.24.1~rc3-3
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1~rc3-3.dsc' perl_5.24.1~rc3-3.dsc 2347 SHA256:9328c6e667267ed5a20618b06dffc9f96180d0ea519f2422e8964d0d173c66d4
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1~rc3.orig.tar.xz' perl_5.24.1~rc3.orig.tar.xz 11552388 SHA256:18a25373d80e5d5c39928790e45427c7bc34a98499b25645de2b5fb2ab7ba7b5
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1~rc3-3.debian.tar.xz' perl_5.24.1~rc3-3.debian.tar.xz 162980 SHA256:c52663a4148af33561e3c8db88fa4b07e8fe62ffc3670f7a78f521ebb1ec7759
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/perl/5.24.1~rc3-3/
-- https://sources.debian.net/src/perl/5.24.1~rc3-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `procps=2:3.3.12-2`
 
