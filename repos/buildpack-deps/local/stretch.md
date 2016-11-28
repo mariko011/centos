@@ -2057,19 +2057,8 @@ Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/do
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris krb5=1.14.3+dfsg-2
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.14.3+dfsg-2.dsc' krb5_1.14.3+dfsg-2.dsc 3271 SHA256:55a06a998f0f304bba967ed2b61bd1084e93c279f67224b991c177a333754504
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.14.3+dfsg.orig.tar.gz' krb5_1.14.3+dfsg.orig.tar.gz 12057621 SHA256:305cab368db7d33f6eb0c0105fbc898440c9ac7976ede2f26716b956d5680179
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.14.3+dfsg-2.debian.tar.xz' krb5_1.14.3+dfsg-2.debian.tar.xz 143060 SHA256:beb22e44e3dd1abf4ca28b7c3b342e96c2606c4e48b432572bf1bfae9561d7c7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/krb5/1.14.3+dfsg-2/
-- https://sources.debian.net/src/krb5/1.14.3+dfsg-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lcms2=2.7-1`
 
@@ -2270,19 +2259,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libevent=2.0.21-stable-2
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.0.21-stable-2.dsc' libevent_2.0.21-stable-2.dsc 2392 SHA256:1d4bdc39ab31730ebc8c09d29cfd4247238d81294204722a9b038513a17d6992
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.0.21-stable.orig.tar.gz' libevent_2.0.21-stable.orig.tar.gz 850772 SHA256:22a530a8a5ba1cb9c080cba033206b17dacd21437762155c6d30ee6469f574f5
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.0.21-stable-2.debian.tar.xz' libevent_2.0.21-stable-2.debian.tar.xz 10736 SHA256:34ae24e760a426fd1cf38d372b2b1c5887987bc5705507ef13158fbe61a7492e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libevent/2.0.21-stable-2/
-- https://sources.debian.net/src/libevent/2.0.21-stable-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libexif=0.6.21-2`
 
@@ -3887,19 +3865,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.42+dfsg-2.dsc' openldap_2.4.42+dfsg-2.dsc 2902 SHA256:66bd0c7ccc8997008a4e8c734cb2ee7fed5ac6897217389dc5647ff86bfbac01
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.42+dfsg.orig.tar.gz' openldap_2.4.42+dfsg.orig.tar.gz 4813173 SHA256:5f56e4e3584f7a4b4c8437a2c985b2f519836946be77ef1aa43a5d20c02ea97b
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.42+dfsg-2.debian.tar.xz' openldap_2.4.42+dfsg-2.debian.tar.xz 152620 SHA256:6a9bb42aeb745dd2b18765ab067401d450bbf97f8822356fa175397cb9257199
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openldap/2.4.42+dfsg-2/
-- https://sources.debian.net/src/openldap/2.4.42+dfsg-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssh=1:7.3p1-1`
 
@@ -4212,19 +4179,8 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.6=9.6.0-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.0-1.dsc' postgresql-9.6_9.6.0-1.dsc 3646 SHA256:7739e1031063ed2823a11113d8c8535d5b624370dbd6767f4d91e3fcaad5bcf2
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.0.orig.tar.bz2' postgresql-9.6_9.6.0.orig.tar.bz2 19157472 SHA256:3b5fe9634b80a4511aac1832a087586a7caa8c3413619562bdda009a015863ce
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.0-1.debian.tar.xz' postgresql-9.6_9.6.0-1.debian.tar.xz 19308 SHA256:dfd26177dfcf5a5a8693c5705ece7d6b34f2b473430e8c272f3dbae4f63496cb
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/postgresql-9.6/9.6.0-1/
-- https://sources.debian.net/src/postgresql-9.6/9.6.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `procps=2:3.3.12-2`
 
@@ -4242,19 +4198,8 @@ Licenses: (parsed from: `/usr/share/doc/libprocps6/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris procps=2:3.3.12-2
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.12-2.dsc' procps_3.3.12-2.dsc 2136 SHA256:ba3339c5b84b53f01942d17fbd10dfaa4e9c61ae7d849eb7204660e292811172
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.12.orig.tar.xz' procps_3.3.12.orig.tar.xz 840540 SHA256:042fcc93e1850aee4c193c51c03f369293fb64fe47e37b38852be6693d12a3af
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.12-2.debian.tar.xz' procps_3.3.12-2.debian.tar.xz 26820 SHA256:f2dc5de6bf7a5d73b3e012633afdc7dd8d0b466ea768c57934a7de9b81e4bb9e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/procps/2:3.3.12-2/
-- https://sources.debian.net/src/procps/2:3.3.12-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `python-defaults=2.7.11-2`
 
@@ -4309,19 +4254,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.12-3
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.12-3.dsc' python2.7_2.7.12-3.dsc 3310 SHA256:70753fe22198f705ab62e07024d057bf5f422c3dd7630ba00fd691fd8b5bcb08
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.12.orig.tar.gz' python2.7_2.7.12.orig.tar.gz 16935960 SHA256:3cb522d17463dfa69a155ab18cffa399b358c966c0363d6c8b5b3bf1384da4b6
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.12-3.diff.gz' python2.7_2.7.12-3.diff.gz 375825 SHA256:aad1a7005ece1f9d4cbd7084623da2d9ff82b435bbfa1281dedd46a1595d9fff
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/python2.7/2.7.12-3/
-- https://sources.debian.net/src/python2.7/2.7.12-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `python3-defaults=3.5.1-4`
 
@@ -4386,19 +4320,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.5-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python3.5=3.5.2-6
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.2-6.dsc' python3.5_3.5.2-6.dsc 3317 SHA256:1b088264e4adb986781d10e6469ff607dc0fbddda8b76803630c8767a969b4ce
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.2.orig.tar.xz' python3.5_3.5.2.orig.tar.xz 15222676 SHA256:0010f56100b9b74259ebcd5d4b295a32324b58b517403a10d1a2aa7cb22bca40
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.2-6.debian.tar.xz' python3.5_3.5.2-6.debian.tar.xz 521124 SHA256:5767ca0006a4a5c86a6482f80b5ce1825d9717e0031db6bb1dd3550efa3141c5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/python3.5/3.5.2-6/
-- https://sources.debian.net/src/python3.5/3.5.2-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `readline=7.0-1`
 

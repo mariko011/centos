@@ -1106,19 +1106,8 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris krb5=1.14.3+dfsg-2
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.14.3+dfsg-2.dsc' krb5_1.14.3+dfsg-2.dsc 3271 SHA256:55a06a998f0f304bba967ed2b61bd1084e93c279f67224b991c177a333754504
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.14.3+dfsg.orig.tar.gz' krb5_1.14.3+dfsg.orig.tar.gz 12057621 SHA256:305cab368db7d33f6eb0c0105fbc898440c9ac7976ede2f26716b956d5680179
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.14.3+dfsg-2.debian.tar.xz' krb5_1.14.3+dfsg-2.debian.tar.xz 143060 SHA256:beb22e44e3dd1abf4ca28b7c3b342e96c2606c4e48b432572bf1bfae9561d7c7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/krb5/1.14.3+dfsg-2/
-- https://sources.debian.net/src/krb5/1.14.3+dfsg-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libbsd=0.8.3-1`
 
@@ -1732,19 +1721,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.42+dfsg-2.dsc' openldap_2.4.42+dfsg-2.dsc 2902 SHA256:66bd0c7ccc8997008a4e8c734cb2ee7fed5ac6897217389dc5647ff86bfbac01
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.42+dfsg.orig.tar.gz' openldap_2.4.42+dfsg.orig.tar.gz 4813173 SHA256:5f56e4e3584f7a4b4c8437a2c985b2f519836946be77ef1aa43a5d20c02ea97b
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.42+dfsg-2.debian.tar.xz' openldap_2.4.42+dfsg-2.debian.tar.xz 152620 SHA256:6a9bb42aeb745dd2b18765ab067401d450bbf97f8822356fa175397cb9257199
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openldap/2.4.42+dfsg-2/
-- https://sources.debian.net/src/openldap/2.4.42+dfsg-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssh=1:7.3p1-1`
 
@@ -1944,19 +1922,8 @@ Licenses: (parsed from: `/usr/share/doc/libprocps6/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris procps=2:3.3.12-2
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.12-2.dsc' procps_3.3.12-2.dsc 2136 SHA256:ba3339c5b84b53f01942d17fbd10dfaa4e9c61ae7d849eb7204660e292811172
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.12.orig.tar.xz' procps_3.3.12.orig.tar.xz 840540 SHA256:042fcc93e1850aee4c193c51c03f369293fb64fe47e37b38852be6693d12a3af
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.12-2.debian.tar.xz' procps_3.3.12-2.debian.tar.xz 26820 SHA256:f2dc5de6bf7a5d73b3e012633afdc7dd8d0b466ea768c57934a7de9b81e4bb9e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/procps/2:3.3.12-2/
-- https://sources.debian.net/src/procps/2:3.3.12-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `python-defaults=2.7.11-2`
 
@@ -2011,19 +1978,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.12-3
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.12-3.dsc' python2.7_2.7.12-3.dsc 3310 SHA256:70753fe22198f705ab62e07024d057bf5f422c3dd7630ba00fd691fd8b5bcb08
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.12.orig.tar.gz' python2.7_2.7.12.orig.tar.gz 16935960 SHA256:3cb522d17463dfa69a155ab18cffa399b358c966c0363d6c8b5b3bf1384da4b6
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.12-3.diff.gz' python2.7_2.7.12-3.diff.gz 375825 SHA256:aad1a7005ece1f9d4cbd7084623da2d9ff82b435bbfa1281dedd46a1595d9fff
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/python2.7/2.7.12-3/
-- https://sources.debian.net/src/python2.7/2.7.12-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `readline=7.0-1`
 
