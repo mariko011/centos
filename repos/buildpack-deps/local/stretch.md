@@ -4927,18 +4927,8 @@ Licenses: (parsed from: `/usr/share/doc/x11-common/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris xorg=1:7.7+16
-'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7+16.dsc' xorg_7.7+16.dsc 1970 SHA256:2851fe3914bd116515086ee6cb47c60d394dd1fd69569383b9bcd86ed9064a99
-'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7+16.tar.gz' xorg_7.7+16.tar.gz 289969 SHA256:5f1a755ffeb86996c0aba36845145932e20641990fc28a3c68e76d78dd6293ae
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/xorg/1:7.7+16/
-- https://sources.debian.net/src/xorg/1:7.7+16/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `xtrans=1.3.5-1`
 
