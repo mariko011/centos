@@ -1,14 +1,14 @@
-# `haproxy:1.6.10-alpine`
+# `haproxy:1.7.0-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0d55c94da85ec1933167026ac4c954b0bc7e1e49bb4da719ee470882033c8b9d`
-- Created: `2016-11-21T20:25:21.607931676Z`
+- Image ID: `sha256:1e151cc910cbc19b4ad33eb6a2c742a3d4bd6717ce4f04403348f515f9b9fd9a`
+- Created: `2016-11-28T23:07:49.132006177Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["haproxy","-f","/usr/local/etc/haproxy/haproxy.cfg"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `HAPROXY_MAJOR=1.6`
-  - `HAPROXY_VERSION=1.6.10`
-  - `HAPROXY_MD5=6d47461c008b823a0088d19ec30dbe4e`
+  - `HAPROXY_MAJOR=1.7`
+  - `HAPROXY_VERSION=1.7.0`
+  - `HAPROXY_MD5=ab6e169aeb1b53364aacda80c904398a`

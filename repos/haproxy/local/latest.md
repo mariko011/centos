@@ -1,17 +1,17 @@
-# `haproxy:1.6.10`
+# `haproxy:1.7.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bf0560eebb1b46e517bde3c65ac16de5b16055ea7aac1acf662a1a4fdba8b1e5`
-- Created: `2016-11-21T20:24:39.703928343Z`
+- Image ID: `sha256:7cc35805808d2aa456415f36b15ab890537e29ffdf59716cb5f37ca4294b03ea`
+- Created: `2016-11-28T23:07:04.311883886Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["haproxy","-f","/usr/local/etc/haproxy/haproxy.cfg"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `HAPROXY_MAJOR=1.6`
-  - `HAPROXY_VERSION=1.6.10`
-  - `HAPROXY_MD5=6d47461c008b823a0088d19ec30dbe4e`
+  - `HAPROXY_MAJOR=1.7`
+  - `HAPROXY_VERSION=1.7.0`
+  - `HAPROXY_MD5=ab6e169aeb1b53364aacda80c904398a`
 
 ## `dpkg` (`.deb`-based packages)
 
