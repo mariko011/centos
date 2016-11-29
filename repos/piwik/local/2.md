@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:73d3a312fb6825dfafef77682c01492ec8cf334f62b195907fd344e1093ac47b`
-- Created: `2016-11-15T01:18:05.771982549Z`
+- Image ID: `sha256:11f398366d35766b8215aa3f08617f3b9c89fb56fccba90d79e9698e669e6d95`
+- Created: `2016-11-28T23:27:27.367853993Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["php-fpm"]`
@@ -1055,9 +1055,8 @@ Likely also available for browsing at:
 Binary Packages:
 
 - `libgnutls-deb0-28:amd64=3.3.8-6+deb8u3`
-- `libgnutls-openssl27:amd64=3.3.8-6+deb8u3`
 
-Licenses: (parsed from: `/usr/share/doc/libgnutls-deb0-28/copyright`, `/usr/share/doc/libgnutls-openssl27/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libgnutls-deb0-28/copyright`)
 
 - `GFDL-1.3`
 - `GPL`
@@ -2606,30 +2605,6 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/sqlite3/3.8.7.1-1+deb8u2/
 - https://sources.debian.net/src/sqlite3/3.8.7.1-1+deb8u2/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `ssmtp=2.64-8`
-
-Binary Packages:
-
-- `ssmtp=2.64-8`
-
-Licenses: (parsed from: `/usr/share/doc/ssmtp/copyright`)
-
-- `GPL-2`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris ssmtp=2.64-8
-'http://deb.debian.org/debian/pool/main/s/ssmtp/ssmtp_2.64-8.dsc' ssmtp_2.64-8.dsc 1819 SHA256:0b115e9b555a267d35d1fc81b7a245f0a1104085ead361b862b913836d961238
-'http://deb.debian.org/debian/pool/main/s/ssmtp/ssmtp_2.64.orig.tar.bz2' ssmtp_2.64.orig.tar.bz2 52501 SHA256:22c37dc90c871e8e052b2cab0ad219d010fa938608cd66b21c8f3c759046fa36
-'http://deb.debian.org/debian/pool/main/s/ssmtp/ssmtp_2.64-8.debian.tar.bz2' ssmtp_2.64-8.debian.tar.bz2 37916 SHA256:2ed9caf0a14d4d5a44837a4a76cd5c9a52e527e2eb7a300eb328d90cc97917f0
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/ssmtp/2.64-8/
-- https://sources.debian.net/src/ssmtp/2.64-8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `startpar=0.59-3`
 
