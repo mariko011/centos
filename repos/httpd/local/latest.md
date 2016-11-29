@@ -2,13 +2,14 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:50f10ef90911955014d2dbcf279e859a7bed1c6d21f8f7614dcf9b74ca639a89`
-- Created: `2016-11-08T19:54:32.715943787Z`
+- Image ID: `sha256:95e9b11574a67e3e904804b147373665e43ea6a961df569cd6df3ab798f08b8b`
+- Created: `2016-11-28T23:15:46.19989447Z`
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
 - Environment:
   - `PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `HTTPD_PREFIX=/usr/local/apache2`
+  - `NGHTTP2_VERSION=1.16.0-1`
   - `HTTPD_VERSION=2.4.23`
   - `HTTPD_SHA1=5101be34ac4a509b245adb70a56690a84fcc4e7f`
   - `HTTPD_BZ2_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=httpd/httpd-2.4.23.tar.bz2`
@@ -1361,6 +1362,30 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libusb/2:0.1.12-25/
 - https://sources.debian.net/src/libusb/2:0.1.12-25/debian/copyright (for direct copyright/license information)
 
+### `dpkg` source package: `libxml2=2.9.1+dfsg1-5+deb8u3`
+
+Binary Packages:
+
+- `libxml2:amd64=2.9.1+dfsg1-5+deb8u3`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
+  If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.1+dfsg1-5+deb8u3
+'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u3.dsc' libxml2_2.9.1+dfsg1-5+deb8u3.dsc 2591 SHA256:57c260e91d7892f2b778b2f8b132b206dcc325a004d4c193ae6913c593a8bc2f
+'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1.orig.tar.gz' libxml2_2.9.1+dfsg1.orig.tar.gz 3793894 SHA256:f3ec5256412192f74833286c4490672500b232ed1c9195214db2c641df064a28
+'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u3.debian.tar.xz' libxml2_2.9.1+dfsg1-5+deb8u3.debian.tar.xz 64108 SHA256:072644c58b39997efee6e25781900c5b53b07dc41ada219945285a876e3abc1e
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u3/
+- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u3/debian/copyright (for direct copyright/license information)
+
 ### `dpkg` source package: `linux=3.16.36-1+deb8u2`
 
 Binary Packages:
@@ -1439,6 +1464,30 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/lsb/4.1+Debian13+nmu1/
 - https://sources.debian.net/src/lsb/4.1+Debian13+nmu1/debian/copyright (for direct copyright/license information)
+
+### `dpkg` source package: `lua5.2=5.2.3-1.1`
+
+Binary Packages:
+
+- `liblua5.2-0:amd64=5.2.3-1.1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
+  If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris lua5.2=5.2.3-1.1
+'http://deb.debian.org/debian/pool/main/l/lua5.2/lua5.2_5.2.3-1.1.dsc' lua5.2_5.2.3-1.1.dsc 1485 SHA256:6b0e8ecde380f708cea33303fb38c57654fb9f9cdac8222e49238a7824b46c2e
+'http://deb.debian.org/debian/pool/main/l/lua5.2/lua5.2_5.2.3.orig.tar.gz' lua5.2_5.2.3.orig.tar.gz 247398 SHA256:65c7ea10b9fdf5e6550f72c08b492be9f627717505536810a4effbbaf4591850
+'http://deb.debian.org/debian/pool/main/l/lua5.2/lua5.2_5.2.3-1.1.debian.tar.xz' lua5.2_5.2.3-1.1.debian.tar.xz 9072 SHA256:8ac9be0fe5d7967643bf29cb748f9ac6c00de9858c12a3ac845450c7df4589f5
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/lua5.2/5.2.3-1.1/
+- https://sources.debian.net/src/lua5.2/5.2.3-1.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lvm2=2.02.111-2.2+deb8u1`
 
@@ -1574,6 +1623,36 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/nettle/2.7.1-5+deb8u1/
 - https://sources.debian.net/src/nettle/2.7.1-5+deb8u1/debian/copyright (for direct copyright/license information)
+
+### `dpkg` source package: `nghttp2=1.16.0-1`
+
+Binary Packages:
+
+- `libnghttp2-14:amd64=1.16.0-1`
+
+Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
+
+- `BSD-2-clause`
+- `Expat`
+- `GPL-3`
+- `GPL-3+ with autoconf exception`
+- `MIT`
+- `SIL-OFL-1.1`
+- `all-permissive`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris nghttp2=1.16.0-1
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.16.0-1.dsc' nghttp2_1.16.0-1.dsc 2231 SHA256:6679dc2340b573ba2b54a41dca4d834b1008599ee9b5f64aa063cf7848d20e19
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.16.0.orig.tar.bz2' nghttp2_1.16.0.orig.tar.bz2 1783873 SHA256:bc53bed532b8a0e284b692b0446325894c2b1783935290ccd2ac7a3e1bc5c6ae
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.16.0-1.debian.tar.xz' nghttp2_1.16.0-1.debian.tar.xz 11352 SHA256:52a8b14cf2bcc8f792106284fab9c2d5381b21c5c32536e62110ba0dc299fa74
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/nghttp2/1.16.0-1/
+- https://sources.debian.net/src/nghttp2/1.16.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.40+dfsg-1+deb8u2`
 
