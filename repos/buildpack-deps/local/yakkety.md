@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fcf61edd1b2c0e88912a4b7441dbc868d47a5a69182ff81e32d009a5a7c0e9e7`
-- Created: `2016-11-16T23:07:39.162783041Z`
+- Image ID: `sha256:223f319f34b5ea8d9a15170d191cb972afc7f2609ce12c9f735e4bb2273e49e6`
+- Created: `2016-11-29T22:29:05.865922571Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -1404,12 +1404,12 @@ $ apt-get source -qq --print-uris grep=2.25-6
 'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_2.25-6.debian.tar.bz2' grep_2.25-6.debian.tar.bz2 110173 SHA256:08b1b1e05122e57e03b47ba9711272590abf341b42ddbd68a07f086699c45f6e
 ```
 
-### `dpkg` source package: `gtk+2.0=2.24.30-4ubuntu2`
+### `dpkg` source package: `gtk+2.0=2.24.30-4ubuntu3`
 
 Binary Packages:
 
-- `libgtk2.0-0:amd64=2.24.30-4ubuntu2`
-- `libgtk2.0-common=2.24.30-4ubuntu2`
+- `libgtk2.0-0:amd64=2.24.30-4ubuntu3`
+- `libgtk2.0-common=2.24.30-4ubuntu3`
 
 Licenses: (parsed from: `/usr/share/doc/libgtk2.0-0/copyright`, `/usr/share/doc/libgtk2.0-common/copyright`)
 
@@ -1419,10 +1419,10 @@ Licenses: (parsed from: `/usr/share/doc/libgtk2.0-0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gtk+2.0=2.24.30-4ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.30-4ubuntu2.dsc' gtk+2.0_2.24.30-4ubuntu2.dsc 4082 SHA256:38d7079f6bfc17cc9851dcf3e13433041024f50276e5f797547c9a98a2036f94
+$ apt-get source -qq --print-uris gtk+2.0=2.24.30-4ubuntu3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.30-4ubuntu3.dsc' gtk+2.0_2.24.30-4ubuntu3.dsc 4082 SHA256:7ddfb104c2345f5bfc69609ad9ec1176e6c34d57fcdf4de2b9a6104c374a48bf
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.30.orig.tar.xz' gtk+2.0_2.24.30.orig.tar.xz 12800276 SHA256:0d15cec3b6d55c60eac205b1f3ba81a1ed4eadd9d0f8e7c508bc7065d0c4ca50
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.30-4ubuntu2.debian.tar.xz' gtk+2.0_2.24.30-4ubuntu2.debian.tar.xz 106400 SHA256:dba58c0ebdee92c95116821ef0114687241da05e18d44ae9d5fd8a717514b17f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.30-4ubuntu3.debian.tar.xz' gtk+2.0_2.24.30-4ubuntu3.debian.tar.xz 107372 SHA256:866b2ad3582c58f0629e47344c951f217c2fdef895bae8cf839446511bdfe0f7
 ```
 
 ### `dpkg` source package: `gtk+3.0=3.20.9-1ubuntu2`
@@ -1614,23 +1614,23 @@ $ apt-get source -qq --print-uris ilmbase=2.2.0-11ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/i/ilmbase/ilmbase_2.2.0-11ubuntu2.debian.tar.xz' ilmbase_2.2.0-11ubuntu2.debian.tar.xz 13400 SHA256:400b77a32f7a04d78ff0462f32dc1e4073f5e1225ed070c63fa6a0ec619905c5
 ```
 
-### `dpkg` source package: `imagemagick=8:6.8.9.9-7ubuntu8`
+### `dpkg` source package: `imagemagick=8:6.8.9.9-7ubuntu8.1`
 
 Binary Packages:
 
-- `imagemagick=8:6.8.9.9-7ubuntu8`
-- `imagemagick-6.q16=8:6.8.9.9-7ubuntu8`
-- `imagemagick-common=8:6.8.9.9-7ubuntu8`
-- `libmagickcore-6-arch-config:amd64=8:6.8.9.9-7ubuntu8`
-- `libmagickcore-6-headers=8:6.8.9.9-7ubuntu8`
-- `libmagickcore-6.q16-2:amd64=8:6.8.9.9-7ubuntu8`
-- `libmagickcore-6.q16-2-extra:amd64=8:6.8.9.9-7ubuntu8`
-- `libmagickcore-6.q16-dev:amd64=8:6.8.9.9-7ubuntu8`
-- `libmagickcore-dev=8:6.8.9.9-7ubuntu8`
-- `libmagickwand-6-headers=8:6.8.9.9-7ubuntu8`
-- `libmagickwand-6.q16-2:amd64=8:6.8.9.9-7ubuntu8`
-- `libmagickwand-6.q16-dev:amd64=8:6.8.9.9-7ubuntu8`
-- `libmagickwand-dev=8:6.8.9.9-7ubuntu8`
+- `imagemagick=8:6.8.9.9-7ubuntu8.1`
+- `imagemagick-6.q16=8:6.8.9.9-7ubuntu8.1`
+- `imagemagick-common=8:6.8.9.9-7ubuntu8.1`
+- `libmagickcore-6-arch-config:amd64=8:6.8.9.9-7ubuntu8.1`
+- `libmagickcore-6-headers=8:6.8.9.9-7ubuntu8.1`
+- `libmagickcore-6.q16-2:amd64=8:6.8.9.9-7ubuntu8.1`
+- `libmagickcore-6.q16-2-extra:amd64=8:6.8.9.9-7ubuntu8.1`
+- `libmagickcore-6.q16-dev:amd64=8:6.8.9.9-7ubuntu8.1`
+- `libmagickcore-dev=8:6.8.9.9-7ubuntu8.1`
+- `libmagickwand-6-headers=8:6.8.9.9-7ubuntu8.1`
+- `libmagickwand-6.q16-2:amd64=8:6.8.9.9-7ubuntu8.1`
+- `libmagickwand-6.q16-dev:amd64=8:6.8.9.9-7ubuntu8.1`
+- `libmagickwand-dev=8:6.8.9.9-7ubuntu8.1`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/imagemagick-common/copyright`, `/usr/share/doc/libmagickcore-6-arch-config/copyright`, `/usr/share/doc/libmagickcore-6-headers/copyright`, `/usr/share/doc/libmagickcore-6.q16-2/copyright`, `/usr/share/doc/libmagickcore-6.q16-2-extra/copyright`, `/usr/share/doc/libmagickcore-6.q16-dev/copyright`, `/usr/share/doc/libmagickcore-dev/copyright`, `/usr/share/doc/libmagickwand-6-headers/copyright`, `/usr/share/doc/libmagickwand-6.q16-2/copyright`, `/usr/share/doc/libmagickwand-6.q16-dev/copyright`, `/usr/share/doc/libmagickwand-dev/copyright`)
 
@@ -1648,14 +1648,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.8.9.9-7ubuntu8
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9-7ubuntu8.dsc' imagemagick_6.8.9.9-7ubuntu8.dsc 4296 SHA256:c650ec2f8550ed5c3debaabd76c39ff11416c8db7e179209adbf8cfc0d5e7089
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9.orig.tar.xz' imagemagick_6.8.9.9.orig.tar.xz 7891624 SHA256:a4cccc70179ff2c67550e063cdcb2e62907338ef3e68b45bb1c41931e515b3eb
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9-7ubuntu8.debian.tar.xz' imagemagick_6.8.9.9-7ubuntu8.debian.tar.xz 208828 SHA256:d6515e273d22954c2d1bc9d08e8f0c55ffbd7ba1ce9e3df0ed78e0210631e6fc
-```
 
 ### `dpkg` source package: `init-system-helpers=1.45`
 
@@ -2895,14 +2889,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.8.0-27.29
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0-27.29.dsc' linux_4.8.0-27.29.dsc 8764 SHA256:3bdc7a40c1b753dc259e94f6950cd5d703b9d8ea2b4650a48bdd1958d8aaf7cd
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0.orig.tar.gz' linux_4.8.0.orig.tar.gz 139977270 SHA256:80229497a1584076d534e96acf529a01a0fc00044eba9e6c00ae936e453dbd3c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0-27.29.diff.gz' linux_4.8.0-27.29.diff.gz 9026053 SHA256:adc12ccb4a4466de9bee18d667728fe93d1b40a6e9fe20c09f8a53272d63ff52
-```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu5`
 
@@ -3945,11 +3933,11 @@ $ apt-get source -qq --print-uris sysvinit=2.88dsf-59.8git1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_2.88dsf-59.8git1.debian.tar.xz' sysvinit_2.88dsf-59.8git1.debian.tar.xz 132992 SHA256:46fdc9f8212692e75c6a3ef76c5acd1eb0f8d55779f98f05b57bbe41b98c4c66
 ```
 
-### `dpkg` source package: `tar=1.29b-1`
+### `dpkg` source package: `tar=1.29b-1ubuntu0.1`
 
 Binary Packages:
 
-- `tar=1.29b-1`
+- `tar=1.29b-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
@@ -3959,10 +3947,10 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tar=1.29b-1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.29b-1.dsc' tar_1.29b-1.dsc 1901 SHA256:dc65003ce17fe782dbd482ff686951d8ccf92b87c3d0e80eec8bd23c050420b8
+$ apt-get source -qq --print-uris tar=1.29b-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.29b-1ubuntu0.1.dsc' tar_1.29b-1ubuntu0.1.dsc 2024 SHA256:95c5d8f5d9ad126174dfbcfabd7205b7407c4a474db86060d76d53302248c7ff
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.29b.orig.tar.xz' tar_1.29b.orig.tar.xz 1822008 SHA256:6a59706ebee384a6cd2fb3ee1dbfbfc20c5c66c7efd7cedb28edc054fca8ba00
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.29b-1.debian.tar.xz' tar_1.29b-1.debian.tar.xz 27992 SHA256:6f7570040cdc982ec61a64fa05701cde9826594d0f1a3a60827c31a9b48ccd19
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.29b-1ubuntu0.1.debian.tar.xz' tar_1.29b-1ubuntu0.1.debian.tar.xz 28628 SHA256:da626432a395ab6bf8ec62b6c3f7f1202f6d7c5a8c7309ba2df7f3b488fead43
 ```
 
 ### `dpkg` source package: `tiff=4.0.6-2`

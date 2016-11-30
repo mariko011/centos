@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f72489cdf924565e9bc9efa778733830713aae6f1798473cf3c80a17cedecdd8`
-- Created: `2016-11-16T23:05:47.954398213Z`
+- Image ID: `sha256:ac0ad1c6bd58201bd7a621e9e5f28c50bdb887702745047b85a017e432fe0f9f`
+- Created: `2016-11-29T22:25:54.559559625Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -1458,23 +1458,23 @@ $ apt-get source -qq --print-uris ilmbase=2.2.0-11ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/i/ilmbase/ilmbase_2.2.0-11ubuntu2.debian.tar.xz' ilmbase_2.2.0-11ubuntu2.debian.tar.xz 13400 SHA256:400b77a32f7a04d78ff0462f32dc1e4073f5e1225ed070c63fa6a0ec619905c5
 ```
 
-### `dpkg` source package: `imagemagick=8:6.8.9.9-7ubuntu5.1`
+### `dpkg` source package: `imagemagick=8:6.8.9.9-7ubuntu5.2`
 
 Binary Packages:
 
-- `imagemagick=8:6.8.9.9-7ubuntu5.1`
-- `imagemagick-6.q16=8:6.8.9.9-7ubuntu5.1`
-- `imagemagick-common=8:6.8.9.9-7ubuntu5.1`
-- `libmagickcore-6-arch-config:amd64=8:6.8.9.9-7ubuntu5.1`
-- `libmagickcore-6-headers=8:6.8.9.9-7ubuntu5.1`
-- `libmagickcore-6.q16-2:amd64=8:6.8.9.9-7ubuntu5.1`
-- `libmagickcore-6.q16-2-extra:amd64=8:6.8.9.9-7ubuntu5.1`
-- `libmagickcore-6.q16-dev:amd64=8:6.8.9.9-7ubuntu5.1`
-- `libmagickcore-dev=8:6.8.9.9-7ubuntu5.1`
-- `libmagickwand-6-headers=8:6.8.9.9-7ubuntu5.1`
-- `libmagickwand-6.q16-2:amd64=8:6.8.9.9-7ubuntu5.1`
-- `libmagickwand-6.q16-dev:amd64=8:6.8.9.9-7ubuntu5.1`
-- `libmagickwand-dev=8:6.8.9.9-7ubuntu5.1`
+- `imagemagick=8:6.8.9.9-7ubuntu5.2`
+- `imagemagick-6.q16=8:6.8.9.9-7ubuntu5.2`
+- `imagemagick-common=8:6.8.9.9-7ubuntu5.2`
+- `libmagickcore-6-arch-config:amd64=8:6.8.9.9-7ubuntu5.2`
+- `libmagickcore-6-headers=8:6.8.9.9-7ubuntu5.2`
+- `libmagickcore-6.q16-2:amd64=8:6.8.9.9-7ubuntu5.2`
+- `libmagickcore-6.q16-2-extra:amd64=8:6.8.9.9-7ubuntu5.2`
+- `libmagickcore-6.q16-dev:amd64=8:6.8.9.9-7ubuntu5.2`
+- `libmagickcore-dev=8:6.8.9.9-7ubuntu5.2`
+- `libmagickwand-6-headers=8:6.8.9.9-7ubuntu5.2`
+- `libmagickwand-6.q16-2:amd64=8:6.8.9.9-7ubuntu5.2`
+- `libmagickwand-6.q16-dev:amd64=8:6.8.9.9-7ubuntu5.2`
+- `libmagickwand-dev=8:6.8.9.9-7ubuntu5.2`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/imagemagick-common/copyright`, `/usr/share/doc/libmagickcore-6-arch-config/copyright`, `/usr/share/doc/libmagickcore-6-headers/copyright`, `/usr/share/doc/libmagickcore-6.q16-2/copyright`, `/usr/share/doc/libmagickcore-6.q16-2-extra/copyright`, `/usr/share/doc/libmagickcore-6.q16-dev/copyright`, `/usr/share/doc/libmagickcore-dev/copyright`, `/usr/share/doc/libmagickwand-6-headers/copyright`, `/usr/share/doc/libmagickwand-6.q16-2/copyright`, `/usr/share/doc/libmagickwand-6.q16-dev/copyright`, `/usr/share/doc/libmagickwand-dev/copyright`)
 
@@ -2658,14 +2658,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-47.68
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-47.68.dsc' linux_4.4.0-47.68.dsc 9613 SHA256:dfc17d6aaf29288167c51ec7a2982fd7073fc618926518e08e95bd33121424c8
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-47.68.diff.gz' linux_4.4.0-47.68.diff.gz 12000806 SHA256:ad39cfbaea9add01813c0e4192b1d9c0a6784d9b20217a1114e4a7571a700161
-```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu0.2`
 
@@ -3290,12 +3284,12 @@ $ apt-get source -qq --print-uris postgresql-9.5=9.5.5-0ubuntu0.16.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.5-0ubuntu0.16.04.debian.tar.xz' postgresql-9.5_9.5.5-0ubuntu0.16.04.debian.tar.xz 22252 SHA256:cf4c1ebde89cd189c5705850a6548a77de9af18b512f970084e7024531f8a8f7
 ```
 
-### `dpkg` source package: `procps=2:3.3.10-4ubuntu2`
+### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.2`
 
 Binary Packages:
 
-- `libprocps4:amd64=2:3.3.10-4ubuntu2`
-- `procps=2:3.3.10-4ubuntu2`
+- `libprocps4:amd64=2:3.3.10-4ubuntu2.2`
+- `procps=2:3.3.10-4ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/libprocps4/copyright`, `/usr/share/doc/procps/copyright`)
 
@@ -3309,10 +3303,10 @@ Licenses: (parsed from: `/usr/share/doc/libprocps4/copyright`, `/usr/share/doc/p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris procps=2:3.3.10-4ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.dsc' procps_3.3.10-4ubuntu2.dsc 1875 SHA256:4ad5b8338219a5f57f455c0ce08ad46e8a63f5e663a076a4de76a50464ca7f93
+$ apt-get source -qq --print-uris procps=2:3.3.10-4ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.2.dsc' procps_3.3.10-4ubuntu2.2.dsc 2235 SHA256:d4e2ac7aeacc7cc7537c2ca4fe7ea7a9e7db2a93c03b05700bb1287a14e26c9c
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10.orig.tar.xz' procps_3.3.10.orig.tar.xz 814816 SHA256:40a3d2b0489e057d85564f4f304083b24fc699b39ea828610183fb9f0a6ebe97
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.debian.tar.xz' procps_3.3.10-4ubuntu2.debian.tar.xz 36776 SHA256:7b8a62c79386c2d75eea39bd1896ee62128d82e3193b7d669df4ecc016294d02
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.2.debian.tar.xz' procps_3.3.10-4ubuntu2.2.debian.tar.xz 37256 SHA256:e2f9a30b9228980a3113c3c6d4111790f67dc1c7aa0819fd55b0128084f86e9c
 ```
 
 ### `dpkg` source package: `python-defaults=2.7.11-1`
@@ -3335,14 +3329,14 @@ $ apt-get source -qq --print-uris python-defaults=2.7.11-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.11-1.tar.gz' python-defaults_2.7.11-1.tar.gz 276447 SHA256:d4269585625c53a061292e44890c4960b688a47ebf3fa43202ceaa8f4bc502d9
 ```
 
-### `dpkg` source package: `python2.7=2.7.12-1~16.04`
+### `dpkg` source package: `python2.7=2.7.12-1ubuntu0~16.04.1`
 
 Binary Packages:
 
-- `libpython2.7-minimal:amd64=2.7.12-1~16.04`
-- `libpython2.7-stdlib:amd64=2.7.12-1~16.04`
-- `python2.7=2.7.12-1~16.04`
-- `python2.7-minimal=2.7.12-1~16.04`
+- `libpython2.7-minimal:amd64=2.7.12-1ubuntu0~16.04.1`
+- `libpython2.7-stdlib:amd64=2.7.12-1ubuntu0~16.04.1`
+- `python2.7=2.7.12-1ubuntu0~16.04.1`
+- `python2.7-minimal=2.7.12-1ubuntu0~16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/share/doc/libpython2.7-stdlib/copyright`, `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/python2.7-minimal/copyright`)
 
@@ -3363,8 +3357,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris python2.7=2.7.12-1ubuntu0~16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.1.dsc' python2.7_2.7.12-1ubuntu0~16.04.1.dsc 3373 SHA256:bbce59e2156e66efcc5bed1b5aab437c9bf1121311ed4f1939bd14fbc8e57c81
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12.orig.tar.gz' python2.7_2.7.12.orig.tar.gz 16935960 SHA256:3cb522d17463dfa69a155ab18cffa399b358c966c0363d6c8b5b3bf1384da4b6
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.12-1ubuntu0~16.04.1.diff.gz' python2.7_2.7.12-1ubuntu0~16.04.1.diff.gz 276670 SHA256:a75d6cf1e97289ac88d506628626bfbdc4a6376581d7c761067044c27b45c9e2
+```
 
 ### `dpkg` source package: `readline6=6.3-8ubuntu2`
 
@@ -3610,11 +3610,11 @@ $ apt-get source -qq --print-uris sysvinit=2.88dsf-59.3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_2.88dsf-59.3ubuntu2.debian.tar.xz' sysvinit_2.88dsf-59.3ubuntu2.debian.tar.xz 134864 SHA256:d4cf7aa3d6c1f8727cbd699395053d541844a9ff02ea5e6a1119eb90604586b8
 ```
 
-### `dpkg` source package: `tar=1.28-2.1`
+### `dpkg` source package: `tar=1.28-2.1ubuntu0.1`
 
 Binary Packages:
 
-- `tar=1.28-2.1`
+- `tar=1.28-2.1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
@@ -3624,10 +3624,10 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tar=1.28-2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.28-2.1.dsc' tar_1.28-2.1.dsc 1896 SHA256:d4f3cef13e0e3f8f7adbcd524f65be28078f65782c184554641f55190a4d9a96
+$ apt-get source -qq --print-uris tar=1.28-2.1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.28-2.1ubuntu0.1.dsc' tar_1.28-2.1ubuntu0.1.dsc 2025 SHA256:b4ed109da748b893bfb036dd81251156181573659b35e506e5c8bc8c7c155fd4
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.28.orig.tar.xz' tar_1.28.orig.tar.xz 1756440 SHA256:6da98f52fc469754dbde475c861581036ff2c83a1ef4f7250292935139f587d9
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.28-2.1.debian.tar.xz' tar_1.28-2.1.debian.tar.xz 36256 SHA256:54e44ae756a7b7e0ca501dba5169f04a1b517be96ec92cea0176fbcc9d10555e
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.28-2.1ubuntu0.1.debian.tar.xz' tar_1.28-2.1ubuntu0.1.debian.tar.xz 36868 SHA256:1933bd564d70d3d0cf085291969af36b2461265270be25f3819cc033f72c1ac6
 ```
 
 ### `dpkg` source package: `tiff=4.0.6-1`

@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2bd4786bf54666d8661596e36ee6d799496fea71385b12cec673f42865588352`
-- Created: `2016-11-16T22:56:57.876939101Z`
+- Image ID: `sha256:fa7fdb5c800d9f7c08ce149e200ab0441218c92c9bec1b3db627f317ad7b01c1`
+- Created: `2016-11-29T22:10:57.412428023Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -1371,11 +1371,11 @@ $ apt-get source -qq --print-uris python-defaults=2.7.3-0ubuntu2.2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.3-0ubuntu2.2.tar.gz' python-defaults_2.7.3-0ubuntu2.2.tar.gz 163342 SHA256:3a83c3fc9ea6441eca688a141aa32dd2ffb3c5b4d67d05f9026a8e1d88b473a9
 ```
 
-### `dpkg` source package: `python2.7=2.7.3-0ubuntu3.8`
+### `dpkg` source package: `python2.7=2.7.3-0ubuntu3.9`
 
 Binary Packages:
 
-- `python2.7-minimal=2.7.3-0ubuntu3.8`
+- `python2.7-minimal=2.7.3-0ubuntu3.9`
 
 Licenses: (parsed from: `/usr/share/doc/python2.7-minimal/copyright`)
 
@@ -1388,8 +1388,14 @@ Licenses: (parsed from: `/usr/share/doc/python2.7-minimal/copyright`)
 - `This software is provided as-is, without express`
 - `implied`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris python2.7=2.7.3-0ubuntu3.9
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.3-0ubuntu3.9.dsc' python2.7_2.7.3-0ubuntu3.9.dsc 2791 SHA256:5998a90d7e4643ae51f832b8616eece82d053d5e41c2617228e28d230eeb061f
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.3.orig.tar.gz' python2.7_2.7.3.orig.tar.gz 14216076 SHA256:68bddd390a22ce9a9946ad711fc0042c831889be1f8ff79c0945f7a973e05bda
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.3-0ubuntu3.9.diff.gz' python2.7_2.7.3-0ubuntu3.9.diff.gz 279332 SHA256:5c2ab358ecebb2da3df3d6e3ad256898a818eea4b3d3f4443e0848e5231aebd9
+```
 
 ### `dpkg` source package: `readline6=6.2-8`
 
@@ -1548,11 +1554,11 @@ $ apt-get source -qq --print-uris sysvinit=2.88dsf-13.10ubuntu11.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_2.88dsf-13.10ubuntu11.1.diff.gz' sysvinit_2.88dsf-13.10ubuntu11.1.diff.gz 170842 SHA256:eeb3559cca69f6707a140cc8f13510af6e23eda8da638195d1dc2e93eda51c50
 ```
 
-### `dpkg` source package: `tar=1.26-4ubuntu1`
+### `dpkg` source package: `tar=1.26-4ubuntu1.1`
 
 Binary Packages:
 
-- `tar=1.26-4ubuntu1`
+- `tar=1.26-4ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
@@ -1562,10 +1568,10 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tar=1.26-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.26-4ubuntu1.dsc' tar_1.26-4ubuntu1.dsc 1936 SHA256:4c3d794bef5cbf71b8100a2ef6d3b8ee94a951fb472154e069a7d6d8358d41a2
+$ apt-get source -qq --print-uris tar=1.26-4ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.26-4ubuntu1.1.dsc' tar_1.26-4ubuntu1.1.dsc 1871 SHA256:3996d351749fbac70c4a504f8b76545c2eae2568c17eb871181c0530ce639a8c
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.26.orig.tar.gz' tar_1.26.orig.tar.gz 3381800 SHA256:0f77a22ed6f07be172cb7eb825c73fbf0d58127fc38d8c60da423ac8590be639
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.26-4ubuntu1.debian.tar.gz' tar_1.26-4ubuntu1.debian.tar.gz 33205 SHA256:9b7d9b3b2b178782d60b1bda8eb0eae77cf6432178a6d970e481cdc9e71eb059
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.26-4ubuntu1.1.debian.tar.gz' tar_1.26-4ubuntu1.1.debian.tar.gz 34030 SHA256:0237bbf4eccee92126e426d7650c2cdc699fe1110499a4e6a31140c586ec1825
 ```
 
 ### `dpkg` source package: `tzdata=2016h-0ubuntu0.12.04`
