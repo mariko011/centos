@@ -3772,19 +3772,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016i-0+deb7u1
-'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2016i-0+deb7u1.dsc' tzdata_2016i-0+deb7u1.dsc 1934 SHA256:f637d80adc6fa1fb1b6797b419b68b04a5489c1f15d4772ff72639d4021e67c5
-'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2016i.orig.tar.gz' tzdata_2016i.orig.tar.gz 320352 SHA256:b6966ec982ef64fe48cebec437096b4f57f4287519ed32dde59c86d3a1853845
-'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2016i-0+deb7u1.debian.tar.xz' tzdata_2016i-0+deb7u1.debian.tar.xz 101416 SHA256:d4bba0d43d3d1e1b2839b3c989cfd3c3bc133d07a555d047afe7aa1995195dd9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2016i-0+deb7u1/
-- https://sources.debian.net/src/tzdata/2016i-0+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ucf=3.0025+nmu3`
 
