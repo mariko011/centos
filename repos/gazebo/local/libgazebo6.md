@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a509dc80752291091f2acd541f708653c15ce3f76ec0155bb2a586b8b9283ed3`
-- Created: `2016-11-16T23:47:27.159929461Z`
+- Image ID: `sha256:7269a348a4149454a30af0ff4e716c7ea6c971cb02e37e5799edfdc29ef7d02a`
+- Created: `2016-11-29T23:13:56.341508891Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
 - Command: `["gzserver"]`
@@ -1845,11 +1845,11 @@ $ apt-get source -qq --print-uris gst-plugins-base1.0=1.2.4-1~ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.2.4-1~ubuntu2.debian.tar.xz' gst-plugins-base1.0_1.2.4-1~ubuntu2.debian.tar.xz 40084 SHA256:98e38d37a55b4f43c089f8fad32a75b2bb1b259e5c5e18dcbd48ae24121b403a
 ```
 
-### `dpkg` source package: `gstreamer1.0=1.2.4-0ubuntu1`
+### `dpkg` source package: `gstreamer1.0=1.2.4-0ubuntu1.1`
 
 Binary Packages:
 
-- `libgstreamer1.0-0:amd64=1.2.4-0ubuntu1`
+- `libgstreamer1.0-0:amd64=1.2.4-0ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libgstreamer1.0-0/copyright`)
 
@@ -1859,8 +1859,14 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer1.0-0/copyright`)
 - `LGPL-2+`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gstreamer1.0=1.2.4-0ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.2.4-0ubuntu1.1.dsc' gstreamer1.0_1.2.4-0ubuntu1.1.dsc 3028 SHA256:12c772db8d214f8da69ab8cea7b75a99904e7b6d28aff189ff1dfb5d6c10f471
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.2.4.orig.tar.xz' gstreamer1.0_1.2.4.orig.tar.xz 3225208 SHA256:1e7ca67a7870a82c9ed51d51d0008cdbc550c41d64cc3ff3f9a1c2fc311b4929
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.2.4-0ubuntu1.1.debian.tar.gz' gstreamer1.0_1.2.4-0ubuntu1.1.debian.tar.gz 45650 SHA256:f7d0d5296fd1941a966c4b5a91c547147e4aae0522e5a2e703ebe229df989b27
+```
 
 ### `dpkg` source package: `gtk+2.0=2.24.23-0ubuntu1.4`
 
@@ -2273,14 +2279,8 @@ Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris isc-dhcp=4.2.4-7ubuntu12.7
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.7.dsc' isc-dhcp_4.2.4-7ubuntu12.7.dsc 2806 SHA256:0bffebc1f6d3002dd955fb8bfaeb9bb40a0aaeda2d16093122951222f2fc1aa0
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.7.debian.tar.xz' isc-dhcp_4.2.4-7ubuntu12.7.debian.tar.xz 108332 SHA256:2f5ffdb3a552bf131cb3ec72d48decc5f58febf308ac51cb46d258abfd8c190e
-```
 
 ### `dpkg` source package: `isl=0.12.2-1`
 
@@ -2423,19 +2423,25 @@ $ apt-get source -qq --print-uris keyutils=1.5.6-1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.5.6-1.debian.tar.xz' keyutils_1.5.6-1.debian.tar.xz 6164 SHA256:e10975bad51268001644235a9e330eac6fdc4add20ef84b4546b8d91474458a0
 ```
 
-### `dpkg` source package: `klibc=2.0.3-0ubuntu1.14.04.1`
+### `dpkg` source package: `klibc=2.0.3-0ubuntu1.14.04.2`
 
 Binary Packages:
 
-- `klibc-utils=2.0.3-0ubuntu1.14.04.1`
-- `libklibc=2.0.3-0ubuntu1.14.04.1`
+- `klibc-utils=2.0.3-0ubuntu1.14.04.2`
+- `libklibc=2.0.3-0ubuntu1.14.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/klibc-utils/copyright`, `/usr/share/doc/libklibc/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris klibc=2.0.3-0ubuntu1.14.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/k/klibc/klibc_2.0.3-0ubuntu1.14.04.2.dsc' klibc_2.0.3-0ubuntu1.14.04.2.dsc 2059 SHA256:f7cb0ee59aaf2899815dbe8aeab3a91f9a245d311440a82fa6c71dc1359eb667
+'http://archive.ubuntu.com/ubuntu/pool/main/k/klibc/klibc_2.0.3.orig.tar.bz2' klibc_2.0.3.orig.tar.bz2 517788 SHA256:1f9a49c62faf3e166a8deee6c36ad0f4527bb4aa2050123853a4957802235dca
+'http://archive.ubuntu.com/ubuntu/pool/main/k/klibc/klibc_2.0.3-0ubuntu1.14.04.2.debian.tar.xz' klibc_2.0.3-0ubuntu1.14.04.2.debian.tar.xz 20572 SHA256:44daef54221dc98fe668e547999eca4359b4c2b5a6d15583e8a7024058a2b7e1
+```
 
 ### `dpkg` source package: `kmod=15-0ubuntu6`
 
@@ -4469,14 +4475,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=3.13.0-101.148
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-101.148.dsc' linux_3.13.0-101.148.dsc 9178 SHA256:3c600cd7744b08cfd0b534689ea945b34c3e961e660074e51f39809521bdff13
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-101.148.diff.gz' linux_3.13.0-101.148.diff.gz 9373505 SHA256:ade0a3f1bcf0d808709b65b7baedbc7a92d59d7eae5e8ac8ac2a95112ec3f7e6
-```
 
 ### `dpkg` source package: `llvm-toolchain-3.4=1:3.4-1ubuntu3`
 
@@ -5781,16 +5781,16 @@ $ apt-get source -qq --print-uris python-defaults=2.7.5-5ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.5-5ubuntu3.tar.gz' python-defaults_2.7.5-5ubuntu3.tar.gz 171965 SHA256:224f673b5369e3ebca0a5430273bc82036cd0d10f403642e2037cc583ee9ba99
 ```
 
-### `dpkg` source package: `python2.7=2.7.6-8ubuntu0.2`
+### `dpkg` source package: `python2.7=2.7.6-8ubuntu0.3`
 
 Binary Packages:
 
-- `libpython2.7:amd64=2.7.6-8ubuntu0.2`
-- `libpython2.7-dev:amd64=2.7.6-8ubuntu0.2`
-- `libpython2.7-minimal:amd64=2.7.6-8ubuntu0.2`
-- `libpython2.7-stdlib:amd64=2.7.6-8ubuntu0.2`
-- `python2.7=2.7.6-8ubuntu0.2`
-- `python2.7-minimal=2.7.6-8ubuntu0.2`
+- `libpython2.7:amd64=2.7.6-8ubuntu0.3`
+- `libpython2.7-dev:amd64=2.7.6-8ubuntu0.3`
+- `libpython2.7-minimal:amd64=2.7.6-8ubuntu0.3`
+- `libpython2.7-stdlib:amd64=2.7.6-8ubuntu0.3`
+- `python2.7=2.7.6-8ubuntu0.3`
+- `python2.7-minimal=2.7.6-8ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libpython2.7/copyright`, `/usr/share/doc/libpython2.7-dev/copyright`, `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/share/doc/libpython2.7-stdlib/copyright`, `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/python2.7-minimal/copyright`)
 
@@ -5803,8 +5803,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7/copyright`, `/usr/share/doc
 - `This software is provided as-is, without express`
 - `implied`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris python2.7=2.7.6-8ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.6-8ubuntu0.3.dsc' python2.7_2.7.6-8ubuntu0.3.dsc 3217 SHA256:a6e62c005c7485d8e52f5ac5e0067efa8289620294a5371b37375e7640db0ba8
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.6.orig.tar.gz' python2.7_2.7.6.orig.tar.gz 14823209 SHA256:b6eeafea7ffaa8c25e2169ba5f5f66bedfa504a51cf62ae7df58a424c3f3fc02
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.6-8ubuntu0.3.diff.gz' python2.7_2.7.6-8ubuntu0.3.diff.gz 635006 SHA256:5de000aae55948b4715a0c69a387fc70d46bbd426bcb14b619f4b96596b28a29
+```
 
 ### `dpkg` source package: `python3-defaults=3.4.0-0ubuntu2`
 
@@ -5826,14 +5832,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.4.0-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.4.0-0ubuntu2.tar.gz' python3-defaults_3.4.0-0ubuntu2.tar.gz 127619 SHA256:4a1a9019e69ba130213268cc83d8bef9216cda8596bd71546b2369a389650730
 ```
 
-### `dpkg` source package: `python3.4=3.4.3-1ubuntu1~14.04.4`
+### `dpkg` source package: `python3.4=3.4.3-1ubuntu1~14.04.5`
 
 Binary Packages:
 
-- `libpython3.4-minimal:amd64=3.4.3-1ubuntu1~14.04.4`
-- `libpython3.4-stdlib:amd64=3.4.3-1ubuntu1~14.04.4`
-- `python3.4=3.4.3-1ubuntu1~14.04.4`
-- `python3.4-minimal=3.4.3-1ubuntu1~14.04.4`
+- `libpython3.4-minimal:amd64=3.4.3-1ubuntu1~14.04.5`
+- `libpython3.4-stdlib:amd64=3.4.3-1ubuntu1~14.04.5`
+- `python3.4=3.4.3-1ubuntu1~14.04.5`
+- `python3.4-minimal=3.4.3-1ubuntu1~14.04.5`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.4-minimal/copyright`, `/usr/share/doc/libpython3.4-stdlib/copyright`, `/usr/share/doc/python3.4/copyright`, `/usr/share/doc/python3.4-minimal/copyright`)
 
@@ -5855,8 +5861,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.4-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.4=3.4.3-1ubuntu1~14.04.5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3-1ubuntu1~14.04.5.dsc' python3.4_3.4.3-1ubuntu1~14.04.5.dsc 3229 SHA256:3a7cec814f5eefc88160d094fdc1e09a636c032c4b7f5f0208f21c305b5584c4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3.orig.tar.xz' python3.4_3.4.3.orig.tar.xz 12690456 SHA256:9151f6d2975471e6b6189aa2de836b48ba0361b145dd8fc143e986efbbed9f3a
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3-1ubuntu1~14.04.5.debian.tar.gz' python3.4_3.4.3-1ubuntu1~14.04.5.debian.tar.gz 261768 SHA256:362683d41b7174234dd815eb872c25e971f96f567d164d33a5405f5a41d4b1c9
+```
 
 ### `dpkg` source package: `qt4-x11=4:4.8.5+git192-g085f851+dfsg-2ubuntu4.1`
 
@@ -6385,11 +6397,11 @@ $ apt-get source -qq --print-uris sysvinit=2.88dsf-41ubuntu6.3
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_2.88dsf-41ubuntu6.3.debian.tar.xz' sysvinit_2.88dsf-41ubuntu6.3.debian.tar.xz 164756 SHA256:38b4edb9dcc6e938f9dd524693607572f149e96c036f449bfa7d42557e3b2dd7
 ```
 
-### `dpkg` source package: `tar=1.27.1-1`
+### `dpkg` source package: `tar=1.27.1-1ubuntu0.1`
 
 Binary Packages:
 
-- `tar=1.27.1-1`
+- `tar=1.27.1-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
@@ -6399,10 +6411,10 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tar=1.27.1-1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.27.1-1.dsc' tar_1.27.1-1.dsc 1859 SHA256:e2e300d851ce3f7bd806eefeff25348a686e545ec5318ce2992bca08e5a0090b
+$ apt-get source -qq --print-uris tar=1.27.1-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.27.1-1ubuntu0.1.dsc' tar_1.27.1-1ubuntu0.1.dsc 1982 SHA256:e63d676dec10dbe8abbbb34520e157ea23a2efab864fde004ad3d79a794d0c43
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.27.1.orig.tar.xz' tar_1.27.1.orig.tar.xz 1704252 SHA256:58169c5a03c04be20d3fb91010b01e822c6a58060a96e7cf2f9c1944de0151ab
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.27.1-1.debian.tar.xz' tar_1.27.1-1.debian.tar.xz 19540 SHA256:fea78ca36ff59f3fe84c060adf039283b1b8238ef9ce3428e85fe04c4812815c
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.27.1-1ubuntu0.1.debian.tar.gz' tar_1.27.1-1ubuntu0.1.debian.tar.gz 22769 SHA256:e22697f2b43f792a61683d9af9ed78ea7dd2d3927a94573ab90d9ada21df25e2
 ```
 
 ### `dpkg` source package: `tbb=4.2~20130725-1.1ubuntu1`
