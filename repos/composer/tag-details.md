@@ -12,7 +12,7 @@
 ## `composer:1.2.2`
 
 ```console
-$ docker pull composer@sha256:f02ed7024d9cd916d45bab41b891133b6af63fc9a8563247675618840145e77b
+$ docker pull composer@sha256:543892894a9f54fc54621184d936451074e43e0c9c97e368375f0904a7186451
 ```
 
 -	Platforms:
@@ -22,9 +22,9 @@ $ docker pull composer@sha256:f02ed7024d9cd916d45bab41b891133b6af63fc9a856324767
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.4 MB (54433416 bytes)**  
+-	Total Size: **54.4 MB (54433417 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7746083125db56b527df387e14b56a7401294f36fbbb7eb2588f708599e6e5b`
+-	Image ID: `sha256:ad0def859a11f919fbb52e7e21a600e648d1dcef74854851013d54c3da45abeb`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -75,13 +75,11 @@ ENV COMPOSER_VERSION=1.2.2
 RUN curl -s -f -L -o /tmp/installer.php https://raw.githubusercontent.com/composer/getcomposer.org/9184c4b85ed6ada94a298cf54e55cc252c970c28/web/installer  && php -r "     \$signature = 'aa96f26c2b67226a324c27919f1eb05f21c248b987e6195cad9690d5c1ff713d53020a02ac8c217dbf90a7eacc9d141d';     \$hash = hash('SHA384', file_get_contents('/tmp/installer.php'));     if (!hash_equals(\$signature, \$hash)) {         unlink('/tmp/installer.php');         echo 'Integrity check failed, installer is either corrupt or worse.' . PHP_EOL;         exit(1);     }"  && php /tmp/installer.php --no-ansi --install-dir=/usr/bin --filename=composer --version=${COMPOSER_VERSION}  && rm /tmp/installer.php  && composer --ansi --version --no-interaction
 # Thu, 24 Nov 2016 00:01:43 GMT
 COPY file:0b943ec33b364492b10e7a774becd40d3fec03eb7db67cc0528769b329117e32 in /docker-entrypoint.sh 
-# Thu, 24 Nov 2016 00:01:43 GMT
-VOLUME [/composer]
-# Thu, 24 Nov 2016 00:01:44 GMT
+# Thu, 01 Dec 2016 17:32:52 GMT
 WORKDIR /app
-# Thu, 24 Nov 2016 00:01:45 GMT
+# Thu, 01 Dec 2016 17:32:52 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 24 Nov 2016 00:01:45 GMT
+# Thu, 01 Dec 2016 17:32:52 GMT
 CMD ["composer"]
 ```
 
@@ -134,15 +132,15 @@ CMD ["composer"]
 		Last Modified: Thu, 24 Nov 2016 00:02:05 GMT  
 		Size: 536.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e3f0506bdecb1b78c3c677c388fc787da0152427f1f6ff5dcf87f0952885d27`  
-		Last Modified: Thu, 24 Nov 2016 00:02:06 GMT  
-		Size: 90.0 B  
+	-	`sha256:e7bfffb0d6cd75d4f320b78888456ed59a97ccee7a73867d817a345e9f1f1f1d`  
+		Last Modified: Thu, 01 Dec 2016 17:33:06 GMT  
+		Size: 91.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `composer:1.2`
 
 ```console
-$ docker pull composer@sha256:f02ed7024d9cd916d45bab41b891133b6af63fc9a8563247675618840145e77b
+$ docker pull composer@sha256:543892894a9f54fc54621184d936451074e43e0c9c97e368375f0904a7186451
 ```
 
 -	Platforms:
@@ -152,9 +150,9 @@ $ docker pull composer@sha256:f02ed7024d9cd916d45bab41b891133b6af63fc9a856324767
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.4 MB (54433416 bytes)**  
+-	Total Size: **54.4 MB (54433417 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7746083125db56b527df387e14b56a7401294f36fbbb7eb2588f708599e6e5b`
+-	Image ID: `sha256:ad0def859a11f919fbb52e7e21a600e648d1dcef74854851013d54c3da45abeb`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -205,13 +203,11 @@ ENV COMPOSER_VERSION=1.2.2
 RUN curl -s -f -L -o /tmp/installer.php https://raw.githubusercontent.com/composer/getcomposer.org/9184c4b85ed6ada94a298cf54e55cc252c970c28/web/installer  && php -r "     \$signature = 'aa96f26c2b67226a324c27919f1eb05f21c248b987e6195cad9690d5c1ff713d53020a02ac8c217dbf90a7eacc9d141d';     \$hash = hash('SHA384', file_get_contents('/tmp/installer.php'));     if (!hash_equals(\$signature, \$hash)) {         unlink('/tmp/installer.php');         echo 'Integrity check failed, installer is either corrupt or worse.' . PHP_EOL;         exit(1);     }"  && php /tmp/installer.php --no-ansi --install-dir=/usr/bin --filename=composer --version=${COMPOSER_VERSION}  && rm /tmp/installer.php  && composer --ansi --version --no-interaction
 # Thu, 24 Nov 2016 00:01:43 GMT
 COPY file:0b943ec33b364492b10e7a774becd40d3fec03eb7db67cc0528769b329117e32 in /docker-entrypoint.sh 
-# Thu, 24 Nov 2016 00:01:43 GMT
-VOLUME [/composer]
-# Thu, 24 Nov 2016 00:01:44 GMT
+# Thu, 01 Dec 2016 17:32:52 GMT
 WORKDIR /app
-# Thu, 24 Nov 2016 00:01:45 GMT
+# Thu, 01 Dec 2016 17:32:52 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 24 Nov 2016 00:01:45 GMT
+# Thu, 01 Dec 2016 17:32:52 GMT
 CMD ["composer"]
 ```
 
@@ -264,15 +260,15 @@ CMD ["composer"]
 		Last Modified: Thu, 24 Nov 2016 00:02:05 GMT  
 		Size: 536.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e3f0506bdecb1b78c3c677c388fc787da0152427f1f6ff5dcf87f0952885d27`  
-		Last Modified: Thu, 24 Nov 2016 00:02:06 GMT  
-		Size: 90.0 B  
+	-	`sha256:e7bfffb0d6cd75d4f320b78888456ed59a97ccee7a73867d817a345e9f1f1f1d`  
+		Last Modified: Thu, 01 Dec 2016 17:33:06 GMT  
+		Size: 91.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `composer:1`
 
 ```console
-$ docker pull composer@sha256:f02ed7024d9cd916d45bab41b891133b6af63fc9a8563247675618840145e77b
+$ docker pull composer@sha256:543892894a9f54fc54621184d936451074e43e0c9c97e368375f0904a7186451
 ```
 
 -	Platforms:
@@ -282,9 +278,9 @@ $ docker pull composer@sha256:f02ed7024d9cd916d45bab41b891133b6af63fc9a856324767
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.4 MB (54433416 bytes)**  
+-	Total Size: **54.4 MB (54433417 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7746083125db56b527df387e14b56a7401294f36fbbb7eb2588f708599e6e5b`
+-	Image ID: `sha256:ad0def859a11f919fbb52e7e21a600e648d1dcef74854851013d54c3da45abeb`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -335,13 +331,11 @@ ENV COMPOSER_VERSION=1.2.2
 RUN curl -s -f -L -o /tmp/installer.php https://raw.githubusercontent.com/composer/getcomposer.org/9184c4b85ed6ada94a298cf54e55cc252c970c28/web/installer  && php -r "     \$signature = 'aa96f26c2b67226a324c27919f1eb05f21c248b987e6195cad9690d5c1ff713d53020a02ac8c217dbf90a7eacc9d141d';     \$hash = hash('SHA384', file_get_contents('/tmp/installer.php'));     if (!hash_equals(\$signature, \$hash)) {         unlink('/tmp/installer.php');         echo 'Integrity check failed, installer is either corrupt or worse.' . PHP_EOL;         exit(1);     }"  && php /tmp/installer.php --no-ansi --install-dir=/usr/bin --filename=composer --version=${COMPOSER_VERSION}  && rm /tmp/installer.php  && composer --ansi --version --no-interaction
 # Thu, 24 Nov 2016 00:01:43 GMT
 COPY file:0b943ec33b364492b10e7a774becd40d3fec03eb7db67cc0528769b329117e32 in /docker-entrypoint.sh 
-# Thu, 24 Nov 2016 00:01:43 GMT
-VOLUME [/composer]
-# Thu, 24 Nov 2016 00:01:44 GMT
+# Thu, 01 Dec 2016 17:32:52 GMT
 WORKDIR /app
-# Thu, 24 Nov 2016 00:01:45 GMT
+# Thu, 01 Dec 2016 17:32:52 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 24 Nov 2016 00:01:45 GMT
+# Thu, 01 Dec 2016 17:32:52 GMT
 CMD ["composer"]
 ```
 
@@ -394,15 +388,15 @@ CMD ["composer"]
 		Last Modified: Thu, 24 Nov 2016 00:02:05 GMT  
 		Size: 536.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e3f0506bdecb1b78c3c677c388fc787da0152427f1f6ff5dcf87f0952885d27`  
-		Last Modified: Thu, 24 Nov 2016 00:02:06 GMT  
-		Size: 90.0 B  
+	-	`sha256:e7bfffb0d6cd75d4f320b78888456ed59a97ccee7a73867d817a345e9f1f1f1d`  
+		Last Modified: Thu, 01 Dec 2016 17:33:06 GMT  
+		Size: 91.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `composer:latest`
 
 ```console
-$ docker pull composer@sha256:f02ed7024d9cd916d45bab41b891133b6af63fc9a8563247675618840145e77b
+$ docker pull composer@sha256:543892894a9f54fc54621184d936451074e43e0c9c97e368375f0904a7186451
 ```
 
 -	Platforms:
@@ -412,9 +406,9 @@ $ docker pull composer@sha256:f02ed7024d9cd916d45bab41b891133b6af63fc9a856324767
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.4 MB (54433416 bytes)**  
+-	Total Size: **54.4 MB (54433417 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7746083125db56b527df387e14b56a7401294f36fbbb7eb2588f708599e6e5b`
+-	Image ID: `sha256:ad0def859a11f919fbb52e7e21a600e648d1dcef74854851013d54c3da45abeb`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -465,13 +459,11 @@ ENV COMPOSER_VERSION=1.2.2
 RUN curl -s -f -L -o /tmp/installer.php https://raw.githubusercontent.com/composer/getcomposer.org/9184c4b85ed6ada94a298cf54e55cc252c970c28/web/installer  && php -r "     \$signature = 'aa96f26c2b67226a324c27919f1eb05f21c248b987e6195cad9690d5c1ff713d53020a02ac8c217dbf90a7eacc9d141d';     \$hash = hash('SHA384', file_get_contents('/tmp/installer.php'));     if (!hash_equals(\$signature, \$hash)) {         unlink('/tmp/installer.php');         echo 'Integrity check failed, installer is either corrupt or worse.' . PHP_EOL;         exit(1);     }"  && php /tmp/installer.php --no-ansi --install-dir=/usr/bin --filename=composer --version=${COMPOSER_VERSION}  && rm /tmp/installer.php  && composer --ansi --version --no-interaction
 # Thu, 24 Nov 2016 00:01:43 GMT
 COPY file:0b943ec33b364492b10e7a774becd40d3fec03eb7db67cc0528769b329117e32 in /docker-entrypoint.sh 
-# Thu, 24 Nov 2016 00:01:43 GMT
-VOLUME [/composer]
-# Thu, 24 Nov 2016 00:01:44 GMT
+# Thu, 01 Dec 2016 17:32:52 GMT
 WORKDIR /app
-# Thu, 24 Nov 2016 00:01:45 GMT
+# Thu, 01 Dec 2016 17:32:52 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 24 Nov 2016 00:01:45 GMT
+# Thu, 01 Dec 2016 17:32:52 GMT
 CMD ["composer"]
 ```
 
@@ -524,15 +516,15 @@ CMD ["composer"]
 		Last Modified: Thu, 24 Nov 2016 00:02:05 GMT  
 		Size: 536.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8e3f0506bdecb1b78c3c677c388fc787da0152427f1f6ff5dcf87f0952885d27`  
-		Last Modified: Thu, 24 Nov 2016 00:02:06 GMT  
-		Size: 90.0 B  
+	-	`sha256:e7bfffb0d6cd75d4f320b78888456ed59a97ccee7a73867d817a345e9f1f1f1d`  
+		Last Modified: Thu, 01 Dec 2016 17:33:06 GMT  
+		Size: 91.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `composer:1.1.3`
 
 ```console
-$ docker pull composer@sha256:977a39b056c46fdfb66704c05b025a4843852d000e43c55c37bf1dbd4c9316e3
+$ docker pull composer@sha256:7c5c6454a9c75d45939ec059a5cf11d7d9e2348d5eeb4696c2499de2e37b258d
 ```
 
 -	Platforms:
@@ -544,7 +536,7 @@ $ docker pull composer@sha256:977a39b056c46fdfb66704c05b025a4843852d000e43c55c37
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **54.4 MB (54413342 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f6934a3c75ed7f41990546d969978319c3f6fc37c68af2ba7f00eaf147f09e48`
+-	Image ID: `sha256:e3529a3400e99d395940bac4fbea2e4dd00e23af974537e871c28ad385c66ee6`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -595,13 +587,11 @@ ENV COMPOSER_VERSION=1.1.3
 RUN curl -s -f -L -o /tmp/installer.php https://raw.githubusercontent.com/composer/getcomposer.org/9184c4b85ed6ada94a298cf54e55cc252c970c28/web/installer  && php -r "     \$signature = 'aa96f26c2b67226a324c27919f1eb05f21c248b987e6195cad9690d5c1ff713d53020a02ac8c217dbf90a7eacc9d141d';     \$hash = hash('SHA384', file_get_contents('/tmp/installer.php'));     if (!hash_equals(\$signature, \$hash)) {         unlink('/tmp/installer.php');         echo 'Integrity check failed, installer is either corrupt or worse.' . PHP_EOL;         exit(1);     }"  && php /tmp/installer.php --no-ansi --install-dir=/usr/bin --filename=composer --version=${COMPOSER_VERSION}  && rm /tmp/installer.php  && composer --ansi --version --no-interaction
 # Thu, 24 Nov 2016 00:01:50 GMT
 COPY file:0b943ec33b364492b10e7a774becd40d3fec03eb7db67cc0528769b329117e32 in /docker-entrypoint.sh 
-# Thu, 24 Nov 2016 00:01:51 GMT
-VOLUME [/composer]
-# Thu, 24 Nov 2016 00:01:52 GMT
+# Thu, 01 Dec 2016 17:32:53 GMT
 WORKDIR /app
-# Thu, 24 Nov 2016 00:01:52 GMT
+# Thu, 01 Dec 2016 17:32:53 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 24 Nov 2016 00:01:53 GMT
+# Thu, 01 Dec 2016 17:32:53 GMT
 CMD ["composer"]
 ```
 
@@ -654,15 +644,15 @@ CMD ["composer"]
 		Last Modified: Thu, 24 Nov 2016 00:03:17 GMT  
 		Size: 535.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:238c68dd4af2feddc18a02ff548f984c72ba6706ba7643265f5b14ab6b380fd0`  
-		Last Modified: Thu, 24 Nov 2016 00:03:17 GMT  
+	-	`sha256:8d0d0e73c217cc63e17c99b97483d1b85cb80a696b501a72810e21fd5643080c`  
+		Last Modified: Thu, 01 Dec 2016 17:34:09 GMT  
 		Size: 90.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `composer:1.1`
 
 ```console
-$ docker pull composer@sha256:977a39b056c46fdfb66704c05b025a4843852d000e43c55c37bf1dbd4c9316e3
+$ docker pull composer@sha256:7c5c6454a9c75d45939ec059a5cf11d7d9e2348d5eeb4696c2499de2e37b258d
 ```
 
 -	Platforms:
@@ -674,7 +664,7 @@ $ docker pull composer@sha256:977a39b056c46fdfb66704c05b025a4843852d000e43c55c37
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **54.4 MB (54413342 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f6934a3c75ed7f41990546d969978319c3f6fc37c68af2ba7f00eaf147f09e48`
+-	Image ID: `sha256:e3529a3400e99d395940bac4fbea2e4dd00e23af974537e871c28ad385c66ee6`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -725,13 +715,11 @@ ENV COMPOSER_VERSION=1.1.3
 RUN curl -s -f -L -o /tmp/installer.php https://raw.githubusercontent.com/composer/getcomposer.org/9184c4b85ed6ada94a298cf54e55cc252c970c28/web/installer  && php -r "     \$signature = 'aa96f26c2b67226a324c27919f1eb05f21c248b987e6195cad9690d5c1ff713d53020a02ac8c217dbf90a7eacc9d141d';     \$hash = hash('SHA384', file_get_contents('/tmp/installer.php'));     if (!hash_equals(\$signature, \$hash)) {         unlink('/tmp/installer.php');         echo 'Integrity check failed, installer is either corrupt or worse.' . PHP_EOL;         exit(1);     }"  && php /tmp/installer.php --no-ansi --install-dir=/usr/bin --filename=composer --version=${COMPOSER_VERSION}  && rm /tmp/installer.php  && composer --ansi --version --no-interaction
 # Thu, 24 Nov 2016 00:01:50 GMT
 COPY file:0b943ec33b364492b10e7a774becd40d3fec03eb7db67cc0528769b329117e32 in /docker-entrypoint.sh 
-# Thu, 24 Nov 2016 00:01:51 GMT
-VOLUME [/composer]
-# Thu, 24 Nov 2016 00:01:52 GMT
+# Thu, 01 Dec 2016 17:32:53 GMT
 WORKDIR /app
-# Thu, 24 Nov 2016 00:01:52 GMT
+# Thu, 01 Dec 2016 17:32:53 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 24 Nov 2016 00:01:53 GMT
+# Thu, 01 Dec 2016 17:32:53 GMT
 CMD ["composer"]
 ```
 
@@ -784,7 +772,7 @@ CMD ["composer"]
 		Last Modified: Thu, 24 Nov 2016 00:03:17 GMT  
 		Size: 535.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:238c68dd4af2feddc18a02ff548f984c72ba6706ba7643265f5b14ab6b380fd0`  
-		Last Modified: Thu, 24 Nov 2016 00:03:17 GMT  
+	-	`sha256:8d0d0e73c217cc63e17c99b97483d1b85cb80a696b501a72810e21fd5643080c`  
+		Last Modified: Thu, 01 Dec 2016 17:34:09 GMT  
 		Size: 90.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
