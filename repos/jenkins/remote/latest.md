@@ -1,7 +1,7 @@
 ## `jenkins:latest`
 
 ```console
-$ docker pull jenkins@sha256:8820149b54bfc5d05146b82150b5fdab583eef3e0499fb4ed630f77647a42942
+$ docker pull jenkins@sha256:8d39e83e2e97f4f5f1ff6980f9bda7f7b3e7fbd9208d94b377d475a7e3054a5b
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull jenkins@sha256:8820149b54bfc5d05146b82150b5fdab583eef3e0499fb4ed63
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **313.3 MB (313272033 bytes)**  
+-	Total Size: **313.3 MB (313277733 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:82da23ec134d0635e9baba0f20ac790afb19ae4eaffc51f1ac8fe45c214fb170`
+-	Image ID: `sha256:ff6f0851ef574309ccd37c29e024f4d2a475d2436c8ebfa1180d45d8ebc9d1f2`
 -	Entrypoint: `["\/bin\/tini","--","\/usr\/local\/bin\/jenkins.sh"]`
 
 ```dockerfile
@@ -78,37 +78,37 @@ RUN curl -fsSL https://github.com/krallin/tini/releases/download/v${TINI_VERSION
 COPY file:c629bc0b9ecb5b7233000c973f65721df4ce1307a5d5b33ac3871ff61a9172ff in /usr/share/jenkins/ref/init.groovy.d/tcp-slave-agent-port.groovy 
 # Tue, 08 Nov 2016 21:55:42 GMT
 ARG JENKINS_VERSION
-# Wed, 16 Nov 2016 20:52:24 GMT
-ENV JENKINS_VERSION=2.19.3
-# Wed, 16 Nov 2016 20:52:25 GMT
-ARG JENKINS_SHA=e97670636394092af40cc626f8e07b092105c07b
-# Wed, 16 Nov 2016 20:52:25 GMT
-ARG JENKINS_URL=https://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/2.19.3/jenkins-war-2.19.3.war
-# Wed, 16 Nov 2016 20:52:31 GMT
-# ARGS: JENKINS_SHA=e97670636394092af40cc626f8e07b092105c07b JENKINS_URL=https://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/2.19.3/jenkins-war-2.19.3.war gid=1000 group=jenkins uid=1000 user=jenkins
+# Thu, 01 Dec 2016 20:17:08 GMT
+ENV JENKINS_VERSION=2.19.4
+# Thu, 01 Dec 2016 20:17:09 GMT
+ARG JENKINS_SHA=ea61a4ff86f0db715511d1118a4e2f0a6a0311a1
+# Thu, 01 Dec 2016 20:17:09 GMT
+ARG JENKINS_URL=https://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/2.19.4/jenkins-war-2.19.4.war
+# Thu, 01 Dec 2016 20:17:16 GMT
+# ARGS: JENKINS_SHA=ea61a4ff86f0db715511d1118a4e2f0a6a0311a1 JENKINS_URL=https://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/2.19.4/jenkins-war-2.19.4.war gid=1000 group=jenkins uid=1000 user=jenkins
 RUN curl -fsSL ${JENKINS_URL} -o /usr/share/jenkins/jenkins.war   && echo "${JENKINS_SHA}  /usr/share/jenkins/jenkins.war" | sha1sum -c -
-# Wed, 16 Nov 2016 20:52:32 GMT
+# Thu, 01 Dec 2016 20:17:17 GMT
 ENV JENKINS_UC=https://updates.jenkins.io
-# Wed, 16 Nov 2016 20:52:33 GMT
-# ARGS: JENKINS_SHA=e97670636394092af40cc626f8e07b092105c07b JENKINS_URL=https://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/2.19.3/jenkins-war-2.19.3.war gid=1000 group=jenkins uid=1000 user=jenkins
+# Thu, 01 Dec 2016 20:17:18 GMT
+# ARGS: JENKINS_SHA=ea61a4ff86f0db715511d1118a4e2f0a6a0311a1 JENKINS_URL=https://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/2.19.4/jenkins-war-2.19.4.war gid=1000 group=jenkins uid=1000 user=jenkins
 RUN chown -R ${user} "$JENKINS_HOME" /usr/share/jenkins/ref
-# Wed, 16 Nov 2016 20:52:33 GMT
+# Thu, 01 Dec 2016 20:17:18 GMT
 EXPOSE 8080/tcp
-# Wed, 16 Nov 2016 20:52:34 GMT
+# Thu, 01 Dec 2016 20:17:19 GMT
 EXPOSE 50000/tcp
-# Wed, 16 Nov 2016 20:52:34 GMT
+# Thu, 01 Dec 2016 20:17:19 GMT
 ENV COPY_REFERENCE_FILE_LOG=/var/jenkins_home/copy_reference_file.log
-# Wed, 16 Nov 2016 20:52:34 GMT
+# Thu, 01 Dec 2016 20:17:20 GMT
 USER [jenkins]
-# Wed, 16 Nov 2016 20:52:35 GMT
+# Thu, 01 Dec 2016 20:17:21 GMT
 COPY file:26c3c5818bc87662d1f4905a3ed73bd55a0a75f731c7dc52d0599c00f51408e9 in /usr/local/bin/jenkins-support 
-# Wed, 16 Nov 2016 20:52:35 GMT
+# Thu, 01 Dec 2016 20:17:22 GMT
 COPY file:7eec179a0dd3aad4a9c9290bc4d85e4775c8cf6bc2932527892ca6e87739e474 in /usr/local/bin/jenkins.sh 
-# Wed, 16 Nov 2016 20:52:36 GMT
+# Thu, 01 Dec 2016 20:17:22 GMT
 ENTRYPOINT ["/bin/tini" "--" "/usr/local/bin/jenkins.sh"]
-# Wed, 16 Nov 2016 20:52:37 GMT
+# Thu, 01 Dec 2016 20:17:23 GMT
 COPY file:93fb511d485dd2d6060c484dcedb902947875042048de529676a0a0aed27b5a3 in /usr/local/bin/plugins.sh 
-# Wed, 16 Nov 2016 20:52:37 GMT
+# Thu, 01 Dec 2016 20:17:24 GMT
 COPY file:2a6a3e16202b8dddab5edef50f712c16fe8f6980f5aea80c8c76b5db4f903913 in /usr/local/bin/install-plugins.sh 
 ```
 
@@ -165,27 +165,27 @@ COPY file:2a6a3e16202b8dddab5edef50f712c16fe8f6980f5aea80c8c76b5db4f903913 in /u
 		Last Modified: Tue, 08 Nov 2016 21:56:09 GMT  
 		Size: 420.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ad522077ff4bdcbd6ef62b4a1edf6eb1811049e8055d1577594efe612278614`  
-		Last Modified: Wed, 16 Nov 2016 20:53:10 GMT  
-		Size: 69.6 MB (69552711 bytes)  
+	-	`sha256:dfd7d10378e01ca9ee330045d1662b1cbb5cde3abfa6a74cec20a36e9e23da9b`  
+		Last Modified: Thu, 01 Dec 2016 20:17:59 GMT  
+		Size: 69.6 MB (69558420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d5e47e36592f53b0b9e063f937fe12d61c256c073d375ec106aab3d148b98d8`  
-		Last Modified: Wed, 16 Nov 2016 20:53:03 GMT  
-		Size: 431.0 B  
+	-	`sha256:cf7eb7c95b26898bcb8116d95733ef2a909c70b6192d2f32174b50de6a6af1ad`  
+		Last Modified: Thu, 01 Dec 2016 20:17:51 GMT  
+		Size: 427.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f829c90f4679533159f9ea08b6f0ed58bb8aa67e40c9f1f51b293530174cf92`  
-		Last Modified: Wed, 16 Nov 2016 20:53:01 GMT  
-		Size: 1.4 KB (1423 bytes)  
+	-	`sha256:e6fdf42ac671fd5a9a7c84cf6b442cada845ab3087e8c793219395785ef11da3`  
+		Last Modified: Thu, 01 Dec 2016 20:17:50 GMT  
+		Size: 1.4 KB (1420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c404772e7c5ab23000d6f29252035c4459cbd4e9c30d8552b6d4c01589e576d`  
-		Last Modified: Wed, 16 Nov 2016 20:53:01 GMT  
-		Size: 821.0 B  
+	-	`sha256:0bb95a94f0750e9bc5c1d82799db1c5f2a6bf2cfc730b8483dd5bb87ecf0026b`  
+		Last Modified: Thu, 01 Dec 2016 20:17:50 GMT  
+		Size: 819.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ec0e0624c28c56f9d025e38fadc91f157323c2bb57825b1980bcfe44f12845c`  
-		Last Modified: Wed, 16 Nov 2016 20:53:00 GMT  
-		Size: 1.5 KB (1525 bytes)  
+	-	`sha256:ea38b67cd016a3de47d5695f8668a7fbef5ebc99c492ed9acc9423a797453247`  
+		Last Modified: Thu, 01 Dec 2016 20:17:50 GMT  
+		Size: 1.5 KB (1524 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d881ad7458fa129786cc9f6dac0200e513da52557f8997307f0be0587f87d440`  
-		Last Modified: Wed, 16 Nov 2016 20:53:03 GMT  
-		Size: 2.2 KB (2178 bytes)  
+	-	`sha256:dd1973e64832fe0ec9da00960eddda2ab9fbeb98a7f0dbcc229164df80300197`  
+		Last Modified: Thu, 01 Dec 2016 20:17:52 GMT  
+		Size: 2.2 KB (2179 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
