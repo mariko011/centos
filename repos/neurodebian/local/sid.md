@@ -1505,20 +1505,8 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.15.1-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.15.1-1.dsc' sqlite3_3.15.1-1.dsc 2478 SHA256:32ad6590c9801c71aed1cf787409cd2b51aa66524e85ec4c70d9cdd9cc45773a
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.15.1.orig-www.tar.xz' sqlite3_3.15.1.orig-www.tar.xz 3340588 SHA256:6436fd79054ae91e09272663d847d645b966e976a37e081bc29215a6f94f61cd
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.15.1.orig.tar.xz' sqlite3_3.15.1.orig.tar.xz 5319056 SHA256:148babe05b5eb70967b78d2084fd5da49edf75aa3443dc6e0961c938e6de0035
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.15.1-1.debian.tar.xz' sqlite3_3.15.1-1.debian.tar.xz 16688 SHA256:cc0d55d6a08b2c9d5bd10880c1006c9616639d31c319d04de01b91692f3f6109
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sqlite3/3.15.1-1/
-- https://sources.debian.net/src/sqlite3/3.15.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `systemd=232-1`
 
