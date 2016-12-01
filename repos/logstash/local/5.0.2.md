@@ -1,9 +1,9 @@
-# `logstash:5.0.1-1`
+# `logstash:5.0.2-1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:96410b00b6647661c48a17f98510325712b5c22756fc99ec7a96e2069b968ba5`
-- Created: `2016-11-15T21:00:14.471985492Z`
+- Image ID: `sha256:a2809376b8f11bddbab8196eed48705130d86ca3b9dcaef77bd89c16a7c3a26a`
+- Created: `2016-11-30T22:00:38.223879082Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["-e",""]`
@@ -15,5 +15,5 @@
   - `JAVA_DEBIAN_VERSION=8u111-b14-2~bpo8+1`
   - `CA_CERTIFICATES_JAVA_VERSION=20140324`
   - `GOSU_VERSION=1.7`
-  - `LOGSTASH_VERSION=1:5.0.1-1`
+  - `LOGSTASH_VERSION=1:5.0.2-1`
   - `LS_SETTINGS_DIR=/etc/logstash`
