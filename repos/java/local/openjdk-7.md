@@ -4784,19 +4784,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016i-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016i-0+deb8u1.dsc' tzdata_2016i-0+deb8u1.dsc 1953 SHA256:544e0859340a64780adb18d2d76475b699a959b4d1993d5cb26f8912a0221e25
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016i.orig.tar.gz' tzdata_2016i.orig.tar.gz 320352 SHA256:b6966ec982ef64fe48cebec437096b4f57f4287519ed32dde59c86d3a1853845
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016i-0+deb8u1.debian.tar.xz' tzdata_2016i-0+deb8u1.debian.tar.xz 102268 SHA256:d97bf35dd0b285285266bb88e47b9d66331d7ee19613f4a64c82edb6eb10b13d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2016i-0+deb8u1/
-- https://sources.debian.net/src/tzdata/2016i-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ucf=3.0030`
 
