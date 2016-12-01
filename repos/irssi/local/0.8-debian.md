@@ -1195,19 +1195,8 @@ Licenses: (parsed from: `/usr/share/doc/libdatetime-timezone-perl/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libdatetime-timezone-perl=1:1.75-2+2016i
-'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_1.75-2+2016i.dsc' libdatetime-timezone-perl_1.75-2+2016i.dsc 2596 SHA256:c494ca7c688cd95dd5d9e607ed87af647435421c657237c4deea9a1d6354f71f
-'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_1.75.orig.tar.gz' libdatetime-timezone-perl_1.75.orig.tar.gz 888615 SHA256:8ea1282f1ab348766e9a81b46dac6e764375e319f442c24e030d14beb03a6e73
-'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_1.75-2+2016i.debian.tar.xz' libdatetime-timezone-perl_1.75-2+2016i.debian.tar.xz 156368 SHA256:8560916cab54b854b98a17b071d2e8bf313631dfc02cbb1973745af261c812bf
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libdatetime-timezone-perl/1:1.75-2+2016i/
-- https://sources.debian.net/src/libdatetime-timezone-perl/1:1.75-2+2016i/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libencode-locale-perl=1.03-1`
 
