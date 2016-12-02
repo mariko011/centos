@@ -1081,19 +1081,8 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris perl=5.24.1~rc3-3
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1~rc3-3.dsc' perl_5.24.1~rc3-3.dsc 2347 SHA256:9328c6e667267ed5a20618b06dffc9f96180d0ea519f2422e8964d0d173c66d4
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1~rc3.orig.tar.xz' perl_5.24.1~rc3.orig.tar.xz 11552388 SHA256:18a25373d80e5d5c39928790e45427c7bc34a98499b25645de2b5fb2ab7ba7b5
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1~rc3-3.debian.tar.xz' perl_5.24.1~rc3-3.debian.tar.xz 162980 SHA256:c52663a4148af33561e3c8db88fa4b07e8fe62ffc3670f7a78f521ebb1ec7759
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/perl/5.24.1~rc3-3/
-- https://sources.debian.net/src/perl/5.24.1~rc3-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sed=4.2.2-8`
 
