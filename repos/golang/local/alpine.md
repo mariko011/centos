@@ -1,13 +1,13 @@
-# `golang:1.7.3-alpine`
+# `golang:1.7.4-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4e874ba5240682d53411752d2186e74418a9d33d04238ef07b19e7a09db7eeda`
-- Created: `2016-10-19T21:56:12.830046129Z`
+- Image ID: `sha256:016944b253114613794e305ad823160280d07f3f331e91e0cc5148b14ed893b7`
+- Created: `2016-12-01T23:41:39.241391051Z`
 - Arch: `linux`/`amd64`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.7.3`
-  - `GOLANG_SRC_URL=https://golang.org/dl/go1.7.3.src.tar.gz`
-  - `GOLANG_SRC_SHA256=79430a0027a09b0b3ad57e214c4c1acfdd7af290961dd08d322818895af1ef44`
+  - `GOLANG_VERSION=1.7.4`
+  - `GOLANG_SRC_URL=https://golang.org/dl/go1.7.4.src.tar.gz`
+  - `GOLANG_SRC_SHA256=4c189111e9ba651a2bb3ee868aa881fab36b2f2da3409e80885ca758a6b614cc`
   - `GOPATH=/go`

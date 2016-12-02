@@ -1,16 +1,16 @@
-# `golang:1.7.3-onbuild`
+# `golang:1.7.4-onbuild`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c2ce4aa3b0ae91ff0e00dcddaa69295e5a15a2dff9f3731284008bf5171a6818`
-- Created: `2016-11-08T19:34:10.271869176Z`
+- Image ID: `sha256:00afdf9d323b9892852e2f6754848dae18103c7f688486ee89885795ae3193a4`
+- Created: `2016-12-01T23:40:25.123955196Z`
 - Arch: `linux`/`amd64`
 - Command: `["go-wrapper","run"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.7.3`
-  - `GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.7.3.linux-amd64.tar.gz`
-  - `GOLANG_DOWNLOAD_SHA256=508028aac0654e993564b6e2014bf2d4a9751e3b286661b0b0040046cf18028e`
+  - `GOLANG_VERSION=1.7.4`
+  - `GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.7.4.linux-amd64.tar.gz`
+  - `GOLANG_DOWNLOAD_SHA256=47fda42e46b4c3ec93fa5d4d4cc6a748aa3f9411a2a2b7e08e3a6d80d753ec8b`
   - `GOPATH=/go`
 
 ## `dpkg` (`.deb`-based packages)
