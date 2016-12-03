@@ -1640,19 +1640,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.16.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.16.0-1.dsc' nghttp2_1.16.0-1.dsc 2231 SHA256:6679dc2340b573ba2b54a41dca4d834b1008599ee9b5f64aa063cf7848d20e19
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.16.0.orig.tar.bz2' nghttp2_1.16.0.orig.tar.bz2 1783873 SHA256:bc53bed532b8a0e284b692b0446325894c2b1783935290ccd2ac7a3e1bc5c6ae
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.16.0-1.debian.tar.xz' nghttp2_1.16.0-1.debian.tar.xz 11352 SHA256:52a8b14cf2bcc8f792106284fab9c2d5381b21c5c32536e62110ba0dc299fa74
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.16.0-1/
-- https://sources.debian.net/src/nghttp2/1.16.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.40+dfsg-1+deb8u2`
 
