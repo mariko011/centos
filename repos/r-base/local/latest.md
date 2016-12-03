@@ -139,18 +139,8 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-files=9.6
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.6.dsc' base-files_9.6.dsc 1052 SHA256:f402149afa784750c093d09bb10aa9a9a00d32aaee52eda62f056211a304ebed
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.6.tar.xz' base-files_9.6.tar.xz 53728 SHA256:5cb5339aa852af14653ac187f8baf55f5ad6fc8ee2d903e5a336f0ee556dcf44
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/base-files/9.6/
-- https://sources.debian.net/src/base-files/9.6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `base-passwd=3.5.40`
 
@@ -929,18 +919,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.163
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.163.dsc' gcc-defaults_1.163.dsc 13067 SHA256:5d07cb8d59e7c34cd65436aa40723442c32973d7a046a0f69b14f446c90ee23f
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.163.tar.gz' gcc-defaults_1.163.tar.gz 74211 SHA256:31edfad1963e97da22362f505c474185bb1601a6bad7e71674e0714b4ab99341
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-defaults/1.163/
-- https://sources.debian.net/src/gcc-defaults/1.163/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gdbm=1.8.3-14`
 
@@ -2498,19 +2478,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.16.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.16.0-1.dsc' nghttp2_1.16.0-1.dsc 2231 SHA256:6679dc2340b573ba2b54a41dca4d834b1008599ee9b5f64aa063cf7848d20e19
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.16.0.orig.tar.bz2' nghttp2_1.16.0.orig.tar.bz2 1783873 SHA256:bc53bed532b8a0e284b692b0446325894c2b1783935290ccd2ac7a3e1bc5c6ae
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.16.0-1.debian.tar.xz' nghttp2_1.16.0-1.debian.tar.xz 11352 SHA256:52a8b14cf2bcc8f792106284fab9c2d5381b21c5c32536e62110ba0dc299fa74
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.16.0-1/
-- https://sources.debian.net/src/nghttp2/1.16.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `nlme=3.1.128-2`
 
@@ -3088,19 +3057,8 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.2-3.2
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3.2.dsc' shadow_4.2-3.2.dsc 2289 SHA256:9377f2adb0d3bf01dbdd36a6b550f1bc2e1d60840cf39d5314cca4474a7ff857
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3.2.debian.tar.xz' shadow_4.2-3.2.debian.tar.xz 497092 SHA256:0483a19f500c8eb8b26ef3fd408a014f32171c375b76d3ed7762cf97934bee4c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/shadow/1:4.2-3.2/
-- https://sources.debian.net/src/shadow/1:4.2-3.2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `survival=2.40-1-1`
 
