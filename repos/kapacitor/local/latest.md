@@ -2,14 +2,14 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bef359c30d15ef63692bec535f46dc90fd2185da09ddcd257f93ad0ad12eb993`
-- Created: `2016-11-08T22:31:35.599882325Z`
+- Image ID: `sha256:95e08deeac85c322e2e2c7bc8279d4d23a5b208ecf6c442c4998ebd4188be2cb`
+- Created: `2016-12-02T20:50:43.447919516Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["kapacitord"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `KAPACITOR_VERSION=1.1.0`
+  - `KAPACITOR_VERSION=1.1.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -979,11 +979,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/iproute2/3.16.0-2/
 - https://sources.debian.net/src/iproute2/3.16.0-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `kapacitor=1.1.0-1`
+### `dpkg` source package: `kapacitor=1.1.1-1`
 
 Binary Packages:
 
-- `kapacitor=1.1.0-1`
+- `kapacitor=1.1.1-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
