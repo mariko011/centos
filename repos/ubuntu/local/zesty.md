@@ -140,13 +140,8 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.5.41
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.5.41.dsc' base-passwd_3.5.41.dsc 1717 SHA256:e0414e82fc1ebb1cff38e322a181c4375d7a5c6fc8c454a92821a07cd3ab4874
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.5.41.tar.xz' base-passwd_3.5.41.tar.xz 52348 SHA256:14aff044bc544f17680dd6b430141fd7aa2d48dbe668c5612e7c2b60925fd652
-```
 
 ### `dpkg` source package: `bash=4.4-2ubuntu1`
 
