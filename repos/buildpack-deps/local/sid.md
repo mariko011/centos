@@ -429,18 +429,8 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20161102
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20161102.dsc' ca-certificates_20161102.dsc 1412 SHA256:b50d77748b48207876d7dff9ebd6dddeaa334318a8a6e53ce90cc963fa95c457
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20161102.tar.xz' ca-certificates_20161102.tar.xz 298544 SHA256:25384a67e2f1e76495ceeb00abfdbe831033780324128cb1587d09132dd173a5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/ca-certificates/20161102/
-- https://sources.debian.net/src/ca-certificates/20161102/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cairo=1.14.6-1.1`
 
@@ -2049,19 +2039,8 @@ Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/do
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris krb5=1.15~beta1-1
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15~beta1-1.dsc' krb5_1.15~beta1-1.dsc 3261 SHA256:fbded00e724725b7266a484629343d5a5b8aebc6178737ba461f2b9af2d298d2
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15~beta1.orig.tar.gz' krb5_1.15~beta1.orig.tar.gz 9328801 SHA256:957ff239dc1d327cb4a0e8ec53ff619fef7dd1ecd5cec99004ca440f617974c2
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15~beta1-1.debian.tar.xz' krb5_1.15~beta1-1.debian.tar.xz 141900 SHA256:2f506202acf5a09a38b3ddd8ebda5628517e13e27b7b9af3ad5ef62f5acb1370
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/krb5/1.15~beta1-1/
-- https://sources.debian.net/src/krb5/1.15~beta1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lcms2=2.7-1`
 
@@ -3901,19 +3880,8 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.3p1-3
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.3p1-3.dsc' openssh_7.3p1-3.dsc 2890 SHA256:ef0c4c4d3d374ee81875d89e1c9f5cd67fb37d7440834c0640f7447100136c87
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.3p1.orig.tar.gz' openssh_7.3p1.orig.tar.gz 1522617 SHA256:3ffb989a6dcaa69594c3b550d4855a5a2e1718ccdde7f5e36387b424220fbecc
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.3p1-3.debian.tar.xz' openssh_7.3p1-3.debian.tar.xz 152220 SHA256:841745326ce0e4b29bbd7420e5bbba49b871f7ea54962a5a4805c900e1a2c46e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssh/1:7.3p1-3/
-- https://sources.debian.net/src/openssh/1:7.3p1-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssl1.0=1.0.2j-4`
 
