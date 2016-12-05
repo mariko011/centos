@@ -695,14 +695,8 @@ Licenses: (parsed from: `/usr/share/doc/libsepol1/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libsepol=2.6-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_2.6-1.dsc' libsepol_2.6-1.dsc 1782 SHA256:02afc748156b95cf986b604b585130c7781fd7737d1355ff8677b1f8bc9262cd
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_2.6.orig.tar.gz' libsepol_2.6.orig.tar.gz 442549 SHA256:d856d6506054f52abeaa3543ea2f2344595a3dc05d0d873ed7f724f7a16b1874
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_2.6-1.debian.tar.xz' libsepol_2.6-1.debian.tar.xz 13472 SHA256:55f0e85da07bb672c1255c0b17fed90cf1a2fb10bafb2471bff80190fab93a68
-```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu5`
 
