@@ -34,6 +34,14 @@
 -	[`ruby:2.3-onbuild`](#ruby23-onbuild)
 -	[`ruby:2-onbuild`](#ruby2-onbuild)
 -	[`ruby:onbuild`](#rubyonbuild)
+-	[`ruby:2.4.0-preview3`](#ruby240-preview3)
+-	[`ruby:2.4-rc`](#ruby24-rc)
+-	[`ruby:2.4.0-preview3-slim`](#ruby240-preview3-slim)
+-	[`ruby:2.4-rc-slim`](#ruby24-rc-slim)
+-	[`ruby:2.4.0-preview3-alpine`](#ruby240-preview3-alpine)
+-	[`ruby:2.4-rc-alpine`](#ruby24-rc-alpine)
+-	[`ruby:2.4.0-preview3-onbuild`](#ruby240-preview3-onbuild)
+-	[`ruby:2.4-rc-onbuild`](#ruby24-rc-onbuild)
 
 ## `ruby:2.1.10`
 
@@ -2866,3 +2874,35 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Mon, 21 Nov 2016 20:54:52 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ruby:2.4.0-preview3`
+
+**does not exist** (yet?)
+
+## `ruby:2.4-rc`
+
+**does not exist** (yet?)
+
+## `ruby:2.4.0-preview3-slim`
+
+**does not exist** (yet?)
+
+## `ruby:2.4-rc-slim`
+
+**does not exist** (yet?)
+
+## `ruby:2.4.0-preview3-alpine`
+
+**does not exist** (yet?)
+
+## `ruby:2.4-rc-alpine`
+
+**does not exist** (yet?)
+
+## `ruby:2.4.0-preview3-onbuild`
+
+**does not exist** (yet?)
+
+## `ruby:2.4-rc-onbuild`
+
+**does not exist** (yet?)
