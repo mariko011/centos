@@ -1679,14 +1679,8 @@ Licenses: (parsed from: `/usr/share/doc/libprocps4/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris procps=2:3.3.10-4ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.2.dsc' procps_3.3.10-4ubuntu2.2.dsc 2235 SHA256:d4e2ac7aeacc7cc7537c2ca4fe7ea7a9e7db2a93c03b05700bb1287a14e26c9c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10.orig.tar.xz' procps_3.3.10.orig.tar.xz 814816 SHA256:40a3d2b0489e057d85564f4f304083b24fc699b39ea828610183fb9f0a6ebe97
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.2.debian.tar.xz' procps_3.3.10-4ubuntu2.2.debian.tar.xz 37256 SHA256:e2f9a30b9228980a3113c3c6d4111790f67dc1c7aa0819fd55b0128084f86e9c
-```
 
 ### `dpkg` source package: `python-defaults=2.7.11-1`
 
