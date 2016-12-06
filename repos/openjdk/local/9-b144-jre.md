@@ -77,19 +77,8 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.10.95-6
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.10.95-6.dsc' apparmor_2.10.95-6.dsc 3176 SHA256:8ab037358c16f9c0cfc4b2241203ad8f84065da97579e1205a423dbdbd684a1b
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.10.95-6.debian.tar.xz' apparmor_2.10.95-6.debian.tar.xz 100196 SHA256:da3e356e6af743b786fd0285cff91d41df242a41218188ec8960745ed7fd1899
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apparmor/2.10.95-6/
-- https://sources.debian.net/src/apparmor/2.10.95-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apt=1.3.1`
 
@@ -286,18 +275,8 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20161102
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20161102.dsc' ca-certificates_20161102.dsc 1412 SHA256:b50d77748b48207876d7dff9ebd6dddeaa334318a8a6e53ce90cc963fa95c457
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20161102.tar.xz' ca-certificates_20161102.tar.xz 298544 SHA256:25384a67e2f1e76495ceeb00abfdbe831033780324128cb1587d09132dd173a5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/ca-certificates/20161102/
-- https://sources.debian.net/src/ca-certificates/20161102/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cdebconf=0.218`
 
@@ -740,19 +719,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-5=5.4.1-3
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1-3.dsc' gcc-5_5.4.1-3.dsc 17536 SHA256:5ec2ef33e7ad61bf080fe9734a90705129a3fdb88bed02e1e140db2b5e57f4e3
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1.orig.tar.gz' gcc-5_5.4.1.orig.tar.gz 76812822 SHA256:2a84447f34cd062066d38300ac8a1fb528eb301a504b48e1d017e547e5abfcdb
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1-3.diff.gz' gcc-5_5.4.1-3.diff.gz 3247939 SHA256:5990b47027ac059e1dd840a5b2c5071c844eb55e2a1e7fde4c8fcef5cbc294b6
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-5/5.4.1-3/
-- https://sources.debian.net/src/gcc-5/5.4.1-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-6=6.2.0-11`
 
@@ -1110,19 +1078,8 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris krb5=1.15~beta1-1
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15~beta1-1.dsc' krb5_1.15~beta1-1.dsc 3261 SHA256:fbded00e724725b7266a484629343d5a5b8aebc6178737ba461f2b9af2d298d2
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15~beta1.orig.tar.gz' krb5_1.15~beta1.orig.tar.gz 9328801 SHA256:957ff239dc1d327cb4a0e8ec53ff619fef7dd1ecd5cec99004ca440f617974c2
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15~beta1-1.debian.tar.xz' krb5_1.15~beta1-1.debian.tar.xz 141900 SHA256:2f506202acf5a09a38b3ddd8ebda5628517e13e27b7b9af3ad5ef62f5acb1370
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/krb5/1.15~beta1-1/
-- https://sources.debian.net/src/krb5/1.15~beta1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lcms2=2.7-1`
 
