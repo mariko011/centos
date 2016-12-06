@@ -546,19 +546,8 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.1.15-8
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.15-8.dsc' gnupg2_2.1.15-8.dsc 3194 SHA256:947031c044af5a6473141ceb571fb9d3a277f7b22cec0a2c345807f9528cdf86
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.15.orig.tar.bz2' gnupg2_2.1.15.orig.tar.bz2 5723689 SHA256:c28c1a208f1b8ad63bdb6b88d252f6734ff4d33de6b54e38494b11d49e00ffdd
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.15-8.debian.tar.bz2' gnupg2_2.1.15-8.debian.tar.bz2 116675 SHA256:aa6b60f6bcb52c87863ea59d2b27eb5ba704814d99d220d1caa2e365fc15e6ba
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnupg2/2.1.15-8/
-- https://sources.debian.net/src/gnupg2/2.1.15-8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.26-1`
 
