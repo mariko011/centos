@@ -2,14 +2,14 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:13afd4e125b886f4504ca22220b8b75c778b84bf4945c1459d90168855219926`
-- Created: `2016-11-14T18:45:46.487906919Z`
+- Image ID: `sha256:11072db974c852ed2390c729c39cb6da872e9b28b6bdb6a2cffe47a0cbd71e51`
+- Created: `2016-12-07T21:15:02.861267342Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["influxd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `INFLUXDB_VERSION=1.1.0`
+  - `INFLUXDB_VERSION=1.1.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -906,11 +906,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/inetutils/2:1.9.2.39.3a460-3/
 - https://sources.debian.net/src/inetutils/2:1.9.2.39.3a460-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `influxdb=1.1.0-1`
+### `dpkg` source package: `influxdb=1.1.1-1`
 
 Binary Packages:
 
-- `influxdb=1.1.0-1`
+- `influxdb=1.1.1-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
