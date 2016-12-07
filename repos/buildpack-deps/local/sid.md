@@ -2528,19 +2528,8 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `expat`
 - `libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.26-1
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.26-1.dsc' libpng1.6_1.6.26-1.dsc 2206 SHA256:74e796a08fa0f7daa20d416f52ea44527188f3d4cfa14523f1797be6731112f7
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.26.orig.tar.xz' libpng1.6_1.6.26.orig.tar.xz 983576 SHA256:266743a326986c3dbcee9d89b640595f6b16a293fd02b37d8c91348d317b73f9
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.26-1.debian.tar.xz' libpng1.6_1.6.26-1.debian.tar.xz 22072 SHA256:42edccfd98db984566529eaec59fa5d192f9d218ffad94d758eea54c48053765
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libpng1.6/1.6.26-1/
-- https://sources.debian.net/src/libpng1.6/1.6.26-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpsl=0.14.0-1`
 
@@ -3205,19 +3194,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxrandr=2:1.5.0-1
-'http://deb.debian.org/debian/pool/main/libx/libxrandr/libxrandr_1.5.0-1.dsc' libxrandr_1.5.0-1.dsc 2125 SHA256:e1fe17d69676e15108ff6c6c3eedc2c3c72fef8a9dd9bde1ac9f4f4467efdfd1
-'http://deb.debian.org/debian/pool/main/libx/libxrandr/libxrandr_1.5.0.orig.tar.gz' libxrandr_1.5.0.orig.tar.gz 382147 SHA256:1b594a149e6b124aab7149446f2fd886461e2935eca8dca43fe83a70cf8ec451
-'http://deb.debian.org/debian/pool/main/libx/libxrandr/libxrandr_1.5.0-1.diff.gz' libxrandr_1.5.0-1.diff.gz 13507 SHA256:f04e5dccdee7db84d534aa4423b927710fbffe513c0ec632f92129a70323334e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libxrandr/2:1.5.0-1/
-- https://sources.debian.net/src/libxrandr/2:1.5.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxrender=1:0.9.9-2`
 
