@@ -2,14 +2,14 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1ae773de9423c1b2e1838e98bbe942a8fd2c0b4246ebeb054a5c27faaa25493b`
-- Created: `2016-12-01T20:05:15.444123449Z`
+- Image ID: `sha256:ff3a8919cd8868bc4e90cc4aa60f3ae537e921ef9fa345d60249b3b4b0451596`
+- Created: `2016-12-06T20:45:09.576027755Z`
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
 - Environment:
   - `PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `HTTPD_PREFIX=/usr/local/apache2`
-  - `NGHTTP2_VERSION=1.16.0-1`
+  - `NGHTTP2_VERSION=1.17.0-1`
   - `HTTPD_VERSION=2.4.23`
   - `HTTPD_SHA1=5101be34ac4a509b245adb70a56690a84fcc4e7f`
   - `HTTPD_BZ2_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=httpd/httpd-2.4.23.tar.bz2`
@@ -1624,11 +1624,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nettle/2.7.1-5+deb8u1/
 - https://sources.debian.net/src/nettle/2.7.1-5+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `nghttp2=1.16.0-1`
+### `dpkg` source package: `nghttp2=1.17.0-1`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.16.0-1`
+- `libnghttp2-14:amd64=1.17.0-1`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -1640,8 +1640,19 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris nghttp2=1.17.0-1
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.17.0-1.dsc' nghttp2_1.17.0-1.dsc 2263 SHA256:a178da06269fdc2a1841842136aa3ce6a56603cc5a2ceca3d5365824cbe2f304
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.17.0.orig.tar.bz2' nghttp2_1.17.0.orig.tar.bz2 1782575 SHA256:7685b6717d205d3a251b7dd5e73a7ca5e643bc5c01f928b82bfeed30c243f28a
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.17.0-1.debian.tar.xz' nghttp2_1.17.0-1.debian.tar.xz 11376 SHA256:06795f429fc651ffe480af389224c6862533aa7a29cfba78933cbedee9c39b2e
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/nghttp2/1.17.0-1/
+- https://sources.debian.net/src/nghttp2/1.17.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.40+dfsg-1+deb8u2`
 
