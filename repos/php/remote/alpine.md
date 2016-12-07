@@ -1,7 +1,7 @@
 ## `php:alpine`
 
 ```console
-$ docker pull php@sha256:ad290665e2b6cf3d025843202f3a3f8f221d50d70a71342f41863a065412734a
+$ docker pull php@sha256:308521b645d63430aea60c223c87a0abd6c8094e0bd56f9082204f2c8e2e357c
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull php@sha256:ad290665e2b6cf3d025843202f3a3f8f221d50d70a71342f41863a0
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.5 MB (27510500 bytes)**  
+-	Total Size: **27.5 MB (27510492 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a48e871af0457d2c8ad12a0d663f9c305ded359990bb62048eba979e8d250ad3`
+-	Image ID: `sha256:0caa2d15f5d3aee2ac1e930177129409b1ecc45ab8e121598ba227bebc223ab6`
 -	Default Command: `["php","-a"]`
 
 ```dockerfile
@@ -49,9 +49,9 @@ RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		m
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Tue, 06 Dec 2016 21:26:47 GMT
 RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(getconf _NPROCESSORS_ONLN)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Tue, 06 Dec 2016 21:26:48 GMT
-COPY multi:ed54b4fe7bef284934703fa6e979b7cc0daed0549a07586d0c1ccd4e2b41884a in /usr/local/bin/ 
-# Tue, 06 Dec 2016 21:26:48 GMT
+# Wed, 07 Dec 2016 19:11:45 GMT
+COPY multi:02856938f72d54124bed9d5b55ba70223cef4d18c06d2738da5fb9713b27e77b in /usr/local/bin/ 
+# Wed, 07 Dec 2016 19:11:45 GMT
 CMD ["php" "-a"]
 ```
 
@@ -84,7 +84,7 @@ CMD ["php" "-a"]
 		Last Modified: Tue, 06 Dec 2016 22:35:20 GMT  
 		Size: 11.2 MB (11178950 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d62629076fa3b3abdc4b7682fe658639714c39fdac7f1ebde78ba29f9b39b1cc`  
-		Last Modified: Tue, 06 Dec 2016 22:35:17 GMT  
-		Size: 1.8 KB (1828 bytes)  
+	-	`sha256:13756fd0a74d910dfad814fe10512e8432c4a7b964c78e7d64a31a52ea9af795`  
+		Last Modified: Wed, 07 Dec 2016 19:14:51 GMT  
+		Size: 1.8 KB (1820 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
