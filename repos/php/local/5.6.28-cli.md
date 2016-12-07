@@ -2,14 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d252acd793d5b18016f3ebc901b1d16d9ced095bac98f3111138ffa1255e6a46`
-- Created: `2016-11-15T00:31:05.629129747Z`
+- Image ID: `sha256:5e121477a2678c081662b61a9bcb9a715058ec2903f8a93d893a45bf1e13c0a6`
+- Created: `2016-12-06T22:13:04.261467137Z`
 - Arch: `linux`/`amd64`
 - Command: `["php","-a"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
+  - `CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
+  - `CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
+  - `LDFLAGS=-Wl,-O1 -Wl,--hash-style=both`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
   - `PHP_VERSION=5.6.28`
   - `PHP_URL=https://secure.php.net/get/php-5.6.28.tar.xz/from/this/mirror`
