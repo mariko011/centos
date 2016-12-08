@@ -1,9 +1,9 @@
-# `wordpress:4.6.1-php7.0-fpm`
+# `wordpress:4.7.0-php7.0-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6624520a22120263f35abcdc0a4be1681adee8ae7b95e579b0cc7489a34d6803`
-- Created: `2016-11-18T00:07:10.584247318Z`
+- Image ID: `sha256:8823343c3d8d300579731f0cbf36b62bf011d093d360d7c120407a0009153b12`
+- Created: `2016-12-07T19:44:16.723924352Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["php-fpm"]`
@@ -12,14 +12,17 @@
   - `PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data`
+  - `CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
+  - `CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
+  - `LDFLAGS=-Wl,-O1 -Wl,--hash-style=both`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763`
   - `PHP_VERSION=7.0.13`
   - `PHP_URL=https://secure.php.net/get/php-7.0.13.tar.xz/from/this/mirror`
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.13.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=357ba7f93975d7d836abed0852dc3ed96a988af539e87750613294cbee82f1bf`
   - `PHP_MD5=eb117bf1d1efc99c522f132b265a3402`
-  - `WORDPRESS_VERSION=4.6.1`
-  - `WORDPRESS_SHA1=027e065d30a64720624a7404a1820e6c6fff1202`
+  - `WORDPRESS_VERSION=4.7`
+  - `WORDPRESS_SHA1=1e14144c4db71421dc4ed22f94c3914dfc3b7020`
 
 ## `dpkg` (`.deb`-based packages)
 
