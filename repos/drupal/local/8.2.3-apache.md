@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:024623d545c889d385cf3e9a0562886c3f48d3883680237cede94fd2e2c32326`
-- Created: `2016-11-17T21:42:11.427106557Z`
+- Image ID: `sha256:b03a29b7f22cd48119d98046f505218f471849b1011e010eca57a7e82fc22c31`
+- Created: `2016-12-07T21:23:42.810394214Z`
 - Arch: `linux`/`amd64`
 - Command: `["apache2-foreground"]`
 - Environment:
@@ -14,6 +14,9 @@
   - `APACHE_ENVVARS=/etc/apache2/envvars`
   - `PHP_EXTRA_BUILD_DEPS=apache2-dev`
   - `PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2`
+  - `CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
+  - `CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
+  - `LDFLAGS=-Wl,-O1 -Wl,--hash-style=both`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763`
   - `PHP_VERSION=7.0.13`
   - `PHP_URL=https://secure.php.net/get/php-7.0.13.tar.xz/from/this/mirror`
