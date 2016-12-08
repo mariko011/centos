@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d233aac0dc1d687302db165ea1cc8bfe11c60366e1400c53465b512b2adb5592`
-- Created: `2016-11-15T02:00:36.039939625Z`
+- Image ID: `sha256:07b6762f223374f92c27d4267ac9ae157d573345e2ad2b68f3d07b155c9c4ed5`
+- Created: `2016-12-07T22:57:28.651988293Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["php-fpm"]`
@@ -12,6 +12,9 @@
   - `PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data`
+  - `CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
+  - `CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
+  - `LDFLAGS=-Wl,-O1 -Wl,--hash-style=both`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
   - `PHP_VERSION=5.6.28`
   - `PHP_URL=https://secure.php.net/get/php-5.6.28.tar.xz/from/this/mirror`
@@ -1108,13 +1111,13 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/hostname/3.15/
 - https://sources.debian.net/src/hostname/3.15/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `icu=52.1-8+deb8u3`
+### `dpkg` source package: `icu=52.1-8+deb8u4`
 
 Binary Packages:
 
-- `icu-devtools=52.1-8+deb8u3`
-- `libicu-dev:amd64=52.1-8+deb8u3`
-- `libicu52:amd64=52.1-8+deb8u3`
+- `icu-devtools=52.1-8+deb8u4`
+- `libicu-dev:amd64=52.1-8+deb8u4`
+- `libicu52:amd64=52.1-8+deb8u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1123,16 +1126,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris icu=52.1-8+deb8u3
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1-8+deb8u3.dsc' icu_52.1-8+deb8u3.dsc 2001 SHA256:1b29e00096d1b02018416f5bfc231f46ddcfcf8f2cc15256c553e282c5ea404f
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1-8+deb8u3.debian.tar.xz' icu_52.1-8+deb8u3.debian.tar.xz 28472 SHA256:aa47fef8f659e6e1ed2a69e1615f5f9ca0b20ed8276fc96c91c0a061f5d12626
+$ apt-get source -qq --print-uris icu=52.1-8+deb8u4
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1-8+deb8u4.dsc' icu_52.1-8+deb8u4.dsc 2015 SHA256:cabdf27f9976550a61f1b5c84d7353f19f3338b55b2b9002f0db593fccda86c7
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1-8+deb8u4.debian.tar.xz' icu_52.1-8+deb8u4.debian.tar.xz 35588 SHA256:cf298a04a576aaa8016d25ebe1387f6c923de1acea4411a27f9858bf1af72f5a
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/icu/52.1-8+deb8u3/
-- https://sources.debian.net/src/icu/52.1-8+deb8u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/icu/52.1-8+deb8u4/
+- https://sources.debian.net/src/icu/52.1-8+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9.2.39.3a460-3`
 
