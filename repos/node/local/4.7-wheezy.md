@@ -1,15 +1,15 @@
-# `node:4.6.2-wheezy`
+# `node:4.7.0-wheezy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:52193354fcef70ff8861e4359b319050d206bfa08db4c0fcf4d881d8abd802eb`
-- Created: `2016-11-23T19:39:51.064532139Z`
+- Image ID: `sha256:8035250cebf5915353570bcd5ca159e28727ca8c473bca39691be89ae168e8cf`
+- Created: `2016-12-07T23:21:11.411925875Z`
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=4.6.2`
+  - `NODE_VERSION=4.7.0`
 
 ## `dpkg` (`.deb`-based packages)
 
