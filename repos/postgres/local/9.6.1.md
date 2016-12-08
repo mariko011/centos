@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d12be754b93804898ecfd64da3bc0d91574275d176057150f430dde8ab17fad7`
-- Created: `2016-11-23T21:14:08.791961523Z`
+- Image ID: `sha256:78e3985acac0ede5faff5ffd84584b2278ac47d4c8fdf39f287efd8dd8104ee0`
+- Created: `2016-12-07T19:32:27.743979298Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["postgres"]`
