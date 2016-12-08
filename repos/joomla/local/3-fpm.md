@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9fef3a4d0e1ea546ed86778d825dd5e5ff83bd12642058d3164bf0d397fef214`
-- Created: `2016-11-15T18:04:10.615928653Z`
+- Image ID: `sha256:aabfdfa229424e0957f7ddc2547b91831f144d83e7dec3c2a4b0fe1aaeab4f82`
+- Created: `2016-12-07T21:44:55.303878766Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["php-fpm"]`
@@ -12,6 +12,9 @@
   - `PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data`
+  - `CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
+  - `CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
+  - `LDFLAGS=-Wl,-O1 -Wl,--hash-style=both`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
   - `PHP_VERSION=5.6.28`
   - `PHP_URL=https://secure.php.net/get/php-5.6.28.tar.xz/from/this/mirror`
