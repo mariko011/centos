@@ -2025,14 +2025,8 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates-mono/copyright`, `/usr/s
 - `other`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mono=4.6.2.7-0xamarin2
-'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_4.6.2.7-0xamarin2.dsc' mono_4.6.2.7-0xamarin2.dsc 15992 SHA256:68355660374adc592a75f43cbd5e0a59fbdbe3b915a9913c6a264ec7b2981011
-'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_4.6.2.7.orig.tar.bz2' mono_4.6.2.7.orig.tar.bz2 83271441 SHA256:b69ead7db7590277630685f3fcad84a5ac2f83e40563f0dc8cf139b10cbe6b31
-'http://download.mono-project.com/repo/debian/pool/main/m/mono/mono_4.6.2.7-0xamarin2.debian.tar.gz' mono_4.6.2.7-0xamarin2.debian.tar.gz 190350 SHA256:0b158afa27d14f8125983a05cc91d575826fd55b92d5155f15371f46915e35fd
-```
 
 ### `dpkg` source package: `ncurses=5.9-10`
 
