@@ -2711,14 +2711,8 @@ Licenses: (parsed from: `/usr/share/doc/libavcodec-dev/copyright`, `/usr/share/d
 - `LGPL-2.1+~Libav`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libav=6:9.18-0ubuntu0.14.04.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/liba/libav/libav_9.18-0ubuntu0.14.04.1.dsc' libav_9.18-0ubuntu0.14.04.1.dsc 4198 SHA256:4e3c5ca2ed0c59e7c3ce59be09f012628df1899d972067a3cc6694d855e7cdf4
-'http://archive.ubuntu.com/ubuntu/pool/universe/liba/libav/libav_9.18.orig.tar.xz' libav_9.18.orig.tar.xz 4078372 SHA256:0875e835da683eef1a7bac75e1884634194149d7479d1538ba9fbe1614d066d7
-'http://archive.ubuntu.com/ubuntu/pool/universe/liba/libav/libav_9.18-0ubuntu0.14.04.1.debian.tar.gz' libav_9.18-0ubuntu0.14.04.1.debian.tar.gz 62426 SHA256:7120ed72cf7ef1da326d8e9ad433587c5a3fceecc2e80ca7c11460bd9f4518cf
-```
 
 ### `dpkg` source package: `libbsd=0.6.0-2ubuntu1`
 
