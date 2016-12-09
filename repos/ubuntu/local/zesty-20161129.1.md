@@ -896,14 +896,8 @@ Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
 - `LGPL-3+`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris pinentry=0.9.7-9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_0.9.7-9.dsc' pinentry_0.9.7-9.dsc 2688 SHA256:e3438af185557682668572640a5219afbe8ed181d86d9d29d07583be0dde9833
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_0.9.7.orig.tar.bz2' pinentry_0.9.7.orig.tar.bz2 432978 SHA256:6398208394972bbf897c3325780195584682a0d0c164ca5a0da35b93b1e4e7b2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_0.9.7-9.debian.tar.xz' pinentry_0.9.7-9.debian.tar.xz 34324 SHA256:729264486e526be1b122ec99fe81a0ef1a13fd4b36fbfc0ba4349bc77faef3dd
-```
 
 ### `dpkg` source package: `procps=2:3.3.12-1ubuntu2`
 
