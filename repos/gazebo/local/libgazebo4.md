@@ -6268,14 +6268,8 @@ Licenses: (parsed from: `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/ude
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=204-5ubuntu20.19
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.19.dsc' systemd_204-5ubuntu20.19.dsc 4087 SHA256:17b293bda382f66776b0a4ec0e0a6009ac22343cb1da30359fdceb46bebc1d70
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204.orig.tar.xz' systemd_204.orig.tar.xz 2186264 SHA256:072c393503c7c1e55ca7acf3db659cbd28c7fe5fa94fab3db95360bafd96731b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.19.debian.tar.xz' systemd_204-5ubuntu20.19.debian.tar.xz 137340 SHA256:c6cf722fca0d7ddfa0a457b61574ea69c369dbd85319cdb4c5b64ea1cc0af902
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-41ubuntu6.3`
 
@@ -6428,14 +6422,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016h-0ubuntu0.14.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h-0ubuntu0.14.04.dsc' tzdata_2016h-0ubuntu0.14.04.dsc 2048 SHA256:734a5f544c55a71c4464da0e523e86fe70182244904ac44aba957202ed4df29c
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h.orig.tar.gz' tzdata_2016h.orig.tar.gz 318714 SHA256:da1b74fc2dec2ce8b64948dafb0bfc2f923c830d421a7ae4d016226135697a64
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h-0ubuntu0.14.04.debian.tar.xz' tzdata_2016h-0ubuntu0.14.04.debian.tar.xz 100444 SHA256:59709bb8abbb149be2e5a0187b5ea7e51f9a4fd4adccb6c309b88a9255340d6d
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 
