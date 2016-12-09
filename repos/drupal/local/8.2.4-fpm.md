@@ -1,9 +1,9 @@
-# `drupal:8.2.3-fpm`
+# `drupal:8.2.4-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:383742673874e0ea52398e45ec6565d68bebd180a441236daa9b056b120898fe`
-- Created: `2016-12-07T21:25:13.969558306Z`
+- Image ID: `sha256:39525dbbcd06baeaa68e7650644d4a0d09e1159579e4409b196a899a591c5e17`
+- Created: `2016-12-08T20:32:32.568784822Z`
 - Arch: `linux`/`amd64`
 - Command: `["php-fpm"]`
 - Environment:
@@ -20,8 +20,8 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.13.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=357ba7f93975d7d836abed0852dc3ed96a988af539e87750613294cbee82f1bf`
   - `PHP_MD5=eb117bf1d1efc99c522f132b265a3402`
-  - `DRUPAL_VERSION=8.2.3`
-  - `DRUPAL_MD5=683ddc33077bb1f7cc795607d114144e`
+  - `DRUPAL_VERSION=8.2.4`
+  - `DRUPAL_MD5=288aa9978b5027e26f20df93b6295f6c`
 
 ## `dpkg` (`.deb`-based packages)
 
