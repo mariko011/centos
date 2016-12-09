@@ -1251,19 +1251,8 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 - `GPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris lcms2=2.7-1
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.7-1.dsc' lcms2_2.7-1.dsc 1982 SHA256:44123045d3bfcdd8d15878e46473730dce0bac478b8717d95617dbc1f6e59bf0
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.7.orig.tar.gz' lcms2_2.7.orig.tar.gz 6497867 SHA256:4524234ae7de185e6b6da5d31d6875085b2198bc63b1211f7dde6e2d197d6a53
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.7-1.debian.tar.xz' lcms2_2.7-1.debian.tar.xz 11072 SHA256:3225093f0f55621d0944bf166d3800ebdb6ebdca840705e2c2e32b51d5c52c70
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/lcms2/2.7-1/
-- https://sources.debian.net/src/lcms2/2.7-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libbsd=0.8.3-1`
 
