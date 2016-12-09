@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:89fc2d7c4626137ecf42d734ea09af6624a86bd787a6bfbc7b24a94e03048388`
-- Created: `2016-11-23T21:55:53.432058039Z`
+- Image ID: `sha256:17275e12d1c0ac9e62d0cbde87d2fcc54dc35eb82ceb76092bbbb042adde4be7`
+- Created: `2016-12-07T23:36:44.359981638Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["rails","server","-b","0.0.0.0"]`
@@ -1367,11 +1367,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/hostname/3.15/
 - https://sources.debian.net/src/hostname/3.15/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `icu=52.1-8+deb8u3`
+### `dpkg` source package: `icu=52.1-8+deb8u4`
 
 Binary Packages:
 
-- `libicu52:amd64=52.1-8+deb8u3`
+- `libicu52:amd64=52.1-8+deb8u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1380,16 +1380,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris icu=52.1-8+deb8u3
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1-8+deb8u3.dsc' icu_52.1-8+deb8u3.dsc 2001 SHA256:1b29e00096d1b02018416f5bfc231f46ddcfcf8f2cc15256c553e282c5ea404f
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1-8+deb8u3.debian.tar.xz' icu_52.1-8+deb8u3.debian.tar.xz 28472 SHA256:aa47fef8f659e6e1ed2a69e1615f5f9ca0b20ed8276fc96c91c0a061f5d12626
+$ apt-get source -qq --print-uris icu=52.1-8+deb8u4
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1-8+deb8u4.dsc' icu_52.1-8+deb8u4.dsc 2015 SHA256:cabdf27f9976550a61f1b5c84d7353f19f3338b55b2b9002f0db593fccda86c7
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1-8+deb8u4.debian.tar.xz' icu_52.1-8+deb8u4.debian.tar.xz 35588 SHA256:cf298a04a576aaa8016d25ebe1387f6c923de1acea4411a27f9858bf1af72f5a
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/icu/52.1-8+deb8u3/
-- https://sources.debian.net/src/icu/52.1-8+deb8u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/icu/52.1-8+deb8u4/
+- https://sources.debian.net/src/icu/52.1-8+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ilmbase=1.0.1-6.1`
 
@@ -1415,16 +1415,16 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/ilmbase/1.0.1-6.1/
 - https://sources.debian.net/src/ilmbase/1.0.1-6.1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `imagemagick=8:6.8.9.9-5+deb8u5`
+### `dpkg` source package: `imagemagick=8:6.8.9.9-5+deb8u6`
 
 Binary Packages:
 
-- `imagemagick=8:6.8.9.9-5+deb8u5`
-- `imagemagick-6.q16=8:6.8.9.9-5+deb8u5`
-- `imagemagick-common=8:6.8.9.9-5+deb8u5`
-- `libmagickcore-6.q16-2:amd64=8:6.8.9.9-5+deb8u5`
-- `libmagickcore-6.q16-2-extra:amd64=8:6.8.9.9-5+deb8u5`
-- `libmagickwand-6.q16-2:amd64=8:6.8.9.9-5+deb8u5`
+- `imagemagick=8:6.8.9.9-5+deb8u6`
+- `imagemagick-6.q16=8:6.8.9.9-5+deb8u6`
+- `imagemagick-common=8:6.8.9.9-5+deb8u6`
+- `libmagickcore-6.q16-2:amd64=8:6.8.9.9-5+deb8u6`
+- `libmagickcore-6.q16-2-extra:amd64=8:6.8.9.9-5+deb8u6`
+- `libmagickwand-6.q16-2:amd64=8:6.8.9.9-5+deb8u6`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/imagemagick-common/copyright`, `/usr/share/doc/libmagickcore-6.q16-2/copyright`, `/usr/share/doc/libmagickcore-6.q16-2-extra/copyright`, `/usr/share/doc/libmagickwand-6.q16-2/copyright`)
 
@@ -1442,8 +1442,19 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris imagemagick=8:6.8.9.9-5+deb8u6
+'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u6.dsc' imagemagick_6.8.9.9-5+deb8u6.dsc 4210 SHA256:babf8af8eee5385a9d3218bae44dd5cc4677640cfd0e0538ed5a7e893e00643e
+'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9.orig.tar.xz' imagemagick_6.8.9.9.orig.tar.xz 7891624 SHA256:a4cccc70179ff2c67550e063cdcb2e62907338ef3e68b45bb1c41931e515b3eb
+'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u6.debian.tar.xz' imagemagick_6.8.9.9-5+deb8u6.debian.tar.xz 260404 SHA256:aaaa5857f9002ef6c9cccf7dfdef6d2de3d2167f2f5b57a9fcefb95295de17b9
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u6/
+- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9.2.39.3a460-3`
 
