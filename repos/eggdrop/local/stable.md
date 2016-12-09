@@ -2,15 +2,13 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a21258d5eda43de18881498b5a8bfbc07cb96e5a4857343e574c33be726b0fba`
-- Created: `2016-12-06T18:21:00.967924084Z`
+- Image ID: `sha256:53b3488deade21b828a76b3bf4b9fc056542515dd3073dfa6b12f0f3b797f5ae`
+- Created: `2016-12-08T18:41:26.143981216Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/home/eggdrop/eggdrop/entrypoint.sh"]`
 - Command: `["eggdrop.conf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `EGGDROP_SHA256=45e331e85ee825a89b8368107f90e7a6f11be0d9294e55c1d01f54a980813b81`
-  - `EGGDROP_COMMIT=9c7160e8271c6d99a22fea980a5b9e9cfa96732f`
   - `NICK=`
   - `SERVER=`
   - `LISTEN=3333`
