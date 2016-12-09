@@ -1,7 +1,7 @@
 ## `logstash:latest`
 
 ```console
-$ docker pull logstash@sha256:cb309e8cff95f16c17ce8882460ac38cc76187acbf7aacaa7e0c4ce5a0ffb624
+$ docker pull logstash@sha256:6abdea7d0685cc1f1ada76265f243036f1e90c91112b819ceefc095e5e6b7445
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull logstash@sha256:cb309e8cff95f16c17ce8882460ac38cc76187acbf7aacaa7e
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **232.2 MB (232152714 bytes)**  
+-	Total Size: **221.3 MB (221301572 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a2809376b8f11bddbab8196eed48705130d86ca3b9dcaef77bd89c16a7c3a26a`
+-	Image ID: `sha256:0ec18fcb5f14c91954bbd7b9e3b4c97370ca3fd770e1fa74f379f877989468da`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
@@ -56,21 +56,23 @@ RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/relea
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
 # Tue, 08 Nov 2016 22:25:06 GMT
 RUN echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' > /etc/apt/sources.list.d/logstash.list
-# Wed, 30 Nov 2016 22:00:08 GMT
-ENV LOGSTASH_VERSION=1:5.0.2-1
-# Wed, 30 Nov 2016 22:00:34 GMT
-RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends logstash=$LOGSTASH_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 30 Nov 2016 22:00:35 GMT
+# Fri, 09 Dec 2016 17:49:08 GMT
+ENV LOGSTASH_VERSION=5.1.1
+# Fri, 09 Dec 2016 17:49:08 GMT
+ENV LOGSTASH_DEB_VERSION=1:5.1.1-1
+# Fri, 09 Dec 2016 17:49:34 GMT
+RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends "logstash=$LOGSTASH_DEB_VERSION" 	&& rm -rf /var/lib/apt/lists/*
+# Fri, 09 Dec 2016 17:49:35 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 30 Nov 2016 22:00:35 GMT
+# Fri, 09 Dec 2016 17:49:35 GMT
 ENV LS_SETTINGS_DIR=/etc/logstash
-# Wed, 30 Nov 2016 22:00:36 GMT
+# Fri, 09 Dec 2016 17:49:36 GMT
 RUN set -ex; 	if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^path\.config:!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi; 	if [ -f "$LS_SETTINGS_DIR/log4j2.properties" ]; then 		cp "$LS_SETTINGS_DIR/log4j2.properties" "$LS_SETTINGS_DIR/log4j2.properties.dist"; 		truncate --size=0 "$LS_SETTINGS_DIR/log4j2.properties"; 	fi
-# Wed, 30 Nov 2016 22:00:37 GMT
-COPY file:c0897c16e43eca5f0868b7bd256f4c8b71e97b06c32366b282ce1a1cfba30bf3 in / 
-# Wed, 30 Nov 2016 22:00:37 GMT
+# Fri, 09 Dec 2016 17:49:37 GMT
+COPY file:b540f903cdce9f3c92d22e6ec1673d5185797f0f604d4ddc9fdeb6fab1050a8f in / 
+# Fri, 09 Dec 2016 17:49:37 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 30 Nov 2016 22:00:38 GMT
+# Fri, 09 Dec 2016 17:49:38 GMT
 CMD ["-e" ""]
 ```
 
@@ -123,15 +125,15 @@ CMD ["-e" ""]
 		Last Modified: Tue, 08 Nov 2016 22:25:54 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:203b5381db9aa44f4de5c70d28b8dff7b9aac5391609b7d7cf2975f5fc8ff700`  
-		Last Modified: Wed, 30 Nov 2016 22:06:26 GMT  
-		Size: 105.8 MB (105796405 bytes)  
+	-	`sha256:7be90372974a3210917ed84c339cecaf7176d287c800cc5f260731e804427ea5`  
+		Last Modified: Fri, 09 Dec 2016 17:52:17 GMT  
+		Size: 94.9 MB (94944733 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0083f1fce1d319f24a40fc56bb0367fe0a2e986cf25aa35afc296f5407755f05`  
-		Last Modified: Wed, 30 Nov 2016 22:06:07 GMT  
-		Size: 1.7 KB (1726 bytes)  
+	-	`sha256:4ce7e77c6cffff4e66136098a7df6cf5beb1a41754b25795768ed3cce5cca773`  
+		Last Modified: Fri, 09 Dec 2016 17:52:01 GMT  
+		Size: 2.2 KB (2244 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:daa00ab201f351119c36277227663895d5c7cba6b697145da5945fd7fd585ac6`  
-		Last Modified: Wed, 30 Nov 2016 22:06:07 GMT  
-		Size: 293.0 B  
+	-	`sha256:f42d62f31b9867ef1a7e4a6cf931801e3e06e714644bb70c8a993ab3a83b88f3`  
+		Last Modified: Fri, 09 Dec 2016 17:52:00 GMT  
+		Size: 305.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
