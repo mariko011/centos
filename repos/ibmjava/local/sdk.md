@@ -508,14 +508,8 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris glibc=2.23-0ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu4.dsc' glibc_2.23-0ubuntu4.dsc 8532 SHA256:23c867505fc784d7c0e2f924d71a463a13c01e8ce8d4558030533279b79bedfb
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23.orig.tar.xz' glibc_2.23.orig.tar.xz 13849968 SHA256:bf6c528eeebefcacc295270068b79330c1fb2b22458ff66285b4175d23442c96
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu4.debian.tar.xz' glibc_2.23-0ubuntu4.debian.tar.xz 1339492 SHA256:ac0892d83bcc6225a738a28028b4d7222b4dfc150eafe1cea44dd38e864977ae
-```
 
 ### `dpkg` source package: `gnupg=1.4.20-1ubuntu3.1`
 
@@ -1249,14 +1243,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016h-0ubuntu0.16.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h-0ubuntu0.16.04.dsc' tzdata_2016h-0ubuntu0.16.04.dsc 2101 SHA256:4bd38d917373c61d05c6f8caf2a069a68ce543cbf0f7a14595625f709c212a88
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h.orig.tar.gz' tzdata_2016h.orig.tar.gz 318714 SHA256:da1b74fc2dec2ce8b64948dafb0bfc2f923c830d421a7ae4d016226135697a64
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016h-0ubuntu0.16.04.debian.tar.xz' tzdata_2016h-0ubuntu0.16.04.debian.tar.xz 99832 SHA256:4ae6adca94b88b4c30a427cdf81c6097396a3915dfb21873ff6a56f454d67c1e
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 
