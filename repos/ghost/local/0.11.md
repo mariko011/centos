@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:709795b4afb7ae6a6d779d8ec4fd3ebcbd24f19b59013c24c1530ffc97857e85`
-- Created: `2016-11-23T20:10:56.483835404Z`
+- Image ID: `sha256:3dd5d1de8ed143640fcc1156687044c0faef49b8a977c0d8f3a7d294f79e3446`
+- Created: `2016-12-08T20:13:17.471919115Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["npm","start"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=4.6.2`
+  - `NODE_VERSION=4.7.0`
   - `GOSU_VERSION=1.7`
   - `GHOST_SOURCE=/usr/src/ghost`
   - `GHOST_VERSION=0.11.3`
