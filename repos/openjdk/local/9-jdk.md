@@ -101,19 +101,8 @@ Licenses: (parsed from: `/usr/share/doc/libaprutil1/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apr-util=1.5.4-2
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.5.4-2.dsc' apr-util_1.5.4-2.dsc 2599 SHA256:f886be48dc9d66434011975d132ca5a8e14912143de212a6224dd5e57997842e
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.5.4.orig.tar.bz2' apr-util_1.5.4.orig.tar.bz2 694427 SHA256:a6cf327189ca0df2fb9d5633d7326c460fe2b61684745fd7963e79a6dd0dc82e
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.5.4-2.debian.tar.xz' apr-util_1.5.4-2.debian.tar.xz 212192 SHA256:e8f0fdf94482c43dff69a207ecbf98cec602ab45869561800ccf46a09988caff
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apr-util/1.5.4-2/
-- https://sources.debian.net/src/apr-util/1.5.4-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apr=1.5.2-4`
 
@@ -409,19 +398,8 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris coreutils=8.25-2
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.25-2.dsc' coreutils_8.25-2.dsc 1925 SHA256:9909b8ad5d532cb3875d811711feaca819308fbbe5f1dc0542c64f6db6793c2d
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.25.orig.tar.xz' coreutils_8.25.orig.tar.xz 5725008 SHA256:31e67c057a5b32a582f26408c789e11c2e8d676593324849dcf5779296cdce87
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.25-2.debian.tar.xz' coreutils_8.25-2.debian.tar.xz 21776 SHA256:68aca1234eb219bf23099065cb0b1e2566b3ad7e80fdd977fe8bfe03b8fb0629
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/coreutils/8.25-2/
-- https://sources.debian.net/src/coreutils/8.25-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cups=2.2.1-2`
 
@@ -2331,19 +2309,8 @@ Licenses: (parsed from: `/usr/share/doc/libpcsclite1/copyright`)
 - `GPL-3+`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris pcsc-lite=1.8.18-1
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.18-1.dsc' pcsc-lite_1.8.18-1.dsc 2182 SHA256:1360fd36efabf39926972a1fa51832db3d6a6ccccf4351c7aa5f905d4e018b97
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.18.orig.tar.bz2' pcsc-lite_1.8.18.orig.tar.bz2 741987 SHA256:b22d32b018f6a1016adba91abfcc63876cca999daa472dd86e953ddd41d00905
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.18-1.debian.tar.xz' pcsc-lite_1.8.18-1.debian.tar.xz 14604 SHA256:a95d76308539d7f6090dc8def8d732f7a614c341a0079063fcea84def215d345
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/pcsc-lite/1.8.18-1/
-- https://sources.debian.net/src/pcsc-lite/1.8.18-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `perl=5.24.1~rc3-3`
 
