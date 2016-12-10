@@ -223,19 +223,8 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris coreutils=8.25-2
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.25-2.dsc' coreutils_8.25-2.dsc 1925 SHA256:9909b8ad5d532cb3875d811711feaca819308fbbe5f1dc0542c64f6db6793c2d
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.25.orig.tar.xz' coreutils_8.25.orig.tar.xz 5725008 SHA256:31e67c057a5b32a582f26408c789e11c2e8d676593324849dcf5779296cdce87
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.25-2.debian.tar.xz' coreutils_8.25-2.debian.tar.xz 21776 SHA256:68aca1234eb219bf23099065cb0b1e2566b3ad7e80fdd977fe8bfe03b8fb0629
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/coreutils/8.25-2/
-- https://sources.debian.net/src/coreutils/8.25-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `dash=0.5.8-2.3`
 
