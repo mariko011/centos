@@ -69,19 +69,8 @@ Licenses: (parsed from: `/usr/share/doc/libaprutil1/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apr-util=1.5.4-2
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.5.4-2.dsc' apr-util_1.5.4-2.dsc 2599 SHA256:f886be48dc9d66434011975d132ca5a8e14912143de212a6224dd5e57997842e
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.5.4.orig.tar.bz2' apr-util_1.5.4.orig.tar.bz2 694427 SHA256:a6cf327189ca0df2fb9d5633d7326c460fe2b61684745fd7963e79a6dd0dc82e
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.5.4-2.debian.tar.xz' apr-util_1.5.4-2.debian.tar.xz 212192 SHA256:e8f0fdf94482c43dff69a207ecbf98cec602ab45869561800ccf46a09988caff
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apr-util/1.5.4-2/
-- https://sources.debian.net/src/apr-util/1.5.4-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apr=1.5.2-4`
 
@@ -516,19 +505,8 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris coreutils=8.25-2
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.25-2.dsc' coreutils_8.25-2.dsc 1925 SHA256:9909b8ad5d532cb3875d811711feaca819308fbbe5f1dc0542c64f6db6793c2d
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.25.orig.tar.xz' coreutils_8.25.orig.tar.xz 5725008 SHA256:31e67c057a5b32a582f26408c789e11c2e8d676593324849dcf5779296cdce87
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.25-2.debian.tar.xz' coreutils_8.25-2.debian.tar.xz 21776 SHA256:68aca1234eb219bf23099065cb0b1e2566b3ad7e80fdd977fe8bfe03b8fb0629
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/coreutils/8.25-2/
-- https://sources.debian.net/src/coreutils/8.25-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cups=2.2.1-2`
 
@@ -2811,19 +2789,8 @@ Licenses: (parsed from: `/usr/share/doc/libwebp-dev/copyright`, `/usr/share/doc/
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libwebp=0.5.1-2
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_0.5.1-2.dsc' libwebp_0.5.1-2.dsc 2065 SHA256:c469acfcbbf6f5c5b6652fc7b645cd0f7fd78e48bac41d80bda03e3b522d2f0d
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_0.5.1.orig.tar.gz' libwebp_0.5.1.orig.tar.gz 1212254 SHA256:6ad66c6fcd60a023de20b6856b03da8c7d347269d76b1fd9c3287e8b5e8813df
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_0.5.1-2.debian.tar.xz' libwebp_0.5.1-2.debian.tar.xz 5300 SHA256:6d7ce394f3e2401600b082c74dd2d5d8e0ad4240ffa4ae19ce15eb8cbe62fbb6
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libwebp/0.5.1-2/
-- https://sources.debian.net/src/libwebp/0.5.1-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libwmf=0.2.8.4-10.5`
 
