@@ -121,13 +121,8 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-files=9.6ubuntu7
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.6ubuntu7.dsc' base-files_9.6ubuntu7.dsc 1582 SHA256:4cb7120e8e0a92ad3472e4213c4f052388727f208784753d5d509a4ef726a556
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.6ubuntu7.tar.xz' base-files_9.6ubuntu7.tar.xz 63660 SHA256:eb380bb6959b5dc290c7dc41f54eddbf0efdc06f68a9d77656034daadc984e2a
-```
 
 ### `dpkg` source package: `base-passwd=3.5.41`
 
@@ -614,14 +609,8 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 - `GPL-2.1+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgpg-error=1.25-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.25-1.dsc' libgpg-error_1.25-1.dsc 2584 SHA256:9ffccbda66fb69c649a31b0f59a7bfda2bf229c61fef24ba36df51ff14bb64d4
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.25.orig.tar.bz2' libgpg-error_1.25.orig.tar.bz2 797159 SHA256:f628f75843433b38b05af248121beb7db5bd54bb2106f384edac39934261320c
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.25-1.debian.tar.xz' libgpg-error_1.25-1.debian.tar.xz 12732 SHA256:cb5210f956ac62ef4886aaad4fcd6b0a5a90be49ac1075fa7610435aae37a3e1
-```
 
 ### `dpkg` source package: `libksba=1.3.5-2`
 
