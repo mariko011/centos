@@ -2,14 +2,14 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3d4bab2d8456cc0ce435462faa43350285ca9cb1852be4737db1aa04cdd00387`
-- Created: `2016-11-30T18:41:01.079983572Z`
+- Image ID: `sha256:f4c037d4386b523e8d41d412cfb8a5ad48412edcf1b7498f81c343f2cf1d576c`
+- Created: `2016-12-12T22:37:48.49988787Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["telegraf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `TELEGRAF_VERSION=1.1.1`
+  - `TELEGRAF_VERSION=1.1.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -65,13 +65,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/apt-util
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.0.1ubuntu2.15
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.15.dsc' apt_1.0.1ubuntu2.15.dsc 2461 SHA256:d6ed6382957e9993b8466d20fc2b231cf9328c073ea670a7e5b859b9315fde62
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.15.tar.xz' apt_1.0.1ubuntu2.15.tar.xz 1781580 SHA256:d034fc6a361feac817223c9ed75f3d5fb87a8019666d81100fb524bba7d97c6d
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-1ubuntu1`
 
@@ -2532,11 +2527,11 @@ $ apt-get source -qq --print-uris tar=1.27.1-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.27.1-1ubuntu0.1.debian.tar.gz' tar_1.27.1-1ubuntu0.1.debian.tar.gz 22769 SHA256:e22697f2b43f792a61683d9af9ed78ea7dd2d3927a94573ab90d9ada21df25e2
 ```
 
-### `dpkg` source package: `telegraf=1.1.1-1`
+### `dpkg` source package: `telegraf=1.1.2-1`
 
 Binary Packages:
 
-- `telegraf=1.1.1-1`
+- `telegraf=1.1.2-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
