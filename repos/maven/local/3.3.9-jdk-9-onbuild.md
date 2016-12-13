@@ -2740,19 +2740,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris unzip=6.0-20
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-20.dsc' unzip_6.0-20.dsc 1329 SHA256:9cac39046df0500062b67506241d7e905b3e83b2cb3570a2fe72b32e797e9480
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
-'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-20.debian.tar.xz' unzip_6.0-20.debian.tar.xz 16680 SHA256:7ddfafb1a771ae8d6b4e25c5e31f22c717e0fe606b1bafadcdd574c01f671490
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/unzip/6.0-20/
-- https://sources.debian.net/src/unzip/6.0-20/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ustr=1.0.4-5`
 
