@@ -1,7 +1,7 @@
 ## `debian:sid-slim`
 
 ```console
-$ docker pull debian@sha256:da174c5ab9dff337c4c93c93b639002b210bed29a8ffda14e1e540ebda954db5
+$ docker pull debian@sha256:7e5a14fca081e883135b70e4c8d08a27b7405d1c35a314ee766b137326bdc2ab
 ```
 
 -	Platforms:
@@ -11,20 +11,20 @@ $ docker pull debian@sha256:da174c5ab9dff337c4c93c93b639002b210bed29a8ffda14e1e5
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **22.0 MB (22000860 bytes)**  
+-	Total Size: **22.4 MB (22391266 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:66713d362a36e83de7c98616422e018e7615a062791b7ae89df3ce7eb88b3aa7`
+-	Image ID: `sha256:8d0d0bd4e609295233bdbd384ccd730aa7dbdc4309f0e6929dfa0f798076f421`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 07 Nov 2016 20:31:28 GMT
-ADD file:1efd025543bb2803c5600efe178f8717eff4df78d7f50913dfdd07dbd65023bb in / 
-# Mon, 07 Nov 2016 20:31:28 GMT
+# Tue, 13 Dec 2016 22:12:34 GMT
+ADD file:526203852d12173c0a50666e28fb76bfe71f55f876cfaf02a7a415501808bca1 in / 
+# Tue, 13 Dec 2016 22:12:41 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:635f362f5a0ec66c23552f96285f49518d6dbc0dc826384a62246958f180a754`  
-		Last Modified: Mon, 07 Nov 2016 20:37:38 GMT  
-		Size: 22.0 MB (22000860 bytes)  
+	-	`sha256:ab8bed633aa1fe6f342ab5b396912b9c48c977822a85b7e8d5c56326c7a83942`  
+		Last Modified: Tue, 13 Dec 2016 22:20:57 GMT  
+		Size: 22.4 MB (22391266 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
