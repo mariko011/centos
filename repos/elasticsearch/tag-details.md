@@ -6,12 +6,22 @@
 -	[`elasticsearch:5.1`](#elasticsearch51)
 -	[`elasticsearch:5`](#elasticsearch5)
 -	[`elasticsearch:latest`](#elasticsearchlatest)
+-	[`elasticsearch:5.1.1-alpine`](#elasticsearch511-alpine)
+-	[`elasticsearch:5.1-alpine`](#elasticsearch51-alpine)
+-	[`elasticsearch:5-alpine`](#elasticsearch5-alpine)
+-	[`elasticsearch:alpine`](#elasticsearchalpine)
 -	[`elasticsearch:2.4.2`](#elasticsearch242)
 -	[`elasticsearch:2.4`](#elasticsearch24)
 -	[`elasticsearch:2`](#elasticsearch2)
+-	[`elasticsearch:2.4.2-alpine`](#elasticsearch242-alpine)
+-	[`elasticsearch:2.4-alpine`](#elasticsearch24-alpine)
+-	[`elasticsearch:2-alpine`](#elasticsearch2-alpine)
 -	[`elasticsearch:1.7.6`](#elasticsearch176)
 -	[`elasticsearch:1.7`](#elasticsearch17)
 -	[`elasticsearch:1`](#elasticsearch1)
+-	[`elasticsearch:1.7.6-alpine`](#elasticsearch176-alpine)
+-	[`elasticsearch:1.7-alpine`](#elasticsearch17-alpine)
+-	[`elasticsearch:1-alpine`](#elasticsearch1-alpine)
 
 ## `elasticsearch:5.1.1`
 
@@ -557,6 +567,22 @@ CMD ["elasticsearch"]
 		Size: 470.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `elasticsearch:5.1.1-alpine`
+
+**does not exist** (yet?)
+
+## `elasticsearch:5.1-alpine`
+
+**does not exist** (yet?)
+
+## `elasticsearch:5-alpine`
+
+**does not exist** (yet?)
+
+## `elasticsearch:alpine`
+
+**does not exist** (yet?)
+
 ## `elasticsearch:2.4.2`
 
 ```console
@@ -965,6 +991,18 @@ CMD ["elasticsearch"]
 		Size: 469.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `elasticsearch:2.4.2-alpine`
+
+**does not exist** (yet?)
+
+## `elasticsearch:2.4-alpine`
+
+**does not exist** (yet?)
+
+## `elasticsearch:2-alpine`
+
+**does not exist** (yet?)
+
 ## `elasticsearch:1.7.6`
 
 ```console
@@ -1372,3 +1410,15 @@ CMD ["elasticsearch"]
 		Last Modified: Wed, 30 Nov 2016 21:49:56 GMT  
 		Size: 469.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `elasticsearch:1.7.6-alpine`
+
+**does not exist** (yet?)
+
+## `elasticsearch:1.7-alpine`
+
+**does not exist** (yet?)
+
+## `elasticsearch:1-alpine`
+
+**does not exist** (yet?)

@@ -26,6 +26,14 @@
 -	[`wordpress:4.7-php5.6-fpm`](#wordpress47-php56-fpm)
 -	[`wordpress:4-php5.6-fpm`](#wordpress4-php56-fpm)
 -	[`wordpress:php5.6-fpm`](#wordpressphp56-fpm)
+-	[`wordpress:4.7.0-fpm-alpine`](#wordpress470-fpm-alpine)
+-	[`wordpress:4.7-fpm-alpine`](#wordpress47-fpm-alpine)
+-	[`wordpress:4-fpm-alpine`](#wordpress4-fpm-alpine)
+-	[`wordpress:fpm-alpine`](#wordpressfpm-alpine)
+-	[`wordpress:4.7.0-php5.6-fpm-alpine`](#wordpress470-php56-fpm-alpine)
+-	[`wordpress:4.7-php5.6-fpm-alpine`](#wordpress47-php56-fpm-alpine)
+-	[`wordpress:4-php5.6-fpm-alpine`](#wordpress4-php56-fpm-alpine)
+-	[`wordpress:php5.6-fpm-alpine`](#wordpressphp56-fpm-alpine)
 -	[`wordpress:4.7.0-php7.0-apache`](#wordpress470-php70-apache)
 -	[`wordpress:4.7-php7.0-apache`](#wordpress47-php70-apache)
 -	[`wordpress:4-php7.0-apache`](#wordpress4-php70-apache)
@@ -38,6 +46,10 @@
 -	[`wordpress:4.7-php7.0-fpm`](#wordpress47-php70-fpm)
 -	[`wordpress:4-php7.0-fpm`](#wordpress4-php70-fpm)
 -	[`wordpress:php7.0-fpm`](#wordpressphp70-fpm)
+-	[`wordpress:4.7.0-php7.0-fpm-alpine`](#wordpress470-php70-fpm-alpine)
+-	[`wordpress:4.7-php7.0-fpm-alpine`](#wordpress47-php70-fpm-alpine)
+-	[`wordpress:4-php7.0-fpm-alpine`](#wordpress4-php70-fpm-alpine)
+-	[`wordpress:php7.0-fpm-alpine`](#wordpressphp70-fpm-alpine)
 
 ## `wordpress:4.7.0-apache`
 
@@ -4103,6 +4115,38 @@ CMD ["php-fpm"]
 		Size: 119.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `wordpress:4.7.0-fpm-alpine`
+
+**does not exist** (yet?)
+
+## `wordpress:4.7-fpm-alpine`
+
+**does not exist** (yet?)
+
+## `wordpress:4-fpm-alpine`
+
+**does not exist** (yet?)
+
+## `wordpress:fpm-alpine`
+
+**does not exist** (yet?)
+
+## `wordpress:4.7.0-php5.6-fpm-alpine`
+
+**does not exist** (yet?)
+
+## `wordpress:4.7-php5.6-fpm-alpine`
+
+**does not exist** (yet?)
+
+## `wordpress:4-php5.6-fpm-alpine`
+
+**does not exist** (yet?)
+
+## `wordpress:php5.6-fpm-alpine`
+
+**does not exist** (yet?)
+
 ## `wordpress:4.7.0-php7.0-apache`
 
 ```console
@@ -6134,3 +6178,19 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 10 Dec 2016 17:22:23 GMT  
 		Size: 119.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `wordpress:4.7.0-php7.0-fpm-alpine`
+
+**does not exist** (yet?)
+
+## `wordpress:4.7-php7.0-fpm-alpine`
+
+**does not exist** (yet?)
+
+## `wordpress:4-php7.0-fpm-alpine`
+
+**does not exist** (yet?)
+
+## `wordpress:php7.0-fpm-alpine`
+
+**does not exist** (yet?)
