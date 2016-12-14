@@ -1,16 +1,16 @@
-# `aerospike:3.10.1`
+# `aerospike:3.10.1.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d6e3c8ea30bd4069476707fae6f440673bc87e28bb54f2714fd198622c26fd1f`
-- Created: `2016-11-29T22:06:32.339864727Z`
+- Image ID: `sha256:0165bc4c8511572bf07633979c69bddc72c431b49df52d04ce0b9eb0c3a12f8d`
+- Created: `2016-12-13T23:30:21.271052335Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["asd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `AEROSPIKE_VERSION=3.10.1`
-  - `AEROSPIKE_SHA256=1b0a80ce512d1b24b71593719c96e47d8f1b4bf8322b99897ef3d1abd83a76a8`
+  - `AEROSPIKE_VERSION=3.10.1.1`
+  - `AEROSPIKE_SHA256=c8de9daad369948f15334e237374eb68e1152c1890e3ee84a77aee349e315704`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -52,11 +52,11 @@ $ apt-get source -qq --print-uris adduser=3.113+nmu3ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.113+nmu3ubuntu4.tar.gz' adduser_3.113+nmu3ubuntu4.tar.gz 367980 SHA256:6e4d44c8388b9ba85fc175fa4a48ed43bf6500913c2c631fda0e4419ae63c65a
 ```
 
-### `dpkg` source package: `aerospike-server-community=3.10.1-1`
+### `dpkg` source package: `aerospike-server-community=3.10.1.1-1`
 
 Binary Packages:
 
-- `aerospike-server-community=3.10.1-1`
+- `aerospike-server-community=3.10.1.1-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -113,13 +113,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.2.15
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.15.dsc' apt_1.2.15.dsc 2363 SHA256:d524c39eb042c56bbc98f7266779a7e8a2c147ec07698fcdc66522c15b434814
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.15.tar.xz' apt_1.2.15.tar.xz 2053780 SHA256:d2bd7654f9847c3cfba95e7fa5280bb30ad5af8f2a582161ee42fff052b1b07f
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
