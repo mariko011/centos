@@ -147,13 +147,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.2.15
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.15.dsc' apt_1.2.15.dsc 2363 SHA256:d524c39eb042c56bbc98f7266779a7e8a2c147ec07698fcdc66522c15b434814
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.15.tar.xz' apt_1.2.15.tar.xz 2053780 SHA256:d2bd7654f9847c3cfba95e7fa5280bb30ad5af8f2a582161ee42fff052b1b07f
-```
 
 ### `dpkg` source package: `assimp=3.2~dfsg-3`
 
