@@ -1,14 +1,14 @@
-# `docker:1.12.3-git`
+# `docker:1.12.4-git`
 
 ## Docker Metadata
 
-- Image ID: `sha256:451eda98442419207512a4d9fd716a434a737c14bb721176ed0762368d5d55d6`
-- Created: `2016-12-06T20:32:57.241492898Z`
+- Image ID: `sha256:5336253a17a046d33c4de095b346d1166e67be0289bfedf96526ea390fe6574f`
+- Created: `2016-12-14T02:39:11.561438179Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_BUCKET=get.docker.com`
-  - `DOCKER_VERSION=1.12.3`
-  - `DOCKER_SHA256=626601deb41d9706ac98da23f673af6c0d4631c4d194a677a9a1a07d7219fa0f`
+  - `DOCKER_VERSION=1.12.4`
+  - `DOCKER_SHA256=f7cb7bb55d6ceba3ba3d24d62027e84799763b4c41b0bda5d8d5b9ba31ed0f2f`

@@ -1,14 +1,14 @@
-# `docker:1.12.3-dind`
+# `docker:1.12.4-dind`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2e7a20a42c0571a308c2dfd172d1bec514bc4b4b278780efbbadaa2422f5d4ab`
-- Created: `2016-12-06T20:32:54.215929472Z`
+- Image ID: `sha256:4bac32ef4b32100e962a25584262f10f8017b07976c9b680c85139ea1fe7fbbf`
+- Created: `2016-12-14T02:39:08.760015279Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_BUCKET=get.docker.com`
-  - `DOCKER_VERSION=1.12.3`
-  - `DOCKER_SHA256=626601deb41d9706ac98da23f673af6c0d4631c4d194a677a9a1a07d7219fa0f`
+  - `DOCKER_VERSION=1.12.4`
+  - `DOCKER_SHA256=f7cb7bb55d6ceba3ba3d24d62027e84799763b4c41b0bda5d8d5b9ba31ed0f2f`
   - `DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034`
