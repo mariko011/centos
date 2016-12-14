@@ -1,9 +1,9 @@
-# `mysql:5.7.16`
+# `mysql:5.7.17`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d9124e6c552f0e739ef130add0e215af6abfc6efc0b43cc26e5a16b15df6c1ff`
-- Created: `2016-11-23T21:07:51.023971212Z`
+- Image ID: `sha256:594dc21de8de7cdae01ecbd4d8a4dedead73756984896a00fce13cbc8c24f38e`
+- Created: `2016-12-14T02:48:27.152600204Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["mysqld"]`
@@ -11,7 +11,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.7`
   - `MYSQL_MAJOR=5.7`
-  - `MYSQL_VERSION=5.7.16-1debian8`
+  - `MYSQL_VERSION=5.7.17-1debian8`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -64,12 +64,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/adduser/3.113+nmu3/
 - https://sources.debian.net/src/adduser/3.113+nmu3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `apt=1.0.9.8.3`
+### `dpkg` source package: `apt=1.0.9.8.4`
 
 Binary Packages:
 
-- `apt=1.0.9.8.3`
-- `libapt-pkg4.12:amd64=1.0.9.8.3`
+- `apt=1.0.9.8.4`
+- `libapt-pkg4.12:amd64=1.0.9.8.4`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg4.12/copyright`)
 
@@ -79,15 +79,15 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.0.9.8.3
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.0.9.8.3.dsc' apt_1.0.9.8.3.dsc 2343 SHA256:4c5f22ffe244e7e4471b1db137117efb13f43e29086c9b58eb5b1884bce55075
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.0.9.8.3.tar.xz' apt_1.0.9.8.3.tar.xz 1794824 SHA256:e78f6736b69621e2c55d0c81680a41a511a3f0c097f9ea8515611e0fcb651950
+$ apt-get source -qq --print-uris apt=1.0.9.8.4
+'http://security.debian.org/pool/updates/main/a/apt/apt_1.0.9.8.4.dsc' apt_1.0.9.8.4.dsc 2530 SHA256:51fe8ce9490de264e55220e4c5f61a8bbb6d2f824c49c90914b2248db3e28bd3
+'http://security.debian.org/pool/updates/main/a/apt/apt_1.0.9.8.4.tar.xz' apt_1.0.9.8.4.tar.xz 1793116 SHA256:ac2a267b9f98685977d421e41b4518eceb66e9b85cd0d4a9f9a03db729190f7a
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/apt/1.0.9.8.3/
-- https://sources.debian.net/src/apt/1.0.9.8.3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/apt/1.0.9.8.4/
+- https://sources.debian.net/src/apt/1.0.9.8.4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -1267,22 +1267,28 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/mecab/0.996-1.1/
 - https://sources.debian.net/src/mecab/0.996-1.1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `mysql-community=5.7.16-1debian8`
+### `dpkg` source package: `mysql-community=5.7.17-1debian8`
 
 Binary Packages:
 
-- `mysql-client=5.7.16-1debian8`
-- `mysql-common=5.7.16-1debian8`
-- `mysql-community-client=5.7.16-1debian8`
-- `mysql-community-server=5.7.16-1debian8`
-- `mysql-server=5.7.16-1debian8`
+- `mysql-client=5.7.17-1debian8`
+- `mysql-common=5.7.17-1debian8`
+- `mysql-community-client=5.7.17-1debian8`
+- `mysql-community-server=5.7.17-1debian8`
+- `mysql-server=5.7.17-1debian8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-community=5.7.17-1debian8
+'http://repo.mysql.com/apt/debian/pool/mysql-5.7/m/mysql-community/mysql-community_5.7.17-1debian8.dsc' mysql-community_5.7.17-1debian8.dsc 1820 SHA256:2dc19f2b701922ad40eecdcb7c6a3a93bc1eeac4a7bf37ec712e9e72fb1e6c7a
+'http://repo.mysql.com/apt/debian/pool/mysql-5.7/m/mysql-community/mysql-community_5.7.17.orig.tar.gz' mysql-community_5.7.17.orig.tar.gz 51433090 SHA256:cebf23e858aee11e354c57d30de7a079754bdc2ef85eb684782458332a4b9651
+'http://repo.mysql.com/apt/debian/pool/mysql-5.7/m/mysql-community/mysql-community_5.7.17-1debian8.debian.tar.xz' mysql-community_5.7.17-1debian8.debian.tar.xz 83499936 SHA256:262052350810dac75ec1678c0cfc5ffc2148bff2c9aa1012bb75498cebf08dc1
+```
 
 ### `dpkg` source package: `ncurses=5.9+20140913-1`
 
@@ -1766,18 +1772,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tar/1.27.1-2+deb8u1/
 - https://sources.debian.net/src/tar/1.27.1-2+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tzdata=2016h-0+deb8u1`
+### `dpkg` source package: `tzdata=2016j-0+deb8u1`
 
 Binary Packages:
 
-- `tzdata=2016h-0+deb8u1`
+- `tzdata=2016j-0+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2016j-0+deb8u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j-0+deb8u1.dsc' tzdata_2016j-0+deb8u1.dsc 1985 SHA256:4330b2616f1d1a79d753af2de9f96f83d782ffdf3b8203f5a1169ca5ad1d8a94
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j.orig.tar.gz' tzdata_2016j.orig.tar.gz 321185 SHA256:f5ee4e0f115f6c2faee1c4b16193a97338cbd1b503f2cea6c5a768c82ff39dc8
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j-0+deb8u1.debian.tar.xz' tzdata_2016j-0+deb8u1.debian.tar.xz 102304 SHA256:0089268bc9e247e3d48e046770b873c1c90f7a33259c5bda0f0bef51345f8067
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/tzdata/2016j-0+deb8u1/
+- https://sources.debian.net/src/tzdata/2016j-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 
