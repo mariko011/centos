@@ -101,13 +101,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/apt-util
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.0.1ubuntu2.15
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.15.dsc' apt_1.0.1ubuntu2.15.dsc 2461 SHA256:d6ed6382957e9993b8466d20fc2b231cf9328c073ea670a7e5b859b9315fde62
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.15.tar.xz' apt_1.0.1ubuntu2.15.tar.xz 1781580 SHA256:d034fc6a361feac817223c9ed75f3d5fb87a8019666d81100fb524bba7d97c6d
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-1ubuntu1`
 
@@ -1046,13 +1041,8 @@ Licenses: (parsed from: `/usr/share/doc/initramfs-tools/copyright`, `/usr/share/
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris initramfs-tools=0.103ubuntu4.4
-'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.4.dsc' initramfs-tools_0.103ubuntu4.4.dsc 1858 SHA256:40bda019b9181c408504e8b13ddb46682a449746ceb84c3cf29bf408deef9715
-'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.4.tar.xz' initramfs-tools_0.103ubuntu4.4.tar.xz 94424 SHA256:0d098dcb2e38577cc78a44e1db6ce74a57321ec3a8cec7d354129e5db4ec6a66
-```
 
 ### `dpkg` source package: `insserv=1.14.0-5ubuntu2`
 
@@ -2960,14 +2950,8 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.20.1-5.1ubuntu20.7
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.20.1-5.1ubuntu20.7.dsc' util-linux_2.20.1-5.1ubuntu20.7.dsc 3257 SHA256:ba775a237c75909431f5c2c109496f25873f5c876e304aaf38b4881580b3cfdc
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.20.1.orig.tar.gz' util-linux_2.20.1.orig.tar.gz 6174190 SHA256:951055ee9b084c337427f34997da5b7dc321daf1b6433c78ef763ed906711fbb
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.20.1-5.1ubuntu20.7.diff.gz' util-linux_2.20.1-5.1ubuntu20.7.diff.gz 117861 SHA256:207c05ca2a1ea856ef2604c2d2c0bc9514e94af080ab507d0ca769a634cb4f19
-```
 
 ### `dpkg` source package: `vim=2:7.4.052-1ubuntu3`
 

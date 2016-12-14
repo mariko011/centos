@@ -984,19 +984,8 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 - `MIT-Old-Style-with-legal-disclaimer-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris file=1:5.29-1
-'http://deb.debian.org/debian/pool/main/f/file/file_5.29-1.dsc' file_5.29-1.dsc 2124 SHA256:a55d239a57c34b9504825f646210429db992868af2ecefe2b6869a258848ac89
-'http://deb.debian.org/debian/pool/main/f/file/file_5.29.orig.tar.xz' file_5.29.orig.tar.xz 574196 SHA256:4ab1cd8d4fe9017f8dfcfd6ba81f495a722b75e22bd1a59e6bfd15ac211a2820
-'http://deb.debian.org/debian/pool/main/f/file/file_5.29-1.debian.tar.xz' file_5.29-1.debian.tar.xz 29272 SHA256:1e8c40ff5ec139e58cffbfaac0c4a9dd70b45909b364ecd03cc5e58ba4fac3f4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/file/1:5.29-1/
-- https://sources.debian.net/src/file/1:5.29-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20160703-2`
 
@@ -1845,19 +1834,8 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.8.0-1
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.8.0-1.dsc' iproute2_4.8.0-1.dsc 2365 SHA256:dace7fdffee71c18842a1d4d3ffe281675f770767c5186a557e7e94ed1930126
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.8.0.orig.tar.xz' iproute2_4.8.0.orig.tar.xz 594636 SHA256:a30959c8421bc8ef42719bed41d14e1d7cfdbad80d7d70c5c42ad31f2c2cb389
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.8.0-1.debian.tar.xz' iproute2_4.8.0-1.debian.tar.xz 26680 SHA256:c63b890daeab42e1a91fcf863ee353b738c26c3ce659a11e09fa9c1b96cee66e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/iproute2/4.8.0-1/
-- https://sources.debian.net/src/iproute2/4.8.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `isl=0.17.1-1`
 
