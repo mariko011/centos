@@ -3905,14 +3905,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=231-9ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-9ubuntu1.dsc' systemd_231-9ubuntu1.dsc 4550 SHA256:41eb445545d3a11dca7bc790dcbd18e799045962ad27de8f844f0a57b4622a7c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231.orig.tar.gz' systemd_231.orig.tar.gz 4381464 SHA256:899733ad6c157cedbb89aec4efe3bc824dcfd65a1d6f6bebc7b043f7924e39b4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-9ubuntu1.debian.tar.xz' systemd_231-9ubuntu1.debian.tar.xz 152384 SHA256:c58982e666e7a39aa1b605c590e53bc1ad3b84694f4a39f9ffc37d5ae5105e13
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`
 

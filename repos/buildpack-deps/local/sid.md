@@ -434,19 +434,8 @@ Licenses: (parsed from: `/usr/share/doc/libcairo-gobject2/copyright`, `/usr/shar
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cairo=1.14.6-1.1
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.14.6-1.1.dsc' cairo_1.14.6-1.1.dsc 3061 SHA256:644bf639e93ad4a4c3586149565c70f840767aa16e51be8ba8722f85e157a16a
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.14.6.orig.tar.xz' cairo_1.14.6.orig.tar.xz 36040596 SHA256:613cb38447b76a93ff7235e17acd55a78b52ea84a9df128c3f2257f8eaa7b252
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.14.6-1.1.debian.tar.xz' cairo_1.14.6-1.1.debian.tar.xz 28860 SHA256:ed4a884c2a0929dd57aa19a3961463c217221cc0370bc6b5a36a4fc9d7b81731
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cairo/1.14.6-1.1/
-- https://sources.debian.net/src/cairo/1.14.6-1.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cdebconf=0.218`
 
