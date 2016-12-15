@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4833ff3e317d8d64a01e82ea7e2e00f79028b101e8edb84de4c918f11bb20510`
-- Created: `2016-11-30T18:46:26.136976254Z`
+- Image ID: `sha256:39a7549c923acb140086cbfabc6fcd71084037b9c13d1033dcda60030c2d7ad9`
+- Created: `2016-12-14T14:44:45.39899817Z`
 - Arch: `linux`/`amd64`
 - Command: `["/opt/ibm/docker/docker-server","run","defaultServer"]`
 - Environment:
   - `PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_VERSION=1.8.0_sr3fp21`
   - `JAVA_HOME=/opt/ibm/java/jre`
-  - `LIBERTY_VERSION=16.0.0_03`
+  - `LIBERTY_VERSION=16.0.0_04`
   - `LOG_DIR=/logs`
   - `WLP_OUTPUT_DIR=/opt/ibm/wlp/output`
 
@@ -1181,14 +1181,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=229-4ubuntu12
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu12.dsc' systemd_229-4ubuntu12.dsc 4409 SHA256:67308ab67210a8f74f3dc9921cfe4a8fff02485e18c71665d675fe2b2b659198
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu12.debian.tar.xz' systemd_229-4ubuntu12.debian.tar.xz 234780 SHA256:57a3e2a65e403884398c38976a1fed19c2ff23c18ef404882ee1fdb2d1b59fef
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
