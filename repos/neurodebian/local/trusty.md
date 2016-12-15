@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c9a87a01ec67b8f6a2f8e149ceb7b3b72084e9b694a4b2db18d5a3ba638fa11d`
-- Created: `2016-10-13T22:01:06.937404366Z`
+- Image ID: `sha256:1e4e3e1237d4507944468feb283d92b01c4baecf27ff2f76ceafb508510970cd`
+- Created: `2016-12-14T19:49:20.904108937Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -49,14 +49,14 @@ $ apt-get source -qq --print-uris adduser=3.113+nmu3ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.113+nmu3ubuntu3.tar.gz' adduser_3.113+nmu3ubuntu3.tar.gz 358527 SHA256:6126a4e8db7aa1c05780405ce5fb0225a4d5909bbb2a7bf75148ec8d4c4e239c
 ```
 
-### `dpkg` source package: `apt=1.0.1ubuntu2.14`
+### `dpkg` source package: `apt=1.0.1ubuntu2.15`
 
 Binary Packages:
 
-- `apt=1.0.1ubuntu2.14`
-- `apt-utils=1.0.1ubuntu2.14`
-- `libapt-inst1.5:amd64=1.0.1ubuntu2.14`
-- `libapt-pkg4.12:amd64=1.0.1ubuntu2.14`
+- `apt=1.0.1ubuntu2.15`
+- `apt-utils=1.0.1ubuntu2.15`
+- `libapt-inst1.5:amd64=1.0.1ubuntu2.15`
+- `libapt-pkg4.12:amd64=1.0.1ubuntu2.15`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/apt-utils/copyright`, `/usr/share/doc/libapt-inst1.5/copyright`, `/usr/share/doc/libapt-pkg4.12/copyright`)
 
@@ -359,18 +359,24 @@ $ apt-get source -qq --print-uris db5.3=5.3.28-3ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-3ubuntu3.debian.tar.gz' db5.3_5.3.28-3ubuntu3.debian.tar.gz 31731 SHA256:5d95c5c9d64931463cbf5d525bd9e874ab985304a45e9b585dfe8218e2ead209
 ```
 
-### `dpkg` source package: `dbus=1.6.18-0ubuntu4.3`
+### `dpkg` source package: `dbus=1.6.18-0ubuntu4.4`
 
 Binary Packages:
 
-- `libdbus-1-3:amd64=1.6.18-0ubuntu4.3`
+- `libdbus-1-3:amd64=1.6.18-0ubuntu4.4`
 
 Licenses: (parsed from: `/usr/share/doc/libdbus-1-3/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris dbus=1.6.18-0ubuntu4.4
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18-0ubuntu4.4.dsc' dbus_1.6.18-0ubuntu4.4.dsc 2671 SHA256:8984675882f3b45c0fbf7a838392782509495907c6833a12aabfdaa19ce8bc7b
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18.orig.tar.gz' dbus_1.6.18.orig.tar.gz 1916553 SHA256:7085a0895a9eb11a952394cdbea6d8b4358e17cb991fed0e8fb85e2b9e686dcd
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18-0ubuntu4.4.debian.tar.gz' dbus_1.6.18-0ubuntu4.4.debian.tar.gz 82808 SHA256:eed67c2dd9ffd5c7a8f97e7365a38a840fc37747d1a5335829c7a595ca4710ad
+```
 
 ### `dpkg` source package: `debconf=1.5.51ubuntu2`
 
@@ -824,13 +830,8 @@ Licenses: (parsed from: `/usr/share/doc/initramfs-tools/copyright`, `/usr/share/
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris initramfs-tools=0.103ubuntu4.4
-'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.4.dsc' initramfs-tools_0.103ubuntu4.4.dsc 1858 SHA256:40bda019b9181c408504e8b13ddb46682a449746ceb84c3cf29bf408deef9715
-'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.4.tar.xz' initramfs-tools_0.103ubuntu4.4.tar.xz 94424 SHA256:0d098dcb2e38577cc78a44e1db6ce74a57321ec3a8cec7d354129e5db4ec6a66
-```
 
 ### `dpkg` source package: `insserv=1.14.0-5ubuntu2`
 
@@ -945,19 +946,25 @@ $ apt-get source -qq --print-uris kbd=1.15.5-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/kbd/kbd_1.15.5-1ubuntu1.debian.tar.gz' kbd_1.15.5-1ubuntu1.debian.tar.gz 38337 SHA256:93895c5fc0279b8253a4f8c62e84997673598a25e3680bd95cf86f2ac03ebbda
 ```
 
-### `dpkg` source package: `klibc=2.0.3-0ubuntu1.14.04.1`
+### `dpkg` source package: `klibc=2.0.3-0ubuntu1.14.04.2`
 
 Binary Packages:
 
-- `klibc-utils=2.0.3-0ubuntu1.14.04.1`
-- `libklibc=2.0.3-0ubuntu1.14.04.1`
+- `klibc-utils=2.0.3-0ubuntu1.14.04.2`
+- `libklibc=2.0.3-0ubuntu1.14.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/klibc-utils/copyright`, `/usr/share/doc/libklibc/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris klibc=2.0.3-0ubuntu1.14.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/k/klibc/klibc_2.0.3-0ubuntu1.14.04.2.dsc' klibc_2.0.3-0ubuntu1.14.04.2.dsc 2059 SHA256:f7cb0ee59aaf2899815dbe8aeab3a91f9a245d311440a82fa6c71dc1359eb667
+'http://archive.ubuntu.com/ubuntu/pool/main/k/klibc/klibc_2.0.3.orig.tar.bz2' klibc_2.0.3.orig.tar.bz2 517788 SHA256:1f9a49c62faf3e166a8deee6c36ad0f4527bb4aa2050123853a4957802235dca
+'http://archive.ubuntu.com/ubuntu/pool/main/k/klibc/klibc_2.0.3-0ubuntu1.14.04.2.debian.tar.xz' klibc_2.0.3-0ubuntu1.14.04.2.debian.tar.xz 20572 SHA256:44daef54221dc98fe668e547999eca4359b4c2b5a6d15583e8a7024058a2b7e1
+```
 
 ### `dpkg` source package: `kmod=15-0ubuntu6`
 
@@ -2026,14 +2033,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.4.0-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.4.0-0ubuntu2.tar.gz' python3-defaults_3.4.0-0ubuntu2.tar.gz 127619 SHA256:4a1a9019e69ba130213268cc83d8bef9216cda8596bd71546b2369a389650730
 ```
 
-### `dpkg` source package: `python3.4=3.4.3-1ubuntu1~14.04.4`
+### `dpkg` source package: `python3.4=3.4.3-1ubuntu1~14.04.5`
 
 Binary Packages:
 
-- `libpython3.4-minimal:amd64=3.4.3-1ubuntu1~14.04.4`
-- `libpython3.4-stdlib:amd64=3.4.3-1ubuntu1~14.04.4`
-- `python3.4=3.4.3-1ubuntu1~14.04.4`
-- `python3.4-minimal=3.4.3-1ubuntu1~14.04.4`
+- `libpython3.4-minimal:amd64=3.4.3-1ubuntu1~14.04.5`
+- `libpython3.4-stdlib:amd64=3.4.3-1ubuntu1~14.04.5`
+- `python3.4=3.4.3-1ubuntu1~14.04.5`
+- `python3.4-minimal=3.4.3-1ubuntu1~14.04.5`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.4-minimal/copyright`, `/usr/share/doc/libpython3.4-stdlib/copyright`, `/usr/share/doc/python3.4/copyright`, `/usr/share/doc/python3.4-minimal/copyright`)
 
@@ -2055,8 +2062,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.4-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.4=3.4.3-1ubuntu1~14.04.5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3-1ubuntu1~14.04.5.dsc' python3.4_3.4.3-1ubuntu1~14.04.5.dsc 3229 SHA256:3a7cec814f5eefc88160d094fdc1e09a636c032c4b7f5f0208f21c305b5584c4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3.orig.tar.xz' python3.4_3.4.3.orig.tar.xz 12690456 SHA256:9151f6d2975471e6b6189aa2de836b48ba0361b145dd8fc143e986efbbed9f3a
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.4/python3.4_3.4.3-1ubuntu1~14.04.5.debian.tar.gz' python3.4_3.4.3-1ubuntu1~14.04.5.debian.tar.gz 261768 SHA256:362683d41b7174234dd815eb872c25e971f96f567d164d33a5405f5a41d4b1c9
+```
 
 ### `dpkg` source package: `readline6=6.3-4ubuntu2`
 
@@ -2220,18 +2233,24 @@ $ apt-get source -qq --print-uris sqlite3=3.8.2-1ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.8.2-1ubuntu2.1.debian.tar.gz' sqlite3_3.8.2-1ubuntu2.1.debian.tar.gz 24599 SHA256:80bc6b9e2c4e5b064507b9a03df4f3f786c7246831ad5d5309cdc178ceacfb26
 ```
 
-### `dpkg` source package: `sudo=1.8.9p5-1ubuntu1.2`
+### `dpkg` source package: `sudo=1.8.9p5-1ubuntu1.3`
 
 Binary Packages:
 
-- `sudo=1.8.9p5-1ubuntu1.2`
+- `sudo=1.8.9p5-1ubuntu1.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris sudo=1.8.9p5-1ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.3.dsc' sudo_1.8.9p5-1ubuntu1.3.dsc 2032 SHA256:629845f03bef3c3c2e886561e47b0ca7bbf366a5301f29170df10ee82a4a2855
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5.orig.tar.gz' sudo_1.8.9p5.orig.tar.gz 2179066 SHA256:bc9d5c96de5f8b4d2b014f87a37870aef60d2891c869202454069150a21a5c21
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.3.debian.tar.xz' sudo_1.8.9p5-1ubuntu1.3.debian.tar.xz 33260 SHA256:bae36c26cf8a5f171035b17087f06f23bd44b510273e9c7f1f54dfb147d67850
+```
 
 ### `dpkg` source package: `systemd=204-5ubuntu20.19`
 
@@ -2273,11 +2292,11 @@ $ apt-get source -qq --print-uris sysvinit=2.88dsf-41ubuntu6.3
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_2.88dsf-41ubuntu6.3.debian.tar.xz' sysvinit_2.88dsf-41ubuntu6.3.debian.tar.xz 164756 SHA256:38b4edb9dcc6e938f9dd524693607572f149e96c036f449bfa7d42557e3b2dd7
 ```
 
-### `dpkg` source package: `tar=1.27.1-1`
+### `dpkg` source package: `tar=1.27.1-1ubuntu0.1`
 
 Binary Packages:
 
-- `tar=1.27.1-1`
+- `tar=1.27.1-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
@@ -2287,17 +2306,17 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tar=1.27.1-1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.27.1-1.dsc' tar_1.27.1-1.dsc 1859 SHA256:e2e300d851ce3f7bd806eefeff25348a686e545ec5318ce2992bca08e5a0090b
+$ apt-get source -qq --print-uris tar=1.27.1-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.27.1-1ubuntu0.1.dsc' tar_1.27.1-1ubuntu0.1.dsc 1982 SHA256:e63d676dec10dbe8abbbb34520e157ea23a2efab864fde004ad3d79a794d0c43
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.27.1.orig.tar.xz' tar_1.27.1.orig.tar.xz 1704252 SHA256:58169c5a03c04be20d3fb91010b01e822c6a58060a96e7cf2f9c1944de0151ab
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.27.1-1.debian.tar.xz' tar_1.27.1-1.debian.tar.xz 19540 SHA256:fea78ca36ff59f3fe84c060adf039283b1b8238ef9ce3428e85fe04c4812815c
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.27.1-1ubuntu0.1.debian.tar.gz' tar_1.27.1-1ubuntu0.1.debian.tar.gz 22769 SHA256:e22697f2b43f792a61683d9af9ed78ea7dd2d3927a94573ab90d9ada21df25e2
 ```
 
-### `dpkg` source package: `tzdata=2016f-0ubuntu0.14.04`
+### `dpkg` source package: `tzdata=2016h-0ubuntu0.14.04`
 
 Binary Packages:
 
-- `tzdata=2016f-0ubuntu0.14.04`
+- `tzdata=2016h-0ubuntu0.14.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.

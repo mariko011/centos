@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:53336aea67008ff7aec29f424e3ac718a75c2511173606ade919efe66c0feffc`
-- Created: `2016-09-26T21:54:29.871360819Z`
+- Image ID: `sha256:4d6010980418a567dc2122ae4c4632e1742fb2f0a1f1c44d2d85535267ae2f62`
+- Created: `2016-12-14T19:49:08.920239649Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -259,18 +259,24 @@ $ apt-get source -qq --print-uris db=5.1.25-11build1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/db/db_5.1.25-11build1.debian.tar.gz' db_5.1.25-11build1.debian.tar.gz 28673 SHA256:24b18acd12cafb07d8bc47ff286b818157d4fca7dab961db4abc8e4c412f61a3
 ```
 
-### `dpkg` source package: `dbus=1.4.18-1ubuntu1.7`
+### `dpkg` source package: `dbus=1.4.18-1ubuntu1.8`
 
 Binary Packages:
 
-- `libdbus-1-3:amd64=1.4.18-1ubuntu1.7`
+- `libdbus-1-3:amd64=1.4.18-1ubuntu1.8`
 
 Licenses: (parsed from: `/usr/share/doc/libdbus-1-3/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris dbus=1.4.18-1ubuntu1.8
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.4.18-1ubuntu1.8.dsc' dbus_1.4.18-1ubuntu1.8.dsc 2614 SHA256:eed01acdfbe93b77f11afe171c18253935d9de27d615e76957573666801524a9
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.4.18.orig.tar.gz' dbus_1.4.18.orig.tar.gz 1893155 SHA256:b5e0c3bd37fa0ca5e86e8d17c375d754de6cd5c1d46d5f2158a36ddd51de18cf
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.4.18-1ubuntu1.8.debian.tar.gz' dbus_1.4.18-1ubuntu1.8.debian.tar.gz 66219 SHA256:11ecfd9d01fc4b5417a984b9ec8f1e35ea501a39e50c9661c9cc42ba66f54741
+```
 
 ### `dpkg` source package: `debconf=1.5.42ubuntu1`
 
@@ -1077,11 +1083,11 @@ $ apt-get source -qq --print-uris python-defaults=2.7.3-0ubuntu2.2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.3-0ubuntu2.2.tar.gz' python-defaults_2.7.3-0ubuntu2.2.tar.gz 163342 SHA256:3a83c3fc9ea6441eca688a141aa32dd2ffb3c5b4d67d05f9026a8e1d88b473a9
 ```
 
-### `dpkg` source package: `python2.7=2.7.3-0ubuntu3.8`
+### `dpkg` source package: `python2.7=2.7.3-0ubuntu3.9`
 
 Binary Packages:
 
-- `python2.7-minimal=2.7.3-0ubuntu3.8`
+- `python2.7-minimal=2.7.3-0ubuntu3.9`
 
 Licenses: (parsed from: `/usr/share/doc/python2.7-minimal/copyright`)
 
@@ -1094,8 +1100,14 @@ Licenses: (parsed from: `/usr/share/doc/python2.7-minimal/copyright`)
 - `This software is provided as-is, without express`
 - `implied`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris python2.7=2.7.3-0ubuntu3.9
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.3-0ubuntu3.9.dsc' python2.7_2.7.3-0ubuntu3.9.dsc 2791 SHA256:5998a90d7e4643ae51f832b8616eece82d053d5e41c2617228e28d230eeb061f
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.3.orig.tar.gz' python2.7_2.7.3.orig.tar.gz 14216076 SHA256:68bddd390a22ce9a9946ad711fc0042c831889be1f8ff79c0945f7a973e05bda
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python2.7/python2.7_2.7.3-0ubuntu3.9.diff.gz' python2.7_2.7.3-0ubuntu3.9.diff.gz 279332 SHA256:5c2ab358ecebb2da3df3d6e3ad256898a818eea4b3d3f4443e0848e5231aebd9
+```
 
 ### `dpkg` source package: `readline6=6.2-8`
 
@@ -1214,11 +1226,11 @@ $ apt-get source -qq --print-uris sysvinit=2.88dsf-13.10ubuntu11.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_2.88dsf-13.10ubuntu11.1.diff.gz' sysvinit_2.88dsf-13.10ubuntu11.1.diff.gz 170842 SHA256:eeb3559cca69f6707a140cc8f13510af6e23eda8da638195d1dc2e93eda51c50
 ```
 
-### `dpkg` source package: `tar=1.26-4ubuntu1`
+### `dpkg` source package: `tar=1.26-4ubuntu1.1`
 
 Binary Packages:
 
-- `tar=1.26-4ubuntu1`
+- `tar=1.26-4ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
@@ -1228,17 +1240,17 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tar=1.26-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.26-4ubuntu1.dsc' tar_1.26-4ubuntu1.dsc 1936 SHA256:4c3d794bef5cbf71b8100a2ef6d3b8ee94a951fb472154e069a7d6d8358d41a2
+$ apt-get source -qq --print-uris tar=1.26-4ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.26-4ubuntu1.1.dsc' tar_1.26-4ubuntu1.1.dsc 1871 SHA256:3996d351749fbac70c4a504f8b76545c2eae2568c17eb871181c0530ce639a8c
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.26.orig.tar.gz' tar_1.26.orig.tar.gz 3381800 SHA256:0f77a22ed6f07be172cb7eb825c73fbf0d58127fc38d8c60da423ac8590be639
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.26-4ubuntu1.debian.tar.gz' tar_1.26-4ubuntu1.debian.tar.gz 33205 SHA256:9b7d9b3b2b178782d60b1bda8eb0eae77cf6432178a6d970e481cdc9e71eb059
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.26-4ubuntu1.1.debian.tar.gz' tar_1.26-4ubuntu1.1.debian.tar.gz 34030 SHA256:0237bbf4eccee92126e426d7650c2cdc699fe1110499a4e6a31140c586ec1825
 ```
 
-### `dpkg` source package: `tzdata=2016f-0ubuntu0.12.04`
+### `dpkg` source package: `tzdata=2016h-0ubuntu0.12.04`
 
 Binary Packages:
 
-- `tzdata=2016f-0ubuntu0.12.04`
+- `tzdata=2016h-0ubuntu0.12.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
