@@ -1,9 +1,9 @@
-# `tomcat:9.0.0.M13-jre8`
+# `tomcat:9.0.0.M15-jre8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:345a325b9d4ff4e3ceb5239f706c32f6058111bf101bfab4ea2386aaa9a58afa`
-- Created: `2016-11-17T23:46:56.799921806Z`
+- Image ID: `sha256:7ac6247626560f01660a5cf70107747f5e880d7f0e35542567a0bed355bb4106`
+- Created: `2016-12-14T22:26:42.007917689Z`
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
 - Environment:
@@ -16,12 +16,12 @@
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
-  - `OPENSSL_VERSION=1.0.2j-1`
+  - `OPENSSL_VERSION=1.1.0c-2`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.0.M13`
-  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.0.M13/bin/apache-tomcat-9.0.0.M13.tar.gz`
-  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-9/v9.0.0.M13/bin/apache-tomcat-9.0.0.M13.tar.gz.asc`
+  - `TOMCAT_VERSION=9.0.0.M15`
+  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-9/v9.0.0.M15/bin/apache-tomcat-9.0.0.M15.tar.gz`
+  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-9/v9.0.0.M15/bin/apache-tomcat-9.0.0.M15.tar.gz.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -98,12 +98,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/apr/1.5.1-3/
 - https://sources.debian.net/src/apr/1.5.1-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `apt=1.0.9.8.3`
+### `dpkg` source package: `apt=1.0.9.8.4`
 
 Binary Packages:
 
-- `apt=1.0.9.8.3`
-- `libapt-pkg4.12:amd64=1.0.9.8.3`
+- `apt=1.0.9.8.4`
+- `libapt-pkg4.12:amd64=1.0.9.8.4`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg4.12/copyright`)
 
@@ -113,15 +113,15 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.0.9.8.3
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.0.9.8.3.dsc' apt_1.0.9.8.3.dsc 2343 SHA256:4c5f22ffe244e7e4471b1db137117efb13f43e29086c9b58eb5b1884bce55075
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.0.9.8.3.tar.xz' apt_1.0.9.8.3.tar.xz 1794824 SHA256:e78f6736b69621e2c55d0c81680a41a511a3f0c097f9ea8515611e0fcb651950
+$ apt-get source -qq --print-uris apt=1.0.9.8.4
+'http://security.debian.org/pool/updates/main/a/apt/apt_1.0.9.8.4.dsc' apt_1.0.9.8.4.dsc 2530 SHA256:51fe8ce9490de264e55220e4c5f61a8bbb6d2f824c49c90914b2248db3e28bd3
+'http://security.debian.org/pool/updates/main/a/apt/apt_1.0.9.8.4.tar.xz' apt_1.0.9.8.4.tar.xz 1793116 SHA256:ac2a267b9f98685977d421e41b4518eceb66e9b85cd0d4a9f9a03db729190f7a
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/apt/1.0.9.8.3/
-- https://sources.debian.net/src/apt/1.0.9.8.3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/apt/1.0.9.8.4/
+- https://sources.debian.net/src/apt/1.0.9.8.4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -1107,11 +1107,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/hostname/3.15/
 - https://sources.debian.net/src/hostname/3.15/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `icu=52.1-8+deb8u3`
+### `dpkg` source package: `icu=52.1-8+deb8u4`
 
 Binary Packages:
 
-- `libicu52:amd64=52.1-8+deb8u3`
+- `libicu52:amd64=52.1-8+deb8u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1120,16 +1120,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris icu=52.1-8+deb8u3
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1-8+deb8u3.dsc' icu_52.1-8+deb8u3.dsc 2001 SHA256:1b29e00096d1b02018416f5bfc231f46ddcfcf8f2cc15256c553e282c5ea404f
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1-8+deb8u3.debian.tar.xz' icu_52.1-8+deb8u3.debian.tar.xz 28472 SHA256:aa47fef8f659e6e1ed2a69e1615f5f9ca0b20ed8276fc96c91c0a061f5d12626
+$ apt-get source -qq --print-uris icu=52.1-8+deb8u4
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1-8+deb8u4.dsc' icu_52.1-8+deb8u4.dsc 2015 SHA256:cabdf27f9976550a61f1b5c84d7353f19f3338b55b2b9002f0db593fccda86c7
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1-8+deb8u4.debian.tar.xz' icu_52.1-8+deb8u4.debian.tar.xz 35588 SHA256:cf298a04a576aaa8016d25ebe1387f6c923de1acea4411a27f9858bf1af72f5a
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/icu/52.1-8+deb8u3/
-- https://sources.debian.net/src/icu/52.1-8+deb8u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/icu/52.1-8+deb8u4/
+- https://sources.debian.net/src/icu/52.1-8+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9.2.39.3a460-3`
 
@@ -2326,12 +2326,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/
 - https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openssl=1.0.2j-1`
+### `dpkg` source package: `openssl=1.1.0c-2`
 
 Binary Packages:
 
-- `libssl1.0.2:amd64=1.0.2j-1`
-- `openssl=1.0.2j-1`
+- `libssl1.1:amd64=1.1.0c-2`
+- `openssl=1.1.0c-2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2340,17 +2340,17 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.0.2j-1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.2j-1.dsc' openssl_1.0.2j-1.dsc 2550 SHA256:9f68517da4791cd36e75f9a63fff4c703e9273c0c1af5cb9efd6bfb1d842dba6
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.2j.orig.tar.gz' openssl_1.0.2j.orig.tar.gz 5307912 SHA256:e7aff292be21c259c6af26469c7a9b3ba26e9abaaffd325e3dccc9785256c431
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.2j.orig.tar.gz.asc' openssl_1.0.2j.orig.tar.gz.asc 473 SHA256:b3551e17fef7df2eb901aa9c1cbc41e5cf7c9d5d10e546936145f24d1e52efdc
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.2j-1.debian.tar.xz' openssl_1.0.2j-1.debian.tar.xz 76404 SHA256:91203925576731b63f1eb0e4d575db09d43c237aa4905ac660655eafcd47ba4f
+$ apt-get source -qq --print-uris openssl=1.1.0c-2
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0c-2.dsc' openssl_1.1.0c-2.dsc 2552 SHA256:a6ca664b8443ad1ed01cc90a9c8d8af8a079efa471536ec971a1bf2f5b8253a0
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0c.orig.tar.gz' openssl_1.1.0c.orig.tar.gz 5179668 SHA256:fc436441a2e05752d31b4e46115eb89709a28aef96d4fe786abe92409b2fd6f5
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0c.orig.tar.gz.asc' openssl_1.1.0c.orig.tar.gz.asc 455 SHA256:818a933aa7a9a80f1959e0cfe170d34037b8ac6ccf57231b6540a341ff01ed37
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0c-2.debian.tar.xz' openssl_1.1.0c-2.debian.tar.xz 55392 SHA256:c47b1d2df11b061243bf91ecd95130840ebe7e6a84a6bf1b063d1953e9fddda5
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openssl/1.0.2j-1/
-- https://sources.debian.net/src/openssl/1.0.2j-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openssl/1.1.0c-2/
+- https://sources.debian.net/src/openssl/1.1.0c-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
@@ -2813,18 +2813,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tar/1.27.1-2+deb8u1/
 - https://sources.debian.net/src/tar/1.27.1-2+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tzdata=2016h-0+deb8u1`
+### `dpkg` source package: `tzdata=2016j-0+deb8u1`
 
 Binary Packages:
 
-- `tzdata=2016h-0+deb8u1`
+- `tzdata=2016j-0+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2016j-0+deb8u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j-0+deb8u1.dsc' tzdata_2016j-0+deb8u1.dsc 1985 SHA256:4330b2616f1d1a79d753af2de9f96f83d782ffdf3b8203f5a1169ca5ad1d8a94
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j.orig.tar.gz' tzdata_2016j.orig.tar.gz 321185 SHA256:f5ee4e0f115f6c2faee1c4b16193a97338cbd1b503f2cea6c5a768c82ff39dc8
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j-0+deb8u1.debian.tar.xz' tzdata_2016j-0+deb8u1.debian.tar.xz 102304 SHA256:0089268bc9e247e3d48e046770b873c1c90f7a33259c5bda0f0bef51345f8067
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/tzdata/2016j-0+deb8u1/
+- https://sources.debian.net/src/tzdata/2016j-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ucf=3.0030`
 
