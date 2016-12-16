@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7ca838c0db1f4072fb933606cd4bb34036a614f6b3599ae1ea220f88d1b467ea`
-- Created: `2016-11-29T22:21:08.656017545Z`
+- Image ID: `sha256:3cebb5419ee1c8350c7f44e58ad046390a80f3434d5cd85be4e678d07cbc4731`
+- Created: `2016-12-15T19:00:55.309931127Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -1374,24 +1374,30 @@ $ apt-get source -qq --print-uris ilmbase=1.0.1-3build2
 'http://archive.ubuntu.com/ubuntu/pool/main/i/ilmbase/ilmbase_1.0.1-3build2.diff.gz' ilmbase_1.0.1-3build2.diff.gz 4039 SHA256:a04cf0b8db4471ea609c0f8b05b4efa9e1321845494efd251c3e21ccb640f9e1
 ```
 
-### `dpkg` source package: `imagemagick=8:6.6.9.7-5ubuntu3.5`
+### `dpkg` source package: `imagemagick=8:6.6.9.7-5ubuntu3.6`
 
 Binary Packages:
 
-- `imagemagick=8:6.6.9.7-5ubuntu3.5`
-- `imagemagick-common=8:6.6.9.7-5ubuntu3.5`
-- `libmagickcore-dev=8:6.6.9.7-5ubuntu3.5`
-- `libmagickcore4=8:6.6.9.7-5ubuntu3.5`
-- `libmagickcore4-extra=8:6.6.9.7-5ubuntu3.5`
-- `libmagickwand-dev=8:6.6.9.7-5ubuntu3.5`
-- `libmagickwand4=8:6.6.9.7-5ubuntu3.5`
+- `imagemagick=8:6.6.9.7-5ubuntu3.6`
+- `imagemagick-common=8:6.6.9.7-5ubuntu3.6`
+- `libmagickcore-dev=8:6.6.9.7-5ubuntu3.6`
+- `libmagickcore4=8:6.6.9.7-5ubuntu3.6`
+- `libmagickcore4-extra=8:6.6.9.7-5ubuntu3.6`
+- `libmagickwand-dev=8:6.6.9.7-5ubuntu3.6`
+- `libmagickwand4=8:6.6.9.7-5ubuntu3.6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris imagemagick=8:6.6.9.7-5ubuntu3.6
+'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.6.9.7-5ubuntu3.6.dsc' imagemagick_6.6.9.7-5ubuntu3.6.dsc 3159 SHA256:7b54463a17e035196f8fba916ab738a51d2a78b1e3efe1315804fc47f725e685
+'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.6.9.7.orig.tar.gz' imagemagick_6.6.9.7.orig.tar.gz 12825250 SHA256:c2f77859257f3ff3d51e70a6cdebed7a24a1b77c0cbe6edb8170330a7c18dbfa
+'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.6.9.7-5ubuntu3.6.debian.tar.bz2' imagemagick_6.6.9.7-5ubuntu3.6.debian.tar.bz2 115165 SHA256:b86e9f091ec82d6171d364ab23ea1ade2749f6ca545b5907e58ac6d89a4fc0c2
+```
 
 ### `dpkg` source package: `initramfs-tools=0.99ubuntu13.5`
 
@@ -2615,11 +2621,11 @@ $ apt-get source -qq --print-uris libyaml=0.1.4-2ubuntu0.12.04.4
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.4-2ubuntu0.12.04.4.debian.tar.gz' libyaml_0.1.4-2ubuntu0.12.04.4.debian.tar.gz 6152 SHA256:2941cb245fd1fdf53a576f02931f24cf5368649d51e2965bb7b6ba29c7ab4835
 ```
 
-### `dpkg` source package: `linux=3.2.0-115.157`
+### `dpkg` source package: `linux=3.2.0-118.161`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.2.0-115.157`
+- `linux-libc-dev:amd64=3.2.0-118.161`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3573,18 +3579,24 @@ $ apt-get source -qq --print-uris ttf-dejavu=2.33-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/ttf-dejavu/ttf-dejavu_2.33-2ubuntu1.debian.tar.gz' ttf-dejavu_2.33-2ubuntu1.debian.tar.gz 12015 SHA256:eacbf753296ab1bba10b42f14909dd3223e09ad4af10df3bbc5cdac93e947716
 ```
 
-### `dpkg` source package: `tzdata=2016h-0ubuntu0.12.04`
+### `dpkg` source package: `tzdata=2016j-0ubuntu0.12.04`
 
 Binary Packages:
 
-- `tzdata=2016h-0ubuntu0.12.04`
+- `tzdata=2016j-0ubuntu0.12.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2016j-0ubuntu0.12.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.12.04.dsc' tzdata_2016j-0ubuntu0.12.04.dsc 2008 SHA256:ebb0fc6d5d640eec94f1a4bfff0332e096e3224164d94bd78166de88da37334d
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j.orig.tar.gz' tzdata_2016j.orig.tar.gz 321185 SHA256:f5ee4e0f115f6c2faee1c4b16193a97338cbd1b503f2cea6c5a768c82ff39dc8
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.12.04.debian.tar.xz' tzdata_2016j-0ubuntu0.12.04.debian.tar.xz 101516 SHA256:886e7d3a91cdedfdcd326d03f00158f30c8533d699e886ca03ff3b86b670af82
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2011.11.21.1`
 

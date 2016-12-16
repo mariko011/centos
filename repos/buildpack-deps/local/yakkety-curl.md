@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:894970d0da4c0bd6e691c30e98e1f8d4999f5d3c24db0a352650a2e9a4a90f6b`
-- Created: `2016-11-29T22:19:04.341193446Z`
+- Image ID: `sha256:c81c71bdb9f52045cb5548a53d73e5f68f388deb165d11f6f1e168e6a7d3e6e1`
+- Created: `2016-12-15T18:08:31.858131269Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -49,12 +49,12 @@ $ apt-get source -qq --print-uris adduser=3.113+nmu3ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.113+nmu3ubuntu4.tar.gz' adduser_3.113+nmu3ubuntu4.tar.gz 367980 SHA256:6e4d44c8388b9ba85fc175fa4a48ed43bf6500913c2c631fda0e4419ae63c65a
 ```
 
-### `dpkg` source package: `apt=1.3.1`
+### `dpkg` source package: `apt=1.3.2ubuntu0.1`
 
 Binary Packages:
 
-- `apt=1.3.1`
-- `libapt-pkg5.0:amd64=1.3.1`
+- `apt=1.3.2ubuntu0.1`
+- `libapt-pkg5.0:amd64=1.3.2ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
@@ -64,9 +64,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.3.1.dsc' apt_1.3.1.dsc 2496 SHA256:43fe1710f0d1a5e27233779187a25727165119837be9767f11e36e6445835e68
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.3.1.tar.xz' apt_1.3.1.tar.xz 2035460 SHA256:7ae8ebc1e371d10c4bfe1b0009cbdb6d22944963a616ae6407c74d122234fa58
+$ apt-get source -qq --print-uris apt=1.3.2ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.3.2ubuntu0.1.dsc' apt_1.3.2ubuntu0.1.dsc 2605 SHA256:102286fae3022e31d452b72dc07386ffd0f412295a7fd7857b2926e20f9b4413
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.3.2ubuntu0.1.tar.xz' apt_1.3.2ubuntu0.1.tar.xz 2038136 SHA256:bcd011cb79153992cc8971c197a3ba9ac18dbc798acf545da5f2b97bb9dd1144
 ```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
@@ -477,14 +477,14 @@ $ apt-get source -qq --print-uris gcc-6=6.2.0-5ubuntu12
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-6/gcc-6_6.2.0-5ubuntu12.diff.gz' gcc-6_6.2.0-5ubuntu12.diff.gz 4058534 SHA256:13f5df53126181fb34a406bad040dfbf9961787e0c2d40ea2918107d724b772c
 ```
 
-### `dpkg` source package: `glibc=2.24-3ubuntu1`
+### `dpkg` source package: `glibc=2.24-3ubuntu2`
 
 Binary Packages:
 
-- `libc-bin=2.24-3ubuntu1`
-- `libc6:amd64=2.24-3ubuntu1`
-- `locales=2.24-3ubuntu1`
-- `multiarch-support=2.24-3ubuntu1`
+- `libc-bin=2.24-3ubuntu2`
+- `libc6:amd64=2.24-3ubuntu2`
+- `locales=2.24-3ubuntu2`
+- `multiarch-support=2.24-3ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
@@ -494,10 +494,10 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.24-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-3ubuntu1.dsc' glibc_2.24-3ubuntu1.dsc 8778 SHA256:0aab5abce5b7ed0d2b522c93b8c6c8d6b7ae0d01989069888c2d2bf062999449
+$ apt-get source -qq --print-uris glibc=2.24-3ubuntu2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-3ubuntu2.dsc' glibc_2.24-3ubuntu2.dsc 8778 SHA256:fb4dd9dc2817a7b3e591b13af265fa2986f7068248e299c03a5cfc5d4656df70
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24.orig.tar.xz' glibc_2.24.orig.tar.xz 13921912 SHA256:ed71e8afd2b270f7947a2cea2457a31e1ca4fac08e2731d80edd7ec1730ec84f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-3ubuntu1.debian.tar.xz' glibc_2.24-3ubuntu1.debian.tar.xz 957896 SHA256:252f89c570c30ab8d079a37e50ea425bf15dd649ed17cfbe9c358c14acdfdf50
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-3ubuntu2.debian.tar.xz' glibc_2.24-3ubuntu2.debian.tar.xz 957872 SHA256:802a798c37983d582b052c7cb4f5960a2230fc1bf7c4a6225c178d033ba36282
 ```
 
 ### `dpkg` source package: `gmp=2:6.1.1+dfsg-1`
@@ -1478,18 +1478,24 @@ $ apt-get source -qq --print-uris tar=1.29b-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.29b-1ubuntu0.1.debian.tar.xz' tar_1.29b-1ubuntu0.1.debian.tar.xz 28628 SHA256:da626432a395ab6bf8ec62b6c3f7f1202f6d7c5a8c7309ba2df7f3b488fead43
 ```
 
-### `dpkg` source package: `tzdata=2016h-0ubuntu0.16.10`
+### `dpkg` source package: `tzdata=2016j-0ubuntu0.16.10`
 
 Binary Packages:
 
-- `tzdata=2016h-0ubuntu0.16.10`
+- `tzdata=2016j-0ubuntu0.16.10`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2016j-0ubuntu0.16.10
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.16.10.dsc' tzdata_2016j-0ubuntu0.16.10.dsc 2104 SHA256:739bb5f904623c3ff301ea05f036d504b312c26e51e571e1d63b2dcdc4ca9750
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j.orig.tar.gz' tzdata_2016j.orig.tar.gz 321185 SHA256:f5ee4e0f115f6c2faee1c4b16193a97338cbd1b503f2cea6c5a768c82ff39dc8
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.16.10.debian.tar.xz' tzdata_2016j-0ubuntu0.16.10.debian.tar.xz 100436 SHA256:d4555e7aa3fb91fbec631a25093a94dd3f213ac9898ad2ca8213dd557d9ff72f
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2016.09.19`
 

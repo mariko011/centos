@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:568d9dbe11b1fa036f65463829dbc8b7d78650494a561647b0ba1099f105a0f8`
-- Created: `2016-11-29T22:17:52.590928623Z`
+- Image ID: `sha256:f3b917a3116c0714b7f98e806455cf4fe3ac745333f307b94c9bcd1718195748`
+- Created: `2016-12-15T18:08:18.784615868Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -110,20 +110,25 @@ $ apt-get source -qq --print-uris apr=1.5.2-3
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.5.2-3.debian.tar.xz' apr_1.5.2-3.debian.tar.xz 18572 SHA256:442ffb9a7225cf405fe7a2b4a4624543fcb93e6f14cccf22acd57916cfa8348d
 ```
 
-### `dpkg` source package: `apt=1.2.15`
+### `dpkg` source package: `apt=1.2.15ubuntu0.2`
 
 Binary Packages:
 
-- `apt=1.2.15`
-- `libapt-pkg5.0:amd64=1.2.15`
+- `apt=1.2.15ubuntu0.2`
+- `libapt-pkg5.0:amd64=1.2.15ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=1.2.15ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.15ubuntu0.2.dsc' apt_1.2.15ubuntu0.2.dsc 2472 SHA256:e1ec3b1a7b8695bea6577f6c3a0717eaabc62c7cc8a003db94ef5cb2a0b2061f
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.15ubuntu0.2.tar.xz' apt_1.2.15ubuntu0.2.tar.xz 2057736 SHA256:b2cf7179055373709e4e95e87b87d642ece1aadf2898ed619377478a2affb50c
+```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -709,22 +714,28 @@ $ apt-get source -qq --print-uris git=1:2.7.4-0ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4-0ubuntu1.debian.tar.xz' git_2.7.4-0ubuntu1.debian.tar.xz 501804 SHA256:d3db5b4f110d802603838cab68a70fc2fbcda8f3a167afa4e2a805c2c7588871
 ```
 
-### `dpkg` source package: `glibc=2.23-0ubuntu4`
+### `dpkg` source package: `glibc=2.23-0ubuntu5`
 
 Binary Packages:
 
-- `libc-bin=2.23-0ubuntu4`
-- `libc6:amd64=2.23-0ubuntu4`
-- `locales=2.23-0ubuntu4`
-- `multiarch-support=2.23-0ubuntu4`
+- `libc-bin=2.23-0ubuntu5`
+- `libc6:amd64=2.23-0ubuntu5`
+- `locales=2.23-0ubuntu5`
+- `multiarch-support=2.23-0ubuntu5`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.23-0ubuntu5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu5.dsc' glibc_2.23-0ubuntu5.dsc 8532 SHA256:00e1d1e3c8e61c23dcf181ed15c950197d60952e518673532ad1a52de55fd58b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23.orig.tar.xz' glibc_2.23.orig.tar.xz 13849968 SHA256:bf6c528eeebefcacc295270068b79330c1fb2b22458ff66285b4175d23442c96
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu5.debian.tar.xz' glibc_2.23-0ubuntu5.debian.tar.xz 1330364 SHA256:9c947118fe6e28aa4dc0c569661bb2740a86a5efe9a6f5dc1a437d35062d8f57
+```
 
 ### `dpkg` source package: `gmp=2:6.1.0+dfsg-2`
 
@@ -1652,12 +1663,12 @@ $ apt-get source -qq --print-uris perl=5.22.1-9
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9.debian.tar.xz' perl_5.22.1-9.debian.tar.xz 148292 SHA256:3368488e1d56e9ff69556a2e75cc50858414147afcf5d72f91dbfd71fb5d9127
 ```
 
-### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.2`
+### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.3`
 
 Binary Packages:
 
-- `libprocps4:amd64=2:3.3.10-4ubuntu2.2`
-- `procps=2:3.3.10-4ubuntu2.2`
+- `libprocps4:amd64=2:3.3.10-4ubuntu2.3`
+- `procps=2:3.3.10-4ubuntu2.3`
 
 Licenses: (parsed from: `/usr/share/doc/libprocps4/copyright`, `/usr/share/doc/procps/copyright`)
 
@@ -1668,8 +1679,14 @@ Licenses: (parsed from: `/usr/share/doc/libprocps4/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris procps=2:3.3.10-4ubuntu2.3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.3.dsc' procps_3.3.10-4ubuntu2.3.dsc 2268 SHA256:8605628078cbea5f91662b60c4f35ff969b7e0e5f4aa748e3831fd1aa78372ad
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10.orig.tar.xz' procps_3.3.10.orig.tar.xz 814816 SHA256:40a3d2b0489e057d85564f4f304083b24fc699b39ea828610183fb9f0a6ebe97
+'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.3.debian.tar.xz' procps_3.3.10-4ubuntu2.3.debian.tar.xz 38516 SHA256:5434d3b406c8547db8f574f20ecc5c1be6efc55ce88bba954537b144e970ab56
+```
 
 ### `dpkg` source package: `python-defaults=2.7.11-1`
 
@@ -1964,18 +1981,24 @@ $ apt-get source -qq --print-uris tar=1.28-2.1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.28-2.1ubuntu0.1.debian.tar.xz' tar_1.28-2.1ubuntu0.1.debian.tar.xz 36868 SHA256:1933bd564d70d3d0cf085291969af36b2461265270be25f3819cc033f72c1ac6
 ```
 
-### `dpkg` source package: `tzdata=2016h-0ubuntu0.16.04`
+### `dpkg` source package: `tzdata=2016j-0ubuntu0.16.04`
 
 Binary Packages:
 
-- `tzdata=2016h-0ubuntu0.16.04`
+- `tzdata=2016j-0ubuntu0.16.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2016j-0ubuntu0.16.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.16.04.dsc' tzdata_2016j-0ubuntu0.16.04.dsc 2101 SHA256:dd4f19745f29bd94ecb8b829c0bac2f7f53fffba60c412a6b6566eda2385e372
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j.orig.tar.gz' tzdata_2016j.orig.tar.gz 321185 SHA256:f5ee4e0f115f6c2faee1c4b16193a97338cbd1b503f2cea6c5a768c82ff39dc8
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.16.04.debian.tar.xz' tzdata_2016j-0ubuntu0.16.04.debian.tar.xz 99852 SHA256:1e7fe25c83e8e9ad635b6c1ca726a49d5fbe5668a90993927ccc1d47d26e62a1
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 
