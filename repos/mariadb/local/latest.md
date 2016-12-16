@@ -2504,13 +2504,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mariadb-10.1=10.1.19+maria-1~jessie
-'http://ftp.osuosl.org/pub/mariadb/repo/10.1/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.19+maria-1~jessie.dsc' mariadb-10.1_10.1.19+maria-1~jessie.dsc 2506 SHA256:54ba560ca1721eb1d2dcd8761ef56326c2e5554b099083e267a0ceaaefd4e941
-'http://ftp.osuosl.org/pub/mariadb/repo/10.1/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.19+maria-1~jessie.tar.gz' mariadb-10.1_10.1.19+maria-1~jessie.tar.gz 61632179 SHA256:de1a0acaba4c423caf504294f4f2894bfc336a5a2da3f4aa73f6214bff99da32
-```
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
