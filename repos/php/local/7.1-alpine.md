@@ -2,17 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0caa2d15f5d3aee2ac1e930177129409b1ecc45ab8e121598ba227bebc223ab6`
-- Created: `2016-12-07T19:11:45.512185645Z`
+- Image ID: `sha256:b395d92fb2b199a8ad4d1078ccd6bbd4969ecdfaaedd1474c07971cccfb9288f`
+- Created: `2016-12-14T14:55:22.824013625Z`
 - Arch: `linux`/`amd64`
 - Command: `["php","-a"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
-  - `CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
-  - `CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
-  - `LDFLAGS=-Wl,-O1 -Wl,--hash-style=both`
+  - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
+  - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
+  - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0`
   - `PHP_VERSION=7.1.0`
   - `PHP_URL=https://secure.php.net/get/php-7.1.0.tar.xz/from/this/mirror`

@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:88de87939822bad21d91a2b586077aa873fea62d653a05c2b2669263d4bebf93`
-- Created: `2016-12-07T19:11:59.584114574Z`
+- Image ID: `sha256:d8ec2df988ed47e39798ca3726dded12cff3075d8cd211ef59f493c88bdd4361`
+- Created: `2016-12-14T15:16:39.408443928Z`
 - Arch: `linux`/`amd64`
 - Command: `["php","-a"]`
 - Environment:
@@ -11,9 +11,9 @@
   - `PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts`
-  - `CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
-  - `CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
-  - `LDFLAGS=-Wl,-O1 -Wl,--hash-style=both`
+  - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
+  - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
+  - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0`
   - `PHP_VERSION=7.1.0`
   - `PHP_URL=https://secure.php.net/get/php-7.1.0.tar.xz/from/this/mirror`
