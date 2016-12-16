@@ -596,19 +596,8 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris glibc=2.24-7
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.24-7.dsc' glibc_2.24-7.dsc 8329 SHA256:bd9a350ab2d87b589a51607b9e614a25228e5b90ed28f1f97ae02a7c5699a493
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.24.orig.tar.xz' glibc_2.24.orig.tar.xz 13921912 SHA256:ed71e8afd2b270f7947a2cea2457a31e1ca4fac08e2731d80edd7ec1730ec84f
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.24-7.debian.tar.xz' glibc_2.24-7.debian.tar.xz 964852 SHA256:113e0787e8c3d4a2161384b10d7121a85cc7cbb34238c3aa2b84471217c6689f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/glibc/2.24-7/
-- https://sources.debian.net/src/glibc/2.24-7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnupg2=2.1.16-2`
 
@@ -629,19 +618,8 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.1.16-2
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.16-2.dsc' gnupg2_2.1.16-2.dsc 3275 SHA256:f7cb62f01b62dde3f5b5c53fcda224af28a3fa40771ea827e30d5bad427c2764
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.16.orig.tar.bz2' gnupg2_2.1.16.orig.tar.bz2 5840687 SHA256:49b9a6a6787ad00d4d2d69d8c7ee8905923782583f06078a064a0c80531d8844
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.16-2.debian.tar.bz2' gnupg2_2.1.16-2.debian.tar.bz2 50675 SHA256:0599587f53d46033be7830418c1ce4ece180f209965fc82452ef6d70ae4914d4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnupg2/2.1.16-2/
-- https://sources.debian.net/src/gnupg2/2.1.16-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.26-1`
 
@@ -857,19 +835,8 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 - `GPL-2.1+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgpg-error=1.25-1
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.25-1.dsc' libgpg-error_1.25-1.dsc 2584 SHA256:9ffccbda66fb69c649a31b0f59a7bfda2bf229c61fef24ba36df51ff14bb64d4
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.25.orig.tar.bz2' libgpg-error_1.25.orig.tar.bz2 797159 SHA256:f628f75843433b38b05af248121beb7db5bd54bb2106f384edac39934261320c
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.25-1.debian.tar.xz' libgpg-error_1.25-1.debian.tar.xz 12732 SHA256:cb5210f956ac62ef4886aaad4fcd6b0a5a90be49ac1075fa7610435aae37a3e1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libgpg-error/1.25-1/
-- https://sources.debian.net/src/libgpg-error/1.25-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libmnl=1.0.4-2`
 
