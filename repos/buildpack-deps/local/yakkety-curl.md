@@ -61,13 +61,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.3.2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.3.2ubuntu0.1.dsc' apt_1.3.2ubuntu0.1.dsc 2605 SHA256:102286fae3022e31d452b72dc07386ffd0f412295a7fd7857b2926e20f9b4413
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.3.2ubuntu0.1.tar.xz' apt_1.3.2ubuntu0.1.tar.xz 2038136 SHA256:bcd011cb79153992cc8971c197a3ba9ac18dbc798acf545da5f2b97bb9dd1144
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 

@@ -119,18 +119,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4~beta1
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4~beta1.dsc' apt_1.4~beta1.dsc 2565 SHA256:59965ea9f2489feeb510d945f8ec681f8cedf6ff9ddc413c02423b2f48b0d9c1
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4~beta1.tar.xz' apt_1.4~beta1.tar.xz 2053936 SHA256:7321ec058d2a7d664e1b5123a1d73fc0d63738eb97783df8dce45e8a2b2898c1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.4~beta1/
-- https://sources.debian.net/src/apt/1.4~beta1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `atk1.0=2.22.0-1`
 
@@ -3418,19 +3408,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxrandr=2:1.5.0-1
-'http://deb.debian.org/debian/pool/main/libx/libxrandr/libxrandr_1.5.0-1.dsc' libxrandr_1.5.0-1.dsc 2125 SHA256:e1fe17d69676e15108ff6c6c3eedc2c3c72fef8a9dd9bde1ac9f4f4467efdfd1
-'http://deb.debian.org/debian/pool/main/libx/libxrandr/libxrandr_1.5.0.orig.tar.gz' libxrandr_1.5.0.orig.tar.gz 382147 SHA256:1b594a149e6b124aab7149446f2fd886461e2935eca8dca43fe83a70cf8ec451
-'http://deb.debian.org/debian/pool/main/libx/libxrandr/libxrandr_1.5.0-1.diff.gz' libxrandr_1.5.0-1.diff.gz 13507 SHA256:f04e5dccdee7db84d534aa4423b927710fbffe513c0ec632f92129a70323334e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libxrandr/2:1.5.0-1/
-- https://sources.debian.net/src/libxrandr/2:1.5.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxrender=1:0.9.9-2`
 
@@ -3721,19 +3700,8 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mercurial=3.9.2-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_3.9.2-1.dsc' mercurial_3.9.2-1.dsc 2378 SHA256:419b2d3e1cf03b4b2eaf6ac52a625a4ff5fa6f14bc4bcb7b316bb6d3364b5fbf
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_3.9.2.orig.tar.gz' mercurial_3.9.2.orig.tar.gz 4798958 SHA256:69046a427c05e83097bf0145a1e37975ae0b6ba4430456e2beca3d2fd96583cf
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_3.9.2-1.debian.tar.xz' mercurial_3.9.2-1.debian.tar.xz 95404 SHA256:a8861f97d179d1178cadc2015cf263aa6cda7ce0f3700db49ab867dd15f8509a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mercurial/3.9.2-1/
-- https://sources.debian.net/src/mercurial/3.9.2-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mime-support=3.60`
 
