@@ -598,15 +598,8 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.7.3-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.3-2.dsc' libgcrypt20_1.7.3-2.dsc 2882 SHA256:ec16c79a5a5fd318459abf46fb1db420b02e6ecb6143a82bee5d02cf6c379256
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.3.orig.tar.bz2' libgcrypt20_1.7.3.orig.tar.bz2 2861294 SHA256:ddac6111077d0a1612247587be238c5294dd0ee4d76dc7ba783cc55fb0337071
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.3.orig.tar.bz2.asc' libgcrypt20_1.7.3.orig.tar.bz2.asc 287 SHA256:9ff9779dea2bc7e23cb241c136abc4eec720ef6630826d45abdf60313cbb73ea
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.3-2.debian.tar.xz' libgcrypt20_1.7.3-2.debian.tar.xz 30456 SHA256:7bad055088fe03ea98ebd65a9e4449f9c4af301a2541540a4052707bc71a8575
-```
 
 ### `dpkg` source package: `libgpg-error=1.25-2`
 
