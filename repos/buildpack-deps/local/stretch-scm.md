@@ -281,19 +281,8 @@ Licenses: (parsed from: `/usr/share/doc/bzr/copyright`, `/usr/share/doc/python-b
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bzr=2.7.0+bzr6619-1
-'http://deb.debian.org/debian/pool/main/b/bzr/bzr_2.7.0+bzr6619-1.dsc' bzr_2.7.0+bzr6619-1.dsc 2355 SHA256:8214b56531de4fd423adb32c453c0604d0191d6eddcfbd766abdeda9cebd64d6
-'http://deb.debian.org/debian/pool/main/b/bzr/bzr_2.7.0+bzr6619.orig.tar.gz' bzr_2.7.0+bzr6619.orig.tar.gz 10945598 SHA256:a0192999245457fbd564702518bc96453ac0f9b38ea031a466679839b346fa14
-'http://deb.debian.org/debian/pool/main/b/bzr/bzr_2.7.0+bzr6619-1.debian.tar.xz' bzr_2.7.0+bzr6619-1.debian.tar.xz 65580 SHA256:46f41420e8672ef6c52d1cb0d21afdf8b5cf51bfffe2bc6a5add58a03620861e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/bzr/2.7.0+bzr6619-1/
-- https://sources.debian.net/src/bzr/2.7.0+bzr6619-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ca-certificates=20161102`
 
@@ -843,19 +832,8 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris git=1:2.10.2-3
-'http://deb.debian.org/debian/pool/main/g/git/git_2.10.2-3.dsc' git_2.10.2-3.dsc 2855 SHA256:efd3ae1c71c897f979cd266745b83b3bd49efc5f0401192d1a940d526b1e7e02
-'http://deb.debian.org/debian/pool/main/g/git/git_2.10.2.orig.tar.xz' git_2.10.2.orig.tar.xz 4106108 SHA256:94802903dd707d85ca3b9a2be35e936a54ce86375f52c6a789efe7ce7e238671
-'http://deb.debian.org/debian/pool/main/g/git/git_2.10.2-3.debian.tar.xz' git_2.10.2-3.debian.tar.xz 511884 SHA256:6b9068806c7d3408337a6c3d9b23479acd294d0e3d656f88abda1650c2659fc4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/git/1:2.10.2-3/
-- https://sources.debian.net/src/git/1:2.10.2-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.24-7`
 
@@ -966,19 +944,8 @@ Licenses: (parsed from: `/usr/share/doc/grep/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris grep=2.26-1
-'http://deb.debian.org/debian/pool/main/g/grep/grep_2.26-1.dsc' grep_2.26-1.dsc 2021 SHA256:04b276cd38ea72b368291c2b22782bdc199da5e5ed6cf51e335c22d60faad85a
-'http://deb.debian.org/debian/pool/main/g/grep/grep_2.26.orig.tar.gz' grep_2.26.orig.tar.gz 2167549 SHA256:802c8f12cb2e317356489fa0f53575d058f733f7d8a88227a2e2e874c0c9181b
-'http://deb.debian.org/debian/pool/main/g/grep/grep_2.26-1.debian.tar.bz2' grep_2.26-1.debian.tar.bz2 108885 SHA256:93680d62895a7abb0331a5753c7baf578aeb01d5633ebac2f0f4c8481138a527
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/grep/2.26-1/
-- https://sources.debian.net/src/grep/2.26-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gzip=1.6-5`
 
