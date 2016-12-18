@@ -77,19 +77,8 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.10.95-7
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.10.95-7.dsc' apparmor_2.10.95-7.dsc 3208 SHA256:040b54a9a93d904632a01410d711c114cd7feba7c37f98981945fb2908bda705
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.10.95-7.debian.tar.xz' apparmor_2.10.95-7.debian.tar.xz 102064 SHA256:4a7b4135ffc4df7ffaf112cf06274fc8fc6f44809a6c15ecd2d4280d4a964b9f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apparmor/2.10.95-7/
-- https://sources.debian.net/src/apparmor/2.10.95-7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apr-util=1.5.4-3`
 
@@ -749,18 +738,8 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.15
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.15.dsc' dpkg_1.18.15.dsc 2032 SHA256:63fdc2bd7a0e8d2c4066da228bd88e770e3094e8c761c33a3a700dc9edb12fbe
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.15.tar.xz' dpkg_1.18.15.tar.xz 4494820 SHA256:aee936653b9c39403160c0a331ee7934563fbfa4e1f5adbc14a289c803cda371
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dpkg/1.18.15/
-- https://sources.debian.net/src/dpkg/1.18.15/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `e2fsprogs=1.43.3-1`
 
@@ -3008,19 +2987,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=232-7
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-7.dsc' systemd_232-7.dsc 4621 SHA256:98af83c6dd08a3a2749a05a0d0dd24302107ce84c1d5305f79fca01b54353222
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-7.debian.tar.xz' systemd_232-7.debian.tar.xz 128228 SHA256:fd075483f9568228c12c343593170b89c2ba5a021bbe1482abc9371ecadb55b5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/systemd/232-7/
-- https://sources.debian.net/src/systemd/232-7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8`
 
