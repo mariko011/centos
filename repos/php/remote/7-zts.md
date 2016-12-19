@@ -1,7 +1,7 @@
 ## `php:7-zts`
 
 ```console
-$ docker pull php@sha256:048cad11e13a079b4a24f16665bb269389513554d3a422ed9bf677e67c176303
+$ docker pull php@sha256:c4ecae8ce8a8ee9b6e191b8d5842df7613c11111916accaded7b7edc05169e81
 ```
 
 -	Platforms:
@@ -11,9 +11,10 @@ $ docker pull php@sha256:048cad11e13a079b4a24f16665bb269389513554d3a422ed9bf677e
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **151.4 MB (151423146 bytes)**  
+-	Total Size: **151.4 MB (151423227 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3f2e887e05041a88a477d7b6a0b61b74e75df3d92b95b7d44b40fc1acf5fd44c`
+-	Image ID: `sha256:88df358ecf6d2b08a740e1beb69b4dda0aff8df2f6ddfcb90d0f5f4b01e67eff`
+-	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
 ```dockerfile
@@ -51,9 +52,11 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Wed, 14 Dec 2016 15:12:30 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Wed, 14 Dec 2016 15:12:31 GMT
-COPY multi:63f3f133271448127a56d400bfeecd1ab617d6e67215b9f497baf80e5d4550d1 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:12:31 GMT
+# Mon, 19 Dec 2016 19:25:43 GMT
+COPY multi:b2b2a1a4e3c0f0bb8ebdcd527fca158bfce5138468926263f86e5bb0cb41970f in /usr/local/bin/ 
+# Mon, 19 Dec 2016 19:25:44 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Mon, 19 Dec 2016 19:25:44 GMT
 CMD ["php" "-a"]
 ```
 
@@ -82,7 +85,7 @@ CMD ["php" "-a"]
 		Last Modified: Wed, 14 Dec 2016 16:26:09 GMT  
 		Size: 9.6 MB (9560719 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b153ffa8fb687ef892896794ba0e349a9d19517ac8ee1b32481a15806a4ce96a`  
-		Last Modified: Wed, 14 Dec 2016 16:26:07 GMT  
-		Size: 1.9 KB (1925 bytes)  
+	-	`sha256:1bc539bbcdb34d76c4f9c95adbbaa9759d7750702092d698b45142e7e2bc6842`  
+		Last Modified: Mon, 19 Dec 2016 19:39:25 GMT  
+		Size: 2.0 KB (2006 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
