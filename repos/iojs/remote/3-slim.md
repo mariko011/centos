@@ -1,7 +1,7 @@
 ## `iojs:3-slim`
 
 ```console
-$ docker pull iojs@sha256:f6c2159226ecf5001ed031b311a075b038397ece8616b77b685b984db97384b1
+$ docker pull iojs@sha256:7291c535fa74df2d8b8df31c137b815b27bca6b1a7f5f68e2d5071f722e9b5e8
 ```
 
 -	Platforms:
@@ -11,44 +11,44 @@ $ docker pull iojs@sha256:f6c2159226ecf5001ed031b311a075b038397ece8616b77b685b98
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.4 MB (81437171 bytes)**  
+-	Total Size: **81.4 MB (81444811 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0afe02a3d0f638e29e66335180532a35e5287ce3afd72ad588962a9a6a802e0`
+-	Image ID: `sha256:1e459a4b44f9c38bfaf225f35dcfd7bb22ce161fc6a9d2e4c5db696746184932`
 -	Default Command: `["iojs"]`
 
 ```dockerfile
-# Mon, 07 Nov 2016 20:30:25 GMT
-ADD file:41ea5187c50116884c38d9ec51d920d79cfaeb2a61c52e07a97f457419a10a4f in / 
-# Mon, 07 Nov 2016 20:30:26 GMT
+# Tue, 13 Dec 2016 22:10:59 GMT
+ADD file:1d214d2782eaccc743b8d683ccecf2f87f12a0ecdfbcd6fdf4943ce616f23870 in / 
+# Tue, 13 Dec 2016 22:10:59 GMT
 CMD ["/bin/bash"]
-# Mon, 07 Nov 2016 22:27:33 GMT
+# Tue, 13 Dec 2016 23:00:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 08 Nov 2016 20:00:10 GMT
+# Tue, 13 Dec 2016 23:49:52 GMT
 RUN set -ex   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"   ; done
-# Tue, 08 Nov 2016 20:00:11 GMT
+# Tue, 13 Dec 2016 23:49:52 GMT
 ENV NPM_CONFIG_LOGLEVEL=info
-# Tue, 08 Nov 2016 20:02:01 GMT
+# Tue, 13 Dec 2016 23:50:05 GMT
 ENV IOJS_VERSION=3.3.0
-# Tue, 08 Nov 2016 20:02:06 GMT
+# Tue, 13 Dec 2016 23:50:10 GMT
 RUN curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/iojs-v$IOJS_VERSION-linux-x64.tar.gz"   && curl -SLO "https://iojs.org/dist/v$IOJS_VERSION/SHASUMS256.txt.asc"   && gpg --verify SHASUMS256.txt.asc   && grep " iojs-v$IOJS_VERSION-linux-x64.tar.gz\$" SHASUMS256.txt.asc | sha256sum -c -   && tar -xzf "iojs-v$IOJS_VERSION-linux-x64.tar.gz" -C /usr/local --strip-components=1   && rm "iojs-v$IOJS_VERSION-linux-x64.tar.gz" SHASUMS256.txt.asc
-# Tue, 08 Nov 2016 20:02:08 GMT
+# Tue, 13 Dec 2016 23:50:10 GMT
 CMD ["iojs"]
 ```
 
 -	Layers:
-	-	`sha256:386a066cd84a33a04d560c42bef66d1dd64ebfc76de78550e5fd0f8d57778bca`  
-		Last Modified: Mon, 07 Nov 2016 20:34:04 GMT  
-		Size: 51.4 MB (51356989 bytes)  
+	-	`sha256:75a822cd7888e394c49828b951061402d31745f596b1f502758570f2d0ee79e2`  
+		Last Modified: Tue, 13 Dec 2016 22:16:41 GMT  
+		Size: 51.4 MB (51363125 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75ea8418708338e40dce9179cfe97fd116831f1601be50fef48ea6011653c986`  
-		Last Modified: Mon, 07 Nov 2016 22:57:05 GMT  
-		Size: 18.5 MB (18528477 bytes)  
+	-	`sha256:57de64c72267e88e952b064236cb906c7626f7c07a1a2d5900cf6953e72632b3`  
+		Last Modified: Wed, 14 Dec 2016 03:04:38 GMT  
+		Size: 18.5 MB (18529983 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032b6a75536ec4fab79132ee1e1d4fec0910f645f47e5c7761b728c4e35a7f2e`  
-		Last Modified: Tue, 08 Nov 2016 20:00:28 GMT  
-		Size: 69.4 KB (69385 bytes)  
+	-	`sha256:95936db985099a40476e9112391d4f9ee2b296d0040f929f988c57ada1133678`  
+		Last Modified: Mon, 19 Dec 2016 22:53:25 GMT  
+		Size: 69.4 KB (69387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c64660ee9b2d2cd22cd7ec7892b54d4581eed89fc4f7359efa4772764f84f3d5`  
-		Last Modified: Tue, 08 Nov 2016 20:02:26 GMT  
-		Size: 11.5 MB (11482320 bytes)  
+	-	`sha256:86076d7d20977955a010fad2abc67c028d1c8a0f502e6992b72469f9f694dcb9`  
+		Last Modified: Mon, 19 Dec 2016 22:59:46 GMT  
+		Size: 11.5 MB (11482316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
