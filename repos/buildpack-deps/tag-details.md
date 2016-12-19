@@ -29,6 +29,9 @@
 -	[`buildpack-deps:yakkety-curl`](#buildpack-depsyakkety-curl)
 -	[`buildpack-deps:yakkety-scm`](#buildpack-depsyakkety-scm)
 -	[`buildpack-deps:yakkety`](#buildpack-depsyakkety)
+-	[`buildpack-deps:zesty-curl`](#buildpack-depszesty-curl)
+-	[`buildpack-deps:zesty-scm`](#buildpack-depszesty-scm)
+-	[`buildpack-deps:zesty`](#buildpack-depszesty)
 
 ## `buildpack-deps:jessie-curl`
 
@@ -1478,3 +1481,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		au
 		Last Modified: Thu, 15 Dec 2016 19:49:09 GMT  
 		Size: 166.7 MB (166696636 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `buildpack-deps:zesty-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:zesty-scm`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:zesty`
+
+**does not exist** (yet?)
