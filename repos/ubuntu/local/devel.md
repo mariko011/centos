@@ -61,13 +61,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.3.1.dsc' apt_1.3.1.dsc 2496 SHA256:43fe1710f0d1a5e27233779187a25727165119837be9767f11e36e6445835e68
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.3.1.tar.xz' apt_1.3.1.tar.xz 2035460 SHA256:7ae8ebc1e371d10c4bfe1b0009cbdb6d22944963a616ae6407c74d122234fa58
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -398,14 +393,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`, `/usr/share/doc/l
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.2.1-5ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-6/gcc-6_6.2.1-5ubuntu1.dsc' gcc-6_6.2.1-5ubuntu1.dsc 30985 SHA256:d011a7973bfd431a97d2fbd04b8d3d58481bb3bf0e7e5a1c00729017344e97bb
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-6/gcc-6_6.2.1.orig.tar.gz' gcc-6_6.2.1.orig.tar.gz 76973880 SHA256:d8f21f8f8f8892c7a00f8c1e8d166035455cfa1348078975bc4167aefafd22fd
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-6/gcc-6_6.2.1-5ubuntu1.diff.gz' gcc-6_6.2.1-5ubuntu1.diff.gz 4970617 SHA256:acc069a038003a2cbd6eca69079336ffe99fa25e8c9b74c16539f996cbf24f8d
-```
 
 ### `dpkg` source package: `glibc=2.24-3ubuntu1`
 
