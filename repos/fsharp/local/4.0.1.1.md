@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a1b3d10711f95890a5fc9392ebfb640b7b769fe5f199af1049e86b5e77a79901`
-- Created: `2016-11-30T17:29:42.247871102Z`
+- Image ID: `sha256:d8db6c76871c010dcb8f35c44d4e2f23700e0403a37eb1c788cd221cb7649a0f`
+- Created: `2016-12-15T23:47:40.375739338Z`
 - Arch: `linux`/`amd64`
 - Command: `["fsharpi"]`
 - Environment:
@@ -139,22 +139,27 @@ $ apt-get source -qq --print-uris apr=1.5.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.5.0-1.debian.tar.gz' apr_1.5.0-1.debian.tar.gz 27878 SHA256:03c97e6c336f68c8be73f1440362408204fa190808e1ff7655b1bcf134f77f88
 ```
 
-### `dpkg` source package: `apt=1.0.1ubuntu2.15`
+### `dpkg` source package: `apt=1.0.1ubuntu2.17`
 
 Binary Packages:
 
-- `apt=1.0.1ubuntu2.15`
-- `apt-utils=1.0.1ubuntu2.15`
-- `libapt-inst1.5:amd64=1.0.1ubuntu2.15`
-- `libapt-pkg4.12:amd64=1.0.1ubuntu2.15`
+- `apt=1.0.1ubuntu2.17`
+- `apt-utils=1.0.1ubuntu2.17`
+- `libapt-inst1.5:amd64=1.0.1ubuntu2.17`
+- `libapt-pkg4.12:amd64=1.0.1ubuntu2.17`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/apt-utils/copyright`, `/usr/share/doc/libapt-inst1.5/copyright`, `/usr/share/doc/libapt-pkg4.12/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=1.0.1ubuntu2.17
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.17.dsc' apt_1.0.1ubuntu2.17.dsc 2393 SHA256:a49fcf03e2260e611878e70666e35509bbdfbd09cbc52e536a85e1b79b908a31
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.17.tar.xz' apt_1.0.1ubuntu2.17.tar.xz 1782544 SHA256:bdf6070f907a9f8eaa2b3afa84f27ceac98ecae9f4fac9bdfe85fce1e2b0067c
+```
 
 ### `dpkg` source package: `atk1.0=2.10.0-2ubuntu2`
 
@@ -1806,17 +1811,17 @@ $ apt-get source -qq --print-uris ilmbase=1.0.1-6ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/ilmbase/ilmbase_1.0.1-6ubuntu1.debian.tar.gz' ilmbase_1.0.1-6ubuntu1.debian.tar.gz 5881 SHA256:7e0b07b267fccdfcd6d8bdfa944b9b6560c9a0f6a877c248586b986823ffe5c0
 ```
 
-### `dpkg` source package: `imagemagick=8:6.7.7.10-6ubuntu3.2`
+### `dpkg` source package: `imagemagick=8:6.7.7.10-6ubuntu3.3`
 
 Binary Packages:
 
-- `imagemagick=8:6.7.7.10-6ubuntu3.2`
-- `imagemagick-common=8:6.7.7.10-6ubuntu3.2`
-- `libmagickcore-dev=8:6.7.7.10-6ubuntu3.2`
-- `libmagickcore5:amd64=8:6.7.7.10-6ubuntu3.2`
-- `libmagickcore5-extra:amd64=8:6.7.7.10-6ubuntu3.2`
-- `libmagickwand-dev=8:6.7.7.10-6ubuntu3.2`
-- `libmagickwand5:amd64=8:6.7.7.10-6ubuntu3.2`
+- `imagemagick=8:6.7.7.10-6ubuntu3.3`
+- `imagemagick-common=8:6.7.7.10-6ubuntu3.3`
+- `libmagickcore-dev=8:6.7.7.10-6ubuntu3.3`
+- `libmagickcore5:amd64=8:6.7.7.10-6ubuntu3.3`
+- `libmagickcore5-extra:amd64=8:6.7.7.10-6ubuntu3.3`
+- `libmagickwand-dev=8:6.7.7.10-6ubuntu3.3`
+- `libmagickwand5:amd64=8:6.7.7.10-6ubuntu3.3`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-common/copyright`, `/usr/share/doc/libmagickcore-dev/copyright`, `/usr/share/doc/libmagickcore5/copyright`, `/usr/share/doc/libmagickcore5-extra/copyright`, `/usr/share/doc/libmagickwand-dev/copyright`, `/usr/share/doc/libmagickwand5/copyright`)
 
@@ -1837,14 +1842,20 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris imagemagick=8:6.7.7.10-6ubuntu3.3
+'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.7.7.10-6ubuntu3.3.dsc' imagemagick_6.7.7.10-6ubuntu3.3.dsc 3239 SHA256:b5093c270141ed63bff770320f41e52de7c253299b4ef2c499ecde8b41ba02be
+'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.7.7.10.orig.tar.bz2' imagemagick_6.7.7.10.orig.tar.bz2 10473522 SHA256:05fb23824b1c90ac35259715c94c65fb5cda6969eb597a7637762d8cf3998fda
+'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.7.7.10-6ubuntu3.3.debian.tar.bz2' imagemagick_6.7.7.10-6ubuntu3.3.debian.tar.bz2 218989 SHA256:53f208aff4049cbd82a714695b0b43f9ce0f1cbf412b81b606ca019b96788abc
+```
 
-### `dpkg` source package: `init-system-helpers=1.14`
+### `dpkg` source package: `init-system-helpers=1.14ubuntu1`
 
 Binary Packages:
 
-- `init-system-helpers=1.14`
+- `init-system-helpers=1.14ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 
@@ -1853,9 +1864,9 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris init-system-helpers=1.14
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.14.dsc' init-system-helpers_1.14.dsc 1832 SHA256:d95ec59ec3ad004ed60a30da2783ea5844390379c05c896bc3301be64b614abf
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.14.tar.gz' init-system-helpers_1.14.tar.gz 17729 SHA256:9eea2b3fb46b8382cd1c59e607ad1ce3c14bfcb58494919912131448fbf18f32
+$ apt-get source -qq --print-uris init-system-helpers=1.14ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.14ubuntu1.dsc' init-system-helpers_1.14ubuntu1.dsc 1918 SHA256:183537b98ed019ef80c813b4426570fffe3283c38239d4708724fc4e868cb7ad
+'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.14ubuntu1.tar.xz' init-system-helpers_1.14ubuntu1.tar.xz 15436 SHA256:c9f7e8c0d1ee2cdfb12b7a82ffee5a5c90e3d70478591d28803e011e8053a252
 ```
 
 ### `dpkg` source package: `initramfs-tools=0.103ubuntu4.4`
@@ -1929,19 +1940,25 @@ $ apt-get source -qq --print-uris iputils=3:20121221-4ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iputils/iputils_20121221-4ubuntu1.1.debian.tar.gz' iputils_20121221-4ubuntu1.1.debian.tar.gz 16143 SHA256:4eb3ca79e68dfc5f5e66df7be3113c230168fbca2420da232adadc6475056c6a
 ```
 
-### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.7`
+### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.8`
 
 Binary Packages:
 
-- `isc-dhcp-client=4.2.4-7ubuntu12.7`
-- `isc-dhcp-common=4.2.4-7ubuntu12.7`
+- `isc-dhcp-client=4.2.4-7ubuntu12.8`
+- `isc-dhcp-common=4.2.4-7ubuntu12.8`
 
 Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/doc/isc-dhcp-common/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris isc-dhcp=4.2.4-7ubuntu12.8
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.8.dsc' isc-dhcp_4.2.4-7ubuntu12.8.dsc 2788 SHA256:9540d60625c3c78b5b2df94b65417314fe078a748202d7d2a0113206b46e61c7
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.8.debian.tar.xz' isc-dhcp_4.2.4-7ubuntu12.8.debian.tar.xz 108596 SHA256:d301a6a2c0a5944842ea4fcccb3e62b62e83d8644d0dcede618258f356717931
+```
 
 ### `dpkg` source package: `isl=0.12.2-1`
 
@@ -3822,11 +3839,11 @@ $ apt-get source -qq --print-uris libyaml=0.1.4-3ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.4-3ubuntu3.1.debian.tar.gz' libyaml_0.1.4-3ubuntu3.1.debian.tar.gz 6404 SHA256:816422e1c743180409aff9247f3a298c8f98260d91da29c7315ce8bd576d53c2
 ```
 
-### `dpkg` source package: `linux=3.13.0-101.148`
+### `dpkg` source package: `linux=3.13.0-105.152`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-101.148`
+- `linux-libc-dev:amd64=3.13.0-105.152`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -5298,13 +5315,13 @@ $ apt-get source -qq --print-uris sudo=1.8.9p5-1ubuntu1.3
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.3.debian.tar.xz' sudo_1.8.9p5-1ubuntu1.3.debian.tar.xz 33260 SHA256:bae36c26cf8a5f171035b17087f06f23bd44b510273e9c7f1f54dfb147d67850
 ```
 
-### `dpkg` source package: `systemd=204-5ubuntu20.19`
+### `dpkg` source package: `systemd=204-5ubuntu20.20`
 
 Binary Packages:
 
-- `libsystemd-login0:amd64=204-5ubuntu20.19`
-- `libudev1:amd64=204-5ubuntu20.19`
-- `udev=204-5ubuntu20.19`
+- `libsystemd-login0:amd64=204-5ubuntu20.20`
+- `libudev1:amd64=204-5ubuntu20.20`
+- `udev=204-5ubuntu20.20`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd-login0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/udev/copyright`)
 
@@ -5315,8 +5332,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd-login0/copyright`, `/usr/shar
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=204-5ubuntu20.20
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.20.dsc' systemd_204-5ubuntu20.20.dsc 4043 SHA256:a04b02ecd864a4f7258ed5eb1bc88499f61b3d2044dfb19fe90aad5fc41337ef
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204.orig.tar.xz' systemd_204.orig.tar.xz 2186264 SHA256:072c393503c7c1e55ca7acf3db659cbd28c7fe5fa94fab3db95360bafd96731b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.20.debian.tar.xz' systemd_204-5ubuntu20.20.debian.tar.xz 138272 SHA256:5445a1e1ac5a24ce39da09c2fdda8cf8f65ca80306efc2355385a566c502ea34
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-41ubuntu6.3`
 
@@ -5402,18 +5425,24 @@ $ apt-get source -qq --print-uris tiff=4.0.3-7ubuntu0.4
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.3-7ubuntu0.4.debian.tar.gz' tiff_4.0.3-7ubuntu0.4.debian.tar.gz 38923 SHA256:fbf338bc39c1021515ec889dfa5d5f588ce3bacb04c3a2cdd51695cc900ffd7c
 ```
 
-### `dpkg` source package: `tzdata=2016h-0ubuntu0.14.04`
+### `dpkg` source package: `tzdata=2016j-0ubuntu0.14.04`
 
 Binary Packages:
 
-- `tzdata=2016h-0ubuntu0.14.04`
+- `tzdata=2016j-0ubuntu0.14.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2016j-0ubuntu0.14.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.14.04.dsc' tzdata_2016j-0ubuntu0.14.04.dsc 2048 SHA256:baec60d2dc81bef9a522b00ee9679c15a1d93b32fc6c5367203654b46bfebbd5
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j.orig.tar.gz' tzdata_2016j.orig.tar.gz 321185 SHA256:f5ee4e0f115f6c2faee1c4b16193a97338cbd1b503f2cea6c5a768c82ff39dc8
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.14.04.debian.tar.xz' tzdata_2016j-0ubuntu0.14.04.debian.tar.xz 100436 SHA256:a4a236571039dcd942e49e86d632908663eabc7a0e5bcdf81ee39aec9746d508
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 
@@ -5550,12 +5579,12 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `vim=2:7.4.052-1ubuntu3`
+### `dpkg` source package: `vim=2:7.4.052-1ubuntu3.1`
 
 Binary Packages:
 
-- `vim-common=2:7.4.052-1ubuntu3`
-- `vim-tiny=2:7.4.052-1ubuntu3`
+- `vim-common=2:7.4.052-1ubuntu3.1`
+- `vim-tiny=2:7.4.052-1ubuntu3.1`
 
 Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/vim-tiny/copyright`)
 
@@ -5564,10 +5593,10 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 Source:
 
 ```console
-$ apt-get source -qq --print-uris vim=2:7.4.052-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_7.4.052-1ubuntu3.dsc' vim_7.4.052-1ubuntu3.dsc 2185 SHA256:50e0cb13c1c8d1d807fecc03eec5676fbfc73523186948d54cb0a90c7f31ef64
+$ apt-get source -qq --print-uris vim=2:7.4.052-1ubuntu3.1
+'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_7.4.052-1ubuntu3.1.dsc' vim_7.4.052-1ubuntu3.1.dsc 2816 SHA256:5689ee55ff65f5ebf5a73b645dfda3cfacd56bfb756f4b389fe4a01fff2324b1
 'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_7.4.052.orig.tar.gz' vim_7.4.052.orig.tar.gz 11846951 SHA256:1365885e0805fe505e83ed635e3008d968b94f71ce46fe45420a41220715e5f2
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_7.4.052-1ubuntu3.debian.tar.gz' vim_7.4.052-1ubuntu3.debian.tar.gz 201099 SHA256:068d1f8e0b35918de29ea49a30a22d0f4e46f49c8ebc3bf642bc4293d3e61a9a
+'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_7.4.052-1ubuntu3.1.debian.tar.gz' vim_7.4.052-1ubuntu3.1.debian.tar.gz 203077 SHA256:eb89b3af5e9b54b9ad22b6cb7d4cb3eb342811194afbd5329b44cb692da324fa
 ```
 
 ### `dpkg` source package: `wget=1.15-1ubuntu1.14.04.2`
