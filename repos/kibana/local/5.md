@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0b110fb13e67d51599702e5a0499559fd86a08bce721969d7130dc05e3ae92d4`
-- Created: `2016-12-09T17:46:32.322665569Z`
+- Image ID: `sha256:dcfb02a0f0c04cff09451dc882288fcdb871e244353a90e05a7c8a82dfdc87c4`
+- Created: `2016-12-14T00:59:54.275989257Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["kibana"]`
