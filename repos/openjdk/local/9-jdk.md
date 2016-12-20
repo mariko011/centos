@@ -1,17 +1,17 @@
-# `openjdk:9-b148-jdk`
+# `openjdk:9-b149-jdk`
 
 ## Docker Metadata
 
-- Image ID: `sha256:472a7b2ce8833a167440529992e91b03fccf4a0072546249787572b77741e224`
-- Created: `2016-12-14T02:59:31.318679407Z`
+- Image ID: `sha256:1800de06a3eb5377236406c5fdd3d74417a1799b2152cef43334553153735620`
+- Created: `2016-12-19T21:08:14.574522151Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64`
-  - `JAVA_VERSION=9~b148`
-  - `JAVA_DEBIAN_VERSION=9~b148-1`
+  - `JAVA_VERSION=9~b149`
+  - `JAVA_DEBIAN_VERSION=9~b149-1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -63,11 +63,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/adduser/3.115/
 - https://sources.debian.net/src/adduser/3.115/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `apparmor=2.10.95-7`
+### `dpkg` source package: `apparmor=2.10.95-8`
 
 Binary Packages:
 
-- `libapparmor1:amd64=2.10.95-7`
+- `libapparmor1:amd64=2.10.95-8`
 
 Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 
@@ -77,8 +77,19 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris apparmor=2.10.95-8
+'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.10.95-8.dsc' apparmor_2.10.95-8.dsc 3208 SHA256:4e8bd686c18c3b58a0ebbae11fe18d77aa7f01afb66f749d25ba943eb0a9408d
+'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
+'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.10.95-8.debian.tar.xz' apparmor_2.10.95-8.debian.tar.xz 107100 SHA256:8dd6536a58105614039536484899da28514a8e9c81e0d2c56444001b119c2d4a
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/apparmor/2.10.95-8/
+- https://sources.debian.net/src/apparmor/2.10.95-8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apr-util=1.5.4-3`
 
@@ -474,11 +485,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/coreutils/8.26-1/
 - https://sources.debian.net/src/coreutils/8.26-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `cups=2.2.1-2`
+### `dpkg` source package: `cups=2.2.1-3`
 
 Binary Packages:
 
-- `libcups2:amd64=2.2.1-2`
+- `libcups2:amd64=2.2.1-3`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -489,8 +500,20 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris cups=2.2.1-3
+'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1-3.dsc' cups_2.2.1-3.dsc 3396 SHA256:c10cccd41b7e43aff3c808af4936f1ec87937f622524d4d09106b3507bd9292b
+'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1.orig.tar.gz' cups_2.2.1.orig.tar.gz 9486635 SHA256:83b8730aa977cc055e7410df6a3a682548994c113994ca630a16513017e419d5
+'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1.orig.tar.gz.asc' cups_2.2.1.orig.tar.gz.asc 797 SHA256:37c2e6215b2794c33864e543bc0caf6aefa724844e41b4c9659c87f28d125c2a
+'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1-3.debian.tar.xz' cups_2.2.1-3.debian.tar.xz 357956 SHA256:e299f481d4fcb7b88b37718df6a494e0052d3d4f289fb93a87eb008fe836b9c7
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/cups/2.2.1-3/
+- https://sources.debian.net/src/cups/2.2.1-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `curl=7.51.0-1`
 
@@ -1395,11 +1418,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/krb5/1.15-1/
 - https://sources.debian.net/src/krb5/1.15-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `lcms2=2.8-2`
+### `dpkg` source package: `lcms2=2.8-3`
 
 Binary Packages:
 
-- `liblcms2-2:amd64=2.8-2`
+- `liblcms2-2:amd64=2.8-3`
 
 Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 
@@ -1410,16 +1433,16 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris lcms2=2.8-2
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.8-2.dsc' lcms2_2.8-2.dsc 1997 SHA256:1750b63e857ae2aa828d673f7868852909824b86497a00061a175a9e3760f52c
+$ apt-get source -qq --print-uris lcms2=2.8-3
+'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.8-3.dsc' lcms2_2.8-3.dsc 1997 SHA256:9e9f53b7abcdd82040a35111860465b443d05103a49e64b139cfe955586b2e0a
 'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.8.orig.tar.gz' lcms2_2.8.orig.tar.gz 6687005 SHA256:66d02b229d2ea9474e62c2b6cd6720fde946155cd1d0d2bffdab829790a0fb22
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.8-2.debian.tar.xz' lcms2_2.8-2.debian.tar.xz 10360 SHA256:8b00767439f42311f1ebe43405e00713bbffe1e482462a87b805cdf74bc5ff0e
+'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.8-3.debian.tar.xz' lcms2_2.8-3.debian.tar.xz 10732 SHA256:876214e97f069a3dba0ea7f54026106da441f319e2afa0a8d38f8c4de5f773c9
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/lcms2/2.8-2/
-- https://sources.debian.net/src/lcms2/2.8-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/lcms2/2.8-3/
+- https://sources.debian.net/src/lcms2/2.8-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libbsd=0.8.3-1`
 
@@ -2361,12 +2384,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nss/2:3.26.2-1/
 - https://sources.debian.net/src/nss/2:3.26.2-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openjdk-9=9~b148-1`
+### `dpkg` source package: `openjdk-9=9~b149-1`
 
 Binary Packages:
 
-- `openjdk-9-jdk-headless:amd64=9~b148-1`
-- `openjdk-9-jre-headless:amd64=9~b148-1`
+- `openjdk-9-jdk-headless:amd64=9~b149-1`
+- `openjdk-9-jre-headless:amd64=9~b149-1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-9-jdk-headless/copyright`, `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 
@@ -2378,16 +2401,16 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jdk-headless/copyright`, `/usr
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-9=9~b148-1
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b148-1.dsc' openjdk-9_9~b148-1.dsc 4456 SHA256:4f3e13a0c50d588c233faa3e762b24d04bbe0e62b0fbd18bf50dd27b076a9e71
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b148.orig.tar.gz' openjdk-9_9~b148.orig.tar.gz 72730838 SHA256:fc1fa41fc6779bd8433dc2f37d2ae81b1c3e017076c0b72cdbd54de21b06b288
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b148-1.debian.tar.xz' openjdk-9_9~b148-1.debian.tar.xz 187128 SHA256:79564683c81a47661beba86501e6f45d9c800b4bbb73038e31025cf91faeeed8
+$ apt-get source -qq --print-uris openjdk-9=9~b149-1
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b149-1.dsc' openjdk-9_9~b149-1.dsc 4456 SHA256:4ec5b575388d89891279baed46978907baba2a3d180b52a96645d50279b599b0
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b149.orig.tar.gz' openjdk-9_9~b149.orig.tar.gz 72782111 SHA256:81e6a54f86e10f332a36fa3f3c3831838d77133b854854e1067fdfd4e14427c7
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b149-1.debian.tar.xz' openjdk-9_9~b149-1.debian.tar.xz 187172 SHA256:250d4c2faa05cb8822fa931ae56f6fa50f849955da1c61ba720b3750a5455cd6
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openjdk-9/9~b148-1/
-- https://sources.debian.net/src/openjdk-9/9~b148-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openjdk-9/9~b149-1/
+- https://sources.debian.net/src/openjdk-9/9~b149-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-2`
 
