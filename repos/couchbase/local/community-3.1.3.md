@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f1d4568b6a2d2846731d9e182f6486664661a9e9a273fef6b86fe4310c76d832`
-- Created: `2016-11-29T22:43:42.343984272Z`
+- Image ID: `sha256:55c6ecb41c2f2f6bb25a87b7ca48a047e9cbab059dfee9176686b03f92b3e337`
+- Created: `2016-12-15T18:12:03.795927703Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["couchbase-server"]`
@@ -1652,18 +1652,24 @@ $ apt-get source -qq --print-uris tar=1.26-4ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.26-4ubuntu1.1.debian.tar.gz' tar_1.26-4ubuntu1.1.debian.tar.gz 34030 SHA256:0237bbf4eccee92126e426d7650c2cdc699fe1110499a4e6a31140c586ec1825
 ```
 
-### `dpkg` source package: `tzdata=2016h-0ubuntu0.12.04`
+### `dpkg` source package: `tzdata=2016j-0ubuntu0.12.04`
 
 Binary Packages:
 
-- `tzdata=2016h-0ubuntu0.12.04`
+- `tzdata=2016j-0ubuntu0.12.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2016j-0ubuntu0.12.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.12.04.dsc' tzdata_2016j-0ubuntu0.12.04.dsc 2008 SHA256:ebb0fc6d5d640eec94f1a4bfff0332e096e3224164d94bd78166de88da37334d
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j.orig.tar.gz' tzdata_2016j.orig.tar.gz 321185 SHA256:f5ee4e0f115f6c2faee1c4b16193a97338cbd1b503f2cea6c5a768c82ff39dc8
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.12.04.debian.tar.xz' tzdata_2016j-0ubuntu0.12.04.debian.tar.xz 101516 SHA256:886e7d3a91cdedfdcd326d03f00158f30c8533d699e886ca03ff3b86b670af82
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2011.11.21.1`
 
