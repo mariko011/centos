@@ -1,7 +1,7 @@
 ## `kibana:latest`
 
 ```console
-$ docker pull kibana@sha256:cd75925d96925a6b065782f2e838f2a345ab32d3e7c2667a87a1d550207eff35
+$ docker pull kibana@sha256:2baa1cf2065820f7055d7be79258276fcee7eca111857f7c4f6d40d13015c94b
 ```
 
 -	Platforms:
@@ -11,83 +11,83 @@ $ docker pull kibana@sha256:cd75925d96925a6b065782f2e838f2a345ab32d3e7c2667a87a1
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **109.8 MB (109811730 bytes)**  
+-	Total Size: **109.8 MB (109819333 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0b110fb13e67d51599702e5a0499559fd86a08bce721969d7130dc05e3ae92d4`
+-	Image ID: `sha256:dcfb02a0f0c04cff09451dc882288fcdb871e244353a90e05a7c8a82dfdc87c4`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kibana"]`
 
 ```dockerfile
-# Mon, 07 Nov 2016 20:30:25 GMT
-ADD file:41ea5187c50116884c38d9ec51d920d79cfaeb2a61c52e07a97f457419a10a4f in / 
-# Mon, 07 Nov 2016 20:30:26 GMT
+# Tue, 13 Dec 2016 22:10:59 GMT
+ADD file:1d214d2782eaccc743b8d683ccecf2f87f12a0ecdfbcd6fdf4943ce616f23870 in / 
+# Tue, 13 Dec 2016 22:10:59 GMT
 CMD ["/bin/bash"]
-# Tue, 08 Nov 2016 20:25:19 GMT
+# Wed, 14 Dec 2016 00:58:11 GMT
 RUN groupadd -r kibana && useradd -r -m -g kibana kibana
-# Tue, 08 Nov 2016 20:32:16 GMT
+# Wed, 14 Dec 2016 00:59:19 GMT
 RUN apt-get update && apt-get install -y 		apt-transport-https 		ca-certificates 		wget 	--no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Tue, 08 Nov 2016 20:32:16 GMT
+# Wed, 14 Dec 2016 00:59:19 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 08 Nov 2016 20:32:22 GMT
+# Wed, 14 Dec 2016 00:59:24 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Tue, 08 Nov 2016 20:32:22 GMT
+# Wed, 14 Dec 2016 00:59:24 GMT
 ENV TINI_VERSION=v0.9.0
-# Tue, 08 Nov 2016 20:32:26 GMT
+# Wed, 14 Dec 2016 00:59:27 GMT
 RUN set -x 	&& wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini" 	&& wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5 	&& gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini 	&& rm -r "$GNUPGHOME" /usr/local/bin/tini.asc 	&& chmod +x /usr/local/bin/tini 	&& tini -h
-# Tue, 08 Nov 2016 20:32:27 GMT
+# Wed, 14 Dec 2016 00:59:29 GMT
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 09 Dec 2016 17:46:09 GMT
+# Wed, 14 Dec 2016 00:59:29 GMT
 ENV KIBANA_VERSION=5.1.1
-# Fri, 09 Dec 2016 17:46:10 GMT
+# Wed, 14 Dec 2016 00:59:30 GMT
 RUN echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' > /etc/apt/sources.list.d/kibana.list
-# Fri, 09 Dec 2016 17:46:29 GMT
+# Wed, 14 Dec 2016 00:59:52 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends kibana=$KIBANA_VERSION 	&& rm -rf /var/lib/apt/lists/* 		&& sed -ri "s!^(\#\s*)?(server\.host:).*!\2 '0.0.0.0'!" /etc/kibana/kibana.yml 	&& grep -q "^server\.host: '0.0.0.0'\$" /etc/kibana/kibana.yml 		&& sed -ri "s!^(\#\s*)?(elasticsearch\.url:).*!\2 'http://elasticsearch:9200'!" /etc/kibana/kibana.yml 	&& grep -q "^elasticsearch\.url: 'http://elasticsearch:9200'\$" /etc/kibana/kibana.yml
-# Fri, 09 Dec 2016 17:46:30 GMT
+# Wed, 14 Dec 2016 00:59:53 GMT
 ENV PATH=/usr/share/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 09 Dec 2016 17:46:31 GMT
+# Wed, 14 Dec 2016 00:59:53 GMT
 COPY file:9a3ed3a1655d5afa631fded5211f1c33f5f49f1d1e0e0d9a031c9e8601111f05 in / 
-# Fri, 09 Dec 2016 17:46:31 GMT
+# Wed, 14 Dec 2016 00:59:53 GMT
 EXPOSE 5601/tcp
-# Fri, 09 Dec 2016 17:46:31 GMT
+# Wed, 14 Dec 2016 00:59:54 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 09 Dec 2016 17:46:32 GMT
+# Wed, 14 Dec 2016 00:59:54 GMT
 CMD ["kibana"]
 ```
 
 -	Layers:
-	-	`sha256:386a066cd84a33a04d560c42bef66d1dd64ebfc76de78550e5fd0f8d57778bca`  
-		Last Modified: Mon, 07 Nov 2016 20:34:04 GMT  
-		Size: 51.4 MB (51356989 bytes)  
+	-	`sha256:75a822cd7888e394c49828b951061402d31745f596b1f502758570f2d0ee79e2`  
+		Last Modified: Tue, 13 Dec 2016 22:16:41 GMT  
+		Size: 51.4 MB (51363125 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ca92df3a376d42a01bfbeccafcddd0d5661fec2f29c9f62c140b032416dd4a8`  
-		Last Modified: Tue, 08 Nov 2016 20:26:19 GMT  
+	-	`sha256:f15c2734ed9fbeb3de25ae022e08681f89a40413292538b5181e16065a462308`  
+		Last Modified: Mon, 19 Dec 2016 23:35:55 GMT  
 		Size: 4.3 KB (4347 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c04752ac6b44b7d73a18d102d7c529be122c5d848e03918f97cbe2afcb5f67c6`  
-		Last Modified: Tue, 08 Nov 2016 20:33:12 GMT  
-		Size: 18.5 MB (18456506 bytes)  
+	-	`sha256:ee1bfc513e89294dba05f0fac28fee182955b6e17f2f52bcf714e43bdf0a2890`  
+		Last Modified: Mon, 19 Dec 2016 23:38:26 GMT  
+		Size: 18.5 MB (18457972 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7bfecbcf70ff7fb01040fd49649476ce19c1757482de927932387ff5683c7f81`  
-		Last Modified: Tue, 08 Nov 2016 20:33:05 GMT  
-		Size: 807.9 KB (807926 bytes)  
+	-	`sha256:176921c49e38294bc77d1789c89a09abaf40f0542fcbeecb121a077764f8692e`  
+		Last Modified: Mon, 19 Dec 2016 23:38:20 GMT  
+		Size: 807.9 KB (807933 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f1338b2c8ead733b160592bfc13ae32ef463b181083962b8a7a5ba9c42bba5a9`  
-		Last Modified: Tue, 08 Nov 2016 20:33:02 GMT  
-		Size: 7.1 KB (7122 bytes)  
+	-	`sha256:bf59802c664295b94291229574a07d7fdd1189d0be3d3c7ef585f4739333fc41`  
+		Last Modified: Mon, 19 Dec 2016 23:38:18 GMT  
+		Size: 7.1 KB (7118 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bfe1da400856ae4c727463c1c5a232e487ee53fbc0f847ab34f8ba3a5cc88c85`  
-		Last Modified: Tue, 08 Nov 2016 20:33:01 GMT  
+	-	`sha256:686bca49c6e882723ef1adede3c28dc1b847b4b439e4f2621f1b28ca3d2ce5c2`  
+		Last Modified: Mon, 19 Dec 2016 23:38:18 GMT  
 		Size: 1.5 KB (1452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9000d704548aad08ae1679d7069f8be42271f6754ac8c7f21713a321fdea23ca`  
-		Last Modified: Fri, 09 Dec 2016 17:46:46 GMT  
-		Size: 226.0 B  
+	-	`sha256:bbc213ef88e3e8370d5f6c3994da956766ca76623d4c8daf7db12bf39e5d72fe`  
+		Last Modified: Mon, 19 Dec 2016 23:38:18 GMT  
+		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85010a6b8e488bca4648c46fa2f50b3817e4166f532064925986f3d2165bf9b0`  
-		Last Modified: Fri, 09 Dec 2016 17:47:00 GMT  
+	-	`sha256:423a4e40a9cdb6207158f9ef32a09d4b93b3d934998f96390a4f88138cea538f`  
+		Last Modified: Mon, 19 Dec 2016 23:38:42 GMT  
 		Size: 39.2 MB (39176823 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87eea9f6577f68a53443a23d51aa8a7f4ddf19b821290c64ed2595aa43a7d990`  
-		Last Modified: Fri, 09 Dec 2016 17:46:46 GMT  
-		Size: 339.0 B  
+	-	`sha256:c561dbbf35c27910642d20236ea570efd8e33cda37af5cb5cd5cbdb9361db181`  
+		Last Modified: Mon, 19 Dec 2016 23:38:18 GMT  
+		Size: 338.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

@@ -24,7 +24,7 @@
 ## `drupal:8.2.4-apache`
 
 ```console
-$ docker pull drupal@sha256:fd3727f2e8e3d5c2d4e8b999f0ee5530406cca0ca648572e1f297bc16416041f
+$ docker pull drupal@sha256:5bafc7017bedf9d535aad20402f2f57b45ef5fdcdfb515ae5e898451f3c092a4
 ```
 
 -	Platforms:
@@ -34,9 +34,10 @@ $ docker pull drupal@sha256:fd3727f2e8e3d5c2d4e8b999f0ee5530406cca0ca648572e1f29
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **176.9 MB (176923173 bytes)**  
+-	Total Size: **176.9 MB (176923249 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0dfef0bf797e6872799534323d5d1500954b754a4be91b56c7ca8709c0e65fe7`
+-	Image ID: `sha256:0f0e0d207f1cc323840f3dc1b3e92f6ae2b4fec96c65d69b88b3a117afe2e9b5`
+-	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
@@ -90,29 +91,31 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Wed, 14 Dec 2016 15:30:54 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Wed, 14 Dec 2016 15:30:55 GMT
-COPY multi:63f3f133271448127a56d400bfeecd1ab617d6e67215b9f497baf80e5d4550d1 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:53 GMT
+COPY multi:2b7e23dbf0e975ef1ec1f186511e2789ab94e8c8734ca9fa8419c893f7357d6c in /usr/local/bin/ 
+# Mon, 19 Dec 2016 19:25:54 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Mon, 19 Dec 2016 19:25:54 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 WORKDIR /var/www/html
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 EXPOSE 80/tcp
-# Wed, 14 Dec 2016 15:30:57 GMT
+# Mon, 19 Dec 2016 19:25:56 GMT
 CMD ["apache2-foreground"]
-# Mon, 19 Dec 2016 16:34:54 GMT
+# Tue, 20 Dec 2016 00:12:25 GMT
 RUN a2enmod rewrite
-# Mon, 19 Dec 2016 16:38:44 GMT
+# Tue, 20 Dec 2016 00:16:36 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring opcache pdo pdo_mysql pdo_pgsql zip
-# Mon, 19 Dec 2016 16:38:45 GMT
+# Tue, 20 Dec 2016 00:16:37 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:38 GMT
 WORKDIR /var/www/html
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:38 GMT
 ENV DRUPAL_VERSION=8.2.4
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:39 GMT
 ENV DRUPAL_MD5=288aa9978b5027e26f20df93b6295f6c
-# Mon, 19 Dec 2016 16:38:53 GMT
+# Tue, 20 Dec 2016 00:16:46 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites modules themes
 ```
 
@@ -161,35 +164,35 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Wed, 14 Dec 2016 16:30:18 GMT  
 		Size: 13.3 MB (13300304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7cb09a53647711536712907c0d7d06dcad04d19089143f8ccb6077a9ed26aec`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 1.9 KB (1920 bytes)  
+	-	`sha256:b0ed76332d75a3585964e1b7a910d896ae3dcfedc34304ede9d658f1181881de`  
+		Last Modified: Mon, 19 Dec 2016 19:43:39 GMT  
+		Size: 2.0 KB (2013 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71ff1d92c5b1a1601724dfa7b4c87d05b9a59a3710c6b6ba773f28d0d8be192e`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 582.0 B  
+	-	`sha256:f674b02795e767dfd099ff19e4f99a7ba8345df8dd09554d2907423bcdab1bea`  
+		Last Modified: Mon, 19 Dec 2016 19:43:41 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:882a500d2899c2a19a37d8d003a541ddf1b2ff937244c3a7cd26e10b19c3811c`  
-		Last Modified: Mon, 19 Dec 2016 18:35:41 GMT  
-		Size: 293.0 B  
+	-	`sha256:3cd51d7d5669bf556e89a55f3c6120437daac9aaa2ed8e39840f1faf55cd6da0`  
+		Last Modified: Tue, 20 Dec 2016 00:18:43 GMT  
+		Size: 294.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a53ba3fddfa3001863de8c3e19a2dbfdf9332bb7fc698624d2ed22eb294baa58`  
-		Last Modified: Mon, 19 Dec 2016 18:38:10 GMT  
-		Size: 7.0 MB (7005791 bytes)  
+	-	`sha256:db71878f6945267b7fab97aac17eb9fe3f0a7c38e1436c2b1f2c356c30fc663c`  
+		Last Modified: Tue, 20 Dec 2016 00:20:46 GMT  
+		Size: 7.0 MB (7005773 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e92eecee301b34f5a15fa907857cc3ec9e31898c2b4f3d21ccdd5f7699a49fed`  
-		Last Modified: Mon, 19 Dec 2016 18:38:08 GMT  
-		Size: 332.0 B  
+	-	`sha256:8996ee9c6972a5330949087671a04d28de7a9e3c6cfd60172bc3f4dbce96b255`  
+		Last Modified: Tue, 20 Dec 2016 00:20:45 GMT  
+		Size: 333.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ebe9a0ea238a391f6323a32fec9b251edcaaf61f6fc257168ad1c02023ac6ac`  
-		Last Modified: Mon, 19 Dec 2016 18:38:26 GMT  
-		Size: 12.1 MB (12141840 bytes)  
+	-	`sha256:4931d3acf622a5235aa94767eae6fb44face58111bc6d5987d850b971ae1dc71`  
+		Last Modified: Tue, 20 Dec 2016 00:20:51 GMT  
+		Size: 12.1 MB (12141841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `drupal:8.2-apache`
 
 ```console
-$ docker pull drupal@sha256:fd3727f2e8e3d5c2d4e8b999f0ee5530406cca0ca648572e1f297bc16416041f
+$ docker pull drupal@sha256:5bafc7017bedf9d535aad20402f2f57b45ef5fdcdfb515ae5e898451f3c092a4
 ```
 
 -	Platforms:
@@ -199,9 +202,10 @@ $ docker pull drupal@sha256:fd3727f2e8e3d5c2d4e8b999f0ee5530406cca0ca648572e1f29
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **176.9 MB (176923173 bytes)**  
+-	Total Size: **176.9 MB (176923249 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0dfef0bf797e6872799534323d5d1500954b754a4be91b56c7ca8709c0e65fe7`
+-	Image ID: `sha256:0f0e0d207f1cc323840f3dc1b3e92f6ae2b4fec96c65d69b88b3a117afe2e9b5`
+-	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
@@ -255,29 +259,31 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Wed, 14 Dec 2016 15:30:54 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Wed, 14 Dec 2016 15:30:55 GMT
-COPY multi:63f3f133271448127a56d400bfeecd1ab617d6e67215b9f497baf80e5d4550d1 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:53 GMT
+COPY multi:2b7e23dbf0e975ef1ec1f186511e2789ab94e8c8734ca9fa8419c893f7357d6c in /usr/local/bin/ 
+# Mon, 19 Dec 2016 19:25:54 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Mon, 19 Dec 2016 19:25:54 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 WORKDIR /var/www/html
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 EXPOSE 80/tcp
-# Wed, 14 Dec 2016 15:30:57 GMT
+# Mon, 19 Dec 2016 19:25:56 GMT
 CMD ["apache2-foreground"]
-# Mon, 19 Dec 2016 16:34:54 GMT
+# Tue, 20 Dec 2016 00:12:25 GMT
 RUN a2enmod rewrite
-# Mon, 19 Dec 2016 16:38:44 GMT
+# Tue, 20 Dec 2016 00:16:36 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring opcache pdo pdo_mysql pdo_pgsql zip
-# Mon, 19 Dec 2016 16:38:45 GMT
+# Tue, 20 Dec 2016 00:16:37 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:38 GMT
 WORKDIR /var/www/html
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:38 GMT
 ENV DRUPAL_VERSION=8.2.4
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:39 GMT
 ENV DRUPAL_MD5=288aa9978b5027e26f20df93b6295f6c
-# Mon, 19 Dec 2016 16:38:53 GMT
+# Tue, 20 Dec 2016 00:16:46 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites modules themes
 ```
 
@@ -326,35 +332,35 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Wed, 14 Dec 2016 16:30:18 GMT  
 		Size: 13.3 MB (13300304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7cb09a53647711536712907c0d7d06dcad04d19089143f8ccb6077a9ed26aec`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 1.9 KB (1920 bytes)  
+	-	`sha256:b0ed76332d75a3585964e1b7a910d896ae3dcfedc34304ede9d658f1181881de`  
+		Last Modified: Mon, 19 Dec 2016 19:43:39 GMT  
+		Size: 2.0 KB (2013 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71ff1d92c5b1a1601724dfa7b4c87d05b9a59a3710c6b6ba773f28d0d8be192e`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 582.0 B  
+	-	`sha256:f674b02795e767dfd099ff19e4f99a7ba8345df8dd09554d2907423bcdab1bea`  
+		Last Modified: Mon, 19 Dec 2016 19:43:41 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:882a500d2899c2a19a37d8d003a541ddf1b2ff937244c3a7cd26e10b19c3811c`  
-		Last Modified: Mon, 19 Dec 2016 18:35:41 GMT  
-		Size: 293.0 B  
+	-	`sha256:3cd51d7d5669bf556e89a55f3c6120437daac9aaa2ed8e39840f1faf55cd6da0`  
+		Last Modified: Tue, 20 Dec 2016 00:18:43 GMT  
+		Size: 294.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a53ba3fddfa3001863de8c3e19a2dbfdf9332bb7fc698624d2ed22eb294baa58`  
-		Last Modified: Mon, 19 Dec 2016 18:38:10 GMT  
-		Size: 7.0 MB (7005791 bytes)  
+	-	`sha256:db71878f6945267b7fab97aac17eb9fe3f0a7c38e1436c2b1f2c356c30fc663c`  
+		Last Modified: Tue, 20 Dec 2016 00:20:46 GMT  
+		Size: 7.0 MB (7005773 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e92eecee301b34f5a15fa907857cc3ec9e31898c2b4f3d21ccdd5f7699a49fed`  
-		Last Modified: Mon, 19 Dec 2016 18:38:08 GMT  
-		Size: 332.0 B  
+	-	`sha256:8996ee9c6972a5330949087671a04d28de7a9e3c6cfd60172bc3f4dbce96b255`  
+		Last Modified: Tue, 20 Dec 2016 00:20:45 GMT  
+		Size: 333.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ebe9a0ea238a391f6323a32fec9b251edcaaf61f6fc257168ad1c02023ac6ac`  
-		Last Modified: Mon, 19 Dec 2016 18:38:26 GMT  
-		Size: 12.1 MB (12141840 bytes)  
+	-	`sha256:4931d3acf622a5235aa94767eae6fb44face58111bc6d5987d850b971ae1dc71`  
+		Last Modified: Tue, 20 Dec 2016 00:20:51 GMT  
+		Size: 12.1 MB (12141841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `drupal:8-apache`
 
 ```console
-$ docker pull drupal@sha256:fd3727f2e8e3d5c2d4e8b999f0ee5530406cca0ca648572e1f297bc16416041f
+$ docker pull drupal@sha256:5bafc7017bedf9d535aad20402f2f57b45ef5fdcdfb515ae5e898451f3c092a4
 ```
 
 -	Platforms:
@@ -364,9 +370,10 @@ $ docker pull drupal@sha256:fd3727f2e8e3d5c2d4e8b999f0ee5530406cca0ca648572e1f29
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **176.9 MB (176923173 bytes)**  
+-	Total Size: **176.9 MB (176923249 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0dfef0bf797e6872799534323d5d1500954b754a4be91b56c7ca8709c0e65fe7`
+-	Image ID: `sha256:0f0e0d207f1cc323840f3dc1b3e92f6ae2b4fec96c65d69b88b3a117afe2e9b5`
+-	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
@@ -420,29 +427,31 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Wed, 14 Dec 2016 15:30:54 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Wed, 14 Dec 2016 15:30:55 GMT
-COPY multi:63f3f133271448127a56d400bfeecd1ab617d6e67215b9f497baf80e5d4550d1 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:53 GMT
+COPY multi:2b7e23dbf0e975ef1ec1f186511e2789ab94e8c8734ca9fa8419c893f7357d6c in /usr/local/bin/ 
+# Mon, 19 Dec 2016 19:25:54 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Mon, 19 Dec 2016 19:25:54 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 WORKDIR /var/www/html
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 EXPOSE 80/tcp
-# Wed, 14 Dec 2016 15:30:57 GMT
+# Mon, 19 Dec 2016 19:25:56 GMT
 CMD ["apache2-foreground"]
-# Mon, 19 Dec 2016 16:34:54 GMT
+# Tue, 20 Dec 2016 00:12:25 GMT
 RUN a2enmod rewrite
-# Mon, 19 Dec 2016 16:38:44 GMT
+# Tue, 20 Dec 2016 00:16:36 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring opcache pdo pdo_mysql pdo_pgsql zip
-# Mon, 19 Dec 2016 16:38:45 GMT
+# Tue, 20 Dec 2016 00:16:37 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:38 GMT
 WORKDIR /var/www/html
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:38 GMT
 ENV DRUPAL_VERSION=8.2.4
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:39 GMT
 ENV DRUPAL_MD5=288aa9978b5027e26f20df93b6295f6c
-# Mon, 19 Dec 2016 16:38:53 GMT
+# Tue, 20 Dec 2016 00:16:46 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites modules themes
 ```
 
@@ -491,35 +500,35 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Wed, 14 Dec 2016 16:30:18 GMT  
 		Size: 13.3 MB (13300304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7cb09a53647711536712907c0d7d06dcad04d19089143f8ccb6077a9ed26aec`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 1.9 KB (1920 bytes)  
+	-	`sha256:b0ed76332d75a3585964e1b7a910d896ae3dcfedc34304ede9d658f1181881de`  
+		Last Modified: Mon, 19 Dec 2016 19:43:39 GMT  
+		Size: 2.0 KB (2013 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71ff1d92c5b1a1601724dfa7b4c87d05b9a59a3710c6b6ba773f28d0d8be192e`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 582.0 B  
+	-	`sha256:f674b02795e767dfd099ff19e4f99a7ba8345df8dd09554d2907423bcdab1bea`  
+		Last Modified: Mon, 19 Dec 2016 19:43:41 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:882a500d2899c2a19a37d8d003a541ddf1b2ff937244c3a7cd26e10b19c3811c`  
-		Last Modified: Mon, 19 Dec 2016 18:35:41 GMT  
-		Size: 293.0 B  
+	-	`sha256:3cd51d7d5669bf556e89a55f3c6120437daac9aaa2ed8e39840f1faf55cd6da0`  
+		Last Modified: Tue, 20 Dec 2016 00:18:43 GMT  
+		Size: 294.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a53ba3fddfa3001863de8c3e19a2dbfdf9332bb7fc698624d2ed22eb294baa58`  
-		Last Modified: Mon, 19 Dec 2016 18:38:10 GMT  
-		Size: 7.0 MB (7005791 bytes)  
+	-	`sha256:db71878f6945267b7fab97aac17eb9fe3f0a7c38e1436c2b1f2c356c30fc663c`  
+		Last Modified: Tue, 20 Dec 2016 00:20:46 GMT  
+		Size: 7.0 MB (7005773 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e92eecee301b34f5a15fa907857cc3ec9e31898c2b4f3d21ccdd5f7699a49fed`  
-		Last Modified: Mon, 19 Dec 2016 18:38:08 GMT  
-		Size: 332.0 B  
+	-	`sha256:8996ee9c6972a5330949087671a04d28de7a9e3c6cfd60172bc3f4dbce96b255`  
+		Last Modified: Tue, 20 Dec 2016 00:20:45 GMT  
+		Size: 333.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ebe9a0ea238a391f6323a32fec9b251edcaaf61f6fc257168ad1c02023ac6ac`  
-		Last Modified: Mon, 19 Dec 2016 18:38:26 GMT  
-		Size: 12.1 MB (12141840 bytes)  
+	-	`sha256:4931d3acf622a5235aa94767eae6fb44face58111bc6d5987d850b971ae1dc71`  
+		Last Modified: Tue, 20 Dec 2016 00:20:51 GMT  
+		Size: 12.1 MB (12141841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `drupal:apache`
 
 ```console
-$ docker pull drupal@sha256:fd3727f2e8e3d5c2d4e8b999f0ee5530406cca0ca648572e1f297bc16416041f
+$ docker pull drupal@sha256:5bafc7017bedf9d535aad20402f2f57b45ef5fdcdfb515ae5e898451f3c092a4
 ```
 
 -	Platforms:
@@ -529,9 +538,10 @@ $ docker pull drupal@sha256:fd3727f2e8e3d5c2d4e8b999f0ee5530406cca0ca648572e1f29
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **176.9 MB (176923173 bytes)**  
+-	Total Size: **176.9 MB (176923249 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0dfef0bf797e6872799534323d5d1500954b754a4be91b56c7ca8709c0e65fe7`
+-	Image ID: `sha256:0f0e0d207f1cc323840f3dc1b3e92f6ae2b4fec96c65d69b88b3a117afe2e9b5`
+-	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
@@ -585,29 +595,31 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Wed, 14 Dec 2016 15:30:54 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Wed, 14 Dec 2016 15:30:55 GMT
-COPY multi:63f3f133271448127a56d400bfeecd1ab617d6e67215b9f497baf80e5d4550d1 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:53 GMT
+COPY multi:2b7e23dbf0e975ef1ec1f186511e2789ab94e8c8734ca9fa8419c893f7357d6c in /usr/local/bin/ 
+# Mon, 19 Dec 2016 19:25:54 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Mon, 19 Dec 2016 19:25:54 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 WORKDIR /var/www/html
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 EXPOSE 80/tcp
-# Wed, 14 Dec 2016 15:30:57 GMT
+# Mon, 19 Dec 2016 19:25:56 GMT
 CMD ["apache2-foreground"]
-# Mon, 19 Dec 2016 16:34:54 GMT
+# Tue, 20 Dec 2016 00:12:25 GMT
 RUN a2enmod rewrite
-# Mon, 19 Dec 2016 16:38:44 GMT
+# Tue, 20 Dec 2016 00:16:36 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring opcache pdo pdo_mysql pdo_pgsql zip
-# Mon, 19 Dec 2016 16:38:45 GMT
+# Tue, 20 Dec 2016 00:16:37 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:38 GMT
 WORKDIR /var/www/html
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:38 GMT
 ENV DRUPAL_VERSION=8.2.4
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:39 GMT
 ENV DRUPAL_MD5=288aa9978b5027e26f20df93b6295f6c
-# Mon, 19 Dec 2016 16:38:53 GMT
+# Tue, 20 Dec 2016 00:16:46 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites modules themes
 ```
 
@@ -656,35 +668,35 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Wed, 14 Dec 2016 16:30:18 GMT  
 		Size: 13.3 MB (13300304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7cb09a53647711536712907c0d7d06dcad04d19089143f8ccb6077a9ed26aec`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 1.9 KB (1920 bytes)  
+	-	`sha256:b0ed76332d75a3585964e1b7a910d896ae3dcfedc34304ede9d658f1181881de`  
+		Last Modified: Mon, 19 Dec 2016 19:43:39 GMT  
+		Size: 2.0 KB (2013 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71ff1d92c5b1a1601724dfa7b4c87d05b9a59a3710c6b6ba773f28d0d8be192e`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 582.0 B  
+	-	`sha256:f674b02795e767dfd099ff19e4f99a7ba8345df8dd09554d2907423bcdab1bea`  
+		Last Modified: Mon, 19 Dec 2016 19:43:41 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:882a500d2899c2a19a37d8d003a541ddf1b2ff937244c3a7cd26e10b19c3811c`  
-		Last Modified: Mon, 19 Dec 2016 18:35:41 GMT  
-		Size: 293.0 B  
+	-	`sha256:3cd51d7d5669bf556e89a55f3c6120437daac9aaa2ed8e39840f1faf55cd6da0`  
+		Last Modified: Tue, 20 Dec 2016 00:18:43 GMT  
+		Size: 294.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a53ba3fddfa3001863de8c3e19a2dbfdf9332bb7fc698624d2ed22eb294baa58`  
-		Last Modified: Mon, 19 Dec 2016 18:38:10 GMT  
-		Size: 7.0 MB (7005791 bytes)  
+	-	`sha256:db71878f6945267b7fab97aac17eb9fe3f0a7c38e1436c2b1f2c356c30fc663c`  
+		Last Modified: Tue, 20 Dec 2016 00:20:46 GMT  
+		Size: 7.0 MB (7005773 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e92eecee301b34f5a15fa907857cc3ec9e31898c2b4f3d21ccdd5f7699a49fed`  
-		Last Modified: Mon, 19 Dec 2016 18:38:08 GMT  
-		Size: 332.0 B  
+	-	`sha256:8996ee9c6972a5330949087671a04d28de7a9e3c6cfd60172bc3f4dbce96b255`  
+		Last Modified: Tue, 20 Dec 2016 00:20:45 GMT  
+		Size: 333.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ebe9a0ea238a391f6323a32fec9b251edcaaf61f6fc257168ad1c02023ac6ac`  
-		Last Modified: Mon, 19 Dec 2016 18:38:26 GMT  
-		Size: 12.1 MB (12141840 bytes)  
+	-	`sha256:4931d3acf622a5235aa94767eae6fb44face58111bc6d5987d850b971ae1dc71`  
+		Last Modified: Tue, 20 Dec 2016 00:20:51 GMT  
+		Size: 12.1 MB (12141841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `drupal:8.2.4`
 
 ```console
-$ docker pull drupal@sha256:fd3727f2e8e3d5c2d4e8b999f0ee5530406cca0ca648572e1f297bc16416041f
+$ docker pull drupal@sha256:5bafc7017bedf9d535aad20402f2f57b45ef5fdcdfb515ae5e898451f3c092a4
 ```
 
 -	Platforms:
@@ -694,9 +706,10 @@ $ docker pull drupal@sha256:fd3727f2e8e3d5c2d4e8b999f0ee5530406cca0ca648572e1f29
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **176.9 MB (176923173 bytes)**  
+-	Total Size: **176.9 MB (176923249 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0dfef0bf797e6872799534323d5d1500954b754a4be91b56c7ca8709c0e65fe7`
+-	Image ID: `sha256:0f0e0d207f1cc323840f3dc1b3e92f6ae2b4fec96c65d69b88b3a117afe2e9b5`
+-	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
@@ -750,29 +763,31 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Wed, 14 Dec 2016 15:30:54 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Wed, 14 Dec 2016 15:30:55 GMT
-COPY multi:63f3f133271448127a56d400bfeecd1ab617d6e67215b9f497baf80e5d4550d1 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:53 GMT
+COPY multi:2b7e23dbf0e975ef1ec1f186511e2789ab94e8c8734ca9fa8419c893f7357d6c in /usr/local/bin/ 
+# Mon, 19 Dec 2016 19:25:54 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Mon, 19 Dec 2016 19:25:54 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 WORKDIR /var/www/html
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 EXPOSE 80/tcp
-# Wed, 14 Dec 2016 15:30:57 GMT
+# Mon, 19 Dec 2016 19:25:56 GMT
 CMD ["apache2-foreground"]
-# Mon, 19 Dec 2016 16:34:54 GMT
+# Tue, 20 Dec 2016 00:12:25 GMT
 RUN a2enmod rewrite
-# Mon, 19 Dec 2016 16:38:44 GMT
+# Tue, 20 Dec 2016 00:16:36 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring opcache pdo pdo_mysql pdo_pgsql zip
-# Mon, 19 Dec 2016 16:38:45 GMT
+# Tue, 20 Dec 2016 00:16:37 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:38 GMT
 WORKDIR /var/www/html
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:38 GMT
 ENV DRUPAL_VERSION=8.2.4
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:39 GMT
 ENV DRUPAL_MD5=288aa9978b5027e26f20df93b6295f6c
-# Mon, 19 Dec 2016 16:38:53 GMT
+# Tue, 20 Dec 2016 00:16:46 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites modules themes
 ```
 
@@ -821,35 +836,35 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Wed, 14 Dec 2016 16:30:18 GMT  
 		Size: 13.3 MB (13300304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7cb09a53647711536712907c0d7d06dcad04d19089143f8ccb6077a9ed26aec`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 1.9 KB (1920 bytes)  
+	-	`sha256:b0ed76332d75a3585964e1b7a910d896ae3dcfedc34304ede9d658f1181881de`  
+		Last Modified: Mon, 19 Dec 2016 19:43:39 GMT  
+		Size: 2.0 KB (2013 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71ff1d92c5b1a1601724dfa7b4c87d05b9a59a3710c6b6ba773f28d0d8be192e`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 582.0 B  
+	-	`sha256:f674b02795e767dfd099ff19e4f99a7ba8345df8dd09554d2907423bcdab1bea`  
+		Last Modified: Mon, 19 Dec 2016 19:43:41 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:882a500d2899c2a19a37d8d003a541ddf1b2ff937244c3a7cd26e10b19c3811c`  
-		Last Modified: Mon, 19 Dec 2016 18:35:41 GMT  
-		Size: 293.0 B  
+	-	`sha256:3cd51d7d5669bf556e89a55f3c6120437daac9aaa2ed8e39840f1faf55cd6da0`  
+		Last Modified: Tue, 20 Dec 2016 00:18:43 GMT  
+		Size: 294.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a53ba3fddfa3001863de8c3e19a2dbfdf9332bb7fc698624d2ed22eb294baa58`  
-		Last Modified: Mon, 19 Dec 2016 18:38:10 GMT  
-		Size: 7.0 MB (7005791 bytes)  
+	-	`sha256:db71878f6945267b7fab97aac17eb9fe3f0a7c38e1436c2b1f2c356c30fc663c`  
+		Last Modified: Tue, 20 Dec 2016 00:20:46 GMT  
+		Size: 7.0 MB (7005773 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e92eecee301b34f5a15fa907857cc3ec9e31898c2b4f3d21ccdd5f7699a49fed`  
-		Last Modified: Mon, 19 Dec 2016 18:38:08 GMT  
-		Size: 332.0 B  
+	-	`sha256:8996ee9c6972a5330949087671a04d28de7a9e3c6cfd60172bc3f4dbce96b255`  
+		Last Modified: Tue, 20 Dec 2016 00:20:45 GMT  
+		Size: 333.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ebe9a0ea238a391f6323a32fec9b251edcaaf61f6fc257168ad1c02023ac6ac`  
-		Last Modified: Mon, 19 Dec 2016 18:38:26 GMT  
-		Size: 12.1 MB (12141840 bytes)  
+	-	`sha256:4931d3acf622a5235aa94767eae6fb44face58111bc6d5987d850b971ae1dc71`  
+		Last Modified: Tue, 20 Dec 2016 00:20:51 GMT  
+		Size: 12.1 MB (12141841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `drupal:8.2`
 
 ```console
-$ docker pull drupal@sha256:fd3727f2e8e3d5c2d4e8b999f0ee5530406cca0ca648572e1f297bc16416041f
+$ docker pull drupal@sha256:5bafc7017bedf9d535aad20402f2f57b45ef5fdcdfb515ae5e898451f3c092a4
 ```
 
 -	Platforms:
@@ -859,9 +874,10 @@ $ docker pull drupal@sha256:fd3727f2e8e3d5c2d4e8b999f0ee5530406cca0ca648572e1f29
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **176.9 MB (176923173 bytes)**  
+-	Total Size: **176.9 MB (176923249 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0dfef0bf797e6872799534323d5d1500954b754a4be91b56c7ca8709c0e65fe7`
+-	Image ID: `sha256:0f0e0d207f1cc323840f3dc1b3e92f6ae2b4fec96c65d69b88b3a117afe2e9b5`
+-	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
@@ -915,29 +931,31 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Wed, 14 Dec 2016 15:30:54 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Wed, 14 Dec 2016 15:30:55 GMT
-COPY multi:63f3f133271448127a56d400bfeecd1ab617d6e67215b9f497baf80e5d4550d1 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:53 GMT
+COPY multi:2b7e23dbf0e975ef1ec1f186511e2789ab94e8c8734ca9fa8419c893f7357d6c in /usr/local/bin/ 
+# Mon, 19 Dec 2016 19:25:54 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Mon, 19 Dec 2016 19:25:54 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 WORKDIR /var/www/html
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 EXPOSE 80/tcp
-# Wed, 14 Dec 2016 15:30:57 GMT
+# Mon, 19 Dec 2016 19:25:56 GMT
 CMD ["apache2-foreground"]
-# Mon, 19 Dec 2016 16:34:54 GMT
+# Tue, 20 Dec 2016 00:12:25 GMT
 RUN a2enmod rewrite
-# Mon, 19 Dec 2016 16:38:44 GMT
+# Tue, 20 Dec 2016 00:16:36 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring opcache pdo pdo_mysql pdo_pgsql zip
-# Mon, 19 Dec 2016 16:38:45 GMT
+# Tue, 20 Dec 2016 00:16:37 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:38 GMT
 WORKDIR /var/www/html
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:38 GMT
 ENV DRUPAL_VERSION=8.2.4
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:39 GMT
 ENV DRUPAL_MD5=288aa9978b5027e26f20df93b6295f6c
-# Mon, 19 Dec 2016 16:38:53 GMT
+# Tue, 20 Dec 2016 00:16:46 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites modules themes
 ```
 
@@ -986,35 +1004,35 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Wed, 14 Dec 2016 16:30:18 GMT  
 		Size: 13.3 MB (13300304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7cb09a53647711536712907c0d7d06dcad04d19089143f8ccb6077a9ed26aec`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 1.9 KB (1920 bytes)  
+	-	`sha256:b0ed76332d75a3585964e1b7a910d896ae3dcfedc34304ede9d658f1181881de`  
+		Last Modified: Mon, 19 Dec 2016 19:43:39 GMT  
+		Size: 2.0 KB (2013 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71ff1d92c5b1a1601724dfa7b4c87d05b9a59a3710c6b6ba773f28d0d8be192e`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 582.0 B  
+	-	`sha256:f674b02795e767dfd099ff19e4f99a7ba8345df8dd09554d2907423bcdab1bea`  
+		Last Modified: Mon, 19 Dec 2016 19:43:41 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:882a500d2899c2a19a37d8d003a541ddf1b2ff937244c3a7cd26e10b19c3811c`  
-		Last Modified: Mon, 19 Dec 2016 18:35:41 GMT  
-		Size: 293.0 B  
+	-	`sha256:3cd51d7d5669bf556e89a55f3c6120437daac9aaa2ed8e39840f1faf55cd6da0`  
+		Last Modified: Tue, 20 Dec 2016 00:18:43 GMT  
+		Size: 294.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a53ba3fddfa3001863de8c3e19a2dbfdf9332bb7fc698624d2ed22eb294baa58`  
-		Last Modified: Mon, 19 Dec 2016 18:38:10 GMT  
-		Size: 7.0 MB (7005791 bytes)  
+	-	`sha256:db71878f6945267b7fab97aac17eb9fe3f0a7c38e1436c2b1f2c356c30fc663c`  
+		Last Modified: Tue, 20 Dec 2016 00:20:46 GMT  
+		Size: 7.0 MB (7005773 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e92eecee301b34f5a15fa907857cc3ec9e31898c2b4f3d21ccdd5f7699a49fed`  
-		Last Modified: Mon, 19 Dec 2016 18:38:08 GMT  
-		Size: 332.0 B  
+	-	`sha256:8996ee9c6972a5330949087671a04d28de7a9e3c6cfd60172bc3f4dbce96b255`  
+		Last Modified: Tue, 20 Dec 2016 00:20:45 GMT  
+		Size: 333.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ebe9a0ea238a391f6323a32fec9b251edcaaf61f6fc257168ad1c02023ac6ac`  
-		Last Modified: Mon, 19 Dec 2016 18:38:26 GMT  
-		Size: 12.1 MB (12141840 bytes)  
+	-	`sha256:4931d3acf622a5235aa94767eae6fb44face58111bc6d5987d850b971ae1dc71`  
+		Last Modified: Tue, 20 Dec 2016 00:20:51 GMT  
+		Size: 12.1 MB (12141841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `drupal:8`
 
 ```console
-$ docker pull drupal@sha256:fd3727f2e8e3d5c2d4e8b999f0ee5530406cca0ca648572e1f297bc16416041f
+$ docker pull drupal@sha256:5bafc7017bedf9d535aad20402f2f57b45ef5fdcdfb515ae5e898451f3c092a4
 ```
 
 -	Platforms:
@@ -1024,9 +1042,10 @@ $ docker pull drupal@sha256:fd3727f2e8e3d5c2d4e8b999f0ee5530406cca0ca648572e1f29
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **176.9 MB (176923173 bytes)**  
+-	Total Size: **176.9 MB (176923249 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0dfef0bf797e6872799534323d5d1500954b754a4be91b56c7ca8709c0e65fe7`
+-	Image ID: `sha256:0f0e0d207f1cc323840f3dc1b3e92f6ae2b4fec96c65d69b88b3a117afe2e9b5`
+-	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
@@ -1080,29 +1099,31 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Wed, 14 Dec 2016 15:30:54 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Wed, 14 Dec 2016 15:30:55 GMT
-COPY multi:63f3f133271448127a56d400bfeecd1ab617d6e67215b9f497baf80e5d4550d1 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:53 GMT
+COPY multi:2b7e23dbf0e975ef1ec1f186511e2789ab94e8c8734ca9fa8419c893f7357d6c in /usr/local/bin/ 
+# Mon, 19 Dec 2016 19:25:54 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Mon, 19 Dec 2016 19:25:54 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 WORKDIR /var/www/html
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 EXPOSE 80/tcp
-# Wed, 14 Dec 2016 15:30:57 GMT
+# Mon, 19 Dec 2016 19:25:56 GMT
 CMD ["apache2-foreground"]
-# Mon, 19 Dec 2016 16:34:54 GMT
+# Tue, 20 Dec 2016 00:12:25 GMT
 RUN a2enmod rewrite
-# Mon, 19 Dec 2016 16:38:44 GMT
+# Tue, 20 Dec 2016 00:16:36 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring opcache pdo pdo_mysql pdo_pgsql zip
-# Mon, 19 Dec 2016 16:38:45 GMT
+# Tue, 20 Dec 2016 00:16:37 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:38 GMT
 WORKDIR /var/www/html
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:38 GMT
 ENV DRUPAL_VERSION=8.2.4
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:39 GMT
 ENV DRUPAL_MD5=288aa9978b5027e26f20df93b6295f6c
-# Mon, 19 Dec 2016 16:38:53 GMT
+# Tue, 20 Dec 2016 00:16:46 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites modules themes
 ```
 
@@ -1151,35 +1172,35 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Wed, 14 Dec 2016 16:30:18 GMT  
 		Size: 13.3 MB (13300304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7cb09a53647711536712907c0d7d06dcad04d19089143f8ccb6077a9ed26aec`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 1.9 KB (1920 bytes)  
+	-	`sha256:b0ed76332d75a3585964e1b7a910d896ae3dcfedc34304ede9d658f1181881de`  
+		Last Modified: Mon, 19 Dec 2016 19:43:39 GMT  
+		Size: 2.0 KB (2013 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71ff1d92c5b1a1601724dfa7b4c87d05b9a59a3710c6b6ba773f28d0d8be192e`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 582.0 B  
+	-	`sha256:f674b02795e767dfd099ff19e4f99a7ba8345df8dd09554d2907423bcdab1bea`  
+		Last Modified: Mon, 19 Dec 2016 19:43:41 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:882a500d2899c2a19a37d8d003a541ddf1b2ff937244c3a7cd26e10b19c3811c`  
-		Last Modified: Mon, 19 Dec 2016 18:35:41 GMT  
-		Size: 293.0 B  
+	-	`sha256:3cd51d7d5669bf556e89a55f3c6120437daac9aaa2ed8e39840f1faf55cd6da0`  
+		Last Modified: Tue, 20 Dec 2016 00:18:43 GMT  
+		Size: 294.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a53ba3fddfa3001863de8c3e19a2dbfdf9332bb7fc698624d2ed22eb294baa58`  
-		Last Modified: Mon, 19 Dec 2016 18:38:10 GMT  
-		Size: 7.0 MB (7005791 bytes)  
+	-	`sha256:db71878f6945267b7fab97aac17eb9fe3f0a7c38e1436c2b1f2c356c30fc663c`  
+		Last Modified: Tue, 20 Dec 2016 00:20:46 GMT  
+		Size: 7.0 MB (7005773 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e92eecee301b34f5a15fa907857cc3ec9e31898c2b4f3d21ccdd5f7699a49fed`  
-		Last Modified: Mon, 19 Dec 2016 18:38:08 GMT  
-		Size: 332.0 B  
+	-	`sha256:8996ee9c6972a5330949087671a04d28de7a9e3c6cfd60172bc3f4dbce96b255`  
+		Last Modified: Tue, 20 Dec 2016 00:20:45 GMT  
+		Size: 333.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ebe9a0ea238a391f6323a32fec9b251edcaaf61f6fc257168ad1c02023ac6ac`  
-		Last Modified: Mon, 19 Dec 2016 18:38:26 GMT  
-		Size: 12.1 MB (12141840 bytes)  
+	-	`sha256:4931d3acf622a5235aa94767eae6fb44face58111bc6d5987d850b971ae1dc71`  
+		Last Modified: Tue, 20 Dec 2016 00:20:51 GMT  
+		Size: 12.1 MB (12141841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `drupal:latest`
 
 ```console
-$ docker pull drupal@sha256:fd3727f2e8e3d5c2d4e8b999f0ee5530406cca0ca648572e1f297bc16416041f
+$ docker pull drupal@sha256:5bafc7017bedf9d535aad20402f2f57b45ef5fdcdfb515ae5e898451f3c092a4
 ```
 
 -	Platforms:
@@ -1189,9 +1210,10 @@ $ docker pull drupal@sha256:fd3727f2e8e3d5c2d4e8b999f0ee5530406cca0ca648572e1f29
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **176.9 MB (176923173 bytes)**  
+-	Total Size: **176.9 MB (176923249 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0dfef0bf797e6872799534323d5d1500954b754a4be91b56c7ca8709c0e65fe7`
+-	Image ID: `sha256:0f0e0d207f1cc323840f3dc1b3e92f6ae2b4fec96c65d69b88b3a117afe2e9b5`
+-	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
@@ -1245,29 +1267,31 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Wed, 14 Dec 2016 15:30:54 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Wed, 14 Dec 2016 15:30:55 GMT
-COPY multi:63f3f133271448127a56d400bfeecd1ab617d6e67215b9f497baf80e5d4550d1 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:53 GMT
+COPY multi:2b7e23dbf0e975ef1ec1f186511e2789ab94e8c8734ca9fa8419c893f7357d6c in /usr/local/bin/ 
+# Mon, 19 Dec 2016 19:25:54 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Mon, 19 Dec 2016 19:25:54 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 WORKDIR /var/www/html
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 EXPOSE 80/tcp
-# Wed, 14 Dec 2016 15:30:57 GMT
+# Mon, 19 Dec 2016 19:25:56 GMT
 CMD ["apache2-foreground"]
-# Mon, 19 Dec 2016 16:34:54 GMT
+# Tue, 20 Dec 2016 00:12:25 GMT
 RUN a2enmod rewrite
-# Mon, 19 Dec 2016 16:38:44 GMT
+# Tue, 20 Dec 2016 00:16:36 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring opcache pdo pdo_mysql pdo_pgsql zip
-# Mon, 19 Dec 2016 16:38:45 GMT
+# Tue, 20 Dec 2016 00:16:37 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:38 GMT
 WORKDIR /var/www/html
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:38 GMT
 ENV DRUPAL_VERSION=8.2.4
-# Mon, 19 Dec 2016 16:38:46 GMT
+# Tue, 20 Dec 2016 00:16:39 GMT
 ENV DRUPAL_MD5=288aa9978b5027e26f20df93b6295f6c
-# Mon, 19 Dec 2016 16:38:53 GMT
+# Tue, 20 Dec 2016 00:16:46 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites modules themes
 ```
 
@@ -1316,35 +1340,35 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Wed, 14 Dec 2016 16:30:18 GMT  
 		Size: 13.3 MB (13300304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7cb09a53647711536712907c0d7d06dcad04d19089143f8ccb6077a9ed26aec`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 1.9 KB (1920 bytes)  
+	-	`sha256:b0ed76332d75a3585964e1b7a910d896ae3dcfedc34304ede9d658f1181881de`  
+		Last Modified: Mon, 19 Dec 2016 19:43:39 GMT  
+		Size: 2.0 KB (2013 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71ff1d92c5b1a1601724dfa7b4c87d05b9a59a3710c6b6ba773f28d0d8be192e`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 582.0 B  
+	-	`sha256:f674b02795e767dfd099ff19e4f99a7ba8345df8dd09554d2907423bcdab1bea`  
+		Last Modified: Mon, 19 Dec 2016 19:43:41 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:882a500d2899c2a19a37d8d003a541ddf1b2ff937244c3a7cd26e10b19c3811c`  
-		Last Modified: Mon, 19 Dec 2016 18:35:41 GMT  
-		Size: 293.0 B  
+	-	`sha256:3cd51d7d5669bf556e89a55f3c6120437daac9aaa2ed8e39840f1faf55cd6da0`  
+		Last Modified: Tue, 20 Dec 2016 00:18:43 GMT  
+		Size: 294.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a53ba3fddfa3001863de8c3e19a2dbfdf9332bb7fc698624d2ed22eb294baa58`  
-		Last Modified: Mon, 19 Dec 2016 18:38:10 GMT  
-		Size: 7.0 MB (7005791 bytes)  
+	-	`sha256:db71878f6945267b7fab97aac17eb9fe3f0a7c38e1436c2b1f2c356c30fc663c`  
+		Last Modified: Tue, 20 Dec 2016 00:20:46 GMT  
+		Size: 7.0 MB (7005773 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e92eecee301b34f5a15fa907857cc3ec9e31898c2b4f3d21ccdd5f7699a49fed`  
-		Last Modified: Mon, 19 Dec 2016 18:38:08 GMT  
-		Size: 332.0 B  
+	-	`sha256:8996ee9c6972a5330949087671a04d28de7a9e3c6cfd60172bc3f4dbce96b255`  
+		Last Modified: Tue, 20 Dec 2016 00:20:45 GMT  
+		Size: 333.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1ebe9a0ea238a391f6323a32fec9b251edcaaf61f6fc257168ad1c02023ac6ac`  
-		Last Modified: Mon, 19 Dec 2016 18:38:26 GMT  
-		Size: 12.1 MB (12141840 bytes)  
+	-	`sha256:4931d3acf622a5235aa94767eae6fb44face58111bc6d5987d850b971ae1dc71`  
+		Last Modified: Tue, 20 Dec 2016 00:20:51 GMT  
+		Size: 12.1 MB (12141841 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `drupal:8.2.4-fpm`
 
 ```console
-$ docker pull drupal@sha256:ed21d59c99348726174a799f41803e3f5b22ade495499194d6a21782b08043f1
+$ docker pull drupal@sha256:dc395462114a6002e8caacae4d5518bc6cabaf606ec2a50cf0e1710f6e94efb4
 ```
 
 -	Platforms:
@@ -1354,9 +1378,10 @@ $ docker pull drupal@sha256:ed21d59c99348726174a799f41803e3f5b22ade495499194d6a2
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **173.6 MB (173571892 bytes)**  
+-	Total Size: **173.6 MB (173571966 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2992aa53cafa7f3e2dd204c403ce246d0e4c619e4407d4aadc04cc59d3feb90`
+-	Image ID: `sha256:c43d9b1b60b4678cad7546c0762f5d1b879d2f058ddb2564eceb5cfc96fc275b`
+-	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
@@ -1394,27 +1419,29 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Wed, 14 Dec 2016 15:34:37 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Wed, 14 Dec 2016 15:34:38 GMT
-COPY multi:63f3f133271448127a56d400bfeecd1ab617d6e67215b9f497baf80e5d4550d1 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:34:38 GMT
+# Mon, 19 Dec 2016 19:25:57 GMT
+COPY multi:5c1cc33896847ec6f8a128a1494e83c37aea885824061e1b8e308f9e09499956 in /usr/local/bin/ 
+# Mon, 19 Dec 2016 19:25:58 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Mon, 19 Dec 2016 19:25:58 GMT
 WORKDIR /var/www/html
-# Wed, 14 Dec 2016 15:34:39 GMT
+# Mon, 19 Dec 2016 19:25:59 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Wed, 14 Dec 2016 15:34:39 GMT
+# Mon, 19 Dec 2016 19:25:59 GMT
 EXPOSE 9000/tcp
-# Wed, 14 Dec 2016 15:34:40 GMT
+# Mon, 19 Dec 2016 19:26:00 GMT
 CMD ["php-fpm"]
-# Mon, 19 Dec 2016 16:40:13 GMT
+# Tue, 20 Dec 2016 00:18:10 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring opcache pdo pdo_mysql pdo_pgsql zip
-# Mon, 19 Dec 2016 16:40:14 GMT
+# Tue, 20 Dec 2016 00:18:18 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 19 Dec 2016 16:40:14 GMT
+# Tue, 20 Dec 2016 00:18:18 GMT
 WORKDIR /var/www/html
-# Mon, 19 Dec 2016 16:40:15 GMT
+# Tue, 20 Dec 2016 00:18:19 GMT
 ENV DRUPAL_VERSION=8.2.4
-# Mon, 19 Dec 2016 16:40:15 GMT
+# Tue, 20 Dec 2016 00:18:19 GMT
 ENV DRUPAL_MD5=288aa9978b5027e26f20df93b6295f6c
-# Mon, 19 Dec 2016 16:40:21 GMT
+# Tue, 20 Dec 2016 00:18:26 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites modules themes
 ```
 
@@ -1443,35 +1470,35 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Wed, 14 Dec 2016 16:30:58 GMT  
 		Size: 12.8 MB (12835450 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:682032e3aa5c7fe13027fe5d1656b372ae4b63f0637da4aa6cda08ab7a7577bc`  
-		Last Modified: Wed, 14 Dec 2016 16:30:55 GMT  
-		Size: 1.9 KB (1924 bytes)  
+	-	`sha256:643ac79e86d7b4dd6cfe1585d2114c25032d2020bc293640171daace143eec76`  
+		Last Modified: Mon, 19 Dec 2016 19:44:19 GMT  
+		Size: 2.0 KB (2007 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d62cf17ccf29de5cc499b00ca87e076c573f37b49f3fbecde4442848941507fa`  
-		Last Modified: Wed, 14 Dec 2016 16:30:54 GMT  
+	-	`sha256:58f6206070dd8c07a13c93b19c8d95ed6d7a0a399fe0bd594cac9020eb8f858c`  
+		Last Modified: Mon, 19 Dec 2016 19:44:23 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b44185fcc5af27da738d88bd7bbc09c6ddabbb9436003591cd4c0733c8e9d5e4`  
-		Last Modified: Wed, 14 Dec 2016 16:30:54 GMT  
-		Size: 7.7 KB (7689 bytes)  
+	-	`sha256:fc237f3a560a457c1c972e37bee2f9bdf9ca93a9b4cd1eeda5812c7ebec5342e`  
+		Last Modified: Mon, 19 Dec 2016 19:44:19 GMT  
+		Size: 7.7 KB (7691 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b70b8d7330afad96a460c6c9c60b04ba170dfe24d16067baedc0e81309ef2351`  
-		Last Modified: Mon, 19 Dec 2016 18:41:19 GMT  
-		Size: 7.0 MB (6983337 bytes)  
+	-	`sha256:0e0faba55ba82645b6da713136e3fe4d693cc8c84ce7a7e12b38418d55c7c3c4`  
+		Last Modified: Tue, 20 Dec 2016 00:23:35 GMT  
+		Size: 7.0 MB (6983325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:734cefe804ee577bdd6dc1ec2379921009e176ff3e0a4704a1420fbfdf4d33f8`  
-		Last Modified: Mon, 19 Dec 2016 18:41:14 GMT  
-		Size: 330.0 B  
+	-	`sha256:02bc72ceaa1cd229b9dc59e3c0d98091718952518aeaae4d1e086d36e630d7c9`  
+		Last Modified: Tue, 20 Dec 2016 00:23:32 GMT  
+		Size: 333.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:625ee79412230122623274a44fa01cb9e6c3578e0024872f64696eabd5bee608`  
-		Last Modified: Mon, 19 Dec 2016 18:41:28 GMT  
-		Size: 12.1 MB (12141842 bytes)  
+	-	`sha256:a1a40193bf7df7fac8955fb52fbc906ba9576cc02c0ecf987f47b7d3e8de0956`  
+		Last Modified: Tue, 20 Dec 2016 00:23:38 GMT  
+		Size: 12.1 MB (12141840 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `drupal:8.2-fpm`
 
 ```console
-$ docker pull drupal@sha256:ed21d59c99348726174a799f41803e3f5b22ade495499194d6a21782b08043f1
+$ docker pull drupal@sha256:dc395462114a6002e8caacae4d5518bc6cabaf606ec2a50cf0e1710f6e94efb4
 ```
 
 -	Platforms:
@@ -1481,9 +1508,10 @@ $ docker pull drupal@sha256:ed21d59c99348726174a799f41803e3f5b22ade495499194d6a2
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **173.6 MB (173571892 bytes)**  
+-	Total Size: **173.6 MB (173571966 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2992aa53cafa7f3e2dd204c403ce246d0e4c619e4407d4aadc04cc59d3feb90`
+-	Image ID: `sha256:c43d9b1b60b4678cad7546c0762f5d1b879d2f058ddb2564eceb5cfc96fc275b`
+-	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
@@ -1521,27 +1549,29 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Wed, 14 Dec 2016 15:34:37 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Wed, 14 Dec 2016 15:34:38 GMT
-COPY multi:63f3f133271448127a56d400bfeecd1ab617d6e67215b9f497baf80e5d4550d1 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:34:38 GMT
+# Mon, 19 Dec 2016 19:25:57 GMT
+COPY multi:5c1cc33896847ec6f8a128a1494e83c37aea885824061e1b8e308f9e09499956 in /usr/local/bin/ 
+# Mon, 19 Dec 2016 19:25:58 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Mon, 19 Dec 2016 19:25:58 GMT
 WORKDIR /var/www/html
-# Wed, 14 Dec 2016 15:34:39 GMT
+# Mon, 19 Dec 2016 19:25:59 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Wed, 14 Dec 2016 15:34:39 GMT
+# Mon, 19 Dec 2016 19:25:59 GMT
 EXPOSE 9000/tcp
-# Wed, 14 Dec 2016 15:34:40 GMT
+# Mon, 19 Dec 2016 19:26:00 GMT
 CMD ["php-fpm"]
-# Mon, 19 Dec 2016 16:40:13 GMT
+# Tue, 20 Dec 2016 00:18:10 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring opcache pdo pdo_mysql pdo_pgsql zip
-# Mon, 19 Dec 2016 16:40:14 GMT
+# Tue, 20 Dec 2016 00:18:18 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 19 Dec 2016 16:40:14 GMT
+# Tue, 20 Dec 2016 00:18:18 GMT
 WORKDIR /var/www/html
-# Mon, 19 Dec 2016 16:40:15 GMT
+# Tue, 20 Dec 2016 00:18:19 GMT
 ENV DRUPAL_VERSION=8.2.4
-# Mon, 19 Dec 2016 16:40:15 GMT
+# Tue, 20 Dec 2016 00:18:19 GMT
 ENV DRUPAL_MD5=288aa9978b5027e26f20df93b6295f6c
-# Mon, 19 Dec 2016 16:40:21 GMT
+# Tue, 20 Dec 2016 00:18:26 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites modules themes
 ```
 
@@ -1570,35 +1600,35 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Wed, 14 Dec 2016 16:30:58 GMT  
 		Size: 12.8 MB (12835450 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:682032e3aa5c7fe13027fe5d1656b372ae4b63f0637da4aa6cda08ab7a7577bc`  
-		Last Modified: Wed, 14 Dec 2016 16:30:55 GMT  
-		Size: 1.9 KB (1924 bytes)  
+	-	`sha256:643ac79e86d7b4dd6cfe1585d2114c25032d2020bc293640171daace143eec76`  
+		Last Modified: Mon, 19 Dec 2016 19:44:19 GMT  
+		Size: 2.0 KB (2007 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d62cf17ccf29de5cc499b00ca87e076c573f37b49f3fbecde4442848941507fa`  
-		Last Modified: Wed, 14 Dec 2016 16:30:54 GMT  
+	-	`sha256:58f6206070dd8c07a13c93b19c8d95ed6d7a0a399fe0bd594cac9020eb8f858c`  
+		Last Modified: Mon, 19 Dec 2016 19:44:23 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b44185fcc5af27da738d88bd7bbc09c6ddabbb9436003591cd4c0733c8e9d5e4`  
-		Last Modified: Wed, 14 Dec 2016 16:30:54 GMT  
-		Size: 7.7 KB (7689 bytes)  
+	-	`sha256:fc237f3a560a457c1c972e37bee2f9bdf9ca93a9b4cd1eeda5812c7ebec5342e`  
+		Last Modified: Mon, 19 Dec 2016 19:44:19 GMT  
+		Size: 7.7 KB (7691 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b70b8d7330afad96a460c6c9c60b04ba170dfe24d16067baedc0e81309ef2351`  
-		Last Modified: Mon, 19 Dec 2016 18:41:19 GMT  
-		Size: 7.0 MB (6983337 bytes)  
+	-	`sha256:0e0faba55ba82645b6da713136e3fe4d693cc8c84ce7a7e12b38418d55c7c3c4`  
+		Last Modified: Tue, 20 Dec 2016 00:23:35 GMT  
+		Size: 7.0 MB (6983325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:734cefe804ee577bdd6dc1ec2379921009e176ff3e0a4704a1420fbfdf4d33f8`  
-		Last Modified: Mon, 19 Dec 2016 18:41:14 GMT  
-		Size: 330.0 B  
+	-	`sha256:02bc72ceaa1cd229b9dc59e3c0d98091718952518aeaae4d1e086d36e630d7c9`  
+		Last Modified: Tue, 20 Dec 2016 00:23:32 GMT  
+		Size: 333.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:625ee79412230122623274a44fa01cb9e6c3578e0024872f64696eabd5bee608`  
-		Last Modified: Mon, 19 Dec 2016 18:41:28 GMT  
-		Size: 12.1 MB (12141842 bytes)  
+	-	`sha256:a1a40193bf7df7fac8955fb52fbc906ba9576cc02c0ecf987f47b7d3e8de0956`  
+		Last Modified: Tue, 20 Dec 2016 00:23:38 GMT  
+		Size: 12.1 MB (12141840 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `drupal:8-fpm`
 
 ```console
-$ docker pull drupal@sha256:ed21d59c99348726174a799f41803e3f5b22ade495499194d6a21782b08043f1
+$ docker pull drupal@sha256:dc395462114a6002e8caacae4d5518bc6cabaf606ec2a50cf0e1710f6e94efb4
 ```
 
 -	Platforms:
@@ -1608,9 +1638,10 @@ $ docker pull drupal@sha256:ed21d59c99348726174a799f41803e3f5b22ade495499194d6a2
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **173.6 MB (173571892 bytes)**  
+-	Total Size: **173.6 MB (173571966 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2992aa53cafa7f3e2dd204c403ce246d0e4c619e4407d4aadc04cc59d3feb90`
+-	Image ID: `sha256:c43d9b1b60b4678cad7546c0762f5d1b879d2f058ddb2564eceb5cfc96fc275b`
+-	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
@@ -1648,27 +1679,29 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Wed, 14 Dec 2016 15:34:37 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Wed, 14 Dec 2016 15:34:38 GMT
-COPY multi:63f3f133271448127a56d400bfeecd1ab617d6e67215b9f497baf80e5d4550d1 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:34:38 GMT
+# Mon, 19 Dec 2016 19:25:57 GMT
+COPY multi:5c1cc33896847ec6f8a128a1494e83c37aea885824061e1b8e308f9e09499956 in /usr/local/bin/ 
+# Mon, 19 Dec 2016 19:25:58 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Mon, 19 Dec 2016 19:25:58 GMT
 WORKDIR /var/www/html
-# Wed, 14 Dec 2016 15:34:39 GMT
+# Mon, 19 Dec 2016 19:25:59 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Wed, 14 Dec 2016 15:34:39 GMT
+# Mon, 19 Dec 2016 19:25:59 GMT
 EXPOSE 9000/tcp
-# Wed, 14 Dec 2016 15:34:40 GMT
+# Mon, 19 Dec 2016 19:26:00 GMT
 CMD ["php-fpm"]
-# Mon, 19 Dec 2016 16:40:13 GMT
+# Tue, 20 Dec 2016 00:18:10 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring opcache pdo pdo_mysql pdo_pgsql zip
-# Mon, 19 Dec 2016 16:40:14 GMT
+# Tue, 20 Dec 2016 00:18:18 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 19 Dec 2016 16:40:14 GMT
+# Tue, 20 Dec 2016 00:18:18 GMT
 WORKDIR /var/www/html
-# Mon, 19 Dec 2016 16:40:15 GMT
+# Tue, 20 Dec 2016 00:18:19 GMT
 ENV DRUPAL_VERSION=8.2.4
-# Mon, 19 Dec 2016 16:40:15 GMT
+# Tue, 20 Dec 2016 00:18:19 GMT
 ENV DRUPAL_MD5=288aa9978b5027e26f20df93b6295f6c
-# Mon, 19 Dec 2016 16:40:21 GMT
+# Tue, 20 Dec 2016 00:18:26 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites modules themes
 ```
 
@@ -1697,35 +1730,35 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Wed, 14 Dec 2016 16:30:58 GMT  
 		Size: 12.8 MB (12835450 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:682032e3aa5c7fe13027fe5d1656b372ae4b63f0637da4aa6cda08ab7a7577bc`  
-		Last Modified: Wed, 14 Dec 2016 16:30:55 GMT  
-		Size: 1.9 KB (1924 bytes)  
+	-	`sha256:643ac79e86d7b4dd6cfe1585d2114c25032d2020bc293640171daace143eec76`  
+		Last Modified: Mon, 19 Dec 2016 19:44:19 GMT  
+		Size: 2.0 KB (2007 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d62cf17ccf29de5cc499b00ca87e076c573f37b49f3fbecde4442848941507fa`  
-		Last Modified: Wed, 14 Dec 2016 16:30:54 GMT  
+	-	`sha256:58f6206070dd8c07a13c93b19c8d95ed6d7a0a399fe0bd594cac9020eb8f858c`  
+		Last Modified: Mon, 19 Dec 2016 19:44:23 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b44185fcc5af27da738d88bd7bbc09c6ddabbb9436003591cd4c0733c8e9d5e4`  
-		Last Modified: Wed, 14 Dec 2016 16:30:54 GMT  
-		Size: 7.7 KB (7689 bytes)  
+	-	`sha256:fc237f3a560a457c1c972e37bee2f9bdf9ca93a9b4cd1eeda5812c7ebec5342e`  
+		Last Modified: Mon, 19 Dec 2016 19:44:19 GMT  
+		Size: 7.7 KB (7691 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b70b8d7330afad96a460c6c9c60b04ba170dfe24d16067baedc0e81309ef2351`  
-		Last Modified: Mon, 19 Dec 2016 18:41:19 GMT  
-		Size: 7.0 MB (6983337 bytes)  
+	-	`sha256:0e0faba55ba82645b6da713136e3fe4d693cc8c84ce7a7e12b38418d55c7c3c4`  
+		Last Modified: Tue, 20 Dec 2016 00:23:35 GMT  
+		Size: 7.0 MB (6983325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:734cefe804ee577bdd6dc1ec2379921009e176ff3e0a4704a1420fbfdf4d33f8`  
-		Last Modified: Mon, 19 Dec 2016 18:41:14 GMT  
-		Size: 330.0 B  
+	-	`sha256:02bc72ceaa1cd229b9dc59e3c0d98091718952518aeaae4d1e086d36e630d7c9`  
+		Last Modified: Tue, 20 Dec 2016 00:23:32 GMT  
+		Size: 333.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:625ee79412230122623274a44fa01cb9e6c3578e0024872f64696eabd5bee608`  
-		Last Modified: Mon, 19 Dec 2016 18:41:28 GMT  
-		Size: 12.1 MB (12141842 bytes)  
+	-	`sha256:a1a40193bf7df7fac8955fb52fbc906ba9576cc02c0ecf987f47b7d3e8de0956`  
+		Last Modified: Tue, 20 Dec 2016 00:23:38 GMT  
+		Size: 12.1 MB (12141840 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `drupal:fpm`
 
 ```console
-$ docker pull drupal@sha256:ed21d59c99348726174a799f41803e3f5b22ade495499194d6a21782b08043f1
+$ docker pull drupal@sha256:dc395462114a6002e8caacae4d5518bc6cabaf606ec2a50cf0e1710f6e94efb4
 ```
 
 -	Platforms:
@@ -1735,9 +1768,10 @@ $ docker pull drupal@sha256:ed21d59c99348726174a799f41803e3f5b22ade495499194d6a2
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **173.6 MB (173571892 bytes)**  
+-	Total Size: **173.6 MB (173571966 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2992aa53cafa7f3e2dd204c403ce246d0e4c619e4407d4aadc04cc59d3feb90`
+-	Image ID: `sha256:c43d9b1b60b4678cad7546c0762f5d1b879d2f058ddb2564eceb5cfc96fc275b`
+-	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
@@ -1775,27 +1809,29 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Wed, 14 Dec 2016 15:34:37 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Wed, 14 Dec 2016 15:34:38 GMT
-COPY multi:63f3f133271448127a56d400bfeecd1ab617d6e67215b9f497baf80e5d4550d1 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:34:38 GMT
+# Mon, 19 Dec 2016 19:25:57 GMT
+COPY multi:5c1cc33896847ec6f8a128a1494e83c37aea885824061e1b8e308f9e09499956 in /usr/local/bin/ 
+# Mon, 19 Dec 2016 19:25:58 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Mon, 19 Dec 2016 19:25:58 GMT
 WORKDIR /var/www/html
-# Wed, 14 Dec 2016 15:34:39 GMT
+# Mon, 19 Dec 2016 19:25:59 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Wed, 14 Dec 2016 15:34:39 GMT
+# Mon, 19 Dec 2016 19:25:59 GMT
 EXPOSE 9000/tcp
-# Wed, 14 Dec 2016 15:34:40 GMT
+# Mon, 19 Dec 2016 19:26:00 GMT
 CMD ["php-fpm"]
-# Mon, 19 Dec 2016 16:40:13 GMT
+# Tue, 20 Dec 2016 00:18:10 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring opcache pdo pdo_mysql pdo_pgsql zip
-# Mon, 19 Dec 2016 16:40:14 GMT
+# Tue, 20 Dec 2016 00:18:18 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Mon, 19 Dec 2016 16:40:14 GMT
+# Tue, 20 Dec 2016 00:18:18 GMT
 WORKDIR /var/www/html
-# Mon, 19 Dec 2016 16:40:15 GMT
+# Tue, 20 Dec 2016 00:18:19 GMT
 ENV DRUPAL_VERSION=8.2.4
-# Mon, 19 Dec 2016 16:40:15 GMT
+# Tue, 20 Dec 2016 00:18:19 GMT
 ENV DRUPAL_MD5=288aa9978b5027e26f20df93b6295f6c
-# Mon, 19 Dec 2016 16:40:21 GMT
+# Tue, 20 Dec 2016 00:18:26 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites modules themes
 ```
 
@@ -1824,35 +1860,35 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Wed, 14 Dec 2016 16:30:58 GMT  
 		Size: 12.8 MB (12835450 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:682032e3aa5c7fe13027fe5d1656b372ae4b63f0637da4aa6cda08ab7a7577bc`  
-		Last Modified: Wed, 14 Dec 2016 16:30:55 GMT  
-		Size: 1.9 KB (1924 bytes)  
+	-	`sha256:643ac79e86d7b4dd6cfe1585d2114c25032d2020bc293640171daace143eec76`  
+		Last Modified: Mon, 19 Dec 2016 19:44:19 GMT  
+		Size: 2.0 KB (2007 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d62cf17ccf29de5cc499b00ca87e076c573f37b49f3fbecde4442848941507fa`  
-		Last Modified: Wed, 14 Dec 2016 16:30:54 GMT  
+	-	`sha256:58f6206070dd8c07a13c93b19c8d95ed6d7a0a399fe0bd594cac9020eb8f858c`  
+		Last Modified: Mon, 19 Dec 2016 19:44:23 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b44185fcc5af27da738d88bd7bbc09c6ddabbb9436003591cd4c0733c8e9d5e4`  
-		Last Modified: Wed, 14 Dec 2016 16:30:54 GMT  
-		Size: 7.7 KB (7689 bytes)  
+	-	`sha256:fc237f3a560a457c1c972e37bee2f9bdf9ca93a9b4cd1eeda5812c7ebec5342e`  
+		Last Modified: Mon, 19 Dec 2016 19:44:19 GMT  
+		Size: 7.7 KB (7691 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b70b8d7330afad96a460c6c9c60b04ba170dfe24d16067baedc0e81309ef2351`  
-		Last Modified: Mon, 19 Dec 2016 18:41:19 GMT  
-		Size: 7.0 MB (6983337 bytes)  
+	-	`sha256:0e0faba55ba82645b6da713136e3fe4d693cc8c84ce7a7e12b38418d55c7c3c4`  
+		Last Modified: Tue, 20 Dec 2016 00:23:35 GMT  
+		Size: 7.0 MB (6983325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:734cefe804ee577bdd6dc1ec2379921009e176ff3e0a4704a1420fbfdf4d33f8`  
-		Last Modified: Mon, 19 Dec 2016 18:41:14 GMT  
-		Size: 330.0 B  
+	-	`sha256:02bc72ceaa1cd229b9dc59e3c0d98091718952518aeaae4d1e086d36e630d7c9`  
+		Last Modified: Tue, 20 Dec 2016 00:23:32 GMT  
+		Size: 333.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:625ee79412230122623274a44fa01cb9e6c3578e0024872f64696eabd5bee608`  
-		Last Modified: Mon, 19 Dec 2016 18:41:28 GMT  
-		Size: 12.1 MB (12141842 bytes)  
+	-	`sha256:a1a40193bf7df7fac8955fb52fbc906ba9576cc02c0ecf987f47b7d3e8de0956`  
+		Last Modified: Tue, 20 Dec 2016 00:23:38 GMT  
+		Size: 12.1 MB (12141840 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `drupal:7.53-apache`
 
 ```console
-$ docker pull drupal@sha256:71fb76c9331149ad0615884de935d1fc8eea89ea2a3aae93b928f92fabd52589
+$ docker pull drupal@sha256:5a90d83c27d50e49c39ad3c35656ddd33231db9ab2b4dd30ff0ee43d00624a3f
 ```
 
 -	Platforms:
@@ -1862,9 +1898,10 @@ $ docker pull drupal@sha256:71fb76c9331149ad0615884de935d1fc8eea89ea2a3aae93b928
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **168.0 MB (167973862 bytes)**  
+-	Total Size: **168.0 MB (167973952 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ecf4cd273f4bc9395105122d4b258742b4a2d564e920463a4134e8adadea4a24`
+-	Image ID: `sha256:dcdf45cdda808499617d37e807d4caf8a3388bb64322d90c62021eb360faa7c1`
+-	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
@@ -1918,27 +1955,29 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Wed, 14 Dec 2016 15:30:54 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Wed, 14 Dec 2016 15:30:55 GMT
-COPY multi:63f3f133271448127a56d400bfeecd1ab617d6e67215b9f497baf80e5d4550d1 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:53 GMT
+COPY multi:2b7e23dbf0e975ef1ec1f186511e2789ab94e8c8734ca9fa8419c893f7357d6c in /usr/local/bin/ 
+# Mon, 19 Dec 2016 19:25:54 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Mon, 19 Dec 2016 19:25:54 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 WORKDIR /var/www/html
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 EXPOSE 80/tcp
-# Wed, 14 Dec 2016 15:30:57 GMT
+# Mon, 19 Dec 2016 19:25:56 GMT
 CMD ["apache2-foreground"]
-# Mon, 19 Dec 2016 16:34:54 GMT
+# Tue, 20 Dec 2016 00:12:25 GMT
 RUN a2enmod rewrite
-# Mon, 19 Dec 2016 16:36:07 GMT
+# Tue, 20 Dec 2016 00:13:41 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
-# Mon, 19 Dec 2016 16:36:08 GMT
+# Tue, 20 Dec 2016 00:13:41 GMT
 WORKDIR /var/www/html
-# Mon, 19 Dec 2016 16:36:08 GMT
+# Tue, 20 Dec 2016 00:13:42 GMT
 ENV DRUPAL_VERSION=7.53
-# Mon, 19 Dec 2016 16:36:08 GMT
+# Tue, 20 Dec 2016 00:13:42 GMT
 ENV DRUPAL_MD5=4230279ecca4f0cde652a219e10327e7
-# Mon, 19 Dec 2016 16:36:09 GMT
+# Tue, 20 Dec 2016 00:13:44 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
@@ -1987,31 +2026,31 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Wed, 14 Dec 2016 16:30:18 GMT  
 		Size: 13.3 MB (13300304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7cb09a53647711536712907c0d7d06dcad04d19089143f8ccb6077a9ed26aec`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 1.9 KB (1920 bytes)  
+	-	`sha256:b0ed76332d75a3585964e1b7a910d896ae3dcfedc34304ede9d658f1181881de`  
+		Last Modified: Mon, 19 Dec 2016 19:43:39 GMT  
+		Size: 2.0 KB (2013 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71ff1d92c5b1a1601724dfa7b4c87d05b9a59a3710c6b6ba773f28d0d8be192e`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 582.0 B  
+	-	`sha256:f674b02795e767dfd099ff19e4f99a7ba8345df8dd09554d2907423bcdab1bea`  
+		Last Modified: Mon, 19 Dec 2016 19:43:41 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:882a500d2899c2a19a37d8d003a541ddf1b2ff937244c3a7cd26e10b19c3811c`  
-		Last Modified: Mon, 19 Dec 2016 18:35:41 GMT  
-		Size: 293.0 B  
+	-	`sha256:3cd51d7d5669bf556e89a55f3c6120437daac9aaa2ed8e39840f1faf55cd6da0`  
+		Last Modified: Tue, 20 Dec 2016 00:18:43 GMT  
+		Size: 294.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3fecbe8ae5311d09b396db22c07ccb3ef9dd9c9033bd898970f40e5390b1569`  
-		Last Modified: Mon, 19 Dec 2016 18:35:46 GMT  
+	-	`sha256:c2b317a8d12b0cccc7e675416e5d1e96262459177bfe100df9be6f8efcd0060f`  
+		Last Modified: Tue, 20 Dec 2016 00:18:46 GMT  
 		Size: 6.9 MB (6910443 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c060f503048fb8c55e53a097417b80c356758f0cd7ebf13bcc91bd3f53a1438`  
-		Last Modified: Mon, 19 Dec 2016 18:35:45 GMT  
-		Size: 3.3 MB (3288209 bytes)  
+	-	`sha256:c4a941682c5a0e004423b4406ad931ccb815edc565c98c370b9ec8226edd5afc`  
+		Last Modified: Tue, 20 Dec 2016 00:18:45 GMT  
+		Size: 3.3 MB (3288207 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `drupal:7-apache`
 
 ```console
-$ docker pull drupal@sha256:71fb76c9331149ad0615884de935d1fc8eea89ea2a3aae93b928f92fabd52589
+$ docker pull drupal@sha256:5a90d83c27d50e49c39ad3c35656ddd33231db9ab2b4dd30ff0ee43d00624a3f
 ```
 
 -	Platforms:
@@ -2021,9 +2060,10 @@ $ docker pull drupal@sha256:71fb76c9331149ad0615884de935d1fc8eea89ea2a3aae93b928
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **168.0 MB (167973862 bytes)**  
+-	Total Size: **168.0 MB (167973952 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ecf4cd273f4bc9395105122d4b258742b4a2d564e920463a4134e8adadea4a24`
+-	Image ID: `sha256:dcdf45cdda808499617d37e807d4caf8a3388bb64322d90c62021eb360faa7c1`
+-	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
@@ -2077,27 +2117,29 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Wed, 14 Dec 2016 15:30:54 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Wed, 14 Dec 2016 15:30:55 GMT
-COPY multi:63f3f133271448127a56d400bfeecd1ab617d6e67215b9f497baf80e5d4550d1 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:53 GMT
+COPY multi:2b7e23dbf0e975ef1ec1f186511e2789ab94e8c8734ca9fa8419c893f7357d6c in /usr/local/bin/ 
+# Mon, 19 Dec 2016 19:25:54 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Mon, 19 Dec 2016 19:25:54 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 WORKDIR /var/www/html
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 EXPOSE 80/tcp
-# Wed, 14 Dec 2016 15:30:57 GMT
+# Mon, 19 Dec 2016 19:25:56 GMT
 CMD ["apache2-foreground"]
-# Mon, 19 Dec 2016 16:34:54 GMT
+# Tue, 20 Dec 2016 00:12:25 GMT
 RUN a2enmod rewrite
-# Mon, 19 Dec 2016 16:36:07 GMT
+# Tue, 20 Dec 2016 00:13:41 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
-# Mon, 19 Dec 2016 16:36:08 GMT
+# Tue, 20 Dec 2016 00:13:41 GMT
 WORKDIR /var/www/html
-# Mon, 19 Dec 2016 16:36:08 GMT
+# Tue, 20 Dec 2016 00:13:42 GMT
 ENV DRUPAL_VERSION=7.53
-# Mon, 19 Dec 2016 16:36:08 GMT
+# Tue, 20 Dec 2016 00:13:42 GMT
 ENV DRUPAL_MD5=4230279ecca4f0cde652a219e10327e7
-# Mon, 19 Dec 2016 16:36:09 GMT
+# Tue, 20 Dec 2016 00:13:44 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
@@ -2146,31 +2188,31 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Wed, 14 Dec 2016 16:30:18 GMT  
 		Size: 13.3 MB (13300304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7cb09a53647711536712907c0d7d06dcad04d19089143f8ccb6077a9ed26aec`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 1.9 KB (1920 bytes)  
+	-	`sha256:b0ed76332d75a3585964e1b7a910d896ae3dcfedc34304ede9d658f1181881de`  
+		Last Modified: Mon, 19 Dec 2016 19:43:39 GMT  
+		Size: 2.0 KB (2013 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71ff1d92c5b1a1601724dfa7b4c87d05b9a59a3710c6b6ba773f28d0d8be192e`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 582.0 B  
+	-	`sha256:f674b02795e767dfd099ff19e4f99a7ba8345df8dd09554d2907423bcdab1bea`  
+		Last Modified: Mon, 19 Dec 2016 19:43:41 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:882a500d2899c2a19a37d8d003a541ddf1b2ff937244c3a7cd26e10b19c3811c`  
-		Last Modified: Mon, 19 Dec 2016 18:35:41 GMT  
-		Size: 293.0 B  
+	-	`sha256:3cd51d7d5669bf556e89a55f3c6120437daac9aaa2ed8e39840f1faf55cd6da0`  
+		Last Modified: Tue, 20 Dec 2016 00:18:43 GMT  
+		Size: 294.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3fecbe8ae5311d09b396db22c07ccb3ef9dd9c9033bd898970f40e5390b1569`  
-		Last Modified: Mon, 19 Dec 2016 18:35:46 GMT  
+	-	`sha256:c2b317a8d12b0cccc7e675416e5d1e96262459177bfe100df9be6f8efcd0060f`  
+		Last Modified: Tue, 20 Dec 2016 00:18:46 GMT  
 		Size: 6.9 MB (6910443 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c060f503048fb8c55e53a097417b80c356758f0cd7ebf13bcc91bd3f53a1438`  
-		Last Modified: Mon, 19 Dec 2016 18:35:45 GMT  
-		Size: 3.3 MB (3288209 bytes)  
+	-	`sha256:c4a941682c5a0e004423b4406ad931ccb815edc565c98c370b9ec8226edd5afc`  
+		Last Modified: Tue, 20 Dec 2016 00:18:45 GMT  
+		Size: 3.3 MB (3288207 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `drupal:7.53`
 
 ```console
-$ docker pull drupal@sha256:71fb76c9331149ad0615884de935d1fc8eea89ea2a3aae93b928f92fabd52589
+$ docker pull drupal@sha256:5a90d83c27d50e49c39ad3c35656ddd33231db9ab2b4dd30ff0ee43d00624a3f
 ```
 
 -	Platforms:
@@ -2180,9 +2222,10 @@ $ docker pull drupal@sha256:71fb76c9331149ad0615884de935d1fc8eea89ea2a3aae93b928
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **168.0 MB (167973862 bytes)**  
+-	Total Size: **168.0 MB (167973952 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ecf4cd273f4bc9395105122d4b258742b4a2d564e920463a4134e8adadea4a24`
+-	Image ID: `sha256:dcdf45cdda808499617d37e807d4caf8a3388bb64322d90c62021eb360faa7c1`
+-	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
@@ -2236,27 +2279,29 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Wed, 14 Dec 2016 15:30:54 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Wed, 14 Dec 2016 15:30:55 GMT
-COPY multi:63f3f133271448127a56d400bfeecd1ab617d6e67215b9f497baf80e5d4550d1 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:53 GMT
+COPY multi:2b7e23dbf0e975ef1ec1f186511e2789ab94e8c8734ca9fa8419c893f7357d6c in /usr/local/bin/ 
+# Mon, 19 Dec 2016 19:25:54 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Mon, 19 Dec 2016 19:25:54 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 WORKDIR /var/www/html
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 EXPOSE 80/tcp
-# Wed, 14 Dec 2016 15:30:57 GMT
+# Mon, 19 Dec 2016 19:25:56 GMT
 CMD ["apache2-foreground"]
-# Mon, 19 Dec 2016 16:34:54 GMT
+# Tue, 20 Dec 2016 00:12:25 GMT
 RUN a2enmod rewrite
-# Mon, 19 Dec 2016 16:36:07 GMT
+# Tue, 20 Dec 2016 00:13:41 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
-# Mon, 19 Dec 2016 16:36:08 GMT
+# Tue, 20 Dec 2016 00:13:41 GMT
 WORKDIR /var/www/html
-# Mon, 19 Dec 2016 16:36:08 GMT
+# Tue, 20 Dec 2016 00:13:42 GMT
 ENV DRUPAL_VERSION=7.53
-# Mon, 19 Dec 2016 16:36:08 GMT
+# Tue, 20 Dec 2016 00:13:42 GMT
 ENV DRUPAL_MD5=4230279ecca4f0cde652a219e10327e7
-# Mon, 19 Dec 2016 16:36:09 GMT
+# Tue, 20 Dec 2016 00:13:44 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
@@ -2305,31 +2350,31 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Wed, 14 Dec 2016 16:30:18 GMT  
 		Size: 13.3 MB (13300304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7cb09a53647711536712907c0d7d06dcad04d19089143f8ccb6077a9ed26aec`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 1.9 KB (1920 bytes)  
+	-	`sha256:b0ed76332d75a3585964e1b7a910d896ae3dcfedc34304ede9d658f1181881de`  
+		Last Modified: Mon, 19 Dec 2016 19:43:39 GMT  
+		Size: 2.0 KB (2013 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71ff1d92c5b1a1601724dfa7b4c87d05b9a59a3710c6b6ba773f28d0d8be192e`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 582.0 B  
+	-	`sha256:f674b02795e767dfd099ff19e4f99a7ba8345df8dd09554d2907423bcdab1bea`  
+		Last Modified: Mon, 19 Dec 2016 19:43:41 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:882a500d2899c2a19a37d8d003a541ddf1b2ff937244c3a7cd26e10b19c3811c`  
-		Last Modified: Mon, 19 Dec 2016 18:35:41 GMT  
-		Size: 293.0 B  
+	-	`sha256:3cd51d7d5669bf556e89a55f3c6120437daac9aaa2ed8e39840f1faf55cd6da0`  
+		Last Modified: Tue, 20 Dec 2016 00:18:43 GMT  
+		Size: 294.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3fecbe8ae5311d09b396db22c07ccb3ef9dd9c9033bd898970f40e5390b1569`  
-		Last Modified: Mon, 19 Dec 2016 18:35:46 GMT  
+	-	`sha256:c2b317a8d12b0cccc7e675416e5d1e96262459177bfe100df9be6f8efcd0060f`  
+		Last Modified: Tue, 20 Dec 2016 00:18:46 GMT  
 		Size: 6.9 MB (6910443 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c060f503048fb8c55e53a097417b80c356758f0cd7ebf13bcc91bd3f53a1438`  
-		Last Modified: Mon, 19 Dec 2016 18:35:45 GMT  
-		Size: 3.3 MB (3288209 bytes)  
+	-	`sha256:c4a941682c5a0e004423b4406ad931ccb815edc565c98c370b9ec8226edd5afc`  
+		Last Modified: Tue, 20 Dec 2016 00:18:45 GMT  
+		Size: 3.3 MB (3288207 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `drupal:7`
 
 ```console
-$ docker pull drupal@sha256:71fb76c9331149ad0615884de935d1fc8eea89ea2a3aae93b928f92fabd52589
+$ docker pull drupal@sha256:5a90d83c27d50e49c39ad3c35656ddd33231db9ab2b4dd30ff0ee43d00624a3f
 ```
 
 -	Platforms:
@@ -2339,9 +2384,10 @@ $ docker pull drupal@sha256:71fb76c9331149ad0615884de935d1fc8eea89ea2a3aae93b928
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **168.0 MB (167973862 bytes)**  
+-	Total Size: **168.0 MB (167973952 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ecf4cd273f4bc9395105122d4b258742b4a2d564e920463a4134e8adadea4a24`
+-	Image ID: `sha256:dcdf45cdda808499617d37e807d4caf8a3388bb64322d90c62021eb360faa7c1`
+-	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
@@ -2395,27 +2441,29 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Wed, 14 Dec 2016 15:30:54 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Wed, 14 Dec 2016 15:30:55 GMT
-COPY multi:63f3f133271448127a56d400bfeecd1ab617d6e67215b9f497baf80e5d4550d1 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:53 GMT
+COPY multi:2b7e23dbf0e975ef1ec1f186511e2789ab94e8c8734ca9fa8419c893f7357d6c in /usr/local/bin/ 
+# Mon, 19 Dec 2016 19:25:54 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Mon, 19 Dec 2016 19:25:54 GMT
 COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 WORKDIR /var/www/html
-# Wed, 14 Dec 2016 15:30:56 GMT
+# Mon, 19 Dec 2016 19:25:55 GMT
 EXPOSE 80/tcp
-# Wed, 14 Dec 2016 15:30:57 GMT
+# Mon, 19 Dec 2016 19:25:56 GMT
 CMD ["apache2-foreground"]
-# Mon, 19 Dec 2016 16:34:54 GMT
+# Tue, 20 Dec 2016 00:12:25 GMT
 RUN a2enmod rewrite
-# Mon, 19 Dec 2016 16:36:07 GMT
+# Tue, 20 Dec 2016 00:13:41 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
-# Mon, 19 Dec 2016 16:36:08 GMT
+# Tue, 20 Dec 2016 00:13:41 GMT
 WORKDIR /var/www/html
-# Mon, 19 Dec 2016 16:36:08 GMT
+# Tue, 20 Dec 2016 00:13:42 GMT
 ENV DRUPAL_VERSION=7.53
-# Mon, 19 Dec 2016 16:36:08 GMT
+# Tue, 20 Dec 2016 00:13:42 GMT
 ENV DRUPAL_MD5=4230279ecca4f0cde652a219e10327e7
-# Mon, 19 Dec 2016 16:36:09 GMT
+# Tue, 20 Dec 2016 00:13:44 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
@@ -2464,31 +2512,31 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Wed, 14 Dec 2016 16:30:18 GMT  
 		Size: 13.3 MB (13300304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7cb09a53647711536712907c0d7d06dcad04d19089143f8ccb6077a9ed26aec`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 1.9 KB (1920 bytes)  
+	-	`sha256:b0ed76332d75a3585964e1b7a910d896ae3dcfedc34304ede9d658f1181881de`  
+		Last Modified: Mon, 19 Dec 2016 19:43:39 GMT  
+		Size: 2.0 KB (2013 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71ff1d92c5b1a1601724dfa7b4c87d05b9a59a3710c6b6ba773f28d0d8be192e`  
-		Last Modified: Wed, 14 Dec 2016 16:30:12 GMT  
-		Size: 582.0 B  
+	-	`sha256:f674b02795e767dfd099ff19e4f99a7ba8345df8dd09554d2907423bcdab1bea`  
+		Last Modified: Mon, 19 Dec 2016 19:43:41 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:882a500d2899c2a19a37d8d003a541ddf1b2ff937244c3a7cd26e10b19c3811c`  
-		Last Modified: Mon, 19 Dec 2016 18:35:41 GMT  
-		Size: 293.0 B  
+	-	`sha256:3cd51d7d5669bf556e89a55f3c6120437daac9aaa2ed8e39840f1faf55cd6da0`  
+		Last Modified: Tue, 20 Dec 2016 00:18:43 GMT  
+		Size: 294.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3fecbe8ae5311d09b396db22c07ccb3ef9dd9c9033bd898970f40e5390b1569`  
-		Last Modified: Mon, 19 Dec 2016 18:35:46 GMT  
+	-	`sha256:c2b317a8d12b0cccc7e675416e5d1e96262459177bfe100df9be6f8efcd0060f`  
+		Last Modified: Tue, 20 Dec 2016 00:18:46 GMT  
 		Size: 6.9 MB (6910443 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c060f503048fb8c55e53a097417b80c356758f0cd7ebf13bcc91bd3f53a1438`  
-		Last Modified: Mon, 19 Dec 2016 18:35:45 GMT  
-		Size: 3.3 MB (3288209 bytes)  
+	-	`sha256:c4a941682c5a0e004423b4406ad931ccb815edc565c98c370b9ec8226edd5afc`  
+		Last Modified: Tue, 20 Dec 2016 00:18:45 GMT  
+		Size: 3.3 MB (3288207 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `drupal:7.53-fpm`
 
 ```console
-$ docker pull drupal@sha256:09611b76475ba2925dc8bdc2901912168a09a4733daa5e44a40a726a694e6192
+$ docker pull drupal@sha256:7b81bf72fb656241085218104161ba6b80ab770129f864f37b7f67b5587f9afd
 ```
 
 -	Platforms:
@@ -2498,9 +2546,10 @@ $ docker pull drupal@sha256:09611b76475ba2925dc8bdc2901912168a09a4733daa5e44a40a
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.6 MB (164622660 bytes)**  
+-	Total Size: **164.6 MB (164622743 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab366789eb60b9a5e82698ad72781b0ecefc3fb334626275937bdea7a980e259`
+-	Image ID: `sha256:28d34c580c916cd58e77f026c715e44c93c30258039978f7ff384b9313421834`
+-	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
@@ -2538,25 +2587,27 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Wed, 14 Dec 2016 15:34:37 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Wed, 14 Dec 2016 15:34:38 GMT
-COPY multi:63f3f133271448127a56d400bfeecd1ab617d6e67215b9f497baf80e5d4550d1 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:34:38 GMT
+# Mon, 19 Dec 2016 19:25:57 GMT
+COPY multi:5c1cc33896847ec6f8a128a1494e83c37aea885824061e1b8e308f9e09499956 in /usr/local/bin/ 
+# Mon, 19 Dec 2016 19:25:58 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Mon, 19 Dec 2016 19:25:58 GMT
 WORKDIR /var/www/html
-# Wed, 14 Dec 2016 15:34:39 GMT
+# Mon, 19 Dec 2016 19:25:59 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Wed, 14 Dec 2016 15:34:39 GMT
+# Mon, 19 Dec 2016 19:25:59 GMT
 EXPOSE 9000/tcp
-# Wed, 14 Dec 2016 15:34:40 GMT
+# Mon, 19 Dec 2016 19:26:00 GMT
 CMD ["php-fpm"]
-# Mon, 19 Dec 2016 16:37:22 GMT
+# Tue, 20 Dec 2016 00:15:02 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
-# Mon, 19 Dec 2016 16:37:22 GMT
+# Tue, 20 Dec 2016 00:15:05 GMT
 WORKDIR /var/www/html
-# Mon, 19 Dec 2016 16:37:22 GMT
+# Tue, 20 Dec 2016 00:15:05 GMT
 ENV DRUPAL_VERSION=7.53
-# Mon, 19 Dec 2016 16:37:23 GMT
+# Tue, 20 Dec 2016 00:15:05 GMT
 ENV DRUPAL_MD5=4230279ecca4f0cde652a219e10327e7
-# Mon, 19 Dec 2016 16:37:24 GMT
+# Tue, 20 Dec 2016 00:15:07 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
@@ -2585,31 +2636,31 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Wed, 14 Dec 2016 16:30:58 GMT  
 		Size: 12.8 MB (12835450 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:682032e3aa5c7fe13027fe5d1656b372ae4b63f0637da4aa6cda08ab7a7577bc`  
-		Last Modified: Wed, 14 Dec 2016 16:30:55 GMT  
-		Size: 1.9 KB (1924 bytes)  
+	-	`sha256:643ac79e86d7b4dd6cfe1585d2114c25032d2020bc293640171daace143eec76`  
+		Last Modified: Mon, 19 Dec 2016 19:44:19 GMT  
+		Size: 2.0 KB (2007 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d62cf17ccf29de5cc499b00ca87e076c573f37b49f3fbecde4442848941507fa`  
-		Last Modified: Wed, 14 Dec 2016 16:30:54 GMT  
+	-	`sha256:58f6206070dd8c07a13c93b19c8d95ed6d7a0a399fe0bd594cac9020eb8f858c`  
+		Last Modified: Mon, 19 Dec 2016 19:44:23 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b44185fcc5af27da738d88bd7bbc09c6ddabbb9436003591cd4c0733c8e9d5e4`  
-		Last Modified: Wed, 14 Dec 2016 16:30:54 GMT  
-		Size: 7.7 KB (7689 bytes)  
+	-	`sha256:fc237f3a560a457c1c972e37bee2f9bdf9ca93a9b4cd1eeda5812c7ebec5342e`  
+		Last Modified: Mon, 19 Dec 2016 19:44:19 GMT  
+		Size: 7.7 KB (7691 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13e0eace47a48a47e1a5dc18d9bc63acaaa4fcad40d81efe57a0440f73eb59d7`  
-		Last Modified: Mon, 19 Dec 2016 18:37:24 GMT  
-		Size: 6.9 MB (6888083 bytes)  
+	-	`sha256:3fa5c7dd01241d59ed369c0b3a443de9e0522f5cada6890cf64122a949d99cda`  
+		Last Modified: Tue, 20 Dec 2016 00:20:01 GMT  
+		Size: 6.9 MB (6888070 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:483b180516e93706975d731183cf15ab62aa30523c3f6009b7a901f24ce31a09`  
-		Last Modified: Mon, 19 Dec 2016 18:37:24 GMT  
-		Size: 3.3 MB (3288194 bytes)  
+	-	`sha256:f5121dc5faf430558318e303d83276ef6d0f63504be2ede5455d76a05789a508`  
+		Last Modified: Tue, 20 Dec 2016 00:20:00 GMT  
+		Size: 3.3 MB (3288205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `drupal:7-fpm`
 
 ```console
-$ docker pull drupal@sha256:09611b76475ba2925dc8bdc2901912168a09a4733daa5e44a40a726a694e6192
+$ docker pull drupal@sha256:7b81bf72fb656241085218104161ba6b80ab770129f864f37b7f67b5587f9afd
 ```
 
 -	Platforms:
@@ -2619,9 +2670,10 @@ $ docker pull drupal@sha256:09611b76475ba2925dc8bdc2901912168a09a4733daa5e44a40a
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.6 MB (164622660 bytes)**  
+-	Total Size: **164.6 MB (164622743 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab366789eb60b9a5e82698ad72781b0ecefc3fb334626275937bdea7a980e259`
+-	Image ID: `sha256:28d34c580c916cd58e77f026c715e44c93c30258039978f7ff384b9313421834`
+-	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
@@ -2659,25 +2711,27 @@ RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Wed, 14 Dec 2016 15:34:37 GMT
 RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Wed, 14 Dec 2016 15:34:38 GMT
-COPY multi:63f3f133271448127a56d400bfeecd1ab617d6e67215b9f497baf80e5d4550d1 in /usr/local/bin/ 
-# Wed, 14 Dec 2016 15:34:38 GMT
+# Mon, 19 Dec 2016 19:25:57 GMT
+COPY multi:5c1cc33896847ec6f8a128a1494e83c37aea885824061e1b8e308f9e09499956 in /usr/local/bin/ 
+# Mon, 19 Dec 2016 19:25:58 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Mon, 19 Dec 2016 19:25:58 GMT
 WORKDIR /var/www/html
-# Wed, 14 Dec 2016 15:34:39 GMT
+# Mon, 19 Dec 2016 19:25:59 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Wed, 14 Dec 2016 15:34:39 GMT
+# Mon, 19 Dec 2016 19:25:59 GMT
 EXPOSE 9000/tcp
-# Wed, 14 Dec 2016 15:34:40 GMT
+# Mon, 19 Dec 2016 19:26:00 GMT
 CMD ["php-fpm"]
-# Mon, 19 Dec 2016 16:37:22 GMT
+# Tue, 20 Dec 2016 00:15:02 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
-# Mon, 19 Dec 2016 16:37:22 GMT
+# Tue, 20 Dec 2016 00:15:05 GMT
 WORKDIR /var/www/html
-# Mon, 19 Dec 2016 16:37:22 GMT
+# Tue, 20 Dec 2016 00:15:05 GMT
 ENV DRUPAL_VERSION=7.53
-# Mon, 19 Dec 2016 16:37:23 GMT
+# Tue, 20 Dec 2016 00:15:05 GMT
 ENV DRUPAL_MD5=4230279ecca4f0cde652a219e10327e7
-# Mon, 19 Dec 2016 16:37:24 GMT
+# Tue, 20 Dec 2016 00:15:07 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
@@ -2706,23 +2760,23 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Wed, 14 Dec 2016 16:30:58 GMT  
 		Size: 12.8 MB (12835450 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:682032e3aa5c7fe13027fe5d1656b372ae4b63f0637da4aa6cda08ab7a7577bc`  
-		Last Modified: Wed, 14 Dec 2016 16:30:55 GMT  
-		Size: 1.9 KB (1924 bytes)  
+	-	`sha256:643ac79e86d7b4dd6cfe1585d2114c25032d2020bc293640171daace143eec76`  
+		Last Modified: Mon, 19 Dec 2016 19:44:19 GMT  
+		Size: 2.0 KB (2007 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d62cf17ccf29de5cc499b00ca87e076c573f37b49f3fbecde4442848941507fa`  
-		Last Modified: Wed, 14 Dec 2016 16:30:54 GMT  
+	-	`sha256:58f6206070dd8c07a13c93b19c8d95ed6d7a0a399fe0bd594cac9020eb8f858c`  
+		Last Modified: Mon, 19 Dec 2016 19:44:23 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b44185fcc5af27da738d88bd7bbc09c6ddabbb9436003591cd4c0733c8e9d5e4`  
-		Last Modified: Wed, 14 Dec 2016 16:30:54 GMT  
-		Size: 7.7 KB (7689 bytes)  
+	-	`sha256:fc237f3a560a457c1c972e37bee2f9bdf9ca93a9b4cd1eeda5812c7ebec5342e`  
+		Last Modified: Mon, 19 Dec 2016 19:44:19 GMT  
+		Size: 7.7 KB (7691 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13e0eace47a48a47e1a5dc18d9bc63acaaa4fcad40d81efe57a0440f73eb59d7`  
-		Last Modified: Mon, 19 Dec 2016 18:37:24 GMT  
-		Size: 6.9 MB (6888083 bytes)  
+	-	`sha256:3fa5c7dd01241d59ed369c0b3a443de9e0522f5cada6890cf64122a949d99cda`  
+		Last Modified: Tue, 20 Dec 2016 00:20:01 GMT  
+		Size: 6.9 MB (6888070 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:483b180516e93706975d731183cf15ab62aa30523c3f6009b7a901f24ce31a09`  
-		Last Modified: Mon, 19 Dec 2016 18:37:24 GMT  
-		Size: 3.3 MB (3288194 bytes)  
+	-	`sha256:f5121dc5faf430558318e303d83276ef6d0f63504be2ede5455d76a05789a508`  
+		Last Modified: Tue, 20 Dec 2016 00:20:00 GMT  
+		Size: 3.3 MB (3288205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

@@ -1,7 +1,7 @@
 ## `kaazing-gateway:latest`
 
 ```console
-$ docker pull kaazing-gateway@sha256:0c298aeb9e49e4742fca15c67c58574d8b285437c3a9848eb09f823bbc003886
+$ docker pull kaazing-gateway@sha256:41d79c32dbb869bd6fec5265e443c2a836124a3e8750c8811defa446c85bd8ac
 ```
 
 -	Platforms:
@@ -11,98 +11,98 @@ $ docker pull kaazing-gateway@sha256:0c298aeb9e49e4742fca15c67c58574d8b285437c3a
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.7 MB (138741010 bytes)**  
+-	Total Size: **138.7 MB (138749239 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f31871144237b053e12c10dff5c1abbc74a459bb2d683d7aed63042d1c79120b`
+-	Image ID: `sha256:66abb07bca828f06b32f3a744b563d011e42b17e2314e6e596be1f3963f93381`
 -	Default Command: `["gateway.start"]`
 
 ```dockerfile
-# Mon, 07 Nov 2016 20:30:25 GMT
-ADD file:41ea5187c50116884c38d9ec51d920d79cfaeb2a61c52e07a97f457419a10a4f in / 
-# Mon, 07 Nov 2016 20:30:26 GMT
+# Tue, 13 Dec 2016 22:10:59 GMT
+ADD file:1d214d2782eaccc743b8d683ccecf2f87f12a0ecdfbcd6fdf4943ce616f23870 in / 
+# Tue, 13 Dec 2016 22:10:59 GMT
 CMD ["/bin/bash"]
-# Mon, 07 Nov 2016 22:27:33 GMT
+# Tue, 13 Dec 2016 23:00:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 08 Nov 2016 18:52:12 GMT
+# Tue, 13 Dec 2016 23:53:32 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 08 Nov 2016 18:53:53 GMT
+# Tue, 13 Dec 2016 23:55:01 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 08 Nov 2016 18:53:53 GMT
+# Tue, 13 Dec 2016 23:55:02 GMT
 ENV LANG=C.UTF-8
-# Tue, 08 Nov 2016 18:53:54 GMT
+# Tue, 13 Dec 2016 23:55:03 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 08 Nov 2016 18:53:55 GMT
+# Tue, 13 Dec 2016 23:55:03 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
-# Tue, 08 Nov 2016 18:53:55 GMT
+# Tue, 13 Dec 2016 23:55:04 GMT
 ENV JAVA_VERSION=8u111
-# Tue, 08 Nov 2016 18:53:55 GMT
+# Tue, 13 Dec 2016 23:55:04 GMT
 ENV JAVA_DEBIAN_VERSION=8u111-b14-2~bpo8+1
-# Tue, 08 Nov 2016 18:53:56 GMT
+# Tue, 13 Dec 2016 23:55:04 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20140324
-# Tue, 08 Nov 2016 18:54:18 GMT
+# Tue, 13 Dec 2016 23:55:25 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 08 Nov 2016 18:54:26 GMT
+# Tue, 13 Dec 2016 23:55:26 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Tue, 08 Nov 2016 20:22:19 GMT
+# Wed, 14 Dec 2016 00:57:42 GMT
 MAINTAINER Kaazing Docker Maintainers, contact via github issues: https://github.com/kaazing/gateway.docker/issues
-# Tue, 08 Nov 2016 20:22:21 GMT
+# Wed, 14 Dec 2016 00:57:44 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys F8F4B66E022A4668E532DAC03AA0B82C385B4D59
-# Tue, 15 Nov 2016 18:23:03 GMT
+# Wed, 14 Dec 2016 00:57:44 GMT
 ENV KAAZING_GATEWAY_VERSION=5.2.5
-# Tue, 15 Nov 2016 18:23:03 GMT
+# Wed, 14 Dec 2016 00:57:45 GMT
 ENV KAAZING_GATEWAY_URL=https://oss.sonatype.org/content/repositories/releases/org/kaazing/gateway.distribution/5.2.5/gateway.distribution-5.2.5.tar.gz
-# Tue, 15 Nov 2016 18:23:04 GMT
+# Wed, 14 Dec 2016 00:57:46 GMT
 WORKDIR /kaazing-gateway
-# Tue, 15 Nov 2016 18:23:14 GMT
+# Wed, 14 Dec 2016 00:57:52 GMT
 RUN curl -fSL -o gateway.tar.gz $KAAZING_GATEWAY_URL 	&& curl -fSL -o gateway.tar.gz.asc ${KAAZING_GATEWAY_URL}.asc 	&& gpg --verify gateway.tar.gz.asc 	&& tar -xvf gateway.tar.gz --strip-components=1 	&& rm gateway.tar.gz*
-# Tue, 15 Nov 2016 18:23:17 GMT
+# Wed, 14 Dec 2016 00:57:52 GMT
 ENV GATEWAY_OPTS=-Xmx512m -Djava.security.egd=file:/dev/urandom
-# Tue, 15 Nov 2016 18:23:17 GMT
+# Wed, 14 Dec 2016 00:57:52 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/kaazing-gateway/bin
-# Tue, 15 Nov 2016 18:23:18 GMT
+# Wed, 14 Dec 2016 00:57:53 GMT
 EXPOSE 8000/tcp
-# Tue, 15 Nov 2016 18:23:18 GMT
+# Wed, 14 Dec 2016 00:57:53 GMT
 CMD ["gateway.start"]
 ```
 
 -	Layers:
-	-	`sha256:386a066cd84a33a04d560c42bef66d1dd64ebfc76de78550e5fd0f8d57778bca`  
-		Last Modified: Mon, 07 Nov 2016 20:34:04 GMT  
-		Size: 51.4 MB (51356989 bytes)  
+	-	`sha256:75a822cd7888e394c49828b951061402d31745f596b1f502758570f2d0ee79e2`  
+		Last Modified: Tue, 13 Dec 2016 22:16:41 GMT  
+		Size: 51.4 MB (51363125 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75ea8418708338e40dce9179cfe97fd116831f1601be50fef48ea6011653c986`  
-		Last Modified: Mon, 07 Nov 2016 22:57:05 GMT  
-		Size: 18.5 MB (18528477 bytes)  
+	-	`sha256:57de64c72267e88e952b064236cb906c7626f7c07a1a2d5900cf6953e72632b3`  
+		Last Modified: Wed, 14 Dec 2016 03:04:38 GMT  
+		Size: 18.5 MB (18529983 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e2e387eb26a1afa07fb24ab119e8680fc80f43a194890da1d1bb21f76e23c5e`  
-		Last Modified: Tue, 08 Nov 2016 19:04:01 GMT  
-		Size: 566.9 KB (566896 bytes)  
+	-	`sha256:cd1fc1696ecd26a5941dda9fb149af093b44010744b855d220fc44264a5a0f15`  
+		Last Modified: Wed, 14 Dec 2016 03:09:15 GMT  
+		Size: 567.0 KB (566962 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eef540699244c02b2a8e14c3b4f335314506cb4b12e15c867535cb20ac429a37`  
-		Last Modified: Tue, 08 Nov 2016 19:11:43 GMT  
-		Size: 217.0 B  
+	-	`sha256:34836fffacad04a2dbcda9aeb95227d7b6c9474e76befa878667d9cac93c5e1b`  
+		Last Modified: Wed, 14 Dec 2016 03:17:33 GMT  
+		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1624a2f8d1142bb2aed22223df10c5416ff37b599ff48c724d23347d37b2b20e`  
-		Last Modified: Tue, 08 Nov 2016 19:11:45 GMT  
-		Size: 242.0 B  
+	-	`sha256:4f4f57ee64ee701a626649566d2cb26d8fe7f02b9d9aed797b19c1a2cca3077b`  
+		Last Modified: Wed, 14 Dec 2016 03:17:33 GMT  
+		Size: 243.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7018f4ec6e0ab2d452cd6ac9600b8cfa25bcd10c603db8ad9107677e9f8fe15e`  
-		Last Modified: Tue, 08 Nov 2016 19:12:03 GMT  
-		Size: 53.5 MB (53450336 bytes)  
+	-	`sha256:975b9daf71f592b2408562d1dd1cc8593b6a97a1399c2b9b4a2e453090cf8884`  
+		Last Modified: Wed, 14 Dec 2016 03:17:46 GMT  
+		Size: 53.5 MB (53450833 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ca3bc2ad3b37551550f7c86d23f4e25066740db6d2f99c3ba99c0f9e0a4d3ec`  
-		Last Modified: Tue, 08 Nov 2016 19:11:44 GMT  
-		Size: 284.2 KB (284177 bytes)  
+	-	`sha256:6c6cde91351aecc55b685935d3a6c3f2a189dfe3850627ef8dcbe8caac6e2207`  
+		Last Modified: Wed, 14 Dec 2016 03:17:33 GMT  
+		Size: 284.2 KB (284199 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6959f796ce7d46a2112ab57fbd9bc18355907f1c1b766d81fe0ffb620e8aea1f`  
-		Last Modified: Tue, 08 Nov 2016 20:22:41 GMT  
-		Size: 5.9 KB (5924 bytes)  
+	-	`sha256:97bfc59a3e7bb2b5d5b16b2600e00566e45810f8876e0ec647ad1c4ec4ff797a`  
+		Last Modified: Mon, 19 Dec 2016 23:33:04 GMT  
+		Size: 5.9 KB (5931 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:469539f1b08ca846e34e24009870099546584041ea7248aa81663f540cf26564`  
-		Last Modified: Tue, 15 Nov 2016 18:23:30 GMT  
-		Size: 102.0 B  
+	-	`sha256:d9e969007ca1a122eca79387cf2be1d2d584dc4febaf7a1be94e87170da739b2`  
+		Last Modified: Mon, 19 Dec 2016 23:33:04 GMT  
+		Size: 101.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5248ddb08c2007995a01688270a6d5af0a58ee67204be61ca9e38f0bf3a9d5c6`  
-		Last Modified: Tue, 15 Nov 2016 18:23:33 GMT  
-		Size: 14.5 MB (14547650 bytes)  
+	-	`sha256:b5d75352be145fdded192e4b10ee4c255b7e8dff2228e56b7267fd026748f282`  
+		Last Modified: Mon, 19 Dec 2016 23:33:08 GMT  
+		Size: 14.5 MB (14547647 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
