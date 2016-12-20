@@ -2,9 +2,10 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9bde0a0096230d9707b159e1897247d82dece1393c1029616e767f94bbc0599d`
-- Created: `2016-12-14T15:08:29.583970964Z`
+- Image ID: `sha256:febbb7075f6387e8dc2661b8ef096fbc76bca74710fdc5c249ff45323a8095dd`
+- Created: `2016-12-19T19:25:42.207819916Z`
 - Arch: `linux`/`amd64`
+- Entrypoint: `["docker-php-entrypoint"]`
 - Command: `["php-fpm"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
