@@ -77,7 +77,7 @@ CMD ["server" "-dev"]
 ## `vault:0.6`
 
 ```console
-$ docker pull vault@sha256:e11c35f4b708f6220fa591eab451853b9a428fc1143dfc3c04141ff6146a01bc
+$ docker pull vault@sha256:187339a4370439d059e5073b9d46d0023c4eb8f9f49159c83f98e1c23152dc0b
 ```
 
 -	Platforms:
@@ -87,9 +87,9 @@ $ docker pull vault@sha256:e11c35f4b708f6220fa591eab451853b9a428fc1143dfc3c04141
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.0 MB (15980009 bytes)**  
+-	Total Size: **16.0 MB (15980167 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34e074f9e62e11bf997d101ac0339dfeb4116d34777c0e4c406b8b753e28cb4c`
+-	Image ID: `sha256:0dda00ae1660d0fe187d6b9663fa2b9782271c59f1ae72e82a4ec4397d854490`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["server","-dev"]`
 
@@ -114,13 +114,11 @@ VOLUME [/vault/logs]
 VOLUME [/vault/file]
 # Fri, 16 Dec 2016 22:42:49 GMT
 EXPOSE 8200/tcp
-# Fri, 16 Dec 2016 22:42:49 GMT
-COPY file:325eb85d136af037ccb569364759f15f79c233fd0d377d2bf63bd99d474f30c1 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 16 Dec 2016 22:42:49 GMT
+# Wed, 21 Dec 2016 01:11:02 GMT
+COPY file:01d88618f782cb03a968fcc22db42601b6f76608f95edc07ffeb2a3b7a2db58d in /usr/local/bin/docker-entrypoint.sh 
+# Wed, 21 Dec 2016 01:11:02 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Dec 2016 22:42:50 GMT
-STOPSIGNAL [SIGINT]
-# Fri, 16 Dec 2016 22:42:50 GMT
+# Wed, 21 Dec 2016 01:11:03 GMT
 CMD ["server" "-dev"]
 ```
 
@@ -141,15 +139,15 @@ CMD ["server" "-dev"]
 		Last Modified: Fri, 16 Dec 2016 22:43:22 GMT  
 		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:055ab0a317332310cae917814bd7782934e02f494e80873c5055e5f3a8892c06`  
-		Last Modified: Fri, 16 Dec 2016 22:43:22 GMT  
-		Size: 1.5 KB (1526 bytes)  
+	-	`sha256:12fe4af75d19d835713c006e382bbde877419f04d2ca9f388e061ceaf622c3ee`  
+		Last Modified: Wed, 21 Dec 2016 01:11:36 GMT  
+		Size: 1.7 KB (1684 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `vault:0.6.4`
 
 ```console
-$ docker pull vault@sha256:e11c35f4b708f6220fa591eab451853b9a428fc1143dfc3c04141ff6146a01bc
+$ docker pull vault@sha256:187339a4370439d059e5073b9d46d0023c4eb8f9f49159c83f98e1c23152dc0b
 ```
 
 -	Platforms:
@@ -159,9 +157,9 @@ $ docker pull vault@sha256:e11c35f4b708f6220fa591eab451853b9a428fc1143dfc3c04141
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.0 MB (15980009 bytes)**  
+-	Total Size: **16.0 MB (15980167 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34e074f9e62e11bf997d101ac0339dfeb4116d34777c0e4c406b8b753e28cb4c`
+-	Image ID: `sha256:0dda00ae1660d0fe187d6b9663fa2b9782271c59f1ae72e82a4ec4397d854490`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["server","-dev"]`
 
@@ -186,13 +184,11 @@ VOLUME [/vault/logs]
 VOLUME [/vault/file]
 # Fri, 16 Dec 2016 22:42:49 GMT
 EXPOSE 8200/tcp
-# Fri, 16 Dec 2016 22:42:49 GMT
-COPY file:325eb85d136af037ccb569364759f15f79c233fd0d377d2bf63bd99d474f30c1 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 16 Dec 2016 22:42:49 GMT
+# Wed, 21 Dec 2016 01:11:02 GMT
+COPY file:01d88618f782cb03a968fcc22db42601b6f76608f95edc07ffeb2a3b7a2db58d in /usr/local/bin/docker-entrypoint.sh 
+# Wed, 21 Dec 2016 01:11:02 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Dec 2016 22:42:50 GMT
-STOPSIGNAL [SIGINT]
-# Fri, 16 Dec 2016 22:42:50 GMT
+# Wed, 21 Dec 2016 01:11:03 GMT
 CMD ["server" "-dev"]
 ```
 
@@ -213,15 +209,15 @@ CMD ["server" "-dev"]
 		Last Modified: Fri, 16 Dec 2016 22:43:22 GMT  
 		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:055ab0a317332310cae917814bd7782934e02f494e80873c5055e5f3a8892c06`  
-		Last Modified: Fri, 16 Dec 2016 22:43:22 GMT  
-		Size: 1.5 KB (1526 bytes)  
+	-	`sha256:12fe4af75d19d835713c006e382bbde877419f04d2ca9f388e061ceaf622c3ee`  
+		Last Modified: Wed, 21 Dec 2016 01:11:36 GMT  
+		Size: 1.7 KB (1684 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `vault:latest`
 
 ```console
-$ docker pull vault@sha256:e11c35f4b708f6220fa591eab451853b9a428fc1143dfc3c04141ff6146a01bc
+$ docker pull vault@sha256:187339a4370439d059e5073b9d46d0023c4eb8f9f49159c83f98e1c23152dc0b
 ```
 
 -	Platforms:
@@ -231,9 +227,9 @@ $ docker pull vault@sha256:e11c35f4b708f6220fa591eab451853b9a428fc1143dfc3c04141
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.0 MB (15980009 bytes)**  
+-	Total Size: **16.0 MB (15980167 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:34e074f9e62e11bf997d101ac0339dfeb4116d34777c0e4c406b8b753e28cb4c`
+-	Image ID: `sha256:0dda00ae1660d0fe187d6b9663fa2b9782271c59f1ae72e82a4ec4397d854490`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["server","-dev"]`
 
@@ -258,13 +254,11 @@ VOLUME [/vault/logs]
 VOLUME [/vault/file]
 # Fri, 16 Dec 2016 22:42:49 GMT
 EXPOSE 8200/tcp
-# Fri, 16 Dec 2016 22:42:49 GMT
-COPY file:325eb85d136af037ccb569364759f15f79c233fd0d377d2bf63bd99d474f30c1 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 16 Dec 2016 22:42:49 GMT
+# Wed, 21 Dec 2016 01:11:02 GMT
+COPY file:01d88618f782cb03a968fcc22db42601b6f76608f95edc07ffeb2a3b7a2db58d in /usr/local/bin/docker-entrypoint.sh 
+# Wed, 21 Dec 2016 01:11:02 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Dec 2016 22:42:50 GMT
-STOPSIGNAL [SIGINT]
-# Fri, 16 Dec 2016 22:42:50 GMT
+# Wed, 21 Dec 2016 01:11:03 GMT
 CMD ["server" "-dev"]
 ```
 
@@ -285,9 +279,9 @@ CMD ["server" "-dev"]
 		Last Modified: Fri, 16 Dec 2016 22:43:22 GMT  
 		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:055ab0a317332310cae917814bd7782934e02f494e80873c5055e5f3a8892c06`  
-		Last Modified: Fri, 16 Dec 2016 22:43:22 GMT  
-		Size: 1.5 KB (1526 bytes)  
+	-	`sha256:12fe4af75d19d835713c006e382bbde877419f04d2ca9f388e061ceaf622c3ee`  
+		Last Modified: Wed, 21 Dec 2016 01:11:36 GMT  
+		Size: 1.7 KB (1684 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `vault:0.6.1`
@@ -421,7 +415,7 @@ CMD ["server" "-dev"]
 ## `vault:0.6.3`
 
 ```console
-$ docker pull vault@sha256:7dd6d5f55b25321b1fc5a7ed8cc2937be2d3e2c6cb5c537b38ced775912fd7b6
+$ docker pull vault@sha256:375a2d76f13be30f7919fbef2d696dbe0d9db897ed7a95ffaa4fee77dedd2466
 ```
 
 -	Platforms:
@@ -431,9 +425,9 @@ $ docker pull vault@sha256:7dd6d5f55b25321b1fc5a7ed8cc2937be2d3e2c6cb5c537b38ced
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.0 MB (15973879 bytes)**  
+-	Total Size: **16.0 MB (15974037 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:97cddcd71cf5707dabe3055a1803c52630c6ae3af10da1c2475d76d940a3a8f6`
+-	Image ID: `sha256:5462acc2dbe400348797e730eb971345aa610320d9580abb5ceba0223a322668`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["server","-dev"]`
 
@@ -458,13 +452,11 @@ VOLUME [/vault/logs]
 VOLUME [/vault/file]
 # Fri, 16 Dec 2016 22:42:52 GMT
 EXPOSE 8200/tcp
-# Fri, 16 Dec 2016 22:42:52 GMT
-COPY file:325eb85d136af037ccb569364759f15f79c233fd0d377d2bf63bd99d474f30c1 in /usr/local/bin/docker-entrypoint.sh 
-# Fri, 16 Dec 2016 22:42:53 GMT
+# Wed, 21 Dec 2016 01:11:04 GMT
+COPY file:01d88618f782cb03a968fcc22db42601b6f76608f95edc07ffeb2a3b7a2db58d in /usr/local/bin/docker-entrypoint.sh 
+# Wed, 21 Dec 2016 01:11:04 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 16 Dec 2016 22:42:53 GMT
-STOPSIGNAL [SIGINT]
-# Fri, 16 Dec 2016 22:42:53 GMT
+# Wed, 21 Dec 2016 01:11:04 GMT
 CMD ["server" "-dev"]
 ```
 
@@ -485,7 +477,7 @@ CMD ["server" "-dev"]
 		Last Modified: Fri, 16 Dec 2016 22:44:47 GMT  
 		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3ffccf75b4cda543d1dbb44762b1f5850cca73cc599c47dc434fe577759974c`  
-		Last Modified: Fri, 16 Dec 2016 22:44:47 GMT  
-		Size: 1.5 KB (1525 bytes)  
+	-	`sha256:610165e0094adf1fd0a3f81f29eac3ea400a07e54e1eeb76db61d8e2db30a958`  
+		Last Modified: Wed, 21 Dec 2016 01:12:58 GMT  
+		Size: 1.7 KB (1683 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
