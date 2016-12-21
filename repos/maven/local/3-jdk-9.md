@@ -503,20 +503,8 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.1-3
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1-3.dsc' cups_2.2.1-3.dsc 3396 SHA256:c10cccd41b7e43aff3c808af4936f1ec87937f622524d4d09106b3507bd9292b
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1.orig.tar.gz' cups_2.2.1.orig.tar.gz 9486635 SHA256:83b8730aa977cc055e7410df6a3a682548994c113994ca630a16513017e419d5
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1.orig.tar.gz.asc' cups_2.2.1.orig.tar.gz.asc 797 SHA256:37c2e6215b2794c33864e543bc0caf6aefa724844e41b4c9659c87f28d125c2a
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1-3.debian.tar.xz' cups_2.2.1-3.debian.tar.xz 357956 SHA256:e299f481d4fcb7b88b37718df6a494e0052d3d4f289fb93a87eb008fe836b9c7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cups/2.2.1-3/
-- https://sources.debian.net/src/cups/2.2.1-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `curl=7.51.0-1`
 
