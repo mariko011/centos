@@ -362,14 +362,8 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris binutils=2.27.51.20161212-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.27.51.20161212-1ubuntu1.dsc' binutils_2.27.51.20161212-1ubuntu1.dsc 4528 SHA256:b28d0eb54d40638c3e7a3a4f8d6eb52a5c18bb7909d70c73c38cd6d468086634
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.27.51.20161212.orig.tar.gz' binutils_2.27.51.20161212.orig.tar.gz 33108021 SHA256:d56ab580a22a18f40c2c9a39e39ff610b0d53ef39c2bbc9879b3c6e3a5485b89
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.27.51.20161212-1ubuntu1.diff.gz' binutils_2.27.51.20161212-1ubuntu1.diff.gz 99635 SHA256:891dba34f7783eeb26e5342632ae029280941f5636dbf6c01ef504bcd69cddd1
-```
 
 ### `dpkg` source package: `bzip2=1.0.6-8build1`
 
@@ -526,14 +520,8 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.1-41-g49c592936-1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.1-41-g49c592936-1.dsc' cups_2.2.1-41-g49c592936-1.dsc 3259 SHA256:d553d0a8cdc15d4a26c15575b3c2e69658baaf640f2b1b2a0f3c8e1a683ca24c
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.1-41-g49c592936.orig.tar.xz' cups_2.2.1-41-g49c592936.orig.tar.xz 8066452 SHA256:88980dc40c6576f94dec12d9a60affdb1350548cef10c6f399d63580b2f6ac28
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.1-41-g49c592936-1.debian.tar.xz' cups_2.2.1-41-g49c592936-1.debian.tar.xz 357992 SHA256:efed1fbe4fb1ce11f830e9a334e863629e6f435c0720a5face6399dc820b1db7
-```
 
 ### `dpkg` source package: `curl=7.51.0-1ubuntu1`
 
@@ -3891,15 +3879,8 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.15.1-1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.15.1-1.dsc' sqlite3_3.15.1-1.dsc 2478 SHA256:32ad6590c9801c71aed1cf787409cd2b51aa66524e85ec4c70d9cdd9cc45773a
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.15.1.orig-www.tar.xz' sqlite3_3.15.1.orig-www.tar.xz 3340588 SHA256:6436fd79054ae91e09272663d847d645b966e976a37e081bc29215a6f94f61cd
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.15.1.orig.tar.xz' sqlite3_3.15.1.orig.tar.xz 5319056 SHA256:148babe05b5eb70967b78d2084fd5da49edf75aa3443dc6e0961c938e6de0035
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.15.1-1.debian.tar.xz' sqlite3_3.15.1-1.debian.tar.xz 16688 SHA256:cc0d55d6a08b2c9d5bd10880c1006c9616639d31c319d04de01b91692f3f6109
-```
 
 ### `dpkg` source package: `subversion=1.9.4-1ubuntu2`
 

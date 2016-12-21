@@ -82,19 +82,8 @@ Licenses: (parsed from: `/usr/share/doc/libapr1/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apr=1.5.2-4
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.5.2-4.dsc' apr_1.5.2-4.dsc 2079 SHA256:f739a3c8395e11f19e3344937106da3296bdf0b78dd4d45b595c7eafc2df748d
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.5.2.orig.tar.bz2' apr_1.5.2.orig.tar.bz2 826885 SHA256:7d03ed29c22a7152be45b8e50431063736df9e1daa1ddf93f6a547ba7a28f67a
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.5.2-4.debian.tar.xz' apr_1.5.2-4.debian.tar.xz 212724 SHA256:4bd7c3c41941d5b8006e16145c486f59179989035eb6f9efd9b333691e894948
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apr/1.5.2-4/
-- https://sources.debian.net/src/apr/1.5.2-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apt=1.4~beta1`
 

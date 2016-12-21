@@ -82,19 +82,8 @@ Licenses: (parsed from: `/usr/share/doc/libapr1/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apr=1.5.2-4
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.5.2-4.dsc' apr_1.5.2-4.dsc 2079 SHA256:f739a3c8395e11f19e3344937106da3296bdf0b78dd4d45b595c7eafc2df748d
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.5.2.orig.tar.bz2' apr_1.5.2.orig.tar.bz2 826885 SHA256:7d03ed29c22a7152be45b8e50431063736df9e1daa1ddf93f6a547ba7a28f67a
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.5.2-4.debian.tar.xz' apr_1.5.2-4.debian.tar.xz 212724 SHA256:4bd7c3c41941d5b8006e16145c486f59179989035eb6f9efd9b333691e894948
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apr/1.5.2-4/
-- https://sources.debian.net/src/apr/1.5.2-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apt=1.4~beta1`
 
@@ -1683,19 +1672,8 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`)
 - `LGPL-2.1+`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gtk+3.0=3.22.4-1
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.4-1.dsc' gtk+3.0_3.22.4-1.dsc 3906 SHA256:7f53e327837d9a451c8fd4bd6e25052cbeca8d073ecd0c8fcfd0edfc74643658
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.4.orig.tar.xz' gtk+3.0_3.22.4.orig.tar.xz 18243596 SHA256:7094a6fcfe133d01c578358bd5d3e499715f1a0206e87bd5cf6c834e301f387f
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.4-1.debian.tar.xz' gtk+3.0_3.22.4-1.debian.tar.xz 143220 SHA256:0560da9e2fd992c84d0c0d3dfb6f73235ad87e4eb0eeddbbdde798de1f5ab3a5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gtk+3.0/3.22.4-1/
-- https://sources.debian.net/src/gtk+3.0/3.22.4-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gts=0.7.6+darcs121130-1.2`
 
