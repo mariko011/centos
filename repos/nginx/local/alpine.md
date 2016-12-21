@@ -1,11 +1,11 @@
-# `nginx:1.11.6-alpine`
+# `nginx:1.11.7-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d964ab5d0abe650e824c6b5fdfdf33df306ca6d4d59b1f9ca2c494324d6d37f3`
-- Created: `2016-11-28T18:14:01.731967791Z`
+- Image ID: `sha256:78e07921f4ab58e6eff8e5c390c90d96de112feab23c284523371c155478ccd6`
+- Created: `2016-12-20T19:46:34.167716922Z`
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.11.6`
+  - `NGINX_VERSION=1.11.7`
