@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:942fd5fd357e2fe2fcecbaf3dd77c313f22ce18a84a5a4d288c0df407a61e623`
-- Created: `2016-08-19T16:35:59.019490842Z`
+- Image ID: `sha256:f1d5a057a3894d735c2d65faee1c38cff2ce760f99d5c0a7b6a85734813543a2`
+- Created: `2016-08-30T17:45:05.333836007Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/swarm"]`
 - Command: `["--help"]`
