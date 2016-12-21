@@ -2,49 +2,49 @@
 
 # Tags of `nats-streaming`
 
--	[`nats-streaming:0.3.4`](#nats-streaming034)
+-	[`nats-streaming:0.3.6`](#nats-streaming036)
 -	[`nats-streaming:latest`](#nats-streaminglatest)
 
-## `nats-streaming:0.3.4`
+## `nats-streaming:0.3.6`
 
 ```console
-$ docker pull nats-streaming@sha256:c5aa5c20504c9718566e9f559880e917289c22f9534eb67106ed110b0a1174fe
+$ docker pull nats-streaming@sha256:1953c2fc07bfda8c4bf3e1b0a5d91555f7ea2b3cc2bc2636c5729701dd149d20
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `nats-streaming:0.3.4` - linux; amd64
+### `nats-streaming:0.3.6` - linux; amd64
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2630244 bytes)**  
+-	Total Size: **2.6 MB (2631918 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23b1b6673c7fa2cc9cbdcf5266299fa9ad821f84b8b4f34fac6399bbc75d5070`
--	Entrypoint: `["\/nats-streaming-server","-m","8222"]`
--	Default Command: `[]`
+-	Image ID: `sha256:a8bb22ce63885e536593c93f05df60911b05b787d6deb6be621cc35c70259aad`
+-	Entrypoint: `["\/nats-streaming-server"]`
+-	Default Command: `["-m","8222"]`
 
 ```dockerfile
-# Mon, 12 Dec 2016 22:37:00 GMT
-COPY file:d69206180e192ecffad5ca4652ae65d6356b16fc2afba8c5484a7a56e9e7fca9 in /nats-streaming-server 
-# Mon, 12 Dec 2016 22:37:01 GMT
+# Wed, 21 Dec 2016 19:25:46 GMT
+COPY file:04a8f029ddc622a39340c15de49fabe3ed390742947437f809a6d9e94dfabf47 in /nats-streaming-server 
+# Wed, 21 Dec 2016 19:25:46 GMT
 EXPOSE 4222/tcp 8222/tcp
-# Mon, 12 Dec 2016 22:37:01 GMT
-ENTRYPOINT ["/nats-streaming-server" "-m" "8222"]
-# Mon, 12 Dec 2016 22:37:01 GMT
-CMD []
+# Wed, 21 Dec 2016 19:25:47 GMT
+ENTRYPOINT ["/nats-streaming-server"]
+# Wed, 21 Dec 2016 19:25:48 GMT
+CMD ["-m" "8222"]
 ```
 
 -	Layers:
-	-	`sha256:d87bd5c27e58ea39929d6853a648ea67b08bb1f80bd9dd7d4d5412f3406e6a86`  
-		Last Modified: Mon, 12 Dec 2016 22:37:16 GMT  
-		Size: 2.6 MB (2630244 bytes)  
+	-	`sha256:066955b040a18c180b6dce62a3f76436e185201d4dd6e14f29372924f57822b2`  
+		Last Modified: Wed, 21 Dec 2016 19:26:14 GMT  
+		Size: 2.6 MB (2631918 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nats-streaming:latest`
 
 ```console
-$ docker pull nats-streaming@sha256:c5aa5c20504c9718566e9f559880e917289c22f9534eb67106ed110b0a1174fe
+$ docker pull nats-streaming@sha256:1953c2fc07bfda8c4bf3e1b0a5d91555f7ea2b3cc2bc2636c5729701dd149d20
 ```
 
 -	Platforms:
@@ -54,25 +54,25 @@ $ docker pull nats-streaming@sha256:c5aa5c20504c9718566e9f559880e917289c22f9534e
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2630244 bytes)**  
+-	Total Size: **2.6 MB (2631918 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23b1b6673c7fa2cc9cbdcf5266299fa9ad821f84b8b4f34fac6399bbc75d5070`
--	Entrypoint: `["\/nats-streaming-server","-m","8222"]`
--	Default Command: `[]`
+-	Image ID: `sha256:a8bb22ce63885e536593c93f05df60911b05b787d6deb6be621cc35c70259aad`
+-	Entrypoint: `["\/nats-streaming-server"]`
+-	Default Command: `["-m","8222"]`
 
 ```dockerfile
-# Mon, 12 Dec 2016 22:37:00 GMT
-COPY file:d69206180e192ecffad5ca4652ae65d6356b16fc2afba8c5484a7a56e9e7fca9 in /nats-streaming-server 
-# Mon, 12 Dec 2016 22:37:01 GMT
+# Wed, 21 Dec 2016 19:25:46 GMT
+COPY file:04a8f029ddc622a39340c15de49fabe3ed390742947437f809a6d9e94dfabf47 in /nats-streaming-server 
+# Wed, 21 Dec 2016 19:25:46 GMT
 EXPOSE 4222/tcp 8222/tcp
-# Mon, 12 Dec 2016 22:37:01 GMT
-ENTRYPOINT ["/nats-streaming-server" "-m" "8222"]
-# Mon, 12 Dec 2016 22:37:01 GMT
-CMD []
+# Wed, 21 Dec 2016 19:25:47 GMT
+ENTRYPOINT ["/nats-streaming-server"]
+# Wed, 21 Dec 2016 19:25:48 GMT
+CMD ["-m" "8222"]
 ```
 
 -	Layers:
-	-	`sha256:d87bd5c27e58ea39929d6853a648ea67b08bb1f80bd9dd7d4d5412f3406e6a86`  
-		Last Modified: Mon, 12 Dec 2016 22:37:16 GMT  
-		Size: 2.6 MB (2630244 bytes)  
+	-	`sha256:066955b040a18c180b6dce62a3f76436e185201d4dd6e14f29372924f57822b2`  
+		Last Modified: Wed, 21 Dec 2016 19:26:14 GMT  
+		Size: 2.6 MB (2631918 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
