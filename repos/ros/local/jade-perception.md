@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:19ea95c1f7e28df3a168af8b21f6f71ca68dcf99faaf5cde8773247d24a18bb4`
-- Created: `2016-11-30T18:07:15.051383819Z`
+- Image ID: `sha256:2f9a08d4a3c53e6e170442686891dfc182d3df74a5d39674dcefa1cdb6e5a0d9`
+- Created: `2016-12-19T17:31:33.296861195Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
 - Command: `["bash"]`
@@ -116,22 +116,27 @@ $ apt-get source -qq --print-uris apr=1.5.0-1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.5.0-1.debian.tar.gz' apr_1.5.0-1.debian.tar.gz 27878 SHA256:03c97e6c336f68c8be73f1440362408204fa190808e1ff7655b1bcf134f77f88
 ```
 
-### `dpkg` source package: `apt=1.0.1ubuntu2.15`
+### `dpkg` source package: `apt=1.0.1ubuntu2.17`
 
 Binary Packages:
 
-- `apt=1.0.1ubuntu2.15`
-- `apt-utils=1.0.1ubuntu2.15`
-- `libapt-inst1.5:amd64=1.0.1ubuntu2.15`
-- `libapt-pkg4.12:amd64=1.0.1ubuntu2.15`
+- `apt=1.0.1ubuntu2.17`
+- `apt-utils=1.0.1ubuntu2.17`
+- `libapt-inst1.5:amd64=1.0.1ubuntu2.17`
+- `libapt-pkg4.12:amd64=1.0.1ubuntu2.17`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/apt-utils/copyright`, `/usr/share/doc/libapt-inst1.5/copyright`, `/usr/share/doc/libapt-pkg4.12/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=1.0.1ubuntu2.17
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.17.dsc' apt_1.0.1ubuntu2.17.dsc 2393 SHA256:a49fcf03e2260e611878e70666e35509bbdfbd09cbc52e536a85e1b79b908a31
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.0.1ubuntu2.17.tar.xz' apt_1.0.1ubuntu2.17.tar.xz 1782544 SHA256:bdf6070f907a9f8eaa2b3afa84f27ceac98ecae9f4fac9bdfe85fce1e2b0067c
+```
 
 ### `dpkg` source package: `atk1.0=2.10.0-2ubuntu2`
 
@@ -2155,11 +2160,11 @@ $ apt-get source -qq --print-uris ilmbase=1.0.1-6ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/ilmbase/ilmbase_1.0.1-6ubuntu1.debian.tar.gz' ilmbase_1.0.1-6ubuntu1.debian.tar.gz 5881 SHA256:7e0b07b267fccdfcd6d8bdfa944b9b6560c9a0f6a877c248586b986823ffe5c0
 ```
 
-### `dpkg` source package: `init-system-helpers=1.14`
+### `dpkg` source package: `init-system-helpers=1.14ubuntu1`
 
 Binary Packages:
 
-- `init-system-helpers=1.14`
+- `init-system-helpers=1.14ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 
@@ -2168,9 +2173,9 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris init-system-helpers=1.14
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.14.dsc' init-system-helpers_1.14.dsc 1832 SHA256:d95ec59ec3ad004ed60a30da2783ea5844390379c05c896bc3301be64b614abf
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.14.tar.gz' init-system-helpers_1.14.tar.gz 17729 SHA256:9eea2b3fb46b8382cd1c59e607ad1ce3c14bfcb58494919912131448fbf18f32
+$ apt-get source -qq --print-uris init-system-helpers=1.14ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.14ubuntu1.dsc' init-system-helpers_1.14ubuntu1.dsc 1918 SHA256:183537b98ed019ef80c813b4426570fffe3283c38239d4708724fc4e868cb7ad
+'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.14ubuntu1.tar.xz' init-system-helpers_1.14ubuntu1.tar.xz 15436 SHA256:c9f7e8c0d1ee2cdfb12b7a82ffee5a5c90e3d70478591d28803e011e8053a252
 ```
 
 ### `dpkg` source package: `initramfs-tools=0.103ubuntu4.4`
@@ -2262,19 +2267,25 @@ $ apt-get source -qq --print-uris iputils=3:20121221-4ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iputils/iputils_20121221-4ubuntu1.1.debian.tar.gz' iputils_20121221-4ubuntu1.1.debian.tar.gz 16143 SHA256:4eb3ca79e68dfc5f5e66df7be3113c230168fbca2420da232adadc6475056c6a
 ```
 
-### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.7`
+### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.8`
 
 Binary Packages:
 
-- `isc-dhcp-client=4.2.4-7ubuntu12.7`
-- `isc-dhcp-common=4.2.4-7ubuntu12.7`
+- `isc-dhcp-client=4.2.4-7ubuntu12.8`
+- `isc-dhcp-common=4.2.4-7ubuntu12.8`
 
 Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/doc/isc-dhcp-common/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris isc-dhcp=4.2.4-7ubuntu12.8
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.8.dsc' isc-dhcp_4.2.4-7ubuntu12.8.dsc 2788 SHA256:9540d60625c3c78b5b2df94b65417314fe078a748202d7d2a0113206b46e61c7
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.8.debian.tar.xz' isc-dhcp_4.2.4-7ubuntu12.8.debian.tar.xz 108596 SHA256:d301a6a2c0a5944842ea4fcccb3e62b62e83d8644d0dcede618258f356717931
+```
 
 ### `dpkg` source package: `isl=0.12.2-1`
 
@@ -2674,18 +2685,18 @@ $ apt-get source -qq --print-uris libarchive=3.1.2-7ubuntu2.3
 'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2-7ubuntu2.3.debian.tar.gz' libarchive_3.1.2-7ubuntu2.3.debian.tar.gz 34453 SHA256:83a703ae4d7096217a19b3c60064e82c220f5b5a34ac934088021d7ebef7bd20
 ```
 
-### `dpkg` source package: `libav=6:9.18-0ubuntu0.14.04.1`
+### `dpkg` source package: `libav=6:9.20-0ubuntu0.14.04.1`
 
 Binary Packages:
 
-- `libavcodec-dev=6:9.18-0ubuntu0.14.04.1`
-- `libavcodec54:amd64=6:9.18-0ubuntu0.14.04.1`
-- `libavformat-dev=6:9.18-0ubuntu0.14.04.1`
-- `libavformat54:amd64=6:9.18-0ubuntu0.14.04.1`
-- `libavutil-dev=6:9.18-0ubuntu0.14.04.1`
-- `libavutil52:amd64=6:9.18-0ubuntu0.14.04.1`
-- `libswscale-dev=6:9.18-0ubuntu0.14.04.1`
-- `libswscale2:amd64=6:9.18-0ubuntu0.14.04.1`
+- `libavcodec-dev=6:9.20-0ubuntu0.14.04.1`
+- `libavcodec54:amd64=6:9.20-0ubuntu0.14.04.1`
+- `libavformat-dev=6:9.20-0ubuntu0.14.04.1`
+- `libavformat54:amd64=6:9.20-0ubuntu0.14.04.1`
+- `libavutil-dev=6:9.20-0ubuntu0.14.04.1`
+- `libavutil52:amd64=6:9.20-0ubuntu0.14.04.1`
+- `libswscale-dev=6:9.20-0ubuntu0.14.04.1`
+- `libswscale2:amd64=6:9.20-0ubuntu0.14.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libavcodec-dev/copyright`, `/usr/share/doc/libavcodec54/copyright`, `/usr/share/doc/libavformat-dev/copyright`, `/usr/share/doc/libavformat54/copyright`, `/usr/share/doc/libavutil-dev/copyright`, `/usr/share/doc/libavutil52/copyright`, `/usr/share/doc/libswscale-dev/copyright`, `/usr/share/doc/libswscale2/copyright`)
 
@@ -2701,8 +2712,14 @@ Licenses: (parsed from: `/usr/share/doc/libavcodec-dev/copyright`, `/usr/share/d
 - `LGPL-2.1+~Libav`
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libav=6:9.20-0ubuntu0.14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/universe/liba/libav/libav_9.20-0ubuntu0.14.04.1.dsc' libav_9.20-0ubuntu0.14.04.1.dsc 4198 SHA256:749176c3f721d1cb9f8c14d10ddb4a30cc86fdecd1364cb40a1015af1b2f3327
+'http://archive.ubuntu.com/ubuntu/pool/universe/liba/libav/libav_9.20.orig.tar.xz' libav_9.20.orig.tar.xz 4081528 SHA256:61c27d6bcd7ed8b45ee22fd4bbe34a42d7ce5e998fc4d4534432e99cf670c14f
+'http://archive.ubuntu.com/ubuntu/pool/universe/liba/libav/libav_9.20-0ubuntu0.14.04.1.debian.tar.gz' libav_9.20-0ubuntu0.14.04.1.debian.tar.gz 62551 SHA256:be80a2a04bc9a061a7c9ecf4848d9435b0a4a5ace48b7603fa1138dd4283f2cc
+```
 
 ### `dpkg` source package: `libbsd=0.6.0-2ubuntu1`
 
@@ -4434,11 +4451,11 @@ $ apt-get source -qq --print-uris libyaml=0.1.4-3ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.4-3ubuntu3.1.debian.tar.gz' libyaml_0.1.4-3ubuntu3.1.debian.tar.gz 6404 SHA256:816422e1c743180409aff9247f3a298c8f98260d91da29c7315ce8bd576d53c2
 ```
 
-### `dpkg` source package: `linux=3.13.0-103.150`
+### `dpkg` source package: `linux=3.13.0-105.152`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-103.150`
+- `linux-libc-dev:amd64=3.13.0-105.152`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -6639,11 +6656,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-jade-compressed-depth-image-transport=1.9.5-0trusty-20161024-203917-0700`
+### `dpkg` source package: `ros-jade-compressed-depth-image-transport=1.9.5-0trusty-20161127-150845-0800`
 
 Binary Packages:
 
-- `ros-jade-compressed-depth-image-transport=1.9.5-0trusty-20161024-203917-0700`
+- `ros-jade-compressed-depth-image-transport=1.9.5-0trusty-20161127-150845-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6652,11 +6669,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-jade-compressed-image-transport=1.9.5-0trusty-20161024-203709-0700`
+### `dpkg` source package: `ros-jade-compressed-image-transport=1.9.5-0trusty-20161127-150858-0800`
 
 Binary Packages:
 
-- `ros-jade-compressed-image-transport=1.9.5-0trusty-20161024-203709-0700`
+- `ros-jade-compressed-image-transport=1.9.5-0trusty-20161127-150858-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6691,11 +6708,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-jade-depth-image-proc=1.12.19-0trusty-20161025-014629-0700`
+### `dpkg` source package: `ros-jade-depth-image-proc=1.12.19-0trusty-20161127-154226-0800`
 
 Binary Packages:
 
-- `ros-jade-depth-image-proc=1.12.19-0trusty-20161025-014629-0700`
+- `ros-jade-depth-image-proc=1.12.19-0trusty-20161127-154226-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6717,11 +6734,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-jade-dynamic-reconfigure=1.5.45-0trusty-20161024-183104-0700`
+### `dpkg` source package: `ros-jade-dynamic-reconfigure=1.5.46-0trusty-20161127-140851-0800`
 
 Binary Packages:
 
-- `ros-jade-dynamic-reconfigure=1.5.45-0trusty-20161024-183104-0700`
+- `ros-jade-dynamic-reconfigure=1.5.46-0trusty-20161127-140851-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6860,11 +6877,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-jade-image-pipeline=1.12.19-0trusty-20161025-070249-0700`
+### `dpkg` source package: `ros-jade-image-pipeline=1.12.19-0trusty-20161127-183520-0800`
 
 Binary Packages:
 
-- `ros-jade-image-pipeline=1.12.19-0trusty-20161025-070249-0700`
+- `ros-jade-image-pipeline=1.12.19-0trusty-20161127-183520-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6873,11 +6890,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-jade-image-proc=1.12.19-0trusty-20161024-205515-0700`
+### `dpkg` source package: `ros-jade-image-proc=1.12.19-0trusty-20161127-145845-0800`
 
 Binary Packages:
 
-- `ros-jade-image-proc=1.12.19-0trusty-20161024-205515-0700`
+- `ros-jade-image-proc=1.12.19-0trusty-20161127-145845-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6886,11 +6903,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-jade-image-rotate=1.12.19-0trusty-20161025-015621-0700`
+### `dpkg` source package: `ros-jade-image-rotate=1.12.19-0trusty-20161127-144120-0800`
 
 Binary Packages:
 
-- `ros-jade-image-rotate=1.12.19-0trusty-20161025-015621-0700`
+- `ros-jade-image-rotate=1.12.19-0trusty-20161127-144120-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6899,11 +6916,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-jade-image-transport-plugins=1.9.5-0trusty-20161025-065125-0700`
+### `dpkg` source package: `ros-jade-image-transport-plugins=1.9.5-0trusty-20161127-184516-0800`
 
 Binary Packages:
 
-- `ros-jade-image-transport-plugins=1.9.5-0trusty-20161025-065125-0700`
+- `ros-jade-image-transport-plugins=1.9.5-0trusty-20161127-184516-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6925,11 +6942,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-jade-image-view=1.12.19-0trusty-20161024-205750-0700`
+### `dpkg` source package: `ros-jade-image-view=1.12.19-0trusty-20161127-145852-0800`
 
 Binary Packages:
 
-- `ros-jade-image-view=1.12.19-0trusty-20161024-205750-0700`
+- `ros-jade-image-view=1.12.19-0trusty-20161127-145852-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7055,11 +7072,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-jade-nodelet-core=1.9.7-0trusty-20161024-215701-0700`
+### `dpkg` source package: `ros-jade-nodelet-core=1.9.8-0trusty-20161127-142144-0800`
 
 Binary Packages:
 
-- `ros-jade-nodelet-core=1.9.7-0trusty-20161024-215701-0700`
+- `ros-jade-nodelet-core=1.9.8-0trusty-20161127-142144-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7068,11 +7085,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-jade-nodelet-topic-tools=1.9.7-0trusty-20161024-214945-0700`
+### `dpkg` source package: `ros-jade-nodelet-topic-tools=1.9.8-0trusty-20161127-141922-0800`
 
 Binary Packages:
 
-- `ros-jade-nodelet-topic-tools=1.9.7-0trusty-20161024-214945-0700`
+- `ros-jade-nodelet-topic-tools=1.9.8-0trusty-20161127-141922-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7081,11 +7098,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-jade-nodelet=1.9.7-0trusty-20161024-201517-0700`
+### `dpkg` source package: `ros-jade-nodelet=1.9.8-0trusty-20161127-140843-0800`
 
 Binary Packages:
 
-- `ros-jade-nodelet=1.9.7-0trusty-20161024-201517-0700`
+- `ros-jade-nodelet=1.9.8-0trusty-20161127-140843-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7133,11 +7150,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-jade-pcl-ros=1.3.0-0trusty-20161025-022337-0700`
+### `dpkg` source package: `ros-jade-pcl-ros=1.3.0-0trusty-20161127-145701-0800`
 
 Binary Packages:
 
-- `ros-jade-pcl-ros=1.3.0-0trusty-20161025-022337-0700`
+- `ros-jade-pcl-ros=1.3.0-0trusty-20161127-145701-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7146,11 +7163,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-jade-perception-pcl=1.3.0-0trusty-20161025-065458-0700`
+### `dpkg` source package: `ros-jade-perception-pcl=1.3.0-0trusty-20161127-184715-0800`
 
 Binary Packages:
 
-- `ros-jade-perception-pcl=1.3.0-0trusty-20161025-065458-0700`
+- `ros-jade-perception-pcl=1.3.0-0trusty-20161127-184715-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7159,11 +7176,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-jade-perception=1.2.0-0trusty-20161025-163734-0700`
+### `dpkg` source package: `ros-jade-perception=1.2.0-0trusty-20161127-185245-0800`
 
 Binary Packages:
 
-- `ros-jade-perception=1.2.0-0trusty-20161025-163734-0700`
+- `ros-jade-perception=1.2.0-0trusty-20161127-185245-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7211,11 +7228,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-jade-ros-base=1.2.0-0trusty-20161025-072231-0700`
+### `dpkg` source package: `ros-jade-ros-base=1.2.0-0trusty-20161127-144000-0800`
 
 Binary Packages:
 
-- `ros-jade-ros-base=1.2.0-0trusty-20161025-072231-0700`
+- `ros-jade-ros-base=1.2.0-0trusty-20161127-144000-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7783,11 +7800,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-jade-stereo-image-proc=1.12.19-0trusty-20161024-210541-0700`
+### `dpkg` source package: `ros-jade-stereo-image-proc=1.12.19-0trusty-20161127-150912-0800`
 
 Binary Packages:
 
-- `ros-jade-stereo-image-proc=1.12.19-0trusty-20161024-210541-0700`
+- `ros-jade-stereo-image-proc=1.12.19-0trusty-20161127-150912-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7887,11 +7904,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-jade-theora-image-transport=1.9.5-0trusty-20161024-203722-0700`
+### `dpkg` source package: `ros-jade-theora-image-transport=1.9.5-0trusty-20161127-151345-0800`
 
 Binary Packages:
 
-- `ros-jade-theora-image-transport=1.9.5-0trusty-20161024-203722-0700`
+- `ros-jade-theora-image-transport=1.9.5-0trusty-20161127-151345-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8305,12 +8322,12 @@ $ apt-get source -qq --print-uris sudo=1.8.9p5-1ubuntu1.3
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.3.debian.tar.xz' sudo_1.8.9p5-1ubuntu1.3.debian.tar.xz 33260 SHA256:bae36c26cf8a5f171035b17087f06f23bd44b510273e9c7f1f54dfb147d67850
 ```
 
-### `dpkg` source package: `systemd=204-5ubuntu20.19`
+### `dpkg` source package: `systemd=204-5ubuntu20.20`
 
 Binary Packages:
 
-- `libudev1:amd64=204-5ubuntu20.19`
-- `udev=204-5ubuntu20.19`
+- `libudev1:amd64=204-5ubuntu20.20`
+- `udev=204-5ubuntu20.20`
 
 Licenses: (parsed from: `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/udev/copyright`)
 
@@ -8321,8 +8338,14 @@ Licenses: (parsed from: `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/ude
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=204-5ubuntu20.20
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.20.dsc' systemd_204-5ubuntu20.20.dsc 4043 SHA256:a04b02ecd864a4f7258ed5eb1bc88499f61b3d2044dfb19fe90aad5fc41337ef
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204.orig.tar.xz' systemd_204.orig.tar.xz 2186264 SHA256:072c393503c7c1e55ca7acf3db659cbd28c7fe5fa94fab3db95360bafd96731b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.20.debian.tar.xz' systemd_204-5ubuntu20.20.debian.tar.xz 138272 SHA256:5445a1e1ac5a24ce39da09c2fdda8cf8f65ca80306efc2355385a566c502ea34
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-41ubuntu6.3`
 
@@ -8486,18 +8509,24 @@ $ apt-get source -qq --print-uris torque=2.4.16+dfsg-1.3ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/universe/t/torque/torque_2.4.16+dfsg-1.3ubuntu1.debian.tar.gz' torque_2.4.16+dfsg-1.3ubuntu1.debian.tar.gz 21720 SHA256:c573894b063f5b1e6db0b4ad6e82f24e97733da03b80c3a08835438b17cf36a4
 ```
 
-### `dpkg` source package: `tzdata=2016h-0ubuntu0.14.04`
+### `dpkg` source package: `tzdata=2016j-0ubuntu0.14.04`
 
 Binary Packages:
 
-- `tzdata=2016h-0ubuntu0.14.04`
+- `tzdata=2016j-0ubuntu0.14.04`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2016j-0ubuntu0.14.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.14.04.dsc' tzdata_2016j-0ubuntu0.14.04.dsc 2048 SHA256:baec60d2dc81bef9a522b00ee9679c15a1d93b32fc6c5367203654b46bfebbd5
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j.orig.tar.gz' tzdata_2016j.orig.tar.gz 321185 SHA256:f5ee4e0f115f6c2faee1c4b16193a97338cbd1b503f2cea6c5a768c82ff39dc8
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.14.04.debian.tar.xz' tzdata_2016j-0ubuntu0.14.04.debian.tar.xz 100436 SHA256:a4a236571039dcd942e49e86d632908663eabc7a0e5bcdf81ee39aec9746d508
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2012.05.19`
 
@@ -8644,18 +8673,36 @@ Binary Packages:
 - `bsdutils=1:2.20.1-5.1ubuntu20.7`
 - `libblkid1:amd64=2.20.1-5.1ubuntu20.7`
 - `libmount1:amd64=2.20.1-5.1ubuntu20.7`
-- `libuuid1:amd64=2.20.1-5.1ubuntu20.7`
 - `mount=2.20.1-5.1ubuntu20.7`
 - `util-linux=2.20.1-5.1ubuntu20.7`
-- `uuid-dev=2.20.1-5.1ubuntu20.7`
 
-Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/uuid-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
 - `GPL`
 - `LGPL`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
+
+### `dpkg` source package: `util-linux=2.20.1-5.1ubuntu20.9`
+
+Binary Packages:
+
+- `libuuid1:amd64=2.20.1-5.1ubuntu20.9`
+- `uuid-dev=2.20.1-5.1ubuntu20.9`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
+  If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris util-linux=2.20.1-5.1ubuntu20.9
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.20.1-5.1ubuntu20.9.dsc' util-linux_2.20.1-5.1ubuntu20.9.dsc 3241 SHA256:590295dd669bcf1474660994f8f06a813bf2b23827907b16fccb62663465902a
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.20.1.orig.tar.gz' util-linux_2.20.1.orig.tar.gz 6174190 SHA256:951055ee9b084c337427f34997da5b7dc321daf1b6433c78ef763ed906711fbb
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.20.1-5.1ubuntu20.9.diff.gz' util-linux_2.20.1-5.1ubuntu20.9.diff.gz 118637 SHA256:25e9bece4e16001615fb3b34d376eab66bfb6b1598034b904cea0fe20150182e
+```
 
 ### `dpkg` source package: `v4l-utils=1.0.1-1`
 
@@ -8681,12 +8728,12 @@ $ apt-get source -qq --print-uris v4l-utils=1.0.1-1
 'http://archive.ubuntu.com/ubuntu/pool/main/v/v4l-utils/v4l-utils_1.0.1-1.debian.tar.gz' v4l-utils_1.0.1-1.debian.tar.gz 13541 SHA256:f94eef8fb2a0451073e5d723f0aa503222f9267c3a8c85eec0ef4b9a1bdd5364
 ```
 
-### `dpkg` source package: `vim=2:7.4.052-1ubuntu3`
+### `dpkg` source package: `vim=2:7.4.052-1ubuntu3.1`
 
 Binary Packages:
 
-- `vim-common=2:7.4.052-1ubuntu3`
-- `vim-tiny=2:7.4.052-1ubuntu3`
+- `vim-common=2:7.4.052-1ubuntu3.1`
+- `vim-tiny=2:7.4.052-1ubuntu3.1`
 
 Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/vim-tiny/copyright`)
 
@@ -8695,10 +8742,10 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 Source:
 
 ```console
-$ apt-get source -qq --print-uris vim=2:7.4.052-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_7.4.052-1ubuntu3.dsc' vim_7.4.052-1ubuntu3.dsc 2185 SHA256:50e0cb13c1c8d1d807fecc03eec5676fbfc73523186948d54cb0a90c7f31ef64
+$ apt-get source -qq --print-uris vim=2:7.4.052-1ubuntu3.1
+'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_7.4.052-1ubuntu3.1.dsc' vim_7.4.052-1ubuntu3.1.dsc 2816 SHA256:5689ee55ff65f5ebf5a73b645dfda3cfacd56bfb756f4b389fe4a01fff2324b1
 'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_7.4.052.orig.tar.gz' vim_7.4.052.orig.tar.gz 11846951 SHA256:1365885e0805fe505e83ed635e3008d968b94f71ce46fe45420a41220715e5f2
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_7.4.052-1ubuntu3.debian.tar.gz' vim_7.4.052-1ubuntu3.debian.tar.gz 201099 SHA256:068d1f8e0b35918de29ea49a30a22d0f4e46f49c8ebc3bf642bc4293d3e61a9a
+'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_7.4.052-1ubuntu3.1.debian.tar.gz' vim_7.4.052-1ubuntu3.1.debian.tar.gz 203077 SHA256:eb89b3af5e9b54b9ad22b6cb7d4cb3eb342811194afbd5329b44cb692da324fa
 ```
 
 ### `dpkg` source package: `vtk=5.8.0-14.1ubuntu3`
