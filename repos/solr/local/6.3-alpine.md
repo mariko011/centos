@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:801f53b8453c737f395744c104dc65d16da10aa81f9bf711fb3def4f92eb4405`
-- Created: `2016-11-18T02:50:17.723852532Z`
+- Image ID: `sha256:a1f3f162d71b5a45ef79efebb803f1f5c7c2ec8935ff8d052c98957a6f1db022`
+- Created: `2016-12-27T21:58:53.096350341Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["solr-foreground"]`
