@@ -1,9 +1,9 @@
-# `busybox:1.25.1-musl`
+# `busybox:1.26.0-musl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:733eb3059dce1342113ba10d748ef2fbd4cb5633281507a760b7e7d43e73c84d`
-- Created: `2016-10-07T21:03:53.022100337Z`
+- Image ID: `sha256:d87346805225dc21e3fb8789686632bf50f8a1d07160ece21101822dac2b8710`
+- Created: `2016-12-22T19:20:50.799764918Z`
 - Arch: `linux`/`amd64`
 - Command: `["sh"]`
 - Environment:

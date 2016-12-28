@@ -1,9 +1,9 @@
-# `busybox:1.25.1-glibc`
+# `busybox:1.26.0-glibc`
 
 ## Docker Metadata
 
-- Image ID: `sha256:21c16b6787c6d2e23cf12d9553abb88800a3901e14108b8519167deb2cf10198`
-- Created: `2016-10-07T21:03:47.558008666Z`
+- Image ID: `sha256:60d524cdf996cb20c19d98ccedef2087433cf87f40e9e610830b6b326c20f596`
+- Created: `2016-12-22T19:20:38.487713495Z`
 - Arch: `linux`/`amd64`
 - Command: `["sh"]`
 - Environment:
