@@ -586,7 +586,7 @@ CMD ["-e" ""]
 ## `logstash:5.1.1-alpine`
 
 ```console
-$ docker pull logstash@sha256:f4ac7c4fdff8c2680d83a0bcbe2e3d4bf9eaae562188a9acf94a0c061bc919cd
+$ docker pull logstash@sha256:bebac87156e1028b4784575c20bd6215a30cd0a9d9f29f2de7685e94969498ec
 ```
 
 -	Platforms:
@@ -596,93 +596,93 @@ $ docker pull logstash@sha256:f4ac7c4fdff8c2680d83a0bcbe2e3d4bf9eaae562188a9acf9
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.7 MB (138699325 bytes)**  
+-	Total Size: **138.7 MB (138699553 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:27e486aa1a606b02ef554e74a131d1b829e41b9a9ac3e45000286f7b8df04d81`
+-	Image ID: `sha256:ffe9d5fbdae7d788c7de8497ce5840bdf9cd57569b769ce613c27a809f254fdb`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
 ```dockerfile
-# Tue, 18 Oct 2016 20:31:22 GMT
-ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in / 
-# Tue, 18 Oct 2016 20:39:57 GMT
+# Tue, 27 Dec 2016 18:17:13 GMT
+ADD file:eeed5f514a35d18fcd9cbfe6c40c582211020bffdd53e4799018d33826fe5067 in / 
+# Tue, 27 Dec 2016 18:37:54 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Oct 2016 20:39:58 GMT
+# Tue, 27 Dec 2016 18:37:55 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 18 Oct 2016 20:40:34 GMT
+# Tue, 27 Dec 2016 18:38:43 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
-# Tue, 18 Oct 2016 20:40:35 GMT
+# Tue, 27 Dec 2016 18:38:44 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Thu, 17 Nov 2016 21:47:51 GMT
+# Tue, 27 Dec 2016 18:38:44 GMT
 ENV JAVA_VERSION=8u111
-# Thu, 17 Nov 2016 21:47:52 GMT
+# Tue, 27 Dec 2016 18:38:45 GMT
 ENV JAVA_ALPINE_VERSION=8.111.14-r0
-# Thu, 17 Nov 2016 21:47:57 GMT
+# Tue, 27 Dec 2016 18:38:49 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 09 Dec 2016 17:49:40 GMT
+# Tue, 27 Dec 2016 22:18:26 GMT
 RUN addgroup -S logstash && adduser -S -G logstash logstash
-# Fri, 09 Dec 2016 17:49:43 GMT
+# Tue, 27 Dec 2016 22:18:29 GMT
 RUN apk add --no-cache 		bash 		libzmq
-# Fri, 09 Dec 2016 17:49:45 GMT
+# Tue, 27 Dec 2016 22:18:31 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Fri, 09 Dec 2016 17:49:46 GMT
+# Tue, 27 Dec 2016 22:18:31 GMT
 ENV GPG_KEY=46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 09 Dec 2016 17:49:46 GMT
+# Tue, 27 Dec 2016 22:19:33 GMT
 ENV LOGSTASH_PATH=/usr/share/logstash/bin
-# Fri, 09 Dec 2016 17:49:46 GMT
+# Tue, 27 Dec 2016 22:19:33 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Fri, 09 Dec 2016 17:49:47 GMT
+# Tue, 27 Dec 2016 22:19:34 GMT
 ENV LOGSTASH_VERSION=5.1.1
-# Fri, 09 Dec 2016 17:49:47 GMT
+# Tue, 27 Dec 2016 22:19:46 GMT
 ENV LOGSTASH_TARBALL=https://artifacts.elastic.co/downloads/logstash/logstash-5.1.1.tar.gz LOGSTASH_TARBALL_ASC=https://artifacts.elastic.co/downloads/logstash/logstash-5.1.1.tar.gz.asc LOGSTASH_TARBALL_SHA1=5c88fdd5752d01a4076ee215bd2bb6e46de0d001
-# Fri, 09 Dec 2016 17:50:07 GMT
+# Tue, 27 Dec 2016 22:20:03 GMT
 RUN set -ex; 		if [ -z "$LOGSTASH_TARBALL_SHA1" ] && [ -z "$LOGSTASH_TARBALL_ASC" ]; then 		echo >&2 'error: have neither a SHA1 _or_ a signature file -- cannot verify download!'; 		exit 1; 	fi; 		apk add --no-cache --virtual .fetch-deps 		ca-certificates 		gnupg 		openssl 		tar 	; 		wget -O logstash.tar.gz "$LOGSTASH_TARBALL"; 		if [ "$LOGSTASH_TARBALL_SHA1" ]; then 		echo "$LOGSTASH_TARBALL_SHA1 *logstash.tar.gz" | sha1sum -c -; 	fi; 		if [ "$LOGSTASH_TARBALL_ASC" ]; then 		wget -O logstash.tar.gz.asc "$LOGSTASH_TARBALL_ASC"; 		export GNUPGHOME="$(mktemp -d)"; 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY"; 		gpg --batch --verify logstash.tar.gz.asc logstash.tar.gz; 		rm -r "$GNUPGHOME" logstash.tar.gz.asc; 	fi; 		dir="$(dirname "$LOGSTASH_PATH")"; 		mkdir -p "$dir"; 	tar -xf logstash.tar.gz --strip-components=1 -C "$dir"; 	rm logstash.tar.gz; 		apk del .fetch-deps; 		export LS_SETTINGS_DIR="$dir/config"; 	if [ -f "$LS_SETTINGS_DIR/log4j2.properties" ]; then 		cp "$LS_SETTINGS_DIR/log4j2.properties" "$LS_SETTINGS_DIR/log4j2.properties.dist"; 		truncate -s 0 "$LS_SETTINGS_DIR/log4j2.properties"; 	fi; 		for userDir in 		"$dir/config" 		"$dir/data" 	; do 		if [ -d "$userDir" ]; then 			chown -R logstash:logstash "$userDir"; 		fi; 	done; 		logstash --version
-# Fri, 09 Dec 2016 17:50:08 GMT
+# Tue, 27 Dec 2016 22:20:14 GMT
 COPY file:5073cf67fe0dccc616d2ced3f7df597d906363dd3dc278d0395d780f89073ce8 in / 
-# Fri, 09 Dec 2016 17:50:09 GMT
+# Tue, 27 Dec 2016 22:20:15 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 09 Dec 2016 17:50:09 GMT
+# Tue, 27 Dec 2016 22:20:15 GMT
 CMD ["-e" ""]
 ```
 
 -	Layers:
-	-	`sha256:3690ec4760f95690944da86dc4496148a63d85c9e3100669a318110092f6862f`  
-		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
-		Size: 2.3 MB (2312958 bytes)  
+	-	`sha256:b7f33cc0b48ea4fb2f0745def58c25483a5f6b7aed5b41ce8f1cb6e17f5723cf`  
+		Last Modified: Tue, 27 Dec 2016 18:18:49 GMT  
+		Size: 2.3 MB (2313090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfdb77eb56b4c44907a822ccdf607323c1f42fd024b7db6be146dd049d95f305`  
-		Last Modified: Tue, 18 Oct 2016 20:45:34 GMT  
-		Size: 230.0 B  
+	-	`sha256:43a564ae36a32a4575a2cc6de78b6d1b7ce5c581bca7b875d789e026198c1d55`  
+		Last Modified: Tue, 27 Dec 2016 18:46:24 GMT  
+		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:857cbad9cd9a8609720fe041554046e94f0813b64887c3c06eac0c2cfb2be741`  
-		Last Modified: Thu, 17 Nov 2016 22:03:51 GMT  
-		Size: 39.7 MB (39670171 bytes)  
+	-	`sha256:efb75a810eee14e75bc372b510c025740f57b5eddae56f87dd85f0f9ef531c9f`  
+		Last Modified: Tue, 27 Dec 2016 18:59:36 GMT  
+		Size: 39.7 MB (39670203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eaa0e4621f6b8de424c61f8d932962a83b1296f6bcd0e94ac0d51371e68cd09c`  
-		Last Modified: Fri, 09 Dec 2016 17:53:26 GMT  
-		Size: 1.3 KB (1274 bytes)  
+	-	`sha256:499e921fe151c6234a64e05e2dd6f42d65e90cc4b396ec18dd9c8e66d8658da9`  
+		Last Modified: Tue, 27 Dec 2016 22:49:43 GMT  
+		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:916a60334b610753f0771fb8fb4511089cc820941ddea964f63f95ce279bdadd`  
-		Last Modified: Fri, 09 Dec 2016 17:53:28 GMT  
-		Size: 1.8 MB (1801874 bytes)  
+	-	`sha256:04e84160ab1dfdacc6e574166d112db72bdd1edff36f033c256628c1f36d7df4`  
+		Last Modified: Tue, 27 Dec 2016 22:49:44 GMT  
+		Size: 1.8 MB (1801882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:741faf38ae81728eb659416fe9e931f6b63e41053ddaf05c5829b2cc0c7839fc`  
-		Last Modified: Fri, 09 Dec 2016 17:53:27 GMT  
-		Size: 87.8 KB (87822 bytes)  
+	-	`sha256:464cab3b02b66c6bb8eea49ee101511fd267646cd946b2fc771f6d4ab9f2a9fb`  
+		Last Modified: Tue, 27 Dec 2016 22:49:43 GMT  
+		Size: 87.8 KB (87810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:518690f31b03bb1d1ea06474e017b533a7f78cf41d3d21093f02cfbf3530d89f`  
-		Last Modified: Fri, 09 Dec 2016 17:53:47 GMT  
-		Size: 94.8 MB (94824691 bytes)  
+	-	`sha256:24d8914c7326d2c21815b2827d3c7b23ff46975cd81dcf712badc35148f6157e`  
+		Last Modified: Tue, 27 Dec 2016 22:51:58 GMT  
+		Size: 94.8 MB (94824760 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f48d6b3563c890790c7326d1c934ae2d2dc69f22e6417076db563c5b601432ee`  
-		Last Modified: Fri, 09 Dec 2016 17:53:26 GMT  
-		Size: 305.0 B  
+	-	`sha256:12b78384136f5f6e7c1dc154399beec135ff4f5304aa6f68033de5b18bd4c5b9`  
+		Last Modified: Tue, 27 Dec 2016 22:51:41 GMT  
+		Size: 306.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `logstash:5.1-alpine`
 
 ```console
-$ docker pull logstash@sha256:f4ac7c4fdff8c2680d83a0bcbe2e3d4bf9eaae562188a9acf94a0c061bc919cd
+$ docker pull logstash@sha256:bebac87156e1028b4784575c20bd6215a30cd0a9d9f29f2de7685e94969498ec
 ```
 
 -	Platforms:
@@ -692,93 +692,93 @@ $ docker pull logstash@sha256:f4ac7c4fdff8c2680d83a0bcbe2e3d4bf9eaae562188a9acf9
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.7 MB (138699325 bytes)**  
+-	Total Size: **138.7 MB (138699553 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:27e486aa1a606b02ef554e74a131d1b829e41b9a9ac3e45000286f7b8df04d81`
+-	Image ID: `sha256:ffe9d5fbdae7d788c7de8497ce5840bdf9cd57569b769ce613c27a809f254fdb`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
 ```dockerfile
-# Tue, 18 Oct 2016 20:31:22 GMT
-ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in / 
-# Tue, 18 Oct 2016 20:39:57 GMT
+# Tue, 27 Dec 2016 18:17:13 GMT
+ADD file:eeed5f514a35d18fcd9cbfe6c40c582211020bffdd53e4799018d33826fe5067 in / 
+# Tue, 27 Dec 2016 18:37:54 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Oct 2016 20:39:58 GMT
+# Tue, 27 Dec 2016 18:37:55 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 18 Oct 2016 20:40:34 GMT
+# Tue, 27 Dec 2016 18:38:43 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
-# Tue, 18 Oct 2016 20:40:35 GMT
+# Tue, 27 Dec 2016 18:38:44 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Thu, 17 Nov 2016 21:47:51 GMT
+# Tue, 27 Dec 2016 18:38:44 GMT
 ENV JAVA_VERSION=8u111
-# Thu, 17 Nov 2016 21:47:52 GMT
+# Tue, 27 Dec 2016 18:38:45 GMT
 ENV JAVA_ALPINE_VERSION=8.111.14-r0
-# Thu, 17 Nov 2016 21:47:57 GMT
+# Tue, 27 Dec 2016 18:38:49 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 09 Dec 2016 17:49:40 GMT
+# Tue, 27 Dec 2016 22:18:26 GMT
 RUN addgroup -S logstash && adduser -S -G logstash logstash
-# Fri, 09 Dec 2016 17:49:43 GMT
+# Tue, 27 Dec 2016 22:18:29 GMT
 RUN apk add --no-cache 		bash 		libzmq
-# Fri, 09 Dec 2016 17:49:45 GMT
+# Tue, 27 Dec 2016 22:18:31 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Fri, 09 Dec 2016 17:49:46 GMT
+# Tue, 27 Dec 2016 22:18:31 GMT
 ENV GPG_KEY=46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 09 Dec 2016 17:49:46 GMT
+# Tue, 27 Dec 2016 22:19:33 GMT
 ENV LOGSTASH_PATH=/usr/share/logstash/bin
-# Fri, 09 Dec 2016 17:49:46 GMT
+# Tue, 27 Dec 2016 22:19:33 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Fri, 09 Dec 2016 17:49:47 GMT
+# Tue, 27 Dec 2016 22:19:34 GMT
 ENV LOGSTASH_VERSION=5.1.1
-# Fri, 09 Dec 2016 17:49:47 GMT
+# Tue, 27 Dec 2016 22:19:46 GMT
 ENV LOGSTASH_TARBALL=https://artifacts.elastic.co/downloads/logstash/logstash-5.1.1.tar.gz LOGSTASH_TARBALL_ASC=https://artifacts.elastic.co/downloads/logstash/logstash-5.1.1.tar.gz.asc LOGSTASH_TARBALL_SHA1=5c88fdd5752d01a4076ee215bd2bb6e46de0d001
-# Fri, 09 Dec 2016 17:50:07 GMT
+# Tue, 27 Dec 2016 22:20:03 GMT
 RUN set -ex; 		if [ -z "$LOGSTASH_TARBALL_SHA1" ] && [ -z "$LOGSTASH_TARBALL_ASC" ]; then 		echo >&2 'error: have neither a SHA1 _or_ a signature file -- cannot verify download!'; 		exit 1; 	fi; 		apk add --no-cache --virtual .fetch-deps 		ca-certificates 		gnupg 		openssl 		tar 	; 		wget -O logstash.tar.gz "$LOGSTASH_TARBALL"; 		if [ "$LOGSTASH_TARBALL_SHA1" ]; then 		echo "$LOGSTASH_TARBALL_SHA1 *logstash.tar.gz" | sha1sum -c -; 	fi; 		if [ "$LOGSTASH_TARBALL_ASC" ]; then 		wget -O logstash.tar.gz.asc "$LOGSTASH_TARBALL_ASC"; 		export GNUPGHOME="$(mktemp -d)"; 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY"; 		gpg --batch --verify logstash.tar.gz.asc logstash.tar.gz; 		rm -r "$GNUPGHOME" logstash.tar.gz.asc; 	fi; 		dir="$(dirname "$LOGSTASH_PATH")"; 		mkdir -p "$dir"; 	tar -xf logstash.tar.gz --strip-components=1 -C "$dir"; 	rm logstash.tar.gz; 		apk del .fetch-deps; 		export LS_SETTINGS_DIR="$dir/config"; 	if [ -f "$LS_SETTINGS_DIR/log4j2.properties" ]; then 		cp "$LS_SETTINGS_DIR/log4j2.properties" "$LS_SETTINGS_DIR/log4j2.properties.dist"; 		truncate -s 0 "$LS_SETTINGS_DIR/log4j2.properties"; 	fi; 		for userDir in 		"$dir/config" 		"$dir/data" 	; do 		if [ -d "$userDir" ]; then 			chown -R logstash:logstash "$userDir"; 		fi; 	done; 		logstash --version
-# Fri, 09 Dec 2016 17:50:08 GMT
+# Tue, 27 Dec 2016 22:20:14 GMT
 COPY file:5073cf67fe0dccc616d2ced3f7df597d906363dd3dc278d0395d780f89073ce8 in / 
-# Fri, 09 Dec 2016 17:50:09 GMT
+# Tue, 27 Dec 2016 22:20:15 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 09 Dec 2016 17:50:09 GMT
+# Tue, 27 Dec 2016 22:20:15 GMT
 CMD ["-e" ""]
 ```
 
 -	Layers:
-	-	`sha256:3690ec4760f95690944da86dc4496148a63d85c9e3100669a318110092f6862f`  
-		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
-		Size: 2.3 MB (2312958 bytes)  
+	-	`sha256:b7f33cc0b48ea4fb2f0745def58c25483a5f6b7aed5b41ce8f1cb6e17f5723cf`  
+		Last Modified: Tue, 27 Dec 2016 18:18:49 GMT  
+		Size: 2.3 MB (2313090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfdb77eb56b4c44907a822ccdf607323c1f42fd024b7db6be146dd049d95f305`  
-		Last Modified: Tue, 18 Oct 2016 20:45:34 GMT  
-		Size: 230.0 B  
+	-	`sha256:43a564ae36a32a4575a2cc6de78b6d1b7ce5c581bca7b875d789e026198c1d55`  
+		Last Modified: Tue, 27 Dec 2016 18:46:24 GMT  
+		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:857cbad9cd9a8609720fe041554046e94f0813b64887c3c06eac0c2cfb2be741`  
-		Last Modified: Thu, 17 Nov 2016 22:03:51 GMT  
-		Size: 39.7 MB (39670171 bytes)  
+	-	`sha256:efb75a810eee14e75bc372b510c025740f57b5eddae56f87dd85f0f9ef531c9f`  
+		Last Modified: Tue, 27 Dec 2016 18:59:36 GMT  
+		Size: 39.7 MB (39670203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eaa0e4621f6b8de424c61f8d932962a83b1296f6bcd0e94ac0d51371e68cd09c`  
-		Last Modified: Fri, 09 Dec 2016 17:53:26 GMT  
-		Size: 1.3 KB (1274 bytes)  
+	-	`sha256:499e921fe151c6234a64e05e2dd6f42d65e90cc4b396ec18dd9c8e66d8658da9`  
+		Last Modified: Tue, 27 Dec 2016 22:49:43 GMT  
+		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:916a60334b610753f0771fb8fb4511089cc820941ddea964f63f95ce279bdadd`  
-		Last Modified: Fri, 09 Dec 2016 17:53:28 GMT  
-		Size: 1.8 MB (1801874 bytes)  
+	-	`sha256:04e84160ab1dfdacc6e574166d112db72bdd1edff36f033c256628c1f36d7df4`  
+		Last Modified: Tue, 27 Dec 2016 22:49:44 GMT  
+		Size: 1.8 MB (1801882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:741faf38ae81728eb659416fe9e931f6b63e41053ddaf05c5829b2cc0c7839fc`  
-		Last Modified: Fri, 09 Dec 2016 17:53:27 GMT  
-		Size: 87.8 KB (87822 bytes)  
+	-	`sha256:464cab3b02b66c6bb8eea49ee101511fd267646cd946b2fc771f6d4ab9f2a9fb`  
+		Last Modified: Tue, 27 Dec 2016 22:49:43 GMT  
+		Size: 87.8 KB (87810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:518690f31b03bb1d1ea06474e017b533a7f78cf41d3d21093f02cfbf3530d89f`  
-		Last Modified: Fri, 09 Dec 2016 17:53:47 GMT  
-		Size: 94.8 MB (94824691 bytes)  
+	-	`sha256:24d8914c7326d2c21815b2827d3c7b23ff46975cd81dcf712badc35148f6157e`  
+		Last Modified: Tue, 27 Dec 2016 22:51:58 GMT  
+		Size: 94.8 MB (94824760 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f48d6b3563c890790c7326d1c934ae2d2dc69f22e6417076db563c5b601432ee`  
-		Last Modified: Fri, 09 Dec 2016 17:53:26 GMT  
-		Size: 305.0 B  
+	-	`sha256:12b78384136f5f6e7c1dc154399beec135ff4f5304aa6f68033de5b18bd4c5b9`  
+		Last Modified: Tue, 27 Dec 2016 22:51:41 GMT  
+		Size: 306.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `logstash:5-alpine`
 
 ```console
-$ docker pull logstash@sha256:f4ac7c4fdff8c2680d83a0bcbe2e3d4bf9eaae562188a9acf94a0c061bc919cd
+$ docker pull logstash@sha256:bebac87156e1028b4784575c20bd6215a30cd0a9d9f29f2de7685e94969498ec
 ```
 
 -	Platforms:
@@ -788,93 +788,93 @@ $ docker pull logstash@sha256:f4ac7c4fdff8c2680d83a0bcbe2e3d4bf9eaae562188a9acf9
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.7 MB (138699325 bytes)**  
+-	Total Size: **138.7 MB (138699553 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:27e486aa1a606b02ef554e74a131d1b829e41b9a9ac3e45000286f7b8df04d81`
+-	Image ID: `sha256:ffe9d5fbdae7d788c7de8497ce5840bdf9cd57569b769ce613c27a809f254fdb`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
 ```dockerfile
-# Tue, 18 Oct 2016 20:31:22 GMT
-ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in / 
-# Tue, 18 Oct 2016 20:39:57 GMT
+# Tue, 27 Dec 2016 18:17:13 GMT
+ADD file:eeed5f514a35d18fcd9cbfe6c40c582211020bffdd53e4799018d33826fe5067 in / 
+# Tue, 27 Dec 2016 18:37:54 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Oct 2016 20:39:58 GMT
+# Tue, 27 Dec 2016 18:37:55 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 18 Oct 2016 20:40:34 GMT
+# Tue, 27 Dec 2016 18:38:43 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
-# Tue, 18 Oct 2016 20:40:35 GMT
+# Tue, 27 Dec 2016 18:38:44 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Thu, 17 Nov 2016 21:47:51 GMT
+# Tue, 27 Dec 2016 18:38:44 GMT
 ENV JAVA_VERSION=8u111
-# Thu, 17 Nov 2016 21:47:52 GMT
+# Tue, 27 Dec 2016 18:38:45 GMT
 ENV JAVA_ALPINE_VERSION=8.111.14-r0
-# Thu, 17 Nov 2016 21:47:57 GMT
+# Tue, 27 Dec 2016 18:38:49 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 09 Dec 2016 17:49:40 GMT
+# Tue, 27 Dec 2016 22:18:26 GMT
 RUN addgroup -S logstash && adduser -S -G logstash logstash
-# Fri, 09 Dec 2016 17:49:43 GMT
+# Tue, 27 Dec 2016 22:18:29 GMT
 RUN apk add --no-cache 		bash 		libzmq
-# Fri, 09 Dec 2016 17:49:45 GMT
+# Tue, 27 Dec 2016 22:18:31 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Fri, 09 Dec 2016 17:49:46 GMT
+# Tue, 27 Dec 2016 22:18:31 GMT
 ENV GPG_KEY=46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 09 Dec 2016 17:49:46 GMT
+# Tue, 27 Dec 2016 22:19:33 GMT
 ENV LOGSTASH_PATH=/usr/share/logstash/bin
-# Fri, 09 Dec 2016 17:49:46 GMT
+# Tue, 27 Dec 2016 22:19:33 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Fri, 09 Dec 2016 17:49:47 GMT
+# Tue, 27 Dec 2016 22:19:34 GMT
 ENV LOGSTASH_VERSION=5.1.1
-# Fri, 09 Dec 2016 17:49:47 GMT
+# Tue, 27 Dec 2016 22:19:46 GMT
 ENV LOGSTASH_TARBALL=https://artifacts.elastic.co/downloads/logstash/logstash-5.1.1.tar.gz LOGSTASH_TARBALL_ASC=https://artifacts.elastic.co/downloads/logstash/logstash-5.1.1.tar.gz.asc LOGSTASH_TARBALL_SHA1=5c88fdd5752d01a4076ee215bd2bb6e46de0d001
-# Fri, 09 Dec 2016 17:50:07 GMT
+# Tue, 27 Dec 2016 22:20:03 GMT
 RUN set -ex; 		if [ -z "$LOGSTASH_TARBALL_SHA1" ] && [ -z "$LOGSTASH_TARBALL_ASC" ]; then 		echo >&2 'error: have neither a SHA1 _or_ a signature file -- cannot verify download!'; 		exit 1; 	fi; 		apk add --no-cache --virtual .fetch-deps 		ca-certificates 		gnupg 		openssl 		tar 	; 		wget -O logstash.tar.gz "$LOGSTASH_TARBALL"; 		if [ "$LOGSTASH_TARBALL_SHA1" ]; then 		echo "$LOGSTASH_TARBALL_SHA1 *logstash.tar.gz" | sha1sum -c -; 	fi; 		if [ "$LOGSTASH_TARBALL_ASC" ]; then 		wget -O logstash.tar.gz.asc "$LOGSTASH_TARBALL_ASC"; 		export GNUPGHOME="$(mktemp -d)"; 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY"; 		gpg --batch --verify logstash.tar.gz.asc logstash.tar.gz; 		rm -r "$GNUPGHOME" logstash.tar.gz.asc; 	fi; 		dir="$(dirname "$LOGSTASH_PATH")"; 		mkdir -p "$dir"; 	tar -xf logstash.tar.gz --strip-components=1 -C "$dir"; 	rm logstash.tar.gz; 		apk del .fetch-deps; 		export LS_SETTINGS_DIR="$dir/config"; 	if [ -f "$LS_SETTINGS_DIR/log4j2.properties" ]; then 		cp "$LS_SETTINGS_DIR/log4j2.properties" "$LS_SETTINGS_DIR/log4j2.properties.dist"; 		truncate -s 0 "$LS_SETTINGS_DIR/log4j2.properties"; 	fi; 		for userDir in 		"$dir/config" 		"$dir/data" 	; do 		if [ -d "$userDir" ]; then 			chown -R logstash:logstash "$userDir"; 		fi; 	done; 		logstash --version
-# Fri, 09 Dec 2016 17:50:08 GMT
+# Tue, 27 Dec 2016 22:20:14 GMT
 COPY file:5073cf67fe0dccc616d2ced3f7df597d906363dd3dc278d0395d780f89073ce8 in / 
-# Fri, 09 Dec 2016 17:50:09 GMT
+# Tue, 27 Dec 2016 22:20:15 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 09 Dec 2016 17:50:09 GMT
+# Tue, 27 Dec 2016 22:20:15 GMT
 CMD ["-e" ""]
 ```
 
 -	Layers:
-	-	`sha256:3690ec4760f95690944da86dc4496148a63d85c9e3100669a318110092f6862f`  
-		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
-		Size: 2.3 MB (2312958 bytes)  
+	-	`sha256:b7f33cc0b48ea4fb2f0745def58c25483a5f6b7aed5b41ce8f1cb6e17f5723cf`  
+		Last Modified: Tue, 27 Dec 2016 18:18:49 GMT  
+		Size: 2.3 MB (2313090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfdb77eb56b4c44907a822ccdf607323c1f42fd024b7db6be146dd049d95f305`  
-		Last Modified: Tue, 18 Oct 2016 20:45:34 GMT  
-		Size: 230.0 B  
+	-	`sha256:43a564ae36a32a4575a2cc6de78b6d1b7ce5c581bca7b875d789e026198c1d55`  
+		Last Modified: Tue, 27 Dec 2016 18:46:24 GMT  
+		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:857cbad9cd9a8609720fe041554046e94f0813b64887c3c06eac0c2cfb2be741`  
-		Last Modified: Thu, 17 Nov 2016 22:03:51 GMT  
-		Size: 39.7 MB (39670171 bytes)  
+	-	`sha256:efb75a810eee14e75bc372b510c025740f57b5eddae56f87dd85f0f9ef531c9f`  
+		Last Modified: Tue, 27 Dec 2016 18:59:36 GMT  
+		Size: 39.7 MB (39670203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eaa0e4621f6b8de424c61f8d932962a83b1296f6bcd0e94ac0d51371e68cd09c`  
-		Last Modified: Fri, 09 Dec 2016 17:53:26 GMT  
-		Size: 1.3 KB (1274 bytes)  
+	-	`sha256:499e921fe151c6234a64e05e2dd6f42d65e90cc4b396ec18dd9c8e66d8658da9`  
+		Last Modified: Tue, 27 Dec 2016 22:49:43 GMT  
+		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:916a60334b610753f0771fb8fb4511089cc820941ddea964f63f95ce279bdadd`  
-		Last Modified: Fri, 09 Dec 2016 17:53:28 GMT  
-		Size: 1.8 MB (1801874 bytes)  
+	-	`sha256:04e84160ab1dfdacc6e574166d112db72bdd1edff36f033c256628c1f36d7df4`  
+		Last Modified: Tue, 27 Dec 2016 22:49:44 GMT  
+		Size: 1.8 MB (1801882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:741faf38ae81728eb659416fe9e931f6b63e41053ddaf05c5829b2cc0c7839fc`  
-		Last Modified: Fri, 09 Dec 2016 17:53:27 GMT  
-		Size: 87.8 KB (87822 bytes)  
+	-	`sha256:464cab3b02b66c6bb8eea49ee101511fd267646cd946b2fc771f6d4ab9f2a9fb`  
+		Last Modified: Tue, 27 Dec 2016 22:49:43 GMT  
+		Size: 87.8 KB (87810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:518690f31b03bb1d1ea06474e017b533a7f78cf41d3d21093f02cfbf3530d89f`  
-		Last Modified: Fri, 09 Dec 2016 17:53:47 GMT  
-		Size: 94.8 MB (94824691 bytes)  
+	-	`sha256:24d8914c7326d2c21815b2827d3c7b23ff46975cd81dcf712badc35148f6157e`  
+		Last Modified: Tue, 27 Dec 2016 22:51:58 GMT  
+		Size: 94.8 MB (94824760 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f48d6b3563c890790c7326d1c934ae2d2dc69f22e6417076db563c5b601432ee`  
-		Last Modified: Fri, 09 Dec 2016 17:53:26 GMT  
-		Size: 305.0 B  
+	-	`sha256:12b78384136f5f6e7c1dc154399beec135ff4f5304aa6f68033de5b18bd4c5b9`  
+		Last Modified: Tue, 27 Dec 2016 22:51:41 GMT  
+		Size: 306.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `logstash:alpine`
 
 ```console
-$ docker pull logstash@sha256:f4ac7c4fdff8c2680d83a0bcbe2e3d4bf9eaae562188a9acf94a0c061bc919cd
+$ docker pull logstash@sha256:bebac87156e1028b4784575c20bd6215a30cd0a9d9f29f2de7685e94969498ec
 ```
 
 -	Platforms:
@@ -884,87 +884,87 @@ $ docker pull logstash@sha256:f4ac7c4fdff8c2680d83a0bcbe2e3d4bf9eaae562188a9acf9
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.7 MB (138699325 bytes)**  
+-	Total Size: **138.7 MB (138699553 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:27e486aa1a606b02ef554e74a131d1b829e41b9a9ac3e45000286f7b8df04d81`
+-	Image ID: `sha256:ffe9d5fbdae7d788c7de8497ce5840bdf9cd57569b769ce613c27a809f254fdb`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
 ```dockerfile
-# Tue, 18 Oct 2016 20:31:22 GMT
-ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in / 
-# Tue, 18 Oct 2016 20:39:57 GMT
+# Tue, 27 Dec 2016 18:17:13 GMT
+ADD file:eeed5f514a35d18fcd9cbfe6c40c582211020bffdd53e4799018d33826fe5067 in / 
+# Tue, 27 Dec 2016 18:37:54 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Oct 2016 20:39:58 GMT
+# Tue, 27 Dec 2016 18:37:55 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 18 Oct 2016 20:40:34 GMT
+# Tue, 27 Dec 2016 18:38:43 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
-# Tue, 18 Oct 2016 20:40:35 GMT
+# Tue, 27 Dec 2016 18:38:44 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Thu, 17 Nov 2016 21:47:51 GMT
+# Tue, 27 Dec 2016 18:38:44 GMT
 ENV JAVA_VERSION=8u111
-# Thu, 17 Nov 2016 21:47:52 GMT
+# Tue, 27 Dec 2016 18:38:45 GMT
 ENV JAVA_ALPINE_VERSION=8.111.14-r0
-# Thu, 17 Nov 2016 21:47:57 GMT
+# Tue, 27 Dec 2016 18:38:49 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 09 Dec 2016 17:49:40 GMT
+# Tue, 27 Dec 2016 22:18:26 GMT
 RUN addgroup -S logstash && adduser -S -G logstash logstash
-# Fri, 09 Dec 2016 17:49:43 GMT
+# Tue, 27 Dec 2016 22:18:29 GMT
 RUN apk add --no-cache 		bash 		libzmq
-# Fri, 09 Dec 2016 17:49:45 GMT
+# Tue, 27 Dec 2016 22:18:31 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Fri, 09 Dec 2016 17:49:46 GMT
+# Tue, 27 Dec 2016 22:18:31 GMT
 ENV GPG_KEY=46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 09 Dec 2016 17:49:46 GMT
+# Tue, 27 Dec 2016 22:19:33 GMT
 ENV LOGSTASH_PATH=/usr/share/logstash/bin
-# Fri, 09 Dec 2016 17:49:46 GMT
+# Tue, 27 Dec 2016 22:19:33 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Fri, 09 Dec 2016 17:49:47 GMT
+# Tue, 27 Dec 2016 22:19:34 GMT
 ENV LOGSTASH_VERSION=5.1.1
-# Fri, 09 Dec 2016 17:49:47 GMT
+# Tue, 27 Dec 2016 22:19:46 GMT
 ENV LOGSTASH_TARBALL=https://artifacts.elastic.co/downloads/logstash/logstash-5.1.1.tar.gz LOGSTASH_TARBALL_ASC=https://artifacts.elastic.co/downloads/logstash/logstash-5.1.1.tar.gz.asc LOGSTASH_TARBALL_SHA1=5c88fdd5752d01a4076ee215bd2bb6e46de0d001
-# Fri, 09 Dec 2016 17:50:07 GMT
+# Tue, 27 Dec 2016 22:20:03 GMT
 RUN set -ex; 		if [ -z "$LOGSTASH_TARBALL_SHA1" ] && [ -z "$LOGSTASH_TARBALL_ASC" ]; then 		echo >&2 'error: have neither a SHA1 _or_ a signature file -- cannot verify download!'; 		exit 1; 	fi; 		apk add --no-cache --virtual .fetch-deps 		ca-certificates 		gnupg 		openssl 		tar 	; 		wget -O logstash.tar.gz "$LOGSTASH_TARBALL"; 		if [ "$LOGSTASH_TARBALL_SHA1" ]; then 		echo "$LOGSTASH_TARBALL_SHA1 *logstash.tar.gz" | sha1sum -c -; 	fi; 		if [ "$LOGSTASH_TARBALL_ASC" ]; then 		wget -O logstash.tar.gz.asc "$LOGSTASH_TARBALL_ASC"; 		export GNUPGHOME="$(mktemp -d)"; 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY"; 		gpg --batch --verify logstash.tar.gz.asc logstash.tar.gz; 		rm -r "$GNUPGHOME" logstash.tar.gz.asc; 	fi; 		dir="$(dirname "$LOGSTASH_PATH")"; 		mkdir -p "$dir"; 	tar -xf logstash.tar.gz --strip-components=1 -C "$dir"; 	rm logstash.tar.gz; 		apk del .fetch-deps; 		export LS_SETTINGS_DIR="$dir/config"; 	if [ -f "$LS_SETTINGS_DIR/log4j2.properties" ]; then 		cp "$LS_SETTINGS_DIR/log4j2.properties" "$LS_SETTINGS_DIR/log4j2.properties.dist"; 		truncate -s 0 "$LS_SETTINGS_DIR/log4j2.properties"; 	fi; 		for userDir in 		"$dir/config" 		"$dir/data" 	; do 		if [ -d "$userDir" ]; then 			chown -R logstash:logstash "$userDir"; 		fi; 	done; 		logstash --version
-# Fri, 09 Dec 2016 17:50:08 GMT
+# Tue, 27 Dec 2016 22:20:14 GMT
 COPY file:5073cf67fe0dccc616d2ced3f7df597d906363dd3dc278d0395d780f89073ce8 in / 
-# Fri, 09 Dec 2016 17:50:09 GMT
+# Tue, 27 Dec 2016 22:20:15 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 09 Dec 2016 17:50:09 GMT
+# Tue, 27 Dec 2016 22:20:15 GMT
 CMD ["-e" ""]
 ```
 
 -	Layers:
-	-	`sha256:3690ec4760f95690944da86dc4496148a63d85c9e3100669a318110092f6862f`  
-		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
-		Size: 2.3 MB (2312958 bytes)  
+	-	`sha256:b7f33cc0b48ea4fb2f0745def58c25483a5f6b7aed5b41ce8f1cb6e17f5723cf`  
+		Last Modified: Tue, 27 Dec 2016 18:18:49 GMT  
+		Size: 2.3 MB (2313090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfdb77eb56b4c44907a822ccdf607323c1f42fd024b7db6be146dd049d95f305`  
-		Last Modified: Tue, 18 Oct 2016 20:45:34 GMT  
-		Size: 230.0 B  
+	-	`sha256:43a564ae36a32a4575a2cc6de78b6d1b7ce5c581bca7b875d789e026198c1d55`  
+		Last Modified: Tue, 27 Dec 2016 18:46:24 GMT  
+		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:857cbad9cd9a8609720fe041554046e94f0813b64887c3c06eac0c2cfb2be741`  
-		Last Modified: Thu, 17 Nov 2016 22:03:51 GMT  
-		Size: 39.7 MB (39670171 bytes)  
+	-	`sha256:efb75a810eee14e75bc372b510c025740f57b5eddae56f87dd85f0f9ef531c9f`  
+		Last Modified: Tue, 27 Dec 2016 18:59:36 GMT  
+		Size: 39.7 MB (39670203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eaa0e4621f6b8de424c61f8d932962a83b1296f6bcd0e94ac0d51371e68cd09c`  
-		Last Modified: Fri, 09 Dec 2016 17:53:26 GMT  
-		Size: 1.3 KB (1274 bytes)  
+	-	`sha256:499e921fe151c6234a64e05e2dd6f42d65e90cc4b396ec18dd9c8e66d8658da9`  
+		Last Modified: Tue, 27 Dec 2016 22:49:43 GMT  
+		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:916a60334b610753f0771fb8fb4511089cc820941ddea964f63f95ce279bdadd`  
-		Last Modified: Fri, 09 Dec 2016 17:53:28 GMT  
-		Size: 1.8 MB (1801874 bytes)  
+	-	`sha256:04e84160ab1dfdacc6e574166d112db72bdd1edff36f033c256628c1f36d7df4`  
+		Last Modified: Tue, 27 Dec 2016 22:49:44 GMT  
+		Size: 1.8 MB (1801882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:741faf38ae81728eb659416fe9e931f6b63e41053ddaf05c5829b2cc0c7839fc`  
-		Last Modified: Fri, 09 Dec 2016 17:53:27 GMT  
-		Size: 87.8 KB (87822 bytes)  
+	-	`sha256:464cab3b02b66c6bb8eea49ee101511fd267646cd946b2fc771f6d4ab9f2a9fb`  
+		Last Modified: Tue, 27 Dec 2016 22:49:43 GMT  
+		Size: 87.8 KB (87810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:518690f31b03bb1d1ea06474e017b533a7f78cf41d3d21093f02cfbf3530d89f`  
-		Last Modified: Fri, 09 Dec 2016 17:53:47 GMT  
-		Size: 94.8 MB (94824691 bytes)  
+	-	`sha256:24d8914c7326d2c21815b2827d3c7b23ff46975cd81dcf712badc35148f6157e`  
+		Last Modified: Tue, 27 Dec 2016 22:51:58 GMT  
+		Size: 94.8 MB (94824760 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f48d6b3563c890790c7326d1c934ae2d2dc69f22e6417076db563c5b601432ee`  
-		Last Modified: Fri, 09 Dec 2016 17:53:26 GMT  
-		Size: 305.0 B  
+	-	`sha256:12b78384136f5f6e7c1dc154399beec135ff4f5304aa6f68033de5b18bd4c5b9`  
+		Last Modified: Tue, 27 Dec 2016 22:51:41 GMT  
+		Size: 306.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `logstash:2.4.1`
@@ -1378,7 +1378,7 @@ CMD ["-e" ""]
 ## `logstash:2.4.1-alpine`
 
 ```console
-$ docker pull logstash@sha256:27c86baaf3f55fcbdf16244b4af8c081dd8dd7d70a160fc0ab825a1e89c12348
+$ docker pull logstash@sha256:6c49f208df6cf6d9582ece66f8f9ddbd18eae1f7e9c6cd7036d2b9257fcb8227
 ```
 
 -	Platforms:
@@ -1388,93 +1388,93 @@ $ docker pull logstash@sha256:27c86baaf3f55fcbdf16244b4af8c081dd8dd7d70a160fc0ab
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.4 MB (128441876 bytes)**  
+-	Total Size: **128.4 MB (128441844 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6da060a3601bf3e8e6a0d585f2d7158bc69c4badbe97ab8bfe3b54da160d3297`
+-	Image ID: `sha256:2cbe7ce8ce58227965e396604609969d3e36ce50e109b8b97e70ca1530199861`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
 ```dockerfile
-# Tue, 18 Oct 2016 20:31:22 GMT
-ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in / 
-# Tue, 18 Oct 2016 20:39:57 GMT
+# Tue, 27 Dec 2016 18:17:13 GMT
+ADD file:eeed5f514a35d18fcd9cbfe6c40c582211020bffdd53e4799018d33826fe5067 in / 
+# Tue, 27 Dec 2016 18:37:54 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Oct 2016 20:39:58 GMT
+# Tue, 27 Dec 2016 18:37:55 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 18 Oct 2016 20:40:34 GMT
+# Tue, 27 Dec 2016 18:38:43 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
-# Tue, 18 Oct 2016 20:40:35 GMT
+# Tue, 27 Dec 2016 18:38:44 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Thu, 17 Nov 2016 21:47:51 GMT
+# Tue, 27 Dec 2016 18:38:44 GMT
 ENV JAVA_VERSION=8u111
-# Thu, 17 Nov 2016 21:47:52 GMT
+# Tue, 27 Dec 2016 18:38:45 GMT
 ENV JAVA_ALPINE_VERSION=8.111.14-r0
-# Thu, 17 Nov 2016 21:47:57 GMT
+# Tue, 27 Dec 2016 18:38:49 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 09 Dec 2016 17:49:40 GMT
+# Tue, 27 Dec 2016 22:18:26 GMT
 RUN addgroup -S logstash && adduser -S -G logstash logstash
-# Fri, 09 Dec 2016 17:49:43 GMT
+# Tue, 27 Dec 2016 22:18:29 GMT
 RUN apk add --no-cache 		bash 		libzmq
-# Fri, 09 Dec 2016 17:49:45 GMT
+# Tue, 27 Dec 2016 22:18:31 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Fri, 09 Dec 2016 17:49:46 GMT
+# Tue, 27 Dec 2016 22:18:31 GMT
 ENV GPG_KEY=46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 09 Dec 2016 17:50:34 GMT
+# Tue, 27 Dec 2016 22:18:32 GMT
 ENV LOGSTASH_PATH=/opt/logstash/bin
-# Fri, 09 Dec 2016 17:50:34 GMT
+# Tue, 27 Dec 2016 22:18:32 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Fri, 09 Dec 2016 17:50:34 GMT
+# Tue, 27 Dec 2016 22:18:56 GMT
 ENV LOGSTASH_VERSION=2.4.1
-# Fri, 09 Dec 2016 17:50:35 GMT
+# Tue, 27 Dec 2016 22:19:08 GMT
 ENV LOGSTASH_TARBALL=https://download.elastic.co/logstash/logstash/logstash-2.4.1.tar.gz LOGSTASH_TARBALL_ASC= LOGSTASH_TARBALL_SHA1=5ee4f3fa0ad4b182b3f00b4181a20c4e31a907b4
-# Fri, 09 Dec 2016 17:50:59 GMT
+# Tue, 27 Dec 2016 22:19:29 GMT
 RUN set -ex; 		if [ -z "$LOGSTASH_TARBALL_SHA1" ] && [ -z "$LOGSTASH_TARBALL_ASC" ]; then 		echo >&2 'error: have neither a SHA1 _or_ a signature file -- cannot verify download!'; 		exit 1; 	fi; 		apk add --no-cache --virtual .fetch-deps 		ca-certificates 		gnupg 		openssl 		tar 	; 		wget -O logstash.tar.gz "$LOGSTASH_TARBALL"; 		if [ "$LOGSTASH_TARBALL_SHA1" ]; then 		echo "$LOGSTASH_TARBALL_SHA1 *logstash.tar.gz" | sha1sum -c -; 	fi; 		if [ "$LOGSTASH_TARBALL_ASC" ]; then 		wget -O logstash.tar.gz.asc "$LOGSTASH_TARBALL_ASC"; 		export GNUPGHOME="$(mktemp -d)"; 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY"; 		gpg --batch --verify logstash.tar.gz.asc logstash.tar.gz; 		rm -r "$GNUPGHOME" logstash.tar.gz.asc; 	fi; 		dir="$(dirname "$LOGSTASH_PATH")"; 		mkdir -p "$dir"; 	tar -xf logstash.tar.gz --strip-components=1 -C "$dir"; 	rm logstash.tar.gz; 		apk del .fetch-deps; 		export LS_SETTINGS_DIR="$dir/config"; 	if [ -f "$LS_SETTINGS_DIR/log4j2.properties" ]; then 		cp "$LS_SETTINGS_DIR/log4j2.properties" "$LS_SETTINGS_DIR/log4j2.properties.dist"; 		truncate -s 0 "$LS_SETTINGS_DIR/log4j2.properties"; 	fi; 		for userDir in 		"$dir/config" 		"$dir/data" 	; do 		if [ -d "$userDir" ]; then 			chown -R logstash:logstash "$userDir"; 		fi; 	done; 		logstash --version
-# Fri, 09 Dec 2016 17:51:00 GMT
+# Tue, 27 Dec 2016 22:19:31 GMT
 COPY file:5073cf67fe0dccc616d2ced3f7df597d906363dd3dc278d0395d780f89073ce8 in / 
-# Fri, 09 Dec 2016 17:51:01 GMT
+# Tue, 27 Dec 2016 22:19:31 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 09 Dec 2016 17:51:01 GMT
+# Tue, 27 Dec 2016 22:19:32 GMT
 CMD ["-e" ""]
 ```
 
 -	Layers:
-	-	`sha256:3690ec4760f95690944da86dc4496148a63d85c9e3100669a318110092f6862f`  
-		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
-		Size: 2.3 MB (2312958 bytes)  
+	-	`sha256:b7f33cc0b48ea4fb2f0745def58c25483a5f6b7aed5b41ce8f1cb6e17f5723cf`  
+		Last Modified: Tue, 27 Dec 2016 18:18:49 GMT  
+		Size: 2.3 MB (2313090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfdb77eb56b4c44907a822ccdf607323c1f42fd024b7db6be146dd049d95f305`  
-		Last Modified: Tue, 18 Oct 2016 20:45:34 GMT  
-		Size: 230.0 B  
+	-	`sha256:43a564ae36a32a4575a2cc6de78b6d1b7ce5c581bca7b875d789e026198c1d55`  
+		Last Modified: Tue, 27 Dec 2016 18:46:24 GMT  
+		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:857cbad9cd9a8609720fe041554046e94f0813b64887c3c06eac0c2cfb2be741`  
-		Last Modified: Thu, 17 Nov 2016 22:03:51 GMT  
-		Size: 39.7 MB (39670171 bytes)  
+	-	`sha256:efb75a810eee14e75bc372b510c025740f57b5eddae56f87dd85f0f9ef531c9f`  
+		Last Modified: Tue, 27 Dec 2016 18:59:36 GMT  
+		Size: 39.7 MB (39670203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eaa0e4621f6b8de424c61f8d932962a83b1296f6bcd0e94ac0d51371e68cd09c`  
-		Last Modified: Fri, 09 Dec 2016 17:53:26 GMT  
-		Size: 1.3 KB (1274 bytes)  
+	-	`sha256:499e921fe151c6234a64e05e2dd6f42d65e90cc4b396ec18dd9c8e66d8658da9`  
+		Last Modified: Tue, 27 Dec 2016 22:49:43 GMT  
+		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:916a60334b610753f0771fb8fb4511089cc820941ddea964f63f95ce279bdadd`  
-		Last Modified: Fri, 09 Dec 2016 17:53:28 GMT  
-		Size: 1.8 MB (1801874 bytes)  
+	-	`sha256:04e84160ab1dfdacc6e574166d112db72bdd1edff36f033c256628c1f36d7df4`  
+		Last Modified: Tue, 27 Dec 2016 22:49:44 GMT  
+		Size: 1.8 MB (1801882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:741faf38ae81728eb659416fe9e931f6b63e41053ddaf05c5829b2cc0c7839fc`  
-		Last Modified: Fri, 09 Dec 2016 17:53:27 GMT  
-		Size: 87.8 KB (87822 bytes)  
+	-	`sha256:464cab3b02b66c6bb8eea49ee101511fd267646cd946b2fc771f6d4ab9f2a9fb`  
+		Last Modified: Tue, 27 Dec 2016 22:49:43 GMT  
+		Size: 87.8 KB (87810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26b284a92e2e5dbc0f6a1d84e212965f4dd6ec87f00c41adef3f37dddad3c865`  
-		Last Modified: Fri, 09 Dec 2016 17:57:33 GMT  
-		Size: 84.6 MB (84567242 bytes)  
+	-	`sha256:03c056c1d8e7d7c9a1ffedc3e37e38c95a28ae310838cc149de6d26c0675f8e7`  
+		Last Modified: Tue, 27 Dec 2016 22:50:55 GMT  
+		Size: 84.6 MB (84567053 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89b71f4afe69c08ab996a0b9d404a884123dbe536d8c488da07b62d7f303f303`  
-		Last Modified: Fri, 09 Dec 2016 17:57:00 GMT  
-		Size: 305.0 B  
+	-	`sha256:9a98d6f63494e6651cc86dbdc587bdb27efc02f664e123819a3220788eebeed5`  
+		Last Modified: Tue, 27 Dec 2016 22:50:43 GMT  
+		Size: 304.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `logstash:2.4-alpine`
 
 ```console
-$ docker pull logstash@sha256:27c86baaf3f55fcbdf16244b4af8c081dd8dd7d70a160fc0ab825a1e89c12348
+$ docker pull logstash@sha256:6c49f208df6cf6d9582ece66f8f9ddbd18eae1f7e9c6cd7036d2b9257fcb8227
 ```
 
 -	Platforms:
@@ -1484,93 +1484,93 @@ $ docker pull logstash@sha256:27c86baaf3f55fcbdf16244b4af8c081dd8dd7d70a160fc0ab
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.4 MB (128441876 bytes)**  
+-	Total Size: **128.4 MB (128441844 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6da060a3601bf3e8e6a0d585f2d7158bc69c4badbe97ab8bfe3b54da160d3297`
+-	Image ID: `sha256:2cbe7ce8ce58227965e396604609969d3e36ce50e109b8b97e70ca1530199861`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
 ```dockerfile
-# Tue, 18 Oct 2016 20:31:22 GMT
-ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in / 
-# Tue, 18 Oct 2016 20:39:57 GMT
+# Tue, 27 Dec 2016 18:17:13 GMT
+ADD file:eeed5f514a35d18fcd9cbfe6c40c582211020bffdd53e4799018d33826fe5067 in / 
+# Tue, 27 Dec 2016 18:37:54 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Oct 2016 20:39:58 GMT
+# Tue, 27 Dec 2016 18:37:55 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 18 Oct 2016 20:40:34 GMT
+# Tue, 27 Dec 2016 18:38:43 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
-# Tue, 18 Oct 2016 20:40:35 GMT
+# Tue, 27 Dec 2016 18:38:44 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Thu, 17 Nov 2016 21:47:51 GMT
+# Tue, 27 Dec 2016 18:38:44 GMT
 ENV JAVA_VERSION=8u111
-# Thu, 17 Nov 2016 21:47:52 GMT
+# Tue, 27 Dec 2016 18:38:45 GMT
 ENV JAVA_ALPINE_VERSION=8.111.14-r0
-# Thu, 17 Nov 2016 21:47:57 GMT
+# Tue, 27 Dec 2016 18:38:49 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 09 Dec 2016 17:49:40 GMT
+# Tue, 27 Dec 2016 22:18:26 GMT
 RUN addgroup -S logstash && adduser -S -G logstash logstash
-# Fri, 09 Dec 2016 17:49:43 GMT
+# Tue, 27 Dec 2016 22:18:29 GMT
 RUN apk add --no-cache 		bash 		libzmq
-# Fri, 09 Dec 2016 17:49:45 GMT
+# Tue, 27 Dec 2016 22:18:31 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Fri, 09 Dec 2016 17:49:46 GMT
+# Tue, 27 Dec 2016 22:18:31 GMT
 ENV GPG_KEY=46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 09 Dec 2016 17:50:34 GMT
+# Tue, 27 Dec 2016 22:18:32 GMT
 ENV LOGSTASH_PATH=/opt/logstash/bin
-# Fri, 09 Dec 2016 17:50:34 GMT
+# Tue, 27 Dec 2016 22:18:32 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Fri, 09 Dec 2016 17:50:34 GMT
+# Tue, 27 Dec 2016 22:18:56 GMT
 ENV LOGSTASH_VERSION=2.4.1
-# Fri, 09 Dec 2016 17:50:35 GMT
+# Tue, 27 Dec 2016 22:19:08 GMT
 ENV LOGSTASH_TARBALL=https://download.elastic.co/logstash/logstash/logstash-2.4.1.tar.gz LOGSTASH_TARBALL_ASC= LOGSTASH_TARBALL_SHA1=5ee4f3fa0ad4b182b3f00b4181a20c4e31a907b4
-# Fri, 09 Dec 2016 17:50:59 GMT
+# Tue, 27 Dec 2016 22:19:29 GMT
 RUN set -ex; 		if [ -z "$LOGSTASH_TARBALL_SHA1" ] && [ -z "$LOGSTASH_TARBALL_ASC" ]; then 		echo >&2 'error: have neither a SHA1 _or_ a signature file -- cannot verify download!'; 		exit 1; 	fi; 		apk add --no-cache --virtual .fetch-deps 		ca-certificates 		gnupg 		openssl 		tar 	; 		wget -O logstash.tar.gz "$LOGSTASH_TARBALL"; 		if [ "$LOGSTASH_TARBALL_SHA1" ]; then 		echo "$LOGSTASH_TARBALL_SHA1 *logstash.tar.gz" | sha1sum -c -; 	fi; 		if [ "$LOGSTASH_TARBALL_ASC" ]; then 		wget -O logstash.tar.gz.asc "$LOGSTASH_TARBALL_ASC"; 		export GNUPGHOME="$(mktemp -d)"; 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY"; 		gpg --batch --verify logstash.tar.gz.asc logstash.tar.gz; 		rm -r "$GNUPGHOME" logstash.tar.gz.asc; 	fi; 		dir="$(dirname "$LOGSTASH_PATH")"; 		mkdir -p "$dir"; 	tar -xf logstash.tar.gz --strip-components=1 -C "$dir"; 	rm logstash.tar.gz; 		apk del .fetch-deps; 		export LS_SETTINGS_DIR="$dir/config"; 	if [ -f "$LS_SETTINGS_DIR/log4j2.properties" ]; then 		cp "$LS_SETTINGS_DIR/log4j2.properties" "$LS_SETTINGS_DIR/log4j2.properties.dist"; 		truncate -s 0 "$LS_SETTINGS_DIR/log4j2.properties"; 	fi; 		for userDir in 		"$dir/config" 		"$dir/data" 	; do 		if [ -d "$userDir" ]; then 			chown -R logstash:logstash "$userDir"; 		fi; 	done; 		logstash --version
-# Fri, 09 Dec 2016 17:51:00 GMT
+# Tue, 27 Dec 2016 22:19:31 GMT
 COPY file:5073cf67fe0dccc616d2ced3f7df597d906363dd3dc278d0395d780f89073ce8 in / 
-# Fri, 09 Dec 2016 17:51:01 GMT
+# Tue, 27 Dec 2016 22:19:31 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 09 Dec 2016 17:51:01 GMT
+# Tue, 27 Dec 2016 22:19:32 GMT
 CMD ["-e" ""]
 ```
 
 -	Layers:
-	-	`sha256:3690ec4760f95690944da86dc4496148a63d85c9e3100669a318110092f6862f`  
-		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
-		Size: 2.3 MB (2312958 bytes)  
+	-	`sha256:b7f33cc0b48ea4fb2f0745def58c25483a5f6b7aed5b41ce8f1cb6e17f5723cf`  
+		Last Modified: Tue, 27 Dec 2016 18:18:49 GMT  
+		Size: 2.3 MB (2313090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfdb77eb56b4c44907a822ccdf607323c1f42fd024b7db6be146dd049d95f305`  
-		Last Modified: Tue, 18 Oct 2016 20:45:34 GMT  
-		Size: 230.0 B  
+	-	`sha256:43a564ae36a32a4575a2cc6de78b6d1b7ce5c581bca7b875d789e026198c1d55`  
+		Last Modified: Tue, 27 Dec 2016 18:46:24 GMT  
+		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:857cbad9cd9a8609720fe041554046e94f0813b64887c3c06eac0c2cfb2be741`  
-		Last Modified: Thu, 17 Nov 2016 22:03:51 GMT  
-		Size: 39.7 MB (39670171 bytes)  
+	-	`sha256:efb75a810eee14e75bc372b510c025740f57b5eddae56f87dd85f0f9ef531c9f`  
+		Last Modified: Tue, 27 Dec 2016 18:59:36 GMT  
+		Size: 39.7 MB (39670203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eaa0e4621f6b8de424c61f8d932962a83b1296f6bcd0e94ac0d51371e68cd09c`  
-		Last Modified: Fri, 09 Dec 2016 17:53:26 GMT  
-		Size: 1.3 KB (1274 bytes)  
+	-	`sha256:499e921fe151c6234a64e05e2dd6f42d65e90cc4b396ec18dd9c8e66d8658da9`  
+		Last Modified: Tue, 27 Dec 2016 22:49:43 GMT  
+		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:916a60334b610753f0771fb8fb4511089cc820941ddea964f63f95ce279bdadd`  
-		Last Modified: Fri, 09 Dec 2016 17:53:28 GMT  
-		Size: 1.8 MB (1801874 bytes)  
+	-	`sha256:04e84160ab1dfdacc6e574166d112db72bdd1edff36f033c256628c1f36d7df4`  
+		Last Modified: Tue, 27 Dec 2016 22:49:44 GMT  
+		Size: 1.8 MB (1801882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:741faf38ae81728eb659416fe9e931f6b63e41053ddaf05c5829b2cc0c7839fc`  
-		Last Modified: Fri, 09 Dec 2016 17:53:27 GMT  
-		Size: 87.8 KB (87822 bytes)  
+	-	`sha256:464cab3b02b66c6bb8eea49ee101511fd267646cd946b2fc771f6d4ab9f2a9fb`  
+		Last Modified: Tue, 27 Dec 2016 22:49:43 GMT  
+		Size: 87.8 KB (87810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26b284a92e2e5dbc0f6a1d84e212965f4dd6ec87f00c41adef3f37dddad3c865`  
-		Last Modified: Fri, 09 Dec 2016 17:57:33 GMT  
-		Size: 84.6 MB (84567242 bytes)  
+	-	`sha256:03c056c1d8e7d7c9a1ffedc3e37e38c95a28ae310838cc149de6d26c0675f8e7`  
+		Last Modified: Tue, 27 Dec 2016 22:50:55 GMT  
+		Size: 84.6 MB (84567053 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89b71f4afe69c08ab996a0b9d404a884123dbe536d8c488da07b62d7f303f303`  
-		Last Modified: Fri, 09 Dec 2016 17:57:00 GMT  
-		Size: 305.0 B  
+	-	`sha256:9a98d6f63494e6651cc86dbdc587bdb27efc02f664e123819a3220788eebeed5`  
+		Last Modified: Tue, 27 Dec 2016 22:50:43 GMT  
+		Size: 304.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `logstash:2-alpine`
 
 ```console
-$ docker pull logstash@sha256:27c86baaf3f55fcbdf16244b4af8c081dd8dd7d70a160fc0ab825a1e89c12348
+$ docker pull logstash@sha256:6c49f208df6cf6d9582ece66f8f9ddbd18eae1f7e9c6cd7036d2b9257fcb8227
 ```
 
 -	Platforms:
@@ -1580,87 +1580,87 @@ $ docker pull logstash@sha256:27c86baaf3f55fcbdf16244b4af8c081dd8dd7d70a160fc0ab
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.4 MB (128441876 bytes)**  
+-	Total Size: **128.4 MB (128441844 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6da060a3601bf3e8e6a0d585f2d7158bc69c4badbe97ab8bfe3b54da160d3297`
+-	Image ID: `sha256:2cbe7ce8ce58227965e396604609969d3e36ce50e109b8b97e70ca1530199861`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
 ```dockerfile
-# Tue, 18 Oct 2016 20:31:22 GMT
-ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in / 
-# Tue, 18 Oct 2016 20:39:57 GMT
+# Tue, 27 Dec 2016 18:17:13 GMT
+ADD file:eeed5f514a35d18fcd9cbfe6c40c582211020bffdd53e4799018d33826fe5067 in / 
+# Tue, 27 Dec 2016 18:37:54 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Oct 2016 20:39:58 GMT
+# Tue, 27 Dec 2016 18:37:55 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 18 Oct 2016 20:40:34 GMT
+# Tue, 27 Dec 2016 18:38:43 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
-# Tue, 18 Oct 2016 20:40:35 GMT
+# Tue, 27 Dec 2016 18:38:44 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Thu, 17 Nov 2016 21:47:51 GMT
+# Tue, 27 Dec 2016 18:38:44 GMT
 ENV JAVA_VERSION=8u111
-# Thu, 17 Nov 2016 21:47:52 GMT
+# Tue, 27 Dec 2016 18:38:45 GMT
 ENV JAVA_ALPINE_VERSION=8.111.14-r0
-# Thu, 17 Nov 2016 21:47:57 GMT
+# Tue, 27 Dec 2016 18:38:49 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 09 Dec 2016 17:49:40 GMT
+# Tue, 27 Dec 2016 22:18:26 GMT
 RUN addgroup -S logstash && adduser -S -G logstash logstash
-# Fri, 09 Dec 2016 17:49:43 GMT
+# Tue, 27 Dec 2016 22:18:29 GMT
 RUN apk add --no-cache 		bash 		libzmq
-# Fri, 09 Dec 2016 17:49:45 GMT
+# Tue, 27 Dec 2016 22:18:31 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Fri, 09 Dec 2016 17:49:46 GMT
+# Tue, 27 Dec 2016 22:18:31 GMT
 ENV GPG_KEY=46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 09 Dec 2016 17:50:34 GMT
+# Tue, 27 Dec 2016 22:18:32 GMT
 ENV LOGSTASH_PATH=/opt/logstash/bin
-# Fri, 09 Dec 2016 17:50:34 GMT
+# Tue, 27 Dec 2016 22:18:32 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Fri, 09 Dec 2016 17:50:34 GMT
+# Tue, 27 Dec 2016 22:18:56 GMT
 ENV LOGSTASH_VERSION=2.4.1
-# Fri, 09 Dec 2016 17:50:35 GMT
+# Tue, 27 Dec 2016 22:19:08 GMT
 ENV LOGSTASH_TARBALL=https://download.elastic.co/logstash/logstash/logstash-2.4.1.tar.gz LOGSTASH_TARBALL_ASC= LOGSTASH_TARBALL_SHA1=5ee4f3fa0ad4b182b3f00b4181a20c4e31a907b4
-# Fri, 09 Dec 2016 17:50:59 GMT
+# Tue, 27 Dec 2016 22:19:29 GMT
 RUN set -ex; 		if [ -z "$LOGSTASH_TARBALL_SHA1" ] && [ -z "$LOGSTASH_TARBALL_ASC" ]; then 		echo >&2 'error: have neither a SHA1 _or_ a signature file -- cannot verify download!'; 		exit 1; 	fi; 		apk add --no-cache --virtual .fetch-deps 		ca-certificates 		gnupg 		openssl 		tar 	; 		wget -O logstash.tar.gz "$LOGSTASH_TARBALL"; 		if [ "$LOGSTASH_TARBALL_SHA1" ]; then 		echo "$LOGSTASH_TARBALL_SHA1 *logstash.tar.gz" | sha1sum -c -; 	fi; 		if [ "$LOGSTASH_TARBALL_ASC" ]; then 		wget -O logstash.tar.gz.asc "$LOGSTASH_TARBALL_ASC"; 		export GNUPGHOME="$(mktemp -d)"; 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY"; 		gpg --batch --verify logstash.tar.gz.asc logstash.tar.gz; 		rm -r "$GNUPGHOME" logstash.tar.gz.asc; 	fi; 		dir="$(dirname "$LOGSTASH_PATH")"; 		mkdir -p "$dir"; 	tar -xf logstash.tar.gz --strip-components=1 -C "$dir"; 	rm logstash.tar.gz; 		apk del .fetch-deps; 		export LS_SETTINGS_DIR="$dir/config"; 	if [ -f "$LS_SETTINGS_DIR/log4j2.properties" ]; then 		cp "$LS_SETTINGS_DIR/log4j2.properties" "$LS_SETTINGS_DIR/log4j2.properties.dist"; 		truncate -s 0 "$LS_SETTINGS_DIR/log4j2.properties"; 	fi; 		for userDir in 		"$dir/config" 		"$dir/data" 	; do 		if [ -d "$userDir" ]; then 			chown -R logstash:logstash "$userDir"; 		fi; 	done; 		logstash --version
-# Fri, 09 Dec 2016 17:51:00 GMT
+# Tue, 27 Dec 2016 22:19:31 GMT
 COPY file:5073cf67fe0dccc616d2ced3f7df597d906363dd3dc278d0395d780f89073ce8 in / 
-# Fri, 09 Dec 2016 17:51:01 GMT
+# Tue, 27 Dec 2016 22:19:31 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 09 Dec 2016 17:51:01 GMT
+# Tue, 27 Dec 2016 22:19:32 GMT
 CMD ["-e" ""]
 ```
 
 -	Layers:
-	-	`sha256:3690ec4760f95690944da86dc4496148a63d85c9e3100669a318110092f6862f`  
-		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
-		Size: 2.3 MB (2312958 bytes)  
+	-	`sha256:b7f33cc0b48ea4fb2f0745def58c25483a5f6b7aed5b41ce8f1cb6e17f5723cf`  
+		Last Modified: Tue, 27 Dec 2016 18:18:49 GMT  
+		Size: 2.3 MB (2313090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfdb77eb56b4c44907a822ccdf607323c1f42fd024b7db6be146dd049d95f305`  
-		Last Modified: Tue, 18 Oct 2016 20:45:34 GMT  
-		Size: 230.0 B  
+	-	`sha256:43a564ae36a32a4575a2cc6de78b6d1b7ce5c581bca7b875d789e026198c1d55`  
+		Last Modified: Tue, 27 Dec 2016 18:46:24 GMT  
+		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:857cbad9cd9a8609720fe041554046e94f0813b64887c3c06eac0c2cfb2be741`  
-		Last Modified: Thu, 17 Nov 2016 22:03:51 GMT  
-		Size: 39.7 MB (39670171 bytes)  
+	-	`sha256:efb75a810eee14e75bc372b510c025740f57b5eddae56f87dd85f0f9ef531c9f`  
+		Last Modified: Tue, 27 Dec 2016 18:59:36 GMT  
+		Size: 39.7 MB (39670203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eaa0e4621f6b8de424c61f8d932962a83b1296f6bcd0e94ac0d51371e68cd09c`  
-		Last Modified: Fri, 09 Dec 2016 17:53:26 GMT  
-		Size: 1.3 KB (1274 bytes)  
+	-	`sha256:499e921fe151c6234a64e05e2dd6f42d65e90cc4b396ec18dd9c8e66d8658da9`  
+		Last Modified: Tue, 27 Dec 2016 22:49:43 GMT  
+		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:916a60334b610753f0771fb8fb4511089cc820941ddea964f63f95ce279bdadd`  
-		Last Modified: Fri, 09 Dec 2016 17:53:28 GMT  
-		Size: 1.8 MB (1801874 bytes)  
+	-	`sha256:04e84160ab1dfdacc6e574166d112db72bdd1edff36f033c256628c1f36d7df4`  
+		Last Modified: Tue, 27 Dec 2016 22:49:44 GMT  
+		Size: 1.8 MB (1801882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:741faf38ae81728eb659416fe9e931f6b63e41053ddaf05c5829b2cc0c7839fc`  
-		Last Modified: Fri, 09 Dec 2016 17:53:27 GMT  
-		Size: 87.8 KB (87822 bytes)  
+	-	`sha256:464cab3b02b66c6bb8eea49ee101511fd267646cd946b2fc771f6d4ab9f2a9fb`  
+		Last Modified: Tue, 27 Dec 2016 22:49:43 GMT  
+		Size: 87.8 KB (87810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26b284a92e2e5dbc0f6a1d84e212965f4dd6ec87f00c41adef3f37dddad3c865`  
-		Last Modified: Fri, 09 Dec 2016 17:57:33 GMT  
-		Size: 84.6 MB (84567242 bytes)  
+	-	`sha256:03c056c1d8e7d7c9a1ffedc3e37e38c95a28ae310838cc149de6d26c0675f8e7`  
+		Last Modified: Tue, 27 Dec 2016 22:50:55 GMT  
+		Size: 84.6 MB (84567053 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89b71f4afe69c08ab996a0b9d404a884123dbe536d8c488da07b62d7f303f303`  
-		Last Modified: Fri, 09 Dec 2016 17:57:00 GMT  
-		Size: 305.0 B  
+	-	`sha256:9a98d6f63494e6651cc86dbdc587bdb27efc02f664e123819a3220788eebeed5`  
+		Last Modified: Tue, 27 Dec 2016 22:50:43 GMT  
+		Size: 304.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `logstash:1.5.6`
@@ -2074,7 +2074,7 @@ CMD ["-e" ""]
 ## `logstash:1.5.6-alpine`
 
 ```console
-$ docker pull logstash@sha256:62cbc2b50662cb8aab1d78332b977be0e86375fd3656942da1d137409ce99405
+$ docker pull logstash@sha256:442f2bb42c0fae780c4bd7f8999fa88e52897d7b2fe613895c84def1f8d83de0
 ```
 
 -	Platforms:
@@ -2084,93 +2084,93 @@ $ docker pull logstash@sha256:62cbc2b50662cb8aab1d78332b977be0e86375fd3656942da1
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.3 MB (134335198 bytes)**  
+-	Total Size: **134.3 MB (134335445 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:85ac0fd987835654e75b8d08d70a1fb94f2efa0dfbfa7ebdf0f4bed278069072`
+-	Image ID: `sha256:163fb408862175f08498fb95eae7f1b36a7c6dd50242b2631b1c841e04e83baa`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
 ```dockerfile
-# Tue, 18 Oct 2016 20:31:22 GMT
-ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in / 
-# Tue, 18 Oct 2016 20:39:57 GMT
+# Tue, 27 Dec 2016 18:17:13 GMT
+ADD file:eeed5f514a35d18fcd9cbfe6c40c582211020bffdd53e4799018d33826fe5067 in / 
+# Tue, 27 Dec 2016 18:37:54 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Oct 2016 20:39:58 GMT
+# Tue, 27 Dec 2016 18:37:55 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 18 Oct 2016 20:40:34 GMT
+# Tue, 27 Dec 2016 18:38:43 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
-# Tue, 18 Oct 2016 20:40:35 GMT
+# Tue, 27 Dec 2016 18:38:44 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Thu, 17 Nov 2016 21:47:51 GMT
+# Tue, 27 Dec 2016 18:38:44 GMT
 ENV JAVA_VERSION=8u111
-# Thu, 17 Nov 2016 21:47:52 GMT
+# Tue, 27 Dec 2016 18:38:45 GMT
 ENV JAVA_ALPINE_VERSION=8.111.14-r0
-# Thu, 17 Nov 2016 21:47:57 GMT
+# Tue, 27 Dec 2016 18:38:49 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 09 Dec 2016 17:49:40 GMT
+# Tue, 27 Dec 2016 22:18:26 GMT
 RUN addgroup -S logstash && adduser -S -G logstash logstash
-# Fri, 09 Dec 2016 17:49:43 GMT
+# Tue, 27 Dec 2016 22:18:29 GMT
 RUN apk add --no-cache 		bash 		libzmq
-# Fri, 09 Dec 2016 17:49:45 GMT
+# Tue, 27 Dec 2016 22:18:31 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Fri, 09 Dec 2016 17:49:46 GMT
+# Tue, 27 Dec 2016 22:18:31 GMT
 ENV GPG_KEY=46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 09 Dec 2016 17:50:34 GMT
+# Tue, 27 Dec 2016 22:18:32 GMT
 ENV LOGSTASH_PATH=/opt/logstash/bin
-# Fri, 09 Dec 2016 17:50:34 GMT
+# Tue, 27 Dec 2016 22:18:32 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Fri, 09 Dec 2016 17:51:25 GMT
+# Tue, 27 Dec 2016 22:18:33 GMT
 ENV LOGSTASH_VERSION=1.5.6
-# Fri, 09 Dec 2016 17:51:25 GMT
+# Tue, 27 Dec 2016 22:18:34 GMT
 ENV LOGSTASH_TARBALL=https://download.elastic.co/logstash/logstash/logstash-1.5.6.tar.gz LOGSTASH_TARBALL_ASC= LOGSTASH_TARBALL_SHA1=f3e4342f496e0d7e709de231daf624eb1fd80873
-# Fri, 09 Dec 2016 17:51:44 GMT
+# Tue, 27 Dec 2016 22:18:53 GMT
 RUN set -ex; 		if [ -z "$LOGSTASH_TARBALL_SHA1" ] && [ -z "$LOGSTASH_TARBALL_ASC" ]; then 		echo >&2 'error: have neither a SHA1 _or_ a signature file -- cannot verify download!'; 		exit 1; 	fi; 		apk add --no-cache --virtual .fetch-deps 		ca-certificates 		gnupg 		openssl 		tar 	; 		wget -O logstash.tar.gz "$LOGSTASH_TARBALL"; 		if [ "$LOGSTASH_TARBALL_SHA1" ]; then 		echo "$LOGSTASH_TARBALL_SHA1 *logstash.tar.gz" | sha1sum -c -; 	fi; 		if [ "$LOGSTASH_TARBALL_ASC" ]; then 		wget -O logstash.tar.gz.asc "$LOGSTASH_TARBALL_ASC"; 		export GNUPGHOME="$(mktemp -d)"; 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY"; 		gpg --batch --verify logstash.tar.gz.asc logstash.tar.gz; 		rm -r "$GNUPGHOME" logstash.tar.gz.asc; 	fi; 		dir="$(dirname "$LOGSTASH_PATH")"; 		mkdir -p "$dir"; 	tar -xf logstash.tar.gz --strip-components=1 -C "$dir"; 	rm logstash.tar.gz; 		apk del .fetch-deps; 		export LS_SETTINGS_DIR="$dir/config"; 	if [ -f "$LS_SETTINGS_DIR/log4j2.properties" ]; then 		cp "$LS_SETTINGS_DIR/log4j2.properties" "$LS_SETTINGS_DIR/log4j2.properties.dist"; 		truncate -s 0 "$LS_SETTINGS_DIR/log4j2.properties"; 	fi; 		for userDir in 		"$dir/config" 		"$dir/data" 	; do 		if [ -d "$userDir" ]; then 			chown -R logstash:logstash "$userDir"; 		fi; 	done; 		logstash --version
-# Fri, 09 Dec 2016 17:51:45 GMT
+# Tue, 27 Dec 2016 22:18:54 GMT
 COPY file:5073cf67fe0dccc616d2ced3f7df597d906363dd3dc278d0395d780f89073ce8 in / 
-# Fri, 09 Dec 2016 17:51:46 GMT
+# Tue, 27 Dec 2016 22:18:54 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 09 Dec 2016 17:51:46 GMT
+# Tue, 27 Dec 2016 22:18:55 GMT
 CMD ["-e" ""]
 ```
 
 -	Layers:
-	-	`sha256:3690ec4760f95690944da86dc4496148a63d85c9e3100669a318110092f6862f`  
-		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
-		Size: 2.3 MB (2312958 bytes)  
+	-	`sha256:b7f33cc0b48ea4fb2f0745def58c25483a5f6b7aed5b41ce8f1cb6e17f5723cf`  
+		Last Modified: Tue, 27 Dec 2016 18:18:49 GMT  
+		Size: 2.3 MB (2313090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfdb77eb56b4c44907a822ccdf607323c1f42fd024b7db6be146dd049d95f305`  
-		Last Modified: Tue, 18 Oct 2016 20:45:34 GMT  
-		Size: 230.0 B  
+	-	`sha256:43a564ae36a32a4575a2cc6de78b6d1b7ce5c581bca7b875d789e026198c1d55`  
+		Last Modified: Tue, 27 Dec 2016 18:46:24 GMT  
+		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:857cbad9cd9a8609720fe041554046e94f0813b64887c3c06eac0c2cfb2be741`  
-		Last Modified: Thu, 17 Nov 2016 22:03:51 GMT  
-		Size: 39.7 MB (39670171 bytes)  
+	-	`sha256:efb75a810eee14e75bc372b510c025740f57b5eddae56f87dd85f0f9ef531c9f`  
+		Last Modified: Tue, 27 Dec 2016 18:59:36 GMT  
+		Size: 39.7 MB (39670203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eaa0e4621f6b8de424c61f8d932962a83b1296f6bcd0e94ac0d51371e68cd09c`  
-		Last Modified: Fri, 09 Dec 2016 17:53:26 GMT  
-		Size: 1.3 KB (1274 bytes)  
+	-	`sha256:499e921fe151c6234a64e05e2dd6f42d65e90cc4b396ec18dd9c8e66d8658da9`  
+		Last Modified: Tue, 27 Dec 2016 22:49:43 GMT  
+		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:916a60334b610753f0771fb8fb4511089cc820941ddea964f63f95ce279bdadd`  
-		Last Modified: Fri, 09 Dec 2016 17:53:28 GMT  
-		Size: 1.8 MB (1801874 bytes)  
+	-	`sha256:04e84160ab1dfdacc6e574166d112db72bdd1edff36f033c256628c1f36d7df4`  
+		Last Modified: Tue, 27 Dec 2016 22:49:44 GMT  
+		Size: 1.8 MB (1801882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:741faf38ae81728eb659416fe9e931f6b63e41053ddaf05c5829b2cc0c7839fc`  
-		Last Modified: Fri, 09 Dec 2016 17:53:27 GMT  
-		Size: 87.8 KB (87822 bytes)  
+	-	`sha256:464cab3b02b66c6bb8eea49ee101511fd267646cd946b2fc771f6d4ab9f2a9fb`  
+		Last Modified: Tue, 27 Dec 2016 22:49:43 GMT  
+		Size: 87.8 KB (87810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9911297bfaae62f90a925e397cd6482bbeae05a3a4b248efebd612b1a06bc859`  
-		Last Modified: Fri, 09 Dec 2016 18:00:06 GMT  
-		Size: 90.5 MB (90460564 bytes)  
+	-	`sha256:fbe3fd0262d42c38ff4cd3001a6657cf1a147c07cc09b4accd8fa9b5da4c0607`  
+		Last Modified: Tue, 27 Dec 2016 22:49:55 GMT  
+		Size: 90.5 MB (90460652 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef11f06f952b21909741a7f8030da756c84da9a81086a0c5035c12f4e4c2357e`  
-		Last Modified: Fri, 09 Dec 2016 17:59:54 GMT  
-		Size: 305.0 B  
+	-	`sha256:7cc5d76ac0f194f3def8f07640b8e7c4e20cc666bacc2ffcef2356fa4c716568`  
+		Last Modified: Tue, 27 Dec 2016 22:49:43 GMT  
+		Size: 306.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `logstash:1.5-alpine`
 
 ```console
-$ docker pull logstash@sha256:62cbc2b50662cb8aab1d78332b977be0e86375fd3656942da1d137409ce99405
+$ docker pull logstash@sha256:442f2bb42c0fae780c4bd7f8999fa88e52897d7b2fe613895c84def1f8d83de0
 ```
 
 -	Platforms:
@@ -2180,93 +2180,93 @@ $ docker pull logstash@sha256:62cbc2b50662cb8aab1d78332b977be0e86375fd3656942da1
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.3 MB (134335198 bytes)**  
+-	Total Size: **134.3 MB (134335445 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:85ac0fd987835654e75b8d08d70a1fb94f2efa0dfbfa7ebdf0f4bed278069072`
+-	Image ID: `sha256:163fb408862175f08498fb95eae7f1b36a7c6dd50242b2631b1c841e04e83baa`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
 ```dockerfile
-# Tue, 18 Oct 2016 20:31:22 GMT
-ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in / 
-# Tue, 18 Oct 2016 20:39:57 GMT
+# Tue, 27 Dec 2016 18:17:13 GMT
+ADD file:eeed5f514a35d18fcd9cbfe6c40c582211020bffdd53e4799018d33826fe5067 in / 
+# Tue, 27 Dec 2016 18:37:54 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Oct 2016 20:39:58 GMT
+# Tue, 27 Dec 2016 18:37:55 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 18 Oct 2016 20:40:34 GMT
+# Tue, 27 Dec 2016 18:38:43 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
-# Tue, 18 Oct 2016 20:40:35 GMT
+# Tue, 27 Dec 2016 18:38:44 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Thu, 17 Nov 2016 21:47:51 GMT
+# Tue, 27 Dec 2016 18:38:44 GMT
 ENV JAVA_VERSION=8u111
-# Thu, 17 Nov 2016 21:47:52 GMT
+# Tue, 27 Dec 2016 18:38:45 GMT
 ENV JAVA_ALPINE_VERSION=8.111.14-r0
-# Thu, 17 Nov 2016 21:47:57 GMT
+# Tue, 27 Dec 2016 18:38:49 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 09 Dec 2016 17:49:40 GMT
+# Tue, 27 Dec 2016 22:18:26 GMT
 RUN addgroup -S logstash && adduser -S -G logstash logstash
-# Fri, 09 Dec 2016 17:49:43 GMT
+# Tue, 27 Dec 2016 22:18:29 GMT
 RUN apk add --no-cache 		bash 		libzmq
-# Fri, 09 Dec 2016 17:49:45 GMT
+# Tue, 27 Dec 2016 22:18:31 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Fri, 09 Dec 2016 17:49:46 GMT
+# Tue, 27 Dec 2016 22:18:31 GMT
 ENV GPG_KEY=46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 09 Dec 2016 17:50:34 GMT
+# Tue, 27 Dec 2016 22:18:32 GMT
 ENV LOGSTASH_PATH=/opt/logstash/bin
-# Fri, 09 Dec 2016 17:50:34 GMT
+# Tue, 27 Dec 2016 22:18:32 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Fri, 09 Dec 2016 17:51:25 GMT
+# Tue, 27 Dec 2016 22:18:33 GMT
 ENV LOGSTASH_VERSION=1.5.6
-# Fri, 09 Dec 2016 17:51:25 GMT
+# Tue, 27 Dec 2016 22:18:34 GMT
 ENV LOGSTASH_TARBALL=https://download.elastic.co/logstash/logstash/logstash-1.5.6.tar.gz LOGSTASH_TARBALL_ASC= LOGSTASH_TARBALL_SHA1=f3e4342f496e0d7e709de231daf624eb1fd80873
-# Fri, 09 Dec 2016 17:51:44 GMT
+# Tue, 27 Dec 2016 22:18:53 GMT
 RUN set -ex; 		if [ -z "$LOGSTASH_TARBALL_SHA1" ] && [ -z "$LOGSTASH_TARBALL_ASC" ]; then 		echo >&2 'error: have neither a SHA1 _or_ a signature file -- cannot verify download!'; 		exit 1; 	fi; 		apk add --no-cache --virtual .fetch-deps 		ca-certificates 		gnupg 		openssl 		tar 	; 		wget -O logstash.tar.gz "$LOGSTASH_TARBALL"; 		if [ "$LOGSTASH_TARBALL_SHA1" ]; then 		echo "$LOGSTASH_TARBALL_SHA1 *logstash.tar.gz" | sha1sum -c -; 	fi; 		if [ "$LOGSTASH_TARBALL_ASC" ]; then 		wget -O logstash.tar.gz.asc "$LOGSTASH_TARBALL_ASC"; 		export GNUPGHOME="$(mktemp -d)"; 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY"; 		gpg --batch --verify logstash.tar.gz.asc logstash.tar.gz; 		rm -r "$GNUPGHOME" logstash.tar.gz.asc; 	fi; 		dir="$(dirname "$LOGSTASH_PATH")"; 		mkdir -p "$dir"; 	tar -xf logstash.tar.gz --strip-components=1 -C "$dir"; 	rm logstash.tar.gz; 		apk del .fetch-deps; 		export LS_SETTINGS_DIR="$dir/config"; 	if [ -f "$LS_SETTINGS_DIR/log4j2.properties" ]; then 		cp "$LS_SETTINGS_DIR/log4j2.properties" "$LS_SETTINGS_DIR/log4j2.properties.dist"; 		truncate -s 0 "$LS_SETTINGS_DIR/log4j2.properties"; 	fi; 		for userDir in 		"$dir/config" 		"$dir/data" 	; do 		if [ -d "$userDir" ]; then 			chown -R logstash:logstash "$userDir"; 		fi; 	done; 		logstash --version
-# Fri, 09 Dec 2016 17:51:45 GMT
+# Tue, 27 Dec 2016 22:18:54 GMT
 COPY file:5073cf67fe0dccc616d2ced3f7df597d906363dd3dc278d0395d780f89073ce8 in / 
-# Fri, 09 Dec 2016 17:51:46 GMT
+# Tue, 27 Dec 2016 22:18:54 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 09 Dec 2016 17:51:46 GMT
+# Tue, 27 Dec 2016 22:18:55 GMT
 CMD ["-e" ""]
 ```
 
 -	Layers:
-	-	`sha256:3690ec4760f95690944da86dc4496148a63d85c9e3100669a318110092f6862f`  
-		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
-		Size: 2.3 MB (2312958 bytes)  
+	-	`sha256:b7f33cc0b48ea4fb2f0745def58c25483a5f6b7aed5b41ce8f1cb6e17f5723cf`  
+		Last Modified: Tue, 27 Dec 2016 18:18:49 GMT  
+		Size: 2.3 MB (2313090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfdb77eb56b4c44907a822ccdf607323c1f42fd024b7db6be146dd049d95f305`  
-		Last Modified: Tue, 18 Oct 2016 20:45:34 GMT  
-		Size: 230.0 B  
+	-	`sha256:43a564ae36a32a4575a2cc6de78b6d1b7ce5c581bca7b875d789e026198c1d55`  
+		Last Modified: Tue, 27 Dec 2016 18:46:24 GMT  
+		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:857cbad9cd9a8609720fe041554046e94f0813b64887c3c06eac0c2cfb2be741`  
-		Last Modified: Thu, 17 Nov 2016 22:03:51 GMT  
-		Size: 39.7 MB (39670171 bytes)  
+	-	`sha256:efb75a810eee14e75bc372b510c025740f57b5eddae56f87dd85f0f9ef531c9f`  
+		Last Modified: Tue, 27 Dec 2016 18:59:36 GMT  
+		Size: 39.7 MB (39670203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eaa0e4621f6b8de424c61f8d932962a83b1296f6bcd0e94ac0d51371e68cd09c`  
-		Last Modified: Fri, 09 Dec 2016 17:53:26 GMT  
-		Size: 1.3 KB (1274 bytes)  
+	-	`sha256:499e921fe151c6234a64e05e2dd6f42d65e90cc4b396ec18dd9c8e66d8658da9`  
+		Last Modified: Tue, 27 Dec 2016 22:49:43 GMT  
+		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:916a60334b610753f0771fb8fb4511089cc820941ddea964f63f95ce279bdadd`  
-		Last Modified: Fri, 09 Dec 2016 17:53:28 GMT  
-		Size: 1.8 MB (1801874 bytes)  
+	-	`sha256:04e84160ab1dfdacc6e574166d112db72bdd1edff36f033c256628c1f36d7df4`  
+		Last Modified: Tue, 27 Dec 2016 22:49:44 GMT  
+		Size: 1.8 MB (1801882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:741faf38ae81728eb659416fe9e931f6b63e41053ddaf05c5829b2cc0c7839fc`  
-		Last Modified: Fri, 09 Dec 2016 17:53:27 GMT  
-		Size: 87.8 KB (87822 bytes)  
+	-	`sha256:464cab3b02b66c6bb8eea49ee101511fd267646cd946b2fc771f6d4ab9f2a9fb`  
+		Last Modified: Tue, 27 Dec 2016 22:49:43 GMT  
+		Size: 87.8 KB (87810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9911297bfaae62f90a925e397cd6482bbeae05a3a4b248efebd612b1a06bc859`  
-		Last Modified: Fri, 09 Dec 2016 18:00:06 GMT  
-		Size: 90.5 MB (90460564 bytes)  
+	-	`sha256:fbe3fd0262d42c38ff4cd3001a6657cf1a147c07cc09b4accd8fa9b5da4c0607`  
+		Last Modified: Tue, 27 Dec 2016 22:49:55 GMT  
+		Size: 90.5 MB (90460652 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef11f06f952b21909741a7f8030da756c84da9a81086a0c5035c12f4e4c2357e`  
-		Last Modified: Fri, 09 Dec 2016 17:59:54 GMT  
-		Size: 305.0 B  
+	-	`sha256:7cc5d76ac0f194f3def8f07640b8e7c4e20cc666bacc2ffcef2356fa4c716568`  
+		Last Modified: Tue, 27 Dec 2016 22:49:43 GMT  
+		Size: 306.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `logstash:1-alpine`
 
 ```console
-$ docker pull logstash@sha256:62cbc2b50662cb8aab1d78332b977be0e86375fd3656942da1d137409ce99405
+$ docker pull logstash@sha256:442f2bb42c0fae780c4bd7f8999fa88e52897d7b2fe613895c84def1f8d83de0
 ```
 
 -	Platforms:
@@ -2276,85 +2276,85 @@ $ docker pull logstash@sha256:62cbc2b50662cb8aab1d78332b977be0e86375fd3656942da1
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.3 MB (134335198 bytes)**  
+-	Total Size: **134.3 MB (134335445 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:85ac0fd987835654e75b8d08d70a1fb94f2efa0dfbfa7ebdf0f4bed278069072`
+-	Image ID: `sha256:163fb408862175f08498fb95eae7f1b36a7c6dd50242b2631b1c841e04e83baa`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
 ```dockerfile
-# Tue, 18 Oct 2016 20:31:22 GMT
-ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in / 
-# Tue, 18 Oct 2016 20:39:57 GMT
+# Tue, 27 Dec 2016 18:17:13 GMT
+ADD file:eeed5f514a35d18fcd9cbfe6c40c582211020bffdd53e4799018d33826fe5067 in / 
+# Tue, 27 Dec 2016 18:37:54 GMT
 ENV LANG=C.UTF-8
-# Tue, 18 Oct 2016 20:39:58 GMT
+# Tue, 27 Dec 2016 18:37:55 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 18 Oct 2016 20:40:34 GMT
+# Tue, 27 Dec 2016 18:38:43 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
-# Tue, 18 Oct 2016 20:40:35 GMT
+# Tue, 27 Dec 2016 18:38:44 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Thu, 17 Nov 2016 21:47:51 GMT
+# Tue, 27 Dec 2016 18:38:44 GMT
 ENV JAVA_VERSION=8u111
-# Thu, 17 Nov 2016 21:47:52 GMT
+# Tue, 27 Dec 2016 18:38:45 GMT
 ENV JAVA_ALPINE_VERSION=8.111.14-r0
-# Thu, 17 Nov 2016 21:47:57 GMT
+# Tue, 27 Dec 2016 18:38:49 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Fri, 09 Dec 2016 17:49:40 GMT
+# Tue, 27 Dec 2016 22:18:26 GMT
 RUN addgroup -S logstash && adduser -S -G logstash logstash
-# Fri, 09 Dec 2016 17:49:43 GMT
+# Tue, 27 Dec 2016 22:18:29 GMT
 RUN apk add --no-cache 		bash 		libzmq
-# Fri, 09 Dec 2016 17:49:45 GMT
+# Tue, 27 Dec 2016 22:18:31 GMT
 RUN apk add --no-cache 'su-exec>=0.2'
-# Fri, 09 Dec 2016 17:49:46 GMT
+# Tue, 27 Dec 2016 22:18:31 GMT
 ENV GPG_KEY=46095ACC8548582C1A2699A9D27D666CD88E42B4
-# Fri, 09 Dec 2016 17:50:34 GMT
+# Tue, 27 Dec 2016 22:18:32 GMT
 ENV LOGSTASH_PATH=/opt/logstash/bin
-# Fri, 09 Dec 2016 17:50:34 GMT
+# Tue, 27 Dec 2016 22:18:32 GMT
 ENV PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Fri, 09 Dec 2016 17:51:25 GMT
+# Tue, 27 Dec 2016 22:18:33 GMT
 ENV LOGSTASH_VERSION=1.5.6
-# Fri, 09 Dec 2016 17:51:25 GMT
+# Tue, 27 Dec 2016 22:18:34 GMT
 ENV LOGSTASH_TARBALL=https://download.elastic.co/logstash/logstash/logstash-1.5.6.tar.gz LOGSTASH_TARBALL_ASC= LOGSTASH_TARBALL_SHA1=f3e4342f496e0d7e709de231daf624eb1fd80873
-# Fri, 09 Dec 2016 17:51:44 GMT
+# Tue, 27 Dec 2016 22:18:53 GMT
 RUN set -ex; 		if [ -z "$LOGSTASH_TARBALL_SHA1" ] && [ -z "$LOGSTASH_TARBALL_ASC" ]; then 		echo >&2 'error: have neither a SHA1 _or_ a signature file -- cannot verify download!'; 		exit 1; 	fi; 		apk add --no-cache --virtual .fetch-deps 		ca-certificates 		gnupg 		openssl 		tar 	; 		wget -O logstash.tar.gz "$LOGSTASH_TARBALL"; 		if [ "$LOGSTASH_TARBALL_SHA1" ]; then 		echo "$LOGSTASH_TARBALL_SHA1 *logstash.tar.gz" | sha1sum -c -; 	fi; 		if [ "$LOGSTASH_TARBALL_ASC" ]; then 		wget -O logstash.tar.gz.asc "$LOGSTASH_TARBALL_ASC"; 		export GNUPGHOME="$(mktemp -d)"; 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY"; 		gpg --batch --verify logstash.tar.gz.asc logstash.tar.gz; 		rm -r "$GNUPGHOME" logstash.tar.gz.asc; 	fi; 		dir="$(dirname "$LOGSTASH_PATH")"; 		mkdir -p "$dir"; 	tar -xf logstash.tar.gz --strip-components=1 -C "$dir"; 	rm logstash.tar.gz; 		apk del .fetch-deps; 		export LS_SETTINGS_DIR="$dir/config"; 	if [ -f "$LS_SETTINGS_DIR/log4j2.properties" ]; then 		cp "$LS_SETTINGS_DIR/log4j2.properties" "$LS_SETTINGS_DIR/log4j2.properties.dist"; 		truncate -s 0 "$LS_SETTINGS_DIR/log4j2.properties"; 	fi; 		for userDir in 		"$dir/config" 		"$dir/data" 	; do 		if [ -d "$userDir" ]; then 			chown -R logstash:logstash "$userDir"; 		fi; 	done; 		logstash --version
-# Fri, 09 Dec 2016 17:51:45 GMT
+# Tue, 27 Dec 2016 22:18:54 GMT
 COPY file:5073cf67fe0dccc616d2ced3f7df597d906363dd3dc278d0395d780f89073ce8 in / 
-# Fri, 09 Dec 2016 17:51:46 GMT
+# Tue, 27 Dec 2016 22:18:54 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 09 Dec 2016 17:51:46 GMT
+# Tue, 27 Dec 2016 22:18:55 GMT
 CMD ["-e" ""]
 ```
 
 -	Layers:
-	-	`sha256:3690ec4760f95690944da86dc4496148a63d85c9e3100669a318110092f6862f`  
-		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
-		Size: 2.3 MB (2312958 bytes)  
+	-	`sha256:b7f33cc0b48ea4fb2f0745def58c25483a5f6b7aed5b41ce8f1cb6e17f5723cf`  
+		Last Modified: Tue, 27 Dec 2016 18:18:49 GMT  
+		Size: 2.3 MB (2313090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfdb77eb56b4c44907a822ccdf607323c1f42fd024b7db6be146dd049d95f305`  
-		Last Modified: Tue, 18 Oct 2016 20:45:34 GMT  
-		Size: 230.0 B  
+	-	`sha256:43a564ae36a32a4575a2cc6de78b6d1b7ce5c581bca7b875d789e026198c1d55`  
+		Last Modified: Tue, 27 Dec 2016 18:46:24 GMT  
+		Size: 231.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:857cbad9cd9a8609720fe041554046e94f0813b64887c3c06eac0c2cfb2be741`  
-		Last Modified: Thu, 17 Nov 2016 22:03:51 GMT  
-		Size: 39.7 MB (39670171 bytes)  
+	-	`sha256:efb75a810eee14e75bc372b510c025740f57b5eddae56f87dd85f0f9ef531c9f`  
+		Last Modified: Tue, 27 Dec 2016 18:59:36 GMT  
+		Size: 39.7 MB (39670203 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eaa0e4621f6b8de424c61f8d932962a83b1296f6bcd0e94ac0d51371e68cd09c`  
-		Last Modified: Fri, 09 Dec 2016 17:53:26 GMT  
-		Size: 1.3 KB (1274 bytes)  
+	-	`sha256:499e921fe151c6234a64e05e2dd6f42d65e90cc4b396ec18dd9c8e66d8658da9`  
+		Last Modified: Tue, 27 Dec 2016 22:49:43 GMT  
+		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:916a60334b610753f0771fb8fb4511089cc820941ddea964f63f95ce279bdadd`  
-		Last Modified: Fri, 09 Dec 2016 17:53:28 GMT  
-		Size: 1.8 MB (1801874 bytes)  
+	-	`sha256:04e84160ab1dfdacc6e574166d112db72bdd1edff36f033c256628c1f36d7df4`  
+		Last Modified: Tue, 27 Dec 2016 22:49:44 GMT  
+		Size: 1.8 MB (1801882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:741faf38ae81728eb659416fe9e931f6b63e41053ddaf05c5829b2cc0c7839fc`  
-		Last Modified: Fri, 09 Dec 2016 17:53:27 GMT  
-		Size: 87.8 KB (87822 bytes)  
+	-	`sha256:464cab3b02b66c6bb8eea49ee101511fd267646cd946b2fc771f6d4ab9f2a9fb`  
+		Last Modified: Tue, 27 Dec 2016 22:49:43 GMT  
+		Size: 87.8 KB (87810 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9911297bfaae62f90a925e397cd6482bbeae05a3a4b248efebd612b1a06bc859`  
-		Last Modified: Fri, 09 Dec 2016 18:00:06 GMT  
-		Size: 90.5 MB (90460564 bytes)  
+	-	`sha256:fbe3fd0262d42c38ff4cd3001a6657cf1a147c07cc09b4accd8fa9b5da4c0607`  
+		Last Modified: Tue, 27 Dec 2016 22:49:55 GMT  
+		Size: 90.5 MB (90460652 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef11f06f952b21909741a7f8030da756c84da9a81086a0c5035c12f4e4c2357e`  
-		Last Modified: Fri, 09 Dec 2016 17:59:54 GMT  
-		Size: 305.0 B  
+	-	`sha256:7cc5d76ac0f194f3def8f07640b8e7c4e20cc666bacc2ffcef2356fa4c716568`  
+		Last Modified: Tue, 27 Dec 2016 22:49:43 GMT  
+		Size: 306.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

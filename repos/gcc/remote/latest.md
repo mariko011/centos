@@ -1,7 +1,7 @@
 ## `gcc:latest`
 
 ```console
-$ docker pull gcc@sha256:e83b32c655aee3bb38f7c31144e2189c0551aac7b1b8ad2a72c614cd563dd244
+$ docker pull gcc@sha256:48136f6d0cc586d06f00ee13ad5e1698ff6b28d20c3aa01ba4f432ec37a9a4eb
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull gcc@sha256:e83b32c655aee3bb38f7c31144e2189c0551aac7b1b8ad2a72c614c
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **454.2 MB (454155515 bytes)**  
+-	Total Size: **454.6 MB (454550780 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3aba56f2e9d9905a2c363d02d43359745492a727488469a7abdbaf95b338df31`
+-	Image ID: `sha256:a05af42812961f1a49f0ad0692306c7c98db86f71c7607af3ce15fa1c5348f94`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -31,13 +31,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		au
 ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06
 # Thu, 15 Dec 2016 23:47:44 GMT
 RUN set -xe 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
-# Fri, 16 Dec 2016 01:30:21 GMT
-ENV GCC_VERSION=6.2.0
-# Fri, 16 Dec 2016 02:30:22 GMT
+# Thu, 22 Dec 2016 19:21:19 GMT
+ENV GCC_VERSION=6.3.0
+# Thu, 22 Dec 2016 20:33:39 GMT
 RUN buildDeps='flex' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -r /var/lib/apt/lists/* 	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2" -o gcc.tar.bz2 	&& curl -fSL "http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2.sig" -o gcc.tar.bz2.sig 	&& gpg --batch --verify gcc.tar.bz2.sig gcc.tar.bz2 	&& mkdir -p /usr/src/gcc 	&& tar -xf gcc.tar.bz2 -C /usr/src/gcc --strip-components=1 	&& rm gcc.tar.bz2* 	&& cd /usr/src/gcc 	&& ./contrib/download_prerequisites 	&& { rm *.tar.* || true; } 	&& dir="$(mktemp -d)" 	&& cd "$dir" 	&& /usr/src/gcc/configure 		--disable-multilib 		--enable-languages=c,c++,fortran,go 	&& make -j"$(nproc)" 	&& make install-strip 	&& cd .. 	&& rm -rf "$dir" 	&& apt-get purge -y --auto-remove $buildDeps
-# Fri, 16 Dec 2016 02:30:28 GMT
+# Thu, 22 Dec 2016 20:33:47 GMT
 RUN echo '/usr/local/lib64' > /etc/ld.so.conf.d/local-lib64.conf 	&& ldconfig -v
-# Fri, 16 Dec 2016 02:30:30 GMT
+# Thu, 22 Dec 2016 20:33:59 GMT
 RUN set -x 	&& dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc 	&& dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++ 	&& dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran 	&& update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999
 ```
 
@@ -62,15 +62,15 @@ RUN set -x 	&& dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc 	&& 
 		Last Modified: Mon, 19 Dec 2016 19:03:38 GMT  
 		Size: 98.8 KB (98774 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91894ce62703986fe2384cf530d8ef76efdd31cd9e0fc445933b7d9f6ff6e1e1`  
-		Last Modified: Mon, 19 Dec 2016 19:11:26 GMT  
-		Size: 211.8 MB (211825463 bytes)  
+	-	`sha256:6a99672debc378778e92bfd9ca58772fbbf0d6de6693aef01e30128079bf2161`  
+		Last Modified: Thu, 22 Dec 2016 20:59:01 GMT  
+		Size: 212.2 MB (212220747 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:215f40f3774bf2875c4f31742281bf155e554029aab75481b3f9992f29ca398e`  
-		Last Modified: Mon, 19 Dec 2016 19:09:21 GMT  
-		Size: 10.7 KB (10710 bytes)  
+	-	`sha256:26700650919b47b81a28ecde7d1375775189eba24385ba4be30f717f5c2c8a7a`  
+		Last Modified: Thu, 22 Dec 2016 20:57:28 GMT  
+		Size: 10.7 KB (10694 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9300b302a5b979ff04ff630ee3a00845e3269e6ab2e35d1e525c4b78687172d2`  
-		Last Modified: Mon, 19 Dec 2016 19:09:22 GMT  
-		Size: 1.8 KB (1839 bytes)  
+	-	`sha256:934967f2b410a20f7e924429d79047a1b72cdb3aaa7801ee6df2357d38e643e6`  
+		Last Modified: Thu, 22 Dec 2016 20:57:28 GMT  
+		Size: 1.8 KB (1836 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

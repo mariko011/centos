@@ -11,7 +11,7 @@
 ## `registry:2`
 
 ```console
-$ docker pull registry@sha256:1152291c7f93a4ea2ddc95e46d142c31e743b6dd70e194af9e6ebe530f782c17
+$ docker pull registry@sha256:946480a23b33480b8e7cdb89b82c1bd6accae91a8e66d017e21e8b56551f6209
 ```
 
 -	Platforms:
@@ -19,61 +19,61 @@ $ docker pull registry@sha256:1152291c7f93a4ea2ddc95e46d142c31e743b6dd70e194af9e
 
 ### `registry:2` - linux; amd64
 
--	Docker Version: 1.12.1
+-	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.7 MB (9654292 bytes)**  
+-	Total Size: **11.0 MB (11009455 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9bd19d022f6613fa0e3d73b2fe2b2cffe19ed629a426db9a652b597fccf07d4`
+-	Image ID: `sha256:182810e6ba8c469a88d639695b38cfb213aa0120f673a5f55c60ae052b395246`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
 
 ```dockerfile
-# Tue, 18 Oct 2016 20:31:22 GMT
-ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in / 
-# Wed, 19 Oct 2016 00:10:43 GMT
+# Tue, 27 Dec 2016 18:17:13 GMT
+ADD file:eeed5f514a35d18fcd9cbfe6c40c582211020bffdd53e4799018d33826fe5067 in / 
+# Tue, 27 Dec 2016 21:38:19 GMT
 RUN set -ex     && apk add --no-cache ca-certificates apache2-utils
-# Wed, 19 Oct 2016 00:10:44 GMT
+# Tue, 27 Dec 2016 21:38:20 GMT
 COPY file:3f73dd916d906a0dbe8d59e55d9580ef2356202ca3d6d91750db6435f50b5e7b in /bin/registry 
-# Wed, 19 Oct 2016 00:10:45 GMT
+# Tue, 27 Dec 2016 21:38:21 GMT
 COPY file:6c4758d509045dc45381fa2df2e7ffcc661afcaa29805c75f8f1976f2b016db8 in /etc/docker/registry/config.yml 
-# Wed, 19 Oct 2016 00:10:45 GMT
+# Tue, 27 Dec 2016 21:38:21 GMT
 VOLUME [/var/lib/registry]
-# Wed, 19 Oct 2016 00:10:46 GMT
+# Tue, 27 Dec 2016 21:38:22 GMT
 EXPOSE 5000/tcp
-# Wed, 19 Oct 2016 00:10:46 GMT
+# Tue, 27 Dec 2016 21:38:23 GMT
 COPY file:7b57f7ab1a8cf85c00768560fffc926543a60c9c9f7a2b172767dcc9a3203394 in /entrypoint.sh 
-# Wed, 19 Oct 2016 00:10:47 GMT
+# Tue, 27 Dec 2016 21:38:23 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 19 Oct 2016 00:10:47 GMT
+# Tue, 27 Dec 2016 21:38:24 GMT
 CMD ["/etc/docker/registry/config.yml"]
 ```
 
 -	Layers:
-	-	`sha256:3690ec4760f95690944da86dc4496148a63d85c9e3100669a318110092f6862f`  
-		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
-		Size: 2.3 MB (2312958 bytes)  
+	-	`sha256:b7f33cc0b48ea4fb2f0745def58c25483a5f6b7aed5b41ce8f1cb6e17f5723cf`  
+		Last Modified: Tue, 27 Dec 2016 18:18:49 GMT  
+		Size: 2.3 MB (2313090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:930045f1e8fb5a4fdac55bf104155928abeb7ccf536bd1b33cbb5abbfbde664a`  
-		Last Modified: Wed, 19 Oct 2016 00:10:56 GMT  
-		Size: 615.2 KB (615236 bytes)  
+	-	`sha256:46730e1e05c98ab7bbb88003263aa9cfc8ef843eced125dd14db64f1cf9f61cb`  
+		Last Modified: Tue, 27 Dec 2016 21:38:46 GMT  
+		Size: 2.0 MB (1970260 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:feeaa90cbdbc5cb3a073b0feee4d9f7a9b5d5ecff5f5a5adef216b865099b54d`  
-		Last Modified: Wed, 19 Oct 2016 00:10:59 GMT  
-		Size: 6.7 MB (6725514 bytes)  
+	-	`sha256:b7574c100797a286cd3c0eef209acdad9c26699bcfc5f7b506036baa029afdbe`  
+		Last Modified: Tue, 27 Dec 2016 21:38:48 GMT  
+		Size: 6.7 MB (6725521 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61f85310d3508d3f3873d9d70156f5f35b02fbf613245fb4334070439ef0ebce`  
-		Last Modified: Wed, 19 Oct 2016 00:10:56 GMT  
-		Size: 371.0 B  
+	-	`sha256:2e5b74c7b61188aa1cc121de4600ec280337481264f428474cb083e4694aab56`  
+		Last Modified: Tue, 27 Dec 2016 21:38:45 GMT  
+		Size: 370.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6082c23985817facb49b12a162005509fbebe8087cc1fdd9eebe9da3b35c5c3`  
-		Last Modified: Wed, 19 Oct 2016 00:10:56 GMT  
-		Size: 213.0 B  
+	-	`sha256:ba42bd458a59273f1e744c794f94b471c8f0664dcfe2ca5fe26dd77fcd84b5f2`  
+		Last Modified: Tue, 27 Dec 2016 21:38:45 GMT  
+		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `registry:2.5`
 
 ```console
-$ docker pull registry@sha256:1152291c7f93a4ea2ddc95e46d142c31e743b6dd70e194af9e6ebe530f782c17
+$ docker pull registry@sha256:946480a23b33480b8e7cdb89b82c1bd6accae91a8e66d017e21e8b56551f6209
 ```
 
 -	Platforms:
@@ -81,61 +81,61 @@ $ docker pull registry@sha256:1152291c7f93a4ea2ddc95e46d142c31e743b6dd70e194af9e
 
 ### `registry:2.5` - linux; amd64
 
--	Docker Version: 1.12.1
+-	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.7 MB (9654292 bytes)**  
+-	Total Size: **11.0 MB (11009455 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9bd19d022f6613fa0e3d73b2fe2b2cffe19ed629a426db9a652b597fccf07d4`
+-	Image ID: `sha256:182810e6ba8c469a88d639695b38cfb213aa0120f673a5f55c60ae052b395246`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
 
 ```dockerfile
-# Tue, 18 Oct 2016 20:31:22 GMT
-ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in / 
-# Wed, 19 Oct 2016 00:10:43 GMT
+# Tue, 27 Dec 2016 18:17:13 GMT
+ADD file:eeed5f514a35d18fcd9cbfe6c40c582211020bffdd53e4799018d33826fe5067 in / 
+# Tue, 27 Dec 2016 21:38:19 GMT
 RUN set -ex     && apk add --no-cache ca-certificates apache2-utils
-# Wed, 19 Oct 2016 00:10:44 GMT
+# Tue, 27 Dec 2016 21:38:20 GMT
 COPY file:3f73dd916d906a0dbe8d59e55d9580ef2356202ca3d6d91750db6435f50b5e7b in /bin/registry 
-# Wed, 19 Oct 2016 00:10:45 GMT
+# Tue, 27 Dec 2016 21:38:21 GMT
 COPY file:6c4758d509045dc45381fa2df2e7ffcc661afcaa29805c75f8f1976f2b016db8 in /etc/docker/registry/config.yml 
-# Wed, 19 Oct 2016 00:10:45 GMT
+# Tue, 27 Dec 2016 21:38:21 GMT
 VOLUME [/var/lib/registry]
-# Wed, 19 Oct 2016 00:10:46 GMT
+# Tue, 27 Dec 2016 21:38:22 GMT
 EXPOSE 5000/tcp
-# Wed, 19 Oct 2016 00:10:46 GMT
+# Tue, 27 Dec 2016 21:38:23 GMT
 COPY file:7b57f7ab1a8cf85c00768560fffc926543a60c9c9f7a2b172767dcc9a3203394 in /entrypoint.sh 
-# Wed, 19 Oct 2016 00:10:47 GMT
+# Tue, 27 Dec 2016 21:38:23 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 19 Oct 2016 00:10:47 GMT
+# Tue, 27 Dec 2016 21:38:24 GMT
 CMD ["/etc/docker/registry/config.yml"]
 ```
 
 -	Layers:
-	-	`sha256:3690ec4760f95690944da86dc4496148a63d85c9e3100669a318110092f6862f`  
-		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
-		Size: 2.3 MB (2312958 bytes)  
+	-	`sha256:b7f33cc0b48ea4fb2f0745def58c25483a5f6b7aed5b41ce8f1cb6e17f5723cf`  
+		Last Modified: Tue, 27 Dec 2016 18:18:49 GMT  
+		Size: 2.3 MB (2313090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:930045f1e8fb5a4fdac55bf104155928abeb7ccf536bd1b33cbb5abbfbde664a`  
-		Last Modified: Wed, 19 Oct 2016 00:10:56 GMT  
-		Size: 615.2 KB (615236 bytes)  
+	-	`sha256:46730e1e05c98ab7bbb88003263aa9cfc8ef843eced125dd14db64f1cf9f61cb`  
+		Last Modified: Tue, 27 Dec 2016 21:38:46 GMT  
+		Size: 2.0 MB (1970260 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:feeaa90cbdbc5cb3a073b0feee4d9f7a9b5d5ecff5f5a5adef216b865099b54d`  
-		Last Modified: Wed, 19 Oct 2016 00:10:59 GMT  
-		Size: 6.7 MB (6725514 bytes)  
+	-	`sha256:b7574c100797a286cd3c0eef209acdad9c26699bcfc5f7b506036baa029afdbe`  
+		Last Modified: Tue, 27 Dec 2016 21:38:48 GMT  
+		Size: 6.7 MB (6725521 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61f85310d3508d3f3873d9d70156f5f35b02fbf613245fb4334070439ef0ebce`  
-		Last Modified: Wed, 19 Oct 2016 00:10:56 GMT  
-		Size: 371.0 B  
+	-	`sha256:2e5b74c7b61188aa1cc121de4600ec280337481264f428474cb083e4694aab56`  
+		Last Modified: Tue, 27 Dec 2016 21:38:45 GMT  
+		Size: 370.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6082c23985817facb49b12a162005509fbebe8087cc1fdd9eebe9da3b35c5c3`  
-		Last Modified: Wed, 19 Oct 2016 00:10:56 GMT  
-		Size: 213.0 B  
+	-	`sha256:ba42bd458a59273f1e744c794f94b471c8f0664dcfe2ca5fe26dd77fcd84b5f2`  
+		Last Modified: Tue, 27 Dec 2016 21:38:45 GMT  
+		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `registry:2.5.1`
 
 ```console
-$ docker pull registry@sha256:1152291c7f93a4ea2ddc95e46d142c31e743b6dd70e194af9e6ebe530f782c17
+$ docker pull registry@sha256:946480a23b33480b8e7cdb89b82c1bd6accae91a8e66d017e21e8b56551f6209
 ```
 
 -	Platforms:
@@ -143,61 +143,61 @@ $ docker pull registry@sha256:1152291c7f93a4ea2ddc95e46d142c31e743b6dd70e194af9e
 
 ### `registry:2.5.1` - linux; amd64
 
--	Docker Version: 1.12.1
+-	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.7 MB (9654292 bytes)**  
+-	Total Size: **11.0 MB (11009455 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9bd19d022f6613fa0e3d73b2fe2b2cffe19ed629a426db9a652b597fccf07d4`
+-	Image ID: `sha256:182810e6ba8c469a88d639695b38cfb213aa0120f673a5f55c60ae052b395246`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
 
 ```dockerfile
-# Tue, 18 Oct 2016 20:31:22 GMT
-ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in / 
-# Wed, 19 Oct 2016 00:10:43 GMT
+# Tue, 27 Dec 2016 18:17:13 GMT
+ADD file:eeed5f514a35d18fcd9cbfe6c40c582211020bffdd53e4799018d33826fe5067 in / 
+# Tue, 27 Dec 2016 21:38:19 GMT
 RUN set -ex     && apk add --no-cache ca-certificates apache2-utils
-# Wed, 19 Oct 2016 00:10:44 GMT
+# Tue, 27 Dec 2016 21:38:20 GMT
 COPY file:3f73dd916d906a0dbe8d59e55d9580ef2356202ca3d6d91750db6435f50b5e7b in /bin/registry 
-# Wed, 19 Oct 2016 00:10:45 GMT
+# Tue, 27 Dec 2016 21:38:21 GMT
 COPY file:6c4758d509045dc45381fa2df2e7ffcc661afcaa29805c75f8f1976f2b016db8 in /etc/docker/registry/config.yml 
-# Wed, 19 Oct 2016 00:10:45 GMT
+# Tue, 27 Dec 2016 21:38:21 GMT
 VOLUME [/var/lib/registry]
-# Wed, 19 Oct 2016 00:10:46 GMT
+# Tue, 27 Dec 2016 21:38:22 GMT
 EXPOSE 5000/tcp
-# Wed, 19 Oct 2016 00:10:46 GMT
+# Tue, 27 Dec 2016 21:38:23 GMT
 COPY file:7b57f7ab1a8cf85c00768560fffc926543a60c9c9f7a2b172767dcc9a3203394 in /entrypoint.sh 
-# Wed, 19 Oct 2016 00:10:47 GMT
+# Tue, 27 Dec 2016 21:38:23 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 19 Oct 2016 00:10:47 GMT
+# Tue, 27 Dec 2016 21:38:24 GMT
 CMD ["/etc/docker/registry/config.yml"]
 ```
 
 -	Layers:
-	-	`sha256:3690ec4760f95690944da86dc4496148a63d85c9e3100669a318110092f6862f`  
-		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
-		Size: 2.3 MB (2312958 bytes)  
+	-	`sha256:b7f33cc0b48ea4fb2f0745def58c25483a5f6b7aed5b41ce8f1cb6e17f5723cf`  
+		Last Modified: Tue, 27 Dec 2016 18:18:49 GMT  
+		Size: 2.3 MB (2313090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:930045f1e8fb5a4fdac55bf104155928abeb7ccf536bd1b33cbb5abbfbde664a`  
-		Last Modified: Wed, 19 Oct 2016 00:10:56 GMT  
-		Size: 615.2 KB (615236 bytes)  
+	-	`sha256:46730e1e05c98ab7bbb88003263aa9cfc8ef843eced125dd14db64f1cf9f61cb`  
+		Last Modified: Tue, 27 Dec 2016 21:38:46 GMT  
+		Size: 2.0 MB (1970260 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:feeaa90cbdbc5cb3a073b0feee4d9f7a9b5d5ecff5f5a5adef216b865099b54d`  
-		Last Modified: Wed, 19 Oct 2016 00:10:59 GMT  
-		Size: 6.7 MB (6725514 bytes)  
+	-	`sha256:b7574c100797a286cd3c0eef209acdad9c26699bcfc5f7b506036baa029afdbe`  
+		Last Modified: Tue, 27 Dec 2016 21:38:48 GMT  
+		Size: 6.7 MB (6725521 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61f85310d3508d3f3873d9d70156f5f35b02fbf613245fb4334070439ef0ebce`  
-		Last Modified: Wed, 19 Oct 2016 00:10:56 GMT  
-		Size: 371.0 B  
+	-	`sha256:2e5b74c7b61188aa1cc121de4600ec280337481264f428474cb083e4694aab56`  
+		Last Modified: Tue, 27 Dec 2016 21:38:45 GMT  
+		Size: 370.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6082c23985817facb49b12a162005509fbebe8087cc1fdd9eebe9da3b35c5c3`  
-		Last Modified: Wed, 19 Oct 2016 00:10:56 GMT  
-		Size: 213.0 B  
+	-	`sha256:ba42bd458a59273f1e744c794f94b471c8f0664dcfe2ca5fe26dd77fcd84b5f2`  
+		Last Modified: Tue, 27 Dec 2016 21:38:45 GMT  
+		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `registry:latest`
 
 ```console
-$ docker pull registry@sha256:1152291c7f93a4ea2ddc95e46d142c31e743b6dd70e194af9e6ebe530f782c17
+$ docker pull registry@sha256:946480a23b33480b8e7cdb89b82c1bd6accae91a8e66d017e21e8b56551f6209
 ```
 
 -	Platforms:
@@ -205,61 +205,61 @@ $ docker pull registry@sha256:1152291c7f93a4ea2ddc95e46d142c31e743b6dd70e194af9e
 
 ### `registry:latest` - linux; amd64
 
--	Docker Version: 1.12.1
+-	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.7 MB (9654292 bytes)**  
+-	Total Size: **11.0 MB (11009455 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9bd19d022f6613fa0e3d73b2fe2b2cffe19ed629a426db9a652b597fccf07d4`
+-	Image ID: `sha256:182810e6ba8c469a88d639695b38cfb213aa0120f673a5f55c60ae052b395246`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
 
 ```dockerfile
-# Tue, 18 Oct 2016 20:31:22 GMT
-ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in / 
-# Wed, 19 Oct 2016 00:10:43 GMT
+# Tue, 27 Dec 2016 18:17:13 GMT
+ADD file:eeed5f514a35d18fcd9cbfe6c40c582211020bffdd53e4799018d33826fe5067 in / 
+# Tue, 27 Dec 2016 21:38:19 GMT
 RUN set -ex     && apk add --no-cache ca-certificates apache2-utils
-# Wed, 19 Oct 2016 00:10:44 GMT
+# Tue, 27 Dec 2016 21:38:20 GMT
 COPY file:3f73dd916d906a0dbe8d59e55d9580ef2356202ca3d6d91750db6435f50b5e7b in /bin/registry 
-# Wed, 19 Oct 2016 00:10:45 GMT
+# Tue, 27 Dec 2016 21:38:21 GMT
 COPY file:6c4758d509045dc45381fa2df2e7ffcc661afcaa29805c75f8f1976f2b016db8 in /etc/docker/registry/config.yml 
-# Wed, 19 Oct 2016 00:10:45 GMT
+# Tue, 27 Dec 2016 21:38:21 GMT
 VOLUME [/var/lib/registry]
-# Wed, 19 Oct 2016 00:10:46 GMT
+# Tue, 27 Dec 2016 21:38:22 GMT
 EXPOSE 5000/tcp
-# Wed, 19 Oct 2016 00:10:46 GMT
+# Tue, 27 Dec 2016 21:38:23 GMT
 COPY file:7b57f7ab1a8cf85c00768560fffc926543a60c9c9f7a2b172767dcc9a3203394 in /entrypoint.sh 
-# Wed, 19 Oct 2016 00:10:47 GMT
+# Tue, 27 Dec 2016 21:38:23 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 19 Oct 2016 00:10:47 GMT
+# Tue, 27 Dec 2016 21:38:24 GMT
 CMD ["/etc/docker/registry/config.yml"]
 ```
 
 -	Layers:
-	-	`sha256:3690ec4760f95690944da86dc4496148a63d85c9e3100669a318110092f6862f`  
-		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
-		Size: 2.3 MB (2312958 bytes)  
+	-	`sha256:b7f33cc0b48ea4fb2f0745def58c25483a5f6b7aed5b41ce8f1cb6e17f5723cf`  
+		Last Modified: Tue, 27 Dec 2016 18:18:49 GMT  
+		Size: 2.3 MB (2313090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:930045f1e8fb5a4fdac55bf104155928abeb7ccf536bd1b33cbb5abbfbde664a`  
-		Last Modified: Wed, 19 Oct 2016 00:10:56 GMT  
-		Size: 615.2 KB (615236 bytes)  
+	-	`sha256:46730e1e05c98ab7bbb88003263aa9cfc8ef843eced125dd14db64f1cf9f61cb`  
+		Last Modified: Tue, 27 Dec 2016 21:38:46 GMT  
+		Size: 2.0 MB (1970260 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:feeaa90cbdbc5cb3a073b0feee4d9f7a9b5d5ecff5f5a5adef216b865099b54d`  
-		Last Modified: Wed, 19 Oct 2016 00:10:59 GMT  
-		Size: 6.7 MB (6725514 bytes)  
+	-	`sha256:b7574c100797a286cd3c0eef209acdad9c26699bcfc5f7b506036baa029afdbe`  
+		Last Modified: Tue, 27 Dec 2016 21:38:48 GMT  
+		Size: 6.7 MB (6725521 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:61f85310d3508d3f3873d9d70156f5f35b02fbf613245fb4334070439ef0ebce`  
-		Last Modified: Wed, 19 Oct 2016 00:10:56 GMT  
-		Size: 371.0 B  
+	-	`sha256:2e5b74c7b61188aa1cc121de4600ec280337481264f428474cb083e4694aab56`  
+		Last Modified: Tue, 27 Dec 2016 21:38:45 GMT  
+		Size: 370.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6082c23985817facb49b12a162005509fbebe8087cc1fdd9eebe9da3b35c5c3`  
-		Last Modified: Wed, 19 Oct 2016 00:10:56 GMT  
-		Size: 213.0 B  
+	-	`sha256:ba42bd458a59273f1e744c794f94b471c8f0664dcfe2ca5fe26dd77fcd84b5f2`  
+		Last Modified: Tue, 27 Dec 2016 21:38:45 GMT  
+		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `registry:2.6.0-rc.2`
 
 ```console
-$ docker pull registry@sha256:db17d0bfdc47ca540d5038169956e4ce2a62c37e669c154070288590a28349d2
+$ docker pull registry@sha256:a982eedbe499926b88cc847605ec926755bc6d490278d2899b02880066b43cee
 ```
 
 -	Platforms:
@@ -269,51 +269,51 @@ $ docker pull registry@sha256:db17d0bfdc47ca540d5038169956e4ce2a62c37e669c154070
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.1 MB (9132425 bytes)**  
+-	Total Size: **10.5 MB (10487586 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:30a7c437ab5adf90b814e005106de9fe37b328ed9d6fe6a7d9dcc15e46d97242`
+-	Image ID: `sha256:972207cbcb44de9449a2b92de1aecbb8d89afcb5f9acd8759bafcbe7ee9abeb7`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
 
 ```dockerfile
-# Tue, 18 Oct 2016 20:31:22 GMT
-ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in / 
-# Wed, 19 Oct 2016 00:10:43 GMT
+# Tue, 27 Dec 2016 18:17:13 GMT
+ADD file:eeed5f514a35d18fcd9cbfe6c40c582211020bffdd53e4799018d33826fe5067 in / 
+# Tue, 27 Dec 2016 21:38:19 GMT
 RUN set -ex     && apk add --no-cache ca-certificates apache2-utils
-# Wed, 21 Dec 2016 01:39:05 GMT
+# Tue, 27 Dec 2016 21:38:26 GMT
 COPY file:a7eca89d5ab920dadbbfef180991c8bedc9f039188afe57cb2ecb6d6d791d35a in /bin/registry 
-# Wed, 21 Dec 2016 01:39:05 GMT
+# Tue, 27 Dec 2016 21:38:27 GMT
 COPY file:6c4758d509045dc45381fa2df2e7ffcc661afcaa29805c75f8f1976f2b016db8 in /etc/docker/registry/config.yml 
-# Wed, 21 Dec 2016 01:39:06 GMT
+# Tue, 27 Dec 2016 21:38:27 GMT
 VOLUME [/var/lib/registry]
-# Wed, 21 Dec 2016 01:39:06 GMT
+# Tue, 27 Dec 2016 21:38:28 GMT
 EXPOSE 5000/tcp
-# Wed, 21 Dec 2016 01:39:06 GMT
+# Tue, 27 Dec 2016 21:38:29 GMT
 COPY file:7b57f7ab1a8cf85c00768560fffc926543a60c9c9f7a2b172767dcc9a3203394 in /entrypoint.sh 
-# Wed, 21 Dec 2016 01:39:07 GMT
+# Tue, 27 Dec 2016 21:38:29 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 21 Dec 2016 01:39:07 GMT
+# Tue, 27 Dec 2016 21:38:30 GMT
 CMD ["/etc/docker/registry/config.yml"]
 ```
 
 -	Layers:
-	-	`sha256:3690ec4760f95690944da86dc4496148a63d85c9e3100669a318110092f6862f`  
-		Last Modified: Tue, 18 Oct 2016 20:32:39 GMT  
-		Size: 2.3 MB (2312958 bytes)  
+	-	`sha256:b7f33cc0b48ea4fb2f0745def58c25483a5f6b7aed5b41ce8f1cb6e17f5723cf`  
+		Last Modified: Tue, 27 Dec 2016 18:18:49 GMT  
+		Size: 2.3 MB (2313090 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:930045f1e8fb5a4fdac55bf104155928abeb7ccf536bd1b33cbb5abbfbde664a`  
-		Last Modified: Wed, 19 Oct 2016 00:10:56 GMT  
-		Size: 615.2 KB (615236 bytes)  
+	-	`sha256:46730e1e05c98ab7bbb88003263aa9cfc8ef843eced125dd14db64f1cf9f61cb`  
+		Last Modified: Tue, 27 Dec 2016 21:38:46 GMT  
+		Size: 2.0 MB (1970260 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f455fa7ebcc6fc1d5755bddfbc179c7c035747b1d5c9f1ad9527650d3f9efc61`  
-		Last Modified: Wed, 21 Dec 2016 01:40:25 GMT  
-		Size: 6.2 MB (6203646 bytes)  
+	-	`sha256:09d503830b530739962800b67f538ba316358179eddc0a9735501d4052603b3d`  
+		Last Modified: Tue, 27 Dec 2016 21:39:50 GMT  
+		Size: 6.2 MB (6203649 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:09ef5d50a7da6d4c5e17b3ccd887dfabe5a71971b221140b2a810c4da1316300`  
-		Last Modified: Wed, 21 Dec 2016 01:40:22 GMT  
-		Size: 370.0 B  
+	-	`sha256:f49488205686d447576c950cf8a743fd29420139d822b9bff6ead0b03db408a0`  
+		Last Modified: Tue, 27 Dec 2016 21:39:47 GMT  
+		Size: 374.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5558ab44d3cb1e1853543bd2183c1143a83ce4c23344fcf27ca0705f304c1b82`  
-		Last Modified: Wed, 21 Dec 2016 01:40:22 GMT  
-		Size: 215.0 B  
+	-	`sha256:76fb7fb3cfd7056c8a2e28252b79f42c313f68ce202436808ec8f4d156be7fcb`  
+		Last Modified: Tue, 27 Dec 2016 21:39:48 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

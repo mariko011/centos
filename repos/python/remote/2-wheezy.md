@@ -1,7 +1,7 @@
 ## `python:2-wheezy`
 
 ```console
-$ docker pull python@sha256:43d8fc61cfeb0bff0b7ab567fd2964451883bd52b403d08d1c8f51d69ba0f997
+$ docker pull python@sha256:96a7c11fcac46da3adff2b03998b80706f5282c70c8bc95026abc11c6ab2df6a
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull python@sha256:43d8fc61cfeb0bff0b7ab567fd2964451883bd52b403d08d1c8f
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **199.8 MB (199826564 bytes)**  
+-	Total Size: **199.9 MB (199850053 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:453fae6c3d7e68becb70a9a52ea8d6dbfa19d3e79a461fba04cd77a8092d1d59`
+-	Image ID: `sha256:43af96e561200b842bf4bceed211f2fd7d06b640ee6f1ee47e391ac0ae5ec236`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -35,15 +35,15 @@ ENV LANG=C.UTF-8
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
 # Fri, 16 Dec 2016 03:09:43 GMT
 ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Fri, 16 Dec 2016 03:09:43 GMT
-ENV PYTHON_VERSION=2.7.12
-# Fri, 16 Dec 2016 03:09:44 GMT
+# Thu, 22 Dec 2016 20:47:39 GMT
+ENV PYTHON_VERSION=2.7.13
+# Thu, 22 Dec 2016 20:47:39 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Fri, 16 Dec 2016 03:11:19 GMT
+# Thu, 22 Dec 2016 20:50:20 GMT
 RUN set -ex 	&& buildDeps=' 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-shared 		--enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 			&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& python2 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	&& pip install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& find /usr/local -depth 		\( 			\( -type d -a -name test -o -name tests \) 			-o 			\( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Fri, 16 Dec 2016 03:11:21 GMT
+# Thu, 22 Dec 2016 20:50:34 GMT
 RUN pip install --no-cache-dir virtualenv
-# Fri, 16 Dec 2016 03:11:22 GMT
+# Thu, 22 Dec 2016 20:50:34 GMT
 CMD ["python2"]
 ```
 
@@ -68,11 +68,11 @@ CMD ["python2"]
 		Last Modified: Mon, 19 Dec 2016 20:11:45 GMT  
 		Size: 3.2 MB (3228980 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7fdb4598aeff5d0f86fab4fb1475b30947c3b2595a3239a35329b74cb1eece75`  
-		Last Modified: Mon, 19 Dec 2016 20:11:51 GMT  
-		Size: 16.3 MB (16335163 bytes)  
+	-	`sha256:cc9e5203fa069520e3caadfc1e42348ba267bfedc5fd436969762666b23e1100`  
+		Last Modified: Thu, 22 Dec 2016 20:58:11 GMT  
+		Size: 16.4 MB (16361406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:383d697ba8c07154a9706733531e634d05b9f1b79c8cc09e6edb18a29577df99`  
-		Last Modified: Mon, 19 Dec 2016 20:11:45 GMT  
-		Size: 3.3 MB (3329899 bytes)  
+	-	`sha256:059f9fb5927f8ca82a6634cd9477549ee3a85ca7cba388455ba8529ec10b42a3`  
+		Last Modified: Thu, 22 Dec 2016 20:58:05 GMT  
+		Size: 3.3 MB (3327145 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
