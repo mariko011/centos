@@ -1,9 +1,9 @@
-# `jetty:9.2.19-jre7`
+# `jetty:9.2.20-jre7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1280ca4b7c7c33aa50b463684edc341493ea8cdd43519e61ba7e3a11008bb240`
-- Created: `2016-12-19T16:42:32.119792168Z`
+- Image ID: `sha256:1260bf7ee405ba59932e0dc1aa71464d1c5bb4e762e740a5571d2db6fe9fdda1`
+- Created: `2016-12-27T17:36:56.055828508Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["java","-jar","/usr/local/jetty/start.jar"]`
@@ -14,9 +14,9 @@
   - `JAVA_VERSION=7u111`
   - `JAVA_DEBIAN_VERSION=7u111-2.6.7-2~deb8u1`
   - `JETTY_HOME=/usr/local/jetty`
-  - `JETTY_VERSION=9.2.19.v20160908`
-  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.19.v20160908/jetty-distribution-9.2.19.v20160908.tar.gz`
-  - `JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	5DE533CB43DAF8BC3E372283E7AE839CD7C58886`
+  - `JETTY_VERSION=9.2.20.v20161216`
+  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.2.20.v20161216/jetty-distribution-9.2.20.v20161216.tar.gz`
+  - `JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D`
   - `JETTY_BASE=/var/lib/jetty`
   - `TMPDIR=/tmp/jetty`
 
