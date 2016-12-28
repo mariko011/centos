@@ -1,16 +1,16 @@
-# `python:2.7.12-onbuild`
+# `python:2.7.13-onbuild`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6658c6db395a03798f73647cb48fa206f1fc7dc9075dd6ad618bd781cdfe9105`
-- Created: `2016-12-16T03:09:27.175749965Z`
+- Image ID: `sha256:57bd0d120dccc008767e40cea4964a56c551102b1e1b00a241e88222bb60fd99`
+- Created: `2016-12-22T20:51:52.455706145Z`
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
-  - `PYTHON_VERSION=2.7.12`
+  - `PYTHON_VERSION=2.7.13`
   - `PYTHON_PIP_VERSION=9.0.1`
 
 ## `dpkg` (`.deb`-based packages)

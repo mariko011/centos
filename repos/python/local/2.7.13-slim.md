@@ -1,16 +1,16 @@
-# `python:2.7.12-slim`
+# `python:2.7.13-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:15620d9c1bf5d11b76839d1071e9e9c285a02f3110dc823a47b60c97a9932905`
-- Created: `2016-12-14T18:47:37.80203728Z`
+- Image ID: `sha256:83c1ea75e8f946ee849e966159afbb6a41c7f22fc837c6325d2044d0f5c0773f`
+- Created: `2016-12-22T20:44:24.988150682Z`
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
-  - `PYTHON_VERSION=2.7.12`
+  - `PYTHON_VERSION=2.7.13`
   - `PYTHON_PIP_VERSION=9.0.1`
 
 ## `dpkg` (`.deb`-based packages)

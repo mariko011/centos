@@ -1,16 +1,16 @@
-# `python:2.7.12-wheezy`
+# `python:2.7.13-wheezy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:453fae6c3d7e68becb70a9a52ea8d6dbfa19d3e79a461fba04cd77a8092d1d59`
-- Created: `2016-12-16T03:11:22.183719172Z`
+- Image ID: `sha256:43af96e561200b842bf4bceed211f2fd7d06b640ee6f1ee47e391ac0ae5ec236`
+- Created: `2016-12-22T20:50:34.884272364Z`
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
-  - `PYTHON_VERSION=2.7.12`
+  - `PYTHON_VERSION=2.7.13`
   - `PYTHON_PIP_VERSION=9.0.1`
 
 ## `dpkg` (`.deb`-based packages)
@@ -2031,19 +2031,8 @@ Licenses: (parsed from: `/usr/share/doc/libgd2-noxpm/copyright`)
 - `HPND`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.0.36~rc1~dfsg-6.1+deb7u6
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u6.dsc' libgd2_2.0.36~rc1~dfsg-6.1+deb7u6.dsc 2551 SHA256:0895065d0333108dee189117081dde3e1439694ceb185766bc74fa8e5c5c59ad
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg.orig.tar.gz' libgd2_2.0.36~rc1~dfsg.orig.tar.gz 761899 SHA256:919df21310ad4a8b6155df01411138110589cc6c50b1bc414dc62aebb0a7f41a
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u6.debian.tar.gz' libgd2_2.0.36~rc1~dfsg-6.1+deb7u6.debian.tar.gz 31074 SHA256:4c334a7735132dd098246ede795b5386ac95068c7233e6430a03737b510b0444
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libgd2/2.0.36~rc1~dfsg-6.1+deb7u6/
-- https://sources.debian.net/src/libgd2/2.0.36~rc1~dfsg-6.1+deb7u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.10-3.1`
 
