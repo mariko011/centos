@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c9bd19d022f6613fa0e3d73b2fe2b2cffe19ed629a426db9a652b597fccf07d4`
-- Created: `2016-10-19T00:10:47.557972637Z`
+- Image ID: `sha256:182810e6ba8c469a88d639695b38cfb213aa0120f673a5f55c60ae052b395246`
+- Created: `2016-12-27T21:38:24.739902241Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["/etc/docker/registry/config.yml"]`
