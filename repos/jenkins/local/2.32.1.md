@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f61635651954adb853e95690b04dd3791e4fdbcfab7bfb66a2d505e31f3df31c`
-- Created: `2016-12-19T16:42:00.688441826Z`
+- Image ID: `sha256:e11ceb27c34e3cb01f0ebb0b7e957cebbe03782242917b6fc582961feea21bfb`
+- Created: `2016-12-27T17:51:17.041992798Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/bin/tini","--","/usr/local/bin/jenkins.sh"]`
 - Environment:
@@ -15,9 +15,9 @@
   - `CA_CERTIFICATES_JAVA_VERSION=20140324`
   - `JENKINS_HOME=/var/jenkins_home`
   - `JENKINS_SLAVE_AGENT_PORT=50000`
-  - `TINI_VERSION=0.9.0`
-  - `TINI_SHA=fa23d1e20732501c3bb8eeeca423c89ac80ed452`
-  - `JENKINS_VERSION=2.19.4`
+  - `TINI_VERSION=0.13.1`
+  - `TINI_SHA=0f78709a0e3c80e7c9119fdc32c2bc0f4cfc4cab`
+  - `JENKINS_VERSION=2.32.1`
   - `JENKINS_UC=https://updates.jenkins.io`
   - `COPY_REFERENCE_FILE_LOG=/var/jenkins_home/copy_reference_file.log`
 
