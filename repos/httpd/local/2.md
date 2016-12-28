@@ -1,19 +1,19 @@
-# `httpd:2.4.23`
+# `httpd:2.4.25`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a2cbbfeec0f9a27b98634a81f0aea9952190d7ab9d833bde7dc86c5ca63258c2`
-- Created: `2016-12-13T23:48:19.295867903Z`
+- Image ID: `sha256:0c4363ef5f1221bd275f00b8b8a97344a5829a06f16b98354a665a6c611e7cf1`
+- Created: `2016-12-22T20:21:35.683705868Z`
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
 - Environment:
   - `PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `HTTPD_PREFIX=/usr/local/apache2`
   - `NGHTTP2_VERSION=1.17.0-1`
-  - `HTTPD_VERSION=2.4.23`
-  - `HTTPD_SHA1=5101be34ac4a509b245adb70a56690a84fcc4e7f`
-  - `HTTPD_BZ2_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=httpd/httpd-2.4.23.tar.bz2`
-  - `HTTPD_ASC_URL=https://www.apache.org/dist/httpd/httpd-2.4.23.tar.bz2.asc`
+  - `HTTPD_VERSION=2.4.25`
+  - `HTTPD_SHA1=bd6d138c31c109297da2346c6e7b93b9283993d2`
+  - `HTTPD_BZ2_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=httpd/httpd-2.4.25.tar.bz2`
+  - `HTTPD_ASC_URL=https://www.apache.org/dist/httpd/httpd-2.4.25.tar.bz2.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
