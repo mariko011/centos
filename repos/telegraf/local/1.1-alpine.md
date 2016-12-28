@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7fb19a37084dcf7ea5de97e47aa19f68730f57e66f94a4fe1e5f829d57777cb4`
-- Created: `2016-12-12T22:38:03.47995238Z`
+- Image ID: `sha256:c13acb710f92798f7c9492781a2130a169f62144e779f0ba30b42c5b5c6aab8d`
+- Created: `2016-12-27T22:05:12.471764212Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["telegraf"]`
