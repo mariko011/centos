@@ -619,19 +619,8 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.1.16-3
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.16-3.dsc' gnupg2_2.1.16-3.dsc 3145 SHA256:5a383d3d4cdf4b34c10b66cf8e71ec2d3ae43b4ebe2d3f7a576d3293466174a7
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.16.orig.tar.bz2' gnupg2_2.1.16.orig.tar.bz2 5840687 SHA256:49b9a6a6787ad00d4d2d69d8c7ee8905923782583f06078a064a0c80531d8844
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.16-3.debian.tar.bz2' gnupg2_2.1.16-3.debian.tar.bz2 59757 SHA256:bf55fb7e9c9be8c67b2ff6082045ea96d167c4f788de4569d3e26dda07ad3aea
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnupg2/2.1.16-3/
-- https://sources.debian.net/src/gnupg2/2.1.16-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.27-1`
 
@@ -847,19 +836,8 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 - `GPL-2.1+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgpg-error=1.25-2
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.25-2.dsc' libgpg-error_1.25-2.dsc 2454 SHA256:ad96187bae5767ae77615782fbd0a2027d78df1ebd983ab5d4e9af6abddb2ce5
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.25.orig.tar.bz2' libgpg-error_1.25.orig.tar.bz2 797159 SHA256:f628f75843433b38b05af248121beb7db5bd54bb2106f384edac39934261320c
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.25-2.debian.tar.xz' libgpg-error_1.25-2.debian.tar.xz 15304 SHA256:ddeb333f47c88ae7bc9114a0a41940100de29f6c92759cd049a08cd6364b9142
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libgpg-error/1.25-2/
-- https://sources.debian.net/src/libgpg-error/1.25-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libmnl=1.0.4-2`
 
@@ -1075,18 +1053,8 @@ Licenses: (parsed from: `/usr/share/doc/netbase/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris netbase=5.3
-'http://deb.debian.org/debian/pool/main/n/netbase/netbase_5.3.dsc' netbase_5.3.dsc 1308 SHA256:fcb9c97fe55277f775fd5a39933ca0189b9a983c6cf1abc8184fc29b8e1d77cb
-'http://deb.debian.org/debian/pool/main/n/netbase/netbase_5.3.tar.xz' netbase_5.3.tar.xz 31292 SHA256:81f6c69795044d62b8ad959cf9daf049d0545fd466c52860ad3f933b1e97b88b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/netbase/5.3/
-- https://sources.debian.net/src/netbase/5.3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `pam=1.1.8-3.3`
 

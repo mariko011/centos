@@ -413,18 +413,8 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.15
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.15.dsc' dpkg_1.18.15.dsc 2032 SHA256:63fdc2bd7a0e8d2c4066da228bd88e770e3094e8c761c33a3a700dc9edb12fbe
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.15.tar.xz' dpkg_1.18.15.tar.xz 4494820 SHA256:aee936653b9c39403160c0a331ee7934563fbfa4e1f5adbc14a289c803cda371
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dpkg/1.18.15/
-- https://sources.debian.net/src/dpkg/1.18.15/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `e2fsprogs=1.43.3-1`
 
@@ -726,19 +716,8 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.8.0-1
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.8.0-1.dsc' iproute2_4.8.0-1.dsc 2365 SHA256:dace7fdffee71c18842a1d4d3ffe281675f770767c5186a557e7e94ed1930126
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.8.0.orig.tar.xz' iproute2_4.8.0.orig.tar.xz 594636 SHA256:a30959c8421bc8ef42719bed41d14e1d7cfdbad80d7d70c5c42ad31f2c2cb389
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.8.0-1.debian.tar.xz' iproute2_4.8.0-1.debian.tar.xz 26680 SHA256:c63b890daeab42e1a91fcf863ee353b738c26c3ce659a11e09fa9c1b96cee66e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/iproute2/4.8.0-1/
-- https://sources.debian.net/src/iproute2/4.8.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libcap-ng=0.7.7-3`
 
@@ -1197,19 +1176,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=232-7
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-7.dsc' systemd_232-7.dsc 4621 SHA256:98af83c6dd08a3a2749a05a0d0dd24302107ce84c1d5305f79fca01b54353222
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-7.debian.tar.xz' systemd_232-7.debian.tar.xz 128228 SHA256:fd075483f9568228c12c343593170b89c2ba5a021bbe1482abc9371ecadb55b5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/systemd/232-7/
-- https://sources.debian.net/src/systemd/232-7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8`
 
