@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ac5801b0e0aff751216d78ed7da92a6b6223d37238f5844fe82f073db10761d3`
-- Created: `2016-11-14T23:21:58.527945813Z`
+- Image ID: `sha256:80592b31e66815de262769be3620fcba1a7540c01d44e6ed3cd077390c9aca91`
+- Created: `2016-12-27T20:51:01.64788089Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh"]`
 - Command: `["notary-server","--help"]`
