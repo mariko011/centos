@@ -2029,19 +2029,8 @@ Licenses: (parsed from: `/usr/share/doc/libgd2-noxpm/copyright`)
 - `HPND`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.0.36~rc1~dfsg-6.1+deb7u6
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u6.dsc' libgd2_2.0.36~rc1~dfsg-6.1+deb7u6.dsc 2551 SHA256:0895065d0333108dee189117081dde3e1439694ceb185766bc74fa8e5c5c59ad
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg.orig.tar.gz' libgd2_2.0.36~rc1~dfsg.orig.tar.gz 761899 SHA256:919df21310ad4a8b6155df01411138110589cc6c50b1bc414dc62aebb0a7f41a
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u6.debian.tar.gz' libgd2_2.0.36~rc1~dfsg-6.1+deb7u6.debian.tar.gz 31074 SHA256:4c334a7735132dd098246ede795b5386ac95068c7233e6430a03737b510b0444
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libgd2/2.0.36~rc1~dfsg-6.1+deb7u6/
-- https://sources.debian.net/src/libgd2/2.0.36~rc1~dfsg-6.1+deb7u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.10-3.1`
 
