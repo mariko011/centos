@@ -2,13 +2,13 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b96237f5480ae439c0724175a52eefd2994520126d307f1c8d1dc362c6edc847`
-- Created: `2016-12-16T18:27:22.551723522Z`
+- Image ID: `sha256:112541bb44375a7230b46250a025d80c986dd8a8974dd98a24d80ffa08299f15`
+- Created: `2016-12-27T18:06:52.199747155Z`
 - Arch: `linux`/`amd64`
 - Command: `["/opt/ibm/docker/docker-server","run","defaultServer"]`
 - Environment:
   - `PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr3fp21`
+  - `JAVA_VERSION=1.8.0_sr3fp22`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `LIBERTY_VERSION=16.0.0_04`
   - `LOG_DIR=/logs`
