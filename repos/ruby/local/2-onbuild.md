@@ -1,18 +1,18 @@
-# `ruby:2.3.3-onbuild`
+# `ruby:2.4.0-onbuild`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9dc5be8a0a674e89c6992e437e173ff5075f8d7567e8c1930676d085f21a5f40`
-- Created: `2016-12-16T03:33:16.859806898Z`
+- Image ID: `sha256:04a7d85fabb00c68bb20c8c9be7322abd76076eeffeaa63d0c9c1cf7a04afdda`
+- Created: `2016-12-28T22:28:34.552004417Z`
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `RUBY_MAJOR=2.3`
-  - `RUBY_VERSION=2.3.3`
-  - `RUBY_DOWNLOAD_SHA256=241408c8c555b258846368830a06146e4849a1d58dcaf6b14a3b6a73058115b7`
+  - `RUBY_MAJOR=2.4`
+  - `RUBY_VERSION=2.4.0`
+  - `RUBY_DOWNLOAD_SHA256=152fd0bd15a90b4a18213448f485d4b53e9f7662e1508190aa5b702446b29e3d`
   - `RUBYGEMS_VERSION=2.6.8`
-  - `BUNDLER_VERSION=1.13.6`
+  - `BUNDLER_VERSION=1.13.7`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_PATH=/usr/local/bundle`
   - `BUNDLE_BIN=/usr/local/bundle/bin`
