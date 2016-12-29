@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a18ceb02a6ff2fba4d9f1f853c1cfcda2512b528334fd4e7db5cc4b7f0de2677`
-- Created: `2016-12-19T17:19:04.156995353Z`
+- Image ID: `sha256:e478d0f7f38fb450f16d3fb4cff4daba5f67d36f61629a1791c893d6a77fa27c`
+- Created: `2016-12-28T23:44:55.951745261Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["rails","server","-b","0.0.0.0"]`
@@ -13,7 +13,7 @@
   - `RUBY_VERSION=2.2.6`
   - `RUBY_DOWNLOAD_SHA256=de8e192791cb157d610c48a9a9ff6e7f19d67ce86052feae62b82e3682cc675f`
   - `RUBYGEMS_VERSION=2.6.8`
-  - `BUNDLER_VERSION=1.13.6`
+  - `BUNDLER_VERSION=1.13.7`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_PATH=/usr/local/bundle`
   - `BUNDLE_BIN=/usr/local/bundle/bin`
@@ -2555,11 +2555,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libxext/2:1.3.3-1/
 - https://sources.debian.net/src/libxext/2:1.3.3-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libxml2=2.9.1+dfsg1-5+deb8u3`
+### `dpkg` source package: `libxml2=2.9.1+dfsg1-5+deb8u4`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.1+dfsg1-5+deb8u3`
+- `libxml2:amd64=2.9.1+dfsg1-5+deb8u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2568,16 +2568,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxml2=2.9.1+dfsg1-5+deb8u3
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u3.dsc' libxml2_2.9.1+dfsg1-5+deb8u3.dsc 2591 SHA256:57c260e91d7892f2b778b2f8b132b206dcc325a004d4c193ae6913c593a8bc2f
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1.orig.tar.gz' libxml2_2.9.1+dfsg1.orig.tar.gz 3793894 SHA256:f3ec5256412192f74833286c4490672500b232ed1c9195214db2c641df064a28
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u3.debian.tar.xz' libxml2_2.9.1+dfsg1-5+deb8u3.debian.tar.xz 64108 SHA256:072644c58b39997efee6e25781900c5b53b07dc41ada219945285a876e3abc1e
+$ apt-get source -qq --print-uris libxml2=2.9.1+dfsg1-5+deb8u4
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u4.dsc' libxml2_2.9.1+dfsg1-5+deb8u4.dsc 2760 SHA256:23f9a9935227718fd2921abb484c129617325e1306d8525b3dcec1611df01096
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1.orig.tar.gz' libxml2_2.9.1+dfsg1.orig.tar.gz 3793894 SHA256:f3ec5256412192f74833286c4490672500b232ed1c9195214db2c641df064a28
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u4.debian.tar.xz' libxml2_2.9.1+dfsg1-5+deb8u4.debian.tar.xz 66756 SHA256:cda8374910db4e2a06b2515123dbe0b714f7f647532dc305f03c2a094175e706
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u3/
-- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u4/
+- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxrender=1:0.9.8-1`
 
