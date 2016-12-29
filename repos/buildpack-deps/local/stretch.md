@@ -464,19 +464,8 @@ Licenses: (parsed from: `/usr/share/doc/libcairo-gobject2/copyright`, `/usr/shar
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cairo=1.14.6-1.1
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.14.6-1.1.dsc' cairo_1.14.6-1.1.dsc 3061 SHA256:644bf639e93ad4a4c3586149565c70f840767aa16e51be8ba8722f85e157a16a
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.14.6.orig.tar.xz' cairo_1.14.6.orig.tar.xz 36040596 SHA256:613cb38447b76a93ff7235e17acd55a78b52ea84a9df128c3f2257f8eaa7b252
-'http://deb.debian.org/debian/pool/main/c/cairo/cairo_1.14.6-1.1.debian.tar.xz' cairo_1.14.6-1.1.debian.tar.xz 28860 SHA256:ed4a884c2a0929dd57aa19a3961463c217221cc0370bc6b5a36a4fc9d7b81731
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cairo/1.14.6-1.1/
-- https://sources.debian.net/src/cairo/1.14.6-1.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cdebconf=0.218`
 
@@ -586,19 +575,8 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris curl=7.50.1-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.50.1-1.dsc' curl_7.50.1-1.dsc 2713 SHA256:0dc812ada7fccc111c6497e51977e395e01024bbf94325e7b0c515da9d89a756
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.50.1.orig.tar.gz' curl_7.50.1.orig.tar.gz 8894258 SHA256:3e392cf600822b817be82d9080b377fcbab70538d5a8bf525a1cd66e157b99ea
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.50.1-1.debian.tar.xz' curl_7.50.1-1.debian.tar.xz 26948 SHA256:62cfd79dd0eaae5f2aff1941a60ae0f8ecef089ca9aadfa6e75b59c9f4dda63b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/curl/7.50.1-1/
-- https://sources.debian.net/src/curl/7.50.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-1`
 
@@ -889,18 +867,8 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/libdpkg
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.15
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.15.dsc' dpkg_1.18.15.dsc 2032 SHA256:63fdc2bd7a0e8d2c4066da228bd88e770e3094e8c761c33a3a700dc9edb12fbe
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.15.tar.xz' dpkg_1.18.15.tar.xz 4494820 SHA256:aee936653b9c39403160c0a331ee7934563fbfa4e1f5adbc14a289c803cda371
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dpkg/1.18.15/
-- https://sources.debian.net/src/dpkg/1.18.15/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `e2fsprogs=1.43.3-1`
 
@@ -1045,19 +1013,8 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 - `MIT-Old-Style-with-legal-disclaimer-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris file=1:5.29-1
-'http://deb.debian.org/debian/pool/main/f/file/file_5.29-1.dsc' file_5.29-1.dsc 2124 SHA256:a55d239a57c34b9504825f646210429db992868af2ecefe2b6869a258848ac89
-'http://deb.debian.org/debian/pool/main/f/file/file_5.29.orig.tar.xz' file_5.29.orig.tar.xz 574196 SHA256:4ab1cd8d4fe9017f8dfcfd6ba81f495a722b75e22bd1a59e6bfd15ac211a2820
-'http://deb.debian.org/debian/pool/main/f/file/file_5.29-1.debian.tar.xz' file_5.29-1.debian.tar.xz 29272 SHA256:1e8c40ff5ec139e58cffbfaac0c4a9dd70b45909b364ecd03cc5e58ba4fac3f4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/file/1:5.29-1/
-- https://sources.debian.net/src/file/1:5.29-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20161106-1`
 
@@ -1970,19 +1927,8 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.8.0-1
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.8.0-1.dsc' iproute2_4.8.0-1.dsc 2365 SHA256:dace7fdffee71c18842a1d4d3ffe281675f770767c5186a557e7e94ed1930126
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.8.0.orig.tar.xz' iproute2_4.8.0.orig.tar.xz 594636 SHA256:a30959c8421bc8ef42719bed41d14e1d7cfdbad80d7d70c5c42ad31f2c2cb389
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.8.0-1.debian.tar.xz' iproute2_4.8.0-1.debian.tar.xz 26680 SHA256:c63b890daeab42e1a91fcf863ee353b738c26c3ce659a11e09fa9c1b96cee66e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/iproute2/4.8.0-1/
-- https://sources.debian.net/src/iproute2/4.8.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `isl=0.17.1-1`
 
@@ -2049,19 +1995,8 @@ Licenses: (parsed from: `/usr/share/doc/libjs-jquery/copyright`)
 - `GPL-2`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris jquery=3.1.1-1
-'http://deb.debian.org/debian/pool/main/j/jquery/jquery_3.1.1-1.dsc' jquery_3.1.1-1.dsc 2079 SHA256:92edb4c2a7be9d8703bfc030380f80e640700a04b004ab182a1df8a4627895a2
-'http://deb.debian.org/debian/pool/main/j/jquery/jquery_3.1.1.orig.tar.gz' jquery_3.1.1.orig.tar.gz 410492 SHA256:9fa7fe0ff812732dbef26e53431091e260f457fb56abf3964b92e521343268f3
-'http://deb.debian.org/debian/pool/main/j/jquery/jquery_3.1.1-1.debian.tar.xz' jquery_3.1.1-1.debian.tar.xz 8620 SHA256:5b195e1f12fba3febc66018ae1525bd1a9206cead4ef474befd7ce8e006a6fec
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/jquery/3.1.1-1/
-- https://sources.debian.net/src/jquery/3.1.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `keyutils=1.5.9-9`
 
@@ -2623,19 +2558,8 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 - `Chromium`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.15.0-1
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.15.0-1.dsc' libpsl_0.15.0-1.dsc 2283 SHA256:5f094fd0e01187d5466a924083e5fd84fb6f8da4b93bb90037ea71b159bbbb94
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.15.0.orig.tar.gz' libpsl_0.15.0.orig.tar.gz 50248 SHA256:abdfa468df012b927995dad056fd425ba357eed5bf00083246fada9720ad4480
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.15.0-1.debian.tar.xz' libpsl_0.15.0-1.debian.tar.xz 8120 SHA256:4bf6283a2c353c18aed9cc5ae2aa36100ef0236f0aa441eca445cc28022ae36d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libpsl/0.15.0-1/
-- https://sources.debian.net/src/libpsl/0.15.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpthread-stubs=0.3-4`
 
@@ -4448,19 +4372,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.5-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python3.5=3.5.2-8
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.2-8.dsc' python3.5_3.5.2-8.dsc 3311 SHA256:30baa26c62ad37e6e3b9d22f50498269b177e772b1647d1beb755584a64111d9
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.2.orig.tar.xz' python3.5_3.5.2.orig.tar.xz 15222676 SHA256:0010f56100b9b74259ebcd5d4b295a32324b58b517403a10d1a2aa7cb22bca40
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.2-8.debian.tar.xz' python3.5_3.5.2-8.debian.tar.xz 649604 SHA256:fedddd7fcb05788124b67af3dda8535b834484d74350f23f04835a365d591bb1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/python3.5/3.5.2-8/
-- https://sources.debian.net/src/python3.5/3.5.2-8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `readline=7.0-1`
 
@@ -4721,19 +4634,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=232-7
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-7.dsc' systemd_232-7.dsc 4621 SHA256:98af83c6dd08a3a2749a05a0d0dd24302107ce84c1d5305f79fca01b54353222
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-7.debian.tar.xz' systemd_232-7.debian.tar.xz 128228 SHA256:fd075483f9568228c12c343593170b89c2ba5a021bbe1482abc9371ecadb55b5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/systemd/232-7/
-- https://sources.debian.net/src/systemd/232-7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8`
 
@@ -4796,19 +4698,8 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`, `/usr/share/doc/lib
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.7-1
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.7-1.dsc' tiff_4.0.7-1.dsc 2125 SHA256:7b066eec518b8d8f4f5bcd06dd3dda672194bb37b7f8ad9c46630b8031fa41d5
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.7.orig.tar.gz' tiff_4.0.7.orig.tar.gz 2076392 SHA256:9f43a2cfb9589e5cecaa66e16bf87f814c945f22df7ba600d63aac4632c4f019
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.7-1.debian.tar.xz' tiff_4.0.7-1.debian.tar.xz 15144 SHA256:add4fbb212a89f967f38285f0adb5b976a60a52e2efff3004de83610e51339dc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff/4.0.7-1/
-- https://sources.debian.net/src/tiff/4.0.7-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tzdata=2016j-2`
 

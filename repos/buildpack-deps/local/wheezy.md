@@ -507,19 +507,8 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy17
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy17.dsc' curl_7.26.0-1+wheezy17.dsc 2693 SHA256:bb86b101983e60c2a64e389a43e8f82b359a36fe111b0da22457cca879f64030
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy17.debian.tar.gz' curl_7.26.0-1+wheezy17.debian.tar.gz 63572 SHA256:48f3a78410b5aba7a7a2b43bdef2a5bc3b674ba01ea96e98d792d7dea43de61f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/curl/7.26.0-1+wheezy17/
-- https://sources.debian.net/src/curl/7.26.0-1+wheezy17/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
 
@@ -1485,19 +1474,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.7.7.10-5+deb7u9
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u9.dsc' imagemagick_6.7.7.10-5+deb7u9.dsc 3156 SHA256:f8409d979e96b855185430622f18cdfd50f3afb41d95439dc747abb03e3f1223
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10.orig.tar.bz2' imagemagick_6.7.7.10.orig.tar.bz2 10473522 SHA256:05fb23824b1c90ac35259715c94c65fb5cda6969eb597a7637762d8cf3998fda
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u9.debian.tar.bz2' imagemagick_6.7.7.10-5+deb7u9.debian.tar.bz2 186175 SHA256:acb9e666de889fef098a2a0989129014e7648faafcdb7fc85ba43ba37ad1ed83
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/imagemagick/8:6.7.7.10-5+deb7u9/
-- https://sources.debian.net/src/imagemagick/8:6.7.7.10-5+deb7u9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9-2`
 
@@ -2038,19 +2016,8 @@ Licenses: (parsed from: `/usr/share/doc/libgd2-noxpm/copyright`)
 - `HPND`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.0.36~rc1~dfsg-6.1+deb7u6
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u6.dsc' libgd2_2.0.36~rc1~dfsg-6.1+deb7u6.dsc 2551 SHA256:0895065d0333108dee189117081dde3e1439694ceb185766bc74fa8e5c5c59ad
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg.orig.tar.gz' libgd2_2.0.36~rc1~dfsg.orig.tar.gz 761899 SHA256:919df21310ad4a8b6155df01411138110589cc6c50b1bc414dc62aebb0a7f41a
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u6.debian.tar.gz' libgd2_2.0.36~rc1~dfsg-6.1+deb7u6.debian.tar.gz 31074 SHA256:4c334a7735132dd098246ede795b5386ac95068c7233e6430a03737b510b0444
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libgd2/2.0.36~rc1~dfsg-6.1+deb7u6/
-- https://sources.debian.net/src/libgd2/2.0.36~rc1~dfsg-6.1+deb7u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.10-3.1`
 

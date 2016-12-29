@@ -695,19 +695,8 @@ Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
 - `GPL-3`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gmp=2:6.1.1+dfsg-1
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.1.1+dfsg-1.dsc' gmp_6.1.1+dfsg-1.dsc 2161 SHA256:3f501a907c0357de8e9dd5325471c409ec493ab2007cfe4e761e52fd3646fec9
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.1.1+dfsg.orig.tar.xz' gmp_6.1.1+dfsg.orig.tar.xz 1802176 SHA256:1c34c3c0c89c4f1270f6e3e579e7b7f9190eca6713311f0167bb9fee5b3750ee
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.1.1+dfsg-1.debian.tar.xz' gmp_6.1.1+dfsg-1.debian.tar.xz 20600 SHA256:270a0ee22dc3da83356bf32c22d5657580c26daf931d82fa3b06ea2abdffd4ed
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gmp/2:6.1.1+dfsg-1/
-- https://sources.debian.net/src/gmp/2:6.1.1+dfsg-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnupg2=2.1.16-3`
 
@@ -728,19 +717,8 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.1.16-3
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.16-3.dsc' gnupg2_2.1.16-3.dsc 3145 SHA256:5a383d3d4cdf4b34c10b66cf8e71ec2d3ae43b4ebe2d3f7a576d3293466174a7
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.16.orig.tar.bz2' gnupg2_2.1.16.orig.tar.bz2 5840687 SHA256:49b9a6a6787ad00d4d2d69d8c7ee8905923782583f06078a064a0c80531d8844
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.16-3.debian.tar.bz2' gnupg2_2.1.16-3.debian.tar.bz2 59757 SHA256:bf55fb7e9c9be8c67b2ff6082045ea96d167c4f788de4569d3e26dda07ad3aea
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnupg2/2.1.16-3/
-- https://sources.debian.net/src/gnupg2/2.1.16-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls28=3.5.7-2`
 
@@ -1079,19 +1057,8 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 - `GPL-2.1+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgpg-error=1.25-2
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.25-2.dsc' libgpg-error_1.25-2.dsc 2454 SHA256:ad96187bae5767ae77615782fbd0a2027d78df1ebd983ab5d4e9af6abddb2ce5
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.25.orig.tar.bz2' libgpg-error_1.25.orig.tar.bz2 797159 SHA256:f628f75843433b38b05af248121beb7db5bd54bb2106f384edac39934261320c
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.25-2.debian.tar.xz' libgpg-error_1.25-2.debian.tar.xz 15304 SHA256:ddeb333f47c88ae7bc9114a0a41940100de29f6c92759cd049a08cd6364b9142
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libgpg-error/1.25-2/
-- https://sources.debian.net/src/libgpg-error/1.25-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libidn=1.33-1`
 
@@ -1165,19 +1132,8 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 - `Chromium`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.15.0-1
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.15.0-1.dsc' libpsl_0.15.0-1.dsc 2283 SHA256:5f094fd0e01187d5466a924083e5fd84fb6f8da4b93bb90037ea71b159bbbb94
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.15.0.orig.tar.gz' libpsl_0.15.0.orig.tar.gz 50248 SHA256:abdfa468df012b927995dad056fd425ba357eed5bf00083246fada9720ad4480
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.15.0-1.debian.tar.xz' libpsl_0.15.0-1.debian.tar.xz 8120 SHA256:4bf6283a2c353c18aed9cc5ae2aa36100ef0236f0aa441eca445cc28022ae36d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libpsl/0.15.0-1/
-- https://sources.debian.net/src/libpsl/0.15.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libselinux=2.6-3`
 
@@ -1418,18 +1374,8 @@ Licenses: (parsed from: `/usr/share/doc/netbase/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris netbase=5.3
-'http://deb.debian.org/debian/pool/main/n/netbase/netbase_5.3.dsc' netbase_5.3.dsc 1308 SHA256:fcb9c97fe55277f775fd5a39933ca0189b9a983c6cf1abc8184fc29b8e1d77cb
-'http://deb.debian.org/debian/pool/main/n/netbase/netbase_5.3.tar.xz' netbase_5.3.tar.xz 31292 SHA256:81f6c69795044d62b8ad959cf9daf049d0545fd466c52860ad3f933b1e97b88b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/netbase/5.3/
-- https://sources.debian.net/src/netbase/5.3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `nettle=3.3-1`
 
@@ -1482,19 +1428,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.17.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.17.0-1.dsc' nghttp2_1.17.0-1.dsc 2263 SHA256:a178da06269fdc2a1841842136aa3ce6a56603cc5a2ceca3d5365824cbe2f304
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.17.0.orig.tar.bz2' nghttp2_1.17.0.orig.tar.bz2 1782575 SHA256:7685b6717d205d3a251b7dd5e73a7ca5e643bc5c01f928b82bfeed30c243f28a
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.17.0-1.debian.tar.xz' nghttp2_1.17.0-1.debian.tar.xz 11376 SHA256:06795f429fc651ffe480af389224c6862533aa7a29cfba78933cbedee9c39b2e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.17.0-1/
-- https://sources.debian.net/src/nghttp2/1.17.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-2`
 
@@ -1588,19 +1523,8 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris pam=1.1.8-3.3
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8-3.3.dsc' pam_1.1.8-3.3.dsc 2203 SHA256:3fa2ec8d2fa8ac2dbde75416b1fc52b5ca16db524821c3b8bbca141fd17e5886
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8.orig.tar.gz' pam_1.1.8.orig.tar.gz 1892765 SHA256:4183409a450708a976eca5af561dbf4f0490141a08e86e4a1e649c7c1b094876
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8-3.3.diff.gz' pam_1.1.8-3.3.diff.gz 139020 SHA256:5b6f05d25bb20fc9e5965bd1c3b70611546d1bdb6c1f28d37d5a0eaf0724f040
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/pam/1.1.8-3.3/
-- https://sources.debian.net/src/pam/1.1.8-3.3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `pcre3=2:8.39-2`
 

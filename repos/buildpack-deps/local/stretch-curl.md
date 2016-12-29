@@ -288,19 +288,8 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris curl=7.50.1-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.50.1-1.dsc' curl_7.50.1-1.dsc 2713 SHA256:0dc812ada7fccc111c6497e51977e395e01024bbf94325e7b0c515da9d89a756
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.50.1.orig.tar.gz' curl_7.50.1.orig.tar.gz 8894258 SHA256:3e392cf600822b817be82d9080b377fcbab70538d5a8bf525a1cd66e157b99ea
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.50.1-1.debian.tar.xz' curl_7.50.1-1.debian.tar.xz 26948 SHA256:62cfd79dd0eaae5f2aff1941a60ae0f8ecef089ca9aadfa6e75b59c9f4dda63b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/curl/7.50.1-1/
-- https://sources.debian.net/src/curl/7.50.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-1`
 
@@ -485,18 +474,8 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.15
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.15.dsc' dpkg_1.18.15.dsc 2032 SHA256:63fdc2bd7a0e8d2c4066da228bd88e770e3094e8c761c33a3a700dc9edb12fbe
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.15.tar.xz' dpkg_1.18.15.tar.xz 4494820 SHA256:aee936653b9c39403160c0a331ee7934563fbfa4e1f5adbc14a289c803cda371
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dpkg/1.18.15/
-- https://sources.debian.net/src/dpkg/1.18.15/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `e2fsprogs=1.43.3-1`
 
@@ -870,19 +849,8 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris iproute2=4.8.0-1
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.8.0-1.dsc' iproute2_4.8.0-1.dsc 2365 SHA256:dace7fdffee71c18842a1d4d3ffe281675f770767c5186a557e7e94ed1930126
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.8.0.orig.tar.xz' iproute2_4.8.0.orig.tar.xz 594636 SHA256:a30959c8421bc8ef42719bed41d14e1d7cfdbad80d7d70c5c42ad31f2c2cb389
-'http://deb.debian.org/debian/pool/main/i/iproute2/iproute2_4.8.0-1.debian.tar.xz' iproute2_4.8.0-1.debian.tar.xz 26680 SHA256:c63b890daeab42e1a91fcf863ee353b738c26c3ce659a11e09fa9c1b96cee66e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/iproute2/4.8.0-1/
-- https://sources.debian.net/src/iproute2/4.8.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `keyutils=1.5.9-9`
 
@@ -1089,19 +1057,8 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 - `Chromium`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.15.0-1
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.15.0-1.dsc' libpsl_0.15.0-1.dsc 2283 SHA256:5f094fd0e01187d5466a924083e5fd84fb6f8da4b93bb90037ea71b159bbbb94
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.15.0.orig.tar.gz' libpsl_0.15.0.orig.tar.gz 50248 SHA256:abdfa468df012b927995dad056fd425ba357eed5bf00083246fada9720ad4480
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.15.0-1.debian.tar.xz' libpsl_0.15.0-1.debian.tar.xz 8120 SHA256:4bf6283a2c353c18aed9cc5ae2aa36100ef0236f0aa441eca445cc28022ae36d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libpsl/0.15.0-1/
-- https://sources.debian.net/src/libpsl/0.15.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libselinux=2.6-3`
 
@@ -1714,19 +1671,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=232-7
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-7.dsc' systemd_232-7.dsc 4621 SHA256:98af83c6dd08a3a2749a05a0d0dd24302107ce84c1d5305f79fca01b54353222
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-7.debian.tar.xz' systemd_232-7.debian.tar.xz 128228 SHA256:fd075483f9568228c12c343593170b89c2ba5a021bbe1482abc9371ecadb55b5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/systemd/232-7/
-- https://sources.debian.net/src/systemd/232-7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8`
 
