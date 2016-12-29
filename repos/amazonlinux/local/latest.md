@@ -1,9 +1,9 @@
-# `amazonlinux:2016.09.0.20161118`
+# `amazonlinux:2016.09.1.20161221`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5b52b314511a611975c2c65e695d920acdf8ae8848fe0ef00b7d018d1f118b64`
-- Created: `2016-11-22T21:08:17.427795614Z`
+- Image ID: `sha256:8ae6f52035b539d444290d9c3219c9593e0c7a9f6da7100dba5aba5bf82fc97d`
+- Created: `2016-12-27T17:39:16.177684646Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
