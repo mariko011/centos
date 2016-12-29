@@ -1008,19 +1008,8 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris git=1:2.11.0-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.11.0-1.dsc' git_2.11.0-1.dsc 2871 SHA256:f16060389482493c03812f102404b5bc113e111fef712417c07be6cbb2e7a83e
-'http://deb.debian.org/debian/pool/main/g/git/git_2.11.0.orig.tar.xz' git_2.11.0.orig.tar.xz 4197984 SHA256:7e7e8d69d494892373b87007674be5820a4bc1ef596a0117d03ea3169119fd0b
-'http://deb.debian.org/debian/pool/main/g/git/git_2.11.0-1.debian.tar.xz' git_2.11.0-1.debian.tar.xz 518992 SHA256:5dea65e6b5be13401368a2411bb0b76c630eca888eb945933a4043f8a3adc942
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/git/1:2.11.0-1/
-- https://sources.debian.net/src/git/1:2.11.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.24-8`
 
