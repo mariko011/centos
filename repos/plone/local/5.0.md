@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5c63409eab7b86d3aec6bdc7075d6a4e93746da0a75e741a649bd260f4f706ce`
-- Created: `2016-12-19T17:13:44.119810898Z`
+- Image ID: `sha256:d8a32bd82d269d42b5e926a2bd22c097badf2654cfb47803e4e644c7075ff9b9`
+- Created: `2016-12-22T21:42:48.263885358Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["start"]`
@@ -11,7 +11,7 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
-  - `PYTHON_VERSION=2.7.12`
+  - `PYTHON_VERSION=2.7.13`
   - `PYTHON_PIP_VERSION=9.0.1`
   - `PLONE_MAJOR=5.0`
   - `PLONE_VERSION=5.0.6`
