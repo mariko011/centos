@@ -347,19 +347,8 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy17
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy17.dsc' curl_7.26.0-1+wheezy17.dsc 2693 SHA256:bb86b101983e60c2a64e389a43e8f82b359a36fe111b0da22457cca879f64030
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy17.debian.tar.gz' curl_7.26.0-1+wheezy17.debian.tar.gz 63572 SHA256:48f3a78410b5aba7a7a2b43bdef2a5bc3b674ba01ea96e98d792d7dea43de61f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/curl/7.26.0-1+wheezy17/
-- https://sources.debian.net/src/curl/7.26.0-1+wheezy17/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
 
@@ -1561,19 +1550,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.26-1+debu7u1
-'http://security.debian.org/pool/updates/main/n/nss/nss_3.26-1+debu7u1.dsc' nss_3.26-1+debu7u1.dsc 2214 SHA256:4daaaa556f7f464b24d06a57a65b87b41d5af7ae813d547ad250e80d12810b3e
-'http://security.debian.org/pool/updates/main/n/nss/nss_3.26.orig.tar.gz' nss_3.26.orig.tar.gz 7386943 SHA256:91783a570ab953693eb977ce47c501f04c104cec287fa011c91bcc8970d1c564
-'http://security.debian.org/pool/updates/main/n/nss/nss_3.26-1+debu7u1.debian.tar.gz' nss_3.26-1+debu7u1.debian.tar.gz 35040 SHA256:20225d4b8d7a26dc3c2a4e2683279fc621963f8cc56951a53a307b3d53ca7f23
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nss/2:3.26-1+debu7u1/
-- https://sources.debian.net/src/nss/2:3.26-1+debu7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openjdk-6=6b38-1.13.10-1~deb7u1`
 
