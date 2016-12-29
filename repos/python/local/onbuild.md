@@ -1,16 +1,16 @@
-# `python:3.5.2-onbuild`
+# `python:3.6.0-onbuild`
 
 ## Docker Metadata
 
-- Image ID: `sha256:445aea2c16b9cf97130a18fd346a2919265a6a41a45dea0712fa19d4e0a3a1e0`
-- Created: `2016-12-16T03:12:59.184083672Z`
+- Image ID: `sha256:80293451c3b02bc530a34fb33494f54a32bf4a9e8555be5ca7d628d23bee03f5`
+- Created: `2016-12-28T23:13:47.90380306Z`
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D`
-  - `PYTHON_VERSION=3.5.2`
+  - `GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D`
+  - `PYTHON_VERSION=3.6.0`
   - `PYTHON_PIP_VERSION=9.0.1`
 
 ## `dpkg` (`.deb`-based packages)
