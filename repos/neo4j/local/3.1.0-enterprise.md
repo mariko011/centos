@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:27f7b98e12141e333211b0360ebe57ff119ed7566261ed0bfef728f5c3878c2c`
-- Created: `2016-12-09T17:58:08.043882766Z`
+- Image ID: `sha256:beef299c57b6091f5d38c3641b64300733ec8343ea7fb63d674099dd2d7471ed`
+- Created: `2016-12-27T22:22:21.319875844Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["neo4j"]`
