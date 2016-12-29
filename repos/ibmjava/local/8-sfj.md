@@ -2,13 +2,13 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dd33ed30b8616d400fcd07fa07b76d77a1d4a7d3da2016ab8007e1d586d31fde`
-- Created: `2016-12-15T18:37:45.247948543Z`
+- Image ID: `sha256:72095214c45851c75df98841093d69c5db2a469cecec98d921e70909ff714abc`
+- Created: `2016-12-27T17:54:23.395995242Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr3fp21`
+  - `JAVA_VERSION=1.8.0_sr3fp22`
   - `JAVA_HOME=/opt/ibm/java/jre`
 
 ## `dpkg` (`.deb`-based packages)
