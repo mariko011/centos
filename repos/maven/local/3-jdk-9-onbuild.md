@@ -1011,19 +1011,8 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris git=1:2.11.0-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.11.0-1.dsc' git_2.11.0-1.dsc 2871 SHA256:f16060389482493c03812f102404b5bc113e111fef712417c07be6cbb2e7a83e
-'http://deb.debian.org/debian/pool/main/g/git/git_2.11.0.orig.tar.xz' git_2.11.0.orig.tar.xz 4197984 SHA256:7e7e8d69d494892373b87007674be5820a4bc1ef596a0117d03ea3169119fd0b
-'http://deb.debian.org/debian/pool/main/g/git/git_2.11.0-1.debian.tar.xz' git_2.11.0-1.debian.tar.xz 518992 SHA256:5dea65e6b5be13401368a2411bb0b76c630eca888eb945933a4043f8a3adc942
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/git/1:2.11.0-1/
-- https://sources.debian.net/src/git/1:2.11.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.24-8`
 
@@ -2369,19 +2358,8 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.3p1-5
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.3p1-5.dsc' openssh_7.3p1-5.dsc 2944 SHA256:13dcc4cd81e9a8458e478872acfa71718542af81202b714eb64476af56b38772
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.3p1.orig.tar.gz' openssh_7.3p1.orig.tar.gz 1522617 SHA256:3ffb989a6dcaa69594c3b550d4855a5a2e1718ccdde7f5e36387b424220fbecc
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.3p1-5.debian.tar.xz' openssh_7.3p1-5.debian.tar.xz 152888 SHA256:cee4d1b2ced45df8c942128f641ed9aaa3500224666af66b62d7304cbe7a5441
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssh/1:7.3p1-5/
-- https://sources.debian.net/src/openssh/1:7.3p1-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssl1.0=1.0.2j-4`
 
