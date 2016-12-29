@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:62a10acdbcef6534d1662bdacba40a1078cfbbe6b278c013d899d72ae90555c9`
-- Created: `2016-12-08T18:38:59.831969975Z`
+- Image ID: `sha256:98acab47e92d8c07b67aae1faf0810e6597912bf17dff4a9880e868ef708f61b`
+- Created: `2016-12-20T00:05:01.458442851Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["composer"]`
@@ -11,9 +11,9 @@
   - `PATH=/composer/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
-  - `CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
-  - `CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
-  - `LDFLAGS=-Wl,-O1 -Wl,--hash-style=both`
+  - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
+  - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
+  - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0`
   - `PHP_VERSION=7.1.0`
   - `PHP_URL=https://secure.php.net/get/php-7.1.0.tar.xz/from/this/mirror`
