@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:64627babfb540f77d966d850dd664cf4cfa578bee234322551fa6fdfdf4cb7c4`
-- Created: `2016-12-19T16:41:34.936229989Z`
+- Image ID: `sha256:5e69f3089637a815c7828c2fbd4a9e774796a17b70c85bc14788e3f1feba99c4`
+- Created: `2016-12-29T19:20:51.850748141Z`
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D`
-  - `PYTHON_VERSION=3.5.2`
+  - `GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D`
+  - `PYTHON_VERSION=3.6.0`
   - `PYTHON_PIP_VERSION=9.0.1`
 
 ## `dpkg` (`.deb`-based packages)
