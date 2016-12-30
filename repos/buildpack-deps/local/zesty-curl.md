@@ -1137,14 +1137,8 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.23.2-5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.2-5.dsc' p11-kit_0.23.2-5.dsc 2173 SHA256:0a7b69704d9e7dd61d9d6dfbb07f00e6e3c2fe3c50852b7941c5be59ce8116ea
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.2.orig.tar.gz' p11-kit_0.23.2.orig.tar.gz 1022733 SHA256:ba726ea8303c97467a33fca50ee79b7b35212964be808ecf9b145e9042fdfaf0
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.2-5.debian.tar.xz' p11-kit_0.23.2-5.debian.tar.xz 15088 SHA256:69ffb937aeec1ccb1c4788473ac8bd1d9f070a65d04db47a18cd82f45f61d7f0
-```
 
 ### `dpkg` source package: `pam=1.1.8-3.2ubuntu2`
 
