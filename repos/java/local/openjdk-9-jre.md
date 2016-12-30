@@ -692,20 +692,8 @@ Licenses: (parsed from: `/usr/share/doc/libelf1/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.166-2.2
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.166-2.2.dsc' elfutils_0.166-2.2.dsc 2516 SHA256:27c83c2cad0f4fc130195add32a26ef4f2162e133ae797e0017d5a0d1598582a
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.166.orig.tar.bz2' elfutils_0.166.orig.tar.bz2 6496225 SHA256:3c056914c8a438b210be0d790463b960fc79d234c3f05ce707cbff80e94cba30
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.166.orig.tar.bz2.asc' elfutils_0.166.orig.tar.bz2.asc 479 SHA256:81a30e6ed226960d76d7bdbf5b1a65751ce48cf39a209fa5b820932b64e9d18b
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.166-2.2.debian.tar.xz' elfutils_0.166-2.2.debian.tar.xz 40804 SHA256:46898297b94ef02dad180938bc8bca1070a0f0ba1529d92f03bbd0bab55a9286
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/elfutils/0.166-2.2/
-- https://sources.debian.net/src/elfutils/0.166-2.2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `expat=2.2.0-1`
 
@@ -1687,19 +1675,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxi=2:1.7.8-1
-'http://deb.debian.org/debian/pool/main/libx/libxi/libxi_1.7.8-1.dsc' libxi_1.7.8-1.dsc 2202 SHA256:7f6f2a9453142d84f86dc967a1bb766f23c0d981985ee9e9eca1f118662de3a1
-'http://deb.debian.org/debian/pool/main/libx/libxi/libxi_1.7.8.orig.tar.gz' libxi_1.7.8.orig.tar.gz 604295 SHA256:7466d0c626a9cc2e53fd78c811815e82924cd7582236a82401df3d282a9c2889
-'http://deb.debian.org/debian/pool/main/libx/libxi/libxi_1.7.8-1.diff.gz' libxi_1.7.8-1.diff.gz 15620 SHA256:b2ce3efbcdd63775f91015a2eef6fce1fb0db565062b8bdc6869aa3e3261d4d5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libxi/2:1.7.8-1/
-- https://sources.debian.net/src/libxi/2:1.7.8-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxrender=1:0.9.10-1`
 
@@ -2058,19 +2035,8 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.23.2-5
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.2-5.dsc' p11-kit_0.23.2-5.dsc 2173 SHA256:0a7b69704d9e7dd61d9d6dfbb07f00e6e3c2fe3c50852b7941c5be59ce8116ea
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.2.orig.tar.gz' p11-kit_0.23.2.orig.tar.gz 1022733 SHA256:ba726ea8303c97467a33fca50ee79b7b35212964be808ecf9b145e9042fdfaf0
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.2-5.debian.tar.xz' p11-kit_0.23.2-5.debian.tar.xz 15088 SHA256:69ffb937aeec1ccb1c4788473ac8bd1d9f070a65d04db47a18cd82f45f61d7f0
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/p11-kit/0.23.2-5/
-- https://sources.debian.net/src/p11-kit/0.23.2-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `pam=1.1.8-3.3`
 
