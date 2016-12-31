@@ -642,19 +642,8 @@ Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
 - `GPL-3`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gmp=2:6.1.1+dfsg-1
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.1.1+dfsg-1.dsc' gmp_6.1.1+dfsg-1.dsc 2161 SHA256:3f501a907c0357de8e9dd5325471c409ec493ab2007cfe4e761e52fd3646fec9
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.1.1+dfsg.orig.tar.xz' gmp_6.1.1+dfsg.orig.tar.xz 1802176 SHA256:1c34c3c0c89c4f1270f6e3e579e7b7f9190eca6713311f0167bb9fee5b3750ee
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.1.1+dfsg-1.debian.tar.xz' gmp_6.1.1+dfsg-1.debian.tar.xz 20600 SHA256:270a0ee22dc3da83356bf32c22d5657580c26daf931d82fa3b06ea2abdffd4ed
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gmp/2:6.1.1+dfsg-1/
-- https://sources.debian.net/src/gmp/2:6.1.1+dfsg-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnupg2=2.1.16-2`
 
@@ -1469,19 +1458,8 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris pam=1.1.8-3.3
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8-3.3.dsc' pam_1.1.8-3.3.dsc 2203 SHA256:3fa2ec8d2fa8ac2dbde75416b1fc52b5ca16db524821c3b8bbca141fd17e5886
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8.orig.tar.gz' pam_1.1.8.orig.tar.gz 1892765 SHA256:4183409a450708a976eca5af561dbf4f0490141a08e86e4a1e649c7c1b094876
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.1.8-3.3.diff.gz' pam_1.1.8-3.3.diff.gz 139020 SHA256:5b6f05d25bb20fc9e5965bd1c3b70611546d1bdb6c1f28d37d5a0eaf0724f040
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/pam/1.1.8-3.3/
-- https://sources.debian.net/src/pam/1.1.8-3.3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `pcre3=2:8.39-2`
 
