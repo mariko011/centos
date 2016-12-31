@@ -1076,19 +1076,8 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libsemanage=2.6-1
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.6-1.dsc' libsemanage_2.6-1.dsc 2306 SHA256:3dce2a75cbb8be47f6a6d328edcb740eb49a799caa295f440339acfb591bb826
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.6.orig.tar.gz' libsemanage_2.6.orig.tar.gz 155897 SHA256:4f81541047290b751f2ffb926fcd381c186f22db18d9fe671b0b4a6a54e8cfce
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_2.6-1.debian.tar.xz' libsemanage_2.6-1.debian.tar.xz 16412 SHA256:916c3d75a3a1b0db2988b0756e2241bdfcc57b63229841052493074b2e5d34c1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libsemanage/2.6-1/
-- https://sources.debian.net/src/libsemanage/2.6-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libsepol=2.6-2`
 
