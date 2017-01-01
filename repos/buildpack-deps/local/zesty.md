@@ -1017,14 +1017,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp-6/copyright`, `/usr/share/doc/g++-6/
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.2.1-7ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-6/gcc-6_6.2.1-7ubuntu1.dsc' gcc-6_6.2.1-7ubuntu1.dsc 31021 SHA256:db7b052ef9574810b5031d0149a49ae2a1c03f45eb5e01dfe130ca480cc6f7ea
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-6/gcc-6_6.2.1.orig.tar.gz' gcc-6_6.2.1.orig.tar.gz 76973880 SHA256:d8f21f8f8f8892c7a00f8c1e8d166035455cfa1348078975bc4167aefafd22fd
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-6/gcc-6_6.2.1-7ubuntu1.diff.gz' gcc-6_6.2.1-7ubuntu1.diff.gz 5270449 SHA256:044aef99b4fa04fb78370a2c74ada688ab30aa048186e76e1a31ce615bd03d0e
-```
 
 ### `dpkg` source package: `gcc-defaults=1.164ubuntu1`
 
@@ -2231,14 +2225,8 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `expat`
 - `libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.26-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.26-2ubuntu1.dsc' libpng1.6_1.6.26-2ubuntu1.dsc 2234 SHA256:bbd90485c38bed07d7e361409a07e72afc0f6d4a1833ec8efac3aa08f229b5fc
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.26.orig.tar.xz' libpng1.6_1.6.26.orig.tar.xz 983576 SHA256:266743a326986c3dbcee9d89b640595f6b16a293fd02b37d8c91348d317b73f9
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.26-2ubuntu1.debian.tar.xz' libpng1.6_1.6.26-2ubuntu1.debian.tar.xz 22144 SHA256:9603d27c6f6735c92796ee125b2ef4f6304da6a861ec9e1cbdfa2e8c8b1d4d92
-```
 
 ### `dpkg` source package: `libpthread-stubs=0.3-4`
 
