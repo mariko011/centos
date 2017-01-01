@@ -2912,19 +2912,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=3.2.82-1
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.82-1.dsc' linux_3.2.82-1.dsc 103011 SHA256:3920aebbb74f2dffeda9ad5df54fdf91eebad9137c918117e8c344b7fd1bc5f3
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.82.orig.tar.xz' linux_3.2.82.orig.tar.xz 65978348 SHA256:4c0c8298423f3749eaf384a34a1a6fc82379eb735a37c1b5c8c8f61f2300e884
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.82-1.debian.tar.xz' linux_3.2.82-1.debian.tar.xz 3729316 SHA256:7555c1b59dd3aef154ff01a4746cb548c427c59f797468a5f84a8144f55777f1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/3.2.82-1/
-- https://sources.debian.net/src/linux/3.2.82-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian8+deb7u1`
 
