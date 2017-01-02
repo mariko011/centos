@@ -3152,19 +3152,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxpm=1:3.5.11-1
-'http://deb.debian.org/debian/pool/main/libx/libxpm/libxpm_3.5.11-1.dsc' libxpm_3.5.11-1.dsc 2110 SHA256:0a11be8c795d991b916bfcbc7b187d1e345048130392946a6995dfc1fd258dea
-'http://deb.debian.org/debian/pool/main/libx/libxpm/libxpm_3.5.11.orig.tar.gz' libxpm_3.5.11.orig.tar.gz 527020 SHA256:53ddf924441b7ed2de994d4934358c13d9abf4828b1b16e1255ade5032b31df7
-'http://deb.debian.org/debian/pool/main/libx/libxpm/libxpm_3.5.11-1.diff.gz' libxpm_3.5.11-1.diff.gz 15272 SHA256:651f287bb39fde1192aec1ecdfc8963119cd8ee6a2b6c4f044a4ffe59df5d371
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libxpm/1:3.5.11-1/
-- https://sources.debian.net/src/libxpm/1:3.5.11-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxrandr=2:1.5.0-1`
 
