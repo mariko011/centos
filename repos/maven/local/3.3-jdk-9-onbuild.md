@@ -538,19 +538,8 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.27~101-g0780600+dfsg-1
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg-1.dsc' cyrus-sasl2_2.1.27~101-g0780600+dfsg-1.dsc 3274 SHA256:ce2758908561b7de6fe619df63afd6de49a78d3e1f384a2ad8a7b721719eaeb2
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg.orig.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg.orig.tar.xz 1143888 SHA256:69f34971f768e7ee6a6b647ec2d16a5a72a854ecd4602b019d5f79ba61063fdc
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg-1.debian.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg-1.debian.tar.xz 94076 SHA256:3743f823c34fe14c330e82ba65385147cd49f7ffded69e923a7aa93558e938c4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cyrus-sasl2/2.1.27~101-g0780600+dfsg-1/
-- https://sources.debian.net/src/cyrus-sasl2/2.1.27~101-g0780600+dfsg-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `dash=0.5.8-2.3`
 
@@ -1649,19 +1638,8 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 - `expat`
 - `libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.26-6
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.26-6.dsc' libpng1.6_1.6.26-6.dsc 2206 SHA256:f2c864086a3aeaabaf18096d88594c0052d8742422b86f104dfce6e529985cf0
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.26.orig.tar.xz' libpng1.6_1.6.26.orig.tar.xz 983576 SHA256:266743a326986c3dbcee9d89b640595f6b16a293fd02b37d8c91348d317b73f9
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.26-6.debian.tar.xz' libpng1.6_1.6.26-6.debian.tar.xz 22544 SHA256:a4a454dd3230be978babd9d4eda1eb2300b16f82cfeade56d967cc04f1d3df9d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libpng1.6/1.6.26-6/
-- https://sources.debian.net/src/libpng1.6/1.6.26-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpsl=0.15.0-1`
 
@@ -2438,19 +2416,8 @@ Licenses: (parsed from: `/usr/share/doc/libpcsclite1/copyright`)
 - `GPL-3+`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris pcsc-lite=1.8.19-1
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.19-1.dsc' pcsc-lite_1.8.19-1.dsc 2196 SHA256:897f700cdab3b224bcf43e57c0f83d489bdf226fc7e6fcf0bff978af053d444b
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.19.orig.tar.bz2' pcsc-lite_1.8.19.orig.tar.bz2 744283 SHA256:b65e25ec6dd1328983b424ce1a649e2993b1c4c59fc87252689b5fa7037c4340
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.19-1.debian.tar.xz' pcsc-lite_1.8.19-1.debian.tar.xz 14624 SHA256:e188b2f0df96bd786b43ac1ce734bb06ee59be3c8a88a688ee4818170000a5b1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/pcsc-lite/1.8.19-1/
-- https://sources.debian.net/src/pcsc-lite/1.8.19-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `perl=5.24.1~rc4-1`
 
