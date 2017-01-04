@@ -2442,14 +2442,8 @@ Licenses: (parsed from: `/usr/share/doc/libwebp-dev/copyright`, `/usr/share/doc/
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libwebp=0.5.1-4
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_0.5.1-4.dsc' libwebp_0.5.1-4.dsc 2068 SHA256:d2d08264b682c8b9325b20879e111f51e3ea8d6aaee22b352d154b2bb0902d78
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_0.5.1.orig.tar.gz' libwebp_0.5.1.orig.tar.gz 1212254 SHA256:6ad66c6fcd60a023de20b6856b03da8c7d347269d76b1fd9c3287e8b5e8813df
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwebp/libwebp_0.5.1-4.debian.tar.xz' libwebp_0.5.1-4.debian.tar.xz 13056 SHA256:e1e0f3b865588ea134f81884f4f0d3d327c018d078db00c7e3da221f8ed3210d
-```
 
 ### `dpkg` source package: `libwmf=0.2.8.4-10.5ubuntu2`
 
@@ -3244,14 +3238,8 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.3p1-3build1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.3p1-3build1.dsc' openssh_7.3p1-3build1.dsc 2475 SHA256:74f591acc49313acd905cc37769ce7ee79eb27219efff25c56ec89aec2241acf
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.3p1.orig.tar.gz' openssh_7.3p1.orig.tar.gz 1522617 SHA256:3ffb989a6dcaa69594c3b550d4855a5a2e1718ccdde7f5e36387b424220fbecc
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.3p1-3build1.debian.tar.xz' openssh_7.3p1-3build1.debian.tar.xz 151864 SHA256:12d29544f6760c23454ab8413e946436b31708e1f765f67bbc925591dedc4df7
-```
 
 ### `dpkg` source package: `openssl=1.0.2g-1ubuntu10`
 

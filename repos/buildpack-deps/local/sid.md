@@ -3733,19 +3733,8 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mysql-5.7=5.7.16-1
-'http://deb.debian.org/debian/pool/main/m/mysql-5.7/mysql-5.7_5.7.16-1.dsc' mysql-5.7_5.7.16-1.dsc 3213 SHA256:23bd4abca9de7938f8dfa206113503b258ca18465a9b791b23d3e05a34196634
-'http://deb.debian.org/debian/pool/main/m/mysql-5.7/mysql-5.7_5.7.16.orig.tar.gz' mysql-5.7_5.7.16.orig.tar.gz 60556473 SHA256:43fc282f807353ff77ead21efb5f85f7f214c2a5362762a8cc370ae1c075095a
-'http://deb.debian.org/debian/pool/main/m/mysql-5.7/mysql-5.7_5.7.16-1.debian.tar.xz' mysql-5.7_5.7.16-1.debian.tar.xz 3382888 SHA256:fc6bd67619d4479c0581ffa83949d7b1e5e4dbd640f49e7dc874c3623167051d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mysql-5.7/5.7.16-1/
-- https://sources.debian.net/src/mysql-5.7/5.7.16-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mysql-defaults=1.0.1`
 

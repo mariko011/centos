@@ -1386,14 +1386,8 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.3p1-3build1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.3p1-3build1.dsc' openssh_7.3p1-3build1.dsc 2475 SHA256:74f591acc49313acd905cc37769ce7ee79eb27219efff25c56ec89aec2241acf
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.3p1.orig.tar.gz' openssh_7.3p1.orig.tar.gz 1522617 SHA256:3ffb989a6dcaa69594c3b550d4855a5a2e1718ccdde7f5e36387b424220fbecc
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.3p1-3build1.debian.tar.xz' openssh_7.3p1-3build1.debian.tar.xz 151864 SHA256:12d29544f6760c23454ab8413e946436b31708e1f765f67bbc925591dedc4df7
-```
 
 ### `dpkg` source package: `openssl=1.0.2g-1ubuntu10`
 
