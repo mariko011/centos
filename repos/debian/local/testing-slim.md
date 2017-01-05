@@ -927,18 +927,8 @@ Licenses: (parsed from: `/usr/share/doc/netbase/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris netbase=5.3
-'http://deb.debian.org/debian/pool/main/n/netbase/netbase_5.3.dsc' netbase_5.3.dsc 1308 SHA256:fcb9c97fe55277f775fd5a39933ca0189b9a983c6cf1abc8184fc29b8e1d77cb
-'http://deb.debian.org/debian/pool/main/n/netbase/netbase_5.3.tar.xz' netbase_5.3.tar.xz 31292 SHA256:81f6c69795044d62b8ad959cf9daf049d0545fd466c52860ad3f933b1e97b88b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/netbase/5.3/
-- https://sources.debian.net/src/netbase/5.3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `pam=1.1.8-3.3`
 
