@@ -2475,14 +2475,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.23-0ubuntu0.14.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.23-0ubuntu0.14.04.1.dsc' nss_3.23-0ubuntu0.14.04.1.dsc 2344 SHA256:f2d5d7c8c8c062381e66d4dbaaf621b85240b3907f805b225bd97468affd823d
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.23.orig.tar.gz' nss_3.23.orig.tar.gz 7467001 SHA256:94b383e31c9671e9dfcca81084a8a813817e8f05a57f54533509b318d26e11cf
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.23-0ubuntu0.14.04.1.debian.tar.gz' nss_3.23-0ubuntu0.14.04.1.debian.tar.gz 28558 SHA256:1fc6f6955c71e0da450288488d5e7a955a15267283697f24efb000806c45c6f2
-```
 
 ### `dpkg` source package: `ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.10`
 
