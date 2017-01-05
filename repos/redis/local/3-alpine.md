@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7ac9ed2e6b84c0a2dc440070ee535dcf0004f795972f018fa8edf7f31c968a6c`
-- Created: `2016-12-27T21:36:31.583948906Z`
+- Image ID: `sha256:53df695896acdecb39a6914e25f7680011be26504dcb0675ac6e98c49379d171`
+- Created: `2017-01-04T21:34:23.851790232Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["redis-server"]`
