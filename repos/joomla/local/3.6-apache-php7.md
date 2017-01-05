@@ -1,9 +1,9 @@
-# `joomla:3.6.4-apache-php7`
+# `joomla:3.6.5-apache-php7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2b6abba05bfd6f7416e7485274a184f1d8fe6388c1b95226e6e2adae3fb3cf62`
-- Created: `2016-12-19T23:11:54.199755777Z`
+- Image ID: `sha256:8932660a6420a767ca8af9feb8a19e822e4000493dc1d20a352db2e161171ed7`
+- Created: `2017-01-04T23:35:32.927712723Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["apache2-foreground"]`
@@ -24,8 +24,8 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.14.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=0f1dff6392a1cc2ed126b9695f580a2ed77eb09d2c23b41cabfb41e6f27a8c89`
   - `PHP_MD5=a51f1d4f03f4e4c745856e9f76fca476`
-  - `JOOMLA_VERSION=3.6.4`
-  - `JOOMLA_SHA1=81ecad99727fd336f72756439666808eaabcc716`
+  - `JOOMLA_VERSION=3.6.5`
+  - `JOOMLA_SHA1=3143994bb5520c249961cbb5bc297c149399f4b7`
 
 ## `dpkg` (`.deb`-based packages)
 
