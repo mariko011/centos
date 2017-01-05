@@ -1,12 +1,12 @@
-# `node:6.9.2-alpine`
+# `node:6.9.3-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e1f21a19c1b5e11a778d0abfb53ad28d1c69dad4f0559b2ca3a264d17874d28b`
-- Created: `2016-12-27T20:16:46.885057855Z`
+- Image ID: `sha256:9457aaca5377f3c53c2fae17f4202c4d761d890a049ead38bcd549ca6af4ec68`
+- Created: `2017-01-05T00:23:57.975675394Z`
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=6.9.2`
+  - `NODE_VERSION=6.9.3`
