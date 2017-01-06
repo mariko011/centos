@@ -1,7 +1,7 @@
 ## `node:6-wheezy`
 
 ```console
-$ docker pull node@sha256:45923ff033eb2b174110504f29c2b8abd601f70edcbc0faf2054f1db0bc8b6b0
+$ docker pull node@sha256:2381ea2082317b09c33b70191d1af90afdeca66d6828c27487ec2fed1b3f015a
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull node@sha256:45923ff033eb2b174110504f29c2b8abd601f70edcbc0faf2054f1
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.0 MB (190967010 bytes)**  
+-	Total Size: **191.0 MB (190966943 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eeba4f4b737e9b37531ab1288d92469a40b938a968502ccc9b95dba2458bbd3d`
+-	Image ID: `sha256:0c925577eef9996113c388b0bebbcd42d4898477e3ff2b2493250d3e5f16670d`
 -	Default Command: `["node"]`
 
 ```dockerfile
@@ -33,11 +33,11 @@ RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bas
 RUN set -ex   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";   done
 # Fri, 16 Dec 2016 02:32:14 GMT
 ENV NPM_CONFIG_LOGLEVEL=info
-# Thu, 05 Jan 2017 00:24:28 GMT
-ENV NODE_VERSION=6.9.3
-# Thu, 05 Jan 2017 00:24:34 GMT
+# Fri, 06 Jan 2017 21:10:20 GMT
+ENV NODE_VERSION=6.9.4
+# Fri, 06 Jan 2017 21:10:27 GMT
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz"   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1   && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs
-# Thu, 05 Jan 2017 00:24:46 GMT
+# Fri, 06 Jan 2017 21:10:27 GMT
 CMD ["node"]
 ```
 
@@ -66,7 +66,7 @@ CMD ["node"]
 		Last Modified: Wed, 21 Dec 2016 18:28:01 GMT  
 		Size: 97.2 KB (97215 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f6c20a2988548a13968f85ff63f0c9653f6cccf5dbe61ff3d235e007e520e14`  
-		Last Modified: Thu, 05 Jan 2017 00:51:02 GMT  
-		Size: 13.9 MB (13933324 bytes)  
+	-	`sha256:006e6086756059b9595bffa1345af3f000f1cd5282064237fa0f87cbb08d1086`  
+		Last Modified: Fri, 06 Jan 2017 21:27:03 GMT  
+		Size: 13.9 MB (13933257 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
