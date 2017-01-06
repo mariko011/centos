@@ -2,14 +2,14 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cecc01914e8b6b1896d77f4ab20067ede98672b6320967a34498a31043e3c1e1`
-- Created: `2016-12-28T20:35:18.424312424Z`
+- Image ID: `sha256:381a5be0c0227b153ab44aefaf1a4ac04c46581fc2544dd02d84213fd1f37386`
+- Created: `2017-01-05T18:44:59.874468569Z`
 - Arch: `linux`/`amd64`
 - Command: `["tini","--","node","app"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=6.9.2`
+  - `NODE_VERSION=6.9.3`
   - `TINI_VERSION=0.9.0`
   - `ME_CONFIG_EDITORTHEME=default`
   - `ME_CONFIG_MONGODB_SERVER=mongo`
