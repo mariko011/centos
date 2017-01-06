@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f7ebc07819d3a996c698844da05b751be0202d8d3dd10fbc9146c9e54cb176d5`
-- Created: `2017-01-04T21:04:42.293556087Z`
+- Image ID: `sha256:583c89dcc1d143c476357598db0eb27b43d2d6cbbf83ecb62e68215af7152a25`
+- Created: `2016-12-27T18:37:22.771570658Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["sh"]`
