@@ -949,14 +949,8 @@ Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sed=4.2.2-8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.2.2-8.dsc' sed_4.2.2-8.dsc 1983 SHA256:1ed436e5f31808e411ffe628a8c64d5743794edd4e0dedb640f53efc08739203
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.2.2.orig.tar.bz2' sed_4.2.2.orig.tar.bz2 1059414 SHA256:f048d1838da284c8bc9753e4506b85a1e0cc1ea8999d36f6995bcb9460cddbd7
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.2.2-8.debian.tar.xz' sed_4.2.2-8.debian.tar.xz 85104 SHA256:16c35745df5187642865d3bccf5d3ee151fe1d36481da4a72f2fb8c3e54e50dd
-```
 
 ### `dpkg` source package: `sensible-utils=0.0.9`
 
