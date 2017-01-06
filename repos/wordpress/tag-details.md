@@ -50,6 +50,22 @@
 -	[`wordpress:4.7-php7.0-fpm-alpine`](#wordpress47-php70-fpm-alpine)
 -	[`wordpress:4-php7.0-fpm-alpine`](#wordpress4-php70-fpm-alpine)
 -	[`wordpress:php7.0-fpm-alpine`](#wordpressphp70-fpm-alpine)
+-	[`wordpress:4.7.0-php7.1-apache`](#wordpress470-php71-apache)
+-	[`wordpress:4.7-php7.1-apache`](#wordpress47-php71-apache)
+-	[`wordpress:4-php7.1-apache`](#wordpress4-php71-apache)
+-	[`wordpress:php7.1-apache`](#wordpressphp71-apache)
+-	[`wordpress:4.7.0-php7.1`](#wordpress470-php71)
+-	[`wordpress:4.7-php7.1`](#wordpress47-php71)
+-	[`wordpress:4-php7.1`](#wordpress4-php71)
+-	[`wordpress:php7.1`](#wordpressphp71)
+-	[`wordpress:4.7.0-php7.1-fpm`](#wordpress470-php71-fpm)
+-	[`wordpress:4.7-php7.1-fpm`](#wordpress47-php71-fpm)
+-	[`wordpress:4-php7.1-fpm`](#wordpress4-php71-fpm)
+-	[`wordpress:php7.1-fpm`](#wordpressphp71-fpm)
+-	[`wordpress:4.7.0-php7.1-fpm-alpine`](#wordpress470-php71-fpm-alpine)
+-	[`wordpress:4.7-php7.1-fpm-alpine`](#wordpress47-php71-fpm-alpine)
+-	[`wordpress:4-php7.1-fpm-alpine`](#wordpress4-php71-fpm-alpine)
+-	[`wordpress:php7.1-fpm-alpine`](#wordpressphp71-fpm-alpine)
 
 ## `wordpress:4.7.0-apache`
 
@@ -7802,3 +7818,67 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 27 Dec 2016 22:37:57 GMT  
 		Size: 2.9 KB (2932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `wordpress:4.7.0-php7.1-apache`
+
+**does not exist** (yet?)
+
+## `wordpress:4.7-php7.1-apache`
+
+**does not exist** (yet?)
+
+## `wordpress:4-php7.1-apache`
+
+**does not exist** (yet?)
+
+## `wordpress:php7.1-apache`
+
+**does not exist** (yet?)
+
+## `wordpress:4.7.0-php7.1`
+
+**does not exist** (yet?)
+
+## `wordpress:4.7-php7.1`
+
+**does not exist** (yet?)
+
+## `wordpress:4-php7.1`
+
+**does not exist** (yet?)
+
+## `wordpress:php7.1`
+
+**does not exist** (yet?)
+
+## `wordpress:4.7.0-php7.1-fpm`
+
+**does not exist** (yet?)
+
+## `wordpress:4.7-php7.1-fpm`
+
+**does not exist** (yet?)
+
+## `wordpress:4-php7.1-fpm`
+
+**does not exist** (yet?)
+
+## `wordpress:php7.1-fpm`
+
+**does not exist** (yet?)
+
+## `wordpress:4.7.0-php7.1-fpm-alpine`
+
+**does not exist** (yet?)
+
+## `wordpress:4.7-php7.1-fpm-alpine`
+
+**does not exist** (yet?)
+
+## `wordpress:4-php7.1-fpm-alpine`
+
+**does not exist** (yet?)
+
+## `wordpress:php7.1-fpm-alpine`
+
+**does not exist** (yet?)
