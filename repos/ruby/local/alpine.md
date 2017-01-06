@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4962d9cd701ff00643e315258b36b77209ef5d71ee52d9bcd05dab0599c7aa6f`
-- Created: `2017-01-04T22:05:37.762077052Z`
+- Image ID: `sha256:11661999907ac401471a01c6a3e8acb6dcd83b89f11e1663970f1426c662c01a`
+- Created: `2017-01-06T00:24:45.127512997Z`
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
