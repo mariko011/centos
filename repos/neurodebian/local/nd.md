@@ -71,18 +71,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4~beta2
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4~beta2.dsc' apt_1.4~beta2.dsc 2565 SHA256:94d3dab82fda6eaa77189942cf40887127b6629fe0198bfcf0cf5c74fdfb8bf1
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4~beta2.tar.xz' apt_1.4~beta2.tar.xz 2054008 SHA256:7bd387b295ec0762a05af3c2abebd531133a6358fc15c75ae980a31791e3cb07
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.4~beta2/
-- https://sources.debian.net/src/apt/1.4~beta2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
