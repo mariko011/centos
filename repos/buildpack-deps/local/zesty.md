@@ -1657,14 +1657,8 @@ Licenses: (parsed from: `/usr/share/doc/libisl15/copyright`)
 - `LGPL-2.1+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris isl=0.17.1-1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isl/isl_0.17.1-1.dsc' isl_0.17.1-1.dsc 1857 SHA256:771ec7a63dd99952bd2bf952aeb48ed08c5c24b6a4d7ced9b0210df5bb71df46
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isl/isl_0.17.1.orig.tar.xz' isl_0.17.1.orig.tar.xz 1440564 SHA256:be152e5c816b477594f4c6194b5666d8129f3a27702756ae9ff60346a8731647
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isl/isl_0.17.1-1.debian.tar.xz' isl_0.17.1-1.debian.tar.xz 21556 SHA256:f63c2e46a065855561ba3ae72fe073c334231911866af34f3ec7db539bee6200
-```
 
 ### `dpkg` source package: `jbigkit=2.1-3.1`
 
@@ -2905,14 +2899,8 @@ Licenses: (parsed from: `/usr/share/doc/m4/copyright`)
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris m4=1.4.17-5
-'http://archive.ubuntu.com/ubuntu/pool/main/m/m4/m4_1.4.17-5.dsc' m4_1.4.17-5.dsc 1411 SHA256:4fb85651ee1e951f17304042e83253d7ca75a2f962be9796b10aad5ac96f5524
-'http://archive.ubuntu.com/ubuntu/pool/main/m/m4/m4_1.4.17.orig.tar.xz' m4_1.4.17.orig.tar.xz 1149088 SHA256:f0543c3beb51fa6b3337d8025331591e0e18d8ec2886ed391f1aade43477d508
-'http://archive.ubuntu.com/ubuntu/pool/main/m/m4/m4_1.4.17-5.debian.tar.xz' m4_1.4.17-5.debian.tar.xz 12544 SHA256:74045004fae4025bc850c2d53e4d95ed7374b9c22c846c3d3596e39986697049
-```
 
 ### `dpkg` source package: `make-dfsg=4.1-9`
 

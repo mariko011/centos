@@ -119,18 +119,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4~beta2
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4~beta2.dsc' apt_1.4~beta2.dsc 2565 SHA256:94d3dab82fda6eaa77189942cf40887127b6629fe0198bfcf0cf5c74fdfb8bf1
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4~beta2.tar.xz' apt_1.4~beta2.tar.xz 2054008 SHA256:7bd387b295ec0762a05af3c2abebd531133a6358fc15c75ae980a31791e3cb07
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.4~beta2/
-- https://sources.debian.net/src/apt/1.4~beta2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `atk1.0=2.22.0-1`
 
@@ -3423,19 +3413,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.8.11-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.8.11-1.dsc' linux_4.8.11-1.dsc 86266 SHA256:b93964a2168189c8ddfd15bc8716e2b4b2a3e5aabc33affe7f675ebc6ecd11f0
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.8.11.orig.tar.xz' linux_4.8.11.orig.tar.xz 93289484 SHA256:5e04bb8b435cf541c1bd95e02899757a291eaa02b25052e721885a92eee9a698
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.8.11-1.debian.tar.xz' linux_4.8.11-1.debian.tar.xz 806980 SHA256:3c0cf04f5c18a04daca280f44b02b3dc409ab106498b07e95c1ffcde89143f3a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/4.8.11-1/
-- https://sources.debian.net/src/linux/4.8.11-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=9.20161125`
 
