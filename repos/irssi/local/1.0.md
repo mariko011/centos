@@ -1,16 +1,16 @@
-# `irssi:0.8.20`
+# `irssi:1.0.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c4bc95ac436e0160949897f95c404ebaf5231ebf26854d46836d08e97c7f8687`
-- Created: `2016-12-13T23:51:20.935932658Z`
+- Image ID: `sha256:35df4a4172bd1c52e25acb0db3b2373c2b160993af9e409ba4638e5d3e85f31f`
+- Created: `2017-01-06T00:01:29.075856758Z`
 - Arch: `linux`/`amd64`
 - Command: `["irssi"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `HOME=/home/user`
   - `LANG=C.UTF-8`
-  - `IRSSI_VERSION=0.8.20`
+  - `IRSSI_VERSION=1.0.0`
 
 ## `dpkg` (`.deb`-based packages)
 
