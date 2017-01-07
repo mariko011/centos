@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d6886002c13a4a38b5a09395de53ff090539996cde410e16179a5dfb5643f176`
-- Created: `2016-12-29T19:24:31.874607323Z`
+- Image ID: `sha256:660f41442a278fab36077eaad1cb0bce5e0842b5ad5e34d0e3bb9ccf995391d3`
+- Created: `2017-01-06T19:05:57.372008848Z`
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUBY_MAJOR=2.3`
   - `RUBY_VERSION=2.3.3`
-  - `RUBY_DOWNLOAD_SHA256=241408c8c555b258846368830a06146e4849a1d58dcaf6b14a3b6a73058115b7`
+  - `RUBY_DOWNLOAD_SHA256=1a4fa8c2885734ba37b97ffdb4a19b8fba0e8982606db02d936e65bac07419dc`
   - `RUBYGEMS_VERSION=2.6.8`
   - `BUNDLER_VERSION=1.13.7`
   - `GEM_HOME=/usr/local/bundle`
@@ -5175,9 +5175,8 @@ Binary Packages:
 
 - `liblzma-dev:amd64=5.1.1alpha+20120614-2+b3`
 - `liblzma5:amd64=5.1.1alpha+20120614-2+b3`
-- `xz-utils=5.1.1alpha+20120614-2+b3`
 
-Licenses: (parsed from: `/usr/share/doc/liblzma-dev/copyright`, `/usr/share/doc/liblzma5/copyright`, `/usr/share/doc/xz-utils/copyright`)
+Licenses: (parsed from: `/usr/share/doc/liblzma-dev/copyright`, `/usr/share/doc/liblzma5/copyright`)
 
 - `Autoconf`
 - `GPL-2`
