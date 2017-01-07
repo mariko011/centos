@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e6e2296eb0ec78a4c9cb7b124066d0706dd8c5e6d7dd433faeee12b16d1a9d75`
-- Created: `2017-01-04T22:05:41.683876356Z`
+- Image ID: `sha256:25492786578e691521c0ae902e51dc8666405b959bc451ad1a3ed1eed71a6330`
+- Created: `2017-01-06T23:47:15.16769174Z`
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
@@ -4969,8 +4969,9 @@ Binary Packages:
 
 - `liblzma-dev:amd64=5.1.1alpha+20120614-2+b3`
 - `liblzma5:amd64=5.1.1alpha+20120614-2+b3`
+- `xz-utils=5.1.1alpha+20120614-2+b3`
 
-Licenses: (parsed from: `/usr/share/doc/liblzma-dev/copyright`, `/usr/share/doc/liblzma5/copyright`)
+Licenses: (parsed from: `/usr/share/doc/liblzma-dev/copyright`, `/usr/share/doc/liblzma5/copyright`, `/usr/share/doc/xz-utils/copyright`)
 
 - `Autoconf`
 - `GPL-2`
