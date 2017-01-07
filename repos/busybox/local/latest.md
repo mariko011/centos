@@ -1,9 +1,9 @@
-# `busybox:1.26.0-uclibc`
+# `busybox:1.26.1-uclibc`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1efc1d465fd6255396d0efd90a899f57aba2b7b294b02d5f55c6f5505ca9f3e5`
-- Created: `2016-12-22T19:21:03.23977775Z`
+- Image ID: `sha256:8a4698b1752b8142df16b73eca10c8b03fbd2ccbbd03cfd47882f04ace12de66`
+- Created: `2017-01-06T23:19:01.244374657Z`
 - Arch: `linux`/`amd64`
 - Command: `["sh"]`
 - Environment:
