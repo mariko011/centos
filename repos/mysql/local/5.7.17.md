@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:594dc21de8de7cdae01ecbd4d8a4dedead73756984896a00fce13cbc8c24f38e`
-- Created: `2016-12-14T02:48:27.152600204Z`
+- Image ID: `sha256:78cdcf394b4eab49b6d64e3e97f303d452019cf2991f801865f26c062a398623`
+- Created: `2017-01-06T23:32:37.216035301Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["mysqld"]`
