@@ -710,14 +710,8 @@ Licenses: (parsed from: `/usr/share/doc/diffutils/copyright`)
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris diffutils=1:3.5-1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.5-1.dsc' diffutils_3.5-1.dsc 1438 SHA256:a7ae6d0ac3bd114211e0526784e99866072a08ee89b3984786d22b0f03cf83c4
-'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.5.orig.tar.xz' diffutils_3.5.orig.tar.xz 1360996 SHA256:dad398ccd5b9faca6b0ab219a036453f62a602a56203ac659b43e889bec35533
-'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.5-1.debian.tar.xz' diffutils_3.5-1.debian.tar.xz 10436 SHA256:fd5115182ba8880ed8dcb5c62af9ef5f8b5410c2f35b026298cc405bac5b73e0
-```
 
 ### `dpkg` source package: `djvulibre=3.5.27.1-7`
 
@@ -881,14 +875,8 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 - `MIT-Old-Style-with-legal-disclaimer-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris file=1:5.28-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.28-2ubuntu1.dsc' file_5.28-2ubuntu1.dsc 2269 SHA256:7b4b945ac369eb404545dc3593b19dd3e7524763a2cf297f152b1694b31e0e56
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.28.orig.tar.xz' file_5.28.orig.tar.xz 568344 SHA256:e27029925606b5e2f25b4e4b43a813ff2bd904c9d12ac08bba3031525fad5f0a
-'http://archive.ubuntu.com/ubuntu/pool/main/f/file/file_5.28-2ubuntu1.debian.tar.xz' file_5.28-2ubuntu1.debian.tar.xz 30452 SHA256:55a2630bf9623d00e62a32cdcd16611453b2779d8610cc71ab0918bab48f6635
-```
 
 ### `dpkg` source package: `findutils=4.6.0+git+20161106-1`
 
