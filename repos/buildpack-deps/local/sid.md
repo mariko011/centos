@@ -2934,19 +2934,8 @@ Licenses: (parsed from: `/usr/share/doc/libwebp-dev/copyright`, `/usr/share/doc/
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libwebp=0.5.1-4
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_0.5.1-4.dsc' libwebp_0.5.1-4.dsc 2068 SHA256:d2d08264b682c8b9325b20879e111f51e3ea8d6aaee22b352d154b2bb0902d78
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_0.5.1.orig.tar.gz' libwebp_0.5.1.orig.tar.gz 1212254 SHA256:6ad66c6fcd60a023de20b6856b03da8c7d347269d76b1fd9c3287e8b5e8813df
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_0.5.1-4.debian.tar.xz' libwebp_0.5.1-4.debian.tar.xz 13056 SHA256:e1e0f3b865588ea134f81884f4f0d3d327c018d078db00c7e3da221f8ed3210d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libwebp/0.5.1-4/
-- https://sources.debian.net/src/libwebp/0.5.1-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libwmf=0.2.8.4-10.6`
 

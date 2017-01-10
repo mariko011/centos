@@ -1057,14 +1057,8 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.36.0-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.0-1ubuntu1.dsc' gdk-pixbuf_2.36.0-1ubuntu1.dsc 2858 SHA256:a2173ebf78c28f8e1038cd76ab956b729caae0ad4c8e2a0e27b001b84abcf81f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.0.orig.tar.xz' gdk-pixbuf_2.36.0.orig.tar.xz 2718648 SHA256:85ab52ce9f2c26327141b3dcf21cca3da6a3f8de84b95fa1e727d8871a23245c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.0-1ubuntu1.debian.tar.xz' gdk-pixbuf_2.36.0-1ubuntu1.debian.tar.xz 14020 SHA256:1f5f8e2b1b731b44919d588ec7cdf9b059ffe5a595d425f2b82626bdff3cca18
-```
 
 ### `dpkg` source package: `geoip=1.6.9-4`
 
