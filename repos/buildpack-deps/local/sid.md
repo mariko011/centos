@@ -843,19 +843,8 @@ Licenses: (parsed from: `/usr/share/doc/diffutils/copyright`)
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris diffutils=1:3.5-1
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.5-1.dsc' diffutils_3.5-1.dsc 1438 SHA256:a7ae6d0ac3bd114211e0526784e99866072a08ee89b3984786d22b0f03cf83c4
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.5.orig.tar.xz' diffutils_3.5.orig.tar.xz 1360996 SHA256:dad398ccd5b9faca6b0ab219a036453f62a602a56203ac659b43e889bec35533
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.5-1.debian.tar.xz' diffutils_3.5-1.debian.tar.xz 10436 SHA256:fd5115182ba8880ed8dcb5c62af9ef5f8b5410c2f35b026298cc405bac5b73e0
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/diffutils/1:3.5-1/
-- https://sources.debian.net/src/diffutils/1:3.5-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `djvulibre=3.5.27.1-7`
 
@@ -1002,19 +991,8 @@ Licenses: (parsed from: `/usr/share/doc/libfftw3-double3/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris fftw3=3.3.5-1
-'http://deb.debian.org/debian/pool/main/f/fftw3/fftw3_3.3.5-1.dsc' fftw3_3.3.5-1.dsc 2898 SHA256:c4fa07f5c4b630046ef41292d4a9fc84f022a0066a684a69f73e4b3e03e35c03
-'http://deb.debian.org/debian/pool/main/f/fftw3/fftw3_3.3.5.orig.tar.gz' fftw3_3.3.5.orig.tar.gz 4148447 SHA256:8ecfe1b04732ec3f5b7d279fdb8efcad536d555f9d1e8fabd027037d45ea8bcf
-'http://deb.debian.org/debian/pool/main/f/fftw3/fftw3_3.3.5-1.debian.tar.xz' fftw3_3.3.5-1.debian.tar.xz 12648 SHA256:ba294ccdc29241a54e2237932f07754bd12be43cfb74379b2679cd87d26275fa
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/fftw3/3.3.5-1/
-- https://sources.debian.net/src/fftw3/3.3.5-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `file=1:5.29-2`
 
@@ -1216,19 +1194,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp-6/copyright`, `/usr/share/doc/g++-6/
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.2.1-6
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.1-6.dsc' gcc-6_6.2.1-6.dsc 27171 SHA256:07a809413ad7f9a1d3578e2779ca0994f3c3353e199c52f1c3bb5066eccc3f70
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.1.orig.tar.gz' gcc-6_6.2.1.orig.tar.gz 81324504 SHA256:3936468f20af1295b5afe0bc5ff38e422524413a89fc822d5cbc8e295712d1f4
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.1-6.diff.gz' gcc-6_6.2.1-6.diff.gz 5383797 SHA256:d7c29ad4bf3e2006b0c17766a5712a4ac68b72289e0b9c18a2b0145c0ee1b391
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-6/6.2.1-6/
-- https://sources.debian.net/src/gcc-6/6.2.1-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-defaults=1.164`
 
@@ -1900,19 +1867,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.6.6+dfsg-1
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.6.6+dfsg-1.dsc' imagemagick_6.9.6.6+dfsg-1.dsc 5159 SHA256:5e729e28a112d7c6ff125850cb6903ebb76ed3d0bf73f6df3fe7eaa8da4d999f
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.6.6+dfsg.orig.tar.xz' imagemagick_6.9.6.6+dfsg.orig.tar.xz 8921112 SHA256:fdab5e00b61408752ebeb33e3a4a4c3dfdc9bf2ce67dbab2851581474bd1d602
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.6.6+dfsg-1.debian.tar.xz' imagemagick_6.9.6.6+dfsg-1.debian.tar.xz 241996 SHA256:be449d8ea0165e7b065ac3b5867e9449d3b52ccf060716f82ddbd5a6dac28bb0
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/imagemagick/8:6.9.6.6+dfsg-1/
-- https://sources.debian.net/src/imagemagick/8:6.9.6.6+dfsg-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9.4-2`
 
@@ -2006,19 +1962,8 @@ Licenses: (parsed from: `/usr/share/doc/libisl15/copyright`)
 - `LGPL-2.1+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris isl=0.17.1-1
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.17.1-1.dsc' isl_0.17.1-1.dsc 1857 SHA256:771ec7a63dd99952bd2bf952aeb48ed08c5c24b6a4d7ced9b0210df5bb71df46
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.17.1.orig.tar.xz' isl_0.17.1.orig.tar.xz 1440564 SHA256:be152e5c816b477594f4c6194b5666d8129f3a27702756ae9ff60346a8731647
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.17.1-1.debian.tar.xz' isl_0.17.1-1.debian.tar.xz 21556 SHA256:f63c2e46a065855561ba3ae72fe073c334231911866af34f3ec7db539bee6200
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/isl/0.17.1-1/
-- https://sources.debian.net/src/isl/0.17.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `jbigkit=2.1-3.1`
 
@@ -3490,19 +3435,8 @@ Licenses: (parsed from: `/usr/share/doc/m4/copyright`)
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris m4=1.4.17-5
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.17-5.dsc' m4_1.4.17-5.dsc 1411 SHA256:4fb85651ee1e951f17304042e83253d7ca75a2f962be9796b10aad5ac96f5524
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.17.orig.tar.xz' m4_1.4.17.orig.tar.xz 1149088 SHA256:f0543c3beb51fa6b3337d8025331591e0e18d8ec2886ed391f1aade43477d508
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.17-5.debian.tar.xz' m4_1.4.17-5.debian.tar.xz 12544 SHA256:74045004fae4025bc850c2d53e4d95ed7374b9c22c846c3d3596e39986697049
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/m4/1.4.17-5/
-- https://sources.debian.net/src/m4/1.4.17-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `make-dfsg=4.1-9`
 
@@ -4426,19 +4360,8 @@ Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sed=4.2.2-8
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.2.2-8.dsc' sed_4.2.2-8.dsc 1983 SHA256:1ed436e5f31808e411ffe628a8c64d5743794edd4e0dedb640f53efc08739203
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.2.2.orig.tar.bz2' sed_4.2.2.orig.tar.bz2 1059414 SHA256:f048d1838da284c8bc9753e4506b85a1e0cc1ea8999d36f6995bcb9460cddbd7
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.2.2-8.debian.tar.xz' sed_4.2.2-8.debian.tar.xz 85104 SHA256:16c35745df5187642865d3bccf5d3ee151fe1d36481da4a72f2fb8c3e54e50dd
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sed/4.2.2-8/
-- https://sources.debian.net/src/sed/4.2.2-8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sensible-utils=0.0.9`
 
@@ -4489,19 +4412,8 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.2-3.3
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3.3.dsc' shadow_4.2-3.3.dsc 2321 SHA256:c190a5aa2280113f6cbb61836e0a2154d6625389fa38d5b009865f2a2e820e8b
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3.3.debian.tar.xz' shadow_4.2-3.3.debian.tar.xz 496364 SHA256:568709f8572974de0363510db93dda224a2e49deac2fa27b8535e0225f72b6b1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/shadow/1:4.2-3.3/
-- https://sources.debian.net/src/shadow/1:4.2-3.3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `shared-mime-info=1.7-1`
 

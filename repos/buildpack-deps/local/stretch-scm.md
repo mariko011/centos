@@ -369,19 +369,8 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.27~101-g0780600+dfsg-1
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg-1.dsc' cyrus-sasl2_2.1.27~101-g0780600+dfsg-1.dsc 3274 SHA256:ce2758908561b7de6fe619df63afd6de49a78d3e1f384a2ad8a7b721719eaeb2
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg.orig.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg.orig.tar.xz 1143888 SHA256:69f34971f768e7ee6a6b647ec2d16a5a72a854ecd4602b019d5f79ba61063fdc
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg-1.debian.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg-1.debian.tar.xz 94076 SHA256:3743f823c34fe14c330e82ba65385147cd49f7ffded69e923a7aa93558e938c4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cyrus-sasl2/2.1.27~101-g0780600+dfsg-1/
-- https://sources.debian.net/src/cyrus-sasl2/2.1.27~101-g0780600+dfsg-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `dash=0.5.8-2.3`
 
