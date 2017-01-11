@@ -909,19 +909,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`, `/usr/share/doc/l
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.2.1-6
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.1-6.dsc' gcc-6_6.2.1-6.dsc 27171 SHA256:07a809413ad7f9a1d3578e2779ca0994f3c3353e199c52f1c3bb5066eccc3f70
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.1.orig.tar.gz' gcc-6_6.2.1.orig.tar.gz 81324504 SHA256:3936468f20af1295b5afe0bc5ff38e422524413a89fc822d5cbc8e295712d1f4
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.1-6.diff.gz' gcc-6_6.2.1-6.diff.gz 5383797 SHA256:d7c29ad4bf3e2006b0c17766a5712a4ac68b72289e0b9c18a2b0145c0ee1b391
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-6/6.2.1-6/
-- https://sources.debian.net/src/gcc-6/6.2.1-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gdbm=1.8.3-14`
 
@@ -2221,19 +2210,8 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jdk-headless/copyright`, `/usr
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openjdk-9=9~b149-1
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b149-1.dsc' openjdk-9_9~b149-1.dsc 4456 SHA256:4ec5b575388d89891279baed46978907baba2a3d180b52a96645d50279b599b0
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b149.orig.tar.gz' openjdk-9_9~b149.orig.tar.gz 72782111 SHA256:81e6a54f86e10f332a36fa3f3c3831838d77133b854854e1067fdfd4e14427c7
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b149-1.debian.tar.xz' openjdk-9_9~b149-1.debian.tar.xz 187172 SHA256:250d4c2faa05cb8822fa931ae56f6fa50f849955da1c61ba720b3750a5455cd6
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openjdk-9/9~b149-1/
-- https://sources.debian.net/src/openjdk-9/9~b149-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-2`
 
@@ -2585,19 +2563,8 @@ Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sed=4.2.2-8
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.2.2-8.dsc' sed_4.2.2-8.dsc 1983 SHA256:1ed436e5f31808e411ffe628a8c64d5743794edd4e0dedb640f53efc08739203
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.2.2.orig.tar.bz2' sed_4.2.2.orig.tar.bz2 1059414 SHA256:f048d1838da284c8bc9753e4506b85a1e0cc1ea8999d36f6995bcb9460cddbd7
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.2.2-8.debian.tar.xz' sed_4.2.2-8.debian.tar.xz 85104 SHA256:16c35745df5187642865d3bccf5d3ee151fe1d36481da4a72f2fb8c3e54e50dd
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sed/4.2.2-8/
-- https://sources.debian.net/src/sed/4.2.2-8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sensible-utils=0.0.9`
 
