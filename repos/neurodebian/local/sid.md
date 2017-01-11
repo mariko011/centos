@@ -412,19 +412,8 @@ Licenses: (parsed from: `/usr/share/doc/diffutils/copyright`)
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris diffutils=1:3.5-1
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.5-1.dsc' diffutils_3.5-1.dsc 1438 SHA256:a7ae6d0ac3bd114211e0526784e99866072a08ee89b3984786d22b0f03cf83c4
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.5.orig.tar.xz' diffutils_3.5.orig.tar.xz 1360996 SHA256:dad398ccd5b9faca6b0ab219a036453f62a602a56203ac659b43e889bec35533
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.5-1.debian.tar.xz' diffutils_3.5-1.debian.tar.xz 10436 SHA256:fd5115182ba8880ed8dcb5c62af9ef5f8b5410c2f35b026298cc405bac5b73e0
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/diffutils/1:3.5-1/
-- https://sources.debian.net/src/diffutils/1:3.5-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `dpkg=1.18.15`
 
@@ -553,19 +542,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`, `/usr/share/doc/l
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.2.1-6
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.1-6.dsc' gcc-6_6.2.1-6.dsc 27171 SHA256:07a809413ad7f9a1d3578e2779ca0994f3c3353e199c52f1c3bb5066eccc3f70
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.1.orig.tar.gz' gcc-6_6.2.1.orig.tar.gz 81324504 SHA256:3936468f20af1295b5afe0bc5ff38e422524413a89fc822d5cbc8e295712d1f4
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.2.1-6.diff.gz' gcc-6_6.2.1-6.diff.gz 5383797 SHA256:d7c29ad4bf3e2006b0c17766a5712a4ac68b72289e0b9c18a2b0145c0ee1b391
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-6/6.2.1-6/
-- https://sources.debian.net/src/gcc-6/6.2.1-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.24-8`
 
@@ -1472,19 +1450,8 @@ Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sed=4.2.2-8
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.2.2-8.dsc' sed_4.2.2-8.dsc 1983 SHA256:1ed436e5f31808e411ffe628a8c64d5743794edd4e0dedb640f53efc08739203
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.2.2.orig.tar.bz2' sed_4.2.2.orig.tar.bz2 1059414 SHA256:f048d1838da284c8bc9753e4506b85a1e0cc1ea8999d36f6995bcb9460cddbd7
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.2.2-8.debian.tar.xz' sed_4.2.2-8.debian.tar.xz 85104 SHA256:16c35745df5187642865d3bccf5d3ee151fe1d36481da4a72f2fb8c3e54e50dd
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sed/4.2.2-8/
-- https://sources.debian.net/src/sed/4.2.2-8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sensible-utils=0.0.9`
 
@@ -1520,19 +1487,8 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.2-3.3
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3.3.dsc' shadow_4.2-3.3.dsc 2321 SHA256:c190a5aa2280113f6cbb61836e0a2154d6625389fa38d5b009865f2a2e820e8b
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3.3.debian.tar.xz' shadow_4.2-3.3.debian.tar.xz 496364 SHA256:568709f8572974de0363510db93dda224a2e49deac2fa27b8535e0225f72b6b1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/shadow/1:4.2-3.3/
-- https://sources.debian.net/src/shadow/1:4.2-3.3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sqlite3=3.15.2-1`
 
