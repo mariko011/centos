@@ -2,59 +2,59 @@
 
 # Tags of `swarm`
 
--	[`swarm:1.2.6-rc1`](#swarm126-rc1)
+-	[`swarm:1.2.6-rc2`](#swarm126-rc2)
 -	[`swarm:1.2.5`](#swarm125)
 -	[`swarm:latest`](#swarmlatest)
 
-## `swarm:1.2.6-rc1`
+## `swarm:1.2.6-rc2`
 
 ```console
-$ docker pull swarm@sha256:bebdcbaa76a25fc602062e892ce491c600d29778a5f764b0bc1ebe89637fb78f
+$ docker pull swarm@sha256:6680a04d366c6258e4f63a8842c6bdbafdc6435044162edcea5d06cf3598c551
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `swarm:1.2.6-rc1` - linux; amd64
+### `swarm:1.2.6-rc2` - linux; amd64
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4456400 bytes)**  
+-	Total Size: **4.5 MB (4462291 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e6dc7bc44f4edbc8f56477e94f43be4eb3793f8bbc5f6edd05f0790587cc62b6`
+-	Image ID: `sha256:65bb3291c33ff42a317e82f0bda18340e19cf155ccd4bcdff3127e3cf6f321f7`
 -	Entrypoint: `["\/swarm"]`
 -	Default Command: `["--help"]`
 
 ```dockerfile
-# Wed, 21 Dec 2016 01:40:44 GMT
-COPY file:b89958844d2b25d0c97971d6c6a39667263f2cfcba1346d1fc41df9771e24ce0 in /swarm 
-# Wed, 21 Dec 2016 01:40:44 GMT
+# Wed, 11 Jan 2017 23:31:03 GMT
+COPY file:6ce361b5ce9d95f7da8ed76534491544d184b58daafab4b1849971b411dbb0d7 in /swarm 
+# Wed, 11 Jan 2017 23:31:04 GMT
 COPY file:4ac98efa752a9c4de2a2f0048e77f1978d6d4ad2ce7f4f147da339c35c380e81 in /etc/ssl/certs/ca-certificates.crt 
-# Wed, 21 Dec 2016 01:40:45 GMT
+# Wed, 11 Jan 2017 23:31:05 GMT
 COPY dir:d556676b4fb31ddaa271490e57c3a85e3c4bcc1e809b22d64b2f570c05149a22 in /tmp 
-# Wed, 21 Dec 2016 01:40:46 GMT
+# Wed, 11 Jan 2017 23:31:05 GMT
 ENV SWARM_HOST=:2375
-# Wed, 21 Dec 2016 01:40:46 GMT
+# Wed, 11 Jan 2017 23:31:06 GMT
 EXPOSE 2375/tcp
-# Wed, 21 Dec 2016 01:40:46 GMT
+# Wed, 11 Jan 2017 23:31:06 GMT
 VOLUME [/.swarm]
-# Wed, 21 Dec 2016 01:40:47 GMT
+# Wed, 11 Jan 2017 23:31:06 GMT
 ENTRYPOINT ["/swarm"]
-# Wed, 21 Dec 2016 01:40:47 GMT
+# Wed, 11 Jan 2017 23:31:07 GMT
 CMD ["--help"]
 ```
 
 -	Layers:
-	-	`sha256:0e197f663b8b4e6036ee1a7024c4006341b98b8d3d6882a255eac64241cb389d`  
-		Last Modified: Wed, 21 Dec 2016 01:41:03 GMT  
-		Size: 4.3 MB (4300857 bytes)  
+	-	`sha256:46425b293f75df0947be45292dbb23a99ce71224c98c9b58494707ea19e6db7b`  
+		Last Modified: Wed, 11 Jan 2017 23:31:24 GMT  
+		Size: 4.3 MB (4306747 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97051ffcf460fff8949d4c924a65e8afa12e3d11d40dd11d8092068b4c0540df`  
-		Last Modified: Wed, 21 Dec 2016 01:41:02 GMT  
-		Size: 155.4 KB (155419 bytes)  
+	-	`sha256:cb5296b09ac8123a32a6977332c7d1c91f74187a8cb64330eef21e727790ba1c`  
+		Last Modified: Wed, 11 Jan 2017 23:31:22 GMT  
+		Size: 155.4 KB (155420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8727bd4483d22257d3a5b6b0a4731039712ece19ddd5ab5114e43c1722f70e0a`  
-		Last Modified: Wed, 21 Dec 2016 01:41:02 GMT  
+	-	`sha256:15ff93c42c8b9f5b4ff5ff7489d9df6d7f6164a4b982b6d8bc8ba0f79ace65c2`  
+		Last Modified: Wed, 11 Jan 2017 23:31:22 GMT  
 		Size: 124.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
