@@ -1,9 +1,9 @@
-# `composer:1.3.0`
+# `composer:1.3.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4235a7bd812af3dbd398e328450a3b621a488d9d9333373854bcc8c63198f367`
-- Created: `2016-12-30T19:49:46.931777543Z`
+- Image ID: `sha256:3412424b56cf99b89a7402e5094cd7b37db5c166e535181dbb2ecd2669500728`
+- Created: `2017-01-10T18:33:03.551795055Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["composer"]`
@@ -22,4 +22,4 @@
   - `PHP_MD5=cf36039303c47f493100afea522a8f53`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/composer`
-  - `COMPOSER_VERSION=1.3.0`
+  - `COMPOSER_VERSION=1.3.1`
