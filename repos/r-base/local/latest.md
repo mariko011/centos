@@ -486,19 +486,8 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.27~101-g0780600+dfsg-1
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg-1.dsc' cyrus-sasl2_2.1.27~101-g0780600+dfsg-1.dsc 3274 SHA256:ce2758908561b7de6fe619df63afd6de49a78d3e1f384a2ad8a7b721719eaeb2
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg.orig.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg.orig.tar.xz 1143888 SHA256:69f34971f768e7ee6a6b647ec2d16a5a72a854ecd4602b019d5f79ba61063fdc
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg-1.debian.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg-1.debian.tar.xz 94076 SHA256:3743f823c34fe14c330e82ba65385147cd49f7ffded69e923a7aa93558e938c4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cyrus-sasl2/2.1.27~101-g0780600+dfsg-1/
-- https://sources.debian.net/src/cyrus-sasl2/2.1.27~101-g0780600+dfsg-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `dash=0.5.8-2.3`
 
@@ -947,14 +936,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp-6/copyright`, `/usr/share/doc/g++-6/
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.2.1-6
-'http://http.debian.net/debian/pool/main/g/gcc-6/gcc-6_6.2.1-6.dsc' gcc-6_6.2.1-6.dsc 27171 SHA256:07a809413ad7f9a1d3578e2779ca0994f3c3353e199c52f1c3bb5066eccc3f70
-'http://http.debian.net/debian/pool/main/g/gcc-6/gcc-6_6.2.1.orig.tar.gz' gcc-6_6.2.1.orig.tar.gz 81324504 SHA256:3936468f20af1295b5afe0bc5ff38e422524413a89fc822d5cbc8e295712d1f4
-'http://http.debian.net/debian/pool/main/g/gcc-6/gcc-6_6.2.1-6.diff.gz' gcc-6_6.2.1-6.diff.gz 5383797 SHA256:d7c29ad4bf3e2006b0c17766a5712a4ac68b72289e0b9c18a2b0145c0ee1b391
-```
 
 ### `dpkg` source package: `gcc-defaults=1.164`
 
