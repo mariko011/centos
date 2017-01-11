@@ -2224,19 +2224,8 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jdk-headless/copyright`, `/usr
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openjdk-9=9~b149-1
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b149-1.dsc' openjdk-9_9~b149-1.dsc 4456 SHA256:4ec5b575388d89891279baed46978907baba2a3d180b52a96645d50279b599b0
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b149.orig.tar.gz' openjdk-9_9~b149.orig.tar.gz 72782111 SHA256:81e6a54f86e10f332a36fa3f3c3831838d77133b854854e1067fdfd4e14427c7
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b149-1.debian.tar.xz' openjdk-9_9~b149-1.debian.tar.xz 187172 SHA256:250d4c2faa05cb8822fa931ae56f6fa50f849955da1c61ba720b3750a5455cd6
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openjdk-9/9~b149-1/
-- https://sources.debian.net/src/openjdk-9/9~b149-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-2`
 
@@ -2588,19 +2577,8 @@ Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sed=4.2.2-8
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.2.2-8.dsc' sed_4.2.2-8.dsc 1983 SHA256:1ed436e5f31808e411ffe628a8c64d5743794edd4e0dedb640f53efc08739203
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.2.2.orig.tar.bz2' sed_4.2.2.orig.tar.bz2 1059414 SHA256:f048d1838da284c8bc9753e4506b85a1e0cc1ea8999d36f6995bcb9460cddbd7
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.2.2-8.debian.tar.xz' sed_4.2.2-8.debian.tar.xz 85104 SHA256:16c35745df5187642865d3bccf5d3ee151fe1d36481da4a72f2fb8c3e54e50dd
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sed/4.2.2-8/
-- https://sources.debian.net/src/sed/4.2.2-8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sensible-utils=0.0.9`
 
