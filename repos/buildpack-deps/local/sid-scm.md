@@ -1728,8 +1728,19 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssh=1:7.3p1-5
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.3p1-5.dsc' openssh_7.3p1-5.dsc 2944 SHA256:13dcc4cd81e9a8458e478872acfa71718542af81202b714eb64476af56b38772
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.3p1.orig.tar.gz' openssh_7.3p1.orig.tar.gz 1522617 SHA256:3ffb989a6dcaa69594c3b550d4855a5a2e1718ccdde7f5e36387b424220fbecc
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.3p1-5.debian.tar.xz' openssh_7.3p1-5.debian.tar.xz 152888 SHA256:cee4d1b2ced45df8c942128f641ed9aaa3500224666af66b62d7304cbe7a5441
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/openssh/1:7.3p1-5/
+- https://sources.debian.net/src/openssh/1:7.3p1-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssl1.0=1.0.2j-4`
 

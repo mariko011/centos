@@ -1522,19 +1522,8 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 - `MPL-1.1 | GPL-2 | LGPL-2.1`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris graphite2=1.3.9-2
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.9-2.dsc' graphite2_1.3.9-2.dsc 2166 SHA256:0bb37f0944e2ee5f345f61bbcc1d3e128d4303f6e5dbd06a1fa72728fb1493f1
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.9.orig.tar.gz' graphite2_1.3.9.orig.tar.gz 3889102 SHA256:ec0185b663059553fd46e8c4a4f0dede60a02f13a7a1fefc2ce70332ea814567
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.9-2.debian.tar.xz' graphite2_1.3.9-2.debian.tar.xz 10724 SHA256:e051b6055923af00aa035ef1a29135c7816b741ab04105f42c3c297a470eed30
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/graphite2/1.3.9-2/
-- https://sources.debian.net/src/graphite2/1.3.9-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `graphviz=2.38.0-16`
 
@@ -2574,8 +2563,19 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `expat`
 - `libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libpng1.6=1.6.26-6
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.26-6.dsc' libpng1.6_1.6.26-6.dsc 2206 SHA256:f2c864086a3aeaabaf18096d88594c0052d8742422b86f104dfce6e529985cf0
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.26.orig.tar.xz' libpng1.6_1.6.26.orig.tar.xz 983576 SHA256:266743a326986c3dbcee9d89b640595f6b16a293fd02b37d8c91348d317b73f9
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.26-6.debian.tar.xz' libpng1.6_1.6.26-6.debian.tar.xz 22544 SHA256:a4a454dd3230be978babd9d4eda1eb2300b16f82cfeade56d967cc04f1d3df9d
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libpng1.6/1.6.26-6/
+- https://sources.debian.net/src/libpng1.6/1.6.26-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpsl=0.15.0-1`
 
@@ -3849,8 +3849,19 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssh=1:7.3p1-5
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.3p1-5.dsc' openssh_7.3p1-5.dsc 2944 SHA256:13dcc4cd81e9a8458e478872acfa71718542af81202b714eb64476af56b38772
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.3p1.orig.tar.gz' openssh_7.3p1.orig.tar.gz 1522617 SHA256:3ffb989a6dcaa69594c3b550d4855a5a2e1718ccdde7f5e36387b424220fbecc
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.3p1-5.debian.tar.xz' openssh_7.3p1-5.debian.tar.xz 152888 SHA256:cee4d1b2ced45df8c942128f641ed9aaa3500224666af66b62d7304cbe7a5441
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/openssh/1:7.3p1-5/
+- https://sources.debian.net/src/openssh/1:7.3p1-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssl1.0=1.0.2j-4`
 

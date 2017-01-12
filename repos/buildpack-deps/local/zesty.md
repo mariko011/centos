@@ -1291,14 +1291,8 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 - `MPL-1.1 | GPL-2 | LGPL-2.1`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris graphite2=1.3.9-2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.9-2.dsc' graphite2_1.3.9-2.dsc 2166 SHA256:0bb37f0944e2ee5f345f61bbcc1d3e128d4303f6e5dbd06a1fa72728fb1493f1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.9.orig.tar.gz' graphite2_1.3.9.orig.tar.gz 3889102 SHA256:ec0185b663059553fd46e8c4a4f0dede60a02f13a7a1fefc2ce70332ea814567
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.9-2.debian.tar.xz' graphite2_1.3.9-2.debian.tar.xz 10724 SHA256:e051b6055923af00aa035ef1a29135c7816b741ab04105f42c3c297a470eed30
-```
 
 ### `dpkg` source package: `graphviz=2.38.0-15ubuntu2`
 
@@ -2626,14 +2620,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxi=2:1.7.6-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxi/libxi_1.7.6-1ubuntu1.dsc' libxi_1.7.6-1ubuntu1.dsc 2303 SHA256:f55e164daecfa7ab5a8b764502e0fee83007b9b1ad9742a56bb61a79e948a510
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxi/libxi_1.7.6.orig.tar.gz' libxi_1.7.6.orig.tar.gz 601628 SHA256:4e88fa7decd287e58140ea72238f8d54e4791de302938c83695fc0c9ac102b7e
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxi/libxi_1.7.6-1ubuntu1.diff.gz' libxi_1.7.6-1ubuntu1.diff.gz 10782 SHA256:047ae7b9a7ccba94a14371eebbdf67b2bf0e21121256c2105da5f7a8a2ec594b
-```
 
 ### `dpkg` source package: `libxinerama=2:1.1.3-1`
 
