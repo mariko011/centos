@@ -602,19 +602,8 @@ Licenses: (parsed from: `/usr/share/doc/diffutils/copyright`)
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris diffutils=1:3.5-1
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.5-1.dsc' diffutils_3.5-1.dsc 1438 SHA256:a7ae6d0ac3bd114211e0526784e99866072a08ee89b3984786d22b0f03cf83c4
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.5.orig.tar.xz' diffutils_3.5.orig.tar.xz 1360996 SHA256:dad398ccd5b9faca6b0ab219a036453f62a602a56203ac659b43e889bec35533
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.5-1.debian.tar.xz' diffutils_3.5-1.debian.tar.xz 10436 SHA256:fd5115182ba8880ed8dcb5c62af9ef5f8b5410c2f35b026298cc405bac5b73e0
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/diffutils/1:3.5-1/
-- https://sources.debian.net/src/diffutils/1:3.5-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `dpkg=1.18.15`
 
@@ -1073,18 +1062,8 @@ Licenses: (parsed from: `/usr/share/doc/java-common/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris java-common=0.57
-'http://deb.debian.org/debian/pool/main/j/java-common/java-common_0.57.dsc' java-common_0.57.dsc 2087 SHA256:7b80519a4923e4bc9be26efdd8b5e4096156889924d36fbe7decf2637bc34ce5
-'http://deb.debian.org/debian/pool/main/j/java-common/java-common_0.57.tar.xz' java-common_0.57.tar.xz 13016 SHA256:296276f3714c052ba6ac6699519a4213b011b81c73ed37b9c2ad0ca8a8cb9c34
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/java-common/0.57/
-- https://sources.debian.net/src/java-common/0.57/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `keyutils=1.5.9-9`
 
@@ -2141,19 +2120,8 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.2-3.3
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3.3.dsc' shadow_4.2-3.3.dsc 2321 SHA256:c190a5aa2280113f6cbb61836e0a2154d6625389fa38d5b009865f2a2e820e8b
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3.3.debian.tar.xz' shadow_4.2-3.3.debian.tar.xz 496364 SHA256:568709f8572974de0363510db93dda224a2e49deac2fa27b8535e0225f72b6b1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/shadow/1:4.2-3.3/
-- https://sources.debian.net/src/shadow/1:4.2-3.3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sqlite3=3.15.2-1`
 
