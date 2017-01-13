@@ -1,7 +1,7 @@
 ## `hola-mundo:latest`
 
 ```console
-$ docker pull hola-mundo@sha256:5e796e7d978ea682dca1d3a3e817fef58df1a9e2830157c7c49d465dd014bc71
+$ docker pull hola-mundo@sha256:732dccc1c150dc5e1eb68b0c617e64f76e2d7fbed87d5d22b9006487f8ce581d
 ```
 
 -	Platforms:
@@ -9,22 +9,22 @@ $ docker pull hola-mundo@sha256:5e796e7d978ea682dca1d3a3e817fef58df1a9e2830157c7
 
 ### `hola-mundo:latest` - linux; amd64
 
--	Docker Version: 1.10.3
+-	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **995.0 B**  
+-	Total Size: **994.0 B**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f8d7b5c20e9a0bf389bc42ebd4f12bc510fde8f00e8e06abbfdbba5ddbb14b00`
+-	Image ID: `sha256:ad229f1e53393e58333d5bb3b399d5a347def859522b5d42f4e6057f98ba3b19`
 -	Default Command: `["\/hello"]`
 
 ```dockerfile
-# Fri, 01 Jul 2016 19:39:44 GMT
-COPY file:a5683840ef8d031155d28627397288d42671eab91b639b960af545b1360af727 in /
-# Fri, 01 Jul 2016 19:39:44 GMT
+# Fri, 13 Jan 2017 22:51:29 GMT
+COPY file:ce3119f96fca4f659fcb4b63a28e983e01ee52568920d7a5b39068519a0d2f82 in / 
+# Fri, 13 Jan 2017 22:51:29 GMT
 CMD ["/hello"]
 ```
 
 -	Layers:
-	-	`sha256:d8fd245f4d9eb7b64f9c962a61072d8cf7f1a2cc61c234989a9a66302326583c`  
-		Last Modified: Fri, 01 Jul 2016 19:39:52 GMT  
-		Size: 995.0 B  
+	-	`sha256:4adf37d16c31d4240e13d5deb52f4580b4470c2dbd08eb4dc04b98a8f09ad290`  
+		Last Modified: Fri, 13 Jan 2017 22:51:45 GMT  
+		Size: 994.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

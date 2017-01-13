@@ -1,7 +1,7 @@
 ## `elasticsearch:2-alpine`
 
 ```console
-$ docker pull elasticsearch@sha256:43a9538716c692ca900008942fb7e3b18c64166b3452094148797a1bd8f66f42
+$ docker pull elasticsearch@sha256:adc44dceff022665760d1c7540415391194e0c2cef29496ed6a1df06a51e757a
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull elasticsearch@sha256:43a9538716c692ca900008942fb7e3b18c64166b34520
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.8 MB (70801571 bytes)**  
+-	Total Size: **70.8 MB (70802470 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3f4e44ce22953c660948b60894e81588381774817cbaf95ebf57fc6818946af`
+-	Image ID: `sha256:3e82df7e2d2c81855d91af46a7ba8a7dc47d6eca0d598e0f835279f1a7b2a238`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["elasticsearch"]`
 
@@ -44,23 +44,23 @@ ENV GPG_KEY=46095ACC8548582C1A2699A9D27D666CD88E42B4
 WORKDIR /usr/share/elasticsearch
 # Tue, 27 Dec 2016 22:14:32 GMT
 ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 27 Dec 2016 22:14:45 GMT
-ENV ELASTICSEARCH_VERSION=2.4.3
-# Tue, 27 Dec 2016 22:14:46 GMT
-ENV ELASTICSEARCH_TARBALL=https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-2.4.3.tar.gz ELASTICSEARCH_TARBALL_ASC=https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-2.4.3.tar.gz.asc ELASTICSEARCH_TARBALL_SHA1=7f415b3598315c017b0733f50cd47aa837886a7f
-# Tue, 27 Dec 2016 22:14:56 GMT
+# Fri, 13 Jan 2017 22:28:40 GMT
+ENV ELASTICSEARCH_VERSION=2.4.4
+# Fri, 13 Jan 2017 22:28:40 GMT
+ENV ELASTICSEARCH_TARBALL=https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-2.4.4.tar.gz ELASTICSEARCH_TARBALL_ASC=https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-2.4.4.tar.gz.asc ELASTICSEARCH_TARBALL_SHA1=cdb5068d1baa07388e522c3bc04cca38aa8f3048
+# Fri, 13 Jan 2017 22:28:51 GMT
 RUN set -ex; 		apk add --no-cache --virtual .fetch-deps 		ca-certificates 		gnupg 		openssl 		tar 	; 		wget -O elasticsearch.tar.gz "$ELASTICSEARCH_TARBALL"; 		if [ "$ELASTICSEARCH_TARBALL_SHA1" ]; then 		echo "$ELASTICSEARCH_TARBALL_SHA1 *elasticsearch.tar.gz" | sha1sum -c -; 	fi; 		if [ "$ELASTICSEARCH_TARBALL_ASC" ]; then 		wget -O elasticsearch.tar.gz.asc "$ELASTICSEARCH_TARBALL_ASC"; 		export GNUPGHOME="$(mktemp -d)"; 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY"; 		gpg --batch --verify elasticsearch.tar.gz.asc elasticsearch.tar.gz; 		rm -r "$GNUPGHOME" elasticsearch.tar.gz.asc; 	fi; 		tar -xf elasticsearch.tar.gz --strip-components=1; 	rm elasticsearch.tar.gz; 		apk del .fetch-deps; 		mkdir -p ./plugins; 	for path in 		./data 		./logs 		./config 		./config/scripts 	; do 		mkdir -p "$path"; 		chown -R elasticsearch:elasticsearch "$path"; 	done; 		if [ "${ELASTICSEARCH_VERSION%%.*}" -gt 1 ]; then 		elasticsearch --version; 	else 		elasticsearch -v; 	fi
-# Tue, 27 Dec 2016 22:14:57 GMT
+# Fri, 13 Jan 2017 22:28:51 GMT
 COPY dir:5ec5fadebeaa388fd27b7738b6b8d6306c5b8b7d9ef468d45d3efa4b858b338f in ./config 
-# Tue, 27 Dec 2016 22:14:58 GMT
+# Fri, 13 Jan 2017 22:28:52 GMT
 VOLUME [/usr/share/elasticsearch/data]
-# Tue, 27 Dec 2016 22:14:59 GMT
+# Fri, 13 Jan 2017 22:28:52 GMT
 COPY file:2c17a92e4308bdce9fe8a119d9cc5794f0aff8c512a55882b834e2e8404b0112 in / 
-# Tue, 27 Dec 2016 22:14:59 GMT
+# Fri, 13 Jan 2017 22:28:53 GMT
 EXPOSE 9200/tcp 9300/tcp
-# Tue, 27 Dec 2016 22:15:00 GMT
+# Fri, 13 Jan 2017 22:28:53 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Dec 2016 22:15:00 GMT
+# Fri, 13 Jan 2017 22:28:54 GMT
 CMD ["elasticsearch"]
 ```
 
@@ -89,15 +89,15 @@ CMD ["elasticsearch"]
 		Last Modified: Tue, 27 Dec 2016 22:41:40 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fc4bc7dcdba587259ab5c474cb00480b0e7823aa6f97ed31aad01ae5eadcd1e`  
-		Last Modified: Tue, 27 Dec 2016 22:42:34 GMT  
-		Size: 27.7 MB (27716988 bytes)  
+	-	`sha256:8015dfaf950dbf181b15999f128786b5d3290a94405dfb60f75d26368052d27e`  
+		Last Modified: Fri, 13 Jan 2017 22:33:26 GMT  
+		Size: 27.7 MB (27717885 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2ecc7e8ca188d42507708bd962b7a6563a36cfdbe36dd7d301a93eee36d849a`  
-		Last Modified: Tue, 27 Dec 2016 22:42:30 GMT  
-		Size: 539.0 B  
+	-	`sha256:020d3cb86507bc2d2bdffe2135c292e0b97a29334e764cbb7a2ba9a651145baf`  
+		Last Modified: Fri, 13 Jan 2017 22:33:22 GMT  
+		Size: 540.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6e9f2226fc63fe693a0a5bef4efc9574da41ada05d8bd8c1eb454c67f85b0314`  
-		Last Modified: Tue, 27 Dec 2016 22:42:30 GMT  
-		Size: 510.0 B  
+	-	`sha256:3f2fb369bc492e363e9b3d28c6b97845febb566c233106ee862d40cc4a0b684e`  
+		Last Modified: Fri, 13 Jan 2017 22:33:22 GMT  
+		Size: 511.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

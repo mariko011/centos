@@ -17,7 +17,7 @@
 ## `mysql:8.0.0`
 
 ```console
-$ docker pull mysql@sha256:6cd5e048b148b6dbab7e60608c63de4a04878ca38c70c871b272e9e10b2d6f95
+$ docker pull mysql@sha256:6d006af1dc7749b2390c00367763f8644e4a32e72bb1f232a383ffa9027514ef
 ```
 
 -	Platforms:
@@ -27,9 +27,9 @@ $ docker pull mysql@sha256:6cd5e048b148b6dbab7e60608c63de4a04878ca38c70c871b272e
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **129.7 MB (129663942 bytes)**  
+-	Total Size: **129.7 MB (129663948 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c0c87894512115cbb7826739aa75495a3e7839b792507f8daea7f74964a00bc`
+-	Image ID: `sha256:8f8ce0bf096225117d31453e2283fbd8b5875d9576807f4a1c7d5014870200e0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -48,29 +48,29 @@ RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-c
 RUN mkdir /docker-entrypoint-initdb.d
 # Wed, 14 Dec 2016 02:47:50 GMT
 RUN apt-get update && apt-get install -y perl pwgen --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Wed, 14 Dec 2016 02:47:52 GMT
-RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCBD3C456770C88C718D3B5072E1F5
-# Wed, 14 Dec 2016 02:50:40 GMT
+# Fri, 13 Jan 2017 23:12:35 GMT
+RUN set -ex; 	key='A4A9406876FCBD3C456770C88C718D3B5072E1F5'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/mysql.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list > /dev/null
+# Fri, 13 Jan 2017 23:12:36 GMT
 ENV MYSQL_MAJOR=8.0
-# Wed, 14 Dec 2016 02:50:40 GMT
+# Fri, 13 Jan 2017 23:12:36 GMT
 ENV MYSQL_VERSION=8.0.0-dmr-1debian8
-# Wed, 14 Dec 2016 02:50:42 GMT
+# Fri, 13 Jan 2017 23:12:37 GMT
 RUN echo "deb http://repo.mysql.com/apt/debian/ jessie mysql-${MYSQL_MAJOR}" > /etc/apt/sources.list.d/mysql.list
-# Wed, 14 Dec 2016 02:51:15 GMT
+# Fri, 13 Jan 2017 23:13:02 GMT
 RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update && apt-get install -y mysql-server="${MYSQL_VERSION}" && rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Wed, 14 Dec 2016 02:51:16 GMT
+# Fri, 13 Jan 2017 23:13:04 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/mysql.conf.d/mysqld.cnf 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
-# Wed, 14 Dec 2016 02:51:16 GMT
+# Fri, 13 Jan 2017 23:13:04 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 06 Jan 2017 23:32:30 GMT
+# Fri, 13 Jan 2017 23:13:05 GMT
 COPY file:915aa28b0ee915243ed916898ba2c6103acca9fe847f9365ced97a8b7ee5e4c9 in /usr/local/bin/ 
-# Fri, 06 Jan 2017 23:32:31 GMT
+# Fri, 13 Jan 2017 23:13:06 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Fri, 06 Jan 2017 23:32:32 GMT
+# Fri, 13 Jan 2017 23:13:06 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 06 Jan 2017 23:32:32 GMT
+# Fri, 13 Jan 2017 23:13:07 GMT
 EXPOSE 3306/tcp
-# Fri, 06 Jan 2017 23:32:33 GMT
+# Fri, 13 Jan 2017 23:13:08 GMT
 CMD ["mysqld"]
 ```
 
@@ -95,35 +95,35 @@ CMD ["mysqld"]
 		Last Modified: Wed, 14 Dec 2016 03:28:16 GMT  
 		Size: 8.2 MB (8248277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3f247e29ab116e18d92039c22d47021d968a34eb21c25aa3d3beb9d57182038`  
-		Last Modified: Wed, 14 Dec 2016 03:28:11 GMT  
-		Size: 19.0 KB (19020 bytes)  
+	-	`sha256:28c2c732c77ff239f41984b98a307c6d127f460bc129948fbe90ea8205b42d9c`  
+		Last Modified: Fri, 13 Jan 2017 23:14:18 GMT  
+		Size: 19.0 KB (18968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f17db635ae79c261a9c96c95f08113b4945dc0e908734a49ff47c83346fd5db`  
-		Last Modified: Wed, 14 Dec 2016 03:28:09 GMT  
-		Size: 216.0 B  
+	-	`sha256:f437130c27aa95d09c4a7fde1c783ddd24cfc62f1f93460200e338d9ba611271`  
+		Last Modified: Fri, 13 Jan 2017 23:14:14 GMT  
+		Size: 217.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d0663c149b918114b8c71cf8e18c01e7f43be2a443c3f4c73f7a0dd48213038`  
-		Last Modified: Wed, 14 Dec 2016 03:28:32 GMT  
-		Size: 68.8 MB (68810783 bytes)  
+	-	`sha256:15e22eb6b17fc7ff828da69c2c88cf96f7fcffed99ec8b37e6318cfc2e396509`  
+		Last Modified: Fri, 13 Jan 2017 23:14:34 GMT  
+		Size: 68.8 MB (68810838 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:323a2b791e20e91cdb7cadf742af9d3c51ca39b6be4a6d8bdafc880dc840b8e1`  
-		Last Modified: Wed, 14 Dec 2016 03:28:08 GMT  
-		Size: 883.0 B  
+	-	`sha256:e2e530fa4e84a92dfa93c6c5c133649525f775ed5af96df2521f37be5716845d`  
+		Last Modified: Fri, 13 Jan 2017 23:14:14 GMT  
+		Size: 882.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3170c12c024cd87388e563a2d3973e6fae88fc97862ac830d42a2b0ad1b1d2e8`  
-		Last Modified: Fri, 06 Jan 2017 23:33:01 GMT  
-		Size: 2.4 KB (2421 bytes)  
+	-	`sha256:5d918723121224c654ea8e22fd0d5a463d5049c38d829905e6472dcc06654a10`  
+		Last Modified: Fri, 13 Jan 2017 23:14:14 GMT  
+		Size: 2.4 KB (2422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40c3ad9ff41314f309f652965de2ae310acf8d7ac6c49c146278623cabe9cc68`  
-		Last Modified: Fri, 06 Jan 2017 23:33:00 GMT  
-		Size: 118.0 B  
+	-	`sha256:2c10a932aec0cca323634a40373fa93de45a794d5b0f57f0e74fc188a844ad86`  
+		Last Modified: Fri, 13 Jan 2017 23:14:14 GMT  
+		Size: 120.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mysql:8.0`
 
 ```console
-$ docker pull mysql@sha256:6cd5e048b148b6dbab7e60608c63de4a04878ca38c70c871b272e9e10b2d6f95
+$ docker pull mysql@sha256:6d006af1dc7749b2390c00367763f8644e4a32e72bb1f232a383ffa9027514ef
 ```
 
 -	Platforms:
@@ -133,9 +133,9 @@ $ docker pull mysql@sha256:6cd5e048b148b6dbab7e60608c63de4a04878ca38c70c871b272e
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **129.7 MB (129663942 bytes)**  
+-	Total Size: **129.7 MB (129663948 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c0c87894512115cbb7826739aa75495a3e7839b792507f8daea7f74964a00bc`
+-	Image ID: `sha256:8f8ce0bf096225117d31453e2283fbd8b5875d9576807f4a1c7d5014870200e0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -154,29 +154,29 @@ RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-c
 RUN mkdir /docker-entrypoint-initdb.d
 # Wed, 14 Dec 2016 02:47:50 GMT
 RUN apt-get update && apt-get install -y perl pwgen --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Wed, 14 Dec 2016 02:47:52 GMT
-RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCBD3C456770C88C718D3B5072E1F5
-# Wed, 14 Dec 2016 02:50:40 GMT
+# Fri, 13 Jan 2017 23:12:35 GMT
+RUN set -ex; 	key='A4A9406876FCBD3C456770C88C718D3B5072E1F5'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/mysql.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list > /dev/null
+# Fri, 13 Jan 2017 23:12:36 GMT
 ENV MYSQL_MAJOR=8.0
-# Wed, 14 Dec 2016 02:50:40 GMT
+# Fri, 13 Jan 2017 23:12:36 GMT
 ENV MYSQL_VERSION=8.0.0-dmr-1debian8
-# Wed, 14 Dec 2016 02:50:42 GMT
+# Fri, 13 Jan 2017 23:12:37 GMT
 RUN echo "deb http://repo.mysql.com/apt/debian/ jessie mysql-${MYSQL_MAJOR}" > /etc/apt/sources.list.d/mysql.list
-# Wed, 14 Dec 2016 02:51:15 GMT
+# Fri, 13 Jan 2017 23:13:02 GMT
 RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update && apt-get install -y mysql-server="${MYSQL_VERSION}" && rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Wed, 14 Dec 2016 02:51:16 GMT
+# Fri, 13 Jan 2017 23:13:04 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/mysql.conf.d/mysqld.cnf 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
-# Wed, 14 Dec 2016 02:51:16 GMT
+# Fri, 13 Jan 2017 23:13:04 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 06 Jan 2017 23:32:30 GMT
+# Fri, 13 Jan 2017 23:13:05 GMT
 COPY file:915aa28b0ee915243ed916898ba2c6103acca9fe847f9365ced97a8b7ee5e4c9 in /usr/local/bin/ 
-# Fri, 06 Jan 2017 23:32:31 GMT
+# Fri, 13 Jan 2017 23:13:06 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Fri, 06 Jan 2017 23:32:32 GMT
+# Fri, 13 Jan 2017 23:13:06 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 06 Jan 2017 23:32:32 GMT
+# Fri, 13 Jan 2017 23:13:07 GMT
 EXPOSE 3306/tcp
-# Fri, 06 Jan 2017 23:32:33 GMT
+# Fri, 13 Jan 2017 23:13:08 GMT
 CMD ["mysqld"]
 ```
 
@@ -201,35 +201,35 @@ CMD ["mysqld"]
 		Last Modified: Wed, 14 Dec 2016 03:28:16 GMT  
 		Size: 8.2 MB (8248277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3f247e29ab116e18d92039c22d47021d968a34eb21c25aa3d3beb9d57182038`  
-		Last Modified: Wed, 14 Dec 2016 03:28:11 GMT  
-		Size: 19.0 KB (19020 bytes)  
+	-	`sha256:28c2c732c77ff239f41984b98a307c6d127f460bc129948fbe90ea8205b42d9c`  
+		Last Modified: Fri, 13 Jan 2017 23:14:18 GMT  
+		Size: 19.0 KB (18968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f17db635ae79c261a9c96c95f08113b4945dc0e908734a49ff47c83346fd5db`  
-		Last Modified: Wed, 14 Dec 2016 03:28:09 GMT  
-		Size: 216.0 B  
+	-	`sha256:f437130c27aa95d09c4a7fde1c783ddd24cfc62f1f93460200e338d9ba611271`  
+		Last Modified: Fri, 13 Jan 2017 23:14:14 GMT  
+		Size: 217.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d0663c149b918114b8c71cf8e18c01e7f43be2a443c3f4c73f7a0dd48213038`  
-		Last Modified: Wed, 14 Dec 2016 03:28:32 GMT  
-		Size: 68.8 MB (68810783 bytes)  
+	-	`sha256:15e22eb6b17fc7ff828da69c2c88cf96f7fcffed99ec8b37e6318cfc2e396509`  
+		Last Modified: Fri, 13 Jan 2017 23:14:34 GMT  
+		Size: 68.8 MB (68810838 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:323a2b791e20e91cdb7cadf742af9d3c51ca39b6be4a6d8bdafc880dc840b8e1`  
-		Last Modified: Wed, 14 Dec 2016 03:28:08 GMT  
-		Size: 883.0 B  
+	-	`sha256:e2e530fa4e84a92dfa93c6c5c133649525f775ed5af96df2521f37be5716845d`  
+		Last Modified: Fri, 13 Jan 2017 23:14:14 GMT  
+		Size: 882.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3170c12c024cd87388e563a2d3973e6fae88fc97862ac830d42a2b0ad1b1d2e8`  
-		Last Modified: Fri, 06 Jan 2017 23:33:01 GMT  
-		Size: 2.4 KB (2421 bytes)  
+	-	`sha256:5d918723121224c654ea8e22fd0d5a463d5049c38d829905e6472dcc06654a10`  
+		Last Modified: Fri, 13 Jan 2017 23:14:14 GMT  
+		Size: 2.4 KB (2422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40c3ad9ff41314f309f652965de2ae310acf8d7ac6c49c146278623cabe9cc68`  
-		Last Modified: Fri, 06 Jan 2017 23:33:00 GMT  
-		Size: 118.0 B  
+	-	`sha256:2c10a932aec0cca323634a40373fa93de45a794d5b0f57f0e74fc188a844ad86`  
+		Last Modified: Fri, 13 Jan 2017 23:14:14 GMT  
+		Size: 120.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mysql:8`
 
 ```console
-$ docker pull mysql@sha256:6cd5e048b148b6dbab7e60608c63de4a04878ca38c70c871b272e9e10b2d6f95
+$ docker pull mysql@sha256:6d006af1dc7749b2390c00367763f8644e4a32e72bb1f232a383ffa9027514ef
 ```
 
 -	Platforms:
@@ -239,9 +239,9 @@ $ docker pull mysql@sha256:6cd5e048b148b6dbab7e60608c63de4a04878ca38c70c871b272e
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **129.7 MB (129663942 bytes)**  
+-	Total Size: **129.7 MB (129663948 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c0c87894512115cbb7826739aa75495a3e7839b792507f8daea7f74964a00bc`
+-	Image ID: `sha256:8f8ce0bf096225117d31453e2283fbd8b5875d9576807f4a1c7d5014870200e0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -260,29 +260,29 @@ RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-c
 RUN mkdir /docker-entrypoint-initdb.d
 # Wed, 14 Dec 2016 02:47:50 GMT
 RUN apt-get update && apt-get install -y perl pwgen --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Wed, 14 Dec 2016 02:47:52 GMT
-RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCBD3C456770C88C718D3B5072E1F5
-# Wed, 14 Dec 2016 02:50:40 GMT
+# Fri, 13 Jan 2017 23:12:35 GMT
+RUN set -ex; 	key='A4A9406876FCBD3C456770C88C718D3B5072E1F5'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/mysql.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list > /dev/null
+# Fri, 13 Jan 2017 23:12:36 GMT
 ENV MYSQL_MAJOR=8.0
-# Wed, 14 Dec 2016 02:50:40 GMT
+# Fri, 13 Jan 2017 23:12:36 GMT
 ENV MYSQL_VERSION=8.0.0-dmr-1debian8
-# Wed, 14 Dec 2016 02:50:42 GMT
+# Fri, 13 Jan 2017 23:12:37 GMT
 RUN echo "deb http://repo.mysql.com/apt/debian/ jessie mysql-${MYSQL_MAJOR}" > /etc/apt/sources.list.d/mysql.list
-# Wed, 14 Dec 2016 02:51:15 GMT
+# Fri, 13 Jan 2017 23:13:02 GMT
 RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update && apt-get install -y mysql-server="${MYSQL_VERSION}" && rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Wed, 14 Dec 2016 02:51:16 GMT
+# Fri, 13 Jan 2017 23:13:04 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/mysql.conf.d/mysqld.cnf 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
-# Wed, 14 Dec 2016 02:51:16 GMT
+# Fri, 13 Jan 2017 23:13:04 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 06 Jan 2017 23:32:30 GMT
+# Fri, 13 Jan 2017 23:13:05 GMT
 COPY file:915aa28b0ee915243ed916898ba2c6103acca9fe847f9365ced97a8b7ee5e4c9 in /usr/local/bin/ 
-# Fri, 06 Jan 2017 23:32:31 GMT
+# Fri, 13 Jan 2017 23:13:06 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Fri, 06 Jan 2017 23:32:32 GMT
+# Fri, 13 Jan 2017 23:13:06 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 06 Jan 2017 23:32:32 GMT
+# Fri, 13 Jan 2017 23:13:07 GMT
 EXPOSE 3306/tcp
-# Fri, 06 Jan 2017 23:32:33 GMT
+# Fri, 13 Jan 2017 23:13:08 GMT
 CMD ["mysqld"]
 ```
 
@@ -307,35 +307,35 @@ CMD ["mysqld"]
 		Last Modified: Wed, 14 Dec 2016 03:28:16 GMT  
 		Size: 8.2 MB (8248277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3f247e29ab116e18d92039c22d47021d968a34eb21c25aa3d3beb9d57182038`  
-		Last Modified: Wed, 14 Dec 2016 03:28:11 GMT  
-		Size: 19.0 KB (19020 bytes)  
+	-	`sha256:28c2c732c77ff239f41984b98a307c6d127f460bc129948fbe90ea8205b42d9c`  
+		Last Modified: Fri, 13 Jan 2017 23:14:18 GMT  
+		Size: 19.0 KB (18968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f17db635ae79c261a9c96c95f08113b4945dc0e908734a49ff47c83346fd5db`  
-		Last Modified: Wed, 14 Dec 2016 03:28:09 GMT  
-		Size: 216.0 B  
+	-	`sha256:f437130c27aa95d09c4a7fde1c783ddd24cfc62f1f93460200e338d9ba611271`  
+		Last Modified: Fri, 13 Jan 2017 23:14:14 GMT  
+		Size: 217.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d0663c149b918114b8c71cf8e18c01e7f43be2a443c3f4c73f7a0dd48213038`  
-		Last Modified: Wed, 14 Dec 2016 03:28:32 GMT  
-		Size: 68.8 MB (68810783 bytes)  
+	-	`sha256:15e22eb6b17fc7ff828da69c2c88cf96f7fcffed99ec8b37e6318cfc2e396509`  
+		Last Modified: Fri, 13 Jan 2017 23:14:34 GMT  
+		Size: 68.8 MB (68810838 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:323a2b791e20e91cdb7cadf742af9d3c51ca39b6be4a6d8bdafc880dc840b8e1`  
-		Last Modified: Wed, 14 Dec 2016 03:28:08 GMT  
-		Size: 883.0 B  
+	-	`sha256:e2e530fa4e84a92dfa93c6c5c133649525f775ed5af96df2521f37be5716845d`  
+		Last Modified: Fri, 13 Jan 2017 23:14:14 GMT  
+		Size: 882.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3170c12c024cd87388e563a2d3973e6fae88fc97862ac830d42a2b0ad1b1d2e8`  
-		Last Modified: Fri, 06 Jan 2017 23:33:01 GMT  
-		Size: 2.4 KB (2421 bytes)  
+	-	`sha256:5d918723121224c654ea8e22fd0d5a463d5049c38d829905e6472dcc06654a10`  
+		Last Modified: Fri, 13 Jan 2017 23:14:14 GMT  
+		Size: 2.4 KB (2422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40c3ad9ff41314f309f652965de2ae310acf8d7ac6c49c146278623cabe9cc68`  
-		Last Modified: Fri, 06 Jan 2017 23:33:00 GMT  
-		Size: 118.0 B  
+	-	`sha256:2c10a932aec0cca323634a40373fa93de45a794d5b0f57f0e74fc188a844ad86`  
+		Last Modified: Fri, 13 Jan 2017 23:14:14 GMT  
+		Size: 120.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mysql:5.7.17`
 
 ```console
-$ docker pull mysql@sha256:9ef4478a3aa597f59b2266d5702f55f29acc468b5bf3518c3c90cbca4e243823
+$ docker pull mysql@sha256:5cc898cf7da96e544ce209953f3a17a9965e7c310a51b21a45da7b766e49c568
 ```
 
 -	Platforms:
@@ -345,9 +345,9 @@ $ docker pull mysql@sha256:9ef4478a3aa597f59b2266d5702f55f29acc468b5bf3518c3c90c
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.8 MB (137832242 bytes)**  
+-	Total Size: **137.8 MB (137832248 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:78cdcf394b4eab49b6d64e3e97f303d452019cf2991f801865f26c062a398623`
+-	Image ID: `sha256:0e7ce207390ede31adb6abd73e9e2f68f7258a555c6efabb47558191c5b80be0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -366,29 +366,29 @@ RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-c
 RUN mkdir /docker-entrypoint-initdb.d
 # Wed, 14 Dec 2016 02:47:50 GMT
 RUN apt-get update && apt-get install -y perl pwgen --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Wed, 14 Dec 2016 02:47:52 GMT
-RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCBD3C456770C88C718D3B5072E1F5
-# Wed, 14 Dec 2016 02:47:53 GMT
+# Fri, 13 Jan 2017 23:12:35 GMT
+RUN set -ex; 	key='A4A9406876FCBD3C456770C88C718D3B5072E1F5'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/mysql.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list > /dev/null
+# Fri, 13 Jan 2017 23:13:09 GMT
 ENV MYSQL_MAJOR=5.7
-# Wed, 14 Dec 2016 02:47:53 GMT
+# Fri, 13 Jan 2017 23:13:09 GMT
 ENV MYSQL_VERSION=5.7.17-1debian8
-# Wed, 14 Dec 2016 02:47:54 GMT
+# Fri, 13 Jan 2017 23:13:10 GMT
 RUN echo "deb http://repo.mysql.com/apt/debian/ jessie mysql-${MYSQL_MAJOR}" > /etc/apt/sources.list.d/mysql.list
-# Wed, 14 Dec 2016 02:48:17 GMT
+# Fri, 13 Jan 2017 23:13:28 GMT
 RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update && apt-get install -y mysql-server="${MYSQL_VERSION}" && rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Wed, 14 Dec 2016 02:48:23 GMT
+# Fri, 13 Jan 2017 23:13:29 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/mysql.conf.d/mysqld.cnf 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
-# Wed, 14 Dec 2016 02:48:24 GMT
+# Fri, 13 Jan 2017 23:13:30 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 06 Jan 2017 23:32:34 GMT
+# Fri, 13 Jan 2017 23:13:31 GMT
 COPY file:915aa28b0ee915243ed916898ba2c6103acca9fe847f9365ced97a8b7ee5e4c9 in /usr/local/bin/ 
-# Fri, 06 Jan 2017 23:32:35 GMT
+# Fri, 13 Jan 2017 23:13:32 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Fri, 06 Jan 2017 23:32:36 GMT
+# Fri, 13 Jan 2017 23:13:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 06 Jan 2017 23:32:36 GMT
+# Fri, 13 Jan 2017 23:13:33 GMT
 EXPOSE 3306/tcp
-# Fri, 06 Jan 2017 23:32:37 GMT
+# Fri, 13 Jan 2017 23:13:34 GMT
 CMD ["mysqld"]
 ```
 
@@ -413,35 +413,35 @@ CMD ["mysqld"]
 		Last Modified: Wed, 14 Dec 2016 03:28:16 GMT  
 		Size: 8.2 MB (8248277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3f247e29ab116e18d92039c22d47021d968a34eb21c25aa3d3beb9d57182038`  
-		Last Modified: Wed, 14 Dec 2016 03:28:11 GMT  
-		Size: 19.0 KB (19020 bytes)  
+	-	`sha256:28c2c732c77ff239f41984b98a307c6d127f460bc129948fbe90ea8205b42d9c`  
+		Last Modified: Fri, 13 Jan 2017 23:14:18 GMT  
+		Size: 19.0 KB (18968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21be3e56207166d0b71bdb3ad23e6db98386fe5311bfb2766059d8a0856f4f61`  
-		Last Modified: Wed, 14 Dec 2016 03:29:25 GMT  
+	-	`sha256:87a1e36fd27528a657d2ac4d507eda4e24e9817a978735eafb9147c5b75a42a2`  
+		Last Modified: Fri, 13 Jan 2017 23:15:22 GMT  
 		Size: 217.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7399d6bf03330f82cb32f3dca0c4b298b5d89a1c90c2f2a2d56182222bc58de`  
-		Last Modified: Wed, 14 Dec 2016 03:29:52 GMT  
-		Size: 77.0 MB (76979027 bytes)  
+	-	`sha256:41b8bacae77a39764b551dac0e666e574465f6d78ec90962178b310a42a752e2`  
+		Last Modified: Fri, 13 Jan 2017 23:15:43 GMT  
+		Size: 77.0 MB (76979086 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccdaeae6c735d31cbab37e1f9aa3a25ca1c6123d7332d5262c391f7c14f305d7`  
-		Last Modified: Wed, 14 Dec 2016 03:29:25 GMT  
+	-	`sha256:c52c7c073f423d56e2a642e21d1be7ab6e35c6c2bfc391cc68bcc15636e3e460`  
+		Last Modified: Fri, 13 Jan 2017 23:15:22 GMT  
 		Size: 936.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:713c7d65b0d3bea9ab0b27daffc14d1b4a2c34a4b0b3e1bf38f0309284de118a`  
-		Last Modified: Fri, 06 Jan 2017 23:34:09 GMT  
-		Size: 2.4 KB (2421 bytes)  
+	-	`sha256:1dbcda15a0579a7fbbeea22fcff1230bbd190cc8efd0c2877b1920e27734065f`  
+		Last Modified: Fri, 13 Jan 2017 23:15:22 GMT  
+		Size: 2.4 KB (2420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86c18539deb2e6154840d2a292ac19de5018ef6685c24af3a86149fabf209082`  
-		Last Modified: Fri, 06 Jan 2017 23:34:09 GMT  
+	-	`sha256:92a3ee1c693e3d69754c4b1fae317d1f98cb05e852a9c49b829900b654af7e63`  
+		Last Modified: Fri, 13 Jan 2017 23:15:22 GMT  
 		Size: 120.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mysql:5.7`
 
 ```console
-$ docker pull mysql@sha256:9ef4478a3aa597f59b2266d5702f55f29acc468b5bf3518c3c90cbca4e243823
+$ docker pull mysql@sha256:5cc898cf7da96e544ce209953f3a17a9965e7c310a51b21a45da7b766e49c568
 ```
 
 -	Platforms:
@@ -451,9 +451,9 @@ $ docker pull mysql@sha256:9ef4478a3aa597f59b2266d5702f55f29acc468b5bf3518c3c90c
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.8 MB (137832242 bytes)**  
+-	Total Size: **137.8 MB (137832248 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:78cdcf394b4eab49b6d64e3e97f303d452019cf2991f801865f26c062a398623`
+-	Image ID: `sha256:0e7ce207390ede31adb6abd73e9e2f68f7258a555c6efabb47558191c5b80be0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -472,29 +472,29 @@ RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-c
 RUN mkdir /docker-entrypoint-initdb.d
 # Wed, 14 Dec 2016 02:47:50 GMT
 RUN apt-get update && apt-get install -y perl pwgen --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Wed, 14 Dec 2016 02:47:52 GMT
-RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCBD3C456770C88C718D3B5072E1F5
-# Wed, 14 Dec 2016 02:47:53 GMT
+# Fri, 13 Jan 2017 23:12:35 GMT
+RUN set -ex; 	key='A4A9406876FCBD3C456770C88C718D3B5072E1F5'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/mysql.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list > /dev/null
+# Fri, 13 Jan 2017 23:13:09 GMT
 ENV MYSQL_MAJOR=5.7
-# Wed, 14 Dec 2016 02:47:53 GMT
+# Fri, 13 Jan 2017 23:13:09 GMT
 ENV MYSQL_VERSION=5.7.17-1debian8
-# Wed, 14 Dec 2016 02:47:54 GMT
+# Fri, 13 Jan 2017 23:13:10 GMT
 RUN echo "deb http://repo.mysql.com/apt/debian/ jessie mysql-${MYSQL_MAJOR}" > /etc/apt/sources.list.d/mysql.list
-# Wed, 14 Dec 2016 02:48:17 GMT
+# Fri, 13 Jan 2017 23:13:28 GMT
 RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update && apt-get install -y mysql-server="${MYSQL_VERSION}" && rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Wed, 14 Dec 2016 02:48:23 GMT
+# Fri, 13 Jan 2017 23:13:29 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/mysql.conf.d/mysqld.cnf 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
-# Wed, 14 Dec 2016 02:48:24 GMT
+# Fri, 13 Jan 2017 23:13:30 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 06 Jan 2017 23:32:34 GMT
+# Fri, 13 Jan 2017 23:13:31 GMT
 COPY file:915aa28b0ee915243ed916898ba2c6103acca9fe847f9365ced97a8b7ee5e4c9 in /usr/local/bin/ 
-# Fri, 06 Jan 2017 23:32:35 GMT
+# Fri, 13 Jan 2017 23:13:32 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Fri, 06 Jan 2017 23:32:36 GMT
+# Fri, 13 Jan 2017 23:13:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 06 Jan 2017 23:32:36 GMT
+# Fri, 13 Jan 2017 23:13:33 GMT
 EXPOSE 3306/tcp
-# Fri, 06 Jan 2017 23:32:37 GMT
+# Fri, 13 Jan 2017 23:13:34 GMT
 CMD ["mysqld"]
 ```
 
@@ -519,35 +519,35 @@ CMD ["mysqld"]
 		Last Modified: Wed, 14 Dec 2016 03:28:16 GMT  
 		Size: 8.2 MB (8248277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3f247e29ab116e18d92039c22d47021d968a34eb21c25aa3d3beb9d57182038`  
-		Last Modified: Wed, 14 Dec 2016 03:28:11 GMT  
-		Size: 19.0 KB (19020 bytes)  
+	-	`sha256:28c2c732c77ff239f41984b98a307c6d127f460bc129948fbe90ea8205b42d9c`  
+		Last Modified: Fri, 13 Jan 2017 23:14:18 GMT  
+		Size: 19.0 KB (18968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21be3e56207166d0b71bdb3ad23e6db98386fe5311bfb2766059d8a0856f4f61`  
-		Last Modified: Wed, 14 Dec 2016 03:29:25 GMT  
+	-	`sha256:87a1e36fd27528a657d2ac4d507eda4e24e9817a978735eafb9147c5b75a42a2`  
+		Last Modified: Fri, 13 Jan 2017 23:15:22 GMT  
 		Size: 217.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7399d6bf03330f82cb32f3dca0c4b298b5d89a1c90c2f2a2d56182222bc58de`  
-		Last Modified: Wed, 14 Dec 2016 03:29:52 GMT  
-		Size: 77.0 MB (76979027 bytes)  
+	-	`sha256:41b8bacae77a39764b551dac0e666e574465f6d78ec90962178b310a42a752e2`  
+		Last Modified: Fri, 13 Jan 2017 23:15:43 GMT  
+		Size: 77.0 MB (76979086 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccdaeae6c735d31cbab37e1f9aa3a25ca1c6123d7332d5262c391f7c14f305d7`  
-		Last Modified: Wed, 14 Dec 2016 03:29:25 GMT  
+	-	`sha256:c52c7c073f423d56e2a642e21d1be7ab6e35c6c2bfc391cc68bcc15636e3e460`  
+		Last Modified: Fri, 13 Jan 2017 23:15:22 GMT  
 		Size: 936.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:713c7d65b0d3bea9ab0b27daffc14d1b4a2c34a4b0b3e1bf38f0309284de118a`  
-		Last Modified: Fri, 06 Jan 2017 23:34:09 GMT  
-		Size: 2.4 KB (2421 bytes)  
+	-	`sha256:1dbcda15a0579a7fbbeea22fcff1230bbd190cc8efd0c2877b1920e27734065f`  
+		Last Modified: Fri, 13 Jan 2017 23:15:22 GMT  
+		Size: 2.4 KB (2420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86c18539deb2e6154840d2a292ac19de5018ef6685c24af3a86149fabf209082`  
-		Last Modified: Fri, 06 Jan 2017 23:34:09 GMT  
+	-	`sha256:92a3ee1c693e3d69754c4b1fae317d1f98cb05e852a9c49b829900b654af7e63`  
+		Last Modified: Fri, 13 Jan 2017 23:15:22 GMT  
 		Size: 120.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mysql:5`
 
 ```console
-$ docker pull mysql@sha256:9ef4478a3aa597f59b2266d5702f55f29acc468b5bf3518c3c90cbca4e243823
+$ docker pull mysql@sha256:5cc898cf7da96e544ce209953f3a17a9965e7c310a51b21a45da7b766e49c568
 ```
 
 -	Platforms:
@@ -557,9 +557,9 @@ $ docker pull mysql@sha256:9ef4478a3aa597f59b2266d5702f55f29acc468b5bf3518c3c90c
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.8 MB (137832242 bytes)**  
+-	Total Size: **137.8 MB (137832248 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:78cdcf394b4eab49b6d64e3e97f303d452019cf2991f801865f26c062a398623`
+-	Image ID: `sha256:0e7ce207390ede31adb6abd73e9e2f68f7258a555c6efabb47558191c5b80be0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -578,29 +578,29 @@ RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-c
 RUN mkdir /docker-entrypoint-initdb.d
 # Wed, 14 Dec 2016 02:47:50 GMT
 RUN apt-get update && apt-get install -y perl pwgen --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Wed, 14 Dec 2016 02:47:52 GMT
-RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCBD3C456770C88C718D3B5072E1F5
-# Wed, 14 Dec 2016 02:47:53 GMT
+# Fri, 13 Jan 2017 23:12:35 GMT
+RUN set -ex; 	key='A4A9406876FCBD3C456770C88C718D3B5072E1F5'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/mysql.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list > /dev/null
+# Fri, 13 Jan 2017 23:13:09 GMT
 ENV MYSQL_MAJOR=5.7
-# Wed, 14 Dec 2016 02:47:53 GMT
+# Fri, 13 Jan 2017 23:13:09 GMT
 ENV MYSQL_VERSION=5.7.17-1debian8
-# Wed, 14 Dec 2016 02:47:54 GMT
+# Fri, 13 Jan 2017 23:13:10 GMT
 RUN echo "deb http://repo.mysql.com/apt/debian/ jessie mysql-${MYSQL_MAJOR}" > /etc/apt/sources.list.d/mysql.list
-# Wed, 14 Dec 2016 02:48:17 GMT
+# Fri, 13 Jan 2017 23:13:28 GMT
 RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update && apt-get install -y mysql-server="${MYSQL_VERSION}" && rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Wed, 14 Dec 2016 02:48:23 GMT
+# Fri, 13 Jan 2017 23:13:29 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/mysql.conf.d/mysqld.cnf 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
-# Wed, 14 Dec 2016 02:48:24 GMT
+# Fri, 13 Jan 2017 23:13:30 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 06 Jan 2017 23:32:34 GMT
+# Fri, 13 Jan 2017 23:13:31 GMT
 COPY file:915aa28b0ee915243ed916898ba2c6103acca9fe847f9365ced97a8b7ee5e4c9 in /usr/local/bin/ 
-# Fri, 06 Jan 2017 23:32:35 GMT
+# Fri, 13 Jan 2017 23:13:32 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Fri, 06 Jan 2017 23:32:36 GMT
+# Fri, 13 Jan 2017 23:13:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 06 Jan 2017 23:32:36 GMT
+# Fri, 13 Jan 2017 23:13:33 GMT
 EXPOSE 3306/tcp
-# Fri, 06 Jan 2017 23:32:37 GMT
+# Fri, 13 Jan 2017 23:13:34 GMT
 CMD ["mysqld"]
 ```
 
@@ -625,35 +625,35 @@ CMD ["mysqld"]
 		Last Modified: Wed, 14 Dec 2016 03:28:16 GMT  
 		Size: 8.2 MB (8248277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3f247e29ab116e18d92039c22d47021d968a34eb21c25aa3d3beb9d57182038`  
-		Last Modified: Wed, 14 Dec 2016 03:28:11 GMT  
-		Size: 19.0 KB (19020 bytes)  
+	-	`sha256:28c2c732c77ff239f41984b98a307c6d127f460bc129948fbe90ea8205b42d9c`  
+		Last Modified: Fri, 13 Jan 2017 23:14:18 GMT  
+		Size: 19.0 KB (18968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21be3e56207166d0b71bdb3ad23e6db98386fe5311bfb2766059d8a0856f4f61`  
-		Last Modified: Wed, 14 Dec 2016 03:29:25 GMT  
+	-	`sha256:87a1e36fd27528a657d2ac4d507eda4e24e9817a978735eafb9147c5b75a42a2`  
+		Last Modified: Fri, 13 Jan 2017 23:15:22 GMT  
 		Size: 217.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7399d6bf03330f82cb32f3dca0c4b298b5d89a1c90c2f2a2d56182222bc58de`  
-		Last Modified: Wed, 14 Dec 2016 03:29:52 GMT  
-		Size: 77.0 MB (76979027 bytes)  
+	-	`sha256:41b8bacae77a39764b551dac0e666e574465f6d78ec90962178b310a42a752e2`  
+		Last Modified: Fri, 13 Jan 2017 23:15:43 GMT  
+		Size: 77.0 MB (76979086 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccdaeae6c735d31cbab37e1f9aa3a25ca1c6123d7332d5262c391f7c14f305d7`  
-		Last Modified: Wed, 14 Dec 2016 03:29:25 GMT  
+	-	`sha256:c52c7c073f423d56e2a642e21d1be7ab6e35c6c2bfc391cc68bcc15636e3e460`  
+		Last Modified: Fri, 13 Jan 2017 23:15:22 GMT  
 		Size: 936.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:713c7d65b0d3bea9ab0b27daffc14d1b4a2c34a4b0b3e1bf38f0309284de118a`  
-		Last Modified: Fri, 06 Jan 2017 23:34:09 GMT  
-		Size: 2.4 KB (2421 bytes)  
+	-	`sha256:1dbcda15a0579a7fbbeea22fcff1230bbd190cc8efd0c2877b1920e27734065f`  
+		Last Modified: Fri, 13 Jan 2017 23:15:22 GMT  
+		Size: 2.4 KB (2420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86c18539deb2e6154840d2a292ac19de5018ef6685c24af3a86149fabf209082`  
-		Last Modified: Fri, 06 Jan 2017 23:34:09 GMT  
+	-	`sha256:92a3ee1c693e3d69754c4b1fae317d1f98cb05e852a9c49b829900b654af7e63`  
+		Last Modified: Fri, 13 Jan 2017 23:15:22 GMT  
 		Size: 120.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mysql:latest`
 
 ```console
-$ docker pull mysql@sha256:9ef4478a3aa597f59b2266d5702f55f29acc468b5bf3518c3c90cbca4e243823
+$ docker pull mysql@sha256:5cc898cf7da96e544ce209953f3a17a9965e7c310a51b21a45da7b766e49c568
 ```
 
 -	Platforms:
@@ -663,9 +663,9 @@ $ docker pull mysql@sha256:9ef4478a3aa597f59b2266d5702f55f29acc468b5bf3518c3c90c
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.8 MB (137832242 bytes)**  
+-	Total Size: **137.8 MB (137832248 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:78cdcf394b4eab49b6d64e3e97f303d452019cf2991f801865f26c062a398623`
+-	Image ID: `sha256:0e7ce207390ede31adb6abd73e9e2f68f7258a555c6efabb47558191c5b80be0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -684,29 +684,29 @@ RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-c
 RUN mkdir /docker-entrypoint-initdb.d
 # Wed, 14 Dec 2016 02:47:50 GMT
 RUN apt-get update && apt-get install -y perl pwgen --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Wed, 14 Dec 2016 02:47:52 GMT
-RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCBD3C456770C88C718D3B5072E1F5
-# Wed, 14 Dec 2016 02:47:53 GMT
+# Fri, 13 Jan 2017 23:12:35 GMT
+RUN set -ex; 	key='A4A9406876FCBD3C456770C88C718D3B5072E1F5'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/mysql.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list > /dev/null
+# Fri, 13 Jan 2017 23:13:09 GMT
 ENV MYSQL_MAJOR=5.7
-# Wed, 14 Dec 2016 02:47:53 GMT
+# Fri, 13 Jan 2017 23:13:09 GMT
 ENV MYSQL_VERSION=5.7.17-1debian8
-# Wed, 14 Dec 2016 02:47:54 GMT
+# Fri, 13 Jan 2017 23:13:10 GMT
 RUN echo "deb http://repo.mysql.com/apt/debian/ jessie mysql-${MYSQL_MAJOR}" > /etc/apt/sources.list.d/mysql.list
-# Wed, 14 Dec 2016 02:48:17 GMT
+# Fri, 13 Jan 2017 23:13:28 GMT
 RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update && apt-get install -y mysql-server="${MYSQL_VERSION}" && rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Wed, 14 Dec 2016 02:48:23 GMT
+# Fri, 13 Jan 2017 23:13:29 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/mysql.conf.d/mysqld.cnf 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
-# Wed, 14 Dec 2016 02:48:24 GMT
+# Fri, 13 Jan 2017 23:13:30 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 06 Jan 2017 23:32:34 GMT
+# Fri, 13 Jan 2017 23:13:31 GMT
 COPY file:915aa28b0ee915243ed916898ba2c6103acca9fe847f9365ced97a8b7ee5e4c9 in /usr/local/bin/ 
-# Fri, 06 Jan 2017 23:32:35 GMT
+# Fri, 13 Jan 2017 23:13:32 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Fri, 06 Jan 2017 23:32:36 GMT
+# Fri, 13 Jan 2017 23:13:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 06 Jan 2017 23:32:36 GMT
+# Fri, 13 Jan 2017 23:13:33 GMT
 EXPOSE 3306/tcp
-# Fri, 06 Jan 2017 23:32:37 GMT
+# Fri, 13 Jan 2017 23:13:34 GMT
 CMD ["mysqld"]
 ```
 
@@ -731,35 +731,35 @@ CMD ["mysqld"]
 		Last Modified: Wed, 14 Dec 2016 03:28:16 GMT  
 		Size: 8.2 MB (8248277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3f247e29ab116e18d92039c22d47021d968a34eb21c25aa3d3beb9d57182038`  
-		Last Modified: Wed, 14 Dec 2016 03:28:11 GMT  
-		Size: 19.0 KB (19020 bytes)  
+	-	`sha256:28c2c732c77ff239f41984b98a307c6d127f460bc129948fbe90ea8205b42d9c`  
+		Last Modified: Fri, 13 Jan 2017 23:14:18 GMT  
+		Size: 19.0 KB (18968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:21be3e56207166d0b71bdb3ad23e6db98386fe5311bfb2766059d8a0856f4f61`  
-		Last Modified: Wed, 14 Dec 2016 03:29:25 GMT  
+	-	`sha256:87a1e36fd27528a657d2ac4d507eda4e24e9817a978735eafb9147c5b75a42a2`  
+		Last Modified: Fri, 13 Jan 2017 23:15:22 GMT  
 		Size: 217.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c7399d6bf03330f82cb32f3dca0c4b298b5d89a1c90c2f2a2d56182222bc58de`  
-		Last Modified: Wed, 14 Dec 2016 03:29:52 GMT  
-		Size: 77.0 MB (76979027 bytes)  
+	-	`sha256:41b8bacae77a39764b551dac0e666e574465f6d78ec90962178b310a42a752e2`  
+		Last Modified: Fri, 13 Jan 2017 23:15:43 GMT  
+		Size: 77.0 MB (76979086 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ccdaeae6c735d31cbab37e1f9aa3a25ca1c6123d7332d5262c391f7c14f305d7`  
-		Last Modified: Wed, 14 Dec 2016 03:29:25 GMT  
+	-	`sha256:c52c7c073f423d56e2a642e21d1be7ab6e35c6c2bfc391cc68bcc15636e3e460`  
+		Last Modified: Fri, 13 Jan 2017 23:15:22 GMT  
 		Size: 936.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:713c7d65b0d3bea9ab0b27daffc14d1b4a2c34a4b0b3e1bf38f0309284de118a`  
-		Last Modified: Fri, 06 Jan 2017 23:34:09 GMT  
-		Size: 2.4 KB (2421 bytes)  
+	-	`sha256:1dbcda15a0579a7fbbeea22fcff1230bbd190cc8efd0c2877b1920e27734065f`  
+		Last Modified: Fri, 13 Jan 2017 23:15:22 GMT  
+		Size: 2.4 KB (2420 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86c18539deb2e6154840d2a292ac19de5018ef6685c24af3a86149fabf209082`  
-		Last Modified: Fri, 06 Jan 2017 23:34:09 GMT  
+	-	`sha256:92a3ee1c693e3d69754c4b1fae317d1f98cb05e852a9c49b829900b654af7e63`  
+		Last Modified: Fri, 13 Jan 2017 23:15:22 GMT  
 		Size: 120.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mysql:5.6.35`
 
 ```console
-$ docker pull mysql@sha256:802fcff03be5a6de9fa6c9a620af1026941868f9c40f69943e4b69ae94aac267
+$ docker pull mysql@sha256:0675db70a2cf4aff3e24a3af41726bb21fda90d5d3b5fb964512ff7ad32cd454
 ```
 
 -	Platforms:
@@ -769,9 +769,9 @@ $ docker pull mysql@sha256:802fcff03be5a6de9fa6c9a620af1026941868f9c40f69943e4b6
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **112.8 MB (112788967 bytes)**  
+-	Total Size: **112.8 MB (112788902 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6470fff0eb83ced7a792cf62c1a3d4ce862b711365e01af960610aa0f9dd7426`
+-	Image ID: `sha256:09b4a2e1f820729d189896db2f19e25916a1761388aaa260d0eeccc5fa37fe5b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -790,29 +790,29 @@ RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-c
 RUN mkdir /docker-entrypoint-initdb.d
 # Wed, 14 Dec 2016 02:47:50 GMT
 RUN apt-get update && apt-get install -y perl pwgen --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Wed, 14 Dec 2016 02:47:52 GMT
-RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCBD3C456770C88C718D3B5072E1F5
-# Wed, 14 Dec 2016 02:50:06 GMT
+# Fri, 13 Jan 2017 23:12:35 GMT
+RUN set -ex; 	key='A4A9406876FCBD3C456770C88C718D3B5072E1F5'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/mysql.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list > /dev/null
+# Fri, 13 Jan 2017 23:13:34 GMT
 ENV MYSQL_MAJOR=5.6
-# Wed, 14 Dec 2016 02:50:06 GMT
+# Fri, 13 Jan 2017 23:13:35 GMT
 ENV MYSQL_VERSION=5.6.35-1debian8
-# Wed, 14 Dec 2016 02:50:07 GMT
+# Fri, 13 Jan 2017 23:13:36 GMT
 RUN echo "deb http://repo.mysql.com/apt/debian/ jessie mysql-${MYSQL_MAJOR}" > /etc/apt/sources.list.d/mysql.list
-# Wed, 14 Dec 2016 02:50:27 GMT
+# Fri, 13 Jan 2017 23:13:53 GMT
 RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update && apt-get install -y mysql-server="${MYSQL_VERSION}" && rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Wed, 14 Dec 2016 02:50:36 GMT
+# Fri, 13 Jan 2017 23:13:54 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
-# Wed, 14 Dec 2016 02:50:36 GMT
+# Fri, 13 Jan 2017 23:13:55 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 06 Jan 2017 23:32:38 GMT
+# Fri, 13 Jan 2017 23:13:56 GMT
 COPY file:4525fb8b249a0bd84126fe09d40e3039307532c4050b0947d5bea89efdd4c1c9 in /usr/local/bin/ 
-# Fri, 06 Jan 2017 23:32:39 GMT
+# Fri, 13 Jan 2017 23:13:57 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Fri, 06 Jan 2017 23:32:40 GMT
+# Fri, 13 Jan 2017 23:13:57 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 06 Jan 2017 23:32:40 GMT
+# Fri, 13 Jan 2017 23:13:58 GMT
 EXPOSE 3306/tcp
-# Fri, 06 Jan 2017 23:32:41 GMT
+# Fri, 13 Jan 2017 23:13:58 GMT
 CMD ["mysqld"]
 ```
 
@@ -837,35 +837,35 @@ CMD ["mysqld"]
 		Last Modified: Wed, 14 Dec 2016 03:28:16 GMT  
 		Size: 8.2 MB (8248277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3f247e29ab116e18d92039c22d47021d968a34eb21c25aa3d3beb9d57182038`  
-		Last Modified: Wed, 14 Dec 2016 03:28:11 GMT  
-		Size: 19.0 KB (19020 bytes)  
+	-	`sha256:28c2c732c77ff239f41984b98a307c6d127f460bc129948fbe90ea8205b42d9c`  
+		Last Modified: Fri, 13 Jan 2017 23:14:18 GMT  
+		Size: 19.0 KB (18968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2f88d2008c200871e2a2ad64e7fd611d263b79f94fed7c5d8b9335f9d62f424`  
-		Last Modified: Wed, 14 Dec 2016 03:30:59 GMT  
-		Size: 217.0 B  
+	-	`sha256:00b305b424c474f7cce065e4f450f343f3432579f86852f6e54445d10cb44742`  
+		Last Modified: Fri, 13 Jan 2017 23:16:49 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb591b4395b518ac9d1c6d2ac3b86e976709df30022bb7734c992a263271cf55`  
-		Last Modified: Wed, 14 Dec 2016 03:31:18 GMT  
-		Size: 51.9 MB (51935436 bytes)  
+	-	`sha256:a0e1234346f82f153540a32f2306b8d95ad308505dd05aad4d52e036ff851602`  
+		Last Modified: Fri, 13 Jan 2017 23:17:07 GMT  
+		Size: 51.9 MB (51935422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da36fdc89c53606f2081c1028188d1d515c408ec59ed9fa15ad28830d7e942b5`  
-		Last Modified: Wed, 14 Dec 2016 03:30:59 GMT  
-		Size: 1.2 KB (1214 bytes)  
+	-	`sha256:08976c1ec3a557b5b6af0480afd6d722dd811ff59f16f5064ab27dfaa3755ffb`  
+		Last Modified: Fri, 13 Jan 2017 23:16:49 GMT  
+		Size: 1.2 KB (1212 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:151d93966c53ec34e2ba4f628941f3ca032a6b5b7383dadf7d93b1b9855d555c`  
-		Last Modified: Fri, 06 Jan 2017 23:35:33 GMT  
-		Size: 2.5 KB (2460 bytes)  
+	-	`sha256:f0574ff12cb5691d7668435f35722c0844492f8c19ce2a9ec4fc936f6af5666e`  
+		Last Modified: Fri, 13 Jan 2017 23:16:49 GMT  
+		Size: 2.5 KB (2461 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4643c1372b94813f3f9f25882862606824828929833b942527424737f6df0740`  
-		Last Modified: Fri, 06 Jan 2017 23:35:33 GMT  
-		Size: 119.0 B  
+	-	`sha256:33ec6082e9519d40821957054d40c7273ad6427bd30be73036bc521475d68ab8`  
+		Last Modified: Fri, 13 Jan 2017 23:16:48 GMT  
+		Size: 120.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mysql:5.6`
 
 ```console
-$ docker pull mysql@sha256:802fcff03be5a6de9fa6c9a620af1026941868f9c40f69943e4b69ae94aac267
+$ docker pull mysql@sha256:0675db70a2cf4aff3e24a3af41726bb21fda90d5d3b5fb964512ff7ad32cd454
 ```
 
 -	Platforms:
@@ -875,9 +875,9 @@ $ docker pull mysql@sha256:802fcff03be5a6de9fa6c9a620af1026941868f9c40f69943e4b6
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **112.8 MB (112788967 bytes)**  
+-	Total Size: **112.8 MB (112788902 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6470fff0eb83ced7a792cf62c1a3d4ce862b711365e01af960610aa0f9dd7426`
+-	Image ID: `sha256:09b4a2e1f820729d189896db2f19e25916a1761388aaa260d0eeccc5fa37fe5b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
@@ -896,29 +896,29 @@ RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-c
 RUN mkdir /docker-entrypoint-initdb.d
 # Wed, 14 Dec 2016 02:47:50 GMT
 RUN apt-get update && apt-get install -y perl pwgen --no-install-recommends && rm -rf /var/lib/apt/lists/*
-# Wed, 14 Dec 2016 02:47:52 GMT
-RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys A4A9406876FCBD3C456770C88C718D3B5072E1F5
-# Wed, 14 Dec 2016 02:50:06 GMT
+# Fri, 13 Jan 2017 23:12:35 GMT
+RUN set -ex; 	key='A4A9406876FCBD3C456770C88C718D3B5072E1F5'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/mysql.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list > /dev/null
+# Fri, 13 Jan 2017 23:13:34 GMT
 ENV MYSQL_MAJOR=5.6
-# Wed, 14 Dec 2016 02:50:06 GMT
+# Fri, 13 Jan 2017 23:13:35 GMT
 ENV MYSQL_VERSION=5.6.35-1debian8
-# Wed, 14 Dec 2016 02:50:07 GMT
+# Fri, 13 Jan 2017 23:13:36 GMT
 RUN echo "deb http://repo.mysql.com/apt/debian/ jessie mysql-${MYSQL_MAJOR}" > /etc/apt/sources.list.d/mysql.list
-# Wed, 14 Dec 2016 02:50:27 GMT
+# Fri, 13 Jan 2017 23:13:53 GMT
 RUN { 		echo mysql-community-server mysql-community-server/data-dir select ''; 		echo mysql-community-server mysql-community-server/root-pass password ''; 		echo mysql-community-server mysql-community-server/re-root-pass password ''; 		echo mysql-community-server mysql-community-server/remove-test-db select false; 	} | debconf-set-selections 	&& apt-get update && apt-get install -y mysql-server="${MYSQL_VERSION}" && rm -rf /var/lib/apt/lists/* 	&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld 	&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld 	&& chmod 777 /var/run/mysqld
-# Wed, 14 Dec 2016 02:50:36 GMT
+# Fri, 13 Jan 2017 23:13:54 GMT
 RUN sed -Ei 's/^(bind-address|log)/#&/' /etc/mysql/my.cnf 	&& echo '[mysqld]\nskip-host-cache\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf
-# Wed, 14 Dec 2016 02:50:36 GMT
+# Fri, 13 Jan 2017 23:13:55 GMT
 VOLUME [/var/lib/mysql]
-# Fri, 06 Jan 2017 23:32:38 GMT
+# Fri, 13 Jan 2017 23:13:56 GMT
 COPY file:4525fb8b249a0bd84126fe09d40e3039307532c4050b0947d5bea89efdd4c1c9 in /usr/local/bin/ 
-# Fri, 06 Jan 2017 23:32:39 GMT
+# Fri, 13 Jan 2017 23:13:57 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Fri, 06 Jan 2017 23:32:40 GMT
+# Fri, 13 Jan 2017 23:13:57 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 06 Jan 2017 23:32:40 GMT
+# Fri, 13 Jan 2017 23:13:58 GMT
 EXPOSE 3306/tcp
-# Fri, 06 Jan 2017 23:32:41 GMT
+# Fri, 13 Jan 2017 23:13:58 GMT
 CMD ["mysqld"]
 ```
 
@@ -943,29 +943,29 @@ CMD ["mysqld"]
 		Last Modified: Wed, 14 Dec 2016 03:28:16 GMT  
 		Size: 8.2 MB (8248277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3f247e29ab116e18d92039c22d47021d968a34eb21c25aa3d3beb9d57182038`  
-		Last Modified: Wed, 14 Dec 2016 03:28:11 GMT  
-		Size: 19.0 KB (19020 bytes)  
+	-	`sha256:28c2c732c77ff239f41984b98a307c6d127f460bc129948fbe90ea8205b42d9c`  
+		Last Modified: Fri, 13 Jan 2017 23:14:18 GMT  
+		Size: 19.0 KB (18968 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2f88d2008c200871e2a2ad64e7fd611d263b79f94fed7c5d8b9335f9d62f424`  
-		Last Modified: Wed, 14 Dec 2016 03:30:59 GMT  
-		Size: 217.0 B  
+	-	`sha256:00b305b424c474f7cce065e4f450f343f3432579f86852f6e54445d10cb44742`  
+		Last Modified: Fri, 13 Jan 2017 23:16:49 GMT  
+		Size: 218.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb591b4395b518ac9d1c6d2ac3b86e976709df30022bb7734c992a263271cf55`  
-		Last Modified: Wed, 14 Dec 2016 03:31:18 GMT  
-		Size: 51.9 MB (51935436 bytes)  
+	-	`sha256:a0e1234346f82f153540a32f2306b8d95ad308505dd05aad4d52e036ff851602`  
+		Last Modified: Fri, 13 Jan 2017 23:17:07 GMT  
+		Size: 51.9 MB (51935422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da36fdc89c53606f2081c1028188d1d515c408ec59ed9fa15ad28830d7e942b5`  
-		Last Modified: Wed, 14 Dec 2016 03:30:59 GMT  
-		Size: 1.2 KB (1214 bytes)  
+	-	`sha256:08976c1ec3a557b5b6af0480afd6d722dd811ff59f16f5064ab27dfaa3755ffb`  
+		Last Modified: Fri, 13 Jan 2017 23:16:49 GMT  
+		Size: 1.2 KB (1212 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:151d93966c53ec34e2ba4f628941f3ca032a6b5b7383dadf7d93b1b9855d555c`  
-		Last Modified: Fri, 06 Jan 2017 23:35:33 GMT  
-		Size: 2.5 KB (2460 bytes)  
+	-	`sha256:f0574ff12cb5691d7668435f35722c0844492f8c19ce2a9ec4fc936f6af5666e`  
+		Last Modified: Fri, 13 Jan 2017 23:16:49 GMT  
+		Size: 2.5 KB (2461 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4643c1372b94813f3f9f25882862606824828929833b942527424737f6df0740`  
-		Last Modified: Fri, 06 Jan 2017 23:35:33 GMT  
-		Size: 119.0 B  
+	-	`sha256:33ec6082e9519d40821957054d40c7273ad6427bd30be73036bc521475d68ab8`  
+		Last Modified: Fri, 13 Jan 2017 23:16:48 GMT  
+		Size: 120.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `mysql:5.5.54`
