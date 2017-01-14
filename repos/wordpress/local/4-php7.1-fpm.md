@@ -1,9 +1,9 @@
-# `wordpress:4.7.0-php7.1-fpm`
+# `wordpress:4.7.1-php7.1-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c97db9cfecf4a2b4576f72ec51e0bc60e5dc98ad86c06ed2157b7042dcdb28ab`
-- Created: `2017-01-06T23:59:39.131685631Z`
+- Image ID: `sha256:1709ddb8247d7539f43a539b8d3f82b2003e7cf7acb6339d9d633e7fbeea0aa0`
+- Created: `2017-01-13T19:38:19.739792108Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["php-fpm"]`
@@ -21,8 +21,8 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.0.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=a810b3f29c21407c24caa88f50649320d20ba6892ae1923132598b8a0ca145b6`
   - `PHP_MD5=cf36039303c47f493100afea522a8f53`
-  - `WORDPRESS_VERSION=4.7`
-  - `WORDPRESS_SHA1=1e14144c4db71421dc4ed22f94c3914dfc3b7020`
+  - `WORDPRESS_VERSION=4.7.1`
+  - `WORDPRESS_SHA1=8e56ba56c10a3f245c616b13e46bd996f63793d6`
 
 ## `dpkg` (`.deb`-based packages)
 
