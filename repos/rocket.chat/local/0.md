@@ -1,16 +1,16 @@
-# `rocket.chat:0.48.2`
+# `rocket.chat:0.49.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fe660e9c160cb275a43a7cd7ffb48fbd5dfd373ed63d74985df934b4f0b2e373`
-- Created: `2017-01-06T22:12:13.783886679Z`
+- Image ID: `sha256:2b15c8671bfbda7f0441cb14be81ff1872174dfbd1339e779a4d1dd40280a16e`
+- Created: `2017-01-13T23:18:33.595769803Z`
 - Arch: `linux`/`amd64`
 - Command: `["node","main.js"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
   - `NODE_VERSION=4.7.2`
-  - `RC_VERSION=0.48.2`
+  - `RC_VERSION=0.49.0`
   - `MONGO_URL=mongodb://db:27017/meteor`
   - `HOME=/tmp`
   - `PORT=3000`
