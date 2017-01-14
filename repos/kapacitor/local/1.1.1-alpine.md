@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f0611c744ed2f710fdf8533d1d247db745ff7842f2031ea5178e6b0ff407b3e7`
-- Created: `2016-12-27T19:16:59.335705211Z`
+- Image ID: `sha256:b0c72cde0253390aa8e3ee0d2cc0ae64c20d430df3a287737afa569ae123c352`
+- Created: `2017-01-13T20:14:24.955845309Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["kapacitord"]`
