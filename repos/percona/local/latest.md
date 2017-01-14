@@ -2,14 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:920c429023d75d425a58b4b9bed63ab03af80ec228698d7e9bd0a1d10546ba53`
-- Created: `2016-12-14T14:39:05.467981642Z`
+- Image ID: `sha256:e0d0cbe3be29593d41eb36573f2a3a833edb19d565e1eefbb76ae2150420f005`
+- Created: `2017-01-13T18:37:31.119699414Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["mysqld"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.7`
+  - `GPG_KEYS=430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
   - `PERCONA_MAJOR=5.7`
   - `PERCONA_VERSION=5.7.16-10-1.jessie`
 
