@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:813f4d0ccb4c8e31b1017ec2878b0db60f0fb12082a49f27a66a10d81c1571a8`
-- Created: `2016-12-13T23:04:58.776013669Z`
+- Image ID: `sha256:183ce21b9193dd451482c8a6db0a13621cb14f141ebc6650135a2c030874183d`
+- Created: `2017-01-13T17:46:44.05175715Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["cassandra","-f"]`
@@ -3112,11 +3112,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/pcre3/2:8.35-3.3+deb8u4/
 - https://sources.debian.net/src/pcre3/2:8.35-3.3+deb8u4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `pcsc-lite=1.8.13-1`
+### `dpkg` source package: `pcsc-lite=1.8.13-1+deb8u1`
 
 Binary Packages:
 
-- `libpcsclite1:amd64=1.8.13-1`
+- `libpcsclite1:amd64=1.8.13-1+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpcsclite1/copyright`)
 
@@ -3129,16 +3129,16 @@ Licenses: (parsed from: `/usr/share/doc/libpcsclite1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pcsc-lite=1.8.13-1
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.13-1.dsc' pcsc-lite_1.8.13-1.dsc 2181 SHA256:2f21bff24a4502d610f9c7f67254e060c533dfc5dd45d4dc235d68d5adbbfd2f
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.13.orig.tar.bz2' pcsc-lite_1.8.13.orig.tar.bz2 584083 SHA256:f315047e808d63a3262c4a040f77548af2e04d1fd707e0c2759369b926fbbc3b
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.13-1.debian.tar.xz' pcsc-lite_1.8.13-1.debian.tar.xz 14488 SHA256:4e317d8b2ed9405b9f0c39841df3004dbc5a2832383d5092a95a93a49ae48ae2
+$ apt-get source -qq --print-uris pcsc-lite=1.8.13-1+deb8u1
+'http://security.debian.org/pool/updates/main/p/pcsc-lite/pcsc-lite_1.8.13-1+deb8u1.dsc' pcsc-lite_1.8.13-1+deb8u1.dsc 2252 SHA256:325efa1f879f04a80447077b4fae1bcac2b6886cd9c7b3459ee22ca3050df268
+'http://security.debian.org/pool/updates/main/p/pcsc-lite/pcsc-lite_1.8.13.orig.tar.bz2' pcsc-lite_1.8.13.orig.tar.bz2 584083 SHA256:f315047e808d63a3262c4a040f77548af2e04d1fd707e0c2759369b926fbbc3b
+'http://security.debian.org/pool/updates/main/p/pcsc-lite/pcsc-lite_1.8.13-1+deb8u1.debian.tar.xz' pcsc-lite_1.8.13-1+deb8u1.debian.tar.xz 15700 SHA256:61e89cdd33e5f189de19ad3465d3bd40f2a5326c84dcc04e8d6519f7a74edf66
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/pcsc-lite/1.8.13-1/
-- https://sources.debian.net/src/pcsc-lite/1.8.13-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/pcsc-lite/1.8.13-1+deb8u1/
+- https://sources.debian.net/src/pcsc-lite/1.8.13-1+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `perl=5.20.2-3+deb8u6`
 
