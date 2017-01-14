@@ -12,6 +12,8 @@
 -	[`influxdb:1.1-alpine`](#influxdb11-alpine)
 -	[`influxdb:1.1.1-alpine`](#influxdb111-alpine)
 -	[`influxdb:alpine`](#influxdbalpine)
+-	[`influxdb:1.2.0-rc1`](#influxdb120-rc1)
+-	[`influxdb:1.2.0-rc1-alpine`](#influxdb120-rc1-alpine)
 
 ## `influxdb:1.0`
 
@@ -662,3 +664,11 @@ CMD ["influxd"]
 		Last Modified: Fri, 13 Jan 2017 20:13:36 GMT  
 		Size: 182.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `influxdb:1.2.0-rc1`
+
+**does not exist** (yet?)
+
+## `influxdb:1.2.0-rc1-alpine`
+
+**does not exist** (yet?)
