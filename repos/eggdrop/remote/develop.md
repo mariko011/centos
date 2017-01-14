@@ -1,7 +1,7 @@
 ## `eggdrop:develop`
 
 ```console
-$ docker pull eggdrop@sha256:e26615fe29103abe0203702915639463df138b246ff102396b35378aa1c03ee8
+$ docker pull eggdrop@sha256:39fb76e55e58508b0dbb3a89cc73671ea4dad4cb4048ae724d6e6483362d3b3f
 ```
 
 -	Platforms:
@@ -13,7 +13,7 @@ $ docker pull eggdrop@sha256:e26615fe29103abe0203702915639463df138b246ff102396b3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **11.4 MB (11441779 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24d885b8fd7c1901e519ecd8d607c01d8b71a7431bc7c1c1fb868269a0bc4fa3`
+-	Image ID: `sha256:e846a6f3a0f9b4d43ee416ed5bdf377b7276b6be70dcf8b6432a97f32b132b4a`
 -	Entrypoint: `["\/home\/eggdrop\/eggdrop\/entrypoint.sh"]`
 -	Default Command: `["eggdrop.conf"]`
 
@@ -48,13 +48,13 @@ ENV CHANFILE=eggdrop.chan
 WORKDIR /home/eggdrop/eggdrop
 # Wed, 04 Jan 2017 00:53:32 GMT
 EXPOSE 3333/tcp
-# Thu, 12 Jan 2017 18:24:58 GMT
-COPY file:60002465eb391b3d073a25a5737706a3119fd836517a661f9b0044343d3a3a44 in /home/eggdrop/eggdrop 
-# Thu, 12 Jan 2017 18:24:59 GMT
+# Sat, 14 Jan 2017 00:49:35 GMT
+COPY file:186ca9f07ef098a22d2f8630c57795c609717eb1ff1a8fa7a3e86685688f4973 in /home/eggdrop/eggdrop 
+# Sat, 14 Jan 2017 00:49:36 GMT
 COPY file:919804e5ddd4c807c178caccfed03e9d75a459fe0f744c3a1ada109817cb44ec in /home/eggdrop/eggdrop/scripts/ 
-# Thu, 12 Jan 2017 18:24:59 GMT
+# Sat, 14 Jan 2017 00:49:37 GMT
 ENTRYPOINT ["/home/eggdrop/eggdrop/entrypoint.sh"]
-# Thu, 12 Jan 2017 18:24:59 GMT
+# Sat, 14 Jan 2017 00:49:37 GMT
 CMD ["eggdrop.conf"]
 ```
 
@@ -75,11 +75,11 @@ CMD ["eggdrop.conf"]
 		Last Modified: Wed, 04 Jan 2017 00:53:52 GMT  
 		Size: 9.1 MB (9117099 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8909f513a5ddbd04a67fa2f38602696f0f3b586fc78efe6c448a3c4361c09903`  
-		Last Modified: Thu, 12 Jan 2017 18:25:18 GMT  
-		Size: 1.7 KB (1702 bytes)  
+	-	`sha256:263723e500178b5c8713ca90116bc1151172031fc9b7d289e0b0826a7b13b4b5`  
+		Last Modified: Sat, 14 Jan 2017 00:49:55 GMT  
+		Size: 1.7 KB (1696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4827248f064a1fa82ed96034f21bae20ab47610aa509f7e2b7ba84c89c86d401`  
-		Last Modified: Thu, 12 Jan 2017 18:25:17 GMT  
-		Size: 692.0 B  
+	-	`sha256:c020f65f2ba75bae94242a91108c4edcda1e8f2f1d38fa0960f61335310b74ea`  
+		Last Modified: Sat, 14 Jan 2017 00:49:56 GMT  
+		Size: 698.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
