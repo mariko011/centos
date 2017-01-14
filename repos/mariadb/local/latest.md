@@ -2,14 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c9466db443d846318c1342b219b551692dbd9826d6180f5f366e157595697580`
-- Created: `2016-12-19T22:34:22.051769343Z`
+- Image ID: `sha256:95b68bbe368bda400b1c967850fade277b9535b7d8d6239389ffa32dff86af9f`
+- Created: `2017-01-13T18:06:25.087767256Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["mysqld"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.7`
+  - `GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
   - `MARIADB_MAJOR=10.1`
   - `MARIADB_VERSION=10.1.20+maria-1~jessie`
 
