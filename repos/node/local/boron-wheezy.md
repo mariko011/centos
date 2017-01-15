@@ -2660,19 +2660,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libx11=2:1.5.0-1+deb7u3
-'http://security.debian.org/pool/updates/main/libx/libx11/libx11_1.5.0-1+deb7u3.dsc' libx11_1.5.0-1+deb7u3.dsc 2480 SHA256:706e16c11038fbf4578a6fb3f4b6593f8dbb62d1f65aa94b1ef6399af7607184
-'http://security.debian.org/pool/updates/main/libx/libx11/libx11_1.5.0.orig.tar.gz' libx11_1.5.0.orig.tar.gz 3073820 SHA256:2ddc05170baf70dd650ee6108c5882eb657cafaf61a5b5261badb26703122518
-'http://security.debian.org/pool/updates/main/libx/libx11/libx11_1.5.0-1+deb7u3.diff.gz' libx11_1.5.0-1+deb7u3.diff.gz 107409 SHA256:3c6a45a0868be9e16beea169621e21fa972514c26820ffa4f35b344de03f3d90
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libx11/2:1.5.0-1+deb7u3/
-- https://sources.debian.net/src/libx11/2:1.5.0-1+deb7u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxau=1:1.0.7-1`
 
