@@ -196,18 +196,8 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-files=9.7
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.7.dsc' base-files_9.7.dsc 1067 SHA256:e223cd9b1c2a2f5afab263e9a58f99556c449d6ec49ef1f96fe55fbd33b10e6c
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.7.tar.xz' base-files_9.7.tar.xz 53492 SHA256:7b96a191496f85e86434ffdeeae8ed0583f1b333dd276ab685363bfff2da8398
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/base-files/9.7/
-- https://sources.debian.net/src/base-files/9.7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `base-passwd=3.5.42`
 
@@ -1455,19 +1445,8 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.9-4
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.9-4.dsc' libtasn1-6_4.9-4.dsc 2402 SHA256:ff99387e92055697da6192cbab3ea493b542c0838f049646117d23f31ea5c08e
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.9.orig.tar.gz' libtasn1-6_4.9.orig.tar.gz 1864709 SHA256:4f6f7a8fd691ac2b8307c8ca365bad711db607d4ad5966f6938a9d2ecd65c920
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.9-4.debian.tar.xz' libtasn1-6_4.9-4.debian.tar.xz 58180 SHA256:c9ba4c28e12bc32b77f044ecb1091ef22525ac5e8bc4fd75aaffc3923c82f19d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libtasn1-6/4.9-4/
-- https://sources.debian.net/src/libtasn1-6/4.9-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libx11=2:1.6.4-2`
 
