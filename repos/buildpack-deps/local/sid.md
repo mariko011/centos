@@ -330,18 +330,8 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-files=9.7
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.7.dsc' base-files_9.7.dsc 1067 SHA256:e223cd9b1c2a2f5afab263e9a58f99556c449d6ec49ef1f96fe55fbd33b10e6c
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.7.tar.xz' base-files_9.7.tar.xz 53492 SHA256:7b96a191496f85e86434ffdeeae8ed0583f1b333dd276ab685363bfff2da8398
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/base-files/9.7/
-- https://sources.debian.net/src/base-files/9.7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `base-passwd=3.5.42`
 
@@ -3627,18 +3617,8 @@ Licenses: (parsed from: `/usr/share/doc/mysql-common/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mysql-defaults=1.0.1
-'http://deb.debian.org/debian/pool/main/m/mysql-defaults/mysql-defaults_1.0.1.dsc' mysql-defaults_1.0.1.dsc 2171 SHA256:c4f1ab564fcc430c3aae092450a397484a226e850d681b2c4e5a68fca0b5b0b3
-'http://deb.debian.org/debian/pool/main/m/mysql-defaults/mysql-defaults_1.0.1.tar.xz' mysql-defaults_1.0.1.tar.xz 5288 SHA256:0ceb45483307dc2e7182c5856d805714d43f6cbc10478441a8923667e90d97b0
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mysql-defaults/1.0.1/
-- https://sources.debian.net/src/mysql-defaults/1.0.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ncurses=6.0+20161126-1`
 

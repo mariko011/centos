@@ -1791,19 +1791,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.6.6+dfsg-1
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.6.6+dfsg-1.dsc' imagemagick_6.9.6.6+dfsg-1.dsc 5159 SHA256:5e729e28a112d7c6ff125850cb6903ebb76ed3d0bf73f6df3fe7eaa8da4d999f
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.6.6+dfsg.orig.tar.xz' imagemagick_6.9.6.6+dfsg.orig.tar.xz 8921112 SHA256:fdab5e00b61408752ebeb33e3a4a4c3dfdc9bf2ce67dbab2851581474bd1d602
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.6.6+dfsg-1.debian.tar.xz' imagemagick_6.9.6.6+dfsg-1.debian.tar.xz 241996 SHA256:be449d8ea0165e7b065ac3b5867e9449d3b52ccf060716f82ddbd5a6dac28bb0
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/imagemagick/8:6.9.6.6+dfsg-1/
-- https://sources.debian.net/src/imagemagick/8:6.9.6.6+dfsg-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9.4-2`
 
@@ -1886,19 +1875,8 @@ Licenses: (parsed from: `/usr/share/doc/libisl15/copyright`)
 - `LGPL-2.1+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris isl=0.17.1-1
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.17.1-1.dsc' isl_0.17.1-1.dsc 1857 SHA256:771ec7a63dd99952bd2bf952aeb48ed08c5c24b6a4d7ced9b0210df5bb71df46
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.17.1.orig.tar.xz' isl_0.17.1.orig.tar.xz 1440564 SHA256:be152e5c816b477594f4c6194b5666d8129f3a27702756ae9ff60346a8731647
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.17.1-1.debian.tar.xz' isl_0.17.1-1.debian.tar.xz 21556 SHA256:f63c2e46a065855561ba3ae72fe073c334231911866af34f3ec7db539bee6200
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/isl/0.17.1-1/
-- https://sources.debian.net/src/isl/0.17.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `jbigkit=2.1-3.1`
 
@@ -3337,19 +3315,8 @@ Licenses: (parsed from: `/usr/share/doc/m4/copyright`)
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris m4=1.4.17-5
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.17-5.dsc' m4_1.4.17-5.dsc 1411 SHA256:4fb85651ee1e951f17304042e83253d7ca75a2f962be9796b10aad5ac96f5524
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.17.orig.tar.xz' m4_1.4.17.orig.tar.xz 1149088 SHA256:f0543c3beb51fa6b3337d8025331591e0e18d8ec2886ed391f1aade43477d508
-'http://deb.debian.org/debian/pool/main/m/m4/m4_1.4.17-5.debian.tar.xz' m4_1.4.17-5.debian.tar.xz 12544 SHA256:74045004fae4025bc850c2d53e4d95ed7374b9c22c846c3d3596e39986697049
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/m4/1.4.17-5/
-- https://sources.debian.net/src/m4/1.4.17-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `make-dfsg=4.1-9`
 
