@@ -704,7 +704,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 ## `buildpack-deps:stretch`
 
 ```console
-$ docker pull buildpack-deps@sha256:d97116abca332fc65e963e273c3f55678a84868dd0ff02f3d82fd36f5355605d
+$ docker pull buildpack-deps@sha256:7733873ab8dc007eb96adfabd8f7e688404e30fea9dc7aca1b8d3db1619443ea
 ```
 
 -	Platforms:
@@ -714,40 +714,40 @@ $ docker pull buildpack-deps@sha256:d97116abca332fc65e963e273c3f55678a84868dd0ff
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **309.7 MB (309684249 bytes)**  
+-	Total Size: **311.1 MB (311051217 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fcd0cdad3f8e54955f2d7a6905b08da3e99f57bdcca37aba5d55352e9b23fef4`
+-	Image ID: `sha256:0decd89a95112aa6eb20c863d70f31c590f8891f2d7f46c6b00ce4584ac2285d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 13 Dec 2016 22:13:38 GMT
-ADD file:b8661e5bd7179ac7b23f0013637df93301390246609d446f45217ead261c33bf in / 
-# Tue, 13 Dec 2016 22:13:43 GMT
+# Mon, 16 Jan 2017 20:39:16 GMT
+ADD file:c09931042d44875d1db95d3faa08303a098dfc42738c80d38856cb84d78ebbda in / 
+# Mon, 16 Jan 2017 20:39:24 GMT
 CMD ["/bin/bash"]
-# Tue, 13 Dec 2016 23:01:20 GMT
+# Tue, 17 Jan 2017 00:01:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 13 Dec 2016 23:01:39 GMT
+# Tue, 17 Jan 2017 00:02:18 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 15 Dec 2016 19:04:38 GMT
+# Tue, 17 Jan 2017 00:07:49 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:ca67a6a92c6d53b4eea40b8e1f63130784c8751379ffdc08b680768c57e510bc`  
-		Last Modified: Tue, 13 Dec 2016 22:23:25 GMT  
-		Size: 43.7 MB (43673589 bytes)  
+	-	`sha256:cdc4502972ee4dbc3dbcc16a2eeaddaa8179f090379768f8cb9438cd01bf5d8a`  
+		Last Modified: Mon, 16 Jan 2017 20:50:09 GMT  
+		Size: 43.9 MB (43871389 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d50a9ffe9d75cfda065f757fa9081dbf0712e0713f4e61b82e1f9ef1e832cf23`  
-		Last Modified: Thu, 15 Dec 2016 19:38:38 GMT  
-		Size: 20.9 MB (20861095 bytes)  
+	-	`sha256:18f85d83d587c9dffea05a7552cfb010c9d4124a626e61dfa27649b01ce06bb6`  
+		Last Modified: Tue, 17 Jan 2017 00:22:42 GMT  
+		Size: 20.9 MB (20946053 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6df867bf106bd575d903c4270040d250a16b3b9597ba19434ab5f01e1d778849`  
-		Last Modified: Thu, 15 Dec 2016 19:39:20 GMT  
-		Size: 50.7 MB (50695089 bytes)  
+	-	`sha256:8f4ddd0a063cb5f89e516dc6684c1f37599b5f08cf8802b14c2619d667c428d0`  
+		Last Modified: Tue, 17 Jan 2017 00:23:34 GMT  
+		Size: 51.3 MB (51254010 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28dd9a54d00c00788c372a742dfd583dda8248a2d445ea31922ac7a8f97c9ec4`  
-		Last Modified: Thu, 15 Dec 2016 19:40:40 GMT  
-		Size: 194.5 MB (194454476 bytes)  
+	-	`sha256:de9bbc035e47381b38b3f5f3be04b9ffd9fc68a86113c8a23f0a53021c935336`  
+		Last Modified: Tue, 17 Jan 2017 00:30:07 GMT  
+		Size: 195.0 MB (194979765 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:trusty-curl`
@@ -1034,7 +1034,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 ## `buildpack-deps:wheezy`
 
 ```console
-$ docker pull buildpack-deps@sha256:61d4e59b3d30bc47307e0b2a0a731c5a191c980b5d2e2215da538ed1ee972db4
+$ docker pull buildpack-deps@sha256:2d4941229c061ea111443048fc96882d4210165b59314391b81fe2749a366df6
 ```
 
 -	Platforms:
@@ -1044,40 +1044,40 @@ $ docker pull buildpack-deps@sha256:61d4e59b3d30bc47307e0b2a0a731c5a191c980b5d2e
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **176.9 MB (176932522 bytes)**  
+-	Total Size: **176.9 MB (176940894 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2650ff1a6c7685bb515a3007ad6a82376271d1f5d0f17dc3add5025bf263981`
+-	Image ID: `sha256:1f249a8a0521dc26dfb1a4d0eae36c91f90cfdcd41cabb7fd724a97707f40a23`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 13 Dec 2016 22:15:37 GMT
-ADD file:199da03e20ee14ea6024525caeb8435b86af4b2788f5a8c8f6fb9bb0209f3fff in / 
-# Tue, 13 Dec 2016 22:15:46 GMT
+# Mon, 16 Jan 2017 20:41:52 GMT
+ADD file:a341378be341bc318a57379c0a4b72f182f93ad617f08164343662e789b7244b in / 
+# Mon, 16 Jan 2017 20:42:00 GMT
 CMD ["/bin/bash"]
-# Tue, 13 Dec 2016 23:01:52 GMT
+# Tue, 17 Jan 2017 00:02:40 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 13 Dec 2016 23:02:09 GMT
+# Tue, 17 Jan 2017 00:03:12 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 15 Dec 2016 19:06:59 GMT
+# Tue, 17 Jan 2017 00:09:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:b65f3290184628b3ea88b85793900695faa9f3878990fec458a4024dc7211bc5`  
-		Last Modified: Tue, 13 Dec 2016 22:26:49 GMT  
-		Size: 37.3 MB (37284147 bytes)  
+	-	`sha256:d9509b80c497066660d1e7a4e22ba112d025e83f6f7183d53c95bed1513938b7`  
+		Last Modified: Mon, 16 Jan 2017 20:55:10 GMT  
+		Size: 37.3 MB (37284485 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:955df57e3a2cd5b72c67014cfd876fd1d7e79c99543be94feb1ae730fb346722`  
-		Last Modified: Wed, 14 Dec 2016 03:00:31 GMT  
-		Size: 6.8 MB (6823208 bytes)  
+	-	`sha256:a0c12b04be6f745f58154eeb7b80403f95b355ca3842d384ffb685acf20432ad`  
+		Last Modified: Tue, 17 Jan 2017 00:24:03 GMT  
+		Size: 6.8 MB (6823701 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:12bf7f3cec6bd4c967cf5c23c85bd72c1200ab75cb929fde88ea18c387567e7e`  
-		Last Modified: Wed, 14 Dec 2016 03:00:42 GMT  
-		Size: 37.4 MB (37441906 bytes)  
+	-	`sha256:0998595e89ba3755e57a2e3cd79c8dd7805959a77828f622fa3b344a73ca5d50`  
+		Last Modified: Tue, 17 Jan 2017 00:24:49 GMT  
+		Size: 37.4 MB (37442207 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85915911f3b5194ea6575803f606d0ac89e130ef149f8407b81daea5e23a796a`  
-		Last Modified: Thu, 15 Dec 2016 19:44:08 GMT  
-		Size: 95.4 MB (95383261 bytes)  
+	-	`sha256:0e4091731f9c3d754a7c57ebafeba083ad143990d82e5d43f481fc1164a8d6ee`  
+		Last Modified: Tue, 17 Jan 2017 00:31:14 GMT  
+		Size: 95.4 MB (95390501 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:xenial-curl`
