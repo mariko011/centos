@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:db4d5459f4f1c940eb7c44900cd61b65d6cbc13b333df7e90f2c5b962dfed387`
-- Created: `2016-12-13T23:02:09.226794083Z`
+- Image ID: `sha256:ef5071ba413ca1e4fc2151af2bc0092083577f4615da8350124faf797313f685`
+- Created: `2017-01-17T00:03:12.510683623Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -349,13 +349,13 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/coreutils/8.13-3.5/
 - https://sources.debian.net/src/coreutils/8.13-3.5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `curl=7.26.0-1+wheezy17`
+### `dpkg` source package: `curl=7.26.0-1+wheezy18`
 
 Binary Packages:
 
-- `curl=7.26.0-1+wheezy17`
-- `libcurl3:amd64=7.26.0-1+wheezy17`
-- `libcurl3-gnutls:amd64=7.26.0-1+wheezy17`
+- `curl=7.26.0-1+wheezy18`
+- `libcurl3:amd64=7.26.0-1+wheezy18`
+- `libcurl3-gnutls:amd64=7.26.0-1+wheezy18`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -364,8 +364,19 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy18
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy18.dsc' curl_7.26.0-1+wheezy18.dsc 2520 SHA256:37fa66d05c8c7caa4434cff65045ac8c54accfd902130ff7d56a6088d3c45785
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy18.debian.tar.gz' curl_7.26.0-1+wheezy18.debian.tar.gz 65093 SHA256:a19eadf33ade3221a9a4aeb8aba04902965aedcb73202d372b7c538d7feadcff
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy18/
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy18/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
 
