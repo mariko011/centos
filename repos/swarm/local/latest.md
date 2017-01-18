@@ -1,9 +1,9 @@
-# `swarm:1.2.5`
+# `swarm:1.2.6`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f1d5a057a3894d735c2d65faee1c38cff2ce760f99d5c0a7b6a85734813543a2`
-- Created: `2016-08-30T17:45:05.333836007Z`
+- Image ID: `sha256:36b1e23becabc0b27c5787712dce019982c048665fd9e7e6cb032a46bcac510d`
+- Created: `2017-01-18T02:32:06.647773798Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/swarm"]`
 - Command: `["--help"]`
