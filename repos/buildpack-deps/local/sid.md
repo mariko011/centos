@@ -364,18 +364,8 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.5.42
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.42.dsc' base-passwd_3.5.42.dsc 1749 SHA256:dab44a7eccd1a450f9382cde110448b787cb81419bf24e5c87960f36ea26bf28
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.42.tar.xz' base-passwd_3.5.42.tar.xz 52584 SHA256:d316f47ef5cba040852ce80338ef0ff5cabde9f1a148ed2eebe3b20990438cb6
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/base-passwd/3.5.42/
-- https://sources.debian.net/src/base-passwd/3.5.42/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bash=4.4-2`
 
@@ -3071,20 +3061,8 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.9-5
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.9-5.dsc' libtasn1-6_4.9-5.dsc 2663 SHA256:aeb22991356b538cc215de97ded42bd2a15c761707d7fbf2ef61e6aeac082b78
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.9.orig.tar.gz' libtasn1-6_4.9.orig.tar.gz 1864709 SHA256:4f6f7a8fd691ac2b8307c8ca365bad711db607d4ad5966f6938a9d2ecd65c920
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.9.orig.tar.gz.asc' libtasn1-6_4.9.orig.tar.gz.asc 473 SHA256:08f11f7c7804a641aa0e935756695b6c3d5d55140ba834ea1beacfd6bada114c
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.9-5.debian.tar.xz' libtasn1-6_4.9-5.debian.tar.xz 59184 SHA256:18ca28d2912086472c8c174cf3d9ac4025d62fe755fa06acc04ac3d00a422a14
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libtasn1-6/4.9-5/
-- https://sources.debian.net/src/libtasn1-6/4.9-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libthai=0.1.26-1`
 

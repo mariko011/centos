@@ -2002,14 +2002,8 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 - `WEBP`
 - `XFIG`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.2.3-87-gd0fec80-3
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.2.3-87-gd0fec80-3.dsc' libgd2_2.2.3-87-gd0fec80-3.dsc 2363 SHA256:232c820f3c2db7c724febe9655f70c5cc16238116332bf762c6e1086805d904a
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.2.3-87-gd0fec80.orig.tar.xz' libgd2_2.2.3-87-gd0fec80.orig.tar.xz 2239856 SHA256:c4fbf0b4017aff89dc53ab08600baea78b2a9dab59af77da424a6979e5907d7e
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.2.3-87-gd0fec80-3.debian.tar.xz' libgd2_2.2.3-87-gd0fec80-3.debian.tar.xz 27144 SHA256:618571d0d0d0ff7ab3318526df901de5f7b85a5daaf22cf783ea0474108d9dc1
-```
 
 ### `dpkg` source package: `libgpg-error=1.25-2`
 
