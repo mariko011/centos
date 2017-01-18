@@ -1,7 +1,7 @@
 ## `mono:latest`
 
 ```console
-$ docker pull mono@sha256:5d9cc81b11ab22f4189435ea3d0c0f336a24c0e1ac88ddb60bf5a488abf7b86f
+$ docker pull mono@sha256:cfd083cdff270123c375fb807b5eb2621d93aa847aface84f7f32fcdf509b732
 ```
 
 -	Platforms:
@@ -11,42 +11,42 @@ $ docker pull mono@sha256:5d9cc81b11ab22f4189435ea3d0c0f336a24c0e1ac88ddb60bf5a4
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.3 MB (143293268 bytes)**  
+-	Total Size: **143.3 MB (143294440 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d6baf42558872cd144d8e31b4a5042d0e9b2915f69a85382e4e2a2add4685cbf`
+-	Image ID: `sha256:99a2ffb664a90d26c55b3ff0fcf37346160589e082f6beaecb1ad0388d5bfb69`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 13 Dec 2016 22:15:37 GMT
-ADD file:199da03e20ee14ea6024525caeb8435b86af4b2788f5a8c8f6fb9bb0209f3fff in / 
-# Tue, 13 Dec 2016 22:15:46 GMT
+# Mon, 16 Jan 2017 20:41:52 GMT
+ADD file:a341378be341bc318a57379c0a4b72f182f93ad617f08164343662e789b7244b in / 
+# Mon, 16 Jan 2017 20:42:00 GMT
 CMD ["/bin/bash"]
-# Wed, 14 Dec 2016 01:05:29 GMT
+# Tue, 17 Jan 2017 17:21:54 GMT
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
-# Thu, 05 Jan 2017 18:48:00 GMT
+# Tue, 17 Jan 2017 17:24:16 GMT
 ENV MONO_VERSION=4.6.2.16
-# Thu, 05 Jan 2017 18:48:14 GMT
+# Tue, 17 Jan 2017 17:24:27 GMT
 RUN apt-get update   && apt-get install -y curl   && rm -rf /var/lib/apt/lists/*
-# Thu, 05 Jan 2017 18:48:16 GMT
+# Tue, 17 Jan 2017 17:24:28 GMT
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-# Thu, 05 Jan 2017 18:49:03 GMT
+# Tue, 17 Jan 2017 17:25:17 GMT
 RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list   && apt-get update   && apt-get install -y binutils mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl   && rm -rf /var/lib/apt/lists/* /tmp/*
 ```
 
 -	Layers:
-	-	`sha256:b65f3290184628b3ea88b85793900695faa9f3878990fec458a4024dc7211bc5`  
-		Last Modified: Tue, 13 Dec 2016 22:26:49 GMT  
-		Size: 37.3 MB (37284147 bytes)  
+	-	`sha256:d9509b80c497066660d1e7a4e22ba112d025e83f6f7183d53c95bed1513938b7`  
+		Last Modified: Mon, 16 Jan 2017 20:55:10 GMT  
+		Size: 37.3 MB (37284485 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee21b63c69f14453f3406c8a13bdd8d7b7fd4c03a585deaf30168647bdd5f32a`  
-		Last Modified: Thu, 05 Jan 2017 19:05:20 GMT  
-		Size: 7.6 MB (7646115 bytes)  
+	-	`sha256:365d2e0e48fd8f989292433afd6c4c7ebbed4071619385bdd3b99e14ea12b3f1`  
+		Last Modified: Wed, 18 Jan 2017 05:10:01 GMT  
+		Size: 7.6 MB (7646355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d1d026955d0fd50212b2e4d4d2f1819f442fbc6cb59b268102d898e6fe69abe`  
-		Last Modified: Thu, 05 Jan 2017 19:05:19 GMT  
-		Size: 29.9 KB (29901 bytes)  
+	-	`sha256:861fa64f85c6712fe96b3f40582669d3adbf3e8948ed4f5be77c3fb087a8da52`  
+		Last Modified: Wed, 18 Jan 2017 05:09:59 GMT  
+		Size: 29.9 KB (29912 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74b08002fd920df5f679b8a5a20eae3792dee32c8fc281b91ed746a562eb1f98`  
-		Last Modified: Thu, 05 Jan 2017 19:05:47 GMT  
-		Size: 98.3 MB (98333105 bytes)  
+	-	`sha256:f37e485ff35adffbfea8a6b8bf23f21bb09868b84d969652480b99629b675ebe`  
+		Last Modified: Wed, 18 Jan 2017 05:10:45 GMT  
+		Size: 98.3 MB (98333688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

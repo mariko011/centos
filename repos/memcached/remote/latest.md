@@ -1,7 +1,7 @@
 ## `memcached:latest`
 
 ```console
-$ docker pull memcached@sha256:7f702ad1a68dc999b8f277150b695dc0e3b70f50a4a383afd3dc4e9538d9bf42
+$ docker pull memcached@sha256:2f5402d8f6f8b359f186e211448b857b6b715a87b2879b9b68aee8fb0e44c164
 ```
 
 -	Platforms:
@@ -11,63 +11,63 @@ $ docker pull memcached@sha256:7f702ad1a68dc999b8f277150b695dc0e3b70f50a4a383afd
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **52.2 MB (52239686 bytes)**  
+-	Total Size: **52.2 MB (52237175 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33a10d7823aad82ace39b6d0eaf8d36bf018198a75bfe35cd716fdcebaafdf34`
+-	Image ID: `sha256:e6b578fa744cd9a9bcc9f704b528505afff06cfb5a92620a4ee3a362139f17cb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["memcached"]`
 
 ```dockerfile
-# Tue, 13 Dec 2016 22:10:59 GMT
-ADD file:1d214d2782eaccc743b8d683ccecf2f87f12a0ecdfbcd6fdf4943ce616f23870 in / 
-# Tue, 13 Dec 2016 22:10:59 GMT
+# Mon, 16 Jan 2017 20:35:09 GMT
+ADD file:89ecb642d662ee7edbb868340551106d51336c7e589fdaca4111725ec64da957 in / 
+# Mon, 16 Jan 2017 20:35:16 GMT
 CMD ["/bin/bash"]
-# Wed, 14 Dec 2016 01:03:06 GMT
+# Tue, 17 Jan 2017 17:19:32 GMT
 RUN groupadd -r memcache && useradd -r -g memcache memcache
-# Wed, 14 Dec 2016 01:03:12 GMT
+# Tue, 17 Jan 2017 17:19:37 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libevent-2.0-5 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 13 Jan 2017 18:10:29 GMT
+# Tue, 17 Jan 2017 17:19:38 GMT
 ENV MEMCACHED_VERSION=1.4.34
-# Fri, 13 Jan 2017 18:10:29 GMT
+# Tue, 17 Jan 2017 17:19:38 GMT
 ENV MEMCACHED_SHA1=7c7214f5183c6e20c22b243e21ed1ffddb91497e
-# Fri, 13 Jan 2017 18:10:50 GMT
+# Tue, 17 Jan 2017 17:20:05 GMT
 RUN buildDeps=' 		gcc 		libc6-dev 		libevent-dev 		make 		perl 		wget 	' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& wget -O memcached.tar.gz "http://memcached.org/files/memcached-$MEMCACHED_VERSION.tar.gz" 	&& echo "$MEMCACHED_SHA1  memcached.tar.gz" | sha1sum -c - 	&& mkdir -p /usr/src/memcached 	&& tar -xzf memcached.tar.gz -C /usr/src/memcached --strip-components=1 	&& rm memcached.tar.gz 	&& cd /usr/src/memcached 	&& ./configure 	&& make -j$(nproc) 	&& make install 	&& cd / && rm -rf /usr/src/memcached 	&& apt-get purge -y --auto-remove $buildDeps
-# Fri, 13 Jan 2017 18:10:51 GMT
+# Tue, 17 Jan 2017 17:20:06 GMT
 COPY file:621e178b267679ef7140edd23c3ad9e717ed767ed55322a4e198798311bc1d36 in /usr/local/bin/ 
-# Fri, 13 Jan 2017 18:10:52 GMT
+# Tue, 17 Jan 2017 17:20:07 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Fri, 13 Jan 2017 18:10:52 GMT
+# Tue, 17 Jan 2017 17:20:07 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 13 Jan 2017 18:10:53 GMT
+# Tue, 17 Jan 2017 17:20:07 GMT
 USER [memcache]
-# Fri, 13 Jan 2017 18:10:53 GMT
+# Tue, 17 Jan 2017 17:20:08 GMT
 EXPOSE 11211/tcp
-# Fri, 13 Jan 2017 18:10:53 GMT
+# Tue, 17 Jan 2017 17:20:08 GMT
 CMD ["memcached"]
 ```
 
 -	Layers:
-	-	`sha256:75a822cd7888e394c49828b951061402d31745f596b1f502758570f2d0ee79e2`  
-		Last Modified: Tue, 13 Dec 2016 22:16:41 GMT  
-		Size: 51.4 MB (51363125 bytes)  
+	-	`sha256:5040bd2983909aa8896b9932438c3f1479d25ae837a5f6220242a264d0221f2d`  
+		Last Modified: Mon, 16 Jan 2017 20:43:26 GMT  
+		Size: 51.4 MB (51361210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:45b78be39d94d164800f0c9a2e4a617b2281dbbfab6c2a68e9550d1b94d5c314`  
-		Last Modified: Mon, 19 Dec 2016 23:56:48 GMT  
-		Size: 2.0 KB (2040 bytes)  
+	-	`sha256:f4c4c0dfd870a87d4e8bfffe33f72fa321a4aaceb1f643ca3522ee48930de6d7`  
+		Last Modified: Wed, 18 Jan 2017 04:33:02 GMT  
+		Size: 2.0 KB (2044 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a68c6a8c3a07df4f5a8965bdb4c7a1e31e4c37eaa976e8333f9e1c370bfbafe`  
-		Last Modified: Mon, 19 Dec 2016 23:56:47 GMT  
-		Size: 237.9 KB (237938 bytes)  
+	-	`sha256:313b14b8f0390136513e2d900f7f13f3511a0d993a3d8e9612a63211d9895580`  
+		Last Modified: Wed, 18 Jan 2017 04:33:03 GMT  
+		Size: 237.7 KB (237654 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e722127a5c096fe498931871e0f69762ba2081106fec8afc60443bb3933ed5b`  
-		Last Modified: Fri, 13 Jan 2017 18:11:26 GMT  
-		Size: 636.2 KB (636175 bytes)  
+	-	`sha256:141dea2c19622f755c0430b1fc0c18fa26b3325dbcf996af95aa4d181349b8f9`  
+		Last Modified: Wed, 18 Jan 2017 04:33:03 GMT  
+		Size: 635.9 KB (635857 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d261dd099866d75d9c11e3dcb7042277336c708b8058c03681e623711723ac9d`  
-		Last Modified: Fri, 13 Jan 2017 18:11:25 GMT  
-		Size: 289.0 B  
+	-	`sha256:a6686d5ea39f82e6a018600c5ba1d69325b090385e77e3581448b6d40e9fc8d6`  
+		Last Modified: Wed, 18 Jan 2017 04:33:02 GMT  
+		Size: 290.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd6fbdd973b7f37ae2a28fc6b474025b35c589c8ca310be685e72c384e08824d`  
-		Last Modified: Fri, 13 Jan 2017 18:11:25 GMT  
-		Size: 119.0 B  
+	-	`sha256:75428fc0ad4336128ca82a942c53247a483db24f3525f7e83bc93fe8061de39c`  
+		Last Modified: Wed, 18 Jan 2017 04:33:02 GMT  
+		Size: 120.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
