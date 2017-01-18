@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d954144b7b01b9c26492ceeea61b61073777edbf51212fd0baab7b9322b62b0b`
-- Created: `2016-12-13T23:52:04.392466335Z`
+- Image ID: `sha256:31eff0ca351d42bccc1aedf3c35ea08d7f9a4dda99a0fb8e1dce5bfd25191151`
+- Created: `2017-01-17T00:49:25.486814986Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -504,13 +504,13 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/cups/1.5.3-5+deb7u6/
 - https://sources.debian.net/src/cups/1.5.3-5+deb7u6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `curl=7.26.0-1+wheezy17`
+### `dpkg` source package: `curl=7.26.0-1+wheezy18`
 
 Binary Packages:
 
-- `curl=7.26.0-1+wheezy17`
-- `libcurl3:amd64=7.26.0-1+wheezy17`
-- `libcurl3-gnutls:amd64=7.26.0-1+wheezy17`
+- `curl=7.26.0-1+wheezy18`
+- `libcurl3:amd64=7.26.0-1+wheezy18`
+- `libcurl3-gnutls:amd64=7.26.0-1+wheezy18`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -519,8 +519,19 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy18
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy18.dsc' curl_7.26.0-1+wheezy18.dsc 2520 SHA256:37fa66d05c8c7caa4434cff65045ac8c54accfd902130ff7d56a6088d3c45785
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy18.debian.tar.gz' curl_7.26.0-1+wheezy18.debian.tar.gz 65093 SHA256:a19eadf33ade3221a9a4aeb8aba04902965aedcb73202d372b7c538d7feadcff
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy18/
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy18/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
 
@@ -2358,22 +2369,32 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libvorbis/1.3.2-1.3/
 - https://sources.debian.net/src/libvorbis/1.3.2-1.3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libx11=2:1.5.0-1+deb7u3`
+### `dpkg` source package: `libx11=2:1.5.0-1+deb7u4`
 
 Binary Packages:
 
-- `libx11-6:amd64=2:1.5.0-1+deb7u3`
-- `libx11-data=2:1.5.0-1+deb7u3`
-- `libx11-dev:amd64=2:1.5.0-1+deb7u3`
-- `libx11-doc=2:1.5.0-1+deb7u3`
-- `libx11-xcb1:amd64=2:1.5.0-1+deb7u3`
+- `libx11-6:amd64=2:1.5.0-1+deb7u4`
+- `libx11-data=2:1.5.0-1+deb7u4`
+- `libx11-dev:amd64=2:1.5.0-1+deb7u4`
+- `libx11-doc=2:1.5.0-1+deb7u4`
+- `libx11-xcb1:amd64=2:1.5.0-1+deb7u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libx11=2:1.5.0-1+deb7u4
+'http://security.debian.org/pool/updates/main/libx/libx11/libx11_1.5.0-1+deb7u4.dsc' libx11_1.5.0-1+deb7u4.dsc 2271 SHA256:52168e2788e9eeca165f74ba9378d6efcec8c354f57530863ed97c6dca478d92
+'http://security.debian.org/pool/updates/main/libx/libx11/libx11_1.5.0-1+deb7u4.tar.gz' libx11_1.5.0-1+deb7u4.tar.gz 2682419 SHA256:17eb00a4ce660891caa15d5b6cec99aef6cd69cb456dc4696d96125b13a69454
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libx11/2:1.5.0-1+deb7u4/
+- https://sources.debian.net/src/libx11/2:1.5.0-1+deb7u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxau=1:1.0.7-1`
 
@@ -2572,18 +2593,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libxfixes/1:5.0-4+deb7u2/
 - https://sources.debian.net/src/libxfixes/1:5.0-4+deb7u2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libxi=2:1.6.1-1+deb7u2`
+### `dpkg` source package: `libxi=2:1.6.1-1+deb7u3`
 
 Binary Packages:
 
-- `libxi6:amd64=2:1.6.1-1+deb7u2`
+- `libxi6:amd64=2:1.6.1-1+deb7u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxi=2:1.6.1-1+deb7u3
+'http://security.debian.org/pool/updates/main/libx/libxi/libxi_1.6.1-1+deb7u3.dsc' libxi_1.6.1-1+deb7u3.dsc 2282 SHA256:315364ba15b8beec8beba6f80caca003069da40a1078e41f083ae16af337f987
+'http://security.debian.org/pool/updates/main/libx/libxi/libxi_1.6.1.orig.tar.gz' libxi_1.6.1.orig.tar.gz 556404 SHA256:a2aab210068af017314888c64c3a7dd6b5a7933fe50ab89b6e039aadc07dac46
+'http://security.debian.org/pool/updates/main/libx/libxi/libxi_1.6.1-1+deb7u3.diff.gz' libxi_1.6.1-1+deb7u3.diff.gz 25721 SHA256:9c9abe8bbbe5b7144e2993a0fa727e18f79a6b9de4b940429a575136c2b5a0dd
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libxi/2:1.6.1-1+deb7u3/
+- https://sources.debian.net/src/libxi/2:1.6.1-1+deb7u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxinerama=2:1.1.2-1+deb7u1`
 
@@ -2927,18 +2959,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nspr/2:4.12-1+deb7u1/
 - https://sources.debian.net/src/nspr/2:4.12-1+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `nss=2:3.26-1+debu7u1`
+### `dpkg` source package: `nss=2:3.26-1+debu7u2`
 
 Binary Packages:
 
-- `libnss3:amd64=2:3.26-1+debu7u1`
+- `libnss3:amd64=2:3.26-1+debu7u2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris nss=2:3.26-1+debu7u2
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26-1+debu7u2.dsc' nss_3.26-1+debu7u2.dsc 1919 SHA256:81b6a52730c8a3447a63fcc616d012a927a05bb068eb60f36f49b4c4dc2f0053
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26.orig.tar.gz' nss_3.26.orig.tar.gz 7386943 SHA256:91783a570ab953693eb977ce47c501f04c104cec287fa011c91bcc8970d1c564
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26-1+debu7u2.debian.tar.gz' nss_3.26-1+debu7u2.debian.tar.gz 36949 SHA256:ad8c98352a5015b6fd4cc5f1ed020335808e28d2a4808e3ee2ded1154766c613
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/nss/2:3.26-1+debu7u2/
+- https://sources.debian.net/src/nss/2:3.26-1+debu7u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openjdk-6=6b38-1.13.10-1~deb7u1`
 
@@ -3145,11 +3188,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/pcre3/1:8.30-5/
 - https://sources.debian.net/src/pcre3/1:8.30-5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `pcsc-lite=1.8.4-1+deb7u1`
+### `dpkg` source package: `pcsc-lite=1.8.4-1+deb7u2`
 
 Binary Packages:
 
-- `libpcsclite1:amd64=1.8.4-1+deb7u1`
+- `libpcsclite1:amd64=1.8.4-1+deb7u2`
 
 Licenses: (parsed from: `/usr/share/doc/libpcsclite1/copyright`)
 
@@ -3162,16 +3205,16 @@ Licenses: (parsed from: `/usr/share/doc/libpcsclite1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pcsc-lite=1.8.4-1+deb7u1
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.4-1+deb7u1.dsc' pcsc-lite_1.8.4-1+deb7u1.dsc 1521 SHA256:5573583458f8566f19ae4844ce1f9d796bbfe92674a3e1534463a2d913c43a19
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.4.orig.tar.bz2' pcsc-lite_1.8.4.orig.tar.bz2 550284 SHA256:5efcd5a2a431868575f7fce1c142d8bc124fc6585ce147a2afb9dd6f58da3fa6
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.4-1+deb7u1.debian.tar.gz' pcsc-lite_1.8.4-1+deb7u1.debian.tar.gz 16007 SHA256:913e82ca28f800bd7363ae572c7116c5045ddf6baf2ef5fd2bfcfb6e944453c1
+$ apt-get source -qq --print-uris pcsc-lite=1.8.4-1+deb7u2
+'http://security.debian.org/pool/updates/main/p/pcsc-lite/pcsc-lite_1.8.4-1+deb7u2.dsc' pcsc-lite_1.8.4-1+deb7u2.dsc 2158 SHA256:33e500ee7ffbe68a0bf44a77da27c7f83038105799223b58a0fdd071db2b42f4
+'http://security.debian.org/pool/updates/main/p/pcsc-lite/pcsc-lite_1.8.4.orig.tar.bz2' pcsc-lite_1.8.4.orig.tar.bz2 550284 SHA256:5efcd5a2a431868575f7fce1c142d8bc124fc6585ce147a2afb9dd6f58da3fa6
+'http://security.debian.org/pool/updates/main/p/pcsc-lite/pcsc-lite_1.8.4-1+deb7u2.debian.tar.gz' pcsc-lite_1.8.4-1+deb7u2.debian.tar.gz 16663 SHA256:f2db69a0e7c66cdfa48e10e470a44bcfe5fb5ca3d212afe8edb0f64ba280a6f4
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/pcsc-lite/1.8.4-1+deb7u1/
-- https://sources.debian.net/src/pcsc-lite/1.8.4-1+deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/pcsc-lite/1.8.4-1+deb7u2/
+- https://sources.debian.net/src/pcsc-lite/1.8.4-1+deb7u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `perl=5.14.2-21+deb7u4`
 
