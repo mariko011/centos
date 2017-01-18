@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:87170ec175e38fc4eebb24a42c4dd7991ce0e56b5df24badae6ae03634049c12`
-- Created: `2016-12-14T23:06:27.675953073Z`
+- Image ID: `sha256:5bf0ccef3541aca6549f08afab413af8909c37fc653d117fc77c5e42acd6f91e`
+- Created: `2017-01-17T20:30:06.610012017Z`
 - Arch: `linux`/`amd64`
 - Command: `["thrift"]`
 - Environment:
