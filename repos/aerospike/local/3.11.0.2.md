@@ -1,16 +1,16 @@
-# `aerospike:3.10.1.1`
+# `aerospike:3.11.0.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ee0ada41a35bc71b001d331686aaf9754529c1829ed9cc6b3d4cf1f07d85e030`
-- Created: `2016-12-15T17:55:20.405184014Z`
+- Image ID: `sha256:e6e9ef60e7a80ebb45afcb0083d6804a2255ca6cc1210c448afadbba515909b8`
+- Created: `2017-01-17T23:57:34.567881432Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["asd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `AEROSPIKE_VERSION=3.10.1.1`
-  - `AEROSPIKE_SHA256=c8de9daad369948f15334e237374eb68e1152c1890e3ee84a77aee349e315704`
+  - `AEROSPIKE_VERSION=3.11.0.2`
+  - `AEROSPIKE_SHA256=a6dfff8d278f628ca681ec92cdefaef9f8a7c534e5c9feece5060ac7d3b65453`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -52,11 +52,11 @@ $ apt-get source -qq --print-uris adduser=3.113+nmu3ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.113+nmu3ubuntu4.tar.gz' adduser_3.113+nmu3ubuntu4.tar.gz 367980 SHA256:6e4d44c8388b9ba85fc175fa4a48ed43bf6500913c2c631fda0e4419ae63c65a
 ```
 
-### `dpkg` source package: `aerospike-server-community=3.10.1.1-1`
+### `dpkg` source package: `aerospike-server-community=3.11.0.2-1`
 
 Binary Packages:
 
-- `aerospike-server-community=3.10.1.1-1`
+- `aerospike-server-community=3.11.0.2-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -65,11 +65,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `aerospike-tools=3.10.2`
+### `dpkg` source package: `aerospike-tools=3.11.0`
 
 Binary Packages:
 
-- `aerospike-tools=3.10.2`
+- `aerospike-tools=3.11.0`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -454,6 +454,25 @@ $ apt-get source -qq --print-uris e2fsprogs=1.42.13-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.42.13-1ubuntu1.dsc' e2fsprogs_1.42.13-1ubuntu1.dsc 2600 SHA256:03d2a33abd1037df7949405721903469fc526c07ac9ca0c5a01f273f7f506b05
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.42.13.orig.tar.gz' e2fsprogs_1.42.13.orig.tar.gz 6511931 SHA256:59993ff3a44f82e504561e0ebf95e8c8fa9f9f5746eb6a7182239605d2a4e2d4
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.42.13-1ubuntu1.debian.tar.xz' e2fsprogs_1.42.13-1ubuntu1.debian.tar.xz 69196 SHA256:90326bf4bd93d01fbd9dc73803cc58c8d98ff67e1469e4cbbe672169aa048220
+```
+
+### `dpkg` source package: `enum34=1.1.2-1`
+
+Binary Packages:
+
+- `python-enum34=1.1.2-1`
+
+Licenses: (parsed from: `/usr/share/doc/python-enum34/copyright`)
+
+- `GPL-3`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris enum34=1.1.2-1
+'http://archive.ubuntu.com/ubuntu/pool/main/e/enum34/enum34_1.1.2-1.dsc' enum34_1.1.2-1.dsc 1934 SHA256:526ade8dd6d591789dfeb63bea7dd6c634651ab4138b9575d237fedb7b95f12d
+'http://archive.ubuntu.com/ubuntu/pool/main/e/enum34/enum34_1.1.2.orig.tar.gz' enum34_1.1.2.orig.tar.gz 46757 SHA256:2475d7fcddf5951e92ff546972758802de5260bf409319a9f1934e6bbc8b1dc7
+'http://archive.ubuntu.com/ubuntu/pool/main/e/enum34/enum34_1.1.2-1.debian.tar.xz' enum34_1.1.2-1.debian.tar.xz 3408 SHA256:17dfa9ecd63531a9a406473f6d4c2d30fa7725a51f83c25dd4b2443c7ca27309
 ```
 
 ### `dpkg` source package: `expat=2.1.0-7ubuntu0.16.04.2`
@@ -1326,6 +1345,7 @@ $ apt-get source -qq --print-uris nettle=3.2-1
 Binary Packages:
 
 - `libssl1.0.0:amd64=1.0.2g-1ubuntu4.5`
+- `openssl=1.0.2g-1ubuntu4.5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1494,6 +1514,48 @@ $ apt-get source -qq --print-uris procps=2:3.3.10-4ubuntu2.3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.3.debian.tar.xz' procps_3.3.10-4ubuntu2.3.debian.tar.xz 38516 SHA256:5434d3b406c8547db8f574f20ecc5c1be6efc55ce88bba954537b144e970ab56
 ```
 
+### `dpkg` source package: `pyasn1=0.1.9-1`
+
+Binary Packages:
+
+- `python-pyasn1=0.1.9-1`
+
+Licenses: (parsed from: `/usr/share/doc/python-pyasn1/copyright`)
+
+- `BSD-2-clause`
+- `GPL-2`
+- `GPL-2+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris pyasn1=0.1.9-1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pyasn1/pyasn1_0.1.9-1.dsc' pyasn1_0.1.9-1.dsc 2075 SHA256:300f5882fad9dac63f146078178707102c24269286358120923d21e5aa258010
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pyasn1/pyasn1_0.1.9.orig.tar.gz' pyasn1_0.1.9.orig.tar.gz 75947 SHA256:853cacd96d1f701ddd67aa03ecc05f51890135b7262e922710112f12a2ed2a7f
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pyasn1/pyasn1_0.1.9-1.debian.tar.xz' pyasn1_0.1.9-1.debian.tar.xz 4848 SHA256:8d7f35dc9682015c69e8be55e8e35f3ae1c29ddeba9537ab2df1c996a8c2297b
+```
+
+### `dpkg` source package: `pyopenssl=0.15.1-2build1`
+
+Binary Packages:
+
+- `python-openssl=0.15.1-2build1`
+
+Licenses: (parsed from: `/usr/share/doc/python-openssl/copyright`)
+
+- `Apache 2.0`
+- `Apache-2.0`
+- `This code is in the public domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris pyopenssl=0.15.1-2build1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pyopenssl/pyopenssl_0.15.1-2build1.dsc' pyopenssl_0.15.1-2build1.dsc 2438 SHA256:93346e8fc085aacbf6e9629644f8fc364a10e3318d489b373c61a7c26d8969cb
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pyopenssl/pyopenssl_0.15.1.orig.tar.gz' pyopenssl_0.15.1.orig.tar.gz 149887 SHA256:f0a26070d6db0881de8bcc7846934b7c3c930d8f9c79d45883ee48984bc0d672
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pyopenssl/pyopenssl_0.15.1-2build1.debian.tar.xz' pyopenssl_0.15.1-2build1.debian.tar.xz 7840 SHA256:b1caa4293bc6bb2840dfdd3cec8da473cded09f65ff8b4f2319c3faf05b41195
+```
+
 ### `dpkg` source package: `python-bcrypt=2.0.0-2build1`
 
 Binary Packages:
@@ -1535,6 +1597,27 @@ $ apt-get source -qq --print-uris python-cffi=1.5.2-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cffi/python-cffi_1.5.2-1ubuntu1.debian.tar.xz' python-cffi_1.5.2-1ubuntu1.debian.tar.xz 5836 SHA256:335b88a8e8cd52a0c6f61fb39bf3aac4f77aad03a65b9c0c41469dfe95416729
 ```
 
+### `dpkg` source package: `python-cryptography=1.2.3-1ubuntu0.1`
+
+Binary Packages:
+
+- `python-cryptography=1.2.3-1ubuntu0.1`
+
+Licenses: (parsed from: `/usr/share/doc/python-cryptography/copyright`)
+
+- `Apache`
+- `Apache-2.0`
+- `Expat`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python-cryptography=1.2.3-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cryptography/python-cryptography_1.2.3-1ubuntu0.1.dsc' python-cryptography_1.2.3-1ubuntu0.1.dsc 3130 SHA256:ab84fa9fc99b62dd299d79e2e1df0805e83947f6d18f2cf5c9ecb2a765796b57
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cryptography/python-cryptography_1.2.3.orig.tar.gz' python-cryptography_1.2.3.orig.tar.gz 373165 SHA256:8eb11c77dd8e73f48df6b2f7a7e16173fe0fe8fdfe266232832e88477e08454e
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-cryptography/python-cryptography_1.2.3-1ubuntu0.1.debian.tar.xz' python-cryptography_1.2.3-1ubuntu0.1.debian.tar.xz 25300 SHA256:ae10d42fefd334b5ef7edc42dd9c75abae9db09f3baf41cbc64e7435d9f297af
+```
+
 ### `dpkg` source package: `python-defaults=2.7.11-1`
 
 Binary Packages:
@@ -1553,6 +1636,66 @@ Source:
 $ apt-get source -qq --print-uris python-defaults=2.7.11-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.11-1.dsc' python-defaults_2.7.11-1.dsc 2629 SHA256:e318166f8e921302b28a862de2db5b12069b37fe54f830a5fae60e1448576fa5
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-defaults/python-defaults_2.7.11-1.tar.gz' python-defaults_2.7.11-1.tar.gz 276447 SHA256:d4269585625c53a061292e44890c4960b688a47ebf3fa43202ceaa8f4bc502d9
+```
+
+### `dpkg` source package: `python-idna=2.0-3`
+
+Binary Packages:
+
+- `python-idna=2.0-3`
+
+Licenses: (parsed from: `/usr/share/doc/python-idna/copyright`)
+
+- `BSD-3-clause`
+- `PSF-2`
+- `Unicode`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python-idna=2.0-3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-idna/python-idna_2.0-3.dsc' python-idna_2.0-3.dsc 1952 SHA256:47647694aa663e7edf1071e93b8486d405f45e73e7c60afb2cb2fe7c5a476419
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-idna/python-idna_2.0.orig.tar.gz' python-idna_2.0.orig.tar.gz 135150 SHA256:16199aad938b290f5be1057c0e1efc6546229391c23cea61ca940c115f7d3d3b
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-idna/python-idna_2.0-3.debian.tar.xz' python-idna_2.0-3.debian.tar.xz 4024 SHA256:30d0e12d50228054f19ae1aa2d337475a6e7d6757f97df8d58e9e6022a30a625
+```
+
+### `dpkg` source package: `python-ipaddress=1.0.16-1`
+
+Binary Packages:
+
+- `python-ipaddress=1.0.16-1`
+
+Licenses: (parsed from: `/usr/share/doc/python-ipaddress/copyright`)
+
+- `Expat`
+- `PSF-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python-ipaddress=1.0.16-1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-ipaddress/python-ipaddress_1.0.16-1.dsc' python-ipaddress_1.0.16-1.dsc 1923 SHA256:90314976db62a0138c3f347016f1c3bc5241a027e501f6e2f43f2585bda1e5a6
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-ipaddress/python-ipaddress_1.0.16.orig.tar.gz' python-ipaddress_1.0.16.orig.tar.gz 31765 SHA256:5a3182b322a706525c46282ca6f064d27a02cffbd449f9f47416f1dc96aa71b0
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-ipaddress/python-ipaddress_1.0.16-1.debian.tar.xz' python-ipaddress_1.0.16-1.debian.tar.xz 3500 SHA256:3059eff2d6bed6000b9f755c43af0b7a54012932aadc36852499949e89c43cc1
+```
+
+### `dpkg` source package: `python-setuptools=20.7.0-1`
+
+Binary Packages:
+
+- `python-pkg-resources=20.7.0-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
+  If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris python-setuptools=20.7.0-1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-setuptools/python-setuptools_20.7.0-1.dsc' python-setuptools_20.7.0-1.dsc 2338 SHA256:0251fd94c77aacd604e5a5f851136c21048879491628f2732bd95dd72d8256c1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-setuptools/python-setuptools_20.7.0.orig.tar.gz' python-setuptools_20.7.0.orig.tar.gz 645861 SHA256:505cdf282c5f6e3a056e79f0244b8945f3632257bba8469386c6b9b396400233
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-setuptools/python-setuptools_20.7.0-1.debian.tar.xz' python-setuptools_20.7.0-1.debian.tar.xz 38772 SHA256:6fe8762b58c0a5582aae975f4d97a2ef7ad66df221b0455366727ce7d17cb0aa
 ```
 
 ### `dpkg` source package: `python2.7=2.7.12-1ubuntu0~16.04.1`
