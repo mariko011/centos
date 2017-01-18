@@ -1,7 +1,7 @@
 ## `couchdb:1-couchperuser`
 
 ```console
-$ docker pull couchdb@sha256:3367b90ec128cbe607b9ba538eba1994b7f1a88103e6e6b98ff88fefffabe2a0
+$ docker pull couchdb@sha256:d19ea06b157bf12a8b66360b74d9604f5a1d354e2799701258f9bf0ca930aa7b
 ```
 
 -	Platforms:
@@ -11,89 +11,89 @@ $ docker pull couchdb@sha256:3367b90ec128cbe607b9ba538eba1994b7f1a88103e6e6b98ff
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **113.9 MB (113910946 bytes)**  
+-	Total Size: **113.9 MB (113914730 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bfe8572f6ee0cecabe76efd95b5b7b21805491cdd070d3fd195d8e418382d385`
+-	Image ID: `sha256:330afce799ccdc2454a941726aeb5b9127cac8a78027df8b163018d9f892473c`
 -	Entrypoint: `["tini","--","\/docker-entrypoint.sh"]`
 -	Default Command: `["couchdb"]`
 
 ```dockerfile
-# Tue, 13 Dec 2016 22:10:59 GMT
-ADD file:1d214d2782eaccc743b8d683ccecf2f87f12a0ecdfbcd6fdf4943ce616f23870 in / 
-# Tue, 13 Dec 2016 22:10:59 GMT
+# Mon, 16 Jan 2017 20:35:09 GMT
+ADD file:89ecb642d662ee7edbb868340551106d51336c7e589fdaca4111725ec64da957 in / 
+# Mon, 16 Jan 2017 20:35:16 GMT
 CMD ["/bin/bash"]
-# Tue, 13 Dec 2016 23:06:26 GMT
+# Tue, 17 Jan 2017 00:07:57 GMT
 MAINTAINER Clemens Stolle klaemo@apache.org
-# Tue, 13 Dec 2016 23:06:27 GMT
+# Tue, 17 Jan 2017 00:07:58 GMT
 RUN groupadd -r couchdb && useradd -d /var/lib/couchdb -g couchdb couchdb
-# Tue, 13 Dec 2016 23:06:48 GMT
+# Tue, 17 Jan 2017 00:08:27 GMT
 RUN apt-get update -y && apt-get install -y --no-install-recommends     ca-certificates     curl     erlang-nox     libicu52     libmozjs185-1.0     libnspr4     libnspr4-0d   && rm -rf /var/lib/apt/lists/*
-# Tue, 13 Dec 2016 23:06:56 GMT
+# Tue, 17 Jan 2017 00:08:33 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4   && curl -o /usr/local/bin/gosu -fSL "https://github.com/tianon/gosu/releases/download/1.7/gosu-$(dpkg --print-architecture)"   && curl -o /usr/local/bin/gosu.asc -fSL "https://github.com/tianon/gosu/releases/download/1.7/gosu-$(dpkg --print-architecture).asc"   && gpg --verify /usr/local/bin/gosu.asc   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu   && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5   && curl -o /usr/local/bin/tini -fSL "https://github.com/krallin/tini/releases/download/v0.9.0/tini"   && curl -o /usr/local/bin/tini.asc -fSL "https://github.com/krallin/tini/releases/download/v0.9.0/tini.asc"   && gpg --verify /usr/local/bin/tini.asc   && rm /usr/local/bin/tini.asc   && chmod +x /usr/local/bin/tini
-# Tue, 13 Dec 2016 23:06:56 GMT
+# Tue, 17 Jan 2017 00:08:34 GMT
 ENV GPG_KEYS=15DD4F3B8AACA54740EB78C7B7B7C53943ECCEE1   1CFBFA43C19B6DF4A0CA3934669C02FFDF3CEBA3   25BBBAC113C1BFD5AA594A4C9F96B92930380381   4BFCA2B99BADC6F9F105BEC9C5E32E2D6B065BFB   5D680346FAA3E51B29DBCB681015F68F9DA248BC   7BCCEB868313DDA925DF1805ECA5BCB7BB9656B0   C3F4DFAEAD621E1C94523AEEC376457E61D50B88   D2B17F9DA23C0A10991AF2E3D9EE01E47852AEE4   E0AF0A194D55C84E4A19A801CDB0C0F904F4EE9B
-# Tue, 13 Dec 2016 23:07:05 GMT
+# Tue, 17 Jan 2017 00:08:40 GMT
 RUN set -xe   && for key in $GPG_KEYS; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key";   done
-# Tue, 13 Dec 2016 23:07:05 GMT
+# Tue, 17 Jan 2017 00:08:40 GMT
 ENV COUCHDB_VERSION=1.6.1
-# Tue, 13 Dec 2016 23:07:58 GMT
+# Tue, 17 Jan 2017 00:09:40 GMT
 RUN buildDeps='     gcc     g++     erlang-dev     libcurl4-openssl-dev     libicu-dev     libmozjs185-dev     libnspr4-dev     make   '   && apt-get update && apt-get install -y --no-install-recommends $buildDeps   && curl -fSL http://apache.osuosl.org/couchdb/source/$COUCHDB_VERSION/apache-couchdb-$COUCHDB_VERSION.tar.gz -o couchdb.tar.gz   && curl -fSL https://www.apache.org/dist/couchdb/source/$COUCHDB_VERSION/apache-couchdb-$COUCHDB_VERSION.tar.gz.asc -o couchdb.tar.gz.asc   && gpg --verify couchdb.tar.gz.asc   && mkdir -p /usr/src/couchdb   && tar -xzf couchdb.tar.gz -C /usr/src/couchdb --strip-components=1   && cd /usr/src/couchdb   && ./configure --with-js-lib=/usr/lib --with-js-include=/usr/include/mozjs   && make && make install   && apt-get purge -y --auto-remove $buildDeps   && rm -rf /var/lib/apt/lists/* /usr/src/couchdb /couchdb.tar.gz*   && chown -R couchdb:couchdb     /usr/local/lib/couchdb /usr/local/etc/couchdb     /usr/local/var/lib/couchdb /usr/local/var/log/couchdb /usr/local/var/run/couchdb   && chmod -R g+rw     /usr/local/lib/couchdb /usr/local/etc/couchdb     /usr/local/var/lib/couchdb /usr/local/var/log/couchdb /usr/local/var/run/couchdb   && mkdir -p /var/lib/couchdb   && sed -e 's/^bind_address = .*$/bind_address = 0.0.0.0/' -i /usr/local/etc/couchdb/default.ini   && sed -e 's!/usr/local/var/log/couchdb/couch.log$!/dev/null!' -i /usr/local/etc/couchdb/default.ini
-# Tue, 13 Dec 2016 23:07:59 GMT
+# Tue, 17 Jan 2017 00:19:29 GMT
 COPY file:9167181556794bc11f93a378f69052e0de980ac17e33be172c375a8564bbe89a in / 
-# Tue, 13 Dec 2016 23:08:00 GMT
+# Tue, 17 Jan 2017 00:19:30 GMT
 RUN chmod +x /docker-entrypoint.sh
-# Tue, 13 Dec 2016 23:08:00 GMT
+# Tue, 17 Jan 2017 00:19:31 GMT
 VOLUME [/usr/local/var/lib/couchdb]
-# Tue, 13 Dec 2016 23:08:00 GMT
+# Tue, 17 Jan 2017 00:19:31 GMT
 EXPOSE 5984/tcp
-# Tue, 13 Dec 2016 23:08:01 GMT
+# Tue, 17 Jan 2017 00:19:31 GMT
 WORKDIR /var/lib/couchdb
-# Tue, 13 Dec 2016 23:08:01 GMT
+# Tue, 17 Jan 2017 00:19:32 GMT
 ENTRYPOINT ["tini" "--" "/docker-entrypoint.sh"]
-# Tue, 13 Dec 2016 23:08:01 GMT
+# Tue, 17 Jan 2017 00:19:32 GMT
 CMD ["couchdb"]
-# Tue, 13 Dec 2016 23:08:02 GMT
+# Tue, 17 Jan 2017 00:19:33 GMT
 MAINTAINER Clemens Stolle klaemo@apache.org
-# Tue, 13 Dec 2016 23:08:02 GMT
+# Tue, 17 Jan 2017 00:19:33 GMT
 ENV COUCHPERUSER_SHA=5d28db3272eea9619d4391b33aae6030f0319ecc54aa2a2f2b6c6a8d448f03f2
-# Tue, 13 Dec 2016 23:08:35 GMT
+# Tue, 17 Jan 2017 00:20:07 GMT
 RUN apt-get update && apt-get install -y rebar make  && mkdir -p /usr/local/lib/couchdb/plugins/couchperuser  && cd /usr/local/lib/couchdb/plugins  && curl -L -o couchperuser.tar.gz https://github.com/etrepum/couchperuser/archive/1.1.0.tar.gz  && echo "$COUCHPERUSER_SHA *couchperuser.tar.gz" | sha256sum -c -  && tar -xzf couchperuser.tar.gz -C couchperuser --strip-components=1  && rm couchperuser.tar.gz  && cd couchperuser  && make  && apt-get purge -y --auto-remove rebar make
 ```
 
 -	Layers:
-	-	`sha256:75a822cd7888e394c49828b951061402d31745f596b1f502758570f2d0ee79e2`  
-		Last Modified: Tue, 13 Dec 2016 22:16:41 GMT  
-		Size: 51.4 MB (51363125 bytes)  
+	-	`sha256:5040bd2983909aa8896b9932438c3f1479d25ae837a5f6220242a264d0221f2d`  
+		Last Modified: Mon, 16 Jan 2017 20:43:26 GMT  
+		Size: 51.4 MB (51361210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc58c0b4b86c9c58b2650621447af1e9328c295080f4830bac9958c1590aba8a`  
-		Last Modified: Mon, 19 Dec 2016 18:25:57 GMT  
-		Size: 2.0 KB (2039 bytes)  
+	-	`sha256:ba6675db85ec3ca292cc064b6fdb7dea0c574b3e4daf812a1be7914a1c86d4f0`  
+		Last Modified: Wed, 18 Jan 2017 03:17:41 GMT  
+		Size: 2.0 KB (2045 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d2069d15fec18dc5f5681b3860ef9f4c5cb3ed39137b43756d4560035d6f142`  
-		Last Modified: Mon, 19 Dec 2016 18:26:05 GMT  
-		Size: 42.7 MB (42674739 bytes)  
+	-	`sha256:59b890a5d3c410c963cef3d19a6fbf3b1a5c9266a3ded1d622c3c779f739af3b`  
+		Last Modified: Wed, 18 Jan 2017 03:17:51 GMT  
+		Size: 42.7 MB (42687780 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27692b0285960801cb8e677316545b5c70a8f7d9285a87773404132f8a6bd35c`  
-		Last Modified: Mon, 19 Dec 2016 18:25:55 GMT  
-		Size: 948.7 KB (948697 bytes)  
+	-	`sha256:81671358307dd9c90eada00279edd8333a982860105ce31dd7c984e10eac4acb`  
+		Last Modified: Wed, 18 Jan 2017 03:17:38 GMT  
+		Size: 948.7 KB (948700 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffe12788082067532e92d226ad3add287118a20af9648020d3bea14483a2681e`  
-		Last Modified: Mon, 19 Dec 2016 18:25:53 GMT  
+	-	`sha256:95e8a4263821b55d01fc85dba35843f054bac0fbe49c287994b881315487e51f`  
+		Last Modified: Wed, 18 Jan 2017 03:17:39 GMT  
 		Size: 631.4 KB (631407 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:56a9e96a2fd825ab1ebf435be9165eba4f4da99f0c9bad94de5665893eed73cd`  
-		Last Modified: Mon, 19 Dec 2016 18:25:56 GMT  
-		Size: 8.2 MB (8178202 bytes)  
+	-	`sha256:851c6284357f2437222fc9157fd539057e456d33632b782e060c8666e0c20ec4`  
+		Last Modified: Wed, 18 Jan 2017 03:17:41 GMT  
+		Size: 8.2 MB (8177856 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b88113241c0b8c06c559c74e7fa65ca0b8c9bb9a46d479a280f38f2602b1a62`  
-		Last Modified: Mon, 19 Dec 2016 18:25:53 GMT  
-		Size: 1.1 KB (1053 bytes)  
+	-	`sha256:1195b885378f197bba7ebc082b3009cddfdd7ac34c29a368827719bb73d67489`  
+		Last Modified: Wed, 18 Jan 2017 03:17:38 GMT  
+		Size: 1.1 KB (1055 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b88113241c0b8c06c559c74e7fa65ca0b8c9bb9a46d479a280f38f2602b1a62`  
-		Last Modified: Mon, 19 Dec 2016 18:25:53 GMT  
-		Size: 1.1 KB (1053 bytes)  
+	-	`sha256:1195b885378f197bba7ebc082b3009cddfdd7ac34c29a368827719bb73d67489`  
+		Last Modified: Wed, 18 Jan 2017 03:17:38 GMT  
+		Size: 1.1 KB (1055 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee3eae33210406ecd4f9d92d361135e1138afde33d8751e653f2978a26671576`  
-		Last Modified: Mon, 19 Dec 2016 18:27:36 GMT  
-		Size: 10.1 MB (10110631 bytes)  
+	-	`sha256:1b6789ac3fd6cf18df60e34fd0a202d15838de48f873bcdc31e268cb4ef694a9`  
+		Last Modified: Wed, 18 Jan 2017 03:18:59 GMT  
+		Size: 10.1 MB (10103622 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

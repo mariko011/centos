@@ -13,7 +13,7 @@
 ## `celery:4.0.2`
 
 ```console
-$ docker pull celery@sha256:bdf2701db11d279f83f62588805410791850f45b07f5d9cd5145ab3130507e2f
+$ docker pull celery@sha256:8a8ded479b6cdb89e0019e0b59b50a4409197650df94628f5d3b241aef45ec4f
 ```
 
 -	Platforms:
@@ -23,92 +23,92 @@ $ docker pull celery@sha256:bdf2701db11d279f83f62588805410791850f45b07f5d9cd5145
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.4 MB (80426944 bytes)**  
+-	Total Size: **80.4 MB (80430058 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9e1f1bccd5bbe51c2c65f3b660cc2a23d5296647282a6f135db7d0af22d2be8a`
+-	Image ID: `sha256:f9164f4e733c8189367686cf11b7a6963acd2d13b655b8ed60dfc7f6557d7856`
 -	Default Command: `["celery","worker"]`
 
 ```dockerfile
-# Tue, 13 Dec 2016 22:10:59 GMT
-ADD file:1d214d2782eaccc743b8d683ccecf2f87f12a0ecdfbcd6fdf4943ce616f23870 in / 
-# Tue, 13 Dec 2016 22:10:59 GMT
+# Mon, 16 Jan 2017 20:35:09 GMT
+ADD file:89ecb642d662ee7edbb868340551106d51336c7e589fdaca4111725ec64da957 in / 
+# Mon, 16 Jan 2017 20:35:16 GMT
 CMD ["/bin/bash"]
-# Wed, 14 Dec 2016 17:36:48 GMT
+# Tue, 17 Jan 2017 19:39:35 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 14 Dec 2016 17:36:48 GMT
+# Tue, 17 Jan 2017 19:39:35 GMT
 ENV LANG=C.UTF-8
-# Wed, 14 Dec 2016 17:38:06 GMT
+# Tue, 17 Jan 2017 19:40:51 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libgdbm3 		libsqlite3-0 		libssl1.0.0 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 14 Dec 2016 18:47:38 GMT
+# Tue, 17 Jan 2017 19:47:36 GMT
 ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
-# Wed, 14 Dec 2016 18:47:38 GMT
+# Tue, 17 Jan 2017 19:49:46 GMT
 ENV PYTHON_VERSION=3.5.2
-# Wed, 14 Dec 2016 18:47:39 GMT
+# Tue, 17 Jan 2017 19:49:47 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Wed, 14 Dec 2016 18:50:00 GMT
+# Tue, 17 Jan 2017 19:51:56 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		libbz2-dev 		libc6-dev 		libgdbm-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-loadable-sqlite-extensions 		--enable-shared 	&& make -j$(nproc) 	&& make install 	&& ldconfig 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& python3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& find /usr/local -depth 		\( 			\( -type d -a -name test -o -name tests \) 			-o 			\( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Wed, 14 Dec 2016 18:50:08 GMT
+# Tue, 17 Jan 2017 19:51:57 GMT
 RUN cd /usr/local/bin 	&& { [ -e easy_install ] || ln -s easy_install-* easy_install; } 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Wed, 14 Dec 2016 18:50:09 GMT
+# Tue, 17 Jan 2017 19:51:57 GMT
 CMD ["python3"]
-# Mon, 19 Dec 2016 16:32:24 GMT
+# Tue, 17 Jan 2017 21:14:43 GMT
 RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
-# Mon, 19 Dec 2016 16:32:24 GMT
+# Tue, 17 Jan 2017 21:14:43 GMT
 WORKDIR /home/user
-# Mon, 19 Dec 2016 16:32:29 GMT
+# Tue, 17 Jan 2017 21:14:47 GMT
 RUN pip install redis
-# Mon, 19 Dec 2016 22:05:45 GMT
+# Tue, 17 Jan 2017 21:14:56 GMT
 ENV CELERY_VERSION=4.0.2
-# Mon, 19 Dec 2016 22:05:50 GMT
+# Tue, 17 Jan 2017 21:14:59 GMT
 RUN pip install celery=="$CELERY_VERSION"
-# Mon, 19 Dec 2016 22:05:51 GMT
+# Tue, 17 Jan 2017 21:15:00 GMT
 RUN { 	echo 'import os'; 	echo "BROKER_URL = os.environ.get('CELERY_BROKER_URL', 'amqp://')"; } > celeryconfig.py
-# Mon, 19 Dec 2016 22:05:51 GMT
+# Tue, 17 Jan 2017 21:15:00 GMT
 ENV CELERY_BROKER_URL=amqp://guest@rabbit
-# Mon, 19 Dec 2016 22:05:52 GMT
+# Tue, 17 Jan 2017 21:15:01 GMT
 USER [user]
-# Mon, 19 Dec 2016 22:05:52 GMT
+# Tue, 17 Jan 2017 21:15:01 GMT
 CMD ["celery" "worker"]
 ```
 
 -	Layers:
-	-	`sha256:75a822cd7888e394c49828b951061402d31745f596b1f502758570f2d0ee79e2`  
-		Last Modified: Tue, 13 Dec 2016 22:16:41 GMT  
-		Size: 51.4 MB (51363125 bytes)  
+	-	`sha256:5040bd2983909aa8896b9932438c3f1479d25ae837a5f6220242a264d0221f2d`  
+		Last Modified: Mon, 16 Jan 2017 20:43:26 GMT  
+		Size: 51.4 MB (51361210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4665cede9d1cf30769226da349e1f7e35bf16f75d90688b9cab8569ce00ab79`  
-		Last Modified: Mon, 19 Dec 2016 18:14:55 GMT  
-		Size: 3.3 MB (3339260 bytes)  
+	-	`sha256:b303f6ac5c34a3463f6ddc9ff2ee40aeacb1620905e5c8a5cb45e6d3f7ca0b08`  
+		Last Modified: Wed, 18 Jan 2017 03:14:17 GMT  
+		Size: 3.3 MB (3344140 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a22a97b27ff04c94271cda7368cd5a78829fbfaf39b0b561081a503948b6ebe`  
-		Last Modified: Mon, 19 Dec 2016 18:15:03 GMT  
-		Size: 20.9 MB (20896099 bytes)  
+	-	`sha256:9014510e46e556c220b409cadacbf06567f93da00cdfc2df96193c88c738eea3`  
+		Last Modified: Wed, 18 Jan 2017 03:14:25 GMT  
+		Size: 20.9 MB (20896244 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f95b6cb774eb142998bbd8ee1781e27505bbb167a71fe6ea9470500a0d0f036`  
-		Last Modified: Mon, 19 Dec 2016 18:14:51 GMT  
-		Size: 267.0 B  
+	-	`sha256:990c77ba2def0966d99b43fedd1280f05fffc5549958fe64ee5e2e274db28620`  
+		Last Modified: Wed, 18 Jan 2017 03:14:13 GMT  
+		Size: 265.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:233157ebca729137fb68673915d1fcad8b618b470095cd169c714aa902515883`  
-		Last Modified: Mon, 19 Dec 2016 18:14:52 GMT  
-		Size: 4.3 KB (4341 bytes)  
+	-	`sha256:b528730076b79df8e2f2218fd295fdccd8c991229228be8a8f278234a1e44670`  
+		Last Modified: Wed, 18 Jan 2017 03:14:12 GMT  
+		Size: 4.3 KB (4339 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c141958752e1d34fae00ab6479f69d976b42995ccd7906b7c0528e23e3df8e9e`  
-		Last Modified: Mon, 19 Dec 2016 18:14:52 GMT  
-		Size: 1.9 MB (1852344 bytes)  
+	-	`sha256:c89d62c2127c79b5adfd08649647e21dd5eea9126358a317a28251e795a82c70`  
+		Last Modified: Wed, 18 Jan 2017 03:14:15 GMT  
+		Size: 1.9 MB (1852333 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9c123dda5da2588f99892389c35303fcc0fac5fcddc3157f5d7e09678bc35a7`  
-		Last Modified: Mon, 19 Dec 2016 22:06:08 GMT  
-		Size: 3.0 MB (2971275 bytes)  
+	-	`sha256:85bf014d4d53cb9c776f3487d0be04199276650e34da97fecb447ad996535ace`  
+		Last Modified: Wed, 18 Jan 2017 03:15:31 GMT  
+		Size: 3.0 MB (2971294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b951d25b042583ca5ec691a02fb49ceebb5f29d49787f88f63252b2a93fe29cb`  
-		Last Modified: Mon, 19 Dec 2016 22:06:07 GMT  
+	-	`sha256:7552444bdd02e7436e0bbb288c2f932c4dedccf3915c67eee76d054c6a565d3c`  
+		Last Modified: Wed, 18 Jan 2017 03:15:30 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `celery:4.0`
 
 ```console
-$ docker pull celery@sha256:bdf2701db11d279f83f62588805410791850f45b07f5d9cd5145ab3130507e2f
+$ docker pull celery@sha256:8a8ded479b6cdb89e0019e0b59b50a4409197650df94628f5d3b241aef45ec4f
 ```
 
 -	Platforms:
@@ -118,92 +118,92 @@ $ docker pull celery@sha256:bdf2701db11d279f83f62588805410791850f45b07f5d9cd5145
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.4 MB (80426944 bytes)**  
+-	Total Size: **80.4 MB (80430058 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9e1f1bccd5bbe51c2c65f3b660cc2a23d5296647282a6f135db7d0af22d2be8a`
+-	Image ID: `sha256:f9164f4e733c8189367686cf11b7a6963acd2d13b655b8ed60dfc7f6557d7856`
 -	Default Command: `["celery","worker"]`
 
 ```dockerfile
-# Tue, 13 Dec 2016 22:10:59 GMT
-ADD file:1d214d2782eaccc743b8d683ccecf2f87f12a0ecdfbcd6fdf4943ce616f23870 in / 
-# Tue, 13 Dec 2016 22:10:59 GMT
+# Mon, 16 Jan 2017 20:35:09 GMT
+ADD file:89ecb642d662ee7edbb868340551106d51336c7e589fdaca4111725ec64da957 in / 
+# Mon, 16 Jan 2017 20:35:16 GMT
 CMD ["/bin/bash"]
-# Wed, 14 Dec 2016 17:36:48 GMT
+# Tue, 17 Jan 2017 19:39:35 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 14 Dec 2016 17:36:48 GMT
+# Tue, 17 Jan 2017 19:39:35 GMT
 ENV LANG=C.UTF-8
-# Wed, 14 Dec 2016 17:38:06 GMT
+# Tue, 17 Jan 2017 19:40:51 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libgdbm3 		libsqlite3-0 		libssl1.0.0 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 14 Dec 2016 18:47:38 GMT
+# Tue, 17 Jan 2017 19:47:36 GMT
 ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
-# Wed, 14 Dec 2016 18:47:38 GMT
+# Tue, 17 Jan 2017 19:49:46 GMT
 ENV PYTHON_VERSION=3.5.2
-# Wed, 14 Dec 2016 18:47:39 GMT
+# Tue, 17 Jan 2017 19:49:47 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Wed, 14 Dec 2016 18:50:00 GMT
+# Tue, 17 Jan 2017 19:51:56 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		libbz2-dev 		libc6-dev 		libgdbm-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-loadable-sqlite-extensions 		--enable-shared 	&& make -j$(nproc) 	&& make install 	&& ldconfig 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& python3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& find /usr/local -depth 		\( 			\( -type d -a -name test -o -name tests \) 			-o 			\( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Wed, 14 Dec 2016 18:50:08 GMT
+# Tue, 17 Jan 2017 19:51:57 GMT
 RUN cd /usr/local/bin 	&& { [ -e easy_install ] || ln -s easy_install-* easy_install; } 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Wed, 14 Dec 2016 18:50:09 GMT
+# Tue, 17 Jan 2017 19:51:57 GMT
 CMD ["python3"]
-# Mon, 19 Dec 2016 16:32:24 GMT
+# Tue, 17 Jan 2017 21:14:43 GMT
 RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
-# Mon, 19 Dec 2016 16:32:24 GMT
+# Tue, 17 Jan 2017 21:14:43 GMT
 WORKDIR /home/user
-# Mon, 19 Dec 2016 16:32:29 GMT
+# Tue, 17 Jan 2017 21:14:47 GMT
 RUN pip install redis
-# Mon, 19 Dec 2016 22:05:45 GMT
+# Tue, 17 Jan 2017 21:14:56 GMT
 ENV CELERY_VERSION=4.0.2
-# Mon, 19 Dec 2016 22:05:50 GMT
+# Tue, 17 Jan 2017 21:14:59 GMT
 RUN pip install celery=="$CELERY_VERSION"
-# Mon, 19 Dec 2016 22:05:51 GMT
+# Tue, 17 Jan 2017 21:15:00 GMT
 RUN { 	echo 'import os'; 	echo "BROKER_URL = os.environ.get('CELERY_BROKER_URL', 'amqp://')"; } > celeryconfig.py
-# Mon, 19 Dec 2016 22:05:51 GMT
+# Tue, 17 Jan 2017 21:15:00 GMT
 ENV CELERY_BROKER_URL=amqp://guest@rabbit
-# Mon, 19 Dec 2016 22:05:52 GMT
+# Tue, 17 Jan 2017 21:15:01 GMT
 USER [user]
-# Mon, 19 Dec 2016 22:05:52 GMT
+# Tue, 17 Jan 2017 21:15:01 GMT
 CMD ["celery" "worker"]
 ```
 
 -	Layers:
-	-	`sha256:75a822cd7888e394c49828b951061402d31745f596b1f502758570f2d0ee79e2`  
-		Last Modified: Tue, 13 Dec 2016 22:16:41 GMT  
-		Size: 51.4 MB (51363125 bytes)  
+	-	`sha256:5040bd2983909aa8896b9932438c3f1479d25ae837a5f6220242a264d0221f2d`  
+		Last Modified: Mon, 16 Jan 2017 20:43:26 GMT  
+		Size: 51.4 MB (51361210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4665cede9d1cf30769226da349e1f7e35bf16f75d90688b9cab8569ce00ab79`  
-		Last Modified: Mon, 19 Dec 2016 18:14:55 GMT  
-		Size: 3.3 MB (3339260 bytes)  
+	-	`sha256:b303f6ac5c34a3463f6ddc9ff2ee40aeacb1620905e5c8a5cb45e6d3f7ca0b08`  
+		Last Modified: Wed, 18 Jan 2017 03:14:17 GMT  
+		Size: 3.3 MB (3344140 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a22a97b27ff04c94271cda7368cd5a78829fbfaf39b0b561081a503948b6ebe`  
-		Last Modified: Mon, 19 Dec 2016 18:15:03 GMT  
-		Size: 20.9 MB (20896099 bytes)  
+	-	`sha256:9014510e46e556c220b409cadacbf06567f93da00cdfc2df96193c88c738eea3`  
+		Last Modified: Wed, 18 Jan 2017 03:14:25 GMT  
+		Size: 20.9 MB (20896244 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f95b6cb774eb142998bbd8ee1781e27505bbb167a71fe6ea9470500a0d0f036`  
-		Last Modified: Mon, 19 Dec 2016 18:14:51 GMT  
-		Size: 267.0 B  
+	-	`sha256:990c77ba2def0966d99b43fedd1280f05fffc5549958fe64ee5e2e274db28620`  
+		Last Modified: Wed, 18 Jan 2017 03:14:13 GMT  
+		Size: 265.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:233157ebca729137fb68673915d1fcad8b618b470095cd169c714aa902515883`  
-		Last Modified: Mon, 19 Dec 2016 18:14:52 GMT  
-		Size: 4.3 KB (4341 bytes)  
+	-	`sha256:b528730076b79df8e2f2218fd295fdccd8c991229228be8a8f278234a1e44670`  
+		Last Modified: Wed, 18 Jan 2017 03:14:12 GMT  
+		Size: 4.3 KB (4339 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c141958752e1d34fae00ab6479f69d976b42995ccd7906b7c0528e23e3df8e9e`  
-		Last Modified: Mon, 19 Dec 2016 18:14:52 GMT  
-		Size: 1.9 MB (1852344 bytes)  
+	-	`sha256:c89d62c2127c79b5adfd08649647e21dd5eea9126358a317a28251e795a82c70`  
+		Last Modified: Wed, 18 Jan 2017 03:14:15 GMT  
+		Size: 1.9 MB (1852333 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9c123dda5da2588f99892389c35303fcc0fac5fcddc3157f5d7e09678bc35a7`  
-		Last Modified: Mon, 19 Dec 2016 22:06:08 GMT  
-		Size: 3.0 MB (2971275 bytes)  
+	-	`sha256:85bf014d4d53cb9c776f3487d0be04199276650e34da97fecb447ad996535ace`  
+		Last Modified: Wed, 18 Jan 2017 03:15:31 GMT  
+		Size: 3.0 MB (2971294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b951d25b042583ca5ec691a02fb49ceebb5f29d49787f88f63252b2a93fe29cb`  
-		Last Modified: Mon, 19 Dec 2016 22:06:07 GMT  
+	-	`sha256:7552444bdd02e7436e0bbb288c2f932c4dedccf3915c67eee76d054c6a565d3c`  
+		Last Modified: Wed, 18 Jan 2017 03:15:30 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `celery:4`
 
 ```console
-$ docker pull celery@sha256:bdf2701db11d279f83f62588805410791850f45b07f5d9cd5145ab3130507e2f
+$ docker pull celery@sha256:8a8ded479b6cdb89e0019e0b59b50a4409197650df94628f5d3b241aef45ec4f
 ```
 
 -	Platforms:
@@ -213,92 +213,92 @@ $ docker pull celery@sha256:bdf2701db11d279f83f62588805410791850f45b07f5d9cd5145
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.4 MB (80426944 bytes)**  
+-	Total Size: **80.4 MB (80430058 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9e1f1bccd5bbe51c2c65f3b660cc2a23d5296647282a6f135db7d0af22d2be8a`
+-	Image ID: `sha256:f9164f4e733c8189367686cf11b7a6963acd2d13b655b8ed60dfc7f6557d7856`
 -	Default Command: `["celery","worker"]`
 
 ```dockerfile
-# Tue, 13 Dec 2016 22:10:59 GMT
-ADD file:1d214d2782eaccc743b8d683ccecf2f87f12a0ecdfbcd6fdf4943ce616f23870 in / 
-# Tue, 13 Dec 2016 22:10:59 GMT
+# Mon, 16 Jan 2017 20:35:09 GMT
+ADD file:89ecb642d662ee7edbb868340551106d51336c7e589fdaca4111725ec64da957 in / 
+# Mon, 16 Jan 2017 20:35:16 GMT
 CMD ["/bin/bash"]
-# Wed, 14 Dec 2016 17:36:48 GMT
+# Tue, 17 Jan 2017 19:39:35 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 14 Dec 2016 17:36:48 GMT
+# Tue, 17 Jan 2017 19:39:35 GMT
 ENV LANG=C.UTF-8
-# Wed, 14 Dec 2016 17:38:06 GMT
+# Tue, 17 Jan 2017 19:40:51 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libgdbm3 		libsqlite3-0 		libssl1.0.0 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 14 Dec 2016 18:47:38 GMT
+# Tue, 17 Jan 2017 19:47:36 GMT
 ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
-# Wed, 14 Dec 2016 18:47:38 GMT
+# Tue, 17 Jan 2017 19:49:46 GMT
 ENV PYTHON_VERSION=3.5.2
-# Wed, 14 Dec 2016 18:47:39 GMT
+# Tue, 17 Jan 2017 19:49:47 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Wed, 14 Dec 2016 18:50:00 GMT
+# Tue, 17 Jan 2017 19:51:56 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		libbz2-dev 		libc6-dev 		libgdbm-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-loadable-sqlite-extensions 		--enable-shared 	&& make -j$(nproc) 	&& make install 	&& ldconfig 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& python3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& find /usr/local -depth 		\( 			\( -type d -a -name test -o -name tests \) 			-o 			\( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Wed, 14 Dec 2016 18:50:08 GMT
+# Tue, 17 Jan 2017 19:51:57 GMT
 RUN cd /usr/local/bin 	&& { [ -e easy_install ] || ln -s easy_install-* easy_install; } 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Wed, 14 Dec 2016 18:50:09 GMT
+# Tue, 17 Jan 2017 19:51:57 GMT
 CMD ["python3"]
-# Mon, 19 Dec 2016 16:32:24 GMT
+# Tue, 17 Jan 2017 21:14:43 GMT
 RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
-# Mon, 19 Dec 2016 16:32:24 GMT
+# Tue, 17 Jan 2017 21:14:43 GMT
 WORKDIR /home/user
-# Mon, 19 Dec 2016 16:32:29 GMT
+# Tue, 17 Jan 2017 21:14:47 GMT
 RUN pip install redis
-# Mon, 19 Dec 2016 22:05:45 GMT
+# Tue, 17 Jan 2017 21:14:56 GMT
 ENV CELERY_VERSION=4.0.2
-# Mon, 19 Dec 2016 22:05:50 GMT
+# Tue, 17 Jan 2017 21:14:59 GMT
 RUN pip install celery=="$CELERY_VERSION"
-# Mon, 19 Dec 2016 22:05:51 GMT
+# Tue, 17 Jan 2017 21:15:00 GMT
 RUN { 	echo 'import os'; 	echo "BROKER_URL = os.environ.get('CELERY_BROKER_URL', 'amqp://')"; } > celeryconfig.py
-# Mon, 19 Dec 2016 22:05:51 GMT
+# Tue, 17 Jan 2017 21:15:00 GMT
 ENV CELERY_BROKER_URL=amqp://guest@rabbit
-# Mon, 19 Dec 2016 22:05:52 GMT
+# Tue, 17 Jan 2017 21:15:01 GMT
 USER [user]
-# Mon, 19 Dec 2016 22:05:52 GMT
+# Tue, 17 Jan 2017 21:15:01 GMT
 CMD ["celery" "worker"]
 ```
 
 -	Layers:
-	-	`sha256:75a822cd7888e394c49828b951061402d31745f596b1f502758570f2d0ee79e2`  
-		Last Modified: Tue, 13 Dec 2016 22:16:41 GMT  
-		Size: 51.4 MB (51363125 bytes)  
+	-	`sha256:5040bd2983909aa8896b9932438c3f1479d25ae837a5f6220242a264d0221f2d`  
+		Last Modified: Mon, 16 Jan 2017 20:43:26 GMT  
+		Size: 51.4 MB (51361210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4665cede9d1cf30769226da349e1f7e35bf16f75d90688b9cab8569ce00ab79`  
-		Last Modified: Mon, 19 Dec 2016 18:14:55 GMT  
-		Size: 3.3 MB (3339260 bytes)  
+	-	`sha256:b303f6ac5c34a3463f6ddc9ff2ee40aeacb1620905e5c8a5cb45e6d3f7ca0b08`  
+		Last Modified: Wed, 18 Jan 2017 03:14:17 GMT  
+		Size: 3.3 MB (3344140 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a22a97b27ff04c94271cda7368cd5a78829fbfaf39b0b561081a503948b6ebe`  
-		Last Modified: Mon, 19 Dec 2016 18:15:03 GMT  
-		Size: 20.9 MB (20896099 bytes)  
+	-	`sha256:9014510e46e556c220b409cadacbf06567f93da00cdfc2df96193c88c738eea3`  
+		Last Modified: Wed, 18 Jan 2017 03:14:25 GMT  
+		Size: 20.9 MB (20896244 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f95b6cb774eb142998bbd8ee1781e27505bbb167a71fe6ea9470500a0d0f036`  
-		Last Modified: Mon, 19 Dec 2016 18:14:51 GMT  
-		Size: 267.0 B  
+	-	`sha256:990c77ba2def0966d99b43fedd1280f05fffc5549958fe64ee5e2e274db28620`  
+		Last Modified: Wed, 18 Jan 2017 03:14:13 GMT  
+		Size: 265.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:233157ebca729137fb68673915d1fcad8b618b470095cd169c714aa902515883`  
-		Last Modified: Mon, 19 Dec 2016 18:14:52 GMT  
-		Size: 4.3 KB (4341 bytes)  
+	-	`sha256:b528730076b79df8e2f2218fd295fdccd8c991229228be8a8f278234a1e44670`  
+		Last Modified: Wed, 18 Jan 2017 03:14:12 GMT  
+		Size: 4.3 KB (4339 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c141958752e1d34fae00ab6479f69d976b42995ccd7906b7c0528e23e3df8e9e`  
-		Last Modified: Mon, 19 Dec 2016 18:14:52 GMT  
-		Size: 1.9 MB (1852344 bytes)  
+	-	`sha256:c89d62c2127c79b5adfd08649647e21dd5eea9126358a317a28251e795a82c70`  
+		Last Modified: Wed, 18 Jan 2017 03:14:15 GMT  
+		Size: 1.9 MB (1852333 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9c123dda5da2588f99892389c35303fcc0fac5fcddc3157f5d7e09678bc35a7`  
-		Last Modified: Mon, 19 Dec 2016 22:06:08 GMT  
-		Size: 3.0 MB (2971275 bytes)  
+	-	`sha256:85bf014d4d53cb9c776f3487d0be04199276650e34da97fecb447ad996535ace`  
+		Last Modified: Wed, 18 Jan 2017 03:15:31 GMT  
+		Size: 3.0 MB (2971294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b951d25b042583ca5ec691a02fb49ceebb5f29d49787f88f63252b2a93fe29cb`  
-		Last Modified: Mon, 19 Dec 2016 22:06:07 GMT  
+	-	`sha256:7552444bdd02e7436e0bbb288c2f932c4dedccf3915c67eee76d054c6a565d3c`  
+		Last Modified: Wed, 18 Jan 2017 03:15:30 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `celery:3.1.25`
 
 ```console
-$ docker pull celery@sha256:ec266b3d9226d82f9c86152cd3a28267500051c4d2568cd7f60e38e98c1aebb0
+$ docker pull celery@sha256:3f8aab70cc32f81f9617ed1e3de882dc7818d972454f3217444c39d0a5e099f6
 ```
 
 -	Platforms:
@@ -308,92 +308,92 @@ $ docker pull celery@sha256:ec266b3d9226d82f9c86152cd3a28267500051c4d2568cd7f60e
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.6 MB (81649115 bytes)**  
+-	Total Size: **81.7 MB (81652089 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:721deb3746a3b0532af0f0424623222839aa746e276bc8f894862126b30e00ec`
+-	Image ID: `sha256:20fe723e2bc1628a742b5ae6d620994a48f66e7cee4cb847b72cc591e54813a8`
 -	Default Command: `["celery","worker"]`
 
 ```dockerfile
-# Tue, 13 Dec 2016 22:10:59 GMT
-ADD file:1d214d2782eaccc743b8d683ccecf2f87f12a0ecdfbcd6fdf4943ce616f23870 in / 
-# Tue, 13 Dec 2016 22:10:59 GMT
+# Mon, 16 Jan 2017 20:35:09 GMT
+ADD file:89ecb642d662ee7edbb868340551106d51336c7e589fdaca4111725ec64da957 in / 
+# Mon, 16 Jan 2017 20:35:16 GMT
 CMD ["/bin/bash"]
-# Wed, 14 Dec 2016 17:36:48 GMT
+# Tue, 17 Jan 2017 19:39:35 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 14 Dec 2016 17:36:48 GMT
+# Tue, 17 Jan 2017 19:39:35 GMT
 ENV LANG=C.UTF-8
-# Wed, 14 Dec 2016 17:38:06 GMT
+# Tue, 17 Jan 2017 19:40:51 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libgdbm3 		libsqlite3-0 		libssl1.0.0 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 14 Dec 2016 18:47:38 GMT
+# Tue, 17 Jan 2017 19:47:36 GMT
 ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
-# Wed, 14 Dec 2016 18:47:38 GMT
+# Tue, 17 Jan 2017 19:49:46 GMT
 ENV PYTHON_VERSION=3.5.2
-# Wed, 14 Dec 2016 18:47:39 GMT
+# Tue, 17 Jan 2017 19:49:47 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Wed, 14 Dec 2016 18:50:00 GMT
+# Tue, 17 Jan 2017 19:51:56 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		libbz2-dev 		libc6-dev 		libgdbm-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-loadable-sqlite-extensions 		--enable-shared 	&& make -j$(nproc) 	&& make install 	&& ldconfig 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& python3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& find /usr/local -depth 		\( 			\( -type d -a -name test -o -name tests \) 			-o 			\( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Wed, 14 Dec 2016 18:50:08 GMT
+# Tue, 17 Jan 2017 19:51:57 GMT
 RUN cd /usr/local/bin 	&& { [ -e easy_install ] || ln -s easy_install-* easy_install; } 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Wed, 14 Dec 2016 18:50:09 GMT
+# Tue, 17 Jan 2017 19:51:57 GMT
 CMD ["python3"]
-# Mon, 19 Dec 2016 16:32:24 GMT
+# Tue, 17 Jan 2017 21:14:43 GMT
 RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
-# Mon, 19 Dec 2016 16:32:24 GMT
+# Tue, 17 Jan 2017 21:14:43 GMT
 WORKDIR /home/user
-# Mon, 19 Dec 2016 16:32:29 GMT
+# Tue, 17 Jan 2017 21:14:47 GMT
 RUN pip install redis
-# Mon, 19 Dec 2016 16:32:29 GMT
+# Tue, 17 Jan 2017 21:14:48 GMT
 ENV CELERY_VERSION=3.1.25
-# Mon, 19 Dec 2016 16:32:34 GMT
+# Tue, 17 Jan 2017 21:14:53 GMT
 RUN pip install celery=="$CELERY_VERSION"
-# Mon, 19 Dec 2016 16:32:35 GMT
+# Tue, 17 Jan 2017 21:14:54 GMT
 RUN { 	echo 'import os'; 	echo "BROKER_URL = os.environ.get('CELERY_BROKER_URL', 'amqp://')"; } > celeryconfig.py
-# Mon, 19 Dec 2016 16:32:35 GMT
+# Tue, 17 Jan 2017 21:14:54 GMT
 ENV CELERY_BROKER_URL=amqp://guest@rabbit
-# Mon, 19 Dec 2016 16:32:35 GMT
+# Tue, 17 Jan 2017 21:14:55 GMT
 USER [user]
-# Mon, 19 Dec 2016 16:32:36 GMT
+# Tue, 17 Jan 2017 21:14:55 GMT
 CMD ["celery" "worker"]
 ```
 
 -	Layers:
-	-	`sha256:75a822cd7888e394c49828b951061402d31745f596b1f502758570f2d0ee79e2`  
-		Last Modified: Tue, 13 Dec 2016 22:16:41 GMT  
-		Size: 51.4 MB (51363125 bytes)  
+	-	`sha256:5040bd2983909aa8896b9932438c3f1479d25ae837a5f6220242a264d0221f2d`  
+		Last Modified: Mon, 16 Jan 2017 20:43:26 GMT  
+		Size: 51.4 MB (51361210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4665cede9d1cf30769226da349e1f7e35bf16f75d90688b9cab8569ce00ab79`  
-		Last Modified: Mon, 19 Dec 2016 18:14:55 GMT  
-		Size: 3.3 MB (3339260 bytes)  
+	-	`sha256:b303f6ac5c34a3463f6ddc9ff2ee40aeacb1620905e5c8a5cb45e6d3f7ca0b08`  
+		Last Modified: Wed, 18 Jan 2017 03:14:17 GMT  
+		Size: 3.3 MB (3344140 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a22a97b27ff04c94271cda7368cd5a78829fbfaf39b0b561081a503948b6ebe`  
-		Last Modified: Mon, 19 Dec 2016 18:15:03 GMT  
-		Size: 20.9 MB (20896099 bytes)  
+	-	`sha256:9014510e46e556c220b409cadacbf06567f93da00cdfc2df96193c88c738eea3`  
+		Last Modified: Wed, 18 Jan 2017 03:14:25 GMT  
+		Size: 20.9 MB (20896244 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f95b6cb774eb142998bbd8ee1781e27505bbb167a71fe6ea9470500a0d0f036`  
-		Last Modified: Mon, 19 Dec 2016 18:14:51 GMT  
-		Size: 267.0 B  
+	-	`sha256:990c77ba2def0966d99b43fedd1280f05fffc5549958fe64ee5e2e274db28620`  
+		Last Modified: Wed, 18 Jan 2017 03:14:13 GMT  
+		Size: 265.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:233157ebca729137fb68673915d1fcad8b618b470095cd169c714aa902515883`  
-		Last Modified: Mon, 19 Dec 2016 18:14:52 GMT  
-		Size: 4.3 KB (4341 bytes)  
+	-	`sha256:b528730076b79df8e2f2218fd295fdccd8c991229228be8a8f278234a1e44670`  
+		Last Modified: Wed, 18 Jan 2017 03:14:12 GMT  
+		Size: 4.3 KB (4339 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c141958752e1d34fae00ab6479f69d976b42995ccd7906b7c0528e23e3df8e9e`  
-		Last Modified: Mon, 19 Dec 2016 18:14:52 GMT  
-		Size: 1.9 MB (1852344 bytes)  
+	-	`sha256:c89d62c2127c79b5adfd08649647e21dd5eea9126358a317a28251e795a82c70`  
+		Last Modified: Wed, 18 Jan 2017 03:14:15 GMT  
+		Size: 1.9 MB (1852333 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6e6b14a642fd96151c52befccc09b340c65bf613ddf75a265dbb5e0165d98c7`  
-		Last Modified: Mon, 19 Dec 2016 18:14:54 GMT  
-		Size: 4.2 MB (4193446 bytes)  
+	-	`sha256:d7a09f89daa26af49736eaa93552b87139426b16b410a300ef8eaa1ed09f7bb4`  
+		Last Modified: Wed, 18 Jan 2017 03:14:15 GMT  
+		Size: 4.2 MB (4193325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d9b8f8e06fe939fae72893cd85ec78c5d093827c490fadd231dac7bbec3cbe6`  
-		Last Modified: Mon, 19 Dec 2016 18:14:51 GMT  
+	-	`sha256:97c004657d8d90df84875b3baf2746ab1e6109620c598e9e72c9fbbbaf53ef17`  
+		Last Modified: Wed, 18 Jan 2017 03:14:13 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `celery:3.1`
 
 ```console
-$ docker pull celery@sha256:ec266b3d9226d82f9c86152cd3a28267500051c4d2568cd7f60e38e98c1aebb0
+$ docker pull celery@sha256:3f8aab70cc32f81f9617ed1e3de882dc7818d972454f3217444c39d0a5e099f6
 ```
 
 -	Platforms:
@@ -403,92 +403,92 @@ $ docker pull celery@sha256:ec266b3d9226d82f9c86152cd3a28267500051c4d2568cd7f60e
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.6 MB (81649115 bytes)**  
+-	Total Size: **81.7 MB (81652089 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:721deb3746a3b0532af0f0424623222839aa746e276bc8f894862126b30e00ec`
+-	Image ID: `sha256:20fe723e2bc1628a742b5ae6d620994a48f66e7cee4cb847b72cc591e54813a8`
 -	Default Command: `["celery","worker"]`
 
 ```dockerfile
-# Tue, 13 Dec 2016 22:10:59 GMT
-ADD file:1d214d2782eaccc743b8d683ccecf2f87f12a0ecdfbcd6fdf4943ce616f23870 in / 
-# Tue, 13 Dec 2016 22:10:59 GMT
+# Mon, 16 Jan 2017 20:35:09 GMT
+ADD file:89ecb642d662ee7edbb868340551106d51336c7e589fdaca4111725ec64da957 in / 
+# Mon, 16 Jan 2017 20:35:16 GMT
 CMD ["/bin/bash"]
-# Wed, 14 Dec 2016 17:36:48 GMT
+# Tue, 17 Jan 2017 19:39:35 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 14 Dec 2016 17:36:48 GMT
+# Tue, 17 Jan 2017 19:39:35 GMT
 ENV LANG=C.UTF-8
-# Wed, 14 Dec 2016 17:38:06 GMT
+# Tue, 17 Jan 2017 19:40:51 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libgdbm3 		libsqlite3-0 		libssl1.0.0 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 14 Dec 2016 18:47:38 GMT
+# Tue, 17 Jan 2017 19:47:36 GMT
 ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
-# Wed, 14 Dec 2016 18:47:38 GMT
+# Tue, 17 Jan 2017 19:49:46 GMT
 ENV PYTHON_VERSION=3.5.2
-# Wed, 14 Dec 2016 18:47:39 GMT
+# Tue, 17 Jan 2017 19:49:47 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Wed, 14 Dec 2016 18:50:00 GMT
+# Tue, 17 Jan 2017 19:51:56 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		libbz2-dev 		libc6-dev 		libgdbm-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-loadable-sqlite-extensions 		--enable-shared 	&& make -j$(nproc) 	&& make install 	&& ldconfig 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& python3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& find /usr/local -depth 		\( 			\( -type d -a -name test -o -name tests \) 			-o 			\( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Wed, 14 Dec 2016 18:50:08 GMT
+# Tue, 17 Jan 2017 19:51:57 GMT
 RUN cd /usr/local/bin 	&& { [ -e easy_install ] || ln -s easy_install-* easy_install; } 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Wed, 14 Dec 2016 18:50:09 GMT
+# Tue, 17 Jan 2017 19:51:57 GMT
 CMD ["python3"]
-# Mon, 19 Dec 2016 16:32:24 GMT
+# Tue, 17 Jan 2017 21:14:43 GMT
 RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
-# Mon, 19 Dec 2016 16:32:24 GMT
+# Tue, 17 Jan 2017 21:14:43 GMT
 WORKDIR /home/user
-# Mon, 19 Dec 2016 16:32:29 GMT
+# Tue, 17 Jan 2017 21:14:47 GMT
 RUN pip install redis
-# Mon, 19 Dec 2016 16:32:29 GMT
+# Tue, 17 Jan 2017 21:14:48 GMT
 ENV CELERY_VERSION=3.1.25
-# Mon, 19 Dec 2016 16:32:34 GMT
+# Tue, 17 Jan 2017 21:14:53 GMT
 RUN pip install celery=="$CELERY_VERSION"
-# Mon, 19 Dec 2016 16:32:35 GMT
+# Tue, 17 Jan 2017 21:14:54 GMT
 RUN { 	echo 'import os'; 	echo "BROKER_URL = os.environ.get('CELERY_BROKER_URL', 'amqp://')"; } > celeryconfig.py
-# Mon, 19 Dec 2016 16:32:35 GMT
+# Tue, 17 Jan 2017 21:14:54 GMT
 ENV CELERY_BROKER_URL=amqp://guest@rabbit
-# Mon, 19 Dec 2016 16:32:35 GMT
+# Tue, 17 Jan 2017 21:14:55 GMT
 USER [user]
-# Mon, 19 Dec 2016 16:32:36 GMT
+# Tue, 17 Jan 2017 21:14:55 GMT
 CMD ["celery" "worker"]
 ```
 
 -	Layers:
-	-	`sha256:75a822cd7888e394c49828b951061402d31745f596b1f502758570f2d0ee79e2`  
-		Last Modified: Tue, 13 Dec 2016 22:16:41 GMT  
-		Size: 51.4 MB (51363125 bytes)  
+	-	`sha256:5040bd2983909aa8896b9932438c3f1479d25ae837a5f6220242a264d0221f2d`  
+		Last Modified: Mon, 16 Jan 2017 20:43:26 GMT  
+		Size: 51.4 MB (51361210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4665cede9d1cf30769226da349e1f7e35bf16f75d90688b9cab8569ce00ab79`  
-		Last Modified: Mon, 19 Dec 2016 18:14:55 GMT  
-		Size: 3.3 MB (3339260 bytes)  
+	-	`sha256:b303f6ac5c34a3463f6ddc9ff2ee40aeacb1620905e5c8a5cb45e6d3f7ca0b08`  
+		Last Modified: Wed, 18 Jan 2017 03:14:17 GMT  
+		Size: 3.3 MB (3344140 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a22a97b27ff04c94271cda7368cd5a78829fbfaf39b0b561081a503948b6ebe`  
-		Last Modified: Mon, 19 Dec 2016 18:15:03 GMT  
-		Size: 20.9 MB (20896099 bytes)  
+	-	`sha256:9014510e46e556c220b409cadacbf06567f93da00cdfc2df96193c88c738eea3`  
+		Last Modified: Wed, 18 Jan 2017 03:14:25 GMT  
+		Size: 20.9 MB (20896244 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f95b6cb774eb142998bbd8ee1781e27505bbb167a71fe6ea9470500a0d0f036`  
-		Last Modified: Mon, 19 Dec 2016 18:14:51 GMT  
-		Size: 267.0 B  
+	-	`sha256:990c77ba2def0966d99b43fedd1280f05fffc5549958fe64ee5e2e274db28620`  
+		Last Modified: Wed, 18 Jan 2017 03:14:13 GMT  
+		Size: 265.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:233157ebca729137fb68673915d1fcad8b618b470095cd169c714aa902515883`  
-		Last Modified: Mon, 19 Dec 2016 18:14:52 GMT  
-		Size: 4.3 KB (4341 bytes)  
+	-	`sha256:b528730076b79df8e2f2218fd295fdccd8c991229228be8a8f278234a1e44670`  
+		Last Modified: Wed, 18 Jan 2017 03:14:12 GMT  
+		Size: 4.3 KB (4339 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c141958752e1d34fae00ab6479f69d976b42995ccd7906b7c0528e23e3df8e9e`  
-		Last Modified: Mon, 19 Dec 2016 18:14:52 GMT  
-		Size: 1.9 MB (1852344 bytes)  
+	-	`sha256:c89d62c2127c79b5adfd08649647e21dd5eea9126358a317a28251e795a82c70`  
+		Last Modified: Wed, 18 Jan 2017 03:14:15 GMT  
+		Size: 1.9 MB (1852333 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6e6b14a642fd96151c52befccc09b340c65bf613ddf75a265dbb5e0165d98c7`  
-		Last Modified: Mon, 19 Dec 2016 18:14:54 GMT  
-		Size: 4.2 MB (4193446 bytes)  
+	-	`sha256:d7a09f89daa26af49736eaa93552b87139426b16b410a300ef8eaa1ed09f7bb4`  
+		Last Modified: Wed, 18 Jan 2017 03:14:15 GMT  
+		Size: 4.2 MB (4193325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d9b8f8e06fe939fae72893cd85ec78c5d093827c490fadd231dac7bbec3cbe6`  
-		Last Modified: Mon, 19 Dec 2016 18:14:51 GMT  
+	-	`sha256:97c004657d8d90df84875b3baf2746ab1e6109620c598e9e72c9fbbbaf53ef17`  
+		Last Modified: Wed, 18 Jan 2017 03:14:13 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `celery:3`
 
 ```console
-$ docker pull celery@sha256:ec266b3d9226d82f9c86152cd3a28267500051c4d2568cd7f60e38e98c1aebb0
+$ docker pull celery@sha256:3f8aab70cc32f81f9617ed1e3de882dc7818d972454f3217444c39d0a5e099f6
 ```
 
 -	Platforms:
@@ -498,92 +498,92 @@ $ docker pull celery@sha256:ec266b3d9226d82f9c86152cd3a28267500051c4d2568cd7f60e
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.6 MB (81649115 bytes)**  
+-	Total Size: **81.7 MB (81652089 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:721deb3746a3b0532af0f0424623222839aa746e276bc8f894862126b30e00ec`
+-	Image ID: `sha256:20fe723e2bc1628a742b5ae6d620994a48f66e7cee4cb847b72cc591e54813a8`
 -	Default Command: `["celery","worker"]`
 
 ```dockerfile
-# Tue, 13 Dec 2016 22:10:59 GMT
-ADD file:1d214d2782eaccc743b8d683ccecf2f87f12a0ecdfbcd6fdf4943ce616f23870 in / 
-# Tue, 13 Dec 2016 22:10:59 GMT
+# Mon, 16 Jan 2017 20:35:09 GMT
+ADD file:89ecb642d662ee7edbb868340551106d51336c7e589fdaca4111725ec64da957 in / 
+# Mon, 16 Jan 2017 20:35:16 GMT
 CMD ["/bin/bash"]
-# Wed, 14 Dec 2016 17:36:48 GMT
+# Tue, 17 Jan 2017 19:39:35 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 14 Dec 2016 17:36:48 GMT
+# Tue, 17 Jan 2017 19:39:35 GMT
 ENV LANG=C.UTF-8
-# Wed, 14 Dec 2016 17:38:06 GMT
+# Tue, 17 Jan 2017 19:40:51 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libgdbm3 		libsqlite3-0 		libssl1.0.0 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 14 Dec 2016 18:47:38 GMT
+# Tue, 17 Jan 2017 19:47:36 GMT
 ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
-# Wed, 14 Dec 2016 18:47:38 GMT
+# Tue, 17 Jan 2017 19:49:46 GMT
 ENV PYTHON_VERSION=3.5.2
-# Wed, 14 Dec 2016 18:47:39 GMT
+# Tue, 17 Jan 2017 19:49:47 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Wed, 14 Dec 2016 18:50:00 GMT
+# Tue, 17 Jan 2017 19:51:56 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		libbz2-dev 		libc6-dev 		libgdbm-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-loadable-sqlite-extensions 		--enable-shared 	&& make -j$(nproc) 	&& make install 	&& ldconfig 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& python3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& find /usr/local -depth 		\( 			\( -type d -a -name test -o -name tests \) 			-o 			\( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Wed, 14 Dec 2016 18:50:08 GMT
+# Tue, 17 Jan 2017 19:51:57 GMT
 RUN cd /usr/local/bin 	&& { [ -e easy_install ] || ln -s easy_install-* easy_install; } 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Wed, 14 Dec 2016 18:50:09 GMT
+# Tue, 17 Jan 2017 19:51:57 GMT
 CMD ["python3"]
-# Mon, 19 Dec 2016 16:32:24 GMT
+# Tue, 17 Jan 2017 21:14:43 GMT
 RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
-# Mon, 19 Dec 2016 16:32:24 GMT
+# Tue, 17 Jan 2017 21:14:43 GMT
 WORKDIR /home/user
-# Mon, 19 Dec 2016 16:32:29 GMT
+# Tue, 17 Jan 2017 21:14:47 GMT
 RUN pip install redis
-# Mon, 19 Dec 2016 16:32:29 GMT
+# Tue, 17 Jan 2017 21:14:48 GMT
 ENV CELERY_VERSION=3.1.25
-# Mon, 19 Dec 2016 16:32:34 GMT
+# Tue, 17 Jan 2017 21:14:53 GMT
 RUN pip install celery=="$CELERY_VERSION"
-# Mon, 19 Dec 2016 16:32:35 GMT
+# Tue, 17 Jan 2017 21:14:54 GMT
 RUN { 	echo 'import os'; 	echo "BROKER_URL = os.environ.get('CELERY_BROKER_URL', 'amqp://')"; } > celeryconfig.py
-# Mon, 19 Dec 2016 16:32:35 GMT
+# Tue, 17 Jan 2017 21:14:54 GMT
 ENV CELERY_BROKER_URL=amqp://guest@rabbit
-# Mon, 19 Dec 2016 16:32:35 GMT
+# Tue, 17 Jan 2017 21:14:55 GMT
 USER [user]
-# Mon, 19 Dec 2016 16:32:36 GMT
+# Tue, 17 Jan 2017 21:14:55 GMT
 CMD ["celery" "worker"]
 ```
 
 -	Layers:
-	-	`sha256:75a822cd7888e394c49828b951061402d31745f596b1f502758570f2d0ee79e2`  
-		Last Modified: Tue, 13 Dec 2016 22:16:41 GMT  
-		Size: 51.4 MB (51363125 bytes)  
+	-	`sha256:5040bd2983909aa8896b9932438c3f1479d25ae837a5f6220242a264d0221f2d`  
+		Last Modified: Mon, 16 Jan 2017 20:43:26 GMT  
+		Size: 51.4 MB (51361210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4665cede9d1cf30769226da349e1f7e35bf16f75d90688b9cab8569ce00ab79`  
-		Last Modified: Mon, 19 Dec 2016 18:14:55 GMT  
-		Size: 3.3 MB (3339260 bytes)  
+	-	`sha256:b303f6ac5c34a3463f6ddc9ff2ee40aeacb1620905e5c8a5cb45e6d3f7ca0b08`  
+		Last Modified: Wed, 18 Jan 2017 03:14:17 GMT  
+		Size: 3.3 MB (3344140 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a22a97b27ff04c94271cda7368cd5a78829fbfaf39b0b561081a503948b6ebe`  
-		Last Modified: Mon, 19 Dec 2016 18:15:03 GMT  
-		Size: 20.9 MB (20896099 bytes)  
+	-	`sha256:9014510e46e556c220b409cadacbf06567f93da00cdfc2df96193c88c738eea3`  
+		Last Modified: Wed, 18 Jan 2017 03:14:25 GMT  
+		Size: 20.9 MB (20896244 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f95b6cb774eb142998bbd8ee1781e27505bbb167a71fe6ea9470500a0d0f036`  
-		Last Modified: Mon, 19 Dec 2016 18:14:51 GMT  
-		Size: 267.0 B  
+	-	`sha256:990c77ba2def0966d99b43fedd1280f05fffc5549958fe64ee5e2e274db28620`  
+		Last Modified: Wed, 18 Jan 2017 03:14:13 GMT  
+		Size: 265.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:233157ebca729137fb68673915d1fcad8b618b470095cd169c714aa902515883`  
-		Last Modified: Mon, 19 Dec 2016 18:14:52 GMT  
-		Size: 4.3 KB (4341 bytes)  
+	-	`sha256:b528730076b79df8e2f2218fd295fdccd8c991229228be8a8f278234a1e44670`  
+		Last Modified: Wed, 18 Jan 2017 03:14:12 GMT  
+		Size: 4.3 KB (4339 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c141958752e1d34fae00ab6479f69d976b42995ccd7906b7c0528e23e3df8e9e`  
-		Last Modified: Mon, 19 Dec 2016 18:14:52 GMT  
-		Size: 1.9 MB (1852344 bytes)  
+	-	`sha256:c89d62c2127c79b5adfd08649647e21dd5eea9126358a317a28251e795a82c70`  
+		Last Modified: Wed, 18 Jan 2017 03:14:15 GMT  
+		Size: 1.9 MB (1852333 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6e6b14a642fd96151c52befccc09b340c65bf613ddf75a265dbb5e0165d98c7`  
-		Last Modified: Mon, 19 Dec 2016 18:14:54 GMT  
-		Size: 4.2 MB (4193446 bytes)  
+	-	`sha256:d7a09f89daa26af49736eaa93552b87139426b16b410a300ef8eaa1ed09f7bb4`  
+		Last Modified: Wed, 18 Jan 2017 03:14:15 GMT  
+		Size: 4.2 MB (4193325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d9b8f8e06fe939fae72893cd85ec78c5d093827c490fadd231dac7bbec3cbe6`  
-		Last Modified: Mon, 19 Dec 2016 18:14:51 GMT  
+	-	`sha256:97c004657d8d90df84875b3baf2746ab1e6109620c598e9e72c9fbbbaf53ef17`  
+		Last Modified: Wed, 18 Jan 2017 03:14:13 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `celery:latest`
 
 ```console
-$ docker pull celery@sha256:ec266b3d9226d82f9c86152cd3a28267500051c4d2568cd7f60e38e98c1aebb0
+$ docker pull celery@sha256:3f8aab70cc32f81f9617ed1e3de882dc7818d972454f3217444c39d0a5e099f6
 ```
 
 -	Platforms:
@@ -593,84 +593,84 @@ $ docker pull celery@sha256:ec266b3d9226d82f9c86152cd3a28267500051c4d2568cd7f60e
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.6 MB (81649115 bytes)**  
+-	Total Size: **81.7 MB (81652089 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:721deb3746a3b0532af0f0424623222839aa746e276bc8f894862126b30e00ec`
+-	Image ID: `sha256:20fe723e2bc1628a742b5ae6d620994a48f66e7cee4cb847b72cc591e54813a8`
 -	Default Command: `["celery","worker"]`
 
 ```dockerfile
-# Tue, 13 Dec 2016 22:10:59 GMT
-ADD file:1d214d2782eaccc743b8d683ccecf2f87f12a0ecdfbcd6fdf4943ce616f23870 in / 
-# Tue, 13 Dec 2016 22:10:59 GMT
+# Mon, 16 Jan 2017 20:35:09 GMT
+ADD file:89ecb642d662ee7edbb868340551106d51336c7e589fdaca4111725ec64da957 in / 
+# Mon, 16 Jan 2017 20:35:16 GMT
 CMD ["/bin/bash"]
-# Wed, 14 Dec 2016 17:36:48 GMT
+# Tue, 17 Jan 2017 19:39:35 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 14 Dec 2016 17:36:48 GMT
+# Tue, 17 Jan 2017 19:39:35 GMT
 ENV LANG=C.UTF-8
-# Wed, 14 Dec 2016 17:38:06 GMT
+# Tue, 17 Jan 2017 19:40:51 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libgdbm3 		libsqlite3-0 		libssl1.0.0 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 14 Dec 2016 18:47:38 GMT
+# Tue, 17 Jan 2017 19:47:36 GMT
 ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
-# Wed, 14 Dec 2016 18:47:38 GMT
+# Tue, 17 Jan 2017 19:49:46 GMT
 ENV PYTHON_VERSION=3.5.2
-# Wed, 14 Dec 2016 18:47:39 GMT
+# Tue, 17 Jan 2017 19:49:47 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Wed, 14 Dec 2016 18:50:00 GMT
+# Tue, 17 Jan 2017 19:51:56 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		libbz2-dev 		libc6-dev 		libgdbm-dev 		liblzma-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-loadable-sqlite-extensions 		--enable-shared 	&& make -j$(nproc) 	&& make install 	&& ldconfig 		&& if [ ! -e /usr/local/bin/pip3 ]; then : 		&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& python3 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	; fi 	&& pip3 install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& find /usr/local -depth 		\( 			\( -type d -a -name test -o -name tests \) 			-o 			\( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Wed, 14 Dec 2016 18:50:08 GMT
+# Tue, 17 Jan 2017 19:51:57 GMT
 RUN cd /usr/local/bin 	&& { [ -e easy_install ] || ln -s easy_install-* easy_install; } 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Wed, 14 Dec 2016 18:50:09 GMT
+# Tue, 17 Jan 2017 19:51:57 GMT
 CMD ["python3"]
-# Mon, 19 Dec 2016 16:32:24 GMT
+# Tue, 17 Jan 2017 21:14:43 GMT
 RUN groupadd user && useradd --create-home --home-dir /home/user -g user user
-# Mon, 19 Dec 2016 16:32:24 GMT
+# Tue, 17 Jan 2017 21:14:43 GMT
 WORKDIR /home/user
-# Mon, 19 Dec 2016 16:32:29 GMT
+# Tue, 17 Jan 2017 21:14:47 GMT
 RUN pip install redis
-# Mon, 19 Dec 2016 16:32:29 GMT
+# Tue, 17 Jan 2017 21:14:48 GMT
 ENV CELERY_VERSION=3.1.25
-# Mon, 19 Dec 2016 16:32:34 GMT
+# Tue, 17 Jan 2017 21:14:53 GMT
 RUN pip install celery=="$CELERY_VERSION"
-# Mon, 19 Dec 2016 16:32:35 GMT
+# Tue, 17 Jan 2017 21:14:54 GMT
 RUN { 	echo 'import os'; 	echo "BROKER_URL = os.environ.get('CELERY_BROKER_URL', 'amqp://')"; } > celeryconfig.py
-# Mon, 19 Dec 2016 16:32:35 GMT
+# Tue, 17 Jan 2017 21:14:54 GMT
 ENV CELERY_BROKER_URL=amqp://guest@rabbit
-# Mon, 19 Dec 2016 16:32:35 GMT
+# Tue, 17 Jan 2017 21:14:55 GMT
 USER [user]
-# Mon, 19 Dec 2016 16:32:36 GMT
+# Tue, 17 Jan 2017 21:14:55 GMT
 CMD ["celery" "worker"]
 ```
 
 -	Layers:
-	-	`sha256:75a822cd7888e394c49828b951061402d31745f596b1f502758570f2d0ee79e2`  
-		Last Modified: Tue, 13 Dec 2016 22:16:41 GMT  
-		Size: 51.4 MB (51363125 bytes)  
+	-	`sha256:5040bd2983909aa8896b9932438c3f1479d25ae837a5f6220242a264d0221f2d`  
+		Last Modified: Mon, 16 Jan 2017 20:43:26 GMT  
+		Size: 51.4 MB (51361210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4665cede9d1cf30769226da349e1f7e35bf16f75d90688b9cab8569ce00ab79`  
-		Last Modified: Mon, 19 Dec 2016 18:14:55 GMT  
-		Size: 3.3 MB (3339260 bytes)  
+	-	`sha256:b303f6ac5c34a3463f6ddc9ff2ee40aeacb1620905e5c8a5cb45e6d3f7ca0b08`  
+		Last Modified: Wed, 18 Jan 2017 03:14:17 GMT  
+		Size: 3.3 MB (3344140 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a22a97b27ff04c94271cda7368cd5a78829fbfaf39b0b561081a503948b6ebe`  
-		Last Modified: Mon, 19 Dec 2016 18:15:03 GMT  
-		Size: 20.9 MB (20896099 bytes)  
+	-	`sha256:9014510e46e556c220b409cadacbf06567f93da00cdfc2df96193c88c738eea3`  
+		Last Modified: Wed, 18 Jan 2017 03:14:25 GMT  
+		Size: 20.9 MB (20896244 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f95b6cb774eb142998bbd8ee1781e27505bbb167a71fe6ea9470500a0d0f036`  
-		Last Modified: Mon, 19 Dec 2016 18:14:51 GMT  
-		Size: 267.0 B  
+	-	`sha256:990c77ba2def0966d99b43fedd1280f05fffc5549958fe64ee5e2e274db28620`  
+		Last Modified: Wed, 18 Jan 2017 03:14:13 GMT  
+		Size: 265.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:233157ebca729137fb68673915d1fcad8b618b470095cd169c714aa902515883`  
-		Last Modified: Mon, 19 Dec 2016 18:14:52 GMT  
-		Size: 4.3 KB (4341 bytes)  
+	-	`sha256:b528730076b79df8e2f2218fd295fdccd8c991229228be8a8f278234a1e44670`  
+		Last Modified: Wed, 18 Jan 2017 03:14:12 GMT  
+		Size: 4.3 KB (4339 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c141958752e1d34fae00ab6479f69d976b42995ccd7906b7c0528e23e3df8e9e`  
-		Last Modified: Mon, 19 Dec 2016 18:14:52 GMT  
-		Size: 1.9 MB (1852344 bytes)  
+	-	`sha256:c89d62c2127c79b5adfd08649647e21dd5eea9126358a317a28251e795a82c70`  
+		Last Modified: Wed, 18 Jan 2017 03:14:15 GMT  
+		Size: 1.9 MB (1852333 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f6e6b14a642fd96151c52befccc09b340c65bf613ddf75a265dbb5e0165d98c7`  
-		Last Modified: Mon, 19 Dec 2016 18:14:54 GMT  
-		Size: 4.2 MB (4193446 bytes)  
+	-	`sha256:d7a09f89daa26af49736eaa93552b87139426b16b410a300ef8eaa1ed09f7bb4`  
+		Last Modified: Wed, 18 Jan 2017 03:14:15 GMT  
+		Size: 4.2 MB (4193325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d9b8f8e06fe939fae72893cd85ec78c5d093827c490fadd231dac7bbec3cbe6`  
-		Last Modified: Mon, 19 Dec 2016 18:14:51 GMT  
+	-	`sha256:97c004657d8d90df84875b3baf2746ab1e6109620c598e9e72c9fbbbaf53ef17`  
+		Last Modified: Wed, 18 Jan 2017 03:14:13 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
