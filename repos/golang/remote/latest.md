@@ -1,7 +1,7 @@
 ## `golang:latest`
 
 ```console
-$ docker pull golang@sha256:5787421a0314390ca8da11b26885502b58837ebdffda0f557521790c13ddb55f
+$ docker pull golang@sha256:0b3787ac21ffb4edbd6710e0e60f991d5ded8d8a4f558209ef5987f73db4211a
 ```
 
 -	Platforms:
@@ -11,68 +11,68 @@ $ docker pull golang@sha256:5787421a0314390ca8da11b26885502b58837ebdffda0f557521
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.1 MB (255134271 bytes)**  
+-	Total Size: **255.1 MB (255148118 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6639f812dbc7ab533c01e405010a8e84b3ed65db653e2a20faad3e92abb024e4`
+-	Image ID: `sha256:f3bdc5e851ceac6f5871a83a655de79f1f57caa6fc6650b9133ac4d08a80fc48`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 13 Dec 2016 22:10:59 GMT
-ADD file:1d214d2782eaccc743b8d683ccecf2f87f12a0ecdfbcd6fdf4943ce616f23870 in / 
-# Tue, 13 Dec 2016 22:10:59 GMT
+# Mon, 16 Jan 2017 20:35:09 GMT
+ADD file:89ecb642d662ee7edbb868340551106d51336c7e589fdaca4111725ec64da957 in / 
+# Mon, 16 Jan 2017 20:35:16 GMT
 CMD ["/bin/bash"]
-# Tue, 13 Dec 2016 23:00:11 GMT
+# Tue, 17 Jan 2017 00:00:45 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 13 Dec 2016 23:00:33 GMT
+# Tue, 17 Jan 2017 00:01:07 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 13 Dec 2016 23:25:31 GMT
+# Tue, 17 Jan 2017 00:40:03 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 13 Dec 2016 23:25:31 GMT
+# Tue, 17 Jan 2017 00:40:04 GMT
 ENV GOLANG_VERSION=1.7.4
-# Tue, 13 Dec 2016 23:25:31 GMT
+# Tue, 17 Jan 2017 00:40:04 GMT
 ENV GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.7.4.linux-amd64.tar.gz
-# Tue, 13 Dec 2016 23:25:32 GMT
+# Tue, 17 Jan 2017 00:40:05 GMT
 ENV GOLANG_DOWNLOAD_SHA256=47fda42e46b4c3ec93fa5d4d4cc6a748aa3f9411a2a2b7e08e3a6d80d753ec8b
-# Tue, 13 Dec 2016 23:25:41 GMT
+# Tue, 17 Jan 2017 00:40:13 GMT
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz 	&& echo "$GOLANG_DOWNLOAD_SHA256  golang.tar.gz" | sha256sum -c - 	&& tar -C /usr/local -xzf golang.tar.gz 	&& rm golang.tar.gz
-# Tue, 13 Dec 2016 23:25:41 GMT
+# Tue, 17 Jan 2017 00:40:14 GMT
 ENV GOPATH=/go
-# Tue, 13 Dec 2016 23:25:42 GMT
+# Tue, 17 Jan 2017 00:40:14 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 13 Dec 2016 23:25:43 GMT
+# Tue, 17 Jan 2017 00:40:15 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Tue, 13 Dec 2016 23:25:43 GMT
+# Tue, 17 Jan 2017 00:40:15 GMT
 WORKDIR /go
-# Tue, 13 Dec 2016 23:25:44 GMT
+# Tue, 17 Jan 2017 00:40:16 GMT
 COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /usr/local/bin/ 
 ```
 
 -	Layers:
-	-	`sha256:75a822cd7888e394c49828b951061402d31745f596b1f502758570f2d0ee79e2`  
-		Last Modified: Tue, 13 Dec 2016 22:16:41 GMT  
-		Size: 51.4 MB (51363125 bytes)  
+	-	`sha256:5040bd2983909aa8896b9932438c3f1479d25ae837a5f6220242a264d0221f2d`  
+		Last Modified: Mon, 16 Jan 2017 20:43:26 GMT  
+		Size: 51.4 MB (51361210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57de64c72267e88e952b064236cb906c7626f7c07a1a2d5900cf6953e72632b3`  
-		Last Modified: Wed, 14 Dec 2016 03:04:38 GMT  
-		Size: 18.5 MB (18529983 bytes)  
+	-	`sha256:fce5728aad85a763fe3c419db16885eb6f7a670a42824ea618414b8fb309ccde`  
+		Last Modified: Tue, 17 Jan 2017 00:19:41 GMT  
+		Size: 18.5 MB (18535441 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4306be1e8943b446026b96c2ef7b3ab8471c760774fd1cd11334df7084fed57b`  
-		Last Modified: Wed, 14 Dec 2016 03:04:50 GMT  
-		Size: 42.5 MB (42502002 bytes)  
+	-	`sha256:76610ec20bf5892e24cebd4153c7668284aa1d1151b7c3b0c7d50c579aa5ce75`  
+		Last Modified: Tue, 17 Jan 2017 00:20:34 GMT  
+		Size: 42.5 MB (42502406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ba540d4983533a6b6779ea036bf9b1b04ceea24afe472eab04f559ecdefa65f`  
-		Last Modified: Mon, 19 Dec 2016 19:12:57 GMT  
-		Size: 59.7 MB (59651758 bytes)  
+	-	`sha256:86b681f75ff656775b833d40e824f47d5b46215fd8a2e829b2b9cf89b28a1628`  
+		Last Modified: Wed, 18 Jan 2017 03:45:10 GMT  
+		Size: 59.7 MB (59661679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5b23b80eb526a37ef0e7a7504d15e6adea93db5e169f963bdfdf7e732263cce7`  
-		Last Modified: Mon, 19 Dec 2016 19:16:19 GMT  
-		Size: 83.1 MB (83085923 bytes)  
+	-	`sha256:8553b52886d8cbfb1c7c1a285cd80576114a4a1622d9d01e7d2f39ec8038e069`  
+		Last Modified: Wed, 18 Jan 2017 03:48:18 GMT  
+		Size: 83.1 MB (83085907 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:981c210a3af4218155c1ce82fa424a0af38255d0840288dc15f9000145196cab`  
-		Last Modified: Mon, 19 Dec 2016 19:15:48 GMT  
-		Size: 123.0 B  
+	-	`sha256:63c25ee63bd654fc47ac796e0c6a9f121a4878650b2063533525c738fc2c95f3`  
+		Last Modified: Wed, 18 Jan 2017 03:47:47 GMT  
+		Size: 122.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:73f7f7662eedc3c6bb81e5527f295bf2385c2b1526d979567b43f21caa4d7212`  
-		Last Modified: Mon, 19 Dec 2016 19:15:48 GMT  
-		Size: 1.4 KB (1357 bytes)  
+	-	`sha256:4268eec6f44b26336a69e2a225f33c602c5da95608f1bef1d096ac0c1db8d7b2`  
+		Last Modified: Wed, 18 Jan 2017 03:47:47 GMT  
+		Size: 1.4 KB (1353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
