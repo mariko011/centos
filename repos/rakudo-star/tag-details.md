@@ -8,7 +8,7 @@
 ## `rakudo-star:2016.11`
 
 ```console
-$ docker pull rakudo-star@sha256:d1901c2880627df89af2e7f29f6fb37865400981febeb0e82061288c4aaaf148
+$ docker pull rakudo-star@sha256:544c0211b4242ee138d419fa39891fa74bbd17e5c919c56e4cdbc69bbb89b2bd
 ```
 
 -	Platforms:
@@ -18,60 +18,60 @@ $ docker pull rakudo-star@sha256:d1901c2880627df89af2e7f29f6fb37865400981febeb0e
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **123.2 MB (123170928 bytes)**  
+-	Total Size: **123.2 MB (123171725 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e76e81d2eb741bab8934070b4b875dfb9b67bec42c28c58a9307d026d1af634e`
+-	Image ID: `sha256:04108c39e52dcea401ee72a79941e018bbd46166d423b4a747bd56d9311ca355`
 -	Default Command: `["perl6"]`
 
 ```dockerfile
-# Tue, 13 Dec 2016 22:10:59 GMT
-ADD file:1d214d2782eaccc743b8d683ccecf2f87f12a0ecdfbcd6fdf4943ce616f23870 in / 
-# Tue, 13 Dec 2016 22:10:59 GMT
+# Mon, 16 Jan 2017 20:35:09 GMT
+ADD file:89ecb642d662ee7edbb868340551106d51336c7e589fdaca4111725ec64da957 in / 
+# Mon, 16 Jan 2017 20:35:16 GMT
 CMD ["/bin/bash"]
-# Tue, 13 Dec 2016 23:00:11 GMT
+# Tue, 17 Jan 2017 00:00:45 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 13 Dec 2016 23:00:33 GMT
+# Tue, 17 Jan 2017 00:01:07 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 14 Dec 2016 19:15:42 GMT
+# Tue, 17 Jan 2017 19:57:31 GMT
 MAINTAINER Rob Hoelz
-# Wed, 14 Dec 2016 19:15:43 GMT
+# Tue, 17 Jan 2017 19:57:32 GMT
 RUN groupadd -r perl6 && useradd -r -g perl6 perl6
-# Wed, 14 Dec 2016 19:15:43 GMT
+# Tue, 17 Jan 2017 19:57:32 GMT
 ENV rakudo_version=2016.11
-# Wed, 14 Dec 2016 19:23:56 GMT
+# Tue, 17 Jan 2017 20:05:18 GMT
 RUN buildDeps='         gcc         libc6-dev         libencode-perl         make     '     && set -x     && apt-get update     && apt-get --yes install --no-install-recommends $buildDeps     && rm -rf /var/lib/apt/lists/*     && mkdir /root/rakudo     && curl -fsSL http://rakudo.org/downloads/star/rakudo-star-${rakudo_version}.tar.gz -o rakudo.tar.gz     && tar xzf rakudo.tar.gz --strip-components=1 -C /root/rakudo     && (         cd /root/rakudo         && perl Configure.pl --prefix=/usr --gen-moar         && make install     )     && rm -rf /rakudo.tar.gz /root/rakudo     && apt-get purge -y --auto-remove $buildDeps
-# Wed, 14 Dec 2016 19:23:57 GMT
+# Tue, 17 Jan 2017 20:05:18 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/site/bin
-# Wed, 14 Dec 2016 19:23:57 GMT
+# Tue, 17 Jan 2017 20:05:18 GMT
 CMD ["perl6"]
 ```
 
 -	Layers:
-	-	`sha256:75a822cd7888e394c49828b951061402d31745f596b1f502758570f2d0ee79e2`  
-		Last Modified: Tue, 13 Dec 2016 22:16:41 GMT  
-		Size: 51.4 MB (51363125 bytes)  
+	-	`sha256:5040bd2983909aa8896b9932438c3f1479d25ae837a5f6220242a264d0221f2d`  
+		Last Modified: Mon, 16 Jan 2017 20:43:26 GMT  
+		Size: 51.4 MB (51361210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57de64c72267e88e952b064236cb906c7626f7c07a1a2d5900cf6953e72632b3`  
-		Last Modified: Wed, 14 Dec 2016 03:04:38 GMT  
-		Size: 18.5 MB (18529983 bytes)  
+	-	`sha256:fce5728aad85a763fe3c419db16885eb6f7a670a42824ea618414b8fb309ccde`  
+		Last Modified: Tue, 17 Jan 2017 00:19:41 GMT  
+		Size: 18.5 MB (18535441 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4306be1e8943b446026b96c2ef7b3ab8471c760774fd1cd11334df7084fed57b`  
-		Last Modified: Wed, 14 Dec 2016 03:04:50 GMT  
-		Size: 42.5 MB (42502002 bytes)  
+	-	`sha256:76610ec20bf5892e24cebd4153c7668284aa1d1151b7c3b0c7d50c579aa5ce75`  
+		Last Modified: Tue, 17 Jan 2017 00:20:34 GMT  
+		Size: 42.5 MB (42502406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:168e7e3b5eb3e2a35aebd6b9a835f26b7eebe46558bfe9b973797066b0186ba1`  
-		Last Modified: Wed, 21 Dec 2016 19:30:39 GMT  
-		Size: 2.1 KB (2051 bytes)  
+	-	`sha256:eff662fd91848c3254ec417eb7ad8d711d963f53e3bfe68199c66dc2cb9ca66b`  
+		Last Modified: Wed, 18 Jan 2017 07:12:59 GMT  
+		Size: 2.0 KB (2050 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41543a87c887131fb3cc98ea9b8cb050008d31a17655145054050512b0d876fc`  
-		Last Modified: Wed, 21 Dec 2016 19:30:51 GMT  
-		Size: 10.8 MB (10773767 bytes)  
+	-	`sha256:014831873ea2c1a567ef3255c74eb9bac73d34fc5fea918c619b79e320d2a43e`  
+		Last Modified: Wed, 18 Jan 2017 07:13:05 GMT  
+		Size: 10.8 MB (10770618 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rakudo-star:latest`
 
 ```console
-$ docker pull rakudo-star@sha256:d1901c2880627df89af2e7f29f6fb37865400981febeb0e82061288c4aaaf148
+$ docker pull rakudo-star@sha256:544c0211b4242ee138d419fa39891fa74bbd17e5c919c56e4cdbc69bbb89b2bd
 ```
 
 -	Platforms:
@@ -81,52 +81,52 @@ $ docker pull rakudo-star@sha256:d1901c2880627df89af2e7f29f6fb37865400981febeb0e
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **123.2 MB (123170928 bytes)**  
+-	Total Size: **123.2 MB (123171725 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e76e81d2eb741bab8934070b4b875dfb9b67bec42c28c58a9307d026d1af634e`
+-	Image ID: `sha256:04108c39e52dcea401ee72a79941e018bbd46166d423b4a747bd56d9311ca355`
 -	Default Command: `["perl6"]`
 
 ```dockerfile
-# Tue, 13 Dec 2016 22:10:59 GMT
-ADD file:1d214d2782eaccc743b8d683ccecf2f87f12a0ecdfbcd6fdf4943ce616f23870 in / 
-# Tue, 13 Dec 2016 22:10:59 GMT
+# Mon, 16 Jan 2017 20:35:09 GMT
+ADD file:89ecb642d662ee7edbb868340551106d51336c7e589fdaca4111725ec64da957 in / 
+# Mon, 16 Jan 2017 20:35:16 GMT
 CMD ["/bin/bash"]
-# Tue, 13 Dec 2016 23:00:11 GMT
+# Tue, 17 Jan 2017 00:00:45 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 13 Dec 2016 23:00:33 GMT
+# Tue, 17 Jan 2017 00:01:07 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 14 Dec 2016 19:15:42 GMT
+# Tue, 17 Jan 2017 19:57:31 GMT
 MAINTAINER Rob Hoelz
-# Wed, 14 Dec 2016 19:15:43 GMT
+# Tue, 17 Jan 2017 19:57:32 GMT
 RUN groupadd -r perl6 && useradd -r -g perl6 perl6
-# Wed, 14 Dec 2016 19:15:43 GMT
+# Tue, 17 Jan 2017 19:57:32 GMT
 ENV rakudo_version=2016.11
-# Wed, 14 Dec 2016 19:23:56 GMT
+# Tue, 17 Jan 2017 20:05:18 GMT
 RUN buildDeps='         gcc         libc6-dev         libencode-perl         make     '     && set -x     && apt-get update     && apt-get --yes install --no-install-recommends $buildDeps     && rm -rf /var/lib/apt/lists/*     && mkdir /root/rakudo     && curl -fsSL http://rakudo.org/downloads/star/rakudo-star-${rakudo_version}.tar.gz -o rakudo.tar.gz     && tar xzf rakudo.tar.gz --strip-components=1 -C /root/rakudo     && (         cd /root/rakudo         && perl Configure.pl --prefix=/usr --gen-moar         && make install     )     && rm -rf /rakudo.tar.gz /root/rakudo     && apt-get purge -y --auto-remove $buildDeps
-# Wed, 14 Dec 2016 19:23:57 GMT
+# Tue, 17 Jan 2017 20:05:18 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/site/bin
-# Wed, 14 Dec 2016 19:23:57 GMT
+# Tue, 17 Jan 2017 20:05:18 GMT
 CMD ["perl6"]
 ```
 
 -	Layers:
-	-	`sha256:75a822cd7888e394c49828b951061402d31745f596b1f502758570f2d0ee79e2`  
-		Last Modified: Tue, 13 Dec 2016 22:16:41 GMT  
-		Size: 51.4 MB (51363125 bytes)  
+	-	`sha256:5040bd2983909aa8896b9932438c3f1479d25ae837a5f6220242a264d0221f2d`  
+		Last Modified: Mon, 16 Jan 2017 20:43:26 GMT  
+		Size: 51.4 MB (51361210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57de64c72267e88e952b064236cb906c7626f7c07a1a2d5900cf6953e72632b3`  
-		Last Modified: Wed, 14 Dec 2016 03:04:38 GMT  
-		Size: 18.5 MB (18529983 bytes)  
+	-	`sha256:fce5728aad85a763fe3c419db16885eb6f7a670a42824ea618414b8fb309ccde`  
+		Last Modified: Tue, 17 Jan 2017 00:19:41 GMT  
+		Size: 18.5 MB (18535441 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4306be1e8943b446026b96c2ef7b3ab8471c760774fd1cd11334df7084fed57b`  
-		Last Modified: Wed, 14 Dec 2016 03:04:50 GMT  
-		Size: 42.5 MB (42502002 bytes)  
+	-	`sha256:76610ec20bf5892e24cebd4153c7668284aa1d1151b7c3b0c7d50c579aa5ce75`  
+		Last Modified: Tue, 17 Jan 2017 00:20:34 GMT  
+		Size: 42.5 MB (42502406 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:168e7e3b5eb3e2a35aebd6b9a835f26b7eebe46558bfe9b973797066b0186ba1`  
-		Last Modified: Wed, 21 Dec 2016 19:30:39 GMT  
-		Size: 2.1 KB (2051 bytes)  
+	-	`sha256:eff662fd91848c3254ec417eb7ad8d711d963f53e3bfe68199c66dc2cb9ca66b`  
+		Last Modified: Wed, 18 Jan 2017 07:12:59 GMT  
+		Size: 2.0 KB (2050 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41543a87c887131fb3cc98ea9b8cb050008d31a17655145054050512b0d876fc`  
-		Last Modified: Wed, 21 Dec 2016 19:30:51 GMT  
-		Size: 10.8 MB (10773767 bytes)  
+	-	`sha256:014831873ea2c1a567ef3255c74eb9bac73d34fc5fea918c619b79e320d2a43e`  
+		Last Modified: Wed, 18 Jan 2017 07:13:05 GMT  
+		Size: 10.8 MB (10770618 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
