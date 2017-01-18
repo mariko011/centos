@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d6baf42558872cd144d8e31b4a5042d0e9b2915f69a85382e4e2a2add4685cbf`
-- Created: `2017-01-05T18:49:03.59265999Z`
+- Image ID: `sha256:99a2ffb664a90d26c55b3ff0fcf37346160589e082f6beaecb1ad0388d5bfb69`
+- Created: `2017-01-17T17:25:17.948482812Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -1638,19 +1638,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libusb/2:0.1.12-20+nmu1/
 - https://sources.debian.net/src/libusb/2:0.1.12-20+nmu1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libx11=2:1.5.0-1+deb7u3`
+### `dpkg` source package: `libx11=2:1.5.0-1+deb7u4`
 
 Binary Packages:
 
-- `libx11-6:amd64=2:1.5.0-1+deb7u3`
-- `libx11-data=2:1.5.0-1+deb7u3`
+- `libx11-6:amd64=2:1.5.0-1+deb7u4`
+- `libx11-data=2:1.5.0-1+deb7u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libx11=2:1.5.0-1+deb7u4
+'http://security.debian.org/pool/updates/main/libx/libx11/libx11_1.5.0-1+deb7u4.dsc' libx11_1.5.0-1+deb7u4.dsc 2271 SHA256:52168e2788e9eeca165f74ba9378d6efcec8c354f57530863ed97c6dca478d92
+'http://security.debian.org/pool/updates/main/libx/libx11/libx11_1.5.0-1+deb7u4.tar.gz' libx11_1.5.0-1+deb7u4.tar.gz 2682419 SHA256:17eb00a4ce660891caa15d5b6cec99aef6cd69cb456dc4696d96125b13a69454
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libx11/2:1.5.0-1+deb7u4/
+- https://sources.debian.net/src/libx11/2:1.5.0-1+deb7u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxau=1:1.0.7-1`
 
