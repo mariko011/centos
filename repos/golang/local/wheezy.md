@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a0db5f05631af9eaafceb01b3031da3445d2e9dbca4942e6180a586573eeddb3`
-- Created: `2016-12-13T23:26:13.761837715Z`
+- Image ID: `sha256:66bf4442a453a5b01179fbc44faa3963fc81c23274a79b0e72c6d664d68754d4`
+- Created: `2017-01-17T00:40:42.344122377Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -379,13 +379,13 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/coreutils/8.13-3.5/
 - https://sources.debian.net/src/coreutils/8.13-3.5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `curl=7.26.0-1+wheezy17`
+### `dpkg` source package: `curl=7.26.0-1+wheezy18`
 
 Binary Packages:
 
-- `curl=7.26.0-1+wheezy17`
-- `libcurl3:amd64=7.26.0-1+wheezy17`
-- `libcurl3-gnutls:amd64=7.26.0-1+wheezy17`
+- `curl=7.26.0-1+wheezy18`
+- `libcurl3:amd64=7.26.0-1+wheezy18`
+- `libcurl3-gnutls:amd64=7.26.0-1+wheezy18`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -394,8 +394,19 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy18
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy18.dsc' curl_7.26.0-1+wheezy18.dsc 2520 SHA256:37fa66d05c8c7caa4434cff65045ac8c54accfd902130ff7d56a6088d3c45785
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy18.debian.tar.gz' curl_7.26.0-1+wheezy18.debian.tar.gz 65093 SHA256:a19eadf33ade3221a9a4aeb8aba04902965aedcb73202d372b7c538d7feadcff
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy18/
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy18/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
 
@@ -1634,18 +1645,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy7/
 - https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy7/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `linux=3.2.82-1`
+### `dpkg` source package: `linux=3.2.84-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.2.82-1`
+- `linux-libc-dev:amd64=3.2.84-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.2.84-1
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.84-1.dsc' linux_3.2.84-1.dsc 103043 SHA256:db17376d7c6567397fc717eaa8b6f039304a67a2cedad8df559daab142fc982c
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.84.orig.tar.xz' linux_3.2.84.orig.tar.xz 65980480 SHA256:fe4361b0aa846442dc6294d68a438c4eb47520043e92686afa3327d700267f5d
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.84-1.debian.tar.xz' linux_3.2.84-1.debian.tar.xz 3741988 SHA256:7ab14c93ca0660bc6a0b5d3456a97a84c292de5d1824e541665ae4639858730a
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/linux/3.2.84-1/
+- https://sources.debian.net/src/linux/3.2.84-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian8+deb7u1`
 
