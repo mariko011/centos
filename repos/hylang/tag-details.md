@@ -2,27 +2,27 @@
 
 # Tags of `hylang`
 
--	[`hylang:0.11.1`](#hylang0111)
--	[`hylang:0.11`](#hylang011)
+-	[`hylang:0.12.0`](#hylang0120)
+-	[`hylang:0.12`](#hylang012)
 -	[`hylang:0`](#hylang0)
 -	[`hylang:latest`](#hylanglatest)
 
-## `hylang:0.11.1`
+## `hylang:0.12.0`
 
 ```console
-$ docker pull hylang@sha256:d0ad3a85e8dcdeb7d3458d5701c0db2b8b119faf040cc7bcb1bf363fe31118a8
+$ docker pull hylang@sha256:cde5ed420bd26445369c17ed7240dfdf8c8c62ea57cad19fed2f4d72bd35d2ab
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `hylang:0.11.1` - linux; amd64
+### `hylang:0.12.0` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **268.6 MB (268630620 bytes)**  
+-	Total Size: **268.7 MB (268651418 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9c4772a07f84d8fb3af441771fc19613457f1acf43c094acc203abe35acf8de`
+-	Image ID: `sha256:9328908f7bb8153ff319200917de9e327d85ed733bf045163cfc0f390e312c33`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -56,11 +56,11 @@ RUN cd /usr/local/bin 	&& { [ -e easy_install ] || ln -s easy_install-* easy_ins
 CMD ["python3"]
 # Wed, 18 Jan 2017 03:33:52 GMT
 MAINTAINER Paul R. Tagliamonte <paultag@hylang.org>
-# Wed, 18 Jan 2017 03:33:53 GMT
-ADD dir:866a4ac77e162758d5a87e8e6eeada7a7cc3a0f86d1565f43e2fab5ad260d7f7 in /opt/hylang/hy 
-# Wed, 18 Jan 2017 03:34:00 GMT
+# Wed, 18 Jan 2017 22:54:19 GMT
+ADD dir:15b6194d2bf1df183bd248ebb211d2738e902cbbb76933d04ec1c1fe22935a8e in /opt/hylang/hy 
+# Wed, 18 Jan 2017 22:54:28 GMT
 RUN pip3 install -e /opt/hylang/hy
-# Wed, 18 Jan 2017 03:34:00 GMT
+# Wed, 18 Jan 2017 22:54:29 GMT
 CMD ["hy"]
 ```
 
@@ -93,31 +93,31 @@ CMD ["hy"]
 		Last Modified: Wed, 18 Jan 2017 04:01:15 GMT  
 		Size: 266.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f462aec106d5a68a82817a904644dc38bd20d658fe6dcdcf6c050a115763a8f`  
-		Last Modified: Wed, 18 Jan 2017 04:01:15 GMT  
-		Size: 358.4 KB (358365 bytes)  
+	-	`sha256:2d1b264378ae0bddfaa334cac09039f9f0dbde21487ab51e3a34a6016ccc6242`  
+		Last Modified: Wed, 18 Jan 2017 22:54:45 GMT  
+		Size: 378.9 KB (378879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7f402d72cd16092adfb8f3f55cda3bf561d80f26078e95ccd03a6fa1909326d`  
-		Last Modified: Wed, 18 Jan 2017 04:01:16 GMT  
-		Size: 2.4 MB (2360398 bytes)  
+	-	`sha256:e0e9634385c8021536189020e8148f6af32ae1411e06740605db378c06222390`  
+		Last Modified: Wed, 18 Jan 2017 22:54:45 GMT  
+		Size: 2.4 MB (2360682 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `hylang:0.11`
+## `hylang:0.12`
 
 ```console
-$ docker pull hylang@sha256:d0ad3a85e8dcdeb7d3458d5701c0db2b8b119faf040cc7bcb1bf363fe31118a8
+$ docker pull hylang@sha256:cde5ed420bd26445369c17ed7240dfdf8c8c62ea57cad19fed2f4d72bd35d2ab
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `hylang:0.11` - linux; amd64
+### `hylang:0.12` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **268.6 MB (268630620 bytes)**  
+-	Total Size: **268.7 MB (268651418 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9c4772a07f84d8fb3af441771fc19613457f1acf43c094acc203abe35acf8de`
+-	Image ID: `sha256:9328908f7bb8153ff319200917de9e327d85ed733bf045163cfc0f390e312c33`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -151,11 +151,11 @@ RUN cd /usr/local/bin 	&& { [ -e easy_install ] || ln -s easy_install-* easy_ins
 CMD ["python3"]
 # Wed, 18 Jan 2017 03:33:52 GMT
 MAINTAINER Paul R. Tagliamonte <paultag@hylang.org>
-# Wed, 18 Jan 2017 03:33:53 GMT
-ADD dir:866a4ac77e162758d5a87e8e6eeada7a7cc3a0f86d1565f43e2fab5ad260d7f7 in /opt/hylang/hy 
-# Wed, 18 Jan 2017 03:34:00 GMT
+# Wed, 18 Jan 2017 22:54:19 GMT
+ADD dir:15b6194d2bf1df183bd248ebb211d2738e902cbbb76933d04ec1c1fe22935a8e in /opt/hylang/hy 
+# Wed, 18 Jan 2017 22:54:28 GMT
 RUN pip3 install -e /opt/hylang/hy
-# Wed, 18 Jan 2017 03:34:00 GMT
+# Wed, 18 Jan 2017 22:54:29 GMT
 CMD ["hy"]
 ```
 
@@ -188,19 +188,19 @@ CMD ["hy"]
 		Last Modified: Wed, 18 Jan 2017 04:01:15 GMT  
 		Size: 266.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f462aec106d5a68a82817a904644dc38bd20d658fe6dcdcf6c050a115763a8f`  
-		Last Modified: Wed, 18 Jan 2017 04:01:15 GMT  
-		Size: 358.4 KB (358365 bytes)  
+	-	`sha256:2d1b264378ae0bddfaa334cac09039f9f0dbde21487ab51e3a34a6016ccc6242`  
+		Last Modified: Wed, 18 Jan 2017 22:54:45 GMT  
+		Size: 378.9 KB (378879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7f402d72cd16092adfb8f3f55cda3bf561d80f26078e95ccd03a6fa1909326d`  
-		Last Modified: Wed, 18 Jan 2017 04:01:16 GMT  
-		Size: 2.4 MB (2360398 bytes)  
+	-	`sha256:e0e9634385c8021536189020e8148f6af32ae1411e06740605db378c06222390`  
+		Last Modified: Wed, 18 Jan 2017 22:54:45 GMT  
+		Size: 2.4 MB (2360682 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `hylang:0`
 
 ```console
-$ docker pull hylang@sha256:d0ad3a85e8dcdeb7d3458d5701c0db2b8b119faf040cc7bcb1bf363fe31118a8
+$ docker pull hylang@sha256:cde5ed420bd26445369c17ed7240dfdf8c8c62ea57cad19fed2f4d72bd35d2ab
 ```
 
 -	Platforms:
@@ -210,9 +210,9 @@ $ docker pull hylang@sha256:d0ad3a85e8dcdeb7d3458d5701c0db2b8b119faf040cc7bcb1bf
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **268.6 MB (268630620 bytes)**  
+-	Total Size: **268.7 MB (268651418 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9c4772a07f84d8fb3af441771fc19613457f1acf43c094acc203abe35acf8de`
+-	Image ID: `sha256:9328908f7bb8153ff319200917de9e327d85ed733bf045163cfc0f390e312c33`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -246,11 +246,11 @@ RUN cd /usr/local/bin 	&& { [ -e easy_install ] || ln -s easy_install-* easy_ins
 CMD ["python3"]
 # Wed, 18 Jan 2017 03:33:52 GMT
 MAINTAINER Paul R. Tagliamonte <paultag@hylang.org>
-# Wed, 18 Jan 2017 03:33:53 GMT
-ADD dir:866a4ac77e162758d5a87e8e6eeada7a7cc3a0f86d1565f43e2fab5ad260d7f7 in /opt/hylang/hy 
-# Wed, 18 Jan 2017 03:34:00 GMT
+# Wed, 18 Jan 2017 22:54:19 GMT
+ADD dir:15b6194d2bf1df183bd248ebb211d2738e902cbbb76933d04ec1c1fe22935a8e in /opt/hylang/hy 
+# Wed, 18 Jan 2017 22:54:28 GMT
 RUN pip3 install -e /opt/hylang/hy
-# Wed, 18 Jan 2017 03:34:00 GMT
+# Wed, 18 Jan 2017 22:54:29 GMT
 CMD ["hy"]
 ```
 
@@ -283,19 +283,19 @@ CMD ["hy"]
 		Last Modified: Wed, 18 Jan 2017 04:01:15 GMT  
 		Size: 266.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f462aec106d5a68a82817a904644dc38bd20d658fe6dcdcf6c050a115763a8f`  
-		Last Modified: Wed, 18 Jan 2017 04:01:15 GMT  
-		Size: 358.4 KB (358365 bytes)  
+	-	`sha256:2d1b264378ae0bddfaa334cac09039f9f0dbde21487ab51e3a34a6016ccc6242`  
+		Last Modified: Wed, 18 Jan 2017 22:54:45 GMT  
+		Size: 378.9 KB (378879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7f402d72cd16092adfb8f3f55cda3bf561d80f26078e95ccd03a6fa1909326d`  
-		Last Modified: Wed, 18 Jan 2017 04:01:16 GMT  
-		Size: 2.4 MB (2360398 bytes)  
+	-	`sha256:e0e9634385c8021536189020e8148f6af32ae1411e06740605db378c06222390`  
+		Last Modified: Wed, 18 Jan 2017 22:54:45 GMT  
+		Size: 2.4 MB (2360682 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `hylang:latest`
 
 ```console
-$ docker pull hylang@sha256:d0ad3a85e8dcdeb7d3458d5701c0db2b8b119faf040cc7bcb1bf363fe31118a8
+$ docker pull hylang@sha256:cde5ed420bd26445369c17ed7240dfdf8c8c62ea57cad19fed2f4d72bd35d2ab
 ```
 
 -	Platforms:
@@ -305,9 +305,9 @@ $ docker pull hylang@sha256:d0ad3a85e8dcdeb7d3458d5701c0db2b8b119faf040cc7bcb1bf
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **268.6 MB (268630620 bytes)**  
+-	Total Size: **268.7 MB (268651418 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9c4772a07f84d8fb3af441771fc19613457f1acf43c094acc203abe35acf8de`
+-	Image ID: `sha256:9328908f7bb8153ff319200917de9e327d85ed733bf045163cfc0f390e312c33`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -341,11 +341,11 @@ RUN cd /usr/local/bin 	&& { [ -e easy_install ] || ln -s easy_install-* easy_ins
 CMD ["python3"]
 # Wed, 18 Jan 2017 03:33:52 GMT
 MAINTAINER Paul R. Tagliamonte <paultag@hylang.org>
-# Wed, 18 Jan 2017 03:33:53 GMT
-ADD dir:866a4ac77e162758d5a87e8e6eeada7a7cc3a0f86d1565f43e2fab5ad260d7f7 in /opt/hylang/hy 
-# Wed, 18 Jan 2017 03:34:00 GMT
+# Wed, 18 Jan 2017 22:54:19 GMT
+ADD dir:15b6194d2bf1df183bd248ebb211d2738e902cbbb76933d04ec1c1fe22935a8e in /opt/hylang/hy 
+# Wed, 18 Jan 2017 22:54:28 GMT
 RUN pip3 install -e /opt/hylang/hy
-# Wed, 18 Jan 2017 03:34:00 GMT
+# Wed, 18 Jan 2017 22:54:29 GMT
 CMD ["hy"]
 ```
 
@@ -378,11 +378,11 @@ CMD ["hy"]
 		Last Modified: Wed, 18 Jan 2017 04:01:15 GMT  
 		Size: 266.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f462aec106d5a68a82817a904644dc38bd20d658fe6dcdcf6c050a115763a8f`  
-		Last Modified: Wed, 18 Jan 2017 04:01:15 GMT  
-		Size: 358.4 KB (358365 bytes)  
+	-	`sha256:2d1b264378ae0bddfaa334cac09039f9f0dbde21487ab51e3a34a6016ccc6242`  
+		Last Modified: Wed, 18 Jan 2017 22:54:45 GMT  
+		Size: 378.9 KB (378879 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7f402d72cd16092adfb8f3f55cda3bf561d80f26078e95ccd03a6fa1909326d`  
-		Last Modified: Wed, 18 Jan 2017 04:01:16 GMT  
-		Size: 2.4 MB (2360398 bytes)  
+	-	`sha256:e0e9634385c8021536189020e8148f6af32ae1411e06740605db378c06222390`  
+		Last Modified: Wed, 18 Jan 2017 22:54:45 GMT  
+		Size: 2.4 MB (2360682 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
