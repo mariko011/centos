@@ -212,14 +212,8 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris binutils=2.27.90.20170114-1
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.27.90.20170114-1.dsc' binutils_2.27.90.20170114-1.dsc 4455 SHA256:b3f020578003a5906b2f5f19e5c5b61a2678c946c87c274237ef6ce804679cff
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.27.90.20170114.orig.tar.gz' binutils_2.27.90.20170114.orig.tar.gz 33097287 SHA256:08d75d5676063cbfae7b6a8a5cf12765af77fbf796aaf94c6121059dfc4369a6
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.27.90.20170114-1.diff.gz' binutils_2.27.90.20170114-1.diff.gz 90073 SHA256:95ae0a6092b44bf5cd910d197674243e1b8ec20c6d7d9c9491d310cd3b9c4ec8
-```
 
 ### `dpkg` source package: `boot=1.3-18-2`
 
@@ -650,19 +644,8 @@ Licenses: (parsed from: `/usr/share/doc/diffutils/copyright`)
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris diffutils=1:3.5-1
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.5-1.dsc' diffutils_3.5-1.dsc 1438 SHA256:a7ae6d0ac3bd114211e0526784e99866072a08ee89b3984786d22b0f03cf83c4
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.5.orig.tar.xz' diffutils_3.5.orig.tar.xz 1360996 SHA256:dad398ccd5b9faca6b0ab219a036453f62a602a56203ac659b43e889bec35533
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.5-1.debian.tar.xz' diffutils_3.5-1.debian.tar.xz 10436 SHA256:fd5115182ba8880ed8dcb5c62af9ef5f8b5410c2f35b026298cc405bac5b73e0
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/diffutils/1:3.5-1/
-- https://sources.debian.net/src/diffutils/1:3.5-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `dpkg=1.18.18`
 
@@ -1204,20 +1187,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.7-3
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.7-3.dsc' gnutls28_3.5.7-3.dsc 3258 SHA256:c25f600463e0dadbad937eb4ab943de9ff4e51dc9326116ebfcfc4dcf6836019
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.7.orig.tar.xz' gnutls28_3.5.7.orig.tar.xz 7265264 SHA256:60cbfc119e6268cfa38d712621daa473298a0c5b129c0842caec4c1ed4d7861a
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.7.orig.tar.xz.asc' gnutls28_3.5.7.orig.tar.xz.asc 287 SHA256:bbbb66d17fdab00b7a4dfa549b533e1f7863d71c8df119c00d775b5d0b2e6fcf
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.7-3.debian.tar.xz' gnutls28_3.5.7-3.debian.tar.xz 100680 SHA256:58f84eff722fe0329f6002f83ae89b64f088831b9c40504e37b782249ea63599
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnutls28/3.5.7-3/
-- https://sources.debian.net/src/gnutls28/3.5.7-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `graphite2=1.3.9-3`
 
@@ -1961,10 +1932,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libpng1.6=1.6.28-1
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.28-1.dsc' libpng1.6_1.6.28-1.dsc 2206 SHA256:2fa452aab9350841f28bb78bae90989c351871e31fe7ba26fe221d0eeebf1c25
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.28.orig.tar.xz' libpng1.6_1.6.28.orig.tar.xz 984536 SHA256:d8d3ec9de6b5db740fefac702c37ffcf96ae46cb17c18c1544635a3852f78f7a
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.28-1.debian.tar.xz' libpng1.6_1.6.28-1.debian.tar.xz 22368 SHA256:512c40a43a3a6fe7e2bc044574920d30f6669f1187ad0039fca4cae3d2b7c161
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.28-1.dsc' libpng1.6_1.6.28-1.dsc 2206 SHA256:2fa452aab9350841f28bb78bae90989c351871e31fe7ba26fe221d0eeebf1c25
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.28.orig.tar.xz' libpng1.6_1.6.28.orig.tar.xz 984536 SHA256:d8d3ec9de6b5db740fefac702c37ffcf96ae46cb17c18c1544635a3852f78f7a
+'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.28-1.debian.tar.xz' libpng1.6_1.6.28-1.debian.tar.xz 22368 SHA256:512c40a43a3a6fe7e2bc044574920d30f6669f1187ad0039fca4cae3d2b7c161
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libpng1.6/1.6.28-1/
+- https://sources.debian.net/src/libpng1.6/1.6.28-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpsl=0.16.1-1`
 
@@ -2795,10 +2771,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openldap=2.4.44+dfsg-3
-'http://http.debian.net/debian/pool/main/o/openldap/openldap_2.4.44+dfsg-3.dsc' openldap_2.4.44+dfsg-3.dsc 2615 SHA256:4bd5c5abecc7c497724c88272761cb6f785a2e9101524dfe0fdbea059ef04cec
-'http://http.debian.net/debian/pool/main/o/openldap/openldap_2.4.44+dfsg.orig.tar.gz' openldap_2.4.44+dfsg.orig.tar.gz 4826590 SHA256:d5187c229bec163c5d97845846e1b87917755f85b04f444c08836384f4bd7ffe
-'http://http.debian.net/debian/pool/main/o/openldap/openldap_2.4.44+dfsg-3.debian.tar.xz' openldap_2.4.44+dfsg-3.debian.tar.xz 155908 SHA256:3aa07194de2a185d8b9ed2078ef7eed4b6e268bae05bbd68fb27eb375a37bf11
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.44+dfsg-3.dsc' openldap_2.4.44+dfsg-3.dsc 2615 SHA256:4bd5c5abecc7c497724c88272761cb6f785a2e9101524dfe0fdbea059ef04cec
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.44+dfsg.orig.tar.gz' openldap_2.4.44+dfsg.orig.tar.gz 4826590 SHA256:d5187c229bec163c5d97845846e1b87917755f85b04f444c08836384f4bd7ffe
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.44+dfsg-3.debian.tar.xz' openldap_2.4.44+dfsg-3.debian.tar.xz 155908 SHA256:3aa07194de2a185d8b9ed2078ef7eed4b6e268bae05bbd68fb27eb375a37bf11
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/openldap/2.4.44+dfsg-3/
+- https://sources.debian.net/src/openldap/2.4.44+dfsg-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssl1.0=1.0.2j-5`
 
