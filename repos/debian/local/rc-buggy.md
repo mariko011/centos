@@ -71,18 +71,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4~beta3
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4~beta3.dsc' apt_1.4~beta3.dsc 2565 SHA256:04428e7fbb0887bafe598ec5ad0589b757b2956c622a8aa638ed5f8a956a1c08
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4~beta3.tar.xz' apt_1.4~beta3.tar.xz 2061292 SHA256:f721b03fa3f8a2013fdd0f42312f765143ccc98f0f0c07fb4c78d82794314ea4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.4~beta3/
-- https://sources.debian.net/src/apt/1.4~beta3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -326,18 +316,8 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.59
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.59.dsc' debconf_1.5.59.dsc 1974 SHA256:a9422ca70d13db361a4ed07af217f4e88461dcec9cf56429271f9af34d3238e0
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.59.tar.xz' debconf_1.5.59.tar.xz 571724 SHA256:2cc9fe6de93bc609164befe454fcc50f82430e01a6182541b39bf05c1be2f196
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/debconf/1.5.59/
-- https://sources.debian.net/src/debconf/1.5.59/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `debian-archive-keyring=2014.3`
 
@@ -621,19 +601,8 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.1.17-4
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.17-4.dsc' gnupg2_2.1.17-4.dsc 3145 SHA256:1880adec43937fd4d5c8823b74eeadf452f1b5c517a91cf1010b180614425bdc
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.17.orig.tar.bz2' gnupg2_2.1.17.orig.tar.bz2 5970042 SHA256:c5dc54db432209fa8f9bdb071c8fb60a765ff28e363150e30bdd4543160243cb
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.17-4.debian.tar.bz2' gnupg2_2.1.17-4.debian.tar.bz2 69958 SHA256:974a4d5cdcfb71cc8d21e7819085fae4edf576785777ca03512b6060cc7eb05e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnupg2/2.1.17-4/
-- https://sources.debian.net/src/gnupg2/2.1.17-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.27-1`
 
