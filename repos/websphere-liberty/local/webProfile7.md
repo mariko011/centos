@@ -1354,14 +1354,8 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.1.dsc' util-linux_2.27.1-6ubuntu3.1.dsc 3208 SHA256:2c0772ea9302b2a9f681c0aa0b2116352eb2ec080bf0bec9ae1e8200c6ada155
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1.orig.tar.xz' util-linux_2.27.1.orig.tar.xz 3964512 SHA256:0a818fcdede99aec43ffe6ca5b5388bff80d162f2f7bd4541dca94fecb87a290
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.1.debian.tar.xz' util-linux_2.27.1-6ubuntu3.1.debian.tar.xz 82620 SHA256:c4b1dd6c728e0ecacb256df3b5ec8f415147f3c7b7b28d2f982047b14504fa65
-```
 
 ### `dpkg` source package: `wget=1.17.1-1ubuntu1.1`
 
