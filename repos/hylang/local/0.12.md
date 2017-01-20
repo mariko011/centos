@@ -1,9 +1,9 @@
-# `hylang:0.11.1`
+# `hylang:0.12.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c9c4772a07f84d8fb3af441771fc19613457f1acf43c094acc203abe35acf8de`
-- Created: `2017-01-18T03:34:00.707732867Z`
+- Image ID: `sha256:9328908f7bb8153ff319200917de9e327d85ed733bf045163cfc0f390e312c33`
+- Created: `2017-01-18T22:54:29.003704242Z`
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
 - Environment:
