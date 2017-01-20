@@ -2927,14 +2927,8 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mysql-5.7=5.7.16-0ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.16-0ubuntu0.16.04.1.dsc' mysql-5.7_5.7.16-0ubuntu0.16.04.1.dsc 3344 SHA256:8d5dd7a431ddcfec804f90d73941dc5148fd36af55083abf5d0c5b4abb5cfce8
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.16.orig.tar.gz' mysql-5.7_5.7.16.orig.tar.gz 60556473 SHA256:43fc282f807353ff77ead21efb5f85f7f214c2a5362762a8cc370ae1c075095a
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.16-0ubuntu0.16.04.1.debian.tar.xz' mysql-5.7_5.7.16-0ubuntu0.16.04.1.debian.tar.xz 3388008 SHA256:ac5f5f90309001d471b9c6de3f229dd511c28ca080ab29b79067d136e2e35dbf
-```
 
 ### `dpkg` source package: `ncurses=6.0+20160213-1ubuntu1`
 
@@ -3762,14 +3756,8 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.1.dsc' util-linux_2.27.1-6ubuntu3.1.dsc 3208 SHA256:2c0772ea9302b2a9f681c0aa0b2116352eb2ec080bf0bec9ae1e8200c6ada155
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1.orig.tar.xz' util-linux_2.27.1.orig.tar.xz 3964512 SHA256:0a818fcdede99aec43ffe6ca5b5388bff80d162f2f7bd4541dca94fecb87a290
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.1.debian.tar.xz' util-linux_2.27.1-6ubuntu3.1.debian.tar.xz 82620 SHA256:c4b1dd6c728e0ecacb256df3b5ec8f415147f3c7b7b28d2f982047b14504fa65
-```
 
 ### `dpkg` source package: `wget=1.17.1-1ubuntu1.1`
 
