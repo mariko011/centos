@@ -1,9 +1,9 @@
-# `nats-streaming:0.3.6`
+# `nats-streaming:0.3.8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a8bb22ce63885e536593c93f05df60911b05b787d6deb6be621cc35c70259aad`
-- Created: `2016-12-21T19:25:48.267840892Z`
+- Image ID: `sha256:023605256b99c2ae19ca4bf02764d7b991bae160abbb7ce425ec73e4d63a3010`
+- Created: `2017-01-19T19:07:27.247722179Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/nats-streaming-server"]`
 - Command: `["-m","8222"]`
