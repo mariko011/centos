@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cba6fb76e34ff1f61b0870dd074a7f064af75a7c68918a35a4b0a44606b9d557`
-- Created: `2016-12-15T18:11:19.731849694Z`
+- Image ID: `sha256:e565f2314c6dacf1343d2697efd4cdb16da3dc2ef63044fb1b86fc2a8b75af59`
+- Created: `2017-01-20T23:59:45.815781296Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["couchbase-server"]`
@@ -417,11 +417,11 @@ $ apt-get source -qq --print-uris db5.3=5.3.28-3ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-3ubuntu3.debian.tar.gz' db5.3_5.3.28-3ubuntu3.debian.tar.gz 31731 SHA256:5d95c5c9d64931463cbf5d525bd9e874ab985304a45e9b585dfe8218e2ead209
 ```
 
-### `dpkg` source package: `dbus=1.6.18-0ubuntu4.4`
+### `dpkg` source package: `dbus=1.6.18-0ubuntu4.5`
 
 Binary Packages:
 
-- `libdbus-1-3:amd64=1.6.18-0ubuntu4.4`
+- `libdbus-1-3:amd64=1.6.18-0ubuntu4.5`
 
 Licenses: (parsed from: `/usr/share/doc/libdbus-1-3/copyright`)
 
@@ -430,10 +430,10 @@ Licenses: (parsed from: `/usr/share/doc/libdbus-1-3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris dbus=1.6.18-0ubuntu4.4
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18-0ubuntu4.4.dsc' dbus_1.6.18-0ubuntu4.4.dsc 2671 SHA256:8984675882f3b45c0fbf7a838392782509495907c6833a12aabfdaa19ce8bc7b
+$ apt-get source -qq --print-uris dbus=1.6.18-0ubuntu4.5
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18-0ubuntu4.5.dsc' dbus_1.6.18-0ubuntu4.5.dsc 2671 SHA256:df376491c0c47b9a4a87c5164a5687db3913dd542164dac9bbb6966a91a9b79e
 'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18.orig.tar.gz' dbus_1.6.18.orig.tar.gz 1916553 SHA256:7085a0895a9eb11a952394cdbea6d8b4358e17cb991fed0e8fb85e2b9e686dcd
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18-0ubuntu4.4.debian.tar.gz' dbus_1.6.18-0ubuntu4.4.debian.tar.gz 82808 SHA256:eed67c2dd9ffd5c7a8f97e7365a38a840fc37747d1a5335829c7a595ca4710ad
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18-0ubuntu4.5.debian.tar.gz' dbus_1.6.18-0ubuntu4.5.debian.tar.gz 85290 SHA256:d23474258a67b0a678e02259c85caa97d61d1730463295fb5b055b369ed2bf60
 ```
 
 ### `dpkg` source package: `debconf=1.5.51ubuntu2`
@@ -896,19 +896,24 @@ $ apt-get source -qq --print-uris init-system-helpers=1.14ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.14ubuntu1.tar.xz' init-system-helpers_1.14ubuntu1.tar.xz 15436 SHA256:c9f7e8c0d1ee2cdfb12b7a82ffee5a5c90e3d70478591d28803e011e8053a252
 ```
 
-### `dpkg` source package: `initramfs-tools=0.103ubuntu4.4`
+### `dpkg` source package: `initramfs-tools=0.103ubuntu4.6`
 
 Binary Packages:
 
-- `initramfs-tools=0.103ubuntu4.4`
-- `initramfs-tools-bin=0.103ubuntu4.4`
+- `initramfs-tools=0.103ubuntu4.6`
+- `initramfs-tools-bin=0.103ubuntu4.6`
 
 Licenses: (parsed from: `/usr/share/doc/initramfs-tools/copyright`, `/usr/share/doc/initramfs-tools-bin/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris initramfs-tools=0.103ubuntu4.6
+'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.6.dsc' initramfs-tools_0.103ubuntu4.6.dsc 1218 SHA256:d6a2a6d5e40de66b18eccf05eb2961acf6269187205b2cfb339663e58cd201eb
+'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.6.tar.xz' initramfs-tools_0.103ubuntu4.6.tar.xz 94364 SHA256:20056eb1d0838eacd7c6d655cd4c234a6e8f4c7347d275fdddaec11f36b22751
+```
 
 ### `dpkg` source package: `insserv=1.14.0-5ubuntu2`
 
@@ -2824,24 +2829,30 @@ $ apt-get source -qq --print-uris ustr=1.0.4-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ustr/ustr_1.0.4-3ubuntu2.diff.gz' ustr_1.0.4-3ubuntu2.diff.gz 12803 SHA256:4f9eebe7babea9f1131a97cd40368f4b387d44ddd1bb7dc669103a84a6e6d252
 ```
 
-### `dpkg` source package: `util-linux=2.20.1-5.1ubuntu20.7`
+### `dpkg` source package: `util-linux=2.20.1-5.1ubuntu20.9`
 
 Binary Packages:
 
-- `bsdutils=1:2.20.1-5.1ubuntu20.7`
-- `libblkid1:amd64=2.20.1-5.1ubuntu20.7`
-- `libmount1:amd64=2.20.1-5.1ubuntu20.7`
-- `libuuid1:amd64=2.20.1-5.1ubuntu20.7`
-- `mount=2.20.1-5.1ubuntu20.7`
-- `util-linux=2.20.1-5.1ubuntu20.7`
+- `bsdutils=1:2.20.1-5.1ubuntu20.9`
+- `libblkid1:amd64=2.20.1-5.1ubuntu20.9`
+- `libmount1:amd64=2.20.1-5.1ubuntu20.9`
+- `libuuid1:amd64=2.20.1-5.1ubuntu20.9`
+- `mount=2.20.1-5.1ubuntu20.9`
+- `util-linux=2.20.1-5.1ubuntu20.9`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris util-linux=2.20.1-5.1ubuntu20.9
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.20.1-5.1ubuntu20.9.dsc' util-linux_2.20.1-5.1ubuntu20.9.dsc 3241 SHA256:590295dd669bcf1474660994f8f06a813bf2b23827907b16fccb62663465902a
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.20.1.orig.tar.gz' util-linux_2.20.1.orig.tar.gz 6174190 SHA256:951055ee9b084c337427f34997da5b7dc321daf1b6433c78ef763ed906711fbb
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.20.1-5.1ubuntu20.9.diff.gz' util-linux_2.20.1-5.1ubuntu20.9.diff.gz 118637 SHA256:25e9bece4e16001615fb3b34d376eab66bfb6b1598034b904cea0fe20150182e
+```
 
 ### `dpkg` source package: `vim=2:7.4.052-1ubuntu3.1`
 
