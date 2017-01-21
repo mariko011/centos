@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d8db6c76871c010dcb8f35c44d4e2f23700e0403a37eb1c788cd221cb7649a0f`
-- Created: `2016-12-15T23:47:40.375739338Z`
+- Image ID: `sha256:b3e65ecb901fdea73436ba402b0a677360be10c783865dd332d69cb1e27b1630`
+- Created: `2017-01-21T00:17:48.807749146Z`
 - Arch: `linux`/`amd64`
 - Command: `["fsharpi"]`
 - Environment:
@@ -77,11 +77,11 @@ $ apt-get source -qq --print-uris alsa-lib=1.0.27.2-3ubuntu7
 'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.0.27.2-3ubuntu7.debian.tar.gz' alsa-lib_1.0.27.2-3ubuntu7.debian.tar.gz 70078 SHA256:964c42fc0db244edf73a93e8cc2a1bc63d5150c9bcb49ad90bf46b9cebb6f0f8
 ```
 
-### `dpkg` source package: `apparmor=2.8.95~2430-0ubuntu5.3`
+### `dpkg` source package: `apparmor=2.10.95-0ubuntu2.5~14.04.1`
 
 Binary Packages:
 
-- `libapparmor1:amd64=2.8.95~2430-0ubuntu5.3`
+- `libapparmor1:amd64=2.10.95-0ubuntu2.5~14.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 
@@ -90,10 +90,15 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `GPL-2+`
 - `LGPL-2.1`
 - `LGPL-2.1+`
-- `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.5~14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.5~14.04.1.dsc' apparmor_2.10.95-0ubuntu2.5~14.04.1.dsc 3147 SHA256:a1aa805e766861273e4de3b42601193e41a5d38e0168964ae6cde1da408bbe8c
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.5~14.04.1.debian.tar.gz' apparmor_2.10.95-0ubuntu2.5~14.04.1.debian.tar.gz 182102 SHA256:2e6baa0d55b5f250534096032f5f87f781e97eb59547c6b3751f4d819ccec946
+```
 
 ### `dpkg` source package: `apr-util=1.5.3-1`
 
@@ -824,13 +829,13 @@ $ apt-get source -qq --print-uris dbus-glib=0.100.2-1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus-glib/dbus-glib_0.100.2-1.debian.tar.gz' dbus-glib_0.100.2-1.debian.tar.gz 20098 SHA256:f9a6b244fe4ec3ceb81dcfacdc1f8386c3ac17f04c75c2abd741d8950e347f8d
 ```
 
-### `dpkg` source package: `dbus=1.6.18-0ubuntu4.4`
+### `dpkg` source package: `dbus=1.6.18-0ubuntu4.5`
 
 Binary Packages:
 
-- `dbus=1.6.18-0ubuntu4.4`
-- `dbus-x11=1.6.18-0ubuntu4.4`
-- `libdbus-1-3:amd64=1.6.18-0ubuntu4.4`
+- `dbus=1.6.18-0ubuntu4.5`
+- `dbus-x11=1.6.18-0ubuntu4.5`
+- `libdbus-1-3:amd64=1.6.18-0ubuntu4.5`
 
 Licenses: (parsed from: `/usr/share/doc/dbus/copyright`, `/usr/share/doc/dbus-x11/copyright`, `/usr/share/doc/libdbus-1-3/copyright`)
 
@@ -839,10 +844,10 @@ Licenses: (parsed from: `/usr/share/doc/dbus/copyright`, `/usr/share/doc/dbus-x1
 Source:
 
 ```console
-$ apt-get source -qq --print-uris dbus=1.6.18-0ubuntu4.4
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18-0ubuntu4.4.dsc' dbus_1.6.18-0ubuntu4.4.dsc 2671 SHA256:8984675882f3b45c0fbf7a838392782509495907c6833a12aabfdaa19ce8bc7b
+$ apt-get source -qq --print-uris dbus=1.6.18-0ubuntu4.5
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18-0ubuntu4.5.dsc' dbus_1.6.18-0ubuntu4.5.dsc 2671 SHA256:df376491c0c47b9a4a87c5164a5687db3913dd542164dac9bbb6966a91a9b79e
 'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18.orig.tar.gz' dbus_1.6.18.orig.tar.gz 1916553 SHA256:7085a0895a9eb11a952394cdbea6d8b4358e17cb991fed0e8fb85e2b9e686dcd
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18-0ubuntu4.4.debian.tar.gz' dbus_1.6.18-0ubuntu4.4.debian.tar.gz 82808 SHA256:eed67c2dd9ffd5c7a8f97e7365a38a840fc37747d1a5335829c7a595ca4710ad
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18-0ubuntu4.5.debian.tar.gz' dbus_1.6.18-0ubuntu4.5.debian.tar.gz 85290 SHA256:d23474258a67b0a678e02259c85caa97d61d1730463295fb5b055b369ed2bf60
 ```
 
 ### `dpkg` source package: `debconf=1.5.51ubuntu2`
@@ -1863,19 +1868,24 @@ $ apt-get source -qq --print-uris init-system-helpers=1.14ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.14ubuntu1.tar.xz' init-system-helpers_1.14ubuntu1.tar.xz 15436 SHA256:c9f7e8c0d1ee2cdfb12b7a82ffee5a5c90e3d70478591d28803e011e8053a252
 ```
 
-### `dpkg` source package: `initramfs-tools=0.103ubuntu4.4`
+### `dpkg` source package: `initramfs-tools=0.103ubuntu4.6`
 
 Binary Packages:
 
-- `initramfs-tools=0.103ubuntu4.4`
-- `initramfs-tools-bin=0.103ubuntu4.4`
+- `initramfs-tools=0.103ubuntu4.6`
+- `initramfs-tools-bin=0.103ubuntu4.6`
 
 Licenses: (parsed from: `/usr/share/doc/initramfs-tools/copyright`, `/usr/share/doc/initramfs-tools-bin/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris initramfs-tools=0.103ubuntu4.6
+'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.6.dsc' initramfs-tools_0.103ubuntu4.6.dsc 1218 SHA256:d6a2a6d5e40de66b18eccf05eb2961acf6269187205b2cfb339663e58cd201eb
+'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.6.tar.xz' initramfs-tools_0.103ubuntu4.6.tar.xz 94364 SHA256:20056eb1d0838eacd7c6d655cd4c234a6e8f4c7347d275fdddaec11f36b22751
+```
 
 ### `dpkg` source package: `insserv=1.14.0-5ubuntu2`
 
@@ -3833,18 +3843,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.4-3ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.4-3ubuntu3.1.debian.tar.gz' libyaml_0.1.4-3ubuntu3.1.debian.tar.gz 6404 SHA256:816422e1c743180409aff9247f3a298c8f98260d91da29c7315ce8bd576d53c2
 ```
 
-### `dpkg` source package: `linux=3.13.0-105.152`
+### `dpkg` source package: `linux=3.13.0-107.154`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-105.152`
+- `linux-libc-dev:amd64=3.13.0-107.154`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.13.0-107.154
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-107.154.dsc' linux_3.13.0-107.154.dsc 8125 SHA256:c5faff7993753ffb0dae3954b96f50ba2a9d1484136635d5dafdcb9a86be9a06
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-107.154.diff.gz' linux_3.13.0-107.154.diff.gz 9456513 SHA256:6dfc5516d37e099b0ac1aa9cc47ea8ce5452628b390c9a139219aca35e017601
+```
 
 ### `dpkg` source package: `lockfile-progs=0.1.17`
 
@@ -4319,13 +4335,13 @@ $ apt-get source -qq --print-uris mpfr4=3.1.2-1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_3.1.2-1.debian.tar.gz' mpfr4_3.1.2-1.debian.tar.gz 13473 SHA256:91967c4fe85996504574e882491527d09dad835b4ba05bd4145f3ae8a3f5db0e
 ```
 
-### `dpkg` source package: `mysql-5.5=5.5.53-0ubuntu0.14.04.1`
+### `dpkg` source package: `mysql-5.5=5.5.54-0ubuntu0.14.04.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.5.53-0ubuntu0.14.04.1`
-- `libmysqlclient18:amd64=5.5.53-0ubuntu0.14.04.1`
-- `mysql-common=5.5.53-0ubuntu0.14.04.1`
+- `libmysqlclient-dev=5.5.54-0ubuntu0.14.04.1`
+- `libmysqlclient18:amd64=5.5.54-0ubuntu0.14.04.1`
+- `mysql-common=5.5.54-0ubuntu0.14.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -4343,8 +4359,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.5=5.5.54-0ubuntu0.14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.54-0ubuntu0.14.04.1.dsc' mysql-5.5_5.5.54-0ubuntu0.14.04.1.dsc 3173 SHA256:bbcd3d13158c1163807ad6989d78eed78af1dc481fcbcf3446ac1943a9a4265d
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.54.orig.tar.gz' mysql-5.5_5.5.54.orig.tar.gz 21041949 SHA256:273bcbcf8cc84061eb07c359308563b2029eb3f70f78b558905bc1b5c5791ab8
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.54-0ubuntu0.14.04.1.debian.tar.gz' mysql-5.5_5.5.54-0ubuntu0.14.04.1.debian.tar.gz 315013 SHA256:c20833e303e566cccbfed4e292d7eda1cf6a7e27e7da327ad40ffae9819da449
+```
 
 ### `dpkg` source package: `ncurses=5.9+20140118-1ubuntu1`
 
@@ -5548,24 +5570,30 @@ $ apt-get source -qq --print-uris ustr=1.0.4-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ustr/ustr_1.0.4-3ubuntu2.diff.gz' ustr_1.0.4-3ubuntu2.diff.gz 12803 SHA256:4f9eebe7babea9f1131a97cd40368f4b387d44ddd1bb7dc669103a84a6e6d252
 ```
 
-### `dpkg` source package: `util-linux=2.20.1-5.1ubuntu20.7`
+### `dpkg` source package: `util-linux=2.20.1-5.1ubuntu20.9`
 
 Binary Packages:
 
-- `bsdutils=1:2.20.1-5.1ubuntu20.7`
-- `libblkid1:amd64=2.20.1-5.1ubuntu20.7`
-- `libmount1:amd64=2.20.1-5.1ubuntu20.7`
-- `libuuid1:amd64=2.20.1-5.1ubuntu20.7`
-- `mount=2.20.1-5.1ubuntu20.7`
-- `util-linux=2.20.1-5.1ubuntu20.7`
+- `bsdutils=1:2.20.1-5.1ubuntu20.9`
+- `libblkid1:amd64=2.20.1-5.1ubuntu20.9`
+- `libmount1:amd64=2.20.1-5.1ubuntu20.9`
+- `libuuid1:amd64=2.20.1-5.1ubuntu20.9`
+- `mount=2.20.1-5.1ubuntu20.9`
+- `util-linux=2.20.1-5.1ubuntu20.9`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris util-linux=2.20.1-5.1ubuntu20.9
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.20.1-5.1ubuntu20.9.dsc' util-linux_2.20.1-5.1ubuntu20.9.dsc 3241 SHA256:590295dd669bcf1474660994f8f06a813bf2b23827907b16fccb62663465902a
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.20.1.orig.tar.gz' util-linux_2.20.1.orig.tar.gz 6174190 SHA256:951055ee9b084c337427f34997da5b7dc321daf1b6433c78ef763ed906711fbb
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.20.1-5.1ubuntu20.9.diff.gz' util-linux_2.20.1-5.1ubuntu20.9.diff.gz 118637 SHA256:25e9bece4e16001615fb3b34d376eab66bfb6b1598034b904cea0fe20150182e
+```
 
 ### `dpkg` source package: `vim=2:7.4.052-1ubuntu3.1`
 
