@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2f5a21b7968f0982690ed23773a94c42307ee4b98a29e64aa4061109ed16da8f`
-- Created: `2016-12-16T03:30:42.631782735Z`
+- Image ID: `sha256:e46bbee946f72937b97d3dfc4026599b1bc1be025e6fe2820060a37f0ad86824`
+- Created: `2017-01-21T01:12:29.65189872Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
 - Command: `["bash"]`
@@ -115,12 +115,12 @@ $ apt-get source -qq --print-uris apr=1.5.2-3
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.5.2-3.debian.tar.xz' apr_1.5.2-3.debian.tar.xz 18572 SHA256:442ffb9a7225cf405fe7a2b4a4624543fcb93e6f14cccf22acd57916cfa8348d
 ```
 
-### `dpkg` source package: `apt=1.2.15ubuntu0.2`
+### `dpkg` source package: `apt=1.2.18`
 
 Binary Packages:
 
-- `apt=1.2.15ubuntu0.2`
-- `libapt-pkg5.0:amd64=1.2.15ubuntu0.2`
+- `apt=1.2.18`
+- `libapt-pkg5.0:amd64=1.2.18`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
@@ -130,9 +130,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.2.15ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.15ubuntu0.2.dsc' apt_1.2.15ubuntu0.2.dsc 2472 SHA256:e1ec3b1a7b8695bea6577f6c3a0717eaabc62c7cc8a003db94ef5cb2a0b2061f
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.15ubuntu0.2.tar.xz' apt_1.2.15ubuntu0.2.tar.xz 2057736 SHA256:b2cf7179055373709e4e95e87b87d642ece1aadf2898ed619377478a2affb50c
+$ apt-get source -qq --print-uris apt=1.2.18
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.18.dsc' apt_1.2.18.dsc 2392 SHA256:673b188764bbeb00c5592e02c34c66d65fd224a3dc9881c0c16cd73a2d58b489
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.18.tar.xz' apt_1.2.18.tar.xz 2055732 SHA256:29cbbbd48fbe528258056dbf743d8226deda675462a83e82347cb6c9b9e676fe
 ```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
@@ -2063,18 +2063,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
 ```
 
-### `dpkg` source package: `linux=4.4.0-53.74`
+### `dpkg` source package: `linux=4.4.0-59.80`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-53.74`
+- `linux-libc-dev:amd64=4.4.0-59.80`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.4.0-59.80
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-59.80.dsc' linux_4.4.0-59.80.dsc 9611 SHA256:deda329c42b8c073ebb1d60f35ef5ef698e0c8ad226a401fa8dd525862692836
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-59.80.diff.gz' linux_4.4.0-59.80.diff.gz 12308954 SHA256:230aac7d25352726d70e32939390fb58f80811363ceef6fe742445d06ac67aa2
+```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
 
@@ -4358,14 +4364,14 @@ $ apt-get source -qq --print-uris subversion=1.9.3-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.3-2ubuntu1.diff.gz' subversion_1.9.3-2ubuntu1.diff.gz 2428266 SHA256:5abd3b260a156c1a15a5203a5097ad557740a3056577e48c0b66f4f74c145a69
 ```
 
-### `dpkg` source package: `systemd=229-4ubuntu12`
+### `dpkg` source package: `systemd=229-4ubuntu13`
 
 Binary Packages:
 
-- `libsystemd0:amd64=229-4ubuntu12`
-- `libudev1:amd64=229-4ubuntu12`
-- `systemd=229-4ubuntu12`
-- `systemd-sysv=229-4ubuntu12`
+- `libsystemd0:amd64=229-4ubuntu13`
+- `libudev1:amd64=229-4ubuntu13`
+- `systemd=229-4ubuntu13`
+- `systemd-sysv=229-4ubuntu13`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
@@ -4520,19 +4526,19 @@ $ apt-get source -qq --print-uris ustr=1.0.4-5
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ustr/ustr_1.0.4-5.debian.tar.xz' ustr_1.0.4-5.debian.tar.xz 24948 SHA256:a21e78acf82dcccef2893932ef7b85852419bfd9b18382e63c34e7710c1d7762
 ```
 
-### `dpkg` source package: `util-linux=2.27.1-6ubuntu3.1`
+### `dpkg` source package: `util-linux=2.27.1-6ubuntu3.2`
 
 Binary Packages:
 
-- `bsdutils=1:2.27.1-6ubuntu3.1`
-- `libblkid1:amd64=2.27.1-6ubuntu3.1`
-- `libfdisk1:amd64=2.27.1-6ubuntu3.1`
-- `libmount1:amd64=2.27.1-6ubuntu3.1`
-- `libsmartcols1:amd64=2.27.1-6ubuntu3.1`
-- `libuuid1:amd64=2.27.1-6ubuntu3.1`
-- `mount=2.27.1-6ubuntu3.1`
-- `util-linux=2.27.1-6ubuntu3.1`
-- `uuid-dev:amd64=2.27.1-6ubuntu3.1`
+- `bsdutils=1:2.27.1-6ubuntu3.2`
+- `libblkid1:amd64=2.27.1-6ubuntu3.2`
+- `libfdisk1:amd64=2.27.1-6ubuntu3.2`
+- `libmount1:amd64=2.27.1-6ubuntu3.2`
+- `libsmartcols1:amd64=2.27.1-6ubuntu3.2`
+- `libuuid1:amd64=2.27.1-6ubuntu3.2`
+- `mount=2.27.1-6ubuntu3.2`
+- `util-linux=2.27.1-6ubuntu3.2`
+- `uuid-dev:amd64=2.27.1-6ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/uuid-dev/copyright`)
 
@@ -4556,10 +4562,10 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.1.dsc' util-linux_2.27.1-6ubuntu3.1.dsc 3208 SHA256:2c0772ea9302b2a9f681c0aa0b2116352eb2ec080bf0bec9ae1e8200c6ada155
+$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.2
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.2.dsc' util-linux_2.27.1-6ubuntu3.2.dsc 3502 SHA256:2ca85a64e42875047c783ab11ebeaec3b964dec8006eccf2022fd1a76ed995f8
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1.orig.tar.xz' util-linux_2.27.1.orig.tar.xz 3964512 SHA256:0a818fcdede99aec43ffe6ca5b5388bff80d162f2f7bd4541dca94fecb87a290
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.1.debian.tar.xz' util-linux_2.27.1-6ubuntu3.1.debian.tar.xz 82620 SHA256:c4b1dd6c728e0ecacb256df3b5ec8f415147f3c7b7b28d2f982047b14504fa65
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.2.debian.tar.xz' util-linux_2.27.1-6ubuntu3.2.debian.tar.xz 83096 SHA256:09ee0f1807d240d71a821bc6306dc2d336962e442dc9803263143bff51a5d9f3
 ```
 
 ### `dpkg` source package: `xdg-user-dirs=0.15-2ubuntu6`

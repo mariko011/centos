@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4b57cf3fbfd1177deba5a239eed2f7520fc9f19b125ce563a274a7c9c80d16b4`
-- Created: `2016-12-19T17:37:32.671634896Z`
+- Image ID: `sha256:e12b4650f78cc726022b1c16228589d5985213750c3cdb60d4adac59d71451ca`
+- Created: `2017-01-21T01:25:08.509818716Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
 - Command: `["bash"]`
@@ -135,12 +135,12 @@ $ apt-get source -qq --print-uris apr=1.5.2-3
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.5.2-3.debian.tar.xz' apr_1.5.2-3.debian.tar.xz 18572 SHA256:442ffb9a7225cf405fe7a2b4a4624543fcb93e6f14cccf22acd57916cfa8348d
 ```
 
-### `dpkg` source package: `apt=1.2.15ubuntu0.2`
+### `dpkg` source package: `apt=1.2.18`
 
 Binary Packages:
 
-- `apt=1.2.15ubuntu0.2`
-- `libapt-pkg5.0:amd64=1.2.15ubuntu0.2`
+- `apt=1.2.18`
+- `libapt-pkg5.0:amd64=1.2.18`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
@@ -150,9 +150,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apt=1.2.15ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.15ubuntu0.2.dsc' apt_1.2.15ubuntu0.2.dsc 2472 SHA256:e1ec3b1a7b8695bea6577f6c3a0717eaabc62c7cc8a003db94ef5cb2a0b2061f
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.15ubuntu0.2.tar.xz' apt_1.2.15ubuntu0.2.tar.xz 2057736 SHA256:b2cf7179055373709e4e95e87b87d642ece1aadf2898ed619377478a2affb50c
+$ apt-get source -qq --print-uris apt=1.2.18
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.18.dsc' apt_1.2.18.dsc 2392 SHA256:673b188764bbeb00c5592e02c34c66d65fd224a3dc9881c0c16cd73a2d58b489
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.18.tar.xz' apt_1.2.18.tar.xz 2055732 SHA256:29cbbbd48fbe528258056dbf743d8226deda675462a83e82347cb6c9b9e676fe
 ```
 
 ### `dpkg` source package: `assimp=3.2~dfsg-3`
@@ -863,12 +863,12 @@ $ apt-get source -qq --print-uris db5.3=5.3.28-11
 'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-11.debian.tar.xz' db5.3_5.3.28-11.debian.tar.xz 27776 SHA256:19b81208770caa2be61343a4f6b005a7c3ce65acc1f63c83dc77d474dffffb22
 ```
 
-### `dpkg` source package: `dbus=1.10.6-1ubuntu3.1`
+### `dpkg` source package: `dbus=1.10.6-1ubuntu3.3`
 
 Binary Packages:
 
-- `dbus=1.10.6-1ubuntu3.1`
-- `libdbus-1-3:amd64=1.10.6-1ubuntu3.1`
+- `dbus=1.10.6-1ubuntu3.3`
+- `libdbus-1-3:amd64=1.10.6-1ubuntu3.3`
 
 Licenses: (parsed from: `/usr/share/doc/dbus/copyright`, `/usr/share/doc/libdbus-1-3/copyright`)
 
@@ -885,10 +885,10 @@ Licenses: (parsed from: `/usr/share/doc/dbus/copyright`, `/usr/share/doc/libdbus
 Source:
 
 ```console
-$ apt-get source -qq --print-uris dbus=1.10.6-1ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.10.6-1ubuntu3.1.dsc' dbus_1.10.6-1ubuntu3.1.dsc 3076 SHA256:4e2602a0a8b5775570b363e0184d7c8bc4474c9f2fc23862f956fcc385d2cbd2
+$ apt-get source -qq --print-uris dbus=1.10.6-1ubuntu3.3
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.10.6-1ubuntu3.3.dsc' dbus_1.10.6-1ubuntu3.3.dsc 2728 SHA256:1320bb487e39b5f6c730796d3b8b2e492f86568b782c45ba719503902fc50fc3
 'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.10.6.orig.tar.gz' dbus_1.10.6.orig.tar.gz 1952608 SHA256:b5fefa08a77edd76cd64d872db949eebc02cf6f3f8be82e4bbc641742af5d35f
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.10.6-1ubuntu3.1.debian.tar.xz' dbus_1.10.6-1ubuntu3.1.debian.tar.xz 56272 SHA256:5d8fdb9155a0d86fbe3b5d453e056763448f1b48a48944360d77c66202bb2af9
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.10.6-1ubuntu3.3.debian.tar.xz' dbus_1.10.6-1ubuntu3.3.debian.tar.xz 56984 SHA256:71337521f73083398329f52386226ce155970e88ccc1f60c50a8a1ea5f507f95
 ```
 
 ### `dpkg` source package: `debconf=1.5.58ubuntu1`
@@ -1661,16 +1661,16 @@ $ apt-get source -qq --print-uris graphite2=1.3.6-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.6-1ubuntu1.debian.tar.xz' graphite2_1.3.6-1ubuntu1.debian.tar.xz 9920 SHA256:b02623e84af8d45e538b4419c71ad467f7fd34a3c1513b819791774b31aeb12e
 ```
 
-### `dpkg` source package: `graphviz=2.38.0-12ubuntu2`
+### `dpkg` source package: `graphviz=2.38.0-12ubuntu2.1`
 
 Binary Packages:
 
-- `graphviz=2.38.0-12ubuntu2`
-- `libcdt5=2.38.0-12ubuntu2`
-- `libcgraph6=2.38.0-12ubuntu2`
-- `libgvc6=2.38.0-12ubuntu2`
-- `libgvpr2=2.38.0-12ubuntu2`
-- `libpathplan4=2.38.0-12ubuntu2`
+- `graphviz=2.38.0-12ubuntu2.1`
+- `libcdt5=2.38.0-12ubuntu2.1`
+- `libcgraph6=2.38.0-12ubuntu2.1`
+- `libgvc6=2.38.0-12ubuntu2.1`
+- `libgvpr2=2.38.0-12ubuntu2.1`
+- `libpathplan4=2.38.0-12ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/graphviz/copyright`, `/usr/share/doc/libcdt5/copyright`, `/usr/share/doc/libcgraph6/copyright`, `/usr/share/doc/libgvc6/copyright`, `/usr/share/doc/libgvpr2/copyright`, `/usr/share/doc/libpathplan4/copyright`)
 
@@ -1680,10 +1680,10 @@ Licenses: (parsed from: `/usr/share/doc/graphviz/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris graphviz=2.38.0-12ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphviz/graphviz_2.38.0-12ubuntu2.dsc' graphviz_2.38.0-12ubuntu2.dsc 3286 SHA256:e6a0af045fb1088d40a02a809875bb5db8c722da73a128b45ce14105c13d3130
+$ apt-get source -qq --print-uris graphviz=2.38.0-12ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/graphviz/graphviz_2.38.0-12ubuntu2.1.dsc' graphviz_2.38.0-12ubuntu2.1.dsc 3301 SHA256:5ba3bff345f80201306631e06a284d348a509ac0ed4ef8118ab7706936f2f169
 'http://archive.ubuntu.com/ubuntu/pool/main/g/graphviz/graphviz_2.38.0.orig.tar.gz' graphviz_2.38.0.orig.tar.gz 25848858 SHA256:81aa238d9d4a010afa73a9d2a704fc3221c731e1e06577c2ab3496bdef67859e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphviz/graphviz_2.38.0-12ubuntu2.debian.tar.xz' graphviz_2.38.0-12ubuntu2.debian.tar.xz 43656 SHA256:27a2c3a04c876a2d1d652280a4162bdf4e9a20982b261b1dc4528c65bf644917
+'http://archive.ubuntu.com/ubuntu/pool/main/g/graphviz/graphviz_2.38.0-12ubuntu2.1.debian.tar.xz' graphviz_2.38.0-12ubuntu2.1.debian.tar.xz 43652 SHA256:5e0396dad5766cbd3ebaf62412ed41b2605faf0866402f696909e385acdd1cfb
 ```
 
 ### `dpkg` source package: `grep=2.25-1~16.04.1`
@@ -3554,18 +3554,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
 ```
 
-### `dpkg` source package: `linux=4.4.0-53.74`
+### `dpkg` source package: `linux=4.4.0-59.80`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-53.74`
+- `linux-libc-dev:amd64=4.4.0-59.80`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.4.0-59.80
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-59.80.dsc' linux_4.4.0-59.80.dsc 9611 SHA256:deda329c42b8c073ebb1d60f35ef5ef698e0c8ad226a401fa8dd525862692836
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-59.80.diff.gz' linux_4.4.0-59.80.diff.gz 12308954 SHA256:230aac7d25352726d70e32939390fb58f80811363ceef6fe742445d06ac67aa2
+```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
 
@@ -4034,12 +4040,12 @@ $ apt-get source -qq --print-uris mtdev=1.1.5-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mtdev/mtdev_1.1.5-1ubuntu2.debian.tar.xz' mtdev_1.1.5-1ubuntu2.debian.tar.xz 6224 SHA256:daf836ba10f7a870df957d1b5fcdb98dca302cbdc901baae91a3d7f6a5b2dd90
 ```
 
-### `dpkg` source package: `mysql-5.7=5.7.16-0ubuntu0.16.04.1`
+### `dpkg` source package: `mysql-5.7=5.7.17-0ubuntu0.16.04.1`
 
 Binary Packages:
 
-- `libmysqlclient20:amd64=5.7.16-0ubuntu0.16.04.1`
-- `mysql-common=5.7.16-0ubuntu0.16.04.1`
+- `libmysqlclient20:amd64=5.7.17-0ubuntu0.16.04.1`
+- `mysql-common=5.7.17-0ubuntu0.16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient20/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -4060,10 +4066,10 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient20/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mysql-5.7=5.7.16-0ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.16-0ubuntu0.16.04.1.dsc' mysql-5.7_5.7.16-0ubuntu0.16.04.1.dsc 3344 SHA256:8d5dd7a431ddcfec804f90d73941dc5148fd36af55083abf5d0c5b4abb5cfce8
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.16.orig.tar.gz' mysql-5.7_5.7.16.orig.tar.gz 60556473 SHA256:43fc282f807353ff77ead21efb5f85f7f214c2a5362762a8cc370ae1c075095a
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.16-0ubuntu0.16.04.1.debian.tar.xz' mysql-5.7_5.7.16-0ubuntu0.16.04.1.debian.tar.xz 3388008 SHA256:ac5f5f90309001d471b9c6de3f229dd511c28ca080ab29b79067d136e2e35dbf
+$ apt-get source -qq --print-uris mysql-5.7=5.7.17-0ubuntu0.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.17-0ubuntu0.16.04.1.dsc' mysql-5.7_5.7.17-0ubuntu0.16.04.1.dsc 3344 SHA256:90e8b85fba980e8569c973f12e96d4614e7b0facba11cce8bd024504a031242d
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.17.orig.tar.gz' mysql-5.7_5.7.17.orig.tar.gz 61480982 SHA256:b75bba87199ef6a6ccc5dfbcaf70949009dc12089eafad8c5254afc9002aa903
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.17-0ubuntu0.16.04.1.debian.tar.xz' mysql-5.7_5.7.17-0ubuntu0.16.04.1.debian.tar.xz 3388740 SHA256:c2b5a6ebad176fca2f4659b133b57e8d27353409ab5a422d641f9484d717ade7
 ```
 
 ### `dpkg` source package: `ncurses=6.0+20160213-1ubuntu1`
@@ -4587,11 +4593,11 @@ $ apt-get source -qq --print-uris protobuf=2.6.1-1.3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/protobuf/protobuf_2.6.1-1.3.debian.tar.xz' protobuf_2.6.1-1.3.debian.tar.xz 13116 SHA256:ef3867b3c34f5411c40c4ed1c25810c433de2c20359df16daa71cc123c5c3717
 ```
 
-### `dpkg` source package: `pulseaudio=1:8.0-0ubuntu3.1`
+### `dpkg` source package: `pulseaudio=1:8.0-0ubuntu3.2`
 
 Binary Packages:
 
-- `libpulse0:amd64=1:8.0-0ubuntu3.1`
+- `libpulse0:amd64=1:8.0-0ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/libpulse0/copyright`)
 
@@ -4605,10 +4611,10 @@ Licenses: (parsed from: `/usr/share/doc/libpulse0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pulseaudio=1:8.0-0ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0-0ubuntu3.1.dsc' pulseaudio_8.0-0ubuntu3.1.dsc 3657 SHA256:64bf0e2cb640afffd98ec2189c9be5a8431f444945324d470f74927076518c6d
+$ apt-get source -qq --print-uris pulseaudio=1:8.0-0ubuntu3.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0-0ubuntu3.2.dsc' pulseaudio_8.0-0ubuntu3.2.dsc 3657 SHA256:66679493ff258b682b6ba75c20142212c1133aa657babb0ba852f0aca02d21ab
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0.orig.tar.xz' pulseaudio_8.0.orig.tar.xz 1517656 SHA256:690eefe28633466cfd1ab9d85ebfa9376f6b622deec6bfee5091ac9737cd1989
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0-0ubuntu3.1.debian.tar.xz' pulseaudio_8.0-0ubuntu3.1.debian.tar.xz 139072 SHA256:7be93e0a6c50095e386c70708429ab3853081b00792f198563fcd2b410a3f969
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0-0ubuntu3.2.debian.tar.xz' pulseaudio_8.0-0ubuntu3.2.debian.tar.xz 141928 SHA256:ff1fdf3da1bfd3dd9cd82dcadaa8d04cf5da87a7a98484cb41122c9aa8a385e6
 ```
 
 ### `dpkg` source package: `pycurl=7.43.0-1ubuntu1`
@@ -7384,14 +7390,14 @@ $ apt-get source -qq --print-uris subversion=1.9.3-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.3-2ubuntu1.diff.gz' subversion_1.9.3-2ubuntu1.diff.gz 2428266 SHA256:5abd3b260a156c1a15a5203a5097ad557740a3056577e48c0b66f4f74c145a69
 ```
 
-### `dpkg` source package: `systemd=229-4ubuntu12`
+### `dpkg` source package: `systemd=229-4ubuntu13`
 
 Binary Packages:
 
-- `libsystemd0:amd64=229-4ubuntu12`
-- `libudev1:amd64=229-4ubuntu12`
-- `systemd=229-4ubuntu12`
-- `systemd-sysv=229-4ubuntu12`
+- `libsystemd0:amd64=229-4ubuntu13`
+- `libudev1:amd64=229-4ubuntu13`
+- `systemd=229-4ubuntu13`
+- `systemd-sysv=229-4ubuntu13`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
@@ -7693,19 +7699,19 @@ $ apt-get source -qq --print-uris ustr=1.0.4-5
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ustr/ustr_1.0.4-5.debian.tar.xz' ustr_1.0.4-5.debian.tar.xz 24948 SHA256:a21e78acf82dcccef2893932ef7b85852419bfd9b18382e63c34e7710c1d7762
 ```
 
-### `dpkg` source package: `util-linux=2.27.1-6ubuntu3.1`
+### `dpkg` source package: `util-linux=2.27.1-6ubuntu3.2`
 
 Binary Packages:
 
-- `bsdutils=1:2.27.1-6ubuntu3.1`
-- `libblkid1:amd64=2.27.1-6ubuntu3.1`
-- `libfdisk1:amd64=2.27.1-6ubuntu3.1`
-- `libmount1:amd64=2.27.1-6ubuntu3.1`
-- `libsmartcols1:amd64=2.27.1-6ubuntu3.1`
-- `libuuid1:amd64=2.27.1-6ubuntu3.1`
-- `mount=2.27.1-6ubuntu3.1`
-- `util-linux=2.27.1-6ubuntu3.1`
-- `uuid-dev:amd64=2.27.1-6ubuntu3.1`
+- `bsdutils=1:2.27.1-6ubuntu3.2`
+- `libblkid1:amd64=2.27.1-6ubuntu3.2`
+- `libfdisk1:amd64=2.27.1-6ubuntu3.2`
+- `libmount1:amd64=2.27.1-6ubuntu3.2`
+- `libsmartcols1:amd64=2.27.1-6ubuntu3.2`
+- `libuuid1:amd64=2.27.1-6ubuntu3.2`
+- `mount=2.27.1-6ubuntu3.2`
+- `util-linux=2.27.1-6ubuntu3.2`
+- `uuid-dev:amd64=2.27.1-6ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/uuid-dev/copyright`)
 
@@ -7729,10 +7735,10 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.1.dsc' util-linux_2.27.1-6ubuntu3.1.dsc 3208 SHA256:2c0772ea9302b2a9f681c0aa0b2116352eb2ec080bf0bec9ae1e8200c6ada155
+$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.2
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.2.dsc' util-linux_2.27.1-6ubuntu3.2.dsc 3502 SHA256:2ca85a64e42875047c783ab11ebeaec3b964dec8006eccf2022fd1a76ed995f8
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1.orig.tar.xz' util-linux_2.27.1.orig.tar.xz 3964512 SHA256:0a818fcdede99aec43ffe6ca5b5388bff80d162f2f7bd4541dca94fecb87a290
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.1.debian.tar.xz' util-linux_2.27.1-6ubuntu3.1.debian.tar.xz 82620 SHA256:c4b1dd6c728e0ecacb256df3b5ec8f415147f3c7b7b28d2f982047b14504fa65
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.2.debian.tar.xz' util-linux_2.27.1-6ubuntu3.2.debian.tar.xz 83096 SHA256:09ee0f1807d240d71a821bc6306dc2d336962e442dc9803263143bff51a5d9f3
 ```
 
 ### `dpkg` source package: `wayland=1.9.0-1`
