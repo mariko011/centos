@@ -1,20 +1,20 @@
-## `clojure:lein-2.7.1-onbuild`
+## `clojure:lein`
 
 ```console
-$ docker pull clojure@sha256:fbc6ac630f7f6680d11a7869b61a31877d8a34dc9addf075be781cd06e92cb92
+$ docker pull clojure@sha256:bb1bb8b3e3962af919f92a1d8e3920a71fe845f7e7afdec8af3b2052fcb0efe1
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `clojure:lein-2.7.1-onbuild` - linux; amd64
+### `clojure:lein` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **257.2 MB (257190070 bytes)**  
+-	Total Size: **257.2 MB (257189943 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:328d8f327f226a8ac74bc861c125f66f49b58d9ec57a4fb7eb3eea211f1cd412`
--	Default Command: `["lein","run"]`
+-	Image ID: `sha256:073eca6605b0ccad3106bbbe7671f014777c2123467aafe40490a48a78129607`
+-	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Mon, 16 Jan 2017 20:35:09 GMT
@@ -61,18 +61,6 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local
 ENV LEIN_ROOT=1
 # Mon, 23 Jan 2017 18:34:07 GMT
 RUN lein
-# Mon, 23 Jan 2017 18:34:14 GMT
-MAINTAINER Kirillov Alexandr <kirillov@evrone.ru>
-# Mon, 23 Jan 2017 18:34:15 GMT
-WORKDIR /usr/src/app
-# Mon, 23 Jan 2017 18:34:15 GMT
-ONBUILD COPY project.clj /usr/src/app/
-# Mon, 23 Jan 2017 18:34:16 GMT
-ONBUILD RUN lein deps
-# Mon, 23 Jan 2017 18:34:16 GMT
-ONBUILD COPY . /usr/src/app
-# Mon, 23 Jan 2017 18:34:16 GMT
-CMD ["lein" "run"]
 ```
 
 -	Layers:
@@ -115,8 +103,4 @@ CMD ["lein" "run"]
 	-	`sha256:731e26ed35d2ee95512633798d350706ad3da90a6251d6ccd3d78fc31f61b57b`  
 		Last Modified: Mon, 23 Jan 2017 18:39:20 GMT  
 		Size: 164.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:122ccf1a0643cd6fa28f5a536b7dff461507528e132728e597d86beef8523607`  
-		Last Modified: Mon, 23 Jan 2017 18:39:54 GMT  
-		Size: 127.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

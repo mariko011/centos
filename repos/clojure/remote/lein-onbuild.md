@@ -1,4 +1,4 @@
-## `clojure:lein-2.7.1-onbuild`
+## `clojure:lein-onbuild`
 
 ```console
 $ docker pull clojure@sha256:fbc6ac630f7f6680d11a7869b61a31877d8a34dc9addf075be781cd06e92cb92
@@ -7,7 +7,7 @@ $ docker pull clojure@sha256:fbc6ac630f7f6680d11a7869b61a31877d8a34dc9addf075be7
 -	Platforms:
 	-	linux; amd64
 
-### `clojure:lein-2.7.1-onbuild` - linux; amd64
+### `clojure:lein-onbuild` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
