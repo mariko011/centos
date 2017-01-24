@@ -598,15 +598,8 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.7.5-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.5-2.dsc' libgcrypt20_1.7.5-2.dsc 2914 SHA256:6946764a678f67c38505ffdd1e2fec1023222094a370a3b9310f7e6133acfe62
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.5.orig.tar.bz2' libgcrypt20_1.7.5.orig.tar.bz2 2883968 SHA256:d1fea4128beef2bb30a470af6bafabccc503ced350534fb9dd8f5a53ffbae800
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.5.orig.tar.bz2.asc' libgcrypt20_1.7.5.orig.tar.bz2.asc 620 SHA256:8f320166f6e04a2a0c4252ab85e17d860dc309c827f8dfa54d3a29a14511b929
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.5-2.debian.tar.xz' libgcrypt20_1.7.5-2.debian.tar.xz 30352 SHA256:e769625bdd2c9257fa26159eea905d23a39b8bbce3796872df09ed09d682dc5d
-```
 
 ### `dpkg` source package: `libgpg-error=1.25-2`
 
@@ -619,14 +612,8 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 - `GPL-2.1+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgpg-error=1.25-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.25-2.dsc' libgpg-error_1.25-2.dsc 2454 SHA256:ad96187bae5767ae77615782fbd0a2027d78df1ebd983ab5d4e9af6abddb2ce5
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.25.orig.tar.bz2' libgpg-error_1.25.orig.tar.bz2 797159 SHA256:f628f75843433b38b05af248121beb7db5bd54bb2106f384edac39934261320c
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.25-2.debian.tar.xz' libgpg-error_1.25-2.debian.tar.xz 15304 SHA256:ddeb333f47c88ae7bc9114a0a41940100de29f6c92759cd049a08cd6364b9142
-```
 
 ### `dpkg` source package: `libksba=1.3.5-2`
 
