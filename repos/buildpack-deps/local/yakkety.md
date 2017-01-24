@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0efa4b99345e637dccfd520acb76b40858057cb922576c8b2246d18545955c5d`
-- Created: `2016-12-15T19:14:13.906997396Z`
+- Image ID: `sha256:31afa82aceaee0e661e11f46cf6bd5a7b299d4ff7c47fc11514ace9d88a9ed14`
+- Created: `2017-01-20T22:56:37.218666046Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -116,20 +116,25 @@ $ apt-get source -qq --print-uris apr=1.5.2-4
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.5.2-4.debian.tar.xz' apr_1.5.2-4.debian.tar.xz 212724 SHA256:4bd7c3c41941d5b8006e16145c486f59179989035eb6f9efd9b333691e894948
 ```
 
-### `dpkg` source package: `apt=1.3.2ubuntu0.1`
+### `dpkg` source package: `apt=1.3.3`
 
 Binary Packages:
 
-- `apt=1.3.2ubuntu0.1`
-- `libapt-pkg5.0:amd64=1.3.2ubuntu0.1`
+- `apt=1.3.3`
+- `libapt-pkg5.0:amd64=1.3.3`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=1.3.3
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.3.3.dsc' apt_1.3.3.dsc 2525 SHA256:b87da40f0777692b94cf1dd404ca03a17ead6aadccd14df0b1b2cbb1d424766a
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.3.3.tar.xz' apt_1.3.3.tar.xz 2035720 SHA256:bb097303e91b8e98c7ce1058e10a00f6cf7ebba6fe2cdadbc47e40b45d92050b
+```
 
 ### `dpkg` source package: `atk1.0=2.20.0-1`
 
@@ -1171,14 +1176,14 @@ $ apt-get source -qq --print-uris git=1:2.9.3-1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.9.3-1.debian.tar.xz' git_2.9.3-1.debian.tar.xz 504708 SHA256:21004128421d91aa8357149b636f2916a8c6e12fcd14f63685daa098690a8462
 ```
 
-### `dpkg` source package: `glib2.0=2.50.0-1`
+### `dpkg` source package: `glib2.0=2.50.2-2ubuntu1`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.50.0-1`
-- `libglib2.0-bin=2.50.0-1`
-- `libglib2.0-data=2.50.0-1`
-- `libglib2.0-dev=2.50.0-1`
+- `libglib2.0-0:amd64=2.50.2-2ubuntu1`
+- `libglib2.0-bin=2.50.2-2ubuntu1`
+- `libglib2.0-data=2.50.2-2ubuntu1`
+- `libglib2.0-dev=2.50.2-2ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc/libglib2.0-bin/copyright`, `/usr/share/doc/libglib2.0-data/copyright`, `/usr/share/doc/libglib2.0-dev/copyright`)
 
@@ -1187,10 +1192,10 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glib2.0=2.50.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.50.0-1.dsc' glib2.0_2.50.0-1.dsc 3190 SHA256:1f11ef61c588effe341fc2219220c1b3ce78d418234bf454fe0cc5fd03f52ae2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.50.0.orig.tar.xz' glib2.0_2.50.0.orig.tar.xz 7513808 SHA256:830b551fa626bda06e12729205b3c5bb0d82b924a8cf64d948945878f01b7d70
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.50.0-1.debian.tar.xz' glib2.0_2.50.0-1.debian.tar.xz 69800 SHA256:f423a303ca2b0d0ac9b59400c7f42a3de03243dc194119ac9ef63c64630c1720
+$ apt-get source -qq --print-uris glib2.0=2.50.2-2ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.50.2-2ubuntu1.dsc' glib2.0_2.50.2-2ubuntu1.dsc 3273 SHA256:4134b06501a77fc9744dc3d3d56e38905fe4ee5003ae5ec357ea02f42e766272
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.50.2.orig.tar.xz' glib2.0_2.50.2.orig.tar.xz 7582312 SHA256:be68737c1f268c05493e503b3b654d2b7f43d7d0b8c5556f7e4651b870acfbf5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.50.2-2ubuntu1.debian.tar.xz' glib2.0_2.50.2-2ubuntu1.debian.tar.xz 70188 SHA256:e1a13d974ae529a8b1581fa03f41cfd708554515d6313c41072e6856645a49ba
 ```
 
 ### `dpkg` source package: `glibc=2.24-3ubuntu2`
@@ -1350,18 +1355,18 @@ $ apt-get source -qq --print-uris graphite2=1.3.8-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.8-1ubuntu1.debian.tar.xz' graphite2_1.3.8-1ubuntu1.debian.tar.xz 10164 SHA256:1f64243e912a632a2fa1809a64964e3b674d288b2222182331bd67420a8647aa
 ```
 
-### `dpkg` source package: `graphviz=2.38.0-15ubuntu1`
+### `dpkg` source package: `graphviz=2.38.0-15ubuntu1.1`
 
 Binary Packages:
 
-- `libcdt5=2.38.0-15ubuntu1`
-- `libcgraph6=2.38.0-15ubuntu1`
-- `libgraphviz-dev=2.38.0-15ubuntu1`
-- `libgvc6=2.38.0-15ubuntu1`
-- `libgvc6-plugins-gtk=2.38.0-15ubuntu1`
-- `libgvpr2=2.38.0-15ubuntu1`
-- `libpathplan4=2.38.0-15ubuntu1`
-- `libxdot4=2.38.0-15ubuntu1`
+- `libcdt5=2.38.0-15ubuntu1.1`
+- `libcgraph6=2.38.0-15ubuntu1.1`
+- `libgraphviz-dev=2.38.0-15ubuntu1.1`
+- `libgvc6=2.38.0-15ubuntu1.1`
+- `libgvc6-plugins-gtk=2.38.0-15ubuntu1.1`
+- `libgvpr2=2.38.0-15ubuntu1.1`
+- `libpathplan4=2.38.0-15ubuntu1.1`
+- `libxdot4=2.38.0-15ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libcdt5/copyright`, `/usr/share/doc/libcgraph6/copyright`, `/usr/share/doc/libgraphviz-dev/copyright`, `/usr/share/doc/libgvc6/copyright`, `/usr/share/doc/libgvc6-plugins-gtk/copyright`, `/usr/share/doc/libgvpr2/copyright`, `/usr/share/doc/libpathplan4/copyright`, `/usr/share/doc/libxdot4/copyright`)
 
@@ -1373,10 +1378,10 @@ Licenses: (parsed from: `/usr/share/doc/libcdt5/copyright`, `/usr/share/doc/libc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris graphviz=2.38.0-15ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphviz/graphviz_2.38.0-15ubuntu1.dsc' graphviz_2.38.0-15ubuntu1.dsc 3323 SHA256:5a06b1785f2ba5565013cf807d3ebfcdc55e5aeb2907dda02b400c00d416d757
+$ apt-get source -qq --print-uris graphviz=2.38.0-15ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/graphviz/graphviz_2.38.0-15ubuntu1.1.dsc' graphviz_2.38.0-15ubuntu1.1.dsc 3313 SHA256:de9f0b1db2812907e0aaaa5c3c4760debdec08f4f9901d351fd86695651273c3
 'http://archive.ubuntu.com/ubuntu/pool/main/g/graphviz/graphviz_2.38.0.orig.tar.gz' graphviz_2.38.0.orig.tar.gz 25848858 SHA256:81aa238d9d4a010afa73a9d2a704fc3221c731e1e06577c2ab3496bdef67859e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphviz/graphviz_2.38.0-15ubuntu1.debian.tar.xz' graphviz_2.38.0-15ubuntu1.debian.tar.xz 43188 SHA256:935fbb09210a01730e9396b67b91df1cd187aae7a260ce688f6b73ea0547ab7b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/graphviz/graphviz_2.38.0-15ubuntu1.1.debian.tar.xz' graphviz_2.38.0-15ubuntu1.1.debian.tar.xz 43292 SHA256:3175f708a3ea192812104e8e9387b29f0c51dc92f9f6d6edaaba96b3863ed4e8
 ```
 
 ### `dpkg` source package: `grep=2.25-6`
@@ -2880,18 +2885,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
 ```
 
-### `dpkg` source package: `linux=4.8.0-30.32`
+### `dpkg` source package: `linux=4.8.0-34.36`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.8.0-30.32`
+- `linux-libc-dev:amd64=4.8.0-34.36`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.8.0-34.36
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0-34.36.dsc' linux_4.8.0-34.36.dsc 8763 SHA256:3e6ad70b84547b3e3a77b3d7cd65febb1871fc0f8958aa82d21bbe091e3926db
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0.orig.tar.gz' linux_4.8.0.orig.tar.gz 139977270 SHA256:80229497a1584076d534e96acf529a01a0fc00044eba9e6c00ae936e453dbd3c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0-34.36.diff.gz' linux_4.8.0-34.36.diff.gz 9488911 SHA256:d8bd7f5b4d6aed837143dd17ceaaf5d7ae2a93a908682feca1a9e83c68cffb88
+```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu5`
 
@@ -3111,13 +3122,13 @@ $ apt-get source -qq --print-uris mpfr4=3.1.5-1
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_3.1.5-1.debian.tar.xz' mpfr4_3.1.5-1.debian.tar.xz 9672 SHA256:e5b0d755ec3b3aea15aab137328f7fe65c6b800a1b897bbf50fa4fd478589bd4
 ```
 
-### `dpkg` source package: `mysql-5.7=5.7.16-0ubuntu0.16.10.1`
+### `dpkg` source package: `mysql-5.7=5.7.17-0ubuntu0.16.10.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.7.16-0ubuntu0.16.10.1`
-- `libmysqlclient20:amd64=5.7.16-0ubuntu0.16.10.1`
-- `mysql-common=5.7.16-0ubuntu0.16.10.1`
+- `libmysqlclient-dev=5.7.17-0ubuntu0.16.10.1`
+- `libmysqlclient20:amd64=5.7.17-0ubuntu0.16.10.1`
+- `mysql-common=5.7.17-0ubuntu0.16.10.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient20/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -3135,8 +3146,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.7=5.7.17-0ubuntu0.16.10.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.17-0ubuntu0.16.10.1.dsc' mysql-5.7_5.7.17-0ubuntu0.16.10.1.dsc 3344 SHA256:0253027279c0f619f9fab13d21feef7754ef7b285e4c96a4d42ef29ea5261048
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.17.orig.tar.gz' mysql-5.7_5.7.17.orig.tar.gz 61480982 SHA256:b75bba87199ef6a6ccc5dfbcaf70949009dc12089eafad8c5254afc9002aa903
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.7/mysql-5.7_5.7.17-0ubuntu0.16.10.1.debian.tar.xz' mysql-5.7_5.7.17-0ubuntu0.16.10.1.debian.tar.xz 3389036 SHA256:a29b80fde1d94f14125e04299eb77caa82c3e67431dc25a8ce46dd1358ad896d
+```
 
 ### `dpkg` source package: `ncurses=6.0+20160625-1ubuntu1`
 
@@ -3883,12 +3900,12 @@ $ apt-get source -qq --print-uris subversion=1.9.4-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.4-1ubuntu1.diff.gz' subversion_1.9.4-1ubuntu1.diff.gz 2429159 SHA256:b10c57622ab3b3c727a8e56775e68dd724768e225d8edffa38023e245a85f49d
 ```
 
-### `dpkg` source package: `systemd=231-9ubuntu1`
+### `dpkg` source package: `systemd=231-9ubuntu2`
 
 Binary Packages:
 
-- `libsystemd0:amd64=231-9ubuntu1`
-- `libudev1:amd64=231-9ubuntu1`
+- `libsystemd0:amd64=231-9ubuntu2`
+- `libudev1:amd64=231-9ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -3900,8 +3917,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=231-9ubuntu2
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-9ubuntu2.dsc' systemd_231-9ubuntu2.dsc 4550 SHA256:2e8f9174b5d3121ad9bfc9e782911e70a0319317f8928c2c5f4cad30c31344d4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231.orig.tar.gz' systemd_231.orig.tar.gz 4381464 SHA256:899733ad6c157cedbb89aec4efe3bc824dcfd65a1d6f6bebc7b043f7924e39b4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-9ubuntu2.debian.tar.xz' systemd_231-9ubuntu2.debian.tar.xz 153360 SHA256:0c890c92c72cc9f57fb2712727e3b6b6229b0657194f5d44c7ebad49fefd74cc
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`
 

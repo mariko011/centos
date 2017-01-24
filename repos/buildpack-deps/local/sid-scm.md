@@ -221,19 +221,8 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bash=4.4-2
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4-2.dsc' bash_4.4-2.dsc 2229 SHA256:b19a65fe01d13a457cd29261557a8c7d731d9127ebe5696d2130a30374ec4644
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4.orig.tar.xz' bash_4.4.orig.tar.xz 4878580 SHA256:819ebb6a23799e9e4ca56ac579778c46902005bd5ade4f131ed293d9f77108e7
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4-2.debian.tar.xz' bash_4.4-2.debian.tar.xz 61272 SHA256:912b60da8f84db158c734e912a0fe8c4babd1df760a58b17d0bd9d12bf6a96c8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/bash/4.4-2/
-- https://sources.debian.net/src/bash/4.4-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bzip2=1.0.6-8`
 
@@ -367,19 +356,8 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris coreutils=8.26-1
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.26-1.dsc' coreutils_8.26-1.dsc 1980 SHA256:dd803da07e6b9f6735825dea8a0d3d74f4f7ec53f2eb22111f12fd690700dca7
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.26.orig.tar.xz' coreutils_8.26.orig.tar.xz 5810244 SHA256:155e94d748f8e2bc327c66e0cbebdb8d6ab265d2f37c3c928f7bf6c3beba9a8e
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.26-1.debian.tar.xz' coreutils_8.26-1.debian.tar.xz 21840 SHA256:88edb3546148d94e2491c45074ea2e5779861a90da00a54fbb7d03acec2ccb0d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/coreutils/8.26-1/
-- https://sources.debian.net/src/coreutils/8.26-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `curl=7.52.1-1`
 
@@ -769,19 +747,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`, `/usr/share/doc/l
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.3.0-2
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-2.dsc' gcc-6_6.3.0-2.dsc 27171 SHA256:323c033fa9b21e14e207a01ef6239ef9a9e55d0f3b334a17be501a1e380ca0af
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0.orig.tar.gz' gcc-6_6.3.0.orig.tar.gz 81587460 SHA256:04552f04baf6974fb7521191859fb54717385ad659afd822b2995b66ee4e4151
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-2.diff.gz' gcc-6_6.3.0-2.diff.gz 1656162 SHA256:6a5a3bc61091477e567cfd9d3c25ee1430e4ab993b8ca3142bac9aec246feccb
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-6/6.3.0-2/
-- https://sources.debian.net/src/gcc-6/6.3.0-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gdbm=1.8.3-14`
 
@@ -2186,19 +2153,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.13-1
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13-1.dsc' python2.7_2.7.13-1.dsc 3367 SHA256:a52f145441bcd799c96b036b8e55095b37b4f95a0099bebcc9efbc90bab359f8
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13.orig.tar.gz' python2.7_2.7.13.orig.tar.gz 17076672 SHA256:a4f05a0720ce0fd92626f0278b6b433eee9a6173ddf2bced7957dfb599a5ece1
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13-1.diff.gz' python2.7_2.7.13-1.diff.gz 279831 SHA256:192ac024507e7367b17538e0646a4fc59de2315310c919c4f665a19f675ebc3d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/python2.7/2.7.13-1/
-- https://sources.debian.net/src/python2.7/2.7.13-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `readline=7.0-1`
 
@@ -2324,19 +2280,8 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.4-1
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.4-1.dsc' shadow_4.4-1.dsc 2260 SHA256:c75ab9ab13c845517748fd9afa2ca57c3724f6bdf7c02705bc653825e04e2960
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.4.orig.tar.gz' shadow_4.4.orig.tar.gz 3003036 SHA256:1323e7e932836e03dbfa441f7eeb349ede2c92d62b788ade0732411fd516be3d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.4-1.debian.tar.xz' shadow_4.4-1.debian.tar.xz 483100 SHA256:9f93e430caf511e611bf8afc138c84816a762a8826f609cf03c3c64f3278b9a6
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/shadow/1:4.4-1/
-- https://sources.debian.net/src/shadow/1:4.4-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `six=1.10.0-3`
 

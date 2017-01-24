@@ -455,19 +455,8 @@ Licenses: (parsed from: `/usr/share/doc/bzr/copyright`, `/usr/share/doc/python-b
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bzr=2.7.0+bzr6619-4
-'http://deb.debian.org/debian/pool/main/b/bzr/bzr_2.7.0+bzr6619-4.dsc' bzr_2.7.0+bzr6619-4.dsc 2480 SHA256:8f5bb3f6698af3a6ad96201907449a5e7316390911ab4c0be3d674d343716606
-'http://deb.debian.org/debian/pool/main/b/bzr/bzr_2.7.0+bzr6619.orig.tar.gz' bzr_2.7.0+bzr6619.orig.tar.gz 10945598 SHA256:a0192999245457fbd564702518bc96453ac0f9b38ea031a466679839b346fa14
-'http://deb.debian.org/debian/pool/main/b/bzr/bzr_2.7.0+bzr6619-4.debian.tar.xz' bzr_2.7.0+bzr6619-4.debian.tar.xz 67596 SHA256:fa38690a6d5d2925c6e2e2fdc68049cde4a93a96e2f92ff32c1950ce4257de2a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/bzr/2.7.0+bzr6619-4/
-- https://sources.debian.net/src/bzr/2.7.0+bzr6619-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ca-certificates=20161130`
 
@@ -640,19 +629,8 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris curl=7.51.0-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.51.0-1.dsc' curl_7.51.0-1.dsc 2681 SHA256:e139d0221798b98174533e4219c7841bd1880a85ce776fb44d9d67d3e9c77808
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.51.0.orig.tar.gz' curl_7.51.0.orig.tar.gz 3441753 SHA256:65b5216a6fbfa72f547eb7706ca5902d7400db9868269017a8888aa91d87977c
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.51.0-1.debian.tar.xz' curl_7.51.0-1.debian.tar.xz 27016 SHA256:be7ec42a13fc8167a5dd8bd092324594f05632b8eb7faef94128281310cc7e6f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/curl/7.51.0-1/
-- https://sources.debian.net/src/curl/7.51.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-2`
 
@@ -1635,19 +1613,8 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 - `MPL-1.1 | GPL-2 | LGPL-2.1`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris graphite2=1.3.9-2
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.9-2.dsc' graphite2_1.3.9-2.dsc 2166 SHA256:0bb37f0944e2ee5f345f61bbcc1d3e128d4303f6e5dbd06a1fa72728fb1493f1
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.9.orig.tar.gz' graphite2_1.3.9.orig.tar.gz 3889102 SHA256:ec0185b663059553fd46e8c4a4f0dede60a02f13a7a1fefc2ce70332ea814567
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.9-2.debian.tar.xz' graphite2_1.3.9-2.debian.tar.xz 10724 SHA256:e051b6055923af00aa035ef1a29135c7816b741ab04105f42c3c297a470eed30
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/graphite2/1.3.9-2/
-- https://sources.debian.net/src/graphite2/1.3.9-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `graphviz=2.38.0-16`
 
@@ -3893,18 +3860,8 @@ Licenses: (parsed from: `/usr/share/doc/mysql-common/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mysql-defaults=1.0.1
-'http://deb.debian.org/debian/pool/main/m/mysql-defaults/mysql-defaults_1.0.1.dsc' mysql-defaults_1.0.1.dsc 2171 SHA256:c4f1ab564fcc430c3aae092450a397484a226e850d681b2c4e5a68fca0b5b0b3
-'http://deb.debian.org/debian/pool/main/m/mysql-defaults/mysql-defaults_1.0.1.tar.xz' mysql-defaults_1.0.1.tar.xz 5288 SHA256:0ceb45483307dc2e7182c5856d805714d43f6cbc10478441a8923667e90d97b0
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mysql-defaults/1.0.1/
-- https://sources.debian.net/src/mysql-defaults/1.0.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ncurses=6.0+20161126-1`
 
