@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:64959db9468b6cf689098a52a74eb2065e179ac61cd8bca8a582e55ff819b94a`
-- Created: `2017-01-17T21:13:24.788027571Z`
+- Image ID: `sha256:072b7088b93a868346b0760cf7b79f6f46c8103a1754893030b6a4ed60c4ea61`
+- Created: `2017-01-24T20:57:57.367768008Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["apache2-foreground"]`
@@ -19,11 +19,11 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.29`
-  - `PHP_URL=https://secure.php.net/get/php-5.6.29.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.29.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=0ff352a433f73e2c82b0d5b283b600402518569bf72a74e247f356dacbf322a7`
-  - `PHP_MD5=190bf5b52d1fc68d5500a8cdc7e33164`
+  - `PHP_VERSION=5.6.30`
+  - `PHP_URL=https://secure.php.net/get/php-5.6.30.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.30.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805`
+  - `PHP_MD5=68753955a8964ae49064c6424f81eb3e`
   - `BACKDROP_VERSION=1.5.2`
   - `BACKDROP_MD5=dbc73ec1841af1b824277a6c1c445250`
 
