@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:87ad11791ab9f227addc73a1f3edbb162e524c2c1e08a02a649b63986825739f`
-- Created: `2017-01-18T00:45:37.743825427Z`
+- Image ID: `sha256:5b7505bda265d08c5e47d79235935bb10d665afdeb7b4dc7f954e4b88ae161bd`
+- Created: `2017-01-24T21:51:15.287795503Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["php-fpm"]`
@@ -16,11 +16,11 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.29`
-  - `PHP_URL=https://secure.php.net/get/php-5.6.29.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.29.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=0ff352a433f73e2c82b0d5b283b600402518569bf72a74e247f356dacbf322a7`
-  - `PHP_MD5=190bf5b52d1fc68d5500a8cdc7e33164`
+  - `PHP_VERSION=5.6.30`
+  - `PHP_URL=https://secure.php.net/get/php-5.6.30.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.30.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805`
+  - `PHP_MD5=68753955a8964ae49064c6424f81eb3e`
   - `KNOWN_VERSION=0.9.2`
 
 ## `dpkg` (`.deb`-based packages)
@@ -2191,14 +2191,14 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/mpfr4/3.1.2-2/
 - https://sources.debian.net/src/mpfr4/3.1.2-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `mysql-5.5=5.5.53-0+deb8u1`
+### `dpkg` source package: `mysql-5.5=5.5.54-0+deb8u1`
 
 Binary Packages:
 
-- `libmysqlclient18:amd64=5.5.53-0+deb8u1`
-- `mysql-client=5.5.53-0+deb8u1`
-- `mysql-client-5.5=5.5.53-0+deb8u1`
-- `mysql-common=5.5.53-0+deb8u1`
+- `libmysqlclient18:amd64=5.5.54-0+deb8u1`
+- `mysql-client=5.5.54-0+deb8u1`
+- `mysql-client-5.5=5.5.54-0+deb8u1`
+- `mysql-common=5.5.54-0+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-client/copyright`, `/usr/share/doc/mysql-client-5.5/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -2219,16 +2219,16 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mysql-5.5=5.5.53-0+deb8u1
-'http://deb.debian.org/debian/pool/main/m/mysql-5.5/mysql-5.5_5.5.53-0+deb8u1.dsc' mysql-5.5_5.5.53-0+deb8u1.dsc 3233 SHA256:631ee00029cf7403c5b569ec599f97a6e0378af75441f5b6e16030f2b18d9ca5
-'http://deb.debian.org/debian/pool/main/m/mysql-5.5/mysql-5.5_5.5.53.orig.tar.gz' mysql-5.5_5.5.53.orig.tar.gz 21035716 SHA256:a7a86dd42524e698c9dd8dab2520e6e75377cde077ed71eaf5a3b5a3d1f7d6ea
-'http://deb.debian.org/debian/pool/main/m/mysql-5.5/mysql-5.5_5.5.53-0+deb8u1.debian.tar.xz' mysql-5.5_5.5.53-0+deb8u1.debian.tar.xz 232272 SHA256:063d2601b47dc24a3e86acadd1797abfbd09c22ecdbebfe8bff6862d3f0702b0
+$ apt-get source -qq --print-uris mysql-5.5=5.5.54-0+deb8u1
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.54-0+deb8u1.dsc' mysql-5.5_5.5.54-0+deb8u1.dsc 3262 SHA256:993b22375e92261e9ab264b5cd380d439dfd61524680c3edf301150caf416712
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.54.orig.tar.gz' mysql-5.5_5.5.54.orig.tar.gz 21041949 SHA256:273bcbcf8cc84061eb07c359308563b2029eb3f70f78b558905bc1b5c5791ab8
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.54-0+deb8u1.debian.tar.xz' mysql-5.5_5.5.54-0+deb8u1.debian.tar.xz 233108 SHA256:946211b6bac4d0a20911e8a8c01bf30d48fe875fb8987eea2147ec9b21eba896
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/mysql-5.5/5.5.53-0+deb8u1/
-- https://sources.debian.net/src/mysql-5.5/5.5.53-0+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/mysql-5.5/5.5.54-0+deb8u1/
+- https://sources.debian.net/src/mysql-5.5/5.5.54-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ncurses=5.9+20140913-1`
 
