@@ -1,12 +1,12 @@
-# `telegraf:1.1-alpine`
+# `telegraf:1.2-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:082087e1b0456529b8301e4a97dc955e1f6de59accf95141229d5614b92c468f`
-- Created: `2017-01-13T20:17:54.527763995Z`
+- Image ID: `sha256:e07052899c9b6d44fcc08031ee48a5ede580eee5f6123f5cc6e5d88f776bf286`
+- Created: `2017-01-24T17:43:57.831859568Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["telegraf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `TELEGRAF_VERSION=1.1.2`
+  - `TELEGRAF_VERSION=1.2.0`
