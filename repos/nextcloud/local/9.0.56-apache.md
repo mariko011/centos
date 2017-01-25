@@ -1,9 +1,9 @@
-# `nextcloud:10.0.3-apache`
+# `nextcloud:9.0.56-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d991041a5bc798efbc4d4e8659b04dd61d4620a3b4b083930ab0e7f1608df4d7`
-- Created: `2017-01-24T22:23:22.55980408Z`
+- Image ID: `sha256:53100da60225570164b6aa788cf518660c53dc6d40c9e5b726bbdc2ae67b322b`
+- Created: `2017-01-24T22:26:58.603793831Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["apache2-foreground"]`
@@ -24,7 +24,7 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.30.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805`
   - `PHP_MD5=68753955a8964ae49064c6424f81eb3e`
-  - `NEXTCLOUD_VERSION=10.0.3`
+  - `NEXTCLOUD_VERSION=9.0.56`
 
 ## `dpkg` (`.deb`-based packages)
 
