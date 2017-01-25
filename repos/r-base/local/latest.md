@@ -484,10 +484,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris curl=7.52.1-1
-'http://http.debian.net/debian/pool/main/c/curl/curl_7.52.1-1.dsc' curl_7.52.1-1.dsc 2765 SHA256:bc82de7b02127add254a39b767b9fd378add339b62e0c79d16d9d2f273fad378
-'http://http.debian.net/debian/pool/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://http.debian.net/debian/pool/main/c/curl/curl_7.52.1-1.debian.tar.xz' curl_7.52.1-1.debian.tar.xz 27964 SHA256:c2d962814c274e1ec5c962a3346631ec93a18fcb2da9438fdd44b7e8deda4e1a
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-1.dsc' curl_7.52.1-1.dsc 2765 SHA256:bc82de7b02127add254a39b767b9fd378add339b62e0c79d16d9d2f273fad378
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-1.debian.tar.xz' curl_7.52.1-1.debian.tar.xz 27964 SHA256:c2d962814c274e1ec5c962a3346631ec93a18fcb2da9438fdd44b7e8deda4e1a
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/curl/7.52.1-1/
+- https://sources.debian.net/src/curl/7.52.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-2`
 
@@ -975,14 +980,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp-6/copyright`, `/usr/share/doc/g++-6/
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.3.0-2
-'http://http.debian.net/debian/pool/main/g/gcc-6/gcc-6_6.3.0-2.dsc' gcc-6_6.3.0-2.dsc 27171 SHA256:323c033fa9b21e14e207a01ef6239ef9a9e55d0f3b334a17be501a1e380ca0af
-'http://http.debian.net/debian/pool/main/g/gcc-6/gcc-6_6.3.0.orig.tar.gz' gcc-6_6.3.0.orig.tar.gz 81587460 SHA256:04552f04baf6974fb7521191859fb54717385ad659afd822b2995b66ee4e4151
-'http://http.debian.net/debian/pool/main/g/gcc-6/gcc-6_6.3.0-2.diff.gz' gcc-6_6.3.0-2.diff.gz 1656162 SHA256:6a5a3bc61091477e567cfd9d3c25ee1430e4ab993b8ca3142bac9aec246feccb
-```
 
 ### `dpkg` source package: `gcc-defaults=1.164`
 
@@ -1212,10 +1211,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris graphite2=1.3.9-3
-'http://http.debian.net/debian/pool/main/g/graphite2/graphite2_1.3.9-3.dsc' graphite2_1.3.9-3.dsc 2165 SHA256:cd7ab236a07e8f3c32b4633a5603fe3f3ad8b72cf18c5e65deab793b6fcb99cb
-'http://http.debian.net/debian/pool/main/g/graphite2/graphite2_1.3.9.orig.tar.gz' graphite2_1.3.9.orig.tar.gz 3889102 SHA256:ec0185b663059553fd46e8c4a4f0dede60a02f13a7a1fefc2ce70332ea814567
-'http://http.debian.net/debian/pool/main/g/graphite2/graphite2_1.3.9-3.debian.tar.xz' graphite2_1.3.9-3.debian.tar.xz 10752 SHA256:22b121ffea4c8d89598d2186a1a74f27d77d858c622078a15c521f8689d5ee30
+'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.9-3.dsc' graphite2_1.3.9-3.dsc 2165 SHA256:cd7ab236a07e8f3c32b4633a5603fe3f3ad8b72cf18c5e65deab793b6fcb99cb
+'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.9.orig.tar.gz' graphite2_1.3.9.orig.tar.gz 3889102 SHA256:ec0185b663059553fd46e8c4a4f0dede60a02f13a7a1fefc2ce70332ea814567
+'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.9-3.debian.tar.xz' graphite2_1.3.9-3.debian.tar.xz 10752 SHA256:22b121ffea4c8d89598d2186a1a74f27d77d858c622078a15c521f8689d5ee30
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/graphite2/1.3.9-3/
+- https://sources.debian.net/src/graphite2/1.3.9-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.27-1`
 
@@ -2416,10 +2420,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=4.9.2-2
-'http://http.debian.net/debian/pool/main/l/linux/linux_4.9.2-2.dsc' linux_4.9.2-2.dsc 82190 SHA256:4135cd18f8b2ea205cd089d8276e3243252531aa0ddaecb7dc570a18c18a758e
-'http://http.debian.net/debian/pool/main/l/linux/linux_4.9.2.orig.tar.xz' linux_4.9.2.orig.tar.xz 94423460 SHA256:5892fc7692d7e0ac971aa39f4d42ddc8c4275d76a60d056c49d3e8ba6eb16088
-'http://http.debian.net/debian/pool/main/l/linux/linux_4.9.2-2.debian.tar.xz' linux_4.9.2-2.debian.tar.xz 807096 SHA256:d22d1e837c7d955afad7ee2f5c8b489c7f21d27466f3b00fad7e61026a60b65d
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.2-2.dsc' linux_4.9.2-2.dsc 82190 SHA256:4135cd18f8b2ea205cd089d8276e3243252531aa0ddaecb7dc570a18c18a758e
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.2.orig.tar.xz' linux_4.9.2.orig.tar.xz 94423460 SHA256:5892fc7692d7e0ac971aa39f4d42ddc8c4275d76a60d056c49d3e8ba6eb16088
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.2-2.debian.tar.xz' linux_4.9.2-2.debian.tar.xz 807096 SHA256:d22d1e837c7d955afad7ee2f5c8b489c7f21d27466f3b00fad7e61026a60b65d
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/linux/4.9.2-2/
+- https://sources.debian.net/src/linux/4.9.2-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `littler=0.3.1-1`
 
@@ -2795,11 +2804,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssl1.0=1.0.2j-5
-'http://http.debian.net/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2j-5.dsc' openssl1.0_1.0.2j-5.dsc 2562 SHA256:1e081cce4a72c49f2753e5aa1be3df36b20e69c862245b4cb032646961ec30fe
-'http://http.debian.net/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2j.orig.tar.gz' openssl1.0_1.0.2j.orig.tar.gz 5307912 SHA256:e7aff292be21c259c6af26469c7a9b3ba26e9abaaffd325e3dccc9785256c431
-'http://http.debian.net/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2j.orig.tar.gz.asc' openssl1.0_1.0.2j.orig.tar.gz.asc 473 SHA256:b3551e17fef7df2eb901aa9c1cbc41e5cf7c9d5d10e546936145f24d1e52efdc
-'http://http.debian.net/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2j-5.debian.tar.xz' openssl1.0_1.0.2j-5.debian.tar.xz 75756 SHA256:f07ae3d7ebb1bdccfc2a7c890363ee212fcda7e3d7729e263e23953d70394b23
+'http://deb.debian.org/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2j-5.dsc' openssl1.0_1.0.2j-5.dsc 2562 SHA256:1e081cce4a72c49f2753e5aa1be3df36b20e69c862245b4cb032646961ec30fe
+'http://deb.debian.org/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2j.orig.tar.gz' openssl1.0_1.0.2j.orig.tar.gz 5307912 SHA256:e7aff292be21c259c6af26469c7a9b3ba26e9abaaffd325e3dccc9785256c431
+'http://deb.debian.org/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2j.orig.tar.gz.asc' openssl1.0_1.0.2j.orig.tar.gz.asc 473 SHA256:b3551e17fef7df2eb901aa9c1cbc41e5cf7c9d5d10e546936145f24d1e52efdc
+'http://deb.debian.org/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2j-5.debian.tar.xz' openssl1.0_1.0.2j-5.debian.tar.xz 75756 SHA256:f07ae3d7ebb1bdccfc2a7c890363ee212fcda7e3d7729e263e23953d70394b23
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/openssl1.0/1.0.2j-5/
+- https://sources.debian.net/src/openssl1.0/1.0.2j-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssl=1.1.0c-2`
 
