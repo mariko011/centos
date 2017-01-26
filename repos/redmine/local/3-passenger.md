@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bb0ca3675e89262a2f116cb8c3273b5123ecc1f6d783c377938d8f4a9153b02b`
-- Created: `2017-01-18T03:12:34.615850918Z`
+- Image ID: `sha256:1fd68dd4485ad212f2d977dc8167622eab08fa84438ba2081d6370eed7443767`
+- Created: `2017-01-25T19:15:46.306885615Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["passenger","start"]`
@@ -12,8 +12,8 @@
   - `RUBY_MAJOR=2.2`
   - `RUBY_VERSION=2.2.6`
   - `RUBY_DOWNLOAD_SHA256=9414ecc0d09cf71c9a24e8dc82fcc87919ac7359fb08db2791d6c32bfd157339`
-  - `RUBYGEMS_VERSION=2.6.8`
-  - `BUNDLER_VERSION=1.13.7`
+  - `RUBYGEMS_VERSION=2.6.10`
+  - `BUNDLER_VERSION=1.14.3`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_PATH=/usr/local/bundle`
   - `BUNDLE_BIN=/usr/local/bundle/bin`
@@ -24,7 +24,7 @@
   - `RAILS_ENV=production`
   - `REDMINE_VERSION=3.3.2`
   - `REDMINE_DOWNLOAD_MD5=8e403981dc3a19a42ee978f055be62ca`
-  - `PASSENGER_VERSION=5.1.1`
+  - `PASSENGER_VERSION=5.1.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2780,12 +2780,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/mime-support/3.58/
 - https://sources.debian.net/src/mime-support/3.58/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `mysql-5.5=5.5.53-0+deb8u1`
+### `dpkg` source package: `mysql-5.5=5.5.54-0+deb8u1`
 
 Binary Packages:
 
-- `libmysqlclient18:amd64=5.5.53-0+deb8u1`
-- `mysql-common=5.5.53-0+deb8u1`
+- `libmysqlclient18:amd64=5.5.54-0+deb8u1`
+- `mysql-common=5.5.54-0+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -2806,16 +2806,16 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mysql-5.5=5.5.53-0+deb8u1
-'http://deb.debian.org/debian/pool/main/m/mysql-5.5/mysql-5.5_5.5.53-0+deb8u1.dsc' mysql-5.5_5.5.53-0+deb8u1.dsc 3233 SHA256:631ee00029cf7403c5b569ec599f97a6e0378af75441f5b6e16030f2b18d9ca5
-'http://deb.debian.org/debian/pool/main/m/mysql-5.5/mysql-5.5_5.5.53.orig.tar.gz' mysql-5.5_5.5.53.orig.tar.gz 21035716 SHA256:a7a86dd42524e698c9dd8dab2520e6e75377cde077ed71eaf5a3b5a3d1f7d6ea
-'http://deb.debian.org/debian/pool/main/m/mysql-5.5/mysql-5.5_5.5.53-0+deb8u1.debian.tar.xz' mysql-5.5_5.5.53-0+deb8u1.debian.tar.xz 232272 SHA256:063d2601b47dc24a3e86acadd1797abfbd09c22ecdbebfe8bff6862d3f0702b0
+$ apt-get source -qq --print-uris mysql-5.5=5.5.54-0+deb8u1
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.54-0+deb8u1.dsc' mysql-5.5_5.5.54-0+deb8u1.dsc 3262 SHA256:993b22375e92261e9ab264b5cd380d439dfd61524680c3edf301150caf416712
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.54.orig.tar.gz' mysql-5.5_5.5.54.orig.tar.gz 21041949 SHA256:273bcbcf8cc84061eb07c359308563b2029eb3f70f78b558905bc1b5c5791ab8
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.54-0+deb8u1.debian.tar.xz' mysql-5.5_5.5.54-0+deb8u1.debian.tar.xz 233108 SHA256:946211b6bac4d0a20911e8a8c01bf30d48fe875fb8987eea2147ec9b21eba896
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/mysql-5.5/5.5.53-0+deb8u1/
-- https://sources.debian.net/src/mysql-5.5/5.5.53-0+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/mysql-5.5/5.5.54-0+deb8u1/
+- https://sources.debian.net/src/mysql-5.5/5.5.54-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ncurses=5.9+20140913-1`
 
