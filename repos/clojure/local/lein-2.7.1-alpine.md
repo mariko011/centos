@@ -1,4 +1,4 @@
-# `clojure:alpine`
+# `clojure:lein-2.7.1-alpine`
 
 ## Docker Metadata
 

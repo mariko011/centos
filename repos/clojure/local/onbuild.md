@@ -1,9 +1,9 @@
-# `clojure:onbuild`
+# `clojure:lein-2.7.1-onbuild`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6018b156677270a65627ef50978ea26377420b91b7b801522465e5a5abcf546d`
-- Created: `2017-01-17T21:15:25.871819449Z`
+- Image ID: `sha256:328d8f327f226a8ac74bc861c125f66f49b58d9ec57a4fb7eb3eea211f1cd412`
+- Created: `2017-01-23T18:34:16.961357027Z`
 - Arch: `linux`/`amd64`
 - Command: `["lein","run"]`
 - Environment:
@@ -4248,11 +4248,9 @@ Binary Packages:
 
 - `libreadline6:amd64=6.3-8+b3`
 - `readline-common=6.3-8`
-- `rlfe=6.3-8+b3`
 
-Licenses: (parsed from: `/usr/share/doc/libreadline6/copyright`, `/usr/share/doc/readline-common/copyright`, `/usr/share/doc/rlfe/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libreadline6/copyright`, `/usr/share/doc/readline-common/copyright`)
 
-- `GPL`
 - `GPL-3`
 
 Source:

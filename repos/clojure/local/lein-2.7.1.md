@@ -1,9 +1,9 @@
-# `clojure:latest`
+# `clojure:lein-2.7.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2a3c52687451b66af46d956ad1d41b9dcd9330385c2d75ea343577b313ee1501`
-- Created: `2017-01-17T21:15:23.644161613Z`
+- Image ID: `sha256:073eca6605b0ccad3106bbbe7671f014777c2123467aafe40490a48a78129607`
+- Created: `2017-01-23T18:34:07.227002983Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -4248,11 +4248,9 @@ Binary Packages:
 
 - `libreadline6:amd64=6.3-8+b3`
 - `readline-common=6.3-8`
-- `rlfe=6.3-8+b3`
 
-Licenses: (parsed from: `/usr/share/doc/libreadline6/copyright`, `/usr/share/doc/readline-common/copyright`, `/usr/share/doc/rlfe/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libreadline6/copyright`, `/usr/share/doc/readline-common/copyright`)
 
-- `GPL`
 - `GPL-3`
 
 Source:

@@ -1,4 +1,4 @@
-# `clojure:alpine-onbuild`
+# `clojure:lein-2.7.1-alpine-onbuild`
 
 ## Docker Metadata
 

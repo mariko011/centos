@@ -1,11 +1,11 @@
-# `clojure:lein-2.7.1-onbuild`
+# `clojure:boot-2.7.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:328d8f327f226a8ac74bc861c125f66f49b58d9ec57a4fb7eb3eea211f1cd412`
-- Created: `2017-01-23T18:34:16.961357027Z`
+- Image ID: `sha256:b93c6d31720fa5859dde3f734fc78c12bc55c350bd8639bd5945cf738fbd69a0`
+- Created: `2017-01-23T18:36:37.871664767Z`
 - Arch: `linux`/`amd64`
-- Command: `["lein","run"]`
+- Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/`
   - `LANG=C.UTF-8`
@@ -13,9 +13,9 @@
   - `JAVA_VERSION=8u111`
   - `JAVA_DEBIAN_VERSION=8u111-b14-2~bpo8+1`
   - `CA_CERTIFICATES_JAVA_VERSION=20140324`
-  - `LEIN_VERSION=2.7.1`
-  - `LEIN_INSTALL=/usr/local/bin/`
-  - `LEIN_ROOT=1`
+  - `BOOT_VERSION=2.7.1`
+  - `BOOT_INSTALL=/usr/local/bin/`
+  - `BOOT_AS_ROOT=yes`
 
 ## `dpkg` (`.deb`-based packages)
 
