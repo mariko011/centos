@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e6e9ef60e7a80ebb45afcb0083d6804a2255ca6cc1210c448afadbba515909b8`
-- Created: `2017-01-17T23:57:34.567881432Z`
+- Image ID: `sha256:43d2212e31abeb7d3fbace26b10fbae5d45807febcbcd92f27e18bf41ba24f79`
+- Created: `2017-01-24T17:42:58.383864643Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["asd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `AEROSPIKE_VERSION=3.11.0.2`
-  - `AEROSPIKE_SHA256=a6dfff8d278f628ca681ec92cdefaef9f8a7c534e5c9feece5060ac7d3b65453`
+  - `AEROSPIKE_SHA256=a9a3f9e72b49995df77427b0dcced047bc99c80fd217be2a3cd2b9f4350f9f28`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -101,25 +101,20 @@ $ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.5
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.5.debian.tar.xz' apparmor_2.10.95-0ubuntu2.5.debian.tar.xz 94420 SHA256:e24893c41b4bc0e0b63f1aaa649ab99a853a5c2959fefb787ab2968fd221040f
 ```
 
-### `dpkg` source package: `apt=1.2.15ubuntu0.2`
+### `dpkg` source package: `apt=1.2.18`
 
 Binary Packages:
 
-- `apt=1.2.15ubuntu0.2`
-- `libapt-pkg5.0:amd64=1.2.15ubuntu0.2`
+- `apt=1.2.18`
+- `libapt-pkg5.0:amd64=1.2.18`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.2.15ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.15ubuntu0.2.dsc' apt_1.2.15ubuntu0.2.dsc 2472 SHA256:e1ec3b1a7b8695bea6577f6c3a0717eaabc62c7cc8a003db94ef5cb2a0b2061f
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.15ubuntu0.2.tar.xz' apt_1.2.15ubuntu0.2.tar.xz 2057736 SHA256:b2cf7179055373709e4e95e87b87d642ece1aadf2898ed619377478a2affb50c
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -1853,14 +1848,14 @@ $ apt-get source -qq --print-uris sqlite3=3.11.0-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.11.0-1ubuntu1.debian.tar.xz' sqlite3_3.11.0-1ubuntu1.debian.tar.xz 16272 SHA256:b81ff12e88d62abc111b609b7aed3571bc1ce902d097058ad1d53fb18076098d
 ```
 
-### `dpkg` source package: `systemd=229-4ubuntu12`
+### `dpkg` source package: `systemd=229-4ubuntu13`
 
 Binary Packages:
 
-- `libsystemd0:amd64=229-4ubuntu12`
-- `libudev1:amd64=229-4ubuntu12`
-- `systemd=229-4ubuntu12`
-- `systemd-sysv=229-4ubuntu12`
+- `libsystemd0:amd64=229-4ubuntu13`
+- `libudev1:amd64=229-4ubuntu13`
+- `systemd=229-4ubuntu13`
+- `systemd-sysv=229-4ubuntu13`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
@@ -1977,18 +1972,18 @@ $ apt-get source -qq --print-uris ustr=1.0.4-5
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ustr/ustr_1.0.4-5.debian.tar.xz' ustr_1.0.4-5.debian.tar.xz 24948 SHA256:a21e78acf82dcccef2893932ef7b85852419bfd9b18382e63c34e7710c1d7762
 ```
 
-### `dpkg` source package: `util-linux=2.27.1-6ubuntu3.1`
+### `dpkg` source package: `util-linux=2.27.1-6ubuntu3.2`
 
 Binary Packages:
 
-- `bsdutils=1:2.27.1-6ubuntu3.1`
-- `libblkid1:amd64=2.27.1-6ubuntu3.1`
-- `libfdisk1:amd64=2.27.1-6ubuntu3.1`
-- `libmount1:amd64=2.27.1-6ubuntu3.1`
-- `libsmartcols1:amd64=2.27.1-6ubuntu3.1`
-- `libuuid1:amd64=2.27.1-6ubuntu3.1`
-- `mount=2.27.1-6ubuntu3.1`
-- `util-linux=2.27.1-6ubuntu3.1`
+- `bsdutils=1:2.27.1-6ubuntu3.2`
+- `libblkid1:amd64=2.27.1-6ubuntu3.2`
+- `libfdisk1:amd64=2.27.1-6ubuntu3.2`
+- `libmount1:amd64=2.27.1-6ubuntu3.2`
+- `libsmartcols1:amd64=2.27.1-6ubuntu3.2`
+- `libuuid1:amd64=2.27.1-6ubuntu3.2`
+- `mount=2.27.1-6ubuntu3.2`
+- `util-linux=2.27.1-6ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -2009,8 +2004,14 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.2
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.2.dsc' util-linux_2.27.1-6ubuntu3.2.dsc 3502 SHA256:2ca85a64e42875047c783ab11ebeaec3b964dec8006eccf2022fd1a76ed995f8
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1.orig.tar.xz' util-linux_2.27.1.orig.tar.xz 3964512 SHA256:0a818fcdede99aec43ffe6ca5b5388bff80d162f2f7bd4541dca94fecb87a290
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.2.debian.tar.xz' util-linux_2.27.1-6ubuntu3.2.debian.tar.xz 83096 SHA256:09ee0f1807d240d71a821bc6306dc2d336962e442dc9803263143bff51a5d9f3
+```
 
 ### `dpkg` source package: `xz-utils=5.1.1alpha+20120614-2ubuntu2`
 
