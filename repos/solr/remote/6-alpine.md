@@ -1,7 +1,7 @@
 ## `solr:6-alpine`
 
 ```console
-$ docker pull solr@sha256:aace2082d5d4db0ba046cb19d2bcc74ee0523f7c6ef841c6226d14aa47274a7f
+$ docker pull solr@sha256:00d3867e73c5b8b3bafb6ceca20705dc0f8e56b112c7917d381dd6605b5dab5d
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull solr@sha256:aace2082d5d4db0ba046cb19d2bcc74ee0523f7c6ef841c6226d14
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **189.0 MB (188962244 bytes)**  
+-	Total Size: **189.0 MB (188962241 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b28871a5b4b240b947920b4178dbfb23c9514a0d4096a85b892fe9cd3caeb94`
+-	Image ID: `sha256:567f8393c74962591061bd3f2eb85371e39d2983da2618b3ff714e68ce523bce`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
@@ -66,21 +66,21 @@ ENV SOLR_SHA256=1213ae09023058ea1cbd971a1b585f891fb63fa76e128611031bfc28c749b502
 ENV SOLR_URL=https://archive.apache.org/dist/lucene/solr/6.4.0/solr-6.4.0.tgz
 # Mon, 23 Jan 2017 18:31:12 GMT
 RUN mkdir -p /opt/solr &&   echo "downloading $SOLR_URL" &&   wget -q $SOLR_URL -O /opt/solr.tgz &&   echo "downloading $SOLR_URL.asc" &&   wget -q $SOLR_URL.asc -O /opt/solr.tgz.asc &&   echo "$SOLR_SHA256 */opt/solr.tgz" | sha256sum -c - &&   (>&2 ls -l /opt/solr.tgz /opt/solr.tgz.asc) &&   gpg --batch --verify /opt/solr.tgz.asc /opt/solr.tgz &&   tar -C /opt/solr --extract --file /opt/solr.tgz --strip-components=1 &&   rm /opt/solr.tgz* &&   rm -Rf /opt/solr/docs/ &&   mkdir -p /opt/solr/server/solr/lib /opt/solr/server/solr/mycores &&   sed -i -e 's/#SOLR_PORT=8983/SOLR_PORT=8983/' /opt/solr/bin/solr.in.sh &&   sed -i -e '/-Dsolr.clustering.enabled=true/ a SOLR_OPTS="$SOLR_OPTS -Dsun.net.inetaddr.ttl=60 -Dsun.net.inetaddr.negative.ttl=60"' /opt/solr/bin/solr.in.sh &&   chown -R $SOLR_USER:$SOLR_USER /opt/solr &&   mkdir /docker-entrypoint-initdb.d /opt/docker-solr/
-# Mon, 23 Jan 2017 18:31:13 GMT
-COPY dir:df206386c87858e80894083178ae780c94c4fdc5ee870d3d4438a20894c11b93 in /opt/docker-solr/scripts 
-# Mon, 23 Jan 2017 18:31:14 GMT
+# Fri, 27 Jan 2017 18:21:31 GMT
+COPY dir:b6ebc6d6f54fb81327e3c4ad7bc2c4dd6200726707297ea6d7c02a34ae503156 in /opt/docker-solr/scripts 
+# Fri, 27 Jan 2017 18:21:32 GMT
 RUN chown -R $SOLR_USER:$SOLR_USER /opt/docker-solr
-# Mon, 23 Jan 2017 18:31:15 GMT
+# Fri, 27 Jan 2017 18:21:33 GMT
 ENV PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Mon, 23 Jan 2017 18:31:15 GMT
+# Fri, 27 Jan 2017 18:21:33 GMT
 EXPOSE 8983/tcp
-# Mon, 23 Jan 2017 18:31:15 GMT
+# Fri, 27 Jan 2017 18:21:34 GMT
 WORKDIR /opt/solr
-# Mon, 23 Jan 2017 18:31:16 GMT
+# Fri, 27 Jan 2017 18:21:34 GMT
 USER [solr]
-# Mon, 23 Jan 2017 18:31:16 GMT
+# Fri, 27 Jan 2017 18:21:34 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Jan 2017 18:31:17 GMT
+# Fri, 27 Jan 2017 18:21:35 GMT
 CMD ["solr-foreground"]
 ```
 
@@ -121,11 +121,11 @@ CMD ["solr-foreground"]
 		Last Modified: Mon, 23 Jan 2017 18:35:54 GMT  
 		Size: 141.4 MB (141436247 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d2deb53956fd90061487eb66df35db8185c29c53f1a251ee20a17bf1840a6e2`  
-		Last Modified: Mon, 23 Jan 2017 18:35:39 GMT  
-		Size: 3.0 KB (2989 bytes)  
+	-	`sha256:4580cd3c2185f508fd4f8d0c15c4b036c7d1e1b12302ec9c644197eace231f1c`  
+		Last Modified: Fri, 27 Jan 2017 18:25:45 GMT  
+		Size: 3.0 KB (2988 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecda434cf5f7db09b206db604eba76283ca5f1a84debd8817edbf25bc8abf7e3`  
-		Last Modified: Mon, 23 Jan 2017 18:35:39 GMT  
-		Size: 3.0 KB (2996 bytes)  
+	-	`sha256:55a5ae839950c09112d958653f1d88423d004d5481d4a15dc126459a7b5a2c7f`  
+		Last Modified: Fri, 27 Jan 2017 18:25:45 GMT  
+		Size: 3.0 KB (2994 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
