@@ -1,7 +1,7 @@
 ## `php:apache`
 
 ```console
-$ docker pull php@sha256:d5e6a7e19e6e8a2c4d787734d93725fd75a7453101d0e749174229b1b8ed36a0
+$ docker pull php@sha256:3c80d2d75dd543c2ef25da517795d447cb35abc66f8f96b78dda830323a8070c
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull php@sha256:d5e6a7e19e6e8a2c4d787734d93725fd75a7453101d0e749174229b
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **158.3 MB (158320675 bytes)**  
+-	Total Size: **158.3 MB (158320972 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:68dab2ec204953055441bd34dd20177ce5f9da4f5957af41bea7a62942cf35f9`
+-	Image ID: `sha256:399dbfe34f353c367fa71a6c318fe61152fb34497e3d747f189e53a1a81c3ead`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -72,13 +72,13 @@ RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		lib
 COPY multi:2b7e23dbf0e975ef1ec1f186511e2789ab94e8c8734ca9fa8419c893f7357d6c in /usr/local/bin/ 
 # Tue, 24 Jan 2017 18:34:10 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 24 Jan 2017 18:34:11 GMT
-COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/ 
-# Tue, 24 Jan 2017 18:34:11 GMT
+# Fri, 27 Jan 2017 23:15:10 GMT
+COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
+# Fri, 27 Jan 2017 23:15:11 GMT
 WORKDIR /var/www/html
-# Tue, 24 Jan 2017 18:34:12 GMT
+# Fri, 27 Jan 2017 23:15:11 GMT
 EXPOSE 80/tcp
-# Tue, 24 Jan 2017 18:34:12 GMT
+# Fri, 27 Jan 2017 23:15:12 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -131,7 +131,7 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 24 Jan 2017 19:45:52 GMT  
 		Size: 2.0 KB (2021 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69d0b42be69c09e9b3ad3e7bcd1cf1062b5e449b51d7ecf959c544e0ffa9c746`  
-		Last Modified: Tue, 24 Jan 2017 19:45:52 GMT  
-		Size: 584.0 B  
+	-	`sha256:4ac60b9af575c65836748f9ed03ccb909db120bb9b848ff3bbf217eb6151c817`  
+		Last Modified: Fri, 27 Jan 2017 23:18:38 GMT  
+		Size: 881.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

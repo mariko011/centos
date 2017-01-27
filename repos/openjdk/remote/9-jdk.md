@@ -1,7 +1,7 @@
 ## `openjdk:9-jdk`
 
 ```console
-$ docker pull openjdk@sha256:478ec471e2196d694227ed83a1a3fdf1f03dddf7e946e2060abc2e6167ea424e
+$ docker pull openjdk@sha256:d57dd4ef3339ca14086a3cb2b2a213729930823a1d4a8f3b88033bc10fa42035
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull openjdk@sha256:478ec471e2196d694227ed83a1a3fdf1f03dddf7e946e2060ab
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **263.0 MB (263009168 bytes)**  
+-	Total Size: **263.0 MB (262976477 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:daecf8238a8962719d62d19c8737f72850d1cfcbd4f49acaabd1b2a057b1c570`
+-	Image ID: `sha256:64a0088ee841a5a3b117e8b9a8156ae8e8022a19bb929fb16b99a59032f946d0`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -35,11 +35,11 @@ ENV LANG=C.UTF-8
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
 # Tue, 17 Jan 2017 00:53:31 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64
-# Tue, 24 Jan 2017 17:51:38 GMT
-ENV JAVA_VERSION=9~b153
-# Tue, 24 Jan 2017 17:51:39 GMT
-ENV JAVA_DEBIAN_VERSION=9~b153-2
-# Tue, 24 Jan 2017 17:52:18 GMT
+# Fri, 27 Jan 2017 23:02:32 GMT
+ENV JAVA_VERSION=9~b154
+# Fri, 27 Jan 2017 23:02:32 GMT
+ENV JAVA_DEBIAN_VERSION=9~b154-1
+# Fri, 27 Jan 2017 23:03:15 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$JAVA_DEBIAN_VERSION" 	&& rm -rf /var/lib/apt/lists/* 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
@@ -68,7 +68,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jdk-headless="$
 		Last Modified: Wed, 18 Jan 2017 06:23:57 GMT  
 		Size: 241.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c05fad3f64614a6985d73cbe6c63dd9cc9992ae02c232528c2741e618837ce2`  
-		Last Modified: Tue, 24 Jan 2017 18:02:42 GMT  
-		Size: 145.3 MB (145302701 bytes)  
+	-	`sha256:7134ea064ed7745145f81ac989a1d719afa80a242b4a1a72818c02f1833f0bbd`  
+		Last Modified: Fri, 27 Jan 2017 23:13:15 GMT  
+		Size: 145.3 MB (145270010 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
