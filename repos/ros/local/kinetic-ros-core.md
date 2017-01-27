@@ -127,13 +127,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.2.18
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.18.dsc' apt_1.2.18.dsc 2392 SHA256:673b188764bbeb00c5592e02c34c66d65fd224a3dc9881c0c16cd73a2d58b489
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.18.tar.xz' apt_1.2.18.tar.xz 2055732 SHA256:29cbbbd48fbe528258056dbf743d8226deda675462a83e82347cb6c9b9e676fe
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -1164,14 +1159,8 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.48.1-1~ubuntu16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.1-1~ubuntu16.04.1.dsc' glib2.0_2.48.1-1~ubuntu16.04.1.dsc 3129 SHA256:30c9e06e710c982af8faae0fb591aadc642497e06ebbadc0eb115b21c7ce1a87
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.1.orig.tar.xz' glib2.0_2.48.1.orig.tar.xz 7441032 SHA256:74411bff489cb2a3527bac743a51018841a56a4d896cc1e0d0d54f8166a14612
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.1-1~ubuntu16.04.1.debian.tar.xz' glib2.0_2.48.1-1~ubuntu16.04.1.debian.tar.xz 68624 SHA256:b44ad954b23e1cbf35f2a4555b622d2141efeebe499b504bdd46b27e353f2721
-```
 
 ### `dpkg` source package: `glibc=2.23-0ubuntu5`
 
