@@ -1,21 +1,21 @@
-## `ros:kinetic-ros-base`
+## `gazebo:gzserver8`
 
 ```console
-$ docker pull ros@sha256:7f77d68741cc415df4b27bb7c4d143278cfe40c8e1b37f4a295203615e527198
+$ docker pull gazebo@sha256:40ef799522791c0406e030dcfb16f39be82cc6c5bcf579118538f26b08746a99
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `ros:kinetic-ros-base` - linux; amd64
+### `gazebo:gzserver8` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **303.3 MB (303296174 bytes)**  
+-	Total Size: **269.0 MB (269023248 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:af847bfdb7573953c20c587267c33f5eb0fc52021128680c5e4bd11dbc8dc59f`
--	Entrypoint: `["\/ros_entrypoint.sh"]`
--	Default Command: `["bash"]`
+-	Image ID: `sha256:ef421b85487ddbac63ff2fc68a035b0e7a3570ad115743f278cb0becc3131979`
+-	Entrypoint: `["\/gzserver_entrypoint.sh"]`
+-	Default Command: `["gzserver"]`
 
 ```dockerfile
 # Fri, 20 Jan 2017 21:43:23 GMT
@@ -30,30 +30,22 @@ RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 # Fri, 20 Jan 2017 21:44:07 GMT
 CMD ["/bin/bash"]
-# Fri, 27 Jan 2017 20:16:50 GMT
-RUN locale-gen en_US.UTF-8
-# Fri, 27 Jan 2017 20:16:51 GMT
-ENV LANG=en_US.UTF-8
-# Fri, 27 Jan 2017 20:16:53 GMT
-RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
-# Fri, 27 Jan 2017 20:16:54 GMT
-RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
-# Fri, 27 Jan 2017 20:17:27 GMT
-RUN apt-get update && apt-get install --no-install-recommends -y     python-rosdep     python-rosinstall     python-vcstools     && rm -rf /var/lib/apt/lists/*
-# Fri, 27 Jan 2017 20:17:36 GMT
-RUN rosdep init     && rosdep update
-# Fri, 27 Jan 2017 20:17:37 GMT
-ENV ROS_DISTRO=kinetic
-# Fri, 27 Jan 2017 20:19:08 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.0-0*     && rm -rf /var/lib/apt/lists/*
-# Fri, 27 Jan 2017 20:19:09 GMT
-COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Fri, 27 Jan 2017 20:19:10 GMT
-ENTRYPOINT ["/ros_entrypoint.sh"]
-# Fri, 27 Jan 2017 20:19:10 GMT
-CMD ["bash"]
-# Fri, 27 Jan 2017 20:19:21 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.0-0*     && rm -rf /var/lib/apt/lists/*
+# Fri, 27 Jan 2017 21:10:21 GMT
+RUN apt-get update && apt-get install -q -y     lsb-release    && rm -rf /var/lib/apt/lists/*
+# Fri, 27 Jan 2017 21:10:23 GMT
+RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys D2486D2DD83DB69272AFE98867170598AF249743
+# Fri, 27 Jan 2017 21:10:24 GMT
+RUN echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-latest.list
+# Fri, 27 Jan 2017 21:11:49 GMT
+RUN apt-get update && apt-get install -q -y     gazebo8=8.0.0*     && rm -rf /var/lib/apt/lists/*
+# Fri, 27 Jan 2017 21:11:49 GMT
+EXPOSE 11345/tcp
+# Fri, 27 Jan 2017 21:11:50 GMT
+COPY file:5869092530419fa234b6d43a32bf8687d0d509fced55597b2e241dd58b3d1335 in / 
+# Fri, 27 Jan 2017 21:11:50 GMT
+ENTRYPOINT ["/gzserver_entrypoint.sh"]
+# Fri, 27 Jan 2017 21:11:51 GMT
+CMD ["gzserver"]
 ```
 
 -	Layers:
@@ -77,35 +69,23 @@ RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.0-0*     &
 		Last Modified: Fri, 20 Jan 2017 21:50:19 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6469fe334b128900cdac4cb0215c9f4a1ee88aece8c84f9bb774f779c28cd776`  
-		Last Modified: Fri, 27 Jan 2017 20:52:01 GMT  
-		Size: 339.4 KB (339414 bytes)  
+	-	`sha256:d881d95cf2daa326f4614cb8ce189b7cb9ebd908d2629156adcc87ffdd16639b`  
+		Last Modified: Fri, 27 Jan 2017 21:57:30 GMT  
+		Size: 11.8 MB (11758625 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e82a12d16883e868c3378a9bc166a4f41923f503732dcdbf4f7dd90eb2a4bd8e`  
-		Last Modified: Fri, 27 Jan 2017 20:52:01 GMT  
-		Size: 13.1 KB (13071 bytes)  
+	-	`sha256:b7c280d5d5b8afed11a48162f35b7d6bc2c7bfd6398634ad3554d7e2f4eb8aa7`  
+		Last Modified: Fri, 27 Jan 2017 21:57:22 GMT  
+		Size: 13.1 KB (13110 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66ecdb764b9c33b13e7482c1b424af405ca347aadbec8eefb85925ac5285b1ac`  
-		Last Modified: Fri, 27 Jan 2017 20:51:58 GMT  
-		Size: 220.0 B  
+	-	`sha256:5354e755877617c6b9733b7e22c4c1a59497a2bb7fd841d850ce76b64e689d35`  
+		Last Modified: Fri, 27 Jan 2017 21:57:22 GMT  
+		Size: 5.5 KB (5462 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98af96e19cdc3d3d1d6221d35bab668b902f135719d1e51e5d2ece5c136c9b39`  
-		Last Modified: Fri, 27 Jan 2017 20:52:25 GMT  
-		Size: 57.6 MB (57648898 bytes)  
+	-	`sha256:5637af8208a7f4a20eaaa911425ad05f70adbbec557e4fdfff934dc0f6e1854f`  
+		Last Modified: Fri, 27 Jan 2017 21:58:17 GMT  
+		Size: 206.9 MB (206935505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be5fbd3f1b9811cbf0d4d0150445dff55a2e398b4d71e364e5fee29e1f7a1727`  
-		Last Modified: Fri, 27 Jan 2017 20:51:59 GMT  
-		Size: 703.2 KB (703154 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd76e509a97c970f2100fa670d9ddb67b918975838bd5277c686f42142d388b8`  
-		Last Modified: Fri, 27 Jan 2017 20:53:21 GMT  
-		Size: 189.6 MB (189636291 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b5ed1648add6cee9ed96968bc6c51c311101ca4dad36e7e1600cd9c075cd2ad`  
-		Last Modified: Fri, 27 Jan 2017 20:51:58 GMT  
-		Size: 197.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:422d357d2c1c25e9db3d61bb43d2f1c198ae48ac588606769603c62a0ac08e56`  
-		Last Modified: Fri, 27 Jan 2017 20:53:45 GMT  
-		Size: 4.6 MB (4644573 bytes)  
+	-	`sha256:8145e5e2b3f058db58f2287719a55788b83513a1d66e11fa4d5ba5aa8dfdb8ef`  
+		Last Modified: Fri, 27 Jan 2017 21:57:23 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
