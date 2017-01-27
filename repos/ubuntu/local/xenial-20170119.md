@@ -84,13 +84,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.2.18
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.18.dsc' apt_1.2.18.dsc 2392 SHA256:673b188764bbeb00c5592e02c34c66d65fd224a3dc9881c0c16cd73a2d58b489
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.18.tar.xz' apt_1.2.18.tar.xz 2055732 SHA256:29cbbbd48fbe528258056dbf743d8226deda675462a83e82347cb6c9b9e676fe
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
