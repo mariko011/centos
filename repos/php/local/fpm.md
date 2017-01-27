@@ -1,9 +1,9 @@
-# `php:7.1.0-fpm`
+# `php:7.1.1-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bb3ac90ec48bd2d56ffc73d80d0d823815f15c6b49da63d6018deb0ead407a94`
-- Created: `2017-01-17T19:17:38.847835515Z`
+- Image ID: `sha256:65ec79b1c89dcec422e73d6f248323d1326ad026aef02955d4571ccbfe7bf91a`
+- Created: `2017-01-24T18:38:03.799801477Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
 - Command: `["php-fpm"]`
@@ -15,12 +15,12 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
-  - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0`
-  - `PHP_VERSION=7.1.0`
-  - `PHP_URL=https://secure.php.net/get/php-7.1.0.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.0.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=a810b3f29c21407c24caa88f50649320d20ba6892ae1923132598b8a0ca145b6`
-  - `PHP_MD5=cf36039303c47f493100afea522a8f53`
+  - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E`
+  - `PHP_VERSION=7.1.1`
+  - `PHP_URL=https://secure.php.net/get/php-7.1.1.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.1.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=b3565b0c1441064eba204821608df1ec7367abff881286898d900c2c2a5ffe70`
+  - `PHP_MD5=65eef256f6e7104a05361939f5e23ada`
 
 ## `dpkg` (`.deb`-based packages)
 
