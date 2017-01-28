@@ -1,9 +1,9 @@
-# `lightstreamer:6.0.3`
+# `lightstreamer:6.1.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3b3f7eb42689aaae5ed513ec0f2aa79e51446b5367f19bc02b060f3cf33e1edf`
-- Created: `2017-01-17T17:16:19.119643822Z`
+- Image ID: `sha256:ffd066897fe20f886d6a3b10cd5ec411be55673d8923eda3793eb0517cb2bf0a`
+- Created: `2017-01-27T19:09:44.02380364Z`
 - Arch: `linux`/`amd64`
 - Command: `["./LS.sh","run"]`
 - Environment:
@@ -14,8 +14,8 @@
   - `JAVA_DEBIAN_VERSION=8u111-b14-2~bpo8+1`
   - `CA_CERTIFICATES_JAVA_VERSION=20140324`
   - `LIGHSTREAMER_EDITION=Allegro-Presto-Vivace`
-  - `LIGHSTREAMER_VERSION=6_0_3_20160905`
-  - `LIGHSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_Allegro-Presto-Vivace_6_0_3_20160905.tar.gz`
+  - `LIGHSTREAMER_VERSION=6_1_0_20170123`
+  - `LIGHSTREAMER_URL_DOWNLOAD=http://www.lightstreamer.com/repo/distros/Lightstreamer_Allegro-Presto-Vivace_6_1_0_20170123.tar.gz`
 
 ## `dpkg` (`.deb`-based packages)
 
