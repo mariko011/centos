@@ -74,18 +74,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4~beta3
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4~beta3.dsc' apt_1.4~beta3.dsc 2565 SHA256:04428e7fbb0887bafe598ec5ad0589b757b2956c622a8aa638ed5f8a956a1c08
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4~beta3.tar.xz' apt_1.4~beta3.tar.xz 2061292 SHA256:f721b03fa3f8a2013fdd0f42312f765143ccc98f0f0c07fb4c78d82794314ea4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.4~beta3/
-- https://sources.debian.net/src/apt/1.4~beta3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -163,18 +153,8 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.5.42
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.42.dsc' base-passwd_3.5.42.dsc 1749 SHA256:dab44a7eccd1a450f9382cde110448b787cb81419bf24e5c87960f36ea26bf28
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.42.tar.xz' base-passwd_3.5.42.tar.xz 52584 SHA256:d316f47ef5cba040852ce80338ef0ff5cabde9f1a148ed2eebe3b20990438cb6
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/base-passwd/3.5.42/
-- https://sources.debian.net/src/base-passwd/3.5.42/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bash=4.4-2`
 
@@ -1799,10 +1779,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libidn2-0=0.16-1
-'http://http.debian.net/debian/pool/main/libi/libidn2-0/libidn2-0_0.16-1.dsc' libidn2-0_0.16-1.dsc 1786 SHA256:d806657d36a5836ab08ccc5488372d7b95c03e10964b1c692b0948e6805bc84e
-'http://http.debian.net/debian/pool/main/libi/libidn2-0/libidn2-0_0.16.orig.tar.gz' libidn2-0_0.16.orig.tar.gz 1494295 SHA256:2fad9efff4082ae2143f69df76339ca99379e0e0f4231455f5d3d9d2089c688f
-'http://http.debian.net/debian/pool/main/libi/libidn2-0/libidn2-0_0.16-1.debian.tar.xz' libidn2-0_0.16-1.debian.tar.xz 57392 SHA256:9b643e5a5bd9f3eff52cd5508b1f15f44fe32bca4c1a6c3aa04ebad59d16272d
+'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_0.16-1.dsc' libidn2-0_0.16-1.dsc 1786 SHA256:d806657d36a5836ab08ccc5488372d7b95c03e10964b1c692b0948e6805bc84e
+'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_0.16.orig.tar.gz' libidn2-0_0.16.orig.tar.gz 1494295 SHA256:2fad9efff4082ae2143f69df76339ca99379e0e0f4231455f5d3d9d2089c688f
+'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_0.16-1.debian.tar.xz' libidn2-0_0.16-1.debian.tar.xz 57392 SHA256:9b643e5a5bd9f3eff52cd5508b1f15f44fe32bca4c1a6c3aa04ebad59d16272d
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libidn2-0/0.16-1/
+- https://sources.debian.net/src/libidn2-0/0.16-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libidn=1.33-1`
 
@@ -2108,19 +2093,8 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.9-4
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.9-4.dsc' libtasn1-6_4.9-4.dsc 2402 SHA256:ff99387e92055697da6192cbab3ea493b542c0838f049646117d23f31ea5c08e
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.9.orig.tar.gz' libtasn1-6_4.9.orig.tar.gz 1864709 SHA256:4f6f7a8fd691ac2b8307c8ca365bad711db607d4ad5966f6938a9d2ecd65c920
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.9-4.debian.tar.xz' libtasn1-6_4.9-4.debian.tar.xz 58180 SHA256:c9ba4c28e12bc32b77f044ecb1091ef22525ac5e8bc4fd75aaffc3923c82f19d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libtasn1-6/4.9-4/
-- https://sources.debian.net/src/libtasn1-6/4.9-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libthai=0.1.26-1`
 
@@ -3499,10 +3473,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tiff=4.0.7-5
-'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.0.7-5.dsc' tiff_4.0.7-5.dsc 2157 SHA256:da84a0420d7c93f6a52dd7c9e97aef4e82fcf73ddb07b89f92c91f4ce4ad5da6
-'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.0.7.orig.tar.gz' tiff_4.0.7.orig.tar.gz 2076392 SHA256:9f43a2cfb9589e5cecaa66e16bf87f814c945f22df7ba600d63aac4632c4f019
-'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.0.7-5.debian.tar.xz' tiff_4.0.7-5.debian.tar.xz 24756 SHA256:f4183c48ed74b6c3c3a74ff1f10f0cf972d3dba0f840cf28b5a3f3846ceb2be6
+'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.7-5.dsc' tiff_4.0.7-5.dsc 2157 SHA256:da84a0420d7c93f6a52dd7c9e97aef4e82fcf73ddb07b89f92c91f4ce4ad5da6
+'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.7.orig.tar.gz' tiff_4.0.7.orig.tar.gz 2076392 SHA256:9f43a2cfb9589e5cecaa66e16bf87f814c945f22df7ba600d63aac4632c4f019
+'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.7-5.debian.tar.xz' tiff_4.0.7-5.debian.tar.xz 24756 SHA256:f4183c48ed74b6c3c3a74ff1f10f0cf972d3dba0f840cf28b5a3f3846ceb2be6
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/tiff/4.0.7-5/
+- https://sources.debian.net/src/tiff/4.0.7-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tk8.6=8.6.6-1`
 
@@ -3690,15 +3669,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris vim=2:8.0.0134-1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.0.0134-1.dsc' vim_8.0.0134-1.dsc 2991 SHA256:59b3141543b6369c31ae22963165a6d21732bec75396cbf4550c641b242bb438
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.0.0134.orig.tar.gz' vim_8.0.0134.orig.tar.gz 12949311 SHA256:efef67e15f4e130def62e4e96966e51a23ddd6a25c5786f2b0002f25e1f83812
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.0.0134-1.debian.tar.xz' vim_8.0.0134-1.debian.tar.xz 152892 SHA256:49309f737554904d6c1495e0e1440c67921029bb61b6fb9ea9594f64c8c1716b
+'http://http.debian.net/debian/pool/main/v/vim/vim_8.0.0134-1.dsc' vim_8.0.0134-1.dsc 2991 SHA256:59b3141543b6369c31ae22963165a6d21732bec75396cbf4550c641b242bb438
+'http://http.debian.net/debian/pool/main/v/vim/vim_8.0.0134.orig.tar.gz' vim_8.0.0134.orig.tar.gz 12949311 SHA256:efef67e15f4e130def62e4e96966e51a23ddd6a25c5786f2b0002f25e1f83812
+'http://http.debian.net/debian/pool/main/v/vim/vim_8.0.0134-1.debian.tar.xz' vim_8.0.0134-1.debian.tar.xz 152892 SHA256:49309f737554904d6c1495e0e1440c67921029bb61b6fb9ea9594f64c8c1716b
 ```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/vim/2:8.0.0134-1/
-- https://sources.debian.net/src/vim/2:8.0.0134-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `wget=1.18-4`
 
