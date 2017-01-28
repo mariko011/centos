@@ -113,13 +113,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.2.18
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.18.dsc' apt_1.2.18.dsc 2392 SHA256:673b188764bbeb00c5592e02c34c66d65fd224a3dc9881c0c16cd73a2d58b489
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.18.tar.xz' apt_1.2.18.tar.xz 2055732 SHA256:29cbbbd48fbe528258056dbf743d8226deda675462a83e82347cb6c9b9e676fe
-```
 
 ### `dpkg` source package: `atk1.0=2.18.0-1`
 
@@ -4044,14 +4039,8 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk/copyright`, `/usr/share/do
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openjdk-8=8u111-b14-2ubuntu0.16.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u111-b14-2ubuntu0.16.04.2.dsc' openjdk-8_8u111-b14-2ubuntu0.16.04.2.dsc 4568 SHA256:3c4974ee94759fcd494a777da49cfd20c14571b00e9a404d73ee3887bb21f8af
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u111-b14.orig.tar.gz' openjdk-8_8u111-b14.orig.tar.gz 63946090 SHA256:353e7382c88bcf2b10d673b9b305c87ed733bd00c02b8497c565b37741ae1c30
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u111-b14-2ubuntu0.16.04.2.debian.tar.xz' openjdk-8_8u111-b14-2ubuntu0.16.04.2.debian.tar.xz 232720 SHA256:b51a22600b5a393059f1444eb1b12b8a005f646d19bdf571f55aed9be1bbd57f
-```
 
 ### `dpkg` source package: `openjpeg=1:1.5.2-3.1`
 
