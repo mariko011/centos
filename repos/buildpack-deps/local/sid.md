@@ -255,19 +255,8 @@ Licenses: (parsed from: `/usr/share/doc/automake/copyright`)
 - `GPL-3+`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris automake-1.15=1:1.15-5
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15-5.dsc' automake-1.15_1.15-5.dsc 2232 SHA256:82af7bc3721c6eddf38b9e822e0bc3a4e4484579004b4b35e67749fc021dcb63
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15.orig.tar.xz' automake-1.15_1.15.orig.tar.xz 1496708 SHA256:9908c75aabd49d13661d6dcb1bc382252d22cc77bf733a2d55e87f2aa2db8636
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15-5.debian.tar.xz' automake-1.15_1.15-5.debian.tar.xz 12924 SHA256:c9095f84e486aaf70ea19baddae58eaad39f54a52b9528d20cc4f35cb2de19c5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/automake-1.15/1:1.15-5/
-- https://sources.debian.net/src/automake-1.15/1:1.15-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `autotools-dev=20161112.1`
 
@@ -306,19 +295,8 @@ Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris avahi=0.6.32-1
-'http://deb.debian.org/debian/pool/main/a/avahi/avahi_0.6.32-1.dsc' avahi_0.6.32-1.dsc 4249 SHA256:b949a97021c2df3285ec0bc596d091e9e2660d91cca7ea3c2d1addb35f8f3663
-'http://deb.debian.org/debian/pool/main/a/avahi/avahi_0.6.32.orig.tar.gz' avahi_0.6.32.orig.tar.gz 1297169 SHA256:d54991185d514a0aba54ebeb408d7575b60f5818a772e28fa0e18b98bc1db454
-'http://deb.debian.org/debian/pool/main/a/avahi/avahi_0.6.32-1.debian.tar.xz' avahi_0.6.32-1.debian.tar.xz 29604 SHA256:d21739d27bfe7a032572088cd5853b77270261c1cf604094fc381ffcb3601184
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/avahi/0.6.32-1/
-- https://sources.debian.net/src/avahi/0.6.32-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `base-files=9.8`
 
@@ -636,19 +614,8 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.8-2.3
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8-2.3.dsc' dash_0.5.8-2.3.dsc 1764 SHA256:cd1fdf9e0b5d05f152ff12400ab191b0d3662cbb0a70a759b28e20a317af1ab2
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8.orig.tar.gz' dash_0.5.8.orig.tar.gz 223028 SHA256:c6db3a237747b02d20382a761397563d813b306c020ae28ce25a1c3915fac60f
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8-2.3.diff.gz' dash_0.5.8-2.3.diff.gz 42170 SHA256:fc7e390aec750c270ffc15a77ba861da3c931f323b2463130e1114ff47c6732b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dash/0.5.8-2.3/
-- https://sources.debian.net/src/dash/0.5.8-2.3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `db-defaults=5.3.1`
 
@@ -799,18 +766,8 @@ Licenses: (parsed from: `/usr/share/doc/dh-python/copyright`)
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dh-python=2.20160818
-'http://deb.debian.org/debian/pool/main/d/dh-python/dh-python_2.20160818.dsc' dh-python_2.20160818.dsc 1876 SHA256:6871cd06bd30a3be4e64b01c74a77dfee870dcbf0aa314a1fad85125ff37ed3d
-'http://deb.debian.org/debian/pool/main/d/dh-python/dh-python_2.20160818.tar.xz' dh-python_2.20160818.tar.xz 84928 SHA256:9491b21ee97f1b57bcd84ee40c557ab38f3fed50641cb7d25545632cad5b09c7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dh-python/2.20160818/
-- https://sources.debian.net/src/dh-python/2.20160818/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `diffutils=1:3.5-3`
 
@@ -1035,19 +992,8 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 - `MIT-Old-Style-with-legal-disclaimer-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris file=1:5.29-2
-'http://deb.debian.org/debian/pool/main/f/file/file_5.29-2.dsc' file_5.29-2.dsc 2124 SHA256:dfa00a43b061fede4b6f414faba899a59e00b9e20dee12114c6bf1b5970ae71d
-'http://deb.debian.org/debian/pool/main/f/file/file_5.29.orig.tar.xz' file_5.29.orig.tar.xz 574196 SHA256:4ab1cd8d4fe9017f8dfcfd6ba81f495a722b75e22bd1a59e6bfd15ac211a2820
-'http://deb.debian.org/debian/pool/main/f/file/file_5.29-2.debian.tar.xz' file_5.29-2.debian.tar.xz 37056 SHA256:7f45e40aace76e38d4349a383d5b1f778f1624a4e05a55c431ba22109fed61c8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/file/1:5.29-2/
-- https://sources.debian.net/src/file/1:5.29-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20161106-1`
 
@@ -1276,8 +1222,19 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `GPL-2`
 - `LGPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gdk-pixbuf=2.36.3-1
+'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.3-1.dsc' gdk-pixbuf_2.36.3-1.dsc 2738 SHA256:6c9614f9828df038c1a22bd2e0af1f1e40ccc2bd428dd89ee1efbfbd37966975
+'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.3.orig.tar.xz' gdk-pixbuf_2.36.3.orig.tar.xz 5157296 SHA256:5223138f7d31afc6b356a049930304ec0abd6ac1113a5d3d1dba5cd4a4d639ec
+'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.3-1.debian.tar.xz' gdk-pixbuf_2.36.3-1.debian.tar.xz 13312 SHA256:d67286cfc0df8d1ff0f30db9b06fcb03e0257abe538bbf7e59c4cffad6265499
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/gdk-pixbuf/2.36.3-1/
+- https://sources.debian.net/src/gdk-pixbuf/2.36.3-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `geoip=1.6.9-4`
 
@@ -1644,19 +1601,8 @@ Licenses: (parsed from: `/usr/share/doc/grep/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris grep=2.27-1
-'http://deb.debian.org/debian/pool/main/g/grep/grep_2.27-1.dsc' grep_2.27-1.dsc 2053 SHA256:c52e8a3bdae428e786a87aa5501faac621d4d0b017cf0bc2d8f5abd866fd5aac
-'http://deb.debian.org/debian/pool/main/g/grep/grep_2.27.orig.tar.xz' grep_2.27.orig.tar.xz 1360388 SHA256:ad4cc44d23074a1c3a8baae8fbafff2a8c60f38a9a6108f985eef6fbee6dcaeb
-'http://deb.debian.org/debian/pool/main/g/grep/grep_2.27-1.debian.tar.bz2' grep_2.27-1.debian.tar.bz2 109032 SHA256:1b99fff124d0a46e97fdb2f67f556d0684c0027ef6f7902f7c421b8828a3eaaa
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/grep/2.27-1/
-- https://sources.debian.net/src/grep/2.27-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gtk+2.0=2.24.31-1`
 
@@ -1861,19 +1807,8 @@ Licenses: (parsed from: `/usr/share/doc/libilmbase-dev/copyright`, `/usr/share/d
 - `boost`
 - `ilmbase`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ilmbase=2.2.0-11
-'http://deb.debian.org/debian/pool/main/i/ilmbase/ilmbase_2.2.0-11.dsc' ilmbase_2.2.0-11.dsc 2205 SHA256:c68eadeea18a20ea0277e41aa5df7364b1970523ce0a3f765f53f063719666ca
-'http://deb.debian.org/debian/pool/main/i/ilmbase/ilmbase_2.2.0.orig.tar.gz' ilmbase_2.2.0.orig.tar.gz 525289 SHA256:ecf815b60695555c1fbc73679e84c7c9902f4e8faa6e8000d2f905b8b86cedc7
-'http://deb.debian.org/debian/pool/main/i/ilmbase/ilmbase_2.2.0-11.debian.tar.xz' ilmbase_2.2.0-11.debian.tar.xz 9784 SHA256:3124c09d60bac7d9ed6023832ed8ffffb6f45f312bbe076bf3fac912cf41ee63
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/ilmbase/2.2.0-11/
-- https://sources.debian.net/src/ilmbase/2.2.0-11/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `imagemagick=8:6.9.7.0+dfsg-2`
 
@@ -2143,19 +2078,8 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`, `/usr/share/doc/l
 - `GPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris lcms2=2.8-3
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.8-3.dsc' lcms2_2.8-3.dsc 1997 SHA256:9e9f53b7abcdd82040a35111860465b443d05103a49e64b139cfe955586b2e0a
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.8.orig.tar.gz' lcms2_2.8.orig.tar.gz 6687005 SHA256:66d02b229d2ea9474e62c2b6cd6720fde946155cd1d0d2bffdab829790a0fb22
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.8-3.debian.tar.xz' lcms2_2.8-3.debian.tar.xz 10732 SHA256:876214e97f069a3dba0ea7f54026106da441f319e2afa0a8d38f8c4de5f773c9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/lcms2/2.8-3/
-- https://sources.debian.net/src/lcms2/2.8-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libbsd=0.8.3-1`
 
@@ -2680,19 +2604,8 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 - `Chromium`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.16.1-1
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.16.1-1.dsc' libpsl_0.16.1-1.dsc 2122 SHA256:773b7d42b7e01048397d86b417a9ab4c0cef0543d9a7d8816560144a6deb65b4
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.16.1.orig.tar.gz' libpsl_0.16.1.orig.tar.gz 48606 SHA256:60b219a65ac40643cb6d43b58bb18129e6327b4a963cabe9bc26ee2d61504926
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.16.1-1.debian.tar.xz' libpsl_0.16.1-1.debian.tar.xz 8324 SHA256:a2f7ad641cdc05dd3b268409b7d6bf8d1037303ffd1d5e7fb4d9a2af843f6a3c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libpsl/0.16.1-1/
-- https://sources.debian.net/src/libpsl/0.16.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpthread-stubs=0.3-4`
 
@@ -4004,19 +3917,8 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc
 - `ZLIB`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openjpeg2=2.1.2-1
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2-1.dsc' openjpeg2_2.1.2-1.dsc 2745 SHA256:b2f16bb0be9a9f5b218b01252391d2280820165ab96ec3e2a6b26a8ce4f01bca
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2.orig.tar.gz' openjpeg2_2.1.2.orig.tar.gz 1987071 SHA256:4ce77b6ef538ef090d9bde1d5eeff8b3069ab56c4906f083475517c2c023dfa7
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2-1.debian.tar.xz' openjpeg2_2.1.2-1.debian.tar.xz 17176 SHA256:ef4381c844169803b0512486d0fd8e0d2c82b8b77ab65e0043cb1376adcde451
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openjpeg2/2.1.2-1/
-- https://sources.debian.net/src/openjpeg2/2.1.2-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-3`
 
@@ -4112,20 +4014,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.0c-2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0c-2.dsc' openssl_1.1.0c-2.dsc 2552 SHA256:a6ca664b8443ad1ed01cc90a9c8d8af8a079efa471536ec971a1bf2f5b8253a0
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0c.orig.tar.gz' openssl_1.1.0c.orig.tar.gz 5179668 SHA256:fc436441a2e05752d31b4e46115eb89709a28aef96d4fe786abe92409b2fd6f5
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0c.orig.tar.gz.asc' openssl_1.1.0c.orig.tar.gz.asc 455 SHA256:818a933aa7a9a80f1959e0cfe170d34037b8ac6ccf57231b6540a341ff01ed37
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0c-2.debian.tar.xz' openssl_1.1.0c-2.debian.tar.xz 55392 SHA256:c47b1d2df11b061243bf91ecd95130840ebe7e6a84a6bf1b063d1953e9fddda5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssl/1.1.0c-2/
-- https://sources.debian.net/src/openssl/1.1.0c-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.23.3-4`
 
@@ -4444,18 +4334,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-defaults=2.7.13-1
-'http://deb.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.13-1.dsc' python-defaults_2.7.13-1.dsc 2677 SHA256:0c837be1ae03a9d170be7ecd66388e9beb4532b33b0083f33eed3155f686f185
-'http://deb.debian.org/debian/pool/main/p/python-defaults/python-defaults_2.7.13-1.tar.gz' python-defaults_2.7.13-1.tar.gz 273757 SHA256:0a755bbc6a5813fcdbccdfbd0a7f28e65fc833bd39ab2613394da87c6195beef
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/python-defaults/2.7.13-1/
-- https://sources.debian.net/src/python-defaults/2.7.13-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `python2.7=2.7.13-1`
 
@@ -4557,19 +4437,8 @@ Licenses: (parsed from: `/usr/share/doc/libreadline-dev/copyright`, `/usr/share/
 - `GFDL`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris readline=7.0-1
-'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0-1.dsc' readline_7.0-1.dsc 2505 SHA256:d3176f0ab485483d077d176df51a9e2fcac3e8bb0b96bd191dc95c9fad7f57ca
-'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0.orig.tar.gz' readline_7.0.orig.tar.gz 2910016 SHA256:750d437185286f40a369e1e4f4764eda932b9459b5ec9a731628393dd3d32334
-'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0-1.debian.tar.xz' readline_7.0-1.debian.tar.xz 28516 SHA256:814a15c6dc5fad46bfbeb869f2cafe73ca6052e21dbe3ffafb8ea317b5e1cd00
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/readline/7.0-1/
-- https://sources.debian.net/src/readline/7.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-1`
 
@@ -4682,19 +4551,8 @@ Licenses: (parsed from: `/usr/share/doc/shared-mime-info/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shared-mime-info=1.7-1
-'http://deb.debian.org/debian/pool/main/s/shared-mime-info/shared-mime-info_1.7-1.dsc' shared-mime-info_1.7-1.dsc 2271 SHA256:7a5f933a9765ae61b2f1a68b667162a8f6d6485ea95ab8c85166be11b49d927f
-'http://deb.debian.org/debian/pool/main/s/shared-mime-info/shared-mime-info_1.7.orig.tar.xz' shared-mime-info_1.7.orig.tar.xz 582172 SHA256:eacc781cfebaa2074e43cf9521dc7ab4391ace8a4712902b2841669c83144d2e
-'http://deb.debian.org/debian/pool/main/s/shared-mime-info/shared-mime-info_1.7-1.debian.tar.xz' shared-mime-info_1.7-1.debian.tar.xz 10228 SHA256:5f0f8ff1ac95bb999189caf2a3cc28aaab7fc6850e17fcb2d230740c90d6049b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/shared-mime-info/1.7-1/
-- https://sources.debian.net/src/shared-mime-info/1.7-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `six=1.10.0-3`
 
@@ -4733,20 +4591,8 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.16.2-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2-1.dsc' sqlite3_3.16.2-1.dsc 2510 SHA256:b6afcec74bcb5460e95e41f538946c4b084ef63308b6c32d5ff7a1e7636bfc18
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2.orig-www.tar.xz' sqlite3_3.16.2.orig-www.tar.xz 3383968 SHA256:d5dd3de405c55c63c9f99fbfcf3defc91a54a81b5656c510cd46544aaed134fa
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2.orig.tar.xz' sqlite3_3.16.2.orig.tar.xz 5634120 SHA256:bf7b1e8ea7577253b7f8a8287d111d542d1792cf1768edc66541ac851ff92453
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2-1.debian.tar.xz' sqlite3_3.16.2-1.debian.tar.xz 16744 SHA256:3a7e30c8ceca28a6c61567c39adb80e19641a317c7ad17d064e5f24981d97c1e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sqlite3/3.16.2-1/
-- https://sources.debian.net/src/sqlite3/3.16.2-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `subversion=1.9.5-1`
 

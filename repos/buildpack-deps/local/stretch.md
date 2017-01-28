@@ -119,18 +119,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4~beta3
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4~beta3.dsc' apt_1.4~beta3.dsc 2565 SHA256:04428e7fbb0887bafe598ec5ad0589b757b2956c622a8aa638ed5f8a956a1c08
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4~beta3.tar.xz' apt_1.4~beta3.tar.xz 2061292 SHA256:f721b03fa3f8a2013fdd0f42312f765143ccc98f0f0c07fb4c78d82794314ea4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.4~beta3/
-- https://sources.debian.net/src/apt/1.4~beta3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `atk1.0=2.22.0-1`
 
@@ -354,18 +344,8 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.5.42
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.42.dsc' base-passwd_3.5.42.dsc 1749 SHA256:dab44a7eccd1a450f9382cde110448b787cb81419bf24e5c87960f36ea26bf28
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.42.tar.xz' base-passwd_3.5.42.tar.xz 52584 SHA256:d316f47ef5cba040852ce80338ef0ff5cabde9f1a148ed2eebe3b20990438cb6
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/base-passwd/3.5.42/
-- https://sources.debian.net/src/base-passwd/3.5.42/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bash=4.4-2`
 
@@ -2942,19 +2922,8 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.9-4
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.9-4.dsc' libtasn1-6_4.9-4.dsc 2402 SHA256:ff99387e92055697da6192cbab3ea493b542c0838f049646117d23f31ea5c08e
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.9.orig.tar.gz' libtasn1-6_4.9.orig.tar.gz 1864709 SHA256:4f6f7a8fd691ac2b8307c8ca365bad711db607d4ad5966f6938a9d2ecd65c920
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.9-4.debian.tar.xz' libtasn1-6_4.9-4.debian.tar.xz 58180 SHA256:c9ba4c28e12bc32b77f044ecb1091ef22525ac5e8bc4fd75aaffc3923c82f19d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libtasn1-6/4.9-4/
-- https://sources.debian.net/src/libtasn1-6/4.9-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libthai=0.1.26-1`
 
@@ -4886,19 +4855,8 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`, `/usr/share/doc/lib
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.7-4
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.7-4.dsc' tiff_4.0.7-4.dsc 2157 SHA256:8622da789e319b228c8c9372f792a681b602792fdafcbe54a52fbfcb2c9ae8b0
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.7.orig.tar.gz' tiff_4.0.7.orig.tar.gz 2076392 SHA256:9f43a2cfb9589e5cecaa66e16bf87f814c945f22df7ba600d63aac4632c4f019
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.7-4.debian.tar.xz' tiff_4.0.7-4.debian.tar.xz 24140 SHA256:74c9c85b43e1bb1016f96665090da7d8481a48f66a53a43100ab78f729cef0c0
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff/4.0.7-4/
-- https://sources.debian.net/src/tiff/4.0.7-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tzdata=2016j-2`
 

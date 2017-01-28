@@ -99,13 +99,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4~beta4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.4~beta4.dsc' apt_1.4~beta4.dsc 2565 SHA256:9cedf41d3890e725c9ce9e2a45daa1044c01befb0a090543d1833334341a59ef
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.4~beta4.tar.xz' apt_1.4~beta4.tar.xz 2063072 SHA256:3eb8119282ca9e50d4c9bc8b8ad2a3863b83edf9313c4155fa4ff8a3a2ea2d8b
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -2040,11 +2035,5 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris zlib=1:1.2.8.dfsg-2ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.8.dfsg-2ubuntu5.dsc' zlib_1.2.8.dfsg-2ubuntu5.dsc 2687 SHA256:9246b4a58a9112dbe2001df25d53f5fb2ada92cdd34ecd2f1559116f09f5442e
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.8.dfsg.orig.tar.gz' zlib_1.2.8.dfsg.orig.tar.gz 361943 SHA256:2caecc2c3f1ef8b87b8f72b128a03e61c307e8c14f5ec9b422ef7914ba75cf9f
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.8.dfsg-2ubuntu5.debian.tar.xz' zlib_1.2.8.dfsg-2ubuntu5.debian.tar.xz 15540 SHA256:2b3f844f2db293cf76cc676c9bab9918aaaba5e19a92378865ac54c562984d13
-```

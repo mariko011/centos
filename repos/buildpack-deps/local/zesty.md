@@ -128,13 +128,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4~beta4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.4~beta4.dsc' apt_1.4~beta4.dsc 2565 SHA256:9cedf41d3890e725c9ce9e2a45daa1044c01befb0a090543d1833334341a59ef
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.4~beta4.tar.xz' apt_1.4~beta4.tar.xz 2063072 SHA256:3eb8119282ca9e50d4c9bc8b8ad2a3863b83edf9313c4155fa4ff8a3a2ea2d8b
-```
 
 ### `dpkg` source package: `atk1.0=2.22.0-1`
 
@@ -1440,14 +1435,8 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`)
 - `LGPL-2.1+`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gtk+3.0=3.22.7-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.7-1ubuntu1.dsc' gtk+3.0_3.22.7-1ubuntu1.dsc 4145 SHA256:cb8951c637aea9da16c9be98cca5898c0da950a87d01dd316a4ba947698de1e4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.7.orig.tar.xz' gtk+3.0_3.22.7.orig.tar.xz 18301484 SHA256:a3a27564bfb1679ebbc75c37cd2bcd6e727c8bdfbcd3984d29305bf9ee60d432
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.7-1ubuntu1.debian.tar.xz' gtk+3.0_3.22.7-1ubuntu1.debian.tar.xz 170964 SHA256:e43983ef61caf88b1c8831794fec64098d086ceca12da9f3e2cb000f1c9f7992
-```
 
 ### `dpkg` source package: `gzip=1.6-4ubuntu1`
 
@@ -1478,14 +1467,8 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=1.2.7-1
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_1.2.7-1.dsc' harfbuzz_1.2.7-1.dsc 2642 SHA256:b7208e3e06002fa8642edb22ce4d094ac0d15d8f73bf108bafd58081eff72b2f
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_1.2.7.orig.tar.bz2' harfbuzz_1.2.7.orig.tar.bz2 1345389 SHA256:bba0600ae08b84384e6d2d7175bea10b5fc246c4583dc841498d01894d479026
-'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_1.2.7-1.debian.tar.xz' harfbuzz_1.2.7-1.debian.tar.xz 8068 SHA256:40d0d589f190120d1dbb6817d568917004ba1e65cb06bb2d94b699c147f303a9
-```
 
 ### `dpkg` source package: `heimdal=1.7~git20160703+dfsg-1ubuntu1`
 
@@ -4296,11 +4279,5 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris zlib=1:1.2.8.dfsg-2ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.8.dfsg-2ubuntu5.dsc' zlib_1.2.8.dfsg-2ubuntu5.dsc 2687 SHA256:9246b4a58a9112dbe2001df25d53f5fb2ada92cdd34ecd2f1559116f09f5442e
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.8.dfsg.orig.tar.gz' zlib_1.2.8.dfsg.orig.tar.gz 361943 SHA256:2caecc2c3f1ef8b87b8f72b128a03e61c307e8c14f5ec9b422ef7914ba75cf9f
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.8.dfsg-2ubuntu5.debian.tar.xz' zlib_1.2.8.dfsg-2ubuntu5.debian.tar.xz 15540 SHA256:2b3f844f2db293cf76cc676c9bab9918aaaba5e19a92378865ac54c562984d13
-```
