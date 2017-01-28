@@ -1,7 +1,7 @@
 ## `wordpress:php7.1`
 
 ```console
-$ docker pull wordpress@sha256:5ef66c99c0126928bee1aca91443e92fb64efaaef304b2110e9427a7994a725e
+$ docker pull wordpress@sha256:c83da5cf373ee103d00fe43a0524cbf99e117b561c7e63bb0f84f3ec4015eaf3
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull wordpress@sha256:5ef66c99c0126928bee1aca91443e92fb64efaaef304b2110
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **168.4 MB (168380663 bytes)**  
+-	Total Size: **168.4 MB (168382130 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:faf5c607517b9331361499acc0502012816f22d716aedde38c19140520c31d3b`
+-	Image ID: `sha256:647047306b34af0faf630c8e40ee7803d1407f9daac5356e066328b725dc827d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -72,33 +72,33 @@ RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		lib
 COPY multi:2b7e23dbf0e975ef1ec1f186511e2789ab94e8c8734ca9fa8419c893f7357d6c in /usr/local/bin/ 
 # Tue, 24 Jan 2017 18:34:10 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 24 Jan 2017 18:34:11 GMT
-COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/ 
-# Tue, 24 Jan 2017 18:34:11 GMT
+# Fri, 27 Jan 2017 23:15:10 GMT
+COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
+# Fri, 27 Jan 2017 23:15:11 GMT
 WORKDIR /var/www/html
-# Tue, 24 Jan 2017 18:34:12 GMT
+# Fri, 27 Jan 2017 23:15:11 GMT
 EXPOSE 80/tcp
-# Tue, 24 Jan 2017 18:34:12 GMT
+# Fri, 27 Jan 2017 23:15:12 GMT
 CMD ["apache2-foreground"]
-# Tue, 24 Jan 2017 23:48:34 GMT
+# Fri, 27 Jan 2017 23:57:47 GMT
 RUN set -ex; 		apt-get update; 	apt-get install -y 		libjpeg-dev 		libpng12-dev 	; 	rm -rf /var/lib/apt/lists/*; 		docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr; 	docker-php-ext-install gd mysqli opcache
-# Tue, 24 Jan 2017 23:48:35 GMT
+# Fri, 27 Jan 2017 23:57:48 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Tue, 24 Jan 2017 23:48:36 GMT
+# Fri, 27 Jan 2017 23:57:49 GMT
 RUN a2enmod rewrite expires
-# Tue, 24 Jan 2017 23:48:37 GMT
+# Fri, 27 Jan 2017 23:57:50 GMT
 VOLUME [/var/www/html]
-# Tue, 24 Jan 2017 23:48:37 GMT
-ENV WORDPRESS_VERSION=4.7.1
-# Tue, 24 Jan 2017 23:48:38 GMT
-ENV WORDPRESS_SHA1=8e56ba56c10a3f245c616b13e46bd996f63793d6
-# Tue, 24 Jan 2017 23:48:40 GMT
+# Fri, 27 Jan 2017 23:57:50 GMT
+ENV WORDPRESS_VERSION=4.7.2
+# Fri, 27 Jan 2017 23:57:51 GMT
+ENV WORDPRESS_SHA1=7b687f1af589c337124e6247229af209ec1d52c3
+# Fri, 27 Jan 2017 23:57:53 GMT
 RUN set -ex; 	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; 	echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; 	tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 	chown -R www-data:www-data /usr/src/wordpress
-# Tue, 24 Jan 2017 23:48:41 GMT
+# Fri, 27 Jan 2017 23:57:54 GMT
 COPY file:0d5c945fedcf9886801149dd830388361dfc1a00e4f95510833987f19e98e986 in /usr/local/bin/ 
-# Tue, 24 Jan 2017 23:48:41 GMT
+# Fri, 27 Jan 2017 23:57:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 24 Jan 2017 23:48:42 GMT
+# Fri, 27 Jan 2017 23:57:55 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -151,27 +151,27 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 24 Jan 2017 19:45:52 GMT  
 		Size: 2.0 KB (2021 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69d0b42be69c09e9b3ad3e7bcd1cf1062b5e449b51d7ecf959c544e0ffa9c746`  
-		Last Modified: Tue, 24 Jan 2017 19:45:52 GMT  
-		Size: 584.0 B  
+	-	`sha256:4ac60b9af575c65836748f9ed03ccb909db120bb9b848ff3bbf217eb6151c817`  
+		Last Modified: Fri, 27 Jan 2017 23:18:38 GMT  
+		Size: 881.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97471ec326ab904a403279652021c0281322ca58564bc3dd53c820517ac0f386`  
-		Last Modified: Wed, 25 Jan 2017 00:03:37 GMT  
-		Size: 2.2 MB (2230202 bytes)  
+	-	`sha256:c93aa47e99b206a33b9203eb13c69ecf8f0fccba1635cdd22b6c31c48cbf2828`  
+		Last Modified: Sat, 28 Jan 2017 00:11:17 GMT  
+		Size: 2.2 MB (2230205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1d255bd3f1218eea4734eb45550eae69b4b357b4f481972c962319c04d272858`  
-		Last Modified: Wed, 25 Jan 2017 00:03:37 GMT  
-		Size: 333.0 B  
+	-	`sha256:10038fb65ac864a1c857f2c467e37f64092f95dce38c73d63f250b5eb9eb44d0`  
+		Last Modified: Sat, 28 Jan 2017 00:11:17 GMT  
+		Size: 332.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cad2b1daeab3eb5a17814616074176cd8f17d78d28b605a8c6654f4f451a7369`  
-		Last Modified: Wed, 25 Jan 2017 00:03:37 GMT  
-		Size: 326.0 B  
+	-	`sha256:c90cefbd447361300cc244e8177fad41d44152ef9911ab8bb3d167bca741c01b`  
+		Last Modified: Sat, 28 Jan 2017 00:11:17 GMT  
+		Size: 325.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a8396a711be40328857beeb361bbd20aa6f2f64b0cc5b17d21c549827b73d8da`  
-		Last Modified: Wed, 25 Jan 2017 00:03:39 GMT  
-		Size: 7.8 MB (7826191 bytes)  
+	-	`sha256:2a44b2583d740848e4bc3da12cf4170470831bed3cfa81d77486d68ebe36985c`  
+		Last Modified: Sat, 28 Jan 2017 00:11:19 GMT  
+		Size: 7.8 MB (7827361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b353a4b4c58c3ebd6ab01191461bc21d7e425cf601792219231d7d3f923f1f64`  
-		Last Modified: Wed, 25 Jan 2017 00:03:37 GMT  
-		Size: 2.9 KB (2936 bytes)  
+	-	`sha256:10e9516b40ae37294279cac6cfc0c3af357f326389a906093a6df99b833ed1ba`  
+		Last Modified: Sat, 28 Jan 2017 00:11:17 GMT  
+		Size: 2.9 KB (2935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
