@@ -71,18 +71,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4~beta3
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4~beta3.dsc' apt_1.4~beta3.dsc 2565 SHA256:04428e7fbb0887bafe598ec5ad0589b757b2956c622a8aa638ed5f8a956a1c08
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4~beta3.tar.xz' apt_1.4~beta3.tar.xz 2061292 SHA256:f721b03fa3f8a2013fdd0f42312f765143ccc98f0f0c07fb4c78d82794314ea4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.4~beta3/
-- https://sources.debian.net/src/apt/1.4~beta3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -160,18 +150,8 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.5.42
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.42.dsc' base-passwd_3.5.42.dsc 1749 SHA256:dab44a7eccd1a450f9382cde110448b787cb81419bf24e5c87960f36ea26bf28
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.5.42.tar.xz' base-passwd_3.5.42.tar.xz 52584 SHA256:d316f47ef5cba040852ce80338ef0ff5cabde9f1a148ed2eebe3b20990438cb6
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/base-passwd/3.5.42/
-- https://sources.debian.net/src/base-passwd/3.5.42/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bash=4.4-2`
 
