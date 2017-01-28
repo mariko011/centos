@@ -65,8 +65,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apt=1.3.3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.3.3.dsc' apt_1.3.3.dsc 2525 SHA256:b87da40f0777692b94cf1dd404ca03a17ead6aadccd14df0b1b2cbb1d424766a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.3.3.tar.xz' apt_1.3.3.tar.xz 2035720 SHA256:bb097303e91b8e98c7ce1058e10a00f6cf7ebba6fe2cdadbc47e40b45d92050b
+'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.3.3.dsc' apt_1.3.3.dsc 2525 SHA256:b87da40f0777692b94cf1dd404ca03a17ead6aadccd14df0b1b2cbb1d424766a
+'http://security.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.3.3.tar.xz' apt_1.3.3.tar.xz 2035720 SHA256:bb097303e91b8e98c7ce1058e10a00f6cf7ebba6fe2cdadbc47e40b45d92050b
 ```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
