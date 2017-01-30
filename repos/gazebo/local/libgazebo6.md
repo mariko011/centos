@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:db4f0f321038b894243876bd5c92f1fc664f805c4b6a5b76c1b5443903944550`
-- Created: `2016-12-15T18:34:19.13798853Z`
+- Image ID: `sha256:362ebfe26b603f8b143cf2dab4daba0398a8f4af67dc836eaf4f942c35cb79aa`
+- Created: `2017-01-27T21:06:08.101714216Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
 - Command: `["gzserver"]`
@@ -70,11 +70,11 @@ $ apt-get source -qq --print-uris alsa-lib=1.0.27.2-3ubuntu7
 'http://archive.ubuntu.com/ubuntu/pool/main/a/alsa-lib/alsa-lib_1.0.27.2-3ubuntu7.debian.tar.gz' alsa-lib_1.0.27.2-3ubuntu7.debian.tar.gz 70078 SHA256:964c42fc0db244edf73a93e8cc2a1bc63d5150c9bcb49ad90bf46b9cebb6f0f8
 ```
 
-### `dpkg` source package: `apparmor=2.8.95~2430-0ubuntu5.3`
+### `dpkg` source package: `apparmor=2.10.95-0ubuntu2.5~14.04.1`
 
 Binary Packages:
 
-- `dh-apparmor=2.8.95~2430-0ubuntu5.3`
+- `dh-apparmor=2.10.95-0ubuntu2.5~14.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/dh-apparmor/copyright`)
 
@@ -83,10 +83,15 @@ Licenses: (parsed from: `/usr/share/doc/dh-apparmor/copyright`)
 - `GPL-2+`
 - `LGPL-2.1`
 - `LGPL-2.1+`
-- `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.5~14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.5~14.04.1.dsc' apparmor_2.10.95-0ubuntu2.5~14.04.1.dsc 3147 SHA256:a1aa805e766861273e4de3b42601193e41a5d38e0168964ae6cde1da408bbe8c
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.5~14.04.1.debian.tar.gz' apparmor_2.10.95-0ubuntu2.5~14.04.1.debian.tar.gz 182102 SHA256:2e6baa0d55b5f250534096032f5f87f781e97eb59547c6b3751f4d819ccec946
+```
 
 ### `dpkg` source package: `apt=1.0.1ubuntu2.17`
 
@@ -887,11 +892,11 @@ $ apt-get source -qq --print-uris db5.3=5.3.28-3ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-3ubuntu3.debian.tar.gz' db5.3_5.3.28-3ubuntu3.debian.tar.gz 31731 SHA256:5d95c5c9d64931463cbf5d525bd9e874ab985304a45e9b585dfe8218e2ead209
 ```
 
-### `dpkg` source package: `dbus=1.6.18-0ubuntu4.4`
+### `dpkg` source package: `dbus=1.6.18-0ubuntu4.5`
 
 Binary Packages:
 
-- `libdbus-1-3:amd64=1.6.18-0ubuntu4.4`
+- `libdbus-1-3:amd64=1.6.18-0ubuntu4.5`
 
 Licenses: (parsed from: `/usr/share/doc/libdbus-1-3/copyright`)
 
@@ -900,10 +905,10 @@ Licenses: (parsed from: `/usr/share/doc/libdbus-1-3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris dbus=1.6.18-0ubuntu4.4
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18-0ubuntu4.4.dsc' dbus_1.6.18-0ubuntu4.4.dsc 2671 SHA256:8984675882f3b45c0fbf7a838392782509495907c6833a12aabfdaa19ce8bc7b
+$ apt-get source -qq --print-uris dbus=1.6.18-0ubuntu4.5
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18-0ubuntu4.5.dsc' dbus_1.6.18-0ubuntu4.5.dsc 2671 SHA256:df376491c0c47b9a4a87c5164a5687db3913dd542164dac9bbb6966a91a9b79e
 'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18.orig.tar.gz' dbus_1.6.18.orig.tar.gz 1916553 SHA256:7085a0895a9eb11a952394cdbea6d8b4358e17cb991fed0e8fb85e2b9e686dcd
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18-0ubuntu4.4.debian.tar.gz' dbus_1.6.18-0ubuntu4.4.debian.tar.gz 82808 SHA256:eed67c2dd9ffd5c7a8f97e7365a38a840fc37747d1a5335829c7a595ca4710ad
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.6.18-0ubuntu4.5.debian.tar.gz' dbus_1.6.18-0ubuntu4.5.debian.tar.gz 85290 SHA256:d23474258a67b0a678e02259c85caa97d61d1730463295fb5b055b369ed2bf60
 ```
 
 ### `dpkg` source package: `debconf=1.5.51ubuntu2`
@@ -1346,15 +1351,15 @@ $ apt-get source -qq --print-uris fribidi=0.19.6-1
 'http://archive.ubuntu.com/ubuntu/pool/main/f/fribidi/fribidi_0.19.6-1.debian.tar.gz' fribidi_0.19.6-1.debian.tar.gz 7679 SHA256:a9e91880a3176b52d4e7cabf628e5df3820d8f07b0c2731761d74c04711ddf39
 ```
 
-### `dpkg` source package: `gazebo6=6.6.0-1~trusty`
+### `dpkg` source package: `gazebo6=6.7.0-1~trusty`
 
 Binary Packages:
 
-- `gazebo6=6.6.0-1~trusty`
-- `gazebo6-common=6.6.0-1~trusty`
-- `gazebo6-plugin-base=6.6.0-1~trusty`
-- `libgazebo6:amd64=6.6.0-1~trusty`
-- `libgazebo6-dev:amd64=6.6.0-1~trusty`
+- `gazebo6=6.7.0-1~trusty`
+- `gazebo6-common=6.7.0-1~trusty`
+- `gazebo6-plugin-base=6.7.0-1~trusty`
+- `libgazebo6:amd64=6.7.0-1~trusty`
+- `libgazebo6-dev:amd64=6.7.0-1~trusty`
 
 Licenses: (parsed from: `/usr/share/doc/gazebo6/copyright`, `/usr/share/doc/gazebo6-common/copyright`, `/usr/share/doc/gazebo6-plugin-base/copyright`, `/usr/share/doc/libgazebo6/copyright`, `/usr/share/doc/libgazebo6-dev/copyright`)
 
@@ -2114,12 +2119,12 @@ $ apt-get source -qq --print-uris ifupdown=0.7.47.2ubuntu4.4
 'http://archive.ubuntu.com/ubuntu/pool/main/i/ifupdown/ifupdown_0.7.47.2ubuntu4.4.tar.xz' ifupdown_0.7.47.2ubuntu4.4.tar.xz 92404 SHA256:90de068aaa673292ccf277f4cc6f49649d1f1f96b745632d2d5dbc71890e91a7
 ```
 
-### `dpkg` source package: `ignition-math2=2.6.0-1~trusty`
+### `dpkg` source package: `ignition-math2=2.7.0-1~trusty`
 
 Binary Packages:
 
-- `libignition-math2:amd64=2.6.0-1~trusty`
-- `libignition-math2-dev:amd64=2.6.0-1~trusty`
+- `libignition-math2:amd64=2.7.0-1~trusty`
+- `libignition-math2-dev:amd64=2.7.0-1~trusty`
 
 Licenses: (parsed from: `/usr/share/doc/libignition-math2/copyright`, `/usr/share/doc/libignition-math2-dev/copyright`)
 
@@ -2168,19 +2173,24 @@ $ apt-get source -qq --print-uris init-system-helpers=1.14ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.14ubuntu1.tar.xz' init-system-helpers_1.14ubuntu1.tar.xz 15436 SHA256:c9f7e8c0d1ee2cdfb12b7a82ffee5a5c90e3d70478591d28803e011e8053a252
 ```
 
-### `dpkg` source package: `initramfs-tools=0.103ubuntu4.4`
+### `dpkg` source package: `initramfs-tools=0.103ubuntu4.6`
 
 Binary Packages:
 
-- `initramfs-tools=0.103ubuntu4.4`
-- `initramfs-tools-bin=0.103ubuntu4.4`
+- `initramfs-tools=0.103ubuntu4.6`
+- `initramfs-tools-bin=0.103ubuntu4.6`
 
 Licenses: (parsed from: `/usr/share/doc/initramfs-tools/copyright`, `/usr/share/doc/initramfs-tools-bin/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris initramfs-tools=0.103ubuntu4.6
+'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.6.dsc' initramfs-tools_0.103ubuntu4.6.dsc 1218 SHA256:d6a2a6d5e40de66b18eccf05eb2961acf6269187205b2cfb339663e58cd201eb
+'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.6.tar.xz' initramfs-tools_0.103ubuntu4.6.tar.xz 94364 SHA256:20056eb1d0838eacd7c6d655cd4c234a6e8f4c7347d275fdddaec11f36b22751
+```
 
 ### `dpkg` source package: `insserv=1.14.0-5ubuntu2`
 
@@ -2460,21 +2470,21 @@ $ apt-get source -qq --print-uris kmod=15-0ubuntu6
 'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_15-0ubuntu6.debian.tar.gz' kmod_15-0ubuntu6.debian.tar.gz 14348 SHA256:5cbd3db804ae4b6ef3868ff344c23cad67d51938d8cefa42114d8d3a0bb78159
 ```
 
-### `dpkg` source package: `krb5=1.12+dfsg-2ubuntu5.2`
+### `dpkg` source package: `krb5=1.12+dfsg-2ubuntu5.3`
 
 Binary Packages:
 
-- `krb5-locales=1.12+dfsg-2ubuntu5.2`
-- `krb5-multidev=1.12+dfsg-2ubuntu5.2`
-- `libgssapi-krb5-2:amd64=1.12+dfsg-2ubuntu5.2`
-- `libgssrpc4:amd64=1.12+dfsg-2ubuntu5.2`
-- `libk5crypto3:amd64=1.12+dfsg-2ubuntu5.2`
-- `libkadm5clnt-mit9:amd64=1.12+dfsg-2ubuntu5.2`
-- `libkadm5srv-mit9:amd64=1.12+dfsg-2ubuntu5.2`
-- `libkdb5-7:amd64=1.12+dfsg-2ubuntu5.2`
-- `libkrb5-3:amd64=1.12+dfsg-2ubuntu5.2`
-- `libkrb5-dev=1.12+dfsg-2ubuntu5.2`
-- `libkrb5support0:amd64=1.12+dfsg-2ubuntu5.2`
+- `krb5-locales=1.12+dfsg-2ubuntu5.3`
+- `krb5-multidev=1.12+dfsg-2ubuntu5.3`
+- `libgssapi-krb5-2:amd64=1.12+dfsg-2ubuntu5.3`
+- `libgssrpc4:amd64=1.12+dfsg-2ubuntu5.3`
+- `libk5crypto3:amd64=1.12+dfsg-2ubuntu5.3`
+- `libkadm5clnt-mit9:amd64=1.12+dfsg-2ubuntu5.3`
+- `libkadm5srv-mit9:amd64=1.12+dfsg-2ubuntu5.3`
+- `libkdb5-7:amd64=1.12+dfsg-2ubuntu5.3`
+- `libkrb5-3:amd64=1.12+dfsg-2ubuntu5.3`
+- `libkrb5-dev=1.12+dfsg-2ubuntu5.3`
+- `libkrb5support0:amd64=1.12+dfsg-2ubuntu5.3`
 
 Licenses: (parsed from: `/usr/share/doc/krb5-locales/copyright`, `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libgssrpc4/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkadm5clnt-mit9/copyright`, `/usr/share/doc/libkadm5srv-mit9/copyright`, `/usr/share/doc/libkdb5-7/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5-dev/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -2483,10 +2493,10 @@ Licenses: (parsed from: `/usr/share/doc/krb5-locales/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.12+dfsg-2ubuntu5.2
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg-2ubuntu5.2.dsc' krb5_1.12+dfsg-2ubuntu5.2.dsc 3285 SHA256:b4d6a90bb6be7aec5575a2514bcaa1571e507dda3c1bcb902d5abd2331cb5c39
+$ apt-get source -qq --print-uris krb5=1.12+dfsg-2ubuntu5.3
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg-2ubuntu5.3.dsc' krb5_1.12+dfsg-2ubuntu5.3.dsc 3506 SHA256:bc6026c5c2f207f6212cb2361738ca657bed39fa228fe90ac494658f7c5d1a48
 'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg.orig.tar.gz' krb5_1.12+dfsg.orig.tar.gz 11704009 SHA256:8ff375113692946790aea5b246b14609c1d21e9017c920ab129452415dc69dfa
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg-2ubuntu5.2.debian.tar.gz' krb5_1.12+dfsg-2ubuntu5.2.debian.tar.gz 138520 SHA256:90180cfcf570400345f7b3a6e1e07fc772ee02fc6338febe78c9363da55a22eb
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg-2ubuntu5.3.debian.tar.xz' krb5_1.12+dfsg-2ubuntu5.3.debian.tar.xz 113208 SHA256:b1448e6b85d1388fa78278bd0e50d780f0c3da6fbcffb026bf7364c3282e5faa
 ```
 
 ### `dpkg` source package: `lame=3.99.5+repack1-3ubuntu1`
@@ -4460,18 +4470,24 @@ $ apt-get source -qq --print-uris libxxf86vm=1:1.1.3-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxxf86vm/libxxf86vm_1.1.3-1.diff.gz' libxxf86vm_1.1.3-1.diff.gz 5115 SHA256:5b51cc770666430c2c40e9a58395c72d7591f81bc5e7fd494397bbaf794b38e2
 ```
 
-### `dpkg` source package: `linux=3.13.0-105.152`
+### `dpkg` source package: `linux=3.13.0-107.154`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-105.152`
+- `linux-libc-dev:amd64=3.13.0-107.154`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.13.0-107.154
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-107.154.dsc' linux_3.13.0-107.154.dsc 8125 SHA256:c5faff7993753ffb0dae3954b96f50ba2a9d1484136635d5dafdcb9a86be9a06
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-107.154.diff.gz' linux_3.13.0-107.154.diff.gz 9456513 SHA256:6dfc5516d37e099b0ac1aa9cc47ea8ce5452628b390c9a139219aca35e017601
+```
 
 ### `dpkg` source package: `llvm-toolchain-3.4=1:3.4-1ubuntu3`
 
@@ -4834,13 +4850,13 @@ $ apt-get source -qq --print-uris mpi-defaults=1.0.2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/universe/m/mpi-defaults/mpi-defaults_1.0.2ubuntu1.tar.gz' mpi-defaults_1.0.2ubuntu1.tar.gz 3648 SHA256:9217770e757a716021d24391b24b796bb5e4d7b0a7235a5d8c06acbe9e46106c
 ```
 
-### `dpkg` source package: `mysql-5.5=5.5.53-0ubuntu0.14.04.1`
+### `dpkg` source package: `mysql-5.5=5.5.54-0ubuntu0.14.04.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.5.53-0ubuntu0.14.04.1`
-- `libmysqlclient18:amd64=5.5.53-0ubuntu0.14.04.1`
-- `mysql-common=5.5.53-0ubuntu0.14.04.1`
+- `libmysqlclient-dev=5.5.54-0ubuntu0.14.04.1`
+- `libmysqlclient18:amd64=5.5.54-0ubuntu0.14.04.1`
+- `mysql-common=5.5.54-0ubuntu0.14.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -4858,8 +4874,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.5=5.5.54-0ubuntu0.14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.54-0ubuntu0.14.04.1.dsc' mysql-5.5_5.5.54-0ubuntu0.14.04.1.dsc 3173 SHA256:bbcd3d13158c1163807ad6989d78eed78af1dc481fcbcf3446ac1943a9a4265d
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.54.orig.tar.gz' mysql-5.5_5.5.54.orig.tar.gz 21041949 SHA256:273bcbcf8cc84061eb07c359308563b2029eb3f70f78b558905bc1b5c5791ab8
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.54-0ubuntu0.14.04.1.debian.tar.gz' mysql-5.5_5.5.54-0ubuntu0.14.04.1.debian.tar.gz 315013 SHA256:c20833e303e566cccbfed4e292d7eda1cf6a7e27e7da327ad40ffae9819da449
+```
 
 ### `dpkg` source package: `nas=1.9.4-1`
 
@@ -6101,11 +6123,11 @@ Licenses: (parsed from: `/usr/share/doc/libsdformat3/copyright`, `/usr/share/doc
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `sdformat4=4.2.0-1~trusty`
+### `dpkg` source package: `sdformat5=5.0.0-1~trusty`
 
 Binary Packages:
 
-- `sdformat-sdf=4.2.0-1~trusty`
+- `sdformat-sdf=5.0.0-1~trusty`
 
 Licenses: (parsed from: `/usr/share/doc/sdformat-sdf/copyright`)
 
@@ -6660,34 +6682,22 @@ $ apt-get source -qq --print-uris ustr=1.0.4-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ustr/ustr_1.0.4-3ubuntu2.diff.gz' ustr_1.0.4-3ubuntu2.diff.gz 12803 SHA256:4f9eebe7babea9f1131a97cd40368f4b387d44ddd1bb7dc669103a84a6e6d252
 ```
 
-### `dpkg` source package: `util-linux=2.20.1-5.1ubuntu20.7`
-
-Binary Packages:
-
-- `bsdutils=1:2.20.1-5.1ubuntu20.7`
-- `libblkid1:amd64=2.20.1-5.1ubuntu20.7`
-- `libmount1:amd64=2.20.1-5.1ubuntu20.7`
-- `mount=2.20.1-5.1ubuntu20.7`
-- `util-linux=2.20.1-5.1ubuntu20.7`
-
-Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
-
-- `GPL`
-- `LGPL`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
-
-
 ### `dpkg` source package: `util-linux=2.20.1-5.1ubuntu20.9`
 
 Binary Packages:
 
+- `bsdutils=1:2.20.1-5.1ubuntu20.9`
+- `libblkid1:amd64=2.20.1-5.1ubuntu20.9`
+- `libmount1:amd64=2.20.1-5.1ubuntu20.9`
 - `libuuid1:amd64=2.20.1-5.1ubuntu20.9`
+- `mount=2.20.1-5.1ubuntu20.9`
+- `util-linux=2.20.1-5.1ubuntu20.9`
 - `uuid-dev=2.20.1-5.1ubuntu20.9`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/uuid-dev/copyright`)
 
+- `GPL`
+- `LGPL`
 
 Source:
 
