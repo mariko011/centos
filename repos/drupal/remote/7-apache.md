@@ -1,7 +1,7 @@
 ## `drupal:7-apache`
 
 ```console
-$ docker pull drupal@sha256:3befb124068fa0e460ef83e707c8bd398b73f1e56b338e5d73fcdcc5195984c2
+$ docker pull drupal@sha256:8fad12876ab8027f159694c3e18bc7a6062366b71acbf8555ddcdc8d7f670925
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull drupal@sha256:3befb124068fa0e460ef83e707c8bd398b73f1e56b338e5d73fc
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **168.0 MB (168032227 bytes)**  
+-	Total Size: **169.7 MB (169688327 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:30d566978609ea09dbfb94f28dd2d915a7efa85e1df82e61f89af887c65564fd`
+-	Image ID: `sha256:4b58821e76b5f06d323cab63931b46b3701260dd1f9d4c4add80ccf8ae1db7b3`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -72,25 +72,25 @@ RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		lib
 COPY multi:2b7e23dbf0e975ef1ec1f186511e2789ab94e8c8734ca9fa8419c893f7357d6c in /usr/local/bin/ 
 # Tue, 24 Jan 2017 19:03:01 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 24 Jan 2017 19:03:01 GMT
-COPY file:3014772111b66da3129ca8caeafdd1dcfa9a3bf518f015ae9acc3c7b9b1b44c9 in /usr/local/bin/ 
-# Tue, 24 Jan 2017 19:03:02 GMT
+# Fri, 27 Jan 2017 23:15:14 GMT
+COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
+# Fri, 27 Jan 2017 23:15:15 GMT
 WORKDIR /var/www/html
-# Tue, 24 Jan 2017 19:03:02 GMT
+# Fri, 27 Jan 2017 23:15:15 GMT
 EXPOSE 80/tcp
-# Tue, 24 Jan 2017 19:03:03 GMT
+# Fri, 27 Jan 2017 23:15:16 GMT
 CMD ["apache2-foreground"]
-# Tue, 24 Jan 2017 21:09:17 GMT
+# Mon, 30 Jan 2017 15:04:50 GMT
 RUN a2enmod rewrite
-# Tue, 24 Jan 2017 21:10:26 GMT
+# Mon, 30 Jan 2017 15:06:01 GMT
 RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip
-# Tue, 24 Jan 2017 21:10:27 GMT
+# Mon, 30 Jan 2017 15:06:02 GMT
 WORKDIR /var/www/html
-# Tue, 24 Jan 2017 21:10:27 GMT
+# Mon, 30 Jan 2017 15:06:02 GMT
 ENV DRUPAL_VERSION=7.53
-# Tue, 24 Jan 2017 21:10:28 GMT
+# Mon, 30 Jan 2017 15:06:03 GMT
 ENV DRUPAL_MD5=4230279ecca4f0cde652a219e10327e7
-# Tue, 24 Jan 2017 21:10:30 GMT
+# Mon, 30 Jan 2017 15:06:04 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
@@ -143,19 +143,19 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Tue, 24 Jan 2017 19:53:02 GMT  
 		Size: 2.0 KB (2023 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3b99fa36e8f92abbf66a7fdd89665d86459e1b40813a8be5b265db645db970c`  
-		Last Modified: Tue, 24 Jan 2017 19:53:01 GMT  
-		Size: 582.0 B  
+	-	`sha256:a15b0aba9c25409c38480927194ba0e61fe47ed6fa522fa2a76c0df8ba43fa69`  
+		Last Modified: Fri, 27 Jan 2017 23:25:06 GMT  
+		Size: 882.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f17a622228bf21bab6a01643513060e2ce9eacc74f4f0c07330e2c8acaa09a3`  
-		Last Modified: Tue, 24 Jan 2017 21:15:01 GMT  
-		Size: 294.0 B  
+	-	`sha256:af3a8f31ee5b862651fe7f1119aa8aeb6f68defaad2da8d0b1a18a823427b493`  
+		Last Modified: Mon, 30 Jan 2017 15:07:54 GMT  
+		Size: 293.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a9ad9c207311065839cef7ee3893be09cc654857ddfd2d193cd7d53be241952b`  
-		Last Modified: Tue, 24 Jan 2017 21:15:03 GMT  
-		Size: 6.9 MB (6910369 bytes)  
+	-	`sha256:c9a5a25313eaef2310c9bdf4681e458b46cda363d612807b81be7619badbd712`  
+		Last Modified: Mon, 30 Jan 2017 15:07:57 GMT  
+		Size: 8.6 MB (8566170 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:841997cf5ebfe766788a59ce130605bb2cb3db165711e0097251db825e474d26`  
-		Last Modified: Tue, 24 Jan 2017 21:15:02 GMT  
+	-	`sha256:b0fa43d1655d098c2736ef9c74a1f42278cc9e14f1d57f4b0e209f21988f7a98`  
+		Last Modified: Mon, 30 Jan 2017 15:07:55 GMT  
 		Size: 3.3 MB (3288210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
