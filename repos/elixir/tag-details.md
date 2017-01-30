@@ -2,10 +2,10 @@
 
 # Tags of `elixir`
 
--	[`elixir:1.4.0`](#elixir140)
+-	[`elixir:1.4.1`](#elixir141)
 -	[`elixir:1.4`](#elixir14)
 -	[`elixir:latest`](#elixirlatest)
--	[`elixir:1.4.0-slim`](#elixir140-slim)
+-	[`elixir:1.4.1-slim`](#elixir141-slim)
 -	[`elixir:1.4-slim`](#elixir14-slim)
 -	[`elixir:slim`](#elixirslim)
 -	[`elixir:1.3.4`](#elixir134)
@@ -17,22 +17,22 @@
 -	[`elixir:1.2.6-slim`](#elixir126-slim)
 -	[`elixir:1.2-slim`](#elixir12-slim)
 
-## `elixir:1.4.0`
+## `elixir:1.4.1`
 
 ```console
-$ docker pull elixir@sha256:970c2bc4cb9de5c4d40168b70ab5b7964a8c37fd28f7ab530601b3bbf3557f2f
+$ docker pull elixir@sha256:b5d9d2d5b0f29f1b92d8dabb104949c270b26962e9119f718c8e91a8b657fa02
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `elixir:1.4.0` - linux; amd64
+### `elixir:1.4.1` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **329.3 MB (329313218 bytes)**  
+-	Total Size: **329.3 MB (329309479 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9bd946f26f42723b1fbdf8c37e847f1e03613469702d3c8bccd1d366e46fd487`
+-	Image ID: `sha256:dba48fb069d31d606d097789a20c0301f652f4a31cf09906bf04bc6be95f1084`
 -	Default Command: `["iex"]`
 
 ```dockerfile
@@ -60,11 +60,11 @@ RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REB
 ENV REBAR3_VERSION=3.3.3
 # Tue, 17 Jan 2017 22:03:29 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fd8ac211287e2b30249275720aa8d1a4e955c851b6e1f4de17024cbb0eec6f6d" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
-# Wed, 18 Jan 2017 03:33:41 GMT
-ENV ELIXIR_VERSION=v1.4.0 LANG=C.UTF-8
-# Wed, 18 Jan 2017 03:33:51 GMT
-RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/releases/download/${ELIXIR_VERSION}/Precompiled.zip" 	&& ELIXIR_DOWNLOAD_SHA256="60d077bc242e65f4f430beb43c968b5632dfb07ec89a7d689da254ffdc791b98"	&& buildDeps=' 		unzip 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-precompiled.zip $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256 elixir-precompiled.zip" | sha256sum -c - 	&& unzip -d /usr/local elixir-precompiled.zip 	&& rm elixir-precompiled.zip 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 18 Jan 2017 03:33:51 GMT
+# Mon, 30 Jan 2017 17:30:38 GMT
+ENV ELIXIR_VERSION=v1.4.1 LANG=C.UTF-8
+# Mon, 30 Jan 2017 17:30:53 GMT
+RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/releases/download/${ELIXIR_VERSION}/Precompiled.zip" 	&& ELIXIR_DOWNLOAD_SHA256="c057da76e0fed7097cce468eb6e22993901f888ca32af363ac542c11a674d805"	&& buildDeps=' 		unzip 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-precompiled.zip $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256 elixir-precompiled.zip" | sha256sum -c - 	&& unzip -d /usr/local elixir-precompiled.zip 	&& rm elixir-precompiled.zip 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/*
+# Mon, 30 Jan 2017 17:30:54 GMT
 CMD ["iex"]
 ```
 
@@ -97,15 +97,15 @@ CMD ["iex"]
 		Last Modified: Wed, 18 Jan 2017 03:33:32 GMT  
 		Size: 2.0 MB (2031073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27dd1bcb54f0ffe596db6aed4743cbb9a91b54005d774ee9a7e6972a8d1edd24`  
-		Last Modified: Wed, 18 Jan 2017 08:20:27 GMT  
-		Size: 3.7 MB (3716500 bytes)  
+	-	`sha256:7b587227575d704f7f4076c382c2543515ae5a134a92b67b9c4e5395a8ebe188`  
+		Last Modified: Mon, 30 Jan 2017 17:31:28 GMT  
+		Size: 3.7 MB (3712761 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elixir:1.4`
 
 ```console
-$ docker pull elixir@sha256:970c2bc4cb9de5c4d40168b70ab5b7964a8c37fd28f7ab530601b3bbf3557f2f
+$ docker pull elixir@sha256:b5d9d2d5b0f29f1b92d8dabb104949c270b26962e9119f718c8e91a8b657fa02
 ```
 
 -	Platforms:
@@ -115,9 +115,9 @@ $ docker pull elixir@sha256:970c2bc4cb9de5c4d40168b70ab5b7964a8c37fd28f7ab530601
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **329.3 MB (329313218 bytes)**  
+-	Total Size: **329.3 MB (329309479 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9bd946f26f42723b1fbdf8c37e847f1e03613469702d3c8bccd1d366e46fd487`
+-	Image ID: `sha256:dba48fb069d31d606d097789a20c0301f652f4a31cf09906bf04bc6be95f1084`
 -	Default Command: `["iex"]`
 
 ```dockerfile
@@ -145,11 +145,11 @@ RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REB
 ENV REBAR3_VERSION=3.3.3
 # Tue, 17 Jan 2017 22:03:29 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fd8ac211287e2b30249275720aa8d1a4e955c851b6e1f4de17024cbb0eec6f6d" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
-# Wed, 18 Jan 2017 03:33:41 GMT
-ENV ELIXIR_VERSION=v1.4.0 LANG=C.UTF-8
-# Wed, 18 Jan 2017 03:33:51 GMT
-RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/releases/download/${ELIXIR_VERSION}/Precompiled.zip" 	&& ELIXIR_DOWNLOAD_SHA256="60d077bc242e65f4f430beb43c968b5632dfb07ec89a7d689da254ffdc791b98"	&& buildDeps=' 		unzip 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-precompiled.zip $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256 elixir-precompiled.zip" | sha256sum -c - 	&& unzip -d /usr/local elixir-precompiled.zip 	&& rm elixir-precompiled.zip 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 18 Jan 2017 03:33:51 GMT
+# Mon, 30 Jan 2017 17:30:38 GMT
+ENV ELIXIR_VERSION=v1.4.1 LANG=C.UTF-8
+# Mon, 30 Jan 2017 17:30:53 GMT
+RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/releases/download/${ELIXIR_VERSION}/Precompiled.zip" 	&& ELIXIR_DOWNLOAD_SHA256="c057da76e0fed7097cce468eb6e22993901f888ca32af363ac542c11a674d805"	&& buildDeps=' 		unzip 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-precompiled.zip $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256 elixir-precompiled.zip" | sha256sum -c - 	&& unzip -d /usr/local elixir-precompiled.zip 	&& rm elixir-precompiled.zip 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/*
+# Mon, 30 Jan 2017 17:30:54 GMT
 CMD ["iex"]
 ```
 
@@ -182,15 +182,15 @@ CMD ["iex"]
 		Last Modified: Wed, 18 Jan 2017 03:33:32 GMT  
 		Size: 2.0 MB (2031073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27dd1bcb54f0ffe596db6aed4743cbb9a91b54005d774ee9a7e6972a8d1edd24`  
-		Last Modified: Wed, 18 Jan 2017 08:20:27 GMT  
-		Size: 3.7 MB (3716500 bytes)  
+	-	`sha256:7b587227575d704f7f4076c382c2543515ae5a134a92b67b9c4e5395a8ebe188`  
+		Last Modified: Mon, 30 Jan 2017 17:31:28 GMT  
+		Size: 3.7 MB (3712761 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elixir:latest`
 
 ```console
-$ docker pull elixir@sha256:970c2bc4cb9de5c4d40168b70ab5b7964a8c37fd28f7ab530601b3bbf3557f2f
+$ docker pull elixir@sha256:b5d9d2d5b0f29f1b92d8dabb104949c270b26962e9119f718c8e91a8b657fa02
 ```
 
 -	Platforms:
@@ -200,9 +200,9 @@ $ docker pull elixir@sha256:970c2bc4cb9de5c4d40168b70ab5b7964a8c37fd28f7ab530601
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **329.3 MB (329313218 bytes)**  
+-	Total Size: **329.3 MB (329309479 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9bd946f26f42723b1fbdf8c37e847f1e03613469702d3c8bccd1d366e46fd487`
+-	Image ID: `sha256:dba48fb069d31d606d097789a20c0301f652f4a31cf09906bf04bc6be95f1084`
 -	Default Command: `["iex"]`
 
 ```dockerfile
@@ -230,11 +230,11 @@ RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REB
 ENV REBAR3_VERSION=3.3.3
 # Tue, 17 Jan 2017 22:03:29 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="fd8ac211287e2b30249275720aa8d1a4e955c851b6e1f4de17024cbb0eec6f6d" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src
-# Wed, 18 Jan 2017 03:33:41 GMT
-ENV ELIXIR_VERSION=v1.4.0 LANG=C.UTF-8
-# Wed, 18 Jan 2017 03:33:51 GMT
-RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/releases/download/${ELIXIR_VERSION}/Precompiled.zip" 	&& ELIXIR_DOWNLOAD_SHA256="60d077bc242e65f4f430beb43c968b5632dfb07ec89a7d689da254ffdc791b98"	&& buildDeps=' 		unzip 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-precompiled.zip $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256 elixir-precompiled.zip" | sha256sum -c - 	&& unzip -d /usr/local elixir-precompiled.zip 	&& rm elixir-precompiled.zip 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 18 Jan 2017 03:33:51 GMT
+# Mon, 30 Jan 2017 17:30:38 GMT
+ENV ELIXIR_VERSION=v1.4.1 LANG=C.UTF-8
+# Mon, 30 Jan 2017 17:30:53 GMT
+RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/releases/download/${ELIXIR_VERSION}/Precompiled.zip" 	&& ELIXIR_DOWNLOAD_SHA256="c057da76e0fed7097cce468eb6e22993901f888ca32af363ac542c11a674d805"	&& buildDeps=' 		unzip 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-precompiled.zip $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256 elixir-precompiled.zip" | sha256sum -c - 	&& unzip -d /usr/local elixir-precompiled.zip 	&& rm elixir-precompiled.zip 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/*
+# Mon, 30 Jan 2017 17:30:54 GMT
 CMD ["iex"]
 ```
 
@@ -267,27 +267,27 @@ CMD ["iex"]
 		Last Modified: Wed, 18 Jan 2017 03:33:32 GMT  
 		Size: 2.0 MB (2031073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27dd1bcb54f0ffe596db6aed4743cbb9a91b54005d774ee9a7e6972a8d1edd24`  
-		Last Modified: Wed, 18 Jan 2017 08:20:27 GMT  
-		Size: 3.7 MB (3716500 bytes)  
+	-	`sha256:7b587227575d704f7f4076c382c2543515ae5a134a92b67b9c4e5395a8ebe188`  
+		Last Modified: Mon, 30 Jan 2017 17:31:28 GMT  
+		Size: 3.7 MB (3712761 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `elixir:1.4.0-slim`
+## `elixir:1.4.1-slim`
 
 ```console
-$ docker pull elixir@sha256:08db98a823336ca3dee397b2aa9bc6217fb96a5c23c7cf9b915974d168eb3079
+$ docker pull elixir@sha256:5ea0a5963e1beafa4c833f0c4713cdbef2b59b8e52fe8c34afcce6cbfc06c92c
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `elixir:1.4.0-slim` - linux; amd64
+### `elixir:1.4.1-slim` - linux; amd64
 
--	Docker Version: 1.12.3
+-	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.8 MB (156763510 bytes)**  
+-	Total Size: **156.8 MB (156760539 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1dbe1b1f2f5c9cce7b724da8f277066a758a99381f0f89d27231f7ddff341789`
+-	Image ID: `sha256:90e8e2fe49afc653d1347a75556e20dc71ccf9eec3d9f2d39d47126fb17b29a6`
 -	Default Command: `["iex"]`
 
 ```dockerfile
@@ -301,11 +301,11 @@ ENV OTP_VERSION=19.2
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="c6adbc82a45baa49bf9f5b524089da480dd27113c51b3d147aeb196fdb90516b" 	&& runtimeDeps=' 		libodbc1 		libssl1.0.0 		libsctp1 		libwxgtk3.0-0 	' 	&& buildDeps=' 		curl 		ca-certificates 		autoconf 		gcc 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 		libwxgtk3.0-dev 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& ./configure 		--enable-sctp 		--enable-dirty-schedulers 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
 # Tue, 17 Jan 2017 00:39:52 GMT
 CMD ["erl"]
-# Tue, 17 Jan 2017 21:40:29 GMT
-ENV ELIXIR_VERSION=v1.4.0 LANG=C.UTF-8
-# Tue, 17 Jan 2017 21:40:44 GMT
-RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/releases/download/${ELIXIR_VERSION}/Precompiled.zip" 	&& ELIXIR_DOWNLOAD_SHA256="60d077bc242e65f4f430beb43c968b5632dfb07ec89a7d689da254ffdc791b98"	&& buildDeps=' 		ca-certificates 		curl 		unzip 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-precompiled.zip $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256 elixir-precompiled.zip" | sha256sum -c - 	&& unzip -d /usr/local elixir-precompiled.zip 	&& rm elixir-precompiled.zip 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 17 Jan 2017 21:40:45 GMT
+# Mon, 30 Jan 2017 17:30:54 GMT
+ENV ELIXIR_VERSION=v1.4.1 LANG=C.UTF-8
+# Mon, 30 Jan 2017 17:31:09 GMT
+RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/releases/download/${ELIXIR_VERSION}/Precompiled.zip" 	&& ELIXIR_DOWNLOAD_SHA256="c057da76e0fed7097cce468eb6e22993901f888ca32af363ac542c11a674d805"	&& buildDeps=' 		ca-certificates 		curl 		unzip 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-precompiled.zip $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256 elixir-precompiled.zip" | sha256sum -c - 	&& unzip -d /usr/local elixir-precompiled.zip 	&& rm elixir-precompiled.zip 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/*
+# Mon, 30 Jan 2017 17:31:09 GMT
 CMD ["iex"]
 ```
 
@@ -318,15 +318,15 @@ CMD ["iex"]
 		Last Modified: Wed, 18 Jan 2017 03:35:22 GMT  
 		Size: 101.4 MB (101351068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a99aaa8fff23a032afcbfd1197158a68d79379ce4f35e78b9089cdc0c963ea6a`  
-		Last Modified: Wed, 18 Jan 2017 08:21:16 GMT  
-		Size: 4.1 MB (4051232 bytes)  
+	-	`sha256:091153439d9ebb69bbd0e87256a6d31096edeb8371f2efe4a369b46ab10a1c73`  
+		Last Modified: Mon, 30 Jan 2017 17:32:19 GMT  
+		Size: 4.0 MB (4048261 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elixir:1.4-slim`
 
 ```console
-$ docker pull elixir@sha256:08db98a823336ca3dee397b2aa9bc6217fb96a5c23c7cf9b915974d168eb3079
+$ docker pull elixir@sha256:5ea0a5963e1beafa4c833f0c4713cdbef2b59b8e52fe8c34afcce6cbfc06c92c
 ```
 
 -	Platforms:
@@ -334,11 +334,11 @@ $ docker pull elixir@sha256:08db98a823336ca3dee397b2aa9bc6217fb96a5c23c7cf9b9159
 
 ### `elixir:1.4-slim` - linux; amd64
 
--	Docker Version: 1.12.3
+-	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.8 MB (156763510 bytes)**  
+-	Total Size: **156.8 MB (156760539 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1dbe1b1f2f5c9cce7b724da8f277066a758a99381f0f89d27231f7ddff341789`
+-	Image ID: `sha256:90e8e2fe49afc653d1347a75556e20dc71ccf9eec3d9f2d39d47126fb17b29a6`
 -	Default Command: `["iex"]`
 
 ```dockerfile
@@ -352,11 +352,11 @@ ENV OTP_VERSION=19.2
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="c6adbc82a45baa49bf9f5b524089da480dd27113c51b3d147aeb196fdb90516b" 	&& runtimeDeps=' 		libodbc1 		libssl1.0.0 		libsctp1 		libwxgtk3.0-0 	' 	&& buildDeps=' 		curl 		ca-certificates 		autoconf 		gcc 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 		libwxgtk3.0-dev 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& ./configure 		--enable-sctp 		--enable-dirty-schedulers 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
 # Tue, 17 Jan 2017 00:39:52 GMT
 CMD ["erl"]
-# Tue, 17 Jan 2017 21:40:29 GMT
-ENV ELIXIR_VERSION=v1.4.0 LANG=C.UTF-8
-# Tue, 17 Jan 2017 21:40:44 GMT
-RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/releases/download/${ELIXIR_VERSION}/Precompiled.zip" 	&& ELIXIR_DOWNLOAD_SHA256="60d077bc242e65f4f430beb43c968b5632dfb07ec89a7d689da254ffdc791b98"	&& buildDeps=' 		ca-certificates 		curl 		unzip 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-precompiled.zip $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256 elixir-precompiled.zip" | sha256sum -c - 	&& unzip -d /usr/local elixir-precompiled.zip 	&& rm elixir-precompiled.zip 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 17 Jan 2017 21:40:45 GMT
+# Mon, 30 Jan 2017 17:30:54 GMT
+ENV ELIXIR_VERSION=v1.4.1 LANG=C.UTF-8
+# Mon, 30 Jan 2017 17:31:09 GMT
+RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/releases/download/${ELIXIR_VERSION}/Precompiled.zip" 	&& ELIXIR_DOWNLOAD_SHA256="c057da76e0fed7097cce468eb6e22993901f888ca32af363ac542c11a674d805"	&& buildDeps=' 		ca-certificates 		curl 		unzip 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-precompiled.zip $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256 elixir-precompiled.zip" | sha256sum -c - 	&& unzip -d /usr/local elixir-precompiled.zip 	&& rm elixir-precompiled.zip 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/*
+# Mon, 30 Jan 2017 17:31:09 GMT
 CMD ["iex"]
 ```
 
@@ -369,15 +369,15 @@ CMD ["iex"]
 		Last Modified: Wed, 18 Jan 2017 03:35:22 GMT  
 		Size: 101.4 MB (101351068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a99aaa8fff23a032afcbfd1197158a68d79379ce4f35e78b9089cdc0c963ea6a`  
-		Last Modified: Wed, 18 Jan 2017 08:21:16 GMT  
-		Size: 4.1 MB (4051232 bytes)  
+	-	`sha256:091153439d9ebb69bbd0e87256a6d31096edeb8371f2efe4a369b46ab10a1c73`  
+		Last Modified: Mon, 30 Jan 2017 17:32:19 GMT  
+		Size: 4.0 MB (4048261 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elixir:slim`
 
 ```console
-$ docker pull elixir@sha256:08db98a823336ca3dee397b2aa9bc6217fb96a5c23c7cf9b915974d168eb3079
+$ docker pull elixir@sha256:5ea0a5963e1beafa4c833f0c4713cdbef2b59b8e52fe8c34afcce6cbfc06c92c
 ```
 
 -	Platforms:
@@ -385,11 +385,11 @@ $ docker pull elixir@sha256:08db98a823336ca3dee397b2aa9bc6217fb96a5c23c7cf9b9159
 
 ### `elixir:slim` - linux; amd64
 
--	Docker Version: 1.12.3
+-	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.8 MB (156763510 bytes)**  
+-	Total Size: **156.8 MB (156760539 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1dbe1b1f2f5c9cce7b724da8f277066a758a99381f0f89d27231f7ddff341789`
+-	Image ID: `sha256:90e8e2fe49afc653d1347a75556e20dc71ccf9eec3d9f2d39d47126fb17b29a6`
 -	Default Command: `["iex"]`
 
 ```dockerfile
@@ -403,11 +403,11 @@ ENV OTP_VERSION=19.2
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="c6adbc82a45baa49bf9f5b524089da480dd27113c51b3d147aeb196fdb90516b" 	&& runtimeDeps=' 		libodbc1 		libssl1.0.0 		libsctp1 		libwxgtk3.0-0 	' 	&& buildDeps=' 		curl 		ca-certificates 		autoconf 		gcc 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 		libwxgtk3.0-dev 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256 otp-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/otp-src 	&& tar -xzf otp-src.tar.gz -C /usr/src/otp-src --strip-components=1 	&& rm otp-src.tar.gz 	&& cd /usr/src/otp-src 	&& ./otp_build autoconf 	&& ./configure 		--enable-sctp 		--enable-dirty-schedulers 	&& make -j$(nproc) 	&& make install 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/otp-src /var/lib/apt/lists/*
 # Tue, 17 Jan 2017 00:39:52 GMT
 CMD ["erl"]
-# Tue, 17 Jan 2017 21:40:29 GMT
-ENV ELIXIR_VERSION=v1.4.0 LANG=C.UTF-8
-# Tue, 17 Jan 2017 21:40:44 GMT
-RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/releases/download/${ELIXIR_VERSION}/Precompiled.zip" 	&& ELIXIR_DOWNLOAD_SHA256="60d077bc242e65f4f430beb43c968b5632dfb07ec89a7d689da254ffdc791b98"	&& buildDeps=' 		ca-certificates 		curl 		unzip 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-precompiled.zip $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256 elixir-precompiled.zip" | sha256sum -c - 	&& unzip -d /usr/local elixir-precompiled.zip 	&& rm elixir-precompiled.zip 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 17 Jan 2017 21:40:45 GMT
+# Mon, 30 Jan 2017 17:30:54 GMT
+ENV ELIXIR_VERSION=v1.4.1 LANG=C.UTF-8
+# Mon, 30 Jan 2017 17:31:09 GMT
+RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/releases/download/${ELIXIR_VERSION}/Precompiled.zip" 	&& ELIXIR_DOWNLOAD_SHA256="c057da76e0fed7097cce468eb6e22993901f888ca32af363ac542c11a674d805"	&& buildDeps=' 		ca-certificates 		curl 		unzip 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-precompiled.zip $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256 elixir-precompiled.zip" | sha256sum -c - 	&& unzip -d /usr/local elixir-precompiled.zip 	&& rm elixir-precompiled.zip 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/*
+# Mon, 30 Jan 2017 17:31:09 GMT
 CMD ["iex"]
 ```
 
@@ -420,9 +420,9 @@ CMD ["iex"]
 		Last Modified: Wed, 18 Jan 2017 03:35:22 GMT  
 		Size: 101.4 MB (101351068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a99aaa8fff23a032afcbfd1197158a68d79379ce4f35e78b9089cdc0c963ea6a`  
-		Last Modified: Wed, 18 Jan 2017 08:21:16 GMT  
-		Size: 4.1 MB (4051232 bytes)  
+	-	`sha256:091153439d9ebb69bbd0e87256a6d31096edeb8371f2efe4a369b46ab10a1c73`  
+		Last Modified: Mon, 30 Jan 2017 17:32:19 GMT  
+		Size: 4.0 MB (4048261 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `elixir:1.3.4`

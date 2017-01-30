@@ -1,7 +1,7 @@
 ## `composer:latest`
 
 ```console
-$ docker pull composer@sha256:86620d4989ed3a0205ab53c33e5dda5dfea68d7fe3bfd631bc63bf04f87b64eb
+$ docker pull composer@sha256:2f6d77dfeb8e41685ac339381cde04b71a1028619a5fe300e14734b8a06c47df
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull composer@sha256:86620d4989ed3a0205ab53c33e5dda5dfea68d7fe3bfd631bc
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.1 MB (54137164 bytes)**  
+-	Total Size: **54.1 MB (54137350 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:083d510e1ddb1c04f7be4f2ec283bec6ea6e79882a4399a553f3d3a8ee0de080`
+-	Image ID: `sha256:9e6761880148d49a6957810565d0f46112ebe1f25b939d7c32880f918a4519ce`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -66,17 +66,17 @@ ENV PATH=/composer/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:
 ENV COMPOSER_ALLOW_SUPERUSER=1
 # Tue, 24 Jan 2017 21:06:34 GMT
 ENV COMPOSER_HOME=/composer
-# Tue, 24 Jan 2017 21:06:48 GMT
-ENV COMPOSER_VERSION=1.3.1
-# Tue, 24 Jan 2017 21:06:51 GMT
-RUN curl -s -f -L -o /tmp/installer.php https://raw.githubusercontent.com/composer/getcomposer.org/2091762d2ebef14c02301f3039c41d08468fb49e/web/installer  && php -r "     \$signature = '55d6ead61b29c7bdee5cccfb50076874187bd9f21f65d8991d46ec5cc90518f447387fb9f76ebae1fbbacf329e583e30';     \$hash = hash('SHA384', file_get_contents('/tmp/installer.php'));     if (!hash_equals(\$signature, \$hash)) {         unlink('/tmp/installer.php');         echo 'Integrity check failed, installer is either corrupt or worse.' . PHP_EOL;         exit(1);     }"  && php /tmp/installer.php --no-ansi --install-dir=/usr/bin --filename=composer --version=${COMPOSER_VERSION}  && rm /tmp/installer.php  && composer --ansi --version --no-interaction
-# Tue, 24 Jan 2017 21:06:52 GMT
+# Mon, 30 Jan 2017 17:38:11 GMT
+ENV COMPOSER_VERSION=1.3.2
+# Mon, 30 Jan 2017 17:38:16 GMT
+RUN curl -s -f -L -o /tmp/installer.php https://raw.githubusercontent.com/composer/getcomposer.org/5fd32f776359b8714e2647ab4cd8a7bed5f3714d/web/installer  && php -r "     \$signature = '55d6ead61b29c7bdee5cccfb50076874187bd9f21f65d8991d46ec5cc90518f447387fb9f76ebae1fbbacf329e583e30';     \$hash = hash('SHA384', file_get_contents('/tmp/installer.php'));     if (!hash_equals(\$signature, \$hash)) {         unlink('/tmp/installer.php');         echo 'Integrity check failed, installer is either corrupt or worse.' . PHP_EOL;         exit(1);     }"  && php /tmp/installer.php --no-ansi --install-dir=/usr/bin --filename=composer --version=${COMPOSER_VERSION}  && rm /tmp/installer.php  && composer --ansi --version --no-interaction
+# Mon, 30 Jan 2017 17:38:17 GMT
 COPY file:0b943ec33b364492b10e7a774becd40d3fec03eb7db67cc0528769b329117e32 in /docker-entrypoint.sh 
-# Tue, 24 Jan 2017 21:06:53 GMT
+# Mon, 30 Jan 2017 17:38:17 GMT
 WORKDIR /app
-# Tue, 24 Jan 2017 21:06:53 GMT
+# Mon, 30 Jan 2017 17:38:18 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 24 Jan 2017 21:06:53 GMT
+# Mon, 30 Jan 2017 17:38:18 GMT
 CMD ["composer"]
 ```
 
@@ -121,15 +121,15 @@ CMD ["composer"]
 		Last Modified: Tue, 24 Jan 2017 21:07:10 GMT  
 		Size: 267.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7aef06d9d872ad2d02acb2568f8e64a374f92296c3bf7ef3168bd3918ce3a9e`  
-		Last Modified: Tue, 24 Jan 2017 21:08:26 GMT  
-		Size: 485.1 KB (485121 bytes)  
+	-	`sha256:b7d94a4bf07d63b1feaa7deef7a4d3cebb4472e9f07961898abaa2d0cdc93c80`  
+		Last Modified: Mon, 30 Jan 2017 17:38:36 GMT  
+		Size: 485.3 KB (485305 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:816addc54a26ebafb0760e3c5be62d8e5df39570347ca312c38d5f2e614b0385`  
-		Last Modified: Tue, 24 Jan 2017 21:08:26 GMT  
+	-	`sha256:8ecf8e691ed9cbff090d1c542ec5060a4dd0f04a8a563ce5f7c9c79650f32fcc`  
+		Last Modified: Mon, 30 Jan 2017 17:38:35 GMT  
 		Size: 536.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b720a095c70489a7d6e829e9f2534d1d855fb2f1ab44bc5b7a21217694e10e2`  
-		Last Modified: Tue, 24 Jan 2017 21:08:26 GMT  
-		Size: 89.0 B  
+	-	`sha256:5e252a03d013c88051d5b597620d5b9708f41de5c4b32bcd57cf2e9b25d83723`  
+		Last Modified: Mon, 30 Jan 2017 17:38:35 GMT  
+		Size: 91.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
