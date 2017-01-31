@@ -1,17 +1,17 @@
-# `openjdk:9-b153-jre`
+# `openjdk:9-b154-jre`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d2f5e0016443a932e598919ccdd08783c8e472d9e13e1483afd69f8906a449d9`
-- Created: `2017-01-24T17:52:45.67894916Z`
+- Image ID: `sha256:00e5728046362d32a485b4c8dc308eaf3d03fd87772c5360591905b142629ff1`
+- Created: `2017-01-27T23:03:39.038953059Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64`
-  - `JAVA_VERSION=9~b153`
-  - `JAVA_DEBIAN_VERSION=9~b153-2`
+  - `JAVA_VERSION=9~b154`
+  - `JAVA_DEBIAN_VERSION=9~b154-1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -391,19 +391,8 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris curl=7.52.1-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-1.dsc' curl_7.52.1-1.dsc 2765 SHA256:bc82de7b02127add254a39b767b9fd378add339b62e0c79d16d9d2f273fad378
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-1.debian.tar.xz' curl_7.52.1-1.debian.tar.xz 27964 SHA256:c2d962814c274e1ec5c962a3346631ec93a18fcb2da9438fdd44b7e8deda4e1a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/curl/7.52.1-1/
-- https://sources.debian.net/src/curl/7.52.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-2`
 
@@ -442,19 +431,8 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.8-2.3
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8-2.3.dsc' dash_0.5.8-2.3.dsc 1764 SHA256:cd1fdf9e0b5d05f152ff12400ab191b0d3662cbb0a70a759b28e20a317af1ab2
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8.orig.tar.gz' dash_0.5.8.orig.tar.gz 223028 SHA256:c6db3a237747b02d20382a761397563d813b306c020ae28ce25a1c3915fac60f
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8-2.3.diff.gz' dash_0.5.8-2.3.diff.gz 42170 SHA256:fc7e390aec750c270ffc15a77ba861da3c931f323b2463130e1114ff47c6732b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dash/0.5.8-2.3/
-- https://sources.debian.net/src/dash/0.5.8-2.3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `db5.3=5.3.28-12`
 
@@ -900,20 +878,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.8-1
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8-1.dsc' gnutls28_3.5.8-1.dsc 3255 SHA256:57e8d2a942dc6539542f05312cb1015d646e3d9075cb696c984d8d6037721459
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz' gnutls28_3.5.8.orig.tar.xz 7264448 SHA256:0e97f243ae72b70307d684b84c7fe679385aa7a7a0e37e5be810193dcc17d4ff
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz.asc' gnutls28_3.5.8.orig.tar.xz.asc 287 SHA256:417da9db564a841128edb2dc2c98465a5749541f7d71492cb7c4905a0bfeac82
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8-1.debian.tar.xz' gnutls28_3.5.8-1.debian.tar.xz 99228 SHA256:799b3b30c5636f861925b690d4b3765ccfaa8feacb9209dc0e0b916f39377ec6
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnutls28/3.5.8-1/
-- https://sources.debian.net/src/gnutls28/3.5.8-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.27-1`
 
@@ -1147,11 +1113,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/krb5/1.15-1/
 - https://sources.debian.net/src/krb5/1.15-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `lcms2=2.8-3`
+### `dpkg` source package: `lcms2=2.8-4`
 
 Binary Packages:
 
-- `liblcms2-2:amd64=2.8-3`
+- `liblcms2-2:amd64=2.8-4`
 
 Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 
@@ -1162,16 +1128,16 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris lcms2=2.8-3
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.8-3.dsc' lcms2_2.8-3.dsc 1997 SHA256:9e9f53b7abcdd82040a35111860465b443d05103a49e64b139cfe955586b2e0a
+$ apt-get source -qq --print-uris lcms2=2.8-4
+'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.8-4.dsc' lcms2_2.8-4.dsc 1997 SHA256:3b92900948848eef62fa91b78f6b6661bd84eae6c49c224248c7c48a09b5f028
 'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.8.orig.tar.gz' lcms2_2.8.orig.tar.gz 6687005 SHA256:66d02b229d2ea9474e62c2b6cd6720fde946155cd1d0d2bffdab829790a0fb22
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.8-3.debian.tar.xz' lcms2_2.8-3.debian.tar.xz 10732 SHA256:876214e97f069a3dba0ea7f54026106da441f319e2afa0a8d38f8c4de5f773c9
+'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.8-4.debian.tar.xz' lcms2_2.8-4.debian.tar.xz 11036 SHA256:50c0040fc92e1f2ca27740f608ae248acdd5b21a633f34cf2fe4d66f1d05c4b4
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/lcms2/2.8-3/
-- https://sources.debian.net/src/lcms2/2.8-3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/lcms2/2.8-4/
+- https://sources.debian.net/src/lcms2/2.8-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libcap-ng=0.7.7-3`
 
@@ -1362,30 +1328,6 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/libjpeg-turbo/1:1.5.1-2/
 - https://sources.debian.net/src/libjpeg-turbo/1:1.5.1-2/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `libjpeg8=8d1-2`
-
-Binary Packages:
-
-- `libjpeg8:amd64=8d1-2`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris libjpeg8=8d1-2
-'http://deb.debian.org/debian/pool/main/libj/libjpeg8/libjpeg8_8d1-2.dsc' libjpeg8_8d1-2.dsc 1813 SHA256:55e602e055fcd37ef8270e5161400a572754c61b0055338c796dfa1801517807
-'http://deb.debian.org/debian/pool/main/libj/libjpeg8/libjpeg8_8d1.orig.tar.gz' libjpeg8_8d1.orig.tar.gz 1022430 SHA256:02e22e94dba740a490ba7813a5ac7e9c7e7a5abb0d61ee2ce22742f92419c4d7
-'http://deb.debian.org/debian/pool/main/libj/libjpeg8/libjpeg8_8d1-2.debian.tar.xz' libjpeg8_8d1-2.debian.tar.xz 10364 SHA256:61efd179c4316dea046ca7963d0a6b1ecc9385d7caaa97f557fce03af167ae8a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libjpeg8/8d1-2/
-- https://sources.debian.net/src/libjpeg8/8d1-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libmnl=1.0.4-2`
 
@@ -1973,19 +1915,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.18.1-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.18.1-1.dsc' nghttp2_1.18.1-1.dsc 2283 SHA256:a473983d2630c5f9df6b1ef439e4eee9fbb4fbe9b61bc1b80289b1ba0a84336d
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.18.1.orig.tar.bz2' nghttp2_1.18.1.orig.tar.bz2 1780766 SHA256:5d8bb930eb90c552ec836c7b1862406b69cafcda5520bf266c8f5d914d9b447c
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.18.1-1.debian.tar.xz' nghttp2_1.18.1-1.debian.tar.xz 11716 SHA256:ffcd8e21b6824b6907466f4d3c481f4a68601f8b0b09545e19c033d14a0d16d5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.18.1-1/
-- https://sources.debian.net/src/nghttp2/1.18.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `nspr=2:4.12-6`
 
@@ -2035,11 +1966,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nss/2:3.26.2-1/
 - https://sources.debian.net/src/nss/2:3.26.2-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openjdk-9=9~b153-2`
+### `dpkg` source package: `openjdk-9=9~b154-1`
 
 Binary Packages:
 
-- `openjdk-9-jre-headless:amd64=9~b153-2`
+- `openjdk-9-jre-headless:amd64=9~b154-1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 
@@ -2051,16 +1982,16 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-9=9~b153-2
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b153-2.dsc' openjdk-9_9~b153-2.dsc 4462 SHA256:e27e43e7227101c476e0d0625931e4ac3089689599f407ceea0eb72c72c1d50d
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b153.orig.tar.gz' openjdk-9_9~b153.orig.tar.gz 74318807 SHA256:ee7b00f1059a44f9a66941ccc1aea45958f72cdb7295823a46d2b946bb057183
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b153-2.debian.tar.xz' openjdk-9_9~b153-2.debian.tar.xz 187484 SHA256:e979937d43b1fa981ce0e9371150f59af1254b7ea1b15f561bd3ad91352f5310
+$ apt-get source -qq --print-uris openjdk-9=9~b154-1
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b154-1.dsc' openjdk-9_9~b154-1.dsc 4462 SHA256:1daab0bb049560634f6df97fd3298639de69e353492ee6ee5ae869c8e1309e0d
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b154.orig.tar.gz' openjdk-9_9~b154.orig.tar.gz 74348837 SHA256:c50652275e939e58acb5bf5120809862d10976b73cdafd04ac41a9bd1c29c207
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b154-1.debian.tar.xz' openjdk-9_9~b154-1.debian.tar.xz 187408 SHA256:e6e8af05223aae836e421c5586575bf44d8b64c08109e095a6f1900c4055bfb2
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openjdk-9/9~b153-2/
-- https://sources.debian.net/src/openjdk-9/9~b153-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openjdk-9/9~b154-1/
+- https://sources.debian.net/src/openjdk-9/9~b154-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-3`
 
@@ -2370,11 +2301,11 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `sqlite3=3.16.2-1`
+### `dpkg` source package: `sqlite3=3.16.2-2`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.16.2-1`
+- `libsqlite3-0:amd64=3.16.2-2`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -2382,8 +2313,20 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.16.2-2
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2-2.dsc' sqlite3_3.16.2-2.dsc 2510 SHA256:b9467135750a23c0a6d4a32fcc11d6d9c9610e1ecf86a1b671a13ae0a9d45b00
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2.orig-www.tar.xz' sqlite3_3.16.2.orig-www.tar.xz 3383968 SHA256:d5dd3de405c55c63c9f99fbfcf3defc91a54a81b5656c510cd46544aaed134fa
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2.orig.tar.xz' sqlite3_3.16.2.orig.tar.xz 5634120 SHA256:bf7b1e8ea7577253b7f8a8287d111d542d1792cf1768edc66541ac851ff92453
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2-2.debian.tar.xz' sqlite3_3.16.2-2.debian.tar.xz 17060 SHA256:74d818241b3cda4051f56b9f03a75d8985668bb76a9e6f8d2f3f9bdccf2b4b83
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/sqlite3/3.16.2-2/
+- https://sources.debian.net/src/sqlite3/3.16.2-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `systemd=232-10`
 
