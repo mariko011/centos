@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:62d0f89fa4f605ef9a22484bd30538ba842034eb85e2258ca786d5403b87b156`
-- Created: `2017-01-21T01:13:09.133206833Z`
+- Image ID: `sha256:5759b4dcaf2919bdbfbbc5769d92ece6668848a35f549f6a6ad68af7fb0f2614`
+- Created: `2017-01-27T20:13:19.429492045Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
 - Command: `["bash"]`
@@ -1692,19 +1692,19 @@ $ apt-get source -qq --print-uris kmod=15-0ubuntu6
 'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_15-0ubuntu6.debian.tar.gz' kmod_15-0ubuntu6.debian.tar.gz 14348 SHA256:5cbd3db804ae4b6ef3868ff344c23cad67d51938d8cefa42114d8d3a0bb78159
 ```
 
-### `dpkg` source package: `krb5=1.12+dfsg-2ubuntu5.2`
+### `dpkg` source package: `krb5=1.12+dfsg-2ubuntu5.3`
 
 Binary Packages:
 
-- `krb5-multidev=1.12+dfsg-2ubuntu5.2`
-- `libgssapi-krb5-2:amd64=1.12+dfsg-2ubuntu5.2`
-- `libgssrpc4:amd64=1.12+dfsg-2ubuntu5.2`
-- `libk5crypto3:amd64=1.12+dfsg-2ubuntu5.2`
-- `libkadm5clnt-mit9:amd64=1.12+dfsg-2ubuntu5.2`
-- `libkadm5srv-mit9:amd64=1.12+dfsg-2ubuntu5.2`
-- `libkdb5-7:amd64=1.12+dfsg-2ubuntu5.2`
-- `libkrb5-3:amd64=1.12+dfsg-2ubuntu5.2`
-- `libkrb5support0:amd64=1.12+dfsg-2ubuntu5.2`
+- `krb5-multidev=1.12+dfsg-2ubuntu5.3`
+- `libgssapi-krb5-2:amd64=1.12+dfsg-2ubuntu5.3`
+- `libgssrpc4:amd64=1.12+dfsg-2ubuntu5.3`
+- `libk5crypto3:amd64=1.12+dfsg-2ubuntu5.3`
+- `libkadm5clnt-mit9:amd64=1.12+dfsg-2ubuntu5.3`
+- `libkadm5srv-mit9:amd64=1.12+dfsg-2ubuntu5.3`
+- `libkdb5-7:amd64=1.12+dfsg-2ubuntu5.3`
+- `libkrb5-3:amd64=1.12+dfsg-2ubuntu5.3`
+- `libkrb5support0:amd64=1.12+dfsg-2ubuntu5.3`
 
 Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libgssrpc4/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkadm5clnt-mit9/copyright`, `/usr/share/doc/libkadm5srv-mit9/copyright`, `/usr/share/doc/libkdb5-7/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -1713,10 +1713,10 @@ Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/do
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.12+dfsg-2ubuntu5.2
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg-2ubuntu5.2.dsc' krb5_1.12+dfsg-2ubuntu5.2.dsc 3285 SHA256:b4d6a90bb6be7aec5575a2514bcaa1571e507dda3c1bcb902d5abd2331cb5c39
+$ apt-get source -qq --print-uris krb5=1.12+dfsg-2ubuntu5.3
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg-2ubuntu5.3.dsc' krb5_1.12+dfsg-2ubuntu5.3.dsc 3506 SHA256:bc6026c5c2f207f6212cb2361738ca657bed39fa228fe90ac494658f7c5d1a48
 'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg.orig.tar.gz' krb5_1.12+dfsg.orig.tar.gz 11704009 SHA256:8ff375113692946790aea5b246b14609c1d21e9017c920ab129452415dc69dfa
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg-2ubuntu5.2.debian.tar.gz' krb5_1.12+dfsg-2ubuntu5.2.debian.tar.gz 138520 SHA256:90180cfcf570400345f7b3a6e1e07fc772ee02fc6338febe78c9363da55a22eb
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg-2ubuntu5.3.debian.tar.xz' krb5_1.12+dfsg-2ubuntu5.3.debian.tar.xz 113208 SHA256:b1448e6b85d1388fa78278bd0e50d780f0c3da6fbcffb026bf7364c3282e5faa
 ```
 
 ### `dpkg` source package: `langpack-locales=2.13+git20120306-12.1`

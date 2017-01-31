@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e12b4650f78cc726022b1c16228589d5985213750c3cdb60d4adac59d71451ca`
-- Created: `2017-01-21T01:25:08.509818716Z`
+- Image ID: `sha256:4b0fd13f2a98b6fb2e7720ff5916dad0a9c78b3dd7839d8354bd570f67cbb6ad`
+- Created: `2017-01-27T20:20:46.333507435Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
 - Command: `["bash"]`
@@ -1512,19 +1512,25 @@ $ apt-get source -qq --print-uris git=1:2.7.4-0ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4-0ubuntu1.debian.tar.xz' git_2.7.4-0ubuntu1.debian.tar.xz 501804 SHA256:d3db5b4f110d802603838cab68a70fc2fbcda8f3a167afa4e2a805c2c7588871
 ```
 
-### `dpkg` source package: `glib2.0=2.48.1-1~ubuntu16.04.1`
+### `dpkg` source package: `glib2.0=2.48.2-0ubuntu1`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.48.1-1~ubuntu16.04.1`
-- `libglib2.0-data=2.48.1-1~ubuntu16.04.1`
+- `libglib2.0-0:amd64=2.48.2-0ubuntu1`
+- `libglib2.0-data=2.48.2-0ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc/libglib2.0-data/copyright`)
 
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris glib2.0=2.48.2-0ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu1.dsc' glib2.0_2.48.2-0ubuntu1.dsc 3324 SHA256:83dbf2f597e79d34b42e89d2b3129bc3925142e5f4cd4d3df2254b4a4d486345
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2.orig.tar.xz' glib2.0_2.48.2.orig.tar.xz 6408644 SHA256:f25e751589cb1a58826eac24fbd4186cda4518af772806b666a3f91f66e6d3f4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.48.2-0ubuntu1.debian.tar.xz' glib2.0_2.48.2-0ubuntu1.debian.tar.xz 68844 SHA256:83d8527d76c025a47136f7bc146a7716049afa9f0c75b8e050e3c55636703d37
+```
 
 ### `dpkg` source package: `glibc=2.23-0ubuntu5`
 
@@ -2071,14 +2077,14 @@ $ apt-get source -qq --print-uris kmod=22-1ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu4.debian.tar.xz' kmod_22-1ubuntu4.debian.tar.xz 13644 SHA256:6b2a68f8333222f3b8cfb80d81d5fc936d90365e346c5092086ea148ec1d4ec0
 ```
 
-### `dpkg` source package: `krb5=1.13.2+dfsg-5`
+### `dpkg` source package: `krb5=1.13.2+dfsg-5ubuntu1`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.13.2+dfsg-5`
-- `libk5crypto3:amd64=1.13.2+dfsg-5`
-- `libkrb5-3:amd64=1.13.2+dfsg-5`
-- `libkrb5support0:amd64=1.13.2+dfsg-5`
+- `libgssapi-krb5-2:amd64=1.13.2+dfsg-5ubuntu1`
+- `libk5crypto3:amd64=1.13.2+dfsg-5ubuntu1`
+- `libkrb5-3:amd64=1.13.2+dfsg-5ubuntu1`
+- `libkrb5support0:amd64=1.13.2+dfsg-5ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -2087,10 +2093,10 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.13.2+dfsg-5
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg-5.dsc' krb5_1.13.2+dfsg-5.dsc 3192 SHA256:b52caa3fd7211250987f2f0319579992a7f2bc24c47c766fdfc0403945dbfbdb
+$ apt-get source -qq --print-uris krb5=1.13.2+dfsg-5ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg-5ubuntu1.dsc' krb5_1.13.2+dfsg-5ubuntu1.dsc 3516 SHA256:e9cd28de07bd11086caa4aa052107af107cded1a7ae962721d08adc9d5a23531
 'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg.orig.tar.gz' krb5_1.13.2+dfsg.orig.tar.gz 11884064 SHA256:a7af3953e4ab52b17f80bdfc2fc7471b66b512b128520796e2b993554543873a
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg-5.debian.tar.xz' krb5_1.13.2+dfsg-5.debian.tar.xz 101968 SHA256:8f8c951a524af50b300f524cd14bd946ea802e81eddbc719f9b71719158b9c1d
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg-5ubuntu1.debian.tar.xz' krb5_1.13.2+dfsg-5ubuntu1.debian.tar.xz 102928 SHA256:56e3928fefa5f378c63ee32aa6e3d75daf121036752eb0a4640812b7e1fde42a
 ```
 
 ### `dpkg` source package: `lapack=3.6.0-2ubuntu2`
