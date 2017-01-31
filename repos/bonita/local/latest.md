@@ -1,20 +1,16 @@
-# `bonita:7.3.3`
+# `bonita:7.4.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f872e8c0733399ae2ce5c718b7473564ce172256a758ebea20f95452f8fc0c71`
-- Created: `2017-01-20T23:57:28.299781804Z`
+- Image ID: `sha256:daea6c078888a4a297b7a5b82597d1a0eb4b9c7608bc6714cb0fa27dbf40ab60`
+- Created: `2017-01-30T18:33:20.431746698Z`
 - Arch: `linux`/`amd64`
 - Command: `["/opt/files/startup.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `BONITA_VERSION=7.3.3`
+  - `BONITA_VERSION=7.4.1`
   - `TOMCAT_VERSION=7.0.67`
-  - `BONITA_SHA256=128911e3b6241e135b2dbc496d8ce383d921f2f2478fc5fad4331e1fd362eb4f`
-  - `POSTGRES_JDBC_DRIVER=postgresql-9.3-1102.jdbc41.jar`
-  - `POSTGRES_SHA256=b78749d536da75c382d0a71c717cde6850df64e16594676fc7cacb5a74541d66`
-  - `MYSQL_JDBC_DRIVER=mysql-connector-java-5.1.26`
-  - `MYSQL_SHA256=40b2d49f6f2551cc7fa54552af806e8026bf8405f03342205852e57a3205a868`
+  - `BONITA_SHA256=e299ae1b68f40699ec8607911967c614206c7e74d6ab36ea03d3f1de7e8109a3`
 
 ## `dpkg` (`.deb`-based packages)
 
