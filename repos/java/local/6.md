@@ -3732,19 +3732,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff3=3.9.6-11+deb7u2
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u2.dsc' tiff3_3.9.6-11+deb7u2.dsc 1617 SHA256:cae76eac511e6dad839ee18e0050cffae26de5b12f91aaae07b3a201ccb08aa0
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6.orig.tar.gz' tiff3_3.9.6.orig.tar.gz 1454196 SHA256:0fba119156236074343a14afbd3a47907e3a5952c9c86102305d4eeb06ad6833
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u2.debian.tar.gz' tiff3_3.9.6-11+deb7u2.debian.tar.gz 39163 SHA256:9f4d87606c5d12b5ab5f191dab05ef55a7bfb7e2ba1804c26425a54e2b41d247
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u2/
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ttf-dejavu=2.33-3`
 
