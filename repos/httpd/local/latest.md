@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:67a5f36fd8442bbb9117beace561109209f2d2f7b900a210b67b9706ff4efa18`
-- Created: `2017-01-16T20:51:46.987715857Z`
+- Image ID: `sha256:6587355a8c4f2a955eb322a7c17437dff667aa44ecd24b5db23754924ffbd18e`
+- Created: `2017-01-31T19:42:15.063741448Z`
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
 - Environment:
   - `PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `HTTPD_PREFIX=/usr/local/apache2`
-  - `NGHTTP2_VERSION=1.17.0-1`
-  - `OPENSSL_VERSION=1.0.2j-1~bpo8+1`
+  - `NGHTTP2_VERSION=1.18.1-1`
+  - `OPENSSL_VERSION=1.0.2k-1~bpo8+1`
   - `HTTPD_VERSION=2.4.25`
   - `HTTPD_SHA1=bd6d138c31c109297da2346c6e7b93b9283993d2`
   - `HTTPD_BZ2_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=httpd/httpd-2.4.25.tar.bz2`
@@ -1625,11 +1625,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nettle/2.7.1-5+deb8u2/
 - https://sources.debian.net/src/nettle/2.7.1-5+deb8u2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `nghttp2=1.17.0-1`
+### `dpkg` source package: `nghttp2=1.18.1-1`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.17.0-1`
+- `libnghttp2-14:amd64=1.18.1-1`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -1644,16 +1644,16 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nghttp2=1.17.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.17.0-1.dsc' nghttp2_1.17.0-1.dsc 2263 SHA256:a178da06269fdc2a1841842136aa3ce6a56603cc5a2ceca3d5365824cbe2f304
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.17.0.orig.tar.bz2' nghttp2_1.17.0.orig.tar.bz2 1782575 SHA256:7685b6717d205d3a251b7dd5e73a7ca5e643bc5c01f928b82bfeed30c243f28a
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.17.0-1.debian.tar.xz' nghttp2_1.17.0-1.debian.tar.xz 11376 SHA256:06795f429fc651ffe480af389224c6862533aa7a29cfba78933cbedee9c39b2e
+$ apt-get source -qq --print-uris nghttp2=1.18.1-1
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.18.1-1.dsc' nghttp2_1.18.1-1.dsc 2283 SHA256:a473983d2630c5f9df6b1ef439e4eee9fbb4fbe9b61bc1b80289b1ba0a84336d
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.18.1.orig.tar.bz2' nghttp2_1.18.1.orig.tar.bz2 1780766 SHA256:5d8bb930eb90c552ec836c7b1862406b69cafcda5520bf266c8f5d914d9b447c
+'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.18.1-1.debian.tar.xz' nghttp2_1.18.1-1.debian.tar.xz 11716 SHA256:ffcd8e21b6824b6907466f4d3c481f4a68601f8b0b09545e19c033d14a0d16d5
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/nghttp2/1.17.0-1/
-- https://sources.debian.net/src/nghttp2/1.17.0-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/nghttp2/1.18.1-1/
+- https://sources.debian.net/src/nghttp2/1.18.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.40+dfsg-1+deb8u2`
 
@@ -1680,11 +1680,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u2/
 - https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openssl=1.0.2j-1~bpo8+1`
+### `dpkg` source package: `openssl=1.0.2k-1~bpo8+1`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.2j-1~bpo8+1`
+- `libssl1.0.0:amd64=1.0.2k-1~bpo8+1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1693,16 +1693,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.0.2j-1~bpo8+1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.2j-1~bpo8+1.dsc' openssl_1.0.2j-1~bpo8+1.dsc 2255 SHA256:a300c4fa52e9ba7b49c09f15552b4b58f1d0afcdb417df7ada9cef36cb98c9d3
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.2j.orig.tar.gz' openssl_1.0.2j.orig.tar.gz 5307912 SHA256:e7aff292be21c259c6af26469c7a9b3ba26e9abaaffd325e3dccc9785256c431
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.2j-1~bpo8+1.debian.tar.xz' openssl_1.0.2j-1~bpo8+1.debian.tar.xz 75456 SHA256:057bab26293fc413dd7b58386664c15e4181b37d68a591fabac72187bb1f835d
+$ apt-get source -qq --print-uris openssl=1.0.2k-1~bpo8+1
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.2k-1~bpo8+1.dsc' openssl_1.0.2k-1~bpo8+1.dsc 2269 SHA256:b010af3435d2a1c26b1022b075300864627d2aa65534a3e09f4cca47f08561d0
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.2k.orig.tar.gz' openssl_1.0.2k.orig.tar.gz 5309236 SHA256:6b3977c61f2aedf0f96367dcfb5c6e578cf37e7b8d913b4ecb6643c3cb88d8c0
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.2k-1~bpo8+1.debian.tar.xz' openssl_1.0.2k-1~bpo8+1.debian.tar.xz 77056 SHA256:f42af1ba0a629e132cea7c9e2aa4c30d189365654ebcc2f4652efc102452b5ba
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openssl/1.0.2j-1~bpo8+1/
-- https://sources.debian.net/src/openssl/1.0.2j-1~bpo8+1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openssl/1.0.2k-1~bpo8+1/
+- https://sources.debian.net/src/openssl/1.0.2k-1~bpo8+1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
