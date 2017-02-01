@@ -1,18 +1,18 @@
-# `redis:3.2.6-32bit`
+# `redis:3.2.7-32bit`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b93219bcf4fd1465d07111eef36bb92a3db04fe935e4631f6a8e4ef7c43e6bb7`
-- Created: `2017-01-17T20:07:34.207710364Z`
+- Image ID: `sha256:b86e8e419f04b69f1354335f339fdf8089b3cd436a637be5ae38965266741027`
+- Created: `2017-01-31T19:53:54.167755705Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["redis-server"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.7`
-  - `REDIS_VERSION=3.2.6`
-  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.2.6.tar.gz`
-  - `REDIS_DOWNLOAD_SHA1=0c7bc5c751bdbc6fabed178db9cdbdd948915d1b`
+  - `REDIS_VERSION=3.2.7`
+  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.2.7.tar.gz`
+  - `REDIS_DOWNLOAD_SHA1=6889af053020cd72ebb16805ead0ce9b3a69a9ef`
 
 ## `dpkg` (`.deb`-based packages)
 
