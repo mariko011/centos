@@ -2,11 +2,11 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fcacc6c27d8ac23cc7f7aec04a39edf5ac73470723dc6a3a2e9c5b7f780a2297`
-- Created: `2017-01-27T21:43:50.164220452Z`
+- Image ID: `sha256:7118594f1be3729b2e57a638a1e2eb0da18865ae8ae564b2d0f3a1eaaa3997ab`
+- Created: `2017-01-30T17:34:24.447705768Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
-- Command: `["/bin/sh","-c","php -S 0.0.0.0:8080 -t /var/www/html"]`
+- Command: `["php","-S","0.0.0.0:8080","-t","/var/www/html"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c`
