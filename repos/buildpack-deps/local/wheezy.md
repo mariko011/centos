@@ -1485,19 +1485,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.7.7.10-5+deb7u10
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u10.dsc' imagemagick_6.7.7.10-5+deb7u10.dsc 3160 SHA256:b63cd7814767f053f690a036ebeaea743aaa61a099ed9a6b386bec0874621ce2
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10.orig.tar.bz2' imagemagick_6.7.7.10.orig.tar.bz2 10473522 SHA256:05fb23824b1c90ac35259715c94c65fb5cda6969eb597a7637762d8cf3998fda
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u10.debian.tar.bz2' imagemagick_6.7.7.10-5+deb7u10.debian.tar.bz2 201943 SHA256:97c60e802b9469fe733d2e4031ee5dc92fb73a099f433363caaecfe04ab75c27
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/imagemagick/8:6.7.7.10-5+deb7u10/
-- https://sources.debian.net/src/imagemagick/8:6.7.7.10-5+deb7u10/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9-2`
 
@@ -2038,19 +2027,8 @@ Licenses: (parsed from: `/usr/share/doc/libgd2-noxpm/copyright`)
 - `HPND`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.0.36~rc1~dfsg-6.1+deb7u7
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u7.dsc' libgd2_2.0.36~rc1~dfsg-6.1+deb7u7.dsc 2411 SHA256:8a713b46e263d734a442f0f20c2bce926b6077c4aa04c74527d385c8f7767de7
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg.orig.tar.gz' libgd2_2.0.36~rc1~dfsg.orig.tar.gz 761899 SHA256:919df21310ad4a8b6155df01411138110589cc6c50b1bc414dc62aebb0a7f41a
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u7.debian.tar.gz' libgd2_2.0.36~rc1~dfsg-6.1+deb7u7.debian.tar.gz 31473 SHA256:60c92e71912dc919dfccddc2e262484fd82659e563454d14175c8267d5a67e59
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libgd2/2.0.36~rc1~dfsg-6.1+deb7u7/
-- https://sources.debian.net/src/libgd2/2.0.36~rc1~dfsg-6.1+deb7u7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.10-3.1`
 
@@ -3984,19 +3962,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff3=3.9.6-11+deb7u2
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u2.dsc' tiff3_3.9.6-11+deb7u2.dsc 1617 SHA256:cae76eac511e6dad839ee18e0050cffae26de5b12f91aaae07b3a201ccb08aa0
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6.orig.tar.gz' tiff3_3.9.6.orig.tar.gz 1454196 SHA256:0fba119156236074343a14afbd3a47907e3a5952c9c86102305d4eeb06ad6833
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u2.debian.tar.gz' tiff3_3.9.6-11+deb7u2.debian.tar.gz 39163 SHA256:9f4d87606c5d12b5ab5f191dab05ef55a7bfb7e2ba1804c26425a54e2b41d247
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u2/
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ttf-dejavu=2.33-3`
 

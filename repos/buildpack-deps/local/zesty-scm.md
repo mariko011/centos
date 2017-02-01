@@ -493,14 +493,8 @@ Licenses: (parsed from: `/usr/share/doc/e2fslibs/copyright`, `/usr/share/doc/e2f
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.43.3-1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.43.3-1.dsc' e2fsprogs_1.43.3-1.dsc 2028 SHA256:d15bc76f9790bad181770238e71242c1987e779941acccedf4beaefa22adb84b
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.43.3.orig.tar.gz' e2fsprogs_1.43.3.orig.tar.gz 7405892 SHA256:ce8ef1bbb0d4730f170167284fda156ac9d6bf18db2750eb94af619a81b19927
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.43.3-1.debian.tar.xz' e2fsprogs_1.43.3-1.debian.tar.xz 75724 SHA256:4b8d31ae65c7fa29d9b9a2cec022d272cec1d00e3c789849094467b6c408dbb5
-```
 
 ### `dpkg` source package: `expat=2.2.0-1`
 
@@ -755,14 +749,8 @@ Licenses: (parsed from: `/usr/share/doc/grep/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris grep=2.27-1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_2.27-1.dsc' grep_2.27-1.dsc 2053 SHA256:c52e8a3bdae428e786a87aa5501faac621d4d0b017cf0bc2d8f5abd866fd5aac
-'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_2.27.orig.tar.xz' grep_2.27.orig.tar.xz 1360388 SHA256:ad4cc44d23074a1c3a8baae8fbafff2a8c60f38a9a6108f985eef6fbee6dcaeb
-'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_2.27-1.debian.tar.bz2' grep_2.27-1.debian.tar.bz2 109032 SHA256:1b99fff124d0a46e97fdb2f67f556d0684c0027ef6f7902f7c421b8828a3eaaa
-```
 
 ### `dpkg` source package: `gzip=1.6-4ubuntu1`
 
@@ -1412,15 +1400,8 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.23.3-4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.3-4.dsc' p11-kit_0.23.3-4.dsc 2452 SHA256:7d2fe2a225ef143b35604598e915e1bb34dc09641d3b69d5c7eaeedb51eddfa9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.3.orig.tar.gz' p11-kit_0.23.3.orig.tar.gz 1047441 SHA256:d487f04dba3f9e8256f53034c59c944ca45fd7b8434c095da6a74079644dcd82
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.3.orig.tar.gz.asc' p11-kit_0.23.3.orig.tar.gz.asc 543 SHA256:a9268313ad8e6c3dae5f4cf9006d8a773861e567c98786482304b3cc91883647
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.3-4.debian.tar.xz' p11-kit_0.23.3-4.debian.tar.xz 22980 SHA256:24fb698f3e30ac1a5588e859f042b435a5283e06c18dcd9bc8ea888e14f6dcbe
-```
 
 ### `dpkg` source package: `pam=1.1.8-3.2ubuntu2`
 

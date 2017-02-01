@@ -563,19 +563,8 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris curl=7.52.1-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-1.dsc' curl_7.52.1-1.dsc 2765 SHA256:bc82de7b02127add254a39b767b9fd378add339b62e0c79d16d9d2f273fad378
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-1.debian.tar.xz' curl_7.52.1-1.debian.tar.xz 27964 SHA256:c2d962814c274e1ec5c962a3346631ec93a18fcb2da9438fdd44b7e8deda4e1a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/curl/7.52.1-1/
-- https://sources.debian.net/src/curl/7.52.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-2`
 
@@ -1478,20 +1467,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.8-1
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8-1.dsc' gnutls28_3.5.8-1.dsc 3255 SHA256:57e8d2a942dc6539542f05312cb1015d646e3d9075cb696c984d8d6037721459
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz' gnutls28_3.5.8.orig.tar.xz 7264448 SHA256:0e97f243ae72b70307d684b84c7fe679385aa7a7a0e37e5be810193dcc17d4ff
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz.asc' gnutls28_3.5.8.orig.tar.xz.asc 287 SHA256:417da9db564a841128edb2dc2c98465a5749541f7d71492cb7c4905a0bfeac82
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8-1.debian.tar.xz' gnutls28_3.5.8-1.debian.tar.xz 99228 SHA256:799b3b30c5636f861925b690d4b3765ccfaa8feacb9209dc0e0b916f39377ec6
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnutls28/3.5.8-1/
-- https://sources.debian.net/src/gnutls28/3.5.8-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gobject-introspection=1.50.0-1`
 
@@ -1580,9 +1557,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris graphviz=2.38.0-16
-'http://deb.debian.org/debian/pool/main/g/graphviz/graphviz_2.38.0-16.dsc' graphviz_2.38.0-16.dsc 3222 SHA256:bf53adc3e23bef5e7c890e3cf6ac523ed2a40520a446862f6eb0e7dbb7b808da
+'http://deb.debian.org/debian/pool/main/g/graphviz/graphviz_2.38.0-16.1.dsc' graphviz_2.38.0-16.1.dsc 3262 SHA256:69fd7881ab5b12b74079e05bc6d125fc44faba5311b1849d873c776878d08652
 'http://deb.debian.org/debian/pool/main/g/graphviz/graphviz_2.38.0.orig.tar.gz' graphviz_2.38.0.orig.tar.gz 25848858 SHA256:81aa238d9d4a010afa73a9d2a704fc3221c731e1e06577c2ab3496bdef67859e
-'http://deb.debian.org/debian/pool/main/g/graphviz/graphviz_2.38.0-16.debian.tar.xz' graphviz_2.38.0-16.debian.tar.xz 43204 SHA256:e7801cf41571fd25271c824fcc4f501764f728b8bb25f963ee13f0dfcd78ef14
+'http://deb.debian.org/debian/pool/main/g/graphviz/graphviz_2.38.0-16.1.debian.tar.xz' graphviz_2.38.0-16.1.debian.tar.xz 43304 SHA256:adca8f07dd5ebceeded9a47ac5801e5b314618c2a7ff665b1da5de3228ee7b3b
 ```
 
 Likely also available for browsing at:
@@ -3859,19 +3836,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.18.1-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.18.1-1.dsc' nghttp2_1.18.1-1.dsc 2283 SHA256:a473983d2630c5f9df6b1ef439e4eee9fbb4fbe9b61bc1b80289b1ba0a84336d
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.18.1.orig.tar.bz2' nghttp2_1.18.1.orig.tar.bz2 1780766 SHA256:5d8bb930eb90c552ec836c7b1862406b69cafcda5520bf266c8f5d914d9b447c
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.18.1-1.debian.tar.xz' nghttp2_1.18.1-1.debian.tar.xz 11716 SHA256:ffcd8e21b6824b6907466f4d3c481f4a68601f8b0b09545e19c033d14a0d16d5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.18.1-1/
-- https://sources.debian.net/src/nghttp2/1.18.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openexr=2.2.0-11`
 

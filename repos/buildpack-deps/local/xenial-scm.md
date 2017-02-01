@@ -1538,14 +1538,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.5
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.5.dsc' openssl_1.0.2g-1ubuntu4.5.dsc 2435 SHA256:fc55e338a2961d19c863f5a867ba20bb00ffc0425ba29fff5e6ea435a0d6ebd2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.5.debian.tar.xz' openssl_1.0.2g-1ubuntu4.5.debian.tar.xz 106972 SHA256:00dffee17a8b9be0eb80602895eeae30fdc5e2b2558614ae0974e3219ad80c31
-```
 
 ### `dpkg` source package: `p11-kit=0.23.2-5~ubuntu16.04.1`
 
