@@ -348,14 +348,8 @@ Licenses: (parsed from: `/usr/share/doc/e2fslibs/copyright`, `/usr/share/doc/e2f
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.43.3-1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.43.3-1.dsc' e2fsprogs_1.43.3-1.dsc 2028 SHA256:d15bc76f9790bad181770238e71242c1987e779941acccedf4beaefa22adb84b
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.43.3.orig.tar.gz' e2fsprogs_1.43.3.orig.tar.gz 7405892 SHA256:ce8ef1bbb0d4730f170167284fda156ac9d6bf18db2750eb94af619a81b19927
-'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.43.3-1.debian.tar.xz' e2fsprogs_1.43.3-1.debian.tar.xz 75724 SHA256:4b8d31ae65c7fa29d9b9a2cec022d272cec1d00e3c789849094467b6c408dbb5
-```
 
 ### `dpkg` source package: `findutils=4.6.0+git+20161106-1`
 
@@ -416,14 +410,8 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris glibc=2.24-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-3ubuntu1.dsc' glibc_2.24-3ubuntu1.dsc 8778 SHA256:0aab5abce5b7ed0d2b522c93b8c6c8d6b7ae0d01989069888c2d2bf062999449
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24.orig.tar.xz' glibc_2.24.orig.tar.xz 13921912 SHA256:ed71e8afd2b270f7947a2cea2457a31e1ca4fac08e2731d80edd7ec1730ec84f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-3ubuntu1.debian.tar.xz' glibc_2.24-3ubuntu1.debian.tar.xz 957896 SHA256:252f89c570c30ab8d079a37e50ea425bf15dd649ed17cfbe9c358c14acdfdf50
-```
 
 ### `dpkg` source package: `gnupg2=2.1.15-1ubuntu6`
 
@@ -466,14 +454,8 @@ Licenses: (parsed from: `/usr/share/doc/grep/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris grep=2.27-1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_2.27-1.dsc' grep_2.27-1.dsc 2053 SHA256:c52e8a3bdae428e786a87aa5501faac621d4d0b017cf0bc2d8f5abd866fd5aac
-'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_2.27.orig.tar.xz' grep_2.27.orig.tar.xz 1360388 SHA256:ad4cc44d23074a1c3a8baae8fbafff2a8c60f38a9a6108f985eef6fbee6dcaeb
-'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_2.27-1.debian.tar.bz2' grep_2.27-1.debian.tar.bz2 109032 SHA256:1b99fff124d0a46e97fdb2f67f556d0684c0027ef6f7902f7c421b8828a3eaaa
-```
 
 ### `dpkg` source package: `gzip=1.6-4ubuntu1`
 
@@ -1019,15 +1001,8 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.15.2-2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.15.2-2.dsc' sqlite3_3.15.2-2.dsc 2510 SHA256:00bacade72b2fb364d15b6e0b6960ad3acc7fed4cd459a1a354090c8104dc38f
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.15.2.orig-www.tar.xz' sqlite3_3.15.2.orig-www.tar.xz 3340312 SHA256:bd55f8e40a69fd7048b2987a155014510a0ab2c62b2961df490b78f677431ae5
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.15.2.orig.tar.xz' sqlite3_3.15.2.orig.tar.xz 5319552 SHA256:6858c3bd37586b48ff964c26a8bf2d257dd21199af7302cada499be927bb0fc5
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.15.2-2.debian.tar.xz' sqlite3_3.15.2-2.debian.tar.xz 16916 SHA256:d9ed633a9cc3be3cb3d77fa89050867343848dce7c05cfec2ef0b428de88a7d0
-```
 
 ### `dpkg` source package: `systemd=232-8`
 
