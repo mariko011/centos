@@ -166,19 +166,8 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bash=4.4-2
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4-2.dsc' bash_4.4-2.dsc 2229 SHA256:b19a65fe01d13a457cd29261557a8c7d731d9127ebe5696d2130a30374ec4644
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4.orig.tar.xz' bash_4.4.orig.tar.xz 4878580 SHA256:819ebb6a23799e9e4ca56ac579778c46902005bd5ade4f131ed293d9f77108e7
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4-2.debian.tar.xz' bash_4.4-2.debian.tar.xz 61272 SHA256:912b60da8f84db158c734e912a0fe8c4babd1df760a58b17d0bd9d12bf6a96c8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/bash/4.4-2/
-- https://sources.debian.net/src/bash/4.4-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `binutils=2.27.90.20170114-1`
 
@@ -439,19 +428,8 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3/copyright`)
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris curl=7.52.1-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-1.dsc' curl_7.52.1-1.dsc 2765 SHA256:bc82de7b02127add254a39b767b9fd378add339b62e0c79d16d9d2f273fad378
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-1.debian.tar.xz' curl_7.52.1-1.debian.tar.xz 27964 SHA256:c2d962814c274e1ec5c962a3346631ec93a18fcb2da9438fdd44b7e8deda4e1a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/curl/7.52.1-1/
-- https://sources.debian.net/src/curl/7.52.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-2`
 
@@ -1165,19 +1143,8 @@ Licenses: (parsed from: `/usr/share/doc/grep/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris grep=2.27-1
-'http://deb.debian.org/debian/pool/main/g/grep/grep_2.27-1.dsc' grep_2.27-1.dsc 2053 SHA256:c52e8a3bdae428e786a87aa5501faac621d4d0b017cf0bc2d8f5abd866fd5aac
-'http://deb.debian.org/debian/pool/main/g/grep/grep_2.27.orig.tar.xz' grep_2.27.orig.tar.xz 1360388 SHA256:ad4cc44d23074a1c3a8baae8fbafff2a8c60f38a9a6108f985eef6fbee6dcaeb
-'http://deb.debian.org/debian/pool/main/g/grep/grep_2.27-1.debian.tar.bz2' grep_2.27-1.debian.tar.bz2 109032 SHA256:1b99fff124d0a46e97fdb2f67f556d0684c0027ef6f7902f7c421b8828a3eaaa
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/grep/2.27-1/
-- https://sources.debian.net/src/grep/2.27-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gzip=1.6-5`
 
@@ -1885,19 +1852,8 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 - `Chromium`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.16.1-1
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.16.1-1.dsc' libpsl_0.16.1-1.dsc 2122 SHA256:773b7d42b7e01048397d86b417a9ab4c0cef0543d9a7d8816560144a6deb65b4
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.16.1.orig.tar.gz' libpsl_0.16.1.orig.tar.gz 48606 SHA256:60b219a65ac40643cb6d43b58bb18129e6327b4a963cabe9bc26ee2d61504926
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.16.1-1.debian.tar.xz' libpsl_0.16.1-1.debian.tar.xz 8324 SHA256:a2f7ad641cdc05dd3b268409b7d6bf8d1037303ffd1d5e7fb4d9a2af843f6a3c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libpsl/0.16.1-1/
-- https://sources.debian.net/src/libpsl/0.16.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libselinux=2.6-3`
 
@@ -3109,19 +3065,8 @@ Licenses: (parsed from: `/usr/share/doc/libreadline-dev/copyright`, `/usr/share/
 - `GFDL`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris readline=7.0-1
-'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0-1.dsc' readline_7.0-1.dsc 2505 SHA256:d3176f0ab485483d077d176df51a9e2fcac3e8bb0b96bd191dc95c9fad7f57ca
-'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0.orig.tar.gz' readline_7.0.orig.tar.gz 2910016 SHA256:750d437185286f40a369e1e4f4764eda932b9459b5ec9a731628393dd3d32334
-'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0-1.debian.tar.xz' readline_7.0-1.debian.tar.xz 28516 SHA256:814a15c6dc5fad46bfbeb869f2cafe73ca6052e21dbe3ffafb8ea317b5e1cd00
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/readline/7.0-1/
-- https://sources.debian.net/src/readline/7.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `rmatrix=1.2-7.1-1`
 
