@@ -790,14 +790,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls-openssl27/copyright`, `/usr/sh
 - `LGPL-2.1`
 - `The main library is licensed under GNU Lesser General Public`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls26=2.12.23-12ubuntu2.5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23-12ubuntu2.5.dsc' gnutls26_2.12.23-12ubuntu2.5.dsc 2722 SHA256:2d225e1190fac67640a39c2e95fe1659fb4e21d17478406939fa0ac71e2aa5ad
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23.orig.tar.bz2' gnutls26_2.12.23.orig.tar.bz2 7279415 SHA256:dfa67a7e40727eb0913e75f3c44911d5d8cd58d1ead5acfe73dd933fc0d17ed2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23-12ubuntu2.5.debian.tar.gz' gnutls26_2.12.23-12ubuntu2.5.debian.tar.gz 42150 SHA256:e8b72ef4da666eae5acf7fd083763f702f3c0596f73d430f8de2296ec852f86d
-```
 
 ### `dpkg` source package: `grep=2.16-1`
 

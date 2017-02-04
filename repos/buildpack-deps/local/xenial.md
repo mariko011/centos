@@ -1291,14 +1291,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The main library is licensed under GNU Lesser`
 - `nonstandard, see below`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.4.10-4ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.1.dsc' gnutls28_3.4.10-4ubuntu1.1.dsc 3076 SHA256:54a2c38947f05e398234a0fc569872d809a912cd5b6aa607748e0b418c629dc0
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10.orig.tar.xz' gnutls28_3.4.10.orig.tar.xz 6645892 SHA256:6a32c2b4acbd33ff7eefcbd1357009da04c94c60146ef61320b6c076b1bdf59f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.1.debian.tar.xz' gnutls28_3.4.10-4ubuntu1.1.debian.tar.xz 89972 SHA256:9628277f5abdcf14c9309d08642797ca31e65f9ff304c97f1822bdee29c159ac
-```
 
 ### `dpkg` source package: `gobject-introspection=1.46.0-3ubuntu1`
 
@@ -2902,14 +2896,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-59.80
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-59.80.dsc' linux_4.4.0-59.80.dsc 9611 SHA256:deda329c42b8c073ebb1d60f35ef5ef698e0c8ad226a401fa8dd525862692836
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-59.80.diff.gz' linux_4.4.0-59.80.diff.gz 12308954 SHA256:230aac7d25352726d70e32939390fb58f80811363ceef6fe742445d06ac67aa2
-```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu0.2`
 

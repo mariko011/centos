@@ -581,14 +581,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls26/copyright`)
 - `LGPL-2.1`
 - `The main library is licensed under GNU Lesser General Public`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls26=2.12.14-5ubuntu3.12
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.14-5ubuntu3.12.dsc' gnutls26_2.12.14-5ubuntu3.12.dsc 2685 SHA256:f3bc549347767354be62b95fe658f7d84c44c969e18a60978a347f96186c6568
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.14.orig.tar.bz2' gnutls26_2.12.14.orig.tar.bz2 7166618 SHA256:5ee72ba6de7a23cf315792561954451e022dac8730149ca95f93c61e95be2ce3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.14-5ubuntu3.12.debian.tar.gz' gnutls26_2.12.14-5ubuntu3.12.debian.tar.gz 35948 SHA256:c176f6be99db183b2d0a11a1f5b0165799057c81b72c5e0f609ec18694362940
-```
 
 ### `dpkg` source package: `grep=2.10-1`
 
