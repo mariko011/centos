@@ -1,15 +1,15 @@
-# `node:7.4.0`
+# `node:7.5.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b554dc4860d7f0401135ac3745a361e19139aa1af07f0284d20eb13f3522e423`
-- Created: `2017-01-18T01:01:56.875888728Z`
+- Image ID: `sha256:efe7b69d7b719f3482bcb3cd761ab3136d7ef6fac6c741afa135c1cc2270e967`
+- Created: `2017-02-01T16:59:51.562928849Z`
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=7.4.0`
+  - `NODE_VERSION=7.5.0`
 
 ## `dpkg` (`.deb`-based packages)
 
