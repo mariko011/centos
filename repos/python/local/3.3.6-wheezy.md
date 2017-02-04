@@ -3349,19 +3349,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb7u1
-'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb7u1.dsc' openssl_1.0.1t-1+deb7u1.dsc 2214 SHA256:b890cf83122acfee7a53286213f4d24aefe68ee475e93ffad7ff499bb7dd8be4
-'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb7u1.debian.tar.gz' openssl_1.0.1t-1+deb7u1.debian.tar.gz 115607 SHA256:61a86bcd63f23f4f01d29b3226164205873363ea1ac214ece995eab021957ca6
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb7u1/
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.12-3`
 
