@@ -1307,14 +1307,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The main library is licensed under GNU Lesser`
 - `nonstandard, see below`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.4.10-4ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.1.dsc' gnutls28_3.4.10-4ubuntu1.1.dsc 3076 SHA256:54a2c38947f05e398234a0fc569872d809a912cd5b6aa607748e0b418c629dc0
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10.orig.tar.xz' gnutls28_3.4.10.orig.tar.xz 6645892 SHA256:6a32c2b4acbd33ff7eefcbd1357009da04c94c60146ef61320b6c076b1bdf59f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.1.debian.tar.xz' gnutls28_3.4.10-4ubuntu1.1.debian.tar.xz 89972 SHA256:9628277f5abdcf14c9309d08642797ca31e65f9ff304c97f1822bdee29c159ac
-```
 
 ### `dpkg` source package: `graphite2=1.3.6-1ubuntu1`
 
