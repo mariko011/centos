@@ -2,14 +2,14 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:61d5bdb7513b6ae356b81afe27115c84ff7737eca3c1dab984586de20400d79e`
-- Created: `2017-01-24T17:43:30.603805979Z`
+- Image ID: `sha256:0eced3d6e1c25fcccc41a3c1f483550d9b34c569e4c27c4f02777e3d2fb577f1`
+- Created: `2017-02-01T19:37:07.175920449Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["telegraf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `TELEGRAF_VERSION=1.2.0`
+  - `TELEGRAF_VERSION=1.2.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -792,14 +792,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls-openssl27/copyright`, `/usr/sh
 - `LGPL-2.1`
 - `The main library is licensed under GNU Lesser General Public`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls26=2.12.23-12ubuntu2.5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23-12ubuntu2.5.dsc' gnutls26_2.12.23-12ubuntu2.5.dsc 2722 SHA256:2d225e1190fac67640a39c2e95fe1659fb4e21d17478406939fa0ac71e2aa5ad
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23.orig.tar.bz2' gnutls26_2.12.23.orig.tar.bz2 7279415 SHA256:dfa67a7e40727eb0913e75f3c44911d5d8cd58d1ead5acfe73dd933fc0d17ed2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23-12ubuntu2.5.debian.tar.gz' gnutls26_2.12.23-12ubuntu2.5.debian.tar.gz 42150 SHA256:e8b72ef4da666eae5acf7fd083763f702f3c0596f73d430f8de2296ec852f86d
-```
 
 ### `dpkg` source package: `grep=2.16-1`
 
@@ -2532,11 +2526,11 @@ $ apt-get source -qq --print-uris tar=1.27.1-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.27.1-1ubuntu0.1.debian.tar.gz' tar_1.27.1-1ubuntu0.1.debian.tar.gz 22769 SHA256:e22697f2b43f792a61683d9af9ed78ea7dd2d3927a94573ab90d9ada21df25e2
 ```
 
-### `dpkg` source package: `telegraf=1.2.0-1`
+### `dpkg` source package: `telegraf=1.2.1-1`
 
 Binary Packages:
 
-- `telegraf=1.2.0-1`
+- `telegraf=1.2.1-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
