@@ -163,19 +163,8 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bash=4.4-2
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4-2.dsc' bash_4.4-2.dsc 2229 SHA256:b19a65fe01d13a457cd29261557a8c7d731d9127ebe5696d2130a30374ec4644
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4.orig.tar.xz' bash_4.4.orig.tar.xz 4878580 SHA256:819ebb6a23799e9e4ca56ac579778c46902005bd5ade4f131ed293d9f77108e7
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4-2.debian.tar.xz' bash_4.4-2.debian.tar.xz 61272 SHA256:912b60da8f84db158c734e912a0fe8c4babd1df760a58b17d0bd9d12bf6a96c8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/bash/4.4-2/
-- https://sources.debian.net/src/bash/4.4-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bzip2=1.0.6-8`
 
@@ -191,9 +180,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris bzip2=1.0.6-8
-'http://deb.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.6-8.dsc' bzip2_1.0.6-8.dsc 2042 SHA256:46df0e8112487065532829f2340ffd6ca64d46b6ab01b0000694751d3e67fb11
+'http://deb.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.6-8.1.dsc' bzip2_1.0.6-8.1.dsc 2082 SHA256:d80deed11a1419ad090cb486dd2335850fd8719b809c32002dea04b485f55dbd
 'http://deb.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.6.orig.tar.bz2' bzip2_1.0.6.orig.tar.bz2 708737 SHA256:d70a9ccd8bdf47e302d96c69fecd54925f45d9c7b966bb4ef5f56b770960afa7
-'http://deb.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.6-8.debian.tar.bz2' bzip2_1.0.6-8.debian.tar.bz2 59494 SHA256:60fe87fd3942c385e5921786255a27daf9a962ebc7301a60dfd8d1e1a5c8ce78
+'http://deb.debian.org/debian/pool/main/b/bzip2/bzip2_1.0.6-8.1.debian.tar.bz2' bzip2_1.0.6-8.1.debian.tar.bz2 59875 SHA256:bdbe7bf29e014e44d79bb7c733fe63cae990ab50882a4a07867cf69c61ad72b7
 ```
 
 Likely also available for browsing at:
@@ -663,19 +652,8 @@ Licenses: (parsed from: `/usr/share/doc/grep/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris grep=2.27-1
-'http://deb.debian.org/debian/pool/main/g/grep/grep_2.27-1.dsc' grep_2.27-1.dsc 2053 SHA256:c52e8a3bdae428e786a87aa5501faac621d4d0b017cf0bc2d8f5abd866fd5aac
-'http://deb.debian.org/debian/pool/main/g/grep/grep_2.27.orig.tar.xz' grep_2.27.orig.tar.xz 1360388 SHA256:ad4cc44d23074a1c3a8baae8fbafff2a8c60f38a9a6108f985eef6fbee6dcaeb
-'http://deb.debian.org/debian/pool/main/g/grep/grep_2.27-1.debian.tar.bz2' grep_2.27-1.debian.tar.bz2 109032 SHA256:1b99fff124d0a46e97fdb2f67f556d0684c0027ef6f7902f7c421b8828a3eaaa
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/grep/2.27-1/
-- https://sources.debian.net/src/grep/2.27-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gzip=1.6-5`
 
@@ -1477,19 +1455,8 @@ Licenses: (parsed from: `/usr/share/doc/libreadline7/copyright`, `/usr/share/doc
 - `GFDL`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris readline=7.0-1
-'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0-1.dsc' readline_7.0-1.dsc 2505 SHA256:d3176f0ab485483d077d176df51a9e2fcac3e8bb0b96bd191dc95c9fad7f57ca
-'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0.orig.tar.gz' readline_7.0.orig.tar.gz 2910016 SHA256:750d437185286f40a369e1e4f4764eda932b9459b5ec9a731628393dd3d32334
-'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0-1.debian.tar.xz' readline_7.0-1.debian.tar.xz 28516 SHA256:814a15c6dc5fad46bfbeb869f2cafe73ca6052e21dbe3ffafb8ea317b5e1cd00
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/readline/7.0-1/
-- https://sources.debian.net/src/readline/7.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sed=4.2.2-8`
 
@@ -1553,20 +1520,8 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.16.2-1
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2-1.dsc' sqlite3_3.16.2-1.dsc 2510 SHA256:b6afcec74bcb5460e95e41f538946c4b084ef63308b6c32d5ff7a1e7636bfc18
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2.orig-www.tar.xz' sqlite3_3.16.2.orig-www.tar.xz 3383968 SHA256:d5dd3de405c55c63c9f99fbfcf3defc91a54a81b5656c510cd46544aaed134fa
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2.orig.tar.xz' sqlite3_3.16.2.orig.tar.xz 5634120 SHA256:bf7b1e8ea7577253b7f8a8287d111d542d1792cf1768edc66541ac851ff92453
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2-1.debian.tar.xz' sqlite3_3.16.2-1.debian.tar.xz 16744 SHA256:3a7e30c8ceca28a6c61567c39adb80e19641a317c7ad17d064e5f24981d97c1e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sqlite3/3.16.2-1/
-- https://sources.debian.net/src/sqlite3/3.16.2-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `systemd=232-8`
 
