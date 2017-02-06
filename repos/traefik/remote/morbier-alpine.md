@@ -1,0 +1,55 @@
+## `traefik:morbier-alpine`
+
+```console
+$ docker pull traefik@sha256:f32b16c7a65a94b245adfd8d6bdb44707f4aae020e52fb6ca2de4ae76bb55bbf
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `traefik:morbier-alpine` - linux; amd64
+
+-	Docker Version: 1.12.6
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **14.1 MB (14099984 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:aaaa7788421450a0e43adda655f614fbf553c23b302e8552339afd9718b0e3d7`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["--help"]`
+
+```dockerfile
+# Tue, 27 Dec 2016 18:17:13 GMT
+ADD file:eeed5f514a35d18fcd9cbfe6c40c582211020bffdd53e4799018d33826fe5067 in / 
+# Tue, 27 Dec 2016 22:08:21 GMT
+RUN apk --update upgrade     && apk --no-cache --no-progress add ca-certificates     && rm -rf /var/cache/apk/*
+# Mon, 06 Feb 2017 22:27:27 GMT
+COPY file:1fa9f4d84cd3d6a6c058a5b70c0341124941540e2568f7e4fc92c3b79624c67f in /usr/local/bin/ 
+# Mon, 06 Feb 2017 22:27:28 GMT
+COPY file:41f5bd1ea0a61e819b7d8c5489c305d4f2798046917dd6b6695318f555981727 in / 
+# Mon, 06 Feb 2017 22:27:28 GMT
+EXPOSE 80/tcp
+# Mon, 06 Feb 2017 22:27:29 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Mon, 06 Feb 2017 22:27:29 GMT
+CMD ["--help"]
+# Mon, 06 Feb 2017 22:27:30 GMT
+LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io org.label-schema.name=Traefik org.label-schema.description=A modern reverse-proxy org.label-schema.version=v1.2.0-rc1 org.label-schema.docker.schema-version=1.0
+```
+
+-	Layers:
+	-	`sha256:b7f33cc0b48ea4fb2f0745def58c25483a5f6b7aed5b41ce8f1cb6e17f5723cf`  
+		Last Modified: Tue, 27 Dec 2016 18:18:49 GMT  
+		Size: 2.3 MB (2313090 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6c1bb5764098d6c54914885aa0f3b9c3291affe6a45b107bb34d8dd9a00f6882`  
+		Last Modified: Tue, 27 Dec 2016 22:32:49 GMT  
+		Size: 344.0 KB (343977 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a35bee3a8c2d4ac0fc9c18aa539f72a21e5c9f7c193c8b7abe4893ef5c25920`  
+		Last Modified: Mon, 06 Feb 2017 22:28:47 GMT  
+		Size: 11.4 MB (11442577 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2922571804de4fbbd1b6c702ac3046da9979c31ec00e4e936db5fde1eb3fb24b`  
+		Last Modified: Mon, 06 Feb 2017 22:28:44 GMT  
+		Size: 340.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
