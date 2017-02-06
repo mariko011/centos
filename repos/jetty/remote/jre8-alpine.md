@@ -1,7 +1,7 @@
 ## `jetty:jre8-alpine`
 
 ```console
-$ docker pull jetty@sha256:f32fff783f1626360438eb45de383c4c0ea4259a69b403b90d718bb7bf51b30c
+$ docker pull jetty@sha256:902c4c06dc4032aa833957e5cae51e33e16b680a24f1134fe55769c67a8d5473
 ```
 
 -	Platforms:
@@ -9,11 +9,11 @@ $ docker pull jetty@sha256:f32fff783f1626360438eb45de383c4c0ea4259a69b403b90d718
 
 ### `jetty:jre8-alpine` - linux; amd64
 
--	Docker Version: 1.12.3
+-	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.0 MB (49999722 bytes)**  
+-	Total Size: **50.0 MB (50039603 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9db3279ebc54ffd07f652d06d11caaacd3676bdb32443a7074a08c0aa4ca376`
+-	Image ID: `sha256:fe0572f9828c8b92566705d8e53a31e979e7d81531d6bac47fe149371a07617f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
@@ -48,27 +48,27 @@ WORKDIR /usr/local/jetty
 ENV JETTY_BASE=/var/lib/jetty
 # Tue, 27 Dec 2016 22:16:19 GMT
 RUN mkdir -p "$JETTY_BASE"
-# Tue, 27 Dec 2016 22:16:19 GMT
-ENV JETTY_VERSION=9.3.15.v20161220
-# Tue, 27 Dec 2016 22:16:20 GMT
-ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.3.15.v20161220/jetty-distribution-9.3.15.v20161220.tar.gz
-# Tue, 27 Dec 2016 22:16:20 GMT
-ENV JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D
-# Tue, 27 Dec 2016 22:16:31 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps gnupg coreutils curl 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -r "$GNUPGHOME" 	&& tar -xvzf jetty.tar.gz 	&& mv jetty-distribution-$JETTY_VERSION/* ./ 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm -fr demo-base javadoc 	&& rm jetty.tar.gz* 	&& rm -fr jetty-distribution-$JETTY_VERSION/ 	&& cd $JETTY_BASE 	&& modules="$(grep -- ^--module= "$JETTY_HOME/start.ini" | cut -d= -f2 | paste -d, -s)" 	&& java -jar "$JETTY_HOME/start.jar" --add-to-startd="$modules,setuid" 	&& apk del .build-deps 	&& rm -fr .build-deps 	&& rm -rf /tmp/hsperfdata_root
-# Tue, 27 Dec 2016 22:16:36 GMT
+# Mon, 06 Feb 2017 17:49:11 GMT
+ENV JETTY_VERSION=9.4.1.v20170120
+# Mon, 06 Feb 2017 17:49:12 GMT
+ENV JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.1.v20170120/jetty-home-9.4.1.v20170120.tar.gz
+# Mon, 06 Feb 2017 17:49:12 GMT
+ENV JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	2A684B57436A81FA8706B53C61C3351A438A3B7D
+# Mon, 06 Feb 2017 17:49:39 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps gnupg coreutils curl 	&& curl -SL "$JETTY_TGZ_URL" -o jetty.tar.gz 	&& curl -SL "$JETTY_TGZ_URL.asc" -o jetty.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in $JETTY_GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; done 	&& gpg --batch --verify jetty.tar.gz.asc jetty.tar.gz 	&& rm -r "$GNUPGHOME" 	&& tar -xvzf jetty.tar.gz 	&& mv jetty-home-$JETTY_VERSION/* ./ 	&& sed -i '/jetty-logging/d' etc/jetty.conf 	&& rm jetty.tar.gz* 	&& rm -fr jetty-home-$JETTY_VERSION/ 	&& cd $JETTY_BASE 	&& java -jar "$JETTY_HOME/start.jar" --create-startd --add-to-start="server,http,deploy,jsp,jstl,ext,resources,websocket,setuid" 	&& apk del .build-deps 	&& rm -fr .build-deps 	&& rm -rf /tmp/hsperfdata_root
+# Mon, 06 Feb 2017 17:49:46 GMT
 WORKDIR /var/lib/jetty
-# Tue, 27 Dec 2016 22:16:37 GMT
+# Mon, 06 Feb 2017 17:49:47 GMT
 ENV TMPDIR=/tmp/jetty
-# Tue, 27 Dec 2016 22:16:38 GMT
+# Mon, 06 Feb 2017 17:49:48 GMT
 RUN set -xe 	&& mkdir -p "$TMPDIR" 	&& chown -R jetty:jetty "$TMPDIR" "$JETTY_BASE"
-# Tue, 27 Dec 2016 22:16:39 GMT
+# Mon, 06 Feb 2017 17:49:49 GMT
 COPY file:4f7da2906a90932cfb90db54a45ee08f86b17253747db62085f7512c9efd46ad in / 
-# Tue, 27 Dec 2016 22:16:50 GMT
+# Mon, 06 Feb 2017 17:49:50 GMT
 EXPOSE 8080/tcp
-# Tue, 27 Dec 2016 22:16:51 GMT
+# Mon, 06 Feb 2017 17:49:50 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 27 Dec 2016 22:16:51 GMT
+# Mon, 06 Feb 2017 17:49:51 GMT
 CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
@@ -97,15 +97,15 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Last Modified: Tue, 27 Dec 2016 22:45:12 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e01f35cefa41f885359182df460ddffe0930efcde9971b0c28454a6fde445554`  
-		Last Modified: Tue, 27 Dec 2016 22:45:12 GMT  
-		Size: 8.0 MB (8012385 bytes)  
+	-	`sha256:6d28d2c2c12de4738ef22d4cf81cfa8bfe72c4a14625fc9a32e3d5054ff0d4a6`  
+		Last Modified: Mon, 06 Feb 2017 17:54:30 GMT  
+		Size: 8.1 MB (8051873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1334e08dec5b9e1014a8795a97efdf76b18943a695937f4f23d374b5577d254f`  
-		Last Modified: Tue, 27 Dec 2016 22:45:11 GMT  
-		Size: 1.9 KB (1865 bytes)  
+	-	`sha256:1cb825906e3449dc51a4b45abe5ca49f64adf62ce7780000b19cfdb9aa59e638`  
+		Last Modified: Mon, 06 Feb 2017 17:54:29 GMT  
+		Size: 2.3 KB (2258 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:624a0edf4cb8ff57e4a7a85ad947171ae07fb4f9fe17955becf2b4dfe2271bd4`  
-		Last Modified: Tue, 27 Dec 2016 22:45:11 GMT  
+	-	`sha256:a64be77d389554e733d78b1bc1355ed5f7078f534a7890a34967cd9ebddf682a`  
+		Last Modified: Mon, 06 Feb 2017 17:54:29 GMT  
 		Size: 571.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

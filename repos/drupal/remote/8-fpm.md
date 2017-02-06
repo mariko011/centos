@@ -1,7 +1,7 @@
 ## `drupal:8-fpm`
 
 ```console
-$ docker pull drupal@sha256:cc10eb388968b2c128cd608a3a66f27a6fc6ac421d8590ef415825c1d33faab5
+$ docker pull drupal@sha256:0c6e17829a50eeb9f119e6a7af20d40a224da3ed1dacd1b48ab3361dfd10fa19
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull drupal@sha256:cc10eb388968b2c128cd608a3a66f27a6fc6ac421d8590ef4158
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **173.6 MB (173641054 bytes)**  
+-	Total Size: **173.7 MB (173667511 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58e7289ca8b9224f427e450b58c64466770fb3c7de86ace42e2b8301a3a8f163`
+-	Image ID: `sha256:d19f3706d3be65f7ee2c5a5bcbe5250cededd332abf3577676313145b3d05102`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -70,11 +70,11 @@ RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& 
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 # Tue, 24 Jan 2017 21:14:36 GMT
 WORKDIR /var/www/html
-# Tue, 24 Jan 2017 21:14:36 GMT
-ENV DRUPAL_VERSION=8.2.5
-# Tue, 24 Jan 2017 21:14:37 GMT
-ENV DRUPAL_MD5=4bfd35c34ce1b4ba5bac2d18e0d6b5c9
-# Tue, 24 Jan 2017 21:14:43 GMT
+# Mon, 06 Feb 2017 17:44:38 GMT
+ENV DRUPAL_VERSION=8.2.6
+# Mon, 06 Feb 2017 17:44:39 GMT
+ENV DRUPAL_MD5=57526a827771ea8a06db1792f1602a85
+# Mon, 06 Feb 2017 17:44:45 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites modules themes
 ```
 
@@ -123,7 +123,7 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Tue, 24 Jan 2017 21:18:53 GMT  
 		Size: 333.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62d7ce3df71e598e0d6c0cbe5b5db7e7e84ab9e324d3604a4be5c0e6686afec8`  
-		Last Modified: Tue, 24 Jan 2017 21:18:59 GMT  
-		Size: 12.2 MB (12152798 bytes)  
+	-	`sha256:73e0a364548e4fbcc5d00b191e0c5c08c4e10ce1e11126a91c120187e46edfc8`  
+		Last Modified: Mon, 06 Feb 2017 17:47:27 GMT  
+		Size: 12.2 MB (12179255 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
