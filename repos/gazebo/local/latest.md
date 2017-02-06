@@ -2247,14 +2247,8 @@ Licenses: (parsed from: `/usr/share/doc/krb5-locales/copyright`, `/usr/share/doc
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris krb5=1.13.2+dfsg-5ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg-5ubuntu1.dsc' krb5_1.13.2+dfsg-5ubuntu1.dsc 3516 SHA256:e9cd28de07bd11086caa4aa052107af107cded1a7ae962721d08adc9d5a23531
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg.orig.tar.gz' krb5_1.13.2+dfsg.orig.tar.gz 11884064 SHA256:a7af3953e4ab52b17f80bdfc2fc7471b66b512b128520796e2b993554543873a
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg-5ubuntu1.debian.tar.xz' krb5_1.13.2+dfsg-5ubuntu1.debian.tar.xz 102928 SHA256:56e3928fefa5f378c63ee32aa6e3d75daf121036752eb0a4640812b7e1fde42a
-```
 
 ### `dpkg` source package: `lame=3.99.5+repack1-9build1`
 
@@ -4266,14 +4260,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-59.80
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-59.80.dsc' linux_4.4.0-59.80.dsc 9611 SHA256:deda329c42b8c073ebb1d60f35ef5ef698e0c8ad226a401fa8dd525862692836
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-59.80.diff.gz' linux_4.4.0-59.80.diff.gz 12308954 SHA256:230aac7d25352726d70e32939390fb58f80811363ceef6fe742445d06ac67aa2
-```
 
 ### `dpkg` source package: `llvm-toolchain-3.8=1:3.8-2ubuntu4`
 

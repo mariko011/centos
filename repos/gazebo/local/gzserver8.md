@@ -1814,14 +1814,8 @@ Licenses: (parsed from: `/usr/share/doc/krb5-locales/copyright`, `/usr/share/doc
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris krb5=1.13.2+dfsg-5ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg-5ubuntu1.dsc' krb5_1.13.2+dfsg-5ubuntu1.dsc 3516 SHA256:e9cd28de07bd11086caa4aa052107af107cded1a7ae962721d08adc9d5a23531
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg.orig.tar.gz' krb5_1.13.2+dfsg.orig.tar.gz 11884064 SHA256:a7af3953e4ab52b17f80bdfc2fc7471b66b512b128520796e2b993554543873a
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.13.2+dfsg-5ubuntu1.debian.tar.xz' krb5_1.13.2+dfsg-5ubuntu1.debian.tar.xz 102928 SHA256:56e3928fefa5f378c63ee32aa6e3d75daf121036752eb0a4640812b7e1fde42a
-```
 
 ### `dpkg` source package: `lame=3.99.5+repack1-9build1`
 
