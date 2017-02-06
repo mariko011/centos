@@ -8,7 +8,7 @@
 ## `clearlinux:latest`
 
 ```console
-$ docker pull clearlinux@sha256:7e54799ab27c3d85b1290433bb5a2686382cec898dde30addb3015b94d514dec
+$ docker pull clearlinux@sha256:e6aafbb809a4b2900afb1b8819f2e0b67d1395e9cd18f1a78a1a7dfadab984d3
 ```
 
 -	Platforms:
@@ -18,30 +18,30 @@ $ docker pull clearlinux@sha256:7e54799ab27c3d85b1290433bb5a2686382cec898dde30ad
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.4 MB (25429094 bytes)**  
+-	Total Size: **26.2 MB (26205221 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:314a10c62fc3c7031d977eca76b5f7e8c56ecf418d65797f55c56bed0b9c8bd4`
+-	Image ID: `sha256:d67ba46a5cb7dbb25298f8ac63ef99b6de5e583e62efac9c12fafc84362ee1e1`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Tue, 30 Aug 2016 00:23:30 GMT
 MAINTAINER William Douglas <william.douglas@intel.com>
-# Sat, 21 Jan 2017 00:07:11 GMT
-ADD file:fed59e54db9ca98be4c4396cf8c07de95ab8ea6df654d4cba98d5a41ec801b46 in / 
-# Sat, 21 Jan 2017 00:07:13 GMT
+# Mon, 06 Feb 2017 19:02:30 GMT
+ADD file:d8b1775bc6237a625eda44f4149bebf12b764f51a7014d8129364570333a42f2 in / 
+# Mon, 06 Feb 2017 19:02:30 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:a1e61f725b67a836ffceea29691d04e33691ab959772a375631870ab90992dc8`  
-		Last Modified: Sat, 21 Jan 2017 00:07:37 GMT  
-		Size: 25.4 MB (25429094 bytes)  
+	-	`sha256:31051f1e6f1d273ef4e078448c0e88ae4c979df98320fa838e84a8fc08d3b13d`  
+		Last Modified: Mon, 06 Feb 2017 19:02:56 GMT  
+		Size: 26.2 MB (26205221 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clearlinux:base`
 
 ```console
-$ docker pull clearlinux@sha256:7e54799ab27c3d85b1290433bb5a2686382cec898dde30addb3015b94d514dec
+$ docker pull clearlinux@sha256:e6aafbb809a4b2900afb1b8819f2e0b67d1395e9cd18f1a78a1a7dfadab984d3
 ```
 
 -	Platforms:
@@ -51,22 +51,22 @@ $ docker pull clearlinux@sha256:7e54799ab27c3d85b1290433bb5a2686382cec898dde30ad
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.4 MB (25429094 bytes)**  
+-	Total Size: **26.2 MB (26205221 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:314a10c62fc3c7031d977eca76b5f7e8c56ecf418d65797f55c56bed0b9c8bd4`
+-	Image ID: `sha256:d67ba46a5cb7dbb25298f8ac63ef99b6de5e583e62efac9c12fafc84362ee1e1`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Tue, 30 Aug 2016 00:23:30 GMT
 MAINTAINER William Douglas <william.douglas@intel.com>
-# Sat, 21 Jan 2017 00:07:11 GMT
-ADD file:fed59e54db9ca98be4c4396cf8c07de95ab8ea6df654d4cba98d5a41ec801b46 in / 
-# Sat, 21 Jan 2017 00:07:13 GMT
+# Mon, 06 Feb 2017 19:02:30 GMT
+ADD file:d8b1775bc6237a625eda44f4149bebf12b764f51a7014d8129364570333a42f2 in / 
+# Mon, 06 Feb 2017 19:02:30 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:a1e61f725b67a836ffceea29691d04e33691ab959772a375631870ab90992dc8`  
-		Last Modified: Sat, 21 Jan 2017 00:07:37 GMT  
-		Size: 25.4 MB (25429094 bytes)  
+	-	`sha256:31051f1e6f1d273ef4e078448c0e88ae4c979df98320fa838e84a8fc08d3b13d`  
+		Last Modified: Mon, 06 Feb 2017 19:02:56 GMT  
+		Size: 26.2 MB (26205221 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
