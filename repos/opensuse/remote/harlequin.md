@@ -1,7 +1,7 @@
 ## `opensuse:harlequin`
 
 ```console
-$ docker pull opensuse@sha256:37a6b9fa4c56ac9a7a4b5201d69ca303cb9c30aeba62e1fc3f653a9699fea681
+$ docker pull opensuse@sha256:3d13bf8c7441f32782fee3caff9487241cfb801c6ac4c3d6a61309e8ce2d50a7
 ```
 
 -	Platforms:
@@ -11,19 +11,19 @@ $ docker pull opensuse@sha256:37a6b9fa4c56ac9a7a4b5201d69ca303cb9c30aeba62e1fc3f
 
 -	Docker Version: 1.12.1
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.0 MB (37974235 bytes)**  
+-	Total Size: **38.0 MB (37969215 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:30d70998b6ae4f3d24d05d0e656a3153eaaae11225650c00e96bb627ad7477b1`
+-	Image ID: `sha256:0b10d0b5009f426b85c399fe45c4253ff321c3f1ac33379bf2ed46715415517e`
 
 ```dockerfile
 # Fri, 14 Oct 2016 17:14:07 GMT
 MAINTAINER SUSE Containers Team <containers@suse.com>
-# Tue, 06 Dec 2016 01:02:46 GMT
-ADD file:126ee68a234ef37ee6c9607790a9ad079a09c31ba6865b0914f10d8330ffb495 in / 
+# Tue, 07 Feb 2017 19:33:00 GMT
+ADD file:fc8ed331bf1edb286936afd8f0c4bd78d7a7aa74e02c6e04fe8cbe33e3f4ba93 in / 
 ```
 
 -	Layers:
-	-	`sha256:0082f8c64aa0da9f73970aceb88c5808ddec8e71ee0528a5360dd062198fefe4`  
-		Last Modified: Tue, 06 Dec 2016 01:04:12 GMT  
-		Size: 38.0 MB (37974235 bytes)  
+	-	`sha256:9c5d6754e619b08a909d2a361c2033b0326a25b74d4338aa58ab1225ef93decb`  
+		Last Modified: Tue, 07 Feb 2017 19:34:08 GMT  
+		Size: 38.0 MB (37969215 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

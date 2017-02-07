@@ -1,7 +1,7 @@
 ## `mongo-express:latest`
 
 ```console
-$ docker pull mongo-express@sha256:250da464c722afe099861b29f61d4f49abd234435ab7ff6936d3c687c17400e6
+$ docker pull mongo-express@sha256:39ea6cc684feb337a10357648dcc2a8c8411f8bf43403105c840519a7478f85f
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull mongo-express@sha256:250da464c722afe099861b29f61d4f49abd234435ab7f
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **100.9 MB (100854958 bytes)**  
+-	Total Size: **100.9 MB (100876920 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08e84c7cfc85c8301b9e60dbfe1092791f2f3c83322d3a71d9834c24d1b0fe31`
+-	Image ID: `sha256:60b7233a44e751baa212a709d1a16550b444bd16667bda933df67c9e506dfc9e`
 -	Default Command: `["tini","--","node","app"]`
 
 ```dockerfile
@@ -43,15 +43,15 @@ RUN set -x 	&& apt-get update && apt-get install -y ca-certificates curl 		--no-
 EXPOSE 8081/tcp
 # Wed, 01 Feb 2017 18:01:38 GMT
 ENV ME_CONFIG_EDITORTHEME=default ME_CONFIG_MONGODB_SERVER=mongo ME_CONFIG_MONGODB_ENABLE_ADMIN=true ME_CONFIG_BASICAUTH_USERNAME= ME_CONFIG_BASICAUTH_PASSWORD= VCAP_APP_HOST=0.0.0.0
-# Wed, 01 Feb 2017 18:01:38 GMT
-ENV MONGO_EXPRESS=0.34.0
-# Wed, 01 Feb 2017 18:01:56 GMT
+# Tue, 07 Feb 2017 18:47:55 GMT
+ENV MONGO_EXPRESS=0.35.0
+# Tue, 07 Feb 2017 18:48:14 GMT
 RUN npm install mongo-express@$MONGO_EXPRESS
-# Wed, 01 Feb 2017 18:01:56 GMT
+# Tue, 07 Feb 2017 18:48:15 GMT
 WORKDIR /node_modules/mongo-express
-# Wed, 01 Feb 2017 18:01:58 GMT
+# Tue, 07 Feb 2017 18:48:16 GMT
 RUN cp config.default.js config.js
-# Wed, 01 Feb 2017 18:01:58 GMT
+# Tue, 07 Feb 2017 18:48:16 GMT
 CMD ["tini" "--" "node" "app"]
 ```
 
@@ -80,11 +80,11 @@ CMD ["tini" "--" "node" "app"]
 		Last Modified: Wed, 01 Feb 2017 18:02:16 GMT  
 		Size: 458.9 KB (458885 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d613aa18650f1fa6b3639a21482b718322085688d3f21301f207f9fbee20268`  
-		Last Modified: Wed, 01 Feb 2017 18:02:20 GMT  
-		Size: 16.4 MB (16381076 bytes)  
+	-	`sha256:dd05b4217212527fd256b358968ef8fc141376a4e3a80988fc1c68fa62fb01ad`  
+		Last Modified: Tue, 07 Feb 2017 18:48:37 GMT  
+		Size: 16.4 MB (16402994 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7e4bdd7ee06a10460618f1baadc5998a87b444a0a5208e1732528dd52cf290df`  
-		Last Modified: Wed, 01 Feb 2017 18:02:16 GMT  
-		Size: 2.7 KB (2671 bytes)  
+	-	`sha256:4fdde6cfc34deb2af61944b1ca46c0e7ee7f5fab341a738215e06db1d8b1c87b`  
+		Last Modified: Tue, 07 Feb 2017 18:48:34 GMT  
+		Size: 2.7 KB (2715 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
