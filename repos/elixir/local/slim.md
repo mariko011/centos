@@ -2,13 +2,13 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:90e8e2fe49afc653d1347a75556e20dc71ccf9eec3d9f2d39d47126fb17b29a6`
-- Created: `2017-01-30T17:31:09.786954869Z`
+- Image ID: `sha256:c12c7064270c7cfe96f1d7324769c2c4fc1913d35e724e28031a398fd2b1d890`
+- Created: `2017-02-03T19:55:05.15995907Z`
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=19.2`
+  - `OTP_VERSION=19.2.2`
   - `ELIXIR_VERSION=v1.4.1`
   - `LANG=C.UTF-8`
 
@@ -2622,11 +2622,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u2/
 - https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb8u5`
+### `dpkg` source package: `openssl=1.0.1t-1+deb8u6`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1t-1+deb8u5`
+- `libssl1.0.0:amd64=1.0.1t-1+deb8u6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2635,16 +2635,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u5
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u5.dsc' openssl_1.0.1t-1+deb8u5.dsc 2258 SHA256:165eb617542ab1e9bf810c215b586a57b926f3f6977c1a72af752754c7c90bea
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u5.debian.tar.xz' openssl_1.0.1t-1+deb8u5.debian.tar.xz 106720 SHA256:c6723fbf370ec5544c9b1753d5ad06d4b343a341560fb8650dda135506312cd9
+$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u6
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u6.dsc' openssl_1.0.1t-1+deb8u6.dsc 2272 SHA256:c5d2624a9b9de16a8d173c852e84f175757ee838cd3b5efe44683b96a6aa927b
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u6.debian.tar.xz' openssl_1.0.1t-1+deb8u6.debian.tar.xz 108424 SHA256:670935107107c20c872174c96c0cd098ffc2c15cac17f5a104af63a1db69cf3a
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u6/
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
