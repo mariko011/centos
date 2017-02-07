@@ -4111,14 +4111,8 @@ Licenses: (parsed from: `/usr/share/doc/libnettle4/copyright`)
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nettle=2.7.1-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_2.7.1-1ubuntu0.1.dsc' nettle_2.7.1-1ubuntu0.1.dsc 2142 SHA256:136eee2aa375a09545ce30309c6e75cadd0ffdc539902e9a555b51cb9f49dbc6
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_2.7.1.orig.tar.gz' nettle_2.7.1.orig.tar.gz 1558863 SHA256:bc71ebd43435537d767799e414fce88e521b7278d48c860651216e1fc6555b40
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_2.7.1-1ubuntu0.1.debian.tar.gz' nettle_2.7.1-1ubuntu0.1.debian.tar.gz 21339 SHA256:42abda3662f6b0a7c19c0148c14f6e61eef3246e5ff7c92bd8769a4718839188
-```
 
 ### `dpkg` source package: `newt=0.52.15-2ubuntu5`
 
