@@ -1,14 +1,14 @@
-# `rakudo-star:2016.11`
+# `rakudo-star:2017.01`
 
 ## Docker Metadata
 
-- Image ID: `sha256:04108c39e52dcea401ee72a79941e018bbd46166d423b4a747bd56d9311ca355`
-- Created: `2017-01-17T20:05:18.707710841Z`
+- Image ID: `sha256:81c3d8cafb94fe8264b5cd91d40aceae139cb207e201453a87308f46ab47ed8a`
+- Created: `2017-02-06T17:30:51.787985116Z`
 - Arch: `linux`/`amd64`
 - Command: `["perl6"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/site/bin`
-  - `rakudo_version=2016.11`
+  - `rakudo_version=2017.01`
 
 ## `dpkg` (`.deb`-based packages)
 
