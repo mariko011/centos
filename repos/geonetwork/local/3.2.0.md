@@ -2270,19 +2270,8 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openjdk-8=8u111-b14-2~bpo8+1
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u111-b14-2~bpo8+1.dsc' openjdk-8_8u111-b14-2~bpo8+1.dsc 4467 SHA256:2d87581b8eff48856a00aa4f998eff74125fcdcd4ee36c4e90761d20a5d6901d
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u111-b14.orig.tar.gz' openjdk-8_8u111-b14.orig.tar.gz 63946090 SHA256:353e7382c88bcf2b10d673b9b305c87ed733bd00c02b8497c565b37741ae1c30
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u111-b14-2~bpo8+1.debian.tar.xz' openjdk-8_8u111-b14-2~bpo8+1.debian.tar.xz 235244 SHA256:f2190a03825e4e5af03cea44a24b7f091803788a6cd14a40ad708b5efa85b5e9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openjdk-8/8u111-b14-2~bpo8+1/
-- https://sources.debian.net/src/openjdk-8/8u111-b14-2~bpo8+1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.40+dfsg-1+deb8u2`
 
