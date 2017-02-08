@@ -1,9 +1,9 @@
-# `solr:6.4.0-alpine`
+# `solr:6.4.1-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d7d5cd65f0e32c07878d611482ff4a832191d1b34e3e1d7cf1f552923b0b98c9`
-- Created: `2017-02-03T00:44:07.975812513Z`
+- Image ID: `sha256:2c632df612af1da04896bfe628462e7af936f6a2884780fddb00f79c7701f83a`
+- Created: `2017-02-06T22:21:56.615905149Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["solr-foreground"]`
@@ -15,8 +15,8 @@
   - `JAVA_ALPINE_VERSION=8.111.14-r0`
   - `SOLR_USER=solr`
   - `SOLR_UID=8983`
-  - `SOLR_KEY=478EEF7066AD843EC4812769707B7D9F6FDB8105`
+  - `SOLR_KEY=E6E21FFCDCEA14C95910EA65051A0FAF76BC6507`
   - `GPG_KEYSERVER=hkp://ha.pool.sks-keyservers.net`
-  - `SOLR_VERSION=6.4.0`
-  - `SOLR_SHA256=1213ae09023058ea1cbd971a1b585f891fb63fa76e128611031bfc28c749b502`
-  - `SOLR_URL=https://archive.apache.org/dist/lucene/solr/6.4.0/solr-6.4.0.tgz`
+  - `SOLR_VERSION=6.4.1`
+  - `SOLR_SHA256=ebce206dd4a66600384ccdd9a604536135594ce4c24814bbd5a3e8a8ec1efbb9`
+  - `SOLR_URL=https://archive.apache.org/dist/lucene/solr/6.4.1/solr-6.4.1.tgz`
