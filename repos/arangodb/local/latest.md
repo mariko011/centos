@@ -2,20 +2,20 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f7b99b75560a2203d9a5dbe80f5e2c96f65ad189f68514471cd385d9ada02072`
-- Created: `2017-02-03T21:43:33.663767745Z`
+- Image ID: `sha256:5aa989580ba8a80aef9e9a47c58560981581ceccfe2e753566f0fb4a60d9b0f0`
+- Created: `2017-02-06T17:50:55.364988982Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["arangod"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `ARCHITECTURE=amd64`
-  - `DEB_PACKAGE_VERSION=1`
+  - `DEB_PACKAGE_VERSION=2`
   - `ARANGO_VERSION=3.1.10`
   - `ARANGO_URL=https://www.arangodb.com/repositories/arangodb31/Debian_8.0`
-  - `ARANGO_PACKAGE=arangodb3-3.1.10-1_amd64.deb`
-  - `ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb31/Debian_8.0/amd64/arangodb3-3.1.10-1_amd64.deb`
-  - `ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb31/Debian_8.0/amd64/arangodb3-3.1.10-1_amd64.deb.asc`
+  - `ARANGO_PACKAGE=arangodb3-3.1.10-2_amd64.deb`
+  - `ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb31/Debian_8.0/amd64/arangodb3-3.1.10-2_amd64.deb`
+  - `ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb31/Debian_8.0/amd64/arangodb3-3.1.10-2_amd64.deb.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
