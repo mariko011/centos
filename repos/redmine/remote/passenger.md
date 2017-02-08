@@ -1,7 +1,7 @@
 ## `redmine:passenger`
 
 ```console
-$ docker pull redmine@sha256:09d79bf96427ddfcc3e51c1b75612f8f07eaaa62675007dc4e790f242e59baa6
+$ docker pull redmine@sha256:959f658676033254221d5db8fd4970fc7037eeec4b87a1c4266f71db94d8f685
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull redmine@sha256:09d79bf96427ddfcc3e51c1b75612f8f07eaaa62675007dc4e7
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **264.2 MB (264216661 bytes)**  
+-	Total Size: **265.9 MB (265946222 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1fd68dd4485ad212f2d977dc8167622eab08fa84438ba2081d6370eed7443767`
+-	Image ID: `sha256:64c6305b6d97f2bc923df2ef9e671a81602af45f07392a67ed3a466b8a9d16d0`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["passenger","start"]`
 
@@ -90,9 +90,9 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 ENV PASSENGER_VERSION=5.1.2
 # Wed, 25 Jan 2017 19:15:44 GMT
 RUN buildDeps=' 		make 	' 	&& set -x 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& gem install passenger --version "$PASSENGER_VERSION" 	&& apt-get purge -y --auto-remove $buildDeps
-# Wed, 25 Jan 2017 19:15:45 GMT
-RUN set -x 	&& passenger-config install-agent 	&& passenger-config install-standalone-runtime
-# Wed, 25 Jan 2017 19:15:46 GMT
+# Wed, 08 Feb 2017 21:47:16 GMT
+RUN set -x 	&& passenger-config install-agent 	&& passenger-config download-nginx-engine
+# Wed, 08 Feb 2017 21:47:16 GMT
 CMD ["passenger" "start"]
 ```
 
@@ -161,7 +161,7 @@ CMD ["passenger" "start"]
 		Last Modified: Wed, 25 Jan 2017 19:20:27 GMT  
 		Size: 15.5 MB (15505038 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:562e9a8b6512c649e5fea99e9237381478595acbc54be9abfa26a7babdb5e96d`  
-		Last Modified: Wed, 25 Jan 2017 19:20:25 GMT  
-		Size: 2.3 MB (2336649 bytes)  
+	-	`sha256:6710dbee80e095f670b73b200725457f1524b95ee61fe60882888433cb29cc43`  
+		Last Modified: Wed, 08 Feb 2017 21:51:00 GMT  
+		Size: 4.1 MB (4066210 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
