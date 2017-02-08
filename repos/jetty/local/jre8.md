@@ -1,9 +1,9 @@
-# `jetty:9.3.15`
+# `jetty:9.4.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9642e13a1a5e26bd2308d2d0e11e0eb985f47d03a30f2e6af75ad300f3cad7c8`
-- Created: `2017-01-18T00:38:43.763784338Z`
+- Image ID: `sha256:12b39163eacb5b414fc6176e22c2d91b7c3f1c5f05bee9f41520db3fe8b20bcf`
+- Created: `2017-02-07T21:02:38.311849091Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["java","-jar","/usr/local/jetty/start.jar"]`
@@ -11,13 +11,13 @@
   - `PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre`
-  - `JAVA_VERSION=8u111`
-  - `JAVA_DEBIAN_VERSION=8u111-b14-2~bpo8+1`
-  - `CA_CERTIFICATES_JAVA_VERSION=20140324`
+  - `JAVA_VERSION=8u121`
+  - `JAVA_DEBIAN_VERSION=8u121-b13-1~bpo8+1`
+  - `CA_CERTIFICATES_JAVA_VERSION=20161107~bpo8+1`
   - `JETTY_HOME=/usr/local/jetty`
-  - `JETTY_VERSION=9.3.15.v20161220`
-  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/9.3.15.v20161220/jetty-distribution-9.3.15.v20161220.tar.gz`
-  - `JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D`
+  - `JETTY_VERSION=9.4.1.v20170120`
+  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.1.v20170120/jetty-home-9.4.1.v20170120.tar.gz`
+  - `JETTY_GPG_KEYS=B59B67FD7904984367F931800818D9D68FB67BAC 	2A684B57436A81FA8706B53C61C3351A438A3B7D`
   - `JETTY_BASE=/var/lib/jetty`
   - `TMPDIR=/tmp/jetty`
 
@@ -272,11 +272,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/bzip2/1.0.6-7/
 - https://sources.debian.net/src/bzip2/1.0.6-7/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `ca-certificates-java=20140324`
+### `dpkg` source package: `ca-certificates-java=20161107~bpo8+1`
 
 Binary Packages:
 
-- `ca-certificates-java=20140324`
+- `ca-certificates-java=20161107~bpo8+1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates-java/copyright`)
 
@@ -285,15 +285,15 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates-java/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates-java=20140324
-'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20140324.dsc' ca-certificates-java_20140324.dsc 1839 SHA256:c43e617f08f2201bd484fc9943535bbb2750ce3093cdbcdeee3d1d4b1046f0cf
-'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20140324.tar.xz' ca-certificates-java_20140324.tar.xz 15632 SHA256:fd369f31b30dcfcf73465bc1f9edaab2867d9fed8373ebc5326dac4c96ffc08e
+$ apt-get source -qq --print-uris ca-certificates-java=20161107~bpo8+1
+'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20161107~bpo8+1.dsc' ca-certificates-java_20161107~bpo8+1.dsc 1887 SHA256:a73671a95ce5480353d9f5082c3cb2a372d316f45f5274d89623d6bf33eb4222
+'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20161107~bpo8+1.tar.xz' ca-certificates-java_20161107~bpo8+1.tar.xz 15972 SHA256:908902ec1623019d7e77c28006acc806d9bb3310909e74ddeae27b5266857895
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/ca-certificates-java/20140324/
-- https://sources.debian.net/src/ca-certificates-java/20140324/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/ca-certificates-java/20161107~bpo8+1/
+- https://sources.debian.net/src/ca-certificates-java/20161107~bpo8+1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ca-certificates=20141019+deb8u2`
 
@@ -1310,11 +1310,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/krb5/1.12.1+dfsg-19+deb8u2/
 - https://sources.debian.net/src/krb5/1.12.1+dfsg-19+deb8u2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `lcms2=2.6-3`
+### `dpkg` source package: `lcms2=2.6-3+deb8u1`
 
 Binary Packages:
 
-- `liblcms2-2:amd64=2.6-3+b3`
+- `liblcms2-2:amd64=2.6-3+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 
@@ -1325,16 +1325,16 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris lcms2=2.6-3
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.6-3.dsc' lcms2_2.6-3.dsc 2090 SHA256:679674cc000015f583c9813a1514ae8f4ebf2c354657bcc41552bce6a65d6f74
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.6.orig.tar.gz' lcms2_2.6.orig.tar.gz 4583389 SHA256:5172528839647c54c3da211837225e221be93e4733f5b5e9f57668f7107e14b1
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.6-3.debian.tar.xz' lcms2_2.6-3.debian.tar.xz 2416412 SHA256:992bf65f7edc2cd65d00914fe73abdc0d2d70c152c7fe18c001c17a69572ad34
+$ apt-get source -qq --print-uris lcms2=2.6-3+deb8u1
+'http://security.debian.org/pool/updates/main/l/lcms2/lcms2_2.6-3+deb8u1.dsc' lcms2_2.6-3+deb8u1.dsc 2287 SHA256:c81475db156883e857dd6c456e8a22e6554c6fb0f8e47622915a76d716d1ee5e
+'http://security.debian.org/pool/updates/main/l/lcms2/lcms2_2.6.orig.tar.gz' lcms2_2.6.orig.tar.gz 4583389 SHA256:5172528839647c54c3da211837225e221be93e4733f5b5e9f57668f7107e14b1
+'http://security.debian.org/pool/updates/main/l/lcms2/lcms2_2.6-3+deb8u1.debian.tar.xz' lcms2_2.6-3+deb8u1.debian.tar.xz 2416964 SHA256:81fcf1658e51d55408143e91b1c3469a63f3b4607e92604bd8a18dd8d6435d05
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/lcms2/2.6-3/
-- https://sources.debian.net/src/lcms2/2.6-3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/lcms2/2.6-3+deb8u1/
+- https://sources.debian.net/src/lcms2/2.6-3+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libcap-ng=0.7.4-2`
 
@@ -2225,11 +2225,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nss/2:3.26-1+debu8u1/
 - https://sources.debian.net/src/nss/2:3.26-1+debu8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openjdk-8=8u111-b14-2~bpo8+1`
+### `dpkg` source package: `openjdk-8=8u121-b13-1~bpo8+1`
 
 Binary Packages:
 
-- `openjdk-8-jre-headless:amd64=8u111-b14-2~bpo8+1`
+- `openjdk-8-jre-headless:amd64=8u121-b13-1~bpo8+1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 
@@ -2241,16 +2241,16 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-8=8u111-b14-2~bpo8+1
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u111-b14-2~bpo8+1.dsc' openjdk-8_8u111-b14-2~bpo8+1.dsc 4467 SHA256:2d87581b8eff48856a00aa4f998eff74125fcdcd4ee36c4e90761d20a5d6901d
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u111-b14.orig.tar.gz' openjdk-8_8u111-b14.orig.tar.gz 63946090 SHA256:353e7382c88bcf2b10d673b9b305c87ed733bd00c02b8497c565b37741ae1c30
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u111-b14-2~bpo8+1.debian.tar.xz' openjdk-8_8u111-b14-2~bpo8+1.debian.tar.xz 235244 SHA256:f2190a03825e4e5af03cea44a24b7f091803788a6cd14a40ad708b5efa85b5e9
+$ apt-get source -qq --print-uris openjdk-8=8u121-b13-1~bpo8+1
+'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u121-b13-1~bpo8+1.dsc' openjdk-8_8u121-b13-1~bpo8+1.dsc 4522 SHA256:ae40bb526fde162d14816d07ee1fecba2f2696feed07d01475a945d2dc721b0a
+'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u121-b13.orig.tar.xz' openjdk-8_8u121-b13.orig.tar.xz 63884892 SHA256:78f64c05575fa36ae35e712e3d23b3ac139aaeb328eebca705705652b5985699
+'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u121-b13-1~bpo8+1.debian.tar.xz' openjdk-8_8u121-b13-1~bpo8+1.debian.tar.xz 235396 SHA256:190d5b0ff30f6085aadccc38cf6d56ce91ba4185b0cb25ae6996c042b4066e34
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openjdk-8/8u111-b14-2~bpo8+1/
-- https://sources.debian.net/src/openjdk-8/8u111-b14-2~bpo8+1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openjdk-8/8u121-b13-1~bpo8+1/
+- https://sources.debian.net/src/openjdk-8/8u121-b13-1~bpo8+1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.40+dfsg-1+deb8u2`
 
