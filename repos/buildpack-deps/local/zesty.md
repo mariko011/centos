@@ -425,13 +425,8 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20160104ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20160104ubuntu1.dsc' ca-certificates_20160104ubuntu1.dsc 1858 SHA256:e7572ca55c517a86793943ebc172accc7246e40693b8f37848020b617c5f4fd0
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20160104ubuntu1.tar.xz' ca-certificates_20160104ubuntu1.tar.xz 293852 SHA256:321a9e2cdaf0d02077fc5ac755024cdf0d354ef10ab1581bff14694cc391a16e
-```
 
 ### `dpkg` source package: `cairo=1.14.8-1`
 
@@ -875,14 +870,8 @@ Licenses: (parsed from: `/usr/share/doc/libfftw3-double3/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris fftw3=3.3.5-1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fftw3/fftw3_3.3.5-1.dsc' fftw3_3.3.5-1.dsc 2898 SHA256:c4fa07f5c4b630046ef41292d4a9fc84f022a0066a684a69f73e4b3e03e35c03
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fftw3/fftw3_3.3.5.orig.tar.gz' fftw3_3.3.5.orig.tar.gz 4148447 SHA256:8ecfe1b04732ec3f5b7d279fdb8efcad536d555f9d1e8fabd027037d45ea8bcf
-'http://archive.ubuntu.com/ubuntu/pool/main/f/fftw3/fftw3_3.3.5-1.debian.tar.xz' fftw3_3.3.5-1.debian.tar.xz 12648 SHA256:ba294ccdc29241a54e2237932f07754bd12be43cfb74379b2679cd87d26275fa
-```
 
 ### `dpkg` source package: `file=1:5.29-2`
 
@@ -3403,14 +3392,8 @@ Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
 - `LGPL-3+`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris pinentry=1.0.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.0.0-1.dsc' pinentry_1.0.0-1.dsc 2591 SHA256:61a5bb86944c473feddb8d94245cd45bccd3d0bb1a53482b2da276ae4ac56dd2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.0.0.orig.tar.bz2' pinentry_1.0.0.orig.tar.bz2 436930 SHA256:1672c2edc1feb036075b187c0773787b2afd0544f55025c645a71b4c2f79275a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.0.0-1.debian.tar.xz' pinentry_1.0.0-1.debian.tar.xz 14512 SHA256:4f8bb0736f5e7ee042d1c65222ed5993e7cb08574e0c2aa4630d6cdfbefe8a82
-```
 
 ### `dpkg` source package: `pixman=0.34.0-1`
 
@@ -3665,14 +3648,8 @@ Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sed=4.3-3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.3-3.dsc' sed_4.3-3.dsc 2048 SHA256:e84b1c8dcf247f1eb0e2322a365120fad0925458f2fb9fe1fe8dfa6c91ad26e0
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.3.orig.tar.xz' sed_4.3.orig.tar.xz 1167168 SHA256:47c20d8841ce9e7b6ef8037768aac44bc2937fff1c265b291c824004d56bd0aa
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.3-3.debian.tar.xz' sed_4.3-3.debian.tar.xz 59924 SHA256:a2ff3878acc0a4a4ae09b1ce4669eaa583a402837a6fab40fa5a62731b407559
-```
 
 ### `dpkg` source package: `sensible-utils=0.0.9`
 

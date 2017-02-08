@@ -255,19 +255,8 @@ Licenses: (parsed from: `/usr/share/doc/automake/copyright`)
 - `GPL-3+`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris automake-1.15=1:1.15-5
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15-5.dsc' automake-1.15_1.15-5.dsc 2232 SHA256:82af7bc3721c6eddf38b9e822e0bc3a4e4484579004b4b35e67749fc021dcb63
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15.orig.tar.xz' automake-1.15_1.15.orig.tar.xz 1496708 SHA256:9908c75aabd49d13661d6dcb1bc382252d22cc77bf733a2d55e87f2aa2db8636
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15-5.debian.tar.xz' automake-1.15_1.15-5.debian.tar.xz 12924 SHA256:c9095f84e486aaf70ea19baddae58eaad39f54a52b9528d20cc4f35cb2de19c5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/automake-1.15/1:1.15-5/
-- https://sources.debian.net/src/automake-1.15/1:1.15-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `autotools-dev=20161112.1`
 
@@ -745,18 +734,8 @@ Licenses: (parsed from: `/usr/share/doc/dh-python/copyright`)
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dh-python=2.20160818
-'http://deb.debian.org/debian/pool/main/d/dh-python/dh-python_2.20160818.dsc' dh-python_2.20160818.dsc 1876 SHA256:6871cd06bd30a3be4e64b01c74a77dfee870dcbf0aa314a1fad85125ff37ed3d
-'http://deb.debian.org/debian/pool/main/d/dh-python/dh-python_2.20160818.tar.xz' dh-python_2.20160818.tar.xz 84928 SHA256:9491b21ee97f1b57bcd84ee40c557ab38f3fed50641cb7d25545632cad5b09c7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dh-python/2.20160818/
-- https://sources.debian.net/src/dh-python/2.20160818/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `diffutils=1:3.5-1`
 
@@ -959,19 +938,8 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 - `MIT-Old-Style-with-legal-disclaimer-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris file=1:5.29-2
-'http://deb.debian.org/debian/pool/main/f/file/file_5.29-2.dsc' file_5.29-2.dsc 2124 SHA256:dfa00a43b061fede4b6f414faba899a59e00b9e20dee12114c6bf1b5970ae71d
-'http://deb.debian.org/debian/pool/main/f/file/file_5.29.orig.tar.xz' file_5.29.orig.tar.xz 574196 SHA256:4ab1cd8d4fe9017f8dfcfd6ba81f495a722b75e22bd1a59e6bfd15ac211a2820
-'http://deb.debian.org/debian/pool/main/f/file/file_5.29-2.debian.tar.xz' file_5.29-2.debian.tar.xz 37056 SHA256:7f45e40aace76e38d4349a383d5b1f778f1624a4e05a55c431ba22109fed61c8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/file/1:5.29-2/
-- https://sources.debian.net/src/file/1:5.29-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20161106-1`
 
