@@ -1,9 +1,9 @@
-# `owncloud:9.1.3-fpm`
+# `owncloud:9.1.4-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b2b50b8deb21912bddfb151459df050c70fda4b14d981b0ec5ee9498364cf3ce`
-- Created: `2017-01-24T22:48:23.299783502Z`
+- Image ID: `sha256:3e52cdf088f1a1b2ca8a5aa242043ffe05ceae2606f6b35664c5059e7b8153e1`
+- Created: `2017-02-07T20:20:13.391756088Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["php-fpm"]`
@@ -21,7 +21,7 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.30.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805`
   - `PHP_MD5=68753955a8964ae49064c6424f81eb3e`
-  - `OWNCLOUD_VERSION=9.1.3`
+  - `OWNCLOUD_VERSION=9.1.4`
 
 ## `dpkg` (`.deb`-based packages)
 
