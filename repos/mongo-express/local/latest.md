@@ -1,9 +1,9 @@
-# `mongo-express:0.34.0`
+# `mongo-express:0.35.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:08e84c7cfc85c8301b9e60dbfe1092791f2f3c83322d3a71d9834c24d1b0fe31`
-- Created: `2017-02-01T18:01:58.480168241Z`
+- Image ID: `sha256:60b7233a44e751baa212a709d1a16550b444bd16667bda933df67c9e506dfc9e`
+- Created: `2017-02-07T18:48:16.260325146Z`
 - Arch: `linux`/`amd64`
 - Command: `["tini","--","node","app"]`
 - Environment:
@@ -17,7 +17,7 @@
   - `ME_CONFIG_BASICAUTH_USERNAME=`
   - `ME_CONFIG_BASICAUTH_PASSWORD=`
   - `VCAP_APP_HOST=0.0.0.0`
-  - `MONGO_EXPRESS=0.34.0`
+  - `MONGO_EXPRESS=0.35.0`
 
 ## `dpkg` (`.deb`-based packages)
 
