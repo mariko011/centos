@@ -2,13 +2,13 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f63dab4c75b7b1ef0af5e6f70b588466f817941ffd745742a7e7c5c0bf65023d`
-- Created: `2017-01-21T00:33:38.849907188Z`
+- Image ID: `sha256:003ae0013568c1df7971008137111034c999c710d2c2438428b16b0406b00139`
+- Created: `2017-02-08T22:47:14.847731599Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr3fp22`
+  - `JAVA_VERSION=1.8.0_sr4`
   - `JAVA_HOME=/opt/ibm/java/jre`
 
 ## `dpkg` (`.deb`-based packages)
@@ -140,13 +140,8 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-files=9.4ubuntu4.3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.3.dsc' base-files_9.4ubuntu4.3.dsc 1557 SHA256:d11ddec0ad1599faeef008b23f7f4c29d95f2d83ff99b36bd010725c29b368a8
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.3.tar.xz' base-files_9.4ubuntu4.3.tar.xz 62960 SHA256:8b57107c1da1d31718271466d12d253bd6944f2e60d5abcf9c48cdd6aa7affc2
-```
 
 ### `dpkg` source package: `base-passwd=3.5.39`
 
