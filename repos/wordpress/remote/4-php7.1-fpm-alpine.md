@@ -1,7 +1,7 @@
 ## `wordpress:4-php7.1-fpm-alpine`
 
 ```console
-$ docker pull wordpress@sha256:530b2a2fc025fbe2870f99ecdc6142d86b7463b7ad9a17606e9ff93ba64da7fc
+$ docker pull wordpress@sha256:5cc91e4ca25b17c08b4441fb7ee1c30c58aa6670935ee09fb54ca7e3024c4355
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull wordpress@sha256:530b2a2fc025fbe2870f99ecdc6142d86b7463b7ad9a17606
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.1 MB (40138768 bytes)**  
+-	Total Size: **40.1 MB (40138966 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1ab8eae58a3469ebfef94296e9e489d23efc4a5fb8c0cdb051cfdc4af1729852`
+-	Image ID: `sha256:de31663c71a9bf58e7a44d1adb0ca5e8e85fa26e73b9509a3cda45b80ab125ed`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -78,11 +78,11 @@ ENV WORDPRESS_VERSION=4.7.2
 ENV WORDPRESS_SHA1=7b687f1af589c337124e6247229af209ec1d52c3
 # Fri, 27 Jan 2017 23:58:05 GMT
 RUN set -ex; 	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; 	echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; 	tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 	chown -R www-data:www-data /usr/src/wordpress
-# Fri, 27 Jan 2017 23:58:05 GMT
-COPY file:0d5c945fedcf9886801149dd830388361dfc1a00e4f95510833987f19e98e986 in /usr/local/bin/ 
-# Fri, 27 Jan 2017 23:58:06 GMT
+# Fri, 10 Feb 2017 01:04:21 GMT
+COPY file:b5c332f80307d4248d07b035890c0ea453c1157d9e1732225f83f63d851392b5 in /usr/local/bin/ 
+# Fri, 10 Feb 2017 01:04:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 27 Jan 2017 23:58:06 GMT
+# Fri, 10 Feb 2017 01:04:23 GMT
 CMD ["php-fpm"]
 ```
 
@@ -143,7 +143,7 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 28 Jan 2017 00:14:33 GMT  
 		Size: 7.8 MB (7827449 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a92ef2f8a0b334a87455c460646596b53efbb7dc42421a1abf236b7e053d2cf7`  
-		Last Modified: Sat, 28 Jan 2017 00:14:32 GMT  
-		Size: 2.9 KB (2925 bytes)  
+	-	`sha256:7ab0a45e9c998ecf3dd8573c959db02fddf7c0baca0d00a9ee983ee2c918f574`  
+		Last Modified: Fri, 10 Feb 2017 01:24:57 GMT  
+		Size: 3.1 KB (3123 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
