@@ -1,17 +1,17 @@
-# `openjdk:7u111-jdk`
+# `openjdk:7u121-jdk`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5dc48a6b75af4b1a9464caad2aecb3a13593a9a525926bcc0c4df60887bb2332`
-- Created: `2017-01-17T00:50:58.593147341Z`
+- Image ID: `sha256:1e557b635aea6987fe4c48a99e69707f4e86045440e3c0a6e97067a18a9db50e`
+- Created: `2017-02-08T22:16:53.054295042Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64`
-  - `JAVA_VERSION=7u111`
-  - `JAVA_DEBIAN_VERSION=7u111-2.6.7-2~deb8u1`
+  - `JAVA_VERSION=7u121`
+  - `JAVA_DEBIAN_VERSION=7u121-2.6.8-2~deb8u1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2006,11 +2006,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/krb5/1.12.1+dfsg-19+deb8u2/
 - https://sources.debian.net/src/krb5/1.12.1+dfsg-19+deb8u2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `lcms2=2.6-3`
+### `dpkg` source package: `lcms2=2.6-3+deb8u1`
 
 Binary Packages:
 
-- `liblcms2-2:amd64=2.6-3+b3`
+- `liblcms2-2:amd64=2.6-3+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 
@@ -2021,16 +2021,16 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris lcms2=2.6-3
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.6-3.dsc' lcms2_2.6-3.dsc 2090 SHA256:679674cc000015f583c9813a1514ae8f4ebf2c354657bcc41552bce6a65d6f74
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.6.orig.tar.gz' lcms2_2.6.orig.tar.gz 4583389 SHA256:5172528839647c54c3da211837225e221be93e4733f5b5e9f57668f7107e14b1
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.6-3.debian.tar.xz' lcms2_2.6-3.debian.tar.xz 2416412 SHA256:992bf65f7edc2cd65d00914fe73abdc0d2d70c152c7fe18c001c17a69572ad34
+$ apt-get source -qq --print-uris lcms2=2.6-3+deb8u1
+'http://security.debian.org/pool/updates/main/l/lcms2/lcms2_2.6-3+deb8u1.dsc' lcms2_2.6-3+deb8u1.dsc 2287 SHA256:c81475db156883e857dd6c456e8a22e6554c6fb0f8e47622915a76d716d1ee5e
+'http://security.debian.org/pool/updates/main/l/lcms2/lcms2_2.6.orig.tar.gz' lcms2_2.6.orig.tar.gz 4583389 SHA256:5172528839647c54c3da211837225e221be93e4733f5b5e9f57668f7107e14b1
+'http://security.debian.org/pool/updates/main/l/lcms2/lcms2_2.6-3+deb8u1.debian.tar.xz' lcms2_2.6-3+deb8u1.debian.tar.xz 2416964 SHA256:81fcf1658e51d55408143e91b1c3469a63f3b4607e92604bd8a18dd8d6435d05
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/lcms2/2.6-3/
-- https://sources.debian.net/src/lcms2/2.6-3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/lcms2/2.6-3+deb8u1/
+- https://sources.debian.net/src/lcms2/2.6-3+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libasyncns=0.8-5`
 
@@ -3769,13 +3769,13 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nss/2:3.26-1+debu8u1/
 - https://sources.debian.net/src/nss/2:3.26-1+debu8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openjdk-7=7u111-2.6.7-2~deb8u1`
+### `dpkg` source package: `openjdk-7=7u121-2.6.8-2~deb8u1`
 
 Binary Packages:
 
-- `openjdk-7-jdk:amd64=7u111-2.6.7-2~deb8u1`
-- `openjdk-7-jre:amd64=7u111-2.6.7-2~deb8u1`
-- `openjdk-7-jre-headless:amd64=7u111-2.6.7-2~deb8u1`
+- `openjdk-7-jdk:amd64=7u121-2.6.8-2~deb8u1`
+- `openjdk-7-jre:amd64=7u121-2.6.8-2~deb8u1`
+- `openjdk-7-jre-headless:amd64=7u121-2.6.8-2~deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-7-jdk/copyright`, `/usr/share/doc/openjdk-7-jre/copyright`, `/usr/share/doc/openjdk-7-jre-headless/copyright`)
 
@@ -3786,16 +3786,16 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-7-jdk/copyright`, `/usr/share/do
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-7=7u111-2.6.7-2~deb8u1
-'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u111-2.6.7-2~deb8u1.dsc' openjdk-7_7u111-2.6.7-2~deb8u1.dsc 4719 SHA256:11baf67c92350daeaffe61ac8ec5e1447fdfb2c5e421de92c1663dec0de7d66c
-'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u111-2.6.7.orig.tar.gz' openjdk-7_7u111-2.6.7.orig.tar.gz 58314652 SHA256:6a6fc6733cb3c090c3012772d5ede4ac398041548f561c63e9f3ce6e9fd64d7e
-'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u111-2.6.7-2~deb8u1.debian.tar.xz' openjdk-7_7u111-2.6.7-2~deb8u1.debian.tar.xz 197304 SHA256:3c1cd598157c3162845a8f23719c01246d9c6346311bf1f787a71de88a1be5e8
+$ apt-get source -qq --print-uris openjdk-7=7u121-2.6.8-2~deb8u1
+'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u121-2.6.8-2~deb8u1.dsc' openjdk-7_7u121-2.6.8-2~deb8u1.dsc 4751 SHA256:8dccb923bab0faf8ea1258c8dd485927154d3e3ab15e4ce7946243ca03a53704
+'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u121-2.6.8.orig.tar.gz' openjdk-7_7u121-2.6.8.orig.tar.gz 53913782 SHA256:04794485b765c6ee453668a7e01a82659378c0bd8a4e85e58979fe5256e50a3b
+'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u121-2.6.8-2~deb8u1.debian.tar.xz' openjdk-7_7u121-2.6.8-2~deb8u1.debian.tar.xz 210368 SHA256:4b2d91d0d2fe5544ba15b96fc22310b82193728cf9b5342ecdd0e0b59089f36e
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openjdk-7/7u111-2.6.7-2~deb8u1/
-- https://sources.debian.net/src/openjdk-7/7u111-2.6.7-2~deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openjdk-7/7u121-2.6.8-2~deb8u1/
+- https://sources.debian.net/src/openjdk-7/7u121-2.6.8-2~deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.40+dfsg-1+deb8u2`
 
