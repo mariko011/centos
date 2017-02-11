@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3cebb5419ee1c8350c7f44e58ad046390a80f3434d5cd85be4e678d07cbc4731`
-- Created: `2016-12-15T19:00:55.309931127Z`
+- Image ID: `sha256:713194bf5076dc830c719012b2b68c03412f2df7ea35fbdf87240edd9e01023e`
+- Created: `2017-02-09T18:37:59.777523668Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -1131,14 +1131,14 @@ $ apt-get source -qq --print-uris gnupg=1.4.11-3ubuntu2.10
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.11-3ubuntu2.10.diff.gz' gnupg_1.4.11-3ubuntu2.10.diff.gz 60648 SHA256:2787ff43b69ee32ec5754dfab9a6b6fd7f7931da3e28ac09c72851e7b9553a3f
 ```
 
-### `dpkg` source package: `gnutls26=2.12.14-5ubuntu3.12`
+### `dpkg` source package: `gnutls26=2.12.14-5ubuntu3.13`
 
 Binary Packages:
 
-- `libgnutls-dev=2.12.14-5ubuntu3.12`
-- `libgnutls-openssl27:amd64=2.12.14-5ubuntu3.12`
-- `libgnutls26:amd64=2.12.14-5ubuntu3.12`
-- `libgnutlsxx27:amd64=2.12.14-5ubuntu3.12`
+- `libgnutls-dev=2.12.14-5ubuntu3.13`
+- `libgnutls-openssl27:amd64=2.12.14-5ubuntu3.13`
+- `libgnutls26:amd64=2.12.14-5ubuntu3.13`
+- `libgnutlsxx27:amd64=2.12.14-5ubuntu3.13`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls-dev/copyright`, `/usr/share/doc/libgnutls-openssl27/copyright`, `/usr/share/doc/libgnutls26/copyright`, `/usr/share/doc/libgnutlsxx27/copyright`)
 
@@ -1148,8 +1148,14 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls-dev/copyright`, `/usr/share/do
 - `LGPL-2.1`
 - `The main library is licensed under GNU Lesser General Public`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnutls26=2.12.14-5ubuntu3.13
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.14-5ubuntu3.13.dsc' gnutls26_2.12.14-5ubuntu3.13.dsc 2685 SHA256:65e5380cb7fc87a1becd21c800657c0b798ce3885b607c46efd1088b7e1f12b9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.14.orig.tar.bz2' gnutls26_2.12.14.orig.tar.bz2 7166618 SHA256:5ee72ba6de7a23cf315792561954451e022dac8730149ca95f93c61e95be2ce3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.14-5ubuntu3.13.debian.tar.gz' gnutls26_2.12.14-5ubuntu3.13.debian.tar.gz 38067 SHA256:05f4925aa1925d24140f2b1fe65389b56c1119b0a03dde2aa0da7d2301002b17
+```
 
 ### `dpkg` source package: `gobject-introspection=1.32.0-1`
 
@@ -2615,11 +2621,11 @@ $ apt-get source -qq --print-uris libyaml=0.1.4-2ubuntu0.12.04.4
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.4-2ubuntu0.12.04.4.debian.tar.gz' libyaml_0.1.4-2ubuntu0.12.04.4.debian.tar.gz 6152 SHA256:2941cb245fd1fdf53a576f02931f24cf5368649d51e2965bb7b6ba29c7ab4835
 ```
 
-### `dpkg` source package: `linux=3.2.0-118.161`
+### `dpkg` source package: `linux=3.2.0-121.164`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.2.0-118.161`
+- `linux-libc-dev:amd64=3.2.0-121.164`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2839,13 +2845,13 @@ $ apt-get source -qq --print-uris mpfr4=3.1.0-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_3.1.0-3ubuntu2.debian.tar.gz' mpfr4_3.1.0-3ubuntu2.debian.tar.gz 12168 SHA256:fab90bc1bde0d58aa7ccc23d1db61c8f3d362e9ecf7476ccda9d0e7689c246f6
 ```
 
-### `dpkg` source package: `mysql-5.5=5.5.53-0ubuntu0.12.04.1`
+### `dpkg` source package: `mysql-5.5=5.5.54-0ubuntu0.12.04.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.5.53-0ubuntu0.12.04.1`
-- `libmysqlclient18:amd64=5.5.53-0ubuntu0.12.04.1`
-- `mysql-common=5.5.53-0ubuntu0.12.04.1`
+- `libmysqlclient-dev=5.5.54-0ubuntu0.12.04.1`
+- `libmysqlclient18:amd64=5.5.54-0ubuntu0.12.04.1`
+- `mysql-common=5.5.54-0ubuntu0.12.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -2863,8 +2869,14 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `UNKNOWN`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.5=5.5.54-0ubuntu0.12.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.54-0ubuntu0.12.04.1.dsc' mysql-5.5_5.5.54-0ubuntu0.12.04.1.dsc 3154 SHA256:dc76c1d00cd9c27aa589ffcf38115f76cbb8bdb72bae351fded69d5cf5325fd7
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.54.orig.tar.gz' mysql-5.5_5.5.54.orig.tar.gz 21041949 SHA256:273bcbcf8cc84061eb07c359308563b2029eb3f70f78b558905bc1b5c5791ab8
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.54-0ubuntu0.12.04.1.debian.tar.gz' mysql-5.5_5.5.54-0ubuntu0.12.04.1.debian.tar.gz 303193 SHA256:a027614853a1cc090c7b4c1d2599a32c8b623201d8d3c741781480669d0a5209
+```
 
 ### `dpkg` source package: `ncurses=5.9-4`
 
@@ -2974,8 +2986,6 @@ $ apt-get source -qq --print-uris openssh=1:5.9p1-5ubuntu1.10
 
 Binary Packages:
 
-- `libssl-dev=1.0.1-4ubuntu5.38`
-- `libssl1.0.0:amd64=1.0.1-4ubuntu5.38`
 - `openssl=1.0.1-4ubuntu5.38`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
@@ -2984,6 +2994,26 @@ Binary Packages:
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
+
+### `dpkg` source package: `openssl=1.0.1-4ubuntu5.39`
+
+Binary Packages:
+
+- `libssl-dev=1.0.1-4ubuntu5.39`
+- `libssl1.0.0:amd64=1.0.1-4ubuntu5.39`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
+  If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1-4ubuntu5.39
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1-4ubuntu5.39.dsc' openssl_1.0.1-4ubuntu5.39.dsc 2365 SHA256:3ba485db235b46912a0778aaac8814b79630fb3a7c7728fe0ff95c84e790ad43
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1.orig.tar.gz' openssl_1.0.1.orig.tar.gz 4453920 SHA256:4d9f0a594a9a89b28e1a04a9504c04104f6508ee27ad1e0efdd17a7a6dbbeeee
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1-4ubuntu5.39.debian.tar.gz' openssl_1.0.1-4ubuntu5.39.debian.tar.gz 291740 SHA256:3137f726122302537ff9f99e9d9832a34f69fd1517c8797aebddabcee9d24031
+```
 
 ### `dpkg` source package: `p11-kit=0.12-2ubuntu1`
 

@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c8d5da86b983bac1e05f08f9e3353c04d2ba503cd262d048b1b9a009a220703d`
-- Created: `2017-01-20T22:53:50.879812211Z`
+- Image ID: `sha256:2f60f8fa77f19e8dfc0631b320dd11daf9b7f6a760d08056641bb9b16268dd21`
+- Created: `2017-02-09T18:43:17.242376328Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -1286,14 +1286,14 @@ $ apt-get source -qq --print-uris gnupg=1.4.16-1ubuntu2.4
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.16-1ubuntu2.4.debian.tar.gz' gnupg_1.4.16-1ubuntu2.4.debian.tar.gz 56430 SHA256:dbc2738c30cdcedb459e0ff0a9d1ec42e7b238b96c4a9326cae84a0afdae6441
 ```
 
-### `dpkg` source package: `gnutls26=2.12.23-12ubuntu2.5`
+### `dpkg` source package: `gnutls26=2.12.23-12ubuntu2.6`
 
 Binary Packages:
 
-- `libgnutls-dev=2.12.23-12ubuntu2.5`
-- `libgnutls-openssl27:amd64=2.12.23-12ubuntu2.5`
-- `libgnutls26:amd64=2.12.23-12ubuntu2.5`
-- `libgnutlsxx27:amd64=2.12.23-12ubuntu2.5`
+- `libgnutls-dev=2.12.23-12ubuntu2.6`
+- `libgnutls-openssl27:amd64=2.12.23-12ubuntu2.6`
+- `libgnutls26:amd64=2.12.23-12ubuntu2.6`
+- `libgnutlsxx27:amd64=2.12.23-12ubuntu2.6`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls-dev/copyright`, `/usr/share/doc/libgnutls-openssl27/copyright`, `/usr/share/doc/libgnutls26/copyright`, `/usr/share/doc/libgnutlsxx27/copyright`)
 
@@ -1303,8 +1303,14 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls-dev/copyright`, `/usr/share/do
 - `LGPL-2.1`
 - `The main library is licensed under GNU Lesser General Public`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnutls26=2.12.23-12ubuntu2.6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23-12ubuntu2.6.dsc' gnutls26_2.12.23-12ubuntu2.6.dsc 2722 SHA256:a94ac7d08a43922b34756f295f2f5da2b4c6863fe642235524af8d00938ebab7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23.orig.tar.bz2' gnutls26_2.12.23.orig.tar.bz2 7279415 SHA256:dfa67a7e40727eb0913e75f3c44911d5d8cd58d1ead5acfe73dd933fc0d17ed2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23-12ubuntu2.6.debian.tar.gz' gnutls26_2.12.23-12ubuntu2.6.debian.tar.gz 44614 SHA256:acdcfa629dbbf979b70a71e65bd7a718c4286adb65d331a15d80bbd2bbca3599
+```
 
 ### `dpkg` source package: `gobject-introspection=1.40.0-1ubuntu0.2`
 
@@ -1882,20 +1888,20 @@ $ apt-get source -qq --print-uris kmod=15-0ubuntu6
 'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_15-0ubuntu6.debian.tar.gz' kmod_15-0ubuntu6.debian.tar.gz 14348 SHA256:5cbd3db804ae4b6ef3868ff344c23cad67d51938d8cefa42114d8d3a0bb78159
 ```
 
-### `dpkg` source package: `krb5=1.12+dfsg-2ubuntu5.2`
+### `dpkg` source package: `krb5=1.12+dfsg-2ubuntu5.3`
 
 Binary Packages:
 
-- `krb5-multidev=1.12+dfsg-2ubuntu5.2`
-- `libgssapi-krb5-2:amd64=1.12+dfsg-2ubuntu5.2`
-- `libgssrpc4:amd64=1.12+dfsg-2ubuntu5.2`
-- `libk5crypto3:amd64=1.12+dfsg-2ubuntu5.2`
-- `libkadm5clnt-mit9:amd64=1.12+dfsg-2ubuntu5.2`
-- `libkadm5srv-mit9:amd64=1.12+dfsg-2ubuntu5.2`
-- `libkdb5-7:amd64=1.12+dfsg-2ubuntu5.2`
-- `libkrb5-3:amd64=1.12+dfsg-2ubuntu5.2`
-- `libkrb5-dev=1.12+dfsg-2ubuntu5.2`
-- `libkrb5support0:amd64=1.12+dfsg-2ubuntu5.2`
+- `krb5-multidev=1.12+dfsg-2ubuntu5.3`
+- `libgssapi-krb5-2:amd64=1.12+dfsg-2ubuntu5.3`
+- `libgssrpc4:amd64=1.12+dfsg-2ubuntu5.3`
+- `libk5crypto3:amd64=1.12+dfsg-2ubuntu5.3`
+- `libkadm5clnt-mit9:amd64=1.12+dfsg-2ubuntu5.3`
+- `libkadm5srv-mit9:amd64=1.12+dfsg-2ubuntu5.3`
+- `libkdb5-7:amd64=1.12+dfsg-2ubuntu5.3`
+- `libkrb5-3:amd64=1.12+dfsg-2ubuntu5.3`
+- `libkrb5-dev=1.12+dfsg-2ubuntu5.3`
+- `libkrb5support0:amd64=1.12+dfsg-2ubuntu5.3`
 
 Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libgssrpc4/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkadm5clnt-mit9/copyright`, `/usr/share/doc/libkadm5srv-mit9/copyright`, `/usr/share/doc/libkdb5-7/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5-dev/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -1904,10 +1910,10 @@ Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/do
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.12+dfsg-2ubuntu5.2
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg-2ubuntu5.2.dsc' krb5_1.12+dfsg-2ubuntu5.2.dsc 3285 SHA256:b4d6a90bb6be7aec5575a2514bcaa1571e507dda3c1bcb902d5abd2331cb5c39
+$ apt-get source -qq --print-uris krb5=1.12+dfsg-2ubuntu5.3
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg-2ubuntu5.3.dsc' krb5_1.12+dfsg-2ubuntu5.3.dsc 3506 SHA256:bc6026c5c2f207f6212cb2361738ca657bed39fa228fe90ac494658f7c5d1a48
 'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg.orig.tar.gz' krb5_1.12+dfsg.orig.tar.gz 11704009 SHA256:8ff375113692946790aea5b246b14609c1d21e9017c920ab129452415dc69dfa
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg-2ubuntu5.2.debian.tar.gz' krb5_1.12+dfsg-2ubuntu5.2.debian.tar.gz 138520 SHA256:90180cfcf570400345f7b3a6e1e07fc772ee02fc6338febe78c9363da55a22eb
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.12+dfsg-2ubuntu5.3.debian.tar.xz' krb5_1.12+dfsg-2ubuntu5.3.debian.tar.xz 113208 SHA256:b1448e6b85d1388fa78278bd0e50d780f0c3da6fbcffb026bf7364c3282e5faa
 ```
 
 ### `dpkg` source package: `langpack-locales=2.13+git20120306-12.1`
@@ -3084,11 +3090,11 @@ $ apt-get source -qq --print-uris libxml2=2.9.1+dfsg1-3ubuntu4.8
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-3ubuntu4.8.debian.tar.gz' libxml2_2.9.1+dfsg1-3ubuntu4.8.debian.tar.gz 62044 SHA256:f56fdd231994787d0cd2cb16d5fdb697b797e0f1b57f9a920345ddfc74fb6201
 ```
 
-### `dpkg` source package: `libxpm=1:3.5.10-1`
+### `dpkg` source package: `libxpm=1:3.5.10-1ubuntu0.1`
 
 Binary Packages:
 
-- `libxpm4:amd64=1:3.5.10-1`
+- `libxpm4:amd64=1:3.5.10-1ubuntu0.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3097,10 +3103,10 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxpm=1:3.5.10-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.10-1.dsc' libxpm_3.5.10-1.dsc 2123 SHA256:629c05036046b706b4c2254d264a231dc1e3423f7c1dfaa57994115e0cffc3b4
+$ apt-get source -qq --print-uris libxpm=1:3.5.10-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.10-1ubuntu0.1.dsc' libxpm_3.5.10-1ubuntu0.1.dsc 2221 SHA256:e4f5b9ea75c227b719552f3e94f1d91eaf4ee2bd4f58481a112bc4d682ec97cc
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.10.orig.tar.gz' libxpm_3.5.10.orig.tar.gz 505139 SHA256:f73f06928a140fd2090c439d1d55c6682095044495af6bf886f8e66cf21baee5
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.10-1.diff.gz' libxpm_3.5.10-1.diff.gz 15461 SHA256:6ffce2a378b594130d4ac422c2ce0221e4d774b3aa678aed3628927f705524fe
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxpm/libxpm_3.5.10-1ubuntu0.1.diff.gz' libxpm_3.5.10-1ubuntu0.1.diff.gz 17259 SHA256:6653da703fe6a80a19e0a83267b9ed218bc666fc79613a09ac1ff111a4042be6
 ```
 
 ### `dpkg` source package: `libxrender=1:0.9.8-1build0.14.04.1`
@@ -3183,18 +3189,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.4-3ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.4-3ubuntu3.1.debian.tar.gz' libyaml_0.1.4-3ubuntu3.1.debian.tar.gz 6404 SHA256:816422e1c743180409aff9247f3a298c8f98260d91da29c7315ce8bd576d53c2
 ```
 
-### `dpkg` source package: `linux=3.13.0-107.154`
+### `dpkg` source package: `linux=3.13.0-108.155`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-107.154`
+- `linux-libc-dev:amd64=3.13.0-108.155`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.13.0-108.155
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-108.155.dsc' linux_3.13.0-108.155.dsc 8125 SHA256:8cfd95d8b992f5c1b93395a32b352a68f413fea182bd94b8c3b394fc282b139f
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-108.155.diff.gz' linux_3.13.0-108.155.diff.gz 9456827 SHA256:b536078e6a7c149983e382a7bc41f8a624e6d553b41aa7f745120e8cc67a13d2
+```
 
 ### `dpkg` source package: `lockfile-progs=0.1.17`
 
@@ -3706,8 +3718,6 @@ $ apt-get source -qq --print-uris openssh=1:6.6p1-2ubuntu2.8
 
 Binary Packages:
 
-- `libssl-dev:amd64=1.0.1f-1ubuntu2.21`
-- `libssl1.0.0:amd64=1.0.1f-1ubuntu2.21`
 - `openssl=1.0.1f-1ubuntu2.21`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
@@ -3716,6 +3726,26 @@ Binary Packages:
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
+
+### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.22`
+
+Binary Packages:
+
+- `libssl-dev:amd64=1.0.1f-1ubuntu2.22`
+- `libssl1.0.0:amd64=1.0.1f-1ubuntu2.22`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
+  If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1f-1ubuntu2.22
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.22.dsc' openssl_1.0.1f-1ubuntu2.22.dsc 2370 SHA256:fdea4b46fcb0fec442fe2538916c82f99f27d8074e3ab34c4a9f3cc58bf9be0c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f.orig.tar.gz' openssl_1.0.1f.orig.tar.gz 4509212 SHA256:6cc2a80b17d64de6b7bac985745fdaba971d54ffd7d38d3556f998d7c0c9cb5a
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.22.debian.tar.gz' openssl_1.0.1f-1ubuntu2.22.debian.tar.gz 267203 SHA256:a38163b80c8d9ecad888676a56d4a4d761937f773495366f836dc0f76f6a9e43
+```
 
 ### `dpkg` source package: `p11-kit=0.20.2-2ubuntu2`
 
