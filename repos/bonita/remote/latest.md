@@ -1,7 +1,7 @@
 ## `bonita:latest`
 
 ```console
-$ docker pull bonita@sha256:d03295794ac8867e52cf61ec24dbb166c46d3ba6352c62dd7ff84389a6bb29aa
+$ docker pull bonita@sha256:7ea3cf7e092f3e138cf7d248a84f94b43a6f54ad5dfa142e756ee953aceaee65
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull bonita@sha256:d03295794ac8867e52cf61ec24dbb166c46d3ba6352c62dd7ff8
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **216.9 MB (216947885 bytes)**  
+-	Total Size: **217.0 MB (216954218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:daea6c078888a4a297b7a5b82597d1a0eb4b9c7608bc6714cb0fa27dbf40ab60`
+-	Image ID: `sha256:eb8648182ce49417be5f3f95d777fcb9ab05760161c24130b6c729d372373080`
 -	Default Command: `["\/opt\/files\/startup.sh"]`
 
 ```dockerfile
@@ -41,23 +41,23 @@ RUN groupadd -r bonita -g 1000   && useradd -u 1000 -r -g bonita -d /opt/bonita/
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4
 # Fri, 20 Jan 2017 23:56:54 GMT
 RUN wget -q "https://github.com/tianon/gosu/releases/download/1.6/gosu-$(dpkg --print-architecture)" -O /usr/local/bin/gosu   && wget -q "https://github.com/tianon/gosu/releases/download/1.6/gosu-$(dpkg --print-architecture).asc" -O /usr/local/bin/gosu.asc   && gpg --verify /usr/local/bin/gosu.asc   && rm /usr/local/bin/gosu.asc   && chmod +x /usr/local/bin/gosu
-# Mon, 30 Jan 2017 18:33:04 GMT
-ENV BONITA_VERSION=7.4.1
-# Mon, 30 Jan 2017 18:33:05 GMT
+# Mon, 13 Feb 2017 23:04:01 GMT
+ENV BONITA_VERSION=7.4.2
+# Mon, 13 Feb 2017 23:04:01 GMT
 ENV TOMCAT_VERSION=7.0.67
-# Mon, 30 Jan 2017 18:33:05 GMT
-ENV BONITA_SHA256=e299ae1b68f40699ec8607911967c614206c7e74d6ab36ea03d3f1de7e8109a3
-# Mon, 30 Jan 2017 18:33:18 GMT
+# Mon, 13 Feb 2017 23:04:01 GMT
+ENV BONITA_SHA256=62f489362ed273f700032f5da1b4dc70a4bc74c9add2cb27e6c3be50e1e284f6
+# Mon, 13 Feb 2017 23:04:14 GMT
 RUN mkdir /opt/files   && wget -q http://download.forge.ow2.org/bonita/BonitaBPMCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip -O /opt/files/BonitaBPMCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip   && echo "$BONITA_SHA256" /opt/files/BonitaBPMCommunity-${BONITA_VERSION}-Tomcat-${TOMCAT_VERSION}.zip | sha256sum -c -
-# Mon, 30 Jan 2017 18:33:19 GMT
+# Mon, 13 Feb 2017 23:04:14 GMT
 VOLUME [/opt/bonita]
-# Mon, 30 Jan 2017 18:33:19 GMT
+# Mon, 13 Feb 2017 23:04:15 GMT
 COPY dir:9a4e5e16ecaf38cc54b83e4c92a5f49851cda4f8d38d0cfe3c6a1849e3765b28 in /opt/files 
-# Mon, 30 Jan 2017 18:33:19 GMT
+# Mon, 13 Feb 2017 23:04:15 GMT
 COPY dir:0f5b28efb7aa0114806152fbcfef64599a58d3bd42d494d262f29d8f3408ea15 in /opt/templates 
-# Mon, 30 Jan 2017 18:33:20 GMT
+# Mon, 13 Feb 2017 23:04:16 GMT
 EXPOSE 8080/tcp
-# Mon, 30 Jan 2017 18:33:20 GMT
+# Mon, 13 Feb 2017 23:04:16 GMT
 CMD ["/opt/files/startup.sh"]
 ```
 
@@ -102,15 +102,15 @@ CMD ["/opt/files/startup.sh"]
 		Last Modified: Fri, 20 Jan 2017 23:57:44 GMT  
 		Size: 807.6 KB (807587 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3fdda5430817f7086d7fb9f67c94550ca1c2320f3a181081f3871cc571656e31`  
-		Last Modified: Mon, 30 Jan 2017 18:33:58 GMT  
-		Size: 85.2 MB (85220303 bytes)  
+	-	`sha256:f6641cffbb6a4a4f950bf25a69fbe138dd5fada82d133386d06bb5eeb3fdbb22`  
+		Last Modified: Mon, 13 Feb 2017 23:04:58 GMT  
+		Size: 85.2 MB (85226634 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1899cb30e3adfba8e5854f70d62f3fb358e44eed942a91d24cf8e6569a6c16c`  
-		Last Modified: Mon, 30 Jan 2017 18:33:53 GMT  
-		Size: 6.0 KB (6013 bytes)  
+	-	`sha256:3951e0d9f1de6624dc17aee2f328a1e58eecd792ae03b8b6f5385b53c50a2ed0`  
+		Last Modified: Mon, 13 Feb 2017 23:04:50 GMT  
+		Size: 6.0 KB (6014 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c8b4d6d1bb1ecc8aaf13e6b156e0c101e2197807aa87e493b1132573cd20d8ed`  
-		Last Modified: Mon, 30 Jan 2017 18:33:52 GMT  
-		Size: 1.6 KB (1606 bytes)  
+	-	`sha256:eeaaaa8ae665c79b1fe88a270c1bb25521eb3c41d6cc61020e6c321588295fc9`  
+		Last Modified: Mon, 13 Feb 2017 23:04:50 GMT  
+		Size: 1.6 KB (1607 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
