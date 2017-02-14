@@ -4645,14 +4645,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg=0.2.10-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.2.10-1.dsc' python-catkin-pkg_0.2.10-1.dsc 892 SHA256:ff59901bdc9c89414ff1d776be9a1aee7f5ab7362ee1d3c45bba9068d9478422
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.2.10.orig.tar.gz' python-catkin-pkg_0.2.10.orig.tar.gz 41975 SHA256:0b1209838f59bf91c5ce3c29d7e6acd8eb16ac7ad8c06ed5b588b9cae9c9eaef
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.2.10-1.debian.tar.gz' python-catkin-pkg_0.2.10-1.debian.tar.gz 951 SHA256:3c49dc8df3b69ec5843d8ac28105a8fd236469218bac3b4fa1c8caba767dcb30
-```
 
 ### `dpkg` source package: `python-crypto=2.6.1-4build1`
 
