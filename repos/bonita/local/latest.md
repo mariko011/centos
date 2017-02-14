@@ -1,16 +1,16 @@
-# `bonita:7.4.1`
+# `bonita:7.4.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:daea6c078888a4a297b7a5b82597d1a0eb4b9c7608bc6714cb0fa27dbf40ab60`
-- Created: `2017-01-30T18:33:20.431746698Z`
+- Image ID: `sha256:eb8648182ce49417be5f3f95d777fcb9ab05760161c24130b6c729d372373080`
+- Created: `2017-02-13T23:04:16.631709459Z`
 - Arch: `linux`/`amd64`
 - Command: `["/opt/files/startup.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `BONITA_VERSION=7.4.1`
+  - `BONITA_VERSION=7.4.2`
   - `TOMCAT_VERSION=7.0.67`
-  - `BONITA_SHA256=e299ae1b68f40699ec8607911967c614206c7e74d6ab36ea03d3f1de7e8109a3`
+  - `BONITA_SHA256=62f489362ed273f700032f5da1b4dc70a4bc74c9add2cb27e6c3be50e1e284f6`
 
 ## `dpkg` (`.deb`-based packages)
 
