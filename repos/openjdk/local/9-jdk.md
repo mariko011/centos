@@ -2847,19 +2847,8 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sysvinit=2.88dsf-59.8
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf-59.8.dsc' sysvinit_2.88dsf-59.8.dsc 2248 SHA256:eea9978e43d12ccf6db031a37e4c26261fe99b4a050ec33fe2f67052cf9f251a
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf.orig.tar.gz' sysvinit_2.88dsf.orig.tar.gz 125330 SHA256:b016f937958d2809a020d407e1287bdc09abf1d44efaa96530e2ea57f544f4e8
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf-59.8.debian.tar.xz' sysvinit_2.88dsf-59.8.debian.tar.xz 132524 SHA256:2846084547646a93be1b73c1aaad5bd7a300291cebf9aabdbf2131bc36ddc20e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sysvinit/2.88dsf-59.8/
-- https://sources.debian.net/src/sysvinit/2.88dsf-59.8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tar=1.29b-1.1`
 
