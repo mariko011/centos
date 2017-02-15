@@ -2438,19 +2438,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libevent=2.0.21-stable-2.1
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.0.21-stable-2.1.dsc' libevent_2.0.21-stable-2.1.dsc 2400 SHA256:01f74091b5d2fdf96ca24716f3a77496222fa8532f9e6c01779def03fc1f0823
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.0.21-stable.orig.tar.gz' libevent_2.0.21-stable.orig.tar.gz 850772 SHA256:22a530a8a5ba1cb9c080cba033206b17dacd21437762155c6d30ee6469f574f5
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.0.21-stable-2.1.debian.tar.xz' libevent_2.0.21-stable-2.1.debian.tar.xz 12352 SHA256:aba684c33027324f0e45c87af018573fd29e5806063cb5f8bdd63dbaaf0567e8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libevent/2.0.21-stable-2.1/
-- https://sources.debian.net/src/libevent/2.0.21-stable-2.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libexif=0.6.21-2`
 
@@ -4947,19 +4936,8 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sysvinit=2.88dsf-59.8
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf-59.8.dsc' sysvinit_2.88dsf-59.8.dsc 2248 SHA256:eea9978e43d12ccf6db031a37e4c26261fe99b4a050ec33fe2f67052cf9f251a
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf.orig.tar.gz' sysvinit_2.88dsf.orig.tar.gz 125330 SHA256:b016f937958d2809a020d407e1287bdc09abf1d44efaa96530e2ea57f544f4e8
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_2.88dsf-59.8.debian.tar.xz' sysvinit_2.88dsf-59.8.debian.tar.xz 132524 SHA256:2846084547646a93be1b73c1aaad5bd7a300291cebf9aabdbf2131bc36ddc20e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sysvinit/2.88dsf-59.8/
-- https://sources.debian.net/src/sysvinit/2.88dsf-59.8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tar=1.29b-1.1`
 

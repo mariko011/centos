@@ -1972,14 +1972,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libevent=2.0.21-stable-2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libevent/libevent_2.0.21-stable-2.1.dsc' libevent_2.0.21-stable-2.1.dsc 2400 SHA256:01f74091b5d2fdf96ca24716f3a77496222fa8532f9e6c01779def03fc1f0823
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libevent/libevent_2.0.21-stable.orig.tar.gz' libevent_2.0.21-stable.orig.tar.gz 850772 SHA256:22a530a8a5ba1cb9c080cba033206b17dacd21437762155c6d30ee6469f574f5
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libevent/libevent_2.0.21-stable-2.1.debian.tar.xz' libevent_2.0.21-stable-2.1.debian.tar.xz 12352 SHA256:aba684c33027324f0e45c87af018573fd29e5806063cb5f8bdd63dbaaf0567e8
-```
 
 ### `dpkg` source package: `libexif=0.6.21-2`
 
@@ -2685,14 +2679,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxi=2:1.7.8-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxi/libxi_1.7.8-2.dsc' libxi_1.7.8-2.dsc 2202 SHA256:5928022c4607b10b75c95e0b3d6474801895ef12eee3c16c9d5ebf1c366334ab
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxi/libxi_1.7.8.orig.tar.gz' libxi_1.7.8.orig.tar.gz 604295 SHA256:7466d0c626a9cc2e53fd78c811815e82924cd7582236a82401df3d282a9c2889
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxi/libxi_1.7.8-2.diff.gz' libxi_1.7.8-2.diff.gz 15765 SHA256:47450993e29758a08d99a6b7c79c4044fb7bf0a5dd8ac5193c4d70555e46815d
-```
 
 ### `dpkg` source package: `libxinerama=2:1.1.3-1`
 
@@ -3797,14 +3785,8 @@ Licenses: (parsed from: `/usr/share/doc/shared-mime-info/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shared-mime-info=1.7-1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shared-mime-info/shared-mime-info_1.7-1.dsc' shared-mime-info_1.7-1.dsc 2271 SHA256:7a5f933a9765ae61b2f1a68b667162a8f6d6485ea95ab8c85166be11b49d927f
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shared-mime-info/shared-mime-info_1.7.orig.tar.xz' shared-mime-info_1.7.orig.tar.xz 582172 SHA256:eacc781cfebaa2074e43cf9521dc7ab4391ace8a4712902b2841669c83144d2e
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shared-mime-info/shared-mime-info_1.7-1.debian.tar.xz' shared-mime-info_1.7-1.debian.tar.xz 10228 SHA256:5f0f8ff1ac95bb999189caf2a3cc28aaab7fc6850e17fcb2d230740c90d6049b
-```
 
 ### `dpkg` source package: `six=1.10.0-3`
 

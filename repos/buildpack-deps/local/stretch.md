@@ -1742,19 +1742,8 @@ Licenses: (parsed from: `/usr/share/doc/libgts-0.7-5/copyright`)
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gts=0.7.6+darcs121130-1.2
-'http://deb.debian.org/debian/pool/main/g/gts/gts_0.7.6+darcs121130-1.2.dsc' gts_0.7.6+darcs121130-1.2.dsc 1910 SHA256:b3211d73719b0fd3a7584b35eeb0473da818aadac024c397931ff26e8119bd7e
-'http://deb.debian.org/debian/pool/main/g/gts/gts_0.7.6+darcs121130.orig.tar.gz' gts_0.7.6+darcs121130.orig.tar.gz 880569 SHA256:c23f72ab74bbf65599f8c0b599d6336fabe1ec2a09c19b70544eeefdc069b73b
-'http://deb.debian.org/debian/pool/main/g/gts/gts_0.7.6+darcs121130-1.2.debian.tar.bz2' gts_0.7.6+darcs121130-1.2.debian.tar.bz2 13349 SHA256:96a4b26b65072146ecb54a03b9c4bc85cae91e56bddb2c65ca7b29a9952b2c59
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gts/0.7.6+darcs121130-1.2/
-- https://sources.debian.net/src/gts/0.7.6+darcs121130-1.2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gzip=1.6-5`
 
@@ -4159,20 +4148,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.0c-2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0c-2.dsc' openssl_1.1.0c-2.dsc 2552 SHA256:a6ca664b8443ad1ed01cc90a9c8d8af8a079efa471536ec971a1bf2f5b8253a0
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0c.orig.tar.gz' openssl_1.1.0c.orig.tar.gz 5179668 SHA256:fc436441a2e05752d31b4e46115eb89709a28aef96d4fe786abe92409b2fd6f5
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0c.orig.tar.gz.asc' openssl_1.1.0c.orig.tar.gz.asc 455 SHA256:818a933aa7a9a80f1959e0cfe170d34037b8ac6ccf57231b6540a341ff01ed37
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0c-2.debian.tar.xz' openssl_1.1.0c-2.debian.tar.xz 55392 SHA256:c47b1d2df11b061243bf91ecd95130840ebe7e6a84a6bf1b063d1953e9fddda5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssl/1.1.0c-2/
-- https://sources.debian.net/src/openssl/1.1.0c-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.23.3-2`
 
