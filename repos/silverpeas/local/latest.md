@@ -211,13 +211,8 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-files=9.4ubuntu4.3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.3.dsc' base-files_9.4ubuntu4.3.dsc 1557 SHA256:d11ddec0ad1599faeef008b23f7f4c29d95f2d83ff99b36bd010725c29b368a8
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.3.tar.xz' base-files_9.4ubuntu4.3.tar.xz 62960 SHA256:8b57107c1da1d31718271466d12d253bd6944f2e60d5abcf9c48cdd6aa7affc2
-```
 
 ### `dpkg` source package: `base-passwd=3.5.39`
 
@@ -789,14 +784,8 @@ Licenses: (parsed from: `/usr/share/doc/ffmpeg/copyright`, `/usr/share/doc/libav
 - `man-page`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ffmpeg=7:2.8.10-0ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_2.8.10-0ubuntu0.16.04.1.dsc' ffmpeg_2.8.10-0ubuntu0.16.04.1.dsc 4531 SHA256:828f556e7bbe8eced8efbfa0cbe1ce9b10a1b0586d0659ab08b2369c03e753b4
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_2.8.10.orig.tar.xz' ffmpeg_2.8.10.orig.tar.xz 7212032 SHA256:2c48930205305a865ae698110f7b3e0cc90e9d243f48bb2a3fb59770d82448b1
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_2.8.10-0ubuntu0.16.04.1.debian.tar.xz' ffmpeg_2.8.10-0ubuntu0.16.04.1.debian.tar.xz 43888 SHA256:39a30b82e37218e212dc8c47d0eb39dfa12653a72c197aa152c3d3bbfed30801
-```
 
 ### `dpkg` source package: `fftw3=3.3.4-2ubuntu1`
 
@@ -2284,14 +2273,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libdrm=2.4.67-1ubuntu0.16.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.67-1ubuntu0.16.04.2.dsc' libdrm_2.4.67-1ubuntu0.16.04.2.dsc 3467 SHA256:4b829a0057ebabbc2b67e8d1803222fd9b815b3a2f67a69f5c0d2c74d1b70b98
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.67.orig.tar.gz' libdrm_2.4.67.orig.tar.gz 957783 SHA256:4ae392513c4df30d88f10e69bf425a1dff960a5b4ccd4da621d9fc88523f7acb
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.67-1ubuntu0.16.04.2.diff.gz' libdrm_2.4.67-1ubuntu0.16.04.2.diff.gz 38385 SHA256:130a2858bc359cbbb4e1d54ce74d759a011d0d68ff504772c7022f22efaea274
-```
 
 ### `dpkg` source package: `libedit=3.1-20150325-1ubuntu2`
 
@@ -3748,14 +3731,8 @@ Licenses: (parsed from: `/usr/share/doc/libgl1-mesa-dri/copyright`, `/usr/share/
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mesa=11.2.0-1ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_11.2.0-1ubuntu2.2.dsc' mesa_11.2.0-1ubuntu2.2.dsc 4420 SHA256:4520457d2c6eed91f3d555ebda5782e5a95e76372ae5878fc98392691d9327bc
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_11.2.0.orig.tar.gz' mesa_11.2.0.orig.tar.gz 13159084 SHA256:dea3d8143929aad5c24ef0993ddb05807b30c284b488fc62903adfcc1c127887
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_11.2.0-1ubuntu2.2.diff.gz' mesa_11.2.0-1ubuntu2.2.diff.gz 137442 SHA256:07359d673105c28a9bd71960172d0b209409dff5129b9b1d057bb555c4442c83
-```
 
 ### `dpkg` source package: `mime-support=3.59ubuntu1`
 
