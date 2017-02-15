@@ -1,7 +1,7 @@
 ## `ruby:2-alpine`
 
 ```console
-$ docker pull ruby@sha256:4a79c68f85528d1fabdf670e4d2555fe76fdc69cf08599188fc156f0015ae246
+$ docker pull ruby@sha256:f9fe8ccf3630d38375573554c5e20c9080d373826be745d8e0f2e87722ad1515
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull ruby@sha256:4a79c68f85528d1fabdf670e4d2555fe76fdc69cf08599188fc156
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.1 MB (27137807 bytes)**  
+-	Total Size: **27.1 MB (27140163 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48de60a8463d2888b8586fac963b4cf5c4e8f41fa3d4e219daa3141769ae6853`
+-	Image ID: `sha256:23aac2a639605e48663d9623f56af52d1e9b0cb7480327e697e4445d557766da`
 -	Default Command: `["irb"]`
 
 ```dockerfile
@@ -31,19 +31,19 @@ ENV RUBY_DOWNLOAD_SHA256=3a87fef45cba48b9322236be60c455c13fd4220184ce72876003613
 ENV RUBYGEMS_VERSION=2.6.10
 # Wed, 25 Jan 2017 18:28:59 GMT
 RUN set -ex 		&& apk add --no-cache --virtual .ruby-builddeps 		autoconf 		bison 		bzip2 		bzip2-dev 		ca-certificates 		coreutils 		gcc 		gdbm-dev 		glib-dev 		libc-dev 		libffi-dev 		libxml2-dev 		libxslt-dev 		linux-headers 		make 		ncurses-dev 		openssl 		openssl-dev 		procps 		readline-dev 		ruby 		tar 		yaml-dev 		zlib-dev 		xz 		&& wget -O ruby.tar.xz "https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz" 	&& echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz" | sha256sum -c - 		&& mkdir -p /usr/src/ruby 	&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 	&& rm ruby.tar.xz 		&& cd /usr/src/ruby 		&& { 		echo '#define ENABLE_PATH_CHECK 0'; 		echo; 		cat file.c; 	} > file.c.new 	&& mv file.c.new file.c 		&& autoconf 	&& ac_cv_func_isnan=yes ac_cv_func_isinf=yes 		./configure --disable-install-doc --enable-shared 	&& make -j"$(getconf _NPROCESSORS_ONLN)" 	&& make install 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .ruby-rundeps $runDeps 		bzip2 		ca-certificates 		libffi-dev 		openssl-dev 		yaml-dev 		procps 		zlib-dev 	&& apk del .ruby-builddeps 	&& cd / 	&& rm -r /usr/src/ruby 		&& gem update --system "$RUBYGEMS_VERSION"
-# Wed, 25 Jan 2017 18:29:00 GMT
-ENV BUNDLER_VERSION=1.14.3
-# Wed, 25 Jan 2017 18:29:01 GMT
+# Wed, 15 Feb 2017 20:51:01 GMT
+ENV BUNDLER_VERSION=1.14.4
+# Wed, 15 Feb 2017 20:51:04 GMT
 RUN gem install bundler --version "$BUNDLER_VERSION"
-# Wed, 25 Jan 2017 18:29:02 GMT
+# Wed, 15 Feb 2017 20:51:04 GMT
 ENV GEM_HOME=/usr/local/bundle
-# Wed, 25 Jan 2017 18:29:02 GMT
+# Wed, 15 Feb 2017 20:51:05 GMT
 ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_BIN=/usr/local/bundle/bin BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle
-# Wed, 25 Jan 2017 18:29:02 GMT
+# Wed, 15 Feb 2017 20:51:05 GMT
 ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 25 Jan 2017 18:29:03 GMT
+# Wed, 15 Feb 2017 20:51:06 GMT
 RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" 	&& chmod 777 "$GEM_HOME" "$BUNDLE_BIN"
-# Wed, 25 Jan 2017 18:29:03 GMT
+# Wed, 15 Feb 2017 20:51:07 GMT
 CMD ["irb"]
 ```
 
@@ -60,11 +60,11 @@ CMD ["irb"]
 		Last Modified: Wed, 25 Jan 2017 18:40:31 GMT  
 		Size: 24.2 MB (24192647 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b33ad99ef8513e2ac80027dbb5efbb1841075b33368e0cffc3bb5989c312977c`  
-		Last Modified: Wed, 25 Jan 2017 18:40:28 GMT  
-		Size: 631.7 KB (631720 bytes)  
+	-	`sha256:faaa0a06aa2c2bcc46524bb45edc6c0e9a910082573679b0e96d43cbe86ca2ae`  
+		Last Modified: Wed, 15 Feb 2017 21:01:04 GMT  
+		Size: 634.1 KB (634076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7047f69104d7e978cd133e34867ae209855d96701102b1bb1ebea29a43dc803e`  
-		Last Modified: Wed, 25 Jan 2017 18:40:26 GMT  
+	-	`sha256:2de29e0f67880b9ead2ab102b3d01c9378027f91cea63e540e1a564b7ed5c668`  
+		Last Modified: Wed, 15 Feb 2017 21:01:04 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
