@@ -1,9 +1,9 @@
-# `backdrop:1.5.2-fpm`
+# `backdrop:1.6.1-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d80bd497c1c4c02e8fc883fff0b8a79e6027194a55b15d3a5b411a68ff8641eb`
-- Created: `2017-01-24T20:59:16.263775098Z`
+- Image ID: `sha256:c17e3babf34d5483205ff2be3743ace91936511c0520a6c2817a893b3f600ed2`
+- Created: `2017-02-13T23:51:31.22094954Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["php-fpm"]`
@@ -21,8 +21,8 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.30.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805`
   - `PHP_MD5=68753955a8964ae49064c6424f81eb3e`
-  - `BACKDROP_VERSION=1.5.2`
-  - `BACKDROP_MD5=dbc73ec1841af1b824277a6c1c445250`
+  - `BACKDROP_VERSION=1.6.1`
+  - `BACKDROP_MD5=248630b18fc2bce02ad3f02d8bcf9768`
 
 ## `dpkg` (`.deb`-based packages)
 
