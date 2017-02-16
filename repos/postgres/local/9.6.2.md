@@ -1,18 +1,18 @@
-# `postgres:9.6.1`
+# `postgres:9.6.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4023a747a01a29f94939c41fc5c2441837d9ebc05030c2681dc47853d73978c5`
-- Created: `2017-01-20T22:06:41.231805893Z`
+- Image ID: `sha256:ecd991538a0fbb77f8a0327d5ef92b4fe1c50da57719c4a8e810b399199e53e3`
+- Created: `2017-02-10T00:29:10.679939079Z`
 - Arch: `linux`/`amd64`
-- Entrypoint: `["/docker-entrypoint.sh"]`
+- Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["postgres"]`
 - Environment:
   - `PATH=/usr/lib/postgresql/9.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.7`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=9.6`
-  - `PG_VERSION=9.6.1-2.pgdg80+1`
+  - `PG_VERSION=9.6.2-1.pgdg80+1`
   - `PGDATA=/var/lib/postgresql/data`
 
 ## `dpkg` (`.deb`-based packages)
@@ -2563,12 +2563,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u2/
 - https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb8u5`
+### `dpkg` source package: `openssl=1.0.1t-1+deb8u6`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1t-1+deb8u5`
-- `openssl=1.0.1t-1+deb8u5`
+- `libssl1.0.0:amd64=1.0.1t-1+deb8u6`
+- `openssl=1.0.1t-1+deb8u6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2577,16 +2577,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u5
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u5.dsc' openssl_1.0.1t-1+deb8u5.dsc 2258 SHA256:165eb617542ab1e9bf810c215b586a57b926f3f6977c1a72af752754c7c90bea
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u5.debian.tar.xz' openssl_1.0.1t-1+deb8u5.debian.tar.xz 106720 SHA256:c6723fbf370ec5544c9b1753d5ad06d4b343a341560fb8650dda135506312cd9
+$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u6
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u6.dsc' openssl_1.0.1t-1+deb8u6.dsc 2272 SHA256:c5d2624a9b9de16a8d173c852e84f175757ee838cd3b5efe44683b96a6aa927b
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u6.debian.tar.xz' openssl_1.0.1t-1+deb8u6.debian.tar.xz 108424 SHA256:670935107107c20c872174c96c0cd098ffc2c15cac17f5a104af63a1db69cf3a
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u6/
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
@@ -2714,11 +2714,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/perl/5.20.2-3+deb8u6/
 - https://sources.debian.net/src/perl/5.20.2-3+deb8u6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `pgdg-keyring=2014.1`
+### `dpkg` source package: `pgdg-keyring=2017.1`
 
 Binary Packages:
 
-- `pgdg-keyring=2014.1`
+- `pgdg-keyring=2017.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2727,9 +2727,9 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pgdg-keyring=2014.1
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/pgdg-keyring/pgdg-keyring_2014.1.dsc' pgdg-keyring_2014.1.dsc 823 SHA256:3b27357307f7403cf5e3cf5d94f19ccc8d37ad742c38c2688c4ad782a7ff4199
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/pgdg-keyring/pgdg-keyring_2014.1.tar.gz' pgdg-keyring_2014.1.tar.gz 5411 SHA256:bd0eb001fbcb6394766f1c4e54ad09aefeb5adaa8443b22e4d64d77a75bc05dd
+$ apt-get source -qq --print-uris pgdg-keyring=2017.1
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/pgdg-keyring/pgdg-keyring_2017.1.dsc' pgdg-keyring_2017.1.dsc 1672 SHA256:fe2328561d11de474f8128b17c033297c66092f34cfb9d0afd030dce93059201
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/pgdg-keyring/pgdg-keyring_2017.1.tar.xz' pgdg-keyring_2017.1.tar.xz 9724 SHA256:da667285101b1027547281c6ff85e1d42edc582d0376a58f720f493c5be62146
 ```
 
 ### `dpkg` source package: `popt=1.16-10`
@@ -2758,14 +2758,14 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/popt/1.16-10/
 - https://sources.debian.net/src/popt/1.16-10/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `postgresql-9.6=9.6.1-2.pgdg80+1`
+### `dpkg` source package: `postgresql-9.6=9.6.2-1.pgdg80+1`
 
 Binary Packages:
 
-- `libpq5:amd64=9.6.1-2.pgdg80+1`
-- `postgresql-9.6=9.6.1-2.pgdg80+1`
-- `postgresql-client-9.6=9.6.1-2.pgdg80+1`
-- `postgresql-contrib-9.6=9.6.1-2.pgdg80+1`
+- `libpq5:amd64=9.6.2-1.pgdg80+1`
+- `postgresql-9.6=9.6.2-1.pgdg80+1`
+- `postgresql-client-9.6=9.6.2-1.pgdg80+1`
+- `postgresql-contrib-9.6=9.6.2-1.pgdg80+1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-9.6/copyright`, `/usr/share/doc/postgresql-client-9.6/copyright`, `/usr/share/doc/postgresql-contrib-9.6/copyright`)
 
@@ -2787,18 +2787,18 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-9.6=9.6.1-2.pgdg80+1
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.1-2.pgdg80+1.dsc' postgresql-9.6_9.6.1-2.pgdg80+1.dsc 2714 SHA256:88f7293da407d898e22ae1ab80414113b8ed466cfaaf6f939994b5e46910c04e
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.1.orig.tar.bz2' postgresql-9.6_9.6.1.orig.tar.bz2 19260568 SHA256:e5101e0a49141fc12a7018c6dad594694d3a3325f5ab71e93e0e51bd94e51fcd
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.1-2.pgdg80+1.debian.tar.xz' postgresql-9.6_9.6.1-2.pgdg80+1.debian.tar.xz 20468 SHA256:88e5881a781aa528a7b4775b62968db0e557ee6dabb8393518426679183685d7
+$ apt-get source -qq --print-uris postgresql-9.6=9.6.2-1.pgdg80+1
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.2-1.pgdg80+1.dsc' postgresql-9.6_9.6.2-1.pgdg80+1.dsc 2714 SHA256:d8b0c07674735a19c1b2f07cfd3f457220c3deef0badef19b49f54f3469354d4
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.2.orig.tar.bz2' postgresql-9.6_9.6.2.orig.tar.bz2 19478040 SHA256:0187b5184be1c09034e74e44761505e52357248451b0c854dddec6c231fe50c9
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.2-1.pgdg80+1.debian.tar.xz' postgresql-9.6_9.6.2-1.pgdg80+1.debian.tar.xz 20692 SHA256:73434d7f51d232d89c5c209ef26abdd6983378ddabea86b4e335ddac23d17afc
 ```
 
-### `dpkg` source package: `postgresql-common=178.pgdg80+1`
+### `dpkg` source package: `postgresql-common=180.pgdg80+1`
 
 Binary Packages:
 
-- `postgresql-client-common=178.pgdg80+1`
-- `postgresql-common=178.pgdg80+1`
+- `postgresql-client-common=180.pgdg80+1`
+- `postgresql-common=180.pgdg80+1`
 
 Licenses: (parsed from: `/usr/share/doc/postgresql-client-common/copyright`, `/usr/share/doc/postgresql-common/copyright`)
 
@@ -2808,9 +2808,9 @@ Licenses: (parsed from: `/usr/share/doc/postgresql-client-common/copyright`, `/u
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-common=178.pgdg80+1
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_178.pgdg80+1.dsc' postgresql-common_178.pgdg80+1.dsc 1497 SHA256:1999355d21eb5b437ad509ea72463ada170b01939ba50f1d3de62ff48bb05841
-'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_178.pgdg80+1.tar.xz' postgresql-common_178.pgdg80+1.tar.xz 201456 SHA256:9a2982b6c2a0f9b1cee4f4d4e6cf029e2fcb91d24769fc276254147cb70c2c0f
+$ apt-get source -qq --print-uris postgresql-common=180.pgdg80+1
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_180.pgdg80+1.dsc' postgresql-common_180.pgdg80+1.dsc 1497 SHA256:4b794f36d88cb6f025a27951c352e51c9a99a00bf072d9b03516945868c3028b
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_180.pgdg80+1.tar.xz' postgresql-common_180.pgdg80+1.tar.xz 202996 SHA256:d75a680884121e5bdbd3c47d973b8c42420a8e819f355669eeb1d75879b3e2ab
 ```
 
 ### `dpkg` source package: `procps=2:3.3.9-9`
