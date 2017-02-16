@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:855e0c4b44a1b6b410e96b7453178caf2a0ab3b4af04852df039f19c8ee5b522`
-- Created: `2017-01-21T00:00:22.775773961Z`
+- Image ID: `sha256:6926275ee3b66cf64af7d4cee94d62aae2b89283933a62abc2652b73a373b04f`
+- Created: `2017-02-16T00:50:21.280705509Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["couchbase-server"]`
@@ -324,11 +324,11 @@ $ apt-get source -qq --print-uris coreutils=8.21-1ubuntu5.4
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.21-1ubuntu5.4.diff.gz' coreutils_8.21-1ubuntu5.4.diff.gz 44759 SHA256:0d2690aab7f9d8aa65861b5648c3bebc8a5d872fe68a694aae70ddf9393d8372
 ```
 
-### `dpkg` source package: `couchbase-server=4.5.1-2844-1`
+### `dpkg` source package: `couchbase-server=4.6.0-3573-1`
 
 Binary Packages:
 
-- `couchbase-server=4.5.1-2844-1`
+- `couchbase-server=4.6.0-3573-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
