@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8b650128528a028e63989de1c00a90667dbc748694e36799144632ebb8525d5c`
-- Created: `2017-02-07T23:36:46.071790142Z`
+- Image ID: `sha256:a9d016b6f993ee4510666d4049a98670baef2fba91332a9d79a27a894a2afe73`
+- Created: `2017-02-16T00:48:46.743822441Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["catalina.sh","run"]`
@@ -17,7 +17,7 @@
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
-  - `OPENSSL_VERSION=1.1.0c-2`
+  - `OPENSSL_VERSION=1.1.0d-2`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
   - `TOMCAT_VERSION=8.0.41`
@@ -927,6 +927,30 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/gcc-4.9/4.9.2-10/
 - https://sources.debian.net/src/gcc-4.9/4.9.2-10/debian/copyright (for direct copyright/license information)
+
+### `dpkg` source package: `gdbm=1.8.3-13.1`
+
+Binary Packages:
+
+- `libgdbm3:amd64=1.8.3-13.1`
+
+Licenses: (parsed from: `/usr/share/doc/libgdbm3/copyright`)
+
+- `GPL-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris gdbm=1.8.3-13.1
+'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3-13.1.dsc' gdbm_1.8.3-13.1.dsc 1830 SHA256:b1d8bef30edc491315c337930cbe2b61f44f55035adfc26ae945bab5ca57d5c9
+'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3.orig.tar.bz2' gdbm_1.8.3.orig.tar.bz2 172796 SHA256:1d5995b6e9e6be4ff62c8126d019f184a083dd8e6f75f6c74b9fe023b5b9440e
+'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3-13.1.debian.tar.xz' gdbm_1.8.3-13.1.debian.tar.xz 14748 SHA256:251401e1f5210226f384e936b1b7ea1df40119a918d9f3dbf48b2e51d4df8983
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/gdbm/1.8.3-13.1/
+- https://sources.debian.net/src/gdbm/1.8.3-13.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.19-18+deb8u7`
 
@@ -2332,19 +2356,31 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/
 - https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openssl=1.1.0c-2`
+### `dpkg` source package: `openssl=1.1.0d-2`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.0c-2`
-- `openssl=1.1.0c-2`
+- `libssl1.1:amd64=1.1.0d-2`
+- `openssl=1.1.0d-2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.1.0d-2
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0d-2.dsc' openssl_1.1.0d-2.dsc 2583 SHA256:62bfc83c4114770cf62aad4612c9f50628f76afdc48ba81fb45d345a88e09231
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0d.orig.tar.gz' openssl_1.1.0d.orig.tar.gz 5201626 SHA256:7d5ebb9e89756545c156ff9c13cf2aa6214193b010a468a3bc789c3c28fe60df
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0d.orig.tar.gz.asc' openssl_1.1.0d.orig.tar.gz.asc 455 SHA256:f2721eb40e8411606ec46d8059b36315f153c350d1805531359ebae5e344672d
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0d-2.debian.tar.xz' openssl_1.1.0d-2.debian.tar.xz 54180 SHA256:c87204e0a81bf6922021a93a4b2926f1f622c6ecf8146cd46f6e85958b3afa00
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/openssl/1.1.0d-2/
+- https://sources.debian.net/src/openssl/1.1.0d-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
@@ -2455,9 +2491,11 @@ Likely also available for browsing at:
 
 Binary Packages:
 
+- `perl=5.20.2-3+deb8u6`
 - `perl-base=5.20.2-3+deb8u6`
+- `perl-modules=5.20.2-3+deb8u6`
 
-Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
+Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules/copyright`)
 
 - `Artistic`
 - `Artistic,`
