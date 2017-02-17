@@ -116,13 +116,8 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-files=9.6ubuntu9
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.6ubuntu9.dsc' base-files_9.6ubuntu9.dsc 1582 SHA256:5377ebcc00f47bffc3f863b3de97544f7e6fccc8bfa66e85a814b42cc01a5cbe
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.6ubuntu9.tar.xz' base-files_9.6ubuntu9.tar.xz 64000 SHA256:6e7003fd963bab9fc8c846772737ac7a5ea8ebb861c155a4cc2e8bfa3467c19a
-```
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -1009,14 +1004,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=232-8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_232-8.dsc' systemd_232-8.dsc 4653 SHA256:3ca60d621830e7df68aff42fcd7e09ad3eeca54ce15cade2f5190ad5d9208581
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_232-8.debian.tar.xz' systemd_232-8.debian.tar.xz 131676 SHA256:5dcb0e19e7a33e15ad5cea4b9806c4705b78ebe87a0478fbdf7d85c20fc29bab
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`
 
