@@ -1,16 +1,16 @@
-# `golang:1.7.5`
+# `golang:1.8.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7afbc2b03b9e6259c8b85457ca94490a1856d13a798ec0040c423543b66a9511`
-- Created: `2017-01-27T22:37:24.160793779Z`
+- Image ID: `sha256:12f6ea9641ad6be243982dc7b56d94977854c1f2ab8d87d6d4e5db46e3ddc41f`
+- Created: `2017-02-16T23:21:30.725710046Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.7.5`
-  - `GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.7.5.linux-amd64.tar.gz`
-  - `GOLANG_DOWNLOAD_SHA256=2e4dd6c44f0693bef4e7b46cc701513d74c3cc44f2419bf519d7868b12931ac3`
+  - `GOLANG_VERSION=1.8`
+  - `GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.8.linux-amd64.tar.gz`
+  - `GOLANG_DOWNLOAD_SHA256=53ab94104ee3923e228a2cb2116e5e462ad3ebaeea06ff04463479d7f12d27ca`
   - `GOPATH=/go`
 
 ## `dpkg` (`.deb`-based packages)

@@ -1,16 +1,16 @@
-# `golang:1.8rc3-stretch`
+# `golang:1.8.0-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b5741ccbb20a83c0696f1c9e181a6e007efc9cf4533777095c660bbc05e64dd5`
-- Created: `2017-02-10T18:51:58.415623697Z`
+- Image ID: `sha256:aeb408594293b211b9bf7ed8bd6d20030335b602ae451780f67de700abcc9e00`
+- Created: `2017-02-16T23:21:51.47869232Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.8rc3`
-  - `GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.8rc3.linux-amd64.tar.gz`
-  - `GOLANG_DOWNLOAD_SHA256=0ff3faba02ac83920a65b453785771e75f128fbf9ba4ad1d5e72c044103f9c7a`
+  - `GOLANG_VERSION=1.8`
+  - `GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.8.linux-amd64.tar.gz`
+  - `GOLANG_DOWNLOAD_SHA256=53ab94104ee3923e228a2cb2116e5e462ad3ebaeea06ff04463479d7f12d27ca`
   - `GOPATH=/go`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1699,19 +1699,8 @@ Licenses: (parsed from: `/usr/share/doc/make/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris make-dfsg=4.1-9
-'http://deb.debian.org/debian/pool/main/m/make-dfsg/make-dfsg_4.1-9.dsc' make-dfsg_4.1-9.dsc 1840 SHA256:9fb34257ae4511f1dc7ece5bfe6b95cac8bdc81f407f2651cb0236be280baa6d
-'http://deb.debian.org/debian/pool/main/m/make-dfsg/make-dfsg_4.1.orig.tar.gz' make-dfsg_4.1.orig.tar.gz 1350231 SHA256:b3ed04fb6718289e4a430afbe2df6ecba9177aad9f6d09aaf38e5409262ca8a3
-'http://deb.debian.org/debian/pool/main/m/make-dfsg/make-dfsg_4.1-9.diff.gz' make-dfsg_4.1-9.diff.gz 45279 SHA256:7dc8fab9a4573abfe17e7bc611a70eb3ebb24786dbd9ce008329cf12e05c9c15
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/make-dfsg/4.1-9/
-- https://sources.debian.net/src/make-dfsg/4.1-9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
