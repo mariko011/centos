@@ -2393,15 +2393,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris make-dfsg=4.1-9
-'http://deb.debian.org/debian/pool/main/m/make-dfsg/make-dfsg_4.1-9.dsc' make-dfsg_4.1-9.dsc 1840 SHA256:9fb34257ae4511f1dc7ece5bfe6b95cac8bdc81f407f2651cb0236be280baa6d
-'http://deb.debian.org/debian/pool/main/m/make-dfsg/make-dfsg_4.1.orig.tar.gz' make-dfsg_4.1.orig.tar.gz 1350231 SHA256:b3ed04fb6718289e4a430afbe2df6ecba9177aad9f6d09aaf38e5409262ca8a3
-'http://deb.debian.org/debian/pool/main/m/make-dfsg/make-dfsg_4.1-9.diff.gz' make-dfsg_4.1-9.diff.gz 45279 SHA256:7dc8fab9a4573abfe17e7bc611a70eb3ebb24786dbd9ce008329cf12e05c9c15
+'http://http.debian.net/debian/pool/main/m/make-dfsg/make-dfsg_4.1-9.dsc' make-dfsg_4.1-9.dsc 1840 SHA256:9fb34257ae4511f1dc7ece5bfe6b95cac8bdc81f407f2651cb0236be280baa6d
+'http://http.debian.net/debian/pool/main/m/make-dfsg/make-dfsg_4.1.orig.tar.gz' make-dfsg_4.1.orig.tar.gz 1350231 SHA256:b3ed04fb6718289e4a430afbe2df6ecba9177aad9f6d09aaf38e5409262ca8a3
+'http://http.debian.net/debian/pool/main/m/make-dfsg/make-dfsg_4.1-9.diff.gz' make-dfsg_4.1-9.diff.gz 45279 SHA256:7dc8fab9a4573abfe17e7bc611a70eb3ebb24786dbd9ce008329cf12e05c9c15
 ```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/make-dfsg/4.1-9/
-- https://sources.debian.net/src/make-dfsg/4.1-9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
