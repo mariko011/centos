@@ -2357,19 +2357,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libevent=2.0.21-stable-2.1
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.0.21-stable-2.1.dsc' libevent_2.0.21-stable-2.1.dsc 2400 SHA256:01f74091b5d2fdf96ca24716f3a77496222fa8532f9e6c01779def03fc1f0823
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.0.21-stable.orig.tar.gz' libevent_2.0.21-stable.orig.tar.gz 850772 SHA256:22a530a8a5ba1cb9c080cba033206b17dacd21437762155c6d30ee6469f574f5
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.0.21-stable-2.1.debian.tar.xz' libevent_2.0.21-stable-2.1.debian.tar.xz 12352 SHA256:aba684c33027324f0e45c87af018573fd29e5806063cb5f8bdd63dbaaf0567e8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libevent/2.0.21-stable-2.1/
-- https://sources.debian.net/src/libevent/2.0.21-stable-2.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libexif=0.6.21-2`
 
@@ -3668,19 +3657,8 @@ Licenses: (parsed from: `/usr/share/doc/make/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris make-dfsg=4.1-9
-'http://deb.debian.org/debian/pool/main/m/make-dfsg/make-dfsg_4.1-9.dsc' make-dfsg_4.1-9.dsc 1840 SHA256:9fb34257ae4511f1dc7ece5bfe6b95cac8bdc81f407f2651cb0236be280baa6d
-'http://deb.debian.org/debian/pool/main/m/make-dfsg/make-dfsg_4.1.orig.tar.gz' make-dfsg_4.1.orig.tar.gz 1350231 SHA256:b3ed04fb6718289e4a430afbe2df6ecba9177aad9f6d09aaf38e5409262ca8a3
-'http://deb.debian.org/debian/pool/main/m/make-dfsg/make-dfsg_4.1-9.diff.gz' make-dfsg_4.1-9.diff.gz 45279 SHA256:7dc8fab9a4573abfe17e7bc611a70eb3ebb24786dbd9ce008329cf12e05c9c15
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/make-dfsg/4.1-9/
-- https://sources.debian.net/src/make-dfsg/4.1-9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mariadb-10.1=10.1.21-5`
 

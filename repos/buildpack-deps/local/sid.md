@@ -1375,19 +1375,8 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.36.4-1
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.4-1.dsc' gdk-pixbuf_2.36.4-1.dsc 2813 SHA256:edb49a45a918f5b57b1f126aae246448408a9c6f7d4ff773cee5af92d8a6d55f
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.4.orig.tar.xz' gdk-pixbuf_2.36.4.orig.tar.xz 5158812 SHA256:0b19901c3eb0596141d2d48ddb9dac79ad1524bdf59366af58ab38fcb9ee7463
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.4-1.debian.tar.xz' gdk-pixbuf_2.36.4-1.debian.tar.xz 13340 SHA256:ad57ff7574680d823439cbc3087d1193ebd74fe1733a0070782cf86f24ae7ccd
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gdk-pixbuf/2.36.4-1/
-- https://sources.debian.net/src/gdk-pixbuf/2.36.4-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `geoip=1.6.9-4`
 
@@ -1787,19 +1776,8 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`)
 - `LGPL-2.1+`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gtk+3.0=3.22.7-2
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.7-2.dsc' gtk+3.0_3.22.7-2.dsc 3881 SHA256:55a67ead061d08661b4d1cc7d252b7ebdb8d27813c168d84d4abcb3300ad728a
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.7.orig.tar.xz' gtk+3.0_3.22.7.orig.tar.xz 18301484 SHA256:a3a27564bfb1679ebbc75c37cd2bcd6e727c8bdfbcd3984d29305bf9ee60d432
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.7-2.debian.tar.xz' gtk+3.0_3.22.7-2.debian.tar.xz 144176 SHA256:4ed2c65a62b573ecfed16ad3ddf3bdda13c24543ef764ab49fe9b9e5fa07197b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gtk+3.0/3.22.7-2/
-- https://sources.debian.net/src/gtk+3.0/3.22.7-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gts=0.7.6+darcs121130-4`
 
@@ -4241,20 +4219,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.0d-2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0d-2.dsc' openssl_1.1.0d-2.dsc 2583 SHA256:62bfc83c4114770cf62aad4612c9f50628f76afdc48ba81fb45d345a88e09231
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0d.orig.tar.gz' openssl_1.1.0d.orig.tar.gz 5201626 SHA256:7d5ebb9e89756545c156ff9c13cf2aa6214193b010a468a3bc789c3c28fe60df
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0d.orig.tar.gz.asc' openssl_1.1.0d.orig.tar.gz.asc 455 SHA256:f2721eb40e8411606ec46d8059b36315f153c350d1805531359ebae5e344672d
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0d-2.debian.tar.xz' openssl_1.1.0d-2.debian.tar.xz 54180 SHA256:c87204e0a81bf6922021a93a4b2926f1f622c6ecf8146cd46f6e85958b3afa00
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssl/1.1.0d-2/
-- https://sources.debian.net/src/openssl/1.1.0d-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.23.3-4`
 

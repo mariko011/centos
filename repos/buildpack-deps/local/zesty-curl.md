@@ -116,13 +116,8 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-files=9.6ubuntu9
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.6ubuntu9.dsc' base-files_9.6ubuntu9.dsc 1582 SHA256:5377ebcc00f47bffc3f863b3de97544f7e6fccc8bfa66e85a814b42cc01a5cbe
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.6ubuntu9.tar.xz' base-files_9.6ubuntu9.tar.xz 64000 SHA256:6e7003fd963bab9fc8c846772737ac7a5ea8ebb861c155a4cc2e8bfa3467c19a
-```
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -606,14 +601,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris heimdal=1.7~git20160703+dfsg-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_1.7~git20160703+dfsg-1ubuntu1.dsc' heimdal_1.7~git20160703+dfsg-1ubuntu1.dsc 3332 SHA256:cd662c9b6dd768e55b5344dd6af3e8d5446056b8ca4eb0d94ebcf8bb24bb9d14
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_1.7~git20160703+dfsg.orig.tar.gz' heimdal_1.7~git20160703+dfsg.orig.tar.gz 9203662 SHA256:3e68467631944751c4d32d9af615c2b5745ebc43b19c4a76ac28520dc4e999f5
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_1.7~git20160703+dfsg-1ubuntu1.debian.tar.xz' heimdal_1.7~git20160703+dfsg-1ubuntu1.debian.tar.xz 65788 SHA256:28324a097f558b34d34750eec3508a2c54b6ca36b0f104ba8745a8332b2e8b4b
-```
 
 ### `dpkg` source package: `hostname=3.18`
 
@@ -1092,14 +1081,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu10
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu10.dsc' openssl_1.0.2g-1ubuntu10.dsc 2146 SHA256:fc3ace5e4895e1557c3527977a3c10f2a4d9461e0ad7e4e5abdf8c2fe08e9835
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu10.debian.tar.xz' openssl_1.0.2g-1ubuntu10.debian.tar.xz 106892 SHA256:5809084e5d8a56fd3f29c0a8ca7a69e3e88540e7ed0985920484c1d484c09b8b
-```
 
 ### `dpkg` source package: `p11-kit=0.23.3-4`
 
@@ -1370,14 +1353,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=232-8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_232-8.dsc' systemd_232-8.dsc 4653 SHA256:3ca60d621830e7df68aff42fcd7e09ad3eeca54ce15cade2f5190ad5d9208581
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_232-8.debian.tar.xz' systemd_232-8.debian.tar.xz 131676 SHA256:5dcb0e19e7a33e15ad5cea4b9806c4705b78ebe87a0478fbdf7d85c20fc29bab
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`
 
