@@ -3,6 +3,7 @@
 # Tags of `aerospike`
 
 -	[`aerospike:3.11.0.2`](#aerospike31102)
+-	[`aerospike:3.11.1.1`](#aerospike31111)
 -	[`aerospike:latest`](#aerospikelatest)
 
 ## `aerospike:3.11.0.2`
@@ -90,6 +91,10 @@ CMD ["asd"]
 		Last Modified: Tue, 24 Jan 2017 17:43:20 GMT  
 		Size: 526.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `aerospike:3.11.1.1`
+
+**does not exist** (yet?)
 
 ## `aerospike:latest`
 
