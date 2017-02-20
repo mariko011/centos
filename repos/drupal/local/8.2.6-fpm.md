@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d19f3706d3be65f7ee2c5a5bcbe5250cededd332abf3577676313145b3d05102`
-- Created: `2017-02-06T17:44:45.07432552Z`
+- Image ID: `sha256:68502e4c52b5c122da6aa71a01942f59e59938d43cc8b1cc569e08f21c958add`
+- Created: `2017-02-17T20:35:12.541592939Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
 - Command: `["php-fpm"]`
@@ -16,11 +16,11 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=7.0.15`
-  - `PHP_URL=https://secure.php.net/get/php-7.0.15.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.15.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=300364d57fc4a6176ff7d52d390ee870ab6e30df121026649f8e7e0b9657fe93`
-  - `PHP_MD5=dca23412f3e3b3987e582091b751925d`
+  - `PHP_VERSION=7.0.16`
+  - `PHP_URL=https://secure.php.net/get/php-7.0.16.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.16.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=244ac39bc657448962860aa7a590e4417f68513ad5e86ee2727b1328b0537309`
+  - `PHP_MD5=6161aba9d24322d889da5d2ff944bddf`
   - `DRUPAL_VERSION=8.2.6`
   - `DRUPAL_MD5=57526a827771ea8a06db1792f1602a85`
 
@@ -2138,9 +2138,6 @@ Likely also available for browsing at:
 
 Binary Packages:
 
-- `libssl-dev:amd64=1.0.1t-1+deb8u5`
-- `libssl-doc=1.0.1t-1+deb8u5`
-- `libssl1.0.0:amd64=1.0.1t-1+deb8u5`
 - `openssl=1.0.1t-1+deb8u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
@@ -2160,6 +2157,32 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/
 - https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/debian/copyright (for direct copyright/license information)
+
+### `dpkg` source package: `openssl=1.0.1t-1+deb8u6`
+
+Binary Packages:
+
+- `libssl-dev:amd64=1.0.1t-1+deb8u6`
+- `libssl-doc=1.0.1t-1+deb8u6`
+- `libssl1.0.0:amd64=1.0.1t-1+deb8u6`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
+  If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u6
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u6.dsc' openssl_1.0.1t-1+deb8u6.dsc 2272 SHA256:c5d2624a9b9de16a8d173c852e84f175757ee838cd3b5efe44683b96a6aa927b
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u6.debian.tar.xz' openssl_1.0.1t-1+deb8u6.debian.tar.xz 108424 SHA256:670935107107c20c872174c96c0cd098ffc2c15cac17f5a104af63a1db69cf3a
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u6/
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
