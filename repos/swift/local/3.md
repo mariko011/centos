@@ -193,14 +193,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bind9=1:9.10.3.dfsg.P4-8ubuntu1.4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.10.3.dfsg.P4-8ubuntu1.4.dsc' bind9_9.10.3.dfsg.P4-8ubuntu1.4.dsc 3852 SHA256:36e582d9d49e2cc1db0afccfdf9e49fc9d90ee5201d28cef8e0807dd10b67422
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.10.3.dfsg.P4.orig.tar.gz' bind9_9.10.3.dfsg.P4.orig.tar.gz 8641072 SHA256:895077c868d06eea39c1526624f2278a3b51a3358b5aa50f48a0f1c16a7ab6e6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.10.3.dfsg.P4-8ubuntu1.4.debian.tar.xz' bind9_9.10.3.dfsg.P4-8ubuntu1.4.debian.tar.xz 73416 SHA256:e910e91c2848e88609085b679d3d0d7e168f757c65883dd54f600472c05d5650
-```
 
 ### `dpkg` source package: `binfmt-support=2.1.6-1`
 
