@@ -1,13 +1,13 @@
-# `storm:1.0.2`
+# `storm:1.0.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fee6c4e5a1e79da3d883ce19e06127124bf96b594b411a37d96174df334c37f6`
-- Created: `2016-12-27T22:04:33.801441639Z`
+- Image ID: `sha256:a8ef784d4e0b54f4aea9e37df736433f56af3ed58e70e3a6342b8c96eeca7cde`
+- Created: `2017-02-20T18:47:02.063249461Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Environment:
-  - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/apache-storm-1.0.2/bin`
+  - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/apache-storm-1.0.3/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre`
   - `JAVA_VERSION=8u111`
