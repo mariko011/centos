@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:178a9aa4b39e1b72f6d702c7edf4a689cfe5f343230e832d420daa740ff01d88`
-- Created: `2017-02-10T01:04:19.59187019Z`
+- Image ID: `sha256:1dee53d2f7c544849583820bc07eef891184022f5a3609edfbac885cf7bdb8aa`
+- Created: `2017-02-20T23:37:58.423970985Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["php-fpm"]`
@@ -16,11 +16,11 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E`
-  - `PHP_VERSION=7.1.1`
-  - `PHP_URL=https://secure.php.net/get/php-7.1.1.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.1.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=b3565b0c1441064eba204821608df1ec7367abff881286898d900c2c2a5ffe70`
-  - `PHP_MD5=65eef256f6e7104a05361939f5e23ada`
+  - `PHP_VERSION=7.1.2`
+  - `PHP_URL=https://secure.php.net/get/php-7.1.2.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.2.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=d815a0c39fd57bab1434a77ff0610fb507c22f790c66cd6f26e27030c4b3e971`
+  - `PHP_MD5=d79afea1870277c86fac903566fb6c5d`
   - `WORDPRESS_VERSION=4.7.2`
   - `WORDPRESS_SHA1=7b687f1af589c337124e6247229af209ec1d52c3`
 
@@ -2132,7 +2132,6 @@ Likely also available for browsing at:
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1t-1+deb8u5`
 - `openssl=1.0.1t-1+deb8u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
@@ -2152,6 +2151,30 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/
 - https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/debian/copyright (for direct copyright/license information)
+
+### `dpkg` source package: `openssl=1.0.1t-1+deb8u6`
+
+Binary Packages:
+
+- `libssl1.0.0:amd64=1.0.1t-1+deb8u6`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
+  If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u6
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u6.dsc' openssl_1.0.1t-1+deb8u6.dsc 2272 SHA256:c5d2624a9b9de16a8d173c852e84f175757ee838cd3b5efe44683b96a6aa927b
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u6.debian.tar.xz' openssl_1.0.1t-1+deb8u6.debian.tar.xz 108424 SHA256:670935107107c20c872174c96c0cd098ffc2c15cac17f5a104af63a1db69cf3a
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u6/
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
