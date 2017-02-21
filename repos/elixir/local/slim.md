@@ -1,15 +1,15 @@
-# `elixir:1.4.1-slim`
+# `elixir:1.4.2-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c12c7064270c7cfe96f1d7324769c2c4fc1913d35e724e28031a398fd2b1d890`
-- Created: `2017-02-03T19:55:05.15995907Z`
+- Image ID: `sha256:6a4c6ca854738d231c71df038a57cf920ffedaaf1be0789a9f552721ed0f5b8e`
+- Created: `2017-02-20T19:21:32.764843229Z`
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=19.2.2`
-  - `ELIXIR_VERSION=v1.4.1`
+  - `OTP_VERSION=19.2.3`
+  - `ELIXIR_VERSION=v1.4.2`
   - `LANG=C.UTF-8`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1281,11 +1281,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/iproute2/3.16.0-2/
 - https://sources.debian.net/src/iproute2/3.16.0-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `jasper=1.900.1-debian1-2.4+deb8u1`
+### `dpkg` source package: `jasper=1.900.1-debian1-2.4+deb8u2`
 
 Binary Packages:
 
-- `libjasper1:amd64=1.900.1-debian1-2.4+deb8u1`
+- `libjasper1:amd64=1.900.1-debian1-2.4+deb8u2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1294,16 +1294,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris jasper=1.900.1-debian1-2.4+deb8u1
-'http://deb.debian.org/debian/pool/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u1.dsc' jasper_1.900.1-debian1-2.4+deb8u1.dsc 1955 SHA256:52e8e9c7164dad5d3e4f68ae14322b4602255eb7a02af347f97a9592d449c685
-'http://deb.debian.org/debian/pool/main/j/jasper/jasper_1.900.1-debian1.orig.tar.gz' jasper_1.900.1-debian1.orig.tar.gz 1140771 SHA256:7276e8407080d8263b39aeac8305032b0534c7df25bf02718b3944711e3c81d7
-'http://deb.debian.org/debian/pool/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u1.debian.tar.xz' jasper_1.900.1-debian1-2.4+deb8u1.debian.tar.xz 30260 SHA256:995382b8f98a4226c0555a99a7fef938ef5ab04f646c400485cac07ddc53beb6
+$ apt-get source -qq --print-uris jasper=1.900.1-debian1-2.4+deb8u2
+'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u2.dsc' jasper_1.900.1-debian1-2.4+deb8u2.dsc 1969 SHA256:bd00981b19d6301d7063db29683ce1b053976f94f917a7959f9bd913b9f298cd
+'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-debian1.orig.tar.gz' jasper_1.900.1-debian1.orig.tar.gz 1140771 SHA256:7276e8407080d8263b39aeac8305032b0534c7df25bf02718b3944711e3c81d7
+'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u2.debian.tar.xz' jasper_1.900.1-debian1-2.4+deb8u2.debian.tar.xz 31432 SHA256:f828c092a945aad64980885df6e04282ff7ec94034208759aedf9fb8d3be39ea
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u1/
-- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u2/
+- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `jbigkit=2.1-3.1`
 
