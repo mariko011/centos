@@ -2897,14 +2897,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-62.83
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-62.83.dsc' linux_4.4.0-62.83.dsc 9611 SHA256:c478b0b458b694622fd8e6ca8c33bf0d9fe7802285ba4861d819cc0ecd9afe6b
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-62.83.diff.gz' linux_4.4.0-62.83.diff.gz 12355305 SHA256:1f6c8984cbce2f91b0876f44b1f3f8fca6603423caccfac11d883a2ef14e3911
-```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu0.2`
 
@@ -3532,14 +3526,8 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `Tcl`
 - `almost exclusively BSD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.5=9.5.5-0ubuntu0.16.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.5-0ubuntu0.16.04.dsc' postgresql-9.5_9.5.5-0ubuntu0.16.04.dsc 3730 SHA256:2d8127e4c702e0cde9175620cca70c15e2b20880130d1d78bfcacb1034164015
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.5.orig.tar.bz2' postgresql-9.5_9.5.5.orig.tar.bz2 18525082 SHA256:02c65290be74de6604c3fed87c9fd3e6b32e949f0ab8105a75bd7ed5aa71f394
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.5-0ubuntu0.16.04.debian.tar.xz' postgresql-9.5_9.5.5-0ubuntu0.16.04.debian.tar.xz 22252 SHA256:cf4c1ebde89cd189c5705850a6548a77de9af18b512f970084e7024531f8a8f7
-```
 
 ### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.3`
 

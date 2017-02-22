@@ -1057,19 +1057,8 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `GFDL-1.3`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris findutils=4.6.0+git+20161106-1
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20161106-1.dsc' findutils_4.6.0+git+20161106-1.dsc 2188 SHA256:af0f002e72ae1aa83f3325321513c56f9260ba94b06e0954e5c0d0e3c0210a43
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20161106.orig.tar.xz' findutils_4.6.0+git+20161106.orig.tar.xz 1828956 SHA256:96a3aa120d7300863f39fe56ccb6674d8cde4730b485f4f81083c1a6d33097e3
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20161106-1.debian.tar.xz' findutils_4.6.0+git+20161106-1.debian.tar.xz 26052 SHA256:6d387541054a47185216adfeced73748f4b1b45c16fae18da5471bf67a33609d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/findutils/4.6.0+git+20161106-1/
-- https://sources.debian.net/src/findutils/4.6.0+git+20161106-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `fontconfig=2.11.0-6.7`
 
@@ -1170,19 +1159,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-5=5.4.1-4
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1-4.dsc' gcc-5_5.4.1-4.dsc 17569 SHA256:31bdaa320393d1233917037a71723f20212923ea5c42e29a8087631d71fb7ebf
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1.orig.tar.gz' gcc-5_5.4.1.orig.tar.gz 76812822 SHA256:2a84447f34cd062066d38300ac8a1fb528eb301a504b48e1d017e547e5abfcdb
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1-4.diff.gz' gcc-5_5.4.1-4.diff.gz 3280486 SHA256:f8cff610a7b4ef62ad415de20aaf55368e5352801d32ef8321627609e17a0299
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-5/5.4.1-4/
-- https://sources.debian.net/src/gcc-5/5.4.1-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-6=6.3.0-5`
 
@@ -1647,19 +1625,8 @@ Licenses: (parsed from: `/usr/share/doc/libcdt5/copyright`, `/usr/share/doc/libc
 - `X/MIT`
 - `zlib-style`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris graphviz=2.38.0-16
-'http://deb.debian.org/debian/pool/main/g/graphviz/graphviz_2.38.0-16.dsc' graphviz_2.38.0-16.dsc 3222 SHA256:bf53adc3e23bef5e7c890e3cf6ac523ed2a40520a446862f6eb0e7dbb7b808da
-'http://deb.debian.org/debian/pool/main/g/graphviz/graphviz_2.38.0.orig.tar.gz' graphviz_2.38.0.orig.tar.gz 25848858 SHA256:81aa238d9d4a010afa73a9d2a704fc3221c731e1e06577c2ab3496bdef67859e
-'http://deb.debian.org/debian/pool/main/g/graphviz/graphviz_2.38.0-16.debian.tar.xz' graphviz_2.38.0-16.debian.tar.xz 43204 SHA256:e7801cf41571fd25271c824fcc4f501764f728b8bb25f963ee13f0dfcd78ef14
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/graphviz/2.38.0-16/
-- https://sources.debian.net/src/graphviz/2.38.0-16/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.27-1`
 
@@ -4379,19 +4346,8 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.6=9.6.1-2
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.1-2.dsc' postgresql-9.6_9.6.1-2.dsc 3634 SHA256:2fad895302ea58d1db661a25bbca9cef228535c957e3d918250c537a227723d4
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.1.orig.tar.bz2' postgresql-9.6_9.6.1.orig.tar.bz2 19260568 SHA256:e5101e0a49141fc12a7018c6dad594694d3a3325f5ab71e93e0e51bd94e51fcd
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.1-2.debian.tar.xz' postgresql-9.6_9.6.1-2.debian.tar.xz 20376 SHA256:cda7c8c40942e7382ce63a6ef6a9ba26d80b132100fba2c4815aeb5a8a4a6905
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/postgresql-9.6/9.6.1-2/
-- https://sources.debian.net/src/postgresql-9.6/9.6.1-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `procps=2:3.3.12-3`
 

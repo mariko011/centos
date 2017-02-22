@@ -382,19 +382,8 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris binutils=2.27.90.20170205-1
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.27.90.20170205-1.dsc' binutils_2.27.90.20170205-1.dsc 4455 SHA256:c2d3440222f553245646518cdbc7b3174c4136236675140eb9b992d8c044821b
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.27.90.20170205.orig.tar.gz' binutils_2.27.90.20170205.orig.tar.gz 33107019 SHA256:a7ad992bda7fb0f8e300d5bf66d31f075953ae9db6376a9ea750acd5157c1c09
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.27.90.20170205-1.diff.gz' binutils_2.27.90.20170205-1.diff.gz 89692 SHA256:97392ef5a02a7313676d9f694d65feb4e68ae0e5ce96fa4f2a503531e638380d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/binutils/2.27.90.20170205-1/
-- https://sources.debian.net/src/binutils/2.27.90.20170205-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
 
@@ -1138,19 +1127,8 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `GFDL-1.3`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris findutils=4.6.0+git+20161106-1
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20161106-1.dsc' findutils_4.6.0+git+20161106-1.dsc 2188 SHA256:af0f002e72ae1aa83f3325321513c56f9260ba94b06e0954e5c0d0e3c0210a43
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20161106.orig.tar.xz' findutils_4.6.0+git+20161106.orig.tar.xz 1828956 SHA256:96a3aa120d7300863f39fe56ccb6674d8cde4730b485f4f81083c1a6d33097e3
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20161106-1.debian.tar.xz' findutils_4.6.0+git+20161106-1.debian.tar.xz 26052 SHA256:6d387541054a47185216adfeced73748f4b1b45c16fae18da5471bf67a33609d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/findutils/4.6.0+git+20161106-1/
-- https://sources.debian.net/src/findutils/4.6.0+git+20161106-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `fontconfig=2.11.0-6.7`
 
@@ -1297,19 +1275,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp-6/copyright`, `/usr/share/doc/g++-6/
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.3.0-6
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-6.dsc' gcc-6_6.3.0-6.dsc 27171 SHA256:a04d6de9b6c83b43c027b83242e0820dd6e39016947c21fe824ff0e84b4ca526
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0.orig.tar.gz' gcc-6_6.3.0.orig.tar.gz 81587460 SHA256:04552f04baf6974fb7521191859fb54717385ad659afd822b2995b66ee4e4151
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-6.diff.gz' gcc-6_6.3.0-6.diff.gz 1828089 SHA256:e8e64c90f72de8f6d61cf484d41cfa09736348d08d69c93d063de02ae0417076
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-6/6.3.0-6/
-- https://sources.debian.net/src/gcc-6/6.3.0-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-defaults=1.165`
 
@@ -1672,19 +1639,8 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 - `MPL-1.1 | GPL-2 | LGPL-2.1`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris graphite2=1.3.9-3
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.9-3.dsc' graphite2_1.3.9-3.dsc 2165 SHA256:cd7ab236a07e8f3c32b4633a5603fe3f3ad8b72cf18c5e65deab793b6fcb99cb
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.9.orig.tar.gz' graphite2_1.3.9.orig.tar.gz 3889102 SHA256:ec0185b663059553fd46e8c4a4f0dede60a02f13a7a1fefc2ce70332ea814567
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.9-3.debian.tar.xz' graphite2_1.3.9-3.debian.tar.xz 10752 SHA256:22b121ffea4c8d89598d2186a1a74f27d77d858c622078a15c521f8689d5ee30
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/graphite2/1.3.9-3/
-- https://sources.debian.net/src/graphite2/1.3.9-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `graphviz=2.38.0-16.1`
 
@@ -1706,19 +1662,8 @@ Licenses: (parsed from: `/usr/share/doc/libcdt5/copyright`, `/usr/share/doc/libc
 - `X/MIT`
 - `zlib-style`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris graphviz=2.38.0-16.1
-'http://deb.debian.org/debian/pool/main/g/graphviz/graphviz_2.38.0-16.1.dsc' graphviz_2.38.0-16.1.dsc 3262 SHA256:69fd7881ab5b12b74079e05bc6d125fc44faba5311b1849d873c776878d08652
-'http://deb.debian.org/debian/pool/main/g/graphviz/graphviz_2.38.0.orig.tar.gz' graphviz_2.38.0.orig.tar.gz 25848858 SHA256:81aa238d9d4a010afa73a9d2a704fc3221c731e1e06577c2ab3496bdef67859e
-'http://deb.debian.org/debian/pool/main/g/graphviz/graphviz_2.38.0-16.1.debian.tar.xz' graphviz_2.38.0-16.1.debian.tar.xz 43304 SHA256:adca8f07dd5ebceeded9a47ac5801e5b314618c2a7ff665b1da5de3228ee7b3b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/graphviz/2.38.0-16.1/
-- https://sources.debian.net/src/graphviz/2.38.0-16.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.27-1`
 
@@ -3592,19 +3537,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.9.6-3
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.6-3.dsc' linux_4.9.6-3.dsc 82202 SHA256:21e9af396a36cf79149bd107607980ce81b5bc9f3fe07004f971d928cba7980a
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.6.orig.tar.xz' linux_4.9.6.orig.tar.xz 94436304 SHA256:7e7a40d778af639dc7736af9af70691d587e20d333541cafe0e3372b2af64290
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.6-3.debian.tar.xz' linux_4.9.6-3.debian.tar.xz 2761404 SHA256:cc124413acd6458b219d727559cea7635c1ef4c13b95f015c9083e07a48d97a3
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/4.9.6-3/
-- https://sources.debian.net/src/linux/4.9.6-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=9.20161125`
 

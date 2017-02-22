@@ -634,19 +634,8 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `GFDL-1.3`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris findutils=4.6.0+git+20161106-1
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20161106-1.dsc' findutils_4.6.0+git+20161106-1.dsc 2188 SHA256:af0f002e72ae1aa83f3325321513c56f9260ba94b06e0954e5c0d0e3c0210a43
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20161106.orig.tar.xz' findutils_4.6.0+git+20161106.orig.tar.xz 1828956 SHA256:96a3aa120d7300863f39fe56ccb6674d8cde4730b485f4f81083c1a6d33097e3
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20161106-1.debian.tar.xz' findutils_4.6.0+git+20161106-1.debian.tar.xz 26052 SHA256:6d387541054a47185216adfeced73748f4b1b45c16fae18da5471bf67a33609d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/findutils/4.6.0+git+20161106-1/
-- https://sources.debian.net/src/findutils/4.6.0+git+20161106-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-5=5.4.1-4`
 
@@ -662,19 +651,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-5=5.4.1-4
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1-4.dsc' gcc-5_5.4.1-4.dsc 17569 SHA256:31bdaa320393d1233917037a71723f20212923ea5c42e29a8087631d71fb7ebf
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1.orig.tar.gz' gcc-5_5.4.1.orig.tar.gz 76812822 SHA256:2a84447f34cd062066d38300ac8a1fb528eb301a504b48e1d017e547e5abfcdb
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1-4.diff.gz' gcc-5_5.4.1-4.diff.gz 3280486 SHA256:f8cff610a7b4ef62ad415de20aaf55368e5352801d32ef8321627609e17a0299
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-5/5.4.1-4/
-- https://sources.debian.net/src/gcc-5/5.4.1-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-6=6.2.1-5`
 
