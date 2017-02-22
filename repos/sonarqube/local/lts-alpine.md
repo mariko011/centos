@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:420db4c24f788123ce18c81ec7746d810372bedd53c643c809e6efed5456df70`
-- Created: `2017-01-19T19:10:11.407754829Z`
+- Image ID: `sha256:121c28ca24a75c0ab688df8084b171c4efe091e591af50088c1f789151549642`
+- Created: `2017-02-20T17:06:14.918865654Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["./bin/run.sh"]`
 - Environment:
@@ -12,7 +12,7 @@
   - `JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk`
   - `JAVA_VERSION=8u111`
   - `JAVA_ALPINE_VERSION=8.111.14-r0`
-  - `SONAR_VERSION=5.6.5`
+  - `SONAR_VERSION=5.6.6`
   - `SONARQUBE_HOME=/opt/sonarqube`
   - `SONARQUBE_JDBC_USERNAME=sonar`
   - `SONARQUBE_JDBC_PASSWORD=sonar`
