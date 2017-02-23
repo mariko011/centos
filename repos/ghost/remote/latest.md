@@ -1,7 +1,7 @@
 ## `ghost:latest`
 
 ```console
-$ docker pull ghost@sha256:28d601985728ff97529f5692360fa144a078dc122f21f7d38d381bdb90624470
+$ docker pull ghost@sha256:dedbae47f72939a68d74f985d915298eca5d934d5f10a74420d0083925ca9a74
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull ghost@sha256:28d601985728ff97529f5692360fa144a078dc122f21f7d38d381
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **110.1 MB (110130786 bytes)**  
+-	Total Size: **110.3 MB (110327090 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f60d667ea31c27dbeb494590a10e76918e874a79438014e4f4734c780ed36a3`
+-	Image ID: `sha256:b0bbf37575c9c70708c41310faa8566cb47c9814b42b9c5f4094c7933e40fcf7`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["npm","start"]`
 
@@ -46,23 +46,23 @@ RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/relea
 ENV GHOST_SOURCE=/usr/src/ghost
 # Thu, 23 Feb 2017 01:01:42 GMT
 WORKDIR /usr/src/ghost
-# Thu, 23 Feb 2017 01:01:42 GMT
-ENV GHOST_VERSION=0.11.4
-# Thu, 23 Feb 2017 01:02:33 GMT
+# Thu, 23 Feb 2017 19:32:11 GMT
+ENV GHOST_VERSION=0.11.5
+# Thu, 23 Feb 2017 19:33:08 GMT
 RUN buildDeps=' 		gcc 		make 		python 		unzip 	' 	&& set -x 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 	&& wget -O ghost.zip "https://github.com/TryGhost/Ghost/releases/download/${GHOST_VERSION}/Ghost-${GHOST_VERSION}.zip" 	&& unzip ghost.zip 	&& npm install --production 	&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false -o APT::AutoRemove::SuggestsImportant=false $buildDeps 	&& rm ghost.zip 	&& npm cache clean 	&& rm -rf /tmp/npm*
-# Thu, 23 Feb 2017 01:02:34 GMT
+# Thu, 23 Feb 2017 19:33:09 GMT
 ENV GHOST_CONTENT=/var/lib/ghost
-# Thu, 23 Feb 2017 01:02:34 GMT
+# Thu, 23 Feb 2017 19:33:10 GMT
 RUN mkdir -p "$GHOST_CONTENT" 	&& chown -R user:user "$GHOST_CONTENT" 	&& ln -s "$GHOST_CONTENT/config.js" "$GHOST_SOURCE/config.js"
-# Thu, 23 Feb 2017 01:02:35 GMT
+# Thu, 23 Feb 2017 19:33:10 GMT
 VOLUME [/var/lib/ghost]
-# Thu, 23 Feb 2017 01:02:35 GMT
+# Thu, 23 Feb 2017 19:33:11 GMT
 COPY file:9cace68ea99d0317c469464495249094669747893a60585016756f169051a609 in /entrypoint.sh 
-# Thu, 23 Feb 2017 01:02:36 GMT
+# Thu, 23 Feb 2017 19:33:12 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 23 Feb 2017 01:02:36 GMT
+# Thu, 23 Feb 2017 19:33:13 GMT
 EXPOSE 2368/tcp
-# Thu, 23 Feb 2017 01:02:37 GMT
+# Thu, 23 Feb 2017 19:33:13 GMT
 CMD ["npm" "start"]
 ```
 
@@ -99,15 +99,15 @@ CMD ["npm" "start"]
 		Last Modified: Thu, 23 Feb 2017 01:02:55 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a18b8b6bd6a14f7fb7d65ebf2228f2cef38eaf100ff046a9dac2a783af6d74f3`  
-		Last Modified: Thu, 23 Feb 2017 01:03:04 GMT  
-		Size: 27.0 MB (27034591 bytes)  
+	-	`sha256:07ad6a1bca3919e00c18f63981830a453764171f7beaaec8d95c35e5f7be3927`  
+		Last Modified: Thu, 23 Feb 2017 19:33:44 GMT  
+		Size: 27.2 MB (27230894 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ac89863ca33b7bab9b8659223dcfe229e94d1b72a4cc129863ce6c56eda91b5`  
-		Last Modified: Thu, 23 Feb 2017 01:02:55 GMT  
-		Size: 211.0 B  
+	-	`sha256:4e946333c8a7b7c90d351a29246c60b4dfabcf9b3ae794bb9d90eb1c543f8b45`  
+		Last Modified: Thu, 23 Feb 2017 19:33:32 GMT  
+		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6bf9604a68366f130b9c23a54628703ab20e5aa440fa684dea553d72765ad42f`  
-		Last Modified: Thu, 23 Feb 2017 01:02:55 GMT  
+	-	`sha256:5e157521614c4eee3845b0e1c8f1cba47b0bf0d3516207f155d590d5a138ae0b`  
+		Last Modified: Thu, 23 Feb 2017 19:33:32 GMT  
 		Size: 523.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
