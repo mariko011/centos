@@ -1841,14 +1841,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.7.7.10-6ubuntu3.3
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.7.7.10-6ubuntu3.3.dsc' imagemagick_6.7.7.10-6ubuntu3.3.dsc 3239 SHA256:b5093c270141ed63bff770320f41e52de7c253299b4ef2c499ecde8b41ba02be
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.7.7.10.orig.tar.bz2' imagemagick_6.7.7.10.orig.tar.bz2 10473522 SHA256:05fb23824b1c90ac35259715c94c65fb5cda6969eb597a7637762d8cf3998fda
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.7.7.10-6ubuntu3.3.debian.tar.bz2' imagemagick_6.7.7.10-6ubuntu3.3.debian.tar.bz2 218989 SHA256:53f208aff4049cbd82a714695b0b43f9ce0f1cbf412b81b606ca019b96788abc
-```
 
 ### `dpkg` source package: `init-system-helpers=1.14ubuntu1`
 
@@ -3853,14 +3847,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=3.13.0-108.155
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-108.155.dsc' linux_3.13.0-108.155.dsc 8125 SHA256:8cfd95d8b992f5c1b93395a32b352a68f413fea182bd94b8c3b394fc282b139f
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-108.155.diff.gz' linux_3.13.0-108.155.diff.gz 9456827 SHA256:b536078e6a7c149983e382a7bc41f8a624e6d553b41aa7f745120e8cc67a13d2
-```
 
 ### `dpkg` source package: `lockfile-progs=0.1.17`
 
@@ -4893,14 +4881,8 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `GPL-1`
 - `Tcl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.3=9.3.15-0ubuntu0.14.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.15-0ubuntu0.14.04.dsc' postgresql-9.3_9.3.15-0ubuntu0.14.04.dsc 3676 SHA256:8b4ad86e78b26e41fa68a93d3cf9041329e7629e675dba44c300d9fa70f0d63e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.15.orig.tar.bz2' postgresql-9.3_9.3.15.orig.tar.bz2 17059932 SHA256:a9fcba1446a93aa95e3e1b6535756f0472d10b0f267a0845f8b2b29f89de5c4f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.15-0ubuntu0.14.04.debian.tar.xz' postgresql-9.3_9.3.15-0ubuntu0.14.04.debian.tar.xz 29008 SHA256:b061b517f1c071e023ab44e69d69dc5508715d6c843dc5ccd92e4ef057b95828
-```
 
 ### `dpkg` source package: `procps=1:3.3.9-1ubuntu2.2`
 
