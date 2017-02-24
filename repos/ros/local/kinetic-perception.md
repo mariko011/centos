@@ -6810,14 +6810,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-rosdistro=0.5.0-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.5.0-1.dsc' python-rosdistro_0.5.0-1.dsc 914 SHA256:bf87d0bbbf805df787bcee6cf286b56462ec72dd5c5d530404af95957e40dc84
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.5.0.orig.tar.gz' python-rosdistro_0.5.0.orig.tar.gz 41493 SHA256:bfea9d1c559b631e57b37680fb2fe4a2558afde7e723b38225c98e80fa1db779
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.5.0-1.debian.tar.xz' python-rosdistro_0.5.0-1.debian.tar.xz 1032 SHA256:02ff6b4d6a41a471801c6255d3e7a829c30e3c9946959405b1b8d689f1f1ed1e
-```
 
 ### `dpkg` source package: `python-rosinstall=0.7.8-1`
 
@@ -6848,14 +6842,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-rospkg=1.0.41-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.0.41-1.dsc' python-rospkg_1.0.41-1.dsc 888 SHA256:f85d49e47ea2868558154500abe090f53661d347e084f62e557c1df1ac0d0328
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.0.41.orig.tar.gz' python-rospkg_1.0.41.orig.tar.gz 39565 SHA256:62ff806ad5d08945329a3960bb499cb41f5e442b3402d080ad6117707db98f55
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.0.41-1.debian.tar.xz' python-rospkg_1.0.41-1.debian.tar.xz 1032 SHA256:baeaea5b0040113b4bbfe6ecbcbc779dedd5305ca306515c9b16b5d0db8bb904
-```
 
 ### `dpkg` source package: `python-service-identity=16.0.0-2`
 
