@@ -2,14 +2,14 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:10da3007dae8446a444ae9bb7028216dfbe2cb9754d6aa39f4fff36b9dd6d4d8`
-- Created: `2017-02-15T20:47:46.799728113Z`
+- Image ID: `sha256:73c156c192d842c000c2c5dda5a95c65833dc8f0db4e7a2b38378d62d4eb5e4c`
+- Created: `2017-02-23T01:04:32.047786394Z`
 - Arch: `linux`/`amd64`
 - Command: `["node","main.js"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=4.7.3`
+  - `NODE_VERSION=4.8.0`
   - `RC_VERSION=0.52.0`
   - `MONGO_URL=mongodb://db:27017/meteor`
   - `HOME=/tmp`
