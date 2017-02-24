@@ -849,14 +849,8 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris perl=5.24.1~rc4-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1~rc4-1.dsc' perl_5.24.1~rc4-1.dsc 2383 SHA256:716cf5d2615ffd278e884fc43ce1306a33bb6555b5a9556711331ecf8b59bb7d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1~rc4.orig.tar.xz' perl_5.24.1~rc4.orig.tar.xz 11553836 SHA256:6da6333809eb2b35b17ee3c25b7f0327da32fad7214b296b662ccd9883b8bc59
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1~rc4-1.debian.tar.xz' perl_5.24.1~rc4-1.debian.tar.xz 163412 SHA256:4fce5c9bb6768dac245e9c8f5fabbacf78b3dda9b0552716ca3d6000b1b2106b
-```
 
 ### `dpkg` source package: `pinentry=1.0.0-1`
 
