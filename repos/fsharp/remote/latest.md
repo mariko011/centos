@@ -1,7 +1,7 @@
 ## `fsharp:latest`
 
 ```console
-$ docker pull fsharp@sha256:b12bed2ee14996984c3cb294805b526bcec03b8ee95346031783fdf896687e8c
+$ docker pull fsharp@sha256:730d7efc046dca19642e3adefadd0e6d0f3fa2c18d3e68c47c0e9c280a2357d3
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull fsharp@sha256:b12bed2ee14996984c3cb294805b526bcec03b8ee95346031783
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **271.3 MB (271330520 bytes)**  
+-	Total Size: **312.7 MB (312695972 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc5204409ead8d27e276ce0152f77c1b291c53e40f998ecd2099d3de810ab04a`
+-	Image ID: `sha256:ac32249f8d364b37242035addbb6cfd60fe688351d7b55b018cac919782eb35e`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
@@ -37,23 +37,23 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
 # Thu, 09 Feb 2017 22:09:24 GMT
 MAINTAINER Henrik Feldt
-# Thu, 09 Feb 2017 22:09:24 GMT
-ENV MONO_VERSION=4.4.2.11
-# Thu, 09 Feb 2017 22:09:27 GMT
+# Fri, 24 Feb 2017 23:31:39 GMT
+ENV MONO_VERSION=4.8.0.495
+# Fri, 24 Feb 2017 23:31:43 GMT
 RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list
-# Thu, 09 Feb 2017 22:09:27 GMT
+# Fri, 24 Feb 2017 23:31:43 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Thu, 09 Feb 2017 22:11:59 GMT
+# Fri, 24 Feb 2017 23:32:31 GMT
 RUN apt-get -y update &&     apt-get -y --no-install-recommends install nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/*
-# Thu, 09 Feb 2017 22:17:07 GMT
-ENV FSHARP_VERSION=4.0.1.1
-# Thu, 09 Feb 2017 22:17:07 GMT
-ENV FSHARP_PREFIX=/usr FSHARP_GACDIR=/usr/lib/mono/gac FSHARP_BASENAME=fsharp-4.0.1.1 FSHARP_ARCHIVE=4.0.1.1.tar.gz FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/4.0.1.1.tar.gz
-# Thu, 09 Feb 2017 22:22:18 GMT
+# Fri, 24 Feb 2017 23:32:31 GMT
+ENV FSHARP_VERSION=4.1.0.1
+# Fri, 24 Feb 2017 23:32:32 GMT
+ENV FSHARP_PREFIX=/usr FSHARP_GACDIR=/usr/lib/mono/gac FSHARP_BASENAME=fsharp-4.1.0.1 FSHARP_ARCHIVE=4.1.0.1.tar.gz FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/4.1.0.1.tar.gz
+# Fri, 24 Feb 2017 23:40:45 GMT
 RUN mkdir -p /tmp/src &&     cd /tmp/src &&     wget $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src
-# Thu, 09 Feb 2017 22:22:19 GMT
+# Fri, 24 Feb 2017 23:40:46 GMT
 WORKDIR /root
-# Thu, 09 Feb 2017 22:22:19 GMT
+# Fri, 24 Feb 2017 23:40:46 GMT
 CMD ["fsharpi"]
 ```
 
@@ -90,15 +90,15 @@ CMD ["fsharpi"]
 		Last Modified: Thu, 09 Feb 2017 19:08:54 GMT  
 		Size: 102.0 MB (101984647 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c217ed7036559d7edba6ef560b57a8883479a035bf0d88c53d25f0f6113aa69f`  
-		Last Modified: Fri, 10 Feb 2017 17:17:36 GMT  
-		Size: 13.8 KB (13815 bytes)  
+	-	`sha256:8168d0b135c31441dc5e95b16fd8b4d65903e4ed525aa0b30650814f865ba071`  
+		Last Modified: Fri, 24 Feb 2017 23:52:29 GMT  
+		Size: 13.8 KB (13818 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb39d6dbe6bdcdc35362f52a79df86c51a008cb3335a6ec3a510d21aff299dd2`  
-		Last Modified: Fri, 10 Feb 2017 17:18:03 GMT  
-		Size: 59.6 MB (59645669 bytes)  
+	-	`sha256:44ec08d11b02871f6a903ee314b136e3751c07c95ca78446a1621589aa8c8153`  
+		Last Modified: Fri, 24 Feb 2017 23:52:48 GMT  
+		Size: 53.8 MB (53807349 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be368c329d3880e5477726599954c227bfafa459839267849128e641af7f0865`  
-		Last Modified: Fri, 10 Feb 2017 17:18:29 GMT  
-		Size: 10.3 MB (10309715 bytes)  
+	-	`sha256:abf21d2b52ffd87d16f098bf5b1a76c31c4cf61829da3cf2ebaf614640e5b020`  
+		Last Modified: Fri, 24 Feb 2017 23:52:43 GMT  
+		Size: 57.5 MB (57513484 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
