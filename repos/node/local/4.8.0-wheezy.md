@@ -1,15 +1,15 @@
-# `node:4.7.3-wheezy`
+# `node:4.8.0-wheezy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:278b4dad73f340dbeca1a807731f46cba762642c67e7e85f60fc626a0e1c9343`
-- Created: `2017-02-10T01:33:17.052675351Z`
+- Image ID: `sha256:ca15aa17a97710b40148a7998cbe461e29b9f5970421372ee8f3aff0b40cb6a8`
+- Created: `2017-02-22T20:19:03.979254948Z`
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=4.7.3`
+  - `NODE_VERSION=4.8.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2945,19 +2945,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=3.2.84-1
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.84-1.dsc' linux_3.2.84-1.dsc 103043 SHA256:db17376d7c6567397fc717eaa8b6f039304a67a2cedad8df559daab142fc982c
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.84.orig.tar.xz' linux_3.2.84.orig.tar.xz 65980480 SHA256:fe4361b0aa846442dc6294d68a438c4eb47520043e92686afa3327d700267f5d
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.84-1.debian.tar.xz' linux_3.2.84-1.debian.tar.xz 3741988 SHA256:7ab14c93ca0660bc6a0b5d3456a97a84c292de5d1824e541665ae4639858730a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/3.2.84-1/
-- https://sources.debian.net/src/linux/3.2.84-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian8+deb7u1`
 
