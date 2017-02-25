@@ -1582,14 +1582,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.8.9.9-7ubuntu5.3
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9-7ubuntu5.3.dsc' imagemagick_6.8.9.9-7ubuntu5.3.dsc 4319 SHA256:14723f3c4f96eaa28b2c8952e8114a766643757f252a323e60ac77510bca4c67
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9.orig.tar.xz' imagemagick_6.8.9.9.orig.tar.xz 7891624 SHA256:a4cccc70179ff2c67550e063cdcb2e62907338ef3e68b45bb1c41931e515b3eb
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9-7ubuntu5.3.debian.tar.xz' imagemagick_6.8.9.9-7ubuntu5.3.debian.tar.xz 250168 SHA256:ebced4a273f34ce4e29ecdc9782954442d2b54e1e77d646734837c5168f42476
-```
 
 ### `dpkg` source package: `init-system-helpers=1.29ubuntu3`
 
@@ -2695,16 +2689,8 @@ Licenses: (parsed from: `/usr/share/doc/uno-libs3/copyright`, `/usr/share/doc/ur
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libreoffice=1:5.1.4-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_5.1.4-0ubuntu1.dsc' libreoffice_5.1.4-0ubuntu1.dsc 14930 SHA256:78b30e20d1f3b65a4dec71b12538df6bfe21af047aa54e08b3e0caf1a9df0c93
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_5.1.4.orig-src.tar.xz' libreoffice_5.1.4.orig-src.tar.xz 167336908 SHA256:bfb3b4762cead5cd2547b754de995ed4f9efb20c7158adee8866aeb36799468e
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_5.1.4.orig-translations.tar.xz' libreoffice_5.1.4.orig-translations.tar.xz 131579208 SHA256:c5defbb744fc5a07be959a754e428440b4f7a089f5a8aab8994e0fb5bbe8e67b
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_5.1.4.orig.tar.xz' libreoffice_5.1.4.orig.tar.xz 155728192 SHA256:c3d46291fda2e78b803c2814dc196d9a778e6a902f940e570d825c8b03ec6753
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_5.1.4-0ubuntu1.debian.tar.xz' libreoffice_5.1.4-0ubuntu1.debian.tar.xz 2095196 SHA256:4a0b6ecc26ac4bb8fb478c8aac7361fac6c3ab23c733f11d2c8d2b43652cd702
-```
 
 ### `dpkg` source package: `librsvg=2.40.13-3`
 
