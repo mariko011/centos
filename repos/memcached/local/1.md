@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e6b578fa744cd9a9bcc9f704b528505afff06cfb5a92620a4ee3a362139f17cb`
-- Created: `2017-01-17T17:20:08.30375117Z`
+- Image ID: `sha256:63c5b44cf66befaadd317d253955810b4c277713255efb9666bd666d9cf37e90`
+- Created: `2017-02-23T19:35:21.927749289Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["memcached"]`
@@ -361,7 +361,7 @@ Binary Packages:
 - `debconf=1.5.56`
 - `debconf-i18n=1.5.56`
 
-Licenses: (parsed from: `/usr/share/doc/debconf/copyright`, `/usr/share/doc/debconf-i18n/copyright`)
+Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
@@ -563,7 +563,7 @@ Binary Packages:
 - `libgcc1:amd64=1:4.9.2-10`
 - `libstdc++6:amd64=4.9.2-10`
 
-Licenses: (parsed from: `/usr/share/doc/gcc-4.9-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gcc-4.9-base/copyright`)
 
 - `Artistic`
 - `GFDL-1.2`
@@ -866,11 +866,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libcap2/1:2.24-8/
 - https://sources.debian.net/src/libcap2/1:2.24-8/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libevent=2.0.21-stable-2`
+### `dpkg` source package: `libevent=2.0.21-stable-2+deb8u1`
 
 Binary Packages:
 
-- `libevent-2.0-5:amd64=2.0.21-stable-2`
+- `libevent-2.0-5:amd64=2.0.21-stable-2+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -879,16 +879,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libevent=2.0.21-stable-2
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.0.21-stable-2.dsc' libevent_2.0.21-stable-2.dsc 2392 SHA256:1d4bdc39ab31730ebc8c09d29cfd4247238d81294204722a9b038513a17d6992
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.0.21-stable.orig.tar.gz' libevent_2.0.21-stable.orig.tar.gz 850772 SHA256:22a530a8a5ba1cb9c080cba033206b17dacd21437762155c6d30ee6469f574f5
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.0.21-stable-2.debian.tar.xz' libevent_2.0.21-stable-2.debian.tar.xz 10736 SHA256:34ae24e760a426fd1cf38d372b2b1c5887987bc5705507ef13158fbe61a7492e
+$ apt-get source -qq --print-uris libevent=2.0.21-stable-2+deb8u1
+'http://security.debian.org/pool/updates/main/libe/libevent/libevent_2.0.21-stable-2+deb8u1.dsc' libevent_2.0.21-stable-2+deb8u1.dsc 2460 SHA256:54c4e18472229cfc33b4eef8f0e6191ce362cd71ab8995c3b4f6ba79e5feb69e
+'http://security.debian.org/pool/updates/main/libe/libevent/libevent_2.0.21-stable.orig.tar.gz' libevent_2.0.21-stable.orig.tar.gz 850772 SHA256:22a530a8a5ba1cb9c080cba033206b17dacd21437762155c6d30ee6469f574f5
+'http://security.debian.org/pool/updates/main/libe/libevent/libevent_2.0.21-stable-2+deb8u1.debian.tar.xz' libevent_2.0.21-stable-2+deb8u1.debian.tar.xz 13900 SHA256:5cf722d138ffd789ea54d0b6703e1187bc0170d1580e528d3db635d397f8aaf6
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libevent/2.0.21-stable-2/
-- https://sources.debian.net/src/libevent/2.0.21-stable-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libevent/2.0.21-stable-2+deb8u1/
+- https://sources.debian.net/src/libevent/2.0.21-stable-2+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgcrypt20=1.6.3-2+deb8u2`
 
@@ -1323,32 +1323,9 @@ Binary Packages:
 
 - `perl-base=5.20.2-3+deb8u6`
 
-Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
+  If source is available (seen below), check the contents of `debian/copyright` within it.
 
-- `Artistic`
-- `Artistic,`
-- `Artistic-2`
-- `BSD-3-clause`
-- `BSD-3-clause-GENERIC`
-- `BSD-4-clause`
-- `BSD-4-clause-POWERDOG`
-- `BZIP`
-- `DONT-CHANGE-THE-GPL`
-- `Expat`
-- `GPL-1`
-- `GPL-1+`
-- `GPL-2+`
-- `GPL-3+-WITH-BISON-EXCEPTION`
-- `HSIEH-BSD`
-- `HSIEH-DERIVATIVE`
-- `LGPL-2.1`
-- `REGCOMP`
-- `REGCOMP,`
-- `S2P`
-- `SDBM-PUBLIC-DOMAIN`
-- `TEXT-TABS`
-- `Unicode`
-- `ZLIB`
 
 Source:
 
@@ -1547,7 +1524,7 @@ Binary Packages:
 - `systemd-sysv=215-17+deb8u6`
 - `udev=215-17+deb8u6`
 
-Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`, `/usr/share/doc/udev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
 - `Expat`
 - `GPL-2`
@@ -1724,8 +1701,9 @@ Likely also available for browsing at:
 Binary Packages:
 
 - `liblzma5:amd64=5.1.1alpha+20120614-2+b3`
+- `xz-utils=5.1.1alpha+20120614-2+b3`
 
-Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
+Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`, `/usr/share/doc/xz-utils/copyright`)
 
 - `Autoconf`
 - `GPL-2`
