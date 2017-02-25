@@ -3457,19 +3457,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=3.16.36-1+deb8u2
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.36-1+deb8u2.dsc' linux_3.16.36-1+deb8u2.dsc 140735 SHA256:7377653ff5f7e75ef1d3f3f3c0168d00b92a0463f27b8e288fa907dc4158e3ac
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.36.orig.tar.xz' linux_3.16.36.orig.tar.xz 81786052 SHA256:5dd1766c3ab3dd2e90f6b3c67fa05b7dedcf844a9c0a71a0147a3d0e6694333a
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.36-1+deb8u2.debian.tar.xz' linux_3.16.36-1+deb8u2.debian.tar.xz 3229396 SHA256:5d3f70622408e74d60ea2514d76bb5c6ec1955120d732bcfddd3ef1bec106344
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/3.16.36-1+deb8u2/
-- https://sources.debian.net/src/linux/3.16.36-1+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
