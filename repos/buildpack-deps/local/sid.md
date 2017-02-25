@@ -614,19 +614,8 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris curl=7.52.1-2
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-2.dsc' curl_7.52.1-2.dsc 2765 SHA256:250ee9caf1d28fbaa8763ea339cf58c106e11090ea9b70fa607cbad25ba89e7d
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-2.debian.tar.xz' curl_7.52.1-2.debian.tar.xz 28508 SHA256:8035569106a2604711810bbdf629cad81a0b94532ba1e18637cf6c748d9d674f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/curl/7.52.1-2/
-- https://sources.debian.net/src/curl/7.52.1-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-2`
 

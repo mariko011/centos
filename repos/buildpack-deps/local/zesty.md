@@ -2666,14 +2666,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.dsc' libxml2_2.9.4+dfsg1-2.dsc 2498 SHA256:650aa2ad7a9041d17989ad8c5899f9eaef1bf3bbf64d2d5416e1ebcc563a5cd2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.debian.tar.xz' libxml2_2.9.4+dfsg1-2.debian.tar.xz 25032 SHA256:bed6b4f17000fa0e96258bad162909e8bd9b4bcecc129c78210c9836e0b9b0af
-```
 
 ### `dpkg` source package: `libxpm=1:3.5.12-1`
 
@@ -3377,14 +3371,8 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.24/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris perl=5.24.1~rc4-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1~rc4-1.dsc' perl_5.24.1~rc4-1.dsc 2383 SHA256:716cf5d2615ffd278e884fc43ce1306a33bb6555b5a9556711331ecf8b59bb7d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1~rc4.orig.tar.xz' perl_5.24.1~rc4.orig.tar.xz 11553836 SHA256:6da6333809eb2b35b17ee3c25b7f0327da32fad7214b296b662ccd9883b8bc59
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1~rc4-1.debian.tar.xz' perl_5.24.1~rc4-1.debian.tar.xz 163412 SHA256:4fce5c9bb6768dac245e9c8f5fabbacf78b3dda9b0552716ca3d6000b1b2106b
-```
 
 ### `dpkg` source package: `pinentry=1.0.0-1`
 
@@ -3781,14 +3769,8 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris subversion=1.9.4-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.4-1ubuntu2.dsc' subversion_1.9.4-1ubuntu2.dsc 3057 SHA256:84cdd1577dbbbdb5dfd3a5c150aa01dad253e031c871dd9545ac83a6ce67b251
-'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.4.orig.tar.gz' subversion_1.9.4.orig.tar.gz 10603019 SHA256:11f738063f322b06f8c81e42bc26c33e0cb1e465539647109e534274d4a8540c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.4-1ubuntu2.diff.gz' subversion_1.9.4-1ubuntu2.diff.gz 2429216 SHA256:4e98b185547089e3b20d2548713bda091858b56ea7335b8bb1363c17dbe36150
-```
 
 ### `dpkg` source package: `systemd=232-8`
 

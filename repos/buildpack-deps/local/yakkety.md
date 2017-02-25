@@ -1648,14 +1648,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.8.9.9-7ubuntu8.2
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9-7ubuntu8.2.dsc' imagemagick_6.8.9.9-7ubuntu8.2.dsc 4304 SHA256:79040ce109947f24e250049887f27ffacfd009fd070c17f1c664b7ef9ae82ce8
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9.orig.tar.xz' imagemagick_6.8.9.9.orig.tar.xz 7891624 SHA256:a4cccc70179ff2c67550e063cdcb2e62907338ef3e68b45bb1c41931e515b3eb
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9-7ubuntu8.2.debian.tar.xz' imagemagick_6.8.9.9-7ubuntu8.2.debian.tar.xz 250160 SHA256:db97136c7ce33430b017f5110e5a577af856c74ebc27ffbc78a821b6eaf2c851
-```
 
 ### `dpkg` source package: `init-system-helpers=1.45`
 
@@ -3923,14 +3917,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=231-9ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-9ubuntu2.dsc' systemd_231-9ubuntu2.dsc 4550 SHA256:2e8f9174b5d3121ad9bfc9e782911e70a0319317f8928c2c5f4cad30c31344d4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231.orig.tar.gz' systemd_231.orig.tar.gz 4381464 SHA256:899733ad6c157cedbb89aec4efe3bc824dcfd65a1d6f6bebc7b043f7924e39b4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-9ubuntu2.debian.tar.xz' systemd_231-9ubuntu2.debian.tar.xz 153360 SHA256:0c890c92c72cc9f57fb2712727e3b6b6229b0657194f5d44c7ebad49fefd74cc
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`
 

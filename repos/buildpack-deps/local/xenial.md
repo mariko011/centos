@@ -1592,14 +1592,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.8.9.9-7ubuntu5.3
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9-7ubuntu5.3.dsc' imagemagick_6.8.9.9-7ubuntu5.3.dsc 4319 SHA256:14723f3c4f96eaa28b2c8952e8114a766643757f252a323e60ac77510bca4c67
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9.orig.tar.xz' imagemagick_6.8.9.9.orig.tar.xz 7891624 SHA256:a4cccc70179ff2c67550e063cdcb2e62907338ef3e68b45bb1c41931e515b3eb
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9-7ubuntu5.3.debian.tar.xz' imagemagick_6.8.9.9-7ubuntu5.3.debian.tar.xz 250168 SHA256:ebced4a273f34ce4e29ecdc9782954442d2b54e1e77d646734837c5168f42476
-```
 
 ### `dpkg` source package: `init-system-helpers=1.29ubuntu3`
 
