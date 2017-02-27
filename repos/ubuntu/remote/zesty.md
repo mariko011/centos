@@ -1,7 +1,7 @@
 ## `ubuntu:zesty`
 
 ```console
-$ docker pull ubuntu@sha256:f54d17d757b616067e54143d950b83b31f12b67fbd134d53b87d154bb93a0d4c
+$ docker pull ubuntu@sha256:33b6a09031b6515ef64739e25d1a454e57344a0352ea6c97f2780864334ba1b3
 ```
 
 -	Platforms:
@@ -11,44 +11,44 @@ $ docker pull ubuntu@sha256:f54d17d757b616067e54143d950b83b31f12b67fbd134d53b87d
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.7 MB (40674947 bytes)**  
+-	Total Size: **40.7 MB (40693539 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e2edddf5c5c234dc01d0f568637a5b68de67ab5528afee7b00dd4faacb05d503`
+-	Image ID: `sha256:9c2402b05ac400d452a264d88aaa7439a7401184bd35243ed82d771f1269c49e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 20 Jan 2017 21:45:37 GMT
-ADD file:26b17eea6b51bdd55ef4b2312d87c81540209bc81aa37815596a6797053b9d79 in / 
-# Fri, 20 Jan 2017 21:45:46 GMT
+# Mon, 27 Feb 2017 19:43:20 GMT
+ADD file:04beb1a85cc00543677619a5f64d30523b8f61cee7074a2d2f7a9466f02b51ca in / 
+# Mon, 27 Feb 2017 19:43:32 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 20 Jan 2017 21:45:47 GMT
+# Mon, 27 Feb 2017 19:43:33 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 20 Jan 2017 21:45:48 GMT
+# Mon, 27 Feb 2017 19:43:48 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 20 Jan 2017 21:46:02 GMT
+# Mon, 27 Feb 2017 19:43:49 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 20 Jan 2017 21:46:03 GMT
+# Mon, 27 Feb 2017 19:43:50 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:2346ef5c33ce9077cd064def64d626fb1381a103ea3977c056109b831f2d39ab`  
-		Last Modified: Fri, 20 Jan 2017 21:53:51 GMT  
-		Size: 40.7 MB (40672715 bytes)  
+	-	`sha256:dc8785c9f730e32bf9173713b3f4f5458b7aafbad3780b47c45d20a08311783b`  
+		Last Modified: Mon, 27 Feb 2017 19:52:54 GMT  
+		Size: 40.7 MB (40691303 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:96cc92115e00df4f56f84397c9fdf8addf763cf21f692ee4dacd62ebb2d38fcb`  
-		Last Modified: Fri, 20 Jan 2017 21:53:39 GMT  
-		Size: 821.0 B  
+	-	`sha256:1e5225b7cdc70e7748e2e8527a20dc85633fe2293f3b26d8e31172752f068737`  
+		Last Modified: Mon, 27 Feb 2017 19:52:41 GMT  
+		Size: 824.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39b0bd4f809c3fbf0c53ee6f6fe6cffe8aaf7cd572cc99cc5d0d068e6f4f62d5`  
-		Last Modified: Fri, 20 Jan 2017 21:53:39 GMT  
-		Size: 392.0 B  
+	-	`sha256:5f946cd1dcc8394b06989bd54fa83ee6052d6f1ed532472e1d47c1ac2e9e77f6`  
+		Last Modified: Mon, 27 Feb 2017 19:52:42 GMT  
+		Size: 390.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2811130ab99016f212832b698e67b80a3c75fc3b0982c1fb55121fa555063c1`  
-		Last Modified: Fri, 20 Jan 2017 21:53:39 GMT  
-		Size: 856.0 B  
+	-	`sha256:69688ab1f2e9dc694d7e4d369b20a307dbb91226085030a1694ac017321cfc0a`  
+		Last Modified: Mon, 27 Feb 2017 19:52:41 GMT  
+		Size: 860.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8467ecbdfd62f2995cb2065b135409c641224bdcd2caee84e6679c603db4976a`  
-		Last Modified: Fri, 20 Jan 2017 21:53:39 GMT  
-		Size: 163.0 B  
+	-	`sha256:559068fd143f67492000be277e11604af320389b8dc03f4f7feef7112c462936`  
+		Last Modified: Mon, 27 Feb 2017 19:52:42 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
