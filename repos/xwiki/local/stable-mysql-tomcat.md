@@ -1,9 +1,9 @@
-# `xwiki:8`
+# `xwiki:9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0609720338cfd34ed6acef20309957a287cb830465eea04c656645d2c78f863e`
-- Created: `2017-02-27T20:57:12.247736119Z`
+- Image ID: `sha256:fbf44a79d5db5408fea3e17ecdb929dabe4bfd334975852be85303d5fb48327a`
+- Created: `2017-02-27T20:58:16.735785043Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["xwiki"]`
@@ -23,9 +23,9 @@
   - `TOMCAT_VERSION=8.0.41`
   - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.41/bin/apache-tomcat-8.0.41.tar.gz`
   - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.41/bin/apache-tomcat-8.0.41.tar.gz.asc`
-  - `XWIKI_VERSION=8.4.4`
-  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/enterprise/xwiki-enterprise-web/8.4.4`
-  - `XWIKI_DOWNLOAD_SHA256=b414edb4527e3d8b27c40a8c3f2f09423980de7963207b7dc89da71d14e7fb23`
+  - `XWIKI_VERSION=9.0`
+  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/enterprise/xwiki-enterprise-web/9.0`
+  - `XWIKI_DOWNLOAD_SHA256=faaca2aa1ade07448be944feb39db22131accfe82658463abfd55f93f859cc25`
 
 ## `dpkg` (`.deb`-based packages)
 
