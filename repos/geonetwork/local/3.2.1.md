@@ -1,9 +1,9 @@
-# `geonetwork:3.2.0`
+# `geonetwork:3.2.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:70b050426af55e128a046f843afadd67ccb330e530502d16489915527b99bba3`
-- Created: `2017-02-20T23:04:54.903780226Z`
+- Image ID: `sha256:2aa5387b6507542c66bc7740f7bb6283605225fd04c561f4c3df10dca08a7a41`
+- Created: `2017-02-27T20:54:54.859791407Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["catalina.sh","run"]`
@@ -25,9 +25,9 @@
   - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.41/bin/apache-tomcat-8.0.41.tar.gz.asc`
   - `GN_FILE=geonetwork.war`
   - `DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data`
-  - `JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -Xmx512M -Xss2M -XX:MaxPermSize=512m -XX:+UseConcMarkSweepGC`
-  - `GN_VERSION=3.2.0`
-  - `GN_DOWNLOAD_MD5=87a84ffb3fbbd662d595c08e1a7fdff2`
+  - `JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:PermSize=512m -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC`
+  - `GN_VERSION=3.2.1`
+  - `GN_DOWNLOAD_MD5=54140c3e4badc87651bd656f13f860f2`
 
 ## `dpkg` (`.deb`-based packages)
 
