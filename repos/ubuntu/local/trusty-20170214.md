@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b969ab9f929bdc4262afa281510212baafb906f9aa7d4f8e2daa6d22b819e301`
-- Created: `2017-01-20T21:42:57.719936661Z`
+- Image ID: `sha256:7c09e61e90350e8f5c0cba2979003bdfe32c2d027b68b4f0cf9063cdd7b4bafd`
+- Created: `2017-02-27T19:41:06.963689918Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -707,12 +707,12 @@ $ apt-get source -qq --print-uris gnupg=1.4.16-1ubuntu2.4
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.16-1ubuntu2.4.debian.tar.gz' gnupg_1.4.16-1ubuntu2.4.debian.tar.gz 56430 SHA256:dbc2738c30cdcedb459e0ff0a9d1ec42e7b238b96c4a9326cae84a0afdae6441
 ```
 
-### `dpkg` source package: `gnutls26=2.12.23-12ubuntu2.5`
+### `dpkg` source package: `gnutls26=2.12.23-12ubuntu2.6`
 
 Binary Packages:
 
-- `libgnutls-openssl27:amd64=2.12.23-12ubuntu2.5`
-- `libgnutls26:amd64=2.12.23-12ubuntu2.5`
+- `libgnutls-openssl27:amd64=2.12.23-12ubuntu2.6`
+- `libgnutls26:amd64=2.12.23-12ubuntu2.6`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls-openssl27/copyright`, `/usr/share/doc/libgnutls26/copyright`)
 
@@ -722,8 +722,14 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls-openssl27/copyright`, `/usr/sh
 - `LGPL-2.1`
 - `The main library is licensed under GNU Lesser General Public`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnutls26=2.12.23-12ubuntu2.6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23-12ubuntu2.6.dsc' gnutls26_2.12.23-12ubuntu2.6.dsc 2722 SHA256:a94ac7d08a43922b34756f295f2f5da2b4c6863fe642235524af8d00938ebab7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23.orig.tar.bz2' gnutls26_2.12.23.orig.tar.bz2 7279415 SHA256:dfa67a7e40727eb0913e75f3c44911d5d8cd58d1ead5acfe73dd933fc0d17ed2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23-12ubuntu2.6.debian.tar.gz' gnutls26_2.12.23-12ubuntu2.6.debian.tar.gz 44614 SHA256:acdcfa629dbbf979b70a71e65bd7a718c4286adb65d331a15d80bbd2bbca3599
+```
 
 ### `dpkg` source package: `grep=2.16-1`
 
@@ -1835,18 +1841,24 @@ $ apt-get source -qq --print-uris ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.10
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.debian.tar.gz' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.debian.tar.gz 147591 SHA256:4097803a1422a5c6fa5381e496c35cb2306988c8d48dbd9136a8c31b55208451
 ```
 
-### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.21`
+### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.22`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1f-1ubuntu2.21`
+- `libssl1.0.0:amd64=1.0.1f-1ubuntu2.22`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1f-1ubuntu2.22
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.22.dsc' openssl_1.0.1f-1ubuntu2.22.dsc 2370 SHA256:fdea4b46fcb0fec442fe2538916c82f99f27d8074e3ab34c4a9f3cc58bf9be0c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f.orig.tar.gz' openssl_1.0.1f.orig.tar.gz 4509212 SHA256:6cc2a80b17d64de6b7bac985745fdaba971d54ffd7d38d3556f998d7c0c9cb5a
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1f-1ubuntu2.22.debian.tar.gz' openssl_1.0.1f-1ubuntu2.22.debian.tar.gz 267203 SHA256:a38163b80c8d9ecad888676a56d4a4d761937f773495366f836dc0f76f6a9e43
+```
 
 ### `dpkg` source package: `p11-kit=0.20.2-2ubuntu2`
 
@@ -2256,12 +2268,12 @@ $ apt-get source -qq --print-uris sudo=1.8.9p5-1ubuntu1.3
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.3.debian.tar.xz' sudo_1.8.9p5-1ubuntu1.3.debian.tar.xz 33260 SHA256:bae36c26cf8a5f171035b17087f06f23bd44b510273e9c7f1f54dfb147d67850
 ```
 
-### `dpkg` source package: `systemd=204-5ubuntu20.20`
+### `dpkg` source package: `systemd=204-5ubuntu20.24`
 
 Binary Packages:
 
-- `libudev1:amd64=204-5ubuntu20.20`
-- `udev=204-5ubuntu20.20`
+- `libudev1:amd64=204-5ubuntu20.24`
+- `udev=204-5ubuntu20.24`
 
 Licenses: (parsed from: `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/udev/copyright`)
 
@@ -2272,8 +2284,14 @@ Licenses: (parsed from: `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/ude
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=204-5ubuntu20.24
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.24.dsc' systemd_204-5ubuntu20.24.dsc 3662 SHA256:87dec8ca0f17dd8a35b5c63f41d3e7817e6cb411fd03321c27378eb819fc5a3f
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204.orig.tar.xz' systemd_204.orig.tar.xz 2186264 SHA256:072c393503c7c1e55ca7acf3db659cbd28c7fe5fa94fab3db95360bafd96731b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_204-5ubuntu20.24.debian.tar.xz' systemd_204-5ubuntu20.24.debian.tar.xz 144204 SHA256:79c75ae6219b7b71784359777f2b013ce81cf058de5de4c4fa0e35eebe38feb5
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-41ubuntu6.3`
 
