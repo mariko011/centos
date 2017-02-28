@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4c4abb0362401fbc4640cfe63b0887bc1cff34a6176517558ad63521473bf8c8`
-- Created: `2017-02-07T21:22:28.507750564Z`
+- Image ID: `sha256:159be13e538b4e9584d8372d5cfa0c058293c068bc420d674d1d80fadb11c254`
+- Created: `2017-02-27T18:25:43.635801921Z`
 - Arch: `linux`/`amd64`
 - Command: `["gateway.start"]`
 - Environment:
@@ -13,8 +13,8 @@
   - `JAVA_VERSION=8u121`
   - `JAVA_DEBIAN_VERSION=8u121-b13-1~bpo8+1`
   - `CA_CERTIFICATES_JAVA_VERSION=20161107~bpo8+1`
-  - `KAAZING_GATEWAY_VERSION=5.3.2`
-  - `KAAZING_GATEWAY_URL=https://oss.sonatype.org/content/repositories/releases/org/kaazing/gateway.distribution/5.3.2/gateway.distribution-5.3.2.tar.gz`
+  - `KAAZING_GATEWAY_VERSION=5.4.1`
+  - `KAAZING_GATEWAY_URL=https://oss.sonatype.org/content/repositories/releases/org/kaazing/gateway.distribution/5.4.1/gateway.distribution-5.4.1.tar.gz`
   - `GATEWAY_OPTS=-Xmx512m -Djava.security.egd=file:/dev/urandom`
 
 ## `dpkg` (`.deb`-based packages)
