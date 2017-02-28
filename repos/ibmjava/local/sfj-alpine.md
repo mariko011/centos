@@ -2,10 +2,10 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4674c067b0933572751add53ec20d2c91ed2eac7c3ec4b958f9dab9bf30970f5`
-- Created: `2016-12-27T19:14:05.295209743Z`
+- Image ID: `sha256:b51ce9a9cdfd5fe37b4a186a7ebf5696218370e2f9b6c4306781bb608b256ae3`
+- Created: `2017-02-27T17:23:45.603994843Z`
 - Arch: `linux`/`amd64`
 - Environment:
   - `PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr3fp22`
+  - `JAVA_VERSION=1.8.0_sr4fp1`
   - `JAVA_HOME=/opt/ibm/java/jre`
