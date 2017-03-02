@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:55c6ecb41c2f2f6bb25a87b7ca48a047e9cbab059dfee9176686b03f92b3e337`
-- Created: `2016-12-15T18:12:03.795927703Z`
+- Image ID: `sha256:8a6b57507bc63995083bf8bc788dbefbc8e3c9ec8f6e8c2a0462b87da3d33362`
+- Created: `2017-02-27T22:52:15.183743318Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["couchbase-server"]`
@@ -1222,19 +1222,25 @@ $ apt-get source -qq --print-uris numactl=2.0.8~rc3-1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/numactl/numactl_2.0.8~rc3-1.diff.gz' numactl_2.0.8~rc3-1.diff.gz 5484 SHA256:f8848287284f12e04af93b18e3e0b9a6398ca5712758df834e99717c40b734cd
 ```
 
-### `dpkg` source package: `openssl=1.0.1-4ubuntu5.38`
+### `dpkg` source package: `openssl=1.0.1-4ubuntu5.39`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1-4ubuntu5.38`
-- `openssl=1.0.1-4ubuntu5.38`
+- `libssl1.0.0:amd64=1.0.1-4ubuntu5.39`
+- `openssl=1.0.1-4ubuntu5.39`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1-4ubuntu5.39
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1-4ubuntu5.39.dsc' openssl_1.0.1-4ubuntu5.39.dsc 2365 SHA256:3ba485db235b46912a0778aaac8814b79630fb3a7c7728fe0ff95c84e790ad43
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1.orig.tar.gz' openssl_1.0.1.orig.tar.gz 4453920 SHA256:4d9f0a594a9a89b28e1a04a9504c04104f6508ee27ad1e0efdd17a7a6dbbeeee
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1-4ubuntu5.39.debian.tar.gz' openssl_1.0.1-4ubuntu5.39.debian.tar.gz 291740 SHA256:3137f726122302537ff9f99e9d9832a34f69fd1517c8797aebddabcee9d24031
+```
 
 ### `dpkg` source package: `pam=1.1.3-7ubuntu2.3`
 
