@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e3e90c72e5e78dbe6bf20e88daa43d283b3c45135c06cae10bd2f587b30715d0`
-- Created: `2017-02-17T20:33:43.606732274Z`
+- Image ID: `sha256:069631cd538835c5ad2e2d48d271abe795beb1b68b8a79382cd4ad42759573d9`
+- Created: `2017-03-01T23:46:34.052405976Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
 - Command: `["apache2-foreground"]`
@@ -78,15 +78,15 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/adduser/3.113+nmu3/
 - https://sources.debian.net/src/adduser/3.113+nmu3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `apache2=2.4.10-10+deb8u7`
+### `dpkg` source package: `apache2=2.4.10-10+deb8u8`
 
 Binary Packages:
 
-- `apache2=2.4.10-10+deb8u7`
-- `apache2-bin=2.4.10-10+deb8u7`
-- `apache2-data=2.4.10-10+deb8u7`
-- `apache2-utils=2.4.10-10+deb8u7`
-- `apache2.2-common=2.4.10-10+deb8u7`
+- `apache2=2.4.10-10+deb8u8`
+- `apache2-bin=2.4.10-10+deb8u8`
+- `apache2-data=2.4.10-10+deb8u8`
+- `apache2-utils=2.4.10-10+deb8u8`
+- `apache2.2-common=2.4.10-10+deb8u8`
 
 Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apache2-bin/copyright`, `/usr/share/doc/apache2-data/copyright`, `/usr/share/doc/apache2-utils/copyright`, `/usr/share/doc/apache2.2-common/copyright`)
 
@@ -109,16 +109,16 @@ Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apac
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apache2=2.4.10-10+deb8u7
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.10-10+deb8u7.dsc' apache2_2.4.10-10+deb8u7.dsc 3263 SHA256:e3b85a86530336672384b7bf1b98e1315067494a33c553b0caae19d3ec5f1703
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.10.orig.tar.bz2' apache2_2.4.10.orig.tar.bz2 5031834 SHA256:176c4dac1a745f07b7b91e7f4fd48f9c48049fa6f088efe758d61d9738669c6a
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.10-10+deb8u7.debian.tar.xz' apache2_2.4.10-10+deb8u7.debian.tar.xz 537496 SHA256:fdc0567759406a7feeabd7efba8f0523bb7c81cbfc9646a6d9c5521db8653974
+$ apt-get source -qq --print-uris apache2=2.4.10-10+deb8u8
+'http://security.debian.org/pool/updates/main/a/apache2/apache2_2.4.10-10+deb8u8.dsc' apache2_2.4.10-10+deb8u8.dsc 3277 SHA256:c20dc666e6192c3db716e1dfb60afed3248aabd9a2d3232301a11fe8d936dac6
+'http://security.debian.org/pool/updates/main/a/apache2/apache2_2.4.10.orig.tar.bz2' apache2_2.4.10.orig.tar.bz2 5031834 SHA256:176c4dac1a745f07b7b91e7f4fd48f9c48049fa6f088efe758d61d9738669c6a
+'http://security.debian.org/pool/updates/main/a/apache2/apache2_2.4.10-10+deb8u8.debian.tar.xz' apache2_2.4.10-10+deb8u8.debian.tar.xz 555484 SHA256:352be8c8245c162a9d97cf167a904fd1684904ffede565f23a654935701b40fa
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/apache2/2.4.10-10+deb8u7/
-- https://sources.debian.net/src/apache2/2.4.10-10+deb8u7/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/apache2/2.4.10-10+deb8u8/
+- https://sources.debian.net/src/apache2/2.4.10-10+deb8u8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apr-util=1.5.4-1`
 
@@ -762,13 +762,12 @@ Likely also available for browsing at:
 
 Binary Packages:
 
-- `comerr-dev=2.1-1.42.12-2+b1`
 - `e2fslibs:amd64=1.42.12-2+b1`
 - `e2fsprogs=1.42.12-2+b1`
 - `libcomerr2:amd64=1.42.12-2+b1`
 - `libss2:amd64=1.42.12-2+b1`
 
-Licenses: (parsed from: `/usr/share/doc/comerr-dev/copyright`, `/usr/share/doc/e2fslibs/copyright`, `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/libcomerr2/copyright`, `/usr/share/doc/libss2/copyright`)
+Licenses: (parsed from: `/usr/share/doc/e2fslibs/copyright`, `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/libcomerr2/copyright`, `/usr/share/doc/libss2/copyright`)
 
 - `GPL-2`
 - `LGPL-2`
@@ -1382,17 +1381,12 @@ Likely also available for browsing at:
 
 Binary Packages:
 
-- `krb5-multidev=1.12.1+dfsg-19+deb8u2`
 - `libgssapi-krb5-2:amd64=1.12.1+dfsg-19+deb8u2`
-- `libgssrpc4:amd64=1.12.1+dfsg-19+deb8u2`
 - `libk5crypto3:amd64=1.12.1+dfsg-19+deb8u2`
-- `libkadm5clnt-mit9:amd64=1.12.1+dfsg-19+deb8u2`
-- `libkadm5srv-mit9:amd64=1.12.1+dfsg-19+deb8u2`
-- `libkdb5-7:amd64=1.12.1+dfsg-19+deb8u2`
 - `libkrb5-3:amd64=1.12.1+dfsg-19+deb8u2`
 - `libkrb5support0:amd64=1.12.1+dfsg-19+deb8u2`
 
-Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libgssrpc4/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkadm5clnt-mit9/copyright`, `/usr/share/doc/libkadm5srv-mit9/copyright`, `/usr/share/doc/libkdb5-7/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
@@ -1597,11 +1591,9 @@ Likely also available for browsing at:
 
 Binary Packages:
 
-- `libjpeg-dev=1:1.3.1-12`
 - `libjpeg62-turbo:amd64=1:1.3.1-12`
-- `libjpeg62-turbo-dev:amd64=1:1.3.1-12`
 
-Licenses: (parsed from: `/usr/share/doc/libjpeg-dev/copyright`, `/usr/share/doc/libjpeg62-turbo/copyright`, `/usr/share/doc/libjpeg62-turbo-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libjpeg62-turbo/copyright`)
 
 - `BSD-3`
 - `BSD-BY-LC-NE`
@@ -1652,9 +1644,8 @@ Likely also available for browsing at:
 Binary Packages:
 
 - `libpng12-0:amd64=1.2.50-2+deb8u3`
-- `libpng12-dev:amd64=1.2.50-2+deb8u3`
 
-Licenses: (parsed from: `/usr/share/doc/libpng12-0/copyright`, `/usr/share/doc/libpng12-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libpng12-0/copyright`)
 
 - `GPL-2`
 
@@ -1946,11 +1937,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u4/
 - https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `linux=3.16.39-1`
+### `dpkg` source package: `linux=3.16.39-1+deb8u1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.16.39-1`
+- `linux-libc-dev:amd64=3.16.39-1+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1961,16 +1952,16 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=3.16.39-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.39-1.dsc' linux_3.16.39-1.dsc 140581 SHA256:3599bd87ee21cb0fb0a33bc8b66fe71490551e9818a33a0676a49955c83925b6
-'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.39.orig.tar.xz' linux_3.16.39.orig.tar.xz 81806060 SHA256:c36466398823435894e3cb3dc2813be8499c0e19a3f1787c202e15136c16207f
-'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.39-1.debian.tar.xz' linux_3.16.39-1.debian.tar.xz 3207928 SHA256:89b288d4bcebecbfaa256f901733682f6e62bc46b28303ae54bc10c6c6a33a23
+$ apt-get source -qq --print-uris linux=3.16.39-1+deb8u1
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.39-1+deb8u1.dsc' linux_3.16.39-1+deb8u1.dsc 140609 SHA256:908adb6ec4bbce7c8f9e6d1800e3dd7a4ceed638a72e71115dabef04f72fc243
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.39.orig.tar.xz' linux_3.16.39.orig.tar.xz 81806060 SHA256:c36466398823435894e3cb3dc2813be8499c0e19a3f1787c202e15136c16207f
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.39-1+deb8u1.debian.tar.xz' linux_3.16.39-1+deb8u1.debian.tar.xz 3218984 SHA256:3515fbe0b38e53b82e77703d33cb081bfacfab7d09e21df34c6fb73efd5b2f45
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/linux/3.16.39-1/
-- https://sources.debian.net/src/linux/3.16.39-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/linux/3.16.39-1+deb8u1/
+- https://sources.debian.net/src/linux/3.16.39-1+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
@@ -2301,37 +2292,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u2/
 - https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb8u5`
-
-Binary Packages:
-
-- `openssl=1.0.1t-1+deb8u5`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u5
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u5.dsc' openssl_1.0.1t-1+deb8u5.dsc 2258 SHA256:165eb617542ab1e9bf810c215b586a57b926f3f6977c1a72af752754c7c90bea
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u5.debian.tar.xz' openssl_1.0.1t-1+deb8u5.debian.tar.xz 106720 SHA256:c6723fbf370ec5544c9b1753d5ad06d4b343a341560fb8650dda135506312cd9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/debian/copyright (for direct copyright/license information)
-
 ### `dpkg` source package: `openssl=1.0.1t-1+deb8u6`
 
 Binary Packages:
 
-- `libssl-dev:amd64=1.0.1t-1+deb8u6`
-- `libssl-doc=1.0.1t-1+deb8u6`
 - `libssl1.0.0:amd64=1.0.1t-1+deb8u6`
+- `openssl=1.0.1t-1+deb8u6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2505,10 +2471,9 @@ Likely also available for browsing at:
 
 Binary Packages:
 
-- `libpq-dev=9.4.10-0+deb8u1`
 - `libpq5:amd64=9.4.10-0+deb8u1`
 
-Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
 - `Tcl`
 - `almost exclusively BSD`
@@ -2674,12 +2639,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/sensible-utils/0.0.9/
 - https://sources.debian.net/src/sensible-utils/0.0.9/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `shadow=1:4.2-3+deb8u1`
+### `dpkg` source package: `shadow=1:4.2-3+deb8u3`
 
 Binary Packages:
 
-- `login=1:4.2-3+deb8u1`
-- `passwd=1:4.2-3+deb8u1`
+- `login=1:4.2-3+deb8u3`
+- `passwd=1:4.2-3+deb8u3`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
@@ -2688,16 +2653,16 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 Source:
 
 ```console
-$ apt-get source -qq --print-uris shadow=1:4.2-3+deb8u1
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3+deb8u1.dsc' shadow_4.2-3+deb8u1.dsc 1997 SHA256:70707cb99ecf37c23abf020506dfd4a76834dd334317e3d34addcdee1c8fe8e8
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3+deb8u1.debian.tar.xz' shadow_4.2-3+deb8u1.debian.tar.xz 496336 SHA256:f189d31410ef30fb53dac5373c3973109233a7afb345b237a879f0d32d2511ab
+$ apt-get source -qq --print-uris shadow=1:4.2-3+deb8u3
+'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.2-3+deb8u3.dsc' shadow_4.2-3+deb8u3.dsc 2492 SHA256:95e6fd479bc7721f71b2e3cbfe65776f021d1338cc4906ad880e5383129a096a
+'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
+'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.2-3+deb8u3.debian.tar.xz' shadow_4.2-3+deb8u3.debian.tar.xz 498396 SHA256:2d4b93667a1f09433725e457c74b6215d31386e2e42bd192c26d34d3592444be
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/shadow/1:4.2-3+deb8u1/
-- https://sources.debian.net/src/shadow/1:4.2-3+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/shadow/1:4.2-3+deb8u3/
+- https://sources.debian.net/src/shadow/1:4.2-3+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `slang2=2.3.0-2`
 
@@ -3002,7 +2967,6 @@ Likely also available for browsing at:
 Binary Packages:
 
 - `zlib1g:amd64=1:1.2.8.dfsg-2+b1`
-- `zlib1g-dev:amd64=1:1.2.8.dfsg-2+b1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
