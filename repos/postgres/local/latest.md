@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ecd991538a0fbb77f8a0327d5ef92b4fe1c50da57719c4a8e810b399199e53e3`
-- Created: `2017-02-10T00:29:10.679939079Z`
+- Image ID: `sha256:4e18b2c30f8d0c8957f51f147feeeb631109e5dbc8476311a73603f48988f7eb`
+- Created: `2017-02-28T20:36:34.463811677Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["postgres"]`
@@ -3044,12 +3044,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/sgml-base/1.26+nmu4/
 - https://sources.debian.net/src/sgml-base/1.26+nmu4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `shadow=1:4.2-3+deb8u1`
+### `dpkg` source package: `shadow=1:4.2-3+deb8u3`
 
 Binary Packages:
 
-- `login=1:4.2-3+deb8u1`
-- `passwd=1:4.2-3+deb8u1`
+- `login=1:4.2-3+deb8u3`
+- `passwd=1:4.2-3+deb8u3`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
@@ -3058,16 +3058,16 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 Source:
 
 ```console
-$ apt-get source -qq --print-uris shadow=1:4.2-3+deb8u1
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3+deb8u1.dsc' shadow_4.2-3+deb8u1.dsc 1997 SHA256:70707cb99ecf37c23abf020506dfd4a76834dd334317e3d34addcdee1c8fe8e8
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3+deb8u1.debian.tar.xz' shadow_4.2-3+deb8u1.debian.tar.xz 496336 SHA256:f189d31410ef30fb53dac5373c3973109233a7afb345b237a879f0d32d2511ab
+$ apt-get source -qq --print-uris shadow=1:4.2-3+deb8u3
+'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.2-3+deb8u3.dsc' shadow_4.2-3+deb8u3.dsc 2492 SHA256:95e6fd479bc7721f71b2e3cbfe65776f021d1338cc4906ad880e5383129a096a
+'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
+'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.2-3+deb8u3.debian.tar.xz' shadow_4.2-3+deb8u3.debian.tar.xz 498396 SHA256:2d4b93667a1f09433725e457c74b6215d31386e2e42bd192c26d34d3592444be
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/shadow/1:4.2-3+deb8u1/
-- https://sources.debian.net/src/shadow/1:4.2-3+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/shadow/1:4.2-3+deb8u3/
+- https://sources.debian.net/src/shadow/1:4.2-3+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `slang2=2.3.0-2`
 
