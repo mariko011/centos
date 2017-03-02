@@ -1,7 +1,7 @@
 ## `drupal:8-fpm`
 
 ```console
-$ docker pull drupal@sha256:39b04d1d7121278f8243a5b5289fb395ec40247c6bcb598aed2788e3a38ab092
+$ docker pull drupal@sha256:1c5c4b35439cca01cabbcf5e960373776e74247f8d1b68047bd56e105a090170
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull drupal@sha256:39b04d1d7121278f8243a5b5289fb395ec40247c6bcb598aed27
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **173.7 MB (173688041 bytes)**  
+-	Total Size: **168.4 MB (168437698 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9eb40dab19ba14317ead1a3cb6226a607312ead491dda53e4ba28938b79eeb22`
+-	Image ID: `sha256:f72305e084a1b1699cc1dc2fde8b850df7652c6ec10f920fd4991ba7af3508da`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -64,17 +64,17 @@ RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!
 EXPOSE 9000/tcp
 # Tue, 28 Feb 2017 18:05:01 GMT
 CMD ["php-fpm"]
-# Wed, 01 Mar 2017 01:54:08 GMT
-RUN apt-get update && apt-get install -y libpng12-dev libjpeg-dev libpq-dev 	&& rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-install gd mbstring opcache pdo pdo_mysql pdo_pgsql zip
-# Wed, 01 Mar 2017 01:54:08 GMT
+# Wed, 01 Mar 2017 23:47:42 GMT
+RUN set -ex 	&& buildDeps=' 		libjpeg62-turbo-dev 		libpng12-dev 		libpq-dev 	' 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd 		--with-jpeg-dir=/usr 		--with-png-dir=/usr 	&& docker-php-ext-install -j "$(nproc)" gd mbstring opcache pdo pdo_mysql pdo_pgsql zip 	&& apt-mark manual 		libjpeg62-turbo 		libpq5 	&& apt-get purge -y --auto-remove $buildDeps
+# Wed, 01 Mar 2017 23:47:43 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Wed, 01 Mar 2017 01:54:09 GMT
+# Wed, 01 Mar 2017 23:47:43 GMT
 WORKDIR /var/www/html
-# Wed, 01 Mar 2017 01:54:09 GMT
+# Wed, 01 Mar 2017 23:47:44 GMT
 ENV DRUPAL_VERSION=8.2.6
-# Wed, 01 Mar 2017 01:54:09 GMT
+# Wed, 01 Mar 2017 23:47:44 GMT
 ENV DRUPAL_MD5=57526a827771ea8a06db1792f1602a85
-# Wed, 01 Mar 2017 01:54:15 GMT
+# Wed, 01 Mar 2017 23:47:51 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites modules themes
 ```
 
@@ -115,15 +115,15 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Wed, 01 Mar 2017 17:04:01 GMT  
 		Size: 7.7 KB (7687 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e6e15e5a997d9d0ac1701f8fc410e1bd035e9c667457d3c4e70de7a0a345487`  
-		Last Modified: Wed, 01 Mar 2017 23:09:38 GMT  
-		Size: 7.0 MB (6985339 bytes)  
+	-	`sha256:dcdcae9505505b802515f7ef1b3e93048c8ce5467aa84084070acf778781949f`  
+		Last Modified: Thu, 02 Mar 2017 00:01:20 GMT  
+		Size: 1.7 MB (1735005 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a684872fdf04860673c51be967598ad1cd0c31c514273c98219270e601828940`  
-		Last Modified: Wed, 01 Mar 2017 23:09:35 GMT  
-		Size: 331.0 B  
+	-	`sha256:1b65e783c06b3d20ad958541c40c8a40f7a7792399d26094a1c34a1c2c110233`  
+		Last Modified: Thu, 02 Mar 2017 00:01:19 GMT  
+		Size: 333.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c5cf3b123f8746371cabcd3c22ac327100d65ed5f5443085d3bf544becea8c7`  
-		Last Modified: Wed, 01 Mar 2017 23:09:48 GMT  
-		Size: 12.2 MB (12179260 bytes)  
+	-	`sha256:0f79b06bdc783a85676a2d5a2443f8fca420f94fc65d93dadc34d16501b7c01a`  
+		Last Modified: Thu, 02 Mar 2017 00:01:35 GMT  
+		Size: 12.2 MB (12179249 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
