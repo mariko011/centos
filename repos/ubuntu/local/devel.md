@@ -61,13 +61,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4~beta4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.4~beta4ubuntu1.dsc' apt_1.4~beta4ubuntu1.dsc 2672 SHA256:07d49d742a1e27ad632ddadf28fcc76b4f6123fe0e2a981be18a7e279d150b6a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.4~beta4ubuntu1.tar.xz' apt_1.4~beta4ubuntu1.tar.xz 2069520 SHA256:505464fb228fe68c5fbbe8c103f77be1276b639890e32747cb397928735ed36d
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -214,14 +209,8 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris coreutils=8.25-2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.25-2ubuntu2.dsc' coreutils_8.25-2ubuntu2.dsc 2071 SHA256:8f2d6456701648072a4ed22142bcb8c0113d4488dd28acd1fc46e26952bbef91
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.25.orig.tar.xz' coreutils_8.25.orig.tar.xz 5725008 SHA256:31e67c057a5b32a582f26408c789e11c2e8d676593324849dcf5779296cdce87
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.25-2ubuntu2.debian.tar.xz' coreutils_8.25-2ubuntu2.debian.tar.xz 28040 SHA256:221f38aeb8e251c21edcdb93706deb61ac7619264c1e403609f67e13431e69bb
-```
 
 ### `dpkg` source package: `dash=0.5.8-2.3ubuntu1`
 
@@ -373,14 +362,8 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `GFDL-1.3`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris findutils=4.6.0+git+20161106-1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.6.0+git+20161106-1.dsc' findutils_4.6.0+git+20161106-1.dsc 2188 SHA256:af0f002e72ae1aa83f3325321513c56f9260ba94b06e0954e5c0d0e3c0210a43
-'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.6.0+git+20161106.orig.tar.xz' findutils_4.6.0+git+20161106.orig.tar.xz 1828956 SHA256:96a3aa120d7300863f39fe56ccb6674d8cde4730b485f4f81083c1a6d33097e3
-'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.6.0+git+20161106-1.debian.tar.xz' findutils_4.6.0+git+20161106-1.debian.tar.xz 26052 SHA256:6d387541054a47185216adfeced73748f4b1b45c16fae18da5471bf67a33609d
-```
 
 ### `dpkg` source package: `gcc-6=6.3.0-2ubuntu1`
 
