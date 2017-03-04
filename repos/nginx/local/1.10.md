@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e366cb1b473901a3ac27ee8c973de6390cd4bc1ec03cce60c14fe68fba2a66c1`
-- Created: `2017-01-31T17:39:19.543813125Z`
+- Image ID: `sha256:e526633b91df1ab8e27adce4649ca9c372e9ac638940c62c9989fe94c56cb102`
+- Created: `2017-02-28T15:15:25.375734019Z`
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
@@ -1119,11 +1119,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u2/
 - https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libgd2=2.1.0-5+deb8u8`
+### `dpkg` source package: `libgd2=2.1.0-5+deb8u9`
 
 Binary Packages:
 
-- `libgd3:amd64=2.1.0-5+deb8u8`
+- `libgd3:amd64=2.1.0-5+deb8u9`
 
 Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 
@@ -1142,16 +1142,16 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libgd2=2.1.0-5+deb8u8
-'http://deb.debian.org/debian/pool/main/libg/libgd2/libgd2_2.1.0-5+deb8u8.dsc' libgd2_2.1.0-5+deb8u8.dsc 2506 SHA256:21156b41a28c1803d60408e7e671abdc8ee40c17eda68bd5189c0bf0c41b7288
-'http://deb.debian.org/debian/pool/main/libg/libgd2/libgd2_2.1.0.orig.tar.xz' libgd2_2.1.0.orig.tar.xz 2004304 SHA256:fa6665dfe3d898019671293c84d77067a3d2ede50884dbcb6df899d508370e5a
-'http://deb.debian.org/debian/pool/main/libg/libgd2/libgd2_2.1.0-5+deb8u8.debian.tar.xz' libgd2_2.1.0-5+deb8u8.debian.tar.xz 46360 SHA256:577300429012cdfcdd16528bbc14c7a3b90172f8b40cfb873ef50019bbf22638
+$ apt-get source -qq --print-uris libgd2=2.1.0-5+deb8u9
+'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.1.0-5+deb8u9.dsc' libgd2_2.1.0-5+deb8u9.dsc 2481 SHA256:2d12d2498cc99e9323a6bc1612fcdc2179201a1cf396c1cece27b3a2e027c00b
+'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.1.0.orig.tar.xz' libgd2_2.1.0.orig.tar.xz 2004304 SHA256:fa6665dfe3d898019671293c84d77067a3d2ede50884dbcb6df899d508370e5a
+'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.1.0-5+deb8u9.debian.tar.xz' libgd2_2.1.0-5+deb8u9.debian.tar.xz 37876 SHA256:fcabeec555ac03ac20d286ae3f50e21aee8a6f6a11057e3149c071bd3210a4c4
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libgd2/2.1.0-5+deb8u8/
-- https://sources.debian.net/src/libgd2/2.1.0-5+deb8u8/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libgd2/2.1.0-5+deb8u9/
+- https://sources.debian.net/src/libgd2/2.1.0-5+deb8u9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.17-3`
 
@@ -2086,12 +2086,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/sensible-utils/0.0.9/
 - https://sources.debian.net/src/sensible-utils/0.0.9/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `shadow=1:4.2-3+deb8u1`
+### `dpkg` source package: `shadow=1:4.2-3+deb8u3`
 
 Binary Packages:
 
-- `login=1:4.2-3+deb8u1`
-- `passwd=1:4.2-3+deb8u1`
+- `login=1:4.2-3+deb8u3`
+- `passwd=1:4.2-3+deb8u3`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
@@ -2100,16 +2100,16 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 Source:
 
 ```console
-$ apt-get source -qq --print-uris shadow=1:4.2-3+deb8u1
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3+deb8u1.dsc' shadow_4.2-3+deb8u1.dsc 1997 SHA256:70707cb99ecf37c23abf020506dfd4a76834dd334317e3d34addcdee1c8fe8e8
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3+deb8u1.debian.tar.xz' shadow_4.2-3+deb8u1.debian.tar.xz 496336 SHA256:f189d31410ef30fb53dac5373c3973109233a7afb345b237a879f0d32d2511ab
+$ apt-get source -qq --print-uris shadow=1:4.2-3+deb8u3
+'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.2-3+deb8u3.dsc' shadow_4.2-3+deb8u3.dsc 2492 SHA256:95e6fd479bc7721f71b2e3cbfe65776f021d1338cc4906ad880e5383129a096a
+'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
+'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.2-3+deb8u3.debian.tar.xz' shadow_4.2-3+deb8u3.debian.tar.xz 498396 SHA256:2d4b93667a1f09433725e457c74b6215d31386e2e42bd192c26d34d3592444be
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/shadow/1:4.2-3+deb8u1/
-- https://sources.debian.net/src/shadow/1:4.2-3+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/shadow/1:4.2-3+deb8u3/
+- https://sources.debian.net/src/shadow/1:4.2-3+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `slang2=2.3.0-2`
 
