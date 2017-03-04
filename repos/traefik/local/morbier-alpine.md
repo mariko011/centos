@@ -1,9 +1,9 @@
-# `traefik:v1.2.0-rc1-alpine`
+# `traefik:v1.2.0-rc2-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:aaaa7788421450a0e43adda655f614fbf553c23b302e8552339afd9718b0e3d7`
-- Created: `2017-02-06T22:27:30.071714887Z`
+- Image ID: `sha256:9f694aa183e5a5749690c3164f8a8732bc0b386034f6f83ba0380d51a6fe7ed1`
+- Created: `2017-03-03T23:48:51.691869391Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["--help"]`
