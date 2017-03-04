@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3a859cac1ae506434d8c82c1bdf98736f6b2e55e0e0547be65679a97d2659841`
-- Created: `2017-01-24T17:37:01.327836064Z`
+- Image ID: `sha256:c420171aec6f856e7c7d137355820b5f8fb2bdaa5681955eaabbc6b2f9150f23`
+- Created: `2017-03-03T22:00:09.379758858Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["influxd"]`
