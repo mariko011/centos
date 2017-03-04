@@ -2,13 +2,13 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:00ae4c74759089384229a9d85b05a3c459accf20322c4e84e97acbda033c285c`
-- Created: `2017-01-21T02:11:57.091758142Z`
+- Image ID: `sha256:daba2a03761019fd5a6e529d7422056d26e80a9d81804209850626bc1f743a15`
+- Created: `2017-03-01T01:33:44.766059979Z`
 - Arch: `linux`/`amd64`
 - Command: `["/opt/ibm/docker/docker-server","run","defaultServer"]`
 - Environment:
   - `PATH=/opt/ibm/wlp/bin:/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr3fp22`
+  - `JAVA_VERSION=1.8.0_sr4fp1`
   - `JAVA_HOME=/opt/ibm/java/jre`
   - `LIBERTY_VERSION=16.0.0_04`
   - `LOG_DIR=/logs`
@@ -77,20 +77,25 @@ $ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.5
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.5.debian.tar.xz' apparmor_2.10.95-0ubuntu2.5.debian.tar.xz 94420 SHA256:e24893c41b4bc0e0b63f1aaa649ab99a853a5c2959fefb787ab2968fd221040f
 ```
 
-### `dpkg` source package: `apt=1.2.18`
+### `dpkg` source package: `apt=1.2.19`
 
 Binary Packages:
 
-- `apt=1.2.18`
-- `libapt-pkg5.0:amd64=1.2.18`
+- `apt=1.2.19`
+- `libapt-pkg5.0:amd64=1.2.19`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=1.2.19
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.19.dsc' apt_1.2.19.dsc 2392 SHA256:5081290901052e7e4d17839a112849e8845b8c00b5c6e4193f4d3c25ec01300c
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.19.tar.xz' apt_1.2.19.tar.xz 2055900 SHA256:2c0be591472248d5c00d983ceb81e5ed936291f90cd2794c75e768466ab168cc
+```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -133,18 +138,23 @@ $ apt-get source -qq --print-uris audit=1:2.4.5-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.4.5-1ubuntu2.debian.tar.xz' audit_2.4.5-1ubuntu2.debian.tar.xz 18752 SHA256:45a0df6d08245f3cf63db3280f61eeb4fb613ab8c90567f9d288ac60c714648e
 ```
 
-### `dpkg` source package: `base-files=9.4ubuntu4.3`
+### `dpkg` source package: `base-files=9.4ubuntu4.4`
 
 Binary Packages:
 
-- `base-files=9.4ubuntu4.3`
+- `base-files=9.4ubuntu4.4`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=9.4ubuntu4.4
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.4.dsc' base-files_9.4ubuntu4.4.dsc 1539 SHA256:44f652813477cac68590a2ff34bffc8b5e7c3fa7ffa7300f3e06672b7d4c6fc9
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.4.tar.xz' base-files_9.4ubuntu4.4.tar.xz 62952 SHA256:f83ad550362c3f582e8c52d58073edc69a61a9d3138e6e56177ec7610bdf3a9b
+```
 
 ### `dpkg` source package: `base-passwd=3.5.39`
 
@@ -962,19 +972,25 @@ $ apt-get source -qq --print-uris ncurses=6.0+20160213-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ncurses/ncurses_6.0+20160213-1ubuntu1.debian.tar.xz' ncurses_6.0+20160213-1ubuntu1.debian.tar.xz 54496 SHA256:9551738e1bdc425d12897cc459ce5ce40b5e12530b144b731c0a7b3e077c07c7
 ```
 
-### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.5`
+### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.6`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.5`
-- `openssl=1.0.2g-1ubuntu4.5`
+- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.6`
+- `openssl=1.0.2g-1ubuntu4.6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.6
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.6.dsc' openssl_1.0.2g-1ubuntu4.6.dsc 2435 SHA256:dbe9f7b006f6d07bd26424e7473c25116e7deb04e809c4eb38415450070ba205
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.6.debian.tar.xz' openssl_1.0.2g-1ubuntu4.6.debian.tar.xz 109604 SHA256:748caddf106c740849909c87406b8b2a675c5746dc8db3c192000042ad314bfd
+```
 
 ### `dpkg` source package: `pam=1.1.8-3.2ubuntu2`
 
@@ -1163,14 +1179,14 @@ $ apt-get source -qq --print-uris shadow=1:4.2-3.1ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.1ubuntu5.debian.tar.xz' shadow_4.2-3.1ubuntu5.debian.tar.xz 504168 SHA256:7a18a238c463b562e69e9a3cd4e18d87212c7d68bc58e5f8ba31f3a7e33cad6e
 ```
 
-### `dpkg` source package: `systemd=229-4ubuntu13`
+### `dpkg` source package: `systemd=229-4ubuntu16`
 
 Binary Packages:
 
-- `libsystemd0:amd64=229-4ubuntu13`
-- `libudev1:amd64=229-4ubuntu13`
-- `systemd=229-4ubuntu13`
-- `systemd-sysv=229-4ubuntu13`
+- `libsystemd0:amd64=229-4ubuntu16`
+- `libudev1:amd64=229-4ubuntu16`
+- `systemd=229-4ubuntu16`
+- `systemd-sysv=229-4ubuntu16`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
@@ -1182,8 +1198,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=229-4ubuntu16
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu16.dsc' systemd_229-4ubuntu16.dsc 4445 SHA256:afccec7075a77a2a38d3c3b4e2390d2f20d0ed6825faf3062fc3e7a521e40f7a
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu16.debian.tar.xz' systemd_229-4ubuntu16.debian.tar.xz 240120 SHA256:7d2e0abd935bfbdd59b3e1ee32627d92d09617ceeb000a3d8bbde39e4a2f0a89
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
