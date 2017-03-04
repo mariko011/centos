@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c54fe97047526585c618405a23fc220d7548bac42c054f84a16bdfcae03f24a8`
-- Created: `2016-12-15T18:06:40.125808012Z`
+- Image ID: `sha256:ed4374bc39e37a9e501096bc51c08be7003ccf94265d1e05f0c45927d30cf084`
+- Created: `2017-02-27T21:15:41.99844005Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -739,11 +739,11 @@ $ apt-get source -qq --print-uris gnupg=1.4.11-3ubuntu2.10
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.11-3ubuntu2.10.diff.gz' gnupg_1.4.11-3ubuntu2.10.diff.gz 60648 SHA256:2787ff43b69ee32ec5754dfab9a6b6fd7f7931da3e28ac09c72851e7b9553a3f
 ```
 
-### `dpkg` source package: `gnutls26=2.12.14-5ubuntu3.12`
+### `dpkg` source package: `gnutls26=2.12.14-5ubuntu3.13`
 
 Binary Packages:
 
-- `libgnutls26:amd64=2.12.14-5ubuntu3.12`
+- `libgnutls26:amd64=2.12.14-5ubuntu3.13`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls26/copyright`)
 
@@ -753,8 +753,14 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls26/copyright`)
 - `LGPL-2.1`
 - `The main library is licensed under GNU Lesser General Public`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnutls26=2.12.14-5ubuntu3.13
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.14-5ubuntu3.13.dsc' gnutls26_2.12.14-5ubuntu3.13.dsc 2685 SHA256:65e5380cb7fc87a1becd21c800657c0b798ce3885b607c46efd1088b7e1f12b9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.14.orig.tar.bz2' gnutls26_2.12.14.orig.tar.bz2 7166618 SHA256:5ee72ba6de7a23cf315792561954451e022dac8730149ca95f93c61e95be2ce3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.14-5ubuntu3.13.debian.tar.gz' gnutls26_2.12.14-5ubuntu3.13.debian.tar.gz 38067 SHA256:05f4925aa1925d24140f2b1fe65389b56c1119b0a03dde2aa0da7d2301002b17
+```
 
 ### `dpkg` source package: `grep=2.10-1`
 
@@ -1554,19 +1560,25 @@ $ apt-get source -qq --print-uris openssh=1:5.9p1-5ubuntu1.10
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_5.9p1-5ubuntu1.10.debian.tar.gz' openssh_5.9p1-5ubuntu1.10.debian.tar.gz 265940 SHA256:7b2713a9bfe6c33c188e872888a076dd54cb773c4bfdfa4efe56cb071eab514b
 ```
 
-### `dpkg` source package: `openssl=1.0.1-4ubuntu5.38`
+### `dpkg` source package: `openssl=1.0.1-4ubuntu5.39`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1-4ubuntu5.38`
-- `openssl=1.0.1-4ubuntu5.38`
+- `libssl1.0.0:amd64=1.0.1-4ubuntu5.39`
+- `openssl=1.0.1-4ubuntu5.39`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1-4ubuntu5.39
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1-4ubuntu5.39.dsc' openssl_1.0.1-4ubuntu5.39.dsc 2365 SHA256:3ba485db235b46912a0778aaac8814b79630fb3a7c7728fe0ff95c84e790ad43
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1.orig.tar.gz' openssl_1.0.1.orig.tar.gz 4453920 SHA256:4d9f0a594a9a89b28e1a04a9504c04104f6508ee27ad1e0efdd17a7a6dbbeeee
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.1-4ubuntu5.39.debian.tar.gz' openssl_1.0.1-4ubuntu5.39.debian.tar.gz 291740 SHA256:3137f726122302537ff9f99e9d9832a34f69fd1517c8797aebddabcee9d24031
+```
 
 ### `dpkg` source package: `p11-kit=0.12-2ubuntu1`
 

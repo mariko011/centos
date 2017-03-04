@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:713194bf5076dc830c719012b2b68c03412f2df7ea35fbdf87240edd9e01023e`
-- Created: `2017-02-09T18:37:59.777523668Z`
+- Image ID: `sha256:0814c8fa3e657d17a9792dc2f481bf8493cd709dffd90ad3c4f95e3f114a6a17`
+- Created: `2017-02-27T21:17:44.647338143Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -1374,24 +1374,30 @@ $ apt-get source -qq --print-uris ilmbase=1.0.1-3build2
 'http://archive.ubuntu.com/ubuntu/pool/main/i/ilmbase/ilmbase_1.0.1-3build2.diff.gz' ilmbase_1.0.1-3build2.diff.gz 4039 SHA256:a04cf0b8db4471ea609c0f8b05b4efa9e1321845494efd251c3e21ccb640f9e1
 ```
 
-### `dpkg` source package: `imagemagick=8:6.6.9.7-5ubuntu3.6`
+### `dpkg` source package: `imagemagick=8:6.6.9.7-5ubuntu3.7`
 
 Binary Packages:
 
-- `imagemagick=8:6.6.9.7-5ubuntu3.6`
-- `imagemagick-common=8:6.6.9.7-5ubuntu3.6`
-- `libmagickcore-dev=8:6.6.9.7-5ubuntu3.6`
-- `libmagickcore4=8:6.6.9.7-5ubuntu3.6`
-- `libmagickcore4-extra=8:6.6.9.7-5ubuntu3.6`
-- `libmagickwand-dev=8:6.6.9.7-5ubuntu3.6`
-- `libmagickwand4=8:6.6.9.7-5ubuntu3.6`
+- `imagemagick=8:6.6.9.7-5ubuntu3.7`
+- `imagemagick-common=8:6.6.9.7-5ubuntu3.7`
+- `libmagickcore-dev=8:6.6.9.7-5ubuntu3.7`
+- `libmagickcore4=8:6.6.9.7-5ubuntu3.7`
+- `libmagickcore4-extra=8:6.6.9.7-5ubuntu3.7`
+- `libmagickwand-dev=8:6.6.9.7-5ubuntu3.7`
+- `libmagickwand4=8:6.6.9.7-5ubuntu3.7`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris imagemagick=8:6.6.9.7-5ubuntu3.7
+'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.6.9.7-5ubuntu3.7.dsc' imagemagick_6.6.9.7-5ubuntu3.7.dsc 3159 SHA256:ea095196621f8b49f30001e36813990563f698c8da2a8d8fbad4817b99649400
+'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.6.9.7.orig.tar.gz' imagemagick_6.6.9.7.orig.tar.gz 12825250 SHA256:c2f77859257f3ff3d51e70a6cdebed7a24a1b77c0cbe6edb8170330a7c18dbfa
+'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.6.9.7-5ubuntu3.7.debian.tar.bz2' imagemagick_6.6.9.7-5ubuntu3.7.debian.tar.bz2 115892 SHA256:9093ddcc8ab5b2a43bca2c3fe103467c7dec92c63add0c75b52ad31aab51a883
+```
 
 ### `dpkg` source package: `initramfs-tools=0.99ubuntu13.5`
 
@@ -1841,14 +1847,8 @@ Licenses: (parsed from: `/usr/share/doc/libgd2-noxpm/copyright`)
 - `HPND`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.0.36~rc1~dfsg-6ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6ubuntu2.3.dsc' libgd2_2.0.36~rc1~dfsg-6ubuntu2.3.dsc 2452 SHA256:7b6ed75f57f84668746085ea5e192d3fbc2b0efbf15c994e29660b015cddeeea
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg.orig.tar.gz' libgd2_2.0.36~rc1~dfsg.orig.tar.gz 761899 SHA256:919df21310ad4a8b6155df01411138110589cc6c50b1bc414dc62aebb0a7f41a
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6ubuntu2.3.debian.tar.gz' libgd2_2.0.36~rc1~dfsg-6ubuntu2.3.debian.tar.gz 32417 SHA256:60f70aa1c2ec1a71e1a4adb2a81d7e7416d68a1abd8237659b0d408aff119634
-```
 
 ### `dpkg` source package: `libgpg-error=1.10-2ubuntu1`
 
@@ -2615,11 +2615,11 @@ $ apt-get source -qq --print-uris libyaml=0.1.4-2ubuntu0.12.04.4
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.4-2ubuntu0.12.04.4.debian.tar.gz' libyaml_0.1.4-2ubuntu0.12.04.4.debian.tar.gz 6152 SHA256:2941cb245fd1fdf53a576f02931f24cf5368649d51e2965bb7b6ba29c7ab4835
 ```
 
-### `dpkg` source package: `linux=3.2.0-121.164`
+### `dpkg` source package: `linux=3.2.0-123.166`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.2.0-121.164`
+- `linux-libc-dev:amd64=3.2.0-123.166`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2976,25 +2976,13 @@ $ apt-get source -qq --print-uris openssh=1:5.9p1-5ubuntu1.10
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_5.9p1-5ubuntu1.10.debian.tar.gz' openssh_5.9p1-5ubuntu1.10.debian.tar.gz 265940 SHA256:7b2713a9bfe6c33c188e872888a076dd54cb773c4bfdfa4efe56cb071eab514b
 ```
 
-### `dpkg` source package: `openssl=1.0.1-4ubuntu5.38`
-
-Binary Packages:
-
-- `openssl=1.0.1-4ubuntu5.38`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
-
-
 ### `dpkg` source package: `openssl=1.0.1-4ubuntu5.39`
 
 Binary Packages:
 
 - `libssl-dev=1.0.1-4ubuntu5.39`
 - `libssl1.0.0:amd64=1.0.1-4ubuntu5.39`
+- `openssl=1.0.1-4ubuntu5.39`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
