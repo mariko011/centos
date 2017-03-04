@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3b7fc98f4b331701d9b50de0e8c866e48d81863a53f63d8c26d4f1948b577a82`
-- Created: `2017-01-05T23:56:45.2397446Z`
+- Image ID: `sha256:4ad9e4c2b3812e642064af60fe549dc562bb334ac7a03f653cb6b0ff5e2f1d32`
+- Created: `2017-03-03T21:48:42.763926604Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["/usr/sbin/mosquitto","-c","/mosquitto/config/mosquitto.conf"]`
