@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9cb10fe7b7fe6ef9043d4a3ed78a691805513389f6ac8d554bc84853fdefd679`
-- Created: `2017-02-20T22:49:13.655812538Z`
+- Image ID: `sha256:70cd4bd76d3595c7ad8048f35f8a338130110f06e5d8139f8dc2e70bea0f8e5e`
+- Created: `2017-03-04T00:06:45.603851268Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["composer"]`
