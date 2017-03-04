@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:25c5ec64a829ba1ce62288be167b9b9477ffc2c67c956d909813015009b48e37`
-- Created: `2016-12-27T22:20:47.759759072Z`
+- Image ID: `sha256:83fab6ac55c9c7f14e860df9a4504eabc09cd04fceb5c234a8ee99bb6a171605`
+- Created: `2017-03-04T00:13:04.823764558Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
 - Command: `["mvn"]`
