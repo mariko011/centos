@@ -2,11 +2,12 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6a53d97a207475055687b5aff94f76525a6c8a18c92e549639a795cf1786be07`
-- Created: `2017-02-22T20:18:44.456279948Z`
+- Image ID: `sha256:106b594cc39bd62cfd824a3e0a69424180758c08ace9349ad4b75f5862b7feca`
+- Created: `2017-03-03T22:11:06.245493535Z`
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
   - `NODE_VERSION=4.8.0`
+  - `YARN_VERSION=0.21.3`
