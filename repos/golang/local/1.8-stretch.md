@@ -407,19 +407,8 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris coreutils=8.26-2
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.26-2.dsc' coreutils_8.26-2.dsc 1980 SHA256:a2e4342548262ac1b11e4875f7a636b27a76228117cc28bf61235011e55f790c
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.26.orig.tar.xz' coreutils_8.26.orig.tar.xz 5810244 SHA256:155e94d748f8e2bc327c66e0cbebdb8d6ab265d2f37c3c928f7bf6c3beba9a8e
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.26-2.debian.tar.xz' coreutils_8.26-2.debian.tar.xz 22092 SHA256:8c24098fc4380040983bdd38d3f36b8dcfe49a5c0b6f123202da88d1d066060a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/coreutils/8.26-2/
-- https://sources.debian.net/src/coreutils/8.26-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `curl=7.52.1-3`
 
