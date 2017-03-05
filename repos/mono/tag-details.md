@@ -1743,54 +1743,7 @@ ONBUILD WORKDIR /usr/src/app/build
 
 ## `mono:4.2.2.30`
 
-```console
-$ docker pull mono@sha256:3ab85a41ba84d31b129fbdb9e6c83b7b8b8569d1696a4209f287da9f5eafed07
-```
-
--	Platforms:
-	-	linux; amd64
-
-### `mono:4.2.2.30` - linux; amd64
-
--	Docker Version: 1.12.6
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **229.7 MB (229729927 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24ea73170cdd97a629c09e9d69c538e41d67a82ee46e940829a8ec6db6c86134`
--	Default Command: `["\/bin\/bash"]`
-
-```dockerfile
-# Mon, 27 Feb 2017 20:39:24 GMT
-ADD file:ddbcd17149470ca923569d3112a7955f842a00bf8eee92781c6eb13af64b5b82 in / 
-# Mon, 27 Feb 2017 20:39:25 GMT
-CMD ["/bin/bash"]
-# Tue, 28 Feb 2017 06:07:11 GMT
-MAINTAINER Jo Shields <jo.shields@xamarin.com>
-# Tue, 28 Feb 2017 06:07:33 GMT
-RUN apt-get update 	&& apt-get install -y curl 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 06:19:24 GMT
-RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-# Tue, 28 Feb 2017 06:43:11 GMT
-RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/4.2.2.30 main" > /etc/apt/sources.list.d/mono-xamarin.list 	&& apt-get update 	&& apt-get install -y mono-devel ca-certificates-mono fsharp mono-vbnc nuget 	&& rm -rf /var/lib/apt/lists/*
-```
-
--	Layers:
-	-	`sha256:c3e97b7a4c20461eb05807e795f449cc8826084be5e3c4766fa9cc49b4df3551`  
-		Last Modified: Mon, 27 Feb 2017 20:50:15 GMT  
-		Size: 37.3 MB (37284709 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80f0d7f91319b180baeb2a0f91a411f093e8f3308b7873ecb30dad82f542b874`  
-		Last Modified: Wed, 01 Mar 2017 00:44:09 GMT  
-		Size: 7.6 MB (7646900 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdd29b3bdc80041a0a42d4dd781bb0b5a140886795ccb17df5d692ed1f992d1e`  
-		Last Modified: Wed, 01 Mar 2017 00:58:45 GMT  
-		Size: 29.9 KB (29889 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dcc0baf3068972ca1f114fe82369a6c98b2beb0e8c16b4257415ed51fbe6e71`  
-		Last Modified: Wed, 01 Mar 2017 00:59:56 GMT  
-		Size: 184.8 MB (184768429 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+**does not exist** (yet?)
 
 ## `mono:4.2.2`
 
