@@ -4480,8 +4480,14 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.13.0-110.157
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-110.157.dsc' linux_3.13.0-110.157.dsc 8127 SHA256:df5f1ee86aa13598f4140a17dab7e1c25248f797c7a190a1df5569efd9eace3d
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-110.157.diff.gz' linux_3.13.0-110.157.diff.gz 9462001 SHA256:f25359eae33f0d971e09d2ed6444767efacc60199ac559dc561cdd0d210cc73d
+```
 
 ### `dpkg` source package: `llvm-toolchain-3.4=1:3.4-1ubuntu3`
 
