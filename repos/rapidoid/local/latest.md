@@ -1,9 +1,9 @@
-# `rapidoid:5.3.1`
+# `rapidoid:5.3.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8832c0453a23c59b082c92a67ba6fe70bc0e2af973901092d4cb4db688c1c694`
-- Created: `2017-03-01T18:09:01.719909398Z`
+- Image ID: `sha256:3956982f050f194f0d7cf51f632e7819530c3e640b9504cba0228da05025c36c`
+- Created: `2017-03-06T22:42:20.999967204Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/entrypoint.sh"]`
 - Environment:
@@ -16,8 +16,8 @@
   - `GPG_KEY=E306FEF548C686C23DC00242B9B08D8F616EF49C`
   - `RAPIDOID_JAR=/opt/rapidoid.jar`
   - `RAPIDOID_TMP=/tmp/rapidoid`
-  - `RAPIDOID_VERSION=5.3.1`
-  - `RAPIDOID_URL=https://repo1.maven.org/maven2/org/rapidoid/rapidoid-platform/5.3.1/rapidoid-platform-5.3.1.jar`
+  - `RAPIDOID_VERSION=5.3.2`
+  - `RAPIDOID_URL=https://repo1.maven.org/maven2/org/rapidoid/rapidoid-platform/5.3.2/rapidoid-platform-5.3.2.jar`
 
 ## `dpkg` (`.deb`-based packages)
 
