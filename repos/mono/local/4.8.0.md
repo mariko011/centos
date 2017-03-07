@@ -289,13 +289,8 @@ Licenses: (parsed from: `/usr/share/doc/cli-common/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cli-common=0.9~xamarin1
-'http://download.mono-project.com/repo/debian/pool/main/c/cli-common/cli-common_0.9~xamarin1.dsc' cli-common_0.9~xamarin1.dsc 1578 SHA256:38ee705d5c65cb60d4071be7bbe3f09f49f8aec51cd34b9a3b6ff393d24d3d0c
-'http://download.mono-project.com/repo/debian/pool/main/c/cli-common/cli-common_0.9~xamarin1.tar.gz' cli-common_0.9~xamarin1.tar.gz 42710 SHA256:8daafae88b022ee01986fc5f4619f83b848be32b37b22fca24ee01e5f71f1cbd
-```
 
 ### `dpkg` source package: `coreutils=8.13-3.5`
 
