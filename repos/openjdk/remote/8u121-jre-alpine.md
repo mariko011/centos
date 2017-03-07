@@ -1,4 +1,4 @@
-## `openjdk:jre-alpine`
+## `openjdk:8u121-jre-alpine`
 
 ```console
 $ docker pull openjdk@sha256:e663151c5fdfa89bda49af65b3d477fa1433491290cd35c8f09afa16072f35c4
@@ -7,7 +7,7 @@ $ docker pull openjdk@sha256:e663151c5fdfa89bda49af65b3d477fa1433491290cd35c8f09
 -	Platforms:
 	-	linux; amd64
 
-### `openjdk:jre-alpine` - linux; amd64
+### `openjdk:8u121-jre-alpine` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
