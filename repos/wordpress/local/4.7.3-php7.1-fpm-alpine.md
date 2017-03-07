@@ -1,9 +1,9 @@
-# `wordpress:4.7.2-php7.1-fpm-alpine`
+# `wordpress:4.7.3-php7.1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bd592500228f3ad1d8191139a014731a3b1d9974b5193cd95173752d6ac4d962`
-- Created: `2017-02-20T23:38:45.975866947Z`
+- Image ID: `sha256:7e74cd0697bc915df338af427a1d31ad870d73fa172ecf118af54c1929fc4402`
+- Created: `2017-03-07T01:35:14.9837666Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["php-fpm"]`
@@ -21,5 +21,5 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.2.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=d815a0c39fd57bab1434a77ff0610fb507c22f790c66cd6f26e27030c4b3e971`
   - `PHP_MD5=d79afea1870277c86fac903566fb6c5d`
-  - `WORDPRESS_VERSION=4.7.2`
-  - `WORDPRESS_SHA1=7b687f1af589c337124e6247229af209ec1d52c3`
+  - `WORDPRESS_VERSION=4.7.3`
+  - `WORDPRESS_SHA1=35adcd8162eae00d5bc37f35344fdc06b22ffc98`
