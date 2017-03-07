@@ -1,4 +1,4 @@
-## `xwiki:9`
+## `xwiki:stable-mysql`
 
 ```console
 $ docker pull xwiki@sha256:6d644a8709a90260bb313c9753e4beca1349d9bca4e0ba57f92886a701c9d0f3
@@ -7,7 +7,7 @@ $ docker pull xwiki@sha256:6d644a8709a90260bb313c9753e4beca1349d9bca4e0ba57f9288
 -	Platforms:
 	-	linux; amd64
 
-### `xwiki:9` - linux; amd64
+### `xwiki:stable-mysql` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`

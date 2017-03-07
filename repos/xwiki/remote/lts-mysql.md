@@ -1,19 +1,19 @@
-## `xwiki:9`
+## `xwiki:lts-mysql`
 
 ```console
-$ docker pull xwiki@sha256:6d644a8709a90260bb313c9753e4beca1349d9bca4e0ba57f92886a701c9d0f3
+$ docker pull xwiki@sha256:7fa0a3376a1396cc35a68396f5cb0960f2eb41bee598fd46d69d7dca3e2ee5a8
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `xwiki:9` - linux; amd64
+### `xwiki:lts-mysql` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **563.1 MB (563077748 bytes)**  
+-	Total Size: **561.4 MB (561416295 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac5c465ad1b1dd8b78fc5342af9214b47b8238e661a0176931029fac4cc6190b`
+-	Image ID: `sha256:c9745437fea89364a0c5479bbe7bfa92351fb837f330bfc42fea9a2206902969`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -86,29 +86,29 @@ CMD ["catalina.sh" "run"]
 MAINTAINER Vincent Massol <vincent@massol.net>
 # Wed, 01 Mar 2017 01:41:04 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     libmysql-java &&   rm -rf /var/lib/apt/lists/*
-# Tue, 07 Mar 2017 18:03:53 GMT
-ENV XWIKI_VERSION=9.1.2
-# Tue, 07 Mar 2017 18:03:54 GMT
-ENV XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/enterprise/xwiki-enterprise-web/9.1.2
-# Tue, 07 Mar 2017 18:03:54 GMT
-ENV XWIKI_DOWNLOAD_SHA256=580190b11bc9f11fde0cf992c0299fff17b5bece7fa5d7d4f7fb53c46e77a075
-# Tue, 07 Mar 2017 18:04:54 GMT
+# Wed, 01 Mar 2017 01:41:05 GMT
+ENV XWIKI_VERSION=8.4.4
+# Wed, 01 Mar 2017 01:41:05 GMT
+ENV XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/enterprise/xwiki-enterprise-web/8.4.4
+# Wed, 01 Mar 2017 01:41:06 GMT
+ENV XWIKI_DOWNLOAD_SHA256=b414edb4527e3d8b27c40a8c3f2f09423980de7963207b7dc89da71d14e7fb23
+# Wed, 01 Mar 2017 01:41:46 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-enterprise-web-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Tue, 07 Mar 2017 18:04:59 GMT
+# Wed, 01 Mar 2017 01:41:47 GMT
 RUN cp /usr/share/java/mysql-connector-java-*.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Tue, 07 Mar 2017 18:05:00 GMT
+# Wed, 01 Mar 2017 01:41:48 GMT
 COPY file:a5eb2bffb2fd9cdddac5e77040b6f670c8dd62aa8af8ea010e4a65f2291ae6ab in /usr/local/tomcat/bin/ 
-# Tue, 07 Mar 2017 18:05:01 GMT
+# Wed, 01 Mar 2017 01:41:48 GMT
 COPY file:1c0736cd925afea380b7be25664cbe8411b510ba081ed0ffd36fc65197d467f4 in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Tue, 07 Mar 2017 18:05:17 GMT
+# Wed, 01 Mar 2017 01:41:49 GMT
 RUN sed -i 's/<id>org.xwiki.enterprise:xwiki-enterprise-web/<id>org.xwiki.enterprise:xwiki-enterprise-docker/'     /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Tue, 07 Mar 2017 18:05:18 GMT
+# Wed, 01 Mar 2017 01:41:50 GMT
 COPY file:0a778607de3de8275de7f66f61dca74e9227d948039095861ca8dd786383d199 in /usr/local/bin/docker-entrypoint.sh 
-# Tue, 07 Mar 2017 18:05:19 GMT
+# Wed, 01 Mar 2017 01:41:50 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Mar 2017 18:05:20 GMT
+# Wed, 01 Mar 2017 01:41:51 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Mar 2017 18:05:20 GMT
+# Wed, 01 Mar 2017 01:41:51 GMT
 CMD ["xwiki"]
 ```
 
@@ -169,27 +169,27 @@ CMD ["xwiki"]
 		Last Modified: Thu, 02 Mar 2017 05:05:54 GMT  
 		Size: 178.3 MB (178301514 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc455d29565de453e1b7c8e4cb19c28308c579aab3ecbe5968b84fbf222e4161`  
-		Last Modified: Tue, 07 Mar 2017 18:16:08 GMT  
-		Size: 238.4 MB (238362800 bytes)  
+	-	`sha256:a00f60c8d9672d1558fadcd8b6057341dda154c388144e69f09d5eb387c28031`  
+		Last Modified: Thu, 02 Mar 2017 05:05:12 GMT  
+		Size: 236.7 MB (236700912 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b49ebeaed4c577f3e879e026e3b6df5cd9221ee7a7e91b8dbfb465d48fd6383d`  
-		Last Modified: Tue, 07 Mar 2017 18:15:33 GMT  
-		Size: 931.5 KB (931506 bytes)  
+	-	`sha256:4efb3eaa1afa85091fefb6a53bafc6a1e5e5f5fa586c6275beeda9e770692f6c`  
+		Last Modified: Thu, 02 Mar 2017 05:04:11 GMT  
+		Size: 931.5 KB (931501 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa0018d722fef8476e19e4721e51e13a4e6c3954dc5863bb59cf466b2c68220b`  
-		Last Modified: Tue, 07 Mar 2017 18:15:34 GMT  
-		Size: 247.0 B  
+	-	`sha256:7098bc1503f6c8bf830b7599e729dba32a11e94f3a7fb3caf69fd6851470c6d6`  
+		Last Modified: Thu, 02 Mar 2017 05:04:10 GMT  
+		Size: 249.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8fcbf5aa5cfb07624c8566c3bf6ae4f228b811e9ad0c8cc7053db9b3d151d7a`  
-		Last Modified: Tue, 07 Mar 2017 18:15:33 GMT  
-		Size: 2.3 KB (2275 bytes)  
+	-	`sha256:3a1c3572b87f71b61c18c5fc1879cd5d5833fd07d3cd7f8b7bfda925e355c6cf`  
+		Last Modified: Thu, 02 Mar 2017 05:04:10 GMT  
+		Size: 2.3 KB (2278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60ce9828878d9aa782a1fad262e2edb016d49bd7e2371fa09ac9d2299add7b28`  
-		Last Modified: Tue, 07 Mar 2017 18:15:33 GMT  
-		Size: 3.3 KB (3251 bytes)  
+	-	`sha256:89d060c429deb85461393e6155882009a1f331cd4d7468e3891ec78240f58bfc`  
+		Last Modified: Thu, 02 Mar 2017 05:04:10 GMT  
+		Size: 3.7 KB (3685 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:296d290bae03b4552757ba884abfec958d0650364125076386cd46636305629d`  
-		Last Modified: Tue, 07 Mar 2017 18:15:33 GMT  
-		Size: 1.5 KB (1531 bytes)  
+	-	`sha256:6c10975cb0d641a88a587899ddb0f72f053bf9404e9086fa4c55b996a6262388`  
+		Last Modified: Thu, 02 Mar 2017 05:04:10 GMT  
+		Size: 1.5 KB (1532 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
