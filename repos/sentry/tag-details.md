@@ -6,11 +6,11 @@
 -	[`sentry:8.13`](#sentry813)
 -	[`sentry:8.13.0-onbuild`](#sentry8130-onbuild)
 -	[`sentry:8.13-onbuild`](#sentry813-onbuild)
--	[`sentry:8.14.0`](#sentry8140)
+-	[`sentry:8.14.1`](#sentry8141)
 -	[`sentry:8.14`](#sentry814)
 -	[`sentry:8`](#sentry8)
 -	[`sentry:latest`](#sentrylatest)
--	[`sentry:8.14.0-onbuild`](#sentry8140-onbuild)
+-	[`sentry:8.14.1-onbuild`](#sentry8141-onbuild)
 -	[`sentry:8.14-onbuild`](#sentry814-onbuild)
 -	[`sentry:8-onbuild`](#sentry8-onbuild)
 -	[`sentry:onbuild`](#sentryonbuild)
@@ -591,22 +591,22 @@ ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `sentry:8.14.0`
+## `sentry:8.14.1`
 
 ```console
-$ docker pull sentry@sha256:0879e943fede73b039db134df219a4fba1d9bd54bfe21549eace4b4e0e6f8cdd
+$ docker pull sentry@sha256:f460a801572b429a1b9f70a90460fda20af39a09899ae8e4ec480c9a155de338
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `sentry:8.14.0` - linux; amd64
+### `sentry:8.14.1` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **184.3 MB (184344487 bytes)**  
+-	Total Size: **184.3 MB (184345837 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b20b0b739254121fdd51bd8ffb55c2f8d112169675c2072bb94e176d964ce1c2`
+-	Image ID: `sha256:fc709630a61e485634f71284b5eb63d26b41ab38268fab97887ae06674cf5bb3`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["run","web"]`
 
@@ -649,27 +649,27 @@ ENV TINI_VERSION=v0.14.0
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini"     && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5     && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini     && rm -r "$GNUPGHOME" /usr/local/bin/tini.asc     && chmod +x /usr/local/bin/tini     && tini -h     && apt-get purge -y --auto-remove wget
 # Thu, 02 Mar 2017 18:43:23 GMT
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends make && rm -rf /var/lib/apt/lists/*     && pip install librabbitmq==1.6.1     && python -c 'import librabbitmq'     && apt-get purge -y --auto-remove make
-# Thu, 02 Mar 2017 18:43:23 GMT
-ENV SENTRY_VERSION=8.14.0
-# Thu, 02 Mar 2017 18:44:56 GMT
+# Tue, 07 Mar 2017 00:19:03 GMT
+ENV SENTRY_VERSION=8.14.1
+# Tue, 07 Mar 2017 00:20:52 GMT
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget g++ && rm -rf /var/lib/apt/lists/*     && mkdir -p /usr/src/sentry     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl"     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys D8749766A66DD714236A932C3B2D400CE5BBCA60     && gpg --batch --verify /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl     && gpg --batch --verify /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && pip install         /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl         /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && sentry --help     && sentry plugins list     && rm -r "$GNUPGHOME" /usr/src/sentry     && apt-get purge -y --auto-remove wget g++
-# Thu, 02 Mar 2017 18:44:56 GMT
+# Tue, 07 Mar 2017 00:20:53 GMT
 ENV SENTRY_CONF=/etc/sentry SENTRY_FILESTORE_DIR=/var/lib/sentry/files
-# Thu, 02 Mar 2017 18:44:57 GMT
+# Tue, 07 Mar 2017 00:20:54 GMT
 RUN mkdir -p $SENTRY_CONF && mkdir -p $SENTRY_FILESTORE_DIR
-# Thu, 02 Mar 2017 18:44:58 GMT
+# Tue, 07 Mar 2017 00:20:54 GMT
 COPY file:6b5c0c264ecaf40e9fe1838ff0926e09a661f89950c3c2b6f1612e948324733d in /etc/sentry/ 
-# Thu, 02 Mar 2017 18:44:58 GMT
+# Tue, 07 Mar 2017 00:20:55 GMT
 COPY file:d1a7cd4cbf7c842d84a135ed530ecf78f6858eaffe7f2d78824cc2906088bdd1 in /etc/sentry/ 
-# Thu, 02 Mar 2017 18:44:59 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 COPY file:f490e4be17b442272f00cb3dac92d70a1d0164325552588b163a33fad4701f18 in /entrypoint.sh 
-# Thu, 02 Mar 2017 18:44:59 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 EXPOSE 9000/tcp
-# Thu, 02 Mar 2017 18:45:00 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 VOLUME [/var/lib/sentry/files]
-# Thu, 02 Mar 2017 18:45:00 GMT
+# Tue, 07 Mar 2017 00:20:57 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 02 Mar 2017 18:45:01 GMT
+# Tue, 07 Mar 2017 00:20:57 GMT
 CMD ["run" "web"]
 ```
 
@@ -706,31 +706,31 @@ CMD ["run" "web"]
 		Last Modified: Thu, 02 Mar 2017 18:46:39 GMT  
 		Size: 2.4 MB (2350956 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ce7ee60c63966d542552cd2b50cbf6f1bc0c9b152f2e96e37d05be998094c0c`  
-		Last Modified: Thu, 02 Mar 2017 18:46:53 GMT  
-		Size: 47.5 MB (47507622 bytes)  
+	-	`sha256:b3433bfc3a9e5a818d5865c6524508d5b9a85fc3ccbf25d64f52d163354b1142`  
+		Last Modified: Tue, 07 Mar 2017 00:22:50 GMT  
+		Size: 47.5 MB (47508978 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df2bc00be584398adb3080645fe4d83778b81eddd3973120d28fdfa1b7d041c8`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 174.0 B  
+	-	`sha256:99b0629b2f1b089956ca26fcbbc25a9d85efbea1378ddc3e4ac3ec176d3702f9`  
+		Last Modified: Tue, 07 Mar 2017 00:22:34 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e16b04b1c808a31ac46c7d55f3fd5cb6b57410281c5280875a1182cf26bfe61a`  
-		Last Modified: Thu, 02 Mar 2017 18:46:37 GMT  
-		Size: 3.4 KB (3402 bytes)  
+	-	`sha256:e541e3baa7f7445a08d79ca9a477273d9a393f2f23e72a0a96ac0df454f23624`  
+		Last Modified: Tue, 07 Mar 2017 00:22:35 GMT  
+		Size: 3.4 KB (3396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff04740818d8912958fbc3514c8a0d97a3a60b4c7b25aef689a8238d8075a908`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 1.1 KB (1060 bytes)  
+	-	`sha256:604b798097260991af15ef2fd47179a49e88d0a84b1ca1af6902e9fffb8431a0`  
+		Last Modified: Tue, 07 Mar 2017 00:22:34 GMT  
+		Size: 1.1 KB (1058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9132c5ff7e70142c197fc247ac70d3c9e1719ccbf2a7f6ab33a499ff68f2b96`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 423.0 B  
+	-	`sha256:b005a0139d2df656fa3ccfda3c47949a9823596f2f782e7e3cfc2816126fc7b5`  
+		Last Modified: Tue, 07 Mar 2017 00:22:35 GMT  
+		Size: 424.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `sentry:8.14`
 
 ```console
-$ docker pull sentry@sha256:0879e943fede73b039db134df219a4fba1d9bd54bfe21549eace4b4e0e6f8cdd
+$ docker pull sentry@sha256:f460a801572b429a1b9f70a90460fda20af39a09899ae8e4ec480c9a155de338
 ```
 
 -	Platforms:
@@ -740,9 +740,9 @@ $ docker pull sentry@sha256:0879e943fede73b039db134df219a4fba1d9bd54bfe21549eace
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **184.3 MB (184344487 bytes)**  
+-	Total Size: **184.3 MB (184345837 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b20b0b739254121fdd51bd8ffb55c2f8d112169675c2072bb94e176d964ce1c2`
+-	Image ID: `sha256:fc709630a61e485634f71284b5eb63d26b41ab38268fab97887ae06674cf5bb3`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["run","web"]`
 
@@ -785,27 +785,27 @@ ENV TINI_VERSION=v0.14.0
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini"     && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5     && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini     && rm -r "$GNUPGHOME" /usr/local/bin/tini.asc     && chmod +x /usr/local/bin/tini     && tini -h     && apt-get purge -y --auto-remove wget
 # Thu, 02 Mar 2017 18:43:23 GMT
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends make && rm -rf /var/lib/apt/lists/*     && pip install librabbitmq==1.6.1     && python -c 'import librabbitmq'     && apt-get purge -y --auto-remove make
-# Thu, 02 Mar 2017 18:43:23 GMT
-ENV SENTRY_VERSION=8.14.0
-# Thu, 02 Mar 2017 18:44:56 GMT
+# Tue, 07 Mar 2017 00:19:03 GMT
+ENV SENTRY_VERSION=8.14.1
+# Tue, 07 Mar 2017 00:20:52 GMT
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget g++ && rm -rf /var/lib/apt/lists/*     && mkdir -p /usr/src/sentry     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl"     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys D8749766A66DD714236A932C3B2D400CE5BBCA60     && gpg --batch --verify /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl     && gpg --batch --verify /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && pip install         /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl         /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && sentry --help     && sentry plugins list     && rm -r "$GNUPGHOME" /usr/src/sentry     && apt-get purge -y --auto-remove wget g++
-# Thu, 02 Mar 2017 18:44:56 GMT
+# Tue, 07 Mar 2017 00:20:53 GMT
 ENV SENTRY_CONF=/etc/sentry SENTRY_FILESTORE_DIR=/var/lib/sentry/files
-# Thu, 02 Mar 2017 18:44:57 GMT
+# Tue, 07 Mar 2017 00:20:54 GMT
 RUN mkdir -p $SENTRY_CONF && mkdir -p $SENTRY_FILESTORE_DIR
-# Thu, 02 Mar 2017 18:44:58 GMT
+# Tue, 07 Mar 2017 00:20:54 GMT
 COPY file:6b5c0c264ecaf40e9fe1838ff0926e09a661f89950c3c2b6f1612e948324733d in /etc/sentry/ 
-# Thu, 02 Mar 2017 18:44:58 GMT
+# Tue, 07 Mar 2017 00:20:55 GMT
 COPY file:d1a7cd4cbf7c842d84a135ed530ecf78f6858eaffe7f2d78824cc2906088bdd1 in /etc/sentry/ 
-# Thu, 02 Mar 2017 18:44:59 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 COPY file:f490e4be17b442272f00cb3dac92d70a1d0164325552588b163a33fad4701f18 in /entrypoint.sh 
-# Thu, 02 Mar 2017 18:44:59 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 EXPOSE 9000/tcp
-# Thu, 02 Mar 2017 18:45:00 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 VOLUME [/var/lib/sentry/files]
-# Thu, 02 Mar 2017 18:45:00 GMT
+# Tue, 07 Mar 2017 00:20:57 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 02 Mar 2017 18:45:01 GMT
+# Tue, 07 Mar 2017 00:20:57 GMT
 CMD ["run" "web"]
 ```
 
@@ -842,31 +842,31 @@ CMD ["run" "web"]
 		Last Modified: Thu, 02 Mar 2017 18:46:39 GMT  
 		Size: 2.4 MB (2350956 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ce7ee60c63966d542552cd2b50cbf6f1bc0c9b152f2e96e37d05be998094c0c`  
-		Last Modified: Thu, 02 Mar 2017 18:46:53 GMT  
-		Size: 47.5 MB (47507622 bytes)  
+	-	`sha256:b3433bfc3a9e5a818d5865c6524508d5b9a85fc3ccbf25d64f52d163354b1142`  
+		Last Modified: Tue, 07 Mar 2017 00:22:50 GMT  
+		Size: 47.5 MB (47508978 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df2bc00be584398adb3080645fe4d83778b81eddd3973120d28fdfa1b7d041c8`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 174.0 B  
+	-	`sha256:99b0629b2f1b089956ca26fcbbc25a9d85efbea1378ddc3e4ac3ec176d3702f9`  
+		Last Modified: Tue, 07 Mar 2017 00:22:34 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e16b04b1c808a31ac46c7d55f3fd5cb6b57410281c5280875a1182cf26bfe61a`  
-		Last Modified: Thu, 02 Mar 2017 18:46:37 GMT  
-		Size: 3.4 KB (3402 bytes)  
+	-	`sha256:e541e3baa7f7445a08d79ca9a477273d9a393f2f23e72a0a96ac0df454f23624`  
+		Last Modified: Tue, 07 Mar 2017 00:22:35 GMT  
+		Size: 3.4 KB (3396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff04740818d8912958fbc3514c8a0d97a3a60b4c7b25aef689a8238d8075a908`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 1.1 KB (1060 bytes)  
+	-	`sha256:604b798097260991af15ef2fd47179a49e88d0a84b1ca1af6902e9fffb8431a0`  
+		Last Modified: Tue, 07 Mar 2017 00:22:34 GMT  
+		Size: 1.1 KB (1058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9132c5ff7e70142c197fc247ac70d3c9e1719ccbf2a7f6ab33a499ff68f2b96`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 423.0 B  
+	-	`sha256:b005a0139d2df656fa3ccfda3c47949a9823596f2f782e7e3cfc2816126fc7b5`  
+		Last Modified: Tue, 07 Mar 2017 00:22:35 GMT  
+		Size: 424.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `sentry:8`
 
 ```console
-$ docker pull sentry@sha256:0879e943fede73b039db134df219a4fba1d9bd54bfe21549eace4b4e0e6f8cdd
+$ docker pull sentry@sha256:f460a801572b429a1b9f70a90460fda20af39a09899ae8e4ec480c9a155de338
 ```
 
 -	Platforms:
@@ -876,9 +876,9 @@ $ docker pull sentry@sha256:0879e943fede73b039db134df219a4fba1d9bd54bfe21549eace
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **184.3 MB (184344487 bytes)**  
+-	Total Size: **184.3 MB (184345837 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b20b0b739254121fdd51bd8ffb55c2f8d112169675c2072bb94e176d964ce1c2`
+-	Image ID: `sha256:fc709630a61e485634f71284b5eb63d26b41ab38268fab97887ae06674cf5bb3`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["run","web"]`
 
@@ -921,27 +921,27 @@ ENV TINI_VERSION=v0.14.0
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini"     && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5     && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini     && rm -r "$GNUPGHOME" /usr/local/bin/tini.asc     && chmod +x /usr/local/bin/tini     && tini -h     && apt-get purge -y --auto-remove wget
 # Thu, 02 Mar 2017 18:43:23 GMT
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends make && rm -rf /var/lib/apt/lists/*     && pip install librabbitmq==1.6.1     && python -c 'import librabbitmq'     && apt-get purge -y --auto-remove make
-# Thu, 02 Mar 2017 18:43:23 GMT
-ENV SENTRY_VERSION=8.14.0
-# Thu, 02 Mar 2017 18:44:56 GMT
+# Tue, 07 Mar 2017 00:19:03 GMT
+ENV SENTRY_VERSION=8.14.1
+# Tue, 07 Mar 2017 00:20:52 GMT
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget g++ && rm -rf /var/lib/apt/lists/*     && mkdir -p /usr/src/sentry     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl"     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys D8749766A66DD714236A932C3B2D400CE5BBCA60     && gpg --batch --verify /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl     && gpg --batch --verify /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && pip install         /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl         /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && sentry --help     && sentry plugins list     && rm -r "$GNUPGHOME" /usr/src/sentry     && apt-get purge -y --auto-remove wget g++
-# Thu, 02 Mar 2017 18:44:56 GMT
+# Tue, 07 Mar 2017 00:20:53 GMT
 ENV SENTRY_CONF=/etc/sentry SENTRY_FILESTORE_DIR=/var/lib/sentry/files
-# Thu, 02 Mar 2017 18:44:57 GMT
+# Tue, 07 Mar 2017 00:20:54 GMT
 RUN mkdir -p $SENTRY_CONF && mkdir -p $SENTRY_FILESTORE_DIR
-# Thu, 02 Mar 2017 18:44:58 GMT
+# Tue, 07 Mar 2017 00:20:54 GMT
 COPY file:6b5c0c264ecaf40e9fe1838ff0926e09a661f89950c3c2b6f1612e948324733d in /etc/sentry/ 
-# Thu, 02 Mar 2017 18:44:58 GMT
+# Tue, 07 Mar 2017 00:20:55 GMT
 COPY file:d1a7cd4cbf7c842d84a135ed530ecf78f6858eaffe7f2d78824cc2906088bdd1 in /etc/sentry/ 
-# Thu, 02 Mar 2017 18:44:59 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 COPY file:f490e4be17b442272f00cb3dac92d70a1d0164325552588b163a33fad4701f18 in /entrypoint.sh 
-# Thu, 02 Mar 2017 18:44:59 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 EXPOSE 9000/tcp
-# Thu, 02 Mar 2017 18:45:00 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 VOLUME [/var/lib/sentry/files]
-# Thu, 02 Mar 2017 18:45:00 GMT
+# Tue, 07 Mar 2017 00:20:57 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 02 Mar 2017 18:45:01 GMT
+# Tue, 07 Mar 2017 00:20:57 GMT
 CMD ["run" "web"]
 ```
 
@@ -978,31 +978,31 @@ CMD ["run" "web"]
 		Last Modified: Thu, 02 Mar 2017 18:46:39 GMT  
 		Size: 2.4 MB (2350956 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ce7ee60c63966d542552cd2b50cbf6f1bc0c9b152f2e96e37d05be998094c0c`  
-		Last Modified: Thu, 02 Mar 2017 18:46:53 GMT  
-		Size: 47.5 MB (47507622 bytes)  
+	-	`sha256:b3433bfc3a9e5a818d5865c6524508d5b9a85fc3ccbf25d64f52d163354b1142`  
+		Last Modified: Tue, 07 Mar 2017 00:22:50 GMT  
+		Size: 47.5 MB (47508978 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df2bc00be584398adb3080645fe4d83778b81eddd3973120d28fdfa1b7d041c8`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 174.0 B  
+	-	`sha256:99b0629b2f1b089956ca26fcbbc25a9d85efbea1378ddc3e4ac3ec176d3702f9`  
+		Last Modified: Tue, 07 Mar 2017 00:22:34 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e16b04b1c808a31ac46c7d55f3fd5cb6b57410281c5280875a1182cf26bfe61a`  
-		Last Modified: Thu, 02 Mar 2017 18:46:37 GMT  
-		Size: 3.4 KB (3402 bytes)  
+	-	`sha256:e541e3baa7f7445a08d79ca9a477273d9a393f2f23e72a0a96ac0df454f23624`  
+		Last Modified: Tue, 07 Mar 2017 00:22:35 GMT  
+		Size: 3.4 KB (3396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff04740818d8912958fbc3514c8a0d97a3a60b4c7b25aef689a8238d8075a908`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 1.1 KB (1060 bytes)  
+	-	`sha256:604b798097260991af15ef2fd47179a49e88d0a84b1ca1af6902e9fffb8431a0`  
+		Last Modified: Tue, 07 Mar 2017 00:22:34 GMT  
+		Size: 1.1 KB (1058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9132c5ff7e70142c197fc247ac70d3c9e1719ccbf2a7f6ab33a499ff68f2b96`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 423.0 B  
+	-	`sha256:b005a0139d2df656fa3ccfda3c47949a9823596f2f782e7e3cfc2816126fc7b5`  
+		Last Modified: Tue, 07 Mar 2017 00:22:35 GMT  
+		Size: 424.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `sentry:latest`
 
 ```console
-$ docker pull sentry@sha256:0879e943fede73b039db134df219a4fba1d9bd54bfe21549eace4b4e0e6f8cdd
+$ docker pull sentry@sha256:f460a801572b429a1b9f70a90460fda20af39a09899ae8e4ec480c9a155de338
 ```
 
 -	Platforms:
@@ -1012,9 +1012,9 @@ $ docker pull sentry@sha256:0879e943fede73b039db134df219a4fba1d9bd54bfe21549eace
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **184.3 MB (184344487 bytes)**  
+-	Total Size: **184.3 MB (184345837 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b20b0b739254121fdd51bd8ffb55c2f8d112169675c2072bb94e176d964ce1c2`
+-	Image ID: `sha256:fc709630a61e485634f71284b5eb63d26b41ab38268fab97887ae06674cf5bb3`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["run","web"]`
 
@@ -1057,27 +1057,27 @@ ENV TINI_VERSION=v0.14.0
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini"     && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5     && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini     && rm -r "$GNUPGHOME" /usr/local/bin/tini.asc     && chmod +x /usr/local/bin/tini     && tini -h     && apt-get purge -y --auto-remove wget
 # Thu, 02 Mar 2017 18:43:23 GMT
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends make && rm -rf /var/lib/apt/lists/*     && pip install librabbitmq==1.6.1     && python -c 'import librabbitmq'     && apt-get purge -y --auto-remove make
-# Thu, 02 Mar 2017 18:43:23 GMT
-ENV SENTRY_VERSION=8.14.0
-# Thu, 02 Mar 2017 18:44:56 GMT
+# Tue, 07 Mar 2017 00:19:03 GMT
+ENV SENTRY_VERSION=8.14.1
+# Tue, 07 Mar 2017 00:20:52 GMT
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget g++ && rm -rf /var/lib/apt/lists/*     && mkdir -p /usr/src/sentry     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl"     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys D8749766A66DD714236A932C3B2D400CE5BBCA60     && gpg --batch --verify /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl     && gpg --batch --verify /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && pip install         /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl         /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && sentry --help     && sentry plugins list     && rm -r "$GNUPGHOME" /usr/src/sentry     && apt-get purge -y --auto-remove wget g++
-# Thu, 02 Mar 2017 18:44:56 GMT
+# Tue, 07 Mar 2017 00:20:53 GMT
 ENV SENTRY_CONF=/etc/sentry SENTRY_FILESTORE_DIR=/var/lib/sentry/files
-# Thu, 02 Mar 2017 18:44:57 GMT
+# Tue, 07 Mar 2017 00:20:54 GMT
 RUN mkdir -p $SENTRY_CONF && mkdir -p $SENTRY_FILESTORE_DIR
-# Thu, 02 Mar 2017 18:44:58 GMT
+# Tue, 07 Mar 2017 00:20:54 GMT
 COPY file:6b5c0c264ecaf40e9fe1838ff0926e09a661f89950c3c2b6f1612e948324733d in /etc/sentry/ 
-# Thu, 02 Mar 2017 18:44:58 GMT
+# Tue, 07 Mar 2017 00:20:55 GMT
 COPY file:d1a7cd4cbf7c842d84a135ed530ecf78f6858eaffe7f2d78824cc2906088bdd1 in /etc/sentry/ 
-# Thu, 02 Mar 2017 18:44:59 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 COPY file:f490e4be17b442272f00cb3dac92d70a1d0164325552588b163a33fad4701f18 in /entrypoint.sh 
-# Thu, 02 Mar 2017 18:44:59 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 EXPOSE 9000/tcp
-# Thu, 02 Mar 2017 18:45:00 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 VOLUME [/var/lib/sentry/files]
-# Thu, 02 Mar 2017 18:45:00 GMT
+# Tue, 07 Mar 2017 00:20:57 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 02 Mar 2017 18:45:01 GMT
+# Tue, 07 Mar 2017 00:20:57 GMT
 CMD ["run" "web"]
 ```
 
@@ -1114,43 +1114,43 @@ CMD ["run" "web"]
 		Last Modified: Thu, 02 Mar 2017 18:46:39 GMT  
 		Size: 2.4 MB (2350956 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ce7ee60c63966d542552cd2b50cbf6f1bc0c9b152f2e96e37d05be998094c0c`  
-		Last Modified: Thu, 02 Mar 2017 18:46:53 GMT  
-		Size: 47.5 MB (47507622 bytes)  
+	-	`sha256:b3433bfc3a9e5a818d5865c6524508d5b9a85fc3ccbf25d64f52d163354b1142`  
+		Last Modified: Tue, 07 Mar 2017 00:22:50 GMT  
+		Size: 47.5 MB (47508978 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df2bc00be584398adb3080645fe4d83778b81eddd3973120d28fdfa1b7d041c8`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 174.0 B  
+	-	`sha256:99b0629b2f1b089956ca26fcbbc25a9d85efbea1378ddc3e4ac3ec176d3702f9`  
+		Last Modified: Tue, 07 Mar 2017 00:22:34 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e16b04b1c808a31ac46c7d55f3fd5cb6b57410281c5280875a1182cf26bfe61a`  
-		Last Modified: Thu, 02 Mar 2017 18:46:37 GMT  
-		Size: 3.4 KB (3402 bytes)  
+	-	`sha256:e541e3baa7f7445a08d79ca9a477273d9a393f2f23e72a0a96ac0df454f23624`  
+		Last Modified: Tue, 07 Mar 2017 00:22:35 GMT  
+		Size: 3.4 KB (3396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff04740818d8912958fbc3514c8a0d97a3a60b4c7b25aef689a8238d8075a908`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 1.1 KB (1060 bytes)  
+	-	`sha256:604b798097260991af15ef2fd47179a49e88d0a84b1ca1af6902e9fffb8431a0`  
+		Last Modified: Tue, 07 Mar 2017 00:22:34 GMT  
+		Size: 1.1 KB (1058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9132c5ff7e70142c197fc247ac70d3c9e1719ccbf2a7f6ab33a499ff68f2b96`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 423.0 B  
+	-	`sha256:b005a0139d2df656fa3ccfda3c47949a9823596f2f782e7e3cfc2816126fc7b5`  
+		Last Modified: Tue, 07 Mar 2017 00:22:35 GMT  
+		Size: 424.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `sentry:8.14.0-onbuild`
+## `sentry:8.14.1-onbuild`
 
 ```console
-$ docker pull sentry@sha256:0d2fb420117c836adda97ae28902f51ac47f15fc79ae76ff5e74586096d46b1a
+$ docker pull sentry@sha256:3847510a5850152b8f9f6f2b40bf8f436b15152ddb26f19cb3426fcda638ca14
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `sentry:8.14.0-onbuild` - linux; amd64
+### `sentry:8.14.1-onbuild` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **184.3 MB (184344618 bytes)**  
+-	Total Size: **184.3 MB (184345969 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ff7119ce02f1a7375774732bf7a15b17932bba1c62492f5e2067fc5c883270c`
+-	Image ID: `sha256:4be70f9b5465385fa198efc42c10dbd1563f707ce45083c3fb3fd4158a41f7d4`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["run","web"]`
 
@@ -1193,39 +1193,39 @@ ENV TINI_VERSION=v0.14.0
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini"     && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5     && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini     && rm -r "$GNUPGHOME" /usr/local/bin/tini.asc     && chmod +x /usr/local/bin/tini     && tini -h     && apt-get purge -y --auto-remove wget
 # Thu, 02 Mar 2017 18:43:23 GMT
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends make && rm -rf /var/lib/apt/lists/*     && pip install librabbitmq==1.6.1     && python -c 'import librabbitmq'     && apt-get purge -y --auto-remove make
-# Thu, 02 Mar 2017 18:43:23 GMT
-ENV SENTRY_VERSION=8.14.0
-# Thu, 02 Mar 2017 18:44:56 GMT
+# Tue, 07 Mar 2017 00:19:03 GMT
+ENV SENTRY_VERSION=8.14.1
+# Tue, 07 Mar 2017 00:20:52 GMT
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget g++ && rm -rf /var/lib/apt/lists/*     && mkdir -p /usr/src/sentry     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl"     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys D8749766A66DD714236A932C3B2D400CE5BBCA60     && gpg --batch --verify /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl     && gpg --batch --verify /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && pip install         /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl         /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && sentry --help     && sentry plugins list     && rm -r "$GNUPGHOME" /usr/src/sentry     && apt-get purge -y --auto-remove wget g++
-# Thu, 02 Mar 2017 18:44:56 GMT
+# Tue, 07 Mar 2017 00:20:53 GMT
 ENV SENTRY_CONF=/etc/sentry SENTRY_FILESTORE_DIR=/var/lib/sentry/files
-# Thu, 02 Mar 2017 18:44:57 GMT
+# Tue, 07 Mar 2017 00:20:54 GMT
 RUN mkdir -p $SENTRY_CONF && mkdir -p $SENTRY_FILESTORE_DIR
-# Thu, 02 Mar 2017 18:44:58 GMT
+# Tue, 07 Mar 2017 00:20:54 GMT
 COPY file:6b5c0c264ecaf40e9fe1838ff0926e09a661f89950c3c2b6f1612e948324733d in /etc/sentry/ 
-# Thu, 02 Mar 2017 18:44:58 GMT
+# Tue, 07 Mar 2017 00:20:55 GMT
 COPY file:d1a7cd4cbf7c842d84a135ed530ecf78f6858eaffe7f2d78824cc2906088bdd1 in /etc/sentry/ 
-# Thu, 02 Mar 2017 18:44:59 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 COPY file:f490e4be17b442272f00cb3dac92d70a1d0164325552588b163a33fad4701f18 in /entrypoint.sh 
-# Thu, 02 Mar 2017 18:44:59 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 EXPOSE 9000/tcp
-# Thu, 02 Mar 2017 18:45:00 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 VOLUME [/var/lib/sentry/files]
-# Thu, 02 Mar 2017 18:45:00 GMT
+# Tue, 07 Mar 2017 00:20:57 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 02 Mar 2017 18:45:01 GMT
+# Tue, 07 Mar 2017 00:20:57 GMT
 CMD ["run" "web"]
-# Thu, 02 Mar 2017 18:45:02 GMT
+# Tue, 07 Mar 2017 00:20:58 GMT
 WORKDIR /usr/src/sentry
-# Thu, 02 Mar 2017 18:45:02 GMT
+# Tue, 07 Mar 2017 00:20:58 GMT
 ENV PYTHONPATH=/usr/src/sentry
-# Thu, 02 Mar 2017 18:45:03 GMT
+# Tue, 07 Mar 2017 00:20:59 GMT
 ONBUILD COPY . /usr/src/sentry
-# Thu, 02 Mar 2017 18:45:03 GMT
+# Tue, 07 Mar 2017 00:20:59 GMT
 ONBUILD RUN if [ -s requirements.txt ]; then pip install -r requirements.txt; fi
-# Thu, 02 Mar 2017 18:45:03 GMT
+# Tue, 07 Mar 2017 00:21:00 GMT
 ONBUILD RUN if [ -s setup.py ]; then pip install -e .; fi
-# Thu, 02 Mar 2017 18:45:04 GMT
+# Tue, 07 Mar 2017 00:21:00 GMT
 ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	&& if [ -s config.yml ]; then cp config.yml $SENTRY_CONF/; fi
 ```
 
@@ -1262,35 +1262,35 @@ ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	
 		Last Modified: Thu, 02 Mar 2017 18:46:39 GMT  
 		Size: 2.4 MB (2350956 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ce7ee60c63966d542552cd2b50cbf6f1bc0c9b152f2e96e37d05be998094c0c`  
-		Last Modified: Thu, 02 Mar 2017 18:46:53 GMT  
-		Size: 47.5 MB (47507622 bytes)  
+	-	`sha256:b3433bfc3a9e5a818d5865c6524508d5b9a85fc3ccbf25d64f52d163354b1142`  
+		Last Modified: Tue, 07 Mar 2017 00:22:50 GMT  
+		Size: 47.5 MB (47508978 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df2bc00be584398adb3080645fe4d83778b81eddd3973120d28fdfa1b7d041c8`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 174.0 B  
+	-	`sha256:99b0629b2f1b089956ca26fcbbc25a9d85efbea1378ddc3e4ac3ec176d3702f9`  
+		Last Modified: Tue, 07 Mar 2017 00:22:34 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e16b04b1c808a31ac46c7d55f3fd5cb6b57410281c5280875a1182cf26bfe61a`  
-		Last Modified: Thu, 02 Mar 2017 18:46:37 GMT  
-		Size: 3.4 KB (3402 bytes)  
+	-	`sha256:e541e3baa7f7445a08d79ca9a477273d9a393f2f23e72a0a96ac0df454f23624`  
+		Last Modified: Tue, 07 Mar 2017 00:22:35 GMT  
+		Size: 3.4 KB (3396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff04740818d8912958fbc3514c8a0d97a3a60b4c7b25aef689a8238d8075a908`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 1.1 KB (1060 bytes)  
+	-	`sha256:604b798097260991af15ef2fd47179a49e88d0a84b1ca1af6902e9fffb8431a0`  
+		Last Modified: Tue, 07 Mar 2017 00:22:34 GMT  
+		Size: 1.1 KB (1058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9132c5ff7e70142c197fc247ac70d3c9e1719ccbf2a7f6ab33a499ff68f2b96`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 423.0 B  
+	-	`sha256:b005a0139d2df656fa3ccfda3c47949a9823596f2f782e7e3cfc2816126fc7b5`  
+		Last Modified: Tue, 07 Mar 2017 00:22:35 GMT  
+		Size: 424.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d01f9b89f82f6eb127459731559a82bcf27e78a34b4a13df0674c8d2f324252f`  
-		Last Modified: Thu, 02 Mar 2017 18:48:15 GMT  
-		Size: 131.0 B  
+	-	`sha256:3977a502b90338dd2c7d918d000fbf84586f26d99f95d2919557b662cf4c3c3a`  
+		Last Modified: Tue, 07 Mar 2017 00:24:06 GMT  
+		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `sentry:8.14-onbuild`
 
 ```console
-$ docker pull sentry@sha256:0d2fb420117c836adda97ae28902f51ac47f15fc79ae76ff5e74586096d46b1a
+$ docker pull sentry@sha256:3847510a5850152b8f9f6f2b40bf8f436b15152ddb26f19cb3426fcda638ca14
 ```
 
 -	Platforms:
@@ -1300,9 +1300,9 @@ $ docker pull sentry@sha256:0d2fb420117c836adda97ae28902f51ac47f15fc79ae76ff5e74
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **184.3 MB (184344618 bytes)**  
+-	Total Size: **184.3 MB (184345969 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ff7119ce02f1a7375774732bf7a15b17932bba1c62492f5e2067fc5c883270c`
+-	Image ID: `sha256:4be70f9b5465385fa198efc42c10dbd1563f707ce45083c3fb3fd4158a41f7d4`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["run","web"]`
 
@@ -1345,39 +1345,39 @@ ENV TINI_VERSION=v0.14.0
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini"     && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5     && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini     && rm -r "$GNUPGHOME" /usr/local/bin/tini.asc     && chmod +x /usr/local/bin/tini     && tini -h     && apt-get purge -y --auto-remove wget
 # Thu, 02 Mar 2017 18:43:23 GMT
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends make && rm -rf /var/lib/apt/lists/*     && pip install librabbitmq==1.6.1     && python -c 'import librabbitmq'     && apt-get purge -y --auto-remove make
-# Thu, 02 Mar 2017 18:43:23 GMT
-ENV SENTRY_VERSION=8.14.0
-# Thu, 02 Mar 2017 18:44:56 GMT
+# Tue, 07 Mar 2017 00:19:03 GMT
+ENV SENTRY_VERSION=8.14.1
+# Tue, 07 Mar 2017 00:20:52 GMT
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget g++ && rm -rf /var/lib/apt/lists/*     && mkdir -p /usr/src/sentry     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl"     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys D8749766A66DD714236A932C3B2D400CE5BBCA60     && gpg --batch --verify /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl     && gpg --batch --verify /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && pip install         /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl         /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && sentry --help     && sentry plugins list     && rm -r "$GNUPGHOME" /usr/src/sentry     && apt-get purge -y --auto-remove wget g++
-# Thu, 02 Mar 2017 18:44:56 GMT
+# Tue, 07 Mar 2017 00:20:53 GMT
 ENV SENTRY_CONF=/etc/sentry SENTRY_FILESTORE_DIR=/var/lib/sentry/files
-# Thu, 02 Mar 2017 18:44:57 GMT
+# Tue, 07 Mar 2017 00:20:54 GMT
 RUN mkdir -p $SENTRY_CONF && mkdir -p $SENTRY_FILESTORE_DIR
-# Thu, 02 Mar 2017 18:44:58 GMT
+# Tue, 07 Mar 2017 00:20:54 GMT
 COPY file:6b5c0c264ecaf40e9fe1838ff0926e09a661f89950c3c2b6f1612e948324733d in /etc/sentry/ 
-# Thu, 02 Mar 2017 18:44:58 GMT
+# Tue, 07 Mar 2017 00:20:55 GMT
 COPY file:d1a7cd4cbf7c842d84a135ed530ecf78f6858eaffe7f2d78824cc2906088bdd1 in /etc/sentry/ 
-# Thu, 02 Mar 2017 18:44:59 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 COPY file:f490e4be17b442272f00cb3dac92d70a1d0164325552588b163a33fad4701f18 in /entrypoint.sh 
-# Thu, 02 Mar 2017 18:44:59 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 EXPOSE 9000/tcp
-# Thu, 02 Mar 2017 18:45:00 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 VOLUME [/var/lib/sentry/files]
-# Thu, 02 Mar 2017 18:45:00 GMT
+# Tue, 07 Mar 2017 00:20:57 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 02 Mar 2017 18:45:01 GMT
+# Tue, 07 Mar 2017 00:20:57 GMT
 CMD ["run" "web"]
-# Thu, 02 Mar 2017 18:45:02 GMT
+# Tue, 07 Mar 2017 00:20:58 GMT
 WORKDIR /usr/src/sentry
-# Thu, 02 Mar 2017 18:45:02 GMT
+# Tue, 07 Mar 2017 00:20:58 GMT
 ENV PYTHONPATH=/usr/src/sentry
-# Thu, 02 Mar 2017 18:45:03 GMT
+# Tue, 07 Mar 2017 00:20:59 GMT
 ONBUILD COPY . /usr/src/sentry
-# Thu, 02 Mar 2017 18:45:03 GMT
+# Tue, 07 Mar 2017 00:20:59 GMT
 ONBUILD RUN if [ -s requirements.txt ]; then pip install -r requirements.txt; fi
-# Thu, 02 Mar 2017 18:45:03 GMT
+# Tue, 07 Mar 2017 00:21:00 GMT
 ONBUILD RUN if [ -s setup.py ]; then pip install -e .; fi
-# Thu, 02 Mar 2017 18:45:04 GMT
+# Tue, 07 Mar 2017 00:21:00 GMT
 ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	&& if [ -s config.yml ]; then cp config.yml $SENTRY_CONF/; fi
 ```
 
@@ -1414,35 +1414,35 @@ ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	
 		Last Modified: Thu, 02 Mar 2017 18:46:39 GMT  
 		Size: 2.4 MB (2350956 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ce7ee60c63966d542552cd2b50cbf6f1bc0c9b152f2e96e37d05be998094c0c`  
-		Last Modified: Thu, 02 Mar 2017 18:46:53 GMT  
-		Size: 47.5 MB (47507622 bytes)  
+	-	`sha256:b3433bfc3a9e5a818d5865c6524508d5b9a85fc3ccbf25d64f52d163354b1142`  
+		Last Modified: Tue, 07 Mar 2017 00:22:50 GMT  
+		Size: 47.5 MB (47508978 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df2bc00be584398adb3080645fe4d83778b81eddd3973120d28fdfa1b7d041c8`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 174.0 B  
+	-	`sha256:99b0629b2f1b089956ca26fcbbc25a9d85efbea1378ddc3e4ac3ec176d3702f9`  
+		Last Modified: Tue, 07 Mar 2017 00:22:34 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e16b04b1c808a31ac46c7d55f3fd5cb6b57410281c5280875a1182cf26bfe61a`  
-		Last Modified: Thu, 02 Mar 2017 18:46:37 GMT  
-		Size: 3.4 KB (3402 bytes)  
+	-	`sha256:e541e3baa7f7445a08d79ca9a477273d9a393f2f23e72a0a96ac0df454f23624`  
+		Last Modified: Tue, 07 Mar 2017 00:22:35 GMT  
+		Size: 3.4 KB (3396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff04740818d8912958fbc3514c8a0d97a3a60b4c7b25aef689a8238d8075a908`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 1.1 KB (1060 bytes)  
+	-	`sha256:604b798097260991af15ef2fd47179a49e88d0a84b1ca1af6902e9fffb8431a0`  
+		Last Modified: Tue, 07 Mar 2017 00:22:34 GMT  
+		Size: 1.1 KB (1058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9132c5ff7e70142c197fc247ac70d3c9e1719ccbf2a7f6ab33a499ff68f2b96`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 423.0 B  
+	-	`sha256:b005a0139d2df656fa3ccfda3c47949a9823596f2f782e7e3cfc2816126fc7b5`  
+		Last Modified: Tue, 07 Mar 2017 00:22:35 GMT  
+		Size: 424.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d01f9b89f82f6eb127459731559a82bcf27e78a34b4a13df0674c8d2f324252f`  
-		Last Modified: Thu, 02 Mar 2017 18:48:15 GMT  
-		Size: 131.0 B  
+	-	`sha256:3977a502b90338dd2c7d918d000fbf84586f26d99f95d2919557b662cf4c3c3a`  
+		Last Modified: Tue, 07 Mar 2017 00:24:06 GMT  
+		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `sentry:8-onbuild`
 
 ```console
-$ docker pull sentry@sha256:0d2fb420117c836adda97ae28902f51ac47f15fc79ae76ff5e74586096d46b1a
+$ docker pull sentry@sha256:3847510a5850152b8f9f6f2b40bf8f436b15152ddb26f19cb3426fcda638ca14
 ```
 
 -	Platforms:
@@ -1452,9 +1452,9 @@ $ docker pull sentry@sha256:0d2fb420117c836adda97ae28902f51ac47f15fc79ae76ff5e74
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **184.3 MB (184344618 bytes)**  
+-	Total Size: **184.3 MB (184345969 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ff7119ce02f1a7375774732bf7a15b17932bba1c62492f5e2067fc5c883270c`
+-	Image ID: `sha256:4be70f9b5465385fa198efc42c10dbd1563f707ce45083c3fb3fd4158a41f7d4`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["run","web"]`
 
@@ -1497,39 +1497,39 @@ ENV TINI_VERSION=v0.14.0
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini"     && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5     && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini     && rm -r "$GNUPGHOME" /usr/local/bin/tini.asc     && chmod +x /usr/local/bin/tini     && tini -h     && apt-get purge -y --auto-remove wget
 # Thu, 02 Mar 2017 18:43:23 GMT
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends make && rm -rf /var/lib/apt/lists/*     && pip install librabbitmq==1.6.1     && python -c 'import librabbitmq'     && apt-get purge -y --auto-remove make
-# Thu, 02 Mar 2017 18:43:23 GMT
-ENV SENTRY_VERSION=8.14.0
-# Thu, 02 Mar 2017 18:44:56 GMT
+# Tue, 07 Mar 2017 00:19:03 GMT
+ENV SENTRY_VERSION=8.14.1
+# Tue, 07 Mar 2017 00:20:52 GMT
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget g++ && rm -rf /var/lib/apt/lists/*     && mkdir -p /usr/src/sentry     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl"     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys D8749766A66DD714236A932C3B2D400CE5BBCA60     && gpg --batch --verify /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl     && gpg --batch --verify /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && pip install         /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl         /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && sentry --help     && sentry plugins list     && rm -r "$GNUPGHOME" /usr/src/sentry     && apt-get purge -y --auto-remove wget g++
-# Thu, 02 Mar 2017 18:44:56 GMT
+# Tue, 07 Mar 2017 00:20:53 GMT
 ENV SENTRY_CONF=/etc/sentry SENTRY_FILESTORE_DIR=/var/lib/sentry/files
-# Thu, 02 Mar 2017 18:44:57 GMT
+# Tue, 07 Mar 2017 00:20:54 GMT
 RUN mkdir -p $SENTRY_CONF && mkdir -p $SENTRY_FILESTORE_DIR
-# Thu, 02 Mar 2017 18:44:58 GMT
+# Tue, 07 Mar 2017 00:20:54 GMT
 COPY file:6b5c0c264ecaf40e9fe1838ff0926e09a661f89950c3c2b6f1612e948324733d in /etc/sentry/ 
-# Thu, 02 Mar 2017 18:44:58 GMT
+# Tue, 07 Mar 2017 00:20:55 GMT
 COPY file:d1a7cd4cbf7c842d84a135ed530ecf78f6858eaffe7f2d78824cc2906088bdd1 in /etc/sentry/ 
-# Thu, 02 Mar 2017 18:44:59 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 COPY file:f490e4be17b442272f00cb3dac92d70a1d0164325552588b163a33fad4701f18 in /entrypoint.sh 
-# Thu, 02 Mar 2017 18:44:59 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 EXPOSE 9000/tcp
-# Thu, 02 Mar 2017 18:45:00 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 VOLUME [/var/lib/sentry/files]
-# Thu, 02 Mar 2017 18:45:00 GMT
+# Tue, 07 Mar 2017 00:20:57 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 02 Mar 2017 18:45:01 GMT
+# Tue, 07 Mar 2017 00:20:57 GMT
 CMD ["run" "web"]
-# Thu, 02 Mar 2017 18:45:02 GMT
+# Tue, 07 Mar 2017 00:20:58 GMT
 WORKDIR /usr/src/sentry
-# Thu, 02 Mar 2017 18:45:02 GMT
+# Tue, 07 Mar 2017 00:20:58 GMT
 ENV PYTHONPATH=/usr/src/sentry
-# Thu, 02 Mar 2017 18:45:03 GMT
+# Tue, 07 Mar 2017 00:20:59 GMT
 ONBUILD COPY . /usr/src/sentry
-# Thu, 02 Mar 2017 18:45:03 GMT
+# Tue, 07 Mar 2017 00:20:59 GMT
 ONBUILD RUN if [ -s requirements.txt ]; then pip install -r requirements.txt; fi
-# Thu, 02 Mar 2017 18:45:03 GMT
+# Tue, 07 Mar 2017 00:21:00 GMT
 ONBUILD RUN if [ -s setup.py ]; then pip install -e .; fi
-# Thu, 02 Mar 2017 18:45:04 GMT
+# Tue, 07 Mar 2017 00:21:00 GMT
 ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	&& if [ -s config.yml ]; then cp config.yml $SENTRY_CONF/; fi
 ```
 
@@ -1566,35 +1566,35 @@ ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	
 		Last Modified: Thu, 02 Mar 2017 18:46:39 GMT  
 		Size: 2.4 MB (2350956 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ce7ee60c63966d542552cd2b50cbf6f1bc0c9b152f2e96e37d05be998094c0c`  
-		Last Modified: Thu, 02 Mar 2017 18:46:53 GMT  
-		Size: 47.5 MB (47507622 bytes)  
+	-	`sha256:b3433bfc3a9e5a818d5865c6524508d5b9a85fc3ccbf25d64f52d163354b1142`  
+		Last Modified: Tue, 07 Mar 2017 00:22:50 GMT  
+		Size: 47.5 MB (47508978 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df2bc00be584398adb3080645fe4d83778b81eddd3973120d28fdfa1b7d041c8`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 174.0 B  
+	-	`sha256:99b0629b2f1b089956ca26fcbbc25a9d85efbea1378ddc3e4ac3ec176d3702f9`  
+		Last Modified: Tue, 07 Mar 2017 00:22:34 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e16b04b1c808a31ac46c7d55f3fd5cb6b57410281c5280875a1182cf26bfe61a`  
-		Last Modified: Thu, 02 Mar 2017 18:46:37 GMT  
-		Size: 3.4 KB (3402 bytes)  
+	-	`sha256:e541e3baa7f7445a08d79ca9a477273d9a393f2f23e72a0a96ac0df454f23624`  
+		Last Modified: Tue, 07 Mar 2017 00:22:35 GMT  
+		Size: 3.4 KB (3396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff04740818d8912958fbc3514c8a0d97a3a60b4c7b25aef689a8238d8075a908`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 1.1 KB (1060 bytes)  
+	-	`sha256:604b798097260991af15ef2fd47179a49e88d0a84b1ca1af6902e9fffb8431a0`  
+		Last Modified: Tue, 07 Mar 2017 00:22:34 GMT  
+		Size: 1.1 KB (1058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9132c5ff7e70142c197fc247ac70d3c9e1719ccbf2a7f6ab33a499ff68f2b96`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 423.0 B  
+	-	`sha256:b005a0139d2df656fa3ccfda3c47949a9823596f2f782e7e3cfc2816126fc7b5`  
+		Last Modified: Tue, 07 Mar 2017 00:22:35 GMT  
+		Size: 424.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d01f9b89f82f6eb127459731559a82bcf27e78a34b4a13df0674c8d2f324252f`  
-		Last Modified: Thu, 02 Mar 2017 18:48:15 GMT  
-		Size: 131.0 B  
+	-	`sha256:3977a502b90338dd2c7d918d000fbf84586f26d99f95d2919557b662cf4c3c3a`  
+		Last Modified: Tue, 07 Mar 2017 00:24:06 GMT  
+		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `sentry:onbuild`
 
 ```console
-$ docker pull sentry@sha256:0d2fb420117c836adda97ae28902f51ac47f15fc79ae76ff5e74586096d46b1a
+$ docker pull sentry@sha256:3847510a5850152b8f9f6f2b40bf8f436b15152ddb26f19cb3426fcda638ca14
 ```
 
 -	Platforms:
@@ -1604,9 +1604,9 @@ $ docker pull sentry@sha256:0d2fb420117c836adda97ae28902f51ac47f15fc79ae76ff5e74
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **184.3 MB (184344618 bytes)**  
+-	Total Size: **184.3 MB (184345969 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ff7119ce02f1a7375774732bf7a15b17932bba1c62492f5e2067fc5c883270c`
+-	Image ID: `sha256:4be70f9b5465385fa198efc42c10dbd1563f707ce45083c3fb3fd4158a41f7d4`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["run","web"]`
 
@@ -1649,39 +1649,39 @@ ENV TINI_VERSION=v0.14.0
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini"     && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5     && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini     && rm -r "$GNUPGHOME" /usr/local/bin/tini.asc     && chmod +x /usr/local/bin/tini     && tini -h     && apt-get purge -y --auto-remove wget
 # Thu, 02 Mar 2017 18:43:23 GMT
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends make && rm -rf /var/lib/apt/lists/*     && pip install librabbitmq==1.6.1     && python -c 'import librabbitmq'     && apt-get purge -y --auto-remove make
-# Thu, 02 Mar 2017 18:43:23 GMT
-ENV SENTRY_VERSION=8.14.0
-# Thu, 02 Mar 2017 18:44:56 GMT
+# Tue, 07 Mar 2017 00:19:03 GMT
+ENV SENTRY_VERSION=8.14.1
+# Tue, 07 Mar 2017 00:20:52 GMT
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget g++ && rm -rf /var/lib/apt/lists/*     && mkdir -p /usr/src/sentry     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl"     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys D8749766A66DD714236A932C3B2D400CE5BBCA60     && gpg --batch --verify /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl     && gpg --batch --verify /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && pip install         /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl         /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && sentry --help     && sentry plugins list     && rm -r "$GNUPGHOME" /usr/src/sentry     && apt-get purge -y --auto-remove wget g++
-# Thu, 02 Mar 2017 18:44:56 GMT
+# Tue, 07 Mar 2017 00:20:53 GMT
 ENV SENTRY_CONF=/etc/sentry SENTRY_FILESTORE_DIR=/var/lib/sentry/files
-# Thu, 02 Mar 2017 18:44:57 GMT
+# Tue, 07 Mar 2017 00:20:54 GMT
 RUN mkdir -p $SENTRY_CONF && mkdir -p $SENTRY_FILESTORE_DIR
-# Thu, 02 Mar 2017 18:44:58 GMT
+# Tue, 07 Mar 2017 00:20:54 GMT
 COPY file:6b5c0c264ecaf40e9fe1838ff0926e09a661f89950c3c2b6f1612e948324733d in /etc/sentry/ 
-# Thu, 02 Mar 2017 18:44:58 GMT
+# Tue, 07 Mar 2017 00:20:55 GMT
 COPY file:d1a7cd4cbf7c842d84a135ed530ecf78f6858eaffe7f2d78824cc2906088bdd1 in /etc/sentry/ 
-# Thu, 02 Mar 2017 18:44:59 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 COPY file:f490e4be17b442272f00cb3dac92d70a1d0164325552588b163a33fad4701f18 in /entrypoint.sh 
-# Thu, 02 Mar 2017 18:44:59 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 EXPOSE 9000/tcp
-# Thu, 02 Mar 2017 18:45:00 GMT
+# Tue, 07 Mar 2017 00:20:56 GMT
 VOLUME [/var/lib/sentry/files]
-# Thu, 02 Mar 2017 18:45:00 GMT
+# Tue, 07 Mar 2017 00:20:57 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Thu, 02 Mar 2017 18:45:01 GMT
+# Tue, 07 Mar 2017 00:20:57 GMT
 CMD ["run" "web"]
-# Thu, 02 Mar 2017 18:45:02 GMT
+# Tue, 07 Mar 2017 00:20:58 GMT
 WORKDIR /usr/src/sentry
-# Thu, 02 Mar 2017 18:45:02 GMT
+# Tue, 07 Mar 2017 00:20:58 GMT
 ENV PYTHONPATH=/usr/src/sentry
-# Thu, 02 Mar 2017 18:45:03 GMT
+# Tue, 07 Mar 2017 00:20:59 GMT
 ONBUILD COPY . /usr/src/sentry
-# Thu, 02 Mar 2017 18:45:03 GMT
+# Tue, 07 Mar 2017 00:20:59 GMT
 ONBUILD RUN if [ -s requirements.txt ]; then pip install -r requirements.txt; fi
-# Thu, 02 Mar 2017 18:45:03 GMT
+# Tue, 07 Mar 2017 00:21:00 GMT
 ONBUILD RUN if [ -s setup.py ]; then pip install -e .; fi
-# Thu, 02 Mar 2017 18:45:04 GMT
+# Tue, 07 Mar 2017 00:21:00 GMT
 ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	&& if [ -s config.yml ]; then cp config.yml $SENTRY_CONF/; fi
 ```
 
@@ -1718,27 +1718,27 @@ ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	
 		Last Modified: Thu, 02 Mar 2017 18:46:39 GMT  
 		Size: 2.4 MB (2350956 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ce7ee60c63966d542552cd2b50cbf6f1bc0c9b152f2e96e37d05be998094c0c`  
-		Last Modified: Thu, 02 Mar 2017 18:46:53 GMT  
-		Size: 47.5 MB (47507622 bytes)  
+	-	`sha256:b3433bfc3a9e5a818d5865c6524508d5b9a85fc3ccbf25d64f52d163354b1142`  
+		Last Modified: Tue, 07 Mar 2017 00:22:50 GMT  
+		Size: 47.5 MB (47508978 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df2bc00be584398adb3080645fe4d83778b81eddd3973120d28fdfa1b7d041c8`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 174.0 B  
+	-	`sha256:99b0629b2f1b089956ca26fcbbc25a9d85efbea1378ddc3e4ac3ec176d3702f9`  
+		Last Modified: Tue, 07 Mar 2017 00:22:34 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e16b04b1c808a31ac46c7d55f3fd5cb6b57410281c5280875a1182cf26bfe61a`  
-		Last Modified: Thu, 02 Mar 2017 18:46:37 GMT  
-		Size: 3.4 KB (3402 bytes)  
+	-	`sha256:e541e3baa7f7445a08d79ca9a477273d9a393f2f23e72a0a96ac0df454f23624`  
+		Last Modified: Tue, 07 Mar 2017 00:22:35 GMT  
+		Size: 3.4 KB (3396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff04740818d8912958fbc3514c8a0d97a3a60b4c7b25aef689a8238d8075a908`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 1.1 KB (1060 bytes)  
+	-	`sha256:604b798097260991af15ef2fd47179a49e88d0a84b1ca1af6902e9fffb8431a0`  
+		Last Modified: Tue, 07 Mar 2017 00:22:34 GMT  
+		Size: 1.1 KB (1058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9132c5ff7e70142c197fc247ac70d3c9e1719ccbf2a7f6ab33a499ff68f2b96`  
-		Last Modified: Thu, 02 Mar 2017 18:46:36 GMT  
-		Size: 423.0 B  
+	-	`sha256:b005a0139d2df656fa3ccfda3c47949a9823596f2f782e7e3cfc2816126fc7b5`  
+		Last Modified: Tue, 07 Mar 2017 00:22:35 GMT  
+		Size: 424.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d01f9b89f82f6eb127459731559a82bcf27e78a34b4a13df0674c8d2f324252f`  
-		Last Modified: Thu, 02 Mar 2017 18:48:15 GMT  
-		Size: 131.0 B  
+	-	`sha256:3977a502b90338dd2c7d918d000fbf84586f26d99f95d2919557b662cf4c3c3a`  
+		Last Modified: Tue, 07 Mar 2017 00:24:06 GMT  
+		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
