@@ -1,15 +1,15 @@
-# `julia:0.5.0`
+# `julia:0.5.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3b32d3749ae31ca27417660031a38e9e8c000cb0cc22043caed5d9bfae5c4f56`
-- Created: `2017-02-28T05:47:11.375832866Z`
+- Image ID: `sha256:20dcea89e847975954d589350ffaa00de08a1391a7a7928de15d49d3f028f733`
+- Created: `2017-03-07T01:02:15.791746161Z`
 - Arch: `linux`/`amd64`
 - Command: `["julia"]`
 - Environment:
   - `PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JULIA_PATH=/usr/local/julia`
-  - `JULIA_VERSION=0.5.0`
+  - `JULIA_VERSION=0.5.1`
 
 ## `dpkg` (`.deb`-based packages)
 
