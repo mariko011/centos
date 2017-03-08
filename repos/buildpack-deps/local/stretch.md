@@ -578,19 +578,8 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris coreutils=8.26-2
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.26-2.dsc' coreutils_8.26-2.dsc 1980 SHA256:a2e4342548262ac1b11e4875f7a636b27a76228117cc28bf61235011e55f790c
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.26.orig.tar.xz' coreutils_8.26.orig.tar.xz 5810244 SHA256:155e94d748f8e2bc327c66e0cbebdb8d6ab265d2f37c3c928f7bf6c3beba9a8e
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.26-2.debian.tar.xz' coreutils_8.26-2.debian.tar.xz 22092 SHA256:8c24098fc4380040983bdd38d3f36b8dcfe49a5c0b6f123202da88d1d066060a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/coreutils/8.26-2/
-- https://sources.debian.net/src/coreutils/8.26-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cups=2.2.1-8`
 
@@ -1534,19 +1523,8 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.1.18-3
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.18-3.dsc' gnupg2_2.1.18-3.dsc 3148 SHA256:72486568d829bb73ac35d4c1baa531170ec21972f295dd8b424f3ab15a9a5f3c
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.18.orig.tar.bz2' gnupg2_2.1.18.orig.tar.bz2 6308666 SHA256:d04c6fab7e5562ce4b915b22020e34d4c1a256847690cf149842264fc7cef994
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.1.18-3.debian.tar.bz2' gnupg2_2.1.18-3.debian.tar.bz2 58221 SHA256:7fc3143d44d8091b2053d2c71b1e924bfcd67018beddd0619bdb93344864961d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnupg2/2.1.18-3/
-- https://sources.debian.net/src/gnupg2/2.1.18-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls28=3.5.8-3`
 
@@ -3605,19 +3583,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.9.6-3
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.6-3.dsc' linux_4.9.6-3.dsc 82202 SHA256:21e9af396a36cf79149bd107607980ce81b5bc9f3fe07004f971d928cba7980a
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.6.orig.tar.xz' linux_4.9.6.orig.tar.xz 94436304 SHA256:7e7a40d778af639dc7736af9af70691d587e20d333541cafe0e3372b2af64290
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.6-3.debian.tar.xz' linux_4.9.6-3.debian.tar.xz 2761404 SHA256:cc124413acd6458b219d727559cea7635c1ef4c13b95f015c9083e07a48d97a3
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/4.9.6-3/
-- https://sources.debian.net/src/linux/4.9.6-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=9.20161125`
 

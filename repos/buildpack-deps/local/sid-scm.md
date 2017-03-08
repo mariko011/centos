@@ -605,18 +605,8 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.22
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.22.dsc' dpkg_1.18.22.dsc 2032 SHA256:2e3e0689b80273551b2c86b7c9f688b45f8b8da67956cd849d60ceb0e6bc7aca
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.22.tar.xz' dpkg_1.18.22.tar.xz 4520088 SHA256:eaf2ae88eae71f164167f75e9229af87fa9451bc58966fdec40db265b146ad69
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dpkg/1.18.22/
-- https://sources.debian.net/src/dpkg/1.18.22/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `e2fsprogs=1.43.4-2`
 
@@ -975,20 +965,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.8-3
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8-3.dsc' gnutls28_3.5.8-3.dsc 3258 SHA256:1dcfcfebc6a833ac46e6bd5cde7dcf0873c14a4211228d5e96b36a65e0307e1e
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz' gnutls28_3.5.8.orig.tar.xz 7264448 SHA256:0e97f243ae72b70307d684b84c7fe679385aa7a7a0e37e5be810193dcc17d4ff
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz.asc' gnutls28_3.5.8.orig.tar.xz.asc 287 SHA256:417da9db564a841128edb2dc2c98465a5749541f7d71492cb7c4905a0bfeac82
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8-3.debian.tar.xz' gnutls28_3.5.8-3.debian.tar.xz 101548 SHA256:87f571ea1d89ecaa384510698e6b9d8fa4d71d08435101ae945fd7357cfa4ed2
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnutls28/3.5.8-3/
-- https://sources.debian.net/src/gnutls28/3.5.8-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.27-2`
 
@@ -1945,19 +1923,8 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.4p1-6
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.4p1-6.dsc' openssh_7.4p1-6.dsc 2956 SHA256:be46b6c59560738d5c0dee703f77f6ed426eed0045bd5b66bcc573011c114737
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.4p1.orig.tar.gz' openssh_7.4p1.orig.tar.gz 1511780 SHA256:1b1fc4a14e2024293181924ed24872e6f2e06293f3e8926a376b8aec481f19d1
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.4p1-6.debian.tar.xz' openssh_7.4p1-6.debian.tar.xz 158280 SHA256:7dd11fd679db97f01f1bf88d269ac0df11d1ff893c85704ee53c8ea862b86c97
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssh/1:7.4p1-6/
-- https://sources.debian.net/src/openssh/1:7.4p1-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssl1.0=1.0.2k-1`
 

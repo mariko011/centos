@@ -564,14 +564,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`, `/usr/share/doc/l
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.3.0-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-6/gcc-6_6.3.0-2ubuntu1.dsc' gcc-6_6.3.0-2ubuntu1.dsc 31021 SHA256:85f867ae92e2f9efe1282fa37eb2b1fc632301c7ce4a65094bd7f61da245bcd0
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-6/gcc-6_6.3.0.orig.tar.gz' gcc-6_6.3.0.orig.tar.gz 77161407 SHA256:067c2840b1a52ebab9232fa3c70f1422ff3f7b1be98ffb335807c9817491817e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-6/gcc-6_6.3.0-2ubuntu1.diff.gz' gcc-6_6.3.0-2ubuntu1.diff.gz 1513948 SHA256:476eb1bb6272196123700320462339b2231ccd3a61d7641166d000cf0ae9972b
-```
 
 ### `dpkg` source package: `gdbm=1.8.3-14`
 
@@ -828,13 +822,8 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.46
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.46.dsc' init-system-helpers_1.46.dsc 1912 SHA256:93c5998f5da7923ee30c8f706bac2c79d7bf831ff47386789f244fce93ffc96e
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.46.tar.xz' init-system-helpers_1.46.tar.xz 42952 SHA256:f45c9736e1047089f60c316ab8ab978ea75b2903e0f3cf74407711ae77e8871d
-```
 
 ### `dpkg` source package: `keyutils=1.5.9-9ubuntu1`
 
@@ -1370,14 +1359,8 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.4p1-6
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.4p1-6.dsc' openssh_7.4p1-6.dsc 2956 SHA256:be46b6c59560738d5c0dee703f77f6ed426eed0045bd5b66bcc573011c114737
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.4p1.orig.tar.gz' openssh_7.4p1.orig.tar.gz 1511780 SHA256:1b1fc4a14e2024293181924ed24872e6f2e06293f3e8926a376b8aec481f19d1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.4p1-6.debian.tar.xz' openssh_7.4p1-6.debian.tar.xz 158280 SHA256:7dd11fd679db97f01f1bf88d269ac0df11d1ff893c85704ee53c8ea862b86c97
-```
 
 ### `dpkg` source package: `openssl=1.0.2g-1ubuntu11`
 

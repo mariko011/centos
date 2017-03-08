@@ -362,14 +362,8 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris binutils=2.27.90.20170114-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.27.90.20170114-1ubuntu1.dsc' binutils_2.27.90.20170114-1ubuntu1.dsc 4537 SHA256:571b981f2a337a5824c0043097fca21634f6f807b21f5e2fb21a8c9930dd1a53
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.27.90.20170114.orig.tar.gz' binutils_2.27.90.20170114.orig.tar.gz 33188492 SHA256:0351f329f2ac36cb59fdf8cc1939219fd9d5f7dc26158cfc9b053d095cf0cfe6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.27.90.20170114-1ubuntu1.diff.gz' binutils_2.27.90.20170114-1ubuntu1.diff.gz 100642 SHA256:e32ed6567ec46d48ae0ec02aa690933f19c13f59ab26b0d95d138990cc7e52a6
-```
 
 ### `dpkg` source package: `bzip2=1.0.6-8build1`
 
@@ -1025,14 +1019,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp-6/copyright`, `/usr/share/doc/g++-6/
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.3.0-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-6/gcc-6_6.3.0-2ubuntu1.dsc' gcc-6_6.3.0-2ubuntu1.dsc 31021 SHA256:85f867ae92e2f9efe1282fa37eb2b1fc632301c7ce4a65094bd7f61da245bcd0
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-6/gcc-6_6.3.0.orig.tar.gz' gcc-6_6.3.0.orig.tar.gz 77161407 SHA256:067c2840b1a52ebab9232fa3c70f1422ff3f7b1be98ffb335807c9817491817e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-6/gcc-6_6.3.0-2ubuntu1.diff.gz' gcc-6_6.3.0-2ubuntu1.diff.gz 1513948 SHA256:476eb1bb6272196123700320462339b2231ccd3a61d7641166d000cf0ae9972b
-```
 
 ### `dpkg` source package: `gcc-defaults=1.164ubuntu1`
 
@@ -1661,13 +1649,8 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.46
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.46.dsc' init-system-helpers_1.46.dsc 1912 SHA256:93c5998f5da7923ee30c8f706bac2c79d7bf831ff47386789f244fce93ffc96e
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.46.tar.xz' init-system-helpers_1.46.tar.xz 42952 SHA256:f45c9736e1047089f60c316ab8ab978ea75b2903e0f3cf74407711ae77e8871d
-```
 
 ### `dpkg` source package: `isl=0.18-1`
 
@@ -3256,14 +3239,8 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.4p1-6
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.4p1-6.dsc' openssh_7.4p1-6.dsc 2956 SHA256:be46b6c59560738d5c0dee703f77f6ed426eed0045bd5b66bcc573011c114737
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.4p1.orig.tar.gz' openssh_7.4p1.orig.tar.gz 1511780 SHA256:1b1fc4a14e2024293181924ed24872e6f2e06293f3e8926a376b8aec481f19d1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.4p1-6.debian.tar.xz' openssh_7.4p1-6.debian.tar.xz 158280 SHA256:7dd11fd679db97f01f1bf88d269ac0df11d1ff893c85704ee53c8ea862b86c97
-```
 
 ### `dpkg` source package: `openssl=1.0.2g-1ubuntu11`
 
@@ -3345,14 +3322,8 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `LGPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.40.3-3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.40.3-3.dsc' pango1.0_1.40.3-3.dsc 3201 SHA256:2dcddc7c25a0a7c83e4636a6aa68eb6c27b99d02c348ca6fd7a94502e73b9f7c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.40.3.orig.tar.xz' pango1.0_1.40.3.orig.tar.xz 1061044 SHA256:abba8b5ce728520c3a0f1535eab19eac3c14aeef7faa5aded90017ceac2711d3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.40.3-3.debian.tar.xz' pango1.0_1.40.3-3.debian.tar.xz 27372 SHA256:aca66bb3069d6a57d44d45a4986968c2a7ac8e43e8e84c32d66f26a1bd1c2ff0
-```
 
 ### `dpkg` source package: `patch=2.7.5-1`
 
