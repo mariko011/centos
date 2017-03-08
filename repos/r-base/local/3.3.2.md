@@ -457,19 +457,8 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris coreutils=8.26-2
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.26-2.dsc' coreutils_8.26-2.dsc 1980 SHA256:a2e4342548262ac1b11e4875f7a636b27a76228117cc28bf61235011e55f790c
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.26.orig.tar.xz' coreutils_8.26.orig.tar.xz 5810244 SHA256:155e94d748f8e2bc327c66e0cbebdb8d6ab265d2f37c3c928f7bf6c3beba9a8e
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_8.26-2.debian.tar.xz' coreutils_8.26-2.debian.tar.xz 22092 SHA256:8c24098fc4380040983bdd38d3f36b8dcfe49a5c0b6f123202da88d1d066060a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/coreutils/8.26-2/
-- https://sources.debian.net/src/coreutils/8.26-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `curl=7.52.1-3`
 
@@ -2397,10 +2386,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=4.9.13-1
-'http://http.debian.net/debian/pool/main/l/linux/linux_4.9.13-1.dsc' linux_4.9.13-1.dsc 82201 SHA256:3e50ec7a1899a589bfdbb17bdc9269f37972470c2e36082caf12fee9a91808aa
-'http://http.debian.net/debian/pool/main/l/linux/linux_4.9.13.orig.tar.xz' linux_4.9.13.orig.tar.xz 94439656 SHA256:915d7698fedd588ee21d81fc996552acb79a13dad056549f268fbc8fddf17c51
-'http://http.debian.net/debian/pool/main/l/linux/linux_4.9.13-1.debian.tar.xz' linux_4.9.13-1.debian.tar.xz 850316 SHA256:8ba4033a45d02f2dbba0ddfb783fcec510dfffd4b392138eb72eb3526a074537
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.13-1.dsc' linux_4.9.13-1.dsc 82201 SHA256:3e50ec7a1899a589bfdbb17bdc9269f37972470c2e36082caf12fee9a91808aa
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.13.orig.tar.xz' linux_4.9.13.orig.tar.xz 94439656 SHA256:915d7698fedd588ee21d81fc996552acb79a13dad056549f268fbc8fddf17c51
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.13-1.debian.tar.xz' linux_4.9.13-1.debian.tar.xz 850316 SHA256:8ba4033a45d02f2dbba0ddfb783fcec510dfffd4b392138eb72eb3526a074537
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/linux/4.9.13-1/
+- https://sources.debian.net/src/linux/4.9.13-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `littler=0.3.2-1`
 
@@ -3052,14 +3046,8 @@ Licenses: (parsed from: `/usr/share/doc/r-base/copyright`, `/usr/share/doc/r-bas
 - `LGPL-2.1`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris r-base=3.3.2.20170227-1
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_3.3.2.20170227-1.dsc' r-base_3.3.2.20170227-1.dsc 2872 SHA256:7c519e3a24f9b43120d7b40c3f858b4203a2aed0e0555a8f6f377d52412f1c2a
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_3.3.2.20170227.orig.tar.gz' r-base_3.3.2.20170227.orig.tar.gz 29808632 SHA256:5fa3c924daaf166d432cefb11b1177c75c438dd671398bd8543adf6850c5224f
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_3.3.2.20170227-1.diff.gz' r-base_3.3.2.20170227-1.diff.gz 105910 SHA256:25123088955259d355d4c57e9d2c46e05df51ca8a103102a2834533d675de340
-```
 
 ### `dpkg` source package: `r-cran-class=7.3-14-1`
 
