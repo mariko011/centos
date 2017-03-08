@@ -424,18 +424,8 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.22
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.22.dsc' dpkg_1.18.22.dsc 2032 SHA256:2e3e0689b80273551b2c86b7c9f688b45f8b8da67956cd849d60ceb0e6bc7aca
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.22.tar.xz' dpkg_1.18.22.tar.xz 4520088 SHA256:eaf2ae88eae71f164167f75e9229af87fa9451bc58966fdec40db265b146ad69
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dpkg/1.18.22/
-- https://sources.debian.net/src/dpkg/1.18.22/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `e2fsprogs=1.43.4-2`
 
