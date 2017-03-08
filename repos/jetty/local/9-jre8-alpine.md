@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7969d40aceed52b3d3b2eba6057e6cd798353cfda3c0be398f83d934f0b212be`
-- Created: `2017-03-04T00:10:49.279762395Z`
+- Image ID: `sha256:f20e73a77d68982b6c0e9ebb4a129982f54ff7b056008e145c19de317b578dac`
+- Created: `2017-03-07T18:32:52.575807743Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["java","-jar","/usr/local/jetty/start.jar"]`
@@ -11,8 +11,8 @@
   - `PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre`
-  - `JAVA_VERSION=8u111`
-  - `JAVA_ALPINE_VERSION=8.111.14-r0`
+  - `JAVA_VERSION=8u121`
+  - `JAVA_ALPINE_VERSION=8.121.13-r0`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_VERSION=9.4.2.v20170220`
   - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.2.v20170220/jetty-home-9.4.2.v20170220.tar.gz`
