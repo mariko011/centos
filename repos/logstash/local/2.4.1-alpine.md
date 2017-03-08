@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d18060301ee225b5b59afd90e48b951db22fd6e34e36c9772d6ff237fa756be3`
-- Created: `2017-03-04T00:12:32.271767412Z`
+- Image ID: `sha256:8eb207a6e63b27ffd9ccc0fb16ef88bb6aec08b8138583998218a9abea07ef2b`
+- Created: `2017-03-07T18:57:30.464025719Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["-e",""]`
@@ -11,8 +11,8 @@
   - `PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre`
-  - `JAVA_VERSION=8u111`
-  - `JAVA_ALPINE_VERSION=8.111.14-r0`
+  - `JAVA_VERSION=8u121`
+  - `JAVA_ALPINE_VERSION=8.121.13-r0`
   - `GPG_KEY=46095ACC8548582C1A2699A9D27D666CD88E42B4`
   - `LOGSTASH_PATH=/opt/logstash/bin`
   - `LOGSTASH_VERSION=2.4.1`
