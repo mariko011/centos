@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:52771186280afd3ef9fbba60a794aa219f178cba362f16ba9683144fe775c82b`
-- Created: `2017-03-03T23:47:23.371820452Z`
+- Image ID: `sha256:55a3da03fc75c80afac96258f52932292cee5bd1c835c9182ad5058a7cac802c`
+- Created: `2017-03-07T20:41:26.503773729Z`
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
 - Environment:
   - `PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre`
-  - `JAVA_VERSION=8u111`
-  - `JAVA_ALPINE_VERSION=8.111.14-r0`
+  - `JAVA_VERSION=8u121`
+  - `JAVA_ALPINE_VERSION=8.121.13-r0`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
