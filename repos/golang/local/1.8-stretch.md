@@ -1751,19 +1751,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.9.6-3
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.6-3.dsc' linux_4.9.6-3.dsc 82202 SHA256:21e9af396a36cf79149bd107607980ce81b5bc9f3fe07004f971d928cba7980a
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.6.orig.tar.xz' linux_4.9.6.orig.tar.xz 94436304 SHA256:7e7a40d778af639dc7736af9af70691d587e20d333541cafe0e3372b2af64290
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.6-3.debian.tar.xz' linux_4.9.6-3.debian.tar.xz 2761404 SHA256:cc124413acd6458b219d727559cea7635c1ef4c13b95f015c9083e07a48d97a3
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/4.9.6-3/
-- https://sources.debian.net/src/linux/4.9.6-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=9.20161125`
 
