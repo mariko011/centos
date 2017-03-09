@@ -1,9 +1,9 @@
-# `sentry:8.14.0`
+# `sentry:8.14.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b20b0b739254121fdd51bd8ffb55c2f8d112169675c2072bb94e176d964ce1c2`
-- Created: `2017-03-02T18:45:01.634696923Z`
+- Image ID: `sha256:fc709630a61e485634f71284b5eb63d26b41ab38268fab97887ae06674cf5bb3`
+- Created: `2017-03-07T00:20:57.69569324Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["run","web"]`
@@ -17,7 +17,7 @@
   - `PIP_DISABLE_PIP_VERSION_CHECK=on`
   - `GOSU_VERSION=1.10`
   - `TINI_VERSION=v0.14.0`
-  - `SENTRY_VERSION=8.14.0`
+  - `SENTRY_VERSION=8.14.1`
   - `SENTRY_CONF=/etc/sentry`
   - `SENTRY_FILESTORE_DIR=/var/lib/sentry/files`
 
@@ -1810,19 +1810,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=3.16.39-1+deb8u1
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.39-1+deb8u1.dsc' linux_3.16.39-1+deb8u1.dsc 140609 SHA256:908adb6ec4bbce7c8f9e6d1800e3dd7a4ceed638a72e71115dabef04f72fc243
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.39.orig.tar.xz' linux_3.16.39.orig.tar.xz 81806060 SHA256:c36466398823435894e3cb3dc2813be8499c0e19a3f1787c202e15136c16207f
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.39-1+deb8u1.debian.tar.xz' linux_3.16.39-1+deb8u1.debian.tar.xz 3218984 SHA256:3515fbe0b38e53b82e77703d33cb081bfacfab7d09e21df34c6fb73efd5b2f45
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/3.16.39-1+deb8u1/
-- https://sources.debian.net/src/linux/3.16.39-1+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
