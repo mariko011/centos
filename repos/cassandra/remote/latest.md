@@ -1,7 +1,7 @@
 ## `cassandra:latest`
 
 ```console
-$ docker pull cassandra@sha256:c5e7e2812617891f13bdd2c6d844f2f1857c9a75a4c5b01b4b526e8f7be4f575
+$ docker pull cassandra@sha256:617fac89e2ab0c9fb54b503ab74bcb4d58fc9d25b36fdb2e0aa7f6a84a324e97
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull cassandra@sha256:c5e7e2812617891f13bdd2c6d844f2f1857c9a75a4c5b01b4
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **162.7 MB (162702286 bytes)**  
+-	Total Size: **162.7 MB (162704895 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee8d2f08b8d8cde6a3d317cc386e958a3d0f4406008a5e054e97853f8d273bed`
+-	Image ID: `sha256:912969144d8a481fadd9f3769ee12a98146a0f35a3bea6a3535fe41084831dd6`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
@@ -42,23 +42,23 @@ RUN set -ex; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg -
 RUN echo 'deb http://www.apache.org/dist/cassandra/debian 310x main' >> /etc/apt/sources.list.d/cassandra.list
 # Mon, 27 Feb 2017 22:47:15 GMT
 ENV CASSANDRA_VERSION=3.10
-# Mon, 27 Feb 2017 22:47:50 GMT
-RUN apt-get update 	&& apt-get install -y cassandra="$CASSANDRA_VERSION" 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 27 Feb 2017 22:47:51 GMT
+# Thu, 09 Mar 2017 18:36:24 GMT
+RUN apt-get update 	&& apt-get install -y 		cassandra="$CASSANDRA_VERSION" 		cassandra-tools="$CASSANDRA_VERSION" 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 09 Mar 2017 18:36:25 GMT
 RUN sed -ri 's/^(JVM_PATCH_VERSION)=.*/\1=25/' /etc/cassandra/cassandra-env.sh
-# Mon, 27 Feb 2017 22:47:52 GMT
+# Thu, 09 Mar 2017 18:36:26 GMT
 ENV CASSANDRA_CONFIG=/etc/cassandra
-# Mon, 27 Feb 2017 22:47:52 GMT
+# Thu, 09 Mar 2017 18:36:27 GMT
 COPY file:fe6ed91be8debf19da443f09935b578bf6599e644b7a670bf7048d33fb2efa9e in /docker-entrypoint.sh 
-# Mon, 27 Feb 2017 22:47:52 GMT
+# Thu, 09 Mar 2017 18:36:27 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 27 Feb 2017 22:47:53 GMT
+# Thu, 09 Mar 2017 18:36:29 GMT
 RUN mkdir -p /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chown -R cassandra:cassandra /var/lib/cassandra "$CASSANDRA_CONFIG" 	&& chmod 777 /var/lib/cassandra "$CASSANDRA_CONFIG"
-# Mon, 27 Feb 2017 22:47:54 GMT
+# Thu, 09 Mar 2017 18:36:29 GMT
 VOLUME [/var/lib/cassandra]
-# Mon, 27 Feb 2017 22:47:54 GMT
+# Thu, 09 Mar 2017 18:36:30 GMT
 EXPOSE 7000/tcp 7001/tcp 7199/tcp 9042/tcp 9160/tcp
-# Mon, 27 Feb 2017 22:47:54 GMT
+# Thu, 09 Mar 2017 18:36:31 GMT
 CMD ["cassandra" "-f"]
 ```
 
@@ -95,19 +95,19 @@ CMD ["cassandra" "-f"]
 		Last Modified: Wed, 01 Mar 2017 22:50:47 GMT  
 		Size: 221.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ced173e9de0428a146340f807e8ef17380c16a3a763f4238c69a8884331b433`  
-		Last Modified: Wed, 01 Mar 2017 22:51:12 GMT  
-		Size: 109.9 MB (109893956 bytes)  
+	-	`sha256:78be5ef80177786a207873512f2139093d0e10ff62ce12651279635c88b8d185`  
+		Last Modified: Thu, 09 Mar 2017 18:41:57 GMT  
+		Size: 109.9 MB (109896566 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1a00879cdf0e797fb4393a78f4b531334d433d8b466bb84bd8c75b146100672`  
-		Last Modified: Wed, 01 Mar 2017 22:50:47 GMT  
+	-	`sha256:9afd0c45990d4097a690cf2edfe089cd44e8b0a9ed18f572aab354524e970eb3`  
+		Last Modified: Thu, 09 Mar 2017 18:41:36 GMT  
 		Size: 4.4 KB (4399 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:137d97843536ad082523819ff3f3f25025fb47c9123e4c3ef48bfe5c02b3d8a7`  
-		Last Modified: Wed, 01 Mar 2017 22:50:48 GMT  
-		Size: 719.0 B  
+	-	`sha256:7b7fec16724540bc02997204a67f4a545b7f2ff7d3fe2b632622492220f63ef3`  
+		Last Modified: Thu, 09 Mar 2017 18:41:33 GMT  
+		Size: 722.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6c58f35b527354826089747e92a15d5adaf264937ae85ade53f41cbcdab7f1ab`  
-		Last Modified: Wed, 01 Mar 2017 22:50:47 GMT  
-		Size: 28.3 KB (28343 bytes)  
+	-	`sha256:01405b8c84a1f68782aa7ba3312597a66cfc4479bb46e32cc17af18102fe2efd`  
+		Last Modified: Thu, 09 Mar 2017 18:41:33 GMT  
+		Size: 28.3 KB (28339 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
