@@ -1773,19 +1773,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u6
-'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u6.dsc' openssl_1.0.1t-1+deb8u6.dsc 2272 SHA256:c5d2624a9b9de16a8d173c852e84f175757ee838cd3b5efe44683b96a6aa927b
-'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb8u6.debian.tar.xz' openssl_1.0.1t-1+deb8u6.debian.tar.xz 108424 SHA256:670935107107c20c872174c96c0cd098ffc2c15cac17f5a104af63a1db69cf3a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u6/
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
@@ -2045,19 +2034,8 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.2-3+deb8u3
-'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.2-3+deb8u3.dsc' shadow_4.2-3+deb8u3.dsc 2492 SHA256:95e6fd479bc7721f71b2e3cbfe65776f021d1338cc4906ad880e5383129a096a
-'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.2-3+deb8u3.debian.tar.xz' shadow_4.2-3+deb8u3.debian.tar.xz 498396 SHA256:2d4b93667a1f09433725e457c74b6215d31386e2e42bd192c26d34d3592444be
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/shadow/1:4.2-3+deb8u3/
-- https://sources.debian.net/src/shadow/1:4.2-3+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `slang2=2.3.0-2`
 
