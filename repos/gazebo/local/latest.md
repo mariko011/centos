@@ -4277,14 +4277,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-64.85
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-64.85.dsc' linux_4.4.0-64.85.dsc 9613 SHA256:66ffc6db2d5d4170c4207a585276852466ea0e31592a70eff413760d40b26143
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-64.85.diff.gz' linux_4.4.0-64.85.diff.gz 12558937 SHA256:4ce72cb8e25a3613926c55d180b741e2f9c160e86ebfc3aeb2f7f2c044963a68
-```
 
 ### `dpkg` source package: `llvm-toolchain-3.8=1:3.8-2ubuntu4`
 
