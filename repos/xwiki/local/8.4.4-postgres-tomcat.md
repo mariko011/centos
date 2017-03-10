@@ -1,9 +1,9 @@
-# `xwiki:9`
+# `xwiki:8-postgres-tomcat`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ac5c465ad1b1dd8b78fc5342af9214b47b8238e661a0176931029fac4cc6190b`
-- Created: `2017-03-07T18:05:20.951779628Z`
+- Image ID: `sha256:8b5c95b40d11b924d915eeadc3b37a2611424ba415e7c53ef94e3b43c58a7f5a`
+- Created: `2017-03-07T18:08:18.86780795Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["xwiki"]`
@@ -23,9 +23,9 @@
   - `TOMCAT_VERSION=8.0.41`
   - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.41/bin/apache-tomcat-8.0.41.tar.gz`
   - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.41/bin/apache-tomcat-8.0.41.tar.gz.asc`
-  - `XWIKI_VERSION=9.1.2`
-  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/enterprise/xwiki-enterprise-web/9.1.2`
-  - `XWIKI_DOWNLOAD_SHA256=580190b11bc9f11fde0cf992c0299fff17b5bece7fa5d7d4f7fb53c46e77a075`
+  - `XWIKI_VERSION=8.4.4`
+  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/enterprise/xwiki-enterprise-web/8.4.4`
+  - `XWIKI_DOWNLOAD_SHA256=b414edb4527e3d8b27c40a8c3f2f09423980de7963207b7dc89da71d14e7fb23`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2791,6 +2791,30 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/liborcus/0.7.0+dfsg-9/
 - https://sources.debian.net/src/liborcus/0.7.0+dfsg-9/debian/copyright (for direct copyright/license information)
 
+### `dpkg` source package: `libpgjava=9.2-1002-1`
+
+Binary Packages:
+
+- `libpostgresql-jdbc-java=9.2-1002-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
+  If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libpgjava=9.2-1002-1
+'http://deb.debian.org/debian/pool/main/libp/libpgjava/libpgjava_9.2-1002-1.dsc' libpgjava_9.2-1002-1.dsc 2293 SHA256:04fa7de7e710a40700e769660936d91597562d03c337107835a111371a66e124
+'http://deb.debian.org/debian/pool/main/libp/libpgjava/libpgjava_9.2-1002.orig.tar.gz' libpgjava_9.2-1002.orig.tar.gz 674693 SHA256:935129f1cacc4ea013f9aede9f173e9174545acf24fddc872abcb714335cbdd3
+'http://deb.debian.org/debian/pool/main/libp/libpgjava/libpgjava_9.2-1002-1.debian.tar.gz' libpgjava_9.2-1002-1.debian.tar.gz 8004 SHA256:b15bb7920b14c1105c969077d5767f337971cb7d8dfcfab20a2f8dd7856e231e
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libpgjava/9.2-1002-1/
+- https://sources.debian.net/src/libpgjava/9.2-1002-1/debian/copyright (for direct copyright/license information)
+
 ### `dpkg` source package: `libpng=1.2.50-2+deb8u3`
 
 Binary Packages:
@@ -4031,30 +4055,6 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/mpdecimal/2.4.1-1/
 - https://sources.debian.net/src/mpdecimal/2.4.1-1/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `mysql-connector-java=5.1.39-1~deb8u1`
-
-Binary Packages:
-
-- `libmysql-java=5.1.39-1~deb8u1`
-
-Licenses: (parsed from: `/usr/share/doc/libmysql-java/copyright`)
-
-- `GPL-2`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris mysql-connector-java=5.1.39-1~deb8u1
-'http://deb.debian.org/debian/pool/main/m/mysql-connector-java/mysql-connector-java_5.1.39-1~deb8u1.dsc' mysql-connector-java_5.1.39-1~deb8u1.dsc 2355 SHA256:e4da6a322eb61235548dbe84157c00a4153d66f1e9fb8f136b01220bb70cfce0
-'http://deb.debian.org/debian/pool/main/m/mysql-connector-java/mysql-connector-java_5.1.39.orig.tar.xz' mysql-connector-java_5.1.39.orig.tar.xz 979308 SHA256:53a661327b212840adce981136ad1adefd2431d83f807c0f895c28a45a576953
-'http://deb.debian.org/debian/pool/main/m/mysql-connector-java/mysql-connector-java_5.1.39-1~deb8u1.debian.tar.xz' mysql-connector-java_5.1.39-1~deb8u1.debian.tar.xz 11692 SHA256:6d82b795d6e45f5030cce6bc7be9d33c25f4ba536f46a4b4c3235d74e44eaaea
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mysql-connector-java/5.1.39-1~deb8u1/
-- https://sources.debian.net/src/mysql-connector-java/5.1.39-1~deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mythes=2:1.2.4-1`
 
