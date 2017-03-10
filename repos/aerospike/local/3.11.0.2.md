@@ -752,13 +752,8 @@ Licenses: (parsed from: `/usr/share/doc/init/copyright`, `/usr/share/doc/init-sy
 - `GPL`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.29ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.29ubuntu3.dsc' init-system-helpers_1.29ubuntu3.dsc 2011 SHA256:a07fa1c88fb0028ae38ce78d4273a47fd406b95a5c1d905385f5885a297198d4
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.29ubuntu3.tar.xz' init-system-helpers_1.29ubuntu3.tar.xz 58224 SHA256:65fc0f654fa14d02ffebdbf8ea111927564f520c0c1c4db550d3b6bef192a037
-```
 
 ### `dpkg` source package: `insserv=1.14.0-5ubuntu3`
 
