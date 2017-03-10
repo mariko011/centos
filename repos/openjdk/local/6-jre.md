@@ -2146,19 +2146,8 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris wget=1.13.4-3+deb7u3
-'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4-3+deb7u3.dsc' wget_1.13.4-3+deb7u3.dsc 1884 SHA256:bf30d2f5910579e2a999825354dcaedc57a0b23bf79e4abe8e7bb0f9e813b658
-'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4.orig.tar.gz' wget_1.13.4.orig.tar.gz 2815185 SHA256:24c7710bc9f220ce23d8a9e0f5673b0efc1cace62db6de0239b5863ecc934dcd
-'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4-3+deb7u3.debian.tar.gz' wget_1.13.4-3+deb7u3.debian.tar.gz 29300 SHA256:9755af458594927093d2275fc78c3935cc0fcc426f03b444629587beb7a5fae5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/wget/1.13.4-3+deb7u3/
-- https://sources.debian.net/src/wget/1.13.4-3+deb7u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `xz-utils=5.1.1alpha+20120614-2`
 
