@@ -1932,13 +1932,8 @@ Licenses: (parsed from: `/usr/share/doc/init/copyright`, `/usr/share/doc/init-sy
 - `GPL`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.29ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.29ubuntu3.dsc' init-system-helpers_1.29ubuntu3.dsc 2011 SHA256:a07fa1c88fb0028ae38ce78d4273a47fd406b95a5c1d905385f5885a297198d4
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.29ubuntu3.tar.xz' init-system-helpers_1.29ubuntu3.tar.xz 58224 SHA256:65fc0f654fa14d02ffebdbf8ea111927564f520c0c1c4db550d3b6bef192a037
-```
 
 ### `dpkg` source package: `insserv=1.14.0-5ubuntu3`
 
@@ -2199,14 +2194,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libarchive=3.1.2-11ubuntu0.16.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2-11ubuntu0.16.04.2.dsc' libarchive_3.1.2-11ubuntu0.16.04.2.dsc 2424 SHA256:b62c1c306afbb087efa2e35395fe6603fa047d5ee8467061844a5ebb1af43b14
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2.orig.tar.gz' libarchive_3.1.2.orig.tar.gz 4527540 SHA256:eb87eacd8fe49e8d90c8fdc189813023ccc319c5e752b01fb6ad0cc7b2c53d5e
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2-11ubuntu0.16.04.2.debian.tar.xz' libarchive_3.1.2-11ubuntu0.16.04.2.debian.tar.xz 29016 SHA256:ad554e75899580c624f463f5a56400f8d4e315d803e158c153f151f967a22e61
-```
 
 ### `dpkg` source package: `libasyncns=0.8-5build1`
 
@@ -3564,14 +3553,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-64.85
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-64.85.dsc' linux_4.4.0-64.85.dsc 9613 SHA256:66ffc6db2d5d4170c4207a585276852466ea0e31592a70eff413760d40b26143
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-64.85.diff.gz' linux_4.4.0-64.85.diff.gz 12558937 SHA256:4ce72cb8e25a3613926c55d180b741e2f9c160e86ebfc3aeb2f7f2c044963a68
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
 

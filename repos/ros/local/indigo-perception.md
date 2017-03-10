@@ -2680,14 +2680,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libarchive=3.1.2-7ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2-7ubuntu2.3.dsc' libarchive_3.1.2-7ubuntu2.3.dsc 2398 SHA256:ed409db9fdb8a6c84d85e562899a6ba7758f7d0d04e39d1648ec4b5bb0192c7c
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2.orig.tar.gz' libarchive_3.1.2.orig.tar.gz 4527540 SHA256:eb87eacd8fe49e8d90c8fdc189813023ccc319c5e752b01fb6ad0cc7b2c53d5e
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.1.2-7ubuntu2.3.debian.tar.gz' libarchive_3.1.2-7ubuntu2.3.debian.tar.gz 34453 SHA256:83a703ae4d7096217a19b3c60064e82c220f5b5a34ac934088021d7ebef7bd20
-```
 
 ### `dpkg` source package: `libav=6:9.20-0ubuntu0.14.04.1`
 
@@ -4465,14 +4459,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=3.13.0-110.157
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-110.157.dsc' linux_3.13.0-110.157.dsc 8127 SHA256:df5f1ee86aa13598f4140a17dab7e1c25248f797c7a190a1df5569efd9eace3d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-110.157.diff.gz' linux_3.13.0-110.157.diff.gz 9462001 SHA256:f25359eae33f0d971e09d2ed6444767efacc60199ac559dc561cdd0d210cc73d
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.15+dfsg-1`
 
