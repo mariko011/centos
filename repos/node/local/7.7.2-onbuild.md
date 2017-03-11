@@ -1,15 +1,15 @@
-# `node:7.7.1-onbuild`
+# `node:7.7.2-onbuild`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b6a209ec20b16e894ae1dc01cb0acabd8791e3215e0cfdd477e4a0a156b94535`
-- Created: `2017-03-02T19:55:40.639729986Z`
+- Image ID: `sha256:cfb4a7fd655648c8afea8c80a22d75bb3b6218f3efdcccf682d704b57b8622f6`
+- Created: `2017-03-09T22:08:38.335795965Z`
 - Arch: `linux`/`amd64`
 - Command: `["npm","start"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=7.7.1`
+  - `NODE_VERSION=7.7.2`
   - `YARN_VERSION=0.21.3`
 
 ## `dpkg` (`.deb`-based packages)

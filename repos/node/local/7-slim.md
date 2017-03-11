@@ -1,15 +1,15 @@
-# `node:7.7.1-slim`
+# `node:7.7.2-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2c88f6bf55c616cd787b27a37fdee572696b01173b64c9fdadc6f4042760d68c`
-- Created: `2017-03-02T19:55:57.269472277Z`
+- Image ID: `sha256:d40104da26b37dbe532fc0783d2046a06398ff564cf9cbb30a09f34dbece5d93`
+- Created: `2017-03-09T22:08:53.178056585Z`
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=7.7.1`
+  - `NODE_VERSION=7.7.2`
   - `YARN_VERSION=0.21.3`
 
 ## `dpkg` (`.deb`-based packages)
