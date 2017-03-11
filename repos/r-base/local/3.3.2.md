@@ -674,18 +674,8 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-de
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.22
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.22.dsc' dpkg_1.18.22.dsc 2032 SHA256:2e3e0689b80273551b2c86b7c9f688b45f8b8da67956cd849d60ceb0e6bc7aca
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.22.tar.xz' dpkg_1.18.22.tar.xz 4520088 SHA256:eaf2ae88eae71f164167f75e9229af87fa9451bc58966fdec40db265b146ad69
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dpkg/1.18.22/
-- https://sources.debian.net/src/dpkg/1.18.22/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `e2fsprogs=1.43.4-2`
 
@@ -2870,10 +2860,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris pango1.0=1.40.4-1
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.40.4-1.dsc' pango1.0_1.40.4-1.dsc 3268 SHA256:a87efa0bd7635b633d17199accbf89e0f17ecb7ab9b67b714f834e7689f3bdfe
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.40.4.orig.tar.xz' pango1.0_1.40.4.orig.tar.xz 1062600 SHA256:f8fdc5fc66356dc4edf915048cceeee065a0e0cb70b3b2598f62bda320129a3e
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.40.4-1.debian.tar.xz' pango1.0_1.40.4-1.debian.tar.xz 27284 SHA256:af62681915402b1afb301287c4e66d974f4e4594b6f11294ca32e7d63240e87b
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.4-1.dsc' pango1.0_1.40.4-1.dsc 3268 SHA256:a87efa0bd7635b633d17199accbf89e0f17ecb7ab9b67b714f834e7689f3bdfe
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.4.orig.tar.xz' pango1.0_1.40.4.orig.tar.xz 1062600 SHA256:f8fdc5fc66356dc4edf915048cceeee065a0e0cb70b3b2598f62bda320129a3e
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.4-1.debian.tar.xz' pango1.0_1.40.4-1.debian.tar.xz 27284 SHA256:af62681915402b1afb301287c4e66d974f4e4594b6f11294ca32e7d63240e87b
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/pango1.0/1.40.4-1/
+- https://sources.debian.net/src/pango1.0/1.40.4-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `patch=2.7.5-1`
 
@@ -3677,19 +3672,8 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris vim=2:8.0.0197-2
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.0.0197-2.dsc' vim_8.0.0197-2.dsc 2991 SHA256:5e92b119ca5de2f0734f364b4d8409085668ff67ca3ac61d745ea4e131334725
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.0.0197.orig.tar.gz' vim_8.0.0197.orig.tar.gz 12959375 SHA256:7fc1d5ef76a86961316666fb8e050cdb79bd86f9264028d597e682582b25be16
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.0.0197-2.debian.tar.xz' vim_8.0.0197-2.debian.tar.xz 154560 SHA256:8cc60b71ceda019d998707a4265216d7ef3d94aaf2dd04af1108ba720cc9db2e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/vim/2:8.0.0197-2/
-- https://sources.debian.net/src/vim/2:8.0.0197-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `wget=1.18-4`
 
