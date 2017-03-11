@@ -1,12 +1,12 @@
-# `kong:0.9`
+# `kong:0.10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:958a49da171a459ac423d86a0e4d38b35c09d7216de046960076003f47e70eee`
-- Created: `2017-02-07T18:02:35.06383218Z`
+- Image ID: `sha256:e5b8dc2217f7e1e54f2b2ef01ac51afcb1d953a9f6e8fb8ebd926cf03bca9fb7`
+- Created: `2017-03-08T18:37:39.907764882Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["kong","start"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `KONG_VERSION=0.9.9`
+  - `KONG_VERSION=0.10.0`
