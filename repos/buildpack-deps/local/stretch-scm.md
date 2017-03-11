@@ -1895,19 +1895,8 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.4p1-6
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.4p1-6.dsc' openssh_7.4p1-6.dsc 2956 SHA256:be46b6c59560738d5c0dee703f77f6ed426eed0045bd5b66bcc573011c114737
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.4p1.orig.tar.gz' openssh_7.4p1.orig.tar.gz 1511780 SHA256:1b1fc4a14e2024293181924ed24872e6f2e06293f3e8926a376b8aec481f19d1
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.4p1-6.debian.tar.xz' openssh_7.4p1-6.debian.tar.xz 158280 SHA256:7dd11fd679db97f01f1bf88d269ac0df11d1ff893c85704ee53c8ea862b86c97
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssh/1:7.4p1-6/
-- https://sources.debian.net/src/openssh/1:7.4p1-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssl1.0=1.0.2k-1`
 
@@ -2364,20 +2353,8 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.16.2-2
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2-2.dsc' sqlite3_3.16.2-2.dsc 2510 SHA256:b9467135750a23c0a6d4a32fcc11d6d9c9610e1ecf86a1b671a13ae0a9d45b00
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2.orig-www.tar.xz' sqlite3_3.16.2.orig-www.tar.xz 3383968 SHA256:d5dd3de405c55c63c9f99fbfcf3defc91a54a81b5656c510cd46544aaed134fa
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2.orig.tar.xz' sqlite3_3.16.2.orig.tar.xz 5634120 SHA256:bf7b1e8ea7577253b7f8a8287d111d542d1792cf1768edc66541ac851ff92453
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2-2.debian.tar.xz' sqlite3_3.16.2-2.debian.tar.xz 17060 SHA256:74d818241b3cda4051f56b9f03a75d8985668bb76a9e6f8d2f3f9bdccf2b4b83
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sqlite3/3.16.2-2/
-- https://sources.debian.net/src/sqlite3/3.16.2-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `subversion=1.9.5-1`
 

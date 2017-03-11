@@ -716,15 +716,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.6-4ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.6-4ubuntu2.dsc' gnutls28_3.5.6-4ubuntu2.dsc 3245 SHA256:0472148d655649eced387b10f4f8a14b6d8454be6eef212c249b039d6da78c25
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.6.orig.tar.xz' gnutls28_3.5.6.orig.tar.xz 7087388 SHA256:6338b715bf31c758606ffa489c7f87ee1beab947114fbd2ffefd73170a8c6b9a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.6.orig.tar.xz.asc' gnutls28_3.5.6.orig.tar.xz.asc 287 SHA256:64a5adbe0671d31f5c59b1244f4febb7b86b30e5669c64c6818d50538ab6d983
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.6-4ubuntu2.debian.tar.xz' gnutls28_3.5.6-4ubuntu2.debian.tar.xz 116032 SHA256:eef546632734a250fcc02466bf4d180678a3a97a4cade47c26a096d3c6c2ffa7
-```
 
 ### `dpkg` source package: `grep=2.27-2`
 
@@ -1332,14 +1325,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu5.dsc' openldap_2.4.42+dfsg-2ubuntu5.dsc 3032 SHA256:5be414db7a42180003d0325e5d4b294dae8b91cd8233a9aa2a9a6b5744ab3fcf
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg.orig.tar.gz' openldap_2.4.42+dfsg.orig.tar.gz 4813173 SHA256:5f56e4e3584f7a4b4c8437a2c985b2f519836946be77ef1aa43a5d20c02ea97b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu5.debian.tar.xz' openldap_2.4.42+dfsg-2ubuntu5.debian.tar.xz 176952 SHA256:9d4a3189519b291327216c3503f7d7e50a5fe1aed842c5a2ecb4629cf787cd8a
-```
 
 ### `dpkg` source package: `openssh=1:7.4p1-6`
 
@@ -1744,15 +1731,8 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.16.2-2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.16.2-2.dsc' sqlite3_3.16.2-2.dsc 2510 SHA256:b9467135750a23c0a6d4a32fcc11d6d9c9610e1ecf86a1b671a13ae0a9d45b00
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.16.2.orig-www.tar.xz' sqlite3_3.16.2.orig-www.tar.xz 3383968 SHA256:d5dd3de405c55c63c9f99fbfcf3defc91a54a81b5656c510cd46544aaed134fa
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.16.2.orig.tar.xz' sqlite3_3.16.2.orig.tar.xz 5634120 SHA256:bf7b1e8ea7577253b7f8a8287d111d542d1792cf1768edc66541ac851ff92453
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.16.2-2.debian.tar.xz' sqlite3_3.16.2-2.debian.tar.xz 17060 SHA256:74d818241b3cda4051f56b9f03a75d8985668bb76a9e6f8d2f3f9bdccf2b4b83
-```
 
 ### `dpkg` source package: `subversion=1.9.5-1ubuntu1`
 
