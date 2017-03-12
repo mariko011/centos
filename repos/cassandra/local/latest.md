@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ee8d2f08b8d8cde6a3d317cc386e958a3d0f4406008a5e054e97853f8d273bed`
-- Created: `2017-02-27T22:47:54.903864381Z`
+- Image ID: `sha256:912969144d8a481fadd9f3769ee12a98146a0f35a3bea6a3535fe41084831dd6`
+- Created: `2017-03-09T18:36:31.056003888Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["cassandra","-f"]`
@@ -348,8 +348,9 @@ Likely also available for browsing at:
 Binary Packages:
 
 - `cassandra=3.10`
+- `cassandra-tools=3.10`
 
-Licenses: (parsed from: `/usr/share/doc/cassandra/copyright`)
+Licenses: (parsed from: `/usr/share/doc/cassandra/copyright`, `/usr/share/doc/cassandra-tools/copyright`)
 
 - `Apache-2.0`
 
