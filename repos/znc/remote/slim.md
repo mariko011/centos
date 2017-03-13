@@ -1,7 +1,7 @@
 ## `znc:slim`
 
 ```console
-$ docker pull znc@sha256:00b5594bccd6dba653b7486abcc764f81a981931d556f9d3c1305c780dd17c44
+$ docker pull znc@sha256:5d52c8345418fc6f4206d259d8bea626eea470a7e1a5c47809baaef5a3e46d0f
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull znc@sha256:00b5594bccd6dba653b7486abcc764f81a981931d556f9d3c1305c7
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **22.0 MB (22012929 bytes)**  
+-	Total Size: **22.0 MB (22024662 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa68553b7eca418451feef39c3ec6795e232bd9c3af0d4af12b2ec8410e4d926`
+-	Image ID: `sha256:3f3a78ad4c98b9135e57d46662a8322b0f8f31ccb7021869ce28cde7c3cc9dc0`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -25,16 +25,16 @@ ENV GPG_KEY=D5823CACB477191CAC0075555AE420CC0209989E
 ARG CONFIGUREFLAGS=--prefix=/opt/znc --enable-cyrus --enable-perl --enable-python --disable-ipv6
 # Fri, 03 Mar 2017 23:51:59 GMT
 ARG MAKEFLAGS=
-# Fri, 03 Mar 2017 23:51:59 GMT
-ENV ZNC_VERSION=1.6.4
-# Tue, 07 Mar 2017 17:58:41 GMT
+# Mon, 13 Mar 2017 19:39:06 GMT
+ENV ZNC_VERSION=1.6.5
+# Mon, 13 Mar 2017 19:44:04 GMT
 # ARGS: CONFIGUREFLAGS=--prefix=/opt/znc --enable-cyrus --enable-perl --enable-python --disable-ipv6 MAKEFLAGS=
 RUN set -x     && adduser -S znc     && addgroup -S znc     && apk add --no-cache --virtual runtime-dependencies         ca-certificates         cyrus-sasl         icu         su-exec         tini     && apk add --no-cache --virtual build-dependencies         build-base         curl         cyrus-sasl-dev         gnupg         icu-dev         libressl-dev         perl-dev         python3-dev     && mkdir /znc-src && cd /znc-src     && curl -fsSL "http://znc.in/releases/archive/znc-${ZNC_VERSION}.tar.gz" -o znc.tgz     && curl -fsSL "http://znc.in/releases/archive/znc-${ZNC_VERSION}.tar.gz.sig" -o znc.tgz.sig     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "${GPG_KEY}"     && gpg --batch --verify znc.tgz.sig znc.tgz     && rm -rf "$GNUPGHOME"     && tar -zxf znc.tgz --strip-components=1     && mkdir build && cd build     && ../configure ${CONFIGUREFLAGS}     && make $MAKEFLAGS     && make install     && apk del build-dependencies     && cd / && rm -rf /znc-src
-# Tue, 07 Mar 2017 17:59:38 GMT
+# Mon, 13 Mar 2017 19:44:05 GMT
 COPY file:e1c4fadff4ba3c097a72f9f789e8f03a804cacbc734f69968217e5db37d2f909 in / 
-# Tue, 07 Mar 2017 17:59:39 GMT
+# Mon, 13 Mar 2017 19:44:05 GMT
 VOLUME [/znc-data]
-# Tue, 07 Mar 2017 17:59:39 GMT
+# Mon, 13 Mar 2017 19:44:06 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -43,11 +43,11 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Fri, 03 Mar 2017 20:34:41 GMT  
 		Size: 1.9 MB (1905270 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc433b1c32b30c02b0916f3df10cc4ac16d76e163296e4c6e34d51d2ed4d4048`  
-		Last Modified: Tue, 07 Mar 2017 18:00:46 GMT  
-		Size: 20.1 MB (20107084 bytes)  
+	-	`sha256:5339c67db32c94699b498862fe2db12bae695c1f1c5a1d52dcf9af5bc62ebbb8`  
+		Last Modified: Mon, 13 Mar 2017 19:47:29 GMT  
+		Size: 20.1 MB (20118814 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:093d4836dcf692e32d76a6f9b7d00de5250dab7b07050c636e3e0a649c1f7ae8`  
-		Last Modified: Tue, 07 Mar 2017 18:00:39 GMT  
-		Size: 575.0 B  
+	-	`sha256:cd0b89a7cb299de4dd5614166abd4d8fea6afc28881bc2df4f5b439f061140b5`  
+		Last Modified: Mon, 13 Mar 2017 19:47:23 GMT  
+		Size: 578.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
