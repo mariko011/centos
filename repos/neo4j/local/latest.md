@@ -1,9 +1,9 @@
-# `neo4j:3.1.1`
+# `neo4j:3.1.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e17e2eea5d1358b0cce88e41b2f29e52c25f16e9bd194b4c74a3a0077d84f0a0`
-- Created: `2017-03-07T19:22:29.055735845Z`
+- Image ID: `sha256:d79081b30b35f0c0fbbfb4a25e9bae6f01d53993234b6b0cd90e3d1eefadbcdd`
+- Created: `2017-03-10T21:25:39.751788479Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["neo4j"]`
@@ -13,5 +13,5 @@
   - `JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre`
   - `JAVA_VERSION=8u121`
   - `JAVA_ALPINE_VERSION=8.121.13-r0`
-  - `NEO4J_SHA256=7d66389ad683f66664f11a79314ce4d434ab70ade9c02601ee74e59cd729e2cb`
-  - `NEO4J_TARBALL=neo4j-community-3.1.1-unix.tar.gz`
+  - `NEO4J_SHA256=80e8729ae7d93696f80133c2815d2631040714122efa2af0a01e735953d56b4f`
+  - `NEO4J_TARBALL=neo4j-community-3.1.2-unix.tar.gz`
