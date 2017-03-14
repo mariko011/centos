@@ -1882,14 +1882,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris icu=52.1-3ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_52.1-3ubuntu0.4.dsc' icu_52.1-3ubuntu0.4.dsc 2055 SHA256:90f788d1d63a7c549d47dd343c505a504c73ed0247f9b620b22ac643ad0e3963
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_52.1-3ubuntu0.4.debian.tar.gz' icu_52.1-3ubuntu0.4.debian.tar.gz 35603 SHA256:6d4d8bfb4df58014c0c13b4b76f7ac796979bcae0e7f6a00a39af986beeab7c7
-```
 
 ### `dpkg` source package: `ifupdown=0.7.47.2ubuntu4.4`
 
