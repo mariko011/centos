@@ -932,18 +932,8 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/libdpkg
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.22
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.22.dsc' dpkg_1.18.22.dsc 2032 SHA256:2e3e0689b80273551b2c86b7c9f688b45f8b8da67956cd849d60ceb0e6bc7aca
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.22.tar.xz' dpkg_1.18.22.tar.xz 4520088 SHA256:eaf2ae88eae71f164167f75e9229af87fa9451bc58966fdec40db265b146ad69
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dpkg/1.18.22/
-- https://sources.debian.net/src/dpkg/1.18.22/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `e2fsprogs=1.43.4-2`
 
@@ -4887,19 +4877,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=232-18
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-18.dsc' systemd_232-18.dsc 4769 SHA256:4f5e44a5ba8ac8e9f7fd163b7e204cca44de084a8588d97a25a616f8931b0de5
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-18.debian.tar.xz' systemd_232-18.debian.tar.xz 181720 SHA256:8eb4c5e40181e4694db6ab9ab5fe6d1f8cf58b94a2e9b894d998db105d5bccfc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/systemd/232-18/
-- https://sources.debian.net/src/systemd/232-18/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 
@@ -4986,19 +4965,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016j-2
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j-2.dsc' tzdata_2016j-2.dsc 2005 SHA256:f3d5625674688b1bde68ba3e258102d69979a00a65ad3d0a78007668f19327a3
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j.orig.tar.gz' tzdata_2016j.orig.tar.gz 321185 SHA256:f5ee4e0f115f6c2faee1c4b16193a97338cbd1b503f2cea6c5a768c82ff39dc8
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j-2.debian.tar.xz' tzdata_2016j-2.debian.tar.xz 100588 SHA256:04b8920c2b2116806bc5b86c161299827e303f4018aac233c01d2503a94e4a53
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2016j-2/
-- https://sources.debian.net/src/tzdata/2016j-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ucf=3.0036`
 

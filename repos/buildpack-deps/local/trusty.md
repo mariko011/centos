@@ -2183,14 +2183,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libevent=2.0.21-stable-1ubuntu1.14.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libevent/libevent_2.0.21-stable-1ubuntu1.14.04.1.dsc' libevent_2.0.21-stable-1ubuntu1.14.04.1.dsc 2487 SHA256:71827de67ff784320397ae7a3716b5d4f1cabde3621e28727a098d7c8957bc46
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libevent/libevent_2.0.21-stable.orig.tar.gz' libevent_2.0.21-stable.orig.tar.gz 850772 SHA256:22a530a8a5ba1cb9c080cba033206b17dacd21437762155c6d30ee6469f574f5
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/libevent/libevent_2.0.21-stable-1ubuntu1.14.04.1.debian.tar.xz' libevent_2.0.21-stable-1ubuntu1.14.04.1.debian.tar.xz 10768 SHA256:7228520b88ea896bfa6daf699e1c14b8c25aef575ba7ca5184792cfd1e69c354
-```
 
 ### `dpkg` source package: `libexif=0.6.21-1ubuntu1`
 
