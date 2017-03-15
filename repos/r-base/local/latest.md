@@ -216,10 +216,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris binutils=2.27.90.20170221-1
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.27.90.20170221-1.dsc' binutils_2.27.90.20170221-1.dsc 4455 SHA256:2e7a599a388a18ed94db490b2b48b2eb97a78fe6fe5b3d8adb4f05154f468d04
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.27.90.20170221.orig.tar.gz' binutils_2.27.90.20170221.orig.tar.gz 32650644 SHA256:ecc7ad70aa5eaa2a45ec6450d675a8650b79d6cded7deb80c0eb1c3aceac3467
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.27.90.20170221-1.diff.gz' binutils_2.27.90.20170221-1.diff.gz 90020 SHA256:c795e7318c22fd3239073cd47b9586d2d35e1f74051b94689db26eedaaeac348
+'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.27.90.20170221-1.dsc' binutils_2.27.90.20170221-1.dsc 4455 SHA256:2e7a599a388a18ed94db490b2b48b2eb97a78fe6fe5b3d8adb4f05154f468d04
+'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.27.90.20170221.orig.tar.gz' binutils_2.27.90.20170221.orig.tar.gz 32650644 SHA256:ecc7ad70aa5eaa2a45ec6450d675a8650b79d6cded7deb80c0eb1c3aceac3467
+'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.27.90.20170221-1.diff.gz' binutils_2.27.90.20170221-1.diff.gz 90020 SHA256:c795e7318c22fd3239073cd47b9586d2d35e1f74051b94689db26eedaaeac348
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/binutils/2.27.90.20170221-1/
+- https://sources.debian.net/src/binutils/2.27.90.20170221-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `boot=1.3-18-2`
 
@@ -3355,19 +3360,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=232-18
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-18.dsc' systemd_232-18.dsc 4769 SHA256:4f5e44a5ba8ac8e9f7fd163b7e204cca44de084a8588d97a25a616f8931b0de5
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-18.debian.tar.xz' systemd_232-18.debian.tar.xz 181720 SHA256:8eb4c5e40181e4694db6ab9ab5fe6d1f8cf58b94a2e9b894d998db105d5bccfc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/systemd/232-18/
-- https://sources.debian.net/src/systemd/232-18/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 
@@ -3524,19 +3518,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016j-2
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j-2.dsc' tzdata_2016j-2.dsc 2005 SHA256:f3d5625674688b1bde68ba3e258102d69979a00a65ad3d0a78007668f19327a3
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j.orig.tar.gz' tzdata_2016j.orig.tar.gz 321185 SHA256:f5ee4e0f115f6c2faee1c4b16193a97338cbd1b503f2cea6c5a768c82ff39dc8
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j-2.debian.tar.xz' tzdata_2016j-2.debian.tar.xz 100588 SHA256:04b8920c2b2116806bc5b86c161299827e303f4018aac233c01d2503a94e4a53
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2016j-2/
-- https://sources.debian.net/src/tzdata/2016j-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ucf=3.0036`
 
