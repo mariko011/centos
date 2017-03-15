@@ -1,9 +1,9 @@
-# `solr:6.4.1`
+# `solr:6.4.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a792a51c7f25439aa855f8517e92362cfca7c261164d2bbaabfb1d79681d1dc3`
-- Created: `2017-03-01T01:07:47.851701293Z`
+- Image ID: `sha256:b87be00192e64f117b309023703e367643753baa2127254e97ca7cb0076acac6`
+- Created: `2017-03-14T20:29:09.607780298Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["solr-foreground"]`
@@ -16,11 +16,10 @@
   - `CA_CERTIFICATES_JAVA_VERSION=20161107~bpo8+1`
   - `SOLR_USER=solr`
   - `SOLR_UID=8983`
-  - `SOLR_KEY=E6E21FFCDCEA14C95910EA65051A0FAF76BC6507`
-  - `GPG_KEYSERVER=hkp://ha.pool.sks-keyservers.net`
-  - `SOLR_VERSION=6.4.1`
-  - `SOLR_SHA256=ebce206dd4a66600384ccdd9a604536135594ce4c24814bbd5a3e8a8ec1efbb9`
-  - `SOLR_URL=https://archive.apache.org/dist/lucene/solr/6.4.1/solr-6.4.1.tgz`
+  - `SOLR_VERSION=6.4.2`
+  - `SOLR_URL=https://archive.apache.org/dist/lucene/solr/6.4.2/solr-6.4.2.tgz`
+  - `SOLR_SHA256=354e1affd9cad7d6e86cde8c03aaeb604876f0764129621d8e231cdb35b31c55`
+  - `SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C`
 
 ## `dpkg` (`.deb`-based packages)
 
