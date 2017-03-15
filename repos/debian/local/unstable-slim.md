@@ -1305,19 +1305,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016j-2
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j-2.dsc' tzdata_2016j-2.dsc 2005 SHA256:f3d5625674688b1bde68ba3e258102d69979a00a65ad3d0a78007668f19327a3
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j.orig.tar.gz' tzdata_2016j.orig.tar.gz 321185 SHA256:f5ee4e0f115f6c2faee1c4b16193a97338cbd1b503f2cea6c5a768c82ff39dc8
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j-2.debian.tar.xz' tzdata_2016j-2.debian.tar.xz 100588 SHA256:04b8920c2b2116806bc5b86c161299827e303f4018aac233c01d2503a94e4a53
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2016j-2/
-- https://sources.debian.net/src/tzdata/2016j-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ustr=1.0.4-6`
 
