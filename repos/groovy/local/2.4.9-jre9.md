@@ -1,19 +1,19 @@
-# `groovy:2.4.8-jre9`
+# `groovy:2.4.9-jre9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9741f0e5dc157fed3005fdb1ab977561b439c4ce87b4c7ba1b0dcb40af25f9e8`
-- Created: `2017-03-07T18:09:13.032266712Z`
+- Image ID: `sha256:b44e1c5078e74825e1c16c4232aa85a3d011e6b4f26728036e0c274ac71f66f5`
+- Created: `2017-03-14T17:01:54.189973194Z`
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
 - Environment:
-  - `PATH=/opt/groovy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64`
   - `JAVA_VERSION=9~b159`
   - `JAVA_DEBIAN_VERSION=9~b159-1`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=2.4.8`
+  - `GROOVY_VERSION=2.4.9`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2605,19 +2605,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016j-2
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j-2.dsc' tzdata_2016j-2.dsc 2005 SHA256:f3d5625674688b1bde68ba3e258102d69979a00a65ad3d0a78007668f19327a3
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j.orig.tar.gz' tzdata_2016j.orig.tar.gz 321185 SHA256:f5ee4e0f115f6c2faee1c4b16193a97338cbd1b503f2cea6c5a768c82ff39dc8
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j-2.debian.tar.xz' tzdata_2016j-2.debian.tar.xz 100588 SHA256:04b8920c2b2116806bc5b86c161299827e303f4018aac233c01d2503a94e4a53
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2016j-2/
-- https://sources.debian.net/src/tzdata/2016j-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `unzip=6.0-21`
 
