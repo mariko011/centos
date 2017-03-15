@@ -1,9 +1,9 @@
-# `nextcloud:10.0.3-apache`
+# `nextcloud:10.0.4-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:461484dc3f5a81ab6665b4d3d464aa996389303dac59e1dd216da62f42cacfbb`
-- Created: `2017-03-01T16:27:09.26374793Z`
+- Image ID: `sha256:1cdcc4cfc4c9f01d1cb3fd472889c212e095094eb6059a60f9ffec6b004c3c9a`
+- Created: `2017-03-13T18:33:51.615788195Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["apache2-foreground"]`
@@ -18,13 +18,13 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
-  - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.30`
-  - `PHP_URL=https://secure.php.net/get/php-5.6.30.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.30.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805`
-  - `PHP_MD5=68753955a8964ae49064c6424f81eb3e`
-  - `NEXTCLOUD_VERSION=10.0.3`
+  - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E`
+  - `PHP_VERSION=7.1.2`
+  - `PHP_URL=https://secure.php.net/get/php-7.1.2.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.2.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=d815a0c39fd57bab1434a77ff0610fb507c22f790c66cd6f26e27030c4b3e971`
+  - `PHP_MD5=d79afea1870277c86fac903566fb6c5d`
+  - `NEXTCLOUD_VERSION=10.0.4`
 
 ## `dpkg` (`.deb`-based packages)
 
