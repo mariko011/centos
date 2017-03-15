@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:665c17ea4dfd667d5baf676253b8be4ba719f9105c2f50696f94e11ad2e3e950`
-- Created: `2017-03-07T17:45:56.335862391Z`
+- Image ID: `sha256:7ca42e1e5dc741f202a346f87f81f66da81d81ec86e9c65fe27ef7d49cbc79e8`
+- Created: `2017-03-13T19:37:08.255785787Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["arangod"]`
@@ -11,11 +11,11 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `ARCHITECTURE=amd64`
   - `DEB_PACKAGE_VERSION=1`
-  - `ARANGO_VERSION=3.1.13`
+  - `ARANGO_VERSION=3.1.14`
   - `ARANGO_URL=https://www.arangodb.com/repositories/arangodb31/Debian_8.0`
-  - `ARANGO_PACKAGE=arangodb3-3.1.13-1_amd64.deb`
-  - `ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb31/Debian_8.0/amd64/arangodb3-3.1.13-1_amd64.deb`
-  - `ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb31/Debian_8.0/amd64/arangodb3-3.1.13-1_amd64.deb.asc`
+  - `ARANGO_PACKAGE=arangodb3-3.1.14-1_amd64.deb`
+  - `ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb31/Debian_8.0/amd64/arangodb3-3.1.14-1_amd64.deb`
+  - `ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb31/Debian_8.0/amd64/arangodb3-3.1.14-1_amd64.deb.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -93,11 +93,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/apt/1.0.9.8.4/
 - https://sources.debian.net/src/apt/1.0.9.8.4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `arangodb3=3.1.13`
+### `dpkg` source package: `arangodb3=3.1.14`
 
 Binary Packages:
 
-- `arangodb3=3.1.13`
+- `arangodb3=3.1.14`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
