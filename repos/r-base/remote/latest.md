@@ -1,7 +1,7 @@
 ## `r-base:latest`
 
 ```console
-$ docker pull r-base@sha256:f3cca3cadda5451f0399b83484454ed46bd2712784f83f6515adbeac7ee240af
+$ docker pull r-base@sha256:42898d69e3e9904ee977b4532abb4e1322a582ed51a09ecb7c440264bf1c89b9
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull r-base@sha256:f3cca3cadda5451f0399b83484454ed46bd2712784f83f6515ad
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **259.7 MB (259701080 bytes)**  
+-	Total Size: **259.8 MB (259788174 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38270dc4745b49a29f8e0f793449b3845db7d3479e349b44c5b398012b5c9a8a`
+-	Image ID: `sha256:52e4d48cd80f1dc0029940a9b68b3d2e5ad7b694dee6ab4dfcaf7fc366518ddb`
 -	Default Command: `["R"]`
 
 ```dockerfile
@@ -35,11 +35,11 @@ ENV LC_ALL=en_US.UTF-8
 ENV LANG=en_US.UTF-8
 # Tue, 28 Feb 2017 22:39:14 GMT
 RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/debian-unstable.list 	&& echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default
-# Tue, 28 Feb 2017 22:39:15 GMT
-ENV R_BASE_VERSION=3.3.2
-# Tue, 28 Feb 2017 22:41:04 GMT
+# Wed, 15 Mar 2017 20:41:57 GMT
+ENV R_BASE_VERSION=3.3.3
+# Wed, 15 Mar 2017 20:43:43 GMT
 RUN apt-get update 	&& apt-get install -t unstable -y --no-install-recommends 		littler                 r-cran-littler 		r-base=${R_BASE_VERSION}* 		r-base-dev=${R_BASE_VERSION}* 		r-recommended=${R_BASE_VERSION}*         && echo 'options(repos = c(CRAN = "https://cran.rstudio.com/"), download.file.method = "libcurl")' >> /etc/R/Rprofile.site         && echo 'source("/etc/R/Rprofile.site")' >> /etc/littler.r 	&& ln -s /usr/share/doc/littler/examples/install.r /usr/local/bin/install.r 	&& ln -s /usr/share/doc/littler/examples/install2.r /usr/local/bin/install2.r 	&& ln -s /usr/share/doc/littler/examples/installGithub.r /usr/local/bin/installGithub.r 	&& ln -s /usr/share/doc/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r 	&& install.r docopt 	&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 22:41:05 GMT
+# Wed, 15 Mar 2017 20:43:43 GMT
 CMD ["R"]
 ```
 
@@ -64,7 +64,7 @@ CMD ["R"]
 		Last Modified: Thu, 02 Mar 2017 03:31:34 GMT  
 		Size: 291.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:503486b6996de02d9ff09950acbeab9afb3ad35d79533b06e400de519550c28f`  
-		Last Modified: Thu, 02 Mar 2017 03:32:22 GMT  
-		Size: 179.5 MB (179514953 bytes)  
+	-	`sha256:c87003420138615b1f67de15fa0eacb44ae91c9c84ccd2635d434c99eb3d23cd`  
+		Last Modified: Wed, 15 Mar 2017 20:44:44 GMT  
+		Size: 179.6 MB (179602047 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
