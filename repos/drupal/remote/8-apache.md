@@ -1,7 +1,7 @@
 ## `drupal:8-apache`
 
 ```console
-$ docker pull drupal@sha256:b055ba9f8f4add53a4e4f2efc741ed24db1b2dc7087094d85da917f87171998f
+$ docker pull drupal@sha256:56ed507d09ad7b3eff61a057f9e39090083d1ab48133ce63878e5d54260e0c95
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull drupal@sha256:b055ba9f8f4add53a4e4f2efc741ed24db1b2dc7087094d85da9
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **171.8 MB (171798041 bytes)**  
+-	Total Size: **171.8 MB (171798427 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:069631cd538835c5ad2e2d48d271abe795beb1b68b8a79382cd4ad42759573d9`
+-	Image ID: `sha256:2023e26a7190ff5b6356283cd3e074c2d05735037ec6eea9b899a3ccc1d63ee1`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -88,11 +88,11 @@ RUN set -ex 	&& buildDeps=' 		libjpeg62-turbo-dev 		libpng12-dev 		libpq-dev 	' 
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 # Wed, 01 Mar 2017 23:46:25 GMT
 WORKDIR /var/www/html
-# Wed, 01 Mar 2017 23:46:26 GMT
-ENV DRUPAL_VERSION=8.2.6
-# Wed, 01 Mar 2017 23:46:27 GMT
-ENV DRUPAL_MD5=57526a827771ea8a06db1792f1602a85
-# Wed, 01 Mar 2017 23:46:34 GMT
+# Thu, 16 Mar 2017 18:24:57 GMT
+ENV DRUPAL_VERSION=8.2.7
+# Thu, 16 Mar 2017 18:24:58 GMT
+ENV DRUPAL_MD5=10b1669f750a9996096e76059c157b9a
+# Thu, 16 Mar 2017 18:25:05 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites modules themes
 ```
 
@@ -161,7 +161,7 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Wed, 01 Mar 2017 23:58:42 GMT  
 		Size: 333.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b116cfbd22f63811e5aa6557a1ac995738ce4be3d4fbba48b05155f3c8d3d893`  
-		Last Modified: Wed, 01 Mar 2017 23:58:52 GMT  
-		Size: 12.2 MB (12179267 bytes)  
+	-	`sha256:94e38f37efdb25dc6e0795d5831d29734d34a7b254b10817e82f6e82b0054281`  
+		Last Modified: Thu, 16 Mar 2017 18:30:04 GMT  
+		Size: 12.2 MB (12179653 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
