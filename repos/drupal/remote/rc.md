@@ -1,7 +1,7 @@
 ## `drupal:rc`
 
 ```console
-$ docker pull drupal@sha256:75ee1a415d735d0bd4af7575722f5f2e7f7417df4d1cd667aeb2553ab896720a
+$ docker pull drupal@sha256:853dd7ecd7b24fe72b204e2d2304f657477e80a822b5ce42624afdc4d17dee86
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull drupal@sha256:75ee1a415d735d0bd4af7575722f5f2e7f7417df4d1cd667aeb2
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **172.6 MB (172595902 bytes)**  
+-	Total Size: **172.6 MB (172590528 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c11d0c145f3d483ac12e1bf11f578f09e63f71490ea7a11fd0e9476cc8aea25f`
+-	Image ID: `sha256:5542fc731ea047558092d1209685f4e67399581722eb552a31e907ef0d9d6ec0`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -88,11 +88,11 @@ RUN set -ex 	&& buildDeps=' 		libjpeg62-turbo-dev 		libpng12-dev 		libpq-dev 	' 
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 # Wed, 01 Mar 2017 23:42:43 GMT
 WORKDIR /var/www/html
-# Wed, 01 Mar 2017 23:42:44 GMT
-ENV DRUPAL_VERSION=8.3.0-rc1
-# Wed, 01 Mar 2017 23:42:44 GMT
-ENV DRUPAL_MD5=0acd6c49d5626cd47077eb2650a409cb
-# Wed, 01 Mar 2017 23:42:52 GMT
+# Thu, 16 Mar 2017 18:24:28 GMT
+ENV DRUPAL_VERSION=8.3.0-rc2
+# Thu, 16 Mar 2017 18:24:28 GMT
+ENV DRUPAL_MD5=3bcddc9a48801f7035c7cb0e6f02f6d0
+# Thu, 16 Mar 2017 18:24:36 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites modules themes
 ```
 
@@ -161,7 +161,7 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Wed, 01 Mar 2017 23:53:03 GMT  
 		Size: 333.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d081ebde1a9a22980a04076668044f4c540431bdb8f1b8baa037944fe6696ec`  
-		Last Modified: Wed, 01 Mar 2017 23:53:17 GMT  
-		Size: 12.4 MB (12402353 bytes)  
+	-	`sha256:2db73425cbb06719c446f7feeddc64fb216dc981ff12121cb983db804814afe6`  
+		Last Modified: Thu, 16 Mar 2017 18:25:50 GMT  
+		Size: 12.4 MB (12396979 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
