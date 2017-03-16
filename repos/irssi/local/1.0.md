@@ -1,16 +1,16 @@
-# `irssi:1.0.1`
+# `irssi:1.0.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2b50ac62906c2a36df0d3d274b27a2022e21ad8f3aeaea2649df3836d0501a68`
-- Created: `2017-02-28T03:39:40.527892863Z`
+- Image ID: `sha256:54ee2245a331c3688be386eebd157b505780292316d4cac10caa2004f3cbc3f6`
+- Created: `2017-03-13T18:26:07.743768476Z`
 - Arch: `linux`/`amd64`
 - Command: `["irssi"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `HOME=/home/user`
   - `LANG=C.UTF-8`
-  - `IRSSI_VERSION=1.0.1`
+  - `IRSSI_VERSION=1.0.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2458,11 +2458,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libwww-robotrules-perl/6.01-1/
 - https://sources.debian.net/src/libwww-robotrules-perl/6.01-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `linux=3.16.39-1+deb8u1`
+### `dpkg` source package: `linux=3.16.39-1+deb8u2`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.16.39-1+deb8u1`
+- `linux-libc-dev:amd64=3.16.39-1+deb8u2`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2470,8 +2470,19 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.16.39-1+deb8u2
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.39-1+deb8u2.dsc' linux_3.16.39-1+deb8u2.dsc 140609 SHA256:221bbebc3bf967cb6d55468d849c87bb5aee1b3d8b8eebd150dc4ec969d775dd
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.39.orig.tar.xz' linux_3.16.39.orig.tar.xz 81806060 SHA256:c36466398823435894e3cb3dc2813be8499c0e19a3f1787c202e15136c16207f
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.39-1+deb8u2.debian.tar.xz' linux_3.16.39-1+deb8u2.debian.tar.xz 3227812 SHA256:72991107d981f46b34932d24bde9e752f2718419d107bfb42d9340f9628c203c
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/linux/3.16.39-1+deb8u2/
+- https://sources.debian.net/src/linux/3.16.39-1+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
