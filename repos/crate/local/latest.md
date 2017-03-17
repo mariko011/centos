@@ -2,12 +2,12 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bf42a15b950ad50e4f08c81a9615c9b042e530ea8ffc12d871a82076bcda3edd`
-- Created: `2017-03-03T21:48:08.891886646Z`
+- Image ID: `sha256:ae465cbdc754281c92036d56a800293fd51dcd7760a7841e536e7dbdff558d0c`
+- Created: `2017-03-15T21:17:36.539830548Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["crate"]`
 - Environment:
   - `PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.9`
-  - `CRATE_VERSION=1.0.3`
+  - `CRATE_VERSION=1.0.5`
