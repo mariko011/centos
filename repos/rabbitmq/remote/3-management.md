@@ -1,7 +1,7 @@
 ## `rabbitmq:3-management`
 
 ```console
-$ docker pull rabbitmq@sha256:16708e83e8d632530a733f2eba14e74a0655ec04c337acd54677467982dc60e2
+$ docker pull rabbitmq@sha256:fbb8916974d21f3d90edf5a3a9623c9c006c8dada86a57ed2dd48b344554e64c
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull rabbitmq@sha256:16708e83e8d632530a733f2eba14e74a0655ec04c337acd546
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.1 MB (86063702 bytes)**  
+-	Total Size: **86.1 MB (86081263 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f7ba5905147a443f29b1afcb2c09284aa9b5efa05e6f03387ef63300b6003d5b`
+-	Image ID: `sha256:af7e137081656913c5ad739a55310f1eb37123f4013efff71fac0887bfd8f848`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -40,37 +40,37 @@ ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
 RUN set -ex; 	key='0A9AF2115F4687BD29803A206B73A36E6026DFCA'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/rabbitmq.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
 # Tue, 28 Feb 2017 22:41:52 GMT
 RUN echo 'deb http://www.rabbitmq.com/debian testing main' > /etc/apt/sources.list.d/rabbitmq.list
-# Thu, 16 Mar 2017 18:57:00 GMT
-ENV RABBITMQ_VERSION=3.6.7
-# Thu, 16 Mar 2017 18:57:01 GMT
-ENV RABBITMQ_DEBIAN_VERSION=3.6.7-1
-# Thu, 16 Mar 2017 18:57:10 GMT
+# Fri, 17 Mar 2017 23:29:46 GMT
+ENV RABBITMQ_VERSION=3.6.8
+# Fri, 17 Mar 2017 23:29:46 GMT
+ENV RABBITMQ_DEBIAN_VERSION=3.6.8-1
+# Fri, 17 Mar 2017 23:29:55 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		rabbitmq-server=$RABBITMQ_DEBIAN_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 16 Mar 2017 18:57:11 GMT
+# Fri, 17 Mar 2017 23:29:55 GMT
 ENV PATH=/usr/lib/rabbitmq/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 16 Mar 2017 18:57:11 GMT
+# Fri, 17 Mar 2017 23:29:56 GMT
 ENV HOME=/var/lib/rabbitmq
-# Thu, 16 Mar 2017 18:57:13 GMT
+# Fri, 17 Mar 2017 23:29:57 GMT
 RUN mkdir -p /var/lib/rabbitmq /etc/rabbitmq 	&& echo '[ { rabbit, [ { loopback_users, [ ] } ] } ].' > /etc/rabbitmq/rabbitmq.config 	&& chown -R rabbitmq:rabbitmq /var/lib/rabbitmq /etc/rabbitmq 	&& chmod -R 777 /var/lib/rabbitmq /etc/rabbitmq
-# Thu, 16 Mar 2017 18:57:14 GMT
+# Fri, 17 Mar 2017 23:29:58 GMT
 VOLUME [/var/lib/rabbitmq]
-# Thu, 16 Mar 2017 18:57:15 GMT
+# Fri, 17 Mar 2017 23:29:59 GMT
 RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
-# Thu, 16 Mar 2017 18:57:17 GMT
+# Fri, 17 Mar 2017 23:30:00 GMT
 RUN ln -sf /usr/lib/rabbitmq/lib/rabbitmq_server-$RABBITMQ_VERSION/plugins /plugins
-# Thu, 16 Mar 2017 18:57:18 GMT
+# Fri, 17 Mar 2017 23:30:01 GMT
 COPY file:aea0de868079820b38523daba3301f9d1b03f85139fbcab491d2bc10c2540046 in /usr/local/bin/ 
-# Thu, 16 Mar 2017 18:57:19 GMT
+# Fri, 17 Mar 2017 23:30:03 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Thu, 16 Mar 2017 18:57:20 GMT
+# Fri, 17 Mar 2017 23:30:03 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 16 Mar 2017 18:57:21 GMT
+# Fri, 17 Mar 2017 23:30:04 GMT
 EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
-# Thu, 16 Mar 2017 18:57:21 GMT
+# Fri, 17 Mar 2017 23:30:05 GMT
 CMD ["rabbitmq-server"]
-# Thu, 16 Mar 2017 18:57:25 GMT
+# Fri, 17 Mar 2017 23:30:08 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Thu, 16 Mar 2017 18:57:26 GMT
+# Fri, 17 Mar 2017 23:30:09 GMT
 EXPOSE 15671/tcp 15672/tcp
 ```
 
@@ -107,31 +107,31 @@ EXPOSE 15671/tcp 15672/tcp
 		Last Modified: Thu, 02 Mar 2017 03:33:05 GMT  
 		Size: 212.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7074c0fe33782b7b40e6b4f96b47cf80200089c11de3a710d5a651cf49e46a14`  
-		Last Modified: Thu, 16 Mar 2017 18:58:09 GMT  
-		Size: 5.6 MB (5643727 bytes)  
+	-	`sha256:b063d3c60aac24bffdf0d017f16fa1d2c141298eaece2cda52fa7adf70e6fca8`  
+		Last Modified: Fri, 17 Mar 2017 23:30:50 GMT  
+		Size: 5.7 MB (5661293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c6e1e6e03bc858b4295658c86327adfc3691c4c2d3890d2caf600a68f81d376`  
-		Last Modified: Thu, 16 Mar 2017 18:58:06 GMT  
-		Size: 2.3 KB (2286 bytes)  
+	-	`sha256:6c1d9c96a23f58ae741cff40d6bf07258f72b7d075992236d2c67e5c21eefccb`  
+		Last Modified: Fri, 17 Mar 2017 23:30:47 GMT  
+		Size: 2.3 KB (2289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f09826c4f6382be431863fc29c8f69dd84c34ef3ea6e71467470e7b5b9e1c4e8`  
-		Last Modified: Thu, 16 Mar 2017 18:58:06 GMT  
+	-	`sha256:7dfe2ef6e8c6f58ea48ff4bd2755e01540f9a98e7acd5c8b82af2d05341be129`  
+		Last Modified: Fri, 17 Mar 2017 23:30:47 GMT  
 		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c6642646f2633c7c023edb804947ced9ebe5bd6432b23d59e5e3507d2fa5b2e4`  
-		Last Modified: Thu, 16 Mar 2017 18:58:06 GMT  
-		Size: 126.0 B  
+	-	`sha256:897d826fab8efd8b50b0e422c95509d8c52732a004ebc991e1bb6fefe95e861e`  
+		Last Modified: Fri, 17 Mar 2017 23:30:47 GMT  
+		Size: 124.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df93ff95dccca6e112e55305370b59ab5ed7aa9d8a7c2616e8b8f6c074b18481`  
-		Last Modified: Thu, 16 Mar 2017 18:58:06 GMT  
-		Size: 2.7 KB (2713 bytes)  
+	-	`sha256:3bb0f9140447764de96c1bf270b7054e4988c79db5e9b79906d4ff32e1eb7b00`  
+		Last Modified: Fri, 17 Mar 2017 23:30:47 GMT  
+		Size: 2.7 KB (2708 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46e039ffd1aa3421350e7da992891fd6d9e5053fd91289dc40f8e5df5721150b`  
-		Last Modified: Thu, 16 Mar 2017 18:58:07 GMT  
+	-	`sha256:f288a0eb4a3117432080ef5ba57bdd89b2c31fc070a90e5424c894a89b283a60`  
+		Last Modified: Fri, 17 Mar 2017 23:30:47 GMT  
 		Size: 120.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05430f7202c821edd08b14114d43cb5df7b139b556407af3e62b63bb8718f1cf`  
-		Last Modified: Thu, 16 Mar 2017 18:59:30 GMT  
-		Size: 186.0 B  
+	-	`sha256:e1821571ce3f52d9f7453620127d63afd06c09cbc3cec8ca68e432e3da501542`  
+		Last Modified: Fri, 17 Mar 2017 23:32:10 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
