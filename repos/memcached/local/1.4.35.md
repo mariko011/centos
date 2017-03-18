@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:83bc4297d84d9699d084370ac61ca93ee5520477ac5aa65989dc84f7f7628c3b`
-- Created: `2017-02-28T06:02:38.415981439Z`
+- Image ID: `sha256:deb4e908c6ae9a163e297aea5e2096e6d4e7fcacd06dd8a778871985bd0edb2a`
+- Created: `2017-03-16T18:42:16.359719093Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["memcached"]`
@@ -305,6 +305,36 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/debian/copyright (for direct copyright/license information)
+
+### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
+
+Binary Packages:
+
+- `libsasl2-2:amd64=2.1.26.dfsg1-13+deb8u1`
+- `libsasl2-modules-db:amd64=2.1.26.dfsg1-13+deb8u1`
+
+Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
+
+- `BSD-2-clause`
+- `BSD-4-clause`
+- `GPL-2`
+- `GPL-2+`
+- `GPL-3`
+- `GPL-3+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris cyrus-sasl2=2.1.26.dfsg1-13+deb8u1
+'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.dsc' cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.dsc 3461 SHA256:ed1cba2b699aaf1ad08b99ea82d40c583c02817f6fbd765b9bbcd940d72fc3f3
+'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1.orig.tar.gz' cyrus-sasl2_2.1.26.dfsg1.orig.tar.gz 1494337 SHA256:172c39555012f479543ce7305949db75df708771fe8f8b34248027f09e53bb85
+'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.debian.tar.xz' cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.debian.tar.xz 94284 SHA256:14e00798c41b6fae965211f1af8b47a67d22001146d0019f81af0fc7be9f162f
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/cyrus-sasl2/2.1.26.dfsg1-13+deb8u1/
+- https://sources.debian.net/src/cyrus-sasl2/2.1.26.dfsg1-13+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `dash=0.5.7-4`
 
