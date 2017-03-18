@@ -1337,14 +1337,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.7.8.dfsg-5.1ubuntu4.15
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.7.8.dfsg-5.1ubuntu4.15.dsc' libxml2_2.7.8.dfsg-5.1ubuntu4.15.dsc 2523 SHA256:acd583d838224613c4c76855f08cbde34c28b73a17d8bb7ff7d45eaefdebeb0b
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.7.8.dfsg.orig.tar.gz' libxml2_2.7.8.dfsg.orig.tar.gz 3509930 SHA256:9f5262963fda356708903b42ff862a816c714582d0cf41477a8b3839945f0e43
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.7.8.dfsg-5.1ubuntu4.15.diff.gz' libxml2_2.7.8.dfsg-5.1ubuntu4.15.diff.gz 147121 SHA256:acbab1be41ab0059f9b1181dd3f03a9002a2df8160d82d68c7bf699dfbc33848
-```
 
 ### `dpkg` source package: `lsb=4.0-0ubuntu20.3`
 

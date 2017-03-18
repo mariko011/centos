@@ -972,14 +972,8 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`, `/usr/share/doc
 - `GZip`
 - `OpenGroup-BSD-like`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris freetype=2.6.3-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.3-3ubuntu1.dsc' freetype_2.6.3-3ubuntu1.dsc 2222 SHA256:b63c6459b48423c4d3dd926b5ef4e781406407ef3d9ba57e01ce19e2ca933aed
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.3.orig.tar.gz' freetype_2.6.3.orig.tar.gz 7313547 SHA256:814a22aad85e8ca2cb4acfc2e9dc59caa6eded4f6619590f7bd0a721e4b076a3
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.3-3ubuntu1.diff.gz' freetype_2.6.3-3ubuntu1.diff.gz 42344 SHA256:3a1a9212bce0a5d34e5af5429f67d2160013e6c9ee51646cf6698ca3eef656a7
-```
 
 ### `dpkg` source package: `gcc-6=6.3.0-2ubuntu1`
 
@@ -1130,14 +1124,8 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris git=1:2.10.2-3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.10.2-3.dsc' git_2.10.2-3.dsc 2855 SHA256:efd3ae1c71c897f979cd266745b83b3bd49efc5f0401192d1a940d526b1e7e02
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.10.2.orig.tar.xz' git_2.10.2.orig.tar.xz 4106108 SHA256:94802903dd707d85ca3b9a2be35e936a54ce86375f52c6a789efe7ce7e238671
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.10.2-3.debian.tar.xz' git_2.10.2-3.debian.tar.xz 511884 SHA256:6b9068806c7d3408337a6c3d9b23479acd294d0e3d656f88abda1650c2659fc4
-```
 
 ### `dpkg` source package: `glib2.0=2.51.2-1`
 
@@ -1270,14 +1258,8 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `LGPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.51.3-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.51.3-0ubuntu1.dsc' gobject-introspection_1.51.3-0ubuntu1.dsc 2992 SHA256:d9e44bc1e0f731b9739cd64e7cb07b570d9062af2bfe388069e562a281f04bb9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.51.3.orig.tar.xz' gobject-introspection_1.51.3.orig.tar.xz 1399632 SHA256:80acbffd89452b8e30f8a50f46d64517a866ca63157bd1fa78bedb69f9de11c3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.51.3-0ubuntu1.debian.tar.xz' gobject-introspection_1.51.3-0ubuntu1.debian.tar.xz 19224 SHA256:0d5b7e46cfc5f7ae914e8106d996c097d1fc7faca3d84170f59ae543597c52ac
-```
 
 ### `dpkg` source package: `graphite2=1.3.9-3`
 

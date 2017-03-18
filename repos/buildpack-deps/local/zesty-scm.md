@@ -614,14 +614,8 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris git=1:2.10.2-3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.10.2-3.dsc' git_2.10.2-3.dsc 2855 SHA256:efd3ae1c71c897f979cd266745b83b3bd49efc5f0401192d1a940d526b1e7e02
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.10.2.orig.tar.xz' git_2.10.2.orig.tar.xz 4106108 SHA256:94802903dd707d85ca3b9a2be35e936a54ce86375f52c6a789efe7ce7e238671
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.10.2-3.debian.tar.xz' git_2.10.2-3.debian.tar.xz 511884 SHA256:6b9068806c7d3408337a6c3d9b23479acd294d0e3d656f88abda1650c2659fc4
-```
 
 ### `dpkg` source package: `glibc=2.24-7ubuntu2`
 
