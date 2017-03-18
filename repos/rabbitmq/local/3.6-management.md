@@ -1,9 +1,9 @@
-# `rabbitmq:3.6.6-management`
+# `rabbitmq:3.6.8-management`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c74093aa98959e2fa8f31521c93896b16c6659655cda6cb0f23bdfceb5fc1594`
-- Created: `2017-02-28T22:42:09.224177566Z`
+- Image ID: `sha256:af7e137081656913c5ad739a55310f1eb37123f4013efff71fac0887bfd8f848`
+- Created: `2017-03-17T23:30:09.056528358Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["rabbitmq-server"]`
@@ -12,6 +12,6 @@
   - `GOSU_VERSION=1.7`
   - `RABBITMQ_LOGS=-`
   - `RABBITMQ_SASL_LOGS=-`
-  - `RABBITMQ_VERSION=3.6.6`
-  - `RABBITMQ_DEBIAN_VERSION=3.6.6-1`
+  - `RABBITMQ_VERSION=3.6.8`
+  - `RABBITMQ_DEBIAN_VERSION=3.6.8-1`
   - `HOME=/var/lib/rabbitmq`
