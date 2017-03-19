@@ -1,9 +1,9 @@
-# `mariadb:10.1.21`
+# `mariadb:10.1.22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:56741a13bbb9887214bf8d8b3e0a088f36cb69102a4290c3db279838bba0bef8`
-- Created: `2017-02-28T05:56:09.287932562Z`
+- Image ID: `sha256:9336744711cdd11fb60abded85c87a40ff0c4b36a32406d054f5f1bc9975f4b7`
+- Created: `2017-03-16T18:38:27.292045426Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["mysqld"]`
@@ -12,7 +12,7 @@
   - `GOSU_VERSION=1.7`
   - `GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
   - `MARIADB_MAJOR=10.1`
-  - `MARIADB_VERSION=10.1.21+maria-1~jessie`
+  - `MARIADB_VERSION=10.1.22+maria-1~jessie`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2487,26 +2487,31 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/lvm2/2.02.111-2.2+deb8u1/
 - https://sources.debian.net/src/lvm2/2.02.111-2.2+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `mariadb-10.1=10.1.21+maria-1~jessie`
+### `dpkg` source package: `mariadb-10.1=10.1.22+maria-1~jessie`
 
 Binary Packages:
 
-- `libmariadbclient18=10.1.21+maria-1~jessie`
-- `libmysqlclient18=10.1.21+maria-1~jessie`
-- `mariadb-client-10.1=10.1.21+maria-1~jessie`
-- `mariadb-client-core-10.1=10.1.21+maria-1~jessie`
-- `mariadb-common=10.1.21+maria-1~jessie`
-- `mariadb-server=10.1.21+maria-1~jessie`
-- `mariadb-server-10.1=10.1.21+maria-1~jessie`
-- `mariadb-server-core-10.1=10.1.21+maria-1~jessie`
-- `mysql-common=10.1.21+maria-1~jessie`
+- `libmariadbclient18=10.1.22+maria-1~jessie`
+- `libmysqlclient18=10.1.22+maria-1~jessie`
+- `mariadb-client-10.1=10.1.22+maria-1~jessie`
+- `mariadb-client-core-10.1=10.1.22+maria-1~jessie`
+- `mariadb-common=10.1.22+maria-1~jessie`
+- `mariadb-server=10.1.22+maria-1~jessie`
+- `mariadb-server-10.1=10.1.22+maria-1~jessie`
+- `mariadb-server-core-10.1=10.1.22+maria-1~jessie`
+- `mysql-common=10.1.22+maria-1~jessie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris mariadb-10.1=10.1.22+maria-1~jessie
+'http://ftp.osuosl.org/pub/mariadb/repo/10.1/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.22+maria-1~jessie.dsc' mariadb-10.1_10.1.22+maria-1~jessie.dsc 2506 SHA256:b3aec8617a3e6adac0c1aa369b0dc89f1fad8b8ccb03d8cc52aec0279e3fe27e
+'http://ftp.osuosl.org/pub/mariadb/repo/10.1/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.22+maria-1~jessie.tar.gz' mariadb-10.1_10.1.22+maria-1~jessie.tar.gz 61947696 SHA256:4a19d5f3a5ad77205996d3a107dab4b0780f61420be22d49024b8b9ec941adfd
+```
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
@@ -2768,11 +2773,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/pcre3/2:8.35-3.3+deb8u4/
 - https://sources.debian.net/src/pcre3/2:8.35-3.3+deb8u4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `percona-xtrabackup=2.3.7-1.jessie`
+### `dpkg` source package: `percona-xtrabackup=2.3.7-2.jessie`
 
 Binary Packages:
 
-- `percona-xtrabackup=2.3.7-1.jessie`
+- `percona-xtrabackup=2.3.7-2.jessie`
 
 Licenses: (parsed from: `/usr/share/doc/percona-xtrabackup/copyright`)
 
