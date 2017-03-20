@@ -1,9 +1,9 @@
-# `drupal:8.3.0-rc1-apache`
+# `drupal:8.3.0-rc2-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c11d0c145f3d483ac12e1bf11f578f09e63f71490ea7a11fd0e9476cc8aea25f`
-- Created: `2017-03-01T23:42:52.612894908Z`
+- Image ID: `sha256:5542fc731ea047558092d1209685f4e67399581722eb552a31e907ef0d9d6ec0`
+- Created: `2017-03-16T18:24:36.421396896Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
 - Command: `["apache2-foreground"]`
@@ -24,8 +24,8 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.2.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=d815a0c39fd57bab1434a77ff0610fb507c22f790c66cd6f26e27030c4b3e971`
   - `PHP_MD5=d79afea1870277c86fac903566fb6c5d`
-  - `DRUPAL_VERSION=8.3.0-rc1`
-  - `DRUPAL_MD5=0acd6c49d5626cd47077eb2650a409cb`
+  - `DRUPAL_VERSION=8.3.0-rc2`
+  - `DRUPAL_MD5=3bcddc9a48801f7035c7cb0e6f02f6d0`
 
 ## `dpkg` (`.deb`-based packages)
 
