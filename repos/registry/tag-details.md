@@ -6,6 +6,7 @@
 -	[`registry:2.6`](#registry26)
 -	[`registry:2.6.0`](#registry260)
 -	[`registry:latest`](#registrylatest)
+-	[`registry:2.6.1-rc.2`](#registry261-rc2)
 
 ## `registry:2`
 
@@ -254,3 +255,7 @@ CMD ["/etc/docker/registry/config.yml"]
 		Last Modified: Sat, 04 Mar 2017 05:49:36 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `registry:2.6.1-rc.2`
+
+**does not exist** (yet?)
