@@ -1,14 +1,14 @@
-# `erlang:19.2.3-slim`
+# `erlang:19.3-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d911730ba6240e49571681f53a0e089f5697e8b9c2610ffc0a5d8e5cb1326bd7`
-- Created: `2017-02-27T23:30:55.681451644Z`
+- Image ID: `sha256:33bca9b4e523379a55358b98fc220ef9d0e96ba85f9a758a8ba99bb9ca51f4e3`
+- Created: `2017-03-21T16:54:09.944079537Z`
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=19.2.3`
+  - `OTP_VERSION=19.3`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2355,11 +2355,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libxxf86vm/1:1.1.3-1/
 - https://sources.debian.net/src/libxxf86vm/1:1.1.3-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `linux=3.16.39-1+deb8u1`
+### `dpkg` source package: `linux=3.16.39-1+deb8u2`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.16.39-1+deb8u1`
+- `linux-libc-dev:amd64=3.16.39-1+deb8u2`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2367,8 +2367,19 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.16.39-1+deb8u2
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.39-1+deb8u2.dsc' linux_3.16.39-1+deb8u2.dsc 140609 SHA256:221bbebc3bf967cb6d55468d849c87bb5aee1b3d8b8eebd150dc4ec969d775dd
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.39.orig.tar.xz' linux_3.16.39.orig.tar.xz 81806060 SHA256:c36466398823435894e3cb3dc2813be8499c0e19a3f1787c202e15136c16207f
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.39-1+deb8u2.debian.tar.xz' linux_3.16.39-1+deb8u2.debian.tar.xz 3227812 SHA256:72991107d981f46b34932d24bde9e752f2718419d107bfb42d9340f9628c203c
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/linux/3.16.39-1+deb8u2/
+- https://sources.debian.net/src/linux/3.16.39-1+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-2`
 
