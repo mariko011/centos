@@ -1,7 +1,7 @@
 ## `pypy:2-5-onbuild`
 
 ```console
-$ docker pull pypy@sha256:63ced6311b0212b051d8cb1f13a554a62127fd88fc2dc3a38a0a6ee60655fdd9
+$ docker pull pypy@sha256:e87a2bc7bcdc9f36578ec63b0ccbfbf3c06bb3bc721173fa1a0ab9ac66c41cff
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull pypy@sha256:63ced6311b0212b051d8cb1f13a554a62127fd88fc2dc3a38a0a6e
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **273.4 MB (273448728 bytes)**  
+-	Total Size: **273.5 MB (273460557 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5bc8f6e58660426ff413b1155fd1c1954e2a690f4950c9a35ab7beb0d26df538`
+-	Image ID: `sha256:a65a1a76ff73325ac94fe834205a8a49a2369ba307305d6b9b0cc9114b2e71ea`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
@@ -33,25 +33,25 @@ ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:
 ENV LANG=C.UTF-8
 # Tue, 28 Feb 2017 20:39:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 20:39:49 GMT
-ENV PYPY_VERSION=5.6.0
-# Tue, 28 Feb 2017 20:39:49 GMT
-ENV PYPY_SHA256SUM=aad55328cb0673a60b2633dcc3c36cf452917ac906b577eb3aed5876a7666fca
-# Tue, 28 Feb 2017 20:39:49 GMT
+# Tue, 21 Mar 2017 17:09:09 GMT
+ENV PYPY_VERSION=5.7.0
+# Tue, 21 Mar 2017 17:09:09 GMT
+ENV PYPY_SHA256SUM=64bed80e299b09c13296f577a0f52c5d4be9f7c699a390ca6026f967aeff3846
+# Tue, 21 Mar 2017 17:09:10 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Tue, 28 Feb 2017 20:40:10 GMT
+# Tue, 21 Mar 2017 17:09:29 GMT
 RUN set -ex 	&& wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy2-v${PYPY_VERSION}-linux64.tar.bz2" 	&& echo "$PYPY_SHA256SUM  pypy.tar.bz2" | sha256sum -c 	&& tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2 	&& rm pypy.tar.bz2 			&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& pypy /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	&& pip install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& rm -rf ~/.cache
-# Tue, 28 Feb 2017 20:40:10 GMT
+# Tue, 21 Mar 2017 17:09:30 GMT
 CMD ["pypy"]
-# Tue, 28 Feb 2017 20:40:12 GMT
+# Tue, 21 Mar 2017 17:10:32 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 28 Feb 2017 20:40:12 GMT
+# Tue, 21 Mar 2017 17:10:33 GMT
 WORKDIR /usr/src/app
-# Tue, 28 Feb 2017 20:40:12 GMT
+# Tue, 21 Mar 2017 17:10:33 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Tue, 28 Feb 2017 20:40:13 GMT
+# Tue, 21 Mar 2017 17:10:34 GMT
 ONBUILD RUN pip install -r requirements.txt
-# Tue, 28 Feb 2017 20:40:13 GMT
+# Tue, 21 Mar 2017 17:10:35 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -76,11 +76,11 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Wed, 01 Mar 2017 15:54:13 GMT  
 		Size: 2.9 MB (2889259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:773cc1f0d35a936f85beff414c4443c1dacad1c84bef6084dd5e1d8b56fb0bca`  
-		Last Modified: Thu, 02 Mar 2017 03:21:52 GMT  
-		Size: 28.3 MB (28305846 bytes)  
+	-	`sha256:3c6c22ec3ebb6ad961dcd9e513b86dab9a9d9b590752441a67f11b251b0d2604`  
+		Last Modified: Tue, 21 Mar 2017 17:11:10 GMT  
+		Size: 28.3 MB (28317673 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5601b254080e30fbbf490193244dd1972162e7629fa1c53ac3da6574fd5a773`  
-		Last Modified: Thu, 02 Mar 2017 03:23:07 GMT  
-		Size: 125.0 B  
+	-	`sha256:81bc0d2858858b14a5d707b5538fe84d594e761ca7d6a59dc7375eef75c11b1d`  
+		Last Modified: Tue, 21 Mar 2017 17:14:03 GMT  
+		Size: 127.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
