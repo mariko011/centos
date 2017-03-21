@@ -1079,14 +1079,8 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris eglibc=2.19-0ubuntu6.9
-'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19-0ubuntu6.9.dsc' eglibc_2.19-0ubuntu6.9.dsc 5810 SHA256:32810667e46de5c38e7580d91a61e77a1e9cdb1e4f180e8378ac2ea4a279533d
-'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19.orig.tar.xz' eglibc_2.19.orig.tar.xz 12610800 SHA256:e5d30be72b702dffae527779af1be755f0dfbf13c171998a04f7265cd4da131f
-'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19-0ubuntu6.9.debian.tar.xz' eglibc_2.19-0ubuntu6.9.debian.tar.xz 1037188 SHA256:dd13d6ef1dc6fa6aba2277ad36a58709ff3973501dac1f8df3faed35b5c0f280
-```
 
 ### `dpkg` source package: `eigen3=3.2.0-8`
 
@@ -1303,14 +1297,8 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 - `GZip`
 - `OpenGroup-BSD-like`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris freetype=2.5.2-1ubuntu2.5
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.5.2-1ubuntu2.5.dsc' freetype_2.5.2-1ubuntu2.5.dsc 2173 SHA256:930c7ef28456568759b19af9478322c8bb56557bcaff4338a2d3de0206401f70
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.5.2.orig.tar.gz' freetype_2.5.2.orig.tar.gz 1971155 SHA256:5fda4996e43cfdf9b602a0eb5abde014f1a3c3b2d82bbb9b86942011c63f5c3a
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.5.2-1ubuntu2.5.diff.gz' freetype_2.5.2-1ubuntu2.5.diff.gz 85016 SHA256:cd28f23e989026e2a4a5e4715f919540857249013ee9ae70e7d845e830158e38
-```
 
 ### `dpkg` source package: `fribidi=0.19.6-1`
 
@@ -1565,14 +1553,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls-dev/copyright`, `/usr/share/do
 - `LGPL-2.1`
 - `The main library is licensed under GNU Lesser General Public`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls26=2.12.23-12ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23-12ubuntu2.6.dsc' gnutls26_2.12.23-12ubuntu2.6.dsc 2722 SHA256:a94ac7d08a43922b34756f295f2f5da2b4c6863fe642235524af8d00938ebab7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23.orig.tar.bz2' gnutls26_2.12.23.orig.tar.bz2 7279415 SHA256:dfa67a7e40727eb0913e75f3c44911d5d8cd58d1ead5acfe73dd933fc0d17ed2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23-12ubuntu2.6.debian.tar.gz' gnutls26_2.12.23-12ubuntu2.6.debian.tar.gz 44614 SHA256:acdcfa629dbbf979b70a71e65bd7a718c4286adb65d331a15d80bbd2bbca3599
-```
 
 ### `dpkg` source package: `graphite2=1.3.6-1ubuntu0.14.04.1`
 
