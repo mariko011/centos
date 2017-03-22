@@ -1,13 +1,13 @@
-# `memcached:1.4.35-alpine`
+# `memcached:1.4.36-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:dcc86913f15b81f2b5b77b42cd6932febd0cd26d1bbb7fd97f481e6d344048b0`
-- Created: `2017-03-16T18:42:33.887710752Z`
+- Image ID: `sha256:9acbc61bd2648ea0d69f6656a549fad2ac6d8cc87728d10d9e4d01d446659ba1`
+- Created: `2017-03-21T16:51:44.119867302Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["memcached"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `MEMCACHED_VERSION=1.4.35`
-  - `MEMCACHED_SHA1=787991c0df75defbb91518c9796f8244852a018a`
+  - `MEMCACHED_VERSION=1.4.36`
+  - `MEMCACHED_SHA1=519b417515206b0b95ff9bf14106a891f6a2252e`

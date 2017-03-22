@@ -1,16 +1,16 @@
-# `memcached:1.4.35`
+# `memcached:1.4.36`
 
 ## Docker Metadata
 
-- Image ID: `sha256:deb4e908c6ae9a163e297aea5e2096e6d4e7fcacd06dd8a778871985bd0edb2a`
-- Created: `2017-03-16T18:42:16.359719093Z`
+- Image ID: `sha256:6b89c50fe94007195d5805e009074ffdc187e39be2811bc382dedf5a05e1c080`
+- Created: `2017-03-21T16:51:03.53189022Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["memcached"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `MEMCACHED_VERSION=1.4.35`
-  - `MEMCACHED_SHA1=787991c0df75defbb91518c9796f8244852a018a`
+  - `MEMCACHED_VERSION=1.4.36`
+  - `MEMCACHED_SHA1=519b417515206b0b95ff9bf14106a891f6a2252e`
 
 ## `dpkg` (`.deb`-based packages)
 
