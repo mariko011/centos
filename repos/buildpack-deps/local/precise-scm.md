@@ -553,14 +553,8 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris eglibc=2.15-0ubuntu10.15
-'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.15-0ubuntu10.15.dsc' eglibc_2.15-0ubuntu10.15.dsc 5829 SHA256:f5c91a5637874aff995a3a84cb59eba6d9489089f02501a2ee94699a4ef810f7
-'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.15.orig.tar.gz' eglibc_2.15.orig.tar.gz 23466060 SHA256:16e528f94e623ef811c5c4b593fcc0369ee67b38a1df8d3e020320b5871a68f6
-'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.15-0ubuntu10.15.diff.gz' eglibc_2.15-0ubuntu10.15.diff.gz 1916989 SHA256:4a08ec5b3d733feb937f37321d697f63c4c11099ff33abbf90bf4c55126a683e
-```
 
 ### `dpkg` source package: `elfutils=0.152-1ubuntu3.1`
 
@@ -753,14 +747,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls26/copyright`)
 - `LGPL-2.1`
 - `The main library is licensed under GNU Lesser General Public`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls26=2.12.14-5ubuntu3.13
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.14-5ubuntu3.13.dsc' gnutls26_2.12.14-5ubuntu3.13.dsc 2685 SHA256:65e5380cb7fc87a1becd21c800657c0b798ce3885b607c46efd1088b7e1f12b9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.14.orig.tar.bz2' gnutls26_2.12.14.orig.tar.bz2 7166618 SHA256:5ee72ba6de7a23cf315792561954451e022dac8730149ca95f93c61e95be2ce3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.14-5ubuntu3.13.debian.tar.gz' gnutls26_2.12.14-5ubuntu3.13.debian.tar.gz 38067 SHA256:05f4925aa1925d24140f2b1fe65389b56c1119b0a03dde2aa0da7d2301002b17
-```
 
 ### `dpkg` source package: `grep=2.10-1`
 

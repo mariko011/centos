@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:92dc6cf39edb84da4b0116167c52a39bd20c09ef9c6e58b30b6e0709f1dcac1d`
-- Created: `2017-02-27T21:26:38.663646365Z`
+- Image ID: `sha256:bc7c13bfdaf5c8d299203972d7b4ec423c7e992408d4e32d14414632a17cc885`
+- Created: `2017-03-21T19:57:22.72526415Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -2187,18 +2187,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tar/1.26+dfsg-0.1+deb7u1/
 - https://sources.debian.net/src/tar/1.26+dfsg-0.1+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tzdata=2016j-0+deb7u1`
+### `dpkg` source package: `tzdata=2017a-0+deb7u1`
 
 Binary Packages:
 
-- `tzdata=2016j-0+deb7u1`
+- `tzdata=2017a-0+deb7u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2017a-0+deb7u1
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017a-0+deb7u1.dsc' tzdata_2017a-0+deb7u1.dsc 1966 SHA256:eb659d68392643de9e23e6a490d6ab4e6f404e018503880c2708e091b56c2966
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017a.orig.tar.gz' tzdata_2017a.orig.tar.gz 323983 SHA256:df3a5c4d0a2cf0cde0b3f35796ccf6c9acfd598b8e70f8dece5404cd7626bbd6
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017a-0+deb7u1.debian.tar.xz' tzdata_2017a-0+deb7u1.debian.tar.xz 101888 SHA256:db3c4d77cfd24376b794142abca5ad305af6ca28fe5143c4d09519398a974173
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/tzdata/2017a-0+deb7u1/
+- https://sources.debian.net/src/tzdata/2017a-0+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ucf=3.0025+nmu3`
 
@@ -2282,19 +2293,30 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/util-linux/2.20.1-5.3/
 - https://sources.debian.net/src/util-linux/2.20.1-5.3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `wget=1.13.4-3+deb7u3`
+### `dpkg` source package: `wget=1.13.4-3+deb7u4`
 
 Binary Packages:
 
-- `wget=1.13.4-3+deb7u3`
+- `wget=1.13.4-3+deb7u4`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
 - `GFDL-1.2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris wget=1.13.4-3+deb7u4
+'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4-3+deb7u4.dsc' wget_1.13.4-3+deb7u4.dsc 1768 SHA256:1d62e31002bce8eb855c9f67d7a79970d0c823a2a689adbb49e05acb75de0bd9
+'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4.orig.tar.gz' wget_1.13.4.orig.tar.gz 2815185 SHA256:24c7710bc9f220ce23d8a9e0f5673b0efc1cace62db6de0239b5863ecc934dcd
+'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4-3+deb7u4.debian.tar.gz' wget_1.13.4-3+deb7u4.debian.tar.gz 28807 SHA256:426c625ef6459e25a3bf991e5d16790e98b58d5af34ae9b38f468c902ee7a028
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/wget/1.13.4-3+deb7u4/
+- https://sources.debian.net/src/wget/1.13.4-3+deb7u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `xz-utils=5.1.1alpha+20120614-2`
 

@@ -1374,14 +1374,8 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`)
 - `LGPL-2.1+`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gtk+3.0=3.22.7-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.7-1ubuntu2.dsc' gtk+3.0_3.22.7-1ubuntu2.dsc 4145 SHA256:b0ceff7205cf078a888b62fd33fc1dbbd79425af49b7ad2a4a7bb2c5621d7f56
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.7.orig.tar.xz' gtk+3.0_3.22.7.orig.tar.xz 18301484 SHA256:a3a27564bfb1679ebbc75c37cd2bcd6e727c8bdfbcd3984d29305bf9ee60d432
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.7-1ubuntu2.debian.tar.xz' gtk+3.0_3.22.7-1ubuntu2.debian.tar.xz 171264 SHA256:da1c2319818ee1e51b15944f602ac2e459edc83e8554a0ef432e0f79ad5e4206
-```
 
 ### `dpkg` source package: `gzip=1.6-4ubuntu1`
 
@@ -3804,14 +3798,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=232-18ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_232-18ubuntu1.dsc' systemd_232-18ubuntu1.dsc 4075 SHA256:617e2211156d573da29963b0186364a4ac8b2ba04cac8878f5d2f4e86dc31be9
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_232-18ubuntu1.debian.tar.xz' systemd_232-18ubuntu1.debian.tar.xz 185312 SHA256:ffe4af971742ee31a7568b0324959b0f34f333d0ebd7073c1e464fc6e5f6b111
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`
 
