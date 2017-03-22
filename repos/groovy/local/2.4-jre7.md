@@ -1,9 +1,9 @@
-# `groovy:2.4.9-jre7`
+# `groovy:2.4.10-jre7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:012b3306268051a16796d6d85a4887f8bdbc8fe6af90035f46f2e68b0cc6613b`
-- Created: `2017-03-14T16:59:33.445055206Z`
+- Image ID: `sha256:097e3b1c854b87aeb6cd7bcbb368311ec707aa5efc85c95607c2d57cd6ea6dac`
+- Created: `2017-03-20T22:36:06.40106469Z`
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
 - Environment:
@@ -13,7 +13,7 @@
   - `JAVA_VERSION=7u121`
   - `JAVA_DEBIAN_VERSION=7u121-2.6.8-2~deb8u1`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=2.4.9`
+  - `GROOVY_VERSION=2.4.10`
 
 ## `dpkg` (`.deb`-based packages)
 

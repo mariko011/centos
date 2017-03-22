@@ -1,9 +1,9 @@
-# `groovy:2.4.9-jre7-alpine`
+# `groovy:2.4.10-jre7-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1c730db09a1508df2e9c9c6fd43c7780df1579c215038cb80ee1e071bba3e5d5`
-- Created: `2017-03-14T17:00:04.607953186Z`
+- Image ID: `sha256:01d14b75548986f2f48224da87ad1cc6beb398027da6f67c347fa22449852ce4`
+- Created: `2017-03-20T22:36:45.752034016Z`
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
 - Environment:
@@ -13,4 +13,4 @@
   - `JAVA_VERSION=7u121`
   - `JAVA_ALPINE_VERSION=7.121.2.6.8-r0`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=2.4.9`
+  - `GROOVY_VERSION=2.4.10`
