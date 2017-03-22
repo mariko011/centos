@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:235b5abfeba5c8ca96c78a5eef5f9dbc36f20fa884900b685d77420816a7218e`
-- Created: `2017-03-07T19:06:40.455832438Z`
+- Image ID: `sha256:d915c37d6c55585f9e10a67ff84549b9db814ebdeac9778fd8d40f57a7ef7db7`
+- Created: `2017-03-20T19:25:53.01578763Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
 - Command: `["mvn"]`
@@ -11,8 +11,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64`
-  - `JAVA_VERSION=9~b159`
-  - `JAVA_DEBIAN_VERSION=9~b159-1`
+  - `JAVA_VERSION=9~b161`
+  - `JAVA_DEBIAN_VERSION=9~b161-1`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 
@@ -2015,7 +2015,7 @@ Likely also available for browsing at:
 
 Binary Packages:
 
-- `libxext6:amd64=2:1.3.3-1`
+- `libxext6:amd64=2:1.3.3-1+b2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2395,12 +2395,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nss/2:3.26.2-1/
 - https://sources.debian.net/src/nss/2:3.26.2-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openjdk-9=9~b159-1`
+### `dpkg` source package: `openjdk-9=9~b161-1`
 
 Binary Packages:
 
-- `openjdk-9-jdk-headless:amd64=9~b159-1`
-- `openjdk-9-jre-headless:amd64=9~b159-1`
+- `openjdk-9-jdk-headless:amd64=9~b161-1`
+- `openjdk-9-jre-headless:amd64=9~b161-1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-9-jdk-headless/copyright`, `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 
@@ -2412,16 +2412,16 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jdk-headless/copyright`, `/usr
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-9=9~b159-1
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b159-1.dsc' openjdk-9_9~b159-1.dsc 4474 SHA256:ea7a84c9076c82e4513deecab50a29c964342bfb5263590a11c81069b419407c
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b159.orig.tar.gz' openjdk-9_9~b159.orig.tar.gz 74610914 SHA256:0b9acb8ee7d2e14ea5b6484f1be3c03f3b37dff30c2e90026f25c513a1b66110
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b159-1.debian.tar.xz' openjdk-9_9~b159-1.debian.tar.xz 196536 SHA256:194249cd0882975edad3f5efaa106189f41ce840a8b8a913f9124c06dcc0e8d8
+$ apt-get source -qq --print-uris openjdk-9=9~b161-1
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b161-1.dsc' openjdk-9_9~b161-1.dsc 4468 SHA256:612d966529c2588c193d51fcf1f29950a894101d36c43e38b5fbb33ae1df3c34
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b161.orig.tar.gz' openjdk-9_9~b161.orig.tar.gz 74645948 SHA256:24894216d540c297a85fb2644cbd9bc778cc20dbb8e16380567662e43102629d
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b161-1.debian.tar.xz' openjdk-9_9~b161-1.debian.tar.xz 196604 SHA256:508789a7767d949398ae6d5316f9180c658560ce915c120bc92ac1c0fe48de5d
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openjdk-9/9~b159-1/
-- https://sources.debian.net/src/openjdk-9/9~b159-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openjdk-9/9~b161-1/
+- https://sources.debian.net/src/openjdk-9/9~b161-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-3`
 
@@ -2586,19 +2586,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris pcre3=2:8.39-2.1
-'http://deb.debian.org/debian/pool/main/p/pcre3/pcre3_8.39-2.1.dsc' pcre3_8.39-2.1.dsc 2246 SHA256:2a9a8af830285b2f1311833f9a050ab77f69d29b7f33eb1e790aa2c97a018aea
-'http://deb.debian.org/debian/pool/main/p/pcre3/pcre3_8.39.orig.tar.bz2' pcre3_8.39.orig.tar.bz2 1560758 SHA256:b858099f82483031ee02092711689e7245586ada49e534a06e678b8ea9549e8b
-'http://deb.debian.org/debian/pool/main/p/pcre3/pcre3_8.39-2.1.debian.tar.gz' pcre3_8.39-2.1.debian.tar.gz 24570 SHA256:9ca3b9c67a2aeee288dd5dec25416ffd297a73f0a00f993e7b30218cc6c14b49
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/pcre3/2:8.39-2.1/
-- https://sources.debian.net/src/pcre3/2:8.39-2.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `pcsc-lite=1.8.20-1`
 
@@ -3198,19 +3187,8 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris wget=1.19.1-1
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.1-1.dsc' wget_1.19.1-1.dsc 1917 SHA256:5af38edbd1e59dc1048ebd3bb69079d6303132bfc10a28faef60f243ae0cdd55
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.1.orig.tar.xz' wget_1.19.1.orig.tar.xz 2111756 SHA256:0c950b9671881222a4d385b013c9604e98a8025d1988529dfca0e93617744cd2
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.19.1-1.debian.tar.xz' wget_1.19.1-1.debian.tar.xz 19996 SHA256:a9720f334cfe9f6f1fc7eae23547e79081ceec69b7076b61f8351f4dd1b1ada8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/wget/1.19.1-1/
-- https://sources.debian.net/src/wget/1.19.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `xorg=1:7.7+18`
 
