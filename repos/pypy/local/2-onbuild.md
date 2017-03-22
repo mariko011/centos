@@ -1,16 +1,16 @@
-# `pypy:2-5.6.0-onbuild`
+# `pypy:2-5.7.0-onbuild`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5bc8f6e58660426ff413b1155fd1c1954e2a690f4950c9a35ab7beb0d26df538`
-- Created: `2017-02-28T20:40:13.435775602Z`
+- Image ID: `sha256:a65a1a76ff73325ac94fe834205a8a49a2369ba307305d6b9b0cc9114b2e71ea`
+- Created: `2017-03-21T17:10:35.207801926Z`
 - Arch: `linux`/`amd64`
 - Command: `["pypy"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `PYPY_VERSION=5.6.0`
-  - `PYPY_SHA256SUM=aad55328cb0673a60b2633dcc3c36cf452917ac906b577eb3aed5876a7666fca`
+  - `PYPY_VERSION=5.7.0`
+  - `PYPY_SHA256SUM=64bed80e299b09c13296f577a0f52c5d4be9f7c699a390ca6026f967aeff3846`
   - `PYTHON_PIP_VERSION=9.0.1`
 
 ## `dpkg` (`.deb`-based packages)
