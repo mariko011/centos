@@ -16,16 +16,16 @@
 -	[`haxe:3.3.0-rc.1-onbuild`](#haxe330-rc1-onbuild)
 -	[`haxe:3.3.0-onbuild`](#haxe330-onbuild)
 -	[`haxe:3.3-onbuild`](#haxe33-onbuild)
--	[`haxe:3.4.0`](#haxe340)
+-	[`haxe:3.4.2`](#haxe342)
 -	[`haxe:3.4`](#haxe34)
 -	[`haxe:latest`](#haxelatest)
--	[`haxe:3.4.0-onbuild`](#haxe340-onbuild)
+-	[`haxe:3.4.2-onbuild`](#haxe342-onbuild)
 -	[`haxe:3.4-onbuild`](#haxe34-onbuild)
 
 ## `haxe:3.1.3`
 
 ```console
-$ docker pull haxe@sha256:7c773b87ee7231639bebd22efc8fbaa3935d25b3342a844fa96762205e5dc1a1
+$ docker pull haxe@sha256:7f6bce562d560b0fde3d26c8dffef2d70169a9e2b804c450f66d85fa698a8048
 ```
 
 -	Platforms:
@@ -35,72 +35,72 @@ $ docker pull haxe@sha256:7c773b87ee7231639bebd22efc8fbaa3935d25b3342a844fa96762
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **118.9 MB (118865429 bytes)**  
+-	Total Size: **119.2 MB (119224697 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c85fdef9b396084b95d0c1fe4ec994e92d082b309f3501551086d7b48613ff93`
+-	Image ID: `sha256:3d3f5e0244495138e4c4b1d51603b011b06eb2291d87bb2a3649d56a771ad927`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Mon, 27 Feb 2017 20:34:36 GMT
-ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / 
-# Mon, 27 Feb 2017 20:34:37 GMT
+# Tue, 21 Mar 2017 18:28:51 GMT
+ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
+# Tue, 21 Mar 2017 18:29:05 GMT
 CMD ["/bin/bash"]
-# Mon, 27 Feb 2017 21:14:01 GMT
+# Tue, 21 Mar 2017 19:10:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 27 Feb 2017 21:14:17 GMT
+# Tue, 21 Mar 2017 19:11:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:24 GMT
+# Tue, 21 Mar 2017 20:44:41 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Feb 2017 03:25:29 GMT
+# Tue, 21 Mar 2017 20:44:47 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1c2 		zlib1g 		libpcre3 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:30 GMT
+# Tue, 21 Mar 2017 20:44:48 GMT
 ENV NEKO_VERSION=2.1.0
-# Tue, 28 Feb 2017 03:25:31 GMT
+# Tue, 21 Mar 2017 20:44:49 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 28 Feb 2017 03:26:47 GMT
+# Tue, 21 Mar 2017 20:46:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "http://nekovm.org/media/neko-2.1.0-src.tar.gz" 	&& echo "0c93d5fe96240510e2d1975ae0caa9dd8eadf70d916a868684f66a099a4acf96 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Tue, 28 Feb 2017 03:26:48 GMT
+# Tue, 21 Mar 2017 20:46:07 GMT
 ENV HAXE_VERSION=3.1.3
-# Tue, 28 Feb 2017 03:27:38 GMT
+# Tue, 21 Mar 2017 20:46:55 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.1.3 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 28 Feb 2017 03:27:38 GMT
+# Tue, 21 Mar 2017 20:46:55 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184`  
-		Last Modified: Mon, 27 Feb 2017 20:40:26 GMT  
-		Size: 51.4 MB (51363374 bytes)  
+	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
+		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
+		Size: 51.4 MB (51438476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:081cd4bfd5210ff69949cc356db9693d11d103cd2380117cff7d4be6966eafdf`  
-		Last Modified: Mon, 27 Feb 2017 21:53:23 GMT  
-		Size: 18.5 MB (18535995 bytes)  
+	-	`sha256:2726297beaf19be957416750338c095ae15b94adc0e8c1306cebbf113f8b9a5c`  
+		Last Modified: Tue, 21 Mar 2017 19:58:58 GMT  
+		Size: 18.6 MB (18606479 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d2dc01312f3714eed4630a1317629f9131f307b3fc6d83506444d3eeebc0e41`  
-		Last Modified: Mon, 27 Feb 2017 21:54:18 GMT  
-		Size: 42.5 MB (42501192 bytes)  
+	-	`sha256:7d27bd3d7fecb89d4028f4afa3ee866d2262c5105fc37f57aa82af918dc2f84c`  
+		Last Modified: Tue, 21 Mar 2017 19:59:57 GMT  
+		Size: 42.6 MB (42571803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7349211cd29341d185560f660c78499a748897b67eb58c08cb077843e742f2c6`  
-		Last Modified: Thu, 02 Mar 2017 00:36:27 GMT  
-		Size: 254.6 KB (254620 bytes)  
+	-	`sha256:8730e51b706c67184bbf8208c38e95a9b7578ca13e6fff572e629d9649c9e9c1`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 254.8 KB (254768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11b7c094eb09fdafd36e2bf6648bd7feaa1f290daa4398625e1e1779d9892e38`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 214.0 B  
+	-	`sha256:de66fd15c3f26eb9d74d4537f49a4d009390b2d9b9ffb2055e8e527b69055fa2`  
+		Last Modified: Thu, 23 Mar 2017 18:59:17 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2f1ae260490eff97ced26ab90532fd22598ebfc83296ab4a6c013fb920d33c3`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 2.2 MB (2191459 bytes)  
+	-	`sha256:46a469363b792480a5934cfc301019d7906dc538eb49d2ea984c53190aa9a564`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 2.3 MB (2262744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4db478be9612778ef97e86701f286da175bc051ee249526e2b115b711dc3de4f`  
-		Last Modified: Thu, 02 Mar 2017 00:36:32 GMT  
-		Size: 4.0 MB (4018575 bytes)  
+	-	`sha256:970a8536b1882e36b66828e5084725abd37c6f792f66e93cce5a89abc4f709c7`  
+		Last Modified: Thu, 23 Mar 2017 18:59:21 GMT  
+		Size: 4.1 MB (4090211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.1`
 
 ```console
-$ docker pull haxe@sha256:7c773b87ee7231639bebd22efc8fbaa3935d25b3342a844fa96762205e5dc1a1
+$ docker pull haxe@sha256:7f6bce562d560b0fde3d26c8dffef2d70169a9e2b804c450f66d85fa698a8048
 ```
 
 -	Platforms:
@@ -110,72 +110,72 @@ $ docker pull haxe@sha256:7c773b87ee7231639bebd22efc8fbaa3935d25b3342a844fa96762
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **118.9 MB (118865429 bytes)**  
+-	Total Size: **119.2 MB (119224697 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c85fdef9b396084b95d0c1fe4ec994e92d082b309f3501551086d7b48613ff93`
+-	Image ID: `sha256:3d3f5e0244495138e4c4b1d51603b011b06eb2291d87bb2a3649d56a771ad927`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Mon, 27 Feb 2017 20:34:36 GMT
-ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / 
-# Mon, 27 Feb 2017 20:34:37 GMT
+# Tue, 21 Mar 2017 18:28:51 GMT
+ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
+# Tue, 21 Mar 2017 18:29:05 GMT
 CMD ["/bin/bash"]
-# Mon, 27 Feb 2017 21:14:01 GMT
+# Tue, 21 Mar 2017 19:10:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 27 Feb 2017 21:14:17 GMT
+# Tue, 21 Mar 2017 19:11:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:24 GMT
+# Tue, 21 Mar 2017 20:44:41 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Feb 2017 03:25:29 GMT
+# Tue, 21 Mar 2017 20:44:47 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1c2 		zlib1g 		libpcre3 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:30 GMT
+# Tue, 21 Mar 2017 20:44:48 GMT
 ENV NEKO_VERSION=2.1.0
-# Tue, 28 Feb 2017 03:25:31 GMT
+# Tue, 21 Mar 2017 20:44:49 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 28 Feb 2017 03:26:47 GMT
+# Tue, 21 Mar 2017 20:46:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "http://nekovm.org/media/neko-2.1.0-src.tar.gz" 	&& echo "0c93d5fe96240510e2d1975ae0caa9dd8eadf70d916a868684f66a099a4acf96 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Tue, 28 Feb 2017 03:26:48 GMT
+# Tue, 21 Mar 2017 20:46:07 GMT
 ENV HAXE_VERSION=3.1.3
-# Tue, 28 Feb 2017 03:27:38 GMT
+# Tue, 21 Mar 2017 20:46:55 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.1.3 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 28 Feb 2017 03:27:38 GMT
+# Tue, 21 Mar 2017 20:46:55 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184`  
-		Last Modified: Mon, 27 Feb 2017 20:40:26 GMT  
-		Size: 51.4 MB (51363374 bytes)  
+	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
+		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
+		Size: 51.4 MB (51438476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:081cd4bfd5210ff69949cc356db9693d11d103cd2380117cff7d4be6966eafdf`  
-		Last Modified: Mon, 27 Feb 2017 21:53:23 GMT  
-		Size: 18.5 MB (18535995 bytes)  
+	-	`sha256:2726297beaf19be957416750338c095ae15b94adc0e8c1306cebbf113f8b9a5c`  
+		Last Modified: Tue, 21 Mar 2017 19:58:58 GMT  
+		Size: 18.6 MB (18606479 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d2dc01312f3714eed4630a1317629f9131f307b3fc6d83506444d3eeebc0e41`  
-		Last Modified: Mon, 27 Feb 2017 21:54:18 GMT  
-		Size: 42.5 MB (42501192 bytes)  
+	-	`sha256:7d27bd3d7fecb89d4028f4afa3ee866d2262c5105fc37f57aa82af918dc2f84c`  
+		Last Modified: Tue, 21 Mar 2017 19:59:57 GMT  
+		Size: 42.6 MB (42571803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7349211cd29341d185560f660c78499a748897b67eb58c08cb077843e742f2c6`  
-		Last Modified: Thu, 02 Mar 2017 00:36:27 GMT  
-		Size: 254.6 KB (254620 bytes)  
+	-	`sha256:8730e51b706c67184bbf8208c38e95a9b7578ca13e6fff572e629d9649c9e9c1`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 254.8 KB (254768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11b7c094eb09fdafd36e2bf6648bd7feaa1f290daa4398625e1e1779d9892e38`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 214.0 B  
+	-	`sha256:de66fd15c3f26eb9d74d4537f49a4d009390b2d9b9ffb2055e8e527b69055fa2`  
+		Last Modified: Thu, 23 Mar 2017 18:59:17 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2f1ae260490eff97ced26ab90532fd22598ebfc83296ab4a6c013fb920d33c3`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 2.2 MB (2191459 bytes)  
+	-	`sha256:46a469363b792480a5934cfc301019d7906dc538eb49d2ea984c53190aa9a564`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 2.3 MB (2262744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4db478be9612778ef97e86701f286da175bc051ee249526e2b115b711dc3de4f`  
-		Last Modified: Thu, 02 Mar 2017 00:36:32 GMT  
-		Size: 4.0 MB (4018575 bytes)  
+	-	`sha256:970a8536b1882e36b66828e5084725abd37c6f792f66e93cce5a89abc4f709c7`  
+		Last Modified: Thu, 23 Mar 2017 18:59:21 GMT  
+		Size: 4.1 MB (4090211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.1.3-onbuild`
 
 ```console
-$ docker pull haxe@sha256:1d74984f95dcf6e506e4d29aced71988efe3335c5ea7c149c910e1c554e1fcc5
+$ docker pull haxe@sha256:6998d2490bc28d3dc4cab20f2a58664636d897b1e0f937267c65c480a4c57965
 ```
 
 -	Platforms:
@@ -185,90 +185,90 @@ $ docker pull haxe@sha256:1d74984f95dcf6e506e4d29aced71988efe3335c5ea7c149c910e1
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **118.9 MB (118865557 bytes)**  
+-	Total Size: **119.2 MB (119224823 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:165961311963cbca948837ad0579d8b383d6d50af664d22506ce4f96f845bbe9`
+-	Image ID: `sha256:32a0932495079b9ed45266a320a9c34a0f31313c64788424d6b06e017dcb3431`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Mon, 27 Feb 2017 20:34:36 GMT
-ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / 
-# Mon, 27 Feb 2017 20:34:37 GMT
+# Tue, 21 Mar 2017 18:28:51 GMT
+ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
+# Tue, 21 Mar 2017 18:29:05 GMT
 CMD ["/bin/bash"]
-# Mon, 27 Feb 2017 21:14:01 GMT
+# Tue, 21 Mar 2017 19:10:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 27 Feb 2017 21:14:17 GMT
+# Tue, 21 Mar 2017 19:11:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:24 GMT
+# Tue, 21 Mar 2017 20:44:41 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Feb 2017 03:25:29 GMT
+# Tue, 21 Mar 2017 20:44:47 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1c2 		zlib1g 		libpcre3 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:30 GMT
+# Tue, 21 Mar 2017 20:44:48 GMT
 ENV NEKO_VERSION=2.1.0
-# Tue, 28 Feb 2017 03:25:31 GMT
+# Tue, 21 Mar 2017 20:44:49 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 28 Feb 2017 03:26:47 GMT
+# Tue, 21 Mar 2017 20:46:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "http://nekovm.org/media/neko-2.1.0-src.tar.gz" 	&& echo "0c93d5fe96240510e2d1975ae0caa9dd8eadf70d916a868684f66a099a4acf96 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Tue, 28 Feb 2017 03:26:48 GMT
+# Tue, 21 Mar 2017 20:46:07 GMT
 ENV HAXE_VERSION=3.1.3
-# Tue, 28 Feb 2017 03:27:38 GMT
+# Tue, 21 Mar 2017 20:46:55 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.1.3 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 28 Feb 2017 03:27:38 GMT
+# Tue, 21 Mar 2017 20:46:55 GMT
 CMD ["haxe"]
-# Tue, 28 Feb 2017 03:27:39 GMT
+# Tue, 21 Mar 2017 20:46:57 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 28 Feb 2017 03:27:40 GMT
+# Tue, 21 Mar 2017 20:46:57 GMT
 WORKDIR /usr/src/app
-# Tue, 28 Feb 2017 03:27:40 GMT
+# Tue, 21 Mar 2017 20:46:57 GMT
 ONBUILD COPY *.hxml /usr/src/app/
-# Tue, 28 Feb 2017 03:27:41 GMT
+# Tue, 21 Mar 2017 20:46:58 GMT
 ONBUILD RUN yes | haxelib install all
-# Tue, 28 Feb 2017 03:27:41 GMT
+# Tue, 21 Mar 2017 20:46:58 GMT
 ONBUILD COPY . /usr/src/app
-# Tue, 28 Feb 2017 03:27:41 GMT
+# Tue, 21 Mar 2017 20:46:59 GMT
 ONBUILD ARG BUILD_HXML=build.hxml
-# Tue, 28 Feb 2017 03:27:42 GMT
+# Tue, 21 Mar 2017 20:46:59 GMT
 ONBUILD RUN haxe $BUILD_HXML
 ```
 
 -	Layers:
-	-	`sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184`  
-		Last Modified: Mon, 27 Feb 2017 20:40:26 GMT  
-		Size: 51.4 MB (51363374 bytes)  
+	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
+		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
+		Size: 51.4 MB (51438476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:081cd4bfd5210ff69949cc356db9693d11d103cd2380117cff7d4be6966eafdf`  
-		Last Modified: Mon, 27 Feb 2017 21:53:23 GMT  
-		Size: 18.5 MB (18535995 bytes)  
+	-	`sha256:2726297beaf19be957416750338c095ae15b94adc0e8c1306cebbf113f8b9a5c`  
+		Last Modified: Tue, 21 Mar 2017 19:58:58 GMT  
+		Size: 18.6 MB (18606479 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d2dc01312f3714eed4630a1317629f9131f307b3fc6d83506444d3eeebc0e41`  
-		Last Modified: Mon, 27 Feb 2017 21:54:18 GMT  
-		Size: 42.5 MB (42501192 bytes)  
+	-	`sha256:7d27bd3d7fecb89d4028f4afa3ee866d2262c5105fc37f57aa82af918dc2f84c`  
+		Last Modified: Tue, 21 Mar 2017 19:59:57 GMT  
+		Size: 42.6 MB (42571803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7349211cd29341d185560f660c78499a748897b67eb58c08cb077843e742f2c6`  
-		Last Modified: Thu, 02 Mar 2017 00:36:27 GMT  
-		Size: 254.6 KB (254620 bytes)  
+	-	`sha256:8730e51b706c67184bbf8208c38e95a9b7578ca13e6fff572e629d9649c9e9c1`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 254.8 KB (254768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11b7c094eb09fdafd36e2bf6648bd7feaa1f290daa4398625e1e1779d9892e38`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 214.0 B  
+	-	`sha256:de66fd15c3f26eb9d74d4537f49a4d009390b2d9b9ffb2055e8e527b69055fa2`  
+		Last Modified: Thu, 23 Mar 2017 18:59:17 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2f1ae260490eff97ced26ab90532fd22598ebfc83296ab4a6c013fb920d33c3`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 2.2 MB (2191459 bytes)  
+	-	`sha256:46a469363b792480a5934cfc301019d7906dc538eb49d2ea984c53190aa9a564`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 2.3 MB (2262744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4db478be9612778ef97e86701f286da175bc051ee249526e2b115b711dc3de4f`  
-		Last Modified: Thu, 02 Mar 2017 00:36:32 GMT  
-		Size: 4.0 MB (4018575 bytes)  
+	-	`sha256:970a8536b1882e36b66828e5084725abd37c6f792f66e93cce5a89abc4f709c7`  
+		Last Modified: Thu, 23 Mar 2017 18:59:21 GMT  
+		Size: 4.1 MB (4090211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a8c2cfb3f00b494471ef35dca690e9749807c70c966fa64450a1f8f65c314a28`  
-		Last Modified: Thu, 02 Mar 2017 00:37:26 GMT  
-		Size: 128.0 B  
+	-	`sha256:a18e39c1443de43507743a96adb2d26983f92a6d69f73a4b2cde36dd8164d006`  
+		Last Modified: Thu, 23 Mar 2017 19:00:04 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.1-onbuild`
 
 ```console
-$ docker pull haxe@sha256:1d74984f95dcf6e506e4d29aced71988efe3335c5ea7c149c910e1c554e1fcc5
+$ docker pull haxe@sha256:6998d2490bc28d3dc4cab20f2a58664636d897b1e0f937267c65c480a4c57965
 ```
 
 -	Platforms:
@@ -278,90 +278,90 @@ $ docker pull haxe@sha256:1d74984f95dcf6e506e4d29aced71988efe3335c5ea7c149c910e1
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **118.9 MB (118865557 bytes)**  
+-	Total Size: **119.2 MB (119224823 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:165961311963cbca948837ad0579d8b383d6d50af664d22506ce4f96f845bbe9`
+-	Image ID: `sha256:32a0932495079b9ed45266a320a9c34a0f31313c64788424d6b06e017dcb3431`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Mon, 27 Feb 2017 20:34:36 GMT
-ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / 
-# Mon, 27 Feb 2017 20:34:37 GMT
+# Tue, 21 Mar 2017 18:28:51 GMT
+ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
+# Tue, 21 Mar 2017 18:29:05 GMT
 CMD ["/bin/bash"]
-# Mon, 27 Feb 2017 21:14:01 GMT
+# Tue, 21 Mar 2017 19:10:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 27 Feb 2017 21:14:17 GMT
+# Tue, 21 Mar 2017 19:11:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:24 GMT
+# Tue, 21 Mar 2017 20:44:41 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Feb 2017 03:25:29 GMT
+# Tue, 21 Mar 2017 20:44:47 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1c2 		zlib1g 		libpcre3 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:30 GMT
+# Tue, 21 Mar 2017 20:44:48 GMT
 ENV NEKO_VERSION=2.1.0
-# Tue, 28 Feb 2017 03:25:31 GMT
+# Tue, 21 Mar 2017 20:44:49 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 28 Feb 2017 03:26:47 GMT
+# Tue, 21 Mar 2017 20:46:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "http://nekovm.org/media/neko-2.1.0-src.tar.gz" 	&& echo "0c93d5fe96240510e2d1975ae0caa9dd8eadf70d916a868684f66a099a4acf96 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Tue, 28 Feb 2017 03:26:48 GMT
+# Tue, 21 Mar 2017 20:46:07 GMT
 ENV HAXE_VERSION=3.1.3
-# Tue, 28 Feb 2017 03:27:38 GMT
+# Tue, 21 Mar 2017 20:46:55 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.1.3 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 28 Feb 2017 03:27:38 GMT
+# Tue, 21 Mar 2017 20:46:55 GMT
 CMD ["haxe"]
-# Tue, 28 Feb 2017 03:27:39 GMT
+# Tue, 21 Mar 2017 20:46:57 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 28 Feb 2017 03:27:40 GMT
+# Tue, 21 Mar 2017 20:46:57 GMT
 WORKDIR /usr/src/app
-# Tue, 28 Feb 2017 03:27:40 GMT
+# Tue, 21 Mar 2017 20:46:57 GMT
 ONBUILD COPY *.hxml /usr/src/app/
-# Tue, 28 Feb 2017 03:27:41 GMT
+# Tue, 21 Mar 2017 20:46:58 GMT
 ONBUILD RUN yes | haxelib install all
-# Tue, 28 Feb 2017 03:27:41 GMT
+# Tue, 21 Mar 2017 20:46:58 GMT
 ONBUILD COPY . /usr/src/app
-# Tue, 28 Feb 2017 03:27:41 GMT
+# Tue, 21 Mar 2017 20:46:59 GMT
 ONBUILD ARG BUILD_HXML=build.hxml
-# Tue, 28 Feb 2017 03:27:42 GMT
+# Tue, 21 Mar 2017 20:46:59 GMT
 ONBUILD RUN haxe $BUILD_HXML
 ```
 
 -	Layers:
-	-	`sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184`  
-		Last Modified: Mon, 27 Feb 2017 20:40:26 GMT  
-		Size: 51.4 MB (51363374 bytes)  
+	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
+		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
+		Size: 51.4 MB (51438476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:081cd4bfd5210ff69949cc356db9693d11d103cd2380117cff7d4be6966eafdf`  
-		Last Modified: Mon, 27 Feb 2017 21:53:23 GMT  
-		Size: 18.5 MB (18535995 bytes)  
+	-	`sha256:2726297beaf19be957416750338c095ae15b94adc0e8c1306cebbf113f8b9a5c`  
+		Last Modified: Tue, 21 Mar 2017 19:58:58 GMT  
+		Size: 18.6 MB (18606479 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d2dc01312f3714eed4630a1317629f9131f307b3fc6d83506444d3eeebc0e41`  
-		Last Modified: Mon, 27 Feb 2017 21:54:18 GMT  
-		Size: 42.5 MB (42501192 bytes)  
+	-	`sha256:7d27bd3d7fecb89d4028f4afa3ee866d2262c5105fc37f57aa82af918dc2f84c`  
+		Last Modified: Tue, 21 Mar 2017 19:59:57 GMT  
+		Size: 42.6 MB (42571803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7349211cd29341d185560f660c78499a748897b67eb58c08cb077843e742f2c6`  
-		Last Modified: Thu, 02 Mar 2017 00:36:27 GMT  
-		Size: 254.6 KB (254620 bytes)  
+	-	`sha256:8730e51b706c67184bbf8208c38e95a9b7578ca13e6fff572e629d9649c9e9c1`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 254.8 KB (254768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11b7c094eb09fdafd36e2bf6648bd7feaa1f290daa4398625e1e1779d9892e38`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 214.0 B  
+	-	`sha256:de66fd15c3f26eb9d74d4537f49a4d009390b2d9b9ffb2055e8e527b69055fa2`  
+		Last Modified: Thu, 23 Mar 2017 18:59:17 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2f1ae260490eff97ced26ab90532fd22598ebfc83296ab4a6c013fb920d33c3`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 2.2 MB (2191459 bytes)  
+	-	`sha256:46a469363b792480a5934cfc301019d7906dc538eb49d2ea984c53190aa9a564`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 2.3 MB (2262744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4db478be9612778ef97e86701f286da175bc051ee249526e2b115b711dc3de4f`  
-		Last Modified: Thu, 02 Mar 2017 00:36:32 GMT  
-		Size: 4.0 MB (4018575 bytes)  
+	-	`sha256:970a8536b1882e36b66828e5084725abd37c6f792f66e93cce5a89abc4f709c7`  
+		Last Modified: Thu, 23 Mar 2017 18:59:21 GMT  
+		Size: 4.1 MB (4090211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a8c2cfb3f00b494471ef35dca690e9749807c70c966fa64450a1f8f65c314a28`  
-		Last Modified: Thu, 02 Mar 2017 00:37:26 GMT  
-		Size: 128.0 B  
+	-	`sha256:a18e39c1443de43507743a96adb2d26983f92a6d69f73a4b2cde36dd8164d006`  
+		Last Modified: Thu, 23 Mar 2017 19:00:04 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.2.1`
 
 ```console
-$ docker pull haxe@sha256:ed579775ab8476c5c75d72dea2af49753e2bcdd59b45d4e1acaa61c94cf3ff8a
+$ docker pull haxe@sha256:697edead2a3384238f706d6c20668cff30eda3e54a945511a886901c67066480
 ```
 
 -	Platforms:
@@ -371,72 +371,72 @@ $ docker pull haxe@sha256:ed579775ab8476c5c75d72dea2af49753e2bcdd59b45d4e1acaa61
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **119.2 MB (119150130 bytes)**  
+-	Total Size: **119.5 MB (119509037 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57b26ba94b02d4339fe73937d1c60e6dc713d9b1f310696a947ebc013889ddbe`
+-	Image ID: `sha256:50f567989587960d696cdda0a33d272a766dc6cd78fe5cd698c181b54b5e56fa`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Mon, 27 Feb 2017 20:34:36 GMT
-ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / 
-# Mon, 27 Feb 2017 20:34:37 GMT
+# Tue, 21 Mar 2017 18:28:51 GMT
+ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
+# Tue, 21 Mar 2017 18:29:05 GMT
 CMD ["/bin/bash"]
-# Mon, 27 Feb 2017 21:14:01 GMT
+# Tue, 21 Mar 2017 19:10:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 27 Feb 2017 21:14:17 GMT
+# Tue, 21 Mar 2017 19:11:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:24 GMT
+# Tue, 21 Mar 2017 20:44:41 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Feb 2017 03:25:29 GMT
+# Tue, 21 Mar 2017 20:44:47 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1c2 		zlib1g 		libpcre3 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:30 GMT
+# Tue, 21 Mar 2017 20:44:48 GMT
 ENV NEKO_VERSION=2.1.0
-# Tue, 28 Feb 2017 03:25:31 GMT
+# Tue, 21 Mar 2017 20:44:49 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 28 Feb 2017 03:26:47 GMT
+# Tue, 21 Mar 2017 20:46:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "http://nekovm.org/media/neko-2.1.0-src.tar.gz" 	&& echo "0c93d5fe96240510e2d1975ae0caa9dd8eadf70d916a868684f66a099a4acf96 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Tue, 28 Feb 2017 03:27:42 GMT
+# Tue, 21 Mar 2017 20:47:00 GMT
 ENV HAXE_VERSION=3.2.1
-# Tue, 28 Feb 2017 03:28:29 GMT
+# Tue, 21 Mar 2017 20:47:47 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.2.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 28 Feb 2017 03:28:29 GMT
+# Tue, 21 Mar 2017 20:47:47 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184`  
-		Last Modified: Mon, 27 Feb 2017 20:40:26 GMT  
-		Size: 51.4 MB (51363374 bytes)  
+	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
+		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
+		Size: 51.4 MB (51438476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:081cd4bfd5210ff69949cc356db9693d11d103cd2380117cff7d4be6966eafdf`  
-		Last Modified: Mon, 27 Feb 2017 21:53:23 GMT  
-		Size: 18.5 MB (18535995 bytes)  
+	-	`sha256:2726297beaf19be957416750338c095ae15b94adc0e8c1306cebbf113f8b9a5c`  
+		Last Modified: Tue, 21 Mar 2017 19:58:58 GMT  
+		Size: 18.6 MB (18606479 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d2dc01312f3714eed4630a1317629f9131f307b3fc6d83506444d3eeebc0e41`  
-		Last Modified: Mon, 27 Feb 2017 21:54:18 GMT  
-		Size: 42.5 MB (42501192 bytes)  
+	-	`sha256:7d27bd3d7fecb89d4028f4afa3ee866d2262c5105fc37f57aa82af918dc2f84c`  
+		Last Modified: Tue, 21 Mar 2017 19:59:57 GMT  
+		Size: 42.6 MB (42571803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7349211cd29341d185560f660c78499a748897b67eb58c08cb077843e742f2c6`  
-		Last Modified: Thu, 02 Mar 2017 00:36:27 GMT  
-		Size: 254.6 KB (254620 bytes)  
+	-	`sha256:8730e51b706c67184bbf8208c38e95a9b7578ca13e6fff572e629d9649c9e9c1`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 254.8 KB (254768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11b7c094eb09fdafd36e2bf6648bd7feaa1f290daa4398625e1e1779d9892e38`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 214.0 B  
+	-	`sha256:de66fd15c3f26eb9d74d4537f49a4d009390b2d9b9ffb2055e8e527b69055fa2`  
+		Last Modified: Thu, 23 Mar 2017 18:59:17 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2f1ae260490eff97ced26ab90532fd22598ebfc83296ab4a6c013fb920d33c3`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 2.2 MB (2191459 bytes)  
+	-	`sha256:46a469363b792480a5934cfc301019d7906dc538eb49d2ea984c53190aa9a564`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 2.3 MB (2262744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4096919dad90d88f2ad031b01eb1f31491bc45222e14cf613cbb871847e6a92`  
-		Last Modified: Thu, 02 Mar 2017 00:38:30 GMT  
-		Size: 4.3 MB (4303276 bytes)  
+	-	`sha256:d819452644cac2903d6eb2b8f90bdc158b11d78374aec7c752eec56a5a61bffe`  
+		Last Modified: Thu, 23 Mar 2017 19:00:50 GMT  
+		Size: 4.4 MB (4374551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.2`
 
 ```console
-$ docker pull haxe@sha256:ed579775ab8476c5c75d72dea2af49753e2bcdd59b45d4e1acaa61c94cf3ff8a
+$ docker pull haxe@sha256:697edead2a3384238f706d6c20668cff30eda3e54a945511a886901c67066480
 ```
 
 -	Platforms:
@@ -446,72 +446,72 @@ $ docker pull haxe@sha256:ed579775ab8476c5c75d72dea2af49753e2bcdd59b45d4e1acaa61
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **119.2 MB (119150130 bytes)**  
+-	Total Size: **119.5 MB (119509037 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57b26ba94b02d4339fe73937d1c60e6dc713d9b1f310696a947ebc013889ddbe`
+-	Image ID: `sha256:50f567989587960d696cdda0a33d272a766dc6cd78fe5cd698c181b54b5e56fa`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Mon, 27 Feb 2017 20:34:36 GMT
-ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / 
-# Mon, 27 Feb 2017 20:34:37 GMT
+# Tue, 21 Mar 2017 18:28:51 GMT
+ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
+# Tue, 21 Mar 2017 18:29:05 GMT
 CMD ["/bin/bash"]
-# Mon, 27 Feb 2017 21:14:01 GMT
+# Tue, 21 Mar 2017 19:10:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 27 Feb 2017 21:14:17 GMT
+# Tue, 21 Mar 2017 19:11:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:24 GMT
+# Tue, 21 Mar 2017 20:44:41 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Feb 2017 03:25:29 GMT
+# Tue, 21 Mar 2017 20:44:47 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1c2 		zlib1g 		libpcre3 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:30 GMT
+# Tue, 21 Mar 2017 20:44:48 GMT
 ENV NEKO_VERSION=2.1.0
-# Tue, 28 Feb 2017 03:25:31 GMT
+# Tue, 21 Mar 2017 20:44:49 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 28 Feb 2017 03:26:47 GMT
+# Tue, 21 Mar 2017 20:46:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "http://nekovm.org/media/neko-2.1.0-src.tar.gz" 	&& echo "0c93d5fe96240510e2d1975ae0caa9dd8eadf70d916a868684f66a099a4acf96 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Tue, 28 Feb 2017 03:27:42 GMT
+# Tue, 21 Mar 2017 20:47:00 GMT
 ENV HAXE_VERSION=3.2.1
-# Tue, 28 Feb 2017 03:28:29 GMT
+# Tue, 21 Mar 2017 20:47:47 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.2.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 28 Feb 2017 03:28:29 GMT
+# Tue, 21 Mar 2017 20:47:47 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184`  
-		Last Modified: Mon, 27 Feb 2017 20:40:26 GMT  
-		Size: 51.4 MB (51363374 bytes)  
+	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
+		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
+		Size: 51.4 MB (51438476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:081cd4bfd5210ff69949cc356db9693d11d103cd2380117cff7d4be6966eafdf`  
-		Last Modified: Mon, 27 Feb 2017 21:53:23 GMT  
-		Size: 18.5 MB (18535995 bytes)  
+	-	`sha256:2726297beaf19be957416750338c095ae15b94adc0e8c1306cebbf113f8b9a5c`  
+		Last Modified: Tue, 21 Mar 2017 19:58:58 GMT  
+		Size: 18.6 MB (18606479 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d2dc01312f3714eed4630a1317629f9131f307b3fc6d83506444d3eeebc0e41`  
-		Last Modified: Mon, 27 Feb 2017 21:54:18 GMT  
-		Size: 42.5 MB (42501192 bytes)  
+	-	`sha256:7d27bd3d7fecb89d4028f4afa3ee866d2262c5105fc37f57aa82af918dc2f84c`  
+		Last Modified: Tue, 21 Mar 2017 19:59:57 GMT  
+		Size: 42.6 MB (42571803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7349211cd29341d185560f660c78499a748897b67eb58c08cb077843e742f2c6`  
-		Last Modified: Thu, 02 Mar 2017 00:36:27 GMT  
-		Size: 254.6 KB (254620 bytes)  
+	-	`sha256:8730e51b706c67184bbf8208c38e95a9b7578ca13e6fff572e629d9649c9e9c1`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 254.8 KB (254768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11b7c094eb09fdafd36e2bf6648bd7feaa1f290daa4398625e1e1779d9892e38`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 214.0 B  
+	-	`sha256:de66fd15c3f26eb9d74d4537f49a4d009390b2d9b9ffb2055e8e527b69055fa2`  
+		Last Modified: Thu, 23 Mar 2017 18:59:17 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2f1ae260490eff97ced26ab90532fd22598ebfc83296ab4a6c013fb920d33c3`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 2.2 MB (2191459 bytes)  
+	-	`sha256:46a469363b792480a5934cfc301019d7906dc538eb49d2ea984c53190aa9a564`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 2.3 MB (2262744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4096919dad90d88f2ad031b01eb1f31491bc45222e14cf613cbb871847e6a92`  
-		Last Modified: Thu, 02 Mar 2017 00:38:30 GMT  
-		Size: 4.3 MB (4303276 bytes)  
+	-	`sha256:d819452644cac2903d6eb2b8f90bdc158b11d78374aec7c752eec56a5a61bffe`  
+		Last Modified: Thu, 23 Mar 2017 19:00:50 GMT  
+		Size: 4.4 MB (4374551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.2.1-onbuild`
 
 ```console
-$ docker pull haxe@sha256:31b60e70222b4140882f54c44272e8d60d2841474f711ea51a1545258161305c
+$ docker pull haxe@sha256:500277c00c8742435cf8c27b2d2f0db7a7e45033e4fc3755856bd7016b81bde9
 ```
 
 -	Platforms:
@@ -521,90 +521,90 @@ $ docker pull haxe@sha256:31b60e70222b4140882f54c44272e8d60d2841474f711ea51a1545
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **119.2 MB (119150256 bytes)**  
+-	Total Size: **119.5 MB (119509165 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ea8401d0ab458bf55d40cd1fd6b67096a71ff630c39fcc11b8132fd743491d5`
+-	Image ID: `sha256:c9ef0700de3cca395b524e060f31647b92dc1eafcea3bb807e62248a73144b70`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Mon, 27 Feb 2017 20:34:36 GMT
-ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / 
-# Mon, 27 Feb 2017 20:34:37 GMT
+# Tue, 21 Mar 2017 18:28:51 GMT
+ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
+# Tue, 21 Mar 2017 18:29:05 GMT
 CMD ["/bin/bash"]
-# Mon, 27 Feb 2017 21:14:01 GMT
+# Tue, 21 Mar 2017 19:10:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 27 Feb 2017 21:14:17 GMT
+# Tue, 21 Mar 2017 19:11:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:24 GMT
+# Tue, 21 Mar 2017 20:44:41 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Feb 2017 03:25:29 GMT
+# Tue, 21 Mar 2017 20:44:47 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1c2 		zlib1g 		libpcre3 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:30 GMT
+# Tue, 21 Mar 2017 20:44:48 GMT
 ENV NEKO_VERSION=2.1.0
-# Tue, 28 Feb 2017 03:25:31 GMT
+# Tue, 21 Mar 2017 20:44:49 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 28 Feb 2017 03:26:47 GMT
+# Tue, 21 Mar 2017 20:46:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "http://nekovm.org/media/neko-2.1.0-src.tar.gz" 	&& echo "0c93d5fe96240510e2d1975ae0caa9dd8eadf70d916a868684f66a099a4acf96 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Tue, 28 Feb 2017 03:27:42 GMT
+# Tue, 21 Mar 2017 20:47:00 GMT
 ENV HAXE_VERSION=3.2.1
-# Tue, 28 Feb 2017 03:28:29 GMT
+# Tue, 21 Mar 2017 20:47:47 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.2.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 28 Feb 2017 03:28:29 GMT
+# Tue, 21 Mar 2017 20:47:47 GMT
 CMD ["haxe"]
-# Tue, 28 Feb 2017 03:28:30 GMT
+# Tue, 21 Mar 2017 20:47:49 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 28 Feb 2017 03:28:31 GMT
+# Tue, 21 Mar 2017 20:47:49 GMT
 WORKDIR /usr/src/app
-# Tue, 28 Feb 2017 03:28:31 GMT
+# Tue, 21 Mar 2017 20:47:50 GMT
 ONBUILD COPY *.hxml /usr/src/app/
-# Tue, 28 Feb 2017 03:28:31 GMT
+# Tue, 21 Mar 2017 20:47:50 GMT
 ONBUILD RUN yes | haxelib install all
-# Tue, 28 Feb 2017 03:28:32 GMT
+# Tue, 21 Mar 2017 20:47:50 GMT
 ONBUILD COPY . /usr/src/app
-# Tue, 28 Feb 2017 03:28:32 GMT
+# Tue, 21 Mar 2017 20:47:51 GMT
 ONBUILD ARG BUILD_HXML=build.hxml
-# Tue, 28 Feb 2017 03:28:32 GMT
+# Tue, 21 Mar 2017 20:47:51 GMT
 ONBUILD RUN haxe $BUILD_HXML
 ```
 
 -	Layers:
-	-	`sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184`  
-		Last Modified: Mon, 27 Feb 2017 20:40:26 GMT  
-		Size: 51.4 MB (51363374 bytes)  
+	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
+		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
+		Size: 51.4 MB (51438476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:081cd4bfd5210ff69949cc356db9693d11d103cd2380117cff7d4be6966eafdf`  
-		Last Modified: Mon, 27 Feb 2017 21:53:23 GMT  
-		Size: 18.5 MB (18535995 bytes)  
+	-	`sha256:2726297beaf19be957416750338c095ae15b94adc0e8c1306cebbf113f8b9a5c`  
+		Last Modified: Tue, 21 Mar 2017 19:58:58 GMT  
+		Size: 18.6 MB (18606479 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d2dc01312f3714eed4630a1317629f9131f307b3fc6d83506444d3eeebc0e41`  
-		Last Modified: Mon, 27 Feb 2017 21:54:18 GMT  
-		Size: 42.5 MB (42501192 bytes)  
+	-	`sha256:7d27bd3d7fecb89d4028f4afa3ee866d2262c5105fc37f57aa82af918dc2f84c`  
+		Last Modified: Tue, 21 Mar 2017 19:59:57 GMT  
+		Size: 42.6 MB (42571803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7349211cd29341d185560f660c78499a748897b67eb58c08cb077843e742f2c6`  
-		Last Modified: Thu, 02 Mar 2017 00:36:27 GMT  
-		Size: 254.6 KB (254620 bytes)  
+	-	`sha256:8730e51b706c67184bbf8208c38e95a9b7578ca13e6fff572e629d9649c9e9c1`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 254.8 KB (254768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11b7c094eb09fdafd36e2bf6648bd7feaa1f290daa4398625e1e1779d9892e38`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 214.0 B  
+	-	`sha256:de66fd15c3f26eb9d74d4537f49a4d009390b2d9b9ffb2055e8e527b69055fa2`  
+		Last Modified: Thu, 23 Mar 2017 18:59:17 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2f1ae260490eff97ced26ab90532fd22598ebfc83296ab4a6c013fb920d33c3`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 2.2 MB (2191459 bytes)  
+	-	`sha256:46a469363b792480a5934cfc301019d7906dc538eb49d2ea984c53190aa9a564`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 2.3 MB (2262744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4096919dad90d88f2ad031b01eb1f31491bc45222e14cf613cbb871847e6a92`  
-		Last Modified: Thu, 02 Mar 2017 00:38:30 GMT  
-		Size: 4.3 MB (4303276 bytes)  
+	-	`sha256:d819452644cac2903d6eb2b8f90bdc158b11d78374aec7c752eec56a5a61bffe`  
+		Last Modified: Thu, 23 Mar 2017 19:00:50 GMT  
+		Size: 4.4 MB (4374551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed67e843658454b48eee6c8f982d35b9db90cad3e4d9c98fc801d8c7674f3e1a`  
-		Last Modified: Thu, 02 Mar 2017 00:39:16 GMT  
-		Size: 126.0 B  
+	-	`sha256:f9bf5d271fe3bdfbed575261f4e36205f02083765d27570ff88226e914a49caf`  
+		Last Modified: Thu, 23 Mar 2017 19:01:33 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.2-onbuild`
 
 ```console
-$ docker pull haxe@sha256:31b60e70222b4140882f54c44272e8d60d2841474f711ea51a1545258161305c
+$ docker pull haxe@sha256:500277c00c8742435cf8c27b2d2f0db7a7e45033e4fc3755856bd7016b81bde9
 ```
 
 -	Platforms:
@@ -614,90 +614,90 @@ $ docker pull haxe@sha256:31b60e70222b4140882f54c44272e8d60d2841474f711ea51a1545
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **119.2 MB (119150256 bytes)**  
+-	Total Size: **119.5 MB (119509165 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ea8401d0ab458bf55d40cd1fd6b67096a71ff630c39fcc11b8132fd743491d5`
+-	Image ID: `sha256:c9ef0700de3cca395b524e060f31647b92dc1eafcea3bb807e62248a73144b70`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Mon, 27 Feb 2017 20:34:36 GMT
-ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / 
-# Mon, 27 Feb 2017 20:34:37 GMT
+# Tue, 21 Mar 2017 18:28:51 GMT
+ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
+# Tue, 21 Mar 2017 18:29:05 GMT
 CMD ["/bin/bash"]
-# Mon, 27 Feb 2017 21:14:01 GMT
+# Tue, 21 Mar 2017 19:10:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 27 Feb 2017 21:14:17 GMT
+# Tue, 21 Mar 2017 19:11:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:24 GMT
+# Tue, 21 Mar 2017 20:44:41 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Feb 2017 03:25:29 GMT
+# Tue, 21 Mar 2017 20:44:47 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1c2 		zlib1g 		libpcre3 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:30 GMT
+# Tue, 21 Mar 2017 20:44:48 GMT
 ENV NEKO_VERSION=2.1.0
-# Tue, 28 Feb 2017 03:25:31 GMT
+# Tue, 21 Mar 2017 20:44:49 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 28 Feb 2017 03:26:47 GMT
+# Tue, 21 Mar 2017 20:46:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "http://nekovm.org/media/neko-2.1.0-src.tar.gz" 	&& echo "0c93d5fe96240510e2d1975ae0caa9dd8eadf70d916a868684f66a099a4acf96 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Tue, 28 Feb 2017 03:27:42 GMT
+# Tue, 21 Mar 2017 20:47:00 GMT
 ENV HAXE_VERSION=3.2.1
-# Tue, 28 Feb 2017 03:28:29 GMT
+# Tue, 21 Mar 2017 20:47:47 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.2.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 28 Feb 2017 03:28:29 GMT
+# Tue, 21 Mar 2017 20:47:47 GMT
 CMD ["haxe"]
-# Tue, 28 Feb 2017 03:28:30 GMT
+# Tue, 21 Mar 2017 20:47:49 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 28 Feb 2017 03:28:31 GMT
+# Tue, 21 Mar 2017 20:47:49 GMT
 WORKDIR /usr/src/app
-# Tue, 28 Feb 2017 03:28:31 GMT
+# Tue, 21 Mar 2017 20:47:50 GMT
 ONBUILD COPY *.hxml /usr/src/app/
-# Tue, 28 Feb 2017 03:28:31 GMT
+# Tue, 21 Mar 2017 20:47:50 GMT
 ONBUILD RUN yes | haxelib install all
-# Tue, 28 Feb 2017 03:28:32 GMT
+# Tue, 21 Mar 2017 20:47:50 GMT
 ONBUILD COPY . /usr/src/app
-# Tue, 28 Feb 2017 03:28:32 GMT
+# Tue, 21 Mar 2017 20:47:51 GMT
 ONBUILD ARG BUILD_HXML=build.hxml
-# Tue, 28 Feb 2017 03:28:32 GMT
+# Tue, 21 Mar 2017 20:47:51 GMT
 ONBUILD RUN haxe $BUILD_HXML
 ```
 
 -	Layers:
-	-	`sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184`  
-		Last Modified: Mon, 27 Feb 2017 20:40:26 GMT  
-		Size: 51.4 MB (51363374 bytes)  
+	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
+		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
+		Size: 51.4 MB (51438476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:081cd4bfd5210ff69949cc356db9693d11d103cd2380117cff7d4be6966eafdf`  
-		Last Modified: Mon, 27 Feb 2017 21:53:23 GMT  
-		Size: 18.5 MB (18535995 bytes)  
+	-	`sha256:2726297beaf19be957416750338c095ae15b94adc0e8c1306cebbf113f8b9a5c`  
+		Last Modified: Tue, 21 Mar 2017 19:58:58 GMT  
+		Size: 18.6 MB (18606479 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d2dc01312f3714eed4630a1317629f9131f307b3fc6d83506444d3eeebc0e41`  
-		Last Modified: Mon, 27 Feb 2017 21:54:18 GMT  
-		Size: 42.5 MB (42501192 bytes)  
+	-	`sha256:7d27bd3d7fecb89d4028f4afa3ee866d2262c5105fc37f57aa82af918dc2f84c`  
+		Last Modified: Tue, 21 Mar 2017 19:59:57 GMT  
+		Size: 42.6 MB (42571803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7349211cd29341d185560f660c78499a748897b67eb58c08cb077843e742f2c6`  
-		Last Modified: Thu, 02 Mar 2017 00:36:27 GMT  
-		Size: 254.6 KB (254620 bytes)  
+	-	`sha256:8730e51b706c67184bbf8208c38e95a9b7578ca13e6fff572e629d9649c9e9c1`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 254.8 KB (254768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11b7c094eb09fdafd36e2bf6648bd7feaa1f290daa4398625e1e1779d9892e38`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 214.0 B  
+	-	`sha256:de66fd15c3f26eb9d74d4537f49a4d009390b2d9b9ffb2055e8e527b69055fa2`  
+		Last Modified: Thu, 23 Mar 2017 18:59:17 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2f1ae260490eff97ced26ab90532fd22598ebfc83296ab4a6c013fb920d33c3`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 2.2 MB (2191459 bytes)  
+	-	`sha256:46a469363b792480a5934cfc301019d7906dc538eb49d2ea984c53190aa9a564`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 2.3 MB (2262744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d4096919dad90d88f2ad031b01eb1f31491bc45222e14cf613cbb871847e6a92`  
-		Last Modified: Thu, 02 Mar 2017 00:38:30 GMT  
-		Size: 4.3 MB (4303276 bytes)  
+	-	`sha256:d819452644cac2903d6eb2b8f90bdc158b11d78374aec7c752eec56a5a61bffe`  
+		Last Modified: Thu, 23 Mar 2017 19:00:50 GMT  
+		Size: 4.4 MB (4374551 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed67e843658454b48eee6c8f982d35b9db90cad3e4d9c98fc801d8c7674f3e1a`  
-		Last Modified: Thu, 02 Mar 2017 00:39:16 GMT  
-		Size: 126.0 B  
+	-	`sha256:f9bf5d271fe3bdfbed575261f4e36205f02083765d27570ff88226e914a49caf`  
+		Last Modified: Thu, 23 Mar 2017 19:01:33 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.3.0-rc.1`
 
 ```console
-$ docker pull haxe@sha256:eb5b5a3255347212f41c62fe9462ebcb3181e47edb7e4c762099d815f16ce732
+$ docker pull haxe@sha256:5635aa1b73f2c8006bcf1b0a412a90b844c58169dff6da603ee55fbbeeac43f7
 ```
 
 -	Platforms:
@@ -707,72 +707,72 @@ $ docker pull haxe@sha256:eb5b5a3255347212f41c62fe9462ebcb3181e47edb7e4c762099d8
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **120.1 MB (120079094 bytes)**  
+-	Total Size: **120.4 MB (120438676 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:55d8d620a3e714b5e517b11b7aabeaf3117730a2716630301c55f92260f691ae`
+-	Image ID: `sha256:d8d357c9a4d854e4edec01882681a390b93d1b5eb8080df495859915a82cb23a`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Mon, 27 Feb 2017 20:34:36 GMT
-ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / 
-# Mon, 27 Feb 2017 20:34:37 GMT
+# Tue, 21 Mar 2017 18:28:51 GMT
+ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
+# Tue, 21 Mar 2017 18:29:05 GMT
 CMD ["/bin/bash"]
-# Mon, 27 Feb 2017 21:14:01 GMT
+# Tue, 21 Mar 2017 19:10:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 27 Feb 2017 21:14:17 GMT
+# Tue, 21 Mar 2017 19:11:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:24 GMT
+# Tue, 21 Mar 2017 20:44:41 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Feb 2017 03:25:29 GMT
+# Tue, 21 Mar 2017 20:44:47 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1c2 		zlib1g 		libpcre3 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:30 GMT
+# Tue, 21 Mar 2017 20:44:48 GMT
 ENV NEKO_VERSION=2.1.0
-# Tue, 28 Feb 2017 03:25:31 GMT
+# Tue, 21 Mar 2017 20:44:49 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 28 Feb 2017 03:26:47 GMT
+# Tue, 21 Mar 2017 20:46:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "http://nekovm.org/media/neko-2.1.0-src.tar.gz" 	&& echo "0c93d5fe96240510e2d1975ae0caa9dd8eadf70d916a868684f66a099a4acf96 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Tue, 28 Feb 2017 03:28:33 GMT
+# Tue, 21 Mar 2017 20:47:52 GMT
 ENV HAXE_VERSION=3.3.0-rc.1
-# Tue, 28 Feb 2017 03:29:22 GMT
+# Tue, 21 Mar 2017 20:48:31 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 28 Feb 2017 03:29:22 GMT
+# Tue, 21 Mar 2017 20:48:31 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184`  
-		Last Modified: Mon, 27 Feb 2017 20:40:26 GMT  
-		Size: 51.4 MB (51363374 bytes)  
+	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
+		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
+		Size: 51.4 MB (51438476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:081cd4bfd5210ff69949cc356db9693d11d103cd2380117cff7d4be6966eafdf`  
-		Last Modified: Mon, 27 Feb 2017 21:53:23 GMT  
-		Size: 18.5 MB (18535995 bytes)  
+	-	`sha256:2726297beaf19be957416750338c095ae15b94adc0e8c1306cebbf113f8b9a5c`  
+		Last Modified: Tue, 21 Mar 2017 19:58:58 GMT  
+		Size: 18.6 MB (18606479 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d2dc01312f3714eed4630a1317629f9131f307b3fc6d83506444d3eeebc0e41`  
-		Last Modified: Mon, 27 Feb 2017 21:54:18 GMT  
-		Size: 42.5 MB (42501192 bytes)  
+	-	`sha256:7d27bd3d7fecb89d4028f4afa3ee866d2262c5105fc37f57aa82af918dc2f84c`  
+		Last Modified: Tue, 21 Mar 2017 19:59:57 GMT  
+		Size: 42.6 MB (42571803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7349211cd29341d185560f660c78499a748897b67eb58c08cb077843e742f2c6`  
-		Last Modified: Thu, 02 Mar 2017 00:36:27 GMT  
-		Size: 254.6 KB (254620 bytes)  
+	-	`sha256:8730e51b706c67184bbf8208c38e95a9b7578ca13e6fff572e629d9649c9e9c1`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 254.8 KB (254768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11b7c094eb09fdafd36e2bf6648bd7feaa1f290daa4398625e1e1779d9892e38`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 214.0 B  
+	-	`sha256:de66fd15c3f26eb9d74d4537f49a4d009390b2d9b9ffb2055e8e527b69055fa2`  
+		Last Modified: Thu, 23 Mar 2017 18:59:17 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2f1ae260490eff97ced26ab90532fd22598ebfc83296ab4a6c013fb920d33c3`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 2.2 MB (2191459 bytes)  
+	-	`sha256:46a469363b792480a5934cfc301019d7906dc538eb49d2ea984c53190aa9a564`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 2.3 MB (2262744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2517be739d16162ef4cd283883c24f027f5d18ede1d5c08db9864c1fd8d75351`  
-		Last Modified: Thu, 02 Mar 2017 00:40:03 GMT  
-		Size: 5.2 MB (5232240 bytes)  
+	-	`sha256:1e9d359797ad3887f8cf6e29dfe8a3d9827e100bb0d5e8234777c6e9fd78dece`  
+		Last Modified: Thu, 23 Mar 2017 19:02:21 GMT  
+		Size: 5.3 MB (5304190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.3.0`
 
 ```console
-$ docker pull haxe@sha256:eb5b5a3255347212f41c62fe9462ebcb3181e47edb7e4c762099d815f16ce732
+$ docker pull haxe@sha256:5635aa1b73f2c8006bcf1b0a412a90b844c58169dff6da603ee55fbbeeac43f7
 ```
 
 -	Platforms:
@@ -782,72 +782,72 @@ $ docker pull haxe@sha256:eb5b5a3255347212f41c62fe9462ebcb3181e47edb7e4c762099d8
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **120.1 MB (120079094 bytes)**  
+-	Total Size: **120.4 MB (120438676 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:55d8d620a3e714b5e517b11b7aabeaf3117730a2716630301c55f92260f691ae`
+-	Image ID: `sha256:d8d357c9a4d854e4edec01882681a390b93d1b5eb8080df495859915a82cb23a`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Mon, 27 Feb 2017 20:34:36 GMT
-ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / 
-# Mon, 27 Feb 2017 20:34:37 GMT
+# Tue, 21 Mar 2017 18:28:51 GMT
+ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
+# Tue, 21 Mar 2017 18:29:05 GMT
 CMD ["/bin/bash"]
-# Mon, 27 Feb 2017 21:14:01 GMT
+# Tue, 21 Mar 2017 19:10:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 27 Feb 2017 21:14:17 GMT
+# Tue, 21 Mar 2017 19:11:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:24 GMT
+# Tue, 21 Mar 2017 20:44:41 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Feb 2017 03:25:29 GMT
+# Tue, 21 Mar 2017 20:44:47 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1c2 		zlib1g 		libpcre3 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:30 GMT
+# Tue, 21 Mar 2017 20:44:48 GMT
 ENV NEKO_VERSION=2.1.0
-# Tue, 28 Feb 2017 03:25:31 GMT
+# Tue, 21 Mar 2017 20:44:49 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 28 Feb 2017 03:26:47 GMT
+# Tue, 21 Mar 2017 20:46:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "http://nekovm.org/media/neko-2.1.0-src.tar.gz" 	&& echo "0c93d5fe96240510e2d1975ae0caa9dd8eadf70d916a868684f66a099a4acf96 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Tue, 28 Feb 2017 03:28:33 GMT
+# Tue, 21 Mar 2017 20:47:52 GMT
 ENV HAXE_VERSION=3.3.0-rc.1
-# Tue, 28 Feb 2017 03:29:22 GMT
+# Tue, 21 Mar 2017 20:48:31 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 28 Feb 2017 03:29:22 GMT
+# Tue, 21 Mar 2017 20:48:31 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184`  
-		Last Modified: Mon, 27 Feb 2017 20:40:26 GMT  
-		Size: 51.4 MB (51363374 bytes)  
+	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
+		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
+		Size: 51.4 MB (51438476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:081cd4bfd5210ff69949cc356db9693d11d103cd2380117cff7d4be6966eafdf`  
-		Last Modified: Mon, 27 Feb 2017 21:53:23 GMT  
-		Size: 18.5 MB (18535995 bytes)  
+	-	`sha256:2726297beaf19be957416750338c095ae15b94adc0e8c1306cebbf113f8b9a5c`  
+		Last Modified: Tue, 21 Mar 2017 19:58:58 GMT  
+		Size: 18.6 MB (18606479 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d2dc01312f3714eed4630a1317629f9131f307b3fc6d83506444d3eeebc0e41`  
-		Last Modified: Mon, 27 Feb 2017 21:54:18 GMT  
-		Size: 42.5 MB (42501192 bytes)  
+	-	`sha256:7d27bd3d7fecb89d4028f4afa3ee866d2262c5105fc37f57aa82af918dc2f84c`  
+		Last Modified: Tue, 21 Mar 2017 19:59:57 GMT  
+		Size: 42.6 MB (42571803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7349211cd29341d185560f660c78499a748897b67eb58c08cb077843e742f2c6`  
-		Last Modified: Thu, 02 Mar 2017 00:36:27 GMT  
-		Size: 254.6 KB (254620 bytes)  
+	-	`sha256:8730e51b706c67184bbf8208c38e95a9b7578ca13e6fff572e629d9649c9e9c1`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 254.8 KB (254768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11b7c094eb09fdafd36e2bf6648bd7feaa1f290daa4398625e1e1779d9892e38`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 214.0 B  
+	-	`sha256:de66fd15c3f26eb9d74d4537f49a4d009390b2d9b9ffb2055e8e527b69055fa2`  
+		Last Modified: Thu, 23 Mar 2017 18:59:17 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2f1ae260490eff97ced26ab90532fd22598ebfc83296ab4a6c013fb920d33c3`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 2.2 MB (2191459 bytes)  
+	-	`sha256:46a469363b792480a5934cfc301019d7906dc538eb49d2ea984c53190aa9a564`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 2.3 MB (2262744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2517be739d16162ef4cd283883c24f027f5d18ede1d5c08db9864c1fd8d75351`  
-		Last Modified: Thu, 02 Mar 2017 00:40:03 GMT  
-		Size: 5.2 MB (5232240 bytes)  
+	-	`sha256:1e9d359797ad3887f8cf6e29dfe8a3d9827e100bb0d5e8234777c6e9fd78dece`  
+		Last Modified: Thu, 23 Mar 2017 19:02:21 GMT  
+		Size: 5.3 MB (5304190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.3`
 
 ```console
-$ docker pull haxe@sha256:eb5b5a3255347212f41c62fe9462ebcb3181e47edb7e4c762099d815f16ce732
+$ docker pull haxe@sha256:5635aa1b73f2c8006bcf1b0a412a90b844c58169dff6da603ee55fbbeeac43f7
 ```
 
 -	Platforms:
@@ -857,72 +857,72 @@ $ docker pull haxe@sha256:eb5b5a3255347212f41c62fe9462ebcb3181e47edb7e4c762099d8
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **120.1 MB (120079094 bytes)**  
+-	Total Size: **120.4 MB (120438676 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:55d8d620a3e714b5e517b11b7aabeaf3117730a2716630301c55f92260f691ae`
+-	Image ID: `sha256:d8d357c9a4d854e4edec01882681a390b93d1b5eb8080df495859915a82cb23a`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Mon, 27 Feb 2017 20:34:36 GMT
-ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / 
-# Mon, 27 Feb 2017 20:34:37 GMT
+# Tue, 21 Mar 2017 18:28:51 GMT
+ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
+# Tue, 21 Mar 2017 18:29:05 GMT
 CMD ["/bin/bash"]
-# Mon, 27 Feb 2017 21:14:01 GMT
+# Tue, 21 Mar 2017 19:10:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 27 Feb 2017 21:14:17 GMT
+# Tue, 21 Mar 2017 19:11:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:24 GMT
+# Tue, 21 Mar 2017 20:44:41 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Feb 2017 03:25:29 GMT
+# Tue, 21 Mar 2017 20:44:47 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1c2 		zlib1g 		libpcre3 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:30 GMT
+# Tue, 21 Mar 2017 20:44:48 GMT
 ENV NEKO_VERSION=2.1.0
-# Tue, 28 Feb 2017 03:25:31 GMT
+# Tue, 21 Mar 2017 20:44:49 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 28 Feb 2017 03:26:47 GMT
+# Tue, 21 Mar 2017 20:46:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "http://nekovm.org/media/neko-2.1.0-src.tar.gz" 	&& echo "0c93d5fe96240510e2d1975ae0caa9dd8eadf70d916a868684f66a099a4acf96 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Tue, 28 Feb 2017 03:28:33 GMT
+# Tue, 21 Mar 2017 20:47:52 GMT
 ENV HAXE_VERSION=3.3.0-rc.1
-# Tue, 28 Feb 2017 03:29:22 GMT
+# Tue, 21 Mar 2017 20:48:31 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 28 Feb 2017 03:29:22 GMT
+# Tue, 21 Mar 2017 20:48:31 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184`  
-		Last Modified: Mon, 27 Feb 2017 20:40:26 GMT  
-		Size: 51.4 MB (51363374 bytes)  
+	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
+		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
+		Size: 51.4 MB (51438476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:081cd4bfd5210ff69949cc356db9693d11d103cd2380117cff7d4be6966eafdf`  
-		Last Modified: Mon, 27 Feb 2017 21:53:23 GMT  
-		Size: 18.5 MB (18535995 bytes)  
+	-	`sha256:2726297beaf19be957416750338c095ae15b94adc0e8c1306cebbf113f8b9a5c`  
+		Last Modified: Tue, 21 Mar 2017 19:58:58 GMT  
+		Size: 18.6 MB (18606479 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d2dc01312f3714eed4630a1317629f9131f307b3fc6d83506444d3eeebc0e41`  
-		Last Modified: Mon, 27 Feb 2017 21:54:18 GMT  
-		Size: 42.5 MB (42501192 bytes)  
+	-	`sha256:7d27bd3d7fecb89d4028f4afa3ee866d2262c5105fc37f57aa82af918dc2f84c`  
+		Last Modified: Tue, 21 Mar 2017 19:59:57 GMT  
+		Size: 42.6 MB (42571803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7349211cd29341d185560f660c78499a748897b67eb58c08cb077843e742f2c6`  
-		Last Modified: Thu, 02 Mar 2017 00:36:27 GMT  
-		Size: 254.6 KB (254620 bytes)  
+	-	`sha256:8730e51b706c67184bbf8208c38e95a9b7578ca13e6fff572e629d9649c9e9c1`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 254.8 KB (254768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11b7c094eb09fdafd36e2bf6648bd7feaa1f290daa4398625e1e1779d9892e38`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 214.0 B  
+	-	`sha256:de66fd15c3f26eb9d74d4537f49a4d009390b2d9b9ffb2055e8e527b69055fa2`  
+		Last Modified: Thu, 23 Mar 2017 18:59:17 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2f1ae260490eff97ced26ab90532fd22598ebfc83296ab4a6c013fb920d33c3`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 2.2 MB (2191459 bytes)  
+	-	`sha256:46a469363b792480a5934cfc301019d7906dc538eb49d2ea984c53190aa9a564`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 2.3 MB (2262744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2517be739d16162ef4cd283883c24f027f5d18ede1d5c08db9864c1fd8d75351`  
-		Last Modified: Thu, 02 Mar 2017 00:40:03 GMT  
-		Size: 5.2 MB (5232240 bytes)  
+	-	`sha256:1e9d359797ad3887f8cf6e29dfe8a3d9827e100bb0d5e8234777c6e9fd78dece`  
+		Last Modified: Thu, 23 Mar 2017 19:02:21 GMT  
+		Size: 5.3 MB (5304190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.3.0-rc.1-onbuild`
 
 ```console
-$ docker pull haxe@sha256:2a48b015027b4bee759ce94e50716b84f0d26f691c49a59caa5180220c71abe3
+$ docker pull haxe@sha256:7f09ca5f7734f376c2b1d9b7460709722961af35ddd0c27e650fc199fd0236e2
 ```
 
 -	Platforms:
@@ -932,90 +932,90 @@ $ docker pull haxe@sha256:2a48b015027b4bee759ce94e50716b84f0d26f691c49a59caa5180
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **120.1 MB (120079221 bytes)**  
+-	Total Size: **120.4 MB (120438802 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79af86d967c82af30740c9ddd486046897365281c371048b44220c8022a7c213`
+-	Image ID: `sha256:1993645825db42e27fef3ecd303359b3728eec53dd4af22a7511b4be61e48c33`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Mon, 27 Feb 2017 20:34:36 GMT
-ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / 
-# Mon, 27 Feb 2017 20:34:37 GMT
+# Tue, 21 Mar 2017 18:28:51 GMT
+ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
+# Tue, 21 Mar 2017 18:29:05 GMT
 CMD ["/bin/bash"]
-# Mon, 27 Feb 2017 21:14:01 GMT
+# Tue, 21 Mar 2017 19:10:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 27 Feb 2017 21:14:17 GMT
+# Tue, 21 Mar 2017 19:11:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:24 GMT
+# Tue, 21 Mar 2017 20:44:41 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Feb 2017 03:25:29 GMT
+# Tue, 21 Mar 2017 20:44:47 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1c2 		zlib1g 		libpcre3 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:30 GMT
+# Tue, 21 Mar 2017 20:44:48 GMT
 ENV NEKO_VERSION=2.1.0
-# Tue, 28 Feb 2017 03:25:31 GMT
+# Tue, 21 Mar 2017 20:44:49 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 28 Feb 2017 03:26:47 GMT
+# Tue, 21 Mar 2017 20:46:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "http://nekovm.org/media/neko-2.1.0-src.tar.gz" 	&& echo "0c93d5fe96240510e2d1975ae0caa9dd8eadf70d916a868684f66a099a4acf96 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Tue, 28 Feb 2017 03:28:33 GMT
+# Tue, 21 Mar 2017 20:47:52 GMT
 ENV HAXE_VERSION=3.3.0-rc.1
-# Tue, 28 Feb 2017 03:29:22 GMT
+# Tue, 21 Mar 2017 20:48:31 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 28 Feb 2017 03:29:22 GMT
+# Tue, 21 Mar 2017 20:48:31 GMT
 CMD ["haxe"]
-# Tue, 28 Feb 2017 03:29:24 GMT
+# Tue, 21 Mar 2017 20:48:33 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 28 Feb 2017 03:29:24 GMT
+# Tue, 21 Mar 2017 20:48:33 GMT
 WORKDIR /usr/src/app
-# Tue, 28 Feb 2017 03:29:24 GMT
+# Tue, 21 Mar 2017 20:48:34 GMT
 ONBUILD COPY *.hxml /usr/src/app/
-# Tue, 28 Feb 2017 03:29:25 GMT
+# Tue, 21 Mar 2017 20:48:34 GMT
 ONBUILD RUN yes | haxelib install all
-# Tue, 28 Feb 2017 03:29:25 GMT
+# Tue, 21 Mar 2017 20:48:34 GMT
 ONBUILD COPY . /usr/src/app
-# Tue, 28 Feb 2017 03:29:25 GMT
+# Tue, 21 Mar 2017 20:48:35 GMT
 ONBUILD ARG BUILD_HXML=build.hxml
-# Tue, 28 Feb 2017 03:29:26 GMT
+# Tue, 21 Mar 2017 20:48:35 GMT
 ONBUILD RUN haxe $BUILD_HXML
 ```
 
 -	Layers:
-	-	`sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184`  
-		Last Modified: Mon, 27 Feb 2017 20:40:26 GMT  
-		Size: 51.4 MB (51363374 bytes)  
+	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
+		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
+		Size: 51.4 MB (51438476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:081cd4bfd5210ff69949cc356db9693d11d103cd2380117cff7d4be6966eafdf`  
-		Last Modified: Mon, 27 Feb 2017 21:53:23 GMT  
-		Size: 18.5 MB (18535995 bytes)  
+	-	`sha256:2726297beaf19be957416750338c095ae15b94adc0e8c1306cebbf113f8b9a5c`  
+		Last Modified: Tue, 21 Mar 2017 19:58:58 GMT  
+		Size: 18.6 MB (18606479 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d2dc01312f3714eed4630a1317629f9131f307b3fc6d83506444d3eeebc0e41`  
-		Last Modified: Mon, 27 Feb 2017 21:54:18 GMT  
-		Size: 42.5 MB (42501192 bytes)  
+	-	`sha256:7d27bd3d7fecb89d4028f4afa3ee866d2262c5105fc37f57aa82af918dc2f84c`  
+		Last Modified: Tue, 21 Mar 2017 19:59:57 GMT  
+		Size: 42.6 MB (42571803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7349211cd29341d185560f660c78499a748897b67eb58c08cb077843e742f2c6`  
-		Last Modified: Thu, 02 Mar 2017 00:36:27 GMT  
-		Size: 254.6 KB (254620 bytes)  
+	-	`sha256:8730e51b706c67184bbf8208c38e95a9b7578ca13e6fff572e629d9649c9e9c1`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 254.8 KB (254768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11b7c094eb09fdafd36e2bf6648bd7feaa1f290daa4398625e1e1779d9892e38`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 214.0 B  
+	-	`sha256:de66fd15c3f26eb9d74d4537f49a4d009390b2d9b9ffb2055e8e527b69055fa2`  
+		Last Modified: Thu, 23 Mar 2017 18:59:17 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2f1ae260490eff97ced26ab90532fd22598ebfc83296ab4a6c013fb920d33c3`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 2.2 MB (2191459 bytes)  
+	-	`sha256:46a469363b792480a5934cfc301019d7906dc538eb49d2ea984c53190aa9a564`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 2.3 MB (2262744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2517be739d16162ef4cd283883c24f027f5d18ede1d5c08db9864c1fd8d75351`  
-		Last Modified: Thu, 02 Mar 2017 00:40:03 GMT  
-		Size: 5.2 MB (5232240 bytes)  
+	-	`sha256:1e9d359797ad3887f8cf6e29dfe8a3d9827e100bb0d5e8234777c6e9fd78dece`  
+		Last Modified: Thu, 23 Mar 2017 19:02:21 GMT  
+		Size: 5.3 MB (5304190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7873f6279307b9627b55c79588196d2227da331ebe7ee85f22767d7500794c6d`  
-		Last Modified: Thu, 02 Mar 2017 00:41:18 GMT  
-		Size: 127.0 B  
+	-	`sha256:9e5e9840c14afed38f45c523ec060b5223c0d60689f167134b5d5087a0b44db0`  
+		Last Modified: Thu, 23 Mar 2017 19:03:26 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.3.0-onbuild`
 
 ```console
-$ docker pull haxe@sha256:2a48b015027b4bee759ce94e50716b84f0d26f691c49a59caa5180220c71abe3
+$ docker pull haxe@sha256:7f09ca5f7734f376c2b1d9b7460709722961af35ddd0c27e650fc199fd0236e2
 ```
 
 -	Platforms:
@@ -1025,90 +1025,90 @@ $ docker pull haxe@sha256:2a48b015027b4bee759ce94e50716b84f0d26f691c49a59caa5180
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **120.1 MB (120079221 bytes)**  
+-	Total Size: **120.4 MB (120438802 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79af86d967c82af30740c9ddd486046897365281c371048b44220c8022a7c213`
+-	Image ID: `sha256:1993645825db42e27fef3ecd303359b3728eec53dd4af22a7511b4be61e48c33`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Mon, 27 Feb 2017 20:34:36 GMT
-ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / 
-# Mon, 27 Feb 2017 20:34:37 GMT
+# Tue, 21 Mar 2017 18:28:51 GMT
+ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
+# Tue, 21 Mar 2017 18:29:05 GMT
 CMD ["/bin/bash"]
-# Mon, 27 Feb 2017 21:14:01 GMT
+# Tue, 21 Mar 2017 19:10:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 27 Feb 2017 21:14:17 GMT
+# Tue, 21 Mar 2017 19:11:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:24 GMT
+# Tue, 21 Mar 2017 20:44:41 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Feb 2017 03:25:29 GMT
+# Tue, 21 Mar 2017 20:44:47 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1c2 		zlib1g 		libpcre3 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:30 GMT
+# Tue, 21 Mar 2017 20:44:48 GMT
 ENV NEKO_VERSION=2.1.0
-# Tue, 28 Feb 2017 03:25:31 GMT
+# Tue, 21 Mar 2017 20:44:49 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 28 Feb 2017 03:26:47 GMT
+# Tue, 21 Mar 2017 20:46:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "http://nekovm.org/media/neko-2.1.0-src.tar.gz" 	&& echo "0c93d5fe96240510e2d1975ae0caa9dd8eadf70d916a868684f66a099a4acf96 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Tue, 28 Feb 2017 03:28:33 GMT
+# Tue, 21 Mar 2017 20:47:52 GMT
 ENV HAXE_VERSION=3.3.0-rc.1
-# Tue, 28 Feb 2017 03:29:22 GMT
+# Tue, 21 Mar 2017 20:48:31 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 28 Feb 2017 03:29:22 GMT
+# Tue, 21 Mar 2017 20:48:31 GMT
 CMD ["haxe"]
-# Tue, 28 Feb 2017 03:29:24 GMT
+# Tue, 21 Mar 2017 20:48:33 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 28 Feb 2017 03:29:24 GMT
+# Tue, 21 Mar 2017 20:48:33 GMT
 WORKDIR /usr/src/app
-# Tue, 28 Feb 2017 03:29:24 GMT
+# Tue, 21 Mar 2017 20:48:34 GMT
 ONBUILD COPY *.hxml /usr/src/app/
-# Tue, 28 Feb 2017 03:29:25 GMT
+# Tue, 21 Mar 2017 20:48:34 GMT
 ONBUILD RUN yes | haxelib install all
-# Tue, 28 Feb 2017 03:29:25 GMT
+# Tue, 21 Mar 2017 20:48:34 GMT
 ONBUILD COPY . /usr/src/app
-# Tue, 28 Feb 2017 03:29:25 GMT
+# Tue, 21 Mar 2017 20:48:35 GMT
 ONBUILD ARG BUILD_HXML=build.hxml
-# Tue, 28 Feb 2017 03:29:26 GMT
+# Tue, 21 Mar 2017 20:48:35 GMT
 ONBUILD RUN haxe $BUILD_HXML
 ```
 
 -	Layers:
-	-	`sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184`  
-		Last Modified: Mon, 27 Feb 2017 20:40:26 GMT  
-		Size: 51.4 MB (51363374 bytes)  
+	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
+		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
+		Size: 51.4 MB (51438476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:081cd4bfd5210ff69949cc356db9693d11d103cd2380117cff7d4be6966eafdf`  
-		Last Modified: Mon, 27 Feb 2017 21:53:23 GMT  
-		Size: 18.5 MB (18535995 bytes)  
+	-	`sha256:2726297beaf19be957416750338c095ae15b94adc0e8c1306cebbf113f8b9a5c`  
+		Last Modified: Tue, 21 Mar 2017 19:58:58 GMT  
+		Size: 18.6 MB (18606479 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d2dc01312f3714eed4630a1317629f9131f307b3fc6d83506444d3eeebc0e41`  
-		Last Modified: Mon, 27 Feb 2017 21:54:18 GMT  
-		Size: 42.5 MB (42501192 bytes)  
+	-	`sha256:7d27bd3d7fecb89d4028f4afa3ee866d2262c5105fc37f57aa82af918dc2f84c`  
+		Last Modified: Tue, 21 Mar 2017 19:59:57 GMT  
+		Size: 42.6 MB (42571803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7349211cd29341d185560f660c78499a748897b67eb58c08cb077843e742f2c6`  
-		Last Modified: Thu, 02 Mar 2017 00:36:27 GMT  
-		Size: 254.6 KB (254620 bytes)  
+	-	`sha256:8730e51b706c67184bbf8208c38e95a9b7578ca13e6fff572e629d9649c9e9c1`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 254.8 KB (254768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11b7c094eb09fdafd36e2bf6648bd7feaa1f290daa4398625e1e1779d9892e38`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 214.0 B  
+	-	`sha256:de66fd15c3f26eb9d74d4537f49a4d009390b2d9b9ffb2055e8e527b69055fa2`  
+		Last Modified: Thu, 23 Mar 2017 18:59:17 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2f1ae260490eff97ced26ab90532fd22598ebfc83296ab4a6c013fb920d33c3`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 2.2 MB (2191459 bytes)  
+	-	`sha256:46a469363b792480a5934cfc301019d7906dc538eb49d2ea984c53190aa9a564`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 2.3 MB (2262744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2517be739d16162ef4cd283883c24f027f5d18ede1d5c08db9864c1fd8d75351`  
-		Last Modified: Thu, 02 Mar 2017 00:40:03 GMT  
-		Size: 5.2 MB (5232240 bytes)  
+	-	`sha256:1e9d359797ad3887f8cf6e29dfe8a3d9827e100bb0d5e8234777c6e9fd78dece`  
+		Last Modified: Thu, 23 Mar 2017 19:02:21 GMT  
+		Size: 5.3 MB (5304190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7873f6279307b9627b55c79588196d2227da331ebe7ee85f22767d7500794c6d`  
-		Last Modified: Thu, 02 Mar 2017 00:41:18 GMT  
-		Size: 127.0 B  
+	-	`sha256:9e5e9840c14afed38f45c523ec060b5223c0d60689f167134b5d5087a0b44db0`  
+		Last Modified: Thu, 23 Mar 2017 19:03:26 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.3-onbuild`
 
 ```console
-$ docker pull haxe@sha256:2a48b015027b4bee759ce94e50716b84f0d26f691c49a59caa5180220c71abe3
+$ docker pull haxe@sha256:7f09ca5f7734f376c2b1d9b7460709722961af35ddd0c27e650fc199fd0236e2
 ```
 
 -	Platforms:
@@ -1118,165 +1118,165 @@ $ docker pull haxe@sha256:2a48b015027b4bee759ce94e50716b84f0d26f691c49a59caa5180
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **120.1 MB (120079221 bytes)**  
+-	Total Size: **120.4 MB (120438802 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79af86d967c82af30740c9ddd486046897365281c371048b44220c8022a7c213`
+-	Image ID: `sha256:1993645825db42e27fef3ecd303359b3728eec53dd4af22a7511b4be61e48c33`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Mon, 27 Feb 2017 20:34:36 GMT
-ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / 
-# Mon, 27 Feb 2017 20:34:37 GMT
+# Tue, 21 Mar 2017 18:28:51 GMT
+ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
+# Tue, 21 Mar 2017 18:29:05 GMT
 CMD ["/bin/bash"]
-# Mon, 27 Feb 2017 21:14:01 GMT
+# Tue, 21 Mar 2017 19:10:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 27 Feb 2017 21:14:17 GMT
+# Tue, 21 Mar 2017 19:11:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:24 GMT
+# Tue, 21 Mar 2017 20:44:41 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Feb 2017 03:25:29 GMT
+# Tue, 21 Mar 2017 20:44:47 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1c2 		zlib1g 		libpcre3 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:30 GMT
+# Tue, 21 Mar 2017 20:44:48 GMT
 ENV NEKO_VERSION=2.1.0
-# Tue, 28 Feb 2017 03:25:31 GMT
+# Tue, 21 Mar 2017 20:44:49 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 28 Feb 2017 03:26:47 GMT
+# Tue, 21 Mar 2017 20:46:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "http://nekovm.org/media/neko-2.1.0-src.tar.gz" 	&& echo "0c93d5fe96240510e2d1975ae0caa9dd8eadf70d916a868684f66a099a4acf96 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Tue, 28 Feb 2017 03:28:33 GMT
+# Tue, 21 Mar 2017 20:47:52 GMT
 ENV HAXE_VERSION=3.3.0-rc.1
-# Tue, 28 Feb 2017 03:29:22 GMT
+# Tue, 21 Mar 2017 20:48:31 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.3.0-rc1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 28 Feb 2017 03:29:22 GMT
+# Tue, 21 Mar 2017 20:48:31 GMT
 CMD ["haxe"]
-# Tue, 28 Feb 2017 03:29:24 GMT
+# Tue, 21 Mar 2017 20:48:33 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 28 Feb 2017 03:29:24 GMT
+# Tue, 21 Mar 2017 20:48:33 GMT
 WORKDIR /usr/src/app
-# Tue, 28 Feb 2017 03:29:24 GMT
+# Tue, 21 Mar 2017 20:48:34 GMT
 ONBUILD COPY *.hxml /usr/src/app/
-# Tue, 28 Feb 2017 03:29:25 GMT
+# Tue, 21 Mar 2017 20:48:34 GMT
 ONBUILD RUN yes | haxelib install all
-# Tue, 28 Feb 2017 03:29:25 GMT
+# Tue, 21 Mar 2017 20:48:34 GMT
 ONBUILD COPY . /usr/src/app
-# Tue, 28 Feb 2017 03:29:25 GMT
+# Tue, 21 Mar 2017 20:48:35 GMT
 ONBUILD ARG BUILD_HXML=build.hxml
-# Tue, 28 Feb 2017 03:29:26 GMT
+# Tue, 21 Mar 2017 20:48:35 GMT
 ONBUILD RUN haxe $BUILD_HXML
 ```
 
 -	Layers:
-	-	`sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184`  
-		Last Modified: Mon, 27 Feb 2017 20:40:26 GMT  
-		Size: 51.4 MB (51363374 bytes)  
+	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
+		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
+		Size: 51.4 MB (51438476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:081cd4bfd5210ff69949cc356db9693d11d103cd2380117cff7d4be6966eafdf`  
-		Last Modified: Mon, 27 Feb 2017 21:53:23 GMT  
-		Size: 18.5 MB (18535995 bytes)  
+	-	`sha256:2726297beaf19be957416750338c095ae15b94adc0e8c1306cebbf113f8b9a5c`  
+		Last Modified: Tue, 21 Mar 2017 19:58:58 GMT  
+		Size: 18.6 MB (18606479 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d2dc01312f3714eed4630a1317629f9131f307b3fc6d83506444d3eeebc0e41`  
-		Last Modified: Mon, 27 Feb 2017 21:54:18 GMT  
-		Size: 42.5 MB (42501192 bytes)  
+	-	`sha256:7d27bd3d7fecb89d4028f4afa3ee866d2262c5105fc37f57aa82af918dc2f84c`  
+		Last Modified: Tue, 21 Mar 2017 19:59:57 GMT  
+		Size: 42.6 MB (42571803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7349211cd29341d185560f660c78499a748897b67eb58c08cb077843e742f2c6`  
-		Last Modified: Thu, 02 Mar 2017 00:36:27 GMT  
-		Size: 254.6 KB (254620 bytes)  
+	-	`sha256:8730e51b706c67184bbf8208c38e95a9b7578ca13e6fff572e629d9649c9e9c1`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 254.8 KB (254768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11b7c094eb09fdafd36e2bf6648bd7feaa1f290daa4398625e1e1779d9892e38`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 214.0 B  
+	-	`sha256:de66fd15c3f26eb9d74d4537f49a4d009390b2d9b9ffb2055e8e527b69055fa2`  
+		Last Modified: Thu, 23 Mar 2017 18:59:17 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2f1ae260490eff97ced26ab90532fd22598ebfc83296ab4a6c013fb920d33c3`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 2.2 MB (2191459 bytes)  
+	-	`sha256:46a469363b792480a5934cfc301019d7906dc538eb49d2ea984c53190aa9a564`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 2.3 MB (2262744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2517be739d16162ef4cd283883c24f027f5d18ede1d5c08db9864c1fd8d75351`  
-		Last Modified: Thu, 02 Mar 2017 00:40:03 GMT  
-		Size: 5.2 MB (5232240 bytes)  
+	-	`sha256:1e9d359797ad3887f8cf6e29dfe8a3d9827e100bb0d5e8234777c6e9fd78dece`  
+		Last Modified: Thu, 23 Mar 2017 19:02:21 GMT  
+		Size: 5.3 MB (5304190 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7873f6279307b9627b55c79588196d2227da331ebe7ee85f22767d7500794c6d`  
-		Last Modified: Thu, 02 Mar 2017 00:41:18 GMT  
-		Size: 127.0 B  
+	-	`sha256:9e5e9840c14afed38f45c523ec060b5223c0d60689f167134b5d5087a0b44db0`  
+		Last Modified: Thu, 23 Mar 2017 19:03:26 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `haxe:3.4.0`
+## `haxe:3.4.2`
 
 ```console
-$ docker pull haxe@sha256:23122931270ff8bbe6d51e15783110ef36529f7ffcdc7169020dac96ec8846f2
+$ docker pull haxe@sha256:eb49d7c916f9eb13f7afea2fb3e26115c367b76aedad9fe57a88523396d19131
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `haxe:3.4.0` - linux; amd64
+### `haxe:3.4.2` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **120.6 MB (120566776 bytes)**  
+-	Total Size: **121.0 MB (120955646 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4402a5a14128ec81219885a5442d6fbbc5e7d710763ed406ccdb3ed4f67ce9b`
+-	Image ID: `sha256:b12e8819a2034effd891f2d5735b4baacf9cc2c8ad2b08daf259be7048e01b08`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Mon, 27 Feb 2017 20:34:36 GMT
-ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / 
-# Mon, 27 Feb 2017 20:34:37 GMT
+# Tue, 21 Mar 2017 18:28:51 GMT
+ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
+# Tue, 21 Mar 2017 18:29:05 GMT
 CMD ["/bin/bash"]
-# Mon, 27 Feb 2017 21:14:01 GMT
+# Tue, 21 Mar 2017 19:10:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 27 Feb 2017 21:14:17 GMT
+# Tue, 21 Mar 2017 19:11:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:24 GMT
+# Tue, 21 Mar 2017 20:44:41 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Feb 2017 03:25:29 GMT
+# Tue, 21 Mar 2017 20:44:47 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1c2 		zlib1g 		libpcre3 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:30 GMT
+# Tue, 21 Mar 2017 20:44:48 GMT
 ENV NEKO_VERSION=2.1.0
-# Tue, 28 Feb 2017 03:25:31 GMT
+# Tue, 21 Mar 2017 20:44:49 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 28 Feb 2017 03:26:47 GMT
+# Tue, 21 Mar 2017 20:46:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "http://nekovm.org/media/neko-2.1.0-src.tar.gz" 	&& echo "0c93d5fe96240510e2d1975ae0caa9dd8eadf70d916a868684f66a099a4acf96 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Tue, 28 Feb 2017 03:29:26 GMT
-ENV HAXE_VERSION=3.4.0
-# Tue, 28 Feb 2017 03:30:17 GMT
-RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.4.0 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 28 Feb 2017 03:30:18 GMT
+# Thu, 23 Mar 2017 18:57:48 GMT
+ENV HAXE_VERSION=3.4.2
+# Thu, 23 Mar 2017 18:58:50 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.4.2 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Thu, 23 Mar 2017 18:58:50 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184`  
-		Last Modified: Mon, 27 Feb 2017 20:40:26 GMT  
-		Size: 51.4 MB (51363374 bytes)  
+	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
+		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
+		Size: 51.4 MB (51438476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:081cd4bfd5210ff69949cc356db9693d11d103cd2380117cff7d4be6966eafdf`  
-		Last Modified: Mon, 27 Feb 2017 21:53:23 GMT  
-		Size: 18.5 MB (18535995 bytes)  
+	-	`sha256:2726297beaf19be957416750338c095ae15b94adc0e8c1306cebbf113f8b9a5c`  
+		Last Modified: Tue, 21 Mar 2017 19:58:58 GMT  
+		Size: 18.6 MB (18606479 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d2dc01312f3714eed4630a1317629f9131f307b3fc6d83506444d3eeebc0e41`  
-		Last Modified: Mon, 27 Feb 2017 21:54:18 GMT  
-		Size: 42.5 MB (42501192 bytes)  
+	-	`sha256:7d27bd3d7fecb89d4028f4afa3ee866d2262c5105fc37f57aa82af918dc2f84c`  
+		Last Modified: Tue, 21 Mar 2017 19:59:57 GMT  
+		Size: 42.6 MB (42571803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7349211cd29341d185560f660c78499a748897b67eb58c08cb077843e742f2c6`  
-		Last Modified: Thu, 02 Mar 2017 00:36:27 GMT  
-		Size: 254.6 KB (254620 bytes)  
+	-	`sha256:8730e51b706c67184bbf8208c38e95a9b7578ca13e6fff572e629d9649c9e9c1`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 254.8 KB (254768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11b7c094eb09fdafd36e2bf6648bd7feaa1f290daa4398625e1e1779d9892e38`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 214.0 B  
+	-	`sha256:de66fd15c3f26eb9d74d4537f49a4d009390b2d9b9ffb2055e8e527b69055fa2`  
+		Last Modified: Thu, 23 Mar 2017 18:59:17 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2f1ae260490eff97ced26ab90532fd22598ebfc83296ab4a6c013fb920d33c3`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 2.2 MB (2191459 bytes)  
+	-	`sha256:46a469363b792480a5934cfc301019d7906dc538eb49d2ea984c53190aa9a564`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 2.3 MB (2262744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4eafa440bd1dec3eca7079c7aafc7963304ecb2fdddfc1beab489c3a5cb7bed`  
-		Last Modified: Thu, 02 Mar 2017 00:42:45 GMT  
-		Size: 5.7 MB (5719922 bytes)  
+	-	`sha256:69f10fc7aae6cc24a413c752e48eac96f47cc0f8a498e73a0522532876960ba5`  
+		Last Modified: Thu, 23 Mar 2017 19:04:30 GMT  
+		Size: 5.8 MB (5821160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.4`
 
 ```console
-$ docker pull haxe@sha256:23122931270ff8bbe6d51e15783110ef36529f7ffcdc7169020dac96ec8846f2
+$ docker pull haxe@sha256:eb49d7c916f9eb13f7afea2fb3e26115c367b76aedad9fe57a88523396d19131
 ```
 
 -	Platforms:
@@ -1286,72 +1286,72 @@ $ docker pull haxe@sha256:23122931270ff8bbe6d51e15783110ef36529f7ffcdc7169020dac
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **120.6 MB (120566776 bytes)**  
+-	Total Size: **121.0 MB (120955646 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4402a5a14128ec81219885a5442d6fbbc5e7d710763ed406ccdb3ed4f67ce9b`
+-	Image ID: `sha256:b12e8819a2034effd891f2d5735b4baacf9cc2c8ad2b08daf259be7048e01b08`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Mon, 27 Feb 2017 20:34:36 GMT
-ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / 
-# Mon, 27 Feb 2017 20:34:37 GMT
+# Tue, 21 Mar 2017 18:28:51 GMT
+ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
+# Tue, 21 Mar 2017 18:29:05 GMT
 CMD ["/bin/bash"]
-# Mon, 27 Feb 2017 21:14:01 GMT
+# Tue, 21 Mar 2017 19:10:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 27 Feb 2017 21:14:17 GMT
+# Tue, 21 Mar 2017 19:11:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:24 GMT
+# Tue, 21 Mar 2017 20:44:41 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Feb 2017 03:25:29 GMT
+# Tue, 21 Mar 2017 20:44:47 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1c2 		zlib1g 		libpcre3 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:30 GMT
+# Tue, 21 Mar 2017 20:44:48 GMT
 ENV NEKO_VERSION=2.1.0
-# Tue, 28 Feb 2017 03:25:31 GMT
+# Tue, 21 Mar 2017 20:44:49 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 28 Feb 2017 03:26:47 GMT
+# Tue, 21 Mar 2017 20:46:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "http://nekovm.org/media/neko-2.1.0-src.tar.gz" 	&& echo "0c93d5fe96240510e2d1975ae0caa9dd8eadf70d916a868684f66a099a4acf96 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Tue, 28 Feb 2017 03:29:26 GMT
-ENV HAXE_VERSION=3.4.0
-# Tue, 28 Feb 2017 03:30:17 GMT
-RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.4.0 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 28 Feb 2017 03:30:18 GMT
+# Thu, 23 Mar 2017 18:57:48 GMT
+ENV HAXE_VERSION=3.4.2
+# Thu, 23 Mar 2017 18:58:50 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.4.2 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Thu, 23 Mar 2017 18:58:50 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184`  
-		Last Modified: Mon, 27 Feb 2017 20:40:26 GMT  
-		Size: 51.4 MB (51363374 bytes)  
+	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
+		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
+		Size: 51.4 MB (51438476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:081cd4bfd5210ff69949cc356db9693d11d103cd2380117cff7d4be6966eafdf`  
-		Last Modified: Mon, 27 Feb 2017 21:53:23 GMT  
-		Size: 18.5 MB (18535995 bytes)  
+	-	`sha256:2726297beaf19be957416750338c095ae15b94adc0e8c1306cebbf113f8b9a5c`  
+		Last Modified: Tue, 21 Mar 2017 19:58:58 GMT  
+		Size: 18.6 MB (18606479 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d2dc01312f3714eed4630a1317629f9131f307b3fc6d83506444d3eeebc0e41`  
-		Last Modified: Mon, 27 Feb 2017 21:54:18 GMT  
-		Size: 42.5 MB (42501192 bytes)  
+	-	`sha256:7d27bd3d7fecb89d4028f4afa3ee866d2262c5105fc37f57aa82af918dc2f84c`  
+		Last Modified: Tue, 21 Mar 2017 19:59:57 GMT  
+		Size: 42.6 MB (42571803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7349211cd29341d185560f660c78499a748897b67eb58c08cb077843e742f2c6`  
-		Last Modified: Thu, 02 Mar 2017 00:36:27 GMT  
-		Size: 254.6 KB (254620 bytes)  
+	-	`sha256:8730e51b706c67184bbf8208c38e95a9b7578ca13e6fff572e629d9649c9e9c1`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 254.8 KB (254768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11b7c094eb09fdafd36e2bf6648bd7feaa1f290daa4398625e1e1779d9892e38`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 214.0 B  
+	-	`sha256:de66fd15c3f26eb9d74d4537f49a4d009390b2d9b9ffb2055e8e527b69055fa2`  
+		Last Modified: Thu, 23 Mar 2017 18:59:17 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2f1ae260490eff97ced26ab90532fd22598ebfc83296ab4a6c013fb920d33c3`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 2.2 MB (2191459 bytes)  
+	-	`sha256:46a469363b792480a5934cfc301019d7906dc538eb49d2ea984c53190aa9a564`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 2.3 MB (2262744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4eafa440bd1dec3eca7079c7aafc7963304ecb2fdddfc1beab489c3a5cb7bed`  
-		Last Modified: Thu, 02 Mar 2017 00:42:45 GMT  
-		Size: 5.7 MB (5719922 bytes)  
+	-	`sha256:69f10fc7aae6cc24a413c752e48eac96f47cc0f8a498e73a0522532876960ba5`  
+		Last Modified: Thu, 23 Mar 2017 19:04:30 GMT  
+		Size: 5.8 MB (5821160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:latest`
 
 ```console
-$ docker pull haxe@sha256:23122931270ff8bbe6d51e15783110ef36529f7ffcdc7169020dac96ec8846f2
+$ docker pull haxe@sha256:eb49d7c916f9eb13f7afea2fb3e26115c367b76aedad9fe57a88523396d19131
 ```
 
 -	Platforms:
@@ -1361,165 +1361,165 @@ $ docker pull haxe@sha256:23122931270ff8bbe6d51e15783110ef36529f7ffcdc7169020dac
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **120.6 MB (120566776 bytes)**  
+-	Total Size: **121.0 MB (120955646 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4402a5a14128ec81219885a5442d6fbbc5e7d710763ed406ccdb3ed4f67ce9b`
+-	Image ID: `sha256:b12e8819a2034effd891f2d5735b4baacf9cc2c8ad2b08daf259be7048e01b08`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Mon, 27 Feb 2017 20:34:36 GMT
-ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / 
-# Mon, 27 Feb 2017 20:34:37 GMT
+# Tue, 21 Mar 2017 18:28:51 GMT
+ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
+# Tue, 21 Mar 2017 18:29:05 GMT
 CMD ["/bin/bash"]
-# Mon, 27 Feb 2017 21:14:01 GMT
+# Tue, 21 Mar 2017 19:10:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 27 Feb 2017 21:14:17 GMT
+# Tue, 21 Mar 2017 19:11:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:24 GMT
+# Tue, 21 Mar 2017 20:44:41 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Feb 2017 03:25:29 GMT
+# Tue, 21 Mar 2017 20:44:47 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1c2 		zlib1g 		libpcre3 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:30 GMT
+# Tue, 21 Mar 2017 20:44:48 GMT
 ENV NEKO_VERSION=2.1.0
-# Tue, 28 Feb 2017 03:25:31 GMT
+# Tue, 21 Mar 2017 20:44:49 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 28 Feb 2017 03:26:47 GMT
+# Tue, 21 Mar 2017 20:46:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "http://nekovm.org/media/neko-2.1.0-src.tar.gz" 	&& echo "0c93d5fe96240510e2d1975ae0caa9dd8eadf70d916a868684f66a099a4acf96 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Tue, 28 Feb 2017 03:29:26 GMT
-ENV HAXE_VERSION=3.4.0
-# Tue, 28 Feb 2017 03:30:17 GMT
-RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.4.0 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 28 Feb 2017 03:30:18 GMT
+# Thu, 23 Mar 2017 18:57:48 GMT
+ENV HAXE_VERSION=3.4.2
+# Thu, 23 Mar 2017 18:58:50 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.4.2 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Thu, 23 Mar 2017 18:58:50 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184`  
-		Last Modified: Mon, 27 Feb 2017 20:40:26 GMT  
-		Size: 51.4 MB (51363374 bytes)  
+	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
+		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
+		Size: 51.4 MB (51438476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:081cd4bfd5210ff69949cc356db9693d11d103cd2380117cff7d4be6966eafdf`  
-		Last Modified: Mon, 27 Feb 2017 21:53:23 GMT  
-		Size: 18.5 MB (18535995 bytes)  
+	-	`sha256:2726297beaf19be957416750338c095ae15b94adc0e8c1306cebbf113f8b9a5c`  
+		Last Modified: Tue, 21 Mar 2017 19:58:58 GMT  
+		Size: 18.6 MB (18606479 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d2dc01312f3714eed4630a1317629f9131f307b3fc6d83506444d3eeebc0e41`  
-		Last Modified: Mon, 27 Feb 2017 21:54:18 GMT  
-		Size: 42.5 MB (42501192 bytes)  
+	-	`sha256:7d27bd3d7fecb89d4028f4afa3ee866d2262c5105fc37f57aa82af918dc2f84c`  
+		Last Modified: Tue, 21 Mar 2017 19:59:57 GMT  
+		Size: 42.6 MB (42571803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7349211cd29341d185560f660c78499a748897b67eb58c08cb077843e742f2c6`  
-		Last Modified: Thu, 02 Mar 2017 00:36:27 GMT  
-		Size: 254.6 KB (254620 bytes)  
+	-	`sha256:8730e51b706c67184bbf8208c38e95a9b7578ca13e6fff572e629d9649c9e9c1`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 254.8 KB (254768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11b7c094eb09fdafd36e2bf6648bd7feaa1f290daa4398625e1e1779d9892e38`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 214.0 B  
+	-	`sha256:de66fd15c3f26eb9d74d4537f49a4d009390b2d9b9ffb2055e8e527b69055fa2`  
+		Last Modified: Thu, 23 Mar 2017 18:59:17 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2f1ae260490eff97ced26ab90532fd22598ebfc83296ab4a6c013fb920d33c3`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 2.2 MB (2191459 bytes)  
+	-	`sha256:46a469363b792480a5934cfc301019d7906dc538eb49d2ea984c53190aa9a564`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 2.3 MB (2262744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4eafa440bd1dec3eca7079c7aafc7963304ecb2fdddfc1beab489c3a5cb7bed`  
-		Last Modified: Thu, 02 Mar 2017 00:42:45 GMT  
-		Size: 5.7 MB (5719922 bytes)  
+	-	`sha256:69f10fc7aae6cc24a413c752e48eac96f47cc0f8a498e73a0522532876960ba5`  
+		Last Modified: Thu, 23 Mar 2017 19:04:30 GMT  
+		Size: 5.8 MB (5821160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `haxe:3.4.0-onbuild`
+## `haxe:3.4.2-onbuild`
 
 ```console
-$ docker pull haxe@sha256:58ea81c828b0fa941cb2ee5a4f66cc9b2ea1246c66e79f0007ccf046c949935b
+$ docker pull haxe@sha256:ebc45eee4ac83e48d45b1880a4dca9710632c180838587e815fb8679c87066ea
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `haxe:3.4.0-onbuild` - linux; amd64
+### `haxe:3.4.2-onbuild` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **120.6 MB (120566902 bytes)**  
+-	Total Size: **121.0 MB (120955772 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:09841c0973f5e909bcd329f2e14b7eb1a2470f0325ef051a9813f9195645ec93`
+-	Image ID: `sha256:a66cff86264bcc906cb883870812e8e24a9698800c7ee65490133c895bfdb56c`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Mon, 27 Feb 2017 20:34:36 GMT
-ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / 
-# Mon, 27 Feb 2017 20:34:37 GMT
+# Tue, 21 Mar 2017 18:28:51 GMT
+ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
+# Tue, 21 Mar 2017 18:29:05 GMT
 CMD ["/bin/bash"]
-# Mon, 27 Feb 2017 21:14:01 GMT
+# Tue, 21 Mar 2017 19:10:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 27 Feb 2017 21:14:17 GMT
+# Tue, 21 Mar 2017 19:11:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:24 GMT
+# Tue, 21 Mar 2017 20:44:41 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Feb 2017 03:25:29 GMT
+# Tue, 21 Mar 2017 20:44:47 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1c2 		zlib1g 		libpcre3 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:30 GMT
+# Tue, 21 Mar 2017 20:44:48 GMT
 ENV NEKO_VERSION=2.1.0
-# Tue, 28 Feb 2017 03:25:31 GMT
+# Tue, 21 Mar 2017 20:44:49 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 28 Feb 2017 03:26:47 GMT
+# Tue, 21 Mar 2017 20:46:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "http://nekovm.org/media/neko-2.1.0-src.tar.gz" 	&& echo "0c93d5fe96240510e2d1975ae0caa9dd8eadf70d916a868684f66a099a4acf96 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Tue, 28 Feb 2017 03:29:26 GMT
-ENV HAXE_VERSION=3.4.0
-# Tue, 28 Feb 2017 03:30:17 GMT
-RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.4.0 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 28 Feb 2017 03:30:18 GMT
+# Thu, 23 Mar 2017 18:57:48 GMT
+ENV HAXE_VERSION=3.4.2
+# Thu, 23 Mar 2017 18:58:50 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.4.2 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Thu, 23 Mar 2017 18:58:50 GMT
 CMD ["haxe"]
-# Tue, 28 Feb 2017 03:30:19 GMT
+# Thu, 23 Mar 2017 18:58:52 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 28 Feb 2017 03:30:20 GMT
+# Thu, 23 Mar 2017 18:58:52 GMT
 WORKDIR /usr/src/app
-# Tue, 28 Feb 2017 03:30:20 GMT
+# Thu, 23 Mar 2017 18:58:53 GMT
 ONBUILD COPY *.hxml /usr/src/app/
-# Tue, 28 Feb 2017 03:30:20 GMT
+# Thu, 23 Mar 2017 18:58:53 GMT
 ONBUILD RUN yes | haxelib install all
-# Tue, 28 Feb 2017 03:30:21 GMT
+# Thu, 23 Mar 2017 18:58:54 GMT
 ONBUILD COPY . /usr/src/app
-# Tue, 28 Feb 2017 03:30:21 GMT
+# Thu, 23 Mar 2017 18:58:55 GMT
 ONBUILD ARG BUILD_HXML=build.hxml
-# Tue, 28 Feb 2017 03:30:21 GMT
+# Thu, 23 Mar 2017 18:58:55 GMT
 ONBUILD RUN haxe $BUILD_HXML
 ```
 
 -	Layers:
-	-	`sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184`  
-		Last Modified: Mon, 27 Feb 2017 20:40:26 GMT  
-		Size: 51.4 MB (51363374 bytes)  
+	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
+		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
+		Size: 51.4 MB (51438476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:081cd4bfd5210ff69949cc356db9693d11d103cd2380117cff7d4be6966eafdf`  
-		Last Modified: Mon, 27 Feb 2017 21:53:23 GMT  
-		Size: 18.5 MB (18535995 bytes)  
+	-	`sha256:2726297beaf19be957416750338c095ae15b94adc0e8c1306cebbf113f8b9a5c`  
+		Last Modified: Tue, 21 Mar 2017 19:58:58 GMT  
+		Size: 18.6 MB (18606479 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d2dc01312f3714eed4630a1317629f9131f307b3fc6d83506444d3eeebc0e41`  
-		Last Modified: Mon, 27 Feb 2017 21:54:18 GMT  
-		Size: 42.5 MB (42501192 bytes)  
+	-	`sha256:7d27bd3d7fecb89d4028f4afa3ee866d2262c5105fc37f57aa82af918dc2f84c`  
+		Last Modified: Tue, 21 Mar 2017 19:59:57 GMT  
+		Size: 42.6 MB (42571803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7349211cd29341d185560f660c78499a748897b67eb58c08cb077843e742f2c6`  
-		Last Modified: Thu, 02 Mar 2017 00:36:27 GMT  
-		Size: 254.6 KB (254620 bytes)  
+	-	`sha256:8730e51b706c67184bbf8208c38e95a9b7578ca13e6fff572e629d9649c9e9c1`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 254.8 KB (254768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11b7c094eb09fdafd36e2bf6648bd7feaa1f290daa4398625e1e1779d9892e38`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 214.0 B  
+	-	`sha256:de66fd15c3f26eb9d74d4537f49a4d009390b2d9b9ffb2055e8e527b69055fa2`  
+		Last Modified: Thu, 23 Mar 2017 18:59:17 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2f1ae260490eff97ced26ab90532fd22598ebfc83296ab4a6c013fb920d33c3`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 2.2 MB (2191459 bytes)  
+	-	`sha256:46a469363b792480a5934cfc301019d7906dc538eb49d2ea984c53190aa9a564`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 2.3 MB (2262744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4eafa440bd1dec3eca7079c7aafc7963304ecb2fdddfc1beab489c3a5cb7bed`  
-		Last Modified: Thu, 02 Mar 2017 00:42:45 GMT  
-		Size: 5.7 MB (5719922 bytes)  
+	-	`sha256:69f10fc7aae6cc24a413c752e48eac96f47cc0f8a498e73a0522532876960ba5`  
+		Last Modified: Thu, 23 Mar 2017 19:04:30 GMT  
+		Size: 5.8 MB (5821160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b46bfad1f3ff438fd82718d6388d5367d5c2b1e8440b64ad5a02bb501217375a`  
-		Last Modified: Thu, 02 Mar 2017 00:44:02 GMT  
+	-	`sha256:fd3a34fde26f018d10748b53b6bce8975eebc6a63a1c5e4edc692fd201fa9d55`  
+		Last Modified: Thu, 23 Mar 2017 19:05:32 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `haxe:3.4-onbuild`
 
 ```console
-$ docker pull haxe@sha256:58ea81c828b0fa941cb2ee5a4f66cc9b2ea1246c66e79f0007ccf046c949935b
+$ docker pull haxe@sha256:ebc45eee4ac83e48d45b1880a4dca9710632c180838587e815fb8679c87066ea
 ```
 
 -	Platforms:
@@ -1529,82 +1529,82 @@ $ docker pull haxe@sha256:58ea81c828b0fa941cb2ee5a4f66cc9b2ea1246c66e79f0007ccf0
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **120.6 MB (120566902 bytes)**  
+-	Total Size: **121.0 MB (120955772 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:09841c0973f5e909bcd329f2e14b7eb1a2470f0325ef051a9813f9195645ec93`
+-	Image ID: `sha256:a66cff86264bcc906cb883870812e8e24a9698800c7ee65490133c895bfdb56c`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Mon, 27 Feb 2017 20:34:36 GMT
-ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / 
-# Mon, 27 Feb 2017 20:34:37 GMT
+# Tue, 21 Mar 2017 18:28:51 GMT
+ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
+# Tue, 21 Mar 2017 18:29:05 GMT
 CMD ["/bin/bash"]
-# Mon, 27 Feb 2017 21:14:01 GMT
+# Tue, 21 Mar 2017 19:10:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 27 Feb 2017 21:14:17 GMT
+# Tue, 21 Mar 2017 19:11:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:24 GMT
+# Tue, 21 Mar 2017 20:44:41 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Feb 2017 03:25:29 GMT
+# Tue, 21 Mar 2017 20:44:47 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1c2 		zlib1g 		libpcre3 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 28 Feb 2017 03:25:30 GMT
+# Tue, 21 Mar 2017 20:44:48 GMT
 ENV NEKO_VERSION=2.1.0
-# Tue, 28 Feb 2017 03:25:31 GMT
+# Tue, 21 Mar 2017 20:44:49 GMT
 RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/jessie-backports.list
-# Tue, 28 Feb 2017 03:26:47 GMT
+# Tue, 21 Mar 2017 20:46:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre3-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk2.0-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "http://nekovm.org/media/neko-2.1.0-src.tar.gz" 	&& echo "0c93d5fe96240510e2d1975ae0caa9dd8eadf70d916a868684f66a099a4acf96 *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache
-# Tue, 28 Feb 2017 03:29:26 GMT
-ENV HAXE_VERSION=3.4.0
-# Tue, 28 Feb 2017 03:30:17 GMT
-RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.4.0 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
-# Tue, 28 Feb 2017 03:30:18 GMT
+# Thu, 23 Mar 2017 18:57:48 GMT
+ENV HAXE_VERSION=3.4.2
+# Thu, 23 Mar 2017 18:58:50 GMT
+RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-native-compilers 		camlp4 		libxml-light-ocaml-dev 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& git clone --recursive --depth 1 --branch 3.4.2 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& make OCAMLOPT=ocamlopt.opt 	&& make install INSTALL_DIR=/usr/local 	&& cd / && haxelib setup /usr/local/lib/haxe/lib 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache
+# Thu, 23 Mar 2017 18:58:50 GMT
 CMD ["haxe"]
-# Tue, 28 Feb 2017 03:30:19 GMT
+# Thu, 23 Mar 2017 18:58:52 GMT
 RUN mkdir -p /usr/src/app
-# Tue, 28 Feb 2017 03:30:20 GMT
+# Thu, 23 Mar 2017 18:58:52 GMT
 WORKDIR /usr/src/app
-# Tue, 28 Feb 2017 03:30:20 GMT
+# Thu, 23 Mar 2017 18:58:53 GMT
 ONBUILD COPY *.hxml /usr/src/app/
-# Tue, 28 Feb 2017 03:30:20 GMT
+# Thu, 23 Mar 2017 18:58:53 GMT
 ONBUILD RUN yes | haxelib install all
-# Tue, 28 Feb 2017 03:30:21 GMT
+# Thu, 23 Mar 2017 18:58:54 GMT
 ONBUILD COPY . /usr/src/app
-# Tue, 28 Feb 2017 03:30:21 GMT
+# Thu, 23 Mar 2017 18:58:55 GMT
 ONBUILD ARG BUILD_HXML=build.hxml
-# Tue, 28 Feb 2017 03:30:21 GMT
+# Thu, 23 Mar 2017 18:58:55 GMT
 ONBUILD RUN haxe $BUILD_HXML
 ```
 
 -	Layers:
-	-	`sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184`  
-		Last Modified: Mon, 27 Feb 2017 20:40:26 GMT  
-		Size: 51.4 MB (51363374 bytes)  
+	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
+		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
+		Size: 51.4 MB (51438476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:081cd4bfd5210ff69949cc356db9693d11d103cd2380117cff7d4be6966eafdf`  
-		Last Modified: Mon, 27 Feb 2017 21:53:23 GMT  
-		Size: 18.5 MB (18535995 bytes)  
+	-	`sha256:2726297beaf19be957416750338c095ae15b94adc0e8c1306cebbf113f8b9a5c`  
+		Last Modified: Tue, 21 Mar 2017 19:58:58 GMT  
+		Size: 18.6 MB (18606479 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5d2dc01312f3714eed4630a1317629f9131f307b3fc6d83506444d3eeebc0e41`  
-		Last Modified: Mon, 27 Feb 2017 21:54:18 GMT  
-		Size: 42.5 MB (42501192 bytes)  
+	-	`sha256:7d27bd3d7fecb89d4028f4afa3ee866d2262c5105fc37f57aa82af918dc2f84c`  
+		Last Modified: Tue, 21 Mar 2017 19:59:57 GMT  
+		Size: 42.6 MB (42571803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7349211cd29341d185560f660c78499a748897b67eb58c08cb077843e742f2c6`  
-		Last Modified: Thu, 02 Mar 2017 00:36:27 GMT  
-		Size: 254.6 KB (254620 bytes)  
+	-	`sha256:8730e51b706c67184bbf8208c38e95a9b7578ca13e6fff572e629d9649c9e9c1`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 254.8 KB (254768 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11b7c094eb09fdafd36e2bf6648bd7feaa1f290daa4398625e1e1779d9892e38`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 214.0 B  
+	-	`sha256:de66fd15c3f26eb9d74d4537f49a4d009390b2d9b9ffb2055e8e527b69055fa2`  
+		Last Modified: Thu, 23 Mar 2017 18:59:17 GMT  
+		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2f1ae260490eff97ced26ab90532fd22598ebfc83296ab4a6c013fb920d33c3`  
-		Last Modified: Thu, 02 Mar 2017 00:36:28 GMT  
-		Size: 2.2 MB (2191459 bytes)  
+	-	`sha256:46a469363b792480a5934cfc301019d7906dc538eb49d2ea984c53190aa9a564`  
+		Last Modified: Thu, 23 Mar 2017 18:59:18 GMT  
+		Size: 2.3 MB (2262744 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4eafa440bd1dec3eca7079c7aafc7963304ecb2fdddfc1beab489c3a5cb7bed`  
-		Last Modified: Thu, 02 Mar 2017 00:42:45 GMT  
-		Size: 5.7 MB (5719922 bytes)  
+	-	`sha256:69f10fc7aae6cc24a413c752e48eac96f47cc0f8a498e73a0522532876960ba5`  
+		Last Modified: Thu, 23 Mar 2017 19:04:30 GMT  
+		Size: 5.8 MB (5821160 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b46bfad1f3ff438fd82718d6388d5367d5c2b1e8440b64ad5a02bb501217375a`  
-		Last Modified: Thu, 02 Mar 2017 00:44:02 GMT  
+	-	`sha256:fd3a34fde26f018d10748b53b6bce8975eebc6a63a1c5e4edc692fd201fa9d55`  
+		Last Modified: Thu, 23 Mar 2017 19:05:32 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
