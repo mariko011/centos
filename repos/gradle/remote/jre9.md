@@ -1,7 +1,7 @@
 ## `gradle:jre9`
 
 ```console
-$ docker pull gradle@sha256:6e5717642f048670629d9e9b30d8ed75d898c8a5ffe3e7a99a81503f5936f13b
+$ docker pull gradle@sha256:4f821e89445e98561b29c5a0b29a035a0cb856d0931fe8339c5abb652f3d463d
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull gradle@sha256:6e5717642f048670629d9e9b30d8ed75d898c8a5ffe3e7a99a81
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **291.3 MB (291293538 bytes)**  
+-	Total Size: **291.3 MB (291294701 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5e85bf766554ab935c64eea0e4d6f65044a6ea92ee874296c7203f976247365`
+-	Image ID: `sha256:ef7f17d65740924a0e8a6ecf12694ec755612ece5f389c6d68edadc9b4a8c8ae`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -43,21 +43,21 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		openjdk-9-jre-headless="$
 CMD ["gradle"]
 # Thu, 23 Mar 2017 18:39:46 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Thu, 23 Mar 2017 18:39:46 GMT
-ENV GRADLE_VERSION=3.4
-# Thu, 23 Mar 2017 18:40:04 GMT
-ARG GRADLE_DOWNLOAD_SHA256=72d0cd4dcdd5e3be165eb7cd7bbd25cf8968baf400323d9ab1bba622c3f72205
-# Thu, 23 Mar 2017 18:40:09 GMT
-# ARGS: GRADLE_DOWNLOAD_SHA256=72d0cd4dcdd5e3be165eb7cd7bbd25cf8968baf400323d9ab1bba622c3f72205
+# Fri, 24 Mar 2017 17:04:34 GMT
+ENV GRADLE_VERSION=3.4.1
+# Fri, 24 Mar 2017 17:04:34 GMT
+ARG GRADLE_DOWNLOAD_SHA256=db1db193d479cc1202be843f17e4526660cfb0b21b57d62f3a87f88c878af9b2
+# Fri, 24 Mar 2017 17:04:38 GMT
+# ARGS: GRADLE_DOWNLOAD_SHA256=db1db193d479cc1202be843f17e4526660cfb0b21b57d62f3a87f88c878af9b2
 RUN set -o errexit -o nounset 	&& echo "Downloading Gradle" 	&& wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip" 		&& echo "Checking download hash" 	&& echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum --check - 		&& echo "Installing Gradle" 	&& unzip gradle.zip 	&& rm gradle.zip 	&& mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/" 	&& ln --symbolic "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle 		&& echo "Adding gradle user and group" 	&& groupadd --system --gid 1000 gradle 	&& useradd --system --gid gradle --uid 1000 --shell /bin/bash --create-home gradle 	&& mkdir /home/gradle/.gradle 	&& chown --recursive gradle:gradle /home/gradle
-# Thu, 23 Mar 2017 18:40:24 GMT
+# Fri, 24 Mar 2017 17:04:38 GMT
 USER [gradle]
-# Thu, 23 Mar 2017 18:40:25 GMT
+# Fri, 24 Mar 2017 17:04:38 GMT
 VOLUME [/home/gradle/.gradle]
-# Thu, 23 Mar 2017 18:40:26 GMT
+# Fri, 24 Mar 2017 17:04:38 GMT
 WORKDIR /home/gradle
-# Thu, 23 Mar 2017 18:40:39 GMT
-# ARGS: GRADLE_DOWNLOAD_SHA256=72d0cd4dcdd5e3be165eb7cd7bbd25cf8968baf400323d9ab1bba622c3f72205
+# Fri, 24 Mar 2017 17:04:51 GMT
+# ARGS: GRADLE_DOWNLOAD_SHA256=db1db193d479cc1202be843f17e4526660cfb0b21b57d62f3a87f88c878af9b2
 RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle --version
 ```
 
@@ -86,11 +86,11 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Last Modified: Thu, 23 Mar 2017 18:57:16 GMT  
 		Size: 155.0 MB (154982959 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a34b81181e15629baf237c51db48d17773fceb315186f91546de7104269b15b`  
-		Last Modified: Thu, 23 Mar 2017 18:56:58 GMT  
-		Size: 70.3 MB (70263235 bytes)  
+	-	`sha256:dd7b15a6153e8c581cc64c62a2558d506ef87d4d9ea450d6ceea6e79eeaf1763`  
+		Last Modified: Fri, 24 Mar 2017 17:21:57 GMT  
+		Size: 70.3 MB (70264399 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7cead7cf08e0333969ac65b600f08270d25e63d9024598fa29025cf68375b805`  
-		Last Modified: Thu, 23 Mar 2017 18:56:50 GMT  
-		Size: 141.0 B  
+	-	`sha256:a637eb617b8a3d71920de89f3077c3f94ad1829769fb5247fcabdd88600cbc07`  
+		Last Modified: Fri, 24 Mar 2017 17:21:50 GMT  
+		Size: 140.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
