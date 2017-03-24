@@ -2,35 +2,35 @@
 
 # Tags of `adminer`
 
--	[`adminer:4.2.5-standalone`](#adminer425-standalone)
--	[`adminer:4.2-standalone`](#adminer42-standalone)
+-	[`adminer:4.3.0-standalone`](#adminer430-standalone)
+-	[`adminer:4.3-standalone`](#adminer43-standalone)
 -	[`adminer:4-standalone`](#adminer4-standalone)
 -	[`adminer:standalone`](#adminerstandalone)
--	[`adminer:4.2.5`](#adminer425)
--	[`adminer:4.2`](#adminer42)
+-	[`adminer:4.3.0`](#adminer430)
+-	[`adminer:4.3`](#adminer43)
 -	[`adminer:4`](#adminer4)
 -	[`adminer:latest`](#adminerlatest)
--	[`adminer:4.2.5-fastcgi`](#adminer425-fastcgi)
--	[`adminer:4.2-fastcgi`](#adminer42-fastcgi)
+-	[`adminer:4.3.0-fastcgi`](#adminer430-fastcgi)
+-	[`adminer:4.3-fastcgi`](#adminer43-fastcgi)
 -	[`adminer:4-fastcgi`](#adminer4-fastcgi)
 -	[`adminer:fastcgi`](#adminerfastcgi)
 
-## `adminer:4.2.5-standalone`
+## `adminer:4.3.0-standalone`
 
 ```console
-$ docker pull adminer@sha256:bf7ec1c547132bb98e0eac10716d753c02b7b749ecc9215e7426ba463edc6fd8
+$ docker pull adminer@sha256:51610e3234c621143a7b6cc93d7dcfaf57bbf2fd8f2ea5f2ee2507618795820c
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `adminer:4.2.5-standalone` - linux; amd64
+### `adminer:4.3.0-standalone` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.9 MB (27861122 bytes)**  
+-	Total Size: **27.9 MB (27867706 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7cc2dbdf2dec923d3cd931d58156df7a2cd19c6528d7026bb83b3c2203ccdc55`
+-	Image ID: `sha256:81e7e092910be48d710b06235083b01a83a4a99ed5567c3f3b4ab6f720856db5`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-S","0.0.0.0:8080","-t","\/var\/www\/html"]`
 
@@ -73,27 +73,29 @@ COPY multi:b2b2a1a4e3c0f0bb8ebdcd527fca158bfce5138468926263f86e5bb0cb41970f in /
 ENTRYPOINT ["docker-php-entrypoint"]
 # Fri, 17 Mar 2017 22:44:02 GMT
 CMD ["php" "-a"]
-# Mon, 20 Mar 2017 17:37:25 GMT
+# Thu, 23 Mar 2017 23:43:04 GMT
+STOPSIGNAL [SIGINT]
+# Thu, 23 Mar 2017 23:43:06 GMT
 RUN addgroup -S adminer &&	adduser -S -G adminer adminer &&	mkdir -p /var/www/html
-# Mon, 20 Mar 2017 17:37:25 GMT
+# Thu, 23 Mar 2017 23:43:07 GMT
 WORKDIR /var/www/html
-# Mon, 20 Mar 2017 17:37:27 GMT
+# Thu, 23 Mar 2017 23:43:09 GMT
 RUN apk add --no-cache libpq
-# Mon, 20 Mar 2017 17:37:42 GMT
+# Thu, 23 Mar 2017 23:43:25 GMT
 RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev &&	docker-php-ext-install pdo_mysql pdo_pgsql pdo_sqlite &&	apk del .build-deps
-# Mon, 20 Mar 2017 17:37:42 GMT
+# Thu, 23 Mar 2017 23:43:36 GMT
 COPY file:8d804cd4dbc8e04fad8dda195fab620d76fe48011fc89db3f1cdf6994204b0f7 in . 
-# Mon, 20 Mar 2017 17:37:43 GMT
-ENV ADMINER_VERSION=4.2.5
-# Mon, 20 Mar 2017 17:37:43 GMT
-ENV ADMINER_DOWNLOAD_SHA256=a8d9f5df8a604e75e87670bc1d797bb49cc1047f722a8630bda514fdc407f84f
-# Mon, 20 Mar 2017 17:37:45 GMT
+# Thu, 23 Mar 2017 23:43:37 GMT
+ENV ADMINER_VERSION=4.3.0
+# Thu, 23 Mar 2017 23:43:37 GMT
+ENV ADMINER_DOWNLOAD_SHA256=3584e1b3c7f853118d66a92f9c0996c8db39b05ac2a2b2623ff1676ec09bc08e
+# Thu, 23 Mar 2017 23:43:40 GMT
 RUN curl -fsSL https://www.adminer.org/static/download/$ADMINER_VERSION/adminer-$ADMINER_VERSION-en.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c -
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:57 GMT
 USER [adminer]
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:57 GMT
 CMD ["php" "-S" "0.0.0.0:8080" "-t" "/var/www/html"]
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:58 GMT
 EXPOSE 8080/tcp
 ```
 
@@ -130,43 +132,43 @@ EXPOSE 8080/tcp
 		Last Modified: Fri, 17 Mar 2017 23:18:13 GMT  
 		Size: 2.0 KB (2001 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bff3c7530d6919a1140790d7e2e6bde1e17c40bef0fda8f8c20d497bdd09702b`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
+	-	`sha256:43f66398e9788c94bebf1e85ab7ebed75396a4ced67075fed6d5cfdaecd04bfe`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
 		Size: 1.4 KB (1352 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7542bd04b3ee4e245c6861d1ba1e6263e2a5e1c6ebb90ccbfdf77103ffb16f93`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
-		Size: 1.2 MB (1172512 bytes)  
+	-	`sha256:488eb1bd1f4cf7c33505550c1f97e4fa067a1e43a838c90a47b88b575e73d173`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
+		Size: 1.2 MB (1172511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcf074e9b5bc8678115f981cda71060915bbc8bbfbc85661f3041dee640d27f2`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
-		Size: 116.2 KB (116196 bytes)  
+	-	`sha256:cc5c2036b874217ae3e0cc3bb7c4ecd17646ce871dcd74fed65ebc1d6cc26eea`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
+		Size: 116.2 KB (116217 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c06b072fc990f6b6db7946df85e8bad00d893ab7c8b943fd81c5536ee04214ac`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
+	-	`sha256:1ff9ed6f31c16faf099425ae12ad74775602fed73c3ac147bcfd3e103f844bf0`  
+		Last Modified: Thu, 23 Mar 2017 23:45:02 GMT  
 		Size: 420.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3e624629ca01c6a84205a7ec0209013cbb862f9d3feab00fbac66b2648a728b`  
-		Last Modified: Mon, 20 Mar 2017 17:39:32 GMT  
-		Size: 124.9 KB (124858 bytes)  
+	-	`sha256:e4326ade1794b9a68de1471eb178a45f277bd8308569a2491f6f19404ff11d41`  
+		Last Modified: Thu, 23 Mar 2017 23:45:02 GMT  
+		Size: 131.4 KB (131422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `adminer:4.2-standalone`
+## `adminer:4.3-standalone`
 
 ```console
-$ docker pull adminer@sha256:bf7ec1c547132bb98e0eac10716d753c02b7b749ecc9215e7426ba463edc6fd8
+$ docker pull adminer@sha256:51610e3234c621143a7b6cc93d7dcfaf57bbf2fd8f2ea5f2ee2507618795820c
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `adminer:4.2-standalone` - linux; amd64
+### `adminer:4.3-standalone` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.9 MB (27861122 bytes)**  
+-	Total Size: **27.9 MB (27867706 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7cc2dbdf2dec923d3cd931d58156df7a2cd19c6528d7026bb83b3c2203ccdc55`
+-	Image ID: `sha256:81e7e092910be48d710b06235083b01a83a4a99ed5567c3f3b4ab6f720856db5`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-S","0.0.0.0:8080","-t","\/var\/www\/html"]`
 
@@ -209,27 +211,29 @@ COPY multi:b2b2a1a4e3c0f0bb8ebdcd527fca158bfce5138468926263f86e5bb0cb41970f in /
 ENTRYPOINT ["docker-php-entrypoint"]
 # Fri, 17 Mar 2017 22:44:02 GMT
 CMD ["php" "-a"]
-# Mon, 20 Mar 2017 17:37:25 GMT
+# Thu, 23 Mar 2017 23:43:04 GMT
+STOPSIGNAL [SIGINT]
+# Thu, 23 Mar 2017 23:43:06 GMT
 RUN addgroup -S adminer &&	adduser -S -G adminer adminer &&	mkdir -p /var/www/html
-# Mon, 20 Mar 2017 17:37:25 GMT
+# Thu, 23 Mar 2017 23:43:07 GMT
 WORKDIR /var/www/html
-# Mon, 20 Mar 2017 17:37:27 GMT
+# Thu, 23 Mar 2017 23:43:09 GMT
 RUN apk add --no-cache libpq
-# Mon, 20 Mar 2017 17:37:42 GMT
+# Thu, 23 Mar 2017 23:43:25 GMT
 RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev &&	docker-php-ext-install pdo_mysql pdo_pgsql pdo_sqlite &&	apk del .build-deps
-# Mon, 20 Mar 2017 17:37:42 GMT
+# Thu, 23 Mar 2017 23:43:36 GMT
 COPY file:8d804cd4dbc8e04fad8dda195fab620d76fe48011fc89db3f1cdf6994204b0f7 in . 
-# Mon, 20 Mar 2017 17:37:43 GMT
-ENV ADMINER_VERSION=4.2.5
-# Mon, 20 Mar 2017 17:37:43 GMT
-ENV ADMINER_DOWNLOAD_SHA256=a8d9f5df8a604e75e87670bc1d797bb49cc1047f722a8630bda514fdc407f84f
-# Mon, 20 Mar 2017 17:37:45 GMT
+# Thu, 23 Mar 2017 23:43:37 GMT
+ENV ADMINER_VERSION=4.3.0
+# Thu, 23 Mar 2017 23:43:37 GMT
+ENV ADMINER_DOWNLOAD_SHA256=3584e1b3c7f853118d66a92f9c0996c8db39b05ac2a2b2623ff1676ec09bc08e
+# Thu, 23 Mar 2017 23:43:40 GMT
 RUN curl -fsSL https://www.adminer.org/static/download/$ADMINER_VERSION/adminer-$ADMINER_VERSION-en.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c -
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:57 GMT
 USER [adminer]
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:57 GMT
 CMD ["php" "-S" "0.0.0.0:8080" "-t" "/var/www/html"]
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:58 GMT
 EXPOSE 8080/tcp
 ```
 
@@ -266,31 +270,31 @@ EXPOSE 8080/tcp
 		Last Modified: Fri, 17 Mar 2017 23:18:13 GMT  
 		Size: 2.0 KB (2001 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bff3c7530d6919a1140790d7e2e6bde1e17c40bef0fda8f8c20d497bdd09702b`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
+	-	`sha256:43f66398e9788c94bebf1e85ab7ebed75396a4ced67075fed6d5cfdaecd04bfe`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
 		Size: 1.4 KB (1352 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7542bd04b3ee4e245c6861d1ba1e6263e2a5e1c6ebb90ccbfdf77103ffb16f93`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
-		Size: 1.2 MB (1172512 bytes)  
+	-	`sha256:488eb1bd1f4cf7c33505550c1f97e4fa067a1e43a838c90a47b88b575e73d173`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
+		Size: 1.2 MB (1172511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcf074e9b5bc8678115f981cda71060915bbc8bbfbc85661f3041dee640d27f2`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
-		Size: 116.2 KB (116196 bytes)  
+	-	`sha256:cc5c2036b874217ae3e0cc3bb7c4ecd17646ce871dcd74fed65ebc1d6cc26eea`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
+		Size: 116.2 KB (116217 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c06b072fc990f6b6db7946df85e8bad00d893ab7c8b943fd81c5536ee04214ac`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
+	-	`sha256:1ff9ed6f31c16faf099425ae12ad74775602fed73c3ac147bcfd3e103f844bf0`  
+		Last Modified: Thu, 23 Mar 2017 23:45:02 GMT  
 		Size: 420.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3e624629ca01c6a84205a7ec0209013cbb862f9d3feab00fbac66b2648a728b`  
-		Last Modified: Mon, 20 Mar 2017 17:39:32 GMT  
-		Size: 124.9 KB (124858 bytes)  
+	-	`sha256:e4326ade1794b9a68de1471eb178a45f277bd8308569a2491f6f19404ff11d41`  
+		Last Modified: Thu, 23 Mar 2017 23:45:02 GMT  
+		Size: 131.4 KB (131422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `adminer:4-standalone`
 
 ```console
-$ docker pull adminer@sha256:bf7ec1c547132bb98e0eac10716d753c02b7b749ecc9215e7426ba463edc6fd8
+$ docker pull adminer@sha256:51610e3234c621143a7b6cc93d7dcfaf57bbf2fd8f2ea5f2ee2507618795820c
 ```
 
 -	Platforms:
@@ -300,9 +304,9 @@ $ docker pull adminer@sha256:bf7ec1c547132bb98e0eac10716d753c02b7b749ecc9215e742
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.9 MB (27861122 bytes)**  
+-	Total Size: **27.9 MB (27867706 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7cc2dbdf2dec923d3cd931d58156df7a2cd19c6528d7026bb83b3c2203ccdc55`
+-	Image ID: `sha256:81e7e092910be48d710b06235083b01a83a4a99ed5567c3f3b4ab6f720856db5`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-S","0.0.0.0:8080","-t","\/var\/www\/html"]`
 
@@ -345,27 +349,29 @@ COPY multi:b2b2a1a4e3c0f0bb8ebdcd527fca158bfce5138468926263f86e5bb0cb41970f in /
 ENTRYPOINT ["docker-php-entrypoint"]
 # Fri, 17 Mar 2017 22:44:02 GMT
 CMD ["php" "-a"]
-# Mon, 20 Mar 2017 17:37:25 GMT
+# Thu, 23 Mar 2017 23:43:04 GMT
+STOPSIGNAL [SIGINT]
+# Thu, 23 Mar 2017 23:43:06 GMT
 RUN addgroup -S adminer &&	adduser -S -G adminer adminer &&	mkdir -p /var/www/html
-# Mon, 20 Mar 2017 17:37:25 GMT
+# Thu, 23 Mar 2017 23:43:07 GMT
 WORKDIR /var/www/html
-# Mon, 20 Mar 2017 17:37:27 GMT
+# Thu, 23 Mar 2017 23:43:09 GMT
 RUN apk add --no-cache libpq
-# Mon, 20 Mar 2017 17:37:42 GMT
+# Thu, 23 Mar 2017 23:43:25 GMT
 RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev &&	docker-php-ext-install pdo_mysql pdo_pgsql pdo_sqlite &&	apk del .build-deps
-# Mon, 20 Mar 2017 17:37:42 GMT
+# Thu, 23 Mar 2017 23:43:36 GMT
 COPY file:8d804cd4dbc8e04fad8dda195fab620d76fe48011fc89db3f1cdf6994204b0f7 in . 
-# Mon, 20 Mar 2017 17:37:43 GMT
-ENV ADMINER_VERSION=4.2.5
-# Mon, 20 Mar 2017 17:37:43 GMT
-ENV ADMINER_DOWNLOAD_SHA256=a8d9f5df8a604e75e87670bc1d797bb49cc1047f722a8630bda514fdc407f84f
-# Mon, 20 Mar 2017 17:37:45 GMT
+# Thu, 23 Mar 2017 23:43:37 GMT
+ENV ADMINER_VERSION=4.3.0
+# Thu, 23 Mar 2017 23:43:37 GMT
+ENV ADMINER_DOWNLOAD_SHA256=3584e1b3c7f853118d66a92f9c0996c8db39b05ac2a2b2623ff1676ec09bc08e
+# Thu, 23 Mar 2017 23:43:40 GMT
 RUN curl -fsSL https://www.adminer.org/static/download/$ADMINER_VERSION/adminer-$ADMINER_VERSION-en.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c -
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:57 GMT
 USER [adminer]
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:57 GMT
 CMD ["php" "-S" "0.0.0.0:8080" "-t" "/var/www/html"]
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:58 GMT
 EXPOSE 8080/tcp
 ```
 
@@ -402,31 +408,31 @@ EXPOSE 8080/tcp
 		Last Modified: Fri, 17 Mar 2017 23:18:13 GMT  
 		Size: 2.0 KB (2001 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bff3c7530d6919a1140790d7e2e6bde1e17c40bef0fda8f8c20d497bdd09702b`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
+	-	`sha256:43f66398e9788c94bebf1e85ab7ebed75396a4ced67075fed6d5cfdaecd04bfe`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
 		Size: 1.4 KB (1352 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7542bd04b3ee4e245c6861d1ba1e6263e2a5e1c6ebb90ccbfdf77103ffb16f93`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
-		Size: 1.2 MB (1172512 bytes)  
+	-	`sha256:488eb1bd1f4cf7c33505550c1f97e4fa067a1e43a838c90a47b88b575e73d173`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
+		Size: 1.2 MB (1172511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcf074e9b5bc8678115f981cda71060915bbc8bbfbc85661f3041dee640d27f2`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
-		Size: 116.2 KB (116196 bytes)  
+	-	`sha256:cc5c2036b874217ae3e0cc3bb7c4ecd17646ce871dcd74fed65ebc1d6cc26eea`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
+		Size: 116.2 KB (116217 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c06b072fc990f6b6db7946df85e8bad00d893ab7c8b943fd81c5536ee04214ac`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
+	-	`sha256:1ff9ed6f31c16faf099425ae12ad74775602fed73c3ac147bcfd3e103f844bf0`  
+		Last Modified: Thu, 23 Mar 2017 23:45:02 GMT  
 		Size: 420.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3e624629ca01c6a84205a7ec0209013cbb862f9d3feab00fbac66b2648a728b`  
-		Last Modified: Mon, 20 Mar 2017 17:39:32 GMT  
-		Size: 124.9 KB (124858 bytes)  
+	-	`sha256:e4326ade1794b9a68de1471eb178a45f277bd8308569a2491f6f19404ff11d41`  
+		Last Modified: Thu, 23 Mar 2017 23:45:02 GMT  
+		Size: 131.4 KB (131422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `adminer:standalone`
 
 ```console
-$ docker pull adminer@sha256:bf7ec1c547132bb98e0eac10716d753c02b7b749ecc9215e7426ba463edc6fd8
+$ docker pull adminer@sha256:51610e3234c621143a7b6cc93d7dcfaf57bbf2fd8f2ea5f2ee2507618795820c
 ```
 
 -	Platforms:
@@ -436,9 +442,9 @@ $ docker pull adminer@sha256:bf7ec1c547132bb98e0eac10716d753c02b7b749ecc9215e742
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.9 MB (27861122 bytes)**  
+-	Total Size: **27.9 MB (27867706 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7cc2dbdf2dec923d3cd931d58156df7a2cd19c6528d7026bb83b3c2203ccdc55`
+-	Image ID: `sha256:81e7e092910be48d710b06235083b01a83a4a99ed5567c3f3b4ab6f720856db5`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-S","0.0.0.0:8080","-t","\/var\/www\/html"]`
 
@@ -481,27 +487,29 @@ COPY multi:b2b2a1a4e3c0f0bb8ebdcd527fca158bfce5138468926263f86e5bb0cb41970f in /
 ENTRYPOINT ["docker-php-entrypoint"]
 # Fri, 17 Mar 2017 22:44:02 GMT
 CMD ["php" "-a"]
-# Mon, 20 Mar 2017 17:37:25 GMT
+# Thu, 23 Mar 2017 23:43:04 GMT
+STOPSIGNAL [SIGINT]
+# Thu, 23 Mar 2017 23:43:06 GMT
 RUN addgroup -S adminer &&	adduser -S -G adminer adminer &&	mkdir -p /var/www/html
-# Mon, 20 Mar 2017 17:37:25 GMT
+# Thu, 23 Mar 2017 23:43:07 GMT
 WORKDIR /var/www/html
-# Mon, 20 Mar 2017 17:37:27 GMT
+# Thu, 23 Mar 2017 23:43:09 GMT
 RUN apk add --no-cache libpq
-# Mon, 20 Mar 2017 17:37:42 GMT
+# Thu, 23 Mar 2017 23:43:25 GMT
 RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev &&	docker-php-ext-install pdo_mysql pdo_pgsql pdo_sqlite &&	apk del .build-deps
-# Mon, 20 Mar 2017 17:37:42 GMT
+# Thu, 23 Mar 2017 23:43:36 GMT
 COPY file:8d804cd4dbc8e04fad8dda195fab620d76fe48011fc89db3f1cdf6994204b0f7 in . 
-# Mon, 20 Mar 2017 17:37:43 GMT
-ENV ADMINER_VERSION=4.2.5
-# Mon, 20 Mar 2017 17:37:43 GMT
-ENV ADMINER_DOWNLOAD_SHA256=a8d9f5df8a604e75e87670bc1d797bb49cc1047f722a8630bda514fdc407f84f
-# Mon, 20 Mar 2017 17:37:45 GMT
+# Thu, 23 Mar 2017 23:43:37 GMT
+ENV ADMINER_VERSION=4.3.0
+# Thu, 23 Mar 2017 23:43:37 GMT
+ENV ADMINER_DOWNLOAD_SHA256=3584e1b3c7f853118d66a92f9c0996c8db39b05ac2a2b2623ff1676ec09bc08e
+# Thu, 23 Mar 2017 23:43:40 GMT
 RUN curl -fsSL https://www.adminer.org/static/download/$ADMINER_VERSION/adminer-$ADMINER_VERSION-en.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c -
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:57 GMT
 USER [adminer]
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:57 GMT
 CMD ["php" "-S" "0.0.0.0:8080" "-t" "/var/www/html"]
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:58 GMT
 EXPOSE 8080/tcp
 ```
 
@@ -538,43 +546,43 @@ EXPOSE 8080/tcp
 		Last Modified: Fri, 17 Mar 2017 23:18:13 GMT  
 		Size: 2.0 KB (2001 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bff3c7530d6919a1140790d7e2e6bde1e17c40bef0fda8f8c20d497bdd09702b`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
+	-	`sha256:43f66398e9788c94bebf1e85ab7ebed75396a4ced67075fed6d5cfdaecd04bfe`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
 		Size: 1.4 KB (1352 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7542bd04b3ee4e245c6861d1ba1e6263e2a5e1c6ebb90ccbfdf77103ffb16f93`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
-		Size: 1.2 MB (1172512 bytes)  
+	-	`sha256:488eb1bd1f4cf7c33505550c1f97e4fa067a1e43a838c90a47b88b575e73d173`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
+		Size: 1.2 MB (1172511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcf074e9b5bc8678115f981cda71060915bbc8bbfbc85661f3041dee640d27f2`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
-		Size: 116.2 KB (116196 bytes)  
+	-	`sha256:cc5c2036b874217ae3e0cc3bb7c4ecd17646ce871dcd74fed65ebc1d6cc26eea`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
+		Size: 116.2 KB (116217 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c06b072fc990f6b6db7946df85e8bad00d893ab7c8b943fd81c5536ee04214ac`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
+	-	`sha256:1ff9ed6f31c16faf099425ae12ad74775602fed73c3ac147bcfd3e103f844bf0`  
+		Last Modified: Thu, 23 Mar 2017 23:45:02 GMT  
 		Size: 420.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3e624629ca01c6a84205a7ec0209013cbb862f9d3feab00fbac66b2648a728b`  
-		Last Modified: Mon, 20 Mar 2017 17:39:32 GMT  
-		Size: 124.9 KB (124858 bytes)  
+	-	`sha256:e4326ade1794b9a68de1471eb178a45f277bd8308569a2491f6f19404ff11d41`  
+		Last Modified: Thu, 23 Mar 2017 23:45:02 GMT  
+		Size: 131.4 KB (131422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `adminer:4.2.5`
+## `adminer:4.3.0`
 
 ```console
-$ docker pull adminer@sha256:bf7ec1c547132bb98e0eac10716d753c02b7b749ecc9215e7426ba463edc6fd8
+$ docker pull adminer@sha256:51610e3234c621143a7b6cc93d7dcfaf57bbf2fd8f2ea5f2ee2507618795820c
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `adminer:4.2.5` - linux; amd64
+### `adminer:4.3.0` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.9 MB (27861122 bytes)**  
+-	Total Size: **27.9 MB (27867706 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7cc2dbdf2dec923d3cd931d58156df7a2cd19c6528d7026bb83b3c2203ccdc55`
+-	Image ID: `sha256:81e7e092910be48d710b06235083b01a83a4a99ed5567c3f3b4ab6f720856db5`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-S","0.0.0.0:8080","-t","\/var\/www\/html"]`
 
@@ -617,27 +625,29 @@ COPY multi:b2b2a1a4e3c0f0bb8ebdcd527fca158bfce5138468926263f86e5bb0cb41970f in /
 ENTRYPOINT ["docker-php-entrypoint"]
 # Fri, 17 Mar 2017 22:44:02 GMT
 CMD ["php" "-a"]
-# Mon, 20 Mar 2017 17:37:25 GMT
+# Thu, 23 Mar 2017 23:43:04 GMT
+STOPSIGNAL [SIGINT]
+# Thu, 23 Mar 2017 23:43:06 GMT
 RUN addgroup -S adminer &&	adduser -S -G adminer adminer &&	mkdir -p /var/www/html
-# Mon, 20 Mar 2017 17:37:25 GMT
+# Thu, 23 Mar 2017 23:43:07 GMT
 WORKDIR /var/www/html
-# Mon, 20 Mar 2017 17:37:27 GMT
+# Thu, 23 Mar 2017 23:43:09 GMT
 RUN apk add --no-cache libpq
-# Mon, 20 Mar 2017 17:37:42 GMT
+# Thu, 23 Mar 2017 23:43:25 GMT
 RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev &&	docker-php-ext-install pdo_mysql pdo_pgsql pdo_sqlite &&	apk del .build-deps
-# Mon, 20 Mar 2017 17:37:42 GMT
+# Thu, 23 Mar 2017 23:43:36 GMT
 COPY file:8d804cd4dbc8e04fad8dda195fab620d76fe48011fc89db3f1cdf6994204b0f7 in . 
-# Mon, 20 Mar 2017 17:37:43 GMT
-ENV ADMINER_VERSION=4.2.5
-# Mon, 20 Mar 2017 17:37:43 GMT
-ENV ADMINER_DOWNLOAD_SHA256=a8d9f5df8a604e75e87670bc1d797bb49cc1047f722a8630bda514fdc407f84f
-# Mon, 20 Mar 2017 17:37:45 GMT
+# Thu, 23 Mar 2017 23:43:37 GMT
+ENV ADMINER_VERSION=4.3.0
+# Thu, 23 Mar 2017 23:43:37 GMT
+ENV ADMINER_DOWNLOAD_SHA256=3584e1b3c7f853118d66a92f9c0996c8db39b05ac2a2b2623ff1676ec09bc08e
+# Thu, 23 Mar 2017 23:43:40 GMT
 RUN curl -fsSL https://www.adminer.org/static/download/$ADMINER_VERSION/adminer-$ADMINER_VERSION-en.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c -
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:57 GMT
 USER [adminer]
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:57 GMT
 CMD ["php" "-S" "0.0.0.0:8080" "-t" "/var/www/html"]
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:58 GMT
 EXPOSE 8080/tcp
 ```
 
@@ -674,43 +684,43 @@ EXPOSE 8080/tcp
 		Last Modified: Fri, 17 Mar 2017 23:18:13 GMT  
 		Size: 2.0 KB (2001 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bff3c7530d6919a1140790d7e2e6bde1e17c40bef0fda8f8c20d497bdd09702b`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
+	-	`sha256:43f66398e9788c94bebf1e85ab7ebed75396a4ced67075fed6d5cfdaecd04bfe`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
 		Size: 1.4 KB (1352 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7542bd04b3ee4e245c6861d1ba1e6263e2a5e1c6ebb90ccbfdf77103ffb16f93`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
-		Size: 1.2 MB (1172512 bytes)  
+	-	`sha256:488eb1bd1f4cf7c33505550c1f97e4fa067a1e43a838c90a47b88b575e73d173`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
+		Size: 1.2 MB (1172511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcf074e9b5bc8678115f981cda71060915bbc8bbfbc85661f3041dee640d27f2`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
-		Size: 116.2 KB (116196 bytes)  
+	-	`sha256:cc5c2036b874217ae3e0cc3bb7c4ecd17646ce871dcd74fed65ebc1d6cc26eea`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
+		Size: 116.2 KB (116217 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c06b072fc990f6b6db7946df85e8bad00d893ab7c8b943fd81c5536ee04214ac`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
+	-	`sha256:1ff9ed6f31c16faf099425ae12ad74775602fed73c3ac147bcfd3e103f844bf0`  
+		Last Modified: Thu, 23 Mar 2017 23:45:02 GMT  
 		Size: 420.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3e624629ca01c6a84205a7ec0209013cbb862f9d3feab00fbac66b2648a728b`  
-		Last Modified: Mon, 20 Mar 2017 17:39:32 GMT  
-		Size: 124.9 KB (124858 bytes)  
+	-	`sha256:e4326ade1794b9a68de1471eb178a45f277bd8308569a2491f6f19404ff11d41`  
+		Last Modified: Thu, 23 Mar 2017 23:45:02 GMT  
+		Size: 131.4 KB (131422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `adminer:4.2`
+## `adminer:4.3`
 
 ```console
-$ docker pull adminer@sha256:bf7ec1c547132bb98e0eac10716d753c02b7b749ecc9215e7426ba463edc6fd8
+$ docker pull adminer@sha256:51610e3234c621143a7b6cc93d7dcfaf57bbf2fd8f2ea5f2ee2507618795820c
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `adminer:4.2` - linux; amd64
+### `adminer:4.3` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.9 MB (27861122 bytes)**  
+-	Total Size: **27.9 MB (27867706 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7cc2dbdf2dec923d3cd931d58156df7a2cd19c6528d7026bb83b3c2203ccdc55`
+-	Image ID: `sha256:81e7e092910be48d710b06235083b01a83a4a99ed5567c3f3b4ab6f720856db5`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-S","0.0.0.0:8080","-t","\/var\/www\/html"]`
 
@@ -753,27 +763,29 @@ COPY multi:b2b2a1a4e3c0f0bb8ebdcd527fca158bfce5138468926263f86e5bb0cb41970f in /
 ENTRYPOINT ["docker-php-entrypoint"]
 # Fri, 17 Mar 2017 22:44:02 GMT
 CMD ["php" "-a"]
-# Mon, 20 Mar 2017 17:37:25 GMT
+# Thu, 23 Mar 2017 23:43:04 GMT
+STOPSIGNAL [SIGINT]
+# Thu, 23 Mar 2017 23:43:06 GMT
 RUN addgroup -S adminer &&	adduser -S -G adminer adminer &&	mkdir -p /var/www/html
-# Mon, 20 Mar 2017 17:37:25 GMT
+# Thu, 23 Mar 2017 23:43:07 GMT
 WORKDIR /var/www/html
-# Mon, 20 Mar 2017 17:37:27 GMT
+# Thu, 23 Mar 2017 23:43:09 GMT
 RUN apk add --no-cache libpq
-# Mon, 20 Mar 2017 17:37:42 GMT
+# Thu, 23 Mar 2017 23:43:25 GMT
 RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev &&	docker-php-ext-install pdo_mysql pdo_pgsql pdo_sqlite &&	apk del .build-deps
-# Mon, 20 Mar 2017 17:37:42 GMT
+# Thu, 23 Mar 2017 23:43:36 GMT
 COPY file:8d804cd4dbc8e04fad8dda195fab620d76fe48011fc89db3f1cdf6994204b0f7 in . 
-# Mon, 20 Mar 2017 17:37:43 GMT
-ENV ADMINER_VERSION=4.2.5
-# Mon, 20 Mar 2017 17:37:43 GMT
-ENV ADMINER_DOWNLOAD_SHA256=a8d9f5df8a604e75e87670bc1d797bb49cc1047f722a8630bda514fdc407f84f
-# Mon, 20 Mar 2017 17:37:45 GMT
+# Thu, 23 Mar 2017 23:43:37 GMT
+ENV ADMINER_VERSION=4.3.0
+# Thu, 23 Mar 2017 23:43:37 GMT
+ENV ADMINER_DOWNLOAD_SHA256=3584e1b3c7f853118d66a92f9c0996c8db39b05ac2a2b2623ff1676ec09bc08e
+# Thu, 23 Mar 2017 23:43:40 GMT
 RUN curl -fsSL https://www.adminer.org/static/download/$ADMINER_VERSION/adminer-$ADMINER_VERSION-en.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c -
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:57 GMT
 USER [adminer]
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:57 GMT
 CMD ["php" "-S" "0.0.0.0:8080" "-t" "/var/www/html"]
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:58 GMT
 EXPOSE 8080/tcp
 ```
 
@@ -810,31 +822,31 @@ EXPOSE 8080/tcp
 		Last Modified: Fri, 17 Mar 2017 23:18:13 GMT  
 		Size: 2.0 KB (2001 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bff3c7530d6919a1140790d7e2e6bde1e17c40bef0fda8f8c20d497bdd09702b`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
+	-	`sha256:43f66398e9788c94bebf1e85ab7ebed75396a4ced67075fed6d5cfdaecd04bfe`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
 		Size: 1.4 KB (1352 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7542bd04b3ee4e245c6861d1ba1e6263e2a5e1c6ebb90ccbfdf77103ffb16f93`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
-		Size: 1.2 MB (1172512 bytes)  
+	-	`sha256:488eb1bd1f4cf7c33505550c1f97e4fa067a1e43a838c90a47b88b575e73d173`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
+		Size: 1.2 MB (1172511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcf074e9b5bc8678115f981cda71060915bbc8bbfbc85661f3041dee640d27f2`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
-		Size: 116.2 KB (116196 bytes)  
+	-	`sha256:cc5c2036b874217ae3e0cc3bb7c4ecd17646ce871dcd74fed65ebc1d6cc26eea`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
+		Size: 116.2 KB (116217 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c06b072fc990f6b6db7946df85e8bad00d893ab7c8b943fd81c5536ee04214ac`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
+	-	`sha256:1ff9ed6f31c16faf099425ae12ad74775602fed73c3ac147bcfd3e103f844bf0`  
+		Last Modified: Thu, 23 Mar 2017 23:45:02 GMT  
 		Size: 420.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3e624629ca01c6a84205a7ec0209013cbb862f9d3feab00fbac66b2648a728b`  
-		Last Modified: Mon, 20 Mar 2017 17:39:32 GMT  
-		Size: 124.9 KB (124858 bytes)  
+	-	`sha256:e4326ade1794b9a68de1471eb178a45f277bd8308569a2491f6f19404ff11d41`  
+		Last Modified: Thu, 23 Mar 2017 23:45:02 GMT  
+		Size: 131.4 KB (131422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `adminer:4`
 
 ```console
-$ docker pull adminer@sha256:bf7ec1c547132bb98e0eac10716d753c02b7b749ecc9215e7426ba463edc6fd8
+$ docker pull adminer@sha256:51610e3234c621143a7b6cc93d7dcfaf57bbf2fd8f2ea5f2ee2507618795820c
 ```
 
 -	Platforms:
@@ -844,9 +856,9 @@ $ docker pull adminer@sha256:bf7ec1c547132bb98e0eac10716d753c02b7b749ecc9215e742
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.9 MB (27861122 bytes)**  
+-	Total Size: **27.9 MB (27867706 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7cc2dbdf2dec923d3cd931d58156df7a2cd19c6528d7026bb83b3c2203ccdc55`
+-	Image ID: `sha256:81e7e092910be48d710b06235083b01a83a4a99ed5567c3f3b4ab6f720856db5`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-S","0.0.0.0:8080","-t","\/var\/www\/html"]`
 
@@ -889,27 +901,29 @@ COPY multi:b2b2a1a4e3c0f0bb8ebdcd527fca158bfce5138468926263f86e5bb0cb41970f in /
 ENTRYPOINT ["docker-php-entrypoint"]
 # Fri, 17 Mar 2017 22:44:02 GMT
 CMD ["php" "-a"]
-# Mon, 20 Mar 2017 17:37:25 GMT
+# Thu, 23 Mar 2017 23:43:04 GMT
+STOPSIGNAL [SIGINT]
+# Thu, 23 Mar 2017 23:43:06 GMT
 RUN addgroup -S adminer &&	adduser -S -G adminer adminer &&	mkdir -p /var/www/html
-# Mon, 20 Mar 2017 17:37:25 GMT
+# Thu, 23 Mar 2017 23:43:07 GMT
 WORKDIR /var/www/html
-# Mon, 20 Mar 2017 17:37:27 GMT
+# Thu, 23 Mar 2017 23:43:09 GMT
 RUN apk add --no-cache libpq
-# Mon, 20 Mar 2017 17:37:42 GMT
+# Thu, 23 Mar 2017 23:43:25 GMT
 RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev &&	docker-php-ext-install pdo_mysql pdo_pgsql pdo_sqlite &&	apk del .build-deps
-# Mon, 20 Mar 2017 17:37:42 GMT
+# Thu, 23 Mar 2017 23:43:36 GMT
 COPY file:8d804cd4dbc8e04fad8dda195fab620d76fe48011fc89db3f1cdf6994204b0f7 in . 
-# Mon, 20 Mar 2017 17:37:43 GMT
-ENV ADMINER_VERSION=4.2.5
-# Mon, 20 Mar 2017 17:37:43 GMT
-ENV ADMINER_DOWNLOAD_SHA256=a8d9f5df8a604e75e87670bc1d797bb49cc1047f722a8630bda514fdc407f84f
-# Mon, 20 Mar 2017 17:37:45 GMT
+# Thu, 23 Mar 2017 23:43:37 GMT
+ENV ADMINER_VERSION=4.3.0
+# Thu, 23 Mar 2017 23:43:37 GMT
+ENV ADMINER_DOWNLOAD_SHA256=3584e1b3c7f853118d66a92f9c0996c8db39b05ac2a2b2623ff1676ec09bc08e
+# Thu, 23 Mar 2017 23:43:40 GMT
 RUN curl -fsSL https://www.adminer.org/static/download/$ADMINER_VERSION/adminer-$ADMINER_VERSION-en.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c -
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:57 GMT
 USER [adminer]
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:57 GMT
 CMD ["php" "-S" "0.0.0.0:8080" "-t" "/var/www/html"]
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:58 GMT
 EXPOSE 8080/tcp
 ```
 
@@ -946,31 +960,31 @@ EXPOSE 8080/tcp
 		Last Modified: Fri, 17 Mar 2017 23:18:13 GMT  
 		Size: 2.0 KB (2001 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bff3c7530d6919a1140790d7e2e6bde1e17c40bef0fda8f8c20d497bdd09702b`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
+	-	`sha256:43f66398e9788c94bebf1e85ab7ebed75396a4ced67075fed6d5cfdaecd04bfe`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
 		Size: 1.4 KB (1352 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7542bd04b3ee4e245c6861d1ba1e6263e2a5e1c6ebb90ccbfdf77103ffb16f93`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
-		Size: 1.2 MB (1172512 bytes)  
+	-	`sha256:488eb1bd1f4cf7c33505550c1f97e4fa067a1e43a838c90a47b88b575e73d173`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
+		Size: 1.2 MB (1172511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcf074e9b5bc8678115f981cda71060915bbc8bbfbc85661f3041dee640d27f2`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
-		Size: 116.2 KB (116196 bytes)  
+	-	`sha256:cc5c2036b874217ae3e0cc3bb7c4ecd17646ce871dcd74fed65ebc1d6cc26eea`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
+		Size: 116.2 KB (116217 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c06b072fc990f6b6db7946df85e8bad00d893ab7c8b943fd81c5536ee04214ac`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
+	-	`sha256:1ff9ed6f31c16faf099425ae12ad74775602fed73c3ac147bcfd3e103f844bf0`  
+		Last Modified: Thu, 23 Mar 2017 23:45:02 GMT  
 		Size: 420.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3e624629ca01c6a84205a7ec0209013cbb862f9d3feab00fbac66b2648a728b`  
-		Last Modified: Mon, 20 Mar 2017 17:39:32 GMT  
-		Size: 124.9 KB (124858 bytes)  
+	-	`sha256:e4326ade1794b9a68de1471eb178a45f277bd8308569a2491f6f19404ff11d41`  
+		Last Modified: Thu, 23 Mar 2017 23:45:02 GMT  
+		Size: 131.4 KB (131422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `adminer:latest`
 
 ```console
-$ docker pull adminer@sha256:bf7ec1c547132bb98e0eac10716d753c02b7b749ecc9215e7426ba463edc6fd8
+$ docker pull adminer@sha256:51610e3234c621143a7b6cc93d7dcfaf57bbf2fd8f2ea5f2ee2507618795820c
 ```
 
 -	Platforms:
@@ -980,9 +994,9 @@ $ docker pull adminer@sha256:bf7ec1c547132bb98e0eac10716d753c02b7b749ecc9215e742
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.9 MB (27861122 bytes)**  
+-	Total Size: **27.9 MB (27867706 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7cc2dbdf2dec923d3cd931d58156df7a2cd19c6528d7026bb83b3c2203ccdc55`
+-	Image ID: `sha256:81e7e092910be48d710b06235083b01a83a4a99ed5567c3f3b4ab6f720856db5`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-S","0.0.0.0:8080","-t","\/var\/www\/html"]`
 
@@ -1025,27 +1039,29 @@ COPY multi:b2b2a1a4e3c0f0bb8ebdcd527fca158bfce5138468926263f86e5bb0cb41970f in /
 ENTRYPOINT ["docker-php-entrypoint"]
 # Fri, 17 Mar 2017 22:44:02 GMT
 CMD ["php" "-a"]
-# Mon, 20 Mar 2017 17:37:25 GMT
+# Thu, 23 Mar 2017 23:43:04 GMT
+STOPSIGNAL [SIGINT]
+# Thu, 23 Mar 2017 23:43:06 GMT
 RUN addgroup -S adminer &&	adduser -S -G adminer adminer &&	mkdir -p /var/www/html
-# Mon, 20 Mar 2017 17:37:25 GMT
+# Thu, 23 Mar 2017 23:43:07 GMT
 WORKDIR /var/www/html
-# Mon, 20 Mar 2017 17:37:27 GMT
+# Thu, 23 Mar 2017 23:43:09 GMT
 RUN apk add --no-cache libpq
-# Mon, 20 Mar 2017 17:37:42 GMT
+# Thu, 23 Mar 2017 23:43:25 GMT
 RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev &&	docker-php-ext-install pdo_mysql pdo_pgsql pdo_sqlite &&	apk del .build-deps
-# Mon, 20 Mar 2017 17:37:42 GMT
+# Thu, 23 Mar 2017 23:43:36 GMT
 COPY file:8d804cd4dbc8e04fad8dda195fab620d76fe48011fc89db3f1cdf6994204b0f7 in . 
-# Mon, 20 Mar 2017 17:37:43 GMT
-ENV ADMINER_VERSION=4.2.5
-# Mon, 20 Mar 2017 17:37:43 GMT
-ENV ADMINER_DOWNLOAD_SHA256=a8d9f5df8a604e75e87670bc1d797bb49cc1047f722a8630bda514fdc407f84f
-# Mon, 20 Mar 2017 17:37:45 GMT
+# Thu, 23 Mar 2017 23:43:37 GMT
+ENV ADMINER_VERSION=4.3.0
+# Thu, 23 Mar 2017 23:43:37 GMT
+ENV ADMINER_DOWNLOAD_SHA256=3584e1b3c7f853118d66a92f9c0996c8db39b05ac2a2b2623ff1676ec09bc08e
+# Thu, 23 Mar 2017 23:43:40 GMT
 RUN curl -fsSL https://www.adminer.org/static/download/$ADMINER_VERSION/adminer-$ADMINER_VERSION-en.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c -
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:57 GMT
 USER [adminer]
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:57 GMT
 CMD ["php" "-S" "0.0.0.0:8080" "-t" "/var/www/html"]
-# Mon, 20 Mar 2017 17:37:46 GMT
+# Thu, 23 Mar 2017 23:43:58 GMT
 EXPOSE 8080/tcp
 ```
 
@@ -1082,43 +1098,43 @@ EXPOSE 8080/tcp
 		Last Modified: Fri, 17 Mar 2017 23:18:13 GMT  
 		Size: 2.0 KB (2001 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bff3c7530d6919a1140790d7e2e6bde1e17c40bef0fda8f8c20d497bdd09702b`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
+	-	`sha256:43f66398e9788c94bebf1e85ab7ebed75396a4ced67075fed6d5cfdaecd04bfe`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
 		Size: 1.4 KB (1352 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7542bd04b3ee4e245c6861d1ba1e6263e2a5e1c6ebb90ccbfdf77103ffb16f93`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
-		Size: 1.2 MB (1172512 bytes)  
+	-	`sha256:488eb1bd1f4cf7c33505550c1f97e4fa067a1e43a838c90a47b88b575e73d173`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
+		Size: 1.2 MB (1172511 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcf074e9b5bc8678115f981cda71060915bbc8bbfbc85661f3041dee640d27f2`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
-		Size: 116.2 KB (116196 bytes)  
+	-	`sha256:cc5c2036b874217ae3e0cc3bb7c4ecd17646ce871dcd74fed65ebc1d6cc26eea`  
+		Last Modified: Thu, 23 Mar 2017 23:45:03 GMT  
+		Size: 116.2 KB (116217 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c06b072fc990f6b6db7946df85e8bad00d893ab7c8b943fd81c5536ee04214ac`  
-		Last Modified: Mon, 20 Mar 2017 17:39:31 GMT  
+	-	`sha256:1ff9ed6f31c16faf099425ae12ad74775602fed73c3ac147bcfd3e103f844bf0`  
+		Last Modified: Thu, 23 Mar 2017 23:45:02 GMT  
 		Size: 420.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3e624629ca01c6a84205a7ec0209013cbb862f9d3feab00fbac66b2648a728b`  
-		Last Modified: Mon, 20 Mar 2017 17:39:32 GMT  
-		Size: 124.9 KB (124858 bytes)  
+	-	`sha256:e4326ade1794b9a68de1471eb178a45f277bd8308569a2491f6f19404ff11d41`  
+		Last Modified: Thu, 23 Mar 2017 23:45:02 GMT  
+		Size: 131.4 KB (131422 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `adminer:4.2.5-fastcgi`
+## `adminer:4.3.0-fastcgi`
 
 ```console
-$ docker pull adminer@sha256:1a3abb160fc4dbbf038443a89c92fbfc5f4a5c5cfd9f81f289bd768e40a1e9a2
+$ docker pull adminer@sha256:a85e133982d0edfd38f56176877843ef458c5c1164f14ecf6fa787760483833f
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `adminer:4.2.5-fastcgi` - linux; amd64
+### `adminer:4.3.0-fastcgi` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **31.6 MB (31611545 bytes)**  
+-	Total Size: **31.6 MB (31618109 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42a4d5eaaeea162240da5e62183d9aa42271a7a4b9b1892d22189ca3df9403c2`
+-	Image ID: `sha256:c058c5de930ec225be5a980bd0031895fbc11e41c7f1e01f3d1a827704f0023b`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1177,13 +1193,13 @@ RUN apk add --no-cache libpq
 RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev &&	docker-php-ext-install pdo_mysql pdo_pgsql pdo_sqlite &&	apk del .build-deps
 # Mon, 20 Mar 2017 17:37:20 GMT
 COPY file:8d804cd4dbc8e04fad8dda195fab620d76fe48011fc89db3f1cdf6994204b0f7 in . 
-# Mon, 20 Mar 2017 17:37:20 GMT
-ENV ADMINER_VERSION=4.2.5
-# Mon, 20 Mar 2017 17:37:21 GMT
-ENV ADMINER_DOWNLOAD_SHA256=a8d9f5df8a604e75e87670bc1d797bb49cc1047f722a8630bda514fdc407f84f
-# Mon, 20 Mar 2017 17:37:23 GMT
+# Thu, 23 Mar 2017 23:44:00 GMT
+ENV ADMINER_VERSION=4.3.0
+# Thu, 23 Mar 2017 23:44:17 GMT
+ENV ADMINER_DOWNLOAD_SHA256=3584e1b3c7f853118d66a92f9c0996c8db39b05ac2a2b2623ff1676ec09bc08e
+# Thu, 23 Mar 2017 23:44:20 GMT
 RUN curl -fsSL https://www.adminer.org/static/download/$ADMINER_VERSION/adminer-$ADMINER_VERSION-en.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c -
-# Mon, 20 Mar 2017 17:37:23 GMT
+# Thu, 23 Mar 2017 23:44:38 GMT
 USER [adminer]
 ```
 
@@ -1244,27 +1260,27 @@ USER [adminer]
 		Last Modified: Mon, 20 Mar 2017 17:38:08 GMT  
 		Size: 423.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c85b1d047056544560272e65fda6e0f7b5bb1b2f5d7a0998da940da4119178ab`  
-		Last Modified: Mon, 20 Mar 2017 17:38:09 GMT  
-		Size: 124.9 KB (124855 bytes)  
+	-	`sha256:7ff70b8724120eff3bc02046acd055f388cc2fc56b4d9c11e454bbd7ab7ad3cf`  
+		Last Modified: Thu, 23 Mar 2017 23:49:27 GMT  
+		Size: 131.4 KB (131419 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `adminer:4.2-fastcgi`
+## `adminer:4.3-fastcgi`
 
 ```console
-$ docker pull adminer@sha256:1a3abb160fc4dbbf038443a89c92fbfc5f4a5c5cfd9f81f289bd768e40a1e9a2
+$ docker pull adminer@sha256:a85e133982d0edfd38f56176877843ef458c5c1164f14ecf6fa787760483833f
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `adminer:4.2-fastcgi` - linux; amd64
+### `adminer:4.3-fastcgi` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **31.6 MB (31611545 bytes)**  
+-	Total Size: **31.6 MB (31618109 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42a4d5eaaeea162240da5e62183d9aa42271a7a4b9b1892d22189ca3df9403c2`
+-	Image ID: `sha256:c058c5de930ec225be5a980bd0031895fbc11e41c7f1e01f3d1a827704f0023b`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1323,13 +1339,13 @@ RUN apk add --no-cache libpq
 RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev &&	docker-php-ext-install pdo_mysql pdo_pgsql pdo_sqlite &&	apk del .build-deps
 # Mon, 20 Mar 2017 17:37:20 GMT
 COPY file:8d804cd4dbc8e04fad8dda195fab620d76fe48011fc89db3f1cdf6994204b0f7 in . 
-# Mon, 20 Mar 2017 17:37:20 GMT
-ENV ADMINER_VERSION=4.2.5
-# Mon, 20 Mar 2017 17:37:21 GMT
-ENV ADMINER_DOWNLOAD_SHA256=a8d9f5df8a604e75e87670bc1d797bb49cc1047f722a8630bda514fdc407f84f
-# Mon, 20 Mar 2017 17:37:23 GMT
+# Thu, 23 Mar 2017 23:44:00 GMT
+ENV ADMINER_VERSION=4.3.0
+# Thu, 23 Mar 2017 23:44:17 GMT
+ENV ADMINER_DOWNLOAD_SHA256=3584e1b3c7f853118d66a92f9c0996c8db39b05ac2a2b2623ff1676ec09bc08e
+# Thu, 23 Mar 2017 23:44:20 GMT
 RUN curl -fsSL https://www.adminer.org/static/download/$ADMINER_VERSION/adminer-$ADMINER_VERSION-en.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c -
-# Mon, 20 Mar 2017 17:37:23 GMT
+# Thu, 23 Mar 2017 23:44:38 GMT
 USER [adminer]
 ```
 
@@ -1390,15 +1406,15 @@ USER [adminer]
 		Last Modified: Mon, 20 Mar 2017 17:38:08 GMT  
 		Size: 423.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c85b1d047056544560272e65fda6e0f7b5bb1b2f5d7a0998da940da4119178ab`  
-		Last Modified: Mon, 20 Mar 2017 17:38:09 GMT  
-		Size: 124.9 KB (124855 bytes)  
+	-	`sha256:7ff70b8724120eff3bc02046acd055f388cc2fc56b4d9c11e454bbd7ab7ad3cf`  
+		Last Modified: Thu, 23 Mar 2017 23:49:27 GMT  
+		Size: 131.4 KB (131419 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `adminer:4-fastcgi`
 
 ```console
-$ docker pull adminer@sha256:1a3abb160fc4dbbf038443a89c92fbfc5f4a5c5cfd9f81f289bd768e40a1e9a2
+$ docker pull adminer@sha256:a85e133982d0edfd38f56176877843ef458c5c1164f14ecf6fa787760483833f
 ```
 
 -	Platforms:
@@ -1408,9 +1424,9 @@ $ docker pull adminer@sha256:1a3abb160fc4dbbf038443a89c92fbfc5f4a5c5cfd9f81f289b
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **31.6 MB (31611545 bytes)**  
+-	Total Size: **31.6 MB (31618109 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42a4d5eaaeea162240da5e62183d9aa42271a7a4b9b1892d22189ca3df9403c2`
+-	Image ID: `sha256:c058c5de930ec225be5a980bd0031895fbc11e41c7f1e01f3d1a827704f0023b`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1469,13 +1485,13 @@ RUN apk add --no-cache libpq
 RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev &&	docker-php-ext-install pdo_mysql pdo_pgsql pdo_sqlite &&	apk del .build-deps
 # Mon, 20 Mar 2017 17:37:20 GMT
 COPY file:8d804cd4dbc8e04fad8dda195fab620d76fe48011fc89db3f1cdf6994204b0f7 in . 
-# Mon, 20 Mar 2017 17:37:20 GMT
-ENV ADMINER_VERSION=4.2.5
-# Mon, 20 Mar 2017 17:37:21 GMT
-ENV ADMINER_DOWNLOAD_SHA256=a8d9f5df8a604e75e87670bc1d797bb49cc1047f722a8630bda514fdc407f84f
-# Mon, 20 Mar 2017 17:37:23 GMT
+# Thu, 23 Mar 2017 23:44:00 GMT
+ENV ADMINER_VERSION=4.3.0
+# Thu, 23 Mar 2017 23:44:17 GMT
+ENV ADMINER_DOWNLOAD_SHA256=3584e1b3c7f853118d66a92f9c0996c8db39b05ac2a2b2623ff1676ec09bc08e
+# Thu, 23 Mar 2017 23:44:20 GMT
 RUN curl -fsSL https://www.adminer.org/static/download/$ADMINER_VERSION/adminer-$ADMINER_VERSION-en.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c -
-# Mon, 20 Mar 2017 17:37:23 GMT
+# Thu, 23 Mar 2017 23:44:38 GMT
 USER [adminer]
 ```
 
@@ -1536,15 +1552,15 @@ USER [adminer]
 		Last Modified: Mon, 20 Mar 2017 17:38:08 GMT  
 		Size: 423.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c85b1d047056544560272e65fda6e0f7b5bb1b2f5d7a0998da940da4119178ab`  
-		Last Modified: Mon, 20 Mar 2017 17:38:09 GMT  
-		Size: 124.9 KB (124855 bytes)  
+	-	`sha256:7ff70b8724120eff3bc02046acd055f388cc2fc56b4d9c11e454bbd7ab7ad3cf`  
+		Last Modified: Thu, 23 Mar 2017 23:49:27 GMT  
+		Size: 131.4 KB (131419 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `adminer:fastcgi`
 
 ```console
-$ docker pull adminer@sha256:1a3abb160fc4dbbf038443a89c92fbfc5f4a5c5cfd9f81f289bd768e40a1e9a2
+$ docker pull adminer@sha256:a85e133982d0edfd38f56176877843ef458c5c1164f14ecf6fa787760483833f
 ```
 
 -	Platforms:
@@ -1554,9 +1570,9 @@ $ docker pull adminer@sha256:1a3abb160fc4dbbf038443a89c92fbfc5f4a5c5cfd9f81f289b
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **31.6 MB (31611545 bytes)**  
+-	Total Size: **31.6 MB (31618109 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42a4d5eaaeea162240da5e62183d9aa42271a7a4b9b1892d22189ca3df9403c2`
+-	Image ID: `sha256:c058c5de930ec225be5a980bd0031895fbc11e41c7f1e01f3d1a827704f0023b`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1615,13 +1631,13 @@ RUN apk add --no-cache libpq
 RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev &&	docker-php-ext-install pdo_mysql pdo_pgsql pdo_sqlite &&	apk del .build-deps
 # Mon, 20 Mar 2017 17:37:20 GMT
 COPY file:8d804cd4dbc8e04fad8dda195fab620d76fe48011fc89db3f1cdf6994204b0f7 in . 
-# Mon, 20 Mar 2017 17:37:20 GMT
-ENV ADMINER_VERSION=4.2.5
-# Mon, 20 Mar 2017 17:37:21 GMT
-ENV ADMINER_DOWNLOAD_SHA256=a8d9f5df8a604e75e87670bc1d797bb49cc1047f722a8630bda514fdc407f84f
-# Mon, 20 Mar 2017 17:37:23 GMT
+# Thu, 23 Mar 2017 23:44:00 GMT
+ENV ADMINER_VERSION=4.3.0
+# Thu, 23 Mar 2017 23:44:17 GMT
+ENV ADMINER_DOWNLOAD_SHA256=3584e1b3c7f853118d66a92f9c0996c8db39b05ac2a2b2623ff1676ec09bc08e
+# Thu, 23 Mar 2017 23:44:20 GMT
 RUN curl -fsSL https://www.adminer.org/static/download/$ADMINER_VERSION/adminer-$ADMINER_VERSION-en.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c -
-# Mon, 20 Mar 2017 17:37:23 GMT
+# Thu, 23 Mar 2017 23:44:38 GMT
 USER [adminer]
 ```
 
@@ -1682,7 +1698,7 @@ USER [adminer]
 		Last Modified: Mon, 20 Mar 2017 17:38:08 GMT  
 		Size: 423.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c85b1d047056544560272e65fda6e0f7b5bb1b2f5d7a0998da940da4119178ab`  
-		Last Modified: Mon, 20 Mar 2017 17:38:09 GMT  
-		Size: 124.9 KB (124855 bytes)  
+	-	`sha256:7ff70b8724120eff3bc02046acd055f388cc2fc56b4d9c11e454bbd7ab7ad3cf`  
+		Last Modified: Thu, 23 Mar 2017 23:49:27 GMT  
+		Size: 131.4 KB (131419 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

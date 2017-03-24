@@ -1,7 +1,7 @@
 ## `adminer:fastcgi`
 
 ```console
-$ docker pull adminer@sha256:1a3abb160fc4dbbf038443a89c92fbfc5f4a5c5cfd9f81f289bd768e40a1e9a2
+$ docker pull adminer@sha256:a85e133982d0edfd38f56176877843ef458c5c1164f14ecf6fa787760483833f
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull adminer@sha256:1a3abb160fc4dbbf038443a89c92fbfc5f4a5c5cfd9f81f289b
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **31.6 MB (31611545 bytes)**  
+-	Total Size: **31.6 MB (31618109 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42a4d5eaaeea162240da5e62183d9aa42271a7a4b9b1892d22189ca3df9403c2`
+-	Image ID: `sha256:c058c5de930ec225be5a980bd0031895fbc11e41c7f1e01f3d1a827704f0023b`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -72,13 +72,13 @@ RUN apk add --no-cache libpq
 RUN set -x &&	apk add --no-cache --virtual .build-deps 	postgresql-dev 	sqlite-dev &&	docker-php-ext-install pdo_mysql pdo_pgsql pdo_sqlite &&	apk del .build-deps
 # Mon, 20 Mar 2017 17:37:20 GMT
 COPY file:8d804cd4dbc8e04fad8dda195fab620d76fe48011fc89db3f1cdf6994204b0f7 in . 
-# Mon, 20 Mar 2017 17:37:20 GMT
-ENV ADMINER_VERSION=4.2.5
-# Mon, 20 Mar 2017 17:37:21 GMT
-ENV ADMINER_DOWNLOAD_SHA256=a8d9f5df8a604e75e87670bc1d797bb49cc1047f722a8630bda514fdc407f84f
-# Mon, 20 Mar 2017 17:37:23 GMT
+# Thu, 23 Mar 2017 23:44:00 GMT
+ENV ADMINER_VERSION=4.3.0
+# Thu, 23 Mar 2017 23:44:17 GMT
+ENV ADMINER_DOWNLOAD_SHA256=3584e1b3c7f853118d66a92f9c0996c8db39b05ac2a2b2623ff1676ec09bc08e
+# Thu, 23 Mar 2017 23:44:20 GMT
 RUN curl -fsSL https://www.adminer.org/static/download/$ADMINER_VERSION/adminer-$ADMINER_VERSION-en.php -o adminer.php &&	echo "$ADMINER_DOWNLOAD_SHA256  adminer.php" |sha256sum -c -
-# Mon, 20 Mar 2017 17:37:23 GMT
+# Thu, 23 Mar 2017 23:44:38 GMT
 USER [adminer]
 ```
 
@@ -139,7 +139,7 @@ USER [adminer]
 		Last Modified: Mon, 20 Mar 2017 17:38:08 GMT  
 		Size: 423.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c85b1d047056544560272e65fda6e0f7b5bb1b2f5d7a0998da940da4119178ab`  
-		Last Modified: Mon, 20 Mar 2017 17:38:09 GMT  
-		Size: 124.9 KB (124855 bytes)  
+	-	`sha256:7ff70b8724120eff3bc02046acd055f388cc2fc56b4d9c11e454bbd7ab7ad3cf`  
+		Last Modified: Thu, 23 Mar 2017 23:49:27 GMT  
+		Size: 131.4 KB (131419 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

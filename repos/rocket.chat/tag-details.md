@@ -10,7 +10,7 @@
 ## `rocket.chat:0.54.0`
 
 ```console
-$ docker pull rocket.chat@sha256:4df0807bf1fe2ef7a30c5d5139eb78767ec9090fb88e2d9f88627b62fe14e5fe
+$ docker pull rocket.chat@sha256:3aecaf113f9af497e1c4e74ebe1a44de4ba13f17e7f423f868e64ffdb6d4053c
 ```
 
 -	Platforms:
@@ -20,9 +20,9 @@ $ docker pull rocket.chat@sha256:4df0807bf1fe2ef7a30c5d5139eb78767ec9090fb88e2d9
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **180.0 MB (179950232 bytes)**  
+-	Total Size: **180.0 MB (179951617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3235d8eaecc399a462e1c2cd06b880513e1886ed7f12250a98d62d4891cc5117`
+-	Image ID: `sha256:0f809c5ec2423f8a0c520b98899621136b89ff165f5469bbcbf5437c97b82a58`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
@@ -56,21 +56,21 @@ RUN groupadd -r rocketchat &&  useradd -r -g rocketchat rocketchat
 VOLUME [/app/uploads]
 # Thu, 23 Mar 2017 02:18:39 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104
-# Thu, 23 Mar 2017 02:18:41 GMT
+# Thu, 23 Mar 2017 02:18:40 GMT
 ENV RC_VERSION=0.54.0
 # Thu, 23 Mar 2017 02:18:42 GMT
 WORKDIR /app
-# Thu, 23 Mar 2017 02:20:14 GMT
+# Thu, 23 Mar 2017 02:20:35 GMT
 RUN curl -fSL "https://rocket.chat/releases/${RC_VERSION}/download" -o rocket.chat.tgz &&  curl -fSL "https://rocket.chat/releases/${RC_VERSION}/asc" -o rocket.chat.tgz.asc &&  gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz &&  tar zxvf rocket.chat.tgz &&  rm rocket.chat.tgz rocket.chat.tgz.asc &&  cd bundle/programs/server &&  npm install
-# Thu, 23 Mar 2017 02:20:17 GMT
+# Thu, 23 Mar 2017 02:31:28 GMT
 USER [rocketchat]
-# Thu, 23 Mar 2017 02:20:18 GMT
+# Thu, 23 Mar 2017 02:31:28 GMT
 WORKDIR /app/bundle
-# Thu, 23 Mar 2017 02:20:18 GMT
+# Thu, 23 Mar 2017 02:31:29 GMT
 ENV MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000 Accounts_AvatarStorePath=/app/uploads
-# Thu, 23 Mar 2017 02:20:19 GMT
+# Thu, 23 Mar 2017 02:31:30 GMT
 EXPOSE 3000/tcp
-# Thu, 23 Mar 2017 02:20:20 GMT
+# Thu, 23 Mar 2017 02:31:30 GMT
 CMD ["node" "main.js"]
 ```
 
@@ -107,9 +107,9 @@ CMD ["node" "main.js"]
 		Last Modified: Thu, 23 Mar 2017 02:31:31 GMT  
 		Size: 127.3 KB (127265 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1e7af40b9978ade0e81496ce8bca8bf8157d7dfcc1dca6d35b4b574add382e4`  
-		Last Modified: Thu, 23 Mar 2017 02:32:15 GMT  
-		Size: 96.5 MB (96530871 bytes)  
+	-	`sha256:675fcf5f9158c4d1564641fec5e4ff3de81d06264171e139d616496df4296923`  
+		Last Modified: Thu, 23 Mar 2017 02:33:29 GMT  
+		Size: 96.5 MB (96532256 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rocket.chat:0.54`
