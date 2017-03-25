@@ -512,10 +512,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cups=2.2.2-1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.2-1.dsc' cups_2.2.2-1.dsc 3396 SHA256:a57bb9fae6e8ab06d424b64673fc29feff9fab89aeb420a4f1ee14d1308c5e7c
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.2-1ubuntu1.dsc' cups_2.2.2-1ubuntu1.dsc 3663 SHA256:70f1391da82edc45140381af438b67ab6bf9831a49020cb449ea1c0f3f217d95
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.2.orig.tar.gz' cups_2.2.2.orig.tar.gz 9493396 SHA256:f589bb7d5d1dc3aa0915d7cf2b808571ef2e1530cd1a6ebe76ae8f9f4994e4f6
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.2.orig.tar.gz.asc' cups_2.2.2.orig.tar.gz.asc 797 SHA256:1af791b1bb93792ab319873d0604d03f8ac83863976967093630fe0d3fdfe2fc
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.2-1.debian.tar.xz' cups_2.2.2-1.debian.tar.xz 358520 SHA256:5d91f054c73da780383e1234c38bbc80e29a850cd59ccd2a2ec19f33a3c13eda
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.2-1ubuntu1.debian.tar.xz' cups_2.2.2-1ubuntu1.debian.tar.xz 362512 SHA256:28fc6f15e6028d7faa2e1eb854311aadeceb62f3a665c73ef2a42c4d1bf92043
 ```
 
 ### `dpkg` source package: `curl=7.51.0-1ubuntu1`
@@ -1064,14 +1064,8 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `GPL-2`
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.36.5-1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.5-1.dsc' gdk-pixbuf_2.36.5-1.dsc 2789 SHA256:04e7f30cd42c8683f50f5fbb0c91e7eb58d6564b8cc4908db0f3550dbd3915bd
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.5.orig.tar.xz' gdk-pixbuf_2.36.5.orig.tar.xz 5165640 SHA256:7ace06170291a1f21771552768bace072ecdea9bd4a02f7658939b9a314c40fc
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.36.5-1.debian.tar.xz' gdk-pixbuf_2.36.5-1.debian.tar.xz 14004 SHA256:9b621bcbd3d22626d532c3acd90363bde38ff1a64e7cbbcb93e7d65bd28f7118
-```
 
 ### `dpkg` source package: `geoip=1.6.9-4`
 
@@ -3352,14 +3346,8 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.24/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris perl=5.24.1-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1-1.dsc' perl_5.24.1-1.dsc 2316 SHA256:8cec11b0d4f1b196e6460ec154d576dbb29bd1be95c93742064b5d5b2d5df167
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1-1.debian.tar.xz' perl_5.24.1-1.debian.tar.xz 163940 SHA256:af1cf7dde49354d511f4ae04723a8419a2304ad02e51b25edc958ce69f599e80
-```
 
 ### `dpkg` source package: `pinentry=1.0.0-2`
 

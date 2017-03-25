@@ -1485,19 +1485,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.7.7.10-5+deb7u11
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u11.dsc' imagemagick_6.7.7.10-5+deb7u11.dsc 3174 SHA256:e59028d73a480e9ab38cb26a023f09c917c2c7c0b713182ff078c4fa5842dd4e
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10.orig.tar.bz2' imagemagick_6.7.7.10.orig.tar.bz2 10473522 SHA256:05fb23824b1c90ac35259715c94c65fb5cda6969eb597a7637762d8cf3998fda
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u11.debian.tar.bz2' imagemagick_6.7.7.10-5+deb7u11.debian.tar.bz2 198424 SHA256:89f1ebfa5ebed559ff8dda9c60454465aaa292e0dedd6fa0afd47a456f3c4379
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/imagemagick/8:6.7.7.10-5+deb7u11/
-- https://sources.debian.net/src/imagemagick/8:6.7.7.10-5+deb7u11/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9-2`
 
@@ -2869,19 +2858,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxslt=1.1.26-14.1+deb7u2
-'http://security.debian.org/pool/updates/main/libx/libxslt/libxslt_1.1.26-14.1+deb7u2.dsc' libxslt_1.1.26-14.1+deb7u2.dsc 2319 SHA256:480c724508cbff12089c45e7bec2c880746534167faf531e7330971ac7618f0f
-'http://security.debian.org/pool/updates/main/libx/libxslt/libxslt_1.1.26.orig.tar.gz' libxslt_1.1.26.orig.tar.gz 3401513 SHA256:55dd52b42861f8a02989d701ef716d6280bfa02971e967c285016f99c66e3db1
-'http://security.debian.org/pool/updates/main/libx/libxslt/libxslt_1.1.26-14.1+deb7u2.debian.tar.gz' libxslt_1.1.26-14.1+deb7u2.debian.tar.gz 47011 SHA256:c2c213db51dac8e5833121b53d6ec90f61ad2ed44037e9b3a0693e54e2415655
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libxslt/1.1.26-14.1+deb7u2/
-- https://sources.debian.net/src/libxslt/1.1.26-14.1+deb7u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxt=1:1.1.3-1+deb7u1`
 

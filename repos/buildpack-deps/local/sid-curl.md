@@ -1723,19 +1723,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris pcre3=2:8.39-2.1
-'http://deb.debian.org/debian/pool/main/p/pcre3/pcre3_8.39-2.1.dsc' pcre3_8.39-2.1.dsc 2246 SHA256:2a9a8af830285b2f1311833f9a050ab77f69d29b7f33eb1e790aa2c97a018aea
-'http://deb.debian.org/debian/pool/main/p/pcre3/pcre3_8.39.orig.tar.bz2' pcre3_8.39.orig.tar.bz2 1560758 SHA256:b858099f82483031ee02092711689e7245586ada49e534a06e678b8ea9549e8b
-'http://deb.debian.org/debian/pool/main/p/pcre3/pcre3_8.39-2.1.debian.tar.gz' pcre3_8.39-2.1.debian.tar.gz 24570 SHA256:9ca3b9c67a2aeee288dd5dec25416ffd297a73f0a00f993e7b30218cc6c14b49
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/pcre3/2:8.39-2.1/
-- https://sources.debian.net/src/pcre3/2:8.39-2.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `perl=5.24.1-2`
 
@@ -1904,19 +1893,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=232-20
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-20.dsc' systemd_232-20.dsc 4769 SHA256:12419663701330f476a9ca5f7da2c02bc3515f05a3ffaf1f58bebe8e15f36ca4
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-20.debian.tar.xz' systemd_232-20.debian.tar.xz 195320 SHA256:f24e12e2c6db24ef432f3b0217e6dbfc3215a4f1b1acba59a984822b21e44c27
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/systemd/232-20/
-- https://sources.debian.net/src/systemd/232-20/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 
