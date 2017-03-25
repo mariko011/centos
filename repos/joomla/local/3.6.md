@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2b662f8b8955ee14e82174ff50593549791d189246672551c52f584d77670d46`
-- Created: `2017-03-01T15:43:16.399981393Z`
+- Image ID: `sha256:70db70acb3a695f6d00955e9dd599f628979705b999e6030888c64bb9fff9d66`
+- Created: `2017-03-22T21:15:46.735841965Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["apache2-foreground"]`
@@ -1965,11 +1965,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u4/
 - https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `linux=3.16.39-1+deb8u1`
+### `dpkg` source package: `linux=3.16.39-1+deb8u2`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.16.39-1+deb8u1`
+- `linux-libc-dev:amd64=3.16.39-1+deb8u2`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1977,8 +1977,19 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.16.39-1+deb8u2
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.39-1+deb8u2.dsc' linux_3.16.39-1+deb8u2.dsc 140609 SHA256:221bbebc3bf967cb6d55468d849c87bb5aee1b3d8b8eebd150dc4ec969d775dd
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.39.orig.tar.xz' linux_3.16.39.orig.tar.xz 81806060 SHA256:c36466398823435894e3cb3dc2813be8499c0e19a3f1787c202e15136c16207f
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.39-1+deb8u2.debian.tar.xz' linux_3.16.39-1+deb8u2.debian.tar.xz 3227812 SHA256:72991107d981f46b34932d24bde9e752f2718419d107bfb42d9340f9628c203c
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/linux/3.16.39-1+deb8u2/
+- https://sources.debian.net/src/linux/3.16.39-1+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
@@ -2817,11 +2828,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tar/1.27.1-2+deb8u1/
 - https://sources.debian.net/src/tar/1.27.1-2+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tzdata=2016j-0+deb8u1`
+### `dpkg` source package: `tzdata=2017a-0+deb8u1`
 
 Binary Packages:
 
-- `tzdata=2016j-0+deb8u1`
+- `tzdata=2017a-0+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2830,16 +2841,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2016j-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j-0+deb8u1.dsc' tzdata_2016j-0+deb8u1.dsc 1985 SHA256:4330b2616f1d1a79d753af2de9f96f83d782ffdf3b8203f5a1169ca5ad1d8a94
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j.orig.tar.gz' tzdata_2016j.orig.tar.gz 321185 SHA256:f5ee4e0f115f6c2faee1c4b16193a97338cbd1b503f2cea6c5a768c82ff39dc8
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j-0+deb8u1.debian.tar.xz' tzdata_2016j-0+deb8u1.debian.tar.xz 102304 SHA256:0089268bc9e247e3d48e046770b873c1c90f7a33259c5bda0f0bef51345f8067
+$ apt-get source -qq --print-uris tzdata=2017a-0+deb8u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017a-0+deb8u1.dsc' tzdata_2017a-0+deb8u1.dsc 1985 SHA256:f1c8c314ce7e42d325ff901537fc16bbf814248c4042dd631783144dbb24b9f6
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017a.orig.tar.gz' tzdata_2017a.orig.tar.gz 323983 SHA256:df3a5c4d0a2cf0cde0b3f35796ccf6c9acfd598b8e70f8dece5404cd7626bbd6
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017a-0+deb8u1.debian.tar.xz' tzdata_2017a-0+deb8u1.debian.tar.xz 102688 SHA256:4bff4af61570611f416cade4e097ab0572fbdd162092db95cf086edeaf4263d9
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/tzdata/2016j-0+deb8u1/
-- https://sources.debian.net/src/tzdata/2016j-0+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/tzdata/2017a-0+deb8u1/
+- https://sources.debian.net/src/tzdata/2017a-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `unzip=6.0-16+deb8u2`
 
