@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:31eff0ca351d42bccc1aedf3c35ea08d7f9a4dda99a0fb8e1dce5bfd25191151`
-- Created: `2017-01-17T00:49:25.486814986Z`
+- Image ID: `sha256:613055f01959ce1c1a467bdeec40fdcc8ab12c864e606f63a79e4577c465f187`
+- Created: `2017-03-21T20:54:25.95376304Z`
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -908,11 +908,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/fontconfig/2.9.0-7.1+deb7u1/
 - https://sources.debian.net/src/fontconfig/2.9.0-7.1+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `freetype=2.4.9-1.1+deb7u3`
+### `dpkg` source package: `freetype=2.4.9-1.1+deb7u4`
 
 Binary Packages:
 
-- `libfreetype6:amd64=2.4.9-1.1+deb7u3`
+- `libfreetype6:amd64=2.4.9-1.1+deb7u4`
 
 Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 
@@ -928,15 +928,15 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris freetype=2.4.9-1.1+deb7u3
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.4.9-1.1+deb7u3.dsc' freetype_2.4.9-1.1+deb7u3.dsc 1783 SHA256:77ceaaf7a3a883b88c7f7354dbc08e3740a6f24b02c28b53f057ae7b5d8e2458
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.4.9-1.1+deb7u3.tar.gz' freetype_2.4.9-1.1+deb7u3.tar.gz 1830608 SHA256:2c11d5276923dbfd40228eeee91b13b99f0a1dd398fafef6e76b1e5eb4895f08
+$ apt-get source -qq --print-uris freetype=2.4.9-1.1+deb7u4
+'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u4.dsc' freetype_2.4.9-1.1+deb7u4.dsc 1823 SHA256:b70401144ebff9cb1c377bc97199a544b6f03d88a51e355a69b3cfd4215ae4fa
+'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u4.tar.gz' freetype_2.4.9-1.1+deb7u4.tar.gz 1830537 SHA256:4b41207dd700f7a1924f496339d697ee9da3c5f1ac8b0c6a846b358cc56e1b66
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u3/
-- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u4/
+- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-4.7=4.7.2-5`
 
@@ -1559,11 +1559,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/krb5/1.10.1+dfsg-5+deb7u7/
 - https://sources.debian.net/src/krb5/1.10.1+dfsg-5+deb7u7/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `lcms2=2.2+git20110628-2.2+deb7u1`
+### `dpkg` source package: `lcms2=2.2+git20110628-2.2+deb7u2`
 
 Binary Packages:
 
-- `liblcms2-2:amd64=2.2+git20110628-2.2+deb7u1`
+- `liblcms2-2:amd64=2.2+git20110628-2.2+deb7u2`
 
 Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 
@@ -1574,16 +1574,16 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris lcms2=2.2+git20110628-2.2+deb7u1
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.2+git20110628-2.2+deb7u1.dsc' lcms2_2.2+git20110628-2.2+deb7u1.dsc 2004 SHA256:4be6abdcd0a2f535e4a1c8269c7ee1588269e45798013fc63edb1c3c3bd29977
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.2+git20110628.orig.tar.gz' lcms2_2.2+git20110628.orig.tar.gz 4201101 SHA256:3b91fe90ef858d43524a513275af1fb43a6ea9f44221a20a00cf6818d8a60833
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.2+git20110628-2.2+deb7u1.debian.tar.gz' lcms2_2.2+git20110628-2.2+deb7u1.debian.tar.gz 6612 SHA256:b02f536e657556ac835056c8d2a4eaee5cec51c864dcaa57e458fb5d884e4a3e
+$ apt-get source -qq --print-uris lcms2=2.2+git20110628-2.2+deb7u2
+'http://security.debian.org/pool/updates/main/l/lcms2/lcms2_2.2+git20110628-2.2+deb7u2.dsc' lcms2_2.2+git20110628-2.2+deb7u2.dsc 2018 SHA256:00d0fc32c074e6de8903195ee5b8d3fe6d1b402c88e991e7ff76254740bf8636
+'http://security.debian.org/pool/updates/main/l/lcms2/lcms2_2.2+git20110628.orig.tar.gz' lcms2_2.2+git20110628.orig.tar.gz 4201101 SHA256:3b91fe90ef858d43524a513275af1fb43a6ea9f44221a20a00cf6818d8a60833
+'http://security.debian.org/pool/updates/main/l/lcms2/lcms2_2.2+git20110628-2.2+deb7u2.debian.tar.gz' lcms2_2.2+git20110628-2.2+deb7u2.debian.tar.gz 7039 SHA256:bf2f7d979fb4dfb07f357e6d2ed0489107d502e5de72161a76ebe1897398b55f
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/lcms2/2.2+git20110628-2.2+deb7u1/
-- https://sources.debian.net/src/lcms2/2.2+git20110628-2.2+deb7u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/lcms2/2.2+git20110628-2.2+deb7u2/
+- https://sources.debian.net/src/lcms2/2.2+git20110628-2.2+deb7u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libasyncns=0.8-4`
 
@@ -3062,19 +3062,30 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/openssh/1:6.0p1-4+deb7u6/
 - https://sources.debian.net/src/openssh/1:6.0p1-4+deb7u6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openssl=1.0.1t-1+deb7u1`
+### `dpkg` source package: `openssl=1.0.1t-1+deb7u2`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.1t-1+deb7u1`
-- `openssl=1.0.1t-1+deb7u1`
+- `libssl1.0.0:amd64=1.0.1t-1+deb7u2`
+- `openssl=1.0.1t-1+deb7u2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb7u2
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb7u2.dsc' openssl_1.0.1t-1+deb7u2.dsc 2228 SHA256:eba58257166426d6a9eabe45db353fcc29c18d000c1a7da2a9d26fe765b27048
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
+'http://security.debian.org/pool/updates/main/o/openssl/openssl_1.0.1t-1+deb7u2.debian.tar.gz' openssl_1.0.1t-1+deb7u2.debian.tar.gz 117331 SHA256:0ceea11701c070fff718ad7021d52db1f5a3bbde1b68d508d3f29571678fc69a
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb7u2/
+- https://sources.debian.net/src/openssl/1.0.1t-1+deb7u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.12-3`
 
@@ -3484,12 +3495,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/sensible-utils/0.0.7/
 - https://sources.debian.net/src/sensible-utils/0.0.7/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `shadow=1:4.1.5.1-1`
+### `dpkg` source package: `shadow=1:4.1.5.1-1+deb7u1`
 
 Binary Packages:
 
-- `login=1:4.1.5.1-1`
-- `passwd=1:4.1.5.1-1`
+- `login=1:4.1.5.1-1+deb7u1`
+- `passwd=1:4.1.5.1-1+deb7u1`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
@@ -3498,16 +3509,16 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 Source:
 
 ```console
-$ apt-get source -qq --print-uris shadow=1:4.1.5.1-1
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.1.5.1-1.dsc' shadow_4.1.5.1-1.dsc 1584 SHA256:8d3f1fa46e651e8f37165731e00625f0e93f18d176bc9ece186e1fb7a852ac19
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.1.5.1.orig.tar.gz' shadow_4.1.5.1.orig.tar.gz 3508077 SHA256:ee1986c5fec9f6e7868bcc5329874a72dec74897b598d86eb0532f79471f32f0
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.1.5.1-1.diff.gz' shadow_4.1.5.1-1.diff.gz 79779 SHA256:eaa68406d035d9e844e9513c57cf172331c16ae1f5824d8a15a75099bdc24d2c
+$ apt-get source -qq --print-uris shadow=1:4.1.5.1-1+deb7u1
+'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.1.5.1-1+deb7u1.dsc' shadow_4.1.5.1-1+deb7u1.dsc 2213 SHA256:56a482196c5b46de55115a63d26ca509fea15b24e5edbcca764893323562d23a
+'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.1.5.1.orig.tar.gz' shadow_4.1.5.1.orig.tar.gz 3508077 SHA256:ee1986c5fec9f6e7868bcc5329874a72dec74897b598d86eb0532f79471f32f0
+'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.1.5.1-1+deb7u1.diff.gz' shadow_4.1.5.1-1+deb7u1.diff.gz 81816 SHA256:75872dd557090197966644ae8e2855f6967d8d24ca48d0edd707f56fdfbd638f
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/shadow/1:4.1.5.1-1/
-- https://sources.debian.net/src/shadow/1:4.1.5.1-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/shadow/1:4.1.5.1-1+deb7u1/
+- https://sources.debian.net/src/shadow/1:4.1.5.1-1+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `shared-mime-info=1.0-1`
 
@@ -3711,18 +3722,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tcp-wrappers/7.6.q-24/
 - https://sources.debian.net/src/tcp-wrappers/7.6.q-24/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tiff3=3.9.6-11+deb7u2`
+### `dpkg` source package: `tiff3=3.9.6-11+deb7u3`
 
 Binary Packages:
 
-- `libtiff4:amd64=3.9.6-11+deb7u2`
+- `libtiff4:amd64=3.9.6-11+deb7u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff3=3.9.6-11+deb7u3
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u3.dsc' tiff3_3.9.6-11+deb7u3.dsc 1650 SHA256:dc8f0affa3c3711fb8e4a4f2f857abf40f23b78d608093638097d467dd688f8f
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6.orig.tar.gz' tiff3_3.9.6.orig.tar.gz 1454196 SHA256:0fba119156236074343a14afbd3a47907e3a5952c9c86102305d4eeb06ad6833
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u3.debian.tar.gz' tiff3_3.9.6-11+deb7u3.debian.tar.gz 41639 SHA256:a9013ca17f0de7ea8e63f1dd2529a5a100f365cffdf5258248ae52ae2c91884d
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u3/
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ttf-dejavu=2.33-3`
 
@@ -3749,19 +3771,30 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/ttf-dejavu/2.33-3/
 - https://sources.debian.net/src/ttf-dejavu/2.33-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tzdata=2016j-0+deb7u1`
+### `dpkg` source package: `tzdata=2017a-0+deb7u1`
 
 Binary Packages:
 
-- `tzdata=2016j-0+deb7u1`
-- `tzdata-java=2016j-0+deb7u1`
+- `tzdata=2017a-0+deb7u1`
+- `tzdata-java=2017a-0+deb7u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2017a-0+deb7u1
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017a-0+deb7u1.dsc' tzdata_2017a-0+deb7u1.dsc 1966 SHA256:eb659d68392643de9e23e6a490d6ab4e6f404e018503880c2708e091b56c2966
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017a.orig.tar.gz' tzdata_2017a.orig.tar.gz 323983 SHA256:df3a5c4d0a2cf0cde0b3f35796ccf6c9acfd598b8e70f8dece5404cd7626bbd6
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017a-0+deb7u1.debian.tar.xz' tzdata_2017a-0+deb7u1.debian.tar.xz 101888 SHA256:db3c4d77cfd24376b794142abca5ad305af6ca28fe5143c4d09519398a974173
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/tzdata/2017a-0+deb7u1/
+- https://sources.debian.net/src/tzdata/2017a-0+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ucf=3.0025+nmu3`
 
@@ -3869,19 +3902,30 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/util-linux/2.20.1-5.3/
 - https://sources.debian.net/src/util-linux/2.20.1-5.3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `wget=1.13.4-3+deb7u3`
+### `dpkg` source package: `wget=1.13.4-3+deb7u4`
 
 Binary Packages:
 
-- `wget=1.13.4-3+deb7u3`
+- `wget=1.13.4-3+deb7u4`
 
 Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
 - `GFDL-1.2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris wget=1.13.4-3+deb7u4
+'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4-3+deb7u4.dsc' wget_1.13.4-3+deb7u4.dsc 1768 SHA256:1d62e31002bce8eb855c9f67d7a79970d0c823a2a689adbb49e05acb75de0bd9
+'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4.orig.tar.gz' wget_1.13.4.orig.tar.gz 2815185 SHA256:24c7710bc9f220ce23d8a9e0f5673b0efc1cace62db6de0239b5863ecc934dcd
+'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4-3+deb7u4.debian.tar.gz' wget_1.13.4-3+deb7u4.debian.tar.gz 28807 SHA256:426c625ef6459e25a3bf991e5d16790e98b58d5af34ae9b38f468c902ee7a028
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/wget/1.13.4-3+deb7u4/
+- https://sources.debian.net/src/wget/1.13.4-3+deb7u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `x11proto-core=7.0.23-1`
 
