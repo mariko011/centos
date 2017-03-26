@@ -1,9 +1,9 @@
-# `adminer:4.2.5-fastcgi`
+# `adminer:4.3.0-fastcgi`
 
 ## Docker Metadata
 
-- Image ID: `sha256:42a4d5eaaeea162240da5e62183d9aa42271a7a4b9b1892d22189ca3df9403c2`
-- Created: `2017-03-20T17:37:23.688833027Z`
+- Image ID: `sha256:c058c5de930ec225be5a980bd0031895fbc11e41c7f1e01f3d1a827704f0023b`
+- Created: `2017-03-23T23:44:38.207768649Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
 - Command: `["php-fpm"]`
@@ -21,5 +21,5 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.17.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=471c16fcdd6a5e1a37199e97bcaeea6117626229785185be7532aaa7c6ee04be`
   - `PHP_MD5=549df69a7a3c79d49fcafe2097579d9e`
-  - `ADMINER_VERSION=4.2.5`
-  - `ADMINER_DOWNLOAD_SHA256=a8d9f5df8a604e75e87670bc1d797bb49cc1047f722a8630bda514fdc407f84f`
+  - `ADMINER_VERSION=4.3.0`
+  - `ADMINER_DOWNLOAD_SHA256=3584e1b3c7f853118d66a92f9c0996c8db39b05ac2a2b2623ff1676ec09bc08e`
