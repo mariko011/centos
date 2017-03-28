@@ -1,9 +1,9 @@
-# `gradle:3.4-jdk8-alpine`
+# `gradle:3.4.1-jdk8-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:96b98e7a90b074b248ce06b9d722bfa3ab19f57177c9153f0dd9755d7d822999`
-- Created: `2017-03-23T18:37:57.008640399Z`
+- Image ID: `sha256:da2fdbb93073e811eab0dff0172d9672c38834da767d23b523a40699078692c2`
+- Created: `2017-03-24T17:04:00.643960334Z`
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
 - Environment:
@@ -13,4 +13,4 @@
   - `JAVA_VERSION=8u121`
   - `JAVA_ALPINE_VERSION=8.121.13-r0`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=3.4`
+  - `GRADLE_VERSION=3.4.1`

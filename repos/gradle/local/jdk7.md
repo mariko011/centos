@@ -1,9 +1,9 @@
-# `gradle:3.4-jdk7`
+# `gradle:3.4.1-jdk7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ca3e07ecefcca1f00614a3c07df9095ae48e646f2cc901e037c81d67f9c4e838`
-- Created: `2017-03-23T18:31:01.002701413Z`
+- Image ID: `sha256:915a98bd52888743be6aea7da13d53be5fcf3864e7074450b8f4396dc6eb6538`
+- Created: `2017-03-24T17:02:42.204311451Z`
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
 - Environment:
@@ -13,7 +13,7 @@
   - `JAVA_VERSION=7u121`
   - `JAVA_DEBIAN_VERSION=7u121-2.6.8-2~deb8u1`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=3.4`
+  - `GRADLE_VERSION=3.4.1`
 
 ## `dpkg` (`.deb`-based packages)
 

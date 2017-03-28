@@ -1,9 +1,9 @@
-# `gradle:3.4-jre9`
+# `gradle:3.4.1-jre9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c5e85bf766554ab935c64eea0e4d6f65044a6ea92ee874296c7203f976247365`
-- Created: `2017-03-23T18:40:39.39577046Z`
+- Image ID: `sha256:ef7f17d65740924a0e8a6ecf12694ec755612ece5f389c6d68edadc9b4a8c8ae`
+- Created: `2017-03-24T17:04:51.048008413Z`
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
 - Environment:
@@ -13,7 +13,7 @@
   - `JAVA_VERSION=9~b161`
   - `JAVA_DEBIAN_VERSION=9~b161-1`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=3.4`
+  - `GRADLE_VERSION=3.4.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -79,19 +79,8 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.11.0-2
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0-2.dsc' apparmor_2.11.0-2.dsc 3098 SHA256:a0f096a13c4d6b084e4834198e75897baf40002ab4779013f173a82a4d713c64
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0.orig.tar.gz' apparmor_2.11.0.orig.tar.gz 5013297 SHA256:b1c489ea11e7771b8e6b181532cafbf9ebe6603e3cb00e2558f21b7a5bdd739a
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0-2.debian.tar.xz' apparmor_2.11.0-2.debian.tar.xz 80308 SHA256:63414bd10e8092d72ce93cd4b80fc0ecdac86b5a12899f39f0bd829c07be22c1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apparmor/2.11.0-2/
-- https://sources.debian.net/src/apparmor/2.11.0-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apt=1.4~rc2`
 
