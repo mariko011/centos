@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6c55ff2dc88749dbd1643185bf278497491ce8baf0cdeb36271f986c9989d9d5`
-- Created: `2017-02-28T22:49:51.607905693Z`
+- Image ID: `sha256:e5632573d53d0cc11eea2fc7493ce31dfc8b55c6064caa56b4cdafa49ecbb629`
+- Created: `2017-03-22T00:04:19.743768746Z`
 - Arch: `linux`/`amd64`
 - Command: `["perl6"]`
 - Environment:
@@ -2607,11 +2607,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tar/1.27.1-2+deb8u1/
 - https://sources.debian.net/src/tar/1.27.1-2+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tzdata=2016j-0+deb8u1`
+### `dpkg` source package: `tzdata=2017a-0+deb8u1`
 
 Binary Packages:
 
-- `tzdata=2016j-0+deb8u1`
+- `tzdata=2017a-0+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2620,16 +2620,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2016j-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j-0+deb8u1.dsc' tzdata_2016j-0+deb8u1.dsc 1985 SHA256:4330b2616f1d1a79d753af2de9f96f83d782ffdf3b8203f5a1169ca5ad1d8a94
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j.orig.tar.gz' tzdata_2016j.orig.tar.gz 321185 SHA256:f5ee4e0f115f6c2faee1c4b16193a97338cbd1b503f2cea6c5a768c82ff39dc8
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j-0+deb8u1.debian.tar.xz' tzdata_2016j-0+deb8u1.debian.tar.xz 102304 SHA256:0089268bc9e247e3d48e046770b873c1c90f7a33259c5bda0f0bef51345f8067
+$ apt-get source -qq --print-uris tzdata=2017a-0+deb8u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017a-0+deb8u1.dsc' tzdata_2017a-0+deb8u1.dsc 1985 SHA256:f1c8c314ce7e42d325ff901537fc16bbf814248c4042dd631783144dbb24b9f6
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017a.orig.tar.gz' tzdata_2017a.orig.tar.gz 323983 SHA256:df3a5c4d0a2cf0cde0b3f35796ccf6c9acfd598b8e70f8dece5404cd7626bbd6
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017a-0+deb8u1.debian.tar.xz' tzdata_2017a-0+deb8u1.debian.tar.xz 102688 SHA256:4bff4af61570611f416cade4e097ab0572fbdd162092db95cf086edeaf4263d9
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/tzdata/2016j-0+deb8u1/
-- https://sources.debian.net/src/tzdata/2016j-0+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/tzdata/2017a-0+deb8u1/
+- https://sources.debian.net/src/tzdata/2017a-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ucf=3.0030`
 
