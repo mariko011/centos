@@ -817,14 +817,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris pcre3=2:8.39-2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-2.dsc' pcre3_8.39-2.dsc 2133 SHA256:8c5ba4886410322adb13986748280e95fb9334bb5b86aeee6b4ba9295144eb12
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39.orig.tar.bz2' pcre3_8.39.orig.tar.bz2 1560758 SHA256:b858099f82483031ee02092711689e7245586ada49e534a06e678b8ea9549e8b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-2.debian.tar.gz' pcre3_8.39-2.debian.tar.gz 23765 SHA256:375c8c6c746553dd3c7364d53c4e85f68694c58763e4bc541821060cbb52eef6
-```
 
 ### `dpkg` source package: `perl=5.24.1-1`
 
