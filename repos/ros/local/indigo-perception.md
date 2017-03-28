@@ -1835,14 +1835,8 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright
 - `LGPL-2+`
 - `MIT/X11 (BSD like) LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gst-plugins-base1.0=1.2.4-1~ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.2.4-1~ubuntu2.dsc' gst-plugins-base1.0_1.2.4-1~ubuntu2.dsc 3836 SHA256:1446accd3f2df69c06ca212d1cb5cedd3ff65342cc5a3bd9af56b5896feb4269
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.2.4.orig.tar.xz' gst-plugins-base1.0_1.2.4.orig.tar.xz 2538012 SHA256:4d6273dc3f5a94bcc53ccfe0711cfddd49e31371d1136bf62fa1ecc604fc6550
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.2.4-1~ubuntu2.debian.tar.xz' gst-plugins-base1.0_1.2.4-1~ubuntu2.debian.tar.xz 40084 SHA256:98e38d37a55b4f43c089f8fad32a75b2bb1b259e5c5e18dcbd48ae24121b403a
-```
 
 ### `dpkg` source package: `gstreamer1.0=1.2.4-0ubuntu1.1`
 
