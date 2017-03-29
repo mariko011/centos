@@ -983,10 +983,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-6=6.3.0-9
-'http://http.debian.net/debian/pool/main/g/gcc-6/gcc-6_6.3.0-9.dsc' gcc-6_6.3.0-9.dsc 27171 SHA256:022a388cc719f1e507523fdc5fdd73ce2a2bbae5cc76ed7b6c9b5ef3815a4d1b
-'http://http.debian.net/debian/pool/main/g/gcc-6/gcc-6_6.3.0.orig.tar.gz' gcc-6_6.3.0.orig.tar.gz 81587460 SHA256:04552f04baf6974fb7521191859fb54717385ad659afd822b2995b66ee4e4151
-'http://http.debian.net/debian/pool/main/g/gcc-6/gcc-6_6.3.0-9.diff.gz' gcc-6_6.3.0-9.diff.gz 1929656 SHA256:b0665a79776221f7af6386440ddc07b55baace1abb7675e404e82f1ff73e9ae9
+'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-9.dsc' gcc-6_6.3.0-9.dsc 27171 SHA256:022a388cc719f1e507523fdc5fdd73ce2a2bbae5cc76ed7b6c9b5ef3815a4d1b
+'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0.orig.tar.gz' gcc-6_6.3.0.orig.tar.gz 81587460 SHA256:04552f04baf6974fb7521191859fb54717385ad659afd822b2995b66ee4e4151
+'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-9.diff.gz' gcc-6_6.3.0-9.diff.gz 1929656 SHA256:b0665a79776221f7af6386440ddc07b55baace1abb7675e404e82f1ff73e9ae9
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/gcc-6/6.3.0-9/
+- https://sources.debian.net/src/gcc-6/6.3.0-9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-defaults=1.166`
 
@@ -1005,9 +1010,14 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-defaults=1.166
-'http://http.debian.net/debian/pool/main/g/gcc-defaults/gcc-defaults_1.166.dsc' gcc-defaults_1.166.dsc 13173 SHA256:0f90f5c59e98c69db0c0aca16c13808f3c7d2243b01f5ca842234741fa4c38da
-'http://http.debian.net/debian/pool/main/g/gcc-defaults/gcc-defaults_1.166.tar.gz' gcc-defaults_1.166.tar.gz 69068 SHA256:45b3aae1601576ce824f5905d87ec6e3d6228d60d79c2401fb709605915152da
+'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.166.dsc' gcc-defaults_1.166.dsc 13173 SHA256:0f90f5c59e98c69db0c0aca16c13808f3c7d2243b01f5ca842234741fa4c38da
+'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.166.tar.gz' gcc-defaults_1.166.tar.gz 69068 SHA256:45b3aae1601576ce824f5905d87ec6e3d6228d60d79c2401fb709605915152da
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/gcc-defaults/1.166/
+- https://sources.debian.net/src/gcc-defaults/1.166/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gdbm=1.8.3-14`
 
