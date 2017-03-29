@@ -1259,18 +1259,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.165
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.165.dsc' gcc-defaults_1.165.dsc 13173 SHA256:fa7007254717150bb9160f5e8378be9dceaa27c922e7bcf457a915e421406709
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.165.tar.gz' gcc-defaults_1.165.tar.gz 69152 SHA256:2be4d58398e6da312ef72673e55958f9b5e6350141c1a67e1518fa4aa626f08c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-defaults/1.165/
-- https://sources.debian.net/src/gcc-defaults/1.165/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gdbm=1.8.3-14`
 
@@ -3772,19 +3762,8 @@ Licenses: (parsed from: `/usr/share/doc/libmariadbclient-dev/copyright`, `/usr/s
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mariadb-10.1=10.1.21-5
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.21-5.dsc' mariadb-10.1_10.1.21-5.dsc 4218 SHA256:54ef029ebe1ff45b14c6658b2448cd5316313298d2c8aa913772e74fc6e8a9de
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.21.orig.tar.gz' mariadb-10.1_10.1.21.orig.tar.gz 61406584 SHA256:5a816355781ea22a6c65a436d8162f19bd292ec90e2b7d9499c031ae4a659490
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.21-5.debian.tar.xz' mariadb-10.1_10.1.21-5.debian.tar.xz 213828 SHA256:a5d523801270a4e986dadced71bf98b27fdf868ddfa9686317ccd57c6f96df65
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mariadb-10.1/10.1.21-5/
-- https://sources.debian.net/src/mariadb-10.1/10.1.21-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
@@ -4484,19 +4463,8 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.6=9.6.2-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.2-1.dsc' postgresql-9.6_9.6.2-1.dsc 3634 SHA256:1031b4ed25b1cabce396ea05d57b8c83200080249024bba191dd2ed0b4dc2d0b
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.2.orig.tar.bz2' postgresql-9.6_9.6.2.orig.tar.bz2 19478040 SHA256:0187b5184be1c09034e74e44761505e52357248451b0c854dddec6c231fe50c9
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.2-1.debian.tar.xz' postgresql-9.6_9.6.2-1.debian.tar.xz 20484 SHA256:3dddea4f8028230a3c03b0d872559d7b5a356923df11b0668b95ae490f739555
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/postgresql-9.6/9.6.2-1/
-- https://sources.debian.net/src/postgresql-9.6/9.6.2-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `procps=2:3.3.12-3`
 

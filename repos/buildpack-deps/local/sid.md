@@ -3586,19 +3586,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxslt=1.1.29-2
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.29-2.dsc' libxslt_1.1.29-2.dsc 2368 SHA256:dcedd2cbe791c0053253181fc71cfae5a7e9babe081c80eb65e05b64efe5287e
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.29.orig.tar.gz' libxslt_1.1.29.orig.tar.gz 3428524 SHA256:b5976e3857837e7617b29f2249ebb5eeac34e249208d31f1fbf7a6ba7a4090ce
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.29-2.debian.tar.xz' libxslt_1.1.29-2.debian.tar.xz 27884 SHA256:c206efbcc3bd857316e9f01059b1095e42552b3321b398168ff4bfcc0b01910c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libxslt/1.1.29-2/
-- https://sources.debian.net/src/libxslt/1.1.29-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxt=1:1.1.5-1`
 
@@ -3833,19 +3822,8 @@ Licenses: (parsed from: `/usr/share/doc/libmariadbclient-dev/copyright`, `/usr/s
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mariadb-10.1=10.1.22-1
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.22-1.dsc' mariadb-10.1_10.1.22-1.dsc 4381 SHA256:0f818aa7d1bdefd73a1cda38a4a1753daae290d240f5963c2bd1ea978ff32559
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.22.orig.tar.gz' mariadb-10.1_10.1.22.orig.tar.gz 61542321 SHA256:bcb0572e7ad32cea9740a21e9255f733bdf60a5561ffbda317c22dd12b3966ce
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.22-1.debian.tar.xz' mariadb-10.1_10.1.22-1.debian.tar.xz 214212 SHA256:f3112992e471a40103d924253a5242f6d75f0df7c511295abcdb4b51b0f7edd9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mariadb-10.1/10.1.22-1/
-- https://sources.debian.net/src/mariadb-10.1/10.1.22-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
@@ -4556,19 +4534,8 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.6=9.6.2-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.2-1.dsc' postgresql-9.6_9.6.2-1.dsc 3634 SHA256:1031b4ed25b1cabce396ea05d57b8c83200080249024bba191dd2ed0b4dc2d0b
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.2.orig.tar.bz2' postgresql-9.6_9.6.2.orig.tar.bz2 19478040 SHA256:0187b5184be1c09034e74e44761505e52357248451b0c854dddec6c231fe50c9
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.2-1.debian.tar.xz' postgresql-9.6_9.6.2-1.debian.tar.xz 20484 SHA256:3dddea4f8028230a3c03b0d872559d7b5a356923df11b0668b95ae490f739555
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/postgresql-9.6/9.6.2-1/
-- https://sources.debian.net/src/postgresql-9.6/9.6.2-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `procps=2:3.3.12-3`
 
