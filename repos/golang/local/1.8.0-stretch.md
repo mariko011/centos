@@ -811,18 +811,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.165
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.165.dsc' gcc-defaults_1.165.dsc 13173 SHA256:fa7007254717150bb9160f5e8378be9dceaa27c922e7bcf457a915e421406709
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.165.tar.gz' gcc-defaults_1.165.tar.gz 69152 SHA256:2be4d58398e6da312ef72673e55958f9b5e6350141c1a67e1518fa4aa626f08c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-defaults/1.165/
-- https://sources.debian.net/src/gcc-defaults/1.165/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gdbm=1.8.3-14`
 
