@@ -1,13 +1,13 @@
-# `vault:0.6`
+# `vault:0.7.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:59bf6d4a6a62562bc659a057a2587ac1940218080a2fbce94ad952fa1f63e990`
-- Created: `2017-03-03T23:49:11.087722891Z`
+- Image ID: `sha256:144fecac962b683dce553f5d4220c76cb2b59274ab7969814fdccdf1d455ea77`
+- Created: `2017-03-28T17:36:05.007863075Z`
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["server","-dev"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `VAULT_VERSION=0.6.5`
+  - `VAULT_VERSION=0.7.0`
   - `DOCKER_BASE_VERSION=0.0.4`
