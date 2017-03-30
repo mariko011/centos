@@ -1,7 +1,7 @@
 ## `logstash:latest`
 
 ```console
-$ docker pull logstash@sha256:44fe0f9a4b13314067491d7ba5df8d603166ad340c51f56ffe222fd87050be65
+$ docker pull logstash@sha256:ca72696f41b82c9afe73e6dd07fb78b159d48a48db9f5429c1c95acc1563916b
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull logstash@sha256:44fe0f9a4b13314067491d7ba5df8d603166ad340c51f56ffe
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.6 MB (221614050 bytes)**  
+-	Total Size: **221.7 MB (221657254 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e2e0c054df39bf493b4ace910e69116d816261ce9f8aaf95495fae2f947fa449`
+-	Image ID: `sha256:266aae239755af0ea97c3c44134646f7689e3a5ced2243dccac4634ea91744b6`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
@@ -56,23 +56,23 @@ RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/relea
 RUN set -ex; 	key='46095ACC8548582C1A2699A9D27D666CD88E42B4'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/elastic.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
 # Wed, 22 Mar 2017 21:27:54 GMT
 RUN echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' > /etc/apt/sources.list.d/logstash.list
-# Wed, 22 Mar 2017 21:27:54 GMT
-ENV LOGSTASH_VERSION=5.2.2
-# Wed, 22 Mar 2017 21:27:55 GMT
-ENV LOGSTASH_DEB_VERSION=1:5.2.2-1
-# Wed, 22 Mar 2017 21:28:24 GMT
+# Thu, 30 Mar 2017 22:45:05 GMT
+ENV LOGSTASH_VERSION=5.3.0
+# Thu, 30 Mar 2017 22:45:05 GMT
+ENV LOGSTASH_DEB_VERSION=1:5.3.0-1
+# Thu, 30 Mar 2017 22:45:30 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends "logstash=$LOGSTASH_DEB_VERSION" 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 22 Mar 2017 21:28:25 GMT
+# Thu, 30 Mar 2017 22:45:31 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Mar 2017 21:28:26 GMT
+# Thu, 30 Mar 2017 22:45:31 GMT
 ENV LS_SETTINGS_DIR=/etc/logstash
-# Wed, 22 Mar 2017 21:28:27 GMT
+# Thu, 30 Mar 2017 22:45:33 GMT
 RUN set -ex; 	if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^path\.config:!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi; 	if [ -f "$LS_SETTINGS_DIR/log4j2.properties" ]; then 		cp "$LS_SETTINGS_DIR/log4j2.properties" "$LS_SETTINGS_DIR/log4j2.properties.dist"; 		truncate --size=0 "$LS_SETTINGS_DIR/log4j2.properties"; 	fi
-# Wed, 22 Mar 2017 21:28:28 GMT
+# Thu, 30 Mar 2017 22:45:33 GMT
 COPY file:b540f903cdce9f3c92d22e6ec1673d5185797f0f604d4ddc9fdeb6fab1050a8f in / 
-# Wed, 22 Mar 2017 21:28:29 GMT
+# Thu, 30 Mar 2017 22:45:34 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 22 Mar 2017 21:28:30 GMT
+# Thu, 30 Mar 2017 22:45:35 GMT
 CMD ["-e" ""]
 ```
 
@@ -125,15 +125,15 @@ CMD ["-e" ""]
 		Last Modified: Fri, 24 Mar 2017 02:36:15 GMT  
 		Size: 228.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f46594770c5a47a57550583a78709d3d2c6677d0c3d60927b7e9a5e8c8a61872`  
-		Last Modified: Fri, 24 Mar 2017 02:36:36 GMT  
-		Size: 95.0 MB (94952671 bytes)  
+	-	`sha256:0154099706d727a64f1ee8d5eb4f96400ee91f79321a0dda30ccaeee5fba6f13`  
+		Last Modified: Thu, 30 Mar 2017 22:46:36 GMT  
+		Size: 95.0 MB (94995872 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7d68207b6c99148cf83a0dc6375c04831bd99f021992cc03544c47b9e5a76f71`  
-		Last Modified: Fri, 24 Mar 2017 02:36:15 GMT  
-		Size: 2.2 KB (2245 bytes)  
+	-	`sha256:5ae5d2037f932e81c3a81cb7dc6a5feb20ef10e238549ef5eb5762b5d2cc3c9e`  
+		Last Modified: Thu, 30 Mar 2017 22:46:20 GMT  
+		Size: 2.2 KB (2248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad6a68d98d2295ce92a3a5a62b175553f931e6e52655574f0f90823680b3e72a`  
-		Last Modified: Fri, 24 Mar 2017 02:36:14 GMT  
+	-	`sha256:8e6205415dd5b1262ec3cd58ca70578e55e2bf6ff002c6988507100f1ff1b201`  
+		Last Modified: Thu, 30 Mar 2017 22:46:19 GMT  
 		Size: 303.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
