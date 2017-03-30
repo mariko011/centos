@@ -1,21 +1,21 @@
-## `docker:17.03-git`
+## `docker:stable-dind`
 
 ```console
-$ docker pull docker@sha256:0bf85ff24e546cdd532b73f7f818d734cb000dbd048883db9477286f4f551ee6
+$ docker pull docker@sha256:3b29d240c7bdb2967b5c4fb304d6849e5cd888821ef229a36b1f9c96648fb014
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `docker:17.03-git` - linux; amd64
+### `docker:stable-dind` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.2 MB (42188343 bytes)**  
+-	Total Size: **33.9 MB (33923207 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3f00e04ea2d6e7e76df76b83adb44ca6974960b0026096deaab4ead8c79be7e7`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["sh"]`
+-	Image ID: `sha256:20ee9831c01300cdd5a9ddca7c2ecc7fe68699189ec527beb827587aeae5db6c`
+-	Entrypoint: `["dockerd-entrypoint.sh"]`
+-	Default Command: `[]`
 
 ```dockerfile
 # Fri, 03 Mar 2017 20:32:37 GMT
@@ -36,8 +36,24 @@ COPY file:a8b1446f032ff01ac092c29a0af328f0b9d47bbee72d1049499f2a9a89ee988a in /u
 ENTRYPOINT ["docker-entrypoint.sh"]
 # Thu, 30 Mar 2017 21:14:00 GMT
 CMD ["sh"]
-# Thu, 30 Mar 2017 21:14:29 GMT
-RUN apk add --no-cache 		git 		openssh-client
+# Thu, 30 Mar 2017 21:14:03 GMT
+RUN apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		iptables 		xfsprogs 		xz
+# Thu, 30 Mar 2017 21:14:20 GMT
+RUN set -x 	&& addgroup -S dockremap 	&& adduser -S -G dockremap dockremap 	&& echo 'dockremap:165536:65536' >> /etc/subuid 	&& echo 'dockremap:165536:65536' >> /etc/subgid
+# Thu, 30 Mar 2017 21:14:20 GMT
+ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
+# Thu, 30 Mar 2017 21:14:22 GMT
+RUN wget "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind" -O /usr/local/bin/dind 	&& chmod +x /usr/local/bin/dind
+# Thu, 30 Mar 2017 21:14:23 GMT
+COPY file:7070e4b35c137a8ec5904300d19b8f7ee74aa76659517767c617249cece98a4a in /usr/local/bin/ 
+# Thu, 30 Mar 2017 21:14:24 GMT
+VOLUME [/var/lib/docker]
+# Thu, 30 Mar 2017 21:14:25 GMT
+EXPOSE 2375/tcp
+# Thu, 30 Mar 2017 21:14:25 GMT
+ENTRYPOINT ["dockerd-entrypoint.sh"]
+# Thu, 30 Mar 2017 21:14:26 GMT
+CMD []
 ```
 
 -	Layers:
@@ -57,7 +73,19 @@ RUN apk add --no-cache 		git 		openssh-client
 		Last Modified: Thu, 30 Mar 2017 21:21:00 GMT  
 		Size: 489.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f0d0d1043837b6c170c685257fabfda306c08828b06bac1a9cfd50f98f4a616`  
-		Last Modified: Thu, 30 Mar 2017 21:25:20 GMT  
-		Size: 10.4 MB (10372529 bytes)  
+	-	`sha256:35d1ee13afdfdad7ee597347b27ae21112aa96d936f26d0951a17415b4c54dac`  
+		Last Modified: Thu, 30 Mar 2017 21:23:17 GMT  
+		Size: 2.1 MB (2103793 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3c8fac4b914c3679eec5425ab8d34d6ac388a9543243ef7b9a285ac9f683b74f`  
+		Last Modified: Thu, 30 Mar 2017 21:23:15 GMT  
+		Size: 1.3 KB (1299 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:25860337c30dc5bc25a1db9b4213891e3519bee62ce9b047470e2a075bf7398f`  
+		Last Modified: Thu, 30 Mar 2017 21:23:15 GMT  
+		Size: 1.8 KB (1818 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7f2864a3f5d437f1f4e59d1a792a9d60de652a393b0ce04c103325a91f0484ee`  
+		Last Modified: Thu, 30 Mar 2017 21:23:15 GMT  
+		Size: 483.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
