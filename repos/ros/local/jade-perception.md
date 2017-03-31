@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:f20b01a23ea4d14a5c538ccaa6b7619514ffb8459a982805fbbe2b58360a0136`
 - Created: `2017-03-01T18:18:38.357670998Z`
+- Virtual Size: ~ 1.74 Gb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
 - Command: `["bash"]`
@@ -66,14 +68,8 @@ Licenses: (parsed from: `/usr/share/doc/dh-apparmor/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.5~14.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.5~14.04.1.dsc' apparmor_2.10.95-0ubuntu2.5~14.04.1.dsc 3147 SHA256:a1aa805e766861273e4de3b42601193e41a5d38e0168964ae6cde1da408bbe8c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95.orig.tar.gz' apparmor_2.10.95.orig.tar.gz 4502268 SHA256:3f659a599718f4a5e2a33140916715f574a5cb3634a6b9ed6d29f7b0617e4d1a
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.5~14.04.1.debian.tar.gz' apparmor_2.10.95-0ubuntu2.5~14.04.1.debian.tar.gz 182102 SHA256:2e6baa0d55b5f250534096032f5f87f781e97eb59547c6b3751f4d819ccec946
-```
 
 ### `dpkg` source package: `apr-util=1.5.3-1`
 
@@ -2152,13 +2148,8 @@ Licenses: (parsed from: `/usr/share/doc/initramfs-tools/copyright`, `/usr/share/
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris initramfs-tools=0.103ubuntu4.6
-'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.6.dsc' initramfs-tools_0.103ubuntu4.6.dsc 1218 SHA256:d6a2a6d5e40de66b18eccf05eb2961acf6269187205b2cfb339663e58cd201eb
-'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.6.tar.xz' initramfs-tools_0.103ubuntu4.6.tar.xz 94364 SHA256:20056eb1d0838eacd7c6d655cd4c234a6e8f4c7347d275fdddaec11f36b22751
-```
 
 ### `dpkg` source package: `insserv=1.14.0-5ubuntu2`
 
