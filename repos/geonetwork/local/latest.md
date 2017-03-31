@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:af5ca42b7e957a35d3cc55489d591e4c44d3d70518d8431bcad31a343e7ba144`
 - Created: `2017-03-22T21:09:40.343792171Z`
+- Virtual Size: ~ 653.12 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["catalina.sh","run"]`
