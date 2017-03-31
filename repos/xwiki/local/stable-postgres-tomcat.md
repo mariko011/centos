@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:3fc0ac58e1fbff1f16b65268c1ab83ec6fe6f75d39fe1f8b2b94f9c212951d75`
 - Created: `2017-03-22T18:01:30.27987534Z`
+- Virtual Size: ~ 1.17 Gb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["xwiki"]`
