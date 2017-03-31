@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:5d1a8af996ecd34e31751aaab43ddf39ca9fbccee740e0073fa7f5f336372ea3`
 - Created: `2017-03-22T21:20:50.347878396Z`
+- Virtual Size: ~ 330.47 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gateway.start"]`
 - Environment:
