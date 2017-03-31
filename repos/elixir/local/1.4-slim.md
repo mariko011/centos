@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:a220ce349d7487a97baa63dc2733fda3534fb382f8ba27175d5c62ebc6d7dd92`
 - Created: `2017-03-22T18:15:03.143809719Z`
+- Virtual Size: ~ 383.21 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
