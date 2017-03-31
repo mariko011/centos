@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:198e758a94f707a8ab4c901e1ca435137a5517f5086902b60bf3d4c81c76b99c`
 - Created: `2017-03-21T20:44:40.899801088Z`
+- Virtual Size: ~ 961.13 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["ghci"]`
 - Environment:
