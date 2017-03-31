@@ -1,16 +1,19 @@
-# `bonita:7.4.2`
+# `bonita:7.4.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3e0818c9baf6cf8950557cc411ae026c3d8ede699f814c7e5d55ad996b163762`
-- Created: `2017-02-27T22:44:42.383754221Z`
+- Image ID: `sha256:aac1c8079aba6f5822484731bbef48719f355e11d544620b88de1be55d2a5774`
+- Created: `2017-03-28T17:06:10.11977565Z`
+- Virtual Size: ~ 404.89 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/files/startup.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `BONITA_VERSION=7.4.2`
+  - `BONITA_VERSION=7.4.3`
   - `TOMCAT_VERSION=7.0.67`
-  - `BONITA_SHA256=62f489362ed273f700032f5da1b4dc70a4bc74c9add2cb27e6c3be50e1e284f6`
+  - `BONITA_SHA256=5129f43d1aad7e10441e4c0a73e0ab638a64e06fcd2859947b782e08fe9b6bab`
+  - `BONITA_URL=http://download.forge.ow2.org/bonita/BonitaBPMCommunity-7.4.3-Tomcat-7.0.67.zip`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1062,13 +1065,8 @@ Licenses: (parsed from: `/usr/share/doc/initramfs-tools/copyright`, `/usr/share/
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris initramfs-tools=0.103ubuntu4.6
-'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.6.dsc' initramfs-tools_0.103ubuntu4.6.dsc 1218 SHA256:d6a2a6d5e40de66b18eccf05eb2961acf6269187205b2cfb339663e58cd201eb
-'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.6.tar.xz' initramfs-tools_0.103ubuntu4.6.tar.xz 94364 SHA256:20056eb1d0838eacd7c6d655cd4c234a6e8f4c7347d275fdddaec11f36b22751
-```
 
 ### `dpkg` source package: `insserv=1.14.0-5ubuntu2`
 
