@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:afff13918caca94a51262c424fb3bd4ad149a23a778d84d3e0af423aff7255e1`
 - Created: `2017-03-07T17:47:15.983748416Z`
+- Virtual Size: ~ 116.42 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["elasticsearch"]`
