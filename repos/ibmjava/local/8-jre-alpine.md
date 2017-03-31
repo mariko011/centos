@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:7cf2bd9e65aef1a0b67f2a9be700a894b07a6852e7fe9aa7886dd0332d08eefe`
 - Created: `2017-03-03T21:59:16.735834914Z`
+- Virtual Size: ~ 183.86 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Environment:
   - `PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
