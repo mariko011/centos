@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:e5632573d53d0cc11eea2fc7493ce31dfc8b55c6064caa56b4cdafa49ecbb629`
 - Created: `2017-03-22T00:04:19.743768746Z`
+- Virtual Size: ~ 333.55 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["perl6"]`
 - Environment:
