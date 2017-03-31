@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:c017141bdaa89b96cb89d8848eb891dd8b684ccdabaeb6efd6ee69377d35e52a`
 - Created: `2017-03-07T01:04:15.237713473Z`
+- Virtual Size: ~ 81.37 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin`

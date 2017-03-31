@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:5b14aa56cb9d9f0a07f117c21dd76b54dd3c189a07f30d97f9d54559b44f88f8`
 - Created: `2017-03-21T22:52:24.931247674Z`
+- Virtual Size: ~ 574.20 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -77,19 +79,8 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.11.0-2
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0-2.dsc' apparmor_2.11.0-2.dsc 3098 SHA256:a0f096a13c4d6b084e4834198e75897baf40002ab4779013f173a82a4d713c64
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0.orig.tar.gz' apparmor_2.11.0.orig.tar.gz 5013297 SHA256:b1c489ea11e7771b8e6b181532cafbf9ebe6603e3cb00e2558f21b7a5bdd739a
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0-2.debian.tar.xz' apparmor_2.11.0-2.debian.tar.xz 80308 SHA256:63414bd10e8092d72ce93cd4b80fc0ecdac86b5a12899f39f0bd829c07be22c1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apparmor/2.11.0-2/
-- https://sources.debian.net/src/apparmor/2.11.0-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apr-util=1.5.4-3`
 
@@ -2506,19 +2497,8 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.4p1-9
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.4p1-9.dsc' openssh_7.4p1-9.dsc 2934 SHA256:dd1538d768fe79eef65564f6ee66b128bc6c04ff5cfa457f4b1295b89ce94c1b
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.4p1.orig.tar.gz' openssh_7.4p1.orig.tar.gz 1511780 SHA256:1b1fc4a14e2024293181924ed24872e6f2e06293f3e8926a376b8aec481f19d1
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.4p1-9.debian.tar.xz' openssh_7.4p1-9.debian.tar.xz 160096 SHA256:ce34558b22d1079c4a0df572511ceae1f0955877339e39e1aef0edcdc29c6e36
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssh/1:7.4p1-9/
-- https://sources.debian.net/src/openssh/1:7.4p1-9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssl1.0=1.0.2k-1`
 

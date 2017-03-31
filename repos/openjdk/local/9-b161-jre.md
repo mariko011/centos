@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:bcd958c5c67fec0c18a02a18408abd3d568daa2668fd76c08f1ea3bdd83c6e75`
 - Created: `2017-03-21T22:52:57.631213519Z`
+- Virtual Size: ~ 470.54 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -77,19 +79,8 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.11.0-2
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0-2.dsc' apparmor_2.11.0-2.dsc 3098 SHA256:a0f096a13c4d6b084e4834198e75897baf40002ab4779013f173a82a4d713c64
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0.orig.tar.gz' apparmor_2.11.0.orig.tar.gz 5013297 SHA256:b1c489ea11e7771b8e6b181532cafbf9ebe6603e3cb00e2558f21b7a5bdd739a
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0-2.debian.tar.xz' apparmor_2.11.0-2.debian.tar.xz 80308 SHA256:63414bd10e8092d72ce93cd4b80fc0ecdac86b5a12899f39f0bd829c07be22c1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apparmor/2.11.0-2/
-- https://sources.debian.net/src/apparmor/2.11.0-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apt=1.4~rc2`
 
