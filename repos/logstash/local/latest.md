@@ -1,9 +1,11 @@
-# `logstash:5.2.2`
+# `logstash:5.3.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e2e0c054df39bf493b4ace910e69116d816261ce9f8aaf95495fae2f947fa449`
-- Created: `2017-03-22T21:28:30.095873675Z`
+- Image ID: `sha256:266aae239755af0ea97c3c44134646f7689e3a5ced2243dccac4634ea91744b6`
+- Created: `2017-03-30T22:45:35.103740027Z`
+- Virtual Size: ~ 493.71 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["-e",""]`
@@ -15,6 +17,6 @@
   - `JAVA_DEBIAN_VERSION=8u121-b13-1~bpo8+1`
   - `CA_CERTIFICATES_JAVA_VERSION=20161107~bpo8+1`
   - `GOSU_VERSION=1.7`
-  - `LOGSTASH_VERSION=5.2.2`
-  - `LOGSTASH_DEB_VERSION=1:5.2.2-1`
+  - `LOGSTASH_VERSION=5.3.0`
+  - `LOGSTASH_DEB_VERSION=1:5.3.0-1`
   - `LS_SETTINGS_DIR=/etc/logstash`
