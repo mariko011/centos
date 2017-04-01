@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:83d6014ac5c8193fa43dd16b161f0e524141800f10cff44d7bad3b637991cf16`
 - Created: `2017-03-22T15:07:45.335836891Z`
+- Virtual Size: ~ 183.61 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["redis-server"]`
