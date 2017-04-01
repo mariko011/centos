@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:b63d02d8829b621f5b41dff0cc1de4ffe85d614dc47310f8ec9743d8364873ac`
 - Created: `2017-03-03T23:24:44.344282553Z`
+- Virtual Size: ~ 71.51 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
 - Environment:
