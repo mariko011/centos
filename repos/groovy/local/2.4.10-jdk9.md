@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:e9f6c8a665ff7bd14a9a52a0b505abeea2dba7d9b05ec56b85757d9652a37556`
 - Created: `2017-03-22T21:12:20.742785124Z`
+- Virtual Size: ~ 615.90 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
 - Environment:
@@ -2497,19 +2499,8 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.4p1-9
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.4p1-9.dsc' openssh_7.4p1-9.dsc 2934 SHA256:dd1538d768fe79eef65564f6ee66b128bc6c04ff5cfa457f4b1295b89ce94c1b
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.4p1.orig.tar.gz' openssh_7.4p1.orig.tar.gz 1511780 SHA256:1b1fc4a14e2024293181924ed24872e6f2e06293f3e8926a376b8aec481f19d1
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.4p1-9.debian.tar.xz' openssh_7.4p1-9.debian.tar.xz 160096 SHA256:ce34558b22d1079c4a0df572511ceae1f0955877339e39e1aef0edcdc29c6e36
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssh/1:7.4p1-9/
-- https://sources.debian.net/src/openssh/1:7.4p1-9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssl1.0=1.0.2k-1`
 
