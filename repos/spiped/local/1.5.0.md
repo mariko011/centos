@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:4b04c596c08e9b85de274dd8d9a9999190ee677065525d119713ddbf9ee639ec`
 - Created: `2017-03-22T17:27:46.475782503Z`
+- Virtual Size: ~ 134.97 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["spiped"]`
