@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:ec9cd2000780b22a8d597e40d47013d4fad170c3d589e0bebaa37f5567f85e52`
 - Created: `2017-01-06T19:06:14.479837814Z`
+- Virtual Size: ~ 785.95 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["rails","server","-b","0.0.0.0"]`
 - Environment:
