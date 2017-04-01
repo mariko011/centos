@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:0346349a1a640da9535acfc0f68be9d9b81e85957725ecb76f3b522f4e2f0455`
 - Created: `2017-03-27T19:48:34.817993292Z`
+- Virtual Size: ~ 181.60 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
