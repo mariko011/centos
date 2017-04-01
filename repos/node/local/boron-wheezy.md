@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:2c70607a3d662241bff0a961e7ce16069e5b6450e933ec17894c7d56e44251bd`
 - Created: `2017-03-23T00:18:03.790538434Z`
+- Virtual Size: ~ 511.14 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
@@ -3976,19 +3978,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff3=3.9.6-11+deb7u3
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u3.dsc' tiff3_3.9.6-11+deb7u3.dsc 1650 SHA256:dc8f0affa3c3711fb8e4a4f2f857abf40f23b78d608093638097d467dd688f8f
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6.orig.tar.gz' tiff3_3.9.6.orig.tar.gz 1454196 SHA256:0fba119156236074343a14afbd3a47907e3a5952c9c86102305d4eeb06ad6833
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u3.debian.tar.gz' tiff3_3.9.6-11+deb7u3.debian.tar.gz 41639 SHA256:a9013ca17f0de7ea8e63f1dd2529a5a100f365cffdf5258248ae52ae2c91884d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u3/
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ttf-dejavu=2.33-3`
 

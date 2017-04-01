@@ -1,15 +1,17 @@
-# `node:7.7.4-wheezy`
+# `node:7.8.0-wheezy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1551da31254d144bc15359dca17f55783170ffaba019bddff7f96799ab4bd6da`
-- Created: `2017-03-22T23:58:47.451823464Z`
+- Image ID: `sha256:dd8e4523feb7e3912663fe4a659145f304c7dc15e81d1d755b165edeb2e4a9af`
+- Created: `2017-03-30T17:34:28.249112475Z`
+- Virtual Size: ~ 515.69 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=7.7.4`
+  - `NODE_VERSION=7.8.0`
   - `YARN_VERSION=0.21.3`
 
 ## `dpkg` (`.deb`-based packages)
@@ -3976,19 +3978,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff3=3.9.6-11+deb7u3
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u3.dsc' tiff3_3.9.6-11+deb7u3.dsc 1650 SHA256:dc8f0affa3c3711fb8e4a4f2f857abf40f23b78d608093638097d467dd688f8f
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6.orig.tar.gz' tiff3_3.9.6.orig.tar.gz 1454196 SHA256:0fba119156236074343a14afbd3a47907e3a5952c9c86102305d4eeb06ad6833
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u3.debian.tar.gz' tiff3_3.9.6-11+deb7u3.debian.tar.gz 41639 SHA256:a9013ca17f0de7ea8e63f1dd2529a5a100f365cffdf5258248ae52ae2c91884d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u3/
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ttf-dejavu=2.33-3`
 

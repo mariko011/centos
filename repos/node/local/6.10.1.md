@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:2ed333b7d30b39ae3ef4647cd9daf369243d0ef09ec2a93463c748770c3c9d5b`
 - Created: `2017-03-23T00:01:12.420059455Z`
+- Virtual Size: ~ 660.72 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
