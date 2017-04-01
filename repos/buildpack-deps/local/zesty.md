@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:5f4c473a773e23542769e0c512c624223dba8bc54abf60bc0bfc44c105bed4b9`
 - Created: `2017-02-27T21:37:47.934473569Z`
+- Virtual Size: ~ 743.96 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
@@ -1022,13 +1024,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.164ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.164ubuntu1.dsc' gcc-defaults_1.164ubuntu1.dsc 12639 SHA256:5b37a7a6973440b480e2b476e090ee4dce429dd359a4f1eac4ae19ae47c30163
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-defaults/gcc-defaults_1.164ubuntu1.tar.gz' gcc-defaults_1.164ubuntu1.tar.gz 210572 SHA256:06dd4ccc7a1de440b9aa7066cdb95fa0c4b4feba3f98b57a2da45285de0a857a
-```
 
 ### `dpkg` source package: `gdbm=1.8.3-14`
 
@@ -1574,14 +1571,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.6.6+dfsg-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.9.6.6+dfsg-1ubuntu3.dsc' imagemagick_6.9.6.6+dfsg-1ubuntu3.dsc 4911 SHA256:738c19e6aa2c7e448cec61509ccf7b74c3747f1c1fca42a9f14cb8a010584b0a
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.9.6.6+dfsg.orig.tar.xz' imagemagick_6.9.6.6+dfsg.orig.tar.xz 8921112 SHA256:fdab5e00b61408752ebeb33e3a4a4c3dfdc9bf2ce67dbab2851581474bd1d602
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.9.6.6+dfsg-1ubuntu3.debian.tar.xz' imagemagick_6.9.6.6+dfsg-1ubuntu3.debian.tar.xz 245016 SHA256:022970cf83f0091928e8cc9e6624454519296144fd6fd9073f0acd6f5e405c02
-```
 
 ### `dpkg` source package: `init-system-helpers=1.46`
 

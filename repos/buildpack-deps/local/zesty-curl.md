@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:e8b76199abeee6667fb8d37da3130cab1de593f5e5edcec4855c6f5df11f44da`
 - Created: `2017-02-27T21:34:39.25780495Z`
+- Virtual Size: ~ 118.36 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
