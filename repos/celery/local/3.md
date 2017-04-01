@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:a8b13f660c9ac04fcc45d7b0db6f684f1726f9c07568ff6b17ddf8baaf06b406`
 - Created: `2017-03-22T18:04:25.623780945Z`
+- Virtual Size: ~ 215.47 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["celery","worker"]`
 - Environment:
