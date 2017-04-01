@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:eb9218ca06347902bade3e10e470c0af031c453d84698b8925e4e6f9fc1f7164`
 - Created: `2017-03-22T23:03:50.875895847Z`
+- Virtual Size: ~ 421.70 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["apache2-foreground"]`
