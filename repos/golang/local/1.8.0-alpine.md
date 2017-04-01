@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:bcb935bbf1daa45326103355d4c2410367b2382eb4701055153f8e9cfd57e9f3`
 - Created: `2017-03-03T21:52:42.63213743Z`
+- Virtual Size: ~ 256.72 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`

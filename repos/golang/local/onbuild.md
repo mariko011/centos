@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:a71d3309fd55d701dab5373a42e5dfdc73baf6ac5127737c289022b3961c7f73`
 - Created: `2017-03-21T20:35:31.807739307Z`
+- Virtual Size: ~ 697.63 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["go-wrapper","run"]`
 - Environment:
