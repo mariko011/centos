@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:5c9b3798aaff8b19e7eae7e7cc9c942c3cde7015b595b044d8f71835b6158a8b`
 - Created: `2017-03-22T22:00:15.279869031Z`
+- Virtual Size: ~ 1.47 Gb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nuxeoctl","console"]`
