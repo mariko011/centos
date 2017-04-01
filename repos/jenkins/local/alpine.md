@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:bf98efaba71ce74dcaea15cb28b5ef4abe07d99ef9c7106d66e2e9e65a9a5b8f`
 - Created: `2017-03-07T18:30:34.349182526Z`
+- Virtual Size: ~ 222.24 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/bin/tini","--","/usr/local/bin/jenkins.sh"]`
 - Environment:
