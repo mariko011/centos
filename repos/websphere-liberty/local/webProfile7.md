@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:760292df448900c31ccea3307313877648c48444c823698f15cd630e8796c15c`
 - Created: `2017-03-14T21:58:07.668647844Z`
+- Virtual Size: ~ 402.19 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/ibm/docker/docker-server","run","defaultServer"]`
 - Environment:

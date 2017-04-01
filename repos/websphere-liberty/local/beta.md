@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:ad3309f0067fd112a9bde0a3d710502e21abc96be86ddf7a9f5b4477332bf8ec`
 - Created: `2017-03-14T21:58:50.759809616Z`
+- Virtual Size: ~ 402.74 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/ibm/wlp/bin/server","run","defaultServer"]`
 - Environment:
