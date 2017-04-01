@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:b4c460a4e4583a6282e40565745920b4fc7ba17020fb05d6e5b2b9f552794769`
 - Created: `2017-03-28T16:56:31.55174851Z`
+- Virtual Size: ~ 323.74 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["arangod"]`
