@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:61273580599e3e1ea4ed9e3ca2878589bb73cf8d3dd5d288983b555199c70dd3`
 - Created: `2017-03-15T21:31:56.775848666Z`
+- Virtual Size: ~ 38.08 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["influxd"]`
