@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:95473cc64651b5d4bf8fdfcf5462556a133e261f49e58de78c609c95aab979c8`
 - Created: `2017-03-22T17:30:39.39752014Z`
+- Virtual Size: ~ 143.41 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["thrift"]`
 - Environment:
