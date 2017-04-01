@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:e53cbd06211da6d5c3c8746e0e3b52f05336558f3f1908168518a47a7b5114bd`
 - Created: `2017-03-22T18:26:58.868026158Z`
+- Virtual Size: ~ 754.20 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["rebar3","shell"]`
 - Environment:
