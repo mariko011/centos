@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:f8ce316a37a79a89cb6f9ef65f23b38893fe291b519a8b18cf08af65872f02a9`
 - Created: `2016-01-04T21:25:07.075919325Z`
+- Virtual Size: ~ 7.74 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/sbin/init"]`
 - Environment:
