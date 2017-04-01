@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:8b4c62eb5932fc2ec3b852b30de5a921ef955c5ec75a7e219c00a4533aa048aa`
 - Created: `2017-03-14T20:29:35.711781229Z`
+- Virtual Size: ~ 259.35 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["solr-foreground"]`
