@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:371ef4328e26517e69b91aabc825fd6fedb5e12cd5c4bdae2a0c0cb7431cc4ba`
 - Created: `2017-03-21T20:55:29.159829535Z`
+- Virtual Size: ~ 204.19 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["kapacitord"]`
