@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:0422f4e3424d6de7e4885a8cfe4b03754589e67970466db8b3c4361e63c9c892`
 - Created: `2017-03-27T19:54:31.419830597Z`
+- Virtual Size: ~ 41.76 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/traefik"]`
 - Environment:
