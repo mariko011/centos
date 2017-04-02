@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:b15a0ea0ffc93107a64358eef95c707f5eb0ed7381445733977f8e375059d567`
 - Created: `2017-03-21T20:17:02.075805297Z`
+- Virtual Size: ~ 225.17 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
 - Command: `["couchdb"]`
