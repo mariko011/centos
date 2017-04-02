@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:fdab38ea8e39d1bd42b3ef244e6ea4f85a72b41608c6f372bd9de4ba900b4f99`
 - Created: `2017-03-22T21:13:19.2026438Z`
+- Virtual Size: ~ 648.59 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iojs"]`
 - Environment:

@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:a6b804855f01171360edd97a338f5480b0e856f6e11493527170b757e0606881`
 - Created: `2017-03-22T21:13:13.999460154Z`
+- Virtual Size: ~ 642.88 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["npm","start"]`
 - Environment:
