@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:9bb069c4536193242914b881e38321bb363a67f267339a23618e347c784296a5`
 - Created: `2017-03-22T18:07:07.403758414Z`
+- Virtual Size: ~ 658.19 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["lein","run"]`
 - Environment:
