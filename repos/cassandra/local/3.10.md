@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:069269e2357899979df679173096db557fbdd84a82ffd2b08b139f974a36457a`
 - Created: `2017-03-21T20:13:44.022375976Z`
+- Virtual Size: ~ 385.73 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["cassandra","-f"]`
