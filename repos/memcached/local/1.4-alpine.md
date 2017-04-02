@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:9acbc61bd2648ea0d69f6656a549fad2ac6d8cc87728d10d9e4d01d446659ba1`
 - Created: `2017-03-21T16:51:44.119867302Z`
+- Virtual Size: ~ 6.91 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["memcached"]`
