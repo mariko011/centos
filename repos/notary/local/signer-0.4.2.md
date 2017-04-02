@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:fb24424171471bbf823886e82a7248d4b919a42e5ffb443497109ff55e44aca5`
 - Created: `2017-03-03T22:38:44.415758853Z`
+- Virtual Size: ~ 14.59 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh"]`
 - Command: `["notary-signer","--help"]`
