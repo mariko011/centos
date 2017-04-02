@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:00a35047b7fb1cd5d0d1cd6ed42f766143eb15572b113970b0655a6925621673`
 - Created: `2017-03-21T20:15:02.303852939Z`
+- Virtual Size: ~ 182.02 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["chronograf"]`
