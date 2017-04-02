@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:a179773563c938102593c24e0e13e2606811b69090e48e484d92541771fc80b7`
 - Created: `2017-03-21T20:58:31.279811366Z`
+- Virtual Size: ~ 394.96 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["mysqld"]`
