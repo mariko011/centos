@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:eb97b8262319e1bafedf127f855afca7ff5762df8a112db088bad10ce9eb885d`
 - Created: `2016-12-16T18:06:34.924138147Z`
+- Virtual Size: ~ 5.74 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gnatsd"]`
 - Command: `["-c","gnatsd.conf"]`
