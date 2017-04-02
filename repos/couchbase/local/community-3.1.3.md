@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:8a6b57507bc63995083bf8bc788dbefbc8e3c9ec8f6e8c2a0462b87da3d33362`
 - Created: `2017-02-27T22:52:15.183743318Z`
+- Virtual Size: ~ 815.28 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["couchbase-server"]`
