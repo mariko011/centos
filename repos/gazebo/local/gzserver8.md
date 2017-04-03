@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:fc8d7062c0d6baf682654944928f1fb0f64709809bb99a487748db5732c53d7f`
 - Created: `2017-02-27T23:57:49.3238944Z`
+- Virtual Size: ~ 661.13 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
 - Command: `["gzserver"]`
