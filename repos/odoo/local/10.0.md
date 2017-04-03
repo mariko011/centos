@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:244f39eb3795e7083f7efbcb9d9bbe5dc722ba48026bb627ff4d5d2c4022ca47`
 - Created: `2017-03-21T22:10:27.511814432Z`
+- Virtual Size: ~ 838.42 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["odoo"]`
