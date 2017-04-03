@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:8fad585ea87c8c81c8adcec96d4ec0e389b99fd05b732a5d2c954209d873a2a4`
 - Created: `2017-02-27T17:34:26.995086191Z`
+- Virtual Size: ~ 237.98 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["tini","--","node","app"]`
 - Environment:
