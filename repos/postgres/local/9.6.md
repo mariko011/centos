@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:9910dc9f2ac0dbc193abc4718984cb3ad48989fc02cac4b36ad3d6b7d5d781f9`
 - Created: `2017-03-21T23:39:42.484948975Z`
+- Virtual Size: ~ 266.83 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["postgres"]`
