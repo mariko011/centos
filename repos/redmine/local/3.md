@@ -2,16 +2,18 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f5bfeef7b6e59a2360ddbe3d6ac9363fb863430dc8c7692bfff5505193ec4fd1`
-- Created: `2017-03-22T23:02:27.315870485Z`
+- Image ID: `sha256:dc32b7bbed62b7216a1d7d8eb41dfb67263fca139c31d00c0480d4320224c155`
+- Created: `2017-03-31T19:05:52.623874344Z`
+- Virtual Size: ~ 639.40 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["rails","server","-b","0.0.0.0"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUBY_MAJOR=2.2`
-  - `RUBY_VERSION=2.2.6`
-  - `RUBY_DOWNLOAD_SHA256=9414ecc0d09cf71c9a24e8dc82fcc87919ac7359fb08db2791d6c32bfd157339`
+  - `RUBY_VERSION=2.2.7`
+  - `RUBY_DOWNLOAD_SHA256=234c8aee6543da9efd67008e6e7ee740d41ed57a52e797f65043c3b5ec3bcb53`
   - `RUBYGEMS_VERSION=2.6.11`
   - `BUNDLER_VERSION=1.14.6`
   - `GEM_HOME=/usr/local/bundle`
