@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:39819bbf7e0e925017badfc54d9dcff546a93ff4e52abc6bf886097a3449d2a9`
 - Created: `2017-03-22T18:08:00.526321751Z`
+- Virtual Size: ~ 402.44 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
 - Command: `["apache2-foreground"]`
