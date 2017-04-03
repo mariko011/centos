@@ -8,6 +8,8 @@
 -	[`storm:0.10`](#storm010)
 -	[`storm:1.0.3`](#storm103)
 -	[`storm:1.0`](#storm10)
+-	[`storm:1.1.0`](#storm110)
+-	[`storm:1.1`](#storm11)
 -	[`storm:latest`](#stormlatest)
 
 ## `storm:0.9.7`
@@ -569,6 +571,14 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Tue, 07 Mar 2017 20:39:51 GMT  
 		Size: 414.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `storm:1.1.0`
+
+**does not exist** (yet?)
+
+## `storm:1.1`
+
+**does not exist** (yet?)
 
 ## `storm:latest`
 
