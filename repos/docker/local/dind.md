@@ -1,14 +1,16 @@
-# `docker:17.03.0-ce-dind`
+# `docker:17.03.1-ce-dind`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4d0da1be773f9c6ff3573257870be1db867b1008c4c1c773a3091fa7c49726db`
-- Created: `2017-03-03T21:48:36.643769195Z`
+- Image ID: `sha256:20ee9831c01300cdd5a9ddca7c2ecc7fe68699189ec527beb827587aeae5db6c`
+- Created: `2017-03-30T21:14:26.177189292Z`
+- Virtual Size: ~ 99.19 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_BUCKET=get.docker.com`
-  - `DOCKER_VERSION=17.03.0-ce`
-  - `DOCKER_SHA256=4a9766d99c6818b2d54dc302db3c9f7b352ad0a80a2dc179ec164a3ba29c2d3e`
+  - `DOCKER_VERSION=17.03.1-ce`
+  - `DOCKER_SHA256=820d13b5699b5df63f7032c8517a5f118a44e2be548dd03271a86656a544af55`
   - `DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034`
