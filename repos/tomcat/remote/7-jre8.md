@@ -1,7 +1,7 @@
 ## `tomcat:7-jre8`
 
 ```console
-$ docker pull tomcat@sha256:ef0b93d1864ab780251642b1813b6b26718d750a8c62e4ab07f8c5a979a6a0ab
+$ docker pull tomcat@sha256:42dcd001cb4409f472bd24acb14531abb4569215f7d1e757b9b407b0fabca5cd
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull tomcat@sha256:ef0b93d1864ab780251642b1813b6b26718d750a8c62e4ab07f8
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.5 MB (145457410 bytes)**  
+-	Total Size: **145.5 MB (145466384 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dff9c6981d234a06bee5b334cad02da01a62d8563a0f639c15ee833b4d1303e4`
+-	Image ID: `sha256:5a1743b383b6693cc8cd9a5ce7a425b743cdf05a464483e3a541c455ce2e7768`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -67,19 +67,19 @@ ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E626
 RUN set -ex; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Wed, 22 Mar 2017 17:45:36 GMT
 ENV TOMCAT_MAJOR=7
-# Wed, 22 Mar 2017 17:45:37 GMT
-ENV TOMCAT_VERSION=7.0.76
-# Wed, 22 Mar 2017 17:45:37 GMT
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-7/v7.0.76/bin/apache-tomcat-7.0.76.tar.gz
-# Wed, 22 Mar 2017 17:45:38 GMT
-ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-7/v7.0.76/bin/apache-tomcat-7.0.76.tar.gz.asc
-# Wed, 22 Mar 2017 17:46:31 GMT
+# Mon, 03 Apr 2017 19:59:20 GMT
+ENV TOMCAT_VERSION=7.0.77
+# Mon, 03 Apr 2017 19:59:20 GMT
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-7/v7.0.77/bin/apache-tomcat-7.0.77.tar.gz
+# Mon, 03 Apr 2017 19:59:21 GMT
+ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-7/v7.0.77/bin/apache-tomcat-7.0.77.tar.gz.asc
+# Mon, 03 Apr 2017 20:00:04 GMT
 RUN set -x 		&& wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 	&& wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& ./configure 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j$(nproc) 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz
-# Wed, 22 Mar 2017 17:46:35 GMT
+# Mon, 03 Apr 2017 20:00:11 GMT
 RUN set -e 	&& nativeLines="$(catalina.sh configtest 2>&1)" 	&& nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')" 	&& nativeLines="$(echo "$nativeLines" | sort -u)" 	&& if ! echo "$nativeLines" | grep 'INFO: Loaded APR based Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Wed, 22 Mar 2017 17:46:36 GMT
+# Mon, 03 Apr 2017 20:00:11 GMT
 EXPOSE 8080/tcp
-# Wed, 22 Mar 2017 17:46:36 GMT
+# Mon, 03 Apr 2017 20:00:12 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -128,11 +128,11 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Fri, 24 Mar 2017 01:06:24 GMT  
 		Size: 113.2 KB (113187 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:447d24878f9e542617593db9c0e67e36043acd0b216836691967629eeb4b505f`  
-		Last Modified: Fri, 24 Mar 2017 01:06:26 GMT  
-		Size: 9.5 MB (9542990 bytes)  
+	-	`sha256:b18633fbf358b86d77a66ec327d9cb3d41f48a01dd6763641a2700aab49c4306`  
+		Last Modified: Mon, 03 Apr 2017 20:11:08 GMT  
+		Size: 9.6 MB (9551962 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:44c948f0965c48cc5bd9b48bc5c9b8de4ec720701ba4f67e3a6e84cf5d18247d`  
-		Last Modified: Fri, 24 Mar 2017 01:06:24 GMT  
-		Size: 130.0 B  
+	-	`sha256:508b9f5c034dedb9e5f4af24aa761dcc66d7f4355e23db82fbb12fe5c27d4877`  
+		Last Modified: Mon, 03 Apr 2017 20:11:06 GMT  
+		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

@@ -1,7 +1,7 @@
 ## `storm:latest`
 
 ```console
-$ docker pull storm@sha256:c705b7d8167d3defec52dd638d9702c89f5f29a940bd1d7146321ad940484b04
+$ docker pull storm@sha256:5f9d01a35b098741c3593333f4063b50a22d0c331ba9689bf11433d0f1f99cb9
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull storm@sha256:c705b7d8167d3defec52dd638d9702c89f5f29a940bd1d7146321
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **257.9 MB (257875918 bytes)**  
+-	Total Size: **150.5 MB (150458274 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a555b5da93384e1b08892c3e4418ff05b24958f268b446cee8ecef1a02775c1a`
+-	Image ID: `sha256:0f51b56062e73b52c6c260a62daf3c96f915f392a09a7277388bb0fb4bee5850`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -41,18 +41,18 @@ ENV STORM_USER=storm STORM_CONF_DIR=/conf STORM_DATA_DIR=/data STORM_LOG_DIR=/lo
 RUN set -x     && adduser -D "$STORM_USER"     && mkdir -p "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"     && chown -R "$STORM_USER:$STORM_USER" "$STORM_CONF_DIR" "$STORM_DATA_DIR" "$STORM_LOG_DIR"
 # Tue, 07 Mar 2017 20:37:44 GMT
 ARG GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
-# Tue, 07 Mar 2017 20:37:45 GMT
-ARG DISTRO_NAME=apache-storm-1.0.3
-# Tue, 07 Mar 2017 20:37:57 GMT
-# ARGS: DISTRO_NAME=apache-storm-1.0.3 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
+# Mon, 03 Apr 2017 19:54:48 GMT
+ARG DISTRO_NAME=apache-storm-1.1.0
+# Mon, 03 Apr 2017 19:54:57 GMT
+# ARGS: DISTRO_NAME=apache-storm-1.1.0 GPG_KEY=ACEFE18DD2322E1E84587A148DE03962E80B8FFD
 RUN set -x     && apk add --no-cache --virtual .build-deps         gnupg     && wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz"     && wget -q "http://www.apache.org/dist/storm/$DISTRO_NAME/$DISTRO_NAME.tar.gz.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-key "$GPG_KEY"     && gpg --batch --verify "$DISTRO_NAME.tar.gz.asc" "$DISTRO_NAME.tar.gz"     && tar -xzf "$DISTRO_NAME.tar.gz"     && chown -R "$STORM_USER:$STORM_USER" "$DISTRO_NAME"     && rm -r "$GNUPGHOME" "$DISTRO_NAME.tar.gz" "$DISTRO_NAME.tar.gz.asc"     && apk del .build-deps
-# Tue, 07 Mar 2017 20:37:57 GMT
-WORKDIR /apache-storm-1.0.3
-# Tue, 07 Mar 2017 20:37:58 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/apache-storm-1.0.3/bin
-# Tue, 07 Mar 2017 20:37:59 GMT
+# Mon, 03 Apr 2017 19:54:58 GMT
+WORKDIR /apache-storm-1.1.0
+# Mon, 03 Apr 2017 19:54:58 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/apache-storm-1.1.0/bin
+# Mon, 03 Apr 2017 19:54:59 GMT
 COPY file:d38c65658d07f922df720b8b043c42b170c1ac8356380e4bb8fe8934403fb0d8 in / 
-# Tue, 07 Mar 2017 20:37:59 GMT
+# Mon, 03 Apr 2017 19:55:00 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -77,11 +77,11 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Tue, 07 Mar 2017 20:39:50 GMT  
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b148bec147a330e25474da02a290e14292faed63ccf43648d11189b08829b3c`  
-		Last Modified: Tue, 07 Mar 2017 20:40:05 GMT  
-		Size: 190.8 MB (190826752 bytes)  
+	-	`sha256:ccd47270d8a89b2a43ed9addddc2f91b3ebd7ebc1cc1aeae6f2d010aa3668db4`  
+		Last Modified: Mon, 03 Apr 2017 19:57:27 GMT  
+		Size: 83.4 MB (83409109 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9af136ae2fdb95922f133b9785e6156dc1bb61672686df4cf8d3fe7514754ff3`  
-		Last Modified: Tue, 07 Mar 2017 20:39:51 GMT  
-		Size: 414.0 B  
+	-	`sha256:4614ef8762a228a437cfc56a9738c0334f8325584979caf8f4e5e925d06abb6f`  
+		Last Modified: Mon, 03 Apr 2017 19:57:19 GMT  
+		Size: 413.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
