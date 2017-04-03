@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:b4d7a935515ed8f815caba471c0f0ad97f568cf30f7ef7a620dfd289ba5d7e72`
 - Created: `2017-03-22T22:06:51.747772099Z`
+- Virtual Size: ~ 548.50 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["php-fpm"]`
