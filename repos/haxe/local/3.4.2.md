@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:b12e8819a2034effd891f2d5735b4baacf9cc2c8ad2b08daf259be7048e01b08`
 - Created: `2017-03-23T18:58:50.680050902Z`
+- Virtual Size: ~ 321.47 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["haxe"]`
 - Environment:
