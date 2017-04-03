@@ -4,6 +4,8 @@
 
 - Image ID: `sha256:3b83d9104a4c4ccf76433756ecdf4df4355c52f14a2ad109e2aae15444b63339`
 - Created: `2017-03-07T21:11:23.871826862Z`
+- Virtual Size: ~ 128.50 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["zkServer.sh","start-foreground"]`
