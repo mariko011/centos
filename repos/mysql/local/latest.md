@@ -2,8 +2,10 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5faba1a71ec40108975684d095f6bac32d6db87bc55576e09deb559fbafda213`
-- Created: `2017-03-21T21:53:32.983892123Z`
+- Image ID: `sha256:9546ca122d3ac7a3853c0a0cca4074a65c418239bc1bd97009e1b26f5f1552c9`
+- Created: `2017-03-30T21:44:22.115799583Z`
+- Virtual Size: ~ 406.97 Mb  
+  (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["mysqld"]`
