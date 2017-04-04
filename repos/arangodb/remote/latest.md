@@ -1,7 +1,7 @@
 ## `arangodb:latest`
 
 ```console
-$ docker pull arangodb@sha256:2a651c317aad33c3be3566852890951f8bfd489b3524bc8a5a120d1531f0c8d0
+$ docker pull arangodb@sha256:2c9e98952e7cdcfc3abaa8f6e22b60994a1dd9fceb4d57223116959ecfb3e461
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull arangodb@sha256:2a651c317aad33c3be3566852890951f8bfd489b3524bc8a5a
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **127.5 MB (127503879 bytes)**  
+-	Total Size: **127.5 MB (127504727 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b4c460a4e4583a6282e40565745920b4fc7ba17020fb05d6e5b2b9f552794769`
+-	Image ID: `sha256:7041b2cab21355242b870a1ac5a6565d56dd922e1fb4bb0099c1fddf55b2a7d0`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["arangod"]`
 
@@ -28,33 +28,33 @@ MAINTAINER Frank Celler <info@arangodb.com>
 ENV ARCHITECTURE=amd64
 # Tue, 21 Mar 2017 20:07:11 GMT
 ENV DEB_PACKAGE_VERSION=1
-# Tue, 28 Mar 2017 16:55:46 GMT
-ENV ARANGO_VERSION=3.1.16
-# Tue, 28 Mar 2017 16:55:46 GMT
+# Tue, 04 Apr 2017 19:37:59 GMT
+ENV ARANGO_VERSION=3.1.17
+# Tue, 04 Apr 2017 19:37:59 GMT
 ENV ARANGO_URL=https://www.arangodb.com/repositories/arangodb31/Debian_8.0
-# Tue, 28 Mar 2017 16:55:47 GMT
-ENV ARANGO_PACKAGE=arangodb3-3.1.16-1_amd64.deb
-# Tue, 28 Mar 2017 16:55:47 GMT
-ENV ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb31/Debian_8.0/amd64/arangodb3-3.1.16-1_amd64.deb
-# Tue, 28 Mar 2017 16:55:47 GMT
-ENV ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb31/Debian_8.0/amd64/arangodb3-3.1.16-1_amd64.deb.asc
-# Tue, 28 Mar 2017 16:55:48 GMT
+# Tue, 04 Apr 2017 19:37:59 GMT
+ENV ARANGO_PACKAGE=arangodb3-3.1.17-1_amd64.deb
+# Tue, 04 Apr 2017 19:38:00 GMT
+ENV ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb31/Debian_8.0/amd64/arangodb3-3.1.17-1_amd64.deb
+# Tue, 04 Apr 2017 19:38:00 GMT
+ENV ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb31/Debian_8.0/amd64/arangodb3-3.1.17-1_amd64.deb.asc
+# Tue, 04 Apr 2017 19:38:02 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys CD8CB0F1E0AD5B52E93F41E7EA93F5E56E751E9B
-# Tue, 28 Mar 2017 16:56:01 GMT
+# Tue, 04 Apr 2017 19:38:13 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends         libjemalloc1 	libsnappy1         ca-certificates         pwgen         curl     &&     rm -rf /var/lib/apt/lists/*
-# Tue, 28 Mar 2017 16:56:02 GMT
+# Tue, 04 Apr 2017 19:38:14 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 28 Mar 2017 16:56:28 GMT
+# Tue, 04 Apr 2017 19:38:40 GMT
 RUN curl -O ${ARANGO_SIGNATURE_URL} &&           curl -O ${ARANGO_PACKAGE_URL} &&             gpg --verify ${ARANGO_PACKAGE}.asc &&     (echo arangodb3 arangodb3/password password test | debconf-set-selections) &&     (echo arangodb3 arangodb3/password_again password test | debconf-set-selections) &&     DEBIAN_FRONTEND="noninteractive" dpkg -i ${ARANGO_PACKAGE} &&     rm -rf /var/lib/arangodb3/* &&     sed -ri         -e 's!127\.0\.0\.1!0.0.0.0!g'         -e 's!^(file\s*=).*!\1 -!'         -e 's!^#\s*uid\s*=.*!uid = arangodb!'         -e 's!^#\s*gid\s*=.*!gid = arangodb!'         /etc/arangodb3/arangod.conf     &&     DEBIAN_FRONTEND="noninteractive" apt-get purge -y --auto-remove ca-certificates &&     rm -f ${ARANGO_PACKAGE}*
-# Tue, 28 Mar 2017 16:56:29 GMT
+# Tue, 04 Apr 2017 19:38:40 GMT
 VOLUME [/var/lib/arangodb3 /var/lib/arangodb3-apps]
-# Tue, 28 Mar 2017 16:56:30 GMT
+# Tue, 04 Apr 2017 19:38:41 GMT
 COPY file:9f20ed9a2181af8ddc12371a0082e7645aa20b1008b5f484851bcc399e64801e in /entrypoint.sh 
-# Tue, 28 Mar 2017 16:56:30 GMT
+# Tue, 04 Apr 2017 19:38:42 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 28 Mar 2017 16:56:31 GMT
+# Tue, 04 Apr 2017 19:38:42 GMT
 EXPOSE 8529/tcp
-# Tue, 28 Mar 2017 16:56:31 GMT
+# Tue, 04 Apr 2017 19:38:43 GMT
 CMD ["arangod"]
 ```
 
@@ -63,23 +63,23 @@ CMD ["arangod"]
 		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
 		Size: 51.4 MB (51438476 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ac0a5d02441b53b366540186b18899303d9d51767934cb80704f6c5b553ec04`  
-		Last Modified: Tue, 28 Mar 2017 16:57:32 GMT  
-		Size: 7.4 KB (7371 bytes)  
+	-	`sha256:fe7f2fa1dd292874c61abd29a1b5c4d383a380fcdb3555bb66ad38de28828330`  
+		Last Modified: Tue, 04 Apr 2017 19:39:44 GMT  
+		Size: 7.4 KB (7369 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:671731893b6cf5ea5e39c6b955fafbae7988ec7b6043a6f927f94b87cf458522`  
-		Last Modified: Tue, 28 Mar 2017 16:57:34 GMT  
-		Size: 6.8 MB (6763588 bytes)  
+	-	`sha256:7fb31c57713a4f4eeb070813f9f87564a4f023bc60519e3c9f3db8a6587debf9`  
+		Last Modified: Tue, 04 Apr 2017 19:39:46 GMT  
+		Size: 6.8 MB (6763609 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fd42e8d41c5e9cd0b5be231366b9c9340cfcb0b4b2101b2e63818360bfd5132`  
-		Last Modified: Tue, 28 Mar 2017 16:57:31 GMT  
-		Size: 114.0 B  
+	-	`sha256:c71392c20f402fab49fe2d6ed50d4398e1242d69aa4167bf34b22b3acd055983`  
+		Last Modified: Tue, 04 Apr 2017 19:39:43 GMT  
+		Size: 113.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fd06f457ac15a053602afac47593bc9cdb78c9424b5d4c704e0719a0e07c1409`  
-		Last Modified: Tue, 28 Mar 2017 16:57:49 GMT  
-		Size: 69.3 MB (69292896 bytes)  
+	-	`sha256:5f70a5a22c28060813d9a3840a0a9d7430e5dc2593b5522627f4ab6fd575473d`  
+		Last Modified: Tue, 04 Apr 2017 19:40:08 GMT  
+		Size: 69.3 MB (69293727 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f9de2689f70a2aed1afbe5c2fbe32f5f6053fe491fd24bea6e42a2b3e6482e7f`  
-		Last Modified: Tue, 28 Mar 2017 16:57:31 GMT  
-		Size: 1.4 KB (1434 bytes)  
+	-	`sha256:f35cc72ef6f6de87a47f2b489c20c422416c70e9fd9476430b411fb3ef01696b`  
+		Last Modified: Tue, 04 Apr 2017 19:39:44 GMT  
+		Size: 1.4 KB (1433 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
