@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a34210862546ce23a172db6609661a066379d37e91a60352dbdbaf16354335e8`
-- Created: `2017-03-22T17:59:50.415767796Z`
+- Image ID: `sha256:bf5bba4c5f12027a544951e7f8ca25c4619fa48e9693e619d3f9abf888550489`
+- Created: `2017-04-03T21:40:03.035844006Z`
 - Virtual Size: ~ 1.16 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,9 +22,9 @@
   - `OPENSSL_VERSION=1.1.0e-1`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.0.42`
-  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.42/bin/apache-tomcat-8.0.42.tar.gz`
-  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.42/bin/apache-tomcat-8.0.42.tar.gz.asc`
+  - `TOMCAT_VERSION=8.0.43`
+  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.43/bin/apache-tomcat-8.0.43.tar.gz`
+  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.43/bin/apache-tomcat-8.0.43.tar.gz.asc`
   - `XWIKI_VERSION=8.4.4`
   - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/enterprise/xwiki-enterprise-web/8.4.4`
   - `XWIKI_DOWNLOAD_SHA256=b414edb4527e3d8b27c40a8c3f2f09423980de7963207b7dc89da71d14e7fb23`
@@ -1560,11 +1560,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/grep/2.20-4.1/
 - https://sources.debian.net/src/grep/2.20-4.1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gst-plugins-base1.0=1.4.4-2`
+### `dpkg` source package: `gst-plugins-base1.0=1.4.4-2+deb8u1`
 
 Binary Packages:
 
-- `libgstreamer-plugins-base1.0-0:amd64=1.4.4-2`
+- `libgstreamer-plugins-base1.0-0:amd64=1.4.4-2+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright`)
 
@@ -1578,22 +1578,22 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gst-plugins-base1.0=1.4.4-2
-'http://deb.debian.org/debian/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.4.4-2.dsc' gst-plugins-base1.0_1.4.4-2.dsc 3855 SHA256:e4c6a60f142225d568b7b96d1b0bafe2cc8fb7b2263b09f4a0544c3d18fbc71f
-'http://deb.debian.org/debian/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.4.4.orig.tar.xz' gst-plugins-base1.0_1.4.4.orig.tar.xz 2632996 SHA256:49cd9e8f23c416b1607b43837a09833fa03e0106929d81ead2ddfde6c0ade44b
-'http://deb.debian.org/debian/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.4.4-2.debian.tar.xz' gst-plugins-base1.0_1.4.4-2.debian.tar.xz 39436 SHA256:41a9e150d9c8177f1a53f4aca668fd2ea77456ccfed9adc81e420fc5fe4aa2e2
+$ apt-get source -qq --print-uris gst-plugins-base1.0=1.4.4-2+deb8u1
+'http://security.debian.org/pool/updates/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.4.4-2+deb8u1.dsc' gst-plugins-base1.0_1.4.4-2+deb8u1.dsc 3922 SHA256:9027629b9e790cef343b5effd757aa051f00293082e979b899ed9cefb6c24263
+'http://security.debian.org/pool/updates/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.4.4.orig.tar.xz' gst-plugins-base1.0_1.4.4.orig.tar.xz 2632996 SHA256:49cd9e8f23c416b1607b43837a09833fa03e0106929d81ead2ddfde6c0ade44b
+'http://security.debian.org/pool/updates/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.4.4-2+deb8u1.debian.tar.xz' gst-plugins-base1.0_1.4.4-2+deb8u1.debian.tar.xz 41864 SHA256:84f294f7ec18997ff2eef38b338ee33576584d016ebb9979fbce418a146f2ece
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/gst-plugins-base1.0/1.4.4-2/
-- https://sources.debian.net/src/gst-plugins-base1.0/1.4.4-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gst-plugins-base1.0/1.4.4-2+deb8u1/
+- https://sources.debian.net/src/gst-plugins-base1.0/1.4.4-2+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gstreamer1.0=1.4.4-2`
+### `dpkg` source package: `gstreamer1.0=1.4.4-2+deb8u1`
 
 Binary Packages:
 
-- `libgstreamer1.0-0:amd64=1.4.4-2`
+- `libgstreamer1.0-0:amd64=1.4.4-2+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libgstreamer1.0-0/copyright`)
 
@@ -1606,16 +1606,16 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer1.0-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gstreamer1.0=1.4.4-2
-'http://deb.debian.org/debian/pool/main/g/gstreamer1.0/gstreamer1.0_1.4.4-2.dsc' gstreamer1.0_1.4.4-2.dsc 3093 SHA256:f3e34dda8697e40cb52a1f09444ba847bf2b79ca7516d1e6050e0b2da28288ef
-'http://deb.debian.org/debian/pool/main/g/gstreamer1.0/gstreamer1.0_1.4.4.orig.tar.xz' gstreamer1.0_1.4.4.orig.tar.xz 3323860 SHA256:f0e305d91a93d05bf9e332cd4256ca07d77f5186a4d73847b7ae6db218f2c237
-'http://deb.debian.org/debian/pool/main/g/gstreamer1.0/gstreamer1.0_1.4.4-2.debian.tar.xz' gstreamer1.0_1.4.4-2.debian.tar.xz 39756 SHA256:0f02456a19b92cf42870cd12b951a14944fd347b539541e7def497ab76de6744
+$ apt-get source -qq --print-uris gstreamer1.0=1.4.4-2+deb8u1
+'http://security.debian.org/pool/updates/main/g/gstreamer1.0/gstreamer1.0_1.4.4-2+deb8u1.dsc' gstreamer1.0_1.4.4-2+deb8u1.dsc 3160 SHA256:bdcfa67dc38f142f94e7708dc469088f5efad2eb32a85289ab08635c2a3187a3
+'http://security.debian.org/pool/updates/main/g/gstreamer1.0/gstreamer1.0_1.4.4.orig.tar.xz' gstreamer1.0_1.4.4.orig.tar.xz 3323860 SHA256:f0e305d91a93d05bf9e332cd4256ca07d77f5186a4d73847b7ae6db218f2c237
+'http://security.debian.org/pool/updates/main/g/gstreamer1.0/gstreamer1.0_1.4.4-2+deb8u1.debian.tar.xz' gstreamer1.0_1.4.4-2+deb8u1.debian.tar.xz 40548 SHA256:7272d846b7b1cc6de83de2eafe878b51df79d4e88f8a2d3d4b38936e847b9131
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/gstreamer1.0/1.4.4-2/
-- https://sources.debian.net/src/gstreamer1.0/1.4.4-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gstreamer1.0/1.4.4-2+deb8u1/
+- https://sources.debian.net/src/gstreamer1.0/1.4.4-2+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gtk+2.0=2.24.25-3+deb8u1`
 
