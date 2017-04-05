@@ -560,14 +560,8 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.27~72-g88d82a3+dfsg-1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~72-g88d82a3+dfsg-1.dsc' cyrus-sasl2_2.1.27~72-g88d82a3+dfsg-1.dsc 3264 SHA256:9294e641367563534348e136100305a3eeefe74f597bd27cb5252c62059a81bf
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~72-g88d82a3+dfsg.orig.tar.xz' cyrus-sasl2_2.1.27~72-g88d82a3+dfsg.orig.tar.xz 687336 SHA256:ca36be5b3d4540ba902ee75f46c6a796fa4fc10590c75a4abaf65593a09e7bf0
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~72-g88d82a3+dfsg-1.debian.tar.xz' cyrus-sasl2_2.1.27~72-g88d82a3+dfsg-1.debian.tar.xz 94076 SHA256:a17ba54371a0838ca38e38afa367ed077024b9191471fdb6841d9f1d14f82086
-```
 
 ### `dpkg` source package: `dash=0.5.8-2.3ubuntu1`
 
@@ -4106,13 +4100,8 @@ Licenses: (parsed from: `/usr/share/doc/x11-common/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris xorg=1:7.7+16ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xorg/xorg_7.7+16ubuntu2.dsc' xorg_7.7+16ubuntu2.dsc 2073 SHA256:06be90017a379085d301754beda083c2453db2b062fc4af84ac17619e92cd04f
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xorg/xorg_7.7+16ubuntu2.tar.gz' xorg_7.7+16ubuntu2.tar.gz 293797 SHA256:c344789de6e4f82ccaecfd5c88aefc8817c2702ce10b2a856aa85484f0fdc8c9
-```
 
 ### `dpkg` source package: `xtrans=1.3.5-1`
 
