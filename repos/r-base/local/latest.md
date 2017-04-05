@@ -2772,14 +2772,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.20.0-1
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.20.0-1.dsc' nghttp2_1.20.0-1.dsc 2275 SHA256:67e1a8358707543cb56e7b80f2b9f4d3edda53134b430b2ba9c434e8e30d210d
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.20.0.orig.tar.bz2' nghttp2_1.20.0.orig.tar.bz2 1802763 SHA256:fb29d0500b194f11680203aed21aafab241063ec1397cc51ab5cc0957341141b
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.20.0-1.debian.tar.xz' nghttp2_1.20.0-1.debian.tar.xz 11864 SHA256:4dfab6f2492dff1efef43ae5100194587fb10ce0e4987f95eddc55610aa42f2f
-```
 
 ### `dpkg` source package: `nlme=3.1.131-2`
 
@@ -3403,14 +3397,8 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-survival/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris survival=2.41-2-1
-'http://http.debian.net/debian/pool/main/s/survival/survival_2.41-2-1.dsc' survival_2.41-2-1.dsc 1669 SHA256:a96cc9c7625f255b81be1572646645dd1d55a9f7bb8a2394c126ce38cfecc102
-'http://http.debian.net/debian/pool/main/s/survival/survival_2.41-2.orig.tar.gz' survival_2.41-2.orig.tar.gz 4990108 SHA256:31756d1957080fc63710e762bfb4545689d443f2f9d2ea24d111eb55496afffc
-'http://http.debian.net/debian/pool/main/s/survival/survival_2.41-2-1.diff.gz' survival_2.41-2-1.diff.gz 3434 SHA256:f212c64a6f63ded5fcb432cb7a5949e40daf6520ee335f2c170d5fd3e819a5a9
-```
 
 ### `dpkg` source package: `systemd=232-19`
 
@@ -3724,15 +3712,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris util-linux=2.29.1-1
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.29.1-1.dsc' util-linux_2.29.1-1.dsc 3918 SHA256:48c9fed9d00153b521bb309fe096e0350244a3593fddb2b758e728a742363bd3
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.29.1.orig.tar.xz' util-linux_2.29.1.orig.tar.xz 4278756 SHA256:0ce40600b934ec2fecfa6bfc4efe6982d051ba96c2832b05201347aec582f54f
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.29.1-1.debian.tar.xz' util-linux_2.29.1-1.debian.tar.xz 73672 SHA256:55f8d1d05c8beab6867cd298e09076e419d97fa9a728dca0580cf79de2a4fb67
+'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.29.1-1.dsc' util-linux_2.29.1-1.dsc 3918 SHA256:48c9fed9d00153b521bb309fe096e0350244a3593fddb2b758e728a742363bd3
+'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.29.1.orig.tar.xz' util-linux_2.29.1.orig.tar.xz 4278756 SHA256:0ce40600b934ec2fecfa6bfc4efe6982d051ba96c2832b05201347aec582f54f
+'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.29.1-1.debian.tar.xz' util-linux_2.29.1-1.debian.tar.xz 73672 SHA256:55f8d1d05c8beab6867cd298e09076e419d97fa9a728dca0580cf79de2a4fb67
 ```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/util-linux/2.29.1-1/
-- https://sources.debian.net/src/util-linux/2.29.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `vim=2:8.0.0197-3`
 
