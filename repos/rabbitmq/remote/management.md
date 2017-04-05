@@ -1,7 +1,7 @@
 ## `rabbitmq:management`
 
 ```console
-$ docker pull rabbitmq@sha256:b592bfd7047ec18aaaef6cfebde0a76909ac6fedfb90ed1fec2cfe2fe84dc958
+$ docker pull rabbitmq@sha256:e312752a025105a27ce3cf4e0ce01333fb26912a9aa182099fda866e5653438e
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull rabbitmq@sha256:b592bfd7047ec18aaaef6cfebde0a76909ac6fedfb90ed1fec
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.3 MB (86338434 bytes)**  
+-	Total Size: **86.3 MB (86338440 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f349336a0a49296091c4c82369bcd67533afb51391ba3e622579aeacc97d0bdf`
+-	Image ID: `sha256:e20aa0af7e50673e8bb4d29f18806f422b81da0944927548d6ad42d2b3566c52`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -58,19 +58,19 @@ VOLUME [/var/lib/rabbitmq]
 RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
 # Thu, 30 Mar 2017 22:06:58 GMT
 RUN ln -sf /usr/lib/rabbitmq/lib/rabbitmq_server-$RABBITMQ_VERSION/plugins /plugins
-# Thu, 30 Mar 2017 22:06:59 GMT
-COPY file:d113d7e85a6c3d8fcb33e2c1d33a5fa7e3335c73501b8e577c53c0462198a3ff in /usr/local/bin/ 
-# Thu, 30 Mar 2017 22:07:01 GMT
+# Tue, 04 Apr 2017 23:46:46 GMT
+COPY file:164642fc8f37ecbaa9646a6fff6e39f28846d3db74fe38df7ca7d0054ba58765 in /usr/local/bin/ 
+# Tue, 04 Apr 2017 23:46:47 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Thu, 30 Mar 2017 22:07:01 GMT
+# Tue, 04 Apr 2017 23:46:48 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 30 Mar 2017 22:07:02 GMT
+# Tue, 04 Apr 2017 23:46:49 GMT
 EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
-# Thu, 30 Mar 2017 22:07:03 GMT
+# Tue, 04 Apr 2017 23:46:50 GMT
 CMD ["rabbitmq-server"]
-# Thu, 30 Mar 2017 22:07:06 GMT
+# Tue, 04 Apr 2017 23:46:54 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Thu, 30 Mar 2017 22:07:07 GMT
+# Tue, 04 Apr 2017 23:46:54 GMT
 EXPOSE 15671/tcp 15672/tcp
 ```
 
@@ -123,15 +123,15 @@ EXPOSE 15671/tcp 15672/tcp
 		Last Modified: Thu, 30 Mar 2017 22:07:48 GMT  
 		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f8f395dedd39ae17421733f0cfca74404d5e3852d900a1265c4dd9de9afe324`  
-		Last Modified: Thu, 30 Mar 2017 22:07:48 GMT  
-		Size: 3.0 KB (3008 bytes)  
+	-	`sha256:33a2109a95717f78024276212d9f88c60fce8e2ec45ecfbea4dea329e158ed63`  
+		Last Modified: Tue, 04 Apr 2017 23:47:24 GMT  
+		Size: 3.0 KB (3017 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:837e26ae94ed786c8f3d9a10368095dc8dc9a7d44dad9fe14674d418003ded85`  
-		Last Modified: Thu, 30 Mar 2017 22:07:48 GMT  
-		Size: 120.0 B  
+	-	`sha256:12afb0156a1a4439f30067849e62f17e2cdae621bf957065b1f39590a62c0d10`  
+		Last Modified: Tue, 04 Apr 2017 23:47:24 GMT  
+		Size: 119.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c696706a5280b74dfeb06c4bddc294fc7c500ed4fed7b9dcffc9dfd086ddc09`  
-		Last Modified: Thu, 30 Mar 2017 22:09:20 GMT  
-		Size: 188.0 B  
+	-	`sha256:1c96b5e1acc131dd99a3e5d2db5c94157982bb824bc8363feeba355c7f6bfa16`  
+		Last Modified: Tue, 04 Apr 2017 23:48:48 GMT  
+		Size: 186.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
