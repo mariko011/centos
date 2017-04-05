@@ -145,18 +145,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4~rc2
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4~rc2.dsc' apt_1.4~rc2.dsc 2557 SHA256:efc18e5992fea1b40a2d9f54cbfa122cfcd1493b3c278dd3f41f1ad6da67caf7
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4~rc2.tar.xz' apt_1.4~rc2.tar.xz 2074384 SHA256:0460c1539a7d7428bc5ddfe7756f83bd5c6009c6374316ac9f7591b6db4bbc2b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.4~rc2/
-- https://sources.debian.net/src/apt/1.4~rc2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -248,18 +238,8 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-files=9.8
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.8.dsc' base-files_9.8.dsc 1067 SHA256:c9cf7016ec5f4e067ad98b968af5649b191c64766b2875d0f4ca91e01f87d1eb
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.8.tar.xz' base-files_9.8.tar.xz 53604 SHA256:43c7fb8725aa24b7e564139030c1f8c0d4066b4bc896124b30fca5d82fc1ec3f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/base-files/9.8/
-- https://sources.debian.net/src/base-files/9.8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -704,18 +684,8 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris debianutils=4.8.1
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.1.dsc' debianutils_4.8.1.dsc 1693 SHA256:0f187e087a9c96a70e672f58fa324d4b65f60f1e13ee8219de7e58f061ae7c9e
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.1.tar.xz' debianutils_4.8.1.tar.xz 156072 SHA256:2c395c0bdcfe89de30828b1d25cc5549ded5225a6d3625fbcb2cc0881ef5f026
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/debianutils/4.8.1/
-- https://sources.debian.net/src/debianutils/4.8.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `diffutils=1:3.5-3`
 
@@ -2367,19 +2337,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.20.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.20.0-1.dsc' nghttp2_1.20.0-1.dsc 2275 SHA256:67e1a8358707543cb56e7b80f2b9f4d3edda53134b430b2ba9c434e8e30d210d
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.20.0.orig.tar.bz2' nghttp2_1.20.0.orig.tar.bz2 1802763 SHA256:fb29d0500b194f11680203aed21aafab241063ec1397cc51ab5cc0957341141b
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.20.0-1.debian.tar.xz' nghttp2_1.20.0-1.debian.tar.xz 11864 SHA256:4dfab6f2492dff1efef43ae5100194587fb10ce0e4987f95eddc55610aa42f2f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.20.0-1/
-- https://sources.debian.net/src/nghttp2/1.20.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `nspr=2:4.12-6`
 
