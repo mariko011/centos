@@ -49,6 +49,7 @@ for repo in "${repos[@]}"; do
 	fi
 	rm -rf "repos/$repo/remote"
 	mkdir -p "repos/$repo/remote"
+	./generate-readme.sh "$repo" > "repos/$repo/README.md"
 	{
 		echo "<!-- THIS FILE IS GENERATED VIA '$0' -->"
 		echo
