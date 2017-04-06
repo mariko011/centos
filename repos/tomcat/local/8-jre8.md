@@ -1,10 +1,10 @@
-# `tomcat:8.0.42-jre8`
+# `tomcat:8.0.43-jre8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:63fd6d89df3370fd4297b58bd4b4396f894e78f4c2a5399dd2915f6792144e63`
-- Created: `2017-03-22T17:48:16.007046704Z`
-- Virtual Size: ~ 366.84 Mb  
+- Image ID: `sha256:7ae8f3e005c49aa7ed4675272e4e9e9fdf37ff75f4d0a098dc7d9bb639eedc0f`
+- Created: `2017-04-03T20:03:07.663881558Z`
+- Virtual Size: ~ 366.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -21,9 +21,9 @@
   - `OPENSSL_VERSION=1.1.0e-1`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.0.42`
-  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.42/bin/apache-tomcat-8.0.42.tar.gz`
-  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.42/bin/apache-tomcat-8.0.42.tar.gz.asc`
+  - `TOMCAT_VERSION=8.0.43`
+  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.43/bin/apache-tomcat-8.0.43.tar.gz`
+  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.43/bin/apache-tomcat-8.0.43.tar.gz.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
