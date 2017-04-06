@@ -1,7 +1,7 @@
 ## `piwik:latest`
 
 ```console
-$ docker pull piwik@sha256:62ce4ba8577079b126536359496598161d311ce0761ef9616ff1001a212fba0a
+$ docker pull piwik@sha256:765fc13f038f5b3be191e13f6caf65b947035073ebed48faeaf6fe2c3623fdeb
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull piwik@sha256:62ce4ba8577079b126536359496598161d311ce0761ef9616ff10
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **185.1 MB (185141590 bytes)**  
+-	Total Size: **185.9 MB (185879202 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c875f068bb320db3fbf58df962da9ce3336100f3048cf6b6479674ed2464dd0b`
+-	Image ID: `sha256:10795a6a84e8cb6fd27520b0afeb6fc6aeda74e08ae1d75d3042076cf0f29fe2`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -72,21 +72,21 @@ RUN apt-get update && apt-get install -y       libjpeg-dev       libfreetype6-de
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/  	&& docker-php-ext-install -j$(nproc) gd mbstring mysql pdo_mysql zip ldap opcache
 # Tue, 21 Mar 2017 23:38:14 GMT
 RUN pecl install APCu geoip
-# Tue, 21 Mar 2017 23:38:15 GMT
-ENV PIWIK_VERSION=3.0.2
-# Tue, 21 Mar 2017 23:38:23 GMT
+# Thu, 06 Apr 2017 17:10:34 GMT
+ENV PIWIK_VERSION=3.0.3
+# Thu, 06 Apr 2017 17:10:43 GMT
 RUN curl -fsSL -o piwik.tar.gz       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz"  && curl -fsSL -o piwik.tar.gz.asc       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237  && gpg --batch --verify piwik.tar.gz.asc piwik.tar.gz  && rm -r "$GNUPGHOME" piwik.tar.gz.asc  && tar -xzf piwik.tar.gz -C /usr/src/  && rm piwik.tar.gz
-# Tue, 21 Mar 2017 23:38:23 GMT
+# Thu, 06 Apr 2017 17:10:44 GMT
 COPY file:c38913b1c220a089fa0b50e33e71a81a441978dfb47dd6b00cf105d42f87f82b in /usr/local/etc/php/php.ini 
-# Tue, 21 Mar 2017 23:38:25 GMT
+# Thu, 06 Apr 2017 17:10:46 GMT
 RUN curl -fsSL -o /usr/src/piwik/misc/GeoIPCity.dat.gz http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz  && gunzip /usr/src/piwik/misc/GeoIPCity.dat.gz
-# Tue, 21 Mar 2017 23:38:26 GMT
+# Thu, 06 Apr 2017 17:10:47 GMT
 COPY file:624ec542e8b52694362740314ac6948ac2d59a5d302df84808cc0cfbddea1e59 in /entrypoint.sh 
-# Tue, 21 Mar 2017 23:38:26 GMT
+# Thu, 06 Apr 2017 17:10:47 GMT
 VOLUME [/var/www/html]
-# Tue, 21 Mar 2017 23:38:26 GMT
+# Thu, 06 Apr 2017 17:10:48 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 21 Mar 2017 23:38:27 GMT
+# Thu, 06 Apr 2017 17:10:48 GMT
 CMD ["php-fpm"]
 ```
 
@@ -139,19 +139,19 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 24 Mar 2017 00:01:25 GMT  
 		Size: 46.6 KB (46627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:106a9e1cf3f0bd425d7a0fb986dee87f8c43aa122797f999560ea68937ff35ef`  
-		Last Modified: Fri, 24 Mar 2017 00:01:38 GMT  
-		Size: 14.1 MB (14095121 bytes)  
+	-	`sha256:d0155de07f35408d770398fb05c929b2fd3f9311ddd76b232a3d7ca3b325fed9`  
+		Last Modified: Thu, 06 Apr 2017 17:11:15 GMT  
+		Size: 14.8 MB (14837012 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a37a6ed2d72b5099c9cc6bfbeb39d8831b46628676b14813492ee7728bdc6d2`  
-		Last Modified: Fri, 24 Mar 2017 00:01:24 GMT  
+	-	`sha256:8febbb93c9bbdbb331b7a9627208850a367cf92849528075c12865921d8f53aa`  
+		Last Modified: Thu, 06 Apr 2017 17:11:11 GMT  
 		Size: 275.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ca42b813cda2ff32742d75d95ecc96d721b3ce1d79816bc8abc2aaafec9ed04`  
-		Last Modified: Fri, 24 Mar 2017 00:01:27 GMT  
-		Size: 12.4 MB (12424348 bytes)  
+	-	`sha256:e2d6c48416eea7b1b6bdeb8969c5aeb6221cd0bfe8b64f9cefd0c64cc76db97a`  
+		Last Modified: Thu, 06 Apr 2017 17:11:13 GMT  
+		Size: 12.4 MB (12420070 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d44f1f9d128af6a624588869ecbe54dbf033bea0298c462c6d10a8ac8b603b8`  
-		Last Modified: Fri, 24 Mar 2017 00:01:24 GMT  
-		Size: 226.0 B  
+	-	`sha256:065ed0cb818a841703f785299fdfe14663a129ad57b87d9338a69bbab8ddff78`  
+		Last Modified: Thu, 06 Apr 2017 17:11:11 GMT  
+		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
