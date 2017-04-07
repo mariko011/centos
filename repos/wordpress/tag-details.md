@@ -66,6 +66,22 @@
 -	[`wordpress:4.7-php7.1-fpm-alpine`](#wordpress47-php71-fpm-alpine)
 -	[`wordpress:4-php7.1-fpm-alpine`](#wordpress4-php71-fpm-alpine)
 -	[`wordpress:php7.1-fpm-alpine`](#wordpressphp71-fpm-alpine)
+-	[`wordpress:cli-1.1.0`](#wordpresscli-110)
+-	[`wordpress:cli-1.1`](#wordpresscli-11)
+-	[`wordpress:cli-1`](#wordpresscli-1)
+-	[`wordpress:cli`](#wordpresscli)
+-	[`wordpress:cli-1.1.0-php5.6`](#wordpresscli-110-php56)
+-	[`wordpress:cli-1.1-php5.6`](#wordpresscli-11-php56)
+-	[`wordpress:cli-1-php5.6`](#wordpresscli-1-php56)
+-	[`wordpress:cli-php5.6`](#wordpresscli-php56)
+-	[`wordpress:cli-1.1.0-php7.0`](#wordpresscli-110-php70)
+-	[`wordpress:cli-1.1-php7.0`](#wordpresscli-11-php70)
+-	[`wordpress:cli-1-php7.0`](#wordpresscli-1-php70)
+-	[`wordpress:cli-php7.0`](#wordpresscli-php70)
+-	[`wordpress:cli-1.1.0-php7.1`](#wordpresscli-110-php71)
+-	[`wordpress:cli-1.1-php7.1`](#wordpresscli-11-php71)
+-	[`wordpress:cli-1-php7.1`](#wordpresscli-1-php71)
+-	[`wordpress:cli-php7.1`](#wordpresscli-php71)
 
 ## `wordpress:4.7.3-apache`
 
@@ -10402,3 +10418,67 @@ CMD ["php-fpm"]
 		Last Modified: Mon, 20 Mar 2017 22:17:04 GMT  
 		Size: 3.1 KB (3125 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `wordpress:cli-1.1.0`
+
+**does not exist** (yet?)
+
+## `wordpress:cli-1.1`
+
+**does not exist** (yet?)
+
+## `wordpress:cli-1`
+
+**does not exist** (yet?)
+
+## `wordpress:cli`
+
+**does not exist** (yet?)
+
+## `wordpress:cli-1.1.0-php5.6`
+
+**does not exist** (yet?)
+
+## `wordpress:cli-1.1-php5.6`
+
+**does not exist** (yet?)
+
+## `wordpress:cli-1-php5.6`
+
+**does not exist** (yet?)
+
+## `wordpress:cli-php5.6`
+
+**does not exist** (yet?)
+
+## `wordpress:cli-1.1.0-php7.0`
+
+**does not exist** (yet?)
+
+## `wordpress:cli-1.1-php7.0`
+
+**does not exist** (yet?)
+
+## `wordpress:cli-1-php7.0`
+
+**does not exist** (yet?)
+
+## `wordpress:cli-php7.0`
+
+**does not exist** (yet?)
+
+## `wordpress:cli-1.1.0-php7.1`
+
+**does not exist** (yet?)
+
+## `wordpress:cli-1.1-php7.1`
+
+**does not exist** (yet?)
+
+## `wordpress:cli-1-php7.1`
+
+**does not exist** (yet?)
+
+## `wordpress:cli-php7.1`
+
+**does not exist** (yet?)
