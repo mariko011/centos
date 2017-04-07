@@ -3587,14 +3587,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-rosdistro-modules=0.6.1-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.6.1-1.dsc' python-rosdistro-modules_0.6.1-1.dsc 982 SHA256:275a329844497e5cf8b7cb8bfa37ac8e603ad9848af544ef391b2b52a4d61614
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.6.1.orig.tar.gz' python-rosdistro-modules_0.6.1.orig.tar.gz 38354 SHA256:fc8020ed3555063f172e0058e1c8adc07b719057dd5658fdd19554b648b8e856
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro-modules/python-rosdistro-modules_0.6.1-1.debian.tar.xz' python-rosdistro-modules_0.6.1-1.debian.tar.xz 1104 SHA256:a8fa5e2cb9bf5d7472c7397205f86d48b6c1888e133e88a70e82bc732fd52f66
-```
 
 ### `dpkg` source package: `python-rosdistro=0.6.1-1`
 
@@ -3606,14 +3600,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-rosdistro=0.6.1-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.6.1-1.dsc' python-rosdistro_0.6.1-1.dsc 911 SHA256:39b9464be43385192b6151a19dd2643980079555f6d4b7bc3cab0150a0a291f1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.6.1.orig.tar.gz' python-rosdistro_0.6.1.orig.tar.gz 9144 SHA256:8a49c1a95079de6f6a6543374a8a6d93dd79b4cfcc32aef073203e50a9fe487b
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdistro/python-rosdistro_0.6.1-1.debian.tar.xz' python-rosdistro_0.6.1-1.debian.tar.xz 1088 SHA256:ccd2c4a37db3e16489aeca4d1d781da3d4acf0d8010bb2985b84b478b0122c2a
-```
 
 ### `dpkg` source package: `python-rosinstall=0.7.8-1`
 
