@@ -174,14 +174,8 @@ Licenses: (parsed from: `/usr/share/doc/libbz2-1.0/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bzip2=1.0.6-8build1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-8build1.dsc' bzip2_1.0.6-8build1.dsc 2084 SHA256:f92a0b270232bc31b233b8208dc50f7ea9168f6c68ee147966131a1803a678f3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6.orig.tar.bz2' bzip2_1.0.6.orig.tar.bz2 708737 SHA256:d70a9ccd8bdf47e302d96c69fecd54925f45d9c7b966bb4ef5f56b770960afa7
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-8build1.debian.tar.bz2' bzip2_1.0.6-8build1.debian.tar.bz2 59601 SHA256:5644d650048c817bb50073bb5628d27d9c0ea424a07328967cd3f88b9103ec30
-```
 
 ### `dpkg` source package: `cdebconf=0.213ubuntu1`
 
@@ -430,14 +424,8 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.1.15-1ubuntu6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.1.15-1ubuntu6.dsc' gnupg2_2.1.15-1ubuntu6.dsc 2815 SHA256:fca1d0e148edb8bdda38972c584947490e7638067397232918ae67ceabf36fe8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.1.15.orig.tar.bz2' gnupg2_2.1.15.orig.tar.bz2 5723689 SHA256:c28c1a208f1b8ad63bdb6b88d252f6734ff4d33de6b54e38494b11d49e00ffdd
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.1.15-1ubuntu6.debian.tar.bz2' gnupg2_2.1.15-1ubuntu6.debian.tar.bz2 42239 SHA256:c63b7b237087d1ee5899897d29536d0a211549b66e49245bb30531136d57dba6
-```
 
 ### `dpkg` source package: `grep=2.27-2`
 
