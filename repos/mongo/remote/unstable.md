@@ -1,7 +1,7 @@
 ## `mongo:unstable`
 
 ```console
-$ docker pull mongo@sha256:2bd5bb27d3fab7a384425040a142c92c8e347df6136f14bc95cbc6e86fbecd25
+$ docker pull mongo@sha256:907de372a6de5f17d68514de1115f4b4af3f8373be33f7ee51a3a8edb8653494
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull mongo@sha256:2bd5bb27d3fab7a384425040a142c92c8e347df6136f14bc95cbc
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **129.7 MB (129670436 bytes)**  
+-	Total Size: **129.7 MB (129670935 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f81c67a3ba08df8b569e9b8c68403d08af569c4d644a6e855ac0f66647222c10`
+-	Image ID: `sha256:05a930854236c9ba5131807c5c781b5b43400fe07ec14e6809993ed85a460b4d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mongod"]`
 
@@ -50,15 +50,15 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y 		${MONGO_PACKAGE}=$MONGO_V
 RUN mkdir -p /data/db /data/configdb 	&& chown -R mongodb:mongodb /data/db /data/configdb
 # Mon, 03 Apr 2017 19:17:18 GMT
 VOLUME [/data/db /data/configdb]
-# Mon, 03 Apr 2017 19:17:19 GMT
-COPY file:2937c8a1eff6a8b85b5ee2c9ac2008b06df0cbd31610dc83e05902ff197ca75e in /usr/local/bin/ 
-# Mon, 03 Apr 2017 19:17:20 GMT
+# Fri, 07 Apr 2017 19:33:50 GMT
+COPY file:bebc2bb74a47750ef4a9560ce1357f3d4d9ebc276c087aeae45f51e2ab063757 in /usr/local/bin/ 
+# Fri, 07 Apr 2017 19:33:51 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Mon, 03 Apr 2017 19:17:21 GMT
+# Fri, 07 Apr 2017 19:33:52 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 03 Apr 2017 19:17:22 GMT
+# Fri, 07 Apr 2017 19:33:52 GMT
 EXPOSE 27017/tcp
-# Mon, 03 Apr 2017 19:17:22 GMT
+# Fri, 07 Apr 2017 19:33:53 GMT
 CMD ["mongod"]
 ```
 
@@ -99,11 +99,11 @@ CMD ["mongod"]
 		Last Modified: Mon, 03 Apr 2017 19:20:26 GMT  
 		Size: 140.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:822550d3ddebecb2d25b694a1fa3c5353717f7de785e4af265516d6a8f9a36c9`  
-		Last Modified: Mon, 03 Apr 2017 19:20:26 GMT  
-		Size: 2.2 KB (2196 bytes)  
+	-	`sha256:0eec2b31e2b2f749ccdccfba55cca15195399709ff7a6b037b26e9de6c119a02`  
+		Last Modified: Fri, 07 Apr 2017 19:37:07 GMT  
+		Size: 2.7 KB (2693 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8be40b7ddc3db6b60b7249582f0f4922d3cbecd6a69036254945ea1a0cbe2bb1`  
-		Last Modified: Mon, 03 Apr 2017 19:20:26 GMT  
-		Size: 118.0 B  
+	-	`sha256:dfd4e104ebe4bb017fd6a4ef2d7bb8a7c66c69efca10245d88528ac77abd5d07`  
+		Last Modified: Fri, 07 Apr 2017 19:37:07 GMT  
+		Size: 120.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
