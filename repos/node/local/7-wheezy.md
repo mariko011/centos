@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dd8e4523feb7e3912663fe4a659145f304c7dc15e81d1d755b165edeb2e4a9af`
-- Created: `2017-03-30T17:34:28.249112475Z`
+- Image ID: `sha256:7b648a643c38776582a5cc29d0c1f75545407d020b26d575e0489ba6c76c0a62`
+- Created: `2017-04-07T17:22:41.01177466Z`
 - Virtual Size: ~ 515.69 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
   - `NODE_VERSION=7.8.0`
-  - `YARN_VERSION=0.21.3`
+  - `YARN_VERSION=0.22.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -4004,19 +4004,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2017a-0+deb7u1
-'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017a-0+deb7u1.dsc' tzdata_2017a-0+deb7u1.dsc 1966 SHA256:eb659d68392643de9e23e6a490d6ab4e6f404e018503880c2708e091b56c2966
-'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017a.orig.tar.gz' tzdata_2017a.orig.tar.gz 323983 SHA256:df3a5c4d0a2cf0cde0b3f35796ccf6c9acfd598b8e70f8dece5404cd7626bbd6
-'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017a-0+deb7u1.debian.tar.xz' tzdata_2017a-0+deb7u1.debian.tar.xz 101888 SHA256:db3c4d77cfd24376b794142abca5ad305af6ca28fe5143c4d09519398a974173
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2017a-0+deb7u1/
-- https://sources.debian.net/src/tzdata/2017a-0+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ucf=3.0025+nmu3`
 
