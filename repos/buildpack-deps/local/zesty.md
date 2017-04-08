@@ -373,14 +373,8 @@ Licenses: (parsed from: `/usr/share/doc/bzip2/copyright`, `/usr/share/doc/libbz2
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bzip2=1.0.6-8build1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-8build1.dsc' bzip2_1.0.6-8build1.dsc 2084 SHA256:f92a0b270232bc31b233b8208dc50f7ea9168f6c68ee147966131a1803a678f3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6.orig.tar.bz2' bzip2_1.0.6.orig.tar.bz2 708737 SHA256:d70a9ccd8bdf47e302d96c69fecd54925f45d9c7b966bb4ef5f56b770960afa7
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.6-8build1.debian.tar.bz2' bzip2_1.0.6-8build1.debian.tar.bz2 59601 SHA256:5644d650048c817bb50073bb5628d27d9c0ea424a07328967cd3f88b9103ec30
-```
 
 ### `dpkg` source package: `bzr=2.7.0+bzr6619-7`
 
@@ -538,14 +532,8 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris curl=7.51.0-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.51.0-1ubuntu1.dsc' curl_7.51.0-1ubuntu1.dsc 2775 SHA256:d6fbcff05e94e30944fa359ed9c4349b6d55257004680acda61f791357155388
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.51.0.orig.tar.gz' curl_7.51.0.orig.tar.gz 3441753 SHA256:65b5216a6fbfa72f547eb7706ca5902d7400db9868269017a8888aa91d87977c
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.51.0-1ubuntu1.debian.tar.xz' curl_7.51.0-1ubuntu1.debian.tar.xz 30180 SHA256:284cf62266b22abc4e262e095182188c84f730d94264ae3e7e51444a4a392f71
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~72-g88d82a3+dfsg-1`
 
@@ -1144,14 +1132,8 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris glibc=2.24-7ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-7ubuntu2.dsc' glibc_2.24-7ubuntu2.dsc 8782 SHA256:7505cfbd1f7037f53bdc5671fc5ea3d3330d42134b8fe39198e7a3a9b0e519ab
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24.orig.tar.xz' glibc_2.24.orig.tar.xz 13921912 SHA256:ed71e8afd2b270f7947a2cea2457a31e1ca4fac08e2731d80edd7ec1730ec84f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-7ubuntu2.debian.tar.xz' glibc_2.24-7ubuntu2.debian.tar.xz 1012588 SHA256:5bbc62d055d97d5d5081c9d5f29a882247b6522d25dac38a61771cefa3a99efa
-```
 
 ### `dpkg` source package: `gmp=2:6.1.1+dfsg-1`
 
@@ -1166,14 +1148,8 @@ Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
 - `GPL-3`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gmp=2:6.1.1+dfsg-1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.1.1+dfsg-1.dsc' gmp_6.1.1+dfsg-1.dsc 2161 SHA256:3f501a907c0357de8e9dd5325471c409ec493ab2007cfe4e761e52fd3646fec9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.1.1+dfsg.orig.tar.xz' gmp_6.1.1+dfsg.orig.tar.xz 1802176 SHA256:1c34c3c0c89c4f1270f6e3e579e7b7f9190eca6713311f0167bb9fee5b3750ee
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.1.1+dfsg-1.debian.tar.xz' gmp_6.1.1+dfsg-1.debian.tar.xz 20600 SHA256:270a0ee22dc3da83356bf32c22d5657580c26daf931d82fa3b06ea2abdffd4ed
-```
 
 ### `dpkg` source package: `gnupg2=2.1.15-1ubuntu6`
 
@@ -1196,14 +1172,8 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.1.15-1ubuntu6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.1.15-1ubuntu6.dsc' gnupg2_2.1.15-1ubuntu6.dsc 2815 SHA256:fca1d0e148edb8bdda38972c584947490e7638067397232918ae67ceabf36fe8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.1.15.orig.tar.bz2' gnupg2_2.1.15.orig.tar.bz2 5723689 SHA256:c28c1a208f1b8ad63bdb6b88d252f6734ff4d33de6b54e38494b11d49e00ffdd
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.1.15-1ubuntu6.debian.tar.bz2' gnupg2_2.1.15-1ubuntu6.debian.tar.bz2 42239 SHA256:c63b7b237087d1ee5899897d29536d0a211549b66e49245bb30531136d57dba6
-```
 
 ### `dpkg` source package: `gnutls28=3.5.6-4ubuntu2`
 
@@ -2175,14 +2145,8 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.40.16-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.40.16-1.dsc' librsvg_2.40.16-1.dsc 2738 SHA256:d5447c5867087a53dad2ec237d21f581c22a689d8fa1e2509903c0eef9e2b398
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.40.16.orig.tar.xz' librsvg_2.40.16.orig.tar.xz 560800 SHA256:d48bcf6b03fa98f07df10332fb49d8c010786ddca6ab34cbba217684f533ff2e
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/librsvg/librsvg_2.40.16-1.debian.tar.xz' librsvg_2.40.16-1.debian.tar.xz 14296 SHA256:4618fae8afecef179c5cf5cfb7d1ca9719a7c8821457cf706656a864fcaae079
-```
 
 ### `dpkg` source package: `libselinux=2.6-3`
 
@@ -2386,14 +2350,8 @@ Licenses: (parsed from: `/usr/share/doc/libwmf-dev/copyright`, `/usr/share/doc/l
 
 - `LGPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libwmf=0.2.8.4-10.5ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwmf/libwmf_0.2.8.4-10.5ubuntu2.dsc' libwmf_0.2.8.4-10.5ubuntu2.dsc 2232 SHA256:e66258d62e85d469d1ac4513e4409e27c15953c7450c43bba91eb861166b6261
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwmf/libwmf_0.2.8.4.orig.tar.gz' libwmf_0.2.8.4.orig.tar.gz 2169375 SHA256:5b345c69220545d003ad52bfd035d5d6f4f075e65204114a9e875e84895a7cf8
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwmf/libwmf_0.2.8.4-10.5ubuntu2.debian.tar.xz' libwmf_0.2.8.4-10.5ubuntu2.debian.tar.xz 11800 SHA256:8b0660e181868a1763bf69ea6d1ac2b19986315e323e0d6df802353d3545b109
-```
 
 ### `dpkg` source package: `libx11=2:1.6.3-1ubuntu3`
 
@@ -2407,14 +2365,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libx11=2:1.6.3-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.3-1ubuntu3.dsc' libx11_1.6.3-1ubuntu3.dsc 1957 SHA256:369de90cefd133b7cb2536110682487bfec52d3899a17dddea904c1392bd2875
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.3.orig.tar.gz' libx11_1.6.3.orig.tar.gz 3105928 SHA256:0b03b9d22f4c9e59b4ba498f294e297f013cae27050dfa0f3496640200db5376
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11_1.6.3-1ubuntu3.diff.gz' libx11_1.6.3-1ubuntu3.diff.gz 42466 SHA256:02f5f206830714a5a2935ca3c536a2fee65df48ded0b8bad7289736e0c1d6331
-```
 
 ### `dpkg` source package: `libxau=1:1.0.8-1`
 

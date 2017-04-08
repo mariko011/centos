@@ -121,18 +121,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4~rc2
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4~rc2.dsc' apt_1.4~rc2.dsc 2557 SHA256:efc18e5992fea1b40a2d9f54cbfa122cfcd1493b3c278dd3f41f1ad6da67caf7
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4~rc2.tar.xz' apt_1.4~rc2.tar.xz 2074384 SHA256:0460c1539a7d7428bc5ddfe7756f83bd5c6009c6374316ac9f7591b6db4bbc2b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.4~rc2/
-- https://sources.debian.net/src/apt/1.4~rc2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -2402,19 +2392,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=232-19
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-19.dsc' systemd_232-19.dsc 4769 SHA256:b8a5a8041693654c96a03b579862c95502bbd51155f55d9e7e7f45b56a7f4eec
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-19.debian.tar.xz' systemd_232-19.debian.tar.xz 187736 SHA256:c51cb8550f3f58f745ddc1a72cdcef77b382ee14a327c4d8dfe979223fed9c29
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/systemd/232-19/
-- https://sources.debian.net/src/systemd/232-19/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 
