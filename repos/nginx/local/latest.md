@@ -1,16 +1,16 @@
-# `nginx:1.11.12`
+# `nginx:1.11.13`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5e69fe4b3c310ea91ead6008e143deca87995d0519f258008cc52e8c0a5366da`
-- Created: `2017-03-27T19:47:25.135847117Z`
-- Virtual Size: ~ 182.51 Mb  
+- Image ID: `sha256:5766334bdaa0bc37f1f0c02cb94c351f9b076bcffa042d6ce811b0fd9bc31f3b`
+- Created: `2017-04-06T16:28:51.551818943Z`
+- Virtual Size: ~ 182.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.11.12-1~jessie`
+  - `NGINX_VERSION=1.11.13-1~jessie`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1750,11 +1750,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/netbase/5.3/
 - https://sources.debian.net/src/netbase/5.3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `nginx-module-geoip=1.11.12-1~jessie`
+### `dpkg` source package: `nginx-module-geoip=1.11.13-1~jessie`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.11.12-1~jessie`
+- `nginx-module-geoip=1.11.13-1~jessie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1763,17 +1763,17 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nginx-module-geoip=1.11.12-1~jessie
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-geoip/nginx-module-geoip_1.11.12-1~jessie.dsc' nginx-module-geoip_1.11.12-1~jessie.dsc 1654 SHA256:dbfbe67bd2b6eb6ff5c1f6f9a5fc961435c98b727684b4a529d2aec890b8b3ae
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-geoip/nginx-module-geoip_1.11.12.orig.tar.gz' nginx-module-geoip_1.11.12.orig.tar.gz 979963 SHA256:2aff7f9396d1f77256efc363e1cc05ba52d40a29e6de4d9bc08aa444eea14122
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-geoip/nginx-module-geoip_1.11.12-1~jessie.debian.tar.xz' nginx-module-geoip_1.11.12-1~jessie.debian.tar.xz 3272 SHA256:c964887f2e161007501509ef87ee029257179eeb2869537c28b8acb929beed7d
+$ apt-get source -qq --print-uris nginx-module-geoip=1.11.13-1~jessie
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-geoip/nginx-module-geoip_1.11.13-1~jessie.dsc' nginx-module-geoip_1.11.13-1~jessie.dsc 1654 SHA256:72e1197e57cf53a62445b5a8cce61391e2b162dd2ed261a8c8e8dc8551abe4be
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-geoip/nginx-module-geoip_1.11.13.orig.tar.gz' nginx-module-geoip_1.11.13.orig.tar.gz 980784 SHA256:360b601ef8ed2998c80fa56a27bf3cd745c3ce18c5fb10892e6595467b1415d3
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-geoip/nginx-module-geoip_1.11.13-1~jessie.debian.tar.xz' nginx-module-geoip_1.11.13-1~jessie.debian.tar.xz 3284 SHA256:a88442cc5b74a1dbdbfe43bdca7cf5ab04a3420d549403a867babf0ab4c3e581
 ```
 
-### `dpkg` source package: `nginx-module-image-filter=1.11.12-1~jessie`
+### `dpkg` source package: `nginx-module-image-filter=1.11.13-1~jessie`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.11.12-1~jessie`
+- `nginx-module-image-filter=1.11.13-1~jessie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1782,17 +1782,17 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nginx-module-image-filter=1.11.12-1~jessie
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-image-filter/nginx-module-image-filter_1.11.12-1~jessie.dsc' nginx-module-image-filter_1.11.12-1~jessie.dsc 1728 SHA256:63a80a9b8793b1133ff8da4d7c56c86797685c5a150d9ae617919a070fc97c30
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-image-filter/nginx-module-image-filter_1.11.12.orig.tar.gz' nginx-module-image-filter_1.11.12.orig.tar.gz 979963 SHA256:2aff7f9396d1f77256efc363e1cc05ba52d40a29e6de4d9bc08aa444eea14122
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-image-filter/nginx-module-image-filter_1.11.12-1~jessie.debian.tar.xz' nginx-module-image-filter_1.11.12-1~jessie.debian.tar.xz 3256 SHA256:53afcb3d91fff81897021f1462f1d5fef720f842d632ed1013a7cbbc7f03edb4
+$ apt-get source -qq --print-uris nginx-module-image-filter=1.11.13-1~jessie
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-image-filter/nginx-module-image-filter_1.11.13-1~jessie.dsc' nginx-module-image-filter_1.11.13-1~jessie.dsc 1728 SHA256:24da92514a3451a707e908e0059a6c41a5593d6f04440ef4f3cc030778a71bc6
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-image-filter/nginx-module-image-filter_1.11.13.orig.tar.gz' nginx-module-image-filter_1.11.13.orig.tar.gz 980784 SHA256:360b601ef8ed2998c80fa56a27bf3cd745c3ce18c5fb10892e6595467b1415d3
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-image-filter/nginx-module-image-filter_1.11.13-1~jessie.debian.tar.xz' nginx-module-image-filter_1.11.13-1~jessie.debian.tar.xz 3264 SHA256:996c13f1ccb1ae31a4b4ef973a16751c2e28cec9d7d688e7917dd78860a74f3a
 ```
 
-### `dpkg` source package: `nginx-module-njs=1.11.12.0.1.9-1~jessie`
+### `dpkg` source package: `nginx-module-njs=1.11.13.0.1.10-1~jessie`
 
 Binary Packages:
 
-- `nginx-module-njs=1.11.12.0.1.9-1~jessie`
+- `nginx-module-njs=1.11.13.0.1.10-1~jessie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1801,17 +1801,17 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nginx-module-njs=1.11.12.0.1.9-1~jessie
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.11.12.0.1.9-1~jessie.dsc' nginx-module-njs_1.11.12.0.1.9-1~jessie.dsc 1666 SHA256:eb81c8f24bc6ecfdb0d75d66ab96e4b011a972c1a5f6890457feb5bea8aae1a2
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.11.12.0.1.9.orig.tar.gz' nginx-module-njs_1.11.12.0.1.9.orig.tar.gz 979963 SHA256:2aff7f9396d1f77256efc363e1cc05ba52d40a29e6de4d9bc08aa444eea14122
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.11.12.0.1.9-1~jessie.debian.tar.xz' nginx-module-njs_1.11.12.0.1.9-1~jessie.debian.tar.xz 136108 SHA256:f23627e23578ba7372cb8d504cb5ff742589a953b80d9dc1895a783cb729f403
+$ apt-get source -qq --print-uris nginx-module-njs=1.11.13.0.1.10-1~jessie
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.11.13.0.1.10-1~jessie.dsc' nginx-module-njs_1.11.13.0.1.10-1~jessie.dsc 1673 SHA256:ed671c3339c2d68a080bb77e005b16e9e08bc1e0d6b48e5a0d9ce8f86803b19a
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.11.13.0.1.10.orig.tar.gz' nginx-module-njs_1.11.13.0.1.10.orig.tar.gz 980784 SHA256:360b601ef8ed2998c80fa56a27bf3cd745c3ce18c5fb10892e6595467b1415d3
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.11.13.0.1.10-1~jessie.debian.tar.xz' nginx-module-njs_1.11.13.0.1.10-1~jessie.debian.tar.xz 139552 SHA256:0b034fb92622b00d10c6dced1be3db87f89af2d892efd6c414dfeeaa2f979c22
 ```
 
-### `dpkg` source package: `nginx-module-perl=1.11.12-1~jessie`
+### `dpkg` source package: `nginx-module-perl=1.11.13-1~jessie`
 
 Binary Packages:
 
-- `nginx-module-perl=1.11.12-1~jessie`
+- `nginx-module-perl=1.11.13-1~jessie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1820,17 +1820,17 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nginx-module-perl=1.11.12-1~jessie
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-perl/nginx-module-perl_1.11.12-1~jessie.dsc' nginx-module-perl_1.11.12-1~jessie.dsc 1642 SHA256:e90480798cf08b78d4b1fc4732b23b16e6c599e39205c32fa682b17c0d853a21
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-perl/nginx-module-perl_1.11.12.orig.tar.gz' nginx-module-perl_1.11.12.orig.tar.gz 979963 SHA256:2aff7f9396d1f77256efc363e1cc05ba52d40a29e6de4d9bc08aa444eea14122
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-perl/nginx-module-perl_1.11.12-1~jessie.debian.tar.xz' nginx-module-perl_1.11.12-1~jessie.debian.tar.xz 3352 SHA256:32ec5542576035f4acb62d5a18905c37b5ce33ce7df9db249edcbbaf656321ed
+$ apt-get source -qq --print-uris nginx-module-perl=1.11.13-1~jessie
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-perl/nginx-module-perl_1.11.13-1~jessie.dsc' nginx-module-perl_1.11.13-1~jessie.dsc 1642 SHA256:e0dfab941d8cd5577c3e5d31299688f2632f221e0b6099a2d871608b1bc00f72
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-perl/nginx-module-perl_1.11.13.orig.tar.gz' nginx-module-perl_1.11.13.orig.tar.gz 980784 SHA256:360b601ef8ed2998c80fa56a27bf3cd745c3ce18c5fb10892e6595467b1415d3
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-perl/nginx-module-perl_1.11.13-1~jessie.debian.tar.xz' nginx-module-perl_1.11.13-1~jessie.debian.tar.xz 3368 SHA256:2e958ba84e523cf8abb78dfe1f88873b52596d1e2519e6bd422df356c8672335
 ```
 
-### `dpkg` source package: `nginx-module-xslt=1.11.12-1~jessie`
+### `dpkg` source package: `nginx-module-xslt=1.11.13-1~jessie`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.11.12-1~jessie`
+- `nginx-module-xslt=1.11.13-1~jessie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1839,17 +1839,17 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nginx-module-xslt=1.11.12-1~jessie
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-xslt/nginx-module-xslt_1.11.12-1~jessie.dsc' nginx-module-xslt_1.11.12-1~jessie.dsc 1643 SHA256:ae1110ea5cdf5369cfdad91be72cbdbd82ad4a56bad6e22e1d6e5f2997d18890
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-xslt/nginx-module-xslt_1.11.12.orig.tar.gz' nginx-module-xslt_1.11.12.orig.tar.gz 979963 SHA256:2aff7f9396d1f77256efc363e1cc05ba52d40a29e6de4d9bc08aa444eea14122
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-xslt/nginx-module-xslt_1.11.12-1~jessie.debian.tar.xz' nginx-module-xslt_1.11.12-1~jessie.debian.tar.xz 3252 SHA256:c4af9778e621c7a4c1b6465d66966b3d03ce115a04a657d64e814ee2fea38313
+$ apt-get source -qq --print-uris nginx-module-xslt=1.11.13-1~jessie
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-xslt/nginx-module-xslt_1.11.13-1~jessie.dsc' nginx-module-xslt_1.11.13-1~jessie.dsc 1643 SHA256:f56a4937dbffec3bde988b77a967580f7e311f47420ffcbc0fb94cf06e20f702
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-xslt/nginx-module-xslt_1.11.13.orig.tar.gz' nginx-module-xslt_1.11.13.orig.tar.gz 980784 SHA256:360b601ef8ed2998c80fa56a27bf3cd745c3ce18c5fb10892e6595467b1415d3
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx-module-xslt/nginx-module-xslt_1.11.13-1~jessie.debian.tar.xz' nginx-module-xslt_1.11.13-1~jessie.debian.tar.xz 3260 SHA256:5a6ac3f66158a0206815958b4075855e6c2ac73faa068244d3a9a952f706a38d
 ```
 
-### `dpkg` source package: `nginx=1.11.12-1~jessie`
+### `dpkg` source package: `nginx=1.11.13-1~jessie`
 
 Binary Packages:
 
-- `nginx=1.11.12-1~jessie`
+- `nginx=1.11.13-1~jessie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1858,10 +1858,10 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nginx=1.11.12-1~jessie
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx/nginx_1.11.12-1~jessie.dsc' nginx_1.11.12-1~jessie.dsc 1502 SHA256:29dc20a87d57c5399dff2ae8c918c164bf86759a9de6dd36eb4f5d8d800b42fd
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx/nginx_1.11.12.orig.tar.gz' nginx_1.11.12.orig.tar.gz 979963 SHA256:2aff7f9396d1f77256efc363e1cc05ba52d40a29e6de4d9bc08aa444eea14122
-'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx/nginx_1.11.12-1~jessie.debian.tar.xz' nginx_1.11.12-1~jessie.debian.tar.xz 107352 SHA256:48d1fe74f5e57cfc4f4520c457081c0b689d4f65c7e6225780423f1db7045afc
+$ apt-get source -qq --print-uris nginx=1.11.13-1~jessie
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx/nginx_1.11.13-1~jessie.dsc' nginx_1.11.13-1~jessie.dsc 1502 SHA256:3289fb78fe1572eff6db19865f4d24b2bfd47f429a143488d8e7f64ec20b0c72
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx/nginx_1.11.13.orig.tar.gz' nginx_1.11.13.orig.tar.gz 980784 SHA256:360b601ef8ed2998c80fa56a27bf3cd745c3ce18c5fb10892e6595467b1415d3
+'http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx/nginx_1.11.13-1~jessie.debian.tar.xz' nginx_1.11.13-1~jessie.debian.tar.xz 107644 SHA256:1f6197227956ae938bd7b3a9cb00a15fa8d174ea5f121e737edbd674c379c458
 ```
 
 ### `dpkg` source package: `openssl=1.0.1t-1+deb8u6`
