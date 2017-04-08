@@ -1,18 +1,18 @@
-# `golang:1.8.0-stretch`
+# `golang:1.8.1-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fd5b8e76609561f636002a8be903ea310dc80105c658b8fabe9103ef71939b8c`
-- Created: `2017-03-21T20:36:03.12301898Z`
-- Virtual Size: ~ 695.25 Mb  
+- Image ID: `sha256:e69e8b7ecea4c49f5eb12512c2f4b7a83495bf7c96b76401d0d37f59fbfbdde5`
+- Created: `2017-04-07T21:59:55.467887187Z`
+- Virtual Size: ~ 700.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.8`
-  - `GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.8.linux-amd64.tar.gz`
-  - `GOLANG_DOWNLOAD_SHA256=53ab94104ee3923e228a2cb2116e5e462ad3ebaeea06ff04463479d7f12d27ca`
+  - `GOLANG_VERSION=1.8.1`
+  - `GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.8.1.linux-amd64.tar.gz`
+  - `GOLANG_DOWNLOAD_SHA256=a579ab19d5237e263254f1eac5352efcf1d70b9dacadb6d6bb12b0911ede8994`
   - `GOPATH=/go`
 
 ## `dpkg` (`.deb`-based packages)
@@ -125,18 +125,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4~rc2
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4~rc2.dsc' apt_1.4~rc2.dsc 2557 SHA256:efc18e5992fea1b40a2d9f54cbfa122cfcd1493b3c278dd3f41f1ad6da67caf7
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4~rc2.tar.xz' apt_1.4~rc2.tar.xz 2074384 SHA256:0460c1539a7d7428bc5ddfe7756f83bd5c6009c6374316ac9f7591b6db4bbc2b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.4~rc2/
-- https://sources.debian.net/src/apt/1.4~rc2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -2632,19 +2622,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=232-19
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-19.dsc' systemd_232-19.dsc 4769 SHA256:b8a5a8041693654c96a03b579862c95502bbd51155f55d9e7e7f45b56a7f4eec
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-19.debian.tar.xz' systemd_232-19.debian.tar.xz 187736 SHA256:c51cb8550f3f58f745ddc1a72cdcef77b382ee14a327c4d8dfe979223fed9c29
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/systemd/232-19/
-- https://sources.debian.net/src/systemd/232-19/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 

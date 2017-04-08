@@ -1,18 +1,18 @@
-# `golang:1.8.0-onbuild`
+# `golang:1.8.1-onbuild`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a71d3309fd55d701dab5373a42e5dfdc73baf6ac5127737c289022b3961c7f73`
-- Created: `2017-03-21T20:35:31.807739307Z`
-- Virtual Size: ~ 697.63 Mb  
+- Image ID: `sha256:ad323f40f596ebac4de63a1e27dbd79db2f4276353db474615a59623f34e7d94`
+- Created: `2017-04-07T21:59:39.767835102Z`
+- Virtual Size: ~ 702.70 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["go-wrapper","run"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.8`
-  - `GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.8.linux-amd64.tar.gz`
-  - `GOLANG_DOWNLOAD_SHA256=53ab94104ee3923e228a2cb2116e5e462ad3ebaeea06ff04463479d7f12d27ca`
+  - `GOLANG_VERSION=1.8.1`
+  - `GOLANG_DOWNLOAD_URL=https://golang.org/dl/go1.8.1.linux-amd64.tar.gz`
+  - `GOLANG_DOWNLOAD_SHA256=a579ab19d5237e263254f1eac5352efcf1d70b9dacadb6d6bb12b0911ede8994`
   - `GOPATH=/go`
 
 ## `dpkg` (`.deb`-based packages)
