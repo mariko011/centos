@@ -398,18 +398,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.226
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.226.dsc' cdebconf_0.226.dsc 2662 SHA256:65493d35cf8df02652f35265c019971bd7f583f1204f10dd9ed9d94f821fb77b
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.226.tar.xz' cdebconf_0.226.tar.xz 272604 SHA256:1942354db3ed1767886be3e6b079017a9d3fc6fa607df9968e1d26e949978949
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cdebconf/0.226/
-- https://sources.debian.net/src/cdebconf/0.226/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `configobj=5.0.6-2`
 
@@ -3055,19 +3045,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2017a-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017a-1.dsc' tzdata_2017a-1.dsc 2005 SHA256:938f9bc5f14d5143c441bc1035200b8c964652d312a3b3e57990092d3081dd74
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017a.orig.tar.gz' tzdata_2017a.orig.tar.gz 323983 SHA256:df3a5c4d0a2cf0cde0b3f35796ccf6c9acfd598b8e70f8dece5404cd7626bbd6
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017a-1.debian.tar.xz' tzdata_2017a-1.debian.tar.xz 101112 SHA256:85751d8ac042483e31921b89bddb7f6d1aeefa1dac372782c3438111558416da
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2017a-1/
-- https://sources.debian.net/src/tzdata/2017a-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ucf=3.0036`
 
