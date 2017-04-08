@@ -1,18 +1,18 @@
-# `erlang:19.3`
+# `erlang:19.3.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0a2d129c41756148253b7d77eeb93d474a4ff6480821e8c19ed8bbf80f5f0d5d`
-- Created: `2017-03-22T18:33:57.589675371Z`
-- Virtual Size: ~ 821.24 Mb  
+- Image ID: `sha256:b1597be43209f10e65383b23b4828a2d89ac9456df78e15c17de9853dbe379fd`
+- Created: `2017-04-06T16:54:01.516991917Z`
+- Virtual Size: ~ 821.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=19.3`
+  - `OTP_VERSION=19.3.1`
   - `REBAR_VERSION=2.6.4`
-  - `REBAR3_VERSION=3.3.5`
+  - `REBAR3_VERSION=3.3.6`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2074,19 +2074,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris jasper=1.900.1-debian1-2.4+deb8u2
-'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u2.dsc' jasper_1.900.1-debian1-2.4+deb8u2.dsc 1969 SHA256:bd00981b19d6301d7063db29683ce1b053976f94f917a7959f9bd913b9f298cd
-'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-debian1.orig.tar.gz' jasper_1.900.1-debian1.orig.tar.gz 1140771 SHA256:7276e8407080d8263b39aeac8305032b0534c7df25bf02718b3944711e3c81d7
-'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u2.debian.tar.xz' jasper_1.900.1-debian1-2.4+deb8u2.debian.tar.xz 31432 SHA256:f828c092a945aad64980885df6e04282ff7ec94034208759aedf9fb8d3be39ea
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u2/
-- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `jbigkit=2.1-3.1`
 
