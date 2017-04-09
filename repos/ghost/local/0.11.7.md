@@ -2,18 +2,18 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3d8206c2a4ae6a307e51447bf2ecd5ee8233b73d2f4baaaa03b8bb1412ce7652`
-- Created: `2017-04-04T21:29:52.079735504Z`
+- Image ID: `sha256:729863bd99003c7c22fbd66d1ebdf7786906bf8aba41394c331deda064f5d73c`
+- Created: `2017-04-07T19:29:19.359811041Z`
 - Virtual Size: ~ 331.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["/entrypoint.sh"]`
+- Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["npm","start"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
   - `NODE_VERSION=4.8.2`
-  - `YARN_VERSION=0.21.3`
+  - `YARN_VERSION=0.22.0`
   - `GOSU_VERSION=1.7`
   - `GHOST_SOURCE=/usr/src/ghost`
   - `GHOST_VERSION=0.11.7`
