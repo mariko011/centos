@@ -1,4 +1,4 @@
-## `piwik:latest`
+## `piwik:3-apache`
 
 ```console
 $ docker pull piwik@sha256:c274ff7f6c5062506943ef1c997080f2776b0f04130b177926ec590fd1075161
@@ -7,7 +7,7 @@ $ docker pull piwik@sha256:c274ff7f6c5062506943ef1c997080f2776b0f04130b177926ec5
 -	Platforms:
 	-	linux; amd64
 
-### `piwik:latest` - linux; amd64
+### `piwik:3-apache` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`

@@ -2,13 +2,13 @@
 
 # Tags of `tomcat`
 
--	[`tomcat:6.0.51-jre7`](#tomcat6051-jre7)
+-	[`tomcat:6.0.53-jre7`](#tomcat6053-jre7)
 -	[`tomcat:6.0-jre7`](#tomcat60-jre7)
 -	[`tomcat:6-jre7`](#tomcat6-jre7)
--	[`tomcat:6.0.51`](#tomcat6051)
+-	[`tomcat:6.0.53`](#tomcat6053)
 -	[`tomcat:6.0`](#tomcat60)
 -	[`tomcat:6`](#tomcat6)
--	[`tomcat:6.0.51-jre8`](#tomcat6051-jre8)
+-	[`tomcat:6.0.53-jre8`](#tomcat6053-jre8)
 -	[`tomcat:6.0-jre8`](#tomcat60-jre8)
 -	[`tomcat:6-jre8`](#tomcat6-jre8)
 -	[`tomcat:7.0.77-jre7`](#tomcat7077-jre7)
@@ -78,22 +78,22 @@
 -	[`tomcat:9.0-alpine`](#tomcat90-alpine)
 -	[`tomcat:9-alpine`](#tomcat9-alpine)
 
-## `tomcat:6.0.51-jre7`
+## `tomcat:6.0.53-jre7`
 
 ```console
-$ docker pull tomcat@sha256:c7de780d39be79d7826cc02edbf6ed54b7f583cd12888bdc4b78bf989ca1a5c0
+$ docker pull tomcat@sha256:f70845bfa882a832702189a9cf58dbd8279366eaad703f886e2b3e75679fa08b
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `tomcat:6.0.51-jre7` - linux; amd64
+### `tomcat:6.0.53-jre7` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.7 MB (159680971 bytes)**  
+-	Total Size: **159.7 MB (159690584 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25d3222ed42c582ca832f53108648286e83c2be34960236173ead257fe26216f`
+-	Image ID: `sha256:cc915a9e308346da2a21129a897b9cddf7b7e5291fef3b9e1af39970024ebfa4`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -141,17 +141,17 @@ ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E626
 RUN set -ex; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Wed, 22 Mar 2017 17:41:39 GMT
 ENV TOMCAT_MAJOR=6
-# Wed, 22 Mar 2017 17:41:40 GMT
-ENV TOMCAT_VERSION=6.0.51
-# Wed, 22 Mar 2017 17:41:40 GMT
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-6/v6.0.51/bin/apache-tomcat-6.0.51.tar.gz
-# Wed, 22 Mar 2017 17:41:41 GMT
-ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.51/bin/apache-tomcat-6.0.51.tar.gz.asc
-# Wed, 22 Mar 2017 17:42:20 GMT
+# Mon, 10 Apr 2017 23:59:55 GMT
+ENV TOMCAT_VERSION=6.0.53
+# Mon, 10 Apr 2017 23:59:56 GMT
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-6/v6.0.53/bin/apache-tomcat-6.0.53.tar.gz
+# Mon, 10 Apr 2017 23:59:56 GMT
+ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.53/bin/apache-tomcat-6.0.53.tar.gz.asc
+# Tue, 11 Apr 2017 00:01:41 GMT
 RUN set -x 		&& wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 	&& wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& ./configure 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j$(nproc) 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz
-# Wed, 22 Mar 2017 17:42:21 GMT
+# Tue, 11 Apr 2017 00:01:42 GMT
 EXPOSE 8080/tcp
-# Wed, 22 Mar 2017 17:42:22 GMT
+# Tue, 11 Apr 2017 00:01:42 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -192,15 +192,15 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Fri, 24 Mar 2017 01:01:07 GMT  
 		Size: 280.7 KB (280726 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53e02a8e670effe7bb6446999966d950ea5c7cfef0e2396fefbb2593f618a066`  
-		Last Modified: Fri, 24 Mar 2017 01:01:07 GMT  
-		Size: 7.7 MB (7713964 bytes)  
+	-	`sha256:eb429dafd4312cc636c8ee3031efe678dab4153154355ce773757559ec803d41`  
+		Last Modified: Tue, 11 Apr 2017 00:04:34 GMT  
+		Size: 7.7 MB (7723577 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `tomcat:6.0-jre7`
 
 ```console
-$ docker pull tomcat@sha256:c7de780d39be79d7826cc02edbf6ed54b7f583cd12888bdc4b78bf989ca1a5c0
+$ docker pull tomcat@sha256:f70845bfa882a832702189a9cf58dbd8279366eaad703f886e2b3e75679fa08b
 ```
 
 -	Platforms:
@@ -210,9 +210,9 @@ $ docker pull tomcat@sha256:c7de780d39be79d7826cc02edbf6ed54b7f583cd12888bdc4b78
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.7 MB (159680971 bytes)**  
+-	Total Size: **159.7 MB (159690584 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25d3222ed42c582ca832f53108648286e83c2be34960236173ead257fe26216f`
+-	Image ID: `sha256:cc915a9e308346da2a21129a897b9cddf7b7e5291fef3b9e1af39970024ebfa4`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -260,17 +260,17 @@ ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E626
 RUN set -ex; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Wed, 22 Mar 2017 17:41:39 GMT
 ENV TOMCAT_MAJOR=6
-# Wed, 22 Mar 2017 17:41:40 GMT
-ENV TOMCAT_VERSION=6.0.51
-# Wed, 22 Mar 2017 17:41:40 GMT
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-6/v6.0.51/bin/apache-tomcat-6.0.51.tar.gz
-# Wed, 22 Mar 2017 17:41:41 GMT
-ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.51/bin/apache-tomcat-6.0.51.tar.gz.asc
-# Wed, 22 Mar 2017 17:42:20 GMT
+# Mon, 10 Apr 2017 23:59:55 GMT
+ENV TOMCAT_VERSION=6.0.53
+# Mon, 10 Apr 2017 23:59:56 GMT
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-6/v6.0.53/bin/apache-tomcat-6.0.53.tar.gz
+# Mon, 10 Apr 2017 23:59:56 GMT
+ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.53/bin/apache-tomcat-6.0.53.tar.gz.asc
+# Tue, 11 Apr 2017 00:01:41 GMT
 RUN set -x 		&& wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 	&& wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& ./configure 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j$(nproc) 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz
-# Wed, 22 Mar 2017 17:42:21 GMT
+# Tue, 11 Apr 2017 00:01:42 GMT
 EXPOSE 8080/tcp
-# Wed, 22 Mar 2017 17:42:22 GMT
+# Tue, 11 Apr 2017 00:01:42 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -311,15 +311,15 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Fri, 24 Mar 2017 01:01:07 GMT  
 		Size: 280.7 KB (280726 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53e02a8e670effe7bb6446999966d950ea5c7cfef0e2396fefbb2593f618a066`  
-		Last Modified: Fri, 24 Mar 2017 01:01:07 GMT  
-		Size: 7.7 MB (7713964 bytes)  
+	-	`sha256:eb429dafd4312cc636c8ee3031efe678dab4153154355ce773757559ec803d41`  
+		Last Modified: Tue, 11 Apr 2017 00:04:34 GMT  
+		Size: 7.7 MB (7723577 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `tomcat:6-jre7`
 
 ```console
-$ docker pull tomcat@sha256:c7de780d39be79d7826cc02edbf6ed54b7f583cd12888bdc4b78bf989ca1a5c0
+$ docker pull tomcat@sha256:f70845bfa882a832702189a9cf58dbd8279366eaad703f886e2b3e75679fa08b
 ```
 
 -	Platforms:
@@ -329,9 +329,9 @@ $ docker pull tomcat@sha256:c7de780d39be79d7826cc02edbf6ed54b7f583cd12888bdc4b78
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.7 MB (159680971 bytes)**  
+-	Total Size: **159.7 MB (159690584 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25d3222ed42c582ca832f53108648286e83c2be34960236173ead257fe26216f`
+-	Image ID: `sha256:cc915a9e308346da2a21129a897b9cddf7b7e5291fef3b9e1af39970024ebfa4`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -379,17 +379,17 @@ ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E626
 RUN set -ex; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Wed, 22 Mar 2017 17:41:39 GMT
 ENV TOMCAT_MAJOR=6
-# Wed, 22 Mar 2017 17:41:40 GMT
-ENV TOMCAT_VERSION=6.0.51
-# Wed, 22 Mar 2017 17:41:40 GMT
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-6/v6.0.51/bin/apache-tomcat-6.0.51.tar.gz
-# Wed, 22 Mar 2017 17:41:41 GMT
-ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.51/bin/apache-tomcat-6.0.51.tar.gz.asc
-# Wed, 22 Mar 2017 17:42:20 GMT
+# Mon, 10 Apr 2017 23:59:55 GMT
+ENV TOMCAT_VERSION=6.0.53
+# Mon, 10 Apr 2017 23:59:56 GMT
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-6/v6.0.53/bin/apache-tomcat-6.0.53.tar.gz
+# Mon, 10 Apr 2017 23:59:56 GMT
+ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.53/bin/apache-tomcat-6.0.53.tar.gz.asc
+# Tue, 11 Apr 2017 00:01:41 GMT
 RUN set -x 		&& wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 	&& wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& ./configure 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j$(nproc) 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz
-# Wed, 22 Mar 2017 17:42:21 GMT
+# Tue, 11 Apr 2017 00:01:42 GMT
 EXPOSE 8080/tcp
-# Wed, 22 Mar 2017 17:42:22 GMT
+# Tue, 11 Apr 2017 00:01:42 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -430,27 +430,27 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Fri, 24 Mar 2017 01:01:07 GMT  
 		Size: 280.7 KB (280726 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53e02a8e670effe7bb6446999966d950ea5c7cfef0e2396fefbb2593f618a066`  
-		Last Modified: Fri, 24 Mar 2017 01:01:07 GMT  
-		Size: 7.7 MB (7713964 bytes)  
+	-	`sha256:eb429dafd4312cc636c8ee3031efe678dab4153154355ce773757559ec803d41`  
+		Last Modified: Tue, 11 Apr 2017 00:04:34 GMT  
+		Size: 7.7 MB (7723577 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `tomcat:6.0.51`
+## `tomcat:6.0.53`
 
 ```console
-$ docker pull tomcat@sha256:c7de780d39be79d7826cc02edbf6ed54b7f583cd12888bdc4b78bf989ca1a5c0
+$ docker pull tomcat@sha256:f70845bfa882a832702189a9cf58dbd8279366eaad703f886e2b3e75679fa08b
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `tomcat:6.0.51` - linux; amd64
+### `tomcat:6.0.53` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.7 MB (159680971 bytes)**  
+-	Total Size: **159.7 MB (159690584 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25d3222ed42c582ca832f53108648286e83c2be34960236173ead257fe26216f`
+-	Image ID: `sha256:cc915a9e308346da2a21129a897b9cddf7b7e5291fef3b9e1af39970024ebfa4`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -498,17 +498,17 @@ ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E626
 RUN set -ex; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Wed, 22 Mar 2017 17:41:39 GMT
 ENV TOMCAT_MAJOR=6
-# Wed, 22 Mar 2017 17:41:40 GMT
-ENV TOMCAT_VERSION=6.0.51
-# Wed, 22 Mar 2017 17:41:40 GMT
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-6/v6.0.51/bin/apache-tomcat-6.0.51.tar.gz
-# Wed, 22 Mar 2017 17:41:41 GMT
-ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.51/bin/apache-tomcat-6.0.51.tar.gz.asc
-# Wed, 22 Mar 2017 17:42:20 GMT
+# Mon, 10 Apr 2017 23:59:55 GMT
+ENV TOMCAT_VERSION=6.0.53
+# Mon, 10 Apr 2017 23:59:56 GMT
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-6/v6.0.53/bin/apache-tomcat-6.0.53.tar.gz
+# Mon, 10 Apr 2017 23:59:56 GMT
+ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.53/bin/apache-tomcat-6.0.53.tar.gz.asc
+# Tue, 11 Apr 2017 00:01:41 GMT
 RUN set -x 		&& wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 	&& wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& ./configure 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j$(nproc) 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz
-# Wed, 22 Mar 2017 17:42:21 GMT
+# Tue, 11 Apr 2017 00:01:42 GMT
 EXPOSE 8080/tcp
-# Wed, 22 Mar 2017 17:42:22 GMT
+# Tue, 11 Apr 2017 00:01:42 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -549,15 +549,15 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Fri, 24 Mar 2017 01:01:07 GMT  
 		Size: 280.7 KB (280726 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53e02a8e670effe7bb6446999966d950ea5c7cfef0e2396fefbb2593f618a066`  
-		Last Modified: Fri, 24 Mar 2017 01:01:07 GMT  
-		Size: 7.7 MB (7713964 bytes)  
+	-	`sha256:eb429dafd4312cc636c8ee3031efe678dab4153154355ce773757559ec803d41`  
+		Last Modified: Tue, 11 Apr 2017 00:04:34 GMT  
+		Size: 7.7 MB (7723577 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `tomcat:6.0`
 
 ```console
-$ docker pull tomcat@sha256:c7de780d39be79d7826cc02edbf6ed54b7f583cd12888bdc4b78bf989ca1a5c0
+$ docker pull tomcat@sha256:f70845bfa882a832702189a9cf58dbd8279366eaad703f886e2b3e75679fa08b
 ```
 
 -	Platforms:
@@ -567,9 +567,9 @@ $ docker pull tomcat@sha256:c7de780d39be79d7826cc02edbf6ed54b7f583cd12888bdc4b78
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.7 MB (159680971 bytes)**  
+-	Total Size: **159.7 MB (159690584 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25d3222ed42c582ca832f53108648286e83c2be34960236173ead257fe26216f`
+-	Image ID: `sha256:cc915a9e308346da2a21129a897b9cddf7b7e5291fef3b9e1af39970024ebfa4`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -617,17 +617,17 @@ ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E626
 RUN set -ex; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Wed, 22 Mar 2017 17:41:39 GMT
 ENV TOMCAT_MAJOR=6
-# Wed, 22 Mar 2017 17:41:40 GMT
-ENV TOMCAT_VERSION=6.0.51
-# Wed, 22 Mar 2017 17:41:40 GMT
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-6/v6.0.51/bin/apache-tomcat-6.0.51.tar.gz
-# Wed, 22 Mar 2017 17:41:41 GMT
-ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.51/bin/apache-tomcat-6.0.51.tar.gz.asc
-# Wed, 22 Mar 2017 17:42:20 GMT
+# Mon, 10 Apr 2017 23:59:55 GMT
+ENV TOMCAT_VERSION=6.0.53
+# Mon, 10 Apr 2017 23:59:56 GMT
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-6/v6.0.53/bin/apache-tomcat-6.0.53.tar.gz
+# Mon, 10 Apr 2017 23:59:56 GMT
+ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.53/bin/apache-tomcat-6.0.53.tar.gz.asc
+# Tue, 11 Apr 2017 00:01:41 GMT
 RUN set -x 		&& wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 	&& wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& ./configure 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j$(nproc) 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz
-# Wed, 22 Mar 2017 17:42:21 GMT
+# Tue, 11 Apr 2017 00:01:42 GMT
 EXPOSE 8080/tcp
-# Wed, 22 Mar 2017 17:42:22 GMT
+# Tue, 11 Apr 2017 00:01:42 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -668,15 +668,15 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Fri, 24 Mar 2017 01:01:07 GMT  
 		Size: 280.7 KB (280726 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53e02a8e670effe7bb6446999966d950ea5c7cfef0e2396fefbb2593f618a066`  
-		Last Modified: Fri, 24 Mar 2017 01:01:07 GMT  
-		Size: 7.7 MB (7713964 bytes)  
+	-	`sha256:eb429dafd4312cc636c8ee3031efe678dab4153154355ce773757559ec803d41`  
+		Last Modified: Tue, 11 Apr 2017 00:04:34 GMT  
+		Size: 7.7 MB (7723577 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `tomcat:6`
 
 ```console
-$ docker pull tomcat@sha256:c7de780d39be79d7826cc02edbf6ed54b7f583cd12888bdc4b78bf989ca1a5c0
+$ docker pull tomcat@sha256:f70845bfa882a832702189a9cf58dbd8279366eaad703f886e2b3e75679fa08b
 ```
 
 -	Platforms:
@@ -686,9 +686,9 @@ $ docker pull tomcat@sha256:c7de780d39be79d7826cc02edbf6ed54b7f583cd12888bdc4b78
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.7 MB (159680971 bytes)**  
+-	Total Size: **159.7 MB (159690584 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25d3222ed42c582ca832f53108648286e83c2be34960236173ead257fe26216f`
+-	Image ID: `sha256:cc915a9e308346da2a21129a897b9cddf7b7e5291fef3b9e1af39970024ebfa4`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -736,17 +736,17 @@ ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E626
 RUN set -ex; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Wed, 22 Mar 2017 17:41:39 GMT
 ENV TOMCAT_MAJOR=6
-# Wed, 22 Mar 2017 17:41:40 GMT
-ENV TOMCAT_VERSION=6.0.51
-# Wed, 22 Mar 2017 17:41:40 GMT
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-6/v6.0.51/bin/apache-tomcat-6.0.51.tar.gz
-# Wed, 22 Mar 2017 17:41:41 GMT
-ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.51/bin/apache-tomcat-6.0.51.tar.gz.asc
-# Wed, 22 Mar 2017 17:42:20 GMT
+# Mon, 10 Apr 2017 23:59:55 GMT
+ENV TOMCAT_VERSION=6.0.53
+# Mon, 10 Apr 2017 23:59:56 GMT
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-6/v6.0.53/bin/apache-tomcat-6.0.53.tar.gz
+# Mon, 10 Apr 2017 23:59:56 GMT
+ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.53/bin/apache-tomcat-6.0.53.tar.gz.asc
+# Tue, 11 Apr 2017 00:01:41 GMT
 RUN set -x 		&& wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 	&& wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& ./configure 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j$(nproc) 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz
-# Wed, 22 Mar 2017 17:42:21 GMT
+# Tue, 11 Apr 2017 00:01:42 GMT
 EXPOSE 8080/tcp
-# Wed, 22 Mar 2017 17:42:22 GMT
+# Tue, 11 Apr 2017 00:01:42 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -787,27 +787,27 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Fri, 24 Mar 2017 01:01:07 GMT  
 		Size: 280.7 KB (280726 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:53e02a8e670effe7bb6446999966d950ea5c7cfef0e2396fefbb2593f618a066`  
-		Last Modified: Fri, 24 Mar 2017 01:01:07 GMT  
-		Size: 7.7 MB (7713964 bytes)  
+	-	`sha256:eb429dafd4312cc636c8ee3031efe678dab4153154355ce773757559ec803d41`  
+		Last Modified: Tue, 11 Apr 2017 00:04:34 GMT  
+		Size: 7.7 MB (7723577 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `tomcat:6.0.51-jre8`
+## `tomcat:6.0.53-jre8`
 
 ```console
-$ docker pull tomcat@sha256:2c661ff862f6e839f4954f89ac0b3b66955d14194026c9911c68ded68bdb2e2b
+$ docker pull tomcat@sha256:7e5e097c4f6d179c2bff57c0e9e667cbff7ccfe52b2453f3273ca708b980795a
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `tomcat:6.0.51-jre8` - linux; amd64
+### `tomcat:6.0.53-jre8` - linux; amd64
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.8 MB (143770888 bytes)**  
+-	Total Size: **143.8 MB (143780310 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d06041a8ad6cee16064394924769a4ad6f1587a4e35923a34f036645fb489af`
+-	Image ID: `sha256:05f04fafa3917a3dce636b08f24a9ca0a21020f174b78abae25ff1fba0d4afb0`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -861,17 +861,17 @@ ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E626
 RUN set -ex; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Wed, 22 Mar 2017 17:43:20 GMT
 ENV TOMCAT_MAJOR=6
-# Wed, 22 Mar 2017 17:43:21 GMT
-ENV TOMCAT_VERSION=6.0.51
-# Wed, 22 Mar 2017 17:43:21 GMT
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-6/v6.0.51/bin/apache-tomcat-6.0.51.tar.gz
-# Wed, 22 Mar 2017 17:43:22 GMT
-ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.51/bin/apache-tomcat-6.0.51.tar.gz.asc
-# Wed, 22 Mar 2017 17:44:03 GMT
+# Tue, 11 Apr 2017 00:01:45 GMT
+ENV TOMCAT_VERSION=6.0.53
+# Tue, 11 Apr 2017 00:01:46 GMT
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-6/v6.0.53/bin/apache-tomcat-6.0.53.tar.gz
+# Tue, 11 Apr 2017 00:01:47 GMT
+ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.53/bin/apache-tomcat-6.0.53.tar.gz.asc
+# Tue, 11 Apr 2017 00:03:43 GMT
 RUN set -x 		&& wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 	&& wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& ./configure 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j$(nproc) 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz
-# Wed, 22 Mar 2017 17:44:03 GMT
+# Tue, 11 Apr 2017 00:03:44 GMT
 EXPOSE 8080/tcp
-# Wed, 22 Mar 2017 17:44:04 GMT
+# Tue, 11 Apr 2017 00:03:44 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -920,15 +920,15 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Fri, 24 Mar 2017 01:03:09 GMT  
 		Size: 280.7 KB (280724 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b476b0e89bbeceafccf8c27a9ce02d20fc154b9d58786c891b39a08e365663b`  
-		Last Modified: Fri, 24 Mar 2017 01:03:11 GMT  
-		Size: 7.7 MB (7689061 bytes)  
+	-	`sha256:69b6187d335a5af0efe27cf88ac9220cc09bde3a5b333efa05bf407dffdac9e5`  
+		Last Modified: Tue, 11 Apr 2017 00:06:41 GMT  
+		Size: 7.7 MB (7698483 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `tomcat:6.0-jre8`
 
 ```console
-$ docker pull tomcat@sha256:2c661ff862f6e839f4954f89ac0b3b66955d14194026c9911c68ded68bdb2e2b
+$ docker pull tomcat@sha256:7e5e097c4f6d179c2bff57c0e9e667cbff7ccfe52b2453f3273ca708b980795a
 ```
 
 -	Platforms:
@@ -938,9 +938,9 @@ $ docker pull tomcat@sha256:2c661ff862f6e839f4954f89ac0b3b66955d14194026c9911c68
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.8 MB (143770888 bytes)**  
+-	Total Size: **143.8 MB (143780310 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d06041a8ad6cee16064394924769a4ad6f1587a4e35923a34f036645fb489af`
+-	Image ID: `sha256:05f04fafa3917a3dce636b08f24a9ca0a21020f174b78abae25ff1fba0d4afb0`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -994,17 +994,17 @@ ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E626
 RUN set -ex; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Wed, 22 Mar 2017 17:43:20 GMT
 ENV TOMCAT_MAJOR=6
-# Wed, 22 Mar 2017 17:43:21 GMT
-ENV TOMCAT_VERSION=6.0.51
-# Wed, 22 Mar 2017 17:43:21 GMT
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-6/v6.0.51/bin/apache-tomcat-6.0.51.tar.gz
-# Wed, 22 Mar 2017 17:43:22 GMT
-ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.51/bin/apache-tomcat-6.0.51.tar.gz.asc
-# Wed, 22 Mar 2017 17:44:03 GMT
+# Tue, 11 Apr 2017 00:01:45 GMT
+ENV TOMCAT_VERSION=6.0.53
+# Tue, 11 Apr 2017 00:01:46 GMT
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-6/v6.0.53/bin/apache-tomcat-6.0.53.tar.gz
+# Tue, 11 Apr 2017 00:01:47 GMT
+ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.53/bin/apache-tomcat-6.0.53.tar.gz.asc
+# Tue, 11 Apr 2017 00:03:43 GMT
 RUN set -x 		&& wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 	&& wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& ./configure 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j$(nproc) 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz
-# Wed, 22 Mar 2017 17:44:03 GMT
+# Tue, 11 Apr 2017 00:03:44 GMT
 EXPOSE 8080/tcp
-# Wed, 22 Mar 2017 17:44:04 GMT
+# Tue, 11 Apr 2017 00:03:44 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -1053,15 +1053,15 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Fri, 24 Mar 2017 01:03:09 GMT  
 		Size: 280.7 KB (280724 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b476b0e89bbeceafccf8c27a9ce02d20fc154b9d58786c891b39a08e365663b`  
-		Last Modified: Fri, 24 Mar 2017 01:03:11 GMT  
-		Size: 7.7 MB (7689061 bytes)  
+	-	`sha256:69b6187d335a5af0efe27cf88ac9220cc09bde3a5b333efa05bf407dffdac9e5`  
+		Last Modified: Tue, 11 Apr 2017 00:06:41 GMT  
+		Size: 7.7 MB (7698483 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `tomcat:6-jre8`
 
 ```console
-$ docker pull tomcat@sha256:2c661ff862f6e839f4954f89ac0b3b66955d14194026c9911c68ded68bdb2e2b
+$ docker pull tomcat@sha256:7e5e097c4f6d179c2bff57c0e9e667cbff7ccfe52b2453f3273ca708b980795a
 ```
 
 -	Platforms:
@@ -1071,9 +1071,9 @@ $ docker pull tomcat@sha256:2c661ff862f6e839f4954f89ac0b3b66955d14194026c9911c68
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **143.8 MB (143770888 bytes)**  
+-	Total Size: **143.8 MB (143780310 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d06041a8ad6cee16064394924769a4ad6f1587a4e35923a34f036645fb489af`
+-	Image ID: `sha256:05f04fafa3917a3dce636b08f24a9ca0a21020f174b78abae25ff1fba0d4afb0`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -1127,17 +1127,17 @@ ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E626
 RUN set -ex; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Wed, 22 Mar 2017 17:43:20 GMT
 ENV TOMCAT_MAJOR=6
-# Wed, 22 Mar 2017 17:43:21 GMT
-ENV TOMCAT_VERSION=6.0.51
-# Wed, 22 Mar 2017 17:43:21 GMT
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-6/v6.0.51/bin/apache-tomcat-6.0.51.tar.gz
-# Wed, 22 Mar 2017 17:43:22 GMT
-ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.51/bin/apache-tomcat-6.0.51.tar.gz.asc
-# Wed, 22 Mar 2017 17:44:03 GMT
+# Tue, 11 Apr 2017 00:01:45 GMT
+ENV TOMCAT_VERSION=6.0.53
+# Tue, 11 Apr 2017 00:01:46 GMT
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-6/v6.0.53/bin/apache-tomcat-6.0.53.tar.gz
+# Tue, 11 Apr 2017 00:01:47 GMT
+ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-6/v6.0.53/bin/apache-tomcat-6.0.53.tar.gz.asc
+# Tue, 11 Apr 2017 00:03:43 GMT
 RUN set -x 		&& wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 	&& wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& ./configure 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j$(nproc) 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz
-# Wed, 22 Mar 2017 17:44:03 GMT
+# Tue, 11 Apr 2017 00:03:44 GMT
 EXPOSE 8080/tcp
-# Wed, 22 Mar 2017 17:44:04 GMT
+# Tue, 11 Apr 2017 00:03:44 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -1186,9 +1186,9 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Fri, 24 Mar 2017 01:03:09 GMT  
 		Size: 280.7 KB (280724 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b476b0e89bbeceafccf8c27a9ce02d20fc154b9d58786c891b39a08e365663b`  
-		Last Modified: Fri, 24 Mar 2017 01:03:11 GMT  
-		Size: 7.7 MB (7689061 bytes)  
+	-	`sha256:69b6187d335a5af0efe27cf88ac9220cc09bde3a5b333efa05bf407dffdac9e5`  
+		Last Modified: Tue, 11 Apr 2017 00:06:41 GMT  
+		Size: 7.7 MB (7698483 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `tomcat:7.0.77-jre7`

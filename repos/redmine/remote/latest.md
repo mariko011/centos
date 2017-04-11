@@ -1,7 +1,7 @@
 ## `redmine:latest`
 
 ```console
-$ docker pull redmine@sha256:1be86c3a3ef790eaca28a665ab89422072966bdcec0de5631a5ac57d7d036b4b
+$ docker pull redmine@sha256:cedfd8b3371a39881cb45d977677cb3aefeabd66af952a85c9a59d5de2e65eff
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull redmine@sha256:1be86c3a3ef790eaca28a665ab89422072966bdcec0de5631a5
 
 -	Docker Version: 1.12.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **246.9 MB (246873502 bytes)**  
+-	Total Size: **247.0 MB (246950820 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc32b7bbed62b7216a1d7d8eb41dfb67263fca139c31d00c0480d4320224c155`
+-	Image ID: `sha256:378d05bacbdb97393677194ef3a766319c3861f85cbf2420afc0a7ef8ceb22de`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["rails","server","-b","0.0.0.0"]`
 
@@ -68,23 +68,23 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		imagemagick 	
 ENV RAILS_ENV=production
 # Fri, 31 Mar 2017 18:58:20 GMT
 WORKDIR /usr/src/redmine
-# Fri, 31 Mar 2017 19:03:39 GMT
-ENV REDMINE_VERSION=3.3.2
-# Fri, 31 Mar 2017 19:03:40 GMT
-ENV REDMINE_DOWNLOAD_MD5=8e403981dc3a19a42ee978f055be62ca
-# Fri, 31 Mar 2017 19:03:44 GMT
+# Mon, 10 Apr 2017 23:43:20 GMT
+ENV REDMINE_VERSION=3.3.3
+# Mon, 10 Apr 2017 23:43:20 GMT
+ENV REDMINE_DOWNLOAD_MD5=c946839c9a51dba48ae7c34c5351f677
+# Mon, 10 Apr 2017 23:43:25 GMT
 RUN wget -O redmine.tar.gz "https://www.redmine.org/releases/redmine-${REDMINE_VERSION}.tar.gz" 	&& echo "$REDMINE_DOWNLOAD_MD5 redmine.tar.gz" | md5sum -c - 	&& tar -xvf redmine.tar.gz --strip-components=1 	&& rm redmine.tar.gz files/delete.me log/delete.me 	&& mkdir -p tmp/pdf public/plugin_assets 	&& chown -R redmine:redmine ./
-# Fri, 31 Mar 2017 19:05:49 GMT
+# Mon, 10 Apr 2017 23:47:26 GMT
 RUN buildDeps=' 		gcc 		libmagickcore-dev 		libmagickwand-dev 		libmysqlclient-dev 		libpq-dev 		libsqlite3-dev 		make 		patch 	' 	&& set -ex 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 	&& rm -rf /var/lib/apt/lists/* 	&& bundle install --without development test 	&& for adapter in mysql2 postgresql sqlite3; do 		echo "$RAILS_ENV:" > ./config/database.yml; 		echo "  adapter: $adapter" >> ./config/database.yml; 		bundle install --without development test; 	done 	&& rm ./config/database.yml 	&& apt-get purge -y --auto-remove $buildDeps
-# Fri, 31 Mar 2017 19:05:50 GMT
+# Mon, 10 Apr 2017 23:47:27 GMT
 VOLUME [/usr/src/redmine/files]
-# Fri, 31 Mar 2017 19:05:51 GMT
+# Mon, 10 Apr 2017 23:47:28 GMT
 COPY file:5efb6ca648b54af01740423ca0fdde905eae0ce732d8f2683c79dcf93e0e86c5 in / 
-# Fri, 31 Mar 2017 19:05:51 GMT
+# Mon, 10 Apr 2017 23:47:28 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 31 Mar 2017 19:05:52 GMT
+# Mon, 10 Apr 2017 23:47:29 GMT
 EXPOSE 3000/tcp
-# Fri, 31 Mar 2017 19:05:52 GMT
+# Mon, 10 Apr 2017 23:47:29 GMT
 CMD ["rails" "server" "-b" "0.0.0.0"]
 ```
 
@@ -137,15 +137,15 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Last Modified: Fri, 31 Mar 2017 19:12:26 GMT  
 		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7f9ac4be7e2b409016b9d2731edf1dc2d8d6ac628479b1582a538f0825be05da`  
-		Last Modified: Fri, 31 Mar 2017 19:16:12 GMT  
-		Size: 2.4 MB (2376992 bytes)  
+	-	`sha256:9861fab6e595eb1fb169262a30028264db24348c8d75c2545ead0bec4b0d744b`  
+		Last Modified: Mon, 10 Apr 2017 23:57:05 GMT  
+		Size: 2.4 MB (2379258 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f148171306b4690545e036685da75d05ec59c1b91ce761d4db63345df618af7`  
-		Last Modified: Fri, 31 Mar 2017 19:16:27 GMT  
-		Size: 76.0 MB (75968416 bytes)  
+	-	`sha256:30c41b93f7669e9e71b1e55dabb55077d1bb20e8216a4f755c3d4ade4f80f74d`  
+		Last Modified: Mon, 10 Apr 2017 23:57:18 GMT  
+		Size: 76.0 MB (76043470 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e65e0439dadb9a1c737781eb69a32c675b6244bcba0b0af8302398dd0e30d63`  
-		Last Modified: Fri, 31 Mar 2017 19:16:11 GMT  
-		Size: 1.5 KB (1526 bytes)  
+	-	`sha256:7441771860daebad43841bfb1dacce213542124e8e72b414cb760bffd9c08e6b`  
+		Last Modified: Mon, 10 Apr 2017 23:57:03 GMT  
+		Size: 1.5 KB (1524 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
