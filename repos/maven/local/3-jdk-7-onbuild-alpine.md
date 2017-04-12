@@ -1,10 +1,10 @@
-# `maven:3.3.9-jdk-7-onbuild-alpine`
+# `maven:3.5.0-jdk-7-onbuild-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:94f05c8672a0e6d5a4611a00b002bfbd06c0c19ec2ed5104fe35d4a96b051911`
-- Created: `2017-03-04T00:13:07.087858373Z`
-- Virtual Size: ~ 154.69 Mb  
+- Image ID: `sha256:27488c020de10c87d7f15003b7289d24e902e821e70ed4b27844a1bd41d4e04d`
+- Created: `2017-04-10T17:14:10.391748336Z`
+- Virtual Size: ~ 154.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`

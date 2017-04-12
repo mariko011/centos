@@ -1,10 +1,10 @@
-# `maven:3.3.9-jdk-9-onbuild`
+# `maven:3.5.0-jdk-9-onbuild`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9b904a48db72f2ca7a241b759e3275bcf608c572cca0e0d46e1dd918009e5e8a`
-- Created: `2017-03-22T21:29:07.203928659Z`
-- Virtual Size: ~ 584.23 Mb  
+- Image ID: `sha256:220b0489f637212eabebba566a2171f46a67fcd31cd14aae8257ad766371d985`
+- Created: `2017-04-10T17:14:50.66795497Z`
+- Virtual Size: ~ 584.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -496,19 +496,8 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris curl=7.52.1-3
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-3.dsc' curl_7.52.1-3.dsc 2765 SHA256:80c2cf6870d658d5b8bc4b70c6d33b2e2c396d64b3cb2ea927d2f53fa1ac5e72
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-3.debian.tar.xz' curl_7.52.1-3.debian.tar.xz 28912 SHA256:e5a04a18e7728f3898da50845537123d3a500da7f959119eb36f1f73daee8cf7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/curl/7.52.1-3/
-- https://sources.debian.net/src/curl/7.52.1-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
