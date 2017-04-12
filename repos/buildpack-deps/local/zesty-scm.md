@@ -156,13 +156,8 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-files=9.6ubuntu12
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.6ubuntu12.dsc' base-files_9.6ubuntu12.dsc 1616 SHA256:f3a9bc4cbc8d3750685083fa7e16cb0e07f26c400ddec70dcb3531f00f60832f
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.6ubuntu12.tar.xz' base-files_9.6ubuntu12.tar.xz 65724 SHA256:202558a97b54d72c6adb369b16a8325772260306cbc760e7b5296180b1854fc2
-```
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -449,13 +444,8 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.10ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.10ubuntu1.dsc' dpkg_1.18.10ubuntu1.dsc 2137 SHA256:ef17d9b5009c9f85595ce153592b8aa37f5400459a25144d3325df618b3f6c9e
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.10ubuntu1.tar.xz' dpkg_1.18.10ubuntu1.tar.xz 4589592 SHA256:f10472271ec9cadf37588bdbcee090ed292408b58595cab91ca37368c622d73c
-```
 
 ### `dpkg` source package: `e2fsprogs=1.43.4-2`
 
