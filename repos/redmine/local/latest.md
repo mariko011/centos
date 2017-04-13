@@ -1,10 +1,10 @@
-# `redmine:3.3.2`
+# `redmine:3.3.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:dc32b7bbed62b7216a1d7d8eb41dfb67263fca139c31d00c0480d4320224c155`
-- Created: `2017-03-31T19:05:52.623874344Z`
-- Virtual Size: ~ 639.40 Mb  
+- Image ID: `sha256:378d05bacbdb97393677194ef3a766319c3861f85cbf2420afc0a7ef8ceb22de`
+- Created: `2017-04-10T23:47:29.639748305Z`
+- Virtual Size: ~ 639.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -24,8 +24,8 @@
   - `GOSU_VERSION=1.7`
   - `TINI_VERSION=v0.9.0`
   - `RAILS_ENV=production`
-  - `REDMINE_VERSION=3.3.2`
-  - `REDMINE_DOWNLOAD_MD5=8e403981dc3a19a42ee978f055be62ca`
+  - `REDMINE_VERSION=3.3.3`
+  - `REDMINE_DOWNLOAD_MD5=c946839c9a51dba48ae7c34c5351f677`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1561,18 +1561,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/iproute2/3.16.0-2/
 - https://sources.debian.net/src/iproute2/3.16.0-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `jasper=1.900.1-debian1-2.4+deb8u2`
+### `dpkg` source package: `jasper=1.900.1-debian1-2.4+deb8u3`
 
 Binary Packages:
 
-- `libjasper1:amd64=1.900.1-debian1-2.4+deb8u2`
+- `libjasper1:amd64=1.900.1-debian1-2.4+deb8u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris jasper=1.900.1-debian1-2.4+deb8u3
+'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u3.dsc' jasper_1.900.1-debian1-2.4+deb8u3.dsc 1969 SHA256:9c5228e9f5107ef3ce7565b93bdb00718412b8d15e6dad0328774df223a3c3b5
+'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-debian1.orig.tar.gz' jasper_1.900.1-debian1.orig.tar.gz 1140771 SHA256:7276e8407080d8263b39aeac8305032b0534c7df25bf02718b3944711e3c81d7
+'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u3.debian.tar.xz' jasper_1.900.1-debian1-2.4+deb8u3.debian.tar.xz 34032 SHA256:57b9d7b949a4a0696d6bdc93d56a7ee59d85f3c7cfa34e33a493b3fbf3d99bbf
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u3/
+- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `jbigkit=2.1-3.1`
 
