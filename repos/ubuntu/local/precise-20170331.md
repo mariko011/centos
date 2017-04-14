@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b384dd9703dbc43ce29231b1642e0959c8987cd974ad3afa0a61688d238c9625`
-- Created: `2017-02-27T19:40:01.705083015Z`
-- Virtual Size: ~ 103.58 Mb  
+- Image ID: `sha256:5b117edd0b767986092e9f721ba2364951b0a271f53f1f41aff9dd1861c2d4fe`
+- Created: `2017-04-12T21:05:30.976274223Z`
+- Virtual Size: ~ 103.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -377,21 +377,27 @@ $ apt-get source -qq --print-uris e2fsprogs=1.42-1ubuntu2.3
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.42-1ubuntu2.3.debian.tar.gz' e2fsprogs_1.42-1ubuntu2.3.debian.tar.gz 80519 SHA256:15cff77ab755566e8a1e2dbdc246c0a743fd8a5636327b8149c73e714e8bedde
 ```
 
-### `dpkg` source package: `eglibc=2.15-0ubuntu10.15`
+### `dpkg` source package: `eglibc=2.15-0ubuntu10.18`
 
 Binary Packages:
 
-- `libc-bin=2.15-0ubuntu10.15`
-- `libc6:amd64=2.15-0ubuntu10.15`
-- `multiarch-support=2.15-0ubuntu10.15`
+- `libc-bin=2.15-0ubuntu10.18`
+- `libc6:amd64=2.15-0ubuntu10.18`
+- `multiarch-support=2.15-0ubuntu10.18`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris eglibc=2.15-0ubuntu10.18
+'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.15-0ubuntu10.18.dsc' eglibc_2.15-0ubuntu10.18.dsc 5829 SHA256:ed2ef3c7fa3a0c9221be6c42272311aef9e84fa14a14a0cda2806fa21b3bea76
+'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.15.orig.tar.gz' eglibc_2.15.orig.tar.gz 23466060 SHA256:16e528f94e623ef811c5c4b593fcc0369ee67b38a1df8d3e020320b5871a68f6
+'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.15-0ubuntu10.18.diff.gz' eglibc_2.15-0ubuntu10.18.diff.gz 1925339 SHA256:157e75ddbcc6d2add81ad143b6153ebe772cc0545d37d410790a83ba7bcb5923
+```
 
 ### `dpkg` source package: `elfutils=0.152-1ubuntu3.1`
 
@@ -822,11 +828,11 @@ $ apt-get source -qq --print-uris lsb=4.0-0ubuntu20.3
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lsb/lsb_4.0-0ubuntu20.3.tar.gz' lsb_4.0-0ubuntu20.3.tar.gz 62668 SHA256:eaca2326684fc6d68f246964fee2e51689d2eb8006a618314c70d60bad130741
 ```
 
-### `dpkg` source package: `makedev=2.3.1-89ubuntu2`
+### `dpkg` source package: `makedev=2.3.1-89ubuntu3`
 
 Binary Packages:
 
-- `makedev=2.3.1-89ubuntu2`
+- `makedev=2.3.1-89ubuntu3`
 
 Licenses: (parsed from: `/usr/share/doc/makedev/copyright`)
 
@@ -835,10 +841,10 @@ Licenses: (parsed from: `/usr/share/doc/makedev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris makedev=2.3.1-89ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/makedev/makedev_2.3.1-89ubuntu2.dsc' makedev_2.3.1-89ubuntu2.dsc 1725 SHA256:0c38924b1993be30b88cc7d9dd6f44835aaffbb4a2ae5e11c7974d95eacd5048
+$ apt-get source -qq --print-uris makedev=2.3.1-89ubuntu3
+'http://archive.ubuntu.com/ubuntu/pool/main/m/makedev/makedev_2.3.1-89ubuntu3.dsc' makedev_2.3.1-89ubuntu3.dsc 1695 SHA256:31d9e6edfa2ad5545d0492b748cfca5b752c6df79f2560c6f0a5e0d35d07a4e7
 'http://archive.ubuntu.com/ubuntu/pool/main/m/makedev/makedev_2.3.1.orig.tar.gz' makedev_2.3.1.orig.tar.gz 9924 SHA256:8599712f2b2b3778eea344f59e1512cea284e802560317fac436585885a41dfa
-'http://archive.ubuntu.com/ubuntu/pool/main/m/makedev/makedev_2.3.1-89ubuntu2.diff.gz' makedev_2.3.1-89ubuntu2.diff.gz 49744 SHA256:ab180d99310aed9747336ebc0ea4dfcb4c6b43f7aace42775705191477d52b65
+'http://archive.ubuntu.com/ubuntu/pool/main/m/makedev/makedev_2.3.1-89ubuntu3.diff.gz' makedev_2.3.1-89ubuntu3.diff.gz 50039 SHA256:866628090991f008505d7b83120d516060b54577c0215a100a49637ec4bebd52
 ```
 
 ### `dpkg` source package: `mawk=1.3.3-17`
