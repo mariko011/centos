@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1789628da3b594246fd82086ef5bdf4ea3c2bea49a258f6e978b53b018c8aae0`
-- Created: `2017-04-03T21:38:24.127812137Z`
+- Image ID: `sha256:385ce5a59052f8271db7ae4aca2f53c4d97a6e21c3271973874482bee56ac290`
+- Created: `2017-04-11T23:35:54.659736024Z`
 - Virtual Size: ~ 1.16 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,9 +22,9 @@
   - `OPENSSL_VERSION=1.1.0e-1`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.0.43`
-  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.43/bin/apache-tomcat-8.0.43.tar.gz`
-  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.43/bin/apache-tomcat-8.0.43.tar.gz.asc`
+  - `TOMCAT_VERSION=8.5.13`
+  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.13/bin/apache-tomcat-8.5.13.tar.gz`
+  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.5.13/bin/apache-tomcat-8.5.13.tar.gz.asc`
   - `XWIKI_VERSION=8.4.4`
   - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/enterprise/xwiki-enterprise-web/8.4.4`
   - `XWIKI_DOWNLOAD_SHA256=b414edb4527e3d8b27c40a8c3f2f09423980de7963207b7dc89da71d14e7fb23`
@@ -1917,18 +1917,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/iso-codes/3.57-1/
 - https://sources.debian.net/src/iso-codes/3.57-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `jasper=1.900.1-debian1-2.4+deb8u2`
+### `dpkg` source package: `jasper=1.900.1-debian1-2.4+deb8u3`
 
 Binary Packages:
 
-- `libjasper1:amd64=1.900.1-debian1-2.4+deb8u2`
+- `libjasper1:amd64=1.900.1-debian1-2.4+deb8u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris jasper=1.900.1-debian1-2.4+deb8u3
+'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u3.dsc' jasper_1.900.1-debian1-2.4+deb8u3.dsc 1969 SHA256:9c5228e9f5107ef3ce7565b93bdb00718412b8d15e6dad0328774df223a3c3b5
+'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-debian1.orig.tar.gz' jasper_1.900.1-debian1.orig.tar.gz 1140771 SHA256:7276e8407080d8263b39aeac8305032b0534c7df25bf02718b3944711e3c81d7
+'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u3.debian.tar.xz' jasper_1.900.1-debian1-2.4+deb8u3.debian.tar.xz 34032 SHA256:57b9d7b949a4a0696d6bdc93d56a7ee59d85f3c7cfa34e33a493b3fbf3d99bbf
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u3/
+- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `java-common=0.52`
 
