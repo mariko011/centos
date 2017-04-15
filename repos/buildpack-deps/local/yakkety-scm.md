@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:028a2fd74ec44ee8f9baeeb2a0819056e48201cdcf49f63adffc5a31ae8390a3`
-- Created: `2017-02-27T21:32:30.826918646Z`
-- Virtual Size: ~ 246.75 Mb  
+- Image ID: `sha256:bf67beba0ad329f9969af723af79ce879f5ec1660f6bcf6e94bc56c9470b197d`
+- Created: `2017-04-12T21:53:15.778736857Z`
+- Virtual Size: ~ 247.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -304,11 +304,11 @@ $ apt-get source -qq --print-uris configobj=5.0.6-2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6-2.debian.tar.xz' configobj_5.0.6-2.debian.tar.xz 7436 SHA256:dc677cd329b4a3aacebe10c5a169d9d092cc27888c3f3f9203930cacd6a0eab8
 ```
 
-### `dpkg` source package: `coreutils=8.25-2ubuntu2`
+### `dpkg` source package: `coreutils=8.25-2ubuntu3~16.10`
 
 Binary Packages:
 
-- `coreutils=8.25-2ubuntu2`
+- `coreutils=8.25-2ubuntu3~16.10`
 
 Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
@@ -317,10 +317,10 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris coreutils=8.25-2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.25-2ubuntu2.dsc' coreutils_8.25-2ubuntu2.dsc 2071 SHA256:8f2d6456701648072a4ed22142bcb8c0113d4488dd28acd1fc46e26952bbef91
+$ apt-get source -qq --print-uris coreutils=8.25-2ubuntu3~16.10
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.25-2ubuntu3~16.10.dsc' coreutils_8.25-2ubuntu3~16.10.dsc 2095 SHA256:459e69bb46c0a3df3c7b9ebbd8515c80b149166972592055e91c73e5a18d774f
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.25.orig.tar.xz' coreutils_8.25.orig.tar.xz 5725008 SHA256:31e67c057a5b32a582f26408c789e11c2e8d676593324849dcf5779296cdce87
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.25-2ubuntu2.debian.tar.xz' coreutils_8.25-2ubuntu2.debian.tar.xz 28040 SHA256:221f38aeb8e251c21edcdb93706deb61ac7619264c1e403609f67e13431e69bb
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.25-2ubuntu3~16.10.debian.tar.xz' coreutils_8.25-2ubuntu3~16.10.debian.tar.xz 28352 SHA256:da94f85e6db7cdb1a6809fc5f198b3bb10b2e07105391f27c1d11cf4c1809ad9
 ```
 
 ### `dpkg` source package: `curl=7.50.1-1ubuntu1.1`

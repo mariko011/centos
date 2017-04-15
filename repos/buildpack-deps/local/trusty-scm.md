@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:baf61dc23d149300bc4c00d2eda729e14b28251fbdd6d687719239a7f2ff9bef`
-- Created: `2017-02-27T21:23:36.330015616Z`
-- Virtual Size: ~ 279.63 Mb  
+- Image ID: `sha256:5c3e968d73c81401d109ba4cd773ab9bb2c88be0966d2bec52b8699a7e8bdc66`
+- Created: `2017-04-12T21:47:29.135270939Z`
+- Virtual Size: ~ 279.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -649,27 +649,33 @@ $ apt-get source -qq --print-uris e2fsprogs=1.42.9-3ubuntu1.3
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.42.9-3ubuntu1.3.debian.tar.gz' e2fsprogs_1.42.9-3ubuntu1.3.debian.tar.gz 137885 SHA256:541cf9e092ef6d6e45fddd5fa0b44903f597ec045cbb1358db109e994e97fceb
 ```
 
-### `dpkg` source package: `eglibc=2.19-0ubuntu6.9`
+### `dpkg` source package: `eglibc=2.19-0ubuntu6.11`
 
 Binary Packages:
 
-- `libc-bin=2.19-0ubuntu6.9`
-- `libc6:amd64=2.19-0ubuntu6.9`
-- `multiarch-support=2.19-0ubuntu6.9`
+- `libc-bin=2.19-0ubuntu6.11`
+- `libc6:amd64=2.19-0ubuntu6.11`
+- `multiarch-support=2.19-0ubuntu6.11`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris eglibc=2.19-0ubuntu6.11
+'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19-0ubuntu6.11.dsc' eglibc_2.19-0ubuntu6.11.dsc 5814 SHA256:75e9864cd38e09860431e43f1b4268beb8b1ae977dda47a0154e85bb34e45599
+'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19.orig.tar.xz' eglibc_2.19.orig.tar.xz 12610800 SHA256:e5d30be72b702dffae527779af1be755f0dfbf13c171998a04f7265cd4da131f
+'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19-0ubuntu6.11.debian.tar.xz' eglibc_2.19-0ubuntu6.11.debian.tar.xz 1044376 SHA256:c599487052adba4c369f1685c4431b66ee925c62e767faadeb03378420791d68
+```
 
-### `dpkg` source package: `eject=2.1.5+deb1+cvs20081104-13.1`
+### `dpkg` source package: `eject=2.1.5+deb1+cvs20081104-13.1ubuntu0.14.04.1`
 
 Binary Packages:
 
-- `eject=2.1.5+deb1+cvs20081104-13.1`
+- `eject=2.1.5+deb1+cvs20081104-13.1ubuntu0.14.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/eject/copyright`)
 
@@ -678,10 +684,10 @@ Licenses: (parsed from: `/usr/share/doc/eject/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris eject=2.1.5+deb1+cvs20081104-13.1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/eject/eject_2.1.5+deb1+cvs20081104-13.1.dsc' eject_2.1.5+deb1+cvs20081104-13.1.dsc 2070 SHA256:62ba02264bc960e521ad85aba20a7e940c3922f2cd614d8387a83a4dabe1e9a3
+$ apt-get source -qq --print-uris eject=2.1.5+deb1+cvs20081104-13.1ubuntu0.14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/e/eject/eject_2.1.5+deb1+cvs20081104-13.1ubuntu0.14.04.1.dsc' eject_2.1.5+deb1+cvs20081104-13.1ubuntu0.14.04.1.dsc 2192 SHA256:6a54b0409a840aec8a06d0f56c9d63c87e67571d43afcee7838d4b64be665a8c
 'http://archive.ubuntu.com/ubuntu/pool/main/e/eject/eject_2.1.5+deb1+cvs20081104.orig.tar.gz' eject_2.1.5+deb1+cvs20081104.orig.tar.gz 120658 SHA256:f5c457b92d7bfc20924ebdc8515661222b40e036eae6e2fada4220d47884e9c1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/eject/eject_2.1.5+deb1+cvs20081104-13.1.diff.gz' eject_2.1.5+deb1+cvs20081104-13.1.diff.gz 140473 SHA256:9ca7be739556faab2c87e0f6815312e9c67b5907bf9d17d7a8e0ff93cf955820
+'http://archive.ubuntu.com/ubuntu/pool/main/e/eject/eject_2.1.5+deb1+cvs20081104-13.1ubuntu0.14.04.1.diff.gz' eject_2.1.5+deb1+cvs20081104-13.1ubuntu0.14.04.1.diff.gz 140613 SHA256:f340d6efce72ecfb7718523af422d2ea24ef358f5218790200ba259c67485112
 ```
 
 ### `dpkg` source package: `expat=2.1.0-4ubuntu1.3`
@@ -829,12 +835,12 @@ $ apt-get source -qq --print-uris gdbm=1.8.3-12build1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.8.3-12build1.debian.tar.bz2' gdbm_1.8.3-12build1.debian.tar.bz2 15091 SHA256:5e511c9a6419501dd31e21af84431f41f8785e0f48d6475ebfc48fa49f20fdba
 ```
 
-### `dpkg` source package: `git=1:1.9.1-1ubuntu0.3`
+### `dpkg` source package: `git=1:1.9.1-1ubuntu0.4`
 
 Binary Packages:
 
-- `git=1:1.9.1-1ubuntu0.3`
-- `git-man=1:1.9.1-1ubuntu0.3`
+- `git=1:1.9.1-1ubuntu0.4`
+- `git-man=1:1.9.1-1ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -857,8 +863,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:1.9.1-1ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1-1ubuntu0.4.dsc' git_1.9.1-1ubuntu0.4.dsc 2794 SHA256:997f3b157fdd4fda0a7a99e6fbbc8e29425ae6c04a7c2adb2708ff44d39eb0ba
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1.orig.tar.xz' git_1.9.1.orig.tar.xz 3384080 SHA256:f962fbce8c049f94ece1d1845cba1528c13ff82de7cc8d23cddb3d0c93c3a77b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1-1ubuntu0.4.debian.tar.gz' git_1.9.1-1ubuntu0.4.debian.tar.gz 618634 SHA256:f5c3bb7b641890e0444b68c293e07b6888ff71f635ff312964338d1863955927
+```
 
 ### `dpkg` source package: `gnupg=1.4.16-1ubuntu2.4`
 
@@ -881,12 +893,12 @@ $ apt-get source -qq --print-uris gnupg=1.4.16-1ubuntu2.4
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.16-1ubuntu2.4.debian.tar.gz' gnupg_1.4.16-1ubuntu2.4.debian.tar.gz 56430 SHA256:dbc2738c30cdcedb459e0ff0a9d1ec42e7b238b96c4a9326cae84a0afdae6441
 ```
 
-### `dpkg` source package: `gnutls26=2.12.23-12ubuntu2.6`
+### `dpkg` source package: `gnutls26=2.12.23-12ubuntu2.7`
 
 Binary Packages:
 
-- `libgnutls-openssl27:amd64=2.12.23-12ubuntu2.6`
-- `libgnutls26:amd64=2.12.23-12ubuntu2.6`
+- `libgnutls-openssl27:amd64=2.12.23-12ubuntu2.7`
+- `libgnutls26:amd64=2.12.23-12ubuntu2.7`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls-openssl27/copyright`, `/usr/share/doc/libgnutls26/copyright`)
 
@@ -896,8 +908,14 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls-openssl27/copyright`, `/usr/sh
 - `LGPL-2.1`
 - `The main library is licensed under GNU Lesser General Public`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnutls26=2.12.23-12ubuntu2.7
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23-12ubuntu2.7.dsc' gnutls26_2.12.23-12ubuntu2.7.dsc 2722 SHA256:139a59763285c6c9247727136328098ae0fdbef176e7992186ca9f5d71cb6e08
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23.orig.tar.bz2' gnutls26_2.12.23.orig.tar.bz2 7279415 SHA256:dfa67a7e40727eb0913e75f3c44911d5d8cd58d1ead5acfe73dd933fc0d17ed2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23-12ubuntu2.7.debian.tar.gz' gnutls26_2.12.23-12ubuntu2.7.debian.tar.gz 45690 SHA256:0414eef137ee97af2ef318495bccfc3bc1faf58b66702fa522724ba14c7075b4
+```
 
 ### `dpkg` source package: `grep=2.16-1`
 
@@ -1019,19 +1037,24 @@ $ apt-get source -qq --print-uris init-system-helpers=1.14ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.14ubuntu1.tar.xz' init-system-helpers_1.14ubuntu1.tar.xz 15436 SHA256:c9f7e8c0d1ee2cdfb12b7a82ffee5a5c90e3d70478591d28803e011e8053a252
 ```
 
-### `dpkg` source package: `initramfs-tools=0.103ubuntu4.6`
+### `dpkg` source package: `initramfs-tools=0.103ubuntu4.7`
 
 Binary Packages:
 
-- `initramfs-tools=0.103ubuntu4.6`
-- `initramfs-tools-bin=0.103ubuntu4.6`
+- `initramfs-tools=0.103ubuntu4.7`
+- `initramfs-tools-bin=0.103ubuntu4.7`
 
 Licenses: (parsed from: `/usr/share/doc/initramfs-tools/copyright`, `/usr/share/doc/initramfs-tools-bin/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris initramfs-tools=0.103ubuntu4.7
+'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.7.dsc' initramfs-tools_0.103ubuntu4.7.dsc 1897 SHA256:cf30787e4805334b28b15d6e25cde0559d27c08774c67ee91454136086888314
+'http://archive.ubuntu.com/ubuntu/pool/main/i/initramfs-tools/initramfs-tools_0.103ubuntu4.7.tar.xz' initramfs-tools_0.103ubuntu4.7.tar.xz 94356 SHA256:efb638f3c6e27b3d9c0ccdf0401a73941209db6719ad2a26497d384aacda51d8
+```
 
 ### `dpkg` source package: `insserv=1.14.0-5ubuntu2`
 
@@ -1927,11 +1950,11 @@ $ apt-get source -qq --print-uris lvm2=2.02.98-6ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lvm2/lvm2_2.02.98-6ubuntu2.debian.tar.gz' lvm2_2.02.98-6ubuntu2.debian.tar.gz 50761 SHA256:ccd198f7cb6c36501380bffab4469277d05ac7312c9a7f24b4340c035459f382
 ```
 
-### `dpkg` source package: `makedev=2.3.1-93ubuntu1`
+### `dpkg` source package: `makedev=2.3.1-93ubuntu2~ubuntu14.04.1`
 
 Binary Packages:
 
-- `makedev=2.3.1-93ubuntu1`
+- `makedev=2.3.1-93ubuntu2~ubuntu14.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/makedev/copyright`)
 
@@ -1940,10 +1963,10 @@ Licenses: (parsed from: `/usr/share/doc/makedev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris makedev=2.3.1-93ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/makedev/makedev_2.3.1-93ubuntu1.dsc' makedev_2.3.1-93ubuntu1.dsc 1829 SHA256:9f3e037e70cbf51260d210c8a0fd0ca19dbe522d984e5df75d118c1cb6ba491e
+$ apt-get source -qq --print-uris makedev=2.3.1-93ubuntu2~ubuntu14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/makedev/makedev_2.3.1-93ubuntu2~ubuntu14.04.1.dsc' makedev_2.3.1-93ubuntu2~ubuntu14.04.1.dsc 1855 SHA256:ebf11be2acad15365e659251b46c45a9f66306fc09cc554339dea4c798c117dc
 'http://archive.ubuntu.com/ubuntu/pool/main/m/makedev/makedev_2.3.1.orig.tar.gz' makedev_2.3.1.orig.tar.gz 9924 SHA256:8599712f2b2b3778eea344f59e1512cea284e802560317fac436585885a41dfa
-'http://archive.ubuntu.com/ubuntu/pool/main/m/makedev/makedev_2.3.1-93ubuntu1.diff.gz' makedev_2.3.1-93ubuntu1.diff.gz 50235 SHA256:1d505a73e743d1d6390ef66d6892007aaa36d4a4a7fab6987196381f9a743961
+'http://archive.ubuntu.com/ubuntu/pool/main/m/makedev/makedev_2.3.1-93ubuntu2~ubuntu14.04.1.diff.gz' makedev_2.3.1-93ubuntu2~ubuntu14.04.1.diff.gz 50336 SHA256:ba9a3313d0711db1188b2674bb4f3114f6ff3bec2e568808c38a3134b5440361
 ```
 
 ### `dpkg` source package: `mawk=1.3.3-17ubuntu2`
