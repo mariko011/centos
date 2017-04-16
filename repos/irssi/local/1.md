@@ -1197,19 +1197,8 @@ Licenses: (parsed from: `/usr/share/doc/libdatetime-timezone-perl/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libdatetime-timezone-perl=1:1.75-2+2017a
-'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_1.75-2+2017a.dsc' libdatetime-timezone-perl_1.75-2+2017a.dsc 2628 SHA256:e6d986d5c3599a5157056464d8870da3204e98acab44fd787146cb6618790d86
-'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_1.75.orig.tar.gz' libdatetime-timezone-perl_1.75.orig.tar.gz 888615 SHA256:8ea1282f1ab348766e9a81b46dac6e764375e319f442c24e030d14beb03a6e73
-'http://deb.debian.org/debian/pool/main/libd/libdatetime-timezone-perl/libdatetime-timezone-perl_1.75-2+2017a.debian.tar.xz' libdatetime-timezone-perl_1.75-2+2017a.debian.tar.xz 213332 SHA256:59b508cbfacd20525299c3db16053438166a916407b7bf6fa44a9879152e4d7d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libdatetime-timezone-perl/1:1.75-2+2017a/
-- https://sources.debian.net/src/libdatetime-timezone-perl/1:1.75-2+2017a/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libencode-locale-perl=1.03-1`
 
@@ -3065,19 +3054,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2017a-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017a-0+deb8u1.dsc' tzdata_2017a-0+deb8u1.dsc 1985 SHA256:f1c8c314ce7e42d325ff901537fc16bbf814248c4042dd631783144dbb24b9f6
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017a.orig.tar.gz' tzdata_2017a.orig.tar.gz 323983 SHA256:df3a5c4d0a2cf0cde0b3f35796ccf6c9acfd598b8e70f8dece5404cd7626bbd6
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017a-0+deb8u1.debian.tar.xz' tzdata_2017a-0+deb8u1.debian.tar.xz 102688 SHA256:4bff4af61570611f416cade4e097ab0572fbdd162092db95cf086edeaf4263d9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2017a-0+deb8u1/
-- https://sources.debian.net/src/tzdata/2017a-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 
