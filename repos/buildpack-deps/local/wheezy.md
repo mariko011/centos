@@ -960,18 +960,8 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`, `/usr/share/doc
 - `GZip`
 - `OpenGroup-BSD-like`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris freetype=2.4.9-1.1+deb7u4
-'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u4.dsc' freetype_2.4.9-1.1+deb7u4.dsc 1823 SHA256:b70401144ebff9cb1c377bc97199a544b6f03d88a51e355a69b3cfd4215ae4fa
-'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u4.tar.gz' freetype_2.4.9-1.1+deb7u4.tar.gz 1830537 SHA256:4b41207dd700f7a1924f496339d697ee9da3c5f1ac8b0c6a846b358cc56e1b66
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u4/
-- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-4.7=4.7.2-5`
 
