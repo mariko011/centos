@@ -955,19 +955,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris icu=57.1-5
-'http://deb.debian.org/debian/pool/main/i/icu/icu_57.1-5.dsc' icu_57.1-5.dsc 2105 SHA256:46210c5e254e13e38948bad23ce19ad773e54872af1489eb6752e44ea74d16ef
-'http://deb.debian.org/debian/pool/main/i/icu/icu_57.1.orig.tar.gz' icu_57.1.orig.tar.gz 22360664 SHA256:ff8c67cb65949b1e7808f2359f2b80f722697048e90e7cfc382ec1fe229e9581
-'http://deb.debian.org/debian/pool/main/i/icu/icu_57.1-5.debian.tar.xz' icu_57.1-5.debian.tar.xz 30696 SHA256:bb40a948b1ad71a4a597231fbf4c94ebc1ed9a17c5b4ff897fdf1b066c0b387b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/icu/57.1-5/
-- https://sources.debian.net/src/icu/57.1-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9.4-2`
 
