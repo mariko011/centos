@@ -1,13 +1,13 @@
-# `adminer:4.3.0-standalone`
+# `adminer:4.3.1-standalone`
 
 ## Docker Metadata
 
-- Image ID: `sha256:81e7e092910be48d710b06235083b01a83a4a99ed5567c3f3b4ab6f720856db5`
-- Created: `2017-03-23T23:43:58.338224875Z`
-- Virtual Size: ~ 59.20 Mb  
+- Image ID: `sha256:9c91df4bf87f834b05b4299777740df8bef9fb63115950cfa7ba999270d3677c`
+- Created: `2017-04-18T22:16:52.368107951Z`
+- Virtual Size: ~ 59.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["docker-php-entrypoint"]`
+- Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
 - Command: `["php","-S","0.0.0.0:8080","-t","/var/www/html"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
@@ -17,10 +17,11 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=7.0.17`
-  - `PHP_URL=https://secure.php.net/get/php-7.0.17.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.17.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=471c16fcdd6a5e1a37199e97bcaeea6117626229785185be7532aaa7c6ee04be`
-  - `PHP_MD5=549df69a7a3c79d49fcafe2097579d9e`
-  - `ADMINER_VERSION=4.3.0`
-  - `ADMINER_DOWNLOAD_SHA256=3584e1b3c7f853118d66a92f9c0996c8db39b05ac2a2b2623ff1676ec09bc08e`
+  - `PHP_VERSION=7.0.18`
+  - `PHP_URL=https://secure.php.net/get/php-7.0.18.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.18.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=679cffcdf2495dee5ab89bda595e678a1096136678b3a1d08f1f57ba347c234d`
+  - `PHP_MD5=a578c55644d233635d2caa96c3a6f9c7`
+  - `ADMINER_VERSION=4.3.1`
+  - `ADMINER_DOWNLOAD_SHA256=71688c5db4d4e504c48c26ec2966ad85e721ef61e0377c5505cfb50b026d5491`
+  - `ADMINER_SRC_DOWNLOAD_SHA256=fd016c93bb3bb8e85ed9cf826064584012c4db83f30c4948d701250e29a6d953`
