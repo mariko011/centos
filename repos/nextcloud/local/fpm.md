@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:53ec489e5a5d438740b838da590d1af43b82fdb9f70b2d6a13b8522d9c5ca923`
-- Created: `2017-03-22T21:54:40.903750609Z`
-- Virtual Size: ~ 610.79 Mb  
+- Image ID: `sha256:250d18e5f559111711a289e134005896bb2f7f7dd85a3c0248e8c77769cde121`
+- Created: `2017-04-18T22:59:07.247712594Z`
+- Virtual Size: ~ 610.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -18,11 +18,11 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E`
-  - `PHP_VERSION=7.1.3`
-  - `PHP_URL=https://secure.php.net/get/php-7.1.3.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.3.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=e4887c2634778e37fd962fbdf5c4a7d32cd708482fe07b448804625570cb0bb0`
-  - `PHP_MD5=d604d688be17f4a05b99dbb7fb9581f4`
+  - `PHP_VERSION=7.1.4`
+  - `PHP_URL=https://secure.php.net/get/php-7.1.4.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.4.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=71514386adf3e963df087c2044a0b3747900b8b1fc8da3a99f0a0ae9180d300b`
+  - `PHP_MD5=a74c13f8779349872b365e6732e8c98e`
   - `NEXTCLOUD_VERSION=11.0.2`
 
 ## `dpkg` (`.deb`-based packages)
@@ -2802,19 +2802,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2017a-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017a-0+deb8u1.dsc' tzdata_2017a-0+deb8u1.dsc 1985 SHA256:f1c8c314ce7e42d325ff901537fc16bbf814248c4042dd631783144dbb24b9f6
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017a.orig.tar.gz' tzdata_2017a.orig.tar.gz 323983 SHA256:df3a5c4d0a2cf0cde0b3f35796ccf6c9acfd598b8e70f8dece5404cd7626bbd6
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017a-0+deb8u1.debian.tar.xz' tzdata_2017a-0+deb8u1.debian.tar.xz 102688 SHA256:4bff4af61570611f416cade4e097ab0572fbdd162092db95cf086edeaf4263d9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2017a-0+deb8u1/
-- https://sources.debian.net/src/tzdata/2017a-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 
