@@ -1,7 +1,7 @@
 ## `node:boron-wheezy`
 
 ```console
-$ docker pull node@sha256:30eb651a0b00dfe8ae6ac1dd33031f0bc8e1a38361221641518f8e7641787100
+$ docker pull node@sha256:adca6eedbaaef51a23668e46cd64d24e837a403177185ae133803d4e083eb808
 ```
 
 -	Platforms:
@@ -9,11 +9,11 @@ $ docker pull node@sha256:30eb651a0b00dfe8ae6ac1dd33031f0bc8e1a38361221641518f8e
 
 ### `node:boron-wheezy` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.9 MB (191938827 bytes)**  
+-	Total Size: **191.9 MB (191948790 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1fa408a58b6b80d18856327f6a87df89ce47a466a5776eeb65b40b153ce9483c`
+-	Image ID: `sha256:43e93f541eb5c36cebfd0b80ec9cda93c9cba90cb72e6d415fe95d4121080216`
 -	Default Command: `["node"]`
 
 ```dockerfile
@@ -37,11 +37,11 @@ ENV NPM_CONFIG_LOGLEVEL=info
 ENV NODE_VERSION=6.10.2
 # Fri, 07 Apr 2017 17:35:13 GMT
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz"   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1   && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs
-# Fri, 07 Apr 2017 17:35:14 GMT
-ENV YARN_VERSION=0.22.0
-# Fri, 07 Apr 2017 17:35:18 GMT
+# Thu, 20 Apr 2017 14:40:46 GMT
+ENV YARN_VERSION=0.23.2
+# Thu, 20 Apr 2017 14:40:50 GMT
 RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --keyserver pgp.mit.edu --recv-keys "$key" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;   done   && curl -fSL -o yarn.js "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-legacy-$YARN_VERSION.js"   && curl -fSL -o yarn.js.asc "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-legacy-$YARN_VERSION.js.asc"   && gpg --batch --verify yarn.js.asc yarn.js   && rm yarn.js.asc   && mv yarn.js /usr/local/bin/yarn   && chmod +x /usr/local/bin/yarn
-# Fri, 07 Apr 2017 17:35:18 GMT
+# Thu, 20 Apr 2017 14:40:51 GMT
 CMD ["node"]
 ```
 
@@ -74,7 +74,7 @@ CMD ["node"]
 		Last Modified: Fri, 07 Apr 2017 17:56:55 GMT  
 		Size: 14.0 MB (13991016 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:955e66c8f509810cc07bcc3669161da4ad39f63e546fced8ada1cb203d8dfd5a`  
-		Last Modified: Fri, 07 Apr 2017 17:56:51 GMT  
-		Size: 876.3 KB (876310 bytes)  
+	-	`sha256:53562ef676fa6dd2dad90e011e06e6b79f72cb42ea3706781967fabec18ad366`  
+		Last Modified: Thu, 20 Apr 2017 14:54:15 GMT  
+		Size: 886.3 KB (886273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
