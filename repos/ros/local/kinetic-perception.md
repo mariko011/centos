@@ -1043,13 +1043,8 @@ Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
 
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris distro-info-data=0.28ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.2.dsc' distro-info-data_0.28ubuntu0.2.dsc 1725 SHA256:b9de83f06d83cb2df38e54cb0e2235dc15754145d9f1cb79ba64a123be5a85e2
-'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.28ubuntu0.2.tar.xz' distro-info-data_0.28ubuntu0.2.tar.xz 6176 SHA256:45517b60c5a3c16fd40fb7db91d67cf9b5b3f4314a3e4acf455f66ce4e614fa8
-```
 
 ### `dpkg` source package: `double-conversion=2.0.1-3ubuntu2`
 
