@@ -1,10 +1,10 @@
-# `gradle:3.4.1-jdk9`
+# `gradle:3.5-jdk9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:63f3d2c8de56a2aa90aa724088360e79822c16fadedd2a1faf22037b15f2016f`
-- Created: `2017-03-24T17:04:33.276148077Z`
-- Virtual Size: ~ 653.88 Mb  
+- Image ID: `sha256:9f20ede9d16ead860431d42ebd54805cabf4f64d039e6af8c1a158c29a68060e`
+- Created: `2017-04-18T16:55:26.351349567Z`
+- Virtual Size: ~ 657.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -15,7 +15,7 @@
   - `JAVA_VERSION=9~b161`
   - `JAVA_DEBIAN_VERSION=9~b161-1`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=3.4.1`
+  - `GRADLE_VERSION=3.5`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2405,19 +2405,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.44+dfsg-3
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.44+dfsg-3.dsc' openldap_2.4.44+dfsg-3.dsc 2615 SHA256:4bd5c5abecc7c497724c88272761cb6f785a2e9101524dfe0fdbea059ef04cec
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.44+dfsg.orig.tar.gz' openldap_2.4.44+dfsg.orig.tar.gz 4826590 SHA256:d5187c229bec163c5d97845846e1b87917755f85b04f444c08836384f4bd7ffe
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.44+dfsg-3.debian.tar.xz' openldap_2.4.44+dfsg-3.debian.tar.xz 155908 SHA256:3aa07194de2a185d8b9ed2078ef7eed4b6e268bae05bbd68fb27eb375a37bf11
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openldap/2.4.44+dfsg-3/
-- https://sources.debian.net/src/openldap/2.4.44+dfsg-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssh=1:7.4p1-9`
 

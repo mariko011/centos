@@ -1,10 +1,10 @@
-# `gradle:3.4.1-jre7-alpine`
+# `gradle:3.5-jre7-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d3a2410d94985c65a47ef19e4909d281209bcb042982358d20bf83f8ad3ef213`
-- Created: `2017-03-24T17:03:22.799959657Z`
-- Virtual Size: ~ 201.39 Mb  
+- Image ID: `sha256:cbc5271e414521c3c6287d924623e444764934eb468b6bfc0ca46d78369cdfff`
+- Created: `2017-04-18T16:52:47.953132063Z`
+- Virtual Size: ~ 204.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -15,4 +15,4 @@
   - `JAVA_VERSION=7u121`
   - `JAVA_ALPINE_VERSION=7.121.2.6.8-r0`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=3.4.1`
+  - `GRADLE_VERSION=3.5`
