@@ -1005,14 +1005,8 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`, `/usr/share/doc
 - `GZip`
 - `OpenGroup-BSD-like`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris freetype=2.6.3-3ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.3-3ubuntu1.1.dsc' freetype_2.6.3-3ubuntu1.1.dsc 2230 SHA256:6318858ecfd535edc404fccf7d1b86bb79ee9292d8d507bc1976de5310d0b6f2
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.3.orig.tar.gz' freetype_2.6.3.orig.tar.gz 7313547 SHA256:814a22aad85e8ca2cb4acfc2e9dc59caa6eded4f6619590f7bd0a721e4b076a3
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.3-3ubuntu1.1.diff.gz' freetype_2.6.3-3ubuntu1.1.diff.gz 42751 SHA256:c0be5a2e7957e66d92c4468e12e7b7068cab215bd929afe19fca8a8753cbcdf3
-```
 
 ### `dpkg` source package: `gcc-6=6.2.0-5ubuntu12`
 
@@ -3919,14 +3913,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=231-9ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-9ubuntu3.dsc' systemd_231-9ubuntu3.dsc 4586 SHA256:e4ed2f214147546048b7dfecea82fe28980fc4f84869fc62822b7760a697d587
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231.orig.tar.gz' systemd_231.orig.tar.gz 4381464 SHA256:899733ad6c157cedbb89aec4efe3bc824dcfd65a1d6f6bebc7b043f7924e39b4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-9ubuntu3.debian.tar.xz' systemd_231-9ubuntu3.debian.tar.xz 156272 SHA256:6b126189f3080be65471a6a817dd5b19153cdd16faba84eaf816d2ba90b202f6
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`
 

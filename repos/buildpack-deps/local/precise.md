@@ -911,14 +911,8 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`, `/usr/share/doc
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris freetype=2.4.8-1ubuntu2.4
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.4.8-1ubuntu2.4.dsc' freetype_2.4.8-1ubuntu2.4.dsc 2132 SHA256:2245b74a5e7f21329f38a61b4102683caca83e25f9cfae5cb46661e34d3c8ee4
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.4.8.orig.tar.gz' freetype_2.4.8.orig.tar.gz 1761876 SHA256:69b8e431c44a380f178bf82cc3635340bcd0c029abba3a55db69a8a91d543211
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.4.8-1ubuntu2.4.diff.gz' freetype_2.4.8-1ubuntu2.4.diff.gz 61821 SHA256:5e03d3c98b423ab36f6486d5f575400c0efd712468b5c7caf076e64cac6b6745
-```
 
 ### `dpkg` source package: `gcc-4.6=4.6.3-1ubuntu5`
 
