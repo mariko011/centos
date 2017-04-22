@@ -1,10 +1,10 @@
-# `nginx:1.12.0`
+# `nginx:1.12.0-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6139903af4b3cbab1c601969f8a0c4eeaa0ca8ca9495ab84f5e967aa30d8df6b`
-- Created: `2017-04-19T20:06:47.271442071Z`
-- Virtual Size: ~ 109.33 Mb  
+- Image ID: `sha256:c72e241014b2883e255d8443d4d6eb87487a304370011d4d9a74a053a35c188b`
+- Created: `2017-04-19T20:07:26.143079683Z`
+- Virtual Size: ~ 153.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
@@ -634,6 +634,30 @@ Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
+
+### `dpkg` source package: `gdbm=1.8.3-14`
+
+Binary Packages:
+
+- `libgdbm3:amd64=1.8.3-14`
+
+Licenses: (parsed from: `/usr/share/doc/libgdbm3/copyright`)
+
+- `GPL-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris gdbm=1.8.3-14
+'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3-14.dsc' gdbm_1.8.3-14.dsc 1841 SHA256:312d3d28e287d287ee66e8ae3f25769676b1680ec1adc8c0815b5e9808405b13
+'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3.orig.tar.bz2' gdbm_1.8.3.orig.tar.bz2 172796 SHA256:1d5995b6e9e6be4ff62c8126d019f184a083dd8e6f75f6c74b9fe023b5b9440e
+'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3-14.debian.tar.xz' gdbm_1.8.3-14.debian.tar.xz 15308 SHA256:1c0570dd53947ea5980111f51b67356d647c4f21c502443b02397041dde0bf31
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/gdbm/1.8.3-14/
+- https://sources.debian.net/src/gdbm/1.8.3-14/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `geoip=1.6.9-4`
 
@@ -1629,6 +1653,25 @@ $ apt-get source -qq --print-uris nginx-module-njs=1.12.0.0.1.10-1~stretch
 'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-njs/nginx-module-njs_1.12.0.0.1.10-1~stretch.debian.tar.xz' nginx-module-njs_1.12.0.0.1.10-1~stretch.debian.tar.xz 139184 SHA256:de07c4996a1670d940a243fbfcfa6a04d7354e3d403f134c89dc52cb3639d08e
 ```
 
+### `dpkg` source package: `nginx-module-perl=1.12.0-1~stretch`
+
+Binary Packages:
+
+- `nginx-module-perl=1.12.0-1~stretch`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
+  If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris nginx-module-perl=1.12.0-1~stretch
+'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-perl/nginx-module-perl_1.12.0-1~stretch.dsc' nginx-module-perl_1.12.0-1~stretch.dsc 1639 SHA256:5e2c11bbae70f2e90d9fd4c0cbc1b730e0941debf932383b67d6fea736fcf685
+'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-perl/nginx-module-perl_1.12.0.orig.tar.gz' nginx-module-perl_1.12.0.orig.tar.gz 980831 SHA256:b4222e26fdb620a8d3c3a3a8b955e08b713672e1bc5198d1e4f462308a795b30
+'http://nginx.org/packages/debian/pool/nginx/n/nginx-module-perl/nginx-module-perl_1.12.0-1~stretch.debian.tar.xz' nginx-module-perl_1.12.0-1~stretch.debian.tar.xz 3392 SHA256:ab0de9d06eb0135f32f0d757edfb9fe359f3118ba7eb3bc85ed2427c71f54689
+```
+
 ### `dpkg` source package: `nginx-module-xslt=1.12.0-1~stretch`
 
 Binary Packages:
@@ -1732,18 +1775,58 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `perl=5.24.1-1`
+### `dpkg` source package: `perl=5.24.1-2`
 
 Binary Packages:
 
-- `perl-base=5.24.1-1`
+- `libperl5.24:amd64=5.24.1-2`
+- `perl=5.24.1-2`
+- `perl-base=5.24.1-2`
+- `perl-modules-5.24=5.24.1-2`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+Licenses: (parsed from: `/usr/share/doc/libperl5.24/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.24/copyright`)
 
+- `Artistic`
+- `Artistic,`
+- `Artistic-2`
+- `BSD-3-clause`
+- `BSD-3-clause-GENERIC`
+- `BSD-3-clause-with-weird-numbering`
+- `BSD-4-clause-POWERDOG`
+- `BZIP`
+- `CC0-1.0`
+- `DONT-CHANGE-THE-GPL`
+- `Expat`
+- `GPL-1`
+- `GPL-1+`
+- `GPL-2`
+- `GPL-2+`
+- `GPL-3+-WITH-BISON-EXCEPTION`
+- `HSIEH-BSD`
+- `HSIEH-DERIVATIVE`
+- `LGPL-2.1`
+- `REGCOMP`
+- `REGCOMP,`
+- `RRA-KEEP-THIS-NOTICE`
+- `S2P`
+- `SDBM-PUBLIC-DOMAIN`
+- `TEXT-TABS`
+- `Unicode`
+- `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.24.1-2
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-2.dsc' perl_5.24.1-2.dsc 2316 SHA256:4938b6b81912d4fea8626b84f14292d49c25d500a223644b2f67db8f1d01e150
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-2.debian.tar.xz' perl_5.24.1-2.debian.tar.xz 165680 SHA256:e398649c63c1f50adace04531856b03a73892f6f210b2d18b16fb8978c5d28b8
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/perl/5.24.1-2/
+- https://sources.debian.net/src/perl/5.24.1-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sed=4.4-1`
 

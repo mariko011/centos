@@ -1,10 +1,10 @@
-# `nginx:1.12.0-alpine`
+# `nginx:1.12.0-alpine-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:61055e9116d49db73cf690aea5a08880714fa58e015497588f13efc6cc84fd43`
-- Created: `2017-04-19T20:08:35.583027202Z`
-- Virtual Size: ~ 15.49 Mb  
+- Image ID: `sha256:6cf2a05dc20963819e31bdcd14f43a7da8fd48cd949518ae33d4366455a872d4`
+- Created: `2017-04-19T20:09:50.494714682Z`
+- Virtual Size: ~ 57.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
