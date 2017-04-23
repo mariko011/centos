@@ -166,19 +166,8 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris audit=1:2.6.7-1
-'http://deb.debian.org/debian/pool/main/a/audit/audit_2.6.7-1.dsc' audit_2.6.7-1.dsc 2296 SHA256:1a7aa3f84928888f90132250e729c49079a0218870fadfb4c8227db81074ee5f
-'http://deb.debian.org/debian/pool/main/a/audit/audit_2.6.7.orig.tar.gz' audit_2.6.7.orig.tar.gz 1080848 SHA256:8923917332daa7833bbc0c1d9eb012167093fbad000da4a9630fb3356aff8cdc
-'http://deb.debian.org/debian/pool/main/a/audit/audit_2.6.7-1.debian.tar.xz' audit_2.6.7-1.debian.tar.xz 18208 SHA256:1a10461619f8c94113618e2f0a9287688f1d6ee46c847be89f572bc2d047982f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/audit/1:2.6.7-1/
-- https://sources.debian.net/src/audit/1:2.6.7-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `base-files=9.8`
 
@@ -861,19 +850,8 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.50.3-1
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.50.3-1.dsc' glib2.0_2.50.3-1.dsc 3302 SHA256:4ad61201e03f507ad3870ac0d7f412ccabe2a706363362403b0e529a442cf753
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.50.3.orig.tar.xz' glib2.0_2.50.3.orig.tar.xz 7589284 SHA256:82ee94bf4c01459b6b00cb9db0545c2237921e3060c0b74cff13fbc020cfd999
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.50.3-1.debian.tar.xz' glib2.0_2.50.3-1.debian.tar.xz 70320 SHA256:c6075ce960ff5fc4b6eab3efe6bf3cd8c628ac7ae0436024485482b1bb09645f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/glib2.0/2.50.3-1/
-- https://sources.debian.net/src/glib2.0/2.50.3-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.24-9`
 
@@ -1699,19 +1677,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.9.13-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.13-1.dsc' linux_4.9.13-1.dsc 82201 SHA256:3e50ec7a1899a589bfdbb17bdc9269f37972470c2e36082caf12fee9a91808aa
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.13.orig.tar.xz' linux_4.9.13.orig.tar.xz 94439656 SHA256:915d7698fedd588ee21d81fc996552acb79a13dad056549f268fbc8fddf17c51
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.13-1.debian.tar.xz' linux_4.9.13-1.debian.tar.xz 850316 SHA256:8ba4033a45d02f2dbba0ddfb783fcec510dfffd4b392138eb72eb3526a074537
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/4.9.13-1/
-- https://sources.debian.net/src/linux/4.9.13-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=9.20161125`
 
