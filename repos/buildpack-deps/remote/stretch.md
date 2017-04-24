@@ -1,7 +1,7 @@
 ## `buildpack-deps:stretch`
 
 ```console
-$ docker pull buildpack-deps@sha256:fb5981b4d43b9201cd6479c88a3c323bf2caca63f1c1bea95104445e96e9d9f0
+$ docker pull buildpack-deps@sha256:f9c6c35221d2b2c270f1c4bc2db4695fa738a947d36feee90c07bc508bed32a1
 ```
 
 -	Platforms:
@@ -9,40 +9,40 @@ $ docker pull buildpack-deps@sha256:fb5981b4d43b9201cd6479c88a3c323bf2caca63f1c1
 
 ### `buildpack-deps:stretch` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **312.1 MB (312082986 bytes)**  
+-	Total Size: **318.1 MB (318131301 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:231afedd88a8b4737dc4f9aa2142c666a028fa0fdfc349764764f3a22565c003`
+-	Image ID: `sha256:316af82765adc3bb593eb824a8cd9257372b31326cf39a49c31c60aa1d12b06f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:33:45 GMT
-ADD file:b784c500074cf93203f92498cb90882e098a854589ab7274432b376198176dfa in / 
-# Tue, 21 Mar 2017 18:33:46 GMT
+# Mon, 24 Apr 2017 19:26:26 GMT
+ADD file:3e87e8bcd3e576dad7c7632c32d053dc2ac10103d8db164567bc44f3a212d8bb in / 
+# Mon, 24 Apr 2017 19:26:27 GMT
 CMD ["/bin/bash"]
-# Tue, 21 Mar 2017 19:14:37 GMT
+# Mon, 24 Apr 2017 19:58:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 21 Mar 2017 19:14:54 GMT
+# Mon, 24 Apr 2017 19:58:55 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 21 Mar 2017 19:56:42 GMT
+# Mon, 24 Apr 2017 22:17:49 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:012cbff939ac501cbf2ec74788932aec11774e5a1cf3aa98e83fc0770331d7b0`  
-		Last Modified: Tue, 21 Mar 2017 18:48:04 GMT  
-		Size: 44.1 MB (44088731 bytes)  
+	-	`sha256:76c33172ab4c3bfe88cef473b7fb807a0d06740604b3b5966c22e499609074e6`  
+		Last Modified: Mon, 24 Apr 2017 19:38:06 GMT  
+		Size: 45.1 MB (45070239 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:351ea4253a6d4de9934229b0a3a79fa8ca81eff1ee23a632fcf3df109baf83a2`  
-		Last Modified: Tue, 21 Mar 2017 20:05:51 GMT  
-		Size: 21.0 MB (21018191 bytes)  
+	-	`sha256:bd034a0d94e626b5e864ffb2294eb1a1f65c9afc0ad41a4096851e0b7ff115bc`  
+		Last Modified: Mon, 24 Apr 2017 22:25:35 GMT  
+		Size: 21.3 MB (21267362 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa0f95e0817298dbe40ba7e33e4d322b95edf2e04418eb34316da813e79f4008`  
-		Last Modified: Tue, 21 Mar 2017 20:06:36 GMT  
-		Size: 40.0 MB (40048477 bytes)  
+	-	`sha256:026dda99b7f3a1996508cb7df0efa84a7009a081e44ffac6f8b74acedb879d26`  
+		Last Modified: Mon, 24 Apr 2017 22:26:20 GMT  
+		Size: 40.8 MB (40808098 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11f1a7b439fc0298d1756ec7972a30799f6154f194c322772293ed44a6a40a33`  
-		Last Modified: Tue, 21 Mar 2017 20:08:17 GMT  
-		Size: 206.9 MB (206927587 bytes)  
+	-	`sha256:51143e7c4f3e4f9f589fe9af1b95352ab2adc72b71c69a8f82ba955b1b034ef9`  
+		Last Modified: Mon, 24 Apr 2017 22:27:31 GMT  
+		Size: 211.0 MB (210985602 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

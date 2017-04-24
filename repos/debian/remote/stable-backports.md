@@ -1,7 +1,7 @@
 ## `debian:stable-backports`
 
 ```console
-$ docker pull debian@sha256:9b8a1032f0aac72439bfd8b685eade76454b456f74efcefc498308091d6b0157
+$ docker pull debian@sha256:d4799d79ac9955124c1c828e94813015f6e6d0cefd6150bc9025b9ca05c4f9fa
 ```
 
 -	Platforms:
@@ -9,28 +9,28 @@ $ docker pull debian@sha256:9b8a1032f0aac72439bfd8b685eade76454b456f74efcefc4983
 
 ### `debian:stable-backports` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.4 MB (51439396 bytes)**  
+-	Total Size: **52.6 MB (52551233 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f0d94160ecee1c39033dc9fe574697b26e43b1aa416af7a1751f2d4e22a90200`
+-	Image ID: `sha256:b8140b42352066f31f6a417b0e825b398daeacd6b1cdb2e99eadfc1c8471549d`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:32:32 GMT
-ADD file:220b9488c96728c5881b365e968968271c6e5e34e00b8c19f3097238e92fc870 in / 
-# Tue, 21 Mar 2017 18:32:44 GMT
+# Mon, 24 Apr 2017 19:24:56 GMT
+ADD file:83831dd0974b1a2215ca347441ebef6217c79df3e36c0fd78c58d5b407d61fed in / 
+# Mon, 24 Apr 2017 19:24:57 GMT
 CMD ["/bin/bash"]
-# Tue, 21 Mar 2017 18:33:22 GMT
+# Mon, 24 Apr 2017 19:25:50 GMT
 RUN awk '$1 ~ "^deb" { $3 = $3 "-backports"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/backports.list
 ```
 
 -	Layers:
-	-	`sha256:d372dc7ace90b531332e1c03401406474bde33de2ec3fef6d1a7dc3b3749862c`  
-		Last Modified: Tue, 21 Mar 2017 18:45:50 GMT  
-		Size: 51.4 MB (51439181 bytes)  
+	-	`sha256:6968f9a27d393ba161e664349862723f84f6b452db86ca10297f5137d4920225`  
+		Last Modified: Mon, 24 Apr 2017 19:36:43 GMT  
+		Size: 52.6 MB (52551018 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:391fbb901bbc72dab132554678bed1a02dc6d6e6ee5ce7042fb49b3957eee831`  
-		Last Modified: Tue, 21 Mar 2017 18:47:14 GMT  
+	-	`sha256:f52a4a2f0c708aa091fb5302c7ad5324790b4c9cad355996bba7666137bb7922`  
+		Last Modified: Mon, 24 Apr 2017 19:37:38 GMT  
 		Size: 215.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
