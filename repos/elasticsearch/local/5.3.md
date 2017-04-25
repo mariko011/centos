@@ -1,10 +1,10 @@
-# `elasticsearch:5.3.0`
+# `elasticsearch:5.3.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c90c19ac5480f6a430e985cf11009bf6bb510acdb865825b1e9eb7a097e88bb1`
-- Created: `2017-04-04T23:28:01.399895718Z`
-- Virtual Size: ~ 352.24 Mb  
+- Image ID: `sha256:ed2fd7772cfd2b68e31d3eb01c8f792d0fce09884e8aa81a3a8c82600aaa2740`
+- Created: `2017-04-25T02:35:41.264883439Z`
+- Virtual Size: ~ 352.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -17,5 +17,5 @@
   - `JAVA_DEBIAN_VERSION=8u121-b13-1~bpo8+1`
   - `CA_CERTIFICATES_JAVA_VERSION=20161107~bpo8+1`
   - `GOSU_VERSION=1.7`
-  - `ELASTICSEARCH_VERSION=5.3.0`
-  - `ELASTICSEARCH_DEB_VERSION=5.3.0`
+  - `ELASTICSEARCH_VERSION=5.3.1`
+  - `ELASTICSEARCH_DEB_VERSION=5.3.1`
