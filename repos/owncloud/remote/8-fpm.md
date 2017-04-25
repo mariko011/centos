@@ -1,7 +1,7 @@
 ## `owncloud:8-fpm`
 
 ```console
-$ docker pull owncloud@sha256:1faa017790cab3d3f0d550a99e05eff2ebac684d7ae8a6385cc5f1da39a73632
+$ docker pull owncloud@sha256:f621b0e277690a48f37dfc08b67077ee21342bcda71e4706678db03bd4dd8287
 ```
 
 -	Platforms:
@@ -9,11 +9,11 @@ $ docker pull owncloud@sha256:1faa017790cab3d3f0d550a99e05eff2ebac684d7ae8a6385c
 
 ### `owncloud:8-fpm` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **218.0 MB (217991048 bytes)**  
+-	Total Size: **218.2 MB (218163469 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b4d7a935515ed8f815caba471c0f0ad97f568cf30f7ef7a620dfd289ba5d7e72`
+-	Image ID: `sha256:3b6a61ee48ca8ab9c5d9da9123be7f1d8cd2614a23d6c760c5eeaae854a34448`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -72,17 +72,17 @@ RUN docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr 	&& doc
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 # Wed, 22 Mar 2017 22:06:37 GMT
 RUN set -ex 	&& pecl install APCu-4.0.10 	&& pecl install memcached-2.2.0 	&& pecl install redis-2.2.8 	&& docker-php-ext-enable apcu memcached redis
-# Wed, 22 Mar 2017 22:06:37 GMT
-ENV OWNCLOUD_VERSION=8.2.10
-# Wed, 22 Mar 2017 22:06:38 GMT
+# Tue, 25 Apr 2017 01:01:12 GMT
+ENV OWNCLOUD_VERSION=8.2.11
+# Tue, 25 Apr 2017 01:01:13 GMT
 VOLUME [/var/www/html]
-# Wed, 22 Mar 2017 22:06:50 GMT
+# Tue, 25 Apr 2017 01:01:25 GMT
 RUN curl -fsSL -o owncloud.tar.bz2 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2" 	&& curl -fsSL -o owncloud.tar.bz2.asc 		"https://download.owncloud.org/community/owncloud-${OWNCLOUD_VERSION}.tar.bz2.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys E3036906AD9F30807351FAC32D5D5E97F6978A26 	&& gpg --batch --verify owncloud.tar.bz2.asc owncloud.tar.bz2 	&& rm -r "$GNUPGHOME" owncloud.tar.bz2.asc 	&& tar -xjf owncloud.tar.bz2 -C /usr/src/ 	&& rm owncloud.tar.bz2
-# Wed, 22 Mar 2017 22:06:50 GMT
+# Tue, 25 Apr 2017 01:01:27 GMT
 COPY file:03fe90b626a097c27835e553f0b22ca55dc76d64d966006644b50609fffa4161 in /entrypoint.sh 
-# Wed, 22 Mar 2017 22:06:51 GMT
+# Tue, 25 Apr 2017 01:01:27 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 22 Mar 2017 22:06:51 GMT
+# Tue, 25 Apr 2017 01:01:28 GMT
 CMD ["php-fpm"]
 ```
 
@@ -139,11 +139,11 @@ CMD ["php-fpm"]
 		Last Modified: Thu, 23 Mar 2017 23:44:41 GMT  
 		Size: 1.3 MB (1331719 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a98ce3bfdd7181f764e4c116b88e4d1c5afa44f334bcc49c39e4829742003ae`  
-		Last Modified: Thu, 23 Mar 2017 23:49:59 GMT  
-		Size: 30.2 MB (30173854 bytes)  
+	-	`sha256:c85341433c3c717646b7892357a6469eda7e076717f5520d74a731d84dafe0c5`  
+		Last Modified: Tue, 25 Apr 2017 01:12:02 GMT  
+		Size: 30.3 MB (30346276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e604d46744628a24aa23a21fe6f51689757b6495fd9ac0295ddb27c11536324`  
-		Last Modified: Thu, 23 Mar 2017 23:49:43 GMT  
-		Size: 244.0 B  
+	-	`sha256:20275102ed8995e901ddffacca3d83f5ca6e82c11c3531145c2be461e1533f40`  
+		Last Modified: Tue, 25 Apr 2017 01:11:47 GMT  
+		Size: 243.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
