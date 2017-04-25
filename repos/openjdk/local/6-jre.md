@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0775312fafe0fd2847b003b465aedf0fe491417eadf87d9157672e0940b4ca54`
-- Created: `2017-03-21T20:54:45.266987803Z`
-- Virtual Size: ~ 195.82 Mb  
+- Image ID: `sha256:3dee8ef938e6b98d4ba777420ce28e16b4ae30be4430eba76a273d3246aa896d`
+- Created: `2017-04-24T23:39:48.633475039Z`
+- Virtual Size: ~ 195.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -335,12 +335,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/cups/1.5.3-5+deb7u6/
 - https://sources.debian.net/src/cups/1.5.3-5+deb7u6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `curl=7.26.0-1+wheezy18`
+### `dpkg` source package: `curl=7.26.0-1+wheezy19`
 
 Binary Packages:
 
-- `curl=7.26.0-1+wheezy18`
-- `libcurl3:amd64=7.26.0-1+wheezy18`
+- `curl=7.26.0-1+wheezy19`
+- `libcurl3:amd64=7.26.0-1+wheezy19`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
 
@@ -349,8 +349,19 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy19
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy19.dsc' curl_7.26.0-1+wheezy19.dsc 2534 SHA256:b1ea1e14b6edf19df59451d6acc7ab4bf08d43e7b44da0605c34fdb7e45ec84e
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy19.debian.tar.gz' curl_7.26.0-1+wheezy19.debian.tar.gz 65127 SHA256:729313e79a66ec2a4262a692d4a8128e283ee688d406a7d26a26d8676c084be3
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy19/
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy19/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
 
@@ -676,11 +687,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/findutils/4.4.2-4/
 - https://sources.debian.net/src/findutils/4.4.2-4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `freetype=2.4.9-1.1+deb7u4`
+### `dpkg` source package: `freetype=2.4.9-1.1+deb7u5`
 
 Binary Packages:
 
-- `libfreetype6:amd64=2.4.9-1.1+deb7u4`
+- `libfreetype6:amd64=2.4.9-1.1+deb7u5`
 
 Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 
@@ -693,8 +704,18 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 - `GZip`
 - `OpenGroup-BSD-like`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris freetype=2.4.9-1.1+deb7u5
+'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u5.dsc' freetype_2.4.9-1.1+deb7u5.dsc 1974 SHA256:40db3b896d410b9242e7553b6572b0b3b9e87d9c7f32ca61741d4802e2f2b52d
+'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u5.tar.gz' freetype_2.4.9-1.1+deb7u5.tar.gz 1831889 SHA256:d7f3fd64c7c691d7bc3718bd9d773b0f933955daa8b66f7128b1a651538e9fd1
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u5/
+- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-4.7=4.7.2-5`
 
@@ -2008,19 +2029,30 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tar/1.26+dfsg-0.1+deb7u1/
 - https://sources.debian.net/src/tar/1.26+dfsg-0.1+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tzdata=2017a-0+deb7u1`
+### `dpkg` source package: `tzdata=2017b-0+deb7u1`
 
 Binary Packages:
 
-- `tzdata=2017a-0+deb7u1`
-- `tzdata-java=2017a-0+deb7u1`
+- `tzdata=2017b-0+deb7u1`
+- `tzdata-java=2017b-0+deb7u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2017b-0+deb7u1
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017b-0+deb7u1.dsc' tzdata_2017b-0+deb7u1.dsc 1966 SHA256:584d7289af8af8436852eeee472936feee35aa8cdc134b587210c474a9a5695d
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017b.orig.tar.gz' tzdata_2017b.orig.tar.gz 324317 SHA256:f8242a522ea3496b0ce4ff4f2e75a049178da21001a08b8e666d8cbe07d18086
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017b-0+deb7u1.debian.tar.xz' tzdata_2017b-0+deb7u1.debian.tar.xz 102016 SHA256:87288325b84e8cec04c0424452e9dd05b3c0508f73af75381b6ea0ccf2f74b37
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/tzdata/2017b-0+deb7u1/
+- https://sources.debian.net/src/tzdata/2017b-0+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `unzip=6.0-8+deb7u6`
 
