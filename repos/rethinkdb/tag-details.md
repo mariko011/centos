@@ -17,7 +17,7 @@
 ## `rethinkdb:2.0.4`
 
 ```console
-$ docker pull rethinkdb@sha256:6ec8a49636ad05ce4a4a8e07974b13d6110f0c7d13d83073ecbe04cf9770970e
+$ docker pull rethinkdb@sha256:934b8ce4860263e2921a02bf07a836c6cb84b888aea49f0a58f9021a30393bd4
 ```
 
 -	Platforms:
@@ -25,64 +25,64 @@ $ docker pull rethinkdb@sha256:6ec8a49636ad05ce4a4a8e07974b13d6110f0c7d13d83073e
 
 ### `rethinkdb:2.0.4` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.8 MB (80816980 bytes)**  
+-	Total Size: **82.8 MB (82779772 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b5b009977160c946c220c18fdb9541ccd9e80e65bcd02a66a28460191427b94d`
+-	Image ID: `sha256:88f627cdab3e873ca2be4081299306bf4416a0706a53b04558f4791f45e4911a`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:28:51 GMT
-ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
-# Tue, 21 Mar 2017 18:29:05 GMT
+# Mon, 24 Apr 2017 19:20:41 GMT
+ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / 
+# Mon, 24 Apr 2017 19:20:42 GMT
 CMD ["/bin/bash"]
-# Wed, 22 Mar 2017 15:10:30 GMT
+# Tue, 25 Apr 2017 04:57:16 GMT
 MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
-# Wed, 22 Mar 2017 15:23:30 GMT
+# Tue, 25 Apr 2017 04:57:19 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
-# Wed, 22 Mar 2017 15:23:31 GMT
+# Tue, 25 Apr 2017 04:57:20 GMT
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
-# Wed, 22 Mar 2017 15:23:54 GMT
+# Tue, 25 Apr 2017 04:58:01 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.0.4~0jessie
-# Wed, 22 Mar 2017 15:24:10 GMT
+# Tue, 25 Apr 2017 04:58:20 GMT
 RUN apt-get update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 22 Mar 2017 15:24:10 GMT
+# Tue, 25 Apr 2017 04:58:21 GMT
 VOLUME [/data]
-# Wed, 22 Mar 2017 15:24:11 GMT
+# Tue, 25 Apr 2017 04:58:22 GMT
 WORKDIR /data
-# Wed, 22 Mar 2017 15:24:12 GMT
+# Tue, 25 Apr 2017 04:58:39 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Wed, 22 Mar 2017 15:24:12 GMT
+# Tue, 25 Apr 2017 04:58:39 GMT
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
 -	Layers:
-	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
-		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
-		Size: 51.4 MB (51438476 bytes)  
+	-	`sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c`  
+		Last Modified: Mon, 24 Apr 2017 19:32:05 GMT  
+		Size: 52.6 MB (52550276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01bf790001863c07015b34e931fbda4e0dbab0b4c18f0f6c51bc5b8bf8251513`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:60f7b9a55bc5fb557f2553e994f4afc58cb505dcbbdd1fad7dd77e16ee5e2626`  
+		Last Modified: Tue, 25 Apr 2017 21:21:53 GMT  
+		Size: 1.4 KB (1437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c1369da1a1d16d0bee337aa9241d8c4256ed478c4e6a86dece8914753177d46`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 215.0 B  
+	-	`sha256:1b28f0b951e87815ac357dfe80ebe3d2a1d08010590ba4addef71730f970ef68`  
+		Last Modified: Tue, 25 Apr 2017 21:21:53 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:406fd3d4c0b3c68b8a112b4e186caa47a850921639e2d84ad00fef86cf54058d`  
-		Last Modified: Fri, 24 Mar 2017 00:33:45 GMT  
-		Size: 29.4 MB (29376762 bytes)  
+	-	`sha256:93d6982d807ceeb1e950f70eb13dbac24bd80e117e28fa492b57a2c15f8a8861`  
+		Last Modified: Tue, 25 Apr 2017 21:21:59 GMT  
+		Size: 30.2 MB (30227755 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e31f5367c16d38bee2cfdd9339848bf25f5ee5e453c23a1c4124cf263642cf5`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 92.0 B  
+	-	`sha256:3da1de919f8a91d424c98adaec38912fe047082ebce58fbb71b5e09ed251dded`  
+		Last Modified: Tue, 25 Apr 2017 21:21:54 GMT  
+		Size: 91.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:2.0`
 
 ```console
-$ docker pull rethinkdb@sha256:6ec8a49636ad05ce4a4a8e07974b13d6110f0c7d13d83073ecbe04cf9770970e
+$ docker pull rethinkdb@sha256:934b8ce4860263e2921a02bf07a836c6cb84b888aea49f0a58f9021a30393bd4
 ```
 
 -	Platforms:
@@ -90,64 +90,64 @@ $ docker pull rethinkdb@sha256:6ec8a49636ad05ce4a4a8e07974b13d6110f0c7d13d83073e
 
 ### `rethinkdb:2.0` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.8 MB (80816980 bytes)**  
+-	Total Size: **82.8 MB (82779772 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b5b009977160c946c220c18fdb9541ccd9e80e65bcd02a66a28460191427b94d`
+-	Image ID: `sha256:88f627cdab3e873ca2be4081299306bf4416a0706a53b04558f4791f45e4911a`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:28:51 GMT
-ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
-# Tue, 21 Mar 2017 18:29:05 GMT
+# Mon, 24 Apr 2017 19:20:41 GMT
+ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / 
+# Mon, 24 Apr 2017 19:20:42 GMT
 CMD ["/bin/bash"]
-# Wed, 22 Mar 2017 15:10:30 GMT
+# Tue, 25 Apr 2017 04:57:16 GMT
 MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
-# Wed, 22 Mar 2017 15:23:30 GMT
+# Tue, 25 Apr 2017 04:57:19 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
-# Wed, 22 Mar 2017 15:23:31 GMT
+# Tue, 25 Apr 2017 04:57:20 GMT
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
-# Wed, 22 Mar 2017 15:23:54 GMT
+# Tue, 25 Apr 2017 04:58:01 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.0.4~0jessie
-# Wed, 22 Mar 2017 15:24:10 GMT
+# Tue, 25 Apr 2017 04:58:20 GMT
 RUN apt-get update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 22 Mar 2017 15:24:10 GMT
+# Tue, 25 Apr 2017 04:58:21 GMT
 VOLUME [/data]
-# Wed, 22 Mar 2017 15:24:11 GMT
+# Tue, 25 Apr 2017 04:58:22 GMT
 WORKDIR /data
-# Wed, 22 Mar 2017 15:24:12 GMT
+# Tue, 25 Apr 2017 04:58:39 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Wed, 22 Mar 2017 15:24:12 GMT
+# Tue, 25 Apr 2017 04:58:39 GMT
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
 -	Layers:
-	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
-		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
-		Size: 51.4 MB (51438476 bytes)  
+	-	`sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c`  
+		Last Modified: Mon, 24 Apr 2017 19:32:05 GMT  
+		Size: 52.6 MB (52550276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01bf790001863c07015b34e931fbda4e0dbab0b4c18f0f6c51bc5b8bf8251513`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:60f7b9a55bc5fb557f2553e994f4afc58cb505dcbbdd1fad7dd77e16ee5e2626`  
+		Last Modified: Tue, 25 Apr 2017 21:21:53 GMT  
+		Size: 1.4 KB (1437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c1369da1a1d16d0bee337aa9241d8c4256ed478c4e6a86dece8914753177d46`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 215.0 B  
+	-	`sha256:1b28f0b951e87815ac357dfe80ebe3d2a1d08010590ba4addef71730f970ef68`  
+		Last Modified: Tue, 25 Apr 2017 21:21:53 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:406fd3d4c0b3c68b8a112b4e186caa47a850921639e2d84ad00fef86cf54058d`  
-		Last Modified: Fri, 24 Mar 2017 00:33:45 GMT  
-		Size: 29.4 MB (29376762 bytes)  
+	-	`sha256:93d6982d807ceeb1e950f70eb13dbac24bd80e117e28fa492b57a2c15f8a8861`  
+		Last Modified: Tue, 25 Apr 2017 21:21:59 GMT  
+		Size: 30.2 MB (30227755 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e31f5367c16d38bee2cfdd9339848bf25f5ee5e453c23a1c4124cf263642cf5`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 92.0 B  
+	-	`sha256:3da1de919f8a91d424c98adaec38912fe047082ebce58fbb71b5e09ed251dded`  
+		Last Modified: Tue, 25 Apr 2017 21:21:54 GMT  
+		Size: 91.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:2.1.6`
 
 ```console
-$ docker pull rethinkdb@sha256:baff5f4b523a27cf353df4a7336f42bbc733b33c4f3e6d65837d4b925847169f
+$ docker pull rethinkdb@sha256:d7a68096ca5debd182d360f0bc494c4c7285096c4cd9a558ebfcba0dd2fe6000
 ```
 
 -	Platforms:
@@ -155,64 +155,64 @@ $ docker pull rethinkdb@sha256:baff5f4b523a27cf353df4a7336f42bbc733b33c4f3e6d658
 
 ### `rethinkdb:2.1.6` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **75.4 MB (75442026 bytes)**  
+-	Total Size: **77.2 MB (77176099 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab5560c5e9ec57858ec2e240566732c69dfd568d0bae6a1d02d55d98fd5d434b`
+-	Image ID: `sha256:5bd0a086a13d87c0a027c345f00e8c4a6ae6c7e3298b7619a70a9effbfa118e4`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:28:51 GMT
-ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
-# Tue, 21 Mar 2017 18:29:05 GMT
+# Mon, 24 Apr 2017 19:20:41 GMT
+ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / 
+# Mon, 24 Apr 2017 19:20:42 GMT
 CMD ["/bin/bash"]
-# Wed, 22 Mar 2017 15:10:30 GMT
+# Tue, 25 Apr 2017 04:57:16 GMT
 MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
-# Wed, 22 Mar 2017 15:23:30 GMT
+# Tue, 25 Apr 2017 04:57:19 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
-# Wed, 22 Mar 2017 15:23:31 GMT
+# Tue, 25 Apr 2017 04:57:20 GMT
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
-# Wed, 22 Mar 2017 15:24:13 GMT
+# Tue, 25 Apr 2017 04:58:57 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.1.6+1~0jessie
-# Wed, 22 Mar 2017 15:24:28 GMT
+# Tue, 25 Apr 2017 04:59:14 GMT
 RUN apt-get update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 22 Mar 2017 15:24:29 GMT
+# Tue, 25 Apr 2017 04:59:14 GMT
 VOLUME [/data]
-# Wed, 22 Mar 2017 15:24:30 GMT
+# Tue, 25 Apr 2017 04:59:15 GMT
 WORKDIR /data
-# Wed, 22 Mar 2017 15:24:30 GMT
+# Tue, 25 Apr 2017 04:59:16 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Wed, 22 Mar 2017 15:24:31 GMT
+# Tue, 25 Apr 2017 04:59:16 GMT
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
 -	Layers:
-	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
-		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
-		Size: 51.4 MB (51438476 bytes)  
+	-	`sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c`  
+		Last Modified: Mon, 24 Apr 2017 19:32:05 GMT  
+		Size: 52.6 MB (52550276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01bf790001863c07015b34e931fbda4e0dbab0b4c18f0f6c51bc5b8bf8251513`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:60f7b9a55bc5fb557f2553e994f4afc58cb505dcbbdd1fad7dd77e16ee5e2626`  
+		Last Modified: Tue, 25 Apr 2017 21:21:53 GMT  
+		Size: 1.4 KB (1437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c1369da1a1d16d0bee337aa9241d8c4256ed478c4e6a86dece8914753177d46`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 215.0 B  
+	-	`sha256:1b28f0b951e87815ac357dfe80ebe3d2a1d08010590ba4addef71730f970ef68`  
+		Last Modified: Tue, 25 Apr 2017 21:21:53 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e572ebb83234bc0925f9cdd9cbdc0f59911a54edab9060da69efc15b376d748`  
-		Last Modified: Fri, 24 Mar 2017 00:34:36 GMT  
-		Size: 24.0 MB (24001810 bytes)  
+	-	`sha256:456b631ec5b8ed3894543d79853e8b4530a0aef89a406c6467ff4d724312465e`  
+		Last Modified: Tue, 25 Apr 2017 21:22:47 GMT  
+		Size: 24.6 MB (24624080 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:108098615ea704d0b3eac9f5507a5cf768cf3f59505cd2dd0465d9bf3e8ff2ff`  
-		Last Modified: Fri, 24 Mar 2017 00:34:28 GMT  
-		Size: 90.0 B  
+	-	`sha256:b20698a31fd476e892e3c4d4734632d44879e81efee13d7a493f622b6f0d13d6`  
+		Last Modified: Tue, 25 Apr 2017 21:22:43 GMT  
+		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:2.1`
 
 ```console
-$ docker pull rethinkdb@sha256:baff5f4b523a27cf353df4a7336f42bbc733b33c4f3e6d65837d4b925847169f
+$ docker pull rethinkdb@sha256:d7a68096ca5debd182d360f0bc494c4c7285096c4cd9a558ebfcba0dd2fe6000
 ```
 
 -	Platforms:
@@ -220,64 +220,64 @@ $ docker pull rethinkdb@sha256:baff5f4b523a27cf353df4a7336f42bbc733b33c4f3e6d658
 
 ### `rethinkdb:2.1` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **75.4 MB (75442026 bytes)**  
+-	Total Size: **77.2 MB (77176099 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab5560c5e9ec57858ec2e240566732c69dfd568d0bae6a1d02d55d98fd5d434b`
+-	Image ID: `sha256:5bd0a086a13d87c0a027c345f00e8c4a6ae6c7e3298b7619a70a9effbfa118e4`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:28:51 GMT
-ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
-# Tue, 21 Mar 2017 18:29:05 GMT
+# Mon, 24 Apr 2017 19:20:41 GMT
+ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / 
+# Mon, 24 Apr 2017 19:20:42 GMT
 CMD ["/bin/bash"]
-# Wed, 22 Mar 2017 15:10:30 GMT
+# Tue, 25 Apr 2017 04:57:16 GMT
 MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
-# Wed, 22 Mar 2017 15:23:30 GMT
+# Tue, 25 Apr 2017 04:57:19 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
-# Wed, 22 Mar 2017 15:23:31 GMT
+# Tue, 25 Apr 2017 04:57:20 GMT
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
-# Wed, 22 Mar 2017 15:24:13 GMT
+# Tue, 25 Apr 2017 04:58:57 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.1.6+1~0jessie
-# Wed, 22 Mar 2017 15:24:28 GMT
+# Tue, 25 Apr 2017 04:59:14 GMT
 RUN apt-get update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 22 Mar 2017 15:24:29 GMT
+# Tue, 25 Apr 2017 04:59:14 GMT
 VOLUME [/data]
-# Wed, 22 Mar 2017 15:24:30 GMT
+# Tue, 25 Apr 2017 04:59:15 GMT
 WORKDIR /data
-# Wed, 22 Mar 2017 15:24:30 GMT
+# Tue, 25 Apr 2017 04:59:16 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Wed, 22 Mar 2017 15:24:31 GMT
+# Tue, 25 Apr 2017 04:59:16 GMT
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
 -	Layers:
-	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
-		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
-		Size: 51.4 MB (51438476 bytes)  
+	-	`sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c`  
+		Last Modified: Mon, 24 Apr 2017 19:32:05 GMT  
+		Size: 52.6 MB (52550276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01bf790001863c07015b34e931fbda4e0dbab0b4c18f0f6c51bc5b8bf8251513`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:60f7b9a55bc5fb557f2553e994f4afc58cb505dcbbdd1fad7dd77e16ee5e2626`  
+		Last Modified: Tue, 25 Apr 2017 21:21:53 GMT  
+		Size: 1.4 KB (1437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c1369da1a1d16d0bee337aa9241d8c4256ed478c4e6a86dece8914753177d46`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 215.0 B  
+	-	`sha256:1b28f0b951e87815ac357dfe80ebe3d2a1d08010590ba4addef71730f970ef68`  
+		Last Modified: Tue, 25 Apr 2017 21:21:53 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e572ebb83234bc0925f9cdd9cbdc0f59911a54edab9060da69efc15b376d748`  
-		Last Modified: Fri, 24 Mar 2017 00:34:36 GMT  
-		Size: 24.0 MB (24001810 bytes)  
+	-	`sha256:456b631ec5b8ed3894543d79853e8b4530a0aef89a406c6467ff4d724312465e`  
+		Last Modified: Tue, 25 Apr 2017 21:22:47 GMT  
+		Size: 24.6 MB (24624080 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:108098615ea704d0b3eac9f5507a5cf768cf3f59505cd2dd0465d9bf3e8ff2ff`  
-		Last Modified: Fri, 24 Mar 2017 00:34:28 GMT  
-		Size: 90.0 B  
+	-	`sha256:b20698a31fd476e892e3c4d4734632d44879e81efee13d7a493f622b6f0d13d6`  
+		Last Modified: Tue, 25 Apr 2017 21:22:43 GMT  
+		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:2.2.6`
 
 ```console
-$ docker pull rethinkdb@sha256:69b4de11608d043a1c8fbf8690d40a11bc38f79837eda8e98d0caef25d5909ba
+$ docker pull rethinkdb@sha256:33c6b7a4e85187c527206e73c0b9c5e745f9c77db0618f04967c63e956a2d434
 ```
 
 -	Platforms:
@@ -285,64 +285,64 @@ $ docker pull rethinkdb@sha256:69b4de11608d043a1c8fbf8690d40a11bc38f79837eda8e98
 
 ### `rethinkdb:2.2.6` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **75.6 MB (75616651 bytes)**  
+-	Total Size: **77.4 MB (77353143 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1aae5b2879c41cf3e41fda39cc8cfc88aa74284ec59ef46ad8701b76efad5356`
+-	Image ID: `sha256:2041dd8ad272ff8c3a7e435aa2a6b0170d9756513eaa310240c3527043d857e1`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:28:51 GMT
-ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
-# Tue, 21 Mar 2017 18:29:05 GMT
+# Mon, 24 Apr 2017 19:20:41 GMT
+ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / 
+# Mon, 24 Apr 2017 19:20:42 GMT
 CMD ["/bin/bash"]
-# Wed, 22 Mar 2017 15:10:30 GMT
+# Tue, 25 Apr 2017 04:57:16 GMT
 MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
-# Wed, 22 Mar 2017 15:23:30 GMT
+# Tue, 25 Apr 2017 04:57:19 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
-# Wed, 22 Mar 2017 15:23:31 GMT
+# Tue, 25 Apr 2017 04:57:20 GMT
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
-# Wed, 22 Mar 2017 15:24:32 GMT
+# Tue, 25 Apr 2017 04:59:38 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.2.6~0jessie
-# Wed, 22 Mar 2017 15:24:47 GMT
+# Tue, 25 Apr 2017 04:59:56 GMT
 RUN apt-get update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 22 Mar 2017 15:24:48 GMT
+# Tue, 25 Apr 2017 04:59:57 GMT
 VOLUME [/data]
-# Wed, 22 Mar 2017 15:24:48 GMT
+# Tue, 25 Apr 2017 04:59:58 GMT
 WORKDIR /data
-# Wed, 22 Mar 2017 15:24:49 GMT
+# Tue, 25 Apr 2017 04:59:59 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Wed, 22 Mar 2017 15:24:49 GMT
+# Tue, 25 Apr 2017 04:59:59 GMT
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
 -	Layers:
-	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
-		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
-		Size: 51.4 MB (51438476 bytes)  
+	-	`sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c`  
+		Last Modified: Mon, 24 Apr 2017 19:32:05 GMT  
+		Size: 52.6 MB (52550276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01bf790001863c07015b34e931fbda4e0dbab0b4c18f0f6c51bc5b8bf8251513`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:60f7b9a55bc5fb557f2553e994f4afc58cb505dcbbdd1fad7dd77e16ee5e2626`  
+		Last Modified: Tue, 25 Apr 2017 21:21:53 GMT  
+		Size: 1.4 KB (1437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c1369da1a1d16d0bee337aa9241d8c4256ed478c4e6a86dece8914753177d46`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 215.0 B  
+	-	`sha256:1b28f0b951e87815ac357dfe80ebe3d2a1d08010590ba4addef71730f970ef68`  
+		Last Modified: Tue, 25 Apr 2017 21:21:53 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be5accaff77c23d56334b76da676f95c6347879add3db1f54efd51399a0f56c1`  
-		Last Modified: Fri, 24 Mar 2017 00:35:27 GMT  
-		Size: 24.2 MB (24176435 bytes)  
+	-	`sha256:995eba1f79c4deb90d26e23a54e372f323cc16250347b800fa4fd4589a6b5764`  
+		Last Modified: Tue, 25 Apr 2017 21:23:34 GMT  
+		Size: 24.8 MB (24801124 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7dca29848ba9e35f40e1c335bba39652a0d9af2cab117e3b8b0ebae22fc4b5d`  
-		Last Modified: Fri, 24 Mar 2017 00:35:19 GMT  
-		Size: 90.0 B  
+	-	`sha256:b9309963e38202345722443564fc847f0283cd99fc87c1ff865f78cde31697dc`  
+		Last Modified: Tue, 25 Apr 2017 21:23:30 GMT  
+		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:2.2`
 
 ```console
-$ docker pull rethinkdb@sha256:69b4de11608d043a1c8fbf8690d40a11bc38f79837eda8e98d0caef25d5909ba
+$ docker pull rethinkdb@sha256:33c6b7a4e85187c527206e73c0b9c5e745f9c77db0618f04967c63e956a2d434
 ```
 
 -	Platforms:
@@ -350,64 +350,64 @@ $ docker pull rethinkdb@sha256:69b4de11608d043a1c8fbf8690d40a11bc38f79837eda8e98
 
 ### `rethinkdb:2.2` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **75.6 MB (75616651 bytes)**  
+-	Total Size: **77.4 MB (77353143 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1aae5b2879c41cf3e41fda39cc8cfc88aa74284ec59ef46ad8701b76efad5356`
+-	Image ID: `sha256:2041dd8ad272ff8c3a7e435aa2a6b0170d9756513eaa310240c3527043d857e1`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:28:51 GMT
-ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
-# Tue, 21 Mar 2017 18:29:05 GMT
+# Mon, 24 Apr 2017 19:20:41 GMT
+ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / 
+# Mon, 24 Apr 2017 19:20:42 GMT
 CMD ["/bin/bash"]
-# Wed, 22 Mar 2017 15:10:30 GMT
+# Tue, 25 Apr 2017 04:57:16 GMT
 MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
-# Wed, 22 Mar 2017 15:23:30 GMT
+# Tue, 25 Apr 2017 04:57:19 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
-# Wed, 22 Mar 2017 15:23:31 GMT
+# Tue, 25 Apr 2017 04:57:20 GMT
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
-# Wed, 22 Mar 2017 15:24:32 GMT
+# Tue, 25 Apr 2017 04:59:38 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.2.6~0jessie
-# Wed, 22 Mar 2017 15:24:47 GMT
+# Tue, 25 Apr 2017 04:59:56 GMT
 RUN apt-get update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 22 Mar 2017 15:24:48 GMT
+# Tue, 25 Apr 2017 04:59:57 GMT
 VOLUME [/data]
-# Wed, 22 Mar 2017 15:24:48 GMT
+# Tue, 25 Apr 2017 04:59:58 GMT
 WORKDIR /data
-# Wed, 22 Mar 2017 15:24:49 GMT
+# Tue, 25 Apr 2017 04:59:59 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Wed, 22 Mar 2017 15:24:49 GMT
+# Tue, 25 Apr 2017 04:59:59 GMT
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
 -	Layers:
-	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
-		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
-		Size: 51.4 MB (51438476 bytes)  
+	-	`sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c`  
+		Last Modified: Mon, 24 Apr 2017 19:32:05 GMT  
+		Size: 52.6 MB (52550276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01bf790001863c07015b34e931fbda4e0dbab0b4c18f0f6c51bc5b8bf8251513`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:60f7b9a55bc5fb557f2553e994f4afc58cb505dcbbdd1fad7dd77e16ee5e2626`  
+		Last Modified: Tue, 25 Apr 2017 21:21:53 GMT  
+		Size: 1.4 KB (1437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c1369da1a1d16d0bee337aa9241d8c4256ed478c4e6a86dece8914753177d46`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 215.0 B  
+	-	`sha256:1b28f0b951e87815ac357dfe80ebe3d2a1d08010590ba4addef71730f970ef68`  
+		Last Modified: Tue, 25 Apr 2017 21:21:53 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be5accaff77c23d56334b76da676f95c6347879add3db1f54efd51399a0f56c1`  
-		Last Modified: Fri, 24 Mar 2017 00:35:27 GMT  
-		Size: 24.2 MB (24176435 bytes)  
+	-	`sha256:995eba1f79c4deb90d26e23a54e372f323cc16250347b800fa4fd4589a6b5764`  
+		Last Modified: Tue, 25 Apr 2017 21:23:34 GMT  
+		Size: 24.8 MB (24801124 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7dca29848ba9e35f40e1c335bba39652a0d9af2cab117e3b8b0ebae22fc4b5d`  
-		Last Modified: Fri, 24 Mar 2017 00:35:19 GMT  
-		Size: 90.0 B  
+	-	`sha256:b9309963e38202345722443564fc847f0283cd99fc87c1ff865f78cde31697dc`  
+		Last Modified: Tue, 25 Apr 2017 21:23:30 GMT  
+		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:2.3.4`
 
 ```console
-$ docker pull rethinkdb@sha256:bde48d2e5a812177d8702c42d5ed2bdd09a3b7e4ff2a8b957406dc4687194522
+$ docker pull rethinkdb@sha256:21d9a43da3595df329404b39299c672dba59b051956cfe27b3650acd148bf589
 ```
 
 -	Platforms:
@@ -415,64 +415,64 @@ $ docker pull rethinkdb@sha256:bde48d2e5a812177d8702c42d5ed2bdd09a3b7e4ff2a8b957
 
 ### `rethinkdb:2.3.4` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.1 MB (76112373 bytes)**  
+-	Total Size: **77.9 MB (77863505 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28c49e2e34869dbebb17d7033fbce84a28bb7f757aa3ff6cc2455ce08db75904`
+-	Image ID: `sha256:ed608ddb703702bfd39c3211222c45afbebe2fc9d21db81c7adfd922d9b7f081`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:28:51 GMT
-ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
-# Tue, 21 Mar 2017 18:29:05 GMT
+# Mon, 24 Apr 2017 19:20:41 GMT
+ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / 
+# Mon, 24 Apr 2017 19:20:42 GMT
 CMD ["/bin/bash"]
-# Wed, 22 Mar 2017 15:10:30 GMT
+# Tue, 25 Apr 2017 04:57:16 GMT
 MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
-# Wed, 22 Mar 2017 15:23:30 GMT
+# Tue, 25 Apr 2017 04:57:19 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
-# Wed, 22 Mar 2017 15:23:31 GMT
+# Tue, 25 Apr 2017 04:57:20 GMT
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
-# Wed, 22 Mar 2017 15:24:50 GMT
+# Tue, 25 Apr 2017 05:00:17 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.3.4~0jessie
-# Wed, 22 Mar 2017 15:25:06 GMT
+# Tue, 25 Apr 2017 05:00:36 GMT
 RUN apt-get update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 22 Mar 2017 15:25:07 GMT
+# Tue, 25 Apr 2017 05:00:36 GMT
 VOLUME [/data]
-# Wed, 22 Mar 2017 15:25:07 GMT
+# Tue, 25 Apr 2017 05:00:37 GMT
 WORKDIR /data
-# Wed, 22 Mar 2017 15:25:08 GMT
+# Tue, 25 Apr 2017 05:00:38 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Wed, 22 Mar 2017 15:25:09 GMT
+# Tue, 25 Apr 2017 05:00:38 GMT
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
 -	Layers:
-	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
-		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
-		Size: 51.4 MB (51438476 bytes)  
+	-	`sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c`  
+		Last Modified: Mon, 24 Apr 2017 19:32:05 GMT  
+		Size: 52.6 MB (52550276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01bf790001863c07015b34e931fbda4e0dbab0b4c18f0f6c51bc5b8bf8251513`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:60f7b9a55bc5fb557f2553e994f4afc58cb505dcbbdd1fad7dd77e16ee5e2626`  
+		Last Modified: Tue, 25 Apr 2017 21:21:53 GMT  
+		Size: 1.4 KB (1437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c1369da1a1d16d0bee337aa9241d8c4256ed478c4e6a86dece8914753177d46`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 215.0 B  
+	-	`sha256:1b28f0b951e87815ac357dfe80ebe3d2a1d08010590ba4addef71730f970ef68`  
+		Last Modified: Tue, 25 Apr 2017 21:21:53 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7fec5ecec20afa14d999e219664f9d343b9d1304da8fae8a00473050a336ae5c`  
-		Last Modified: Fri, 24 Mar 2017 00:36:16 GMT  
-		Size: 24.7 MB (24672155 bytes)  
+	-	`sha256:c2b33a1060082a76b0c9daee2ed55793ee22d9262d045b19ab8d87977e35fb43`  
+		Last Modified: Tue, 25 Apr 2017 21:24:22 GMT  
+		Size: 25.3 MB (25311486 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8aa99d0960e04cf972568b23d31dcbbcf5aa4975b106cc3cade67be0d97f555c`  
-		Last Modified: Fri, 24 Mar 2017 00:36:09 GMT  
-		Size: 92.0 B  
+	-	`sha256:faf69fc6d9fb75a37e5455feae9e652169d2c957d01201ab10f173ae028471de`  
+		Last Modified: Tue, 25 Apr 2017 21:24:17 GMT  
+		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:2.3.5`
 
 ```console
-$ docker pull rethinkdb@sha256:fcd81c133975b5cfcc8d8756ec3558bb79d3e496f1b35df2608db4efd243adf2
+$ docker pull rethinkdb@sha256:37bdff38d86611a9cb34e89d70b18618316d17c3c3fa867be316c6ea99e31496
 ```
 
 -	Platforms:
@@ -480,64 +480,64 @@ $ docker pull rethinkdb@sha256:fcd81c133975b5cfcc8d8756ec3558bb79d3e496f1b35df26
 
 ### `rethinkdb:2.3.5` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.1 MB (76127956 bytes)**  
+-	Total Size: **77.9 MB (77867101 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23ecfb08823bc5483c6a955b077a9bc82899a0df2f33899b64992345256f22dd`
+-	Image ID: `sha256:c5ed876750b40cde4725ea9eb9d8503f4d1419a2f23ac2ef8e4cc1d535e2c3a2`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:28:51 GMT
-ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
-# Tue, 21 Mar 2017 18:29:05 GMT
+# Mon, 24 Apr 2017 19:20:41 GMT
+ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / 
+# Mon, 24 Apr 2017 19:20:42 GMT
 CMD ["/bin/bash"]
-# Wed, 22 Mar 2017 15:10:30 GMT
+# Tue, 25 Apr 2017 04:57:16 GMT
 MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
-# Wed, 22 Mar 2017 15:23:30 GMT
+# Tue, 25 Apr 2017 04:57:19 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
-# Wed, 22 Mar 2017 15:23:31 GMT
+# Tue, 25 Apr 2017 04:57:20 GMT
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
-# Wed, 22 Mar 2017 15:23:31 GMT
+# Tue, 25 Apr 2017 04:57:21 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.3.5~0jessie
-# Wed, 22 Mar 2017 15:23:48 GMT
+# Tue, 25 Apr 2017 04:57:40 GMT
 RUN apt-get update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 22 Mar 2017 15:23:51 GMT
+# Tue, 25 Apr 2017 04:57:41 GMT
 VOLUME [/data]
-# Wed, 22 Mar 2017 15:23:52 GMT
+# Tue, 25 Apr 2017 04:57:42 GMT
 WORKDIR /data
-# Wed, 22 Mar 2017 15:23:52 GMT
+# Tue, 25 Apr 2017 04:57:42 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Wed, 22 Mar 2017 15:23:53 GMT
+# Tue, 25 Apr 2017 04:57:43 GMT
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
 -	Layers:
-	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
-		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
-		Size: 51.4 MB (51438476 bytes)  
+	-	`sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c`  
+		Last Modified: Mon, 24 Apr 2017 19:32:05 GMT  
+		Size: 52.6 MB (52550276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01bf790001863c07015b34e931fbda4e0dbab0b4c18f0f6c51bc5b8bf8251513`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:60f7b9a55bc5fb557f2553e994f4afc58cb505dcbbdd1fad7dd77e16ee5e2626`  
+		Last Modified: Tue, 25 Apr 2017 21:21:53 GMT  
+		Size: 1.4 KB (1437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c1369da1a1d16d0bee337aa9241d8c4256ed478c4e6a86dece8914753177d46`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 215.0 B  
+	-	`sha256:1b28f0b951e87815ac357dfe80ebe3d2a1d08010590ba4addef71730f970ef68`  
+		Last Modified: Tue, 25 Apr 2017 21:21:53 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eace8635878876f7b295d374ee779b8169e143d086b8a5128024a46b967cb3ee`  
-		Last Modified: Fri, 24 Mar 2017 00:36:48 GMT  
-		Size: 24.7 MB (24687739 bytes)  
+	-	`sha256:6e93e40ea6c05844fb9641294c3172398659ff18202112655193a40521e3d182`  
+		Last Modified: Tue, 25 Apr 2017 21:24:49 GMT  
+		Size: 25.3 MB (25315082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:390795d7de7bd3a072add80300340df1eae8bac38ba11525322f4a92b9aa490b`  
-		Last Modified: Fri, 24 Mar 2017 00:36:41 GMT  
-		Size: 91.0 B  
+	-	`sha256:02e232f10849da118fc5b7db5ebead4ff7b6c23e9f874e17f56fdca5aaac6578`  
+		Last Modified: Tue, 25 Apr 2017 21:24:45 GMT  
+		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:2.3`
 
 ```console
-$ docker pull rethinkdb@sha256:fcd81c133975b5cfcc8d8756ec3558bb79d3e496f1b35df2608db4efd243adf2
+$ docker pull rethinkdb@sha256:37bdff38d86611a9cb34e89d70b18618316d17c3c3fa867be316c6ea99e31496
 ```
 
 -	Platforms:
@@ -545,64 +545,64 @@ $ docker pull rethinkdb@sha256:fcd81c133975b5cfcc8d8756ec3558bb79d3e496f1b35df26
 
 ### `rethinkdb:2.3` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.1 MB (76127956 bytes)**  
+-	Total Size: **77.9 MB (77867101 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23ecfb08823bc5483c6a955b077a9bc82899a0df2f33899b64992345256f22dd`
+-	Image ID: `sha256:c5ed876750b40cde4725ea9eb9d8503f4d1419a2f23ac2ef8e4cc1d535e2c3a2`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:28:51 GMT
-ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
-# Tue, 21 Mar 2017 18:29:05 GMT
+# Mon, 24 Apr 2017 19:20:41 GMT
+ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / 
+# Mon, 24 Apr 2017 19:20:42 GMT
 CMD ["/bin/bash"]
-# Wed, 22 Mar 2017 15:10:30 GMT
+# Tue, 25 Apr 2017 04:57:16 GMT
 MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
-# Wed, 22 Mar 2017 15:23:30 GMT
+# Tue, 25 Apr 2017 04:57:19 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
-# Wed, 22 Mar 2017 15:23:31 GMT
+# Tue, 25 Apr 2017 04:57:20 GMT
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
-# Wed, 22 Mar 2017 15:23:31 GMT
+# Tue, 25 Apr 2017 04:57:21 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.3.5~0jessie
-# Wed, 22 Mar 2017 15:23:48 GMT
+# Tue, 25 Apr 2017 04:57:40 GMT
 RUN apt-get update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 22 Mar 2017 15:23:51 GMT
+# Tue, 25 Apr 2017 04:57:41 GMT
 VOLUME [/data]
-# Wed, 22 Mar 2017 15:23:52 GMT
+# Tue, 25 Apr 2017 04:57:42 GMT
 WORKDIR /data
-# Wed, 22 Mar 2017 15:23:52 GMT
+# Tue, 25 Apr 2017 04:57:42 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Wed, 22 Mar 2017 15:23:53 GMT
+# Tue, 25 Apr 2017 04:57:43 GMT
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
 -	Layers:
-	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
-		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
-		Size: 51.4 MB (51438476 bytes)  
+	-	`sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c`  
+		Last Modified: Mon, 24 Apr 2017 19:32:05 GMT  
+		Size: 52.6 MB (52550276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01bf790001863c07015b34e931fbda4e0dbab0b4c18f0f6c51bc5b8bf8251513`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:60f7b9a55bc5fb557f2553e994f4afc58cb505dcbbdd1fad7dd77e16ee5e2626`  
+		Last Modified: Tue, 25 Apr 2017 21:21:53 GMT  
+		Size: 1.4 KB (1437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c1369da1a1d16d0bee337aa9241d8c4256ed478c4e6a86dece8914753177d46`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 215.0 B  
+	-	`sha256:1b28f0b951e87815ac357dfe80ebe3d2a1d08010590ba4addef71730f970ef68`  
+		Last Modified: Tue, 25 Apr 2017 21:21:53 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eace8635878876f7b295d374ee779b8169e143d086b8a5128024a46b967cb3ee`  
-		Last Modified: Fri, 24 Mar 2017 00:36:48 GMT  
-		Size: 24.7 MB (24687739 bytes)  
+	-	`sha256:6e93e40ea6c05844fb9641294c3172398659ff18202112655193a40521e3d182`  
+		Last Modified: Tue, 25 Apr 2017 21:24:49 GMT  
+		Size: 25.3 MB (25315082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:390795d7de7bd3a072add80300340df1eae8bac38ba11525322f4a92b9aa490b`  
-		Last Modified: Fri, 24 Mar 2017 00:36:41 GMT  
-		Size: 91.0 B  
+	-	`sha256:02e232f10849da118fc5b7db5ebead4ff7b6c23e9f874e17f56fdca5aaac6578`  
+		Last Modified: Tue, 25 Apr 2017 21:24:45 GMT  
+		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:2`
 
 ```console
-$ docker pull rethinkdb@sha256:fcd81c133975b5cfcc8d8756ec3558bb79d3e496f1b35df2608db4efd243adf2
+$ docker pull rethinkdb@sha256:37bdff38d86611a9cb34e89d70b18618316d17c3c3fa867be316c6ea99e31496
 ```
 
 -	Platforms:
@@ -610,64 +610,64 @@ $ docker pull rethinkdb@sha256:fcd81c133975b5cfcc8d8756ec3558bb79d3e496f1b35df26
 
 ### `rethinkdb:2` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.1 MB (76127956 bytes)**  
+-	Total Size: **77.9 MB (77867101 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23ecfb08823bc5483c6a955b077a9bc82899a0df2f33899b64992345256f22dd`
+-	Image ID: `sha256:c5ed876750b40cde4725ea9eb9d8503f4d1419a2f23ac2ef8e4cc1d535e2c3a2`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:28:51 GMT
-ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
-# Tue, 21 Mar 2017 18:29:05 GMT
+# Mon, 24 Apr 2017 19:20:41 GMT
+ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / 
+# Mon, 24 Apr 2017 19:20:42 GMT
 CMD ["/bin/bash"]
-# Wed, 22 Mar 2017 15:10:30 GMT
+# Tue, 25 Apr 2017 04:57:16 GMT
 MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
-# Wed, 22 Mar 2017 15:23:30 GMT
+# Tue, 25 Apr 2017 04:57:19 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
-# Wed, 22 Mar 2017 15:23:31 GMT
+# Tue, 25 Apr 2017 04:57:20 GMT
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
-# Wed, 22 Mar 2017 15:23:31 GMT
+# Tue, 25 Apr 2017 04:57:21 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.3.5~0jessie
-# Wed, 22 Mar 2017 15:23:48 GMT
+# Tue, 25 Apr 2017 04:57:40 GMT
 RUN apt-get update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 22 Mar 2017 15:23:51 GMT
+# Tue, 25 Apr 2017 04:57:41 GMT
 VOLUME [/data]
-# Wed, 22 Mar 2017 15:23:52 GMT
+# Tue, 25 Apr 2017 04:57:42 GMT
 WORKDIR /data
-# Wed, 22 Mar 2017 15:23:52 GMT
+# Tue, 25 Apr 2017 04:57:42 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Wed, 22 Mar 2017 15:23:53 GMT
+# Tue, 25 Apr 2017 04:57:43 GMT
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
 -	Layers:
-	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
-		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
-		Size: 51.4 MB (51438476 bytes)  
+	-	`sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c`  
+		Last Modified: Mon, 24 Apr 2017 19:32:05 GMT  
+		Size: 52.6 MB (52550276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01bf790001863c07015b34e931fbda4e0dbab0b4c18f0f6c51bc5b8bf8251513`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:60f7b9a55bc5fb557f2553e994f4afc58cb505dcbbdd1fad7dd77e16ee5e2626`  
+		Last Modified: Tue, 25 Apr 2017 21:21:53 GMT  
+		Size: 1.4 KB (1437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c1369da1a1d16d0bee337aa9241d8c4256ed478c4e6a86dece8914753177d46`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 215.0 B  
+	-	`sha256:1b28f0b951e87815ac357dfe80ebe3d2a1d08010590ba4addef71730f970ef68`  
+		Last Modified: Tue, 25 Apr 2017 21:21:53 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eace8635878876f7b295d374ee779b8169e143d086b8a5128024a46b967cb3ee`  
-		Last Modified: Fri, 24 Mar 2017 00:36:48 GMT  
-		Size: 24.7 MB (24687739 bytes)  
+	-	`sha256:6e93e40ea6c05844fb9641294c3172398659ff18202112655193a40521e3d182`  
+		Last Modified: Tue, 25 Apr 2017 21:24:49 GMT  
+		Size: 25.3 MB (25315082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:390795d7de7bd3a072add80300340df1eae8bac38ba11525322f4a92b9aa490b`  
-		Last Modified: Fri, 24 Mar 2017 00:36:41 GMT  
-		Size: 91.0 B  
+	-	`sha256:02e232f10849da118fc5b7db5ebead4ff7b6c23e9f874e17f56fdca5aaac6578`  
+		Last Modified: Tue, 25 Apr 2017 21:24:45 GMT  
+		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rethinkdb:latest`
 
 ```console
-$ docker pull rethinkdb@sha256:fcd81c133975b5cfcc8d8756ec3558bb79d3e496f1b35df2608db4efd243adf2
+$ docker pull rethinkdb@sha256:37bdff38d86611a9cb34e89d70b18618316d17c3c3fa867be316c6ea99e31496
 ```
 
 -	Platforms:
@@ -675,56 +675,56 @@ $ docker pull rethinkdb@sha256:fcd81c133975b5cfcc8d8756ec3558bb79d3e496f1b35df26
 
 ### `rethinkdb:latest` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.1 MB (76127956 bytes)**  
+-	Total Size: **77.9 MB (77867101 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23ecfb08823bc5483c6a955b077a9bc82899a0df2f33899b64992345256f22dd`
+-	Image ID: `sha256:c5ed876750b40cde4725ea9eb9d8503f4d1419a2f23ac2ef8e4cc1d535e2c3a2`
 -	Default Command: `["rethinkdb","--bind","all"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:28:51 GMT
-ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
-# Tue, 21 Mar 2017 18:29:05 GMT
+# Mon, 24 Apr 2017 19:20:41 GMT
+ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / 
+# Mon, 24 Apr 2017 19:20:42 GMT
 CMD ["/bin/bash"]
-# Wed, 22 Mar 2017 15:10:30 GMT
+# Tue, 25 Apr 2017 04:57:16 GMT
 MAINTAINER Daniel Alan Miller <dalanmiller@rethinkdb.com>
-# Wed, 22 Mar 2017 15:23:30 GMT
+# Tue, 25 Apr 2017 04:57:19 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 1614552E5765227AEC39EFCFA7E00EF33A8F2399
-# Wed, 22 Mar 2017 15:23:31 GMT
+# Tue, 25 Apr 2017 04:57:20 GMT
 RUN echo "deb http://download.rethinkdb.com/apt jessie main" > /etc/apt/sources.list.d/rethinkdb.list
-# Wed, 22 Mar 2017 15:23:31 GMT
+# Tue, 25 Apr 2017 04:57:21 GMT
 ENV RETHINKDB_PACKAGE_VERSION=2.3.5~0jessie
-# Wed, 22 Mar 2017 15:23:48 GMT
+# Tue, 25 Apr 2017 04:57:40 GMT
 RUN apt-get update 	&& apt-get install -y rethinkdb=$RETHINKDB_PACKAGE_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 22 Mar 2017 15:23:51 GMT
+# Tue, 25 Apr 2017 04:57:41 GMT
 VOLUME [/data]
-# Wed, 22 Mar 2017 15:23:52 GMT
+# Tue, 25 Apr 2017 04:57:42 GMT
 WORKDIR /data
-# Wed, 22 Mar 2017 15:23:52 GMT
+# Tue, 25 Apr 2017 04:57:42 GMT
 CMD ["rethinkdb" "--bind" "all"]
-# Wed, 22 Mar 2017 15:23:53 GMT
+# Tue, 25 Apr 2017 04:57:43 GMT
 EXPOSE 28015/tcp 29015/tcp 8080/tcp
 ```
 
 -	Layers:
-	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
-		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
-		Size: 51.4 MB (51438476 bytes)  
+	-	`sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c`  
+		Last Modified: Mon, 24 Apr 2017 19:32:05 GMT  
+		Size: 52.6 MB (52550276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01bf790001863c07015b34e931fbda4e0dbab0b4c18f0f6c51bc5b8bf8251513`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 1.4 KB (1435 bytes)  
+	-	`sha256:60f7b9a55bc5fb557f2553e994f4afc58cb505dcbbdd1fad7dd77e16ee5e2626`  
+		Last Modified: Tue, 25 Apr 2017 21:21:53 GMT  
+		Size: 1.4 KB (1437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c1369da1a1d16d0bee337aa9241d8c4256ed478c4e6a86dece8914753177d46`  
-		Last Modified: Fri, 24 Mar 2017 00:33:36 GMT  
-		Size: 215.0 B  
+	-	`sha256:1b28f0b951e87815ac357dfe80ebe3d2a1d08010590ba4addef71730f970ef68`  
+		Last Modified: Tue, 25 Apr 2017 21:21:53 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eace8635878876f7b295d374ee779b8169e143d086b8a5128024a46b967cb3ee`  
-		Last Modified: Fri, 24 Mar 2017 00:36:48 GMT  
-		Size: 24.7 MB (24687739 bytes)  
+	-	`sha256:6e93e40ea6c05844fb9641294c3172398659ff18202112655193a40521e3d182`  
+		Last Modified: Tue, 25 Apr 2017 21:24:49 GMT  
+		Size: 25.3 MB (25315082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:390795d7de7bd3a072add80300340df1eae8bac38ba11525322f4a92b9aa490b`  
-		Last Modified: Fri, 24 Mar 2017 00:36:41 GMT  
-		Size: 91.0 B  
+	-	`sha256:02e232f10849da118fc5b7db5ebead4ff7b6c23e9f874e17f56fdca5aaac6578`  
+		Last Modified: Tue, 25 Apr 2017 21:24:45 GMT  
+		Size: 93.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

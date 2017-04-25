@@ -30,7 +30,7 @@
 ## `postgres:9.6.2`
 
 ```console
-$ docker pull postgres@sha256:3b51a72ca2642f24fa782c2fb99ddb0d29cbcd38f32639c98a80966a25ae2a64
+$ docker pull postgres@sha256:fd6c0e2a9d053bebb294bb13765b3e01be7817bf77b01d58c2377ff27a4a46dc
 ```
 
 -	Platforms:
@@ -38,123 +38,123 @@ $ docker pull postgres@sha256:3b51a72ca2642f24fa782c2fb99ddb0d29cbcd38f32639c98a
 
 ### `postgres:9.6.2` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **102.1 MB (102090190 bytes)**  
+-	Total Size: **104.3 MB (104254425 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff0943ecbb3c5e05b6b79b9a2f439e8da3b293a5932752deacbf5aa6d339e2ce`
+-	Image ID: `sha256:390220867755ef4d1351705130960605d14a44518149e89c674189eefcb09306`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:28:51 GMT
-ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
-# Tue, 21 Mar 2017 18:29:05 GMT
+# Mon, 24 Apr 2017 19:20:41 GMT
+ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / 
+# Mon, 24 Apr 2017 19:20:42 GMT
 CMD ["/bin/bash"]
-# Tue, 21 Mar 2017 23:38:28 GMT
+# Tue, 25 Apr 2017 04:07:06 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Tue, 21 Mar 2017 23:38:29 GMT
+# Tue, 25 Apr 2017 04:07:07 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 21 Mar 2017 23:38:46 GMT
+# Tue, 25 Apr 2017 04:07:25 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:35 GMT
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:44 GMT
 ENV LANG=en_US.utf8
-# Tue, 21 Mar 2017 23:38:55 GMT
+# Tue, 25 Apr 2017 04:07:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 21 Mar 2017 23:38:56 GMT
+# Tue, 25 Apr 2017 04:07:49 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 21 Mar 2017 23:38:57 GMT
+# Tue, 25 Apr 2017 04:08:03 GMT
 ENV PG_MAJOR=9.6
-# Tue, 21 Mar 2017 23:38:57 GMT
+# Tue, 25 Apr 2017 04:08:04 GMT
 ENV PG_VERSION=9.6.2-1.pgdg80+1
-# Tue, 21 Mar 2017 23:38:58 GMT
+# Tue, 25 Apr 2017 04:08:06 GMT
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJOR > /etc/apt/sources.list.d/pgdg.list
-# Tue, 21 Mar 2017 23:39:35 GMT
+# Tue, 25 Apr 2017 04:08:40 GMT
 RUN apt-get update 	&& apt-get install -y postgresql-common 	&& sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf 	&& apt-get install -y 		postgresql-$PG_MAJOR=$PG_VERSION 		postgresql-contrib-$PG_MAJOR=$PG_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 21 Mar 2017 23:39:36 GMT
+# Tue, 25 Apr 2017 04:08:52 GMT
 RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample /usr/share/postgresql/$PG_MAJOR/ 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 21 Mar 2017 23:39:37 GMT
+# Tue, 25 Apr 2017 04:08:53 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod g+s /var/run/postgresql
-# Tue, 21 Mar 2017 23:39:38 GMT
+# Tue, 25 Apr 2017 04:08:54 GMT
 ENV PATH=/usr/lib/postgresql/9.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 21 Mar 2017 23:39:38 GMT
+# Tue, 25 Apr 2017 04:08:55 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 21 Mar 2017 23:39:39 GMT
+# Tue, 25 Apr 2017 04:09:12 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 21 Mar 2017 23:39:39 GMT
+# Tue, 25 Apr 2017 04:09:12 GMT
 VOLUME [/var/lib/postgresql/data]
-# Fri, 07 Apr 2017 19:37:53 GMT
+# Tue, 25 Apr 2017 04:09:13 GMT
 COPY file:e7038391d43a570dfa6f5c9fd1327eab0e66c902a643f547a29a71cbc660b950 in /usr/local/bin/ 
-# Fri, 07 Apr 2017 19:37:54 GMT
+# Tue, 25 Apr 2017 04:09:31 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Fri, 07 Apr 2017 19:37:55 GMT
+# Tue, 25 Apr 2017 04:09:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Apr 2017 19:37:56 GMT
+# Tue, 25 Apr 2017 04:09:32 GMT
 EXPOSE 5432/tcp
-# Fri, 07 Apr 2017 19:37:56 GMT
+# Tue, 25 Apr 2017 04:09:48 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
-		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
-		Size: 51.4 MB (51438476 bytes)  
+	-	`sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c`  
+		Last Modified: Mon, 24 Apr 2017 19:32:05 GMT  
+		Size: 52.6 MB (52550276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d7f5459c169a3b3836db7a9501070438bc2c4a0dfc0577a073449fa7ee1ae40`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 2.0 KB (2045 bytes)  
+	-	`sha256:9c784d04dcb093d973443d53da4caa360237c8402351f61ec29a7a4d94e74223`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 2.1 KB (2058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecb14191664d5b18e89d02ff79a6f4b0b698ddc6818f27a3d62a768dccc47845`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 1.3 MB (1288981 bytes)  
+	-	`sha256:d99dddf7e66202708c779d83f4155703ded0b0a34273d20ff88c587ce18619fb`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 1.3 MB (1308214 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecd8857273964c150e39b2461772ec2d9445048adc0ee2c726ad42dc960cb1c0`  
-		Last Modified: Fri, 24 Mar 2017 00:06:35 GMT  
-		Size: 6.9 MB (6937295 bytes)  
+	-	`sha256:e5bff71e3ce6a34b054c75497bf6d379053ee0bf2348b1b3b7941f0901fbcb38`  
+		Last Modified: Tue, 25 Apr 2017 20:57:36 GMT  
+		Size: 7.1 MB (7117661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1fc7408190a9a104bc4dff6ddc144ba86599c2e83dcdfcdfae3c331080bb7a4`  
-		Last Modified: Fri, 24 Mar 2017 00:06:31 GMT  
-		Size: 114.0 B  
+	-	`sha256:cb3e0a8654888a301af8ce50e4c63c7e3762dca8a4cd1b165ec0b80f6dcf6c03`  
+		Last Modified: Tue, 25 Apr 2017 20:57:32 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3cf57a1b661d5e38def1a1b4258b6adfb329b4395951b35ab2d28a53af55b3b`  
-		Last Modified: Fri, 24 Mar 2017 00:06:32 GMT  
-		Size: 4.5 KB (4484 bytes)  
+	-	`sha256:31295d654cd5ed8581f46fbe2b7fb364302bcb01a58b887b934a4686f31e1cd9`  
+		Last Modified: Tue, 25 Apr 2017 20:57:34 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91cef76ed67ea8d88d69ce88edc0c5b0aacb6a9ad5be49f825c6372d68dc0fd5`  
-		Last Modified: Fri, 24 Mar 2017 00:11:20 GMT  
+	-	`sha256:fc930a4e09f51d3334809e42a7afeedc0b284f1e440030869e116cf33dba86cb`  
+		Last Modified: Tue, 25 Apr 2017 21:01:21 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9236ca589ab42ba1deb8891f4bef7235a220b2e7768215fec469ef4eda6676bb`  
-		Last Modified: Fri, 24 Mar 2017 00:11:35 GMT  
-		Size: 42.4 MB (42409238 bytes)  
+	-	`sha256:8650cce8ef01c166a4e56b69db0a54c8795a5aa5b2e791f3c33c83906bc64a28`  
+		Last Modified: Tue, 25 Apr 2017 21:01:33 GMT  
+		Size: 43.3 MB (43262082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69b3e91b94c544edcb87448c260fdc1f3ffe840fd2e560cbb42a9933a64e9963`  
-		Last Modified: Fri, 24 Mar 2017 00:11:18 GMT  
-		Size: 7.1 KB (7123 bytes)  
+	-	`sha256:61949acd8e523ea00b73838652d948c36bd11ff920221e59acfbc2dbc738af50`  
+		Last Modified: Tue, 25 Apr 2017 21:01:18 GMT  
+		Size: 7.1 KB (7096 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdc577dbd56f127ab86ce5db879714aa5e36ec188741354156795658e0e703b1`  
-		Last Modified: Fri, 24 Mar 2017 00:11:17 GMT  
+	-	`sha256:527a203588c0f7065060fab3f9de27f3e79b8ad61d3df599423e4b4108e61092`  
+		Last Modified: Tue, 25 Apr 2017 21:01:18 GMT  
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db908b0ac3de984dd97cee898d458d648a43586b00a90ba545097ced925a9faf`  
-		Last Modified: Fri, 24 Mar 2017 00:11:17 GMT  
-		Size: 163.0 B  
+	-	`sha256:26dec14ac775661620d3ee9c5e72a10b10f95741d70b225962f74a5f40cd6ed6`  
+		Last Modified: Tue, 25 Apr 2017 21:01:18 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d80323bca9d7bce11b20583e675b5d8a48c23b935ea310da69fe980db1dfc20e`  
-		Last Modified: Fri, 07 Apr 2017 19:39:01 GMT  
+	-	`sha256:0efc0ed5a9e5634caf56c65f24a136cf6ae7a663f10181e84ae5531a8b538700`  
+		Last Modified: Tue, 25 Apr 2017 21:01:19 GMT  
 		Size: 1.8 KB (1795 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88f943a70bad98e5109491de3439cf1e82aa6fe004dc0138656880e02c3ad9d5`  
-		Last Modified: Fri, 07 Apr 2017 19:39:01 GMT  
-		Size: 120.0 B  
+	-	`sha256:40cd26695b38fcd575c4ae6e8369b9103d65c0b1a781dadb610aebeaaf2141d7`  
+		Last Modified: Tue, 25 Apr 2017 21:01:18 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `postgres:9.6`
 
 ```console
-$ docker pull postgres@sha256:3b51a72ca2642f24fa782c2fb99ddb0d29cbcd38f32639c98a80966a25ae2a64
+$ docker pull postgres@sha256:fd6c0e2a9d053bebb294bb13765b3e01be7817bf77b01d58c2377ff27a4a46dc
 ```
 
 -	Platforms:
@@ -162,123 +162,123 @@ $ docker pull postgres@sha256:3b51a72ca2642f24fa782c2fb99ddb0d29cbcd38f32639c98a
 
 ### `postgres:9.6` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **102.1 MB (102090190 bytes)**  
+-	Total Size: **104.3 MB (104254425 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff0943ecbb3c5e05b6b79b9a2f439e8da3b293a5932752deacbf5aa6d339e2ce`
+-	Image ID: `sha256:390220867755ef4d1351705130960605d14a44518149e89c674189eefcb09306`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:28:51 GMT
-ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
-# Tue, 21 Mar 2017 18:29:05 GMT
+# Mon, 24 Apr 2017 19:20:41 GMT
+ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / 
+# Mon, 24 Apr 2017 19:20:42 GMT
 CMD ["/bin/bash"]
-# Tue, 21 Mar 2017 23:38:28 GMT
+# Tue, 25 Apr 2017 04:07:06 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Tue, 21 Mar 2017 23:38:29 GMT
+# Tue, 25 Apr 2017 04:07:07 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 21 Mar 2017 23:38:46 GMT
+# Tue, 25 Apr 2017 04:07:25 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:35 GMT
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:44 GMT
 ENV LANG=en_US.utf8
-# Tue, 21 Mar 2017 23:38:55 GMT
+# Tue, 25 Apr 2017 04:07:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 21 Mar 2017 23:38:56 GMT
+# Tue, 25 Apr 2017 04:07:49 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 21 Mar 2017 23:38:57 GMT
+# Tue, 25 Apr 2017 04:08:03 GMT
 ENV PG_MAJOR=9.6
-# Tue, 21 Mar 2017 23:38:57 GMT
+# Tue, 25 Apr 2017 04:08:04 GMT
 ENV PG_VERSION=9.6.2-1.pgdg80+1
-# Tue, 21 Mar 2017 23:38:58 GMT
+# Tue, 25 Apr 2017 04:08:06 GMT
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJOR > /etc/apt/sources.list.d/pgdg.list
-# Tue, 21 Mar 2017 23:39:35 GMT
+# Tue, 25 Apr 2017 04:08:40 GMT
 RUN apt-get update 	&& apt-get install -y postgresql-common 	&& sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf 	&& apt-get install -y 		postgresql-$PG_MAJOR=$PG_VERSION 		postgresql-contrib-$PG_MAJOR=$PG_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 21 Mar 2017 23:39:36 GMT
+# Tue, 25 Apr 2017 04:08:52 GMT
 RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample /usr/share/postgresql/$PG_MAJOR/ 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 21 Mar 2017 23:39:37 GMT
+# Tue, 25 Apr 2017 04:08:53 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod g+s /var/run/postgresql
-# Tue, 21 Mar 2017 23:39:38 GMT
+# Tue, 25 Apr 2017 04:08:54 GMT
 ENV PATH=/usr/lib/postgresql/9.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 21 Mar 2017 23:39:38 GMT
+# Tue, 25 Apr 2017 04:08:55 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 21 Mar 2017 23:39:39 GMT
+# Tue, 25 Apr 2017 04:09:12 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 21 Mar 2017 23:39:39 GMT
+# Tue, 25 Apr 2017 04:09:12 GMT
 VOLUME [/var/lib/postgresql/data]
-# Fri, 07 Apr 2017 19:37:53 GMT
+# Tue, 25 Apr 2017 04:09:13 GMT
 COPY file:e7038391d43a570dfa6f5c9fd1327eab0e66c902a643f547a29a71cbc660b950 in /usr/local/bin/ 
-# Fri, 07 Apr 2017 19:37:54 GMT
+# Tue, 25 Apr 2017 04:09:31 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Fri, 07 Apr 2017 19:37:55 GMT
+# Tue, 25 Apr 2017 04:09:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Apr 2017 19:37:56 GMT
+# Tue, 25 Apr 2017 04:09:32 GMT
 EXPOSE 5432/tcp
-# Fri, 07 Apr 2017 19:37:56 GMT
+# Tue, 25 Apr 2017 04:09:48 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
-		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
-		Size: 51.4 MB (51438476 bytes)  
+	-	`sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c`  
+		Last Modified: Mon, 24 Apr 2017 19:32:05 GMT  
+		Size: 52.6 MB (52550276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d7f5459c169a3b3836db7a9501070438bc2c4a0dfc0577a073449fa7ee1ae40`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 2.0 KB (2045 bytes)  
+	-	`sha256:9c784d04dcb093d973443d53da4caa360237c8402351f61ec29a7a4d94e74223`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 2.1 KB (2058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecb14191664d5b18e89d02ff79a6f4b0b698ddc6818f27a3d62a768dccc47845`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 1.3 MB (1288981 bytes)  
+	-	`sha256:d99dddf7e66202708c779d83f4155703ded0b0a34273d20ff88c587ce18619fb`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 1.3 MB (1308214 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecd8857273964c150e39b2461772ec2d9445048adc0ee2c726ad42dc960cb1c0`  
-		Last Modified: Fri, 24 Mar 2017 00:06:35 GMT  
-		Size: 6.9 MB (6937295 bytes)  
+	-	`sha256:e5bff71e3ce6a34b054c75497bf6d379053ee0bf2348b1b3b7941f0901fbcb38`  
+		Last Modified: Tue, 25 Apr 2017 20:57:36 GMT  
+		Size: 7.1 MB (7117661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1fc7408190a9a104bc4dff6ddc144ba86599c2e83dcdfcdfae3c331080bb7a4`  
-		Last Modified: Fri, 24 Mar 2017 00:06:31 GMT  
-		Size: 114.0 B  
+	-	`sha256:cb3e0a8654888a301af8ce50e4c63c7e3762dca8a4cd1b165ec0b80f6dcf6c03`  
+		Last Modified: Tue, 25 Apr 2017 20:57:32 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3cf57a1b661d5e38def1a1b4258b6adfb329b4395951b35ab2d28a53af55b3b`  
-		Last Modified: Fri, 24 Mar 2017 00:06:32 GMT  
-		Size: 4.5 KB (4484 bytes)  
+	-	`sha256:31295d654cd5ed8581f46fbe2b7fb364302bcb01a58b887b934a4686f31e1cd9`  
+		Last Modified: Tue, 25 Apr 2017 20:57:34 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91cef76ed67ea8d88d69ce88edc0c5b0aacb6a9ad5be49f825c6372d68dc0fd5`  
-		Last Modified: Fri, 24 Mar 2017 00:11:20 GMT  
+	-	`sha256:fc930a4e09f51d3334809e42a7afeedc0b284f1e440030869e116cf33dba86cb`  
+		Last Modified: Tue, 25 Apr 2017 21:01:21 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9236ca589ab42ba1deb8891f4bef7235a220b2e7768215fec469ef4eda6676bb`  
-		Last Modified: Fri, 24 Mar 2017 00:11:35 GMT  
-		Size: 42.4 MB (42409238 bytes)  
+	-	`sha256:8650cce8ef01c166a4e56b69db0a54c8795a5aa5b2e791f3c33c83906bc64a28`  
+		Last Modified: Tue, 25 Apr 2017 21:01:33 GMT  
+		Size: 43.3 MB (43262082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69b3e91b94c544edcb87448c260fdc1f3ffe840fd2e560cbb42a9933a64e9963`  
-		Last Modified: Fri, 24 Mar 2017 00:11:18 GMT  
-		Size: 7.1 KB (7123 bytes)  
+	-	`sha256:61949acd8e523ea00b73838652d948c36bd11ff920221e59acfbc2dbc738af50`  
+		Last Modified: Tue, 25 Apr 2017 21:01:18 GMT  
+		Size: 7.1 KB (7096 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdc577dbd56f127ab86ce5db879714aa5e36ec188741354156795658e0e703b1`  
-		Last Modified: Fri, 24 Mar 2017 00:11:17 GMT  
+	-	`sha256:527a203588c0f7065060fab3f9de27f3e79b8ad61d3df599423e4b4108e61092`  
+		Last Modified: Tue, 25 Apr 2017 21:01:18 GMT  
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db908b0ac3de984dd97cee898d458d648a43586b00a90ba545097ced925a9faf`  
-		Last Modified: Fri, 24 Mar 2017 00:11:17 GMT  
-		Size: 163.0 B  
+	-	`sha256:26dec14ac775661620d3ee9c5e72a10b10f95741d70b225962f74a5f40cd6ed6`  
+		Last Modified: Tue, 25 Apr 2017 21:01:18 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d80323bca9d7bce11b20583e675b5d8a48c23b935ea310da69fe980db1dfc20e`  
-		Last Modified: Fri, 07 Apr 2017 19:39:01 GMT  
+	-	`sha256:0efc0ed5a9e5634caf56c65f24a136cf6ae7a663f10181e84ae5531a8b538700`  
+		Last Modified: Tue, 25 Apr 2017 21:01:19 GMT  
 		Size: 1.8 KB (1795 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88f943a70bad98e5109491de3439cf1e82aa6fe004dc0138656880e02c3ad9d5`  
-		Last Modified: Fri, 07 Apr 2017 19:39:01 GMT  
-		Size: 120.0 B  
+	-	`sha256:40cd26695b38fcd575c4ae6e8369b9103d65c0b1a781dadb610aebeaaf2141d7`  
+		Last Modified: Tue, 25 Apr 2017 21:01:18 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `postgres:9`
 
 ```console
-$ docker pull postgres@sha256:3b51a72ca2642f24fa782c2fb99ddb0d29cbcd38f32639c98a80966a25ae2a64
+$ docker pull postgres@sha256:fd6c0e2a9d053bebb294bb13765b3e01be7817bf77b01d58c2377ff27a4a46dc
 ```
 
 -	Platforms:
@@ -286,123 +286,123 @@ $ docker pull postgres@sha256:3b51a72ca2642f24fa782c2fb99ddb0d29cbcd38f32639c98a
 
 ### `postgres:9` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **102.1 MB (102090190 bytes)**  
+-	Total Size: **104.3 MB (104254425 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff0943ecbb3c5e05b6b79b9a2f439e8da3b293a5932752deacbf5aa6d339e2ce`
+-	Image ID: `sha256:390220867755ef4d1351705130960605d14a44518149e89c674189eefcb09306`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:28:51 GMT
-ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
-# Tue, 21 Mar 2017 18:29:05 GMT
+# Mon, 24 Apr 2017 19:20:41 GMT
+ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / 
+# Mon, 24 Apr 2017 19:20:42 GMT
 CMD ["/bin/bash"]
-# Tue, 21 Mar 2017 23:38:28 GMT
+# Tue, 25 Apr 2017 04:07:06 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Tue, 21 Mar 2017 23:38:29 GMT
+# Tue, 25 Apr 2017 04:07:07 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 21 Mar 2017 23:38:46 GMT
+# Tue, 25 Apr 2017 04:07:25 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:35 GMT
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:44 GMT
 ENV LANG=en_US.utf8
-# Tue, 21 Mar 2017 23:38:55 GMT
+# Tue, 25 Apr 2017 04:07:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 21 Mar 2017 23:38:56 GMT
+# Tue, 25 Apr 2017 04:07:49 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 21 Mar 2017 23:38:57 GMT
+# Tue, 25 Apr 2017 04:08:03 GMT
 ENV PG_MAJOR=9.6
-# Tue, 21 Mar 2017 23:38:57 GMT
+# Tue, 25 Apr 2017 04:08:04 GMT
 ENV PG_VERSION=9.6.2-1.pgdg80+1
-# Tue, 21 Mar 2017 23:38:58 GMT
+# Tue, 25 Apr 2017 04:08:06 GMT
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJOR > /etc/apt/sources.list.d/pgdg.list
-# Tue, 21 Mar 2017 23:39:35 GMT
+# Tue, 25 Apr 2017 04:08:40 GMT
 RUN apt-get update 	&& apt-get install -y postgresql-common 	&& sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf 	&& apt-get install -y 		postgresql-$PG_MAJOR=$PG_VERSION 		postgresql-contrib-$PG_MAJOR=$PG_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 21 Mar 2017 23:39:36 GMT
+# Tue, 25 Apr 2017 04:08:52 GMT
 RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample /usr/share/postgresql/$PG_MAJOR/ 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 21 Mar 2017 23:39:37 GMT
+# Tue, 25 Apr 2017 04:08:53 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod g+s /var/run/postgresql
-# Tue, 21 Mar 2017 23:39:38 GMT
+# Tue, 25 Apr 2017 04:08:54 GMT
 ENV PATH=/usr/lib/postgresql/9.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 21 Mar 2017 23:39:38 GMT
+# Tue, 25 Apr 2017 04:08:55 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 21 Mar 2017 23:39:39 GMT
+# Tue, 25 Apr 2017 04:09:12 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 21 Mar 2017 23:39:39 GMT
+# Tue, 25 Apr 2017 04:09:12 GMT
 VOLUME [/var/lib/postgresql/data]
-# Fri, 07 Apr 2017 19:37:53 GMT
+# Tue, 25 Apr 2017 04:09:13 GMT
 COPY file:e7038391d43a570dfa6f5c9fd1327eab0e66c902a643f547a29a71cbc660b950 in /usr/local/bin/ 
-# Fri, 07 Apr 2017 19:37:54 GMT
+# Tue, 25 Apr 2017 04:09:31 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Fri, 07 Apr 2017 19:37:55 GMT
+# Tue, 25 Apr 2017 04:09:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Apr 2017 19:37:56 GMT
+# Tue, 25 Apr 2017 04:09:32 GMT
 EXPOSE 5432/tcp
-# Fri, 07 Apr 2017 19:37:56 GMT
+# Tue, 25 Apr 2017 04:09:48 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
-		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
-		Size: 51.4 MB (51438476 bytes)  
+	-	`sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c`  
+		Last Modified: Mon, 24 Apr 2017 19:32:05 GMT  
+		Size: 52.6 MB (52550276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d7f5459c169a3b3836db7a9501070438bc2c4a0dfc0577a073449fa7ee1ae40`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 2.0 KB (2045 bytes)  
+	-	`sha256:9c784d04dcb093d973443d53da4caa360237c8402351f61ec29a7a4d94e74223`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 2.1 KB (2058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecb14191664d5b18e89d02ff79a6f4b0b698ddc6818f27a3d62a768dccc47845`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 1.3 MB (1288981 bytes)  
+	-	`sha256:d99dddf7e66202708c779d83f4155703ded0b0a34273d20ff88c587ce18619fb`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 1.3 MB (1308214 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecd8857273964c150e39b2461772ec2d9445048adc0ee2c726ad42dc960cb1c0`  
-		Last Modified: Fri, 24 Mar 2017 00:06:35 GMT  
-		Size: 6.9 MB (6937295 bytes)  
+	-	`sha256:e5bff71e3ce6a34b054c75497bf6d379053ee0bf2348b1b3b7941f0901fbcb38`  
+		Last Modified: Tue, 25 Apr 2017 20:57:36 GMT  
+		Size: 7.1 MB (7117661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1fc7408190a9a104bc4dff6ddc144ba86599c2e83dcdfcdfae3c331080bb7a4`  
-		Last Modified: Fri, 24 Mar 2017 00:06:31 GMT  
-		Size: 114.0 B  
+	-	`sha256:cb3e0a8654888a301af8ce50e4c63c7e3762dca8a4cd1b165ec0b80f6dcf6c03`  
+		Last Modified: Tue, 25 Apr 2017 20:57:32 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3cf57a1b661d5e38def1a1b4258b6adfb329b4395951b35ab2d28a53af55b3b`  
-		Last Modified: Fri, 24 Mar 2017 00:06:32 GMT  
-		Size: 4.5 KB (4484 bytes)  
+	-	`sha256:31295d654cd5ed8581f46fbe2b7fb364302bcb01a58b887b934a4686f31e1cd9`  
+		Last Modified: Tue, 25 Apr 2017 20:57:34 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91cef76ed67ea8d88d69ce88edc0c5b0aacb6a9ad5be49f825c6372d68dc0fd5`  
-		Last Modified: Fri, 24 Mar 2017 00:11:20 GMT  
+	-	`sha256:fc930a4e09f51d3334809e42a7afeedc0b284f1e440030869e116cf33dba86cb`  
+		Last Modified: Tue, 25 Apr 2017 21:01:21 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9236ca589ab42ba1deb8891f4bef7235a220b2e7768215fec469ef4eda6676bb`  
-		Last Modified: Fri, 24 Mar 2017 00:11:35 GMT  
-		Size: 42.4 MB (42409238 bytes)  
+	-	`sha256:8650cce8ef01c166a4e56b69db0a54c8795a5aa5b2e791f3c33c83906bc64a28`  
+		Last Modified: Tue, 25 Apr 2017 21:01:33 GMT  
+		Size: 43.3 MB (43262082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69b3e91b94c544edcb87448c260fdc1f3ffe840fd2e560cbb42a9933a64e9963`  
-		Last Modified: Fri, 24 Mar 2017 00:11:18 GMT  
-		Size: 7.1 KB (7123 bytes)  
+	-	`sha256:61949acd8e523ea00b73838652d948c36bd11ff920221e59acfbc2dbc738af50`  
+		Last Modified: Tue, 25 Apr 2017 21:01:18 GMT  
+		Size: 7.1 KB (7096 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdc577dbd56f127ab86ce5db879714aa5e36ec188741354156795658e0e703b1`  
-		Last Modified: Fri, 24 Mar 2017 00:11:17 GMT  
+	-	`sha256:527a203588c0f7065060fab3f9de27f3e79b8ad61d3df599423e4b4108e61092`  
+		Last Modified: Tue, 25 Apr 2017 21:01:18 GMT  
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db908b0ac3de984dd97cee898d458d648a43586b00a90ba545097ced925a9faf`  
-		Last Modified: Fri, 24 Mar 2017 00:11:17 GMT  
-		Size: 163.0 B  
+	-	`sha256:26dec14ac775661620d3ee9c5e72a10b10f95741d70b225962f74a5f40cd6ed6`  
+		Last Modified: Tue, 25 Apr 2017 21:01:18 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d80323bca9d7bce11b20583e675b5d8a48c23b935ea310da69fe980db1dfc20e`  
-		Last Modified: Fri, 07 Apr 2017 19:39:01 GMT  
+	-	`sha256:0efc0ed5a9e5634caf56c65f24a136cf6ae7a663f10181e84ae5531a8b538700`  
+		Last Modified: Tue, 25 Apr 2017 21:01:19 GMT  
 		Size: 1.8 KB (1795 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88f943a70bad98e5109491de3439cf1e82aa6fe004dc0138656880e02c3ad9d5`  
-		Last Modified: Fri, 07 Apr 2017 19:39:01 GMT  
-		Size: 120.0 B  
+	-	`sha256:40cd26695b38fcd575c4ae6e8369b9103d65c0b1a781dadb610aebeaaf2141d7`  
+		Last Modified: Tue, 25 Apr 2017 21:01:18 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `postgres:latest`
 
 ```console
-$ docker pull postgres@sha256:3b51a72ca2642f24fa782c2fb99ddb0d29cbcd38f32639c98a80966a25ae2a64
+$ docker pull postgres@sha256:fd6c0e2a9d053bebb294bb13765b3e01be7817bf77b01d58c2377ff27a4a46dc
 ```
 
 -	Platforms:
@@ -410,117 +410,117 @@ $ docker pull postgres@sha256:3b51a72ca2642f24fa782c2fb99ddb0d29cbcd38f32639c98a
 
 ### `postgres:latest` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **102.1 MB (102090190 bytes)**  
+-	Total Size: **104.3 MB (104254425 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff0943ecbb3c5e05b6b79b9a2f439e8da3b293a5932752deacbf5aa6d339e2ce`
+-	Image ID: `sha256:390220867755ef4d1351705130960605d14a44518149e89c674189eefcb09306`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:28:51 GMT
-ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
-# Tue, 21 Mar 2017 18:29:05 GMT
+# Mon, 24 Apr 2017 19:20:41 GMT
+ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / 
+# Mon, 24 Apr 2017 19:20:42 GMT
 CMD ["/bin/bash"]
-# Tue, 21 Mar 2017 23:38:28 GMT
+# Tue, 25 Apr 2017 04:07:06 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Tue, 21 Mar 2017 23:38:29 GMT
+# Tue, 25 Apr 2017 04:07:07 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 21 Mar 2017 23:38:46 GMT
+# Tue, 25 Apr 2017 04:07:25 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:35 GMT
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:44 GMT
 ENV LANG=en_US.utf8
-# Tue, 21 Mar 2017 23:38:55 GMT
+# Tue, 25 Apr 2017 04:07:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 21 Mar 2017 23:38:56 GMT
+# Tue, 25 Apr 2017 04:07:49 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 21 Mar 2017 23:38:57 GMT
+# Tue, 25 Apr 2017 04:08:03 GMT
 ENV PG_MAJOR=9.6
-# Tue, 21 Mar 2017 23:38:57 GMT
+# Tue, 25 Apr 2017 04:08:04 GMT
 ENV PG_VERSION=9.6.2-1.pgdg80+1
-# Tue, 21 Mar 2017 23:38:58 GMT
+# Tue, 25 Apr 2017 04:08:06 GMT
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJOR > /etc/apt/sources.list.d/pgdg.list
-# Tue, 21 Mar 2017 23:39:35 GMT
+# Tue, 25 Apr 2017 04:08:40 GMT
 RUN apt-get update 	&& apt-get install -y postgresql-common 	&& sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf 	&& apt-get install -y 		postgresql-$PG_MAJOR=$PG_VERSION 		postgresql-contrib-$PG_MAJOR=$PG_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 21 Mar 2017 23:39:36 GMT
+# Tue, 25 Apr 2017 04:08:52 GMT
 RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample /usr/share/postgresql/$PG_MAJOR/ 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 21 Mar 2017 23:39:37 GMT
+# Tue, 25 Apr 2017 04:08:53 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod g+s /var/run/postgresql
-# Tue, 21 Mar 2017 23:39:38 GMT
+# Tue, 25 Apr 2017 04:08:54 GMT
 ENV PATH=/usr/lib/postgresql/9.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 21 Mar 2017 23:39:38 GMT
+# Tue, 25 Apr 2017 04:08:55 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 21 Mar 2017 23:39:39 GMT
+# Tue, 25 Apr 2017 04:09:12 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 21 Mar 2017 23:39:39 GMT
+# Tue, 25 Apr 2017 04:09:12 GMT
 VOLUME [/var/lib/postgresql/data]
-# Fri, 07 Apr 2017 19:37:53 GMT
+# Tue, 25 Apr 2017 04:09:13 GMT
 COPY file:e7038391d43a570dfa6f5c9fd1327eab0e66c902a643f547a29a71cbc660b950 in /usr/local/bin/ 
-# Fri, 07 Apr 2017 19:37:54 GMT
+# Tue, 25 Apr 2017 04:09:31 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Fri, 07 Apr 2017 19:37:55 GMT
+# Tue, 25 Apr 2017 04:09:31 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Apr 2017 19:37:56 GMT
+# Tue, 25 Apr 2017 04:09:32 GMT
 EXPOSE 5432/tcp
-# Fri, 07 Apr 2017 19:37:56 GMT
+# Tue, 25 Apr 2017 04:09:48 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
-		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
-		Size: 51.4 MB (51438476 bytes)  
+	-	`sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c`  
+		Last Modified: Mon, 24 Apr 2017 19:32:05 GMT  
+		Size: 52.6 MB (52550276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d7f5459c169a3b3836db7a9501070438bc2c4a0dfc0577a073449fa7ee1ae40`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 2.0 KB (2045 bytes)  
+	-	`sha256:9c784d04dcb093d973443d53da4caa360237c8402351f61ec29a7a4d94e74223`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 2.1 KB (2058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecb14191664d5b18e89d02ff79a6f4b0b698ddc6818f27a3d62a768dccc47845`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 1.3 MB (1288981 bytes)  
+	-	`sha256:d99dddf7e66202708c779d83f4155703ded0b0a34273d20ff88c587ce18619fb`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 1.3 MB (1308214 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecd8857273964c150e39b2461772ec2d9445048adc0ee2c726ad42dc960cb1c0`  
-		Last Modified: Fri, 24 Mar 2017 00:06:35 GMT  
-		Size: 6.9 MB (6937295 bytes)  
+	-	`sha256:e5bff71e3ce6a34b054c75497bf6d379053ee0bf2348b1b3b7941f0901fbcb38`  
+		Last Modified: Tue, 25 Apr 2017 20:57:36 GMT  
+		Size: 7.1 MB (7117661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1fc7408190a9a104bc4dff6ddc144ba86599c2e83dcdfcdfae3c331080bb7a4`  
-		Last Modified: Fri, 24 Mar 2017 00:06:31 GMT  
-		Size: 114.0 B  
+	-	`sha256:cb3e0a8654888a301af8ce50e4c63c7e3762dca8a4cd1b165ec0b80f6dcf6c03`  
+		Last Modified: Tue, 25 Apr 2017 20:57:32 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3cf57a1b661d5e38def1a1b4258b6adfb329b4395951b35ab2d28a53af55b3b`  
-		Last Modified: Fri, 24 Mar 2017 00:06:32 GMT  
-		Size: 4.5 KB (4484 bytes)  
+	-	`sha256:31295d654cd5ed8581f46fbe2b7fb364302bcb01a58b887b934a4686f31e1cd9`  
+		Last Modified: Tue, 25 Apr 2017 20:57:34 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91cef76ed67ea8d88d69ce88edc0c5b0aacb6a9ad5be49f825c6372d68dc0fd5`  
-		Last Modified: Fri, 24 Mar 2017 00:11:20 GMT  
+	-	`sha256:fc930a4e09f51d3334809e42a7afeedc0b284f1e440030869e116cf33dba86cb`  
+		Last Modified: Tue, 25 Apr 2017 21:01:21 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9236ca589ab42ba1deb8891f4bef7235a220b2e7768215fec469ef4eda6676bb`  
-		Last Modified: Fri, 24 Mar 2017 00:11:35 GMT  
-		Size: 42.4 MB (42409238 bytes)  
+	-	`sha256:8650cce8ef01c166a4e56b69db0a54c8795a5aa5b2e791f3c33c83906bc64a28`  
+		Last Modified: Tue, 25 Apr 2017 21:01:33 GMT  
+		Size: 43.3 MB (43262082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69b3e91b94c544edcb87448c260fdc1f3ffe840fd2e560cbb42a9933a64e9963`  
-		Last Modified: Fri, 24 Mar 2017 00:11:18 GMT  
-		Size: 7.1 KB (7123 bytes)  
+	-	`sha256:61949acd8e523ea00b73838652d948c36bd11ff920221e59acfbc2dbc738af50`  
+		Last Modified: Tue, 25 Apr 2017 21:01:18 GMT  
+		Size: 7.1 KB (7096 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdc577dbd56f127ab86ce5db879714aa5e36ec188741354156795658e0e703b1`  
-		Last Modified: Fri, 24 Mar 2017 00:11:17 GMT  
+	-	`sha256:527a203588c0f7065060fab3f9de27f3e79b8ad61d3df599423e4b4108e61092`  
+		Last Modified: Tue, 25 Apr 2017 21:01:18 GMT  
 		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db908b0ac3de984dd97cee898d458d648a43586b00a90ba545097ced925a9faf`  
-		Last Modified: Fri, 24 Mar 2017 00:11:17 GMT  
-		Size: 163.0 B  
+	-	`sha256:26dec14ac775661620d3ee9c5e72a10b10f95741d70b225962f74a5f40cd6ed6`  
+		Last Modified: Tue, 25 Apr 2017 21:01:18 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d80323bca9d7bce11b20583e675b5d8a48c23b935ea310da69fe980db1dfc20e`  
-		Last Modified: Fri, 07 Apr 2017 19:39:01 GMT  
+	-	`sha256:0efc0ed5a9e5634caf56c65f24a136cf6ae7a663f10181e84ae5531a8b538700`  
+		Last Modified: Tue, 25 Apr 2017 21:01:19 GMT  
 		Size: 1.8 KB (1795 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88f943a70bad98e5109491de3439cf1e82aa6fe004dc0138656880e02c3ad9d5`  
-		Last Modified: Fri, 07 Apr 2017 19:39:01 GMT  
-		Size: 120.0 B  
+	-	`sha256:40cd26695b38fcd575c4ae6e8369b9103d65c0b1a781dadb610aebeaaf2141d7`  
+		Last Modified: Tue, 25 Apr 2017 21:01:18 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `postgres:9.6.2-alpine`
@@ -894,7 +894,7 @@ CMD ["postgres"]
 ## `postgres:9.5.6`
 
 ```console
-$ docker pull postgres@sha256:ae6aed7509b24c99d22eea879a999cc5296bf8512cb0ca806710c21e28199258
+$ docker pull postgres@sha256:ecdabeced57301998d183e2f3d7b8d9c6b72d8bfc0d7caf89d3fa7fad16add32
 ```
 
 -	Platforms:
@@ -902,123 +902,123 @@ $ docker pull postgres@sha256:ae6aed7509b24c99d22eea879a999cc5296bf8512cb0ca8067
 
 ### `postgres:9.5.6` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **101.6 MB (101620667 bytes)**  
+-	Total Size: **103.8 MB (103775015 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f4b5a2e24152446a7077da85c428ca9560b266446115b3e7e54703b6f99e39fa`
+-	Image ID: `sha256:ec4e93e1479bc806ebc32680aa4afea07700d1e7d0f77fd6131bf448c133ec42`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:28:51 GMT
-ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
-# Tue, 21 Mar 2017 18:29:05 GMT
+# Mon, 24 Apr 2017 19:20:41 GMT
+ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / 
+# Mon, 24 Apr 2017 19:20:42 GMT
 CMD ["/bin/bash"]
-# Tue, 21 Mar 2017 23:38:28 GMT
+# Tue, 25 Apr 2017 04:07:06 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Tue, 21 Mar 2017 23:38:29 GMT
+# Tue, 25 Apr 2017 04:07:07 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 21 Mar 2017 23:38:46 GMT
+# Tue, 25 Apr 2017 04:07:25 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:35 GMT
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:44 GMT
 ENV LANG=en_US.utf8
-# Tue, 21 Mar 2017 23:38:55 GMT
+# Tue, 25 Apr 2017 04:07:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 21 Mar 2017 23:38:56 GMT
+# Tue, 25 Apr 2017 04:07:49 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 21 Mar 2017 23:41:47 GMT
+# Tue, 25 Apr 2017 04:16:50 GMT
 ENV PG_MAJOR=9.5
-# Tue, 21 Mar 2017 23:41:47 GMT
+# Tue, 25 Apr 2017 04:16:50 GMT
 ENV PG_VERSION=9.5.6-1.pgdg80+1
-# Tue, 21 Mar 2017 23:41:48 GMT
+# Tue, 25 Apr 2017 04:16:52 GMT
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJOR > /etc/apt/sources.list.d/pgdg.list
-# Tue, 21 Mar 2017 23:42:22 GMT
+# Tue, 25 Apr 2017 04:17:32 GMT
 RUN apt-get update 	&& apt-get install -y postgresql-common 	&& sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf 	&& apt-get install -y 		postgresql-$PG_MAJOR=$PG_VERSION 		postgresql-contrib-$PG_MAJOR=$PG_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 21 Mar 2017 23:42:24 GMT
+# Tue, 25 Apr 2017 04:17:40 GMT
 RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample /usr/share/postgresql/$PG_MAJOR/ 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 21 Mar 2017 23:42:25 GMT
+# Tue, 25 Apr 2017 04:17:41 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod g+s /var/run/postgresql
-# Tue, 21 Mar 2017 23:42:25 GMT
+# Tue, 25 Apr 2017 04:17:57 GMT
 ENV PATH=/usr/lib/postgresql/9.5/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 21 Mar 2017 23:42:25 GMT
+# Tue, 25 Apr 2017 04:17:58 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 21 Mar 2017 23:42:26 GMT
+# Tue, 25 Apr 2017 04:17:59 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 21 Mar 2017 23:42:27 GMT
+# Tue, 25 Apr 2017 04:18:00 GMT
 VOLUME [/var/lib/postgresql/data]
-# Fri, 07 Apr 2017 19:38:03 GMT
+# Tue, 25 Apr 2017 04:18:17 GMT
 COPY file:e7038391d43a570dfa6f5c9fd1327eab0e66c902a643f547a29a71cbc660b950 in /usr/local/bin/ 
-# Fri, 07 Apr 2017 19:38:04 GMT
+# Tue, 25 Apr 2017 04:18:18 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Fri, 07 Apr 2017 19:38:05 GMT
+# Tue, 25 Apr 2017 04:18:19 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Apr 2017 19:38:05 GMT
+# Tue, 25 Apr 2017 04:18:20 GMT
 EXPOSE 5432/tcp
-# Fri, 07 Apr 2017 19:38:06 GMT
+# Tue, 25 Apr 2017 04:18:20 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
-		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
-		Size: 51.4 MB (51438476 bytes)  
+	-	`sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c`  
+		Last Modified: Mon, 24 Apr 2017 19:32:05 GMT  
+		Size: 52.6 MB (52550276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d7f5459c169a3b3836db7a9501070438bc2c4a0dfc0577a073449fa7ee1ae40`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 2.0 KB (2045 bytes)  
+	-	`sha256:9c784d04dcb093d973443d53da4caa360237c8402351f61ec29a7a4d94e74223`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 2.1 KB (2058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecb14191664d5b18e89d02ff79a6f4b0b698ddc6818f27a3d62a768dccc47845`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 1.3 MB (1288981 bytes)  
+	-	`sha256:d99dddf7e66202708c779d83f4155703ded0b0a34273d20ff88c587ce18619fb`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 1.3 MB (1308214 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecd8857273964c150e39b2461772ec2d9445048adc0ee2c726ad42dc960cb1c0`  
-		Last Modified: Fri, 24 Mar 2017 00:06:35 GMT  
-		Size: 6.9 MB (6937295 bytes)  
+	-	`sha256:e5bff71e3ce6a34b054c75497bf6d379053ee0bf2348b1b3b7941f0901fbcb38`  
+		Last Modified: Tue, 25 Apr 2017 20:57:36 GMT  
+		Size: 7.1 MB (7117661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1fc7408190a9a104bc4dff6ddc144ba86599c2e83dcdfcdfae3c331080bb7a4`  
-		Last Modified: Fri, 24 Mar 2017 00:06:31 GMT  
-		Size: 114.0 B  
+	-	`sha256:cb3e0a8654888a301af8ce50e4c63c7e3762dca8a4cd1b165ec0b80f6dcf6c03`  
+		Last Modified: Tue, 25 Apr 2017 20:57:32 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3cf57a1b661d5e38def1a1b4258b6adfb329b4395951b35ab2d28a53af55b3b`  
-		Last Modified: Fri, 24 Mar 2017 00:06:32 GMT  
-		Size: 4.5 KB (4484 bytes)  
+	-	`sha256:31295d654cd5ed8581f46fbe2b7fb364302bcb01a58b887b934a4686f31e1cd9`  
+		Last Modified: Tue, 25 Apr 2017 20:57:34 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed067dfd9fa024f6f2ec3189d020e7dcc280518d8d8f54508d8de9dd22d999cb`  
-		Last Modified: Fri, 24 Mar 2017 00:10:12 GMT  
-		Size: 226.0 B  
+	-	`sha256:59d99bd66b8e6c1755a67714acd4a9c5d7d03c5806ca5f479fbeea601fd4d38a`  
+		Last Modified: Tue, 25 Apr 2017 21:00:22 GMT  
+		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b521d237ee601dc6c2dc851e75915a0a7a01e9b5552e316453704922c35cf3e0`  
-		Last Modified: Fri, 24 Mar 2017 00:10:28 GMT  
-		Size: 41.9 MB (41939981 bytes)  
+	-	`sha256:541a4d2816743fde4df6eef50dc7f986651e65b0dc6f16a9e695e134a488eaad`  
+		Last Modified: Tue, 25 Apr 2017 21:00:33 GMT  
+		Size: 42.8 MB (42782943 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ee512509160164bfbe878d854cae90298c10169d6002d2489f4c371d0811e2a`  
-		Last Modified: Fri, 24 Mar 2017 00:10:10 GMT  
-		Size: 6.9 KB (6858 bytes)  
+	-	`sha256:ab004dc9b3c3a23d20ca298368710105fb5ac5dc7f461914f6172b2de3214fc4`  
+		Last Modified: Tue, 25 Apr 2017 21:00:20 GMT  
+		Size: 6.8 KB (6821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ab834064cf659128dfccea24185056a31323cc7bbac6db75fd6b2689b0cbcd8f`  
-		Last Modified: Fri, 24 Mar 2017 00:10:09 GMT  
+	-	`sha256:be4cbf44a07c1efd9725e893a640e19a129d54761cf769908efe904a8100e626`  
+		Last Modified: Tue, 25 Apr 2017 21:00:20 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7778ac4a9d29408ef86b47b419e729c45a41185e86b3d8e486016070669b8142`  
-		Last Modified: Fri, 24 Mar 2017 00:10:09 GMT  
+	-	`sha256:873d246950ff41f23d1fa1be9eb30cfcb0deee01dfc0e1060e8ba5504710db21`  
+		Last Modified: Tue, 25 Apr 2017 21:00:20 GMT  
 		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:009030d35c578300bd9a7443e4b2d3866bdc99350346ee1ea03c264806f73b1d`  
-		Last Modified: Fri, 07 Apr 2017 19:41:49 GMT  
-		Size: 1.8 KB (1793 bytes)  
+	-	`sha256:bd9f56f984b2959ca5e7586602322c85d62eb5d413b68f88dcb4a6b40dbab5ee`  
+		Last Modified: Tue, 25 Apr 2017 21:00:20 GMT  
+		Size: 1.8 KB (1799 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cde5022b16f87af7d8a3b0c20128c5d0c81b7887b7c9de12bb5c91486e118944`  
-		Last Modified: Fri, 07 Apr 2017 19:41:49 GMT  
-		Size: 120.0 B  
+	-	`sha256:223640a793c24906827f804d7a930828b3088b603a32e97dd2925ceac13884b1`  
+		Last Modified: Tue, 25 Apr 2017 21:00:20 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `postgres:9.5`
 
 ```console
-$ docker pull postgres@sha256:ae6aed7509b24c99d22eea879a999cc5296bf8512cb0ca806710c21e28199258
+$ docker pull postgres@sha256:ecdabeced57301998d183e2f3d7b8d9c6b72d8bfc0d7caf89d3fa7fad16add32
 ```
 
 -	Platforms:
@@ -1026,117 +1026,117 @@ $ docker pull postgres@sha256:ae6aed7509b24c99d22eea879a999cc5296bf8512cb0ca8067
 
 ### `postgres:9.5` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **101.6 MB (101620667 bytes)**  
+-	Total Size: **103.8 MB (103775015 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f4b5a2e24152446a7077da85c428ca9560b266446115b3e7e54703b6f99e39fa`
+-	Image ID: `sha256:ec4e93e1479bc806ebc32680aa4afea07700d1e7d0f77fd6131bf448c133ec42`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:28:51 GMT
-ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
-# Tue, 21 Mar 2017 18:29:05 GMT
+# Mon, 24 Apr 2017 19:20:41 GMT
+ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / 
+# Mon, 24 Apr 2017 19:20:42 GMT
 CMD ["/bin/bash"]
-# Tue, 21 Mar 2017 23:38:28 GMT
+# Tue, 25 Apr 2017 04:07:06 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Tue, 21 Mar 2017 23:38:29 GMT
+# Tue, 25 Apr 2017 04:07:07 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 21 Mar 2017 23:38:46 GMT
+# Tue, 25 Apr 2017 04:07:25 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:35 GMT
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:44 GMT
 ENV LANG=en_US.utf8
-# Tue, 21 Mar 2017 23:38:55 GMT
+# Tue, 25 Apr 2017 04:07:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 21 Mar 2017 23:38:56 GMT
+# Tue, 25 Apr 2017 04:07:49 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 21 Mar 2017 23:41:47 GMT
+# Tue, 25 Apr 2017 04:16:50 GMT
 ENV PG_MAJOR=9.5
-# Tue, 21 Mar 2017 23:41:47 GMT
+# Tue, 25 Apr 2017 04:16:50 GMT
 ENV PG_VERSION=9.5.6-1.pgdg80+1
-# Tue, 21 Mar 2017 23:41:48 GMT
+# Tue, 25 Apr 2017 04:16:52 GMT
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJOR > /etc/apt/sources.list.d/pgdg.list
-# Tue, 21 Mar 2017 23:42:22 GMT
+# Tue, 25 Apr 2017 04:17:32 GMT
 RUN apt-get update 	&& apt-get install -y postgresql-common 	&& sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf 	&& apt-get install -y 		postgresql-$PG_MAJOR=$PG_VERSION 		postgresql-contrib-$PG_MAJOR=$PG_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 21 Mar 2017 23:42:24 GMT
+# Tue, 25 Apr 2017 04:17:40 GMT
 RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample /usr/share/postgresql/$PG_MAJOR/ 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 21 Mar 2017 23:42:25 GMT
+# Tue, 25 Apr 2017 04:17:41 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod g+s /var/run/postgresql
-# Tue, 21 Mar 2017 23:42:25 GMT
+# Tue, 25 Apr 2017 04:17:57 GMT
 ENV PATH=/usr/lib/postgresql/9.5/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 21 Mar 2017 23:42:25 GMT
+# Tue, 25 Apr 2017 04:17:58 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 21 Mar 2017 23:42:26 GMT
+# Tue, 25 Apr 2017 04:17:59 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 21 Mar 2017 23:42:27 GMT
+# Tue, 25 Apr 2017 04:18:00 GMT
 VOLUME [/var/lib/postgresql/data]
-# Fri, 07 Apr 2017 19:38:03 GMT
+# Tue, 25 Apr 2017 04:18:17 GMT
 COPY file:e7038391d43a570dfa6f5c9fd1327eab0e66c902a643f547a29a71cbc660b950 in /usr/local/bin/ 
-# Fri, 07 Apr 2017 19:38:04 GMT
+# Tue, 25 Apr 2017 04:18:18 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Fri, 07 Apr 2017 19:38:05 GMT
+# Tue, 25 Apr 2017 04:18:19 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Apr 2017 19:38:05 GMT
+# Tue, 25 Apr 2017 04:18:20 GMT
 EXPOSE 5432/tcp
-# Fri, 07 Apr 2017 19:38:06 GMT
+# Tue, 25 Apr 2017 04:18:20 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
-		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
-		Size: 51.4 MB (51438476 bytes)  
+	-	`sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c`  
+		Last Modified: Mon, 24 Apr 2017 19:32:05 GMT  
+		Size: 52.6 MB (52550276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d7f5459c169a3b3836db7a9501070438bc2c4a0dfc0577a073449fa7ee1ae40`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 2.0 KB (2045 bytes)  
+	-	`sha256:9c784d04dcb093d973443d53da4caa360237c8402351f61ec29a7a4d94e74223`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 2.1 KB (2058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecb14191664d5b18e89d02ff79a6f4b0b698ddc6818f27a3d62a768dccc47845`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 1.3 MB (1288981 bytes)  
+	-	`sha256:d99dddf7e66202708c779d83f4155703ded0b0a34273d20ff88c587ce18619fb`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 1.3 MB (1308214 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecd8857273964c150e39b2461772ec2d9445048adc0ee2c726ad42dc960cb1c0`  
-		Last Modified: Fri, 24 Mar 2017 00:06:35 GMT  
-		Size: 6.9 MB (6937295 bytes)  
+	-	`sha256:e5bff71e3ce6a34b054c75497bf6d379053ee0bf2348b1b3b7941f0901fbcb38`  
+		Last Modified: Tue, 25 Apr 2017 20:57:36 GMT  
+		Size: 7.1 MB (7117661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1fc7408190a9a104bc4dff6ddc144ba86599c2e83dcdfcdfae3c331080bb7a4`  
-		Last Modified: Fri, 24 Mar 2017 00:06:31 GMT  
-		Size: 114.0 B  
+	-	`sha256:cb3e0a8654888a301af8ce50e4c63c7e3762dca8a4cd1b165ec0b80f6dcf6c03`  
+		Last Modified: Tue, 25 Apr 2017 20:57:32 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3cf57a1b661d5e38def1a1b4258b6adfb329b4395951b35ab2d28a53af55b3b`  
-		Last Modified: Fri, 24 Mar 2017 00:06:32 GMT  
-		Size: 4.5 KB (4484 bytes)  
+	-	`sha256:31295d654cd5ed8581f46fbe2b7fb364302bcb01a58b887b934a4686f31e1cd9`  
+		Last Modified: Tue, 25 Apr 2017 20:57:34 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed067dfd9fa024f6f2ec3189d020e7dcc280518d8d8f54508d8de9dd22d999cb`  
-		Last Modified: Fri, 24 Mar 2017 00:10:12 GMT  
-		Size: 226.0 B  
+	-	`sha256:59d99bd66b8e6c1755a67714acd4a9c5d7d03c5806ca5f479fbeea601fd4d38a`  
+		Last Modified: Tue, 25 Apr 2017 21:00:22 GMT  
+		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b521d237ee601dc6c2dc851e75915a0a7a01e9b5552e316453704922c35cf3e0`  
-		Last Modified: Fri, 24 Mar 2017 00:10:28 GMT  
-		Size: 41.9 MB (41939981 bytes)  
+	-	`sha256:541a4d2816743fde4df6eef50dc7f986651e65b0dc6f16a9e695e134a488eaad`  
+		Last Modified: Tue, 25 Apr 2017 21:00:33 GMT  
+		Size: 42.8 MB (42782943 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ee512509160164bfbe878d854cae90298c10169d6002d2489f4c371d0811e2a`  
-		Last Modified: Fri, 24 Mar 2017 00:10:10 GMT  
-		Size: 6.9 KB (6858 bytes)  
+	-	`sha256:ab004dc9b3c3a23d20ca298368710105fb5ac5dc7f461914f6172b2de3214fc4`  
+		Last Modified: Tue, 25 Apr 2017 21:00:20 GMT  
+		Size: 6.8 KB (6821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ab834064cf659128dfccea24185056a31323cc7bbac6db75fd6b2689b0cbcd8f`  
-		Last Modified: Fri, 24 Mar 2017 00:10:09 GMT  
+	-	`sha256:be4cbf44a07c1efd9725e893a640e19a129d54761cf769908efe904a8100e626`  
+		Last Modified: Tue, 25 Apr 2017 21:00:20 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7778ac4a9d29408ef86b47b419e729c45a41185e86b3d8e486016070669b8142`  
-		Last Modified: Fri, 24 Mar 2017 00:10:09 GMT  
+	-	`sha256:873d246950ff41f23d1fa1be9eb30cfcb0deee01dfc0e1060e8ba5504710db21`  
+		Last Modified: Tue, 25 Apr 2017 21:00:20 GMT  
 		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:009030d35c578300bd9a7443e4b2d3866bdc99350346ee1ea03c264806f73b1d`  
-		Last Modified: Fri, 07 Apr 2017 19:41:49 GMT  
-		Size: 1.8 KB (1793 bytes)  
+	-	`sha256:bd9f56f984b2959ca5e7586602322c85d62eb5d413b68f88dcb4a6b40dbab5ee`  
+		Last Modified: Tue, 25 Apr 2017 21:00:20 GMT  
+		Size: 1.8 KB (1799 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cde5022b16f87af7d8a3b0c20128c5d0c81b7887b7c9de12bb5c91486e118944`  
-		Last Modified: Fri, 07 Apr 2017 19:41:49 GMT  
-		Size: 120.0 B  
+	-	`sha256:223640a793c24906827f804d7a930828b3088b603a32e97dd2925ceac13884b1`  
+		Last Modified: Tue, 25 Apr 2017 21:00:20 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `postgres:9.5.6-alpine`
@@ -1326,7 +1326,7 @@ CMD ["postgres"]
 ## `postgres:9.4.11`
 
 ```console
-$ docker pull postgres@sha256:83a05c1cc6e75bc24795690d54dd259c757db19a0885890a661cf0d1899ea237
+$ docker pull postgres@sha256:036743fb5c62618782eaf1377e2104ebcf29f8567e4dc87c680dd94aa2e69f75
 ```
 
 -	Platforms:
@@ -1334,123 +1334,123 @@ $ docker pull postgres@sha256:83a05c1cc6e75bc24795690d54dd259c757db19a0885890a66
 
 ### `postgres:9.4.11` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **101.2 MB (101207950 bytes)**  
+-	Total Size: **103.4 MB (103437866 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:afdbe79b925ef5f42fa5758f12101348a50cd47faac2d894f32be4fe0242bc55`
+-	Image ID: `sha256:928cc2132b5acd4b0336dd955d2a66699d1a0d2d8e80ee2a3b714504c6f0a7a1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:28:51 GMT
-ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
-# Tue, 21 Mar 2017 18:29:05 GMT
+# Mon, 24 Apr 2017 19:20:41 GMT
+ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / 
+# Mon, 24 Apr 2017 19:20:42 GMT
 CMD ["/bin/bash"]
-# Tue, 21 Mar 2017 23:38:28 GMT
+# Tue, 25 Apr 2017 04:07:06 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Tue, 21 Mar 2017 23:38:29 GMT
+# Tue, 25 Apr 2017 04:07:07 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 21 Mar 2017 23:38:46 GMT
+# Tue, 25 Apr 2017 04:07:25 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:35 GMT
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:44 GMT
 ENV LANG=en_US.utf8
-# Tue, 21 Mar 2017 23:38:55 GMT
+# Tue, 25 Apr 2017 04:07:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 21 Mar 2017 23:38:56 GMT
+# Tue, 25 Apr 2017 04:07:49 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 21 Mar 2017 23:41:13 GMT
+# Tue, 25 Apr 2017 04:14:53 GMT
 ENV PG_MAJOR=9.4
-# Tue, 21 Mar 2017 23:41:14 GMT
+# Tue, 25 Apr 2017 04:14:54 GMT
 ENV PG_VERSION=9.4.11-1.pgdg80+1
-# Tue, 21 Mar 2017 23:41:15 GMT
+# Tue, 25 Apr 2017 04:14:55 GMT
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJOR > /etc/apt/sources.list.d/pgdg.list
-# Tue, 21 Mar 2017 23:41:40 GMT
+# Tue, 25 Apr 2017 04:15:50 GMT
 RUN apt-get update 	&& apt-get install -y postgresql-common 	&& sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf 	&& apt-get install -y 		postgresql-$PG_MAJOR=$PG_VERSION 		postgresql-contrib-$PG_MAJOR=$PG_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 21 Mar 2017 23:41:41 GMT
+# Tue, 25 Apr 2017 04:15:52 GMT
 RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample /usr/share/postgresql/$PG_MAJOR/ 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 21 Mar 2017 23:41:42 GMT
+# Tue, 25 Apr 2017 04:15:54 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod g+s /var/run/postgresql
-# Tue, 21 Mar 2017 23:41:42 GMT
+# Tue, 25 Apr 2017 04:16:09 GMT
 ENV PATH=/usr/lib/postgresql/9.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 21 Mar 2017 23:41:42 GMT
+# Tue, 25 Apr 2017 04:16:10 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 21 Mar 2017 23:41:43 GMT
+# Tue, 25 Apr 2017 04:16:11 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 21 Mar 2017 23:41:44 GMT
+# Tue, 25 Apr 2017 04:16:12 GMT
 VOLUME [/var/lib/postgresql/data]
-# Fri, 07 Apr 2017 19:38:12 GMT
+# Tue, 25 Apr 2017 04:16:13 GMT
 COPY file:e7038391d43a570dfa6f5c9fd1327eab0e66c902a643f547a29a71cbc660b950 in /usr/local/bin/ 
-# Fri, 07 Apr 2017 19:38:13 GMT
+# Tue, 25 Apr 2017 04:16:15 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Fri, 07 Apr 2017 19:38:14 GMT
+# Tue, 25 Apr 2017 04:16:15 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Apr 2017 19:38:15 GMT
+# Tue, 25 Apr 2017 04:16:16 GMT
 EXPOSE 5432/tcp
-# Fri, 07 Apr 2017 19:38:15 GMT
+# Tue, 25 Apr 2017 04:16:17 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
-		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
-		Size: 51.4 MB (51438476 bytes)  
+	-	`sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c`  
+		Last Modified: Mon, 24 Apr 2017 19:32:05 GMT  
+		Size: 52.6 MB (52550276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d7f5459c169a3b3836db7a9501070438bc2c4a0dfc0577a073449fa7ee1ae40`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 2.0 KB (2045 bytes)  
+	-	`sha256:9c784d04dcb093d973443d53da4caa360237c8402351f61ec29a7a4d94e74223`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 2.1 KB (2058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecb14191664d5b18e89d02ff79a6f4b0b698ddc6818f27a3d62a768dccc47845`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 1.3 MB (1288981 bytes)  
+	-	`sha256:d99dddf7e66202708c779d83f4155703ded0b0a34273d20ff88c587ce18619fb`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 1.3 MB (1308214 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecd8857273964c150e39b2461772ec2d9445048adc0ee2c726ad42dc960cb1c0`  
-		Last Modified: Fri, 24 Mar 2017 00:06:35 GMT  
-		Size: 6.9 MB (6937295 bytes)  
+	-	`sha256:e5bff71e3ce6a34b054c75497bf6d379053ee0bf2348b1b3b7941f0901fbcb38`  
+		Last Modified: Tue, 25 Apr 2017 20:57:36 GMT  
+		Size: 7.1 MB (7117661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1fc7408190a9a104bc4dff6ddc144ba86599c2e83dcdfcdfae3c331080bb7a4`  
-		Last Modified: Fri, 24 Mar 2017 00:06:31 GMT  
-		Size: 114.0 B  
+	-	`sha256:cb3e0a8654888a301af8ce50e4c63c7e3762dca8a4cd1b165ec0b80f6dcf6c03`  
+		Last Modified: Tue, 25 Apr 2017 20:57:32 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3cf57a1b661d5e38def1a1b4258b6adfb329b4395951b35ab2d28a53af55b3b`  
-		Last Modified: Fri, 24 Mar 2017 00:06:32 GMT  
-		Size: 4.5 KB (4484 bytes)  
+	-	`sha256:31295d654cd5ed8581f46fbe2b7fb364302bcb01a58b887b934a4686f31e1cd9`  
+		Last Modified: Tue, 25 Apr 2017 20:57:34 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:888b5c13b5e121794f81041e6c5620fcf7a478042204245095219ee9a3c7bd09`  
-		Last Modified: Fri, 24 Mar 2017 00:09:09 GMT  
+	-	`sha256:8dc481626377e5cd3aa565b0b7a99d4a6cd412f6df99ea5574ffa6b412730159`  
+		Last Modified: Tue, 25 Apr 2017 20:59:26 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd083cfecff7a4adfc879736d38efdf879e8bc7480ebe265b95f073b3a7ee03b`  
-		Last Modified: Fri, 24 Mar 2017 00:09:25 GMT  
-		Size: 41.5 MB (41527411 bytes)  
+	-	`sha256:76647c6901584d5ba00497ce5300e9e3a3debc91635aa7553b34603fbc7fa931`  
+		Last Modified: Tue, 25 Apr 2017 20:59:37 GMT  
+		Size: 42.4 MB (42445941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f052b8f77bfb60f9480da7eadc0d30f048cb4e57a1e8935b0fb5008172a85c83`  
-		Last Modified: Fri, 24 Mar 2017 00:09:07 GMT  
-		Size: 6.7 KB (6710 bytes)  
+	-	`sha256:a2327364079d642a402e51ebe933144854ee27607b16e56e12c11f8e995b32b3`  
+		Last Modified: Tue, 25 Apr 2017 20:59:24 GMT  
+		Size: 6.7 KB (6679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83fba0edc28ab8f640e112e4fdc519e333ec69032813f950533b7bf30d73af83`  
-		Last Modified: Fri, 24 Mar 2017 00:09:07 GMT  
-		Size: 133.0 B  
+	-	`sha256:108e108ec8c07f5457d53a62688448e3e3d9c4e90ae1026ddb4219b444b0ed6b`  
+		Last Modified: Tue, 25 Apr 2017 20:59:24 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdcc5391528e5253d5f898bcee89d8a732e279acb5d1a25c439feb7236cfaf0f`  
-		Last Modified: Fri, 24 Mar 2017 00:09:07 GMT  
-		Size: 164.0 B  
+	-	`sha256:78dc83a6f3d5bed953356c203758330baf797d63f4b0918e8a18202888b947bf`  
+		Last Modified: Tue, 25 Apr 2017 20:59:24 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9be41713a757a2c7f43ecb40044bca00ee66b943f1a25ad722839ce44383ca9d`  
-		Last Modified: Fri, 07 Apr 2017 19:43:18 GMT  
+	-	`sha256:4b6e357e09f9324b97a7d990f68f5b0ab4d6bff5b3b04b04a9263792c473a84b`  
+		Last Modified: Tue, 25 Apr 2017 20:59:24 GMT  
 		Size: 1.8 KB (1794 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe580a66c7618a3a8cd62d5e6e324d18efcb7147071fcedacb089f5cb2fa5240`  
-		Last Modified: Fri, 07 Apr 2017 19:43:17 GMT  
-		Size: 119.0 B  
+	-	`sha256:a587b8b2a084677f639f383b325310e0c875f5fd37901dd091afeaf3f4b8e837`  
+		Last Modified: Tue, 25 Apr 2017 20:59:25 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `postgres:9.4`
 
 ```console
-$ docker pull postgres@sha256:83a05c1cc6e75bc24795690d54dd259c757db19a0885890a661cf0d1899ea237
+$ docker pull postgres@sha256:036743fb5c62618782eaf1377e2104ebcf29f8567e4dc87c680dd94aa2e69f75
 ```
 
 -	Platforms:
@@ -1458,117 +1458,117 @@ $ docker pull postgres@sha256:83a05c1cc6e75bc24795690d54dd259c757db19a0885890a66
 
 ### `postgres:9.4` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **101.2 MB (101207950 bytes)**  
+-	Total Size: **103.4 MB (103437866 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:afdbe79b925ef5f42fa5758f12101348a50cd47faac2d894f32be4fe0242bc55`
+-	Image ID: `sha256:928cc2132b5acd4b0336dd955d2a66699d1a0d2d8e80ee2a3b714504c6f0a7a1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:28:51 GMT
-ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
-# Tue, 21 Mar 2017 18:29:05 GMT
+# Mon, 24 Apr 2017 19:20:41 GMT
+ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / 
+# Mon, 24 Apr 2017 19:20:42 GMT
 CMD ["/bin/bash"]
-# Tue, 21 Mar 2017 23:38:28 GMT
+# Tue, 25 Apr 2017 04:07:06 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Tue, 21 Mar 2017 23:38:29 GMT
+# Tue, 25 Apr 2017 04:07:07 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 21 Mar 2017 23:38:46 GMT
+# Tue, 25 Apr 2017 04:07:25 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:35 GMT
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:44 GMT
 ENV LANG=en_US.utf8
-# Tue, 21 Mar 2017 23:38:55 GMT
+# Tue, 25 Apr 2017 04:07:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 21 Mar 2017 23:38:56 GMT
+# Tue, 25 Apr 2017 04:07:49 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 21 Mar 2017 23:41:13 GMT
+# Tue, 25 Apr 2017 04:14:53 GMT
 ENV PG_MAJOR=9.4
-# Tue, 21 Mar 2017 23:41:14 GMT
+# Tue, 25 Apr 2017 04:14:54 GMT
 ENV PG_VERSION=9.4.11-1.pgdg80+1
-# Tue, 21 Mar 2017 23:41:15 GMT
+# Tue, 25 Apr 2017 04:14:55 GMT
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJOR > /etc/apt/sources.list.d/pgdg.list
-# Tue, 21 Mar 2017 23:41:40 GMT
+# Tue, 25 Apr 2017 04:15:50 GMT
 RUN apt-get update 	&& apt-get install -y postgresql-common 	&& sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf 	&& apt-get install -y 		postgresql-$PG_MAJOR=$PG_VERSION 		postgresql-contrib-$PG_MAJOR=$PG_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 21 Mar 2017 23:41:41 GMT
+# Tue, 25 Apr 2017 04:15:52 GMT
 RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample /usr/share/postgresql/$PG_MAJOR/ 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 21 Mar 2017 23:41:42 GMT
+# Tue, 25 Apr 2017 04:15:54 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod g+s /var/run/postgresql
-# Tue, 21 Mar 2017 23:41:42 GMT
+# Tue, 25 Apr 2017 04:16:09 GMT
 ENV PATH=/usr/lib/postgresql/9.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 21 Mar 2017 23:41:42 GMT
+# Tue, 25 Apr 2017 04:16:10 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 21 Mar 2017 23:41:43 GMT
+# Tue, 25 Apr 2017 04:16:11 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 21 Mar 2017 23:41:44 GMT
+# Tue, 25 Apr 2017 04:16:12 GMT
 VOLUME [/var/lib/postgresql/data]
-# Fri, 07 Apr 2017 19:38:12 GMT
+# Tue, 25 Apr 2017 04:16:13 GMT
 COPY file:e7038391d43a570dfa6f5c9fd1327eab0e66c902a643f547a29a71cbc660b950 in /usr/local/bin/ 
-# Fri, 07 Apr 2017 19:38:13 GMT
+# Tue, 25 Apr 2017 04:16:15 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Fri, 07 Apr 2017 19:38:14 GMT
+# Tue, 25 Apr 2017 04:16:15 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Apr 2017 19:38:15 GMT
+# Tue, 25 Apr 2017 04:16:16 GMT
 EXPOSE 5432/tcp
-# Fri, 07 Apr 2017 19:38:15 GMT
+# Tue, 25 Apr 2017 04:16:17 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
-		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
-		Size: 51.4 MB (51438476 bytes)  
+	-	`sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c`  
+		Last Modified: Mon, 24 Apr 2017 19:32:05 GMT  
+		Size: 52.6 MB (52550276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d7f5459c169a3b3836db7a9501070438bc2c4a0dfc0577a073449fa7ee1ae40`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 2.0 KB (2045 bytes)  
+	-	`sha256:9c784d04dcb093d973443d53da4caa360237c8402351f61ec29a7a4d94e74223`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 2.1 KB (2058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecb14191664d5b18e89d02ff79a6f4b0b698ddc6818f27a3d62a768dccc47845`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 1.3 MB (1288981 bytes)  
+	-	`sha256:d99dddf7e66202708c779d83f4155703ded0b0a34273d20ff88c587ce18619fb`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 1.3 MB (1308214 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecd8857273964c150e39b2461772ec2d9445048adc0ee2c726ad42dc960cb1c0`  
-		Last Modified: Fri, 24 Mar 2017 00:06:35 GMT  
-		Size: 6.9 MB (6937295 bytes)  
+	-	`sha256:e5bff71e3ce6a34b054c75497bf6d379053ee0bf2348b1b3b7941f0901fbcb38`  
+		Last Modified: Tue, 25 Apr 2017 20:57:36 GMT  
+		Size: 7.1 MB (7117661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1fc7408190a9a104bc4dff6ddc144ba86599c2e83dcdfcdfae3c331080bb7a4`  
-		Last Modified: Fri, 24 Mar 2017 00:06:31 GMT  
-		Size: 114.0 B  
+	-	`sha256:cb3e0a8654888a301af8ce50e4c63c7e3762dca8a4cd1b165ec0b80f6dcf6c03`  
+		Last Modified: Tue, 25 Apr 2017 20:57:32 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3cf57a1b661d5e38def1a1b4258b6adfb329b4395951b35ab2d28a53af55b3b`  
-		Last Modified: Fri, 24 Mar 2017 00:06:32 GMT  
-		Size: 4.5 KB (4484 bytes)  
+	-	`sha256:31295d654cd5ed8581f46fbe2b7fb364302bcb01a58b887b934a4686f31e1cd9`  
+		Last Modified: Tue, 25 Apr 2017 20:57:34 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:888b5c13b5e121794f81041e6c5620fcf7a478042204245095219ee9a3c7bd09`  
-		Last Modified: Fri, 24 Mar 2017 00:09:09 GMT  
+	-	`sha256:8dc481626377e5cd3aa565b0b7a99d4a6cd412f6df99ea5574ffa6b412730159`  
+		Last Modified: Tue, 25 Apr 2017 20:59:26 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd083cfecff7a4adfc879736d38efdf879e8bc7480ebe265b95f073b3a7ee03b`  
-		Last Modified: Fri, 24 Mar 2017 00:09:25 GMT  
-		Size: 41.5 MB (41527411 bytes)  
+	-	`sha256:76647c6901584d5ba00497ce5300e9e3a3debc91635aa7553b34603fbc7fa931`  
+		Last Modified: Tue, 25 Apr 2017 20:59:37 GMT  
+		Size: 42.4 MB (42445941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f052b8f77bfb60f9480da7eadc0d30f048cb4e57a1e8935b0fb5008172a85c83`  
-		Last Modified: Fri, 24 Mar 2017 00:09:07 GMT  
-		Size: 6.7 KB (6710 bytes)  
+	-	`sha256:a2327364079d642a402e51ebe933144854ee27607b16e56e12c11f8e995b32b3`  
+		Last Modified: Tue, 25 Apr 2017 20:59:24 GMT  
+		Size: 6.7 KB (6679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:83fba0edc28ab8f640e112e4fdc519e333ec69032813f950533b7bf30d73af83`  
-		Last Modified: Fri, 24 Mar 2017 00:09:07 GMT  
-		Size: 133.0 B  
+	-	`sha256:108e108ec8c07f5457d53a62688448e3e3d9c4e90ae1026ddb4219b444b0ed6b`  
+		Last Modified: Tue, 25 Apr 2017 20:59:24 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cdcc5391528e5253d5f898bcee89d8a732e279acb5d1a25c439feb7236cfaf0f`  
-		Last Modified: Fri, 24 Mar 2017 00:09:07 GMT  
-		Size: 164.0 B  
+	-	`sha256:78dc83a6f3d5bed953356c203758330baf797d63f4b0918e8a18202888b947bf`  
+		Last Modified: Tue, 25 Apr 2017 20:59:24 GMT  
+		Size: 163.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9be41713a757a2c7f43ecb40044bca00ee66b943f1a25ad722839ce44383ca9d`  
-		Last Modified: Fri, 07 Apr 2017 19:43:18 GMT  
+	-	`sha256:4b6e357e09f9324b97a7d990f68f5b0ab4d6bff5b3b04b04a9263792c473a84b`  
+		Last Modified: Tue, 25 Apr 2017 20:59:24 GMT  
 		Size: 1.8 KB (1794 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe580a66c7618a3a8cd62d5e6e324d18efcb7147071fcedacb089f5cb2fa5240`  
-		Last Modified: Fri, 07 Apr 2017 19:43:17 GMT  
-		Size: 119.0 B  
+	-	`sha256:a587b8b2a084677f639f383b325310e0c875f5fd37901dd091afeaf3f4b8e837`  
+		Last Modified: Tue, 25 Apr 2017 20:59:25 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `postgres:9.4.11-alpine`
@@ -1758,7 +1758,7 @@ CMD ["postgres"]
 ## `postgres:9.3.16`
 
 ```console
-$ docker pull postgres@sha256:bcc0c90fadd00927440556771264de4de03c7a3475f6e1109dfe66a7b32f61a5
+$ docker pull postgres@sha256:45de96c958577c4ab9c723290a4841508ab306113d656fb414f4ff7a0a147171
 ```
 
 -	Platforms:
@@ -1766,123 +1766,123 @@ $ docker pull postgres@sha256:bcc0c90fadd00927440556771264de4de03c7a3475f6e1109d
 
 ### `postgres:9.3.16` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **100.9 MB (100855317 bytes)**  
+-	Total Size: **103.1 MB (103089851 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cb50544c487eb367af57228c01b454669e5a4e94f2d73592f5851af1fb82bb18`
+-	Image ID: `sha256:8a66c1af43426326fb3b32e7acc0cf6e28639e1622cc78ac6ace6b4d3c860d8a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:28:51 GMT
-ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
-# Tue, 21 Mar 2017 18:29:05 GMT
+# Mon, 24 Apr 2017 19:20:41 GMT
+ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / 
+# Mon, 24 Apr 2017 19:20:42 GMT
 CMD ["/bin/bash"]
-# Tue, 21 Mar 2017 23:38:28 GMT
+# Tue, 25 Apr 2017 04:07:06 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Tue, 21 Mar 2017 23:38:29 GMT
+# Tue, 25 Apr 2017 04:07:07 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 21 Mar 2017 23:38:46 GMT
+# Tue, 25 Apr 2017 04:07:25 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:35 GMT
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:44 GMT
 ENV LANG=en_US.utf8
-# Tue, 21 Mar 2017 23:38:55 GMT
+# Tue, 25 Apr 2017 04:07:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 21 Mar 2017 23:38:56 GMT
+# Tue, 25 Apr 2017 04:07:49 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 21 Mar 2017 23:40:28 GMT
+# Tue, 25 Apr 2017 04:12:56 GMT
 ENV PG_MAJOR=9.3
-# Tue, 21 Mar 2017 23:40:28 GMT
+# Tue, 25 Apr 2017 04:12:57 GMT
 ENV PG_VERSION=9.3.16-1.pgdg80+1
-# Tue, 21 Mar 2017 23:40:29 GMT
+# Tue, 25 Apr 2017 04:12:58 GMT
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJOR > /etc/apt/sources.list.d/pgdg.list
-# Tue, 21 Mar 2017 23:41:06 GMT
+# Tue, 25 Apr 2017 04:13:53 GMT
 RUN apt-get update 	&& apt-get install -y postgresql-common 	&& sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf 	&& apt-get install -y 		postgresql-$PG_MAJOR=$PG_VERSION 		postgresql-contrib-$PG_MAJOR=$PG_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 21 Mar 2017 23:41:07 GMT
+# Tue, 25 Apr 2017 04:13:55 GMT
 RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample /usr/share/postgresql/$PG_MAJOR/ 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 21 Mar 2017 23:41:08 GMT
+# Tue, 25 Apr 2017 04:13:56 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod g+s /var/run/postgresql
-# Tue, 21 Mar 2017 23:41:08 GMT
+# Tue, 25 Apr 2017 04:13:57 GMT
 ENV PATH=/usr/lib/postgresql/9.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 21 Mar 2017 23:41:09 GMT
+# Tue, 25 Apr 2017 04:13:57 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 21 Mar 2017 23:41:10 GMT
+# Tue, 25 Apr 2017 04:13:59 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 21 Mar 2017 23:41:10 GMT
+# Tue, 25 Apr 2017 04:14:00 GMT
 VOLUME [/var/lib/postgresql/data]
-# Fri, 07 Apr 2017 19:38:21 GMT
+# Tue, 25 Apr 2017 04:14:01 GMT
 COPY file:e7038391d43a570dfa6f5c9fd1327eab0e66c902a643f547a29a71cbc660b950 in /usr/local/bin/ 
-# Fri, 07 Apr 2017 19:38:23 GMT
+# Tue, 25 Apr 2017 04:14:03 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Fri, 07 Apr 2017 19:38:23 GMT
+# Tue, 25 Apr 2017 04:14:19 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Apr 2017 19:38:24 GMT
+# Tue, 25 Apr 2017 04:14:19 GMT
 EXPOSE 5432/tcp
-# Fri, 07 Apr 2017 19:38:24 GMT
+# Tue, 25 Apr 2017 04:14:20 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
-		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
-		Size: 51.4 MB (51438476 bytes)  
+	-	`sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c`  
+		Last Modified: Mon, 24 Apr 2017 19:32:05 GMT  
+		Size: 52.6 MB (52550276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d7f5459c169a3b3836db7a9501070438bc2c4a0dfc0577a073449fa7ee1ae40`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 2.0 KB (2045 bytes)  
+	-	`sha256:9c784d04dcb093d973443d53da4caa360237c8402351f61ec29a7a4d94e74223`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 2.1 KB (2058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecb14191664d5b18e89d02ff79a6f4b0b698ddc6818f27a3d62a768dccc47845`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 1.3 MB (1288981 bytes)  
+	-	`sha256:d99dddf7e66202708c779d83f4155703ded0b0a34273d20ff88c587ce18619fb`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 1.3 MB (1308214 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecd8857273964c150e39b2461772ec2d9445048adc0ee2c726ad42dc960cb1c0`  
-		Last Modified: Fri, 24 Mar 2017 00:06:35 GMT  
-		Size: 6.9 MB (6937295 bytes)  
+	-	`sha256:e5bff71e3ce6a34b054c75497bf6d379053ee0bf2348b1b3b7941f0901fbcb38`  
+		Last Modified: Tue, 25 Apr 2017 20:57:36 GMT  
+		Size: 7.1 MB (7117661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1fc7408190a9a104bc4dff6ddc144ba86599c2e83dcdfcdfae3c331080bb7a4`  
-		Last Modified: Fri, 24 Mar 2017 00:06:31 GMT  
-		Size: 114.0 B  
+	-	`sha256:cb3e0a8654888a301af8ce50e4c63c7e3762dca8a4cd1b165ec0b80f6dcf6c03`  
+		Last Modified: Tue, 25 Apr 2017 20:57:32 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3cf57a1b661d5e38def1a1b4258b6adfb329b4395951b35ab2d28a53af55b3b`  
-		Last Modified: Fri, 24 Mar 2017 00:06:32 GMT  
-		Size: 4.5 KB (4484 bytes)  
+	-	`sha256:31295d654cd5ed8581f46fbe2b7fb364302bcb01a58b887b934a4686f31e1cd9`  
+		Last Modified: Tue, 25 Apr 2017 20:57:34 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef79a01dd4b2fc9af802a3e02a0185c8219ddb3e8b876413de6a5ffcb1015e48`  
-		Last Modified: Fri, 24 Mar 2017 00:08:06 GMT  
-		Size: 225.0 B  
+	-	`sha256:8357d04d01c681c769dca0d69c9b5f597e7b65346f637d1e82b20e7eddfc3651`  
+		Last Modified: Tue, 25 Apr 2017 20:58:28 GMT  
+		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e58ac0efef385642578769b938580cbf0bf821f6cca701443b16d7bd9cf1f7bc`  
-		Last Modified: Fri, 24 Mar 2017 00:08:23 GMT  
-		Size: 41.2 MB (41174958 bytes)  
+	-	`sha256:4a90e416350617f1f7f304e2861bf41236372c77046e904fcc22b49adc8247d1`  
+		Last Modified: Tue, 25 Apr 2017 20:58:42 GMT  
+		Size: 42.1 MB (42098103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc5b75bd9df19747253900f1675cdd94ee75958eab12be1acb14af5bc4fc31c5`  
-		Last Modified: Fri, 24 Mar 2017 00:08:03 GMT  
-		Size: 6.5 KB (6531 bytes)  
+	-	`sha256:c29c449e6119ca35c8559c38a2f56f04fe3e59603157d2e490497c1ce2c4d7eb`  
+		Last Modified: Tue, 25 Apr 2017 20:58:27 GMT  
+		Size: 6.5 KB (6497 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfd95a9a837c9a6b4949942953217f0c1a6996b06f03fb6ff44010d1beefdcc5`  
-		Last Modified: Fri, 24 Mar 2017 00:08:06 GMT  
-		Size: 133.0 B  
+	-	`sha256:fe438050e132dbd0ee86f9c5a06b4f4fc6522b911459a7d7cea480aca48d5d3c`  
+		Last Modified: Tue, 25 Apr 2017 20:58:26 GMT  
+		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3117ec042bdb6ec952c50cee8a10e7aee7be5392aed49fe374e280a6f1b5b6b6`  
-		Last Modified: Fri, 24 Mar 2017 00:08:03 GMT  
-		Size: 163.0 B  
+	-	`sha256:f5e4fc032858bb5eac04f9d77f303e1354c53cfb0809980bab41f68ff6d93519`  
+		Last Modified: Tue, 25 Apr 2017 20:58:26 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb0587eb78003dea987a1677e61959c85fe862147273c8e50388a043760bbd76`  
-		Last Modified: Fri, 07 Apr 2017 19:44:46 GMT  
-		Size: 1.8 KB (1793 bytes)  
+	-	`sha256:5221349889ffad91dd262a4490228049ad90cea32f21136e496a33df3cbde2bb`  
+		Last Modified: Tue, 25 Apr 2017 20:58:27 GMT  
+		Size: 1.8 KB (1799 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42cc5f9cf4b7b1e32369d924e96cfbad29ba977f762804d5f73d5dc34c349dfa`  
-		Last Modified: Fri, 07 Apr 2017 19:44:46 GMT  
-		Size: 119.0 B  
+	-	`sha256:cff63f7e55004c33163655c57b64b25818239b2601616c8e75d1145a991e8094`  
+		Last Modified: Tue, 25 Apr 2017 20:58:26 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `postgres:9.3`
 
 ```console
-$ docker pull postgres@sha256:bcc0c90fadd00927440556771264de4de03c7a3475f6e1109dfe66a7b32f61a5
+$ docker pull postgres@sha256:45de96c958577c4ab9c723290a4841508ab306113d656fb414f4ff7a0a147171
 ```
 
 -	Platforms:
@@ -1890,117 +1890,117 @@ $ docker pull postgres@sha256:bcc0c90fadd00927440556771264de4de03c7a3475f6e1109d
 
 ### `postgres:9.3` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **100.9 MB (100855317 bytes)**  
+-	Total Size: **103.1 MB (103089851 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cb50544c487eb367af57228c01b454669e5a4e94f2d73592f5851af1fb82bb18`
+-	Image ID: `sha256:8a66c1af43426326fb3b32e7acc0cf6e28639e1622cc78ac6ace6b4d3c860d8a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:28:51 GMT
-ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
-# Tue, 21 Mar 2017 18:29:05 GMT
+# Mon, 24 Apr 2017 19:20:41 GMT
+ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / 
+# Mon, 24 Apr 2017 19:20:42 GMT
 CMD ["/bin/bash"]
-# Tue, 21 Mar 2017 23:38:28 GMT
+# Tue, 25 Apr 2017 04:07:06 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Tue, 21 Mar 2017 23:38:29 GMT
+# Tue, 25 Apr 2017 04:07:07 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 21 Mar 2017 23:38:46 GMT
+# Tue, 25 Apr 2017 04:07:25 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:35 GMT
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:44 GMT
 ENV LANG=en_US.utf8
-# Tue, 21 Mar 2017 23:38:55 GMT
+# Tue, 25 Apr 2017 04:07:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 21 Mar 2017 23:38:56 GMT
+# Tue, 25 Apr 2017 04:07:49 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 21 Mar 2017 23:40:28 GMT
+# Tue, 25 Apr 2017 04:12:56 GMT
 ENV PG_MAJOR=9.3
-# Tue, 21 Mar 2017 23:40:28 GMT
+# Tue, 25 Apr 2017 04:12:57 GMT
 ENV PG_VERSION=9.3.16-1.pgdg80+1
-# Tue, 21 Mar 2017 23:40:29 GMT
+# Tue, 25 Apr 2017 04:12:58 GMT
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJOR > /etc/apt/sources.list.d/pgdg.list
-# Tue, 21 Mar 2017 23:41:06 GMT
+# Tue, 25 Apr 2017 04:13:53 GMT
 RUN apt-get update 	&& apt-get install -y postgresql-common 	&& sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf 	&& apt-get install -y 		postgresql-$PG_MAJOR=$PG_VERSION 		postgresql-contrib-$PG_MAJOR=$PG_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 21 Mar 2017 23:41:07 GMT
+# Tue, 25 Apr 2017 04:13:55 GMT
 RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample /usr/share/postgresql/$PG_MAJOR/ 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 21 Mar 2017 23:41:08 GMT
+# Tue, 25 Apr 2017 04:13:56 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod g+s /var/run/postgresql
-# Tue, 21 Mar 2017 23:41:08 GMT
+# Tue, 25 Apr 2017 04:13:57 GMT
 ENV PATH=/usr/lib/postgresql/9.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 21 Mar 2017 23:41:09 GMT
+# Tue, 25 Apr 2017 04:13:57 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 21 Mar 2017 23:41:10 GMT
+# Tue, 25 Apr 2017 04:13:59 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 21 Mar 2017 23:41:10 GMT
+# Tue, 25 Apr 2017 04:14:00 GMT
 VOLUME [/var/lib/postgresql/data]
-# Fri, 07 Apr 2017 19:38:21 GMT
+# Tue, 25 Apr 2017 04:14:01 GMT
 COPY file:e7038391d43a570dfa6f5c9fd1327eab0e66c902a643f547a29a71cbc660b950 in /usr/local/bin/ 
-# Fri, 07 Apr 2017 19:38:23 GMT
+# Tue, 25 Apr 2017 04:14:03 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Fri, 07 Apr 2017 19:38:23 GMT
+# Tue, 25 Apr 2017 04:14:19 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Apr 2017 19:38:24 GMT
+# Tue, 25 Apr 2017 04:14:19 GMT
 EXPOSE 5432/tcp
-# Fri, 07 Apr 2017 19:38:24 GMT
+# Tue, 25 Apr 2017 04:14:20 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
-		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
-		Size: 51.4 MB (51438476 bytes)  
+	-	`sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c`  
+		Last Modified: Mon, 24 Apr 2017 19:32:05 GMT  
+		Size: 52.6 MB (52550276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d7f5459c169a3b3836db7a9501070438bc2c4a0dfc0577a073449fa7ee1ae40`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 2.0 KB (2045 bytes)  
+	-	`sha256:9c784d04dcb093d973443d53da4caa360237c8402351f61ec29a7a4d94e74223`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 2.1 KB (2058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecb14191664d5b18e89d02ff79a6f4b0b698ddc6818f27a3d62a768dccc47845`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 1.3 MB (1288981 bytes)  
+	-	`sha256:d99dddf7e66202708c779d83f4155703ded0b0a34273d20ff88c587ce18619fb`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 1.3 MB (1308214 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecd8857273964c150e39b2461772ec2d9445048adc0ee2c726ad42dc960cb1c0`  
-		Last Modified: Fri, 24 Mar 2017 00:06:35 GMT  
-		Size: 6.9 MB (6937295 bytes)  
+	-	`sha256:e5bff71e3ce6a34b054c75497bf6d379053ee0bf2348b1b3b7941f0901fbcb38`  
+		Last Modified: Tue, 25 Apr 2017 20:57:36 GMT  
+		Size: 7.1 MB (7117661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1fc7408190a9a104bc4dff6ddc144ba86599c2e83dcdfcdfae3c331080bb7a4`  
-		Last Modified: Fri, 24 Mar 2017 00:06:31 GMT  
-		Size: 114.0 B  
+	-	`sha256:cb3e0a8654888a301af8ce50e4c63c7e3762dca8a4cd1b165ec0b80f6dcf6c03`  
+		Last Modified: Tue, 25 Apr 2017 20:57:32 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3cf57a1b661d5e38def1a1b4258b6adfb329b4395951b35ab2d28a53af55b3b`  
-		Last Modified: Fri, 24 Mar 2017 00:06:32 GMT  
-		Size: 4.5 KB (4484 bytes)  
+	-	`sha256:31295d654cd5ed8581f46fbe2b7fb364302bcb01a58b887b934a4686f31e1cd9`  
+		Last Modified: Tue, 25 Apr 2017 20:57:34 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef79a01dd4b2fc9af802a3e02a0185c8219ddb3e8b876413de6a5ffcb1015e48`  
-		Last Modified: Fri, 24 Mar 2017 00:08:06 GMT  
-		Size: 225.0 B  
+	-	`sha256:8357d04d01c681c769dca0d69c9b5f597e7b65346f637d1e82b20e7eddfc3651`  
+		Last Modified: Tue, 25 Apr 2017 20:58:28 GMT  
+		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e58ac0efef385642578769b938580cbf0bf821f6cca701443b16d7bd9cf1f7bc`  
-		Last Modified: Fri, 24 Mar 2017 00:08:23 GMT  
-		Size: 41.2 MB (41174958 bytes)  
+	-	`sha256:4a90e416350617f1f7f304e2861bf41236372c77046e904fcc22b49adc8247d1`  
+		Last Modified: Tue, 25 Apr 2017 20:58:42 GMT  
+		Size: 42.1 MB (42098103 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc5b75bd9df19747253900f1675cdd94ee75958eab12be1acb14af5bc4fc31c5`  
-		Last Modified: Fri, 24 Mar 2017 00:08:03 GMT  
-		Size: 6.5 KB (6531 bytes)  
+	-	`sha256:c29c449e6119ca35c8559c38a2f56f04fe3e59603157d2e490497c1ce2c4d7eb`  
+		Last Modified: Tue, 25 Apr 2017 20:58:27 GMT  
+		Size: 6.5 KB (6497 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfd95a9a837c9a6b4949942953217f0c1a6996b06f03fb6ff44010d1beefdcc5`  
-		Last Modified: Fri, 24 Mar 2017 00:08:06 GMT  
-		Size: 133.0 B  
+	-	`sha256:fe438050e132dbd0ee86f9c5a06b4f4fc6522b911459a7d7cea480aca48d5d3c`  
+		Last Modified: Tue, 25 Apr 2017 20:58:26 GMT  
+		Size: 132.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3117ec042bdb6ec952c50cee8a10e7aee7be5392aed49fe374e280a6f1b5b6b6`  
-		Last Modified: Fri, 24 Mar 2017 00:08:03 GMT  
-		Size: 163.0 B  
+	-	`sha256:f5e4fc032858bb5eac04f9d77f303e1354c53cfb0809980bab41f68ff6d93519`  
+		Last Modified: Tue, 25 Apr 2017 20:58:26 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb0587eb78003dea987a1677e61959c85fe862147273c8e50388a043760bbd76`  
-		Last Modified: Fri, 07 Apr 2017 19:44:46 GMT  
-		Size: 1.8 KB (1793 bytes)  
+	-	`sha256:5221349889ffad91dd262a4490228049ad90cea32f21136e496a33df3cbde2bb`  
+		Last Modified: Tue, 25 Apr 2017 20:58:27 GMT  
+		Size: 1.8 KB (1799 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42cc5f9cf4b7b1e32369d924e96cfbad29ba977f762804d5f73d5dc34c349dfa`  
-		Last Modified: Fri, 07 Apr 2017 19:44:46 GMT  
-		Size: 119.0 B  
+	-	`sha256:cff63f7e55004c33163655c57b64b25818239b2601616c8e75d1145a991e8094`  
+		Last Modified: Tue, 25 Apr 2017 20:58:26 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `postgres:9.3.16-alpine`
@@ -2198,7 +2198,7 @@ CMD ["postgres"]
 ## `postgres:9.2.20`
 
 ```console
-$ docker pull postgres@sha256:5518278ff152168954a04c168f9d16180f69aa401bb7a6455264ffd323273dc9
+$ docker pull postgres@sha256:f7e13a81fd86640aaac427e17467e8df7fa099db53fee6faa84aaa58075122dd
 ```
 
 -	Platforms:
@@ -2206,123 +2206,123 @@ $ docker pull postgres@sha256:5518278ff152168954a04c168f9d16180f69aa401bb7a64552
 
 ### `postgres:9.2.20` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **100.7 MB (100691648 bytes)**  
+-	Total Size: **102.9 MB (102926650 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e7b979e77515354701b4fbfaf0c00247744eb8d5d90a00f1f49cb21a599c66f`
+-	Image ID: `sha256:5f36582ebc722106bf91f8e4f79ac607e7d06b83876bab49d008f94be81db9ec`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:28:51 GMT
-ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
-# Tue, 21 Mar 2017 18:29:05 GMT
+# Mon, 24 Apr 2017 19:20:41 GMT
+ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / 
+# Mon, 24 Apr 2017 19:20:42 GMT
 CMD ["/bin/bash"]
-# Tue, 21 Mar 2017 23:38:28 GMT
+# Tue, 25 Apr 2017 04:07:06 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Tue, 21 Mar 2017 23:38:29 GMT
+# Tue, 25 Apr 2017 04:07:07 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 21 Mar 2017 23:38:46 GMT
+# Tue, 25 Apr 2017 04:07:25 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:35 GMT
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:44 GMT
 ENV LANG=en_US.utf8
-# Tue, 21 Mar 2017 23:38:55 GMT
+# Tue, 25 Apr 2017 04:07:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 21 Mar 2017 23:38:56 GMT
+# Tue, 25 Apr 2017 04:07:49 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 21 Mar 2017 23:39:43 GMT
+# Tue, 25 Apr 2017 04:10:21 GMT
 ENV PG_MAJOR=9.2
-# Tue, 21 Mar 2017 23:39:43 GMT
+# Tue, 25 Apr 2017 04:10:22 GMT
 ENV PG_VERSION=9.2.20-1.pgdg80+1
-# Tue, 21 Mar 2017 23:39:44 GMT
+# Tue, 25 Apr 2017 04:10:23 GMT
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJOR > /etc/apt/sources.list.d/pgdg.list
-# Tue, 21 Mar 2017 23:40:20 GMT
+# Tue, 25 Apr 2017 04:11:20 GMT
 RUN apt-get update 	&& apt-get install -y postgresql-common 	&& sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf 	&& apt-get install -y 		postgresql-$PG_MAJOR=$PG_VERSION 		postgresql-contrib-$PG_MAJOR=$PG_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 21 Mar 2017 23:40:22 GMT
+# Tue, 25 Apr 2017 04:11:26 GMT
 RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample /usr/share/postgresql/$PG_MAJOR/ 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 21 Mar 2017 23:40:22 GMT
+# Tue, 25 Apr 2017 04:11:28 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod g+s /var/run/postgresql
-# Tue, 21 Mar 2017 23:40:23 GMT
+# Tue, 25 Apr 2017 04:11:44 GMT
 ENV PATH=/usr/lib/postgresql/9.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 21 Mar 2017 23:40:23 GMT
+# Tue, 25 Apr 2017 04:11:45 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 21 Mar 2017 23:40:24 GMT
+# Tue, 25 Apr 2017 04:11:47 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 21 Mar 2017 23:40:24 GMT
+# Tue, 25 Apr 2017 04:12:03 GMT
 VOLUME [/var/lib/postgresql/data]
-# Fri, 07 Apr 2017 19:38:30 GMT
+# Tue, 25 Apr 2017 04:12:04 GMT
 COPY file:e7038391d43a570dfa6f5c9fd1327eab0e66c902a643f547a29a71cbc660b950 in /usr/local/bin/ 
-# Fri, 07 Apr 2017 19:38:32 GMT
+# Tue, 25 Apr 2017 04:12:05 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Fri, 07 Apr 2017 19:38:32 GMT
+# Tue, 25 Apr 2017 04:12:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Apr 2017 19:38:33 GMT
+# Tue, 25 Apr 2017 04:12:22 GMT
 EXPOSE 5432/tcp
-# Fri, 07 Apr 2017 19:38:33 GMT
+# Tue, 25 Apr 2017 04:12:23 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
-		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
-		Size: 51.4 MB (51438476 bytes)  
+	-	`sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c`  
+		Last Modified: Mon, 24 Apr 2017 19:32:05 GMT  
+		Size: 52.6 MB (52550276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d7f5459c169a3b3836db7a9501070438bc2c4a0dfc0577a073449fa7ee1ae40`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 2.0 KB (2045 bytes)  
+	-	`sha256:9c784d04dcb093d973443d53da4caa360237c8402351f61ec29a7a4d94e74223`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 2.1 KB (2058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecb14191664d5b18e89d02ff79a6f4b0b698ddc6818f27a3d62a768dccc47845`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 1.3 MB (1288981 bytes)  
+	-	`sha256:d99dddf7e66202708c779d83f4155703ded0b0a34273d20ff88c587ce18619fb`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 1.3 MB (1308214 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecd8857273964c150e39b2461772ec2d9445048adc0ee2c726ad42dc960cb1c0`  
-		Last Modified: Fri, 24 Mar 2017 00:06:35 GMT  
-		Size: 6.9 MB (6937295 bytes)  
+	-	`sha256:e5bff71e3ce6a34b054c75497bf6d379053ee0bf2348b1b3b7941f0901fbcb38`  
+		Last Modified: Tue, 25 Apr 2017 20:57:36 GMT  
+		Size: 7.1 MB (7117661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1fc7408190a9a104bc4dff6ddc144ba86599c2e83dcdfcdfae3c331080bb7a4`  
-		Last Modified: Fri, 24 Mar 2017 00:06:31 GMT  
-		Size: 114.0 B  
+	-	`sha256:cb3e0a8654888a301af8ce50e4c63c7e3762dca8a4cd1b165ec0b80f6dcf6c03`  
+		Last Modified: Tue, 25 Apr 2017 20:57:32 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3cf57a1b661d5e38def1a1b4258b6adfb329b4395951b35ab2d28a53af55b3b`  
-		Last Modified: Fri, 24 Mar 2017 00:06:32 GMT  
-		Size: 4.5 KB (4484 bytes)  
+	-	`sha256:31295d654cd5ed8581f46fbe2b7fb364302bcb01a58b887b934a4686f31e1cd9`  
+		Last Modified: Tue, 25 Apr 2017 20:57:34 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13ddf7864eca2eefe09c48a9d68bdd7dccfa21511eb192fafb81b2ed2c6b086c`  
-		Last Modified: Fri, 24 Mar 2017 00:06:31 GMT  
-		Size: 225.0 B  
+	-	`sha256:20bcae6048269076b6575fc366bde824e1625e570e23589a0c6f0b26ea2f1b9e`  
+		Last Modified: Tue, 25 Apr 2017 20:57:32 GMT  
+		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:645059b306b7095447a603ab500bd553fe3bbd48c8caaca89d679ab262a0589e`  
-		Last Modified: Fri, 24 Mar 2017 00:06:48 GMT  
-		Size: 41.0 MB (41011350 bytes)  
+	-	`sha256:82d67793fba98f46383d9e3fa2ce1dfd9f7a4b10542daeb8b3b50223f5dd5b18`  
+		Last Modified: Tue, 25 Apr 2017 20:57:43 GMT  
+		Size: 41.9 MB (41934965 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57e03bbc5b789d0807f8e60366d1653e10386d36330e7d36e3852d13817e559d`  
-		Last Modified: Fri, 24 Mar 2017 00:06:28 GMT  
-		Size: 6.5 KB (6471 bytes)  
+	-	`sha256:ef0100b00d16a34ad1e9c81cd3051d595ae457d712408be4be5bd089a62979ba`  
+		Last Modified: Tue, 25 Apr 2017 20:57:30 GMT  
+		Size: 6.4 KB (6436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9db74ea88326303004cb41121cb655e9f200bd33cb5b5456d1981117bba4e066`  
-		Last Modified: Fri, 24 Mar 2017 00:06:29 GMT  
-		Size: 132.0 B  
+	-	`sha256:56776fc06542df56532ba8c294a457a7726d129f55c9e41580718231838963d2`  
+		Last Modified: Tue, 25 Apr 2017 20:57:30 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97dead0a6449edbaec264c3a580684c32e9f173bddf71ebf47737fae1f06b4f1`  
-		Last Modified: Fri, 24 Mar 2017 00:06:29 GMT  
-		Size: 163.0 B  
+	-	`sha256:c098e48deada6d035464083a561a47a5304f83056210e7434d7e094306f4b37a`  
+		Last Modified: Tue, 25 Apr 2017 20:57:32 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c1662a75db466d3ec04148f0b0f140a6c3b99d5836d6e3c80555fc8d5e6d3de`  
-		Last Modified: Fri, 07 Apr 2017 19:46:13 GMT  
-		Size: 1.8 KB (1795 bytes)  
+	-	`sha256:da5929b33295fd62d9391776e2f8f881469124d0dc464a03db12599c8f3eabe2`  
+		Last Modified: Tue, 25 Apr 2017 20:57:30 GMT  
+		Size: 1.8 KB (1798 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:848a856a478af2555f223a43db58ae0c90cc2b77b6d6008342f8a3a94261dc35`  
-		Last Modified: Fri, 07 Apr 2017 19:46:13 GMT  
-		Size: 117.0 B  
+	-	`sha256:e53c2f7ee0ea1dbdf858a0e38fb8d9d8d4a93888c14ed8a8e7c58b31fa4fc703`  
+		Last Modified: Tue, 25 Apr 2017 20:57:30 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `postgres:9.2`
 
 ```console
-$ docker pull postgres@sha256:5518278ff152168954a04c168f9d16180f69aa401bb7a6455264ffd323273dc9
+$ docker pull postgres@sha256:f7e13a81fd86640aaac427e17467e8df7fa099db53fee6faa84aaa58075122dd
 ```
 
 -	Platforms:
@@ -2330,117 +2330,117 @@ $ docker pull postgres@sha256:5518278ff152168954a04c168f9d16180f69aa401bb7a64552
 
 ### `postgres:9.2` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **100.7 MB (100691648 bytes)**  
+-	Total Size: **102.9 MB (102926650 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e7b979e77515354701b4fbfaf0c00247744eb8d5d90a00f1f49cb21a599c66f`
+-	Image ID: `sha256:5f36582ebc722106bf91f8e4f79ac607e7d06b83876bab49d008f94be81db9ec`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
-# Tue, 21 Mar 2017 18:28:51 GMT
-ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / 
-# Tue, 21 Mar 2017 18:29:05 GMT
+# Mon, 24 Apr 2017 19:20:41 GMT
+ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / 
+# Mon, 24 Apr 2017 19:20:42 GMT
 CMD ["/bin/bash"]
-# Tue, 21 Mar 2017 23:38:28 GMT
+# Tue, 25 Apr 2017 04:07:06 GMT
 RUN groupadd -r postgres --gid=999 && useradd -r -g postgres --uid=999 postgres
-# Tue, 21 Mar 2017 23:38:29 GMT
+# Tue, 25 Apr 2017 04:07:07 GMT
 ENV GOSU_VERSION=1.7
-# Tue, 21 Mar 2017 23:38:46 GMT
+# Tue, 25 Apr 2017 04:07:25 GMT
 RUN set -x 	&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true 	&& apt-get purge -y --auto-remove ca-certificates wget
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:35 GMT
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 	&& localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-# Tue, 21 Mar 2017 23:38:54 GMT
+# Tue, 25 Apr 2017 04:07:44 GMT
 ENV LANG=en_US.utf8
-# Tue, 21 Mar 2017 23:38:55 GMT
+# Tue, 25 Apr 2017 04:07:46 GMT
 RUN mkdir /docker-entrypoint-initdb.d
-# Tue, 21 Mar 2017 23:38:56 GMT
+# Tue, 25 Apr 2017 04:07:49 GMT
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
-# Tue, 21 Mar 2017 23:39:43 GMT
+# Tue, 25 Apr 2017 04:10:21 GMT
 ENV PG_MAJOR=9.2
-# Tue, 21 Mar 2017 23:39:43 GMT
+# Tue, 25 Apr 2017 04:10:22 GMT
 ENV PG_VERSION=9.2.20-1.pgdg80+1
-# Tue, 21 Mar 2017 23:39:44 GMT
+# Tue, 25 Apr 2017 04:10:23 GMT
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJOR > /etc/apt/sources.list.d/pgdg.list
-# Tue, 21 Mar 2017 23:40:20 GMT
+# Tue, 25 Apr 2017 04:11:20 GMT
 RUN apt-get update 	&& apt-get install -y postgresql-common 	&& sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf 	&& apt-get install -y 		postgresql-$PG_MAJOR=$PG_VERSION 		postgresql-contrib-$PG_MAJOR=$PG_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 21 Mar 2017 23:40:22 GMT
+# Tue, 25 Apr 2017 04:11:26 GMT
 RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample /usr/share/postgresql/$PG_MAJOR/ 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Tue, 21 Mar 2017 23:40:22 GMT
+# Tue, 25 Apr 2017 04:11:28 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod g+s /var/run/postgresql
-# Tue, 21 Mar 2017 23:40:23 GMT
+# Tue, 25 Apr 2017 04:11:44 GMT
 ENV PATH=/usr/lib/postgresql/9.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 21 Mar 2017 23:40:23 GMT
+# Tue, 25 Apr 2017 04:11:45 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Tue, 21 Mar 2017 23:40:24 GMT
+# Tue, 25 Apr 2017 04:11:47 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Tue, 21 Mar 2017 23:40:24 GMT
+# Tue, 25 Apr 2017 04:12:03 GMT
 VOLUME [/var/lib/postgresql/data]
-# Fri, 07 Apr 2017 19:38:30 GMT
+# Tue, 25 Apr 2017 04:12:04 GMT
 COPY file:e7038391d43a570dfa6f5c9fd1327eab0e66c902a643f547a29a71cbc660b950 in /usr/local/bin/ 
-# Fri, 07 Apr 2017 19:38:32 GMT
+# Tue, 25 Apr 2017 04:12:05 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Fri, 07 Apr 2017 19:38:32 GMT
+# Tue, 25 Apr 2017 04:12:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 07 Apr 2017 19:38:33 GMT
+# Tue, 25 Apr 2017 04:12:22 GMT
 EXPOSE 5432/tcp
-# Fri, 07 Apr 2017 19:38:33 GMT
+# Tue, 25 Apr 2017 04:12:23 GMT
 CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70`  
-		Last Modified: Tue, 21 Mar 2017 18:38:18 GMT  
-		Size: 51.4 MB (51438476 bytes)  
+	-	`sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c`  
+		Last Modified: Mon, 24 Apr 2017 19:32:05 GMT  
+		Size: 52.6 MB (52550276 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9d7f5459c169a3b3836db7a9501070438bc2c4a0dfc0577a073449fa7ee1ae40`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 2.0 KB (2045 bytes)  
+	-	`sha256:9c784d04dcb093d973443d53da4caa360237c8402351f61ec29a7a4d94e74223`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 2.1 KB (2058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecb14191664d5b18e89d02ff79a6f4b0b698ddc6818f27a3d62a768dccc47845`  
-		Last Modified: Fri, 24 Mar 2017 00:06:33 GMT  
-		Size: 1.3 MB (1288981 bytes)  
+	-	`sha256:d99dddf7e66202708c779d83f4155703ded0b0a34273d20ff88c587ce18619fb`  
+		Last Modified: Tue, 25 Apr 2017 20:57:35 GMT  
+		Size: 1.3 MB (1308214 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ecd8857273964c150e39b2461772ec2d9445048adc0ee2c726ad42dc960cb1c0`  
-		Last Modified: Fri, 24 Mar 2017 00:06:35 GMT  
-		Size: 6.9 MB (6937295 bytes)  
+	-	`sha256:e5bff71e3ce6a34b054c75497bf6d379053ee0bf2348b1b3b7941f0901fbcb38`  
+		Last Modified: Tue, 25 Apr 2017 20:57:36 GMT  
+		Size: 7.1 MB (7117661 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1fc7408190a9a104bc4dff6ddc144ba86599c2e83dcdfcdfae3c331080bb7a4`  
-		Last Modified: Fri, 24 Mar 2017 00:06:31 GMT  
-		Size: 114.0 B  
+	-	`sha256:cb3e0a8654888a301af8ce50e4c63c7e3762dca8a4cd1b165ec0b80f6dcf6c03`  
+		Last Modified: Tue, 25 Apr 2017 20:57:32 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3cf57a1b661d5e38def1a1b4258b6adfb329b4395951b35ab2d28a53af55b3b`  
-		Last Modified: Fri, 24 Mar 2017 00:06:32 GMT  
-		Size: 4.5 KB (4484 bytes)  
+	-	`sha256:31295d654cd5ed8581f46fbe2b7fb364302bcb01a58b887b934a4686f31e1cd9`  
+		Last Modified: Tue, 25 Apr 2017 20:57:34 GMT  
+		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13ddf7864eca2eefe09c48a9d68bdd7dccfa21511eb192fafb81b2ed2c6b086c`  
-		Last Modified: Fri, 24 Mar 2017 00:06:31 GMT  
-		Size: 225.0 B  
+	-	`sha256:20bcae6048269076b6575fc366bde824e1625e570e23589a0c6f0b26ea2f1b9e`  
+		Last Modified: Tue, 25 Apr 2017 20:57:32 GMT  
+		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:645059b306b7095447a603ab500bd553fe3bbd48c8caaca89d679ab262a0589e`  
-		Last Modified: Fri, 24 Mar 2017 00:06:48 GMT  
-		Size: 41.0 MB (41011350 bytes)  
+	-	`sha256:82d67793fba98f46383d9e3fa2ce1dfd9f7a4b10542daeb8b3b50223f5dd5b18`  
+		Last Modified: Tue, 25 Apr 2017 20:57:43 GMT  
+		Size: 41.9 MB (41934965 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57e03bbc5b789d0807f8e60366d1653e10386d36330e7d36e3852d13817e559d`  
-		Last Modified: Fri, 24 Mar 2017 00:06:28 GMT  
-		Size: 6.5 KB (6471 bytes)  
+	-	`sha256:ef0100b00d16a34ad1e9c81cd3051d595ae457d712408be4be5bd089a62979ba`  
+		Last Modified: Tue, 25 Apr 2017 20:57:30 GMT  
+		Size: 6.4 KB (6436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9db74ea88326303004cb41121cb655e9f200bd33cb5b5456d1981117bba4e066`  
-		Last Modified: Fri, 24 Mar 2017 00:06:29 GMT  
-		Size: 132.0 B  
+	-	`sha256:56776fc06542df56532ba8c294a457a7726d129f55c9e41580718231838963d2`  
+		Last Modified: Tue, 25 Apr 2017 20:57:30 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97dead0a6449edbaec264c3a580684c32e9f173bddf71ebf47737fae1f06b4f1`  
-		Last Modified: Fri, 24 Mar 2017 00:06:29 GMT  
-		Size: 163.0 B  
+	-	`sha256:c098e48deada6d035464083a561a47a5304f83056210e7434d7e094306f4b37a`  
+		Last Modified: Tue, 25 Apr 2017 20:57:32 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c1662a75db466d3ec04148f0b0f140a6c3b99d5836d6e3c80555fc8d5e6d3de`  
-		Last Modified: Fri, 07 Apr 2017 19:46:13 GMT  
-		Size: 1.8 KB (1795 bytes)  
+	-	`sha256:da5929b33295fd62d9391776e2f8f881469124d0dc464a03db12599c8f3eabe2`  
+		Last Modified: Tue, 25 Apr 2017 20:57:30 GMT  
+		Size: 1.8 KB (1798 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:848a856a478af2555f223a43db58ae0c90cc2b77b6d6008342f8a3a94261dc35`  
-		Last Modified: Fri, 07 Apr 2017 19:46:13 GMT  
-		Size: 117.0 B  
+	-	`sha256:e53c2f7ee0ea1dbdf858a0e38fb8d9d8d4a93888c14ed8a8e7c58b31fa4fc703`  
+		Last Modified: Tue, 25 Apr 2017 20:57:30 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `postgres:9.2.20-alpine`
