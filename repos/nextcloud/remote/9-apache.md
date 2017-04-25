@@ -1,7 +1,7 @@
 ## `nextcloud:9-apache`
 
 ```console
-$ docker pull nextcloud@sha256:b73d286a82d722d3bdee1e2f91410e5bdd39571b8ae92adf422b5240db1e726d
+$ docker pull nextcloud@sha256:e92bd4981578758b36a68ff096622c52739f71232d70843f42406649e979d222
 ```
 
 -	Platforms:
@@ -9,11 +9,11 @@ $ docker pull nextcloud@sha256:b73d286a82d722d3bdee1e2f91410e5bdd39571b8ae92adf4
 
 ### `nextcloud:9-apache` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **227.8 MB (227841335 bytes)**  
+-	Total Size: **227.9 MB (227948118 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9ebd01dec86d9371c05fe1b46483aefebc0029be5f108db566f9d98bf010cd1c`
+-	Image ID: `sha256:00a909ae2b8d5948303dab289af601d89a218e519fc025c0b434e855f428ba3c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -92,17 +92,17 @@ RUN a2enmod rewrite
 RUN set -ex  && pecl install APCu-4.0.10  && pecl install memcached-2.2.0  && pecl install redis-2.2.8  && docker-php-ext-enable apcu redis memcached
 # Wed, 22 Mar 2017 21:45:40 GMT
 RUN a2enmod rewrite
-# Wed, 22 Mar 2017 21:54:41 GMT
-ENV NEXTCLOUD_VERSION=9.0.57
-# Wed, 22 Mar 2017 21:54:42 GMT
+# Tue, 25 Apr 2017 00:23:41 GMT
+ENV NEXTCLOUD_VERSION=9.0.58
+# Tue, 25 Apr 2017 00:23:42 GMT
 VOLUME [/var/www/html]
-# Wed, 22 Mar 2017 21:54:55 GMT
+# Tue, 25 Apr 2017 00:23:55 GMT
 RUN curl -fsSL -o nextcloud.tar.bz2     "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2"  && curl -fsSL -o nextcloud.tar.bz2.asc     "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A  && gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2  && rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc  && tar -xjf nextcloud.tar.bz2 -C /usr/src/  && rm nextcloud.tar.bz2
-# Wed, 22 Mar 2017 21:54:56 GMT
+# Tue, 25 Apr 2017 00:23:56 GMT
 COPY file:c7f1f4a0f998c8c0da4d04648ceaf6cc3023bcb1ce16653971a83aa733746efc in /entrypoint.sh 
-# Wed, 22 Mar 2017 21:54:56 GMT
+# Tue, 25 Apr 2017 00:23:57 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 22 Mar 2017 21:54:56 GMT
+# Tue, 25 Apr 2017 00:23:58 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -179,11 +179,11 @@ CMD ["apache2-foreground"]
 		Last Modified: Thu, 23 Mar 2017 22:57:08 GMT  
 		Size: 1.3 MB (1331825 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d94c774203c73830b901b649276823913a99495abdbb2b7fd93274d408bcc406`  
-		Last Modified: Thu, 23 Mar 2017 23:05:47 GMT  
-		Size: 36.6 MB (36570593 bytes)  
+	-	`sha256:9774eeed3806f78b280fe708dba8af1ec33b259851169381f039dab5f070865f`  
+		Last Modified: Tue, 25 Apr 2017 00:35:03 GMT  
+		Size: 36.7 MB (36677378 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7fb4cc63cecbfe3ec2b4cb6c052f013827a04e5f220cff85e0bc67354e52fa97`  
-		Last Modified: Thu, 23 Mar 2017 23:05:32 GMT  
-		Size: 246.0 B  
+	-	`sha256:a25f7d0f1050e526e363e8783d258a462683790175af29c7509fd629afa171a2`  
+		Last Modified: Tue, 25 Apr 2017 00:34:45 GMT  
+		Size: 244.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
