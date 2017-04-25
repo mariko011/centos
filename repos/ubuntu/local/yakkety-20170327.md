@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:22e1b809054ee22fbaaf767d98af28bffd0f486361a77d689851023ddf06b88b`
-- Created: `2017-04-12T21:07:13.642294819Z`
-- Virtual Size: ~ 104.84 Mb  
+- Image ID: `sha256:1b1ddabad182e52730e29971284da6bd1b580415cdf343a535ee3879204128ec`
+- Created: `2017-04-24T22:57:59.765187031Z`
+- Virtual Size: ~ 105.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1048,12 +1048,12 @@ $ apt-get source -qq --print-uris sqlite3=3.14.1-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.14.1-1build1.debian.tar.xz' sqlite3_3.14.1-1build1.debian.tar.xz 16580 SHA256:0b32301f6f4a4477e5f69992fa11fc3c2db84118faf9c7b36265101ccb529d01
 ```
 
-### `dpkg` source package: `systemd=231-9ubuntu3`
+### `dpkg` source package: `systemd=231-9ubuntu4`
 
 Binary Packages:
 
-- `libsystemd0:amd64=231-9ubuntu3`
-- `libudev1:amd64=231-9ubuntu3`
+- `libsystemd0:amd64=231-9ubuntu4`
+- `libudev1:amd64=231-9ubuntu4`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1065,8 +1065,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=231-9ubuntu4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-9ubuntu4.dsc' systemd_231-9ubuntu4.dsc 4586 SHA256:d626139f9e6d10eba7da6f1b12a7e10608e4399c547cc647dfe9babd94e2efc4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231.orig.tar.gz' systemd_231.orig.tar.gz 4381464 SHA256:899733ad6c157cedbb89aec4efe3bc824dcfd65a1d6f6bebc7b043f7924e39b4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-9ubuntu4.debian.tar.xz' systemd_231-9ubuntu4.debian.tar.xz 159652 SHA256:6e80d72f3945c98ea7ff66217941aff2242caea5b020261935283ffc8afc6a03
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`
 
