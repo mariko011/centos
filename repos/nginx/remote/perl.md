@@ -1,0 +1,54 @@
+## `nginx:perl`
+
+```console
+$ docker pull nginx@sha256:f27e46d1fe4efe8be2a0a76ed30716fa34076d7d91eb66b89654157222265c5d
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `nginx:perl` - linux; amd64
+
+-	Docker Version: 17.04.0-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **54.7 MB (54723240 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:eff4c173b8f5ea45f92eff75d1e8255af85c59c9b9e3df4afd025e395e0773eb`
+-	Default Command: `["nginx","-g","daemon off;"]`
+
+```dockerfile
+# Mon, 24 Apr 2017 19:27:02 GMT
+ADD file:253a2a9f49900b34f61c3c1527adb199bfc8ff153084604addb38a6769aadce7 in / 
+# Mon, 24 Apr 2017 19:27:02 GMT
+CMD ["/bin/bash"]
+# Tue, 25 Apr 2017 02:30:37 GMT
+MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
+# Tue, 25 Apr 2017 17:19:45 GMT
+ENV NGINX_VERSION=1.13.0-1~stretch
+# Tue, 25 Apr 2017 17:19:46 GMT
+ENV NJS_VERSION=1.13.0.0.1.10-1~stretch
+# Tue, 25 Apr 2017 17:21:17 GMT
+RUN apt-get update 	&& apt-get install --no-install-recommends --no-install-suggests -y gnupg1 	&& 	NGINX_GPGKEY=573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62; 	found=''; 	for server in 		ha.pool.sks-keyservers.net 		hkp://keyserver.ubuntu.com:80 		hkp://p80.pool.sks-keyservers.net:80 		pgp.mit.edu 	; do 		echo "Fetching GPG key $NGINX_GPGKEY from $server"; 		apt-key adv --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$NGINX_GPGKEY" && found=yes && break; 	done; 	test -z "$found" && echo >&2 "error: failed to fetch GPG key $NGINX_GPGKEY" && exit 1; 	apt-get remove --purge -y gnupg1 && apt-get -y --purge autoremove && rm -rf /var/lib/apt/lists/* 	&& echo "deb http://nginx.org/packages/mainline/debian/ stretch nginx" >> /etc/apt/sources.list 	&& apt-get update 	&& apt-get install --no-install-recommends --no-install-suggests -y 						nginx=${NGINX_VERSION} 						nginx-module-xslt=${NGINX_VERSION} 						nginx-module-geoip=${NGINX_VERSION} 						nginx-module-image-filter=${NGINX_VERSION} 						nginx-module-perl=${NGINX_VERSION} 						nginx-module-njs=${NJS_VERSION} 						gettext-base 	&& rm -rf /var/lib/apt/lists/*
+# Tue, 25 Apr 2017 17:21:18 GMT
+RUN ln -sf /dev/stdout /var/log/nginx/access.log 	&& ln -sf /dev/stderr /var/log/nginx/error.log
+# Tue, 25 Apr 2017 17:21:19 GMT
+EXPOSE 80/tcp
+# Tue, 25 Apr 2017 17:21:20 GMT
+STOPSIGNAL [SIGQUIT]
+# Tue, 25 Apr 2017 17:21:20 GMT
+CMD ["nginx" "-g" "daemon off;"]
+```
+
+-	Layers:
+	-	`sha256:36a46ebd501927ed32bd008fb98e4f4b250636ac6c29c7c540c45d5158264410`  
+		Last Modified: Mon, 24 Apr 2017 19:39:07 GMT  
+		Size: 23.3 MB (23276193 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fbd9e65b5481c5efecaacaca95907135bc1677a0720eda0ac6763c4be07e3cde`  
+		Last Modified: Tue, 25 Apr 2017 17:28:17 GMT  
+		Size: 31.4 MB (31446854 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:dd5ef50ef0460274dc38eb4b7912655995b0d3227ae4cf9d88040aff5146ed54`  
+		Last Modified: Tue, 25 Apr 2017 17:28:11 GMT  
+		Size: 193.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
