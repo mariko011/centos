@@ -1,7 +1,7 @@
 ## `wordpress:4-php5.6-apache`
 
 ```console
-$ docker pull wordpress@sha256:980dcdf0c66aa863f309f1d2bb618f4981dcb926a43bc0f65f5d2a0c3be81149
+$ docker pull wordpress@sha256:0a9949350b53fa230c6f90d72d3933f49d770dfc2ea158df1ac36317fe1b5919
 ```
 
 -	Platforms:
@@ -9,11 +9,11 @@ $ docker pull wordpress@sha256:980dcdf0c66aa863f309f1d2bb618f4981dcb926a43bc0f65
 
 ### `wordpress:4-php5.6-apache` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **163.9 MB (163861331 bytes)**  
+-	Total Size: **163.9 MB (163910359 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4ad41adc27941b1d6aa4d0729ff4fc543adec6ee0a6413bbc9f8186721b15d73`
+-	Image ID: `sha256:7bde25a96fa79134e619411ae799b754d5b738dda1c11bf23561ffca1cb52137`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -88,17 +88,17 @@ RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_
 RUN a2enmod rewrite expires
 # Wed, 22 Mar 2017 17:52:18 GMT
 VOLUME [/var/www/html]
-# Wed, 22 Mar 2017 17:52:19 GMT
-ENV WORDPRESS_VERSION=4.7.3
-# Wed, 22 Mar 2017 17:52:19 GMT
-ENV WORDPRESS_SHA1=35adcd8162eae00d5bc37f35344fdc06b22ffc98
-# Wed, 22 Mar 2017 17:52:22 GMT
+# Tue, 25 Apr 2017 02:01:41 GMT
+ENV WORDPRESS_VERSION=4.7.4
+# Tue, 25 Apr 2017 02:01:41 GMT
+ENV WORDPRESS_SHA1=153592ccbb838cafa1220de9174ec965df2e9e1a
+# Tue, 25 Apr 2017 02:01:46 GMT
 RUN set -ex; 	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; 	echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; 	tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 	chown -R www-data:www-data /usr/src/wordpress
-# Wed, 22 Mar 2017 17:52:23 GMT
+# Tue, 25 Apr 2017 02:01:47 GMT
 COPY file:b5c332f80307d4248d07b035890c0ea453c1157d9e1732225f83f63d851392b5 in /usr/local/bin/ 
-# Wed, 22 Mar 2017 17:52:23 GMT
+# Tue, 25 Apr 2017 02:01:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 22 Mar 2017 17:52:24 GMT
+# Tue, 25 Apr 2017 02:01:48 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -167,11 +167,11 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 24 Mar 2017 01:17:51 GMT  
 		Size: 326.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79dd5209b5a0c88440d41df139acefccb936f03af1c8c1e17f2f121c42b4610a`  
-		Last Modified: Fri, 24 Mar 2017 01:17:55 GMT  
-		Size: 7.8 MB (7836669 bytes)  
+	-	`sha256:b9341d9408dcfb670bcd834b89b1b356ba9f7d5760c113dc3269041a92d5e400`  
+		Last Modified: Tue, 25 Apr 2017 02:05:19 GMT  
+		Size: 7.9 MB (7885684 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c390e42be10f84b82df5fa95fea02b4a27cf06cb0eca1910e17ba6a114a3b6e0`  
-		Last Modified: Fri, 24 Mar 2017 01:17:51 GMT  
-		Size: 3.1 KB (3134 bytes)  
+	-	`sha256:ea232a2d7fbd40ef095d91631c0baee82e8c038c1a98daef6aa692afa53b52a8`  
+		Last Modified: Tue, 25 Apr 2017 02:05:17 GMT  
+		Size: 3.1 KB (3147 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
