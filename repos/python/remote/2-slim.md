@@ -1,7 +1,7 @@
 ## `python:2-slim`
 
 ```console
-$ docker pull python@sha256:2185f75c1dfb1852f04126da57dfe807d608bbebf782f49782009a881c48ab89
+$ docker pull python@sha256:b5ae405a173110610c594035b5cae5e39a6f305b8e94fb116e9b5a5434412f30
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull python@sha256:2185f75c1dfb1852f04126da57dfe807d608bbebf782f4978200
 
 -	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **72.7 MB (72698938 bytes)**  
+-	Total Size: **72.7 MB (72698895 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4a323b466a5ac4ce65248dd970b538922c54e535700cafe9448b52a3094483ea`
+-	Image ID: `sha256:7fd4e5a52ace37a2c6f637303f149de0b9f368aa38756a4fc5fb00ca7a83ac75`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -33,9 +33,13 @@ ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
 ENV PYTHON_VERSION=2.7.13
 # Tue, 25 Apr 2017 04:22:13 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Tue, 25 Apr 2017 04:24:41 GMT
-RUN set -ex 	&& buildDeps=' 		gcc 		libbz2-dev 		libc6-dev 		libdb-dev 		libgdbm-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-shared 		--enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 			&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& python2 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	&& pip install --no-cache-dir --upgrade --force-reinstall "pip==$PYTHON_PIP_VERSION" 	&& [ "$(pip list |tac|tac| awk -F '[ ()]+' '$1 == "pip" { print $2; exit }')" = "$PYTHON_PIP_VERSION" ] 		&& find /usr/local -depth 		\( 			\( -type d -a -name test -o -name tests \) 			-o 			\( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
-# Tue, 25 Apr 2017 04:24:58 GMT
+# Wed, 26 Apr 2017 19:34:47 GMT
+ENV PYTHON_SETUPTOOLS_VERSION=35.0.1
+# Wed, 26 Apr 2017 19:34:48 GMT
+ENV PYTHON_WHEEL_VERSION=0.29.0
+# Wed, 26 Apr 2017 19:37:17 GMT
+RUN set -ex 	&& buildDeps=' 		gcc 		libbz2-dev 		libc6-dev 		libdb-dev 		libgdbm-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -r "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& ./configure 		--enable-shared 		--enable-unicode=ucs4 	&& make -j$(nproc) 	&& make install 	&& ldconfig 			&& wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' 		&& python2 /tmp/get-pip.py "pip==$PYTHON_PIP_VERSION" 		&& rm /tmp/get-pip.py 	&& pip install --no-cache-dir --upgrade --force-reinstall 		"pip==$PYTHON_PIP_VERSION" 		"setuptools==$PYTHON_SETUPTOOLS_VERSION" 		"wheel==$PYTHON_WHEEL_VERSION" 		&& find /usr/local -depth 		\( 			\( -type d -a -name test -o -name tests \) 			-o 			\( -type f -a -name '*.pyc' -o -name '*.pyo' \) 		\) -exec rm -rf '{}' + 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/python ~/.cache
+# Wed, 26 Apr 2017 19:37:22 GMT
 CMD ["python2"]
 ```
 
@@ -48,7 +52,7 @@ CMD ["python2"]
 		Last Modified: Tue, 25 Apr 2017 05:08:49 GMT  
 		Size: 3.5 MB (3477989 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ca48d375949ad15270c2e7bde34ca659cb489a624afa5480f35e4ec5810a835`  
-		Last Modified: Tue, 25 Apr 2017 05:08:57 GMT  
-		Size: 16.7 MB (16670673 bytes)  
+	-	`sha256:d9acb0d1bdb2ee290093db1f0bec6517460134381f164184702ad664a6139bb9`  
+		Last Modified: Wed, 26 Apr 2017 21:32:14 GMT  
+		Size: 16.7 MB (16670630 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
