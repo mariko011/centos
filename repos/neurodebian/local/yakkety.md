@@ -63,13 +63,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.3.4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.3.4.dsc' apt_1.3.4.dsc 2525 SHA256:266097321f2f1bc73ad8f73a3f9c410016ca5fa9d06a8238ea11c63da14a37a1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.3.4.tar.xz' apt_1.3.4.tar.xz 2035984 SHA256:018b1ab6555044afb1983d0a57fb478e5a2800132bb4486ab8330fdb56787ddd
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
