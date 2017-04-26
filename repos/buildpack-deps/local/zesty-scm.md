@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a19724d6a80c84d1203020f469eec1c299e42c89184781a28451da2f0dfb358d`
-- Created: `2017-04-12T21:57:28.09257501Z`
-- Virtual Size: ~ 236.60 Mb  
+- Image ID: `sha256:9a096e5d3cb45f390bfb8a7cd423dcd8115434d397145d77533e69e1e3374679`
+- Created: `2017-04-24T23:22:24.627789763Z`
+- Virtual Size: ~ 236.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -323,13 +323,13 @@ $ apt-get source -qq --print-uris coreutils=8.26-3ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.26-3ubuntu3.debian.tar.xz' coreutils_8.26-3ubuntu3.debian.tar.xz 28908 SHA256:db8351c04ae0a4b6093490353a7dcdcea932e5a07fc85da9a6e0cf781b01e713
 ```
 
-### `dpkg` source package: `curl=7.52.1-4ubuntu1`
+### `dpkg` source package: `curl=7.52.1-4ubuntu1.1`
 
 Binary Packages:
 
-- `curl=7.52.1-4ubuntu1`
-- `libcurl3:amd64=7.52.1-4ubuntu1`
-- `libcurl3-gnutls:amd64=7.52.1-4ubuntu1`
+- `curl=7.52.1-4ubuntu1.1`
+- `libcurl3:amd64=7.52.1-4ubuntu1.1`
+- `libcurl3-gnutls:amd64=7.52.1-4ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -343,10 +343,10 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.52.1-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.52.1-4ubuntu1.dsc' curl_7.52.1-4ubuntu1.dsc 2827 SHA256:1c59f5d35d5789b502a3918b28e36d28b3e4f66a993806dc49a0b4e04283b324
+$ apt-get source -qq --print-uris curl=7.52.1-4ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.52.1-4ubuntu1.1.dsc' curl_7.52.1-4ubuntu1.1.dsc 2835 SHA256:fd33ddb865faba8ec780cdddcc80ee95680fda68ee69960198793377faac59b7
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.52.1-4ubuntu1.debian.tar.xz' curl_7.52.1-4ubuntu1.debian.tar.xz 34544 SHA256:40dc624a074dbc5bf4f380550e31f6b406b4328ee8a751f8f1166a0ab8e351f9
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.52.1-4ubuntu1.1.debian.tar.xz' curl_7.52.1-4ubuntu1.1.debian.tar.xz 37856 SHA256:f476d07bd4ebc1cdffd8d0d93b156b5143baaf32d2a05afe0d278e3c8c0a9740
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-2ubuntu1`
@@ -1890,12 +1890,12 @@ $ apt-get source -qq --print-uris subversion=1.9.5-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.5-1ubuntu1.diff.gz' subversion_1.9.5-1ubuntu1.diff.gz 2541697 SHA256:86adbc0c664010ffe661b53557a7d34f94d779413ff81f897b99eef0d7357e7b
 ```
 
-### `dpkg` source package: `systemd=232-21ubuntu2`
+### `dpkg` source package: `systemd=232-21ubuntu3`
 
 Binary Packages:
 
-- `libsystemd0:amd64=232-21ubuntu2`
-- `libudev1:amd64=232-21ubuntu2`
+- `libsystemd0:amd64=232-21ubuntu3`
+- `libudev1:amd64=232-21ubuntu3`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1910,10 +1910,10 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=232-21ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_232-21ubuntu2.dsc' systemd_232-21ubuntu2.dsc 4075 SHA256:25717041b18e676e5c93d1a2d4de80107bbf0c34d6ac565cf3f8c2daf06a8fcb
+$ apt-get source -qq --print-uris systemd=232-21ubuntu3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_232-21ubuntu3.dsc' systemd_232-21ubuntu3.dsc 4075 SHA256:a330086090a18efb0bda01b25cc6b2bf458bee9692a831079a4c9c890727bbb4
 'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_232-21ubuntu2.debian.tar.xz' systemd_232-21ubuntu2.debian.tar.xz 197772 SHA256:3be07df89bad41e314b18cef0ce317e2ed06cbdee127b6eebc70fce9766036ac
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_232-21ubuntu3.debian.tar.xz' systemd_232-21ubuntu3.debian.tar.xz 202604 SHA256:f9e0dadef92a5108a2daa2eb10131a2ee45f925fb02f1afa85a6e859817a2aae
 ```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`

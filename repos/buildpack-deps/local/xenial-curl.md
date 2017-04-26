@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2452cccd57549ea7f11a90c4ee55e14e3a9a5eea06f5dd61de3365f0426cc306`
-- Created: `2017-04-12T21:49:53.192067727Z`
-- Virtual Size: ~ 133.97 Mb  
+- Image ID: `sha256:f971f1e9cd163d58ad30bae92cc3440735f8eafc5936912ea2243a36a78247ec`
+- Created: `2017-04-24T23:15:04.07780328Z`
+- Virtual Size: ~ 134.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -86,13 +86,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.2.19
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.19.dsc' apt_1.2.19.dsc 2392 SHA256:5081290901052e7e4d17839a112849e8845b8c00b5c6e4193f4d3c25ec01300c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.19.tar.xz' apt_1.2.19.tar.xz 2055900 SHA256:2c0be591472248d5c00d983ceb81e5ed936291f90cd2794c75e768466ab168cc
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 

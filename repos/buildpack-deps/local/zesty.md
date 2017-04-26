@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:860e9c6584b2d65a6dff161c7e23f5216a5defad895d6287fec85909b904e2d9`
-- Created: `2017-04-12T21:59:58.967712437Z`
-- Virtual Size: ~ 734.45 Mb  
+- Image ID: `sha256:a6124b2802a6848ce8bc2a58c48d6153d17610d35c9d3b387866a3db1a82fe44`
+- Created: `2017-04-24T23:24:22.696487015Z`
+- Virtual Size: ~ 734.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -543,14 +543,14 @@ $ apt-get source -qq --print-uris cups=2.2.2-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.2.2-1ubuntu1.debian.tar.xz' cups_2.2.2-1ubuntu1.debian.tar.xz 362512 SHA256:28fc6f15e6028d7faa2e1eb854311aadeceb62f3a665c73ef2a42c4d1bf92043
 ```
 
-### `dpkg` source package: `curl=7.52.1-4ubuntu1`
+### `dpkg` source package: `curl=7.52.1-4ubuntu1.1`
 
 Binary Packages:
 
-- `curl=7.52.1-4ubuntu1`
-- `libcurl3:amd64=7.52.1-4ubuntu1`
-- `libcurl3-gnutls:amd64=7.52.1-4ubuntu1`
-- `libcurl4-openssl-dev:amd64=7.52.1-4ubuntu1`
+- `curl=7.52.1-4ubuntu1.1`
+- `libcurl3:amd64=7.52.1-4ubuntu1.1`
+- `libcurl3-gnutls:amd64=7.52.1-4ubuntu1.1`
+- `libcurl4-openssl-dev:amd64=7.52.1-4ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -564,10 +564,10 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.52.1-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.52.1-4ubuntu1.dsc' curl_7.52.1-4ubuntu1.dsc 2827 SHA256:1c59f5d35d5789b502a3918b28e36d28b3e4f66a993806dc49a0b4e04283b324
+$ apt-get source -qq --print-uris curl=7.52.1-4ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.52.1-4ubuntu1.1.dsc' curl_7.52.1-4ubuntu1.1.dsc 2835 SHA256:fd33ddb865faba8ec780cdddcc80ee95680fda68ee69960198793377faac59b7
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.52.1-4ubuntu1.debian.tar.xz' curl_7.52.1-4ubuntu1.debian.tar.xz 34544 SHA256:40dc624a074dbc5bf4f380550e31f6b406b4328ee8a751f8f1166a0ab8e351f9
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.52.1-4ubuntu1.1.debian.tar.xz' curl_7.52.1-4ubuntu1.1.debian.tar.xz 37856 SHA256:f476d07bd4ebc1cdffd8d0d93b156b5143baaf32d2a05afe0d278e3c8c0a9740
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-2ubuntu1`
@@ -985,12 +985,12 @@ $ apt-get source -qq --print-uris fonts-dejavu=2.37-1
 'http://archive.ubuntu.com/ubuntu/pool/main/f/fonts-dejavu/fonts-dejavu_2.37-1.debian.tar.xz' fonts-dejavu_2.37-1.debian.tar.xz 10424 SHA256:5105cdbfc086f4a83ab6871eb39cc904bf02aa52762402b7cacf33d0938122f7
 ```
 
-### `dpkg` source package: `freetype=2.6.3-3ubuntu2`
+### `dpkg` source package: `freetype=2.6.3-3ubuntu2.1`
 
 Binary Packages:
 
-- `libfreetype6:amd64=2.6.3-3ubuntu2`
-- `libfreetype6-dev:amd64=2.6.3-3ubuntu2`
+- `libfreetype6:amd64=2.6.3-3ubuntu2.1`
+- `libfreetype6-dev:amd64=2.6.3-3ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`, `/usr/share/doc/libfreetype6-dev/copyright`)
 
@@ -1006,10 +1006,10 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris freetype=2.6.3-3ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.3-3ubuntu2.dsc' freetype_2.6.3-3ubuntu2.dsc 2222 SHA256:4cf649603e57bb9b558fffd1d8cbb8bbc236f69b11e024b82a1f2de3967a1a90
+$ apt-get source -qq --print-uris freetype=2.6.3-3ubuntu2.1
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.3-3ubuntu2.1.dsc' freetype_2.6.3-3ubuntu2.1.dsc 2230 SHA256:88785b3e96631c342d336bc39483893b4cf0f4ebc79f4ea0206d8da56e503275
 'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.3.orig.tar.gz' freetype_2.6.3.orig.tar.gz 7313547 SHA256:814a22aad85e8ca2cb4acfc2e9dc59caa6eded4f6619590f7bd0a721e4b076a3
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.3-3ubuntu2.diff.gz' freetype_2.6.3-3ubuntu2.diff.gz 42751 SHA256:836e3ede2117943872332e0ff530faee48adb3d83606ec5c89627c11726d06f3
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.3-3ubuntu2.1.diff.gz' freetype_2.6.3-3ubuntu2.1.diff.gz 43556 SHA256:123ba9f4292ce518e87680bf4e0ab5489cdccb4b06dcf2a72c6b9eab5ddc8656
 ```
 
 ### `dpkg` source package: `gcc-6=6.3.0-12ubuntu2`
@@ -2935,11 +2935,11 @@ $ apt-get source -qq --print-uris libyaml=0.1.7-2
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.7-2.debian.tar.xz' libyaml_0.1.7-2.debian.tar.xz 4016 SHA256:6fc7065491dd6f86b46e6f231ae8ab60f8aafbef2dcf4721598644024485b801
 ```
 
-### `dpkg` source package: `linux=4.10.0-19.21`
+### `dpkg` source package: `linux=4.10.0-20.22`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.10.0-19.21`
+- `linux-libc-dev:amd64=4.10.0-20.22`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2948,10 +2948,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.10.0-19.21
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.10.0-19.21.dsc' linux_4.10.0-19.21.dsc 6015 SHA256:00a1753d4d4a68cb1800bc70949444eaf837f81eef97e7c7fabad354f4620e76
+$ apt-get source -qq --print-uris linux=4.10.0-20.22
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.10.0-20.22.dsc' linux_4.10.0-20.22.dsc 6090 SHA256:0a397d64530d06f627fbc538b6895332d71d476e5097d416c151605449b83c03
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.10.0.orig.tar.gz' linux_4.10.0.orig.tar.gz 143917000 SHA256:1221bcded9062e5740e7cd1b047479494312b13a2a3ba8a48c820d12276c417d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.10.0-19.21.diff.gz' linux_4.10.0-19.21.diff.gz 7739179 SHA256:72f3c8a638f6892b4b5b882d4372375ca8db3b8051e5e8d9c700804fc24c94aa
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.10.0-20.22.diff.gz' linux_4.10.0-20.22.diff.gz 7088997 SHA256:5f272493d5729ebb1695b71299875dbb81916682113698dd5ec6754cd5ac3962
 ```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu5`
@@ -3988,12 +3988,12 @@ $ apt-get source -qq --print-uris subversion=1.9.5-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.5-1ubuntu1.diff.gz' subversion_1.9.5-1ubuntu1.diff.gz 2541697 SHA256:86adbc0c664010ffe661b53557a7d34f94d779413ff81f897b99eef0d7357e7b
 ```
 
-### `dpkg` source package: `systemd=232-21ubuntu2`
+### `dpkg` source package: `systemd=232-21ubuntu3`
 
 Binary Packages:
 
-- `libsystemd0:amd64=232-21ubuntu2`
-- `libudev1:amd64=232-21ubuntu2`
+- `libsystemd0:amd64=232-21ubuntu3`
+- `libudev1:amd64=232-21ubuntu3`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -4008,10 +4008,10 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=232-21ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_232-21ubuntu2.dsc' systemd_232-21ubuntu2.dsc 4075 SHA256:25717041b18e676e5c93d1a2d4de80107bbf0c34d6ac565cf3f8c2daf06a8fcb
+$ apt-get source -qq --print-uris systemd=232-21ubuntu3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_232-21ubuntu3.dsc' systemd_232-21ubuntu3.dsc 4075 SHA256:a330086090a18efb0bda01b25cc6b2bf458bee9692a831079a4c9c890727bbb4
 'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_232-21ubuntu2.debian.tar.xz' systemd_232-21ubuntu2.debian.tar.xz 197772 SHA256:3be07df89bad41e314b18cef0ce317e2ed06cbdee127b6eebc70fce9766036ac
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_232-21ubuntu3.debian.tar.xz' systemd_232-21ubuntu3.debian.tar.xz 202604 SHA256:f9e0dadef92a5108a2daa2eb10131a2ee45f925fb02f1afa85a6e859817a2aae
 ```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`

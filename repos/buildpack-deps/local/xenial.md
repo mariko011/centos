@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7a42bfe09d063e1ac86e341ec7e7e34376ce1a687690f79b3246bcceab6ae7b1`
-- Created: `2017-04-12T21:52:31.62520472Z`
-- Virtual Size: ~ 637.61 Mb  
+- Image ID: `sha256:e2fb4c049ee32878988d701dec44328698d88c4c8ce53b6e971aeaeda7a4604d`
+- Created: `2017-04-24T23:17:10.17453968Z`
+- Virtual Size: ~ 637.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -124,13 +124,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.2.19
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.19.dsc' apt_1.2.19.dsc 2392 SHA256:5081290901052e7e4d17839a112849e8845b8c00b5c6e4193f4d3c25ec01300c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.19.tar.xz' apt_1.2.19.tar.xz 2055900 SHA256:2c0be591472248d5c00d983ceb81e5ed936291f90cd2794c75e768466ab168cc
-```
 
 ### `dpkg` source package: `atk1.0=2.18.0-1`
 
@@ -980,12 +975,12 @@ $ apt-get source -qq --print-uris fonts-dejavu=2.35-1
 'http://archive.ubuntu.com/ubuntu/pool/main/f/fonts-dejavu/fonts-dejavu_2.35-1.debian.tar.xz' fonts-dejavu_2.35-1.debian.tar.xz 10276 SHA256:5922af28fff7db4c5845c17623fe882028742f90db658f4183c21648e0cafd3d
 ```
 
-### `dpkg` source package: `freetype=2.6.1-0.1ubuntu2.1`
+### `dpkg` source package: `freetype=2.6.1-0.1ubuntu2.2`
 
 Binary Packages:
 
-- `libfreetype6:amd64=2.6.1-0.1ubuntu2.1`
-- `libfreetype6-dev:amd64=2.6.1-0.1ubuntu2.1`
+- `libfreetype6:amd64=2.6.1-0.1ubuntu2.2`
+- `libfreetype6-dev:amd64=2.6.1-0.1ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`, `/usr/share/doc/libfreetype6-dev/copyright`)
 
@@ -998,8 +993,14 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`, `/usr/share/doc
 - `GZip`
 - `OpenGroup-BSD-like`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris freetype=2.6.1-0.1ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.1-0.1ubuntu2.2.dsc' freetype_2.6.1-0.1ubuntu2.2.dsc 2238 SHA256:ab70a4f382aa4ddfee9f00a644f6d85fb61a883ffde338f0b39694e704fde7da
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.1.orig.tar.gz' freetype_2.6.1.orig.tar.gz 2411537 SHA256:ffaef13dc5ccc265e97519115a51a103e88b9d9d3223289bc1a98c0c2094d5b3
+'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.1-0.1ubuntu2.2.diff.gz' freetype_2.6.1-0.1ubuntu2.2.diff.gz 42940 SHA256:a6772fe8e02ec5357f451118bce146f9c79bcf1986e377232da5ab61a126a7e7
+```
 
 ### `dpkg` source package: `gcc-5=5.4.0-6ubuntu1~16.04.4`
 
@@ -2898,11 +2899,11 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
 ```
 
-### `dpkg` source package: `linux=4.4.0-72.93`
+### `dpkg` source package: `linux=4.4.0-75.96`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-72.93`
+- `linux-libc-dev:amd64=4.4.0-75.96`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2911,10 +2912,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.4.0-72.93
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-72.93.dsc' linux_4.4.0-72.93.dsc 9613 SHA256:a67ca9a22bc917501299dbc0c5ec270b801ace1a7de5b6d838affb5ae485c3d6
+$ apt-get source -qq --print-uris linux=4.4.0-75.96
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-75.96.dsc' linux_4.4.0-75.96.dsc 9613 SHA256:2715c2992a337e173b37d8335099aaf2b4176e5a8b02c5eedc4b06bec52d9285
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-72.93.diff.gz' linux_4.4.0-72.93.diff.gz 12609670 SHA256:7f8fcb4cac845da6c35ff56acf4a6dddb1d7fcbe33c289065039c9b15dab81de
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-75.96.diff.gz' linux_4.4.0-75.96.diff.gz 12739187 SHA256:b6eb670cff4921788457e2ea3f33c7b44140d2adc4f85fa4728af86076850c22
 ```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu0.2`
