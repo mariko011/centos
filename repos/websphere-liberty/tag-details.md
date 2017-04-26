@@ -135,7 +135,7 @@ CMD ["/opt/ibm/docker/docker-server" "run" "defaultServer"]
 ## `websphere-liberty:microProfile`
 
 ```console
-$ docker pull websphere-liberty@sha256:9f3dea7c45e1a064fa1097df117a3555add9285ef743084fa8dcc69abe68808e
+$ docker pull websphere-liberty@sha256:31678d07e4563978082f06fe2972ce46b562d62eff070a9cba46c8cd05e5d89e
 ```
 
 -	Platforms:
@@ -145,9 +145,9 @@ $ docker pull websphere-liberty@sha256:9f3dea7c45e1a064fa1097df117a3555add9285ef
 
 -	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **197.3 MB (197332760 bytes)**  
+-	Total Size: **197.3 MB (197343558 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7652962c5ca334f4294774b57725f32cb574b592f32953b763824d382631d69a`
+-	Image ID: `sha256:45ffe0b55bc7a161034b38532249efe9a57dd01d5d996f3ddf8d5e731c399916`
 -	Default Command: `["\/opt\/ibm\/docker\/docker-server","run","defaultServer"]`
 
 ```dockerfile
@@ -206,9 +206,9 @@ CMD ["/opt/ibm/docker/docker-server" "run" "defaultServer"]
 ARG REPOSITORIES_PROPERTIES=
 # Tue, 25 Apr 2017 06:00:11 GMT
 COPY file:85a1543c7ae96e8459a3ecdbc26e3041e476ac27a7895e24ea438f07dd0552f7 in /config/ 
-# Tue, 25 Apr 2017 06:00:37 GMT
+# Wed, 26 Apr 2017 15:46:25 GMT
 # ARGS: REPOSITORIES_PROPERTIES=
-RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/     && echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties; fi     && installUtility install --acceptLicense       appSecurity-2.0 localConnector-1.0 ssl-1.0 microProfile-1.0     && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi     && rm -rf /output/workarea /output/logs
+RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/     && echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties; fi     && installUtility install --acceptLicense       appSecurity-2.0 localConnector-1.0 ssl-1.0 microProfile-1.0 transportSecurity-1.0     && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi     && rm -rf /output/workarea /output/logs
 ```
 
 -	Layers:
@@ -264,9 +264,9 @@ RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/     && ec
 		Last Modified: Tue, 25 Apr 2017 22:25:59 GMT  
 		Size: 535.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37da4987d703e0c3edb01eda4f3da6c8fd8a4e4eb7994dd340290a51c3cde8ad`  
-		Last Modified: Tue, 25 Apr 2017 22:26:01 GMT  
-		Size: 24.6 MB (24595932 bytes)  
+	-	`sha256:eb4164952589c554112734dfa46cef1223f14b7b4cc05516d2832dd85376673c`  
+		Last Modified: Wed, 26 Apr 2017 15:49:30 GMT  
+		Size: 24.6 MB (24606730 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `websphere-liberty:webProfile6`
@@ -409,7 +409,7 @@ RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/     && ec
 ## `websphere-liberty:webProfile7`
 
 ```console
-$ docker pull websphere-liberty@sha256:84344f60af947715919645680c5d3424d04f807f77612b12f9188fbb5be7f337
+$ docker pull websphere-liberty@sha256:941d4388dcc65b15c654ac5c3ac835323011783243bd72e847320a1af68a6738
 ```
 
 -	Platforms:
@@ -419,9 +419,9 @@ $ docker pull websphere-liberty@sha256:84344f60af947715919645680c5d3424d04f807f7
 
 -	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.7 MB (235730191 bytes)**  
+-	Total Size: **235.7 MB (235740797 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:403a38322b40ab07918ae6243a25548285b17a1fa74ed19b3450f424d7710acc`
+-	Image ID: `sha256:38983832f5717d2d050eed0b289ffe6de287a83eb0d013610195bb92de5d4502`
 -	Default Command: `["\/opt\/ibm\/docker\/docker-server","run","defaultServer"]`
 
 ```dockerfile
@@ -480,9 +480,9 @@ CMD ["/opt/ibm/docker/docker-server" "run" "defaultServer"]
 ARG REPOSITORIES_PROPERTIES=
 # Tue, 25 Apr 2017 06:01:49 GMT
 COPY file:8a7d2385caf8e280c085cfcfad69edf89d8b4815d0f898897aa5053f0081bf61 in /config/ 
-# Tue, 25 Apr 2017 06:02:34 GMT
+# Wed, 26 Apr 2017 15:47:44 GMT
 # ARGS: REPOSITORIES_PROPERTIES=
-RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then     mkdir /opt/ibm/wlp/etc/     echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties;   fi   && installUtility install --acceptLicense     appSecurity-2.0 bluemixUtility-1.0 collectiveMember-1.0 ldapRegistry-3.0     localConnector-1.0 microProfile-1.0 monitor-1.0 restConnector-1.0     requestTiming-1.0 restConnector-2.0 sessionDatabase-1.0 ssl-1.0     webCache-1.0 webProfile-7.0   && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi   && rm -rf /output/workarea /output/logs
+RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then     mkdir /opt/ibm/wlp/etc/     echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties;   fi   && installUtility install --acceptLicense     appSecurity-2.0 bluemixUtility-1.0 collectiveMember-1.0 ldapRegistry-3.0     localConnector-1.0 microProfile-1.0 monitor-1.0 restConnector-1.0     requestTiming-1.0 restConnector-2.0 sessionDatabase-1.0 ssl-1.0 transportSecurity-1.0     webCache-1.0 webProfile-7.0   && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi   && rm -rf /output/workarea /output/logs
 ```
 
 -	Layers:
@@ -538,15 +538,15 @@ RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then     mkdir /opt/ibm/wlp/etc/     e
 		Last Modified: Tue, 25 Apr 2017 22:26:56 GMT  
 		Size: 531.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef3394c9dab6230108e5bf838ad7c795dce1c2727439e5df37045a88b345275e`  
-		Last Modified: Tue, 25 Apr 2017 22:27:05 GMT  
-		Size: 63.0 MB (62993367 bytes)  
+	-	`sha256:9c779ecb2de9ad0e2dd22fb8e209e71f68b83050222d01dc363c35b12b56072c`  
+		Last Modified: Wed, 26 Apr 2017 15:50:20 GMT  
+		Size: 63.0 MB (63003973 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `websphere-liberty:javaee7`
 
 ```console
-$ docker pull websphere-liberty@sha256:9a72f31572a09c6041dceb262725ddf77a8d558f97157982995c278b0eadc55d
+$ docker pull websphere-liberty@sha256:5939a0349a2e5e26661878da67502aa5585c7721cdffd1d4aa5093ec3d88a159
 ```
 
 -	Platforms:
@@ -556,9 +556,9 @@ $ docker pull websphere-liberty@sha256:9a72f31572a09c6041dceb262725ddf77a8d558f9
 
 -	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **273.9 MB (273929756 bytes)**  
+-	Total Size: **273.9 MB (273940203 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:258a75464871d2b23269b24c813e0935a1c04288d9173c5905d06a5aa4d763a5`
+-	Image ID: `sha256:00539b0c30c5b17a9d2c57d14c93e9f224f8872be8f9d0e57ea151d36734bfaa`
 -	Default Command: `["\/opt\/ibm\/docker\/docker-server","run","defaultServer"]`
 
 ```dockerfile
@@ -617,14 +617,14 @@ CMD ["/opt/ibm/docker/docker-server" "run" "defaultServer"]
 ARG REPOSITORIES_PROPERTIES=
 # Tue, 25 Apr 2017 06:01:49 GMT
 COPY file:8a7d2385caf8e280c085cfcfad69edf89d8b4815d0f898897aa5053f0081bf61 in /config/ 
-# Tue, 25 Apr 2017 06:02:34 GMT
+# Wed, 26 Apr 2017 15:47:44 GMT
 # ARGS: REPOSITORIES_PROPERTIES=
-RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then     mkdir /opt/ibm/wlp/etc/     echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties;   fi   && installUtility install --acceptLicense     appSecurity-2.0 bluemixUtility-1.0 collectiveMember-1.0 ldapRegistry-3.0     localConnector-1.0 microProfile-1.0 monitor-1.0 restConnector-1.0     requestTiming-1.0 restConnector-2.0 sessionDatabase-1.0 ssl-1.0     webCache-1.0 webProfile-7.0   && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi   && rm -rf /output/workarea /output/logs
-# Tue, 25 Apr 2017 14:59:14 GMT
+RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then     mkdir /opt/ibm/wlp/etc/     echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties;   fi   && installUtility install --acceptLicense     appSecurity-2.0 bluemixUtility-1.0 collectiveMember-1.0 ldapRegistry-3.0     localConnector-1.0 microProfile-1.0 monitor-1.0 restConnector-1.0     requestTiming-1.0 restConnector-2.0 sessionDatabase-1.0 ssl-1.0 transportSecurity-1.0     webCache-1.0 webProfile-7.0   && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi   && rm -rf /output/workarea /output/logs
+# Wed, 26 Apr 2017 15:48:02 GMT
 COPY file:a6a1a88d3f0473f85596df9cf7599a22f32111deb67c95183a9a45b654d347eb in /config/ 
-# Tue, 25 Apr 2017 14:59:15 GMT
+# Wed, 26 Apr 2017 15:48:02 GMT
 ARG REPOSITORIES_PROPERTIES=
-# Tue, 25 Apr 2017 14:59:55 GMT
+# Wed, 26 Apr 2017 15:48:31 GMT
 # ARGS: REPOSITORIES_PROPERTIES=
 RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties; fi     && installUtility install --acceptLicense appSecurityClient-1.0 javaee-7.0 javaeeClient-7.0     && if [ ! -z $REPOSITORIES_PROPERTIES ] ; then rm /opt/ibm/wlp/etc/repositories.properties; fi     && rm -rf /output/workarea /output/logs
 ```
@@ -682,23 +682,23 @@ RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then echo $REPOSITORIES_PROPERTIES > /
 		Last Modified: Tue, 25 Apr 2017 22:26:56 GMT  
 		Size: 531.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef3394c9dab6230108e5bf838ad7c795dce1c2727439e5df37045a88b345275e`  
-		Last Modified: Tue, 25 Apr 2017 22:27:05 GMT  
-		Size: 63.0 MB (62993367 bytes)  
+	-	`sha256:9c779ecb2de9ad0e2dd22fb8e209e71f68b83050222d01dc363c35b12b56072c`  
+		Last Modified: Wed, 26 Apr 2017 15:50:20 GMT  
+		Size: 63.0 MB (63003973 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1d44e41bd8678799f236da8348a2571eea917a6636800e75b9eb099110761eb`  
-		Last Modified: Tue, 25 Apr 2017 22:27:29 GMT  
-		Size: 899.0 B  
+	-	`sha256:fc6007cd100af99079afa3b14d667eef20a1d4e4e06601154a3ea92b02aadecc`  
+		Last Modified: Wed, 26 Apr 2017 15:50:44 GMT  
+		Size: 894.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f4aa3edb0e8c072b1de98c99543688e892214ed10a84b614a8f3bafa492a014`  
-		Last Modified: Tue, 25 Apr 2017 22:27:33 GMT  
-		Size: 38.2 MB (38198666 bytes)  
+	-	`sha256:d223a3cbd7b0fff2dd6fa83c2dc1c20a024bf19b30d27931c2b280be76ceaa24`  
+		Last Modified: Wed, 26 Apr 2017 15:50:52 GMT  
+		Size: 38.2 MB (38198512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `websphere-liberty:latest`
 
 ```console
-$ docker pull websphere-liberty@sha256:9a72f31572a09c6041dceb262725ddf77a8d558f97157982995c278b0eadc55d
+$ docker pull websphere-liberty@sha256:5939a0349a2e5e26661878da67502aa5585c7721cdffd1d4aa5093ec3d88a159
 ```
 
 -	Platforms:
@@ -708,9 +708,9 @@ $ docker pull websphere-liberty@sha256:9a72f31572a09c6041dceb262725ddf77a8d558f9
 
 -	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **273.9 MB (273929756 bytes)**  
+-	Total Size: **273.9 MB (273940203 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:258a75464871d2b23269b24c813e0935a1c04288d9173c5905d06a5aa4d763a5`
+-	Image ID: `sha256:00539b0c30c5b17a9d2c57d14c93e9f224f8872be8f9d0e57ea151d36734bfaa`
 -	Default Command: `["\/opt\/ibm\/docker\/docker-server","run","defaultServer"]`
 
 ```dockerfile
@@ -769,14 +769,14 @@ CMD ["/opt/ibm/docker/docker-server" "run" "defaultServer"]
 ARG REPOSITORIES_PROPERTIES=
 # Tue, 25 Apr 2017 06:01:49 GMT
 COPY file:8a7d2385caf8e280c085cfcfad69edf89d8b4815d0f898897aa5053f0081bf61 in /config/ 
-# Tue, 25 Apr 2017 06:02:34 GMT
+# Wed, 26 Apr 2017 15:47:44 GMT
 # ARGS: REPOSITORIES_PROPERTIES=
-RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then     mkdir /opt/ibm/wlp/etc/     echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties;   fi   && installUtility install --acceptLicense     appSecurity-2.0 bluemixUtility-1.0 collectiveMember-1.0 ldapRegistry-3.0     localConnector-1.0 microProfile-1.0 monitor-1.0 restConnector-1.0     requestTiming-1.0 restConnector-2.0 sessionDatabase-1.0 ssl-1.0     webCache-1.0 webProfile-7.0   && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi   && rm -rf /output/workarea /output/logs
-# Tue, 25 Apr 2017 14:59:14 GMT
+RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then     mkdir /opt/ibm/wlp/etc/     echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties;   fi   && installUtility install --acceptLicense     appSecurity-2.0 bluemixUtility-1.0 collectiveMember-1.0 ldapRegistry-3.0     localConnector-1.0 microProfile-1.0 monitor-1.0 restConnector-1.0     requestTiming-1.0 restConnector-2.0 sessionDatabase-1.0 ssl-1.0 transportSecurity-1.0     webCache-1.0 webProfile-7.0   && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi   && rm -rf /output/workarea /output/logs
+# Wed, 26 Apr 2017 15:48:02 GMT
 COPY file:a6a1a88d3f0473f85596df9cf7599a22f32111deb67c95183a9a45b654d347eb in /config/ 
-# Tue, 25 Apr 2017 14:59:15 GMT
+# Wed, 26 Apr 2017 15:48:02 GMT
 ARG REPOSITORIES_PROPERTIES=
-# Tue, 25 Apr 2017 14:59:55 GMT
+# Wed, 26 Apr 2017 15:48:31 GMT
 # ARGS: REPOSITORIES_PROPERTIES=
 RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties; fi     && installUtility install --acceptLicense appSecurityClient-1.0 javaee-7.0 javaeeClient-7.0     && if [ ! -z $REPOSITORIES_PROPERTIES ] ; then rm /opt/ibm/wlp/etc/repositories.properties; fi     && rm -rf /output/workarea /output/logs
 ```
@@ -834,17 +834,17 @@ RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then echo $REPOSITORIES_PROPERTIES > /
 		Last Modified: Tue, 25 Apr 2017 22:26:56 GMT  
 		Size: 531.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef3394c9dab6230108e5bf838ad7c795dce1c2727439e5df37045a88b345275e`  
-		Last Modified: Tue, 25 Apr 2017 22:27:05 GMT  
-		Size: 63.0 MB (62993367 bytes)  
+	-	`sha256:9c779ecb2de9ad0e2dd22fb8e209e71f68b83050222d01dc363c35b12b56072c`  
+		Last Modified: Wed, 26 Apr 2017 15:50:20 GMT  
+		Size: 63.0 MB (63003973 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1d44e41bd8678799f236da8348a2571eea917a6636800e75b9eb099110761eb`  
-		Last Modified: Tue, 25 Apr 2017 22:27:29 GMT  
-		Size: 899.0 B  
+	-	`sha256:fc6007cd100af99079afa3b14d667eef20a1d4e4e06601154a3ea92b02aadecc`  
+		Last Modified: Wed, 26 Apr 2017 15:50:44 GMT  
+		Size: 894.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f4aa3edb0e8c072b1de98c99543688e892214ed10a84b614a8f3bafa492a014`  
-		Last Modified: Tue, 25 Apr 2017 22:27:33 GMT  
-		Size: 38.2 MB (38198666 bytes)  
+	-	`sha256:d223a3cbd7b0fff2dd6fa83c2dc1c20a024bf19b30d27931c2b280be76ceaa24`  
+		Last Modified: Wed, 26 Apr 2017 15:50:52 GMT  
+		Size: 38.2 MB (38198512 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `websphere-liberty:beta`

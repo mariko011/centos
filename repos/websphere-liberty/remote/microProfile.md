@@ -1,7 +1,7 @@
 ## `websphere-liberty:microProfile`
 
 ```console
-$ docker pull websphere-liberty@sha256:9f3dea7c45e1a064fa1097df117a3555add9285ef743084fa8dcc69abe68808e
+$ docker pull websphere-liberty@sha256:31678d07e4563978082f06fe2972ce46b562d62eff070a9cba46c8cd05e5d89e
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull websphere-liberty@sha256:9f3dea7c45e1a064fa1097df117a3555add9285ef
 
 -	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **197.3 MB (197332760 bytes)**  
+-	Total Size: **197.3 MB (197343558 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7652962c5ca334f4294774b57725f32cb574b592f32953b763824d382631d69a`
+-	Image ID: `sha256:45ffe0b55bc7a161034b38532249efe9a57dd01d5d996f3ddf8d5e731c399916`
 -	Default Command: `["\/opt\/ibm\/docker\/docker-server","run","defaultServer"]`
 
 ```dockerfile
@@ -72,9 +72,9 @@ CMD ["/opt/ibm/docker/docker-server" "run" "defaultServer"]
 ARG REPOSITORIES_PROPERTIES=
 # Tue, 25 Apr 2017 06:00:11 GMT
 COPY file:85a1543c7ae96e8459a3ecdbc26e3041e476ac27a7895e24ea438f07dd0552f7 in /config/ 
-# Tue, 25 Apr 2017 06:00:37 GMT
+# Wed, 26 Apr 2017 15:46:25 GMT
 # ARGS: REPOSITORIES_PROPERTIES=
-RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/     && echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties; fi     && installUtility install --acceptLicense       appSecurity-2.0 localConnector-1.0 ssl-1.0 microProfile-1.0     && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi     && rm -rf /output/workarea /output/logs
+RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/     && echo $REPOSITORIES_PROPERTIES > /opt/ibm/wlp/etc/repositories.properties; fi     && installUtility install --acceptLicense       appSecurity-2.0 localConnector-1.0 ssl-1.0 microProfile-1.0 transportSecurity-1.0     && if [ ! -z $REPOSITORIES_PROPERTIES ]; then rm /opt/ibm/wlp/etc/repositories.properties; fi     && rm -rf /output/workarea /output/logs
 ```
 
 -	Layers:
@@ -130,7 +130,7 @@ RUN if [ ! -z $REPOSITORIES_PROPERTIES ]; then mkdir /opt/ibm/wlp/etc/     && ec
 		Last Modified: Tue, 25 Apr 2017 22:25:59 GMT  
 		Size: 535.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37da4987d703e0c3edb01eda4f3da6c8fd8a4e4eb7994dd340290a51c3cde8ad`  
-		Last Modified: Tue, 25 Apr 2017 22:26:01 GMT  
-		Size: 24.6 MB (24595932 bytes)  
+	-	`sha256:eb4164952589c554112734dfa46cef1223f14b7b4cc05516d2832dd85376673c`  
+		Last Modified: Wed, 26 Apr 2017 15:49:30 GMT  
+		Size: 24.6 MB (24606730 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
