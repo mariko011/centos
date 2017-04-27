@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5e27ce1a3b914ddfff3b66d935d72c453f5b83f8896c7f1ec8824f39c6c26ab5`
-- Created: `2017-04-10T23:34:32.799784412Z`
+- Image ID: `sha256:0f2caad2e4514dbf52968efe8cca2b29ddbc53d2a0942195fcb4c7c07856a309`
+- Created: `2017-04-25T04:03:39.291186784Z`
 - Virtual Size: ~ 457.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2887,18 +2887,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tar/1.27.1-2+deb8u1/
 - https://sources.debian.net/src/tar/1.27.1-2+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tzdata=2017a-0+deb8u1`
+### `dpkg` source package: `tzdata=2017b-0+deb8u1`
 
 Binary Packages:
 
-- `tzdata=2017a-0+deb8u1`
+- `tzdata=2017b-0+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2017b-0+deb8u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-0+deb8u1.dsc' tzdata_2017b-0+deb8u1.dsc 1985 SHA256:6e2fcd790df8d641bc232354a7f0d0a4c7b8cd5ad6b107fe6bfa5d671f2002a8
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b.orig.tar.gz' tzdata_2017b.orig.tar.gz 324317 SHA256:f8242a522ea3496b0ce4ff4f2e75a049178da21001a08b8e666d8cbe07d18086
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-0+deb8u1.debian.tar.xz' tzdata_2017b-0+deb8u1.debian.tar.xz 102704 SHA256:4cbe22a0a8433a8246c28394a83193f22805051ca581b90513042896b0de4cb9
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/tzdata/2017b-0+deb8u1/
+- https://sources.debian.net/src/tzdata/2017b-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `unzip=6.0-16+deb8u2`
 
