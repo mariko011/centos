@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2ca756a6578b9134f0ea78fbfb941a385e6837dff66e763509e7a0be161b4d7d`
-- Created: `2017-04-20T14:37:25.458957052Z`
+- Image ID: `sha256:90223b3d894eded1bda3df07ebacc7d9b8c8efb9bf464c9862e3a5584c3398da`
+- Created: `2017-04-25T11:38:41.655249436Z`
 - Virtual Size: ~ 665.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1696,11 +1696,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/hostname/3.15/
 - https://sources.debian.net/src/hostname/3.15/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `icu=52.1-8+deb8u4`
+### `dpkg` source package: `icu=52.1-8+deb8u5`
 
 Binary Packages:
 
-- `libicu52:amd64=52.1-8+deb8u4`
+- `libicu52:amd64=52.1-8+deb8u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1709,16 +1709,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris icu=52.1-8+deb8u4
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1-8+deb8u4.dsc' icu_52.1-8+deb8u4.dsc 2015 SHA256:cabdf27f9976550a61f1b5c84d7353f19f3338b55b2b9002f0db593fccda86c7
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1-8+deb8u4.debian.tar.xz' icu_52.1-8+deb8u4.debian.tar.xz 35588 SHA256:cf298a04a576aaa8016d25ebe1387f6c923de1acea4411a27f9858bf1af72f5a
+$ apt-get source -qq --print-uris icu=52.1-8+deb8u5
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1-8+deb8u5.dsc' icu_52.1-8+deb8u5.dsc 2015 SHA256:906bf48d6b1d39952a72a35b4fc5fda9bcc213695c075f57a67770741f577578
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1-8+deb8u5.debian.tar.xz' icu_52.1-8+deb8u5.debian.tar.xz 37924 SHA256:cb9bb036d2a85e803b5d33c8802c713afda938b286e74a1853f33d3e9f153666
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/icu/52.1-8+deb8u4/
-- https://sources.debian.net/src/icu/52.1-8+deb8u4/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/icu/52.1-8+deb8u5/
+- https://sources.debian.net/src/icu/52.1-8+deb8u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ilmbase=1.0.1-6.1`
 
@@ -1923,19 +1923,30 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/isl/0.12.2-2/
 - https://sources.debian.net/src/isl/0.12.2-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `jasper=1.900.1-debian1-2.4+deb8u2`
+### `dpkg` source package: `jasper=1.900.1-debian1-2.4+deb8u3`
 
 Binary Packages:
 
-- `libjasper-dev=1.900.1-debian1-2.4+deb8u2`
-- `libjasper1:amd64=1.900.1-debian1-2.4+deb8u2`
+- `libjasper-dev=1.900.1-debian1-2.4+deb8u3`
+- `libjasper1:amd64=1.900.1-debian1-2.4+deb8u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris jasper=1.900.1-debian1-2.4+deb8u3
+'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u3.dsc' jasper_1.900.1-debian1-2.4+deb8u3.dsc 1969 SHA256:9c5228e9f5107ef3ce7565b93bdb00718412b8d15e6dad0328774df223a3c3b5
+'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-debian1.orig.tar.gz' jasper_1.900.1-debian1.orig.tar.gz 1140771 SHA256:7276e8407080d8263b39aeac8305032b0534c7df25bf02718b3944711e3c81d7
+'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u3.debian.tar.xz' jasper_1.900.1-debian1-2.4+deb8u3.debian.tar.xz 34032 SHA256:57b9d7b949a4a0696d6bdc93d56a7ee59d85f3c7cfa34e33a493b3fbf3d99bbf
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u3/
+- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `jbigkit=2.1-3.1`
 
@@ -3672,19 +3683,8 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mysql-5.5=5.5.54-0+deb8u1
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.54-0+deb8u1.dsc' mysql-5.5_5.5.54-0+deb8u1.dsc 3262 SHA256:993b22375e92261e9ab264b5cd380d439dfd61524680c3edf301150caf416712
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.54.orig.tar.gz' mysql-5.5_5.5.54.orig.tar.gz 21041949 SHA256:273bcbcf8cc84061eb07c359308563b2029eb3f70f78b558905bc1b5c5791ab8
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.54-0+deb8u1.debian.tar.xz' mysql-5.5_5.5.54-0+deb8u1.debian.tar.xz 233108 SHA256:946211b6bac4d0a20911e8a8c01bf30d48fe875fb8987eea2147ec9b21eba896
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mysql-5.5/5.5.54-0+deb8u1/
-- https://sources.debian.net/src/mysql-5.5/5.5.54-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ncurses=5.9+20140913-1`
 
@@ -4622,18 +4622,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u2/
 - https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tzdata=2017a-0+deb8u1`
+### `dpkg` source package: `tzdata=2017b-0+deb8u1`
 
 Binary Packages:
 
-- `tzdata=2017a-0+deb8u1`
+- `tzdata=2017b-0+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2017b-0+deb8u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-0+deb8u1.dsc' tzdata_2017b-0+deb8u1.dsc 1985 SHA256:6e2fcd790df8d641bc232354a7f0d0a4c7b8cd5ad6b107fe6bfa5d671f2002a8
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b.orig.tar.gz' tzdata_2017b.orig.tar.gz 324317 SHA256:f8242a522ea3496b0ce4ff4f2e75a049178da21001a08b8e666d8cbe07d18086
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-0+deb8u1.debian.tar.xz' tzdata_2017b-0+deb8u1.debian.tar.xz 102704 SHA256:4cbe22a0a8433a8246c28394a83193f22805051ca581b90513042896b0de4cb9
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/tzdata/2017b-0+deb8u1/
+- https://sources.debian.net/src/tzdata/2017b-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ucf=3.0030`
 

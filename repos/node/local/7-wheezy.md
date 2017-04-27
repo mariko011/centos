@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:aa592c68830292c71ff1efaea15117454c722e4eb125febd5ce2437d96e03a2e`
-- Created: `2017-04-20T14:38:58.410688318Z`
-- Virtual Size: ~ 515.82 Mb  
+- Image ID: `sha256:3341373505e17d81e566f0d17b1ae304ca8a24e66b34f596dee0db6e11e867e1`
+- Created: `2017-04-25T11:39:32.367879507Z`
+- Virtual Size: ~ 515.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
@@ -496,14 +496,14 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/coreutils/8.13-3.5/
 - https://sources.debian.net/src/coreutils/8.13-3.5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `curl=7.26.0-1+wheezy18`
+### `dpkg` source package: `curl=7.26.0-1+wheezy19`
 
 Binary Packages:
 
-- `curl=7.26.0-1+wheezy18`
-- `libcurl3:amd64=7.26.0-1+wheezy18`
-- `libcurl3-gnutls:amd64=7.26.0-1+wheezy18`
-- `libcurl4-openssl-dev=7.26.0-1+wheezy18`
+- `curl=7.26.0-1+wheezy19`
+- `libcurl3:amd64=7.26.0-1+wheezy19`
+- `libcurl3-gnutls:amd64=7.26.0-1+wheezy19`
+- `libcurl4-openssl-dev=7.26.0-1+wheezy19`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
 
@@ -512,8 +512,19 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy19
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy19.dsc' curl_7.26.0-1+wheezy19.dsc 2534 SHA256:b1ea1e14b6edf19df59451d6acc7ab4bf08d43e7b44da0605c34fdb7e45ec84e
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy19.debian.tar.gz' curl_7.26.0-1+wheezy19.debian.tar.gz 65127 SHA256:729313e79a66ec2a4262a692d4a8128e283ee688d406a7d26a26d8676c084be3
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy19/
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy19/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
 
@@ -945,12 +956,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/fontconfig/2.9.0-7.1+deb7u1/
 - https://sources.debian.net/src/fontconfig/2.9.0-7.1+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `freetype=2.4.9-1.1+deb7u4`
+### `dpkg` source package: `freetype=2.4.9-1.1+deb7u5`
 
 Binary Packages:
 
-- `libfreetype6:amd64=2.4.9-1.1+deb7u4`
-- `libfreetype6-dev=2.4.9-1.1+deb7u4`
+- `libfreetype6:amd64=2.4.9-1.1+deb7u5`
+- `libfreetype6-dev=2.4.9-1.1+deb7u5`
 
 Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`, `/usr/share/doc/libfreetype6-dev/copyright`)
 
@@ -1438,17 +1449,17 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/ilmbase/1.0.1-4/
 - https://sources.debian.net/src/ilmbase/1.0.1-4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `imagemagick=8:6.7.7.10-5+deb7u11`
+### `dpkg` source package: `imagemagick=8:6.7.7.10-5+deb7u13`
 
 Binary Packages:
 
-- `imagemagick=8:6.7.7.10-5+deb7u11`
-- `imagemagick-common=8:6.7.7.10-5+deb7u11`
-- `libmagickcore-dev=8:6.7.7.10-5+deb7u11`
-- `libmagickcore5:amd64=8:6.7.7.10-5+deb7u11`
-- `libmagickcore5-extra:amd64=8:6.7.7.10-5+deb7u11`
-- `libmagickwand-dev=8:6.7.7.10-5+deb7u11`
-- `libmagickwand5:amd64=8:6.7.7.10-5+deb7u11`
+- `imagemagick=8:6.7.7.10-5+deb7u13`
+- `imagemagick-common=8:6.7.7.10-5+deb7u13`
+- `libmagickcore-dev=8:6.7.7.10-5+deb7u13`
+- `libmagickcore5:amd64=8:6.7.7.10-5+deb7u13`
+- `libmagickcore5-extra:amd64=8:6.7.7.10-5+deb7u13`
+- `libmagickwand-dev=8:6.7.7.10-5+deb7u13`
+- `libmagickwand5:amd64=8:6.7.7.10-5+deb7u13`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-common/copyright`, `/usr/share/doc/libmagickcore-dev/copyright`, `/usr/share/doc/libmagickcore5/copyright`, `/usr/share/doc/libmagickcore5-extra/copyright`, `/usr/share/doc/libmagickwand-dev/copyright`, `/usr/share/doc/libmagickwand5/copyright`)
 
@@ -1469,8 +1480,19 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris imagemagick=8:6.7.7.10-5+deb7u13
+'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u13.dsc' imagemagick_6.7.7.10-5+deb7u13.dsc 3325 SHA256:658195eb4befe17e3d9b5ac363cbe441e7923944d8475036a938309ee670de6e
+'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10.orig.tar.bz2' imagemagick_6.7.7.10.orig.tar.bz2 10473522 SHA256:05fb23824b1c90ac35259715c94c65fb5cda6969eb597a7637762d8cf3998fda
+'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u13.debian.tar.bz2' imagemagick_6.7.7.10-5+deb7u13.debian.tar.bz2 200507 SHA256:f929812b9dc5d07b8650aef2d0a1add4b71bdf21de3ed8348286111da9d540af
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/imagemagick/8:6.7.7.10-5+deb7u13/
+- https://sources.debian.net/src/imagemagick/8:6.7.7.10-5+deb7u13/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9-2`
 
@@ -1556,19 +1578,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris jasper=1.900.1-13+deb7u5
-'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-13+deb7u5.dsc' jasper_1.900.1-13+deb7u5.dsc 2051 SHA256:546b755c6d9b0683c7bf79d7a78e10c85830f6dd8dfe0e76914291899dd9a79f
-'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1.orig.tar.gz' jasper_1.900.1.orig.tar.gz 1143400 SHA256:6cf104e2811f6088ca1dc76d87dd27c55178d3ccced20db8858d28ae22911a94
-'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-13+deb7u5.debian.tar.gz' jasper_1.900.1-13+deb7u5.debian.tar.gz 38441 SHA256:45387215521927945ec183bf2723d8ca2394bb365ee430650a329764bbf225df
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/jasper/1.900.1-13+deb7u5/
-- https://sources.debian.net/src/jasper/1.900.1-13+deb7u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `jbigkit=2.0-2+deb7u1`
 
@@ -1784,11 +1795,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libclass-isa-perl/0.36-3/
 - https://sources.debian.net/src/libclass-isa-perl/0.36-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libcroco=0.6.6-2`
+### `dpkg` source package: `libcroco=0.6.6-2+deb7u1`
 
 Binary Packages:
 
-- `libcroco3:amd64=0.6.6-2`
+- `libcroco3:amd64=0.6.6-2+deb7u1`
 
 Licenses: (parsed from: `/usr/share/doc/libcroco3/copyright`)
 
@@ -1797,16 +1808,16 @@ Licenses: (parsed from: `/usr/share/doc/libcroco3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libcroco=0.6.6-2
-'http://deb.debian.org/debian/pool/main/libc/libcroco/libcroco_0.6.6-2.dsc' libcroco_0.6.6-2.dsc 1668 SHA256:408074997f65c6a0c1f302337818028a8946d8de71adebe76ae57be8f60b0c2a
-'http://deb.debian.org/debian/pool/main/libc/libcroco/libcroco_0.6.6.orig.tar.xz' libcroco_0.6.6.orig.tar.xz 463920 SHA256:72ecace2f3d016a25f2b923c6d0cc76cced823e94171692c533f6c2088086bd9
-'http://deb.debian.org/debian/pool/main/libc/libcroco/libcroco_0.6.6-2.debian.tar.gz' libcroco_0.6.6-2.debian.tar.gz 7607 SHA256:a9eb6e1daa3dc1ad57562d4834da70ed19ff1ef59bd618a1ed3464e366741846
+$ apt-get source -qq --print-uris libcroco=0.6.6-2+deb7u1
+'http://security.debian.org/pool/updates/main/libc/libcroco/libcroco_0.6.6-2+deb7u1.dsc' libcroco_0.6.6-2+deb7u1.dsc 2346 SHA256:c62438cb7a1fcaed368b031fbb5f35e159efb5f8b004857e0faa1241b7b6a898
+'http://security.debian.org/pool/updates/main/libc/libcroco/libcroco_0.6.6.orig.tar.xz' libcroco_0.6.6.orig.tar.xz 463920 SHA256:72ecace2f3d016a25f2b923c6d0cc76cced823e94171692c533f6c2088086bd9
+'http://security.debian.org/pool/updates/main/libc/libcroco/libcroco_0.6.6-2+deb7u1.debian.tar.gz' libcroco_0.6.6-2+deb7u1.debian.tar.gz 8224 SHA256:4375f95f208719c6795ce3fb70cb22bc5b07c2c51d19c9e50193331b66a4a621
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libcroco/0.6.6-2/
-- https://sources.debian.net/src/libcroco/0.6.6-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libcroco/0.6.6-2+deb7u1/
+- https://sources.debian.net/src/libcroco/0.6.6-2+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libdatrie=0.2.5-3`
 
@@ -2831,19 +2842,30 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libxrender/1:0.9.7-1+deb7u3/
 - https://sources.debian.net/src/libxrender/1:0.9.7-1+deb7u3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libxslt=1.1.26-14.1+deb7u2`
+### `dpkg` source package: `libxslt=1.1.26-14.1+deb7u3`
 
 Binary Packages:
 
-- `libxslt1-dev=1.1.26-14.1+deb7u2`
-- `libxslt1.1:amd64=1.1.26-14.1+deb7u2`
+- `libxslt1-dev=1.1.26-14.1+deb7u3`
+- `libxslt1.1:amd64=1.1.26-14.1+deb7u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxslt=1.1.26-14.1+deb7u3
+'http://security.debian.org/pool/updates/main/libx/libxslt/libxslt_1.1.26-14.1+deb7u3.dsc' libxslt_1.1.26-14.1+deb7u3.dsc 2041 SHA256:a2d01a726d36c4d94b1c44f668720a1c864e6413f8b9ee8409009ffe9af9518d
+'http://security.debian.org/pool/updates/main/libx/libxslt/libxslt_1.1.26.orig.tar.gz' libxslt_1.1.26.orig.tar.gz 3401513 SHA256:55dd52b42861f8a02989d701ef716d6280bfa02971e967c285016f99c66e3db1
+'http://security.debian.org/pool/updates/main/libx/libxslt/libxslt_1.1.26-14.1+deb7u3.debian.tar.gz' libxslt_1.1.26-14.1+deb7u3.debian.tar.gz 47942 SHA256:50de22884eed3115b86d808ee3ffd2a66d2cab1c3833e45d19e14c0b4d5bec85
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libxslt/1.1.26-14.1+deb7u3/
+- https://sources.debian.net/src/libxslt/1.1.26-14.1+deb7u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxt=1:1.1.3-1+deb7u1`
 
@@ -3138,19 +3160,8 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mysql-5.5=5.5.54-0+deb7u2
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.54-0+deb7u2.dsc' mysql-5.5_5.5.54-0+deb7u2.dsc 2957 SHA256:778749b9917ae09d82386794b308c581f328cb7498f1ce250208c47f09e307d7
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.54.orig.tar.gz' mysql-5.5_5.5.54.orig.tar.gz 21041949 SHA256:273bcbcf8cc84061eb07c359308563b2029eb3f70f78b558905bc1b5c5791ab8
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.54-0+deb7u2.debian.tar.gz' mysql-5.5_5.5.54-0+deb7u2.debian.tar.gz 381824 SHA256:6ea69d1ec32fee08e2bd9b353ca814a7476d338e1b6adc082484e144f3b7e66f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mysql-5.5/5.5.54-0+deb7u2/
-- https://sources.debian.net/src/mysql-5.5/5.5.54-0+deb7u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ncurses=5.9-10`
 
@@ -3945,20 +3956,31 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tar/1.26+dfsg-0.1+deb7u1/
 - https://sources.debian.net/src/tar/1.26+dfsg-0.1+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tiff3=3.9.6-11+deb7u3`
+### `dpkg` source package: `tiff3=3.9.6-11+deb7u5`
 
 Binary Packages:
 
-- `libtiff4:amd64=3.9.6-11+deb7u3`
-- `libtiff4-dev=3.9.6-11+deb7u3`
-- `libtiffxx0c2:amd64=3.9.6-11+deb7u3`
+- `libtiff4:amd64=3.9.6-11+deb7u5`
+- `libtiff4-dev=3.9.6-11+deb7u5`
+- `libtiffxx0c2:amd64=3.9.6-11+deb7u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff3=3.9.6-11+deb7u5
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u5.dsc' tiff3_3.9.6-11+deb7u5.dsc 2111 SHA256:60402a42a47b5a086042976902637e37f1150d427538b8d8c613178a1ab2f69b
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6.orig.tar.gz' tiff3_3.9.6.orig.tar.gz 1454196 SHA256:0fba119156236074343a14afbd3a47907e3a5952c9c86102305d4eeb06ad6833
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u5.debian.tar.gz' tiff3_3.9.6-11+deb7u5.debian.tar.gz 50286 SHA256:99843ed8e2de9cf367fd0893a0deae211cd291012bc69ac9c24a6fbc8645c090
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u5/
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ttf-dejavu=2.33-3`
 
@@ -3984,18 +4006,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/ttf-dejavu/2.33-3/
 - https://sources.debian.net/src/ttf-dejavu/2.33-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tzdata=2017a-0+deb7u1`
+### `dpkg` source package: `tzdata=2017b-0+deb7u1`
 
 Binary Packages:
 
-- `tzdata=2017a-0+deb7u1`
+- `tzdata=2017b-0+deb7u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2017b-0+deb7u1
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017b-0+deb7u1.dsc' tzdata_2017b-0+deb7u1.dsc 1966 SHA256:584d7289af8af8436852eeee472936feee35aa8cdc134b587210c474a9a5695d
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017b.orig.tar.gz' tzdata_2017b.orig.tar.gz 324317 SHA256:f8242a522ea3496b0ce4ff4f2e75a049178da21001a08b8e666d8cbe07d18086
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017b-0+deb7u1.debian.tar.xz' tzdata_2017b-0+deb7u1.debian.tar.xz 102016 SHA256:87288325b84e8cec04c0424452e9dd05b3c0508f73af75381b6ea0ccf2f74b37
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/tzdata/2017b-0+deb7u1/
+- https://sources.debian.net/src/tzdata/2017b-0+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ucf=3.0025+nmu3`
 
