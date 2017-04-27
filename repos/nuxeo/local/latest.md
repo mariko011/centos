@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5c9b3798aaff8b19e7eae7e7cc9c942c3cde7015b595b044d8f71835b6158a8b`
-- Created: `2017-03-22T22:00:15.279869031Z`
-- Virtual Size: ~ 1.47 Gb  
+- Image ID: `sha256:ad1f48365f6f0ed5966e501643859c0855d588b2b60c17d02b22bea33187f27c`
+- Created: `2017-04-26T16:39:04.503229775Z`
+- Virtual Size: ~ 1.98 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -17,10 +17,8 @@
   - `JAVA_DEBIAN_VERSION=8u121-b13-1~bpo8+1`
   - `CA_CERTIFICATES_JAVA_VERSION=20161107~bpo8+1`
   - `NUXEO_USER=nuxeo`
-  - `GOSU_VERSION=1.7`
-  - `NUXEO_VERSION=8.10`
-  - `NUXEO_MD5=29e67a19bba54099093b51d892926be1`
   - `NUXEO_HOME=/opt/nuxeo/server`
+  - `NUXEO_CONF=/etc/nuxeo/nuxeo.conf`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2090,11 +2088,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gsfonts/1:8.11+urwcyr1.0.7~pre44-4.2/
 - https://sources.debian.net/src/gsfonts/1:8.11+urwcyr1.0.7~pre44-4.2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gst-plugins-base1.0=1.4.4-2`
+### `dpkg` source package: `gst-plugins-base1.0=1.4.4-2+deb8u1`
 
 Binary Packages:
 
-- `libgstreamer-plugins-base1.0-0:amd64=1.4.4-2`
+- `libgstreamer-plugins-base1.0-0:amd64=1.4.4-2+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright`)
 
@@ -2108,22 +2106,22 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gst-plugins-base1.0=1.4.4-2
-'http://deb.debian.org/debian/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.4.4-2.dsc' gst-plugins-base1.0_1.4.4-2.dsc 3855 SHA256:e4c6a60f142225d568b7b96d1b0bafe2cc8fb7b2263b09f4a0544c3d18fbc71f
-'http://deb.debian.org/debian/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.4.4.orig.tar.xz' gst-plugins-base1.0_1.4.4.orig.tar.xz 2632996 SHA256:49cd9e8f23c416b1607b43837a09833fa03e0106929d81ead2ddfde6c0ade44b
-'http://deb.debian.org/debian/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.4.4-2.debian.tar.xz' gst-plugins-base1.0_1.4.4-2.debian.tar.xz 39436 SHA256:41a9e150d9c8177f1a53f4aca668fd2ea77456ccfed9adc81e420fc5fe4aa2e2
+$ apt-get source -qq --print-uris gst-plugins-base1.0=1.4.4-2+deb8u1
+'http://security.debian.org/pool/updates/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.4.4-2+deb8u1.dsc' gst-plugins-base1.0_1.4.4-2+deb8u1.dsc 3922 SHA256:9027629b9e790cef343b5effd757aa051f00293082e979b899ed9cefb6c24263
+'http://security.debian.org/pool/updates/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.4.4.orig.tar.xz' gst-plugins-base1.0_1.4.4.orig.tar.xz 2632996 SHA256:49cd9e8f23c416b1607b43837a09833fa03e0106929d81ead2ddfde6c0ade44b
+'http://security.debian.org/pool/updates/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.4.4-2+deb8u1.debian.tar.xz' gst-plugins-base1.0_1.4.4-2+deb8u1.debian.tar.xz 41864 SHA256:84f294f7ec18997ff2eef38b338ee33576584d016ebb9979fbce418a146f2ece
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/gst-plugins-base1.0/1.4.4-2/
-- https://sources.debian.net/src/gst-plugins-base1.0/1.4.4-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gst-plugins-base1.0/1.4.4-2+deb8u1/
+- https://sources.debian.net/src/gst-plugins-base1.0/1.4.4-2+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gstreamer1.0=1.4.4-2`
+### `dpkg` source package: `gstreamer1.0=1.4.4-2+deb8u1`
 
 Binary Packages:
 
-- `libgstreamer1.0-0:amd64=1.4.4-2`
+- `libgstreamer1.0-0:amd64=1.4.4-2+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libgstreamer1.0-0/copyright`)
 
@@ -2136,16 +2134,16 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer1.0-0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gstreamer1.0=1.4.4-2
-'http://deb.debian.org/debian/pool/main/g/gstreamer1.0/gstreamer1.0_1.4.4-2.dsc' gstreamer1.0_1.4.4-2.dsc 3093 SHA256:f3e34dda8697e40cb52a1f09444ba847bf2b79ca7516d1e6050e0b2da28288ef
-'http://deb.debian.org/debian/pool/main/g/gstreamer1.0/gstreamer1.0_1.4.4.orig.tar.xz' gstreamer1.0_1.4.4.orig.tar.xz 3323860 SHA256:f0e305d91a93d05bf9e332cd4256ca07d77f5186a4d73847b7ae6db218f2c237
-'http://deb.debian.org/debian/pool/main/g/gstreamer1.0/gstreamer1.0_1.4.4-2.debian.tar.xz' gstreamer1.0_1.4.4-2.debian.tar.xz 39756 SHA256:0f02456a19b92cf42870cd12b951a14944fd347b539541e7def497ab76de6744
+$ apt-get source -qq --print-uris gstreamer1.0=1.4.4-2+deb8u1
+'http://security.debian.org/pool/updates/main/g/gstreamer1.0/gstreamer1.0_1.4.4-2+deb8u1.dsc' gstreamer1.0_1.4.4-2+deb8u1.dsc 3160 SHA256:bdcfa67dc38f142f94e7708dc469088f5efad2eb32a85289ab08635c2a3187a3
+'http://security.debian.org/pool/updates/main/g/gstreamer1.0/gstreamer1.0_1.4.4.orig.tar.xz' gstreamer1.0_1.4.4.orig.tar.xz 3323860 SHA256:f0e305d91a93d05bf9e332cd4256ca07d77f5186a4d73847b7ae6db218f2c237
+'http://security.debian.org/pool/updates/main/g/gstreamer1.0/gstreamer1.0_1.4.4-2+deb8u1.debian.tar.xz' gstreamer1.0_1.4.4-2+deb8u1.debian.tar.xz 40548 SHA256:7272d846b7b1cc6de83de2eafe878b51df79d4e88f8a2d3d4b38936e847b9131
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/gstreamer1.0/1.4.4-2/
-- https://sources.debian.net/src/gstreamer1.0/1.4.4-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gstreamer1.0/1.4.4-2+deb8u1/
+- https://sources.debian.net/src/gstreamer1.0/1.4.4-2+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gtk+2.0=2.24.25-3+deb8u1`
 
@@ -2344,11 +2342,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/hyphen/2.8.8-1/
 - https://sources.debian.net/src/hyphen/2.8.8-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `icu=52.1-8+deb8u4`
+### `dpkg` source package: `icu=52.1-8+deb8u5`
 
 Binary Packages:
 
-- `libicu52:amd64=52.1-8+deb8u4`
+- `libicu52:amd64=52.1-8+deb8u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2357,16 +2355,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris icu=52.1-8+deb8u4
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1-8+deb8u4.dsc' icu_52.1-8+deb8u4.dsc 2015 SHA256:cabdf27f9976550a61f1b5c84d7353f19f3338b55b2b9002f0db593fccda86c7
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1-8+deb8u4.debian.tar.xz' icu_52.1-8+deb8u4.debian.tar.xz 35588 SHA256:cf298a04a576aaa8016d25ebe1387f6c923de1acea4411a27f9858bf1af72f5a
+$ apt-get source -qq --print-uris icu=52.1-8+deb8u5
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1-8+deb8u5.dsc' icu_52.1-8+deb8u5.dsc 2015 SHA256:906bf48d6b1d39952a72a35b4fc5fda9bcc213695c075f57a67770741f577578
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1-8+deb8u5.debian.tar.xz' icu_52.1-8+deb8u5.debian.tar.xz 37924 SHA256:cb9bb036d2a85e803b5d33c8802c713afda938b286e74a1853f33d3e9f153666
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/icu/52.1-8+deb8u4/
-- https://sources.debian.net/src/icu/52.1-8+deb8u4/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/icu/52.1-8+deb8u5/
+- https://sources.debian.net/src/icu/52.1-8+deb8u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ijs=0.35-10`
 
@@ -2608,18 +2606,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/jackd2/1.9.10+20140719git3eb0ae6a~dfsg-2/
 - https://sources.debian.net/src/jackd2/1.9.10+20140719git3eb0ae6a~dfsg-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `jasper=1.900.1-debian1-2.4+deb8u2`
+### `dpkg` source package: `jasper=1.900.1-debian1-2.4+deb8u3`
 
 Binary Packages:
 
-- `libjasper1:amd64=1.900.1-debian1-2.4+deb8u2`
+- `libjasper1:amd64=1.900.1-debian1-2.4+deb8u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris jasper=1.900.1-debian1-2.4+deb8u3
+'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u3.dsc' jasper_1.900.1-debian1-2.4+deb8u3.dsc 1969 SHA256:9c5228e9f5107ef3ce7565b93bdb00718412b8d15e6dad0328774df223a3c3b5
+'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-debian1.orig.tar.gz' jasper_1.900.1-debian1.orig.tar.gz 1140771 SHA256:7276e8407080d8263b39aeac8305032b0534c7df25bf02718b3944711e3c81d7
+'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u3.debian.tar.xz' jasper_1.900.1-debian1-2.4+deb8u3.debian.tar.xz 34032 SHA256:57b9d7b949a4a0696d6bdc93d56a7ee59d85f3c7cfa34e33a493b3fbf3d99bbf
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u3/
+- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `java-atk-wrapper=0.30.5-1`
 
@@ -2671,42 +2680,37 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/java-common/0.52/
 - https://sources.debian.net/src/java-common/0.52/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `jbig2dec=0.11+20120125-1`
+### `dpkg` source package: `jbig2dec=0.13-4~deb8u1`
 
 Binary Packages:
 
-- `libjbig2dec0=0.11+20120125-1`
+- `libjbig2dec0=0.13-4~deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libjbig2dec0/copyright`)
 
-- `AFPL-9`
+- `AGPL-3`
+- `AGPL-3+`
 - `BSD-2-clause`
-- `Expat~X`
-- `Expat~X with X exception`
-- `GAP`
-- `GAP~Makefile.in`
-- `GAP~configure`
-- `GPL-2`
-- `GPL-2+`
-- `GPL-2+ with Autoconf exception`
-- `GPL-2+ with Libtool exception`
+- `GPL-3`
+- `GPL-3+`
 - `LGPL-2.1`
 - `LGPL-2.1+`
-- `PD`
+- `pubic-domain`
+- `public-domain`
 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris jbig2dec=0.11+20120125-1
-'http://deb.debian.org/debian/pool/main/j/jbig2dec/jbig2dec_0.11+20120125-1.dsc' jbig2dec_0.11+20120125-1.dsc 2109 SHA256:b08a565fbf7e9eb9092f03f19f6a2906048bd9c916c226aab3d2b076431b2c66
-'http://deb.debian.org/debian/pool/main/j/jbig2dec/jbig2dec_0.11+20120125.orig.tar.gz' jbig2dec_0.11+20120125.orig.tar.gz 112774 SHA256:01f4c37f5fbac496f7a638cf02129655e9e07bf3fd71fa7fee6a3ba4e0b05688
-'http://deb.debian.org/debian/pool/main/j/jbig2dec/jbig2dec_0.11+20120125-1.debian.tar.gz' jbig2dec_0.11+20120125-1.debian.tar.gz 9639 SHA256:4839a819b08bc05905660a3dc3bdc115270b93483255fcffcf6ba56444b397a6
+$ apt-get source -qq --print-uris jbig2dec=0.13-4~deb8u1
+'http://security.debian.org/pool/updates/main/j/jbig2dec/jbig2dec_0.13-4~deb8u1.dsc' jbig2dec_0.13-4~deb8u1.dsc 1832 SHA256:99ce14df5651a0daa69f243ed5f9263e24202dd89d043d38366903b1a0e75717
+'http://security.debian.org/pool/updates/main/j/jbig2dec/jbig2dec_0.13.orig.tar.gz' jbig2dec_0.13.orig.tar.gz 122387 SHA256:c8b13b78d4bfd85df088943370cf93768e19c6f5dfe74178d7088e54b6db4ffb
+'http://security.debian.org/pool/updates/main/j/jbig2dec/jbig2dec_0.13-4~deb8u1.debian.tar.xz' jbig2dec_0.13-4~deb8u1.debian.tar.xz 24940 SHA256:b80f061fa71e4cc67c90af11d33f76f363cef505277ea88bb7a9187c786cf7b6
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/jbig2dec/0.11+20120125-1/
-- https://sources.debian.net/src/jbig2dec/0.11+20120125-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/jbig2dec/0.13-4~deb8u1/
+- https://sources.debian.net/src/jbig2dec/0.13-4~deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `jbigkit=2.1-3.1`
 
@@ -2997,17 +3001,17 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libasyncns/0.8-5/
 - https://sources.debian.net/src/libasyncns/0.8-5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libav=6:11.8-1~deb8u1`
+### `dpkg` source package: `libav=6:11.9-1~deb8u1`
 
 Binary Packages:
 
-- `libavcodec56:amd64=6:11.8-1~deb8u1`
-- `libavdevice55:amd64=6:11.8-1~deb8u1`
-- `libavfilter5:amd64=6:11.8-1~deb8u1`
-- `libavformat56:amd64=6:11.8-1~deb8u1`
-- `libavresample2:amd64=6:11.8-1~deb8u1`
-- `libavutil54:amd64=6:11.8-1~deb8u1`
-- `libswscale3:amd64=6:11.8-1~deb8u1`
+- `libavcodec56:amd64=6:11.9-1~deb8u1`
+- `libavdevice55:amd64=6:11.9-1~deb8u1`
+- `libavfilter5:amd64=6:11.9-1~deb8u1`
+- `libavformat56:amd64=6:11.9-1~deb8u1`
+- `libavresample2:amd64=6:11.9-1~deb8u1`
+- `libavutil54:amd64=6:11.9-1~deb8u1`
+- `libswscale3:amd64=6:11.9-1~deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libavcodec56/copyright`, `/usr/share/doc/libavdevice55/copyright`, `/usr/share/doc/libavfilter5/copyright`, `/usr/share/doc/libavformat56/copyright`, `/usr/share/doc/libavresample2/copyright`, `/usr/share/doc/libavutil54/copyright`, `/usr/share/doc/libswscale3/copyright`)
 
@@ -3026,16 +3030,16 @@ Licenses: (parsed from: `/usr/share/doc/libavcodec56/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libav=6:11.8-1~deb8u1
-'http://deb.debian.org/debian/pool/main/liba/libav/libav_11.8-1~deb8u1.dsc' libav_11.8-1~deb8u1.dsc 3955 SHA256:081d5bff8bbdb4716e54b3fc9bf214fd66ac58c354c5a834da54e2d6c336837f
-'http://deb.debian.org/debian/pool/main/liba/libav/libav_11.8.orig.tar.xz' libav_11.8.orig.tar.xz 4865796 SHA256:7014b869570b9ea759e5c06beb3e9debd024a1c5af517655a9e1ccfe145baf4e
-'http://deb.debian.org/debian/pool/main/liba/libav/libav_11.8-1~deb8u1.debian.tar.xz' libav_11.8-1~deb8u1.debian.tar.xz 53964 SHA256:a867d85eb2098645809c982e52234722b2d0af08c1e924c8e2acf01b898f55ae
+$ apt-get source -qq --print-uris libav=6:11.9-1~deb8u1
+'http://security.debian.org/pool/updates/main/liba/libav/libav_11.9-1~deb8u1.dsc' libav_11.9-1~deb8u1.dsc 3987 SHA256:0a2f8959100cdc544408c57992e0993ccc0c540b531f0d1e5f8f612f44ef80a1
+'http://security.debian.org/pool/updates/main/liba/libav/libav_11.9.orig.tar.xz' libav_11.9.orig.tar.xz 4866404 SHA256:5c41da62f83bf005e34bc7cf862065015bcd821e93bf9df267e870aaac4821f4
+'http://security.debian.org/pool/updates/main/liba/libav/libav_11.9-1~deb8u1.debian.tar.xz' libav_11.9-1~deb8u1.debian.tar.xz 53360 SHA256:c117f6ee9d973b050f3516e32927687ee7408756cd47e50cef4cecfd334daa6a
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libav/6:11.8-1~deb8u1/
-- https://sources.debian.net/src/libav/6:11.8-1~deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libav/6:11.9-1~deb8u1/
+- https://sources.debian.net/src/libav/6:11.9-1~deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libbonobo=2.32.1-3`
 
@@ -7263,18 +7267,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u2/
 - https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tzdata=2017a-0+deb8u1`
+### `dpkg` source package: `tzdata=2017b-0+deb8u1`
 
 Binary Packages:
 
-- `tzdata=2017a-0+deb8u1`
+- `tzdata=2017b-0+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2017b-0+deb8u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-0+deb8u1.dsc' tzdata_2017b-0+deb8u1.dsc 1985 SHA256:6e2fcd790df8d641bc232354a7f0d0a4c7b8cd5ad6b107fe6bfa5d671f2002a8
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b.orig.tar.gz' tzdata_2017b.orig.tar.gz 324317 SHA256:f8242a522ea3496b0ce4ff4f2e75a049178da21001a08b8e666d8cbe07d18086
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-0+deb8u1.debian.tar.xz' tzdata_2017b-0+deb8u1.debian.tar.xz 102704 SHA256:4cbe22a0a8433a8246c28394a83193f22805051ca581b90513042896b0de4cb9
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/tzdata/2017b-0+deb8u1/
+- https://sources.debian.net/src/tzdata/2017b-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ucf=3.0030`
 
