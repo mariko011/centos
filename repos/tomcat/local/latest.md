@@ -1,10 +1,10 @@
-# `tomcat:8.5.13-jre8`
+# `tomcat:8.5.14-jre8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:40ab38c1ce33b0790ed630905706bc04625da74b3e6db65bed50b8dfefa3f253`
-- Created: `2017-03-31T21:30:28.279790154Z`
-- Virtual Size: ~ 366.71 Mb  
+- Image ID: `sha256:d71978506e58b6e931dcd588c1cdec5de41a1658ee1b76515dd153cd86f9f331`
+- Created: `2017-04-27T03:47:01.92303173Z`
+- Virtual Size: ~ 366.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -21,9 +21,9 @@
   - `OPENSSL_VERSION=1.1.0e-1`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.5.13`
-  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.13/bin/apache-tomcat-8.5.13.tar.gz`
-  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.5.13/bin/apache-tomcat-8.5.13.tar.gz.asc`
+  - `TOMCAT_VERSION=8.5.14`
+  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.14/bin/apache-tomcat-8.5.14.tar.gz`
+  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.5.14/bin/apache-tomcat-8.5.14.tar.gz.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1133,11 +1133,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/hostname/3.15/
 - https://sources.debian.net/src/hostname/3.15/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `icu=52.1-8+deb8u4`
+### `dpkg` source package: `icu=52.1-8+deb8u5`
 
 Binary Packages:
 
-- `libicu52:amd64=52.1-8+deb8u4`
+- `libicu52:amd64=52.1-8+deb8u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1146,16 +1146,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris icu=52.1-8+deb8u4
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1-8+deb8u4.dsc' icu_52.1-8+deb8u4.dsc 2015 SHA256:cabdf27f9976550a61f1b5c84d7353f19f3338b55b2b9002f0db593fccda86c7
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1-8+deb8u4.debian.tar.xz' icu_52.1-8+deb8u4.debian.tar.xz 35588 SHA256:cf298a04a576aaa8016d25ebe1387f6c923de1acea4411a27f9858bf1af72f5a
+$ apt-get source -qq --print-uris icu=52.1-8+deb8u5
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1-8+deb8u5.dsc' icu_52.1-8+deb8u5.dsc 2015 SHA256:906bf48d6b1d39952a72a35b4fc5fda9bcc213695c075f57a67770741f577578
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
+'http://security.debian.org/pool/updates/main/i/icu/icu_52.1-8+deb8u5.debian.tar.xz' icu_52.1-8+deb8u5.debian.tar.xz 37924 SHA256:cb9bb036d2a85e803b5d33c8802c713afda938b286e74a1853f33d3e9f153666
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/icu/52.1-8+deb8u4/
-- https://sources.debian.net/src/icu/52.1-8+deb8u4/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/icu/52.1-8+deb8u5/
+- https://sources.debian.net/src/icu/52.1-8+deb8u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9.2.39.3a460-3`
 
@@ -2841,18 +2841,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tar/1.27.1-2+deb8u1/
 - https://sources.debian.net/src/tar/1.27.1-2+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tzdata=2017a-0+deb8u1`
+### `dpkg` source package: `tzdata=2017b-0+deb8u1`
 
 Binary Packages:
 
-- `tzdata=2017a-0+deb8u1`
+- `tzdata=2017b-0+deb8u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2017b-0+deb8u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-0+deb8u1.dsc' tzdata_2017b-0+deb8u1.dsc 1985 SHA256:6e2fcd790df8d641bc232354a7f0d0a4c7b8cd5ad6b107fe6bfa5d671f2002a8
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b.orig.tar.gz' tzdata_2017b.orig.tar.gz 324317 SHA256:f8242a522ea3496b0ce4ff4f2e75a049178da21001a08b8e666d8cbe07d18086
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-0+deb8u1.debian.tar.xz' tzdata_2017b-0+deb8u1.debian.tar.xz 102704 SHA256:4cbe22a0a8433a8246c28394a83193f22805051ca581b90513042896b0de4cb9
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/tzdata/2017b-0+deb8u1/
+- https://sources.debian.net/src/tzdata/2017b-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ucf=3.0030`
 
