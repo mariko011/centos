@@ -123,13 +123,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.2.19
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.19.dsc' apt_1.2.19.dsc 2392 SHA256:5081290901052e7e4d17839a112849e8845b8c00b5c6e4193f4d3c25ec01300c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.19.tar.xz' apt_1.2.19.tar.xz 2055900 SHA256:2c0be591472248d5c00d983ceb81e5ed936291f90cd2794c75e768466ab168cc
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -821,13 +816,8 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-de
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.4ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.1.dsc' dpkg_1.18.4ubuntu1.1.dsc 2168 SHA256:2807bba376095b241b0334704e0c3b5b13379de3853792f465e39d8641308b42
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.1.tar.xz' dpkg_1.18.4ubuntu1.1.tar.xz 4374172 SHA256:6d9aa2356fba44f0d1e7c74df9fb500108bfb581ec1b5eae8b5cfdaf269564d2
-```
 
 ### `dpkg` source package: `e2fsprogs=1.42.13-1ubuntu1`
 
@@ -3024,14 +3014,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-rospkg-modules=1.1.0-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.0-1.dsc' python-rospkg-modules_1.1.0-1.dsc 949 SHA256:8d06ed38954c887bbc6ebb858f23fb6462673bda434420cde0937b65109d5dd9
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.0.orig.tar.gz' python-rospkg-modules_1.1.0.orig.tar.gz 38168 SHA256:727f8e5f393b22e2a93e878d491a2ca08a9afac49568bfe9575cdfe3464c4963
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.0-1.debian.tar.xz' python-rospkg-modules_1.1.0-1.debian.tar.xz 1116 SHA256:86557fa0cc8b7e9afb0801226cbed6571e2500f9e23ef9bbdb0b03139ae38470
-```
 
 ### `dpkg` source package: `python-rospkg=1.1.0-1`
 
@@ -3043,14 +3027,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-rospkg=1.1.0-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.0-1.dsc' python-rospkg_1.1.0-1.dsc 881 SHA256:6005265fcffa6f5847a1ac5d7925864d50c9afaffd802168025ed8eb00e33152
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.0.orig.tar.gz' python-rospkg_1.1.0.orig.tar.gz 17916 SHA256:ee2ee5d8e1246cdd349d29af3df11fbc95315f866bbe32ff1291f047f968e95e
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.0-1.debian.tar.xz' python-rospkg_1.1.0-1.debian.tar.xz 1092 SHA256:1c7aad772fa7c8e8b509518b30c44ff39ad3915408892719c5fa60056d0507a9
-```
 
 ### `dpkg` source package: `python-setuptools=20.7.0-1`
 
@@ -4329,14 +4307,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=229-4ubuntu16
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu16.dsc' systemd_229-4ubuntu16.dsc 4445 SHA256:afccec7075a77a2a38d3c3b4e2390d2f20d0ed6825faf3062fc3e7a521e40f7a
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu16.debian.tar.xz' systemd_229-4ubuntu16.debian.tar.xz 240120 SHA256:7d2e0abd935bfbdd59b3e1ee32627d92d09617ceeb000a3d8bbde39e4a2f0a89
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
