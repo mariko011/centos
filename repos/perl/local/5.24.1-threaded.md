@@ -3680,19 +3680,8 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mysql-5.5=5.5.54-0+deb8u1
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.54-0+deb8u1.dsc' mysql-5.5_5.5.54-0+deb8u1.dsc 3262 SHA256:993b22375e92261e9ab264b5cd380d439dfd61524680c3edf301150caf416712
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.54.orig.tar.gz' mysql-5.5_5.5.54.orig.tar.gz 21041949 SHA256:273bcbcf8cc84061eb07c359308563b2029eb3f70f78b558905bc1b5c5791ab8
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.54-0+deb8u1.debian.tar.xz' mysql-5.5_5.5.54-0+deb8u1.debian.tar.xz 233108 SHA256:946211b6bac4d0a20911e8a8c01bf30d48fe875fb8987eea2147ec9b21eba896
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mysql-5.5/5.5.54-0+deb8u1/
-- https://sources.debian.net/src/mysql-5.5/5.5.54-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ncurses=5.9+20140913-1`
 
