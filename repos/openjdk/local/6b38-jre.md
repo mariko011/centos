@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3dee8ef938e6b98d4ba777420ce28e16b4ae30be4430eba76a273d3246aa896d`
-- Created: `2017-04-24T23:39:48.633475039Z`
+- Image ID: `sha256:eefa59a91ddf0e057bb5b590d5d60b5ac0e83efe888d874d29365cefb8ec9219`
+- Created: `2017-04-26T23:06:05.853914836Z`
 - Virtual Size: ~ 195.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -687,11 +687,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/findutils/4.4.2-4/
 - https://sources.debian.net/src/findutils/4.4.2-4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `freetype=2.4.9-1.1+deb7u5`
+### `dpkg` source package: `freetype=2.4.9-1.1+deb7u6`
 
 Binary Packages:
 
-- `libfreetype6:amd64=2.4.9-1.1+deb7u5`
+- `libfreetype6:amd64=2.4.9-1.1+deb7u6`
 
 Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 
@@ -707,15 +707,15 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris freetype=2.4.9-1.1+deb7u5
-'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u5.dsc' freetype_2.4.9-1.1+deb7u5.dsc 1974 SHA256:40db3b896d410b9242e7553b6572b0b3b9e87d9c7f32ca61741d4802e2f2b52d
-'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u5.tar.gz' freetype_2.4.9-1.1+deb7u5.tar.gz 1831889 SHA256:d7f3fd64c7c691d7bc3718bd9d773b0f933955daa8b66f7128b1a651538e9fd1
+$ apt-get source -qq --print-uris freetype=2.4.9-1.1+deb7u6
+'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u6.dsc' freetype_2.4.9-1.1+deb7u6.dsc 1823 SHA256:66768255d1c807e0879ae1f2d01456e36d0f3f46f57204d930e2be1aefff2580
+'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u6.tar.gz' freetype_2.4.9-1.1+deb7u6.tar.gz 1831737 SHA256:26bf7f2f4d79e32002d02a9eefa2041a661dd0fb163f8b4090d9ba166a8a5548
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u5/
-- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u5/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u6/
+- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-4.7=4.7.2-5`
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:75512cd15ab91d3851823ef1c1cf0c624f136760ef5adf2d9ba2622751deba28`
-- Created: `2017-04-24T23:39:11.329850892Z`
-- Virtual Size: ~ 420.73 Mb  
+- Image ID: `sha256:4bbd3d0a7dc76ddf5459d59affcffdbb89cd0d62a8e0e772743fe1aa626f9c99`
+- Created: `2017-04-26T23:05:33.374861911Z`
+- Virtual Size: ~ 420.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -910,11 +910,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/fontconfig/2.9.0-7.1+deb7u1/
 - https://sources.debian.net/src/fontconfig/2.9.0-7.1+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `freetype=2.4.9-1.1+deb7u5`
+### `dpkg` source package: `freetype=2.4.9-1.1+deb7u6`
 
 Binary Packages:
 
-- `libfreetype6:amd64=2.4.9-1.1+deb7u5`
+- `libfreetype6:amd64=2.4.9-1.1+deb7u6`
 
 Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 
@@ -930,15 +930,15 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris freetype=2.4.9-1.1+deb7u5
-'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u5.dsc' freetype_2.4.9-1.1+deb7u5.dsc 1974 SHA256:40db3b896d410b9242e7553b6572b0b3b9e87d9c7f32ca61741d4802e2f2b52d
-'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u5.tar.gz' freetype_2.4.9-1.1+deb7u5.tar.gz 1831889 SHA256:d7f3fd64c7c691d7bc3718bd9d773b0f933955daa8b66f7128b1a651538e9fd1
+$ apt-get source -qq --print-uris freetype=2.4.9-1.1+deb7u6
+'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u6.dsc' freetype_2.4.9-1.1+deb7u6.dsc 1823 SHA256:66768255d1c807e0879ae1f2d01456e36d0f3f46f57204d930e2be1aefff2580
+'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u6.tar.gz' freetype_2.4.9-1.1+deb7u6.tar.gz 1831737 SHA256:26bf7f2f4d79e32002d02a9eefa2041a661dd0fb163f8b4090d9ba166a8a5548
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u5/
-- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u5/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u6/
+- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-4.7=4.7.2-5`
 
@@ -1384,11 +1384,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/iproute/20120521-3/
 - https://sources.debian.net/src/iproute/20120521-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `jasper=1.900.1-13+deb7u5`
+### `dpkg` source package: `jasper=1.900.1-13+deb7u6`
 
 Binary Packages:
 
-- `libjasper1:amd64=1.900.1-13+deb7u5`
+- `libjasper1:amd64=1.900.1-13+deb7u6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1397,16 +1397,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris jasper=1.900.1-13+deb7u5
-'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-13+deb7u5.dsc' jasper_1.900.1-13+deb7u5.dsc 2051 SHA256:546b755c6d9b0683c7bf79d7a78e10c85830f6dd8dfe0e76914291899dd9a79f
+$ apt-get source -qq --print-uris jasper=1.900.1-13+deb7u6
+'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-13+deb7u6.dsc' jasper_1.900.1-13+deb7u6.dsc 2051 SHA256:5557e601b45d56b4e9a378de8ed0dbf20238a3ca6be50d410e10b537b0b7c61e
 'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1.orig.tar.gz' jasper_1.900.1.orig.tar.gz 1143400 SHA256:6cf104e2811f6088ca1dc76d87dd27c55178d3ccced20db8858d28ae22911a94
-'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-13+deb7u5.debian.tar.gz' jasper_1.900.1-13+deb7u5.debian.tar.gz 38441 SHA256:45387215521927945ec183bf2723d8ca2394bb365ee430650a329764bbf225df
+'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-13+deb7u6.debian.tar.gz' jasper_1.900.1-13+deb7u6.debian.tar.gz 40166 SHA256:66218e510c7cef7b4744b66c8eed10e4842ca95119401df4109d4fbc61eb1595
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/jasper/1.900.1-13+deb7u5/
-- https://sources.debian.net/src/jasper/1.900.1-13+deb7u5/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/jasper/1.900.1-13+deb7u6/
+- https://sources.debian.net/src/jasper/1.900.1-13+deb7u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `java-atk-wrapper=0.30.4-3`
 

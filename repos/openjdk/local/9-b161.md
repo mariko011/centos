@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:25fa9d713a6d428b47f937c69229171df6d9de98ad7d7b7c7b13f88da4d612fb`
-- Created: `2017-04-25T00:44:24.779287142Z`
+- Image ID: `sha256:f984a10f0fd444461e404dd17bc797f7d1b16ad62c25a7894484496969a2c669`
+- Created: `2017-04-26T23:11:29.757653942Z`
 - Virtual Size: ~ 574.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -153,18 +153,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.dsc' apt_1.4.dsc 2541 SHA256:ae69ca34d14062b676e005de2415de2236c0b38c03496675d86f5ee725a3fcaa
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.tar.xz' apt_1.4.tar.xz 2076104 SHA256:933cc255e7d053d93a08ccd0e027d762a8a621e4f2ec0977b0b326893da163fc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.4/
-- https://sources.debian.net/src/apt/1.4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
