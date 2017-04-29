@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:51c5d6c8e9a2753f0fa24d33ee5b2893acf83e05f0f727fe9c9d859265478854`
-- Created: `2017-04-25T10:36:54.303639174Z`
-- Virtual Size: ~ 712.64 Mb  
+- Image ID: `sha256:36cdf943d844dcedd21f1d1b305d9be911ebe04182bc50898bb7f6fd2fd441cf`
+- Created: `2017-04-27T00:44:04.707377901Z`
+- Virtual Size: ~ 714.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/bin/tini","--","/usr/local/bin/jenkins.sh"]`
@@ -19,7 +19,7 @@
   - `JENKINS_SLAVE_AGENT_PORT=50000`
   - `TINI_VERSION=0.14.0`
   - `TINI_SHA=6c41ec7d33e857d4779f14d9c74924cab0c7973485d2972419a3b7c7620ff5fd`
-  - `JENKINS_VERSION=2.46.1`
+  - `JENKINS_VERSION=2.46.2`
   - `JENKINS_UC=https://updates.jenkins.io`
   - `COPY_REFERENCE_FILE_LOG=/var/jenkins_home/copy_reference_file.log`
 
