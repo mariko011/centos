@@ -693,18 +693,8 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 - `GZip`
 - `OpenGroup-BSD-like`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris freetype=2.4.9-1.1+deb7u5
-'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u5.dsc' freetype_2.4.9-1.1+deb7u5.dsc 1974 SHA256:40db3b896d410b9242e7553b6572b0b3b9e87d9c7f32ca61741d4802e2f2b52d
-'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u5.tar.gz' freetype_2.4.9-1.1+deb7u5.tar.gz 1831889 SHA256:d7f3fd64c7c691d7bc3718bd9d773b0f933955daa8b66f7128b1a651538e9fd1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u5/
-- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `fsharp=4.1.6-0xamarin1+debian7b1`
 
