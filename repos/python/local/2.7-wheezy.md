@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0aff42455a9578716ea6a01ae089ee5f3f883f714b5854881f362bd6b0e32d84`
-- Created: `2017-04-25T04:50:00.720261079Z`
+- Image ID: `sha256:3360710f8da6508a25d9fdb14edccdbc5391b3df1031771e0d08d2359025ddd8`
+- Created: `2017-04-26T19:43:15.468817163Z`
 - Virtual Size: ~ 530.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,6 +14,8 @@
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
   - `PYTHON_VERSION=2.7.13`
   - `PYTHON_PIP_VERSION=9.0.1`
+  - `PYTHON_SETUPTOOLS_VERSION=35.0.1`
+  - `PYTHON_WHEEL_VERSION=0.29.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -975,18 +977,8 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`, `/usr/share/doc
 - `GZip`
 - `OpenGroup-BSD-like`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris freetype=2.4.9-1.1+deb7u5
-'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u5.dsc' freetype_2.4.9-1.1+deb7u5.dsc 1974 SHA256:40db3b896d410b9242e7553b6572b0b3b9e87d9c7f32ca61741d4802e2f2b52d
-'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u5.tar.gz' freetype_2.4.9-1.1+deb7u5.tar.gz 1831889 SHA256:d7f3fd64c7c691d7bc3718bd9d773b0f933955daa8b66f7128b1a651538e9fd1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u5/
-- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-4.7=4.7.2-5`
 
@@ -1589,19 +1581,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris jasper=1.900.1-13+deb7u5
-'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-13+deb7u5.dsc' jasper_1.900.1-13+deb7u5.dsc 2051 SHA256:546b755c6d9b0683c7bf79d7a78e10c85830f6dd8dfe0e76914291899dd9a79f
-'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1.orig.tar.gz' jasper_1.900.1.orig.tar.gz 1143400 SHA256:6cf104e2811f6088ca1dc76d87dd27c55178d3ccced20db8858d28ae22911a94
-'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-13+deb7u5.debian.tar.gz' jasper_1.900.1-13+deb7u5.debian.tar.gz 38441 SHA256:45387215521927945ec183bf2723d8ca2394bb365ee430650a329764bbf225df
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/jasper/1.900.1-13+deb7u5/
-- https://sources.debian.net/src/jasper/1.900.1-13+deb7u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `jbigkit=2.0-2+deb7u1`
 
@@ -2973,19 +2954,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=3.2.86-1
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.86-1.dsc' linux_3.2.86-1.dsc 103043 SHA256:cdd57bfba8eb8e29c145977a901d8051016440d01a1ca3315555a65bb2f77034
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.86.orig.tar.xz' linux_3.2.86.orig.tar.xz 65989888 SHA256:ccdbe655a9ba3c39784d8607c96386d6d92e33241072206976eae1264f9b2df9
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.86-1.debian.tar.xz' linux_3.2.86-1.debian.tar.xz 3736892 SHA256:0e388a99f8f0f5201caadb3595e4678b243170827e3aa8add019a82180ab6a4a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/3.2.86-1/
-- https://sources.debian.net/src/linux/3.2.86-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian8+deb7u1`
 
