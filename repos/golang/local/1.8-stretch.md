@@ -123,18 +123,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.dsc' apt_1.4.dsc 2541 SHA256:ae69ca34d14062b676e005de2415de2236c0b38c03496675d86f5ee725a3fcaa
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.tar.xz' apt_1.4.tar.xz 2076104 SHA256:933cc255e7d053d93a08ccd0e027d762a8a621e4f2ec0977b0b326893da163fc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.4/
-- https://sources.debian.net/src/apt/1.4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -271,19 +261,8 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris binutils=2.28-3
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.28-3.dsc' binutils_2.28-3.dsc 4374 SHA256:bbc1f2473bd4e38819f83b846d9a707abdfd04583a2d5033b6e23bc244c1efe2
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.28.orig.tar.gz' binutils_2.28.orig.tar.gz 37814356 SHA256:db29588b0214fa69baa1a9351122cd6d0f081f2e675e6ad2aefc316ddeaf327a
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.28-3.diff.gz' binutils_2.28-3.diff.gz 220910 SHA256:c2b39e4cc0b71539708a8b666f7ca996fec8ea4b76f8207a1590f8c557386b9d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/binutils/2.28-3/
-- https://sources.debian.net/src/binutils/2.28-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
 
@@ -448,19 +427,8 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris curl=7.52.1-4
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-4.dsc' curl_7.52.1-4.dsc 2765 SHA256:8093fec132fc9688bc91901c1f8159dd0a70a831f0f29bbd43c17cc25f82c635
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-4.debian.tar.xz' curl_7.52.1-4.debian.tar.xz 31092 SHA256:36ea9f70ac166ec30e5dcfdbc6496faeeec9921be9218fd5f9c2aed16620a612
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/curl/7.52.1-4/
-- https://sources.debian.net/src/curl/7.52.1-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
