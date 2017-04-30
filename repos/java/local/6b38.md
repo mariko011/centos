@@ -1373,19 +1373,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris jasper=1.900.1-13+deb7u5
-'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-13+deb7u5.dsc' jasper_1.900.1-13+deb7u5.dsc 2051 SHA256:546b755c6d9b0683c7bf79d7a78e10c85830f6dd8dfe0e76914291899dd9a79f
-'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1.orig.tar.gz' jasper_1.900.1.orig.tar.gz 1143400 SHA256:6cf104e2811f6088ca1dc76d87dd27c55178d3ccced20db8858d28ae22911a94
-'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-13+deb7u5.debian.tar.gz' jasper_1.900.1-13+deb7u5.debian.tar.gz 38441 SHA256:45387215521927945ec183bf2723d8ca2394bb365ee430650a329764bbf225df
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/jasper/1.900.1-13+deb7u5/
-- https://sources.debian.net/src/jasper/1.900.1-13+deb7u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `java-atk-wrapper=0.30.4-3`
 
