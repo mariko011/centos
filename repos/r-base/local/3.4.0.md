@@ -76,18 +76,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.dsc' apt_1.4.dsc 2541 SHA256:ae69ca34d14062b676e005de2415de2236c0b38c03496675d86f5ee725a3fcaa
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.tar.xz' apt_1.4.tar.xz 2076104 SHA256:933cc255e7d053d93a08ccd0e027d762a8a621e4f2ec0977b0b326893da163fc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.4/
-- https://sources.debian.net/src/apt/1.4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -228,10 +218,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris binutils=2.28-4
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.28-4.dsc' binutils_2.28-4.dsc 4374 SHA256:1e4d84116469c89a7fbe9e5e21f2be703fe4173ec16f8a34449b727fb061d70d
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.28.orig.tar.gz' binutils_2.28.orig.tar.gz 37814356 SHA256:db29588b0214fa69baa1a9351122cd6d0f081f2e675e6ad2aefc316ddeaf327a
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.28-4.diff.gz' binutils_2.28-4.diff.gz 116329 SHA256:fc56919cd2bd9e5d8aec1046af092434d0ff042e1a8bf9defa76288f1b1b7ec5
+'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.28-4.dsc' binutils_2.28-4.dsc 4374 SHA256:1e4d84116469c89a7fbe9e5e21f2be703fe4173ec16f8a34449b727fb061d70d
+'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.28.orig.tar.gz' binutils_2.28.orig.tar.gz 37814356 SHA256:db29588b0214fa69baa1a9351122cd6d0f081f2e675e6ad2aefc316ddeaf327a
+'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.28-4.diff.gz' binutils_2.28-4.diff.gz 116329 SHA256:fc56919cd2bd9e5d8aec1046af092434d0ff042e1a8bf9defa76288f1b1b7ec5
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/binutils/2.28-4/
+- https://sources.debian.net/src/binutils/2.28-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `boot=1.3-19-1`
 
@@ -416,14 +411,8 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-cluster/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cluster=2.0.6-1
-'http://http.debian.net/debian/pool/main/c/cluster/cluster_2.0.6-1.dsc' cluster_2.0.6-1.dsc 1635 SHA256:2392f3749da5015efe67c92900fa9d6c402f4ea7e8b88258647d42df394b5ca6
-'http://http.debian.net/debian/pool/main/c/cluster/cluster_2.0.6.orig.tar.gz' cluster_2.0.6.orig.tar.gz 319245 SHA256:f424b87f10595ed358b1ac80471b520ab9c767a4d203663c25b177c8ce5f8ffc
-'http://http.debian.net/debian/pool/main/c/cluster/cluster_2.0.6-1.diff.gz' cluster_2.0.6-1.diff.gz 3479 SHA256:bbee75b4ec8d3704f878a3592c7793a7a32c2c78be5ce37fd1dd77fb503e3a14
-```
 
 ### `dpkg` source package: `codetools=0.2-15-1`
 
@@ -492,10 +481,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris curl=7.52.1-5
-'http://http.debian.net/debian/pool/main/c/curl/curl_7.52.1-5.dsc' curl_7.52.1-5.dsc 2765 SHA256:40e5e7c680d0246e12bdebf4f84949412c7846d95708c688df9dd7e77119960e
-'http://http.debian.net/debian/pool/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://http.debian.net/debian/pool/main/c/curl/curl_7.52.1-5.debian.tar.xz' curl_7.52.1-5.debian.tar.xz 33004 SHA256:67e9388c5562edbdd63fa31a892d446bd7dee18207a62ec367bc925f6ce50fcf
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-5.dsc' curl_7.52.1-5.dsc 2765 SHA256:40e5e7c680d0246e12bdebf4f84949412c7846d95708c688df9dd7e77119960e
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
+'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-5.debian.tar.xz' curl_7.52.1-5.debian.tar.xz 33004 SHA256:67e9388c5562edbdd63fa31a892d446bd7dee18207a62ec367bc925f6ce50fcf
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/curl/7.52.1-5/
+- https://sources.debian.net/src/curl/7.52.1-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
@@ -2604,14 +2598,8 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-mgcv/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mgcv=1.8-17-1
-'http://http.debian.net/debian/pool/main/m/mgcv/mgcv_1.8-17-1.dsc' mgcv_1.8-17-1.dsc 1643 SHA256:653600973751e251466177c519b51bb445d6404e70495fedfd976b96f8127519
-'http://http.debian.net/debian/pool/main/m/mgcv/mgcv_1.8-17.orig.tar.gz' mgcv_1.8-17.orig.tar.gz 849787 SHA256:8ff3eb28c83ba7c9003005e7fe08028627fb673b9b07c0462b410e45e81042fe
-'http://http.debian.net/debian/pool/main/m/mgcv/mgcv_1.8-17-1.diff.gz' mgcv_1.8-17-1.diff.gz 4733 SHA256:743dd9bc56cbbcb46a4e3a1df99419678dbb8a4f2fc9313102348e9fc5ea54a0
-```
 
 ### `dpkg` source package: `mpclib3=1.0.3-1`
 
@@ -2786,14 +2774,8 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-nlme/copyright`)
 - `GPL`
 - `GPL `
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nlme=3.1.131-2
-'http://http.debian.net/debian/pool/main/n/nlme/nlme_3.1.131-2.dsc' nlme_3.1.131-2.dsc 1651 SHA256:34c56a62718c80b29ba3fa5702b38b666e2c07a097670e1026d96e4a9b3241ac
-'http://http.debian.net/debian/pool/main/n/nlme/nlme_3.1.131.orig.tar.gz' nlme_3.1.131.orig.tar.gz 780607 SHA256:79daa167eb9bc7d8dba506da4b24b5250665b051d4e0a51dfccbb0087fdb564c
-'http://http.debian.net/debian/pool/main/n/nlme/nlme_3.1.131-2.diff.gz' nlme_3.1.131-2.diff.gz 3936 SHA256:3b06bd701c8c04ed7598789c01eb50aeac16b26755686138bff8c72c7e944613
-```
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-4`
 
@@ -2944,10 +2926,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris pango1.0=1.40.5-1
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.40.5-1.dsc' pango1.0_1.40.5-1.dsc 3268 SHA256:21b6ba0332f7e690b167eb37ea4eb9c64a95e95b2130a57903112c4d244eb42d
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.40.5.orig.tar.xz' pango1.0_1.40.5.orig.tar.xz 1065152 SHA256:24748140456c42360b07b2c77a1a2e1216d07c056632079557cd4e815b9d01c9
-'http://http.debian.net/debian/pool/main/p/pango1.0/pango1.0_1.40.5-1.debian.tar.xz' pango1.0_1.40.5-1.debian.tar.xz 27304 SHA256:6ec6be5f87ce79ba23e5843e8e271f85ccce9f035b71d373d96a1a2e882cc876
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.5-1.dsc' pango1.0_1.40.5-1.dsc 3268 SHA256:21b6ba0332f7e690b167eb37ea4eb9c64a95e95b2130a57903112c4d244eb42d
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.5.orig.tar.xz' pango1.0_1.40.5.orig.tar.xz 1065152 SHA256:24748140456c42360b07b2c77a1a2e1216d07c056632079557cd4e815b9d01c9
+'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.5-1.debian.tar.xz' pango1.0_1.40.5-1.debian.tar.xz 27304 SHA256:6ec6be5f87ce79ba23e5843e8e271f85ccce9f035b71d373d96a1a2e882cc876
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/pango1.0/1.40.5-1/
+- https://sources.debian.net/src/pango1.0/1.40.5-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `patch=2.7.5-1`
 
@@ -3263,14 +3250,8 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-matrix/copyright`)
 - `GPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris rmatrix=1.2-8-1
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.2-8-1.dsc' rmatrix_1.2-8-1.dsc 1683 SHA256:77f22bcec67ba652d81b84f1a8947a73b7a3a6e910d097d9a049078276a9f90d
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.2-8.orig.tar.gz' rmatrix_1.2-8.orig.tar.gz 1811080 SHA256:3cd2a187c45fc18a0766dc148b7f83dbf6f2163c256e887c41cbaa7c9a20dbb7
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.2-8-1.diff.gz' rmatrix_1.2-8-1.diff.gz 5042 SHA256:60f7c333040772c6c0110482fcb5456e7738543bd4d0629a79e3ebae64112de2
-```
 
 ### `dpkg` source package: `rpart=4.1-11-1`
 
@@ -3399,14 +3380,8 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-survival/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris survival=2.41-3-1
-'http://http.debian.net/debian/pool/main/s/survival/survival_2.41-3-1.dsc' survival_2.41-3-1.dsc 1669 SHA256:cc98f7d8b898f4da3e88826dfb0e0a7b411509eebc221d394257bc21203510d4
-'http://http.debian.net/debian/pool/main/s/survival/survival_2.41-3.orig.tar.gz' survival_2.41-3.orig.tar.gz 4992943 SHA256:f3797c344de93abd2ba8c89568770a13524a8b2694144ae55adec46921c8961d
-'http://http.debian.net/debian/pool/main/s/survival/survival_2.41-3-1.diff.gz' survival_2.41-3-1.diff.gz 3525 SHA256:9aab40fcec1638ea4fd116f3a6aebf0a749b0c2f527d58b004bbabf9a552534d
-```
 
 ### `dpkg` source package: `systemd=232-22`
 
@@ -3742,19 +3717,8 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris vim=2:8.0.0197-3
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.0.0197-3.dsc' vim_8.0.0197-3.dsc 2991 SHA256:73c061ddab1739f37fc491dff0bc596b0b0419113a9e438824f83d63f6191837
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.0.0197.orig.tar.gz' vim_8.0.0197.orig.tar.gz 12959375 SHA256:7fc1d5ef76a86961316666fb8e050cdb79bd86f9264028d597e682582b25be16
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.0.0197-3.debian.tar.xz' vim_8.0.0197-3.debian.tar.xz 155324 SHA256:d5d1b02e985f83478bf5d9c2688630d0908deab55b32a133a0f4d7a721ba9085
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/vim/2:8.0.0197-3/
-- https://sources.debian.net/src/vim/2:8.0.0197-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `wget=1.18-5`
 
