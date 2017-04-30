@@ -687,13 +687,8 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.4ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.1.dsc' dpkg_1.18.4ubuntu1.1.dsc 2168 SHA256:2807bba376095b241b0334704e0c3b5b13379de3853792f465e39d8641308b42
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.1.tar.xz' dpkg_1.18.4ubuntu1.1.tar.xz 4374172 SHA256:6d9aa2356fba44f0d1e7c74df9fb500108bfb581ec1b5eae8b5cfdaf269564d2
-```
 
 ### `dpkg` source package: `e2fsprogs=1.42.13-1ubuntu1`
 
@@ -1160,14 +1155,8 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 - `icclib`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ghostscript=9.18~dfsg~0-0ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.18~dfsg~0-0ubuntu2.3.dsc' ghostscript_9.18~dfsg~0-0ubuntu2.3.dsc 2889 SHA256:29d2a4d7004a29b312763087e73aa57835510ee63bca84c7bc720d51643fbc7a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.18~dfsg~0.orig.tar.bz2' ghostscript_9.18~dfsg~0.orig.tar.bz2 18274376 SHA256:b39e5d163e37e4c78b67380ada922c09ad65879f82e2322d1efbbf4ad1d7b814
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.18~dfsg~0-0ubuntu2.3.debian.tar.xz' ghostscript_9.18~dfsg~0-0ubuntu2.3.debian.tar.xz 105028 SHA256:bf17c4ea024a68a03d648e6466db701427454a529b70c846d8e5a90c3506f9cc
-```
 
 ### `dpkg` source package: `giflib=5.1.4-0.3~16.04`
 
@@ -3915,14 +3904,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nspr=2:4.12-0ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nspr/nspr_4.12-0ubuntu0.16.04.1.dsc' nspr_4.12-0ubuntu0.16.04.1.dsc 2244 SHA256:493ec034471ca52b2802994f01bc6975d69c1fd0716311aa59215940ceb1031e
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nspr/nspr_4.12.orig.tar.gz' nspr_4.12.orig.tar.gz 1135458 SHA256:e0b10a1e569153668ff8bdea6c7e491b389fab69c2f18285a1ebf7c2ea4269de
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nspr/nspr_4.12-0ubuntu0.16.04.1.debian.tar.xz' nspr_4.12-0ubuntu0.16.04.1.debian.tar.xz 18292 SHA256:9776ec23e3dffe198310915f3425fe6c2c5ac8c1ce2fb1c70b5f830d80f5c7e8
-```
 
 ### `dpkg` source package: `nss=2:3.26.2-0ubuntu0.16.04.2`
 
@@ -3935,14 +3918,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.26.2-0ubuntu0.16.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.26.2-0ubuntu0.16.04.2.dsc' nss_3.26.2-0ubuntu0.16.04.2.dsc 2428 SHA256:886a3e6cc79d9a30463827f5e755d84d74a1612176bbbeaf332e763c9f782b0c
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.26.2.orig.tar.gz' nss_3.26.2.orig.tar.gz 7388390 SHA256:13a40a2f97edf5fab3d4c7fdd928e77df36dc539cd8354b6b5d79ab93a131a5a
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.26.2-0ubuntu0.16.04.2.debian.tar.xz' nss_3.26.2-0ubuntu0.16.04.2.debian.tar.xz 27420 SHA256:84f7c542b0a5e6e853ba7105c6b45815b5e983782608dbc4ebddcdce11ba26b0
-```
 
 ### `dpkg` source package: `numactl=2.0.11-1ubuntu1`
 
@@ -4835,14 +4812,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=229-4ubuntu16
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu16.dsc' systemd_229-4ubuntu16.dsc 4445 SHA256:afccec7075a77a2a38d3c3b4e2390d2f20d0ed6825faf3062fc3e7a521e40f7a
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu16.debian.tar.xz' systemd_229-4ubuntu16.debian.tar.xz 240120 SHA256:7d2e0abd935bfbdd59b3e1ee32627d92d09617ceeb000a3d8bbde39e4a2f0a89
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
