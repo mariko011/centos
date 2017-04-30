@@ -4248,22 +4248,8 @@ Licenses: (parsed from: `/usr/share/doc/fonts-opensymbol/copyright`, `/usr/share
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libreoffice=1:4.3.3-2+deb8u6
-'http://security.debian.org/pool/updates/main/libr/libreoffice/libreoffice_4.3.3-2+deb8u6.dsc' libreoffice_4.3.3-2+deb8u6.dsc 25856 SHA256:d3ab26135640eb7627b93fa0ffe75ddacfd93cd1d3bc7cfd5ef44c9ffb30aba8
-'http://security.debian.org/pool/updates/main/libr/libreoffice/libreoffice_4.3.3.orig-external.tar.xz' libreoffice_4.3.3.orig-external.tar.xz 322296536 SHA256:744787778b944c94a67bf80947e5f096d10dc408a6bf4be73c2953d0588670a0
-'http://security.debian.org/pool/updates/main/libr/libreoffice/libreoffice_4.3.3.orig-helpcontent2.tar.xz' libreoffice_4.3.3.orig-helpcontent2.tar.xz 1400052 SHA256:5c1668f8770fa657cc762b34e75cc8555d0dd504b200742e03a9113ce556bd80
-'http://security.debian.org/pool/updates/main/libr/libreoffice/libreoffice_4.3.3.orig-translations.tar.xz' libreoffice_4.3.3.orig-translations.tar.xz 127000868 SHA256:67fbd8ef11dab0a4fa02893f050c7ff566efb83a75a7a4173286687091191fda
-'http://security.debian.org/pool/updates/main/libr/libreoffice/libreoffice_4.3.3.orig.tar.xz' libreoffice_4.3.3.orig.tar.xz 149850184 SHA256:69afdc225be44a1d13cefc6fa5783cfb5535e72932cd08a427d62a6f44e27619
-'http://security.debian.org/pool/updates/main/libr/libreoffice/libreoffice_4.3.3-2+deb8u6.debian.tar.xz' libreoffice_4.3.3-2+deb8u6.debian.tar.xz 2126640 SHA256:0894c0ca1b872e00b4d1c7d9368992459cbb248b05d7c3ed653577b9629525dc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libreoffice/1:4.3.3-2+deb8u6/
-- https://sources.debian.net/src/libreoffice/1:4.3.3-2+deb8u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `librevenge=0.0.1-3`
 
