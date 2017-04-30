@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:564d82302b00b8a7ee61224982603b172ca5de16d4f9832d7d7647768d2cfa72`
-- Created: `2017-04-25T11:34:47.560324881Z`
-- Virtual Size: ~ 581.78 Mb  
+- Image ID: `sha256:2b0023cfb93bb3da55068e9635d537ed10e81044e0e20e49fc7fc3c152ebd809`
+- Created: `2017-04-26T20:33:06.335865614Z`
+- Virtual Size: ~ 582.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -2600,6 +2600,32 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/pkg-config/0.28-1/
 - https://sources.debian.net/src/pkg-config/0.28-1/debian/copyright (for direct copyright/license information)
 
+### `dpkg` source package: `popt=1.16-10`
+
+Binary Packages:
+
+- `libpopt0:amd64=1.16-10`
+
+Licenses: (parsed from: `/usr/share/doc/libpopt0/copyright`)
+
+- `GPL-2`
+- `GPL-2+`
+- `X-Consortium`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris popt=1.16-10
+'http://deb.debian.org/debian/pool/main/p/popt/popt_1.16-10.dsc' popt_1.16-10.dsc 1800 SHA256:874c8f002ef0f8d0c704cf136af58079983e7dc2646bf4322f6fe9261ddfe4a7
+'http://deb.debian.org/debian/pool/main/p/popt/popt_1.16.orig.tar.gz' popt_1.16.orig.tar.gz 702769 SHA256:e728ed296fe9f069a0e005003c3d6b2dde3d9cad453422a10d6558616d304cc8
+'http://deb.debian.org/debian/pool/main/p/popt/popt_1.16-10.debian.tar.xz' popt_1.16-10.debian.tar.xz 14136 SHA256:8300cbb47148f59fc6edc2f8ebe227a319b080ed26d17db846d1e346f0614899
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/popt/1.16-10/
+- https://sources.debian.net/src/popt/1.16-10/debian/copyright (for direct copyright/license information)
+
 ### `dpkg` source package: `postgresql-9.4=9.4.10-0+deb8u1`
 
 Binary Packages:
@@ -2700,6 +2726,30 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/readline6/6.3-8/
 - https://sources.debian.net/src/readline6/6.3-8/debian/copyright (for direct copyright/license information)
+
+### `dpkg` source package: `rsync=3.1.1-3`
+
+Binary Packages:
+
+- `rsync=3.1.1-3`
+
+Licenses: (parsed from: `/usr/share/doc/rsync/copyright`)
+
+- `GPL-3`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris rsync=3.1.1-3
+'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.1.1-3.dsc' rsync_3.1.1-3.dsc 1676 SHA256:1ca6cc2c514d6e82dfde28c3984bea8651f8c197640cbc05aa544c46d2891a69
+'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.1.1.orig.tar.gz' rsync_3.1.1.orig.tar.gz 890124 SHA256:7de4364fcf5fe42f3bdb514417f1c40d10bbca896abe7e7f2c581c6ea08a2621
+'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.1.1-3.debian.tar.xz' rsync_3.1.1-3.debian.tar.xz 21968 SHA256:be77fe6d9932e82c4215f6fcd127f813c667d50662a1416be5f4cd854c19c960
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/rsync/3.1.1-3/
+- https://sources.debian.net/src/rsync/3.1.1-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `rtmpdump=2.4+20150115.gita107cef-1`
 
