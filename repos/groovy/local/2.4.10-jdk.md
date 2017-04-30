@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fe27dde4efe2fd977d7cb65c0c4e05824f4468975736fd77d8d917336a4af91b`
-- Created: `2017-04-25T10:33:30.069381023Z`
-- Virtual Size: ~ 683.93 Mb  
+- Image ID: `sha256:d57bea87b2d8349edd5d8fda890d47ff695ca908221b0480aae7d164ca7c1537`
+- Created: `2017-04-27T00:24:30.72640712Z`
+- Virtual Size: ~ 683.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
