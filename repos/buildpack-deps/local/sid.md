@@ -121,18 +121,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.dsc' apt_1.4.dsc 2541 SHA256:ae69ca34d14062b676e005de2415de2236c0b38c03496675d86f5ee725a3fcaa
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.tar.xz' apt_1.4.tar.xz 2076104 SHA256:933cc255e7d053d93a08ccd0e027d762a8a621e4f2ec0977b0b326893da163fc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.4/
-- https://sources.debian.net/src/apt/1.4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `atk1.0=2.22.0-1`
 
@@ -1112,19 +1102,8 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 - `MIT-Old-Style-with-legal-disclaimer-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris file=1:5.29-3
-'http://deb.debian.org/debian/pool/main/f/file/file_5.29-3.dsc' file_5.29-3.dsc 2124 SHA256:e72d2d4b53a2872f36fefe6a8bc38068ec5882ab44f59b54b8357debd9d64315
-'http://deb.debian.org/debian/pool/main/f/file/file_5.29.orig.tar.xz' file_5.29.orig.tar.xz 574196 SHA256:4ab1cd8d4fe9017f8dfcfd6ba81f495a722b75e22bd1a59e6bfd15ac211a2820
-'http://deb.debian.org/debian/pool/main/f/file/file_5.29-3.debian.tar.xz' file_5.29-3.debian.tar.xz 41052 SHA256:0c4265ea108b6f25cc8cb742542ed013ef207ce5a66b8cdfd121b1c596d3f28d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/file/1:5.29-3/
-- https://sources.debian.net/src/file/1:5.29-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20161106-2`
 

@@ -121,18 +121,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.dsc' apt_1.4.dsc 2541 SHA256:ae69ca34d14062b676e005de2415de2236c0b38c03496675d86f5ee725a3fcaa
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.tar.xz' apt_1.4.tar.xz 2076104 SHA256:933cc255e7d053d93a08ccd0e027d762a8a621e4f2ec0977b0b326893da163fc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.4/
-- https://sources.debian.net/src/apt/1.4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `atk1.0=2.22.0-1`
 
@@ -415,19 +405,8 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris binutils=2.28-3
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.28-3.dsc' binutils_2.28-3.dsc 4374 SHA256:bbc1f2473bd4e38819f83b846d9a707abdfd04583a2d5033b6e23bc244c1efe2
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.28.orig.tar.gz' binutils_2.28.orig.tar.gz 37814356 SHA256:db29588b0214fa69baa1a9351122cd6d0f081f2e675e6ad2aefc316ddeaf327a
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.28-3.diff.gz' binutils_2.28-3.diff.gz 220910 SHA256:c2b39e4cc0b71539708a8b666f7ca996fec8ea4b76f8207a1590f8c557386b9d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/binutils/2.28-3/
-- https://sources.debian.net/src/binutils/2.28-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
 
@@ -652,19 +631,8 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris curl=7.52.1-4
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-4.dsc' curl_7.52.1-4.dsc 2765 SHA256:8093fec132fc9688bc91901c1f8159dd0a70a831f0f29bbd43c17cc25f82c635
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-4.debian.tar.xz' curl_7.52.1-4.debian.tar.xz 31092 SHA256:36ea9f70ac166ec30e5dcfdbc6496faeeec9921be9218fd5f9c2aed16620a612
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/curl/7.52.1-4/
-- https://sources.debian.net/src/curl/7.52.1-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
@@ -2333,19 +2301,8 @@ Licenses: (parsed from: `/usr/share/doc/libcroco3/copyright`)
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libcroco=0.6.11-2
-'http://deb.debian.org/debian/pool/main/libc/libcroco/libcroco_0.6.11-2.dsc' libcroco_0.6.11-2.dsc 2245 SHA256:b119addfca651943022a53caf54dba2f809a23ae4b90fd7ba494a1aacea2c919
-'http://deb.debian.org/debian/pool/main/libc/libcroco/libcroco_0.6.11.orig.tar.xz' libcroco_0.6.11.orig.tar.xz 477312 SHA256:132b528a948586b0dfa05d7e9e059901bca5a3be675b6071a90a90b81ae5a056
-'http://deb.debian.org/debian/pool/main/libc/libcroco/libcroco_0.6.11-2.debian.tar.xz' libcroco_0.6.11-2.debian.tar.xz 6728 SHA256:06cc5e027ea2433f69b23215972d63d0c78e5e7ecf4c81375e0d655d8280e29e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libcroco/0.6.11-2/
-- https://sources.debian.net/src/libcroco/0.6.11-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libdatrie=0.2.10-4`
 
@@ -4360,19 +4317,8 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `LGPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.40.4-1
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.4-1.dsc' pango1.0_1.40.4-1.dsc 3268 SHA256:a87efa0bd7635b633d17199accbf89e0f17ecb7ab9b67b714f834e7689f3bdfe
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.4.orig.tar.xz' pango1.0_1.40.4.orig.tar.xz 1062600 SHA256:f8fdc5fc66356dc4edf915048cceeee065a0e0cb70b3b2598f62bda320129a3e
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.4-1.debian.tar.xz' pango1.0_1.40.4-1.debian.tar.xz 27284 SHA256:af62681915402b1afb301287c4e66d974f4e4594b6f11294ca32e7d63240e87b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/pango1.0/1.40.4-1/
-- https://sources.debian.net/src/pango1.0/1.40.4-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `patch=2.7.5-1`
 

@@ -518,13 +518,8 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.4ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.1.dsc' dpkg_1.18.4ubuntu1.1.dsc 2168 SHA256:2807bba376095b241b0334704e0c3b5b13379de3853792f465e39d8641308b42
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.4ubuntu1.1.tar.xz' dpkg_1.18.4ubuntu1.1.tar.xz 4374172 SHA256:6d9aa2356fba44f0d1e7c74df9fb500108bfb581ec1b5eae8b5cfdaf269564d2
-```
 
 ### `dpkg` source package: `e2fsprogs=1.42.13-1ubuntu1`
 
@@ -1933,14 +1928,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=229-4ubuntu16
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu16.dsc' systemd_229-4ubuntu16.dsc 4445 SHA256:afccec7075a77a2a38d3c3b4e2390d2f20d0ed6825faf3062fc3e7a521e40f7a
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu16.debian.tar.xz' systemd_229-4ubuntu16.debian.tar.xz 240120 SHA256:7d2e0abd935bfbdd59b3e1ee32627d92d09617ceeb000a3d8bbde39e4a2f0a89
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
