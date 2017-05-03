@@ -1840,14 +1840,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris icu=55.1-7ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1-7ubuntu0.1.dsc' icu_55.1-7ubuntu0.1.dsc 2148 SHA256:119d3671a2291dc1c0b6f1cf1fe78dc10d6e56c2394cd4c7f24ce25642ee4697
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1.orig.tar.gz' icu_55.1.orig.tar.gz 25600847 SHA256:e16b22cbefdd354bec114541f7849a12f8fc2015320ca5282ee4fd787571457b
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1-7ubuntu0.1.debian.tar.xz' icu_55.1-7ubuntu0.1.debian.tar.xz 27800 SHA256:36312b246a6663165524355795cf9b9f91152b610985fa36c724cbb25b84a68d
-```
 
 ### `dpkg` source package: `ifupdown=0.8.10ubuntu1.2`
 
@@ -4272,9 +4266,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=4.4.0-75.96
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-75.96.dsc' linux_4.4.0-75.96.dsc 9613 SHA256:2715c2992a337e173b37d8335099aaf2b4176e5a8b02c5eedc4b06bec52d9285
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-75.96.diff.gz' linux_4.4.0-75.96.diff.gz 12739187 SHA256:b6eb670cff4921788457e2ea3f33c7b44140d2adc4f85fa4728af86076850c22
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-75.96.dsc' linux_4.4.0-75.96.dsc 9613 SHA256:2715c2992a337e173b37d8335099aaf2b4176e5a8b02c5eedc4b06bec52d9285
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-75.96.diff.gz' linux_4.4.0-75.96.diff.gz 12739187 SHA256:b6eb670cff4921788457e2ea3f33c7b44140d2adc4f85fa4728af86076850c22
 ```
 
 ### `dpkg` source package: `llvm-toolchain-3.8=1:3.8-2ubuntu4`
@@ -6115,14 +6109,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=229-4ubuntu16
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu16.dsc' systemd_229-4ubuntu16.dsc 4445 SHA256:afccec7075a77a2a38d3c3b4e2390d2f20d0ed6825faf3062fc3e7a521e40f7a
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu16.debian.tar.xz' systemd_229-4ubuntu16.debian.tar.xz 240120 SHA256:7d2e0abd935bfbdd59b3e1ee32627d92d09617ceeb000a3d8bbde39e4a2f0a89
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
