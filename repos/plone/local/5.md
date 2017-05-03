@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:50523d6f2398eb9a445e2791e793b9c999d57888b734ee62a4e70b8f838c145e`
-- Created: `2017-04-26T22:45:18.755511676Z`
-- Virtual Size: ~ 416.35 Mb  
+- Image ID: `sha256:d7947b7ab6faf044bcc4aacc9f8defb03414aa598243580469929a50ba67626f`
+- Created: `2017-05-02T18:13:40.797153144Z`
+- Virtual Size: ~ 416.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -15,8 +15,6 @@
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
   - `PYTHON_VERSION=2.7.13`
   - `PYTHON_PIP_VERSION=9.0.1`
-  - `PYTHON_SETUPTOOLS_VERSION=35.0.1`
-  - `PYTHON_WHEEL_VERSION=0.29.0`
   - `PLONE_MAJOR=5.0`
   - `PLONE_VERSION=5.0.7`
   - `PLONE_MD5=347e787d10a6a02d8156ed8c05effcdb`
