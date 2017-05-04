@@ -2901,22 +2901,8 @@ Licenses: (parsed from: `/usr/share/doc/fonts-opensymbol/copyright`, `/usr/share
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libreoffice=1:4.3.3-2+deb8u6
-'http://security.debian.org/pool/updates/main/libr/libreoffice/libreoffice_4.3.3-2+deb8u6.dsc' libreoffice_4.3.3-2+deb8u6.dsc 25856 SHA256:d3ab26135640eb7627b93fa0ffe75ddacfd93cd1d3bc7cfd5ef44c9ffb30aba8
-'http://security.debian.org/pool/updates/main/libr/libreoffice/libreoffice_4.3.3.orig-external.tar.xz' libreoffice_4.3.3.orig-external.tar.xz 322296536 SHA256:744787778b944c94a67bf80947e5f096d10dc408a6bf4be73c2953d0588670a0
-'http://security.debian.org/pool/updates/main/libr/libreoffice/libreoffice_4.3.3.orig-helpcontent2.tar.xz' libreoffice_4.3.3.orig-helpcontent2.tar.xz 1400052 SHA256:5c1668f8770fa657cc762b34e75cc8555d0dd504b200742e03a9113ce556bd80
-'http://security.debian.org/pool/updates/main/libr/libreoffice/libreoffice_4.3.3.orig-translations.tar.xz' libreoffice_4.3.3.orig-translations.tar.xz 127000868 SHA256:67fbd8ef11dab0a4fa02893f050c7ff566efb83a75a7a4173286687091191fda
-'http://security.debian.org/pool/updates/main/libr/libreoffice/libreoffice_4.3.3.orig.tar.xz' libreoffice_4.3.3.orig.tar.xz 149850184 SHA256:69afdc225be44a1d13cefc6fa5783cfb5535e72932cd08a427d62a6f44e27619
-'http://security.debian.org/pool/updates/main/libr/libreoffice/libreoffice_4.3.3-2+deb8u6.debian.tar.xz' libreoffice_4.3.3-2+deb8u6.debian.tar.xz 2126640 SHA256:0894c0ca1b872e00b4d1c7d9368992459cbb248b05d7c3ed653577b9629525dc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libreoffice/1:4.3.3-2+deb8u6/
-- https://sources.debian.net/src/libreoffice/1:4.3.3-2+deb8u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `librevenge=0.0.1-3`
 
@@ -5090,19 +5076,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.3-12.3+deb8u2
-'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u2.dsc' tiff_4.0.3-12.3+deb8u2.dsc 2240 SHA256:6a2dd52c52bccdc8404be32a55c2e26fa0077736a5d8e3644123e6155866ac45
-'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
-'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u2.debian.tar.xz' tiff_4.0.3-12.3+deb8u2.debian.tar.xz 43512 SHA256:0f5eb5da8fd6c9b334db2cb715e9c747e1173e5f9288daeb2036108f9cfefb90
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u2/
-- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tzdata=2017b-0+deb8u1`
 
