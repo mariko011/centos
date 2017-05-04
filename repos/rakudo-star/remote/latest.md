@@ -1,7 +1,7 @@
 ## `rakudo-star:latest`
 
 ```console
-$ docker pull rakudo-star@sha256:70cdb69e38890bf6591d59e032d2bd6aab13d71367d1925b2a0a805864fa90ed
+$ docker pull rakudo-star@sha256:46625ad048efdd9006e90695eb22a75136150c9e698f770572711c888750e179
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull rakudo-star@sha256:70cdb69e38890bf6591d59e032d2bd6aab13d71367d1925
 
 -	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.9 MB (126940127 bytes)**  
+-	Total Size: **128.4 MB (128388008 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b00c91fa5c0fb552c2005bdab4d3cf878eb422ea4f60d9c8772eee817472612`
+-	Image ID: `sha256:6eb7e79d35c229a63e13399b8719682f3b533de6780078a60a7d5fb7c57c318b`
 -	Default Command: `["perl6"]`
 
 ```dockerfile
@@ -29,13 +29,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 MAINTAINER Rob Hoelz
 # Tue, 25 Apr 2017 04:41:26 GMT
 RUN groupadd -r perl6 && useradd -r -g perl6 perl6
-# Tue, 25 Apr 2017 04:41:27 GMT
-ENV rakudo_version=2017.01
-# Tue, 25 Apr 2017 04:49:31 GMT
+# Thu, 04 May 2017 17:22:19 GMT
+ENV rakudo_version=2017.04
+# Thu, 04 May 2017 17:31:33 GMT
 RUN buildDeps='         gcc         libc6-dev         libencode-perl         make     '     && set -x     && apt-get update     && apt-get --yes install --no-install-recommends $buildDeps     && rm -rf /var/lib/apt/lists/*     && mkdir /root/rakudo     && curl -fsSL http://rakudo.org/downloads/star/rakudo-star-${rakudo_version}.tar.gz -o rakudo.tar.gz     && tar xzf rakudo.tar.gz --strip-components=1 -C /root/rakudo     && (         cd /root/rakudo         && perl Configure.pl --prefix=/usr --gen-moar         && make install     )     && rm -rf /rakudo.tar.gz /root/rakudo     && apt-get purge -y --auto-remove $buildDeps
-# Tue, 25 Apr 2017 04:49:32 GMT
+# Thu, 04 May 2017 17:31:41 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/site/bin
-# Tue, 25 Apr 2017 04:49:33 GMT
+# Thu, 04 May 2017 17:31:42 GMT
 CMD ["perl6"]
 ```
 
@@ -56,7 +56,7 @@ CMD ["perl6"]
 		Last Modified: Tue, 25 Apr 2017 21:15:29 GMT  
 		Size: 2.1 KB (2072 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8534493cf688360c221f7b80e089607d734efb3fb61022c6f117e7f948d4f35f`  
-		Last Modified: Tue, 25 Apr 2017 21:15:39 GMT  
-		Size: 11.9 MB (11890239 bytes)  
+	-	`sha256:301f57e601dc1e10173d894844cab34e1146a80a80e6f725dc86001fd601b1a8`  
+		Last Modified: Thu, 04 May 2017 17:32:08 GMT  
+		Size: 13.3 MB (13338120 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
