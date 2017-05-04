@@ -1,7 +1,7 @@
 ## `node:argon-slim`
 
 ```console
-$ docker pull node@sha256:f6ab552c895deb6596d2b80848c50f21f4e1d239a23c71054a3b0abb09e95bc0
+$ docker pull node@sha256:8f22fd309c76beb6e7e8992f9e7b96f1fdd3d21588f0c7af811c8df7128a1dbc
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull node@sha256:f6ab552c895deb6596d2b80848c50f21f4e1d239a23c71054a3b0a
 
 -	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **85.4 MB (85403271 bytes)**  
+-	Total Size: **85.4 MB (85404632 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:112daf73658e42cabc2e9e15019140cb7ba9a036c204c54bdd597cd75f1802cc`
+-	Image ID: `sha256:0381aeb7b827df08912a33b3d022025b9f51dfb213455e7d7dc1e9841a7b0c73`
 -	Default Command: `["node"]`
 
 ```dockerfile
@@ -29,15 +29,15 @@ RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bas
 RUN set -ex   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     56730D5401028683275BD23C23EFEFE93C4CFFFE   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --keyserver pgp.mit.edu --recv-keys "$key" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;   done
 # Tue, 25 Apr 2017 02:33:50 GMT
 ENV NPM_CONFIG_LOGLEVEL=info
-# Tue, 25 Apr 2017 02:33:51 GMT
-ENV NODE_VERSION=4.8.2
-# Tue, 25 Apr 2017 02:34:07 GMT
+# Wed, 03 May 2017 23:19:50 GMT
+ENV NODE_VERSION=4.8.3
+# Wed, 03 May 2017 23:20:03 GMT
 RUN buildDeps='xz-utils'     && set -x     && apt-get update && apt-get install -y $buildDeps --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz"     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1     && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && apt-get purge -y --auto-remove $buildDeps     && ln -s /usr/local/bin/node /usr/local/bin/nodejs
-# Tue, 25 Apr 2017 02:34:14 GMT
-ENV YARN_VERSION=0.23.2
-# Tue, 25 Apr 2017 02:34:21 GMT
+# Wed, 03 May 2017 23:20:04 GMT
+ENV YARN_VERSION=0.23.4
+# Wed, 03 May 2017 23:20:09 GMT
 RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --keyserver pgp.mit.edu --recv-keys "$key" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;   done   && curl -fSL -o yarn.js "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-legacy-$YARN_VERSION.js"   && curl -fSL -o yarn.js.asc "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-legacy-$YARN_VERSION.js.asc"   && gpg --batch --verify yarn.js.asc yarn.js   && rm yarn.js.asc   && mv yarn.js /usr/local/bin/yarn   && chmod +x /usr/local/bin/yarn
-# Tue, 25 Apr 2017 02:34:22 GMT
+# Wed, 03 May 2017 23:20:09 GMT
 CMD ["node"]
 ```
 
@@ -58,11 +58,11 @@ CMD ["node"]
 		Last Modified: Tue, 25 Apr 2017 19:59:23 GMT  
 		Size: 119.2 KB (119152 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d28e355544045007809525c4367c884cf11499c2c17643004b243036dfe4d4a2`  
-		Last Modified: Tue, 25 Apr 2017 19:59:26 GMT  
-		Size: 12.6 MB (12576982 bytes)  
+	-	`sha256:fd0cb06f38d2454b74038083edf990b186d42815b64c42d18d3694aacd30773a`  
+		Last Modified: Wed, 03 May 2017 23:39:37 GMT  
+		Size: 12.6 MB (12578290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2622696cce2e8d886e4f5f8a318ad0813b414b72ca32c44dcf68af6f4cd3c515`  
-		Last Modified: Tue, 25 Apr 2017 19:59:23 GMT  
-		Size: 886.3 KB (886270 bytes)  
+	-	`sha256:893ed87be4dbc5098553bb0584b308c35869f03590697dd37d2103248c305a46`  
+		Last Modified: Wed, 03 May 2017 23:39:35 GMT  
+		Size: 886.3 KB (886323 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
