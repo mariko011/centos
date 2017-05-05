@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ef77620ababa3ba5ec932d9afdeed9db082bc5b8a75fe07b2937e9735b1797f1`
-- Created: `2017-04-26T22:29:28.703209048Z`
-- Virtual Size: ~ 215.83 Mb  
+- Image ID: `sha256:205c5ae6d07f1e555a0b6e8ea659a7c942a347f804a52eba958dd03e8e4d9fa6`
+- Created: `2017-05-02T17:44:37.315200023Z`
+- Virtual Size: ~ 216.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["celery","worker"]`
@@ -14,8 +14,6 @@
   - `GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D`
   - `PYTHON_VERSION=3.5.3`
   - `PYTHON_PIP_VERSION=9.0.1`
-  - `PYTHON_SETUPTOOLS_VERSION=35.0.1`
-  - `PYTHON_WHEEL_VERSION=0.29.0`
   - `CELERY_VERSION=3.1.25`
   - `CELERY_BROKER_URL=amqp://guest@rabbit`
 
