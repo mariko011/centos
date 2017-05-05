@@ -1,7 +1,7 @@
 ## `php:alpine`
 
 ```console
-$ docker pull php@sha256:fd9001383dfd795b9251ce539d18c9e5de7898863035588b60a4dbd89d533f8f
+$ docker pull php@sha256:fe4592b1c6510a7e4a83881e6781a143068e0122ac6fe4197c4e685e4885eb57
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull php@sha256:fd9001383dfd795b9251ce539d18c9e5de7898863035588b60a4dbd
 
 -	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.2 MB (27247915 bytes)**  
+-	Total Size: **27.2 MB (27247939 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f7cf3832d600ec15689b27b25e7094720be9bc8539e9dc69a61e07f7462e1846`
+-	Image ID: `sha256:3a51241e3794b7af7d4322c5035eccef6dfbd4623d4efd018d90817f11f8dd3d`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -50,11 +50,11 @@ RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		m
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
 # Tue, 18 Apr 2017 19:18:17 GMT
 RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& ./configure 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(getconf _NPROCESSORS_ONLN)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Tue, 18 Apr 2017 19:18:19 GMT
-COPY multi:b2b2a1a4e3c0f0bb8ebdcd527fca158bfce5138468926263f86e5bb0cb41970f in /usr/local/bin/ 
-# Tue, 18 Apr 2017 19:18:20 GMT
+# Fri, 05 May 2017 20:37:44 GMT
+COPY multi:e6c464c392a31f5168d5531bab0e23fa9eac39c09c1e5823ce94492760685158 in /usr/local/bin/ 
+# Fri, 05 May 2017 20:37:45 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 18 Apr 2017 19:18:20 GMT
+# Fri, 05 May 2017 20:37:46 GMT
 CMD ["php" "-a"]
 ```
 
@@ -87,7 +87,7 @@ CMD ["php" "-a"]
 		Last Modified: Tue, 18 Apr 2017 20:08:16 GMT  
 		Size: 10.9 MB (10903597 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37b6a18e8d42d36882e46509bf4f040187887ae87d0f95e8ec7e900856af86d4`  
-		Last Modified: Tue, 18 Apr 2017 20:08:14 GMT  
-		Size: 2.0 KB (2005 bytes)  
+	-	`sha256:0150e2ce1094e1cc6be8da9cbd9140863edcc335488f2d03b81dc769789651ab`  
+		Last Modified: Fri, 05 May 2017 20:48:07 GMT  
+		Size: 2.0 KB (2029 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
