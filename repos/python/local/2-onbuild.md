@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:41fcddb2eca13a9e3aab01a247d0c27e70f3925ccd676bc3b07b5a745391aa88`
-- Created: `2017-04-26T19:44:09.99904325Z`
+- Image ID: `sha256:331f0d6fafcfadc87130f1065dff88bb1ec0347250857317f6d25c8cc0a83eb9`
+- Created: `2017-05-01T22:55:38.490260478Z`
 - Virtual Size: ~ 677.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,8 +14,6 @@
   - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
   - `PYTHON_VERSION=2.7.13`
   - `PYTHON_PIP_VERSION=9.0.1`
-  - `PYTHON_SETUPTOOLS_VERSION=35.0.1`
-  - `PYTHON_WHEEL_VERSION=0.29.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -4684,19 +4682,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.3-12.3+deb8u2
-'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u2.dsc' tiff_4.0.3-12.3+deb8u2.dsc 2240 SHA256:6a2dd52c52bccdc8404be32a55c2e26fa0077736a5d8e3644123e6155866ac45
-'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
-'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u2.debian.tar.xz' tiff_4.0.3-12.3+deb8u2.debian.tar.xz 43512 SHA256:0f5eb5da8fd6c9b334db2cb715e9c747e1173e5f9288daeb2036108f9cfefb90
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u2/
-- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tk8.6=8.6.2-1`
 
