@@ -1,16 +1,16 @@
-# `erlang:19.3.1`
+# `erlang:19.3.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7611977feef94e95d6ead047f2dcb49159c57ca6b0b489bba4fa4ca82b8ac6cd`
-- Created: `2017-04-25T06:55:08.494620467Z`
-- Virtual Size: ~ 821.34 Mb  
+- Image ID: `sha256:2216344f0c704afa1173b1ab7a414de506085111185a3f4a3f6a972c6b4dad07`
+- Created: `2017-05-04T17:17:56.644843404Z`
+- Virtual Size: ~ 821.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=19.3.1`
+  - `OTP_VERSION=19.3.3`
   - `REBAR_VERSION=2.6.4`
   - `REBAR3_VERSION=3.3.6`
 
@@ -5072,19 +5072,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.3-12.3+deb8u2
-'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u2.dsc' tiff_4.0.3-12.3+deb8u2.dsc 2240 SHA256:6a2dd52c52bccdc8404be32a55c2e26fa0077736a5d8e3644123e6155866ac45
-'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
-'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u2.debian.tar.xz' tiff_4.0.3-12.3+deb8u2.debian.tar.xz 43512 SHA256:0f5eb5da8fd6c9b334db2cb715e9c747e1173e5f9288daeb2036108f9cfefb90
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u2/
-- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tzdata=2017b-0+deb8u1`
 

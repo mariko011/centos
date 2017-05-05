@@ -1,16 +1,16 @@
-# `erlang:19.3.1-slim`
+# `erlang:19.3.3-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a9c28f086b4cff5d58b9753ac1ea6571dd03a76bddd258ea3cff7e531e759771`
-- Created: `2017-04-24T22:54:01.979843859Z`
-- Virtual Size: ~ 374.84 Mb  
+- Image ID: `sha256:11724662809a0c36a0790a1c33abc0bf54537afd88832659c06985f39457404f`
+- Created: `2017-05-04T17:27:28.23319131Z`
+- Virtual Size: ~ 374.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=19.3.1`
+  - `OTP_VERSION=19.3.3`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -771,11 +771,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/fonts-dejavu/2.34-1/
 - https://sources.debian.net/src/fonts-dejavu/2.34-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `freetype=2.5.2-3+deb8u1`
+### `dpkg` source package: `freetype=2.5.2-3+deb8u2`
 
 Binary Packages:
 
-- `libfreetype6:amd64=2.5.2-3+deb8u1`
+- `libfreetype6:amd64=2.5.2-3+deb8u2`
 
 Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 
@@ -791,16 +791,16 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris freetype=2.5.2-3+deb8u1
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.5.2-3+deb8u1.dsc' freetype_2.5.2-3+deb8u1.dsc 2096 SHA256:a56cdf04463a7d9b13c1a2fd1c257b9626f28516efc7243fd2ee34eae2f14a13
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.5.2.orig.tar.gz' freetype_2.5.2.orig.tar.gz 1971155 SHA256:5fda4996e43cfdf9b602a0eb5abde014f1a3c3b2d82bbb9b86942011c63f5c3a
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.5.2-3+deb8u1.diff.gz' freetype_2.5.2-3+deb8u1.diff.gz 68796 SHA256:196918fc99a74441d7f7e6e85133b0ba7d6b85b2d5b5cd764fc32edd7dd97923
+$ apt-get source -qq --print-uris freetype=2.5.2-3+deb8u2
+'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.5.2-3+deb8u2.dsc' freetype_2.5.2-3+deb8u2.dsc 2283 SHA256:e63b0cc18482fe5971880271c2dbacd6957288608fef8c40fe127db79a9008dd
+'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.5.2.orig.tar.gz' freetype_2.5.2.orig.tar.gz 1971155 SHA256:5fda4996e43cfdf9b602a0eb5abde014f1a3c3b2d82bbb9b86942011c63f5c3a
+'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.5.2-3+deb8u2.diff.gz' freetype_2.5.2-3+deb8u2.diff.gz 70170 SHA256:0247f57efcb83b208fc1967520a53ecf21c5aca9ee2c433238914622e6938259
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/freetype/2.5.2-3+deb8u1/
-- https://sources.debian.net/src/freetype/2.5.2-3+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/freetype/2.5.2-3+deb8u2/
+- https://sources.debian.net/src/freetype/2.5.2-3+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-4.8=4.8.4-1`
 
@@ -3102,11 +3102,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tar/1.27.1-2+deb8u1/
 - https://sources.debian.net/src/tar/1.27.1-2+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tiff=4.0.3-12.3+deb8u2`
+### `dpkg` source package: `tiff=4.0.3-12.3+deb8u3`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.0.3-12.3+deb8u2`
+- `libtiff5:amd64=4.0.3-12.3+deb8u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3115,16 +3115,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tiff=4.0.3-12.3+deb8u2
-'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u2.dsc' tiff_4.0.3-12.3+deb8u2.dsc 2240 SHA256:6a2dd52c52bccdc8404be32a55c2e26fa0077736a5d8e3644123e6155866ac45
+$ apt-get source -qq --print-uris tiff=4.0.3-12.3+deb8u3
+'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u3.dsc' tiff_4.0.3-12.3+deb8u3.dsc 2240 SHA256:b28cf94a08ce2b4412818fca5b2cf76eccc6c5be9959dbe3e0cb8813c86ec19e
 'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
-'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u2.debian.tar.xz' tiff_4.0.3-12.3+deb8u2.debian.tar.xz 43512 SHA256:0f5eb5da8fd6c9b334db2cb715e9c747e1173e5f9288daeb2036108f9cfefb90
+'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u3.debian.tar.xz' tiff_4.0.3-12.3+deb8u3.debian.tar.xz 54732 SHA256:e40cde6d95c4243c73f6d8a927f4c32cf31cbcca9a3614280822811d52576fe8
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u2/
-- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u3/
+- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tzdata=2017b-0+deb8u1`
 
