@@ -2,8 +2,8 @@
 
 # Tags of `kibana`
 
--	[`kibana:5.3.2`](#kibana532)
--	[`kibana:5.3`](#kibana53)
+-	[`kibana:5.4.0`](#kibana540)
+-	[`kibana:5.4`](#kibana54)
 -	[`kibana:5`](#kibana5)
 -	[`kibana:latest`](#kibanalatest)
 -	[`kibana:4.6.4`](#kibana464)
@@ -12,22 +12,22 @@
 -	[`kibana:4.1.11`](#kibana4111)
 -	[`kibana:4.1`](#kibana41)
 
-## `kibana:5.3.2`
+## `kibana:5.4.0`
 
 ```console
-$ docker pull kibana@sha256:6daa5c381553bf4707b240096f0f2b5f899b5e12e05c94a0b3e1606177175fa8
+$ docker pull kibana@sha256:66d73c282476f45b6fc7e64361ea73091e043373c77581f373135b15cab9c951
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `kibana:5.3.2` - linux; amd64
+### `kibana:5.4.0` - linux; amd64
 
 -	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **115.2 MB (115152939 bytes)**  
+-	Total Size: **130.4 MB (130353218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b1a447f330310d03e8cf5f43989875ea3e5cc6806b8b6a7eaece2939100829ef`
+-	Image ID: `sha256:a3b691540aa67e6c8648904a40e064907976906cb1e9dbef9fd10edf01f52d54`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kibana"]`
 
@@ -52,19 +52,19 @@ RUN set -x 	&& wget -O /usr/local/bin/tini "https://github.com/krallin/tini/rele
 RUN set -ex; 	key='46095ACC8548582C1A2699A9D27D666CD88E42B4'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/elastic.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
 # Mon, 24 Apr 2017 23:43:50 GMT
 RUN echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' > /etc/apt/sources.list.d/kibana.list
-# Mon, 01 May 2017 18:22:30 GMT
-ENV KIBANA_VERSION=5.3.2
-# Mon, 01 May 2017 18:22:48 GMT
+# Fri, 05 May 2017 20:19:29 GMT
+ENV KIBANA_VERSION=5.4.0
+# Fri, 05 May 2017 20:20:01 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends kibana=$KIBANA_VERSION 	&& rm -rf /var/lib/apt/lists/* 		&& sed -ri "s!^(\#\s*)?(server\.host:).*!\2 '0.0.0.0'!" /etc/kibana/kibana.yml 	&& grep -q "^server\.host: '0.0.0.0'\$" /etc/kibana/kibana.yml 		&& sed -ri "s!^(\#\s*)?(elasticsearch\.url:).*!\2 'http://elasticsearch:9200'!" /etc/kibana/kibana.yml 	&& grep -q "^elasticsearch\.url: 'http://elasticsearch:9200'\$" /etc/kibana/kibana.yml
-# Mon, 01 May 2017 18:22:49 GMT
+# Fri, 05 May 2017 20:20:05 GMT
 ENV PATH=/usr/share/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 01 May 2017 18:22:50 GMT
+# Fri, 05 May 2017 20:20:06 GMT
 COPY file:9a3ed3a1655d5afa631fded5211f1c33f5f49f1d1e0e0d9a031c9e8601111f05 in / 
-# Mon, 01 May 2017 18:22:51 GMT
+# Fri, 05 May 2017 20:20:06 GMT
 EXPOSE 5601/tcp
-# Mon, 01 May 2017 18:22:52 GMT
+# Fri, 05 May 2017 20:20:07 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 01 May 2017 18:22:52 GMT
+# Fri, 05 May 2017 20:20:08 GMT
 CMD ["kibana"]
 ```
 
@@ -97,31 +97,31 @@ CMD ["kibana"]
 		Last Modified: Tue, 25 Apr 2017 00:10:39 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a3a9ae6dfb1e182491c5548d4fb0da654a759f51d91392b82fc1fb080cde79d`  
-		Last Modified: Mon, 01 May 2017 18:23:23 GMT  
-		Size: 39.4 MB (39362074 bytes)  
+	-	`sha256:166c35b86959675673ca9f435d083e76dbe022bd55abc72e09f84eea0eca0ea1`  
+		Last Modified: Fri, 05 May 2017 20:20:46 GMT  
+		Size: 54.6 MB (54562355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69d5b82fbb210ef11a0961c44cb841b8f6fe03112e7bff2a4ae7f61d8da0c681`  
-		Last Modified: Mon, 01 May 2017 18:23:15 GMT  
-		Size: 338.0 B  
+	-	`sha256:4e30f93f32a4c4bc8ed698db9c39ee13481e9ed1db87dde3f9ce6b0538285a1f`  
+		Last Modified: Fri, 05 May 2017 20:20:32 GMT  
+		Size: 336.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `kibana:5.3`
+## `kibana:5.4`
 
 ```console
-$ docker pull kibana@sha256:6daa5c381553bf4707b240096f0f2b5f899b5e12e05c94a0b3e1606177175fa8
+$ docker pull kibana@sha256:66d73c282476f45b6fc7e64361ea73091e043373c77581f373135b15cab9c951
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `kibana:5.3` - linux; amd64
+### `kibana:5.4` - linux; amd64
 
 -	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **115.2 MB (115152939 bytes)**  
+-	Total Size: **130.4 MB (130353218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b1a447f330310d03e8cf5f43989875ea3e5cc6806b8b6a7eaece2939100829ef`
+-	Image ID: `sha256:a3b691540aa67e6c8648904a40e064907976906cb1e9dbef9fd10edf01f52d54`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kibana"]`
 
@@ -146,19 +146,19 @@ RUN set -x 	&& wget -O /usr/local/bin/tini "https://github.com/krallin/tini/rele
 RUN set -ex; 	key='46095ACC8548582C1A2699A9D27D666CD88E42B4'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/elastic.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
 # Mon, 24 Apr 2017 23:43:50 GMT
 RUN echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' > /etc/apt/sources.list.d/kibana.list
-# Mon, 01 May 2017 18:22:30 GMT
-ENV KIBANA_VERSION=5.3.2
-# Mon, 01 May 2017 18:22:48 GMT
+# Fri, 05 May 2017 20:19:29 GMT
+ENV KIBANA_VERSION=5.4.0
+# Fri, 05 May 2017 20:20:01 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends kibana=$KIBANA_VERSION 	&& rm -rf /var/lib/apt/lists/* 		&& sed -ri "s!^(\#\s*)?(server\.host:).*!\2 '0.0.0.0'!" /etc/kibana/kibana.yml 	&& grep -q "^server\.host: '0.0.0.0'\$" /etc/kibana/kibana.yml 		&& sed -ri "s!^(\#\s*)?(elasticsearch\.url:).*!\2 'http://elasticsearch:9200'!" /etc/kibana/kibana.yml 	&& grep -q "^elasticsearch\.url: 'http://elasticsearch:9200'\$" /etc/kibana/kibana.yml
-# Mon, 01 May 2017 18:22:49 GMT
+# Fri, 05 May 2017 20:20:05 GMT
 ENV PATH=/usr/share/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 01 May 2017 18:22:50 GMT
+# Fri, 05 May 2017 20:20:06 GMT
 COPY file:9a3ed3a1655d5afa631fded5211f1c33f5f49f1d1e0e0d9a031c9e8601111f05 in / 
-# Mon, 01 May 2017 18:22:51 GMT
+# Fri, 05 May 2017 20:20:06 GMT
 EXPOSE 5601/tcp
-# Mon, 01 May 2017 18:22:52 GMT
+# Fri, 05 May 2017 20:20:07 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 01 May 2017 18:22:52 GMT
+# Fri, 05 May 2017 20:20:08 GMT
 CMD ["kibana"]
 ```
 
@@ -191,19 +191,19 @@ CMD ["kibana"]
 		Last Modified: Tue, 25 Apr 2017 00:10:39 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a3a9ae6dfb1e182491c5548d4fb0da654a759f51d91392b82fc1fb080cde79d`  
-		Last Modified: Mon, 01 May 2017 18:23:23 GMT  
-		Size: 39.4 MB (39362074 bytes)  
+	-	`sha256:166c35b86959675673ca9f435d083e76dbe022bd55abc72e09f84eea0eca0ea1`  
+		Last Modified: Fri, 05 May 2017 20:20:46 GMT  
+		Size: 54.6 MB (54562355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69d5b82fbb210ef11a0961c44cb841b8f6fe03112e7bff2a4ae7f61d8da0c681`  
-		Last Modified: Mon, 01 May 2017 18:23:15 GMT  
-		Size: 338.0 B  
+	-	`sha256:4e30f93f32a4c4bc8ed698db9c39ee13481e9ed1db87dde3f9ce6b0538285a1f`  
+		Last Modified: Fri, 05 May 2017 20:20:32 GMT  
+		Size: 336.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `kibana:5`
 
 ```console
-$ docker pull kibana@sha256:6daa5c381553bf4707b240096f0f2b5f899b5e12e05c94a0b3e1606177175fa8
+$ docker pull kibana@sha256:66d73c282476f45b6fc7e64361ea73091e043373c77581f373135b15cab9c951
 ```
 
 -	Platforms:
@@ -213,9 +213,9 @@ $ docker pull kibana@sha256:6daa5c381553bf4707b240096f0f2b5f899b5e12e05c94a0b3e1
 
 -	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **115.2 MB (115152939 bytes)**  
+-	Total Size: **130.4 MB (130353218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b1a447f330310d03e8cf5f43989875ea3e5cc6806b8b6a7eaece2939100829ef`
+-	Image ID: `sha256:a3b691540aa67e6c8648904a40e064907976906cb1e9dbef9fd10edf01f52d54`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kibana"]`
 
@@ -240,19 +240,19 @@ RUN set -x 	&& wget -O /usr/local/bin/tini "https://github.com/krallin/tini/rele
 RUN set -ex; 	key='46095ACC8548582C1A2699A9D27D666CD88E42B4'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/elastic.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
 # Mon, 24 Apr 2017 23:43:50 GMT
 RUN echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' > /etc/apt/sources.list.d/kibana.list
-# Mon, 01 May 2017 18:22:30 GMT
-ENV KIBANA_VERSION=5.3.2
-# Mon, 01 May 2017 18:22:48 GMT
+# Fri, 05 May 2017 20:19:29 GMT
+ENV KIBANA_VERSION=5.4.0
+# Fri, 05 May 2017 20:20:01 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends kibana=$KIBANA_VERSION 	&& rm -rf /var/lib/apt/lists/* 		&& sed -ri "s!^(\#\s*)?(server\.host:).*!\2 '0.0.0.0'!" /etc/kibana/kibana.yml 	&& grep -q "^server\.host: '0.0.0.0'\$" /etc/kibana/kibana.yml 		&& sed -ri "s!^(\#\s*)?(elasticsearch\.url:).*!\2 'http://elasticsearch:9200'!" /etc/kibana/kibana.yml 	&& grep -q "^elasticsearch\.url: 'http://elasticsearch:9200'\$" /etc/kibana/kibana.yml
-# Mon, 01 May 2017 18:22:49 GMT
+# Fri, 05 May 2017 20:20:05 GMT
 ENV PATH=/usr/share/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 01 May 2017 18:22:50 GMT
+# Fri, 05 May 2017 20:20:06 GMT
 COPY file:9a3ed3a1655d5afa631fded5211f1c33f5f49f1d1e0e0d9a031c9e8601111f05 in / 
-# Mon, 01 May 2017 18:22:51 GMT
+# Fri, 05 May 2017 20:20:06 GMT
 EXPOSE 5601/tcp
-# Mon, 01 May 2017 18:22:52 GMT
+# Fri, 05 May 2017 20:20:07 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 01 May 2017 18:22:52 GMT
+# Fri, 05 May 2017 20:20:08 GMT
 CMD ["kibana"]
 ```
 
@@ -285,19 +285,19 @@ CMD ["kibana"]
 		Last Modified: Tue, 25 Apr 2017 00:10:39 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a3a9ae6dfb1e182491c5548d4fb0da654a759f51d91392b82fc1fb080cde79d`  
-		Last Modified: Mon, 01 May 2017 18:23:23 GMT  
-		Size: 39.4 MB (39362074 bytes)  
+	-	`sha256:166c35b86959675673ca9f435d083e76dbe022bd55abc72e09f84eea0eca0ea1`  
+		Last Modified: Fri, 05 May 2017 20:20:46 GMT  
+		Size: 54.6 MB (54562355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69d5b82fbb210ef11a0961c44cb841b8f6fe03112e7bff2a4ae7f61d8da0c681`  
-		Last Modified: Mon, 01 May 2017 18:23:15 GMT  
-		Size: 338.0 B  
+	-	`sha256:4e30f93f32a4c4bc8ed698db9c39ee13481e9ed1db87dde3f9ce6b0538285a1f`  
+		Last Modified: Fri, 05 May 2017 20:20:32 GMT  
+		Size: 336.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `kibana:latest`
 
 ```console
-$ docker pull kibana@sha256:6daa5c381553bf4707b240096f0f2b5f899b5e12e05c94a0b3e1606177175fa8
+$ docker pull kibana@sha256:66d73c282476f45b6fc7e64361ea73091e043373c77581f373135b15cab9c951
 ```
 
 -	Platforms:
@@ -307,9 +307,9 @@ $ docker pull kibana@sha256:6daa5c381553bf4707b240096f0f2b5f899b5e12e05c94a0b3e1
 
 -	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **115.2 MB (115152939 bytes)**  
+-	Total Size: **130.4 MB (130353218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b1a447f330310d03e8cf5f43989875ea3e5cc6806b8b6a7eaece2939100829ef`
+-	Image ID: `sha256:a3b691540aa67e6c8648904a40e064907976906cb1e9dbef9fd10edf01f52d54`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["kibana"]`
 
@@ -334,19 +334,19 @@ RUN set -x 	&& wget -O /usr/local/bin/tini "https://github.com/krallin/tini/rele
 RUN set -ex; 	key='46095ACC8548582C1A2699A9D27D666CD88E42B4'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/elastic.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
 # Mon, 24 Apr 2017 23:43:50 GMT
 RUN echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' > /etc/apt/sources.list.d/kibana.list
-# Mon, 01 May 2017 18:22:30 GMT
-ENV KIBANA_VERSION=5.3.2
-# Mon, 01 May 2017 18:22:48 GMT
+# Fri, 05 May 2017 20:19:29 GMT
+ENV KIBANA_VERSION=5.4.0
+# Fri, 05 May 2017 20:20:01 GMT
 RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends kibana=$KIBANA_VERSION 	&& rm -rf /var/lib/apt/lists/* 		&& sed -ri "s!^(\#\s*)?(server\.host:).*!\2 '0.0.0.0'!" /etc/kibana/kibana.yml 	&& grep -q "^server\.host: '0.0.0.0'\$" /etc/kibana/kibana.yml 		&& sed -ri "s!^(\#\s*)?(elasticsearch\.url:).*!\2 'http://elasticsearch:9200'!" /etc/kibana/kibana.yml 	&& grep -q "^elasticsearch\.url: 'http://elasticsearch:9200'\$" /etc/kibana/kibana.yml
-# Mon, 01 May 2017 18:22:49 GMT
+# Fri, 05 May 2017 20:20:05 GMT
 ENV PATH=/usr/share/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 01 May 2017 18:22:50 GMT
+# Fri, 05 May 2017 20:20:06 GMT
 COPY file:9a3ed3a1655d5afa631fded5211f1c33f5f49f1d1e0e0d9a031c9e8601111f05 in / 
-# Mon, 01 May 2017 18:22:51 GMT
+# Fri, 05 May 2017 20:20:06 GMT
 EXPOSE 5601/tcp
-# Mon, 01 May 2017 18:22:52 GMT
+# Fri, 05 May 2017 20:20:07 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 01 May 2017 18:22:52 GMT
+# Fri, 05 May 2017 20:20:08 GMT
 CMD ["kibana"]
 ```
 
@@ -379,13 +379,13 @@ CMD ["kibana"]
 		Last Modified: Tue, 25 Apr 2017 00:10:39 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a3a9ae6dfb1e182491c5548d4fb0da654a759f51d91392b82fc1fb080cde79d`  
-		Last Modified: Mon, 01 May 2017 18:23:23 GMT  
-		Size: 39.4 MB (39362074 bytes)  
+	-	`sha256:166c35b86959675673ca9f435d083e76dbe022bd55abc72e09f84eea0eca0ea1`  
+		Last Modified: Fri, 05 May 2017 20:20:46 GMT  
+		Size: 54.6 MB (54562355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69d5b82fbb210ef11a0961c44cb841b8f6fe03112e7bff2a4ae7f61d8da0c681`  
-		Last Modified: Mon, 01 May 2017 18:23:15 GMT  
-		Size: 338.0 B  
+	-	`sha256:4e30f93f32a4c4bc8ed698db9c39ee13481e9ed1db87dde3f9ce6b0538285a1f`  
+		Last Modified: Fri, 05 May 2017 20:20:32 GMT  
+		Size: 336.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `kibana:4.6.4`
