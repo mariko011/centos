@@ -2,13 +2,13 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e5b15e801d8438313b3fc377e18b7bacee6f49d3748303ace53ea92257529afa`
-- Created: `2017-03-28T16:43:25.68772711Z`
-- Virtual Size: ~ 317.19 Mb  
+- Image ID: `sha256:109e535ab80c48f62ceb0f06dee707a9f22e054401e3c962527ba9d24cb6e8f4`
+- Created: `2017-05-02T17:54:45.102434611Z`
+- Virtual Size: ~ 317.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["kong","start"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `KONG_VERSION=0.10.1`
+  - `KONG_VERSION=0.10.2`
