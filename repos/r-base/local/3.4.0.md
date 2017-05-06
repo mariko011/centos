@@ -910,15 +910,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris freetype=2.6.3-3.1
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.6.3-3.1.dsc' freetype_2.6.3-3.1.dsc 2292 SHA256:68fe770dd2f3e9cb5cfe9d81ee3c14da5bd1d0ae4664cfe85f553ce21793e406
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.6.3.orig.tar.gz' freetype_2.6.3.orig.tar.gz 7313547 SHA256:814a22aad85e8ca2cb4acfc2e9dc59caa6eded4f6619590f7bd0a721e4b076a3
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.6.3-3.1.diff.gz' freetype_2.6.3-3.1.diff.gz 38955 SHA256:26b01410c4a9a41e8f35d85cc1bbd175338a0963ad1a2b9a48ad875ba0d4a994
+'http://http.debian.net/debian/pool/main/f/freetype/freetype_2.6.3-3.1.dsc' freetype_2.6.3-3.1.dsc 2292 SHA256:68fe770dd2f3e9cb5cfe9d81ee3c14da5bd1d0ae4664cfe85f553ce21793e406
+'http://http.debian.net/debian/pool/main/f/freetype/freetype_2.6.3.orig.tar.gz' freetype_2.6.3.orig.tar.gz 7313547 SHA256:814a22aad85e8ca2cb4acfc2e9dc59caa6eded4f6619590f7bd0a721e4b076a3
+'http://http.debian.net/debian/pool/main/f/freetype/freetype_2.6.3-3.1.diff.gz' freetype_2.6.3-3.1.diff.gz 38955 SHA256:26b01410c4a9a41e8f35d85cc1bbd175338a0963ad1a2b9a48ad875ba0d4a994
 ```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/freetype/2.6.3-3.1/
-- https://sources.debian.net/src/freetype/2.6.3-3.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-6=6.3.0-14`
 
@@ -2754,14 +2749,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.21.1-1
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.21.1-1.dsc' nghttp2_1.21.1-1.dsc 2275 SHA256:30ac9568b8755d15e9b89368b13aea51c0b729823a8680fe859ce262a3d0c5a2
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.21.1.orig.tar.bz2' nghttp2_1.21.1.orig.tar.bz2 1798658 SHA256:10e3dd2f536934352bdf137a86a61d331159d08c1a501df384cc6d69992eb26d
-'http://http.debian.net/debian/pool/main/n/nghttp2/nghttp2_1.21.1-1.debian.tar.xz' nghttp2_1.21.1-1.debian.tar.xz 11884 SHA256:9abf154e74fd764e302b8436b93b050c522e49f06857f3d23e450736491b9ac2
-```
 
 ### `dpkg` source package: `nlme=3.1.131-2`
 
