@@ -2588,18 +2588,8 @@ Licenses: (parsed from: `/usr/share/doc/x11-common/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris xorg=1:7.7+18
-'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7+18.dsc' xorg_7.7+18.dsc 2016 SHA256:c4153fe30e39514f42850fe755f6c3061d033cc39de1b0699fb323efb031965b
-'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7+18.tar.gz' xorg_7.7+18.tar.gz 288649 SHA256:5ad85af315eab218a146484a15297f3ded2aecb8e8504a110bb494ed09d24de2
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/xorg/1:7.7+18/
-- https://sources.debian.net/src/xorg/1:7.7+18/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `xz-utils=5.2.2-1.2`
 
