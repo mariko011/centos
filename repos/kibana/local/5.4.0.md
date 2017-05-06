@@ -1,10 +1,10 @@
-# `kibana:5.3.1`
+# `kibana:5.4.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:dfa40297642ef023a389e2c32941425e068262ead6baaaed03ba4c69cb3f929d`
-- Created: `2017-04-25T00:10:17.487546328Z`
-- Virtual Size: ~ 328.02 Mb  
+- Image ID: `sha256:a3b691540aa67e6c8648904a40e064907976906cb1e9dbef9fd10edf01f52d54`
+- Created: `2017-05-05T20:20:08.452729878Z`
+- Virtual Size: ~ 396.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -13,4 +13,4 @@
   - `PATH=/usr/share/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.7`
   - `TINI_VERSION=v0.9.0`
-  - `KIBANA_VERSION=5.3.1`
+  - `KIBANA_VERSION=5.4.0`
