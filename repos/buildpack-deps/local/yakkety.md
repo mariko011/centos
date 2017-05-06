@@ -1581,14 +1581,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris icu=57.1-4ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_57.1-4ubuntu0.1.dsc' icu_57.1-4ubuntu0.1.dsc 2206 SHA256:e8e003e890b1a57f538aad68a532f5386c8de5145593bb20c0cef99341e59c80
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_57.1.orig.tar.gz' icu_57.1.orig.tar.gz 22360664 SHA256:ff8c67cb65949b1e7808f2359f2b80f722697048e90e7cfc382ec1fe229e9581
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_57.1-4ubuntu0.1.debian.tar.xz' icu_57.1-4ubuntu0.1.debian.tar.xz 30780 SHA256:9d65aa2e5da0c804c7cc4886954860d5d3605e9daf0770055febdb0601ad1270
-```
 
 ### `dpkg` source package: `ilmbase=2.2.0-11ubuntu2`
 
@@ -2896,9 +2890,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=4.8.0-49.52
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0-49.52.dsc' linux_4.8.0-49.52.dsc 8840 SHA256:11c062e473821ddd10121a1a9f5a83b9f293945de985cbc99a8fc4f1171cc153
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0.orig.tar.gz' linux_4.8.0.orig.tar.gz 139977270 SHA256:80229497a1584076d534e96acf529a01a0fc00044eba9e6c00ae936e453dbd3c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0-49.52.diff.gz' linux_4.8.0-49.52.diff.gz 9831444 SHA256:72e157bd591f5ea769babf1405f668e7b2a2c241a9f3f410046b40e002579cf3
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0-49.52.dsc' linux_4.8.0-49.52.dsc 8840 SHA256:11c062e473821ddd10121a1a9f5a83b9f293945de985cbc99a8fc4f1171cc153
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0.orig.tar.gz' linux_4.8.0.orig.tar.gz 139977270 SHA256:80229497a1584076d534e96acf529a01a0fc00044eba9e6c00ae936e453dbd3c
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0-49.52.diff.gz' linux_4.8.0-49.52.diff.gz 9831444 SHA256:72e157bd591f5ea769babf1405f668e7b2a2c241a9f3f410046b40e002579cf3
 ```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu5`
