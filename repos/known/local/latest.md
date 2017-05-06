@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:18d745b4a25ae7e20958adbf672215d622e9c6ff69f1aad0703be6e0d7a5fb53`
-- Created: `2017-04-25T10:50:40.079591819Z`
-- Virtual Size: ~ 537.27 Mb  
+- Image ID: `sha256:99297beac23b150873994588268bf8618c7e16603f99c9b88537f2e4b324f8c8`
+- Created: `2017-05-05T22:44:48.394675399Z`
+- Virtual Size: ~ 537.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -749,12 +749,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/findutils/4.4.2-9/
 - https://sources.debian.net/src/findutils/4.4.2-9/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `freetype=2.5.2-3+deb8u1`
+### `dpkg` source package: `freetype=2.5.2-3+deb8u2`
 
 Binary Packages:
 
-- `libfreetype6:amd64=2.5.2-3+deb8u1`
-- `libfreetype6-dev=2.5.2-3+deb8u1`
+- `libfreetype6:amd64=2.5.2-3+deb8u2`
+- `libfreetype6-dev=2.5.2-3+deb8u2`
 
 Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`, `/usr/share/doc/libfreetype6-dev/copyright`)
 
@@ -770,16 +770,16 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris freetype=2.5.2-3+deb8u1
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.5.2-3+deb8u1.dsc' freetype_2.5.2-3+deb8u1.dsc 2096 SHA256:a56cdf04463a7d9b13c1a2fd1c257b9626f28516efc7243fd2ee34eae2f14a13
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.5.2.orig.tar.gz' freetype_2.5.2.orig.tar.gz 1971155 SHA256:5fda4996e43cfdf9b602a0eb5abde014f1a3c3b2d82bbb9b86942011c63f5c3a
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.5.2-3+deb8u1.diff.gz' freetype_2.5.2-3+deb8u1.diff.gz 68796 SHA256:196918fc99a74441d7f7e6e85133b0ba7d6b85b2d5b5cd764fc32edd7dd97923
+$ apt-get source -qq --print-uris freetype=2.5.2-3+deb8u2
+'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.5.2-3+deb8u2.dsc' freetype_2.5.2-3+deb8u2.dsc 2283 SHA256:e63b0cc18482fe5971880271c2dbacd6957288608fef8c40fe127db79a9008dd
+'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.5.2.orig.tar.gz' freetype_2.5.2.orig.tar.gz 1971155 SHA256:5fda4996e43cfdf9b602a0eb5abde014f1a3c3b2d82bbb9b86942011c63f5c3a
+'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.5.2-3+deb8u2.diff.gz' freetype_2.5.2-3+deb8u2.diff.gz 70170 SHA256:0247f57efcb83b208fc1967520a53ecf21c5aca9ee2c433238914622e6938259
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/freetype/2.5.2-3+deb8u1/
-- https://sources.debian.net/src/freetype/2.5.2-3+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/freetype/2.5.2-3+deb8u2/
+- https://sources.debian.net/src/freetype/2.5.2-3+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-4.8=4.8.4-1`
 
@@ -2193,14 +2193,14 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/mpfr4/3.1.2-2/
 - https://sources.debian.net/src/mpfr4/3.1.2-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `mysql-5.5=5.5.54-0+deb8u1`
+### `dpkg` source package: `mysql-5.5=5.5.55-0+deb8u1`
 
 Binary Packages:
 
-- `libmysqlclient18:amd64=5.5.54-0+deb8u1`
-- `mysql-client=5.5.54-0+deb8u1`
-- `mysql-client-5.5=5.5.54-0+deb8u1`
-- `mysql-common=5.5.54-0+deb8u1`
+- `libmysqlclient18:amd64=5.5.55-0+deb8u1`
+- `mysql-client=5.5.55-0+deb8u1`
+- `mysql-client-5.5=5.5.55-0+deb8u1`
+- `mysql-common=5.5.55-0+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-client/copyright`, `/usr/share/doc/mysql-client-5.5/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -2218,8 +2218,19 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.5=5.5.55-0+deb8u1
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.55-0+deb8u1.dsc' mysql-5.5_5.5.55-0+deb8u1.dsc 3262 SHA256:52cabbff6950dd73e89db86092c84cd658c49f59120af6eab8b35d4a67e92850
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.55.orig.tar.gz' mysql-5.5_5.5.55.orig.tar.gz 21040959 SHA256:9af0a504e2603b0bc0c7c3a4a747df064fb51670a0022b1ad6114f9058b64171
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.55-0+deb8u1.debian.tar.xz' mysql-5.5_5.5.55-0+deb8u1.debian.tar.xz 232772 SHA256:7072d8bf9ffbf40ef82d95c0ff8f87a5ef9f84753946a7e3c1a343bb99750401
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/mysql-5.5/5.5.55-0+deb8u1/
+- https://sources.debian.net/src/mysql-5.5/5.5.55-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ncurses=5.9+20140913-1`
 
