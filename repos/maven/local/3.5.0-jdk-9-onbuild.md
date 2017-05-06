@@ -1287,18 +1287,8 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.47
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.47.dsc' init-system-helpers_1.47.dsc 1945 SHA256:7ebd4ca047297c0487b7aaf647efef8940ed60ba88f92c48d3c5a0050882d874
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.47.tar.xz' init-system-helpers_1.47.tar.xz 43244 SHA256:215a48dcd8346e3ec87b26e7898961cca212c37cd0f07a36251cbd2965211802
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/init-system-helpers/1.47/
-- https://sources.debian.net/src/init-system-helpers/1.47/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `iproute2=4.9.0-1`
 
@@ -2368,19 +2358,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.21.1-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.21.1-1.dsc' nghttp2_1.21.1-1.dsc 2275 SHA256:30ac9568b8755d15e9b89368b13aea51c0b729823a8680fe859ce262a3d0c5a2
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.21.1.orig.tar.bz2' nghttp2_1.21.1.orig.tar.bz2 1798658 SHA256:10e3dd2f536934352bdf137a86a61d331159d08c1a501df384cc6d69992eb26d
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.21.1-1.debian.tar.xz' nghttp2_1.21.1-1.debian.tar.xz 11884 SHA256:9abf154e74fd764e302b8436b93b050c522e49f06857f3d23e450736491b9ac2
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.21.1-1/
-- https://sources.debian.net/src/nghttp2/1.21.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `nspr=2:4.12-6`
 
@@ -3301,18 +3280,8 @@ Licenses: (parsed from: `/usr/share/doc/x11-common/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris xorg=1:7.7+18
-'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7+18.dsc' xorg_7.7+18.dsc 2016 SHA256:c4153fe30e39514f42850fe755f6c3061d033cc39de1b0699fb323efb031965b
-'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7+18.tar.gz' xorg_7.7+18.tar.gz 288649 SHA256:5ad85af315eab218a146484a15297f3ded2aecb8e8504a110bb494ed09d24de2
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/xorg/1:7.7+18/
-- https://sources.debian.net/src/xorg/1:7.7+18/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `xz-utils=5.2.2-1.2`
 
