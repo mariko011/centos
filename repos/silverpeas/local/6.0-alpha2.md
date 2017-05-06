@@ -1513,14 +1513,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris icu=55.1-7ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1-7ubuntu0.1.dsc' icu_55.1-7ubuntu0.1.dsc 2148 SHA256:119d3671a2291dc1c0b6f1cf1fe78dc10d6e56c2394cd4c7f24ce25642ee4697
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1.orig.tar.gz' icu_55.1.orig.tar.gz 25600847 SHA256:e16b22cbefdd354bec114541f7849a12f8fc2015320ca5282ee4fd787571457b
-'http://archive.ubuntu.com/ubuntu/pool/main/i/icu/icu_55.1-7ubuntu0.1.debian.tar.xz' icu_55.1-7ubuntu0.1.debian.tar.xz 27800 SHA256:36312b246a6663165524355795cf9b9f91152b610985fa36c724cbb25b84a68d
-```
 
 ### `dpkg` source package: `ijs=0.35-12`
 
@@ -2715,16 +2709,8 @@ Licenses: (parsed from: `/usr/share/doc/uno-libs3/copyright`, `/usr/share/doc/ur
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libreoffice=1:5.1.6~rc2-0ubuntu1~xenial1
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_5.1.6~rc2-0ubuntu1~xenial1.dsc' libreoffice_5.1.6~rc2-0ubuntu1~xenial1.dsc 15012 SHA256:24b0f1aa3cc776f0bd4b3a9783b5ddfb5dd315568e5d0dcd3b2e0fa05b689c55
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_5.1.6~rc2.orig-src.tar.xz' libreoffice_5.1.6~rc2.orig-src.tar.xz 167395528 SHA256:97365b7193311f32a1e38de537d21c3b50dc35901dddad1a0ab968dbcc09b29e
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_5.1.6~rc2.orig-translations.tar.xz' libreoffice_5.1.6~rc2.orig-translations.tar.xz 134618348 SHA256:1ac60c5060d9f1073169a239efca8c85d8e0355623897dc795bb4de43fa4bc29
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_5.1.6~rc2.orig.tar.xz' libreoffice_5.1.6~rc2.orig.tar.xz 155867604 SHA256:729dcf538e6b825911ba5d24d822e90f76fab0ed5821f81ae60d5800eb0f848d
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_5.1.6~rc2-0ubuntu1~xenial1.debian.tar.xz' libreoffice_5.1.6~rc2-0ubuntu1~xenial1.debian.tar.xz 2094892 SHA256:49ff7c65b67d0cbbe92579ecdbdbec7b0ef0c7df3b8fabc8464cdef4200f9ea4
-```
 
 ### `dpkg` source package: `librsvg=2.40.13-3`
 
