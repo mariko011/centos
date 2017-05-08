@@ -1,10 +1,10 @@
-# `docker:17.04.0-ce-git`
+# `docker:17.05.0-ce-git`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6fb7ae00fce6442d1f6debba68b590c67741234af73328668ff5019d2e9472ec`
-- Created: `2017-04-26T19:34:11.536458061Z`
-- Virtual Size: ~ 112.06 Mb  
+- Image ID: `sha256:f3a9de4dd220138c3314f918b6c2e3238e44fe1923ee636351f3e7e06d53d5f8`
+- Created: `2017-05-05T22:06:00.580522441Z`
+- Virtual Size: ~ 119.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -12,6 +12,6 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_BUCKET=get.docker.com`
-  - `DOCKER_VERSION=17.04.0-ce`
-  - `DOCKER_SHA256_x86_64=c52cff62c4368a978b52e3d03819054d87bcd00d15514934ce2e0e09b99dd100`
-  - `DOCKER_SHA256_armel=9b7df7dc02f620748657d3f599a9701c35f7b0b3d0acbc7fd324126ba5f6c4e9`
+  - `DOCKER_VERSION=17.05.0-ce`
+  - `DOCKER_SHA256_x86_64=340e0b5a009ba70e1b644136b94d13824db0aeb52e09071410f35a95d94316d9`
+  - `DOCKER_SHA256_armel=59bf474090b4b095d19e70bb76305ebfbdb0f18f33aed2fccd16003e500ed1b7`
