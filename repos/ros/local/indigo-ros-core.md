@@ -245,14 +245,8 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris binutils=2.24-5ubuntu14.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.24-5ubuntu14.1.dsc' binutils_2.24-5ubuntu14.1.dsc 2390 SHA256:7c6ef02a14c8ba27a0569b1669c67545f2a7f3c6da6d0f5e8d6ab2b49b4be861
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.24.orig.tar.gz' binutils_2.24.orig.tar.gz 30809913 SHA256:4930b2886309112c00a279483eaef2f0f8e1b1b62010e0239c16b22af7c346d4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.24-5ubuntu14.1.diff.gz' binutils_2.24-5ubuntu14.1.diff.gz 308222 SHA256:2302939dbf38606e68832771c1e2ec50806ab32c89b88e28d1a33c738642fdf7
-```
 
 ### `dpkg` source package: `blas=1.2.20110419-7`
 
@@ -4862,14 +4856,8 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.1.5.1-1ubuntu9.2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.1.5.1-1ubuntu9.2.dsc' shadow_4.1.5.1-1ubuntu9.2.dsc 2393 SHA256:482d95a7fdac21cc6e1a37025a00fb3630c92f882a04c1f65e7cede0f7b7e858
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.1.5.1.orig.tar.gz' shadow_4.1.5.1.orig.tar.gz 3508077 SHA256:ee1986c5fec9f6e7868bcc5329874a72dec74897b598d86eb0532f79471f32f0
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.1.5.1-1ubuntu9.2.diff.gz' shadow_4.1.5.1-1ubuntu9.2.diff.gz 112716 SHA256:3990fdfdbf5f95ccff140f1e5a92272f9598cf479cd2b55031305925df801abd
-```
 
 ### `dpkg` source package: `shared-mime-info=1.2-0ubuntu3`
 
