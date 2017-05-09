@@ -1,10 +1,10 @@
-# `elasticsearch:5.3.2-alpine`
+# `elasticsearch:5.4.0-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c818119f17a4d0e285aa8202b2976a9c6be42feb8e05c9566c472841ac091aba`
-- Created: `2017-05-01T18:13:58.032051047Z`
-- Virtual Size: ~ 123.38 Mb  
+- Image ID: `sha256:32cc94f9b576b3515e4fcb4d5028c9479f994500c1c1356519ae35d4013f517d`
+- Created: `2017-05-05T20:12:14.622841344Z`
+- Virtual Size: ~ 123.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `JAVA_VERSION=8u121`
   - `JAVA_ALPINE_VERSION=8.121.13-r0`
   - `GPG_KEY=46095ACC8548582C1A2699A9D27D666CD88E42B4`
-  - `ELASTICSEARCH_VERSION=5.3.2`
-  - `ELASTICSEARCH_TARBALL=https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.3.2.tar.gz`
-  - `ELASTICSEARCH_TARBALL_ASC=https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.3.2.tar.gz.asc`
-  - `ELASTICSEARCH_TARBALL_SHA1=154e46d304c1226b52b489c9270d793c48b801ec`
+  - `ELASTICSEARCH_VERSION=5.4.0`
+  - `ELASTICSEARCH_TARBALL=https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.4.0.tar.gz`
+  - `ELASTICSEARCH_TARBALL_ASC=https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.4.0.tar.gz.asc`
+  - `ELASTICSEARCH_TARBALL_SHA1=880b115be755a923f25aea810e3386ccb723cc55`
