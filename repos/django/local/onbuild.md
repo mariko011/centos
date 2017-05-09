@@ -1070,19 +1070,8 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`, `/usr/share/doc
 - `GZip`
 - `OpenGroup-BSD-like`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris freetype=2.5.2-3+deb8u1
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.5.2-3+deb8u1.dsc' freetype_2.5.2-3+deb8u1.dsc 2096 SHA256:a56cdf04463a7d9b13c1a2fd1c257b9626f28516efc7243fd2ee34eae2f14a13
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.5.2.orig.tar.gz' freetype_2.5.2.orig.tar.gz 1971155 SHA256:5fda4996e43cfdf9b602a0eb5abde014f1a3c3b2d82bbb9b86942011c63f5c3a
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.5.2-3+deb8u1.diff.gz' freetype_2.5.2-3+deb8u1.diff.gz 68796 SHA256:196918fc99a74441d7f7e6e85133b0ba7d6b85b2d5b5cd764fc32edd7dd97923
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/freetype/2.5.2-3+deb8u1/
-- https://sources.debian.net/src/freetype/2.5.2-3+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-4.8=4.8.4-1`
 
@@ -1671,19 +1660,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris icu=52.1-8+deb8u4
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1-8+deb8u4.dsc' icu_52.1-8+deb8u4.dsc 2015 SHA256:cabdf27f9976550a61f1b5c84d7353f19f3338b55b2b9002f0db593fccda86c7
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1.orig.tar.gz' icu_52.1.orig.tar.gz 23875368 SHA256:2f4d5e68d4698e87759dbdc1a586d053d96935787f79961d192c477b029d8092
-'http://deb.debian.org/debian/pool/main/i/icu/icu_52.1-8+deb8u4.debian.tar.xz' icu_52.1-8+deb8u4.debian.tar.xz 35588 SHA256:cf298a04a576aaa8016d25ebe1387f6c923de1acea4411a27f9858bf1af72f5a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/icu/52.1-8+deb8u4/
-- https://sources.debian.net/src/icu/52.1-8+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ilmbase=1.0.1-6.1`
 
@@ -1744,19 +1722,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.8.9.9-5+deb8u6
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u6.dsc' imagemagick_6.8.9.9-5+deb8u6.dsc 4210 SHA256:babf8af8eee5385a9d3218bae44dd5cc4677640cfd0e0538ed5a7e893e00643e
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.8.9.9.orig.tar.xz' imagemagick_6.8.9.9.orig.tar.xz 7891624 SHA256:a4cccc70179ff2c67550e063cdcb2e62907338ef3e68b45bb1c41931e515b3eb
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u6.debian.tar.xz' imagemagick_6.8.9.9-5+deb8u6.debian.tar.xz 260404 SHA256:aaaa5857f9002ef6c9cccf7dfdef6d2de3d2167f2f5b57a9fcefb95295de17b9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u6/
-- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9.2.39.3a460-3`
 
@@ -1899,19 +1866,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris jasper=1.900.1-debian1-2.4+deb8u1
-'http://deb.debian.org/debian/pool/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u1.dsc' jasper_1.900.1-debian1-2.4+deb8u1.dsc 1955 SHA256:52e8e9c7164dad5d3e4f68ae14322b4602255eb7a02af347f97a9592d449c685
-'http://deb.debian.org/debian/pool/main/j/jasper/jasper_1.900.1-debian1.orig.tar.gz' jasper_1.900.1-debian1.orig.tar.gz 1140771 SHA256:7276e8407080d8263b39aeac8305032b0534c7df25bf02718b3944711e3c81d7
-'http://deb.debian.org/debian/pool/main/j/jasper/jasper_1.900.1-debian1-2.4+deb8u1.debian.tar.xz' jasper_1.900.1-debian1-2.4+deb8u1.debian.tar.xz 30260 SHA256:995382b8f98a4226c0555a99a7fef938ef5ab04f646c400485cac07ddc53beb6
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u1/
-- https://sources.debian.net/src/jasper/1.900.1-debian1-2.4+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `jbigkit=2.1-3.1`
 
@@ -2064,19 +2020,8 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`, `/usr/share/doc/l
 - `GPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris lcms2=2.6-3
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.6-3.dsc' lcms2_2.6-3.dsc 2090 SHA256:679674cc000015f583c9813a1514ae8f4ebf2c354657bcc41552bce6a65d6f74
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.6.orig.tar.gz' lcms2_2.6.orig.tar.gz 4583389 SHA256:5172528839647c54c3da211837225e221be93e4733f5b5e9f57668f7107e14b1
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.6-3.debian.tar.xz' lcms2_2.6-3.debian.tar.xz 2416412 SHA256:992bf65f7edc2cd65d00914fe73abdc0d2d70c152c7fe18c001c17a69572ad34
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/lcms2/2.6-3/
-- https://sources.debian.net/src/lcms2/2.6-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libbsd=0.7.0-2`
 
@@ -2322,19 +2267,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libevent=2.0.21-stable-2
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.0.21-stable-2.dsc' libevent_2.0.21-stable-2.dsc 2392 SHA256:1d4bdc39ab31730ebc8c09d29cfd4247238d81294204722a9b038513a17d6992
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.0.21-stable.orig.tar.gz' libevent_2.0.21-stable.orig.tar.gz 850772 SHA256:22a530a8a5ba1cb9c080cba033206b17dacd21437762155c6d30ee6469f574f5
-'http://deb.debian.org/debian/pool/main/libe/libevent/libevent_2.0.21-stable-2.debian.tar.xz' libevent_2.0.21-stable-2.debian.tar.xz 10736 SHA256:34ae24e760a426fd1cf38d372b2b1c5887987bc5705507ef13158fbe61a7492e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libevent/2.0.21-stable-2/
-- https://sources.debian.net/src/libevent/2.0.21-stable-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libexif=0.6.21-2`
 
@@ -3329,19 +3263,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxpm=1:3.5.11-1
-'http://deb.debian.org/debian/pool/main/libx/libxpm/libxpm_3.5.11-1.dsc' libxpm_3.5.11-1.dsc 2110 SHA256:0a11be8c795d991b916bfcbc7b187d1e345048130392946a6995dfc1fd258dea
-'http://deb.debian.org/debian/pool/main/libx/libxpm/libxpm_3.5.11.orig.tar.gz' libxpm_3.5.11.orig.tar.gz 527020 SHA256:53ddf924441b7ed2de994d4934358c13d9abf4828b1b16e1255ade5032b31df7
-'http://deb.debian.org/debian/pool/main/libx/libxpm/libxpm_3.5.11-1.diff.gz' libxpm_3.5.11-1.diff.gz 15272 SHA256:651f287bb39fde1192aec1ecdfc8963119cd8ee6a2b6c4f044a4ffe59df5d371
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libxpm/1:3.5.11-1/
-- https://sources.debian.net/src/libxpm/1:3.5.11-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxrender=1:0.9.8-1`
 
@@ -3383,9 +3306,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libxslt=1.1.28-2+deb8u2
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.28-2+deb8u2.dsc' libxslt_1.1.28-2+deb8u2.dsc 2529 SHA256:e5a1286006f7c9d136f1a2441e4993deb35551ed359d4cb7492d3128835f6f64
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.28.orig.tar.gz' libxslt_1.1.28.orig.tar.gz 3435907 SHA256:5fc7151a57b89c03d7b825df5a0fae0a8d5f05674c0e7cf2937ecec4d54a028c
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.28-2+deb8u2.debian.tar.xz' libxslt_1.1.28-2+deb8u2.debian.tar.xz 37564 SHA256:218aa08affb2a5c8b8935a8b44d09e7727cbf453576b4c3e0886fd86a966cca0
+'http://security.debian.org/pool/updates/main/libx/libxslt/libxslt_1.1.28-2+deb8u2.dsc' libxslt_1.1.28-2+deb8u2.dsc 2529 SHA256:e5a1286006f7c9d136f1a2441e4993deb35551ed359d4cb7492d3128835f6f64
+'http://security.debian.org/pool/updates/main/libx/libxslt/libxslt_1.1.28.orig.tar.gz' libxslt_1.1.28.orig.tar.gz 3435907 SHA256:5fc7151a57b89c03d7b825df5a0fae0a8d5f05674c0e7cf2937ecec4d54a028c
+'http://security.debian.org/pool/updates/main/libx/libxslt/libxslt_1.1.28-2+deb8u2.debian.tar.xz' libxslt_1.1.28-2+deb8u2.debian.tar.xz 37564 SHA256:218aa08affb2a5c8b8935a8b44d09e7727cbf453576b4c3e0886fd86a966cca0
 ```
 
 Likely also available for browsing at:
@@ -3755,19 +3678,8 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mysql-5.5=5.5.53-0+deb8u1
-'http://deb.debian.org/debian/pool/main/m/mysql-5.5/mysql-5.5_5.5.53-0+deb8u1.dsc' mysql-5.5_5.5.53-0+deb8u1.dsc 3233 SHA256:631ee00029cf7403c5b569ec599f97a6e0378af75441f5b6e16030f2b18d9ca5
-'http://deb.debian.org/debian/pool/main/m/mysql-5.5/mysql-5.5_5.5.53.orig.tar.gz' mysql-5.5_5.5.53.orig.tar.gz 21035716 SHA256:a7a86dd42524e698c9dd8dab2520e6e75377cde077ed71eaf5a3b5a3d1f7d6ea
-'http://deb.debian.org/debian/pool/main/m/mysql-5.5/mysql-5.5_5.5.53-0+deb8u1.debian.tar.xz' mysql-5.5_5.5.53-0+deb8u1.debian.tar.xz 232272 SHA256:063d2601b47dc24a3e86acadd1797abfbd09c22ecdbebfe8bff6862d3f0702b0
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mysql-5.5/5.5.53-0+deb8u1/
-- https://sources.debian.net/src/mysql-5.5/5.5.53-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ncurses=5.9+20140913-1`
 
@@ -3930,19 +3842,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl=1.0.1t-1+deb8u5
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u5.dsc' openssl_1.0.1t-1+deb8u5.dsc 2258 SHA256:165eb617542ab1e9bf810c215b586a57b926f3f6977c1a72af752754c7c90bea
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t.orig.tar.gz' openssl_1.0.1t.orig.tar.gz 4556447 SHA256:4a6ee491a2fdb22e519c76fdc2a628bb3cec12762cd456861d207996c8a07088
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.1t-1+deb8u5.debian.tar.xz' openssl_1.0.1t-1+deb8u5.debian.tar.xz 106720 SHA256:c6723fbf370ec5544c9b1753d5ad06d4b343a341560fb8650dda135506312cd9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/
-- https://sources.debian.net/src/openssl/1.0.1t-1+deb8u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
@@ -4422,19 +4323,8 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.2-3+deb8u1
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3+deb8u1.dsc' shadow_4.2-3+deb8u1.dsc 1997 SHA256:70707cb99ecf37c23abf020506dfd4a76834dd334317e3d34addcdee1c8fe8e8
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3+deb8u1.debian.tar.xz' shadow_4.2-3+deb8u1.debian.tar.xz 496336 SHA256:f189d31410ef30fb53dac5373c3973109233a7afb345b237a879f0d32d2511ab
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/shadow/1:4.2-3+deb8u1/
-- https://sources.debian.net/src/shadow/1:4.2-3+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `shared-mime-info=1.3-1`
 
@@ -4724,19 +4614,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.3-12.3+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.3-12.3+deb8u1.dsc' tiff_4.0.3-12.3+deb8u1.dsc 2226 SHA256:eb8d25c4f28aafb3ddbe29d29f91876c13539da38011837ad974f65838cf5fec
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.3-12.3+deb8u1.debian.tar.xz' tiff_4.0.3-12.3+deb8u1.debian.tar.xz 31764 SHA256:a689adbd64ff8220fb095bceface04417068e69d6ec98063db3489f1c02410a6
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u1/
-- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tk8.6=8.6.2-1`
 
@@ -4773,19 +4652,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2016j-0+deb8u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j-0+deb8u1.dsc' tzdata_2016j-0+deb8u1.dsc 1985 SHA256:4330b2616f1d1a79d753af2de9f96f83d782ffdf3b8203f5a1169ca5ad1d8a94
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j.orig.tar.gz' tzdata_2016j.orig.tar.gz 321185 SHA256:f5ee4e0f115f6c2faee1c4b16193a97338cbd1b503f2cea6c5a768c82ff39dc8
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2016j-0+deb8u1.debian.tar.xz' tzdata_2016j-0+deb8u1.debian.tar.xz 102304 SHA256:0089268bc9e247e3d48e046770b873c1c90f7a33259c5bda0f0bef51345f8067
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2016j-0+deb8u1/
-- https://sources.debian.net/src/tzdata/2016j-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ucf=3.0030`
 
@@ -4895,19 +4763,8 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 - `GFDL-1.2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris wget=1.16-1+deb8u1
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.16-1+deb8u1.dsc' wget_1.16-1+deb8u1.dsc 1769 SHA256:b3f36055616985f0d92b43ed6f3a51c8bee585ff84a475e93fe9c38eed32e276
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.16.orig.tar.gz' wget_1.16.orig.tar.gz 3325041 SHA256:b977fc10ac7a72d987d48136251aeb332f2dced1aabd50d6d56bdf72e2b79101
-'http://deb.debian.org/debian/pool/main/w/wget/wget_1.16-1+deb8u1.debian.tar.xz' wget_1.16-1+deb8u1.debian.tar.xz 21696 SHA256:39322969ff614d2a7416d5e9695bb87a09bda99a510d26f536ef3bdda7739bcd
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/wget/1.16-1+deb8u1/
-- https://sources.debian.net/src/wget/1.16-1+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `x11proto-core=7.0.26-1`
 
