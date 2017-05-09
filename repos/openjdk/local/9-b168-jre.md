@@ -1,19 +1,19 @@
-# `openjdk:9-b161-jre`
+# `openjdk:9-b168-jre`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e018846a439ce082f75a177aaf4aabc45682bfb48525538b909cca80816f1f71`
-- Created: `2017-04-26T23:12:19.656637764Z`
-- Virtual Size: ~ 470.60 Mb  
+- Image ID: `sha256:639d291de531f06c1353d98d7f713ed68cfb4d1f7399efa47801a5c367817cba`
+- Created: `2017-05-08T19:49:26.765927361Z`
+- Virtual Size: ~ 470.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `JAVA_HOME=/usr/lib/jvm/java-9-openjdk-amd64`
-  - `JAVA_VERSION=9~b161`
-  - `JAVA_DEBIAN_VERSION=9~b161-1`
+  - `JAVA_HOME=/docker-java-home`
+  - `JAVA_VERSION=9~b168`
+  - `JAVA_DEBIAN_VERSION=9~b168-1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -771,11 +771,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/findutils/4.6.0+git+20161106-2/
 - https://sources.debian.net/src/findutils/4.6.0+git+20161106-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `freetype=2.6.3-3.1`
+### `dpkg` source package: `freetype=2.6.3-3.2`
 
 Binary Packages:
 
-- `libfreetype6:amd64=2.6.3-3.1`
+- `libfreetype6:amd64=2.6.3-3.2`
 
 Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 
@@ -791,16 +791,16 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris freetype=2.6.3-3.1
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.6.3-3.1.dsc' freetype_2.6.3-3.1.dsc 2292 SHA256:68fe770dd2f3e9cb5cfe9d81ee3c14da5bd1d0ae4664cfe85f553ce21793e406
+$ apt-get source -qq --print-uris freetype=2.6.3-3.2
+'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.6.3-3.2.dsc' freetype_2.6.3-3.2.dsc 2292 SHA256:631d4fa321885bb0b950abc4061eb1a720fd249a14b940e4aa10dd78ce2a19b2
 'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.6.3.orig.tar.gz' freetype_2.6.3.orig.tar.gz 7313547 SHA256:814a22aad85e8ca2cb4acfc2e9dc59caa6eded4f6619590f7bd0a721e4b076a3
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.6.3-3.1.diff.gz' freetype_2.6.3-3.1.diff.gz 38955 SHA256:26b01410c4a9a41e8f35d85cc1bbd175338a0963ad1a2b9a48ad875ba0d4a994
+'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.6.3-3.2.diff.gz' freetype_2.6.3-3.2.diff.gz 40027 SHA256:ca45f666d5bf5bcdadbff72f0c8d7335c36e2174e9fd07ef658a9def6eac6aff
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/freetype/2.6.3-3.1/
-- https://sources.debian.net/src/freetype/2.6.3-3.1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/freetype/2.6.3-3.2/
+- https://sources.debian.net/src/freetype/2.6.3-3.2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-5=5.4.1-8`
 
@@ -2139,11 +2139,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nss/2:3.26.2-1/
 - https://sources.debian.net/src/nss/2:3.26.2-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openjdk-9=9~b161-1`
+### `dpkg` source package: `openjdk-9=9~b168-1`
 
 Binary Packages:
 
-- `openjdk-9-jre-headless:amd64=9~b161-1`
+- `openjdk-9-jre-headless:amd64=9~b168-1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 
@@ -2155,16 +2155,16 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-9=9~b161-1
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b161-1.dsc' openjdk-9_9~b161-1.dsc 4468 SHA256:612d966529c2588c193d51fcf1f29950a894101d36c43e38b5fbb33ae1df3c34
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b161.orig.tar.gz' openjdk-9_9~b161.orig.tar.gz 74645948 SHA256:24894216d540c297a85fb2644cbd9bc778cc20dbb8e16380567662e43102629d
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b161-1.debian.tar.xz' openjdk-9_9~b161-1.debian.tar.xz 196604 SHA256:508789a7767d949398ae6d5316f9180c658560ce915c120bc92ac1c0fe48de5d
+$ apt-get source -qq --print-uris openjdk-9=9~b168-1
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b168-1.dsc' openjdk-9_9~b168-1.dsc 4468 SHA256:94f6a8e210997ea5cf12283d9efd625fe4090f80ccf6895e5ba3e0d817902e7f
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b168.orig.tar.gz' openjdk-9_9~b168.orig.tar.gz 74618116 SHA256:0914d35d498a092b02682ad602f8750d9db5360624419b17f18b31c0fbe0d3fa
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b168-1.debian.tar.xz' openjdk-9_9~b168-1.debian.tar.xz 196388 SHA256:64298fac932da9af5a451838b6e0900107a5cb758e0afa4a2386d07cb8095812
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openjdk-9/9~b161-1/
-- https://sources.debian.net/src/openjdk-9/9~b161-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openjdk-9/9~b168-1/
+- https://sources.debian.net/src/openjdk-9/9~b168-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-4`
 
@@ -2755,18 +2755,28 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/wget/1.19.1-3/
 - https://sources.debian.net/src/wget/1.19.1-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `xorg=1:7.7+18`
+### `dpkg` source package: `xorg=1:7.7+19`
 
 Binary Packages:
 
-- `x11-common=1:7.7+18`
+- `x11-common=1:7.7+19`
 
 Licenses: (parsed from: `/usr/share/doc/x11-common/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris xorg=1:7.7+19
+'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7+19.dsc' xorg_7.7+19.dsc 2016 SHA256:fc4a577eee67f3604c56701e21b28dccd3858da0f110b708ca3359e2718e3d46
+'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7+19.tar.gz' xorg_7.7+19.tar.gz 288723 SHA256:5de6df9e19009450b94f4f5307049bc2c7dc1114222f6f2f6fc60d737a33a537
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/xorg/1:7.7+19/
+- https://sources.debian.net/src/xorg/1:7.7+19/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `xz-utils=5.2.2-1.2`
 

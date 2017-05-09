@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:eefa59a91ddf0e057bb5b590d5d60b5ac0e83efe888d874d29365cefb8ec9219`
-- Created: `2017-04-26T23:06:05.853914836Z`
+- Image ID: `sha256:d0b0e34665cf2df93529ad2ababa57a3b53548df1be6f36a93c79ec320220cab`
+- Created: `2017-05-05T22:23:03.619004299Z`
 - Virtual Size: ~ 195.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64/jre`
+  - `JAVA_HOME=/docker-java-home/jre`
   - `JAVA_VERSION=6b38`
   - `JAVA_DEBIAN_VERSION=6b38-1.13.10-1~deb7u1`
 
@@ -704,18 +704,8 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 - `GZip`
 - `OpenGroup-BSD-like`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris freetype=2.4.9-1.1+deb7u6
-'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u6.dsc' freetype_2.4.9-1.1+deb7u6.dsc 1823 SHA256:66768255d1c807e0879ae1f2d01456e36d0f3f46f57204d930e2be1aefff2580
-'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u6.tar.gz' freetype_2.4.9-1.1+deb7u6.tar.gz 1831737 SHA256:26bf7f2f4d79e32002d02a9eefa2041a661dd0fb163f8b4090d9ba166a8a5548
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u6/
-- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-4.7=4.7.2-5`
 

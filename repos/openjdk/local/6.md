@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4bbd3d0a7dc76ddf5459d59affcffdbb89cd0d62a8e0e772743fe1aa626f9c99`
-- Created: `2017-04-26T23:05:33.374861911Z`
+- Image ID: `sha256:5424c38713a1bce12519eaea861135a6427d3016574676f9df39cf0737a1d7c4`
+- Created: `2017-05-05T22:21:52.308835588Z`
 - Virtual Size: ~ 420.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64`
+  - `JAVA_HOME=/docker-java-home`
   - `JAVA_VERSION=6b38`
   - `JAVA_DEBIAN_VERSION=6b38-1.13.10-1~deb7u1`
 
@@ -927,18 +927,8 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 - `GZip`
 - `OpenGroup-BSD-like`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris freetype=2.4.9-1.1+deb7u6
-'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u6.dsc' freetype_2.4.9-1.1+deb7u6.dsc 1823 SHA256:66768255d1c807e0879ae1f2d01456e36d0f3f46f57204d930e2be1aefff2580
-'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u6.tar.gz' freetype_2.4.9-1.1+deb7u6.tar.gz 1831737 SHA256:26bf7f2f4d79e32002d02a9eefa2041a661dd0fb163f8b4090d9ba166a8a5548
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u6/
-- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-4.7=4.7.2-5`
 
@@ -2118,11 +2108,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libsm/2:1.2.1-2/
 - https://sources.debian.net/src/libsm/2:1.2.1-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libsndfile=1.0.25-5`
+### `dpkg` source package: `libsndfile=1.0.25-9.1+deb7u1`
 
 Binary Packages:
 
-- `libsndfile1:amd64=1.0.25-5`
+- `libsndfile1:amd64=1.0.25-9.1+deb7u1`
 
 Licenses: (parsed from: `/usr/share/doc/libsndfile1/copyright`)
 
@@ -2131,16 +2121,16 @@ Licenses: (parsed from: `/usr/share/doc/libsndfile1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libsndfile=1.0.25-5
-'http://deb.debian.org/debian/pool/main/libs/libsndfile/libsndfile_1.0.25-5.dsc' libsndfile_1.0.25-5.dsc 1334 SHA256:ed9abf4cacf9abf04ea566093596cefdad8b72c07371b223a3ede3ff26ef39a1
-'http://deb.debian.org/debian/pool/main/libs/libsndfile/libsndfile_1.0.25.orig.tar.gz' libsndfile_1.0.25.orig.tar.gz 1060692 SHA256:59016dbd326abe7e2366ded5c344c853829bebfd1702ef26a07ef662d6aa4882
-'http://deb.debian.org/debian/pool/main/libs/libsndfile/libsndfile_1.0.25-5.debian.tar.gz' libsndfile_1.0.25-5.debian.tar.gz 9724 SHA256:10015da975c6346a75588a76464933ec23cc6e1c2f7438fce6c3098e330c32fe
+$ apt-get source -qq --print-uris libsndfile=1.0.25-9.1+deb7u1
+'http://security.debian.org/pool/updates/main/libs/libsndfile/libsndfile_1.0.25-9.1+deb7u1.dsc' libsndfile_1.0.25-9.1+deb7u1.dsc 2010 SHA256:15d3e717f0e9ee0f574df8c9c12a5f9d990efd37febbe36d8b7c088e9f55cba9
+'http://security.debian.org/pool/updates/main/libs/libsndfile/libsndfile_1.0.25.orig.tar.gz' libsndfile_1.0.25.orig.tar.gz 1060692 SHA256:59016dbd326abe7e2366ded5c344c853829bebfd1702ef26a07ef662d6aa4882
+'http://security.debian.org/pool/updates/main/libs/libsndfile/libsndfile_1.0.25-9.1+deb7u1.debian.tar.gz' libsndfile_1.0.25-9.1+deb7u1.debian.tar.gz 18274 SHA256:e7b83ff6f4609cc801ef77a1cf29ca10764e013bf05c28af009ee7ac3e414933
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libsndfile/1.0.25-5/
-- https://sources.debian.net/src/libsndfile/1.0.25-5/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libsndfile/1.0.25-9.1+deb7u1/
+- https://sources.debian.net/src/libsndfile/1.0.25-9.1+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libssh2=1.4.2-1.1+deb7u2`
 
