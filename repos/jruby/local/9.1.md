@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2f2f6caa8b12c0fc0a63682a9a82c50a7019b60a78cd7771ec62ee32ca7e8388`
-- Created: `2017-04-27T01:02:39.775847723Z`
-- Virtual Size: ~ 360.31 Mb  
+- Image ID: `sha256:83f824d375cc58e0884f2de04c836c612c8a0380d539a5811fda56bf03f3fecb`
+- Created: `2017-05-08T22:23:39.694326013Z`
+- Virtual Size: ~ 372.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/opt/jruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre`
+  - `JAVA_HOME=/docker-java-home/jre`
   - `JAVA_VERSION=8u121`
   - `JAVA_DEBIAN_VERSION=8u121-b13-1~bpo8+1`
   - `CA_CERTIFICATES_JAVA_VERSION=20161107~bpo8+1`
@@ -790,11 +790,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/fonts-dejavu/2.34-1/
 - https://sources.debian.net/src/fonts-dejavu/2.34-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `freetype=2.5.2-3+deb8u1`
+### `dpkg` source package: `freetype=2.5.2-3+deb8u2`
 
 Binary Packages:
 
-- `libfreetype6:amd64=2.5.2-3+deb8u1`
+- `libfreetype6:amd64=2.5.2-3+deb8u2`
 
 Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 
@@ -807,8 +807,19 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 - `GZip`
 - `OpenGroup-BSD-like`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris freetype=2.5.2-3+deb8u2
+'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.5.2-3+deb8u2.dsc' freetype_2.5.2-3+deb8u2.dsc 2283 SHA256:e63b0cc18482fe5971880271c2dbacd6957288608fef8c40fe127db79a9008dd
+'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.5.2.orig.tar.gz' freetype_2.5.2.orig.tar.gz 1971155 SHA256:5fda4996e43cfdf9b602a0eb5abde014f1a3c3b2d82bbb9b86942011c63f5c3a
+'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.5.2-3+deb8u2.diff.gz' freetype_2.5.2-3+deb8u2.diff.gz 70170 SHA256:0247f57efcb83b208fc1967520a53ecf21c5aca9ee2c433238914622e6938259
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/freetype/2.5.2-3+deb8u2/
+- https://sources.debian.net/src/freetype/2.5.2-3+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-4.8=4.8.4-1`
 
@@ -872,12 +883,9 @@ Likely also available for browsing at:
 Binary Packages:
 
 - `libc-bin=2.19-18+deb8u7`
-- `libc-dev-bin=2.19-18+deb8u7`
-- `libc6:amd64=2.19-18+deb8u7`
-- `libc6-dev:amd64=2.19-18+deb8u7`
 - `multiarch-support=2.19-18+deb8u7`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/multiarch-support/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -895,6 +903,33 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/glibc/2.19-18+deb8u7/
 - https://sources.debian.net/src/glibc/2.19-18+deb8u7/debian/copyright (for direct copyright/license information)
+
+### `dpkg` source package: `glibc=2.19-18+deb8u9`
+
+Binary Packages:
+
+- `libc-dev-bin=2.19-18+deb8u9`
+- `libc6:amd64=2.19-18+deb8u9`
+- `libc6-dev:amd64=2.19-18+deb8u9`
+
+Licenses: (parsed from: `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
+
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.19-18+deb8u9
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.19-18+deb8u9.dsc' glibc_2.19-18+deb8u9.dsc 8252 SHA256:be03d889ac7c632eeabf41710ac68438f0cf6137ae2b7ed6b663937402fab2b6
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.19.orig.tar.xz' glibc_2.19.orig.tar.xz 12387008 SHA256:746e52bb4fc9b2f30bcd33d415172a40ab56c5fff6c494052d31b0795593cc60
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.19-18+deb8u9.debian.tar.xz' glibc_2.19-18+deb8u9.debian.tar.xz 1056516 SHA256:a8a6ccd37a61ef8fad0a1477e981190586e1c5f54182c0830f5bdb4d7bbcd4ff
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/glibc/2.19-18+deb8u9/
+- https://sources.debian.net/src/glibc/2.19-18+deb8u9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gmp=2:6.0.0+dfsg-6`
 
@@ -1980,11 +2015,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libxtst/2:1.2.2-1/
 - https://sources.debian.net/src/libxtst/2:1.2.2-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `linux=3.16.39-1+deb8u2`
+### `dpkg` source package: `linux=3.16.43-2`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.16.39-1+deb8u2`
+- `linux-libc-dev:amd64=3.16.43-2`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1995,16 +2030,16 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=3.16.39-1+deb8u2
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.39-1+deb8u2.dsc' linux_3.16.39-1+deb8u2.dsc 140609 SHA256:221bbebc3bf967cb6d55468d849c87bb5aee1b3d8b8eebd150dc4ec969d775dd
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.39.orig.tar.xz' linux_3.16.39.orig.tar.xz 81806060 SHA256:c36466398823435894e3cb3dc2813be8499c0e19a3f1787c202e15136c16207f
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.39-1+deb8u2.debian.tar.xz' linux_3.16.39-1+deb8u2.debian.tar.xz 3227812 SHA256:72991107d981f46b34932d24bde9e752f2718419d107bfb42d9340f9628c203c
+$ apt-get source -qq --print-uris linux=3.16.43-2
+'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.43-2.dsc' linux_3.16.43-2.dsc 140581 SHA256:a2dc5a684ffd8d2c7fce98593c82b4e95f30077930acc05a249fa685f6103517
+'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.43.orig.tar.xz' linux_3.16.43.orig.tar.xz 81815520 SHA256:77fc86010339c04736799d4f2e19adc1623c440583e7eae09e4b76b63c4edd8f
+'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.43-2.debian.tar.xz' linux_3.16.43-2.debian.tar.xz 3220020 SHA256:26e316edd3081deb93cd326eb1fb284beada44b3ba36e32ae36c6b6ea071af95
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/linux/3.16.39-1+deb8u2/
-- https://sources.debian.net/src/linux/3.16.39-1+deb8u2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/linux/3.16.43-2/
+- https://sources.debian.net/src/linux/3.16.43-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
