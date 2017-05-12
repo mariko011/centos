@@ -1402,14 +1402,8 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`, `/usr/share/doc
 - `GZip`
 - `OpenGroup-BSD-like`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris freetype=2.5.2-1ubuntu2.7
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.5.2-1ubuntu2.7.dsc' freetype_2.5.2-1ubuntu2.7.dsc 2173 SHA256:d916ec5bc2c5ebc85e62944e66731917f04a21c8945fed8624cda5f204597892
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.5.2.orig.tar.gz' freetype_2.5.2.orig.tar.gz 1971155 SHA256:5fda4996e43cfdf9b602a0eb5abde014f1a3c3b2d82bbb9b86942011c63f5c3a
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.5.2-1ubuntu2.7.diff.gz' freetype_2.5.2-1ubuntu2.7.diff.gz 86043 SHA256:f3969b3ec8d93c97f4f9711883db146c090146a4b9cd77ec1542b6288e7a4292
-```
 
 ### `dpkg` source package: `fribidi=0.19.6-1`
 
