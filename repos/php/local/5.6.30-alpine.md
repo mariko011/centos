@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d9549fefd8630f65b003214c4eeef79067ece4835684ca8b4ae6938de9febef6`
-- Created: `2017-05-05T20:43:07.799293654Z`
-- Virtual Size: ~ 42.64 Mb  
+- Image ID: `sha256:a2459aac456bbe69b99ab8f88dd478bd1f559415f949ad3b988d38ead80ec7ca`
+- Created: `2017-05-11T19:21:37.855514771Z`
+- Virtual Size: ~ 42.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
 - Command: `["php","-a"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PHPIZE_DEPS=autoconf 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c`
+  - `PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
