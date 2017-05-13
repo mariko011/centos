@@ -988,14 +988,8 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`, `/usr/share/doc
 - `GZip`
 - `OpenGroup-BSD-like`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris freetype=2.6.1-0.1ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.1-0.1ubuntu2.2.dsc' freetype_2.6.1-0.1ubuntu2.2.dsc 2238 SHA256:ab70a4f382aa4ddfee9f00a644f6d85fb61a883ffde338f0b39694e704fde7da
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.1.orig.tar.gz' freetype_2.6.1.orig.tar.gz 2411537 SHA256:ffaef13dc5ccc265e97519115a51a103e88b9d9d3223289bc1a98c0c2094d5b3
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.1-0.1ubuntu2.2.diff.gz' freetype_2.6.1-0.1ubuntu2.2.diff.gz 42940 SHA256:a6772fe8e02ec5357f451118bce146f9c79bcf1986e377232da5ab61a126a7e7
-```
 
 ### `dpkg` source package: `gcc-5=5.4.0-6ubuntu1~16.04.4`
 
@@ -3278,9 +3272,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssh=1:7.2p2-4ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2-4ubuntu2.1.dsc' openssh_7.2p2-4ubuntu2.1.dsc 2896 SHA256:284cb0ffe27e39ca26c57b0d947c66b5094c68febf780856adbacc28d394bf24
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2.orig.tar.gz' openssh_7.2p2.orig.tar.gz 1499808 SHA256:a72781d1a043876a224ff1b0032daa4094d87565a68528759c1c2cab5482548c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2-4ubuntu2.1.debian.tar.xz' openssh_7.2p2-4ubuntu2.1.debian.tar.xz 153228 SHA256:dbd4cae1c64e1b2d3504caf5c3aa12186afd6b8a64284841015b096796671a24
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2-4ubuntu2.1.dsc' openssh_7.2p2-4ubuntu2.1.dsc 2896 SHA256:284cb0ffe27e39ca26c57b0d947c66b5094c68febf780856adbacc28d394bf24
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2.orig.tar.gz' openssh_7.2p2.orig.tar.gz 1499808 SHA256:a72781d1a043876a224ff1b0032daa4094d87565a68528759c1c2cab5482548c
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.2p2-4ubuntu2.1.debian.tar.xz' openssh_7.2p2-4ubuntu2.1.debian.tar.xz 153228 SHA256:dbd4cae1c64e1b2d3504caf5c3aa12186afd6b8a64284841015b096796671a24
 ```
 
 ### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.6`

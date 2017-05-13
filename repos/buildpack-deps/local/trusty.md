@@ -298,14 +298,8 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris binutils=2.24-5ubuntu14.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.24-5ubuntu14.1.dsc' binutils_2.24-5ubuntu14.1.dsc 2390 SHA256:7c6ef02a14c8ba27a0569b1669c67545f2a7f3c6da6d0f5e8d6ab2b49b4be861
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.24.orig.tar.gz' binutils_2.24.orig.tar.gz 30809913 SHA256:4930b2886309112c00a279483eaef2f0f8e1b1b62010e0239c16b22af7c346d4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.24-5ubuntu14.1.diff.gz' binutils_2.24-5ubuntu14.1.diff.gz 308222 SHA256:2302939dbf38606e68832771c1e2ec50806ab32c89b88e28d1a33c738642fdf7
-```
 
 ### `dpkg` source package: `busybox=1:1.21.0-1ubuntu1`
 

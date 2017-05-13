@@ -1000,14 +1000,8 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`, `/usr/share/doc
 - `GZip`
 - `OpenGroup-BSD-like`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris freetype=2.6.3-3ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.3-3ubuntu1.2.dsc' freetype_2.6.3-3ubuntu1.2.dsc 2230 SHA256:9073b5990d23d376df2aa7e087a7b56d24355ab144a770c17b2fc19ced36659a
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.3.orig.tar.gz' freetype_2.6.3.orig.tar.gz 7313547 SHA256:814a22aad85e8ca2cb4acfc2e9dc59caa6eded4f6619590f7bd0a721e4b076a3
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.3-3ubuntu1.2.diff.gz' freetype_2.6.3-3ubuntu1.2.diff.gz 43550 SHA256:476c878e6c5de7135443986a3c7b84e6ade0330b8c5b041bb6b8cdd7fe43eafb
-```
 
 ### `dpkg` source package: `gcc-6=6.2.0-5ubuntu12`
 
