@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2dabe138029611e4619c033d25bd8231384f9e7c581e4d9fdbd6929a295c8ca1`
-- Created: `2017-02-28T15:14:35.971027773Z`
-- Virtual Size: ~ 85.27 Mb  
+- Image ID: `sha256:e1dde515fb0f3b0715f8888daa9f429bd11b3101db72c6bbf1a527c990849fe6`
+- Created: `2017-05-10T13:42:08.442861458Z`
+- Virtual Size: ~ 85.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1198,18 +1198,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tar/1.26+dfsg-0.1+deb7u1/
 - https://sources.debian.net/src/tar/1.26+dfsg-0.1+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tzdata=2016j-0+deb7u1`
+### `dpkg` source package: `tzdata=2017b-0+deb7u1`
 
 Binary Packages:
 
-- `tzdata=2016j-0+deb7u1`
+- `tzdata=2017b-0+deb7u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2017b-0+deb7u1
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017b-0+deb7u1.dsc' tzdata_2017b-0+deb7u1.dsc 1966 SHA256:584d7289af8af8436852eeee472936feee35aa8cdc134b587210c474a9a5695d
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017b.orig.tar.gz' tzdata_2017b.orig.tar.gz 324317 SHA256:f8242a522ea3496b0ce4ff4f2e75a049178da21001a08b8e666d8cbe07d18086
+'http://security.debian.org/pool/updates/main/t/tzdata/tzdata_2017b-0+deb7u1.debian.tar.xz' tzdata_2017b-0+deb7u1.debian.tar.xz 102016 SHA256:87288325b84e8cec04c0424452e9dd05b3c0508f73af75381b6ea0ccf2f74b37
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/tzdata/2017b-0+deb7u1/
+- https://sources.debian.net/src/tzdata/2017b-0+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ustr=1.0.4-3`
 
