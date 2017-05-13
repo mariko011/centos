@@ -1,7 +1,7 @@
 ## `nginx:stable`
 
 ```console
-$ docker pull nginx@sha256:1dc4460c8eaa9faef2e8e3a33664f10a05bfbce6775a6ded1c3013c89911d9f3
+$ docker pull nginx@sha256:0d71ff22db29a08ac7399d1b35b0311c5b0cbe68d878993718275758811f652a
 ```
 
 -	Platforms:
@@ -11,44 +11,44 @@ $ docker pull nginx@sha256:1dc4460c8eaa9faef2e8e3a33664f10a05bfbce6775a6ded1c301
 
 -	Docker Version: 17.04.0-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.8 MB (44807634 bytes)**  
+-	Total Size: **44.8 MB (44807014 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:92e8f1b61b092de8fdaf7316abd2fbe971f04aace6a47e9a26e87b8ee8cfa649`
+-	Image ID: `sha256:17daebd00e2c95abb02cd48bcbf562c1993460d40d626501f23985126ea26b21`
 -	Default Command: `["nginx","-g","daemon off;"]`
 
 ```dockerfile
-# Mon, 24 Apr 2017 19:27:02 GMT
-ADD file:253a2a9f49900b34f61c3c1527adb199bfc8ff153084604addb38a6769aadce7 in / 
-# Mon, 24 Apr 2017 19:27:02 GMT
+# Mon, 08 May 2017 23:36:50 GMT
+ADD file:a90ec883129f86b093f65b32e8e539168b462552a9fbf1c74d651a9bd9e9fc66 in / 
+# Mon, 08 May 2017 23:36:50 GMT
 CMD ["/bin/bash"]
-# Tue, 25 Apr 2017 02:30:37 GMT
+# Wed, 10 May 2017 13:43:02 GMT
 MAINTAINER NGINX Docker Maintainers "docker-maint@nginx.com"
-# Tue, 25 Apr 2017 02:30:37 GMT
+# Wed, 10 May 2017 13:44:24 GMT
 ENV NGINX_VERSION=1.12.0-1~stretch
-# Tue, 25 Apr 2017 02:30:38 GMT
+# Wed, 10 May 2017 13:44:25 GMT
 ENV NJS_VERSION=1.12.0.0.1.10-1~stretch
-# Tue, 25 Apr 2017 02:30:56 GMT
+# Wed, 10 May 2017 13:44:39 GMT
 RUN apt-get update 	&& apt-get install --no-install-recommends --no-install-suggests -y gnupg1 	&& 	NGINX_GPGKEY=573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62; 	found=''; 	for server in 		ha.pool.sks-keyservers.net 		hkp://keyserver.ubuntu.com:80 		hkp://p80.pool.sks-keyservers.net:80 		pgp.mit.edu 	; do 		echo "Fetching GPG key $NGINX_GPGKEY from $server"; 		apt-key adv --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$NGINX_GPGKEY" && found=yes && break; 	done; 	test -z "$found" && echo >&2 "error: failed to fetch GPG key $NGINX_GPGKEY" && exit 1; 	apt-get remove --purge -y gnupg1 && apt-get -y --purge autoremove && rm -rf /var/lib/apt/lists/* 	&& echo "deb http://nginx.org/packages/debian/ stretch nginx" >> /etc/apt/sources.list 	&& apt-get update 	&& apt-get install --no-install-recommends --no-install-suggests -y 						nginx=${NGINX_VERSION} 						nginx-module-xslt=${NGINX_VERSION} 						nginx-module-geoip=${NGINX_VERSION} 						nginx-module-image-filter=${NGINX_VERSION} 						nginx-module-njs=${NJS_VERSION} 						gettext-base 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 25 Apr 2017 02:31:00 GMT
+# Wed, 10 May 2017 13:44:41 GMT
 RUN ln -sf /dev/stdout /var/log/nginx/access.log 	&& ln -sf /dev/stderr /var/log/nginx/error.log
-# Tue, 25 Apr 2017 02:31:00 GMT
+# Wed, 10 May 2017 13:44:42 GMT
 EXPOSE 80/tcp
-# Tue, 25 Apr 2017 02:31:01 GMT
+# Wed, 10 May 2017 13:44:42 GMT
 STOPSIGNAL [SIGQUIT]
-# Tue, 25 Apr 2017 02:31:18 GMT
+# Wed, 10 May 2017 13:44:43 GMT
 CMD ["nginx" "-g" "daemon off;"]
 ```
 
 -	Layers:
-	-	`sha256:36a46ebd501927ed32bd008fb98e4f4b250636ac6c29c7c540c45d5158264410`  
-		Last Modified: Mon, 24 Apr 2017 19:39:07 GMT  
-		Size: 23.3 MB (23276193 bytes)  
+	-	`sha256:ff3d52d8f55fb0b74ea0a24134f75efeff780c4e1f407073def2ae9c9b900868`  
+		Last Modified: Mon, 08 May 2017 23:53:40 GMT  
+		Size: 23.3 MB (23275620 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba32a7c0cd19dcd423a43fb5f53d7fc961f1c328fc04480da41cfe7f4453a2a4`  
-		Last Modified: Tue, 25 Apr 2017 17:35:43 GMT  
-		Size: 21.5 MB (21531246 bytes)  
+	-	`sha256:7c6e3041fe7894285fa5423752957062bff0510edee6b422a6a67d17e1ae1a5c`  
+		Last Modified: Sat, 13 May 2017 08:19:23 GMT  
+		Size: 21.5 MB (21531200 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:48943764d9eea37e3bae0a6962943200e7b8475fdc976cfddb91ee427c4570b8`  
-		Last Modified: Tue, 25 Apr 2017 17:35:37 GMT  
-		Size: 195.0 B  
+	-	`sha256:40cd72437c98bbfd4e859c2a97a949c46fa557d02994938d8866cc8fff50a65f`  
+		Last Modified: Sat, 13 May 2017 08:19:18 GMT  
+		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
