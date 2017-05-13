@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:78e27ba47831234e614e54b34aa444375c174ad943d711a90abeeef266ec2d35`
-- Created: `2017-05-01T22:55:13.646267256Z`
-- Virtual Size: ~ 530.59 Mb  
+- Image ID: `sha256:548dbd8db1c19b1c7a35f141ca1fe5cb1b67b48d80ddfbebe9277ea4e5a51863`
+- Created: `2017-05-11T21:45:29.717809481Z`
+- Virtual Size: ~ 530.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -957,12 +957,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/fontconfig/2.9.0-7.1+deb7u1/
 - https://sources.debian.net/src/fontconfig/2.9.0-7.1+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `freetype=2.4.9-1.1+deb7u5`
+### `dpkg` source package: `freetype=2.4.9-1.1+deb7u7`
 
 Binary Packages:
 
-- `libfreetype6:amd64=2.4.9-1.1+deb7u5`
-- `libfreetype6-dev=2.4.9-1.1+deb7u5`
+- `libfreetype6:amd64=2.4.9-1.1+deb7u7`
+- `libfreetype6-dev=2.4.9-1.1+deb7u7`
 
 Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`, `/usr/share/doc/libfreetype6-dev/copyright`)
 
@@ -975,8 +975,18 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`, `/usr/share/doc
 - `GZip`
 - `OpenGroup-BSD-like`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris freetype=2.4.9-1.1+deb7u7
+'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u7.dsc' freetype_2.4.9-1.1+deb7u7.dsc 1823 SHA256:e08860f372af2358d611bd6e6d74b31d1f0fb84f10bb686a0129f668c9a79f91
+'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u7.tar.gz' freetype_2.4.9-1.1+deb7u7.tar.gz 1832352 SHA256:23eb1cb785aaea8f9469205141cdd99ed85c682cd6460c0303bb961774edfea3
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u7/
+- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-4.7=4.7.2-5`
 
@@ -1568,19 +1578,30 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/iproute/20120521-3/
 - https://sources.debian.net/src/iproute/20120521-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `jasper=1.900.1-13+deb7u5`
+### `dpkg` source package: `jasper=1.900.1-13+deb7u6`
 
 Binary Packages:
 
-- `libjasper-dev=1.900.1-13+deb7u5`
-- `libjasper1:amd64=1.900.1-13+deb7u5`
+- `libjasper-dev=1.900.1-13+deb7u6`
+- `libjasper1:amd64=1.900.1-13+deb7u6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris jasper=1.900.1-13+deb7u6
+'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-13+deb7u6.dsc' jasper_1.900.1-13+deb7u6.dsc 2051 SHA256:5557e601b45d56b4e9a378de8ed0dbf20238a3ca6be50d410e10b537b0b7c61e
+'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1.orig.tar.gz' jasper_1.900.1.orig.tar.gz 1143400 SHA256:6cf104e2811f6088ca1dc76d87dd27c55178d3ccced20db8858d28ae22911a94
+'http://security.debian.org/pool/updates/main/j/jasper/jasper_1.900.1-13+deb7u6.debian.tar.gz' jasper_1.900.1-13+deb7u6.debian.tar.gz 40166 SHA256:66218e510c7cef7b4744b66c8eed10e4842ca95119401df4109d4fbc61eb1595
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/jasper/1.900.1-13+deb7u6/
+- https://sources.debian.net/src/jasper/1.900.1-13+deb7u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `jbigkit=2.0-2+deb7u1`
 
@@ -2942,18 +2963,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libyaml/0.1.4-2+deb7u5/
 - https://sources.debian.net/src/libyaml/0.1.4-2+deb7u5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `linux=3.2.86-1`
+### `dpkg` source package: `linux=3.2.88-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.2.86-1`
+- `linux-libc-dev:amd64=3.2.88-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.2.88-1
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.88-1.dsc' linux_3.2.88-1.dsc 103043 SHA256:9af665ceac70551fcc6bd23c6652025d1981330cec101cb7be3e273ba6a62857
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.88.orig.tar.xz' linux_3.2.88.orig.tar.xz 65995232 SHA256:f11e1a9298038bbb76c8a35cde1351ecff6ffd47005d0461bb21d702dc6349d4
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.88-1.debian.tar.xz' linux_3.2.88-1.debian.tar.xz 3744924 SHA256:e5fd7498fc5ed7ca6d76341d84ede0f00ccd3cc4f55eae773218b1352f023253
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/linux/3.2.88-1/
+- https://sources.debian.net/src/linux/3.2.88-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian8+deb7u1`
 
@@ -3150,13 +3182,13 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/mpfr4/3.1.0-5/
 - https://sources.debian.net/src/mpfr4/3.1.0-5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `mysql-5.5=5.5.54-0+deb7u2`
+### `dpkg` source package: `mysql-5.5=5.5.55-0+deb7u1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.5.54-0+deb7u2`
-- `libmysqlclient18:amd64=5.5.54-0+deb7u2`
-- `mysql-common=5.5.54-0+deb7u2`
+- `libmysqlclient-dev=5.5.55-0+deb7u1`
+- `libmysqlclient18:amd64=5.5.55-0+deb7u1`
+- `mysql-common=5.5.55-0+deb7u1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -3174,8 +3206,19 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.5=5.5.55-0+deb7u1
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.55-0+deb7u1.dsc' mysql-5.5_5.5.55-0+deb7u1.dsc 2971 SHA256:f78e5aa1009b9c79cd543380e873b034bf9fc1e3402452a799236fd3b6ae82af
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.55.orig.tar.gz' mysql-5.5_5.5.55.orig.tar.gz 21040959 SHA256:9af0a504e2603b0bc0c7c3a4a747df064fb51670a0022b1ad6114f9058b64171
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.55-0+deb7u1.debian.tar.gz' mysql-5.5_5.5.55-0+deb7u1.debian.tar.gz 380149 SHA256:9042933a4043efc88fb725a91fee7fc70d7be649ed6e3a310be2473f47675788
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/mysql-5.5/5.5.55-0+deb7u1/
+- https://sources.debian.net/src/mysql-5.5/5.5.55-0+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ncurses=5.9-10`
 
@@ -3742,12 +3785,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/readline6/6.2+dfsg-0.1/
 - https://sources.debian.net/src/readline6/6.2+dfsg-0.1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `rtmpdump=2.4+20111222.git4e06e21-1`
+### `dpkg` source package: `rtmpdump=2.4+20111222.git4e06e21-1+deb7u1`
 
 Binary Packages:
 
-- `librtmp-dev=2.4+20111222.git4e06e21-1`
-- `librtmp0:amd64=2.4+20111222.git4e06e21-1`
+- `librtmp-dev=2.4+20111222.git4e06e21-1+deb7u1`
+- `librtmp0:amd64=2.4+20111222.git4e06e21-1+deb7u1`
 
 Licenses: (parsed from: `/usr/share/doc/librtmp-dev/copyright`, `/usr/share/doc/librtmp0/copyright`)
 
@@ -3757,16 +3800,16 @@ Licenses: (parsed from: `/usr/share/doc/librtmp-dev/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris rtmpdump=2.4+20111222.git4e06e21-1
-'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4+20111222.git4e06e21-1.dsc' rtmpdump_2.4+20111222.git4e06e21-1.dsc 1591 SHA256:9728613f65dba1149a9ec7be767d5d52b2b2c898c1a5830abf76a8443e1da9db
-'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4+20111222.git4e06e21.orig.tar.gz' rtmpdump_2.4+20111222.git4e06e21.orig.tar.gz 137391 SHA256:69dd9cc5228869efdeed234ae63327c14d0935da3b5a2cd7011688c1f66fb385
-'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4+20111222.git4e06e21-1.debian.tar.gz' rtmpdump_2.4+20111222.git4e06e21-1.debian.tar.gz 5597 SHA256:ebbb587a14668e124a9b3558a74096ab5e85b7e6d18faed1d09fbdab4b76cf14
+$ apt-get source -qq --print-uris rtmpdump=2.4+20111222.git4e06e21-1+deb7u1
+'http://security.debian.org/pool/updates/main/r/rtmpdump/rtmpdump_2.4+20111222.git4e06e21-1+deb7u1.dsc' rtmpdump_2.4+20111222.git4e06e21-1+deb7u1.dsc 2231 SHA256:fda2a79452563ca827a9ed8961d06cd64c2b2987294e940474e5d87cf0fecba4
+'http://security.debian.org/pool/updates/main/r/rtmpdump/rtmpdump_2.4+20111222.git4e06e21.orig.tar.gz' rtmpdump_2.4+20111222.git4e06e21.orig.tar.gz 137391 SHA256:69dd9cc5228869efdeed234ae63327c14d0935da3b5a2cd7011688c1f66fb385
+'http://security.debian.org/pool/updates/main/r/rtmpdump/rtmpdump_2.4+20111222.git4e06e21-1+deb7u1.debian.tar.gz' rtmpdump_2.4+20111222.git4e06e21-1+deb7u1.debian.tar.gz 7735 SHA256:b76a37e5bb7fd642cd4e67df734d0bbebef307991d0ae7ddd35f98bc9ee35ca9
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/rtmpdump/2.4+20111222.git4e06e21-1/
-- https://sources.debian.net/src/rtmpdump/2.4+20111222.git4e06e21-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/rtmpdump/2.4+20111222.git4e06e21-1+deb7u1/
+- https://sources.debian.net/src/rtmpdump/2.4+20111222.git4e06e21-1+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sed=4.2.1-10`
 
