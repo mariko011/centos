@@ -4004,14 +4004,8 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk/copyright`, `/usr/share/do
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openjdk-8=8u121-b13-0ubuntu1.16.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u121-b13-0ubuntu1.16.04.2.dsc' openjdk-8_8u121-b13-0ubuntu1.16.04.2.dsc 4575 SHA256:0e13b36a206039558be3eabf42dba4c84c1bfb83bf9d9bc4171b141bf5401387
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u121-b13.orig.tar.xz' openjdk-8_8u121-b13.orig.tar.xz 63884892 SHA256:78f64c05575fa36ae35e712e3d23b3ac139aaeb328eebca705705652b5985699
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u121-b13-0ubuntu1.16.04.2.debian.tar.xz' openjdk-8_8u121-b13-0ubuntu1.16.04.2.debian.tar.xz 234828 SHA256:a4f5d6469c6105e6b0bb2655b17fa284490163831afa097defd731d9afbe3b24
-```
 
 ### `dpkg` source package: `openjpeg=1:1.5.2-3.1`
 
