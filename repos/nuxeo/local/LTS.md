@@ -523,14 +523,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ca-certificates-java=20161107~bpo8+1
-'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20161107~bpo8+1.dsc' ca-certificates-java_20161107~bpo8+1.dsc 1887 SHA256:a73671a95ce5480353d9f5082c3cb2a372d316f45f5274d89623d6bf33eb4222
-'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20161107~bpo8+1.tar.xz' ca-certificates-java_20161107~bpo8+1.tar.xz 15972 SHA256:908902ec1623019d7e77c28006acc806d9bb3310909e74ddeae27b5266857895
+'http://http.debian.net/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20161107~bpo8+1.dsc' ca-certificates-java_20161107~bpo8+1.dsc 1887 SHA256:a73671a95ce5480353d9f5082c3cb2a372d316f45f5274d89623d6bf33eb4222
+'http://http.debian.net/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20161107~bpo8+1.tar.xz' ca-certificates-java_20161107~bpo8+1.tar.xz 15972 SHA256:908902ec1623019d7e77c28006acc806d9bb3310909e74ddeae27b5266857895
 ```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/ca-certificates-java/20161107~bpo8+1/
-- https://sources.debian.net/src/ca-certificates-java/20161107~bpo8+1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ca-certificates=20141019+deb8u3`
 
@@ -1250,14 +1245,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris dh-python=2.20170125~bpo8+1
-'http://deb.debian.org/debian/pool/main/d/dh-python/dh-python_2.20170125~bpo8+1.dsc' dh-python_2.20170125~bpo8+1.dsc 1754 SHA256:d9ccd69906bbc50ad9db580ce563f97ad3987a99f508b81b21c652353f05d724
-'http://deb.debian.org/debian/pool/main/d/dh-python/dh-python_2.20170125~bpo8+1.tar.xz' dh-python_2.20170125~bpo8+1.tar.xz 86432 SHA256:481c00253944c50b1c3457711c8f5e2f375a0cce8741113bcd31d7b65736ba3c
+'http://http.debian.net/debian/pool/main/d/dh-python/dh-python_2.20170125~bpo8+1.dsc' dh-python_2.20170125~bpo8+1.dsc 1754 SHA256:d9ccd69906bbc50ad9db580ce563f97ad3987a99f508b81b21c652353f05d724
+'http://http.debian.net/debian/pool/main/d/dh-python/dh-python_2.20170125~bpo8+1.tar.xz' dh-python_2.20170125~bpo8+1.tar.xz 86432 SHA256:481c00253944c50b1c3457711c8f5e2f375a0cce8741113bcd31d7b65736ba3c
 ```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dh-python/2.20170125~bpo8+1/
-- https://sources.debian.net/src/dh-python/2.20170125~bpo8+1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `diffutils=1:3.3-1`
 
@@ -3093,15 +3083,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris lapack=3.7.0-1~bpo8+1
-'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.7.0-1~bpo8+1.dsc' lapack_3.7.0-1~bpo8+1.dsc 2860 SHA256:cd0b064c4b667cf7c5aa51a5a0bd426a1ecec326b658dd0a41569b329d3bee14
-'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.7.0.orig.tar.gz' lapack_3.7.0.orig.tar.gz 7359812 SHA256:ed967e4307e986474ab02eb810eed1d1adc73f5e1e3bc78fb009f6fe766db3be
-'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.7.0-1~bpo8+1.debian.tar.xz' lapack_3.7.0-1~bpo8+1.debian.tar.xz 20928 SHA256:1ac6fb0d5579d8b4775fdde44591d78859b38541c0ed78c99240785ae856bbda
+'http://http.debian.net/debian/pool/main/l/lapack/lapack_3.7.0-1~bpo8+1.dsc' lapack_3.7.0-1~bpo8+1.dsc 2860 SHA256:cd0b064c4b667cf7c5aa51a5a0bd426a1ecec326b658dd0a41569b329d3bee14
+'http://http.debian.net/debian/pool/main/l/lapack/lapack_3.7.0.orig.tar.gz' lapack_3.7.0.orig.tar.gz 7359812 SHA256:ed967e4307e986474ab02eb810eed1d1adc73f5e1e3bc78fb009f6fe766db3be
+'http://http.debian.net/debian/pool/main/l/lapack/lapack_3.7.0-1~bpo8+1.debian.tar.xz' lapack_3.7.0-1~bpo8+1.debian.tar.xz 20928 SHA256:1ac6fb0d5579d8b4775fdde44591d78859b38541c0ed78c99240785ae856bbda
 ```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/lapack/3.7.0-1~bpo8+1/
-- https://sources.debian.net/src/lapack/3.7.0-1~bpo8+1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lcms2=2.6-3+deb8u1`
 
@@ -4428,17 +4413,12 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libreoffice=1:5.2.6-2~bpo8+1
-'http://deb.debian.org/debian/pool/main/libr/libreoffice/libreoffice_5.2.6-2~bpo8+1.dsc' libreoffice_5.2.6-2~bpo8+1.dsc 27171 SHA256:5e7914179ac0ee50120f3e97aba254606c7c6df3525f047f3f0930948e2ba4b0
-'http://deb.debian.org/debian/pool/main/libr/libreoffice/libreoffice_5.2.6.orig-helpcontent2.tar.xz' libreoffice_5.2.6.orig-helpcontent2.tar.xz 1450256 SHA256:18afc46cd503d0896a15664ee986893682a420a155275ab3784b5896bf1c6d0b
-'http://deb.debian.org/debian/pool/main/libr/libreoffice/libreoffice_5.2.6.orig-translations.tar.xz' libreoffice_5.2.6.orig-translations.tar.xz 141444560 SHA256:67b2d1ba1d1e694fe5edffdb61880c0696a9cd30f47afd717e32d619af6da048
-'http://deb.debian.org/debian/pool/main/libr/libreoffice/libreoffice_5.2.6.orig.tar.xz' libreoffice_5.2.6.orig.tar.xz 164804780 SHA256:3d49e339631114652820b890859eef85601d1aeda2acb1309f0de24009f53570
-'http://deb.debian.org/debian/pool/main/libr/libreoffice/libreoffice_5.2.6-2~bpo8+1.debian.tar.xz' libreoffice_5.2.6-2~bpo8+1.debian.tar.xz 23728048 SHA256:512118f8a1cbaed911f32badb61657d815cdaaaf485dc36857cb36cae4f516d6
+'http://http.debian.net/debian/pool/main/libr/libreoffice/libreoffice_5.2.6-2~bpo8+1.dsc' libreoffice_5.2.6-2~bpo8+1.dsc 27171 SHA256:5e7914179ac0ee50120f3e97aba254606c7c6df3525f047f3f0930948e2ba4b0
+'http://http.debian.net/debian/pool/main/libr/libreoffice/libreoffice_5.2.6.orig-helpcontent2.tar.xz' libreoffice_5.2.6.orig-helpcontent2.tar.xz 1450256 SHA256:18afc46cd503d0896a15664ee986893682a420a155275ab3784b5896bf1c6d0b
+'http://http.debian.net/debian/pool/main/libr/libreoffice/libreoffice_5.2.6.orig-translations.tar.xz' libreoffice_5.2.6.orig-translations.tar.xz 141444560 SHA256:67b2d1ba1d1e694fe5edffdb61880c0696a9cd30f47afd717e32d619af6da048
+'http://http.debian.net/debian/pool/main/libr/libreoffice/libreoffice_5.2.6.orig.tar.xz' libreoffice_5.2.6.orig.tar.xz 164804780 SHA256:3d49e339631114652820b890859eef85601d1aeda2acb1309f0de24009f53570
+'http://http.debian.net/debian/pool/main/libr/libreoffice/libreoffice_5.2.6-2~bpo8+1.debian.tar.xz' libreoffice_5.2.6-2~bpo8+1.debian.tar.xz 23728048 SHA256:512118f8a1cbaed911f32badb61657d815cdaaaf485dc36857cb36cae4f516d6
 ```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libreoffice/1:5.2.6-2~bpo8+1/
-- https://sources.debian.net/src/libreoffice/1:5.2.6-2~bpo8+1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `librest=0.7.92-3`
 
@@ -6109,15 +6089,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openjdk-8=8u121-b13-1~bpo8+1
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u121-b13-1~bpo8+1.dsc' openjdk-8_8u121-b13-1~bpo8+1.dsc 4522 SHA256:ae40bb526fde162d14816d07ee1fecba2f2696feed07d01475a945d2dc721b0a
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u121-b13.orig.tar.xz' openjdk-8_8u121-b13.orig.tar.xz 63884892 SHA256:78f64c05575fa36ae35e712e3d23b3ac139aaeb328eebca705705652b5985699
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u121-b13-1~bpo8+1.debian.tar.xz' openjdk-8_8u121-b13-1~bpo8+1.debian.tar.xz 235396 SHA256:190d5b0ff30f6085aadccc38cf6d56ce91ba4185b0cb25ae6996c042b4066e34
+'http://http.debian.net/debian/pool/main/o/openjdk-8/openjdk-8_8u121-b13-1~bpo8+1.dsc' openjdk-8_8u121-b13-1~bpo8+1.dsc 4522 SHA256:ae40bb526fde162d14816d07ee1fecba2f2696feed07d01475a945d2dc721b0a
+'http://http.debian.net/debian/pool/main/o/openjdk-8/openjdk-8_8u121-b13.orig.tar.xz' openjdk-8_8u121-b13.orig.tar.xz 63884892 SHA256:78f64c05575fa36ae35e712e3d23b3ac139aaeb328eebca705705652b5985699
+'http://http.debian.net/debian/pool/main/o/openjdk-8/openjdk-8_8u121-b13-1~bpo8+1.debian.tar.xz' openjdk-8_8u121-b13-1~bpo8+1.debian.tar.xz 235396 SHA256:190d5b0ff30f6085aadccc38cf6d56ce91ba4185b0cb25ae6996c042b4066e34
 ```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openjdk-8/8u121-b13-1~bpo8+1/
-- https://sources.debian.net/src/openjdk-8/8u121-b13-1~bpo8+1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openjpeg=1:1.5.2-3`
 
