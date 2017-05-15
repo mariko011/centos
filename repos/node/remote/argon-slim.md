@@ -1,7 +1,7 @@
 ## `node:argon-slim`
 
 ```console
-$ docker pull node@sha256:c1a12ef7a4f9d27cb6720ce5a58b4eda3366839da082c877e4b82d46e9775515
+$ docker pull node@sha256:c5eacf8449166874a91f1e80bd4c76632c182b73f51178035cf8900c197ca692
 ```
 
 -	Platforms:
@@ -9,11 +9,11 @@ $ docker pull node@sha256:c1a12ef7a4f9d27cb6720ce5a58b4eda3366839da082c877e4b82d
 
 ### `node:argon-slim` - linux; amd64
 
--	Docker Version: 17.04.0-ce
+-	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **85.4 MB (85439181 bytes)**  
+-	Total Size: **85.4 MB (85448184 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:263b27c862a6dbed6c79a258416d0c17aba33bcac4142d571eacc071b1fd7796`
+-	Image ID: `sha256:cd692e27dc7f3a2c110376531c03e08dfc7fc064f6055472b4db10d83f4c9265`
 -	Default Command: `["node"]`
 
 ```dockerfile
@@ -33,11 +33,11 @@ ENV NPM_CONFIG_LOGLEVEL=info
 ENV NODE_VERSION=4.8.3
 # Wed, 10 May 2017 13:46:00 GMT
 RUN buildDeps='xz-utils'     && set -x     && apt-get update && apt-get install -y $buildDeps --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz"     && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1     && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && apt-get purge -y --auto-remove $buildDeps     && ln -s /usr/local/bin/node /usr/local/bin/nodejs
-# Wed, 10 May 2017 13:46:01 GMT
-ENV YARN_VERSION=0.23.4
-# Wed, 10 May 2017 13:46:06 GMT
+# Mon, 15 May 2017 17:52:48 GMT
+ENV YARN_VERSION=0.24.4
+# Mon, 15 May 2017 17:52:52 GMT
 RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --keyserver pgp.mit.edu --recv-keys "$key" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;   done   && curl -fSL -o yarn.js "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-legacy-$YARN_VERSION.js"   && curl -fSL -o yarn.js.asc "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-legacy-$YARN_VERSION.js.asc"   && gpg --batch --verify yarn.js.asc yarn.js   && rm yarn.js.asc   && mv yarn.js /usr/local/bin/yarn   && chmod +x /usr/local/bin/yarn
-# Wed, 10 May 2017 13:46:07 GMT
+# Mon, 15 May 2017 17:52:53 GMT
 CMD ["node"]
 ```
 
@@ -62,7 +62,7 @@ CMD ["node"]
 		Last Modified: Sat, 13 May 2017 08:37:06 GMT  
 		Size: 12.6 MB (12577882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc316182cf8961dc9ad0c016562be0ced4a6ede35043d0abdd9aa4f7308bcf13`  
-		Last Modified: Sat, 13 May 2017 08:37:01 GMT  
-		Size: 886.3 KB (886321 bytes)  
+	-	`sha256:c0ea7226ae5d42562ea1300f0c1c40329ea717f48f9c5a465559f528ef95dae7`  
+		Last Modified: Mon, 15 May 2017 18:21:59 GMT  
+		Size: 895.3 KB (895324 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
