@@ -1,7 +1,7 @@
 ## `postgres:latest`
 
 ```console
-$ docker pull postgres@sha256:5284ba74a1065e34cf1bfccd64caf8c497c8dc623d6207b060b5ebd369427d34
+$ docker pull postgres@sha256:b9fa1cdbe4d3445c08e1496e36a3f18a3cd6d368154ce90469a298a5950a4b69
 ```
 
 -	Platforms:
@@ -9,11 +9,11 @@ $ docker pull postgres@sha256:5284ba74a1065e34cf1bfccd64caf8c497c8dc623d6207b060
 
 ### `postgres:latest` - linux; amd64
 
--	Docker Version: 17.04.0-ce
+-	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **104.3 MB (104287382 bytes)**  
+-	Total Size: **104.3 MB (104317098 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3b8a22299537a43dc0eb06d8cd469fcdbbca5e8b221dd5f67653242c3951fa1`
+-	Image ID: `sha256:dd0f50742a348456c934cd169944f4212657272f1e552eb385bc171a1330d32a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -38,33 +38,33 @@ RUN mkdir /docker-entrypoint-initdb.d
 RUN set -ex; 	key='B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/postgres.gpg; 	rm -r "$GNUPGHOME"; 	apt-key list
 # Wed, 10 May 2017 15:21:39 GMT
 ENV PG_MAJOR=9.6
-# Wed, 10 May 2017 15:21:40 GMT
-ENV PG_VERSION=9.6.2-1.pgdg80+1
-# Wed, 10 May 2017 15:21:41 GMT
+# Mon, 15 May 2017 21:18:15 GMT
+ENV PG_VERSION=9.6.3-1.pgdg80+1
+# Mon, 15 May 2017 21:18:17 GMT
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' $PG_MAJOR > /etc/apt/sources.list.d/pgdg.list
-# Wed, 10 May 2017 15:22:15 GMT
+# Mon, 15 May 2017 21:19:01 GMT
 RUN apt-get update 	&& apt-get install -y postgresql-common 	&& sed -ri 's/#(create_main_cluster) .*$/\1 = false/' /etc/postgresql-common/createcluster.conf 	&& apt-get install -y 		postgresql-$PG_MAJOR=$PG_VERSION 		postgresql-contrib-$PG_MAJOR=$PG_VERSION 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 10 May 2017 15:22:16 GMT
+# Mon, 15 May 2017 21:19:03 GMT
 RUN mv -v /usr/share/postgresql/$PG_MAJOR/postgresql.conf.sample /usr/share/postgresql/ 	&& ln -sv ../postgresql.conf.sample /usr/share/postgresql/$PG_MAJOR/ 	&& sed -ri "s!^#?(listen_addresses)\s*=\s*\S+.*!\1 = '*'!" /usr/share/postgresql/postgresql.conf.sample
-# Wed, 10 May 2017 15:22:18 GMT
+# Mon, 15 May 2017 21:19:04 GMT
 RUN mkdir -p /var/run/postgresql && chown -R postgres:postgres /var/run/postgresql && chmod g+s /var/run/postgresql
-# Wed, 10 May 2017 15:22:19 GMT
+# Mon, 15 May 2017 21:19:05 GMT
 ENV PATH=/usr/lib/postgresql/9.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 10 May 2017 15:22:19 GMT
+# Mon, 15 May 2017 21:19:06 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Wed, 10 May 2017 15:22:21 GMT
+# Mon, 15 May 2017 21:19:07 GMT
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
-# Wed, 10 May 2017 15:22:22 GMT
+# Mon, 15 May 2017 21:19:08 GMT
 VOLUME [/var/lib/postgresql/data]
-# Thu, 11 May 2017 17:20:43 GMT
+# Mon, 15 May 2017 21:19:09 GMT
 COPY file:88406fb9d8f255c2eafecd84ec6558ad6c5da8e54a6228a71d059ef88604493b in /usr/local/bin/ 
-# Thu, 11 May 2017 17:20:46 GMT
+# Mon, 15 May 2017 21:19:11 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Thu, 11 May 2017 17:20:47 GMT
+# Mon, 15 May 2017 21:19:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 11 May 2017 17:20:48 GMT
+# Mon, 15 May 2017 21:19:12 GMT
 EXPOSE 5432/tcp
-# Thu, 11 May 2017 17:20:49 GMT
+# Mon, 15 May 2017 21:19:13 GMT
 CMD ["postgres"]
 ```
 
@@ -93,31 +93,31 @@ CMD ["postgres"]
 		Last Modified: Thu, 11 May 2017 18:13:24 GMT  
 		Size: 4.5 KB (4489 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d58678d9d3ab5c99007ee9b25a5a7ed6021bb7c1555d13e718c9d66470fffdec`  
-		Last Modified: Thu, 11 May 2017 18:13:24 GMT  
+	-	`sha256:ba9f11a5c9fce7fb61ee557016399473708fea2386f87a583d9d8d818d7b1195`  
+		Last Modified: Mon, 15 May 2017 21:37:25 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ece2bc4a78f4a264b1e0b657710fdd73348030c449fd0d9b2a898c7c412b4616`  
-		Last Modified: Thu, 11 May 2017 18:13:38 GMT  
-		Size: 43.3 MB (43262679 bytes)  
+	-	`sha256:dff989d6d72eac64a856ef74c5a110a8bed3594c30b628aed6b0ce3223680532`  
+		Last Modified: Mon, 15 May 2017 21:37:30 GMT  
+		Size: 43.3 MB (43292396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eadac36b8440b924264972ee381a8dd913a8d965dc06e140f0d8fa94695d1345`  
-		Last Modified: Thu, 11 May 2017 18:13:22 GMT  
-		Size: 7.1 KB (7096 bytes)  
+	-	`sha256:82906cc5619b19d53b4be9d210dae4b20069f787c74d497e9ee08f494dcd49c7`  
+		Last Modified: Mon, 15 May 2017 21:37:24 GMT  
+		Size: 7.1 KB (7095 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4da13987a6ca321f93c7f0129f65263596e3d7a49b5358a311275cb65ab7c4fc`  
-		Last Modified: Thu, 11 May 2017 18:13:22 GMT  
+	-	`sha256:e6744ef841dbb484f5041f5a7e2e775b2be3e8fc01e9130873832fdb9df65675`  
+		Last Modified: Mon, 15 May 2017 21:37:23 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd2eab93fc5af7bad0d9ca20fbb399b8fea658245ec0ca74e3baecbdc17ca3b5`  
-		Last Modified: Thu, 11 May 2017 18:13:24 GMT  
+	-	`sha256:eea92d4e4b879ea52f11d3b60573730c0cf051c80591408157b4e9e4b8b33cc7`  
+		Last Modified: Mon, 15 May 2017 21:37:23 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2efd8a94a8d7694c2204d7297a57bf788dc8b99a8b7d7a6754d3acfb6dafd112`  
-		Last Modified: Thu, 11 May 2017 18:13:22 GMT  
+	-	`sha256:4aa1806cedf8728da92ca7771c4d5012e5c396dce41336ce6d423c97b5590614`  
+		Last Modified: Mon, 15 May 2017 21:37:23 GMT  
 		Size: 1.8 KB (1795 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cd1f07c4ebbed75bd19867a29912ede50d8ce5292227c8c2ed730908d10fba9b`  
-		Last Modified: Thu, 11 May 2017 18:13:22 GMT  
+	-	`sha256:d6537d862689cfcefc894b45d3a766f1d6bc49d00810cc9d28b8072a5bfbd8cd`  
+		Last Modified: Mon, 15 May 2017 21:37:23 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
