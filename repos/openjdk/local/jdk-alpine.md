@@ -2,11 +2,12 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:02a5a92fa5115adea89ac131b19335c62afa169504a74b4d5b487e5daec51abb`
-- Created: `2017-03-07T01:04:07.936746608Z`
+- Image ID: `sha256:630b87931295fca3222e62f9dd292527d5266de0489dc22f28a16ff77d3a9850`
+- Created: `2017-05-10T22:40:01.190109744Z`
 - Virtual Size: ~ 100.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
+- Command: `["/bin/sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin`
   - `LANG=C.UTF-8`
