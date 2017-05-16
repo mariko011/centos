@@ -2129,19 +2129,8 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `Tcl`
 - `almost exclusively BSD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.4=9.4.9-0+deb8u1
-'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.9-0+deb8u1.dsc' postgresql-9.4_9.4.9-0+deb8u1.dsc 3525 SHA256:6aca81ec5b66c4f868733ef841a4b78beaf0b581bc0b9ab48f83336cd7d65513
-'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.9.orig.tar.bz2' postgresql-9.4_9.4.9.orig.tar.bz2 17763281 SHA256:c120a62e90214c20d9160da3ca3fbaec97d5f1656f1dd033f60e7297b7a1e1c9
-'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.9-0+deb8u1.debian.tar.xz' postgresql-9.4_9.4.9-0+deb8u1.debian.tar.xz 22404 SHA256:1ae3b228dc8c392a276bcc78ac7e5ae1ecc8cc1bcb5f182478979babd0b20c21
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/postgresql-9.4/9.4.9-0+deb8u1/
-- https://sources.debian.net/src/postgresql-9.4/9.4.9-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `postgresql-common=165+deb8u1`
 
