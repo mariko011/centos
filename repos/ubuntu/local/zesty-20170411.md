@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e31f19d079cc41116bd96fa9d093bd25bb7c680caef3a3d07d5f96f20a9565bb`
-- Created: `2017-04-24T22:58:58.967957015Z`
-- Virtual Size: ~ 90.76 Mb  
+- Image ID: `sha256:3855d928c7071d5fcfb80cb6d937484aa2d17be2521cd6f7972f8a1d3ccd3c0a`
+- Created: `2017-05-15T16:45:22.223491177Z`
+- Virtual Size: ~ 91.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1006,12 +1006,12 @@ $ apt-get source -qq --print-uris sensible-utils=0.0.9
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.9.tar.gz' sensible-utils_0.0.9.tar.gz 74331 SHA256:6fcb5cc0f7f1cf80421840cfa17b1b3fa5afaf3fe852dc984a789023af2f70c6
 ```
 
-### `dpkg` source package: `shadow=1:4.2-3.2ubuntu1`
+### `dpkg` source package: `shadow=1:4.2-3.2ubuntu1.17.04.1`
 
 Binary Packages:
 
-- `login=1:4.2-3.2ubuntu1`
-- `passwd=1:4.2-3.2ubuntu1`
+- `login=1:4.2-3.2ubuntu1.17.04.1`
+- `passwd=1:4.2-3.2ubuntu1.17.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
@@ -1020,10 +1020,10 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 Source:
 
 ```console
-$ apt-get source -qq --print-uris shadow=1:4.2-3.2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu1.dsc' shadow_4.2-3.2ubuntu1.dsc 2432 SHA256:a5d12dae23f17fa0ab7360b7164f1069e2df885a6d5139aead3ffac706b1c5b1
+$ apt-get source -qq --print-uris shadow=1:4.2-3.2ubuntu1.17.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu1.17.04.1.dsc' shadow_4.2-3.2ubuntu1.17.04.1.dsc 2112 SHA256:854978334652556ed69161c50c8956185184d87903f8984f1e3124409b12f283
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu1.debian.tar.xz' shadow_4.2-3.2ubuntu1.debian.tar.xz 504272 SHA256:8cf6c74b2c41c436e98ca63e229002363a5f62b31f3c5698cfdee49361a7bdf5
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu1.17.04.1.debian.tar.xz' shadow_4.2-3.2ubuntu1.17.04.1.debian.tar.xz 506056 SHA256:483b462b219129f8f74d7df70b336c4dbb93adfd9ca538b8c211201305c73aa9
 ```
 
 ### `dpkg` source package: `sqlite3=3.16.2-3`

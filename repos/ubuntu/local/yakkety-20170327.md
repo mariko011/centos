@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1b1ddabad182e52730e29971284da6bd1b580415cdf343a535ee3879204128ec`
-- Created: `2017-04-24T22:57:59.765187031Z`
-- Virtual Size: ~ 105.35 Mb  
+- Image ID: `sha256:8d4c9ae219d01e7338adf9b955679f75dc1b3b399fd2acf0022f9a88ae84c73d`
+- Created: `2017-05-15T16:44:32.159184993Z`
+- Virtual Size: ~ 105.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -51,20 +51,25 @@ $ apt-get source -qq --print-uris adduser=3.113+nmu3ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.113+nmu3ubuntu4.tar.gz' adduser_3.113+nmu3ubuntu4.tar.gz 367980 SHA256:6e4d44c8388b9ba85fc175fa4a48ed43bf6500913c2c631fda0e4419ae63c65a
 ```
 
-### `dpkg` source package: `apt=1.3.4`
+### `dpkg` source package: `apt=1.3.5`
 
 Binary Packages:
 
-- `apt=1.3.4`
-- `libapt-pkg5.0:amd64=1.3.4`
+- `apt=1.3.5`
+- `libapt-pkg5.0:amd64=1.3.5`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=1.3.5
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.3.5.dsc' apt_1.3.5.dsc 2525 SHA256:657a831ae59a6e4cd135c0e10440a59d2e8b2e8e893385d812c53b0e4e687001
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.3.5.tar.xz' apt_1.3.5.tar.xz 2039928 SHA256:bf7bf9b558905f9d799958f71e5a3822ff8424f4517db21d0778ed8dba9e7d21
+```
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -314,11 +319,11 @@ $ apt-get source -qq --print-uris diffutils=1:3.3-3
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.3-3.debian.tar.xz' diffutils_3.3-3.debian.tar.xz 18356 SHA256:a0d1946979196f793a8ca55b21ab7891227de08f15bac2578ed84f4911e8b755
 ```
 
-### `dpkg` source package: `dpkg=1.18.10ubuntu1`
+### `dpkg` source package: `dpkg=1.18.10ubuntu1.1`
 
 Binary Packages:
 
-- `dpkg=1.18.10ubuntu1`
+- `dpkg=1.18.10ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -331,9 +336,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris dpkg=1.18.10ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.10ubuntu1.dsc' dpkg_1.18.10ubuntu1.dsc 2137 SHA256:ef17d9b5009c9f85595ce153592b8aa37f5400459a25144d3325df618b3f6c9e
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.10ubuntu1.tar.xz' dpkg_1.18.10ubuntu1.tar.xz 4589592 SHA256:f10472271ec9cadf37588bdbcee090ed292408b58595cab91ca37368c622d73c
+$ apt-get source -qq --print-uris dpkg=1.18.10ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.10ubuntu1.1.dsc' dpkg_1.18.10ubuntu1.1.dsc 2127 SHA256:ec4b2f2b050379105bcb0d4ca9df7708562d5c2f8d6b5c637d07c4074bbf1b65
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.10ubuntu1.1.tar.xz' dpkg_1.18.10ubuntu1.1.tar.xz 4590852 SHA256:25d2afe13148f08053eae9a518e3b4cfa3a7440305f599a0c70209a854774360
 ```
 
 ### `dpkg` source package: `e2fsprogs=1.43.3-1`
@@ -1001,12 +1006,12 @@ $ apt-get source -qq --print-uris sensible-utils=0.0.9
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.9.tar.gz' sensible-utils_0.0.9.tar.gz 74331 SHA256:6fcb5cc0f7f1cf80421840cfa17b1b3fa5afaf3fe852dc984a789023af2f70c6
 ```
 
-### `dpkg` source package: `shadow=1:4.2-3.2ubuntu1`
+### `dpkg` source package: `shadow=1:4.2-3.2ubuntu1.16.10.1`
 
 Binary Packages:
 
-- `login=1:4.2-3.2ubuntu1`
-- `passwd=1:4.2-3.2ubuntu1`
+- `login=1:4.2-3.2ubuntu1.16.10.1`
+- `passwd=1:4.2-3.2ubuntu1.16.10.1`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
@@ -1015,10 +1020,10 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 Source:
 
 ```console
-$ apt-get source -qq --print-uris shadow=1:4.2-3.2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu1.dsc' shadow_4.2-3.2ubuntu1.dsc 2432 SHA256:a5d12dae23f17fa0ab7360b7164f1069e2df885a6d5139aead3ffac706b1c5b1
+$ apt-get source -qq --print-uris shadow=1:4.2-3.2ubuntu1.16.10.1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu1.16.10.1.dsc' shadow_4.2-3.2ubuntu1.16.10.1.dsc 2112 SHA256:350cf6e44861dbf7c88ee7be94f05571ab2a4c169653ffc9f350fd270e85b08d
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu1.debian.tar.xz' shadow_4.2-3.2ubuntu1.debian.tar.xz 504272 SHA256:8cf6c74b2c41c436e98ca63e229002363a5f62b31f3c5698cfdee49361a7bdf5
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu1.16.10.1.debian.tar.xz' shadow_4.2-3.2ubuntu1.16.10.1.debian.tar.xz 506148 SHA256:b93bd2269f9d7704ca6fdca11116e6e9b84325e13db01bad1c1b31465fd8914d
 ```
 
 ### `dpkg` source package: `sqlite3=3.14.1-1build1`
@@ -1243,11 +1248,11 @@ $ apt-get source -qq --print-uris xz-utils=5.1.1alpha+20120614-2.1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.1.1alpha+20120614-2.1ubuntu1.debian.tar.xz' xz-utils_5.1.1alpha+20120614-2.1ubuntu1.debian.tar.xz 123660 SHA256:69645fe92d26dc716bcef39e7cbf89e1f4261e17b03a8021e32f24732d64fb69
 ```
 
-### `dpkg` source package: `zlib=1:1.2.8.dfsg-2ubuntu5`
+### `dpkg` source package: `zlib=1:1.2.8.dfsg-2ubuntu5.1`
 
 Binary Packages:
 
-- `zlib1g:amd64=1:1.2.8.dfsg-2ubuntu5`
+- `zlib1g:amd64=1:1.2.8.dfsg-2ubuntu5.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1256,8 +1261,8 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris zlib=1:1.2.8.dfsg-2ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.8.dfsg-2ubuntu5.dsc' zlib_1.2.8.dfsg-2ubuntu5.dsc 2687 SHA256:9246b4a58a9112dbe2001df25d53f5fb2ada92cdd34ecd2f1559116f09f5442e
+$ apt-get source -qq --print-uris zlib=1:1.2.8.dfsg-2ubuntu5.1
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.8.dfsg-2ubuntu5.1.dsc' zlib_1.2.8.dfsg-2ubuntu5.1.dsc 2695 SHA256:196f966e1f717a1a2c46c46cd8c841e569a6f99d11879961bf232d52a04540cd
 'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.8.dfsg.orig.tar.gz' zlib_1.2.8.dfsg.orig.tar.gz 361943 SHA256:2caecc2c3f1ef8b87b8f72b128a03e61c307e8c14f5ec9b422ef7914ba75cf9f
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.8.dfsg-2ubuntu5.debian.tar.xz' zlib_1.2.8.dfsg-2ubuntu5.debian.tar.xz 15540 SHA256:2b3f844f2db293cf76cc676c9bab9918aaaba5e19a92378865ac54c562984d13
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.8.dfsg-2ubuntu5.1.debian.tar.xz' zlib_1.2.8.dfsg-2ubuntu5.1.debian.tar.xz 15532 SHA256:f981824f239b4b329a587502e42243eb9e0bcd89c376d8d9877297995c3a1b4d
 ```
