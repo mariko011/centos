@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5c3e968d73c81401d109ba4cd773ab9bb2c88be0966d2bec52b8699a7e8bdc66`
-- Created: `2017-04-12T21:47:29.135270939Z`
-- Virtual Size: ~ 279.64 Mb  
+- Image ID: `sha256:6275459e664a074053e66fa22d7ae5fc7d81d9b02b93792f890cf6db086b0085`
+- Created: `2017-05-15T17:05:46.558586643Z`
+- Virtual Size: ~ 279.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -189,11 +189,11 @@ $ apt-get source -qq --print-uris base-passwd=3.5.33
 'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.5.33.tar.xz' base-passwd_3.5.33.tar.xz 48832 SHA256:da505760962eb27477f1854f9f818284043cf6cea703b2301a00b8d0ed8303bb
 ```
 
-### `dpkg` source package: `bash=4.3-7ubuntu1.5`
+### `dpkg` source package: `bash=4.3-7ubuntu1.6`
 
 Binary Packages:
 
-- `bash=4.3-7ubuntu1.5`
+- `bash=4.3-7ubuntu1.6`
 
 Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
@@ -202,10 +202,10 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris bash=4.3-7ubuntu1.5
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-7ubuntu1.5.dsc' bash_4.3-7ubuntu1.5.dsc 2259 SHA256:c24e9ea41fa706ff657de58f9232d6db823bff7e56b2d55062f458bcdcb20914
+$ apt-get source -qq --print-uris bash=4.3-7ubuntu1.6
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-7ubuntu1.6.dsc' bash_4.3-7ubuntu1.6.dsc 2265 SHA256:3557865003176d6b3301797e4cbb13a0b37e4bba377b6755240adb6f4fb8b8f5
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3.orig.tar.gz' bash_4.3.orig.tar.gz 7516231 SHA256:b2fe79ddf9e7abdb4695e3070afa866d2a94a58d1cc9d731585330c753815491
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-7ubuntu1.5.debian.tar.gz' bash_4.3-7ubuntu1.5.debian.tar.gz 97906 SHA256:6cd025d14f7ad1accef69602acebdadb79b4b0a332c97da200be61978920c7d6
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-7ubuntu1.6.debian.tar.gz' bash_4.3-7ubuntu1.6.debian.tar.gz 97573 SHA256:d70390057c8c5a9a37b89c8fc6f4e7f15d62cb430b61d2741897529c91572fff
 ```
 
 ### `dpkg` source package: `busybox=1:1.21.0-1ubuntu1`
@@ -835,12 +835,12 @@ $ apt-get source -qq --print-uris gdbm=1.8.3-12build1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.8.3-12build1.debian.tar.bz2' gdbm_1.8.3-12build1.debian.tar.bz2 15091 SHA256:5e511c9a6419501dd31e21af84431f41f8785e0f48d6475ebfc48fa49f20fdba
 ```
 
-### `dpkg` source package: `git=1:1.9.1-1ubuntu0.4`
+### `dpkg` source package: `git=1:1.9.1-1ubuntu0.5`
 
 Binary Packages:
 
-- `git=1:1.9.1-1ubuntu0.4`
-- `git-man=1:1.9.1-1ubuntu0.4`
+- `git=1:1.9.1-1ubuntu0.5`
+- `git-man=1:1.9.1-1ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -866,10 +866,10 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris git=1:1.9.1-1ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1-1ubuntu0.4.dsc' git_1.9.1-1ubuntu0.4.dsc 2794 SHA256:997f3b157fdd4fda0a7a99e6fbbc8e29425ae6c04a7c2adb2708ff44d39eb0ba
+$ apt-get source -qq --print-uris git=1:1.9.1-1ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1-1ubuntu0.5.dsc' git_1.9.1-1ubuntu0.5.dsc 2794 SHA256:81669598604a97cbc41b36f6c8af7e0dc41d63f24031a0f216581a0d8025e08c
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1.orig.tar.xz' git_1.9.1.orig.tar.xz 3384080 SHA256:f962fbce8c049f94ece1d1845cba1528c13ff82de7cc8d23cddb3d0c93c3a77b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1-1ubuntu0.4.debian.tar.gz' git_1.9.1-1ubuntu0.4.debian.tar.gz 618634 SHA256:f5c3bb7b641890e0444b68c293e07b6888ff71f635ff312964338d1863955927
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_1.9.1-1ubuntu0.5.debian.tar.gz' git_1.9.1-1ubuntu0.5.debian.tar.gz 620102 SHA256:a87ea2e38c3f64f1ba2e80a05cf9ae611fd1f913f4245935b801afb9375cfb88
 ```
 
 ### `dpkg` source package: `gnupg=1.4.16-1ubuntu2.4`
@@ -2584,11 +2584,11 @@ $ apt-get source -qq --print-uris rsyslog=7.4.4-1ubuntu2.6
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rsyslog/rsyslog_7.4.4-1ubuntu2.6.debian.tar.gz' rsyslog_7.4.4-1ubuntu2.6.debian.tar.gz 42571 SHA256:c631301087a7028a53e394e2790139dde491528501bcb0a83a9848c9a3671681
 ```
 
-### `dpkg` source package: `rtmpdump=2.4+20121230.gitdf6c518-1`
+### `dpkg` source package: `rtmpdump=2.4+20121230.gitdf6c518-1ubuntu0.1`
 
 Binary Packages:
 
-- `librtmp0:amd64=2.4+20121230.gitdf6c518-1`
+- `librtmp0:amd64=2.4+20121230.gitdf6c518-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/librtmp0/copyright`)
 
@@ -2598,10 +2598,10 @@ Licenses: (parsed from: `/usr/share/doc/librtmp0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris rtmpdump=2.4+20121230.gitdf6c518-1
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rtmpdump/rtmpdump_2.4+20121230.gitdf6c518-1.dsc' rtmpdump_2.4+20121230.gitdf6c518-1.dsc 1591 SHA256:46ae07dfb44863577c11273e650622d18aa74bdd08a7a0195c34469b555c24a0
+$ apt-get source -qq --print-uris rtmpdump=2.4+20121230.gitdf6c518-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rtmpdump/rtmpdump_2.4+20121230.gitdf6c518-1ubuntu0.1.dsc' rtmpdump_2.4+20121230.gitdf6c518-1ubuntu0.1.dsc 2304 SHA256:9dfc51db7b2c96692f012484c7c93055bbca32731165e2a728fd84254c99830d
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rtmpdump/rtmpdump_2.4+20121230.gitdf6c518.orig.tar.gz' rtmpdump_2.4+20121230.gitdf6c518.orig.tar.gz 140910 SHA256:c19aa80eea986aa5cc34e240d78adb35797b7d403584162b985c5d68f073ba39
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rtmpdump/rtmpdump_2.4+20121230.gitdf6c518-1.debian.tar.gz' rtmpdump_2.4+20121230.gitdf6c518-1.debian.tar.gz 5786 SHA256:c3fe433233e6a84acb043e7d017c02c45a655486209b08a5c65e762f2b8f2a14
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rtmpdump/rtmpdump_2.4+20121230.gitdf6c518-1ubuntu0.1.debian.tar.gz' rtmpdump_2.4+20121230.gitdf6c518-1ubuntu0.1.debian.tar.gz 8008 SHA256:9589ae0d5b5de5d71239932ff39fb7a5a3292ae4c2d27c45f2320f7bca7bdc38
 ```
 
 ### `dpkg` source package: `sed=4.2.2-4ubuntu1`
@@ -2660,12 +2660,12 @@ $ apt-get source -qq --print-uris serf=1.3.3-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/serf/serf_1.3.3-1ubuntu0.1.debian.tar.gz' serf_1.3.3-1ubuntu0.1.debian.tar.gz 24591 SHA256:123a1bec0a00a802f34ba9d1bf748b338e4826c72b97bdf9794dc173af64f4f1
 ```
 
-### `dpkg` source package: `shadow=1:4.1.5.1-1ubuntu9.2`
+### `dpkg` source package: `shadow=1:4.1.5.1-1ubuntu9.4`
 
 Binary Packages:
 
-- `login=1:4.1.5.1-1ubuntu9.2`
-- `passwd=1:4.1.5.1-1ubuntu9.2`
+- `login=1:4.1.5.1-1ubuntu9.4`
+- `passwd=1:4.1.5.1-1ubuntu9.4`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 

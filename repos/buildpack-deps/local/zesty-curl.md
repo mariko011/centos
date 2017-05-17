@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8f9aefc8a6224bc4464f09f5fa9ee6ad99dade04ba8b459cb0b159e8aa5d3c21`
-- Created: `2017-04-24T23:21:48.476046719Z`
-- Virtual Size: ~ 108.31 Mb  
+- Image ID: `sha256:4e326a397f8e57ff0d264002c3ec86bcd825856a325d0abecd3f60ec3df42224`
+- Created: `2017-05-15T17:41:37.865213561Z`
+- Virtual Size: ~ 108.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1451,25 +1451,19 @@ $ apt-get source -qq --print-uris sensible-utils=0.0.9
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.9.tar.gz' sensible-utils_0.0.9.tar.gz 74331 SHA256:6fcb5cc0f7f1cf80421840cfa17b1b3fa5afaf3fe852dc984a789023af2f70c6
 ```
 
-### `dpkg` source package: `shadow=1:4.2-3.2ubuntu1`
+### `dpkg` source package: `shadow=1:4.2-3.2ubuntu1.17.04.1`
 
 Binary Packages:
 
-- `login=1:4.2-3.2ubuntu1`
-- `passwd=1:4.2-3.2ubuntu1`
+- `login=1:4.2-3.2ubuntu1.17.04.1`
+- `passwd=1:4.2-3.2ubuntu1.17.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.2-3.2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu1.dsc' shadow_4.2-3.2ubuntu1.dsc 2432 SHA256:a5d12dae23f17fa0ab7360b7164f1069e2df885a6d5139aead3ffac706b1c5b1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu1.debian.tar.xz' shadow_4.2-3.2ubuntu1.debian.tar.xz 504272 SHA256:8cf6c74b2c41c436e98ca63e229002363a5f62b31f3c5698cfdee49361a7bdf5
-```
 
 ### `dpkg` source package: `sqlite3=3.16.2-3`
 

@@ -121,18 +121,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4.2
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.2.dsc' apt_1.4.2.dsc 2549 SHA256:29cc5289fb5c70fc67e7485187074cb197ae29bcded8bdf42257b23dbb776324
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.2.tar.xz' apt_1.4.2.tar.xz 2076640 SHA256:10a5ce5df8bfb6ee1e6af05478557c8917ed7be3fd7652433201729c24f4ef30
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.4.2/
-- https://sources.debian.net/src/apt/1.4.2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `atk1.0=2.22.0-1`
 
@@ -389,19 +379,8 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bash=4.4-4
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4-4.dsc' bash_4.4-4.dsc 2251 SHA256:368f91e573ba31e006f6bb21309c96ae126ab192f717601627ecfb24cb68b6a0
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4.orig.tar.xz' bash_4.4.orig.tar.xz 4878580 SHA256:819ebb6a23799e9e4ca56ac579778c46902005bd5ade4f131ed293d9f77108e7
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4-4.debian.tar.xz' bash_4.4-4.debian.tar.xz 64420 SHA256:2af25aacebdff530a81810cb4c4f9f9b8bf9c800c9b473ce81577fd58bce825c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/bash/4.4-4/
-- https://sources.debian.net/src/bash/4.4-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `binutils=2.28-4`
 
@@ -1082,19 +1061,8 @@ Licenses: (parsed from: `/usr/share/doc/libfftw3-double3/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris fftw3=3.3.5-3
-'http://deb.debian.org/debian/pool/main/f/fftw3/fftw3_3.3.5-3.dsc' fftw3_3.3.5-3.dsc 2880 SHA256:6cfd2233e6ad4f12b922c785f5a1ce64ada28059221b67667159aafa33c70bd9
-'http://deb.debian.org/debian/pool/main/f/fftw3/fftw3_3.3.5.orig.tar.gz' fftw3_3.3.5.orig.tar.gz 4148447 SHA256:8ecfe1b04732ec3f5b7d279fdb8efcad536d555f9d1e8fabd027037d45ea8bcf
-'http://deb.debian.org/debian/pool/main/f/fftw3/fftw3_3.3.5-3.debian.tar.xz' fftw3_3.3.5-3.debian.tar.xz 12700 SHA256:7d5098f2740b6648df4cc000fa5d7a358296e5bd7c9287b7be8fe7fee2a251ee
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/fftw3/3.3.5-3/
-- https://sources.debian.net/src/fftw3/3.3.5-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `file=1:5.30-1`
 
@@ -2004,19 +1972,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.7.4+dfsg-6
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-6.dsc' imagemagick_6.9.7.4+dfsg-6.dsc 5133 SHA256:2573ffd6ac29c09ae79b75d7c94b48475e96a4e72effa7103853c477a82a053e
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg.orig.tar.xz' imagemagick_6.9.7.4+dfsg.orig.tar.xz 8929800 SHA256:47fb2cdd26f5913318c4504f16ea363e04d1f400dda9ec52e461ab661d724026
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-6.debian.tar.xz' imagemagick_6.9.7.4+dfsg-6.debian.tar.xz 207516 SHA256:f7153878f6c2675fa8af533ab1ba474cd11cbcf75a35934483999ac3df784441
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/imagemagick/8:6.9.7.4+dfsg-6/
-- https://sources.debian.net/src/imagemagick/8:6.9.7.4+dfsg-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9.4-2`
 
@@ -4547,19 +4504,8 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.6=9.6.2-2
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.2-2.dsc' postgresql-9.6_9.6.2-2.dsc 3666 SHA256:8d9b494e9c06c7e8772118842602aa864cc85cab19960a6a9b52585ead477971
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.2.orig.tar.bz2' postgresql-9.6_9.6.2.orig.tar.bz2 19478040 SHA256:0187b5184be1c09034e74e44761505e52357248451b0c854dddec6c231fe50c9
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.2-2.debian.tar.xz' postgresql-9.6_9.6.2-2.debian.tar.xz 23508 SHA256:3c571fe797c63d57177178dacb541abcbf944b71aa3cd0d4141d8ed25ec0d86e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/postgresql-9.6/9.6.2-2/
-- https://sources.debian.net/src/postgresql-9.6/9.6.2-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `procps=2:3.3.12-3`
 
@@ -4748,19 +4694,8 @@ Licenses: (parsed from: `/usr/share/doc/libreadline-dev/copyright`, `/usr/share/
 - `GFDL`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris readline=7.0-2
-'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0-2.dsc' readline_7.0-2.dsc 2538 SHA256:78d9b2eecc7f4b2bf55f0aeab67e2ae34824ab9421309bd92404ffaff37f9872
-'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0.orig.tar.gz' readline_7.0.orig.tar.gz 2910016 SHA256:750d437185286f40a369e1e4f4764eda932b9459b5ec9a731628393dd3d32334
-'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0-2.debian.tar.xz' readline_7.0-2.debian.tar.xz 29072 SHA256:0380c193c6fc085e61ab6ad3eee7e1b8b441a7bf195014ddb32203bd749ea3f9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/readline/7.0-2/
-- https://sources.debian.net/src/readline/7.0-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-1`
 

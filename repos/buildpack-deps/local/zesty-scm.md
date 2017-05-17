@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9a096e5d3cb45f390bfb8a7cd423dcd8115434d397145d77533e69e1e3374679`
-- Created: `2017-04-24T23:22:24.627789763Z`
-- Virtual Size: ~ 236.77 Mb  
+- Image ID: `sha256:361a4b8a97642ea071e9f4d0319b6b1b824d610d1d23d22c22a17f84dc83fc7c`
+- Created: `2017-05-15T17:42:30.315229208Z`
+- Virtual Size: ~ 237.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -612,12 +612,12 @@ $ apt-get source -qq --print-uris gdbm=1.8.3-14
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.8.3-14.debian.tar.xz' gdbm_1.8.3-14.debian.tar.xz 15308 SHA256:1c0570dd53947ea5980111f51b67356d647c4f21c502443b02397041dde0bf31
 ```
 
-### `dpkg` source package: `git=1:2.11.0-2`
+### `dpkg` source package: `git=1:2.11.0-2ubuntu0.1`
 
 Binary Packages:
 
-- `git=1:2.11.0-2`
-- `git-man=1:2.11.0-2`
+- `git=1:2.11.0-2ubuntu0.1`
+- `git-man=1:2.11.0-2ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -643,10 +643,10 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris git=1:2.11.0-2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.11.0-2.dsc' git_2.11.0-2.dsc 2871 SHA256:98551f60e49b1447ea2a937cd29c359cfc3de963150dde9343e45c6414b31ddd
+$ apt-get source -qq --print-uris git=1:2.11.0-2ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.11.0-2ubuntu0.1.dsc' git_2.11.0-2ubuntu0.1.dsc 2988 SHA256:d1ce5ee9ebaae5ad7b451b0479590b22fa9e4e1f6b7135d09ffad8e5e78edff2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.11.0.orig.tar.xz' git_2.11.0.orig.tar.xz 4197984 SHA256:7e7e8d69d494892373b87007674be5820a4bc1ef596a0117d03ea3169119fd0b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.11.0-2.debian.tar.xz' git_2.11.0-2.debian.tar.xz 519184 SHA256:2787c4f6a8ceeb0dc78edaffbc7320947bc9674a784c69c45736a05f95aae346
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.11.0-2ubuntu0.1.debian.tar.xz' git_2.11.0-2ubuntu0.1.debian.tar.xz 520432 SHA256:973b89990ad0a2ebcf5aa9da24e7e04c772535b32587afc8b6ba4b1da89ffae8
 ```
 
 ### `dpkg` source package: `glibc=2.24-9ubuntu2`
@@ -1807,25 +1807,19 @@ Licenses: (parsed from: `/usr/share/doc/libserf-1-1/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `shadow=1:4.2-3.2ubuntu1`
+### `dpkg` source package: `shadow=1:4.2-3.2ubuntu1.17.04.1`
 
 Binary Packages:
 
-- `login=1:4.2-3.2ubuntu1`
-- `passwd=1:4.2-3.2ubuntu1`
+- `login=1:4.2-3.2ubuntu1.17.04.1`
+- `passwd=1:4.2-3.2ubuntu1.17.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.2-3.2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu1.dsc' shadow_4.2-3.2ubuntu1.dsc 2432 SHA256:a5d12dae23f17fa0ab7360b7164f1069e2df885a6d5139aead3ffac706b1c5b1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu1.debian.tar.xz' shadow_4.2-3.2ubuntu1.debian.tar.xz 504272 SHA256:8cf6c74b2c41c436e98ca63e229002363a5f62b31f3c5698cfdee49361a7bdf5
-```
 
 ### `dpkg` source package: `six=1.10.0-3`
 
