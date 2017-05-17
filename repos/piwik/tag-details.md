@@ -2,35 +2,35 @@
 
 # Tags of `piwik`
 
--	[`piwik:3.0.3-apache`](#piwik303-apache)
+-	[`piwik:3.0.4-apache`](#piwik304-apache)
 -	[`piwik:3.0-apache`](#piwik30-apache)
 -	[`piwik:3-apache`](#piwik3-apache)
 -	[`piwik:apache`](#piwikapache)
--	[`piwik:3.0.3`](#piwik303)
+-	[`piwik:3.0.4`](#piwik304)
 -	[`piwik:3.0`](#piwik30)
 -	[`piwik:3`](#piwik3)
 -	[`piwik:latest`](#piwiklatest)
--	[`piwik:3.0.3-fpm`](#piwik303-fpm)
+-	[`piwik:3.0.4-fpm`](#piwik304-fpm)
 -	[`piwik:3.0-fpm`](#piwik30-fpm)
 -	[`piwik:3-fpm`](#piwik3-fpm)
 -	[`piwik:fpm`](#piwikfpm)
 
-## `piwik:3.0.3-apache`
+## `piwik:3.0.4-apache`
 
 ```console
-$ docker pull piwik@sha256:4e7c2312f712ab07882bcbeeb3bed5811ca0670f17bd20a37d06f5e7d64a7fa5
+$ docker pull piwik@sha256:cdeda0739642ad6e90c3ff5db42e0e599f4aa9e0b0c44657ba6caf0de00dcf63
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `piwik:3.0.3-apache` - linux; amd64
+### `piwik:3.0.4-apache` - linux; amd64
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **195.8 MB (195773038 bytes)**  
+-	Total Size: **195.1 MB (195138007 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8555fcdddeeca73632398cc75531be0783e16e1445cac5c16f64c1be82ab2640`
+-	Image ID: `sha256:9f19c5de5b45d30deb6f1ab3cb2c224a871d714f4d21b4279acb5ca348934338`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -105,21 +105,21 @@ RUN apt-get update && apt-get install -y       libjpeg-dev       libfreetype6-de
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/  	&& docker-php-ext-install -j$(nproc) gd mbstring mysql pdo_mysql zip ldap opcache
 # Sat, 13 May 2017 04:57:23 GMT
 RUN pecl install APCu geoip
-# Sat, 13 May 2017 04:57:24 GMT
-ENV PIWIK_VERSION=3.0.3
-# Sat, 13 May 2017 04:57:32 GMT
+# Wed, 17 May 2017 21:12:16 GMT
+ENV PIWIK_VERSION=3.0.4
+# Wed, 17 May 2017 21:12:25 GMT
 RUN curl -fsSL -o piwik.tar.gz       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz"  && curl -fsSL -o piwik.tar.gz.asc       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237  && gpg --batch --verify piwik.tar.gz.asc piwik.tar.gz  && rm -r "$GNUPGHOME" piwik.tar.gz.asc  && tar -xzf piwik.tar.gz -C /usr/src/  && rm piwik.tar.gz
-# Sat, 13 May 2017 04:57:34 GMT
+# Wed, 17 May 2017 21:12:26 GMT
 COPY file:c38913b1c220a089fa0b50e33e71a81a441978dfb47dd6b00cf105d42f87f82b in /usr/local/etc/php/php.ini 
-# Sat, 13 May 2017 04:57:37 GMT
+# Wed, 17 May 2017 21:12:28 GMT
 RUN curl -fsSL -o /usr/src/piwik/misc/GeoIPCity.dat.gz http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz  && gunzip /usr/src/piwik/misc/GeoIPCity.dat.gz
-# Sat, 13 May 2017 04:57:38 GMT
+# Wed, 17 May 2017 21:12:30 GMT
 COPY file:624ec542e8b52694362740314ac6948ac2d59a5d302df84808cc0cfbddea1e59 in /entrypoint.sh 
-# Sat, 13 May 2017 04:57:39 GMT
+# Wed, 17 May 2017 21:12:31 GMT
 VOLUME [/var/www/html]
-# Sat, 13 May 2017 04:57:40 GMT
+# Wed, 17 May 2017 21:12:32 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 13 May 2017 04:57:41 GMT
+# Wed, 17 May 2017 21:12:33 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -188,27 +188,27 @@ CMD ["apache2-foreground"]
 		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
 		Size: 46.8 KB (46795 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37fcac31446f2cd1b84e236224cd5646fd7dad8a20c59998b52c0f7239ab97ae`  
-		Last Modified: Sat, 13 May 2017 04:59:49 GMT  
-		Size: 14.9 MB (14876026 bytes)  
+	-	`sha256:4fc0a404b19739f3f815dea2c24e5b55ed134874d1afadccef94e8f9b9f10365`  
+		Last Modified: Wed, 17 May 2017 21:13:39 GMT  
+		Size: 14.2 MB (14240999 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84cc64e53dcb6ceedccf612469ef0bc533a159e2a16eb95f7a615be260816652`  
-		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
-		Size: 275.0 B  
+	-	`sha256:03e55d4d05128e6b3cd97dcfd9d341e1d0cc5378ec5660cbec486fe9727b056e`  
+		Last Modified: Wed, 17 May 2017 21:13:36 GMT  
+		Size: 272.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b1fd6e42fb29806ae85888358e8c462424e0028dace930980297b41995cb978`  
-		Last Modified: Sat, 13 May 2017 04:59:46 GMT  
-		Size: 13.0 MB (12983924 bytes)  
+	-	`sha256:ba78ff1175af155f7f9c2e053ca6af48f8ddc050946af24a7d1c85d74ea2075f`  
+		Last Modified: Wed, 17 May 2017 21:13:38 GMT  
+		Size: 13.0 MB (12983923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7956df207c89e737dfd98dfcb13113f0b6358a2b640621c7194361ea95c1693`  
-		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
+	-	`sha256:d11bd9214ab903ea1db40260ba581af16f03b1e10f0189e487c7465855e7f9db`  
+		Last Modified: Wed, 17 May 2017 21:13:35 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `piwik:3.0-apache`
 
 ```console
-$ docker pull piwik@sha256:4e7c2312f712ab07882bcbeeb3bed5811ca0670f17bd20a37d06f5e7d64a7fa5
+$ docker pull piwik@sha256:cdeda0739642ad6e90c3ff5db42e0e599f4aa9e0b0c44657ba6caf0de00dcf63
 ```
 
 -	Platforms:
@@ -218,9 +218,9 @@ $ docker pull piwik@sha256:4e7c2312f712ab07882bcbeeb3bed5811ca0670f17bd20a37d06f
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **195.8 MB (195773038 bytes)**  
+-	Total Size: **195.1 MB (195138007 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8555fcdddeeca73632398cc75531be0783e16e1445cac5c16f64c1be82ab2640`
+-	Image ID: `sha256:9f19c5de5b45d30deb6f1ab3cb2c224a871d714f4d21b4279acb5ca348934338`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -295,21 +295,21 @@ RUN apt-get update && apt-get install -y       libjpeg-dev       libfreetype6-de
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/  	&& docker-php-ext-install -j$(nproc) gd mbstring mysql pdo_mysql zip ldap opcache
 # Sat, 13 May 2017 04:57:23 GMT
 RUN pecl install APCu geoip
-# Sat, 13 May 2017 04:57:24 GMT
-ENV PIWIK_VERSION=3.0.3
-# Sat, 13 May 2017 04:57:32 GMT
+# Wed, 17 May 2017 21:12:16 GMT
+ENV PIWIK_VERSION=3.0.4
+# Wed, 17 May 2017 21:12:25 GMT
 RUN curl -fsSL -o piwik.tar.gz       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz"  && curl -fsSL -o piwik.tar.gz.asc       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237  && gpg --batch --verify piwik.tar.gz.asc piwik.tar.gz  && rm -r "$GNUPGHOME" piwik.tar.gz.asc  && tar -xzf piwik.tar.gz -C /usr/src/  && rm piwik.tar.gz
-# Sat, 13 May 2017 04:57:34 GMT
+# Wed, 17 May 2017 21:12:26 GMT
 COPY file:c38913b1c220a089fa0b50e33e71a81a441978dfb47dd6b00cf105d42f87f82b in /usr/local/etc/php/php.ini 
-# Sat, 13 May 2017 04:57:37 GMT
+# Wed, 17 May 2017 21:12:28 GMT
 RUN curl -fsSL -o /usr/src/piwik/misc/GeoIPCity.dat.gz http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz  && gunzip /usr/src/piwik/misc/GeoIPCity.dat.gz
-# Sat, 13 May 2017 04:57:38 GMT
+# Wed, 17 May 2017 21:12:30 GMT
 COPY file:624ec542e8b52694362740314ac6948ac2d59a5d302df84808cc0cfbddea1e59 in /entrypoint.sh 
-# Sat, 13 May 2017 04:57:39 GMT
+# Wed, 17 May 2017 21:12:31 GMT
 VOLUME [/var/www/html]
-# Sat, 13 May 2017 04:57:40 GMT
+# Wed, 17 May 2017 21:12:32 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 13 May 2017 04:57:41 GMT
+# Wed, 17 May 2017 21:12:33 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -378,27 +378,27 @@ CMD ["apache2-foreground"]
 		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
 		Size: 46.8 KB (46795 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37fcac31446f2cd1b84e236224cd5646fd7dad8a20c59998b52c0f7239ab97ae`  
-		Last Modified: Sat, 13 May 2017 04:59:49 GMT  
-		Size: 14.9 MB (14876026 bytes)  
+	-	`sha256:4fc0a404b19739f3f815dea2c24e5b55ed134874d1afadccef94e8f9b9f10365`  
+		Last Modified: Wed, 17 May 2017 21:13:39 GMT  
+		Size: 14.2 MB (14240999 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84cc64e53dcb6ceedccf612469ef0bc533a159e2a16eb95f7a615be260816652`  
-		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
-		Size: 275.0 B  
+	-	`sha256:03e55d4d05128e6b3cd97dcfd9d341e1d0cc5378ec5660cbec486fe9727b056e`  
+		Last Modified: Wed, 17 May 2017 21:13:36 GMT  
+		Size: 272.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b1fd6e42fb29806ae85888358e8c462424e0028dace930980297b41995cb978`  
-		Last Modified: Sat, 13 May 2017 04:59:46 GMT  
-		Size: 13.0 MB (12983924 bytes)  
+	-	`sha256:ba78ff1175af155f7f9c2e053ca6af48f8ddc050946af24a7d1c85d74ea2075f`  
+		Last Modified: Wed, 17 May 2017 21:13:38 GMT  
+		Size: 13.0 MB (12983923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7956df207c89e737dfd98dfcb13113f0b6358a2b640621c7194361ea95c1693`  
-		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
+	-	`sha256:d11bd9214ab903ea1db40260ba581af16f03b1e10f0189e487c7465855e7f9db`  
+		Last Modified: Wed, 17 May 2017 21:13:35 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `piwik:3-apache`
 
 ```console
-$ docker pull piwik@sha256:4e7c2312f712ab07882bcbeeb3bed5811ca0670f17bd20a37d06f5e7d64a7fa5
+$ docker pull piwik@sha256:cdeda0739642ad6e90c3ff5db42e0e599f4aa9e0b0c44657ba6caf0de00dcf63
 ```
 
 -	Platforms:
@@ -408,9 +408,9 @@ $ docker pull piwik@sha256:4e7c2312f712ab07882bcbeeb3bed5811ca0670f17bd20a37d06f
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **195.8 MB (195773038 bytes)**  
+-	Total Size: **195.1 MB (195138007 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8555fcdddeeca73632398cc75531be0783e16e1445cac5c16f64c1be82ab2640`
+-	Image ID: `sha256:9f19c5de5b45d30deb6f1ab3cb2c224a871d714f4d21b4279acb5ca348934338`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -485,21 +485,21 @@ RUN apt-get update && apt-get install -y       libjpeg-dev       libfreetype6-de
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/  	&& docker-php-ext-install -j$(nproc) gd mbstring mysql pdo_mysql zip ldap opcache
 # Sat, 13 May 2017 04:57:23 GMT
 RUN pecl install APCu geoip
-# Sat, 13 May 2017 04:57:24 GMT
-ENV PIWIK_VERSION=3.0.3
-# Sat, 13 May 2017 04:57:32 GMT
+# Wed, 17 May 2017 21:12:16 GMT
+ENV PIWIK_VERSION=3.0.4
+# Wed, 17 May 2017 21:12:25 GMT
 RUN curl -fsSL -o piwik.tar.gz       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz"  && curl -fsSL -o piwik.tar.gz.asc       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237  && gpg --batch --verify piwik.tar.gz.asc piwik.tar.gz  && rm -r "$GNUPGHOME" piwik.tar.gz.asc  && tar -xzf piwik.tar.gz -C /usr/src/  && rm piwik.tar.gz
-# Sat, 13 May 2017 04:57:34 GMT
+# Wed, 17 May 2017 21:12:26 GMT
 COPY file:c38913b1c220a089fa0b50e33e71a81a441978dfb47dd6b00cf105d42f87f82b in /usr/local/etc/php/php.ini 
-# Sat, 13 May 2017 04:57:37 GMT
+# Wed, 17 May 2017 21:12:28 GMT
 RUN curl -fsSL -o /usr/src/piwik/misc/GeoIPCity.dat.gz http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz  && gunzip /usr/src/piwik/misc/GeoIPCity.dat.gz
-# Sat, 13 May 2017 04:57:38 GMT
+# Wed, 17 May 2017 21:12:30 GMT
 COPY file:624ec542e8b52694362740314ac6948ac2d59a5d302df84808cc0cfbddea1e59 in /entrypoint.sh 
-# Sat, 13 May 2017 04:57:39 GMT
+# Wed, 17 May 2017 21:12:31 GMT
 VOLUME [/var/www/html]
-# Sat, 13 May 2017 04:57:40 GMT
+# Wed, 17 May 2017 21:12:32 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 13 May 2017 04:57:41 GMT
+# Wed, 17 May 2017 21:12:33 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -568,27 +568,27 @@ CMD ["apache2-foreground"]
 		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
 		Size: 46.8 KB (46795 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37fcac31446f2cd1b84e236224cd5646fd7dad8a20c59998b52c0f7239ab97ae`  
-		Last Modified: Sat, 13 May 2017 04:59:49 GMT  
-		Size: 14.9 MB (14876026 bytes)  
+	-	`sha256:4fc0a404b19739f3f815dea2c24e5b55ed134874d1afadccef94e8f9b9f10365`  
+		Last Modified: Wed, 17 May 2017 21:13:39 GMT  
+		Size: 14.2 MB (14240999 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84cc64e53dcb6ceedccf612469ef0bc533a159e2a16eb95f7a615be260816652`  
-		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
-		Size: 275.0 B  
+	-	`sha256:03e55d4d05128e6b3cd97dcfd9d341e1d0cc5378ec5660cbec486fe9727b056e`  
+		Last Modified: Wed, 17 May 2017 21:13:36 GMT  
+		Size: 272.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b1fd6e42fb29806ae85888358e8c462424e0028dace930980297b41995cb978`  
-		Last Modified: Sat, 13 May 2017 04:59:46 GMT  
-		Size: 13.0 MB (12983924 bytes)  
+	-	`sha256:ba78ff1175af155f7f9c2e053ca6af48f8ddc050946af24a7d1c85d74ea2075f`  
+		Last Modified: Wed, 17 May 2017 21:13:38 GMT  
+		Size: 13.0 MB (12983923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7956df207c89e737dfd98dfcb13113f0b6358a2b640621c7194361ea95c1693`  
-		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
+	-	`sha256:d11bd9214ab903ea1db40260ba581af16f03b1e10f0189e487c7465855e7f9db`  
+		Last Modified: Wed, 17 May 2017 21:13:35 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `piwik:apache`
 
 ```console
-$ docker pull piwik@sha256:4e7c2312f712ab07882bcbeeb3bed5811ca0670f17bd20a37d06f5e7d64a7fa5
+$ docker pull piwik@sha256:cdeda0739642ad6e90c3ff5db42e0e599f4aa9e0b0c44657ba6caf0de00dcf63
 ```
 
 -	Platforms:
@@ -598,9 +598,9 @@ $ docker pull piwik@sha256:4e7c2312f712ab07882bcbeeb3bed5811ca0670f17bd20a37d06f
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **195.8 MB (195773038 bytes)**  
+-	Total Size: **195.1 MB (195138007 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8555fcdddeeca73632398cc75531be0783e16e1445cac5c16f64c1be82ab2640`
+-	Image ID: `sha256:9f19c5de5b45d30deb6f1ab3cb2c224a871d714f4d21b4279acb5ca348934338`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -675,21 +675,21 @@ RUN apt-get update && apt-get install -y       libjpeg-dev       libfreetype6-de
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/  	&& docker-php-ext-install -j$(nproc) gd mbstring mysql pdo_mysql zip ldap opcache
 # Sat, 13 May 2017 04:57:23 GMT
 RUN pecl install APCu geoip
-# Sat, 13 May 2017 04:57:24 GMT
-ENV PIWIK_VERSION=3.0.3
-# Sat, 13 May 2017 04:57:32 GMT
+# Wed, 17 May 2017 21:12:16 GMT
+ENV PIWIK_VERSION=3.0.4
+# Wed, 17 May 2017 21:12:25 GMT
 RUN curl -fsSL -o piwik.tar.gz       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz"  && curl -fsSL -o piwik.tar.gz.asc       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237  && gpg --batch --verify piwik.tar.gz.asc piwik.tar.gz  && rm -r "$GNUPGHOME" piwik.tar.gz.asc  && tar -xzf piwik.tar.gz -C /usr/src/  && rm piwik.tar.gz
-# Sat, 13 May 2017 04:57:34 GMT
+# Wed, 17 May 2017 21:12:26 GMT
 COPY file:c38913b1c220a089fa0b50e33e71a81a441978dfb47dd6b00cf105d42f87f82b in /usr/local/etc/php/php.ini 
-# Sat, 13 May 2017 04:57:37 GMT
+# Wed, 17 May 2017 21:12:28 GMT
 RUN curl -fsSL -o /usr/src/piwik/misc/GeoIPCity.dat.gz http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz  && gunzip /usr/src/piwik/misc/GeoIPCity.dat.gz
-# Sat, 13 May 2017 04:57:38 GMT
+# Wed, 17 May 2017 21:12:30 GMT
 COPY file:624ec542e8b52694362740314ac6948ac2d59a5d302df84808cc0cfbddea1e59 in /entrypoint.sh 
-# Sat, 13 May 2017 04:57:39 GMT
+# Wed, 17 May 2017 21:12:31 GMT
 VOLUME [/var/www/html]
-# Sat, 13 May 2017 04:57:40 GMT
+# Wed, 17 May 2017 21:12:32 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 13 May 2017 04:57:41 GMT
+# Wed, 17 May 2017 21:12:33 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -758,39 +758,39 @@ CMD ["apache2-foreground"]
 		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
 		Size: 46.8 KB (46795 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37fcac31446f2cd1b84e236224cd5646fd7dad8a20c59998b52c0f7239ab97ae`  
-		Last Modified: Sat, 13 May 2017 04:59:49 GMT  
-		Size: 14.9 MB (14876026 bytes)  
+	-	`sha256:4fc0a404b19739f3f815dea2c24e5b55ed134874d1afadccef94e8f9b9f10365`  
+		Last Modified: Wed, 17 May 2017 21:13:39 GMT  
+		Size: 14.2 MB (14240999 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84cc64e53dcb6ceedccf612469ef0bc533a159e2a16eb95f7a615be260816652`  
-		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
-		Size: 275.0 B  
+	-	`sha256:03e55d4d05128e6b3cd97dcfd9d341e1d0cc5378ec5660cbec486fe9727b056e`  
+		Last Modified: Wed, 17 May 2017 21:13:36 GMT  
+		Size: 272.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b1fd6e42fb29806ae85888358e8c462424e0028dace930980297b41995cb978`  
-		Last Modified: Sat, 13 May 2017 04:59:46 GMT  
-		Size: 13.0 MB (12983924 bytes)  
+	-	`sha256:ba78ff1175af155f7f9c2e053ca6af48f8ddc050946af24a7d1c85d74ea2075f`  
+		Last Modified: Wed, 17 May 2017 21:13:38 GMT  
+		Size: 13.0 MB (12983923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7956df207c89e737dfd98dfcb13113f0b6358a2b640621c7194361ea95c1693`  
-		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
+	-	`sha256:d11bd9214ab903ea1db40260ba581af16f03b1e10f0189e487c7465855e7f9db`  
+		Last Modified: Wed, 17 May 2017 21:13:35 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `piwik:3.0.3`
+## `piwik:3.0.4`
 
 ```console
-$ docker pull piwik@sha256:4e7c2312f712ab07882bcbeeb3bed5811ca0670f17bd20a37d06f5e7d64a7fa5
+$ docker pull piwik@sha256:cdeda0739642ad6e90c3ff5db42e0e599f4aa9e0b0c44657ba6caf0de00dcf63
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `piwik:3.0.3` - linux; amd64
+### `piwik:3.0.4` - linux; amd64
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **195.8 MB (195773038 bytes)**  
+-	Total Size: **195.1 MB (195138007 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8555fcdddeeca73632398cc75531be0783e16e1445cac5c16f64c1be82ab2640`
+-	Image ID: `sha256:9f19c5de5b45d30deb6f1ab3cb2c224a871d714f4d21b4279acb5ca348934338`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -865,21 +865,21 @@ RUN apt-get update && apt-get install -y       libjpeg-dev       libfreetype6-de
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/  	&& docker-php-ext-install -j$(nproc) gd mbstring mysql pdo_mysql zip ldap opcache
 # Sat, 13 May 2017 04:57:23 GMT
 RUN pecl install APCu geoip
-# Sat, 13 May 2017 04:57:24 GMT
-ENV PIWIK_VERSION=3.0.3
-# Sat, 13 May 2017 04:57:32 GMT
+# Wed, 17 May 2017 21:12:16 GMT
+ENV PIWIK_VERSION=3.0.4
+# Wed, 17 May 2017 21:12:25 GMT
 RUN curl -fsSL -o piwik.tar.gz       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz"  && curl -fsSL -o piwik.tar.gz.asc       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237  && gpg --batch --verify piwik.tar.gz.asc piwik.tar.gz  && rm -r "$GNUPGHOME" piwik.tar.gz.asc  && tar -xzf piwik.tar.gz -C /usr/src/  && rm piwik.tar.gz
-# Sat, 13 May 2017 04:57:34 GMT
+# Wed, 17 May 2017 21:12:26 GMT
 COPY file:c38913b1c220a089fa0b50e33e71a81a441978dfb47dd6b00cf105d42f87f82b in /usr/local/etc/php/php.ini 
-# Sat, 13 May 2017 04:57:37 GMT
+# Wed, 17 May 2017 21:12:28 GMT
 RUN curl -fsSL -o /usr/src/piwik/misc/GeoIPCity.dat.gz http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz  && gunzip /usr/src/piwik/misc/GeoIPCity.dat.gz
-# Sat, 13 May 2017 04:57:38 GMT
+# Wed, 17 May 2017 21:12:30 GMT
 COPY file:624ec542e8b52694362740314ac6948ac2d59a5d302df84808cc0cfbddea1e59 in /entrypoint.sh 
-# Sat, 13 May 2017 04:57:39 GMT
+# Wed, 17 May 2017 21:12:31 GMT
 VOLUME [/var/www/html]
-# Sat, 13 May 2017 04:57:40 GMT
+# Wed, 17 May 2017 21:12:32 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 13 May 2017 04:57:41 GMT
+# Wed, 17 May 2017 21:12:33 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -948,27 +948,27 @@ CMD ["apache2-foreground"]
 		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
 		Size: 46.8 KB (46795 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37fcac31446f2cd1b84e236224cd5646fd7dad8a20c59998b52c0f7239ab97ae`  
-		Last Modified: Sat, 13 May 2017 04:59:49 GMT  
-		Size: 14.9 MB (14876026 bytes)  
+	-	`sha256:4fc0a404b19739f3f815dea2c24e5b55ed134874d1afadccef94e8f9b9f10365`  
+		Last Modified: Wed, 17 May 2017 21:13:39 GMT  
+		Size: 14.2 MB (14240999 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84cc64e53dcb6ceedccf612469ef0bc533a159e2a16eb95f7a615be260816652`  
-		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
-		Size: 275.0 B  
+	-	`sha256:03e55d4d05128e6b3cd97dcfd9d341e1d0cc5378ec5660cbec486fe9727b056e`  
+		Last Modified: Wed, 17 May 2017 21:13:36 GMT  
+		Size: 272.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b1fd6e42fb29806ae85888358e8c462424e0028dace930980297b41995cb978`  
-		Last Modified: Sat, 13 May 2017 04:59:46 GMT  
-		Size: 13.0 MB (12983924 bytes)  
+	-	`sha256:ba78ff1175af155f7f9c2e053ca6af48f8ddc050946af24a7d1c85d74ea2075f`  
+		Last Modified: Wed, 17 May 2017 21:13:38 GMT  
+		Size: 13.0 MB (12983923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7956df207c89e737dfd98dfcb13113f0b6358a2b640621c7194361ea95c1693`  
-		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
+	-	`sha256:d11bd9214ab903ea1db40260ba581af16f03b1e10f0189e487c7465855e7f9db`  
+		Last Modified: Wed, 17 May 2017 21:13:35 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `piwik:3.0`
 
 ```console
-$ docker pull piwik@sha256:4e7c2312f712ab07882bcbeeb3bed5811ca0670f17bd20a37d06f5e7d64a7fa5
+$ docker pull piwik@sha256:cdeda0739642ad6e90c3ff5db42e0e599f4aa9e0b0c44657ba6caf0de00dcf63
 ```
 
 -	Platforms:
@@ -978,9 +978,9 @@ $ docker pull piwik@sha256:4e7c2312f712ab07882bcbeeb3bed5811ca0670f17bd20a37d06f
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **195.8 MB (195773038 bytes)**  
+-	Total Size: **195.1 MB (195138007 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8555fcdddeeca73632398cc75531be0783e16e1445cac5c16f64c1be82ab2640`
+-	Image ID: `sha256:9f19c5de5b45d30deb6f1ab3cb2c224a871d714f4d21b4279acb5ca348934338`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1055,21 +1055,21 @@ RUN apt-get update && apt-get install -y       libjpeg-dev       libfreetype6-de
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/  	&& docker-php-ext-install -j$(nproc) gd mbstring mysql pdo_mysql zip ldap opcache
 # Sat, 13 May 2017 04:57:23 GMT
 RUN pecl install APCu geoip
-# Sat, 13 May 2017 04:57:24 GMT
-ENV PIWIK_VERSION=3.0.3
-# Sat, 13 May 2017 04:57:32 GMT
+# Wed, 17 May 2017 21:12:16 GMT
+ENV PIWIK_VERSION=3.0.4
+# Wed, 17 May 2017 21:12:25 GMT
 RUN curl -fsSL -o piwik.tar.gz       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz"  && curl -fsSL -o piwik.tar.gz.asc       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237  && gpg --batch --verify piwik.tar.gz.asc piwik.tar.gz  && rm -r "$GNUPGHOME" piwik.tar.gz.asc  && tar -xzf piwik.tar.gz -C /usr/src/  && rm piwik.tar.gz
-# Sat, 13 May 2017 04:57:34 GMT
+# Wed, 17 May 2017 21:12:26 GMT
 COPY file:c38913b1c220a089fa0b50e33e71a81a441978dfb47dd6b00cf105d42f87f82b in /usr/local/etc/php/php.ini 
-# Sat, 13 May 2017 04:57:37 GMT
+# Wed, 17 May 2017 21:12:28 GMT
 RUN curl -fsSL -o /usr/src/piwik/misc/GeoIPCity.dat.gz http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz  && gunzip /usr/src/piwik/misc/GeoIPCity.dat.gz
-# Sat, 13 May 2017 04:57:38 GMT
+# Wed, 17 May 2017 21:12:30 GMT
 COPY file:624ec542e8b52694362740314ac6948ac2d59a5d302df84808cc0cfbddea1e59 in /entrypoint.sh 
-# Sat, 13 May 2017 04:57:39 GMT
+# Wed, 17 May 2017 21:12:31 GMT
 VOLUME [/var/www/html]
-# Sat, 13 May 2017 04:57:40 GMT
+# Wed, 17 May 2017 21:12:32 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 13 May 2017 04:57:41 GMT
+# Wed, 17 May 2017 21:12:33 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1138,27 +1138,27 @@ CMD ["apache2-foreground"]
 		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
 		Size: 46.8 KB (46795 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37fcac31446f2cd1b84e236224cd5646fd7dad8a20c59998b52c0f7239ab97ae`  
-		Last Modified: Sat, 13 May 2017 04:59:49 GMT  
-		Size: 14.9 MB (14876026 bytes)  
+	-	`sha256:4fc0a404b19739f3f815dea2c24e5b55ed134874d1afadccef94e8f9b9f10365`  
+		Last Modified: Wed, 17 May 2017 21:13:39 GMT  
+		Size: 14.2 MB (14240999 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84cc64e53dcb6ceedccf612469ef0bc533a159e2a16eb95f7a615be260816652`  
-		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
-		Size: 275.0 B  
+	-	`sha256:03e55d4d05128e6b3cd97dcfd9d341e1d0cc5378ec5660cbec486fe9727b056e`  
+		Last Modified: Wed, 17 May 2017 21:13:36 GMT  
+		Size: 272.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b1fd6e42fb29806ae85888358e8c462424e0028dace930980297b41995cb978`  
-		Last Modified: Sat, 13 May 2017 04:59:46 GMT  
-		Size: 13.0 MB (12983924 bytes)  
+	-	`sha256:ba78ff1175af155f7f9c2e053ca6af48f8ddc050946af24a7d1c85d74ea2075f`  
+		Last Modified: Wed, 17 May 2017 21:13:38 GMT  
+		Size: 13.0 MB (12983923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7956df207c89e737dfd98dfcb13113f0b6358a2b640621c7194361ea95c1693`  
-		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
+	-	`sha256:d11bd9214ab903ea1db40260ba581af16f03b1e10f0189e487c7465855e7f9db`  
+		Last Modified: Wed, 17 May 2017 21:13:35 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `piwik:3`
 
 ```console
-$ docker pull piwik@sha256:4e7c2312f712ab07882bcbeeb3bed5811ca0670f17bd20a37d06f5e7d64a7fa5
+$ docker pull piwik@sha256:cdeda0739642ad6e90c3ff5db42e0e599f4aa9e0b0c44657ba6caf0de00dcf63
 ```
 
 -	Platforms:
@@ -1168,9 +1168,9 @@ $ docker pull piwik@sha256:4e7c2312f712ab07882bcbeeb3bed5811ca0670f17bd20a37d06f
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **195.8 MB (195773038 bytes)**  
+-	Total Size: **195.1 MB (195138007 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8555fcdddeeca73632398cc75531be0783e16e1445cac5c16f64c1be82ab2640`
+-	Image ID: `sha256:9f19c5de5b45d30deb6f1ab3cb2c224a871d714f4d21b4279acb5ca348934338`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1245,21 +1245,21 @@ RUN apt-get update && apt-get install -y       libjpeg-dev       libfreetype6-de
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/  	&& docker-php-ext-install -j$(nproc) gd mbstring mysql pdo_mysql zip ldap opcache
 # Sat, 13 May 2017 04:57:23 GMT
 RUN pecl install APCu geoip
-# Sat, 13 May 2017 04:57:24 GMT
-ENV PIWIK_VERSION=3.0.3
-# Sat, 13 May 2017 04:57:32 GMT
+# Wed, 17 May 2017 21:12:16 GMT
+ENV PIWIK_VERSION=3.0.4
+# Wed, 17 May 2017 21:12:25 GMT
 RUN curl -fsSL -o piwik.tar.gz       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz"  && curl -fsSL -o piwik.tar.gz.asc       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237  && gpg --batch --verify piwik.tar.gz.asc piwik.tar.gz  && rm -r "$GNUPGHOME" piwik.tar.gz.asc  && tar -xzf piwik.tar.gz -C /usr/src/  && rm piwik.tar.gz
-# Sat, 13 May 2017 04:57:34 GMT
+# Wed, 17 May 2017 21:12:26 GMT
 COPY file:c38913b1c220a089fa0b50e33e71a81a441978dfb47dd6b00cf105d42f87f82b in /usr/local/etc/php/php.ini 
-# Sat, 13 May 2017 04:57:37 GMT
+# Wed, 17 May 2017 21:12:28 GMT
 RUN curl -fsSL -o /usr/src/piwik/misc/GeoIPCity.dat.gz http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz  && gunzip /usr/src/piwik/misc/GeoIPCity.dat.gz
-# Sat, 13 May 2017 04:57:38 GMT
+# Wed, 17 May 2017 21:12:30 GMT
 COPY file:624ec542e8b52694362740314ac6948ac2d59a5d302df84808cc0cfbddea1e59 in /entrypoint.sh 
-# Sat, 13 May 2017 04:57:39 GMT
+# Wed, 17 May 2017 21:12:31 GMT
 VOLUME [/var/www/html]
-# Sat, 13 May 2017 04:57:40 GMT
+# Wed, 17 May 2017 21:12:32 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 13 May 2017 04:57:41 GMT
+# Wed, 17 May 2017 21:12:33 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1328,27 +1328,27 @@ CMD ["apache2-foreground"]
 		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
 		Size: 46.8 KB (46795 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37fcac31446f2cd1b84e236224cd5646fd7dad8a20c59998b52c0f7239ab97ae`  
-		Last Modified: Sat, 13 May 2017 04:59:49 GMT  
-		Size: 14.9 MB (14876026 bytes)  
+	-	`sha256:4fc0a404b19739f3f815dea2c24e5b55ed134874d1afadccef94e8f9b9f10365`  
+		Last Modified: Wed, 17 May 2017 21:13:39 GMT  
+		Size: 14.2 MB (14240999 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84cc64e53dcb6ceedccf612469ef0bc533a159e2a16eb95f7a615be260816652`  
-		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
-		Size: 275.0 B  
+	-	`sha256:03e55d4d05128e6b3cd97dcfd9d341e1d0cc5378ec5660cbec486fe9727b056e`  
+		Last Modified: Wed, 17 May 2017 21:13:36 GMT  
+		Size: 272.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b1fd6e42fb29806ae85888358e8c462424e0028dace930980297b41995cb978`  
-		Last Modified: Sat, 13 May 2017 04:59:46 GMT  
-		Size: 13.0 MB (12983924 bytes)  
+	-	`sha256:ba78ff1175af155f7f9c2e053ca6af48f8ddc050946af24a7d1c85d74ea2075f`  
+		Last Modified: Wed, 17 May 2017 21:13:38 GMT  
+		Size: 13.0 MB (12983923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7956df207c89e737dfd98dfcb13113f0b6358a2b640621c7194361ea95c1693`  
-		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
+	-	`sha256:d11bd9214ab903ea1db40260ba581af16f03b1e10f0189e487c7465855e7f9db`  
+		Last Modified: Wed, 17 May 2017 21:13:35 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `piwik:latest`
 
 ```console
-$ docker pull piwik@sha256:4e7c2312f712ab07882bcbeeb3bed5811ca0670f17bd20a37d06f5e7d64a7fa5
+$ docker pull piwik@sha256:cdeda0739642ad6e90c3ff5db42e0e599f4aa9e0b0c44657ba6caf0de00dcf63
 ```
 
 -	Platforms:
@@ -1358,9 +1358,9 @@ $ docker pull piwik@sha256:4e7c2312f712ab07882bcbeeb3bed5811ca0670f17bd20a37d06f
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **195.8 MB (195773038 bytes)**  
+-	Total Size: **195.1 MB (195138007 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8555fcdddeeca73632398cc75531be0783e16e1445cac5c16f64c1be82ab2640`
+-	Image ID: `sha256:9f19c5de5b45d30deb6f1ab3cb2c224a871d714f4d21b4279acb5ca348934338`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1435,21 +1435,21 @@ RUN apt-get update && apt-get install -y       libjpeg-dev       libfreetype6-de
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/  	&& docker-php-ext-install -j$(nproc) gd mbstring mysql pdo_mysql zip ldap opcache
 # Sat, 13 May 2017 04:57:23 GMT
 RUN pecl install APCu geoip
-# Sat, 13 May 2017 04:57:24 GMT
-ENV PIWIK_VERSION=3.0.3
-# Sat, 13 May 2017 04:57:32 GMT
+# Wed, 17 May 2017 21:12:16 GMT
+ENV PIWIK_VERSION=3.0.4
+# Wed, 17 May 2017 21:12:25 GMT
 RUN curl -fsSL -o piwik.tar.gz       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz"  && curl -fsSL -o piwik.tar.gz.asc       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237  && gpg --batch --verify piwik.tar.gz.asc piwik.tar.gz  && rm -r "$GNUPGHOME" piwik.tar.gz.asc  && tar -xzf piwik.tar.gz -C /usr/src/  && rm piwik.tar.gz
-# Sat, 13 May 2017 04:57:34 GMT
+# Wed, 17 May 2017 21:12:26 GMT
 COPY file:c38913b1c220a089fa0b50e33e71a81a441978dfb47dd6b00cf105d42f87f82b in /usr/local/etc/php/php.ini 
-# Sat, 13 May 2017 04:57:37 GMT
+# Wed, 17 May 2017 21:12:28 GMT
 RUN curl -fsSL -o /usr/src/piwik/misc/GeoIPCity.dat.gz http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz  && gunzip /usr/src/piwik/misc/GeoIPCity.dat.gz
-# Sat, 13 May 2017 04:57:38 GMT
+# Wed, 17 May 2017 21:12:30 GMT
 COPY file:624ec542e8b52694362740314ac6948ac2d59a5d302df84808cc0cfbddea1e59 in /entrypoint.sh 
-# Sat, 13 May 2017 04:57:39 GMT
+# Wed, 17 May 2017 21:12:31 GMT
 VOLUME [/var/www/html]
-# Sat, 13 May 2017 04:57:40 GMT
+# Wed, 17 May 2017 21:12:32 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 13 May 2017 04:57:41 GMT
+# Wed, 17 May 2017 21:12:33 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1518,39 +1518,39 @@ CMD ["apache2-foreground"]
 		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
 		Size: 46.8 KB (46795 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37fcac31446f2cd1b84e236224cd5646fd7dad8a20c59998b52c0f7239ab97ae`  
-		Last Modified: Sat, 13 May 2017 04:59:49 GMT  
-		Size: 14.9 MB (14876026 bytes)  
+	-	`sha256:4fc0a404b19739f3f815dea2c24e5b55ed134874d1afadccef94e8f9b9f10365`  
+		Last Modified: Wed, 17 May 2017 21:13:39 GMT  
+		Size: 14.2 MB (14240999 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84cc64e53dcb6ceedccf612469ef0bc533a159e2a16eb95f7a615be260816652`  
-		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
-		Size: 275.0 B  
+	-	`sha256:03e55d4d05128e6b3cd97dcfd9d341e1d0cc5378ec5660cbec486fe9727b056e`  
+		Last Modified: Wed, 17 May 2017 21:13:36 GMT  
+		Size: 272.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b1fd6e42fb29806ae85888358e8c462424e0028dace930980297b41995cb978`  
-		Last Modified: Sat, 13 May 2017 04:59:46 GMT  
-		Size: 13.0 MB (12983924 bytes)  
+	-	`sha256:ba78ff1175af155f7f9c2e053ca6af48f8ddc050946af24a7d1c85d74ea2075f`  
+		Last Modified: Wed, 17 May 2017 21:13:38 GMT  
+		Size: 13.0 MB (12983923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b7956df207c89e737dfd98dfcb13113f0b6358a2b640621c7194361ea95c1693`  
-		Last Modified: Sat, 13 May 2017 04:59:45 GMT  
+	-	`sha256:d11bd9214ab903ea1db40260ba581af16f03b1e10f0189e487c7465855e7f9db`  
+		Last Modified: Wed, 17 May 2017 21:13:35 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `piwik:3.0.3-fpm`
+## `piwik:3.0.4-fpm`
 
 ```console
-$ docker pull piwik@sha256:35fcbbfd18e67eeaf2164b63d8c9f2a4720da127e8533e5c244485af239ac38b
+$ docker pull piwik@sha256:522d07a800a59e88f7df6ddf65a3703e074efaab1db62442a47f5c8e1194af4d
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `piwik:3.0.3-fpm` - linux; amd64
+### `piwik:3.0.4-fpm` - linux; amd64
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.4 MB (192400591 bytes)**  
+-	Total Size: **191.8 MB (191765571 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1a07b1f76f17c51d139710382128679c0ddd9fb8e427c7a1e251caeb611d8897`
+-	Image ID: `sha256:6e6c51677153795348b147c4a7218d7dbac1a3958f1ee79f9a61713cd7f429f1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1609,21 +1609,21 @@ RUN apt-get update && apt-get install -y       libjpeg-dev       libfreetype6-de
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/  	&& docker-php-ext-install -j$(nproc) gd mbstring mysql pdo_mysql zip ldap opcache
 # Sat, 13 May 2017 04:59:06 GMT
 RUN pecl install APCu geoip
-# Sat, 13 May 2017 04:59:07 GMT
-ENV PIWIK_VERSION=3.0.3
-# Sat, 13 May 2017 04:59:14 GMT
+# Wed, 17 May 2017 21:12:56 GMT
+ENV PIWIK_VERSION=3.0.4
+# Wed, 17 May 2017 21:13:03 GMT
 RUN curl -fsSL -o piwik.tar.gz       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz"  && curl -fsSL -o piwik.tar.gz.asc       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237  && gpg --batch --verify piwik.tar.gz.asc piwik.tar.gz  && rm -r "$GNUPGHOME" piwik.tar.gz.asc  && tar -xzf piwik.tar.gz -C /usr/src/  && rm piwik.tar.gz
-# Sat, 13 May 2017 04:59:15 GMT
+# Wed, 17 May 2017 21:13:05 GMT
 COPY file:c38913b1c220a089fa0b50e33e71a81a441978dfb47dd6b00cf105d42f87f82b in /usr/local/etc/php/php.ini 
-# Sat, 13 May 2017 04:59:17 GMT
+# Wed, 17 May 2017 21:13:07 GMT
 RUN curl -fsSL -o /usr/src/piwik/misc/GeoIPCity.dat.gz http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz  && gunzip /usr/src/piwik/misc/GeoIPCity.dat.gz
-# Sat, 13 May 2017 04:59:18 GMT
+# Wed, 17 May 2017 21:13:08 GMT
 COPY file:624ec542e8b52694362740314ac6948ac2d59a5d302df84808cc0cfbddea1e59 in /entrypoint.sh 
-# Sat, 13 May 2017 04:59:19 GMT
+# Wed, 17 May 2017 21:13:09 GMT
 VOLUME [/var/www/html]
-# Sat, 13 May 2017 04:59:20 GMT
+# Wed, 17 May 2017 21:13:10 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 13 May 2017 04:59:21 GMT
+# Wed, 17 May 2017 21:13:10 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1676,27 +1676,27 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 13 May 2017 05:02:58 GMT  
 		Size: 46.8 KB (46815 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bafefb19e0c80711002c69d67c15e62cfa25a2a8c364bfd046c366672ba3373c`  
-		Last Modified: Sat, 13 May 2017 05:03:00 GMT  
-		Size: 14.9 MB (14876031 bytes)  
+	-	`sha256:1c8c41d3d0253069f0fbc874a833fbf10f6a2a59aff29e0ccbf76b39d89401ee`  
+		Last Modified: Wed, 17 May 2017 21:16:54 GMT  
+		Size: 14.2 MB (14241011 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b3cc0182ba5feaca6bdcd54bf2ca25b3144e67dab6acc29e441f08703770fe8`  
-		Last Modified: Sat, 13 May 2017 05:02:57 GMT  
-		Size: 274.0 B  
+	-	`sha256:cc9b5c665ed7ee45ce37c70e52cd59bce7fbbbe0f201e095927732795195de8a`  
+		Last Modified: Wed, 17 May 2017 21:16:52 GMT  
+		Size: 273.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31a0e279604ceae980f2b53b06e3ac002d9dde898dddcbd01f1d8a2dd8ad21b1`  
-		Last Modified: Sat, 13 May 2017 05:02:59 GMT  
+	-	`sha256:5dbd73d1bc8a5a7d204e1c45c6dfa359dae1591362cecbe3ece6b4e4c7746867`  
+		Last Modified: Wed, 17 May 2017 21:16:53 GMT  
 		Size: 13.0 MB (12983924 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93dd02a96db9acd90fda00d807cf25a0461f553266854aed25ff6c22410725b0`  
-		Last Modified: Sat, 13 May 2017 05:02:58 GMT  
-		Size: 224.0 B  
+	-	`sha256:e89457dfc49a9ae66681b38d0887a609a4159f4d8239737c93794ca8aa658d22`  
+		Last Modified: Wed, 17 May 2017 21:16:51 GMT  
+		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `piwik:3.0-fpm`
 
 ```console
-$ docker pull piwik@sha256:35fcbbfd18e67eeaf2164b63d8c9f2a4720da127e8533e5c244485af239ac38b
+$ docker pull piwik@sha256:522d07a800a59e88f7df6ddf65a3703e074efaab1db62442a47f5c8e1194af4d
 ```
 
 -	Platforms:
@@ -1706,9 +1706,9 @@ $ docker pull piwik@sha256:35fcbbfd18e67eeaf2164b63d8c9f2a4720da127e8533e5c24448
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.4 MB (192400591 bytes)**  
+-	Total Size: **191.8 MB (191765571 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1a07b1f76f17c51d139710382128679c0ddd9fb8e427c7a1e251caeb611d8897`
+-	Image ID: `sha256:6e6c51677153795348b147c4a7218d7dbac1a3958f1ee79f9a61713cd7f429f1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1767,21 +1767,21 @@ RUN apt-get update && apt-get install -y       libjpeg-dev       libfreetype6-de
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/  	&& docker-php-ext-install -j$(nproc) gd mbstring mysql pdo_mysql zip ldap opcache
 # Sat, 13 May 2017 04:59:06 GMT
 RUN pecl install APCu geoip
-# Sat, 13 May 2017 04:59:07 GMT
-ENV PIWIK_VERSION=3.0.3
-# Sat, 13 May 2017 04:59:14 GMT
+# Wed, 17 May 2017 21:12:56 GMT
+ENV PIWIK_VERSION=3.0.4
+# Wed, 17 May 2017 21:13:03 GMT
 RUN curl -fsSL -o piwik.tar.gz       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz"  && curl -fsSL -o piwik.tar.gz.asc       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237  && gpg --batch --verify piwik.tar.gz.asc piwik.tar.gz  && rm -r "$GNUPGHOME" piwik.tar.gz.asc  && tar -xzf piwik.tar.gz -C /usr/src/  && rm piwik.tar.gz
-# Sat, 13 May 2017 04:59:15 GMT
+# Wed, 17 May 2017 21:13:05 GMT
 COPY file:c38913b1c220a089fa0b50e33e71a81a441978dfb47dd6b00cf105d42f87f82b in /usr/local/etc/php/php.ini 
-# Sat, 13 May 2017 04:59:17 GMT
+# Wed, 17 May 2017 21:13:07 GMT
 RUN curl -fsSL -o /usr/src/piwik/misc/GeoIPCity.dat.gz http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz  && gunzip /usr/src/piwik/misc/GeoIPCity.dat.gz
-# Sat, 13 May 2017 04:59:18 GMT
+# Wed, 17 May 2017 21:13:08 GMT
 COPY file:624ec542e8b52694362740314ac6948ac2d59a5d302df84808cc0cfbddea1e59 in /entrypoint.sh 
-# Sat, 13 May 2017 04:59:19 GMT
+# Wed, 17 May 2017 21:13:09 GMT
 VOLUME [/var/www/html]
-# Sat, 13 May 2017 04:59:20 GMT
+# Wed, 17 May 2017 21:13:10 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 13 May 2017 04:59:21 GMT
+# Wed, 17 May 2017 21:13:10 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1834,27 +1834,27 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 13 May 2017 05:02:58 GMT  
 		Size: 46.8 KB (46815 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bafefb19e0c80711002c69d67c15e62cfa25a2a8c364bfd046c366672ba3373c`  
-		Last Modified: Sat, 13 May 2017 05:03:00 GMT  
-		Size: 14.9 MB (14876031 bytes)  
+	-	`sha256:1c8c41d3d0253069f0fbc874a833fbf10f6a2a59aff29e0ccbf76b39d89401ee`  
+		Last Modified: Wed, 17 May 2017 21:16:54 GMT  
+		Size: 14.2 MB (14241011 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b3cc0182ba5feaca6bdcd54bf2ca25b3144e67dab6acc29e441f08703770fe8`  
-		Last Modified: Sat, 13 May 2017 05:02:57 GMT  
-		Size: 274.0 B  
+	-	`sha256:cc9b5c665ed7ee45ce37c70e52cd59bce7fbbbe0f201e095927732795195de8a`  
+		Last Modified: Wed, 17 May 2017 21:16:52 GMT  
+		Size: 273.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31a0e279604ceae980f2b53b06e3ac002d9dde898dddcbd01f1d8a2dd8ad21b1`  
-		Last Modified: Sat, 13 May 2017 05:02:59 GMT  
+	-	`sha256:5dbd73d1bc8a5a7d204e1c45c6dfa359dae1591362cecbe3ece6b4e4c7746867`  
+		Last Modified: Wed, 17 May 2017 21:16:53 GMT  
 		Size: 13.0 MB (12983924 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93dd02a96db9acd90fda00d807cf25a0461f553266854aed25ff6c22410725b0`  
-		Last Modified: Sat, 13 May 2017 05:02:58 GMT  
-		Size: 224.0 B  
+	-	`sha256:e89457dfc49a9ae66681b38d0887a609a4159f4d8239737c93794ca8aa658d22`  
+		Last Modified: Wed, 17 May 2017 21:16:51 GMT  
+		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `piwik:3-fpm`
 
 ```console
-$ docker pull piwik@sha256:35fcbbfd18e67eeaf2164b63d8c9f2a4720da127e8533e5c244485af239ac38b
+$ docker pull piwik@sha256:522d07a800a59e88f7df6ddf65a3703e074efaab1db62442a47f5c8e1194af4d
 ```
 
 -	Platforms:
@@ -1864,9 +1864,9 @@ $ docker pull piwik@sha256:35fcbbfd18e67eeaf2164b63d8c9f2a4720da127e8533e5c24448
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.4 MB (192400591 bytes)**  
+-	Total Size: **191.8 MB (191765571 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1a07b1f76f17c51d139710382128679c0ddd9fb8e427c7a1e251caeb611d8897`
+-	Image ID: `sha256:6e6c51677153795348b147c4a7218d7dbac1a3958f1ee79f9a61713cd7f429f1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1925,21 +1925,21 @@ RUN apt-get update && apt-get install -y       libjpeg-dev       libfreetype6-de
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/  	&& docker-php-ext-install -j$(nproc) gd mbstring mysql pdo_mysql zip ldap opcache
 # Sat, 13 May 2017 04:59:06 GMT
 RUN pecl install APCu geoip
-# Sat, 13 May 2017 04:59:07 GMT
-ENV PIWIK_VERSION=3.0.3
-# Sat, 13 May 2017 04:59:14 GMT
+# Wed, 17 May 2017 21:12:56 GMT
+ENV PIWIK_VERSION=3.0.4
+# Wed, 17 May 2017 21:13:03 GMT
 RUN curl -fsSL -o piwik.tar.gz       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz"  && curl -fsSL -o piwik.tar.gz.asc       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237  && gpg --batch --verify piwik.tar.gz.asc piwik.tar.gz  && rm -r "$GNUPGHOME" piwik.tar.gz.asc  && tar -xzf piwik.tar.gz -C /usr/src/  && rm piwik.tar.gz
-# Sat, 13 May 2017 04:59:15 GMT
+# Wed, 17 May 2017 21:13:05 GMT
 COPY file:c38913b1c220a089fa0b50e33e71a81a441978dfb47dd6b00cf105d42f87f82b in /usr/local/etc/php/php.ini 
-# Sat, 13 May 2017 04:59:17 GMT
+# Wed, 17 May 2017 21:13:07 GMT
 RUN curl -fsSL -o /usr/src/piwik/misc/GeoIPCity.dat.gz http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz  && gunzip /usr/src/piwik/misc/GeoIPCity.dat.gz
-# Sat, 13 May 2017 04:59:18 GMT
+# Wed, 17 May 2017 21:13:08 GMT
 COPY file:624ec542e8b52694362740314ac6948ac2d59a5d302df84808cc0cfbddea1e59 in /entrypoint.sh 
-# Sat, 13 May 2017 04:59:19 GMT
+# Wed, 17 May 2017 21:13:09 GMT
 VOLUME [/var/www/html]
-# Sat, 13 May 2017 04:59:20 GMT
+# Wed, 17 May 2017 21:13:10 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 13 May 2017 04:59:21 GMT
+# Wed, 17 May 2017 21:13:10 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1992,27 +1992,27 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 13 May 2017 05:02:58 GMT  
 		Size: 46.8 KB (46815 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bafefb19e0c80711002c69d67c15e62cfa25a2a8c364bfd046c366672ba3373c`  
-		Last Modified: Sat, 13 May 2017 05:03:00 GMT  
-		Size: 14.9 MB (14876031 bytes)  
+	-	`sha256:1c8c41d3d0253069f0fbc874a833fbf10f6a2a59aff29e0ccbf76b39d89401ee`  
+		Last Modified: Wed, 17 May 2017 21:16:54 GMT  
+		Size: 14.2 MB (14241011 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b3cc0182ba5feaca6bdcd54bf2ca25b3144e67dab6acc29e441f08703770fe8`  
-		Last Modified: Sat, 13 May 2017 05:02:57 GMT  
-		Size: 274.0 B  
+	-	`sha256:cc9b5c665ed7ee45ce37c70e52cd59bce7fbbbe0f201e095927732795195de8a`  
+		Last Modified: Wed, 17 May 2017 21:16:52 GMT  
+		Size: 273.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31a0e279604ceae980f2b53b06e3ac002d9dde898dddcbd01f1d8a2dd8ad21b1`  
-		Last Modified: Sat, 13 May 2017 05:02:59 GMT  
+	-	`sha256:5dbd73d1bc8a5a7d204e1c45c6dfa359dae1591362cecbe3ece6b4e4c7746867`  
+		Last Modified: Wed, 17 May 2017 21:16:53 GMT  
 		Size: 13.0 MB (12983924 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93dd02a96db9acd90fda00d807cf25a0461f553266854aed25ff6c22410725b0`  
-		Last Modified: Sat, 13 May 2017 05:02:58 GMT  
-		Size: 224.0 B  
+	-	`sha256:e89457dfc49a9ae66681b38d0887a609a4159f4d8239737c93794ca8aa658d22`  
+		Last Modified: Wed, 17 May 2017 21:16:51 GMT  
+		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `piwik:fpm`
 
 ```console
-$ docker pull piwik@sha256:35fcbbfd18e67eeaf2164b63d8c9f2a4720da127e8533e5c244485af239ac38b
+$ docker pull piwik@sha256:522d07a800a59e88f7df6ddf65a3703e074efaab1db62442a47f5c8e1194af4d
 ```
 
 -	Platforms:
@@ -2022,9 +2022,9 @@ $ docker pull piwik@sha256:35fcbbfd18e67eeaf2164b63d8c9f2a4720da127e8533e5c24448
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.4 MB (192400591 bytes)**  
+-	Total Size: **191.8 MB (191765571 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1a07b1f76f17c51d139710382128679c0ddd9fb8e427c7a1e251caeb611d8897`
+-	Image ID: `sha256:6e6c51677153795348b147c4a7218d7dbac1a3958f1ee79f9a61713cd7f429f1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -2083,21 +2083,21 @@ RUN apt-get update && apt-get install -y       libjpeg-dev       libfreetype6-de
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr --with-png-dir=/usr --with-jpeg-dir=/usr 	&& docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/  	&& docker-php-ext-install -j$(nproc) gd mbstring mysql pdo_mysql zip ldap opcache
 # Sat, 13 May 2017 04:59:06 GMT
 RUN pecl install APCu geoip
-# Sat, 13 May 2017 04:59:07 GMT
-ENV PIWIK_VERSION=3.0.3
-# Sat, 13 May 2017 04:59:14 GMT
+# Wed, 17 May 2017 21:12:56 GMT
+ENV PIWIK_VERSION=3.0.4
+# Wed, 17 May 2017 21:13:03 GMT
 RUN curl -fsSL -o piwik.tar.gz       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz"  && curl -fsSL -o piwik.tar.gz.asc       "https://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 814E346FA01A20DBB04B6807B5DBD5925590A237  && gpg --batch --verify piwik.tar.gz.asc piwik.tar.gz  && rm -r "$GNUPGHOME" piwik.tar.gz.asc  && tar -xzf piwik.tar.gz -C /usr/src/  && rm piwik.tar.gz
-# Sat, 13 May 2017 04:59:15 GMT
+# Wed, 17 May 2017 21:13:05 GMT
 COPY file:c38913b1c220a089fa0b50e33e71a81a441978dfb47dd6b00cf105d42f87f82b in /usr/local/etc/php/php.ini 
-# Sat, 13 May 2017 04:59:17 GMT
+# Wed, 17 May 2017 21:13:07 GMT
 RUN curl -fsSL -o /usr/src/piwik/misc/GeoIPCity.dat.gz http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz  && gunzip /usr/src/piwik/misc/GeoIPCity.dat.gz
-# Sat, 13 May 2017 04:59:18 GMT
+# Wed, 17 May 2017 21:13:08 GMT
 COPY file:624ec542e8b52694362740314ac6948ac2d59a5d302df84808cc0cfbddea1e59 in /entrypoint.sh 
-# Sat, 13 May 2017 04:59:19 GMT
+# Wed, 17 May 2017 21:13:09 GMT
 VOLUME [/var/www/html]
-# Sat, 13 May 2017 04:59:20 GMT
+# Wed, 17 May 2017 21:13:10 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 13 May 2017 04:59:21 GMT
+# Wed, 17 May 2017 21:13:10 GMT
 CMD ["php-fpm"]
 ```
 
@@ -2150,19 +2150,19 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 13 May 2017 05:02:58 GMT  
 		Size: 46.8 KB (46815 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bafefb19e0c80711002c69d67c15e62cfa25a2a8c364bfd046c366672ba3373c`  
-		Last Modified: Sat, 13 May 2017 05:03:00 GMT  
-		Size: 14.9 MB (14876031 bytes)  
+	-	`sha256:1c8c41d3d0253069f0fbc874a833fbf10f6a2a59aff29e0ccbf76b39d89401ee`  
+		Last Modified: Wed, 17 May 2017 21:16:54 GMT  
+		Size: 14.2 MB (14241011 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b3cc0182ba5feaca6bdcd54bf2ca25b3144e67dab6acc29e441f08703770fe8`  
-		Last Modified: Sat, 13 May 2017 05:02:57 GMT  
-		Size: 274.0 B  
+	-	`sha256:cc9b5c665ed7ee45ce37c70e52cd59bce7fbbbe0f201e095927732795195de8a`  
+		Last Modified: Wed, 17 May 2017 21:16:52 GMT  
+		Size: 273.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:31a0e279604ceae980f2b53b06e3ac002d9dde898dddcbd01f1d8a2dd8ad21b1`  
-		Last Modified: Sat, 13 May 2017 05:02:59 GMT  
+	-	`sha256:5dbd73d1bc8a5a7d204e1c45c6dfa359dae1591362cecbe3ece6b4e4c7746867`  
+		Last Modified: Wed, 17 May 2017 21:16:53 GMT  
 		Size: 13.0 MB (12983924 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93dd02a96db9acd90fda00d807cf25a0461f553266854aed25ff6c22410725b0`  
-		Last Modified: Sat, 13 May 2017 05:02:58 GMT  
-		Size: 224.0 B  
+	-	`sha256:e89457dfc49a9ae66681b38d0887a609a4159f4d8239737c93794ca8aa658d22`  
+		Last Modified: Wed, 17 May 2017 21:16:51 GMT  
+		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
