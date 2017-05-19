@@ -1017,14 +1017,8 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.2-3.2ubuntu1.16.10.1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu1.16.10.1.dsc' shadow_4.2-3.2ubuntu1.16.10.1.dsc 2112 SHA256:350cf6e44861dbf7c88ee7be94f05571ab2a4c169653ffc9f350fd270e85b08d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu1.16.10.1.debian.tar.xz' shadow_4.2-3.2ubuntu1.16.10.1.debian.tar.xz 506148 SHA256:b93bd2269f9d7704ca6fdca11116e6e9b84325e13db01bad1c1b31465fd8914d
-```
 
 ### `dpkg` source package: `sqlite3=3.14.1-1build1`
 
