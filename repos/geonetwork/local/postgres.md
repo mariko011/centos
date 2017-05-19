@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d851a0bba6566f3363b42fb6cd5d01ee151a16ddb2ef20770864ac27f351da82`
-- Created: `2017-05-11T04:14:27.503565724Z`
-- Virtual Size: ~ 686.19 Mb  
+- Image ID: `sha256:230d8468340278f72bd9f9ee16bb90ce128eeea8a4912328c89f5e34e13252da`
+- Created: `2017-05-17T22:41:07.955038666Z`
+- Virtual Size: ~ 686.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -13,8 +13,8 @@
   - `PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home/jre`
-  - `JAVA_VERSION=8u121`
-  - `JAVA_DEBIAN_VERSION=8u121-b13-1~bpo8+1`
+  - `JAVA_VERSION=8u131`
+  - `JAVA_DEBIAN_VERSION=8u131-b11-1~bpo8+1`
   - `CA_CERTIFICATES_JAVA_VERSION=20161107~bpo8+1`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
@@ -22,9 +22,9 @@
   - `OPENSSL_VERSION=1.1.0e-1`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.0.43`
-  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.43/bin/apache-tomcat-8.0.43.tar.gz`
-  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.43/bin/apache-tomcat-8.0.43.tar.gz.asc`
+  - `TOMCAT_VERSION=8.0.44`
+  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.44/bin/apache-tomcat-8.0.44.tar.gz`
+  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.44/bin/apache-tomcat-8.0.44.tar.gz.asc`
   - `GN_FILE=geonetwork.war`
   - `DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data`
   - `JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:PermSize=512m -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC`
@@ -2385,11 +2385,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nss/2:3.26-1+debu8u1/
 - https://sources.debian.net/src/nss/2:3.26-1+debu8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openjdk-8=8u121-b13-1~bpo8+1`
+### `dpkg` source package: `openjdk-8=8u131-b11-1~bpo8+1`
 
 Binary Packages:
 
-- `openjdk-8-jre-headless:amd64=8u121-b13-1~bpo8+1`
+- `openjdk-8-jre-headless:amd64=8u131-b11-1~bpo8+1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 
@@ -2401,16 +2401,16 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-8=8u121-b13-1~bpo8+1
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u121-b13-1~bpo8+1.dsc' openjdk-8_8u121-b13-1~bpo8+1.dsc 4522 SHA256:ae40bb526fde162d14816d07ee1fecba2f2696feed07d01475a945d2dc721b0a
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u121-b13.orig.tar.xz' openjdk-8_8u121-b13.orig.tar.xz 63884892 SHA256:78f64c05575fa36ae35e712e3d23b3ac139aaeb328eebca705705652b5985699
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u121-b13-1~bpo8+1.debian.tar.xz' openjdk-8_8u121-b13-1~bpo8+1.debian.tar.xz 235396 SHA256:190d5b0ff30f6085aadccc38cf6d56ce91ba4185b0cb25ae6996c042b4066e34
+$ apt-get source -qq --print-uris openjdk-8=8u131-b11-1~bpo8+1
+'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u131-b11-1~bpo8+1.dsc' openjdk-8_8u131-b11-1~bpo8+1.dsc 4379 SHA256:74d465cf7d1677f414a25abb1ba88786013855694a80b7e802a3769acc6e408d
+'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u131-b11.orig.tar.xz' openjdk-8_8u131-b11.orig.tar.xz 63889888 SHA256:8369a083164d66c151de39933b192583ffb0b1b6daf8c7ffe17afc040478f21b
+'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u131-b11-1~bpo8+1.debian.tar.xz' openjdk-8_8u131-b11-1~bpo8+1.debian.tar.xz 242732 SHA256:455f10a9a92ae30a7326cc09812e770905d94d730e9020d427c84ff2f6e009a6
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openjdk-8/8u121-b13-1~bpo8+1/
-- https://sources.debian.net/src/openjdk-8/8u121-b13-1~bpo8+1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openjdk-8/8u131-b11-1~bpo8+1/
+- https://sources.debian.net/src/openjdk-8/8u131-b11-1~bpo8+1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.40+dfsg-1+deb8u2`
 
@@ -2640,12 +2640,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/perl/5.20.2-3+deb8u6/
 - https://sources.debian.net/src/perl/5.20.2-3+deb8u6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `postgresql-9.4=9.4.11-0+deb8u2`
+### `dpkg` source package: `postgresql-9.4=9.4.12-0+deb8u1`
 
 Binary Packages:
 
-- `libpq5:amd64=9.4.11-0+deb8u2`
-- `postgresql-client-9.4=9.4.11-0+deb8u2`
+- `libpq5:amd64=9.4.12-0+deb8u1`
+- `postgresql-client-9.4=9.4.12-0+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-client-9.4/copyright`)
 
@@ -2655,16 +2655,16 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-9.4=9.4.11-0+deb8u2
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.11-0+deb8u2.dsc' postgresql-9.4_9.4.11-0+deb8u2.dsc 3546 SHA256:1d9d1f20f1cbdc08246ddda323850ac579b28a095abce19f69cf16a75cb4a35d
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.11.orig.tar.bz2' postgresql-9.4_9.4.11.orig.tar.bz2 17832915 SHA256:e3eb51d045c180b03d2de1f0c3af9356e10be49448e966ca01dfc2c6d1cc9d23
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.11-0+deb8u2.debian.tar.xz' postgresql-9.4_9.4.11-0+deb8u2.debian.tar.xz 24460 SHA256:1dde901c9caf187387c7d005de4e7ef06bda428439c54ed64bce037734134e5a
+$ apt-get source -qq --print-uris postgresql-9.4=9.4.12-0+deb8u1
+'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.12-0+deb8u1.dsc' postgresql-9.4_9.4.12-0+deb8u1.dsc 3546 SHA256:d854256e6aa72c9394da5c3fb48fe4fa44431ab470bdcb7e128861cc0c66a9dd
+'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.12.orig.tar.bz2' postgresql-9.4_9.4.12.orig.tar.bz2 17833119 SHA256:fca055481875d1c49e31c28443f56472a1474b3fbe25b7ae64440c6118f82e64
+'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.12-0+deb8u1.debian.tar.xz' postgresql-9.4_9.4.12-0+deb8u1.debian.tar.xz 24660 SHA256:9499fb30e776b6f4e8c6fdf154aea3468cfe1c5208010c6f67fcdfb3d89421dd
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/postgresql-9.4/9.4.11-0+deb8u2/
-- https://sources.debian.net/src/postgresql-9.4/9.4.11-0+deb8u2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/postgresql-9.4/9.4.12-0+deb8u1/
+- https://sources.debian.net/src/postgresql-9.4/9.4.12-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `postgresql-common=165+deb8u2`
 
