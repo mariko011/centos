@@ -163,14 +163,8 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bash=4.3-7ubuntu1.6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-7ubuntu1.6.dsc' bash_4.3-7ubuntu1.6.dsc 2265 SHA256:3557865003176d6b3301797e4cbb13a0b37e4bba377b6755240adb6f4fb8b8f5
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3.orig.tar.gz' bash_4.3.orig.tar.gz 7516231 SHA256:b2fe79ddf9e7abdb4695e3070afa866d2a94a58d1cc9d731585330c753815491
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-7ubuntu1.6.debian.tar.gz' bash_4.3-7ubuntu1.6.debian.tar.gz 97573 SHA256:d70390057c8c5a9a37b89c8fc6f4e7f15d62cb430b61d2741897529c91572fff
-```
 
 ### `dpkg` source package: `busybox=1:1.21.0-1ubuntu1`
 
