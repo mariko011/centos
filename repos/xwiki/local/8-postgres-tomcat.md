@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ec4f12f928e4e9a79eb6b2afe02a0612b3d80937c9f57db0b90a34e21541f7c1`
-- Created: `2017-05-10T17:06:00.513000682Z`
+- Image ID: `sha256:1720ee7d96891a8d56e1a70e95ddda32fd98e10e0a3c7e3d7618fe4b3b00189d`
+- Created: `2017-05-17T01:50:29.591233145Z`
 - Virtual Size: ~ 1.16 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,8 +13,8 @@
   - `PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home/jre`
-  - `JAVA_VERSION=8u121`
-  - `JAVA_DEBIAN_VERSION=8u121-b13-1~bpo8+1`
+  - `JAVA_VERSION=8u131`
+  - `JAVA_DEBIAN_VERSION=8u131-b11-1~bpo8+1`
   - `CA_CERTIFICATES_JAVA_VERSION=20161107~bpo8+1`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
@@ -22,9 +22,9 @@
   - `OPENSSL_VERSION=1.1.0e-1`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.5.14`
-  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.14/bin/apache-tomcat-8.5.14.tar.gz`
-  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.5.14/bin/apache-tomcat-8.5.14.tar.gz.asc`
+  - `TOMCAT_VERSION=8.5.15`
+  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.15/bin/apache-tomcat-8.5.15.tar.gz`
+  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.5.15/bin/apache-tomcat-8.5.15.tar.gz.asc`
   - `XWIKI_VERSION=8.4.5`
   - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/enterprise/xwiki-enterprise-web/8.4.5`
   - `XWIKI_DOWNLOAD_SHA256=52ed122c44984748a729a784c94cb70ccf0d2fa34c2340d0fd45c75deb3b0bc9`
@@ -4240,11 +4240,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nss/2:3.26-1+debu8u1/
 - https://sources.debian.net/src/nss/2:3.26-1+debu8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openjdk-8=8u121-b13-1~bpo8+1`
+### `dpkg` source package: `openjdk-8=8u131-b11-1~bpo8+1`
 
 Binary Packages:
 
-- `openjdk-8-jre-headless:amd64=8u121-b13-1~bpo8+1`
+- `openjdk-8-jre-headless:amd64=8u131-b11-1~bpo8+1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 
@@ -4256,16 +4256,16 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-8=8u121-b13-1~bpo8+1
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u121-b13-1~bpo8+1.dsc' openjdk-8_8u121-b13-1~bpo8+1.dsc 4522 SHA256:ae40bb526fde162d14816d07ee1fecba2f2696feed07d01475a945d2dc721b0a
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u121-b13.orig.tar.xz' openjdk-8_8u121-b13.orig.tar.xz 63884892 SHA256:78f64c05575fa36ae35e712e3d23b3ac139aaeb328eebca705705652b5985699
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u121-b13-1~bpo8+1.debian.tar.xz' openjdk-8_8u121-b13-1~bpo8+1.debian.tar.xz 235396 SHA256:190d5b0ff30f6085aadccc38cf6d56ce91ba4185b0cb25ae6996c042b4066e34
+$ apt-get source -qq --print-uris openjdk-8=8u131-b11-1~bpo8+1
+'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u131-b11-1~bpo8+1.dsc' openjdk-8_8u131-b11-1~bpo8+1.dsc 4379 SHA256:74d465cf7d1677f414a25abb1ba88786013855694a80b7e802a3769acc6e408d
+'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u131-b11.orig.tar.xz' openjdk-8_8u131-b11.orig.tar.xz 63889888 SHA256:8369a083164d66c151de39933b192583ffb0b1b6daf8c7ffe17afc040478f21b
+'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u131-b11-1~bpo8+1.debian.tar.xz' openjdk-8_8u131-b11-1~bpo8+1.debian.tar.xz 242732 SHA256:455f10a9a92ae30a7326cc09812e770905d94d730e9020d427c84ff2f6e009a6
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openjdk-8/8u121-b13-1~bpo8+1/
-- https://sources.debian.net/src/openjdk-8/8u121-b13-1~bpo8+1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openjdk-8/8u131-b11-1~bpo8+1/
+- https://sources.debian.net/src/openjdk-8/8u131-b11-1~bpo8+1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.40+dfsg-1+deb8u2`
 
