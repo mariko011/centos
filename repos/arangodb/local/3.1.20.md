@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d7b60674f9a16914a324925b6f264a6e810d3d6606bbe832c07f43c28ee3e174`
-- Created: `2017-05-16T19:53:38.38133314Z`
-- Virtual Size: ~ 345.15 Mb  
+- Image ID: `sha256:a4c547a253f945fabd4859cf75f6d4d109f8711227303e35ff99af55c5634559`
+- Created: `2017-05-17T18:01:06.599261416Z`
+- Virtual Size: ~ 345.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -253,6 +253,31 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/bzip2/1.0.6-7/
 - https://sources.debian.net/src/bzip2/1.0.6-7/debian/copyright (for direct copyright/license information)
+
+### `dpkg` source package: `ca-certificates=20141019+deb8u3`
+
+Binary Packages:
+
+- `ca-certificates=20141019+deb8u3`
+
+Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
+
+- `GPL-2`
+- `GPL-2+`
+- `MPL-2.0`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris ca-certificates=20141019+deb8u3
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20141019+deb8u3.dsc' ca-certificates_20141019+deb8u3.dsc 1779 SHA256:00d74f6be7cdae6be14b97f0a0c7d98e6050fcf09044d2f0f637cf1a985b1234
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20141019+deb8u3.tar.xz' ca-certificates_20141019+deb8u3.tar.xz 299472 SHA256:d6c6244b47b96ae9b718e4c1f3b6dc3487a455a31aeae70573361f313bc532a8
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/ca-certificates/20141019+deb8u3/
+- https://sources.debian.net/src/ca-certificates/20141019+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cdebconf=0.192`
 
