@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fa669a51774c64655c6158974ef47a69222f89252170cea3b353d5437dda7603`
-- Created: `2017-04-25T05:58:31.56698017Z`
+- Image ID: `sha256:f5ef261c1e01a751717bfd5addc537d1f8e92a0736c4111a7140773c06e13c0d`
+- Created: `2017-05-10T16:52:02.271179207Z`
 - Virtual Size: ~ 233.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -688,11 +688,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/findutils/4.4.2-4/
 - https://sources.debian.net/src/findutils/4.4.2-4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `freetype=2.4.9-1.1+deb7u5`
+### `dpkg` source package: `freetype=2.4.9-1.1+deb7u7`
 
 Binary Packages:
 
-- `libfreetype6:amd64=2.4.9-1.1+deb7u5`
+- `libfreetype6:amd64=2.4.9-1.1+deb7u7`
 
 Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 
@@ -705,8 +705,18 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 - `GZip`
 - `OpenGroup-BSD-like`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris freetype=2.4.9-1.1+deb7u7
+'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u7.dsc' freetype_2.4.9-1.1+deb7u7.dsc 1823 SHA256:e08860f372af2358d611bd6e6d74b31d1f0fb84f10bb686a0129f668c9a79f91
+'http://security.debian.org/pool/updates/main/f/freetype/freetype_2.4.9-1.1+deb7u7.tar.gz' freetype_2.4.9-1.1+deb7u7.tar.gz 1832352 SHA256:23eb1cb785aaea8f9469205141cdd99ed85c682cd6460c0303bb961774edfea3
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u7/
+- https://sources.debian.net/src/freetype/2.4.9-1.1+deb7u7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-4.7=4.7.2-5`
 
@@ -1797,11 +1807,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/readline6/6.2+dfsg-0.1/
 - https://sources.debian.net/src/readline6/6.2+dfsg-0.1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `rtmpdump=2.4+20111222.git4e06e21-1`
+### `dpkg` source package: `rtmpdump=2.4+20111222.git4e06e21-1+deb7u1`
 
 Binary Packages:
 
-- `librtmp0:amd64=2.4+20111222.git4e06e21-1`
+- `librtmp0:amd64=2.4+20111222.git4e06e21-1+deb7u1`
 
 Licenses: (parsed from: `/usr/share/doc/librtmp0/copyright`)
 
@@ -1811,16 +1821,16 @@ Licenses: (parsed from: `/usr/share/doc/librtmp0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris rtmpdump=2.4+20111222.git4e06e21-1
-'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4+20111222.git4e06e21-1.dsc' rtmpdump_2.4+20111222.git4e06e21-1.dsc 1591 SHA256:9728613f65dba1149a9ec7be767d5d52b2b2c898c1a5830abf76a8443e1da9db
-'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4+20111222.git4e06e21.orig.tar.gz' rtmpdump_2.4+20111222.git4e06e21.orig.tar.gz 137391 SHA256:69dd9cc5228869efdeed234ae63327c14d0935da3b5a2cd7011688c1f66fb385
-'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4+20111222.git4e06e21-1.debian.tar.gz' rtmpdump_2.4+20111222.git4e06e21-1.debian.tar.gz 5597 SHA256:ebbb587a14668e124a9b3558a74096ab5e85b7e6d18faed1d09fbdab4b76cf14
+$ apt-get source -qq --print-uris rtmpdump=2.4+20111222.git4e06e21-1+deb7u1
+'http://security.debian.org/pool/updates/main/r/rtmpdump/rtmpdump_2.4+20111222.git4e06e21-1+deb7u1.dsc' rtmpdump_2.4+20111222.git4e06e21-1+deb7u1.dsc 2231 SHA256:fda2a79452563ca827a9ed8961d06cd64c2b2987294e940474e5d87cf0fecba4
+'http://security.debian.org/pool/updates/main/r/rtmpdump/rtmpdump_2.4+20111222.git4e06e21.orig.tar.gz' rtmpdump_2.4+20111222.git4e06e21.orig.tar.gz 137391 SHA256:69dd9cc5228869efdeed234ae63327c14d0935da3b5a2cd7011688c1f66fb385
+'http://security.debian.org/pool/updates/main/r/rtmpdump/rtmpdump_2.4+20111222.git4e06e21-1+deb7u1.debian.tar.gz' rtmpdump_2.4+20111222.git4e06e21-1+deb7u1.debian.tar.gz 7735 SHA256:b76a37e5bb7fd642cd4e67df734d0bbebef307991d0ae7ddd35f98bc9ee35ca9
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/rtmpdump/2.4+20111222.git4e06e21-1/
-- https://sources.debian.net/src/rtmpdump/2.4+20111222.git4e06e21-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/rtmpdump/2.4+20111222.git4e06e21-1+deb7u1/
+- https://sources.debian.net/src/rtmpdump/2.4+20111222.git4e06e21-1+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sed=4.2.1-10`
 
