@@ -211,14 +211,8 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bash=4.3-14ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-14ubuntu1.1.dsc' bash_4.3-14ubuntu1.1.dsc 2309 SHA256:cb346c86e7d7f1a7871444c85c4ab526b89f9ee607881296586b0c7e27387c91
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3.orig.tar.gz' bash_4.3.orig.tar.gz 7516231 SHA256:b2fe79ddf9e7abdb4695e3070afa866d2a94a58d1cc9d731585330c753815491
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-14ubuntu1.1.debian.tar.xz' bash_4.3-14ubuntu1.1.debian.tar.xz 91648 SHA256:db665b66331036e5fb9c52a6be75f2de32e0b43ad270765c8ca76fbb5ccafec1
-```
 
 ### `dpkg` source package: `bzip2=1.0.6-8`
 
@@ -1804,14 +1798,8 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.2-3.1ubuntu5.2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.1ubuntu5.2.dsc' shadow_4.2-3.1ubuntu5.2.dsc 2120 SHA256:dd1ce159bc93a635095050adffc8c5d7ebeef78f12fc50aeaf5065cf15919d07
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.1ubuntu5.2.debian.tar.xz' shadow_4.2-3.1ubuntu5.2.debian.tar.xz 505580 SHA256:d97e38a09865e0c85ff7ffb2302863b047b7eb79e4ce30d9de3f42f53b08da7c
-```
 
 ### `dpkg` source package: `six=1.10.0-3`
 
