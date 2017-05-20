@@ -4661,19 +4661,8 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.6=9.6.2-2
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.2-2.dsc' postgresql-9.6_9.6.2-2.dsc 3666 SHA256:8d9b494e9c06c7e8772118842602aa864cc85cab19960a6a9b52585ead477971
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.2.orig.tar.bz2' postgresql-9.6_9.6.2.orig.tar.bz2 19478040 SHA256:0187b5184be1c09034e74e44761505e52357248451b0c854dddec6c231fe50c9
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.2-2.debian.tar.xz' postgresql-9.6_9.6.2-2.debian.tar.xz 23508 SHA256:3c571fe797c63d57177178dacb541abcbf944b71aa3cd0d4141d8ed25ec0d86e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/postgresql-9.6/9.6.2-2/
-- https://sources.debian.net/src/postgresql-9.6/9.6.2-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `procps=2:3.3.12-3`
 
