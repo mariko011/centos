@@ -1,9 +1,9 @@
-# `redis:3.2.8-alpine`
+# `redis:3.2.9-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:692d3331d29e403ad0deb2b1a9a5e145a38bd129a785793308c308653b02aaf7`
-- Created: `2017-05-10T22:58:46.147798735Z`
+- Image ID: `sha256:da2b86c1900b642b50f2929b386b879ca066dd9d86d03a54de271880bd3188b9`
+- Created: `2017-05-18T22:28:47.324000035Z`
 - Virtual Size: ~ 19.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,6 +11,6 @@
 - Command: `["redis-server"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `REDIS_VERSION=3.2.8`
-  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.2.8.tar.gz`
-  - `REDIS_DOWNLOAD_SHA1=6780d1abb66f33a97aad0edbe020403d0a15b67f`
+  - `REDIS_VERSION=3.2.9`
+  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-3.2.9.tar.gz`
+  - `REDIS_DOWNLOAD_SHA=6eaacfa983b287e440d0839ead20c2231749d5d6b78bbe0e0ffa3a890c59ff26`
