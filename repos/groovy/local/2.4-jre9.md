@@ -2129,19 +2129,8 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openjdk-9=9~b169-1
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b169-1.dsc' openjdk-9_9~b169-1.dsc 4468 SHA256:8f34c5d20f858dd2746c5373c7c7558dfbcb9752d917d33559ff5a5999f8a5e2
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b169.orig.tar.gz' openjdk-9_9~b169.orig.tar.gz 74637631 SHA256:93be1dc7b04a2f875c88b87ba86704a51934bf431b2338016c0a423c4d972cfa
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b169-1.debian.tar.xz' openjdk-9_9~b169-1.debian.tar.xz 196500 SHA256:5590f2fbfc9082ae60745d6e0b2c48dd972c1e8b6e5ea51bbb15adb6fe2d2317
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openjdk-9/9~b169-1/
-- https://sources.debian.net/src/openjdk-9/9~b169-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-4`
 
