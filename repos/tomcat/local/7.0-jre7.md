@@ -1,10 +1,10 @@
-# `tomcat:7.0.77-jre7`
+# `tomcat:7.0.78-jre7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:edd4e9cbd03a3c6e2afac91cc2cdb8bc455b95a4f1a95db9e62a94a1702c3727`
-- Created: `2017-05-10T16:29:28.486902459Z`
-- Virtual Size: ~ 357.36 Mb  
+- Image ID: `sha256:9fec2535bb11e2a9a8acd866e56483b31d7ee85f5c70b30dc7268f6eb2989401`
+- Created: `2017-05-17T21:19:29.007274368Z`
+- Virtual Size: ~ 357.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -20,9 +20,9 @@
   - `OPENSSL_VERSION=1.1.0e-1`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=7`
-  - `TOMCAT_VERSION=7.0.77`
-  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-7/v7.0.77/bin/apache-tomcat-7.0.77.tar.gz`
-  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-7/v7.0.77/bin/apache-tomcat-7.0.77.tar.gz.asc`
+  - `TOMCAT_VERSION=7.0.78`
+  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-7/v7.0.78/bin/apache-tomcat-7.0.78.tar.gz`
+  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-7/v7.0.78/bin/apache-tomcat-7.0.78.tar.gz.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -3319,20 +3319,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.0e-1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e-1.dsc' openssl_1.1.0e-1.dsc 2583 SHA256:8d813e7a52b4732e0af7cf8cab1436ae7f00e012594c26c401c1eec0e82cfe64
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e.orig.tar.gz' openssl_1.1.0e.orig.tar.gz 5202247 SHA256:57be8618979d80c910728cfc99369bf97b2a1abd8f366ab6ebdee8975ad3874c
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e.orig.tar.gz.asc' openssl_1.1.0e.orig.tar.gz.asc 455 SHA256:05ab4b1019da59963890509ad9ff3142c72df0b3baf4a38043392aff99e6a13d
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e-1.debian.tar.xz' openssl_1.1.0e-1.debian.tar.xz 52864 SHA256:3063329a11696c03f3330991089d4c028c5b0a61ccc3e31e5189ca3b96cd5b3c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssl/1.1.0e-1/
-- https://sources.debian.net/src/openssl/1.1.0e-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
