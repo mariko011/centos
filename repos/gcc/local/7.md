@@ -1993,19 +1993,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.7.4+dfsg-6
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-6.dsc' imagemagick_6.9.7.4+dfsg-6.dsc 5133 SHA256:2573ffd6ac29c09ae79b75d7c94b48475e96a4e72effa7103853c477a82a053e
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg.orig.tar.xz' imagemagick_6.9.7.4+dfsg.orig.tar.xz 8929800 SHA256:47fb2cdd26f5913318c4504f16ea363e04d1f400dda9ec52e461ab661d724026
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-6.debian.tar.xz' imagemagick_6.9.7.4+dfsg-6.debian.tar.xz 207516 SHA256:f7153878f6c2675fa8af533ab1ba474cd11cbcf75a35934483999ac3df784441
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/imagemagick/8:6.9.7.4+dfsg-6/
-- https://sources.debian.net/src/imagemagick/8:6.9.7.4+dfsg-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9.4-2`
 
@@ -3872,19 +3861,8 @@ Licenses: (parsed from: `/usr/share/doc/libmariadbclient-dev/copyright`, `/usr/s
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mariadb-10.1=10.1.22-3
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.22-3.dsc' mariadb-10.1_10.1.22-3.dsc 4381 SHA256:e4aca2ef8ffae391f735058649d9bff6f92cd9b7bca77c778228be4fb4650c64
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.22.orig.tar.gz' mariadb-10.1_10.1.22.orig.tar.gz 61542321 SHA256:bcb0572e7ad32cea9740a21e9255f733bdf60a5561ffbda317c22dd12b3966ce
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.22-3.debian.tar.xz' mariadb-10.1_10.1.22-3.debian.tar.xz 220740 SHA256:5d8f8b31ef906890bdd789d5193b66721581345af8a61d499f2041ba84802d3b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mariadb-10.1/10.1.22-3/
-- https://sources.debian.net/src/mariadb-10.1/10.1.22-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
@@ -4357,20 +4335,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.0e-1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e-1.dsc' openssl_1.1.0e-1.dsc 2583 SHA256:8d813e7a52b4732e0af7cf8cab1436ae7f00e012594c26c401c1eec0e82cfe64
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e.orig.tar.gz' openssl_1.1.0e.orig.tar.gz 5202247 SHA256:57be8618979d80c910728cfc99369bf97b2a1abd8f366ab6ebdee8975ad3874c
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e.orig.tar.gz.asc' openssl_1.1.0e.orig.tar.gz.asc 455 SHA256:05ab4b1019da59963890509ad9ff3142c72df0b3baf4a38043392aff99e6a13d
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e-1.debian.tar.xz' openssl_1.1.0e-1.debian.tar.xz 52864 SHA256:3063329a11696c03f3330991089d4c028c5b0a61ccc3e31e5189ca3b96cd5b3c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssl/1.1.0e-1/
-- https://sources.debian.net/src/openssl/1.1.0e-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.23.3-2`
 
@@ -4851,19 +4817,8 @@ Licenses: (parsed from: `/usr/share/doc/libreadline-dev/copyright`, `/usr/share/
 - `GFDL`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris readline=7.0-2
-'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0-2.dsc' readline_7.0-2.dsc 2538 SHA256:78d9b2eecc7f4b2bf55f0aeab67e2ae34824ab9421309bd92404ffaff37f9872
-'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0.orig.tar.gz' readline_7.0.orig.tar.gz 2910016 SHA256:750d437185286f40a369e1e4f4764eda932b9459b5ec9a731628393dd3d32334
-'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0-2.debian.tar.xz' readline_7.0-2.debian.tar.xz 29072 SHA256:0380c193c6fc085e61ab6ad3eee7e1b8b441a7bf195014ddb32203bd749ea3f9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/readline/7.0-2/
-- https://sources.debian.net/src/readline/7.0-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-1`
 
