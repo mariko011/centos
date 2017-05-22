@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9814271c6ed816ad3068671c6e6cbb5dcc850b0f8a3dde1763f6eeeda5ee77ce`
-- Created: `2017-05-11T21:23:33.463286277Z`
-- Virtual Size: ~ 640.43 Mb  
+- Image ID: `sha256:df6576519083bf6faf8305bba749632773299514327c23dcd89524626d66a3db`
+- Created: `2017-05-22T19:14:52.399571975Z`
+- Virtual Size: ~ 640.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `RUBY_VERSION=2.2.7`
   - `RUBY_DOWNLOAD_SHA256=234c8aee6543da9efd67008e6e7ee740d41ed57a52e797f65043c3b5ec3bcb53`
   - `RUBYGEMS_VERSION=2.6.12`
-  - `BUNDLER_VERSION=1.14.6`
+  - `BUNDLER_VERSION=1.15.0`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_PATH=/usr/local/bundle`
   - `BUNDLE_BIN=/usr/local/bundle/bin`
@@ -3180,11 +3180,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/pixman/0.32.6-3/
 - https://sources.debian.net/src/pixman/0.32.6-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `postgresql-9.4=9.4.11-0+deb8u2`
+### `dpkg` source package: `postgresql-9.4=9.4.12-0+deb8u1`
 
 Binary Packages:
 
-- `libpq5:amd64=9.4.11-0+deb8u2`
+- `libpq5:amd64=9.4.12-0+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -3194,16 +3194,16 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-9.4=9.4.11-0+deb8u2
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.11-0+deb8u2.dsc' postgresql-9.4_9.4.11-0+deb8u2.dsc 3546 SHA256:1d9d1f20f1cbdc08246ddda323850ac579b28a095abce19f69cf16a75cb4a35d
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.11.orig.tar.bz2' postgresql-9.4_9.4.11.orig.tar.bz2 17832915 SHA256:e3eb51d045c180b03d2de1f0c3af9356e10be49448e966ca01dfc2c6d1cc9d23
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.11-0+deb8u2.debian.tar.xz' postgresql-9.4_9.4.11-0+deb8u2.debian.tar.xz 24460 SHA256:1dde901c9caf187387c7d005de4e7ef06bda428439c54ed64bce037734134e5a
+$ apt-get source -qq --print-uris postgresql-9.4=9.4.12-0+deb8u1
+'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.12-0+deb8u1.dsc' postgresql-9.4_9.4.12-0+deb8u1.dsc 3546 SHA256:d854256e6aa72c9394da5c3fb48fe4fa44431ab470bdcb7e128861cc0c66a9dd
+'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.12.orig.tar.bz2' postgresql-9.4_9.4.12.orig.tar.bz2 17833119 SHA256:fca055481875d1c49e31c28443f56472a1474b3fbe25b7ae64440c6118f82e64
+'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.12-0+deb8u1.debian.tar.xz' postgresql-9.4_9.4.12-0+deb8u1.debian.tar.xz 24660 SHA256:9499fb30e776b6f4e8c6fdf154aea3468cfe1c5208010c6f67fcdfb3d89421dd
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/postgresql-9.4/9.4.11-0+deb8u2/
-- https://sources.debian.net/src/postgresql-9.4/9.4.11-0+deb8u2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/postgresql-9.4/9.4.12-0+deb8u1/
+- https://sources.debian.net/src/postgresql-9.4/9.4.12-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `procps=2:3.3.9-9`
 
@@ -3315,11 +3315,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/readline6/6.3-8/
 - https://sources.debian.net/src/readline6/6.3-8/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `rtmpdump=2.4+20150115.gita107cef-1`
+### `dpkg` source package: `rtmpdump=2.4+20150115.gita107cef-1+deb8u1`
 
 Binary Packages:
 
-- `librtmp1:amd64=2.4+20150115.gita107cef-1`
+- `librtmp1:amd64=2.4+20150115.gita107cef-1+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/librtmp1/copyright`)
 
@@ -3329,16 +3329,16 @@ Licenses: (parsed from: `/usr/share/doc/librtmp1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris rtmpdump=2.4+20150115.gita107cef-1
-'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4+20150115.gita107cef-1.dsc' rtmpdump_2.4+20150115.gita107cef-1.dsc 2257 SHA256:acfa72b9e6e0a96b4a514201b2e11e8ec9ae3173596f0467f6a5eb300d5fecdd
-'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4+20150115.gita107cef.orig.tar.gz' rtmpdump_2.4+20150115.gita107cef.orig.tar.gz 142030 SHA256:d47ef3a07815079bf73eb5d053001c4341407fcbebf39f34e6213c4b772cb29a
-'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4+20150115.gita107cef-1.debian.tar.xz' rtmpdump_2.4+20150115.gita107cef-1.debian.tar.xz 7004 SHA256:68d430d4f97be9767674920fb0a7821761ad1633578aa3cd6144b919ebbfcca4
+$ apt-get source -qq --print-uris rtmpdump=2.4+20150115.gita107cef-1+deb8u1
+'http://security.debian.org/pool/updates/main/r/rtmpdump/rtmpdump_2.4+20150115.gita107cef-1+deb8u1.dsc' rtmpdump_2.4+20150115.gita107cef-1+deb8u1.dsc 2299 SHA256:8f22675e50ccf221489c79a51180561b4ae58a57a6e9d52e8b3a5e3d42860ca4
+'http://security.debian.org/pool/updates/main/r/rtmpdump/rtmpdump_2.4+20150115.gita107cef.orig.tar.gz' rtmpdump_2.4+20150115.gita107cef.orig.tar.gz 142030 SHA256:d47ef3a07815079bf73eb5d053001c4341407fcbebf39f34e6213c4b772cb29a
+'http://security.debian.org/pool/updates/main/r/rtmpdump/rtmpdump_2.4+20150115.gita107cef-1+deb8u1.debian.tar.xz' rtmpdump_2.4+20150115.gita107cef-1+deb8u1.debian.tar.xz 8160 SHA256:b20bf79b1d8d6536f16d94af6073f3105aef91c297a67b4a6c2304de42e8d96b
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/rtmpdump/2.4+20150115.gita107cef-1/
-- https://sources.debian.net/src/rtmpdump/2.4+20150115.gita107cef-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/rtmpdump/2.4+20150115.gita107cef-1+deb8u1/
+- https://sources.debian.net/src/rtmpdump/2.4+20150115.gita107cef-1+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sed=4.2.2-4+deb8u1`
 
