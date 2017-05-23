@@ -149,14 +149,8 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bash=4.4-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.4-2ubuntu1.dsc' bash_4.4-2ubuntu1.dsc 2303 SHA256:a71ca5e94876b17196625d77f567a5e41634ab4bc5a09ccb65c7a96e96db9bb7
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.4.orig.tar.xz' bash_4.4.orig.tar.xz 4878580 SHA256:819ebb6a23799e9e4ca56ac579778c46902005bd5ade4f131ed293d9f77108e7
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.4-2ubuntu1.debian.tar.xz' bash_4.4-2ubuntu1.debian.tar.xz 66768 SHA256:731a16116d88e010e4379908e0d95d07a8a80c55ae567f70c564c12e498efea8
-```
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
 
@@ -322,13 +316,8 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.23ubuntu6
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.23ubuntu6.dsc' dpkg_1.18.23ubuntu6.dsc 2107 SHA256:15425dee853f3e26925366d40767aaf50879ef019bce1e7170de30a6e18bd454
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.23ubuntu6.tar.xz' dpkg_1.18.23ubuntu6.tar.xz 4528908 SHA256:af46e282c4639bbe4ec822f9e4e7ec2d63f5db3d4c5713d55cb2c5dc374d130c
-```
 
 ### `dpkg` source package: `e2fsprogs=1.43.4-2`
 
@@ -1037,14 +1026,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=233-6ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_233-6ubuntu1.dsc' systemd_233-6ubuntu1.dsc 4170 SHA256:f0005a4f2efe4953bda4a32b0d6ea8eaa5a25a4d6d91642f00f0fd7b059b3356
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_233.orig.tar.gz' systemd_233.orig.tar.gz 4660737 SHA256:8b3e99da3d4164b66581830a7f2436c0c8fe697b5fbdc3927bdb960646be0083
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_233-6ubuntu1.debian.tar.xz' systemd_233-6ubuntu1.debian.tar.xz 142184 SHA256:0543ef74d7da401ada740fff7197947bb5a4fb586076fd2f5f0a98f070eaa35a
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`
 
