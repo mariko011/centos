@@ -394,19 +394,8 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris binutils=2.28-4
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.28-4.dsc' binutils_2.28-4.dsc 4374 SHA256:1e4d84116469c89a7fbe9e5e21f2be703fe4173ec16f8a34449b727fb061d70d
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.28.orig.tar.gz' binutils_2.28.orig.tar.gz 37814356 SHA256:db29588b0214fa69baa1a9351122cd6d0f081f2e675e6ad2aefc316ddeaf327a
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.28-4.diff.gz' binutils_2.28-4.diff.gz 116329 SHA256:fc56919cd2bd9e5d8aec1046af092434d0ff042e1a8bf9defa76288f1b1b7ec5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/binutils/2.28-4/
-- https://sources.debian.net/src/binutils/2.28-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
 
@@ -786,18 +775,8 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.60
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.60.dsc' debconf_1.5.60.dsc 1996 SHA256:47dbe6eb5780359256e496ce873c4832452ebb41b870dd54d9f1a2e01624f276
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.60.tar.xz' debconf_1.5.60.tar.xz 570300 SHA256:883cec457dc939cd21ab7ecba1492c4b17aaa6259aabe7ca8bbfabeb0f31dccc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/debconf/1.5.60/
-- https://sources.debian.net/src/debconf/1.5.60/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `debian-archive-keyring=2014.3`
 
@@ -1264,19 +1243,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp-6/copyright`, `/usr/share/doc/g++-6/
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.3.0-16
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-16.dsc' gcc-6_6.3.0-16.dsc 27145 SHA256:78670286b90a18b5e2e9fcc9178ea86869b925f6f14fdfb6679ca6a7ea99237a
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0.orig.tar.gz' gcc-6_6.3.0.orig.tar.gz 81587460 SHA256:04552f04baf6974fb7521191859fb54717385ad659afd822b2995b66ee4e4151
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-16.diff.gz' gcc-6_6.3.0-16.diff.gz 2002636 SHA256:107a7f463b2179924c0a92c23013a01e900da7dee060738c653b5e4d22f4eede
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-6/6.3.0-16/
-- https://sources.debian.net/src/gcc-6/6.3.0-16/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-defaults=1.168`
 
@@ -4795,19 +4763,8 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.4-4
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.4-4.dsc' shadow_4.4-4.dsc 2262 SHA256:72ed4408feff4a90a9e9df3fa0d9a7469b064eb598935ff469d277a01294f20d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.4.orig.tar.gz' shadow_4.4.orig.tar.gz 3003036 SHA256:1323e7e932836e03dbfa441f7eeb349ede2c92d62b788ade0732411fd516be3d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.4-4.debian.tar.xz' shadow_4.4-4.debian.tar.xz 601652 SHA256:779126d9b41bb1cd616172086b38c82a2db2786be0b63368f3cd14b5b328feaf
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/shadow/1:4.4-4/
-- https://sources.debian.net/src/shadow/1:4.4-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `shared-mime-info=1.8-1`
 
@@ -5004,19 +4961,8 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`, `/usr/share/doc/lib
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.7-6
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.7-6.dsc' tiff_4.0.7-6.dsc 2157 SHA256:6a43c50ac96a44c7627522d99689cdce75474777ec1f3d6c9af7db5b5d434f72
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.7.orig.tar.gz' tiff_4.0.7.orig.tar.gz 2076392 SHA256:9f43a2cfb9589e5cecaa66e16bf87f814c945f22df7ba600d63aac4632c4f019
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.7-6.debian.tar.xz' tiff_4.0.7-6.debian.tar.xz 29660 SHA256:9c9048c28205bdbeb5ba36c7a194d0cd604bd137c70961607bfc8a079be5fa31
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff/4.0.7-6/
-- https://sources.debian.net/src/tiff/4.0.7-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tzdata=2017b-1`
 

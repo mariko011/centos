@@ -498,18 +498,8 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.60
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.60.dsc' debconf_1.5.60.dsc 1996 SHA256:47dbe6eb5780359256e496ce873c4832452ebb41b870dd54d9f1a2e01624f276
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.60.tar.xz' debconf_1.5.60.tar.xz 570300 SHA256:883cec457dc939cd21ab7ecba1492c4b17aaa6259aabe7ca8bbfabeb0f31dccc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/debconf/1.5.60/
-- https://sources.debian.net/src/debconf/1.5.60/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `debian-archive-keyring=2014.3`
 
@@ -780,19 +770,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`, `/usr/share/doc/l
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.3.0-16
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-16.dsc' gcc-6_6.3.0-16.dsc 27145 SHA256:78670286b90a18b5e2e9fcc9178ea86869b925f6f14fdfb6679ca6a7ea99237a
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0.orig.tar.gz' gcc-6_6.3.0.orig.tar.gz 81587460 SHA256:04552f04baf6974fb7521191859fb54717385ad659afd822b2995b66ee4e4151
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-16.diff.gz' gcc-6_6.3.0-16.diff.gz 2002636 SHA256:107a7f463b2179924c0a92c23013a01e900da7dee060738c653b5e4d22f4eede
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-6/6.3.0-16/
-- https://sources.debian.net/src/gcc-6/6.3.0-16/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gdbm=1.8.3-14`
 
@@ -2322,19 +2301,8 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.4-4
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.4-4.dsc' shadow_4.4-4.dsc 2262 SHA256:72ed4408feff4a90a9e9df3fa0d9a7469b064eb598935ff469d277a01294f20d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.4.orig.tar.gz' shadow_4.4.orig.tar.gz 3003036 SHA256:1323e7e932836e03dbfa441f7eeb349ede2c92d62b788ade0732411fd516be3d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.4-4.debian.tar.xz' shadow_4.4-4.debian.tar.xz 601652 SHA256:779126d9b41bb1cd616172086b38c82a2db2786be0b63368f3cd14b5b328feaf
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/shadow/1:4.4-4/
-- https://sources.debian.net/src/shadow/1:4.4-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `six=1.10.0-4`
 
