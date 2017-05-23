@@ -195,19 +195,8 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bash=4.4-4
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4-4.dsc' bash_4.4-4.dsc 2251 SHA256:368f91e573ba31e006f6bb21309c96ae126ab192f717601627ecfb24cb68b6a0
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4.orig.tar.xz' bash_4.4.orig.tar.xz 4878580 SHA256:819ebb6a23799e9e4ca56ac579778c46902005bd5ade4f131ed293d9f77108e7
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4-4.debian.tar.xz' bash_4.4-4.debian.tar.xz 64420 SHA256:2af25aacebdff530a81810cb4c4f9f9b8bf9c800c9b473ce81577fd58bce825c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/bash/4.4-4/
-- https://sources.debian.net/src/bash/4.4-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
 
@@ -544,19 +533,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.3.0-16
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-16.dsc' gcc-6_6.3.0-16.dsc 27145 SHA256:78670286b90a18b5e2e9fcc9178ea86869b925f6f14fdfb6679ca6a7ea99237a
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0.orig.tar.gz' gcc-6_6.3.0.orig.tar.gz 81587460 SHA256:04552f04baf6974fb7521191859fb54717385ad659afd822b2995b66ee4e4151
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-16.diff.gz' gcc-6_6.3.0-16.diff.gz 2002636 SHA256:107a7f463b2179924c0a92c23013a01e900da7dee060738c653b5e4d22f4eede
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-6/6.3.0-16/
-- https://sources.debian.net/src/gcc-6/6.3.0-16/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.24-10`
 
