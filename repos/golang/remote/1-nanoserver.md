@@ -1,7 +1,7 @@
 ## `golang:1-nanoserver`
 
 ```console
-$ docker pull golang@sha256:6087e6559ecd3da652dea941dcbcfee08b4bd0ad4ed30f0b15d4b39cba20d6bc
+$ docker pull golang@sha256:6fecf9e6cae6d3d3b01ceb8856e53991ba25900d76c93fb3e4c93a355d9f3089
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull golang@sha256:6087e6559ecd3da652dea941dcbcfee08b4bd0ad4ed30f0b15d4
 
 -	Docker Version: 1.12.2-cs2-ws-beta
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **463.4 MB (463449758 bytes)**  
+-	Total Size: **466.2 MB (466155468 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b73f22679998a5db1370d3b16e506fca1cfcb2aad66c3c421baeacdcc8df141e`
+-	Image ID: `sha256:baeb042ef60f9250b4719ace7d9a8dcdcb6fbf56d4b77f43b5d849378763d9df`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -28,11 +28,11 @@ SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference 
 ENV GOPATH=C:\gopath
 # Wed, 26 Apr 2017 19:38:59 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath;
-# Wed, 26 Apr 2017 19:48:11 GMT
-ENV GOLANG_VERSION=1.8.1
-# Wed, 26 Apr 2017 19:50:38 GMT
-RUN $url = ('https://golang.org/dl/go{0}.windows-amd64.zip' -f $env:GOLANG_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'bb6f0fbef8b80c382455af8699bfbb7fe89256d4baf06d927feaeceb7342e4ee'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Complete.';
-# Wed, 26 Apr 2017 19:50:41 GMT
+# Tue, 23 May 2017 22:31:03 GMT
+ENV GOLANG_VERSION=1.8.2
+# Tue, 23 May 2017 22:33:53 GMT
+RUN $url = ('https://golang.org/dl/go{0}.windows-amd64.zip' -f $env:GOLANG_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '9bfa4d497caee1b7ec8720acdea2fa8af8d51b525ddc7e4648a63a3138a6a8e3'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Complete.';
+# Tue, 23 May 2017 22:33:58 GMT
 WORKDIR C:\gopath
 ```
 
@@ -55,15 +55,15 @@ WORKDIR C:\gopath
 		Last Modified: Wed, 26 Apr 2017 19:51:37 GMT  
 		Size: 884.5 KB (884544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6082b32115dbdc0929c88898be3da1706823f71e6ef47a10acd7e80211285afb`  
-		Last Modified: Wed, 26 Apr 2017 19:52:47 GMT  
-		Size: 957.0 B  
+	-	`sha256:d0a7b7b83fd2fd95e3b6d40098d4eb0fef683a4fc662722fbd30ef4adca2e8c7`  
+		Last Modified: Tue, 23 May 2017 22:35:53 GMT  
+		Size: 970.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f18596ca4e2005c2c4705d63e85dda7190b4a67caf9f444b8da41f7e98a3f18`  
-		Last Modified: Wed, 26 Apr 2017 19:53:05 GMT  
-		Size: 93.8 MB (93833125 bytes)  
+	-	`sha256:b3757b4dbd4d3761aa10cff4bc3e0c783efa8651718727babd28052e9291d7dd`  
+		Last Modified: Tue, 23 May 2017 22:36:13 GMT  
+		Size: 96.5 MB (96538827 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06f2c5e8342207af2c93a8548b12c251b35e3a4514dea9575a2fcad5b208d128`  
-		Last Modified: Wed, 26 Apr 2017 19:52:46 GMT  
-		Size: 963.0 B  
+	-	`sha256:b95011e5e173c1941acc6bf5117e902febe6abbfedeaa29d3d6e7307c744bc65`  
+		Last Modified: Tue, 23 May 2017 22:35:53 GMT  
+		Size: 958.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
