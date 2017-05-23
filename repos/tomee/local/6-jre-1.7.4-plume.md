@@ -1564,19 +1564,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.26-1+debu7u2
-'http://security.debian.org/pool/updates/main/n/nss/nss_3.26-1+debu7u2.dsc' nss_3.26-1+debu7u2.dsc 1919 SHA256:81b6a52730c8a3447a63fcc616d012a927a05bb068eb60f36f49b4c4dc2f0053
-'http://security.debian.org/pool/updates/main/n/nss/nss_3.26.orig.tar.gz' nss_3.26.orig.tar.gz 7386943 SHA256:91783a570ab953693eb977ce47c501f04c104cec287fa011c91bcc8970d1c564
-'http://security.debian.org/pool/updates/main/n/nss/nss_3.26-1+debu7u2.debian.tar.gz' nss_3.26-1+debu7u2.debian.tar.gz 36949 SHA256:ad8c98352a5015b6fd4cc5f1ed020335808e28d2a4808e3ee2ded1154766c613
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nss/2:3.26-1+debu7u2/
-- https://sources.debian.net/src/nss/2:3.26-1+debu7u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openjdk-6=6b38-1.13.10-1~deb7u1`
 
