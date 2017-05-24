@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9fec2535bb11e2a9a8acd866e56483b31d7ee85f5c70b30dc7268f6eb2989401`
-- Created: `2017-05-17T21:19:29.007274368Z`
-- Virtual Size: ~ 357.37 Mb  
+- Image ID: `sha256:6b78f9deb922d249887b631da5478c297957a97c8e5a567d399e9d2706341aa4`
+- Created: `2017-05-24T00:03:59.294920811Z`
+- Virtual Size: ~ 357.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -12,12 +12,12 @@
   - `PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home/jre`
-  - `JAVA_VERSION=7u121`
-  - `JAVA_DEBIAN_VERSION=7u121-2.6.8-2~deb8u1`
+  - `JAVA_VERSION=7u131`
+  - `JAVA_DEBIAN_VERSION=7u131-2.6.9-2~deb8u1`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
-  - `OPENSSL_VERSION=1.1.0e-1`
+  - `OPENSSL_VERSION=1.1.0e-2`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=7`
   - `TOMCAT_VERSION=7.0.78`
@@ -3234,11 +3234,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nss/2:3.26-1+debu8u1/
 - https://sources.debian.net/src/nss/2:3.26-1+debu8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openjdk-7=7u121-2.6.8-2~deb8u1`
+### `dpkg` source package: `openjdk-7=7u131-2.6.9-2~deb8u1`
 
 Binary Packages:
 
-- `openjdk-7-jre-headless:amd64=7u121-2.6.8-2~deb8u1`
+- `openjdk-7-jre-headless:amd64=7u131-2.6.9-2~deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-7-jre-headless/copyright`)
 
@@ -3249,16 +3249,16 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-7-jre-headless/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-7=7u121-2.6.8-2~deb8u1
-'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u121-2.6.8-2~deb8u1.dsc' openjdk-7_7u121-2.6.8-2~deb8u1.dsc 4751 SHA256:8dccb923bab0faf8ea1258c8dd485927154d3e3ab15e4ce7946243ca03a53704
-'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u121-2.6.8.orig.tar.gz' openjdk-7_7u121-2.6.8.orig.tar.gz 53913782 SHA256:04794485b765c6ee453668a7e01a82659378c0bd8a4e85e58979fe5256e50a3b
-'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u121-2.6.8-2~deb8u1.debian.tar.xz' openjdk-7_7u121-2.6.8-2~deb8u1.debian.tar.xz 210368 SHA256:4b2d91d0d2fe5544ba15b96fc22310b82193728cf9b5342ecdd0e0b59089f36e
+$ apt-get source -qq --print-uris openjdk-7=7u131-2.6.9-2~deb8u1
+'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u131-2.6.9-2~deb8u1.dsc' openjdk-7_7u131-2.6.9-2~deb8u1.dsc 4686 SHA256:f73086c128113d9e993e994037c2dc2c804441497b8635d6d1db3cdbfdbf49ea
+'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u131-2.6.9.orig.tar.gz' openjdk-7_7u131-2.6.9.orig.tar.gz 53769863 SHA256:b8cf96ff09b28d8f0f7e9a269dde99123b1da72179251e37f83a681a44158421
+'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u131-2.6.9-2~deb8u1.debian.tar.xz' openjdk-7_7u131-2.6.9-2~deb8u1.debian.tar.xz 178188 SHA256:2f475620018641deaeae50440f499393be1359a52338ec702339bfc5541fa5da
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openjdk-7/7u121-2.6.8-2~deb8u1/
-- https://sources.debian.net/src/openjdk-7/7u121-2.6.8-2~deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openjdk-7/7u131-2.6.9-2~deb8u1/
+- https://sources.debian.net/src/openjdk-7/7u131-2.6.9-2~deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.40+dfsg-1+deb8u2`
 
@@ -3308,19 +3308,31 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/openssl/1.0.1t-1+deb8u6/
 - https://sources.debian.net/src/openssl/1.0.1t-1+deb8u6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openssl=1.1.0e-1`
+### `dpkg` source package: `openssl=1.1.0e-2`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.0e-1`
-- `openssl=1.1.0e-1`
+- `libssl1.1:amd64=1.1.0e-2`
+- `openssl=1.1.0e-2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.1.0e-2
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e-2.dsc' openssl_1.1.0e-2.dsc 2583 SHA256:15807d33dd7722ad3ba1c445cc40b158a5a62ba68e21131987317d89463335a9
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e.orig.tar.gz' openssl_1.1.0e.orig.tar.gz 5202247 SHA256:57be8618979d80c910728cfc99369bf97b2a1abd8f366ab6ebdee8975ad3874c
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e.orig.tar.gz.asc' openssl_1.1.0e.orig.tar.gz.asc 455 SHA256:05ab4b1019da59963890509ad9ff3142c72df0b3baf4a38043392aff99e6a13d
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e-2.debian.tar.xz' openssl_1.1.0e-2.debian.tar.xz 52936 SHA256:b28b9564646334ae1936db884cad465318bfce689f8abca933504830d677322a
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/openssl/1.1.0e-2/
+- https://sources.debian.net/src/openssl/1.1.0e-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 
