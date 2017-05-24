@@ -1,14 +1,14 @@
-# `kapacitor:1.2-alpine`
+# `kapacitor:1.3-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:74dc468e50b8a4854eef3f33171d232e6394909b00e8a2155d13203d42698fe9`
-- Created: `2017-05-16T20:29:05.520935826Z`
-- Virtual Size: ~ 25.16 Mb  
+- Image ID: `sha256:d05a5f4ffd184c4e04a356b041a41eb4052e04dc273a35f4bb779f4497f7f18d`
+- Created: `2017-05-23T00:02:17.039704173Z`
+- Virtual Size: ~ 56.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["kapacitord"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `KAPACITOR_VERSION=1.2.1`
+  - `KAPACITOR_VERSION=1.3.0`
