@@ -391,19 +391,8 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bash=4.4-4
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4-4.dsc' bash_4.4-4.dsc 2251 SHA256:368f91e573ba31e006f6bb21309c96ae126ab192f717601627ecfb24cb68b6a0
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4.orig.tar.xz' bash_4.4.orig.tar.xz 4878580 SHA256:819ebb6a23799e9e4ca56ac579778c46902005bd5ade4f131ed293d9f77108e7
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4-4.debian.tar.xz' bash_4.4-4.debian.tar.xz 64420 SHA256:2af25aacebdff530a81810cb4c4f9f9b8bf9c800c9b473ce81577fd58bce825c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/bash/4.4-4/
-- https://sources.debian.net/src/bash/4.4-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `binutils=2.28-4`
 
@@ -417,19 +406,8 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris binutils=2.28-4
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.28-4.dsc' binutils_2.28-4.dsc 4374 SHA256:1e4d84116469c89a7fbe9e5e21f2be703fe4173ec16f8a34449b727fb061d70d
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.28.orig.tar.gz' binutils_2.28.orig.tar.gz 37814356 SHA256:db29588b0214fa69baa1a9351122cd6d0f081f2e675e6ad2aefc316ddeaf327a
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.28-4.diff.gz' binutils_2.28-4.diff.gz 116329 SHA256:fc56919cd2bd9e5d8aec1046af092434d0ff042e1a8bf9defa76288f1b1b7ec5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/binutils/2.28-4/
-- https://sources.debian.net/src/binutils/2.28-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
 
@@ -1270,19 +1248,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp-6/copyright`, `/usr/share/doc/g++-6/
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.3.0-16
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-16.dsc' gcc-6_6.3.0-16.dsc 27145 SHA256:78670286b90a18b5e2e9fcc9178ea86869b925f6f14fdfb6679ca6a7ea99237a
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0.orig.tar.gz' gcc-6_6.3.0.orig.tar.gz 81587460 SHA256:04552f04baf6974fb7521191859fb54717385ad659afd822b2995b66ee4e4151
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-16.diff.gz' gcc-6_6.3.0-16.diff.gz 2002636 SHA256:107a7f463b2179924c0a92c23013a01e900da7dee060738c653b5e4d22f4eede
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-6/6.3.0-16/
-- https://sources.debian.net/src/gcc-6/6.3.0-16/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-defaults=1.168`
 
@@ -1648,19 +1615,8 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 - `MPL-1.1 | GPL-2 | LGPL-2.1`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris graphite2=1.3.9-4
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.9-4.dsc' graphite2_1.3.9-4.dsc 2165 SHA256:44553bdf9ad66cce9eeaed61558eb7356af68f8e3ded226ccf78889bfce1f6c6
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.9.orig.tar.gz' graphite2_1.3.9.orig.tar.gz 3889102 SHA256:ec0185b663059553fd46e8c4a4f0dede60a02f13a7a1fefc2ce70332ea814567
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.9-4.debian.tar.xz' graphite2_1.3.9-4.debian.tar.xz 10164 SHA256:0554da68106c001c773c1129223f58b6492c27b5d50ac778df8539a68df63d20
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/graphite2/1.3.9-4/
-- https://sources.debian.net/src/graphite2/1.3.9-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `graphviz=2.38.0-17`
 
@@ -3693,19 +3649,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.9.18-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.18-1.dsc' linux_4.9.18-1.dsc 82325 SHA256:b84521e0d3e4a6ba68ac729430a25155c0885eb415786544d7ce2cb229fe8e70
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.18.orig.tar.xz' linux_4.9.18.orig.tar.xz 94439456 SHA256:8cb33a9f9d210625a040da0628fb7514f91a32bdc200cf79c4843d2be39f7d0d
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.18-1.debian.tar.xz' linux_4.9.18-1.debian.tar.xz 2365232 SHA256:f0c04dea4d69ef2b9e26b48fde6d5f1e2d7f578e45fdb53a315be565efa4d045
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/4.9.18-1/
-- https://sources.debian.net/src/linux/4.9.18-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=9.20161125`
 
@@ -4918,19 +4863,8 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.4-4
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.4-4.dsc' shadow_4.4-4.dsc 2262 SHA256:72ed4408feff4a90a9e9df3fa0d9a7469b064eb598935ff469d277a01294f20d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.4.orig.tar.gz' shadow_4.4.orig.tar.gz 3003036 SHA256:1323e7e932836e03dbfa441f7eeb349ede2c92d62b788ade0732411fd516be3d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.4-4.debian.tar.xz' shadow_4.4-4.debian.tar.xz 601652 SHA256:779126d9b41bb1cd616172086b38c82a2db2786be0b63368f3cd14b5b328feaf
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/shadow/1:4.4-4/
-- https://sources.debian.net/src/shadow/1:4.4-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `shared-mime-info=1.8-1`
 
@@ -5116,19 +5050,8 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`, `/usr/share/doc/lib
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.7-6
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.7-6.dsc' tiff_4.0.7-6.dsc 2157 SHA256:6a43c50ac96a44c7627522d99689cdce75474777ec1f3d6c9af7db5b5d434f72
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.7.orig.tar.gz' tiff_4.0.7.orig.tar.gz 2076392 SHA256:9f43a2cfb9589e5cecaa66e16bf87f814c945f22df7ba600d63aac4632c4f019
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.7-6.debian.tar.xz' tiff_4.0.7-6.debian.tar.xz 29660 SHA256:9c9048c28205bdbeb5ba36c7a194d0cd604bd137c70961607bfc8a079be5fa31
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff/4.0.7-6/
-- https://sources.debian.net/src/tiff/4.0.7-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tzdata=2017b-1`
 
