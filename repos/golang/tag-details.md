@@ -16,27 +16,27 @@
 -	[`golang:1.7-windowsservercore`](#golang17-windowsservercore)
 -	[`golang:1.7.6-nanoserver`](#golang176-nanoserver)
 -	[`golang:1.7-nanoserver`](#golang17-nanoserver)
--	[`golang:1.8.2`](#golang182)
+-	[`golang:1.8.3`](#golang183)
 -	[`golang:1.8`](#golang18)
 -	[`golang:1`](#golang1)
 -	[`golang:latest`](#golanglatest)
--	[`golang:1.8.2-onbuild`](#golang182-onbuild)
+-	[`golang:1.8.3-onbuild`](#golang183-onbuild)
 -	[`golang:1.8-onbuild`](#golang18-onbuild)
 -	[`golang:1-onbuild`](#golang1-onbuild)
 -	[`golang:onbuild`](#golangonbuild)
--	[`golang:1.8.2-stretch`](#golang182-stretch)
+-	[`golang:1.8.3-stretch`](#golang183-stretch)
 -	[`golang:1.8-stretch`](#golang18-stretch)
 -	[`golang:1-stretch`](#golang1-stretch)
 -	[`golang:stretch`](#golangstretch)
--	[`golang:1.8.2-alpine`](#golang182-alpine)
+-	[`golang:1.8.3-alpine`](#golang183-alpine)
 -	[`golang:1.8-alpine`](#golang18-alpine)
 -	[`golang:1-alpine`](#golang1-alpine)
 -	[`golang:alpine`](#golangalpine)
--	[`golang:1.8.2-windowsservercore`](#golang182-windowsservercore)
+-	[`golang:1.8.3-windowsservercore`](#golang183-windowsservercore)
 -	[`golang:1.8-windowsservercore`](#golang18-windowsservercore)
 -	[`golang:1-windowsservercore`](#golang1-windowsservercore)
 -	[`golang:windowsservercore`](#golangwindowsservercore)
--	[`golang:1.8.2-nanoserver`](#golang182-nanoserver)
+-	[`golang:1.8.3-nanoserver`](#golang183-nanoserver)
 -	[`golang:1.8-nanoserver`](#golang18-nanoserver)
 -	[`golang:1-nanoserver`](#golang1-nanoserver)
 -	[`golang:nanoserver`](#golangnanoserver)
@@ -1139,22 +1139,22 @@ WORKDIR C:\gopath
 		Size: 954.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `golang:1.8.2`
+## `golang:1.8.3`
 
 ```console
-$ docker pull golang@sha256:179321dc7700b71cbc03eb109cd0144e1cfb2931a1e970b8cbb6783ef8292ad5
+$ docker pull golang@sha256:51f988b1a86f528c2e40681175088b5312b96bba9bea0f05bdb7ab504425c52d
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `golang:1.8.2` - linux; amd64
+### `golang:1.8.3` - linux; amd64
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.7 MB (265722095 bytes)**  
+-	Total Size: **265.8 MB (265769700 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2063493320dce4d554a026d15a16130ad0d2657a30788e980312848048a3eff`
+-	Image ID: `sha256:a0c61f0b079641f069a3369803165788f944ef6b520599731274099a342d3467`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -1168,19 +1168,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 09 May 2017 16:43:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 23 May 2017 22:20:01 GMT
-ENV GOLANG_VERSION=1.8.2
-# Tue, 23 May 2017 22:20:16 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='031035eab11903237e02007fc69c085bd4769ff2e2aa5e9af427ddaed3d37e2b' ;; 		i386) goRelArch='linux-386'; goRelSha256='00bc94606610bf25c660d6106fa8e61cca6a276c046f3ceb9091053e99ceebe9' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='f091afb86501191270e14a653a056e8e7635e18a72e43cfbd13093b2482ca7a8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='a1942b2833e7d2685d7dbb7ac81c66125c351f24c7f006e8ae4a4283905257d1' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='5477d6c9a4f96fa120847fafa88319d7b56b5d5068e41c3587eebe248b939be7' ;; 		*) goRelArch='src'; goRelSha256='e10401faaa8ae29dbe87349c1814b07b1903d453f822215d7b274bbc335cbf79'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
-# Tue, 23 May 2017 22:20:17 GMT
+# Wed, 24 May 2017 23:16:39 GMT
+ENV GOLANG_VERSION=1.8.3
+# Wed, 24 May 2017 23:16:56 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='e5fb00adfc7291e657f1f3d31c09e74890b5328e6f991a3f395ca72a8c4dc0b3' ;; 		i386) goRelArch='linux-386'; goRelSha256='ff4895eb68fb1daaec41c540602e8bb4c1e8bb2f0e7017367171913fc9995ed2' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='e2ec3e7c293701b57ca1f32b37977ac9968f57b3df034f2cc2d531e80671e6c8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='3c30a3e24736ca776fc6314e5092fb8584bd3a4a2c2fa7307ae779ba2735e668' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='1862f4c3d3907e59b04a757cfda0ea7aa9ef39274af99a784f5be843c80c6772' ;; 		*) goRelArch='src'; goRelSha256='5f5dea2447e7dcfdc50fa6b94c512e58bfba5673c039259fd843f68829d99fa6'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
+# Wed, 24 May 2017 23:16:57 GMT
 ENV GOPATH=/go
-# Tue, 23 May 2017 22:20:18 GMT
+# Wed, 24 May 2017 23:16:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 May 2017 22:20:19 GMT
+# Wed, 24 May 2017 23:16:59 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Tue, 23 May 2017 22:20:20 GMT
+# Wed, 24 May 2017 23:17:00 GMT
 WORKDIR /go
-# Tue, 23 May 2017 22:20:21 GMT
+# Wed, 24 May 2017 23:17:02 GMT
 COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /usr/local/bin/ 
 ```
 
@@ -1201,23 +1201,23 @@ COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /u
 		Last Modified: Sat, 13 May 2017 06:00:35 GMT  
 		Size: 60.6 MB (60647037 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86e85c214a6d14204fa0505efc3127bf70e7a48e941f6b0b774c7cb83c954b0e`  
-		Last Modified: Tue, 23 May 2017 22:29:50 GMT  
-		Size: 90.0 MB (89991231 bytes)  
+	-	`sha256:b01dfb81dcfe8030b889460602069784a4399f8fe6d283f005d660d152252d88`  
+		Last Modified: Wed, 24 May 2017 23:24:27 GMT  
+		Size: 90.0 MB (90038836 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:722b17304476dd5fc2d68caafa63231d098cd0ef47e7f1a39c62bcfa6c70ca7d`  
-		Last Modified: Tue, 23 May 2017 22:29:27 GMT  
+	-	`sha256:2887fcab405b9ded99e1867483d18c569db198db2be081648d0ee5a5091e9f88`  
+		Last Modified: Wed, 24 May 2017 23:24:08 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:421938132e69411cdefb982f221b091787ad344fe01d23475935aa677a330ac4`  
-		Last Modified: Tue, 23 May 2017 22:29:26 GMT  
+	-	`sha256:42bcf38edfe0eda88d8d7dca823df17c96257b04c8a4324ff2eb0c0431176727`  
+		Last Modified: Wed, 24 May 2017 23:24:05 GMT  
 		Size: 1.4 KB (1353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `golang:1.8`
 
 ```console
-$ docker pull golang@sha256:179321dc7700b71cbc03eb109cd0144e1cfb2931a1e970b8cbb6783ef8292ad5
+$ docker pull golang@sha256:51f988b1a86f528c2e40681175088b5312b96bba9bea0f05bdb7ab504425c52d
 ```
 
 -	Platforms:
@@ -1227,9 +1227,9 @@ $ docker pull golang@sha256:179321dc7700b71cbc03eb109cd0144e1cfb2931a1e970b8cbb6
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.7 MB (265722095 bytes)**  
+-	Total Size: **265.8 MB (265769700 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2063493320dce4d554a026d15a16130ad0d2657a30788e980312848048a3eff`
+-	Image ID: `sha256:a0c61f0b079641f069a3369803165788f944ef6b520599731274099a342d3467`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -1243,19 +1243,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 09 May 2017 16:43:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 23 May 2017 22:20:01 GMT
-ENV GOLANG_VERSION=1.8.2
-# Tue, 23 May 2017 22:20:16 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='031035eab11903237e02007fc69c085bd4769ff2e2aa5e9af427ddaed3d37e2b' ;; 		i386) goRelArch='linux-386'; goRelSha256='00bc94606610bf25c660d6106fa8e61cca6a276c046f3ceb9091053e99ceebe9' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='f091afb86501191270e14a653a056e8e7635e18a72e43cfbd13093b2482ca7a8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='a1942b2833e7d2685d7dbb7ac81c66125c351f24c7f006e8ae4a4283905257d1' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='5477d6c9a4f96fa120847fafa88319d7b56b5d5068e41c3587eebe248b939be7' ;; 		*) goRelArch='src'; goRelSha256='e10401faaa8ae29dbe87349c1814b07b1903d453f822215d7b274bbc335cbf79'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
-# Tue, 23 May 2017 22:20:17 GMT
+# Wed, 24 May 2017 23:16:39 GMT
+ENV GOLANG_VERSION=1.8.3
+# Wed, 24 May 2017 23:16:56 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='e5fb00adfc7291e657f1f3d31c09e74890b5328e6f991a3f395ca72a8c4dc0b3' ;; 		i386) goRelArch='linux-386'; goRelSha256='ff4895eb68fb1daaec41c540602e8bb4c1e8bb2f0e7017367171913fc9995ed2' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='e2ec3e7c293701b57ca1f32b37977ac9968f57b3df034f2cc2d531e80671e6c8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='3c30a3e24736ca776fc6314e5092fb8584bd3a4a2c2fa7307ae779ba2735e668' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='1862f4c3d3907e59b04a757cfda0ea7aa9ef39274af99a784f5be843c80c6772' ;; 		*) goRelArch='src'; goRelSha256='5f5dea2447e7dcfdc50fa6b94c512e58bfba5673c039259fd843f68829d99fa6'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
+# Wed, 24 May 2017 23:16:57 GMT
 ENV GOPATH=/go
-# Tue, 23 May 2017 22:20:18 GMT
+# Wed, 24 May 2017 23:16:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 May 2017 22:20:19 GMT
+# Wed, 24 May 2017 23:16:59 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Tue, 23 May 2017 22:20:20 GMT
+# Wed, 24 May 2017 23:17:00 GMT
 WORKDIR /go
-# Tue, 23 May 2017 22:20:21 GMT
+# Wed, 24 May 2017 23:17:02 GMT
 COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /usr/local/bin/ 
 ```
 
@@ -1276,23 +1276,23 @@ COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /u
 		Last Modified: Sat, 13 May 2017 06:00:35 GMT  
 		Size: 60.6 MB (60647037 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86e85c214a6d14204fa0505efc3127bf70e7a48e941f6b0b774c7cb83c954b0e`  
-		Last Modified: Tue, 23 May 2017 22:29:50 GMT  
-		Size: 90.0 MB (89991231 bytes)  
+	-	`sha256:b01dfb81dcfe8030b889460602069784a4399f8fe6d283f005d660d152252d88`  
+		Last Modified: Wed, 24 May 2017 23:24:27 GMT  
+		Size: 90.0 MB (90038836 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:722b17304476dd5fc2d68caafa63231d098cd0ef47e7f1a39c62bcfa6c70ca7d`  
-		Last Modified: Tue, 23 May 2017 22:29:27 GMT  
+	-	`sha256:2887fcab405b9ded99e1867483d18c569db198db2be081648d0ee5a5091e9f88`  
+		Last Modified: Wed, 24 May 2017 23:24:08 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:421938132e69411cdefb982f221b091787ad344fe01d23475935aa677a330ac4`  
-		Last Modified: Tue, 23 May 2017 22:29:26 GMT  
+	-	`sha256:42bcf38edfe0eda88d8d7dca823df17c96257b04c8a4324ff2eb0c0431176727`  
+		Last Modified: Wed, 24 May 2017 23:24:05 GMT  
 		Size: 1.4 KB (1353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `golang:1`
 
 ```console
-$ docker pull golang@sha256:179321dc7700b71cbc03eb109cd0144e1cfb2931a1e970b8cbb6783ef8292ad5
+$ docker pull golang@sha256:51f988b1a86f528c2e40681175088b5312b96bba9bea0f05bdb7ab504425c52d
 ```
 
 -	Platforms:
@@ -1302,9 +1302,9 @@ $ docker pull golang@sha256:179321dc7700b71cbc03eb109cd0144e1cfb2931a1e970b8cbb6
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.7 MB (265722095 bytes)**  
+-	Total Size: **265.8 MB (265769700 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2063493320dce4d554a026d15a16130ad0d2657a30788e980312848048a3eff`
+-	Image ID: `sha256:a0c61f0b079641f069a3369803165788f944ef6b520599731274099a342d3467`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -1318,19 +1318,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 09 May 2017 16:43:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 23 May 2017 22:20:01 GMT
-ENV GOLANG_VERSION=1.8.2
-# Tue, 23 May 2017 22:20:16 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='031035eab11903237e02007fc69c085bd4769ff2e2aa5e9af427ddaed3d37e2b' ;; 		i386) goRelArch='linux-386'; goRelSha256='00bc94606610bf25c660d6106fa8e61cca6a276c046f3ceb9091053e99ceebe9' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='f091afb86501191270e14a653a056e8e7635e18a72e43cfbd13093b2482ca7a8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='a1942b2833e7d2685d7dbb7ac81c66125c351f24c7f006e8ae4a4283905257d1' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='5477d6c9a4f96fa120847fafa88319d7b56b5d5068e41c3587eebe248b939be7' ;; 		*) goRelArch='src'; goRelSha256='e10401faaa8ae29dbe87349c1814b07b1903d453f822215d7b274bbc335cbf79'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
-# Tue, 23 May 2017 22:20:17 GMT
+# Wed, 24 May 2017 23:16:39 GMT
+ENV GOLANG_VERSION=1.8.3
+# Wed, 24 May 2017 23:16:56 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='e5fb00adfc7291e657f1f3d31c09e74890b5328e6f991a3f395ca72a8c4dc0b3' ;; 		i386) goRelArch='linux-386'; goRelSha256='ff4895eb68fb1daaec41c540602e8bb4c1e8bb2f0e7017367171913fc9995ed2' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='e2ec3e7c293701b57ca1f32b37977ac9968f57b3df034f2cc2d531e80671e6c8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='3c30a3e24736ca776fc6314e5092fb8584bd3a4a2c2fa7307ae779ba2735e668' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='1862f4c3d3907e59b04a757cfda0ea7aa9ef39274af99a784f5be843c80c6772' ;; 		*) goRelArch='src'; goRelSha256='5f5dea2447e7dcfdc50fa6b94c512e58bfba5673c039259fd843f68829d99fa6'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
+# Wed, 24 May 2017 23:16:57 GMT
 ENV GOPATH=/go
-# Tue, 23 May 2017 22:20:18 GMT
+# Wed, 24 May 2017 23:16:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 May 2017 22:20:19 GMT
+# Wed, 24 May 2017 23:16:59 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Tue, 23 May 2017 22:20:20 GMT
+# Wed, 24 May 2017 23:17:00 GMT
 WORKDIR /go
-# Tue, 23 May 2017 22:20:21 GMT
+# Wed, 24 May 2017 23:17:02 GMT
 COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /usr/local/bin/ 
 ```
 
@@ -1351,23 +1351,23 @@ COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /u
 		Last Modified: Sat, 13 May 2017 06:00:35 GMT  
 		Size: 60.6 MB (60647037 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86e85c214a6d14204fa0505efc3127bf70e7a48e941f6b0b774c7cb83c954b0e`  
-		Last Modified: Tue, 23 May 2017 22:29:50 GMT  
-		Size: 90.0 MB (89991231 bytes)  
+	-	`sha256:b01dfb81dcfe8030b889460602069784a4399f8fe6d283f005d660d152252d88`  
+		Last Modified: Wed, 24 May 2017 23:24:27 GMT  
+		Size: 90.0 MB (90038836 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:722b17304476dd5fc2d68caafa63231d098cd0ef47e7f1a39c62bcfa6c70ca7d`  
-		Last Modified: Tue, 23 May 2017 22:29:27 GMT  
+	-	`sha256:2887fcab405b9ded99e1867483d18c569db198db2be081648d0ee5a5091e9f88`  
+		Last Modified: Wed, 24 May 2017 23:24:08 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:421938132e69411cdefb982f221b091787ad344fe01d23475935aa677a330ac4`  
-		Last Modified: Tue, 23 May 2017 22:29:26 GMT  
+	-	`sha256:42bcf38edfe0eda88d8d7dca823df17c96257b04c8a4324ff2eb0c0431176727`  
+		Last Modified: Wed, 24 May 2017 23:24:05 GMT  
 		Size: 1.4 KB (1353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `golang:latest`
 
 ```console
-$ docker pull golang@sha256:179321dc7700b71cbc03eb109cd0144e1cfb2931a1e970b8cbb6783ef8292ad5
+$ docker pull golang@sha256:51f988b1a86f528c2e40681175088b5312b96bba9bea0f05bdb7ab504425c52d
 ```
 
 -	Platforms:
@@ -1377,9 +1377,9 @@ $ docker pull golang@sha256:179321dc7700b71cbc03eb109cd0144e1cfb2931a1e970b8cbb6
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.7 MB (265722095 bytes)**  
+-	Total Size: **265.8 MB (265769700 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2063493320dce4d554a026d15a16130ad0d2657a30788e980312848048a3eff`
+-	Image ID: `sha256:a0c61f0b079641f069a3369803165788f944ef6b520599731274099a342d3467`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -1393,19 +1393,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 09 May 2017 16:43:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 23 May 2017 22:20:01 GMT
-ENV GOLANG_VERSION=1.8.2
-# Tue, 23 May 2017 22:20:16 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='031035eab11903237e02007fc69c085bd4769ff2e2aa5e9af427ddaed3d37e2b' ;; 		i386) goRelArch='linux-386'; goRelSha256='00bc94606610bf25c660d6106fa8e61cca6a276c046f3ceb9091053e99ceebe9' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='f091afb86501191270e14a653a056e8e7635e18a72e43cfbd13093b2482ca7a8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='a1942b2833e7d2685d7dbb7ac81c66125c351f24c7f006e8ae4a4283905257d1' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='5477d6c9a4f96fa120847fafa88319d7b56b5d5068e41c3587eebe248b939be7' ;; 		*) goRelArch='src'; goRelSha256='e10401faaa8ae29dbe87349c1814b07b1903d453f822215d7b274bbc335cbf79'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
-# Tue, 23 May 2017 22:20:17 GMT
+# Wed, 24 May 2017 23:16:39 GMT
+ENV GOLANG_VERSION=1.8.3
+# Wed, 24 May 2017 23:16:56 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='e5fb00adfc7291e657f1f3d31c09e74890b5328e6f991a3f395ca72a8c4dc0b3' ;; 		i386) goRelArch='linux-386'; goRelSha256='ff4895eb68fb1daaec41c540602e8bb4c1e8bb2f0e7017367171913fc9995ed2' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='e2ec3e7c293701b57ca1f32b37977ac9968f57b3df034f2cc2d531e80671e6c8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='3c30a3e24736ca776fc6314e5092fb8584bd3a4a2c2fa7307ae779ba2735e668' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='1862f4c3d3907e59b04a757cfda0ea7aa9ef39274af99a784f5be843c80c6772' ;; 		*) goRelArch='src'; goRelSha256='5f5dea2447e7dcfdc50fa6b94c512e58bfba5673c039259fd843f68829d99fa6'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
+# Wed, 24 May 2017 23:16:57 GMT
 ENV GOPATH=/go
-# Tue, 23 May 2017 22:20:18 GMT
+# Wed, 24 May 2017 23:16:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 May 2017 22:20:19 GMT
+# Wed, 24 May 2017 23:16:59 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Tue, 23 May 2017 22:20:20 GMT
+# Wed, 24 May 2017 23:17:00 GMT
 WORKDIR /go
-# Tue, 23 May 2017 22:20:21 GMT
+# Wed, 24 May 2017 23:17:02 GMT
 COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /usr/local/bin/ 
 ```
 
@@ -1426,35 +1426,35 @@ COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /u
 		Last Modified: Sat, 13 May 2017 06:00:35 GMT  
 		Size: 60.6 MB (60647037 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86e85c214a6d14204fa0505efc3127bf70e7a48e941f6b0b774c7cb83c954b0e`  
-		Last Modified: Tue, 23 May 2017 22:29:50 GMT  
-		Size: 90.0 MB (89991231 bytes)  
+	-	`sha256:b01dfb81dcfe8030b889460602069784a4399f8fe6d283f005d660d152252d88`  
+		Last Modified: Wed, 24 May 2017 23:24:27 GMT  
+		Size: 90.0 MB (90038836 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:722b17304476dd5fc2d68caafa63231d098cd0ef47e7f1a39c62bcfa6c70ca7d`  
-		Last Modified: Tue, 23 May 2017 22:29:27 GMT  
+	-	`sha256:2887fcab405b9ded99e1867483d18c569db198db2be081648d0ee5a5091e9f88`  
+		Last Modified: Wed, 24 May 2017 23:24:08 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:421938132e69411cdefb982f221b091787ad344fe01d23475935aa677a330ac4`  
-		Last Modified: Tue, 23 May 2017 22:29:26 GMT  
+	-	`sha256:42bcf38edfe0eda88d8d7dca823df17c96257b04c8a4324ff2eb0c0431176727`  
+		Last Modified: Wed, 24 May 2017 23:24:05 GMT  
 		Size: 1.4 KB (1353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `golang:1.8.2-onbuild`
+## `golang:1.8.3-onbuild`
 
 ```console
-$ docker pull golang@sha256:6955c02113bcba03b0a24421cc893335d14ea02bcc57dd1838295e8f03cb5c51
+$ docker pull golang@sha256:f7bfa8f7274bb1ac1c590e8a5b0cdd17f32c7a91f0d6d5c309563044b625fb06
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `golang:1.8.2-onbuild` - linux; amd64
+### `golang:1.8.3-onbuild` - linux; amd64
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.7 MB (265722228 bytes)**  
+-	Total Size: **265.8 MB (265769833 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:35501deeda86ae67373c7dc70aa8918c1240c2edf47d8478fa0f205a64ad2d37`
+-	Image ID: `sha256:009df987ff700ff2ee2c70a93a0e3c02fa5eba0b5cc774a88a4cfac16ae48776`
 -	Default Command: `["go-wrapper","run"]`
 
 ```dockerfile
@@ -1468,31 +1468,31 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 09 May 2017 16:43:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 23 May 2017 22:20:01 GMT
-ENV GOLANG_VERSION=1.8.2
-# Tue, 23 May 2017 22:20:16 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='031035eab11903237e02007fc69c085bd4769ff2e2aa5e9af427ddaed3d37e2b' ;; 		i386) goRelArch='linux-386'; goRelSha256='00bc94606610bf25c660d6106fa8e61cca6a276c046f3ceb9091053e99ceebe9' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='f091afb86501191270e14a653a056e8e7635e18a72e43cfbd13093b2482ca7a8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='a1942b2833e7d2685d7dbb7ac81c66125c351f24c7f006e8ae4a4283905257d1' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='5477d6c9a4f96fa120847fafa88319d7b56b5d5068e41c3587eebe248b939be7' ;; 		*) goRelArch='src'; goRelSha256='e10401faaa8ae29dbe87349c1814b07b1903d453f822215d7b274bbc335cbf79'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
-# Tue, 23 May 2017 22:20:17 GMT
+# Wed, 24 May 2017 23:16:39 GMT
+ENV GOLANG_VERSION=1.8.3
+# Wed, 24 May 2017 23:16:56 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='e5fb00adfc7291e657f1f3d31c09e74890b5328e6f991a3f395ca72a8c4dc0b3' ;; 		i386) goRelArch='linux-386'; goRelSha256='ff4895eb68fb1daaec41c540602e8bb4c1e8bb2f0e7017367171913fc9995ed2' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='e2ec3e7c293701b57ca1f32b37977ac9968f57b3df034f2cc2d531e80671e6c8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='3c30a3e24736ca776fc6314e5092fb8584bd3a4a2c2fa7307ae779ba2735e668' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='1862f4c3d3907e59b04a757cfda0ea7aa9ef39274af99a784f5be843c80c6772' ;; 		*) goRelArch='src'; goRelSha256='5f5dea2447e7dcfdc50fa6b94c512e58bfba5673c039259fd843f68829d99fa6'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
+# Wed, 24 May 2017 23:16:57 GMT
 ENV GOPATH=/go
-# Tue, 23 May 2017 22:20:18 GMT
+# Wed, 24 May 2017 23:16:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 May 2017 22:20:19 GMT
+# Wed, 24 May 2017 23:16:59 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Tue, 23 May 2017 22:20:20 GMT
+# Wed, 24 May 2017 23:17:00 GMT
 WORKDIR /go
-# Tue, 23 May 2017 22:20:21 GMT
+# Wed, 24 May 2017 23:17:02 GMT
 COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /usr/local/bin/ 
-# Tue, 23 May 2017 22:20:44 GMT
+# Wed, 24 May 2017 23:17:25 GMT
 RUN mkdir -p /go/src/app
-# Tue, 23 May 2017 22:20:45 GMT
+# Wed, 24 May 2017 23:17:25 GMT
 WORKDIR /go/src/app
-# Tue, 23 May 2017 22:20:46 GMT
+# Wed, 24 May 2017 23:17:26 GMT
 CMD ["go-wrapper" "run"]
-# Tue, 23 May 2017 22:20:46 GMT
+# Wed, 24 May 2017 23:17:27 GMT
 ONBUILD COPY . /go/src/app
-# Tue, 23 May 2017 22:20:47 GMT
+# Wed, 24 May 2017 23:17:28 GMT
 ONBUILD RUN go-wrapper download
-# Tue, 23 May 2017 22:20:48 GMT
+# Wed, 24 May 2017 23:17:28 GMT
 ONBUILD RUN go-wrapper install
 ```
 
@@ -1513,27 +1513,27 @@ ONBUILD RUN go-wrapper install
 		Last Modified: Sat, 13 May 2017 06:00:35 GMT  
 		Size: 60.6 MB (60647037 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86e85c214a6d14204fa0505efc3127bf70e7a48e941f6b0b774c7cb83c954b0e`  
-		Last Modified: Tue, 23 May 2017 22:29:50 GMT  
-		Size: 90.0 MB (89991231 bytes)  
+	-	`sha256:b01dfb81dcfe8030b889460602069784a4399f8fe6d283f005d660d152252d88`  
+		Last Modified: Wed, 24 May 2017 23:24:27 GMT  
+		Size: 90.0 MB (90038836 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:722b17304476dd5fc2d68caafa63231d098cd0ef47e7f1a39c62bcfa6c70ca7d`  
-		Last Modified: Tue, 23 May 2017 22:29:27 GMT  
+	-	`sha256:2887fcab405b9ded99e1867483d18c569db198db2be081648d0ee5a5091e9f88`  
+		Last Modified: Wed, 24 May 2017 23:24:08 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:421938132e69411cdefb982f221b091787ad344fe01d23475935aa677a330ac4`  
-		Last Modified: Tue, 23 May 2017 22:29:26 GMT  
+	-	`sha256:42bcf38edfe0eda88d8d7dca823df17c96257b04c8a4324ff2eb0c0431176727`  
+		Last Modified: Wed, 24 May 2017 23:24:05 GMT  
 		Size: 1.4 KB (1353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:831e8544251c36414398a6fbb5ddde85dd514ce229173c01ca59f0503912f137`  
-		Last Modified: Tue, 23 May 2017 22:31:26 GMT  
+	-	`sha256:50ed371c80998077e78787e1b2f3a99819939edd56c5f82391ce0c9746b8fd5a`  
+		Last Modified: Wed, 24 May 2017 23:26:05 GMT  
 		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `golang:1.8-onbuild`
 
 ```console
-$ docker pull golang@sha256:6955c02113bcba03b0a24421cc893335d14ea02bcc57dd1838295e8f03cb5c51
+$ docker pull golang@sha256:f7bfa8f7274bb1ac1c590e8a5b0cdd17f32c7a91f0d6d5c309563044b625fb06
 ```
 
 -	Platforms:
@@ -1543,9 +1543,9 @@ $ docker pull golang@sha256:6955c02113bcba03b0a24421cc893335d14ea02bcc57dd183829
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.7 MB (265722228 bytes)**  
+-	Total Size: **265.8 MB (265769833 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:35501deeda86ae67373c7dc70aa8918c1240c2edf47d8478fa0f205a64ad2d37`
+-	Image ID: `sha256:009df987ff700ff2ee2c70a93a0e3c02fa5eba0b5cc774a88a4cfac16ae48776`
 -	Default Command: `["go-wrapper","run"]`
 
 ```dockerfile
@@ -1559,31 +1559,31 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 09 May 2017 16:43:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 23 May 2017 22:20:01 GMT
-ENV GOLANG_VERSION=1.8.2
-# Tue, 23 May 2017 22:20:16 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='031035eab11903237e02007fc69c085bd4769ff2e2aa5e9af427ddaed3d37e2b' ;; 		i386) goRelArch='linux-386'; goRelSha256='00bc94606610bf25c660d6106fa8e61cca6a276c046f3ceb9091053e99ceebe9' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='f091afb86501191270e14a653a056e8e7635e18a72e43cfbd13093b2482ca7a8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='a1942b2833e7d2685d7dbb7ac81c66125c351f24c7f006e8ae4a4283905257d1' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='5477d6c9a4f96fa120847fafa88319d7b56b5d5068e41c3587eebe248b939be7' ;; 		*) goRelArch='src'; goRelSha256='e10401faaa8ae29dbe87349c1814b07b1903d453f822215d7b274bbc335cbf79'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
-# Tue, 23 May 2017 22:20:17 GMT
+# Wed, 24 May 2017 23:16:39 GMT
+ENV GOLANG_VERSION=1.8.3
+# Wed, 24 May 2017 23:16:56 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='e5fb00adfc7291e657f1f3d31c09e74890b5328e6f991a3f395ca72a8c4dc0b3' ;; 		i386) goRelArch='linux-386'; goRelSha256='ff4895eb68fb1daaec41c540602e8bb4c1e8bb2f0e7017367171913fc9995ed2' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='e2ec3e7c293701b57ca1f32b37977ac9968f57b3df034f2cc2d531e80671e6c8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='3c30a3e24736ca776fc6314e5092fb8584bd3a4a2c2fa7307ae779ba2735e668' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='1862f4c3d3907e59b04a757cfda0ea7aa9ef39274af99a784f5be843c80c6772' ;; 		*) goRelArch='src'; goRelSha256='5f5dea2447e7dcfdc50fa6b94c512e58bfba5673c039259fd843f68829d99fa6'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
+# Wed, 24 May 2017 23:16:57 GMT
 ENV GOPATH=/go
-# Tue, 23 May 2017 22:20:18 GMT
+# Wed, 24 May 2017 23:16:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 May 2017 22:20:19 GMT
+# Wed, 24 May 2017 23:16:59 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Tue, 23 May 2017 22:20:20 GMT
+# Wed, 24 May 2017 23:17:00 GMT
 WORKDIR /go
-# Tue, 23 May 2017 22:20:21 GMT
+# Wed, 24 May 2017 23:17:02 GMT
 COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /usr/local/bin/ 
-# Tue, 23 May 2017 22:20:44 GMT
+# Wed, 24 May 2017 23:17:25 GMT
 RUN mkdir -p /go/src/app
-# Tue, 23 May 2017 22:20:45 GMT
+# Wed, 24 May 2017 23:17:25 GMT
 WORKDIR /go/src/app
-# Tue, 23 May 2017 22:20:46 GMT
+# Wed, 24 May 2017 23:17:26 GMT
 CMD ["go-wrapper" "run"]
-# Tue, 23 May 2017 22:20:46 GMT
+# Wed, 24 May 2017 23:17:27 GMT
 ONBUILD COPY . /go/src/app
-# Tue, 23 May 2017 22:20:47 GMT
+# Wed, 24 May 2017 23:17:28 GMT
 ONBUILD RUN go-wrapper download
-# Tue, 23 May 2017 22:20:48 GMT
+# Wed, 24 May 2017 23:17:28 GMT
 ONBUILD RUN go-wrapper install
 ```
 
@@ -1604,27 +1604,27 @@ ONBUILD RUN go-wrapper install
 		Last Modified: Sat, 13 May 2017 06:00:35 GMT  
 		Size: 60.6 MB (60647037 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86e85c214a6d14204fa0505efc3127bf70e7a48e941f6b0b774c7cb83c954b0e`  
-		Last Modified: Tue, 23 May 2017 22:29:50 GMT  
-		Size: 90.0 MB (89991231 bytes)  
+	-	`sha256:b01dfb81dcfe8030b889460602069784a4399f8fe6d283f005d660d152252d88`  
+		Last Modified: Wed, 24 May 2017 23:24:27 GMT  
+		Size: 90.0 MB (90038836 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:722b17304476dd5fc2d68caafa63231d098cd0ef47e7f1a39c62bcfa6c70ca7d`  
-		Last Modified: Tue, 23 May 2017 22:29:27 GMT  
+	-	`sha256:2887fcab405b9ded99e1867483d18c569db198db2be081648d0ee5a5091e9f88`  
+		Last Modified: Wed, 24 May 2017 23:24:08 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:421938132e69411cdefb982f221b091787ad344fe01d23475935aa677a330ac4`  
-		Last Modified: Tue, 23 May 2017 22:29:26 GMT  
+	-	`sha256:42bcf38edfe0eda88d8d7dca823df17c96257b04c8a4324ff2eb0c0431176727`  
+		Last Modified: Wed, 24 May 2017 23:24:05 GMT  
 		Size: 1.4 KB (1353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:831e8544251c36414398a6fbb5ddde85dd514ce229173c01ca59f0503912f137`  
-		Last Modified: Tue, 23 May 2017 22:31:26 GMT  
+	-	`sha256:50ed371c80998077e78787e1b2f3a99819939edd56c5f82391ce0c9746b8fd5a`  
+		Last Modified: Wed, 24 May 2017 23:26:05 GMT  
 		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `golang:1-onbuild`
 
 ```console
-$ docker pull golang@sha256:6955c02113bcba03b0a24421cc893335d14ea02bcc57dd1838295e8f03cb5c51
+$ docker pull golang@sha256:f7bfa8f7274bb1ac1c590e8a5b0cdd17f32c7a91f0d6d5c309563044b625fb06
 ```
 
 -	Platforms:
@@ -1634,9 +1634,9 @@ $ docker pull golang@sha256:6955c02113bcba03b0a24421cc893335d14ea02bcc57dd183829
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.7 MB (265722228 bytes)**  
+-	Total Size: **265.8 MB (265769833 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:35501deeda86ae67373c7dc70aa8918c1240c2edf47d8478fa0f205a64ad2d37`
+-	Image ID: `sha256:009df987ff700ff2ee2c70a93a0e3c02fa5eba0b5cc774a88a4cfac16ae48776`
 -	Default Command: `["go-wrapper","run"]`
 
 ```dockerfile
@@ -1650,31 +1650,31 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 09 May 2017 16:43:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 23 May 2017 22:20:01 GMT
-ENV GOLANG_VERSION=1.8.2
-# Tue, 23 May 2017 22:20:16 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='031035eab11903237e02007fc69c085bd4769ff2e2aa5e9af427ddaed3d37e2b' ;; 		i386) goRelArch='linux-386'; goRelSha256='00bc94606610bf25c660d6106fa8e61cca6a276c046f3ceb9091053e99ceebe9' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='f091afb86501191270e14a653a056e8e7635e18a72e43cfbd13093b2482ca7a8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='a1942b2833e7d2685d7dbb7ac81c66125c351f24c7f006e8ae4a4283905257d1' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='5477d6c9a4f96fa120847fafa88319d7b56b5d5068e41c3587eebe248b939be7' ;; 		*) goRelArch='src'; goRelSha256='e10401faaa8ae29dbe87349c1814b07b1903d453f822215d7b274bbc335cbf79'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
-# Tue, 23 May 2017 22:20:17 GMT
+# Wed, 24 May 2017 23:16:39 GMT
+ENV GOLANG_VERSION=1.8.3
+# Wed, 24 May 2017 23:16:56 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='e5fb00adfc7291e657f1f3d31c09e74890b5328e6f991a3f395ca72a8c4dc0b3' ;; 		i386) goRelArch='linux-386'; goRelSha256='ff4895eb68fb1daaec41c540602e8bb4c1e8bb2f0e7017367171913fc9995ed2' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='e2ec3e7c293701b57ca1f32b37977ac9968f57b3df034f2cc2d531e80671e6c8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='3c30a3e24736ca776fc6314e5092fb8584bd3a4a2c2fa7307ae779ba2735e668' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='1862f4c3d3907e59b04a757cfda0ea7aa9ef39274af99a784f5be843c80c6772' ;; 		*) goRelArch='src'; goRelSha256='5f5dea2447e7dcfdc50fa6b94c512e58bfba5673c039259fd843f68829d99fa6'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
+# Wed, 24 May 2017 23:16:57 GMT
 ENV GOPATH=/go
-# Tue, 23 May 2017 22:20:18 GMT
+# Wed, 24 May 2017 23:16:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 May 2017 22:20:19 GMT
+# Wed, 24 May 2017 23:16:59 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Tue, 23 May 2017 22:20:20 GMT
+# Wed, 24 May 2017 23:17:00 GMT
 WORKDIR /go
-# Tue, 23 May 2017 22:20:21 GMT
+# Wed, 24 May 2017 23:17:02 GMT
 COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /usr/local/bin/ 
-# Tue, 23 May 2017 22:20:44 GMT
+# Wed, 24 May 2017 23:17:25 GMT
 RUN mkdir -p /go/src/app
-# Tue, 23 May 2017 22:20:45 GMT
+# Wed, 24 May 2017 23:17:25 GMT
 WORKDIR /go/src/app
-# Tue, 23 May 2017 22:20:46 GMT
+# Wed, 24 May 2017 23:17:26 GMT
 CMD ["go-wrapper" "run"]
-# Tue, 23 May 2017 22:20:46 GMT
+# Wed, 24 May 2017 23:17:27 GMT
 ONBUILD COPY . /go/src/app
-# Tue, 23 May 2017 22:20:47 GMT
+# Wed, 24 May 2017 23:17:28 GMT
 ONBUILD RUN go-wrapper download
-# Tue, 23 May 2017 22:20:48 GMT
+# Wed, 24 May 2017 23:17:28 GMT
 ONBUILD RUN go-wrapper install
 ```
 
@@ -1695,27 +1695,27 @@ ONBUILD RUN go-wrapper install
 		Last Modified: Sat, 13 May 2017 06:00:35 GMT  
 		Size: 60.6 MB (60647037 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86e85c214a6d14204fa0505efc3127bf70e7a48e941f6b0b774c7cb83c954b0e`  
-		Last Modified: Tue, 23 May 2017 22:29:50 GMT  
-		Size: 90.0 MB (89991231 bytes)  
+	-	`sha256:b01dfb81dcfe8030b889460602069784a4399f8fe6d283f005d660d152252d88`  
+		Last Modified: Wed, 24 May 2017 23:24:27 GMT  
+		Size: 90.0 MB (90038836 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:722b17304476dd5fc2d68caafa63231d098cd0ef47e7f1a39c62bcfa6c70ca7d`  
-		Last Modified: Tue, 23 May 2017 22:29:27 GMT  
+	-	`sha256:2887fcab405b9ded99e1867483d18c569db198db2be081648d0ee5a5091e9f88`  
+		Last Modified: Wed, 24 May 2017 23:24:08 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:421938132e69411cdefb982f221b091787ad344fe01d23475935aa677a330ac4`  
-		Last Modified: Tue, 23 May 2017 22:29:26 GMT  
+	-	`sha256:42bcf38edfe0eda88d8d7dca823df17c96257b04c8a4324ff2eb0c0431176727`  
+		Last Modified: Wed, 24 May 2017 23:24:05 GMT  
 		Size: 1.4 KB (1353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:831e8544251c36414398a6fbb5ddde85dd514ce229173c01ca59f0503912f137`  
-		Last Modified: Tue, 23 May 2017 22:31:26 GMT  
+	-	`sha256:50ed371c80998077e78787e1b2f3a99819939edd56c5f82391ce0c9746b8fd5a`  
+		Last Modified: Wed, 24 May 2017 23:26:05 GMT  
 		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `golang:onbuild`
 
 ```console
-$ docker pull golang@sha256:6955c02113bcba03b0a24421cc893335d14ea02bcc57dd1838295e8f03cb5c51
+$ docker pull golang@sha256:f7bfa8f7274bb1ac1c590e8a5b0cdd17f32c7a91f0d6d5c309563044b625fb06
 ```
 
 -	Platforms:
@@ -1725,9 +1725,9 @@ $ docker pull golang@sha256:6955c02113bcba03b0a24421cc893335d14ea02bcc57dd183829
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.7 MB (265722228 bytes)**  
+-	Total Size: **265.8 MB (265769833 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:35501deeda86ae67373c7dc70aa8918c1240c2edf47d8478fa0f205a64ad2d37`
+-	Image ID: `sha256:009df987ff700ff2ee2c70a93a0e3c02fa5eba0b5cc774a88a4cfac16ae48776`
 -	Default Command: `["go-wrapper","run"]`
 
 ```dockerfile
@@ -1741,31 +1741,31 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 09 May 2017 16:43:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 23 May 2017 22:20:01 GMT
-ENV GOLANG_VERSION=1.8.2
-# Tue, 23 May 2017 22:20:16 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='031035eab11903237e02007fc69c085bd4769ff2e2aa5e9af427ddaed3d37e2b' ;; 		i386) goRelArch='linux-386'; goRelSha256='00bc94606610bf25c660d6106fa8e61cca6a276c046f3ceb9091053e99ceebe9' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='f091afb86501191270e14a653a056e8e7635e18a72e43cfbd13093b2482ca7a8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='a1942b2833e7d2685d7dbb7ac81c66125c351f24c7f006e8ae4a4283905257d1' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='5477d6c9a4f96fa120847fafa88319d7b56b5d5068e41c3587eebe248b939be7' ;; 		*) goRelArch='src'; goRelSha256='e10401faaa8ae29dbe87349c1814b07b1903d453f822215d7b274bbc335cbf79'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
-# Tue, 23 May 2017 22:20:17 GMT
+# Wed, 24 May 2017 23:16:39 GMT
+ENV GOLANG_VERSION=1.8.3
+# Wed, 24 May 2017 23:16:56 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='e5fb00adfc7291e657f1f3d31c09e74890b5328e6f991a3f395ca72a8c4dc0b3' ;; 		i386) goRelArch='linux-386'; goRelSha256='ff4895eb68fb1daaec41c540602e8bb4c1e8bb2f0e7017367171913fc9995ed2' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='e2ec3e7c293701b57ca1f32b37977ac9968f57b3df034f2cc2d531e80671e6c8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='3c30a3e24736ca776fc6314e5092fb8584bd3a4a2c2fa7307ae779ba2735e668' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='1862f4c3d3907e59b04a757cfda0ea7aa9ef39274af99a784f5be843c80c6772' ;; 		*) goRelArch='src'; goRelSha256='5f5dea2447e7dcfdc50fa6b94c512e58bfba5673c039259fd843f68829d99fa6'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
+# Wed, 24 May 2017 23:16:57 GMT
 ENV GOPATH=/go
-# Tue, 23 May 2017 22:20:18 GMT
+# Wed, 24 May 2017 23:16:58 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 May 2017 22:20:19 GMT
+# Wed, 24 May 2017 23:16:59 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Tue, 23 May 2017 22:20:20 GMT
+# Wed, 24 May 2017 23:17:00 GMT
 WORKDIR /go
-# Tue, 23 May 2017 22:20:21 GMT
+# Wed, 24 May 2017 23:17:02 GMT
 COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /usr/local/bin/ 
-# Tue, 23 May 2017 22:20:44 GMT
+# Wed, 24 May 2017 23:17:25 GMT
 RUN mkdir -p /go/src/app
-# Tue, 23 May 2017 22:20:45 GMT
+# Wed, 24 May 2017 23:17:25 GMT
 WORKDIR /go/src/app
-# Tue, 23 May 2017 22:20:46 GMT
+# Wed, 24 May 2017 23:17:26 GMT
 CMD ["go-wrapper" "run"]
-# Tue, 23 May 2017 22:20:46 GMT
+# Wed, 24 May 2017 23:17:27 GMT
 ONBUILD COPY . /go/src/app
-# Tue, 23 May 2017 22:20:47 GMT
+# Wed, 24 May 2017 23:17:28 GMT
 ONBUILD RUN go-wrapper download
-# Tue, 23 May 2017 22:20:48 GMT
+# Wed, 24 May 2017 23:17:28 GMT
 ONBUILD RUN go-wrapper install
 ```
 
@@ -1786,39 +1786,39 @@ ONBUILD RUN go-wrapper install
 		Last Modified: Sat, 13 May 2017 06:00:35 GMT  
 		Size: 60.6 MB (60647037 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86e85c214a6d14204fa0505efc3127bf70e7a48e941f6b0b774c7cb83c954b0e`  
-		Last Modified: Tue, 23 May 2017 22:29:50 GMT  
-		Size: 90.0 MB (89991231 bytes)  
+	-	`sha256:b01dfb81dcfe8030b889460602069784a4399f8fe6d283f005d660d152252d88`  
+		Last Modified: Wed, 24 May 2017 23:24:27 GMT  
+		Size: 90.0 MB (90038836 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:722b17304476dd5fc2d68caafa63231d098cd0ef47e7f1a39c62bcfa6c70ca7d`  
-		Last Modified: Tue, 23 May 2017 22:29:27 GMT  
+	-	`sha256:2887fcab405b9ded99e1867483d18c569db198db2be081648d0ee5a5091e9f88`  
+		Last Modified: Wed, 24 May 2017 23:24:08 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:421938132e69411cdefb982f221b091787ad344fe01d23475935aa677a330ac4`  
-		Last Modified: Tue, 23 May 2017 22:29:26 GMT  
+	-	`sha256:42bcf38edfe0eda88d8d7dca823df17c96257b04c8a4324ff2eb0c0431176727`  
+		Last Modified: Wed, 24 May 2017 23:24:05 GMT  
 		Size: 1.4 KB (1353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:831e8544251c36414398a6fbb5ddde85dd514ce229173c01ca59f0503912f137`  
-		Last Modified: Tue, 23 May 2017 22:31:26 GMT  
+	-	`sha256:50ed371c80998077e78787e1b2f3a99819939edd56c5f82391ce0c9746b8fd5a`  
+		Last Modified: Wed, 24 May 2017 23:26:05 GMT  
 		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `golang:1.8.2-stretch`
+## `golang:1.8.3-stretch`
 
 ```console
-$ docker pull golang@sha256:d9c04d8878d9e086dbd18ae460300ae158ee8dcb393e1b62802bc809c956b10a
+$ docker pull golang@sha256:18bb0707e8a0548c04824981c51b964fcaf488e7cfa3de1c461ffccc5256d834
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `golang:1.8.2-stretch` - linux; amd64
+### `golang:1.8.3-stretch` - linux; amd64
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.3 MB (254315972 bytes)**  
+-	Total Size: **254.4 MB (254363976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:18b8782ecaf24e5dcd19c63e83759585e25dd83adb75b113f6821ab7c1320bc9`
+-	Image ID: `sha256:114e401681d410a5d172601aacdcca03fdc4a1794fcdcfb473b81ea5172a4a9b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -1832,19 +1832,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 09 May 2017 16:45:04 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 23 May 2017 22:21:10 GMT
-ENV GOLANG_VERSION=1.8.2
-# Tue, 23 May 2017 22:21:28 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='031035eab11903237e02007fc69c085bd4769ff2e2aa5e9af427ddaed3d37e2b' ;; 		i386) goRelArch='linux-386'; goRelSha256='00bc94606610bf25c660d6106fa8e61cca6a276c046f3ceb9091053e99ceebe9' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='f091afb86501191270e14a653a056e8e7635e18a72e43cfbd13093b2482ca7a8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='a1942b2833e7d2685d7dbb7ac81c66125c351f24c7f006e8ae4a4283905257d1' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='5477d6c9a4f96fa120847fafa88319d7b56b5d5068e41c3587eebe248b939be7' ;; 		*) goRelArch='src'; goRelSha256='e10401faaa8ae29dbe87349c1814b07b1903d453f822215d7b274bbc335cbf79'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
-# Tue, 23 May 2017 22:21:29 GMT
+# Wed, 24 May 2017 23:17:51 GMT
+ENV GOLANG_VERSION=1.8.3
+# Wed, 24 May 2017 23:18:09 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='e5fb00adfc7291e657f1f3d31c09e74890b5328e6f991a3f395ca72a8c4dc0b3' ;; 		i386) goRelArch='linux-386'; goRelSha256='ff4895eb68fb1daaec41c540602e8bb4c1e8bb2f0e7017367171913fc9995ed2' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='e2ec3e7c293701b57ca1f32b37977ac9968f57b3df034f2cc2d531e80671e6c8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='3c30a3e24736ca776fc6314e5092fb8584bd3a4a2c2fa7307ae779ba2735e668' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='1862f4c3d3907e59b04a757cfda0ea7aa9ef39274af99a784f5be843c80c6772' ;; 		*) goRelArch='src'; goRelSha256='5f5dea2447e7dcfdc50fa6b94c512e58bfba5673c039259fd843f68829d99fa6'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
+# Wed, 24 May 2017 23:18:10 GMT
 ENV GOPATH=/go
-# Tue, 23 May 2017 22:21:30 GMT
+# Wed, 24 May 2017 23:18:11 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 May 2017 22:21:31 GMT
+# Wed, 24 May 2017 23:18:12 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Tue, 23 May 2017 22:21:32 GMT
+# Wed, 24 May 2017 23:18:13 GMT
 WORKDIR /go
-# Tue, 23 May 2017 22:21:33 GMT
+# Wed, 24 May 2017 23:18:14 GMT
 COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /usr/local/bin/ 
 ```
 
@@ -1865,23 +1865,23 @@ COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /u
 		Last Modified: Sat, 13 May 2017 06:11:50 GMT  
 		Size: 57.2 MB (57176613 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9bbc4f680882c6f07f0c6f738d6d7433ffa5518b14e9bf4519a7d166e4b9e403`  
-		Last Modified: Tue, 23 May 2017 22:33:22 GMT  
-		Size: 90.0 MB (89990868 bytes)  
+	-	`sha256:e12a3e77469fa87dffd97ef3b95e6978f7ba6ea88ad550fd63e8b228f75d3d17`  
+		Last Modified: Wed, 24 May 2017 23:27:56 GMT  
+		Size: 90.0 MB (90038866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dfbda7e486a9abd205ce248e2490f348e12639550aec738884967436fee371da`  
-		Last Modified: Tue, 23 May 2017 22:33:01 GMT  
-		Size: 125.0 B  
+	-	`sha256:6ae80fc3f0c0739dc0a8cd3087d12192e9645125cab468627adf54524080e185`  
+		Last Modified: Wed, 24 May 2017 23:27:41 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b2ae379b4af9dabdcf6ecb24181e512a18a0a5268918281398490e34b5e5401`  
-		Last Modified: Tue, 23 May 2017 22:33:01 GMT  
-		Size: 1.4 KB (1351 bytes)  
+	-	`sha256:f7a665272bebdda381e5e502dc5e2c41fc2d18c21c1e3fd09117ea354f7993d1`  
+		Last Modified: Wed, 24 May 2017 23:27:42 GMT  
+		Size: 1.4 KB (1356 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `golang:1.8-stretch`
 
 ```console
-$ docker pull golang@sha256:d9c04d8878d9e086dbd18ae460300ae158ee8dcb393e1b62802bc809c956b10a
+$ docker pull golang@sha256:18bb0707e8a0548c04824981c51b964fcaf488e7cfa3de1c461ffccc5256d834
 ```
 
 -	Platforms:
@@ -1891,9 +1891,9 @@ $ docker pull golang@sha256:d9c04d8878d9e086dbd18ae460300ae158ee8dcb393e1b62802b
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.3 MB (254315972 bytes)**  
+-	Total Size: **254.4 MB (254363976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:18b8782ecaf24e5dcd19c63e83759585e25dd83adb75b113f6821ab7c1320bc9`
+-	Image ID: `sha256:114e401681d410a5d172601aacdcca03fdc4a1794fcdcfb473b81ea5172a4a9b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -1907,19 +1907,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 09 May 2017 16:45:04 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 23 May 2017 22:21:10 GMT
-ENV GOLANG_VERSION=1.8.2
-# Tue, 23 May 2017 22:21:28 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='031035eab11903237e02007fc69c085bd4769ff2e2aa5e9af427ddaed3d37e2b' ;; 		i386) goRelArch='linux-386'; goRelSha256='00bc94606610bf25c660d6106fa8e61cca6a276c046f3ceb9091053e99ceebe9' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='f091afb86501191270e14a653a056e8e7635e18a72e43cfbd13093b2482ca7a8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='a1942b2833e7d2685d7dbb7ac81c66125c351f24c7f006e8ae4a4283905257d1' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='5477d6c9a4f96fa120847fafa88319d7b56b5d5068e41c3587eebe248b939be7' ;; 		*) goRelArch='src'; goRelSha256='e10401faaa8ae29dbe87349c1814b07b1903d453f822215d7b274bbc335cbf79'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
-# Tue, 23 May 2017 22:21:29 GMT
+# Wed, 24 May 2017 23:17:51 GMT
+ENV GOLANG_VERSION=1.8.3
+# Wed, 24 May 2017 23:18:09 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='e5fb00adfc7291e657f1f3d31c09e74890b5328e6f991a3f395ca72a8c4dc0b3' ;; 		i386) goRelArch='linux-386'; goRelSha256='ff4895eb68fb1daaec41c540602e8bb4c1e8bb2f0e7017367171913fc9995ed2' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='e2ec3e7c293701b57ca1f32b37977ac9968f57b3df034f2cc2d531e80671e6c8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='3c30a3e24736ca776fc6314e5092fb8584bd3a4a2c2fa7307ae779ba2735e668' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='1862f4c3d3907e59b04a757cfda0ea7aa9ef39274af99a784f5be843c80c6772' ;; 		*) goRelArch='src'; goRelSha256='5f5dea2447e7dcfdc50fa6b94c512e58bfba5673c039259fd843f68829d99fa6'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
+# Wed, 24 May 2017 23:18:10 GMT
 ENV GOPATH=/go
-# Tue, 23 May 2017 22:21:30 GMT
+# Wed, 24 May 2017 23:18:11 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 May 2017 22:21:31 GMT
+# Wed, 24 May 2017 23:18:12 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Tue, 23 May 2017 22:21:32 GMT
+# Wed, 24 May 2017 23:18:13 GMT
 WORKDIR /go
-# Tue, 23 May 2017 22:21:33 GMT
+# Wed, 24 May 2017 23:18:14 GMT
 COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /usr/local/bin/ 
 ```
 
@@ -1940,23 +1940,23 @@ COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /u
 		Last Modified: Sat, 13 May 2017 06:11:50 GMT  
 		Size: 57.2 MB (57176613 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9bbc4f680882c6f07f0c6f738d6d7433ffa5518b14e9bf4519a7d166e4b9e403`  
-		Last Modified: Tue, 23 May 2017 22:33:22 GMT  
-		Size: 90.0 MB (89990868 bytes)  
+	-	`sha256:e12a3e77469fa87dffd97ef3b95e6978f7ba6ea88ad550fd63e8b228f75d3d17`  
+		Last Modified: Wed, 24 May 2017 23:27:56 GMT  
+		Size: 90.0 MB (90038866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dfbda7e486a9abd205ce248e2490f348e12639550aec738884967436fee371da`  
-		Last Modified: Tue, 23 May 2017 22:33:01 GMT  
-		Size: 125.0 B  
+	-	`sha256:6ae80fc3f0c0739dc0a8cd3087d12192e9645125cab468627adf54524080e185`  
+		Last Modified: Wed, 24 May 2017 23:27:41 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b2ae379b4af9dabdcf6ecb24181e512a18a0a5268918281398490e34b5e5401`  
-		Last Modified: Tue, 23 May 2017 22:33:01 GMT  
-		Size: 1.4 KB (1351 bytes)  
+	-	`sha256:f7a665272bebdda381e5e502dc5e2c41fc2d18c21c1e3fd09117ea354f7993d1`  
+		Last Modified: Wed, 24 May 2017 23:27:42 GMT  
+		Size: 1.4 KB (1356 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `golang:1-stretch`
 
 ```console
-$ docker pull golang@sha256:d9c04d8878d9e086dbd18ae460300ae158ee8dcb393e1b62802bc809c956b10a
+$ docker pull golang@sha256:18bb0707e8a0548c04824981c51b964fcaf488e7cfa3de1c461ffccc5256d834
 ```
 
 -	Platforms:
@@ -1966,9 +1966,9 @@ $ docker pull golang@sha256:d9c04d8878d9e086dbd18ae460300ae158ee8dcb393e1b62802b
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.3 MB (254315972 bytes)**  
+-	Total Size: **254.4 MB (254363976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:18b8782ecaf24e5dcd19c63e83759585e25dd83adb75b113f6821ab7c1320bc9`
+-	Image ID: `sha256:114e401681d410a5d172601aacdcca03fdc4a1794fcdcfb473b81ea5172a4a9b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -1982,19 +1982,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 09 May 2017 16:45:04 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 23 May 2017 22:21:10 GMT
-ENV GOLANG_VERSION=1.8.2
-# Tue, 23 May 2017 22:21:28 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='031035eab11903237e02007fc69c085bd4769ff2e2aa5e9af427ddaed3d37e2b' ;; 		i386) goRelArch='linux-386'; goRelSha256='00bc94606610bf25c660d6106fa8e61cca6a276c046f3ceb9091053e99ceebe9' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='f091afb86501191270e14a653a056e8e7635e18a72e43cfbd13093b2482ca7a8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='a1942b2833e7d2685d7dbb7ac81c66125c351f24c7f006e8ae4a4283905257d1' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='5477d6c9a4f96fa120847fafa88319d7b56b5d5068e41c3587eebe248b939be7' ;; 		*) goRelArch='src'; goRelSha256='e10401faaa8ae29dbe87349c1814b07b1903d453f822215d7b274bbc335cbf79'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
-# Tue, 23 May 2017 22:21:29 GMT
+# Wed, 24 May 2017 23:17:51 GMT
+ENV GOLANG_VERSION=1.8.3
+# Wed, 24 May 2017 23:18:09 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='e5fb00adfc7291e657f1f3d31c09e74890b5328e6f991a3f395ca72a8c4dc0b3' ;; 		i386) goRelArch='linux-386'; goRelSha256='ff4895eb68fb1daaec41c540602e8bb4c1e8bb2f0e7017367171913fc9995ed2' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='e2ec3e7c293701b57ca1f32b37977ac9968f57b3df034f2cc2d531e80671e6c8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='3c30a3e24736ca776fc6314e5092fb8584bd3a4a2c2fa7307ae779ba2735e668' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='1862f4c3d3907e59b04a757cfda0ea7aa9ef39274af99a784f5be843c80c6772' ;; 		*) goRelArch='src'; goRelSha256='5f5dea2447e7dcfdc50fa6b94c512e58bfba5673c039259fd843f68829d99fa6'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
+# Wed, 24 May 2017 23:18:10 GMT
 ENV GOPATH=/go
-# Tue, 23 May 2017 22:21:30 GMT
+# Wed, 24 May 2017 23:18:11 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 May 2017 22:21:31 GMT
+# Wed, 24 May 2017 23:18:12 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Tue, 23 May 2017 22:21:32 GMT
+# Wed, 24 May 2017 23:18:13 GMT
 WORKDIR /go
-# Tue, 23 May 2017 22:21:33 GMT
+# Wed, 24 May 2017 23:18:14 GMT
 COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /usr/local/bin/ 
 ```
 
@@ -2015,23 +2015,23 @@ COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /u
 		Last Modified: Sat, 13 May 2017 06:11:50 GMT  
 		Size: 57.2 MB (57176613 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9bbc4f680882c6f07f0c6f738d6d7433ffa5518b14e9bf4519a7d166e4b9e403`  
-		Last Modified: Tue, 23 May 2017 22:33:22 GMT  
-		Size: 90.0 MB (89990868 bytes)  
+	-	`sha256:e12a3e77469fa87dffd97ef3b95e6978f7ba6ea88ad550fd63e8b228f75d3d17`  
+		Last Modified: Wed, 24 May 2017 23:27:56 GMT  
+		Size: 90.0 MB (90038866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dfbda7e486a9abd205ce248e2490f348e12639550aec738884967436fee371da`  
-		Last Modified: Tue, 23 May 2017 22:33:01 GMT  
-		Size: 125.0 B  
+	-	`sha256:6ae80fc3f0c0739dc0a8cd3087d12192e9645125cab468627adf54524080e185`  
+		Last Modified: Wed, 24 May 2017 23:27:41 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b2ae379b4af9dabdcf6ecb24181e512a18a0a5268918281398490e34b5e5401`  
-		Last Modified: Tue, 23 May 2017 22:33:01 GMT  
-		Size: 1.4 KB (1351 bytes)  
+	-	`sha256:f7a665272bebdda381e5e502dc5e2c41fc2d18c21c1e3fd09117ea354f7993d1`  
+		Last Modified: Wed, 24 May 2017 23:27:42 GMT  
+		Size: 1.4 KB (1356 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `golang:stretch`
 
 ```console
-$ docker pull golang@sha256:d9c04d8878d9e086dbd18ae460300ae158ee8dcb393e1b62802bc809c956b10a
+$ docker pull golang@sha256:18bb0707e8a0548c04824981c51b964fcaf488e7cfa3de1c461ffccc5256d834
 ```
 
 -	Platforms:
@@ -2041,9 +2041,9 @@ $ docker pull golang@sha256:d9c04d8878d9e086dbd18ae460300ae158ee8dcb393e1b62802b
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.3 MB (254315972 bytes)**  
+-	Total Size: **254.4 MB (254363976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:18b8782ecaf24e5dcd19c63e83759585e25dd83adb75b113f6821ab7c1320bc9`
+-	Image ID: `sha256:114e401681d410a5d172601aacdcca03fdc4a1794fcdcfb473b81ea5172a4a9b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -2057,19 +2057,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 # Tue, 09 May 2017 16:45:04 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 23 May 2017 22:21:10 GMT
-ENV GOLANG_VERSION=1.8.2
-# Tue, 23 May 2017 22:21:28 GMT
-RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='031035eab11903237e02007fc69c085bd4769ff2e2aa5e9af427ddaed3d37e2b' ;; 		i386) goRelArch='linux-386'; goRelSha256='00bc94606610bf25c660d6106fa8e61cca6a276c046f3ceb9091053e99ceebe9' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='f091afb86501191270e14a653a056e8e7635e18a72e43cfbd13093b2482ca7a8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='a1942b2833e7d2685d7dbb7ac81c66125c351f24c7f006e8ae4a4283905257d1' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='5477d6c9a4f96fa120847fafa88319d7b56b5d5068e41c3587eebe248b939be7' ;; 		*) goRelArch='src'; goRelSha256='e10401faaa8ae29dbe87349c1814b07b1903d453f822215d7b274bbc335cbf79'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
-# Tue, 23 May 2017 22:21:29 GMT
+# Wed, 24 May 2017 23:17:51 GMT
+ENV GOLANG_VERSION=1.8.3
+# Wed, 24 May 2017 23:18:09 GMT
+RUN set -eux; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		ppc64el) goRelArch='linux-ppc64le'; goRelSha256='e5fb00adfc7291e657f1f3d31c09e74890b5328e6f991a3f395ca72a8c4dc0b3' ;; 		i386) goRelArch='linux-386'; goRelSha256='ff4895eb68fb1daaec41c540602e8bb4c1e8bb2f0e7017367171913fc9995ed2' ;; 		s390x) goRelArch='linux-s390x'; goRelSha256='e2ec3e7c293701b57ca1f32b37977ac9968f57b3df034f2cc2d531e80671e6c8' ;; 		armhf) goRelArch='linux-armv6l'; goRelSha256='3c30a3e24736ca776fc6314e5092fb8584bd3a4a2c2fa7307ae779ba2735e668' ;; 		amd64) goRelArch='linux-amd64'; goRelSha256='1862f4c3d3907e59b04a757cfda0ea7aa9ef39274af99a784f5be843c80c6772' ;; 		*) goRelArch='src'; goRelSha256='5f5dea2447e7dcfdc50fa6b94c512e58bfba5673c039259fd843f68829d99fa6'; 			echo >&2; echo >&2 "warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source"; echo >&2 ;; 	esac; 		url="https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz"; 	wget -O go.tgz "$url"; 	echo "${goRelSha256} *go.tgz" | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		if [ "$goRelArch" = 'src' ]; then 		echo >&2; 		echo >&2 'error: UNIMPLEMENTED'; 		echo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; 		echo >&2; 		exit 1; 	fi; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
+# Wed, 24 May 2017 23:18:10 GMT
 ENV GOPATH=/go
-# Tue, 23 May 2017 22:21:30 GMT
+# Wed, 24 May 2017 23:18:11 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 May 2017 22:21:31 GMT
+# Wed, 24 May 2017 23:18:12 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Tue, 23 May 2017 22:21:32 GMT
+# Wed, 24 May 2017 23:18:13 GMT
 WORKDIR /go
-# Tue, 23 May 2017 22:21:33 GMT
+# Wed, 24 May 2017 23:18:14 GMT
 COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /usr/local/bin/ 
 ```
 
@@ -2090,35 +2090,35 @@ COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /u
 		Last Modified: Sat, 13 May 2017 06:11:50 GMT  
 		Size: 57.2 MB (57176613 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9bbc4f680882c6f07f0c6f738d6d7433ffa5518b14e9bf4519a7d166e4b9e403`  
-		Last Modified: Tue, 23 May 2017 22:33:22 GMT  
-		Size: 90.0 MB (89990868 bytes)  
+	-	`sha256:e12a3e77469fa87dffd97ef3b95e6978f7ba6ea88ad550fd63e8b228f75d3d17`  
+		Last Modified: Wed, 24 May 2017 23:27:56 GMT  
+		Size: 90.0 MB (90038866 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dfbda7e486a9abd205ce248e2490f348e12639550aec738884967436fee371da`  
-		Last Modified: Tue, 23 May 2017 22:33:01 GMT  
-		Size: 125.0 B  
+	-	`sha256:6ae80fc3f0c0739dc0a8cd3087d12192e9645125cab468627adf54524080e185`  
+		Last Modified: Wed, 24 May 2017 23:27:41 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b2ae379b4af9dabdcf6ecb24181e512a18a0a5268918281398490e34b5e5401`  
-		Last Modified: Tue, 23 May 2017 22:33:01 GMT  
-		Size: 1.4 KB (1351 bytes)  
+	-	`sha256:f7a665272bebdda381e5e502dc5e2c41fc2d18c21c1e3fd09117ea354f7993d1`  
+		Last Modified: Wed, 24 May 2017 23:27:42 GMT  
+		Size: 1.4 KB (1356 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `golang:1.8.2-alpine`
+## `golang:1.8.3-alpine`
 
 ```console
-$ docker pull golang@sha256:1d45c59eb9fc5970ef6141adf3e2e3b08e93ffffc6d93bb49eca927e9aff88c6
+$ docker pull golang@sha256:ea0ceb167d4e37813e0c5be96adbc79daf75900446f3e3e591ca472423365a28
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `golang:1.8.2-alpine` - linux; amd64
+### `golang:1.8.3-alpine` - linux; amd64
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.9 MB (77890616 bytes)**  
+-	Total Size: **77.9 MB (77947960 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56145cfd09fc29f04222184981d6d36dd6e6f2a5a6a68eb825e181d217292772`
+-	Image ID: `sha256:054e02e2a2f3dfe552b0e501836953b5640f3a78ae241c91562c346b75b57939`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -2128,21 +2128,21 @@ ADD file:63f63606d6e289eb607c90e31de81802258906712727e473a2898f0f1ae55bb5 in /
 CMD ["/bin/sh"]
 # Wed, 10 May 2017 21:24:07 GMT
 RUN apk add --no-cache ca-certificates
-# Tue, 23 May 2017 22:21:56 GMT
-ENV GOLANG_VERSION=1.8.2
-# Tue, 23 May 2017 22:21:57 GMT
+# Wed, 24 May 2017 23:18:36 GMT
+ENV GOLANG_VERSION=1.8.3
+# Wed, 24 May 2017 23:18:37 GMT
 COPY file:8bfad5c310fe0639fcf658b30e2f65d04df13ad329573b58a3e782441bb7839c in /go-alpine-patches/ 
-# Tue, 23 May 2017 22:22:58 GMT
-RUN set -eux; 	apk add --no-cache --virtual .build-deps 		bash 		gcc 		musl-dev 		openssl 		go 	; 	export 		GOROOT_BOOTSTRAP="$(go env GOROOT)" 		GOOS="$(go env GOOS)" 		GOARCH="$(go env GOARCH)" 		GO386="$(go env GO386)" 		GOARM="$(go env GOARM)" 		GOHOSTOS="$(go env GOHOSTOS)" 		GOHOSTARCH="$(go env GOHOSTARCH)" 	; 		wget -O go.tgz "https://golang.org/dl/go$GOLANG_VERSION.src.tar.gz"; 	echo 'e10401faaa8ae29dbe87349c1814b07b1903d453f822215d7b274bbc335cbf79 *go.tgz' | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		cd /usr/local/go/src; 	for p in /go-alpine-patches/*.patch; do 		[ -f "$p" ] || continue; 		patch -p2 -i "$p"; 	done; 	./make.bash; 		rm -rf /go-alpine-patches; 	apk del .build-deps; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
-# Tue, 23 May 2017 22:22:59 GMT
+# Wed, 24 May 2017 23:19:40 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		bash 		gcc 		musl-dev 		openssl 		go 	; 	export 		GOROOT_BOOTSTRAP="$(go env GOROOT)" 		GOOS="$(go env GOOS)" 		GOARCH="$(go env GOARCH)" 		GO386="$(go env GO386)" 		GOARM="$(go env GOARM)" 		GOHOSTOS="$(go env GOHOSTOS)" 		GOHOSTARCH="$(go env GOHOSTARCH)" 	; 		wget -O go.tgz "https://golang.org/dl/go$GOLANG_VERSION.src.tar.gz"; 	echo '5f5dea2447e7dcfdc50fa6b94c512e58bfba5673c039259fd843f68829d99fa6 *go.tgz' | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		cd /usr/local/go/src; 	for p in /go-alpine-patches/*.patch; do 		[ -f "$p" ] || continue; 		patch -p2 -i "$p"; 	done; 	./make.bash; 		rm -rf /go-alpine-patches; 	apk del .build-deps; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
+# Wed, 24 May 2017 23:19:41 GMT
 ENV GOPATH=/go
-# Tue, 23 May 2017 22:22:59 GMT
+# Wed, 24 May 2017 23:19:42 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 May 2017 22:23:01 GMT
+# Wed, 24 May 2017 23:19:43 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Tue, 23 May 2017 22:23:02 GMT
+# Wed, 24 May 2017 23:19:44 GMT
 WORKDIR /go
-# Tue, 23 May 2017 22:23:03 GMT
+# Wed, 24 May 2017 23:19:45 GMT
 COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /usr/local/bin/ 
 ```
 
@@ -2155,27 +2155,27 @@ COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /u
 		Last Modified: Sat, 13 May 2017 06:02:48 GMT  
 		Size: 350.6 KB (350620 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f02d26de1829b17329334132052d70b39d5f641ac9dba9ac888aa812fb294bc2`  
-		Last Modified: Tue, 23 May 2017 22:35:01 GMT  
+	-	`sha256:cc081931e985797bc4a8e2b855ba056469e2a4162da5e0f6cc9df0728377869b`  
+		Last Modified: Wed, 24 May 2017 23:29:33 GMT  
 		Size: 486.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac85d6d1981f0c8e0aa9c6e87d6330d993ff6ec9c026f3fe0c3b0659e0436567`  
-		Last Modified: Tue, 23 May 2017 22:35:22 GMT  
-		Size: 75.6 MB (75570132 bytes)  
+	-	`sha256:3ac19b17b54b08c27a080c6ef3e16408bbd81d8acea61a7e09fea793cc9375b6`  
+		Last Modified: Wed, 24 May 2017 23:29:47 GMT  
+		Size: 75.6 MB (75627477 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:434f26f07fedd309993f234328beef428567c96ad326734b5fafeced95be01e5`  
-		Last Modified: Tue, 23 May 2017 22:35:01 GMT  
+	-	`sha256:51c19419129ed6d15b965239d7de97296115d478c1e948660876de09ebdd7dfb`  
+		Last Modified: Wed, 24 May 2017 23:29:33 GMT  
 		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b362bd9d84a7cce2b9fb67f2cf136fd7f314ea429878dd296566ca26282a8e45`  
-		Last Modified: Tue, 23 May 2017 22:35:01 GMT  
-		Size: 1.3 KB (1347 bytes)  
+	-	`sha256:d2559bbfd37255bf1dd06c0feaa01414ab690c978f50796afb913ba5a57ea3f8`  
+		Last Modified: Wed, 24 May 2017 23:29:34 GMT  
+		Size: 1.3 KB (1346 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `golang:1.8-alpine`
 
 ```console
-$ docker pull golang@sha256:1d45c59eb9fc5970ef6141adf3e2e3b08e93ffffc6d93bb49eca927e9aff88c6
+$ docker pull golang@sha256:ea0ceb167d4e37813e0c5be96adbc79daf75900446f3e3e591ca472423365a28
 ```
 
 -	Platforms:
@@ -2185,9 +2185,9 @@ $ docker pull golang@sha256:1d45c59eb9fc5970ef6141adf3e2e3b08e93ffffc6d93bb49eca
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.9 MB (77890616 bytes)**  
+-	Total Size: **77.9 MB (77947960 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56145cfd09fc29f04222184981d6d36dd6e6f2a5a6a68eb825e181d217292772`
+-	Image ID: `sha256:054e02e2a2f3dfe552b0e501836953b5640f3a78ae241c91562c346b75b57939`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -2197,21 +2197,21 @@ ADD file:63f63606d6e289eb607c90e31de81802258906712727e473a2898f0f1ae55bb5 in /
 CMD ["/bin/sh"]
 # Wed, 10 May 2017 21:24:07 GMT
 RUN apk add --no-cache ca-certificates
-# Tue, 23 May 2017 22:21:56 GMT
-ENV GOLANG_VERSION=1.8.2
-# Tue, 23 May 2017 22:21:57 GMT
+# Wed, 24 May 2017 23:18:36 GMT
+ENV GOLANG_VERSION=1.8.3
+# Wed, 24 May 2017 23:18:37 GMT
 COPY file:8bfad5c310fe0639fcf658b30e2f65d04df13ad329573b58a3e782441bb7839c in /go-alpine-patches/ 
-# Tue, 23 May 2017 22:22:58 GMT
-RUN set -eux; 	apk add --no-cache --virtual .build-deps 		bash 		gcc 		musl-dev 		openssl 		go 	; 	export 		GOROOT_BOOTSTRAP="$(go env GOROOT)" 		GOOS="$(go env GOOS)" 		GOARCH="$(go env GOARCH)" 		GO386="$(go env GO386)" 		GOARM="$(go env GOARM)" 		GOHOSTOS="$(go env GOHOSTOS)" 		GOHOSTARCH="$(go env GOHOSTARCH)" 	; 		wget -O go.tgz "https://golang.org/dl/go$GOLANG_VERSION.src.tar.gz"; 	echo 'e10401faaa8ae29dbe87349c1814b07b1903d453f822215d7b274bbc335cbf79 *go.tgz' | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		cd /usr/local/go/src; 	for p in /go-alpine-patches/*.patch; do 		[ -f "$p" ] || continue; 		patch -p2 -i "$p"; 	done; 	./make.bash; 		rm -rf /go-alpine-patches; 	apk del .build-deps; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
-# Tue, 23 May 2017 22:22:59 GMT
+# Wed, 24 May 2017 23:19:40 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		bash 		gcc 		musl-dev 		openssl 		go 	; 	export 		GOROOT_BOOTSTRAP="$(go env GOROOT)" 		GOOS="$(go env GOOS)" 		GOARCH="$(go env GOARCH)" 		GO386="$(go env GO386)" 		GOARM="$(go env GOARM)" 		GOHOSTOS="$(go env GOHOSTOS)" 		GOHOSTARCH="$(go env GOHOSTARCH)" 	; 		wget -O go.tgz "https://golang.org/dl/go$GOLANG_VERSION.src.tar.gz"; 	echo '5f5dea2447e7dcfdc50fa6b94c512e58bfba5673c039259fd843f68829d99fa6 *go.tgz' | sha256sum -c -; 	tar -C /usr/local -xzf go.tgz; 	rm go.tgz; 		cd /usr/local/go/src; 	for p in /go-alpine-patches/*.patch; do 		[ -f "$p" ] || continue; 		patch -p2 -i "$p"; 	done; 	./make.bash; 		rm -rf /go-alpine-patches; 	apk del .build-deps; 		export PATH="/usr/local/go/bin:$PATH"; 	go version
+# Wed, 24 May 2017 23:19:41 GMT
 ENV GOPATH=/go
-# Tue, 23 May 2017 22:22:59 GMT
+# Wed, 24 May 2017 23:19:42 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 23 May 2017 22:23:01 GMT
+# Wed, 24 May 2017 23:19:43 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
-# Tue, 23 May 2017 22:23:02 GMT
+# Wed, 24 May 2017 23:19:44 GMT
 WORKDIR /go
-# Tue, 23 May 2017 22:23:03 GMT
+# Wed, 24 May 2017 23:19:45 GMT
 COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /usr/local/bin/ 
 ```
 
@@ -2224,21 +2224,21 @@ COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /u
 		Last Modified: Sat, 13 May 2017 06:02:48 GMT  
 		Size: 350.6 KB (350620 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f02d26de1829b17329334132052d70b39d5f641ac9dba9ac888aa812fb294bc2`  
-		Last Modified: Tue, 23 May 2017 22:35:01 GMT  
+	-	`sha256:cc081931e985797bc4a8e2b855ba056469e2a4162da5e0f6cc9df0728377869b`  
+		Last Modified: Wed, 24 May 2017 23:29:33 GMT  
 		Size: 486.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac85d6d1981f0c8e0aa9c6e87d6330d993ff6ec9c026f3fe0c3b0659e0436567`  
-		Last Modified: Tue, 23 May 2017 22:35:22 GMT  
-		Size: 75.6 MB (75570132 bytes)  
+	-	`sha256:3ac19b17b54b08c27a080c6ef3e16408bbd81d8acea61a7e09fea793cc9375b6`  
+		Last Modified: Wed, 24 May 2017 23:29:47 GMT  
+		Size: 75.6 MB (75627477 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:434f26f07fedd309993f234328beef428567c96ad326734b5fafeced95be01e5`  
-		Last Modified: Tue, 23 May 2017 22:35:01 GMT  
+	-	`sha256:51c19419129ed6d15b965239d7de97296115d478c1e948660876de09ebdd7dfb`  
+		Last Modified: Wed, 24 May 2017 23:29:33 GMT  
 		Size: 125.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b362bd9d84a7cce2b9fb67f2cf136fd7f314ea429878dd296566ca26282a8e45`  
-		Last Modified: Tue, 23 May 2017 22:35:01 GMT  
-		Size: 1.3 KB (1347 bytes)  
+	-	`sha256:d2559bbfd37255bf1dd06c0feaa01414ab690c978f50796afb913ba5a57ea3f8`  
+		Last Modified: Wed, 24 May 2017 23:29:34 GMT  
+		Size: 1.3 KB (1346 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `golang:1-alpine`
@@ -2379,22 +2379,22 @@ COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /u
 		Size: 1.3 KB (1347 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `golang:1.8.2-windowsservercore`
+## `golang:1.8.3-windowsservercore`
 
 ```console
-$ docker pull golang@sha256:94946c232b3195bb024807f6646e015d1e88f4a5b32b65752370785bd6295f34
+$ docker pull golang@sha256:070d5ae011e52315a3a92528e75c61a6931baad4ec4525966e06740e6dce43e9
 ```
 
 -	Platforms:
 	-	windows; amd64
 
-### `golang:1.8.2-windowsservercore` - windows; amd64
+### `golang:1.8.3-windowsservercore` - windows; amd64
 
 -	Docker Version: 1.12.2-cs2-ws-beta
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5368613106 bytes)**  
+-	Total Size: **5.4 GB (5368679492 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:85fe14c792fa706d29a98840b1515eb12e5e89731b0ec4a88a4af801db2fb870`
+-	Image ID: `sha256:1b648944b381b9d1f7c05ab2b6a8d1017880df5f9aa1e774d7a5d549c1b1c263`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -2419,11 +2419,11 @@ RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	Invoke-WebRequ
 ENV GOPATH=C:\gopath
 # Wed, 26 Apr 2017 19:33:08 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 23 May 2017 22:28:05 GMT
-ENV GOLANG_VERSION=1.8.2
-# Tue, 23 May 2017 22:30:58 GMT
-RUN $url = ('https://golang.org/dl/go{0}.windows-amd64.zip' -f $env:GOLANG_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '9bfa4d497caee1b7ec8720acdea2fa8af8d51b525ddc7e4648a63a3138a6a8e3'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Complete.';
-# Tue, 23 May 2017 22:31:01 GMT
+# Wed, 24 May 2017 23:16:09 GMT
+ENV GOLANG_VERSION=1.8.3
+# Wed, 24 May 2017 23:19:03 GMT
+RUN $url = ('https://golang.org/dl/go{0}.windows-amd64.zip' -f $env:GOLANG_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'de026caef4c5b4a74f359737dcb2d14c67ca45c45093755d3b0d2e0ee3aafd96'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Complete.';
+# Wed, 24 May 2017 23:19:07 GMT
 WORKDIR C:\gopath
 ```
 
@@ -2466,23 +2466,23 @@ WORKDIR C:\gopath
 		Last Modified: Wed, 26 Apr 2017 19:51:01 GMT  
 		Size: 4.7 MB (4664221 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89c89d249bb051a191b48ec8c583d3073363175fc27b81d360247dd338701a9a`  
-		Last Modified: Tue, 23 May 2017 22:35:18 GMT  
+	-	`sha256:5b331d15aa621885c086c370b0acd3f098bb7061187021ec2f4042218deb2ff1`  
+		Last Modified: Wed, 24 May 2017 23:22:11 GMT  
 		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf74dbfb3af8c00078a8339e8ed96c9adb9a0510df4d17f6fe54e9c8b2e2af4e`  
-		Last Modified: Tue, 23 May 2017 22:35:37 GMT  
-		Size: 102.7 MB (102683365 bytes)  
+	-	`sha256:2c632a99d7492e69b58a43144c119720fdd94bb23e568ad093cb2a701c88a3d2`  
+		Last Modified: Wed, 24 May 2017 23:22:32 GMT  
+		Size: 102.7 MB (102749745 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f70024cccd78406343aaf0e2d3be8d6fc124cf17bb6c3dcf968f90c24f0ceb94`  
-		Last Modified: Tue, 23 May 2017 22:35:17 GMT  
-		Size: 1.2 KB (1222 bytes)  
+	-	`sha256:0476df5a9b09e1b23f2d2d3db74cbbc07083f6d83e6678edc6299d22f6a9040d`  
+		Last Modified: Wed, 24 May 2017 23:22:10 GMT  
+		Size: 1.2 KB (1228 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `golang:1.8-windowsservercore`
 
 ```console
-$ docker pull golang@sha256:94946c232b3195bb024807f6646e015d1e88f4a5b32b65752370785bd6295f34
+$ docker pull golang@sha256:070d5ae011e52315a3a92528e75c61a6931baad4ec4525966e06740e6dce43e9
 ```
 
 -	Platforms:
@@ -2492,9 +2492,9 @@ $ docker pull golang@sha256:94946c232b3195bb024807f6646e015d1e88f4a5b32b65752370
 
 -	Docker Version: 1.12.2-cs2-ws-beta
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5368613106 bytes)**  
+-	Total Size: **5.4 GB (5368679492 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:85fe14c792fa706d29a98840b1515eb12e5e89731b0ec4a88a4af801db2fb870`
+-	Image ID: `sha256:1b648944b381b9d1f7c05ab2b6a8d1017880df5f9aa1e774d7a5d549c1b1c263`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -2519,11 +2519,11 @@ RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	Invoke-WebRequ
 ENV GOPATH=C:\gopath
 # Wed, 26 Apr 2017 19:33:08 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 23 May 2017 22:28:05 GMT
-ENV GOLANG_VERSION=1.8.2
-# Tue, 23 May 2017 22:30:58 GMT
-RUN $url = ('https://golang.org/dl/go{0}.windows-amd64.zip' -f $env:GOLANG_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '9bfa4d497caee1b7ec8720acdea2fa8af8d51b525ddc7e4648a63a3138a6a8e3'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Complete.';
-# Tue, 23 May 2017 22:31:01 GMT
+# Wed, 24 May 2017 23:16:09 GMT
+ENV GOLANG_VERSION=1.8.3
+# Wed, 24 May 2017 23:19:03 GMT
+RUN $url = ('https://golang.org/dl/go{0}.windows-amd64.zip' -f $env:GOLANG_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'de026caef4c5b4a74f359737dcb2d14c67ca45c45093755d3b0d2e0ee3aafd96'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Complete.';
+# Wed, 24 May 2017 23:19:07 GMT
 WORKDIR C:\gopath
 ```
 
@@ -2566,23 +2566,23 @@ WORKDIR C:\gopath
 		Last Modified: Wed, 26 Apr 2017 19:51:01 GMT  
 		Size: 4.7 MB (4664221 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89c89d249bb051a191b48ec8c583d3073363175fc27b81d360247dd338701a9a`  
-		Last Modified: Tue, 23 May 2017 22:35:18 GMT  
+	-	`sha256:5b331d15aa621885c086c370b0acd3f098bb7061187021ec2f4042218deb2ff1`  
+		Last Modified: Wed, 24 May 2017 23:22:11 GMT  
 		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf74dbfb3af8c00078a8339e8ed96c9adb9a0510df4d17f6fe54e9c8b2e2af4e`  
-		Last Modified: Tue, 23 May 2017 22:35:37 GMT  
-		Size: 102.7 MB (102683365 bytes)  
+	-	`sha256:2c632a99d7492e69b58a43144c119720fdd94bb23e568ad093cb2a701c88a3d2`  
+		Last Modified: Wed, 24 May 2017 23:22:32 GMT  
+		Size: 102.7 MB (102749745 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f70024cccd78406343aaf0e2d3be8d6fc124cf17bb6c3dcf968f90c24f0ceb94`  
-		Last Modified: Tue, 23 May 2017 22:35:17 GMT  
-		Size: 1.2 KB (1222 bytes)  
+	-	`sha256:0476df5a9b09e1b23f2d2d3db74cbbc07083f6d83e6678edc6299d22f6a9040d`  
+		Last Modified: Wed, 24 May 2017 23:22:10 GMT  
+		Size: 1.2 KB (1228 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `golang:1-windowsservercore`
 
 ```console
-$ docker pull golang@sha256:94946c232b3195bb024807f6646e015d1e88f4a5b32b65752370785bd6295f34
+$ docker pull golang@sha256:070d5ae011e52315a3a92528e75c61a6931baad4ec4525966e06740e6dce43e9
 ```
 
 -	Platforms:
@@ -2592,9 +2592,9 @@ $ docker pull golang@sha256:94946c232b3195bb024807f6646e015d1e88f4a5b32b65752370
 
 -	Docker Version: 1.12.2-cs2-ws-beta
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5368613106 bytes)**  
+-	Total Size: **5.4 GB (5368679492 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:85fe14c792fa706d29a98840b1515eb12e5e89731b0ec4a88a4af801db2fb870`
+-	Image ID: `sha256:1b648944b381b9d1f7c05ab2b6a8d1017880df5f9aa1e774d7a5d549c1b1c263`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -2619,11 +2619,11 @@ RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	Invoke-WebRequ
 ENV GOPATH=C:\gopath
 # Wed, 26 Apr 2017 19:33:08 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 23 May 2017 22:28:05 GMT
-ENV GOLANG_VERSION=1.8.2
-# Tue, 23 May 2017 22:30:58 GMT
-RUN $url = ('https://golang.org/dl/go{0}.windows-amd64.zip' -f $env:GOLANG_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '9bfa4d497caee1b7ec8720acdea2fa8af8d51b525ddc7e4648a63a3138a6a8e3'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Complete.';
-# Tue, 23 May 2017 22:31:01 GMT
+# Wed, 24 May 2017 23:16:09 GMT
+ENV GOLANG_VERSION=1.8.3
+# Wed, 24 May 2017 23:19:03 GMT
+RUN $url = ('https://golang.org/dl/go{0}.windows-amd64.zip' -f $env:GOLANG_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'de026caef4c5b4a74f359737dcb2d14c67ca45c45093755d3b0d2e0ee3aafd96'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Complete.';
+# Wed, 24 May 2017 23:19:07 GMT
 WORKDIR C:\gopath
 ```
 
@@ -2666,23 +2666,23 @@ WORKDIR C:\gopath
 		Last Modified: Wed, 26 Apr 2017 19:51:01 GMT  
 		Size: 4.7 MB (4664221 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89c89d249bb051a191b48ec8c583d3073363175fc27b81d360247dd338701a9a`  
-		Last Modified: Tue, 23 May 2017 22:35:18 GMT  
+	-	`sha256:5b331d15aa621885c086c370b0acd3f098bb7061187021ec2f4042218deb2ff1`  
+		Last Modified: Wed, 24 May 2017 23:22:11 GMT  
 		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf74dbfb3af8c00078a8339e8ed96c9adb9a0510df4d17f6fe54e9c8b2e2af4e`  
-		Last Modified: Tue, 23 May 2017 22:35:37 GMT  
-		Size: 102.7 MB (102683365 bytes)  
+	-	`sha256:2c632a99d7492e69b58a43144c119720fdd94bb23e568ad093cb2a701c88a3d2`  
+		Last Modified: Wed, 24 May 2017 23:22:32 GMT  
+		Size: 102.7 MB (102749745 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f70024cccd78406343aaf0e2d3be8d6fc124cf17bb6c3dcf968f90c24f0ceb94`  
-		Last Modified: Tue, 23 May 2017 22:35:17 GMT  
-		Size: 1.2 KB (1222 bytes)  
+	-	`sha256:0476df5a9b09e1b23f2d2d3db74cbbc07083f6d83e6678edc6299d22f6a9040d`  
+		Last Modified: Wed, 24 May 2017 23:22:10 GMT  
+		Size: 1.2 KB (1228 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `golang:windowsservercore`
 
 ```console
-$ docker pull golang@sha256:94946c232b3195bb024807f6646e015d1e88f4a5b32b65752370785bd6295f34
+$ docker pull golang@sha256:070d5ae011e52315a3a92528e75c61a6931baad4ec4525966e06740e6dce43e9
 ```
 
 -	Platforms:
@@ -2692,9 +2692,9 @@ $ docker pull golang@sha256:94946c232b3195bb024807f6646e015d1e88f4a5b32b65752370
 
 -	Docker Version: 1.12.2-cs2-ws-beta
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.4 GB (5368613106 bytes)**  
+-	Total Size: **5.4 GB (5368679492 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:85fe14c792fa706d29a98840b1515eb12e5e89731b0ec4a88a4af801db2fb870`
+-	Image ID: `sha256:1b648944b381b9d1f7c05ab2b6a8d1017880df5f9aa1e774d7a5d549c1b1c263`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -2719,11 +2719,11 @@ RUN Write-Host ('Downloading {0} ...' -f $env:GIT_DOWNLOAD_URL); 	Invoke-WebRequ
 ENV GOPATH=C:\gopath
 # Wed, 26 Apr 2017 19:33:08 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 23 May 2017 22:28:05 GMT
-ENV GOLANG_VERSION=1.8.2
-# Tue, 23 May 2017 22:30:58 GMT
-RUN $url = ('https://golang.org/dl/go{0}.windows-amd64.zip' -f $env:GOLANG_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '9bfa4d497caee1b7ec8720acdea2fa8af8d51b525ddc7e4648a63a3138a6a8e3'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Complete.';
-# Tue, 23 May 2017 22:31:01 GMT
+# Wed, 24 May 2017 23:16:09 GMT
+ENV GOLANG_VERSION=1.8.3
+# Wed, 24 May 2017 23:19:03 GMT
+RUN $url = ('https://golang.org/dl/go{0}.windows-amd64.zip' -f $env:GOLANG_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'de026caef4c5b4a74f359737dcb2d14c67ca45c45093755d3b0d2e0ee3aafd96'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Complete.';
+# Wed, 24 May 2017 23:19:07 GMT
 WORKDIR C:\gopath
 ```
 
@@ -2766,35 +2766,35 @@ WORKDIR C:\gopath
 		Last Modified: Wed, 26 Apr 2017 19:51:01 GMT  
 		Size: 4.7 MB (4664221 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:89c89d249bb051a191b48ec8c583d3073363175fc27b81d360247dd338701a9a`  
-		Last Modified: Tue, 23 May 2017 22:35:18 GMT  
+	-	`sha256:5b331d15aa621885c086c370b0acd3f098bb7061187021ec2f4042218deb2ff1`  
+		Last Modified: Wed, 24 May 2017 23:22:11 GMT  
 		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf74dbfb3af8c00078a8339e8ed96c9adb9a0510df4d17f6fe54e9c8b2e2af4e`  
-		Last Modified: Tue, 23 May 2017 22:35:37 GMT  
-		Size: 102.7 MB (102683365 bytes)  
+	-	`sha256:2c632a99d7492e69b58a43144c119720fdd94bb23e568ad093cb2a701c88a3d2`  
+		Last Modified: Wed, 24 May 2017 23:22:32 GMT  
+		Size: 102.7 MB (102749745 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f70024cccd78406343aaf0e2d3be8d6fc124cf17bb6c3dcf968f90c24f0ceb94`  
-		Last Modified: Tue, 23 May 2017 22:35:17 GMT  
-		Size: 1.2 KB (1222 bytes)  
+	-	`sha256:0476df5a9b09e1b23f2d2d3db74cbbc07083f6d83e6678edc6299d22f6a9040d`  
+		Last Modified: Wed, 24 May 2017 23:22:10 GMT  
+		Size: 1.2 KB (1228 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `golang:1.8.2-nanoserver`
+## `golang:1.8.3-nanoserver`
 
 ```console
-$ docker pull golang@sha256:6fecf9e6cae6d3d3b01ceb8856e53991ba25900d76c93fb3e4c93a355d9f3089
+$ docker pull golang@sha256:8ddbc93866dee49686255220fc0753d5cae182275491106c4523175f70d43288
 ```
 
 -	Platforms:
 	-	windows; amd64
 
-### `golang:1.8.2-nanoserver` - windows; amd64
+### `golang:1.8.3-nanoserver` - windows; amd64
 
 -	Docker Version: 1.12.2-cs2-ws-beta
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **466.2 MB (466155468 bytes)**  
+-	Total Size: **463.2 MB (463185928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:baeb042ef60f9250b4719ace7d9a8dcdcb6fbf56d4b77f43b5d849378763d9df`
+-	Image ID: `sha256:a03466d60814e410ff64bae86dfd788292906e46974f4b8fb91a0cab101834b2`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -2809,11 +2809,11 @@ SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference 
 ENV GOPATH=C:\gopath
 # Wed, 26 Apr 2017 19:38:59 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath;
-# Tue, 23 May 2017 22:31:03 GMT
-ENV GOLANG_VERSION=1.8.2
-# Tue, 23 May 2017 22:33:53 GMT
-RUN $url = ('https://golang.org/dl/go{0}.windows-amd64.zip' -f $env:GOLANG_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '9bfa4d497caee1b7ec8720acdea2fa8af8d51b525ddc7e4648a63a3138a6a8e3'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Complete.';
-# Tue, 23 May 2017 22:33:58 GMT
+# Wed, 24 May 2017 23:19:09 GMT
+ENV GOLANG_VERSION=1.8.3
+# Wed, 24 May 2017 23:21:50 GMT
+RUN $url = ('https://golang.org/dl/go{0}.windows-amd64.zip' -f $env:GOLANG_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'de026caef4c5b4a74f359737dcb2d14c67ca45c45093755d3b0d2e0ee3aafd96'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Complete.';
+# Wed, 24 May 2017 23:21:52 GMT
 WORKDIR C:\gopath
 ```
 
@@ -2836,23 +2836,23 @@ WORKDIR C:\gopath
 		Last Modified: Wed, 26 Apr 2017 19:51:37 GMT  
 		Size: 884.5 KB (884544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0a7b7b83fd2fd95e3b6d40098d4eb0fef683a4fc662722fbd30ef4adca2e8c7`  
-		Last Modified: Tue, 23 May 2017 22:35:53 GMT  
-		Size: 970.0 B  
+	-	`sha256:60e5465cb24caf28a4387aade1953646dbbf2a8712f595243180fba328bf884c`  
+		Last Modified: Wed, 24 May 2017 23:22:50 GMT  
+		Size: 952.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3757b4dbd4d3761aa10cff4bc3e0c783efa8651718727babd28052e9291d7dd`  
-		Last Modified: Tue, 23 May 2017 22:36:13 GMT  
-		Size: 96.5 MB (96538827 bytes)  
+	-	`sha256:61a6bc3f09958aa72bad9bf2fe1cefa30d60dd7429b89757c26e494d7a4f0253`  
+		Last Modified: Wed, 24 May 2017 23:23:08 GMT  
+		Size: 93.6 MB (93569310 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b95011e5e173c1941acc6bf5117e902febe6abbfedeaa29d3d6e7307c744bc65`  
-		Last Modified: Tue, 23 May 2017 22:35:53 GMT  
-		Size: 958.0 B  
+	-	`sha256:da88f4b7b43e6cf9947972b8bdb216e310996e2d8832e21f2c94432b3f9c7bab`  
+		Last Modified: Wed, 24 May 2017 23:22:50 GMT  
+		Size: 953.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `golang:1.8-nanoserver`
 
 ```console
-$ docker pull golang@sha256:6fecf9e6cae6d3d3b01ceb8856e53991ba25900d76c93fb3e4c93a355d9f3089
+$ docker pull golang@sha256:8ddbc93866dee49686255220fc0753d5cae182275491106c4523175f70d43288
 ```
 
 -	Platforms:
@@ -2862,9 +2862,9 @@ $ docker pull golang@sha256:6fecf9e6cae6d3d3b01ceb8856e53991ba25900d76c93fb3e4c9
 
 -	Docker Version: 1.12.2-cs2-ws-beta
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **466.2 MB (466155468 bytes)**  
+-	Total Size: **463.2 MB (463185928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:baeb042ef60f9250b4719ace7d9a8dcdcb6fbf56d4b77f43b5d849378763d9df`
+-	Image ID: `sha256:a03466d60814e410ff64bae86dfd788292906e46974f4b8fb91a0cab101834b2`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -2879,11 +2879,11 @@ SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference 
 ENV GOPATH=C:\gopath
 # Wed, 26 Apr 2017 19:38:59 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath;
-# Tue, 23 May 2017 22:31:03 GMT
-ENV GOLANG_VERSION=1.8.2
-# Tue, 23 May 2017 22:33:53 GMT
-RUN $url = ('https://golang.org/dl/go{0}.windows-amd64.zip' -f $env:GOLANG_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '9bfa4d497caee1b7ec8720acdea2fa8af8d51b525ddc7e4648a63a3138a6a8e3'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Complete.';
-# Tue, 23 May 2017 22:33:58 GMT
+# Wed, 24 May 2017 23:19:09 GMT
+ENV GOLANG_VERSION=1.8.3
+# Wed, 24 May 2017 23:21:50 GMT
+RUN $url = ('https://golang.org/dl/go{0}.windows-amd64.zip' -f $env:GOLANG_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'de026caef4c5b4a74f359737dcb2d14c67ca45c45093755d3b0d2e0ee3aafd96'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Complete.';
+# Wed, 24 May 2017 23:21:52 GMT
 WORKDIR C:\gopath
 ```
 
@@ -2906,23 +2906,23 @@ WORKDIR C:\gopath
 		Last Modified: Wed, 26 Apr 2017 19:51:37 GMT  
 		Size: 884.5 KB (884544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0a7b7b83fd2fd95e3b6d40098d4eb0fef683a4fc662722fbd30ef4adca2e8c7`  
-		Last Modified: Tue, 23 May 2017 22:35:53 GMT  
-		Size: 970.0 B  
+	-	`sha256:60e5465cb24caf28a4387aade1953646dbbf2a8712f595243180fba328bf884c`  
+		Last Modified: Wed, 24 May 2017 23:22:50 GMT  
+		Size: 952.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3757b4dbd4d3761aa10cff4bc3e0c783efa8651718727babd28052e9291d7dd`  
-		Last Modified: Tue, 23 May 2017 22:36:13 GMT  
-		Size: 96.5 MB (96538827 bytes)  
+	-	`sha256:61a6bc3f09958aa72bad9bf2fe1cefa30d60dd7429b89757c26e494d7a4f0253`  
+		Last Modified: Wed, 24 May 2017 23:23:08 GMT  
+		Size: 93.6 MB (93569310 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b95011e5e173c1941acc6bf5117e902febe6abbfedeaa29d3d6e7307c744bc65`  
-		Last Modified: Tue, 23 May 2017 22:35:53 GMT  
-		Size: 958.0 B  
+	-	`sha256:da88f4b7b43e6cf9947972b8bdb216e310996e2d8832e21f2c94432b3f9c7bab`  
+		Last Modified: Wed, 24 May 2017 23:22:50 GMT  
+		Size: 953.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `golang:1-nanoserver`
 
 ```console
-$ docker pull golang@sha256:6fecf9e6cae6d3d3b01ceb8856e53991ba25900d76c93fb3e4c93a355d9f3089
+$ docker pull golang@sha256:8ddbc93866dee49686255220fc0753d5cae182275491106c4523175f70d43288
 ```
 
 -	Platforms:
@@ -2932,9 +2932,9 @@ $ docker pull golang@sha256:6fecf9e6cae6d3d3b01ceb8856e53991ba25900d76c93fb3e4c9
 
 -	Docker Version: 1.12.2-cs2-ws-beta
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **466.2 MB (466155468 bytes)**  
+-	Total Size: **463.2 MB (463185928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:baeb042ef60f9250b4719ace7d9a8dcdcb6fbf56d4b77f43b5d849378763d9df`
+-	Image ID: `sha256:a03466d60814e410ff64bae86dfd788292906e46974f4b8fb91a0cab101834b2`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -2949,11 +2949,11 @@ SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference 
 ENV GOPATH=C:\gopath
 # Wed, 26 Apr 2017 19:38:59 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath;
-# Tue, 23 May 2017 22:31:03 GMT
-ENV GOLANG_VERSION=1.8.2
-# Tue, 23 May 2017 22:33:53 GMT
-RUN $url = ('https://golang.org/dl/go{0}.windows-amd64.zip' -f $env:GOLANG_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '9bfa4d497caee1b7ec8720acdea2fa8af8d51b525ddc7e4648a63a3138a6a8e3'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Complete.';
-# Tue, 23 May 2017 22:33:58 GMT
+# Wed, 24 May 2017 23:19:09 GMT
+ENV GOLANG_VERSION=1.8.3
+# Wed, 24 May 2017 23:21:50 GMT
+RUN $url = ('https://golang.org/dl/go{0}.windows-amd64.zip' -f $env:GOLANG_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'de026caef4c5b4a74f359737dcb2d14c67ca45c45093755d3b0d2e0ee3aafd96'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Complete.';
+# Wed, 24 May 2017 23:21:52 GMT
 WORKDIR C:\gopath
 ```
 
@@ -2976,23 +2976,23 @@ WORKDIR C:\gopath
 		Last Modified: Wed, 26 Apr 2017 19:51:37 GMT  
 		Size: 884.5 KB (884544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0a7b7b83fd2fd95e3b6d40098d4eb0fef683a4fc662722fbd30ef4adca2e8c7`  
-		Last Modified: Tue, 23 May 2017 22:35:53 GMT  
-		Size: 970.0 B  
+	-	`sha256:60e5465cb24caf28a4387aade1953646dbbf2a8712f595243180fba328bf884c`  
+		Last Modified: Wed, 24 May 2017 23:22:50 GMT  
+		Size: 952.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3757b4dbd4d3761aa10cff4bc3e0c783efa8651718727babd28052e9291d7dd`  
-		Last Modified: Tue, 23 May 2017 22:36:13 GMT  
-		Size: 96.5 MB (96538827 bytes)  
+	-	`sha256:61a6bc3f09958aa72bad9bf2fe1cefa30d60dd7429b89757c26e494d7a4f0253`  
+		Last Modified: Wed, 24 May 2017 23:23:08 GMT  
+		Size: 93.6 MB (93569310 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b95011e5e173c1941acc6bf5117e902febe6abbfedeaa29d3d6e7307c744bc65`  
-		Last Modified: Tue, 23 May 2017 22:35:53 GMT  
-		Size: 958.0 B  
+	-	`sha256:da88f4b7b43e6cf9947972b8bdb216e310996e2d8832e21f2c94432b3f9c7bab`  
+		Last Modified: Wed, 24 May 2017 23:22:50 GMT  
+		Size: 953.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `golang:nanoserver`
 
 ```console
-$ docker pull golang@sha256:6fecf9e6cae6d3d3b01ceb8856e53991ba25900d76c93fb3e4c93a355d9f3089
+$ docker pull golang@sha256:8ddbc93866dee49686255220fc0753d5cae182275491106c4523175f70d43288
 ```
 
 -	Platforms:
@@ -3002,9 +3002,9 @@ $ docker pull golang@sha256:6fecf9e6cae6d3d3b01ceb8856e53991ba25900d76c93fb3e4c9
 
 -	Docker Version: 1.12.2-cs2-ws-beta
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **466.2 MB (466155468 bytes)**  
+-	Total Size: **463.2 MB (463185928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:baeb042ef60f9250b4719ace7d9a8dcdcb6fbf56d4b77f43b5d849378763d9df`
+-	Image ID: `sha256:a03466d60814e410ff64bae86dfd788292906e46974f4b8fb91a0cab101834b2`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -3019,11 +3019,11 @@ SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference 
 ENV GOPATH=C:\gopath
 # Wed, 26 Apr 2017 19:38:59 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath;
-# Tue, 23 May 2017 22:31:03 GMT
-ENV GOLANG_VERSION=1.8.2
-# Tue, 23 May 2017 22:33:53 GMT
-RUN $url = ('https://golang.org/dl/go{0}.windows-amd64.zip' -f $env:GOLANG_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '9bfa4d497caee1b7ec8720acdea2fa8af8d51b525ddc7e4648a63a3138a6a8e3'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Complete.';
-# Tue, 23 May 2017 22:33:58 GMT
+# Wed, 24 May 2017 23:19:09 GMT
+ENV GOLANG_VERSION=1.8.3
+# Wed, 24 May 2017 23:21:50 GMT
+RUN $url = ('https://golang.org/dl/go{0}.windows-amd64.zip' -f $env:GOLANG_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = 'de026caef4c5b4a74f359737dcb2d14c67ca45c45093755d3b0d2e0ee3aafd96'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Complete.';
+# Wed, 24 May 2017 23:21:52 GMT
 WORKDIR C:\gopath
 ```
 
@@ -3046,15 +3046,15 @@ WORKDIR C:\gopath
 		Last Modified: Wed, 26 Apr 2017 19:51:37 GMT  
 		Size: 884.5 KB (884544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0a7b7b83fd2fd95e3b6d40098d4eb0fef683a4fc662722fbd30ef4adca2e8c7`  
-		Last Modified: Tue, 23 May 2017 22:35:53 GMT  
-		Size: 970.0 B  
+	-	`sha256:60e5465cb24caf28a4387aade1953646dbbf2a8712f595243180fba328bf884c`  
+		Last Modified: Wed, 24 May 2017 23:22:50 GMT  
+		Size: 952.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b3757b4dbd4d3761aa10cff4bc3e0c783efa8651718727babd28052e9291d7dd`  
-		Last Modified: Tue, 23 May 2017 22:36:13 GMT  
-		Size: 96.5 MB (96538827 bytes)  
+	-	`sha256:61a6bc3f09958aa72bad9bf2fe1cefa30d60dd7429b89757c26e494d7a4f0253`  
+		Last Modified: Wed, 24 May 2017 23:23:08 GMT  
+		Size: 93.6 MB (93569310 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b95011e5e173c1941acc6bf5117e902febe6abbfedeaa29d3d6e7307c744bc65`  
-		Last Modified: Tue, 23 May 2017 22:35:53 GMT  
-		Size: 958.0 B  
+	-	`sha256:da88f4b7b43e6cf9947972b8bdb216e310996e2d8832e21f2c94432b3f9c7bab`  
+		Last Modified: Wed, 24 May 2017 23:22:50 GMT  
+		Size: 953.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
