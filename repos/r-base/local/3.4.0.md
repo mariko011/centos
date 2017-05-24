@@ -198,19 +198,8 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bash=4.4-4
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4-4.dsc' bash_4.4-4.dsc 2251 SHA256:368f91e573ba31e006f6bb21309c96ae126ab192f717601627ecfb24cb68b6a0
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4.orig.tar.xz' bash_4.4.orig.tar.xz 4878580 SHA256:819ebb6a23799e9e4ca56ac579778c46902005bd5ade4f131ed293d9f77108e7
-'http://deb.debian.org/debian/pool/main/b/bash/bash_4.4-4.debian.tar.xz' bash_4.4-4.debian.tar.xz 64420 SHA256:2af25aacebdff530a81810cb4c4f9f9b8bf9c800c9b473ce81577fd58bce825c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/bash/4.4-4/
-- https://sources.debian.net/src/bash/4.4-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `binutils=2.28-4`
 
@@ -224,19 +213,8 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris binutils=2.28-4
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.28-4.dsc' binutils_2.28-4.dsc 4374 SHA256:1e4d84116469c89a7fbe9e5e21f2be703fe4173ec16f8a34449b727fb061d70d
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.28.orig.tar.gz' binutils_2.28.orig.tar.gz 37814356 SHA256:db29588b0214fa69baa1a9351122cd6d0f081f2e675e6ad2aefc316ddeaf327a
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.28-4.diff.gz' binutils_2.28-4.diff.gz 116329 SHA256:fc56919cd2bd9e5d8aec1046af092434d0ff042e1a8bf9defa76288f1b1b7ec5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/binutils/2.28-4/
-- https://sources.debian.net/src/binutils/2.28-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `boot=1.3-19-1`
 
@@ -971,19 +949,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp-6/copyright`, `/usr/share/doc/g++-6/
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.3.0-16
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-16.dsc' gcc-6_6.3.0-16.dsc 27145 SHA256:78670286b90a18b5e2e9fcc9178ea86869b925f6f14fdfb6679ca6a7ea99237a
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0.orig.tar.gz' gcc-6_6.3.0.orig.tar.gz 81587460 SHA256:04552f04baf6974fb7521191859fb54717385ad659afd822b2995b66ee4e4151
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.3.0-16.diff.gz' gcc-6_6.3.0-16.diff.gz 2002636 SHA256:107a7f463b2179924c0a92c23013a01e900da7dee060738c653b5e4d22f4eede
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-6/6.3.0-16/
-- https://sources.debian.net/src/gcc-6/6.3.0-16/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-defaults=1.168`
 
@@ -1206,10 +1173,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris graphite2=1.3.10-1
-'http://http.debian.net/debian/pool/main/g/graphite2/graphite2_1.3.10-1.dsc' graphite2_1.3.10-1.dsc 2147 SHA256:09cb1f55860690770011475b0a298698787d9e1dccdb532c40c8f56e08b452a0
-'http://http.debian.net/debian/pool/main/g/graphite2/graphite2_1.3.10.orig.tar.gz' graphite2_1.3.10.orig.tar.gz 3889647 SHA256:90fde3b2f9ea95d68ffb19278d07d9b8a7efa5ba0e413bebcea802ce05cda1ae
-'http://http.debian.net/debian/pool/main/g/graphite2/graphite2_1.3.10-1.debian.tar.xz' graphite2_1.3.10-1.debian.tar.xz 10376 SHA256:ac48155885b8d091b779f419f64cfb3be9cb1b2512b85e28baa172c3c561acc7
+'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.10-1.dsc' graphite2_1.3.10-1.dsc 2147 SHA256:09cb1f55860690770011475b0a298698787d9e1dccdb532c40c8f56e08b452a0
+'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.10.orig.tar.gz' graphite2_1.3.10.orig.tar.gz 3889647 SHA256:90fde3b2f9ea95d68ffb19278d07d9b8a7efa5ba0e413bebcea802ce05cda1ae
+'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.10-1.debian.tar.xz' graphite2_1.3.10-1.debian.tar.xz 10376 SHA256:ac48155885b8d091b779f419f64cfb3be9cb1b2512b85e28baa172c3c561acc7
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/graphite2/1.3.10-1/
+- https://sources.debian.net/src/graphite2/1.3.10-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.27-2`
 
@@ -2836,16 +2808,11 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssl=1.1.0e-1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e-1.dsc' openssl_1.1.0e-1.dsc 2583 SHA256:8d813e7a52b4732e0af7cf8cab1436ae7f00e012594c26c401c1eec0e82cfe64
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e.orig.tar.gz' openssl_1.1.0e.orig.tar.gz 5202247 SHA256:57be8618979d80c910728cfc99369bf97b2a1abd8f366ab6ebdee8975ad3874c
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e.orig.tar.gz.asc' openssl_1.1.0e.orig.tar.gz.asc 455 SHA256:05ab4b1019da59963890509ad9ff3142c72df0b3baf4a38043392aff99e6a13d
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e-1.debian.tar.xz' openssl_1.1.0e-1.debian.tar.xz 52864 SHA256:3063329a11696c03f3330991089d4c028c5b0a61ccc3e31e5189ca3b96cd5b3c
+'http://http.debian.net/debian/pool/main/o/openssl/openssl_1.1.0e-1.dsc' openssl_1.1.0e-1.dsc 2583 SHA256:8d813e7a52b4732e0af7cf8cab1436ae7f00e012594c26c401c1eec0e82cfe64
+'http://http.debian.net/debian/pool/main/o/openssl/openssl_1.1.0e.orig.tar.gz' openssl_1.1.0e.orig.tar.gz 5202247 SHA256:57be8618979d80c910728cfc99369bf97b2a1abd8f366ab6ebdee8975ad3874c
+'http://http.debian.net/debian/pool/main/o/openssl/openssl_1.1.0e.orig.tar.gz.asc' openssl_1.1.0e.orig.tar.gz.asc 455 SHA256:05ab4b1019da59963890509ad9ff3142c72df0b3baf4a38043392aff99e6a13d
+'http://http.debian.net/debian/pool/main/o/openssl/openssl_1.1.0e-1.debian.tar.xz' openssl_1.1.0e-1.debian.tar.xz 52864 SHA256:3063329a11696c03f3330991089d4c028c5b0a61ccc3e31e5189ca3b96cd5b3c
 ```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssl/1.1.0e-1/
-- https://sources.debian.net/src/openssl/1.1.0e-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.23.3-2`
 
@@ -3203,19 +3170,8 @@ Licenses: (parsed from: `/usr/share/doc/libreadline-dev/copyright`, `/usr/share/
 - `GFDL`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris readline=7.0-2
-'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0-2.dsc' readline_7.0-2.dsc 2538 SHA256:78d9b2eecc7f4b2bf55f0aeab67e2ae34824ab9421309bd92404ffaff37f9872
-'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0.orig.tar.gz' readline_7.0.orig.tar.gz 2910016 SHA256:750d437185286f40a369e1e4f4764eda932b9459b5ec9a731628393dd3d32334
-'http://deb.debian.org/debian/pool/main/r/readline/readline_7.0-2.debian.tar.xz' readline_7.0-2.debian.tar.xz 29072 SHA256:0380c193c6fc085e61ab6ad3eee7e1b8b441a7bf195014ddb32203bd749ea3f9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/readline/7.0-2/
-- https://sources.debian.net/src/readline/7.0-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `rmatrix=1.2-10-1`
 
@@ -3341,19 +3297,8 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.4-4
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.4-4.dsc' shadow_4.4-4.dsc 2262 SHA256:72ed4408feff4a90a9e9df3fa0d9a7469b064eb598935ff469d277a01294f20d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.4.orig.tar.gz' shadow_4.4.orig.tar.gz 3003036 SHA256:1323e7e932836e03dbfa441f7eeb349ede2c92d62b788ade0732411fd516be3d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.4-4.debian.tar.xz' shadow_4.4-4.debian.tar.xz 601652 SHA256:779126d9b41bb1cd616172086b38c82a2db2786be0b63368f3cd14b5b328feaf
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/shadow/1:4.4-4/
-- https://sources.debian.net/src/shadow/1:4.4-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `survival=2.41-3-2`
 
@@ -3507,19 +3452,8 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.7-6
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.7-6.dsc' tiff_4.0.7-6.dsc 2157 SHA256:6a43c50ac96a44c7627522d99689cdce75474777ec1f3d6c9af7db5b5d434f72
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.7.orig.tar.gz' tiff_4.0.7.orig.tar.gz 2076392 SHA256:9f43a2cfb9589e5cecaa66e16bf87f814c945f22df7ba600d63aac4632c4f019
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.7-6.debian.tar.xz' tiff_4.0.7-6.debian.tar.xz 29660 SHA256:9c9048c28205bdbeb5ba36c7a194d0cd604bd137c70961607bfc8a079be5fa31
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff/4.0.7-6/
-- https://sources.debian.net/src/tiff/4.0.7-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tk8.6=8.6.6-1`
 
