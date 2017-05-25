@@ -2201,14 +2201,8 @@ Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris isc-dhcp=4.2.4-7ubuntu12.8
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.8.dsc' isc-dhcp_4.2.4-7ubuntu12.8.dsc 2788 SHA256:9540d60625c3c78b5b2df94b65417314fe078a748202d7d2a0113206b46e61c7
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.8.debian.tar.xz' isc-dhcp_4.2.4-7ubuntu12.8.debian.tar.xz 108596 SHA256:d301a6a2c0a5944842ea4fcccb3e62b62e83d8644d0dcede618258f356717931
-```
 
 ### `dpkg` source package: `isl=0.12.2-1`
 
