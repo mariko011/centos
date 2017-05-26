@@ -425,18 +425,8 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.23
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.23.dsc' dpkg_1.18.23.dsc 2032 SHA256:5e2fe064fb36d95d6459d2e117df9b54618df5e58925db117b5dd0c74cba2ec4
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.23.tar.xz' dpkg_1.18.23.tar.xz 4516252 SHA256:cc08802a0cea2ccd0c10716bc71531ff9b9234dd454b83a59f71117a37f36923
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dpkg/1.18.23/
-- https://sources.debian.net/src/dpkg/1.18.23/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `e2fsprogs=1.43.4-2`
 
@@ -1210,19 +1200,8 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.4-4
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.4-4.dsc' shadow_4.4-4.dsc 2262 SHA256:72ed4408feff4a90a9e9df3fa0d9a7469b064eb598935ff469d277a01294f20d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.4.orig.tar.gz' shadow_4.4.orig.tar.gz 3003036 SHA256:1323e7e932836e03dbfa441f7eeb349ede2c92d62b788ade0732411fd516be3d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.4-4.debian.tar.xz' shadow_4.4-4.debian.tar.xz 601652 SHA256:779126d9b41bb1cd616172086b38c82a2db2786be0b63368f3cd14b5b328feaf
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/shadow/1:4.4-4/
-- https://sources.debian.net/src/shadow/1:4.4-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `systemd=232-22`
 
