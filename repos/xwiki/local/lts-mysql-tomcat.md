@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cc05380428ee2ad27e02e78d1ff9df5262a6fa4b9f2fb55fd7d0bae1c87e2318`
-- Created: `2017-05-17T01:47:58.439484089Z`
-- Virtual Size: ~ 1.17 Gb  
+- Image ID: `sha256:607189d513ad39c017e25d8e529249ee625ab13d819f0beada122b5c38e4fb8a`
+- Created: `2017-05-24T17:13:46.339285137Z`
+- Virtual Size: ~ 1.13 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -19,7 +19,7 @@
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
-  - `OPENSSL_VERSION=1.1.0e-1`
+  - `OPENSSL_VERSION=1.1.0e-2`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
   - `TOMCAT_VERSION=8.5.15`
@@ -1287,30 +1287,6 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/gcc-4.9/4.9.2-10/
 - https://sources.debian.net/src/gcc-4.9/4.9.2-10/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `gdbm=1.8.3-13.1`
-
-Binary Packages:
-
-- `libgdbm3:amd64=1.8.3-13.1`
-
-Licenses: (parsed from: `/usr/share/doc/libgdbm3/copyright`)
-
-- `GPL-2`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris gdbm=1.8.3-13.1
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3-13.1.dsc' gdbm_1.8.3-13.1.dsc 1830 SHA256:b1d8bef30edc491315c337930cbe2b61f44f55035adfc26ae945bab5ca57d5c9
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3.orig.tar.bz2' gdbm_1.8.3.orig.tar.bz2 172796 SHA256:1d5995b6e9e6be4ff62c8126d019f184a083dd8e6f75f6c74b9fe023b5b9440e
-'http://deb.debian.org/debian/pool/main/g/gdbm/gdbm_1.8.3-13.1.debian.tar.xz' gdbm_1.8.3-13.1.debian.tar.xz 14748 SHA256:251401e1f5210226f384e936b1b7ea1df40119a918d9f3dbf48b2e51d4df8983
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gdbm/1.8.3-13.1/
-- https://sources.debian.net/src/gdbm/1.8.3-13.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gdk-pixbuf=2.31.1-2+deb8u5`
 
@@ -4034,18 +4010,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/mpdecimal/2.4.1-1/
 - https://sources.debian.net/src/mpdecimal/2.4.1-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `mysql-connector-java=5.1.41-1~deb8u1`
+### `dpkg` source package: `mysql-connector-java=5.1.42-1~deb8u1`
 
 Binary Packages:
 
-- `libmysql-java=5.1.41-1~deb8u1`
+- `libmysql-java=5.1.42-1~deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysql-java/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-connector-java=5.1.42-1~deb8u1
+'http://security.debian.org/pool/updates/main/m/mysql-connector-java/mysql-connector-java_5.1.42-1~deb8u1.dsc' mysql-connector-java_5.1.42-1~deb8u1.dsc 2228 SHA256:b4278d24b44fe72a5c9a84d1c8b57a4b206fd9bf715cc463a46814072a0769da
+'http://security.debian.org/pool/updates/main/m/mysql-connector-java/mysql-connector-java_5.1.42.orig.tar.xz' mysql-connector-java_5.1.42.orig.tar.xz 1003108 SHA256:5fd905d915dd4c9624f424f42501152a19ce60ef028945fc4afc242cd2403006
+'http://security.debian.org/pool/updates/main/m/mysql-connector-java/mysql-connector-java_5.1.42-1~deb8u1.debian.tar.xz' mysql-connector-java_5.1.42-1~deb8u1.debian.tar.xz 11672 SHA256:48d1f2790b199da17fa818ebebf5af54c90d89b63820314cfc859915b5327220
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/mysql-connector-java/5.1.42-1~deb8u1/
+- https://sources.debian.net/src/mysql-connector-java/5.1.42-1~deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mythes=2:1.2.4-1`
 
@@ -4304,19 +4291,31 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/openssl/1.0.1t-1+deb8u6/
 - https://sources.debian.net/src/openssl/1.0.1t-1+deb8u6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openssl=1.1.0e-1`
+### `dpkg` source package: `openssl=1.1.0e-2`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.0e-1`
-- `openssl=1.1.0e-1`
+- `libssl1.1:amd64=1.1.0e-2`
+- `openssl=1.1.0e-2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.1.0e-2
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e-2.dsc' openssl_1.1.0e-2.dsc 2583 SHA256:15807d33dd7722ad3ba1c445cc40b158a5a62ba68e21131987317d89463335a9
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e.orig.tar.gz' openssl_1.1.0e.orig.tar.gz 5202247 SHA256:57be8618979d80c910728cfc99369bf97b2a1abd8f366ab6ebdee8975ad3874c
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e.orig.tar.gz.asc' openssl_1.1.0e.orig.tar.gz.asc 455 SHA256:05ab4b1019da59963890509ad9ff3142c72df0b3baf4a38043392aff99e6a13d
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e-2.debian.tar.xz' openssl_1.1.0e-2.debian.tar.xz 52936 SHA256:b28b9564646334ae1936db884cad465318bfce689f8abca933504830d677322a
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/openssl/1.1.0e-2/
+- https://sources.debian.net/src/openssl/1.1.0e-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `orc=1:0.4.22-1`
 
@@ -4478,11 +4477,9 @@ Likely also available for browsing at:
 
 Binary Packages:
 
-- `perl=5.20.2-3+deb8u6`
 - `perl-base=5.20.2-3+deb8u6`
-- `perl-modules=5.20.2-3+deb8u6`
 
-Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules/copyright`)
+Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
 - `Artistic`
 - `Artistic,`
