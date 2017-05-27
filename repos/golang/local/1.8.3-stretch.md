@@ -1,16 +1,16 @@
-# `golang:1.8.2-stretch`
+# `golang:1.8.3-stretch`
 
 ## Docker Metadata
 
-- Image ID: `sha256:18b8782ecaf24e5dcd19c63e83759585e25dd83adb75b113f6821ab7c1320bc9`
-- Created: `2017-05-23T22:21:33.923620656Z`
-- Virtual Size: ~ 696.69 Mb  
+- Image ID: `sha256:114e401681d410a5d172601aacdcca03fdc4a1794fcdcfb473b81ea5172a4a9b`
+- Created: `2017-05-24T23:18:14.629485219Z`
+- Virtual Size: ~ 696.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.8.2`
+  - `GOLANG_VERSION=1.8.3`
   - `GOPATH=/go`
 
 ## `dpkg` (`.deb`-based packages)
@@ -123,18 +123,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4.1
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.1.dsc' apt_1.4.1.dsc 2549 SHA256:946e911650698569a83aeb1bd4e30540c8c3746e3233c933b0408f9529044283
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.1.tar.xz' apt_1.4.1.tar.xz 2076052 SHA256:2e6ea2f948325594b202480bc8670cfaf65665d19a4c6ee0c60c160c0df77f29
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.4.1/
-- https://sources.debian.net/src/apt/1.4.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -525,18 +515,8 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.60
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.60.dsc' debconf_1.5.60.dsc 1996 SHA256:47dbe6eb5780359256e496ce873c4832452ebb41b870dd54d9f1a2e01624f276
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.60.tar.xz' debconf_1.5.60.tar.xz 570300 SHA256:883cec457dc939cd21ab7ecba1492c4b17aaa6259aabe7ca8bbfabeb0f31dccc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/debconf/1.5.60/
-- https://sources.debian.net/src/debconf/1.5.60/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `debian-archive-keyring=2014.3`
 
@@ -624,18 +604,8 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/libdpkg
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.23
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.23.dsc' dpkg_1.18.23.dsc 2032 SHA256:5e2fe064fb36d95d6459d2e117df9b54618df5e58925db117b5dd0c74cba2ec4
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.23.tar.xz' dpkg_1.18.23.tar.xz 4516252 SHA256:cc08802a0cea2ccd0c10716bc71531ff9b9234dd454b83a59f71117a37f36923
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dpkg/1.18.23/
-- https://sources.debian.net/src/dpkg/1.18.23/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `e2fsprogs=1.43.4-2`
 
