@@ -76,18 +76,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4.1
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.1.dsc' apt_1.4.1.dsc 2549 SHA256:946e911650698569a83aeb1bd4e30540c8c3746e3233c933b0408f9529044283
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.1.tar.xz' apt_1.4.1.tar.xz 2076052 SHA256:2e6ea2f948325594b202480bc8670cfaf65665d19a4c6ee0c60c160c0df77f29
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.4.1/
-- https://sources.debian.net/src/apt/1.4.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -570,18 +560,8 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.60
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.60.dsc' debconf_1.5.60.dsc 1996 SHA256:47dbe6eb5780359256e496ce873c4832452ebb41b870dd54d9f1a2e01624f276
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.60.tar.xz' debconf_1.5.60.tar.xz 570300 SHA256:883cec457dc939cd21ab7ecba1492c4b17aaa6259aabe7ca8bbfabeb0f31dccc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/debconf/1.5.60/
-- https://sources.debian.net/src/debconf/1.5.60/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `debian-archive-keyring=2014.3`
 
@@ -674,14 +654,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris dpkg=1.18.23
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.23.dsc' dpkg_1.18.23.dsc 2032 SHA256:5e2fe064fb36d95d6459d2e117df9b54618df5e58925db117b5dd0c74cba2ec4
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.23.tar.xz' dpkg_1.18.23.tar.xz 4516252 SHA256:cc08802a0cea2ccd0c10716bc71531ff9b9234dd454b83a59f71117a37f36923
+'http://http.debian.net/debian/pool/main/d/dpkg/dpkg_1.18.23.dsc' dpkg_1.18.23.dsc 2032 SHA256:5e2fe064fb36d95d6459d2e117df9b54618df5e58925db117b5dd0c74cba2ec4
+'http://http.debian.net/debian/pool/main/d/dpkg/dpkg_1.18.23.tar.xz' dpkg_1.18.23.tar.xz 4516252 SHA256:cc08802a0cea2ccd0c10716bc71531ff9b9234dd454b83a59f71117a37f36923
 ```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dpkg/1.18.23/
-- https://sources.debian.net/src/dpkg/1.18.23/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `e2fsprogs=1.43.4-2`
 
@@ -2804,15 +2779,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.0e-1
-'http://http.debian.net/debian/pool/main/o/openssl/openssl_1.1.0e-1.dsc' openssl_1.1.0e-1.dsc 2583 SHA256:8d813e7a52b4732e0af7cf8cab1436ae7f00e012594c26c401c1eec0e82cfe64
-'http://http.debian.net/debian/pool/main/o/openssl/openssl_1.1.0e.orig.tar.gz' openssl_1.1.0e.orig.tar.gz 5202247 SHA256:57be8618979d80c910728cfc99369bf97b2a1abd8f366ab6ebdee8975ad3874c
-'http://http.debian.net/debian/pool/main/o/openssl/openssl_1.1.0e.orig.tar.gz.asc' openssl_1.1.0e.orig.tar.gz.asc 455 SHA256:05ab4b1019da59963890509ad9ff3142c72df0b3baf4a38043392aff99e6a13d
-'http://http.debian.net/debian/pool/main/o/openssl/openssl_1.1.0e-1.debian.tar.xz' openssl_1.1.0e-1.debian.tar.xz 52864 SHA256:3063329a11696c03f3330991089d4c028c5b0a61ccc3e31e5189ca3b96cd5b3c
-```
 
 ### `dpkg` source package: `p11-kit=0.23.3-2`
 
@@ -3336,14 +3304,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=232-22
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_232-22.dsc' systemd_232-22.dsc 4769 SHA256:95eb761bb6ee2d33713b80b3c015099a111e3c2a711c8cce7c886142830a845d
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_232-22.debian.tar.xz' systemd_232-22.debian.tar.xz 197040 SHA256:420b598bb7487c5d3dde2126fae5f2c14f32c22643f238a57fb7efdf56cb4b3a
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 
