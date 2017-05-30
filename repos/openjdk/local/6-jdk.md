@@ -2128,19 +2128,8 @@ Licenses: (parsed from: `/usr/share/doc/libsndfile1/copyright`)
 
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libsndfile=1.0.25-9.1+deb7u1
-'http://security.debian.org/pool/updates/main/libs/libsndfile/libsndfile_1.0.25-9.1+deb7u1.dsc' libsndfile_1.0.25-9.1+deb7u1.dsc 2010 SHA256:15d3e717f0e9ee0f574df8c9c12a5f9d990efd37febbe36d8b7c088e9f55cba9
-'http://security.debian.org/pool/updates/main/libs/libsndfile/libsndfile_1.0.25.orig.tar.gz' libsndfile_1.0.25.orig.tar.gz 1060692 SHA256:59016dbd326abe7e2366ded5c344c853829bebfd1702ef26a07ef662d6aa4882
-'http://security.debian.org/pool/updates/main/libs/libsndfile/libsndfile_1.0.25-9.1+deb7u1.debian.tar.gz' libsndfile_1.0.25-9.1+deb7u1.debian.tar.gz 18274 SHA256:e7b83ff6f4609cc801ef77a1cf29ca10764e013bf05c28af009ee7ac3e414933
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libsndfile/1.0.25-9.1+deb7u1/
-- https://sources.debian.net/src/libsndfile/1.0.25-9.1+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libssh2=1.4.2-1.1+deb7u2`
 
