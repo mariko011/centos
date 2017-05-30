@@ -1663,14 +1663,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.7.7.10-6ubuntu3.6
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.7.7.10-6ubuntu3.6.dsc' imagemagick_6.7.7.10-6ubuntu3.6.dsc 3239 SHA256:4c1acabbde0d6c1bf790c863f3465fd6cd0ee8a945d03718275ed8254da230ea
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.7.7.10.orig.tar.bz2' imagemagick_6.7.7.10.orig.tar.bz2 10473522 SHA256:05fb23824b1c90ac35259715c94c65fb5cda6969eb597a7637762d8cf3998fda
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.7.7.10-6ubuntu3.6.debian.tar.bz2' imagemagick_6.7.7.10-6ubuntu3.6.debian.tar.bz2 222934 SHA256:93e6b76a9ddf2f4d9bbbea36feac9f4c184aef93b765bea7515c2dd33b178644
-```
 
 ### `dpkg` source package: `init-system-helpers=1.14ubuntu1`
 
@@ -4571,14 +4565,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sudo=1.8.9p5-1ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.3.dsc' sudo_1.8.9p5-1ubuntu1.3.dsc 2032 SHA256:629845f03bef3c3c2e886561e47b0ca7bbf366a5301f29170df10ee82a4a2855
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5.orig.tar.gz' sudo_1.8.9p5.orig.tar.gz 2179066 SHA256:bc9d5c96de5f8b4d2b014f87a37870aef60d2891c869202454069150a21a5c21
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.3.debian.tar.xz' sudo_1.8.9p5-1ubuntu1.3.debian.tar.xz 33260 SHA256:bae36c26cf8a5f171035b17087f06f23bd44b510273e9c7f1f54dfb147d67850
-```
 
 ### `dpkg` source package: `systemd=204-5ubuntu20.24`
 
@@ -4658,14 +4646,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.3-7ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.3-7ubuntu0.6.dsc' tiff_4.0.3-7ubuntu0.6.dsc 2296 SHA256:f5e7cb6ec7dad3b76ee4393da1c645434a670cefc593320fa1697741bb4126ca
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.3-7ubuntu0.6.debian.tar.gz' tiff_4.0.3-7ubuntu0.6.debian.tar.gz 61714 SHA256:3f2800d66bdce0cfb57f2df890083a823af6caeda9cbb277b615d1f23b5d8def
-```
 
 ### `dpkg` source package: `tzdata=2016j-0ubuntu0.14.04`
 

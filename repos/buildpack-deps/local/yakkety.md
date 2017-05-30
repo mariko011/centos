@@ -1650,14 +1650,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.8.9.9-7ubuntu8.5
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9-7ubuntu8.5.dsc' imagemagick_6.8.9.9-7ubuntu8.5.dsc 4304 SHA256:961f8b899e4aa747e04d85991b7e72b4464ed781669a2cfb34a8d5cb327ef880
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9.orig.tar.xz' imagemagick_6.8.9.9.orig.tar.xz 7891624 SHA256:a4cccc70179ff2c67550e063cdcb2e62907338ef3e68b45bb1c41931e515b3eb
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9-7ubuntu8.5.debian.tar.xz' imagemagick_6.8.9.9-7ubuntu8.5.debian.tar.xz 255880 SHA256:7257b499b026302c5d5808f49384d2c81251fd492554e086f6bc08b66e8ecddc
-```
 
 ### `dpkg` source package: `init-system-helpers=1.45`
 
@@ -3543,14 +3537,8 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `Tcl`
 - `almost exclusively BSD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.5=9.5.6-0ubuntu0.16.10
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.6-0ubuntu0.16.10.dsc' postgresql-9.5_9.5.6-0ubuntu0.16.10.dsc 3649 SHA256:12aebcffa698cc95cf3066d3ad8cfd38c03481a0c258d60cce79d1e4b660facd
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.6.orig.tar.bz2' postgresql-9.5_9.5.6.orig.tar.bz2 18598551 SHA256:bb9e5f6d34e20783e96e10c1d6c0c09c31749e802aaa46b793ce2522725ae12f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.6-0ubuntu0.16.10.debian.tar.xz' postgresql-9.5_9.5.6-0ubuntu0.16.10.debian.tar.xz 23128 SHA256:1d67d9cab844e5553a0cee25bce0061772dabba1b294bc7f2e20f55974a08072
-```
 
 ### `dpkg` source package: `procps=2:3.3.12-1ubuntu2`
 
@@ -3967,14 +3955,8 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`, `/usr/share/doc/lib
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.6-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6-2ubuntu0.1.dsc' tiff_4.0.6-2ubuntu0.1.dsc 2385 SHA256:47a978483f9cb92481f95cf5e1aa0f5b34e18e96f3edab0b695a33da4b7b9d56
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6.orig.tar.gz' tiff_4.0.6.orig.tar.gz 2192991 SHA256:4d57a50907b510e3049a4bba0d7888930fdfc16ce49f1bf693e5b6247370d68c
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6-2ubuntu0.1.debian.tar.xz' tiff_4.0.6-2ubuntu0.1.debian.tar.xz 36064 SHA256:72c88e746acb700392875a0e4c10d980e31cedd30fe745e2d54c75ab92559216
-```
 
 ### `dpkg` source package: `tzdata=2016j-0ubuntu0.16.10`
 
