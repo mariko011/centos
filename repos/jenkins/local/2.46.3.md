@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:681ef98a247f19c89a432aa6197950037a8f2cc5e51aedb0e4926130b4852402`
-- Created: `2017-05-16T21:56:00.548443786Z`
+- Image ID: `sha256:59b08e8f6e37951d7d3b95b7c29d4285dba579f7f3111204e85d99633d929985`
+- Created: `2017-05-26T14:32:03.008993033Z`
 - Virtual Size: ~ 704.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -19,7 +19,7 @@
   - `JENKINS_SLAVE_AGENT_PORT=50000`
   - `TINI_VERSION=0.14.0`
   - `TINI_SHA=6c41ec7d33e857d4779f14d9c74924cab0c7973485d2972419a3b7c7620ff5fd`
-  - `JENKINS_VERSION=2.46.2`
+  - `JENKINS_VERSION=2.46.3`
   - `JENKINS_UC=https://updates.jenkins.io`
   - `COPY_REFERENCE_FILE_LOG=/var/jenkins_home/copy_reference_file.log`
 
