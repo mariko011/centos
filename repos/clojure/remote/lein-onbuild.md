@@ -1,7 +1,7 @@
 ## `clojure:lein-onbuild`
 
 ```console
-$ docker pull clojure@sha256:0b4c1191fa385a086f54f95b6f2a21b098511a5d2ae02da2a38a6205d0be8f5a
+$ docker pull clojure@sha256:9e7b9ec57d4cbb6e265cf84494c6cd687b55a56535ea1cef79d3b8e3ea6c03d4
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull clojure@sha256:0b4c1191fa385a086f54f95b6f2a21b098511a5d2ae02da2a38
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **249.1 MB (249137167 bytes)**  
+-	Total Size: **252.5 MB (252478006 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4d7a91dd8340d2b69d92c5e4504f16d704e868f7eaa4f183afcd54c3494c9c72`
+-	Image ID: `sha256:d4dc499be7550a693c78abbe4f56e46ea6e1eab7159815102e379d7261b5b1b1`
 -	Default Command: `["lein","run"]`
 
 ```dockerfile
@@ -61,19 +61,19 @@ RUN mkdir -p $LEIN_INSTALL   && wget -q https://github.com/technomancy/leiningen
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
 # Tue, 16 May 2017 20:05:26 GMT
 ENV LEIN_ROOT=1
-# Tue, 16 May 2017 20:05:32 GMT
-RUN lein
-# Tue, 16 May 2017 20:06:14 GMT
+# Tue, 30 May 2017 17:00:05 GMT
+RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' > project.clj   && lein deps && rm project.clj
+# Tue, 30 May 2017 17:00:30 GMT
 MAINTAINER Kirillov Alexandr <kirillov@evrone.ru>
-# Tue, 16 May 2017 20:06:15 GMT
+# Tue, 30 May 2017 17:00:32 GMT
 WORKDIR /usr/src/app
-# Tue, 16 May 2017 20:06:17 GMT
+# Tue, 30 May 2017 17:00:32 GMT
 ONBUILD COPY project.clj /usr/src/app/
-# Tue, 16 May 2017 20:06:37 GMT
+# Tue, 30 May 2017 17:00:33 GMT
 ONBUILD RUN lein deps
-# Tue, 16 May 2017 20:06:38 GMT
+# Tue, 30 May 2017 17:00:34 GMT
 ONBUILD COPY . /usr/src/app
-# Tue, 16 May 2017 20:06:39 GMT
+# Tue, 30 May 2017 17:00:35 GMT
 CMD ["lein" "run"]
 ```
 
@@ -118,11 +118,11 @@ CMD ["lein" "run"]
 		Last Modified: Tue, 16 May 2017 20:08:53 GMT  
 		Size: 13.8 MB (13811223 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24d1a095fdca626b020da5b44229ae90a99f0f092e4e48e9fd3d8bd1b45f2dcf`  
-		Last Modified: Tue, 16 May 2017 20:08:52 GMT  
-		Size: 164.0 B  
+	-	`sha256:ceb5c1dd42b814fb387c78a4e33447d3783d703d5051b278a540ea3291e0edf9`  
+		Last Modified: Tue, 30 May 2017 17:03:09 GMT  
+		Size: 3.3 MB (3341000 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0fa1da297e05d6051f4747cdd5f40ba9cbda405bca7b02dc26a44bc5f9a0f77a`  
-		Last Modified: Tue, 16 May 2017 20:14:14 GMT  
-		Size: 123.0 B  
+	-	`sha256:1cd90555544b210fe0007ef47bceed34709033a3522811bfe09d6f413c8fb36a`  
+		Last Modified: Tue, 30 May 2017 17:04:43 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

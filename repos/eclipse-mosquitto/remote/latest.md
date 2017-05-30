@@ -1,7 +1,7 @@
 ## `eclipse-mosquitto:latest`
 
 ```console
-$ docker pull eclipse-mosquitto@sha256:b7e9e5e1480c7639adab2d366a92507246eb82a8d930d0a2687686e413178ed0
+$ docker pull eclipse-mosquitto@sha256:15491ef8e1d3b255d956682620beade92bcab30a89ff72bf353e885152630fad
 ```
 
 -	Platforms:
@@ -9,43 +9,43 @@ $ docker pull eclipse-mosquitto@sha256:b7e9e5e1480c7639adab2d366a92507246eb82a8d
 
 ### `eclipse-mosquitto:latest` - linux; amd64
 
--	Docker Version: 17.04.0-ce
+-	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 MB (2142681 bytes)**  
+-	Total Size: **2.1 MB (2142701 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e5c3b1ee2a59217f96ee0f199476d2a8ca1fd4ad8d3825b1112c47d146b64ad9`
+-	Image ID: `sha256:b5753184f322abaad8e0ecea111ab7324356b7802ab073928bcca3184fa26507`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["\/usr\/sbin\/mosquitto","-c","\/mosquitto\/config\/mosquitto.conf"]`
 
 ```dockerfile
-# Wed, 10 May 2017 16:38:16 GMT
-ADD file:63f63606d6e289eb607c90e31de81802258906712727e473a2898f0f1ae55bb5 in / 
-# Wed, 10 May 2017 16:38:17 GMT
+# Thu, 25 May 2017 23:32:38 GMT
+ADD file:df15515197b183747a0b7ccefd75973edc87fc7a5bce30fa10ae94e75928d25c in / 
+# Thu, 25 May 2017 23:32:38 GMT
 CMD ["/bin/sh"]
-# Wed, 10 May 2017 21:19:21 GMT
+# Tue, 30 May 2017 17:11:33 GMT
 MAINTAINER David Audet <david.audet@ca.com>
-# Wed, 10 May 2017 21:19:21 GMT
+# Tue, 30 May 2017 17:12:00 GMT
 LABEL Description=Eclipse Mosquitto MQTT Broker
-# Wed, 10 May 2017 21:19:24 GMT
+# Tue, 30 May 2017 17:12:27 GMT
 RUN apk --no-cache add mosquitto=1.4.10-r2 &&     mkdir -p /mosquitto/config /mosquitto/data /mosquitto/log &&     cp /etc/mosquitto/mosquitto.conf /mosquitto/config &&     chown -R mosquitto:mosquitto /mosquitto
-# Wed, 10 May 2017 21:19:25 GMT
+# Tue, 30 May 2017 17:12:51 GMT
 COPY file:837d39cfa86d29b54b50c161745633f730844caea976da0ece1641e4e4b122aa in / 
-# Wed, 10 May 2017 21:19:25 GMT
+# Tue, 30 May 2017 17:12:52 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Wed, 10 May 2017 21:19:26 GMT
+# Tue, 30 May 2017 17:12:54 GMT
 CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 ```
 
 -	Layers:
-	-	`sha256:cfc728c1c5584d8e0ae69368fc9c34d54d72651355573ba42554c2469a0a6299`  
-		Last Modified: Wed, 10 May 2017 16:41:01 GMT  
-		Size: 2.0 MB (1967906 bytes)  
+	-	`sha256:6f821164d5b7ec94868795c1fb8dc6fd7d1fe51e04f97a6cf3a487868f2f5d68`  
+		Last Modified: Thu, 25 May 2017 23:36:24 GMT  
+		Size: 2.0 MB (1967927 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17b3595ea52ebd3010b3debf260a215495dd39b6f5b2ae043090bbfe8620f1bd`  
-		Last Modified: Thu, 11 May 2017 15:30:40 GMT  
-		Size: 174.6 KB (174631 bytes)  
+	-	`sha256:2d11cec8b658eb49570fd4aa6bbf7a0c4d6f0fcdedfdfd08a92a9a14c78076dc`  
+		Last Modified: Tue, 30 May 2017 17:16:18 GMT  
+		Size: 174.6 KB (174629 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:66ee31c4c48c961bfc8bc06b161e95a4503babfcb08b49d66d134f97aeb1c7a5`  
-		Last Modified: Thu, 11 May 2017 15:30:40 GMT  
-		Size: 144.0 B  
+	-	`sha256:8a19f739dca7066e36d14f124cbbd8f313c605445d2ebf713e30fc4fc55690ad`  
+		Last Modified: Tue, 30 May 2017 17:16:18 GMT  
+		Size: 145.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

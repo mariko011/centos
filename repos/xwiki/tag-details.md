@@ -14,6 +14,7 @@
 -	[`xwiki:9`](#xwiki9)
 -	[`xwiki:9.3`](#xwiki93)
 -	[`xwiki:9.3.1`](#xwiki931)
+-	[`xwiki:9.4`](#xwiki94)
 -	[`xwiki:9-mysql-tomcat`](#xwiki9-mysql-tomcat)
 -	[`xwiki:stable-mysql-tomcat`](#xwikistable-mysql-tomcat)
 -	[`xwiki:stable-mysql`](#xwikistable-mysql)
@@ -27,6 +28,7 @@
 -	[`xwiki:9-postgres-tomcat`](#xwiki9-postgres-tomcat)
 -	[`xwiki:9.3-postgres-tomcat`](#xwiki93-postgres-tomcat)
 -	[`xwiki:9.3.1-postgres-tomcat`](#xwiki931-postgres-tomcat)
+-	[`xwiki:9.4-postgres-tomcat`](#xwiki94-postgres-tomcat)
 -	[`xwiki:stable-postgres-tomcat`](#xwikistable-postgres-tomcat)
 -	[`xwiki:stable-postgres`](#xwikistable-postgres)
 
@@ -2453,6 +2455,10 @@ CMD ["xwiki"]
 		Last Modified: Wed, 24 May 2017 17:41:23 GMT  
 		Size: 1.5 KB (1533 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `xwiki:9.4`
+
+**does not exist** (yet?)
 
 ## `xwiki:9-mysql-tomcat`
 
@@ -5079,6 +5085,10 @@ CMD ["xwiki"]
 		Last Modified: Wed, 24 May 2017 17:45:25 GMT  
 		Size: 1.5 KB (1535 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `xwiki:9.4-postgres-tomcat`
+
+**does not exist** (yet?)
 
 ## `xwiki:stable-postgres-tomcat`
 

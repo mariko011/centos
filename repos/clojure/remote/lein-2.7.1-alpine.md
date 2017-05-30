@@ -1,7 +1,7 @@
 ## `clojure:lein-2.7.1-alpine`
 
 ```console
-$ docker pull clojure@sha256:3e19d2b0e59325f630f43ddd88ee4715702d894ef3893f2d312d68e714c11e4b
+$ docker pull clojure@sha256:a908268013f3ea213324c966c5655e65f9aafd47a36f7a3f773b31ca8a52cc39
 ```
 
 -	Platforms:
@@ -9,11 +9,11 @@ $ docker pull clojure@sha256:3e19d2b0e59325f630f43ddd88ee4715702d894ef3893f2d312
 
 ### `clojure:lein-2.7.1-alpine` - linux; amd64
 
--	Docker Version: 17.04.0-ce
+-	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **92.5 MB (92464959 bytes)**  
+-	Total Size: **95.8 MB (95805787 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63df96dc382355784dd98c66f03c7f7e4c56beda25083b72f47709b879b1a953`
+-	Image ID: `sha256:c63849bd1abe0977e4c93820b1f7a3f924e948c5c8efb5d8b83970c192a61606`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -51,8 +51,8 @@ RUN mkdir -p $LEIN_INSTALL   && wget -q https://github.com/technomancy/leiningen
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/bin/
 # Thu, 11 May 2017 00:04:04 GMT
 ENV LEIN_ROOT=1
-# Thu, 11 May 2017 00:04:10 GMT
-RUN lein
+# Tue, 30 May 2017 17:01:09 GMT
+RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.8.0"]])' > project.clj   && lein deps && rm project.clj
 ```
 
 -	Layers:
@@ -76,7 +76,7 @@ RUN lein
 		Last Modified: Sat, 13 May 2017 15:08:10 GMT  
 		Size: 13.8 MB (13810868 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1cbf964559a42c513e5e5287ccd2b2d3fead5677ebb3023ac0e3c716884d5e6`  
-		Last Modified: Sat, 13 May 2017 15:08:09 GMT  
-		Size: 165.0 B  
+	-	`sha256:f029aebe2e5f07650a106cfd3f9f7c6ff560d1ae38bbf0f552dfe91e9a8c67b2`  
+		Last Modified: Tue, 30 May 2017 17:07:15 GMT  
+		Size: 3.3 MB (3340993 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
