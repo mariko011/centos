@@ -1,10 +1,10 @@
-# `rabbitmq:3.6.9-alpine`
+# `rabbitmq:3.6.10-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:241555f3f25af1497afe10d33a0f715b85cfe2149604a1d8ea588ddec833f544`
-- Created: `2017-05-10T22:57:08.095198911Z`
-- Virtual Size: ~ 37.52 Mb  
+- Image ID: `sha256:21ed5175ab454f8571644f3159e6d556ef89a080df4cdd794a9f706781897f9a`
+- Created: `2017-05-30T17:56:03.339465487Z`
+- Virtual Size: ~ 37.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -15,5 +15,5 @@
   - `RABBITMQ_SASL_LOGS=-`
   - `RABBITMQ_HOME=/opt/rabbitmq`
   - `GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA`
-  - `RABBITMQ_VERSION=3.6.9`
+  - `RABBITMQ_VERSION=3.6.10`
   - `HOME=/var/lib/rabbitmq`
