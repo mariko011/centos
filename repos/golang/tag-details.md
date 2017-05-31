@@ -10,6 +10,8 @@
 -	[`golang:1.7-wheezy`](#golang17-wheezy)
 -	[`golang:1.7.6-alpine`](#golang176-alpine)
 -	[`golang:1.7-alpine`](#golang17-alpine)
+-	[`golang:1.7.6-alpine3.6`](#golang176-alpine36)
+-	[`golang:1.7-alpine3.6`](#golang17-alpine36)
 -	[`golang:1.7.6-alpine3.5`](#golang176-alpine35)
 -	[`golang:1.7-alpine3.5`](#golang17-alpine35)
 -	[`golang:1.7.6-windowsservercore`](#golang176-windowsservercore)
@@ -32,6 +34,10 @@
 -	[`golang:1.8-alpine`](#golang18-alpine)
 -	[`golang:1-alpine`](#golang1-alpine)
 -	[`golang:alpine`](#golangalpine)
+-	[`golang:1.8.3-alpine3.6`](#golang183-alpine36)
+-	[`golang:1.8-alpine3.6`](#golang18-alpine36)
+-	[`golang:1-alpine3.6`](#golang1-alpine36)
+-	[`golang:alpine3.6`](#golangalpine36)
 -	[`golang:1.8.3-windowsservercore`](#golang183-windowsservercore)
 -	[`golang:1.8-windowsservercore`](#golang18-windowsservercore)
 -	[`golang:1-windowsservercore`](#golang1-windowsservercore)
@@ -660,6 +666,14 @@ COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /u
 		Last Modified: Tue, 30 May 2017 18:05:50 GMT  
 		Size: 1.3 KB (1349 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `golang:1.7.6-alpine3.6`
+
+**does not exist** (yet?)
+
+## `golang:1.7-alpine3.6`
+
+**does not exist** (yet?)
 
 ## `golang:1.7.6-alpine3.5`
 
@@ -2378,6 +2392,22 @@ COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /u
 		Last Modified: Tue, 30 May 2017 18:09:49 GMT  
 		Size: 1.4 KB (1350 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `golang:1.8.3-alpine3.6`
+
+**does not exist** (yet?)
+
+## `golang:1.8-alpine3.6`
+
+**does not exist** (yet?)
+
+## `golang:1-alpine3.6`
+
+**does not exist** (yet?)
+
+## `golang:alpine3.6`
+
+**does not exist** (yet?)
 
 ## `golang:1.8.3-windowsservercore`
 
