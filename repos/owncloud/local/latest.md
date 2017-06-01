@@ -1,10 +1,10 @@
-# `owncloud:9.1.5-apache`
+# `owncloud:9.1.6-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2327c8d596189621a7a6a2e4121be61b0d5f51f2384e005fc037918241f19ae7`
-- Created: `2017-05-13T04:36:48.504049672Z`
-- Virtual Size: ~ 571.75 Mb  
+- Image ID: `sha256:cf107c4272ca237b9dbe15788043d4748d742c75eaed09617a36f227d75ee42e`
+- Created: `2017-05-31T21:43:30.999649648Z`
+- Virtual Size: ~ 571.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -26,7 +26,7 @@
   - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.30.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805`
   - `PHP_MD5=68753955a8964ae49064c6424f81eb3e`
-  - `OWNCLOUD_VERSION=9.1.5`
+  - `OWNCLOUD_VERSION=9.1.6`
 
 ## `dpkg` (`.deb`-based packages)
 
