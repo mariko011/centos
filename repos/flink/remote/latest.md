@@ -1,7 +1,7 @@
 ## `flink:latest`
 
 ```console
-$ docker pull flink@sha256:34bc71961c23a81e5148a3bded4995e616615bc774b8a4a0bd0aa1898e867451
+$ docker pull flink@sha256:0d5a4c150d0dd13104732eac5414d82c704127fb7981877ccb5d759653bf38d1
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull flink@sha256:34bc71961c23a81e5148a3bded4995e616615bc774b8a4a0bd0aa
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.1 MB (256115680 bytes)**  
+-	Total Size: **275.3 MB (275288481 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4a29e8119d346d213d4e3a1f70650f27cb93f5e9e001335b540324287b5ca335`
+-	Image ID: `sha256:41198cf4b3427e9332dafc2d5b894c9ce529639c0363b059712e68656b6456de`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -52,31 +52,31 @@ ENV GOSU_VERSION=1.7
 RUN set -ex;   wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)";   wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc";   export GNUPGHOME="$(mktemp -d)";   gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4;   gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu;   rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc;   chmod +x /usr/local/bin/gosu;   gosu nobody true
 # Tue, 16 May 2017 20:36:36 GMT
 RUN set -ex;   apt-get update;   apt-get -y install libsnappy1;   rm -rf /var/lib/apt/lists/*
-# Tue, 16 May 2017 20:51:41 GMT
-ENV FLINK_VERSION=1.2.1 HADOOP_VERSION=27 SCALA_VERSION=2.11
-# Tue, 16 May 2017 20:51:42 GMT
+# Thu, 01 Jun 2017 19:13:56 GMT
+ENV FLINK_VERSION=1.3.0 HADOOP_VERSION=27 SCALA_VERSION=2.11
+# Thu, 01 Jun 2017 19:13:56 GMT
 ENV FLINK_HOME=/opt/flink
-# Tue, 16 May 2017 20:51:43 GMT
+# Thu, 01 Jun 2017 19:13:57 GMT
 ENV PATH=/opt/flink/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 16 May 2017 20:51:44 GMT
+# Thu, 01 Jun 2017 19:13:59 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink
-# Tue, 16 May 2017 20:51:45 GMT
+# Thu, 01 Jun 2017 19:14:00 GMT
 WORKDIR /opt/flink
-# Tue, 16 May 2017 20:51:46 GMT
-ENV FLINK_URL_FILE_PATH=flink/flink-1.2.1/flink-1.2.1-bin-hadoop27-scala_2.11.tgz
-# Tue, 16 May 2017 20:51:46 GMT
-ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.2.1/flink-1.2.1-bin-hadoop27-scala_2.11.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.2.1/flink-1.2.1-bin-hadoop27-scala_2.11.tgz.asc
-# Tue, 16 May 2017 20:51:48 GMT
+# Thu, 01 Jun 2017 19:14:00 GMT
+ENV FLINK_URL_FILE_PATH=flink/flink-1.3.0/flink-1.3.0-bin-hadoop27-scala_2.11.tgz
+# Thu, 01 Jun 2017 19:14:01 GMT
+ENV FLINK_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=flink/flink-1.3.0/flink-1.3.0-bin-hadoop27-scala_2.11.tgz FLINK_ASC_URL=https://www.apache.org/dist/flink/flink-1.3.0/flink-1.3.0-bin-hadoop27-scala_2.11.tgz.asc
+# Thu, 01 Jun 2017 19:14:02 GMT
 COPY file:22c552c887979c8fbaa961276686f26badf8e846cdc00b8410c37479ebfa98ec in /KEYS 
-# Tue, 16 May 2017 20:55:57 GMT
+# Thu, 01 Jun 2017 19:14:22 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";   wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";   gpg --import /KEYS;   gpg --batch --verify flink.tgz.asc flink.tgz;   rm -r "$GNUPGHOME" flink.tgz.asc;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;
-# Tue, 16 May 2017 20:55:58 GMT
+# Thu, 01 Jun 2017 19:14:23 GMT
 COPY file:fe1fb6d5958f8d4352415a749ef7bd4569e1b11eec1c10c18e9e296765c72a61 in / 
-# Tue, 16 May 2017 20:55:58 GMT
+# Thu, 01 Jun 2017 19:14:24 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 16 May 2017 20:55:59 GMT
+# Thu, 01 Jun 2017 19:14:25 GMT
 EXPOSE 6123/tcp 8081/tcp
-# Tue, 16 May 2017 20:56:00 GMT
+# Thu, 01 Jun 2017 19:14:25 GMT
 CMD ["help"]
 ```
 
@@ -121,23 +121,23 @@ CMD ["help"]
 		Last Modified: Tue, 16 May 2017 20:56:26 GMT  
 		Size: 153.8 KB (153833 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d932c1b3f8faea4da7c52b46858391470529ce152e8c1956aeb124985b0a2046`  
-		Last Modified: Tue, 16 May 2017 21:05:35 GMT  
-		Size: 5.0 KB (4974 bytes)  
+	-	`sha256:7ca3b603166644beadde1966a586d210688bdc3aa340c52f9c86db9b9212b64d`  
+		Last Modified: Thu, 01 Jun 2017 19:33:23 GMT  
+		Size: 5.0 KB (4978 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90de940cc75eedd0c2cd26b53ff8951212811ee385b4c969c022e0da76a3abde`  
-		Last Modified: Tue, 16 May 2017 21:05:35 GMT  
+	-	`sha256:e768361a1ab27b2f3c94c3be23ef277c0f8da0aedaaf89125333185a7a02e0ec`  
+		Last Modified: Thu, 01 Jun 2017 19:33:23 GMT  
 		Size: 114.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52d8212bddab87ca175529c01609a7772f4f30269f144aa317f1546acb4a5879`  
-		Last Modified: Tue, 16 May 2017 21:05:35 GMT  
-		Size: 48.8 KB (48849 bytes)  
+	-	`sha256:88d1b88206cf5e655bf565dc22448c63ed0f79ac9f1b4994740c5dd65d021d5c`  
+		Last Modified: Thu, 01 Jun 2017 19:33:23 GMT  
+		Size: 48.9 KB (48851 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ee8f9e2be8b98b6f7b21fdf42d23fd6fc3f3c470e9431c718003a6fd9b96782`  
-		Last Modified: Tue, 16 May 2017 21:05:43 GMT  
-		Size: 128.3 MB (128294005 bytes)  
+	-	`sha256:650e92b6961793752353504173e2b3606816c8d299163c0ba83c5713ae684b9b`  
+		Last Modified: Thu, 01 Jun 2017 19:33:38 GMT  
+		Size: 147.5 MB (147466800 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c0681c1b416a7a35aabf9e4043633cbee9ab470b9ad2b60b7c416ddb0003cfd`  
-		Last Modified: Tue, 16 May 2017 21:05:35 GMT  
+	-	`sha256:bb6056973751d67b1afa0b557615c62d7c09591d83b57d292bcd710addb320eb`  
+		Last Modified: Thu, 01 Jun 2017 19:33:23 GMT  
 		Size: 1.1 KB (1087 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
