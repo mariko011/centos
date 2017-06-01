@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c1551b00bf4ad5b8d333bd6bf69abf7f1544bc4a6492934c50908783f34fe3bb`
-- Created: `2017-05-15T21:11:06.719288056Z`
+- Image ID: `sha256:098693505d5dda6b939ebfaeb868c568b3757655f81801d7342b92ed91afe934`
+- Created: `2017-05-30T17:25:40.795385799Z`
 - Virtual Size: ~ 354.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.7`
   - `GPG_KEYS=430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
   - `PERCONA_MAJOR=5.7`
-  - `PERCONA_VERSION=5.7.18-14-1.jessie`
+  - `PERCONA_VERSION=5.7.18-15-1.jessie`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1823,13 +1823,13 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/pcre3/2:8.35-3.3+deb8u4/
 - https://sources.debian.net/src/pcre3/2:8.35-3.3+deb8u4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `percona-server-5.7=5.7.18-14-1.jessie`
+### `dpkg` source package: `percona-server-5.7=5.7.18-15-1.jessie`
 
 Binary Packages:
 
-- `percona-server-client-5.7=5.7.18-14-1.jessie`
-- `percona-server-common-5.7=5.7.18-14-1.jessie`
-- `percona-server-server-5.7=5.7.18-14-1.jessie`
+- `percona-server-client-5.7=5.7.18-15-1.jessie`
+- `percona-server-common-5.7=5.7.18-15-1.jessie`
+- `percona-server-server-5.7=5.7.18-15-1.jessie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
