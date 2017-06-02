@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1f8e38c089cef79e66be0cc20d94091ac904b9aab12af901e0a815328a0df768`
-- Created: `2017-05-15T17:31:23.469800598Z`
-- Virtual Size: ~ 743.60 Mb  
+- Image ID: `sha256:d1bdf72335dad4514dffca1ba56696dfc751a9c1111b2e4a4eb107fb62c5de24`
+- Created: `2017-06-02T17:19:39.911539611Z`
+- Virtual Size: ~ 743.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -338,11 +338,11 @@ $ apt-get source -qq --print-uris base-passwd=3.5.40
 'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.5.40.tar.xz' base-passwd_3.5.40.tar.xz 52244 SHA256:834e0b23186d90339c1dfa91366906ce6a327d1d31cce925b53e745b7cb44f55
 ```
 
-### `dpkg` source package: `bash=4.3-15ubuntu1`
+### `dpkg` source package: `bash=4.3-15ubuntu1.1`
 
 Binary Packages:
 
-- `bash=4.3-15ubuntu1`
+- `bash=4.3-15ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
@@ -351,10 +351,10 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris bash=4.3-15ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-15ubuntu1.dsc' bash_4.3-15ubuntu1.dsc 2301 SHA256:7f41fe3891b5ab37a19ff77ef09fa94e3c0d9dee439830dd73b9ee12cd0909e1
+$ apt-get source -qq --print-uris bash=4.3-15ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-15ubuntu1.1.dsc' bash_4.3-15ubuntu1.1.dsc 2309 SHA256:abc2ce936c3e6dfffa3afc04db86b0e081bb2fb6f6d84054f61e316e19ee08f6
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3.orig.tar.gz' bash_4.3.orig.tar.gz 7516231 SHA256:b2fe79ddf9e7abdb4695e3070afa866d2a94a58d1cc9d731585330c753815491
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-15ubuntu1.debian.tar.xz' bash_4.3-15ubuntu1.debian.tar.xz 91672 SHA256:bd3756b598cc9171959f394cd857ab8fb28766cc90dc756808ccea1b93809fd7
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-15ubuntu1.1.debian.tar.xz' bash_4.3-15ubuntu1.1.debian.tar.xz 93292 SHA256:de8f60372d428f6ba55528b11062b6d4a00fa2de11be8fbce788d24c52ebecb8
 ```
 
 ### `dpkg` source package: `binutils=2.27-8ubuntu2`
@@ -1616,23 +1616,23 @@ $ apt-get source -qq --print-uris ilmbase=2.2.0-11ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/i/ilmbase/ilmbase_2.2.0-11ubuntu2.debian.tar.xz' ilmbase_2.2.0-11ubuntu2.debian.tar.xz 13400 SHA256:400b77a32f7a04d78ff0462f32dc1e4073f5e1225ed070c63fa6a0ec619905c5
 ```
 
-### `dpkg` source package: `imagemagick=8:6.8.9.9-7ubuntu8.5`
+### `dpkg` source package: `imagemagick=8:6.8.9.9-7ubuntu8.6`
 
 Binary Packages:
 
-- `imagemagick=8:6.8.9.9-7ubuntu8.5`
-- `imagemagick-6.q16=8:6.8.9.9-7ubuntu8.5`
-- `imagemagick-common=8:6.8.9.9-7ubuntu8.5`
-- `libmagickcore-6-arch-config:amd64=8:6.8.9.9-7ubuntu8.5`
-- `libmagickcore-6-headers=8:6.8.9.9-7ubuntu8.5`
-- `libmagickcore-6.q16-2:amd64=8:6.8.9.9-7ubuntu8.5`
-- `libmagickcore-6.q16-2-extra:amd64=8:6.8.9.9-7ubuntu8.5`
-- `libmagickcore-6.q16-dev:amd64=8:6.8.9.9-7ubuntu8.5`
-- `libmagickcore-dev=8:6.8.9.9-7ubuntu8.5`
-- `libmagickwand-6-headers=8:6.8.9.9-7ubuntu8.5`
-- `libmagickwand-6.q16-2:amd64=8:6.8.9.9-7ubuntu8.5`
-- `libmagickwand-6.q16-dev:amd64=8:6.8.9.9-7ubuntu8.5`
-- `libmagickwand-dev=8:6.8.9.9-7ubuntu8.5`
+- `imagemagick=8:6.8.9.9-7ubuntu8.6`
+- `imagemagick-6.q16=8:6.8.9.9-7ubuntu8.6`
+- `imagemagick-common=8:6.8.9.9-7ubuntu8.6`
+- `libmagickcore-6-arch-config:amd64=8:6.8.9.9-7ubuntu8.6`
+- `libmagickcore-6-headers=8:6.8.9.9-7ubuntu8.6`
+- `libmagickcore-6.q16-2:amd64=8:6.8.9.9-7ubuntu8.6`
+- `libmagickcore-6.q16-2-extra:amd64=8:6.8.9.9-7ubuntu8.6`
+- `libmagickcore-6.q16-dev:amd64=8:6.8.9.9-7ubuntu8.6`
+- `libmagickcore-dev=8:6.8.9.9-7ubuntu8.6`
+- `libmagickwand-6-headers=8:6.8.9.9-7ubuntu8.6`
+- `libmagickwand-6.q16-2:amd64=8:6.8.9.9-7ubuntu8.6`
+- `libmagickwand-6.q16-dev:amd64=8:6.8.9.9-7ubuntu8.6`
+- `libmagickwand-dev=8:6.8.9.9-7ubuntu8.6`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/imagemagick-common/copyright`, `/usr/share/doc/libmagickcore-6-arch-config/copyright`, `/usr/share/doc/libmagickcore-6-headers/copyright`, `/usr/share/doc/libmagickcore-6.q16-2/copyright`, `/usr/share/doc/libmagickcore-6.q16-2-extra/copyright`, `/usr/share/doc/libmagickcore-6.q16-dev/copyright`, `/usr/share/doc/libmagickcore-dev/copyright`, `/usr/share/doc/libmagickwand-6-headers/copyright`, `/usr/share/doc/libmagickwand-6.q16-2/copyright`, `/usr/share/doc/libmagickwand-6.q16-dev/copyright`, `/usr/share/doc/libmagickwand-dev/copyright`)
 
@@ -1650,8 +1650,14 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris imagemagick=8:6.8.9.9-7ubuntu8.6
+'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9-7ubuntu8.6.dsc' imagemagick_6.8.9.9-7ubuntu8.6.dsc 4304 SHA256:6579ef06977133aa7b0617981d5fe0a81e1258a98901ad88fada84a245b1d01a
+'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9.orig.tar.xz' imagemagick_6.8.9.9.orig.tar.xz 7891624 SHA256:a4cccc70179ff2c67550e063cdcb2e62907338ef3e68b45bb1c41931e515b3eb
+'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9-7ubuntu8.6.debian.tar.xz' imagemagick_6.8.9.9-7ubuntu8.6.debian.tar.xz 268520 SHA256:992a3a99b991a5b10a078e5be95416a98ae880020f708b630a4cc27908c85273
+```
 
 ### `dpkg` source package: `init-system-helpers=1.45`
 
@@ -2881,18 +2887,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
 ```
 
-### `dpkg` source package: `linux=4.8.0-51.54`
+### `dpkg` source package: `linux=4.8.0-53.56`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.8.0-51.54`
+- `linux-libc-dev:amd64=4.8.0-53.56`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.8.0-53.56
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0-53.56.dsc' linux_4.8.0-53.56.dsc 8434 SHA256:e50ac3617b5df5680f5dbdfdefc94e7df2a723578ac4c978b05334e2e91ac1c3
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0.orig.tar.gz' linux_4.8.0.orig.tar.gz 139977270 SHA256:80229497a1584076d534e96acf529a01a0fc00044eba9e6c00ae936e453dbd3c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0-53.56.diff.gz' linux_4.8.0-53.56.diff.gz 9816886 SHA256:f598ff86a9e7690d1951b57d70b46fe669ff831479a284d7f4ac52769c5b62cb
+```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu5`
 
@@ -3242,11 +3254,11 @@ $ apt-get source -qq --print-uris openexr=2.2.0-11ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openexr/openexr_2.2.0-11ubuntu1.debian.tar.xz' openexr_2.2.0-11ubuntu1.debian.tar.xz 16748 SHA256:41bb5055d5562095bda7f5477830475d4bcdab4f13388590fd267f811b0e4be3
 ```
 
-### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu4`
+### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu4.1`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.42+dfsg-2ubuntu4`
+- `libldap-2.4-2:amd64=2.4.42+dfsg-2ubuntu4.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3255,10 +3267,10 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu4.dsc' openldap_2.4.42+dfsg-2ubuntu4.dsc 3032 SHA256:2e23631b5c494126be5c940fa36dfb9087595e134046c9ea171212a141ef2430
+$ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2ubuntu4.1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu4.1.dsc' openldap_2.4.42+dfsg-2ubuntu4.1.dsc 3040 SHA256:69bf8f86f14e215272b633603be3272b4c789a08587b9bca67f060ee4a8c49e7
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg.orig.tar.gz' openldap_2.4.42+dfsg.orig.tar.gz 4813173 SHA256:5f56e4e3584f7a4b4c8437a2c985b2f519836946be77ef1aa43a5d20c02ea97b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu4.debian.tar.xz' openldap_2.4.42+dfsg-2ubuntu4.debian.tar.xz 176500 SHA256:3a8f5ba384756273db657f4ddfa4ad92a066f66eb3c24d6498dba50931f915c6
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu4.1.debian.tar.xz' openldap_2.4.42+dfsg-2ubuntu4.1.debian.tar.xz 176964 SHA256:99aa3b2890d5922e0a765ed8e83a481ddc7eb25d89bd4a5407638202c35d51ac
 ```
 
 ### `dpkg` source package: `openssh=1:7.3p1-1ubuntu0.1`
@@ -3521,12 +3533,12 @@ $ apt-get source -qq --print-uris pkg-config=0.29.1-0ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pkg-config/pkg-config_0.29.1-0ubuntu1.diff.gz' pkg-config_0.29.1-0ubuntu1.diff.gz 12597 SHA256:1c44aeeec1896a69f21861e9b9e18bb783258d57f4bd678b173b3890f1a209bf
 ```
 
-### `dpkg` source package: `postgresql-9.5=9.5.6-0ubuntu0.16.10`
+### `dpkg` source package: `postgresql-9.5=9.5.7-0ubuntu0.16.10`
 
 Binary Packages:
 
-- `libpq-dev=9.5.6-0ubuntu0.16.10`
-- `libpq5:amd64=9.5.6-0ubuntu0.16.10`
+- `libpq-dev=9.5.7-0ubuntu0.16.10`
+- `libpq5:amd64=9.5.7-0ubuntu0.16.10`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -3537,8 +3549,14 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `Tcl`
 - `almost exclusively BSD`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-9.5=9.5.7-0ubuntu0.16.10
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.7-0ubuntu0.16.10.dsc' postgresql-9.5_9.5.7-0ubuntu0.16.10.dsc 3649 SHA256:dea00d81ffd79672ed89ee45bd852aca9dade944f0a891e9892bfb9c56766464
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.7.orig.tar.bz2' postgresql-9.5_9.5.7.orig.tar.bz2 18639775 SHA256:8b1e936f82109325decc0f5575e846b93fb4fd384e8c4bde83ff5e7f87fc6cad
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.7-0ubuntu0.16.10.debian.tar.xz' postgresql-9.5_9.5.7-0ubuntu0.16.10.debian.tar.xz 23364 SHA256:400b0b69d9bc3a5425f170efd766d56308a5245af8dddacb2bf3c77c71b9ba76
+```
 
 ### `dpkg` source package: `procps=2:3.3.12-1ubuntu2`
 
@@ -3781,19 +3799,25 @@ Licenses: (parsed from: `/usr/share/doc/libserf-1-1/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `shadow=1:4.2-3.2ubuntu1.16.10.1`
+### `dpkg` source package: `shadow=1:4.2-3.2ubuntu1.16.10.2`
 
 Binary Packages:
 
-- `login=1:4.2-3.2ubuntu1.16.10.1`
-- `passwd=1:4.2-3.2ubuntu1.16.10.1`
+- `login=1:4.2-3.2ubuntu1.16.10.2`
+- `passwd=1:4.2-3.2ubuntu1.16.10.2`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris shadow=1:4.2-3.2ubuntu1.16.10.2
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu1.16.10.2.dsc' shadow_4.2-3.2ubuntu1.16.10.2.dsc 2112 SHA256:67a09e00e89a1e017624080ebb796c705a408be0114c06bb448ef3e415c42d97
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu1.16.10.2.debian.tar.xz' shadow_4.2-3.2ubuntu1.16.10.2.debian.tar.xz 506372 SHA256:35a2f0d89c4a75c38c846cb84db3b7505fd7a2d7421f228f72d1294959f8985d
+```
 
 ### `dpkg` source package: `shared-mime-info=1.7-1`
 
@@ -3943,20 +3967,26 @@ $ apt-get source -qq --print-uris tar=1.29b-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.29b-1ubuntu0.1.debian.tar.xz' tar_1.29b-1ubuntu0.1.debian.tar.xz 28628 SHA256:da626432a395ab6bf8ec62b6c3f7f1202f6d7c5a8c7309ba2df7f3b488fead43
 ```
 
-### `dpkg` source package: `tiff=4.0.6-2ubuntu0.1`
+### `dpkg` source package: `tiff=4.0.6-2ubuntu0.2`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.0.6-2ubuntu0.1`
-- `libtiff5-dev:amd64=4.0.6-2ubuntu0.1`
-- `libtiffxx5:amd64=4.0.6-2ubuntu0.1`
+- `libtiff5:amd64=4.0.6-2ubuntu0.2`
+- `libtiff5-dev:amd64=4.0.6-2ubuntu0.2`
+- `libtiffxx5:amd64=4.0.6-2ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`, `/usr/share/doc/libtiff5-dev/copyright`, `/usr/share/doc/libtiffxx5/copyright`)
 
 - `Hylafax`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff=4.0.6-2ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6-2ubuntu0.2.dsc' tiff_4.0.6-2ubuntu0.2.dsc 2385 SHA256:fcbb1f9baacd984f5804dd661e8e5b744ad64f8ad405d9a272cad73ec5eadafa
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6.orig.tar.gz' tiff_4.0.6.orig.tar.gz 2192991 SHA256:4d57a50907b510e3049a4bba0d7888930fdfc16ce49f1bf693e5b6247370d68c
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.6-2ubuntu0.2.debian.tar.xz' tiff_4.0.6-2ubuntu0.2.debian.tar.xz 35784 SHA256:51f0689c81113fb439821030d0a90a054ba51f12733c4e91fbce90f23078233b
+```
 
 ### `dpkg` source package: `tzdata=2016j-0ubuntu0.16.10`
 

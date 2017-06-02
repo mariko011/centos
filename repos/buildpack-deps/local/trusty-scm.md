@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6275459e664a074053e66fa22d7ae5fc7d81d9b02b93792f890cf6db086b0085`
-- Created: `2017-05-15T17:05:46.558586643Z`
-- Virtual Size: ~ 279.65 Mb  
+- Image ID: `sha256:ce71de6e2c31ae7bb511345d583ddb6aeaf6ce8e3189d37bb6c9f0274ee29e21`
+- Created: `2017-06-02T17:09:06.590885473Z`
+- Virtual Size: ~ 279.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -189,18 +189,24 @@ $ apt-get source -qq --print-uris base-passwd=3.5.33
 'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.5.33.tar.xz' base-passwd_3.5.33.tar.xz 48832 SHA256:da505760962eb27477f1854f9f818284043cf6cea703b2301a00b8d0ed8303bb
 ```
 
-### `dpkg` source package: `bash=4.3-7ubuntu1.6`
+### `dpkg` source package: `bash=4.3-7ubuntu1.7`
 
 Binary Packages:
 
-- `bash=4.3-7ubuntu1.6`
+- `bash=4.3-7ubuntu1.7`
 
 Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris bash=4.3-7ubuntu1.7
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-7ubuntu1.7.dsc' bash_4.3-7ubuntu1.7.dsc 2262 SHA256:82616738c15ec0b0e4c0008f2786e2ddec79eb9ba0d38eabeb1fb0bef4cdd00f
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3.orig.tar.gz' bash_4.3.orig.tar.gz 7516231 SHA256:b2fe79ddf9e7abdb4695e3070afa866d2a94a58d1cc9d731585330c753815491
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-7ubuntu1.7.debian.tar.gz' bash_4.3-7ubuntu1.7.debian.tar.gz 100404 SHA256:8a74045497aef83bef74206a43efe7d9e109cef603aa75f0c5fc60cbc4f2e91b
+```
 
 ### `dpkg` source package: `busybox=1:1.21.0-1ubuntu1`
 
@@ -1107,19 +1113,25 @@ $ apt-get source -qq --print-uris iputils=3:20121221-4ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iputils/iputils_20121221-4ubuntu1.1.debian.tar.gz' iputils_20121221-4ubuntu1.1.debian.tar.gz 16143 SHA256:4eb3ca79e68dfc5f5e66df7be3113c230168fbca2420da232adadc6475056c6a
 ```
 
-### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.8`
+### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.10`
 
 Binary Packages:
 
-- `isc-dhcp-client=4.2.4-7ubuntu12.8`
-- `isc-dhcp-common=4.2.4-7ubuntu12.8`
+- `isc-dhcp-client=4.2.4-7ubuntu12.10`
+- `isc-dhcp-common=4.2.4-7ubuntu12.10`
 
 Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/doc/isc-dhcp-common/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris isc-dhcp=4.2.4-7ubuntu12.10
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.10.dsc' isc-dhcp_4.2.4-7ubuntu12.10.dsc 2536 SHA256:965cd01f769908c4b3f55cd4597122e7f5abc1a28d914c09999a53e7ad8213cf
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.10.debian.tar.xz' isc-dhcp_4.2.4-7ubuntu12.10.debian.tar.xz 111980 SHA256:8a769650ddcc5a10226d48e8bd261c5505bf51e62ef8b34d73a6cb817abac09f
+```
 
 ### `dpkg` source package: `json-c=0.11-3ubuntu1.2`
 
@@ -2175,11 +2187,11 @@ $ apt-get source -qq --print-uris ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.10
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.debian.tar.gz' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.debian.tar.gz 147591 SHA256:4097803a1422a5c6fa5381e496c35cb2306988c8d48dbd9136a8c31b55208451
 ```
 
-### `dpkg` source package: `openldap=2.4.31-1+nmu2ubuntu8.3`
+### `dpkg` source package: `openldap=2.4.31-1+nmu2ubuntu8.4`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.31-1+nmu2ubuntu8.3`
+- `libldap-2.4-2:amd64=2.4.31-1+nmu2ubuntu8.4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2188,10 +2200,10 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openldap=2.4.31-1+nmu2ubuntu8.3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.3.dsc' openldap_2.4.31-1+nmu2ubuntu8.3.dsc 2949 SHA256:e1271cf0647886f1eb8a3ec088ab46f2fa031c5154d5ad8b4a3725a9af963c92
+$ apt-get source -qq --print-uris openldap=2.4.31-1+nmu2ubuntu8.4
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.4.dsc' openldap_2.4.31-1+nmu2ubuntu8.4.dsc 2890 SHA256:a3dc09d4cfeabada88aebda971978e82d4ec01249b8a5660846abbafb9eca7b4
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31.orig.tar.gz' openldap_2.4.31.orig.tar.gz 4720612 SHA256:dff60c1044021217ab97a7bdda5a7016015f042db0fbfd566d52abb266d19239
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.3.diff.gz' openldap_2.4.31-1+nmu2ubuntu8.3.diff.gz 175837 SHA256:6cb56364d5a7483f62e3918d5d0d60778ec736b69d5b60baaabcb1406ad18bbf
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz' openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz 176512 SHA256:5bbd0a7eb5123bdf875c794a48634da4b89264cd2d980422cf58e4f408753a59
 ```
 
 ### `dpkg` source package: `openssh=1:6.6p1-2ubuntu2.8`
@@ -2648,19 +2660,25 @@ $ apt-get source -qq --print-uris serf=1.3.3-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/serf/serf_1.3.3-1ubuntu0.1.debian.tar.gz' serf_1.3.3-1ubuntu0.1.debian.tar.gz 24591 SHA256:123a1bec0a00a802f34ba9d1bf748b338e4826c72b97bdf9794dc173af64f4f1
 ```
 
-### `dpkg` source package: `shadow=1:4.1.5.1-1ubuntu9.4`
+### `dpkg` source package: `shadow=1:4.1.5.1-1ubuntu9.5`
 
 Binary Packages:
 
-- `login=1:4.1.5.1-1ubuntu9.4`
-- `passwd=1:4.1.5.1-1ubuntu9.4`
+- `login=1:4.1.5.1-1ubuntu9.5`
+- `passwd=1:4.1.5.1-1ubuntu9.5`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris shadow=1:4.1.5.1-1ubuntu9.5
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.1.5.1-1ubuntu9.5.dsc' shadow_4.1.5.1-1ubuntu9.5.dsc 2028 SHA256:93a2ab100897ca8efde1d4a71a993d3e6a4f8bee01f53dce244d11b1cae35970
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.1.5.1.orig.tar.gz' shadow_4.1.5.1.orig.tar.gz 3508077 SHA256:ee1986c5fec9f6e7868bcc5329874a72dec74897b598d86eb0532f79471f32f0
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.1.5.1-1ubuntu9.5.diff.gz' shadow_4.1.5.1-1ubuntu9.5.diff.gz 115342 SHA256:dd3d87b630785f33b5c40d2b08aca1fb1a4f9a4aea109d1a6e90f563624e5bc0
+```
 
 ### `dpkg` source package: `slang2=2.2.4-15ubuntu1`
 
@@ -2726,18 +2744,24 @@ $ apt-get source -qq --print-uris subversion=1.8.8-1ubuntu3.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.8.8-1ubuntu3.2.diff.gz' subversion_1.8.8-1ubuntu3.2.diff.gz 302250 SHA256:419e3fab5ce3692b526859ef778a41cc247e1f12157373f3e6ed0d2faac3c699
 ```
 
-### `dpkg` source package: `sudo=1.8.9p5-1ubuntu1.3`
+### `dpkg` source package: `sudo=1.8.9p5-1ubuntu1.4`
 
 Binary Packages:
 
-- `sudo=1.8.9p5-1ubuntu1.3`
+- `sudo=1.8.9p5-1ubuntu1.4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris sudo=1.8.9p5-1ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.4.dsc' sudo_1.8.9p5-1ubuntu1.4.dsc 2018 SHA256:219d9a25bb19a2593187af41332099ea7d7336f5359becac8d950f7c2065b370
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5.orig.tar.gz' sudo_1.8.9p5.orig.tar.gz 2179066 SHA256:bc9d5c96de5f8b4d2b014f87a37870aef60d2891c869202454069150a21a5c21
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.4.debian.tar.gz' sudo_1.8.9p5-1ubuntu1.4.debian.tar.gz 42099 SHA256:0dd793cc146e8b00f8d5e26d543333c68a6fdf8f612c159151cd9c5f90281686
+```
 
 ### `dpkg` source package: `systemd=204-5ubuntu20.24`
 
