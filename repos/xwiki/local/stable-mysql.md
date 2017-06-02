@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e1df5fce022e1e54cdf3febd692a3aadaa4ea84ebc5b6907a702eaa9133961e3`
-- Created: `2017-05-24T17:26:35.262635534Z`
+- Image ID: `sha256:7f4c23161d8a8a46f472ca240db9188c0f9125de79ee1029f123684cf1bf69f4`
+- Created: `2017-05-30T17:32:24.019417853Z`
 - Virtual Size: ~ 1.14 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -25,9 +25,9 @@
   - `TOMCAT_VERSION=8.5.15`
   - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.15/bin/apache-tomcat-8.5.15.tar.gz`
   - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.5.15/bin/apache-tomcat-8.5.15.tar.gz.asc`
-  - `XWIKI_VERSION=9.3.1`
-  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/enterprise/xwiki-enterprise-web/9.3.1`
-  - `XWIKI_DOWNLOAD_SHA256=e113d5c805c4c5977a8e0c0d27700bb45fa69f0d155132f7cc5f06ed0f888e79`
+  - `XWIKI_VERSION=9.4`
+  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/enterprise/xwiki-enterprise-web/9.4`
+  - `XWIKI_DOWNLOAD_SHA256=0c50d7b261f72f582b94171b80b4711def614845663d0633b17c870b8c84d0fb`
 
 ## `dpkg` (`.deb`-based packages)
 
