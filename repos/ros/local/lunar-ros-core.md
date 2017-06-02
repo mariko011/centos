@@ -2557,14 +2557,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.1.dsc' openldap_2.4.42+dfsg-2ubuntu3.1.dsc 3040 SHA256:7831e80ebda39d53cd72fe7f0f09a81954bcaf099c65eb321d5e4f62429b49d3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg.orig.tar.gz' openldap_2.4.42+dfsg.orig.tar.gz 4813173 SHA256:5f56e4e3584f7a4b4c8437a2c985b2f519836946be77ef1aa43a5d20c02ea97b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.1.debian.tar.xz' openldap_2.4.42+dfsg-2ubuntu3.1.debian.tar.xz 176564 SHA256:91b3cf496c0a6c40ae6fb909477cf6dabbfc3a2962f9a08fee6ed071c8223ceb
-```
 
 ### `dpkg` source package: `openmpi=1.10.2-8ubuntu1`
 
@@ -2811,14 +2805,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.3.1-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.1-1.dsc' python-catkin-pkg-modules_0.3.1-1.dsc 991 SHA256:fc9f502b36c07d366adec75c4567d928fbfdc9dd30ac2b4c07ffb548dd57582e
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.1.orig.tar.gz' python-catkin-pkg-modules_0.3.1.orig.tar.gz 43618 SHA256:181f99f89222beae150333af49c00e53929fec759d4cd2f2586b72400812c7af
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.1-1.debian.tar.xz' python-catkin-pkg-modules_0.3.1-1.debian.tar.xz 1120 SHA256:bc7175f0a2dceeb688f403e28db5633746f4f2c24bfbb462ca2c2be334be249e
-```
 
 ### `dpkg` source package: `python-catkin-pkg=0.3.1-1`
 
@@ -2830,14 +2818,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg=0.3.1-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.1-1.dsc' python-catkin-pkg_0.3.1-1.dsc 920 SHA256:5d55942004bacf76586b17b35bbf54027f4979b83639089404b71acf4aeb9cb3
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.1.orig.tar.gz' python-catkin-pkg_0.3.1.orig.tar.gz 9366 SHA256:1cd05fccabd11a7eea24e747d7745a86a8ccdb1b5567b119a551fce32947ab70
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.1-1.debian.tar.xz' python-catkin-pkg_0.3.1-1.debian.tar.xz 1112 SHA256:e080fc3fd00ecc33e36808a24d2cd647fd502ba09b047ccb5f46f27fb14b02e5
-```
 
 ### `dpkg` source package: `python-crypto=2.6.1-6ubuntu0.16.04.2`
 

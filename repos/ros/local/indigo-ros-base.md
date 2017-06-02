@@ -3129,14 +3129,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.31-1+nmu2ubuntu8.3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.3.dsc' openldap_2.4.31-1+nmu2ubuntu8.3.dsc 2949 SHA256:e1271cf0647886f1eb8a3ec088ab46f2fa031c5154d5ad8b4a3725a9af963c92
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31.orig.tar.gz' openldap_2.4.31.orig.tar.gz 4720612 SHA256:dff60c1044021217ab97a7bdda5a7016015f042db0fbfd566d52abb266d19239
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.3.diff.gz' openldap_2.4.31-1+nmu2ubuntu8.3.diff.gz 175837 SHA256:6cb56364d5a7483f62e3918d5d0d60778ec736b69d5b60baaabcb1406ad18bbf
-```
 
 ### `dpkg` source package: `openmpi=1.6.5-8`
 
@@ -3434,14 +3428,8 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `GPL-1`
 - `Tcl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.3=9.3.16-0ubuntu0.14.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.16-0ubuntu0.14.04.dsc' postgresql-9.3_9.3.16-0ubuntu0.14.04.dsc 3595 SHA256:b905af82b2a135d8d99fafad13126a44c3feca08dbba235b6dd70f958889614c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.16.orig.tar.bz2' postgresql-9.3_9.3.16.orig.tar.bz2 17108969 SHA256:845f5e4ac8cf026b6a77c5a180a2fe869f51e9d06acf8d0365b05505a2c66873
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.16-0ubuntu0.14.04.debian.tar.xz' postgresql-9.3_9.3.16-0ubuntu0.14.04.debian.tar.xz 29148 SHA256:28bb02b236a332d8444914a5525555ac541eedb8fe1dfb85ca31e667877e347d
-```
 
 ### `dpkg` source package: `procps=1:3.3.9-1ubuntu2.2`
 
@@ -3474,14 +3462,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.3.1-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.1-1.dsc' python-catkin-pkg-modules_0.3.1-1.dsc 991 SHA256:fc9f502b36c07d366adec75c4567d928fbfdc9dd30ac2b4c07ffb548dd57582e
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.1.orig.tar.gz' python-catkin-pkg-modules_0.3.1.orig.tar.gz 43618 SHA256:181f99f89222beae150333af49c00e53929fec759d4cd2f2586b72400812c7af
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.1-1.debian.tar.xz' python-catkin-pkg-modules_0.3.1-1.debian.tar.xz 1120 SHA256:bc7175f0a2dceeb688f403e28db5633746f4f2c24bfbb462ca2c2be334be249e
-```
 
 ### `dpkg` source package: `python-catkin-pkg=0.3.1-1`
 
@@ -3493,14 +3475,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg=0.3.1-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.1-1.dsc' python-catkin-pkg_0.3.1-1.dsc 920 SHA256:5d55942004bacf76586b17b35bbf54027f4979b83639089404b71acf4aeb9cb3
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.1.orig.tar.gz' python-catkin-pkg_0.3.1.orig.tar.gz 9366 SHA256:1cd05fccabd11a7eea24e747d7745a86a8ccdb1b5567b119a551fce32947ab70
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.1-1.debian.tar.xz' python-catkin-pkg_0.3.1-1.debian.tar.xz 1112 SHA256:e080fc3fd00ecc33e36808a24d2cd647fd502ba09b047ccb5f46f27fb14b02e5
-```
 
 ### `dpkg` source package: `python-crypto=2.6.1-4ubuntu0.2`
 
@@ -5177,14 +5153,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sudo=1.8.9p5-1ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.3.dsc' sudo_1.8.9p5-1ubuntu1.3.dsc 2032 SHA256:629845f03bef3c3c2e886561e47b0ca7bbf366a5301f29170df10ee82a4a2855
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5.orig.tar.gz' sudo_1.8.9p5.orig.tar.gz 2179066 SHA256:bc9d5c96de5f8b4d2b014f87a37870aef60d2891c869202454069150a21a5c21
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.3.debian.tar.xz' sudo_1.8.9p5-1ubuntu1.3.debian.tar.xz 33260 SHA256:bae36c26cf8a5f171035b17087f06f23bd44b510273e9c7f1f54dfb147d67850
-```
 
 ### `dpkg` source package: `systemd=204-5ubuntu20.24`
 
