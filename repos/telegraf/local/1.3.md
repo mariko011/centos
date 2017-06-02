@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:faa75506663d4918dc04ad8829944c08b9559e4b3f292b4e6f4e45233046b9f5`
-- Created: `2017-05-16T20:37:56.95159772Z`
-- Virtual Size: ~ 239.45 Mb  
+- Image ID: `sha256:3b2ab4095365bade13a8f2ea3db08f101e511e22aaeee82ddcd95989c84e0744`
+- Created: `2017-06-01T23:57:04.038776113Z`
+- Virtual Size: ~ 239.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["telegraf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `TELEGRAF_VERSION=1.3.0`
+  - `TELEGRAF_VERSION=1.3.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2011,14 +2011,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.31-1+nmu2ubuntu8.3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.3.dsc' openldap_2.4.31-1+nmu2ubuntu8.3.dsc 2949 SHA256:e1271cf0647886f1eb8a3ec088ab46f2fa031c5154d5ad8b4a3725a9af963c92
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31.orig.tar.gz' openldap_2.4.31.orig.tar.gz 4720612 SHA256:dff60c1044021217ab97a7bdda5a7016015f042db0fbfd566d52abb266d19239
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.3.diff.gz' openldap_2.4.31-1+nmu2ubuntu8.3.diff.gz 175837 SHA256:6cb56364d5a7483f62e3918d5d0d60778ec736b69d5b60baaabcb1406ad18bbf
-```
 
 ### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.22`
 
@@ -2522,11 +2516,11 @@ $ apt-get source -qq --print-uris tar=1.27.1-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.27.1-1ubuntu0.1.debian.tar.gz' tar_1.27.1-1ubuntu0.1.debian.tar.gz 22769 SHA256:e22697f2b43f792a61683d9af9ed78ea7dd2d3927a94573ab90d9ada21df25e2
 ```
 
-### `dpkg` source package: `telegraf=1.3.0-1`
+### `dpkg` source package: `telegraf=1.3.1-1`
 
 Binary Packages:
 
-- `telegraf=1.3.0-1`
+- `telegraf=1.3.1-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
