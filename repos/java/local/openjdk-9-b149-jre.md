@@ -219,18 +219,8 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates-java/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ca-certificates-java=20161107
-'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20161107.dsc' ca-certificates-java_20161107.dsc 1843 SHA256:ed71bb743d1a3d362b352feed1f5f802a5b906134f7ca91f5f86ab40ed397ca7
-'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20161107.tar.xz' ca-certificates-java_20161107.tar.xz 15964 SHA256:e62fac18522012dc3c5cc37b310c16568c5bd909049e3a73ce2b487f2407d698
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/ca-certificates-java/20161107/
-- https://sources.debian.net/src/ca-certificates-java/20161107/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ca-certificates=20161130`
 
