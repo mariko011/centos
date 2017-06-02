@@ -283,18 +283,8 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates-java/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ca-certificates-java=20161107
-'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20161107.dsc' ca-certificates-java_20161107.dsc 1843 SHA256:ed71bb743d1a3d362b352feed1f5f802a5b906134f7ca91f5f86ab40ed397ca7
-'http://deb.debian.org/debian/pool/main/c/ca-certificates-java/ca-certificates-java_20161107.tar.xz' ca-certificates-java_20161107.tar.xz 15964 SHA256:e62fac18522012dc3c5cc37b310c16568c5bd909049e3a73ce2b487f2407d698
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/ca-certificates-java/20161107/
-- https://sources.debian.net/src/ca-certificates-java/20161107/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ca-certificates=20161130`
 
@@ -2019,19 +2009,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.22.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.22.0-1.dsc' nghttp2_1.22.0-1.dsc 2299 SHA256:36355ddbdefb8697f287aaa903cc036760ff7488de2406efc4100f0341f5986a
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.22.0.orig.tar.bz2' nghttp2_1.22.0.orig.tar.bz2 1801714 SHA256:7df6632e76ff51ed8d3163f780bddfd5540b391f81ea09b847b960f99f972dbf
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.22.0-1.debian.tar.xz' nghttp2_1.22.0-1.debian.tar.xz 11908 SHA256:29465b64e77a352756cf946d65fd5c8a7d09a9221e1b6156bf1cf5ba852646e3
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.22.0-1/
-- https://sources.debian.net/src/nghttp2/1.22.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `nspr=2:4.12-6`
 
@@ -2295,19 +2274,8 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris perl=5.24.1-2
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-2.dsc' perl_5.24.1-2.dsc 2316 SHA256:4938b6b81912d4fea8626b84f14292d49c25d500a223644b2f67db8f1d01e150
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-2.debian.tar.xz' perl_5.24.1-2.debian.tar.xz 165680 SHA256:e398649c63c1f50adace04531856b03a73892f6f210b2d18b16fb8978c5d28b8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/perl/5.24.1-2/
-- https://sources.debian.net/src/perl/5.24.1-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-1`
 
