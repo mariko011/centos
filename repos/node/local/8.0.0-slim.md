@@ -1,18 +1,18 @@
-# `node:7.10.0-slim`
+# `node:8.0.0-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d31939f76091787666d6b7d9d5b5f8f7cc05e67e288d9064f0eb6013766527b8`
-- Created: `2017-05-15T17:43:37.120294313Z`
-- Virtual Size: ~ 220.14 Mb  
+- Image ID: `sha256:2f119a4d12bdf6f7629964a70caca56748f788d182b9f7512a1aa117ae1a6c14`
+- Created: `2017-05-31T19:47:13.006511226Z`
+- Virtual Size: ~ 225.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=7.10.0`
-  - `YARN_VERSION=0.24.4`
+  - `NODE_VERSION=8.0.0`
+  - `YARN_VERSION=0.24.6`
 
 ## `dpkg` (`.deb`-based packages)
 
