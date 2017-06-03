@@ -78,7 +78,7 @@
 ## `php:7.1.5-cli`
 
 ```console
-$ docker pull php@sha256:0f26d508a99b5c0cb5a0d5a149831d37629afc19701d3ec7e129ebf46e9c46d6
+$ docker pull php@sha256:58f59266efcbadf8abe752bb0e943561b48a350b471e96ce838cbc02d670f7d7
 ```
 
 -	Platforms:
@@ -88,9 +88,9 @@ $ docker pull php@sha256:0f26d508a99b5c0cb5a0d5a149831d37629afc19701d3ec7e129ebf
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.3 MB (157321852 bytes)**  
+-	Total Size: **157.3 MB (157322191 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69e9da750e9c034f27a619c6cd54250ac511bdeb29d45171c00c483c4f063053`
+-	Image ID: `sha256:b3b517804b73e218025cbed72b873ec6b83c37624acef86b8766757bf03c0b7d`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -125,13 +125,13 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Fri, 12 May 2017 23:59:30 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:04:17 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:04:35 GMT
+# Fri, 02 Jun 2017 18:11:10 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 18:53:40 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 00:04:35 GMT
+# Fri, 02 Jun 2017 18:53:41 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:04:36 GMT
+# Fri, 02 Jun 2017 18:54:06 GMT
 CMD ["php" "-a"]
 ```
 
@@ -156,19 +156,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:37:17 GMT  
 		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c382eaba4608614fb031d7055289d48f93752fec83c98ffe997feeef98bf3650`  
-		Last Modified: Sat, 13 May 2017 01:37:19 GMT  
-		Size: 9.3 MB (9322867 bytes)  
+	-	`sha256:66e0646d4756734580a8528c3b2272e891efbf8cd884cec3fb62ea7645bd518d`  
+		Last Modified: Sat, 03 Jun 2017 00:03:00 GMT  
+		Size: 9.3 MB (9323205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d68e9ec837b4ad5036d2683347ff32e3ca66bb84f851998c7041b97d90440cb7`  
-		Last Modified: Sat, 13 May 2017 01:37:17 GMT  
-		Size: 2.1 KB (2118 bytes)  
+	-	`sha256:d812b02b8603763bf5daccc09c483a2e899783cd4b80620f125090b85dddba3e`  
+		Last Modified: Sat, 03 Jun 2017 00:02:57 GMT  
+		Size: 2.1 KB (2119 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.1-cli`
 
 ```console
-$ docker pull php@sha256:0f26d508a99b5c0cb5a0d5a149831d37629afc19701d3ec7e129ebf46e9c46d6
+$ docker pull php@sha256:58f59266efcbadf8abe752bb0e943561b48a350b471e96ce838cbc02d670f7d7
 ```
 
 -	Platforms:
@@ -178,9 +178,9 @@ $ docker pull php@sha256:0f26d508a99b5c0cb5a0d5a149831d37629afc19701d3ec7e129ebf
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.3 MB (157321852 bytes)**  
+-	Total Size: **157.3 MB (157322191 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69e9da750e9c034f27a619c6cd54250ac511bdeb29d45171c00c483c4f063053`
+-	Image ID: `sha256:b3b517804b73e218025cbed72b873ec6b83c37624acef86b8766757bf03c0b7d`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -215,13 +215,13 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Fri, 12 May 2017 23:59:30 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:04:17 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:04:35 GMT
+# Fri, 02 Jun 2017 18:11:10 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 18:53:40 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 00:04:35 GMT
+# Fri, 02 Jun 2017 18:53:41 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:04:36 GMT
+# Fri, 02 Jun 2017 18:54:06 GMT
 CMD ["php" "-a"]
 ```
 
@@ -246,19 +246,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:37:17 GMT  
 		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c382eaba4608614fb031d7055289d48f93752fec83c98ffe997feeef98bf3650`  
-		Last Modified: Sat, 13 May 2017 01:37:19 GMT  
-		Size: 9.3 MB (9322867 bytes)  
+	-	`sha256:66e0646d4756734580a8528c3b2272e891efbf8cd884cec3fb62ea7645bd518d`  
+		Last Modified: Sat, 03 Jun 2017 00:03:00 GMT  
+		Size: 9.3 MB (9323205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d68e9ec837b4ad5036d2683347ff32e3ca66bb84f851998c7041b97d90440cb7`  
-		Last Modified: Sat, 13 May 2017 01:37:17 GMT  
-		Size: 2.1 KB (2118 bytes)  
+	-	`sha256:d812b02b8603763bf5daccc09c483a2e899783cd4b80620f125090b85dddba3e`  
+		Last Modified: Sat, 03 Jun 2017 00:02:57 GMT  
+		Size: 2.1 KB (2119 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7-cli`
 
 ```console
-$ docker pull php@sha256:0f26d508a99b5c0cb5a0d5a149831d37629afc19701d3ec7e129ebf46e9c46d6
+$ docker pull php@sha256:58f59266efcbadf8abe752bb0e943561b48a350b471e96ce838cbc02d670f7d7
 ```
 
 -	Platforms:
@@ -268,9 +268,9 @@ $ docker pull php@sha256:0f26d508a99b5c0cb5a0d5a149831d37629afc19701d3ec7e129ebf
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.3 MB (157321852 bytes)**  
+-	Total Size: **157.3 MB (157322191 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69e9da750e9c034f27a619c6cd54250ac511bdeb29d45171c00c483c4f063053`
+-	Image ID: `sha256:b3b517804b73e218025cbed72b873ec6b83c37624acef86b8766757bf03c0b7d`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -305,13 +305,13 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Fri, 12 May 2017 23:59:30 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:04:17 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:04:35 GMT
+# Fri, 02 Jun 2017 18:11:10 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 18:53:40 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 00:04:35 GMT
+# Fri, 02 Jun 2017 18:53:41 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:04:36 GMT
+# Fri, 02 Jun 2017 18:54:06 GMT
 CMD ["php" "-a"]
 ```
 
@@ -336,19 +336,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:37:17 GMT  
 		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c382eaba4608614fb031d7055289d48f93752fec83c98ffe997feeef98bf3650`  
-		Last Modified: Sat, 13 May 2017 01:37:19 GMT  
-		Size: 9.3 MB (9322867 bytes)  
+	-	`sha256:66e0646d4756734580a8528c3b2272e891efbf8cd884cec3fb62ea7645bd518d`  
+		Last Modified: Sat, 03 Jun 2017 00:03:00 GMT  
+		Size: 9.3 MB (9323205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d68e9ec837b4ad5036d2683347ff32e3ca66bb84f851998c7041b97d90440cb7`  
-		Last Modified: Sat, 13 May 2017 01:37:17 GMT  
-		Size: 2.1 KB (2118 bytes)  
+	-	`sha256:d812b02b8603763bf5daccc09c483a2e899783cd4b80620f125090b85dddba3e`  
+		Last Modified: Sat, 03 Jun 2017 00:02:57 GMT  
+		Size: 2.1 KB (2119 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:cli`
 
 ```console
-$ docker pull php@sha256:0f26d508a99b5c0cb5a0d5a149831d37629afc19701d3ec7e129ebf46e9c46d6
+$ docker pull php@sha256:58f59266efcbadf8abe752bb0e943561b48a350b471e96ce838cbc02d670f7d7
 ```
 
 -	Platforms:
@@ -358,9 +358,9 @@ $ docker pull php@sha256:0f26d508a99b5c0cb5a0d5a149831d37629afc19701d3ec7e129ebf
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.3 MB (157321852 bytes)**  
+-	Total Size: **157.3 MB (157322191 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69e9da750e9c034f27a619c6cd54250ac511bdeb29d45171c00c483c4f063053`
+-	Image ID: `sha256:b3b517804b73e218025cbed72b873ec6b83c37624acef86b8766757bf03c0b7d`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -395,13 +395,13 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Fri, 12 May 2017 23:59:30 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:04:17 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:04:35 GMT
+# Fri, 02 Jun 2017 18:11:10 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 18:53:40 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 00:04:35 GMT
+# Fri, 02 Jun 2017 18:53:41 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:04:36 GMT
+# Fri, 02 Jun 2017 18:54:06 GMT
 CMD ["php" "-a"]
 ```
 
@@ -426,19 +426,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:37:17 GMT  
 		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c382eaba4608614fb031d7055289d48f93752fec83c98ffe997feeef98bf3650`  
-		Last Modified: Sat, 13 May 2017 01:37:19 GMT  
-		Size: 9.3 MB (9322867 bytes)  
+	-	`sha256:66e0646d4756734580a8528c3b2272e891efbf8cd884cec3fb62ea7645bd518d`  
+		Last Modified: Sat, 03 Jun 2017 00:03:00 GMT  
+		Size: 9.3 MB (9323205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d68e9ec837b4ad5036d2683347ff32e3ca66bb84f851998c7041b97d90440cb7`  
-		Last Modified: Sat, 13 May 2017 01:37:17 GMT  
-		Size: 2.1 KB (2118 bytes)  
+	-	`sha256:d812b02b8603763bf5daccc09c483a2e899783cd4b80620f125090b85dddba3e`  
+		Last Modified: Sat, 03 Jun 2017 00:02:57 GMT  
+		Size: 2.1 KB (2119 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.1.5`
 
 ```console
-$ docker pull php@sha256:0f26d508a99b5c0cb5a0d5a149831d37629afc19701d3ec7e129ebf46e9c46d6
+$ docker pull php@sha256:58f59266efcbadf8abe752bb0e943561b48a350b471e96ce838cbc02d670f7d7
 ```
 
 -	Platforms:
@@ -448,9 +448,9 @@ $ docker pull php@sha256:0f26d508a99b5c0cb5a0d5a149831d37629afc19701d3ec7e129ebf
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.3 MB (157321852 bytes)**  
+-	Total Size: **157.3 MB (157322191 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69e9da750e9c034f27a619c6cd54250ac511bdeb29d45171c00c483c4f063053`
+-	Image ID: `sha256:b3b517804b73e218025cbed72b873ec6b83c37624acef86b8766757bf03c0b7d`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -485,13 +485,13 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Fri, 12 May 2017 23:59:30 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:04:17 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:04:35 GMT
+# Fri, 02 Jun 2017 18:11:10 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 18:53:40 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 00:04:35 GMT
+# Fri, 02 Jun 2017 18:53:41 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:04:36 GMT
+# Fri, 02 Jun 2017 18:54:06 GMT
 CMD ["php" "-a"]
 ```
 
@@ -516,19 +516,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:37:17 GMT  
 		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c382eaba4608614fb031d7055289d48f93752fec83c98ffe997feeef98bf3650`  
-		Last Modified: Sat, 13 May 2017 01:37:19 GMT  
-		Size: 9.3 MB (9322867 bytes)  
+	-	`sha256:66e0646d4756734580a8528c3b2272e891efbf8cd884cec3fb62ea7645bd518d`  
+		Last Modified: Sat, 03 Jun 2017 00:03:00 GMT  
+		Size: 9.3 MB (9323205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d68e9ec837b4ad5036d2683347ff32e3ca66bb84f851998c7041b97d90440cb7`  
-		Last Modified: Sat, 13 May 2017 01:37:17 GMT  
-		Size: 2.1 KB (2118 bytes)  
+	-	`sha256:d812b02b8603763bf5daccc09c483a2e899783cd4b80620f125090b85dddba3e`  
+		Last Modified: Sat, 03 Jun 2017 00:02:57 GMT  
+		Size: 2.1 KB (2119 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.1`
 
 ```console
-$ docker pull php@sha256:0f26d508a99b5c0cb5a0d5a149831d37629afc19701d3ec7e129ebf46e9c46d6
+$ docker pull php@sha256:58f59266efcbadf8abe752bb0e943561b48a350b471e96ce838cbc02d670f7d7
 ```
 
 -	Platforms:
@@ -538,9 +538,9 @@ $ docker pull php@sha256:0f26d508a99b5c0cb5a0d5a149831d37629afc19701d3ec7e129ebf
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.3 MB (157321852 bytes)**  
+-	Total Size: **157.3 MB (157322191 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69e9da750e9c034f27a619c6cd54250ac511bdeb29d45171c00c483c4f063053`
+-	Image ID: `sha256:b3b517804b73e218025cbed72b873ec6b83c37624acef86b8766757bf03c0b7d`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -575,13 +575,13 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Fri, 12 May 2017 23:59:30 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:04:17 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:04:35 GMT
+# Fri, 02 Jun 2017 18:11:10 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 18:53:40 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 00:04:35 GMT
+# Fri, 02 Jun 2017 18:53:41 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:04:36 GMT
+# Fri, 02 Jun 2017 18:54:06 GMT
 CMD ["php" "-a"]
 ```
 
@@ -606,19 +606,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:37:17 GMT  
 		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c382eaba4608614fb031d7055289d48f93752fec83c98ffe997feeef98bf3650`  
-		Last Modified: Sat, 13 May 2017 01:37:19 GMT  
-		Size: 9.3 MB (9322867 bytes)  
+	-	`sha256:66e0646d4756734580a8528c3b2272e891efbf8cd884cec3fb62ea7645bd518d`  
+		Last Modified: Sat, 03 Jun 2017 00:03:00 GMT  
+		Size: 9.3 MB (9323205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d68e9ec837b4ad5036d2683347ff32e3ca66bb84f851998c7041b97d90440cb7`  
-		Last Modified: Sat, 13 May 2017 01:37:17 GMT  
-		Size: 2.1 KB (2118 bytes)  
+	-	`sha256:d812b02b8603763bf5daccc09c483a2e899783cd4b80620f125090b85dddba3e`  
+		Last Modified: Sat, 03 Jun 2017 00:02:57 GMT  
+		Size: 2.1 KB (2119 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7`
 
 ```console
-$ docker pull php@sha256:0f26d508a99b5c0cb5a0d5a149831d37629afc19701d3ec7e129ebf46e9c46d6
+$ docker pull php@sha256:58f59266efcbadf8abe752bb0e943561b48a350b471e96ce838cbc02d670f7d7
 ```
 
 -	Platforms:
@@ -628,9 +628,9 @@ $ docker pull php@sha256:0f26d508a99b5c0cb5a0d5a149831d37629afc19701d3ec7e129ebf
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.3 MB (157321852 bytes)**  
+-	Total Size: **157.3 MB (157322191 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69e9da750e9c034f27a619c6cd54250ac511bdeb29d45171c00c483c4f063053`
+-	Image ID: `sha256:b3b517804b73e218025cbed72b873ec6b83c37624acef86b8766757bf03c0b7d`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -665,13 +665,13 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Fri, 12 May 2017 23:59:30 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:04:17 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:04:35 GMT
+# Fri, 02 Jun 2017 18:11:10 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 18:53:40 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 00:04:35 GMT
+# Fri, 02 Jun 2017 18:53:41 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:04:36 GMT
+# Fri, 02 Jun 2017 18:54:06 GMT
 CMD ["php" "-a"]
 ```
 
@@ -696,19 +696,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:37:17 GMT  
 		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c382eaba4608614fb031d7055289d48f93752fec83c98ffe997feeef98bf3650`  
-		Last Modified: Sat, 13 May 2017 01:37:19 GMT  
-		Size: 9.3 MB (9322867 bytes)  
+	-	`sha256:66e0646d4756734580a8528c3b2272e891efbf8cd884cec3fb62ea7645bd518d`  
+		Last Modified: Sat, 03 Jun 2017 00:03:00 GMT  
+		Size: 9.3 MB (9323205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d68e9ec837b4ad5036d2683347ff32e3ca66bb84f851998c7041b97d90440cb7`  
-		Last Modified: Sat, 13 May 2017 01:37:17 GMT  
-		Size: 2.1 KB (2118 bytes)  
+	-	`sha256:d812b02b8603763bf5daccc09c483a2e899783cd4b80620f125090b85dddba3e`  
+		Last Modified: Sat, 03 Jun 2017 00:02:57 GMT  
+		Size: 2.1 KB (2119 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:latest`
 
 ```console
-$ docker pull php@sha256:0f26d508a99b5c0cb5a0d5a149831d37629afc19701d3ec7e129ebf46e9c46d6
+$ docker pull php@sha256:58f59266efcbadf8abe752bb0e943561b48a350b471e96ce838cbc02d670f7d7
 ```
 
 -	Platforms:
@@ -718,9 +718,9 @@ $ docker pull php@sha256:0f26d508a99b5c0cb5a0d5a149831d37629afc19701d3ec7e129ebf
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.3 MB (157321852 bytes)**  
+-	Total Size: **157.3 MB (157322191 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69e9da750e9c034f27a619c6cd54250ac511bdeb29d45171c00c483c4f063053`
+-	Image ID: `sha256:b3b517804b73e218025cbed72b873ec6b83c37624acef86b8766757bf03c0b7d`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -755,13 +755,13 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Fri, 12 May 2017 23:59:30 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:04:17 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:04:35 GMT
+# Fri, 02 Jun 2017 18:11:10 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 18:53:40 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 00:04:35 GMT
+# Fri, 02 Jun 2017 18:53:41 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:04:36 GMT
+# Fri, 02 Jun 2017 18:54:06 GMT
 CMD ["php" "-a"]
 ```
 
@@ -786,19 +786,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:37:17 GMT  
 		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c382eaba4608614fb031d7055289d48f93752fec83c98ffe997feeef98bf3650`  
-		Last Modified: Sat, 13 May 2017 01:37:19 GMT  
-		Size: 9.3 MB (9322867 bytes)  
+	-	`sha256:66e0646d4756734580a8528c3b2272e891efbf8cd884cec3fb62ea7645bd518d`  
+		Last Modified: Sat, 03 Jun 2017 00:03:00 GMT  
+		Size: 9.3 MB (9323205 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d68e9ec837b4ad5036d2683347ff32e3ca66bb84f851998c7041b97d90440cb7`  
-		Last Modified: Sat, 13 May 2017 01:37:17 GMT  
-		Size: 2.1 KB (2118 bytes)  
+	-	`sha256:d812b02b8603763bf5daccc09c483a2e899783cd4b80620f125090b85dddba3e`  
+		Last Modified: Sat, 03 Jun 2017 00:02:57 GMT  
+		Size: 2.1 KB (2119 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.1.5-alpine`
 
 ```console
-$ docker pull php@sha256:60387d8d71c39bf5534cecc555830aa44138461b0b50694f479633c1288a1d7b
+$ docker pull php@sha256:94e539236d7a55afa6d92b4ea21a5310c5d21e3469a707fec7b182b6fc072628
 ```
 
 -	Platforms:
@@ -808,9 +808,9 @@ $ docker pull php@sha256:60387d8d71c39bf5534cecc555830aa44138461b0b50694f479633c
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.1 MB (27140756 bytes)**  
+-	Total Size: **27.2 MB (27187962 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4d3f05fc18f1b522eb00bad39de96373558b1c7512b2171925e11b0e8bd3d816`
+-	Image ID: `sha256:aa4ff2b80e6c2e224287bdbe7ef2b52dc8d51bdee0838215b9205a3fa57fb46e`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -847,13 +847,13 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Fri, 26 May 2017 14:39:41 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Fri, 26 May 2017 14:43:17 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Fri, 26 May 2017 14:43:19 GMT
+# Fri, 02 Jun 2017 19:00:29 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 19:03:27 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Fri, 26 May 2017 14:43:20 GMT
+# Fri, 02 Jun 2017 19:03:28 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 26 May 2017 14:43:21 GMT
+# Fri, 02 Jun 2017 19:03:28 GMT
 CMD ["php" "-a"]
 ```
 
@@ -882,19 +882,19 @@ CMD ["php" "-a"]
 		Last Modified: Fri, 26 May 2017 15:25:21 GMT  
 		Size: 485.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eaf8c3021131e3ee02638fffe60e3df87ff542d27865d863a4e7d74a841da675`  
-		Last Modified: Fri, 26 May 2017 15:25:23 GMT  
-		Size: 10.7 MB (10700949 bytes)  
+	-	`sha256:3645f6816af1a5e8985f2ab0b3e1918d8e7e8de83393f78746d80eca18c2f668`  
+		Last Modified: Sat, 03 Jun 2017 00:06:55 GMT  
+		Size: 10.7 MB (10748155 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7906a66d71e55bc1e07a6c75f20534e4ce2fd2e70c8121da72fe976bc630e8ce`  
-		Last Modified: Fri, 26 May 2017 15:25:21 GMT  
+	-	`sha256:d8a4b81050fba74ee4fe1aa800350e6688f3db450b079a92b7fd44d0b68116f5`  
+		Last Modified: Sat, 03 Jun 2017 00:06:51 GMT  
 		Size: 2.1 KB (2107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.1-alpine`
 
 ```console
-$ docker pull php@sha256:60387d8d71c39bf5534cecc555830aa44138461b0b50694f479633c1288a1d7b
+$ docker pull php@sha256:94e539236d7a55afa6d92b4ea21a5310c5d21e3469a707fec7b182b6fc072628
 ```
 
 -	Platforms:
@@ -904,9 +904,9 @@ $ docker pull php@sha256:60387d8d71c39bf5534cecc555830aa44138461b0b50694f479633c
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.1 MB (27140756 bytes)**  
+-	Total Size: **27.2 MB (27187962 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4d3f05fc18f1b522eb00bad39de96373558b1c7512b2171925e11b0e8bd3d816`
+-	Image ID: `sha256:aa4ff2b80e6c2e224287bdbe7ef2b52dc8d51bdee0838215b9205a3fa57fb46e`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -943,13 +943,13 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Fri, 26 May 2017 14:39:41 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Fri, 26 May 2017 14:43:17 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Fri, 26 May 2017 14:43:19 GMT
+# Fri, 02 Jun 2017 19:00:29 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 19:03:27 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Fri, 26 May 2017 14:43:20 GMT
+# Fri, 02 Jun 2017 19:03:28 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 26 May 2017 14:43:21 GMT
+# Fri, 02 Jun 2017 19:03:28 GMT
 CMD ["php" "-a"]
 ```
 
@@ -978,19 +978,19 @@ CMD ["php" "-a"]
 		Last Modified: Fri, 26 May 2017 15:25:21 GMT  
 		Size: 485.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eaf8c3021131e3ee02638fffe60e3df87ff542d27865d863a4e7d74a841da675`  
-		Last Modified: Fri, 26 May 2017 15:25:23 GMT  
-		Size: 10.7 MB (10700949 bytes)  
+	-	`sha256:3645f6816af1a5e8985f2ab0b3e1918d8e7e8de83393f78746d80eca18c2f668`  
+		Last Modified: Sat, 03 Jun 2017 00:06:55 GMT  
+		Size: 10.7 MB (10748155 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7906a66d71e55bc1e07a6c75f20534e4ce2fd2e70c8121da72fe976bc630e8ce`  
-		Last Modified: Fri, 26 May 2017 15:25:21 GMT  
+	-	`sha256:d8a4b81050fba74ee4fe1aa800350e6688f3db450b079a92b7fd44d0b68116f5`  
+		Last Modified: Sat, 03 Jun 2017 00:06:51 GMT  
 		Size: 2.1 KB (2107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7-alpine`
 
 ```console
-$ docker pull php@sha256:60387d8d71c39bf5534cecc555830aa44138461b0b50694f479633c1288a1d7b
+$ docker pull php@sha256:94e539236d7a55afa6d92b4ea21a5310c5d21e3469a707fec7b182b6fc072628
 ```
 
 -	Platforms:
@@ -1000,9 +1000,9 @@ $ docker pull php@sha256:60387d8d71c39bf5534cecc555830aa44138461b0b50694f479633c
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.1 MB (27140756 bytes)**  
+-	Total Size: **27.2 MB (27187962 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4d3f05fc18f1b522eb00bad39de96373558b1c7512b2171925e11b0e8bd3d816`
+-	Image ID: `sha256:aa4ff2b80e6c2e224287bdbe7ef2b52dc8d51bdee0838215b9205a3fa57fb46e`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -1039,13 +1039,13 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Fri, 26 May 2017 14:39:41 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Fri, 26 May 2017 14:43:17 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Fri, 26 May 2017 14:43:19 GMT
+# Fri, 02 Jun 2017 19:00:29 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 19:03:27 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Fri, 26 May 2017 14:43:20 GMT
+# Fri, 02 Jun 2017 19:03:28 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 26 May 2017 14:43:21 GMT
+# Fri, 02 Jun 2017 19:03:28 GMT
 CMD ["php" "-a"]
 ```
 
@@ -1074,19 +1074,19 @@ CMD ["php" "-a"]
 		Last Modified: Fri, 26 May 2017 15:25:21 GMT  
 		Size: 485.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eaf8c3021131e3ee02638fffe60e3df87ff542d27865d863a4e7d74a841da675`  
-		Last Modified: Fri, 26 May 2017 15:25:23 GMT  
-		Size: 10.7 MB (10700949 bytes)  
+	-	`sha256:3645f6816af1a5e8985f2ab0b3e1918d8e7e8de83393f78746d80eca18c2f668`  
+		Last Modified: Sat, 03 Jun 2017 00:06:55 GMT  
+		Size: 10.7 MB (10748155 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7906a66d71e55bc1e07a6c75f20534e4ce2fd2e70c8121da72fe976bc630e8ce`  
-		Last Modified: Fri, 26 May 2017 15:25:21 GMT  
+	-	`sha256:d8a4b81050fba74ee4fe1aa800350e6688f3db450b079a92b7fd44d0b68116f5`  
+		Last Modified: Sat, 03 Jun 2017 00:06:51 GMT  
 		Size: 2.1 KB (2107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:alpine`
 
 ```console
-$ docker pull php@sha256:60387d8d71c39bf5534cecc555830aa44138461b0b50694f479633c1288a1d7b
+$ docker pull php@sha256:94e539236d7a55afa6d92b4ea21a5310c5d21e3469a707fec7b182b6fc072628
 ```
 
 -	Platforms:
@@ -1096,9 +1096,9 @@ $ docker pull php@sha256:60387d8d71c39bf5534cecc555830aa44138461b0b50694f479633c
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.1 MB (27140756 bytes)**  
+-	Total Size: **27.2 MB (27187962 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4d3f05fc18f1b522eb00bad39de96373558b1c7512b2171925e11b0e8bd3d816`
+-	Image ID: `sha256:aa4ff2b80e6c2e224287bdbe7ef2b52dc8d51bdee0838215b9205a3fa57fb46e`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -1135,13 +1135,13 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Fri, 26 May 2017 14:39:41 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Fri, 26 May 2017 14:43:17 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Fri, 26 May 2017 14:43:19 GMT
+# Fri, 02 Jun 2017 19:00:29 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 19:03:27 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Fri, 26 May 2017 14:43:20 GMT
+# Fri, 02 Jun 2017 19:03:28 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 26 May 2017 14:43:21 GMT
+# Fri, 02 Jun 2017 19:03:28 GMT
 CMD ["php" "-a"]
 ```
 
@@ -1170,19 +1170,19 @@ CMD ["php" "-a"]
 		Last Modified: Fri, 26 May 2017 15:25:21 GMT  
 		Size: 485.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eaf8c3021131e3ee02638fffe60e3df87ff542d27865d863a4e7d74a841da675`  
-		Last Modified: Fri, 26 May 2017 15:25:23 GMT  
-		Size: 10.7 MB (10700949 bytes)  
+	-	`sha256:3645f6816af1a5e8985f2ab0b3e1918d8e7e8de83393f78746d80eca18c2f668`  
+		Last Modified: Sat, 03 Jun 2017 00:06:55 GMT  
+		Size: 10.7 MB (10748155 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7906a66d71e55bc1e07a6c75f20534e4ce2fd2e70c8121da72fe976bc630e8ce`  
-		Last Modified: Fri, 26 May 2017 15:25:21 GMT  
+	-	`sha256:d8a4b81050fba74ee4fe1aa800350e6688f3db450b079a92b7fd44d0b68116f5`  
+		Last Modified: Sat, 03 Jun 2017 00:06:51 GMT  
 		Size: 2.1 KB (2107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.1.5-apache`
 
 ```console
-$ docker pull php@sha256:2b68391639df99208bc7b58374e94a2cb5adb585a91513ef7c39573092d7a639
+$ docker pull php@sha256:da208dce0b92de94fcea234eb848f2e99e31d7ecbcc852b6e9a0c78d4653f300
 ```
 
 -	Platforms:
@@ -1192,9 +1192,9 @@ $ docker pull php@sha256:2b68391639df99208bc7b58374e94a2cb5adb585a91513ef7c39573
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.3 MB (164332890 bytes)**  
+-	Total Size: **164.6 MB (164589821 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2720c02fc079c2945924e31dceb2590b5b8a30f5073159aa6a4f71e8a4c162b2`
+-	Image ID: `sha256:2d84744eaa37f85f8751478b9b4fbf2d96e268bdd0d5be39a9265a5774cb42aa`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1247,19 +1247,19 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 00:11:08 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:13:43 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:13:45 GMT
+# Fri, 02 Jun 2017 19:18:22 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 19:18:25 GMT
 COPY multi:3775aa35856908376b7ea71c79fad1e546e92e4ef56dcfc5821b2cc6e2ed6cdc in /usr/local/bin/ 
-# Sat, 13 May 2017 00:13:46 GMT
+# Fri, 02 Jun 2017 19:18:26 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:13:47 GMT
+# Fri, 02 Jun 2017 19:18:27 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Sat, 13 May 2017 00:13:48 GMT
+# Fri, 02 Jun 2017 19:18:28 GMT
 WORKDIR /var/www/html
-# Sat, 13 May 2017 00:13:49 GMT
+# Fri, 02 Jun 2017 19:18:29 GMT
 EXPOSE 80/tcp
-# Sat, 13 May 2017 00:13:49 GMT
+# Fri, 02 Jun 2017 19:18:30 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1304,23 +1304,23 @@ CMD ["apache2-foreground"]
 		Last Modified: Sat, 13 May 2017 01:42:10 GMT  
 		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afb657ecb3703177a88c03504c9c5a7440d60fc19b8a323840c3c738577affe4`  
-		Last Modified: Sat, 13 May 2017 01:42:14 GMT  
-		Size: 13.5 MB (13524605 bytes)  
+	-	`sha256:3878b1f076d67556b1bc30de378c88d7fb221b9a47ac84fec5f22872371ea7fb`  
+		Last Modified: Sat, 03 Jun 2017 00:09:45 GMT  
+		Size: 13.8 MB (13781532 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8769771ac5f46d86ef701fcc49a9f34fd982e14e1d81159f45dd1123bc9160cf`  
-		Last Modified: Sat, 13 May 2017 01:42:11 GMT  
-		Size: 2.1 KB (2124 bytes)  
+	-	`sha256:ea9bdfd95e630134fbcb634e01b89e28121b1ec7f1fdd6fcb6fdda1bac4ce732`  
+		Last Modified: Sat, 03 Jun 2017 00:09:41 GMT  
+		Size: 2.1 KB (2126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b08c0f680a7abc14c907d83b5514ce3d9ea958e85fcde9790800c511f9161cc5`  
-		Last Modified: Sat, 13 May 2017 01:42:10 GMT  
-		Size: 892.0 B  
+	-	`sha256:18b25e49b8bbeae6a444d52f73917be92be160a6a586e082a631109e51777ae6`  
+		Last Modified: Sat, 03 Jun 2017 00:09:41 GMT  
+		Size: 894.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.1-apache`
 
 ```console
-$ docker pull php@sha256:2b68391639df99208bc7b58374e94a2cb5adb585a91513ef7c39573092d7a639
+$ docker pull php@sha256:da208dce0b92de94fcea234eb848f2e99e31d7ecbcc852b6e9a0c78d4653f300
 ```
 
 -	Platforms:
@@ -1330,9 +1330,9 @@ $ docker pull php@sha256:2b68391639df99208bc7b58374e94a2cb5adb585a91513ef7c39573
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.3 MB (164332890 bytes)**  
+-	Total Size: **164.6 MB (164589821 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2720c02fc079c2945924e31dceb2590b5b8a30f5073159aa6a4f71e8a4c162b2`
+-	Image ID: `sha256:2d84744eaa37f85f8751478b9b4fbf2d96e268bdd0d5be39a9265a5774cb42aa`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1385,19 +1385,19 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 00:11:08 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:13:43 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:13:45 GMT
+# Fri, 02 Jun 2017 19:18:22 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 19:18:25 GMT
 COPY multi:3775aa35856908376b7ea71c79fad1e546e92e4ef56dcfc5821b2cc6e2ed6cdc in /usr/local/bin/ 
-# Sat, 13 May 2017 00:13:46 GMT
+# Fri, 02 Jun 2017 19:18:26 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:13:47 GMT
+# Fri, 02 Jun 2017 19:18:27 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Sat, 13 May 2017 00:13:48 GMT
+# Fri, 02 Jun 2017 19:18:28 GMT
 WORKDIR /var/www/html
-# Sat, 13 May 2017 00:13:49 GMT
+# Fri, 02 Jun 2017 19:18:29 GMT
 EXPOSE 80/tcp
-# Sat, 13 May 2017 00:13:49 GMT
+# Fri, 02 Jun 2017 19:18:30 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1442,23 +1442,23 @@ CMD ["apache2-foreground"]
 		Last Modified: Sat, 13 May 2017 01:42:10 GMT  
 		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afb657ecb3703177a88c03504c9c5a7440d60fc19b8a323840c3c738577affe4`  
-		Last Modified: Sat, 13 May 2017 01:42:14 GMT  
-		Size: 13.5 MB (13524605 bytes)  
+	-	`sha256:3878b1f076d67556b1bc30de378c88d7fb221b9a47ac84fec5f22872371ea7fb`  
+		Last Modified: Sat, 03 Jun 2017 00:09:45 GMT  
+		Size: 13.8 MB (13781532 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8769771ac5f46d86ef701fcc49a9f34fd982e14e1d81159f45dd1123bc9160cf`  
-		Last Modified: Sat, 13 May 2017 01:42:11 GMT  
-		Size: 2.1 KB (2124 bytes)  
+	-	`sha256:ea9bdfd95e630134fbcb634e01b89e28121b1ec7f1fdd6fcb6fdda1bac4ce732`  
+		Last Modified: Sat, 03 Jun 2017 00:09:41 GMT  
+		Size: 2.1 KB (2126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b08c0f680a7abc14c907d83b5514ce3d9ea958e85fcde9790800c511f9161cc5`  
-		Last Modified: Sat, 13 May 2017 01:42:10 GMT  
-		Size: 892.0 B  
+	-	`sha256:18b25e49b8bbeae6a444d52f73917be92be160a6a586e082a631109e51777ae6`  
+		Last Modified: Sat, 03 Jun 2017 00:09:41 GMT  
+		Size: 894.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7-apache`
 
 ```console
-$ docker pull php@sha256:2b68391639df99208bc7b58374e94a2cb5adb585a91513ef7c39573092d7a639
+$ docker pull php@sha256:da208dce0b92de94fcea234eb848f2e99e31d7ecbcc852b6e9a0c78d4653f300
 ```
 
 -	Platforms:
@@ -1468,9 +1468,9 @@ $ docker pull php@sha256:2b68391639df99208bc7b58374e94a2cb5adb585a91513ef7c39573
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.3 MB (164332890 bytes)**  
+-	Total Size: **164.6 MB (164589821 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2720c02fc079c2945924e31dceb2590b5b8a30f5073159aa6a4f71e8a4c162b2`
+-	Image ID: `sha256:2d84744eaa37f85f8751478b9b4fbf2d96e268bdd0d5be39a9265a5774cb42aa`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1523,19 +1523,19 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 00:11:08 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:13:43 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:13:45 GMT
+# Fri, 02 Jun 2017 19:18:22 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 19:18:25 GMT
 COPY multi:3775aa35856908376b7ea71c79fad1e546e92e4ef56dcfc5821b2cc6e2ed6cdc in /usr/local/bin/ 
-# Sat, 13 May 2017 00:13:46 GMT
+# Fri, 02 Jun 2017 19:18:26 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:13:47 GMT
+# Fri, 02 Jun 2017 19:18:27 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Sat, 13 May 2017 00:13:48 GMT
+# Fri, 02 Jun 2017 19:18:28 GMT
 WORKDIR /var/www/html
-# Sat, 13 May 2017 00:13:49 GMT
+# Fri, 02 Jun 2017 19:18:29 GMT
 EXPOSE 80/tcp
-# Sat, 13 May 2017 00:13:49 GMT
+# Fri, 02 Jun 2017 19:18:30 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1580,23 +1580,23 @@ CMD ["apache2-foreground"]
 		Last Modified: Sat, 13 May 2017 01:42:10 GMT  
 		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afb657ecb3703177a88c03504c9c5a7440d60fc19b8a323840c3c738577affe4`  
-		Last Modified: Sat, 13 May 2017 01:42:14 GMT  
-		Size: 13.5 MB (13524605 bytes)  
+	-	`sha256:3878b1f076d67556b1bc30de378c88d7fb221b9a47ac84fec5f22872371ea7fb`  
+		Last Modified: Sat, 03 Jun 2017 00:09:45 GMT  
+		Size: 13.8 MB (13781532 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8769771ac5f46d86ef701fcc49a9f34fd982e14e1d81159f45dd1123bc9160cf`  
-		Last Modified: Sat, 13 May 2017 01:42:11 GMT  
-		Size: 2.1 KB (2124 bytes)  
+	-	`sha256:ea9bdfd95e630134fbcb634e01b89e28121b1ec7f1fdd6fcb6fdda1bac4ce732`  
+		Last Modified: Sat, 03 Jun 2017 00:09:41 GMT  
+		Size: 2.1 KB (2126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b08c0f680a7abc14c907d83b5514ce3d9ea958e85fcde9790800c511f9161cc5`  
-		Last Modified: Sat, 13 May 2017 01:42:10 GMT  
-		Size: 892.0 B  
+	-	`sha256:18b25e49b8bbeae6a444d52f73917be92be160a6a586e082a631109e51777ae6`  
+		Last Modified: Sat, 03 Jun 2017 00:09:41 GMT  
+		Size: 894.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:apache`
 
 ```console
-$ docker pull php@sha256:2b68391639df99208bc7b58374e94a2cb5adb585a91513ef7c39573092d7a639
+$ docker pull php@sha256:da208dce0b92de94fcea234eb848f2e99e31d7ecbcc852b6e9a0c78d4653f300
 ```
 
 -	Platforms:
@@ -1606,9 +1606,9 @@ $ docker pull php@sha256:2b68391639df99208bc7b58374e94a2cb5adb585a91513ef7c39573
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.3 MB (164332890 bytes)**  
+-	Total Size: **164.6 MB (164589821 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2720c02fc079c2945924e31dceb2590b5b8a30f5073159aa6a4f71e8a4c162b2`
+-	Image ID: `sha256:2d84744eaa37f85f8751478b9b4fbf2d96e268bdd0d5be39a9265a5774cb42aa`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1661,19 +1661,19 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 00:11:08 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:13:43 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:13:45 GMT
+# Fri, 02 Jun 2017 19:18:22 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 19:18:25 GMT
 COPY multi:3775aa35856908376b7ea71c79fad1e546e92e4ef56dcfc5821b2cc6e2ed6cdc in /usr/local/bin/ 
-# Sat, 13 May 2017 00:13:46 GMT
+# Fri, 02 Jun 2017 19:18:26 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:13:47 GMT
+# Fri, 02 Jun 2017 19:18:27 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Sat, 13 May 2017 00:13:48 GMT
+# Fri, 02 Jun 2017 19:18:28 GMT
 WORKDIR /var/www/html
-# Sat, 13 May 2017 00:13:49 GMT
+# Fri, 02 Jun 2017 19:18:29 GMT
 EXPOSE 80/tcp
-# Sat, 13 May 2017 00:13:49 GMT
+# Fri, 02 Jun 2017 19:18:30 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1718,23 +1718,23 @@ CMD ["apache2-foreground"]
 		Last Modified: Sat, 13 May 2017 01:42:10 GMT  
 		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:afb657ecb3703177a88c03504c9c5a7440d60fc19b8a323840c3c738577affe4`  
-		Last Modified: Sat, 13 May 2017 01:42:14 GMT  
-		Size: 13.5 MB (13524605 bytes)  
+	-	`sha256:3878b1f076d67556b1bc30de378c88d7fb221b9a47ac84fec5f22872371ea7fb`  
+		Last Modified: Sat, 03 Jun 2017 00:09:45 GMT  
+		Size: 13.8 MB (13781532 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8769771ac5f46d86ef701fcc49a9f34fd982e14e1d81159f45dd1123bc9160cf`  
-		Last Modified: Sat, 13 May 2017 01:42:11 GMT  
-		Size: 2.1 KB (2124 bytes)  
+	-	`sha256:ea9bdfd95e630134fbcb634e01b89e28121b1ec7f1fdd6fcb6fdda1bac4ce732`  
+		Last Modified: Sat, 03 Jun 2017 00:09:41 GMT  
+		Size: 2.1 KB (2126 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b08c0f680a7abc14c907d83b5514ce3d9ea958e85fcde9790800c511f9161cc5`  
-		Last Modified: Sat, 13 May 2017 01:42:10 GMT  
-		Size: 892.0 B  
+	-	`sha256:18b25e49b8bbeae6a444d52f73917be92be160a6a586e082a631109e51777ae6`  
+		Last Modified: Sat, 03 Jun 2017 00:09:41 GMT  
+		Size: 894.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.1.5-fpm`
 
 ```console
-$ docker pull php@sha256:2256f2bd134274434814c394002b4e11802e02aa554ef197741705d83523fd59
+$ docker pull php@sha256:30034f9031d2b112b11e485a7f356ee435b9cddd2f57880debbc434e8e514d5b
 ```
 
 -	Platforms:
@@ -1744,9 +1744,9 @@ $ docker pull php@sha256:2256f2bd134274434814c394002b4e11802e02aa554ef197741705d
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **161.1 MB (161091736 bytes)**  
+-	Total Size: **161.1 MB (161092243 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:52e982dc973b911d4882d2472b877f41254cb062a69414fcdebf526d86e9e2f3`
+-	Image ID: `sha256:402a94c35023a295121d3e61e616a4f1d68ca3375f0f9fe8ce0a75e851a2e7ca`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1783,19 +1783,19 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 00:14:30 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:19:09 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:22:29 GMT
+# Fri, 02 Jun 2017 19:55:47 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 19:55:49 GMT
 COPY multi:1401feee8064a06ad514519ec870939c946ecfdf381c82a90cb2035486938ee9 in /usr/local/bin/ 
-# Sat, 13 May 2017 00:22:30 GMT
+# Fri, 02 Jun 2017 19:55:50 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:22:31 GMT
+# Fri, 02 Jun 2017 19:55:51 GMT
 WORKDIR /var/www/html
-# Sat, 13 May 2017 00:22:32 GMT
+# Fri, 02 Jun 2017 19:55:53 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Sat, 13 May 2017 00:22:33 GMT
+# Fri, 02 Jun 2017 19:55:53 GMT
 EXPOSE 9000/tcp
-# Sat, 13 May 2017 00:22:33 GMT
+# Fri, 02 Jun 2017 19:55:54 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1820,27 +1820,27 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 13 May 2017 01:43:50 GMT  
 		Size: 494.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84248d5c48b4fed0a9d0aba767cb6ba4c98a57d7c2cb599b9c65017aaede44c7`  
-		Last Modified: Sat, 13 May 2017 01:43:55 GMT  
-		Size: 13.1 MB (13084935 bytes)  
+	-	`sha256:b580aacf6c97882c32a0b6d2f6d757b7cab3c19951917c86bd31ebeeaa298706`  
+		Last Modified: Sat, 03 Jun 2017 00:12:32 GMT  
+		Size: 13.1 MB (13085443 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74fbccbaebee51d27b623a0dd2680f0a981515f4e6ea05077e540b879a772cae`  
-		Last Modified: Sat, 13 May 2017 01:43:50 GMT  
-		Size: 2.1 KB (2121 bytes)  
+	-	`sha256:8eca3c087f02d38509a03c534736026b196049ab1768e0e9dc984fb540c00863`  
+		Last Modified: Sat, 03 Jun 2017 00:12:28 GMT  
+		Size: 2.1 KB (2118 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3fda988f2cb5d166ce10c6feddde6267edf2575ec505e3e5f40463e579ed20a7`  
-		Last Modified: Sat, 13 May 2017 01:43:49 GMT  
-		Size: 129.0 B  
+	-	`sha256:29b38a4f5fb0c1aef14bf6350636b06950791f87d88d47edcae5ee9ca624274a`  
+		Last Modified: Sat, 03 Jun 2017 00:12:27 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3824726faa232c622d233e921a6ba4fd3d2bdf28023197dc46d8dd95b411e40d`  
-		Last Modified: Sat, 13 May 2017 01:43:52 GMT  
-		Size: 7.7 KB (7675 bytes)  
+	-	`sha256:3c958803dbabd6b491de2779d57a42523be173b49121545f45238c8f7ffade19`  
+		Last Modified: Sat, 03 Jun 2017 00:12:28 GMT  
+		Size: 7.7 KB (7676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.1-fpm`
 
 ```console
-$ docker pull php@sha256:2256f2bd134274434814c394002b4e11802e02aa554ef197741705d83523fd59
+$ docker pull php@sha256:30034f9031d2b112b11e485a7f356ee435b9cddd2f57880debbc434e8e514d5b
 ```
 
 -	Platforms:
@@ -1850,9 +1850,9 @@ $ docker pull php@sha256:2256f2bd134274434814c394002b4e11802e02aa554ef197741705d
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **161.1 MB (161091736 bytes)**  
+-	Total Size: **161.1 MB (161092243 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:52e982dc973b911d4882d2472b877f41254cb062a69414fcdebf526d86e9e2f3`
+-	Image ID: `sha256:402a94c35023a295121d3e61e616a4f1d68ca3375f0f9fe8ce0a75e851a2e7ca`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1889,19 +1889,19 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 00:14:30 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:19:09 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:22:29 GMT
+# Fri, 02 Jun 2017 19:55:47 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 19:55:49 GMT
 COPY multi:1401feee8064a06ad514519ec870939c946ecfdf381c82a90cb2035486938ee9 in /usr/local/bin/ 
-# Sat, 13 May 2017 00:22:30 GMT
+# Fri, 02 Jun 2017 19:55:50 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:22:31 GMT
+# Fri, 02 Jun 2017 19:55:51 GMT
 WORKDIR /var/www/html
-# Sat, 13 May 2017 00:22:32 GMT
+# Fri, 02 Jun 2017 19:55:53 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Sat, 13 May 2017 00:22:33 GMT
+# Fri, 02 Jun 2017 19:55:53 GMT
 EXPOSE 9000/tcp
-# Sat, 13 May 2017 00:22:33 GMT
+# Fri, 02 Jun 2017 19:55:54 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1926,27 +1926,27 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 13 May 2017 01:43:50 GMT  
 		Size: 494.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84248d5c48b4fed0a9d0aba767cb6ba4c98a57d7c2cb599b9c65017aaede44c7`  
-		Last Modified: Sat, 13 May 2017 01:43:55 GMT  
-		Size: 13.1 MB (13084935 bytes)  
+	-	`sha256:b580aacf6c97882c32a0b6d2f6d757b7cab3c19951917c86bd31ebeeaa298706`  
+		Last Modified: Sat, 03 Jun 2017 00:12:32 GMT  
+		Size: 13.1 MB (13085443 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74fbccbaebee51d27b623a0dd2680f0a981515f4e6ea05077e540b879a772cae`  
-		Last Modified: Sat, 13 May 2017 01:43:50 GMT  
-		Size: 2.1 KB (2121 bytes)  
+	-	`sha256:8eca3c087f02d38509a03c534736026b196049ab1768e0e9dc984fb540c00863`  
+		Last Modified: Sat, 03 Jun 2017 00:12:28 GMT  
+		Size: 2.1 KB (2118 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3fda988f2cb5d166ce10c6feddde6267edf2575ec505e3e5f40463e579ed20a7`  
-		Last Modified: Sat, 13 May 2017 01:43:49 GMT  
-		Size: 129.0 B  
+	-	`sha256:29b38a4f5fb0c1aef14bf6350636b06950791f87d88d47edcae5ee9ca624274a`  
+		Last Modified: Sat, 03 Jun 2017 00:12:27 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3824726faa232c622d233e921a6ba4fd3d2bdf28023197dc46d8dd95b411e40d`  
-		Last Modified: Sat, 13 May 2017 01:43:52 GMT  
-		Size: 7.7 KB (7675 bytes)  
+	-	`sha256:3c958803dbabd6b491de2779d57a42523be173b49121545f45238c8f7ffade19`  
+		Last Modified: Sat, 03 Jun 2017 00:12:28 GMT  
+		Size: 7.7 KB (7676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7-fpm`
 
 ```console
-$ docker pull php@sha256:2256f2bd134274434814c394002b4e11802e02aa554ef197741705d83523fd59
+$ docker pull php@sha256:30034f9031d2b112b11e485a7f356ee435b9cddd2f57880debbc434e8e514d5b
 ```
 
 -	Platforms:
@@ -1956,9 +1956,9 @@ $ docker pull php@sha256:2256f2bd134274434814c394002b4e11802e02aa554ef197741705d
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **161.1 MB (161091736 bytes)**  
+-	Total Size: **161.1 MB (161092243 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:52e982dc973b911d4882d2472b877f41254cb062a69414fcdebf526d86e9e2f3`
+-	Image ID: `sha256:402a94c35023a295121d3e61e616a4f1d68ca3375f0f9fe8ce0a75e851a2e7ca`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1995,19 +1995,19 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 00:14:30 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:19:09 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:22:29 GMT
+# Fri, 02 Jun 2017 19:55:47 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 19:55:49 GMT
 COPY multi:1401feee8064a06ad514519ec870939c946ecfdf381c82a90cb2035486938ee9 in /usr/local/bin/ 
-# Sat, 13 May 2017 00:22:30 GMT
+# Fri, 02 Jun 2017 19:55:50 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:22:31 GMT
+# Fri, 02 Jun 2017 19:55:51 GMT
 WORKDIR /var/www/html
-# Sat, 13 May 2017 00:22:32 GMT
+# Fri, 02 Jun 2017 19:55:53 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Sat, 13 May 2017 00:22:33 GMT
+# Fri, 02 Jun 2017 19:55:53 GMT
 EXPOSE 9000/tcp
-# Sat, 13 May 2017 00:22:33 GMT
+# Fri, 02 Jun 2017 19:55:54 GMT
 CMD ["php-fpm"]
 ```
 
@@ -2032,27 +2032,27 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 13 May 2017 01:43:50 GMT  
 		Size: 494.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84248d5c48b4fed0a9d0aba767cb6ba4c98a57d7c2cb599b9c65017aaede44c7`  
-		Last Modified: Sat, 13 May 2017 01:43:55 GMT  
-		Size: 13.1 MB (13084935 bytes)  
+	-	`sha256:b580aacf6c97882c32a0b6d2f6d757b7cab3c19951917c86bd31ebeeaa298706`  
+		Last Modified: Sat, 03 Jun 2017 00:12:32 GMT  
+		Size: 13.1 MB (13085443 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74fbccbaebee51d27b623a0dd2680f0a981515f4e6ea05077e540b879a772cae`  
-		Last Modified: Sat, 13 May 2017 01:43:50 GMT  
-		Size: 2.1 KB (2121 bytes)  
+	-	`sha256:8eca3c087f02d38509a03c534736026b196049ab1768e0e9dc984fb540c00863`  
+		Last Modified: Sat, 03 Jun 2017 00:12:28 GMT  
+		Size: 2.1 KB (2118 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3fda988f2cb5d166ce10c6feddde6267edf2575ec505e3e5f40463e579ed20a7`  
-		Last Modified: Sat, 13 May 2017 01:43:49 GMT  
-		Size: 129.0 B  
+	-	`sha256:29b38a4f5fb0c1aef14bf6350636b06950791f87d88d47edcae5ee9ca624274a`  
+		Last Modified: Sat, 03 Jun 2017 00:12:27 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3824726faa232c622d233e921a6ba4fd3d2bdf28023197dc46d8dd95b411e40d`  
-		Last Modified: Sat, 13 May 2017 01:43:52 GMT  
-		Size: 7.7 KB (7675 bytes)  
+	-	`sha256:3c958803dbabd6b491de2779d57a42523be173b49121545f45238c8f7ffade19`  
+		Last Modified: Sat, 03 Jun 2017 00:12:28 GMT  
+		Size: 7.7 KB (7676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:fpm`
 
 ```console
-$ docker pull php@sha256:2256f2bd134274434814c394002b4e11802e02aa554ef197741705d83523fd59
+$ docker pull php@sha256:30034f9031d2b112b11e485a7f356ee435b9cddd2f57880debbc434e8e514d5b
 ```
 
 -	Platforms:
@@ -2062,9 +2062,9 @@ $ docker pull php@sha256:2256f2bd134274434814c394002b4e11802e02aa554ef197741705d
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **161.1 MB (161091736 bytes)**  
+-	Total Size: **161.1 MB (161092243 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:52e982dc973b911d4882d2472b877f41254cb062a69414fcdebf526d86e9e2f3`
+-	Image ID: `sha256:402a94c35023a295121d3e61e616a4f1d68ca3375f0f9fe8ce0a75e851a2e7ca`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -2101,19 +2101,19 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 00:14:30 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:19:09 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:22:29 GMT
+# Fri, 02 Jun 2017 19:55:47 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 19:55:49 GMT
 COPY multi:1401feee8064a06ad514519ec870939c946ecfdf381c82a90cb2035486938ee9 in /usr/local/bin/ 
-# Sat, 13 May 2017 00:22:30 GMT
+# Fri, 02 Jun 2017 19:55:50 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:22:31 GMT
+# Fri, 02 Jun 2017 19:55:51 GMT
 WORKDIR /var/www/html
-# Sat, 13 May 2017 00:22:32 GMT
+# Fri, 02 Jun 2017 19:55:53 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Sat, 13 May 2017 00:22:33 GMT
+# Fri, 02 Jun 2017 19:55:53 GMT
 EXPOSE 9000/tcp
-# Sat, 13 May 2017 00:22:33 GMT
+# Fri, 02 Jun 2017 19:55:54 GMT
 CMD ["php-fpm"]
 ```
 
@@ -2138,27 +2138,27 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 13 May 2017 01:43:50 GMT  
 		Size: 494.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84248d5c48b4fed0a9d0aba767cb6ba4c98a57d7c2cb599b9c65017aaede44c7`  
-		Last Modified: Sat, 13 May 2017 01:43:55 GMT  
-		Size: 13.1 MB (13084935 bytes)  
+	-	`sha256:b580aacf6c97882c32a0b6d2f6d757b7cab3c19951917c86bd31ebeeaa298706`  
+		Last Modified: Sat, 03 Jun 2017 00:12:32 GMT  
+		Size: 13.1 MB (13085443 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74fbccbaebee51d27b623a0dd2680f0a981515f4e6ea05077e540b879a772cae`  
-		Last Modified: Sat, 13 May 2017 01:43:50 GMT  
-		Size: 2.1 KB (2121 bytes)  
+	-	`sha256:8eca3c087f02d38509a03c534736026b196049ab1768e0e9dc984fb540c00863`  
+		Last Modified: Sat, 03 Jun 2017 00:12:28 GMT  
+		Size: 2.1 KB (2118 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3fda988f2cb5d166ce10c6feddde6267edf2575ec505e3e5f40463e579ed20a7`  
-		Last Modified: Sat, 13 May 2017 01:43:49 GMT  
-		Size: 129.0 B  
+	-	`sha256:29b38a4f5fb0c1aef14bf6350636b06950791f87d88d47edcae5ee9ca624274a`  
+		Last Modified: Sat, 03 Jun 2017 00:12:27 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3824726faa232c622d233e921a6ba4fd3d2bdf28023197dc46d8dd95b411e40d`  
-		Last Modified: Sat, 13 May 2017 01:43:52 GMT  
-		Size: 7.7 KB (7675 bytes)  
+	-	`sha256:3c958803dbabd6b491de2779d57a42523be173b49121545f45238c8f7ffade19`  
+		Last Modified: Sat, 03 Jun 2017 00:12:28 GMT  
+		Size: 7.7 KB (7676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.1.5-fpm-alpine`
 
 ```console
-$ docker pull php@sha256:cdfc3b8c9fbbc1df0eadfb9bcf90321fa8711d2b44beaa804657be7024098244
+$ docker pull php@sha256:c781ebf3a780a75948c327af9e712d16bee8de785f0263572e001e04192b43f1
 ```
 
 -	Platforms:
@@ -2168,9 +2168,9 @@ $ docker pull php@sha256:cdfc3b8c9fbbc1df0eadfb9bcf90321fa8711d2b44beaa804657be7
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.9 MB (30905659 bytes)**  
+-	Total Size: **31.0 MB (30952839 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee61daf5f1f530032e24017dfbad682f3ae8350ae2e2b7281d14e63756be7266`
+-	Image ID: `sha256:595a9e463a13702ba8425b34d6f14c08dc2985424fa32a71a2b7b55701452fc3`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -2209,19 +2209,19 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Fri, 26 May 2017 14:50:11 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Fri, 26 May 2017 14:53:48 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Fri, 26 May 2017 14:53:50 GMT
+# Fri, 02 Jun 2017 20:00:37 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 20:15:32 GMT
 COPY multi:1401feee8064a06ad514519ec870939c946ecfdf381c82a90cb2035486938ee9 in /usr/local/bin/ 
-# Fri, 26 May 2017 14:53:51 GMT
+# Fri, 02 Jun 2017 20:15:32 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 26 May 2017 14:53:52 GMT
+# Fri, 02 Jun 2017 20:15:33 GMT
 WORKDIR /var/www/html
-# Fri, 26 May 2017 14:53:53 GMT
+# Fri, 02 Jun 2017 20:15:35 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Fri, 26 May 2017 14:53:54 GMT
+# Fri, 02 Jun 2017 20:15:36 GMT
 EXPOSE 9000/tcp
-# Fri, 26 May 2017 14:53:55 GMT
+# Fri, 02 Jun 2017 20:15:36 GMT
 CMD ["php-fpm"]
 ```
 
@@ -2250,27 +2250,27 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 26 May 2017 15:30:07 GMT  
 		Size: 487.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:992b8139304768449e0f4b87b574be6b2509a8da6730c006ebc66ca078c80f58`  
-		Last Modified: Fri, 26 May 2017 15:30:07 GMT  
-		Size: 14.5 MB (14458059 bytes)  
+	-	`sha256:111715a66d5b79b9fd1bbd278e3b3a296cee00f358ba34e948afb8543eb6fdbc`  
+		Last Modified: Sat, 03 Jun 2017 00:15:20 GMT  
+		Size: 14.5 MB (14505239 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:208ab362ff604368937a67b05b20e6c44de6cc920d3b95cec0ff843f241ce706`  
-		Last Modified: Fri, 26 May 2017 15:30:05 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:f21d69f037ce72755e86fabbc32d470a51a31e43fc7a5a977a5c988a8299139a`  
+		Last Modified: Sat, 03 Jun 2017 00:15:14 GMT  
+		Size: 2.1 KB (2106 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68849ee28dc39f944523b08d12612305985adda38d1191304eb93a7a916b3729`  
-		Last Modified: Fri, 26 May 2017 15:30:05 GMT  
-		Size: 128.0 B  
+	-	`sha256:dac370e88886e0ed1c70dea24715cd3253c331faae5d6f13d387b3aed26a464e`  
+		Last Modified: Sat, 03 Jun 2017 00:15:14 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4ceb2ad8fc8f66ec8d53fa96941b85fc5e17ad88d9a4fc752f814533aad9ceb`  
-		Last Modified: Fri, 26 May 2017 15:30:06 GMT  
+	-	`sha256:023fb3b1602e3f7cb84900d66b9597f3cf0765fc54d560c79f73edecd413dbd5`  
+		Last Modified: Sat, 03 Jun 2017 00:15:14 GMT  
 		Size: 7.7 KB (7662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.1-fpm-alpine`
 
 ```console
-$ docker pull php@sha256:cdfc3b8c9fbbc1df0eadfb9bcf90321fa8711d2b44beaa804657be7024098244
+$ docker pull php@sha256:c781ebf3a780a75948c327af9e712d16bee8de785f0263572e001e04192b43f1
 ```
 
 -	Platforms:
@@ -2280,9 +2280,9 @@ $ docker pull php@sha256:cdfc3b8c9fbbc1df0eadfb9bcf90321fa8711d2b44beaa804657be7
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.9 MB (30905659 bytes)**  
+-	Total Size: **31.0 MB (30952839 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee61daf5f1f530032e24017dfbad682f3ae8350ae2e2b7281d14e63756be7266`
+-	Image ID: `sha256:595a9e463a13702ba8425b34d6f14c08dc2985424fa32a71a2b7b55701452fc3`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -2321,19 +2321,19 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Fri, 26 May 2017 14:50:11 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Fri, 26 May 2017 14:53:48 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Fri, 26 May 2017 14:53:50 GMT
+# Fri, 02 Jun 2017 20:00:37 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 20:15:32 GMT
 COPY multi:1401feee8064a06ad514519ec870939c946ecfdf381c82a90cb2035486938ee9 in /usr/local/bin/ 
-# Fri, 26 May 2017 14:53:51 GMT
+# Fri, 02 Jun 2017 20:15:32 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 26 May 2017 14:53:52 GMT
+# Fri, 02 Jun 2017 20:15:33 GMT
 WORKDIR /var/www/html
-# Fri, 26 May 2017 14:53:53 GMT
+# Fri, 02 Jun 2017 20:15:35 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Fri, 26 May 2017 14:53:54 GMT
+# Fri, 02 Jun 2017 20:15:36 GMT
 EXPOSE 9000/tcp
-# Fri, 26 May 2017 14:53:55 GMT
+# Fri, 02 Jun 2017 20:15:36 GMT
 CMD ["php-fpm"]
 ```
 
@@ -2362,27 +2362,27 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 26 May 2017 15:30:07 GMT  
 		Size: 487.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:992b8139304768449e0f4b87b574be6b2509a8da6730c006ebc66ca078c80f58`  
-		Last Modified: Fri, 26 May 2017 15:30:07 GMT  
-		Size: 14.5 MB (14458059 bytes)  
+	-	`sha256:111715a66d5b79b9fd1bbd278e3b3a296cee00f358ba34e948afb8543eb6fdbc`  
+		Last Modified: Sat, 03 Jun 2017 00:15:20 GMT  
+		Size: 14.5 MB (14505239 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:208ab362ff604368937a67b05b20e6c44de6cc920d3b95cec0ff843f241ce706`  
-		Last Modified: Fri, 26 May 2017 15:30:05 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:f21d69f037ce72755e86fabbc32d470a51a31e43fc7a5a977a5c988a8299139a`  
+		Last Modified: Sat, 03 Jun 2017 00:15:14 GMT  
+		Size: 2.1 KB (2106 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68849ee28dc39f944523b08d12612305985adda38d1191304eb93a7a916b3729`  
-		Last Modified: Fri, 26 May 2017 15:30:05 GMT  
-		Size: 128.0 B  
+	-	`sha256:dac370e88886e0ed1c70dea24715cd3253c331faae5d6f13d387b3aed26a464e`  
+		Last Modified: Sat, 03 Jun 2017 00:15:14 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4ceb2ad8fc8f66ec8d53fa96941b85fc5e17ad88d9a4fc752f814533aad9ceb`  
-		Last Modified: Fri, 26 May 2017 15:30:06 GMT  
+	-	`sha256:023fb3b1602e3f7cb84900d66b9597f3cf0765fc54d560c79f73edecd413dbd5`  
+		Last Modified: Sat, 03 Jun 2017 00:15:14 GMT  
 		Size: 7.7 KB (7662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7-fpm-alpine`
 
 ```console
-$ docker pull php@sha256:cdfc3b8c9fbbc1df0eadfb9bcf90321fa8711d2b44beaa804657be7024098244
+$ docker pull php@sha256:c781ebf3a780a75948c327af9e712d16bee8de785f0263572e001e04192b43f1
 ```
 
 -	Platforms:
@@ -2392,9 +2392,9 @@ $ docker pull php@sha256:cdfc3b8c9fbbc1df0eadfb9bcf90321fa8711d2b44beaa804657be7
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.9 MB (30905659 bytes)**  
+-	Total Size: **31.0 MB (30952839 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee61daf5f1f530032e24017dfbad682f3ae8350ae2e2b7281d14e63756be7266`
+-	Image ID: `sha256:595a9e463a13702ba8425b34d6f14c08dc2985424fa32a71a2b7b55701452fc3`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -2433,19 +2433,19 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Fri, 26 May 2017 14:50:11 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Fri, 26 May 2017 14:53:48 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Fri, 26 May 2017 14:53:50 GMT
+# Fri, 02 Jun 2017 20:00:37 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 20:15:32 GMT
 COPY multi:1401feee8064a06ad514519ec870939c946ecfdf381c82a90cb2035486938ee9 in /usr/local/bin/ 
-# Fri, 26 May 2017 14:53:51 GMT
+# Fri, 02 Jun 2017 20:15:32 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 26 May 2017 14:53:52 GMT
+# Fri, 02 Jun 2017 20:15:33 GMT
 WORKDIR /var/www/html
-# Fri, 26 May 2017 14:53:53 GMT
+# Fri, 02 Jun 2017 20:15:35 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Fri, 26 May 2017 14:53:54 GMT
+# Fri, 02 Jun 2017 20:15:36 GMT
 EXPOSE 9000/tcp
-# Fri, 26 May 2017 14:53:55 GMT
+# Fri, 02 Jun 2017 20:15:36 GMT
 CMD ["php-fpm"]
 ```
 
@@ -2474,27 +2474,27 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 26 May 2017 15:30:07 GMT  
 		Size: 487.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:992b8139304768449e0f4b87b574be6b2509a8da6730c006ebc66ca078c80f58`  
-		Last Modified: Fri, 26 May 2017 15:30:07 GMT  
-		Size: 14.5 MB (14458059 bytes)  
+	-	`sha256:111715a66d5b79b9fd1bbd278e3b3a296cee00f358ba34e948afb8543eb6fdbc`  
+		Last Modified: Sat, 03 Jun 2017 00:15:20 GMT  
+		Size: 14.5 MB (14505239 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:208ab362ff604368937a67b05b20e6c44de6cc920d3b95cec0ff843f241ce706`  
-		Last Modified: Fri, 26 May 2017 15:30:05 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:f21d69f037ce72755e86fabbc32d470a51a31e43fc7a5a977a5c988a8299139a`  
+		Last Modified: Sat, 03 Jun 2017 00:15:14 GMT  
+		Size: 2.1 KB (2106 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68849ee28dc39f944523b08d12612305985adda38d1191304eb93a7a916b3729`  
-		Last Modified: Fri, 26 May 2017 15:30:05 GMT  
-		Size: 128.0 B  
+	-	`sha256:dac370e88886e0ed1c70dea24715cd3253c331faae5d6f13d387b3aed26a464e`  
+		Last Modified: Sat, 03 Jun 2017 00:15:14 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4ceb2ad8fc8f66ec8d53fa96941b85fc5e17ad88d9a4fc752f814533aad9ceb`  
-		Last Modified: Fri, 26 May 2017 15:30:06 GMT  
+	-	`sha256:023fb3b1602e3f7cb84900d66b9597f3cf0765fc54d560c79f73edecd413dbd5`  
+		Last Modified: Sat, 03 Jun 2017 00:15:14 GMT  
 		Size: 7.7 KB (7662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:fpm-alpine`
 
 ```console
-$ docker pull php@sha256:cdfc3b8c9fbbc1df0eadfb9bcf90321fa8711d2b44beaa804657be7024098244
+$ docker pull php@sha256:c781ebf3a780a75948c327af9e712d16bee8de785f0263572e001e04192b43f1
 ```
 
 -	Platforms:
@@ -2504,9 +2504,9 @@ $ docker pull php@sha256:cdfc3b8c9fbbc1df0eadfb9bcf90321fa8711d2b44beaa804657be7
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.9 MB (30905659 bytes)**  
+-	Total Size: **31.0 MB (30952839 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ee61daf5f1f530032e24017dfbad682f3ae8350ae2e2b7281d14e63756be7266`
+-	Image ID: `sha256:595a9e463a13702ba8425b34d6f14c08dc2985424fa32a71a2b7b55701452fc3`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -2545,19 +2545,19 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Fri, 26 May 2017 14:50:11 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Fri, 26 May 2017 14:53:48 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Fri, 26 May 2017 14:53:50 GMT
+# Fri, 02 Jun 2017 20:00:37 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 20:15:32 GMT
 COPY multi:1401feee8064a06ad514519ec870939c946ecfdf381c82a90cb2035486938ee9 in /usr/local/bin/ 
-# Fri, 26 May 2017 14:53:51 GMT
+# Fri, 02 Jun 2017 20:15:32 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 26 May 2017 14:53:52 GMT
+# Fri, 02 Jun 2017 20:15:33 GMT
 WORKDIR /var/www/html
-# Fri, 26 May 2017 14:53:53 GMT
+# Fri, 02 Jun 2017 20:15:35 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Fri, 26 May 2017 14:53:54 GMT
+# Fri, 02 Jun 2017 20:15:36 GMT
 EXPOSE 9000/tcp
-# Fri, 26 May 2017 14:53:55 GMT
+# Fri, 02 Jun 2017 20:15:36 GMT
 CMD ["php-fpm"]
 ```
 
@@ -2586,27 +2586,27 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 26 May 2017 15:30:07 GMT  
 		Size: 487.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:992b8139304768449e0f4b87b574be6b2509a8da6730c006ebc66ca078c80f58`  
-		Last Modified: Fri, 26 May 2017 15:30:07 GMT  
-		Size: 14.5 MB (14458059 bytes)  
+	-	`sha256:111715a66d5b79b9fd1bbd278e3b3a296cee00f358ba34e948afb8543eb6fdbc`  
+		Last Modified: Sat, 03 Jun 2017 00:15:20 GMT  
+		Size: 14.5 MB (14505239 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:208ab362ff604368937a67b05b20e6c44de6cc920d3b95cec0ff843f241ce706`  
-		Last Modified: Fri, 26 May 2017 15:30:05 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:f21d69f037ce72755e86fabbc32d470a51a31e43fc7a5a977a5c988a8299139a`  
+		Last Modified: Sat, 03 Jun 2017 00:15:14 GMT  
+		Size: 2.1 KB (2106 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68849ee28dc39f944523b08d12612305985adda38d1191304eb93a7a916b3729`  
-		Last Modified: Fri, 26 May 2017 15:30:05 GMT  
-		Size: 128.0 B  
+	-	`sha256:dac370e88886e0ed1c70dea24715cd3253c331faae5d6f13d387b3aed26a464e`  
+		Last Modified: Sat, 03 Jun 2017 00:15:14 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4ceb2ad8fc8f66ec8d53fa96941b85fc5e17ad88d9a4fc752f814533aad9ceb`  
-		Last Modified: Fri, 26 May 2017 15:30:06 GMT  
+	-	`sha256:023fb3b1602e3f7cb84900d66b9597f3cf0765fc54d560c79f73edecd413dbd5`  
+		Last Modified: Sat, 03 Jun 2017 00:15:14 GMT  
 		Size: 7.7 KB (7662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.1.5-zts`
 
 ```console
-$ docker pull php@sha256:b7c1ac9a0515977d4e0839c99af618cbc806ad91143cf26c5005932d0b1accee
+$ docker pull php@sha256:9c659c482b7ae0842b4ac6313f8a33e54074dd964df21eaf12c5b6c312253c24
 ```
 
 -	Platforms:
@@ -2616,9 +2616,9 @@ $ docker pull php@sha256:b7c1ac9a0515977d4e0839c99af618cbc806ad91143cf26c5005932
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.5 MB (157466346 bytes)**  
+-	Total Size: **157.5 MB (157466623 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:070d0daee046e2e73a73f3f69f9e4aa9fd51e3292c06a2eeb4ebf89972144338`
+-	Image ID: `sha256:ff4db650dd44c8b4369bc0829f57b674d0ad58df407a1c2b8475d9fc5628db5b`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -2655,13 +2655,13 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 00:29:24 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:34:26 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:34:39 GMT
+# Fri, 02 Jun 2017 20:20:23 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 20:45:54 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 00:34:40 GMT
+# Fri, 02 Jun 2017 20:45:55 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:34:41 GMT
+# Fri, 02 Jun 2017 20:45:56 GMT
 CMD ["php" "-a"]
 ```
 
@@ -2686,19 +2686,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:47:04 GMT  
 		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34cf541b30295c4dcf107e1e60cf4bd292b95919bdd58a5f22a4bb9b53722131`  
-		Last Modified: Sat, 13 May 2017 01:47:07 GMT  
-		Size: 9.5 MB (9467339 bytes)  
+	-	`sha256:ec7c37c896ec3dc1a4f421405a3f657aad8203e934fb443359f6fa00421e803f`  
+		Last Modified: Sat, 03 Jun 2017 00:18:04 GMT  
+		Size: 9.5 MB (9467614 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a972172a59df61cf08e05a42b3b756ea13fa27846a38f127e1252555c7ea0ac1`  
-		Last Modified: Sat, 13 May 2017 01:47:05 GMT  
-		Size: 2.1 KB (2116 bytes)  
+	-	`sha256:1d6d48ba63cf08d0b1d437336ea7f4249ceb32907609e2fbc656a0ee2f26dd8c`  
+		Last Modified: Sat, 03 Jun 2017 00:18:01 GMT  
+		Size: 2.1 KB (2118 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.1-zts`
 
 ```console
-$ docker pull php@sha256:b7c1ac9a0515977d4e0839c99af618cbc806ad91143cf26c5005932d0b1accee
+$ docker pull php@sha256:9c659c482b7ae0842b4ac6313f8a33e54074dd964df21eaf12c5b6c312253c24
 ```
 
 -	Platforms:
@@ -2708,9 +2708,9 @@ $ docker pull php@sha256:b7c1ac9a0515977d4e0839c99af618cbc806ad91143cf26c5005932
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.5 MB (157466346 bytes)**  
+-	Total Size: **157.5 MB (157466623 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:070d0daee046e2e73a73f3f69f9e4aa9fd51e3292c06a2eeb4ebf89972144338`
+-	Image ID: `sha256:ff4db650dd44c8b4369bc0829f57b674d0ad58df407a1c2b8475d9fc5628db5b`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -2747,13 +2747,13 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 00:29:24 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:34:26 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:34:39 GMT
+# Fri, 02 Jun 2017 20:20:23 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 20:45:54 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 00:34:40 GMT
+# Fri, 02 Jun 2017 20:45:55 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:34:41 GMT
+# Fri, 02 Jun 2017 20:45:56 GMT
 CMD ["php" "-a"]
 ```
 
@@ -2778,19 +2778,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:47:04 GMT  
 		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34cf541b30295c4dcf107e1e60cf4bd292b95919bdd58a5f22a4bb9b53722131`  
-		Last Modified: Sat, 13 May 2017 01:47:07 GMT  
-		Size: 9.5 MB (9467339 bytes)  
+	-	`sha256:ec7c37c896ec3dc1a4f421405a3f657aad8203e934fb443359f6fa00421e803f`  
+		Last Modified: Sat, 03 Jun 2017 00:18:04 GMT  
+		Size: 9.5 MB (9467614 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a972172a59df61cf08e05a42b3b756ea13fa27846a38f127e1252555c7ea0ac1`  
-		Last Modified: Sat, 13 May 2017 01:47:05 GMT  
-		Size: 2.1 KB (2116 bytes)  
+	-	`sha256:1d6d48ba63cf08d0b1d437336ea7f4249ceb32907609e2fbc656a0ee2f26dd8c`  
+		Last Modified: Sat, 03 Jun 2017 00:18:01 GMT  
+		Size: 2.1 KB (2118 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7-zts`
 
 ```console
-$ docker pull php@sha256:b7c1ac9a0515977d4e0839c99af618cbc806ad91143cf26c5005932d0b1accee
+$ docker pull php@sha256:9c659c482b7ae0842b4ac6313f8a33e54074dd964df21eaf12c5b6c312253c24
 ```
 
 -	Platforms:
@@ -2800,9 +2800,9 @@ $ docker pull php@sha256:b7c1ac9a0515977d4e0839c99af618cbc806ad91143cf26c5005932
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.5 MB (157466346 bytes)**  
+-	Total Size: **157.5 MB (157466623 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:070d0daee046e2e73a73f3f69f9e4aa9fd51e3292c06a2eeb4ebf89972144338`
+-	Image ID: `sha256:ff4db650dd44c8b4369bc0829f57b674d0ad58df407a1c2b8475d9fc5628db5b`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -2839,13 +2839,13 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 00:29:24 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:34:26 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:34:39 GMT
+# Fri, 02 Jun 2017 20:20:23 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 20:45:54 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 00:34:40 GMT
+# Fri, 02 Jun 2017 20:45:55 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:34:41 GMT
+# Fri, 02 Jun 2017 20:45:56 GMT
 CMD ["php" "-a"]
 ```
 
@@ -2870,19 +2870,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:47:04 GMT  
 		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34cf541b30295c4dcf107e1e60cf4bd292b95919bdd58a5f22a4bb9b53722131`  
-		Last Modified: Sat, 13 May 2017 01:47:07 GMT  
-		Size: 9.5 MB (9467339 bytes)  
+	-	`sha256:ec7c37c896ec3dc1a4f421405a3f657aad8203e934fb443359f6fa00421e803f`  
+		Last Modified: Sat, 03 Jun 2017 00:18:04 GMT  
+		Size: 9.5 MB (9467614 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a972172a59df61cf08e05a42b3b756ea13fa27846a38f127e1252555c7ea0ac1`  
-		Last Modified: Sat, 13 May 2017 01:47:05 GMT  
-		Size: 2.1 KB (2116 bytes)  
+	-	`sha256:1d6d48ba63cf08d0b1d437336ea7f4249ceb32907609e2fbc656a0ee2f26dd8c`  
+		Last Modified: Sat, 03 Jun 2017 00:18:01 GMT  
+		Size: 2.1 KB (2118 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:zts`
 
 ```console
-$ docker pull php@sha256:b7c1ac9a0515977d4e0839c99af618cbc806ad91143cf26c5005932d0b1accee
+$ docker pull php@sha256:9c659c482b7ae0842b4ac6313f8a33e54074dd964df21eaf12c5b6c312253c24
 ```
 
 -	Platforms:
@@ -2892,9 +2892,9 @@ $ docker pull php@sha256:b7c1ac9a0515977d4e0839c99af618cbc806ad91143cf26c5005932
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.5 MB (157466346 bytes)**  
+-	Total Size: **157.5 MB (157466623 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:070d0daee046e2e73a73f3f69f9e4aa9fd51e3292c06a2eeb4ebf89972144338`
+-	Image ID: `sha256:ff4db650dd44c8b4369bc0829f57b674d0ad58df407a1c2b8475d9fc5628db5b`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -2931,13 +2931,13 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 00:29:24 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:34:26 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:34:39 GMT
+# Fri, 02 Jun 2017 20:20:23 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 20:45:54 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 00:34:40 GMT
+# Fri, 02 Jun 2017 20:45:55 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:34:41 GMT
+# Fri, 02 Jun 2017 20:45:56 GMT
 CMD ["php" "-a"]
 ```
 
@@ -2962,19 +2962,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:47:04 GMT  
 		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34cf541b30295c4dcf107e1e60cf4bd292b95919bdd58a5f22a4bb9b53722131`  
-		Last Modified: Sat, 13 May 2017 01:47:07 GMT  
-		Size: 9.5 MB (9467339 bytes)  
+	-	`sha256:ec7c37c896ec3dc1a4f421405a3f657aad8203e934fb443359f6fa00421e803f`  
+		Last Modified: Sat, 03 Jun 2017 00:18:04 GMT  
+		Size: 9.5 MB (9467614 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a972172a59df61cf08e05a42b3b756ea13fa27846a38f127e1252555c7ea0ac1`  
-		Last Modified: Sat, 13 May 2017 01:47:05 GMT  
-		Size: 2.1 KB (2116 bytes)  
+	-	`sha256:1d6d48ba63cf08d0b1d437336ea7f4249ceb32907609e2fbc656a0ee2f26dd8c`  
+		Last Modified: Sat, 03 Jun 2017 00:18:01 GMT  
+		Size: 2.1 KB (2118 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.1.5-zts-alpine`
 
 ```console
-$ docker pull php@sha256:6a98db5a5cc07f159bbfbb6761a4e4a6d595a566b35b26d63932f67ffa23e95e
+$ docker pull php@sha256:3cccc6df126f29f845e72feaff7212f13fd4027760a62d95fcd13b1228723cc2
 ```
 
 -	Platforms:
@@ -2984,9 +2984,9 @@ $ docker pull php@sha256:6a98db5a5cc07f159bbfbb6761a4e4a6d595a566b35b26d63932f67
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.3 MB (27275659 bytes)**  
+-	Total Size: **27.3 MB (27327765 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:94c9f6521c9cc506f49b15c03d9542cdbfbe5703f5581819e05013573bca0bcd`
+-	Image ID: `sha256:2713cf8035ace782a24d138d272901bfda49c3c2a98837f8efa9116aeb81f4a2`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -3025,13 +3025,13 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Fri, 26 May 2017 14:54:30 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Fri, 26 May 2017 14:58:15 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Fri, 26 May 2017 14:58:17 GMT
+# Fri, 02 Jun 2017 20:50:31 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 20:59:15 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Fri, 26 May 2017 14:58:17 GMT
+# Fri, 02 Jun 2017 20:59:16 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 26 May 2017 14:58:18 GMT
+# Fri, 02 Jun 2017 20:59:17 GMT
 CMD ["php" "-a"]
 ```
 
@@ -3060,19 +3060,19 @@ CMD ["php" "-a"]
 		Last Modified: Fri, 26 May 2017 15:33:16 GMT  
 		Size: 487.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05406a365b3b7827c3b627ad5f5edeb8f73dd0ae7e124022de180f114057ae94`  
-		Last Modified: Fri, 26 May 2017 15:33:16 GMT  
-		Size: 10.8 MB (10835859 bytes)  
+	-	`sha256:9714df670e6d19f765ef429df134bde5bf2bd62797ff478c56a115641bfc7d7e`  
+		Last Modified: Sat, 03 Jun 2017 00:20:01 GMT  
+		Size: 10.9 MB (10887965 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5c9452618ac69ecfa5bd3c408190e2c9402d0e350ae868a971a1d88ba0465df`  
-		Last Modified: Fri, 26 May 2017 15:33:14 GMT  
+	-	`sha256:4576128251d985693cb728b4c29e27a964c73cd8e7ea4eda745f6d74975df3db`  
+		Last Modified: Sat, 03 Jun 2017 00:19:55 GMT  
 		Size: 2.1 KB (2107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.1-zts-alpine`
 
 ```console
-$ docker pull php@sha256:6a98db5a5cc07f159bbfbb6761a4e4a6d595a566b35b26d63932f67ffa23e95e
+$ docker pull php@sha256:3cccc6df126f29f845e72feaff7212f13fd4027760a62d95fcd13b1228723cc2
 ```
 
 -	Platforms:
@@ -3082,9 +3082,9 @@ $ docker pull php@sha256:6a98db5a5cc07f159bbfbb6761a4e4a6d595a566b35b26d63932f67
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.3 MB (27275659 bytes)**  
+-	Total Size: **27.3 MB (27327765 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:94c9f6521c9cc506f49b15c03d9542cdbfbe5703f5581819e05013573bca0bcd`
+-	Image ID: `sha256:2713cf8035ace782a24d138d272901bfda49c3c2a98837f8efa9116aeb81f4a2`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -3123,13 +3123,13 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Fri, 26 May 2017 14:54:30 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Fri, 26 May 2017 14:58:15 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Fri, 26 May 2017 14:58:17 GMT
+# Fri, 02 Jun 2017 20:50:31 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 20:59:15 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Fri, 26 May 2017 14:58:17 GMT
+# Fri, 02 Jun 2017 20:59:16 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 26 May 2017 14:58:18 GMT
+# Fri, 02 Jun 2017 20:59:17 GMT
 CMD ["php" "-a"]
 ```
 
@@ -3158,19 +3158,19 @@ CMD ["php" "-a"]
 		Last Modified: Fri, 26 May 2017 15:33:16 GMT  
 		Size: 487.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05406a365b3b7827c3b627ad5f5edeb8f73dd0ae7e124022de180f114057ae94`  
-		Last Modified: Fri, 26 May 2017 15:33:16 GMT  
-		Size: 10.8 MB (10835859 bytes)  
+	-	`sha256:9714df670e6d19f765ef429df134bde5bf2bd62797ff478c56a115641bfc7d7e`  
+		Last Modified: Sat, 03 Jun 2017 00:20:01 GMT  
+		Size: 10.9 MB (10887965 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5c9452618ac69ecfa5bd3c408190e2c9402d0e350ae868a971a1d88ba0465df`  
-		Last Modified: Fri, 26 May 2017 15:33:14 GMT  
+	-	`sha256:4576128251d985693cb728b4c29e27a964c73cd8e7ea4eda745f6d74975df3db`  
+		Last Modified: Sat, 03 Jun 2017 00:19:55 GMT  
 		Size: 2.1 KB (2107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7-zts-alpine`
 
 ```console
-$ docker pull php@sha256:6a98db5a5cc07f159bbfbb6761a4e4a6d595a566b35b26d63932f67ffa23e95e
+$ docker pull php@sha256:3cccc6df126f29f845e72feaff7212f13fd4027760a62d95fcd13b1228723cc2
 ```
 
 -	Platforms:
@@ -3180,9 +3180,9 @@ $ docker pull php@sha256:6a98db5a5cc07f159bbfbb6761a4e4a6d595a566b35b26d63932f67
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.3 MB (27275659 bytes)**  
+-	Total Size: **27.3 MB (27327765 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:94c9f6521c9cc506f49b15c03d9542cdbfbe5703f5581819e05013573bca0bcd`
+-	Image ID: `sha256:2713cf8035ace782a24d138d272901bfda49c3c2a98837f8efa9116aeb81f4a2`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -3221,13 +3221,13 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Fri, 26 May 2017 14:54:30 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Fri, 26 May 2017 14:58:15 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Fri, 26 May 2017 14:58:17 GMT
+# Fri, 02 Jun 2017 20:50:31 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 20:59:15 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Fri, 26 May 2017 14:58:17 GMT
+# Fri, 02 Jun 2017 20:59:16 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 26 May 2017 14:58:18 GMT
+# Fri, 02 Jun 2017 20:59:17 GMT
 CMD ["php" "-a"]
 ```
 
@@ -3256,19 +3256,19 @@ CMD ["php" "-a"]
 		Last Modified: Fri, 26 May 2017 15:33:16 GMT  
 		Size: 487.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05406a365b3b7827c3b627ad5f5edeb8f73dd0ae7e124022de180f114057ae94`  
-		Last Modified: Fri, 26 May 2017 15:33:16 GMT  
-		Size: 10.8 MB (10835859 bytes)  
+	-	`sha256:9714df670e6d19f765ef429df134bde5bf2bd62797ff478c56a115641bfc7d7e`  
+		Last Modified: Sat, 03 Jun 2017 00:20:01 GMT  
+		Size: 10.9 MB (10887965 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5c9452618ac69ecfa5bd3c408190e2c9402d0e350ae868a971a1d88ba0465df`  
-		Last Modified: Fri, 26 May 2017 15:33:14 GMT  
+	-	`sha256:4576128251d985693cb728b4c29e27a964c73cd8e7ea4eda745f6d74975df3db`  
+		Last Modified: Sat, 03 Jun 2017 00:19:55 GMT  
 		Size: 2.1 KB (2107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:zts-alpine`
 
 ```console
-$ docker pull php@sha256:6a98db5a5cc07f159bbfbb6761a4e4a6d595a566b35b26d63932f67ffa23e95e
+$ docker pull php@sha256:3cccc6df126f29f845e72feaff7212f13fd4027760a62d95fcd13b1228723cc2
 ```
 
 -	Platforms:
@@ -3278,9 +3278,9 @@ $ docker pull php@sha256:6a98db5a5cc07f159bbfbb6761a4e4a6d595a566b35b26d63932f67
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.3 MB (27275659 bytes)**  
+-	Total Size: **27.3 MB (27327765 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:94c9f6521c9cc506f49b15c03d9542cdbfbe5703f5581819e05013573bca0bcd`
+-	Image ID: `sha256:2713cf8035ace782a24d138d272901bfda49c3c2a98837f8efa9116aeb81f4a2`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -3319,13 +3319,13 @@ ENV PHP_SHA256=d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Fri, 26 May 2017 14:54:30 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Fri, 26 May 2017 14:58:15 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Fri, 26 May 2017 14:58:17 GMT
+# Fri, 02 Jun 2017 20:50:31 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 20:59:15 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Fri, 26 May 2017 14:58:17 GMT
+# Fri, 02 Jun 2017 20:59:16 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 26 May 2017 14:58:18 GMT
+# Fri, 02 Jun 2017 20:59:17 GMT
 CMD ["php" "-a"]
 ```
 
@@ -3354,19 +3354,19 @@ CMD ["php" "-a"]
 		Last Modified: Fri, 26 May 2017 15:33:16 GMT  
 		Size: 487.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05406a365b3b7827c3b627ad5f5edeb8f73dd0ae7e124022de180f114057ae94`  
-		Last Modified: Fri, 26 May 2017 15:33:16 GMT  
-		Size: 10.8 MB (10835859 bytes)  
+	-	`sha256:9714df670e6d19f765ef429df134bde5bf2bd62797ff478c56a115641bfc7d7e`  
+		Last Modified: Sat, 03 Jun 2017 00:20:01 GMT  
+		Size: 10.9 MB (10887965 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5c9452618ac69ecfa5bd3c408190e2c9402d0e350ae868a971a1d88ba0465df`  
-		Last Modified: Fri, 26 May 2017 15:33:14 GMT  
+	-	`sha256:4576128251d985693cb728b4c29e27a964c73cd8e7ea4eda745f6d74975df3db`  
+		Last Modified: Sat, 03 Jun 2017 00:19:55 GMT  
 		Size: 2.1 KB (2107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.0.19-cli`
 
 ```console
-$ docker pull php@sha256:c60bfb88addbfb3557e0bb72c62c9ccd4920261c0e91e430a81238ddec96f8f5
+$ docker pull php@sha256:ed3f406c06a02ebda8de24dee81e81a1cf2ef3e4178569e4e04064ccc6e3000d
 ```
 
 -	Platforms:
@@ -3376,9 +3376,9 @@ $ docker pull php@sha256:c60bfb88addbfb3557e0bb72c62c9ccd4920261c0e91e430a81238d
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.8 MB (156778791 bytes)**  
+-	Total Size: **156.8 MB (156779140 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53bdcdb522d03517fb6468b5b48d2c30322ee8d78ef3aad10529c6e4aa536b4b`
+-	Image ID: `sha256:0aae3eb70854756ec42a57df0035f5b4e0f0a9018dffd389b2ddfd5708d84444`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -3413,13 +3413,13 @@ ENV PHP_SHA256=640e5e3377d15a6d19adce2b94a9d876eeddabdb862d154a5e347987f4225ef6 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 00:44:19 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:48:08 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:48:10 GMT
+# Fri, 02 Jun 2017 21:03:36 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 21:03:39 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 00:48:11 GMT
+# Fri, 02 Jun 2017 21:32:51 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:48:11 GMT
+# Fri, 02 Jun 2017 21:33:13 GMT
 CMD ["php" "-a"]
 ```
 
@@ -3444,19 +3444,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:50:19 GMT  
 		Size: 496.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4cb51301bfda0f96ab05da3a934e2735ee08d9ef8296ab912fd95b1e006eb2c0`  
-		Last Modified: Sat, 13 May 2017 01:50:23 GMT  
-		Size: 9.0 MB (8983268 bytes)  
+	-	`sha256:caf9ce30e1a49de094810f42b42b45a53154aa6c999777391ba7af65e1c0cb8a`  
+		Last Modified: Sat, 03 Jun 2017 00:21:45 GMT  
+		Size: 9.0 MB (8983615 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c81a3c0138784efdb05fb3da578aa96245d241c6b65fcd333ec252e16129257d`  
-		Last Modified: Sat, 13 May 2017 01:50:19 GMT  
-		Size: 2.1 KB (2115 bytes)  
+	-	`sha256:d07d3d119e1d25230fa6ed9506ad887dba9443cb0e71bd85c9ff90613b2dc7d2`  
+		Last Modified: Sat, 03 Jun 2017 00:21:41 GMT  
+		Size: 2.1 KB (2117 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.0-cli`
 
 ```console
-$ docker pull php@sha256:c60bfb88addbfb3557e0bb72c62c9ccd4920261c0e91e430a81238ddec96f8f5
+$ docker pull php@sha256:ed3f406c06a02ebda8de24dee81e81a1cf2ef3e4178569e4e04064ccc6e3000d
 ```
 
 -	Platforms:
@@ -3466,9 +3466,9 @@ $ docker pull php@sha256:c60bfb88addbfb3557e0bb72c62c9ccd4920261c0e91e430a81238d
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.8 MB (156778791 bytes)**  
+-	Total Size: **156.8 MB (156779140 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53bdcdb522d03517fb6468b5b48d2c30322ee8d78ef3aad10529c6e4aa536b4b`
+-	Image ID: `sha256:0aae3eb70854756ec42a57df0035f5b4e0f0a9018dffd389b2ddfd5708d84444`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -3503,13 +3503,13 @@ ENV PHP_SHA256=640e5e3377d15a6d19adce2b94a9d876eeddabdb862d154a5e347987f4225ef6 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 00:44:19 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:48:08 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:48:10 GMT
+# Fri, 02 Jun 2017 21:03:36 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 21:03:39 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 00:48:11 GMT
+# Fri, 02 Jun 2017 21:32:51 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:48:11 GMT
+# Fri, 02 Jun 2017 21:33:13 GMT
 CMD ["php" "-a"]
 ```
 
@@ -3534,19 +3534,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:50:19 GMT  
 		Size: 496.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4cb51301bfda0f96ab05da3a934e2735ee08d9ef8296ab912fd95b1e006eb2c0`  
-		Last Modified: Sat, 13 May 2017 01:50:23 GMT  
-		Size: 9.0 MB (8983268 bytes)  
+	-	`sha256:caf9ce30e1a49de094810f42b42b45a53154aa6c999777391ba7af65e1c0cb8a`  
+		Last Modified: Sat, 03 Jun 2017 00:21:45 GMT  
+		Size: 9.0 MB (8983615 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c81a3c0138784efdb05fb3da578aa96245d241c6b65fcd333ec252e16129257d`  
-		Last Modified: Sat, 13 May 2017 01:50:19 GMT  
-		Size: 2.1 KB (2115 bytes)  
+	-	`sha256:d07d3d119e1d25230fa6ed9506ad887dba9443cb0e71bd85c9ff90613b2dc7d2`  
+		Last Modified: Sat, 03 Jun 2017 00:21:41 GMT  
+		Size: 2.1 KB (2117 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.0.19`
 
 ```console
-$ docker pull php@sha256:c60bfb88addbfb3557e0bb72c62c9ccd4920261c0e91e430a81238ddec96f8f5
+$ docker pull php@sha256:ed3f406c06a02ebda8de24dee81e81a1cf2ef3e4178569e4e04064ccc6e3000d
 ```
 
 -	Platforms:
@@ -3556,9 +3556,9 @@ $ docker pull php@sha256:c60bfb88addbfb3557e0bb72c62c9ccd4920261c0e91e430a81238d
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.8 MB (156778791 bytes)**  
+-	Total Size: **156.8 MB (156779140 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53bdcdb522d03517fb6468b5b48d2c30322ee8d78ef3aad10529c6e4aa536b4b`
+-	Image ID: `sha256:0aae3eb70854756ec42a57df0035f5b4e0f0a9018dffd389b2ddfd5708d84444`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -3593,13 +3593,13 @@ ENV PHP_SHA256=640e5e3377d15a6d19adce2b94a9d876eeddabdb862d154a5e347987f4225ef6 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 00:44:19 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:48:08 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:48:10 GMT
+# Fri, 02 Jun 2017 21:03:36 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 21:03:39 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 00:48:11 GMT
+# Fri, 02 Jun 2017 21:32:51 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:48:11 GMT
+# Fri, 02 Jun 2017 21:33:13 GMT
 CMD ["php" "-a"]
 ```
 
@@ -3624,19 +3624,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:50:19 GMT  
 		Size: 496.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4cb51301bfda0f96ab05da3a934e2735ee08d9ef8296ab912fd95b1e006eb2c0`  
-		Last Modified: Sat, 13 May 2017 01:50:23 GMT  
-		Size: 9.0 MB (8983268 bytes)  
+	-	`sha256:caf9ce30e1a49de094810f42b42b45a53154aa6c999777391ba7af65e1c0cb8a`  
+		Last Modified: Sat, 03 Jun 2017 00:21:45 GMT  
+		Size: 9.0 MB (8983615 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c81a3c0138784efdb05fb3da578aa96245d241c6b65fcd333ec252e16129257d`  
-		Last Modified: Sat, 13 May 2017 01:50:19 GMT  
-		Size: 2.1 KB (2115 bytes)  
+	-	`sha256:d07d3d119e1d25230fa6ed9506ad887dba9443cb0e71bd85c9ff90613b2dc7d2`  
+		Last Modified: Sat, 03 Jun 2017 00:21:41 GMT  
+		Size: 2.1 KB (2117 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.0`
 
 ```console
-$ docker pull php@sha256:c60bfb88addbfb3557e0bb72c62c9ccd4920261c0e91e430a81238ddec96f8f5
+$ docker pull php@sha256:ed3f406c06a02ebda8de24dee81e81a1cf2ef3e4178569e4e04064ccc6e3000d
 ```
 
 -	Platforms:
@@ -3646,9 +3646,9 @@ $ docker pull php@sha256:c60bfb88addbfb3557e0bb72c62c9ccd4920261c0e91e430a81238d
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.8 MB (156778791 bytes)**  
+-	Total Size: **156.8 MB (156779140 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53bdcdb522d03517fb6468b5b48d2c30322ee8d78ef3aad10529c6e4aa536b4b`
+-	Image ID: `sha256:0aae3eb70854756ec42a57df0035f5b4e0f0a9018dffd389b2ddfd5708d84444`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -3683,13 +3683,13 @@ ENV PHP_SHA256=640e5e3377d15a6d19adce2b94a9d876eeddabdb862d154a5e347987f4225ef6 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 00:44:19 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:48:08 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:48:10 GMT
+# Fri, 02 Jun 2017 21:03:36 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 21:03:39 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 00:48:11 GMT
+# Fri, 02 Jun 2017 21:32:51 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:48:11 GMT
+# Fri, 02 Jun 2017 21:33:13 GMT
 CMD ["php" "-a"]
 ```
 
@@ -3714,19 +3714,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:50:19 GMT  
 		Size: 496.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4cb51301bfda0f96ab05da3a934e2735ee08d9ef8296ab912fd95b1e006eb2c0`  
-		Last Modified: Sat, 13 May 2017 01:50:23 GMT  
-		Size: 9.0 MB (8983268 bytes)  
+	-	`sha256:caf9ce30e1a49de094810f42b42b45a53154aa6c999777391ba7af65e1c0cb8a`  
+		Last Modified: Sat, 03 Jun 2017 00:21:45 GMT  
+		Size: 9.0 MB (8983615 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c81a3c0138784efdb05fb3da578aa96245d241c6b65fcd333ec252e16129257d`  
-		Last Modified: Sat, 13 May 2017 01:50:19 GMT  
-		Size: 2.1 KB (2115 bytes)  
+	-	`sha256:d07d3d119e1d25230fa6ed9506ad887dba9443cb0e71bd85c9ff90613b2dc7d2`  
+		Last Modified: Sat, 03 Jun 2017 00:21:41 GMT  
+		Size: 2.1 KB (2117 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.0.19-alpine`
 
 ```console
-$ docker pull php@sha256:032a9802b13e1fcde67bb137550a3ebcd0c7f500788b9c96d5e486de8198f593
+$ docker pull php@sha256:014344daef545d0025bdf0ac181d568086f5c142c1fed17a67c7eb52a18b6e62
 ```
 
 -	Platforms:
@@ -3736,9 +3736,9 @@ $ docker pull php@sha256:032a9802b13e1fcde67bb137550a3ebcd0c7f500788b9c96d5e486d
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.6 MB (26602166 bytes)**  
+-	Total Size: **26.6 MB (26646770 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8e0b7ce51e13cb1338f88ca780840a0fdca07fbc5669d1c3f0126add5befe571`
+-	Image ID: `sha256:48fc2b4cf76d93254b8792cbf2a3fcc061a826d5f44ee48190e10ffc0b38631d`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -3775,13 +3775,13 @@ ENV PHP_SHA256=640e5e3377d15a6d19adce2b94a9d876eeddabdb862d154a5e347987f4225ef6 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Fri, 26 May 2017 14:58:52 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Fri, 26 May 2017 15:02:13 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Fri, 26 May 2017 15:02:15 GMT
+# Fri, 02 Jun 2017 21:37:41 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 21:49:14 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Fri, 26 May 2017 15:02:16 GMT
+# Fri, 02 Jun 2017 21:49:15 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 26 May 2017 15:02:16 GMT
+# Fri, 02 Jun 2017 21:49:37 GMT
 CMD ["php" "-a"]
 ```
 
@@ -3810,19 +3810,19 @@ CMD ["php" "-a"]
 		Last Modified: Fri, 26 May 2017 15:36:26 GMT  
 		Size: 485.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69e142234e83a67a353b8006404caeab1f0e810961ec7da41d3ff141814c0ef2`  
-		Last Modified: Fri, 26 May 2017 15:36:28 GMT  
-		Size: 10.4 MB (10364730 bytes)  
+	-	`sha256:b3dc051854c4a77ae66355f770dd7df46e7072f101e4a75cb93f730e95c020d8`  
+		Last Modified: Sat, 03 Jun 2017 00:23:29 GMT  
+		Size: 10.4 MB (10409335 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38d330f46143dcbf5b3289bacf51c1ae1edd2800f82f1a5661ae3499afcea7de`  
-		Last Modified: Fri, 26 May 2017 15:36:26 GMT  
-		Size: 2.1 KB (2107 bytes)  
+	-	`sha256:a810b93c5eb0c800ecd3eb5c22e6c1bbb076abc9621d1a46e9dcc0a8bd8ebf90`  
+		Last Modified: Sat, 03 Jun 2017 00:23:25 GMT  
+		Size: 2.1 KB (2106 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.0-alpine`
 
 ```console
-$ docker pull php@sha256:032a9802b13e1fcde67bb137550a3ebcd0c7f500788b9c96d5e486de8198f593
+$ docker pull php@sha256:014344daef545d0025bdf0ac181d568086f5c142c1fed17a67c7eb52a18b6e62
 ```
 
 -	Platforms:
@@ -3832,9 +3832,9 @@ $ docker pull php@sha256:032a9802b13e1fcde67bb137550a3ebcd0c7f500788b9c96d5e486d
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.6 MB (26602166 bytes)**  
+-	Total Size: **26.6 MB (26646770 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8e0b7ce51e13cb1338f88ca780840a0fdca07fbc5669d1c3f0126add5befe571`
+-	Image ID: `sha256:48fc2b4cf76d93254b8792cbf2a3fcc061a826d5f44ee48190e10ffc0b38631d`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -3871,13 +3871,13 @@ ENV PHP_SHA256=640e5e3377d15a6d19adce2b94a9d876eeddabdb862d154a5e347987f4225ef6 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Fri, 26 May 2017 14:58:52 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Fri, 26 May 2017 15:02:13 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Fri, 26 May 2017 15:02:15 GMT
+# Fri, 02 Jun 2017 21:37:41 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 21:49:14 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Fri, 26 May 2017 15:02:16 GMT
+# Fri, 02 Jun 2017 21:49:15 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 26 May 2017 15:02:16 GMT
+# Fri, 02 Jun 2017 21:49:37 GMT
 CMD ["php" "-a"]
 ```
 
@@ -3906,19 +3906,19 @@ CMD ["php" "-a"]
 		Last Modified: Fri, 26 May 2017 15:36:26 GMT  
 		Size: 485.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:69e142234e83a67a353b8006404caeab1f0e810961ec7da41d3ff141814c0ef2`  
-		Last Modified: Fri, 26 May 2017 15:36:28 GMT  
-		Size: 10.4 MB (10364730 bytes)  
+	-	`sha256:b3dc051854c4a77ae66355f770dd7df46e7072f101e4a75cb93f730e95c020d8`  
+		Last Modified: Sat, 03 Jun 2017 00:23:29 GMT  
+		Size: 10.4 MB (10409335 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38d330f46143dcbf5b3289bacf51c1ae1edd2800f82f1a5661ae3499afcea7de`  
-		Last Modified: Fri, 26 May 2017 15:36:26 GMT  
-		Size: 2.1 KB (2107 bytes)  
+	-	`sha256:a810b93c5eb0c800ecd3eb5c22e6c1bbb076abc9621d1a46e9dcc0a8bd8ebf90`  
+		Last Modified: Sat, 03 Jun 2017 00:23:25 GMT  
+		Size: 2.1 KB (2106 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.0.19-apache`
 
 ```console
-$ docker pull php@sha256:2f52564c919bef8efb56b12ee6490b03c41af0c37823a6bc0930cfa4586d09f4
+$ docker pull php@sha256:9bec874758f731e5e4e2908744a5e2abfc8bbb6c94425b8abd8d6ef3b5938288
 ```
 
 -	Platforms:
@@ -3928,9 +3928,9 @@ $ docker pull php@sha256:2f52564c919bef8efb56b12ee6490b03c41af0c37823a6bc0930cfa
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **163.8 MB (163818340 bytes)**  
+-	Total Size: **164.1 MB (164071751 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23f9c84560a65c127f6d178fd2c6d4f33ba580869fe0259287d5124b0e93cd20`
+-	Image ID: `sha256:a4322279ced1dc12d46a79ebe632c1507b384b5439c108018dce14ad468dd955`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -3983,19 +3983,19 @@ ENV PHP_SHA256=640e5e3377d15a6d19adce2b94a9d876eeddabdb862d154a5e347987f4225ef6 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 00:52:46 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:55:08 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:55:10 GMT
+# Fri, 02 Jun 2017 21:54:48 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 21:58:20 GMT
 COPY multi:3775aa35856908376b7ea71c79fad1e546e92e4ef56dcfc5821b2cc6e2ed6cdc in /usr/local/bin/ 
-# Sat, 13 May 2017 00:55:10 GMT
+# Fri, 02 Jun 2017 21:59:24 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:55:11 GMT
+# Fri, 02 Jun 2017 21:59:46 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Sat, 13 May 2017 00:55:12 GMT
+# Fri, 02 Jun 2017 21:59:47 GMT
 WORKDIR /var/www/html
-# Sat, 13 May 2017 00:55:13 GMT
+# Fri, 02 Jun 2017 21:59:48 GMT
 EXPOSE 80/tcp
-# Sat, 13 May 2017 00:55:14 GMT
+# Fri, 02 Jun 2017 22:00:09 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -4040,23 +4040,23 @@ CMD ["apache2-foreground"]
 		Last Modified: Sat, 13 May 2017 01:52:47 GMT  
 		Size: 493.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0aecbd237b32468bd637be55aa8b61a27d1d57a49eb19412c36aa5d9c602dfbd`  
-		Last Modified: Sat, 13 May 2017 01:52:49 GMT  
-		Size: 13.2 MB (13213403 bytes)  
+	-	`sha256:4d3b68c01e8a43621c992fdc4edf2146f0c3c15ae2aef10c05865dad007ed6bd`  
+		Last Modified: Sat, 03 Jun 2017 00:24:29 GMT  
+		Size: 13.5 MB (13466813 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79b4b986d794586a556be22876053d9a61b92b619f00f630bbe5c7ed21cdff2f`  
-		Last Modified: Sat, 13 May 2017 01:52:46 GMT  
-		Size: 2.1 KB (2126 bytes)  
+	-	`sha256:855c8caa7af5904a08b942f179317beb6fb410273057bb5ce60a08b964505fa1`  
+		Last Modified: Sat, 03 Jun 2017 00:24:23 GMT  
+		Size: 2.1 KB (2127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d9a245edba86a77326983836fd3e81028b9d2c40008d6d2275a6773aa4f6559`  
-		Last Modified: Sat, 13 May 2017 01:52:48 GMT  
+	-	`sha256:cd53b61c5ad76c4e556e4acaebbdd979f6fb0c286bba5b899e2b7690e7a8029c`  
+		Last Modified: Sat, 03 Jun 2017 00:24:23 GMT  
 		Size: 893.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.0-apache`
 
 ```console
-$ docker pull php@sha256:2f52564c919bef8efb56b12ee6490b03c41af0c37823a6bc0930cfa4586d09f4
+$ docker pull php@sha256:9bec874758f731e5e4e2908744a5e2abfc8bbb6c94425b8abd8d6ef3b5938288
 ```
 
 -	Platforms:
@@ -4066,9 +4066,9 @@ $ docker pull php@sha256:2f52564c919bef8efb56b12ee6490b03c41af0c37823a6bc0930cfa
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **163.8 MB (163818340 bytes)**  
+-	Total Size: **164.1 MB (164071751 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23f9c84560a65c127f6d178fd2c6d4f33ba580869fe0259287d5124b0e93cd20`
+-	Image ID: `sha256:a4322279ced1dc12d46a79ebe632c1507b384b5439c108018dce14ad468dd955`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -4121,19 +4121,19 @@ ENV PHP_SHA256=640e5e3377d15a6d19adce2b94a9d876eeddabdb862d154a5e347987f4225ef6 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 00:52:46 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:55:08 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:55:10 GMT
+# Fri, 02 Jun 2017 21:54:48 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 21:58:20 GMT
 COPY multi:3775aa35856908376b7ea71c79fad1e546e92e4ef56dcfc5821b2cc6e2ed6cdc in /usr/local/bin/ 
-# Sat, 13 May 2017 00:55:10 GMT
+# Fri, 02 Jun 2017 21:59:24 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:55:11 GMT
+# Fri, 02 Jun 2017 21:59:46 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Sat, 13 May 2017 00:55:12 GMT
+# Fri, 02 Jun 2017 21:59:47 GMT
 WORKDIR /var/www/html
-# Sat, 13 May 2017 00:55:13 GMT
+# Fri, 02 Jun 2017 21:59:48 GMT
 EXPOSE 80/tcp
-# Sat, 13 May 2017 00:55:14 GMT
+# Fri, 02 Jun 2017 22:00:09 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -4178,23 +4178,23 @@ CMD ["apache2-foreground"]
 		Last Modified: Sat, 13 May 2017 01:52:47 GMT  
 		Size: 493.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0aecbd237b32468bd637be55aa8b61a27d1d57a49eb19412c36aa5d9c602dfbd`  
-		Last Modified: Sat, 13 May 2017 01:52:49 GMT  
-		Size: 13.2 MB (13213403 bytes)  
+	-	`sha256:4d3b68c01e8a43621c992fdc4edf2146f0c3c15ae2aef10c05865dad007ed6bd`  
+		Last Modified: Sat, 03 Jun 2017 00:24:29 GMT  
+		Size: 13.5 MB (13466813 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79b4b986d794586a556be22876053d9a61b92b619f00f630bbe5c7ed21cdff2f`  
-		Last Modified: Sat, 13 May 2017 01:52:46 GMT  
-		Size: 2.1 KB (2126 bytes)  
+	-	`sha256:855c8caa7af5904a08b942f179317beb6fb410273057bb5ce60a08b964505fa1`  
+		Last Modified: Sat, 03 Jun 2017 00:24:23 GMT  
+		Size: 2.1 KB (2127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d9a245edba86a77326983836fd3e81028b9d2c40008d6d2275a6773aa4f6559`  
-		Last Modified: Sat, 13 May 2017 01:52:48 GMT  
+	-	`sha256:cd53b61c5ad76c4e556e4acaebbdd979f6fb0c286bba5b899e2b7690e7a8029c`  
+		Last Modified: Sat, 03 Jun 2017 00:24:23 GMT  
 		Size: 893.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.0.19-fpm`
 
 ```console
-$ docker pull php@sha256:77d4e6b05a8ac94749234ac5c8c0f0066decd921d1d517ac295bae628946f884
+$ docker pull php@sha256:22c84ea0a9c3738e0e3fc40c99bbfe9af3b232f4a70ee1d5b456000f5cc1c860
 ```
 
 -	Platforms:
@@ -4204,9 +4204,9 @@ $ docker pull php@sha256:77d4e6b05a8ac94749234ac5c8c0f0066decd921d1d517ac295bae6
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.5 MB (160484107 bytes)**  
+-	Total Size: **160.5 MB (160484537 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d74820ed93fa1691a8075745659111231508fdab570cde389eae9f87b49181da`
+-	Image ID: `sha256:bc54aeaf044fdff2f3e672cac08416bdad56e58c7aa62bc0adcc04a39c084187`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -4243,19 +4243,19 @@ ENV PHP_SHA256=640e5e3377d15a6d19adce2b94a9d876eeddabdb862d154a5e347987f4225ef6 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 00:55:50 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:59:11 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:59:13 GMT
+# Fri, 02 Jun 2017 22:04:37 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 22:04:39 GMT
 COPY multi:1401feee8064a06ad514519ec870939c946ecfdf381c82a90cb2035486938ee9 in /usr/local/bin/ 
-# Sat, 13 May 2017 00:59:14 GMT
+# Fri, 02 Jun 2017 22:04:40 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:59:15 GMT
+# Fri, 02 Jun 2017 22:04:41 GMT
 WORKDIR /var/www/html
-# Sat, 13 May 2017 00:59:16 GMT
+# Fri, 02 Jun 2017 22:04:42 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Sat, 13 May 2017 00:59:17 GMT
+# Fri, 02 Jun 2017 22:04:43 GMT
 EXPOSE 9000/tcp
-# Sat, 13 May 2017 00:59:17 GMT
+# Fri, 02 Jun 2017 22:04:44 GMT
 CMD ["php-fpm"]
 ```
 
@@ -4280,27 +4280,27 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 13 May 2017 01:53:40 GMT  
 		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41cdcffeb92b96cafa395daff69a490f10f28ed56c1eb2acbbecf0288e1efb59`  
-		Last Modified: Sat, 13 May 2017 01:53:44 GMT  
-		Size: 12.7 MB (12680785 bytes)  
+	-	`sha256:037b834882f6121e2e69f6d88a6e22d134b95808ea0c5d27ad6e4c04ff387ee9`  
+		Last Modified: Sat, 03 Jun 2017 00:25:36 GMT  
+		Size: 12.7 MB (12681216 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97cfd9a0d26da7fd962483852db32dc38bf444e4cdc824c31fb01856a57bc885`  
-		Last Modified: Sat, 13 May 2017 01:53:40 GMT  
-		Size: 2.1 KB (2121 bytes)  
+	-	`sha256:cc4715d7b26b39034924afcbbda7a3ebdbf0e54321adff3ef43e565ad56267a9`  
+		Last Modified: Sat, 03 Jun 2017 00:25:33 GMT  
+		Size: 2.1 KB (2117 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4014832152ebf117150fcfa5f03b0289b24d0f7549a6fcf13c8bacc191a71908`  
-		Last Modified: Sat, 13 May 2017 01:53:40 GMT  
-		Size: 128.0 B  
+	-	`sha256:fb34193e355ccb1dccb52c3bd149ef426527959a21262da05e8542b9b783265b`  
+		Last Modified: Sat, 03 Jun 2017 00:25:33 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff822fef0e1da70a7d96978e78dec861cc68bbfb849576d8e2cf19cdf9ac7b02`  
-		Last Modified: Sat, 13 May 2017 01:53:40 GMT  
-		Size: 7.7 KB (7667 bytes)  
+	-	`sha256:36be2b3ef942e85106d6dec33040d54a0ed485af90dbecafe478e8028893686e`  
+		Last Modified: Sat, 03 Jun 2017 00:25:34 GMT  
+		Size: 7.7 KB (7668 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.0-fpm`
 
 ```console
-$ docker pull php@sha256:77d4e6b05a8ac94749234ac5c8c0f0066decd921d1d517ac295bae628946f884
+$ docker pull php@sha256:22c84ea0a9c3738e0e3fc40c99bbfe9af3b232f4a70ee1d5b456000f5cc1c860
 ```
 
 -	Platforms:
@@ -4310,9 +4310,9 @@ $ docker pull php@sha256:77d4e6b05a8ac94749234ac5c8c0f0066decd921d1d517ac295bae6
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.5 MB (160484107 bytes)**  
+-	Total Size: **160.5 MB (160484537 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d74820ed93fa1691a8075745659111231508fdab570cde389eae9f87b49181da`
+-	Image ID: `sha256:bc54aeaf044fdff2f3e672cac08416bdad56e58c7aa62bc0adcc04a39c084187`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -4349,19 +4349,19 @@ ENV PHP_SHA256=640e5e3377d15a6d19adce2b94a9d876eeddabdb862d154a5e347987f4225ef6 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 00:55:50 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 00:59:11 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 00:59:13 GMT
+# Fri, 02 Jun 2017 22:04:37 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 22:04:39 GMT
 COPY multi:1401feee8064a06ad514519ec870939c946ecfdf381c82a90cb2035486938ee9 in /usr/local/bin/ 
-# Sat, 13 May 2017 00:59:14 GMT
+# Fri, 02 Jun 2017 22:04:40 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 00:59:15 GMT
+# Fri, 02 Jun 2017 22:04:41 GMT
 WORKDIR /var/www/html
-# Sat, 13 May 2017 00:59:16 GMT
+# Fri, 02 Jun 2017 22:04:42 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Sat, 13 May 2017 00:59:17 GMT
+# Fri, 02 Jun 2017 22:04:43 GMT
 EXPOSE 9000/tcp
-# Sat, 13 May 2017 00:59:17 GMT
+# Fri, 02 Jun 2017 22:04:44 GMT
 CMD ["php-fpm"]
 ```
 
@@ -4386,27 +4386,27 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 13 May 2017 01:53:40 GMT  
 		Size: 495.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:41cdcffeb92b96cafa395daff69a490f10f28ed56c1eb2acbbecf0288e1efb59`  
-		Last Modified: Sat, 13 May 2017 01:53:44 GMT  
-		Size: 12.7 MB (12680785 bytes)  
+	-	`sha256:037b834882f6121e2e69f6d88a6e22d134b95808ea0c5d27ad6e4c04ff387ee9`  
+		Last Modified: Sat, 03 Jun 2017 00:25:36 GMT  
+		Size: 12.7 MB (12681216 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:97cfd9a0d26da7fd962483852db32dc38bf444e4cdc824c31fb01856a57bc885`  
-		Last Modified: Sat, 13 May 2017 01:53:40 GMT  
-		Size: 2.1 KB (2121 bytes)  
+	-	`sha256:cc4715d7b26b39034924afcbbda7a3ebdbf0e54321adff3ef43e565ad56267a9`  
+		Last Modified: Sat, 03 Jun 2017 00:25:33 GMT  
+		Size: 2.1 KB (2117 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4014832152ebf117150fcfa5f03b0289b24d0f7549a6fcf13c8bacc191a71908`  
-		Last Modified: Sat, 13 May 2017 01:53:40 GMT  
-		Size: 128.0 B  
+	-	`sha256:fb34193e355ccb1dccb52c3bd149ef426527959a21262da05e8542b9b783265b`  
+		Last Modified: Sat, 03 Jun 2017 00:25:33 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff822fef0e1da70a7d96978e78dec861cc68bbfb849576d8e2cf19cdf9ac7b02`  
-		Last Modified: Sat, 13 May 2017 01:53:40 GMT  
-		Size: 7.7 KB (7667 bytes)  
+	-	`sha256:36be2b3ef942e85106d6dec33040d54a0ed485af90dbecafe478e8028893686e`  
+		Last Modified: Sat, 03 Jun 2017 00:25:34 GMT  
+		Size: 7.7 KB (7668 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.0.19-fpm-alpine`
 
 ```console
-$ docker pull php@sha256:f7cbbc156fbf3e7cfed494a27a8af225fe1126953bfdc5bd94a56ac15add12fb
+$ docker pull php@sha256:81c74d6880a283141c0f20541b41a0783238f054aac9faad6077c02bdbcfd188
 ```
 
 -	Platforms:
@@ -4416,9 +4416,9 @@ $ docker pull php@sha256:f7cbbc156fbf3e7cfed494a27a8af225fe1126953bfdc5bd94a56ac
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.3 MB (30304867 bytes)**  
+-	Total Size: **30.4 MB (30353772 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:636e39a288c458991aacae819ebaaee162f4d8f699d0451d05c803c7db33ec97`
+-	Image ID: `sha256:064894c767f6b1b8ba9527efc00df2d22b33d774661e30b2b3b25000caff5acf`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -4457,19 +4457,19 @@ ENV PHP_SHA256=640e5e3377d15a6d19adce2b94a9d876eeddabdb862d154a5e347987f4225ef6 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Fri, 26 May 2017 15:02:49 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Fri, 26 May 2017 15:06:15 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Fri, 26 May 2017 15:06:17 GMT
+# Fri, 02 Jun 2017 22:33:08 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 22:33:10 GMT
 COPY multi:1401feee8064a06ad514519ec870939c946ecfdf381c82a90cb2035486938ee9 in /usr/local/bin/ 
-# Fri, 26 May 2017 15:06:18 GMT
+# Fri, 02 Jun 2017 22:33:11 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 26 May 2017 15:06:18 GMT
+# Fri, 02 Jun 2017 22:33:12 GMT
 WORKDIR /var/www/html
-# Fri, 26 May 2017 15:06:20 GMT
+# Fri, 02 Jun 2017 22:33:13 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Fri, 26 May 2017 15:06:21 GMT
+# Fri, 02 Jun 2017 22:33:14 GMT
 EXPOSE 9000/tcp
-# Fri, 26 May 2017 15:06:21 GMT
+# Fri, 02 Jun 2017 22:33:14 GMT
 CMD ["php-fpm"]
 ```
 
@@ -4498,27 +4498,27 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 26 May 2017 15:38:56 GMT  
 		Size: 484.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efb46f99aeee7bf390bf8c3b37e081fc7b0973f5178fd00f1838617536b96c50`  
-		Last Modified: Fri, 26 May 2017 15:38:58 GMT  
-		Size: 14.1 MB (14059644 bytes)  
+	-	`sha256:f40ea297ded2da89df32d1a029191e9ad74a7413dffa360cc6268e6fd7c97833`  
+		Last Modified: Sat, 03 Jun 2017 00:26:39 GMT  
+		Size: 14.1 MB (14108550 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7be0078492bc2657aa9b7d5430827c67882fe5fa8f298d7cf3894ee2dd1d13d0`  
-		Last Modified: Fri, 26 May 2017 15:38:56 GMT  
+	-	`sha256:a1d3c87caea1926851807a8e4b577d7431051c71bdc6edf0b543de3fe55a0360`  
+		Last Modified: Sat, 03 Jun 2017 00:26:29 GMT  
 		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba81a0e17b2cdca00e27acdddaa4a9d83e3868804e58d42f3cd4fbddba828691`  
-		Last Modified: Fri, 26 May 2017 15:38:55 GMT  
+	-	`sha256:68d72e38a40761f0faf42f76dd2142f822013b47c5205f7724a0620c76115b76`  
+		Last Modified: Sat, 03 Jun 2017 00:26:30 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcc5954361df3c3b3f47844c62f38babad709b56d618cca32fc80cb84109bb0b`  
-		Last Modified: Fri, 26 May 2017 15:38:56 GMT  
-		Size: 7.7 KB (7655 bytes)  
+	-	`sha256:0bd38c16ccf0792b97a6602683f74b777bc2b8ff458ba9b467e2631705ab3b77`  
+		Last Modified: Sat, 03 Jun 2017 00:26:29 GMT  
+		Size: 7.7 KB (7654 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.0-fpm-alpine`
 
 ```console
-$ docker pull php@sha256:f7cbbc156fbf3e7cfed494a27a8af225fe1126953bfdc5bd94a56ac15add12fb
+$ docker pull php@sha256:81c74d6880a283141c0f20541b41a0783238f054aac9faad6077c02bdbcfd188
 ```
 
 -	Platforms:
@@ -4528,9 +4528,9 @@ $ docker pull php@sha256:f7cbbc156fbf3e7cfed494a27a8af225fe1126953bfdc5bd94a56ac
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.3 MB (30304867 bytes)**  
+-	Total Size: **30.4 MB (30353772 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:636e39a288c458991aacae819ebaaee162f4d8f699d0451d05c803c7db33ec97`
+-	Image ID: `sha256:064894c767f6b1b8ba9527efc00df2d22b33d774661e30b2b3b25000caff5acf`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -4569,19 +4569,19 @@ ENV PHP_SHA256=640e5e3377d15a6d19adce2b94a9d876eeddabdb862d154a5e347987f4225ef6 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Fri, 26 May 2017 15:02:49 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Fri, 26 May 2017 15:06:15 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Fri, 26 May 2017 15:06:17 GMT
+# Fri, 02 Jun 2017 22:33:08 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 22:33:10 GMT
 COPY multi:1401feee8064a06ad514519ec870939c946ecfdf381c82a90cb2035486938ee9 in /usr/local/bin/ 
-# Fri, 26 May 2017 15:06:18 GMT
+# Fri, 02 Jun 2017 22:33:11 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 26 May 2017 15:06:18 GMT
+# Fri, 02 Jun 2017 22:33:12 GMT
 WORKDIR /var/www/html
-# Fri, 26 May 2017 15:06:20 GMT
+# Fri, 02 Jun 2017 22:33:13 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Fri, 26 May 2017 15:06:21 GMT
+# Fri, 02 Jun 2017 22:33:14 GMT
 EXPOSE 9000/tcp
-# Fri, 26 May 2017 15:06:21 GMT
+# Fri, 02 Jun 2017 22:33:14 GMT
 CMD ["php-fpm"]
 ```
 
@@ -4610,27 +4610,27 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 26 May 2017 15:38:56 GMT  
 		Size: 484.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:efb46f99aeee7bf390bf8c3b37e081fc7b0973f5178fd00f1838617536b96c50`  
-		Last Modified: Fri, 26 May 2017 15:38:58 GMT  
-		Size: 14.1 MB (14059644 bytes)  
+	-	`sha256:f40ea297ded2da89df32d1a029191e9ad74a7413dffa360cc6268e6fd7c97833`  
+		Last Modified: Sat, 03 Jun 2017 00:26:39 GMT  
+		Size: 14.1 MB (14108550 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7be0078492bc2657aa9b7d5430827c67882fe5fa8f298d7cf3894ee2dd1d13d0`  
-		Last Modified: Fri, 26 May 2017 15:38:56 GMT  
+	-	`sha256:a1d3c87caea1926851807a8e4b577d7431051c71bdc6edf0b543de3fe55a0360`  
+		Last Modified: Sat, 03 Jun 2017 00:26:29 GMT  
 		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba81a0e17b2cdca00e27acdddaa4a9d83e3868804e58d42f3cd4fbddba828691`  
-		Last Modified: Fri, 26 May 2017 15:38:55 GMT  
+	-	`sha256:68d72e38a40761f0faf42f76dd2142f822013b47c5205f7724a0620c76115b76`  
+		Last Modified: Sat, 03 Jun 2017 00:26:30 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcc5954361df3c3b3f47844c62f38babad709b56d618cca32fc80cb84109bb0b`  
-		Last Modified: Fri, 26 May 2017 15:38:56 GMT  
-		Size: 7.7 KB (7655 bytes)  
+	-	`sha256:0bd38c16ccf0792b97a6602683f74b777bc2b8ff458ba9b467e2631705ab3b77`  
+		Last Modified: Sat, 03 Jun 2017 00:26:29 GMT  
+		Size: 7.7 KB (7654 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.0.19-zts`
 
 ```console
-$ docker pull php@sha256:385cee0d36e42d04bb5ffcd86ccece0377547fbc45e7174d5bb374606c698a55
+$ docker pull php@sha256:9a6eac50353d836cc2d0aa92b466456c466ab93db929003015c72baf5ea1b97c
 ```
 
 -	Platforms:
@@ -4640,9 +4640,9 @@ $ docker pull php@sha256:385cee0d36e42d04bb5ffcd86ccece0377547fbc45e7174d5bb3746
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.9 MB (156915634 bytes)**  
+-	Total Size: **156.9 MB (156915993 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3ba08d31515f8b9b9bca69d01eb511ce8ab83845c82d560a63448821ed854fe`
+-	Image ID: `sha256:03dc3cf45a69fea9eb35e90f1e6ddb2bcd599b181753d89f39328b244c3e379b`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -4679,13 +4679,13 @@ ENV PHP_SHA256=640e5e3377d15a6d19adce2b94a9d876eeddabdb862d154a5e347987f4225ef6 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 01:03:54 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 01:07:19 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 01:07:21 GMT
+# Fri, 02 Jun 2017 22:37:46 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 23:03:40 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 01:07:22 GMT
+# Fri, 02 Jun 2017 23:03:40 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 01:07:22 GMT
+# Fri, 02 Jun 2017 23:03:41 GMT
 CMD ["php" "-a"]
 ```
 
@@ -4710,19 +4710,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:55:24 GMT  
 		Size: 494.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9351686b3c8b0d9a74981386f73ea2215e711626a23f53bcefef39d490fe3129`  
-		Last Modified: Sat, 13 May 2017 01:55:25 GMT  
-		Size: 9.1 MB (9120105 bytes)  
+	-	`sha256:5657adefb6732d547f4c480389bee996104a89346abe1b0723c09b3e9e986554`  
+		Last Modified: Sat, 03 Jun 2017 00:27:39 GMT  
+		Size: 9.1 MB (9120470 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ed1bfa0aecd66006f660702ba2e4e56499c1152c1847c55423cffe03578605`  
-		Last Modified: Sat, 13 May 2017 01:55:24 GMT  
-		Size: 2.1 KB (2118 bytes)  
+	-	`sha256:4e9489f46d0b6f38505aa2f7fd6859a6890e733598035b7a28b60d6853516ed5`  
+		Last Modified: Sat, 03 Jun 2017 00:27:34 GMT  
+		Size: 2.1 KB (2112 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.0-zts`
 
 ```console
-$ docker pull php@sha256:385cee0d36e42d04bb5ffcd86ccece0377547fbc45e7174d5bb374606c698a55
+$ docker pull php@sha256:9a6eac50353d836cc2d0aa92b466456c466ab93db929003015c72baf5ea1b97c
 ```
 
 -	Platforms:
@@ -4732,9 +4732,9 @@ $ docker pull php@sha256:385cee0d36e42d04bb5ffcd86ccece0377547fbc45e7174d5bb3746
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.9 MB (156915634 bytes)**  
+-	Total Size: **156.9 MB (156915993 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3ba08d31515f8b9b9bca69d01eb511ce8ab83845c82d560a63448821ed854fe`
+-	Image ID: `sha256:03dc3cf45a69fea9eb35e90f1e6ddb2bcd599b181753d89f39328b244c3e379b`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -4771,13 +4771,13 @@ ENV PHP_SHA256=640e5e3377d15a6d19adce2b94a9d876eeddabdb862d154a5e347987f4225ef6 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 01:03:54 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 01:07:19 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 01:07:21 GMT
+# Fri, 02 Jun 2017 22:37:46 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 23:03:40 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 01:07:22 GMT
+# Fri, 02 Jun 2017 23:03:40 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 01:07:22 GMT
+# Fri, 02 Jun 2017 23:03:41 GMT
 CMD ["php" "-a"]
 ```
 
@@ -4802,19 +4802,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:55:24 GMT  
 		Size: 494.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9351686b3c8b0d9a74981386f73ea2215e711626a23f53bcefef39d490fe3129`  
-		Last Modified: Sat, 13 May 2017 01:55:25 GMT  
-		Size: 9.1 MB (9120105 bytes)  
+	-	`sha256:5657adefb6732d547f4c480389bee996104a89346abe1b0723c09b3e9e986554`  
+		Last Modified: Sat, 03 Jun 2017 00:27:39 GMT  
+		Size: 9.1 MB (9120470 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d5ed1bfa0aecd66006f660702ba2e4e56499c1152c1847c55423cffe03578605`  
-		Last Modified: Sat, 13 May 2017 01:55:24 GMT  
-		Size: 2.1 KB (2118 bytes)  
+	-	`sha256:4e9489f46d0b6f38505aa2f7fd6859a6890e733598035b7a28b60d6853516ed5`  
+		Last Modified: Sat, 03 Jun 2017 00:27:34 GMT  
+		Size: 2.1 KB (2112 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.0.19-zts-alpine`
 
 ```console
-$ docker pull php@sha256:a77b81c0dadf36cb4a16c6e6d4f3accceb837b6cfc11728963a62178d5e0bc9f
+$ docker pull php@sha256:3df5bd014c0074d8c5f9c6b87217246041e2e67e137d08e76274533e3f2980b7
 ```
 
 -	Platforms:
@@ -4824,9 +4824,9 @@ $ docker pull php@sha256:a77b81c0dadf36cb4a16c6e6d4f3accceb837b6cfc11728963a6217
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.7 MB (26737532 bytes)**  
+-	Total Size: **26.8 MB (26788728 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:82a80b21bdebc75b5d8db4cf027e9b9ed20f84820660cd09dddd5aa9406e01b5`
+-	Image ID: `sha256:7b3a2530b27187b6eb6ff4cb8b7b78eda4d1b1657477877ae8784140d03e83b6`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -4865,13 +4865,13 @@ ENV PHP_SHA256=640e5e3377d15a6d19adce2b94a9d876eeddabdb862d154a5e347987f4225ef6 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Fri, 26 May 2017 15:06:55 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Fri, 26 May 2017 15:10:25 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Fri, 26 May 2017 15:10:27 GMT
+# Fri, 02 Jun 2017 23:08:14 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 23:15:12 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Fri, 26 May 2017 15:10:28 GMT
+# Fri, 02 Jun 2017 23:15:13 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 26 May 2017 15:10:29 GMT
+# Fri, 02 Jun 2017 23:15:14 GMT
 CMD ["php" "-a"]
 ```
 
@@ -4900,19 +4900,19 @@ CMD ["php" "-a"]
 		Last Modified: Fri, 26 May 2017 15:40:33 GMT  
 		Size: 487.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd3ef172658f02cd0f80eb14bc5e1461dfce4b380aafa6c71cc7235842266f73`  
-		Last Modified: Fri, 26 May 2017 15:40:35 GMT  
-		Size: 10.5 MB (10500103 bytes)  
+	-	`sha256:c607f902eb9aceea4ddc0d1b84e606a5ef222f7b5f1cb3309c166c3c2d01dc4e`  
+		Last Modified: Sat, 03 Jun 2017 00:28:37 GMT  
+		Size: 10.6 MB (10551296 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb58bf95405cc53849d72e99512306fb9f8d9ae9924ba7a6962ff989ad3276f7`  
-		Last Modified: Fri, 26 May 2017 15:40:33 GMT  
-		Size: 2.1 KB (2106 bytes)  
+	-	`sha256:29e20ad620f7644f65301b6ff9129512c85512eb81cda38c61c3c5538c0a35d4`  
+		Last Modified: Sat, 03 Jun 2017 00:28:32 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.0-zts-alpine`
 
 ```console
-$ docker pull php@sha256:a77b81c0dadf36cb4a16c6e6d4f3accceb837b6cfc11728963a62178d5e0bc9f
+$ docker pull php@sha256:3df5bd014c0074d8c5f9c6b87217246041e2e67e137d08e76274533e3f2980b7
 ```
 
 -	Platforms:
@@ -4922,9 +4922,9 @@ $ docker pull php@sha256:a77b81c0dadf36cb4a16c6e6d4f3accceb837b6cfc11728963a6217
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.7 MB (26737532 bytes)**  
+-	Total Size: **26.8 MB (26788728 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:82a80b21bdebc75b5d8db4cf027e9b9ed20f84820660cd09dddd5aa9406e01b5`
+-	Image ID: `sha256:7b3a2530b27187b6eb6ff4cb8b7b78eda4d1b1657477877ae8784140d03e83b6`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -4963,13 +4963,13 @@ ENV PHP_SHA256=640e5e3377d15a6d19adce2b94a9d876eeddabdb862d154a5e347987f4225ef6 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Fri, 26 May 2017 15:06:55 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Fri, 26 May 2017 15:10:25 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Fri, 26 May 2017 15:10:27 GMT
+# Fri, 02 Jun 2017 23:08:14 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 23:15:12 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Fri, 26 May 2017 15:10:28 GMT
+# Fri, 02 Jun 2017 23:15:13 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 26 May 2017 15:10:29 GMT
+# Fri, 02 Jun 2017 23:15:14 GMT
 CMD ["php" "-a"]
 ```
 
@@ -4998,19 +4998,19 @@ CMD ["php" "-a"]
 		Last Modified: Fri, 26 May 2017 15:40:33 GMT  
 		Size: 487.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bd3ef172658f02cd0f80eb14bc5e1461dfce4b380aafa6c71cc7235842266f73`  
-		Last Modified: Fri, 26 May 2017 15:40:35 GMT  
-		Size: 10.5 MB (10500103 bytes)  
+	-	`sha256:c607f902eb9aceea4ddc0d1b84e606a5ef222f7b5f1cb3309c166c3c2d01dc4e`  
+		Last Modified: Sat, 03 Jun 2017 00:28:37 GMT  
+		Size: 10.6 MB (10551296 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb58bf95405cc53849d72e99512306fb9f8d9ae9924ba7a6962ff989ad3276f7`  
-		Last Modified: Fri, 26 May 2017 15:40:33 GMT  
-		Size: 2.1 KB (2106 bytes)  
+	-	`sha256:29e20ad620f7644f65301b6ff9129512c85512eb81cda38c61c3c5538c0a35d4`  
+		Last Modified: Sat, 03 Jun 2017 00:28:32 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:5.6.30-cli`
 
 ```console
-$ docker pull php@sha256:6f54ee4e15e049616e8f570376a4e702d720950f6fbfe187ac2ff901f9a526a8
+$ docker pull php@sha256:9c704ada0bbce754dfb53510c222d17ad9dacea1456e2bc5a41aa70cd91ccde8
 ```
 
 -	Platforms:
@@ -5020,9 +5020,9 @@ $ docker pull php@sha256:6f54ee4e15e049616e8f570376a4e702d720950f6fbfe187ac2ff90
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **152.7 MB (152668038 bytes)**  
+-	Total Size: **152.7 MB (152667999 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a60207530b3130327163c25edb5727a93a377c97b1777c48f393f98972ba9e88`
+-	Image ID: `sha256:1a1ee98621df84fe3d3b3139aa37bc63c2e9582831f1f1193eca19b441c9c774`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -5057,13 +5057,13 @@ ENV PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 01:12:04 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 01:15:08 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 01:15:10 GMT
+# Fri, 02 Jun 2017 23:19:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 23:19:54 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 01:15:11 GMT
+# Fri, 02 Jun 2017 23:19:54 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 01:15:12 GMT
+# Fri, 02 Jun 2017 23:19:55 GMT
 CMD ["php" "-a"]
 ```
 
@@ -5088,19 +5088,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:57:09 GMT  
 		Size: 493.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a19eeb6546ae411087f8dda95dccbd427d06bb52a2b0daf68eafe4b934651885`  
-		Last Modified: Sat, 13 May 2017 01:57:10 GMT  
-		Size: 5.0 MB (5017998 bytes)  
+	-	`sha256:9c1bccddba291417f9cd5d02b50c57077e1ed1bbd20084c04f290e1e6b6e7263`  
+		Last Modified: Sat, 03 Jun 2017 00:29:36 GMT  
+		Size: 5.0 MB (5017963 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ca536f5a464cf6db0d77a70ee921f260441ef3898dbe90fdc91b13e92fa861c`  
-		Last Modified: Sat, 13 May 2017 01:57:09 GMT  
-		Size: 2.1 KB (2119 bytes)  
+	-	`sha256:5b8f241ac6fe3a924746d726903c967a9f1dfd2adc1c96fda2038b9e942147af`  
+		Last Modified: Sat, 03 Jun 2017 00:29:32 GMT  
+		Size: 2.1 KB (2115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:5.6-cli`
 
 ```console
-$ docker pull php@sha256:6f54ee4e15e049616e8f570376a4e702d720950f6fbfe187ac2ff901f9a526a8
+$ docker pull php@sha256:9c704ada0bbce754dfb53510c222d17ad9dacea1456e2bc5a41aa70cd91ccde8
 ```
 
 -	Platforms:
@@ -5110,9 +5110,9 @@ $ docker pull php@sha256:6f54ee4e15e049616e8f570376a4e702d720950f6fbfe187ac2ff90
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **152.7 MB (152668038 bytes)**  
+-	Total Size: **152.7 MB (152667999 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a60207530b3130327163c25edb5727a93a377c97b1777c48f393f98972ba9e88`
+-	Image ID: `sha256:1a1ee98621df84fe3d3b3139aa37bc63c2e9582831f1f1193eca19b441c9c774`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -5147,13 +5147,13 @@ ENV PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 01:12:04 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 01:15:08 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 01:15:10 GMT
+# Fri, 02 Jun 2017 23:19:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 23:19:54 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 01:15:11 GMT
+# Fri, 02 Jun 2017 23:19:54 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 01:15:12 GMT
+# Fri, 02 Jun 2017 23:19:55 GMT
 CMD ["php" "-a"]
 ```
 
@@ -5178,19 +5178,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:57:09 GMT  
 		Size: 493.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a19eeb6546ae411087f8dda95dccbd427d06bb52a2b0daf68eafe4b934651885`  
-		Last Modified: Sat, 13 May 2017 01:57:10 GMT  
-		Size: 5.0 MB (5017998 bytes)  
+	-	`sha256:9c1bccddba291417f9cd5d02b50c57077e1ed1bbd20084c04f290e1e6b6e7263`  
+		Last Modified: Sat, 03 Jun 2017 00:29:36 GMT  
+		Size: 5.0 MB (5017963 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ca536f5a464cf6db0d77a70ee921f260441ef3898dbe90fdc91b13e92fa861c`  
-		Last Modified: Sat, 13 May 2017 01:57:09 GMT  
-		Size: 2.1 KB (2119 bytes)  
+	-	`sha256:5b8f241ac6fe3a924746d726903c967a9f1dfd2adc1c96fda2038b9e942147af`  
+		Last Modified: Sat, 03 Jun 2017 00:29:32 GMT  
+		Size: 2.1 KB (2115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:5-cli`
 
 ```console
-$ docker pull php@sha256:6f54ee4e15e049616e8f570376a4e702d720950f6fbfe187ac2ff901f9a526a8
+$ docker pull php@sha256:9c704ada0bbce754dfb53510c222d17ad9dacea1456e2bc5a41aa70cd91ccde8
 ```
 
 -	Platforms:
@@ -5200,9 +5200,9 @@ $ docker pull php@sha256:6f54ee4e15e049616e8f570376a4e702d720950f6fbfe187ac2ff90
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **152.7 MB (152668038 bytes)**  
+-	Total Size: **152.7 MB (152667999 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a60207530b3130327163c25edb5727a93a377c97b1777c48f393f98972ba9e88`
+-	Image ID: `sha256:1a1ee98621df84fe3d3b3139aa37bc63c2e9582831f1f1193eca19b441c9c774`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -5237,13 +5237,13 @@ ENV PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 01:12:04 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 01:15:08 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 01:15:10 GMT
+# Fri, 02 Jun 2017 23:19:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 23:19:54 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 01:15:11 GMT
+# Fri, 02 Jun 2017 23:19:54 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 01:15:12 GMT
+# Fri, 02 Jun 2017 23:19:55 GMT
 CMD ["php" "-a"]
 ```
 
@@ -5268,19 +5268,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:57:09 GMT  
 		Size: 493.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a19eeb6546ae411087f8dda95dccbd427d06bb52a2b0daf68eafe4b934651885`  
-		Last Modified: Sat, 13 May 2017 01:57:10 GMT  
-		Size: 5.0 MB (5017998 bytes)  
+	-	`sha256:9c1bccddba291417f9cd5d02b50c57077e1ed1bbd20084c04f290e1e6b6e7263`  
+		Last Modified: Sat, 03 Jun 2017 00:29:36 GMT  
+		Size: 5.0 MB (5017963 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ca536f5a464cf6db0d77a70ee921f260441ef3898dbe90fdc91b13e92fa861c`  
-		Last Modified: Sat, 13 May 2017 01:57:09 GMT  
-		Size: 2.1 KB (2119 bytes)  
+	-	`sha256:5b8f241ac6fe3a924746d726903c967a9f1dfd2adc1c96fda2038b9e942147af`  
+		Last Modified: Sat, 03 Jun 2017 00:29:32 GMT  
+		Size: 2.1 KB (2115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:5.6.30`
 
 ```console
-$ docker pull php@sha256:6f54ee4e15e049616e8f570376a4e702d720950f6fbfe187ac2ff901f9a526a8
+$ docker pull php@sha256:9c704ada0bbce754dfb53510c222d17ad9dacea1456e2bc5a41aa70cd91ccde8
 ```
 
 -	Platforms:
@@ -5290,9 +5290,9 @@ $ docker pull php@sha256:6f54ee4e15e049616e8f570376a4e702d720950f6fbfe187ac2ff90
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **152.7 MB (152668038 bytes)**  
+-	Total Size: **152.7 MB (152667999 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a60207530b3130327163c25edb5727a93a377c97b1777c48f393f98972ba9e88`
+-	Image ID: `sha256:1a1ee98621df84fe3d3b3139aa37bc63c2e9582831f1f1193eca19b441c9c774`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -5327,13 +5327,13 @@ ENV PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 01:12:04 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 01:15:08 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 01:15:10 GMT
+# Fri, 02 Jun 2017 23:19:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 23:19:54 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 01:15:11 GMT
+# Fri, 02 Jun 2017 23:19:54 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 01:15:12 GMT
+# Fri, 02 Jun 2017 23:19:55 GMT
 CMD ["php" "-a"]
 ```
 
@@ -5358,19 +5358,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:57:09 GMT  
 		Size: 493.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a19eeb6546ae411087f8dda95dccbd427d06bb52a2b0daf68eafe4b934651885`  
-		Last Modified: Sat, 13 May 2017 01:57:10 GMT  
-		Size: 5.0 MB (5017998 bytes)  
+	-	`sha256:9c1bccddba291417f9cd5d02b50c57077e1ed1bbd20084c04f290e1e6b6e7263`  
+		Last Modified: Sat, 03 Jun 2017 00:29:36 GMT  
+		Size: 5.0 MB (5017963 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ca536f5a464cf6db0d77a70ee921f260441ef3898dbe90fdc91b13e92fa861c`  
-		Last Modified: Sat, 13 May 2017 01:57:09 GMT  
-		Size: 2.1 KB (2119 bytes)  
+	-	`sha256:5b8f241ac6fe3a924746d726903c967a9f1dfd2adc1c96fda2038b9e942147af`  
+		Last Modified: Sat, 03 Jun 2017 00:29:32 GMT  
+		Size: 2.1 KB (2115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:5.6`
 
 ```console
-$ docker pull php@sha256:6f54ee4e15e049616e8f570376a4e702d720950f6fbfe187ac2ff901f9a526a8
+$ docker pull php@sha256:9c704ada0bbce754dfb53510c222d17ad9dacea1456e2bc5a41aa70cd91ccde8
 ```
 
 -	Platforms:
@@ -5380,9 +5380,9 @@ $ docker pull php@sha256:6f54ee4e15e049616e8f570376a4e702d720950f6fbfe187ac2ff90
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **152.7 MB (152668038 bytes)**  
+-	Total Size: **152.7 MB (152667999 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a60207530b3130327163c25edb5727a93a377c97b1777c48f393f98972ba9e88`
+-	Image ID: `sha256:1a1ee98621df84fe3d3b3139aa37bc63c2e9582831f1f1193eca19b441c9c774`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -5417,13 +5417,13 @@ ENV PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 01:12:04 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 01:15:08 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 01:15:10 GMT
+# Fri, 02 Jun 2017 23:19:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 23:19:54 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 01:15:11 GMT
+# Fri, 02 Jun 2017 23:19:54 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 01:15:12 GMT
+# Fri, 02 Jun 2017 23:19:55 GMT
 CMD ["php" "-a"]
 ```
 
@@ -5448,19 +5448,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:57:09 GMT  
 		Size: 493.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a19eeb6546ae411087f8dda95dccbd427d06bb52a2b0daf68eafe4b934651885`  
-		Last Modified: Sat, 13 May 2017 01:57:10 GMT  
-		Size: 5.0 MB (5017998 bytes)  
+	-	`sha256:9c1bccddba291417f9cd5d02b50c57077e1ed1bbd20084c04f290e1e6b6e7263`  
+		Last Modified: Sat, 03 Jun 2017 00:29:36 GMT  
+		Size: 5.0 MB (5017963 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ca536f5a464cf6db0d77a70ee921f260441ef3898dbe90fdc91b13e92fa861c`  
-		Last Modified: Sat, 13 May 2017 01:57:09 GMT  
-		Size: 2.1 KB (2119 bytes)  
+	-	`sha256:5b8f241ac6fe3a924746d726903c967a9f1dfd2adc1c96fda2038b9e942147af`  
+		Last Modified: Sat, 03 Jun 2017 00:29:32 GMT  
+		Size: 2.1 KB (2115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:5`
 
 ```console
-$ docker pull php@sha256:6f54ee4e15e049616e8f570376a4e702d720950f6fbfe187ac2ff901f9a526a8
+$ docker pull php@sha256:9c704ada0bbce754dfb53510c222d17ad9dacea1456e2bc5a41aa70cd91ccde8
 ```
 
 -	Platforms:
@@ -5470,9 +5470,9 @@ $ docker pull php@sha256:6f54ee4e15e049616e8f570376a4e702d720950f6fbfe187ac2ff90
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **152.7 MB (152668038 bytes)**  
+-	Total Size: **152.7 MB (152667999 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a60207530b3130327163c25edb5727a93a377c97b1777c48f393f98972ba9e88`
+-	Image ID: `sha256:1a1ee98621df84fe3d3b3139aa37bc63c2e9582831f1f1193eca19b441c9c774`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -5507,13 +5507,13 @@ ENV PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 01:12:04 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 01:15:08 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 01:15:10 GMT
+# Fri, 02 Jun 2017 23:19:13 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 23:19:54 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Sat, 13 May 2017 01:15:11 GMT
+# Fri, 02 Jun 2017 23:19:54 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 01:15:12 GMT
+# Fri, 02 Jun 2017 23:19:55 GMT
 CMD ["php" "-a"]
 ```
 
@@ -5538,19 +5538,19 @@ CMD ["php" "-a"]
 		Last Modified: Sat, 13 May 2017 01:57:09 GMT  
 		Size: 493.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a19eeb6546ae411087f8dda95dccbd427d06bb52a2b0daf68eafe4b934651885`  
-		Last Modified: Sat, 13 May 2017 01:57:10 GMT  
-		Size: 5.0 MB (5017998 bytes)  
+	-	`sha256:9c1bccddba291417f9cd5d02b50c57077e1ed1bbd20084c04f290e1e6b6e7263`  
+		Last Modified: Sat, 03 Jun 2017 00:29:36 GMT  
+		Size: 5.0 MB (5017963 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ca536f5a464cf6db0d77a70ee921f260441ef3898dbe90fdc91b13e92fa861c`  
-		Last Modified: Sat, 13 May 2017 01:57:09 GMT  
-		Size: 2.1 KB (2119 bytes)  
+	-	`sha256:5b8f241ac6fe3a924746d726903c967a9f1dfd2adc1c96fda2038b9e942147af`  
+		Last Modified: Sat, 03 Jun 2017 00:29:32 GMT  
+		Size: 2.1 KB (2115 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:5.6.30-alpine`
 
 ```console
-$ docker pull php@sha256:b35c62fef947c5f2adf90d09fabc58c292c4a152bea385b64e4b8e921fcb8a13
+$ docker pull php@sha256:bbafec1c9e9438dfb7997aff0562bff61f8fcfefe7635b98336e14524fa50fcc
 ```
 
 -	Platforms:
@@ -5560,9 +5560,9 @@ $ docker pull php@sha256:b35c62fef947c5f2adf90d09fabc58c292c4a152bea385b64e4b8e9
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **22.5 MB (22486274 bytes)**  
+-	Total Size: **22.5 MB (22534213 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e17c57041a58bd5d140f509f7ba70d2864e4a999afa203beafd8f5b19237a1b5`
+-	Image ID: `sha256:c3e3b16dcac47361f189c1d844aa22dbb800a930e5041f52af5499b0b58ad4b2`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -5599,13 +5599,13 @@ ENV PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Fri, 26 May 2017 15:11:02 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Fri, 26 May 2017 15:14:07 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Fri, 26 May 2017 15:14:09 GMT
+# Fri, 02 Jun 2017 23:24:01 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 23:31:37 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Fri, 26 May 2017 15:14:10 GMT
+# Fri, 02 Jun 2017 23:31:38 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 26 May 2017 15:14:11 GMT
+# Fri, 02 Jun 2017 23:31:39 GMT
 CMD ["php" "-a"]
 ```
 
@@ -5634,19 +5634,19 @@ CMD ["php" "-a"]
 		Last Modified: Fri, 26 May 2017 15:43:43 GMT  
 		Size: 488.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7fbca304a4dbf3954fddb108e4b177b2ec114105662dd31e03c9edf28d3926cc`  
-		Last Modified: Fri, 26 May 2017 15:43:50 GMT  
-		Size: 6.4 MB (6394725 bytes)  
+	-	`sha256:e6434dab5f5c51f1b63cd9e75b0e52281f85dcc31c65bd7dcb320af74d791cc3`  
+		Last Modified: Sat, 03 Jun 2017 00:32:27 GMT  
+		Size: 6.4 MB (6442662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d0ff0115b0460fd171f73482a2ef73a64a0691b7959aa9832f9ff88581e0ea3`  
-		Last Modified: Fri, 26 May 2017 15:43:43 GMT  
-		Size: 2.1 KB (2105 bytes)  
+	-	`sha256:6a5314ec85dfd4087f1a0474772fd0baba9eccda96bd1c1fb25697b572dfaf6e`  
+		Last Modified: Sat, 03 Jun 2017 00:32:23 GMT  
+		Size: 2.1 KB (2107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:5.6-alpine`
 
 ```console
-$ docker pull php@sha256:b35c62fef947c5f2adf90d09fabc58c292c4a152bea385b64e4b8e921fcb8a13
+$ docker pull php@sha256:bbafec1c9e9438dfb7997aff0562bff61f8fcfefe7635b98336e14524fa50fcc
 ```
 
 -	Platforms:
@@ -5656,9 +5656,9 @@ $ docker pull php@sha256:b35c62fef947c5f2adf90d09fabc58c292c4a152bea385b64e4b8e9
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **22.5 MB (22486274 bytes)**  
+-	Total Size: **22.5 MB (22534213 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e17c57041a58bd5d140f509f7ba70d2864e4a999afa203beafd8f5b19237a1b5`
+-	Image ID: `sha256:c3e3b16dcac47361f189c1d844aa22dbb800a930e5041f52af5499b0b58ad4b2`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -5695,13 +5695,13 @@ ENV PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Fri, 26 May 2017 15:11:02 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Fri, 26 May 2017 15:14:07 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Fri, 26 May 2017 15:14:09 GMT
+# Fri, 02 Jun 2017 23:24:01 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 23:31:37 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Fri, 26 May 2017 15:14:10 GMT
+# Fri, 02 Jun 2017 23:31:38 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 26 May 2017 15:14:11 GMT
+# Fri, 02 Jun 2017 23:31:39 GMT
 CMD ["php" "-a"]
 ```
 
@@ -5730,19 +5730,19 @@ CMD ["php" "-a"]
 		Last Modified: Fri, 26 May 2017 15:43:43 GMT  
 		Size: 488.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7fbca304a4dbf3954fddb108e4b177b2ec114105662dd31e03c9edf28d3926cc`  
-		Last Modified: Fri, 26 May 2017 15:43:50 GMT  
-		Size: 6.4 MB (6394725 bytes)  
+	-	`sha256:e6434dab5f5c51f1b63cd9e75b0e52281f85dcc31c65bd7dcb320af74d791cc3`  
+		Last Modified: Sat, 03 Jun 2017 00:32:27 GMT  
+		Size: 6.4 MB (6442662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d0ff0115b0460fd171f73482a2ef73a64a0691b7959aa9832f9ff88581e0ea3`  
-		Last Modified: Fri, 26 May 2017 15:43:43 GMT  
-		Size: 2.1 KB (2105 bytes)  
+	-	`sha256:6a5314ec85dfd4087f1a0474772fd0baba9eccda96bd1c1fb25697b572dfaf6e`  
+		Last Modified: Sat, 03 Jun 2017 00:32:23 GMT  
+		Size: 2.1 KB (2107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:5-alpine`
 
 ```console
-$ docker pull php@sha256:b35c62fef947c5f2adf90d09fabc58c292c4a152bea385b64e4b8e921fcb8a13
+$ docker pull php@sha256:bbafec1c9e9438dfb7997aff0562bff61f8fcfefe7635b98336e14524fa50fcc
 ```
 
 -	Platforms:
@@ -5752,9 +5752,9 @@ $ docker pull php@sha256:b35c62fef947c5f2adf90d09fabc58c292c4a152bea385b64e4b8e9
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **22.5 MB (22486274 bytes)**  
+-	Total Size: **22.5 MB (22534213 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e17c57041a58bd5d140f509f7ba70d2864e4a999afa203beafd8f5b19237a1b5`
+-	Image ID: `sha256:c3e3b16dcac47361f189c1d844aa22dbb800a930e5041f52af5499b0b58ad4b2`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
@@ -5791,13 +5791,13 @@ ENV PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Fri, 26 May 2017 15:11:02 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Fri, 26 May 2017 15:14:07 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Fri, 26 May 2017 15:14:09 GMT
+# Fri, 02 Jun 2017 23:24:01 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 23:31:37 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Fri, 26 May 2017 15:14:10 GMT
+# Fri, 02 Jun 2017 23:31:38 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 26 May 2017 15:14:11 GMT
+# Fri, 02 Jun 2017 23:31:39 GMT
 CMD ["php" "-a"]
 ```
 
@@ -5826,19 +5826,19 @@ CMD ["php" "-a"]
 		Last Modified: Fri, 26 May 2017 15:43:43 GMT  
 		Size: 488.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7fbca304a4dbf3954fddb108e4b177b2ec114105662dd31e03c9edf28d3926cc`  
-		Last Modified: Fri, 26 May 2017 15:43:50 GMT  
-		Size: 6.4 MB (6394725 bytes)  
+	-	`sha256:e6434dab5f5c51f1b63cd9e75b0e52281f85dcc31c65bd7dcb320af74d791cc3`  
+		Last Modified: Sat, 03 Jun 2017 00:32:27 GMT  
+		Size: 6.4 MB (6442662 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d0ff0115b0460fd171f73482a2ef73a64a0691b7959aa9832f9ff88581e0ea3`  
-		Last Modified: Fri, 26 May 2017 15:43:43 GMT  
-		Size: 2.1 KB (2105 bytes)  
+	-	`sha256:6a5314ec85dfd4087f1a0474772fd0baba9eccda96bd1c1fb25697b572dfaf6e`  
+		Last Modified: Sat, 03 Jun 2017 00:32:23 GMT  
+		Size: 2.1 KB (2107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:5.6.30-apache`
 
 ```console
-$ docker pull php@sha256:75fbb3e60096e189c6394cc73c3f6572147affbc4873a79ab86c4543f0adc815
+$ docker pull php@sha256:376dacaac467f551b7d812023808b8cb1881ad8dd484d0fe5de2ae5f242203f6
 ```
 
 -	Platforms:
@@ -5848,9 +5848,9 @@ $ docker pull php@sha256:75fbb3e60096e189c6394cc73c3f6572147affbc4873a79ab86c454
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.6 MB (159638300 bytes)**  
+-	Total Size: **159.9 MB (159894178 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f16436448ebd6022dbff1c9ea2cac81c0481444234724e73d739578830b8e4f5`
+-	Image ID: `sha256:2d4c03fc62409d438c20758910fbfdf6a069c2207bd962e61c705057721b0cfb`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -5903,19 +5903,19 @@ ENV PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 01:19:26 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 01:21:31 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 01:21:33 GMT
+# Fri, 02 Jun 2017 23:34:46 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 23:37:31 GMT
 COPY multi:3775aa35856908376b7ea71c79fad1e546e92e4ef56dcfc5821b2cc6e2ed6cdc in /usr/local/bin/ 
-# Sat, 13 May 2017 01:21:34 GMT
+# Fri, 02 Jun 2017 23:37:31 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 01:21:35 GMT
+# Fri, 02 Jun 2017 23:37:33 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Sat, 13 May 2017 01:21:35 GMT
+# Fri, 02 Jun 2017 23:37:33 GMT
 WORKDIR /var/www/html
-# Sat, 13 May 2017 01:21:36 GMT
+# Fri, 02 Jun 2017 23:37:34 GMT
 EXPOSE 80/tcp
-# Sat, 13 May 2017 01:21:36 GMT
+# Fri, 02 Jun 2017 23:37:35 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -5960,23 +5960,23 @@ CMD ["apache2-foreground"]
 		Last Modified: Sat, 13 May 2017 02:00:39 GMT  
 		Size: 493.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79601c211937b7e99020270c011d279f6708b427f3accd68f649c267290ad34b`  
-		Last Modified: Sat, 13 May 2017 02:00:40 GMT  
-		Size: 9.2 MB (9178929 bytes)  
+	-	`sha256:1fc321ec09ab4c5a4ccde6eb4312da4fde0a1a12ba06051bbbde306eef2cd031`  
+		Last Modified: Sat, 03 Jun 2017 00:33:48 GMT  
+		Size: 9.4 MB (9434808 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:48bba15d4000a92bdb5258fc0aedbb0d7b0696827e0ef2ab8f19834f798898c5`  
-		Last Modified: Sat, 13 May 2017 02:00:38 GMT  
-		Size: 2.1 KB (2126 bytes)  
+	-	`sha256:26fad11c6438205652dcc3f7b35acb84ff71b0e63df952eb4d0a1e2c37d02ef4`  
+		Last Modified: Sat, 03 Jun 2017 00:33:44 GMT  
+		Size: 2.1 KB (2125 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:96a57b9072496860feb2bd900d745f6aebd7fed099d925e97cb7a95fc43fc3d1`  
-		Last Modified: Sat, 13 May 2017 02:00:39 GMT  
+	-	`sha256:3f128f133857155dcf013dcb6d4330dfbd0eacb72c21c53bbe3aadb910656f72`  
+		Last Modified: Sat, 03 Jun 2017 00:33:45 GMT  
 		Size: 893.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:5.6-apache`
 
 ```console
-$ docker pull php@sha256:75fbb3e60096e189c6394cc73c3f6572147affbc4873a79ab86c4543f0adc815
+$ docker pull php@sha256:376dacaac467f551b7d812023808b8cb1881ad8dd484d0fe5de2ae5f242203f6
 ```
 
 -	Platforms:
@@ -5986,9 +5986,9 @@ $ docker pull php@sha256:75fbb3e60096e189c6394cc73c3f6572147affbc4873a79ab86c454
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.6 MB (159638300 bytes)**  
+-	Total Size: **159.9 MB (159894178 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f16436448ebd6022dbff1c9ea2cac81c0481444234724e73d739578830b8e4f5`
+-	Image ID: `sha256:2d4c03fc62409d438c20758910fbfdf6a069c2207bd962e61c705057721b0cfb`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -6041,19 +6041,19 @@ ENV PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 01:19:26 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 01:21:31 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 01:21:33 GMT
+# Fri, 02 Jun 2017 23:34:46 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 23:37:31 GMT
 COPY multi:3775aa35856908376b7ea71c79fad1e546e92e4ef56dcfc5821b2cc6e2ed6cdc in /usr/local/bin/ 
-# Sat, 13 May 2017 01:21:34 GMT
+# Fri, 02 Jun 2017 23:37:31 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 01:21:35 GMT
+# Fri, 02 Jun 2017 23:37:33 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Sat, 13 May 2017 01:21:35 GMT
+# Fri, 02 Jun 2017 23:37:33 GMT
 WORKDIR /var/www/html
-# Sat, 13 May 2017 01:21:36 GMT
+# Fri, 02 Jun 2017 23:37:34 GMT
 EXPOSE 80/tcp
-# Sat, 13 May 2017 01:21:36 GMT
+# Fri, 02 Jun 2017 23:37:35 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -6098,23 +6098,23 @@ CMD ["apache2-foreground"]
 		Last Modified: Sat, 13 May 2017 02:00:39 GMT  
 		Size: 493.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79601c211937b7e99020270c011d279f6708b427f3accd68f649c267290ad34b`  
-		Last Modified: Sat, 13 May 2017 02:00:40 GMT  
-		Size: 9.2 MB (9178929 bytes)  
+	-	`sha256:1fc321ec09ab4c5a4ccde6eb4312da4fde0a1a12ba06051bbbde306eef2cd031`  
+		Last Modified: Sat, 03 Jun 2017 00:33:48 GMT  
+		Size: 9.4 MB (9434808 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:48bba15d4000a92bdb5258fc0aedbb0d7b0696827e0ef2ab8f19834f798898c5`  
-		Last Modified: Sat, 13 May 2017 02:00:38 GMT  
-		Size: 2.1 KB (2126 bytes)  
+	-	`sha256:26fad11c6438205652dcc3f7b35acb84ff71b0e63df952eb4d0a1e2c37d02ef4`  
+		Last Modified: Sat, 03 Jun 2017 00:33:44 GMT  
+		Size: 2.1 KB (2125 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:96a57b9072496860feb2bd900d745f6aebd7fed099d925e97cb7a95fc43fc3d1`  
-		Last Modified: Sat, 13 May 2017 02:00:39 GMT  
+	-	`sha256:3f128f133857155dcf013dcb6d4330dfbd0eacb72c21c53bbe3aadb910656f72`  
+		Last Modified: Sat, 03 Jun 2017 00:33:45 GMT  
 		Size: 893.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:5-apache`
 
 ```console
-$ docker pull php@sha256:75fbb3e60096e189c6394cc73c3f6572147affbc4873a79ab86c4543f0adc815
+$ docker pull php@sha256:376dacaac467f551b7d812023808b8cb1881ad8dd484d0fe5de2ae5f242203f6
 ```
 
 -	Platforms:
@@ -6124,9 +6124,9 @@ $ docker pull php@sha256:75fbb3e60096e189c6394cc73c3f6572147affbc4873a79ab86c454
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.6 MB (159638300 bytes)**  
+-	Total Size: **159.9 MB (159894178 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f16436448ebd6022dbff1c9ea2cac81c0481444234724e73d739578830b8e4f5`
+-	Image ID: `sha256:2d4c03fc62409d438c20758910fbfdf6a069c2207bd962e61c705057721b0cfb`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -6179,19 +6179,19 @@ ENV PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 01:19:26 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 01:21:31 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 01:21:33 GMT
+# Fri, 02 Jun 2017 23:34:46 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 23:37:31 GMT
 COPY multi:3775aa35856908376b7ea71c79fad1e546e92e4ef56dcfc5821b2cc6e2ed6cdc in /usr/local/bin/ 
-# Sat, 13 May 2017 01:21:34 GMT
+# Fri, 02 Jun 2017 23:37:31 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 01:21:35 GMT
+# Fri, 02 Jun 2017 23:37:33 GMT
 COPY file:24613ecbb1ce6a09f683b0753da9c26a1af07547326e8a02f6eec80ad6f2774a in /usr/local/bin/ 
-# Sat, 13 May 2017 01:21:35 GMT
+# Fri, 02 Jun 2017 23:37:33 GMT
 WORKDIR /var/www/html
-# Sat, 13 May 2017 01:21:36 GMT
+# Fri, 02 Jun 2017 23:37:34 GMT
 EXPOSE 80/tcp
-# Sat, 13 May 2017 01:21:36 GMT
+# Fri, 02 Jun 2017 23:37:35 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -6236,23 +6236,23 @@ CMD ["apache2-foreground"]
 		Last Modified: Sat, 13 May 2017 02:00:39 GMT  
 		Size: 493.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79601c211937b7e99020270c011d279f6708b427f3accd68f649c267290ad34b`  
-		Last Modified: Sat, 13 May 2017 02:00:40 GMT  
-		Size: 9.2 MB (9178929 bytes)  
+	-	`sha256:1fc321ec09ab4c5a4ccde6eb4312da4fde0a1a12ba06051bbbde306eef2cd031`  
+		Last Modified: Sat, 03 Jun 2017 00:33:48 GMT  
+		Size: 9.4 MB (9434808 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:48bba15d4000a92bdb5258fc0aedbb0d7b0696827e0ef2ab8f19834f798898c5`  
-		Last Modified: Sat, 13 May 2017 02:00:38 GMT  
-		Size: 2.1 KB (2126 bytes)  
+	-	`sha256:26fad11c6438205652dcc3f7b35acb84ff71b0e63df952eb4d0a1e2c37d02ef4`  
+		Last Modified: Sat, 03 Jun 2017 00:33:44 GMT  
+		Size: 2.1 KB (2125 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:96a57b9072496860feb2bd900d745f6aebd7fed099d925e97cb7a95fc43fc3d1`  
-		Last Modified: Sat, 13 May 2017 02:00:39 GMT  
+	-	`sha256:3f128f133857155dcf013dcb6d4330dfbd0eacb72c21c53bbe3aadb910656f72`  
+		Last Modified: Sat, 03 Jun 2017 00:33:45 GMT  
 		Size: 893.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:5.6.30-fpm`
 
 ```console
-$ docker pull php@sha256:6f6bc798f065da1a85f3617a8c637bedb468516d94354fc1081eaeedffb1b293
+$ docker pull php@sha256:beeb1be9a83fb221955601127bbba354454ebb1572e8f441b694e6ab5866e129
 ```
 
 -	Platforms:
@@ -6262,9 +6262,9 @@ $ docker pull php@sha256:6f6bc798f065da1a85f3617a8c637bedb468516d94354fc1081eaee
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.3 MB (156286182 bytes)**  
+-	Total Size: **156.3 MB (156286135 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:27aaef3c92266428fe37b08d16e1509cda7246ecd23d50fed8803e76dcbde9d0`
+-	Image ID: `sha256:972cecdbead42208d02050d413e499a51eb16e0f9b5713359e1f10083b73d613`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -6301,19 +6301,19 @@ ENV PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 01:22:12 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 01:25:19 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 01:25:20 GMT
+# Fri, 02 Jun 2017 23:41:55 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 23:41:57 GMT
 COPY multi:1401feee8064a06ad514519ec870939c946ecfdf381c82a90cb2035486938ee9 in /usr/local/bin/ 
-# Sat, 13 May 2017 01:25:21 GMT
+# Fri, 02 Jun 2017 23:41:58 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 01:25:22 GMT
+# Fri, 02 Jun 2017 23:41:59 GMT
 WORKDIR /var/www/html
-# Sat, 13 May 2017 01:25:23 GMT
+# Fri, 02 Jun 2017 23:42:00 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Sat, 13 May 2017 01:25:23 GMT
+# Fri, 02 Jun 2017 23:42:01 GMT
 EXPOSE 9000/tcp
-# Sat, 13 May 2017 01:25:24 GMT
+# Fri, 02 Jun 2017 23:42:02 GMT
 CMD ["php-fpm"]
 ```
 
@@ -6338,27 +6338,27 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 13 May 2017 02:01:52 GMT  
 		Size: 496.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b8ac8b21f160872d034619836e0d9389fd8391efd9524c503f47aa955b32ca2d`  
-		Last Modified: Sat, 13 May 2017 02:01:54 GMT  
-		Size: 8.6 MB (8628396 bytes)  
+	-	`sha256:eac95ba763d8a84c53b7e8c4722895d45fd7fdfbeaaca1cf35fcacbdd82f8e19`  
+		Last Modified: Sat, 03 Jun 2017 00:35:27 GMT  
+		Size: 8.6 MB (8628353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0085a2a05ff44b6a35651fc8998064491afb9df5420e5e6a432c60c0111ae67c`  
-		Last Modified: Sat, 13 May 2017 02:01:52 GMT  
-		Size: 2.1 KB (2123 bytes)  
+	-	`sha256:3f8523845f2d86cd38cefb1e8ae885c6957c63d9bce1f334655bfc1304e0b53e`  
+		Last Modified: Sat, 03 Jun 2017 00:35:26 GMT  
+		Size: 2.1 KB (2119 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dd31727290ba0d5df4960e611f1e6a7b608d407aed0f54547438d61c3b25319`  
-		Last Modified: Sat, 13 May 2017 02:01:52 GMT  
-		Size: 129.0 B  
+	-	`sha256:0c77f1ac8be9915e112db9ce8bf3724305e0b0125ad50b6b4b4e67d19d44ecf8`  
+		Last Modified: Sat, 03 Jun 2017 00:35:24 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:529b38b7d92019592d59aff34a6231680addb3e2d639106ba9493db69fad34fc`  
-		Last Modified: Sat, 13 May 2017 02:01:52 GMT  
-		Size: 7.6 KB (7607 bytes)  
+	-	`sha256:36a5143dac97dfc03cf5d3110a359e40bb3ac969b826916d6d2f58de10d54fba`  
+		Last Modified: Sat, 03 Jun 2017 00:35:24 GMT  
+		Size: 7.6 KB (7606 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:5.6-fpm`
 
 ```console
-$ docker pull php@sha256:6f6bc798f065da1a85f3617a8c637bedb468516d94354fc1081eaeedffb1b293
+$ docker pull php@sha256:beeb1be9a83fb221955601127bbba354454ebb1572e8f441b694e6ab5866e129
 ```
 
 -	Platforms:
@@ -6368,9 +6368,9 @@ $ docker pull php@sha256:6f6bc798f065da1a85f3617a8c637bedb468516d94354fc1081eaee
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.3 MB (156286182 bytes)**  
+-	Total Size: **156.3 MB (156286135 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:27aaef3c92266428fe37b08d16e1509cda7246ecd23d50fed8803e76dcbde9d0`
+-	Image ID: `sha256:972cecdbead42208d02050d413e499a51eb16e0f9b5713359e1f10083b73d613`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -6407,19 +6407,19 @@ ENV PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 01:22:12 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 01:25:19 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 01:25:20 GMT
+# Fri, 02 Jun 2017 23:41:55 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 23:41:57 GMT
 COPY multi:1401feee8064a06ad514519ec870939c946ecfdf381c82a90cb2035486938ee9 in /usr/local/bin/ 
-# Sat, 13 May 2017 01:25:21 GMT
+# Fri, 02 Jun 2017 23:41:58 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 01:25:22 GMT
+# Fri, 02 Jun 2017 23:41:59 GMT
 WORKDIR /var/www/html
-# Sat, 13 May 2017 01:25:23 GMT
+# Fri, 02 Jun 2017 23:42:00 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Sat, 13 May 2017 01:25:23 GMT
+# Fri, 02 Jun 2017 23:42:01 GMT
 EXPOSE 9000/tcp
-# Sat, 13 May 2017 01:25:24 GMT
+# Fri, 02 Jun 2017 23:42:02 GMT
 CMD ["php-fpm"]
 ```
 
@@ -6444,27 +6444,27 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 13 May 2017 02:01:52 GMT  
 		Size: 496.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b8ac8b21f160872d034619836e0d9389fd8391efd9524c503f47aa955b32ca2d`  
-		Last Modified: Sat, 13 May 2017 02:01:54 GMT  
-		Size: 8.6 MB (8628396 bytes)  
+	-	`sha256:eac95ba763d8a84c53b7e8c4722895d45fd7fdfbeaaca1cf35fcacbdd82f8e19`  
+		Last Modified: Sat, 03 Jun 2017 00:35:27 GMT  
+		Size: 8.6 MB (8628353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0085a2a05ff44b6a35651fc8998064491afb9df5420e5e6a432c60c0111ae67c`  
-		Last Modified: Sat, 13 May 2017 02:01:52 GMT  
-		Size: 2.1 KB (2123 bytes)  
+	-	`sha256:3f8523845f2d86cd38cefb1e8ae885c6957c63d9bce1f334655bfc1304e0b53e`  
+		Last Modified: Sat, 03 Jun 2017 00:35:26 GMT  
+		Size: 2.1 KB (2119 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dd31727290ba0d5df4960e611f1e6a7b608d407aed0f54547438d61c3b25319`  
-		Last Modified: Sat, 13 May 2017 02:01:52 GMT  
-		Size: 129.0 B  
+	-	`sha256:0c77f1ac8be9915e112db9ce8bf3724305e0b0125ad50b6b4b4e67d19d44ecf8`  
+		Last Modified: Sat, 03 Jun 2017 00:35:24 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:529b38b7d92019592d59aff34a6231680addb3e2d639106ba9493db69fad34fc`  
-		Last Modified: Sat, 13 May 2017 02:01:52 GMT  
-		Size: 7.6 KB (7607 bytes)  
+	-	`sha256:36a5143dac97dfc03cf5d3110a359e40bb3ac969b826916d6d2f58de10d54fba`  
+		Last Modified: Sat, 03 Jun 2017 00:35:24 GMT  
+		Size: 7.6 KB (7606 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:5-fpm`
 
 ```console
-$ docker pull php@sha256:6f6bc798f065da1a85f3617a8c637bedb468516d94354fc1081eaeedffb1b293
+$ docker pull php@sha256:beeb1be9a83fb221955601127bbba354454ebb1572e8f441b694e6ab5866e129
 ```
 
 -	Platforms:
@@ -6474,9 +6474,9 @@ $ docker pull php@sha256:6f6bc798f065da1a85f3617a8c637bedb468516d94354fc1081eaee
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **156.3 MB (156286182 bytes)**  
+-	Total Size: **156.3 MB (156286135 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:27aaef3c92266428fe37b08d16e1509cda7246ecd23d50fed8803e76dcbde9d0`
+-	Image ID: `sha256:972cecdbead42208d02050d413e499a51eb16e0f9b5713359e1f10083b73d613`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -6513,19 +6513,19 @@ ENV PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805 
 RUN set -xe; 		fetchDeps=' 		wget 	'; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apt-get purge -y --auto-remove $fetchDeps
 # Sat, 13 May 2017 01:22:12 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Sat, 13 May 2017 01:25:19 GMT
-RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps
-# Sat, 13 May 2017 01:25:20 GMT
+# Fri, 02 Jun 2017 23:41:55 GMT
+RUN set -xe 	&& buildDeps=" 		$PHP_EXTRA_BUILD_DEPS 		libcurl4-openssl-dev 		libedit-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 	" 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 		--with-libdir="lib/$gnuArch" 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 23:41:57 GMT
 COPY multi:1401feee8064a06ad514519ec870939c946ecfdf381c82a90cb2035486938ee9 in /usr/local/bin/ 
-# Sat, 13 May 2017 01:25:21 GMT
+# Fri, 02 Jun 2017 23:41:58 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Sat, 13 May 2017 01:25:22 GMT
+# Fri, 02 Jun 2017 23:41:59 GMT
 WORKDIR /var/www/html
-# Sat, 13 May 2017 01:25:23 GMT
+# Fri, 02 Jun 2017 23:42:00 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Sat, 13 May 2017 01:25:23 GMT
+# Fri, 02 Jun 2017 23:42:01 GMT
 EXPOSE 9000/tcp
-# Sat, 13 May 2017 01:25:24 GMT
+# Fri, 02 Jun 2017 23:42:02 GMT
 CMD ["php-fpm"]
 ```
 
@@ -6550,27 +6550,27 @@ CMD ["php-fpm"]
 		Last Modified: Sat, 13 May 2017 02:01:52 GMT  
 		Size: 496.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b8ac8b21f160872d034619836e0d9389fd8391efd9524c503f47aa955b32ca2d`  
-		Last Modified: Sat, 13 May 2017 02:01:54 GMT  
-		Size: 8.6 MB (8628396 bytes)  
+	-	`sha256:eac95ba763d8a84c53b7e8c4722895d45fd7fdfbeaaca1cf35fcacbdd82f8e19`  
+		Last Modified: Sat, 03 Jun 2017 00:35:27 GMT  
+		Size: 8.6 MB (8628353 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0085a2a05ff44b6a35651fc8998064491afb9df5420e5e6a432c60c0111ae67c`  
-		Last Modified: Sat, 13 May 2017 02:01:52 GMT  
-		Size: 2.1 KB (2123 bytes)  
+	-	`sha256:3f8523845f2d86cd38cefb1e8ae885c6957c63d9bce1f334655bfc1304e0b53e`  
+		Last Modified: Sat, 03 Jun 2017 00:35:26 GMT  
+		Size: 2.1 KB (2119 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6dd31727290ba0d5df4960e611f1e6a7b608d407aed0f54547438d61c3b25319`  
-		Last Modified: Sat, 13 May 2017 02:01:52 GMT  
-		Size: 129.0 B  
+	-	`sha256:0c77f1ac8be9915e112db9ce8bf3724305e0b0125ad50b6b4b4e67d19d44ecf8`  
+		Last Modified: Sat, 03 Jun 2017 00:35:24 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:529b38b7d92019592d59aff34a6231680addb3e2d639106ba9493db69fad34fc`  
-		Last Modified: Sat, 13 May 2017 02:01:52 GMT  
-		Size: 7.6 KB (7607 bytes)  
+	-	`sha256:36a5143dac97dfc03cf5d3110a359e40bb3ac969b826916d6d2f58de10d54fba`  
+		Last Modified: Sat, 03 Jun 2017 00:35:24 GMT  
+		Size: 7.6 KB (7606 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:5.6.30-fpm-alpine`
 
 ```console
-$ docker pull php@sha256:b46df4fd82ead218d961b848e64473e93699cf658e10b335d2f446f8ee18af3d
+$ docker pull php@sha256:a0e233b7f0e05db45a967e6c62ed894915600aad3b9224629d389f73d54fff0a
 ```
 
 -	Platforms:
@@ -6580,9 +6580,9 @@ $ docker pull php@sha256:b46df4fd82ead218d961b848e64473e93699cf658e10b335d2f446f
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.1 MB (26095012 bytes)**  
+-	Total Size: **26.1 MB (26146260 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff96311a59841de223171ac17d5e6d2ceb2ecef11f6dd9da2270cbefc721335e`
+-	Image ID: `sha256:acc0f7424cd31220ce9406857993b1fc43c317b84f63bb9f346918a151b2f136`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -6621,19 +6621,19 @@ ENV PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Fri, 26 May 2017 15:14:44 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Fri, 26 May 2017 15:17:51 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Fri, 26 May 2017 15:17:53 GMT
+# Fri, 02 Jun 2017 23:46:21 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 23:46:24 GMT
 COPY multi:1401feee8064a06ad514519ec870939c946ecfdf381c82a90cb2035486938ee9 in /usr/local/bin/ 
-# Fri, 26 May 2017 15:17:53 GMT
+# Fri, 02 Jun 2017 23:46:26 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 26 May 2017 15:17:54 GMT
+# Fri, 02 Jun 2017 23:46:27 GMT
 WORKDIR /var/www/html
-# Fri, 26 May 2017 15:17:56 GMT
+# Fri, 02 Jun 2017 23:46:29 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Fri, 26 May 2017 15:17:56 GMT
+# Fri, 02 Jun 2017 23:50:35 GMT
 EXPOSE 9000/tcp
-# Fri, 26 May 2017 15:17:57 GMT
+# Fri, 02 Jun 2017 23:50:36 GMT
 CMD ["php-fpm"]
 ```
 
@@ -6662,27 +6662,27 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 26 May 2017 15:47:21 GMT  
 		Size: 484.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0316d249dd24864f5a9d9364c934940d08f60b695449a4cfaa2c497c0627e2b3`  
-		Last Modified: Fri, 26 May 2017 15:47:23 GMT  
-		Size: 10.0 MB (9995741 bytes)  
+	-	`sha256:047a12b5ea50a4e08cf980526721a00feb915066fd1756be75731c863d6cfb0e`  
+		Last Modified: Sat, 03 Jun 2017 00:36:50 GMT  
+		Size: 10.0 MB (10046988 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aed57283497980c207085eac43cc237dad90a29517f17ce02d3d4b3aee5f0b6a`  
-		Last Modified: Fri, 26 May 2017 15:47:21 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:2090915adc902c46a24b1d1a858b6fc76e293c828a9fa0a149156c1272812113`  
+		Last Modified: Sat, 03 Jun 2017 00:36:46 GMT  
+		Size: 2.1 KB (2110 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3359511682d0dcb1abeea9de4e3f08fe47fd3b337bc9c1c8d3b92ca6dea1e93`  
-		Last Modified: Fri, 26 May 2017 15:47:21 GMT  
-		Size: 130.0 B  
+	-	`sha256:f37a7c4731b80499ffec4f7d59712bf6778b137dcf8c57f15c9a880646317176`  
+		Last Modified: Sat, 03 Jun 2017 00:36:46 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:512973f61fb3a8ced61e53f71c29e657ab59971569433cfeb856ce3e96d0dac8`  
-		Last Modified: Fri, 26 May 2017 15:47:21 GMT  
-		Size: 7.6 KB (7593 bytes)  
+	-	`sha256:44c47edeccd61de0087733ca4bb89acdb9d8da541b2e9ae1326d0006287dad2e`  
+		Last Modified: Sat, 03 Jun 2017 00:36:47 GMT  
+		Size: 7.6 KB (7594 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:5.6-fpm-alpine`
 
 ```console
-$ docker pull php@sha256:b46df4fd82ead218d961b848e64473e93699cf658e10b335d2f446f8ee18af3d
+$ docker pull php@sha256:a0e233b7f0e05db45a967e6c62ed894915600aad3b9224629d389f73d54fff0a
 ```
 
 -	Platforms:
@@ -6692,9 +6692,9 @@ $ docker pull php@sha256:b46df4fd82ead218d961b848e64473e93699cf658e10b335d2f446f
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.1 MB (26095012 bytes)**  
+-	Total Size: **26.1 MB (26146260 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff96311a59841de223171ac17d5e6d2ceb2ecef11f6dd9da2270cbefc721335e`
+-	Image ID: `sha256:acc0f7424cd31220ce9406857993b1fc43c317b84f63bb9f346918a151b2f136`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -6733,19 +6733,19 @@ ENV PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805 
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
 # Fri, 26 May 2017 15:14:44 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Fri, 26 May 2017 15:17:51 GMT
-RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps
-# Fri, 26 May 2017 15:17:53 GMT
+# Fri, 02 Jun 2017 23:46:21 GMT
+RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
+# Fri, 02 Jun 2017 23:46:24 GMT
 COPY multi:1401feee8064a06ad514519ec870939c946ecfdf381c82a90cb2035486938ee9 in /usr/local/bin/ 
-# Fri, 26 May 2017 15:17:53 GMT
+# Fri, 02 Jun 2017 23:46:26 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 26 May 2017 15:17:54 GMT
+# Fri, 02 Jun 2017 23:46:27 GMT
 WORKDIR /var/www/html
-# Fri, 26 May 2017 15:17:56 GMT
+# Fri, 02 Jun 2017 23:46:29 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Fri, 26 May 2017 15:17:56 GMT
+# Fri, 02 Jun 2017 23:50:35 GMT
 EXPOSE 9000/tcp
-# Fri, 26 May 2017 15:17:57 GMT
+# Fri, 02 Jun 2017 23:50:36 GMT
 CMD ["php-fpm"]
 ```
 
@@ -6774,21 +6774,21 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 26 May 2017 15:47:21 GMT  
 		Size: 484.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0316d249dd24864f5a9d9364c934940d08f60b695449a4cfaa2c497c0627e2b3`  
-		Last Modified: Fri, 26 May 2017 15:47:23 GMT  
-		Size: 10.0 MB (9995741 bytes)  
+	-	`sha256:047a12b5ea50a4e08cf980526721a00feb915066fd1756be75731c863d6cfb0e`  
+		Last Modified: Sat, 03 Jun 2017 00:36:50 GMT  
+		Size: 10.0 MB (10046988 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aed57283497980c207085eac43cc237dad90a29517f17ce02d3d4b3aee5f0b6a`  
-		Last Modified: Fri, 26 May 2017 15:47:21 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:2090915adc902c46a24b1d1a858b6fc76e293c828a9fa0a149156c1272812113`  
+		Last Modified: Sat, 03 Jun 2017 00:36:46 GMT  
+		Size: 2.1 KB (2110 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3359511682d0dcb1abeea9de4e3f08fe47fd3b337bc9c1c8d3b92ca6dea1e93`  
-		Last Modified: Fri, 26 May 2017 15:47:21 GMT  
-		Size: 130.0 B  
+	-	`sha256:f37a7c4731b80499ffec4f7d59712bf6778b137dcf8c57f15c9a880646317176`  
+		Last Modified: Sat, 03 Jun 2017 00:36:46 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:512973f61fb3a8ced61e53f71c29e657ab59971569433cfeb856ce3e96d0dac8`  
-		Last Modified: Fri, 26 May 2017 15:47:21 GMT  
-		Size: 7.6 KB (7593 bytes)  
+	-	`sha256:44c47edeccd61de0087733ca4bb89acdb9d8da541b2e9ae1326d0006287dad2e`  
+		Last Modified: Sat, 03 Jun 2017 00:36:47 GMT  
+		Size: 7.6 KB (7594 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:5-fpm-alpine`
