@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:af020bdef07f52aa61444ccf998f36f33194837e8fd5bfdbbdf476f6e44f5499`
-- Created: `2017-05-30T19:20:53.650803771Z`
+- Image ID: `sha256:bac1704be5fbf22018bebda51e700c97eef1a75505d793332db7a12e3ef2554f`
+- Created: `2017-06-02T21:54:48.878040487Z`
 - Virtual Size: ~ 1.40 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -296,18 +296,24 @@ $ apt-get source -qq --print-uris base-passwd=3.5.33
 'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.5.33.tar.xz' base-passwd_3.5.33.tar.xz 48832 SHA256:da505760962eb27477f1854f9f818284043cf6cea703b2301a00b8d0ed8303bb
 ```
 
-### `dpkg` source package: `bash=4.3-7ubuntu1.6`
+### `dpkg` source package: `bash=4.3-7ubuntu1.7`
 
 Binary Packages:
 
-- `bash=4.3-7ubuntu1.6`
+- `bash=4.3-7ubuntu1.7`
 
 Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris bash=4.3-7ubuntu1.7
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-7ubuntu1.7.dsc' bash_4.3-7ubuntu1.7.dsc 2262 SHA256:82616738c15ec0b0e4c0008f2786e2ddec79eb9ba0d38eabeb1fb0bef4cdd00f
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3.orig.tar.gz' bash_4.3.orig.tar.gz 7516231 SHA256:b2fe79ddf9e7abdb4695e3070afa866d2a94a58d1cc9d731585330c753815491
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-7ubuntu1.7.debian.tar.gz' bash_4.3-7ubuntu1.7.debian.tar.gz 100404 SHA256:8a74045497aef83bef74206a43efe7d9e109cef603aa75f0c5fc60cbc4f2e91b
+```
 
 ### `dpkg` source package: `binutils=2.24-5ubuntu14.2`
 
@@ -2263,19 +2269,25 @@ $ apt-get source -qq --print-uris iputils=3:20121221-4ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iputils/iputils_20121221-4ubuntu1.1.debian.tar.gz' iputils_20121221-4ubuntu1.1.debian.tar.gz 16143 SHA256:4eb3ca79e68dfc5f5e66df7be3113c230168fbca2420da232adadc6475056c6a
 ```
 
-### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.8`
+### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.10`
 
 Binary Packages:
 
-- `isc-dhcp-client=4.2.4-7ubuntu12.8`
-- `isc-dhcp-common=4.2.4-7ubuntu12.8`
+- `isc-dhcp-client=4.2.4-7ubuntu12.10`
+- `isc-dhcp-common=4.2.4-7ubuntu12.10`
 
 Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/doc/isc-dhcp-common/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris isc-dhcp=4.2.4-7ubuntu12.10
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.10.dsc' isc-dhcp_4.2.4-7ubuntu12.10.dsc 2536 SHA256:965cd01f769908c4b3f55cd4597122e7f5abc1a28d914c09999a53e7ad8213cf
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.10.debian.tar.xz' isc-dhcp_4.2.4-7ubuntu12.10.debian.tar.xz 111980 SHA256:8a769650ddcc5a10226d48e8bd261c5505bf51e62ef8b34d73a6cb817abac09f
+```
 
 ### `dpkg` source package: `isl=0.12.2-1`
 
@@ -5221,12 +5233,12 @@ $ apt-get source -qq --print-uris openjpeg=1.3+dfsg-4.7ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/openjpeg/openjpeg_1.3+dfsg-4.7ubuntu1.diff.gz' openjpeg_1.3+dfsg-4.7ubuntu1.diff.gz 18043 SHA256:61de43f5dbbb453ba401ae9b1c79410cfb2823f91d001ea376af4dcf048f581c
 ```
 
-### `dpkg` source package: `openldap=2.4.31-1+nmu2ubuntu8.3`
+### `dpkg` source package: `openldap=2.4.31-1+nmu2ubuntu8.4`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.31-1+nmu2ubuntu8.3`
-- `libldap2-dev:amd64=2.4.31-1+nmu2ubuntu8.3`
+- `libldap-2.4-2:amd64=2.4.31-1+nmu2ubuntu8.4`
+- `libldap2-dev:amd64=2.4.31-1+nmu2ubuntu8.4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5235,10 +5247,10 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openldap=2.4.31-1+nmu2ubuntu8.3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.3.dsc' openldap_2.4.31-1+nmu2ubuntu8.3.dsc 2949 SHA256:e1271cf0647886f1eb8a3ec088ab46f2fa031c5154d5ad8b4a3725a9af963c92
+$ apt-get source -qq --print-uris openldap=2.4.31-1+nmu2ubuntu8.4
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.4.dsc' openldap_2.4.31-1+nmu2ubuntu8.4.dsc 2890 SHA256:a3dc09d4cfeabada88aebda971978e82d4ec01249b8a5660846abbafb9eca7b4
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31.orig.tar.gz' openldap_2.4.31.orig.tar.gz 4720612 SHA256:dff60c1044021217ab97a7bdda5a7016015f042db0fbfd566d52abb266d19239
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.3.diff.gz' openldap_2.4.31-1+nmu2ubuntu8.3.diff.gz 175837 SHA256:6cb56364d5a7483f62e3918d5d0d60778ec736b69d5b60baaabcb1406ad18bbf
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz' openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz 176512 SHA256:5bbd0a7eb5123bdf875c794a48634da4b89264cd2d980422cf58e4f408753a59
 ```
 
 ### `dpkg` source package: `openmpi=1.6.5-8`
@@ -5672,12 +5684,12 @@ $ apt-get source -qq --print-uris popt=1.16-8ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/popt/popt_1.16-8ubuntu1.debian.tar.gz' popt_1.16-8ubuntu1.debian.tar.gz 15563 SHA256:f56a14f2dd571a3f14f0d340d54e502b50ae5fcae3f9303b93d9cc0f20c8cf29
 ```
 
-### `dpkg` source package: `postgresql-9.3=9.3.16-0ubuntu0.14.04`
+### `dpkg` source package: `postgresql-9.3=9.3.17-0ubuntu0.14.04`
 
 Binary Packages:
 
-- `libpq-dev=9.3.16-0ubuntu0.14.04`
-- `libpq5=9.3.16-0ubuntu0.14.04`
+- `libpq-dev=9.3.17-0ubuntu0.14.04`
+- `libpq5=9.3.17-0ubuntu0.14.04`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -5689,10 +5701,10 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-9.3=9.3.16-0ubuntu0.14.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.16-0ubuntu0.14.04.dsc' postgresql-9.3_9.3.16-0ubuntu0.14.04.dsc 3595 SHA256:b905af82b2a135d8d99fafad13126a44c3feca08dbba235b6dd70f958889614c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.16.orig.tar.bz2' postgresql-9.3_9.3.16.orig.tar.bz2 17108969 SHA256:845f5e4ac8cf026b6a77c5a180a2fe869f51e9d06acf8d0365b05505a2c66873
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.16-0ubuntu0.14.04.debian.tar.xz' postgresql-9.3_9.3.16-0ubuntu0.14.04.debian.tar.xz 29148 SHA256:28bb02b236a332d8444914a5525555ac541eedb8fe1dfb85ca31e667877e347d
+$ apt-get source -qq --print-uris postgresql-9.3=9.3.17-0ubuntu0.14.04
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.17-0ubuntu0.14.04.dsc' postgresql-9.3_9.3.17-0ubuntu0.14.04.dsc 3595 SHA256:d6b4e85d96d6f6470a423b70d0a744c0cbf1a5035bff537d3a979991ae725b45
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.17.orig.tar.bz2' postgresql-9.3_9.3.17.orig.tar.bz2 17158802 SHA256:9c03e5f280cfe9bd202fa01af773eb146abd8ab3065f7279d574c568f6948dbe
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.17-0ubuntu0.14.04.debian.tar.xz' postgresql-9.3_9.3.17-0ubuntu0.14.04.debian.tar.xz 29352 SHA256:3fd06d89b2132a337d68f41436b16ee06dc2968571a832f9daf02a5861445d0c
 ```
 
 ### `dpkg` source package: `procps=1:3.3.9-1ubuntu2.2`
@@ -6183,19 +6195,25 @@ $ apt-get source -qq --print-uris sgml-base=1.26+nmu4ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sgml-base/sgml-base_1.26+nmu4ubuntu1.tar.gz' sgml-base_1.26+nmu4ubuntu1.tar.gz 12912 SHA256:93d99ea554da5fea0c8abe424042ba8237c86faebaa02976fb92db3d198a47b4
 ```
 
-### `dpkg` source package: `shadow=1:4.1.5.1-1ubuntu9.4`
+### `dpkg` source package: `shadow=1:4.1.5.1-1ubuntu9.5`
 
 Binary Packages:
 
-- `login=1:4.1.5.1-1ubuntu9.4`
-- `passwd=1:4.1.5.1-1ubuntu9.4`
+- `login=1:4.1.5.1-1ubuntu9.5`
+- `passwd=1:4.1.5.1-1ubuntu9.5`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris shadow=1:4.1.5.1-1ubuntu9.5
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.1.5.1-1ubuntu9.5.dsc' shadow_4.1.5.1-1ubuntu9.5.dsc 2028 SHA256:93a2ab100897ca8efde1d4a71a993d3e6a4f8bee01f53dce244d11b1cae35970
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.1.5.1.orig.tar.gz' shadow_4.1.5.1.orig.tar.gz 3508077 SHA256:ee1986c5fec9f6e7868bcc5329874a72dec74897b598d86eb0532f79471f32f0
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.1.5.1-1ubuntu9.5.diff.gz' shadow_4.1.5.1-1ubuntu9.5.diff.gz 115342 SHA256:dd3d87b630785f33b5c40d2b08aca1fb1a4f9a4aea109d1a6e90f563624e5bc0
+```
 
 ### `dpkg` source package: `shared-mime-info=1.2-0ubuntu3`
 
@@ -6327,18 +6345,24 @@ $ apt-get source -qq --print-uris sqlite3=3.8.2-1ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.8.2-1ubuntu2.1.debian.tar.gz' sqlite3_3.8.2-1ubuntu2.1.debian.tar.gz 24599 SHA256:80bc6b9e2c4e5b064507b9a03df4f3f786c7246831ad5d5309cdc178ceacfb26
 ```
 
-### `dpkg` source package: `sudo=1.8.9p5-1ubuntu1.3`
+### `dpkg` source package: `sudo=1.8.9p5-1ubuntu1.4`
 
 Binary Packages:
 
-- `sudo=1.8.9p5-1ubuntu1.3`
+- `sudo=1.8.9p5-1ubuntu1.4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris sudo=1.8.9p5-1ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.4.dsc' sudo_1.8.9p5-1ubuntu1.4.dsc 2018 SHA256:219d9a25bb19a2593187af41332099ea7d7336f5359becac8d950f7c2065b370
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5.orig.tar.gz' sudo_1.8.9p5.orig.tar.gz 2179066 SHA256:bc9d5c96de5f8b4d2b014f87a37870aef60d2891c869202454069150a21a5c21
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.4.debian.tar.gz' sudo_1.8.9p5-1ubuntu1.4.debian.tar.gz 42099 SHA256:0dd793cc146e8b00f8d5e26d543333c68a6fdf8f612c159151cd9c5f90281686
+```
 
 ### `dpkg` source package: `systemd=204-5ubuntu20.24`
 

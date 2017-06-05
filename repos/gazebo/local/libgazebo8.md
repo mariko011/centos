@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:32dfdedf15fff935bd574cd8b061b866d16c95f7da3e59811223620a72a4f7ca`
-- Created: `2017-05-30T20:11:53.607307685Z`
+- Image ID: `sha256:a812cab236afc2af71ed66889342823e3e5c7323e733fe0e3c940585bd1bca47`
+- Created: `2017-06-02T22:35:10.80537549Z`
 - Virtual Size: ~ 1.43 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -272,18 +272,24 @@ $ apt-get source -qq --print-uris base-passwd=3.5.39
 'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.5.39.tar.xz' base-passwd_3.5.39.tar.xz 51560 SHA256:d827ce2d7b9b4b572527b2071f0e1354840a14c3a43a5081bcb31de400112803
 ```
 
-### `dpkg` source package: `bash=4.3-14ubuntu1.1`
+### `dpkg` source package: `bash=4.3-14ubuntu1.2`
 
 Binary Packages:
 
-- `bash=4.3-14ubuntu1.1`
+- `bash=4.3-14ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris bash=4.3-14ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-14ubuntu1.2.dsc' bash_4.3-14ubuntu1.2.dsc 2309 SHA256:859994a2e6bda95ac88478e70af6aaa4a489c96e1ff6ee245d63f7baacb6fdff
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3.orig.tar.gz' bash_4.3.orig.tar.gz 7516231 SHA256:b2fe79ddf9e7abdb4695e3070afa866d2a94a58d1cc9d731585330c753815491
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-14ubuntu1.2.debian.tar.xz' bash_4.3-14ubuntu1.2.debian.tar.xz 93220 SHA256:5a48a09909595cf4f88634ff54bf3bde0eaf9cfc980fd2e3637c3406d2a4d14d
+```
 
 ### `dpkg` source package: `bind9=1:9.10.3.dfsg.P4-8ubuntu1.6`
 
@@ -2037,12 +2043,12 @@ $ apt-get source -qq --print-uris iptables=1.6.0-2ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iptables/iptables_1.6.0-2ubuntu3.debian.tar.xz' iptables_1.6.0-2ubuntu3.debian.tar.xz 116764 SHA256:f750f66d75c281762806e9c21b4577de47417e63d05f52cc9fc5fb594f13cad6
 ```
 
-### `dpkg` source package: `isc-dhcp=4.3.3-5ubuntu12.6`
+### `dpkg` source package: `isc-dhcp=4.3.3-5ubuntu12.7`
 
 Binary Packages:
 
-- `isc-dhcp-client=4.3.3-5ubuntu12.6`
-- `isc-dhcp-common=4.3.3-5ubuntu12.6`
+- `isc-dhcp-client=4.3.3-5ubuntu12.7`
+- `isc-dhcp-common=4.3.3-5ubuntu12.7`
 
 Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/doc/isc-dhcp-common/copyright`)
 
@@ -2051,10 +2057,10 @@ Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris isc-dhcp=4.3.3-5ubuntu12.6
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.3.3-5ubuntu12.6.dsc' isc-dhcp_4.3.3-5ubuntu12.6.dsc 2789 SHA256:050b7ccf9d9fd6b6ea732b3c5b564bd10006c8b3d5d245b727c911203ea15a2a
+$ apt-get source -qq --print-uris isc-dhcp=4.3.3-5ubuntu12.7
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.3.3-5ubuntu12.7.dsc' isc-dhcp_4.3.3-5ubuntu12.7.dsc 2441 SHA256:0a412a39a9132ace653b8178805b9566aea9c7ec5937f0066b33a9b068149761
 'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.3.3.orig.tar.gz' isc-dhcp_4.3.3.orig.tar.gz 1094938 SHA256:13d2bbc4536dfb2cd8f0fb0ac33a4bc7acec7ac013eb82ff44597de191b97dcb
-'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.3.3-5ubuntu12.6.debian.tar.xz' isc-dhcp_4.3.3-5ubuntu12.6.debian.tar.xz 111712 SHA256:ec7f42aaff8dcf3a7fb364ac855614aa37953973ae01dff1ca2a6128b043a931
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.3.3-5ubuntu12.7.debian.tar.xz' isc-dhcp_4.3.3-5ubuntu12.7.debian.tar.xz 112096 SHA256:eef354b6690180e61f19796dfd04d1abdfbfd5c39e1f3501974b0384a95cfd9d
 ```
 
 ### `dpkg` source package: `isl=0.16.1-1`
@@ -3471,11 +3477,11 @@ $ apt-get source -qq --print-uris libsm=2:1.2.2-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsm/libsm_1.2.2-1.diff.gz' libsm_1.2.2-1.diff.gz 6183 SHA256:9848714292ead15fcc48ab2d337f2cc5fc08910abbdfaf69d3ef1b89d3fdb2d5
 ```
 
-### `dpkg` source package: `libsndfile=1.0.25-10`
+### `dpkg` source package: `libsndfile=1.0.25-10ubuntu0.16.04.1`
 
 Binary Packages:
 
-- `libsndfile1:amd64=1.0.25-10`
+- `libsndfile1:amd64=1.0.25-10ubuntu0.16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libsndfile1/copyright`)
 
@@ -3484,10 +3490,10 @@ Licenses: (parsed from: `/usr/share/doc/libsndfile1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libsndfile=1.0.25-10
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsndfile/libsndfile_1.0.25-10.dsc' libsndfile_1.0.25-10.dsc 2105 SHA256:22528941859174d0cf517fbb6791f3408087d750aa873aa102e6ca263a45529b
+$ apt-get source -qq --print-uris libsndfile=1.0.25-10ubuntu0.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsndfile/libsndfile_1.0.25-10ubuntu0.16.04.1.dsc' libsndfile_1.0.25-10ubuntu0.16.04.1.dsc 2246 SHA256:14fbb4b37b1ffbec7c0d194cc212219bed8739e4cfb537f5e116465a3c1c43ec
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsndfile/libsndfile_1.0.25.orig.tar.gz' libsndfile_1.0.25.orig.tar.gz 1060692 SHA256:59016dbd326abe7e2366ded5c344c853829bebfd1702ef26a07ef662d6aa4882
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsndfile/libsndfile_1.0.25-10.debian.tar.xz' libsndfile_1.0.25-10.debian.tar.xz 12352 SHA256:5ffa6a5449cde6e8c4076066eb0cdac99acd9186744fbd000bbe854cc505e7ab
+'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsndfile/libsndfile_1.0.25-10ubuntu0.16.04.1.debian.tar.xz' libsndfile_1.0.25-10ubuntu0.16.04.1.debian.tar.xz 17308 SHA256:b930d5f96ddcd07bbf8bea1e61b6c3b836e6dbaa0271ab58742bdabf8600ba53
 ```
 
 ### `dpkg` source package: `libsodium=1.0.8-5`
@@ -5018,11 +5024,11 @@ $ apt-get source -qq --print-uris openjpeg=1:1.5.2-3.1
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/openjpeg/openjpeg_1.5.2-3.1.debian.tar.xz' openjpeg_1.5.2-3.1.debian.tar.xz 18660 SHA256:c45f580c9dbdeffe9bc0e1f4f5c69b7a661568771339424690c81e138b973285
 ```
 
-### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu3.1`
+### `dpkg` source package: `openldap=2.4.42+dfsg-2ubuntu3.2`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.42+dfsg-2ubuntu3.1`
+- `libldap-2.4-2:amd64=2.4.42+dfsg-2ubuntu3.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5031,10 +5037,10 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.1.dsc' openldap_2.4.42+dfsg-2ubuntu3.1.dsc 3040 SHA256:7831e80ebda39d53cd72fe7f0f09a81954bcaf099c65eb321d5e4f62429b49d3
+$ apt-get source -qq --print-uris openldap=2.4.42+dfsg-2ubuntu3.2
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.2.dsc' openldap_2.4.42+dfsg-2ubuntu3.2.dsc 3040 SHA256:f22b2a2b83f6b656ef96ca6b25a125399c123908cfaa9f1f503115fffa536ae7
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg.orig.tar.gz' openldap_2.4.42+dfsg.orig.tar.gz 4813173 SHA256:5f56e4e3584f7a4b4c8437a2c985b2f519836946be77ef1aa43a5d20c02ea97b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.1.debian.tar.xz' openldap_2.4.42+dfsg-2ubuntu3.1.debian.tar.xz 176564 SHA256:91b3cf496c0a6c40ae6fb909477cf6dabbfc3a2962f9a08fee6ed071c8223ceb
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.42+dfsg-2ubuntu3.2.debian.tar.xz' openldap_2.4.42+dfsg-2ubuntu3.2.debian.tar.xz 176956 SHA256:b3262b8e294c9025ffafc0a0b5132ac9e4cc3faeabea3d9d2292c6dccc067d67
 ```
 
 ### `dpkg` source package: `openmpi=1.10.2-8ubuntu1`
@@ -5890,19 +5896,25 @@ $ apt-get source -qq --print-uris sgml-base=1.26+nmu4ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sgml-base/sgml-base_1.26+nmu4ubuntu1.tar.gz' sgml-base_1.26+nmu4ubuntu1.tar.gz 12912 SHA256:93d99ea554da5fea0c8abe424042ba8237c86faebaa02976fb92db3d198a47b4
 ```
 
-### `dpkg` source package: `shadow=1:4.2-3.1ubuntu5.2`
+### `dpkg` source package: `shadow=1:4.2-3.1ubuntu5.3`
 
 Binary Packages:
 
-- `login=1:4.2-3.1ubuntu5.2`
-- `passwd=1:4.2-3.1ubuntu5.2`
+- `login=1:4.2-3.1ubuntu5.3`
+- `passwd=1:4.2-3.1ubuntu5.3`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris shadow=1:4.2-3.1ubuntu5.3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.1ubuntu5.3.dsc' shadow_4.2-3.1ubuntu5.3.dsc 2120 SHA256:2b7b87f7999f5956c915fcd3fc166b0c9c459644ce8ec5505d57f2cca1b31b76
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.1ubuntu5.3.debian.tar.xz' shadow_4.2-3.1ubuntu5.3.debian.tar.xz 505880 SHA256:654fb836e170a8395532ff589c644da6306745d4f630130082971b532bdd68f6
+```
 
 ### `dpkg` source package: `shared-mime-info=1.5-2ubuntu0.1`
 
