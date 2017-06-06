@@ -1741,14 +1741,8 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=3.4-3ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_3.4-3ubuntu0.4.dsc' libtasn1-6_3.4-3ubuntu0.4.dsc 2477 SHA256:37f4e952f06ae3c12f729a6adb8c6b1becbcd7a50dd2fc3322d44820f185eee1
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_3.4.orig.tar.gz' libtasn1-6_3.4.orig.tar.gz 1844115 SHA256:f353507a458fe2372b791016a056c95946eebfc7256b49013851f134a5e6acc8
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_3.4-3ubuntu0.4.debian.tar.gz' libtasn1-6_3.4-3ubuntu0.4.debian.tar.gz 68565 SHA256:5ae639db91228a1232c73bfda07484bd456b577090e1f33c5b973fcf2350f8b5
-```
 
 ### `dpkg` source package: `libterm-ui-perl=0.42-1`
 

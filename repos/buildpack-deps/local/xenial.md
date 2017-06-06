@@ -2411,14 +2411,8 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.7-3ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7-3ubuntu0.16.04.1.dsc' libtasn1-6_4.7-3ubuntu0.16.04.1.dsc 2497 SHA256:5a01cd2b1fbc47f4881df3ad5dd5934a131049c6bc5f45c3e595143ebf33b308
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7.orig.tar.gz' libtasn1-6_4.7.orig.tar.gz 1851611 SHA256:a40780dc93fc6d819170240e8ece25352058a85fd1d2347ce0f143667d8f11c9
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7-3ubuntu0.16.04.1.debian.tar.xz' libtasn1-6_4.7-3ubuntu0.16.04.1.debian.tar.xz 58456 SHA256:3a4455ef6e5992d8d4526ce5c96fe94850c8a9f50f77c5c7e2830de7696158fe
-```
 
 ### `dpkg` source package: `libthai=0.1.24-2`
 
@@ -2915,14 +2909,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `GPL-2`
 - `redpine-signals`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-78.99
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-78.99.dsc' linux_4.4.0-78.99.dsc 9282 SHA256:16c4a5d8ca94c47e890542a43f5d30e719ae8e4e47f1d4db12612162374d4105
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-78.99.diff.gz' linux_4.4.0-78.99.diff.gz 12801638 SHA256:bc4656e7be7c7df67aed5c82715d7fc48e807945a5f7fe785416af3782c348c8
-```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu0.2`
 

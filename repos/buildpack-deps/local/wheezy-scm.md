@@ -1831,19 +1831,8 @@ Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-ba
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris perl=5.14.2-21+deb7u4
-'http://security.debian.org/pool/updates/main/p/perl/perl_5.14.2-21+deb7u4.dsc' perl_5.14.2-21+deb7u4.dsc 2446 SHA256:4bd0ab0fcc868af8b9a4644742fcc341164596ca61fcdbe5698b9a69fc655a9b
-'http://security.debian.org/pool/updates/main/p/perl/perl_5.14.2.orig.tar.bz2' perl_5.14.2.orig.tar.bz2 13226972 SHA256:c2a2362e8d1fdd2bfbfde801fcd78241f154c164f00fba76065ab8cc5c7b06cd
-'http://security.debian.org/pool/updates/main/p/perl/perl_5.14.2-21+deb7u4.debian.tar.xz' perl_5.14.2-21+deb7u4.debian.tar.xz 153344 SHA256:ee94ab9aa3a5b764f5c26f2eff989f1a8618e9a959f19073b3dd9016a6351a2a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/perl/5.14.2-21+deb7u4/
-- https://sources.debian.net/src/perl/5.14.2-21+deb7u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `procps=1:3.3.3-3`
 
