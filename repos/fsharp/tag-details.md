@@ -16,7 +16,7 @@
 ## `fsharp:latest`
 
 ```console
-$ docker pull fsharp@sha256:38f8c77a014d227379eb54986f273934d23e17b630dddae62597a09ad258132d
+$ docker pull fsharp@sha256:ac5c26abdad6dc7a0ed51a3ba7a705bd517a511baaec2afea990798f9901f914
 ```
 
 -	Platforms:
@@ -26,9 +26,9 @@ $ docker pull fsharp@sha256:38f8c77a014d227379eb54986f273934d23e17b630dddae62597
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **340.5 MB (340453651 bytes)**  
+-	Total Size: **276.1 MB (276131400 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:419326e89766dbd37d7f23ccfac3d9d2773a82b27a35cdd3e54d867c25358acb`
+-	Image ID: `sha256:ae64c1f6d81d2452bedf3cc666b4dfe099ed544ad76eb45225f9d3aa7fece6cc`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
@@ -52,23 +52,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
 # Fri, 02 Jun 2017 17:46:32 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>
-# Fri, 02 Jun 2017 17:46:33 GMT
-ENV MONO_VERSION=4.8.1.0
-# Fri, 02 Jun 2017 17:46:37 GMT
-RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list
-# Fri, 02 Jun 2017 17:46:38 GMT
+# Tue, 06 Jun 2017 21:21:30 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Fri, 02 Jun 2017 17:47:25 GMT
-RUN apt-get -y update &&     apt-get -y --no-install-recommends install nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:47:27 GMT
-ENV FSHARP_VERSION=4.1.18
-# Fri, 02 Jun 2017 17:47:28 GMT
-ENV FSHARP_PREFIX=/usr FSHARP_GACDIR=/usr/lib/mono/gac FSHARP_BASENAME=fsharp-4.1.18 FSHARP_ARCHIVE=4.1.18.tar.gz FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/4.1.18.tar.gz
-# Fri, 02 Jun 2017 17:54:43 GMT
-RUN mkdir -p /tmp/src &&     cd /tmp/src &&     wget $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src
-# Fri, 02 Jun 2017 17:54:45 GMT
+# Tue, 06 Jun 2017 21:29:55 GMT
+RUN MONO_VERSION=4.8.1.0 &&     FSHARP_VERSION=4.1.18 &&     FSHARP_PREFIX=/usr &&     FSHARP_GACDIR=/usr/lib/mono/gac &&     FSHARP_BASENAME=fsharp-$FSHARP_VERSION &&     FSHARP_ARCHIVE=$FSHARP_VERSION.tar.gz &&     FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/$FSHARP_VERSION.tar.gz &&     apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list &&     apt-get update -y &&     apt-get --no-install-recommends install -y pkg-config nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p /tmp/src &&     cd /tmp/src &&     curl -LO $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src /tmp/NuGetScratch ~/.nuget ~/.config ~/.local
+# Tue, 06 Jun 2017 21:30:10 GMT
 WORKDIR /root
-# Fri, 02 Jun 2017 17:54:46 GMT
+# Tue, 06 Jun 2017 21:30:10 GMT
 CMD ["fsharpi"]
 ```
 
@@ -105,23 +95,15 @@ CMD ["fsharpi"]
 		Last Modified: Fri, 02 Jun 2017 17:32:24 GMT  
 		Size: 105.4 MB (105361509 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71dec2b89b04f02b019b06651118059162f5ad44dd4095b7c95cd3fbb1ff2006`  
-		Last Modified: Fri, 02 Jun 2017 19:50:47 GMT  
-		Size: 13.8 KB (13812 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0cd9e714ace51dd7ae038c0ea0addbd64729655d8d00c4cf3a8a8522f072a17`  
-		Last Modified: Fri, 02 Jun 2017 19:51:06 GMT  
-		Size: 55.0 MB (54951167 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:faa70799ff4dbb3ff038e19b6ea670933f41e1c91a7921a7429966785f891e15`  
-		Last Modified: Fri, 02 Jun 2017 19:51:04 GMT  
-		Size: 78.7 MB (78692545 bytes)  
+	-	`sha256:3f44483640ec642a812e4292f1800ba8abef22b90b722311475e7f1a64df43e2`  
+		Last Modified: Tue, 06 Jun 2017 21:54:13 GMT  
+		Size: 69.3 MB (69335273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fsharp:4`
 
 ```console
-$ docker pull fsharp@sha256:38f8c77a014d227379eb54986f273934d23e17b630dddae62597a09ad258132d
+$ docker pull fsharp@sha256:ac5c26abdad6dc7a0ed51a3ba7a705bd517a511baaec2afea990798f9901f914
 ```
 
 -	Platforms:
@@ -131,9 +113,9 @@ $ docker pull fsharp@sha256:38f8c77a014d227379eb54986f273934d23e17b630dddae62597
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **340.5 MB (340453651 bytes)**  
+-	Total Size: **276.1 MB (276131400 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:419326e89766dbd37d7f23ccfac3d9d2773a82b27a35cdd3e54d867c25358acb`
+-	Image ID: `sha256:ae64c1f6d81d2452bedf3cc666b4dfe099ed544ad76eb45225f9d3aa7fece6cc`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
@@ -157,23 +139,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
 # Fri, 02 Jun 2017 17:46:32 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>
-# Fri, 02 Jun 2017 17:46:33 GMT
-ENV MONO_VERSION=4.8.1.0
-# Fri, 02 Jun 2017 17:46:37 GMT
-RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list
-# Fri, 02 Jun 2017 17:46:38 GMT
+# Tue, 06 Jun 2017 21:21:30 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Fri, 02 Jun 2017 17:47:25 GMT
-RUN apt-get -y update &&     apt-get -y --no-install-recommends install nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:47:27 GMT
-ENV FSHARP_VERSION=4.1.18
-# Fri, 02 Jun 2017 17:47:28 GMT
-ENV FSHARP_PREFIX=/usr FSHARP_GACDIR=/usr/lib/mono/gac FSHARP_BASENAME=fsharp-4.1.18 FSHARP_ARCHIVE=4.1.18.tar.gz FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/4.1.18.tar.gz
-# Fri, 02 Jun 2017 17:54:43 GMT
-RUN mkdir -p /tmp/src &&     cd /tmp/src &&     wget $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src
-# Fri, 02 Jun 2017 17:54:45 GMT
+# Tue, 06 Jun 2017 21:29:55 GMT
+RUN MONO_VERSION=4.8.1.0 &&     FSHARP_VERSION=4.1.18 &&     FSHARP_PREFIX=/usr &&     FSHARP_GACDIR=/usr/lib/mono/gac &&     FSHARP_BASENAME=fsharp-$FSHARP_VERSION &&     FSHARP_ARCHIVE=$FSHARP_VERSION.tar.gz &&     FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/$FSHARP_VERSION.tar.gz &&     apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list &&     apt-get update -y &&     apt-get --no-install-recommends install -y pkg-config nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p /tmp/src &&     cd /tmp/src &&     curl -LO $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src /tmp/NuGetScratch ~/.nuget ~/.config ~/.local
+# Tue, 06 Jun 2017 21:30:10 GMT
 WORKDIR /root
-# Fri, 02 Jun 2017 17:54:46 GMT
+# Tue, 06 Jun 2017 21:30:10 GMT
 CMD ["fsharpi"]
 ```
 
@@ -210,23 +182,15 @@ CMD ["fsharpi"]
 		Last Modified: Fri, 02 Jun 2017 17:32:24 GMT  
 		Size: 105.4 MB (105361509 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71dec2b89b04f02b019b06651118059162f5ad44dd4095b7c95cd3fbb1ff2006`  
-		Last Modified: Fri, 02 Jun 2017 19:50:47 GMT  
-		Size: 13.8 KB (13812 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0cd9e714ace51dd7ae038c0ea0addbd64729655d8d00c4cf3a8a8522f072a17`  
-		Last Modified: Fri, 02 Jun 2017 19:51:06 GMT  
-		Size: 55.0 MB (54951167 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:faa70799ff4dbb3ff038e19b6ea670933f41e1c91a7921a7429966785f891e15`  
-		Last Modified: Fri, 02 Jun 2017 19:51:04 GMT  
-		Size: 78.7 MB (78692545 bytes)  
+	-	`sha256:3f44483640ec642a812e4292f1800ba8abef22b90b722311475e7f1a64df43e2`  
+		Last Modified: Tue, 06 Jun 2017 21:54:13 GMT  
+		Size: 69.3 MB (69335273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fsharp:4.1`
 
 ```console
-$ docker pull fsharp@sha256:38f8c77a014d227379eb54986f273934d23e17b630dddae62597a09ad258132d
+$ docker pull fsharp@sha256:ac5c26abdad6dc7a0ed51a3ba7a705bd517a511baaec2afea990798f9901f914
 ```
 
 -	Platforms:
@@ -236,9 +200,9 @@ $ docker pull fsharp@sha256:38f8c77a014d227379eb54986f273934d23e17b630dddae62597
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **340.5 MB (340453651 bytes)**  
+-	Total Size: **276.1 MB (276131400 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:419326e89766dbd37d7f23ccfac3d9d2773a82b27a35cdd3e54d867c25358acb`
+-	Image ID: `sha256:ae64c1f6d81d2452bedf3cc666b4dfe099ed544ad76eb45225f9d3aa7fece6cc`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
@@ -262,23 +226,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
 # Fri, 02 Jun 2017 17:46:32 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>
-# Fri, 02 Jun 2017 17:46:33 GMT
-ENV MONO_VERSION=4.8.1.0
-# Fri, 02 Jun 2017 17:46:37 GMT
-RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list
-# Fri, 02 Jun 2017 17:46:38 GMT
+# Tue, 06 Jun 2017 21:21:30 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Fri, 02 Jun 2017 17:47:25 GMT
-RUN apt-get -y update &&     apt-get -y --no-install-recommends install nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:47:27 GMT
-ENV FSHARP_VERSION=4.1.18
-# Fri, 02 Jun 2017 17:47:28 GMT
-ENV FSHARP_PREFIX=/usr FSHARP_GACDIR=/usr/lib/mono/gac FSHARP_BASENAME=fsharp-4.1.18 FSHARP_ARCHIVE=4.1.18.tar.gz FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/4.1.18.tar.gz
-# Fri, 02 Jun 2017 17:54:43 GMT
-RUN mkdir -p /tmp/src &&     cd /tmp/src &&     wget $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src
-# Fri, 02 Jun 2017 17:54:45 GMT
+# Tue, 06 Jun 2017 21:29:55 GMT
+RUN MONO_VERSION=4.8.1.0 &&     FSHARP_VERSION=4.1.18 &&     FSHARP_PREFIX=/usr &&     FSHARP_GACDIR=/usr/lib/mono/gac &&     FSHARP_BASENAME=fsharp-$FSHARP_VERSION &&     FSHARP_ARCHIVE=$FSHARP_VERSION.tar.gz &&     FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/$FSHARP_VERSION.tar.gz &&     apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list &&     apt-get update -y &&     apt-get --no-install-recommends install -y pkg-config nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p /tmp/src &&     cd /tmp/src &&     curl -LO $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src /tmp/NuGetScratch ~/.nuget ~/.config ~/.local
+# Tue, 06 Jun 2017 21:30:10 GMT
 WORKDIR /root
-# Fri, 02 Jun 2017 17:54:46 GMT
+# Tue, 06 Jun 2017 21:30:10 GMT
 CMD ["fsharpi"]
 ```
 
@@ -315,23 +269,15 @@ CMD ["fsharpi"]
 		Last Modified: Fri, 02 Jun 2017 17:32:24 GMT  
 		Size: 105.4 MB (105361509 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71dec2b89b04f02b019b06651118059162f5ad44dd4095b7c95cd3fbb1ff2006`  
-		Last Modified: Fri, 02 Jun 2017 19:50:47 GMT  
-		Size: 13.8 KB (13812 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0cd9e714ace51dd7ae038c0ea0addbd64729655d8d00c4cf3a8a8522f072a17`  
-		Last Modified: Fri, 02 Jun 2017 19:51:06 GMT  
-		Size: 55.0 MB (54951167 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:faa70799ff4dbb3ff038e19b6ea670933f41e1c91a7921a7429966785f891e15`  
-		Last Modified: Fri, 02 Jun 2017 19:51:04 GMT  
-		Size: 78.7 MB (78692545 bytes)  
+	-	`sha256:3f44483640ec642a812e4292f1800ba8abef22b90b722311475e7f1a64df43e2`  
+		Last Modified: Tue, 06 Jun 2017 21:54:13 GMT  
+		Size: 69.3 MB (69335273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fsharp:4.1.18`
 
 ```console
-$ docker pull fsharp@sha256:38f8c77a014d227379eb54986f273934d23e17b630dddae62597a09ad258132d
+$ docker pull fsharp@sha256:ac5c26abdad6dc7a0ed51a3ba7a705bd517a511baaec2afea990798f9901f914
 ```
 
 -	Platforms:
@@ -341,9 +287,9 @@ $ docker pull fsharp@sha256:38f8c77a014d227379eb54986f273934d23e17b630dddae62597
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **340.5 MB (340453651 bytes)**  
+-	Total Size: **276.1 MB (276131400 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:419326e89766dbd37d7f23ccfac3d9d2773a82b27a35cdd3e54d867c25358acb`
+-	Image ID: `sha256:ae64c1f6d81d2452bedf3cc666b4dfe099ed544ad76eb45225f9d3aa7fece6cc`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
@@ -367,23 +313,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
 # Fri, 02 Jun 2017 17:46:32 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>
-# Fri, 02 Jun 2017 17:46:33 GMT
-ENV MONO_VERSION=4.8.1.0
-# Fri, 02 Jun 2017 17:46:37 GMT
-RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list
-# Fri, 02 Jun 2017 17:46:38 GMT
+# Tue, 06 Jun 2017 21:21:30 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Fri, 02 Jun 2017 17:47:25 GMT
-RUN apt-get -y update &&     apt-get -y --no-install-recommends install nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:47:27 GMT
-ENV FSHARP_VERSION=4.1.18
-# Fri, 02 Jun 2017 17:47:28 GMT
-ENV FSHARP_PREFIX=/usr FSHARP_GACDIR=/usr/lib/mono/gac FSHARP_BASENAME=fsharp-4.1.18 FSHARP_ARCHIVE=4.1.18.tar.gz FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/4.1.18.tar.gz
-# Fri, 02 Jun 2017 17:54:43 GMT
-RUN mkdir -p /tmp/src &&     cd /tmp/src &&     wget $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src
-# Fri, 02 Jun 2017 17:54:45 GMT
+# Tue, 06 Jun 2017 21:29:55 GMT
+RUN MONO_VERSION=4.8.1.0 &&     FSHARP_VERSION=4.1.18 &&     FSHARP_PREFIX=/usr &&     FSHARP_GACDIR=/usr/lib/mono/gac &&     FSHARP_BASENAME=fsharp-$FSHARP_VERSION &&     FSHARP_ARCHIVE=$FSHARP_VERSION.tar.gz &&     FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/$FSHARP_VERSION.tar.gz &&     apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list &&     apt-get update -y &&     apt-get --no-install-recommends install -y pkg-config nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p /tmp/src &&     cd /tmp/src &&     curl -LO $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src /tmp/NuGetScratch ~/.nuget ~/.config ~/.local
+# Tue, 06 Jun 2017 21:30:10 GMT
 WORKDIR /root
-# Fri, 02 Jun 2017 17:54:46 GMT
+# Tue, 06 Jun 2017 21:30:10 GMT
 CMD ["fsharpi"]
 ```
 
@@ -420,22 +356,55 @@ CMD ["fsharpi"]
 		Last Modified: Fri, 02 Jun 2017 17:32:24 GMT  
 		Size: 105.4 MB (105361509 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:71dec2b89b04f02b019b06651118059162f5ad44dd4095b7c95cd3fbb1ff2006`  
-		Last Modified: Fri, 02 Jun 2017 19:50:47 GMT  
-		Size: 13.8 KB (13812 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e0cd9e714ace51dd7ae038c0ea0addbd64729655d8d00c4cf3a8a8522f072a17`  
-		Last Modified: Fri, 02 Jun 2017 19:51:06 GMT  
-		Size: 55.0 MB (54951167 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:faa70799ff4dbb3ff038e19b6ea670933f41e1c91a7921a7429966785f891e15`  
-		Last Modified: Fri, 02 Jun 2017 19:51:04 GMT  
-		Size: 78.7 MB (78692545 bytes)  
+	-	`sha256:3f44483640ec642a812e4292f1800ba8abef22b90b722311475e7f1a64df43e2`  
+		Last Modified: Tue, 06 Jun 2017 21:54:13 GMT  
+		Size: 69.3 MB (69335273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fsharp:4.1.18-wheezy-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull fsharp@sha256:da89a986ae9aa7d0a1b7a7447c71ee8093c3cc32941d5b2c040640c45ea0ab42
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `fsharp:4.1.18-wheezy-slim` - linux; amd64
+
+-	Docker Version: 17.03.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **125.3 MB (125279685 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f6704ffb681b85117407b6e3cdf0749e97506ec664015ad03562d86e76320020`
+-	Default Command: `["fsharpi"]`
+
+```dockerfile
+# Mon, 08 May 2017 23:41:58 GMT
+ADD file:ec0c9107c69a3f85f7d43fdc297a5f989f6ba8dfb67ad8fb8fdd6e8bd5f51e08 in / 
+# Mon, 08 May 2017 23:41:59 GMT
+CMD ["/bin/bash"]
+# Tue, 06 Jun 2017 21:44:07 GMT
+LABEL maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>
+# Tue, 06 Jun 2017 21:44:08 GMT
+ENV MONO_THREADS_PER_CPU=50
+# Tue, 06 Jun 2017 21:53:08 GMT
+RUN MONO_VERSION=4.8.1.0 &&     FSHARP_VERSION=4.1.18 &&     FSHARP_PREFIX=/usr &&     FSHARP_GACDIR=/usr/lib/mono/gac &&     FSHARP_BASENAME=fsharp-$FSHARP_VERSION &&     FSHARP_ARCHIVE=$FSHARP_VERSION.tar.gz &&     FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/$FSHARP_VERSION.tar.gz &&     apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list &&     apt-get update -y &&     apt-get --no-install-recommends install -y autoconf libtool pkg-config make automake nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p /tmp/src &&     cd /tmp/src &&     printf "namespace a { class b { public static void Main(string[] args) { new System.Net.WebClient().DownloadFile(\"%s\", \"%s\");}}}" $FSHARP_ARCHIVE_URL $FSHARP_ARCHIVE > download-fsharp.cs &&     mcs download-fsharp.cs && mono download-fsharp.exe && rm download-fsharp.exe download-fsharp.cs &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src /tmp/NuGetScratch ~/.nuget ~/.config ~/.local &&     apt-get purge -y autoconf libtool make automake &&     apt-get clean
+# Tue, 06 Jun 2017 21:53:29 GMT
+WORKDIR /root
+# Tue, 06 Jun 2017 21:53:29 GMT
+CMD ["fsharpi"]
+```
+
+-	Layers:
+	-	`sha256:8db8e759140b7c108d2930a3ea221452a154daec5da41243e1c7beb3da19d39f`  
+		Last Modified: Tue, 09 May 2017 00:00:51 GMT  
+		Size: 19.6 MB (19627892 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:4c61da2a1b974b49150b0d95754d0462861a25c1659fb32fd967d062e827fdf9`  
+		Last Modified: Tue, 06 Jun 2017 21:56:15 GMT  
+		Size: 105.7 MB (105651793 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fsharp:4.1.0.1`
 
