@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8d4c9ae219d01e7338adf9b955679f75dc1b3b399fd2acf0022f9a88ae84c73d`
-- Created: `2017-05-15T16:44:32.159184993Z`
-- Virtual Size: ~ 105.78 Mb  
+- Image ID: `sha256:19d5aca0ccd49604d1a5eb5c4d8bd2c9e1d78c67a36beaada1e40db63b1168dd`
+- Created: `2017-06-02T16:17:33.205774337Z`
+- Virtual Size: ~ 105.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -150,11 +150,11 @@ $ apt-get source -qq --print-uris base-passwd=3.5.40
 'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.5.40.tar.xz' base-passwd_3.5.40.tar.xz 52244 SHA256:834e0b23186d90339c1dfa91366906ce6a327d1d31cce925b53e745b7cb44f55
 ```
 
-### `dpkg` source package: `bash=4.3-15ubuntu1`
+### `dpkg` source package: `bash=4.3-15ubuntu1.1`
 
 Binary Packages:
 
-- `bash=4.3-15ubuntu1`
+- `bash=4.3-15ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
@@ -163,10 +163,10 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris bash=4.3-15ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-15ubuntu1.dsc' bash_4.3-15ubuntu1.dsc 2301 SHA256:7f41fe3891b5ab37a19ff77ef09fa94e3c0d9dee439830dd73b9ee12cd0909e1
+$ apt-get source -qq --print-uris bash=4.3-15ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-15ubuntu1.1.dsc' bash_4.3-15ubuntu1.1.dsc 2309 SHA256:abc2ce936c3e6dfffa3afc04db86b0e081bb2fb6f6d84054f61e316e19ee08f6
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3.orig.tar.gz' bash_4.3.orig.tar.gz 7516231 SHA256:b2fe79ddf9e7abdb4695e3070afa866d2a94a58d1cc9d731585330c753815491
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-15ubuntu1.debian.tar.xz' bash_4.3-15ubuntu1.debian.tar.xz 91672 SHA256:bd3756b598cc9171959f394cd857ab8fb28766cc90dc756808ccea1b93809fd7
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-15ubuntu1.1.debian.tar.xz' bash_4.3-15ubuntu1.1.debian.tar.xz 93292 SHA256:de8f60372d428f6ba55528b11062b6d4a00fa2de11be8fbce788d24c52ebecb8
 ```
 
 ### `dpkg` source package: `bzip2=1.0.6-8build1`
@@ -1006,19 +1006,25 @@ $ apt-get source -qq --print-uris sensible-utils=0.0.9
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.9.tar.gz' sensible-utils_0.0.9.tar.gz 74331 SHA256:6fcb5cc0f7f1cf80421840cfa17b1b3fa5afaf3fe852dc984a789023af2f70c6
 ```
 
-### `dpkg` source package: `shadow=1:4.2-3.2ubuntu1.16.10.1`
+### `dpkg` source package: `shadow=1:4.2-3.2ubuntu1.16.10.2`
 
 Binary Packages:
 
-- `login=1:4.2-3.2ubuntu1.16.10.1`
-- `passwd=1:4.2-3.2ubuntu1.16.10.1`
+- `login=1:4.2-3.2ubuntu1.16.10.2`
+- `passwd=1:4.2-3.2ubuntu1.16.10.2`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris shadow=1:4.2-3.2ubuntu1.16.10.2
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu1.16.10.2.dsc' shadow_4.2-3.2ubuntu1.16.10.2.dsc 2112 SHA256:67a09e00e89a1e017624080ebb796c705a408be0114c06bb448ef3e415c42d97
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu1.16.10.2.debian.tar.xz' shadow_4.2-3.2ubuntu1.16.10.2.debian.tar.xz 506372 SHA256:35a2f0d89c4a75c38c846cb84db3b7505fd7a2d7421f228f72d1294959f8985d
+```
 
 ### `dpkg` source package: `sqlite3=3.14.1-1build1`
 
