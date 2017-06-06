@@ -1598,19 +1598,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.26.2-1
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26.2-1.dsc' nss_3.26.2-1.dsc 2205 SHA256:d68ef2fba84d7cff20faf3c387b0dc4f09dc29656b06ef2a2856bdd2e3f97be9
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26.2.orig.tar.gz' nss_3.26.2.orig.tar.gz 7388390 SHA256:13a40a2f97edf5fab3d4c7fdd928e77df36dc539cd8354b6b5d79ab93a131a5a
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26.2-1.debian.tar.xz' nss_3.26.2-1.debian.tar.xz 25540 SHA256:ed8c6babfce3910e50c9e82c68e9ae6e788881eca87a84e646f27992d6902a41
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nss/2:3.26.2-1/
-- https://sources.debian.net/src/nss/2:3.26.2-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openjdk-9=9~b149-1`
 
