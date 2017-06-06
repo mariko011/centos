@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cdb681804f92aba5b0d7b44e44407bb236c8205e284107c30378165fb65885e8`
-- Created: `2017-05-24T18:40:25.561266844Z`
-- Virtual Size: ~ 823.85 Mb  
+- Image ID: `sha256:43b67f2d9cee5c4dc3d32b992254e2b2f7f3e944fe21fc41c4664b97b4897066`
+- Created: `2017-06-03T00:55:33.640530845Z`
+- Virtual Size: ~ 823.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -195,18 +195,24 @@ $ apt-get source -qq --print-uris base-passwd=3.5.33
 'http://archive.ubuntu.com/ubuntu/pool/main/b/base-passwd/base-passwd_3.5.33.tar.xz' base-passwd_3.5.33.tar.xz 48832 SHA256:da505760962eb27477f1854f9f818284043cf6cea703b2301a00b8d0ed8303bb
 ```
 
-### `dpkg` source package: `bash=4.3-7ubuntu1.6`
+### `dpkg` source package: `bash=4.3-7ubuntu1.7`
 
 Binary Packages:
 
-- `bash=4.3-7ubuntu1.6`
+- `bash=4.3-7ubuntu1.7`
 
 Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris bash=4.3-7ubuntu1.7
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-7ubuntu1.7.dsc' bash_4.3-7ubuntu1.7.dsc 2262 SHA256:82616738c15ec0b0e4c0008f2786e2ddec79eb9ba0d38eabeb1fb0bef4cdd00f
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3.orig.tar.gz' bash_4.3.orig.tar.gz 7516231 SHA256:b2fe79ddf9e7abdb4695e3070afa866d2a94a58d1cc9d731585330c753815491
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-7ubuntu1.7.debian.tar.gz' bash_4.3-7ubuntu1.7.debian.tar.gz 100404 SHA256:8a74045497aef83bef74206a43efe7d9e109cef603aa75f0c5fc60cbc4f2e91b
+```
 
 ### `dpkg` source package: `binfmt-support=2.1.4-1`
 
@@ -1541,19 +1547,25 @@ $ apt-get source -qq --print-uris iputils=3:20121221-4ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iputils/iputils_20121221-4ubuntu1.1.debian.tar.gz' iputils_20121221-4ubuntu1.1.debian.tar.gz 16143 SHA256:4eb3ca79e68dfc5f5e66df7be3113c230168fbca2420da232adadc6475056c6a
 ```
 
-### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.8`
+### `dpkg` source package: `isc-dhcp=4.2.4-7ubuntu12.10`
 
 Binary Packages:
 
-- `isc-dhcp-client=4.2.4-7ubuntu12.8`
-- `isc-dhcp-common=4.2.4-7ubuntu12.8`
+- `isc-dhcp-client=4.2.4-7ubuntu12.10`
+- `isc-dhcp-common=4.2.4-7ubuntu12.10`
 
 Licenses: (parsed from: `/usr/share/doc/isc-dhcp-client/copyright`, `/usr/share/doc/isc-dhcp-common/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris isc-dhcp=4.2.4-7ubuntu12.10
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.10.dsc' isc-dhcp_4.2.4-7ubuntu12.10.dsc 2536 SHA256:965cd01f769908c4b3f55cd4597122e7f5abc1a28d914c09999a53e7ad8213cf
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4.orig.tar.gz' isc-dhcp_4.2.4.orig.tar.gz 8063457 SHA256:a9f77eb26372ada936ec39d843e0fe8c898b7e6980341e76c8cda694748fbf9a
+'http://archive.ubuntu.com/ubuntu/pool/main/i/isc-dhcp/isc-dhcp_4.2.4-7ubuntu12.10.debian.tar.xz' isc-dhcp_4.2.4-7ubuntu12.10.debian.tar.xz 111980 SHA256:8a769650ddcc5a10226d48e8bd261c5505bf51e62ef8b34d73a6cb817abac09f
+```
 
 ### `dpkg` source package: `isl=0.12.2-1`
 
@@ -2270,14 +2282,8 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=3.4-3ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_3.4-3ubuntu0.4.dsc' libtasn1-6_3.4-3ubuntu0.4.dsc 2477 SHA256:37f4e952f06ae3c12f729a6adb8c6b1becbcd7a50dd2fc3322d44820f185eee1
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_3.4.orig.tar.gz' libtasn1-6_3.4.orig.tar.gz 1844115 SHA256:f353507a458fe2372b791016a056c95946eebfc7256b49013851f134a5e6acc8
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_3.4-3ubuntu0.4.debian.tar.gz' libtasn1-6_3.4-3ubuntu0.4.debian.tar.gz 68565 SHA256:5ae639db91228a1232c73bfda07484bd456b577090e1f33c5b973fcf2350f8b5
-```
 
 ### `dpkg` source package: `libterm-ui-perl=0.42-1`
 
@@ -3118,19 +3124,25 @@ $ apt-get source -qq --print-uris ocl-icd=2.1.3-4
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/ocl-icd/ocl-icd_2.1.3-4.debian.tar.xz' ocl-icd_2.1.3-4.debian.tar.xz 9920 SHA256:9f8665d99bda401d69ce5ae55b43a76215509377917be6b076343b3091a3de68
 ```
 
-### `dpkg` source package: `openldap=2.4.31-1+nmu2ubuntu8.3`
+### `dpkg` source package: `openldap=2.4.31-1+nmu2ubuntu8.4`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.31-1+nmu2ubuntu8.3`
-- `libldap2-dev:amd64=2.4.31-1+nmu2ubuntu8.3`
+- `libldap-2.4-2:amd64=2.4.31-1+nmu2ubuntu8.4`
+- `libldap2-dev:amd64=2.4.31-1+nmu2ubuntu8.4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openldap=2.4.31-1+nmu2ubuntu8.4
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.4.dsc' openldap_2.4.31-1+nmu2ubuntu8.4.dsc 2890 SHA256:a3dc09d4cfeabada88aebda971978e82d4ec01249b8a5660846abbafb9eca7b4
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31.orig.tar.gz' openldap_2.4.31.orig.tar.gz 4720612 SHA256:dff60c1044021217ab97a7bdda5a7016015f042db0fbfd566d52abb266d19239
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz' openldap_2.4.31-1+nmu2ubuntu8.4.diff.gz 176512 SHA256:5bbd0a7eb5123bdf875c794a48634da4b89264cd2d980422cf58e4f408753a59
+```
 
 ### `dpkg` source package: `openmpi=1.6.5-8`
 
@@ -3414,12 +3426,12 @@ $ apt-get source -qq --print-uris popt=1.16-8ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/popt/popt_1.16-8ubuntu1.debian.tar.gz' popt_1.16-8ubuntu1.debian.tar.gz 15563 SHA256:f56a14f2dd571a3f14f0d340d54e502b50ae5fcae3f9303b93d9cc0f20c8cf29
 ```
 
-### `dpkg` source package: `postgresql-9.3=9.3.16-0ubuntu0.14.04`
+### `dpkg` source package: `postgresql-9.3=9.3.17-0ubuntu0.14.04`
 
 Binary Packages:
 
-- `libpq-dev=9.3.16-0ubuntu0.14.04`
-- `libpq5=9.3.16-0ubuntu0.14.04`
+- `libpq-dev=9.3.17-0ubuntu0.14.04`
+- `libpq5=9.3.17-0ubuntu0.14.04`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -3428,8 +3440,14 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `GPL-1`
 - `Tcl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-9.3=9.3.17-0ubuntu0.14.04
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.17-0ubuntu0.14.04.dsc' postgresql-9.3_9.3.17-0ubuntu0.14.04.dsc 3595 SHA256:d6b4e85d96d6f6470a423b70d0a744c0cbf1a5035bff537d3a979991ae725b45
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.17.orig.tar.bz2' postgresql-9.3_9.3.17.orig.tar.bz2 17158802 SHA256:9c03e5f280cfe9bd202fa01af773eb146abd8ab3065f7279d574c568f6948dbe
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.17-0ubuntu0.14.04.debian.tar.xz' postgresql-9.3_9.3.17-0ubuntu0.14.04.debian.tar.xz 29352 SHA256:3fd06d89b2132a337d68f41436b16ee06dc2968571a832f9daf02a5861445d0c
+```
 
 ### `dpkg` source package: `procps=1:3.3.9-1ubuntu2.2`
 
@@ -3452,31 +3470,43 @@ $ apt-get source -qq --print-uris procps=1:3.3.9-1ubuntu2.2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.9-1ubuntu2.2.debian.tar.gz' procps_3.3.9-1ubuntu2.2.debian.tar.gz 40730 SHA256:b1a99cac5af53633118cc25a3fd6cf5ddb8dd23dbf1f15eb8cb07b7306d8448f
 ```
 
-### `dpkg` source package: `python-catkin-pkg-modules=0.3.1-1`
+### `dpkg` source package: `python-catkin-pkg-modules=0.3.4-1`
 
 Binary Packages:
 
-- `python-catkin-pkg-modules=0.3.1-1`
+- `python-catkin-pkg-modules=0.3.4-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.3.4-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.4-1.dsc' python-catkin-pkg-modules_0.3.4-1.dsc 991 SHA256:1ed7e4dc8845d7c51d431a1a25ab92c717c9bbe60deb3cf7982e541e69c5804a
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.4.orig.tar.gz' python-catkin-pkg-modules_0.3.4.orig.tar.gz 44438 SHA256:3c23f98604aca80d1cff4258f4ea2a56fd23ff95c13b2dba85357f08b3d95b52
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.4-1.debian.tar.xz' python-catkin-pkg-modules_0.3.4-1.debian.tar.xz 1124 SHA256:85185314b03181f397d65f36482475bb175709678862e1bf33ca97fce6f711fc
+```
 
-### `dpkg` source package: `python-catkin-pkg=0.3.1-1`
+### `dpkg` source package: `python-catkin-pkg=0.3.4-1`
 
 Binary Packages:
 
-- `python-catkin-pkg=0.3.1-1`
+- `python-catkin-pkg=0.3.4-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-catkin-pkg=0.3.4-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.4-1.dsc' python-catkin-pkg_0.3.4-1.dsc 920 SHA256:bc22e5f632194780452476d4422cfc4cee8c4a38dbefcab0d530e253a8c7a5d3
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.4.orig.tar.gz' python-catkin-pkg_0.3.4.orig.tar.gz 9545 SHA256:544429a829648276a4df167e342478cde6bd20002b9983c0de676057675f60b7
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.4-1.debian.tar.xz' python-catkin-pkg_0.3.4-1.debian.tar.xz 1108 SHA256:cd7400253232b89e8bd5e950a3ff81e10d2c5c2975fbbe40bf5124d080001cec
+```
 
 ### `dpkg` source package: `python-crypto=2.6.1-4ubuntu0.2`
 
@@ -5045,19 +5075,25 @@ $ apt-get source -qq --print-uris sgml-base=1.26+nmu4ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sgml-base/sgml-base_1.26+nmu4ubuntu1.tar.gz' sgml-base_1.26+nmu4ubuntu1.tar.gz 12912 SHA256:93d99ea554da5fea0c8abe424042ba8237c86faebaa02976fb92db3d198a47b4
 ```
 
-### `dpkg` source package: `shadow=1:4.1.5.1-1ubuntu9.4`
+### `dpkg` source package: `shadow=1:4.1.5.1-1ubuntu9.5`
 
 Binary Packages:
 
-- `login=1:4.1.5.1-1ubuntu9.4`
-- `passwd=1:4.1.5.1-1ubuntu9.4`
+- `login=1:4.1.5.1-1ubuntu9.5`
+- `passwd=1:4.1.5.1-1ubuntu9.5`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris shadow=1:4.1.5.1-1ubuntu9.5
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.1.5.1-1ubuntu9.5.dsc' shadow_4.1.5.1-1ubuntu9.5.dsc 2028 SHA256:93a2ab100897ca8efde1d4a71a993d3e6a4f8bee01f53dce244d11b1cae35970
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.1.5.1.orig.tar.gz' shadow_4.1.5.1.orig.tar.gz 3508077 SHA256:ee1986c5fec9f6e7868bcc5329874a72dec74897b598d86eb0532f79471f32f0
+'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.1.5.1-1ubuntu9.5.diff.gz' shadow_4.1.5.1-1ubuntu9.5.diff.gz 115342 SHA256:dd3d87b630785f33b5c40d2b08aca1fb1a4f9a4aea109d1a6e90f563624e5bc0
+```
 
 ### `dpkg` source package: `shared-mime-info=1.2-0ubuntu3`
 
@@ -5143,18 +5179,24 @@ $ apt-get source -qq --print-uris subversion=1.8.8-1ubuntu3.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.8.8-1ubuntu3.2.diff.gz' subversion_1.8.8-1ubuntu3.2.diff.gz 302250 SHA256:419e3fab5ce3692b526859ef778a41cc247e1f12157373f3e6ed0d2faac3c699
 ```
 
-### `dpkg` source package: `sudo=1.8.9p5-1ubuntu1.3`
+### `dpkg` source package: `sudo=1.8.9p5-1ubuntu1.4`
 
 Binary Packages:
 
-- `sudo=1.8.9p5-1ubuntu1.3`
+- `sudo=1.8.9p5-1ubuntu1.4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris sudo=1.8.9p5-1ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.4.dsc' sudo_1.8.9p5-1ubuntu1.4.dsc 2018 SHA256:219d9a25bb19a2593187af41332099ea7d7336f5359becac8d950f7c2065b370
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5.orig.tar.gz' sudo_1.8.9p5.orig.tar.gz 2179066 SHA256:bc9d5c96de5f8b4d2b014f87a37870aef60d2891c869202454069150a21a5c21
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sudo/sudo_1.8.9p5-1ubuntu1.4.debian.tar.gz' sudo_1.8.9p5-1ubuntu1.4.debian.tar.gz 42099 SHA256:0dd793cc146e8b00f8d5e26d543333c68a6fdf8f612c159151cd9c5f90281686
+```
 
 ### `dpkg` source package: `systemd=204-5ubuntu20.24`
 
