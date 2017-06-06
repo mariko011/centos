@@ -6,6 +6,7 @@
 -	[`fsharp:4`](#fsharp4)
 -	[`fsharp:4.1`](#fsharp41)
 -	[`fsharp:4.1.18`](#fsharp4118)
+-	[`fsharp:4.1.18-wheezy-slim`](#fsharp4118-wheezy-slim)
 -	[`fsharp:4.1.0.1`](#fsharp4101)
 -	[`fsharp:4.0`](#fsharp40)
 -	[`fsharp:4.0.1`](#fsharp401)
@@ -431,6 +432,10 @@ CMD ["fsharpi"]
 		Last Modified: Fri, 02 Jun 2017 19:51:04 GMT  
 		Size: 78.7 MB (78692545 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `fsharp:4.1.18-wheezy-slim`
+
+**does not exist** (yet?)
 
 ## `fsharp:4.1.0.1`
 
