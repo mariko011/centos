@@ -355,18 +355,8 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris debianutils=4.8.1
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.1.dsc' debianutils_4.8.1.dsc 1693 SHA256:0f187e087a9c96a70e672f58fa324d4b65f60f1e13ee8219de7e58f061ae7c9e
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.1.tar.xz' debianutils_4.8.1.tar.xz 156072 SHA256:2c395c0bdcfe89de30828b1d25cc5549ded5225a6d3625fbcb2cc0881ef5f026
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/debianutils/4.8.1/
-- https://sources.debian.net/src/debianutils/4.8.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `diffutils=1:3.5-3`
 
@@ -1793,19 +1783,8 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.24/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris perl=5.24.1-2
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-2.dsc' perl_5.24.1-2.dsc 2316 SHA256:4938b6b81912d4fea8626b84f14292d49c25d500a223644b2f67db8f1d01e150
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-2.debian.tar.xz' perl_5.24.1-2.debian.tar.xz 165680 SHA256:e398649c63c1f50adace04531856b03a73892f6f210b2d18b16fb8978c5d28b8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/perl/5.24.1-2/
-- https://sources.debian.net/src/perl/5.24.1-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sed=4.4-1`
 
@@ -1947,19 +1926,8 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.8-1
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8-1.dsc' tiff_4.0.8-1.dsc 2157 SHA256:f026f98f6391adbff08d5837e305b92d2ae066bedaffab52bac098693f505303
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8.orig.tar.gz' tiff_4.0.8.orig.tar.gz 2065574 SHA256:59d7a5a8ccd92059913f246877db95a2918e6c04fb9d43fd74e5c3390dac2910
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8-1.debian.tar.xz' tiff_4.0.8-1.debian.tar.xz 16580 SHA256:b62df1ccf74ad4ef85897563f80a4337f451050c981a9eaabb674fe18a0477e1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff/4.0.8-1/
-- https://sources.debian.net/src/tiff/4.0.8-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tzdata=2017b-1`
 
