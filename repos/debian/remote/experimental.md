@@ -1,7 +1,7 @@
 ## `debian:experimental`
 
 ```console
-$ docker pull debian@sha256:af85e830919ca6b024aa202649fe38095a6ed8939226110a24443f3518a6f8c3
+$ docker pull debian@sha256:bffefcb593f4125c80369fc00b5e01e92d41429b6002131581e69e62688bf5ce
 ```
 
 -	Platforms:
@@ -9,28 +9,28 @@ $ docker pull debian@sha256:af85e830919ca6b024aa202649fe38095a6ed8939226110a2444
 
 ### `debian:experimental` - linux; amd64
 
--	Docker Version: 17.04.0-ce
+-	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.3 MB (45254597 bytes)**  
+-	Total Size: **45.3 MB (45314059 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3fe7763514669aa12eb9c8d2d3634bec7d74dd46b4235242a25fb221cc4a58d2`
--	Default Command: `["\/bin\/bash"]`
+-	Image ID: `sha256:fe2db5966360c12bdb4d48d8026b55dfae611164689eec1707972cc48e433d00`
+-	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 May 2017 23:39:21 GMT
-ADD file:55cdc6e18d79e2292ed8068241b6aa37425fb93b97496dc84617410655d00dc2 in / 
-# Mon, 08 May 2017 23:39:36 GMT
-CMD ["/bin/bash"]
-# Mon, 08 May 2017 23:43:02 GMT
-RUN awk '$1 ~ "^deb" { $3 = "experimental"; print; exit }' /etc/apt/sources.list > /etc/apt/sources.list.d/experimental.list
+# Wed, 07 Jun 2017 17:53:26 GMT
+ADD file:f92831e8690530766f2ec7984f341af8f439722d1b356e7c99321dfe6a58a01e in / 
+# Wed, 07 Jun 2017 17:53:27 GMT
+CMD ["bash"]
+# Wed, 07 Jun 2017 17:56:39 GMT
+RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources.list.d/experimental.list
 ```
 
 -	Layers:
-	-	`sha256:2b776633ca15b4fb2b92dfee39343359977b46e073ffcf15adb82d55aae88e29`  
-		Last Modified: Mon, 08 May 2017 23:56:09 GMT  
-		Size: 45.3 MB (45254383 bytes)  
+	-	`sha256:ddcd92be53e6ff4ee02976453ba78fd22dbee9f44c297ba6619b0e120c0a4cb8`  
+		Last Modified: Wed, 07 Jun 2017 17:57:38 GMT  
+		Size: 45.3 MB (45313845 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9175ecb1a361419d5102667bf9e98039ff06d187653c92f5993331a85a3f74b`  
-		Last Modified: Tue, 09 May 2017 00:02:35 GMT  
+	-	`sha256:2d283e2ae0a6eb577c2aaeac92f1526ba840c8dc99e043440ac32dbde4becb10`  
+		Last Modified: Wed, 07 Jun 2017 17:57:31 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
