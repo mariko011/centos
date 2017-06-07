@@ -1,7 +1,7 @@
 ## `buildpack-deps:stretch`
 
 ```console
-$ docker pull buildpack-deps@sha256:f17a3daeb9f47f1fc2ba36285e683e7fad19a50c777078a4dd71f117e0e54191
+$ docker pull buildpack-deps@sha256:a101c715e8bf9b9227ff501cb3916d886f6bd1bf9fe8460bd9b3d7c369c7c517
 ```
 
 -	Platforms:
@@ -9,40 +9,40 @@ $ docker pull buildpack-deps@sha256:f17a3daeb9f47f1fc2ba36285e683e7fad19a50c7770
 
 ### `buildpack-deps:stretch` - linux; amd64
 
--	Docker Version: 17.04.0-ce
+-	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **318.2 MB (318154269 bytes)**  
+-	Total Size: **318.3 MB (318320783 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9963396ba5c8d53a1fbd9b3a43e794b0fb373499f7ce7f4c0d2dda86a6949dd`
--	Default Command: `["\/bin\/bash"]`
+-	Image ID: `sha256:b4f75eedd21bb92320a0740826893520c5f74c0bb928de86cacae977f9cb359b`
+-	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 08 May 2017 23:35:51 GMT
-ADD file:12fbfae009c2bca2e7919562183a741eb25cea584815246d61e323976c92ae04 in / 
-# Mon, 08 May 2017 23:36:09 GMT
-CMD ["/bin/bash"]
-# Tue, 09 May 2017 00:00:54 GMT
+# Wed, 07 Jun 2017 17:49:26 GMT
+ADD file:212fe5c6a3f3d10b0f5fc59f2019d5a12f266ff74b289f3ccc87bb878b01a437 in / 
+# Wed, 07 Jun 2017 17:49:27 GMT
+CMD ["bash"]
+# Wed, 07 Jun 2017 19:42:58 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 09 May 2017 00:01:44 GMT
+# Wed, 07 Jun 2017 19:44:14 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Tue, 09 May 2017 00:04:32 GMT
+# Wed, 07 Jun 2017 19:59:16 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:d31335c0dd8283dbd495d268a45a398386ea56ca38084475bcac53ec65d38edb`  
-		Last Modified: Mon, 08 May 2017 23:51:51 GMT  
-		Size: 45.1 MB (45071306 bytes)  
+	-	`sha256:31a23e80b5c0100547b74b78634277f56239d4207fa7ea4f0540148525dbff03`  
+		Last Modified: Wed, 07 Jun 2017 18:09:21 GMT  
+		Size: 45.1 MB (45127747 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7b9fcf2064a61b29819273cc2455b76efcc50bc3f24b2d2a348c97e996eb427`  
-		Last Modified: Tue, 09 May 2017 16:00:45 GMT  
-		Size: 21.3 MB (21267722 bytes)  
+	-	`sha256:5310eb3880dd8b025df521d43d0c3d3b1cebb727f0c9a297591fd50045e40ee0`  
+		Last Modified: Wed, 07 Jun 2017 20:11:52 GMT  
+		Size: 11.1 MB (11107732 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6503329fc20d92a20fa42a4d81064315619eaa3304b135abe7fa9d3ecd3c19d4`  
-		Last Modified: Tue, 09 May 2017 16:01:20 GMT  
-		Size: 40.8 MB (40807987 bytes)  
+	-	`sha256:8d00f132dbb64ec781d2d4c943235a1e4cf52dd6ae86aac367e80baf5665cdd9`  
+		Last Modified: Wed, 07 Jun 2017 20:12:35 GMT  
+		Size: 50.9 MB (50941873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8ddd3fbb97c8f72de751be8db08eb63c790a95840cfbe6fbdf269069a7fe84c3`  
-		Last Modified: Tue, 09 May 2017 16:02:22 GMT  
-		Size: 211.0 MB (211007254 bytes)  
+	-	`sha256:45d517415f65d9439e321bbd207f6e7748a78fe7ccd69c6844f6afc7ebc7fda0`  
+		Last Modified: Wed, 07 Jun 2017 20:13:51 GMT  
+		Size: 211.1 MB (211143431 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

@@ -1,7 +1,7 @@
 ## `solr:alpine`
 
 ```console
-$ docker pull solr@sha256:5c6e401699607fa371e2a24d5ba304007253e300a5e013836357f24400a81430
+$ docker pull solr@sha256:3696beb27698642a9c7f66da8f16615bb907b31bc3b0215ba9e2fad2bb5215ca
 ```
 
 -	Platforms:
@@ -9,113 +9,115 @@ $ docker pull solr@sha256:5c6e401699607fa371e2a24d5ba304007253e300a5e013836357f2
 
 ### `solr:alpine` - linux; amd64
 
--	Docker Version: 1.12.6
+-	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **203.0 MB (202960657 bytes)**  
+-	Total Size: **208.0 MB (207985657 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b4c62eb5932fc2ec3b852b30de5a921ef955c5ec75a7e219c00a4533aa048aa`
+-	Image ID: `sha256:022515182cc47db2365e1363498752394801386fe4f52a96117423838dcdbfe2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["solr-foreground"]`
 
 ```dockerfile
-# Fri, 03 Mar 2017 20:32:37 GMT
-ADD file:730030a984f5f0c5dc9b15ab61da161082b5c0f6e112a9c921b42321140c3927 in / 
-# Tue, 07 Mar 2017 01:03:58 GMT
+# Thu, 25 May 2017 23:33:21 GMT
+ADD file:ce33aabbc5f370e58ebe911e081ce093e3df18d689c2d5a5d092c77973f62a54 in / 
+# Thu, 25 May 2017 23:33:22 GMT
+CMD ["/bin/sh"]
+# Thu, 01 Jun 2017 16:58:46 GMT
 ENV LANG=C.UTF-8
-# Tue, 07 Mar 2017 01:03:59 GMT
+# Thu, 01 Jun 2017 16:58:47 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Tue, 07 Mar 2017 01:04:09 GMT
+# Thu, 01 Jun 2017 17:00:29 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
-# Tue, 07 Mar 2017 01:04:09 GMT
+# Thu, 01 Jun 2017 17:00:30 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 07 Mar 2017 01:04:10 GMT
-ENV JAVA_VERSION=8u121
-# Tue, 07 Mar 2017 01:04:10 GMT
-ENV JAVA_ALPINE_VERSION=8.121.13-r0
-# Tue, 07 Mar 2017 01:04:15 GMT
+# Thu, 01 Jun 2017 17:00:31 GMT
+ENV JAVA_VERSION=8u131
+# Thu, 01 Jun 2017 17:00:32 GMT
+ENV JAVA_ALPINE_VERSION=8.131.11-r1
+# Thu, 01 Jun 2017 17:00:39 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Tue, 07 Mar 2017 20:02:13 GMT
+# Wed, 07 Jun 2017 19:09:38 GMT
 MAINTAINER Martijn Koster "mak-docker@greenhills.co.uk"
-# Tue, 07 Mar 2017 20:02:13 GMT
+# Wed, 07 Jun 2017 19:09:39 GMT
 ARG SOLR_DOWNLOAD_SERVER
-# Tue, 14 Mar 2017 20:27:30 GMT
+# Wed, 07 Jun 2017 19:09:46 GMT
 RUN apk add --no-cache         lsof         gnupg         procps         tar         bash
-# Tue, 14 Mar 2017 20:27:32 GMT
+# Wed, 07 Jun 2017 19:09:50 GMT
 RUN apk add --no-cache ca-certificates wget &&         update-ca-certificates
-# Tue, 14 Mar 2017 20:27:32 GMT
+# Wed, 07 Jun 2017 19:09:51 GMT
 ENV SOLR_USER=solr
-# Tue, 14 Mar 2017 20:27:32 GMT
+# Wed, 07 Jun 2017 19:09:52 GMT
 ENV SOLR_UID=8983
-# Tue, 14 Mar 2017 20:27:33 GMT
-RUN addgroup -S -g $SOLR_UID $SOLR_USER &&   adduser -S -u $SOLR_UID -g $SOLR_USER $SOLR_USER
-# Tue, 14 Mar 2017 20:29:10 GMT
-ENV SOLR_VERSION=6.4.2
-# Tue, 14 Mar 2017 20:29:10 GMT
-ENV SOLR_URL=https://archive.apache.org/dist/lucene/solr/6.4.2/solr-6.4.2.tgz
-# Tue, 14 Mar 2017 20:29:11 GMT
-ENV SOLR_SHA256=354e1affd9cad7d6e86cde8c03aaeb604876f0764129621d8e231cdb35b31c55
-# Tue, 14 Mar 2017 20:29:11 GMT
+# Wed, 07 Jun 2017 19:09:53 GMT
+RUN addgroup -S -g $SOLR_UID $SOLR_USER &&   adduser -S -u $SOLR_UID -G $SOLR_USER -g $SOLR_USER $SOLR_USER
+# Wed, 07 Jun 2017 19:16:54 GMT
+ENV SOLR_VERSION=6.6.0
+# Wed, 07 Jun 2017 19:16:55 GMT
+ENV SOLR_URL=https://archive.apache.org/dist/lucene/solr/6.6.0/solr-6.6.0.tgz
+# Wed, 07 Jun 2017 19:16:56 GMT
+ENV SOLR_SHA256=6b1d1ed0b74aef320633b40a38a790477e00d75b56b9cdc578533235315ffa1e
+# Wed, 07 Jun 2017 19:16:57 GMT
 ENV SOLR_KEYS=2085660D9C1FCCACC4A479A3BF160FF14992A24C
-# Tue, 14 Mar 2017 20:29:14 GMT
+# Wed, 07 Jun 2017 19:17:01 GMT
 RUN set -e; for key in $SOLR_KEYS; do     found='';     for server in       ha.pool.sks-keyservers.net       hkp://keyserver.ubuntu.com:80       hkp://p80.pool.sks-keyservers.net:80       pgp.mit.edu     ; do       echo "  trying $server for $key";       gpg --keyserver "$server" --keyserver-options timeout=10 --recv-keys "$key" && found=yes && break;     done;     test -z "$found" && echo >&2 "error: failed to fetch $key from several disparate servers -- network issues?" && exit 1;   done;   exit 0
-# Tue, 14 Mar 2017 20:29:31 GMT
+# Wed, 07 Jun 2017 19:17:17 GMT
 RUN mkdir -p /opt/solr &&   echo "downloading $SOLR_URL" &&   wget -q $SOLR_URL -O /opt/solr.tgz &&   echo "downloading $SOLR_URL.asc" &&   wget -q $SOLR_URL.asc -O /opt/solr.tgz.asc &&   echo "$SOLR_SHA256 */opt/solr.tgz" | sha256sum -c - &&   (>&2 ls -l /opt/solr.tgz /opt/solr.tgz.asc) &&   gpg --batch --verify /opt/solr.tgz.asc /opt/solr.tgz &&   tar -C /opt/solr --extract --file /opt/solr.tgz --strip-components=1 &&   rm /opt/solr.tgz* &&   rm -Rf /opt/solr/docs/ &&   mkdir -p /opt/solr/server/solr/lib /opt/solr/server/solr/mycores &&   sed -i -e 's/#SOLR_PORT=8983/SOLR_PORT=8983/' /opt/solr/bin/solr.in.sh &&   sed -i -e '/-Dsolr.clustering.enabled=true/ a SOLR_OPTS="$SOLR_OPTS -Dsun.net.inetaddr.ttl=60 -Dsun.net.inetaddr.negative.ttl=60"' /opt/solr/bin/solr.in.sh &&   chown -R $SOLR_USER:$SOLR_USER /opt/solr &&   mkdir /docker-entrypoint-initdb.d /opt/docker-solr/
-# Tue, 14 Mar 2017 20:29:32 GMT
+# Wed, 07 Jun 2017 19:17:19 GMT
 COPY dir:37fe27423809e9a020959b49d869a79285ab853758a6a8a6bfe8564dcdf7ff56 in /opt/docker-solr/scripts 
-# Tue, 14 Mar 2017 20:29:33 GMT
+# Wed, 07 Jun 2017 19:17:20 GMT
 RUN chown -R $SOLR_USER:$SOLR_USER /opt/docker-solr
-# Tue, 14 Mar 2017 20:29:33 GMT
+# Wed, 07 Jun 2017 19:17:21 GMT
 ENV PATH=/opt/solr/bin:/opt/docker-solr/scripts:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
-# Tue, 14 Mar 2017 20:29:34 GMT
+# Wed, 07 Jun 2017 19:17:22 GMT
 EXPOSE 8983/tcp
-# Tue, 14 Mar 2017 20:29:34 GMT
+# Wed, 07 Jun 2017 19:17:23 GMT
 WORKDIR /opt/solr
-# Tue, 14 Mar 2017 20:29:34 GMT
+# Wed, 07 Jun 2017 19:17:24 GMT
 USER [solr]
-# Tue, 14 Mar 2017 20:29:35 GMT
+# Wed, 07 Jun 2017 19:17:24 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 14 Mar 2017 20:29:35 GMT
+# Wed, 07 Jun 2017 19:17:25 GMT
 CMD ["solr-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:627beaf3eaaff1c0bc3311d60fb933c17ad04fe377e1043d9593646d8ae3bfe1`  
-		Last Modified: Fri, 03 Mar 2017 20:34:41 GMT  
-		Size: 1.9 MB (1905270 bytes)  
+	-	`sha256:2aecc7e1714b6fad58d13aedb0639011b37b86f743ba7b6a52d82bd03014b78e`  
+		Last Modified: Thu, 25 May 2017 23:36:54 GMT  
+		Size: 2.0 MB (1990101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1de20f2d8b839756d5fc0ae6871096666a822b6b4205e11e9cf438a2263f3281`  
-		Last Modified: Tue, 07 Mar 2017 01:12:49 GMT  
+	-	`sha256:e7bb7a1c6ee7ae261bc9a503b112a715153b44524eaf20763357e3c4b1b32983`  
+		Last Modified: Thu, 01 Jun 2017 17:04:59 GMT  
 		Size: 232.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74e619d348278f1e8660192734bff496a6c3e05aab6bef025e843e7413a7c9e3`  
-		Last Modified: Tue, 07 Mar 2017 01:15:49 GMT  
-		Size: 53.8 MB (53811092 bytes)  
+	-	`sha256:42f1d6835b7d56cd0f4ee6793e1018d3138063fe44de5fac8522d9492c77da7c`  
+		Last Modified: Thu, 01 Jun 2017 17:15:06 GMT  
+		Size: 54.3 MB (54280719 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a5612c7935782ea8818c6c0dc995398897504dc2839b2ffcd8adcaee1e7d97e1`  
-		Last Modified: Tue, 14 Mar 2017 20:31:21 GMT  
-		Size: 5.2 MB (5165760 bytes)  
+	-	`sha256:61c2a4200bf72881c5d36685ee803f0c7a6d616c7678cd4eb0e741c7cca90f30`  
+		Last Modified: Wed, 07 Jun 2017 19:19:33 GMT  
+		Size: 5.6 MB (5567956 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:79fe63d33c3b93c222319fc62b484f3c1a351afc40549dd51e04ebbad036525e`  
-		Last Modified: Tue, 14 Mar 2017 20:31:19 GMT  
-		Size: 612.2 KB (612170 bytes)  
+	-	`sha256:a363418beabe2a6b49fd46a50ef777bb050c9363cef1ac062f30bb8244a6727c`  
+		Last Modified: Wed, 07 Jun 2017 19:19:28 GMT  
+		Size: 622.7 KB (622653 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c57f9cdaa147f9ea11fb92f86c81fed2d94e1f87222fd26b8a784b40c91398fd`  
-		Last Modified: Tue, 14 Mar 2017 20:31:16 GMT  
-		Size: 1.2 KB (1236 bytes)  
+	-	`sha256:e8a273636ff14407897ba1ff98a74602db16884efe3076ccc9d98d130ca45d78`  
+		Last Modified: Wed, 07 Jun 2017 19:19:28 GMT  
+		Size: 1.2 KB (1237 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bcfdd7228af746c65194ffa4ea57385d17091c3b1f74286498d4c1b3681673ea`  
-		Last Modified: Tue, 14 Mar 2017 20:35:56 GMT  
-		Size: 7.1 KB (7062 bytes)  
+	-	`sha256:5043e0320fce5bef68549309c39a285d5cce18a54114258b30d2060f7709b386`  
+		Last Modified: Wed, 07 Jun 2017 19:43:57 GMT  
+		Size: 7.2 KB (7158 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed92f70c07ea2923165fc1921badda70fb67125c061c1f200e78310652de520a`  
-		Last Modified: Tue, 14 Mar 2017 20:36:08 GMT  
-		Size: 141.5 MB (141451773 bytes)  
+	-	`sha256:6687bec88c4a08b12f8e8693e7bcc999c66f888ab01542bffab3958dcd01f5da`  
+		Last Modified: Wed, 07 Jun 2017 19:44:10 GMT  
+		Size: 145.5 MB (145509565 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f148224ec72686046b2fc4c171b1dc43d864e34b5dc90aec0e5cb7f6fc6b9c0`  
-		Last Modified: Tue, 14 Mar 2017 20:35:54 GMT  
-		Size: 3.0 KB (3030 bytes)  
+	-	`sha256:996f3ec3e950ad7c4b040b746c51441170cb233b8ba822cf3ef16bb58544f5ad`  
+		Last Modified: Wed, 07 Jun 2017 19:43:57 GMT  
+		Size: 3.0 KB (3013 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:25229634c258c62d40836c58daba49de6fab74e0536dcdfaf855029146d6d7c4`  
-		Last Modified: Tue, 14 Mar 2017 20:35:54 GMT  
-		Size: 3.0 KB (3032 bytes)  
+	-	`sha256:8eb9a17b68950b830eea3f7ffd6f715a64eb788cc07215e07e1f2242e080c285`  
+		Last Modified: Wed, 07 Jun 2017 19:43:57 GMT  
+		Size: 3.0 KB (3023 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
