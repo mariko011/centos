@@ -2784,14 +2784,8 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.7-3ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7-3ubuntu0.16.04.1.dsc' libtasn1-6_4.7-3ubuntu0.16.04.1.dsc 2497 SHA256:5a01cd2b1fbc47f4881df3ad5dd5934a131049c6bc5f45c3e595143ebf33b308
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7.orig.tar.gz' libtasn1-6_4.7.orig.tar.gz 1851611 SHA256:a40780dc93fc6d819170240e8ece25352058a85fd1d2347ce0f143667d8f11c9
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.7-3ubuntu0.16.04.1.debian.tar.xz' libtasn1-6_4.7-3ubuntu0.16.04.1.debian.tar.xz 58456 SHA256:3a4455ef6e5992d8d4526ce5c96fe94850c8a9f50f77c5c7e2830de7696158fe
-```
 
 ### `dpkg` source package: `libthai=0.1.24-2`
 
