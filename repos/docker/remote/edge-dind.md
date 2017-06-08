@@ -1,7 +1,7 @@
 ## `docker:edge-dind`
 
 ```console
-$ docker pull docker@sha256:58466cce1917464da94035ede533f9b561542379b24d5ba1756f3860e07cdeea
+$ docker pull docker@sha256:8d9be92c4fb44f0963e7a361ab9d3d7df61965906f2291171b87c856aac76ee8
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull docker@sha256:58466cce1917464da94035ede533f9b561542379b24d5ba1756f
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.4 MB (33415648 bytes)**  
+-	Total Size: **33.4 MB (33415623 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dee518b729774dca2b75e356b4e5d288f4abd00daea5a934c63c4a5a20fe6655`
+-	Image ID: `sha256:b547d892dffa2e118eb2dc906dcdb0b30a00273f28f298364b91516c2966c2ee`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 -	Default Command: `[]`
 
@@ -28,31 +28,31 @@ RUN apk add --no-cache 		ca-certificates
 ENV DOCKER_CHANNEL=edge
 # Tue, 30 May 2017 16:45:20 GMT
 ENV DOCKER_VERSION=17.05.0-ce
-# Tue, 30 May 2017 16:45:31 GMT
-RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		curl 		tar 	; 	curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/x86_64/docker-${DOCKER_VERSION}.tgz"; 	tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 	apk del .fetch-deps; 	dockerd -v; 	docker -v
-# Tue, 30 May 2017 16:45:32 GMT
+# Thu, 08 Jun 2017 22:14:14 GMT
+RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		curl 		tar 	; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}-${dockerArch}.tgz"; then 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 			echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 			exit 1; 		fi; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		apk del .fetch-deps; 		dockerd -v; 	docker -v
+# Thu, 08 Jun 2017 22:14:32 GMT
 COPY file:a8b1446f032ff01ac092c29a0af328f0b9d47bbee72d1049499f2a9a89ee988a in /usr/local/bin/ 
-# Tue, 30 May 2017 16:45:33 GMT
+# Thu, 08 Jun 2017 22:14:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 30 May 2017 16:45:34 GMT
+# Thu, 08 Jun 2017 22:14:33 GMT
 CMD ["sh"]
-# Tue, 30 May 2017 16:46:00 GMT
+# Thu, 08 Jun 2017 22:15:22 GMT
 RUN apk add --no-cache 		btrfs-progs 		e2fsprogs 		e2fsprogs-extra 		iptables 		xfsprogs 		xz
-# Tue, 30 May 2017 16:46:01 GMT
+# Thu, 08 Jun 2017 22:15:43 GMT
 RUN set -x 	&& addgroup -S dockremap 	&& adduser -S -G dockremap dockremap 	&& echo 'dockremap:165536:65536' >> /etc/subuid 	&& echo 'dockremap:165536:65536' >> /etc/subgid
-# Tue, 30 May 2017 16:46:02 GMT
+# Thu, 08 Jun 2017 22:15:44 GMT
 ENV DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034
-# Tue, 30 May 2017 16:46:06 GMT
+# Thu, 08 Jun 2017 22:15:49 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps libressl; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind; 	apk del .fetch-deps
-# Tue, 30 May 2017 16:46:07 GMT
+# Thu, 08 Jun 2017 22:15:50 GMT
 COPY file:7070e4b35c137a8ec5904300d19b8f7ee74aa76659517767c617249cece98a4a in /usr/local/bin/ 
-# Tue, 30 May 2017 16:46:08 GMT
+# Thu, 08 Jun 2017 22:15:51 GMT
 VOLUME [/var/lib/docker]
-# Tue, 30 May 2017 16:46:09 GMT
+# Thu, 08 Jun 2017 22:15:52 GMT
 EXPOSE 2375/tcp
-# Tue, 30 May 2017 16:46:10 GMT
+# Thu, 08 Jun 2017 22:15:53 GMT
 ENTRYPOINT ["dockerd-entrypoint.sh"]
-# Tue, 30 May 2017 16:46:11 GMT
+# Thu, 08 Jun 2017 22:15:54 GMT
 CMD []
 ```
 
@@ -65,27 +65,27 @@ CMD []
 		Last Modified: Tue, 30 May 2017 16:47:04 GMT  
 		Size: 350.6 KB (350623 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:520f85695d44ee69894609545da7d07c264f48ae7c4f5b9aaaa7c51ecce182b1`  
-		Last Modified: Tue, 30 May 2017 16:52:33 GMT  
-		Size: 28.8 MB (28753661 bytes)  
+	-	`sha256:d20b3555d4c5f9bc2ff2a21d7ea8ac2b2b8dcbcf6c12691a7069d320fc2fa762`  
+		Last Modified: Thu, 08 Jun 2017 22:34:40 GMT  
+		Size: 28.8 MB (28753633 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a1277510271ec8f2cf897cb5d6a33497dc9e55c16a1c5ba31c2ec155b20ebcb`  
-		Last Modified: Tue, 30 May 2017 16:52:28 GMT  
-		Size: 490.0 B  
+	-	`sha256:895645433ae13735c1f1e0f7ebd2a317987bd484a92bfe77d1fb1f54f9da2122`  
+		Last Modified: Thu, 08 Jun 2017 22:34:32 GMT  
+		Size: 491.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0527572e1fdeedd8623e4642e8be0d792bae631915f0a0e857ba768cbd86f364`  
-		Last Modified: Tue, 30 May 2017 16:54:52 GMT  
-		Size: 2.2 MB (2165469 bytes)  
+	-	`sha256:e38f55b014b778e086042b1242e86b7c71b07b0d98423f006e4cd78f5bf631cb`  
+		Last Modified: Thu, 08 Jun 2017 22:37:19 GMT  
+		Size: 2.2 MB (2165475 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f73a48b9cd607827f670274897ee2a692027e29672701e47359e54b59f6b7d26`  
-		Last Modified: Tue, 30 May 2017 16:54:51 GMT  
-		Size: 1.3 KB (1311 bytes)  
+	-	`sha256:0e17fcaf6664e8dc002a1e7c33088ec93c658ef2c9eeb7353dd6b26d26903e8e`  
+		Last Modified: Thu, 08 Jun 2017 22:37:18 GMT  
+		Size: 1.3 KB (1305 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:342b732edac86f6e60cf62804795398a5e626b09b7192471f72f32eb39af6b11`  
-		Last Modified: Tue, 30 May 2017 16:54:51 GMT  
-		Size: 175.7 KB (175683 bytes)  
+	-	`sha256:0f957d2bdf73b0b2f19d20808389f7a3ff6190844c6a8bd79297a59b35330a50`  
+		Last Modified: Thu, 08 Jun 2017 22:37:19 GMT  
+		Size: 175.7 KB (175682 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:91f5fed2129ccf1148c16eb5c41f505681d7672a17d46cc9cce0ec79dd4dadf7`  
-		Last Modified: Tue, 30 May 2017 16:54:52 GMT  
-		Size: 484.0 B  
+	-	`sha256:3512094e5bcc89fc47d14bac385b67ab49b0b1398abe9a2ee31a5c4955f9762a`  
+		Last Modified: Thu, 08 Jun 2017 22:37:18 GMT  
+		Size: 487.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
