@@ -1,7 +1,7 @@
 ## `nextcloud:9-fpm`
 
 ```console
-$ docker pull nextcloud@sha256:32149ee6c71116ccf8147eefb25252ed753e69c4e18e7bd10bc449a2831603d5
+$ docker pull nextcloud@sha256:bafcbdd229e85346baec02cda8c5a79e75c2ba91ece0e0e2de1ec86eacb5ba15
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull nextcloud@sha256:32149ee6c71116ccf8147eefb25252ed753e69c4e18e7bd10
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **232.2 MB (232151323 bytes)**  
+-	Total Size: **232.2 MB (232151341 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87c55cc822eded412938f99083b82180573073ee30884c78eda3b9cd277d01c9`
+-	Image ID: `sha256:ad8695736d514a52635778209945d01539fb38f0b749246b314c11a947e202c2`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -78,13 +78,13 @@ ENV NEXTCLOUD_VERSION=9.0.58
 VOLUME [/var/www/html]
 # Mon, 05 Jun 2017 19:45:18 GMT
 RUN curl -fsSL -o nextcloud.tar.bz2     "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2"  && curl -fsSL -o nextcloud.tar.bz2.asc     "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A  && gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2  && rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc  && tar -xjf nextcloud.tar.bz2 -C /usr/src/  && rm nextcloud.tar.bz2  && rm -rf /usr/src/nextcloud/updater  && mkdir -p /usr/src/nextcloud/data  && mkdir -p /usr/src/nextcloud/custom_apps  && mkdir -p /usr/src/nextcloud/assets  && find /usr/src/nextcloud/ -type f -print0 | xargs -0 chmod 0640  && find /usr/src/nextcloud/ -type d -print0 | xargs -0 chmod 0750  && chown -R root:www-data /usr/src/nextcloud/  && chown -R www-data:www-data /usr/src/nextcloud/custom_apps/  && chown -R www-data:www-data /usr/src/nextcloud/config/  && chown -R www-data:www-data /usr/src/nextcloud/assets/  && chown -R www-data:www-data /usr/src/nextcloud/data/  && chown -R www-data:www-data /usr/src/nextcloud/themes/  && chmod +x /usr/src/nextcloud/occ
-# Mon, 05 Jun 2017 19:45:19 GMT
-COPY file:1e38bf87ac3d14f6a429e1817ad7b175c9b1bf9bb9e82c4c8370944880bce70d in /entrypoint.sh 
-# Mon, 05 Jun 2017 19:45:20 GMT
+# Thu, 08 Jun 2017 19:36:26 GMT
+COPY file:1eb9f15497f4e31164cafb16cfef8bdbeaaa25660a99b2ac2de3d5f3110e1721 in /entrypoint.sh 
+# Thu, 08 Jun 2017 19:36:28 GMT
 COPY file:3c3e5a9bb5574a27ae17f844d4d0f88e9b42147ab0dbd293ba01f831667f4daf in /usr/src/nextcloud/config/apps.config.php 
-# Mon, 05 Jun 2017 19:45:21 GMT
+# Thu, 08 Jun 2017 19:36:29 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Mon, 05 Jun 2017 19:45:22 GMT
+# Thu, 08 Jun 2017 19:36:29 GMT
 CMD ["php-fpm"]
 ```
 
@@ -145,11 +145,11 @@ CMD ["php-fpm"]
 		Last Modified: Mon, 05 Jun 2017 19:58:50 GMT  
 		Size: 36.7 MB (36660516 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b0d0ae612933dc0d87afa1524a79e2ceed75f0fd886902d774a814f2f7231117`  
-		Last Modified: Mon, 05 Jun 2017 19:58:40 GMT  
-		Size: 795.0 B  
+	-	`sha256:c8dc7d96fef4bc85d3ccd9f62ec4a229da4ecc19c1f108570adc77bccbefbb8e`  
+		Last Modified: Thu, 08 Jun 2017 19:52:36 GMT  
+		Size: 815.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a894e477646d881e548942fd27608fcd3b85aae2adb35b78e1b0f002f55f4d84`  
-		Last Modified: Mon, 05 Jun 2017 19:58:40 GMT  
-		Size: 345.0 B  
+	-	`sha256:d79729c943562872730696970405ab21be4afda0877e540cb8ba298e574d2cfd`  
+		Last Modified: Thu, 08 Jun 2017 19:52:35 GMT  
+		Size: 343.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
