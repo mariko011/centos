@@ -11,6 +11,9 @@
 -	[`python:2.7.13-alpine`](#python2713-alpine)
 -	[`python:2.7-alpine`](#python27-alpine)
 -	[`python:2-alpine`](#python2-alpine)
+-	[`python:2.7.13-alpine3.6`](#python2713-alpine36)
+-	[`python:2.7-alpine3.6`](#python27-alpine36)
+-	[`python:2-alpine3.6`](#python2-alpine36)
 -	[`python:2.7.13-wheezy`](#python2713-wheezy)
 -	[`python:2.7-wheezy`](#python27-wheezy)
 -	[`python:2-wheezy`](#python2-wheezy)
@@ -62,6 +65,10 @@
 -	[`python:3.6-alpine`](#python36-alpine)
 -	[`python:3-alpine`](#python3-alpine)
 -	[`python:alpine`](#pythonalpine)
+-	[`python:3.6.1-alpine3.6`](#python361-alpine36)
+-	[`python:3.6-alpine3.6`](#python36-alpine36)
+-	[`python:3-alpine3.6`](#python3-alpine36)
+-	[`python:alpine3.6`](#pythonalpine36)
 -	[`python:3.6.1-onbuild`](#python361-onbuild)
 -	[`python:3.6-onbuild`](#python36-onbuild)
 -	[`python:3-onbuild`](#python3-onbuild)
@@ -691,6 +698,18 @@ CMD ["python2"]
 		Last Modified: Fri, 26 May 2017 16:20:15 GMT  
 		Size: 1.9 MB (1928724 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `python:2.7.13-alpine3.6`
+
+**does not exist** (yet?)
+
+## `python:2.7-alpine3.6`
+
+**does not exist** (yet?)
+
+## `python:2-alpine3.6`
+
+**does not exist** (yet?)
 
 ## `python:2.7.13-wheezy`
 
@@ -4765,6 +4784,22 @@ CMD ["python3"]
 		Last Modified: Fri, 26 May 2017 16:38:07 GMT  
 		Size: 1.9 MB (1930639 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `python:3.6.1-alpine3.6`
+
+**does not exist** (yet?)
+
+## `python:3.6-alpine3.6`
+
+**does not exist** (yet?)
+
+## `python:3-alpine3.6`
+
+**does not exist** (yet?)
+
+## `python:alpine3.6`
+
+**does not exist** (yet?)
 
 ## `python:3.6.1-onbuild`
 
