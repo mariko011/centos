@@ -4666,14 +4666,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.3.4-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.4-1.dsc' python-catkin-pkg-modules_0.3.4-1.dsc 991 SHA256:1ed7e4dc8845d7c51d431a1a25ab92c717c9bbe60deb3cf7982e541e69c5804a
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.4.orig.tar.gz' python-catkin-pkg-modules_0.3.4.orig.tar.gz 44438 SHA256:3c23f98604aca80d1cff4258f4ea2a56fd23ff95c13b2dba85357f08b3d95b52
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.4-1.debian.tar.xz' python-catkin-pkg-modules_0.3.4-1.debian.tar.xz 1124 SHA256:85185314b03181f397d65f36482475bb175709678862e1bf33ca97fce6f711fc
-```
 
 ### `dpkg` source package: `python-catkin-pkg=0.3.4-1`
 
@@ -4685,14 +4679,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg=0.3.4-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.4-1.dsc' python-catkin-pkg_0.3.4-1.dsc 920 SHA256:bc22e5f632194780452476d4422cfc4cee8c4a38dbefcab0d530e253a8c7a5d3
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.4.orig.tar.gz' python-catkin-pkg_0.3.4.orig.tar.gz 9545 SHA256:544429a829648276a4df167e342478cde6bd20002b9983c0de676057675f60b7
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.4-1.debian.tar.xz' python-catkin-pkg_0.3.4-1.debian.tar.xz 1108 SHA256:cd7400253232b89e8bd5e950a3ff81e10d2c5c2975fbbe40bf5124d080001cec
-```
 
 ### `dpkg` source package: `python-crypto=2.6.1-4ubuntu0.2`
 

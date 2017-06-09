@@ -2070,14 +2070,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `GPL-2`
 - `redpine-signals`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-78.99
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-78.99.dsc' linux_4.4.0-78.99.dsc 9282 SHA256:16c4a5d8ca94c47e890542a43f5d30e719ae8e4e47f1d4db12612162374d4105
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-78.99.diff.gz' linux_4.4.0-78.99.diff.gz 12801638 SHA256:bc4656e7be7c7df67aed5c82715d7fc48e807945a5f7fe785416af3782c348c8
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
 
@@ -2603,9 +2597,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.6
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.6.dsc' openssl_1.0.2g-1ubuntu4.6.dsc 2435 SHA256:dbe9f7b006f6d07bd26424e7473c25116e7deb04e809c4eb38415450070ba205
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.6.debian.tar.xz' openssl_1.0.2g-1ubuntu4.6.debian.tar.xz 109604 SHA256:748caddf106c740849909c87406b8b2a675c5746dc8db3c192000042ad314bfd
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.6.dsc' openssl_1.0.2g-1ubuntu4.6.dsc 2435 SHA256:dbe9f7b006f6d07bd26424e7473c25116e7deb04e809c4eb38415450070ba205
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.6.debian.tar.xz' openssl_1.0.2g-1ubuntu4.6.debian.tar.xz 109604 SHA256:748caddf106c740849909c87406b8b2a675c5746dc8db3c192000042ad314bfd
 ```
 
 ### `dpkg` source package: `p11-kit=0.23.2-5~ubuntu16.04.1`
@@ -2811,14 +2805,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.3.4-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.4-1.dsc' python-catkin-pkg-modules_0.3.4-1.dsc 991 SHA256:1ed7e4dc8845d7c51d431a1a25ab92c717c9bbe60deb3cf7982e541e69c5804a
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.4.orig.tar.gz' python-catkin-pkg-modules_0.3.4.orig.tar.gz 44438 SHA256:3c23f98604aca80d1cff4258f4ea2a56fd23ff95c13b2dba85357f08b3d95b52
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.4-1.debian.tar.xz' python-catkin-pkg-modules_0.3.4-1.debian.tar.xz 1124 SHA256:85185314b03181f397d65f36482475bb175709678862e1bf33ca97fce6f711fc
-```
 
 ### `dpkg` source package: `python-catkin-pkg=0.3.4-1`
 
@@ -2830,14 +2818,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg=0.3.4-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.4-1.dsc' python-catkin-pkg_0.3.4-1.dsc 920 SHA256:bc22e5f632194780452476d4422cfc4cee8c4a38dbefcab0d530e253a8c7a5d3
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.4.orig.tar.gz' python-catkin-pkg_0.3.4.orig.tar.gz 9545 SHA256:544429a829648276a4df167e342478cde6bd20002b9983c0de676057675f60b7
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.4-1.debian.tar.xz' python-catkin-pkg_0.3.4-1.debian.tar.xz 1108 SHA256:cd7400253232b89e8bd5e950a3ff81e10d2c5c2975fbbe40bf5124d080001cec
-```
 
 ### `dpkg` source package: `python-crypto=2.6.1-6ubuntu0.16.04.2`
 
