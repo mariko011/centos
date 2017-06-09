@@ -1,7 +1,7 @@
 ## `wordpress:fpm-alpine`
 
 ```console
-$ docker pull wordpress@sha256:43855738737fd6171656e8c1fc01888b35d1cd9d45ff24b1df31940514e163f8
+$ docker pull wordpress@sha256:aa5f0de31b0618f61afe313739d5361da7fcc3441cbbc5259a5c02cd61953eab
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull wordpress@sha256:43855738737fd6171656e8c1fc01888b35d1cd9d45ff24b1d
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.4 MB (35372471 bytes)**  
+-	Total Size: **35.5 MB (35499016 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bfde604e2ddd6d5a57d51da4d69b00d7219252da6e22ee5b801d325bf4bda0ca`
+-	Image ID: `sha256:e97bc59508ee96e56b35c1a49eacd85999fcd339da519b2d2f7aec29840f4098`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -74,17 +74,17 @@ RUN set -ex; 		apk add --no-cache --virtual .build-deps 		libjpeg-turbo-dev 		li
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 # Mon, 05 Jun 2017 20:46:59 GMT
 VOLUME [/var/www/html]
-# Mon, 05 Jun 2017 20:47:00 GMT
-ENV WORDPRESS_VERSION=4.7.5
-# Mon, 05 Jun 2017 20:47:01 GMT
-ENV WORDPRESS_SHA1=fbe0ee1d9010265be200fe50b86f341587187302
-# Mon, 05 Jun 2017 20:47:04 GMT
+# Fri, 09 Jun 2017 07:28:53 GMT
+ENV WORDPRESS_VERSION=4.8
+# Fri, 09 Jun 2017 07:28:54 GMT
+ENV WORDPRESS_SHA1=3738189a1f37a03fb9cb087160b457d7a641ccb4
+# Fri, 09 Jun 2017 07:28:57 GMT
 RUN set -ex; 	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; 	echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; 	tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 	chown -R www-data:www-data /usr/src/wordpress
-# Mon, 05 Jun 2017 20:47:05 GMT
+# Fri, 09 Jun 2017 07:28:58 GMT
 COPY file:b5c332f80307d4248d07b035890c0ea453c1157d9e1732225f83f63d851392b5 in /usr/local/bin/ 
-# Mon, 05 Jun 2017 20:47:06 GMT
+# Fri, 09 Jun 2017 07:29:00 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 05 Jun 2017 20:47:07 GMT
+# Fri, 09 Jun 2017 07:29:00 GMT
 CMD ["php-fpm"]
 ```
 
@@ -141,11 +141,11 @@ CMD ["php-fpm"]
 		Last Modified: Mon, 05 Jun 2017 21:11:29 GMT  
 		Size: 321.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef9873cedcbd273e74fc18e5945694833f0208fedbfbb46dc2969aad1de97c98`  
-		Last Modified: Mon, 05 Jun 2017 21:11:30 GMT  
-		Size: 7.9 MB (7880198 bytes)  
+	-	`sha256:4c108c31f9300e1117167557a4bb1c132d7b4e510b94350bb928e7a352858212`  
+		Last Modified: Fri, 09 Jun 2017 07:45:40 GMT  
+		Size: 8.0 MB (8006743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d58a403fea6acb4c0413dbfc62a81ab998d104a3ce4ca97fc1c9cfe8d4749a40`  
-		Last Modified: Mon, 05 Jun 2017 21:11:28 GMT  
+	-	`sha256:20ac262cf939e3150b964a6c72ab0268a35e2de29a96bd07a345f96638293d06`  
+		Last Modified: Fri, 09 Jun 2017 07:45:35 GMT  
 		Size: 3.1 KB (3138 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
