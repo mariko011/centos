@@ -2384,19 +2384,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=232-23
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-23.dsc' systemd_232-23.dsc 4769 SHA256:84137c0c68b69ca9f361b95c042c3ea0b16b245d7ed270edac34e2580880adef
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-23.debian.tar.xz' systemd_232-23.debian.tar.xz 199700 SHA256:7b0e07300006bd97d4768ddc003e58135f4a0c59157e18127268dfd39c35b56d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/systemd/232-23/
-- https://sources.debian.net/src/systemd/232-23/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 
