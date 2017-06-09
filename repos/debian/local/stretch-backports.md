@@ -1,9 +1,9 @@
-# `debian:stretch`
+# `debian:stretch-backports`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bbcfe8e14329c29ad54a97c357c152ff0668fd4bfbb2cae5557007b31cdd8333`
-- Created: `2017-06-07T17:49:27.180360131Z`
+- Image ID: `sha256:3420837854a462ca49ed8a96c21e64fa4a3734edbab38ea71cd55faecee8f3b5`
+- Created: `2017-06-07T17:49:51.782106864Z`
 - Virtual Size: ~ 100.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`

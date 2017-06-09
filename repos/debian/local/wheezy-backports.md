@@ -2,12 +2,12 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a38d299adb2188a89df2ba0e0ddfc58aa012a489209a2cbcd46196b4667b79e2`
-- Created: `2017-05-08T23:42:20.544465571Z`
-- Virtual Size: ~ 85.25 Mb  
+- Image ID: `sha256:1151287ade0f6d2070855b58770b6e57e12ef88d1512a2cad380868f79505fdf`
+- Created: `2017-06-07T17:55:28.008884206Z`
+- Virtual Size: ~ 85.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["/bin/bash"]`
+- Command: `["bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 
@@ -979,11 +979,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/pam/1.1.3-7.1/
 - https://sources.debian.net/src/pam/1.1.3-7.1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `perl=5.14.2-21+deb7u4`
+### `dpkg` source package: `perl=5.14.2-21+deb7u5`
 
 Binary Packages:
 
-- `perl-base=5.14.2-21+deb7u4`
+- `perl-base=5.14.2-21+deb7u5`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -1010,8 +1010,19 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.14.2-21+deb7u5
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.14.2-21+deb7u5.dsc' perl_5.14.2-21+deb7u5.dsc 2394 SHA256:cf6791573081a2095bdf78abb47eb35439efb90e8b529dc71deb04430b798e87
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.14.2.orig.tar.bz2' perl_5.14.2.orig.tar.bz2 13226972 SHA256:c2a2362e8d1fdd2bfbfde801fcd78241f154c164f00fba76065ab8cc5c7b06cd
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.14.2-21+deb7u5.debian.tar.gz' perl_5.14.2-21+deb7u5.debian.tar.gz 194825 SHA256:bc1957c557e945349bfbc59ccfb994502c340e448ca33d8f197b8567ea6a9d11
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/perl/5.14.2-21+deb7u5/
+- https://sources.debian.net/src/perl/5.14.2-21+deb7u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `readline6=6.2+dfsg-0.1`
 
