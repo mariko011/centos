@@ -1,7 +1,7 @@
 ## `drupal:7-apache`
 
 ```console
-$ docker pull drupal@sha256:17c8e5ffbb29db2cfa5ec4c26bcf37ea2f9be2b69c4aa3eb2896ec3f5c0498a6
+$ docker pull drupal@sha256:12a4c55d9ed5efcc89c480c335093f65fe4fda8190b233f49a4453716c03ef40
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull drupal@sha256:17c8e5ffbb29db2cfa5ec4c26bcf37ea2f9be2b69c4aa3eb2896
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **169.1 MB (169069001 bytes)**  
+-	Total Size: **169.1 MB (169071220 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:774ff6b7781cfd781f30037bde22098b4a79c1cac4f8dbeca974c9b7f1be9609`
+-	Image ID: `sha256:b3f585312559139143dbf84cd67a2cdd8da051cf7a5606de7aa5b8387da883b9`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -86,11 +86,11 @@ RUN a2enmod rewrite
 RUN set -ex 	&& buildDeps=' 		libjpeg62-turbo-dev 		libpng12-dev 		libpq-dev 	' 	&& apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& docker-php-ext-configure gd 		--with-jpeg-dir=/usr 		--with-png-dir=/usr 	&& docker-php-ext-install -j "$(nproc)" gd mbstring pdo pdo_mysql pdo_pgsql zip 	&& apt-mark manual 		libjpeg62-turbo 		libpq5 	&& apt-get purge -y --auto-remove $buildDeps
 # Mon, 05 Jun 2017 15:42:31 GMT
 WORKDIR /var/www/html
-# Mon, 05 Jun 2017 15:42:31 GMT
-ENV DRUPAL_VERSION=7.54
-# Mon, 05 Jun 2017 15:42:32 GMT
-ENV DRUPAL_MD5=3068cbe488075ae166e23ea6cd29cf0f
-# Mon, 05 Jun 2017 15:42:35 GMT
+# Fri, 09 Jun 2017 03:47:26 GMT
+ENV DRUPAL_VERSION=7.55
+# Fri, 09 Jun 2017 03:47:27 GMT
+ENV DRUPAL_MD5=ad97f8c86cee7be9d6ab13724b55fa1c
+# Fri, 09 Jun 2017 03:47:31 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
@@ -155,7 +155,7 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Mon, 05 Jun 2017 15:51:52 GMT  
 		Size: 1.7 MB (1697499 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55e81a6504a31e49f5226d06726c13231278ada17d8a4445d8a0f7a2275d54b0`  
-		Last Modified: Mon, 05 Jun 2017 15:51:54 GMT  
-		Size: 3.3 MB (3299461 bytes)  
+	-	`sha256:2b15c2aff5e854daf4ce2c769ec3ca41e826b1dfd7730763556ff2fd521910bb`  
+		Last Modified: Fri, 09 Jun 2017 06:09:23 GMT  
+		Size: 3.3 MB (3301680 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

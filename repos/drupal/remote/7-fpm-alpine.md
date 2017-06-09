@@ -1,7 +1,7 @@
 ## `drupal:7-fpm-alpine`
 
 ```console
-$ docker pull drupal@sha256:1b5c8272e0e463461e6332912237ddaa9e42ed92babf47687fb6b4b13cbdef85
+$ docker pull drupal@sha256:6d158f690bd62bac52e35e09d498bcb1a1b41b29c6787a0fced5ef90114db4d9
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull drupal@sha256:1b5c8272e0e463461e6332912237ddaa9e42ed92babf47687fb6
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **36.6 MB (36636037 bytes)**  
+-	Total Size: **36.6 MB (36638257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:17c73d40e906f044126f88a9e178552e01f4904d47daf662e0d0edd66c45ec49`
+-	Image ID: `sha256:764dec42f34dd57483e5acd7ffc724d205101d5603b7ce57cc012fc32ab29ea6`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -70,11 +70,11 @@ CMD ["php-fpm"]
 RUN set -ex 	&& apk add --no-cache --virtual .build-deps 		coreutils 		freetype-dev 		libjpeg-turbo-dev 		libpng-dev 		postgresql-dev 	&& docker-php-ext-configure gd 		--with-freetype-dir=/usr/include/ 		--with-jpeg-dir=/usr/include/ 		--with-png-dir=/usr/include/ 	&& docker-php-ext-install -j "$(nproc)" gd mbstring pdo pdo_mysql pdo_pgsql zip 	&& runDeps="$( 		scanelf --needed --nobanner --recursive 			/usr/local/lib/php/extensions 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .drupal-phpexts-rundeps $runDeps 	&& apk del .build-deps
 # Mon, 05 Jun 2017 15:45:02 GMT
 WORKDIR /var/www/html
-# Mon, 05 Jun 2017 15:45:03 GMT
-ENV DRUPAL_VERSION=7.54
-# Mon, 05 Jun 2017 15:45:04 GMT
-ENV DRUPAL_MD5=3068cbe488075ae166e23ea6cd29cf0f
-# Mon, 05 Jun 2017 15:45:06 GMT
+# Fri, 09 Jun 2017 05:00:44 GMT
+ENV DRUPAL_VERSION=7.55
+# Fri, 09 Jun 2017 05:00:45 GMT
+ENV DRUPAL_MD5=ad97f8c86cee7be9d6ab13724b55fa1c
+# Fri, 09 Jun 2017 05:00:51 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites
 ```
 
@@ -123,7 +123,7 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Mon, 05 Jun 2017 15:54:27 GMT  
 		Size: 3.0 MB (2982812 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4a9dcf52a7f6e5f1d518a40f56163079cc07c19c29789250a2b59ff7b5d9bd14`  
-		Last Modified: Mon, 05 Jun 2017 15:54:28 GMT  
-		Size: 3.3 MB (3299453 bytes)  
+	-	`sha256:97b0e1622d6569fc74ecf2c7f7bc6a5283f8197aa392addedd8cef67ccbb7e8e`  
+		Last Modified: Fri, 09 Jun 2017 06:13:13 GMT  
+		Size: 3.3 MB (3301673 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
