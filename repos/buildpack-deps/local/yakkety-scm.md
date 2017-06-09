@@ -1445,9 +1445,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu9.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu9.1.dsc' openssl_1.0.2g-1ubuntu9.1.dsc 2435 SHA256:83008d01c7c1d8be4d84dd80f87411e08ffb20470eb4567b1484147627d0ac86
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu9.1.debian.tar.xz' openssl_1.0.2g-1ubuntu9.1.debian.tar.xz 109584 SHA256:3c4c71846def115e6a390d5a2bbb1c63714cb989bfa69702116d12cdbafa07f9
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu9.1.dsc' openssl_1.0.2g-1ubuntu9.1.dsc 2435 SHA256:83008d01c7c1d8be4d84dd80f87411e08ffb20470eb4567b1484147627d0ac86
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu9.1.debian.tar.xz' openssl_1.0.2g-1ubuntu9.1.debian.tar.xz 109584 SHA256:3c4c71846def115e6a390d5a2bbb1c63714cb989bfa69702116d12cdbafa07f9
 ```
 
 ### `dpkg` source package: `p11-kit=0.23.2-5`
