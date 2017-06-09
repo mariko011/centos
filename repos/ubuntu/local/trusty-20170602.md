@@ -1,4 +1,4 @@
-# `ubuntu:14.04.5`
+# `ubuntu:14.04`
 
 ## Docker Metadata
 

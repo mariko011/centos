@@ -333,13 +333,8 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.23ubuntu7
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.23ubuntu7.dsc' dpkg_1.18.23ubuntu7.dsc 2107 SHA256:db3d241b0adc68b0ccc9ce093f9138210508b8dda4886d077ae77b62871f9c88
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.23ubuntu7.tar.xz' dpkg_1.18.23ubuntu7.tar.xz 4528836 SHA256:5a300e145533681d595853f490265a52c636c37ca5717e1010c609b809f7342d
-```
 
 ### `dpkg` source package: `e2fsprogs=1.43.4-2`
 
@@ -600,15 +595,8 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.7.6-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-1.dsc' libgcrypt20_1.7.6-1.dsc 2914 SHA256:ce72ec0f5d8dc26d30433e8e7f85f241b81edf652af6a282a4616fca201288de
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2' libgcrypt20_1.7.6.orig.tar.bz2 2897695 SHA256:626aafee84af9d2ce253d2c143dc1c0902dda045780cc241f39970fc60be05bc
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2.asc' libgcrypt20_1.7.6.orig.tar.bz2.asc 310 SHA256:91ad5a0efafb0edc63c083f733ce476b2a0da663aea5118126aa63825d314e00
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-1.debian.tar.xz' libgcrypt20_1.7.6-1.debian.tar.xz 30444 SHA256:03d93d653e1708063320d11735f1dafa45431f16b07f76f6ed059bbef524ea54
-```
 
 ### `dpkg` source package: `libgpg-error=1.26-2`
 
@@ -892,14 +880,8 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris perl=5.24.1-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1-2ubuntu1.dsc' perl_5.24.1-2ubuntu1.dsc 2437 SHA256:938ee8f0ee7710bd9d783ff207ce72150a948a7ff4b623555c468d5b4add211b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1-2ubuntu1.debian.tar.xz' perl_5.24.1-2ubuntu1.debian.tar.xz 167592 SHA256:49573499fb822910e83bf8b1a38d8824fdde5c7d6b6a7fe100c35d061a6c4b00
-```
 
 ### `dpkg` source package: `pinentry=1.0.0-2`
 
