@@ -156,7 +156,7 @@ CMD ["server" "-dev"]
 ## `vault:0.7.0`
 
 ```console
-$ docker pull vault@sha256:22e16db49f2dbc06eabb1155b9f89e6279b0e3749cae767f4058889e75074fd4
+$ docker pull vault@sha256:95da273b50db4300e328b4c14cbf1d54f156b381dfecaacc389b10fea3707dc7
 ```
 
 -	Platforms:
@@ -166,69 +166,69 @@ $ docker pull vault@sha256:22e16db49f2dbc06eabb1155b9f89e6279b0e3749cae767f40588
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.5 MB (17540579 bytes)**  
+-	Total Size: **16.9 MB (16934792 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f641c6b8a8c88dfc16a8bac357b69df4084b34f48bfee3373133946377c6034`
+-	Image ID: `sha256:4410e397c336a1d487028367051cbd1ecccc38e81e5d199d3b2597ea9629557d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["server","-dev"]`
 
 ```dockerfile
-# Thu, 25 May 2017 23:31:54 GMT
-ADD file:c34582524a7c4fa2ccb67d48efaa6edacff8bc8115a26a511b2385a03f56aa8e in / 
-# Thu, 25 May 2017 23:31:55 GMT
+# Thu, 25 May 2017 23:33:21 GMT
+ADD file:ce33aabbc5f370e58ebe911e081ce093e3df18d689c2d5a5d092c77973f62a54 in / 
+# Thu, 25 May 2017 23:33:22 GMT
 CMD ["/bin/sh"]
-# Wed, 07 Jun 2017 21:04:30 GMT
+# Fri, 09 Jun 2017 22:12:25 GMT
 MAINTAINER Jeff Mitchell <jeff@hashicorp.com> (@jefferai)
-# Wed, 07 Jun 2017 21:06:24 GMT
+# Fri, 09 Jun 2017 22:12:26 GMT
 ENV VAULT_VERSION=0.7.0
-# Wed, 07 Jun 2017 21:06:25 GMT
+# Fri, 09 Jun 2017 22:12:27 GMT
 ENV DOCKER_BASE_VERSION=0.0.4
-# Wed, 07 Jun 2017 21:06:27 GMT
+# Fri, 09 Jun 2017 22:12:28 GMT
 RUN addgroup vault &&     adduser -S -G vault vault
-# Wed, 07 Jun 2017 21:06:41 GMT
-RUN apk add --no-cache ca-certificates gnupg openssl libcap jq &&     gpg --recv-keys 91A6E7F85D05C65630BEF18951852D87348FFC4C &&     mkdir -p /tmp/build &&     cd /tmp/build &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_linux_amd64.zip &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS.sig docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS &&     grep ${DOCKER_BASE_VERSION}_linux_amd64.zip docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS | sha256sum -c &&     unzip docker-base_${DOCKER_BASE_VERSION}_linux_amd64.zip &&     cp bin/gosu bin/dumb-init /bin &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_linux_amd64.zip &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify vault_${VAULT_VERSION}_SHA256SUMS.sig vault_${VAULT_VERSION}_SHA256SUMS &&     grep vault_${VAULT_VERSION}_linux_amd64.zip vault_${VAULT_VERSION}_SHA256SUMS | sha256sum -c &&     unzip -d /bin vault_${VAULT_VERSION}_linux_amd64.zip &&     cd /tmp &&     rm -rf /tmp/build &&     apk del gnupg openssl &&     rm -rf /root/.gnupg
-# Wed, 07 Jun 2017 21:06:43 GMT
+# Fri, 09 Jun 2017 22:12:38 GMT
+RUN apk add --no-cache ca-certificates gnupg openssl libcap &&     gpg --keyserver pgp.mit.edu --recv-keys 91A6E7F85D05C65630BEF18951852D87348FFC4C &&     mkdir -p /tmp/build &&     cd /tmp/build &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_linux_amd64.zip &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS.sig docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS &&     grep ${DOCKER_BASE_VERSION}_linux_amd64.zip docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS | sha256sum -c &&     unzip docker-base_${DOCKER_BASE_VERSION}_linux_amd64.zip &&     cp bin/gosu bin/dumb-init /bin &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_linux_amd64.zip &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify vault_${VAULT_VERSION}_SHA256SUMS.sig vault_${VAULT_VERSION}_SHA256SUMS &&     grep vault_${VAULT_VERSION}_linux_amd64.zip vault_${VAULT_VERSION}_SHA256SUMS | sha256sum -c &&     unzip -d /bin vault_${VAULT_VERSION}_linux_amd64.zip &&     cd /tmp &&     rm -rf /tmp/build &&     apk del gnupg openssl &&     rm -rf /root/.gnupg
+# Fri, 09 Jun 2017 22:12:39 GMT
 RUN mkdir -p /vault/logs &&     mkdir -p /vault/file &&     mkdir -p /vault/config &&     chown -R vault:vault /vault
-# Wed, 07 Jun 2017 21:06:44 GMT
+# Fri, 09 Jun 2017 22:12:40 GMT
 VOLUME [/vault/logs]
-# Wed, 07 Jun 2017 21:06:45 GMT
+# Fri, 09 Jun 2017 22:12:41 GMT
 VOLUME [/vault/file]
-# Wed, 07 Jun 2017 21:06:46 GMT
+# Fri, 09 Jun 2017 22:12:42 GMT
 EXPOSE 8200/tcp
-# Wed, 07 Jun 2017 21:06:47 GMT
-COPY file:f15519a2e908ed6cee6fe9e20257ff5316c0e9e5838295e8956e7f5b12a27da5 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 07 Jun 2017 21:06:48 GMT
+# Fri, 09 Jun 2017 22:12:43 GMT
+COPY file:98bcd0ef55bd9ba781f5f486eef8d94bca7953eea74d785ef2b77818ebda7972 in /usr/local/bin/docker-entrypoint.sh 
+# Fri, 09 Jun 2017 22:12:44 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 07 Jun 2017 21:06:49 GMT
+# Fri, 09 Jun 2017 22:12:45 GMT
 CMD ["server" "-dev"]
 ```
 
 -	Layers:
-	-	`sha256:486a8e636d6250a74d15cdb3582f4dd198271a80118f5a2f59de3d9cd8433611`  
-		Last Modified: Thu, 25 May 2017 23:35:56 GMT  
-		Size: 2.4 MB (2383064 bytes)  
+	-	`sha256:2aecc7e1714b6fad58d13aedb0639011b37b86f743ba7b6a52d82bd03014b78e`  
+		Last Modified: Thu, 25 May 2017 23:36:54 GMT  
+		Size: 2.0 MB (1990101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:47ab31278af01f598eaa346cfece4416be6ac70c11f76ab7c1c0d514d5e72cfa`  
-		Last Modified: Wed, 07 Jun 2017 21:10:45 GMT  
-		Size: 1.3 KB (1275 bytes)  
+	-	`sha256:08b71d8e8b3a16e9b9018534673d970c55550196c7f502708d0e6f0a2b2bc18b`  
+		Last Modified: Fri, 09 Jun 2017 22:15:33 GMT  
+		Size: 1.3 KB (1253 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:64a2dcf3ea55aab012298591fc35066abdc2770a99a3ce8d6f230f90e2f091b9`  
-		Last Modified: Wed, 07 Jun 2017 21:10:48 GMT  
-		Size: 15.2 MB (15154322 bytes)  
+	-	`sha256:d66ef23691883aa49d22d1579fe3959ef05fbbcc2c165b25ffda46ac0af99c63`  
+		Last Modified: Fri, 09 Jun 2017 22:15:35 GMT  
+		Size: 14.9 MB (14941520 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13d69282c53536bf5b13b82b9ab659796b8f1efd20d2a8e65cdefa0ddd807f76`  
-		Last Modified: Wed, 07 Jun 2017 21:10:44 GMT  
+	-	`sha256:65c04c070b7559bc5549df0f1d605a7286aefd746490f7984be463dd15ca29c4`  
+		Last Modified: Fri, 09 Jun 2017 22:15:33 GMT  
 		Size: 155.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2c8bdd3973ae7482b4ce9a8aeafa6c820b7d76aa279ec09754cd39f5106323d6`  
-		Last Modified: Wed, 07 Jun 2017 21:10:44 GMT  
+	-	`sha256:e7d37cc42488a8de9f7f8b6c55079b57b5f25a0d5fb859b2d6a19f58bb5211f2`  
+		Last Modified: Fri, 09 Jun 2017 22:15:33 GMT  
 		Size: 1.8 KB (1763 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `vault:0.7.2`
 
 ```console
-$ docker pull vault@sha256:29f6d81bd8b44d82670b65ca9ec8eae5427ee59b9267afb97d6077cd1ead4065
+$ docker pull vault@sha256:9a7445a398c958f6f05a3ca32eeaf3bddb1159c4e6d1ca8b54fcbc67ad8ba218
 ```
 
 -	Platforms:
@@ -238,69 +238,69 @@ $ docker pull vault@sha256:29f6d81bd8b44d82670b65ca9ec8eae5427ee59b9267afb97d607
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.4 MB (18433127 bytes)**  
+-	Total Size: **17.8 MB (17827356 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:91b2dcc264576b1876af2fa09013052cc090a681d440538e588c2d61d1100d6f`
+-	Image ID: `sha256:672eed2639618b2ab6f4aefab014cb491f7ed4010b88b1a6f15a9cf5252c6661`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["server","-dev"]`
 
 ```dockerfile
-# Thu, 25 May 2017 23:31:54 GMT
-ADD file:c34582524a7c4fa2ccb67d48efaa6edacff8bc8115a26a511b2385a03f56aa8e in / 
-# Thu, 25 May 2017 23:31:55 GMT
+# Thu, 25 May 2017 23:33:21 GMT
+ADD file:ce33aabbc5f370e58ebe911e081ce093e3df18d689c2d5a5d092c77973f62a54 in / 
+# Thu, 25 May 2017 23:33:22 GMT
 CMD ["/bin/sh"]
-# Wed, 07 Jun 2017 21:04:30 GMT
+# Fri, 09 Jun 2017 22:12:25 GMT
 MAINTAINER Jeff Mitchell <jeff@hashicorp.com> (@jefferai)
-# Wed, 07 Jun 2017 21:07:14 GMT
+# Fri, 09 Jun 2017 22:13:16 GMT
 ENV VAULT_VERSION=0.7.2
-# Wed, 07 Jun 2017 21:07:15 GMT
+# Fri, 09 Jun 2017 22:13:17 GMT
 ENV DOCKER_BASE_VERSION=0.0.4
-# Wed, 07 Jun 2017 21:07:18 GMT
+# Fri, 09 Jun 2017 22:13:19 GMT
 RUN addgroup vault &&     adduser -S -G vault vault
-# Wed, 07 Jun 2017 21:07:32 GMT
-RUN apk add --no-cache ca-certificates gnupg openssl libcap jq &&     gpg --recv-keys 91A6E7F85D05C65630BEF18951852D87348FFC4C &&     mkdir -p /tmp/build &&     cd /tmp/build &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_linux_amd64.zip &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS.sig docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS &&     grep ${DOCKER_BASE_VERSION}_linux_amd64.zip docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS | sha256sum -c &&     unzip docker-base_${DOCKER_BASE_VERSION}_linux_amd64.zip &&     cp bin/gosu bin/dumb-init /bin &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_linux_amd64.zip &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify vault_${VAULT_VERSION}_SHA256SUMS.sig vault_${VAULT_VERSION}_SHA256SUMS &&     grep vault_${VAULT_VERSION}_linux_amd64.zip vault_${VAULT_VERSION}_SHA256SUMS | sha256sum -c &&     unzip -d /bin vault_${VAULT_VERSION}_linux_amd64.zip &&     cd /tmp &&     rm -rf /tmp/build &&     apk del gnupg openssl &&     rm -rf /root/.gnupg
-# Wed, 07 Jun 2017 21:07:48 GMT
+# Fri, 09 Jun 2017 22:13:29 GMT
+RUN apk add --no-cache ca-certificates gnupg openssl libcap &&     gpg --keyserver pgp.mit.edu --recv-keys 91A6E7F85D05C65630BEF18951852D87348FFC4C &&     mkdir -p /tmp/build &&     cd /tmp/build &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_linux_amd64.zip &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS.sig docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS &&     grep ${DOCKER_BASE_VERSION}_linux_amd64.zip docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS | sha256sum -c &&     unzip docker-base_${DOCKER_BASE_VERSION}_linux_amd64.zip &&     cp bin/gosu bin/dumb-init /bin &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_linux_amd64.zip &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify vault_${VAULT_VERSION}_SHA256SUMS.sig vault_${VAULT_VERSION}_SHA256SUMS &&     grep vault_${VAULT_VERSION}_linux_amd64.zip vault_${VAULT_VERSION}_SHA256SUMS | sha256sum -c &&     unzip -d /bin vault_${VAULT_VERSION}_linux_amd64.zip &&     cd /tmp &&     rm -rf /tmp/build &&     apk del gnupg openssl &&     rm -rf /root/.gnupg
+# Fri, 09 Jun 2017 22:13:30 GMT
 RUN mkdir -p /vault/logs &&     mkdir -p /vault/file &&     mkdir -p /vault/config &&     chown -R vault:vault /vault
-# Wed, 07 Jun 2017 21:07:49 GMT
+# Fri, 09 Jun 2017 22:13:31 GMT
 VOLUME [/vault/logs]
-# Wed, 07 Jun 2017 21:07:50 GMT
+# Fri, 09 Jun 2017 22:13:32 GMT
 VOLUME [/vault/file]
-# Wed, 07 Jun 2017 21:07:51 GMT
+# Fri, 09 Jun 2017 22:13:33 GMT
 EXPOSE 8200/tcp
-# Wed, 07 Jun 2017 21:07:52 GMT
+# Fri, 09 Jun 2017 22:13:34 GMT
 COPY file:98bcd0ef55bd9ba781f5f486eef8d94bca7953eea74d785ef2b77818ebda7972 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 07 Jun 2017 21:07:53 GMT
+# Fri, 09 Jun 2017 22:13:35 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 07 Jun 2017 21:07:54 GMT
+# Fri, 09 Jun 2017 22:13:36 GMT
 CMD ["server" "-dev"]
 ```
 
 -	Layers:
-	-	`sha256:486a8e636d6250a74d15cdb3582f4dd198271a80118f5a2f59de3d9cd8433611`  
-		Last Modified: Thu, 25 May 2017 23:35:56 GMT  
-		Size: 2.4 MB (2383064 bytes)  
+	-	`sha256:2aecc7e1714b6fad58d13aedb0639011b37b86f743ba7b6a52d82bd03014b78e`  
+		Last Modified: Thu, 25 May 2017 23:36:54 GMT  
+		Size: 2.0 MB (1990101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ef772a32c1c761b5459cab419ee94a3339ffc7476237611628dcf9a84788421`  
-		Last Modified: Wed, 07 Jun 2017 21:11:18 GMT  
-		Size: 1.3 KB (1276 bytes)  
+	-	`sha256:b74c4fc48dde05cc57684d62a206c2d706b7b6d02df4211e9140d93341a94fd6`  
+		Last Modified: Fri, 09 Jun 2017 22:16:05 GMT  
+		Size: 1.3 KB (1254 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37903b3cfdf08932b50ba27b6b64fef2f7e79a38cd19904da38ec4b500a77592`  
-		Last Modified: Wed, 07 Jun 2017 21:11:20 GMT  
-		Size: 16.0 MB (16046870 bytes)  
+	-	`sha256:ab6307e70c1e0c220594dee5cf432484bb1572de2cbd7e7ab3440452a920cbb1`  
+		Last Modified: Fri, 09 Jun 2017 22:16:09 GMT  
+		Size: 15.8 MB (15834085 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:425ad99cc4eed78d6640e9f599b438acaca1f8a46f2fb5b33a1d1592364071e1`  
-		Last Modified: Wed, 07 Jun 2017 21:11:17 GMT  
-		Size: 153.0 B  
+	-	`sha256:0be8df53dfd8a52e15b18cd4557bf6c15d828bfcd3eb77af4308d5984f7e5665`  
+		Last Modified: Fri, 09 Jun 2017 22:16:04 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fa21fc2a75775b9d6e20c6c69f6cab9e967110312b5b442ab2e50e27f6e8a51`  
-		Last Modified: Wed, 07 Jun 2017 21:11:18 GMT  
-		Size: 1.8 KB (1764 bytes)  
+	-	`sha256:7947024ac3e026e637fe2058d7d14bfd906fccb0a7cac354bb267e8fa5f60da8`  
+		Last Modified: Fri, 09 Jun 2017 22:16:05 GMT  
+		Size: 1.8 KB (1762 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `vault:0.7.3`
 
 ```console
-$ docker pull vault@sha256:66835a48d7f3eeccc60c21df44fd3522937723bda6bebf79fca0bb481af2941a
+$ docker pull vault@sha256:ad2406dd6f44ad0152a9c3bc6722e4ec4298bcadb9273700dabe9e72ec38aea2
 ```
 
 -	Platforms:
@@ -310,69 +310,69 @@ $ docker pull vault@sha256:66835a48d7f3eeccc60c21df44fd3522937723bda6bebf79fca0b
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.6 MB (18565926 bytes)**  
+-	Total Size: **18.0 MB (17960210 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:82e7fdb3ad8a253985d58ffaf2dc6b2348eafd67abb04a4238626dcaf40a100c`
+-	Image ID: `sha256:31c0e7078cc5902b317841f8b93b1f97b9356715fcaca3d5a4be4bb2bd73f8b3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["server","-dev"]`
 
 ```dockerfile
-# Thu, 25 May 2017 23:31:54 GMT
-ADD file:c34582524a7c4fa2ccb67d48efaa6edacff8bc8115a26a511b2385a03f56aa8e in / 
-# Thu, 25 May 2017 23:31:55 GMT
+# Thu, 25 May 2017 23:33:21 GMT
+ADD file:ce33aabbc5f370e58ebe911e081ce093e3df18d689c2d5a5d092c77973f62a54 in / 
+# Thu, 25 May 2017 23:33:22 GMT
 CMD ["/bin/sh"]
-# Wed, 07 Jun 2017 21:04:30 GMT
+# Fri, 09 Jun 2017 22:12:25 GMT
 MAINTAINER Jeff Mitchell <jeff@hashicorp.com> (@jefferai)
-# Wed, 07 Jun 2017 21:08:18 GMT
+# Fri, 09 Jun 2017 22:13:59 GMT
 ENV VAULT_VERSION=0.7.3
-# Wed, 07 Jun 2017 21:08:19 GMT
+# Fri, 09 Jun 2017 22:14:00 GMT
 ENV DOCKER_BASE_VERSION=0.0.4
-# Wed, 07 Jun 2017 21:08:21 GMT
+# Fri, 09 Jun 2017 22:14:01 GMT
 RUN addgroup vault &&     adduser -S -G vault vault
-# Wed, 07 Jun 2017 21:08:41 GMT
-RUN apk add --no-cache ca-certificates gnupg openssl libcap jq &&     gpg --recv-keys 91A6E7F85D05C65630BEF18951852D87348FFC4C &&     mkdir -p /tmp/build &&     cd /tmp/build &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_linux_amd64.zip &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS.sig docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS &&     grep ${DOCKER_BASE_VERSION}_linux_amd64.zip docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS | sha256sum -c &&     unzip docker-base_${DOCKER_BASE_VERSION}_linux_amd64.zip &&     cp bin/gosu bin/dumb-init /bin &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_linux_amd64.zip &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify vault_${VAULT_VERSION}_SHA256SUMS.sig vault_${VAULT_VERSION}_SHA256SUMS &&     grep vault_${VAULT_VERSION}_linux_amd64.zip vault_${VAULT_VERSION}_SHA256SUMS | sha256sum -c &&     unzip -d /bin vault_${VAULT_VERSION}_linux_amd64.zip &&     cd /tmp &&     rm -rf /tmp/build &&     apk del gnupg openssl &&     rm -rf /root/.gnupg
-# Wed, 07 Jun 2017 21:08:43 GMT
+# Fri, 09 Jun 2017 22:14:10 GMT
+RUN apk add --no-cache ca-certificates gnupg openssl libcap &&     gpg --keyserver pgp.mit.edu --recv-keys 91A6E7F85D05C65630BEF18951852D87348FFC4C &&     mkdir -p /tmp/build &&     cd /tmp/build &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_linux_amd64.zip &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS.sig docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS &&     grep ${DOCKER_BASE_VERSION}_linux_amd64.zip docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS | sha256sum -c &&     unzip docker-base_${DOCKER_BASE_VERSION}_linux_amd64.zip &&     cp bin/gosu bin/dumb-init /bin &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_linux_amd64.zip &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify vault_${VAULT_VERSION}_SHA256SUMS.sig vault_${VAULT_VERSION}_SHA256SUMS &&     grep vault_${VAULT_VERSION}_linux_amd64.zip vault_${VAULT_VERSION}_SHA256SUMS | sha256sum -c &&     unzip -d /bin vault_${VAULT_VERSION}_linux_amd64.zip &&     cd /tmp &&     rm -rf /tmp/build &&     apk del gnupg openssl &&     rm -rf /root/.gnupg
+# Fri, 09 Jun 2017 22:14:11 GMT
 RUN mkdir -p /vault/logs &&     mkdir -p /vault/file &&     mkdir -p /vault/config &&     chown -R vault:vault /vault
-# Wed, 07 Jun 2017 21:08:44 GMT
+# Fri, 09 Jun 2017 22:14:12 GMT
 VOLUME [/vault/logs]
-# Wed, 07 Jun 2017 21:08:45 GMT
+# Fri, 09 Jun 2017 22:14:13 GMT
 VOLUME [/vault/file]
-# Wed, 07 Jun 2017 21:08:46 GMT
+# Fri, 09 Jun 2017 22:14:14 GMT
 EXPOSE 8200/tcp
-# Wed, 07 Jun 2017 21:08:47 GMT
+# Fri, 09 Jun 2017 22:14:15 GMT
 COPY file:98bcd0ef55bd9ba781f5f486eef8d94bca7953eea74d785ef2b77818ebda7972 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 07 Jun 2017 21:08:48 GMT
+# Fri, 09 Jun 2017 22:14:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 07 Jun 2017 21:08:49 GMT
+# Fri, 09 Jun 2017 22:14:17 GMT
 CMD ["server" "-dev"]
 ```
 
 -	Layers:
-	-	`sha256:486a8e636d6250a74d15cdb3582f4dd198271a80118f5a2f59de3d9cd8433611`  
-		Last Modified: Thu, 25 May 2017 23:35:56 GMT  
-		Size: 2.4 MB (2383064 bytes)  
+	-	`sha256:2aecc7e1714b6fad58d13aedb0639011b37b86f743ba7b6a52d82bd03014b78e`  
+		Last Modified: Thu, 25 May 2017 23:36:54 GMT  
+		Size: 2.0 MB (1990101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b0538cedc49fbb1ccf41d1b41019baeee2dea8bece52247fafcf9ece48e05f5`  
-		Last Modified: Wed, 07 Jun 2017 21:12:08 GMT  
-		Size: 1.3 KB (1275 bytes)  
+	-	`sha256:73d1e6490ef2896b8c547bb02d7f7be03425fc6cdd12b866e3764806c67bff12`  
+		Last Modified: Fri, 09 Jun 2017 22:16:39 GMT  
+		Size: 1.3 KB (1251 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:348093acfe1052cd8fe14f0222b802fbda770f34642786da3933b3080fc8f0e7`  
-		Last Modified: Wed, 07 Jun 2017 21:12:12 GMT  
-		Size: 16.2 MB (16179669 bytes)  
+	-	`sha256:870d9771a3a8fd358086bfe37eedec37da6412496e0c3e130c3a340ecb64b2ca`  
+		Last Modified: Fri, 09 Jun 2017 22:16:42 GMT  
+		Size: 16.0 MB (15966939 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34fa1d3cb0cb6c2442387c24c5956ead6d5e16db961fd9de66a720802bd094dd`  
-		Last Modified: Wed, 07 Jun 2017 21:12:08 GMT  
-		Size: 154.0 B  
+	-	`sha256:c3b7bfbc766eceb17de6119439316aa7caca4c834cd0e6639338273144c2ec67`  
+		Last Modified: Fri, 09 Jun 2017 22:16:39 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b319edb390d9b19c10281cd62809215d7fcfa22b81e885c78adb567e8c371ecb`  
-		Last Modified: Wed, 07 Jun 2017 21:12:08 GMT  
-		Size: 1.8 KB (1764 bytes)  
+	-	`sha256:e3c8228bd69947ef8ae48b1133cff791860df3e67ffa46c60e9ac3b8ae17b40d`  
+		Last Modified: Fri, 09 Jun 2017 22:16:39 GMT  
+		Size: 1.8 KB (1763 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `vault:latest`
 
 ```console
-$ docker pull vault@sha256:66835a48d7f3eeccc60c21df44fd3522937723bda6bebf79fca0bb481af2941a
+$ docker pull vault@sha256:ad2406dd6f44ad0152a9c3bc6722e4ec4298bcadb9273700dabe9e72ec38aea2
 ```
 
 -	Platforms:
@@ -382,61 +382,61 @@ $ docker pull vault@sha256:66835a48d7f3eeccc60c21df44fd3522937723bda6bebf79fca0b
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.6 MB (18565926 bytes)**  
+-	Total Size: **18.0 MB (17960210 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:82e7fdb3ad8a253985d58ffaf2dc6b2348eafd67abb04a4238626dcaf40a100c`
+-	Image ID: `sha256:31c0e7078cc5902b317841f8b93b1f97b9356715fcaca3d5a4be4bb2bd73f8b3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["server","-dev"]`
 
 ```dockerfile
-# Thu, 25 May 2017 23:31:54 GMT
-ADD file:c34582524a7c4fa2ccb67d48efaa6edacff8bc8115a26a511b2385a03f56aa8e in / 
-# Thu, 25 May 2017 23:31:55 GMT
+# Thu, 25 May 2017 23:33:21 GMT
+ADD file:ce33aabbc5f370e58ebe911e081ce093e3df18d689c2d5a5d092c77973f62a54 in / 
+# Thu, 25 May 2017 23:33:22 GMT
 CMD ["/bin/sh"]
-# Wed, 07 Jun 2017 21:04:30 GMT
+# Fri, 09 Jun 2017 22:12:25 GMT
 MAINTAINER Jeff Mitchell <jeff@hashicorp.com> (@jefferai)
-# Wed, 07 Jun 2017 21:08:18 GMT
+# Fri, 09 Jun 2017 22:13:59 GMT
 ENV VAULT_VERSION=0.7.3
-# Wed, 07 Jun 2017 21:08:19 GMT
+# Fri, 09 Jun 2017 22:14:00 GMT
 ENV DOCKER_BASE_VERSION=0.0.4
-# Wed, 07 Jun 2017 21:08:21 GMT
+# Fri, 09 Jun 2017 22:14:01 GMT
 RUN addgroup vault &&     adduser -S -G vault vault
-# Wed, 07 Jun 2017 21:08:41 GMT
-RUN apk add --no-cache ca-certificates gnupg openssl libcap jq &&     gpg --recv-keys 91A6E7F85D05C65630BEF18951852D87348FFC4C &&     mkdir -p /tmp/build &&     cd /tmp/build &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_linux_amd64.zip &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS.sig docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS &&     grep ${DOCKER_BASE_VERSION}_linux_amd64.zip docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS | sha256sum -c &&     unzip docker-base_${DOCKER_BASE_VERSION}_linux_amd64.zip &&     cp bin/gosu bin/dumb-init /bin &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_linux_amd64.zip &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify vault_${VAULT_VERSION}_SHA256SUMS.sig vault_${VAULT_VERSION}_SHA256SUMS &&     grep vault_${VAULT_VERSION}_linux_amd64.zip vault_${VAULT_VERSION}_SHA256SUMS | sha256sum -c &&     unzip -d /bin vault_${VAULT_VERSION}_linux_amd64.zip &&     cd /tmp &&     rm -rf /tmp/build &&     apk del gnupg openssl &&     rm -rf /root/.gnupg
-# Wed, 07 Jun 2017 21:08:43 GMT
+# Fri, 09 Jun 2017 22:14:10 GMT
+RUN apk add --no-cache ca-certificates gnupg openssl libcap &&     gpg --keyserver pgp.mit.edu --recv-keys 91A6E7F85D05C65630BEF18951852D87348FFC4C &&     mkdir -p /tmp/build &&     cd /tmp/build &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_linux_amd64.zip &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS &&     wget https://releases.hashicorp.com/docker-base/${DOCKER_BASE_VERSION}/docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS.sig docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS &&     grep ${DOCKER_BASE_VERSION}_linux_amd64.zip docker-base_${DOCKER_BASE_VERSION}_SHA256SUMS | sha256sum -c &&     unzip docker-base_${DOCKER_BASE_VERSION}_linux_amd64.zip &&     cp bin/gosu bin/dumb-init /bin &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_linux_amd64.zip &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS &&     wget https://releases.hashicorp.com/vault/${VAULT_VERSION}/vault_${VAULT_VERSION}_SHA256SUMS.sig &&     gpg --batch --verify vault_${VAULT_VERSION}_SHA256SUMS.sig vault_${VAULT_VERSION}_SHA256SUMS &&     grep vault_${VAULT_VERSION}_linux_amd64.zip vault_${VAULT_VERSION}_SHA256SUMS | sha256sum -c &&     unzip -d /bin vault_${VAULT_VERSION}_linux_amd64.zip &&     cd /tmp &&     rm -rf /tmp/build &&     apk del gnupg openssl &&     rm -rf /root/.gnupg
+# Fri, 09 Jun 2017 22:14:11 GMT
 RUN mkdir -p /vault/logs &&     mkdir -p /vault/file &&     mkdir -p /vault/config &&     chown -R vault:vault /vault
-# Wed, 07 Jun 2017 21:08:44 GMT
+# Fri, 09 Jun 2017 22:14:12 GMT
 VOLUME [/vault/logs]
-# Wed, 07 Jun 2017 21:08:45 GMT
+# Fri, 09 Jun 2017 22:14:13 GMT
 VOLUME [/vault/file]
-# Wed, 07 Jun 2017 21:08:46 GMT
+# Fri, 09 Jun 2017 22:14:14 GMT
 EXPOSE 8200/tcp
-# Wed, 07 Jun 2017 21:08:47 GMT
+# Fri, 09 Jun 2017 22:14:15 GMT
 COPY file:98bcd0ef55bd9ba781f5f486eef8d94bca7953eea74d785ef2b77818ebda7972 in /usr/local/bin/docker-entrypoint.sh 
-# Wed, 07 Jun 2017 21:08:48 GMT
+# Fri, 09 Jun 2017 22:14:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 07 Jun 2017 21:08:49 GMT
+# Fri, 09 Jun 2017 22:14:17 GMT
 CMD ["server" "-dev"]
 ```
 
 -	Layers:
-	-	`sha256:486a8e636d6250a74d15cdb3582f4dd198271a80118f5a2f59de3d9cd8433611`  
-		Last Modified: Thu, 25 May 2017 23:35:56 GMT  
-		Size: 2.4 MB (2383064 bytes)  
+	-	`sha256:2aecc7e1714b6fad58d13aedb0639011b37b86f743ba7b6a52d82bd03014b78e`  
+		Last Modified: Thu, 25 May 2017 23:36:54 GMT  
+		Size: 2.0 MB (1990101 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0b0538cedc49fbb1ccf41d1b41019baeee2dea8bece52247fafcf9ece48e05f5`  
-		Last Modified: Wed, 07 Jun 2017 21:12:08 GMT  
-		Size: 1.3 KB (1275 bytes)  
+	-	`sha256:73d1e6490ef2896b8c547bb02d7f7be03425fc6cdd12b866e3764806c67bff12`  
+		Last Modified: Fri, 09 Jun 2017 22:16:39 GMT  
+		Size: 1.3 KB (1251 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:348093acfe1052cd8fe14f0222b802fbda770f34642786da3933b3080fc8f0e7`  
-		Last Modified: Wed, 07 Jun 2017 21:12:12 GMT  
-		Size: 16.2 MB (16179669 bytes)  
+	-	`sha256:870d9771a3a8fd358086bfe37eedec37da6412496e0c3e130c3a340ecb64b2ca`  
+		Last Modified: Fri, 09 Jun 2017 22:16:42 GMT  
+		Size: 16.0 MB (15966939 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:34fa1d3cb0cb6c2442387c24c5956ead6d5e16db961fd9de66a720802bd094dd`  
-		Last Modified: Wed, 07 Jun 2017 21:12:08 GMT  
-		Size: 154.0 B  
+	-	`sha256:c3b7bfbc766eceb17de6119439316aa7caca4c834cd0e6639338273144c2ec67`  
+		Last Modified: Fri, 09 Jun 2017 22:16:39 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b319edb390d9b19c10281cd62809215d7fcfa22b81e885c78adb567e8c371ecb`  
-		Last Modified: Wed, 07 Jun 2017 21:12:08 GMT  
-		Size: 1.8 KB (1764 bytes)  
+	-	`sha256:e3c8228bd69947ef8ae48b1133cff791860df3e67ffa46c60e9ac3b8ae17b40d`  
+		Last Modified: Fri, 09 Jun 2017 22:16:39 GMT  
+		Size: 1.8 KB (1763 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
