@@ -1,7 +1,7 @@
 ## `pypy:latest`
 
 ```console
-$ docker pull pypy@sha256:3ecfeb92187049ccacff39c0d26a4560dd753f24ac5f4f5cb66fda1835f0540f
+$ docker pull pypy@sha256:1f0dbfe92f2be0b629de1da453ec1e0b1c7adf7a72e0275fd6d8d0f328057017
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull pypy@sha256:3ecfeb92187049ccacff39c0d26a4560dd753f24ac5f4f5cb66fda
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **279.4 MB (279442746 bytes)**  
+-	Total Size: **279.0 MB (278989401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69de2e7d54c0a1c623d331eca86e5768413a000af5a5c54d8f874d6a172d19fa`
+-	Image ID: `sha256:7e0eb43f8f9fd40cec21f00396f6874e6d69abf6705d7f7b4999f74e9d1630d9`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -33,17 +33,17 @@ ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:
 ENV LANG=C.UTF-8
 # Thu, 08 Jun 2017 21:00:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 09 Jun 2017 06:14:05 GMT
-ENV PYPY_VERSION=5.7.1
-# Fri, 09 Jun 2017 06:18:07 GMT
-ENV PYPY_SHA256SUM=2abaa54d88c9b70b64c37083e7e430a1d3a8f78f8de92e484a988b7aca1e50a7
-# Fri, 09 Jun 2017 06:18:09 GMT
+# Mon, 12 Jun 2017 21:35:47 GMT
+ENV PYPY_VERSION=5.8.0
+# Mon, 12 Jun 2017 21:48:59 GMT
+ENV PYPY_SHA256SUM=57d871a7f1135719c138cee4e3533c3275d682a76a40ff668e95150c65923035
+# Mon, 12 Jun 2017 21:49:01 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Fri, 09 Jun 2017 06:18:20 GMT
+# Mon, 12 Jun 2017 21:49:12 GMT
 RUN set -ex; 	wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3-v${PYPY_VERSION}-linux64.tar.bz2"; 	echo "$PYPY_SHA256SUM *pypy.tar.bz2" | sha256sum -c; 	tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2; 	rm pypy.tar.bz2
-# Fri, 09 Jun 2017 06:18:53 GMT
+# Mon, 12 Jun 2017 21:49:42 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		pypy3 get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		rm -f get-pip.py
-# Fri, 09 Jun 2017 06:18:54 GMT
+# Mon, 12 Jun 2017 21:49:57 GMT
 CMD ["pypy3"]
 ```
 
@@ -68,11 +68,11 @@ CMD ["pypy3"]
 		Last Modified: Thu, 08 Jun 2017 21:52:54 GMT  
 		Size: 2.9 MB (2897314 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a062e7e4777f93ef5eda5e215e7b2a20bce6e5b9ecfd802f5da356c2f793c476`  
-		Last Modified: Fri, 09 Jun 2017 06:30:56 GMT  
-		Size: 25.5 MB (25511523 bytes)  
+	-	`sha256:239b15123001da8d3e28f374cab11614a3b28966ab6ab78b408c59583926b999`  
+		Last Modified: Mon, 12 Jun 2017 22:09:19 GMT  
+		Size: 25.0 MB (25008894 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a14269d7847dce40bf43424fbe074f69948f177e1a0a6057f25c819bab4a463d`  
-		Last Modified: Fri, 09 Jun 2017 06:30:48 GMT  
-		Size: 4.2 MB (4157944 bytes)  
+	-	`sha256:c2bd330d88ff9803a4da5d78f01287de211742f27b3e661d27076e0a2d20c19c`  
+		Last Modified: Mon, 12 Jun 2017 22:09:10 GMT  
+		Size: 4.2 MB (4207228 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

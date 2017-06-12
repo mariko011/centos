@@ -1,7 +1,7 @@
 ## `pypy:3-onbuild`
 
 ```console
-$ docker pull pypy@sha256:076dea04182df89441d6cec6d17ab8ae360e2410917cfcf67291b5ee5bcd7a75
+$ docker pull pypy@sha256:03db640e2b5d462a484080a9f26046286f7a059c2126d78bdc0013d037b509b5
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull pypy@sha256:076dea04182df89441d6cec6d17ab8ae360e2410917cfcf67291b5
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **279.4 MB (279442872 bytes)**  
+-	Total Size: **279.0 MB (278989527 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4a38fddb37875fbbe4d3ed047540a1a9dce80d6d044f1c35f5ab7fbedbc85973`
+-	Image ID: `sha256:9d010ef97f74696951de6986e4a47864594a6790cdcf4277fdf8343f2cf5bf58`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -33,27 +33,27 @@ ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:
 ENV LANG=C.UTF-8
 # Thu, 08 Jun 2017 21:00:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 09 Jun 2017 06:14:05 GMT
-ENV PYPY_VERSION=5.7.1
-# Fri, 09 Jun 2017 06:18:07 GMT
-ENV PYPY_SHA256SUM=2abaa54d88c9b70b64c37083e7e430a1d3a8f78f8de92e484a988b7aca1e50a7
-# Fri, 09 Jun 2017 06:18:09 GMT
+# Mon, 12 Jun 2017 21:35:47 GMT
+ENV PYPY_VERSION=5.8.0
+# Mon, 12 Jun 2017 21:48:59 GMT
+ENV PYPY_SHA256SUM=57d871a7f1135719c138cee4e3533c3275d682a76a40ff668e95150c65923035
+# Mon, 12 Jun 2017 21:49:01 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Fri, 09 Jun 2017 06:18:20 GMT
+# Mon, 12 Jun 2017 21:49:12 GMT
 RUN set -ex; 	wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3-v${PYPY_VERSION}-linux64.tar.bz2"; 	echo "$PYPY_SHA256SUM *pypy.tar.bz2" | sha256sum -c; 	tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2; 	rm pypy.tar.bz2
-# Fri, 09 Jun 2017 06:18:53 GMT
+# Mon, 12 Jun 2017 21:49:42 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		pypy3 get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		rm -f get-pip.py
-# Fri, 09 Jun 2017 06:18:54 GMT
+# Mon, 12 Jun 2017 21:49:57 GMT
 CMD ["pypy3"]
-# Fri, 09 Jun 2017 06:20:59 GMT
+# Mon, 12 Jun 2017 21:51:28 GMT
 RUN mkdir -p /usr/src/app
-# Fri, 09 Jun 2017 06:21:00 GMT
+# Mon, 12 Jun 2017 21:51:29 GMT
 WORKDIR /usr/src/app
-# Fri, 09 Jun 2017 06:21:01 GMT
+# Mon, 12 Jun 2017 21:51:29 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Fri, 09 Jun 2017 06:21:23 GMT
+# Mon, 12 Jun 2017 21:51:30 GMT
 ONBUILD RUN pip install -r requirements.txt
-# Fri, 09 Jun 2017 06:21:24 GMT
+# Mon, 12 Jun 2017 21:51:31 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -78,15 +78,15 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Thu, 08 Jun 2017 21:52:54 GMT  
 		Size: 2.9 MB (2897314 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a062e7e4777f93ef5eda5e215e7b2a20bce6e5b9ecfd802f5da356c2f793c476`  
-		Last Modified: Fri, 09 Jun 2017 06:30:56 GMT  
-		Size: 25.5 MB (25511523 bytes)  
+	-	`sha256:239b15123001da8d3e28f374cab11614a3b28966ab6ab78b408c59583926b999`  
+		Last Modified: Mon, 12 Jun 2017 22:09:19 GMT  
+		Size: 25.0 MB (25008894 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a14269d7847dce40bf43424fbe074f69948f177e1a0a6057f25c819bab4a463d`  
-		Last Modified: Fri, 09 Jun 2017 06:30:48 GMT  
-		Size: 4.2 MB (4157944 bytes)  
+	-	`sha256:c2bd330d88ff9803a4da5d78f01287de211742f27b3e661d27076e0a2d20c19c`  
+		Last Modified: Mon, 12 Jun 2017 22:09:10 GMT  
+		Size: 4.2 MB (4207228 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:98a615d1b09cf71a529b9fab3f165212ae5090b378a43b71aff0bf3eb43aa70f`  
-		Last Modified: Fri, 09 Jun 2017 06:37:26 GMT  
+	-	`sha256:6ad1e9eaf8a7d2ecdfc90464aa0ea0b346f64da16fd80d066b72369a72259fc5`  
+		Last Modified: Mon, 12 Jun 2017 22:39:50 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
