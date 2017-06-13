@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:607189d513ad39c017e25d8e529249ee625ab13d819f0beada122b5c38e4fb8a`
-- Created: `2017-05-24T17:13:46.339285137Z`
-- Virtual Size: ~ 1.13 Gb  
+- Image ID: `sha256:766e22e63a77b3555f1322484f7dbf4554042a8f71711b7ef78368b9df711089`
+- Created: `2017-06-09T22:19:38.547585291Z`
+- Virtual Size: ~ 1.14 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -19,7 +19,7 @@
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
-  - `OPENSSL_VERSION=1.1.0e-2`
+  - `OPENSSL_VERSION=1.1.0f-3`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
   - `TOMCAT_VERSION=8.5.15`
@@ -2691,11 +2691,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libmspub/0.1.1-2/
 - https://sources.debian.net/src/libmspub/0.1.1-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libmwaw=0.3.1-2`
+### `dpkg` source package: `libmwaw=0.3.1-2+deb8u1`
 
 Binary Packages:
 
-- `libmwaw-0.3-3=0.3.1-2`
+- `libmwaw-0.3-3=0.3.1-2+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libmwaw-0.3-3/copyright`)
 
@@ -2706,16 +2706,16 @@ Licenses: (parsed from: `/usr/share/doc/libmwaw-0.3-3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libmwaw=0.3.1-2
-'http://deb.debian.org/debian/pool/main/libm/libmwaw/libmwaw_0.3.1-2.dsc' libmwaw_0.3.1-2.dsc 1969 SHA256:95b9ffb005438ae11cee5f610bf2c5816d2db0fb8e7a9d9c3866b13fa5d99789
-'http://deb.debian.org/debian/pool/main/libm/libmwaw/libmwaw_0.3.1.orig.tar.bz2' libmwaw_0.3.1.orig.tar.bz2 1147351 SHA256:66d3dbc4421daa628326204b5d14bb99f2b9d4423184027aabe207d677c89845
-'http://deb.debian.org/debian/pool/main/libm/libmwaw/libmwaw_0.3.1-2.debian.tar.xz' libmwaw_0.3.1-2.debian.tar.xz 7576 SHA256:dbab76cdff54c36b9ed6ba3d0fe3e81dea0518c3e477da736817404fe1b924ac
+$ apt-get source -qq --print-uris libmwaw=0.3.1-2+deb8u1
+'http://security.debian.org/pool/updates/main/libm/libmwaw/libmwaw_0.3.1-2+deb8u1.dsc' libmwaw_0.3.1-2+deb8u1.dsc 1996 SHA256:4ca2853bf1490b7b58ffcea295c06ead6aa1b654aedf0556b5c061f527214df3
+'http://security.debian.org/pool/updates/main/libm/libmwaw/libmwaw_0.3.1.orig.tar.bz2' libmwaw_0.3.1.orig.tar.bz2 1147351 SHA256:66d3dbc4421daa628326204b5d14bb99f2b9d4423184027aabe207d677c89845
+'http://security.debian.org/pool/updates/main/libm/libmwaw/libmwaw_0.3.1-2+deb8u1.debian.tar.xz' libmwaw_0.3.1-2+deb8u1.debian.tar.xz 7912 SHA256:18a5d88c6fd911bb0c98ae9cabf378c421724ae8598571a026b5cb9cc416e0bc
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libmwaw/0.3.1-2/
-- https://sources.debian.net/src/libmwaw/0.3.1-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libmwaw/0.3.1-2+deb8u1/
+- https://sources.debian.net/src/libmwaw/0.3.1-2+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libodfgen=0.1.1-2`
 
@@ -4291,12 +4291,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/openssl/1.0.1t-1+deb8u6/
 - https://sources.debian.net/src/openssl/1.0.1t-1+deb8u6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openssl=1.1.0e-2`
+### `dpkg` source package: `openssl=1.1.0f-3`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.0e-2`
-- `openssl=1.1.0e-2`
+- `libssl1.1:amd64=1.1.0f-3`
+- `openssl=1.1.0f-3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4305,17 +4305,17 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.1.0e-2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e-2.dsc' openssl_1.1.0e-2.dsc 2583 SHA256:15807d33dd7722ad3ba1c445cc40b158a5a62ba68e21131987317d89463335a9
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e.orig.tar.gz' openssl_1.1.0e.orig.tar.gz 5202247 SHA256:57be8618979d80c910728cfc99369bf97b2a1abd8f366ab6ebdee8975ad3874c
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e.orig.tar.gz.asc' openssl_1.1.0e.orig.tar.gz.asc 455 SHA256:05ab4b1019da59963890509ad9ff3142c72df0b3baf4a38043392aff99e6a13d
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e-2.debian.tar.xz' openssl_1.1.0e-2.debian.tar.xz 52936 SHA256:b28b9564646334ae1936db884cad465318bfce689f8abca933504830d677322a
+$ apt-get source -qq --print-uris openssl=1.1.0f-3
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-3.dsc' openssl_1.1.0f-3.dsc 2583 SHA256:a4d69ed8c10134374d86fee593e85bb5165e6d539ab86294e40532a3ed276642
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f.orig.tar.gz' openssl_1.1.0f.orig.tar.gz 5278176 SHA256:12f746f3f2493b2f39da7ecf63d7ee19c6ac9ec6a4fcd8c229da8a522cb12765
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f.orig.tar.gz.asc' openssl_1.1.0f.orig.tar.gz.asc 455 SHA256:9f2feb0494ebcc1cf152d95a11bc966cb94bc1957d88650285db3966866801b0
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-3.debian.tar.xz' openssl_1.1.0f-3.debian.tar.xz 54152 SHA256:2b1ca97264b073345375a69ee95e32a9850f0288462bc58e9054dfa769f14806
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openssl/1.1.0e-2/
-- https://sources.debian.net/src/openssl/1.1.0e-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openssl/1.1.0f-3/
+- https://sources.debian.net/src/openssl/1.1.0f-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `orc=1:0.4.22-1`
 
@@ -4473,11 +4473,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/pcsc-lite/1.8.13-1+deb8u1/
 - https://sources.debian.net/src/pcsc-lite/1.8.13-1+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `perl=5.20.2-3+deb8u6`
+### `dpkg` source package: `perl=5.20.2-3+deb8u7`
 
 Binary Packages:
 
-- `perl-base=5.20.2-3+deb8u6`
+- `perl-base=5.20.2-3+deb8u7`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -4509,16 +4509,16 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.20.2-3+deb8u6
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.20.2-3+deb8u6.dsc' perl_5.20.2-3+deb8u6.dsc 2322 SHA256:b7569ffa209fcd84bc4d487a9c242b21b0db591b3a9222ae0e1140bab67c6106
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.20.2.orig.tar.bz2' perl_5.20.2.orig.tar.bz2 13717128 SHA256:e5a4713bc65e1da98ebd833dce425c000768bfe84d17ec5183ec5ca249db71ab
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.20.2-3+deb8u6.debian.tar.xz' perl_5.20.2-3+deb8u6.debian.tar.xz 147848 SHA256:f6d31a96ea22b2f2626bb017c4960bcbdf1ac1e11e5639175cd9418fdccda812
+$ apt-get source -qq --print-uris perl=5.20.2-3+deb8u7
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.20.2-3+deb8u7.dsc' perl_5.20.2-3+deb8u7.dsc 2324 SHA256:f073cef0fa155c02dc84cc2d70477ea467142c4cd2b298874e960210592a519a
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.20.2.orig.tar.bz2' perl_5.20.2.orig.tar.bz2 13717128 SHA256:e5a4713bc65e1da98ebd833dce425c000768bfe84d17ec5183ec5ca249db71ab
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.20.2-3+deb8u7.debian.tar.xz' perl_5.20.2-3+deb8u7.debian.tar.xz 150676 SHA256:645fd8fd5470f9b2570f75956e03afaee0b2f769cbc66f7fd71b98777e9e3798
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/perl/5.20.2-3+deb8u6/
-- https://sources.debian.net/src/perl/5.20.2-3+deb8u6/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/perl/5.20.2-3+deb8u7/
+- https://sources.debian.net/src/perl/5.20.2-3+deb8u7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `pixman=0.32.6-3`
 
