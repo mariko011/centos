@@ -1689,20 +1689,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl=1.1.0e-2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e-2.dsc' openssl_1.1.0e-2.dsc 2583 SHA256:15807d33dd7722ad3ba1c445cc40b158a5a62ba68e21131987317d89463335a9
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e.orig.tar.gz' openssl_1.1.0e.orig.tar.gz 5202247 SHA256:57be8618979d80c910728cfc99369bf97b2a1abd8f366ab6ebdee8975ad3874c
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e.orig.tar.gz.asc' openssl_1.1.0e.orig.tar.gz.asc 455 SHA256:05ab4b1019da59963890509ad9ff3142c72df0b3baf4a38043392aff99e6a13d
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0e-2.debian.tar.xz' openssl_1.1.0e-2.debian.tar.xz 52936 SHA256:b28b9564646334ae1936db884cad465318bfce689f8abca933504830d677322a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssl/1.1.0e-2/
-- https://sources.debian.net/src/openssl/1.1.0e-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `pam=1.1.8-3.5`
 
