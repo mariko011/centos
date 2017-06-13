@@ -1,7 +1,7 @@
 ## `ros:kinetic-perception`
 
 ```console
-$ docker pull ros@sha256:c14881a6cd284be7bf6341f300691e756889efb9e61e7844123e0f3b2c1c8393
+$ docker pull ros@sha256:472b397f68f7e0754587a83fbff33e28c2d8588da590e8cc05fbe1580d4cbd9e
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull ros@sha256:c14881a6cd284be7bf6341f300691e756889efb9e61e7844123e0f3
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **687.5 MB (687475549 bytes)**  
+-	Total Size: **688.9 MB (688879526 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4924320a5fe0158db5b85413d5e34dbd8ab04852d904f8d34872cfd6077f3ed3`
+-	Image ID: `sha256:d1af6aa015690ae5505ba70f19b6bcf67a16ae659b2e5079b1fcfbb516ada389`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
@@ -44,18 +44,18 @@ ENV LC_ALL=C.UTF-8
 RUN rosdep init     && rosdep update
 # Sat, 03 Jun 2017 01:57:24 GMT
 ENV ROS_DISTRO=kinetic
-# Sat, 03 Jun 2017 01:58:48 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.0-0*     && rm -rf /var/lib/apt/lists/*
-# Sat, 03 Jun 2017 01:58:49 GMT
+# Mon, 12 Jun 2017 23:35:11 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-core=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 12 Jun 2017 23:38:55 GMT
 COPY file:824303428ad16ae6296df253434e00a00126dc8404f740a8b885c9f61a2f5fcb in / 
-# Sat, 03 Jun 2017 01:58:50 GMT
+# Mon, 12 Jun 2017 23:38:55 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Sat, 03 Jun 2017 01:58:51 GMT
+# Mon, 12 Jun 2017 23:38:56 GMT
 CMD ["bash"]
-# Sat, 03 Jun 2017 02:01:57 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.0-0*     && rm -rf /var/lib/apt/lists/*
-# Sat, 03 Jun 2017 02:07:32 GMT
-RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.0-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 12 Jun 2017 23:39:33 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
+# Mon, 12 Jun 2017 23:48:48 GMT
+RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.1-0*     && rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
@@ -95,19 +95,19 @@ RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.0-0*    
 		Last Modified: Sat, 03 Jun 2017 03:29:01 GMT  
 		Size: 715.4 KB (715368 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f407e2fe38a228d159e7dfeb6f48203e24808fdb679f4308a0bd80edce5c09c1`  
-		Last Modified: Sat, 03 Jun 2017 03:30:01 GMT  
-		Size: 193.1 MB (193061694 bytes)  
+	-	`sha256:a55e61abbe7991cc24cd46a02cb559efa420ee1ce31db61f672398c9bffb07e6`  
+		Last Modified: Tue, 13 Jun 2017 00:34:42 GMT  
+		Size: 193.1 MB (193063803 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b3cf91c7ed951049babac50718bd114f70d6532dc3e2572f8a2d290989181b4`  
-		Last Modified: Sat, 03 Jun 2017 03:29:01 GMT  
-		Size: 195.0 B  
+	-	`sha256:3bdd92756f16eb3510110528b90723e54cda51178720b4f0a4d30f65d7813484`  
+		Last Modified: Tue, 13 Jun 2017 00:33:55 GMT  
+		Size: 192.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1a217e85ac413babb1965c6a2697dd04c9c1c4e43d332c80d4a8266d4cbcaa88`  
-		Last Modified: Sat, 03 Jun 2017 03:30:35 GMT  
-		Size: 4.7 MB (4730843 bytes)  
+	-	`sha256:a75e7cd84889b3c8949041d66640b2ae65cb0010d3470208909030b432846155`  
+		Last Modified: Tue, 13 Jun 2017 00:38:26 GMT  
+		Size: 4.7 MB (4731093 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8dfd7919a0d5ae66776bb9cae0252ebc13fec1fcb84d9eb70cfdb3882c37c52d`  
-		Last Modified: Sat, 03 Jun 2017 03:34:29 GMT  
-		Size: 383.2 MB (383238629 bytes)  
+	-	`sha256:987bc640270ae5ebb8bc2f871eb6ae0cbf63fdc17cef8ef00253ba4ceaec20c0`  
+		Last Modified: Tue, 13 Jun 2017 00:42:27 GMT  
+		Size: 384.6 MB (384640250 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
