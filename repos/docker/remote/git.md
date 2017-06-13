@@ -1,7 +1,7 @@
 ## `docker:git`
 
 ```console
-$ docker pull docker@sha256:1f60f849f961673889b695080ba310195ab110565a177697d7eb2f9ceec94d7c
+$ docker pull docker@sha256:0895412bbea883af5bfecda50f1de631c3d8363a5b310ca77378c4e232fca4c8
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull docker@sha256:1f60f849f961673889b695080ba310195ab110565a177697d7eb
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.1 MB (42062898 bytes)**  
+-	Total Size: **42.1 MB (42063146 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:728466a9b1c14289c147960cd46303f715a23835c38c84e293a8dc124d80bc57`
+-	Image ID: `sha256:9ae651f2c55c844a39681443a218c05f677f7caee3e7a910a53487edbddb28e8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
@@ -30,13 +30,13 @@ ENV DOCKER_CHANNEL=edge
 ENV DOCKER_VERSION=17.05.0-ce
 # Thu, 08 Jun 2017 22:14:14 GMT
 RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		curl 		tar 	; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}-${dockerArch}.tgz"; then 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 			echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 			exit 1; 		fi; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		apk del .fetch-deps; 		dockerd -v; 	docker -v
-# Thu, 08 Jun 2017 22:14:32 GMT
-COPY file:a8b1446f032ff01ac092c29a0af328f0b9d47bbee72d1049499f2a9a89ee988a in /usr/local/bin/ 
-# Thu, 08 Jun 2017 22:14:32 GMT
+# Tue, 13 Jun 2017 21:41:49 GMT
+COPY file:0d94e1cd679f133aab807891a1b00b6aef1a9f1f884108e7a17ddf50ab88f1fb in /usr/local/bin/ 
+# Tue, 13 Jun 2017 21:41:50 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 08 Jun 2017 22:14:33 GMT
+# Tue, 13 Jun 2017 21:41:52 GMT
 CMD ["sh"]
-# Thu, 08 Jun 2017 22:16:43 GMT
+# Tue, 13 Jun 2017 21:47:05 GMT
 RUN apk add --no-cache 		git 		openssh-client
 ```
 
@@ -53,11 +53,11 @@ RUN apk add --no-cache 		git 		openssh-client
 		Last Modified: Thu, 08 Jun 2017 22:34:40 GMT  
 		Size: 28.8 MB (28753633 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:895645433ae13735c1f1e0f7ebd2a317987bd484a92bfe77d1fb1f54f9da2122`  
-		Last Modified: Thu, 08 Jun 2017 22:34:32 GMT  
-		Size: 491.0 B  
+	-	`sha256:37edb701d2ba43888dad544a9ee74bf59e20f92e75cb4dc8f12a92f497e1ca13`  
+		Last Modified: Tue, 13 Jun 2017 22:18:24 GMT  
+		Size: 731.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07ef002cc85f80fa2015f205a43bf2b3874d757b6ef735b852a791d3465b64ee`  
-		Last Modified: Thu, 08 Jun 2017 22:40:16 GMT  
-		Size: 11.0 MB (10990224 bytes)  
+	-	`sha256:37413d292d2d872cfc9a120a0eb83eeef100fe13eade57c5aad8a635c96d9c30`  
+		Last Modified: Tue, 13 Jun 2017 22:28:34 GMT  
+		Size: 11.0 MB (10990232 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
