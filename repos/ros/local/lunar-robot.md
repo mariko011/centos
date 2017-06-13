@@ -5213,14 +5213,8 @@ Licenses: (parsed from: `/usr/share/doc/libqt5concurrent5/copyright`, `/usr/shar
 - `public-domain`
 - `wintab`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris qtbase-opensource-src=5.5.1+dfsg-16ubuntu7.2
-'http://archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/qtbase-opensource-src_5.5.1+dfsg-16ubuntu7.2.dsc' qtbase-opensource-src_5.5.1+dfsg-16ubuntu7.2.dsc 5096 SHA256:b4d2dacf6b737dc1e360e6b86a1463e41ffe98b9b627dd17fd3f857c398a8b25
-'http://archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/qtbase-opensource-src_5.5.1+dfsg.orig.tar.xz' qtbase-opensource-src_5.5.1+dfsg.orig.tar.xz 47205972 SHA256:a090ba17b91531a2d95a2ae43bd226a36f254378fdc311e81273cdc1d1cedb43
-'http://archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/qtbase-opensource-src_5.5.1+dfsg-16ubuntu7.2.debian.tar.xz' qtbase-opensource-src_5.5.1+dfsg-16ubuntu7.2.debian.tar.xz 270492 SHA256:9b0ce65c2bfdc39af5bce39d50aad70138721ae33d1b1b1b525c1c28e401ea31
-```
 
 ### `dpkg` source package: `qtchooser=52-gae5eeef-2build1~gcc5.2`
 

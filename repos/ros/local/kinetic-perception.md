@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4924320a5fe0158db5b85413d5e34dbd8ab04852d904f8d34872cfd6077f3ed3`
-- Created: `2017-06-03T02:07:32.68015734Z`
-- Virtual Size: ~ 2.18 Gb  
+- Image ID: `sha256:d1af6aa015690ae5505ba70f19b6bcf67a16ae659b2e5079b1fcfbb516ada389`
+- Created: `2017-06-12T23:48:48.5682695Z`
+- Virtual Size: ~ 2.19 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -4774,19 +4774,25 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
 ```
 
-### `dpkg` source package: `linux=4.4.0-78.99`
+### `dpkg` source package: `linux=4.4.0-79.100`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-78.99`
+- `linux-libc-dev:amd64=4.4.0-79.100`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 - `redpine-signals`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.4.0-79.100
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-79.100.dsc' linux_4.4.0-79.100.dsc 9286 SHA256:6a64784273867d96e75b5ba9993307416c03813d9647b218b51b53e4a9328aab
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-79.100.diff.gz' linux_4.4.0-79.100.diff.gz 12850945 SHA256:ddececff798241b48a19a29c846e406ec13b4298aca55def40ca1cd541bfdf72
+```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
 
@@ -5737,9 +5743,6 @@ $ apt-get source -qq --print-uris openni=1.5.4.0-14
 
 Binary Packages:
 
-- `libssl-dev:amd64=1.0.2g-1ubuntu4.6`
-- `libssl-doc=1.0.2g-1ubuntu4.6`
-- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.6`
 - `openssl=1.0.2g-1ubuntu4.6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
@@ -5753,6 +5756,27 @@ $ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.6
 'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.6.dsc' openssl_1.0.2g-1ubuntu4.6.dsc 2435 SHA256:dbe9f7b006f6d07bd26424e7473c25116e7deb04e809c4eb38415450070ba205
 'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
 'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.6.debian.tar.xz' openssl_1.0.2g-1ubuntu4.6.debian.tar.xz 109604 SHA256:748caddf106c740849909c87406b8b2a675c5746dc8db3c192000042ad314bfd
+```
+
+### `dpkg` source package: `openssl=1.0.2g-1ubuntu4.8`
+
+Binary Packages:
+
+- `libssl-dev:amd64=1.0.2g-1ubuntu4.8`
+- `libssl-doc=1.0.2g-1ubuntu4.8`
+- `libssl1.0.0:amd64=1.0.2g-1ubuntu4.8`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
+  If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu4.8
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.8.dsc' openssl_1.0.2g-1ubuntu4.8.dsc 2417 SHA256:0e9c70b6024afc9e8efd065cd174f382f91d615aca0180f0050a4e5a0bccee99
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu4.8.debian.tar.xz' openssl_1.0.2g-1ubuntu4.8.debian.tar.xz 110888 SHA256:fcce13675596c269c3b9094fcf62b817e71b95681c22b38c9bb38b254e7b8818
 ```
 
 ### `dpkg` source package: `opus=1.1.2-1ubuntu1`
@@ -7101,26 +7125,26 @@ $ apt-get source -qq --print-uris qt4-x11=4:4.8.7+dfsg-5ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/q/qt4-x11/qt4-x11_4.8.7+dfsg-5ubuntu2.debian.tar.xz' qt4-x11_4.8.7+dfsg-5ubuntu2.debian.tar.xz 369852 SHA256:67f1d62288bfb8e40647fe2663312105aa201ad9a48314587d2806375850ef53
 ```
 
-### `dpkg` source package: `qtbase-opensource-src=5.5.1+dfsg-16ubuntu7.2`
+### `dpkg` source package: `qtbase-opensource-src=5.5.1+dfsg-16ubuntu7.5`
 
 Binary Packages:
 
-- `libqt5concurrent5:amd64=5.5.1+dfsg-16ubuntu7.2`
-- `libqt5core5a:amd64=5.5.1+dfsg-16ubuntu7.2`
-- `libqt5dbus5:amd64=5.5.1+dfsg-16ubuntu7.2`
-- `libqt5gui5:amd64=5.5.1+dfsg-16ubuntu7.2`
-- `libqt5network5:amd64=5.5.1+dfsg-16ubuntu7.2`
-- `libqt5opengl5:amd64=5.5.1+dfsg-16ubuntu7.2`
-- `libqt5opengl5-dev:amd64=5.5.1+dfsg-16ubuntu7.2`
-- `libqt5printsupport5:amd64=5.5.1+dfsg-16ubuntu7.2`
-- `libqt5sql5:amd64=5.5.1+dfsg-16ubuntu7.2`
-- `libqt5sql5-sqlite:amd64=5.5.1+dfsg-16ubuntu7.2`
-- `libqt5test5:amd64=5.5.1+dfsg-16ubuntu7.2`
-- `libqt5widgets5:amd64=5.5.1+dfsg-16ubuntu7.2`
-- `libqt5xml5:amd64=5.5.1+dfsg-16ubuntu7.2`
-- `qt5-qmake:amd64=5.5.1+dfsg-16ubuntu7.2`
-- `qtbase5-dev:amd64=5.5.1+dfsg-16ubuntu7.2`
-- `qtbase5-dev-tools=5.5.1+dfsg-16ubuntu7.2`
+- `libqt5concurrent5:amd64=5.5.1+dfsg-16ubuntu7.5`
+- `libqt5core5a:amd64=5.5.1+dfsg-16ubuntu7.5`
+- `libqt5dbus5:amd64=5.5.1+dfsg-16ubuntu7.5`
+- `libqt5gui5:amd64=5.5.1+dfsg-16ubuntu7.5`
+- `libqt5network5:amd64=5.5.1+dfsg-16ubuntu7.5`
+- `libqt5opengl5:amd64=5.5.1+dfsg-16ubuntu7.5`
+- `libqt5opengl5-dev:amd64=5.5.1+dfsg-16ubuntu7.5`
+- `libqt5printsupport5:amd64=5.5.1+dfsg-16ubuntu7.5`
+- `libqt5sql5:amd64=5.5.1+dfsg-16ubuntu7.5`
+- `libqt5sql5-sqlite:amd64=5.5.1+dfsg-16ubuntu7.5`
+- `libqt5test5:amd64=5.5.1+dfsg-16ubuntu7.5`
+- `libqt5widgets5:amd64=5.5.1+dfsg-16ubuntu7.5`
+- `libqt5xml5:amd64=5.5.1+dfsg-16ubuntu7.5`
+- `qt5-qmake:amd64=5.5.1+dfsg-16ubuntu7.5`
+- `qtbase5-dev:amd64=5.5.1+dfsg-16ubuntu7.5`
+- `qtbase5-dev-tools=5.5.1+dfsg-16ubuntu7.5`
 
 Licenses: (parsed from: `/usr/share/doc/libqt5concurrent5/copyright`, `/usr/share/doc/libqt5core5a/copyright`, `/usr/share/doc/libqt5dbus5/copyright`, `/usr/share/doc/libqt5gui5/copyright`, `/usr/share/doc/libqt5network5/copyright`, `/usr/share/doc/libqt5opengl5/copyright`, `/usr/share/doc/libqt5opengl5-dev/copyright`, `/usr/share/doc/libqt5printsupport5/copyright`, `/usr/share/doc/libqt5sql5/copyright`, `/usr/share/doc/libqt5sql5-sqlite/copyright`, `/usr/share/doc/libqt5test5/copyright`, `/usr/share/doc/libqt5widgets5/copyright`, `/usr/share/doc/libqt5xml5/copyright`, `/usr/share/doc/qt5-qmake/copyright`, `/usr/share/doc/qtbase5-dev/copyright`, `/usr/share/doc/qtbase5-dev-tools/copyright`)
 
@@ -7154,10 +7178,10 @@ Licenses: (parsed from: `/usr/share/doc/libqt5concurrent5/copyright`, `/usr/shar
 Source:
 
 ```console
-$ apt-get source -qq --print-uris qtbase-opensource-src=5.5.1+dfsg-16ubuntu7.2
-'http://archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/qtbase-opensource-src_5.5.1+dfsg-16ubuntu7.2.dsc' qtbase-opensource-src_5.5.1+dfsg-16ubuntu7.2.dsc 5096 SHA256:b4d2dacf6b737dc1e360e6b86a1463e41ffe98b9b627dd17fd3f857c398a8b25
+$ apt-get source -qq --print-uris qtbase-opensource-src=5.5.1+dfsg-16ubuntu7.5
+'http://archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/qtbase-opensource-src_5.5.1+dfsg-16ubuntu7.5.dsc' qtbase-opensource-src_5.5.1+dfsg-16ubuntu7.5.dsc 5092 SHA256:ee74b9418b14e996fd10849bcd3694d287036a550ab69455e2689a22a872f3a6
 'http://archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/qtbase-opensource-src_5.5.1+dfsg.orig.tar.xz' qtbase-opensource-src_5.5.1+dfsg.orig.tar.xz 47205972 SHA256:a090ba17b91531a2d95a2ae43bd226a36f254378fdc311e81273cdc1d1cedb43
-'http://archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/qtbase-opensource-src_5.5.1+dfsg-16ubuntu7.2.debian.tar.xz' qtbase-opensource-src_5.5.1+dfsg-16ubuntu7.2.debian.tar.xz 270492 SHA256:9b0ce65c2bfdc39af5bce39d50aad70138721ae33d1b1b1b525c1c28e401ea31
+'http://archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/qtbase-opensource-src_5.5.1+dfsg-16ubuntu7.5.debian.tar.xz' qtbase-opensource-src_5.5.1+dfsg-16ubuntu7.5.debian.tar.xz 273792 SHA256:7020eb09218845bd2f650891c40792b3bea3909de4ba627948c4d8c5749700a9
 ```
 
 ### `dpkg` source package: `qtchooser=52-gae5eeef-2build1~gcc5.2`
@@ -7454,11 +7478,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-camera-calibration=1.12.20-0xenial-20170430-114900-0800`
+### `dpkg` source package: `ros-kinetic-camera-calibration=1.12.20-0xenial-20170607-113037-0800`
 
 Binary Packages:
 
-- `ros-kinetic-camera-calibration=1.12.20-0xenial-20170430-114900-0800`
+- `ros-kinetic-camera-calibration=1.12.20-0xenial-20170607-113037-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7532,11 +7556,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-compressed-depth-image-transport=1.9.5-0xenial-20170407-081336-0800`
+### `dpkg` source package: `ros-kinetic-compressed-depth-image-transport=1.9.5-0xenial-20170607-113313-0800`
 
 Binary Packages:
 
-- `ros-kinetic-compressed-depth-image-transport=1.9.5-0xenial-20170407-081336-0800`
+- `ros-kinetic-compressed-depth-image-transport=1.9.5-0xenial-20170607-113313-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7545,11 +7569,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-compressed-image-transport=1.9.5-0xenial-20170407-081347-0800`
+### `dpkg` source package: `ros-kinetic-compressed-image-transport=1.9.5-0xenial-20170607-113313-0800`
 
 Binary Packages:
 
-- `ros-kinetic-compressed-image-transport=1.9.5-0xenial-20170407-081347-0800`
+- `ros-kinetic-compressed-image-transport=1.9.5-0xenial-20170607-113313-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7571,11 +7595,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-cv-bridge=1.12.4-0xenial-20170315-022155-0700`
+### `dpkg` source package: `ros-kinetic-cv-bridge=1.12.4-0xenial-20170607-111714-0800`
 
 Binary Packages:
 
-- `ros-kinetic-cv-bridge=1.12.4-0xenial-20170315-022155-0700`
+- `ros-kinetic-cv-bridge=1.12.4-0xenial-20170607-111714-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7584,11 +7608,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-depth-image-proc=1.12.20-0xenial-20170430-114901-0800`
+### `dpkg` source package: `ros-kinetic-depth-image-proc=1.12.20-0xenial-20170607-113327-0800`
 
 Binary Packages:
 
-- `ros-kinetic-depth-image-proc=1.12.20-0xenial-20170430-114901-0800`
+- `ros-kinetic-depth-image-proc=1.12.20-0xenial-20170607-113327-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7753,11 +7777,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-image-geometry=1.12.4-0xenial-20170315-022503-0700`
+### `dpkg` source package: `ros-kinetic-image-geometry=1.12.4-0xenial-20170607-111752-0800`
 
 Binary Packages:
 
-- `ros-kinetic-image-geometry=1.12.4-0xenial-20170315-022503-0700`
+- `ros-kinetic-image-geometry=1.12.4-0xenial-20170607-111752-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7766,11 +7790,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-image-pipeline=1.12.20-0xenial-20170430-121440-0800`
+### `dpkg` source package: `ros-kinetic-image-pipeline=1.12.20-0xenial-20170607-120627-0800`
 
 Binary Packages:
 
-- `ros-kinetic-image-pipeline=1.12.20-0xenial-20170430-121440-0800`
+- `ros-kinetic-image-pipeline=1.12.20-0xenial-20170607-120627-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7779,11 +7803,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-image-proc=1.12.20-0xenial-20170430-115629-0800`
+### `dpkg` source package: `ros-kinetic-image-proc=1.12.20-0xenial-20170607-113259-0800`
 
 Binary Packages:
 
-- `ros-kinetic-image-proc=1.12.20-0xenial-20170430-115629-0800`
+- `ros-kinetic-image-proc=1.12.20-0xenial-20170607-113259-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7792,11 +7816,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-image-publisher=1.12.20-0xenial-20170430-115758-0800`
+### `dpkg` source package: `ros-kinetic-image-publisher=1.12.20-0xenial-20170607-113228-0800`
 
 Binary Packages:
 
-- `ros-kinetic-image-publisher=1.12.20-0xenial-20170430-115758-0800`
+- `ros-kinetic-image-publisher=1.12.20-0xenial-20170607-113228-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7805,11 +7829,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-image-rotate=1.12.20-0xenial-20170430-115421-0800`
+### `dpkg` source package: `ros-kinetic-image-rotate=1.12.20-0xenial-20170607-113701-0800`
 
 Binary Packages:
 
-- `ros-kinetic-image-rotate=1.12.20-0xenial-20170430-115421-0800`
+- `ros-kinetic-image-rotate=1.12.20-0xenial-20170607-113701-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7818,11 +7842,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-image-transport-plugins=1.9.5-0xenial-20170407-090048-0800`
+### `dpkg` source package: `ros-kinetic-image-transport-plugins=1.9.5-0xenial-20170607-122625-0800`
 
 Binary Packages:
 
-- `ros-kinetic-image-transport-plugins=1.9.5-0xenial-20170407-090048-0800`
+- `ros-kinetic-image-transport-plugins=1.9.5-0xenial-20170607-122625-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -7844,11 +7868,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-image-view=1.12.20-0xenial-20170430-115908-0800`
+### `dpkg` source package: `ros-kinetic-image-view=1.12.20-0xenial-20170607-113252-0800`
 
 Binary Packages:
 
-- `ros-kinetic-image-view=1.12.20-0xenial-20170430-115908-0800`
+- `ros-kinetic-image-view=1.12.20-0xenial-20170607-113252-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8013,11 +8037,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-opencv3=3.2.0-4xenial-20170315-013656-0700`
+### `dpkg` source package: `ros-kinetic-opencv3=3.2.0-4xenial-20170607-095735-0800`
 
 Binary Packages:
 
-- `ros-kinetic-opencv3=3.2.0-4xenial-20170315-013656-0700`
+- `ros-kinetic-opencv3=3.2.0-4xenial-20170607-095735-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8091,11 +8115,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-perception=1.3.0-0xenial-20170430-130005-0800`
+### `dpkg` source package: `ros-kinetic-perception=1.3.1-0xenial-20170607-123112-0800`
 
 Binary Packages:
 
-- `ros-kinetic-perception=1.3.0-0xenial-20170430-130005-0800`
+- `ros-kinetic-perception=1.3.1-0xenial-20170607-123112-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8143,11 +8167,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-ros-base=1.3.0-0xenial-20170407-085909-0800`
+### `dpkg` source package: `ros-kinetic-ros-base=1.3.1-0xenial-20170508-132056-0800`
 
 Binary Packages:
 
-- `ros-kinetic-ros-base=1.3.0-0xenial-20170407-085909-0800`
+- `ros-kinetic-ros-base=1.3.1-0xenial-20170508-132056-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8169,11 +8193,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-ros-core=1.3.0-0xenial-20170308-210730-0800`
+### `dpkg` source package: `ros-kinetic-ros-core=1.3.1-0xenial-20170508-131441-0800`
 
 Binary Packages:
 
-- `ros-kinetic-ros-core=1.3.0-0xenial-20170308-210730-0800`
+- `ros-kinetic-ros-core=1.3.1-0xenial-20170508-131441-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8715,11 +8739,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-stereo-image-proc=1.12.20-0xenial-20170430-120600-0800`
+### `dpkg` source package: `ros-kinetic-stereo-image-proc=1.12.20-0xenial-20170607-114152-0800`
 
 Binary Packages:
 
-- `ros-kinetic-stereo-image-proc=1.12.20-0xenial-20170430-120600-0800`
+- `ros-kinetic-stereo-image-proc=1.12.20-0xenial-20170607-114152-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8832,11 +8856,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-theora-image-transport=1.9.5-0xenial-20170407-081642-0800`
+### `dpkg` source package: `ros-kinetic-theora-image-transport=1.9.5-0xenial-20170607-114734-0800`
 
 Binary Packages:
 
-- `ros-kinetic-theora-image-transport=1.9.5-0xenial-20170407-081642-0800`
+- `ros-kinetic-theora-image-transport=1.9.5-0xenial-20170607-114734-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -8871,11 +8895,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-vision-opencv=1.12.4-0xenial-20170315-031847-0700`
+### `dpkg` source package: `ros-kinetic-vision-opencv=1.12.4-0xenial-20170607-114821-0800`
 
 Binary Packages:
 
-- `ros-kinetic-vision-opencv=1.12.4-0xenial-20170315-031847-0700`
+- `ros-kinetic-vision-opencv=1.12.4-0xenial-20170607-114821-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.

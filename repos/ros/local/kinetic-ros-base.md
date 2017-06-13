@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4a4aa6a727271bf90ec91f4ad40017dc757f0be355663ac2a8ffcceefd5b562e`
-- Created: `2017-06-03T02:01:57.101594743Z`
+- Image ID: `sha256:004b3a2be0194259aaff75fbe2e93144e635238e62b2cdf9cb3925d0ea022fd1`
+- Created: `2017-06-12T23:39:33.7915541Z`
 - Virtual Size: ~ 945.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2059,19 +2059,25 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
 ```
 
-### `dpkg` source package: `linux=4.4.0-78.99`
+### `dpkg` source package: `linux=4.4.0-79.100`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-78.99`
+- `linux-libc-dev:amd64=4.4.0-79.100`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 - `redpine-signals`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.4.0-79.100
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-79.100.dsc' linux_4.4.0-79.100.dsc 9286 SHA256:6a64784273867d96e75b5ba9993307416c03813d9647b218b51b53e4a9328aab
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-79.100.diff.gz' linux_4.4.0-79.100.diff.gz 12850945 SHA256:ddececff798241b48a19a29c846e406ec13b4298aca55def40ca1cd541bfdf72
+```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
 
@@ -3724,11 +3730,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-ros-base=1.3.0-0xenial-20170407-085909-0800`
+### `dpkg` source package: `ros-kinetic-ros-base=1.3.1-0xenial-20170508-132056-0800`
 
 Binary Packages:
 
-- `ros-kinetic-ros-base=1.3.0-0xenial-20170407-085909-0800`
+- `ros-kinetic-ros-base=1.3.1-0xenial-20170508-132056-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3750,11 +3756,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `ros-kinetic-ros-core=1.3.0-0xenial-20170308-210730-0800`
+### `dpkg` source package: `ros-kinetic-ros-core=1.3.1-0xenial-20170508-131441-0800`
 
 Binary Packages:
 
-- `ros-kinetic-ros-core=1.3.0-0xenial-20170308-210730-0800`
+- `ros-kinetic-ros-core=1.3.1-0xenial-20170508-131441-0800`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
