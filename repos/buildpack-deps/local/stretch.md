@@ -3818,19 +3818,8 @@ Licenses: (parsed from: `/usr/share/doc/libmariadbclient-dev/copyright`, `/usr/s
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mariadb-10.1=10.1.23-8
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.23-8.dsc' mariadb-10.1_10.1.23-8.dsc 4384 SHA256:0aba04a220ece7663880d2690da94f4411e04131e1e4dddc4c62d339c3737af6
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.23.orig.tar.gz' mariadb-10.1_10.1.23.orig.tar.gz 61772244 SHA256:54d8114e24bfa5e3ebdc7d69e071ad1471912847ea481b227d204f9d644300bf
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.23-8.debian.tar.xz' mariadb-10.1_10.1.23-8.debian.tar.xz 221588 SHA256:f2aa60d5bee1360e7094699c95e6b3c617f17c124043b40317a8d49f7dc4dd2e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mariadb-10.1/10.1.23-8/
-- https://sources.debian.net/src/mariadb-10.1/10.1.23-8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
@@ -4940,20 +4929,8 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.16.2-4
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2-4.dsc' sqlite3_3.16.2-4.dsc 2510 SHA256:843853f35458e17e2630b42e1ecb7e01e5d583d57e887aff08498c9f0a509bc3
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2.orig-www.tar.xz' sqlite3_3.16.2.orig-www.tar.xz 3383968 SHA256:d5dd3de405c55c63c9f99fbfcf3defc91a54a81b5656c510cd46544aaed134fa
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2.orig.tar.xz' sqlite3_3.16.2.orig.tar.xz 5634120 SHA256:bf7b1e8ea7577253b7f8a8287d111d542d1792cf1768edc66541ac851ff92453
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.16.2-4.debian.tar.xz' sqlite3_3.16.2-4.debian.tar.xz 20952 SHA256:7e65037e9da3f14c786315f4777dce266f23c31524c26fecb05f8533bb659dd5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sqlite3/3.16.2-4/
-- https://sources.debian.net/src/sqlite3/3.16.2-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `subversion=1.9.5-1`
 
