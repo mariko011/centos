@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3f301e11defc364b95e30a89ea65c9f875689f713ce6ff1753d63952f91f2dc1`
-- Created: `2017-06-06T23:48:57.323883168Z`
-- Virtual Size: ~ 388.21 Mb  
+- Image ID: `sha256:013af47c523a9658a37e718ec21aaf6f3ea51c94792951dee26ba0c96783e067`
+- Created: `2017-06-09T21:13:00.707927495Z`
+- Virtual Size: ~ 383.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=19.3.5`
+  - `OTP_VERSION=19.3.6`
   - `ELIXIR_VERSION=v1.4.4`
   - `LANG=C.UTF-8`
 
@@ -2921,12 +2921,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/sensible-utils/0.0.9/
 - https://sources.debian.net/src/sensible-utils/0.0.9/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `shadow=1:4.2-3+deb8u3`
+### `dpkg` source package: `shadow=1:4.2-3+deb8u4`
 
 Binary Packages:
 
-- `login=1:4.2-3+deb8u3`
-- `passwd=1:4.2-3+deb8u3`
+- `login=1:4.2-3+deb8u4`
+- `passwd=1:4.2-3+deb8u4`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
@@ -2935,16 +2935,16 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 Source:
 
 ```console
-$ apt-get source -qq --print-uris shadow=1:4.2-3+deb8u3
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3+deb8u3.dsc' shadow_4.2-3+deb8u3.dsc 2492 SHA256:95e6fd479bc7721f71b2e3cbfe65776f021d1338cc4906ad880e5383129a096a
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3+deb8u3.debian.tar.xz' shadow_4.2-3+deb8u3.debian.tar.xz 498396 SHA256:2d4b93667a1f09433725e457c74b6215d31386e2e42bd192c26d34d3592444be
+$ apt-get source -qq --print-uris shadow=1:4.2-3+deb8u4
+'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.2-3+deb8u4.dsc' shadow_4.2-3+deb8u4.dsc 2492 SHA256:5f5c2c412e567a6f7b49141f11927202b52a8941befec39f6841b3e20a0ccea4
+'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
+'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.2-3+deb8u4.debian.tar.xz' shadow_4.2-3+deb8u4.debian.tar.xz 498804 SHA256:b694aea58176f3a2703cd6461401951e52d78ad80626c39a04c0b88368957106
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/shadow/1:4.2-3+deb8u3/
-- https://sources.debian.net/src/shadow/1:4.2-3+deb8u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/shadow/1:4.2-3+deb8u4/
+- https://sources.debian.net/src/shadow/1:4.2-3+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `shared-mime-info=1.3-1`
 
