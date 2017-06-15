@@ -1,7 +1,7 @@
 ## `telegraf:latest`
 
 ```console
-$ docker pull telegraf@sha256:ada005b2e652e50a34338b006f8147095ac9d9f65429070f1e72862d006f3faf
+$ docker pull telegraf@sha256:8ee94f78aa9922bd937181d1ba7275494c1ad49da5adc4a9ec33f538b5a3765c
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull telegraf@sha256:ada005b2e652e50a34338b006f8147095ac9d9f65429070f1e
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.4 MB (83444325 bytes)**  
+-	Total Size: **83.4 MB (83445440 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd66ca8c5f5864eac119c161721df7364040e41689b5fa5725600a6c155c24e5`
+-	Image ID: `sha256:616f2c4c4d1e5e816374d6ec3fd86c037a0631e40d92bbf6e07c88d056b11c58`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
@@ -34,17 +34,17 @@ CMD ["/bin/bash"]
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
 # Sat, 03 Jun 2017 04:59:30 GMT
 RUN set -ex &&     for key in         05CE15085FC09D18E99EFB22684A14CF2582E0C5 ;     do         gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ||         gpg --keyserver pgp.mit.edu --recv-keys "$key" ||         gpg --keyserver keyserver.pgp.com --recv-keys "$key" ;     done
-# Sat, 03 Jun 2017 05:00:06 GMT
-ENV TELEGRAF_VERSION=1.3.1
-# Sat, 03 Jun 2017 05:00:10 GMT
+# Thu, 15 Jun 2017 16:38:00 GMT
+ENV TELEGRAF_VERSION=1.3.2
+# Thu, 15 Jun 2017 16:38:06 GMT
 RUN wget -q https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_amd64.deb.asc &&     wget -q https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_amd64.deb &&     gpg --batch --verify telegraf_${TELEGRAF_VERSION}-1_amd64.deb.asc telegraf_${TELEGRAF_VERSION}-1_amd64.deb &&     dpkg -i telegraf_${TELEGRAF_VERSION}-1_amd64.deb &&     rm -f telegraf_${TELEGRAF_VERSION}-1_amd64.deb*
-# Sat, 03 Jun 2017 05:00:11 GMT
+# Thu, 15 Jun 2017 16:38:07 GMT
 EXPOSE 8092/udp 8094/tcp 8125/udp
-# Sat, 03 Jun 2017 05:00:12 GMT
+# Thu, 15 Jun 2017 16:38:08 GMT
 COPY file:7211de01f296351833389a1a1879d450e2cb727d7e2910d5807937f99983edf7 in /entrypoint.sh 
-# Sat, 03 Jun 2017 05:00:13 GMT
+# Thu, 15 Jun 2017 16:38:09 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Sat, 03 Jun 2017 05:00:14 GMT
+# Thu, 15 Jun 2017 16:38:10 GMT
 CMD ["telegraf"]
 ```
 
@@ -77,11 +77,11 @@ CMD ["telegraf"]
 		Last Modified: Sat, 03 Jun 2017 05:00:40 GMT  
 		Size: 6.9 KB (6881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d41fc9c6b408bb335e7c78c70606c4804bec48745d2ac10edae0dc7d4d3f912`  
-		Last Modified: Sat, 03 Jun 2017 05:02:22 GMT  
-		Size: 11.5 MB (11547569 bytes)  
+	-	`sha256:d961b3a70af6576f786643f8d44a5c8efbb647a30c82f870889e6bc115bc9a0a`  
+		Last Modified: Thu, 15 Jun 2017 16:41:02 GMT  
+		Size: 11.5 MB (11548682 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84cfe5c2545194eaf0e4148081539a9ed739d1f0fd40962e68de73dfa47bfd2d`  
-		Last Modified: Sat, 03 Jun 2017 05:02:20 GMT  
-		Size: 184.0 B  
+	-	`sha256:b677cdf12625fefa2e67331c2ab8efa9c4cff27008b1a17703340aa3e3bd9c3e`  
+		Last Modified: Thu, 15 Jun 2017 16:40:59 GMT  
+		Size: 186.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
