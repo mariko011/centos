@@ -1,15 +1,15 @@
-# `docker:17.06.0-ce-rc2-dind`
+# `docker:17.06.0-ce-rc3-dind`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0a02de618eefa7e1f296fd066d2de416bd51e4dfc5a58163243b7949e17785cb`
-- Created: `2017-06-08T22:12:12.607243395Z`
-- Virtual Size: ~ 102.69 Mb  
+- Image ID: `sha256:781b9ef8a03bb8c04eb85a11c06f1810763b38eb29197072aca87790bc1ad25d`
+- Created: `2017-06-13T21:38:11.022774692Z`
+- Virtual Size: ~ 102.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_CHANNEL=test`
-  - `DOCKER_VERSION=17.06.0-ce-rc2`
+  - `DOCKER_VERSION=17.06.0-ce-rc3`
   - `DIND_COMMIT=3b5fac462d21ca164b3778647420016315289034`
