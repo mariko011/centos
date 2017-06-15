@@ -1333,14 +1333,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The main library is licensed under GNU Lesser`
 - `nonstandard, see below`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.4.10-4ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.2.dsc' gnutls28_3.4.10-4ubuntu1.2.dsc 3076 SHA256:78aa10c42a4705bc50022366ab062a2b6e6c34c33d4b894b8d1bf710a09d8a4f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10.orig.tar.xz' gnutls28_3.4.10.orig.tar.xz 6645892 SHA256:6a32c2b4acbd33ff7eefcbd1357009da04c94c60146ef61320b6c076b1bdf59f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.2.debian.tar.xz' gnutls28_3.4.10-4ubuntu1.2.debian.tar.xz 93956 SHA256:30e61f7582a6d994cfd8549ba4e550e8bc33c2b10597099830c46f2ae0a0fc77
-```
 
 ### `dpkg` source package: `graphite2=1.3.6-1ubuntu1`
 
@@ -4602,14 +4596,8 @@ Licenses: (parsed from: `/usr/share/doc/libqt5core5a/copyright`, `/usr/share/doc
 - `public-domain`
 - `wintab`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris qtbase-opensource-src=5.5.1+dfsg-16ubuntu7.2
-'http://archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/qtbase-opensource-src_5.5.1+dfsg-16ubuntu7.2.dsc' qtbase-opensource-src_5.5.1+dfsg-16ubuntu7.2.dsc 5096 SHA256:b4d2dacf6b737dc1e360e6b86a1463e41ffe98b9b627dd17fd3f857c398a8b25
-'http://archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/qtbase-opensource-src_5.5.1+dfsg.orig.tar.xz' qtbase-opensource-src_5.5.1+dfsg.orig.tar.xz 47205972 SHA256:a090ba17b91531a2d95a2ae43bd226a36f254378fdc311e81273cdc1d1cedb43
-'http://archive.ubuntu.com/ubuntu/pool/main/q/qtbase-opensource-src/qtbase-opensource-src_5.5.1+dfsg-16ubuntu7.2.debian.tar.xz' qtbase-opensource-src_5.5.1+dfsg-16ubuntu7.2.debian.tar.xz 270492 SHA256:9b0ce65c2bfdc39af5bce39d50aad70138721ae33d1b1b1b525c1c28e401ea31
-```
 
 ### `dpkg` source package: `qtsvg-opensource-src=5.5.1-2build1`
 
