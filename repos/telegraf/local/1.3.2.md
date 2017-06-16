@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bd66ca8c5f5864eac119c161721df7364040e41689b5fa5725600a6c155c24e5`
-- Created: `2017-06-03T05:00:14.039438171Z`
-- Virtual Size: ~ 239.46 Mb  
+- Image ID: `sha256:616f2c4c4d1e5e816374d6ec3fd86c037a0631e40d92bbf6e07c88d056b11c58`
+- Created: `2017-06-15T16:38:10.052938592Z`
+- Virtual Size: ~ 239.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["telegraf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `TELEGRAF_VERSION=1.3.1`
+  - `TELEGRAF_VERSION=1.3.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2534,11 +2534,11 @@ $ apt-get source -qq --print-uris tar=1.27.1-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.27.1-1ubuntu0.1.debian.tar.gz' tar_1.27.1-1ubuntu0.1.debian.tar.gz 22769 SHA256:e22697f2b43f792a61683d9af9ed78ea7dd2d3927a94573ab90d9ada21df25e2
 ```
 
-### `dpkg` source package: `telegraf=1.3.1-1`
+### `dpkg` source package: `telegraf=1.3.2-1`
 
 Binary Packages:
 
-- `telegraf=1.3.1-1`
+- `telegraf=1.3.2-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
