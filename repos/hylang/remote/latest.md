@@ -1,7 +1,7 @@
 ## `hylang:latest`
 
 ```console
-$ docker pull hylang@sha256:d3d239d7e5897d4e2ae5ecbc8f0c0d7405c4e7ea2f82af97fe50d8b036333483
+$ docker pull hylang@sha256:7fbddc393fd1247d354904e83da6c0945a67eff82c06b8970ed9820157c41b9c
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull hylang@sha256:d3d239d7e5897d4e2ae5ecbc8f0c0d7405c4e7ea2f82af97fe50
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **273.8 MB (273752482 bytes)**  
+-	Total Size: **273.8 MB (273757836 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84d002e1585e81f1969b70a2a1c151942a7c82082ee2c144088512b5c9f57ec4`
+-	Image ID: `sha256:1d2e3350aa09f58d14861fe173cfcec6e87f66a8f3e00b01a4873b3bedfcec15`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -49,11 +49,11 @@ RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		pyth
 CMD ["python3"]
 # Fri, 09 Jun 2017 17:12:59 GMT
 MAINTAINER Paul R. Tagliamonte <paultag@hylang.org>
-# Fri, 09 Jun 2017 17:13:01 GMT
-ADD dir:47df1a0ecf3cd0cbcb8600f64a3307efe2ea734aacc193cbff4c8b15467a5187 in /opt/hylang/hy 
-# Fri, 09 Jun 2017 17:13:09 GMT
+# Fri, 16 Jun 2017 22:09:19 GMT
+ADD dir:ec51bf7452a825d68eab435dfb0d446deccd3dfe3759e33b2c383c56f59db9a7 in /opt/hylang/hy 
+# Fri, 16 Jun 2017 22:09:28 GMT
 RUN pip3 install -e /opt/hylang/hy
-# Fri, 09 Jun 2017 17:13:10 GMT
+# Fri, 16 Jun 2017 22:09:29 GMT
 CMD ["hy"]
 ```
 
@@ -90,11 +90,11 @@ CMD ["hy"]
 		Last Modified: Thu, 08 Jun 2017 22:15:46 GMT  
 		Size: 1.7 MB (1658917 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a1dcea57b85d4390c6830b6237280d13629c619a63d2eca5740623e3da4025a3`  
-		Last Modified: Fri, 09 Jun 2017 17:13:38 GMT  
-		Size: 380.6 KB (380571 bytes)  
+	-	`sha256:c9fef6345bacfabb312ad667dc6b31745014b655e34ec9f035f325e88dcd2449`  
+		Last Modified: Fri, 16 Jun 2017 22:09:57 GMT  
+		Size: 385.4 KB (385434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac96b18e1ff307769210746decee0852511a9238a06e9451d6b0e8fc15ffaa7d`  
-		Last Modified: Fri, 09 Jun 2017 17:13:38 GMT  
-		Size: 2.5 MB (2458930 bytes)  
+	-	`sha256:191cfb9e9a89528774471ca3bbb6d0f710ac4d7d3b86ed3d5af2cbfac4020035`  
+		Last Modified: Fri, 16 Jun 2017 22:09:56 GMT  
+		Size: 2.5 MB (2459421 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
