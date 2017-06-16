@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:73e5417fdfd05f310851897b377fa7694bcfc95e43510677913af66b3e7ff2c7`
-- Created: `2017-06-03T00:06:48.975087341Z`
+- Image ID: `sha256:f8a3826b73baf1f62fe2100bbddcaaea7743e91dad0e44b4218022417493ff93`
+- Created: `2017-06-14T18:30:49.1354484Z`
 - Virtual Size: ~ 113.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -528,14 +528,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.3-5ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.3-5ubuntu1.1.dsc' gnutls28_3.5.3-5ubuntu1.1.dsc 2983 SHA256:9c757f13f0cfc51de29fb9d54d1de2b08439412ce6fbf3c172592d51f8e2eee4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.3.orig.tar.xz' gnutls28_3.5.3.orig.tar.xz 6895068 SHA256:92c4bc999a10a1b95299ebefaeea8333f19d8a98d957a35b5eae74881bdb1fef
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.3-5ubuntu1.1.debian.tar.xz' gnutls28_3.5.3-5ubuntu1.1.debian.tar.xz 108036 SHA256:2a190ba47d7ba8ff9a217b6de226bd80813d2fcfa7598b64848729e7aa5633d1
-```
 
 ### `dpkg` source package: `grep=2.25-6`
 
