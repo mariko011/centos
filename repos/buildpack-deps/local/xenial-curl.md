@@ -629,14 +629,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The main library is licensed under GNU Lesser`
 - `nonstandard, see below`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.4.10-4ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.2.dsc' gnutls28_3.4.10-4ubuntu1.2.dsc 3076 SHA256:78aa10c42a4705bc50022366ab062a2b6e6c34c33d4b894b8d1bf710a09d8a4f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10.orig.tar.xz' gnutls28_3.4.10.orig.tar.xz 6645892 SHA256:6a32c2b4acbd33ff7eefcbd1357009da04c94c60146ef61320b6c076b1bdf59f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.2.debian.tar.xz' gnutls28_3.4.10-4ubuntu1.2.debian.tar.xz 93956 SHA256:30e61f7582a6d994cfd8549ba4e550e8bc33c2b10597099830c46f2ae0a0fc77
-```
 
 ### `dpkg` source package: `grep=2.25-1~16.04.1`
 

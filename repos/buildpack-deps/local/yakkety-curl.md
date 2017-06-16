@@ -572,14 +572,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.3-5ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.3-5ubuntu1.1.dsc' gnutls28_3.5.3-5ubuntu1.1.dsc 2983 SHA256:9c757f13f0cfc51de29fb9d54d1de2b08439412ce6fbf3c172592d51f8e2eee4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.3.orig.tar.xz' gnutls28_3.5.3.orig.tar.xz 6895068 SHA256:92c4bc999a10a1b95299ebefaeea8333f19d8a98d957a35b5eae74881bdb1fef
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.3-5ubuntu1.1.debian.tar.xz' gnutls28_3.5.3-5ubuntu1.1.debian.tar.xz 108036 SHA256:2a190ba47d7ba8ff9a217b6de226bd80813d2fcfa7598b64848729e7aa5633d1
-```
 
 ### `dpkg` source package: `grep=2.25-6`
 
