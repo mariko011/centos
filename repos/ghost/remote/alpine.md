@@ -1,7 +1,7 @@
 ## `ghost:alpine`
 
 ```console
-$ docker pull ghost@sha256:7428842f28f932cbafb2c340b2b0734e2830faa38572d99c54f4cca0b053fe7b
+$ docker pull ghost@sha256:af3b02ae12592ff88bbdc5b1932d0c1347aa73753251a28098f3834d322903e0
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull ghost@sha256:7428842f28f932cbafb2c340b2b0734e2830faa38572d99c54f4c
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **43.1 MB (43136724 bytes)**  
+-	Total Size: **41.1 MB (41101832 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9664072c12ece6d1bda056e17e9ae02858f936e282728171750b663e9bd8bdd5`
+-	Image ID: `sha256:a765b1b27e0bff13ee27e0a8653d5b5baa5294b2487df971871deab4cce16e5e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["npm","start"]`
 
@@ -42,23 +42,23 @@ RUN apk add --no-cache 		bash 		tar
 ENV GHOST_SOURCE=/usr/src/ghost
 # Wed, 31 May 2017 21:09:58 GMT
 WORKDIR /usr/src/ghost
-# Wed, 31 May 2017 21:09:59 GMT
-ENV GHOST_VERSION=0.11.9
-# Wed, 31 May 2017 21:11:13 GMT
+# Fri, 16 Jun 2017 23:03:37 GMT
+ENV GHOST_VERSION=0.11.10
+# Fri, 16 Jun 2017 23:04:33 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		ca-certificates 		gcc 		make 		openssl 		python 		unzip 	; 		wget -O ghost.zip "https://github.com/TryGhost/Ghost/releases/download/${GHOST_VERSION}/Ghost-${GHOST_VERSION}.zip"; 	unzip ghost.zip; 		npm install --production; 		apk del .build-deps; 		rm ghost.zip; 	npm cache clean; 	rm -rf /tmp/npm*
-# Wed, 31 May 2017 21:11:18 GMT
+# Fri, 16 Jun 2017 23:28:17 GMT
 ENV GHOST_CONTENT=/var/lib/ghost
-# Wed, 31 May 2017 21:11:20 GMT
+# Fri, 16 Jun 2017 23:28:18 GMT
 RUN mkdir -p "$GHOST_CONTENT" 	&& chown -R node:node "$GHOST_CONTENT" 	&& ln -s "$GHOST_CONTENT/config.js" "$GHOST_SOURCE/config.js"
-# Wed, 31 May 2017 21:11:21 GMT
+# Fri, 16 Jun 2017 23:28:19 GMT
 VOLUME [/var/lib/ghost]
-# Wed, 31 May 2017 21:11:42 GMT
+# Fri, 16 Jun 2017 23:28:21 GMT
 COPY file:2cb0a64ef22301242537372657c5d88304b43153f351a7f2d0d61e05c3dfb29a in /usr/local/bin/ 
-# Wed, 31 May 2017 21:11:43 GMT
+# Fri, 16 Jun 2017 23:28:21 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 31 May 2017 21:11:44 GMT
+# Fri, 16 Jun 2017 23:28:22 GMT
 EXPOSE 2368/tcp
-# Wed, 31 May 2017 21:11:45 GMT
+# Fri, 16 Jun 2017 23:28:23 GMT
 CMD ["npm" "start"]
 ```
 
@@ -87,15 +87,15 @@ CMD ["npm" "start"]
 		Last Modified: Wed, 31 May 2017 21:15:17 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:74888c575d647b6457fc9b1025479fec997f9b89ad61303e56ea85848f498297`  
-		Last Modified: Wed, 31 May 2017 21:15:25 GMT  
-		Size: 27.8 MB (27807435 bytes)  
+	-	`sha256:1c77748e7adc8926cdd5b36942e27799b6aedb59162023be6514dd94b43f95ad`  
+		Last Modified: Sat, 17 Jun 2017 01:12:45 GMT  
+		Size: 25.8 MB (25772542 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a681dab2364377d6f0ffed94c3fd4e92a4a360bcbdd8ffade4d33e469d7f2f3`  
-		Last Modified: Wed, 31 May 2017 21:15:17 GMT  
+	-	`sha256:89ddfec3b79d7346eed62e9f170f2bceba3df6df209c811cd7ffd69268d5601c`  
+		Last Modified: Sat, 17 Jun 2017 01:12:25 GMT  
 		Size: 210.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef98bbdb292a621ddb2c2906fdb219e2062ad7db8b65e76573fdf2690ab3eec8`  
-		Last Modified: Wed, 31 May 2017 21:15:17 GMT  
-		Size: 600.0 B  
+	-	`sha256:b75dfa979340ecde2a635c1af91e7ab4c788c167f7f34190d3accf337447216a`  
+		Last Modified: Sat, 17 Jun 2017 01:12:25 GMT  
+		Size: 601.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
