@@ -286,18 +286,8 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20161130
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20161130.dsc' ca-certificates_20161130.dsc 1506 SHA256:bbba50a4391b33d8f5c8db97e4f077d861ff9f95cc6a3f45ca43fc5be6536617
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20161130.tar.xz' ca-certificates_20161130.tar.xz 298656 SHA256:04bca9e142a90a834aca0311f7ced237368d71fee7bd5c9f68ef7f4611aee471
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/ca-certificates/20161130/
-- https://sources.debian.net/src/ca-certificates/20161130/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cairo=1.14.8-1`
 
@@ -2714,15 +2704,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl1.0=1.0.2k-1
-'http://http.debian.net/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2k-1.dsc' openssl1.0_1.0.2k-1.dsc 2529 SHA256:d814c48e2fb24841dcba89a8107e62c42d9ecbf50f35dbf6456dc4dcf1628f9a
-'http://http.debian.net/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2k.orig.tar.gz' openssl1.0_1.0.2k.orig.tar.gz 5309236 SHA256:6b3977c61f2aedf0f96367dcfb5c6e578cf37e7b8d913b4ecb6643c3cb88d8c0
-'http://http.debian.net/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2k.orig.tar.gz.asc' openssl1.0_1.0.2k.orig.tar.gz.asc 455 SHA256:88ea1b7a34f5b7516d3b6d0d8ae55961979f7832c12ab42d033af0867033bc05
-'http://http.debian.net/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2k-1.debian.tar.xz' openssl1.0_1.0.2k-1.debian.tar.xz 75800 SHA256:667f5a187a0877131efbd98f2b693f93db6f4cba0658ed9d7f7f720b5724c424
-```
 
 ### `dpkg` source package: `openssl=1.1.0e-1`
 
