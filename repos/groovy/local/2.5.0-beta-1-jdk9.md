@@ -2282,19 +2282,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nspr=2:4.12-6
-'http://deb.debian.org/debian/pool/main/n/nspr/nspr_4.12-6.dsc' nspr_4.12-6.dsc 2038 SHA256:c2b7b566e45ad153effa12b5e206bc213a215543aff01e29bc0f47c68162b160
-'http://deb.debian.org/debian/pool/main/n/nspr/nspr_4.12.orig.tar.gz' nspr_4.12.orig.tar.gz 1135458 SHA256:e0b10a1e569153668ff8bdea6c7e491b389fab69c2f18285a1ebf7c2ea4269de
-'http://deb.debian.org/debian/pool/main/n/nspr/nspr_4.12-6.debian.tar.xz' nspr_4.12-6.debian.tar.xz 15756 SHA256:02840f8938d7f6d6bd35f60d78ec804ba6318f8f390359e8fa6bb19ccb1060f7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nspr/2:4.12-6/
-- https://sources.debian.net/src/nspr/2:4.12-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `nss=2:3.26.2-1`
 
@@ -2393,20 +2382,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssl1.0=1.0.2k-1
-'http://deb.debian.org/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2k-1.dsc' openssl1.0_1.0.2k-1.dsc 2529 SHA256:d814c48e2fb24841dcba89a8107e62c42d9ecbf50f35dbf6456dc4dcf1628f9a
-'http://deb.debian.org/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2k.orig.tar.gz' openssl1.0_1.0.2k.orig.tar.gz 5309236 SHA256:6b3977c61f2aedf0f96367dcfb5c6e578cf37e7b8d913b4ecb6643c3cb88d8c0
-'http://deb.debian.org/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2k.orig.tar.gz.asc' openssl1.0_1.0.2k.orig.tar.gz.asc 455 SHA256:88ea1b7a34f5b7516d3b6d0d8ae55961979f7832c12ab42d033af0867033bc05
-'http://deb.debian.org/debian/pool/main/o/openssl1.0/openssl1.0_1.0.2k-1.debian.tar.xz' openssl1.0_1.0.2k-1.debian.tar.xz 75800 SHA256:667f5a187a0877131efbd98f2b693f93db6f4cba0658ed9d7f7f720b5724c424
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssl1.0/1.0.2k-1/
-- https://sources.debian.net/src/openssl1.0/1.0.2k-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssl=1.1.0e-2`
 
