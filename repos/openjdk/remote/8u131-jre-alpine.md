@@ -1,7 +1,7 @@
 ## `openjdk:8u131-jre-alpine`
 
 ```console
-$ docker pull openjdk@sha256:89db80618cb5b6d9e91e311c9d53bc536e010c01e761570bf661999ba0c6d70a
+$ docker pull openjdk@sha256:0aab2d3a40b64d68fa3c3fddbe9ac1ac9c9475a51fba8940572d092c510e73a9
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull openjdk@sha256:89db80618cb5b6d9e91e311c9d53bc536e010c01e761570bf66
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.3 MB (56271052 bytes)**  
+-	Total Size: **56.3 MB (56271637 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58ce9579eac6af0bb4bcbd14efe62a8a7dace2aedf0c16480aebd7986e146149`
+-	Image ID: `sha256:43f475d356affc95c36a4c2ab674fdd48e52a017e33c84d1bbb7c3cd2cf15560`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -31,9 +31,9 @@ ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin
 # Thu, 01 Jun 2017 17:00:31 GMT
 ENV JAVA_VERSION=8u131
-# Thu, 01 Jun 2017 17:00:32 GMT
-ENV JAVA_ALPINE_VERSION=8.131.11-r1
-# Thu, 01 Jun 2017 17:00:39 GMT
+# Sat, 17 Jun 2017 06:11:13 GMT
+ENV JAVA_ALPINE_VERSION=8.131.11-r2
+# Sat, 17 Jun 2017 06:11:20 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
 ```
 
@@ -46,7 +46,7 @@ RUN set -x 	&& apk add --no-cache 		openjdk8-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 		Last Modified: Thu, 01 Jun 2017 17:04:59 GMT  
 		Size: 232.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:42f1d6835b7d56cd0f4ee6793e1018d3138063fe44de5fac8522d9492c77da7c`  
-		Last Modified: Thu, 01 Jun 2017 17:15:06 GMT  
-		Size: 54.3 MB (54280719 bytes)  
+	-	`sha256:432e3c96aacd9388d413a926f482ce420e39574fb0aa33c2bcee6d7e15ff0fa3`  
+		Last Modified: Sat, 17 Jun 2017 06:29:48 GMT  
+		Size: 54.3 MB (54281304 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
