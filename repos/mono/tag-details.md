@@ -12,6 +12,8 @@
 -	[`mono:4`](#mono4)
 -	[`mono:5.0.0.100`](#mono500100)
 -	[`mono:5.0.0`](#mono500)
+-	[`mono:5.0.1.1`](#mono5011)
+-	[`mono:5.0.1`](#mono501)
 -	[`mono:5.0`](#mono50)
 -	[`mono:5`](#mono5)
 -	[`mono:latest`](#monolatest)
@@ -533,6 +535,14 @@ RUN echo "deb http://download.mono-project.com/repo/debian jessie/snapshots/$MON
 		Last Modified: Mon, 15 May 2017 18:10:14 GMT  
 		Size: 141.7 MB (141702676 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `mono:5.0.1.1`
+
+**does not exist** (yet?)
+
+## `mono:5.0.1`
+
+**does not exist** (yet?)
 
 ## `mono:5.0`
 
