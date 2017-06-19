@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0b6a83ac657894eddca2e9768f80275bfecc9559a4a1fa21aecce3446c0214fb`
-- Created: `2017-06-02T23:44:40.6084694Z`
-- Virtual Size: ~ 346.34 Mb  
+- Image ID: `sha256:7967ebe9919f1e427a13629d71e5aa943f7c3a99047c6bad37ca9918bfaa86ff`
+- Created: `2017-06-19T19:18:10.821393893Z`
+- Virtual Size: ~ 346.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_VERSION=1.8.0_sr4fp5`
+  - `JAVA_VERSION=1.8.0_sr4fp6`
   - `JAVA_HOME=/opt/ibm/java/jre`
 
 ## `dpkg` (`.deb`-based packages)
@@ -509,14 +509,8 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris glibc=2.23-0ubuntu7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu7.dsc' glibc_2.23-0ubuntu7.dsc 8521 SHA256:3dee2874feb9abb11051a67ffa438227c851ee38e7e525235df40f099b9ba69e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23.orig.tar.xz' glibc_2.23.orig.tar.xz 13849968 SHA256:bf6c528eeebefcacc295270068b79330c1fb2b22458ff66285b4175d23442c96
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu7.debian.tar.xz' glibc_2.23-0ubuntu7.debian.tar.xz 1224292 SHA256:6eded089ba0021a9e7df512d3ea27103cfcc03b130b71f2667cb5b67cdc107a6
-```
 
 ### `dpkg` source package: `gnupg=1.4.20-1ubuntu3.1`
 
