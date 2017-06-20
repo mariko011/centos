@@ -625,19 +625,8 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris eglibc=2.13-38+deb7u11
-'http://security.debian.org/pool/updates/main/e/eglibc/eglibc_2.13-38+deb7u11.dsc' eglibc_2.13-38+deb7u11.dsc 5358 SHA256:7516d7b597b4eab6639da4502f01f0aa145cfaeda91144475d325c105dcd0da3
-'http://security.debian.org/pool/updates/main/e/eglibc/eglibc_2.13.orig.tar.gz' eglibc_2.13.orig.tar.gz 23004247 SHA256:5e6dce233f0d0f89453b369efbc1ff360956b5d2de45c03c9bc8c52eef98868f
-'http://security.debian.org/pool/updates/main/e/eglibc/eglibc_2.13-38+deb7u11.diff.gz' eglibc_2.13-38+deb7u11.diff.gz 2050114 SHA256:36825428d170cd458d1025ba4350d61b06c4588bfa37f676d3f7354efe0eac04
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/eglibc/2.13-38+deb7u11/
-- https://sources.debian.net/src/eglibc/2.13-38+deb7u11/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `expat=2.1.0-1+deb7u4`
 
@@ -649,19 +638,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris expat=2.1.0-1+deb7u4
-'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-1+deb7u4.dsc' expat_2.1.0-1+deb7u4.dsc 2307 SHA256:ca256424605ed7950a8e438e265789e4ba543722f6fafc8243e42843a5157487
-'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
-'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-1+deb7u4.debian.tar.gz' expat_2.1.0-1+deb7u4.debian.tar.gz 19997 SHA256:f8a9f988565f4c5e8b36e8969b9951ca34608a8999685395592db6795a8928df
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/expat/2.1.0-1+deb7u4/
-- https://sources.debian.net/src/expat/2.1.0-1+deb7u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `findutils=4.4.2-4`
 
