@@ -21,7 +21,7 @@
 ## `oraclelinux:7-slim`
 
 ```console
-$ docker pull oraclelinux@sha256:c5ead12c82851e6b316cbcabe8ddef18f42949484a0625b030ddbf726cc4bcdb
+$ docker pull oraclelinux@sha256:f1388709e1ce62dfa9cf9af9746bc0cca47b2e09975a1fb6ba01c66061b2b793
 ```
 
 -	Platforms:
@@ -31,30 +31,30 @@ $ docker pull oraclelinux@sha256:c5ead12c82851e6b316cbcabe8ddef18f42949484a0625b
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.5 MB (41496366 bytes)**  
+-	Total Size: **41.5 MB (41487843 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0b44f4e6980d07aec67c488d4232fcbcd3cbdd0c2af8dd1ac1239f693a42642c`
+-	Image ID: `sha256:08a01cc7be97a67355e9cf419567d84cf51ea06a902ef746ec2f099f2e3c7509`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Tue, 30 Aug 2016 16:31:30 GMT
 MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
-# Wed, 31 May 2017 17:27:53 GMT
-ADD file:27705015b0f4e1ae4dd17869f965d6f2f835134af892dbae00ed9a4d22c9e885 in / 
-# Wed, 31 May 2017 17:27:54 GMT
+# Tue, 20 Jun 2017 21:52:30 GMT
+ADD file:5481a53663e68dc5f0d88cd2e96719a99da950bbdfba141850796068af78e911 in / 
+# Tue, 20 Jun 2017 21:52:53 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:497341ef9d7128b94d8e7d9d7b0a96fd2c712aa96b34785c55f82803e3ef0314`  
-		Last Modified: Wed, 31 May 2017 06:19:26 GMT  
-		Size: 41.5 MB (41496366 bytes)  
+	-	`sha256:7bd9e1692b546a9e7f1ccfdfe9c6598d0e41d5bf99aa533854bd25aa1b7580c7`  
+		Last Modified: Tue, 20 Jun 2017 21:34:10 GMT  
+		Size: 41.5 MB (41487843 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `oraclelinux:latest`
 
 ```console
-$ docker pull oraclelinux@sha256:312883bb0f8b72e4a6ffd571fb3d0c588fa7bdd1b65b50cb8e0721b63ebd8097
+$ docker pull oraclelinux@sha256:8698ca4cc87eff78e862f6fabb42223c756bb969af4348974918c292cecd7cfc
 ```
 
 -	Platforms:
@@ -64,30 +64,30 @@ $ docker pull oraclelinux@sha256:312883bb0f8b72e4a6ffd571fb3d0c588fa7bdd1b65b50c
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.3 MB (83325704 bytes)**  
+-	Total Size: **83.3 MB (83296247 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63aa3313d8ae92f53775052b2066cb2926e5a58aa6acd28d3127377d77d8ec79`
+-	Image ID: `sha256:25e592d7eec765ea41addd75942c974e5fe04fb9ed650b2cb587fd3d62dd0d0e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Tue, 30 Aug 2016 16:31:30 GMT
 MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
-# Wed, 31 May 2017 17:28:45 GMT
-ADD file:0b9c57df75e4b340145955cf73145d55699262a1e69d4e14626aee649203da4a in / 
-# Wed, 31 May 2017 17:28:46 GMT
+# Tue, 20 Jun 2017 21:54:39 GMT
+ADD file:f7e17945982e234869513fb74827cbf0714a8af31ce720c8adaba9e182bc6cb7 in / 
+# Tue, 20 Jun 2017 21:55:22 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:e1ef1eb9fcad6ff7821c516bb79e6225856e2d551390e6d0f4431828d8ac89bf`  
-		Last Modified: Wed, 31 May 2017 06:19:34 GMT  
-		Size: 83.3 MB (83325704 bytes)  
+	-	`sha256:a3909f821b43071e8f86d966113a41df95f3aeae0b00e5889da6de3277e28361`  
+		Last Modified: Tue, 20 Jun 2017 21:33:09 GMT  
+		Size: 83.3 MB (83296247 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `oraclelinux:7`
 
 ```console
-$ docker pull oraclelinux@sha256:312883bb0f8b72e4a6ffd571fb3d0c588fa7bdd1b65b50cb8e0721b63ebd8097
+$ docker pull oraclelinux@sha256:8698ca4cc87eff78e862f6fabb42223c756bb969af4348974918c292cecd7cfc
 ```
 
 -	Platforms:
@@ -97,30 +97,30 @@ $ docker pull oraclelinux@sha256:312883bb0f8b72e4a6ffd571fb3d0c588fa7bdd1b65b50c
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.3 MB (83325704 bytes)**  
+-	Total Size: **83.3 MB (83296247 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63aa3313d8ae92f53775052b2066cb2926e5a58aa6acd28d3127377d77d8ec79`
+-	Image ID: `sha256:25e592d7eec765ea41addd75942c974e5fe04fb9ed650b2cb587fd3d62dd0d0e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Tue, 30 Aug 2016 16:31:30 GMT
 MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
-# Wed, 31 May 2017 17:28:45 GMT
-ADD file:0b9c57df75e4b340145955cf73145d55699262a1e69d4e14626aee649203da4a in / 
-# Wed, 31 May 2017 17:28:46 GMT
+# Tue, 20 Jun 2017 21:54:39 GMT
+ADD file:f7e17945982e234869513fb74827cbf0714a8af31ce720c8adaba9e182bc6cb7 in / 
+# Tue, 20 Jun 2017 21:55:22 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:e1ef1eb9fcad6ff7821c516bb79e6225856e2d551390e6d0f4431828d8ac89bf`  
-		Last Modified: Wed, 31 May 2017 06:19:34 GMT  
-		Size: 83.3 MB (83325704 bytes)  
+	-	`sha256:a3909f821b43071e8f86d966113a41df95f3aeae0b00e5889da6de3277e28361`  
+		Last Modified: Tue, 20 Jun 2017 21:33:09 GMT  
+		Size: 83.3 MB (83296247 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `oraclelinux:7.3`
 
 ```console
-$ docker pull oraclelinux@sha256:312883bb0f8b72e4a6ffd571fb3d0c588fa7bdd1b65b50cb8e0721b63ebd8097
+$ docker pull oraclelinux@sha256:8698ca4cc87eff78e862f6fabb42223c756bb969af4348974918c292cecd7cfc
 ```
 
 -	Platforms:
@@ -130,24 +130,24 @@ $ docker pull oraclelinux@sha256:312883bb0f8b72e4a6ffd571fb3d0c588fa7bdd1b65b50c
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.3 MB (83325704 bytes)**  
+-	Total Size: **83.3 MB (83296247 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63aa3313d8ae92f53775052b2066cb2926e5a58aa6acd28d3127377d77d8ec79`
+-	Image ID: `sha256:25e592d7eec765ea41addd75942c974e5fe04fb9ed650b2cb587fd3d62dd0d0e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Tue, 30 Aug 2016 16:31:30 GMT
 MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
-# Wed, 31 May 2017 17:28:45 GMT
-ADD file:0b9c57df75e4b340145955cf73145d55699262a1e69d4e14626aee649203da4a in / 
-# Wed, 31 May 2017 17:28:46 GMT
+# Tue, 20 Jun 2017 21:54:39 GMT
+ADD file:f7e17945982e234869513fb74827cbf0714a8af31ce720c8adaba9e182bc6cb7 in / 
+# Tue, 20 Jun 2017 21:55:22 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:e1ef1eb9fcad6ff7821c516bb79e6225856e2d551390e6d0f4431828d8ac89bf`  
-		Last Modified: Wed, 31 May 2017 06:19:34 GMT  
-		Size: 83.3 MB (83325704 bytes)  
+	-	`sha256:a3909f821b43071e8f86d966113a41df95f3aeae0b00e5889da6de3277e28361`  
+		Last Modified: Tue, 20 Jun 2017 21:33:09 GMT  
+		Size: 83.3 MB (83296247 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `oraclelinux:7.2`
@@ -252,7 +252,7 @@ CMD ["/bin/bash"]
 ## `oraclelinux:6-slim`
 
 ```console
-$ docker pull oraclelinux@sha256:1369d3f7e3ed8f53427408159b9a76520e75224fe26a23c1f92f0522e67c5264
+$ docker pull oraclelinux@sha256:0ff2303ddec4d664097768b840b6c76af9bfd6f3b49e7be82e09cfad49939c3c
 ```
 
 -	Platforms:
@@ -262,30 +262,30 @@ $ docker pull oraclelinux@sha256:1369d3f7e3ed8f53427408159b9a76520e75224fe26a23c
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.0 MB (43998754 bytes)**  
+-	Total Size: **44.0 MB (44035173 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b404b9ad9a5139274d4edde75f69348dc43c31c7ba3048a42d0052c5f2a52744`
+-	Image ID: `sha256:aa531a50e1565c032d1822d361b7510b55cb1be553d3eb2c3e89c928aa9ff5bd`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Tue, 30 Aug 2016 16:31:30 GMT
 MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
-# Wed, 31 May 2017 17:31:39 GMT
-ADD file:8eb75aadb47b3b23513dd36915919901e4474d2d810c6b537923954dc4f6d984 in / 
-# Wed, 31 May 2017 17:31:40 GMT
+# Tue, 20 Jun 2017 21:59:52 GMT
+ADD file:bb6fa0581bf4212c182d6740c9b90c1ae913fd55b0b012b2faf57f246c089377 in / 
+# Tue, 20 Jun 2017 22:00:15 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:a039b551076ae37ccbf209eab1e51bb93c37d4d9b28da093cf711a1fe751c1ec`  
-		Last Modified: Wed, 31 May 2017 06:19:28 GMT  
-		Size: 44.0 MB (43998754 bytes)  
+	-	`sha256:fe51361ec8c6dc46ed2f2a597d2a19aa1555b25878f44750e4fb674732e5a7cf`  
+		Last Modified: Tue, 20 Jun 2017 21:33:29 GMT  
+		Size: 44.0 MB (44035173 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `oraclelinux:6`
 
 ```console
-$ docker pull oraclelinux@sha256:631f7c62953583157fb181c7ae3532976c9e92be3270c38acec2413cbec077c8
+$ docker pull oraclelinux@sha256:3501cce71958dab7f0486cd42753780cc2ff987e3f92bd084c95a53d52f4f1dc
 ```
 
 -	Platforms:
@@ -295,30 +295,30 @@ $ docker pull oraclelinux@sha256:631f7c62953583157fb181c7ae3532976c9e92be3270c38
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.3 MB (70294976 bytes)**  
+-	Total Size: **70.3 MB (70340621 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57a54b13950cae59e4e95d76183a387b2ee9c155cc62f580030c9b458efe3ddc`
+-	Image ID: `sha256:7a4a8c40414201cb671618dd99e8d327d4da4eba9d7991a86b191f4823925969`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Tue, 30 Aug 2016 16:31:30 GMT
 MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
-# Wed, 31 May 2017 17:32:29 GMT
-ADD file:cf8a30387de21f87665f2ea3fb761c5d06792ee61e438c6c6ce71449f654a3e7 in / 
-# Wed, 31 May 2017 17:32:30 GMT
+# Tue, 20 Jun 2017 22:01:57 GMT
+ADD file:871978af1675a5b7e6fd798361c7c610524e0b0d7fce062d1ca2ad00ea208fa3 in / 
+# Tue, 20 Jun 2017 22:02:17 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:9ea06d6ab9ef480f18dcaab8e212ab4fdfc181e0b973b383a8d427123d807796`  
-		Last Modified: Wed, 31 May 2017 06:19:35 GMT  
-		Size: 70.3 MB (70294976 bytes)  
+	-	`sha256:9bf12f7628ee3a245a2c4ea05568213145314d9eb7c673b181cf8b5d66ebd301`  
+		Last Modified: Tue, 20 Jun 2017 21:34:35 GMT  
+		Size: 70.3 MB (70340621 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `oraclelinux:6.9`
 
 ```console
-$ docker pull oraclelinux@sha256:631f7c62953583157fb181c7ae3532976c9e92be3270c38acec2413cbec077c8
+$ docker pull oraclelinux@sha256:3501cce71958dab7f0486cd42753780cc2ff987e3f92bd084c95a53d52f4f1dc
 ```
 
 -	Platforms:
@@ -328,24 +328,24 @@ $ docker pull oraclelinux@sha256:631f7c62953583157fb181c7ae3532976c9e92be3270c38
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.3 MB (70294976 bytes)**  
+-	Total Size: **70.3 MB (70340621 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57a54b13950cae59e4e95d76183a387b2ee9c155cc62f580030c9b458efe3ddc`
+-	Image ID: `sha256:7a4a8c40414201cb671618dd99e8d327d4da4eba9d7991a86b191f4823925969`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
 # Tue, 30 Aug 2016 16:31:30 GMT
 MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>
-# Wed, 31 May 2017 17:32:29 GMT
-ADD file:cf8a30387de21f87665f2ea3fb761c5d06792ee61e438c6c6ce71449f654a3e7 in / 
-# Wed, 31 May 2017 17:32:30 GMT
+# Tue, 20 Jun 2017 22:01:57 GMT
+ADD file:871978af1675a5b7e6fd798361c7c610524e0b0d7fce062d1ca2ad00ea208fa3 in / 
+# Tue, 20 Jun 2017 22:02:17 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:9ea06d6ab9ef480f18dcaab8e212ab4fdfc181e0b973b383a8d427123d807796`  
-		Last Modified: Wed, 31 May 2017 06:19:35 GMT  
-		Size: 70.3 MB (70294976 bytes)  
+	-	`sha256:9bf12f7628ee3a245a2c4ea05568213145314d9eb7c673b181cf8b5d66ebd301`  
+		Last Modified: Tue, 20 Jun 2017 21:34:35 GMT  
+		Size: 70.3 MB (70340621 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `oraclelinux:6.8`

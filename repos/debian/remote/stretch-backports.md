@@ -1,7 +1,7 @@
 ## `debian:stretch-backports`
 
 ```console
-$ docker pull debian@sha256:ded4539b4e6f6fc95ab5308a7cece09427b0377af9fadefdc360c8d73213a735
+$ docker pull debian@sha256:4f6839c39110d2cc5dd015e05a950987357a2bb936103e9bbb7f12a08a4d17eb
 ```
 
 -	Platforms:
@@ -11,26 +11,26 @@ $ docker pull debian@sha256:ded4539b4e6f6fc95ab5308a7cece09427b0377af9fadefdc360
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.1 MB (45127963 bytes)**  
+-	Total Size: **45.1 MB (45140041 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3420837854a462ca49ed8a96c21e64fa4a3734edbab38ea71cd55faecee8f3b5`
+-	Image ID: `sha256:afea2a829b8d585aba7c44074baca2c6b5f42f11528b2050fba494dfec07e9bb`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 07 Jun 2017 17:49:26 GMT
-ADD file:212fe5c6a3f3d10b0f5fc59f2019d5a12f266ff74b289f3ccc87bb878b01a437 in / 
-# Wed, 07 Jun 2017 17:49:27 GMT
+# Tue, 20 Jun 2017 20:24:09 GMT
+ADD file:93a0dbb6973bc13e5478292bfe283ff91745ca6e23b6fd3363f0661c45deb1ec in / 
+# Tue, 20 Jun 2017 20:24:10 GMT
 CMD ["bash"]
-# Wed, 07 Jun 2017 17:49:51 GMT
+# Tue, 20 Jun 2017 20:24:36 GMT
 RUN echo 'deb http://deb.debian.org/debian stretch-backports main' > /etc/apt/sources.list.d/backports.list
 ```
 
 -	Layers:
-	-	`sha256:31a23e80b5c0100547b74b78634277f56239d4207fa7ea4f0540148525dbff03`  
-		Last Modified: Wed, 07 Jun 2017 18:09:21 GMT  
-		Size: 45.1 MB (45127747 bytes)  
+	-	`sha256:c75480ad9aafadef6c7faf829ede40cf2fa990c9308d6cd354d53041b01a7cda`  
+		Last Modified: Tue, 20 Jun 2017 20:51:29 GMT  
+		Size: 45.1 MB (45139825 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:587874e279bc21d9d954ce230ff0a2447d2970e57233bc0d90d24fe537568952`  
-		Last Modified: Wed, 07 Jun 2017 18:10:14 GMT  
+	-	`sha256:be148671aa1be8c9490697595d25c7e8ff02fe257058de0e14a30bc67a4e9a3c`  
+		Last Modified: Tue, 20 Jun 2017 20:55:41 GMT  
 		Size: 216.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
