@@ -1,18 +1,18 @@
-# `python:3.4.6-onbuild`
+# `python:3.6.2rc1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ed9ced17fc9b7e6b59fa5fe4603c5386e97c153d1f5911f262628aca6d6de695`
-- Created: `2017-06-17T06:15:02.392657888Z`
-- Virtual Size: ~ 679.49 Mb  
+- Image ID: `sha256:ae911d37ef2be05788fcaf9b18478e43d26c71f50376c1e513aafb88551a6f3c`
+- Created: `2017-06-20T00:07:40.831998895Z`
+- Virtual Size: ~ 683.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D`
-  - `PYTHON_VERSION=3.4.6`
+  - `GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D`
+  - `PYTHON_VERSION=3.6.2rc1`
   - `PYTHON_PIP_VERSION=9.0.1`
 
 ## `dpkg` (`.deb`-based packages)

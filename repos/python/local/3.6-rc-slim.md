@@ -1,18 +1,18 @@
-# `python:3.5.3-slim`
+# `python:3.6.2rc1-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:262a376654c691736f65a94b81570341935fd8d7b3445fa2df81ed6c1fb8ab3d`
-- Created: `2017-06-17T06:22:44.936102303Z`
-- Virtual Size: ~ 199.83 Mb  
+- Image ID: `sha256:b0356ce13618393c512e8bf27e9d217edd31eb5f6202d2a424a6d1dea6d11741`
+- Created: `2017-06-20T00:11:33.722580271Z`
+- Virtual Size: ~ 210.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D`
-  - `PYTHON_VERSION=3.5.3`
+  - `GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D`
+  - `PYTHON_VERSION=3.6.2rc1`
   - `PYTHON_PIP_VERSION=9.0.1`
 
 ## `dpkg` (`.deb`-based packages)
@@ -661,15 +661,39 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gdbm/1.8.3-13.1/
 - https://sources.debian.net/src/gdbm/1.8.3-13.1/debian/copyright (for direct copyright/license information)
 
+### `dpkg` source package: `glibc=2.19-18+deb8u10`
+
+Binary Packages:
+
+- `libc6:amd64=2.19-18+deb8u10`
+
+Licenses: (parsed from: `/usr/share/doc/libc6/copyright`)
+
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.19-18+deb8u10
+'http://security.debian.org/pool/updates/main/g/glibc/glibc_2.19-18+deb8u10.dsc' glibc_2.19-18+deb8u10.dsc 8256 SHA256:cfc796163f67f367f0f59f89e4cdcf59f3f77d14a4cfdad1c870c8c2feafde0b
+'http://security.debian.org/pool/updates/main/g/glibc/glibc_2.19.orig.tar.xz' glibc_2.19.orig.tar.xz 12387008 SHA256:746e52bb4fc9b2f30bcd33d415172a40ab56c5fff6c494052d31b0795593cc60
+'http://security.debian.org/pool/updates/main/g/glibc/glibc_2.19-18+deb8u10.debian.tar.xz' glibc_2.19-18+deb8u10.debian.tar.xz 1059340 SHA256:b5110a37901189fc092748592b117fb10684b9c92a876ea64d4030ffa00d01c1
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/glibc/2.19-18+deb8u10/
+- https://sources.debian.net/src/glibc/2.19-18+deb8u10/debian/copyright (for direct copyright/license information)
+
 ### `dpkg` source package: `glibc=2.19-18+deb8u9`
 
 Binary Packages:
 
 - `libc-bin=2.19-18+deb8u9`
-- `libc6:amd64=2.19-18+deb8u9`
 - `multiarch-support=2.19-18+deb8u9`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/multiarch-support/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -942,11 +966,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libcap2/1:2.24-8/
 - https://sources.debian.net/src/libcap2/1:2.24-8/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libffi=3.1-2`
+### `dpkg` source package: `libffi=3.1-2+deb8u1`
 
 Binary Packages:
 
-- `libffi6:amd64=3.1-2+b2`
+- `libffi6:amd64=3.1-2+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libffi6/copyright`)
 
@@ -955,16 +979,16 @@ Licenses: (parsed from: `/usr/share/doc/libffi6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libffi=3.1-2
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.1-2.dsc' libffi_3.1-2.dsc 1358 SHA256:6249efd7d44527de06e9e1fba9c7695c069d93b0fa5149f604435792c5a30f6c
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.1.orig.tar.gz' libffi_3.1.orig.tar.gz 937214 SHA256:97feeeadca5e21870fa4433bc953d1b3af3f698d5df8a428f68b73cd60aef6eb
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.1-2.debian.tar.xz' libffi_3.1-2.debian.tar.xz 8408 SHA256:7e7826c1ee6152d31a3e341efc34df923ec903b6caecc2701694dc95f2efd3ab
+$ apt-get source -qq --print-uris libffi=3.1-2+deb8u1
+'http://security.debian.org/pool/updates/main/libf/libffi/libffi_3.1-2+deb8u1.dsc' libffi_3.1-2+deb8u1.dsc 1691 SHA256:db5a3fe5558d7858cb8d9cdc7e0cf5c1c51622c3b313c0a0ac64eb7ff5298a63
+'http://security.debian.org/pool/updates/main/libf/libffi/libffi_3.1.orig.tar.gz' libffi_3.1.orig.tar.gz 937214 SHA256:97feeeadca5e21870fa4433bc953d1b3af3f698d5df8a428f68b73cd60aef6eb
+'http://security.debian.org/pool/updates/main/libf/libffi/libffi_3.1-2+deb8u1.debian.tar.xz' libffi_3.1-2+deb8u1.debian.tar.xz 8948 SHA256:71ab991f52edbdf0e19408b6c947650d92c766842581eb172ab9a44bf0ce3ab8
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libffi/3.1-2/
-- https://sources.debian.net/src/libffi/3.1-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libffi/3.1-2+deb8u1/
+- https://sources.debian.net/src/libffi/3.1-2+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgcrypt20=1.6.3-2+deb8u2`
 
