@@ -665,14 +665,8 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris glibc=2.24-3ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-3ubuntu2.dsc' glibc_2.24-3ubuntu2.dsc 8778 SHA256:fb4dd9dc2817a7b3e591b13af265fa2986f7068248e299c03a5cfc5d4656df70
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24.orig.tar.xz' glibc_2.24.orig.tar.xz 13921912 SHA256:ed71e8afd2b270f7947a2cea2457a31e1ca4fac08e2731d80edd7ec1730ec84f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-3ubuntu2.debian.tar.xz' glibc_2.24-3ubuntu2.debian.tar.xz 957872 SHA256:802a798c37983d582b052c7cb4f5960a2230fc1bf7c4a6225c178d033ba36282
-```
 
 ### `dpkg` source package: `gmp=2:6.1.1+dfsg-1`
 
