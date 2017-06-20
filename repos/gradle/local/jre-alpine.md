@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:db7bbda38d8ead606670fe5ed29a3d33af3576847e03568aa94c5dc3aef6d49b`
-- Created: `2017-05-11T04:22:18.463803374Z`
-- Virtual Size: ~ 168.14 Mb  
+- Image ID: `sha256:9f2f71937a18f5703581e26d2ac7ece4ef359f0cb3526e8daa1e093df8c30c13`
+- Created: `2017-06-19T18:40:23.967005861Z`
+- Virtual Size: ~ 162.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre`
-  - `JAVA_VERSION=8u121`
-  - `JAVA_ALPINE_VERSION=8.121.13-r0`
+  - `JAVA_VERSION=8u131`
+  - `JAVA_ALPINE_VERSION=8.131.11-r2`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=3.5`
+  - `GRADLE_VERSION=4.0`
