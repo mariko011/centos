@@ -1902,14 +1902,8 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris glibc=2.23-0ubuntu7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu7.dsc' glibc_2.23-0ubuntu7.dsc 8521 SHA256:3dee2874feb9abb11051a67ffa438227c851ee38e7e525235df40f099b9ba69e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23.orig.tar.xz' glibc_2.23.orig.tar.xz 13849968 SHA256:bf6c528eeebefcacc295270068b79330c1fb2b22458ff66285b4175d23442c96
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu7.debian.tar.xz' glibc_2.23-0ubuntu7.debian.tar.xz 1224292 SHA256:6eded089ba0021a9e7df512d3ea27103cfcc03b130b71f2667cb5b67cdc107a6
-```
 
 ### `dpkg` source package: `gmp=2:6.1.0+dfsg-2`
 
@@ -4779,14 +4773,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `GPL-2`
 - `redpine-signals`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-79.100
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-79.100.dsc' linux_4.4.0-79.100.dsc 9286 SHA256:6a64784273867d96e75b5ba9993307416c03813d9647b218b51b53e4a9328aab
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-79.100.diff.gz' linux_4.4.0-79.100.diff.gz 12850945 SHA256:ddececff798241b48a19a29c846e406ec13b4298aca55def40ca1cd541bfdf72
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
 
