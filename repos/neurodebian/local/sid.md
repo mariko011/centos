@@ -1200,19 +1200,8 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.10-1.1
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.10-1.1.dsc' libtasn1-6_4.10-1.1.dsc 2586 SHA256:1ace0b64d79a7c79d00d9f7719ce56c5274fbfd253681f01b303badb09242c1b
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.10.orig.tar.gz' libtasn1-6_4.10.orig.tar.gz 1887057 SHA256:681a4d9a0d259f2125713f2e5766c5809f151b3a1392fd91390f780b4b8f5a02
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.10-1.1.debian.tar.xz' libtasn1-6_4.10-1.1.debian.tar.xz 58400 SHA256:275f7e74697ca1ef085dab5e41fe82d0c9ee898d4f6f4cd2873b09099850e939
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libtasn1-6/4.10-1.1/
-- https://sources.debian.net/src/libtasn1-6/4.10-1.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=9.20161125`
 
@@ -1798,19 +1787,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2017b-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-1.dsc' tzdata_2017b-1.dsc 2005 SHA256:ab26ea2d019b6db54abd8ee17c90aeb717641dc8900ab19dca8d5faa4b66d852
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b.orig.tar.gz' tzdata_2017b.orig.tar.gz 324317 SHA256:f8242a522ea3496b0ce4ff4f2e75a049178da21001a08b8e666d8cbe07d18086
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-1.debian.tar.xz' tzdata_2017b-1.debian.tar.xz 101168 SHA256:b7ed1f68343a5463aa2efbc527a05b89461e93b5626337d8d581c78e8fdf180c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2017b-1/
-- https://sources.debian.net/src/tzdata/2017b-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ustr=1.0.4-6`
 
