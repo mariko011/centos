@@ -1,7 +1,7 @@
 ## `debian:experimental`
 
 ```console
-$ docker pull debian@sha256:bffefcb593f4125c80369fc00b5e01e92d41429b6002131581e69e62688bf5ce
+$ docker pull debian@sha256:c058fd7332876d1a51c076e2772a41c6e39c5e6ce6ef01c325cf6a898b27240d
 ```
 
 -	Platforms:
@@ -11,26 +11,26 @@ $ docker pull debian@sha256:bffefcb593f4125c80369fc00b5e01e92d41429b6002131581e6
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.3 MB (45314059 bytes)**  
+-	Total Size: **45.2 MB (45199049 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fe2db5966360c12bdb4d48d8026b55dfae611164689eec1707972cc48e433d00`
+-	Image ID: `sha256:a60edba8597148d0112bd5e3b24a6c8507f4dfd1812d1c31c614e853bee10a0f`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 07 Jun 2017 17:53:26 GMT
-ADD file:f92831e8690530766f2ec7984f341af8f439722d1b356e7c99321dfe6a58a01e in / 
-# Wed, 07 Jun 2017 17:53:27 GMT
+# Tue, 20 Jun 2017 20:28:09 GMT
+ADD file:f0d001a590c8bb88d3464ecd948c055f1662411161988776379be212c5f93581 in / 
+# Tue, 20 Jun 2017 20:28:10 GMT
 CMD ["bash"]
-# Wed, 07 Jun 2017 17:56:39 GMT
+# Tue, 20 Jun 2017 20:31:41 GMT
 RUN echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources.list.d/experimental.list
 ```
 
 -	Layers:
-	-	`sha256:ddcd92be53e6ff4ee02976453ba78fd22dbee9f44c297ba6619b0e120c0a4cb8`  
-		Last Modified: Wed, 07 Jun 2017 17:57:38 GMT  
-		Size: 45.3 MB (45313845 bytes)  
+	-	`sha256:648183d4464f86a83a3919de5e4016609a3882a0ac6f69fe10915f5df6d41ae5`  
+		Last Modified: Tue, 20 Jun 2017 20:34:37 GMT  
+		Size: 45.2 MB (45198836 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d283e2ae0a6eb577c2aaeac92f1526ba840c8dc99e043440ac32dbde4becb10`  
-		Last Modified: Wed, 07 Jun 2017 17:57:31 GMT  
-		Size: 214.0 B  
+	-	`sha256:ceef396c0eeb919f3a68f12a4d02ac872b02357422b5faed32c963a38c2c8ef7`  
+		Last Modified: Tue, 20 Jun 2017 20:34:30 GMT  
+		Size: 213.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
