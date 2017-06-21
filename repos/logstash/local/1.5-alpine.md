@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e16729e27a75eed32a564f7dcfb11b0250896defbf330f1f3e222e7aae317d13`
-- Created: `2017-05-11T05:10:28.633783725Z`
-- Virtual Size: ~ 226.39 Mb  
+- Image ID: `sha256:90fd363f80647392ebf30a79d558aaa44605348c55c224ba06a762efebda56ed`
+- Created: `2017-06-20T23:07:26.106076301Z`
+- Virtual Size: ~ 226.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -13,8 +13,8 @@
   - `PATH=/opt/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre`
-  - `JAVA_VERSION=8u121`
-  - `JAVA_ALPINE_VERSION=8.121.13-r0`
+  - `JAVA_VERSION=8u131`
+  - `JAVA_ALPINE_VERSION=8.131.11-r2`
   - `GPG_KEY=46095ACC8548582C1A2699A9D27D666CD88E42B4`
   - `LOGSTASH_PATH=/opt/logstash/bin`
   - `LOGSTASH_VERSION=1.5.6`
