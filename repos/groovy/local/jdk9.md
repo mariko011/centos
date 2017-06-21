@@ -463,20 +463,8 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.1-8
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1-8.dsc' cups_2.2.1-8.dsc 3396 SHA256:853686da648a729117648e3121f3bea9ec4ca37a081af854a4d04b657b2bbdfe
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1.orig.tar.gz' cups_2.2.1.orig.tar.gz 9486635 SHA256:83b8730aa977cc055e7410df6a3a682548994c113994ca630a16513017e419d5
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1.orig.tar.gz.asc' cups_2.2.1.orig.tar.gz.asc 797 SHA256:37c2e6215b2794c33864e543bc0caf6aefa724844e41b4c9659c87f28d125c2a
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1-8.debian.tar.xz' cups_2.2.1-8.debian.tar.xz 360644 SHA256:e44d8af7ebde6f386b114a9a96c30d2d0a4e99f00ef23be419cf3644305a7a7b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cups/2.2.1-8/
-- https://sources.debian.net/src/cups/2.2.1-8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `curl=7.52.1-5`
 
@@ -640,18 +628,8 @@ Licenses: (parsed from: `/usr/share/doc/debian-archive-keyring/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris debian-archive-keyring=2014.3
-'http://deb.debian.org/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2014.3.dsc' debian-archive-keyring_2014.3.dsc 1597 SHA256:2a3e604f936b8fbaf1beeea0a7611a1a88cacffd26571df4cc58c16ecefa362a
-'http://deb.debian.org/debian/pool/main/d/debian-archive-keyring/debian-archive-keyring_2014.3.tar.xz' debian-archive-keyring_2014.3.tar.xz 61380 SHA256:46be978ec2f72b0277d9e71bda30ea1b2b9aa00b1952cb35e8b22a2c016f5e22
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/debian-archive-keyring/2014.3/
-- https://sources.debian.net/src/debian-archive-keyring/2014.3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `debianutils=4.8.1.1`
 
@@ -715,18 +693,8 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.23
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.23.dsc' dpkg_1.18.23.dsc 2032 SHA256:5e2fe064fb36d95d6459d2e117df9b54618df5e58925db117b5dd0c74cba2ec4
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.18.23.tar.xz' dpkg_1.18.23.tar.xz 4516252 SHA256:cc08802a0cea2ccd0c10716bc71531ff9b9234dd454b83a59f71117a37f36923
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dpkg/1.18.23/
-- https://sources.debian.net/src/dpkg/1.18.23/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `e2fsprogs=1.43.4-2`
 
@@ -2897,19 +2865,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2017b-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-1.dsc' tzdata_2017b-1.dsc 2005 SHA256:ab26ea2d019b6db54abd8ee17c90aeb717641dc8900ab19dca8d5faa4b66d852
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b.orig.tar.gz' tzdata_2017b.orig.tar.gz 324317 SHA256:f8242a522ea3496b0ce4ff4f2e75a049178da21001a08b8e666d8cbe07d18086
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-1.debian.tar.xz' tzdata_2017b-1.debian.tar.xz 101168 SHA256:b7ed1f68343a5463aa2efbc527a05b89461e93b5626337d8d581c78e8fdf180c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2017b-1/
-- https://sources.debian.net/src/tzdata/2017b-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ucf=3.0036`
 
