@@ -495,20 +495,8 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.1-8
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1-8.dsc' cups_2.2.1-8.dsc 3396 SHA256:853686da648a729117648e3121f3bea9ec4ca37a081af854a4d04b657b2bbdfe
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1.orig.tar.gz' cups_2.2.1.orig.tar.gz 9486635 SHA256:83b8730aa977cc055e7410df6a3a682548994c113994ca630a16513017e419d5
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1.orig.tar.gz.asc' cups_2.2.1.orig.tar.gz.asc 797 SHA256:37c2e6215b2794c33864e543bc0caf6aefa724844e41b4c9659c87f28d125c2a
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.1-8.debian.tar.xz' cups_2.2.1-8.debian.tar.xz 360644 SHA256:e44d8af7ebde6f386b114a9a96c30d2d0a4e99f00ef23be419cf3644305a7a7b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cups/2.2.1-8/
-- https://sources.debian.net/src/cups/2.2.1-8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `curl=7.52.1-5`
 
@@ -1890,19 +1878,8 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.10-1.1
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.10-1.1.dsc' libtasn1-6_4.10-1.1.dsc 2586 SHA256:1ace0b64d79a7c79d00d9f7719ce56c5274fbfd253681f01b303badb09242c1b
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.10.orig.tar.gz' libtasn1-6_4.10.orig.tar.gz 1887057 SHA256:681a4d9a0d259f2125713f2e5766c5809f151b3a1392fd91390f780b4b8f5a02
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.10-1.1.debian.tar.xz' libtasn1-6_4.10-1.1.debian.tar.xz 58400 SHA256:275f7e74697ca1ef085dab5e41fe82d0c9ee898d4f6f4cd2873b09099850e939
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libtasn1-6/4.10-1.1/
-- https://sources.debian.net/src/libtasn1-6/4.10-1.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libunistring=0.9.6+really0.9.3-0.1`
 
@@ -2380,19 +2357,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nspr=2:4.12-6
-'http://deb.debian.org/debian/pool/main/n/nspr/nspr_4.12-6.dsc' nspr_4.12-6.dsc 2038 SHA256:c2b7b566e45ad153effa12b5e206bc213a215543aff01e29bc0f47c68162b160
-'http://deb.debian.org/debian/pool/main/n/nspr/nspr_4.12.orig.tar.gz' nspr_4.12.orig.tar.gz 1135458 SHA256:e0b10a1e569153668ff8bdea6c7e491b389fab69c2f18285a1ebf7c2ea4269de
-'http://deb.debian.org/debian/pool/main/n/nspr/nspr_4.12-6.debian.tar.xz' nspr_4.12-6.debian.tar.xz 15756 SHA256:02840f8938d7f6d6bd35f60d78ec804ba6318f8f390359e8fa6bb19ccb1060f7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nspr/2:4.12-6/
-- https://sources.debian.net/src/nspr/2:4.12-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `nss=2:3.26.2-1.1`
 
@@ -2404,19 +2370,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.26.2-1.1
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26.2-1.1.dsc' nss_3.26.2-1.1.dsc 2400 SHA256:78788486311be767ca54f5b72dfd2948db13d659a836d12f157d89aa09bd3043
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26.2.orig.tar.gz' nss_3.26.2.orig.tar.gz 7388390 SHA256:13a40a2f97edf5fab3d4c7fdd928e77df36dc539cd8354b6b5d79ab93a131a5a
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.26.2-1.1.debian.tar.xz' nss_3.26.2-1.1.debian.tar.xz 29880 SHA256:64ac3a3361bde8f63659b648b32fd8c13a5d8bd2fb924588392168641cbbece9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nss/2:3.26.2-1.1/
-- https://sources.debian.net/src/nss/2:3.26.2-1.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openjdk-9=9~b170-2`
 
@@ -2489,19 +2444,8 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.4p1-11
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.4p1-11.dsc' openssh_7.4p1-11.dsc 2896 SHA256:d040201515160f5632c10fb01f2b05ade3eeea20a739acac6a79b34b2e8e85ed
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.4p1.orig.tar.gz' openssh_7.4p1.orig.tar.gz 1511780 SHA256:1b1fc4a14e2024293181924ed24872e6f2e06293f3e8926a376b8aec481f19d1
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_7.4p1-11.debian.tar.xz' openssh_7.4p1-11.debian.tar.xz 161192 SHA256:7d0246a7f314ca4c7d1530c4106665c781217839c3d0dcd644ea4a9dcca72768
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openssh/1:7.4p1-11/
-- https://sources.debian.net/src/openssh/1:7.4p1-11/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssl1.0=1.0.2l-2`
 
@@ -2648,19 +2592,8 @@ Licenses: (parsed from: `/usr/share/doc/libpcsclite1/copyright`)
 - `GPL-3+`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris pcsc-lite=1.8.21-1
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.21-1.dsc' pcsc-lite_1.8.21-1.dsc 2225 SHA256:139d6d7dad36fe9bf6e82e520efdcef0780ff25ccf33433a3c10e447f80c5629
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.21.orig.tar.bz2' pcsc-lite_1.8.21.orig.tar.bz2 750879 SHA256:fe3365eb7d4ce0fe891e2b6d6248351c287435ca502103f1f1431b1710e513ad
-'http://deb.debian.org/debian/pool/main/p/pcsc-lite/pcsc-lite_1.8.21-1.debian.tar.xz' pcsc-lite_1.8.21-1.debian.tar.xz 14640 SHA256:af5976a261edc7e89e355ae4e846b7f332eb038ba55a921769ad2a6e0237459d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/pcsc-lite/1.8.21-1/
-- https://sources.debian.net/src/pcsc-lite/1.8.21-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `perl=5.24.1-3`
 
@@ -3106,19 +3039,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2017b-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-1.dsc' tzdata_2017b-1.dsc 2005 SHA256:ab26ea2d019b6db54abd8ee17c90aeb717641dc8900ab19dca8d5faa4b66d852
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b.orig.tar.gz' tzdata_2017b.orig.tar.gz 324317 SHA256:f8242a522ea3496b0ce4ff4f2e75a049178da21001a08b8e666d8cbe07d18086
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-1.debian.tar.xz' tzdata_2017b-1.debian.tar.xz 101168 SHA256:b7ed1f68343a5463aa2efbc527a05b89461e93b5626337d8d581c78e8fdf180c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2017b-1/
-- https://sources.debian.net/src/tzdata/2017b-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ucf=3.0036`
 
