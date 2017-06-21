@@ -332,18 +332,8 @@ Licenses: (parsed from: `/usr/share/doc/cdbs/copyright`)
 - `GPL-3+`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cdbs=0.4.150
-'http://deb.debian.org/debian/pool/main/c/cdbs/cdbs_0.4.150.dsc' cdbs_0.4.150.dsc 1846 SHA256:3b035e84c5f95db6cf6b319dc6be6722fd34435c0d321ac241f1a294aca27327
-'http://deb.debian.org/debian/pool/main/c/cdbs/cdbs_0.4.150.tar.xz' cdbs_0.4.150.tar.xz 204596 SHA256:9381ce9b3bb2c8e5967b24e1de1cd87d8e1583eca6e818373160d6f71e2d2f93
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cdbs/0.4.150/
-- https://sources.debian.net/src/cdbs/0.4.150/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cdebconf=0.227`
 
@@ -630,13 +620,8 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-de
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.18.23
-'http://http.debian.net/debian/pool/main/d/dpkg/dpkg_1.18.23.dsc' dpkg_1.18.23.dsc 2032 SHA256:5e2fe064fb36d95d6459d2e117df9b54618df5e58925db117b5dd0c74cba2ec4
-'http://http.debian.net/debian/pool/main/d/dpkg/dpkg_1.18.23.tar.xz' dpkg_1.18.23.tar.xz 4516252 SHA256:cc08802a0cea2ccd0c10716bc71531ff9b9234dd454b83a59f71117a37f36923
-```
 
 ### `dpkg` source package: `e2fsprogs=1.43.4-2`
 
@@ -1091,20 +1076,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.8-5
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8-5.dsc' gnutls28_3.5.8-5.dsc 3258 SHA256:1609d51af0485c909648209e36d7b2d256680f617d1ce122e3687aeaf56e1266
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz' gnutls28_3.5.8.orig.tar.xz 7264448 SHA256:0e97f243ae72b70307d684b84c7fe679385aa7a7a0e37e5be810193dcc17d4ff
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz.asc' gnutls28_3.5.8.orig.tar.xz.asc 287 SHA256:417da9db564a841128edb2dc2c98465a5749541f7d71492cb7c4905a0bfeac82
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8-5.debian.tar.xz' gnutls28_3.5.8-5.debian.tar.xz 104860 SHA256:db08c67dd060c6c921026e0c4446d7168748b7972bafa593109ed6409c754081
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnutls28/3.5.8-5/
-- https://sources.debian.net/src/gnutls28/3.5.8-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `graphite2=1.3.10-1`
 
@@ -1507,10 +1480,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris lattice=0.20-35-1
-'http://http.debian.net/debian/pool/main/l/lattice/lattice_0.20-35-1.dsc' lattice_0.20-35-1.dsc 1649 SHA256:e10a748e19f8ffecc755a1b233e235d765b039024ee92d4ffc471380f01b3d19
-'http://http.debian.net/debian/pool/main/l/lattice/lattice_0.20-35.orig.tar.gz' lattice_0.20-35.orig.tar.gz 359813 SHA256:0829ab0f4dec55aac6a73bc3411af68441ddb1b5b078d680a7c2643abeaa965d
-'http://http.debian.net/debian/pool/main/l/lattice/lattice_0.20-35-1.diff.gz' lattice_0.20-35-1.diff.gz 4245 SHA256:72c4b1ed2a50f355171cd5d6bcb471200b9e0724adff27a87fc7d1b432462bc2
+'http://deb.debian.org/debian/pool/main/l/lattice/lattice_0.20-35-1.dsc' lattice_0.20-35-1.dsc 1649 SHA256:e10a748e19f8ffecc755a1b233e235d765b039024ee92d4ffc471380f01b3d19
+'http://deb.debian.org/debian/pool/main/l/lattice/lattice_0.20-35.orig.tar.gz' lattice_0.20-35.orig.tar.gz 359813 SHA256:0829ab0f4dec55aac6a73bc3411af68441ddb1b5b078d680a7c2643abeaa965d
+'http://deb.debian.org/debian/pool/main/l/lattice/lattice_0.20-35-1.diff.gz' lattice_0.20-35-1.diff.gz 4245 SHA256:72c4b1ed2a50f355171cd5d6bcb471200b9e0724adff27a87fc7d1b432462bc2
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/lattice/0.20-35-1/
+- https://sources.debian.net/src/lattice/0.20-35-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `less=481-2.1`
 
@@ -1909,19 +1887,8 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 - `Chromium`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.17.0-3
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.17.0-3.dsc' libpsl_0.17.0-3.dsc 2224 SHA256:20a4c84ba8348ed3839dd79fdafc230f7a0463a68f5af6a2b81b81ba33f77501
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.17.0.orig.tar.gz' libpsl_0.17.0.orig.tar.gz 49087 SHA256:7731e28393e1b4ca363eaffecd6c7570023a7c18c017b45d683ac7d2ba1f0bd1
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.17.0-3.debian.tar.xz' libpsl_0.17.0-3.debian.tar.xz 8516 SHA256:d0bd2abdaccadf2603f566e119b949a02523177199455e01c13a9c9deac1e6c3
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libpsl/0.17.0-3/
-- https://sources.debian.net/src/libpsl/0.17.0-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libselinux=2.6-3`
 
@@ -2037,10 +2004,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libssh2=1.8.0-1
-'http://http.debian.net/debian/pool/main/libs/libssh2/libssh2_1.8.0-1.dsc' libssh2_1.8.0-1.dsc 1860 SHA256:14837d645e77d08fbf00333dee60129be3aeb40c956294cb7bd0b79f456a3fb0
-'http://http.debian.net/debian/pool/main/libs/libssh2/libssh2_1.8.0.orig.tar.gz' libssh2_1.8.0.orig.tar.gz 846989 SHA256:4382d33de790b28f862e53ed59ffbd65f3def7a06e8b6e9ca1b6f70453b4d5e0
-'http://http.debian.net/debian/pool/main/libs/libssh2/libssh2_1.8.0-1.debian.tar.xz' libssh2_1.8.0-1.debian.tar.xz 7320 SHA256:79a68889d8102922b92b1757b1d5993cb70faa9a259aca21c2db2e5e55d30b62
+'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.8.0-1.dsc' libssh2_1.8.0-1.dsc 1860 SHA256:14837d645e77d08fbf00333dee60129be3aeb40c956294cb7bd0b79f456a3fb0
+'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.8.0.orig.tar.gz' libssh2_1.8.0.orig.tar.gz 846989 SHA256:4382d33de790b28f862e53ed59ffbd65f3def7a06e8b6e9ca1b6f70453b4d5e0
+'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.8.0-1.debian.tar.xz' libssh2_1.8.0-1.debian.tar.xz 7320 SHA256:79a68889d8102922b92b1757b1d5993cb70faa9a259aca21c2db2e5e55d30b62
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libssh2/1.8.0-1/
+- https://sources.debian.net/src/libssh2/1.8.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libtasn1-6=4.10-1`
 
@@ -2381,10 +2353,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris littler=0.3.2-1
-'http://http.debian.net/debian/pool/main/l/littler/littler_0.3.2-1.dsc' littler_0.3.2-1.dsc 1691 SHA256:d770b4958e43d2d6f4ae324edf48d96a5bda3ecbca5d9190d670178a565de8e7
-'http://http.debian.net/debian/pool/main/l/littler/littler_0.3.2.orig.tar.gz' littler_0.3.2.orig.tar.gz 87019 SHA256:32e13e9cd0bab43a330e8b48180e0a7c2e3c337dc6ddb118cbaf0b247da7dc2a
-'http://http.debian.net/debian/pool/main/l/littler/littler_0.3.2-1.diff.gz' littler_0.3.2-1.diff.gz 4425 SHA256:c78710a8f0590ac94e84813d8d8d34798316db7f7ddf3b761576ea51d9e2b78f
+'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.2-1.dsc' littler_0.3.2-1.dsc 1691 SHA256:d770b4958e43d2d6f4ae324edf48d96a5bda3ecbca5d9190d670178a565de8e7
+'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.2.orig.tar.gz' littler_0.3.2.orig.tar.gz 87019 SHA256:32e13e9cd0bab43a330e8b48180e0a7c2e3c337dc6ddb118cbaf0b247da7dc2a
+'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.2-1.diff.gz' littler_0.3.2-1.diff.gz 4425 SHA256:c78710a8f0590ac94e84813d8d8d34798316db7f7ddf3b761576ea51d9e2b78f
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/littler/0.3.2-1/
+- https://sources.debian.net/src/littler/0.3.2-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=9.20161125`
 
@@ -2735,20 +2712,8 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.23.3-2
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.3-2.dsc' p11-kit_0.23.3-2.dsc 2452 SHA256:fc8e87147d30de8d33e78adb805530d582655999762129b75097a9824679b0cc
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.3.orig.tar.gz' p11-kit_0.23.3.orig.tar.gz 1047441 SHA256:d487f04dba3f9e8256f53034c59c944ca45fd7b8434c095da6a74079644dcd82
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.3.orig.tar.gz.asc' p11-kit_0.23.3.orig.tar.gz.asc 543 SHA256:a9268313ad8e6c3dae5f4cf9006d8a773861e567c98786482304b3cc91883647
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.23.3-2.debian.tar.xz' p11-kit_0.23.3-2.debian.tar.xz 19784 SHA256:952f55f8c5e2cdc03c8388b59b0bd77bb53eb8f2c2ca2a686cfc91b52100e257
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/p11-kit/0.23.3-2/
-- https://sources.debian.net/src/p11-kit/0.23.3-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `pam=1.1.8-3.5`
 
