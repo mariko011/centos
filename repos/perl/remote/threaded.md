@@ -1,7 +1,7 @@
 ## `perl:threaded`
 
 ```console
-$ docker pull perl@sha256:ad822936e2677d15dd35be77385f0a0625e06d8ed9d540dd9e65811139c1fe8a
+$ docker pull perl@sha256:ebe27ccff4b6dc5ae5c6a1738e9497e84bdaf78f0ab57b3bc0483f4dbc8b47ee
 ```
 
 -	Platforms:
@@ -9,72 +9,72 @@ $ docker pull perl@sha256:ad822936e2677d15dd35be77385f0a0625e06d8ed9d540dd9e6581
 
 ### `perl:threaded` - linux; amd64
 
--	Docker Version: 17.04.0-ce
+-	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **259.7 MB (259727320 bytes)**  
+-	Total Size: **259.7 MB (259743561 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbf20a8b613b1d1ab30572157a25f91f9d8799f4bdd90b37c5cfea8dffbb7f78`
+-	Image ID: `sha256:e06d341d9731d490c1bed1a446e4616db36f3de8a4beeeabadf10b920fb8897c`
 -	Default Command: `["perl5.24.1","-de0"]`
 
 ```dockerfile
-# Mon, 08 May 2017 23:28:14 GMT
-ADD file:f4e6551ac34ab446a297849489a5693d67a7e76c9cb9ed9346d82392c9d9a5fe in / 
-# Mon, 08 May 2017 23:28:15 GMT
-CMD ["/bin/bash"]
-# Mon, 08 May 2017 23:53:11 GMT
+# Tue, 20 Jun 2017 20:13:32 GMT
+ADD file:9c48682ff75c756544d4491472081a078edf5dd0bb5038d1cb850a1f9c480e3e in / 
+# Tue, 20 Jun 2017 20:13:34 GMT
+CMD ["bash"]
+# Tue, 20 Jun 2017 21:03:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 08 May 2017 23:54:32 GMT
+# Tue, 20 Jun 2017 21:06:21 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 08 May 2017 23:56:57 GMT
+# Tue, 20 Jun 2017 21:09:42 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 09 May 2017 17:38:41 GMT
+# Wed, 21 Jun 2017 14:55:00 GMT
 MAINTAINER Peter Martini <PeterCMartini@GMail.com>
-# Tue, 09 May 2017 17:38:50 GMT
+# Wed, 21 Jun 2017 14:56:26 GMT
 RUN apt-get update     && apt-get install -y curl procps     && rm -fr /var/lib/apt/lists/*
-# Tue, 09 May 2017 17:39:08 GMT
+# Wed, 21 Jun 2017 14:56:28 GMT
 RUN mkdir /usr/src/perl
-# Tue, 09 May 2017 17:39:09 GMT
+# Wed, 21 Jun 2017 14:56:30 GMT
 COPY file:2be96a0b9a6d4b3ea837439f6ea05fc01b773b4b26dd6bd7635bd489469d0075 in /usr/src/perl/ 
-# Tue, 09 May 2017 17:39:10 GMT
+# Wed, 21 Jun 2017 14:56:31 GMT
 WORKDIR /usr/src/perl
-# Tue, 09 May 2017 17:52:08 GMT
+# Wed, 21 Jun 2017 15:26:33 GMT
 RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.24.1.tar.bz2 -o perl-5.24.1.tar.bz2     && echo '482ac5dca262b57d26c381382a3e057b22ede631fcce32523c004b8bf773f6f0 *perl-5.24.1.tar.bz2' | sha256sum -c -     && tar --strip-components=1 -xjf perl-5.24.1.tar.bz2 -C /usr/src/perl     && rm perl-5.24.1.tar.bz2     && cat *.patch | patch -p1     && ./Configure -Dusethreads -Duse64bitall -Duseshrplib  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://raw.githubusercontent.com/miyagawa/cpanminus/master/cpanm     && chmod +x cpanm     && ./cpanm App::cpanminus     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /tmp/*
-# Tue, 09 May 2017 17:55:05 GMT
+# Wed, 21 Jun 2017 15:26:33 GMT
 WORKDIR /root
-# Tue, 09 May 2017 17:55:06 GMT
+# Wed, 21 Jun 2017 15:26:34 GMT
 CMD ["perl5.24.1" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:10a267c67f423630f3afe5e04bbbc93d578861ddcc54283526222f3ad5e895b9`  
-		Last Modified: Mon, 08 May 2017 23:43:59 GMT  
-		Size: 52.6 MB (52584016 bytes)  
+	-	`sha256:9f0706ba7422412cd468804fee456786f88bed94bf9aea6dde2a47f770d19d27`  
+		Last Modified: Tue, 20 Jun 2017 20:35:47 GMT  
+		Size: 52.6 MB (52614808 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fb5937da9414eeab6d68ce06a7ff60d8be1e2c1518ac2588d5df135ab54a9801`  
-		Last Modified: Tue, 09 May 2017 15:55:04 GMT  
-		Size: 19.3 MB (19267434 bytes)  
+	-	`sha256:d3942a742d221ef22a0a335c4eebf09e15a36dcfb224b5a2d0cdcc405f374ccb`  
+		Last Modified: Wed, 21 Jun 2017 00:33:28 GMT  
+		Size: 19.3 MB (19264368 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9021b2326a1e3a942223c7e349a92203df184f2dcca45f5be7b0b80ac50e2ccf`  
-		Last Modified: Tue, 09 May 2017 15:56:09 GMT  
-		Size: 43.2 MB (43230898 bytes)  
+	-	`sha256:62b1123c88f67a9ad43d9bf3f552bbe3352696a674e82712fda785db4f71a655`  
+		Last Modified: Wed, 21 Jun 2017 00:34:52 GMT  
+		Size: 43.2 MB (43227273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dbed9b09434efb583eb5f23173bf2aadb578cbfe2516e26226e3f7e458fac621`  
-		Last Modified: Tue, 09 May 2017 15:57:33 GMT  
-		Size: 131.8 MB (131830309 bytes)  
+	-	`sha256:2dac6294ef18334118b559af1635702b07a71719c31cd022b7351f9392023a34`  
+		Last Modified: Wed, 21 Jun 2017 00:36:36 GMT  
+		Size: 131.8 MB (131822878 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ed9301d5505205de4ef53d62b03979100a68b9cc5ef614004fafad2cd95cd77`  
-		Last Modified: Tue, 09 May 2017 18:07:01 GMT  
-		Size: 166.0 B  
+	-	`sha256:7c6f76585cbae420a6b5d6e3ec305bd2a7088bfbee5286afdb9ad0d2e9ddaeb9`  
+		Last Modified: Wed, 21 Jun 2017 15:38:41 GMT  
+		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52a0e0497fc8656e8c4b49a9873d973a154d60ea0dc257e46bb662c705ca92eb`  
-		Last Modified: Tue, 09 May 2017 18:07:00 GMT  
-		Size: 129.0 B  
+	-	`sha256:22a8d7a7018a55d1cc8b9859bfb92df6aa6915229eb95c9362126877b2cb7dec`  
+		Last Modified: Wed, 21 Jun 2017 15:38:41 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f5d1eb084ee162b969431c249eea94fe416fc1f41471536b70586a8fe18eeb23`  
-		Last Modified: Tue, 09 May 2017 18:07:00 GMT  
+	-	`sha256:37777403577ac1c624b7f623ccdffdca99cb8cc9a28a574a96ec3de35f0858f0`  
+		Last Modified: Wed, 21 Jun 2017 15:38:40 GMT  
 		Size: 174.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ad05c2b6e09afdd103c3015f238e70b2d63ec5d7b1c3de663ccf3d094b79f6f0`  
-		Last Modified: Tue, 09 May 2017 18:08:31 GMT  
-		Size: 12.8 MB (12814194 bytes)  
+	-	`sha256:c8fa1895aec5406b756e8567556b1f643c293f87db163f82bdbc8149400c95df`  
+		Last Modified: Wed, 21 Jun 2017 15:40:36 GMT  
+		Size: 12.8 MB (12813765 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
