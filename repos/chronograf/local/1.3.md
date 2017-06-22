@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8007153e7fc2f1510b3563ec3ba0dd458bfcf5dd02de7df827bee517e433fff1`
-- Created: `2017-06-07T19:55:41.207675475Z`
-- Virtual Size: ~ 110.21 Mb  
+- Image ID: `sha256:5c27db6c634d6d32ad91b1bbed8379ff9647785b407defc57d894dab29a55fea`
+- Created: `2017-06-20T14:44:04.196740314Z`
+- Virtual Size: ~ 110.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["chronograf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `CHRONOGRAF_VERSION=1.3.2.1`
+  - `CHRONOGRAF_VERSION=1.3.3.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -283,11 +283,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/cdebconf/0.192/
 - https://sources.debian.net/src/cdebconf/0.192/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `chronograf=1.3.2.1-1`
+### `dpkg` source package: `chronograf=1.3.3.0-1`
 
 Binary Packages:
 
-- `chronograf=1.3.2.1-1`
+- `chronograf=1.3.3.0-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -735,11 +735,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gnupg/1.4.18-7+deb8u3/
 - https://sources.debian.net/src/gnupg/1.4.18-7+deb8u3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gnutls28=3.3.8-6+deb8u5`
+### `dpkg` source package: `gnutls28=3.3.8-6+deb8u6`
 
 Binary Packages:
 
-- `libgnutls-deb0-28:amd64=3.3.8-6+deb8u5`
+- `libgnutls-deb0-28:amd64=3.3.8-6+deb8u6`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls-deb0-28/copyright`)
 
@@ -756,16 +756,16 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls-deb0-28/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.3.8-6+deb8u5
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.3.8-6+deb8u5.dsc' gnutls28_3.3.8-6+deb8u5.dsc 2958 SHA256:1143c5b76a6899ab266e1e33840d87026108c4623a2ae4c44d1f00a9643ef54d
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.3.8.orig.tar.xz' gnutls28_3.3.8.orig.tar.xz 6153180 SHA256:bd4642f180e19632f4ed3a1e62d60c824c7b695f5cddf41a8fba1b272eaef046
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.3.8-6+deb8u5.debian.tar.xz' gnutls28_3.3.8-6+deb8u5.debian.tar.xz 104392 SHA256:fa47161ac81d77daaa7269e22f0edc037c356dc4386ba785ab201b681c1a9328
+$ apt-get source -qq --print-uris gnutls28=3.3.8-6+deb8u6
+'http://security.debian.org/pool/updates/main/g/gnutls28/gnutls28_3.3.8-6+deb8u6.dsc' gnutls28_3.3.8-6+deb8u6.dsc 2958 SHA256:109f05884b2ff5c50766749986603083ed56e11ff98a51cd6a102baf906a2bef
+'http://security.debian.org/pool/updates/main/g/gnutls28/gnutls28_3.3.8.orig.tar.xz' gnutls28_3.3.8.orig.tar.xz 6153180 SHA256:bd4642f180e19632f4ed3a1e62d60c824c7b695f5cddf41a8fba1b272eaef046
+'http://security.debian.org/pool/updates/main/g/gnutls28/gnutls28_3.3.8-6+deb8u6.debian.tar.xz' gnutls28_3.3.8-6+deb8u6.debian.tar.xz 105968 SHA256:67041552c37898eb50c009069ebad127b109bb035920918147b86b60dd7361f5
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/gnutls28/3.3.8-6+deb8u5/
-- https://sources.debian.net/src/gnutls28/3.3.8-6+deb8u5/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gnutls28/3.3.8-6+deb8u6/
+- https://sources.debian.net/src/gnutls28/3.3.8-6+deb8u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.20-4.1`
 
@@ -940,11 +940,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libcap2/1:2.24-8/
 - https://sources.debian.net/src/libcap2/1:2.24-8/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libffi=3.1-2`
+### `dpkg` source package: `libffi=3.1-2+deb8u1`
 
 Binary Packages:
 
-- `libffi6:amd64=3.1-2+b2`
+- `libffi6:amd64=3.1-2+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libffi6/copyright`)
 
@@ -953,16 +953,16 @@ Licenses: (parsed from: `/usr/share/doc/libffi6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libffi=3.1-2
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.1-2.dsc' libffi_3.1-2.dsc 1358 SHA256:6249efd7d44527de06e9e1fba9c7695c069d93b0fa5149f604435792c5a30f6c
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.1.orig.tar.gz' libffi_3.1.orig.tar.gz 937214 SHA256:97feeeadca5e21870fa4433bc953d1b3af3f698d5df8a428f68b73cd60aef6eb
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.1-2.debian.tar.xz' libffi_3.1-2.debian.tar.xz 8408 SHA256:7e7826c1ee6152d31a3e341efc34df923ec903b6caecc2701694dc95f2efd3ab
+$ apt-get source -qq --print-uris libffi=3.1-2+deb8u1
+'http://security.debian.org/pool/updates/main/libf/libffi/libffi_3.1-2+deb8u1.dsc' libffi_3.1-2+deb8u1.dsc 1691 SHA256:db5a3fe5558d7858cb8d9cdc7e0cf5c1c51622c3b313c0a0ac64eb7ff5298a63
+'http://security.debian.org/pool/updates/main/libf/libffi/libffi_3.1.orig.tar.gz' libffi_3.1.orig.tar.gz 937214 SHA256:97feeeadca5e21870fa4433bc953d1b3af3f698d5df8a428f68b73cd60aef6eb
+'http://security.debian.org/pool/updates/main/libf/libffi/libffi_3.1-2+deb8u1.debian.tar.xz' libffi_3.1-2+deb8u1.debian.tar.xz 8948 SHA256:71ab991f52edbdf0e19408b6c947650d92c766842581eb172ab9a44bf0ce3ab8
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libffi/3.1-2/
-- https://sources.debian.net/src/libffi/3.1-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libffi/3.1-2+deb8u1/
+- https://sources.debian.net/src/libffi/3.1-2+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgcrypt20=1.6.3-2+deb8u2`
 
