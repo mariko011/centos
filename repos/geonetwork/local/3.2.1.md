@@ -2498,8 +2498,19 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.20.2-3+deb8u7
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.20.2-3+deb8u7.dsc' perl_5.20.2-3+deb8u7.dsc 2324 SHA256:f073cef0fa155c02dc84cc2d70477ea467142c4cd2b298874e960210592a519a
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.20.2.orig.tar.bz2' perl_5.20.2.orig.tar.bz2 13717128 SHA256:e5a4713bc65e1da98ebd833dce425c000768bfe84d17ec5183ec5ca249db71ab
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.20.2-3+deb8u7.debian.tar.xz' perl_5.20.2-3+deb8u7.debian.tar.xz 150676 SHA256:645fd8fd5470f9b2570f75956e03afaee0b2f769cbc66f7fd71b98777e9e3798
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/perl/5.20.2-3+deb8u7/
+- https://sources.debian.net/src/perl/5.20.2-3+deb8u7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `procps=2:3.3.9-9`
 
