@@ -418,14 +418,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.1.0-6ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.1.0-6ubuntu2.dsc' gcc-7_7.1.0-6ubuntu2.dsc 30169 SHA256:451ebbc325041ca2ed53fb7c7693bbbe0c086d00272e904fa31f135873b10c8e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.1.0.orig.tar.gz' gcc-7_7.1.0.orig.tar.gz 71893585 SHA256:0906fd93706830db3030643ebade1b62a44ad3b5537693348b95c6058735b04f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.1.0-6ubuntu2.diff.gz' gcc-7_7.1.0-6ubuntu2.diff.gz 1165704 SHA256:8457d15551b59259fab698ebcb17ba8e6f1c5ee14c3a712ef5790821f2450345
-```
 
 ### `dpkg` source package: `glibc=2.24-9ubuntu2`
 
@@ -1273,14 +1267,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=233-6ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_233-6ubuntu3.dsc' systemd_233-6ubuntu3.dsc 4170 SHA256:47ef705a8bee001a2778a938d59c2ccf0428fa63796fa675c0485791addcd7b8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_233.orig.tar.gz' systemd_233.orig.tar.gz 4660737 SHA256:8b3e99da3d4164b66581830a7f2436c0c8fe697b5fbdc3927bdb960646be0083
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_233-6ubuntu3.debian.tar.xz' systemd_233-6ubuntu3.debian.tar.xz 144924 SHA256:674730e4a179be04bac090dd3d6300a785b4fd6f838cfe1502d11cfc9023f36d
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`
 
