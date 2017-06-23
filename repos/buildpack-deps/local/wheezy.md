@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a1c9c55c3e276e6ed7e479895648e9cacad5386109758183258b3ad45b654709`
-- Created: `2017-06-07T20:05:34.381982576Z`
-- Virtual Size: ~ 464.02 Mb  
+- Image ID: `sha256:237ac0c9443ff54c317dc2d82a738dbd687117180c8cbb73de04991a41c71125`
+- Created: `2017-06-21T00:17:28.804953159Z`
+- Virtual Size: ~ 464.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -797,23 +797,34 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/e2fsprogs/1.42.5-1.1+deb7u1/
 - https://sources.debian.net/src/e2fsprogs/1.42.5-1.1+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `eglibc=2.13-38+deb7u11`
+### `dpkg` source package: `eglibc=2.13-38+deb7u12`
 
 Binary Packages:
 
-- `libc-bin=2.13-38+deb7u11`
-- `libc-dev-bin=2.13-38+deb7u11`
-- `libc6:amd64=2.13-38+deb7u11`
-- `libc6-dev:amd64=2.13-38+deb7u11`
-- `multiarch-support=2.13-38+deb7u11`
+- `libc-bin=2.13-38+deb7u12`
+- `libc-dev-bin=2.13-38+deb7u12`
+- `libc6:amd64=2.13-38+deb7u12`
+- `libc6-dev:amd64=2.13-38+deb7u12`
+- `multiarch-support=2.13-38+deb7u12`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris eglibc=2.13-38+deb7u12
+'http://security.debian.org/pool/updates/main/e/eglibc/eglibc_2.13-38+deb7u12.dsc' eglibc_2.13-38+deb7u12.dsc 5390 SHA256:2727c6e9d238477f40ed5259d85ee028b20a69e1068188b0d5ec6879a7101819
+'http://security.debian.org/pool/updates/main/e/eglibc/eglibc_2.13.orig.tar.gz' eglibc_2.13.orig.tar.gz 23004247 SHA256:5e6dce233f0d0f89453b369efbc1ff360956b5d2de45c03c9bc8c52eef98868f
+'http://security.debian.org/pool/updates/main/e/eglibc/eglibc_2.13-38+deb7u12.diff.gz' eglibc_2.13-38+deb7u12.diff.gz 2054928 SHA256:e791980fd3e69d904b847daa159bd52f1ecfeecc482bd4f7d5257893c9954fa8
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/eglibc/2.13-38+deb7u12/
+- https://sources.debian.net/src/eglibc/2.13-38+deb7u12/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `elfutils=0.152-1+wheezy1`
 
@@ -839,19 +850,30 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/elfutils/0.152-1+wheezy1/
 - https://sources.debian.net/src/elfutils/0.152-1+wheezy1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `expat=2.1.0-1+deb7u4`
+### `dpkg` source package: `expat=2.1.0-1+deb7u5`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.1.0-1+deb7u4`
-- `libexpat1-dev=2.1.0-1+deb7u4`
+- `libexpat1:amd64=2.1.0-1+deb7u5`
+- `libexpat1-dev=2.1.0-1+deb7u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris expat=2.1.0-1+deb7u5
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-1+deb7u5.dsc' expat_2.1.0-1+deb7u5.dsc 2191 SHA256:440c97224d3e4f9ca10575b3562a80e2e6b7547363a4f2d30e4b0e70579d3344
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-1+deb7u5.debian.tar.gz' expat_2.1.0-1+deb7u5.debian.tar.gz 20362 SHA256:e809d6fc1fc250d716f610541c30ae2669ada9fb943f4243f15eac85185ee661
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/expat/2.1.0-1+deb7u5/
+- https://sources.debian.net/src/expat/2.1.0-1+deb7u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `file=5.11-2+deb7u9`
 
@@ -2913,18 +2935,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libyaml/0.1.4-2+deb7u5/
 - https://sources.debian.net/src/libyaml/0.1.4-2+deb7u5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `linux=3.2.88-1`
+### `dpkg` source package: `linux=3.2.89-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.2.88-1`
+- `linux-libc-dev:amd64=3.2.89-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.2.89-1
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.89-1.dsc' linux_3.2.89-1.dsc 103043 SHA256:5d92e0cb3d53818562c210bc4639a860f29425f2cd24f8ce4a9b988e0c55aaff
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.89.orig.tar.xz' linux_3.2.89.orig.tar.xz 65997820 SHA256:9f1495415eb3be487f43fc28da09b38129d0826ebc18b39a7e18734592b5a791
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.89-1.debian.tar.xz' linux_3.2.89-1.debian.tar.xz 3742776 SHA256:21dfd73e6c7490db0f8825d4139d735ac570f7e8ce68ced79eed4cfc9c673dcb
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/linux/3.2.89-1/
+- https://sources.debian.net/src/linux/3.2.89-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian8+deb7u1`
 
@@ -3952,20 +3985,31 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tar/1.26+dfsg-0.1+deb7u1/
 - https://sources.debian.net/src/tar/1.26+dfsg-0.1+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tiff3=3.9.6-11+deb7u5`
+### `dpkg` source package: `tiff3=3.9.6-11+deb7u6`
 
 Binary Packages:
 
-- `libtiff4:amd64=3.9.6-11+deb7u5`
-- `libtiff4-dev=3.9.6-11+deb7u5`
-- `libtiffxx0c2:amd64=3.9.6-11+deb7u5`
+- `libtiff4:amd64=3.9.6-11+deb7u6`
+- `libtiff4-dev=3.9.6-11+deb7u6`
+- `libtiffxx0c2:amd64=3.9.6-11+deb7u6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff3=3.9.6-11+deb7u6
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u6.dsc' tiff3_3.9.6-11+deb7u6.dsc 1650 SHA256:5003c462ea09ec7fc305384c6eb7cb00dbd5028c1798bfa288db661d2e0883c3
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6.orig.tar.gz' tiff3_3.9.6.orig.tar.gz 1454196 SHA256:0fba119156236074343a14afbd3a47907e3a5952c9c86102305d4eeb06ad6833
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u6.debian.tar.gz' tiff3_3.9.6-11+deb7u6.debian.tar.gz 48032 SHA256:7800bc938ef5cd6650ec37fb00bea49d9febddc56f68944c875dab195f7789be
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u6/
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ttf-dejavu=2.33-3`
 

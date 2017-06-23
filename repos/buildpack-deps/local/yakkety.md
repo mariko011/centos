@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d1bdf72335dad4514dffca1ba56696dfc751a9c1111b2e4a4eb107fb62c5de24`
-- Created: `2017-06-02T17:19:39.911539611Z`
-- Virtual Size: ~ 743.79 Mb  
+- Image ID: `sha256:462cc8aa88910b4e049714c3af193f16bc29b57f12736e74563a9f4aaeb9b5b0`
+- Created: `2017-06-21T00:23:48.144667338Z`
+- Virtual Size: ~ 744.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1200,24 +1200,30 @@ $ apt-get source -qq --print-uris glib2.0=2.50.2-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.50.2-2ubuntu1.debian.tar.xz' glib2.0_2.50.2-2ubuntu1.debian.tar.xz 70188 SHA256:e1a13d974ae529a8b1581fa03f41cfd708554515d6313c41072e6856645a49ba
 ```
 
-### `dpkg` source package: `glibc=2.24-3ubuntu2`
+### `dpkg` source package: `glibc=2.24-3ubuntu2.2`
 
 Binary Packages:
 
-- `libc-bin=2.24-3ubuntu2`
-- `libc-dev-bin=2.24-3ubuntu2`
-- `libc6:amd64=2.24-3ubuntu2`
-- `libc6-dev:amd64=2.24-3ubuntu2`
-- `locales=2.24-3ubuntu2`
-- `multiarch-support=2.24-3ubuntu2`
+- `libc-bin=2.24-3ubuntu2.2`
+- `libc-dev-bin=2.24-3ubuntu2.2`
+- `libc6:amd64=2.24-3ubuntu2.2`
+- `libc6-dev:amd64=2.24-3ubuntu2.2`
+- `locales=2.24-3ubuntu2.2`
+- `multiarch-support=2.24-3ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/locales/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.24-3ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-3ubuntu2.2.dsc' glibc_2.24-3ubuntu2.2.dsc 8804 SHA256:aac67495731f6934a63f4a45f8be883c981e9aff9602eb7c56e247c161896a4b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24.orig.tar.xz' glibc_2.24.orig.tar.xz 13921912 SHA256:ed71e8afd2b270f7947a2cea2457a31e1ca4fac08e2731d80edd7ec1730ec84f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-3ubuntu2.2.debian.tar.xz' glibc_2.24-3ubuntu2.2.debian.tar.xz 960224 SHA256:0a447873c6b1a1c932df725f6c7d6639a3c3df82357eeb8a134b9573ec61b230
+```
 
 ### `dpkg` source package: `gmp=2:6.1.1+dfsg-1`
 
@@ -1271,11 +1277,11 @@ $ apt-get source -qq --print-uris gnupg2=2.1.15-1ubuntu6
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.1.15-1ubuntu6.debian.tar.bz2' gnupg2_2.1.15-1ubuntu6.debian.tar.bz2 42239 SHA256:c63b7b237087d1ee5899897d29536d0a211549b66e49245bb30531136d57dba6
 ```
 
-### `dpkg` source package: `gnutls28=3.5.3-5ubuntu1.1`
+### `dpkg` source package: `gnutls28=3.5.3-5ubuntu1.2`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.5.3-5ubuntu1.1`
+- `libgnutls30:amd64=3.5.3-5ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -1289,8 +1295,14 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnutls28=3.5.3-5ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.3-5ubuntu1.2.dsc' gnutls28_3.5.3-5ubuntu1.2.dsc 2983 SHA256:7161f3925aa239af254ca46c28121638a19fda8bda3a56436e9c53bb7da314fa
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.3.orig.tar.xz' gnutls28_3.5.3.orig.tar.xz 6895068 SHA256:92c4bc999a10a1b95299ebefaeea8333f19d8a98d957a35b5eae74881bdb1fef
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.3-5ubuntu1.2.debian.tar.xz' gnutls28_3.5.3-5ubuntu1.2.debian.tar.xz 110112 SHA256:70e64d9153e99a504843554fe8bbc174f0bca0de133ea736ce3d847733ba009b
+```
 
 ### `dpkg` source package: `gobject-introspection=1.50.0-1ubuntu2`
 
@@ -2407,11 +2419,11 @@ $ apt-get source -qq --print-uris libsm=2:1.2.2-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsm/libsm_1.2.2-1.diff.gz' libsm_1.2.2-1.diff.gz 6183 SHA256:9848714292ead15fcc48ab2d337f2cc5fc08910abbdfaf69d3ef1b89d3fdb2d5
 ```
 
-### `dpkg` source package: `libtasn1-6=4.9-4`
+### `dpkg` source package: `libtasn1-6=4.9-4ubuntu0.1`
 
 Binary Packages:
 
-- `libtasn1-6:amd64=4.9-4`
+- `libtasn1-6:amd64=4.9-4ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 
@@ -2423,10 +2435,10 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libtasn1-6=4.9-4
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.9-4.dsc' libtasn1-6_4.9-4.dsc 2402 SHA256:ff99387e92055697da6192cbab3ea493b542c0838f049646117d23f31ea5c08e
+$ apt-get source -qq --print-uris libtasn1-6=4.9-4ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.9-4ubuntu0.1.dsc' libtasn1-6_4.9-4ubuntu0.1.dsc 2517 SHA256:3eb1d65d9e6c41c440558f7518f509f2ef6686318a42732bd1b98f126528790c
 'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.9.orig.tar.gz' libtasn1-6_4.9.orig.tar.gz 1864709 SHA256:4f6f7a8fd691ac2b8307c8ca365bad711db607d4ad5966f6938a9d2ecd65c920
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.9-4.debian.tar.xz' libtasn1-6_4.9-4.debian.tar.xz 58180 SHA256:c9ba4c28e12bc32b77f044ecb1091ef22525ac5e8bc4fd75aaffc3923c82f19d
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_4.9-4ubuntu0.1.debian.tar.xz' libtasn1-6_4.9-4ubuntu0.1.debian.tar.xz 58776 SHA256:d86ba7086062108743a791ec7e2c56fde6b4820a44471485ac52a2df537344cc
 ```
 
 ### `dpkg` source package: `libthai=0.1.25-1`
@@ -2875,18 +2887,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
 ```
 
-### `dpkg` source package: `linux=4.8.0-53.56`
+### `dpkg` source package: `linux=4.8.0-56.61`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.8.0-53.56`
+- `linux-libc-dev:amd64=4.8.0-56.61`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.8.0-56.61
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0-56.61.dsc' linux_4.8.0-56.61.dsc 8840 SHA256:079f9f46a591c3611e8897a37c34542a1fb0d6c9e34498b852e10a16f4ba2dc4
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0.orig.tar.gz' linux_4.8.0.orig.tar.gz 139977270 SHA256:80229497a1584076d534e96acf529a01a0fc00044eba9e6c00ae936e453dbd3c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0-56.61.diff.gz' linux_4.8.0-56.61.diff.gz 9874412 SHA256:d7e1fb19110bb239bd91395dc57a47a5a523ec08a0e971a02854d6872ae8307b
+```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu5`
 
@@ -3274,13 +3292,13 @@ $ apt-get source -qq --print-uris openssh=1:7.3p1-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.3p1-1ubuntu0.1.debian.tar.xz' openssh_7.3p1-1ubuntu0.1.debian.tar.xz 154368 SHA256:9a6573f0e88752e51d7bc86a19d6f47ca69f108a6dcf7de4481c1096ad6e332e
 ```
 
-### `dpkg` source package: `openssl=1.0.2g-1ubuntu9.1`
+### `dpkg` source package: `openssl=1.0.2g-1ubuntu9.3`
 
 Binary Packages:
 
-- `libssl-dev:amd64=1.0.2g-1ubuntu9.1`
-- `libssl1.0.0:amd64=1.0.2g-1ubuntu9.1`
-- `openssl=1.0.2g-1ubuntu9.1`
+- `libssl-dev:amd64=1.0.2g-1ubuntu9.3`
+- `libssl1.0.0:amd64=1.0.2g-1ubuntu9.3`
+- `openssl=1.0.2g-1ubuntu9.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3289,10 +3307,10 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu9.1
-'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu9.1.dsc' openssl_1.0.2g-1ubuntu9.1.dsc 2435 SHA256:83008d01c7c1d8be4d84dd80f87411e08ffb20470eb4567b1484147627d0ac86
-'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
-'http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu9.1.debian.tar.xz' openssl_1.0.2g-1ubuntu9.1.debian.tar.xz 109584 SHA256:3c4c71846def115e6a390d5a2bbb1c63714cb989bfa69702116d12cdbafa07f9
+$ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu9.3
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu9.3.dsc' openssl_1.0.2g-1ubuntu9.3.dsc 2417 SHA256:a0c8eb2a36884f0413eaee326935659b4e8067ed073c158321c821698776b588
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g.orig.tar.gz' openssl_1.0.2g.orig.tar.gz 5266102 SHA256:b784b1b3907ce39abf4098702dade6365522a253ad1552e267a9a0e89594aa33
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu9.3.debian.tar.xz' openssl_1.0.2g-1ubuntu9.3.debian.tar.xz 110836 SHA256:f161f7203e3df1de86e51026f1f3965019d061c61ccace4d390055ef658e6184
 ```
 
 ### `dpkg` source package: `p11-kit=0.23.2-5`

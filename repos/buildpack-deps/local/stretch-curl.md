@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:57444976b9b7a723044d39765c1a9679b0b0203a7ef020670edb8fa853c4f847`
-- Created: `2017-06-07T19:42:58.40419054Z`
-- Virtual Size: ~ 123.91 Mb  
+- Image ID: `sha256:3dbadd83303f0bd5649d10886b140221c19a38750db53260c4f0de41c44d84ae`
+- Created: `2017-06-20T21:21:56.18580385Z`
+- Virtual Size: ~ 123.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -641,13 +641,13 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gcc-6/6.3.0-18/
 - https://sources.debian.net/src/gcc-6/6.3.0-18/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `glibc=2.24-11`
+### `dpkg` source package: `glibc=2.24-11+deb9u1`
 
 Binary Packages:
 
-- `libc-bin=2.24-11`
-- `libc6:amd64=2.24-11`
-- `multiarch-support=2.24-11`
+- `libc-bin=2.24-11+deb9u1`
+- `libc6:amd64=2.24-11+deb9u1`
+- `multiarch-support=2.24-11+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
@@ -657,16 +657,16 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.24-11
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.24-11.dsc' glibc_2.24-11.dsc 8355 SHA256:1760695661f1ce5eeb8c0a605c3ef8770352c3b4e085c22e26b8cda7b24efd85
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.24.orig.tar.xz' glibc_2.24.orig.tar.xz 13921912 SHA256:ed71e8afd2b270f7947a2cea2457a31e1ca4fac08e2731d80edd7ec1730ec84f
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.24-11.debian.tar.xz' glibc_2.24-11.debian.tar.xz 988788 SHA256:1d02a0c87461d00a72606dbb858503cc855cbc5d1184d55acea57780f3d97d30
+$ apt-get source -qq --print-uris glibc=2.24-11+deb9u1
+'http://security.debian.org/pool/updates/main/g/glibc/glibc_2.24-11+deb9u1.dsc' glibc_2.24-11+deb9u1.dsc 8383 SHA256:9ae850c83adbb766c62e381633680c9d73f82744db004967717bf3105cfcb204
+'http://security.debian.org/pool/updates/main/g/glibc/glibc_2.24.orig.tar.xz' glibc_2.24.orig.tar.xz 13921912 SHA256:ed71e8afd2b270f7947a2cea2457a31e1ca4fac08e2731d80edd7ec1730ec84f
+'http://security.debian.org/pool/updates/main/g/glibc/glibc_2.24-11+deb9u1.debian.tar.xz' glibc_2.24-11+deb9u1.debian.tar.xz 991860 SHA256:d16b5a5de7a1d6e0316e811d431a991ffd64f47a021eec4f36393f05d0f0578d
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/glibc/2.24-11/
-- https://sources.debian.net/src/glibc/2.24-11/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/glibc/2.24-11+deb9u1/
+- https://sources.debian.net/src/glibc/2.24-11+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-1`
 
@@ -729,11 +729,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gnupg2/2.1.18-6/
 - https://sources.debian.net/src/gnupg2/2.1.18-6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gnutls28=3.5.8-5`
+### `dpkg` source package: `gnutls28=3.5.8-5+deb9u1`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.5.8-5`
+- `libgnutls30:amd64=3.5.8-5+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -750,17 +750,17 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.5.8-5
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8-5.dsc' gnutls28_3.5.8-5.dsc 3258 SHA256:1609d51af0485c909648209e36d7b2d256680f617d1ce122e3687aeaf56e1266
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz' gnutls28_3.5.8.orig.tar.xz 7264448 SHA256:0e97f243ae72b70307d684b84c7fe679385aa7a7a0e37e5be810193dcc17d4ff
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz.asc' gnutls28_3.5.8.orig.tar.xz.asc 287 SHA256:417da9db564a841128edb2dc2c98465a5749541f7d71492cb7c4905a0bfeac82
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8-5.debian.tar.xz' gnutls28_3.5.8-5.debian.tar.xz 104860 SHA256:db08c67dd060c6c921026e0c4446d7168748b7972bafa593109ed6409c754081
+$ apt-get source -qq --print-uris gnutls28=3.5.8-5+deb9u1
+'http://security.debian.org/pool/updates/main/g/gnutls28/gnutls28_3.5.8-5+deb9u1.dsc' gnutls28_3.5.8-5+deb9u1.dsc 3286 SHA256:f854fcc690a28a442cb0a7a9125e5c82f280865e83f898afba98b8dce0290dd2
+'http://security.debian.org/pool/updates/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz' gnutls28_3.5.8.orig.tar.xz 7264448 SHA256:0e97f243ae72b70307d684b84c7fe679385aa7a7a0e37e5be810193dcc17d4ff
+'http://security.debian.org/pool/updates/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz.asc' gnutls28_3.5.8.orig.tar.xz.asc 287 SHA256:417da9db564a841128edb2dc2c98465a5749541f7d71492cb7c4905a0bfeac82
+'http://security.debian.org/pool/updates/main/g/gnutls28/gnutls28_3.5.8-5+deb9u1.debian.tar.xz' gnutls28_3.5.8-5+deb9u1.debian.tar.xz 106592 SHA256:e8aada97863d8b785c66e20e91bc5b345e9cfe82b572984b89d5ef18283c831b
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/gnutls28/3.5.8-5/
-- https://sources.debian.net/src/gnutls28/3.5.8-5/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gnutls28/3.5.8-5+deb9u1/
+- https://sources.debian.net/src/gnutls28/3.5.8-5+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.27-2`
 
@@ -1834,12 +1834,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/shadow/1:4.4-4.1/
 - https://sources.debian.net/src/shadow/1:4.4-4.1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `systemd=232-24`
+### `dpkg` source package: `systemd=232-25`
 
 Binary Packages:
 
-- `libsystemd0:amd64=232-24`
-- `libudev1:amd64=232-24`
+- `libsystemd0:amd64=232-25`
+- `libudev1:amd64=232-25`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1851,8 +1851,19 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=232-25
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25.dsc' systemd_232-25.dsc 4769 SHA256:a668365e1d91043416e37cd8484f221e3dd77541efc9111d9dbf225b327d50ac
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25.debian.tar.xz' systemd_232-25.debian.tar.xz 202956 SHA256:611d55f08285ddfc1031b3d3eb9595fad44c2cb7aba8741bd0dab47a7fe2a32d
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/systemd/232-25/
+- https://sources.debian.net/src/systemd/232-25/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 
