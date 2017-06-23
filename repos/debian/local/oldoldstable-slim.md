@@ -1,10 +1,10 @@
-# `debian:wheezy-backports`
+# `debian:oldoldstable-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:96817b0f966d4a3b56c1848810b3d7aa79dec91c60b8835f6851eccde7ec771f`
-- Created: `2017-06-20T20:30:24.721138021Z`
-- Virtual Size: ~ 85.15 Mb  
+- Image ID: `sha256:0b42d27645ceb737b200f0a659e11b9b609e0b808fae93f07ab38f85d9f1364a`
+- Created: `2017-06-20T20:17:03.649788616Z`
+- Virtual Size: ~ 46.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -262,7 +262,7 @@ Binary Packages:
 - `debconf=1.5.49`
 - `debconf-i18n=1.5.49`
 
-Licenses: (parsed from: `/usr/share/doc/debconf/copyright`, `/usr/share/doc/debconf-i18n/copyright`)
+Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
@@ -461,7 +461,7 @@ Binary Packages:
 - `libgcc1:amd64=1:4.7.2-5`
 - `libstdc++6:amd64=4.7.2-5`
 
-Licenses: (parsed from: `/usr/share/doc/gcc-4.7-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gcc-4.7-base/copyright`)
 
 - `Artistic`
 - `GFDL-1.2`
@@ -580,31 +580,6 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/hostname/3.11/
 - https://sources.debian.net/src/hostname/3.11/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `inetutils=2:1.9-2`
-
-Binary Packages:
-
-- `inetutils-ping=2:1.9-2`
-
-Licenses: (parsed from: `/usr/share/doc/inetutils-ping/copyright`)
-
-- `GFDL-1.2`
-- `GPL-3`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris inetutils=2:1.9-2
-'http://deb.debian.org/debian/pool/main/i/inetutils/inetutils_1.9-2.dsc' inetutils_1.9-2.dsc 1889 SHA256:e843a9796d9e637827b93412d9556afc0b5badca8611cb59315128a24711a39e
-'http://deb.debian.org/debian/pool/main/i/inetutils/inetutils_1.9.orig.tar.gz' inetutils_1.9.orig.tar.gz 2091681 SHA256:e517178ee33b8427a66ca351a0ba2694c36666aa5c88e969f75a684d85d80730
-'http://deb.debian.org/debian/pool/main/i/inetutils/inetutils_1.9-2.debian.tar.gz' inetutils_1.9-2.debian.tar.gz 82510 SHA256:a629f3ccdbbcd2d4df22af5df81ba3beb36e64cd40a3c2a79e4a302354437d58
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/inetutils/2:1.9-2/
-- https://sources.debian.net/src/inetutils/2:1.9-2/debian/copyright (for direct copyright/license information)
-
 ### `dpkg` source package: `insserv=1.14.0-5`
 
 Binary Packages:
@@ -628,30 +603,6 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/insserv/1.14.0-5/
 - https://sources.debian.net/src/insserv/1.14.0-5/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `iproute=20120521-3`
-
-Binary Packages:
-
-- `iproute=20120521-3+b3`
-
-Licenses: (parsed from: `/usr/share/doc/iproute/copyright`)
-
-- `GPL`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris iproute=20120521-3
-'http://deb.debian.org/debian/pool/main/i/iproute/iproute_20120521-3.dsc' iproute_20120521-3.dsc 1580 SHA256:53cb5b2c105ba9fe59a0aa3d9b2f63b4da029b6110beb10812f933743a0c0deb
-'http://deb.debian.org/debian/pool/main/i/iproute/iproute_20120521.orig.tar.xz' iproute_20120521.orig.tar.xz 382092 SHA256:38e846e412b2fa235a447b50c20ad1e9770d1b3ed4d3ab18ca0b18c6e8b79ba4
-'http://deb.debian.org/debian/pool/main/i/iproute/iproute_20120521-3.debian.tar.gz' iproute_20120521-3.debian.tar.gz 26344 SHA256:96ed32bf753ebb8734ff02b411507253ae376f04e7a4772ec098246ff5fafa8c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/iproute/20120521-3/
-- https://sources.debian.net/src/iproute/20120521-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `liblocale-gettext-perl=1.05-7`
 
@@ -929,29 +880,6 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/ncurses/5.9-10/
 - https://sources.debian.net/src/ncurses/5.9-10/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `netbase=5.0`
-
-Binary Packages:
-
-- `netbase=5.0`
-
-Licenses: (parsed from: `/usr/share/doc/netbase/copyright`)
-
-- `GPL-2`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris netbase=5.0
-'http://deb.debian.org/debian/pool/main/n/netbase/netbase_5.0.dsc' netbase_5.0.dsc 724 SHA256:a7a49618de72446682179bb70c550a0d7089c7b0db01eb83d560d3be72ca776d
-'http://deb.debian.org/debian/pool/main/n/netbase/netbase_5.0.tar.gz' netbase_5.0.tar.gz 34915 SHA256:ac9424d3cb2bd3c07b6c5bc5875c434d3bc687a73cd7c54b7dc7122308afa9dc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/netbase/5.0/
-- https://sources.debian.net/src/netbase/5.0/debian/copyright (for direct copyright/license information)
-
 ### `dpkg` source package: `pam=1.1.3-7.1`
 
 Binary Packages:
@@ -985,30 +913,9 @@ Binary Packages:
 
 - `perl-base=5.14.2-21+deb7u5`
 
-Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
+  If source is available (seen below), check the contents of `debian/copyright` within it.
 
-- `Artistic`
-- `Artistic,`
-- `Artistic-2`
-- `BSD-3-clause`
-- `BSD-3-clause-GENERIC`
-- `BSD-4-clause`
-- `BSD-4-clause-POWERDOG`
-- `BZIP`
-- `DONT-CHANGE-THE-GPL`
-- `Expat`
-- `GPL`
-- `GPL-1+`
-- `GPL-2+`
-- `PERLDOCS`
-- `REGCOMP`
-- `REGCOMP,`
-- `S2P`
-- `SDBM-PUBLIC-DOMAIN`
-- `TEXT-SOUNDEX`
-- `TEXT-TABS`
-- `Unicode`
-- `ZLIB`
 
 Source:
 

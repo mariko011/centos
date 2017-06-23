@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d7844ce441e8fc202922b5416eea2f04f090d4de14687c7d47efd5a43b1357df`
-- Created: `2017-06-07T17:52:38.84143892Z`
-- Virtual Size: ~ 55.25 Mb  
+- Image ID: `sha256:f2020c7a55654da515aeb0a79e15d3cf76db06b18f8fe0b3520903b8ef6f411c`
+- Created: `2017-06-20T20:27:16.249342018Z`
+- Virtual Size: ~ 55.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -1091,12 +1091,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/shadow/1:4.4-4.1/
 - https://sources.debian.net/src/shadow/1:4.4-4.1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `systemd=232-24`
+### `dpkg` source package: `systemd=232-25`
 
 Binary Packages:
 
-- `libsystemd0:amd64=232-24`
-- `libudev1:amd64=232-24`
+- `libsystemd0:amd64=232-25`
+- `libudev1:amd64=232-25`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1108,8 +1108,19 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=232-25
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25.dsc' systemd_232-25.dsc 4769 SHA256:a668365e1d91043416e37cd8484f221e3dd77541efc9111d9dbf225b327d50ac
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25.debian.tar.xz' systemd_232-25.debian.tar.xz 202956 SHA256:611d55f08285ddfc1031b3d3eb9595fad44c2cb7aba8741bd0dab47a7fe2a32d
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/systemd/232-25/
+- https://sources.debian.net/src/systemd/232-25/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 

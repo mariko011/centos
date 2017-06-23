@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3420837854a462ca49ed8a96c21e64fa4a3734edbab38ea71cd55faecee8f3b5`
-- Created: `2017-06-07T17:49:51.782106864Z`
-- Virtual Size: ~ 100.08 Mb  
+- Image ID: `sha256:afea2a829b8d585aba7c44074baca2c6b5f42f11528b2050fba494dfec07e9bb`
+- Created: `2017-06-20T20:24:36.099385649Z`
+- Virtual Size: ~ 100.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -559,13 +559,13 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gcc-6/6.3.0-18/
 - https://sources.debian.net/src/gcc-6/6.3.0-18/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `glibc=2.24-11`
+### `dpkg` source package: `glibc=2.24-11+deb9u1`
 
 Binary Packages:
 
-- `libc-bin=2.24-11`
-- `libc6:amd64=2.24-11`
-- `multiarch-support=2.24-11`
+- `libc-bin=2.24-11+deb9u1`
+- `libc6:amd64=2.24-11+deb9u1`
+- `multiarch-support=2.24-11+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
@@ -575,16 +575,16 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.24-11
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.24-11.dsc' glibc_2.24-11.dsc 8355 SHA256:1760695661f1ce5eeb8c0a605c3ef8770352c3b4e085c22e26b8cda7b24efd85
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.24.orig.tar.xz' glibc_2.24.orig.tar.xz 13921912 SHA256:ed71e8afd2b270f7947a2cea2457a31e1ca4fac08e2731d80edd7ec1730ec84f
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.24-11.debian.tar.xz' glibc_2.24-11.debian.tar.xz 988788 SHA256:1d02a0c87461d00a72606dbb858503cc855cbc5d1184d55acea57780f3d97d30
+$ apt-get source -qq --print-uris glibc=2.24-11+deb9u1
+'http://security.debian.org/pool/updates/main/g/glibc/glibc_2.24-11+deb9u1.dsc' glibc_2.24-11+deb9u1.dsc 8383 SHA256:9ae850c83adbb766c62e381633680c9d73f82744db004967717bf3105cfcb204
+'http://security.debian.org/pool/updates/main/g/glibc/glibc_2.24.orig.tar.xz' glibc_2.24.orig.tar.xz 13921912 SHA256:ed71e8afd2b270f7947a2cea2457a31e1ca4fac08e2731d80edd7ec1730ec84f
+'http://security.debian.org/pool/updates/main/g/glibc/glibc_2.24-11+deb9u1.debian.tar.xz' glibc_2.24-11+deb9u1.debian.tar.xz 991860 SHA256:d16b5a5de7a1d6e0316e811d431a991ffd64f47a021eec4f36393f05d0f0578d
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/glibc/2.24-11/
-- https://sources.debian.net/src/glibc/2.24-11/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/glibc/2.24-11+deb9u1/
+- https://sources.debian.net/src/glibc/2.24-11+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnupg2=2.1.18-6`
 
@@ -1247,12 +1247,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/shadow/1:4.4-4.1/
 - https://sources.debian.net/src/shadow/1:4.4-4.1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `systemd=232-24`
+### `dpkg` source package: `systemd=232-25`
 
 Binary Packages:
 
-- `libsystemd0:amd64=232-24`
-- `libudev1:amd64=232-24`
+- `libsystemd0:amd64=232-25`
+- `libudev1:amd64=232-25`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1264,8 +1264,19 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=232-25
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25.dsc' systemd_232-25.dsc 4769 SHA256:a668365e1d91043416e37cd8484f221e3dd77541efc9111d9dbf225b327d50ac
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232.orig.tar.gz' systemd_232.orig.tar.gz 4529048 SHA256:1172c7c7d5d72fbded53186e7599d5272231f04cc8b72f9a0fb2c5c20dfc4880
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_232-25.debian.tar.xz' systemd_232-25.debian.tar.xz 202956 SHA256:611d55f08285ddfc1031b3d3eb9595fad44c2cb7aba8741bd0dab47a7fe2a32d
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/systemd/232-25/
+- https://sources.debian.net/src/systemd/232-25/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 
