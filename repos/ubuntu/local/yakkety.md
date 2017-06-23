@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:19d5aca0ccd49604d1a5eb5c4d8bd2c9e1d78c67a36beaada1e40db63b1168dd`
-- Created: `2017-06-02T16:17:33.205774337Z`
-- Virtual Size: ~ 105.97 Mb  
+- Image ID: `sha256:4c7847e078d5068afb2419cc9035562b111838ef956d9180f794061b0c4b893f`
+- Created: `2017-06-20T23:21:10.70129402Z`
+- Virtual Size: ~ 106.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -409,22 +409,28 @@ $ apt-get source -qq --print-uris gcc-6=6.2.0-5ubuntu12
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-6/gcc-6_6.2.0-5ubuntu12.diff.gz' gcc-6_6.2.0-5ubuntu12.diff.gz 4058534 SHA256:13f5df53126181fb34a406bad040dfbf9961787e0c2d40ea2918107d724b772c
 ```
 
-### `dpkg` source package: `glibc=2.24-3ubuntu2`
+### `dpkg` source package: `glibc=2.24-3ubuntu2.2`
 
 Binary Packages:
 
-- `libc-bin=2.24-3ubuntu2`
-- `libc6:amd64=2.24-3ubuntu2`
-- `locales=2.24-3ubuntu2`
-- `multiarch-support=2.24-3ubuntu2`
+- `libc-bin=2.24-3ubuntu2.2`
+- `libc6:amd64=2.24-3ubuntu2.2`
+- `locales=2.24-3ubuntu2.2`
+- `multiarch-support=2.24-3ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.24-3ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-3ubuntu2.2.dsc' glibc_2.24-3ubuntu2.2.dsc 8804 SHA256:aac67495731f6934a63f4a45f8be883c981e9aff9602eb7c56e247c161896a4b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24.orig.tar.xz' glibc_2.24.orig.tar.xz 13921912 SHA256:ed71e8afd2b270f7947a2cea2457a31e1ca4fac08e2731d80edd7ec1730ec84f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-3ubuntu2.2.debian.tar.xz' glibc_2.24-3ubuntu2.2.debian.tar.xz 960224 SHA256:0a447873c6b1a1c932df725f6c7d6639a3c3df82357eeb8a134b9573ec61b230
+```
 
 ### `dpkg` source package: `gnupg2=2.1.15-1ubuntu6`
 

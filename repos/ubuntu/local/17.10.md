@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c6cac97ba835a8800292fede7fcb0936aaf045334d35ca0475d4841c9b252629`
-- Created: `2017-06-02T16:14:48.704796108Z`
-- Virtual Size: ~ 89.73 Mb  
+- Image ID: `sha256:7cd123799e2cb7f93bb6cde48288f10c7556bfc248f6a6a14e7af4d14b7dc8a6`
+- Created: `2017-06-20T23:14:48.644913669Z`
+- Virtual Size: ~ 89.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -319,11 +319,11 @@ $ apt-get source -qq --print-uris diffutils=1:3.5-3
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.5-3.debian.tar.xz' diffutils_3.5-3.debian.tar.xz 10796 SHA256:5c8464482951de1dcf3c1c53643cd7d0939cd8f7568a7ef84982d368c5cb6695
 ```
 
-### `dpkg` source package: `dpkg=1.18.23ubuntu7`
+### `dpkg` source package: `dpkg=1.18.24ubuntu1`
 
 Binary Packages:
 
-- `dpkg=1.18.23ubuntu7`
+- `dpkg=1.18.24ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -333,8 +333,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `public-domain-md5`
 - `public-domain-s-s-d`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris dpkg=1.18.24ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.24ubuntu1.dsc' dpkg_1.18.24ubuntu1.dsc 2107 SHA256:b172c1c9bb6fc95f7f7c0e5b85412971767f7d62b36d734c9a6a561003ecbb42
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.18.24ubuntu1.tar.xz' dpkg_1.18.24ubuntu1.tar.xz 4542300 SHA256:434de41df64a47c631a656823453104f02c8ac6a04340096c18c0d5601bfcd03
+```
 
 ### `dpkg` source package: `e2fsprogs=1.43.4-2`
 
@@ -396,14 +401,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.1.0-6ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.1.0-6ubuntu2.dsc' gcc-7_7.1.0-6ubuntu2.dsc 30169 SHA256:451ebbc325041ca2ed53fb7c7693bbbe0c086d00272e904fa31f135873b10c8e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.1.0.orig.tar.gz' gcc-7_7.1.0.orig.tar.gz 71893585 SHA256:0906fd93706830db3030643ebade1b62a44ad3b5537693348b95c6058735b04f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.1.0-6ubuntu2.diff.gz' gcc-7_7.1.0-6ubuntu2.diff.gz 1165704 SHA256:8457d15551b59259fab698ebcb17ba8e6f1c5ee14c3a712ef5790821f2450345
-```
 
 ### `dpkg` source package: `glibc=2.24-9ubuntu2`
 
@@ -584,11 +583,11 @@ $ apt-get source -qq --print-uris libcap-ng=0.7.7-3
 'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap-ng/libcap-ng_0.7.7-3.debian.tar.xz' libcap-ng_0.7.7-3.debian.tar.xz 5248 SHA256:b7a0846dbd0451903bcbbe3a2696341f4e6000ebd64bed259c7fbf9dfc818363
 ```
 
-### `dpkg` source package: `libgcrypt20=1.7.6-1`
+### `dpkg` source package: `libgcrypt20=1.7.6-2`
 
 Binary Packages:
 
-- `libgcrypt20:amd64=1.7.6-1`
+- `libgcrypt20:amd64=1.7.6-2`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
@@ -844,11 +843,11 @@ $ apt-get source -qq --print-uris pcre3=2:8.39-3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-3.debian.tar.gz' pcre3_8.39-3.debian.tar.gz 25025 SHA256:a9f0e1a96b6a017965fe69233e267682c289f2cfeb33b46fb78aedcb8cf2c16a
 ```
 
-### `dpkg` source package: `perl=5.24.1-2ubuntu1`
+### `dpkg` source package: `perl=5.24.1-3ubuntu1`
 
 Binary Packages:
 
-- `perl-base=5.24.1-2ubuntu1`
+- `perl-base=5.24.1-3ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -880,8 +879,14 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.24.1-3ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1-3ubuntu1.dsc' perl_5.24.1-3ubuntu1.dsc 2437 SHA256:2e7674bf54ce0b48a9e111387943242363d9bb94b4bd60d66f3742525e64a134
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1-3ubuntu1.debian.tar.xz' perl_5.24.1-3ubuntu1.debian.tar.xz 169720 SHA256:b605e9cc22943bb3967b8625ce4da91f2eedd587041424ed352805a18e214a0e
+```
 
 ### `dpkg` source package: `pinentry=1.0.0-2`
 
@@ -1009,11 +1014,11 @@ $ apt-get source -qq --print-uris shadow=1:4.2-3.2ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu2.debian.tar.xz' shadow_4.2-3.2ubuntu2.debian.tar.xz 505468 SHA256:cf6ee576049e124e3f80116911ff81b37da1bfbae475b7a116412cbae79e7b81
 ```
 
-### `dpkg` source package: `sqlite3=3.16.2-3`
+### `dpkg` source package: `sqlite3=3.16.2-5`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.16.2-3`
+- `libsqlite3-0:amd64=3.16.2-5`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -1021,8 +1026,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.16.2-5
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.16.2-5.dsc' sqlite3_3.16.2-5.dsc 2510 SHA256:21a2d432ace9ecf50ca5d64580af78d4414a0cfcc8b8a4f15222e11cf105da09
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.16.2.orig-www.tar.xz' sqlite3_3.16.2.orig-www.tar.xz 3383968 SHA256:d5dd3de405c55c63c9f99fbfcf3defc91a54a81b5656c510cd46544aaed134fa
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.16.2.orig.tar.xz' sqlite3_3.16.2.orig.tar.xz 5634120 SHA256:bf7b1e8ea7577253b7f8a8287d111d542d1792cf1768edc66541ac851ff92453
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.16.2-5.debian.tar.xz' sqlite3_3.16.2-5.debian.tar.xz 21688 SHA256:a517fd9e479509cf861d9e916455e0195aebb2ec286c993f74a2cb0de889bd3e
+```
 
 ### `dpkg` source package: `systemd=233-6ubuntu3`
 
@@ -1041,14 +1053,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=233-6ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_233-6ubuntu3.dsc' systemd_233-6ubuntu3.dsc 4170 SHA256:47ef705a8bee001a2778a938d59c2ccf0428fa63796fa675c0485791addcd7b8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_233.orig.tar.gz' systemd_233.orig.tar.gz 4660737 SHA256:8b3e99da3d4164b66581830a7f2436c0c8fe697b5fbdc3927bdb960646be0083
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_233-6ubuntu3.debian.tar.xz' systemd_233-6ubuntu3.debian.tar.xz 144924 SHA256:674730e4a179be04bac090dd3d6300a785b4fd6f838cfe1502d11cfc9023f36d
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`
 

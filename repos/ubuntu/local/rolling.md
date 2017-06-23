@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:49d40961099da4da723cfdbcbded2a519b7e0b6c226bf2845b4bd628a2de1510`
-- Created: `2017-06-02T16:18:26.144308073Z`
-- Virtual Size: ~ 91.79 Mb  
+- Image ID: `sha256:8694892af3c55e1661711d60d5fc7dddafc058baa60b8c7cfb61df141a5400cd`
+- Created: `2017-06-20T23:23:15.179513179Z`
+- Virtual Size: ~ 92.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -409,13 +409,13 @@ $ apt-get source -qq --print-uris gcc-6=6.3.0-12ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-6/gcc-6_6.3.0-12ubuntu2.diff.gz' gcc-6_6.3.0-12ubuntu2.diff.gz 1846831 SHA256:6224eb9a94fab79477d2eb83c646a1dc313c21b715f07c97605de77502364d13
 ```
 
-### `dpkg` source package: `glibc=2.24-9ubuntu2`
+### `dpkg` source package: `glibc=2.24-9ubuntu2.2`
 
 Binary Packages:
 
-- `libc-bin=2.24-9ubuntu2`
-- `libc6:amd64=2.24-9ubuntu2`
-- `multiarch-support=2.24-9ubuntu2`
+- `libc-bin=2.24-9ubuntu2.2`
+- `libc6:amd64=2.24-9ubuntu2.2`
+- `multiarch-support=2.24-9ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
@@ -425,10 +425,10 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.24-9ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-9ubuntu2.dsc' glibc_2.24-9ubuntu2.dsc 8804 SHA256:cda05a3ebfa460628add96205d26ef42508c80069d169c9b5c2734135e74b52e
+$ apt-get source -qq --print-uris glibc=2.24-9ubuntu2.2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-9ubuntu2.2.dsc' glibc_2.24-9ubuntu2.2.dsc 8830 SHA256:27d3017ec9ed2ad211e59efbd64ed9f282164cb4b398173be0bbe024a53015b7
 'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24.orig.tar.xz' glibc_2.24.orig.tar.xz 13921912 SHA256:ed71e8afd2b270f7947a2cea2457a31e1ca4fac08e2731d80edd7ec1730ec84f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-9ubuntu2.debian.tar.xz' glibc_2.24-9ubuntu2.debian.tar.xz 1019792 SHA256:5109579155e5d03c826aaef8b96b3fe611a98c7ba1a4c9a28de0bdfae4b2ecad
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-9ubuntu2.2.debian.tar.xz' glibc_2.24-9ubuntu2.2.debian.tar.xz 1022036 SHA256:b178f17651a79c2823ae88e28ee61fbfa744efeb505b54f4c2698cfae6a593fe
 ```
 
 ### `dpkg` source package: `gnupg2=2.1.15-1ubuntu7`
