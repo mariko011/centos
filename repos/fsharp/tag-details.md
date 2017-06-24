@@ -16,7 +16,7 @@
 ## `fsharp:latest`
 
 ```console
-$ docker pull fsharp@sha256:ac5c26abdad6dc7a0ed51a3ba7a705bd517a511baaec2afea990798f9901f914
+$ docker pull fsharp@sha256:60e021fdd31f6fd0f9d6d2d62f3552e97cdc505e87462ed6e59234b41087cd46
 ```
 
 -	Platforms:
@@ -26,84 +26,84 @@ $ docker pull fsharp@sha256:ac5c26abdad6dc7a0ed51a3ba7a705bd517a511baaec2afea990
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **276.1 MB (276131400 bytes)**  
+-	Total Size: **276.1 MB (276136970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ae64c1f6d81d2452bedf3cc666b4dfe099ed544ad76eb45225f9d3aa7fece6cc`
+-	Image ID: `sha256:dfdd0f3ad3803afad918d55740231e491f47ce9653402bb0fd893b98abae3e59`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
-# Fri, 02 Jun 2017 16:15:37 GMT
-ADD file:1ad6d6b4b456510256c9561c6472b088a99a1858d86058e11408fc96112a3cee in / 
-# Fri, 02 Jun 2017 16:15:39 GMT
+# Tue, 20 Jun 2017 23:16:09 GMT
+ADD file:8c7b62577f9147353650fd7fe54e3fc119f7f39441b3b03fbba3e97e6de4a52a in / 
+# Tue, 20 Jun 2017 23:16:28 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 02 Jun 2017 16:15:41 GMT
+# Tue, 20 Jun 2017 23:16:30 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 16:15:42 GMT
+# Tue, 20 Jun 2017 23:16:55 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 02 Jun 2017 16:15:44 GMT
+# Tue, 20 Jun 2017 23:16:57 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 02 Jun 2017 16:15:44 GMT
+# Tue, 20 Jun 2017 23:16:57 GMT
 CMD ["/bin/bash"]
-# Fri, 02 Jun 2017 17:07:57 GMT
+# Wed, 21 Jun 2017 00:13:53 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:09:06 GMT
+# Wed, 21 Jun 2017 00:14:41 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:11:12 GMT
+# Wed, 21 Jun 2017 00:16:23 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:46:32 GMT
+# Wed, 21 Jun 2017 02:35:05 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>
-# Tue, 06 Jun 2017 21:21:30 GMT
+# Wed, 21 Jun 2017 02:35:06 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Tue, 06 Jun 2017 21:29:55 GMT
+# Wed, 21 Jun 2017 02:43:06 GMT
 RUN MONO_VERSION=4.8.1.0 &&     FSHARP_VERSION=4.1.18 &&     FSHARP_PREFIX=/usr &&     FSHARP_GACDIR=/usr/lib/mono/gac &&     FSHARP_BASENAME=fsharp-$FSHARP_VERSION &&     FSHARP_ARCHIVE=$FSHARP_VERSION.tar.gz &&     FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/$FSHARP_VERSION.tar.gz &&     apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list &&     apt-get update -y &&     apt-get --no-install-recommends install -y pkg-config nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p /tmp/src &&     cd /tmp/src &&     curl -LO $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src /tmp/NuGetScratch ~/.nuget ~/.config ~/.local
-# Tue, 06 Jun 2017 21:30:10 GMT
+# Wed, 21 Jun 2017 02:43:07 GMT
 WORKDIR /root
-# Tue, 06 Jun 2017 21:30:10 GMT
+# Wed, 21 Jun 2017 02:43:07 GMT
 CMD ["fsharpi"]
 ```
 
 -	Layers:
-	-	`sha256:1d8592394ba1ae81037e16fac3382070ce1478cf7f6c68d538c62ba067e111db`  
-		Last Modified: Fri, 02 Jun 2017 16:21:26 GMT  
-		Size: 67.1 MB (67110196 bytes)  
+	-	`sha256:cb56c90f0b30751153cb2c317de31d102631db364a68eefe5c4cfd9f62a8c9df`  
+		Last Modified: Tue, 20 Jun 2017 23:27:36 GMT  
+		Size: 67.1 MB (67114523 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01aa7f61ccd17f0a729b91e6ba4ae6aedb51ca43acb3244b9732dbc043814786`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 72.6 KB (72620 bytes)  
+	-	`sha256:0acc551e5716c235426294464414cbf9850455193f716fada6ef54307f7939af`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 72.6 KB (72624 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5dd2552a960ee746b6272c9a7d2b3a252e07bf8ef38a0c8df117e0d96bf44904`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 356.0 B  
+	-	`sha256:8956dcd35143057f60f158c2e425e03aabd4425302a5e0ff17a927baf83e1178`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7cbe941c5e3e55212fc2b56ef27a44b887b24bf163a3c1fbda2023265355d088`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 676.0 B  
+	-	`sha256:9082427212149330be15339e16f9a9130ffc7ae005974a78235fb0ee8ea45b11`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 675.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2549ecfb14c6934eb6ff9c45f15839db6abf3bdfbc617589f53ae4f67f265629`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 163.0 B  
+	-	`sha256:b44ff14dd3bbdf87d487f60d1da9ffbde069fbfa782aa8d02997b5a013e10479`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c5e13aa4be9211a1b0511b6920b59ea9f46d7c0689e7d23d966e2fa3959ef24`  
-		Last Modified: Fri, 02 Jun 2017 17:30:38 GMT  
-		Size: 4.7 MB (4705680 bytes)  
+	-	`sha256:81ac3d025953c10e8e215b1c1f26ee00c3249bd7e5484fefbe066c5445b93e6c`  
+		Last Modified: Wed, 21 Jun 2017 00:55:49 GMT  
+		Size: 4.7 MB (4705689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85b87eb44edbbd95cdb23bf03161df3a9bdfc405eceecba13d93e97ec827a765`  
-		Last Modified: Fri, 02 Jun 2017 17:31:27 GMT  
-		Size: 29.5 MB (29544927 bytes)  
+	-	`sha256:0ab8d031f681d23259d5f8409e5ce6163f0cf4bf67ace155a54f5f0833d476e4`  
+		Last Modified: Wed, 21 Jun 2017 00:56:33 GMT  
+		Size: 29.5 MB (29544437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e20450406d21f7ae0b42570b754bd9de2b7b6747b7153f04fee3a61fbc35232d`  
-		Last Modified: Fri, 02 Jun 2017 17:32:24 GMT  
-		Size: 105.4 MB (105361509 bytes)  
+	-	`sha256:fa3eace004c976151e0bc09f699010f2f7800dcaf220647ea66bfc71224b2d66`  
+		Last Modified: Wed, 21 Jun 2017 00:57:32 GMT  
+		Size: 105.4 MB (105362748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f44483640ec642a812e4292f1800ba8abef22b90b722311475e7f1a64df43e2`  
-		Last Modified: Tue, 06 Jun 2017 21:54:13 GMT  
-		Size: 69.3 MB (69335273 bytes)  
+	-	`sha256:7b754ecdb632f1c1f2903df23e371a593d55b7f78c07fe1ed4e3fab9f7177257`  
+		Last Modified: Sat, 24 Jun 2017 08:55:30 GMT  
+		Size: 69.3 MB (69335752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fsharp:4`
 
 ```console
-$ docker pull fsharp@sha256:ac5c26abdad6dc7a0ed51a3ba7a705bd517a511baaec2afea990798f9901f914
+$ docker pull fsharp@sha256:60e021fdd31f6fd0f9d6d2d62f3552e97cdc505e87462ed6e59234b41087cd46
 ```
 
 -	Platforms:
@@ -113,84 +113,84 @@ $ docker pull fsharp@sha256:ac5c26abdad6dc7a0ed51a3ba7a705bd517a511baaec2afea990
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **276.1 MB (276131400 bytes)**  
+-	Total Size: **276.1 MB (276136970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ae64c1f6d81d2452bedf3cc666b4dfe099ed544ad76eb45225f9d3aa7fece6cc`
+-	Image ID: `sha256:dfdd0f3ad3803afad918d55740231e491f47ce9653402bb0fd893b98abae3e59`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
-# Fri, 02 Jun 2017 16:15:37 GMT
-ADD file:1ad6d6b4b456510256c9561c6472b088a99a1858d86058e11408fc96112a3cee in / 
-# Fri, 02 Jun 2017 16:15:39 GMT
+# Tue, 20 Jun 2017 23:16:09 GMT
+ADD file:8c7b62577f9147353650fd7fe54e3fc119f7f39441b3b03fbba3e97e6de4a52a in / 
+# Tue, 20 Jun 2017 23:16:28 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 02 Jun 2017 16:15:41 GMT
+# Tue, 20 Jun 2017 23:16:30 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 16:15:42 GMT
+# Tue, 20 Jun 2017 23:16:55 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 02 Jun 2017 16:15:44 GMT
+# Tue, 20 Jun 2017 23:16:57 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 02 Jun 2017 16:15:44 GMT
+# Tue, 20 Jun 2017 23:16:57 GMT
 CMD ["/bin/bash"]
-# Fri, 02 Jun 2017 17:07:57 GMT
+# Wed, 21 Jun 2017 00:13:53 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:09:06 GMT
+# Wed, 21 Jun 2017 00:14:41 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:11:12 GMT
+# Wed, 21 Jun 2017 00:16:23 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:46:32 GMT
+# Wed, 21 Jun 2017 02:35:05 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>
-# Tue, 06 Jun 2017 21:21:30 GMT
+# Wed, 21 Jun 2017 02:35:06 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Tue, 06 Jun 2017 21:29:55 GMT
+# Wed, 21 Jun 2017 02:43:06 GMT
 RUN MONO_VERSION=4.8.1.0 &&     FSHARP_VERSION=4.1.18 &&     FSHARP_PREFIX=/usr &&     FSHARP_GACDIR=/usr/lib/mono/gac &&     FSHARP_BASENAME=fsharp-$FSHARP_VERSION &&     FSHARP_ARCHIVE=$FSHARP_VERSION.tar.gz &&     FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/$FSHARP_VERSION.tar.gz &&     apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list &&     apt-get update -y &&     apt-get --no-install-recommends install -y pkg-config nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p /tmp/src &&     cd /tmp/src &&     curl -LO $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src /tmp/NuGetScratch ~/.nuget ~/.config ~/.local
-# Tue, 06 Jun 2017 21:30:10 GMT
+# Wed, 21 Jun 2017 02:43:07 GMT
 WORKDIR /root
-# Tue, 06 Jun 2017 21:30:10 GMT
+# Wed, 21 Jun 2017 02:43:07 GMT
 CMD ["fsharpi"]
 ```
 
 -	Layers:
-	-	`sha256:1d8592394ba1ae81037e16fac3382070ce1478cf7f6c68d538c62ba067e111db`  
-		Last Modified: Fri, 02 Jun 2017 16:21:26 GMT  
-		Size: 67.1 MB (67110196 bytes)  
+	-	`sha256:cb56c90f0b30751153cb2c317de31d102631db364a68eefe5c4cfd9f62a8c9df`  
+		Last Modified: Tue, 20 Jun 2017 23:27:36 GMT  
+		Size: 67.1 MB (67114523 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01aa7f61ccd17f0a729b91e6ba4ae6aedb51ca43acb3244b9732dbc043814786`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 72.6 KB (72620 bytes)  
+	-	`sha256:0acc551e5716c235426294464414cbf9850455193f716fada6ef54307f7939af`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 72.6 KB (72624 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5dd2552a960ee746b6272c9a7d2b3a252e07bf8ef38a0c8df117e0d96bf44904`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 356.0 B  
+	-	`sha256:8956dcd35143057f60f158c2e425e03aabd4425302a5e0ff17a927baf83e1178`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7cbe941c5e3e55212fc2b56ef27a44b887b24bf163a3c1fbda2023265355d088`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 676.0 B  
+	-	`sha256:9082427212149330be15339e16f9a9130ffc7ae005974a78235fb0ee8ea45b11`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 675.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2549ecfb14c6934eb6ff9c45f15839db6abf3bdfbc617589f53ae4f67f265629`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 163.0 B  
+	-	`sha256:b44ff14dd3bbdf87d487f60d1da9ffbde069fbfa782aa8d02997b5a013e10479`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c5e13aa4be9211a1b0511b6920b59ea9f46d7c0689e7d23d966e2fa3959ef24`  
-		Last Modified: Fri, 02 Jun 2017 17:30:38 GMT  
-		Size: 4.7 MB (4705680 bytes)  
+	-	`sha256:81ac3d025953c10e8e215b1c1f26ee00c3249bd7e5484fefbe066c5445b93e6c`  
+		Last Modified: Wed, 21 Jun 2017 00:55:49 GMT  
+		Size: 4.7 MB (4705689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85b87eb44edbbd95cdb23bf03161df3a9bdfc405eceecba13d93e97ec827a765`  
-		Last Modified: Fri, 02 Jun 2017 17:31:27 GMT  
-		Size: 29.5 MB (29544927 bytes)  
+	-	`sha256:0ab8d031f681d23259d5f8409e5ce6163f0cf4bf67ace155a54f5f0833d476e4`  
+		Last Modified: Wed, 21 Jun 2017 00:56:33 GMT  
+		Size: 29.5 MB (29544437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e20450406d21f7ae0b42570b754bd9de2b7b6747b7153f04fee3a61fbc35232d`  
-		Last Modified: Fri, 02 Jun 2017 17:32:24 GMT  
-		Size: 105.4 MB (105361509 bytes)  
+	-	`sha256:fa3eace004c976151e0bc09f699010f2f7800dcaf220647ea66bfc71224b2d66`  
+		Last Modified: Wed, 21 Jun 2017 00:57:32 GMT  
+		Size: 105.4 MB (105362748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f44483640ec642a812e4292f1800ba8abef22b90b722311475e7f1a64df43e2`  
-		Last Modified: Tue, 06 Jun 2017 21:54:13 GMT  
-		Size: 69.3 MB (69335273 bytes)  
+	-	`sha256:7b754ecdb632f1c1f2903df23e371a593d55b7f78c07fe1ed4e3fab9f7177257`  
+		Last Modified: Sat, 24 Jun 2017 08:55:30 GMT  
+		Size: 69.3 MB (69335752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fsharp:4.1`
 
 ```console
-$ docker pull fsharp@sha256:ac5c26abdad6dc7a0ed51a3ba7a705bd517a511baaec2afea990798f9901f914
+$ docker pull fsharp@sha256:60e021fdd31f6fd0f9d6d2d62f3552e97cdc505e87462ed6e59234b41087cd46
 ```
 
 -	Platforms:
@@ -200,84 +200,84 @@ $ docker pull fsharp@sha256:ac5c26abdad6dc7a0ed51a3ba7a705bd517a511baaec2afea990
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **276.1 MB (276131400 bytes)**  
+-	Total Size: **276.1 MB (276136970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ae64c1f6d81d2452bedf3cc666b4dfe099ed544ad76eb45225f9d3aa7fece6cc`
+-	Image ID: `sha256:dfdd0f3ad3803afad918d55740231e491f47ce9653402bb0fd893b98abae3e59`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
-# Fri, 02 Jun 2017 16:15:37 GMT
-ADD file:1ad6d6b4b456510256c9561c6472b088a99a1858d86058e11408fc96112a3cee in / 
-# Fri, 02 Jun 2017 16:15:39 GMT
+# Tue, 20 Jun 2017 23:16:09 GMT
+ADD file:8c7b62577f9147353650fd7fe54e3fc119f7f39441b3b03fbba3e97e6de4a52a in / 
+# Tue, 20 Jun 2017 23:16:28 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 02 Jun 2017 16:15:41 GMT
+# Tue, 20 Jun 2017 23:16:30 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 16:15:42 GMT
+# Tue, 20 Jun 2017 23:16:55 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 02 Jun 2017 16:15:44 GMT
+# Tue, 20 Jun 2017 23:16:57 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 02 Jun 2017 16:15:44 GMT
+# Tue, 20 Jun 2017 23:16:57 GMT
 CMD ["/bin/bash"]
-# Fri, 02 Jun 2017 17:07:57 GMT
+# Wed, 21 Jun 2017 00:13:53 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:09:06 GMT
+# Wed, 21 Jun 2017 00:14:41 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:11:12 GMT
+# Wed, 21 Jun 2017 00:16:23 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:46:32 GMT
+# Wed, 21 Jun 2017 02:35:05 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>
-# Tue, 06 Jun 2017 21:21:30 GMT
+# Wed, 21 Jun 2017 02:35:06 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Tue, 06 Jun 2017 21:29:55 GMT
+# Wed, 21 Jun 2017 02:43:06 GMT
 RUN MONO_VERSION=4.8.1.0 &&     FSHARP_VERSION=4.1.18 &&     FSHARP_PREFIX=/usr &&     FSHARP_GACDIR=/usr/lib/mono/gac &&     FSHARP_BASENAME=fsharp-$FSHARP_VERSION &&     FSHARP_ARCHIVE=$FSHARP_VERSION.tar.gz &&     FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/$FSHARP_VERSION.tar.gz &&     apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list &&     apt-get update -y &&     apt-get --no-install-recommends install -y pkg-config nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p /tmp/src &&     cd /tmp/src &&     curl -LO $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src /tmp/NuGetScratch ~/.nuget ~/.config ~/.local
-# Tue, 06 Jun 2017 21:30:10 GMT
+# Wed, 21 Jun 2017 02:43:07 GMT
 WORKDIR /root
-# Tue, 06 Jun 2017 21:30:10 GMT
+# Wed, 21 Jun 2017 02:43:07 GMT
 CMD ["fsharpi"]
 ```
 
 -	Layers:
-	-	`sha256:1d8592394ba1ae81037e16fac3382070ce1478cf7f6c68d538c62ba067e111db`  
-		Last Modified: Fri, 02 Jun 2017 16:21:26 GMT  
-		Size: 67.1 MB (67110196 bytes)  
+	-	`sha256:cb56c90f0b30751153cb2c317de31d102631db364a68eefe5c4cfd9f62a8c9df`  
+		Last Modified: Tue, 20 Jun 2017 23:27:36 GMT  
+		Size: 67.1 MB (67114523 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01aa7f61ccd17f0a729b91e6ba4ae6aedb51ca43acb3244b9732dbc043814786`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 72.6 KB (72620 bytes)  
+	-	`sha256:0acc551e5716c235426294464414cbf9850455193f716fada6ef54307f7939af`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 72.6 KB (72624 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5dd2552a960ee746b6272c9a7d2b3a252e07bf8ef38a0c8df117e0d96bf44904`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 356.0 B  
+	-	`sha256:8956dcd35143057f60f158c2e425e03aabd4425302a5e0ff17a927baf83e1178`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7cbe941c5e3e55212fc2b56ef27a44b887b24bf163a3c1fbda2023265355d088`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 676.0 B  
+	-	`sha256:9082427212149330be15339e16f9a9130ffc7ae005974a78235fb0ee8ea45b11`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 675.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2549ecfb14c6934eb6ff9c45f15839db6abf3bdfbc617589f53ae4f67f265629`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 163.0 B  
+	-	`sha256:b44ff14dd3bbdf87d487f60d1da9ffbde069fbfa782aa8d02997b5a013e10479`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c5e13aa4be9211a1b0511b6920b59ea9f46d7c0689e7d23d966e2fa3959ef24`  
-		Last Modified: Fri, 02 Jun 2017 17:30:38 GMT  
-		Size: 4.7 MB (4705680 bytes)  
+	-	`sha256:81ac3d025953c10e8e215b1c1f26ee00c3249bd7e5484fefbe066c5445b93e6c`  
+		Last Modified: Wed, 21 Jun 2017 00:55:49 GMT  
+		Size: 4.7 MB (4705689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85b87eb44edbbd95cdb23bf03161df3a9bdfc405eceecba13d93e97ec827a765`  
-		Last Modified: Fri, 02 Jun 2017 17:31:27 GMT  
-		Size: 29.5 MB (29544927 bytes)  
+	-	`sha256:0ab8d031f681d23259d5f8409e5ce6163f0cf4bf67ace155a54f5f0833d476e4`  
+		Last Modified: Wed, 21 Jun 2017 00:56:33 GMT  
+		Size: 29.5 MB (29544437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e20450406d21f7ae0b42570b754bd9de2b7b6747b7153f04fee3a61fbc35232d`  
-		Last Modified: Fri, 02 Jun 2017 17:32:24 GMT  
-		Size: 105.4 MB (105361509 bytes)  
+	-	`sha256:fa3eace004c976151e0bc09f699010f2f7800dcaf220647ea66bfc71224b2d66`  
+		Last Modified: Wed, 21 Jun 2017 00:57:32 GMT  
+		Size: 105.4 MB (105362748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f44483640ec642a812e4292f1800ba8abef22b90b722311475e7f1a64df43e2`  
-		Last Modified: Tue, 06 Jun 2017 21:54:13 GMT  
-		Size: 69.3 MB (69335273 bytes)  
+	-	`sha256:7b754ecdb632f1c1f2903df23e371a593d55b7f78c07fe1ed4e3fab9f7177257`  
+		Last Modified: Sat, 24 Jun 2017 08:55:30 GMT  
+		Size: 69.3 MB (69335752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fsharp:4.1.18`
 
 ```console
-$ docker pull fsharp@sha256:ac5c26abdad6dc7a0ed51a3ba7a705bd517a511baaec2afea990798f9901f914
+$ docker pull fsharp@sha256:60e021fdd31f6fd0f9d6d2d62f3552e97cdc505e87462ed6e59234b41087cd46
 ```
 
 -	Platforms:
@@ -287,84 +287,84 @@ $ docker pull fsharp@sha256:ac5c26abdad6dc7a0ed51a3ba7a705bd517a511baaec2afea990
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **276.1 MB (276131400 bytes)**  
+-	Total Size: **276.1 MB (276136970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ae64c1f6d81d2452bedf3cc666b4dfe099ed544ad76eb45225f9d3aa7fece6cc`
+-	Image ID: `sha256:dfdd0f3ad3803afad918d55740231e491f47ce9653402bb0fd893b98abae3e59`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
-# Fri, 02 Jun 2017 16:15:37 GMT
-ADD file:1ad6d6b4b456510256c9561c6472b088a99a1858d86058e11408fc96112a3cee in / 
-# Fri, 02 Jun 2017 16:15:39 GMT
+# Tue, 20 Jun 2017 23:16:09 GMT
+ADD file:8c7b62577f9147353650fd7fe54e3fc119f7f39441b3b03fbba3e97e6de4a52a in / 
+# Tue, 20 Jun 2017 23:16:28 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 02 Jun 2017 16:15:41 GMT
+# Tue, 20 Jun 2017 23:16:30 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 16:15:42 GMT
+# Tue, 20 Jun 2017 23:16:55 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 02 Jun 2017 16:15:44 GMT
+# Tue, 20 Jun 2017 23:16:57 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 02 Jun 2017 16:15:44 GMT
+# Tue, 20 Jun 2017 23:16:57 GMT
 CMD ["/bin/bash"]
-# Fri, 02 Jun 2017 17:07:57 GMT
+# Wed, 21 Jun 2017 00:13:53 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:09:06 GMT
+# Wed, 21 Jun 2017 00:14:41 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:11:12 GMT
+# Wed, 21 Jun 2017 00:16:23 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:46:32 GMT
+# Wed, 21 Jun 2017 02:35:05 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>
-# Tue, 06 Jun 2017 21:21:30 GMT
+# Wed, 21 Jun 2017 02:35:06 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Tue, 06 Jun 2017 21:29:55 GMT
+# Wed, 21 Jun 2017 02:43:06 GMT
 RUN MONO_VERSION=4.8.1.0 &&     FSHARP_VERSION=4.1.18 &&     FSHARP_PREFIX=/usr &&     FSHARP_GACDIR=/usr/lib/mono/gac &&     FSHARP_BASENAME=fsharp-$FSHARP_VERSION &&     FSHARP_ARCHIVE=$FSHARP_VERSION.tar.gz &&     FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/$FSHARP_VERSION.tar.gz &&     apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list &&     apt-get update -y &&     apt-get --no-install-recommends install -y pkg-config nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p /tmp/src &&     cd /tmp/src &&     curl -LO $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src /tmp/NuGetScratch ~/.nuget ~/.config ~/.local
-# Tue, 06 Jun 2017 21:30:10 GMT
+# Wed, 21 Jun 2017 02:43:07 GMT
 WORKDIR /root
-# Tue, 06 Jun 2017 21:30:10 GMT
+# Wed, 21 Jun 2017 02:43:07 GMT
 CMD ["fsharpi"]
 ```
 
 -	Layers:
-	-	`sha256:1d8592394ba1ae81037e16fac3382070ce1478cf7f6c68d538c62ba067e111db`  
-		Last Modified: Fri, 02 Jun 2017 16:21:26 GMT  
-		Size: 67.1 MB (67110196 bytes)  
+	-	`sha256:cb56c90f0b30751153cb2c317de31d102631db364a68eefe5c4cfd9f62a8c9df`  
+		Last Modified: Tue, 20 Jun 2017 23:27:36 GMT  
+		Size: 67.1 MB (67114523 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01aa7f61ccd17f0a729b91e6ba4ae6aedb51ca43acb3244b9732dbc043814786`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 72.6 KB (72620 bytes)  
+	-	`sha256:0acc551e5716c235426294464414cbf9850455193f716fada6ef54307f7939af`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 72.6 KB (72624 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5dd2552a960ee746b6272c9a7d2b3a252e07bf8ef38a0c8df117e0d96bf44904`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 356.0 B  
+	-	`sha256:8956dcd35143057f60f158c2e425e03aabd4425302a5e0ff17a927baf83e1178`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7cbe941c5e3e55212fc2b56ef27a44b887b24bf163a3c1fbda2023265355d088`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 676.0 B  
+	-	`sha256:9082427212149330be15339e16f9a9130ffc7ae005974a78235fb0ee8ea45b11`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 675.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2549ecfb14c6934eb6ff9c45f15839db6abf3bdfbc617589f53ae4f67f265629`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 163.0 B  
+	-	`sha256:b44ff14dd3bbdf87d487f60d1da9ffbde069fbfa782aa8d02997b5a013e10479`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c5e13aa4be9211a1b0511b6920b59ea9f46d7c0689e7d23d966e2fa3959ef24`  
-		Last Modified: Fri, 02 Jun 2017 17:30:38 GMT  
-		Size: 4.7 MB (4705680 bytes)  
+	-	`sha256:81ac3d025953c10e8e215b1c1f26ee00c3249bd7e5484fefbe066c5445b93e6c`  
+		Last Modified: Wed, 21 Jun 2017 00:55:49 GMT  
+		Size: 4.7 MB (4705689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85b87eb44edbbd95cdb23bf03161df3a9bdfc405eceecba13d93e97ec827a765`  
-		Last Modified: Fri, 02 Jun 2017 17:31:27 GMT  
-		Size: 29.5 MB (29544927 bytes)  
+	-	`sha256:0ab8d031f681d23259d5f8409e5ce6163f0cf4bf67ace155a54f5f0833d476e4`  
+		Last Modified: Wed, 21 Jun 2017 00:56:33 GMT  
+		Size: 29.5 MB (29544437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e20450406d21f7ae0b42570b754bd9de2b7b6747b7153f04fee3a61fbc35232d`  
-		Last Modified: Fri, 02 Jun 2017 17:32:24 GMT  
-		Size: 105.4 MB (105361509 bytes)  
+	-	`sha256:fa3eace004c976151e0bc09f699010f2f7800dcaf220647ea66bfc71224b2d66`  
+		Last Modified: Wed, 21 Jun 2017 00:57:32 GMT  
+		Size: 105.4 MB (105362748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f44483640ec642a812e4292f1800ba8abef22b90b722311475e7f1a64df43e2`  
-		Last Modified: Tue, 06 Jun 2017 21:54:13 GMT  
-		Size: 69.3 MB (69335273 bytes)  
+	-	`sha256:7b754ecdb632f1c1f2903df23e371a593d55b7f78c07fe1ed4e3fab9f7177257`  
+		Last Modified: Sat, 24 Jun 2017 08:55:30 GMT  
+		Size: 69.3 MB (69335752 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fsharp:4.1.18-wheezy-slim`
 
 ```console
-$ docker pull fsharp@sha256:da89a986ae9aa7d0a1b7a7447c71ee8093c3cc32941d5b2c040640c45ea0ab42
+$ docker pull fsharp@sha256:8cabebc9dc1652088fcf478c0c60d28d4ae97e8025d27b91d6d3618a2b5586fc
 ```
 
 -	Platforms:
@@ -374,42 +374,42 @@ $ docker pull fsharp@sha256:da89a986ae9aa7d0a1b7a7447c71ee8093c3cc32941d5b2c0406
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **125.3 MB (125279685 bytes)**  
+-	Total Size: **123.3 MB (123339524 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f6704ffb681b85117407b6e3cdf0749e97506ec664015ad03562d86e76320020`
+-	Image ID: `sha256:b75e3c5ec2e020824b7337833b8fbd0885db46c9cec46909915c851ed70d0a33`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
-# Mon, 08 May 2017 23:41:58 GMT
-ADD file:ec0c9107c69a3f85f7d43fdc297a5f989f6ba8dfb67ad8fb8fdd6e8bd5f51e08 in / 
-# Mon, 08 May 2017 23:41:59 GMT
-CMD ["/bin/bash"]
-# Tue, 06 Jun 2017 21:44:07 GMT
+# Tue, 20 Jun 2017 20:31:15 GMT
+ADD file:99d706a1b056666b3cfadb00ebc3fe2bef3f3790d09a14a8a4f349c652aa98b1 in / 
+# Tue, 20 Jun 2017 20:31:16 GMT
+CMD ["bash"]
+# Wed, 21 Jun 2017 02:43:33 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>
-# Tue, 06 Jun 2017 21:44:08 GMT
+# Wed, 21 Jun 2017 02:43:34 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Tue, 06 Jun 2017 21:53:08 GMT
+# Wed, 21 Jun 2017 02:51:31 GMT
 RUN MONO_VERSION=4.8.1.0 &&     FSHARP_VERSION=4.1.18 &&     FSHARP_PREFIX=/usr &&     FSHARP_GACDIR=/usr/lib/mono/gac &&     FSHARP_BASENAME=fsharp-$FSHARP_VERSION &&     FSHARP_ARCHIVE=$FSHARP_VERSION.tar.gz &&     FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/$FSHARP_VERSION.tar.gz &&     apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list &&     apt-get update -y &&     apt-get --no-install-recommends install -y autoconf libtool pkg-config make automake nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/* &&     mkdir -p /tmp/src &&     cd /tmp/src &&     printf "namespace a { class b { public static void Main(string[] args) { new System.Net.WebClient().DownloadFile(\"%s\", \"%s\");}}}" $FSHARP_ARCHIVE_URL $FSHARP_ARCHIVE > download-fsharp.cs &&     mcs download-fsharp.cs && mono download-fsharp.exe && rm download-fsharp.exe download-fsharp.cs &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src /tmp/NuGetScratch ~/.nuget ~/.config ~/.local &&     apt-get purge -y autoconf libtool make automake &&     apt-get clean
-# Tue, 06 Jun 2017 21:53:29 GMT
+# Wed, 21 Jun 2017 02:51:32 GMT
 WORKDIR /root
-# Tue, 06 Jun 2017 21:53:29 GMT
+# Wed, 21 Jun 2017 02:51:33 GMT
 CMD ["fsharpi"]
 ```
 
 -	Layers:
-	-	`sha256:8db8e759140b7c108d2930a3ea221452a154daec5da41243e1c7beb3da19d39f`  
-		Last Modified: Tue, 09 May 2017 00:00:51 GMT  
-		Size: 19.6 MB (19627892 bytes)  
+	-	`sha256:e905db3f7c950542ae57979a09389fae88fbe10a10d30f30928c3e7d177bf051`  
+		Last Modified: Tue, 20 Jun 2017 21:07:00 GMT  
+		Size: 19.2 MB (19159206 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c61da2a1b974b49150b0d95754d0462861a25c1659fb32fd967d062e827fdf9`  
-		Last Modified: Tue, 06 Jun 2017 21:56:15 GMT  
-		Size: 105.7 MB (105651793 bytes)  
+	-	`sha256:d5dc9ed30d0d3ec99bb3989caf6622c6acf4948124e127c9045d7e9e26ef278c`  
+		Last Modified: Sat, 24 Jun 2017 08:57:54 GMT  
+		Size: 104.2 MB (104180318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fsharp:4.1.0.1`
 
 ```console
-$ docker pull fsharp@sha256:ca7378651bf09e9271c8bbb69ce31bc2f9c8b8dda8f90c06496076ab94216efd
+$ docker pull fsharp@sha256:f6adb2d0f7808a4b4cdf3fbd47c4f4a212d1fbfb7ee93602f981e9bd946dad95
 ```
 
 -	Platforms:
@@ -419,102 +419,102 @@ $ docker pull fsharp@sha256:ca7378651bf09e9271c8bbb69ce31bc2f9c8b8dda8f90c064960
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **320.0 MB (320005336 bytes)**  
+-	Total Size: **320.0 MB (320009916 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:895b67cb89fe1440e78f9dfc12b94088a9f949da05811655f79d74adacc94d87`
+-	Image ID: `sha256:a0a6b316f5f16e84d0535eb2f307d51b7bd099f94f5d8e99264a91ac4cded83c`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
-# Fri, 02 Jun 2017 16:15:37 GMT
-ADD file:1ad6d6b4b456510256c9561c6472b088a99a1858d86058e11408fc96112a3cee in / 
-# Fri, 02 Jun 2017 16:15:39 GMT
+# Tue, 20 Jun 2017 23:16:09 GMT
+ADD file:8c7b62577f9147353650fd7fe54e3fc119f7f39441b3b03fbba3e97e6de4a52a in / 
+# Tue, 20 Jun 2017 23:16:28 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 02 Jun 2017 16:15:41 GMT
+# Tue, 20 Jun 2017 23:16:30 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 16:15:42 GMT
+# Tue, 20 Jun 2017 23:16:55 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 02 Jun 2017 16:15:44 GMT
+# Tue, 20 Jun 2017 23:16:57 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 02 Jun 2017 16:15:44 GMT
+# Tue, 20 Jun 2017 23:16:57 GMT
 CMD ["/bin/bash"]
-# Fri, 02 Jun 2017 17:07:57 GMT
+# Wed, 21 Jun 2017 00:13:53 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:09:06 GMT
+# Wed, 21 Jun 2017 00:14:41 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:11:12 GMT
+# Wed, 21 Jun 2017 00:16:23 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:46:32 GMT
+# Wed, 21 Jun 2017 02:35:05 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>
-# Fri, 02 Jun 2017 18:02:55 GMT
+# Wed, 21 Jun 2017 02:51:58 GMT
 ENV MONO_VERSION=4.8.0.495
-# Fri, 02 Jun 2017 18:02:58 GMT
+# Wed, 21 Jun 2017 02:52:02 GMT
 RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list
-# Fri, 02 Jun 2017 18:02:59 GMT
+# Wed, 21 Jun 2017 02:52:03 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Fri, 02 Jun 2017 18:04:35 GMT
+# Wed, 21 Jun 2017 02:53:31 GMT
 RUN apt-get -y update &&     apt-get -y --no-install-recommends install nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 18:04:53 GMT
+# Wed, 21 Jun 2017 02:53:32 GMT
 ENV FSHARP_VERSION=4.1.0.1
-# Fri, 02 Jun 2017 18:04:54 GMT
+# Wed, 21 Jun 2017 02:53:32 GMT
 ENV FSHARP_PREFIX=/usr FSHARP_GACDIR=/usr/lib/mono/gac FSHARP_BASENAME=fsharp-4.1.0.1 FSHARP_ARCHIVE=4.1.0.1.tar.gz FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/4.1.0.1.tar.gz
-# Fri, 02 Jun 2017 18:15:19 GMT
+# Wed, 21 Jun 2017 03:02:13 GMT
 RUN mkdir -p /tmp/src &&     cd /tmp/src &&     wget $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src
-# Fri, 02 Jun 2017 18:53:39 GMT
+# Wed, 21 Jun 2017 03:02:13 GMT
 WORKDIR /root
-# Fri, 02 Jun 2017 18:53:40 GMT
+# Wed, 21 Jun 2017 03:02:14 GMT
 CMD ["fsharpi"]
 ```
 
 -	Layers:
-	-	`sha256:1d8592394ba1ae81037e16fac3382070ce1478cf7f6c68d538c62ba067e111db`  
-		Last Modified: Fri, 02 Jun 2017 16:21:26 GMT  
-		Size: 67.1 MB (67110196 bytes)  
+	-	`sha256:cb56c90f0b30751153cb2c317de31d102631db364a68eefe5c4cfd9f62a8c9df`  
+		Last Modified: Tue, 20 Jun 2017 23:27:36 GMT  
+		Size: 67.1 MB (67114523 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01aa7f61ccd17f0a729b91e6ba4ae6aedb51ca43acb3244b9732dbc043814786`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 72.6 KB (72620 bytes)  
+	-	`sha256:0acc551e5716c235426294464414cbf9850455193f716fada6ef54307f7939af`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 72.6 KB (72624 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5dd2552a960ee746b6272c9a7d2b3a252e07bf8ef38a0c8df117e0d96bf44904`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 356.0 B  
+	-	`sha256:8956dcd35143057f60f158c2e425e03aabd4425302a5e0ff17a927baf83e1178`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7cbe941c5e3e55212fc2b56ef27a44b887b24bf163a3c1fbda2023265355d088`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 676.0 B  
+	-	`sha256:9082427212149330be15339e16f9a9130ffc7ae005974a78235fb0ee8ea45b11`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 675.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2549ecfb14c6934eb6ff9c45f15839db6abf3bdfbc617589f53ae4f67f265629`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 163.0 B  
+	-	`sha256:b44ff14dd3bbdf87d487f60d1da9ffbde069fbfa782aa8d02997b5a013e10479`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c5e13aa4be9211a1b0511b6920b59ea9f46d7c0689e7d23d966e2fa3959ef24`  
-		Last Modified: Fri, 02 Jun 2017 17:30:38 GMT  
-		Size: 4.7 MB (4705680 bytes)  
+	-	`sha256:81ac3d025953c10e8e215b1c1f26ee00c3249bd7e5484fefbe066c5445b93e6c`  
+		Last Modified: Wed, 21 Jun 2017 00:55:49 GMT  
+		Size: 4.7 MB (4705689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85b87eb44edbbd95cdb23bf03161df3a9bdfc405eceecba13d93e97ec827a765`  
-		Last Modified: Fri, 02 Jun 2017 17:31:27 GMT  
-		Size: 29.5 MB (29544927 bytes)  
+	-	`sha256:0ab8d031f681d23259d5f8409e5ce6163f0cf4bf67ace155a54f5f0833d476e4`  
+		Last Modified: Wed, 21 Jun 2017 00:56:33 GMT  
+		Size: 29.5 MB (29544437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e20450406d21f7ae0b42570b754bd9de2b7b6747b7153f04fee3a61fbc35232d`  
-		Last Modified: Fri, 02 Jun 2017 17:32:24 GMT  
-		Size: 105.4 MB (105361509 bytes)  
+	-	`sha256:fa3eace004c976151e0bc09f699010f2f7800dcaf220647ea66bfc71224b2d66`  
+		Last Modified: Wed, 21 Jun 2017 00:57:32 GMT  
+		Size: 105.4 MB (105362748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e42daf7a2fdd5cbb70cdc62771b0f17f464d9da2e0dc33939921856b5f073b6c`  
-		Last Modified: Fri, 02 Jun 2017 19:53:12 GMT  
-		Size: 13.8 KB (13817 bytes)  
+	-	`sha256:109e0afa2f018e33e160f9a6a26a87c3324caa9b39bd5483865759532aaf7f42`  
+		Last Modified: Sat, 24 Jun 2017 08:58:26 GMT  
+		Size: 13.8 KB (13818 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e03a314e004ea981f460b875d910d735c04bd49ebbcef4f0676c62c4a4d49e1c`  
-		Last Modified: Fri, 02 Jun 2017 19:53:31 GMT  
-		Size: 54.9 MB (54891899 bytes)  
+	-	`sha256:c6f216466e616c8a8a0812c9fd57628a0cc558771295a3009704e38f7f388c64`  
+		Last Modified: Sat, 24 Jun 2017 08:58:44 GMT  
+		Size: 54.9 MB (54891605 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa30ca0a01d2992cd7fe5f99d08bd2a889cbd25d4a80fd99b1f92ace59e49e4e`  
-		Last Modified: Fri, 02 Jun 2017 19:53:31 GMT  
-		Size: 58.3 MB (58303493 bytes)  
+	-	`sha256:bf861bbc32089b8a60a00c29d89bb5eba68bf9e183380b5e8528ac4fa8156c19`  
+		Last Modified: Sat, 24 Jun 2017 08:58:39 GMT  
+		Size: 58.3 MB (58303275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fsharp:4.0`
 
 ```console
-$ docker pull fsharp@sha256:8353816ebb4f2d7436c7b0a6c337a181255e1d0c7600327a0629f5852df1466a
+$ docker pull fsharp@sha256:8c8fb5f0a8397e9330c42d5b5d8e7eff2b988d56f166da8ffd4ea0c0aee1ca1b
 ```
 
 -	Platforms:
@@ -524,102 +524,102 @@ $ docker pull fsharp@sha256:8353816ebb4f2d7436c7b0a6c337a181255e1d0c7600327a0629
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **272.3 MB (272280221 bytes)**  
+-	Total Size: **272.3 MB (272285059 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed0f2af06265641d730e5d8caf5e4e8bd17d0625ecff09037b18ef35783d22ef`
+-	Image ID: `sha256:d2445b90f3389d658250c0765a8e4f303214a9842f4f46e00cb16a6f84f1b796`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
-# Fri, 02 Jun 2017 16:15:37 GMT
-ADD file:1ad6d6b4b456510256c9561c6472b088a99a1858d86058e11408fc96112a3cee in / 
-# Fri, 02 Jun 2017 16:15:39 GMT
+# Tue, 20 Jun 2017 23:16:09 GMT
+ADD file:8c7b62577f9147353650fd7fe54e3fc119f7f39441b3b03fbba3e97e6de4a52a in / 
+# Tue, 20 Jun 2017 23:16:28 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 02 Jun 2017 16:15:41 GMT
+# Tue, 20 Jun 2017 23:16:30 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 16:15:42 GMT
+# Tue, 20 Jun 2017 23:16:55 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 02 Jun 2017 16:15:44 GMT
+# Tue, 20 Jun 2017 23:16:57 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 02 Jun 2017 16:15:44 GMT
+# Tue, 20 Jun 2017 23:16:57 GMT
 CMD ["/bin/bash"]
-# Fri, 02 Jun 2017 17:07:57 GMT
+# Wed, 21 Jun 2017 00:13:53 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:09:06 GMT
+# Wed, 21 Jun 2017 00:14:41 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:11:12 GMT
+# Wed, 21 Jun 2017 00:16:23 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:46:32 GMT
+# Wed, 21 Jun 2017 02:35:05 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>
-# Fri, 02 Jun 2017 18:02:55 GMT
+# Wed, 21 Jun 2017 02:51:58 GMT
 ENV MONO_VERSION=4.8.0.495
-# Fri, 02 Jun 2017 18:02:58 GMT
+# Wed, 21 Jun 2017 02:52:02 GMT
 RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list
-# Fri, 02 Jun 2017 18:02:59 GMT
+# Wed, 21 Jun 2017 02:52:03 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Fri, 02 Jun 2017 18:04:35 GMT
+# Wed, 21 Jun 2017 02:53:31 GMT
 RUN apt-get -y update &&     apt-get -y --no-install-recommends install nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 18:54:28 GMT
+# Wed, 21 Jun 2017 03:02:42 GMT
 ENV FSHARP_VERSION=4.0.1.1
-# Fri, 02 Jun 2017 18:54:29 GMT
+# Wed, 21 Jun 2017 03:02:43 GMT
 ENV FSHARP_PREFIX=/usr FSHARP_GACDIR=/usr/lib/mono/gac FSHARP_BASENAME=fsharp-4.0.1.1 FSHARP_ARCHIVE=4.0.1.1.tar.gz FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/4.0.1.1.tar.gz
-# Fri, 02 Jun 2017 19:02:27 GMT
+# Wed, 21 Jun 2017 03:09:44 GMT
 RUN mkdir -p /tmp/src &&     cd /tmp/src &&     wget $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src
-# Fri, 02 Jun 2017 19:03:26 GMT
+# Wed, 21 Jun 2017 03:09:45 GMT
 WORKDIR /root
-# Fri, 02 Jun 2017 19:03:27 GMT
+# Wed, 21 Jun 2017 03:09:46 GMT
 CMD ["fsharpi"]
 ```
 
 -	Layers:
-	-	`sha256:1d8592394ba1ae81037e16fac3382070ce1478cf7f6c68d538c62ba067e111db`  
-		Last Modified: Fri, 02 Jun 2017 16:21:26 GMT  
-		Size: 67.1 MB (67110196 bytes)  
+	-	`sha256:cb56c90f0b30751153cb2c317de31d102631db364a68eefe5c4cfd9f62a8c9df`  
+		Last Modified: Tue, 20 Jun 2017 23:27:36 GMT  
+		Size: 67.1 MB (67114523 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01aa7f61ccd17f0a729b91e6ba4ae6aedb51ca43acb3244b9732dbc043814786`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 72.6 KB (72620 bytes)  
+	-	`sha256:0acc551e5716c235426294464414cbf9850455193f716fada6ef54307f7939af`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 72.6 KB (72624 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5dd2552a960ee746b6272c9a7d2b3a252e07bf8ef38a0c8df117e0d96bf44904`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 356.0 B  
+	-	`sha256:8956dcd35143057f60f158c2e425e03aabd4425302a5e0ff17a927baf83e1178`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7cbe941c5e3e55212fc2b56ef27a44b887b24bf163a3c1fbda2023265355d088`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 676.0 B  
+	-	`sha256:9082427212149330be15339e16f9a9130ffc7ae005974a78235fb0ee8ea45b11`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 675.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2549ecfb14c6934eb6ff9c45f15839db6abf3bdfbc617589f53ae4f67f265629`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 163.0 B  
+	-	`sha256:b44ff14dd3bbdf87d487f60d1da9ffbde069fbfa782aa8d02997b5a013e10479`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c5e13aa4be9211a1b0511b6920b59ea9f46d7c0689e7d23d966e2fa3959ef24`  
-		Last Modified: Fri, 02 Jun 2017 17:30:38 GMT  
-		Size: 4.7 MB (4705680 bytes)  
+	-	`sha256:81ac3d025953c10e8e215b1c1f26ee00c3249bd7e5484fefbe066c5445b93e6c`  
+		Last Modified: Wed, 21 Jun 2017 00:55:49 GMT  
+		Size: 4.7 MB (4705689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85b87eb44edbbd95cdb23bf03161df3a9bdfc405eceecba13d93e97ec827a765`  
-		Last Modified: Fri, 02 Jun 2017 17:31:27 GMT  
-		Size: 29.5 MB (29544927 bytes)  
+	-	`sha256:0ab8d031f681d23259d5f8409e5ce6163f0cf4bf67ace155a54f5f0833d476e4`  
+		Last Modified: Wed, 21 Jun 2017 00:56:33 GMT  
+		Size: 29.5 MB (29544437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e20450406d21f7ae0b42570b754bd9de2b7b6747b7153f04fee3a61fbc35232d`  
-		Last Modified: Fri, 02 Jun 2017 17:32:24 GMT  
-		Size: 105.4 MB (105361509 bytes)  
+	-	`sha256:fa3eace004c976151e0bc09f699010f2f7800dcaf220647ea66bfc71224b2d66`  
+		Last Modified: Wed, 21 Jun 2017 00:57:32 GMT  
+		Size: 105.4 MB (105362748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e42daf7a2fdd5cbb70cdc62771b0f17f464d9da2e0dc33939921856b5f073b6c`  
-		Last Modified: Fri, 02 Jun 2017 19:53:12 GMT  
-		Size: 13.8 KB (13817 bytes)  
+	-	`sha256:109e0afa2f018e33e160f9a6a26a87c3324caa9b39bd5483865759532aaf7f42`  
+		Last Modified: Sat, 24 Jun 2017 08:58:26 GMT  
+		Size: 13.8 KB (13818 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e03a314e004ea981f460b875d910d735c04bd49ebbcef4f0676c62c4a4d49e1c`  
-		Last Modified: Fri, 02 Jun 2017 19:53:31 GMT  
-		Size: 54.9 MB (54891899 bytes)  
+	-	`sha256:c6f216466e616c8a8a0812c9fd57628a0cc558771295a3009704e38f7f388c64`  
+		Last Modified: Sat, 24 Jun 2017 08:58:44 GMT  
+		Size: 54.9 MB (54891605 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24cbd9bd6a76959bbfae01e7fce7742efe790da697953cfdb81d7f91d0e8f0d8`  
-		Last Modified: Fri, 02 Jun 2017 19:54:11 GMT  
-		Size: 10.6 MB (10578378 bytes)  
+	-	`sha256:c71a5f370bb62c52b69320c01cae499191b362c270411dcf7d1793d305217b38`  
+		Last Modified: Sat, 24 Jun 2017 08:59:19 GMT  
+		Size: 10.6 MB (10578418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fsharp:4.0.1`
 
 ```console
-$ docker pull fsharp@sha256:8353816ebb4f2d7436c7b0a6c337a181255e1d0c7600327a0629f5852df1466a
+$ docker pull fsharp@sha256:8c8fb5f0a8397e9330c42d5b5d8e7eff2b988d56f166da8ffd4ea0c0aee1ca1b
 ```
 
 -	Platforms:
@@ -629,102 +629,102 @@ $ docker pull fsharp@sha256:8353816ebb4f2d7436c7b0a6c337a181255e1d0c7600327a0629
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **272.3 MB (272280221 bytes)**  
+-	Total Size: **272.3 MB (272285059 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed0f2af06265641d730e5d8caf5e4e8bd17d0625ecff09037b18ef35783d22ef`
+-	Image ID: `sha256:d2445b90f3389d658250c0765a8e4f303214a9842f4f46e00cb16a6f84f1b796`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
-# Fri, 02 Jun 2017 16:15:37 GMT
-ADD file:1ad6d6b4b456510256c9561c6472b088a99a1858d86058e11408fc96112a3cee in / 
-# Fri, 02 Jun 2017 16:15:39 GMT
+# Tue, 20 Jun 2017 23:16:09 GMT
+ADD file:8c7b62577f9147353650fd7fe54e3fc119f7f39441b3b03fbba3e97e6de4a52a in / 
+# Tue, 20 Jun 2017 23:16:28 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 02 Jun 2017 16:15:41 GMT
+# Tue, 20 Jun 2017 23:16:30 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 16:15:42 GMT
+# Tue, 20 Jun 2017 23:16:55 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 02 Jun 2017 16:15:44 GMT
+# Tue, 20 Jun 2017 23:16:57 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 02 Jun 2017 16:15:44 GMT
+# Tue, 20 Jun 2017 23:16:57 GMT
 CMD ["/bin/bash"]
-# Fri, 02 Jun 2017 17:07:57 GMT
+# Wed, 21 Jun 2017 00:13:53 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:09:06 GMT
+# Wed, 21 Jun 2017 00:14:41 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:11:12 GMT
+# Wed, 21 Jun 2017 00:16:23 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:46:32 GMT
+# Wed, 21 Jun 2017 02:35:05 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>
-# Fri, 02 Jun 2017 18:02:55 GMT
+# Wed, 21 Jun 2017 02:51:58 GMT
 ENV MONO_VERSION=4.8.0.495
-# Fri, 02 Jun 2017 18:02:58 GMT
+# Wed, 21 Jun 2017 02:52:02 GMT
 RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list
-# Fri, 02 Jun 2017 18:02:59 GMT
+# Wed, 21 Jun 2017 02:52:03 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Fri, 02 Jun 2017 18:04:35 GMT
+# Wed, 21 Jun 2017 02:53:31 GMT
 RUN apt-get -y update &&     apt-get -y --no-install-recommends install nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 18:54:28 GMT
+# Wed, 21 Jun 2017 03:02:42 GMT
 ENV FSHARP_VERSION=4.0.1.1
-# Fri, 02 Jun 2017 18:54:29 GMT
+# Wed, 21 Jun 2017 03:02:43 GMT
 ENV FSHARP_PREFIX=/usr FSHARP_GACDIR=/usr/lib/mono/gac FSHARP_BASENAME=fsharp-4.0.1.1 FSHARP_ARCHIVE=4.0.1.1.tar.gz FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/4.0.1.1.tar.gz
-# Fri, 02 Jun 2017 19:02:27 GMT
+# Wed, 21 Jun 2017 03:09:44 GMT
 RUN mkdir -p /tmp/src &&     cd /tmp/src &&     wget $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src
-# Fri, 02 Jun 2017 19:03:26 GMT
+# Wed, 21 Jun 2017 03:09:45 GMT
 WORKDIR /root
-# Fri, 02 Jun 2017 19:03:27 GMT
+# Wed, 21 Jun 2017 03:09:46 GMT
 CMD ["fsharpi"]
 ```
 
 -	Layers:
-	-	`sha256:1d8592394ba1ae81037e16fac3382070ce1478cf7f6c68d538c62ba067e111db`  
-		Last Modified: Fri, 02 Jun 2017 16:21:26 GMT  
-		Size: 67.1 MB (67110196 bytes)  
+	-	`sha256:cb56c90f0b30751153cb2c317de31d102631db364a68eefe5c4cfd9f62a8c9df`  
+		Last Modified: Tue, 20 Jun 2017 23:27:36 GMT  
+		Size: 67.1 MB (67114523 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01aa7f61ccd17f0a729b91e6ba4ae6aedb51ca43acb3244b9732dbc043814786`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 72.6 KB (72620 bytes)  
+	-	`sha256:0acc551e5716c235426294464414cbf9850455193f716fada6ef54307f7939af`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 72.6 KB (72624 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5dd2552a960ee746b6272c9a7d2b3a252e07bf8ef38a0c8df117e0d96bf44904`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 356.0 B  
+	-	`sha256:8956dcd35143057f60f158c2e425e03aabd4425302a5e0ff17a927baf83e1178`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7cbe941c5e3e55212fc2b56ef27a44b887b24bf163a3c1fbda2023265355d088`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 676.0 B  
+	-	`sha256:9082427212149330be15339e16f9a9130ffc7ae005974a78235fb0ee8ea45b11`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 675.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2549ecfb14c6934eb6ff9c45f15839db6abf3bdfbc617589f53ae4f67f265629`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 163.0 B  
+	-	`sha256:b44ff14dd3bbdf87d487f60d1da9ffbde069fbfa782aa8d02997b5a013e10479`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c5e13aa4be9211a1b0511b6920b59ea9f46d7c0689e7d23d966e2fa3959ef24`  
-		Last Modified: Fri, 02 Jun 2017 17:30:38 GMT  
-		Size: 4.7 MB (4705680 bytes)  
+	-	`sha256:81ac3d025953c10e8e215b1c1f26ee00c3249bd7e5484fefbe066c5445b93e6c`  
+		Last Modified: Wed, 21 Jun 2017 00:55:49 GMT  
+		Size: 4.7 MB (4705689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85b87eb44edbbd95cdb23bf03161df3a9bdfc405eceecba13d93e97ec827a765`  
-		Last Modified: Fri, 02 Jun 2017 17:31:27 GMT  
-		Size: 29.5 MB (29544927 bytes)  
+	-	`sha256:0ab8d031f681d23259d5f8409e5ce6163f0cf4bf67ace155a54f5f0833d476e4`  
+		Last Modified: Wed, 21 Jun 2017 00:56:33 GMT  
+		Size: 29.5 MB (29544437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e20450406d21f7ae0b42570b754bd9de2b7b6747b7153f04fee3a61fbc35232d`  
-		Last Modified: Fri, 02 Jun 2017 17:32:24 GMT  
-		Size: 105.4 MB (105361509 bytes)  
+	-	`sha256:fa3eace004c976151e0bc09f699010f2f7800dcaf220647ea66bfc71224b2d66`  
+		Last Modified: Wed, 21 Jun 2017 00:57:32 GMT  
+		Size: 105.4 MB (105362748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e42daf7a2fdd5cbb70cdc62771b0f17f464d9da2e0dc33939921856b5f073b6c`  
-		Last Modified: Fri, 02 Jun 2017 19:53:12 GMT  
-		Size: 13.8 KB (13817 bytes)  
+	-	`sha256:109e0afa2f018e33e160f9a6a26a87c3324caa9b39bd5483865759532aaf7f42`  
+		Last Modified: Sat, 24 Jun 2017 08:58:26 GMT  
+		Size: 13.8 KB (13818 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e03a314e004ea981f460b875d910d735c04bd49ebbcef4f0676c62c4a4d49e1c`  
-		Last Modified: Fri, 02 Jun 2017 19:53:31 GMT  
-		Size: 54.9 MB (54891899 bytes)  
+	-	`sha256:c6f216466e616c8a8a0812c9fd57628a0cc558771295a3009704e38f7f388c64`  
+		Last Modified: Sat, 24 Jun 2017 08:58:44 GMT  
+		Size: 54.9 MB (54891605 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24cbd9bd6a76959bbfae01e7fce7742efe790da697953cfdb81d7f91d0e8f0d8`  
-		Last Modified: Fri, 02 Jun 2017 19:54:11 GMT  
-		Size: 10.6 MB (10578378 bytes)  
+	-	`sha256:c71a5f370bb62c52b69320c01cae499191b362c270411dcf7d1793d305217b38`  
+		Last Modified: Sat, 24 Jun 2017 08:59:19 GMT  
+		Size: 10.6 MB (10578418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fsharp:4.0.1.1`
 
 ```console
-$ docker pull fsharp@sha256:8353816ebb4f2d7436c7b0a6c337a181255e1d0c7600327a0629f5852df1466a
+$ docker pull fsharp@sha256:8c8fb5f0a8397e9330c42d5b5d8e7eff2b988d56f166da8ffd4ea0c0aee1ca1b
 ```
 
 -	Platforms:
@@ -734,102 +734,102 @@ $ docker pull fsharp@sha256:8353816ebb4f2d7436c7b0a6c337a181255e1d0c7600327a0629
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **272.3 MB (272280221 bytes)**  
+-	Total Size: **272.3 MB (272285059 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed0f2af06265641d730e5d8caf5e4e8bd17d0625ecff09037b18ef35783d22ef`
+-	Image ID: `sha256:d2445b90f3389d658250c0765a8e4f303214a9842f4f46e00cb16a6f84f1b796`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
-# Fri, 02 Jun 2017 16:15:37 GMT
-ADD file:1ad6d6b4b456510256c9561c6472b088a99a1858d86058e11408fc96112a3cee in / 
-# Fri, 02 Jun 2017 16:15:39 GMT
+# Tue, 20 Jun 2017 23:16:09 GMT
+ADD file:8c7b62577f9147353650fd7fe54e3fc119f7f39441b3b03fbba3e97e6de4a52a in / 
+# Tue, 20 Jun 2017 23:16:28 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 02 Jun 2017 16:15:41 GMT
+# Tue, 20 Jun 2017 23:16:30 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 16:15:42 GMT
+# Tue, 20 Jun 2017 23:16:55 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 02 Jun 2017 16:15:44 GMT
+# Tue, 20 Jun 2017 23:16:57 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 02 Jun 2017 16:15:44 GMT
+# Tue, 20 Jun 2017 23:16:57 GMT
 CMD ["/bin/bash"]
-# Fri, 02 Jun 2017 17:07:57 GMT
+# Wed, 21 Jun 2017 00:13:53 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:09:06 GMT
+# Wed, 21 Jun 2017 00:14:41 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:11:12 GMT
+# Wed, 21 Jun 2017 00:16:23 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:46:32 GMT
+# Wed, 21 Jun 2017 02:35:05 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>
-# Fri, 02 Jun 2017 18:02:55 GMT
+# Wed, 21 Jun 2017 02:51:58 GMT
 ENV MONO_VERSION=4.8.0.495
-# Fri, 02 Jun 2017 18:02:58 GMT
+# Wed, 21 Jun 2017 02:52:02 GMT
 RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list
-# Fri, 02 Jun 2017 18:02:59 GMT
+# Wed, 21 Jun 2017 02:52:03 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Fri, 02 Jun 2017 18:04:35 GMT
+# Wed, 21 Jun 2017 02:53:31 GMT
 RUN apt-get -y update &&     apt-get -y --no-install-recommends install nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 18:54:28 GMT
+# Wed, 21 Jun 2017 03:02:42 GMT
 ENV FSHARP_VERSION=4.0.1.1
-# Fri, 02 Jun 2017 18:54:29 GMT
+# Wed, 21 Jun 2017 03:02:43 GMT
 ENV FSHARP_PREFIX=/usr FSHARP_GACDIR=/usr/lib/mono/gac FSHARP_BASENAME=fsharp-4.0.1.1 FSHARP_ARCHIVE=4.0.1.1.tar.gz FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/4.0.1.1.tar.gz
-# Fri, 02 Jun 2017 19:02:27 GMT
+# Wed, 21 Jun 2017 03:09:44 GMT
 RUN mkdir -p /tmp/src &&     cd /tmp/src &&     wget $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src
-# Fri, 02 Jun 2017 19:03:26 GMT
+# Wed, 21 Jun 2017 03:09:45 GMT
 WORKDIR /root
-# Fri, 02 Jun 2017 19:03:27 GMT
+# Wed, 21 Jun 2017 03:09:46 GMT
 CMD ["fsharpi"]
 ```
 
 -	Layers:
-	-	`sha256:1d8592394ba1ae81037e16fac3382070ce1478cf7f6c68d538c62ba067e111db`  
-		Last Modified: Fri, 02 Jun 2017 16:21:26 GMT  
-		Size: 67.1 MB (67110196 bytes)  
+	-	`sha256:cb56c90f0b30751153cb2c317de31d102631db364a68eefe5c4cfd9f62a8c9df`  
+		Last Modified: Tue, 20 Jun 2017 23:27:36 GMT  
+		Size: 67.1 MB (67114523 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01aa7f61ccd17f0a729b91e6ba4ae6aedb51ca43acb3244b9732dbc043814786`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 72.6 KB (72620 bytes)  
+	-	`sha256:0acc551e5716c235426294464414cbf9850455193f716fada6ef54307f7939af`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 72.6 KB (72624 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5dd2552a960ee746b6272c9a7d2b3a252e07bf8ef38a0c8df117e0d96bf44904`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 356.0 B  
+	-	`sha256:8956dcd35143057f60f158c2e425e03aabd4425302a5e0ff17a927baf83e1178`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7cbe941c5e3e55212fc2b56ef27a44b887b24bf163a3c1fbda2023265355d088`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 676.0 B  
+	-	`sha256:9082427212149330be15339e16f9a9130ffc7ae005974a78235fb0ee8ea45b11`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 675.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2549ecfb14c6934eb6ff9c45f15839db6abf3bdfbc617589f53ae4f67f265629`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 163.0 B  
+	-	`sha256:b44ff14dd3bbdf87d487f60d1da9ffbde069fbfa782aa8d02997b5a013e10479`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c5e13aa4be9211a1b0511b6920b59ea9f46d7c0689e7d23d966e2fa3959ef24`  
-		Last Modified: Fri, 02 Jun 2017 17:30:38 GMT  
-		Size: 4.7 MB (4705680 bytes)  
+	-	`sha256:81ac3d025953c10e8e215b1c1f26ee00c3249bd7e5484fefbe066c5445b93e6c`  
+		Last Modified: Wed, 21 Jun 2017 00:55:49 GMT  
+		Size: 4.7 MB (4705689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85b87eb44edbbd95cdb23bf03161df3a9bdfc405eceecba13d93e97ec827a765`  
-		Last Modified: Fri, 02 Jun 2017 17:31:27 GMT  
-		Size: 29.5 MB (29544927 bytes)  
+	-	`sha256:0ab8d031f681d23259d5f8409e5ce6163f0cf4bf67ace155a54f5f0833d476e4`  
+		Last Modified: Wed, 21 Jun 2017 00:56:33 GMT  
+		Size: 29.5 MB (29544437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e20450406d21f7ae0b42570b754bd9de2b7b6747b7153f04fee3a61fbc35232d`  
-		Last Modified: Fri, 02 Jun 2017 17:32:24 GMT  
-		Size: 105.4 MB (105361509 bytes)  
+	-	`sha256:fa3eace004c976151e0bc09f699010f2f7800dcaf220647ea66bfc71224b2d66`  
+		Last Modified: Wed, 21 Jun 2017 00:57:32 GMT  
+		Size: 105.4 MB (105362748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e42daf7a2fdd5cbb70cdc62771b0f17f464d9da2e0dc33939921856b5f073b6c`  
-		Last Modified: Fri, 02 Jun 2017 19:53:12 GMT  
-		Size: 13.8 KB (13817 bytes)  
+	-	`sha256:109e0afa2f018e33e160f9a6a26a87c3324caa9b39bd5483865759532aaf7f42`  
+		Last Modified: Sat, 24 Jun 2017 08:58:26 GMT  
+		Size: 13.8 KB (13818 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e03a314e004ea981f460b875d910d735c04bd49ebbcef4f0676c62c4a4d49e1c`  
-		Last Modified: Fri, 02 Jun 2017 19:53:31 GMT  
-		Size: 54.9 MB (54891899 bytes)  
+	-	`sha256:c6f216466e616c8a8a0812c9fd57628a0cc558771295a3009704e38f7f388c64`  
+		Last Modified: Sat, 24 Jun 2017 08:58:44 GMT  
+		Size: 54.9 MB (54891605 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:24cbd9bd6a76959bbfae01e7fce7742efe790da697953cfdb81d7f91d0e8f0d8`  
-		Last Modified: Fri, 02 Jun 2017 19:54:11 GMT  
-		Size: 10.6 MB (10578378 bytes)  
+	-	`sha256:c71a5f370bb62c52b69320c01cae499191b362c270411dcf7d1793d305217b38`  
+		Last Modified: Sat, 24 Jun 2017 08:59:19 GMT  
+		Size: 10.6 MB (10578418 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `fsharp:4.0.0.4`
 
 ```console
-$ docker pull fsharp@sha256:bce918ee7d58549718e22d9402abf52dbc0f97ce92829fdb72a0dddd3d9e3317
+$ docker pull fsharp@sha256:7461529f12de8d1feab4e6c1a5b7a5afee4cfc8ac1116a9bd2286c30218812ed
 ```
 
 -	Platforms:
@@ -839,92 +839,92 @@ $ docker pull fsharp@sha256:bce918ee7d58549718e22d9402abf52dbc0f97ce92829fdb72a0
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **271.0 MB (271032629 bytes)**  
+-	Total Size: **271.0 MB (271037422 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a3755ff0ae4a366a60f1533b8b7002ca169912dc3a98033e8ce77d795b622980`
+-	Image ID: `sha256:421c5bc771f9bd9c4e8876f97f01ec8613cb40cb77191ce54957ff6cd43b2b32`
 -	Default Command: `["fsharpi"]`
 
 ```dockerfile
-# Fri, 02 Jun 2017 16:15:37 GMT
-ADD file:1ad6d6b4b456510256c9561c6472b088a99a1858d86058e11408fc96112a3cee in / 
-# Fri, 02 Jun 2017 16:15:39 GMT
+# Tue, 20 Jun 2017 23:16:09 GMT
+ADD file:8c7b62577f9147353650fd7fe54e3fc119f7f39441b3b03fbba3e97e6de4a52a in / 
+# Tue, 20 Jun 2017 23:16:28 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Fri, 02 Jun 2017 16:15:41 GMT
+# Tue, 20 Jun 2017 23:16:30 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 16:15:42 GMT
+# Tue, 20 Jun 2017 23:16:55 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Fri, 02 Jun 2017 16:15:44 GMT
+# Tue, 20 Jun 2017 23:16:57 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Fri, 02 Jun 2017 16:15:44 GMT
+# Tue, 20 Jun 2017 23:16:57 GMT
 CMD ["/bin/bash"]
-# Fri, 02 Jun 2017 17:07:57 GMT
+# Wed, 21 Jun 2017 00:13:53 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:09:06 GMT
+# Wed, 21 Jun 2017 00:14:41 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:11:12 GMT
+# Wed, 21 Jun 2017 00:16:23 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 17:46:32 GMT
+# Wed, 21 Jun 2017 02:35:05 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Steve Desmond <steve@stevedesmond.ca>
-# Fri, 02 Jun 2017 18:02:55 GMT
+# Wed, 21 Jun 2017 02:51:58 GMT
 ENV MONO_VERSION=4.8.0.495
-# Fri, 02 Jun 2017 18:02:58 GMT
+# Wed, 21 Jun 2017 02:52:02 GMT
 RUN apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF &&     echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-xamarin.list
-# Fri, 02 Jun 2017 18:02:59 GMT
+# Wed, 21 Jun 2017 02:52:03 GMT
 ENV MONO_THREADS_PER_CPU=50
-# Fri, 02 Jun 2017 18:04:35 GMT
+# Wed, 21 Jun 2017 02:53:31 GMT
 RUN apt-get -y update &&     apt-get -y --no-install-recommends install nuget mono-devel ca-certificates-mono &&     rm -rf /var/lib/apt/lists/*
-# Fri, 02 Jun 2017 19:13:54 GMT
+# Wed, 21 Jun 2017 03:10:11 GMT
 ENV FSHARP_VERSION=4.0.0.4
-# Fri, 02 Jun 2017 19:13:55 GMT
+# Wed, 21 Jun 2017 03:10:11 GMT
 ENV FSHARP_PREFIX=/usr FSHARP_GACDIR=/usr/lib/mono/gac FSHARP_BASENAME=fsharp-4.0.0.4 FSHARP_ARCHIVE=4.0.0.4.tar.gz FSHARP_ARCHIVE_URL=https://github.com/fsharp/fsharp/archive/4.0.0.4.tar.gz
-# Fri, 02 Jun 2017 19:21:10 GMT
+# Wed, 21 Jun 2017 03:15:48 GMT
 RUN mkdir -p /tmp/src &&     cd /tmp/src &&     wget $FSHARP_ARCHIVE_URL &&     tar xf $FSHARP_ARCHIVE &&     cd $FSHARP_BASENAME &&     ./autogen.sh --prefix=$FSHARP_PREFIX --with-gacdir=$FSHARP_GACDIR &&     make &&     make install &&     cd ~ &&     rm -rf /tmp/src
-# Fri, 02 Jun 2017 19:50:21 GMT
+# Wed, 21 Jun 2017 03:15:49 GMT
 CMD ["fsharpi"]
 ```
 
 -	Layers:
-	-	`sha256:1d8592394ba1ae81037e16fac3382070ce1478cf7f6c68d538c62ba067e111db`  
-		Last Modified: Fri, 02 Jun 2017 16:21:26 GMT  
-		Size: 67.1 MB (67110196 bytes)  
+	-	`sha256:cb56c90f0b30751153cb2c317de31d102631db364a68eefe5c4cfd9f62a8c9df`  
+		Last Modified: Tue, 20 Jun 2017 23:27:36 GMT  
+		Size: 67.1 MB (67114523 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:01aa7f61ccd17f0a729b91e6ba4ae6aedb51ca43acb3244b9732dbc043814786`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 72.6 KB (72620 bytes)  
+	-	`sha256:0acc551e5716c235426294464414cbf9850455193f716fada6ef54307f7939af`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 72.6 KB (72624 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5dd2552a960ee746b6272c9a7d2b3a252e07bf8ef38a0c8df117e0d96bf44904`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 356.0 B  
+	-	`sha256:8956dcd35143057f60f158c2e425e03aabd4425302a5e0ff17a927baf83e1178`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 358.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7cbe941c5e3e55212fc2b56ef27a44b887b24bf163a3c1fbda2023265355d088`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 676.0 B  
+	-	`sha256:9082427212149330be15339e16f9a9130ffc7ae005974a78235fb0ee8ea45b11`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 675.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2549ecfb14c6934eb6ff9c45f15839db6abf3bdfbc617589f53ae4f67f265629`  
-		Last Modified: Fri, 02 Jun 2017 16:20:56 GMT  
-		Size: 163.0 B  
+	-	`sha256:b44ff14dd3bbdf87d487f60d1da9ffbde069fbfa782aa8d02997b5a013e10479`  
+		Last Modified: Tue, 20 Jun 2017 23:27:14 GMT  
+		Size: 164.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3c5e13aa4be9211a1b0511b6920b59ea9f46d7c0689e7d23d966e2fa3959ef24`  
-		Last Modified: Fri, 02 Jun 2017 17:30:38 GMT  
-		Size: 4.7 MB (4705680 bytes)  
+	-	`sha256:81ac3d025953c10e8e215b1c1f26ee00c3249bd7e5484fefbe066c5445b93e6c`  
+		Last Modified: Wed, 21 Jun 2017 00:55:49 GMT  
+		Size: 4.7 MB (4705689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85b87eb44edbbd95cdb23bf03161df3a9bdfc405eceecba13d93e97ec827a765`  
-		Last Modified: Fri, 02 Jun 2017 17:31:27 GMT  
-		Size: 29.5 MB (29544927 bytes)  
+	-	`sha256:0ab8d031f681d23259d5f8409e5ce6163f0cf4bf67ace155a54f5f0833d476e4`  
+		Last Modified: Wed, 21 Jun 2017 00:56:33 GMT  
+		Size: 29.5 MB (29544437 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e20450406d21f7ae0b42570b754bd9de2b7b6747b7153f04fee3a61fbc35232d`  
-		Last Modified: Fri, 02 Jun 2017 17:32:24 GMT  
-		Size: 105.4 MB (105361509 bytes)  
+	-	`sha256:fa3eace004c976151e0bc09f699010f2f7800dcaf220647ea66bfc71224b2d66`  
+		Last Modified: Wed, 21 Jun 2017 00:57:32 GMT  
+		Size: 105.4 MB (105362748 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e42daf7a2fdd5cbb70cdc62771b0f17f464d9da2e0dc33939921856b5f073b6c`  
-		Last Modified: Fri, 02 Jun 2017 19:53:12 GMT  
-		Size: 13.8 KB (13817 bytes)  
+	-	`sha256:109e0afa2f018e33e160f9a6a26a87c3324caa9b39bd5483865759532aaf7f42`  
+		Last Modified: Sat, 24 Jun 2017 08:58:26 GMT  
+		Size: 13.8 KB (13818 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e03a314e004ea981f460b875d910d735c04bd49ebbcef4f0676c62c4a4d49e1c`  
-		Last Modified: Fri, 02 Jun 2017 19:53:31 GMT  
-		Size: 54.9 MB (54891899 bytes)  
+	-	`sha256:c6f216466e616c8a8a0812c9fd57628a0cc558771295a3009704e38f7f388c64`  
+		Last Modified: Sat, 24 Jun 2017 08:58:44 GMT  
+		Size: 54.9 MB (54891605 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d79c4bd50c509ba094c2dbd4a8f583332f70e8e9c7de73a6fae1d2dfcc3b4311`  
-		Last Modified: Fri, 02 Jun 2017 19:55:50 GMT  
-		Size: 9.3 MB (9330786 bytes)  
+	-	`sha256:570a50d414caee430a4e4c469214d1ed62540b842c582d762058bc657fbaa922`  
+		Last Modified: Sat, 24 Jun 2017 09:00:46 GMT  
+		Size: 9.3 MB (9330781 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
