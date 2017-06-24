@@ -1,7 +1,7 @@
 ## `julia:latest`
 
 ```console
-$ docker pull julia@sha256:b7f552dffe68f58ade9cdae22124a21f29a8c3f8bfb290c2281f671a4af217ee
+$ docker pull julia@sha256:76143f59e25fce21634c27f3405cf056af8d387bdfbee0629262e5b6a4453acb
 ```
 
 -	Platforms:
@@ -11,40 +11,40 @@ $ docker pull julia@sha256:b7f552dffe68f58ade9cdae22124a21f29a8c3f8bfb290c2281f6
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **129.7 MB (129695604 bytes)**  
+-	Total Size: **129.7 MB (129744279 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:917f09dffe3ad35570060699c50e1ce57fb14d29eb5a6d2a713ac8f772d4d284`
+-	Image ID: `sha256:5b5b1c7b90634ae0f8922538edcf897f525c5c748373121a33d70cedf5584e18`
 -	Default Command: `["julia"]`
 
 ```dockerfile
-# Wed, 07 Jun 2017 17:32:31 GMT
-ADD file:ce4be6f55b1f47cba28efd351c82dd9fa4efd3d29fa0ae365574adb52151dda1 in / 
-# Wed, 07 Jun 2017 17:32:32 GMT
+# Tue, 20 Jun 2017 20:13:32 GMT
+ADD file:9c48682ff75c756544d4491472081a078edf5dd0bb5038d1cb850a1f9c480e3e in / 
+# Tue, 20 Jun 2017 20:13:34 GMT
 CMD ["bash"]
-# Thu, 08 Jun 2017 06:16:21 GMT
+# Fri, 23 Jun 2017 00:24:49 GMT
 RUN apt-get update 	&& apt-get install -y --no-install-recommends ca-certificates 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 08 Jun 2017 06:16:22 GMT
+# Fri, 23 Jun 2017 00:24:50 GMT
 ENV JULIA_PATH=/usr/local/julia
-# Tue, 20 Jun 2017 18:22:58 GMT
+# Fri, 23 Jun 2017 00:24:51 GMT
 ENV JULIA_VERSION=0.6.0
-# Tue, 20 Jun 2017 18:23:22 GMT
+# Fri, 23 Jun 2017 00:25:09 GMT
 RUN mkdir $JULIA_PATH 	&& apt-get update && apt-get install -y curl 	&& curl -sSL "https://julialang-s3.julialang.org/bin/linux/x64/${JULIA_VERSION%[.-]*}/julia-${JULIA_VERSION}-linux-x86_64.tar.gz" -o julia.tar.gz 	&& curl -sSL "https://julialang-s3.julialang.org/bin/linux/x64/${JULIA_VERSION%[.-]*}/julia-${JULIA_VERSION}-linux-x86_64.tar.gz.asc" -o julia.tar.gz.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 3673DF529D9049477F76B37566E3C7DC03D6E495 	&& gpg --batch --verify julia.tar.gz.asc julia.tar.gz 	&& rm -r "$GNUPGHOME" julia.tar.gz.asc 	&& tar -xzf julia.tar.gz -C $JULIA_PATH --strip-components 1 	&& rm -rf /var/lib/apt/lists/* julia.tar.gz*
-# Tue, 20 Jun 2017 18:23:23 GMT
+# Fri, 23 Jun 2017 00:25:10 GMT
 ENV PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 20 Jun 2017 18:23:24 GMT
+# Fri, 23 Jun 2017 00:25:11 GMT
 CMD ["julia"]
 ```
 
 -	Layers:
-	-	`sha256:ef0380f84d05d3cdc5a5f660232d35ccb020ccf1d635b585580dea44691a13a7`  
-		Last Modified: Wed, 07 Jun 2017 17:58:44 GMT  
-		Size: 52.6 MB (52568269 bytes)  
+	-	`sha256:9f0706ba7422412cd468804fee456786f88bed94bf9aea6dde2a47f770d19d27`  
+		Last Modified: Tue, 20 Jun 2017 20:35:47 GMT  
+		Size: 52.6 MB (52614808 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:62a6503c5f16f3940c869815906be3d25f0e38e2450633da2d691b03226f0976`  
-		Last Modified: Wed, 14 Jun 2017 04:13:44 GMT  
-		Size: 2.9 MB (2927275 bytes)  
+	-	`sha256:3a35a3712c306f7be0f837b93526a96af7563b5c1ce3ba984bdac72dc79b161b`  
+		Last Modified: Sat, 24 Jun 2017 12:10:06 GMT  
+		Size: 2.9 MB (2929385 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1e69945800e168e0b14f440728bb9794f79aa7b3bcbe328902586b0990f72fec`  
-		Last Modified: Tue, 20 Jun 2017 18:24:13 GMT  
-		Size: 74.2 MB (74200060 bytes)  
+	-	`sha256:ab4fc1aff04321287da70d1abf261a9b3732bdb8d43bca33480cea20c626bb72`  
+		Last Modified: Sat, 24 Jun 2017 12:10:22 GMT  
+		Size: 74.2 MB (74200086 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
