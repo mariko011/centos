@@ -814,14 +814,8 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-foreign/copyright`)
 - `GPL`
 - `GPL `
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris foreign=0.8.68-1
-'http://http.debian.net/debian/pool/main/f/foreign/foreign_0.8.68-1.dsc' foreign_0.8.68-1.dsc 1642 SHA256:32c53069cbd23bc47357eee3b54693897fa4ede032205ef60e5bc346bc2bdc74
-'http://http.debian.net/debian/pool/main/f/foreign/foreign_0.8.68.orig.tar.gz' foreign_0.8.68.orig.tar.gz 333413 SHA256:b93fd2d7152380427cb95306fe735aafce54392f7019dcf616086ec8b9da5cd8
-'http://http.debian.net/debian/pool/main/f/foreign/foreign_0.8.68-1.diff.gz' foreign_0.8.68-1.diff.gz 3903 SHA256:eb210497fd38c3d134414e39113733cdbc329c913f3876ec3243454085f270bd
-```
 
 ### `dpkg` source package: `freetype=2.6.3-3.2`
 
@@ -3333,19 +3327,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tzdata=2017b-1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-1.dsc' tzdata_2017b-1.dsc 2005 SHA256:ab26ea2d019b6db54abd8ee17c90aeb717641dc8900ab19dca8d5faa4b66d852
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b.orig.tar.gz' tzdata_2017b.orig.tar.gz 324317 SHA256:f8242a522ea3496b0ce4ff4f2e75a049178da21001a08b8e666d8cbe07d18086
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2017b-1.debian.tar.xz' tzdata_2017b-1.debian.tar.xz 101168 SHA256:b7ed1f68343a5463aa2efbc527a05b89461e93b5626337d8d581c78e8fdf180c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tzdata/2017b-1/
-- https://sources.debian.net/src/tzdata/2017b-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ucf=3.0036`
 
