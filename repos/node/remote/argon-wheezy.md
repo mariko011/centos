@@ -1,7 +1,7 @@
 ## `node:argon-wheezy`
 
 ```console
-$ docker pull node@sha256:8dcc85205bb6006b469d3c21f6c734ccb4e4ae80136c56f283b0b24e60e32001
+$ docker pull node@sha256:ccecbe223b785e4bd8b9fb21522acb5ee077246c1adf8e3565741285b9d86959
 ```
 
 -	Platforms:
@@ -11,70 +11,70 @@ $ docker pull node@sha256:8dcc85205bb6006b469d3c21f6c734ccb4e4ae80136c56f283b0b2
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **193.5 MB (193461751 bytes)**  
+-	Total Size: **193.5 MB (193463332 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d376a4d06a714961680f086366e5311a934383a6d621403829be9476f8fdb44b`
+-	Image ID: `sha256:037f303fb69bdda3dcba33705e3943b03bc82b937392a01e50146bb4b0ff9a1f`
 -	Default Command: `["node"]`
 
 ```dockerfile
-# Wed, 07 Jun 2017 17:55:03 GMT
-ADD file:a5a45130c6822d80986466e602b511ac799abed828e4374257fce47b771c0ce6 in / 
-# Wed, 07 Jun 2017 17:55:04 GMT
+# Tue, 20 Jun 2017 20:29:57 GMT
+ADD file:e58836121f9e162887b70de3a328bb9ff8944a1307cf5f05b9d768a1a49afe60 in / 
+# Tue, 20 Jun 2017 20:29:58 GMT
 CMD ["bash"]
-# Wed, 07 Jun 2017 20:03:02 GMT
+# Tue, 20 Jun 2017 23:05:08 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 07 Jun 2017 20:03:54 GMT
+# Tue, 20 Jun 2017 23:06:07 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 07 Jun 2017 20:05:34 GMT
+# Wed, 21 Jun 2017 00:17:28 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Thu, 08 Jun 2017 16:31:43 GMT
+# Fri, 23 Jun 2017 01:00:06 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
-# Thu, 08 Jun 2017 16:31:48 GMT
+# Fri, 23 Jun 2017 01:02:19 GMT
 RUN set -ex   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     56730D5401028683275BD23C23EFEFE93C4CFFFE   ; do     gpg --keyserver pgp.mit.edu --recv-keys "$key" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$key" ||     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ;   done
-# Thu, 08 Jun 2017 16:31:48 GMT
+# Fri, 23 Jun 2017 01:02:20 GMT
 ENV NPM_CONFIG_LOGLEVEL=info
-# Thu, 08 Jun 2017 17:14:58 GMT
+# Fri, 23 Jun 2017 01:07:35 GMT
 ENV NODE_VERSION=4.8.3
-# Thu, 08 Jun 2017 17:15:03 GMT
+# Fri, 23 Jun 2017 01:07:39 GMT
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz"   && curl -SLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-x64.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-components=1   && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs
-# Thu, 08 Jun 2017 17:15:24 GMT
+# Fri, 23 Jun 2017 01:07:40 GMT
 ENV YARN_VERSION=0.24.4
-# Thu, 08 Jun 2017 17:15:28 GMT
+# Fri, 23 Jun 2017 01:07:44 GMT
 RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --keyserver pgp.mit.edu --recv-keys "$key" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$key" ||     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ;   done   && curl -fSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt/yarn   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/yarn --strip-components=1   && ln -s /opt/yarn/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn/bin/yarn /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz
-# Thu, 08 Jun 2017 17:15:48 GMT
+# Fri, 23 Jun 2017 01:07:45 GMT
 CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:1498fd2556ea270ebbd3f95f3f48f6679ed3414bcd74e52ff946c64682378074`  
-		Last Modified: Wed, 07 Jun 2017 18:16:00 GMT  
-		Size: 38.1 MB (38105086 bytes)  
+	-	`sha256:5b825a4651ef2855128f8b498adaf68d54840a4b4b66c406e4ea30ede531f1fd`  
+		Last Modified: Tue, 20 Jun 2017 21:02:17 GMT  
+		Size: 38.1 MB (38103640 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9dd5db52f078fabd5bfc38197a904c009cd5fde1b237d5d3c8868eb30e34fb1`  
-		Last Modified: Wed, 07 Jun 2017 20:15:36 GMT  
-		Size: 6.9 MB (6948482 bytes)  
+	-	`sha256:7d0be653e0fcc6c891b4087051f57520a0842eb3dc1851303e3033a19b826c96`  
+		Last Modified: Wed, 21 Jun 2017 01:04:25 GMT  
+		Size: 6.9 MB (6948769 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02720d78d8cf03e04692a6628b08128ec3123a78f31a369c2c1fdcb2fd32d11c`  
-		Last Modified: Wed, 07 Jun 2017 20:16:16 GMT  
-		Size: 37.9 MB (37937378 bytes)  
+	-	`sha256:4aa838faeb7f25579c1ddf0f6d835598d148c6835aab540efa901d140b9e4b39`  
+		Last Modified: Wed, 21 Jun 2017 01:05:10 GMT  
+		Size: 37.9 MB (37937419 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:913479fc9b99d1b74ea67714c7f0d787e209ef561b9b97da088c6820e1ceb8ca`  
-		Last Modified: Wed, 07 Jun 2017 20:17:13 GMT  
-		Size: 96.9 MB (96948347 bytes)  
+	-	`sha256:7a83cd77641ab941aff7d08eef6a898fcc650be7c81e7f6b3f3af35fe6e00ec1`  
+		Last Modified: Wed, 21 Jun 2017 01:06:07 GMT  
+		Size: 97.0 MB (96951021 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3340f589b379ee6244d9425cd51212efbc00b507ee237f95e52278d39020423d`  
-		Last Modified: Thu, 08 Jun 2017 17:25:34 GMT  
-		Size: 4.0 KB (3982 bytes)  
+	-	`sha256:1821f9edd18113c6a87baffa7b1885cf0924bfb8afe7ba627ae46f235f9b037b`  
+		Last Modified: Sat, 24 Jun 2017 15:15:00 GMT  
+		Size: 4.0 KB (3987 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:604965bd6e0cf732604896118265ead27d536092dd81454fd9ea57b0c9caaa07`  
-		Last Modified: Thu, 08 Jun 2017 17:25:35 GMT  
-		Size: 119.2 KB (119151 bytes)  
+	-	`sha256:4dd17d5ea65bcfdda3ce77a551cc2086c67dd18d6cdfff538340cd79ab927e70`  
+		Last Modified: Sat, 24 Jun 2017 15:14:59 GMT  
+		Size: 119.2 KB (119155 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7d3e6bccb6e31c03ce3ea1584800844794a1008a50af79e8bea294689c31096`  
-		Last Modified: Thu, 08 Jun 2017 19:04:21 GMT  
-		Size: 12.5 MB (12498730 bytes)  
+	-	`sha256:a177011b2cc117eca1e5f9718c6ba061003c649df9b770d8eda6416afb25b5c1`  
+		Last Modified: Sat, 24 Jun 2017 15:34:45 GMT  
+		Size: 12.5 MB (12498740 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3dd2dda7436e783e1611923127188dfd274bf71aa0900b75e58864830666aa96`  
-		Last Modified: Thu, 08 Jun 2017 19:04:16 GMT  
-		Size: 900.6 KB (900595 bytes)  
+	-	`sha256:e4e1daeedd3363b9568b5e4af4ce47d35ad161de20cf86f43aea09f76a3a14ab`  
+		Last Modified: Sat, 24 Jun 2017 15:34:40 GMT  
+		Size: 900.6 KB (900601 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
