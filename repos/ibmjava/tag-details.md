@@ -14,9 +14,12 @@
 -	[`ibmjava:sfj-alpine`](#ibmjavasfj-alpine)
 -	[`ibmjava:8-sdk`](#ibmjava8-sdk)
 -	[`ibmjava:sdk`](#ibmjavasdk)
+-	[`ibmjava:8-sdk-alpine`](#ibmjava8-sdk-alpine)
+-	[`ibmjava:sdk-alpine`](#ibmjavasdk-alpine)
 -	[`ibmjava:9-ea2-sdk`](#ibmjava9-ea2-sdk)
 -	[`ibmjava:9-sdk`](#ibmjava9-sdk)
 -	[`ibmjava:9`](#ibmjava9)
+-	[`ibmjava:9-sdk-alpine`](#ibmjava9-sdk-alpine)
 
 ## `ibmjava:8-jre`
 
@@ -798,6 +801,14 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 		Size: 148.5 MB (148535908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `ibmjava:8-sdk-alpine`
+
+**does not exist** (yet?)
+
+## `ibmjava:sdk-alpine`
+
+**does not exist** (yet?)
+
 ## `ibmjava:9-ea2-sdk`
 
 ```console
@@ -1016,3 +1027,7 @@ ENV JAVA_HOME=/opt/ibm/java PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bi
 		Last Modified: Sat, 24 Jun 2017 11:18:56 GMT  
 		Size: 271.6 MB (271634585 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ibmjava:9-sdk-alpine`
+
+**does not exist** (yet?)
