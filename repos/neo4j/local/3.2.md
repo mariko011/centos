@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:87ca73ed691a42e52ba3f302a864205121fc2b4f4565d817a8bed9a16a992528`
-- Created: `2017-06-02T16:20:59.208384787Z`
+- Image ID: `sha256:70c9a8422b9fe2b1e092e9f6e042f16ea0f7ab113429a26cff2bc7bc841b7c15`
+- Created: `2017-06-20T19:17:55.473266984Z`
 - Virtual Size: ~ 173.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,6 +14,6 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre`
   - `JAVA_VERSION=8u131`
-  - `JAVA_ALPINE_VERSION=8.131.11-r1`
+  - `JAVA_ALPINE_VERSION=8.131.11-r2`
   - `NEO4J_SHA256=24fd6a704e0d80c4b4f9a3d17ce0db23f258a8cdcfa1eb28d7803b7d1811ee96`
   - `NEO4J_TARBALL=neo4j-community-3.2.1-unix.tar.gz`
