@@ -1491,19 +1491,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.7.7.10-5+deb7u14
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u14.dsc' imagemagick_6.7.7.10-5+deb7u14.dsc 3160 SHA256:b15d86d9b52964a80356075de425b0d109d455f976c5100dce1c2723eeb1a890
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10.orig.tar.bz2' imagemagick_6.7.7.10.orig.tar.bz2 10473522 SHA256:05fb23824b1c90ac35259715c94c65fb5cda6969eb597a7637762d8cf3998fda
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u14.debian.tar.bz2' imagemagick_6.7.7.10-5+deb7u14.debian.tar.bz2 214682 SHA256:a19667ec6f76a93b3d50c90f29959fb90c236d2fa199074ab382975ac6903edd
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/imagemagick/8:6.7.7.10-5+deb7u14/
-- https://sources.debian.net/src/imagemagick/8:6.7.7.10-5+deb7u14/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9-2`
 
