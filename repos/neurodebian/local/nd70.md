@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:100beda3a2b2d5328ea0b4ca031050e2ddaec7ad4f68ff89ac2e3728ad76737f`
-- Created: `2017-06-14T18:43:36.487361606Z`
+- Image ID: `sha256:c158d99a0d4f3bebed008a6e1e2917855d98e39f10e3aaf0eda3a17c0a97333f`
+- Created: `2017-06-23T00:52:32.916977661Z`
 - Virtual Size: ~ 85.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -401,21 +401,32 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/e2fsprogs/1.42.5-1.1+deb7u1/
 - https://sources.debian.net/src/e2fsprogs/1.42.5-1.1+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `eglibc=2.13-38+deb7u11`
+### `dpkg` source package: `eglibc=2.13-38+deb7u12`
 
 Binary Packages:
 
-- `libc-bin=2.13-38+deb7u11`
-- `libc6:amd64=2.13-38+deb7u11`
-- `multiarch-support=2.13-38+deb7u11`
+- `libc-bin=2.13-38+deb7u12`
+- `libc6:amd64=2.13-38+deb7u12`
+- `multiarch-support=2.13-38+deb7u12`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris eglibc=2.13-38+deb7u12
+'http://security.debian.org/pool/updates/main/e/eglibc/eglibc_2.13-38+deb7u12.dsc' eglibc_2.13-38+deb7u12.dsc 5390 SHA256:2727c6e9d238477f40ed5259d85ee028b20a69e1068188b0d5ec6879a7101819
+'http://security.debian.org/pool/updates/main/e/eglibc/eglibc_2.13.orig.tar.gz' eglibc_2.13.orig.tar.gz 23004247 SHA256:5e6dce233f0d0f89453b369efbc1ff360956b5d2de45c03c9bc8c52eef98868f
+'http://security.debian.org/pool/updates/main/e/eglibc/eglibc_2.13-38+deb7u12.diff.gz' eglibc_2.13-38+deb7u12.diff.gz 2054928 SHA256:e791980fd3e69d904b847daa159bd52f1ecfeecc482bd4f7d5257893c9954fa8
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/eglibc/2.13-38+deb7u12/
+- https://sources.debian.net/src/eglibc/2.13-38+deb7u12/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `findutils=4.4.2-4`
 
