@@ -2,6 +2,10 @@
 
 # Tags of `postgres`
 
+-	[`postgres:10-beta1`](#postgres10-beta1)
+-	[`postgres:10`](#postgres10)
+-	[`postgres:10-beta1-alpine`](#postgres10-beta1-alpine)
+-	[`postgres:10-alpine`](#postgres10-alpine)
 -	[`postgres:9.6.3`](#postgres963)
 -	[`postgres:9.6`](#postgres96)
 -	[`postgres:9`](#postgres9)
@@ -26,6 +30,22 @@
 -	[`postgres:9.2`](#postgres92)
 -	[`postgres:9.2.21-alpine`](#postgres9221-alpine)
 -	[`postgres:9.2-alpine`](#postgres92-alpine)
+
+## `postgres:10-beta1`
+
+**does not exist** (yet?)
+
+## `postgres:10`
+
+**does not exist** (yet?)
+
+## `postgres:10-beta1-alpine`
+
+**does not exist** (yet?)
+
+## `postgres:10-alpine`
+
+**does not exist** (yet?)
 
 ## `postgres:9.6.3`
 
