@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:66e43f7e54b052bacb30247041a6bdc75d1d0893b42d0d89ed23d43554f5a94a`
-- Created: `2017-06-12T16:51:25.320738117Z`
+- Image ID: `sha256:082a6c5cab28e237ea2127a1a580c4f4e613eef48b351e7455779d86ae93a403`
+- Created: `2017-06-23T01:50:52.084355076Z`
 - Virtual Size: ~ 420.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -783,34 +783,56 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/e2fsprogs/1.42.5-1.1+deb7u1/
 - https://sources.debian.net/src/e2fsprogs/1.42.5-1.1+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `eglibc=2.13-38+deb7u11`
+### `dpkg` source package: `eglibc=2.13-38+deb7u12`
 
 Binary Packages:
 
-- `libc-bin=2.13-38+deb7u11`
-- `libc6:amd64=2.13-38+deb7u11`
-- `multiarch-support=2.13-38+deb7u11`
+- `libc-bin=2.13-38+deb7u12`
+- `libc6:amd64=2.13-38+deb7u12`
+- `multiarch-support=2.13-38+deb7u12`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris eglibc=2.13-38+deb7u12
+'http://security.debian.org/pool/updates/main/e/eglibc/eglibc_2.13-38+deb7u12.dsc' eglibc_2.13-38+deb7u12.dsc 5390 SHA256:2727c6e9d238477f40ed5259d85ee028b20a69e1068188b0d5ec6879a7101819
+'http://security.debian.org/pool/updates/main/e/eglibc/eglibc_2.13.orig.tar.gz' eglibc_2.13.orig.tar.gz 23004247 SHA256:5e6dce233f0d0f89453b369efbc1ff360956b5d2de45c03c9bc8c52eef98868f
+'http://security.debian.org/pool/updates/main/e/eglibc/eglibc_2.13-38+deb7u12.diff.gz' eglibc_2.13-38+deb7u12.diff.gz 2054928 SHA256:e791980fd3e69d904b847daa159bd52f1ecfeecc482bd4f7d5257893c9954fa8
+```
 
-### `dpkg` source package: `expat=2.1.0-1+deb7u4`
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/eglibc/2.13-38+deb7u12/
+- https://sources.debian.net/src/eglibc/2.13-38+deb7u12/debian/copyright (for direct copyright/license information)
+
+### `dpkg` source package: `expat=2.1.0-1+deb7u5`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.1.0-1+deb7u4`
+- `libexpat1:amd64=2.1.0-1+deb7u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris expat=2.1.0-1+deb7u5
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-1+deb7u5.dsc' expat_2.1.0-1+deb7u5.dsc 2191 SHA256:440c97224d3e4f9ca10575b3562a80e2e6b7547363a4f2d30e4b0e70579d3344
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-1+deb7u5.debian.tar.gz' expat_2.1.0-1+deb7u5.debian.tar.gz 20362 SHA256:e809d6fc1fc250d716f610541c30ae2669ada9fb943f4243f15eac85185ee661
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/expat/2.1.0-1+deb7u5/
+- https://sources.debian.net/src/expat/2.1.0-1+deb7u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `findutils=4.4.2-4`
 
@@ -1740,29 +1762,18 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/liberror-perl/0.17-1/
 - https://sources.debian.net/src/liberror-perl/0.17-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libffi=3.0.10-3`
+### `dpkg` source package: `libffi=3.0.10-3+deb7u1`
 
 Binary Packages:
 
-- `libffi5:amd64=3.0.10-3`
+- `libffi5:amd64=3.0.10-3+deb7u1`
 
 Licenses: (parsed from: `/usr/share/doc/libffi5/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libffi=3.0.10-3
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.0.10-3.dsc' libffi_3.0.10-3.dsc 1593 SHA256:5343328f0fd026f7dc212e0632d3d094d3642903c619e4f5716c3b0c0fba73d1
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.0.10.orig.tar.gz' libffi_3.0.10.orig.tar.gz 753346 SHA256:f01eb9027e9eb56aeaeef636649877756d475d714ef8b47f627f65bc5f3b492f
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.0.10-3.diff.gz' libffi_3.0.10-3.diff.gz 20644 SHA256:b10b108d47a65d1683f557070c797c22681a52c40c8a7b37c609349a64339741
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libffi/3.0.10-3/
-- https://sources.debian.net/src/libffi/3.0.10-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgcrypt11=1.5.0-5+deb7u5`
 
@@ -2096,18 +2107,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libsm/2:1.2.1-2/
 - https://sources.debian.net/src/libsm/2:1.2.1-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libsndfile=1.0.25-9.1+deb7u2`
+### `dpkg` source package: `libsndfile=1.0.25-9.1+deb7u3`
 
 Binary Packages:
 
-- `libsndfile1:amd64=1.0.25-9.1+deb7u2`
+- `libsndfile1:amd64=1.0.25-9.1+deb7u3`
 
 Licenses: (parsed from: `/usr/share/doc/libsndfile1/copyright`)
 
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libsndfile=1.0.25-9.1+deb7u3
+'http://security.debian.org/pool/updates/main/libs/libsndfile/libsndfile_1.0.25-9.1+deb7u3.dsc' libsndfile_1.0.25-9.1+deb7u3.dsc 2010 SHA256:5337266cc3023b026416200e80c3e1c00ec15018951b5614ad0d6d91dee9f425
+'http://security.debian.org/pool/updates/main/libs/libsndfile/libsndfile_1.0.25.orig.tar.gz' libsndfile_1.0.25.orig.tar.gz 1060692 SHA256:59016dbd326abe7e2366ded5c344c853829bebfd1702ef26a07ef662d6aa4882
+'http://security.debian.org/pool/updates/main/libs/libsndfile/libsndfile_1.0.25-9.1+deb7u3.debian.tar.gz' libsndfile_1.0.25-9.1+deb7u3.debian.tar.gz 19752 SHA256:eb44fe1042075acaa5b2baeda39cea8638121143b98475c75ecdb08c31cda192
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libsndfile/1.0.25-9.1+deb7u3/
+- https://sources.debian.net/src/libsndfile/1.0.25-9.1+deb7u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libssh2=1.4.2-1.1+deb7u2`
 
@@ -3691,18 +3713,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tcp-wrappers/7.6.q-24/
 - https://sources.debian.net/src/tcp-wrappers/7.6.q-24/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tiff3=3.9.6-11+deb7u5`
+### `dpkg` source package: `tiff3=3.9.6-11+deb7u6`
 
 Binary Packages:
 
-- `libtiff4:amd64=3.9.6-11+deb7u5`
+- `libtiff4:amd64=3.9.6-11+deb7u6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff3=3.9.6-11+deb7u6
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u6.dsc' tiff3_3.9.6-11+deb7u6.dsc 1650 SHA256:5003c462ea09ec7fc305384c6eb7cb00dbd5028c1798bfa288db661d2e0883c3
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6.orig.tar.gz' tiff3_3.9.6.orig.tar.gz 1454196 SHA256:0fba119156236074343a14afbd3a47907e3a5952c9c86102305d4eeb06ad6833
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u6.debian.tar.gz' tiff3_3.9.6-11+deb7u6.debian.tar.gz 48032 SHA256:7800bc938ef5cd6650ec37fb00bea49d9febddc56f68944c875dab195f7789be
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u6/
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ttf-dejavu=2.33-3`
 
