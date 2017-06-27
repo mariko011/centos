@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:43b67f2d9cee5c4dc3d32b992254e2b2f7f3e944fe21fc41c4664b97b4897066`
-- Created: `2017-06-03T00:55:33.640530845Z`
-- Virtual Size: ~ 823.87 Mb  
+- Image ID: `sha256:74d77a39d2766f109f4375fde55bc14afa620de5dd0f4075fd9cb3b060f2b715`
+- Created: `2017-06-23T06:25:54.422129354Z`
+- Virtual Size: ~ 823.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -933,23 +933,29 @@ $ apt-get source -qq --print-uris e2fsprogs=1.42.9-3ubuntu1.3
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.42.9-3ubuntu1.3.debian.tar.gz' e2fsprogs_1.42.9-3ubuntu1.3.debian.tar.gz 137885 SHA256:541cf9e092ef6d6e45fddd5fa0b44903f597ec045cbb1358db109e994e97fceb
 ```
 
-### `dpkg` source package: `eglibc=2.19-0ubuntu6.11`
+### `dpkg` source package: `eglibc=2.19-0ubuntu6.13`
 
 Binary Packages:
 
-- `libc-bin=2.19-0ubuntu6.11`
-- `libc-dev-bin=2.19-0ubuntu6.11`
-- `libc6:amd64=2.19-0ubuntu6.11`
-- `libc6-dev:amd64=2.19-0ubuntu6.11`
-- `multiarch-support=2.19-0ubuntu6.11`
+- `libc-bin=2.19-0ubuntu6.13`
+- `libc-dev-bin=2.19-0ubuntu6.13`
+- `libc6:amd64=2.19-0ubuntu6.13`
+- `libc6-dev:amd64=2.19-0ubuntu6.13`
+- `multiarch-support=2.19-0ubuntu6.13`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris eglibc=2.19-0ubuntu6.13
+'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19-0ubuntu6.13.dsc' eglibc_2.19-0ubuntu6.13.dsc 5814 SHA256:f4c36f5d1d4b411002b17322a8d7e75fc9cfb427a69b977e6a7f8e0bc9fd100f
+'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19.orig.tar.xz' eglibc_2.19.orig.tar.xz 12610800 SHA256:e5d30be72b702dffae527779af1be755f0dfbf13c171998a04f7265cd4da131f
+'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19-0ubuntu6.13.debian.tar.xz' eglibc_2.19-0ubuntu6.13.debian.tar.xz 1046856 SHA256:03856ac5cba476c541a789a22f54d165d8a864070cc1d6161c5dd0f4bfef6271
+```
 
 ### `dpkg` source package: `eject=2.1.5+deb1+cvs20081104-13.1ubuntu0.14.04.1`
 
@@ -1259,12 +1265,12 @@ $ apt-get source -qq --print-uris gnupg=1.4.16-1ubuntu2.4
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.16-1ubuntu2.4.debian.tar.gz' gnupg_1.4.16-1ubuntu2.4.debian.tar.gz 56430 SHA256:dbc2738c30cdcedb459e0ff0a9d1ec42e7b238b96c4a9326cae84a0afdae6441
 ```
 
-### `dpkg` source package: `gnutls26=2.12.23-12ubuntu2.7`
+### `dpkg` source package: `gnutls26=2.12.23-12ubuntu2.8`
 
 Binary Packages:
 
-- `libgnutls-openssl27:amd64=2.12.23-12ubuntu2.7`
-- `libgnutls26:amd64=2.12.23-12ubuntu2.7`
+- `libgnutls-openssl27:amd64=2.12.23-12ubuntu2.8`
+- `libgnutls26:amd64=2.12.23-12ubuntu2.8`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls-openssl27/copyright`, `/usr/share/doc/libgnutls26/copyright`)
 
@@ -1274,8 +1280,14 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls-openssl27/copyright`, `/usr/sh
 - `LGPL-2.1`
 - `The main library is licensed under GNU Lesser General Public`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnutls26=2.12.23-12ubuntu2.8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23-12ubuntu2.8.dsc' gnutls26_2.12.23-12ubuntu2.8.dsc 2722 SHA256:94af35cea3d6dd80c9fbdf5437241ba9157dc2599e1d02ecfd4eaab3dc5dbfac
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23.orig.tar.bz2' gnutls26_2.12.23.orig.tar.bz2 7279415 SHA256:dfa67a7e40727eb0913e75f3c44911d5d8cd58d1ead5acfe73dd933fc0d17ed2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23-12ubuntu2.8.debian.tar.gz' gnutls26_2.12.23-12ubuntu2.8.debian.tar.gz 46239 SHA256:ef65f4e762e93da0340f4977fabf264601fb55eeb8aa13c718ccc02751547c61
+```
 
 ### `dpkg` source package: `grep=2.16-1`
 
@@ -2257,11 +2269,11 @@ $ apt-get source -qq --print-uris libsepol=2.2-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libs/libsepol/libsepol_2.2-1ubuntu0.1.debian.tar.xz' libsepol_2.2-1ubuntu0.1.debian.tar.xz 12992 SHA256:5a901f01f3f03b110bee09ca0813f5e3afc308744778604004166869b08c5cc7
 ```
 
-### `dpkg` source package: `libtasn1-6=3.4-3ubuntu0.4`
+### `dpkg` source package: `libtasn1-6=3.4-3ubuntu0.5`
 
 Binary Packages:
 
-- `libtasn1-6:amd64=3.4-3ubuntu0.4`
+- `libtasn1-6:amd64=3.4-3ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 
@@ -2270,8 +2282,14 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libtasn1-6=3.4-3ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_3.4-3ubuntu0.5.dsc' libtasn1-6_3.4-3ubuntu0.5.dsc 2477 SHA256:d03e9b44cadd59ada08c0e57af62efef25f380f84f92a718fece65cf95deb5b0
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_3.4.orig.tar.gz' libtasn1-6_3.4.orig.tar.gz 1844115 SHA256:f353507a458fe2372b791016a056c95946eebfc7256b49013851f134a5e6acc8
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_3.4-3ubuntu0.5.debian.tar.gz' libtasn1-6_3.4-3ubuntu0.5.debian.tar.gz 69101 SHA256:5c87d04084f98b7fecebe5d013a2035c423f316f44e8d33b9c17785d7b47fca4
+```
 
 ### `dpkg` source package: `libterm-ui-perl=0.42-1`
 
@@ -2454,18 +2472,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.4-3ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.4-3ubuntu3.1.debian.tar.gz' libyaml_0.1.4-3ubuntu3.1.debian.tar.gz 6404 SHA256:816422e1c743180409aff9247f3a298c8f98260d91da29c7315ce8bd576d53c2
 ```
 
-### `dpkg` source package: `linux=3.13.0-119.166`
+### `dpkg` source package: `linux=3.13.0-121.170`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-119.166`
+- `linux-libc-dev:amd64=3.13.0-121.170`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.13.0-121.170
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-121.170.dsc' linux_3.13.0-121.170.dsc 8127 SHA256:034386b90f01b1fb7c6fb920b9a7fe21fdfb96a37caf4a982a5e6a13e496a779
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-121.170.diff.gz' linux_3.13.0-121.170.diff.gz 9475201 SHA256:a3cdbc394f3f611463990163b2c525e21ab6950a3c8f371a90d62bcae3bfa2f2
+```
 
 ### `dpkg` source package: `lksctp-tools=1.0.15+dfsg-1`
 
@@ -2530,11 +2554,11 @@ $ apt-get source -qq --print-uris log4cxx=0.10.0-1.2ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/universe/l/log4cxx/log4cxx_0.10.0-1.2ubuntu3.diff.gz' log4cxx_0.10.0-1.2ubuntu3.diff.gz 10078 SHA256:9429aca9c5ee12081a1195c8b6fc91f8a04abe8266ec61043f17ea5ad4012121
 ```
 
-### `dpkg` source package: `logrotate=3.8.7-1ubuntu1`
+### `dpkg` source package: `logrotate=3.8.7-1ubuntu1.1`
 
 Binary Packages:
 
-- `logrotate=3.8.7-1ubuntu1`
+- `logrotate=3.8.7-1ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/logrotate/copyright`)
 
@@ -2543,10 +2567,10 @@ Licenses: (parsed from: `/usr/share/doc/logrotate/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris logrotate=3.8.7-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-1ubuntu1.dsc' logrotate_3.8.7-1ubuntu1.dsc 1936 SHA256:76b05cae03b33b9c3d385077680510c17015f637d7be1f1c1b00b9faaa42e8d1
+$ apt-get source -qq --print-uris logrotate=3.8.7-1ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-1ubuntu1.1.dsc' logrotate_3.8.7-1ubuntu1.1.dsc 1932 SHA256:05e557d77dcd60f06e3debf7a488ef0d4617dafad2d6729c08606ac60a03a54a
 'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7.orig.tar.gz' logrotate_3.8.7.orig.tar.gz 58898 SHA256:f6ba691f40e30e640efa2752c1f9499a3f9738257660994de70a45fe00d12b64
-'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-1ubuntu1.debian.tar.gz' logrotate_3.8.7-1ubuntu1.debian.tar.gz 23842 SHA256:d8f09d0bcf0ec2d334acb40f7d158a5f9df2a536f38586a58d253d79209a623f
+'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-1ubuntu1.1.debian.tar.xz' logrotate_3.8.7-1ubuntu1.1.debian.tar.xz 22632 SHA256:cde21659a288e14a31c761df6ebaf8aaed11c653b4ed21b658e35a05b6cc319c
 ```
 
 ### `dpkg` source package: `lsb=4.1+Debian11ubuntu6.2`
@@ -3452,31 +3476,43 @@ $ apt-get source -qq --print-uris procps=1:3.3.9-1ubuntu2.2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.9-1ubuntu2.2.debian.tar.gz' procps_3.3.9-1ubuntu2.2.debian.tar.gz 40730 SHA256:b1a99cac5af53633118cc25a3fd6cf5ddb8dd23dbf1f15eb8cb07b7306d8448f
 ```
 
-### `dpkg` source package: `python-catkin-pkg-modules=0.3.4-1`
+### `dpkg` source package: `python-catkin-pkg-modules=0.3.5-1`
 
 Binary Packages:
 
-- `python-catkin-pkg-modules=0.3.4-1`
+- `python-catkin-pkg-modules=0.3.5-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.3.5-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.5-1.dsc' python-catkin-pkg-modules_0.3.5-1.dsc 991 SHA256:cfc33ed4e907ae9bb4746cd9890c9459e56ce6605698c48c5aeda67b9bcbd9e6
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.5.orig.tar.gz' python-catkin-pkg-modules_0.3.5.orig.tar.gz 44442 SHA256:0979500b582902e44b31b56778f952d1f218fb9e0e8f54fc590b4a15b2bb6fa9
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.5-1.debian.tar.xz' python-catkin-pkg-modules_0.3.5-1.debian.tar.xz 1128 SHA256:6e8205c6f73c9bf97e2f457b63c22e501d493694272902f3f985a69589e9f6f6
+```
 
-### `dpkg` source package: `python-catkin-pkg=0.3.4-1`
+### `dpkg` source package: `python-catkin-pkg=0.3.5-1`
 
 Binary Packages:
 
-- `python-catkin-pkg=0.3.4-1`
+- `python-catkin-pkg=0.3.5-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-catkin-pkg=0.3.5-1
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.5-1.dsc' python-catkin-pkg_0.3.5-1.dsc 920 SHA256:3b7068fe89ea087e0356054fbed6378b5ca5e46050d9e9f29fcc7fcf758906db
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.5.orig.tar.gz' python-catkin-pkg_0.3.5.orig.tar.gz 9553 SHA256:09c90747055f3ed70d70058b5fa07be7b63c2b9325f82e5700abff195cd55c7a
+'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.5-1.debian.tar.xz' python-catkin-pkg_0.3.5-1.debian.tar.xz 1112 SHA256:0b53abfd5a19b432f73fff456af62c191e96664551eae92f49572b2a49ae62ab
+```
 
 ### `dpkg` source package: `python-crypto=2.6.1-4ubuntu0.2`
 
