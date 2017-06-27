@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f4ef2a09cd82685b87835a5c11aef2ef72247a0908cd14ffe174ce0c9d0f8b75`
-- Created: `2017-06-09T21:04:34.682212022Z`
-- Virtual Size: ~ 233.46 Mb  
+- Image ID: `sha256:3f40b7167b09794806ce2e99bd557619a6eccd65c63a2eee4d95fd6a909bca20`
+- Created: `2017-06-23T12:50:27.849469706Z`
+- Virtual Size: ~ 233.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -612,34 +612,56 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/e2fsprogs/1.42.5-1.1+deb7u1/
 - https://sources.debian.net/src/e2fsprogs/1.42.5-1.1+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `eglibc=2.13-38+deb7u11`
+### `dpkg` source package: `eglibc=2.13-38+deb7u12`
 
 Binary Packages:
 
-- `libc-bin=2.13-38+deb7u11`
-- `libc6:amd64=2.13-38+deb7u11`
-- `multiarch-support=2.13-38+deb7u11`
+- `libc-bin=2.13-38+deb7u12`
+- `libc6:amd64=2.13-38+deb7u12`
+- `multiarch-support=2.13-38+deb7u12`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris eglibc=2.13-38+deb7u12
+'http://security.debian.org/pool/updates/main/e/eglibc/eglibc_2.13-38+deb7u12.dsc' eglibc_2.13-38+deb7u12.dsc 5390 SHA256:2727c6e9d238477f40ed5259d85ee028b20a69e1068188b0d5ec6879a7101819
+'http://security.debian.org/pool/updates/main/e/eglibc/eglibc_2.13.orig.tar.gz' eglibc_2.13.orig.tar.gz 23004247 SHA256:5e6dce233f0d0f89453b369efbc1ff360956b5d2de45c03c9bc8c52eef98868f
+'http://security.debian.org/pool/updates/main/e/eglibc/eglibc_2.13-38+deb7u12.diff.gz' eglibc_2.13-38+deb7u12.diff.gz 2054928 SHA256:e791980fd3e69d904b847daa159bd52f1ecfeecc482bd4f7d5257893c9954fa8
+```
 
-### `dpkg` source package: `expat=2.1.0-1+deb7u4`
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/eglibc/2.13-38+deb7u12/
+- https://sources.debian.net/src/eglibc/2.13-38+deb7u12/debian/copyright (for direct copyright/license information)
+
+### `dpkg` source package: `expat=2.1.0-1+deb7u5`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.1.0-1+deb7u4`
+- `libexpat1:amd64=2.1.0-1+deb7u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris expat=2.1.0-1+deb7u5
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-1+deb7u5.dsc' expat_2.1.0-1+deb7u5.dsc 2191 SHA256:440c97224d3e4f9ca10575b3562a80e2e6b7547363a4f2d30e4b0e70579d3344
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-1+deb7u5.debian.tar.gz' expat_2.1.0-1+deb7u5.debian.tar.gz 20362 SHA256:e809d6fc1fc250d716f610541c30ae2669ada9fb943f4243f15eac85185ee661
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/expat/2.1.0-1+deb7u5/
+- https://sources.debian.net/src/expat/2.1.0-1+deb7u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `findutils=4.4.2-4`
 
@@ -1284,11 +1306,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libssh2/1.4.2-1.1+deb7u2/
 - https://sources.debian.net/src/libssh2/1.4.2-1.1+deb7u2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libtasn1-3=2.13-2+deb7u3`
+### `dpkg` source package: `libtasn1-3=2.13-2+deb7u4`
 
 Binary Packages:
 
-- `libtasn1-3:amd64=2.13-2+deb7u3`
+- `libtasn1-3:amd64=2.13-2+deb7u4`
 
 Licenses: (parsed from: `/usr/share/doc/libtasn1-3/copyright`)
 
@@ -1297,8 +1319,19 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-3/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libtasn1-3=2.13-2+deb7u4
+'http://security.debian.org/pool/updates/main/libt/libtasn1-3/libtasn1-3_2.13-2+deb7u4.dsc' libtasn1-3_2.13-2+deb7u4.dsc 2492 SHA256:d8996334d749ff35c0e0d1880deeef7ffa9aeaa18f95aa1c4e06ca71841bbb07
+'http://security.debian.org/pool/updates/main/libt/libtasn1-3/libtasn1-3_2.13.orig.tar.gz' libtasn1-3_2.13.orig.tar.gz 1964659 SHA256:a56e46483d1d42fe44ba58c9758620844042468d7c2d75f6318cdf3222745a91
+'http://security.debian.org/pool/updates/main/libt/libtasn1-3/libtasn1-3_2.13-2+deb7u4.debian.tar.gz' libtasn1-3_2.13-2+deb7u4.debian.tar.gz 13459 SHA256:f9609704ed1d44e6375c6857d6393a5b8546e7a561651893c68f2a4e6c681bed
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libtasn1-3/2.13-2+deb7u4/
+- https://sources.debian.net/src/libtasn1-3/2.13-2+deb7u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libtext-charwidth-perl=0.04-7`
 
@@ -1521,18 +1554,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nspr/2:4.12-1+deb7u1/
 - https://sources.debian.net/src/nspr/2:4.12-1+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `nss=2:3.26-1+debu7u2`
+### `dpkg` source package: `nss=2:3.26-1+debu7u4`
 
 Binary Packages:
 
-- `libnss3:amd64=2:3.26-1+debu7u2`
+- `libnss3:amd64=2:3.26-1+debu7u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris nss=2:3.26-1+debu7u4
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26-1+debu7u4.dsc' nss_3.26-1+debu7u4.dsc 2232 SHA256:955a820f0c2ee00e4c6fab59b8485fdaa3ccff15cf5bcd65027c61f3ef951337
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26.orig.tar.gz' nss_3.26.orig.tar.gz 7386943 SHA256:91783a570ab953693eb977ce47c501f04c104cec287fa011c91bcc8970d1c564
+'http://security.debian.org/pool/updates/main/n/nss/nss_3.26-1+debu7u4.debian.tar.gz' nss_3.26-1+debu7u4.debian.tar.gz 42175 SHA256:f089dd13ceb14f68bebdb3909cb32594173d13d2178787d8f3de27a5c3992a9d
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/nss/2:3.26-1+debu7u4/
+- https://sources.debian.net/src/nss/2:3.26-1+debu7u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openjdk-6=6b38-1.13.10-1~deb7u1`
 
@@ -1563,11 +1607,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/openjdk-6/6b38-1.13.10-1~deb7u1/
 - https://sources.debian.net/src/openjdk-6/6b38-1.13.10-1~deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openldap=2.4.31-2+deb7u2`
+### `dpkg` source package: `openldap=2.4.31-2+deb7u3`
 
 Binary Packages:
 
-- `libldap-2.4-2:amd64=2.4.31-2+deb7u2`
+- `libldap-2.4-2:amd64=2.4.31-2+deb7u3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1576,16 +1620,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openldap=2.4.31-2+deb7u2
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.31-2+deb7u2.dsc' openldap_2.4.31-2+deb7u2.dsc 2736 SHA256:b66be1c31e3968b1a4b40929be67f77f25d91a192a754361b9b51a240dabe4b5
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.31.orig.tar.gz' openldap_2.4.31.orig.tar.gz 4720612 SHA256:dff60c1044021217ab97a7bdda5a7016015f042db0fbfd566d52abb266d19239
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.31-2+deb7u2.diff.gz' openldap_2.4.31-2+deb7u2.diff.gz 168321 SHA256:f3bfde0ac00c923eb9f9559ec95c45632de7d5e0a33a0e7f249214050960ee36
+$ apt-get source -qq --print-uris openldap=2.4.31-2+deb7u3
+'http://security.debian.org/pool/updates/main/o/openldap/openldap_2.4.31-2+deb7u3.dsc' openldap_2.4.31-2+deb7u3.dsc 2752 SHA256:0b62e62a3a4494b75b57f304ed1fdc46d5aa58d6080759431941067b461b52df
+'http://security.debian.org/pool/updates/main/o/openldap/openldap_2.4.31.orig.tar.gz' openldap_2.4.31.orig.tar.gz 4720612 SHA256:dff60c1044021217ab97a7bdda5a7016015f042db0fbfd566d52abb266d19239
+'http://security.debian.org/pool/updates/main/o/openldap/openldap_2.4.31-2+deb7u3.diff.gz' openldap_2.4.31-2+deb7u3.diff.gz 166505 SHA256:699983d42003b2c7402703c33510007c64daafbdf90250199e56bdaf40537aaa
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openldap/2.4.31-2+deb7u2/
-- https://sources.debian.net/src/openldap/2.4.31-2+deb7u2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openldap/2.4.31-2+deb7u3/
+- https://sources.debian.net/src/openldap/2.4.31-2+deb7u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssl=1.0.1t-1+deb7u2`
 
@@ -1693,11 +1737,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/pcsc-lite/1.8.4-1+deb7u2/
 - https://sources.debian.net/src/pcsc-lite/1.8.4-1+deb7u2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `perl=5.14.2-21+deb7u4`
+### `dpkg` source package: `perl=5.14.2-21+deb7u5`
 
 Binary Packages:
 
-- `perl-base=5.14.2-21+deb7u4`
+- `perl-base=5.14.2-21+deb7u5`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -1724,8 +1768,19 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.14.2-21+deb7u5
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.14.2-21+deb7u5.dsc' perl_5.14.2-21+deb7u5.dsc 2394 SHA256:cf6791573081a2095bdf78abb47eb35439efb90e8b529dc71deb04430b798e87
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.14.2.orig.tar.bz2' perl_5.14.2.orig.tar.bz2 13226972 SHA256:c2a2362e8d1fdd2bfbfde801fcd78241f154c164f00fba76065ab8cc5c7b06cd
+'http://security.debian.org/pool/updates/main/p/perl/perl_5.14.2-21+deb7u5.debian.tar.gz' perl_5.14.2-21+deb7u5.debian.tar.gz 194825 SHA256:bc1957c557e945349bfbc59ccfb994502c340e448ca33d8f197b8567ea6a9d11
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/perl/5.14.2-21+deb7u5/
+- https://sources.debian.net/src/perl/5.14.2-21+deb7u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `readline6=6.2+dfsg-0.1`
 
