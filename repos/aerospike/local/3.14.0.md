@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d9bf07f807dc0e8d4762709858377c78638f9ac830d7f2a9450677402546b868`
-- Created: `2017-06-12T16:36:45.74467128Z`
-- Virtual Size: ~ 197.21 Mb  
+- Image ID: `sha256:861b0f3b11a75b5395f228ad10c7a0918516fa6d47943b15bc8ed5c3dd27b4ad`
+- Created: `2017-06-21T00:36:01.80499649Z`
+- Virtual Size: ~ 198.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -588,21 +588,27 @@ $ apt-get source -qq --print-uris gccgo-6=6.0.1-0ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gccgo-6/gccgo-6_6.0.1-0ubuntu1.diff.gz' gccgo-6_6.0.1-0ubuntu1.diff.gz 633954 SHA256:839eea6c2d23670f09b642864ff61e3097b47391cb508a5997538750ff8678f6
 ```
 
-### `dpkg` source package: `glibc=2.23-0ubuntu7`
+### `dpkg` source package: `glibc=2.23-0ubuntu9`
 
 Binary Packages:
 
-- `libc-bin=2.23-0ubuntu7`
-- `libc6:amd64=2.23-0ubuntu7`
-- `multiarch-support=2.23-0ubuntu7`
+- `libc-bin=2.23-0ubuntu9`
+- `libc6:amd64=2.23-0ubuntu9`
+- `multiarch-support=2.23-0ubuntu9`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris glibc=2.23-0ubuntu9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu9.dsc' glibc_2.23-0ubuntu9.dsc 8521 SHA256:6ef67f84ef636eab9b8570c81db761f4c24d7536e7414da7a1b8d4adb5943e5d
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23.orig.tar.xz' glibc_2.23.orig.tar.xz 13849968 SHA256:bf6c528eeebefcacc295270068b79330c1fb2b22458ff66285b4175d23442c96
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.23-0ubuntu9.debian.tar.xz' glibc_2.23-0ubuntu9.debian.tar.xz 1230592 SHA256:3d8eebf05aea0c7577a668ec8210cb2e188ffa90fd5b54734a1214d7cabed034
+```
 
 ### `dpkg` source package: `gmp=2:6.1.0+dfsg-2`
 
@@ -648,12 +654,12 @@ $ apt-get source -qq --print-uris gnupg=1.4.20-1ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.20-1ubuntu3.1.debian.tar.xz' gnupg_1.4.20-1ubuntu3.1.debian.tar.xz 38320 SHA256:a299bedd609dd8a8f488db64c6a13361599ba0f906a805730496f9973257d91c
 ```
 
-### `dpkg` source package: `gnutls28=3.4.10-4ubuntu1.2`
+### `dpkg` source package: `gnutls28=3.4.10-4ubuntu1.3`
 
 Binary Packages:
 
-- `libgnutls-openssl27:amd64=3.4.10-4ubuntu1.2`
-- `libgnutls30:amd64=3.4.10-4ubuntu1.2`
+- `libgnutls-openssl27:amd64=3.4.10-4ubuntu1.3`
+- `libgnutls30:amd64=3.4.10-4ubuntu1.3`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls-openssl27/copyright`, `/usr/share/doc/libgnutls30/copyright`)
 
@@ -668,8 +674,14 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls-openssl27/copyright`, `/usr/sh
 - `The main library is licensed under GNU Lesser`
 - `nonstandard, see below`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnutls28=3.4.10-4ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.3.dsc' gnutls28_3.4.10-4ubuntu1.3.dsc 3076 SHA256:fdd0345d4528501ba95271e175b984172ffdb2cfbd7062576be1c6751c7acc6f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10.orig.tar.xz' gnutls28_3.4.10.orig.tar.xz 6645892 SHA256:6a32c2b4acbd33ff7eefcbd1357009da04c94c60146ef61320b6c076b1bdf59f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.4.10-4ubuntu1.3.debian.tar.xz' gnutls28_3.4.10-4ubuntu1.3.debian.tar.xz 96112 SHA256:d3609837d6415df3bda609dc4c6eacf657f5e76c4a32cfab606e813ec2e18835
+```
 
 ### `dpkg` source package: `grep=2.25-1~16.04.1`
 
