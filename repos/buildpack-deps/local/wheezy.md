@@ -1487,19 +1487,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.7.7.10-5+deb7u14
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u14.dsc' imagemagick_6.7.7.10-5+deb7u14.dsc 3160 SHA256:b15d86d9b52964a80356075de425b0d109d455f976c5100dce1c2723eeb1a890
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10.orig.tar.bz2' imagemagick_6.7.7.10.orig.tar.bz2 10473522 SHA256:05fb23824b1c90ac35259715c94c65fb5cda6969eb597a7637762d8cf3998fda
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u14.debian.tar.bz2' imagemagick_6.7.7.10-5+deb7u14.debian.tar.bz2 214682 SHA256:a19667ec6f76a93b3d50c90f29959fb90c236d2fa199074ab382975ac6903edd
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/imagemagick/8:6.7.7.10-5+deb7u14/
-- https://sources.debian.net/src/imagemagick/8:6.7.7.10-5+deb7u14/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9-2`
 
@@ -2945,19 +2934,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=3.2.89-1
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.89-1.dsc' linux_3.2.89-1.dsc 103043 SHA256:5d92e0cb3d53818562c210bc4639a860f29425f2cd24f8ce4a9b988e0c55aaff
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.89.orig.tar.xz' linux_3.2.89.orig.tar.xz 65997820 SHA256:9f1495415eb3be487f43fc28da09b38129d0826ebc18b39a7e18734592b5a791
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.89-1.debian.tar.xz' linux_3.2.89-1.debian.tar.xz 3742776 SHA256:21dfd73e6c7490db0f8825d4139d735ac570f7e8ce68ced79eed4cfc9c673dcb
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/3.2.89-1/
-- https://sources.debian.net/src/linux/3.2.89-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian8+deb7u1`
 

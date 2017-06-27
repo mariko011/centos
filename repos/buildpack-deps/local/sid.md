@@ -267,19 +267,8 @@ Licenses: (parsed from: `/usr/share/doc/automake/copyright`)
 - `GPL-3+`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris automake-1.15=1:1.15-6
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15-6.dsc' automake-1.15_1.15-6.dsc 2250 SHA256:dfe7a5569a0fcc314a48762bfcdc77b7525749990744d7a00ebadb20bed41ae0
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15.orig.tar.xz' automake-1.15_1.15.orig.tar.xz 1496708 SHA256:9908c75aabd49d13661d6dcb1bc382252d22cc77bf733a2d55e87f2aa2db8636
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15-6.debian.tar.xz' automake-1.15_1.15-6.debian.tar.xz 13040 SHA256:a260d1d38cac0782b42a27fe0335f28e4eaaf4307cfe5f1e8d63a426f2f52502
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/automake-1.15/1:1.15-6/
-- https://sources.debian.net/src/automake-1.15/1:1.15-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `autotools-dev=20161112.1`
 
@@ -342,18 +331,8 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-files=9.9
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9.dsc' base-files_9.9.dsc 1067 SHA256:4ae5728880b81789ae95f0aca8f630d51c4b894e00c4b0e8bfc7c3ebabb595d1
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9.tar.xz' base-files_9.9.tar.xz 62840 SHA256:c941e091eea9d2949b6ed3b8d37ea1d086b50b10d564103d52fafcd129ac1931
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/base-files/9.9/
-- https://sources.debian.net/src/base-files/9.9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -1024,19 +1003,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris expat=2.2.1-1
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.1-1.dsc' expat_2.2.1-1.dsc 2267 SHA256:76d750187f7d31397de023bc943d5baefcaa47bb0c4afaaf91adf5afde2ae219
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.1.orig.tar.bz2' expat_2.2.1.orig.tar.bz2 405441 SHA256:1868cadae4c82a018e361e2b2091de103cd820aaacb0d6cfa49bd2cd83978885
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.1-1.debian.tar.xz' expat_2.2.1-1.debian.tar.xz 10368 SHA256:822765cb5e5b240e112a3d27dfa45d41b9a2e74f309c65fbbd8d85d89d1e7398
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/expat/2.2.1-1/
-- https://sources.debian.net/src/expat/2.2.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `explorercanvas=0.r3-4`
 
@@ -1631,20 +1599,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.8-6
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8-6.dsc' gnutls28_3.5.8-6.dsc 3258 SHA256:0b0f35a0a6c2c5ab464a0c1b2c569479e722087c06f9a364bd9abe1965199b78
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz' gnutls28_3.5.8.orig.tar.xz 7264448 SHA256:0e97f243ae72b70307d684b84c7fe679385aa7a7a0e37e5be810193dcc17d4ff
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz.asc' gnutls28_3.5.8.orig.tar.xz.asc 287 SHA256:417da9db564a841128edb2dc2c98465a5749541f7d71492cb7c4905a0bfeac82
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8-6.debian.tar.xz' gnutls28_3.5.8-6.debian.tar.xz 106584 SHA256:6e77c99e5aa728b311153202448e99159edf36785062eb0e1b7c001323067b39
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnutls28/3.5.8-6/
-- https://sources.debian.net/src/gnutls28/3.5.8-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gobject-introspection=1.50.0-1`
 
@@ -2314,20 +2270,8 @@ Licenses: (parsed from: `/usr/share/doc/libbsd0/copyright`)
 - `public-domain`
 - `public-domain-Colin-Plumb`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libbsd=0.8.4-1
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.4-1.dsc' libbsd_0.8.4-1.dsc 2218 SHA256:6c45ff75c7b7e2490338d90ccb5c0eb130d48fb1cfc6a4e36174baee2f0c797f
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.4.orig.tar.xz' libbsd_0.8.4.orig.tar.xz 368396 SHA256:217af1642915703151ea6df077311633dd6ad7bfa3c7e07dd9329a93f642cab3
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.4.orig.tar.xz.asc' libbsd_0.8.4.orig.tar.xz.asc 833 SHA256:73ec782c23a7af5c981a359b7f3dba707b3fc89ca12cb159eedb2c1be853f8e9
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.4-1.debian.tar.xz' libbsd_0.8.4-1.debian.tar.xz 15444 SHA256:b6cb88be86df0d88542ca3231e8eabc7f2d0e9c4c4d7cbfa7a41438de8ccf542
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libbsd/0.8.4-1/
-- https://sources.debian.net/src/libbsd/0.8.4-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libcap-ng=0.7.7-3`
 
@@ -4486,19 +4430,8 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.24/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris perl=5.24.1-3
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-3.dsc' perl_5.24.1-3.dsc 2316 SHA256:7ebd421bbb9252f5c2ebd6d4cdd04174a58f51ff6bbe542215ca37104d82c51c
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-3.debian.tar.xz' perl_5.24.1-3.debian.tar.xz 168260 SHA256:a9ca981bb0fe9aea39d0f3e72d1ccf5a40378b8402002ac6e155ab568d0e9d24
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/perl/5.24.1-3/
-- https://sources.debian.net/src/perl/5.24.1-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `pixman=0.34.0-1`
 

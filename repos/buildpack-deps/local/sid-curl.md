@@ -148,18 +148,8 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-files=9.9
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9.dsc' base-files_9.9.dsc 1067 SHA256:4ae5728880b81789ae95f0aca8f630d51c4b894e00c4b0e8bfc7c3ebabb595d1
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_9.9.tar.xz' base-files_9.9.tar.xz 62840 SHA256:c941e091eea9d2949b6ed3b8d37ea1d086b50b10d564103d52fafcd129ac1931
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/base-files/9.9/
-- https://sources.debian.net/src/base-files/9.9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -775,20 +765,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.8-6
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8-6.dsc' gnutls28_3.5.8-6.dsc 3258 SHA256:0b0f35a0a6c2c5ab464a0c1b2c569479e722087c06f9a364bd9abe1965199b78
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz' gnutls28_3.5.8.orig.tar.xz 7264448 SHA256:0e97f243ae72b70307d684b84c7fe679385aa7a7a0e37e5be810193dcc17d4ff
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz.asc' gnutls28_3.5.8.orig.tar.xz.asc 287 SHA256:417da9db564a841128edb2dc2c98465a5749541f7d71492cb7c4905a0bfeac82
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.8-6.debian.tar.xz' gnutls28_3.5.8-6.debian.tar.xz 106584 SHA256:6e77c99e5aa728b311153202448e99159edf36785062eb0e1b7c001323067b39
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnutls28/3.5.8-6/
-- https://sources.debian.net/src/gnutls28/3.5.8-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.27-2`
 
@@ -1752,19 +1730,8 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris perl=5.24.1-3
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-3.dsc' perl_5.24.1-3.dsc 2316 SHA256:7ebd421bbb9252f5c2ebd6d4cdd04174a58f51ff6bbe542215ca37104d82c51c
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-3.debian.tar.xz' perl_5.24.1-3.debian.tar.xz 168260 SHA256:a9ca981bb0fe9aea39d0f3e72d1ccf5a40378b8402002ac6e155ab568d0e9d24
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/perl/5.24.1-3/
-- https://sources.debian.net/src/perl/5.24.1-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-1`
 
