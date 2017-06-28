@@ -1783,19 +1783,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.9.30-2+deb9u1
-'http://security.debian.org/pool/updates/main/l/linux/linux_4.9.30-2+deb9u1.dsc' linux_4.9.30-2+deb9u1.dsc 123291 SHA256:757df26293ad0b47126e3edabce03547dbea5339d65d07c5a5874c19c52f8174
-'http://security.debian.org/pool/updates/main/l/linux/linux_4.9.30.orig.tar.xz' linux_4.9.30.orig.tar.xz 94471128 SHA256:4a5afc3589825f514c5908e8421e81695648dad62357343494c3dd07edb29306
-'http://security.debian.org/pool/updates/main/l/linux/linux_4.9.30-2+deb9u1.debian.tar.xz' linux_4.9.30-2+deb9u1.debian.tar.xz 3053136 SHA256:7ecac99aaf32741abad37b948b05e6ae91d72c3b25d22acd5abbacab01c2a033
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/4.9.30-2+deb9u1/
-- https://sources.debian.net/src/linux/4.9.30-2+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=9.20161125`
 
