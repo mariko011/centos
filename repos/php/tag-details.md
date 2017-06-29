@@ -798,7 +798,7 @@ CMD ["php" "-a"]
 ## `php:7.1.6-alpine`
 
 ```console
-$ docker pull php@sha256:44fd8bf50d3150c7e2f5401673e73b83e8594f3ad472f94e219ef82f6d342433
+$ docker pull php@sha256:2b3553aac289fb0a47fc2d20858673e14b14508787582b8a08462c805cfc6cc0
 ```
 
 -	Platforms:
@@ -808,93 +808,93 @@ $ docker pull php@sha256:44fd8bf50d3150c7e2f5401673e73b83e8594f3ad472f94e219ef82
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.2 MB (27154288 bytes)**  
+-	Total Size: **27.2 MB (27154173 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea20aeb11b3d33398774f23b6e72004ca2f5f16ebcf12071d33eceff7336c110`
+-	Image ID: `sha256:c8dc8119ac129f9ef23444061157f0630f6f20d85f91160a9d98287e761a9109`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
 ```dockerfile
-# Mon, 19 Jun 2017 16:54:49 GMT
-ADD file:cf1b74f7af8abcfbe58722467970b39b3ef9c8343665ef2d175f058f734a7f6e in / 
-# Mon, 19 Jun 2017 16:55:12 GMT
+# Tue, 27 Jun 2017 18:37:38 GMT
+ADD file:89e72bfc19e81624ba6a34bd5cecdf258750dc569ba03e17e3f4a286b1526461 in / 
+# Tue, 27 Jun 2017 18:38:04 GMT
 CMD ["/bin/sh"]
-# Mon, 19 Jun 2017 22:46:44 GMT
+# Wed, 28 Jun 2017 20:09:29 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pcre-dev 		pkgconf 		re2c
-# Mon, 19 Jun 2017 22:46:48 GMT
+# Wed, 28 Jun 2017 20:09:33 GMT
 RUN apk add --no-cache --virtual .persistent-deps 		ca-certificates 		curl 		tar 		xz
-# Mon, 19 Jun 2017 22:46:50 GMT
+# Wed, 28 Jun 2017 20:09:35 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Mon, 19 Jun 2017 22:46:52 GMT
+# Wed, 28 Jun 2017 20:09:36 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Mon, 19 Jun 2017 22:46:53 GMT
+# Wed, 28 Jun 2017 20:09:37 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Mon, 19 Jun 2017 22:46:55 GMT
+# Wed, 28 Jun 2017 20:09:38 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 22:46:56 GMT
+# Wed, 28 Jun 2017 20:09:39 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 22:46:57 GMT
+# Wed, 28 Jun 2017 20:09:40 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
-# Mon, 19 Jun 2017 22:46:59 GMT
+# Wed, 28 Jun 2017 20:53:56 GMT
 ENV GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E
-# Mon, 19 Jun 2017 22:47:00 GMT
+# Wed, 28 Jun 2017 20:53:57 GMT
 ENV PHP_VERSION=7.1.6
-# Mon, 19 Jun 2017 22:47:01 GMT
+# Wed, 28 Jun 2017 20:53:58 GMT
 ENV PHP_URL=https://secure.php.net/get/php-7.1.6.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.6.tar.xz.asc/from/this/mirror
-# Mon, 19 Jun 2017 22:47:02 GMT
+# Wed, 28 Jun 2017 20:53:59 GMT
 ENV PHP_SHA256=01584dc521ab7ec84b502b61952f573652fe6aa00c18d6d844fb9209f14b245b PHP_MD5=eafc7a79cc8cc62c9292c96f9c9ccf90
-# Mon, 19 Jun 2017 22:47:12 GMT
+# Wed, 28 Jun 2017 20:54:08 GMT
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
-# Mon, 19 Jun 2017 22:47:13 GMT
+# Wed, 28 Jun 2017 20:54:28 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Mon, 19 Jun 2017 22:51:41 GMT
+# Wed, 28 Jun 2017 20:58:34 GMT
 RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Mon, 19 Jun 2017 22:56:25 GMT
+# Wed, 28 Jun 2017 21:02:18 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Mon, 19 Jun 2017 22:56:49 GMT
+# Wed, 28 Jun 2017 21:02:19 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Mon, 19 Jun 2017 22:57:13 GMT
+# Wed, 28 Jun 2017 21:02:20 GMT
 CMD ["php" "-a"]
 ```
 
 -	Layers:
-	-	`sha256:acb474fa89565f9f79ee5ddaaaad12c59954e2694d005ec120d6b11825bad191`  
-		Last Modified: Mon, 19 Jun 2017 17:06:54 GMT  
-		Size: 2.4 MB (2385060 bytes)  
+	-	`sha256:90f4dba627d65ea3223761bcfe54e726337a919fe98117ef107914f91be657c9`  
+		Last Modified: Tue, 27 Jun 2017 18:47:56 GMT  
+		Size: 2.4 MB (2385007 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dabaad5e9926028cc146660baf944edb2684f3920faf2156ebf44ed92cf44133`  
-		Last Modified: Tue, 20 Jun 2017 14:35:02 GMT  
-		Size: 1.1 MB (1081308 bytes)  
+	-	`sha256:19ae35d047425948b630f791a9a74d50ebb54f782bf01d3bcd74a2ed98313067`  
+		Last Modified: Thu, 29 Jun 2017 01:50:27 GMT  
+		Size: 1.1 MB (1081313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f33401fdb9aa65db74d315ebb85f68ae379f28e026bdbc5b9ce92224bccefc95`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
-		Size: 1.3 KB (1276 bytes)  
+	-	`sha256:6d34c9ec14365563dff516a583c4122f35a19016a83cc9cd333ad5a62f9a705b`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
+		Size: 1.3 KB (1275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bad83aa6d5dabea040da9162ce26e4da6e8212756b4f1279068078313bfa16d6`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
+	-	`sha256:729ea35b870d89fe556e628075b41809b7e889d5858be4cffdd7ac98c2bee7ef`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e77b9328b4da70052c3060e726844396628402651aed13a8cacf835d0ccd8e4f`  
-		Last Modified: Tue, 20 Jun 2017 14:35:01 GMT  
-		Size: 13.0 MB (12982372 bytes)  
+	-	`sha256:d9e5c1b91e5aab01c5cd18fb5dff9f6aa73760647f62acdb54c55b5ed018bc98`  
+		Last Modified: Thu, 29 Jun 2017 18:16:52 GMT  
+		Size: 13.0 MB (12982368 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7d9019b5f35b72fa16968d25cf237628fe22caac0518eb444aac0b764184d7e8`  
-		Last Modified: Tue, 20 Jun 2017 14:35:00 GMT  
+	-	`sha256:2e87adec6dba6e93e040540bc243dc9cd5ceaab467f026c405994f6ee0f908b2`  
+		Last Modified: Thu, 29 Jun 2017 18:16:49 GMT  
 		Size: 485.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:900514a38186fd37c465311b826dff3eb7e95d000194fb4514778116ba3dc17b`  
-		Last Modified: Tue, 20 Jun 2017 14:35:03 GMT  
-		Size: 10.7 MB (10701514 bytes)  
+	-	`sha256:9af22b9224b69c50199e1b0d6126c2cb60dab2bda8f51cec687f861618cef106`  
+		Last Modified: Thu, 29 Jun 2017 18:16:54 GMT  
+		Size: 10.7 MB (10701452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6be4fcc84e62efb0b0ca662f570c752f432c1fa4f00d8259701ae24be7766d59`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
+	-	`sha256:de5014bf67cc2baeee505a61303ccb8a1295174f9879465ceb07613922a37154`  
+		Last Modified: Thu, 29 Jun 2017 18:16:49 GMT  
 		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.1-alpine`
 
 ```console
-$ docker pull php@sha256:44fd8bf50d3150c7e2f5401673e73b83e8594f3ad472f94e219ef82f6d342433
+$ docker pull php@sha256:2b3553aac289fb0a47fc2d20858673e14b14508787582b8a08462c805cfc6cc0
 ```
 
 -	Platforms:
@@ -904,93 +904,93 @@ $ docker pull php@sha256:44fd8bf50d3150c7e2f5401673e73b83e8594f3ad472f94e219ef82
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.2 MB (27154288 bytes)**  
+-	Total Size: **27.2 MB (27154173 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea20aeb11b3d33398774f23b6e72004ca2f5f16ebcf12071d33eceff7336c110`
+-	Image ID: `sha256:c8dc8119ac129f9ef23444061157f0630f6f20d85f91160a9d98287e761a9109`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
 ```dockerfile
-# Mon, 19 Jun 2017 16:54:49 GMT
-ADD file:cf1b74f7af8abcfbe58722467970b39b3ef9c8343665ef2d175f058f734a7f6e in / 
-# Mon, 19 Jun 2017 16:55:12 GMT
+# Tue, 27 Jun 2017 18:37:38 GMT
+ADD file:89e72bfc19e81624ba6a34bd5cecdf258750dc569ba03e17e3f4a286b1526461 in / 
+# Tue, 27 Jun 2017 18:38:04 GMT
 CMD ["/bin/sh"]
-# Mon, 19 Jun 2017 22:46:44 GMT
+# Wed, 28 Jun 2017 20:09:29 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pcre-dev 		pkgconf 		re2c
-# Mon, 19 Jun 2017 22:46:48 GMT
+# Wed, 28 Jun 2017 20:09:33 GMT
 RUN apk add --no-cache --virtual .persistent-deps 		ca-certificates 		curl 		tar 		xz
-# Mon, 19 Jun 2017 22:46:50 GMT
+# Wed, 28 Jun 2017 20:09:35 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Mon, 19 Jun 2017 22:46:52 GMT
+# Wed, 28 Jun 2017 20:09:36 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Mon, 19 Jun 2017 22:46:53 GMT
+# Wed, 28 Jun 2017 20:09:37 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Mon, 19 Jun 2017 22:46:55 GMT
+# Wed, 28 Jun 2017 20:09:38 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 22:46:56 GMT
+# Wed, 28 Jun 2017 20:09:39 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 22:46:57 GMT
+# Wed, 28 Jun 2017 20:09:40 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
-# Mon, 19 Jun 2017 22:46:59 GMT
+# Wed, 28 Jun 2017 20:53:56 GMT
 ENV GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E
-# Mon, 19 Jun 2017 22:47:00 GMT
+# Wed, 28 Jun 2017 20:53:57 GMT
 ENV PHP_VERSION=7.1.6
-# Mon, 19 Jun 2017 22:47:01 GMT
+# Wed, 28 Jun 2017 20:53:58 GMT
 ENV PHP_URL=https://secure.php.net/get/php-7.1.6.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.6.tar.xz.asc/from/this/mirror
-# Mon, 19 Jun 2017 22:47:02 GMT
+# Wed, 28 Jun 2017 20:53:59 GMT
 ENV PHP_SHA256=01584dc521ab7ec84b502b61952f573652fe6aa00c18d6d844fb9209f14b245b PHP_MD5=eafc7a79cc8cc62c9292c96f9c9ccf90
-# Mon, 19 Jun 2017 22:47:12 GMT
+# Wed, 28 Jun 2017 20:54:08 GMT
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
-# Mon, 19 Jun 2017 22:47:13 GMT
+# Wed, 28 Jun 2017 20:54:28 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Mon, 19 Jun 2017 22:51:41 GMT
+# Wed, 28 Jun 2017 20:58:34 GMT
 RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Mon, 19 Jun 2017 22:56:25 GMT
+# Wed, 28 Jun 2017 21:02:18 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Mon, 19 Jun 2017 22:56:49 GMT
+# Wed, 28 Jun 2017 21:02:19 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Mon, 19 Jun 2017 22:57:13 GMT
+# Wed, 28 Jun 2017 21:02:20 GMT
 CMD ["php" "-a"]
 ```
 
 -	Layers:
-	-	`sha256:acb474fa89565f9f79ee5ddaaaad12c59954e2694d005ec120d6b11825bad191`  
-		Last Modified: Mon, 19 Jun 2017 17:06:54 GMT  
-		Size: 2.4 MB (2385060 bytes)  
+	-	`sha256:90f4dba627d65ea3223761bcfe54e726337a919fe98117ef107914f91be657c9`  
+		Last Modified: Tue, 27 Jun 2017 18:47:56 GMT  
+		Size: 2.4 MB (2385007 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dabaad5e9926028cc146660baf944edb2684f3920faf2156ebf44ed92cf44133`  
-		Last Modified: Tue, 20 Jun 2017 14:35:02 GMT  
-		Size: 1.1 MB (1081308 bytes)  
+	-	`sha256:19ae35d047425948b630f791a9a74d50ebb54f782bf01d3bcd74a2ed98313067`  
+		Last Modified: Thu, 29 Jun 2017 01:50:27 GMT  
+		Size: 1.1 MB (1081313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f33401fdb9aa65db74d315ebb85f68ae379f28e026bdbc5b9ce92224bccefc95`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
-		Size: 1.3 KB (1276 bytes)  
+	-	`sha256:6d34c9ec14365563dff516a583c4122f35a19016a83cc9cd333ad5a62f9a705b`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
+		Size: 1.3 KB (1275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bad83aa6d5dabea040da9162ce26e4da6e8212756b4f1279068078313bfa16d6`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
+	-	`sha256:729ea35b870d89fe556e628075b41809b7e889d5858be4cffdd7ac98c2bee7ef`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e77b9328b4da70052c3060e726844396628402651aed13a8cacf835d0ccd8e4f`  
-		Last Modified: Tue, 20 Jun 2017 14:35:01 GMT  
-		Size: 13.0 MB (12982372 bytes)  
+	-	`sha256:d9e5c1b91e5aab01c5cd18fb5dff9f6aa73760647f62acdb54c55b5ed018bc98`  
+		Last Modified: Thu, 29 Jun 2017 18:16:52 GMT  
+		Size: 13.0 MB (12982368 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7d9019b5f35b72fa16968d25cf237628fe22caac0518eb444aac0b764184d7e8`  
-		Last Modified: Tue, 20 Jun 2017 14:35:00 GMT  
+	-	`sha256:2e87adec6dba6e93e040540bc243dc9cd5ceaab467f026c405994f6ee0f908b2`  
+		Last Modified: Thu, 29 Jun 2017 18:16:49 GMT  
 		Size: 485.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:900514a38186fd37c465311b826dff3eb7e95d000194fb4514778116ba3dc17b`  
-		Last Modified: Tue, 20 Jun 2017 14:35:03 GMT  
-		Size: 10.7 MB (10701514 bytes)  
+	-	`sha256:9af22b9224b69c50199e1b0d6126c2cb60dab2bda8f51cec687f861618cef106`  
+		Last Modified: Thu, 29 Jun 2017 18:16:54 GMT  
+		Size: 10.7 MB (10701452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6be4fcc84e62efb0b0ca662f570c752f432c1fa4f00d8259701ae24be7766d59`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
+	-	`sha256:de5014bf67cc2baeee505a61303ccb8a1295174f9879465ceb07613922a37154`  
+		Last Modified: Thu, 29 Jun 2017 18:16:49 GMT  
 		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7-alpine`
 
 ```console
-$ docker pull php@sha256:44fd8bf50d3150c7e2f5401673e73b83e8594f3ad472f94e219ef82f6d342433
+$ docker pull php@sha256:2b3553aac289fb0a47fc2d20858673e14b14508787582b8a08462c805cfc6cc0
 ```
 
 -	Platforms:
@@ -1000,93 +1000,93 @@ $ docker pull php@sha256:44fd8bf50d3150c7e2f5401673e73b83e8594f3ad472f94e219ef82
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.2 MB (27154288 bytes)**  
+-	Total Size: **27.2 MB (27154173 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea20aeb11b3d33398774f23b6e72004ca2f5f16ebcf12071d33eceff7336c110`
+-	Image ID: `sha256:c8dc8119ac129f9ef23444061157f0630f6f20d85f91160a9d98287e761a9109`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
 ```dockerfile
-# Mon, 19 Jun 2017 16:54:49 GMT
-ADD file:cf1b74f7af8abcfbe58722467970b39b3ef9c8343665ef2d175f058f734a7f6e in / 
-# Mon, 19 Jun 2017 16:55:12 GMT
+# Tue, 27 Jun 2017 18:37:38 GMT
+ADD file:89e72bfc19e81624ba6a34bd5cecdf258750dc569ba03e17e3f4a286b1526461 in / 
+# Tue, 27 Jun 2017 18:38:04 GMT
 CMD ["/bin/sh"]
-# Mon, 19 Jun 2017 22:46:44 GMT
+# Wed, 28 Jun 2017 20:09:29 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pcre-dev 		pkgconf 		re2c
-# Mon, 19 Jun 2017 22:46:48 GMT
+# Wed, 28 Jun 2017 20:09:33 GMT
 RUN apk add --no-cache --virtual .persistent-deps 		ca-certificates 		curl 		tar 		xz
-# Mon, 19 Jun 2017 22:46:50 GMT
+# Wed, 28 Jun 2017 20:09:35 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Mon, 19 Jun 2017 22:46:52 GMT
+# Wed, 28 Jun 2017 20:09:36 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Mon, 19 Jun 2017 22:46:53 GMT
+# Wed, 28 Jun 2017 20:09:37 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Mon, 19 Jun 2017 22:46:55 GMT
+# Wed, 28 Jun 2017 20:09:38 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 22:46:56 GMT
+# Wed, 28 Jun 2017 20:09:39 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 22:46:57 GMT
+# Wed, 28 Jun 2017 20:09:40 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
-# Mon, 19 Jun 2017 22:46:59 GMT
+# Wed, 28 Jun 2017 20:53:56 GMT
 ENV GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E
-# Mon, 19 Jun 2017 22:47:00 GMT
+# Wed, 28 Jun 2017 20:53:57 GMT
 ENV PHP_VERSION=7.1.6
-# Mon, 19 Jun 2017 22:47:01 GMT
+# Wed, 28 Jun 2017 20:53:58 GMT
 ENV PHP_URL=https://secure.php.net/get/php-7.1.6.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.6.tar.xz.asc/from/this/mirror
-# Mon, 19 Jun 2017 22:47:02 GMT
+# Wed, 28 Jun 2017 20:53:59 GMT
 ENV PHP_SHA256=01584dc521ab7ec84b502b61952f573652fe6aa00c18d6d844fb9209f14b245b PHP_MD5=eafc7a79cc8cc62c9292c96f9c9ccf90
-# Mon, 19 Jun 2017 22:47:12 GMT
+# Wed, 28 Jun 2017 20:54:08 GMT
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
-# Mon, 19 Jun 2017 22:47:13 GMT
+# Wed, 28 Jun 2017 20:54:28 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Mon, 19 Jun 2017 22:51:41 GMT
+# Wed, 28 Jun 2017 20:58:34 GMT
 RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Mon, 19 Jun 2017 22:56:25 GMT
+# Wed, 28 Jun 2017 21:02:18 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Mon, 19 Jun 2017 22:56:49 GMT
+# Wed, 28 Jun 2017 21:02:19 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Mon, 19 Jun 2017 22:57:13 GMT
+# Wed, 28 Jun 2017 21:02:20 GMT
 CMD ["php" "-a"]
 ```
 
 -	Layers:
-	-	`sha256:acb474fa89565f9f79ee5ddaaaad12c59954e2694d005ec120d6b11825bad191`  
-		Last Modified: Mon, 19 Jun 2017 17:06:54 GMT  
-		Size: 2.4 MB (2385060 bytes)  
+	-	`sha256:90f4dba627d65ea3223761bcfe54e726337a919fe98117ef107914f91be657c9`  
+		Last Modified: Tue, 27 Jun 2017 18:47:56 GMT  
+		Size: 2.4 MB (2385007 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dabaad5e9926028cc146660baf944edb2684f3920faf2156ebf44ed92cf44133`  
-		Last Modified: Tue, 20 Jun 2017 14:35:02 GMT  
-		Size: 1.1 MB (1081308 bytes)  
+	-	`sha256:19ae35d047425948b630f791a9a74d50ebb54f782bf01d3bcd74a2ed98313067`  
+		Last Modified: Thu, 29 Jun 2017 01:50:27 GMT  
+		Size: 1.1 MB (1081313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f33401fdb9aa65db74d315ebb85f68ae379f28e026bdbc5b9ce92224bccefc95`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
-		Size: 1.3 KB (1276 bytes)  
+	-	`sha256:6d34c9ec14365563dff516a583c4122f35a19016a83cc9cd333ad5a62f9a705b`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
+		Size: 1.3 KB (1275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bad83aa6d5dabea040da9162ce26e4da6e8212756b4f1279068078313bfa16d6`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
+	-	`sha256:729ea35b870d89fe556e628075b41809b7e889d5858be4cffdd7ac98c2bee7ef`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e77b9328b4da70052c3060e726844396628402651aed13a8cacf835d0ccd8e4f`  
-		Last Modified: Tue, 20 Jun 2017 14:35:01 GMT  
-		Size: 13.0 MB (12982372 bytes)  
+	-	`sha256:d9e5c1b91e5aab01c5cd18fb5dff9f6aa73760647f62acdb54c55b5ed018bc98`  
+		Last Modified: Thu, 29 Jun 2017 18:16:52 GMT  
+		Size: 13.0 MB (12982368 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7d9019b5f35b72fa16968d25cf237628fe22caac0518eb444aac0b764184d7e8`  
-		Last Modified: Tue, 20 Jun 2017 14:35:00 GMT  
+	-	`sha256:2e87adec6dba6e93e040540bc243dc9cd5ceaab467f026c405994f6ee0f908b2`  
+		Last Modified: Thu, 29 Jun 2017 18:16:49 GMT  
 		Size: 485.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:900514a38186fd37c465311b826dff3eb7e95d000194fb4514778116ba3dc17b`  
-		Last Modified: Tue, 20 Jun 2017 14:35:03 GMT  
-		Size: 10.7 MB (10701514 bytes)  
+	-	`sha256:9af22b9224b69c50199e1b0d6126c2cb60dab2bda8f51cec687f861618cef106`  
+		Last Modified: Thu, 29 Jun 2017 18:16:54 GMT  
+		Size: 10.7 MB (10701452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6be4fcc84e62efb0b0ca662f570c752f432c1fa4f00d8259701ae24be7766d59`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
+	-	`sha256:de5014bf67cc2baeee505a61303ccb8a1295174f9879465ceb07613922a37154`  
+		Last Modified: Thu, 29 Jun 2017 18:16:49 GMT  
 		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:alpine`
 
 ```console
-$ docker pull php@sha256:44fd8bf50d3150c7e2f5401673e73b83e8594f3ad472f94e219ef82f6d342433
+$ docker pull php@sha256:2b3553aac289fb0a47fc2d20858673e14b14508787582b8a08462c805cfc6cc0
 ```
 
 -	Platforms:
@@ -1096,86 +1096,86 @@ $ docker pull php@sha256:44fd8bf50d3150c7e2f5401673e73b83e8594f3ad472f94e219ef82
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.2 MB (27154288 bytes)**  
+-	Total Size: **27.2 MB (27154173 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea20aeb11b3d33398774f23b6e72004ca2f5f16ebcf12071d33eceff7336c110`
+-	Image ID: `sha256:c8dc8119ac129f9ef23444061157f0630f6f20d85f91160a9d98287e761a9109`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
 ```dockerfile
-# Mon, 19 Jun 2017 16:54:49 GMT
-ADD file:cf1b74f7af8abcfbe58722467970b39b3ef9c8343665ef2d175f058f734a7f6e in / 
-# Mon, 19 Jun 2017 16:55:12 GMT
+# Tue, 27 Jun 2017 18:37:38 GMT
+ADD file:89e72bfc19e81624ba6a34bd5cecdf258750dc569ba03e17e3f4a286b1526461 in / 
+# Tue, 27 Jun 2017 18:38:04 GMT
 CMD ["/bin/sh"]
-# Mon, 19 Jun 2017 22:46:44 GMT
+# Wed, 28 Jun 2017 20:09:29 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pcre-dev 		pkgconf 		re2c
-# Mon, 19 Jun 2017 22:46:48 GMT
+# Wed, 28 Jun 2017 20:09:33 GMT
 RUN apk add --no-cache --virtual .persistent-deps 		ca-certificates 		curl 		tar 		xz
-# Mon, 19 Jun 2017 22:46:50 GMT
+# Wed, 28 Jun 2017 20:09:35 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Mon, 19 Jun 2017 22:46:52 GMT
+# Wed, 28 Jun 2017 20:09:36 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Mon, 19 Jun 2017 22:46:53 GMT
+# Wed, 28 Jun 2017 20:09:37 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Mon, 19 Jun 2017 22:46:55 GMT
+# Wed, 28 Jun 2017 20:09:38 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 22:46:56 GMT
+# Wed, 28 Jun 2017 20:09:39 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 22:46:57 GMT
+# Wed, 28 Jun 2017 20:09:40 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
-# Mon, 19 Jun 2017 22:46:59 GMT
+# Wed, 28 Jun 2017 20:53:56 GMT
 ENV GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E
-# Mon, 19 Jun 2017 22:47:00 GMT
+# Wed, 28 Jun 2017 20:53:57 GMT
 ENV PHP_VERSION=7.1.6
-# Mon, 19 Jun 2017 22:47:01 GMT
+# Wed, 28 Jun 2017 20:53:58 GMT
 ENV PHP_URL=https://secure.php.net/get/php-7.1.6.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.6.tar.xz.asc/from/this/mirror
-# Mon, 19 Jun 2017 22:47:02 GMT
+# Wed, 28 Jun 2017 20:53:59 GMT
 ENV PHP_SHA256=01584dc521ab7ec84b502b61952f573652fe6aa00c18d6d844fb9209f14b245b PHP_MD5=eafc7a79cc8cc62c9292c96f9c9ccf90
-# Mon, 19 Jun 2017 22:47:12 GMT
+# Wed, 28 Jun 2017 20:54:08 GMT
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
-# Mon, 19 Jun 2017 22:47:13 GMT
+# Wed, 28 Jun 2017 20:54:28 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Mon, 19 Jun 2017 22:51:41 GMT
+# Wed, 28 Jun 2017 20:58:34 GMT
 RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Mon, 19 Jun 2017 22:56:25 GMT
+# Wed, 28 Jun 2017 21:02:18 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Mon, 19 Jun 2017 22:56:49 GMT
+# Wed, 28 Jun 2017 21:02:19 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Mon, 19 Jun 2017 22:57:13 GMT
+# Wed, 28 Jun 2017 21:02:20 GMT
 CMD ["php" "-a"]
 ```
 
 -	Layers:
-	-	`sha256:acb474fa89565f9f79ee5ddaaaad12c59954e2694d005ec120d6b11825bad191`  
-		Last Modified: Mon, 19 Jun 2017 17:06:54 GMT  
-		Size: 2.4 MB (2385060 bytes)  
+	-	`sha256:90f4dba627d65ea3223761bcfe54e726337a919fe98117ef107914f91be657c9`  
+		Last Modified: Tue, 27 Jun 2017 18:47:56 GMT  
+		Size: 2.4 MB (2385007 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dabaad5e9926028cc146660baf944edb2684f3920faf2156ebf44ed92cf44133`  
-		Last Modified: Tue, 20 Jun 2017 14:35:02 GMT  
-		Size: 1.1 MB (1081308 bytes)  
+	-	`sha256:19ae35d047425948b630f791a9a74d50ebb54f782bf01d3bcd74a2ed98313067`  
+		Last Modified: Thu, 29 Jun 2017 01:50:27 GMT  
+		Size: 1.1 MB (1081313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f33401fdb9aa65db74d315ebb85f68ae379f28e026bdbc5b9ce92224bccefc95`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
-		Size: 1.3 KB (1276 bytes)  
+	-	`sha256:6d34c9ec14365563dff516a583c4122f35a19016a83cc9cd333ad5a62f9a705b`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
+		Size: 1.3 KB (1275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bad83aa6d5dabea040da9162ce26e4da6e8212756b4f1279068078313bfa16d6`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
+	-	`sha256:729ea35b870d89fe556e628075b41809b7e889d5858be4cffdd7ac98c2bee7ef`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e77b9328b4da70052c3060e726844396628402651aed13a8cacf835d0ccd8e4f`  
-		Last Modified: Tue, 20 Jun 2017 14:35:01 GMT  
-		Size: 13.0 MB (12982372 bytes)  
+	-	`sha256:d9e5c1b91e5aab01c5cd18fb5dff9f6aa73760647f62acdb54c55b5ed018bc98`  
+		Last Modified: Thu, 29 Jun 2017 18:16:52 GMT  
+		Size: 13.0 MB (12982368 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7d9019b5f35b72fa16968d25cf237628fe22caac0518eb444aac0b764184d7e8`  
-		Last Modified: Tue, 20 Jun 2017 14:35:00 GMT  
+	-	`sha256:2e87adec6dba6e93e040540bc243dc9cd5ceaab467f026c405994f6ee0f908b2`  
+		Last Modified: Thu, 29 Jun 2017 18:16:49 GMT  
 		Size: 485.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:900514a38186fd37c465311b826dff3eb7e95d000194fb4514778116ba3dc17b`  
-		Last Modified: Tue, 20 Jun 2017 14:35:03 GMT  
-		Size: 10.7 MB (10701514 bytes)  
+	-	`sha256:9af22b9224b69c50199e1b0d6126c2cb60dab2bda8f51cec687f861618cef106`  
+		Last Modified: Thu, 29 Jun 2017 18:16:54 GMT  
+		Size: 10.7 MB (10701452 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6be4fcc84e62efb0b0ca662f570c752f432c1fa4f00d8259701ae24be7766d59`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
+	-	`sha256:de5014bf67cc2baeee505a61303ccb8a1295174f9879465ceb07613922a37154`  
+		Last Modified: Thu, 29 Jun 2017 18:16:49 GMT  
 		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2158,7 +2158,7 @@ CMD ["php-fpm"]
 ## `php:7.1.6-fpm-alpine`
 
 ```console
-$ docker pull php@sha256:759bd999084198b93b25bf6ea9a9badf7cfd1730df491120c491b92d2c587df5
+$ docker pull php@sha256:9d6e4af50c265c3c7beedbd7651d14095f829835995c5e832458b54f140e53ff
 ```
 
 -	Platforms:
@@ -2168,109 +2168,109 @@ $ docker pull php@sha256:759bd999084198b93b25bf6ea9a9badf7cfd1730df491120c491b92
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.9 MB (30918541 bytes)**  
+-	Total Size: **30.9 MB (30918473 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:94418f748529f3b3fb8e165664927207de3654403473ad5e33fb3c3db7cdf914`
+-	Image ID: `sha256:d6df544cadcd8125282672280ff43c727910b91a6f2c370e44c0a0cf491bf996`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Mon, 19 Jun 2017 16:54:49 GMT
-ADD file:cf1b74f7af8abcfbe58722467970b39b3ef9c8343665ef2d175f058f734a7f6e in / 
-# Mon, 19 Jun 2017 16:55:12 GMT
+# Tue, 27 Jun 2017 18:37:38 GMT
+ADD file:89e72bfc19e81624ba6a34bd5cecdf258750dc569ba03e17e3f4a286b1526461 in / 
+# Tue, 27 Jun 2017 18:38:04 GMT
 CMD ["/bin/sh"]
-# Mon, 19 Jun 2017 22:46:44 GMT
+# Wed, 28 Jun 2017 20:09:29 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pcre-dev 		pkgconf 		re2c
-# Mon, 19 Jun 2017 22:46:48 GMT
+# Wed, 28 Jun 2017 20:09:33 GMT
 RUN apk add --no-cache --virtual .persistent-deps 		ca-certificates 		curl 		tar 		xz
-# Mon, 19 Jun 2017 22:46:50 GMT
+# Wed, 28 Jun 2017 20:09:35 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Mon, 19 Jun 2017 22:46:52 GMT
+# Wed, 28 Jun 2017 20:09:36 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Mon, 19 Jun 2017 22:46:53 GMT
+# Wed, 28 Jun 2017 20:09:37 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Mon, 19 Jun 2017 22:58:27 GMT
+# Wed, 28 Jun 2017 20:34:20 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data
-# Mon, 19 Jun 2017 22:58:28 GMT
+# Wed, 28 Jun 2017 20:34:21 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 22:58:29 GMT
+# Wed, 28 Jun 2017 20:34:21 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 22:58:54 GMT
+# Wed, 28 Jun 2017 20:34:22 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
-# Mon, 19 Jun 2017 22:58:55 GMT
+# Wed, 28 Jun 2017 21:03:35 GMT
 ENV GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E
-# Mon, 19 Jun 2017 22:58:55 GMT
+# Wed, 28 Jun 2017 21:03:36 GMT
 ENV PHP_VERSION=7.1.6
-# Mon, 19 Jun 2017 22:58:57 GMT
+# Wed, 28 Jun 2017 21:03:37 GMT
 ENV PHP_URL=https://secure.php.net/get/php-7.1.6.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.6.tar.xz.asc/from/this/mirror
-# Mon, 19 Jun 2017 22:58:58 GMT
+# Wed, 28 Jun 2017 21:03:38 GMT
 ENV PHP_SHA256=01584dc521ab7ec84b502b61952f573652fe6aa00c18d6d844fb9209f14b245b PHP_MD5=eafc7a79cc8cc62c9292c96f9c9ccf90
-# Mon, 19 Jun 2017 22:59:07 GMT
+# Wed, 28 Jun 2017 21:03:47 GMT
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
-# Mon, 19 Jun 2017 22:59:49 GMT
+# Wed, 28 Jun 2017 21:04:06 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Mon, 19 Jun 2017 23:05:14 GMT
+# Wed, 28 Jun 2017 21:07:51 GMT
 RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Mon, 19 Jun 2017 23:05:42 GMT
+# Wed, 28 Jun 2017 21:07:53 GMT
 COPY multi:1401feee8064a06ad514519ec870939c946ecfdf381c82a90cb2035486938ee9 in /usr/local/bin/ 
-# Mon, 19 Jun 2017 23:06:05 GMT
+# Wed, 28 Jun 2017 21:07:54 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Mon, 19 Jun 2017 23:06:29 GMT
+# Wed, 28 Jun 2017 21:07:55 GMT
 WORKDIR /var/www/html
-# Mon, 19 Jun 2017 23:06:53 GMT
+# Wed, 28 Jun 2017 21:07:57 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Mon, 19 Jun 2017 23:07:16 GMT
+# Wed, 28 Jun 2017 21:07:58 GMT
 EXPOSE 9000/tcp
-# Mon, 19 Jun 2017 23:07:40 GMT
+# Wed, 28 Jun 2017 21:07:59 GMT
 CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:acb474fa89565f9f79ee5ddaaaad12c59954e2694d005ec120d6b11825bad191`  
-		Last Modified: Mon, 19 Jun 2017 17:06:54 GMT  
-		Size: 2.4 MB (2385060 bytes)  
+	-	`sha256:90f4dba627d65ea3223761bcfe54e726337a919fe98117ef107914f91be657c9`  
+		Last Modified: Tue, 27 Jun 2017 18:47:56 GMT  
+		Size: 2.4 MB (2385007 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dabaad5e9926028cc146660baf944edb2684f3920faf2156ebf44ed92cf44133`  
-		Last Modified: Tue, 20 Jun 2017 14:35:02 GMT  
-		Size: 1.1 MB (1081308 bytes)  
+	-	`sha256:19ae35d047425948b630f791a9a74d50ebb54f782bf01d3bcd74a2ed98313067`  
+		Last Modified: Thu, 29 Jun 2017 01:50:27 GMT  
+		Size: 1.1 MB (1081313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f33401fdb9aa65db74d315ebb85f68ae379f28e026bdbc5b9ce92224bccefc95`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
-		Size: 1.3 KB (1276 bytes)  
+	-	`sha256:6d34c9ec14365563dff516a583c4122f35a19016a83cc9cd333ad5a62f9a705b`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
+		Size: 1.3 KB (1275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bad83aa6d5dabea040da9162ce26e4da6e8212756b4f1279068078313bfa16d6`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
+	-	`sha256:729ea35b870d89fe556e628075b41809b7e889d5858be4cffdd7ac98c2bee7ef`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea6c504d0025ac0c8fc2faf8c176a92ca79af79ad53cbd6d3ab90c82a86c79fe`  
-		Last Modified: Tue, 20 Jun 2017 14:44:02 GMT  
-		Size: 13.0 MB (12982376 bytes)  
+	-	`sha256:4bdcc103057ffe02a12c7eb1b60046e7fc9a916d690d4f29772eb574c6947c8e`  
+		Last Modified: Thu, 29 Jun 2017 18:20:11 GMT  
+		Size: 13.0 MB (12982377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d343b6b369dc763bdb10c866743fd0876246d7cc695306e12adbb6c5e474983d`  
-		Last Modified: Tue, 20 Jun 2017 14:44:00 GMT  
+	-	`sha256:b5df140714b5439c034e1a2152a52914ed3cd4015d079494752ce1f791343899`  
+		Last Modified: Thu, 29 Jun 2017 18:20:09 GMT  
 		Size: 486.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:186c0b7e39bbfec42520d3204e137223c13144afddc632c96205bc264f36b247`  
-		Last Modified: Tue, 20 Jun 2017 14:44:07 GMT  
-		Size: 14.5 MB (14457971 bytes)  
+	-	`sha256:aea8bcbfcfd40afaadc730e7b10f3cc3795ce912730605a385595e58c53ae031`  
+		Last Modified: Thu, 29 Jun 2017 18:20:14 GMT  
+		Size: 14.5 MB (14457952 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e2b7a3db8b8e5726970970708d09e47d1e6da8bec483f3b350fa94fea7532fb`  
-		Last Modified: Tue, 20 Jun 2017 14:44:01 GMT  
+	-	`sha256:cd2ad69f444c943ee58c82b4bbca2d7fb8e52d51f562937cb97fd5dde2e6ab3c`  
+		Last Modified: Thu, 29 Jun 2017 18:20:09 GMT  
 		Size: 2.1 KB (2110 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2200f6801c3daeee0b537713678365bee875c365fac9b822965d7eb8538accf`  
-		Last Modified: Tue, 20 Jun 2017 14:44:00 GMT  
+	-	`sha256:efdbdc06b32199fa780d95e78104d553529f6774d041194af83452d0adf33c80`  
+		Last Modified: Thu, 29 Jun 2017 18:20:09 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4494ce4715ec9a3fb1475345666806784e0107afebd5ae69ad8ded46106ce902`  
-		Last Modified: Tue, 20 Jun 2017 14:44:00 GMT  
-		Size: 7.7 KB (7661 bytes)  
+	-	`sha256:5b1a4bf0fe3aae525f963509ed3aa687fc8c9a6fb0d16a15680b3bca0d708512`  
+		Last Modified: Thu, 29 Jun 2017 18:20:09 GMT  
+		Size: 7.7 KB (7660 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.1-fpm-alpine`
 
 ```console
-$ docker pull php@sha256:759bd999084198b93b25bf6ea9a9badf7cfd1730df491120c491b92d2c587df5
+$ docker pull php@sha256:9d6e4af50c265c3c7beedbd7651d14095f829835995c5e832458b54f140e53ff
 ```
 
 -	Platforms:
@@ -2280,109 +2280,109 @@ $ docker pull php@sha256:759bd999084198b93b25bf6ea9a9badf7cfd1730df491120c491b92
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.9 MB (30918541 bytes)**  
+-	Total Size: **30.9 MB (30918473 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:94418f748529f3b3fb8e165664927207de3654403473ad5e33fb3c3db7cdf914`
+-	Image ID: `sha256:d6df544cadcd8125282672280ff43c727910b91a6f2c370e44c0a0cf491bf996`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Mon, 19 Jun 2017 16:54:49 GMT
-ADD file:cf1b74f7af8abcfbe58722467970b39b3ef9c8343665ef2d175f058f734a7f6e in / 
-# Mon, 19 Jun 2017 16:55:12 GMT
+# Tue, 27 Jun 2017 18:37:38 GMT
+ADD file:89e72bfc19e81624ba6a34bd5cecdf258750dc569ba03e17e3f4a286b1526461 in / 
+# Tue, 27 Jun 2017 18:38:04 GMT
 CMD ["/bin/sh"]
-# Mon, 19 Jun 2017 22:46:44 GMT
+# Wed, 28 Jun 2017 20:09:29 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pcre-dev 		pkgconf 		re2c
-# Mon, 19 Jun 2017 22:46:48 GMT
+# Wed, 28 Jun 2017 20:09:33 GMT
 RUN apk add --no-cache --virtual .persistent-deps 		ca-certificates 		curl 		tar 		xz
-# Mon, 19 Jun 2017 22:46:50 GMT
+# Wed, 28 Jun 2017 20:09:35 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Mon, 19 Jun 2017 22:46:52 GMT
+# Wed, 28 Jun 2017 20:09:36 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Mon, 19 Jun 2017 22:46:53 GMT
+# Wed, 28 Jun 2017 20:09:37 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Mon, 19 Jun 2017 22:58:27 GMT
+# Wed, 28 Jun 2017 20:34:20 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data
-# Mon, 19 Jun 2017 22:58:28 GMT
+# Wed, 28 Jun 2017 20:34:21 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 22:58:29 GMT
+# Wed, 28 Jun 2017 20:34:21 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 22:58:54 GMT
+# Wed, 28 Jun 2017 20:34:22 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
-# Mon, 19 Jun 2017 22:58:55 GMT
+# Wed, 28 Jun 2017 21:03:35 GMT
 ENV GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E
-# Mon, 19 Jun 2017 22:58:55 GMT
+# Wed, 28 Jun 2017 21:03:36 GMT
 ENV PHP_VERSION=7.1.6
-# Mon, 19 Jun 2017 22:58:57 GMT
+# Wed, 28 Jun 2017 21:03:37 GMT
 ENV PHP_URL=https://secure.php.net/get/php-7.1.6.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.6.tar.xz.asc/from/this/mirror
-# Mon, 19 Jun 2017 22:58:58 GMT
+# Wed, 28 Jun 2017 21:03:38 GMT
 ENV PHP_SHA256=01584dc521ab7ec84b502b61952f573652fe6aa00c18d6d844fb9209f14b245b PHP_MD5=eafc7a79cc8cc62c9292c96f9c9ccf90
-# Mon, 19 Jun 2017 22:59:07 GMT
+# Wed, 28 Jun 2017 21:03:47 GMT
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
-# Mon, 19 Jun 2017 22:59:49 GMT
+# Wed, 28 Jun 2017 21:04:06 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Mon, 19 Jun 2017 23:05:14 GMT
+# Wed, 28 Jun 2017 21:07:51 GMT
 RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Mon, 19 Jun 2017 23:05:42 GMT
+# Wed, 28 Jun 2017 21:07:53 GMT
 COPY multi:1401feee8064a06ad514519ec870939c946ecfdf381c82a90cb2035486938ee9 in /usr/local/bin/ 
-# Mon, 19 Jun 2017 23:06:05 GMT
+# Wed, 28 Jun 2017 21:07:54 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Mon, 19 Jun 2017 23:06:29 GMT
+# Wed, 28 Jun 2017 21:07:55 GMT
 WORKDIR /var/www/html
-# Mon, 19 Jun 2017 23:06:53 GMT
+# Wed, 28 Jun 2017 21:07:57 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Mon, 19 Jun 2017 23:07:16 GMT
+# Wed, 28 Jun 2017 21:07:58 GMT
 EXPOSE 9000/tcp
-# Mon, 19 Jun 2017 23:07:40 GMT
+# Wed, 28 Jun 2017 21:07:59 GMT
 CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:acb474fa89565f9f79ee5ddaaaad12c59954e2694d005ec120d6b11825bad191`  
-		Last Modified: Mon, 19 Jun 2017 17:06:54 GMT  
-		Size: 2.4 MB (2385060 bytes)  
+	-	`sha256:90f4dba627d65ea3223761bcfe54e726337a919fe98117ef107914f91be657c9`  
+		Last Modified: Tue, 27 Jun 2017 18:47:56 GMT  
+		Size: 2.4 MB (2385007 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dabaad5e9926028cc146660baf944edb2684f3920faf2156ebf44ed92cf44133`  
-		Last Modified: Tue, 20 Jun 2017 14:35:02 GMT  
-		Size: 1.1 MB (1081308 bytes)  
+	-	`sha256:19ae35d047425948b630f791a9a74d50ebb54f782bf01d3bcd74a2ed98313067`  
+		Last Modified: Thu, 29 Jun 2017 01:50:27 GMT  
+		Size: 1.1 MB (1081313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f33401fdb9aa65db74d315ebb85f68ae379f28e026bdbc5b9ce92224bccefc95`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
-		Size: 1.3 KB (1276 bytes)  
+	-	`sha256:6d34c9ec14365563dff516a583c4122f35a19016a83cc9cd333ad5a62f9a705b`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
+		Size: 1.3 KB (1275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bad83aa6d5dabea040da9162ce26e4da6e8212756b4f1279068078313bfa16d6`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
+	-	`sha256:729ea35b870d89fe556e628075b41809b7e889d5858be4cffdd7ac98c2bee7ef`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea6c504d0025ac0c8fc2faf8c176a92ca79af79ad53cbd6d3ab90c82a86c79fe`  
-		Last Modified: Tue, 20 Jun 2017 14:44:02 GMT  
-		Size: 13.0 MB (12982376 bytes)  
+	-	`sha256:4bdcc103057ffe02a12c7eb1b60046e7fc9a916d690d4f29772eb574c6947c8e`  
+		Last Modified: Thu, 29 Jun 2017 18:20:11 GMT  
+		Size: 13.0 MB (12982377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d343b6b369dc763bdb10c866743fd0876246d7cc695306e12adbb6c5e474983d`  
-		Last Modified: Tue, 20 Jun 2017 14:44:00 GMT  
+	-	`sha256:b5df140714b5439c034e1a2152a52914ed3cd4015d079494752ce1f791343899`  
+		Last Modified: Thu, 29 Jun 2017 18:20:09 GMT  
 		Size: 486.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:186c0b7e39bbfec42520d3204e137223c13144afddc632c96205bc264f36b247`  
-		Last Modified: Tue, 20 Jun 2017 14:44:07 GMT  
-		Size: 14.5 MB (14457971 bytes)  
+	-	`sha256:aea8bcbfcfd40afaadc730e7b10f3cc3795ce912730605a385595e58c53ae031`  
+		Last Modified: Thu, 29 Jun 2017 18:20:14 GMT  
+		Size: 14.5 MB (14457952 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e2b7a3db8b8e5726970970708d09e47d1e6da8bec483f3b350fa94fea7532fb`  
-		Last Modified: Tue, 20 Jun 2017 14:44:01 GMT  
+	-	`sha256:cd2ad69f444c943ee58c82b4bbca2d7fb8e52d51f562937cb97fd5dde2e6ab3c`  
+		Last Modified: Thu, 29 Jun 2017 18:20:09 GMT  
 		Size: 2.1 KB (2110 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2200f6801c3daeee0b537713678365bee875c365fac9b822965d7eb8538accf`  
-		Last Modified: Tue, 20 Jun 2017 14:44:00 GMT  
+	-	`sha256:efdbdc06b32199fa780d95e78104d553529f6774d041194af83452d0adf33c80`  
+		Last Modified: Thu, 29 Jun 2017 18:20:09 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4494ce4715ec9a3fb1475345666806784e0107afebd5ae69ad8ded46106ce902`  
-		Last Modified: Tue, 20 Jun 2017 14:44:00 GMT  
-		Size: 7.7 KB (7661 bytes)  
+	-	`sha256:5b1a4bf0fe3aae525f963509ed3aa687fc8c9a6fb0d16a15680b3bca0d708512`  
+		Last Modified: Thu, 29 Jun 2017 18:20:09 GMT  
+		Size: 7.7 KB (7660 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7-fpm-alpine`
 
 ```console
-$ docker pull php@sha256:759bd999084198b93b25bf6ea9a9badf7cfd1730df491120c491b92d2c587df5
+$ docker pull php@sha256:9d6e4af50c265c3c7beedbd7651d14095f829835995c5e832458b54f140e53ff
 ```
 
 -	Platforms:
@@ -2392,109 +2392,109 @@ $ docker pull php@sha256:759bd999084198b93b25bf6ea9a9badf7cfd1730df491120c491b92
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.9 MB (30918541 bytes)**  
+-	Total Size: **30.9 MB (30918473 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:94418f748529f3b3fb8e165664927207de3654403473ad5e33fb3c3db7cdf914`
+-	Image ID: `sha256:d6df544cadcd8125282672280ff43c727910b91a6f2c370e44c0a0cf491bf996`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Mon, 19 Jun 2017 16:54:49 GMT
-ADD file:cf1b74f7af8abcfbe58722467970b39b3ef9c8343665ef2d175f058f734a7f6e in / 
-# Mon, 19 Jun 2017 16:55:12 GMT
+# Tue, 27 Jun 2017 18:37:38 GMT
+ADD file:89e72bfc19e81624ba6a34bd5cecdf258750dc569ba03e17e3f4a286b1526461 in / 
+# Tue, 27 Jun 2017 18:38:04 GMT
 CMD ["/bin/sh"]
-# Mon, 19 Jun 2017 22:46:44 GMT
+# Wed, 28 Jun 2017 20:09:29 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pcre-dev 		pkgconf 		re2c
-# Mon, 19 Jun 2017 22:46:48 GMT
+# Wed, 28 Jun 2017 20:09:33 GMT
 RUN apk add --no-cache --virtual .persistent-deps 		ca-certificates 		curl 		tar 		xz
-# Mon, 19 Jun 2017 22:46:50 GMT
+# Wed, 28 Jun 2017 20:09:35 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Mon, 19 Jun 2017 22:46:52 GMT
+# Wed, 28 Jun 2017 20:09:36 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Mon, 19 Jun 2017 22:46:53 GMT
+# Wed, 28 Jun 2017 20:09:37 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Mon, 19 Jun 2017 22:58:27 GMT
+# Wed, 28 Jun 2017 20:34:20 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data
-# Mon, 19 Jun 2017 22:58:28 GMT
+# Wed, 28 Jun 2017 20:34:21 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 22:58:29 GMT
+# Wed, 28 Jun 2017 20:34:21 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 22:58:54 GMT
+# Wed, 28 Jun 2017 20:34:22 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
-# Mon, 19 Jun 2017 22:58:55 GMT
+# Wed, 28 Jun 2017 21:03:35 GMT
 ENV GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E
-# Mon, 19 Jun 2017 22:58:55 GMT
+# Wed, 28 Jun 2017 21:03:36 GMT
 ENV PHP_VERSION=7.1.6
-# Mon, 19 Jun 2017 22:58:57 GMT
+# Wed, 28 Jun 2017 21:03:37 GMT
 ENV PHP_URL=https://secure.php.net/get/php-7.1.6.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.6.tar.xz.asc/from/this/mirror
-# Mon, 19 Jun 2017 22:58:58 GMT
+# Wed, 28 Jun 2017 21:03:38 GMT
 ENV PHP_SHA256=01584dc521ab7ec84b502b61952f573652fe6aa00c18d6d844fb9209f14b245b PHP_MD5=eafc7a79cc8cc62c9292c96f9c9ccf90
-# Mon, 19 Jun 2017 22:59:07 GMT
+# Wed, 28 Jun 2017 21:03:47 GMT
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
-# Mon, 19 Jun 2017 22:59:49 GMT
+# Wed, 28 Jun 2017 21:04:06 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Mon, 19 Jun 2017 23:05:14 GMT
+# Wed, 28 Jun 2017 21:07:51 GMT
 RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Mon, 19 Jun 2017 23:05:42 GMT
+# Wed, 28 Jun 2017 21:07:53 GMT
 COPY multi:1401feee8064a06ad514519ec870939c946ecfdf381c82a90cb2035486938ee9 in /usr/local/bin/ 
-# Mon, 19 Jun 2017 23:06:05 GMT
+# Wed, 28 Jun 2017 21:07:54 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Mon, 19 Jun 2017 23:06:29 GMT
+# Wed, 28 Jun 2017 21:07:55 GMT
 WORKDIR /var/www/html
-# Mon, 19 Jun 2017 23:06:53 GMT
+# Wed, 28 Jun 2017 21:07:57 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Mon, 19 Jun 2017 23:07:16 GMT
+# Wed, 28 Jun 2017 21:07:58 GMT
 EXPOSE 9000/tcp
-# Mon, 19 Jun 2017 23:07:40 GMT
+# Wed, 28 Jun 2017 21:07:59 GMT
 CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:acb474fa89565f9f79ee5ddaaaad12c59954e2694d005ec120d6b11825bad191`  
-		Last Modified: Mon, 19 Jun 2017 17:06:54 GMT  
-		Size: 2.4 MB (2385060 bytes)  
+	-	`sha256:90f4dba627d65ea3223761bcfe54e726337a919fe98117ef107914f91be657c9`  
+		Last Modified: Tue, 27 Jun 2017 18:47:56 GMT  
+		Size: 2.4 MB (2385007 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dabaad5e9926028cc146660baf944edb2684f3920faf2156ebf44ed92cf44133`  
-		Last Modified: Tue, 20 Jun 2017 14:35:02 GMT  
-		Size: 1.1 MB (1081308 bytes)  
+	-	`sha256:19ae35d047425948b630f791a9a74d50ebb54f782bf01d3bcd74a2ed98313067`  
+		Last Modified: Thu, 29 Jun 2017 01:50:27 GMT  
+		Size: 1.1 MB (1081313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f33401fdb9aa65db74d315ebb85f68ae379f28e026bdbc5b9ce92224bccefc95`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
-		Size: 1.3 KB (1276 bytes)  
+	-	`sha256:6d34c9ec14365563dff516a583c4122f35a19016a83cc9cd333ad5a62f9a705b`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
+		Size: 1.3 KB (1275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bad83aa6d5dabea040da9162ce26e4da6e8212756b4f1279068078313bfa16d6`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
+	-	`sha256:729ea35b870d89fe556e628075b41809b7e889d5858be4cffdd7ac98c2bee7ef`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea6c504d0025ac0c8fc2faf8c176a92ca79af79ad53cbd6d3ab90c82a86c79fe`  
-		Last Modified: Tue, 20 Jun 2017 14:44:02 GMT  
-		Size: 13.0 MB (12982376 bytes)  
+	-	`sha256:4bdcc103057ffe02a12c7eb1b60046e7fc9a916d690d4f29772eb574c6947c8e`  
+		Last Modified: Thu, 29 Jun 2017 18:20:11 GMT  
+		Size: 13.0 MB (12982377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d343b6b369dc763bdb10c866743fd0876246d7cc695306e12adbb6c5e474983d`  
-		Last Modified: Tue, 20 Jun 2017 14:44:00 GMT  
+	-	`sha256:b5df140714b5439c034e1a2152a52914ed3cd4015d079494752ce1f791343899`  
+		Last Modified: Thu, 29 Jun 2017 18:20:09 GMT  
 		Size: 486.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:186c0b7e39bbfec42520d3204e137223c13144afddc632c96205bc264f36b247`  
-		Last Modified: Tue, 20 Jun 2017 14:44:07 GMT  
-		Size: 14.5 MB (14457971 bytes)  
+	-	`sha256:aea8bcbfcfd40afaadc730e7b10f3cc3795ce912730605a385595e58c53ae031`  
+		Last Modified: Thu, 29 Jun 2017 18:20:14 GMT  
+		Size: 14.5 MB (14457952 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e2b7a3db8b8e5726970970708d09e47d1e6da8bec483f3b350fa94fea7532fb`  
-		Last Modified: Tue, 20 Jun 2017 14:44:01 GMT  
+	-	`sha256:cd2ad69f444c943ee58c82b4bbca2d7fb8e52d51f562937cb97fd5dde2e6ab3c`  
+		Last Modified: Thu, 29 Jun 2017 18:20:09 GMT  
 		Size: 2.1 KB (2110 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2200f6801c3daeee0b537713678365bee875c365fac9b822965d7eb8538accf`  
-		Last Modified: Tue, 20 Jun 2017 14:44:00 GMT  
+	-	`sha256:efdbdc06b32199fa780d95e78104d553529f6774d041194af83452d0adf33c80`  
+		Last Modified: Thu, 29 Jun 2017 18:20:09 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4494ce4715ec9a3fb1475345666806784e0107afebd5ae69ad8ded46106ce902`  
-		Last Modified: Tue, 20 Jun 2017 14:44:00 GMT  
-		Size: 7.7 KB (7661 bytes)  
+	-	`sha256:5b1a4bf0fe3aae525f963509ed3aa687fc8c9a6fb0d16a15680b3bca0d708512`  
+		Last Modified: Thu, 29 Jun 2017 18:20:09 GMT  
+		Size: 7.7 KB (7660 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:fpm-alpine`
 
 ```console
-$ docker pull php@sha256:759bd999084198b93b25bf6ea9a9badf7cfd1730df491120c491b92d2c587df5
+$ docker pull php@sha256:9d6e4af50c265c3c7beedbd7651d14095f829835995c5e832458b54f140e53ff
 ```
 
 -	Platforms:
@@ -2504,103 +2504,103 @@ $ docker pull php@sha256:759bd999084198b93b25bf6ea9a9badf7cfd1730df491120c491b92
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.9 MB (30918541 bytes)**  
+-	Total Size: **30.9 MB (30918473 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:94418f748529f3b3fb8e165664927207de3654403473ad5e33fb3c3db7cdf914`
+-	Image ID: `sha256:d6df544cadcd8125282672280ff43c727910b91a6f2c370e44c0a0cf491bf996`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
-# Mon, 19 Jun 2017 16:54:49 GMT
-ADD file:cf1b74f7af8abcfbe58722467970b39b3ef9c8343665ef2d175f058f734a7f6e in / 
-# Mon, 19 Jun 2017 16:55:12 GMT
+# Tue, 27 Jun 2017 18:37:38 GMT
+ADD file:89e72bfc19e81624ba6a34bd5cecdf258750dc569ba03e17e3f4a286b1526461 in / 
+# Tue, 27 Jun 2017 18:38:04 GMT
 CMD ["/bin/sh"]
-# Mon, 19 Jun 2017 22:46:44 GMT
+# Wed, 28 Jun 2017 20:09:29 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pcre-dev 		pkgconf 		re2c
-# Mon, 19 Jun 2017 22:46:48 GMT
+# Wed, 28 Jun 2017 20:09:33 GMT
 RUN apk add --no-cache --virtual .persistent-deps 		ca-certificates 		curl 		tar 		xz
-# Mon, 19 Jun 2017 22:46:50 GMT
+# Wed, 28 Jun 2017 20:09:35 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Mon, 19 Jun 2017 22:46:52 GMT
+# Wed, 28 Jun 2017 20:09:36 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Mon, 19 Jun 2017 22:46:53 GMT
+# Wed, 28 Jun 2017 20:09:37 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Mon, 19 Jun 2017 22:58:27 GMT
+# Wed, 28 Jun 2017 20:34:20 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data
-# Mon, 19 Jun 2017 22:58:28 GMT
+# Wed, 28 Jun 2017 20:34:21 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 22:58:29 GMT
+# Wed, 28 Jun 2017 20:34:21 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 22:58:54 GMT
+# Wed, 28 Jun 2017 20:34:22 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
-# Mon, 19 Jun 2017 22:58:55 GMT
+# Wed, 28 Jun 2017 21:03:35 GMT
 ENV GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E
-# Mon, 19 Jun 2017 22:58:55 GMT
+# Wed, 28 Jun 2017 21:03:36 GMT
 ENV PHP_VERSION=7.1.6
-# Mon, 19 Jun 2017 22:58:57 GMT
+# Wed, 28 Jun 2017 21:03:37 GMT
 ENV PHP_URL=https://secure.php.net/get/php-7.1.6.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.6.tar.xz.asc/from/this/mirror
-# Mon, 19 Jun 2017 22:58:58 GMT
+# Wed, 28 Jun 2017 21:03:38 GMT
 ENV PHP_SHA256=01584dc521ab7ec84b502b61952f573652fe6aa00c18d6d844fb9209f14b245b PHP_MD5=eafc7a79cc8cc62c9292c96f9c9ccf90
-# Mon, 19 Jun 2017 22:59:07 GMT
+# Wed, 28 Jun 2017 21:03:47 GMT
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
-# Mon, 19 Jun 2017 22:59:49 GMT
+# Wed, 28 Jun 2017 21:04:06 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Mon, 19 Jun 2017 23:05:14 GMT
+# Wed, 28 Jun 2017 21:07:51 GMT
 RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Mon, 19 Jun 2017 23:05:42 GMT
+# Wed, 28 Jun 2017 21:07:53 GMT
 COPY multi:1401feee8064a06ad514519ec870939c946ecfdf381c82a90cb2035486938ee9 in /usr/local/bin/ 
-# Mon, 19 Jun 2017 23:06:05 GMT
+# Wed, 28 Jun 2017 21:07:54 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Mon, 19 Jun 2017 23:06:29 GMT
+# Wed, 28 Jun 2017 21:07:55 GMT
 WORKDIR /var/www/html
-# Mon, 19 Jun 2017 23:06:53 GMT
+# Wed, 28 Jun 2017 21:07:57 GMT
 RUN set -ex 	&& cd /usr/local/etc 	&& if [ -d php-fpm.d ]; then 		sed 's!=NONE/!=!g' php-fpm.conf.default | tee php-fpm.conf > /dev/null; 		cp php-fpm.d/www.conf.default php-fpm.d/www.conf; 	else 		mkdir php-fpm.d; 		cp php-fpm.conf.default php-fpm.d/www.conf; 		{ 			echo '[global]'; 			echo 'include=etc/php-fpm.d/*.conf'; 		} | tee php-fpm.conf; 	fi 	&& { 		echo '[global]'; 		echo 'error_log = /proc/self/fd/2'; 		echo; 		echo '[www]'; 		echo '; if we send this to /proc/self/fd/1, it never appears'; 		echo 'access.log = /proc/self/fd/2'; 		echo; 		echo 'clear_env = no'; 		echo; 		echo '; Ensure worker stdout and stderr are sent to the main error log.'; 		echo 'catch_workers_output = yes'; 	} | tee php-fpm.d/docker.conf 	&& { 		echo '[global]'; 		echo 'daemonize = no'; 		echo; 		echo '[www]'; 		echo 'listen = [::]:9000'; 	} | tee php-fpm.d/zz-docker.conf
-# Mon, 19 Jun 2017 23:07:16 GMT
+# Wed, 28 Jun 2017 21:07:58 GMT
 EXPOSE 9000/tcp
-# Mon, 19 Jun 2017 23:07:40 GMT
+# Wed, 28 Jun 2017 21:07:59 GMT
 CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:acb474fa89565f9f79ee5ddaaaad12c59954e2694d005ec120d6b11825bad191`  
-		Last Modified: Mon, 19 Jun 2017 17:06:54 GMT  
-		Size: 2.4 MB (2385060 bytes)  
+	-	`sha256:90f4dba627d65ea3223761bcfe54e726337a919fe98117ef107914f91be657c9`  
+		Last Modified: Tue, 27 Jun 2017 18:47:56 GMT  
+		Size: 2.4 MB (2385007 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dabaad5e9926028cc146660baf944edb2684f3920faf2156ebf44ed92cf44133`  
-		Last Modified: Tue, 20 Jun 2017 14:35:02 GMT  
-		Size: 1.1 MB (1081308 bytes)  
+	-	`sha256:19ae35d047425948b630f791a9a74d50ebb54f782bf01d3bcd74a2ed98313067`  
+		Last Modified: Thu, 29 Jun 2017 01:50:27 GMT  
+		Size: 1.1 MB (1081313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f33401fdb9aa65db74d315ebb85f68ae379f28e026bdbc5b9ce92224bccefc95`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
-		Size: 1.3 KB (1276 bytes)  
+	-	`sha256:6d34c9ec14365563dff516a583c4122f35a19016a83cc9cd333ad5a62f9a705b`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
+		Size: 1.3 KB (1275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bad83aa6d5dabea040da9162ce26e4da6e8212756b4f1279068078313bfa16d6`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
+	-	`sha256:729ea35b870d89fe556e628075b41809b7e889d5858be4cffdd7ac98c2bee7ef`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea6c504d0025ac0c8fc2faf8c176a92ca79af79ad53cbd6d3ab90c82a86c79fe`  
-		Last Modified: Tue, 20 Jun 2017 14:44:02 GMT  
-		Size: 13.0 MB (12982376 bytes)  
+	-	`sha256:4bdcc103057ffe02a12c7eb1b60046e7fc9a916d690d4f29772eb574c6947c8e`  
+		Last Modified: Thu, 29 Jun 2017 18:20:11 GMT  
+		Size: 13.0 MB (12982377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d343b6b369dc763bdb10c866743fd0876246d7cc695306e12adbb6c5e474983d`  
-		Last Modified: Tue, 20 Jun 2017 14:44:00 GMT  
+	-	`sha256:b5df140714b5439c034e1a2152a52914ed3cd4015d079494752ce1f791343899`  
+		Last Modified: Thu, 29 Jun 2017 18:20:09 GMT  
 		Size: 486.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:186c0b7e39bbfec42520d3204e137223c13144afddc632c96205bc264f36b247`  
-		Last Modified: Tue, 20 Jun 2017 14:44:07 GMT  
-		Size: 14.5 MB (14457971 bytes)  
+	-	`sha256:aea8bcbfcfd40afaadc730e7b10f3cc3795ce912730605a385595e58c53ae031`  
+		Last Modified: Thu, 29 Jun 2017 18:20:14 GMT  
+		Size: 14.5 MB (14457952 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e2b7a3db8b8e5726970970708d09e47d1e6da8bec483f3b350fa94fea7532fb`  
-		Last Modified: Tue, 20 Jun 2017 14:44:01 GMT  
+	-	`sha256:cd2ad69f444c943ee58c82b4bbca2d7fb8e52d51f562937cb97fd5dde2e6ab3c`  
+		Last Modified: Thu, 29 Jun 2017 18:20:09 GMT  
 		Size: 2.1 KB (2110 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b2200f6801c3daeee0b537713678365bee875c365fac9b822965d7eb8538accf`  
-		Last Modified: Tue, 20 Jun 2017 14:44:00 GMT  
+	-	`sha256:efdbdc06b32199fa780d95e78104d553529f6774d041194af83452d0adf33c80`  
+		Last Modified: Thu, 29 Jun 2017 18:20:09 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4494ce4715ec9a3fb1475345666806784e0107afebd5ae69ad8ded46106ce902`  
-		Last Modified: Tue, 20 Jun 2017 14:44:00 GMT  
-		Size: 7.7 KB (7661 bytes)  
+	-	`sha256:5b1a4bf0fe3aae525f963509ed3aa687fc8c9a6fb0d16a15680b3bca0d708512`  
+		Last Modified: Thu, 29 Jun 2017 18:20:09 GMT  
+		Size: 7.7 KB (7660 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.1.6-zts`
@@ -2974,7 +2974,7 @@ CMD ["php" "-a"]
 ## `php:7.1.6-zts-alpine`
 
 ```console
-$ docker pull php@sha256:e4c43567a1a480a3126a6f44998ee702a2d071b8fb4e43d38a49fca71d5d4285
+$ docker pull php@sha256:a85b9ffb2d767c64ead8e88004028ec07589768d17ffdd5a50228739ba9cc3f0
 ```
 
 -	Platforms:
@@ -2984,95 +2984,95 @@ $ docker pull php@sha256:e4c43567a1a480a3126a6f44998ee702a2d071b8fb4e43d38a49fca
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.3 MB (27289355 bytes)**  
+-	Total Size: **27.3 MB (27289330 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3f0b9432b3dc37f39c4ac362b9875b0c20e2269b50e1ffb3799619cc91ec8f9e`
+-	Image ID: `sha256:6f0c7d51b36638e4e82f6a93aee6b39c96723162cd70808c4a7f2b2258f29428`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
 ```dockerfile
-# Mon, 19 Jun 2017 16:54:49 GMT
-ADD file:cf1b74f7af8abcfbe58722467970b39b3ef9c8343665ef2d175f058f734a7f6e in / 
-# Mon, 19 Jun 2017 16:55:12 GMT
+# Tue, 27 Jun 2017 18:37:38 GMT
+ADD file:89e72bfc19e81624ba6a34bd5cecdf258750dc569ba03e17e3f4a286b1526461 in / 
+# Tue, 27 Jun 2017 18:38:04 GMT
 CMD ["/bin/sh"]
-# Mon, 19 Jun 2017 22:46:44 GMT
+# Wed, 28 Jun 2017 20:09:29 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pcre-dev 		pkgconf 		re2c
-# Mon, 19 Jun 2017 22:46:48 GMT
+# Wed, 28 Jun 2017 20:09:33 GMT
 RUN apk add --no-cache --virtual .persistent-deps 		ca-certificates 		curl 		tar 		xz
-# Mon, 19 Jun 2017 22:46:50 GMT
+# Wed, 28 Jun 2017 20:09:35 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Mon, 19 Jun 2017 22:46:52 GMT
+# Wed, 28 Jun 2017 20:09:36 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Mon, 19 Jun 2017 22:46:53 GMT
+# Wed, 28 Jun 2017 20:09:37 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Mon, 19 Jun 2017 23:11:54 GMT
+# Wed, 28 Jun 2017 20:47:17 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
-# Mon, 19 Jun 2017 23:12:18 GMT
+# Wed, 28 Jun 2017 20:47:18 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 23:12:41 GMT
+# Wed, 28 Jun 2017 20:47:20 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 23:12:42 GMT
+# Wed, 28 Jun 2017 20:47:21 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
-# Mon, 19 Jun 2017 23:12:43 GMT
+# Wed, 28 Jun 2017 21:16:57 GMT
 ENV GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E
-# Mon, 19 Jun 2017 23:12:44 GMT
+# Wed, 28 Jun 2017 21:16:58 GMT
 ENV PHP_VERSION=7.1.6
-# Mon, 19 Jun 2017 23:13:07 GMT
+# Wed, 28 Jun 2017 21:16:59 GMT
 ENV PHP_URL=https://secure.php.net/get/php-7.1.6.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.6.tar.xz.asc/from/this/mirror
-# Mon, 19 Jun 2017 23:13:08 GMT
+# Wed, 28 Jun 2017 21:16:59 GMT
 ENV PHP_SHA256=01584dc521ab7ec84b502b61952f573652fe6aa00c18d6d844fb9209f14b245b PHP_MD5=eafc7a79cc8cc62c9292c96f9c9ccf90
-# Mon, 19 Jun 2017 23:13:16 GMT
+# Wed, 28 Jun 2017 21:17:08 GMT
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
-# Mon, 19 Jun 2017 23:13:37 GMT
+# Wed, 28 Jun 2017 21:17:09 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Mon, 19 Jun 2017 23:17:59 GMT
+# Wed, 28 Jun 2017 21:20:58 GMT
 RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Mon, 19 Jun 2017 23:18:20 GMT
+# Wed, 28 Jun 2017 21:21:00 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Mon, 19 Jun 2017 23:18:21 GMT
+# Wed, 28 Jun 2017 21:21:01 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Mon, 19 Jun 2017 23:18:45 GMT
+# Wed, 28 Jun 2017 21:21:02 GMT
 CMD ["php" "-a"]
 ```
 
 -	Layers:
-	-	`sha256:acb474fa89565f9f79ee5ddaaaad12c59954e2694d005ec120d6b11825bad191`  
-		Last Modified: Mon, 19 Jun 2017 17:06:54 GMT  
-		Size: 2.4 MB (2385060 bytes)  
+	-	`sha256:90f4dba627d65ea3223761bcfe54e726337a919fe98117ef107914f91be657c9`  
+		Last Modified: Tue, 27 Jun 2017 18:47:56 GMT  
+		Size: 2.4 MB (2385007 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dabaad5e9926028cc146660baf944edb2684f3920faf2156ebf44ed92cf44133`  
-		Last Modified: Tue, 20 Jun 2017 14:35:02 GMT  
-		Size: 1.1 MB (1081308 bytes)  
+	-	`sha256:19ae35d047425948b630f791a9a74d50ebb54f782bf01d3bcd74a2ed98313067`  
+		Last Modified: Thu, 29 Jun 2017 01:50:27 GMT  
+		Size: 1.1 MB (1081313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f33401fdb9aa65db74d315ebb85f68ae379f28e026bdbc5b9ce92224bccefc95`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
-		Size: 1.3 KB (1276 bytes)  
+	-	`sha256:6d34c9ec14365563dff516a583c4122f35a19016a83cc9cd333ad5a62f9a705b`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
+		Size: 1.3 KB (1275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bad83aa6d5dabea040da9162ce26e4da6e8212756b4f1279068078313bfa16d6`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
+	-	`sha256:729ea35b870d89fe556e628075b41809b7e889d5858be4cffdd7ac98c2bee7ef`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a792d0904e3b8acbe6087637b8f2c41e5a3da8f54fb88ea8f2caeca9cff1c4e8`  
-		Last Modified: Tue, 20 Jun 2017 14:49:22 GMT  
-		Size: 13.0 MB (12982383 bytes)  
+	-	`sha256:eb1adbfa849c18452d74df8093e1c645eb1ca29f74f1f14c62c771b9ef822815`  
+		Last Modified: Thu, 29 Jun 2017 18:23:30 GMT  
+		Size: 13.0 MB (12982378 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0af7a32ddcc70ecd46efe473fa6f2cd1d9d1a46c4766a8623a630645d9f53215`  
-		Last Modified: Tue, 20 Jun 2017 14:49:20 GMT  
-		Size: 486.0 B  
+	-	`sha256:f699c5e2bf82a2ebf240777c8e0f402c39a91566c6174b76df92b2ea9173a15b`  
+		Last Modified: Thu, 29 Jun 2017 18:23:29 GMT  
+		Size: 487.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a6e40b55238cecf54c29020928b55173d8d85e183ecf60b7f4402fc295bccc3`  
-		Last Modified: Tue, 20 Jun 2017 14:49:25 GMT  
-		Size: 10.8 MB (10836568 bytes)  
+	-	`sha256:e85688591c3b1b40cd6cbd158cfe58c9ff0338fad2a8963a8b436388a407376c`  
+		Last Modified: Thu, 29 Jun 2017 18:23:32 GMT  
+		Size: 10.8 MB (10836598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf5601eeb8107f5db11553290d6d4a4a965f4878b0b067bd468781dcaed99ae3`  
-		Last Modified: Tue, 20 Jun 2017 14:49:20 GMT  
-		Size: 2.1 KB (2109 bytes)  
+	-	`sha256:ed0a8acb4dcbb442eae47140534c4fed96af25ef6319cd505b4a0469b500d1e1`  
+		Last Modified: Thu, 29 Jun 2017 18:23:29 GMT  
+		Size: 2.1 KB (2107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.1-zts-alpine`
 
 ```console
-$ docker pull php@sha256:e4c43567a1a480a3126a6f44998ee702a2d071b8fb4e43d38a49fca71d5d4285
+$ docker pull php@sha256:a85b9ffb2d767c64ead8e88004028ec07589768d17ffdd5a50228739ba9cc3f0
 ```
 
 -	Platforms:
@@ -3082,95 +3082,95 @@ $ docker pull php@sha256:e4c43567a1a480a3126a6f44998ee702a2d071b8fb4e43d38a49fca
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.3 MB (27289355 bytes)**  
+-	Total Size: **27.3 MB (27289330 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3f0b9432b3dc37f39c4ac362b9875b0c20e2269b50e1ffb3799619cc91ec8f9e`
+-	Image ID: `sha256:6f0c7d51b36638e4e82f6a93aee6b39c96723162cd70808c4a7f2b2258f29428`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
 ```dockerfile
-# Mon, 19 Jun 2017 16:54:49 GMT
-ADD file:cf1b74f7af8abcfbe58722467970b39b3ef9c8343665ef2d175f058f734a7f6e in / 
-# Mon, 19 Jun 2017 16:55:12 GMT
+# Tue, 27 Jun 2017 18:37:38 GMT
+ADD file:89e72bfc19e81624ba6a34bd5cecdf258750dc569ba03e17e3f4a286b1526461 in / 
+# Tue, 27 Jun 2017 18:38:04 GMT
 CMD ["/bin/sh"]
-# Mon, 19 Jun 2017 22:46:44 GMT
+# Wed, 28 Jun 2017 20:09:29 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pcre-dev 		pkgconf 		re2c
-# Mon, 19 Jun 2017 22:46:48 GMT
+# Wed, 28 Jun 2017 20:09:33 GMT
 RUN apk add --no-cache --virtual .persistent-deps 		ca-certificates 		curl 		tar 		xz
-# Mon, 19 Jun 2017 22:46:50 GMT
+# Wed, 28 Jun 2017 20:09:35 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Mon, 19 Jun 2017 22:46:52 GMT
+# Wed, 28 Jun 2017 20:09:36 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Mon, 19 Jun 2017 22:46:53 GMT
+# Wed, 28 Jun 2017 20:09:37 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Mon, 19 Jun 2017 23:11:54 GMT
+# Wed, 28 Jun 2017 20:47:17 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
-# Mon, 19 Jun 2017 23:12:18 GMT
+# Wed, 28 Jun 2017 20:47:18 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 23:12:41 GMT
+# Wed, 28 Jun 2017 20:47:20 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 23:12:42 GMT
+# Wed, 28 Jun 2017 20:47:21 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
-# Mon, 19 Jun 2017 23:12:43 GMT
+# Wed, 28 Jun 2017 21:16:57 GMT
 ENV GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E
-# Mon, 19 Jun 2017 23:12:44 GMT
+# Wed, 28 Jun 2017 21:16:58 GMT
 ENV PHP_VERSION=7.1.6
-# Mon, 19 Jun 2017 23:13:07 GMT
+# Wed, 28 Jun 2017 21:16:59 GMT
 ENV PHP_URL=https://secure.php.net/get/php-7.1.6.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.6.tar.xz.asc/from/this/mirror
-# Mon, 19 Jun 2017 23:13:08 GMT
+# Wed, 28 Jun 2017 21:16:59 GMT
 ENV PHP_SHA256=01584dc521ab7ec84b502b61952f573652fe6aa00c18d6d844fb9209f14b245b PHP_MD5=eafc7a79cc8cc62c9292c96f9c9ccf90
-# Mon, 19 Jun 2017 23:13:16 GMT
+# Wed, 28 Jun 2017 21:17:08 GMT
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
-# Mon, 19 Jun 2017 23:13:37 GMT
+# Wed, 28 Jun 2017 21:17:09 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Mon, 19 Jun 2017 23:17:59 GMT
+# Wed, 28 Jun 2017 21:20:58 GMT
 RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Mon, 19 Jun 2017 23:18:20 GMT
+# Wed, 28 Jun 2017 21:21:00 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Mon, 19 Jun 2017 23:18:21 GMT
+# Wed, 28 Jun 2017 21:21:01 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Mon, 19 Jun 2017 23:18:45 GMT
+# Wed, 28 Jun 2017 21:21:02 GMT
 CMD ["php" "-a"]
 ```
 
 -	Layers:
-	-	`sha256:acb474fa89565f9f79ee5ddaaaad12c59954e2694d005ec120d6b11825bad191`  
-		Last Modified: Mon, 19 Jun 2017 17:06:54 GMT  
-		Size: 2.4 MB (2385060 bytes)  
+	-	`sha256:90f4dba627d65ea3223761bcfe54e726337a919fe98117ef107914f91be657c9`  
+		Last Modified: Tue, 27 Jun 2017 18:47:56 GMT  
+		Size: 2.4 MB (2385007 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dabaad5e9926028cc146660baf944edb2684f3920faf2156ebf44ed92cf44133`  
-		Last Modified: Tue, 20 Jun 2017 14:35:02 GMT  
-		Size: 1.1 MB (1081308 bytes)  
+	-	`sha256:19ae35d047425948b630f791a9a74d50ebb54f782bf01d3bcd74a2ed98313067`  
+		Last Modified: Thu, 29 Jun 2017 01:50:27 GMT  
+		Size: 1.1 MB (1081313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f33401fdb9aa65db74d315ebb85f68ae379f28e026bdbc5b9ce92224bccefc95`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
-		Size: 1.3 KB (1276 bytes)  
+	-	`sha256:6d34c9ec14365563dff516a583c4122f35a19016a83cc9cd333ad5a62f9a705b`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
+		Size: 1.3 KB (1275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bad83aa6d5dabea040da9162ce26e4da6e8212756b4f1279068078313bfa16d6`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
+	-	`sha256:729ea35b870d89fe556e628075b41809b7e889d5858be4cffdd7ac98c2bee7ef`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a792d0904e3b8acbe6087637b8f2c41e5a3da8f54fb88ea8f2caeca9cff1c4e8`  
-		Last Modified: Tue, 20 Jun 2017 14:49:22 GMT  
-		Size: 13.0 MB (12982383 bytes)  
+	-	`sha256:eb1adbfa849c18452d74df8093e1c645eb1ca29f74f1f14c62c771b9ef822815`  
+		Last Modified: Thu, 29 Jun 2017 18:23:30 GMT  
+		Size: 13.0 MB (12982378 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0af7a32ddcc70ecd46efe473fa6f2cd1d9d1a46c4766a8623a630645d9f53215`  
-		Last Modified: Tue, 20 Jun 2017 14:49:20 GMT  
-		Size: 486.0 B  
+	-	`sha256:f699c5e2bf82a2ebf240777c8e0f402c39a91566c6174b76df92b2ea9173a15b`  
+		Last Modified: Thu, 29 Jun 2017 18:23:29 GMT  
+		Size: 487.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a6e40b55238cecf54c29020928b55173d8d85e183ecf60b7f4402fc295bccc3`  
-		Last Modified: Tue, 20 Jun 2017 14:49:25 GMT  
-		Size: 10.8 MB (10836568 bytes)  
+	-	`sha256:e85688591c3b1b40cd6cbd158cfe58c9ff0338fad2a8963a8b436388a407376c`  
+		Last Modified: Thu, 29 Jun 2017 18:23:32 GMT  
+		Size: 10.8 MB (10836598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf5601eeb8107f5db11553290d6d4a4a965f4878b0b067bd468781dcaed99ae3`  
-		Last Modified: Tue, 20 Jun 2017 14:49:20 GMT  
-		Size: 2.1 KB (2109 bytes)  
+	-	`sha256:ed0a8acb4dcbb442eae47140534c4fed96af25ef6319cd505b4a0469b500d1e1`  
+		Last Modified: Thu, 29 Jun 2017 18:23:29 GMT  
+		Size: 2.1 KB (2107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7-zts-alpine`
 
 ```console
-$ docker pull php@sha256:e4c43567a1a480a3126a6f44998ee702a2d071b8fb4e43d38a49fca71d5d4285
+$ docker pull php@sha256:a85b9ffb2d767c64ead8e88004028ec07589768d17ffdd5a50228739ba9cc3f0
 ```
 
 -	Platforms:
@@ -3180,95 +3180,95 @@ $ docker pull php@sha256:e4c43567a1a480a3126a6f44998ee702a2d071b8fb4e43d38a49fca
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.3 MB (27289355 bytes)**  
+-	Total Size: **27.3 MB (27289330 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3f0b9432b3dc37f39c4ac362b9875b0c20e2269b50e1ffb3799619cc91ec8f9e`
+-	Image ID: `sha256:6f0c7d51b36638e4e82f6a93aee6b39c96723162cd70808c4a7f2b2258f29428`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
 ```dockerfile
-# Mon, 19 Jun 2017 16:54:49 GMT
-ADD file:cf1b74f7af8abcfbe58722467970b39b3ef9c8343665ef2d175f058f734a7f6e in / 
-# Mon, 19 Jun 2017 16:55:12 GMT
+# Tue, 27 Jun 2017 18:37:38 GMT
+ADD file:89e72bfc19e81624ba6a34bd5cecdf258750dc569ba03e17e3f4a286b1526461 in / 
+# Tue, 27 Jun 2017 18:38:04 GMT
 CMD ["/bin/sh"]
-# Mon, 19 Jun 2017 22:46:44 GMT
+# Wed, 28 Jun 2017 20:09:29 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pcre-dev 		pkgconf 		re2c
-# Mon, 19 Jun 2017 22:46:48 GMT
+# Wed, 28 Jun 2017 20:09:33 GMT
 RUN apk add --no-cache --virtual .persistent-deps 		ca-certificates 		curl 		tar 		xz
-# Mon, 19 Jun 2017 22:46:50 GMT
+# Wed, 28 Jun 2017 20:09:35 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Mon, 19 Jun 2017 22:46:52 GMT
+# Wed, 28 Jun 2017 20:09:36 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Mon, 19 Jun 2017 22:46:53 GMT
+# Wed, 28 Jun 2017 20:09:37 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Mon, 19 Jun 2017 23:11:54 GMT
+# Wed, 28 Jun 2017 20:47:17 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
-# Mon, 19 Jun 2017 23:12:18 GMT
+# Wed, 28 Jun 2017 20:47:18 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 23:12:41 GMT
+# Wed, 28 Jun 2017 20:47:20 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 23:12:42 GMT
+# Wed, 28 Jun 2017 20:47:21 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
-# Mon, 19 Jun 2017 23:12:43 GMT
+# Wed, 28 Jun 2017 21:16:57 GMT
 ENV GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E
-# Mon, 19 Jun 2017 23:12:44 GMT
+# Wed, 28 Jun 2017 21:16:58 GMT
 ENV PHP_VERSION=7.1.6
-# Mon, 19 Jun 2017 23:13:07 GMT
+# Wed, 28 Jun 2017 21:16:59 GMT
 ENV PHP_URL=https://secure.php.net/get/php-7.1.6.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.6.tar.xz.asc/from/this/mirror
-# Mon, 19 Jun 2017 23:13:08 GMT
+# Wed, 28 Jun 2017 21:16:59 GMT
 ENV PHP_SHA256=01584dc521ab7ec84b502b61952f573652fe6aa00c18d6d844fb9209f14b245b PHP_MD5=eafc7a79cc8cc62c9292c96f9c9ccf90
-# Mon, 19 Jun 2017 23:13:16 GMT
+# Wed, 28 Jun 2017 21:17:08 GMT
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
-# Mon, 19 Jun 2017 23:13:37 GMT
+# Wed, 28 Jun 2017 21:17:09 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Mon, 19 Jun 2017 23:17:59 GMT
+# Wed, 28 Jun 2017 21:20:58 GMT
 RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Mon, 19 Jun 2017 23:18:20 GMT
+# Wed, 28 Jun 2017 21:21:00 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Mon, 19 Jun 2017 23:18:21 GMT
+# Wed, 28 Jun 2017 21:21:01 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Mon, 19 Jun 2017 23:18:45 GMT
+# Wed, 28 Jun 2017 21:21:02 GMT
 CMD ["php" "-a"]
 ```
 
 -	Layers:
-	-	`sha256:acb474fa89565f9f79ee5ddaaaad12c59954e2694d005ec120d6b11825bad191`  
-		Last Modified: Mon, 19 Jun 2017 17:06:54 GMT  
-		Size: 2.4 MB (2385060 bytes)  
+	-	`sha256:90f4dba627d65ea3223761bcfe54e726337a919fe98117ef107914f91be657c9`  
+		Last Modified: Tue, 27 Jun 2017 18:47:56 GMT  
+		Size: 2.4 MB (2385007 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dabaad5e9926028cc146660baf944edb2684f3920faf2156ebf44ed92cf44133`  
-		Last Modified: Tue, 20 Jun 2017 14:35:02 GMT  
-		Size: 1.1 MB (1081308 bytes)  
+	-	`sha256:19ae35d047425948b630f791a9a74d50ebb54f782bf01d3bcd74a2ed98313067`  
+		Last Modified: Thu, 29 Jun 2017 01:50:27 GMT  
+		Size: 1.1 MB (1081313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f33401fdb9aa65db74d315ebb85f68ae379f28e026bdbc5b9ce92224bccefc95`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
-		Size: 1.3 KB (1276 bytes)  
+	-	`sha256:6d34c9ec14365563dff516a583c4122f35a19016a83cc9cd333ad5a62f9a705b`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
+		Size: 1.3 KB (1275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bad83aa6d5dabea040da9162ce26e4da6e8212756b4f1279068078313bfa16d6`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
+	-	`sha256:729ea35b870d89fe556e628075b41809b7e889d5858be4cffdd7ac98c2bee7ef`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a792d0904e3b8acbe6087637b8f2c41e5a3da8f54fb88ea8f2caeca9cff1c4e8`  
-		Last Modified: Tue, 20 Jun 2017 14:49:22 GMT  
-		Size: 13.0 MB (12982383 bytes)  
+	-	`sha256:eb1adbfa849c18452d74df8093e1c645eb1ca29f74f1f14c62c771b9ef822815`  
+		Last Modified: Thu, 29 Jun 2017 18:23:30 GMT  
+		Size: 13.0 MB (12982378 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0af7a32ddcc70ecd46efe473fa6f2cd1d9d1a46c4766a8623a630645d9f53215`  
-		Last Modified: Tue, 20 Jun 2017 14:49:20 GMT  
-		Size: 486.0 B  
+	-	`sha256:f699c5e2bf82a2ebf240777c8e0f402c39a91566c6174b76df92b2ea9173a15b`  
+		Last Modified: Thu, 29 Jun 2017 18:23:29 GMT  
+		Size: 487.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a6e40b55238cecf54c29020928b55173d8d85e183ecf60b7f4402fc295bccc3`  
-		Last Modified: Tue, 20 Jun 2017 14:49:25 GMT  
-		Size: 10.8 MB (10836568 bytes)  
+	-	`sha256:e85688591c3b1b40cd6cbd158cfe58c9ff0338fad2a8963a8b436388a407376c`  
+		Last Modified: Thu, 29 Jun 2017 18:23:32 GMT  
+		Size: 10.8 MB (10836598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf5601eeb8107f5db11553290d6d4a4a965f4878b0b067bd468781dcaed99ae3`  
-		Last Modified: Tue, 20 Jun 2017 14:49:20 GMT  
-		Size: 2.1 KB (2109 bytes)  
+	-	`sha256:ed0a8acb4dcbb442eae47140534c4fed96af25ef6319cd505b4a0469b500d1e1`  
+		Last Modified: Thu, 29 Jun 2017 18:23:29 GMT  
+		Size: 2.1 KB (2107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:zts-alpine`
 
 ```console
-$ docker pull php@sha256:e4c43567a1a480a3126a6f44998ee702a2d071b8fb4e43d38a49fca71d5d4285
+$ docker pull php@sha256:a85b9ffb2d767c64ead8e88004028ec07589768d17ffdd5a50228739ba9cc3f0
 ```
 
 -	Platforms:
@@ -3278,89 +3278,89 @@ $ docker pull php@sha256:e4c43567a1a480a3126a6f44998ee702a2d071b8fb4e43d38a49fca
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.3 MB (27289355 bytes)**  
+-	Total Size: **27.3 MB (27289330 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3f0b9432b3dc37f39c4ac362b9875b0c20e2269b50e1ffb3799619cc91ec8f9e`
+-	Image ID: `sha256:6f0c7d51b36638e4e82f6a93aee6b39c96723162cd70808c4a7f2b2258f29428`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
 ```dockerfile
-# Mon, 19 Jun 2017 16:54:49 GMT
-ADD file:cf1b74f7af8abcfbe58722467970b39b3ef9c8343665ef2d175f058f734a7f6e in / 
-# Mon, 19 Jun 2017 16:55:12 GMT
+# Tue, 27 Jun 2017 18:37:38 GMT
+ADD file:89e72bfc19e81624ba6a34bd5cecdf258750dc569ba03e17e3f4a286b1526461 in / 
+# Tue, 27 Jun 2017 18:38:04 GMT
 CMD ["/bin/sh"]
-# Mon, 19 Jun 2017 22:46:44 GMT
+# Wed, 28 Jun 2017 20:09:29 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pcre-dev 		pkgconf 		re2c
-# Mon, 19 Jun 2017 22:46:48 GMT
+# Wed, 28 Jun 2017 20:09:33 GMT
 RUN apk add --no-cache --virtual .persistent-deps 		ca-certificates 		curl 		tar 		xz
-# Mon, 19 Jun 2017 22:46:50 GMT
+# Wed, 28 Jun 2017 20:09:35 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Mon, 19 Jun 2017 22:46:52 GMT
+# Wed, 28 Jun 2017 20:09:36 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Mon, 19 Jun 2017 22:46:53 GMT
+# Wed, 28 Jun 2017 20:09:37 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Mon, 19 Jun 2017 23:11:54 GMT
+# Wed, 28 Jun 2017 20:47:17 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
-# Mon, 19 Jun 2017 23:12:18 GMT
+# Wed, 28 Jun 2017 20:47:18 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 23:12:41 GMT
+# Wed, 28 Jun 2017 20:47:20 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 23:12:42 GMT
+# Wed, 28 Jun 2017 20:47:21 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
-# Mon, 19 Jun 2017 23:12:43 GMT
+# Wed, 28 Jun 2017 21:16:57 GMT
 ENV GPG_KEYS=A917B1ECDA84AEC2B568FED6F50ABC807BD5DCD0 528995BFEDFBA7191D46839EF9BA0ADA31CBD89E
-# Mon, 19 Jun 2017 23:12:44 GMT
+# Wed, 28 Jun 2017 21:16:58 GMT
 ENV PHP_VERSION=7.1.6
-# Mon, 19 Jun 2017 23:13:07 GMT
+# Wed, 28 Jun 2017 21:16:59 GMT
 ENV PHP_URL=https://secure.php.net/get/php-7.1.6.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.1.6.tar.xz.asc/from/this/mirror
-# Mon, 19 Jun 2017 23:13:08 GMT
+# Wed, 28 Jun 2017 21:16:59 GMT
 ENV PHP_SHA256=01584dc521ab7ec84b502b61952f573652fe6aa00c18d6d844fb9209f14b245b PHP_MD5=eafc7a79cc8cc62c9292c96f9c9ccf90
-# Mon, 19 Jun 2017 23:13:16 GMT
+# Wed, 28 Jun 2017 21:17:08 GMT
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
-# Mon, 19 Jun 2017 23:13:37 GMT
+# Wed, 28 Jun 2017 21:17:09 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Mon, 19 Jun 2017 23:17:59 GMT
+# Wed, 28 Jun 2017 21:20:58 GMT
 RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Mon, 19 Jun 2017 23:18:20 GMT
+# Wed, 28 Jun 2017 21:21:00 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Mon, 19 Jun 2017 23:18:21 GMT
+# Wed, 28 Jun 2017 21:21:01 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Mon, 19 Jun 2017 23:18:45 GMT
+# Wed, 28 Jun 2017 21:21:02 GMT
 CMD ["php" "-a"]
 ```
 
 -	Layers:
-	-	`sha256:acb474fa89565f9f79ee5ddaaaad12c59954e2694d005ec120d6b11825bad191`  
-		Last Modified: Mon, 19 Jun 2017 17:06:54 GMT  
-		Size: 2.4 MB (2385060 bytes)  
+	-	`sha256:90f4dba627d65ea3223761bcfe54e726337a919fe98117ef107914f91be657c9`  
+		Last Modified: Tue, 27 Jun 2017 18:47:56 GMT  
+		Size: 2.4 MB (2385007 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dabaad5e9926028cc146660baf944edb2684f3920faf2156ebf44ed92cf44133`  
-		Last Modified: Tue, 20 Jun 2017 14:35:02 GMT  
-		Size: 1.1 MB (1081308 bytes)  
+	-	`sha256:19ae35d047425948b630f791a9a74d50ebb54f782bf01d3bcd74a2ed98313067`  
+		Last Modified: Thu, 29 Jun 2017 01:50:27 GMT  
+		Size: 1.1 MB (1081313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f33401fdb9aa65db74d315ebb85f68ae379f28e026bdbc5b9ce92224bccefc95`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
-		Size: 1.3 KB (1276 bytes)  
+	-	`sha256:6d34c9ec14365563dff516a583c4122f35a19016a83cc9cd333ad5a62f9a705b`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
+		Size: 1.3 KB (1275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bad83aa6d5dabea040da9162ce26e4da6e8212756b4f1279068078313bfa16d6`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
+	-	`sha256:729ea35b870d89fe556e628075b41809b7e889d5858be4cffdd7ac98c2bee7ef`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a792d0904e3b8acbe6087637b8f2c41e5a3da8f54fb88ea8f2caeca9cff1c4e8`  
-		Last Modified: Tue, 20 Jun 2017 14:49:22 GMT  
-		Size: 13.0 MB (12982383 bytes)  
+	-	`sha256:eb1adbfa849c18452d74df8093e1c645eb1ca29f74f1f14c62c771b9ef822815`  
+		Last Modified: Thu, 29 Jun 2017 18:23:30 GMT  
+		Size: 13.0 MB (12982378 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0af7a32ddcc70ecd46efe473fa6f2cd1d9d1a46c4766a8623a630645d9f53215`  
-		Last Modified: Tue, 20 Jun 2017 14:49:20 GMT  
-		Size: 486.0 B  
+	-	`sha256:f699c5e2bf82a2ebf240777c8e0f402c39a91566c6174b76df92b2ea9173a15b`  
+		Last Modified: Thu, 29 Jun 2017 18:23:29 GMT  
+		Size: 487.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0a6e40b55238cecf54c29020928b55173d8d85e183ecf60b7f4402fc295bccc3`  
-		Last Modified: Tue, 20 Jun 2017 14:49:25 GMT  
-		Size: 10.8 MB (10836568 bytes)  
+	-	`sha256:e85688591c3b1b40cd6cbd158cfe58c9ff0338fad2a8963a8b436388a407376c`  
+		Last Modified: Thu, 29 Jun 2017 18:23:32 GMT  
+		Size: 10.8 MB (10836598 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf5601eeb8107f5db11553290d6d4a4a965f4878b0b067bd468781dcaed99ae3`  
-		Last Modified: Tue, 20 Jun 2017 14:49:20 GMT  
-		Size: 2.1 KB (2109 bytes)  
+	-	`sha256:ed0a8acb4dcbb442eae47140534c4fed96af25ef6319cd505b4a0469b500d1e1`  
+		Last Modified: Thu, 29 Jun 2017 18:23:29 GMT  
+		Size: 2.1 KB (2107 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.0.20-cli`
@@ -4814,7 +4814,7 @@ CMD ["php" "-a"]
 ## `php:7.0.20-zts-alpine`
 
 ```console
-$ docker pull php@sha256:6b7096ba5f239919ca299a1de7d0be19673843025e74a7989223070418a3d58f
+$ docker pull php@sha256:7ccd4467963bcea9d1f882791670c852e78e3623648f351b009fb63bd3cdbba7
 ```
 
 -	Platforms:
@@ -4824,95 +4824,95 @@ $ docker pull php@sha256:6b7096ba5f239919ca299a1de7d0be19673843025e74a7989223070
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.7 MB (26748606 bytes)**  
+-	Total Size: **26.7 MB (26748471 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b53e0703f62bf0d6840c8949d8c0b4b16d9e9c3e25d2b335c5fc40cab386d86a`
+-	Image ID: `sha256:85c50b282d2775595c93c618a8f0c8d57092db986a9584baf8be7a72ccf52e5b`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
 ```dockerfile
-# Mon, 19 Jun 2017 16:54:49 GMT
-ADD file:cf1b74f7af8abcfbe58722467970b39b3ef9c8343665ef2d175f058f734a7f6e in / 
-# Mon, 19 Jun 2017 16:55:12 GMT
+# Tue, 27 Jun 2017 18:37:38 GMT
+ADD file:89e72bfc19e81624ba6a34bd5cecdf258750dc569ba03e17e3f4a286b1526461 in / 
+# Tue, 27 Jun 2017 18:38:04 GMT
 CMD ["/bin/sh"]
-# Mon, 19 Jun 2017 22:46:44 GMT
+# Wed, 28 Jun 2017 20:09:29 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pcre-dev 		pkgconf 		re2c
-# Mon, 19 Jun 2017 22:46:48 GMT
+# Wed, 28 Jun 2017 20:09:33 GMT
 RUN apk add --no-cache --virtual .persistent-deps 		ca-certificates 		curl 		tar 		xz
-# Mon, 19 Jun 2017 22:46:50 GMT
+# Wed, 28 Jun 2017 20:09:35 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Mon, 19 Jun 2017 22:46:52 GMT
+# Wed, 28 Jun 2017 20:09:36 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Mon, 19 Jun 2017 22:46:53 GMT
+# Wed, 28 Jun 2017 20:09:37 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Mon, 19 Jun 2017 23:11:54 GMT
+# Wed, 28 Jun 2017 20:47:17 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
-# Mon, 19 Jun 2017 23:12:18 GMT
+# Wed, 28 Jun 2017 20:47:18 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 23:12:41 GMT
+# Wed, 28 Jun 2017 20:47:20 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 23:12:42 GMT
+# Wed, 28 Jun 2017 20:47:21 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
-# Mon, 19 Jun 2017 23:37:11 GMT
+# Wed, 28 Jun 2017 21:29:46 GMT
 ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Mon, 19 Jun 2017 23:37:12 GMT
+# Wed, 28 Jun 2017 21:29:47 GMT
 ENV PHP_VERSION=7.0.20
-# Mon, 19 Jun 2017 23:37:13 GMT
+# Wed, 28 Jun 2017 21:29:48 GMT
 ENV PHP_URL=https://secure.php.net/get/php-7.0.20.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.0.20.tar.xz.asc/from/this/mirror
-# Mon, 19 Jun 2017 23:37:14 GMT
+# Wed, 28 Jun 2017 21:29:49 GMT
 ENV PHP_SHA256=31b9cf1fb83fe3cd82c2f6603a0ae81ae6abacb5286827e362d8f85e68908e0a PHP_MD5=e84615871c1c6dbd0860746a31f3a7c8
-# Mon, 19 Jun 2017 23:37:22 GMT
+# Wed, 28 Jun 2017 21:29:56 GMT
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
-# Mon, 19 Jun 2017 23:37:24 GMT
+# Wed, 28 Jun 2017 21:29:58 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Mon, 19 Jun 2017 23:42:09 GMT
+# Wed, 28 Jun 2017 21:33:29 GMT
 RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Mon, 19 Jun 2017 23:50:44 GMT
+# Wed, 28 Jun 2017 21:33:32 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Mon, 19 Jun 2017 23:50:45 GMT
+# Wed, 28 Jun 2017 21:33:32 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Mon, 19 Jun 2017 23:50:46 GMT
+# Wed, 28 Jun 2017 21:33:33 GMT
 CMD ["php" "-a"]
 ```
 
 -	Layers:
-	-	`sha256:acb474fa89565f9f79ee5ddaaaad12c59954e2694d005ec120d6b11825bad191`  
-		Last Modified: Mon, 19 Jun 2017 17:06:54 GMT  
-		Size: 2.4 MB (2385060 bytes)  
+	-	`sha256:90f4dba627d65ea3223761bcfe54e726337a919fe98117ef107914f91be657c9`  
+		Last Modified: Tue, 27 Jun 2017 18:47:56 GMT  
+		Size: 2.4 MB (2385007 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dabaad5e9926028cc146660baf944edb2684f3920faf2156ebf44ed92cf44133`  
-		Last Modified: Tue, 20 Jun 2017 14:35:02 GMT  
-		Size: 1.1 MB (1081308 bytes)  
+	-	`sha256:19ae35d047425948b630f791a9a74d50ebb54f782bf01d3bcd74a2ed98313067`  
+		Last Modified: Thu, 29 Jun 2017 01:50:27 GMT  
+		Size: 1.1 MB (1081313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f33401fdb9aa65db74d315ebb85f68ae379f28e026bdbc5b9ce92224bccefc95`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
-		Size: 1.3 KB (1276 bytes)  
+	-	`sha256:6d34c9ec14365563dff516a583c4122f35a19016a83cc9cd333ad5a62f9a705b`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
+		Size: 1.3 KB (1275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bad83aa6d5dabea040da9162ce26e4da6e8212756b4f1279068078313bfa16d6`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
+	-	`sha256:729ea35b870d89fe556e628075b41809b7e889d5858be4cffdd7ac98c2bee7ef`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f18a1ce566323fd48740969ffe4defb9a5ebcd31b6b1b8259190955ff4e490eb`  
-		Last Modified: Tue, 20 Jun 2017 15:01:26 GMT  
-		Size: 12.8 MB (12777898 bytes)  
+	-	`sha256:50b78e7342e2d9fda95baee3eb707703f1f1d7ad63e3a25d5145ffc845dbaedc`  
+		Last Modified: Thu, 29 Jun 2017 18:15:10 GMT  
+		Size: 12.8 MB (12777894 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6fd4556fd61bb1ae1aaa4bc48d88ff90fd7fee43c5a718619e208f8d84fdea68`  
-		Last Modified: Tue, 20 Jun 2017 15:01:25 GMT  
+	-	`sha256:49502fcd53a03f54a1e5bf899b89df5b5d5f17a07dae579a20be5352c89487cf`  
+		Last Modified: Thu, 29 Jun 2017 18:15:09 GMT  
 		Size: 485.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7829b4632cdb950d47741d19d6d4456e080efdda5034cfff40d3168817df7ea`  
-		Last Modified: Tue, 20 Jun 2017 15:01:29 GMT  
-		Size: 10.5 MB (10500306 bytes)  
+	-	`sha256:aa6e26682b22e4c46f8ff00d0583fa7f1b72e10c83f6b7909165d326c01829c8`  
+		Last Modified: Thu, 29 Jun 2017 18:15:13 GMT  
+		Size: 10.5 MB (10500223 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ff326c77c23ef040a970d924272112000cd3edcbd4c61c0ecaa9a9bf88e4b61`  
-		Last Modified: Tue, 20 Jun 2017 15:01:25 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:4dc6e8868b9aa7664dd7867f4addef778aa33ec64f961fc5cd40b1c711531997`  
+		Last Modified: Thu, 29 Jun 2017 18:15:09 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:7.0-zts-alpine`
 
 ```console
-$ docker pull php@sha256:6b7096ba5f239919ca299a1de7d0be19673843025e74a7989223070418a3d58f
+$ docker pull php@sha256:7ccd4467963bcea9d1f882791670c852e78e3623648f351b009fb63bd3cdbba7
 ```
 
 -	Platforms:
@@ -4922,89 +4922,89 @@ $ docker pull php@sha256:6b7096ba5f239919ca299a1de7d0be19673843025e74a7989223070
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.7 MB (26748606 bytes)**  
+-	Total Size: **26.7 MB (26748471 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b53e0703f62bf0d6840c8949d8c0b4b16d9e9c3e25d2b335c5fc40cab386d86a`
+-	Image ID: `sha256:85c50b282d2775595c93c618a8f0c8d57092db986a9584baf8be7a72ccf52e5b`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php","-a"]`
 
 ```dockerfile
-# Mon, 19 Jun 2017 16:54:49 GMT
-ADD file:cf1b74f7af8abcfbe58722467970b39b3ef9c8343665ef2d175f058f734a7f6e in / 
-# Mon, 19 Jun 2017 16:55:12 GMT
+# Tue, 27 Jun 2017 18:37:38 GMT
+ADD file:89e72bfc19e81624ba6a34bd5cecdf258750dc569ba03e17e3f4a286b1526461 in / 
+# Tue, 27 Jun 2017 18:38:04 GMT
 CMD ["/bin/sh"]
-# Mon, 19 Jun 2017 22:46:44 GMT
+# Wed, 28 Jun 2017 20:09:29 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pcre-dev 		pkgconf 		re2c
-# Mon, 19 Jun 2017 22:46:48 GMT
+# Wed, 28 Jun 2017 20:09:33 GMT
 RUN apk add --no-cache --virtual .persistent-deps 		ca-certificates 		curl 		tar 		xz
-# Mon, 19 Jun 2017 22:46:50 GMT
+# Wed, 28 Jun 2017 20:09:35 GMT
 RUN set -x 	&& addgroup -g 82 -S www-data 	&& adduser -u 82 -D -S -G www-data www-data
-# Mon, 19 Jun 2017 22:46:52 GMT
+# Wed, 28 Jun 2017 20:09:36 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Mon, 19 Jun 2017 22:46:53 GMT
+# Wed, 28 Jun 2017 20:09:37 GMT
 RUN mkdir -p $PHP_INI_DIR/conf.d
-# Mon, 19 Jun 2017 23:11:54 GMT
+# Wed, 28 Jun 2017 20:47:17 GMT
 ENV PHP_EXTRA_CONFIGURE_ARGS=--enable-maintainer-zts
-# Mon, 19 Jun 2017 23:12:18 GMT
+# Wed, 28 Jun 2017 20:47:18 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 23:12:41 GMT
+# Wed, 28 Jun 2017 20:47:20 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2
-# Mon, 19 Jun 2017 23:12:42 GMT
+# Wed, 28 Jun 2017 20:47:21 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie
-# Mon, 19 Jun 2017 23:37:11 GMT
+# Wed, 28 Jun 2017 21:29:46 GMT
 ENV GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3
-# Mon, 19 Jun 2017 23:37:12 GMT
+# Wed, 28 Jun 2017 21:29:47 GMT
 ENV PHP_VERSION=7.0.20
-# Mon, 19 Jun 2017 23:37:13 GMT
+# Wed, 28 Jun 2017 21:29:48 GMT
 ENV PHP_URL=https://secure.php.net/get/php-7.0.20.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-7.0.20.tar.xz.asc/from/this/mirror
-# Mon, 19 Jun 2017 23:37:14 GMT
+# Wed, 28 Jun 2017 21:29:49 GMT
 ENV PHP_SHA256=31b9cf1fb83fe3cd82c2f6603a0ae81ae6abacb5286827e362d8f85e68908e0a PHP_MD5=e84615871c1c6dbd0860746a31f3a7c8
-# Mon, 19 Jun 2017 23:37:22 GMT
+# Wed, 28 Jun 2017 21:29:56 GMT
 RUN set -xe; 		apk add --no-cache --virtual .fetch-deps 		gnupg 		openssl 	; 		mkdir -p /usr/src; 	cd /usr/src; 		wget -O php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 	if [ -n "$PHP_MD5" ]; then 		echo "$PHP_MD5 *php.tar.xz" | md5sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		wget -O php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		rm -r "$GNUPGHOME"; 	fi; 		apk del .fetch-deps
-# Mon, 19 Jun 2017 23:37:24 GMT
+# Wed, 28 Jun 2017 21:29:58 GMT
 COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ 
-# Mon, 19 Jun 2017 23:42:09 GMT
+# Wed, 28 Jun 2017 21:33:29 GMT
 RUN set -xe 	&& apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		coreutils 		curl-dev 		libedit-dev 		libxml2-dev 		openssl-dev 		sqlite-dev 		&& export CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 	&& docker-php-source extract 	&& cd /usr/src/php 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--disable-cgi 				--enable-ftp 		--enable-mbstring 		--enable-mysqlnd 				--with-curl 		--with-libedit 		--with-openssl 		--with-zlib 				--with-pcre-regex=/usr 				$PHP_EXTRA_CONFIGURE_ARGS 	&& make -j "$(nproc)" 	&& make install 	&& { find /usr/local/bin /usr/local/sbin -type f -perm +0111 -exec strip --strip-all '{}' + || true; } 	&& make clean 	&& cd / 	&& docker-php-source delete 		&& runDeps="$( 		scanelf --needed --nobanner --recursive /usr/local 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --no-cache --virtual .php-rundeps $runDeps 		&& apk del .build-deps 		&& pecl update-channels 	&& rm -rf /tmp/pear ~/.pearrc
-# Mon, 19 Jun 2017 23:50:44 GMT
+# Wed, 28 Jun 2017 21:33:32 GMT
 COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ 
-# Mon, 19 Jun 2017 23:50:45 GMT
+# Wed, 28 Jun 2017 21:33:32 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Mon, 19 Jun 2017 23:50:46 GMT
+# Wed, 28 Jun 2017 21:33:33 GMT
 CMD ["php" "-a"]
 ```
 
 -	Layers:
-	-	`sha256:acb474fa89565f9f79ee5ddaaaad12c59954e2694d005ec120d6b11825bad191`  
-		Last Modified: Mon, 19 Jun 2017 17:06:54 GMT  
-		Size: 2.4 MB (2385060 bytes)  
+	-	`sha256:90f4dba627d65ea3223761bcfe54e726337a919fe98117ef107914f91be657c9`  
+		Last Modified: Tue, 27 Jun 2017 18:47:56 GMT  
+		Size: 2.4 MB (2385007 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dabaad5e9926028cc146660baf944edb2684f3920faf2156ebf44ed92cf44133`  
-		Last Modified: Tue, 20 Jun 2017 14:35:02 GMT  
-		Size: 1.1 MB (1081308 bytes)  
+	-	`sha256:19ae35d047425948b630f791a9a74d50ebb54f782bf01d3bcd74a2ed98313067`  
+		Last Modified: Thu, 29 Jun 2017 01:50:27 GMT  
+		Size: 1.1 MB (1081313 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f33401fdb9aa65db74d315ebb85f68ae379f28e026bdbc5b9ce92224bccefc95`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
-		Size: 1.3 KB (1276 bytes)  
+	-	`sha256:6d34c9ec14365563dff516a583c4122f35a19016a83cc9cd333ad5a62f9a705b`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
+		Size: 1.3 KB (1275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bad83aa6d5dabea040da9162ce26e4da6e8212756b4f1279068078313bfa16d6`  
-		Last Modified: Tue, 20 Jun 2017 14:34:59 GMT  
+	-	`sha256:729ea35b870d89fe556e628075b41809b7e889d5858be4cffdd7ac98c2bee7ef`  
+		Last Modified: Thu, 29 Jun 2017 01:50:25 GMT  
 		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f18a1ce566323fd48740969ffe4defb9a5ebcd31b6b1b8259190955ff4e490eb`  
-		Last Modified: Tue, 20 Jun 2017 15:01:26 GMT  
-		Size: 12.8 MB (12777898 bytes)  
+	-	`sha256:50b78e7342e2d9fda95baee3eb707703f1f1d7ad63e3a25d5145ffc845dbaedc`  
+		Last Modified: Thu, 29 Jun 2017 18:15:10 GMT  
+		Size: 12.8 MB (12777894 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6fd4556fd61bb1ae1aaa4bc48d88ff90fd7fee43c5a718619e208f8d84fdea68`  
-		Last Modified: Tue, 20 Jun 2017 15:01:25 GMT  
+	-	`sha256:49502fcd53a03f54a1e5bf899b89df5b5d5f17a07dae579a20be5352c89487cf`  
+		Last Modified: Thu, 29 Jun 2017 18:15:09 GMT  
 		Size: 485.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7829b4632cdb950d47741d19d6d4456e080efdda5034cfff40d3168817df7ea`  
-		Last Modified: Tue, 20 Jun 2017 15:01:29 GMT  
-		Size: 10.5 MB (10500306 bytes)  
+	-	`sha256:aa6e26682b22e4c46f8ff00d0583fa7f1b72e10c83f6b7909165d326c01829c8`  
+		Last Modified: Thu, 29 Jun 2017 18:15:13 GMT  
+		Size: 10.5 MB (10500223 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ff326c77c23ef040a970d924272112000cd3edcbd4c61c0ecaa9a9bf88e4b61`  
-		Last Modified: Tue, 20 Jun 2017 15:01:25 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:4dc6e8868b9aa7664dd7867f4addef778aa33ec64f961fc5cd40b1c711531997`  
+		Last Modified: Thu, 29 Jun 2017 18:15:09 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `php:5.6.30-cli`
