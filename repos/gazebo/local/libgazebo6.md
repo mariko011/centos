@@ -2429,14 +2429,8 @@ Licenses: (parsed from: `/usr/share/doc/klibc-utils/copyright`, `/usr/share/doc/
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris klibc=2.0.3-0ubuntu1.14.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/k/klibc/klibc_2.0.3-0ubuntu1.14.04.2.dsc' klibc_2.0.3-0ubuntu1.14.04.2.dsc 2059 SHA256:f7cb0ee59aaf2899815dbe8aeab3a91f9a245d311440a82fa6c71dc1359eb667
-'http://archive.ubuntu.com/ubuntu/pool/main/k/klibc/klibc_2.0.3.orig.tar.bz2' klibc_2.0.3.orig.tar.bz2 517788 SHA256:1f9a49c62faf3e166a8deee6c36ad0f4527bb4aa2050123853a4957802235dca
-'http://archive.ubuntu.com/ubuntu/pool/main/k/klibc/klibc_2.0.3-0ubuntu1.14.04.2.debian.tar.xz' klibc_2.0.3-0ubuntu1.14.04.2.debian.tar.xz 20572 SHA256:44daef54221dc98fe668e547999eca4359b4c2b5a6d15583e8a7024058a2b7e1
-```
 
 ### `dpkg` source package: `kmod=15-0ubuntu6`
 
