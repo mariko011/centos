@@ -1,7 +1,7 @@
 ## `golang:rc-nanoserver`
 
 ```console
-$ docker pull golang@sha256:30e7739e445844725da4156332653797659ad872c4079b86ccff5301d09ba0cc
+$ docker pull golang@sha256:f6584a06b0b0f2150c6e9e46ebb598afa5e60c9a32ae3499d7c96ad18a53b02c
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull golang@sha256:30e7739e445844725da4156332653797659ad872c4079b86ccff
 
 -	Docker Version: 1.12.2-cs2-ws-beta
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **471.3 MB (471325131 bytes)**  
+-	Total Size: **471.2 MB (471246115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:080d02eae5d39ac06351c7403ccf5309041f56f76723ce15b16e2aabf81da80d`
+-	Image ID: `sha256:033ad698701697ab6aa646176fcb718b556451f3a64b1a2642620a751bb4ced6`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -28,11 +28,11 @@ SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference 
 ENV GOPATH=C:\gopath
 # Wed, 26 Apr 2017 19:38:59 GMT
 RUN $newPath = ('{0}\bin;C:\go\bin;{1}' -f $env:GOPATH, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath;
-# Thu, 15 Jun 2017 17:32:40 GMT
-ENV GOLANG_VERSION=1.9beta1
-# Thu, 15 Jun 2017 17:35:53 GMT
-RUN $url = ('https://golang.org/dl/go{0}.windows-amd64.zip' -f $env:GOLANG_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '9cec41dc5825ad1f7ad8955ae4f6d0ec8ca598b3fcbf911943f5222179cb94a1'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Complete.';
-# Thu, 15 Jun 2017 17:35:56 GMT
+# Thu, 29 Jun 2017 21:07:47 GMT
+ENV GOLANG_VERSION=1.9beta2
+# Thu, 29 Jun 2017 21:10:54 GMT
+RUN $url = ('https://golang.org/dl/go{0}.windows-amd64.zip' -f $env:GOLANG_VERSION); 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'go.zip'; 		$sha256 = '692460aacdbfa2c36765955ede95b1c6c8b3b7afdbe8f9149947ac81e4378f2e'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash go.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive go.zip -DestinationPath C:\; 		Write-Host 'Verifying install ("go version") ...'; 	go version; 		Write-Host 'Removing ...'; 	Remove-Item go.zip -Force; 		Write-Host 'Complete.';
+# Thu, 29 Jun 2017 21:10:56 GMT
 WORKDIR C:\gopath
 ```
 
@@ -55,15 +55,15 @@ WORKDIR C:\gopath
 		Last Modified: Wed, 26 Apr 2017 19:51:37 GMT  
 		Size: 884.5 KB (884544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:28bce2bfd989948ff92edb473ccd998e55229104226fd9d9e617e984ad072332`  
-		Last Modified: Thu, 15 Jun 2017 17:36:54 GMT  
-		Size: 958.0 B  
+	-	`sha256:25c7299b28a7356e28b36ef0d9c590dd7951516919ecb50778ef2567297ac13f`  
+		Last Modified: Thu, 29 Jun 2017 21:11:51 GMT  
+		Size: 968.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:10b496523f0824de5d595fdb6313d7c1b6351af877aaa833f1c9a2471a36733e`  
-		Last Modified: Thu, 15 Jun 2017 17:37:14 GMT  
-		Size: 101.7 MB (101708505 bytes)  
+	-	`sha256:bbccf42245250b1227c0578d4a0fd94680836e157cf027cc2480b5f0b013eb27`  
+		Last Modified: Thu, 29 Jun 2017 21:12:11 GMT  
+		Size: 101.6 MB (101629469 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a4da422828de59be0a7130d1f12eb29c5d42351f3929f673f7fd5539b75bf972`  
-		Last Modified: Thu, 15 Jun 2017 17:36:54 GMT  
-		Size: 955.0 B  
+	-	`sha256:38b274c898cc01bc33d6e528e10ae645e6e0c8aee6fe748d9371645147f0a10c`  
+		Last Modified: Thu, 29 Jun 2017 21:11:54 GMT  
+		Size: 965.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
