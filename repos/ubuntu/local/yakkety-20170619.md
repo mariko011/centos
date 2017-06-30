@@ -1065,14 +1065,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=231-9ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-9ubuntu4.dsc' systemd_231-9ubuntu4.dsc 4586 SHA256:d626139f9e6d10eba7da6f1b12a7e10608e4399c547cc647dfe9babd94e2efc4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231.orig.tar.gz' systemd_231.orig.tar.gz 4381464 SHA256:899733ad6c157cedbb89aec4efe3bc824dcfd65a1d6f6bebc7b043f7924e39b4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_231-9ubuntu4.debian.tar.xz' systemd_231-9ubuntu4.debian.tar.xz 159652 SHA256:6e80d72f3945c98ea7ff66217941aff2242caea5b020261935283ffc8afc6a03
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`
 
@@ -1206,14 +1200,8 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.28.2-1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.28.2-1ubuntu1.1.dsc' util-linux_2.28.2-1ubuntu1.1.dsc 3603 SHA256:b7e4e9908278591dbd8d48d323cd8d01136220518f724aa757a00bd7f7cd05f1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.28.2.orig.tar.xz' util-linux_2.28.2.orig.tar.xz 4149700 SHA256:b89d37146f20bede93a42c847bce881a17e6dbd8066ff2db2bee733fa409f0cd
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.28.2-1ubuntu1.1.debian.tar.xz' util-linux_2.28.2-1ubuntu1.1.debian.tar.xz 80536 SHA256:e989d60fe857cdfd0be11e0a43242b89d74ab15b90fd9932b9b27de193b10604
-```
 
 ### `dpkg` source package: `xz-utils=5.1.1alpha+20120614-2.1ubuntu1`
 
