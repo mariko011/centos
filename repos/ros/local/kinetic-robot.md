@@ -3587,14 +3587,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `GPL-2`
 - `redpine-signals`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-81.104
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-81.104.dsc' linux_4.4.0-81.104.dsc 9617 SHA256:15fff7749e2717c90f0226d6e3bc4efcc629976d41adb21dc4d3f0bc722349c4
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-81.104.diff.gz' linux_4.4.0-81.104.diff.gz 12854495 SHA256:26cb4952c330813432aaa0f21fe5550c69a7a47fcf13064f7d4355508e85b20e
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
 
@@ -4633,14 +4627,8 @@ Licenses: (parsed from: `/usr/share/doc/libpulse0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris pulseaudio=1:8.0-0ubuntu3.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0-0ubuntu3.2.dsc' pulseaudio_8.0-0ubuntu3.2.dsc 3657 SHA256:66679493ff258b682b6ba75c20142212c1133aa657babb0ba852f0aca02d21ab
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0.orig.tar.xz' pulseaudio_8.0.orig.tar.xz 1517656 SHA256:690eefe28633466cfd1ab9d85ebfa9376f6b622deec6bfee5091ac9737cd1989
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0-0ubuntu3.2.debian.tar.xz' pulseaudio_8.0-0ubuntu3.2.debian.tar.xz 141928 SHA256:ff1fdf3da1bfd3dd9cd82dcadaa8d04cf5da87a7a98484cb41122c9aa8a385e6
-```
 
 ### `dpkg` source package: `pyqt5=5.5.1+dfsg-3ubuntu4`
 
@@ -7719,14 +7707,8 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.2
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.2.dsc' util-linux_2.27.1-6ubuntu3.2.dsc 3502 SHA256:2ca85a64e42875047c783ab11ebeaec3b964dec8006eccf2022fd1a76ed995f8
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1.orig.tar.xz' util-linux_2.27.1.orig.tar.xz 3964512 SHA256:0a818fcdede99aec43ffe6ca5b5388bff80d162f2f7bd4541dca94fecb87a290
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.2.debian.tar.xz' util-linux_2.27.1-6ubuntu3.2.debian.tar.xz 83096 SHA256:09ee0f1807d240d71a821bc6306dc2d336962e442dc9803263143bff51a5d9f3
-```
 
 ### `dpkg` source package: `wayland=1.9.0-1`
 
