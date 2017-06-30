@@ -63,13 +63,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4.5
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.4.5.dsc' apt_1.4.5.dsc 2549 SHA256:6e0b983c3ace5c458c66e46e92da9556fc1a16300100d88b037ac6a22eacee49
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.4.5.tar.xz' apt_1.4.5.tar.xz 2078276 SHA256:8aa9afbd224b0b001f86eaea2262ce12a787db9d87bbb74824c0dd569dfa6c07
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
@@ -123,13 +118,8 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-files=9.6ubuntu99
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.6ubuntu99.dsc' base-files_9.6ubuntu99.dsc 1580 SHA256:22f72e155c00ade2cb8badbaace0de4a4d689695e4251a2e74b1f9f1a5acca4a
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.6ubuntu99.tar.xz' base-files_9.6ubuntu99.tar.xz 65732 SHA256:b8e50fed79a42716532bb66ff10b82d5f21646e841555f3feaf17eb2b356a545
-```
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -721,14 +711,8 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 - `GPL-2.1+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgpg-error=1.26-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.26-2.dsc' libgpg-error_1.26-2.dsc 2454 SHA256:ea53df72d922f224cf0bb69df5a20100a2a5826e890741277425269d70eade20
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.26.orig.tar.bz2' libgpg-error_1.26.orig.tar.bz2 798096 SHA256:4c4bcbc90116932e3acd37b37812d8653b1b189c1904985898e860af818aee69
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.26-2.debian.tar.xz' libgpg-error_1.26-2.debian.tar.xz 12740 SHA256:20a73d5bcc4f523ae16b9279698c01b37dd5cffd2b7dc317c65923aa115ca46c
-```
 
 ### `dpkg` source package: `libidn=1.33-1`
 
@@ -1003,14 +987,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.44+dfsg-5ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.44+dfsg-5ubuntu1.dsc' openldap_2.4.44+dfsg-5ubuntu1.dsc 3074 SHA256:5fcf70bf56bc6597293fca492d250a80bd6f32f1bc028a24fe1c0084fef7e167
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.44+dfsg.orig.tar.gz' openldap_2.4.44+dfsg.orig.tar.gz 4826590 SHA256:d5187c229bec163c5d97845846e1b87917755f85b04f444c08836384f4bd7ffe
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.44+dfsg-5ubuntu1.debian.tar.xz' openldap_2.4.44+dfsg-5ubuntu1.debian.tar.xz 176504 SHA256:94b7c4d89f536364222c03979a7eb6f025e292b2e6ffb0f42ee62b5413dcc63f
-```
 
 ### `dpkg` source package: `p11-kit=0.23.3-5`
 
