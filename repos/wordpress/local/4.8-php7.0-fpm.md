@@ -1864,19 +1864,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=3.16.43-2+deb8u1
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u1.dsc' linux_3.16.43-2+deb8u1.dsc 140764 SHA256:40270c451b365f719428585b8b02ab671cc853ce0ffc9548ad8e2cf1d61ed30e
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43.orig.tar.xz' linux_3.16.43.orig.tar.xz 81815520 SHA256:77fc86010339c04736799d4f2e19adc1623c440583e7eae09e4b76b63c4edd8f
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u1.debian.tar.xz' linux_3.16.43-2+deb8u1.debian.tar.xz 3183248 SHA256:2961caede71e21fad09237b04bdd0c589f24afd59fc8b6849edcbc1aac5d8f1a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/3.16.43-2+deb8u1/
-- https://sources.debian.net/src/linux/3.16.43-2+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
