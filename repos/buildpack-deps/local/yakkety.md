@@ -2897,14 +2897,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.8.0-56.61
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0-56.61.dsc' linux_4.8.0-56.61.dsc 8840 SHA256:079f9f46a591c3611e8897a37c34542a1fb0d6c9e34498b852e10a16f4ba2dc4
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0.orig.tar.gz' linux_4.8.0.orig.tar.gz 139977270 SHA256:80229497a1584076d534e96acf529a01a0fc00044eba9e6c00ae936e453dbd3c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.8.0-56.61.diff.gz' linux_4.8.0-56.61.diff.gz 9874412 SHA256:d7e1fb19110bb239bd91395dc57a47a5a523ec08a0e971a02854d6872ae8307b
-```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu5`
 
@@ -4113,14 +4107,8 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.28.2-1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.28.2-1ubuntu1.1.dsc' util-linux_2.28.2-1ubuntu1.1.dsc 3603 SHA256:b7e4e9908278591dbd8d48d323cd8d01136220518f724aa757a00bd7f7cd05f1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.28.2.orig.tar.xz' util-linux_2.28.2.orig.tar.xz 4149700 SHA256:b89d37146f20bede93a42c847bce881a17e6dbd8066ff2db2bee733fa409f0cd
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.28.2-1ubuntu1.1.debian.tar.xz' util-linux_2.28.2-1ubuntu1.1.debian.tar.xz 80536 SHA256:e989d60fe857cdfd0be11e0a43242b89d74ab15b90fd9932b9b27de193b10604
-```
 
 ### `dpkg` source package: `wget=1.18-2ubuntu1`
 
