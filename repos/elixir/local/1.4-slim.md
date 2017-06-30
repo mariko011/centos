@@ -1,17 +1,17 @@
-# `elixir:1.4.4-slim`
+# `elixir:1.4.5-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:34964af4a3aa8e41f8c6f2b571aed0a4fe96749771f067b69b98a77f2eba5bd6`
-- Created: `2017-06-21T21:39:50.143904238Z`
-- Virtual Size: ~ 383.25 Mb  
+- Image ID: `sha256:73df552b2680b6f8709fe78b692bc1da4ec7aea217d2a798e5f188754a00c5dd`
+- Created: `2017-06-29T00:13:20.710326193Z`
+- Virtual Size: ~ 383.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=19.3.6`
-  - `ELIXIR_VERSION=v1.4.4`
+  - `OTP_VERSION=19.3.6.1`
+  - `ELIXIR_VERSION=v1.4.5`
   - `LANG=C.UTF-8`
 
 ## `dpkg` (`.deb`-based packages)
@@ -673,11 +673,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/e2fsprogs/1.42.12-2/
 - https://sources.debian.net/src/e2fsprogs/1.42.12-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `expat=2.1.0-6+deb8u3`
+### `dpkg` source package: `expat=2.1.0-6+deb8u4`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.1.0-6+deb8u3`
+- `libexpat1:amd64=2.1.0-6+deb8u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -686,16 +686,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.1.0-6+deb8u3
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u3.dsc' expat_2.1.0-6+deb8u3.dsc 2278 SHA256:3485be5c4ffc922aea14718c48c4107b04559ec013cc0e98a61597da50320e25
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u3.debian.tar.xz' expat_2.1.0-6+deb8u3.debian.tar.xz 21716 SHA256:5e756a68a7634b7b7109024bd33df4df3c5964ea0d0f5e8db0ca98f623bcd841
+$ apt-get source -qq --print-uris expat=2.1.0-6+deb8u4
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-6+deb8u4.dsc' expat_2.1.0-6+deb8u4.dsc 2292 SHA256:7f7a5fed696e3b17f50e576dbae7013793e59517b04818e8b1688d9581792245
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-6+deb8u4.debian.tar.xz' expat_2.1.0-6+deb8u4.debian.tar.xz 22672 SHA256:e832a0c7f1645bb915310628c38ecc6183f6854b0788332a7be470d06d4d149b
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/expat/2.1.0-6+deb8u3/
-- https://sources.debian.net/src/expat/2.1.0-6+deb8u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/expat/2.1.0-6+deb8u4/
+- https://sources.debian.net/src/expat/2.1.0-6+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `findutils=4.4.2-9`
 
@@ -1026,11 +1026,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gnutls28/3.3.8-6+deb8u6/
 - https://sources.debian.net/src/gnutls28/3.3.8-6+deb8u6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `graphite2=1.3.6-1~deb8u1`
+### `dpkg` source package: `graphite2=1.3.10-1~deb8u1`
 
 Binary Packages:
 
-- `libgraphite2-3:amd64=1.3.6-1~deb8u1`
+- `libgraphite2-3:amd64=1.3.10-1~deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 
@@ -1047,16 +1047,16 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris graphite2=1.3.6-1~deb8u1
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.6-1~deb8u1.dsc' graphite2_1.3.6-1~deb8u1.dsc 2173 SHA256:efb076e920bf14c190af776076711d1e3ea35ea55046cec43e48afbdbc647efc
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.6.orig.tar.gz' graphite2_1.3.6.orig.tar.gz 3881106 SHA256:475e7657ac606ed8805518031729c1273cf7d9d422169ac6f7882e01d832af75
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.6-1~deb8u1.debian.tar.xz' graphite2_1.3.6-1~deb8u1.debian.tar.xz 9664 SHA256:200c6dc8b54801dbc0080a857c00ef8856ab5bd36624c8d3918d00efd779ff4d
+$ apt-get source -qq --print-uris graphite2=1.3.10-1~deb8u1
+'http://security.debian.org/pool/updates/main/g/graphite2/graphite2_1.3.10-1~deb8u1.dsc' graphite2_1.3.10-1~deb8u1.dsc 2232 SHA256:546b58d828f20103703029a74b70a2b81b27ecbeb7130cee89acf02c16cda075
+'http://security.debian.org/pool/updates/main/g/graphite2/graphite2_1.3.10.orig.tar.gz' graphite2_1.3.10.orig.tar.gz 3889647 SHA256:90fde3b2f9ea95d68ffb19278d07d9b8a7efa5ba0e413bebcea802ce05cda1ae
+'http://security.debian.org/pool/updates/main/g/graphite2/graphite2_1.3.10-1~deb8u1.debian.tar.xz' graphite2_1.3.10-1~deb8u1.debian.tar.xz 10448 SHA256:8aedda28f1a77a16fe9a0cd0245332af588db636341eb97891dadddf43739d15
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/graphite2/1.3.6-1~deb8u1/
-- https://sources.debian.net/src/graphite2/1.3.6-1~deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/graphite2/1.3.10-1~deb8u1/
+- https://sources.debian.net/src/graphite2/1.3.10-1~deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.20-4.1`
 
@@ -2359,11 +2359,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libxxf86vm/1:1.1.3-1/
 - https://sources.debian.net/src/libxxf86vm/1:1.1.3-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `linux=3.16.43-2+deb8u1`
+### `dpkg` source package: `linux=3.16.43-2+deb8u2`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.16.43-2+deb8u1`
+- `linux-libc-dev:amd64=3.16.43-2+deb8u2`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2374,16 +2374,16 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=3.16.43-2+deb8u1
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u1.dsc' linux_3.16.43-2+deb8u1.dsc 140764 SHA256:40270c451b365f719428585b8b02ab671cc853ce0ffc9548ad8e2cf1d61ed30e
+$ apt-get source -qq --print-uris linux=3.16.43-2+deb8u2
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u2.dsc' linux_3.16.43-2+deb8u2.dsc 140609 SHA256:c866504a6adc567596c2ee9cc0488970d70e654dc92a0fc595269d3d8b49b3b8
 'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43.orig.tar.xz' linux_3.16.43.orig.tar.xz 81815520 SHA256:77fc86010339c04736799d4f2e19adc1623c440583e7eae09e4b76b63c4edd8f
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u1.debian.tar.xz' linux_3.16.43-2+deb8u1.debian.tar.xz 3183248 SHA256:2961caede71e21fad09237b04bdd0c589f24afd59fc8b6849edcbc1aac5d8f1a
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u2.debian.tar.xz' linux_3.16.43-2+deb8u2.debian.tar.xz 3235980 SHA256:10ef263bed87534798fd90bdedc1e1717b569c9973b35cd4c7610a2f2a44a220
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/linux/3.16.43-2+deb8u1/
-- https://sources.debian.net/src/linux/3.16.43-2+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/linux/3.16.43-2+deb8u2/
+- https://sources.debian.net/src/linux/3.16.43-2+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-2`
 
