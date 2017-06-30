@@ -2962,19 +2962,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=3.2.89-1
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.89-1.dsc' linux_3.2.89-1.dsc 103043 SHA256:5d92e0cb3d53818562c210bc4639a860f29425f2cd24f8ce4a9b988e0c55aaff
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.89.orig.tar.xz' linux_3.2.89.orig.tar.xz 65997820 SHA256:9f1495415eb3be487f43fc28da09b38129d0826ebc18b39a7e18734592b5a791
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.89-1.debian.tar.xz' linux_3.2.89-1.debian.tar.xz 3742776 SHA256:21dfd73e6c7490db0f8825d4139d735ac570f7e8ce68ced79eed4cfc9c673dcb
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/3.2.89-1/
-- https://sources.debian.net/src/linux/3.2.89-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian8+deb7u1`
 
@@ -3085,19 +3074,8 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mercurial=2.2.2-4+deb7u3
-'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2-4+deb7u3.dsc' mercurial_2.2.2-4+deb7u3.dsc 2294 SHA256:689b25c20c959066ee0832268fdd2729dff0da1d20ad8092b4bfbe887a3e1bc8
-'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2.orig.tar.gz' mercurial_2.2.2.orig.tar.gz 3430037 SHA256:3489110ec11fefbd2cbdefb8d715d0a869cef3dd729aaf4d5141108f8be1600a
-'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2-4+deb7u3.debian.tar.gz' mercurial_2.2.2-4+deb7u3.debian.tar.gz 51160 SHA256:250fc9b8edf07483062c1b3879d47f2fcf3f5c7c421cd1a03c3252251347274b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mercurial/2.2.2-4+deb7u3/
-- https://sources.debian.net/src/mercurial/2.2.2-4+deb7u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mime-support=3.52-1+deb7u1`
 
