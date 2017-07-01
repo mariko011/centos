@@ -1,10 +1,10 @@
-# `swarm:1.2.6`
+# `swarm:1.2.7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:36b1e23becabc0b27c5787712dce019982c048665fd9e7e6cb032a46bcac510d`
-- Created: `2017-01-18T02:32:06.647773798Z`
-- Virtual Size: ~ 15.85 Mb  
+- Image ID: `sha256:0198d9ac25d1ecbdf11e4684b33f74e648f44eb9ac4016bc3a30d51ff7601ee7`
+- Created: `2017-06-30T23:30:04.113087584Z`
+- Virtual Size: ~ 15.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/swarm"]`
