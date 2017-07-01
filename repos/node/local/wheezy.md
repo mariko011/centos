@@ -2813,19 +2813,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.8.0+dfsg1-7+wheezy7
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy7.dsc' libxml2_2.8.0+dfsg1-7+wheezy7.dsc 2640 SHA256:555c6d36a0b6f7f1fa10cd2901e608c05dca4bbf14770c9235f085d33181aa10
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1.orig.tar.gz' libxml2_2.8.0+dfsg1.orig.tar.gz 3554683 SHA256:46f339843967e861e81f8427373ff2a3d0a8cb608022dea16aa1d345ddcee338
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy7.debian.tar.gz' libxml2_2.8.0+dfsg1-7+wheezy7.debian.tar.gz 69016 SHA256:78cd3a18f432203109f8b717523488b5b25ef812cb1141088944ec4bacfd0f90
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy7/
-- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxrender=1:0.9.7-1+deb7u3`
 
@@ -3049,19 +3038,8 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mercurial=2.2.2-4+deb7u3
-'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2-4+deb7u3.dsc' mercurial_2.2.2-4+deb7u3.dsc 2294 SHA256:689b25c20c959066ee0832268fdd2729dff0da1d20ad8092b4bfbe887a3e1bc8
-'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2.orig.tar.gz' mercurial_2.2.2.orig.tar.gz 3430037 SHA256:3489110ec11fefbd2cbdefb8d715d0a869cef3dd729aaf4d5141108f8be1600a
-'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2-4+deb7u3.debian.tar.gz' mercurial_2.2.2-4+deb7u3.debian.tar.gz 51160 SHA256:250fc9b8edf07483062c1b3879d47f2fcf3f5c7c421cd1a03c3252251347274b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mercurial/2.2.2-4+deb7u3/
-- https://sources.debian.net/src/mercurial/2.2.2-4+deb7u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mime-support=3.52-1+deb7u1`
 
