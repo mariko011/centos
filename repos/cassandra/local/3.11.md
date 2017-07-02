@@ -1,10 +1,10 @@
-# `cassandra:3.10`
+# `cassandra:3.11.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3cf8fb7442759092e91efea6e3e7088e7ee4da91446fc8a93395d50942aeb5ca`
-- Created: `2017-06-21T01:21:29.592977451Z`
-- Virtual Size: ~ 385.68 Mb  
+- Image ID: `sha256:c82d9de5d478077fe5a26f6cd64463bd056ab38a47704bb6a7aa7d0ee8a28225`
+- Created: `2017-06-29T21:14:11.593469592Z`
+- Virtual Size: ~ 385.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.7`
   - `GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA`
-  - `CASSANDRA_VERSION=3.10`
+  - `CASSANDRA_VERSION=3.11.0`
   - `CASSANDRA_CONFIG=/etc/cassandra`
 
 ## `dpkg` (`.deb`-based packages)
@@ -345,12 +345,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/ca-certificates/20141019+deb8u3/
 - https://sources.debian.net/src/ca-certificates/20141019+deb8u3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `cassandra=3.10`
+### `dpkg` source package: `cassandra=3.11.0`
 
 Binary Packages:
 
-- `cassandra=3.10`
-- `cassandra-tools=3.10`
+- `cassandra=3.11.0`
+- `cassandra-tools=3.11.0`
 
 Licenses: (parsed from: `/usr/share/doc/cassandra/copyright`, `/usr/share/doc/cassandra-tools/copyright`)
 
@@ -359,10 +359,10 @@ Licenses: (parsed from: `/usr/share/doc/cassandra/copyright`, `/usr/share/doc/ca
 Source:
 
 ```console
-$ apt-get source -qq --print-uris cassandra=3.10
-'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.10.dsc' cassandra_3.10.dsc 2008 SHA256:bfc7148d8f36a6d2b3c24237342937ccc9a07d2965d139936bb88ca88cae09d7
-'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.10.orig.tar.gz' cassandra_3.10.orig.tar.gz 35573282 SHA256:0b970a8c70aeb39ebbf3051afbfb932a4535c72edc77803035492f5dfe37b1f4
-'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.10.diff.gz' cassandra_3.10.diff.gz 20 SHA256:f61f27bd17de546264aa58f40f3aafaac7021e0ef69c17f6b1b4cd7664a037ec
+$ apt-get source -qq --print-uris cassandra=3.11.0
+'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.11.0.dsc' cassandra_3.11.0.dsc 2022 SHA256:6d2447b2b1a4a56f2eef241cb4eeffb6469be2b2f4e411f76735baf343ae19c8
+'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.11.0.orig.tar.gz' cassandra_3.11.0.orig.tar.gz 36018388 SHA256:14920d343f7cc39c37c53348d468f7cc24ffbfe3c62f0aec0530544208e35d95
+'http://www.apache.org/dist/cassandra/debian/pool/main/c/cassandra/cassandra_3.11.0.diff.gz' cassandra_3.11.0.diff.gz 20 SHA256:f61f27bd17de546264aa58f40f3aafaac7021e0ef69c17f6b1b4cd7664a037ec
 ```
 
 ### `dpkg` source package: `cdebconf=0.192`
@@ -696,11 +696,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/e2fsprogs/1.42.12-2/
 - https://sources.debian.net/src/e2fsprogs/1.42.12-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `expat=2.1.0-6+deb8u3`
+### `dpkg` source package: `expat=2.1.0-6+deb8u4`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.1.0-6+deb8u3`
+- `libexpat1:amd64=2.1.0-6+deb8u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -709,16 +709,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.1.0-6+deb8u3
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u3.dsc' expat_2.1.0-6+deb8u3.dsc 2278 SHA256:3485be5c4ffc922aea14718c48c4107b04559ec013cc0e98a61597da50320e25
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u3.debian.tar.xz' expat_2.1.0-6+deb8u3.debian.tar.xz 21716 SHA256:5e756a68a7634b7b7109024bd33df4df3c5964ea0d0f5e8db0ca98f623bcd841
+$ apt-get source -qq --print-uris expat=2.1.0-6+deb8u4
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-6+deb8u4.dsc' expat_2.1.0-6+deb8u4.dsc 2292 SHA256:7f7a5fed696e3b17f50e576dbae7013793e59517b04818e8b1688d9581792245
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-6+deb8u4.debian.tar.xz' expat_2.1.0-6+deb8u4.debian.tar.xz 22672 SHA256:e832a0c7f1645bb915310628c38ecc6183f6854b0788332a7be470d06d4d149b
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/expat/2.1.0-6+deb8u3/
-- https://sources.debian.net/src/expat/2.1.0-6+deb8u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/expat/2.1.0-6+deb8u4/
+- https://sources.debian.net/src/expat/2.1.0-6+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `file=1:5.22+15-2+deb8u3`
 
