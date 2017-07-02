@@ -1,10 +1,10 @@
-# `mariadb:10.1.24`
+# `mariadb:10.2.6`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8aac8c9dd09107d5f960e97c19fcb52641f73ee73f14d8fa5070a3e01c60f137`
-- Created: `2017-06-23T00:30:47.424891518Z`
-- Virtual Size: ~ 394.94 Mb  
+- Image ID: `sha256:411c062636f41d0c163b302f38c781c78a5f1c8ddcfc7af94dda97f028ba3bf2`
+- Created: `2017-06-23T00:29:25.597133923Z`
+- Virtual Size: ~ 386.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,8 +13,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.7`
   - `GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
-  - `MARIADB_MAJOR=10.1`
-  - `MARIADB_VERSION=10.1.24+maria-1~jessie`
+  - `MARIADB_MAJOR=10.2`
+  - `MARIADB_VERSION=10.2.6+maria~jessie`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1009,10 +1009,9 @@ Likely also available for browsing at:
 
 Binary Packages:
 
-- `iproute=1:3.16.0-2`
 - `iproute2=3.16.0-2`
 
-Licenses: (parsed from: `/usr/share/doc/iproute/copyright`, `/usr/share/doc/iproute2/copyright`)
+Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
@@ -1029,30 +1028,6 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/iproute2/3.16.0-2/
 - https://sources.debian.net/src/iproute2/3.16.0-2/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `jemalloc=3.6.0-3`
-
-Binary Packages:
-
-- `libjemalloc1=3.6.0-3`
-
-Licenses: (parsed from: `/usr/share/doc/libjemalloc1/copyright`)
-
-- `BSD-3-Clause`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris jemalloc=3.6.0-3
-'http://deb.debian.org/debian/pool/main/j/jemalloc/jemalloc_3.6.0-3.dsc' jemalloc_3.6.0-3.dsc 1379 SHA256:e23bcf280dab72eb0ff605363401d909fb8617fe3dd1211e89cb7062fe85523c
-'http://deb.debian.org/debian/pool/main/j/jemalloc/jemalloc_3.6.0.orig.tar.bz2' jemalloc_3.6.0.orig.tar.bz2 338964 SHA256:e16c2159dd3c81ca2dc3b5c9ef0d43e1f2f45b04548f42db12e7c12d7bdf84fe
-'http://deb.debian.org/debian/pool/main/j/jemalloc/jemalloc_3.6.0-3.debian.tar.xz' jemalloc_3.6.0-3.debian.tar.xz 10328 SHA256:a5203e66f100894c95498519dd4720211235cacf0d9a5479da8d05f1639ee676
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/jemalloc/3.6.0-3/
-- https://sources.debian.net/src/jemalloc/3.6.0-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `keyutils=1.5.9-5`
 
@@ -2231,6 +2206,33 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libtasn1-6/4.2-3+deb8u3/
 - https://sources.debian.net/src/libtasn1-6/4.2-3+deb8u3/debian/copyright (for direct copyright/license information)
 
+### `dpkg` source package: `libterm-readkey-perl=2.32-1`
+
+Binary Packages:
+
+- `libterm-readkey-perl=2.32-1+b1`
+
+Licenses: (parsed from: `/usr/share/doc/libterm-readkey-perl/copyright`)
+
+- `Artistic`
+- `GPL-1`
+- `GPL-1+`
+- `termreadkey`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libterm-readkey-perl=2.32-1
+'http://deb.debian.org/debian/pool/main/libt/libterm-readkey-perl/libterm-readkey-perl_2.32-1.dsc' libterm-readkey-perl_2.32-1.dsc 2122 SHA256:b7ad189c8726dc0d7eb4c249020135f858aeb6f54e38c2b25b0b2685c49d6f94
+'http://deb.debian.org/debian/pool/main/libt/libterm-readkey-perl/libterm-readkey-perl_2.32.orig.tar.gz' libterm-readkey-perl_2.32.orig.tar.gz 81547 SHA256:58b90e8908e686d03a161590c1dd870e8a1b005715ca8e6d5080a32459e1e9f8
+'http://deb.debian.org/debian/pool/main/libt/libterm-readkey-perl/libterm-readkey-perl_2.32-1.debian.tar.xz' libterm-readkey-perl_2.32-1.debian.tar.xz 4192 SHA256:7d33f0b6a53340f85e6a195bad3f15fe88b5b8846479a501e4e8c6dfb0f3eadf
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libterm-readkey-perl/2.32-1/
+- https://sources.debian.net/src/libterm-readkey-perl/2.32-1/debian/copyright (for direct copyright/license information)
+
 ### `dpkg` source package: `libterm-ui-perl=0.42-1`
 
 Binary Packages:
@@ -2489,31 +2491,26 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/lvm2/2.02.111-2.2+deb8u1/
 - https://sources.debian.net/src/lvm2/2.02.111-2.2+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `mariadb-10.1=10.1.24+maria-1~jessie`
+### `dpkg` source package: `mariadb-10.2=10.2.6+maria~jessie`
 
 Binary Packages:
 
-- `libmariadbclient18=10.1.24+maria-1~jessie`
-- `libmysqlclient18=10.1.24+maria-1~jessie`
-- `mariadb-client-10.1=10.1.24+maria-1~jessie`
-- `mariadb-client-core-10.1=10.1.24+maria-1~jessie`
-- `mariadb-common=10.1.24+maria-1~jessie`
-- `mariadb-server=10.1.24+maria-1~jessie`
-- `mariadb-server-10.1=10.1.24+maria-1~jessie`
-- `mariadb-server-core-10.1=10.1.24+maria-1~jessie`
-- `mysql-common=10.1.24+maria-1~jessie`
+- `libmariadb3=10.2.6+maria~jessie`
+- `libmysqlclient18=10.2.6+maria~jessie`
+- `mariadb-client-10.2=10.2.6+maria~jessie`
+- `mariadb-client-core-10.2=10.2.6+maria~jessie`
+- `mariadb-common=10.2.6+maria~jessie`
+- `mariadb-server=10.2.6+maria~jessie`
+- `mariadb-server-10.2=10.2.6+maria~jessie`
+- `mariadb-server-core-10.2=10.2.6+maria~jessie`
+- `mysql-common=10.2.6+maria~jessie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mariadb-10.1=10.1.24+maria-1~jessie
-'http://ftp.osuosl.org/pub/mariadb/repo/10.1/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.24+maria-1~jessie.dsc' mariadb-10.1_10.1.24+maria-1~jessie.dsc 2595 SHA256:a5e463d308bf42237ee4d626b0e17397f25a1e37837ff5e4fb0b0cee29a5f42c
-'http://ftp.osuosl.org/pub/mariadb/repo/10.1/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.24+maria-1~jessie.tar.gz' mariadb-10.1_10.1.24+maria-1~jessie.tar.gz 62184968 SHA256:ec112b78b6e62eeb252d0bf12490f4caf2eeab4290e09e2a722a67818a267f8d
-```
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
