@@ -1348,19 +1348,8 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.6.3-2+deb8u3
-'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u3.dsc' libgcrypt20_1.6.3-2+deb8u3.dsc 2742 SHA256:29dca39e30a591cb6d730bc0e53be91b2044502a12426ff6559fcbc169f2bf74
-'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3.orig.tar.bz2' libgcrypt20_1.6.3.orig.tar.bz2 2494052 SHA256:41b4917b93ae34c6a0e2127378d7a4d66d805a2a86a09911d4f9bd871db7025f
-'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u3.debian.tar.xz' libgcrypt20_1.6.3-2+deb8u3.debian.tar.xz 31808 SHA256:c242906f39b779c2e53739fe82c64ef050f3b80463276af1dd1dd51b8604eac8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u3/
-- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.17-3`
 
