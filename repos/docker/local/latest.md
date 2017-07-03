@@ -1,15 +1,15 @@
-# `docker:17.05.0-ce`
+# `docker:17.06.0-ce`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9f8e0f96efdf58dd134734702244bba2632e88207e3d2b6eacc5fb9f59b0b41c`
-- Created: `2017-06-19T18:27:58.220265836Z`
-- Virtual Size: ~ 94.01 Mb  
+- Image ID: `sha256:192e3edb771f334fbc2e1941b22a0b3ecd8545a86744ce8fc2fe98a3d5774273`
+- Created: `2017-06-29T21:35:02.392319419Z`
+- Virtual Size: ~ 97.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_CHANNEL=edge`
-  - `DOCKER_VERSION=17.05.0-ce`
+  - `DOCKER_CHANNEL=stable`
+  - `DOCKER_VERSION=17.06.0-ce`
