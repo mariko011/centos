@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:59a072063e29a58ae1d314ee9cf48156f8f1bec3743cd4779962be7589748fdc`
-- Created: `2017-06-02T19:58:21.660103322Z`
-- Virtual Size: ~ 529.93 Mb  
+- Image ID: `sha256:496279b214c012915ba91904b16e59f994eb7beb3dbfc93076b65c3fb5662a69`
+- Created: `2017-06-21T03:17:31.780818383Z`
+- Virtual Size: ~ 529.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -759,21 +759,27 @@ $ apt-get source -qq --print-uris e2fsprogs=1.42.9-3ubuntu1.3
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.42.9-3ubuntu1.3.debian.tar.gz' e2fsprogs_1.42.9-3ubuntu1.3.debian.tar.gz 137885 SHA256:541cf9e092ef6d6e45fddd5fa0b44903f597ec045cbb1358db109e994e97fceb
 ```
 
-### `dpkg` source package: `eglibc=2.19-0ubuntu6.11`
+### `dpkg` source package: `eglibc=2.19-0ubuntu6.13`
 
 Binary Packages:
 
-- `libc-bin=2.19-0ubuntu6.11`
-- `libc6:amd64=2.19-0ubuntu6.11`
-- `multiarch-support=2.19-0ubuntu6.11`
+- `libc-bin=2.19-0ubuntu6.13`
+- `libc6:amd64=2.19-0ubuntu6.13`
+- `multiarch-support=2.19-0ubuntu6.13`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/multiarch-support/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris eglibc=2.19-0ubuntu6.13
+'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19-0ubuntu6.13.dsc' eglibc_2.19-0ubuntu6.13.dsc 5814 SHA256:f4c36f5d1d4b411002b17322a8d7e75fc9cfb427a69b977e6a7f8e0bc9fd100f
+'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19.orig.tar.xz' eglibc_2.19.orig.tar.xz 12610800 SHA256:e5d30be72b702dffae527779af1be755f0dfbf13c171998a04f7265cd4da131f
+'http://archive.ubuntu.com/ubuntu/pool/main/e/eglibc/eglibc_2.19-0ubuntu6.13.debian.tar.xz' eglibc_2.19-0ubuntu6.13.debian.tar.xz 1046856 SHA256:03856ac5cba476c541a789a22f54d165d8a864070cc1d6161c5dd0f4bfef6271
+```
 
 ### `dpkg` source package: `eject=2.1.5+deb1+cvs20081104-13.1ubuntu0.14.04.1`
 
@@ -1179,12 +1185,12 @@ $ apt-get source -qq --print-uris gnupg=1.4.16-1ubuntu2.4
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg/gnupg_1.4.16-1ubuntu2.4.debian.tar.gz' gnupg_1.4.16-1ubuntu2.4.debian.tar.gz 56430 SHA256:dbc2738c30cdcedb459e0ff0a9d1ec42e7b238b96c4a9326cae84a0afdae6441
 ```
 
-### `dpkg` source package: `gnutls26=2.12.23-12ubuntu2.7`
+### `dpkg` source package: `gnutls26=2.12.23-12ubuntu2.8`
 
 Binary Packages:
 
-- `libgnutls-openssl27:amd64=2.12.23-12ubuntu2.7`
-- `libgnutls26:amd64=2.12.23-12ubuntu2.7`
+- `libgnutls-openssl27:amd64=2.12.23-12ubuntu2.8`
+- `libgnutls26:amd64=2.12.23-12ubuntu2.8`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls-openssl27/copyright`, `/usr/share/doc/libgnutls26/copyright`)
 
@@ -1194,8 +1200,14 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls-openssl27/copyright`, `/usr/sh
 - `LGPL-2.1`
 - `The main library is licensed under GNU Lesser General Public`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnutls26=2.12.23-12ubuntu2.8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23-12ubuntu2.8.dsc' gnutls26_2.12.23-12ubuntu2.8.dsc 2722 SHA256:94af35cea3d6dd80c9fbdf5437241ba9157dc2599e1d02ecfd4eaab3dc5dbfac
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23.orig.tar.bz2' gnutls26_2.12.23.orig.tar.bz2 7279415 SHA256:dfa67a7e40727eb0913e75f3c44911d5d8cd58d1ead5acfe73dd933fc0d17ed2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls26/gnutls26_2.12.23-12ubuntu2.8.debian.tar.gz' gnutls26_2.12.23-12ubuntu2.8.debian.tar.gz 46239 SHA256:ef65f4e762e93da0340f4977fabf264601fb55eeb8aa13c718ccc02751547c61
+```
 
 ### `dpkg` source package: `grep=2.16-1`
 
@@ -2444,11 +2456,11 @@ Binary Packages:
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `libtasn1-6=3.4-3ubuntu0.4`
+### `dpkg` source package: `libtasn1-6=3.4-3ubuntu0.5`
 
 Binary Packages:
 
-- `libtasn1-6:amd64=3.4-3ubuntu0.4`
+- `libtasn1-6:amd64=3.4-3ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 
@@ -2457,8 +2469,14 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libtasn1-6=3.4-3ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_3.4-3ubuntu0.5.dsc' libtasn1-6_3.4-3ubuntu0.5.dsc 2477 SHA256:d03e9b44cadd59ada08c0e57af62efef25f380f84f92a718fece65cf95deb5b0
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_3.4.orig.tar.gz' libtasn1-6_3.4.orig.tar.gz 1844115 SHA256:f353507a458fe2372b791016a056c95946eebfc7256b49013851f134a5e6acc8
+'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtasn1-6/libtasn1-6_3.4-3ubuntu0.5.debian.tar.gz' libtasn1-6_3.4-3ubuntu0.5.debian.tar.gz 69101 SHA256:5c87d04084f98b7fecebe5d013a2035c423f316f44e8d33b9c17785d7b47fca4
+```
 
 ### `dpkg` source package: `libterm-ui-perl=0.42-1`
 
@@ -3075,11 +3093,11 @@ $ apt-get source -qq --print-uris lockfile-progs=0.1.17
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lockfile-progs/lockfile-progs_0.1.17.tar.gz' lockfile-progs_0.1.17.tar.gz 14833 SHA256:03fb05d25499532f497775b1747b61fa6beebf12d3bcc951e125349ae166c511
 ```
 
-### `dpkg` source package: `logrotate=3.8.7-1ubuntu1`
+### `dpkg` source package: `logrotate=3.8.7-1ubuntu1.1`
 
 Binary Packages:
 
-- `logrotate=3.8.7-1ubuntu1`
+- `logrotate=3.8.7-1ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/logrotate/copyright`)
 
@@ -3088,10 +3106,10 @@ Licenses: (parsed from: `/usr/share/doc/logrotate/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris logrotate=3.8.7-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-1ubuntu1.dsc' logrotate_3.8.7-1ubuntu1.dsc 1936 SHA256:76b05cae03b33b9c3d385077680510c17015f637d7be1f1c1b00b9faaa42e8d1
+$ apt-get source -qq --print-uris logrotate=3.8.7-1ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-1ubuntu1.1.dsc' logrotate_3.8.7-1ubuntu1.1.dsc 1932 SHA256:05e557d77dcd60f06e3debf7a488ef0d4617dafad2d6729c08606ac60a03a54a
 'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7.orig.tar.gz' logrotate_3.8.7.orig.tar.gz 58898 SHA256:f6ba691f40e30e640efa2752c1f9499a3f9738257660994de70a45fe00d12b64
-'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-1ubuntu1.debian.tar.gz' logrotate_3.8.7-1ubuntu1.debian.tar.gz 23842 SHA256:d8f09d0bcf0ec2d334acb40f7d158a5f9df2a536f38586a58d253d79209a623f
+'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-1ubuntu1.1.debian.tar.xz' logrotate_3.8.7-1ubuntu1.1.debian.tar.xz 22632 SHA256:cde21659a288e14a31c761df6ebaf8aaed11c653b4ed21b658e35a05b6cc319c
 ```
 
 ### `dpkg` source package: `lsb=4.1+Debian11ubuntu6.2`
@@ -4797,11 +4815,11 @@ $ apt-get source -qq --print-uris zlib=1:1.2.8.dfsg-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/z/zlib/zlib_1.2.8.dfsg-1ubuntu1.debian.tar.gz' zlib_1.2.8.dfsg-1ubuntu1.debian.tar.gz 17369 SHA256:89aea2797e44b85c9a87066255eed3695f0b3ba06b70a560ca38f686995734f9
 ```
 
-### `dpkg` source package: `zziplib=0.13.62-2`
+### `dpkg` source package: `zziplib=0.13.62-2ubuntu0.1`
 
 Binary Packages:
 
-- `libzzip-0-13:amd64=0.13.62-2`
+- `libzzip-0-13:amd64=0.13.62-2ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libzzip-0-13/copyright`)
 
@@ -4810,8 +4828,8 @@ Licenses: (parsed from: `/usr/share/doc/libzzip-0-13/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris zziplib=0.13.62-2
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zziplib/zziplib_0.13.62-2.dsc' zziplib_0.13.62-2.dsc 1368 SHA256:13f4c81769f68ae86ece0e8bc1076058479d1bf76e595c368f4a1d52a982cc14
+$ apt-get source -qq --print-uris zziplib=0.13.62-2ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zziplib/zziplib_0.13.62-2ubuntu0.1.dsc' zziplib_0.13.62-2ubuntu0.1.dsc 2106 SHA256:65cff1e5beb94c505c93266ef8a6c3612e2863293e21c3a7249771d3a24a3b9e
 'http://archive.ubuntu.com/ubuntu/pool/main/z/zziplib/zziplib_0.13.62.orig.tar.bz2' zziplib_0.13.62.orig.tar.bz2 685770 SHA256:a1b8033f1a1fd6385f4820b01ee32d8eca818409235d22caf5119e0078c7525b
-'http://archive.ubuntu.com/ubuntu/pool/main/z/zziplib/zziplib_0.13.62-2.debian.tar.xz' zziplib_0.13.62-2.debian.tar.xz 10900 SHA256:2fb8c88b0debceca4bf9e1c8975fe223352400aaf489ef4221691760de6b3aa2
+'http://archive.ubuntu.com/ubuntu/pool/main/z/zziplib/zziplib_0.13.62-2ubuntu0.1.debian.tar.gz' zziplib_0.13.62-2ubuntu0.1.debian.tar.gz 14803 SHA256:609e2ac945a1aaf68f30202607d9281d79c7a73a756cee0d561338e26388568c
 ```
