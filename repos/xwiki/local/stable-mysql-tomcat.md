@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4c233ce40fc20c0d4693ff12859b050fea7cb85a79e378cd36591169acc0adec`
-- Created: `2017-06-23T13:45:21.870122537Z`
+- Image ID: `sha256:465476a2c7f533cf21c8779d742b1f891f290a7a774610801d2512d96526d534`
+- Created: `2017-06-30T23:04:55.137085126Z`
 - Virtual Size: ~ 1.14 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,12 +22,12 @@
   - `OPENSSL_VERSION=1.1.0f-3`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.5.15`
-  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.15/bin/apache-tomcat-8.5.15.tar.gz`
-  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.5.15/bin/apache-tomcat-8.5.15.tar.gz.asc`
-  - `XWIKI_VERSION=9.4`
-  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/enterprise/xwiki-enterprise-web/9.4`
-  - `XWIKI_DOWNLOAD_SHA256=0c50d7b261f72f582b94171b80b4711def614845663d0633b17c870b8c84d0fb`
+  - `TOMCAT_VERSION=8.5.16`
+  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.16/bin/apache-tomcat-8.5.16.tar.gz`
+  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.5.16/bin/apache-tomcat-8.5.16.tar.gz.asc`
+  - `XWIKI_VERSION=9.5.1`
+  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/9.5.1`
+  - `XWIKI_DOWNLOAD_SHA256=0636314e46358bc59a2f1d80bae1958cd93db1ed5cd61ae857c6dd6e99e34fac`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2437,19 +2437,8 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.6.3-2+deb8u3
-'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u3.dsc' libgcrypt20_1.6.3-2+deb8u3.dsc 2742 SHA256:29dca39e30a591cb6d730bc0e53be91b2044502a12426ff6559fcbc169f2bf74
-'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3.orig.tar.bz2' libgcrypt20_1.6.3.orig.tar.bz2 2494052 SHA256:41b4917b93ae34c6a0e2127378d7a4d66d805a2a86a09911d4f9bd871db7025f
-'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u3.debian.tar.xz' libgcrypt20_1.6.3-2+deb8u3.debian.tar.xz 31808 SHA256:c242906f39b779c2e53739fe82c64ef050f3b80463276af1dd1dd51b8604eac8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u3/
-- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgltf=0.0.2-2`
 

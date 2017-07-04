@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2dd8030ec2118da7d8aa0f0198cd81d9547f021d0223fe22e1e1ac2419522607`
-- Created: `2017-06-23T13:47:46.796749043Z`
+- Image ID: `sha256:ce5ad9554d1b8e8192f95b08ead93d07eaa4db3f7670aa8d214ea531dac1c4ca`
+- Created: `2017-06-30T23:07:39.617657229Z`
 - Virtual Size: ~ 1.13 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,9 +22,9 @@
   - `OPENSSL_VERSION=1.1.0f-3`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.5.15`
-  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.15/bin/apache-tomcat-8.5.15.tar.gz`
-  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.5.15/bin/apache-tomcat-8.5.15.tar.gz.asc`
+  - `TOMCAT_VERSION=8.5.16`
+  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.16/bin/apache-tomcat-8.5.16.tar.gz`
+  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.5.16/bin/apache-tomcat-8.5.16.tar.gz.asc`
   - `XWIKI_VERSION=8.4.5`
   - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/enterprise/xwiki-enterprise-web/8.4.5`
   - `XWIKI_DOWNLOAD_SHA256=52ed122c44984748a729a784c94cb70ccf0d2fa34c2340d0fd45c75deb3b0bc9`
@@ -2437,19 +2437,8 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.6.3-2+deb8u3
-'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u3.dsc' libgcrypt20_1.6.3-2+deb8u3.dsc 2742 SHA256:29dca39e30a591cb6d730bc0e53be91b2044502a12426ff6559fcbc169f2bf74
-'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3.orig.tar.bz2' libgcrypt20_1.6.3.orig.tar.bz2 2494052 SHA256:41b4917b93ae34c6a0e2127378d7a4d66d805a2a86a09911d4f9bd871db7025f
-'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u3.debian.tar.xz' libgcrypt20_1.6.3-2+deb8u3.debian.tar.xz 31808 SHA256:c242906f39b779c2e53739fe82c64ef050f3b80463276af1dd1dd51b8604eac8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u3/
-- https://sources.debian.net/src/libgcrypt20/1.6.3-2+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgltf=0.0.2-2`
 
