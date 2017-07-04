@@ -63,13 +63,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4.5
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.4.5.dsc' apt_1.4.5.dsc 2549 SHA256:6e0b983c3ace5c458c66e46e92da9556fc1a16300100d88b037ac6a22eacee49
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.4.5.tar.xz' apt_1.4.5.tar.xz 2078276 SHA256:8aa9afbd224b0b001f86eaea2262ce12a787db9d87bbb74824c0dd569dfa6c07
-```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
@@ -104,14 +99,8 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris audit=1:2.6.6-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.6.6-1ubuntu2.dsc' audit_2.6.6-1ubuntu2.dsc 2742 SHA256:d93b1f6ed5055ffda8641d3b1b9eb4f3a823e03698571e6a88bbfba087f84e60
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.6.6.orig.tar.gz' audit_2.6.6.orig.tar.gz 1080510 SHA256:61d8dc61e882fdbb75153a1316817a8f8c8fca25de588256edd81fbb03e7994b
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.6.6-1ubuntu2.debian.tar.xz' audit_2.6.6-1ubuntu2.debian.tar.xz 19916 SHA256:2114ba02f1eeb971d0fe637556c2d453b986f2722cdec68b770b0ceb1bd118c1
-```
 
 ### `dpkg` source package: `base-files=9.6ubuntu99`
 
@@ -123,13 +112,8 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-files=9.6ubuntu99
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.6ubuntu99.dsc' base-files_9.6ubuntu99.dsc 1580 SHA256:22f72e155c00ade2cb8badbaace0de4a4d689695e4251a2e74b1f9f1a5acca4a
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.6ubuntu99.tar.xz' base-files_9.6ubuntu99.tar.xz 65732 SHA256:b8e50fed79a42716532bb66ff10b82d5f21646e841555f3feaf17eb2b356a545
-```
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -602,14 +586,8 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 - `GPL-2.1+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgpg-error=1.26-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.26-2.dsc' libgpg-error_1.26-2.dsc 2454 SHA256:ea53df72d922f224cf0bb69df5a20100a2a5826e890741277425269d70eade20
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.26.orig.tar.bz2' libgpg-error_1.26.orig.tar.bz2 798096 SHA256:4c4bcbc90116932e3acd37b37812d8653b1b189c1904985898e860af818aee69
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.26-2.debian.tar.xz' libgpg-error_1.26-2.debian.tar.xz 12740 SHA256:20a73d5bcc4f523ae16b9279698c01b37dd5cffd2b7dc317c65923aa115ca46c
-```
 
 ### `dpkg` source package: `libksba=1.3.5-2`
 
