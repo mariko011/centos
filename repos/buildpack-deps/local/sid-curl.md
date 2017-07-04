@@ -73,18 +73,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4.6
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.6.dsc' apt_1.4.6.dsc 2549 SHA256:6ec5f9ab39da1a60d425235117b3275c088d722c6ce0ce7d3e90b81e19ebc4df
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.6.tar.xz' apt_1.4.6.tar.xz 2078376 SHA256:7c202b0ecf3a574ca103e24c6a7245761f38d3d3b25f45f38b0d29f9ecde70e9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.4.6/
-- https://sources.debian.net/src/apt/1.4.6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -410,18 +400,8 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.61
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.61.dsc' debconf_1.5.61.dsc 1932 SHA256:a350712c205bf21f045c80f4a64e24cef27e35e38fd51080c79076178c63ef1b
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.61.tar.xz' debconf_1.5.61.tar.xz 570372 SHA256:7622a3fe231b46e6255a83b3d153159c10be6bc17b2152ab3937b8928bf87e10
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/debconf/1.5.61/
-- https://sources.debian.net/src/debconf/1.5.61/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `debian-archive-keyring=2017.5`
 

@@ -121,18 +121,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4.6
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.6.dsc' apt_1.4.6.dsc 2549 SHA256:6ec5f9ab39da1a60d425235117b3275c088d722c6ce0ce7d3e90b81e19ebc4df
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.6.tar.xz' apt_1.4.6.tar.xz 2078376 SHA256:7c202b0ecf3a574ca103e24c6a7245761f38d3d3b25f45f38b0d29f9ecde70e9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.4.6/
-- https://sources.debian.net/src/apt/1.4.6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `atk1.0=2.22.0-1`
 
@@ -775,18 +765,8 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.61
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.61.dsc' debconf_1.5.61.dsc 1932 SHA256:a350712c205bf21f045c80f4a64e24cef27e35e38fd51080c79076178c63ef1b
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.61.tar.xz' debconf_1.5.61.tar.xz 570372 SHA256:7622a3fe231b46e6255a83b3d153159c10be6bc17b2152ab3937b8928bf87e10
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/debconf/1.5.61/
-- https://sources.debian.net/src/debconf/1.5.61/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `debian-archive-keyring=2017.5`
 
@@ -1280,18 +1260,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.168
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.168.dsc' gcc-defaults_1.168.dsc 13173 SHA256:05a2a34278108aec64227a63cb61d9562bca9380f8539562e7e42023dca2d1c8
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.168.tar.gz' gcc-defaults_1.168.tar.gz 69321 SHA256:4ecc5edafbf47d43c8b872e36c9a87c95691bed94eaa6e8f55adfc8fd64e5587
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-defaults/1.168/
-- https://sources.debian.net/src/gcc-defaults/1.168/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gdbm=1.8.3-14`
 
@@ -1360,19 +1330,8 @@ Licenses: (parsed from: `/usr/share/doc/geoip-bin/copyright`, `/usr/share/doc/li
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris geoip=1.6.9-4
-'http://deb.debian.org/debian/pool/main/g/geoip/geoip_1.6.9-4.dsc' geoip_1.6.9-4.dsc 1885 SHA256:79893cc7759efe042ab20af420d784422cea6f38d1123d8cff69b2a6d0192a02
-'http://deb.debian.org/debian/pool/main/g/geoip/geoip_1.6.9.orig.tar.gz' geoip_1.6.9.orig.tar.gz 158576 SHA256:05468adbb6bdbddc588ee6f0df990f47b1b24d278519c35d59f7a8058a2a9825
-'http://deb.debian.org/debian/pool/main/g/geoip/geoip_1.6.9-4.debian.tar.xz' geoip_1.6.9-4.debian.tar.xz 22256 SHA256:6bd311181cd7ad44ea78c9bce4d93e67f6f6aca07de93c1aeefcf44ed928d015
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/geoip/1.6.9-4/
-- https://sources.debian.net/src/geoip/1.6.9-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `git=1:2.11.0-4`
 
@@ -2309,19 +2268,8 @@ Licenses: (parsed from: `/usr/share/doc/libcroco3/copyright`)
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libcroco=0.6.11-3
-'http://deb.debian.org/debian/pool/main/libc/libcroco/libcroco_0.6.11-3.dsc' libcroco_0.6.11-3.dsc 2264 SHA256:6f9a86ee343586a7e0405cbfce42e8dacfb81826aaa68372545809338f71da35
-'http://deb.debian.org/debian/pool/main/libc/libcroco/libcroco_0.6.11.orig.tar.xz' libcroco_0.6.11.orig.tar.xz 477312 SHA256:132b528a948586b0dfa05d7e9e059901bca5a3be675b6071a90a90b81ae5a056
-'http://deb.debian.org/debian/pool/main/libc/libcroco/libcroco_0.6.11-3.debian.tar.xz' libcroco_0.6.11-3.debian.tar.xz 7960 SHA256:dadcd41e83ccc4e22f1a6756c35009d4a75553745588d62129461522bd850b02
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libcroco/0.6.11-3/
-- https://sources.debian.net/src/libcroco/0.6.11-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libdatrie=0.2.10-4`
 
@@ -2932,19 +2880,8 @@ Licenses: (parsed from: `/usr/share/doc/libsigsegv2/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libsigsegv=2.10-5
-'http://deb.debian.org/debian/pool/main/libs/libsigsegv/libsigsegv_2.10-5.dsc' libsigsegv_2.10-5.dsc 2176 SHA256:92d54f05c061e7a3fb58e6a697b249014c6bf3e9d9364fce8d31e39c9e978d94
-'http://deb.debian.org/debian/pool/main/libs/libsigsegv/libsigsegv_2.10.orig.tar.gz' libsigsegv_2.10.orig.tar.gz 402279 SHA256:8460a4a3dd4954c3d96d7a4f5dd5bc4d9b76f5754196aa245287553b26d2199a
-'http://deb.debian.org/debian/pool/main/libs/libsigsegv/libsigsegv_2.10-5.debian.tar.xz' libsigsegv_2.10-5.debian.tar.xz 10196 SHA256:91c32dce30bee0e8a27f6a546338253662551b29ec4b15583217b9408e057ece
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libsigsegv/2.10-5/
-- https://sources.debian.net/src/libsigsegv/2.10-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libsm=2:1.2.2-1`
 
@@ -5007,19 +4944,8 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`, `/usr/share/doc/lib
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.8-2
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8-2.dsc' tiff_4.0.8-2.dsc 2157 SHA256:15ca8c6ade70db7ab3baf2a26cf33a13732617d3cd68dc7f78d0bf12c812449f
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8.orig.tar.gz' tiff_4.0.8.orig.tar.gz 2065574 SHA256:59d7a5a8ccd92059913f246877db95a2918e6c04fb9d43fd74e5c3390dac2910
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8-2.debian.tar.xz' tiff_4.0.8-2.debian.tar.xz 19188 SHA256:cfa2a2afd36a139993daf1b321dd614052f412ba239251b91474e764b78152eb
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff/4.0.8-2/
-- https://sources.debian.net/src/tiff/4.0.8-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tzdata=2017b-2`
 
