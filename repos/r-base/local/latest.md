@@ -364,18 +364,8 @@ Licenses: (parsed from: `/usr/share/doc/cdbs/copyright`)
 - `GPL-3+`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cdbs=0.4.151
-'http://deb.debian.org/debian/pool/main/c/cdbs/cdbs_0.4.151.dsc' cdbs_0.4.151.dsc 1878 SHA256:6a1f1ed1a6afc35987357e4bfc58e30faa63d6d4dd672dc7658aa3414029b350
-'http://deb.debian.org/debian/pool/main/c/cdbs/cdbs_0.4.151.tar.xz' cdbs_0.4.151.tar.xz 204628 SHA256:4f520a6cff64c524153a84ef1b113eda1c37df593ca12bd77cd7888b2ea7c7c6
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cdbs/0.4.151/
-- https://sources.debian.net/src/cdbs/0.4.151/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cdebconf=0.227`
 
@@ -803,15 +793,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris findutils=4.6.0+git+20161106-2
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20161106-2.dsc' findutils_4.6.0+git+20161106-2.dsc 2220 SHA256:f92d95f03e56357bb72e897f4d8b363995f280cfdf6dedfabdec3164f3a7651a
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20161106.orig.tar.xz' findutils_4.6.0+git+20161106.orig.tar.xz 1828956 SHA256:96a3aa120d7300863f39fe56ccb6674d8cde4730b485f4f81083c1a6d33097e3
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20161106-2.debian.tar.xz' findutils_4.6.0+git+20161106-2.debian.tar.xz 26812 SHA256:aca885ac24582f5c393dbbfa362264712ee4922da0ff7aa1fc602e629c89b71b
+'http://http.debian.net/debian/pool/main/f/findutils/findutils_4.6.0+git+20161106-2.dsc' findutils_4.6.0+git+20161106-2.dsc 2220 SHA256:f92d95f03e56357bb72e897f4d8b363995f280cfdf6dedfabdec3164f3a7651a
+'http://http.debian.net/debian/pool/main/f/findutils/findutils_4.6.0+git+20161106.orig.tar.xz' findutils_4.6.0+git+20161106.orig.tar.xz 1828956 SHA256:96a3aa120d7300863f39fe56ccb6674d8cde4730b485f4f81083c1a6d33097e3
+'http://http.debian.net/debian/pool/main/f/findutils/findutils_4.6.0+git+20161106-2.debian.tar.xz' findutils_4.6.0+git+20161106-2.debian.tar.xz 26812 SHA256:aca885ac24582f5c393dbbfa362264712ee4922da0ff7aa1fc602e629c89b71b
 ```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/findutils/4.6.0+git+20161106-2/
-- https://sources.debian.net/src/findutils/4.6.0+git+20161106-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `fontconfig=2.11.0-6.7`
 
@@ -2814,19 +2799,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.44+dfsg-5
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.44+dfsg-5.dsc' openldap_2.4.44+dfsg-5.dsc 2946 SHA256:852cf740c7de619527923f49f2ab095278ebf1fbb0b28df1529ea8e6aa05d99a
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.44+dfsg.orig.tar.gz' openldap_2.4.44+dfsg.orig.tar.gz 4826590 SHA256:d5187c229bec163c5d97845846e1b87917755f85b04f444c08836384f4bd7ffe
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.44+dfsg-5.debian.tar.xz' openldap_2.4.44+dfsg-5.debian.tar.xz 163740 SHA256:d7c6de5c192341e43958b9f899fab68198c6592782980c78cd3b15267e20ef34
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openldap/2.4.44+dfsg-5/
-- https://sources.debian.net/src/openldap/2.4.44+dfsg-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssl1.0=1.0.2l-2`
 
@@ -3538,19 +3512,8 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.8-2
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8-2.dsc' tiff_4.0.8-2.dsc 2157 SHA256:15ca8c6ade70db7ab3baf2a26cf33a13732617d3cd68dc7f78d0bf12c812449f
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8.orig.tar.gz' tiff_4.0.8.orig.tar.gz 2065574 SHA256:59d7a5a8ccd92059913f246877db95a2918e6c04fb9d43fd74e5c3390dac2910
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8-2.debian.tar.xz' tiff_4.0.8-2.debian.tar.xz 19188 SHA256:cfa2a2afd36a139993daf1b321dd614052f412ba239251b91474e764b78152eb
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff/4.0.8-2/
-- https://sources.debian.net/src/tiff/4.0.8-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tk8.6=8.6.6-1`
 
