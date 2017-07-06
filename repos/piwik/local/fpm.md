@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:99227515a499b74e24a3ba3c609b99af4fe5bedf2658ace78c0605aef34a4e54`
-- Created: `2017-06-23T04:06:48.756621184Z`
-- Virtual Size: ~ 451.08 Mb  
+- Image ID: `sha256:77cde4084b43b914b02a7db88b1d1242e4a8e69d3499bc6c6548690a992934de`
+- Created: `2017-07-06T04:33:42.73780239Z`
+- Virtual Size: ~ 451.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,7 +22,7 @@
   - `PHP_URL=https://secure.php.net/get/php-5.6.30.tar.xz/from/this/mirror`
   - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.30.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805`
-  - `PHP_MD5=68753955a8964ae49064c6424f81eb3e`
+  - `PHP_MD5=`
   - `PIWIK_VERSION=3.0.4`
 
 ## `dpkg` (`.deb`-based packages)
