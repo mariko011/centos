@@ -1,10 +1,10 @@
-# `sentry:8.17.0-onbuild`
+# `sentry:8.18.0-onbuild`
 
 ## Docker Metadata
 
-- Image ID: `sha256:67a3b4318eaf287b0094106d6658f273f344d89b8f4a116651fede0d53f570cc`
-- Created: `2017-06-23T10:55:47.298570743Z`
-- Virtual Size: ~ 551.79 Mb  
+- Image ID: `sha256:aaecc94f9febfe17a26bebc14c16027fb7e448c2d7005252223ea45800a43807`
+- Created: `2017-07-06T00:32:25.952835858Z`
+- Virtual Size: ~ 555.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -19,7 +19,7 @@
   - `PIP_DISABLE_PIP_VERSION_CHECK=on`
   - `GOSU_VERSION=1.10`
   - `TINI_VERSION=v0.14.0`
-  - `SENTRY_VERSION=8.17.0`
+  - `SENTRY_VERSION=8.18.0`
   - `SENTRY_CONF=/etc/sentry`
   - `SENTRY_FILESTORE_DIR=/var/lib/sentry/files`
   - `PYTHONPATH=/usr/src/sentry`
