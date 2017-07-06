@@ -4607,19 +4607,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.3-12.3+deb8u3
-'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u3.dsc' tiff_4.0.3-12.3+deb8u3.dsc 2240 SHA256:b28cf94a08ce2b4412818fca5b2cf76eccc6c5be9959dbe3e0cb8813c86ec19e
-'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
-'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u3.debian.tar.xz' tiff_4.0.3-12.3+deb8u3.debian.tar.xz 54732 SHA256:e40cde6d95c4243c73f6d8a927f4c32cf31cbcca9a3614280822811d52576fe8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u3/
-- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tzdata=2017b-0+deb8u1`
 
