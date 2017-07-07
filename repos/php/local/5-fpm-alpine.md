@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ff14f468ed3b958dfed6fb3fd991a1bca93af0fdc06a1d42b9dcacc775122527`
-- Created: `2017-06-28T20:39:09.001134752Z`
+- Image ID: `sha256:18bf4f613816aa67ee633fec6851873e9f6912f8e9bafa6c5f4ce4b477575a0f`
+- Created: `2017-07-04T05:11:07.31713668Z`
 - Virtual Size: ~ 53.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,4 +22,4 @@
   - `PHP_URL=https://secure.php.net/get/php-5.6.30.tar.xz/from/this/mirror`
   - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.30.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805`
-  - `PHP_MD5=68753955a8964ae49064c6424f81eb3e`
+  - `PHP_MD5=`
