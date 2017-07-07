@@ -1,7 +1,7 @@
 ## `buildpack-deps:xenial-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:2a024a67ef7c4865099f2731eda439224acb2f3059eeb713d79adc3e82140d1c
+$ docker pull buildpack-deps@sha256:6129503c34597010e5122bab62cc8db811973dde64a65ff6dab0c9629d0fabf1
 ```
 
 -	Platforms:
@@ -13,7 +13,7 @@ $ docker pull buildpack-deps@sha256:2a024a67ef7c4865099f2731eda439224acb2f3059ee
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **54.5 MB (54463872 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1747dc3e740ee7a9c152d22c1b2ccc061c8c3a7f505ffb99bb4ac6b620faf9fe`
+-	Image ID: `sha256:dad601989a6d0e8828ed91e41c3425436b4473d28fb630a90bf2a160e7a3741b`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -31,6 +31,8 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Wed, 21 Jun 2017 00:18:13 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Fri, 07 Jul 2017 02:19:24 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
 -	Layers:

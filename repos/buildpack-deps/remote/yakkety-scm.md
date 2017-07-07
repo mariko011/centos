@@ -1,7 +1,7 @@
 ## `buildpack-deps:yakkety-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:092e36bd8f33b1da08f3c319b6922e548dfbb5e27eb01a203c228ed2478b1f89
+$ docker pull buildpack-deps@sha256:391d12d91790d8d8b410eb810259721def530dadb5e4aedfeee78b8de25acaab
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull buildpack-deps@sha256:092e36bd8f33b1da08f3c319b6922e548dfbb5e27eb0
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **92.9 MB (92909169 bytes)**  
+-	Total Size: **92.9 MB (92909165 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4975c1416c4871852f149b5a0c2319465ac9c34a4376d6a4aa9db5c195149008`
+-	Image ID: `sha256:e7de199c837dd20ca2145f2e109f7c8a32dd40ceb00bee15b3a539e544109d8e`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -31,7 +31,9 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Wed, 21 Jun 2017 00:21:15 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 21 Jun 2017 00:21:58 GMT
+# Fri, 07 Jul 2017 02:29:19 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Fri, 07 Jul 2017 02:30:07 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 ```
 
@@ -60,7 +62,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 		Last Modified: Wed, 21 Jun 2017 01:21:30 GMT  
 		Size: 7.0 MB (7040939 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6302887ba5ec4dbf613d0096e12ca956e30bd4fe7f41733649582099343acf3d`  
-		Last Modified: Wed, 21 Jun 2017 01:22:36 GMT  
-		Size: 43.1 MB (43111035 bytes)  
+	-	`sha256:0fedd2b61393b4ae59a64065d6ad6e27fcb14d09cf11873be25a17649e1b066d`  
+		Last Modified: Fri, 07 Jul 2017 03:33:40 GMT  
+		Size: 43.1 MB (43111031 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

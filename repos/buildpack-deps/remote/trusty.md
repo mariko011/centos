@@ -1,7 +1,7 @@
 ## `buildpack-deps:trusty`
 
 ```console
-$ docker pull buildpack-deps@sha256:aa33dd6888f5b52aa9f8c8fedb5ae3911a6717efb1bc5518c504e0d08512f40a
+$ docker pull buildpack-deps@sha256:804dba2c9e7257c900994a0eac5efc0d5ac5a4628a309b107fa2f0bbef8193f1
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull buildpack-deps@sha256:aa33dd6888f5b52aa9f8c8fedb5ae3911a6717efb1bc
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **206.8 MB (206801218 bytes)**  
+-	Total Size: **207.1 MB (207101344 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cd0cff42df9328a2ca6cfd95ac2f9a49fcbd20760b26a8281baa761454c27e12`
+-	Image ID: `sha256:a7bcc05e25684838dcab890cbc85070017351d45231cd99b2f49e07dc112503c`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -31,9 +31,11 @@ RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
 CMD ["/bin/bash"]
 # Wed, 21 Jun 2017 00:13:53 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 21 Jun 2017 00:14:41 GMT
+# Fri, 07 Jul 2017 02:08:38 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Fri, 07 Jul 2017 02:09:37 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Wed, 21 Jun 2017 00:16:23 GMT
+# Fri, 07 Jul 2017 02:12:00 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
 ```
 
@@ -62,11 +64,11 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 		Last Modified: Wed, 21 Jun 2017 00:55:49 GMT  
 		Size: 4.7 MB (4705689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ab8d031f681d23259d5f8409e5ce6163f0cf4bf67ace155a54f5f0833d476e4`  
-		Last Modified: Wed, 21 Jun 2017 00:56:33 GMT  
-		Size: 29.5 MB (29544437 bytes)  
+	-	`sha256:5b4421bfed26e113f7255c0e8db5b375f3e299f4a09f3f4cbb54cc8a12a09891`  
+		Last Modified: Fri, 07 Jul 2017 03:25:52 GMT  
+		Size: 29.5 MB (29545525 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fa3eace004c976151e0bc09f699010f2f7800dcaf220647ea66bfc71224b2d66`  
-		Last Modified: Wed, 21 Jun 2017 00:57:32 GMT  
-		Size: 105.4 MB (105362748 bytes)  
+	-	`sha256:d60678ede57928894416eef9256f091dce8f981c5c5da0e877e9fd219e55ce60`  
+		Last Modified: Fri, 07 Jul 2017 03:26:51 GMT  
+		Size: 105.7 MB (105661786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
