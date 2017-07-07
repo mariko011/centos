@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:082a6c5cab28e237ea2127a1a580c4f4e613eef48b351e7455779d86ae93a403`
-- Created: `2017-06-23T01:50:52.084355076Z`
+- Image ID: `sha256:34f88b2f43b2e36e4aca466518445662e0b151ac63a746fef8208613c71c2b28`
+- Created: `2017-07-07T03:53:09.234752458Z`
 - Virtual Size: ~ 420.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1762,18 +1762,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/liberror-perl/0.17-1/
 - https://sources.debian.net/src/liberror-perl/0.17-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libffi=3.0.10-3+deb7u1`
+### `dpkg` source package: `libffi=3.0.10-3+deb7u2`
 
 Binary Packages:
 
-- `libffi5:amd64=3.0.10-3+deb7u1`
+- `libffi5:amd64=3.0.10-3+deb7u2`
 
 Licenses: (parsed from: `/usr/share/doc/libffi5/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libffi=3.0.10-3+deb7u2
+'http://security.debian.org/pool/updates/main/libf/libffi/libffi_3.0.10-3+deb7u2.dsc' libffi_3.0.10-3+deb7u2.dsc 2258 SHA256:39b6a4d9995bb25d7df49766db41550f25b8caef49e6c45ec2b8ccf97802f89b
+'http://security.debian.org/pool/updates/main/libf/libffi/libffi_3.0.10.orig.tar.gz' libffi_3.0.10.orig.tar.gz 753346 SHA256:f01eb9027e9eb56aeaeef636649877756d475d714ef8b47f627f65bc5f3b492f
+'http://security.debian.org/pool/updates/main/libf/libffi/libffi_3.0.10-3+deb7u2.diff.gz' libffi_3.0.10-3+deb7u2.diff.gz 21140 SHA256:67d25925a375e7b8a54616801abd440d6bd42e82298932652c66aa4c3d01bfbc
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libffi/3.0.10-3+deb7u2/
+- https://sources.debian.net/src/libffi/3.0.10-3+deb7u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgcrypt11=1.5.0-5+deb7u5`
 
@@ -1786,19 +1797,8 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt11/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgcrypt11=1.5.0-5+deb7u5
-'http://security.debian.org/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0-5+deb7u5.dsc' libgcrypt11_1.5.0-5+deb7u5.dsc 2491 SHA256:9ea67ebeb8ccca5d0ef8302e93612fbc97c9151a08500a5cbcb379ebd66d0352
-'http://security.debian.org/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0.orig.tar.bz2' libgcrypt11_1.5.0.orig.tar.bz2 1433506 SHA256:4b62fc516004940a0571025401a0581d49199f1a76dfb5ce6fd63f50db8173fa
-'http://security.debian.org/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0-5+deb7u5.debian.tar.gz' libgcrypt11_1.5.0-5+deb7u5.debian.tar.gz 35373 SHA256:6f193b37ab6779b13b217f093ee773311f34978ddbfff102216206639769c48c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libgcrypt11/1.5.0-5+deb7u5/
-- https://sources.debian.net/src/libgcrypt11/1.5.0-5+deb7u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.10-3.1`
 
@@ -2632,18 +2632,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libxinerama/2:1.1.2-1+deb7u1/
 - https://sources.debian.net/src/libxinerama/2:1.1.2-1+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libxml2=2.8.0+dfsg1-7+wheezy7`
+### `dpkg` source package: `libxml2=2.8.0+dfsg1-7+wheezy8`
 
 Binary Packages:
 
-- `libxml2:amd64=2.8.0+dfsg1-7+wheezy7`
+- `libxml2:amd64=2.8.0+dfsg1-7+wheezy8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.8.0+dfsg1-7+wheezy8
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy8.dsc' libxml2_2.8.0+dfsg1-7+wheezy8.dsc 2673 SHA256:1b0c2c8b5b038c4011da7689bc669c1b0427eec1ef39159639b8b287ea5f6847
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1.orig.tar.gz' libxml2_2.8.0+dfsg1.orig.tar.gz 3554683 SHA256:46f339843967e861e81f8427373ff2a3d0a8cb608022dea16aa1d345ddcee338
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy8.debian.tar.gz' libxml2_2.8.0+dfsg1-7+wheezy8.debian.tar.gz 73902 SHA256:6418cc0232daa38dabe154f8e8b3b6cecf0fbc1eddcd0710cbc058f815987c59
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy8/
+- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxrandr=2:1.3.2-2+deb7u2`
 
@@ -2790,20 +2801,31 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/mawk/1.3.3-17/
 - https://sources.debian.net/src/mawk/1.3.3-17/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `mercurial=2.2.2-4+deb7u3`
+### `dpkg` source package: `mercurial=2.2.2-4+deb7u4`
 
 Binary Packages:
 
-- `mercurial=2.2.2-4+deb7u3`
-- `mercurial-common=2.2.2-4+deb7u3`
+- `mercurial=2.2.2-4+deb7u4`
+- `mercurial-common=2.2.2-4+deb7u4`
 
 Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/mercurial-common/copyright`)
 
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris mercurial=2.2.2-4+deb7u4
+'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2-4+deb7u4.dsc' mercurial_2.2.2-4+deb7u4.dsc 2178 SHA256:7db66ec2657c9f1c2b63722edac2d786f26f9f582d4e56f061b513df5cd52179
+'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2.orig.tar.gz' mercurial_2.2.2.orig.tar.gz 3430037 SHA256:3489110ec11fefbd2cbdefb8d715d0a869cef3dd729aaf4d5141108f8be1600a
+'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2-4+deb7u4.debian.tar.gz' mercurial_2.2.2-4+deb7u4.debian.tar.gz 53259 SHA256:e3441baa8d665cc986310593d73d3d4d5bcc4fa93cb611ae127440f6fcc1218d
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/mercurial/2.2.2-4+deb7u4/
+- https://sources.debian.net/src/mercurial/2.2.2-4+deb7u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mime-support=3.52-1+deb7u1`
 
