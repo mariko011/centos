@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a8f5a76ca5cd4f824d0551e8dff862d50a1b6b26f266d6ef9de80e0ed771be38`
-- Created: `2017-06-22T21:23:40.881294968Z`
-- Virtual Size: ~ 405.83 Mb  
+- Image ID: `sha256:bb8536400cbe63cbeb0e4f2b0c4526cd99933b4ffb3e25c2a2a9a697f675a328`
+- Created: `2017-07-06T04:46:51.921267074Z`
+- Virtual Size: ~ 406.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -25,7 +25,7 @@
   - `PHP_URL=https://secure.php.net/get/php-5.6.30.tar.xz/from/this/mirror`
   - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.30.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805`
-  - `PHP_MD5=68753955a8964ae49064c6424f81eb3e`
+  - `PHP_MD5=`
   - `WORDPRESS_VERSION=4.8`
   - `WORDPRESS_SHA1=3738189a1f37a03fb9cb087160b457d7a641ccb4`
 
@@ -790,11 +790,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/e2fsprogs/1.42.12-2/
 - https://sources.debian.net/src/e2fsprogs/1.42.12-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `expat=2.1.0-6+deb8u3`
+### `dpkg` source package: `expat=2.1.0-6+deb8u4`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.1.0-6+deb8u3`
+- `libexpat1:amd64=2.1.0-6+deb8u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -803,16 +803,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.1.0-6+deb8u3
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u3.dsc' expat_2.1.0-6+deb8u3.dsc 2278 SHA256:3485be5c4ffc922aea14718c48c4107b04559ec013cc0e98a61597da50320e25
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u3.debian.tar.xz' expat_2.1.0-6+deb8u3.debian.tar.xz 21716 SHA256:5e756a68a7634b7b7109024bd33df4df3c5964ea0d0f5e8db0ca98f623bcd841
+$ apt-get source -qq --print-uris expat=2.1.0-6+deb8u4
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-6+deb8u4.dsc' expat_2.1.0-6+deb8u4.dsc 2292 SHA256:7f7a5fed696e3b17f50e576dbae7013793e59517b04818e8b1688d9581792245
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-6+deb8u4.debian.tar.xz' expat_2.1.0-6+deb8u4.debian.tar.xz 22672 SHA256:e832a0c7f1645bb915310628c38ecc6183f6854b0788332a7be470d06d4d149b
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/expat/2.1.0-6+deb8u3/
-- https://sources.debian.net/src/expat/2.1.0-6+deb8u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/expat/2.1.0-6+deb8u4/
+- https://sources.debian.net/src/expat/2.1.0-6+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `file=1:5.22+15-2+deb8u3`
 
