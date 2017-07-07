@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ad5234876c3a6f1a9bb937db5dd9dbec03be761361566b17b3efe63d9e555994`
-- Created: `2017-06-23T14:50:03.91257202Z`
-- Virtual Size: ~ 620.37 Mb  
+- Image ID: `sha256:09d079b92aa95d48e11260b4488a48dc98b8e36c2cc49dcbe4a1c745677384ed`
+- Created: `2017-07-06T02:13:03.516964681Z`
+- Virtual Size: ~ 620.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,9 +22,9 @@
   - `OPENSSL_VERSION=1.1.0f-3`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.0.44`
-  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.44/bin/apache-tomcat-8.0.44.tar.gz`
-  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.44/bin/apache-tomcat-8.0.44.tar.gz.asc`
+  - `TOMCAT_VERSION=8.0.45`
+  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.45/bin/apache-tomcat-8.0.45.tar.gz`
+  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.45/bin/apache-tomcat-8.0.45.tar.gz.asc`
   - `GN_FILE=geonetwork.war`
   - `DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data`
   - `JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:PermSize=512m -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC`
