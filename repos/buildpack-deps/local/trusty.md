@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cd0cff42df9328a2ca6cfd95ac2f9a49fcbd20760b26a8281baa761454c27e12`
-- Created: `2017-06-21T00:16:23.688776378Z`
-- Virtual Size: ~ 550.53 Mb  
+- Image ID: `sha256:a7bcc05e25684838dcab890cbc85070017351d45231cd99b2f49e07dc112503c`
+- Created: `2017-07-07T02:12:00.16082938Z`
+- Virtual Size: ~ 551.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -2325,20 +2325,26 @@ $ apt-get source -qq --print-uris libffi=3.1~rc1+r3.0.13-12ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libf/libffi/libffi_3.1~rc1+r3.0.13-12ubuntu0.1.debian.tar.xz' libffi_3.1~rc1+r3.0.13-12ubuntu0.1.debian.tar.xz 48188 SHA256:260827506b832f348584a35e38c2ccee9deb5efcf859aebe8d7d25733256f108
 ```
 
-### `dpkg` source package: `libgcrypt11=1.5.3-2ubuntu4.4`
+### `dpkg` source package: `libgcrypt11=1.5.3-2ubuntu4.5`
 
 Binary Packages:
 
-- `libgcrypt11:amd64=1.5.3-2ubuntu4.4`
-- `libgcrypt11-dev=1.5.3-2ubuntu4.4`
+- `libgcrypt11:amd64=1.5.3-2ubuntu4.5`
+- `libgcrypt11-dev=1.5.3-2ubuntu4.5`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt11/copyright`, `/usr/share/doc/libgcrypt11-dev/copyright`)
 
 - `GPL-2`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libgcrypt11=1.5.3-2ubuntu4.5
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.3-2ubuntu4.5.dsc' libgcrypt11_1.5.3-2ubuntu4.5.dsc 2580 SHA256:4168dae7ba3ad78d8bebe45a28935de371bb281b89795a5ae2f76cfa3d3a5411
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.3.orig.tar.bz2' libgcrypt11_1.5.3.orig.tar.bz2 1508530 SHA256:bcf5334e7da352c45de6aec5d2084ce9a1d30029ff4a4a5da13f1848874759d1
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.3-2ubuntu4.5.debian.tar.gz' libgcrypt11_1.5.3-2ubuntu4.5.debian.tar.gz 37205 SHA256:405b37e0ed162d1da5773ec55fa87df1977bc6b1e0b68913b533ac389b9882e0
+```
 
 ### `dpkg` source package: `libgd2=2.1.0-3ubuntu0.6`
 
@@ -3399,18 +3405,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.4-3ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.4-3ubuntu3.1.debian.tar.gz' libyaml_0.1.4-3ubuntu3.1.debian.tar.gz 6404 SHA256:816422e1c743180409aff9247f3a298c8f98260d91da29c7315ce8bd576d53c2
 ```
 
-### `dpkg` source package: `linux=3.13.0-121.170`
+### `dpkg` source package: `linux=3.13.0-123.172`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-121.170`
+- `linux-libc-dev:amd64=3.13.0-123.172`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.13.0-123.172
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-123.172.dsc' linux_3.13.0-123.172.dsc 8127 SHA256:f5e777f68649c4df8a2ce4a898f6ad8758a3b00d858b796426b7aa7aefc25c58
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-123.172.diff.gz' linux_3.13.0-123.172.diff.gz 9480108 SHA256:4b569d050540dcbfec473f3aea9aedf34135a6c8b342f7b7b3448f6fd734790f
+```
 
 ### `dpkg` source package: `lockfile-progs=0.1.17`
 
@@ -3850,14 +3862,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.10
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.dsc' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.dsc 2371 SHA256:e37b5b5f3a508f5fd0b8b5224ff303a37e51c116b9d88e73d0848872480fc543
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg.orig.tar.gz' ntp_4.2.6.p5+dfsg.orig.tar.gz 4111997 SHA256:17f0b63e7e27de5cc999a4afdb96b2dbdf76c75181fca50e2395e49e5773dfc9
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.debian.tar.gz' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.10.debian.tar.gz 147591 SHA256:4097803a1422a5c6fa5381e496c35cb2306988c8d48dbd9136a8c31b55208451
-```
 
 ### `dpkg` source package: `openexr=1.6.1-7ubuntu1`
 

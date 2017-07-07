@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c3d154e2737683d5640185c984349b54c1414582645bdff70d1efac7b5521875`
-- Created: `2017-06-21T00:20:33.126418265Z`
+- Image ID: `sha256:56104a6ca030fa8800cc22750e88e85e3fbb5a238ae58c8a7b60669cc9ebd23f`
+- Created: `2017-07-07T02:21:51.282108249Z`
 - Virtual Size: ~ 639.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2898,19 +2898,25 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
 ```
 
-### `dpkg` source package: `linux=4.4.0-81.104`
+### `dpkg` source package: `linux=4.4.0-83.106`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-81.104`
+- `linux-libc-dev:amd64=4.4.0-83.106`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 - `redpine-signals`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.4.0-83.106
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-83.106.dsc' linux_4.4.0-83.106.dsc 9286 SHA256:e899efa79bede06b49063a91ca718d0e2f2d4a72fc7d3cb2cb917a051be6b6c8
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-83.106.diff.gz' linux_4.4.0-83.106.diff.gz 12946601 SHA256:e9f92f25eecfa9078b9890cc3e0a8762fa54f8e8cd0980a04ccf85f77758904c
+```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu0.2`
 

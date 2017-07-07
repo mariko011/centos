@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d8e8234c5b65a044ea1f06a3c9073cd3d7ac4101a4b3f964671093dd19e46cac`
-- Created: `2017-06-21T00:27:03.550114021Z`
+- Image ID: `sha256:334877fae24a831ef9a5aa7f28d7e17f71959db1310eb0b69bdca4e740a11868`
+- Created: `2017-07-07T02:55:32.659290294Z`
 - Virtual Size: ~ 736.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2935,18 +2935,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.7-2
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.7-2.debian.tar.xz' libyaml_0.1.7-2.debian.tar.xz 4016 SHA256:6fc7065491dd6f86b46e6f231ae8ab60f8aafbef2dcf4721598644024485b801
 ```
 
-### `dpkg` source package: `linux=4.10.0-24.28`
+### `dpkg` source package: `linux=4.10.0-26.30`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.10.0-24.28`
+- `linux-libc-dev:amd64=4.10.0-26.30`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.10.0-26.30
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.10.0-26.30.dsc' linux_4.10.0-26.30.dsc 6015 SHA256:39a82426861dd2dacaab8fc7ab8754735f96cabf9ba97571af900fce6827a43e
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.10.0.orig.tar.gz' linux_4.10.0.orig.tar.gz 143917000 SHA256:1221bcded9062e5740e7cd1b047479494312b13a2a3ba8a48c820d12276c417d
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.10.0-26.30.diff.gz' linux_4.10.0-26.30.diff.gz 7445281 SHA256:99461b57ccd2975bcb0b735ae7558ceb3d478e29a0613883708123832cae1c1e
+```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu5`
 
