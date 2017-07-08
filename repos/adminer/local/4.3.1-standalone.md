@@ -2,13 +2,13 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5e1d2753581c245fab31d3b1bb7570674d49abf68c7ae67b173a865e64454f44`
-- Created: `2017-06-29T01:42:58.437054701Z`
+- Image ID: `sha256:f9774822cb5b1c66d7b3d23f4efde74e854eb7e4b93f0595d0c74ff83921bc2b`
+- Created: `2017-07-05T17:32:53.736612468Z`
 - Virtual Size: ~ 59.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
-- Command: `["php","-S","0.0.0.0:8080","-t","/var/www/html"]`
+- Command: `["php","-S","[::]:8080","-t","/var/www/html"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pcre-dev 		pkgconf 		re2c`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://secure.php.net/get/php-7.0.20.tar.xz/from/this/mirror`
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.20.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=31b9cf1fb83fe3cd82c2f6603a0ae81ae6abacb5286827e362d8f85e68908e0a`
-  - `PHP_MD5=e84615871c1c6dbd0860746a31f3a7c8`
+  - `PHP_MD5=`
   - `ADMINER_VERSION=4.3.1`
   - `ADMINER_DOWNLOAD_SHA256=71688c5db4d4e504c48c26ec2966ad85e721ef61e0377c5505cfb50b026d5491`
   - `ADMINER_SRC_DOWNLOAD_SHA256=fd016c93bb3bb8e85ed9cf826064584012c4db83f30c4948d701250e29a6d953`
