@@ -1,17 +1,17 @@
-# `node:8.1.2-wheezy`
+# `node:8.1.3-wheezy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8c35ebfeda9349c82d3d77fc01d50cfa8ddfb3ca3b45a5560c7a793fa78dcf5b`
-- Created: `2017-06-23T01:02:35.782058732Z`
-- Virtual Size: ~ 521.09 Mb  
+- Image ID: `sha256:5ba761472aecaad2859a32d965cd7de759b8718cdb8b07deedd32d237ce720e7`
+- Created: `2017-07-05T19:18:15.844321303Z`
+- Virtual Size: ~ 521.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=8.1.2`
+  - `NODE_VERSION=8.1.3`
   - `YARN_VERSION=0.24.6`
 
 ## `dpkg` (`.deb`-based packages)
@@ -2000,19 +2000,8 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt11/copyright`, `/usr/share/doc/
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgcrypt11=1.5.0-5+deb7u5
-'http://security.debian.org/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0-5+deb7u5.dsc' libgcrypt11_1.5.0-5+deb7u5.dsc 2491 SHA256:9ea67ebeb8ccca5d0ef8302e93612fbc97c9151a08500a5cbcb379ebd66d0352
-'http://security.debian.org/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0.orig.tar.bz2' libgcrypt11_1.5.0.orig.tar.bz2 1433506 SHA256:4b62fc516004940a0571025401a0581d49199f1a76dfb5ce6fd63f50db8173fa
-'http://security.debian.org/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0-5+deb7u5.debian.tar.gz' libgcrypt11_1.5.0-5+deb7u5.debian.tar.gz 35373 SHA256:6f193b37ab6779b13b217f093ee773311f34978ddbfff102216206639769c48c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libgcrypt11/1.5.0-5+deb7u5/
-- https://sources.debian.net/src/libgcrypt11/1.5.0-5+deb7u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgd2=2.0.36~rc1~dfsg-6.1+deb7u8`
 

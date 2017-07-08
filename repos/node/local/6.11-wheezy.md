@@ -2000,19 +2000,8 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt11/copyright`, `/usr/share/doc/
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgcrypt11=1.5.0-5+deb7u5
-'http://security.debian.org/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0-5+deb7u5.dsc' libgcrypt11_1.5.0-5+deb7u5.dsc 2491 SHA256:9ea67ebeb8ccca5d0ef8302e93612fbc97c9151a08500a5cbcb379ebd66d0352
-'http://security.debian.org/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0.orig.tar.bz2' libgcrypt11_1.5.0.orig.tar.bz2 1433506 SHA256:4b62fc516004940a0571025401a0581d49199f1a76dfb5ce6fd63f50db8173fa
-'http://security.debian.org/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0-5+deb7u5.debian.tar.gz' libgcrypt11_1.5.0-5+deb7u5.debian.tar.gz 35373 SHA256:6f193b37ab6779b13b217f093ee773311f34978ddbfff102216206639769c48c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libgcrypt11/1.5.0-5+deb7u5/
-- https://sources.debian.net/src/libgcrypt11/1.5.0-5+deb7u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgd2=2.0.36~rc1~dfsg-6.1+deb7u8`
 
