@@ -463,20 +463,8 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.3-2
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.3-2.dsc' cups_2.2.3-2.dsc 3396 SHA256:e120d3dfa01eac269ca03130aabf174dfcbf8768081d2562b1cf720cd94e54a2
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.3.orig.tar.gz' cups_2.2.3.orig.tar.gz 9497368 SHA256:66701fe15838f2c892052c913bde1ba106bbee2e0a953c955a62ecacce76885f
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.3.orig.tar.gz.asc' cups_2.2.3.orig.tar.gz.asc 797 SHA256:c8378695519e57c66e71446d02be2d3a8b40e5e3a30b11d5e034ede415c36051
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.3-2.debian.tar.xz' cups_2.2.3-2.debian.tar.xz 359248 SHA256:e03216598a5d8c2c095dafa17f02f0578e01ebd3967b3efbe71fb2627a82a88a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cups/2.2.3-2/
-- https://sources.debian.net/src/cups/2.2.3-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `curl=7.52.1-5`
 
@@ -2283,19 +2271,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.23.1-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.23.1-1.dsc' nghttp2_1.23.1-1.dsc 2275 SHA256:4159afe7c91c436142c5c0fe706d72d65b62835f542ec1991fad76e11de8d0f7
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.23.1.orig.tar.bz2' nghttp2_1.23.1.orig.tar.bz2 1798970 SHA256:b662dd331402b635314d0ec0163ac57390327049734ec62bf8072a07ab165530
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.23.1-1.debian.tar.xz' nghttp2_1.23.1-1.debian.tar.xz 11940 SHA256:62c4fa48fcdfb40924764351266fb000274060549fc1f342e1c12fec0e32a43b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.23.1-1/
-- https://sources.debian.net/src/nghttp2/1.23.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `nspr=2:4.15-1`
 
