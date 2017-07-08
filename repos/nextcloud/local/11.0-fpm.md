@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f426ad3d9fca551bc652355716f62ff8be7ab832c32a420f07e29b241c0f768a`
-- Created: `2017-06-23T16:39:05.927535922Z`
+- Image ID: `sha256:e1dc3d4197574d71297e31458010d8689b1d3a7cbf76ba22152ca6b7eba8f6b4`
+- Created: `2017-07-06T02:58:22.370367871Z`
 - Virtual Size: ~ 617.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,7 +22,7 @@
   - `PHP_URL=https://secure.php.net/get/php-7.1.6.tar.xz/from/this/mirror`
   - `PHP_ASC_URL=https://secure.php.net/get/php-7.1.6.tar.xz.asc/from/this/mirror`
   - `PHP_SHA256=01584dc521ab7ec84b502b61952f573652fe6aa00c18d6d844fb9209f14b245b`
-  - `PHP_MD5=eafc7a79cc8cc62c9292c96f9c9ccf90`
+  - `PHP_MD5=`
   - `NEXTCLOUD_VERSION=11.0.3`
 
 ## `dpkg` (`.deb`-based packages)
