@@ -572,18 +572,8 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.61
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.61.dsc' debconf_1.5.61.dsc 1932 SHA256:a350712c205bf21f045c80f4a64e24cef27e35e38fd51080c79076178c63ef1b
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.61.tar.xz' debconf_1.5.61.tar.xz 570372 SHA256:7622a3fe231b46e6255a83b3d153159c10be6bc17b2152ab3937b8928bf87e10
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/debconf/1.5.61/
-- https://sources.debian.net/src/debconf/1.5.61/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `debian-archive-keyring=2017.5`
 
@@ -924,14 +914,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp-6/copyright`, `/usr/share/doc/g++-6/
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.3.0-19
-'http://http.debian.net/debian/pool/main/g/gcc-6/gcc-6_6.3.0-19.dsc' gcc-6_6.3.0-19.dsc 19456 SHA256:93b57359d3af193466587c1e8b0225910275946e1b69ef163d08d4a41106c3e2
-'http://http.debian.net/debian/pool/main/g/gcc-6/gcc-6_6.3.0.orig.tar.gz' gcc-6_6.3.0.orig.tar.gz 81587460 SHA256:04552f04baf6974fb7521191859fb54717385ad659afd822b2995b66ee4e4151
-'http://http.debian.net/debian/pool/main/g/gcc-6/gcc-6_6.3.0-19.diff.gz' gcc-6_6.3.0-19.diff.gz 2098712 SHA256:9ed54825c533d074cc78c17cce82dfcefafc4662655ca03f04e54c96dd67c17b
-```
 
 ### `dpkg` source package: `gcc-7=7.1.0-7`
 
@@ -2199,15 +2183,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libunistring=0.9.6+really0.9.3-0.1
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_0.9.6+really0.9.3-0.1.dsc' libunistring_0.9.6+really0.9.3-0.1.dsc 2109 SHA256:bf73a89a416333268ac9b457a06d1d92e5402c4f392187ad30e6146ffd3600ae
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_0.9.6+really0.9.3.orig.tar.gz' libunistring_0.9.6+really0.9.3.orig.tar.gz 2555215 SHA256:610d3ec724fbdaa654afe3cff20b9f4d504be3fd296fded2e0f7f764041006a3
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_0.9.6+really0.9.3-0.1.debian.tar.xz' libunistring_0.9.6+really0.9.3-0.1.debian.tar.xz 35372 SHA256:2d7636b16a56f1ad09748121a2181db4c2687fa83324c2f17bf451ee01b9de93
+'http://http.debian.net/debian/pool/main/libu/libunistring/libunistring_0.9.6+really0.9.3-0.1.dsc' libunistring_0.9.6+really0.9.3-0.1.dsc 2109 SHA256:bf73a89a416333268ac9b457a06d1d92e5402c4f392187ad30e6146ffd3600ae
+'http://http.debian.net/debian/pool/main/libu/libunistring/libunistring_0.9.6+really0.9.3.orig.tar.gz' libunistring_0.9.6+really0.9.3.orig.tar.gz 2555215 SHA256:610d3ec724fbdaa654afe3cff20b9f4d504be3fd296fded2e0f7f764041006a3
+'http://http.debian.net/debian/pool/main/libu/libunistring/libunistring_0.9.6+really0.9.3-0.1.debian.tar.xz' libunistring_0.9.6+really0.9.3-0.1.debian.tar.xz 35372 SHA256:2d7636b16a56f1ad09748121a2181db4c2687fa83324c2f17bf451ee01b9de93
 ```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libunistring/0.9.6+really0.9.3-0.1/
-- https://sources.debian.net/src/libunistring/0.9.6+really0.9.3-0.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libx11=2:1.6.4-3`
 
