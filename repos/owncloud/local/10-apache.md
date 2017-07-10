@@ -1,13 +1,13 @@
-# `owncloud:8.0.16-apache`
+# `owncloud:10.0.2-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b4bda8f62c000e6693e678542511f797f863113a6d615aaeb7e1377de642a66d`
-- Created: `2017-07-06T03:34:28.633100068Z`
-- Virtual Size: ~ 547.87 Mb  
+- Image ID: `sha256:183d08975211e4e987299872cac7c809cff52cfab5e128555b9151f01dbef8ad`
+- Created: `2017-07-07T05:27:43.154134242Z`
+- Virtual Size: ~ 587.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["/entrypoint.sh"]`
+- Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["apache2-foreground"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
@@ -20,13 +20,13 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
-  - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.30`
-  - `PHP_URL=https://secure.php.net/get/php-5.6.30.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.30.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805`
+  - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
+  - `PHP_VERSION=7.0.20`
+  - `PHP_URL=https://secure.php.net/get/php-7.0.20.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.20.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=31b9cf1fb83fe3cd82c2f6603a0ae81ae6abacb5286827e362d8f85e68908e0a`
   - `PHP_MD5=`
-  - `OWNCLOUD_VERSION=8.0.16`
+  - `OWNCLOUD_VERSION=10.0.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -566,9 +566,10 @@ Likely also available for browsing at:
 Binary Packages:
 
 - `libsasl2-2:amd64=2.1.26.dfsg1-13+deb8u1`
+- `libsasl2-dev=2.1.26.dfsg1-13+deb8u1`
 - `libsasl2-modules-db:amd64=2.1.26.dfsg1-13+deb8u1`
 
-Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-dev/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
 
 - `BSD-2-clause`
 - `BSD-4-clause`
@@ -1723,6 +1724,39 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libmcrypt/2.5.8-3.3/
 - https://sources.debian.net/src/libmcrypt/2.5.8-3.3/debian/copyright (for direct copyright/license information)
 
+### `dpkg` source package: `libmemcached=1.0.18-4`
+
+Binary Packages:
+
+- `libhashkit-dev=1.0.18-4`
+- `libhashkit2:amd64=1.0.18-4`
+- `libmemcached-dev=1.0.18-4`
+- `libmemcached11:amd64=1.0.18-4`
+- `libmemcachedutil2:amd64=1.0.18-4`
+
+Licenses: (parsed from: `/usr/share/doc/libhashkit-dev/copyright`, `/usr/share/doc/libhashkit2/copyright`, `/usr/share/doc/libmemcached-dev/copyright`, `/usr/share/doc/libmemcached11/copyright`, `/usr/share/doc/libmemcachedutil2/copyright`)
+
+- `BSD-3-clause`
+- `BSD-3-clause-Sun`
+- `BSD-3-clause-TangentOrg`
+- `Bob-Jenkins`
+- `Paul-Hsieh`
+- `RSA-Data-Security`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libmemcached=1.0.18-4
+'http://deb.debian.org/debian/pool/main/libm/libmemcached/libmemcached_1.0.18-4.dsc' libmemcached_1.0.18-4.dsc 2371 SHA256:75979e654b956f8f3ecb820cb626a3e3de432dc3ade588578904e8a73f44f70c
+'http://deb.debian.org/debian/pool/main/libm/libmemcached/libmemcached_1.0.18.orig.tar.gz' libmemcached_1.0.18.orig.tar.gz 1039649 SHA256:e22c0bb032fde08f53de9ffbc5a128233041d9f33b5de022c0978a2149885f82
+'http://deb.debian.org/debian/pool/main/libm/libmemcached/libmemcached_1.0.18-4.debian.tar.xz' libmemcached_1.0.18-4.debian.tar.xz 11964 SHA256:2d1dcf6fa4e93d64490783db352bc136483dfe4ccb365ce269e4d66a89bc0cd0
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libmemcached/1.0.18-4/
+- https://sources.debian.net/src/libmemcached/1.0.18-4/debian/copyright (for direct copyright/license information)
+
 ### `dpkg` source package: `libpng=1.2.50-2+deb8u3`
 
 Binary Packages:
@@ -2399,7 +2433,6 @@ Likely also available for browsing at:
 Binary Packages:
 
 - `libssl-dev:amd64=1.0.1t-1+deb8u6`
-- `libssl-doc=1.0.1t-1+deb8u6`
 - `libssl1.0.0:amd64=1.0.1t-1+deb8u6`
 - `openssl=1.0.1t-1+deb8u6`
 

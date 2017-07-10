@@ -1,32 +1,29 @@
-# `owncloud:8.0.16-apache`
+# `owncloud:10.0.2-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b4bda8f62c000e6693e678542511f797f863113a6d615aaeb7e1377de642a66d`
-- Created: `2017-07-06T03:34:28.633100068Z`
-- Virtual Size: ~ 547.87 Mb  
+- Image ID: `sha256:d0d6411ebd665d5f48ac5cabe247afa6007ab566eaca776552195073bc4794a3`
+- Created: `2017-07-07T05:57:54.144862299Z`
+- Virtual Size: ~ 577.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["/entrypoint.sh"]`
-- Command: `["apache2-foreground"]`
+- Entrypoint: `["docker-entrypoint.sh"]`
+- Command: `["php-fpm"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		libpcre3-dev 		make 		pkg-config 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
-  - `APACHE_CONFDIR=/etc/apache2`
-  - `APACHE_ENVVARS=/etc/apache2/envvars`
-  - `PHP_EXTRA_BUILD_DEPS=apache2-dev`
-  - `PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2`
+  - `PHP_EXTRA_CONFIGURE_ARGS=--enable-fpm --with-fpm-user=www-data --with-fpm-group=www-data`
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
-  - `GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=5.6.30`
-  - `PHP_URL=https://secure.php.net/get/php-5.6.30.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-5.6.30.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805`
+  - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
+  - `PHP_VERSION=7.0.20`
+  - `PHP_URL=https://secure.php.net/get/php-7.0.20.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.20.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=31b9cf1fb83fe3cd82c2f6603a0ae81ae6abacb5286827e362d8f85e68908e0a`
   - `PHP_MD5=`
-  - `OWNCLOUD_VERSION=8.0.16`
+  - `OWNCLOUD_VERSION=10.0.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -78,97 +75,6 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/adduser/3.113+nmu3/
 - https://sources.debian.net/src/adduser/3.113+nmu3/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `apache2=2.4.10-10+deb8u8`
-
-Binary Packages:
-
-- `apache2=2.4.10-10+deb8u8`
-- `apache2-bin=2.4.10-10+deb8u8`
-- `apache2-data=2.4.10-10+deb8u8`
-- `apache2-utils=2.4.10-10+deb8u8`
-
-Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apache2-bin/copyright`, `/usr/share/doc/apache2-data/copyright`, `/usr/share/doc/apache2-utils/copyright`)
-
-- `Apache-2.0`
-- `BSD-2-clause-Darwin`
-- `BSD-3-clause-Cambridge`
-- `BSD-3-clause-Smrgrav`
-- `Cisco`
-- `Custom`
-- `GPL-2`
-- `GPL-2+`
-- `GPL-3`
-- `GPL-3+`
-- `Haines`
-- `MD5`
-- `MIT`
-- `PCRE`
-- `Zeus`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris apache2=2.4.10-10+deb8u8
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.10-10+deb8u8.dsc' apache2_2.4.10-10+deb8u8.dsc 3277 SHA256:c20dc666e6192c3db716e1dfb60afed3248aabd9a2d3232301a11fe8d936dac6
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.10.orig.tar.bz2' apache2_2.4.10.orig.tar.bz2 5031834 SHA256:176c4dac1a745f07b7b91e7f4fd48f9c48049fa6f088efe758d61d9738669c6a
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.10-10+deb8u8.debian.tar.xz' apache2_2.4.10-10+deb8u8.debian.tar.xz 555484 SHA256:352be8c8245c162a9d97cf167a904fd1684904ffede565f23a654935701b40fa
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apache2/2.4.10-10+deb8u8/
-- https://sources.debian.net/src/apache2/2.4.10-10+deb8u8/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `apr-util=1.5.4-1`
-
-Binary Packages:
-
-- `libaprutil1:amd64=1.5.4-1`
-- `libaprutil1-dbd-sqlite3:amd64=1.5.4-1`
-- `libaprutil1-ldap:amd64=1.5.4-1`
-
-Licenses: (parsed from: `/usr/share/doc/libaprutil1/copyright`, `/usr/share/doc/libaprutil1-dbd-sqlite3/copyright`, `/usr/share/doc/libaprutil1-ldap/copyright`)
-
-- `Apache-2.0`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris apr-util=1.5.4-1
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.5.4-1.dsc' apr-util_1.5.4-1.dsc 2610 SHA256:4bef658a072d22814a7548b90d114f5ca85a053594789fb2af97fec5993afa5a
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.5.4.orig.tar.bz2' apr-util_1.5.4.orig.tar.bz2 694427 SHA256:a6cf327189ca0df2fb9d5633d7326c460fe2b61684745fd7963e79a6dd0dc82e
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.5.4-1.debian.tar.xz' apr-util_1.5.4-1.debian.tar.xz 16452 SHA256:83b625e3c3b7093562e31413c858ff586a245cc4c99e348844dd891d40112741
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apr-util/1.5.4-1/
-- https://sources.debian.net/src/apr-util/1.5.4-1/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `apr=1.5.1-3`
-
-Binary Packages:
-
-- `libapr1:amd64=1.5.1-3`
-
-Licenses: (parsed from: `/usr/share/doc/libapr1/copyright`)
-
-- `Apache-2.0`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris apr=1.5.1-3
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.5.1-3.dsc' apr_1.5.1-3.dsc 2090 SHA256:f3f78ab76365a17a233220357eb2b7f3102d7e9d21c59b3f82d9f0300c554433
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.5.1.orig.tar.bz2' apr_1.5.1.orig.tar.bz2 817569 SHA256:e94abe431d4da48425fcccdb27b469bd0f8151488f82e5630a56f26590e198ac
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.5.1-3.debian.tar.xz' apr_1.5.1-3.debian.tar.xz 17844 SHA256:c7f270ab445e2646bd7dfdfaf9ea44b2642a43c48012689c6f3bf52fe8c9e9c5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apr/1.5.1-3/
-- https://sources.debian.net/src/apr/1.5.1-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apt=1.0.9.8.4`
 
@@ -566,9 +472,10 @@ Likely also available for browsing at:
 Binary Packages:
 
 - `libsasl2-2:amd64=2.1.26.dfsg1-13+deb8u1`
+- `libsasl2-dev=2.1.26.dfsg1-13+deb8u1`
 - `libsasl2-modules-db:amd64=2.1.26.dfsg1-13+deb8u1`
 
-Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-dev/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
 
 - `BSD-2-clause`
 - `BSD-4-clause`
@@ -790,30 +697,6 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/e2fsprogs/1.42.12-2/
 - https://sources.debian.net/src/e2fsprogs/1.42.12-2/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `expat=2.1.0-6+deb8u4`
-
-Binary Packages:
-
-- `libexpat1:amd64=2.1.0-6+deb8u4`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris expat=2.1.0-6+deb8u4
-'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-6+deb8u4.dsc' expat_2.1.0-6+deb8u4.dsc 2292 SHA256:7f7a5fed696e3b17f50e576dbae7013793e59517b04818e8b1688d9581792245
-'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
-'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-6+deb8u4.debian.tar.xz' expat_2.1.0-6+deb8u4.debian.tar.xz 22672 SHA256:e832a0c7f1645bb915310628c38ecc6183f6854b0788332a7be470d06d4d149b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/expat/2.1.0-6+deb8u4/
-- https://sources.debian.net/src/expat/2.1.0-6+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `file=1:5.22+15-2+deb8u3`
 
@@ -1723,6 +1606,39 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libmcrypt/2.5.8-3.3/
 - https://sources.debian.net/src/libmcrypt/2.5.8-3.3/debian/copyright (for direct copyright/license information)
 
+### `dpkg` source package: `libmemcached=1.0.18-4`
+
+Binary Packages:
+
+- `libhashkit-dev=1.0.18-4`
+- `libhashkit2:amd64=1.0.18-4`
+- `libmemcached-dev=1.0.18-4`
+- `libmemcached11:amd64=1.0.18-4`
+- `libmemcachedutil2:amd64=1.0.18-4`
+
+Licenses: (parsed from: `/usr/share/doc/libhashkit-dev/copyright`, `/usr/share/doc/libhashkit2/copyright`, `/usr/share/doc/libmemcached-dev/copyright`, `/usr/share/doc/libmemcached11/copyright`, `/usr/share/doc/libmemcachedutil2/copyright`)
+
+- `BSD-3-clause`
+- `BSD-3-clause-Sun`
+- `BSD-3-clause-TangentOrg`
+- `Bob-Jenkins`
+- `Paul-Hsieh`
+- `RSA-Data-Security`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libmemcached=1.0.18-4
+'http://deb.debian.org/debian/pool/main/libm/libmemcached/libmemcached_1.0.18-4.dsc' libmemcached_1.0.18-4.dsc 2371 SHA256:75979e654b956f8f3ecb820cb626a3e3de432dc3ade588578904e8a73f44f70c
+'http://deb.debian.org/debian/pool/main/libm/libmemcached/libmemcached_1.0.18.orig.tar.gz' libmemcached_1.0.18.orig.tar.gz 1039649 SHA256:e22c0bb032fde08f53de9ffbc5a128233041d9f33b5de022c0978a2149885f82
+'http://deb.debian.org/debian/pool/main/libm/libmemcached/libmemcached_1.0.18-4.debian.tar.xz' libmemcached_1.0.18-4.debian.tar.xz 11964 SHA256:2d1dcf6fa4e93d64490783db352bc136483dfe4ccb365ce269e4d66a89bc0cd0
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libmemcached/1.0.18-4/
+- https://sources.debian.net/src/libmemcached/1.0.18-4/debian/copyright (for direct copyright/license information)
+
 ### `dpkg` source package: `libpng=1.2.50-2+deb8u3`
 
 Binary Packages:
@@ -2088,30 +2004,6 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/lsb/4.1+Debian13+nmu1/
 - https://sources.debian.net/src/lsb/4.1+Debian13+nmu1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `lua5.1=5.1.5-7.1`
-
-Binary Packages:
-
-- `liblua5.1-0:amd64=5.1.5-7.1`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris lua5.1=5.1.5-7.1
-'http://deb.debian.org/debian/pool/main/l/lua5.1/lua5.1_5.1.5-7.1.dsc' lua5.1_5.1.5-7.1.dsc 1492 SHA256:26056d599a8e6d5886ca120dff642399a40e1d5ff8ea4d00c5e2b1843c9d55cb
-'http://deb.debian.org/debian/pool/main/l/lua5.1/lua5.1_5.1.5.orig.tar.gz' lua5.1_5.1.5.orig.tar.gz 221213 SHA256:2640fc56a795f29d28ef15e13c34a47e223960b0240e8cb0a82d9b0738695333
-'http://deb.debian.org/debian/pool/main/l/lua5.1/lua5.1_5.1.5-7.1.debian.tar.xz' lua5.1_5.1.5-7.1.debian.tar.xz 13628 SHA256:2336fc576339ff40a8d7c4b4469a2b2da41eb7cba6e0d10c3444fd27093c2083
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/lua5.1/5.1.5-7.1/
-- https://sources.debian.net/src/lua5.1/5.1.5-7.1/debian/copyright (for direct copyright/license information)
-
 ### `dpkg` source package: `lvm2=2.02.111-2.2+deb8u1`
 
 Binary Packages:
@@ -2210,30 +2102,6 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/mawk/1.3.3-17/
 - https://sources.debian.net/src/mawk/1.3.3-17/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `mime-support=3.58`
-
-Binary Packages:
-
-- `mime-support=3.58`
-
-Licenses: (parsed from: `/usr/share/doc/mime-support/copyright`)
-
-- `Bellcore`
-- `ad-hoc`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris mime-support=3.58
-'http://deb.debian.org/debian/pool/main/m/mime-support/mime-support_3.58.dsc' mime-support_3.58.dsc 1604 SHA256:3279480870a7bd6c7e2a85f7f1e5deba50c3cb5edcbd6ce69a3cfc7fe0266284
-'http://deb.debian.org/debian/pool/main/m/mime-support/mime-support_3.58.tar.gz' mime-support_3.58.tar.gz 34995 SHA256:3d9ca5115e93edb3ada3fb120cde88ac3d866903e18a41ca124428d77dd1721e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mime-support/3.58/
-- https://sources.debian.net/src/mime-support/3.58/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mpclib3=1.0.2-1`
 
@@ -2399,7 +2267,6 @@ Likely also available for browsing at:
 Binary Packages:
 
 - `libssl-dev:amd64=1.0.1t-1+deb8u6`
-- `libssl-doc=1.0.1t-1+deb8u6`
 - `libssl1.0.0:amd64=1.0.1t-1+deb8u6`
 - `openssl=1.0.1t-1+deb8u6`
 
