@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:24d7d67494029eab3b8b1cb8982b5cadd12bc3ad1e2638427178dca00d14d5f9`
-- Created: `2017-06-23T09:24:52.89407343Z`
-- Virtual Size: ~ 927.72 Mb  
+- Image ID: `sha256:364db16db488f31282f5c06e07882cb75e53b09ee21399135e7d6ff389596b04`
+- Created: `2017-07-11T00:54:28.674365576Z`
+- Virtual Size: ~ 927.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -2059,19 +2059,25 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
 ```
 
-### `dpkg` source package: `linux=4.4.0-81.104`
+### `dpkg` source package: `linux=4.4.0-83.106`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-81.104`
+- `linux-libc-dev:amd64=4.4.0-83.106`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 - `redpine-signals`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.4.0-83.106
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-83.106.dsc' linux_4.4.0-83.106.dsc 9286 SHA256:e899efa79bede06b49063a91ca718d0e2f2d4a72fc7d3cb2cb917a051be6b6c8
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-83.106.diff.gz' linux_4.4.0-83.106.diff.gz 12946601 SHA256:e9f92f25eecfa9078b9890cc3e0a8762fa54f8e8cd0980a04ccf85f77758904c
+```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
 
@@ -4530,12 +4536,10 @@ Binary Packages:
 - `libfdisk1:amd64=2.27.1-6ubuntu3.2`
 - `libmount1:amd64=2.27.1-6ubuntu3.2`
 - `libsmartcols1:amd64=2.27.1-6ubuntu3.2`
-- `libuuid1:amd64=2.27.1-6ubuntu3.2`
 - `mount=2.27.1-6ubuntu3.2`
 - `util-linux=2.27.1-6ubuntu3.2`
-- `uuid-dev:amd64=2.27.1-6ubuntu3.2`
 
-Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/uuid-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
 - `BSD-2-clause`
 - `BSD-3-clause`
@@ -4556,6 +4560,41 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
+
+### `dpkg` source package: `util-linux=2.27.1-6ubuntu3.3`
+
+Binary Packages:
+
+- `libuuid1:amd64=2.27.1-6ubuntu3.3`
+- `uuid-dev:amd64=2.27.1-6ubuntu3.3`
+
+Licenses: (parsed from: `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/uuid-dev/copyright`)
+
+- `BSD-2-clause`
+- `BSD-3-clause`
+- `BSD-4-clause`
+- `GPL-2`
+- `GPL-2+`
+- `GPL-3`
+- `GPL-3+`
+- `LGPL`
+- `LGPL-2`
+- `LGPL-2+`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+- `LGPL-3`
+- `LGPL-3+`
+- `MIT`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.3
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.3.dsc' util-linux_2.27.1-6ubuntu3.3.dsc 3942 SHA256:31d135f83fbf7ea5eba164e32b43fca6489504e2c37363414c90e80ce3af375b
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1.orig.tar.xz' util-linux_2.27.1.orig.tar.xz 3964512 SHA256:0a818fcdede99aec43ffe6ca5b5388bff80d162f2f7bd4541dca94fecb87a290
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.3.debian.tar.xz' util-linux_2.27.1-6ubuntu3.3.debian.tar.xz 83780 SHA256:dd3239be2d471306a110fcf91984d41f5e49a0386a8aacd8647b4811e428c0d9
+```
 
 ### `dpkg` source package: `xdg-user-dirs=0.15-2ubuntu6`
 

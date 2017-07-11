@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a16c045b9ff94a8afa79e6f8d55f4c4503b798d78acf745212b634a2c3f9c4b8`
-- Created: `2017-06-23T09:31:44.446269395Z`
+- Image ID: `sha256:cb1eee007d51e07e67a9eb5d2c4502044c45353e67ae90eb5335ab7e5843e15f`
+- Created: `2017-07-11T00:59:32.964056505Z`
 - Virtual Size: ~ 2.19 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2187,15 +2187,15 @@ $ apt-get source -qq --print-uris gtest=1.7.0-4ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/gtest/gtest_1.7.0-4ubuntu1.debian.tar.xz' gtest_1.7.0-4ubuntu1.debian.tar.xz 7032 SHA256:f357ca4c4ba1855602f97de5298475af20fdd3d31dfeddbbb13ef2b4d720ff38
 ```
 
-### `dpkg` source package: `gtk+2.0=2.24.30-1ubuntu1`
+### `dpkg` source package: `gtk+2.0=2.24.30-1ubuntu1.16.04.1`
 
 Binary Packages:
 
-- `gir1.2-gtk-2.0=2.24.30-1ubuntu1`
-- `libgtk2.0-0:amd64=2.24.30-1ubuntu1`
-- `libgtk2.0-bin=2.24.30-1ubuntu1`
-- `libgtk2.0-common=2.24.30-1ubuntu1`
-- `libgtk2.0-dev=2.24.30-1ubuntu1`
+- `gir1.2-gtk-2.0=2.24.30-1ubuntu1.16.04.1`
+- `libgtk2.0-0:amd64=2.24.30-1ubuntu1.16.04.1`
+- `libgtk2.0-bin=2.24.30-1ubuntu1.16.04.1`
+- `libgtk2.0-common=2.24.30-1ubuntu1.16.04.1`
+- `libgtk2.0-dev=2.24.30-1ubuntu1.16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/gir1.2-gtk-2.0/copyright`, `/usr/share/doc/libgtk2.0-0/copyright`, `/usr/share/doc/libgtk2.0-bin/copyright`, `/usr/share/doc/libgtk2.0-common/copyright`, `/usr/share/doc/libgtk2.0-dev/copyright`)
 
@@ -2205,10 +2205,10 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gtk-2.0/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gtk+2.0=2.24.30-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.30-1ubuntu1.dsc' gtk+2.0_2.24.30-1ubuntu1.dsc 3967 SHA256:87c2fbf283b0c416ef27f4738c2a549b7676782d0f5b42b556cae1f2a6d844af
+$ apt-get source -qq --print-uris gtk+2.0=2.24.30-1ubuntu1.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.30-1ubuntu1.16.04.1.dsc' gtk+2.0_2.24.30-1ubuntu1.16.04.1.dsc 3999 SHA256:f17fcf1d6cdd310bf4339dfb39b04f771edca61fded409d1666d2ec0593ed687
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.30.orig.tar.xz' gtk+2.0_2.24.30.orig.tar.xz 12800276 SHA256:0d15cec3b6d55c60eac205b1f3ba81a1ed4eadd9d0f8e7c508bc7065d0c4ca50
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.30-1ubuntu1.debian.tar.xz' gtk+2.0_2.24.30-1ubuntu1.debian.tar.xz 105936 SHA256:c597a4d27cd65605f61c13c69ddfa36c7d8c5c4fbe071f3d6530776b3d43a096
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.30-1ubuntu1.16.04.1.debian.tar.xz' gtk+2.0_2.24.30-1ubuntu1.16.04.1.debian.tar.xz 106932 SHA256:53c956e48e8a08ebe4e52fb6d5f6e3befe1976f8970d63bb7d21bfc8d5922c8f
 ```
 
 ### `dpkg` source package: `gzip=1.6-4ubuntu1`
@@ -4794,19 +4794,25 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
 ```
 
-### `dpkg` source package: `linux=4.4.0-81.104`
+### `dpkg` source package: `linux=4.4.0-83.106`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-81.104`
+- `linux-libc-dev:amd64=4.4.0-83.106`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 - `redpine-signals`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.4.0-83.106
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-83.106.dsc' linux_4.4.0-83.106.dsc 9286 SHA256:e899efa79bede06b49063a91ca718d0e2f2d4a72fc7d3cb2cb917a051be6b6c8
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-83.106.diff.gz' linux_4.4.0-83.106.diff.gz 12946601 SHA256:e9f92f25eecfa9078b9890cc3e0a8762fa54f8e8cd0980a04ccf85f77758904c
+```
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-3`
 
@@ -6126,11 +6132,11 @@ $ apt-get source -qq --print-uris poco=1.3.6p1-5.1build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/poco/poco_1.3.6p1-5.1build1.diff.gz' poco_1.3.6p1-5.1build1.diff.gz 13582 SHA256:c0ca7d31085a0fb81ea2d5d4287d22fdcd0ab856fdecc2f326abce14ae4985fc
 ```
 
-### `dpkg` source package: `poppler=0.41.0-0ubuntu1.1`
+### `dpkg` source package: `poppler=0.41.0-0ubuntu1.2`
 
 Binary Packages:
 
-- `libpoppler58:amd64=0.41.0-0ubuntu1.1`
+- `libpoppler58:amd64=0.41.0-0ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler58/copyright`)
 
@@ -6139,10 +6145,10 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler58/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris poppler=0.41.0-0ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0-0ubuntu1.1.dsc' poppler_0.41.0-0ubuntu1.1.dsc 3340 SHA256:69bf5277da9c573fbd01a827a7507b79ed3c5d9c1575df140703dc943535f816
+$ apt-get source -qq --print-uris poppler=0.41.0-0ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0-0ubuntu1.2.dsc' poppler_0.41.0-0ubuntu1.2.dsc 3358 SHA256:8d44885d698a6176a2f4e599471254d843c1024518bc403ea2ae801df9213bb1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0.orig.tar.xz' poppler_0.41.0.orig.tar.xz 1655448 SHA256:420abaab63caed9e1ee28964a0ba216d1979506726164bc99ad5ade289192a1b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0-0ubuntu1.1.debian.tar.xz' poppler_0.41.0-0ubuntu1.1.debian.tar.xz 31508 SHA256:f2c4f5f0b39af28723b7067614ec38a506e70df9df6daaf85b15d82ce93db918
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0-0ubuntu1.2.debian.tar.xz' poppler_0.41.0-0ubuntu1.2.debian.tar.xz 36276 SHA256:3ba5cca43c221b475fcabc138d07b198152d8f4db5281b82374e3bb8132c197b
 ```
 
 ### `dpkg` source package: `postgresql-9.5=9.5.7-0ubuntu0.16.04`
@@ -9760,12 +9766,10 @@ Binary Packages:
 - `libfdisk1:amd64=2.27.1-6ubuntu3.2`
 - `libmount1:amd64=2.27.1-6ubuntu3.2`
 - `libsmartcols1:amd64=2.27.1-6ubuntu3.2`
-- `libuuid1:amd64=2.27.1-6ubuntu3.2`
 - `mount=2.27.1-6ubuntu3.2`
 - `util-linux=2.27.1-6ubuntu3.2`
-- `uuid-dev:amd64=2.27.1-6ubuntu3.2`
 
-Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/uuid-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
 - `BSD-2-clause`
 - `BSD-3-clause`
@@ -9786,6 +9790,41 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
+
+### `dpkg` source package: `util-linux=2.27.1-6ubuntu3.3`
+
+Binary Packages:
+
+- `libuuid1:amd64=2.27.1-6ubuntu3.3`
+- `uuid-dev:amd64=2.27.1-6ubuntu3.3`
+
+Licenses: (parsed from: `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/uuid-dev/copyright`)
+
+- `BSD-2-clause`
+- `BSD-3-clause`
+- `BSD-4-clause`
+- `GPL-2`
+- `GPL-2+`
+- `GPL-3`
+- `GPL-3+`
+- `LGPL`
+- `LGPL-2`
+- `LGPL-2+`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+- `LGPL-3`
+- `LGPL-3+`
+- `MIT`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.3
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.3.dsc' util-linux_2.27.1-6ubuntu3.3.dsc 3942 SHA256:31d135f83fbf7ea5eba164e32b43fca6489504e2c37363414c90e80ce3af375b
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1.orig.tar.xz' util-linux_2.27.1.orig.tar.xz 3964512 SHA256:0a818fcdede99aec43ffe6ca5b5388bff80d162f2f7bd4541dca94fecb87a290
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.3.debian.tar.xz' util-linux_2.27.1-6ubuntu3.3.debian.tar.xz 83780 SHA256:dd3239be2d471306a110fcf91984d41f5e49a0386a8aacd8647b4811e428c0d9
+```
 
 ### `dpkg` source package: `vdpau-video=0.7.4-5`
 

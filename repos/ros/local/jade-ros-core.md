@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:656f4910615a7fe4565a69d4f846d625948338b99b999e08794d9353648d7150`
-- Created: `2017-06-23T07:24:45.345137052Z`
-- Virtual Size: ~ 810.20 Mb  
+- Image ID: `sha256:70eb338db64a129035bf3c20b1986df6691b83ec6e26ea5a62b8ed10753d4a77`
+- Created: `2017-07-11T00:41:21.657729414Z`
+- Virtual Size: ~ 810.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -2460,18 +2460,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.4-3ubuntu3.1
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.4-3ubuntu3.1.debian.tar.gz' libyaml_0.1.4-3ubuntu3.1.debian.tar.gz 6404 SHA256:816422e1c743180409aff9247f3a298c8f98260d91da29c7315ce8bd576d53c2
 ```
 
-### `dpkg` source package: `linux=3.13.0-121.170`
+### `dpkg` source package: `linux=3.13.0-123.172`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-121.170`
+- `linux-libc-dev:amd64=3.13.0-123.172`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.13.0-123.172
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-123.172.dsc' linux_3.13.0-123.172.dsc 8127 SHA256:f5e777f68649c4df8a2ce4a898f6ad8758a3b00d858b796426b7aa7aefc25c58
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-123.172.diff.gz' linux_3.13.0-123.172.diff.gz 9480108 SHA256:4b569d050540dcbfec473f3aea9aedf34135a6c8b342f7b7b3448f6fd734790f
+```
 
 ### `dpkg` source package: `lksctp-tools=1.0.15+dfsg-1`
 
