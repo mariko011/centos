@@ -245,19 +245,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bind9=1:9.9.5.dfsg-9+deb8u11
-'http://security.debian.org/pool/updates/main/b/bind9/bind9_9.9.5.dfsg-9+deb8u11.dsc' bind9_9.9.5.dfsg-9+deb8u11.dsc 3620 SHA256:e00753c33208893e0862372f22b3aeb8a052b3e5aa7396b2e7faed57b24c2f4b
-'http://security.debian.org/pool/updates/main/b/bind9/bind9_9.9.5.dfsg.orig.tar.gz' bind9_9.9.5.dfsg.orig.tar.gz 7877309 SHA256:8108e01d5b501642d986beae7dfff9650b5bf54d87677275a8aaf4f0bcb008e6
-'http://security.debian.org/pool/updates/main/b/bind9/bind9_9.9.5.dfsg-9+deb8u11.diff.gz' bind9_9.9.5.dfsg-9+deb8u11.diff.gz 128840 SHA256:cfa5fe637c27784bf9fb9a48e2fd0432248a76c0c9f8ce3da5b589dec5b45b81
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/bind9/1:9.9.5.dfsg-9+deb8u11/
-- https://sources.debian.net/src/bind9/1:9.9.5.dfsg-9+deb8u11/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `binutils=2.25-5+deb8u1`
 
