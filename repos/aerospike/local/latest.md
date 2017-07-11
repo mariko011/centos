@@ -1,18 +1,18 @@
-# `aerospike:3.14.0`
+# `aerospike:3.14.1.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:861b0f3b11a75b5395f228ad10c7a0918516fa6d47943b15bc8ed5c3dd27b4ad`
-- Created: `2017-06-21T00:36:01.80499649Z`
-- Virtual Size: ~ 198.10 Mb  
+- Image ID: `sha256:984d0793442dd796ca5b4dbae8bdf851bd4b6daa65ede9053fed71c633df7830`
+- Created: `2017-07-10T17:06:08.44964265Z`
+- Virtual Size: ~ 198.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["asd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `AEROSPIKE_VERSION=3.14.0`
-  - `AEROSPIKE_SHA256=cb5a43ead5f37eb91532a292a28b6df5ebff6ab0f64fbda776a14b95876d881b`
+  - `AEROSPIKE_VERSION=3.14.1.1`
+  - `AEROSPIKE_SHA256=e40e12e506ff728ab76042b2062863b4dfed8edddf0df4ca8ca876d07ee496c3`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -54,11 +54,11 @@ $ apt-get source -qq --print-uris adduser=3.113+nmu3ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.113+nmu3ubuntu4.tar.gz' adduser_3.113+nmu3ubuntu4.tar.gz 367980 SHA256:6e4d44c8388b9ba85fc175fa4a48ed43bf6500913c2c631fda0e4419ae63c65a
 ```
 
-### `dpkg` source package: `aerospike-server-community=3.14.0-1`
+### `dpkg` source package: `aerospike-server-community=3.14.1.1-1`
 
 Binary Packages:
 
-- `aerospike-server-community=3.14.0-1`
+- `aerospike-server-community=3.14.1.1-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
