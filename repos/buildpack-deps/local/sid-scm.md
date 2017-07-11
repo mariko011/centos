@@ -714,19 +714,8 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `GFDL-1.3`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris findutils=4.6.0+git+20161106-2
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20161106-2.dsc' findutils_4.6.0+git+20161106-2.dsc 2220 SHA256:f92d95f03e56357bb72e897f4d8b363995f280cfdf6dedfabdec3164f3a7651a
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20161106.orig.tar.xz' findutils_4.6.0+git+20161106.orig.tar.xz 1828956 SHA256:96a3aa120d7300863f39fe56ccb6674d8cde4730b485f4f81083c1a6d33097e3
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20161106-2.debian.tar.xz' findutils_4.6.0+git+20161106-2.debian.tar.xz 26812 SHA256:aca885ac24582f5c393dbbfa362264712ee4922da0ff7aa1fc602e629c89b71b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/findutils/4.6.0+git+20161106-2/
-- https://sources.debian.net/src/findutils/4.6.0+git+20161106-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-5=5.4.1-11`
 
@@ -1156,19 +1145,8 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris krb5=1.15-1
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15-1.dsc' krb5_1.15-1.dsc 3282 SHA256:ec2a3211b949480f2419dd4731e8213635d7dfcbe1658d1000cea8fa950599aa
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15.orig.tar.gz' krb5_1.15.orig.tar.gz 9327157 SHA256:fd34752774c808ab4f6f864f935c49945f5a56b62240b1ad4ab1af7b4ded127c
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15-1.debian.tar.xz' krb5_1.15-1.debian.tar.xz 141624 SHA256:ddad4ec3d024b1164d1726c767ed8ea4900454793f5a2ce53a5cf7a123c5b4e7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/krb5/1.15-1/
-- https://sources.debian.net/src/krb5/1.15-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libassuan=2.4.3-2`
 
@@ -1411,19 +1389,8 @@ Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`)
 - `LGPL-3+`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libidn2-0=0.16-1
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_0.16-1.dsc' libidn2-0_0.16-1.dsc 1786 SHA256:d806657d36a5836ab08ccc5488372d7b95c03e10964b1c692b0948e6805bc84e
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_0.16.orig.tar.gz' libidn2-0_0.16.orig.tar.gz 1494295 SHA256:2fad9efff4082ae2143f69df76339ca99379e0e0f4231455f5d3d9d2089c688f
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_0.16-1.debian.tar.xz' libidn2-0_0.16-1.debian.tar.xz 57392 SHA256:9b643e5a5bd9f3eff52cd5508b1f15f44fe32bca4c1a6c3aa04ebad59d16272d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libidn2-0/0.16-1/
-- https://sources.debian.net/src/libidn2-0/0.16-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libidn=1.33-1`
 
@@ -2480,20 +2447,8 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.19.3-2
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.19.3-2.dsc' sqlite3_3.19.3-2.dsc 2488 SHA256:97c75c07792ce870ece082283cc519894d33887e9a04e74ec24984588a4e26ca
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.19.3.orig-www.tar.xz' sqlite3_3.19.3.orig-www.tar.xz 3475624 SHA256:d022fc888db199fbdb83f984cffd2b28bce4e5607c1aa3133bfc22f901d221d6
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.19.3.orig.tar.xz' sqlite3_3.19.3.orig.tar.xz 5694132 SHA256:f315f639127bfd36516df4ad3181e05905058507a54dd882e0c4d9d13378baae
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.19.3-2.debian.tar.xz' sqlite3_3.19.3-2.debian.tar.xz 16996 SHA256:105c2bca470d72d0519a6b19f0671cad4d156162320c3adcc019d8287f3225ed
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sqlite3/3.19.3-2/
-- https://sources.debian.net/src/sqlite3/3.19.3-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `subversion=1.9.5-1`
 
@@ -2508,19 +2463,8 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris subversion=1.9.5-1
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.5-1.dsc' subversion_1.9.5-1.dsc 3049 SHA256:27f998d99a5dc7311fa53085c580a1db81ed82ea4d4ffcaa3eddd9b3c937ed43
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.5.orig.tar.gz' subversion_1.9.5.orig.tar.gz 10615674 SHA256:280ba586c5d51d7b976b65d22d5e8e42f3908ed1c968d71120dcf534ce857a83
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.5-1.diff.gz' subversion_1.9.5-1.diff.gz 2534370 SHA256:1d876bf34c60fdd836dbc6c7b86a0c96fd6458393074c73137266f2d64865350
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/subversion/1.9.5-1/
-- https://sources.debian.net/src/subversion/1.9.5-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `systemd=232-25`
 
