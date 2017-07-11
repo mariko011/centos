@@ -1,4 +1,4 @@
-## `golang:1`
+## `golang:1-jessie`
 
 ```console
 $ docker pull golang@sha256:b8bf21db6cf238db5f79cc3b2d773d0982367876d03dc5c8b8da5c336e85e612
@@ -7,7 +7,7 @@ $ docker pull golang@sha256:b8bf21db6cf238db5f79cc3b2d773d0982367876d03dc5c8b8da
 -	Platforms:
 	-	linux; amd64
 
-### `golang:1` - linux; amd64
+### `golang:1-jessie` - linux; amd64
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
