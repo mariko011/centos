@@ -1,10 +1,10 @@
-# `silverpeas:6.0-alpha2`
+# `silverpeas:6.0-alpha3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:307d89562beedf427dae6352d37f2bd3608854ebe61af3e8d2b972bb753d123f`
-- Created: `2017-06-23T11:02:06.157792824Z`
-- Virtual Size: ~ 1.37 Gb  
+- Image ID: `sha256:e9187f81a5d645d89409e95c4b3c11152a6c9e66710a9d42517996854fa0aebf`
+- Created: `2017-07-10T18:24:23.795271702Z`
+- Virtual Size: ~ 1.45 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/run.sh"]`
@@ -17,7 +17,7 @@
   - `JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64`
   - `SILVERPEAS_HOME=/opt/silverpeas`
   - `JBOSS_HOME=/opt/wildfly`
-  - `SILVERPEAS_VERSION=6.0-alpha2`
+  - `SILVERPEAS_VERSION=6.0-alpha3`
   - `WILDFLY_VERSION=10.1.0`
 
 ## `dpkg` (`.deb`-based packages)
