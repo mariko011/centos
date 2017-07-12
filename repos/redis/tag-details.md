@@ -560,7 +560,7 @@ CMD ["redis-server"]
 ## `redis:3.0.504-windowsservercore`
 
 ```console
-$ docker pull redis@sha256:665e2b80dbbf7e54ea5c26c2839d3c0a9cdbdfc4b84c6fa18dfec56ed147d2b3
+$ docker pull redis@sha256:eba96251db687c29332fe8fbb16808dd76e0163cf5edbe857a24575fb08f3e10
 ```
 
 -	Platforms:
@@ -570,30 +570,34 @@ $ docker pull redis@sha256:665e2b80dbbf7e54ea5c26c2839d3c0a9cdbdfc4b84c6fa18dfec
 
 -	Docker Version: 1.12.2-cs2-ws-beta
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 GB (5002746656 bytes)**  
+-	Total Size: **5.2 GB (5247519128 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:31003113b44ac73dd6049498ccd9fdd95d74de9040ff6e6932aa579908ef248b`
+-	Image ID: `sha256:3a72597c5686bbcad723a8163cdb3a3ffc0edb578fbd84b9b6ff37b2f8cd5ab0`
 -	Default Command: `["redis-server.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
-# Wed, 18 Jan 2017 00:22:36 GMT
+# Tue, 22 Nov 2016 23:24:24 GMT
+RUN Apply image 10.0.14393.0
+# Mon, 10 Apr 2017 22:00:56 GMT
+RUN Install update 10.0.14393.1066
+# Wed, 26 Apr 2017 19:30:51 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 18 Jan 2017 22:49:45 GMT
+# Wed, 12 Jul 2017 18:29:32 GMT
 RUN $newPath = ('C:\Redis;{0}' -f $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath;
-# Wed, 18 Jan 2017 22:49:52 GMT
+# Wed, 12 Jul 2017 18:29:35 GMT
 ENV REDIS_VERSION=3.0.504
-# Wed, 18 Jan 2017 22:49:55 GMT
+# Wed, 12 Jul 2017 18:29:38 GMT
 ENV REDIS_DOWNLOAD_URL=https://github.com/MSOpenTech/redis/releases/download/win-3.0.504/Redis-x64-3.0.504.zip
-# Wed, 18 Jan 2017 22:50:55 GMT
+# Wed, 12 Jul 2017 18:30:03 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:REDIS_DOWNLOAD_URL); 	Invoke-WebRequest -Uri $env:REDIS_DOWNLOAD_URL -OutFile 'redis.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive redis.zip -DestinationPath C:\Redis; 		Write-Host 'Verifying install ("redis-server --version") ...'; 	redis-server --version; 		Write-Host 'Removing ...'; 	Remove-Item redis.zip -Force
-# Wed, 18 Jan 2017 22:50:59 GMT
+# Wed, 12 Jul 2017 18:30:06 GMT
 VOLUME [C:\data]
-# Wed, 18 Jan 2017 22:51:04 GMT
+# Wed, 12 Jul 2017 18:30:09 GMT
 WORKDIR C:\data
-# Wed, 18 Jan 2017 22:51:10 GMT
+# Wed, 12 Jul 2017 18:30:11 GMT
 EXPOSE 6379/tcp
-# Wed, 18 Jan 2017 22:51:19 GMT
+# Wed, 12 Jul 2017 18:30:14 GMT
 CMD ["redis-server.exe"]
 ```
 
@@ -601,50 +605,50 @@ CMD ["redis-server.exe"]
 	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:3430754e4d171ead00cf6766797a28abf3caf236f6c92c5c346ea2ad3955a129`  
-		Size: 913.1 MB (913145061 bytes)  
+	-	`sha256:6d4d50238ed13902c153bc3efc3a22f8a96bca4168ea03624d01da1063728dc2`  
+		Size: 1.2 GB (1161902022 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:2090e83c9aacacb2da7d0836cf297e9927a3137c208e2f631e39e181e31ceb90`  
-		Last Modified: Wed, 18 Jan 2017 22:56:55 GMT  
+	-	`sha256:1363e862fdfb51b375f642fff311ab5f16a4e990d8d8c0ef1a0c9b563692b9ff`  
+		Last Modified: Wed, 26 Apr 2017 19:51:11 GMT  
+		Size: 1.2 KB (1214 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:73ea6c032e11a428044834103b9fc29821b4358f7a6b710d8c743dee6236ba25`  
+		Last Modified: Wed, 12 Jul 2017 19:03:30 GMT  
+		Size: 5.0 MB (4973578 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e60efdb45fc9a1ab5a2fc47f8e2c7df825934247140b59c5c1ba043523c3773c`  
+		Last Modified: Wed, 12 Jul 2017 19:03:28 GMT  
 		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8da44b0086252f4702e3a56302c8f8b41465bed5f455838bf271fced6fc93a0c`  
-		Last Modified: Wed, 18 Jan 2017 22:56:57 GMT  
-		Size: 9.1 MB (9118824 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05debd25f02d505fcd5a68db4988714dc0cd9754892cf3aedb4ebdcf2ff71638`  
-		Last Modified: Wed, 18 Jan 2017 22:56:55 GMT  
-		Size: 1.2 KB (1221 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d705e50e17a22b40631136aee6fab031337263e3cf3264c2ce4f6a188ce4d250`  
-		Last Modified: Wed, 18 Jan 2017 22:56:54 GMT  
-		Size: 1.2 KB (1226 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:074305b37ed17d8d277c347854d8b02a82b0fcc18399fe609c53409ae5d14f97`  
-		Last Modified: Wed, 18 Jan 2017 22:56:54 GMT  
-		Size: 10.5 MB (10488303 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40de2940e744d0afa24d6af318d3acea7c2089c69065dee2e1c79c32f44699f9`  
-		Last Modified: Wed, 18 Jan 2017 22:56:50 GMT  
-		Size: 1.2 KB (1216 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6aa3c7fbb50da26797dc9abe65cda02e4296e9a105f1b79c35e4f319e2f97ea6`  
-		Last Modified: Wed, 18 Jan 2017 22:56:50 GMT  
-		Size: 1.2 KB (1235 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d9810fd3c4e4e81239d58573f71fb3dfffab17b20a0ca86a84e5e026a82da74`  
-		Last Modified: Wed, 18 Jan 2017 22:56:50 GMT  
+	-	`sha256:713540b1283d6aeb991bc3693c29e8098be3fd60cd58fa86c95f8f1b34157898`  
+		Last Modified: Wed, 12 Jul 2017 19:03:29 GMT  
 		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f01b2ae1e81bf8e47caabe58ac881e7addaa9c8fd0e7d482854ade96b95977d`  
-		Last Modified: Wed, 18 Jan 2017 22:56:50 GMT  
-		Size: 1.2 KB (1233 bytes)  
+	-	`sha256:7528f1817d12c0eb801d8890a21ecdc3633d4fc37720b7778c7d22c5e9addc5c`  
+		Last Modified: Wed, 12 Jul 2017 19:03:28 GMT  
+		Size: 10.6 MB (10649092 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b673021b810685c0f1e608978ab925ed10c4cf0244db5b68caa9df8edf6f04bc`  
+		Last Modified: Wed, 12 Jul 2017 19:03:25 GMT  
+		Size: 1.2 KB (1222 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b7909cc39ce210c731e4c7337d5c10e0a5db7bba519a72956c5522f6a0c6ac34`  
+		Last Modified: Wed, 12 Jul 2017 19:03:25 GMT  
+		Size: 1.2 KB (1219 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eba2fada57b220a60a6a632d14c1697bdc3b3c85390d0e46406642f745f22353`  
+		Last Modified: Wed, 12 Jul 2017 19:03:26 GMT  
+		Size: 1.2 KB (1225 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9b8ec3c83f66fd25f2208a007e24e756ddf20f6d1e6dc2dd74cb50f8a80a4b62`  
+		Last Modified: Wed, 12 Jul 2017 19:03:26 GMT  
+		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:3.0-windowsservercore`
 
 ```console
-$ docker pull redis@sha256:665e2b80dbbf7e54ea5c26c2839d3c0a9cdbdfc4b84c6fa18dfec56ed147d2b3
+$ docker pull redis@sha256:eba96251db687c29332fe8fbb16808dd76e0163cf5edbe857a24575fb08f3e10
 ```
 
 -	Platforms:
@@ -654,30 +658,34 @@ $ docker pull redis@sha256:665e2b80dbbf7e54ea5c26c2839d3c0a9cdbdfc4b84c6fa18dfec
 
 -	Docker Version: 1.12.2-cs2-ws-beta
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 GB (5002746656 bytes)**  
+-	Total Size: **5.2 GB (5247519128 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:31003113b44ac73dd6049498ccd9fdd95d74de9040ff6e6932aa579908ef248b`
+-	Image ID: `sha256:3a72597c5686bbcad723a8163cdb3a3ffc0edb578fbd84b9b6ff37b2f8cd5ab0`
 -	Default Command: `["redis-server.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
-# Wed, 18 Jan 2017 00:22:36 GMT
+# Tue, 22 Nov 2016 23:24:24 GMT
+RUN Apply image 10.0.14393.0
+# Mon, 10 Apr 2017 22:00:56 GMT
+RUN Install update 10.0.14393.1066
+# Wed, 26 Apr 2017 19:30:51 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 18 Jan 2017 22:49:45 GMT
+# Wed, 12 Jul 2017 18:29:32 GMT
 RUN $newPath = ('C:\Redis;{0}' -f $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath;
-# Wed, 18 Jan 2017 22:49:52 GMT
+# Wed, 12 Jul 2017 18:29:35 GMT
 ENV REDIS_VERSION=3.0.504
-# Wed, 18 Jan 2017 22:49:55 GMT
+# Wed, 12 Jul 2017 18:29:38 GMT
 ENV REDIS_DOWNLOAD_URL=https://github.com/MSOpenTech/redis/releases/download/win-3.0.504/Redis-x64-3.0.504.zip
-# Wed, 18 Jan 2017 22:50:55 GMT
+# Wed, 12 Jul 2017 18:30:03 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:REDIS_DOWNLOAD_URL); 	Invoke-WebRequest -Uri $env:REDIS_DOWNLOAD_URL -OutFile 'redis.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive redis.zip -DestinationPath C:\Redis; 		Write-Host 'Verifying install ("redis-server --version") ...'; 	redis-server --version; 		Write-Host 'Removing ...'; 	Remove-Item redis.zip -Force
-# Wed, 18 Jan 2017 22:50:59 GMT
+# Wed, 12 Jul 2017 18:30:06 GMT
 VOLUME [C:\data]
-# Wed, 18 Jan 2017 22:51:04 GMT
+# Wed, 12 Jul 2017 18:30:09 GMT
 WORKDIR C:\data
-# Wed, 18 Jan 2017 22:51:10 GMT
+# Wed, 12 Jul 2017 18:30:11 GMT
 EXPOSE 6379/tcp
-# Wed, 18 Jan 2017 22:51:19 GMT
+# Wed, 12 Jul 2017 18:30:14 GMT
 CMD ["redis-server.exe"]
 ```
 
@@ -685,50 +693,50 @@ CMD ["redis-server.exe"]
 	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:3430754e4d171ead00cf6766797a28abf3caf236f6c92c5c346ea2ad3955a129`  
-		Size: 913.1 MB (913145061 bytes)  
+	-	`sha256:6d4d50238ed13902c153bc3efc3a22f8a96bca4168ea03624d01da1063728dc2`  
+		Size: 1.2 GB (1161902022 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:2090e83c9aacacb2da7d0836cf297e9927a3137c208e2f631e39e181e31ceb90`  
-		Last Modified: Wed, 18 Jan 2017 22:56:55 GMT  
+	-	`sha256:1363e862fdfb51b375f642fff311ab5f16a4e990d8d8c0ef1a0c9b563692b9ff`  
+		Last Modified: Wed, 26 Apr 2017 19:51:11 GMT  
+		Size: 1.2 KB (1214 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:73ea6c032e11a428044834103b9fc29821b4358f7a6b710d8c743dee6236ba25`  
+		Last Modified: Wed, 12 Jul 2017 19:03:30 GMT  
+		Size: 5.0 MB (4973578 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e60efdb45fc9a1ab5a2fc47f8e2c7df825934247140b59c5c1ba043523c3773c`  
+		Last Modified: Wed, 12 Jul 2017 19:03:28 GMT  
 		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8da44b0086252f4702e3a56302c8f8b41465bed5f455838bf271fced6fc93a0c`  
-		Last Modified: Wed, 18 Jan 2017 22:56:57 GMT  
-		Size: 9.1 MB (9118824 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05debd25f02d505fcd5a68db4988714dc0cd9754892cf3aedb4ebdcf2ff71638`  
-		Last Modified: Wed, 18 Jan 2017 22:56:55 GMT  
-		Size: 1.2 KB (1221 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d705e50e17a22b40631136aee6fab031337263e3cf3264c2ce4f6a188ce4d250`  
-		Last Modified: Wed, 18 Jan 2017 22:56:54 GMT  
-		Size: 1.2 KB (1226 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:074305b37ed17d8d277c347854d8b02a82b0fcc18399fe609c53409ae5d14f97`  
-		Last Modified: Wed, 18 Jan 2017 22:56:54 GMT  
-		Size: 10.5 MB (10488303 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:40de2940e744d0afa24d6af318d3acea7c2089c69065dee2e1c79c32f44699f9`  
-		Last Modified: Wed, 18 Jan 2017 22:56:50 GMT  
-		Size: 1.2 KB (1216 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6aa3c7fbb50da26797dc9abe65cda02e4296e9a105f1b79c35e4f319e2f97ea6`  
-		Last Modified: Wed, 18 Jan 2017 22:56:50 GMT  
-		Size: 1.2 KB (1235 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d9810fd3c4e4e81239d58573f71fb3dfffab17b20a0ca86a84e5e026a82da74`  
-		Last Modified: Wed, 18 Jan 2017 22:56:50 GMT  
+	-	`sha256:713540b1283d6aeb991bc3693c29e8098be3fd60cd58fa86c95f8f1b34157898`  
+		Last Modified: Wed, 12 Jul 2017 19:03:29 GMT  
 		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6f01b2ae1e81bf8e47caabe58ac881e7addaa9c8fd0e7d482854ade96b95977d`  
-		Last Modified: Wed, 18 Jan 2017 22:56:50 GMT  
-		Size: 1.2 KB (1233 bytes)  
+	-	`sha256:7528f1817d12c0eb801d8890a21ecdc3633d4fc37720b7778c7d22c5e9addc5c`  
+		Last Modified: Wed, 12 Jul 2017 19:03:28 GMT  
+		Size: 10.6 MB (10649092 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b673021b810685c0f1e608978ab925ed10c4cf0244db5b68caa9df8edf6f04bc`  
+		Last Modified: Wed, 12 Jul 2017 19:03:25 GMT  
+		Size: 1.2 KB (1222 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b7909cc39ce210c731e4c7337d5c10e0a5db7bba519a72956c5522f6a0c6ac34`  
+		Last Modified: Wed, 12 Jul 2017 19:03:25 GMT  
+		Size: 1.2 KB (1219 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eba2fada57b220a60a6a632d14c1697bdc3b3c85390d0e46406642f745f22353`  
+		Last Modified: Wed, 12 Jul 2017 19:03:26 GMT  
+		Size: 1.2 KB (1225 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9b8ec3c83f66fd25f2208a007e24e756ddf20f6d1e6dc2dd74cb50f8a80a4b62`  
+		Last Modified: Wed, 12 Jul 2017 19:03:26 GMT  
+		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:3.0.504-nanoserver`
 
 ```console
-$ docker pull redis@sha256:9b3a1d41752327ad7a8e6038b706d46f0c291ca59b7eb99c9ce3aece167736ba
+$ docker pull redis@sha256:1703e1f381b517ee02440e8b72a4a524e58ad938c79113147fb9176d8810aef2
 ```
 
 -	Platforms:
@@ -738,30 +746,34 @@ $ docker pull redis@sha256:9b3a1d41752327ad7a8e6038b706d46f0c291ca59b7eb99c9ce3a
 
 -	Docker Version: 1.12.2-cs2-ws-beta
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **340.9 MB (340944053 bytes)**  
+-	Total Size: **376.4 MB (376372136 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64716473eb329e6f572d5eecfda9de417b5787ae036f6f8c66d00af53f9ac955`
+-	Image ID: `sha256:bea491f533b60c25e5f8ebcd8c535c1aae3a35f49b61acc227af6c8b3638cdfc`
 -	Default Command: `["redis-server.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
-# Fri, 13 Jan 2017 17:53:28 GMT
+# Sun, 20 Nov 2016 11:39:18 GMT
+RUN Apply image 10.0.14393.0
+# Fri, 07 Apr 2017 09:40:17 GMT
+RUN Install update 10.0.14393.1066
+# Wed, 26 Apr 2017 19:37:26 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 18 Jan 2017 22:52:13 GMT
+# Wed, 12 Jul 2017 18:30:27 GMT
 RUN $newPath = ('C:\Redis;{0}' -f $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath;
-# Wed, 18 Jan 2017 22:52:16 GMT
+# Wed, 12 Jul 2017 18:30:29 GMT
 ENV REDIS_VERSION=3.0.504
-# Wed, 18 Jan 2017 22:52:22 GMT
+# Wed, 12 Jul 2017 18:30:32 GMT
 ENV REDIS_DOWNLOAD_URL=https://github.com/MSOpenTech/redis/releases/download/win-3.0.504/Redis-x64-3.0.504.zip
-# Wed, 18 Jan 2017 22:53:02 GMT
+# Wed, 12 Jul 2017 18:30:48 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:REDIS_DOWNLOAD_URL); 	Invoke-WebRequest -Uri $env:REDIS_DOWNLOAD_URL -OutFile 'redis.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive redis.zip -DestinationPath C:\Redis; 		Write-Host 'Verifying install ("redis-server --version") ...'; 	redis-server --version; 		Write-Host 'Removing ...'; 	Remove-Item redis.zip -Force
-# Wed, 18 Jan 2017 22:53:05 GMT
+# Wed, 12 Jul 2017 18:30:50 GMT
 VOLUME [C:\data]
-# Wed, 18 Jan 2017 22:53:12 GMT
+# Wed, 12 Jul 2017 18:30:53 GMT
 WORKDIR C:\data
-# Wed, 18 Jan 2017 22:53:15 GMT
+# Wed, 12 Jul 2017 18:30:55 GMT
 EXPOSE 6379/tcp
-# Wed, 18 Jan 2017 22:53:18 GMT
+# Wed, 12 Jul 2017 18:30:57 GMT
 CMD ["redis-server.exe"]
 ```
 
@@ -769,50 +781,50 @@ CMD ["redis-server.exe"]
 	-	`sha256:bce2fbc256ea437a87dadac2f69aabd25bed4f56255549090056c1131fad0277`  
 		Size: 252.7 MB (252691002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:3ac17e2e6106d09a44642a437c318092eddd284afea0b4e707e89f6cec7a18ef`  
-		Size: 80.6 MB (80617684 bytes)  
+	-	`sha256:6a43ac69611f40511708beba10dfe6fbe3e266ca933b6fd49c87a9f31f46f46c`  
+		Size: 116.0 MB (116037241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:e75762e22d922ed4bb69ae4e673c912389d9d70fd91eaa33cd0732f0a8e28a4e`  
-		Last Modified: Fri, 13 Jan 2017 18:00:06 GMT  
-		Size: 951.0 B  
+	-	`sha256:acc75acac61e9635ae7c57f4d74b6ac6a2efef41d7b17052ff6f5bc0fb92e960`  
+		Last Modified: Wed, 26 Apr 2017 19:51:40 GMT  
+		Size: 968.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de31e43b05dd874f8ca7edfb3aac6545866c500853b7e509ba14e9ae38ad2097`  
-		Last Modified: Wed, 18 Jan 2017 22:57:11 GMT  
-		Size: 872.2 KB (872241 bytes)  
+	-	`sha256:60f17e54c8f52dbb6a5246a2a56f6c9de1762cd61e67319d2484ea2b6367c8f0`  
+		Last Modified: Wed, 12 Jul 2017 19:03:44 GMT  
+		Size: 873.0 KB (873031 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc42d6aa048346ecb0ffbbe7d7de7113cf044664ace34bf3b8808bfba9c2d1e0`  
-		Last Modified: Wed, 18 Jan 2017 22:57:10 GMT  
-		Size: 955.0 B  
+	-	`sha256:275cffa3f5585958ee7728b4591b9883ab3b49f1a10db88e71758bc21b3ff034`  
+		Last Modified: Wed, 12 Jul 2017 19:03:44 GMT  
+		Size: 958.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb4f5f2aea20ab72b0318db79b248da0413e78b81892b8b00570fd35740c1608`  
-		Last Modified: Wed, 18 Jan 2017 22:57:10 GMT  
-		Size: 956.0 B  
+	-	`sha256:636d9712b454cbbb855a59b3886778f02214b2ae8cbb9a4d858111e91c000e5b`  
+		Last Modified: Wed, 12 Jul 2017 19:03:43 GMT  
+		Size: 958.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43c544bd7a66689165d89e0e9586e7b4bb8623372f57a2b236913e5e651e7aad`  
-		Last Modified: Wed, 18 Jan 2017 22:57:09 GMT  
-		Size: 6.8 MB (6756400 bytes)  
+	-	`sha256:ca115997c2aee9eefd027894357c94779bdf57dc64afaa06db14607addd1dfc5`  
+		Last Modified: Wed, 12 Jul 2017 19:03:46 GMT  
+		Size: 6.8 MB (6764156 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fcd44c0ae3b6b24a1e4cabfb6da514db05da87d277f3e416bbd0ab8ee93a31c7`  
-		Last Modified: Wed, 18 Jan 2017 22:57:07 GMT  
-		Size: 969.0 B  
+	-	`sha256:9116bd44766ff93b20dac72ff35125552d3c5bcefcf1f3118db0682b51c6df7b`  
+		Last Modified: Wed, 12 Jul 2017 19:03:40 GMT  
+		Size: 961.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:848cd6a30bd1810e53e8fe0ed08f060890d141b591bb70bc916b25064ab00ac7`  
-		Last Modified: Wed, 18 Jan 2017 22:57:07 GMT  
-		Size: 969.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2516602aeba60687d4da473e7a48cbe63a4091325d8bfeb74379d5fe67a0f8ea`  
-		Last Modified: Wed, 18 Jan 2017 22:57:08 GMT  
+	-	`sha256:f88ee9b2b154750a7bc4e358f4ccd4349f5db0b627e058af7d5b91a6fe59e94a`  
+		Last Modified: Wed, 12 Jul 2017 19:03:40 GMT  
 		Size: 960.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae0273255796b68e51b9b7d82ea2fb7f215981da61f73f51f74988ab9e982cf1`  
-		Last Modified: Wed, 18 Jan 2017 22:57:07 GMT  
-		Size: 966.0 B  
+	-	`sha256:41cc2d42d714e5f0236e0c2f542075204055f16d73f433f911702c1346c22b30`  
+		Last Modified: Wed, 12 Jul 2017 19:03:40 GMT  
+		Size: 955.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b4bea4a8469cc916690cd8c080b92879a6e88b87df39a7f7e7fd0b362edcda92`  
+		Last Modified: Wed, 12 Jul 2017 19:03:40 GMT  
+		Size: 946.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:3.0-nanoserver`
 
 ```console
-$ docker pull redis@sha256:9b3a1d41752327ad7a8e6038b706d46f0c291ca59b7eb99c9ce3aece167736ba
+$ docker pull redis@sha256:1703e1f381b517ee02440e8b72a4a524e58ad938c79113147fb9176d8810aef2
 ```
 
 -	Platforms:
@@ -822,30 +834,34 @@ $ docker pull redis@sha256:9b3a1d41752327ad7a8e6038b706d46f0c291ca59b7eb99c9ce3a
 
 -	Docker Version: 1.12.2-cs2-ws-beta
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **340.9 MB (340944053 bytes)**  
+-	Total Size: **376.4 MB (376372136 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64716473eb329e6f572d5eecfda9de417b5787ae036f6f8c66d00af53f9ac955`
+-	Image ID: `sha256:bea491f533b60c25e5f8ebcd8c535c1aae3a35f49b61acc227af6c8b3638cdfc`
 -	Default Command: `["redis-server.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
-# Fri, 13 Jan 2017 17:53:28 GMT
+# Sun, 20 Nov 2016 11:39:18 GMT
+RUN Apply image 10.0.14393.0
+# Fri, 07 Apr 2017 09:40:17 GMT
+RUN Install update 10.0.14393.1066
+# Wed, 26 Apr 2017 19:37:26 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 18 Jan 2017 22:52:13 GMT
+# Wed, 12 Jul 2017 18:30:27 GMT
 RUN $newPath = ('C:\Redis;{0}' -f $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath;
-# Wed, 18 Jan 2017 22:52:16 GMT
+# Wed, 12 Jul 2017 18:30:29 GMT
 ENV REDIS_VERSION=3.0.504
-# Wed, 18 Jan 2017 22:52:22 GMT
+# Wed, 12 Jul 2017 18:30:32 GMT
 ENV REDIS_DOWNLOAD_URL=https://github.com/MSOpenTech/redis/releases/download/win-3.0.504/Redis-x64-3.0.504.zip
-# Wed, 18 Jan 2017 22:53:02 GMT
+# Wed, 12 Jul 2017 18:30:48 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:REDIS_DOWNLOAD_URL); 	Invoke-WebRequest -Uri $env:REDIS_DOWNLOAD_URL -OutFile 'redis.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive redis.zip -DestinationPath C:\Redis; 		Write-Host 'Verifying install ("redis-server --version") ...'; 	redis-server --version; 		Write-Host 'Removing ...'; 	Remove-Item redis.zip -Force
-# Wed, 18 Jan 2017 22:53:05 GMT
+# Wed, 12 Jul 2017 18:30:50 GMT
 VOLUME [C:\data]
-# Wed, 18 Jan 2017 22:53:12 GMT
+# Wed, 12 Jul 2017 18:30:53 GMT
 WORKDIR C:\data
-# Wed, 18 Jan 2017 22:53:15 GMT
+# Wed, 12 Jul 2017 18:30:55 GMT
 EXPOSE 6379/tcp
-# Wed, 18 Jan 2017 22:53:18 GMT
+# Wed, 12 Jul 2017 18:30:57 GMT
 CMD ["redis-server.exe"]
 ```
 
@@ -853,44 +869,44 @@ CMD ["redis-server.exe"]
 	-	`sha256:bce2fbc256ea437a87dadac2f69aabd25bed4f56255549090056c1131fad0277`  
 		Size: 252.7 MB (252691002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:3ac17e2e6106d09a44642a437c318092eddd284afea0b4e707e89f6cec7a18ef`  
-		Size: 80.6 MB (80617684 bytes)  
+	-	`sha256:6a43ac69611f40511708beba10dfe6fbe3e266ca933b6fd49c87a9f31f46f46c`  
+		Size: 116.0 MB (116037241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:e75762e22d922ed4bb69ae4e673c912389d9d70fd91eaa33cd0732f0a8e28a4e`  
-		Last Modified: Fri, 13 Jan 2017 18:00:06 GMT  
-		Size: 951.0 B  
+	-	`sha256:acc75acac61e9635ae7c57f4d74b6ac6a2efef41d7b17052ff6f5bc0fb92e960`  
+		Last Modified: Wed, 26 Apr 2017 19:51:40 GMT  
+		Size: 968.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de31e43b05dd874f8ca7edfb3aac6545866c500853b7e509ba14e9ae38ad2097`  
-		Last Modified: Wed, 18 Jan 2017 22:57:11 GMT  
-		Size: 872.2 KB (872241 bytes)  
+	-	`sha256:60f17e54c8f52dbb6a5246a2a56f6c9de1762cd61e67319d2484ea2b6367c8f0`  
+		Last Modified: Wed, 12 Jul 2017 19:03:44 GMT  
+		Size: 873.0 KB (873031 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc42d6aa048346ecb0ffbbe7d7de7113cf044664ace34bf3b8808bfba9c2d1e0`  
-		Last Modified: Wed, 18 Jan 2017 22:57:10 GMT  
-		Size: 955.0 B  
+	-	`sha256:275cffa3f5585958ee7728b4591b9883ab3b49f1a10db88e71758bc21b3ff034`  
+		Last Modified: Wed, 12 Jul 2017 19:03:44 GMT  
+		Size: 958.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bb4f5f2aea20ab72b0318db79b248da0413e78b81892b8b00570fd35740c1608`  
-		Last Modified: Wed, 18 Jan 2017 22:57:10 GMT  
-		Size: 956.0 B  
+	-	`sha256:636d9712b454cbbb855a59b3886778f02214b2ae8cbb9a4d858111e91c000e5b`  
+		Last Modified: Wed, 12 Jul 2017 19:03:43 GMT  
+		Size: 958.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43c544bd7a66689165d89e0e9586e7b4bb8623372f57a2b236913e5e651e7aad`  
-		Last Modified: Wed, 18 Jan 2017 22:57:09 GMT  
-		Size: 6.8 MB (6756400 bytes)  
+	-	`sha256:ca115997c2aee9eefd027894357c94779bdf57dc64afaa06db14607addd1dfc5`  
+		Last Modified: Wed, 12 Jul 2017 19:03:46 GMT  
+		Size: 6.8 MB (6764156 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fcd44c0ae3b6b24a1e4cabfb6da514db05da87d277f3e416bbd0ab8ee93a31c7`  
-		Last Modified: Wed, 18 Jan 2017 22:57:07 GMT  
-		Size: 969.0 B  
+	-	`sha256:9116bd44766ff93b20dac72ff35125552d3c5bcefcf1f3118db0682b51c6df7b`  
+		Last Modified: Wed, 12 Jul 2017 19:03:40 GMT  
+		Size: 961.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:848cd6a30bd1810e53e8fe0ed08f060890d141b591bb70bc916b25064ab00ac7`  
-		Last Modified: Wed, 18 Jan 2017 22:57:07 GMT  
-		Size: 969.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2516602aeba60687d4da473e7a48cbe63a4091325d8bfeb74379d5fe67a0f8ea`  
-		Last Modified: Wed, 18 Jan 2017 22:57:08 GMT  
+	-	`sha256:f88ee9b2b154750a7bc4e358f4ccd4349f5db0b627e058af7d5b91a6fe59e94a`  
+		Last Modified: Wed, 12 Jul 2017 19:03:40 GMT  
 		Size: 960.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae0273255796b68e51b9b7d82ea2fb7f215981da61f73f51f74988ab9e982cf1`  
-		Last Modified: Wed, 18 Jan 2017 22:57:07 GMT  
-		Size: 966.0 B  
+	-	`sha256:41cc2d42d714e5f0236e0c2f542075204055f16d73f433f911702c1346c22b30`  
+		Last Modified: Wed, 12 Jul 2017 19:03:40 GMT  
+		Size: 955.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b4bea4a8469cc916690cd8c080b92879a6e88b87df39a7f7e7fd0b362edcda92`  
+		Last Modified: Wed, 12 Jul 2017 19:03:40 GMT  
+		Size: 946.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:3.2.9`
@@ -1872,7 +1888,7 @@ CMD ["redis-server"]
 ## `redis:3.2.100-windowsservercore`
 
 ```console
-$ docker pull redis@sha256:60e2f0698630df1df2091372a143f39ebe1fa39a6b1f89fd7d0f566700046ac7
+$ docker pull redis@sha256:ac7ef575d44c8653443165c600fb2f3ea9d9019843713f2a7575775c2c42ad0b
 ```
 
 -	Platforms:
@@ -1882,32 +1898,36 @@ $ docker pull redis@sha256:60e2f0698630df1df2091372a143f39ebe1fa39a6b1f89fd7d0f5
 
 -	Docker Version: 1.12.2-cs2-ws-beta
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 GB (5011103673 bytes)**  
+-	Total Size: **5.3 GB (5251546602 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e19f818176bbd1aeb3f95daea3bd4513cf35e00801199b4f8c03fff6db79c07`
+-	Image ID: `sha256:0a2ce94c3cdb33b022c12c24fb256cd3059585ef4e914e82000fd05850eec176`
 -	Default Command: `["redis-server.exe","C:\\Redis\\redis.docker.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
-# Wed, 18 Jan 2017 00:22:36 GMT
+# Tue, 22 Nov 2016 23:24:24 GMT
+RUN Apply image 10.0.14393.0
+# Mon, 10 Apr 2017 22:00:56 GMT
+RUN Install update 10.0.14393.1066
+# Wed, 26 Apr 2017 19:30:51 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 18 Jan 2017 22:49:45 GMT
+# Wed, 12 Jul 2017 18:29:32 GMT
 RUN $newPath = ('C:\Redis;{0}' -f $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath;
-# Wed, 18 Jan 2017 22:53:25 GMT
+# Wed, 12 Jul 2017 18:31:00 GMT
 ENV REDIS_VERSION=3.2.100
-# Wed, 18 Jan 2017 22:53:33 GMT
+# Wed, 12 Jul 2017 18:31:03 GMT
 ENV REDIS_DOWNLOAD_URL=https://github.com/MSOpenTech/redis/releases/download/win-3.2.100/Redis-x64-3.2.100.zip
-# Wed, 18 Jan 2017 22:54:22 GMT
+# Wed, 12 Jul 2017 18:31:30 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:REDIS_DOWNLOAD_URL); 	Invoke-WebRequest -Uri $env:REDIS_DOWNLOAD_URL -OutFile 'redis.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive redis.zip -DestinationPath C:\Redis; 		Write-Host 'Verifying install ("redis-server --version") ...'; 	redis-server --version; 		Write-Host 'Removing ...'; 	Remove-Item redis.zip -Force
-# Wed, 18 Jan 2017 22:55:24 GMT
+# Wed, 12 Jul 2017 18:31:49 GMT
 RUN (Get-Content C:\Redis\redis.windows.conf) 	-Replace '^(bind)\s+.*$', '$1 0.0.0.0' 	-Replace '^(protected-mode)\s+.*$', '$1 no' 	| Set-Content C:\Redis\redis.docker.conf
-# Wed, 18 Jan 2017 22:55:29 GMT
+# Wed, 12 Jul 2017 18:31:52 GMT
 VOLUME [C:\data]
-# Wed, 18 Jan 2017 22:55:32 GMT
+# Wed, 12 Jul 2017 18:31:55 GMT
 WORKDIR C:\data
-# Wed, 18 Jan 2017 22:55:37 GMT
+# Wed, 12 Jul 2017 18:31:58 GMT
 EXPOSE 6379/tcp
-# Wed, 18 Jan 2017 22:55:41 GMT
+# Wed, 12 Jul 2017 18:32:01 GMT
 CMD ["redis-server.exe" "C:\\Redis\\redis.docker.conf"]
 ```
 
@@ -1915,54 +1935,54 @@ CMD ["redis-server.exe" "C:\\Redis\\redis.docker.conf"]
 	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:3430754e4d171ead00cf6766797a28abf3caf236f6c92c5c346ea2ad3955a129`  
-		Size: 913.1 MB (913145061 bytes)  
+	-	`sha256:6d4d50238ed13902c153bc3efc3a22f8a96bca4168ea03624d01da1063728dc2`  
+		Size: 1.2 GB (1161902022 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:2090e83c9aacacb2da7d0836cf297e9927a3137c208e2f631e39e181e31ceb90`  
-		Last Modified: Wed, 18 Jan 2017 22:56:55 GMT  
+	-	`sha256:1363e862fdfb51b375f642fff311ab5f16a4e990d8d8c0ef1a0c9b563692b9ff`  
+		Last Modified: Wed, 26 Apr 2017 19:51:11 GMT  
+		Size: 1.2 KB (1214 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:73ea6c032e11a428044834103b9fc29821b4358f7a6b710d8c743dee6236ba25`  
+		Last Modified: Wed, 12 Jul 2017 19:03:30 GMT  
+		Size: 5.0 MB (4973578 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b3607121f81f68b4aa608a0acc53b076093c929c22f045e7a0d1eb7d3a0864e0`  
+		Last Modified: Wed, 12 Jul 2017 19:03:59 GMT  
+		Size: 1.2 KB (1225 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e81c9cf88ce8d952d48c102f1996ec8f3f0223e88a7eb596e1db13fad9ebf771`  
+		Last Modified: Wed, 12 Jul 2017 19:04:00 GMT  
+		Size: 1.2 KB (1212 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cc2f2226cfefa37b23b7e0f5b40a4b726ac700e80ea541ee4a6581ebe6b82d48`  
+		Last Modified: Wed, 12 Jul 2017 19:04:02 GMT  
+		Size: 10.0 MB (9998392 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b438e38874fe01c8a1b657cd16bcc95533d2083c801420559648dececcb1fde0`  
+		Last Modified: Wed, 12 Jul 2017 19:03:57 GMT  
+		Size: 4.7 MB (4678186 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6ac4643d4cd2e55985946ddf8c92d5cd53a43de7c9a330b96cbde76df53194de`  
+		Last Modified: Wed, 12 Jul 2017 19:03:56 GMT  
+		Size: 1.2 KB (1211 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a805c9cc0761d18915c329d645a495332a1cced4fbe07542b632cf1e4dfdfcb2`  
+		Last Modified: Wed, 12 Jul 2017 19:03:56 GMT  
 		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8da44b0086252f4702e3a56302c8f8b41465bed5f455838bf271fced6fc93a0c`  
-		Last Modified: Wed, 18 Jan 2017 22:56:57 GMT  
-		Size: 9.1 MB (9118824 bytes)  
+	-	`sha256:26999c73903ac435d968c63c9b09b90b8145b4a44ac944aef894592f6c70e723`  
+		Last Modified: Wed, 12 Jul 2017 19:03:56 GMT  
+		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:384b378de0002282c7b070dee79c606a44d9fbb8fa7e9dfd07e41a72d18f935f`  
-		Last Modified: Wed, 18 Jan 2017 22:57:26 GMT  
-		Size: 1.2 KB (1217 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90e71dc0a25426b16deb2e33f62fc9f58105e7bfbcf8c3160c9c21ae39b0cf86`  
-		Last Modified: Wed, 18 Jan 2017 22:57:25 GMT  
-		Size: 1.2 KB (1231 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc4ffe232243d863a27a6fe85e1bd3f3fab3a6161921dc38f472031fcb4c7303`  
-		Last Modified: Wed, 18 Jan 2017 22:57:30 GMT  
-		Size: 14.3 MB (14310413 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0188853bfa921906bf823bcffe4249ebad6294e84d7bcc806e251e36ca259ad5`  
-		Last Modified: Wed, 18 Jan 2017 22:57:22 GMT  
-		Size: 4.5 MB (4534905 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec86ffa3d1d0c5fa801f6fd03736ab2d6b4d546db71bb6e634d4ce5006e1c5c7`  
-		Last Modified: Wed, 18 Jan 2017 22:57:20 GMT  
-		Size: 1.2 KB (1228 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07eda4f36764030981f1274d0cf9d991012ebc5b336c479b6db4d3c61a4f7ed6`  
-		Last Modified: Wed, 18 Jan 2017 22:57:20 GMT  
-		Size: 1.2 KB (1222 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb1b5f4cf90fb05950e298d1aa9d1dc2874e497fef0f5329c5ce55251d7cf7d9`  
-		Last Modified: Wed, 18 Jan 2017 22:57:20 GMT  
-		Size: 1.2 KB (1233 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc54094d7877932bd12d15a50fa999e0d90132b29b9734831226c0002e4c909a`  
-		Last Modified: Wed, 18 Jan 2017 22:57:20 GMT  
-		Size: 1.2 KB (1221 bytes)  
+	-	`sha256:78b79d7413cd4602af40fbaa54d73042a9f86b07c5e219bb098d2c6d4055f15d`  
+		Last Modified: Wed, 12 Jul 2017 19:03:57 GMT  
+		Size: 1.2 KB (1224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:3.2-windowsservercore`
 
 ```console
-$ docker pull redis@sha256:60e2f0698630df1df2091372a143f39ebe1fa39a6b1f89fd7d0f566700046ac7
+$ docker pull redis@sha256:ac7ef575d44c8653443165c600fb2f3ea9d9019843713f2a7575775c2c42ad0b
 ```
 
 -	Platforms:
@@ -1972,32 +1992,36 @@ $ docker pull redis@sha256:60e2f0698630df1df2091372a143f39ebe1fa39a6b1f89fd7d0f5
 
 -	Docker Version: 1.12.2-cs2-ws-beta
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 GB (5011103673 bytes)**  
+-	Total Size: **5.3 GB (5251546602 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e19f818176bbd1aeb3f95daea3bd4513cf35e00801199b4f8c03fff6db79c07`
+-	Image ID: `sha256:0a2ce94c3cdb33b022c12c24fb256cd3059585ef4e914e82000fd05850eec176`
 -	Default Command: `["redis-server.exe","C:\\Redis\\redis.docker.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
-# Wed, 18 Jan 2017 00:22:36 GMT
+# Tue, 22 Nov 2016 23:24:24 GMT
+RUN Apply image 10.0.14393.0
+# Mon, 10 Apr 2017 22:00:56 GMT
+RUN Install update 10.0.14393.1066
+# Wed, 26 Apr 2017 19:30:51 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 18 Jan 2017 22:49:45 GMT
+# Wed, 12 Jul 2017 18:29:32 GMT
 RUN $newPath = ('C:\Redis;{0}' -f $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath;
-# Wed, 18 Jan 2017 22:53:25 GMT
+# Wed, 12 Jul 2017 18:31:00 GMT
 ENV REDIS_VERSION=3.2.100
-# Wed, 18 Jan 2017 22:53:33 GMT
+# Wed, 12 Jul 2017 18:31:03 GMT
 ENV REDIS_DOWNLOAD_URL=https://github.com/MSOpenTech/redis/releases/download/win-3.2.100/Redis-x64-3.2.100.zip
-# Wed, 18 Jan 2017 22:54:22 GMT
+# Wed, 12 Jul 2017 18:31:30 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:REDIS_DOWNLOAD_URL); 	Invoke-WebRequest -Uri $env:REDIS_DOWNLOAD_URL -OutFile 'redis.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive redis.zip -DestinationPath C:\Redis; 		Write-Host 'Verifying install ("redis-server --version") ...'; 	redis-server --version; 		Write-Host 'Removing ...'; 	Remove-Item redis.zip -Force
-# Wed, 18 Jan 2017 22:55:24 GMT
+# Wed, 12 Jul 2017 18:31:49 GMT
 RUN (Get-Content C:\Redis\redis.windows.conf) 	-Replace '^(bind)\s+.*$', '$1 0.0.0.0' 	-Replace '^(protected-mode)\s+.*$', '$1 no' 	| Set-Content C:\Redis\redis.docker.conf
-# Wed, 18 Jan 2017 22:55:29 GMT
+# Wed, 12 Jul 2017 18:31:52 GMT
 VOLUME [C:\data]
-# Wed, 18 Jan 2017 22:55:32 GMT
+# Wed, 12 Jul 2017 18:31:55 GMT
 WORKDIR C:\data
-# Wed, 18 Jan 2017 22:55:37 GMT
+# Wed, 12 Jul 2017 18:31:58 GMT
 EXPOSE 6379/tcp
-# Wed, 18 Jan 2017 22:55:41 GMT
+# Wed, 12 Jul 2017 18:32:01 GMT
 CMD ["redis-server.exe" "C:\\Redis\\redis.docker.conf"]
 ```
 
@@ -2005,54 +2029,54 @@ CMD ["redis-server.exe" "C:\\Redis\\redis.docker.conf"]
 	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:3430754e4d171ead00cf6766797a28abf3caf236f6c92c5c346ea2ad3955a129`  
-		Size: 913.1 MB (913145061 bytes)  
+	-	`sha256:6d4d50238ed13902c153bc3efc3a22f8a96bca4168ea03624d01da1063728dc2`  
+		Size: 1.2 GB (1161902022 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:2090e83c9aacacb2da7d0836cf297e9927a3137c208e2f631e39e181e31ceb90`  
-		Last Modified: Wed, 18 Jan 2017 22:56:55 GMT  
+	-	`sha256:1363e862fdfb51b375f642fff311ab5f16a4e990d8d8c0ef1a0c9b563692b9ff`  
+		Last Modified: Wed, 26 Apr 2017 19:51:11 GMT  
+		Size: 1.2 KB (1214 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:73ea6c032e11a428044834103b9fc29821b4358f7a6b710d8c743dee6236ba25`  
+		Last Modified: Wed, 12 Jul 2017 19:03:30 GMT  
+		Size: 5.0 MB (4973578 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b3607121f81f68b4aa608a0acc53b076093c929c22f045e7a0d1eb7d3a0864e0`  
+		Last Modified: Wed, 12 Jul 2017 19:03:59 GMT  
+		Size: 1.2 KB (1225 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e81c9cf88ce8d952d48c102f1996ec8f3f0223e88a7eb596e1db13fad9ebf771`  
+		Last Modified: Wed, 12 Jul 2017 19:04:00 GMT  
+		Size: 1.2 KB (1212 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cc2f2226cfefa37b23b7e0f5b40a4b726ac700e80ea541ee4a6581ebe6b82d48`  
+		Last Modified: Wed, 12 Jul 2017 19:04:02 GMT  
+		Size: 10.0 MB (9998392 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b438e38874fe01c8a1b657cd16bcc95533d2083c801420559648dececcb1fde0`  
+		Last Modified: Wed, 12 Jul 2017 19:03:57 GMT  
+		Size: 4.7 MB (4678186 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6ac4643d4cd2e55985946ddf8c92d5cd53a43de7c9a330b96cbde76df53194de`  
+		Last Modified: Wed, 12 Jul 2017 19:03:56 GMT  
+		Size: 1.2 KB (1211 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a805c9cc0761d18915c329d645a495332a1cced4fbe07542b632cf1e4dfdfcb2`  
+		Last Modified: Wed, 12 Jul 2017 19:03:56 GMT  
 		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8da44b0086252f4702e3a56302c8f8b41465bed5f455838bf271fced6fc93a0c`  
-		Last Modified: Wed, 18 Jan 2017 22:56:57 GMT  
-		Size: 9.1 MB (9118824 bytes)  
+	-	`sha256:26999c73903ac435d968c63c9b09b90b8145b4a44ac944aef894592f6c70e723`  
+		Last Modified: Wed, 12 Jul 2017 19:03:56 GMT  
+		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:384b378de0002282c7b070dee79c606a44d9fbb8fa7e9dfd07e41a72d18f935f`  
-		Last Modified: Wed, 18 Jan 2017 22:57:26 GMT  
-		Size: 1.2 KB (1217 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90e71dc0a25426b16deb2e33f62fc9f58105e7bfbcf8c3160c9c21ae39b0cf86`  
-		Last Modified: Wed, 18 Jan 2017 22:57:25 GMT  
-		Size: 1.2 KB (1231 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc4ffe232243d863a27a6fe85e1bd3f3fab3a6161921dc38f472031fcb4c7303`  
-		Last Modified: Wed, 18 Jan 2017 22:57:30 GMT  
-		Size: 14.3 MB (14310413 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0188853bfa921906bf823bcffe4249ebad6294e84d7bcc806e251e36ca259ad5`  
-		Last Modified: Wed, 18 Jan 2017 22:57:22 GMT  
-		Size: 4.5 MB (4534905 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec86ffa3d1d0c5fa801f6fd03736ab2d6b4d546db71bb6e634d4ce5006e1c5c7`  
-		Last Modified: Wed, 18 Jan 2017 22:57:20 GMT  
-		Size: 1.2 KB (1228 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07eda4f36764030981f1274d0cf9d991012ebc5b336c479b6db4d3c61a4f7ed6`  
-		Last Modified: Wed, 18 Jan 2017 22:57:20 GMT  
-		Size: 1.2 KB (1222 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb1b5f4cf90fb05950e298d1aa9d1dc2874e497fef0f5329c5ce55251d7cf7d9`  
-		Last Modified: Wed, 18 Jan 2017 22:57:20 GMT  
-		Size: 1.2 KB (1233 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc54094d7877932bd12d15a50fa999e0d90132b29b9734831226c0002e4c909a`  
-		Last Modified: Wed, 18 Jan 2017 22:57:20 GMT  
-		Size: 1.2 KB (1221 bytes)  
+	-	`sha256:78b79d7413cd4602af40fbaa54d73042a9f86b07c5e219bb098d2c6d4055f15d`  
+		Last Modified: Wed, 12 Jul 2017 19:03:57 GMT  
+		Size: 1.2 KB (1224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:3-windowsservercore`
 
 ```console
-$ docker pull redis@sha256:60e2f0698630df1df2091372a143f39ebe1fa39a6b1f89fd7d0f566700046ac7
+$ docker pull redis@sha256:ac7ef575d44c8653443165c600fb2f3ea9d9019843713f2a7575775c2c42ad0b
 ```
 
 -	Platforms:
@@ -2062,32 +2086,36 @@ $ docker pull redis@sha256:60e2f0698630df1df2091372a143f39ebe1fa39a6b1f89fd7d0f5
 
 -	Docker Version: 1.12.2-cs2-ws-beta
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 GB (5011103673 bytes)**  
+-	Total Size: **5.3 GB (5251546602 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e19f818176bbd1aeb3f95daea3bd4513cf35e00801199b4f8c03fff6db79c07`
+-	Image ID: `sha256:0a2ce94c3cdb33b022c12c24fb256cd3059585ef4e914e82000fd05850eec176`
 -	Default Command: `["redis-server.exe","C:\\Redis\\redis.docker.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
-# Wed, 18 Jan 2017 00:22:36 GMT
+# Tue, 22 Nov 2016 23:24:24 GMT
+RUN Apply image 10.0.14393.0
+# Mon, 10 Apr 2017 22:00:56 GMT
+RUN Install update 10.0.14393.1066
+# Wed, 26 Apr 2017 19:30:51 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 18 Jan 2017 22:49:45 GMT
+# Wed, 12 Jul 2017 18:29:32 GMT
 RUN $newPath = ('C:\Redis;{0}' -f $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath;
-# Wed, 18 Jan 2017 22:53:25 GMT
+# Wed, 12 Jul 2017 18:31:00 GMT
 ENV REDIS_VERSION=3.2.100
-# Wed, 18 Jan 2017 22:53:33 GMT
+# Wed, 12 Jul 2017 18:31:03 GMT
 ENV REDIS_DOWNLOAD_URL=https://github.com/MSOpenTech/redis/releases/download/win-3.2.100/Redis-x64-3.2.100.zip
-# Wed, 18 Jan 2017 22:54:22 GMT
+# Wed, 12 Jul 2017 18:31:30 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:REDIS_DOWNLOAD_URL); 	Invoke-WebRequest -Uri $env:REDIS_DOWNLOAD_URL -OutFile 'redis.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive redis.zip -DestinationPath C:\Redis; 		Write-Host 'Verifying install ("redis-server --version") ...'; 	redis-server --version; 		Write-Host 'Removing ...'; 	Remove-Item redis.zip -Force
-# Wed, 18 Jan 2017 22:55:24 GMT
+# Wed, 12 Jul 2017 18:31:49 GMT
 RUN (Get-Content C:\Redis\redis.windows.conf) 	-Replace '^(bind)\s+.*$', '$1 0.0.0.0' 	-Replace '^(protected-mode)\s+.*$', '$1 no' 	| Set-Content C:\Redis\redis.docker.conf
-# Wed, 18 Jan 2017 22:55:29 GMT
+# Wed, 12 Jul 2017 18:31:52 GMT
 VOLUME [C:\data]
-# Wed, 18 Jan 2017 22:55:32 GMT
+# Wed, 12 Jul 2017 18:31:55 GMT
 WORKDIR C:\data
-# Wed, 18 Jan 2017 22:55:37 GMT
+# Wed, 12 Jul 2017 18:31:58 GMT
 EXPOSE 6379/tcp
-# Wed, 18 Jan 2017 22:55:41 GMT
+# Wed, 12 Jul 2017 18:32:01 GMT
 CMD ["redis-server.exe" "C:\\Redis\\redis.docker.conf"]
 ```
 
@@ -2095,54 +2123,54 @@ CMD ["redis-server.exe" "C:\\Redis\\redis.docker.conf"]
 	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:3430754e4d171ead00cf6766797a28abf3caf236f6c92c5c346ea2ad3955a129`  
-		Size: 913.1 MB (913145061 bytes)  
+	-	`sha256:6d4d50238ed13902c153bc3efc3a22f8a96bca4168ea03624d01da1063728dc2`  
+		Size: 1.2 GB (1161902022 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:2090e83c9aacacb2da7d0836cf297e9927a3137c208e2f631e39e181e31ceb90`  
-		Last Modified: Wed, 18 Jan 2017 22:56:55 GMT  
+	-	`sha256:1363e862fdfb51b375f642fff311ab5f16a4e990d8d8c0ef1a0c9b563692b9ff`  
+		Last Modified: Wed, 26 Apr 2017 19:51:11 GMT  
+		Size: 1.2 KB (1214 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:73ea6c032e11a428044834103b9fc29821b4358f7a6b710d8c743dee6236ba25`  
+		Last Modified: Wed, 12 Jul 2017 19:03:30 GMT  
+		Size: 5.0 MB (4973578 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b3607121f81f68b4aa608a0acc53b076093c929c22f045e7a0d1eb7d3a0864e0`  
+		Last Modified: Wed, 12 Jul 2017 19:03:59 GMT  
+		Size: 1.2 KB (1225 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e81c9cf88ce8d952d48c102f1996ec8f3f0223e88a7eb596e1db13fad9ebf771`  
+		Last Modified: Wed, 12 Jul 2017 19:04:00 GMT  
+		Size: 1.2 KB (1212 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cc2f2226cfefa37b23b7e0f5b40a4b726ac700e80ea541ee4a6581ebe6b82d48`  
+		Last Modified: Wed, 12 Jul 2017 19:04:02 GMT  
+		Size: 10.0 MB (9998392 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b438e38874fe01c8a1b657cd16bcc95533d2083c801420559648dececcb1fde0`  
+		Last Modified: Wed, 12 Jul 2017 19:03:57 GMT  
+		Size: 4.7 MB (4678186 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6ac4643d4cd2e55985946ddf8c92d5cd53a43de7c9a330b96cbde76df53194de`  
+		Last Modified: Wed, 12 Jul 2017 19:03:56 GMT  
+		Size: 1.2 KB (1211 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a805c9cc0761d18915c329d645a495332a1cced4fbe07542b632cf1e4dfdfcb2`  
+		Last Modified: Wed, 12 Jul 2017 19:03:56 GMT  
 		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8da44b0086252f4702e3a56302c8f8b41465bed5f455838bf271fced6fc93a0c`  
-		Last Modified: Wed, 18 Jan 2017 22:56:57 GMT  
-		Size: 9.1 MB (9118824 bytes)  
+	-	`sha256:26999c73903ac435d968c63c9b09b90b8145b4a44ac944aef894592f6c70e723`  
+		Last Modified: Wed, 12 Jul 2017 19:03:56 GMT  
+		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:384b378de0002282c7b070dee79c606a44d9fbb8fa7e9dfd07e41a72d18f935f`  
-		Last Modified: Wed, 18 Jan 2017 22:57:26 GMT  
-		Size: 1.2 KB (1217 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90e71dc0a25426b16deb2e33f62fc9f58105e7bfbcf8c3160c9c21ae39b0cf86`  
-		Last Modified: Wed, 18 Jan 2017 22:57:25 GMT  
-		Size: 1.2 KB (1231 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc4ffe232243d863a27a6fe85e1bd3f3fab3a6161921dc38f472031fcb4c7303`  
-		Last Modified: Wed, 18 Jan 2017 22:57:30 GMT  
-		Size: 14.3 MB (14310413 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0188853bfa921906bf823bcffe4249ebad6294e84d7bcc806e251e36ca259ad5`  
-		Last Modified: Wed, 18 Jan 2017 22:57:22 GMT  
-		Size: 4.5 MB (4534905 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec86ffa3d1d0c5fa801f6fd03736ab2d6b4d546db71bb6e634d4ce5006e1c5c7`  
-		Last Modified: Wed, 18 Jan 2017 22:57:20 GMT  
-		Size: 1.2 KB (1228 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07eda4f36764030981f1274d0cf9d991012ebc5b336c479b6db4d3c61a4f7ed6`  
-		Last Modified: Wed, 18 Jan 2017 22:57:20 GMT  
-		Size: 1.2 KB (1222 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb1b5f4cf90fb05950e298d1aa9d1dc2874e497fef0f5329c5ce55251d7cf7d9`  
-		Last Modified: Wed, 18 Jan 2017 22:57:20 GMT  
-		Size: 1.2 KB (1233 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc54094d7877932bd12d15a50fa999e0d90132b29b9734831226c0002e4c909a`  
-		Last Modified: Wed, 18 Jan 2017 22:57:20 GMT  
-		Size: 1.2 KB (1221 bytes)  
+	-	`sha256:78b79d7413cd4602af40fbaa54d73042a9f86b07c5e219bb098d2c6d4055f15d`  
+		Last Modified: Wed, 12 Jul 2017 19:03:57 GMT  
+		Size: 1.2 KB (1224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:windowsservercore`
 
 ```console
-$ docker pull redis@sha256:60e2f0698630df1df2091372a143f39ebe1fa39a6b1f89fd7d0f566700046ac7
+$ docker pull redis@sha256:ac7ef575d44c8653443165c600fb2f3ea9d9019843713f2a7575775c2c42ad0b
 ```
 
 -	Platforms:
@@ -2152,32 +2180,36 @@ $ docker pull redis@sha256:60e2f0698630df1df2091372a143f39ebe1fa39a6b1f89fd7d0f5
 
 -	Docker Version: 1.12.2-cs2-ws-beta
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 GB (5011103673 bytes)**  
+-	Total Size: **5.3 GB (5251546602 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e19f818176bbd1aeb3f95daea3bd4513cf35e00801199b4f8c03fff6db79c07`
+-	Image ID: `sha256:0a2ce94c3cdb33b022c12c24fb256cd3059585ef4e914e82000fd05850eec176`
 -	Default Command: `["redis-server.exe","C:\\Redis\\redis.docker.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
-# Wed, 18 Jan 2017 00:22:36 GMT
+# Tue, 22 Nov 2016 23:24:24 GMT
+RUN Apply image 10.0.14393.0
+# Mon, 10 Apr 2017 22:00:56 GMT
+RUN Install update 10.0.14393.1066
+# Wed, 26 Apr 2017 19:30:51 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 18 Jan 2017 22:49:45 GMT
+# Wed, 12 Jul 2017 18:29:32 GMT
 RUN $newPath = ('C:\Redis;{0}' -f $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath;
-# Wed, 18 Jan 2017 22:53:25 GMT
+# Wed, 12 Jul 2017 18:31:00 GMT
 ENV REDIS_VERSION=3.2.100
-# Wed, 18 Jan 2017 22:53:33 GMT
+# Wed, 12 Jul 2017 18:31:03 GMT
 ENV REDIS_DOWNLOAD_URL=https://github.com/MSOpenTech/redis/releases/download/win-3.2.100/Redis-x64-3.2.100.zip
-# Wed, 18 Jan 2017 22:54:22 GMT
+# Wed, 12 Jul 2017 18:31:30 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:REDIS_DOWNLOAD_URL); 	Invoke-WebRequest -Uri $env:REDIS_DOWNLOAD_URL -OutFile 'redis.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive redis.zip -DestinationPath C:\Redis; 		Write-Host 'Verifying install ("redis-server --version") ...'; 	redis-server --version; 		Write-Host 'Removing ...'; 	Remove-Item redis.zip -Force
-# Wed, 18 Jan 2017 22:55:24 GMT
+# Wed, 12 Jul 2017 18:31:49 GMT
 RUN (Get-Content C:\Redis\redis.windows.conf) 	-Replace '^(bind)\s+.*$', '$1 0.0.0.0' 	-Replace '^(protected-mode)\s+.*$', '$1 no' 	| Set-Content C:\Redis\redis.docker.conf
-# Wed, 18 Jan 2017 22:55:29 GMT
+# Wed, 12 Jul 2017 18:31:52 GMT
 VOLUME [C:\data]
-# Wed, 18 Jan 2017 22:55:32 GMT
+# Wed, 12 Jul 2017 18:31:55 GMT
 WORKDIR C:\data
-# Wed, 18 Jan 2017 22:55:37 GMT
+# Wed, 12 Jul 2017 18:31:58 GMT
 EXPOSE 6379/tcp
-# Wed, 18 Jan 2017 22:55:41 GMT
+# Wed, 12 Jul 2017 18:32:01 GMT
 CMD ["redis-server.exe" "C:\\Redis\\redis.docker.conf"]
 ```
 
@@ -2185,54 +2217,54 @@ CMD ["redis-server.exe" "C:\\Redis\\redis.docker.conf"]
 	-	`sha256:3889bb8d808bbae6fa5a33e07093e65c31371bcf9e4c38c21be6b9af52ad1548`  
 		Size: 4.1 GB (4069985900 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:3430754e4d171ead00cf6766797a28abf3caf236f6c92c5c346ea2ad3955a129`  
-		Size: 913.1 MB (913145061 bytes)  
+	-	`sha256:6d4d50238ed13902c153bc3efc3a22f8a96bca4168ea03624d01da1063728dc2`  
+		Size: 1.2 GB (1161902022 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:2090e83c9aacacb2da7d0836cf297e9927a3137c208e2f631e39e181e31ceb90`  
-		Last Modified: Wed, 18 Jan 2017 22:56:55 GMT  
+	-	`sha256:1363e862fdfb51b375f642fff311ab5f16a4e990d8d8c0ef1a0c9b563692b9ff`  
+		Last Modified: Wed, 26 Apr 2017 19:51:11 GMT  
+		Size: 1.2 KB (1214 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:73ea6c032e11a428044834103b9fc29821b4358f7a6b710d8c743dee6236ba25`  
+		Last Modified: Wed, 12 Jul 2017 19:03:30 GMT  
+		Size: 5.0 MB (4973578 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b3607121f81f68b4aa608a0acc53b076093c929c22f045e7a0d1eb7d3a0864e0`  
+		Last Modified: Wed, 12 Jul 2017 19:03:59 GMT  
+		Size: 1.2 KB (1225 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e81c9cf88ce8d952d48c102f1996ec8f3f0223e88a7eb596e1db13fad9ebf771`  
+		Last Modified: Wed, 12 Jul 2017 19:04:00 GMT  
+		Size: 1.2 KB (1212 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cc2f2226cfefa37b23b7e0f5b40a4b726ac700e80ea541ee4a6581ebe6b82d48`  
+		Last Modified: Wed, 12 Jul 2017 19:04:02 GMT  
+		Size: 10.0 MB (9998392 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b438e38874fe01c8a1b657cd16bcc95533d2083c801420559648dececcb1fde0`  
+		Last Modified: Wed, 12 Jul 2017 19:03:57 GMT  
+		Size: 4.7 MB (4678186 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6ac4643d4cd2e55985946ddf8c92d5cd53a43de7c9a330b96cbde76df53194de`  
+		Last Modified: Wed, 12 Jul 2017 19:03:56 GMT  
+		Size: 1.2 KB (1211 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a805c9cc0761d18915c329d645a495332a1cced4fbe07542b632cf1e4dfdfcb2`  
+		Last Modified: Wed, 12 Jul 2017 19:03:56 GMT  
 		Size: 1.2 KB (1218 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8da44b0086252f4702e3a56302c8f8b41465bed5f455838bf271fced6fc93a0c`  
-		Last Modified: Wed, 18 Jan 2017 22:56:57 GMT  
-		Size: 9.1 MB (9118824 bytes)  
+	-	`sha256:26999c73903ac435d968c63c9b09b90b8145b4a44ac944aef894592f6c70e723`  
+		Last Modified: Wed, 12 Jul 2017 19:03:56 GMT  
+		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:384b378de0002282c7b070dee79c606a44d9fbb8fa7e9dfd07e41a72d18f935f`  
-		Last Modified: Wed, 18 Jan 2017 22:57:26 GMT  
-		Size: 1.2 KB (1217 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90e71dc0a25426b16deb2e33f62fc9f58105e7bfbcf8c3160c9c21ae39b0cf86`  
-		Last Modified: Wed, 18 Jan 2017 22:57:25 GMT  
-		Size: 1.2 KB (1231 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc4ffe232243d863a27a6fe85e1bd3f3fab3a6161921dc38f472031fcb4c7303`  
-		Last Modified: Wed, 18 Jan 2017 22:57:30 GMT  
-		Size: 14.3 MB (14310413 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0188853bfa921906bf823bcffe4249ebad6294e84d7bcc806e251e36ca259ad5`  
-		Last Modified: Wed, 18 Jan 2017 22:57:22 GMT  
-		Size: 4.5 MB (4534905 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec86ffa3d1d0c5fa801f6fd03736ab2d6b4d546db71bb6e634d4ce5006e1c5c7`  
-		Last Modified: Wed, 18 Jan 2017 22:57:20 GMT  
-		Size: 1.2 KB (1228 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:07eda4f36764030981f1274d0cf9d991012ebc5b336c479b6db4d3c61a4f7ed6`  
-		Last Modified: Wed, 18 Jan 2017 22:57:20 GMT  
-		Size: 1.2 KB (1222 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb1b5f4cf90fb05950e298d1aa9d1dc2874e497fef0f5329c5ce55251d7cf7d9`  
-		Last Modified: Wed, 18 Jan 2017 22:57:20 GMT  
-		Size: 1.2 KB (1233 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc54094d7877932bd12d15a50fa999e0d90132b29b9734831226c0002e4c909a`  
-		Last Modified: Wed, 18 Jan 2017 22:57:20 GMT  
-		Size: 1.2 KB (1221 bytes)  
+	-	`sha256:78b79d7413cd4602af40fbaa54d73042a9f86b07c5e219bb098d2c6d4055f15d`  
+		Last Modified: Wed, 12 Jul 2017 19:03:57 GMT  
+		Size: 1.2 KB (1224 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:3.2.100-nanoserver`
 
 ```console
-$ docker pull redis@sha256:0504a89bfa3ed423a4537e20579434e08058043537822c8578c98ac71ef971bf
+$ docker pull redis@sha256:810b22ec3e6009d23067e8e83c8a2ac4a2ca20200d0512caf40b171d03457cec
 ```
 
 -	Platforms:
@@ -2242,32 +2274,36 @@ $ docker pull redis@sha256:0504a89bfa3ed423a4537e20579434e08058043537822c8578c98
 
 -	Docker Version: 1.12.2-cs2-ws-beta
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **341.1 MB (341087300 bytes)**  
+-	Total Size: **376.5 MB (376522845 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:106a932a5a0e1b1844607261579c8c86b36ec749801667c75ce01c3f6f8d9d20`
+-	Image ID: `sha256:15fd74a53df1ffd5eaf5d5258db2c9558569f19a33fffcfdb0fae691c268ca01`
 -	Default Command: `["redis-server.exe","C:\\Redis\\redis.docker.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
-# Fri, 13 Jan 2017 17:53:28 GMT
+# Sun, 20 Nov 2016 11:39:18 GMT
+RUN Apply image 10.0.14393.0
+# Fri, 07 Apr 2017 09:40:17 GMT
+RUN Install update 10.0.14393.1066
+# Wed, 26 Apr 2017 19:37:26 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 18 Jan 2017 22:52:13 GMT
+# Wed, 12 Jul 2017 18:30:27 GMT
 RUN $newPath = ('C:\Redis;{0}' -f $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath;
-# Wed, 18 Jan 2017 22:55:44 GMT
+# Wed, 12 Jul 2017 18:32:04 GMT
 ENV REDIS_VERSION=3.2.100
-# Wed, 18 Jan 2017 22:55:46 GMT
+# Wed, 12 Jul 2017 18:32:06 GMT
 ENV REDIS_DOWNLOAD_URL=https://github.com/MSOpenTech/redis/releases/download/win-3.2.100/Redis-x64-3.2.100.zip
-# Wed, 18 Jan 2017 22:56:10 GMT
+# Wed, 12 Jul 2017 18:32:22 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:REDIS_DOWNLOAD_URL); 	Invoke-WebRequest -Uri $env:REDIS_DOWNLOAD_URL -OutFile 'redis.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive redis.zip -DestinationPath C:\Redis; 		Write-Host 'Verifying install ("redis-server --version") ...'; 	redis-server --version; 		Write-Host 'Removing ...'; 	Remove-Item redis.zip -Force
-# Wed, 18 Jan 2017 22:56:25 GMT
+# Wed, 12 Jul 2017 18:32:34 GMT
 RUN (Get-Content C:\Redis\redis.windows.conf) 	-Replace '^(bind)\s+.*$', '$1 0.0.0.0' 	-Replace '^(protected-mode)\s+.*$', '$1 no' 	| Set-Content C:\Redis\redis.docker.conf
-# Wed, 18 Jan 2017 22:56:27 GMT
+# Wed, 12 Jul 2017 18:32:35 GMT
 VOLUME [C:\data]
-# Wed, 18 Jan 2017 22:56:30 GMT
+# Wed, 12 Jul 2017 18:32:38 GMT
 WORKDIR C:\data
-# Wed, 18 Jan 2017 22:56:32 GMT
+# Wed, 12 Jul 2017 18:32:40 GMT
 EXPOSE 6379/tcp
-# Wed, 18 Jan 2017 22:56:37 GMT
+# Wed, 12 Jul 2017 18:32:42 GMT
 CMD ["redis-server.exe" "C:\\Redis\\redis.docker.conf"]
 ```
 
@@ -2275,54 +2311,54 @@ CMD ["redis-server.exe" "C:\\Redis\\redis.docker.conf"]
 	-	`sha256:bce2fbc256ea437a87dadac2f69aabd25bed4f56255549090056c1131fad0277`  
 		Size: 252.7 MB (252691002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:3ac17e2e6106d09a44642a437c318092eddd284afea0b4e707e89f6cec7a18ef`  
-		Size: 80.6 MB (80617684 bytes)  
+	-	`sha256:6a43ac69611f40511708beba10dfe6fbe3e266ca933b6fd49c87a9f31f46f46c`  
+		Size: 116.0 MB (116037241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:e75762e22d922ed4bb69ae4e673c912389d9d70fd91eaa33cd0732f0a8e28a4e`  
-		Last Modified: Fri, 13 Jan 2017 18:00:06 GMT  
-		Size: 951.0 B  
+	-	`sha256:acc75acac61e9635ae7c57f4d74b6ac6a2efef41d7b17052ff6f5bc0fb92e960`  
+		Last Modified: Wed, 26 Apr 2017 19:51:40 GMT  
+		Size: 968.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de31e43b05dd874f8ca7edfb3aac6545866c500853b7e509ba14e9ae38ad2097`  
-		Last Modified: Wed, 18 Jan 2017 22:57:11 GMT  
-		Size: 872.2 KB (872241 bytes)  
+	-	`sha256:60f17e54c8f52dbb6a5246a2a56f6c9de1762cd61e67319d2484ea2b6367c8f0`  
+		Last Modified: Wed, 12 Jul 2017 19:03:44 GMT  
+		Size: 873.0 KB (873031 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72304c71b91dd5750a5ee9c76380796d7587a7d5608045ab531f7e9d02a44af9`  
-		Last Modified: Wed, 18 Jan 2017 22:57:50 GMT  
-		Size: 951.0 B  
+	-	`sha256:8dd171254c5cb42e88cbb61f9664c44a4b9bbf8f1b9308732769d6e0e08746cd`  
+		Last Modified: Wed, 12 Jul 2017 19:04:19 GMT  
+		Size: 948.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:67e40118728bb9a486a422adbd3c08f4a6c99e42edff5811101172555dcfa0da`  
-		Last Modified: Wed, 18 Jan 2017 22:57:50 GMT  
-		Size: 958.0 B  
+	-	`sha256:3106c2ed15a3eb44406beba69af250d6868010c2f307b68accafd53579b0e9ea`  
+		Last Modified: Wed, 12 Jul 2017 19:04:19 GMT  
+		Size: 955.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c60cf65c021c8b3c522be96e91e91074e57d7777b1d624e88ae265759a2abe39`  
-		Last Modified: Wed, 18 Jan 2017 22:57:53 GMT  
-		Size: 6.1 MB (6097510 bytes)  
+	-	`sha256:5c482e10d0fc8c892581315d2654090f35b8cd901cdcdadfa1e0540d41e5aa2b`  
+		Last Modified: Wed, 12 Jul 2017 19:04:21 GMT  
+		Size: 6.1 MB (6105286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:246384c0dbd7566af07c7d33998ec09438cd9029e8332605e06b37e8fdaa876f`  
-		Last Modified: Wed, 18 Jan 2017 22:57:48 GMT  
-		Size: 802.2 KB (802163 bytes)  
+	-	`sha256:74a1bb8a51617fd4b2a0707082ff1885078ac1e1546294243dee089fd83431fb`  
+		Last Modified: Wed, 12 Jul 2017 19:04:17 GMT  
+		Size: 809.6 KB (809590 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ae3741b92c1d47abe9a132f443036ca118cf13362af4131a1fb37792df5b016`  
-		Last Modified: Wed, 18 Jan 2017 22:57:48 GMT  
+	-	`sha256:5b72f867f044aec7145ef955bcd06cead82eb27ece411f8f4b62cb1fb99d1681`  
+		Last Modified: Wed, 12 Jul 2017 19:04:17 GMT  
+		Size: 953.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a303d4c0f022069d787c436527b881034b3c30bdc4c48b3908b0257ed0be01c7`  
+		Last Modified: Wed, 12 Jul 2017 19:04:16 GMT  
+		Size: 953.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:820e678b188173827acc6298d5c33c2af03a4e701805f5f66d3364debc9d2f32`  
+		Last Modified: Wed, 12 Jul 2017 19:04:16 GMT  
 		Size: 957.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8794db4ffca9168374e650806acb6ee47018b2d553df142cc3ad6540a6c9a51a`  
-		Last Modified: Wed, 18 Jan 2017 22:57:47 GMT  
-		Size: 962.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4641bd817ce69e3fde2b4f0f6b6a8e97a7da04be80cd4867daff6365d4a15d40`  
-		Last Modified: Wed, 18 Jan 2017 22:57:47 GMT  
+	-	`sha256:8a2bd99185dff9bbb357f63136c046ee8b4c104dda8c0ced6ab8b23a6af1fd42`  
+		Last Modified: Wed, 12 Jul 2017 19:04:16 GMT  
 		Size: 961.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c893421dc79a258d86db45ec19879d16ec43ffc2b462ffcfa5069878dc644ee0`  
-		Last Modified: Wed, 18 Jan 2017 22:57:47 GMT  
-		Size: 960.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:3.2-nanoserver`
 
 ```console
-$ docker pull redis@sha256:0504a89bfa3ed423a4537e20579434e08058043537822c8578c98ac71ef971bf
+$ docker pull redis@sha256:810b22ec3e6009d23067e8e83c8a2ac4a2ca20200d0512caf40b171d03457cec
 ```
 
 -	Platforms:
@@ -2332,32 +2368,36 @@ $ docker pull redis@sha256:0504a89bfa3ed423a4537e20579434e08058043537822c8578c98
 
 -	Docker Version: 1.12.2-cs2-ws-beta
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **341.1 MB (341087300 bytes)**  
+-	Total Size: **376.5 MB (376522845 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:106a932a5a0e1b1844607261579c8c86b36ec749801667c75ce01c3f6f8d9d20`
+-	Image ID: `sha256:15fd74a53df1ffd5eaf5d5258db2c9558569f19a33fffcfdb0fae691c268ca01`
 -	Default Command: `["redis-server.exe","C:\\Redis\\redis.docker.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
-# Fri, 13 Jan 2017 17:53:28 GMT
+# Sun, 20 Nov 2016 11:39:18 GMT
+RUN Apply image 10.0.14393.0
+# Fri, 07 Apr 2017 09:40:17 GMT
+RUN Install update 10.0.14393.1066
+# Wed, 26 Apr 2017 19:37:26 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 18 Jan 2017 22:52:13 GMT
+# Wed, 12 Jul 2017 18:30:27 GMT
 RUN $newPath = ('C:\Redis;{0}' -f $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath;
-# Wed, 18 Jan 2017 22:55:44 GMT
+# Wed, 12 Jul 2017 18:32:04 GMT
 ENV REDIS_VERSION=3.2.100
-# Wed, 18 Jan 2017 22:55:46 GMT
+# Wed, 12 Jul 2017 18:32:06 GMT
 ENV REDIS_DOWNLOAD_URL=https://github.com/MSOpenTech/redis/releases/download/win-3.2.100/Redis-x64-3.2.100.zip
-# Wed, 18 Jan 2017 22:56:10 GMT
+# Wed, 12 Jul 2017 18:32:22 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:REDIS_DOWNLOAD_URL); 	Invoke-WebRequest -Uri $env:REDIS_DOWNLOAD_URL -OutFile 'redis.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive redis.zip -DestinationPath C:\Redis; 		Write-Host 'Verifying install ("redis-server --version") ...'; 	redis-server --version; 		Write-Host 'Removing ...'; 	Remove-Item redis.zip -Force
-# Wed, 18 Jan 2017 22:56:25 GMT
+# Wed, 12 Jul 2017 18:32:34 GMT
 RUN (Get-Content C:\Redis\redis.windows.conf) 	-Replace '^(bind)\s+.*$', '$1 0.0.0.0' 	-Replace '^(protected-mode)\s+.*$', '$1 no' 	| Set-Content C:\Redis\redis.docker.conf
-# Wed, 18 Jan 2017 22:56:27 GMT
+# Wed, 12 Jul 2017 18:32:35 GMT
 VOLUME [C:\data]
-# Wed, 18 Jan 2017 22:56:30 GMT
+# Wed, 12 Jul 2017 18:32:38 GMT
 WORKDIR C:\data
-# Wed, 18 Jan 2017 22:56:32 GMT
+# Wed, 12 Jul 2017 18:32:40 GMT
 EXPOSE 6379/tcp
-# Wed, 18 Jan 2017 22:56:37 GMT
+# Wed, 12 Jul 2017 18:32:42 GMT
 CMD ["redis-server.exe" "C:\\Redis\\redis.docker.conf"]
 ```
 
@@ -2365,54 +2405,54 @@ CMD ["redis-server.exe" "C:\\Redis\\redis.docker.conf"]
 	-	`sha256:bce2fbc256ea437a87dadac2f69aabd25bed4f56255549090056c1131fad0277`  
 		Size: 252.7 MB (252691002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:3ac17e2e6106d09a44642a437c318092eddd284afea0b4e707e89f6cec7a18ef`  
-		Size: 80.6 MB (80617684 bytes)  
+	-	`sha256:6a43ac69611f40511708beba10dfe6fbe3e266ca933b6fd49c87a9f31f46f46c`  
+		Size: 116.0 MB (116037241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:e75762e22d922ed4bb69ae4e673c912389d9d70fd91eaa33cd0732f0a8e28a4e`  
-		Last Modified: Fri, 13 Jan 2017 18:00:06 GMT  
-		Size: 951.0 B  
+	-	`sha256:acc75acac61e9635ae7c57f4d74b6ac6a2efef41d7b17052ff6f5bc0fb92e960`  
+		Last Modified: Wed, 26 Apr 2017 19:51:40 GMT  
+		Size: 968.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de31e43b05dd874f8ca7edfb3aac6545866c500853b7e509ba14e9ae38ad2097`  
-		Last Modified: Wed, 18 Jan 2017 22:57:11 GMT  
-		Size: 872.2 KB (872241 bytes)  
+	-	`sha256:60f17e54c8f52dbb6a5246a2a56f6c9de1762cd61e67319d2484ea2b6367c8f0`  
+		Last Modified: Wed, 12 Jul 2017 19:03:44 GMT  
+		Size: 873.0 KB (873031 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72304c71b91dd5750a5ee9c76380796d7587a7d5608045ab531f7e9d02a44af9`  
-		Last Modified: Wed, 18 Jan 2017 22:57:50 GMT  
-		Size: 951.0 B  
+	-	`sha256:8dd171254c5cb42e88cbb61f9664c44a4b9bbf8f1b9308732769d6e0e08746cd`  
+		Last Modified: Wed, 12 Jul 2017 19:04:19 GMT  
+		Size: 948.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:67e40118728bb9a486a422adbd3c08f4a6c99e42edff5811101172555dcfa0da`  
-		Last Modified: Wed, 18 Jan 2017 22:57:50 GMT  
-		Size: 958.0 B  
+	-	`sha256:3106c2ed15a3eb44406beba69af250d6868010c2f307b68accafd53579b0e9ea`  
+		Last Modified: Wed, 12 Jul 2017 19:04:19 GMT  
+		Size: 955.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c60cf65c021c8b3c522be96e91e91074e57d7777b1d624e88ae265759a2abe39`  
-		Last Modified: Wed, 18 Jan 2017 22:57:53 GMT  
-		Size: 6.1 MB (6097510 bytes)  
+	-	`sha256:5c482e10d0fc8c892581315d2654090f35b8cd901cdcdadfa1e0540d41e5aa2b`  
+		Last Modified: Wed, 12 Jul 2017 19:04:21 GMT  
+		Size: 6.1 MB (6105286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:246384c0dbd7566af07c7d33998ec09438cd9029e8332605e06b37e8fdaa876f`  
-		Last Modified: Wed, 18 Jan 2017 22:57:48 GMT  
-		Size: 802.2 KB (802163 bytes)  
+	-	`sha256:74a1bb8a51617fd4b2a0707082ff1885078ac1e1546294243dee089fd83431fb`  
+		Last Modified: Wed, 12 Jul 2017 19:04:17 GMT  
+		Size: 809.6 KB (809590 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ae3741b92c1d47abe9a132f443036ca118cf13362af4131a1fb37792df5b016`  
-		Last Modified: Wed, 18 Jan 2017 22:57:48 GMT  
+	-	`sha256:5b72f867f044aec7145ef955bcd06cead82eb27ece411f8f4b62cb1fb99d1681`  
+		Last Modified: Wed, 12 Jul 2017 19:04:17 GMT  
+		Size: 953.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a303d4c0f022069d787c436527b881034b3c30bdc4c48b3908b0257ed0be01c7`  
+		Last Modified: Wed, 12 Jul 2017 19:04:16 GMT  
+		Size: 953.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:820e678b188173827acc6298d5c33c2af03a4e701805f5f66d3364debc9d2f32`  
+		Last Modified: Wed, 12 Jul 2017 19:04:16 GMT  
 		Size: 957.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8794db4ffca9168374e650806acb6ee47018b2d553df142cc3ad6540a6c9a51a`  
-		Last Modified: Wed, 18 Jan 2017 22:57:47 GMT  
-		Size: 962.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4641bd817ce69e3fde2b4f0f6b6a8e97a7da04be80cd4867daff6365d4a15d40`  
-		Last Modified: Wed, 18 Jan 2017 22:57:47 GMT  
+	-	`sha256:8a2bd99185dff9bbb357f63136c046ee8b4c104dda8c0ced6ab8b23a6af1fd42`  
+		Last Modified: Wed, 12 Jul 2017 19:04:16 GMT  
 		Size: 961.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c893421dc79a258d86db45ec19879d16ec43ffc2b462ffcfa5069878dc644ee0`  
-		Last Modified: Wed, 18 Jan 2017 22:57:47 GMT  
-		Size: 960.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:3-nanoserver`
 
 ```console
-$ docker pull redis@sha256:0504a89bfa3ed423a4537e20579434e08058043537822c8578c98ac71ef971bf
+$ docker pull redis@sha256:810b22ec3e6009d23067e8e83c8a2ac4a2ca20200d0512caf40b171d03457cec
 ```
 
 -	Platforms:
@@ -2422,32 +2462,36 @@ $ docker pull redis@sha256:0504a89bfa3ed423a4537e20579434e08058043537822c8578c98
 
 -	Docker Version: 1.12.2-cs2-ws-beta
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **341.1 MB (341087300 bytes)**  
+-	Total Size: **376.5 MB (376522845 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:106a932a5a0e1b1844607261579c8c86b36ec749801667c75ce01c3f6f8d9d20`
+-	Image ID: `sha256:15fd74a53df1ffd5eaf5d5258db2c9558569f19a33fffcfdb0fae691c268ca01`
 -	Default Command: `["redis-server.exe","C:\\Redis\\redis.docker.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
-# Fri, 13 Jan 2017 17:53:28 GMT
+# Sun, 20 Nov 2016 11:39:18 GMT
+RUN Apply image 10.0.14393.0
+# Fri, 07 Apr 2017 09:40:17 GMT
+RUN Install update 10.0.14393.1066
+# Wed, 26 Apr 2017 19:37:26 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 18 Jan 2017 22:52:13 GMT
+# Wed, 12 Jul 2017 18:30:27 GMT
 RUN $newPath = ('C:\Redis;{0}' -f $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath;
-# Wed, 18 Jan 2017 22:55:44 GMT
+# Wed, 12 Jul 2017 18:32:04 GMT
 ENV REDIS_VERSION=3.2.100
-# Wed, 18 Jan 2017 22:55:46 GMT
+# Wed, 12 Jul 2017 18:32:06 GMT
 ENV REDIS_DOWNLOAD_URL=https://github.com/MSOpenTech/redis/releases/download/win-3.2.100/Redis-x64-3.2.100.zip
-# Wed, 18 Jan 2017 22:56:10 GMT
+# Wed, 12 Jul 2017 18:32:22 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:REDIS_DOWNLOAD_URL); 	Invoke-WebRequest -Uri $env:REDIS_DOWNLOAD_URL -OutFile 'redis.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive redis.zip -DestinationPath C:\Redis; 		Write-Host 'Verifying install ("redis-server --version") ...'; 	redis-server --version; 		Write-Host 'Removing ...'; 	Remove-Item redis.zip -Force
-# Wed, 18 Jan 2017 22:56:25 GMT
+# Wed, 12 Jul 2017 18:32:34 GMT
 RUN (Get-Content C:\Redis\redis.windows.conf) 	-Replace '^(bind)\s+.*$', '$1 0.0.0.0' 	-Replace '^(protected-mode)\s+.*$', '$1 no' 	| Set-Content C:\Redis\redis.docker.conf
-# Wed, 18 Jan 2017 22:56:27 GMT
+# Wed, 12 Jul 2017 18:32:35 GMT
 VOLUME [C:\data]
-# Wed, 18 Jan 2017 22:56:30 GMT
+# Wed, 12 Jul 2017 18:32:38 GMT
 WORKDIR C:\data
-# Wed, 18 Jan 2017 22:56:32 GMT
+# Wed, 12 Jul 2017 18:32:40 GMT
 EXPOSE 6379/tcp
-# Wed, 18 Jan 2017 22:56:37 GMT
+# Wed, 12 Jul 2017 18:32:42 GMT
 CMD ["redis-server.exe" "C:\\Redis\\redis.docker.conf"]
 ```
 
@@ -2455,54 +2499,54 @@ CMD ["redis-server.exe" "C:\\Redis\\redis.docker.conf"]
 	-	`sha256:bce2fbc256ea437a87dadac2f69aabd25bed4f56255549090056c1131fad0277`  
 		Size: 252.7 MB (252691002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:3ac17e2e6106d09a44642a437c318092eddd284afea0b4e707e89f6cec7a18ef`  
-		Size: 80.6 MB (80617684 bytes)  
+	-	`sha256:6a43ac69611f40511708beba10dfe6fbe3e266ca933b6fd49c87a9f31f46f46c`  
+		Size: 116.0 MB (116037241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:e75762e22d922ed4bb69ae4e673c912389d9d70fd91eaa33cd0732f0a8e28a4e`  
-		Last Modified: Fri, 13 Jan 2017 18:00:06 GMT  
-		Size: 951.0 B  
+	-	`sha256:acc75acac61e9635ae7c57f4d74b6ac6a2efef41d7b17052ff6f5bc0fb92e960`  
+		Last Modified: Wed, 26 Apr 2017 19:51:40 GMT  
+		Size: 968.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de31e43b05dd874f8ca7edfb3aac6545866c500853b7e509ba14e9ae38ad2097`  
-		Last Modified: Wed, 18 Jan 2017 22:57:11 GMT  
-		Size: 872.2 KB (872241 bytes)  
+	-	`sha256:60f17e54c8f52dbb6a5246a2a56f6c9de1762cd61e67319d2484ea2b6367c8f0`  
+		Last Modified: Wed, 12 Jul 2017 19:03:44 GMT  
+		Size: 873.0 KB (873031 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72304c71b91dd5750a5ee9c76380796d7587a7d5608045ab531f7e9d02a44af9`  
-		Last Modified: Wed, 18 Jan 2017 22:57:50 GMT  
-		Size: 951.0 B  
+	-	`sha256:8dd171254c5cb42e88cbb61f9664c44a4b9bbf8f1b9308732769d6e0e08746cd`  
+		Last Modified: Wed, 12 Jul 2017 19:04:19 GMT  
+		Size: 948.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:67e40118728bb9a486a422adbd3c08f4a6c99e42edff5811101172555dcfa0da`  
-		Last Modified: Wed, 18 Jan 2017 22:57:50 GMT  
-		Size: 958.0 B  
+	-	`sha256:3106c2ed15a3eb44406beba69af250d6868010c2f307b68accafd53579b0e9ea`  
+		Last Modified: Wed, 12 Jul 2017 19:04:19 GMT  
+		Size: 955.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c60cf65c021c8b3c522be96e91e91074e57d7777b1d624e88ae265759a2abe39`  
-		Last Modified: Wed, 18 Jan 2017 22:57:53 GMT  
-		Size: 6.1 MB (6097510 bytes)  
+	-	`sha256:5c482e10d0fc8c892581315d2654090f35b8cd901cdcdadfa1e0540d41e5aa2b`  
+		Last Modified: Wed, 12 Jul 2017 19:04:21 GMT  
+		Size: 6.1 MB (6105286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:246384c0dbd7566af07c7d33998ec09438cd9029e8332605e06b37e8fdaa876f`  
-		Last Modified: Wed, 18 Jan 2017 22:57:48 GMT  
-		Size: 802.2 KB (802163 bytes)  
+	-	`sha256:74a1bb8a51617fd4b2a0707082ff1885078ac1e1546294243dee089fd83431fb`  
+		Last Modified: Wed, 12 Jul 2017 19:04:17 GMT  
+		Size: 809.6 KB (809590 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ae3741b92c1d47abe9a132f443036ca118cf13362af4131a1fb37792df5b016`  
-		Last Modified: Wed, 18 Jan 2017 22:57:48 GMT  
+	-	`sha256:5b72f867f044aec7145ef955bcd06cead82eb27ece411f8f4b62cb1fb99d1681`  
+		Last Modified: Wed, 12 Jul 2017 19:04:17 GMT  
+		Size: 953.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a303d4c0f022069d787c436527b881034b3c30bdc4c48b3908b0257ed0be01c7`  
+		Last Modified: Wed, 12 Jul 2017 19:04:16 GMT  
+		Size: 953.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:820e678b188173827acc6298d5c33c2af03a4e701805f5f66d3364debc9d2f32`  
+		Last Modified: Wed, 12 Jul 2017 19:04:16 GMT  
 		Size: 957.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8794db4ffca9168374e650806acb6ee47018b2d553df142cc3ad6540a6c9a51a`  
-		Last Modified: Wed, 18 Jan 2017 22:57:47 GMT  
-		Size: 962.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4641bd817ce69e3fde2b4f0f6b6a8e97a7da04be80cd4867daff6365d4a15d40`  
-		Last Modified: Wed, 18 Jan 2017 22:57:47 GMT  
+	-	`sha256:8a2bd99185dff9bbb357f63136c046ee8b4c104dda8c0ced6ab8b23a6af1fd42`  
+		Last Modified: Wed, 12 Jul 2017 19:04:16 GMT  
 		Size: 961.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c893421dc79a258d86db45ec19879d16ec43ffc2b462ffcfa5069878dc644ee0`  
-		Last Modified: Wed, 18 Jan 2017 22:57:47 GMT  
-		Size: 960.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `redis:nanoserver`
 
 ```console
-$ docker pull redis@sha256:0504a89bfa3ed423a4537e20579434e08058043537822c8578c98ac71ef971bf
+$ docker pull redis@sha256:810b22ec3e6009d23067e8e83c8a2ac4a2ca20200d0512caf40b171d03457cec
 ```
 
 -	Platforms:
@@ -2512,32 +2556,36 @@ $ docker pull redis@sha256:0504a89bfa3ed423a4537e20579434e08058043537822c8578c98
 
 -	Docker Version: 1.12.2-cs2-ws-beta
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **341.1 MB (341087300 bytes)**  
+-	Total Size: **376.5 MB (376522845 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:106a932a5a0e1b1844607261579c8c86b36ec749801667c75ce01c3f6f8d9d20`
+-	Image ID: `sha256:15fd74a53df1ffd5eaf5d5258db2c9558569f19a33fffcfdb0fae691c268ca01`
 -	Default Command: `["redis-server.exe","C:\\Redis\\redis.docker.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
 ```dockerfile
-# Fri, 13 Jan 2017 17:53:28 GMT
+# Sun, 20 Nov 2016 11:39:18 GMT
+RUN Apply image 10.0.14393.0
+# Fri, 07 Apr 2017 09:40:17 GMT
+RUN Install update 10.0.14393.1066
+# Wed, 26 Apr 2017 19:37:26 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 18 Jan 2017 22:52:13 GMT
+# Wed, 12 Jul 2017 18:30:27 GMT
 RUN $newPath = ('C:\Redis;{0}' -f $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	setx /M PATH $newPath;
-# Wed, 18 Jan 2017 22:55:44 GMT
+# Wed, 12 Jul 2017 18:32:04 GMT
 ENV REDIS_VERSION=3.2.100
-# Wed, 18 Jan 2017 22:55:46 GMT
+# Wed, 12 Jul 2017 18:32:06 GMT
 ENV REDIS_DOWNLOAD_URL=https://github.com/MSOpenTech/redis/releases/download/win-3.2.100/Redis-x64-3.2.100.zip
-# Wed, 18 Jan 2017 22:56:10 GMT
+# Wed, 12 Jul 2017 18:32:22 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:REDIS_DOWNLOAD_URL); 	Invoke-WebRequest -Uri $env:REDIS_DOWNLOAD_URL -OutFile 'redis.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive redis.zip -DestinationPath C:\Redis; 		Write-Host 'Verifying install ("redis-server --version") ...'; 	redis-server --version; 		Write-Host 'Removing ...'; 	Remove-Item redis.zip -Force
-# Wed, 18 Jan 2017 22:56:25 GMT
+# Wed, 12 Jul 2017 18:32:34 GMT
 RUN (Get-Content C:\Redis\redis.windows.conf) 	-Replace '^(bind)\s+.*$', '$1 0.0.0.0' 	-Replace '^(protected-mode)\s+.*$', '$1 no' 	| Set-Content C:\Redis\redis.docker.conf
-# Wed, 18 Jan 2017 22:56:27 GMT
+# Wed, 12 Jul 2017 18:32:35 GMT
 VOLUME [C:\data]
-# Wed, 18 Jan 2017 22:56:30 GMT
+# Wed, 12 Jul 2017 18:32:38 GMT
 WORKDIR C:\data
-# Wed, 18 Jan 2017 22:56:32 GMT
+# Wed, 12 Jul 2017 18:32:40 GMT
 EXPOSE 6379/tcp
-# Wed, 18 Jan 2017 22:56:37 GMT
+# Wed, 12 Jul 2017 18:32:42 GMT
 CMD ["redis-server.exe" "C:\\Redis\\redis.docker.conf"]
 ```
 
@@ -2545,46 +2593,46 @@ CMD ["redis-server.exe" "C:\\Redis\\redis.docker.conf"]
 	-	`sha256:bce2fbc256ea437a87dadac2f69aabd25bed4f56255549090056c1131fad0277`  
 		Size: 252.7 MB (252691002 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:3ac17e2e6106d09a44642a437c318092eddd284afea0b4e707e89f6cec7a18ef`  
-		Size: 80.6 MB (80617684 bytes)  
+	-	`sha256:6a43ac69611f40511708beba10dfe6fbe3e266ca933b6fd49c87a9f31f46f46c`  
+		Size: 116.0 MB (116037241 bytes)  
 		MIME: application/vnd.docker.image.rootfs.foreign.diff.tar.gzip
-	-	`sha256:e75762e22d922ed4bb69ae4e673c912389d9d70fd91eaa33cd0732f0a8e28a4e`  
-		Last Modified: Fri, 13 Jan 2017 18:00:06 GMT  
-		Size: 951.0 B  
+	-	`sha256:acc75acac61e9635ae7c57f4d74b6ac6a2efef41d7b17052ff6f5bc0fb92e960`  
+		Last Modified: Wed, 26 Apr 2017 19:51:40 GMT  
+		Size: 968.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:de31e43b05dd874f8ca7edfb3aac6545866c500853b7e509ba14e9ae38ad2097`  
-		Last Modified: Wed, 18 Jan 2017 22:57:11 GMT  
-		Size: 872.2 KB (872241 bytes)  
+	-	`sha256:60f17e54c8f52dbb6a5246a2a56f6c9de1762cd61e67319d2484ea2b6367c8f0`  
+		Last Modified: Wed, 12 Jul 2017 19:03:44 GMT  
+		Size: 873.0 KB (873031 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72304c71b91dd5750a5ee9c76380796d7587a7d5608045ab531f7e9d02a44af9`  
-		Last Modified: Wed, 18 Jan 2017 22:57:50 GMT  
-		Size: 951.0 B  
+	-	`sha256:8dd171254c5cb42e88cbb61f9664c44a4b9bbf8f1b9308732769d6e0e08746cd`  
+		Last Modified: Wed, 12 Jul 2017 19:04:19 GMT  
+		Size: 948.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:67e40118728bb9a486a422adbd3c08f4a6c99e42edff5811101172555dcfa0da`  
-		Last Modified: Wed, 18 Jan 2017 22:57:50 GMT  
-		Size: 958.0 B  
+	-	`sha256:3106c2ed15a3eb44406beba69af250d6868010c2f307b68accafd53579b0e9ea`  
+		Last Modified: Wed, 12 Jul 2017 19:04:19 GMT  
+		Size: 955.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c60cf65c021c8b3c522be96e91e91074e57d7777b1d624e88ae265759a2abe39`  
-		Last Modified: Wed, 18 Jan 2017 22:57:53 GMT  
-		Size: 6.1 MB (6097510 bytes)  
+	-	`sha256:5c482e10d0fc8c892581315d2654090f35b8cd901cdcdadfa1e0540d41e5aa2b`  
+		Last Modified: Wed, 12 Jul 2017 19:04:21 GMT  
+		Size: 6.1 MB (6105286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:246384c0dbd7566af07c7d33998ec09438cd9029e8332605e06b37e8fdaa876f`  
-		Last Modified: Wed, 18 Jan 2017 22:57:48 GMT  
-		Size: 802.2 KB (802163 bytes)  
+	-	`sha256:74a1bb8a51617fd4b2a0707082ff1885078ac1e1546294243dee089fd83431fb`  
+		Last Modified: Wed, 12 Jul 2017 19:04:17 GMT  
+		Size: 809.6 KB (809590 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ae3741b92c1d47abe9a132f443036ca118cf13362af4131a1fb37792df5b016`  
-		Last Modified: Wed, 18 Jan 2017 22:57:48 GMT  
+	-	`sha256:5b72f867f044aec7145ef955bcd06cead82eb27ece411f8f4b62cb1fb99d1681`  
+		Last Modified: Wed, 12 Jul 2017 19:04:17 GMT  
+		Size: 953.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a303d4c0f022069d787c436527b881034b3c30bdc4c48b3908b0257ed0be01c7`  
+		Last Modified: Wed, 12 Jul 2017 19:04:16 GMT  
+		Size: 953.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:820e678b188173827acc6298d5c33c2af03a4e701805f5f66d3364debc9d2f32`  
+		Last Modified: Wed, 12 Jul 2017 19:04:16 GMT  
 		Size: 957.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8794db4ffca9168374e650806acb6ee47018b2d553df142cc3ad6540a6c9a51a`  
-		Last Modified: Wed, 18 Jan 2017 22:57:47 GMT  
-		Size: 962.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4641bd817ce69e3fde2b4f0f6b6a8e97a7da04be80cd4867daff6365d4a15d40`  
-		Last Modified: Wed, 18 Jan 2017 22:57:47 GMT  
+	-	`sha256:8a2bd99185dff9bbb357f63136c046ee8b4c104dda8c0ced6ab8b23a6af1fd42`  
+		Last Modified: Wed, 12 Jul 2017 19:04:16 GMT  
 		Size: 961.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c893421dc79a258d86db45ec19879d16ec43ffc2b462ffcfa5069878dc644ee0`  
-		Last Modified: Wed, 18 Jan 2017 22:57:47 GMT  
-		Size: 960.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
