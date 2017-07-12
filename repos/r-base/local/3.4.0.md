@@ -76,18 +76,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.4.6
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.6.dsc' apt_1.4.6.dsc 2549 SHA256:6ec5f9ab39da1a60d425235117b3275c088d722c6ce0ce7d3e90b81e19ebc4df
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.4.6.tar.xz' apt_1.4.6.tar.xz 2078376 SHA256:7c202b0ecf3a574ca103e24c6a7245761f38d3d3b25f45f38b0d29f9ecde70e9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.4.6/
-- https://sources.debian.net/src/apt/1.4.6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `attr=1:2.4.47-2`
 
@@ -779,14 +769,8 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `GFDL-1.3`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris findutils=4.6.0+git+20161106-2
-'http://http.debian.net/debian/pool/main/f/findutils/findutils_4.6.0+git+20161106-2.dsc' findutils_4.6.0+git+20161106-2.dsc 2220 SHA256:f92d95f03e56357bb72e897f4d8b363995f280cfdf6dedfabdec3164f3a7651a
-'http://http.debian.net/debian/pool/main/f/findutils/findutils_4.6.0+git+20161106.orig.tar.xz' findutils_4.6.0+git+20161106.orig.tar.xz 1828956 SHA256:96a3aa120d7300863f39fe56ccb6674d8cde4730b485f4f81083c1a6d33097e3
-'http://http.debian.net/debian/pool/main/f/findutils/findutils_4.6.0+git+20161106-2.debian.tar.xz' findutils_4.6.0+git+20161106-2.debian.tar.xz 26812 SHA256:aca885ac24582f5c393dbbfa362264712ee4922da0ff7aa1fc602e629c89b71b
-```
 
 ### `dpkg` source package: `fontconfig=2.11.0-6.7`
 
@@ -944,19 +928,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.1.0-7
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.1.0-7.dsc' gcc-7_7.1.0-7.dsc 26117 SHA256:81407c5e05750deb9a0ebf8e688ca82e9d870e4a46f2a48e538c7f6e3acc2a35
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.1.0.orig.tar.gz' gcc-7_7.1.0.orig.tar.gz 73830593 SHA256:c387dcedc16950e89bd4a805564047bc4a2340511a155d0fa4046ff158939146
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.1.0-7.diff.gz' gcc-7_7.1.0-7.diff.gz 1362106 SHA256:fcf83d77d2624e87e0647c9c1172a3476b5a03ac5882d62cc0e5a5f8c32f2a22
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-7/7.1.0-7/
-- https://sources.debian.net/src/gcc-7/7.1.0-7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-defaults=1.168`
 
@@ -971,18 +944,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.168
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.168.dsc' gcc-defaults_1.168.dsc 13173 SHA256:05a2a34278108aec64227a63cb61d9562bca9380f8539562e7e42023dca2d1c8
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.168.tar.gz' gcc-defaults_1.168.tar.gz 69321 SHA256:4ecc5edafbf47d43c8b872e36c9a87c95691bed94eaa6e8f55adfc8fd64e5587
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-defaults/1.168/
-- https://sources.debian.net/src/gcc-defaults/1.168/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gdbm=1.8.3-14`
 
@@ -1542,19 +1505,8 @@ Licenses: (parsed from: `/usr/share/doc/libblas-common/copyright`, `/usr/share/d
 - `BSD-3-clause`
 - `BSD-3-clause-intel`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris lapack=3.7.0-2
-'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.7.0-2.dsc' lapack_3.7.0-2.dsc 2900 SHA256:8e6a856bbf932f19456de2bad5b2955ae0ccb36e740d38afe011444be10fac9f
-'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.7.0.orig.tar.gz' lapack_3.7.0.orig.tar.gz 7359812 SHA256:ed967e4307e986474ab02eb810eed1d1adc73f5e1e3bc78fb009f6fe766db3be
-'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.7.0-2.debian.tar.xz' lapack_3.7.0-2.debian.tar.xz 21100 SHA256:bc423933dd01b179bee02649675f5b87f669945530b291aeb95229f5e8d51035
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/lapack/3.7.0-2/
-- https://sources.debian.net/src/lapack/3.7.0-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lattice=0.20-35-1`
 
@@ -2733,19 +2685,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.23.1-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.23.1-1.dsc' nghttp2_1.23.1-1.dsc 2275 SHA256:4159afe7c91c436142c5c0fe706d72d65b62835f542ec1991fad76e11de8d0f7
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.23.1.orig.tar.bz2' nghttp2_1.23.1.orig.tar.bz2 1798970 SHA256:b662dd331402b635314d0ec0163ac57390327049734ec62bf8072a07ab165530
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.23.1-1.debian.tar.xz' nghttp2_1.23.1-1.debian.tar.xz 11940 SHA256:62c4fa48fcdfb40924764351266fb000274060549fc1f342e1c12fec0e32a43b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.23.1-1/
-- https://sources.debian.net/src/nghttp2/1.23.1-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `nlme=3.1.131-3`
 
@@ -3006,19 +2947,8 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.24/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris perl=5.24.1-4
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-4.dsc' perl_5.24.1-4.dsc 2369 SHA256:01074d8365ed5d9288096b4d2c22515631287ce6c9d0c82f2fc3d7dad189fa4d
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-4.debian.tar.xz' perl_5.24.1-4.debian.tar.xz 170032 SHA256:1b197dbafd7e8b6fbf86eec00a85cabe70290006d3e40d65b78f984b6f4b2c52
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/perl/5.24.1-4/
-- https://sources.debian.net/src/perl/5.24.1-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `pixman=0.34.0-1`
 
