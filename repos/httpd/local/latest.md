@@ -1,10 +1,10 @@
-# `httpd:2.4.25`
+# `httpd:2.4.27`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b1e597b50dd7cf920147efa372ebd2f4d3e4707082ab90fa51aaf8e55b9f2a29`
-- Created: `2017-06-23T00:15:13.065206157Z`
-- Virtual Size: ~ 177.31 Mb  
+- Image ID: `sha256:e0ceae115daa7c4a13e5e330e1012051f37b13f992b48debf537f25cbb3da9df`
+- Created: `2017-07-11T19:23:08.269292818Z`
+- Virtual Size: ~ 177.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
@@ -12,11 +12,13 @@
   - `PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `HTTPD_PREFIX=/usr/local/apache2`
   - `NGHTTP2_VERSION=1.18.1-1`
-  - `OPENSSL_VERSION=1.0.2k-1~bpo8+1`
-  - `HTTPD_VERSION=2.4.25`
-  - `HTTPD_SHA1=bd6d138c31c109297da2346c6e7b93b9283993d2`
-  - `HTTPD_BZ2_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=httpd/httpd-2.4.25.tar.bz2`
-  - `HTTPD_ASC_URL=https://www.apache.org/dist/httpd/httpd-2.4.25.tar.bz2.asc`
+  - `OPENSSL_VERSION=1.0.2l-1~bpo8+1`
+  - `HTTPD_VERSION=2.4.27`
+  - `HTTPD_SHA1=699e4e917e8fb5fd7d0ce7e009f8256ed02ec6fc`
+  - `HTTPD_BZ2_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=httpd/httpd-2.4.27.tar.bz2`
+  - `HTTPD_ASC_URL=https://www.apache.org/dist/httpd/httpd-2.4.27.tar.bz2.asc`
+  - `HTTPD_BZ2_FALLBACK_URL=https://archive.apache.org/dist/httpd/httpd-2.4.27.tar.bz2`
+  - `HTTPD_ASC_FALLBACK_URL=https://archive.apache.org/dist/httpd/httpd-2.4.27.tar.bz2.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -590,12 +592,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/e2fsprogs/1.42.12-2/
 - https://sources.debian.net/src/e2fsprogs/1.42.12-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `expat=2.1.0-6+deb8u3`
+### `dpkg` source package: `expat=2.1.0-6+deb8u4`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.1.0-6+deb8u3`
-- `libexpat1-dev:amd64=2.1.0-6+deb8u3`
+- `libexpat1:amd64=2.1.0-6+deb8u4`
+- `libexpat1-dev:amd64=2.1.0-6+deb8u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -604,16 +606,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.1.0-6+deb8u3
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u3.dsc' expat_2.1.0-6+deb8u3.dsc 2278 SHA256:3485be5c4ffc922aea14718c48c4107b04559ec013cc0e98a61597da50320e25
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u3.debian.tar.xz' expat_2.1.0-6+deb8u3.debian.tar.xz 21716 SHA256:5e756a68a7634b7b7109024bd33df4df3c5964ea0d0f5e8db0ca98f623bcd841
+$ apt-get source -qq --print-uris expat=2.1.0-6+deb8u4
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-6+deb8u4.dsc' expat_2.1.0-6+deb8u4.dsc 2292 SHA256:7f7a5fed696e3b17f50e576dbae7013793e59517b04818e8b1688d9581792245
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-6+deb8u4.debian.tar.xz' expat_2.1.0-6+deb8u4.debian.tar.xz 22672 SHA256:e832a0c7f1645bb915310628c38ecc6183f6854b0788332a7be470d06d4d149b
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/expat/2.1.0-6+deb8u3/
-- https://sources.debian.net/src/expat/2.1.0-6+deb8u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/expat/2.1.0-6+deb8u4/
+- https://sources.debian.net/src/expat/2.1.0-6+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `findutils=4.4.2-9`
 
@@ -1378,11 +1380,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u4/
 - https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `linux=3.16.43-2+deb8u1`
+### `dpkg` source package: `linux=3.16.43-2+deb8u2`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.16.43-2+deb8u1`
+- `linux-libc-dev:amd64=3.16.43-2+deb8u2`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1390,8 +1392,19 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.16.43-2+deb8u2
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u2.dsc' linux_3.16.43-2+deb8u2.dsc 140609 SHA256:c866504a6adc567596c2ee9cc0488970d70e654dc92a0fc595269d3d8b49b3b8
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43.orig.tar.xz' linux_3.16.43.orig.tar.xz 81815520 SHA256:77fc86010339c04736799d4f2e19adc1623c440583e7eae09e4b76b63c4edd8f
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u2.debian.tar.xz' linux_3.16.43-2+deb8u2.debian.tar.xz 3235980 SHA256:10ef263bed87534798fd90bdedc1e1717b569c9973b35cd4c7610a2f2a44a220
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/linux/3.16.43-2+deb8u2/
+- https://sources.debian.net/src/linux/3.16.43-2+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lksctp-tools=1.0.16+dfsg-2`
 
@@ -1660,11 +1673,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u3/
 - https://sources.debian.net/src/openldap/2.4.40+dfsg-1+deb8u3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openssl=1.0.2k-1~bpo8+1`
+### `dpkg` source package: `openssl=1.0.2l-1~bpo8+1`
 
 Binary Packages:
 
-- `libssl1.0.0:amd64=1.0.2k-1~bpo8+1`
+- `libssl1.0.0:amd64=1.0.2l-1~bpo8+1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1673,16 +1686,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.0.2k-1~bpo8+1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.2k-1~bpo8+1.dsc' openssl_1.0.2k-1~bpo8+1.dsc 2269 SHA256:b010af3435d2a1c26b1022b075300864627d2aa65534a3e09f4cca47f08561d0
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.2k.orig.tar.gz' openssl_1.0.2k.orig.tar.gz 5309236 SHA256:6b3977c61f2aedf0f96367dcfb5c6e578cf37e7b8d913b4ecb6643c3cb88d8c0
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.2k-1~bpo8+1.debian.tar.xz' openssl_1.0.2k-1~bpo8+1.debian.tar.xz 77056 SHA256:f42af1ba0a629e132cea7c9e2aa4c30d189365654ebcc2f4652efc102452b5ba
+$ apt-get source -qq --print-uris openssl=1.0.2l-1~bpo8+1
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.2l-1~bpo8+1.dsc' openssl_1.0.2l-1~bpo8+1.dsc 2269 SHA256:53bd0c3af02f10258961be2822951251c7b942216c1de08bfa516c48b4f58e41
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.2l.orig.tar.gz' openssl_1.0.2l.orig.tar.gz 5365054 SHA256:ce07195b659e75f4e1db43552860070061f156a98bb37b672b101ba6e3ddf30c
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.0.2l-1~bpo8+1.debian.tar.xz' openssl_1.0.2l-1~bpo8+1.debian.tar.xz 77024 SHA256:f8db9ce79a378fb5cd2e258f7398670d926802328c656a4f3682761b331fd125
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openssl/1.0.2k-1~bpo8+1/
-- https://sources.debian.net/src/openssl/1.0.2k-1~bpo8+1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openssl/1.0.2l-1~bpo8+1/
+- https://sources.debian.net/src/openssl/1.0.2l-1~bpo8+1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.20.7-1`
 

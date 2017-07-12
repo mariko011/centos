@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8014d2ecbd73b459b01402ab4b05d70dd2346c2ed467bebe4fce419e76e3c058`
-- Created: `2017-06-27T21:55:49.8087567Z`
-- Virtual Size: ~ 86.44 Mb  
+- Image ID: `sha256:74837e606d2dd01df31bade3375b1ce57ba3e2fa91a280f4cc6c9bee50bed872`
+- Created: `2017-07-11T19:24:14.792493108Z`
+- Virtual Size: ~ 87.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
@@ -15,3 +15,5 @@
   - `HTTPD_SHA1=bd6d138c31c109297da2346c6e7b93b9283993d2`
   - `HTTPD_BZ2_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=httpd/httpd-2.4.25.tar.bz2`
   - `HTTPD_ASC_URL=https://www.apache.org/dist/httpd/httpd-2.4.25.tar.bz2.asc`
+  - `HTTPD_BZ2_FALLBACK_URL=https://archive.apache.org/dist/httpd/httpd-2.4.25.tar.bz2`
+  - `HTTPD_ASC_FALLBACK_URL=https://archive.apache.org/dist/httpd/httpd-2.4.25.tar.bz2.asc`
