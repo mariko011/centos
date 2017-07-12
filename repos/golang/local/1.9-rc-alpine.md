@@ -1,4 +1,4 @@
-# `golang:1.9beta2-alpine`
+# `golang:1.9beta2-alpine3.6`
 
 ## Docker Metadata
 

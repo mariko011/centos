@@ -1,9 +1,9 @@
-# `golang:1.8.3`
+# `golang:1.8.3-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d2f558dda1330e162cff6888e485f81a826dba5e7a391705eab336eb4778e69d`
-- Created: `2017-06-22T22:38:53.649145852Z`
+- Image ID: `sha256:6d9bf2aec386bf0987d0198c4593ae1a1b592ae5a90a53848dae625d7a1dc22a`
+- Created: `2017-07-08T04:06:32.073187686Z`
 - Virtual Size: ~ 698.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -739,11 +739,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/e2fsprogs/1.42.12-2/
 - https://sources.debian.net/src/e2fsprogs/1.42.12-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `expat=2.1.0-6+deb8u3`
+### `dpkg` source package: `expat=2.1.0-6+deb8u4`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.1.0-6+deb8u3`
+- `libexpat1:amd64=2.1.0-6+deb8u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -752,16 +752,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.1.0-6+deb8u3
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u3.dsc' expat_2.1.0-6+deb8u3.dsc 2278 SHA256:3485be5c4ffc922aea14718c48c4107b04559ec013cc0e98a61597da50320e25
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u3.debian.tar.xz' expat_2.1.0-6+deb8u3.debian.tar.xz 21716 SHA256:5e756a68a7634b7b7109024bd33df4df3c5964ea0d0f5e8db0ca98f623bcd841
+$ apt-get source -qq --print-uris expat=2.1.0-6+deb8u4
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-6+deb8u4.dsc' expat_2.1.0-6+deb8u4.dsc 2292 SHA256:7f7a5fed696e3b17f50e576dbae7013793e59517b04818e8b1688d9581792245
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-6+deb8u4.debian.tar.xz' expat_2.1.0-6+deb8u4.debian.tar.xz 22672 SHA256:e832a0c7f1645bb915310628c38ecc6183f6854b0788332a7be470d06d4d149b
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/expat/2.1.0-6+deb8u3/
-- https://sources.debian.net/src/expat/2.1.0-6+deb8u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/expat/2.1.0-6+deb8u4/
+- https://sources.debian.net/src/expat/2.1.0-6+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `explorercanvas=0.r3-3`
 
@@ -1893,11 +1893,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libusb/2:0.1.12-25/
 - https://sources.debian.net/src/libusb/2:0.1.12-25/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `linux=3.16.43-2+deb8u1`
+### `dpkg` source package: `linux=3.16.43-2+deb8u2`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.16.43-2+deb8u1`
+- `linux-libc-dev:amd64=3.16.43-2+deb8u2`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1905,8 +1905,19 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.16.43-2+deb8u2
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u2.dsc' linux_3.16.43-2+deb8u2.dsc 140609 SHA256:c866504a6adc567596c2ee9cc0488970d70e654dc92a0fc595269d3d8b49b3b8
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43.orig.tar.xz' linux_3.16.43.orig.tar.xz 81815520 SHA256:77fc86010339c04736799d4f2e19adc1623c440583e7eae09e4b76b63c4edd8f
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u2.debian.tar.xz' linux_3.16.43-2+deb8u2.debian.tar.xz 3235980 SHA256:10ef263bed87534798fd90bdedc1e1717b569c9973b35cd4c7610a2f2a44a220
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/linux/3.16.43-2+deb8u2/
+- https://sources.debian.net/src/linux/3.16.43-2+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
