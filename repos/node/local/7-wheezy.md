@@ -1,18 +1,18 @@
-# `node:8.1.3-wheezy`
+# `node:7.10.1-wheezy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5ba761472aecaad2859a32d965cd7de759b8718cdb8b07deedd32d237ce720e7`
-- Created: `2017-07-05T19:18:15.844321303Z`
-- Virtual Size: ~ 521.10 Mb  
+- Image ID: `sha256:741e465882df8965b0d257031ba9589dc4cc2b37d999aa963c4a0697e1b40a07`
+- Created: `2017-07-11T23:05:29.833724052Z`
+- Virtual Size: ~ 515.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=8.1.3`
-  - `YARN_VERSION=0.24.6`
+  - `NODE_VERSION=7.10.1`
+  - `YARN_VERSION=0.24.4`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1459,17 +1459,17 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/ilmbase/1.0.1-4/
 - https://sources.debian.net/src/ilmbase/1.0.1-4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `imagemagick=8:6.7.7.10-5+deb7u14`
+### `dpkg` source package: `imagemagick=8:6.7.7.10-5+deb7u15`
 
 Binary Packages:
 
-- `imagemagick=8:6.7.7.10-5+deb7u14`
-- `imagemagick-common=8:6.7.7.10-5+deb7u14`
-- `libmagickcore-dev=8:6.7.7.10-5+deb7u14`
-- `libmagickcore5:amd64=8:6.7.7.10-5+deb7u14`
-- `libmagickcore5-extra:amd64=8:6.7.7.10-5+deb7u14`
-- `libmagickwand-dev=8:6.7.7.10-5+deb7u14`
-- `libmagickwand5:amd64=8:6.7.7.10-5+deb7u14`
+- `imagemagick=8:6.7.7.10-5+deb7u15`
+- `imagemagick-common=8:6.7.7.10-5+deb7u15`
+- `libmagickcore-dev=8:6.7.7.10-5+deb7u15`
+- `libmagickcore5:amd64=8:6.7.7.10-5+deb7u15`
+- `libmagickcore5-extra:amd64=8:6.7.7.10-5+deb7u15`
+- `libmagickwand-dev=8:6.7.7.10-5+deb7u15`
+- `libmagickwand5:amd64=8:6.7.7.10-5+deb7u15`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-common/copyright`, `/usr/share/doc/libmagickcore-dev/copyright`, `/usr/share/doc/libmagickcore5/copyright`, `/usr/share/doc/libmagickcore5-extra/copyright`, `/usr/share/doc/libmagickwand-dev/copyright`, `/usr/share/doc/libmagickwand5/copyright`)
 
@@ -1490,8 +1490,19 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris imagemagick=8:6.7.7.10-5+deb7u15
+'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u15.dsc' imagemagick_6.7.7.10-5+deb7u15.dsc 3160 SHA256:643566aff4ea3ff92f0a0b423e73aa17a6c2baf28fbfd9a137db9f048e8e42d2
+'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10.orig.tar.bz2' imagemagick_6.7.7.10.orig.tar.bz2 10473522 SHA256:05fb23824b1c90ac35259715c94c65fb5cda6969eb597a7637762d8cf3998fda
+'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u15.debian.tar.bz2' imagemagick_6.7.7.10-5+deb7u15.debian.tar.bz2 216715 SHA256:1cd21ac8bf7ade7a3d25a6705a30c7415a18f334186dfb2c125518fc8a2be237
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/imagemagick/8:6.7.7.10-5+deb7u15/
+- https://sources.debian.net/src/imagemagick/8:6.7.7.10-5+deb7u15/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9-2`
 
@@ -1963,12 +1974,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libexif/0.6.20-3/
 - https://sources.debian.net/src/libexif/0.6.20-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libffi=3.0.10-3`
+### `dpkg` source package: `libffi=3.0.10-3+deb7u2`
 
 Binary Packages:
 
-- `libffi-dev:amd64=3.0.10-3`
-- `libffi5:amd64=3.0.10-3`
+- `libffi-dev:amd64=3.0.10-3+deb7u2`
+- `libffi5:amd64=3.0.10-3+deb7u2`
 
 Licenses: (parsed from: `/usr/share/doc/libffi-dev/copyright`, `/usr/share/doc/libffi5/copyright`)
 
@@ -1977,31 +1988,42 @@ Licenses: (parsed from: `/usr/share/doc/libffi-dev/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libffi=3.0.10-3
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.0.10-3.dsc' libffi_3.0.10-3.dsc 1593 SHA256:5343328f0fd026f7dc212e0632d3d094d3642903c619e4f5716c3b0c0fba73d1
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.0.10.orig.tar.gz' libffi_3.0.10.orig.tar.gz 753346 SHA256:f01eb9027e9eb56aeaeef636649877756d475d714ef8b47f627f65bc5f3b492f
-'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.0.10-3.diff.gz' libffi_3.0.10-3.diff.gz 20644 SHA256:b10b108d47a65d1683f557070c797c22681a52c40c8a7b37c609349a64339741
+$ apt-get source -qq --print-uris libffi=3.0.10-3+deb7u2
+'http://security.debian.org/pool/updates/main/libf/libffi/libffi_3.0.10-3+deb7u2.dsc' libffi_3.0.10-3+deb7u2.dsc 2258 SHA256:39b6a4d9995bb25d7df49766db41550f25b8caef49e6c45ec2b8ccf97802f89b
+'http://security.debian.org/pool/updates/main/libf/libffi/libffi_3.0.10.orig.tar.gz' libffi_3.0.10.orig.tar.gz 753346 SHA256:f01eb9027e9eb56aeaeef636649877756d475d714ef8b47f627f65bc5f3b492f
+'http://security.debian.org/pool/updates/main/libf/libffi/libffi_3.0.10-3+deb7u2.diff.gz' libffi_3.0.10-3+deb7u2.diff.gz 21140 SHA256:67d25925a375e7b8a54616801abd440d6bd42e82298932652c66aa4c3d01bfbc
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libffi/3.0.10-3/
-- https://sources.debian.net/src/libffi/3.0.10-3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libffi/3.0.10-3+deb7u2/
+- https://sources.debian.net/src/libffi/3.0.10-3+deb7u2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libgcrypt11=1.5.0-5+deb7u5`
+### `dpkg` source package: `libgcrypt11=1.5.0-5+deb7u6`
 
 Binary Packages:
 
-- `libgcrypt11:amd64=1.5.0-5+deb7u5`
-- `libgcrypt11-dev=1.5.0-5+deb7u5`
+- `libgcrypt11:amd64=1.5.0-5+deb7u6`
+- `libgcrypt11-dev=1.5.0-5+deb7u6`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt11/copyright`, `/usr/share/doc/libgcrypt11-dev/copyright`)
 
 - `GPL-2`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libgcrypt11=1.5.0-5+deb7u6
+'http://security.debian.org/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0-5+deb7u6.dsc' libgcrypt11_1.5.0-5+deb7u6.dsc 2488 SHA256:42d5191ac23cb81c2958f6e89f706c80786dfbce5e53827b979a5aa578d60f4c
+'http://security.debian.org/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0.orig.tar.bz2' libgcrypt11_1.5.0.orig.tar.bz2 1433506 SHA256:4b62fc516004940a0571025401a0581d49199f1a76dfb5ce6fd63f50db8173fa
+'http://security.debian.org/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0-5+deb7u6.debian.tar.gz' libgcrypt11_1.5.0-5+deb7u6.debian.tar.gz 38896 SHA256:112613559143ec5f35f809c31e8fb3ae7f64d944df5111d172fb72fe6b159bd3
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libgcrypt11/1.5.0-5+deb7u6/
+- https://sources.debian.net/src/libgcrypt11/1.5.0-5+deb7u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgd2=2.0.36~rc1~dfsg-6.1+deb7u8`
 
@@ -2791,19 +2813,30 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libxext/2:1.3.1-2+deb7u1/
 - https://sources.debian.net/src/libxext/2:1.3.1-2+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libxml2=2.8.0+dfsg1-7+wheezy7`
+### `dpkg` source package: `libxml2=2.8.0+dfsg1-7+wheezy8`
 
 Binary Packages:
 
-- `libxml2:amd64=2.8.0+dfsg1-7+wheezy7`
-- `libxml2-dev:amd64=2.8.0+dfsg1-7+wheezy7`
+- `libxml2:amd64=2.8.0+dfsg1-7+wheezy8`
+- `libxml2-dev:amd64=2.8.0+dfsg1-7+wheezy8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.8.0+dfsg1-7+wheezy8
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy8.dsc' libxml2_2.8.0+dfsg1-7+wheezy8.dsc 2673 SHA256:1b0c2c8b5b038c4011da7689bc669c1b0427eec1ef39159639b8b287ea5f6847
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1.orig.tar.gz' libxml2_2.8.0+dfsg1.orig.tar.gz 3554683 SHA256:46f339843967e861e81f8427373ff2a3d0a8cb608022dea16aa1d345ddcee338
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy8.debian.tar.gz' libxml2_2.8.0+dfsg1-7+wheezy8.debian.tar.gz 73902 SHA256:6418cc0232daa38dabe154f8e8b3b6cecf0fbc1eddcd0710cbc058f815987c59
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy8/
+- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxrender=1:0.9.7-1+deb7u3`
 
@@ -2905,18 +2938,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libyaml/0.1.4-2+deb7u5/
 - https://sources.debian.net/src/libyaml/0.1.4-2+deb7u5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `linux=3.2.89-1`
+### `dpkg` source package: `linux=3.2.89-2`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.2.89-1`
+- `linux-libc-dev:amd64=3.2.89-2`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.2.89-2
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.89-2.dsc' linux_3.2.89-2.dsc 103043 SHA256:f27e81e03ae5ce52c99bee9fd79d390ad2a373f856acbcb3ed3e4134e7c2f479
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.89.orig.tar.xz' linux_3.2.89.orig.tar.xz 65997820 SHA256:9f1495415eb3be487f43fc28da09b38129d0826ebc18b39a7e18734592b5a791
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.2.89-2.debian.tar.xz' linux_3.2.89-2.debian.tar.xz 3744364 SHA256:c4de2aa8b2c0d25ef58f331d5516a33c8c6a209c22beb4cf89313e786146f6d0
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/linux/3.2.89-2/
+- https://sources.debian.net/src/linux/3.2.89-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian8+deb7u1`
 
@@ -3015,20 +3059,31 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/mawk/1.3.3-17/
 - https://sources.debian.net/src/mawk/1.3.3-17/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `mercurial=2.2.2-4+deb7u3`
+### `dpkg` source package: `mercurial=2.2.2-4+deb7u4`
 
 Binary Packages:
 
-- `mercurial=2.2.2-4+deb7u3`
-- `mercurial-common=2.2.2-4+deb7u3`
+- `mercurial=2.2.2-4+deb7u4`
+- `mercurial-common=2.2.2-4+deb7u4`
 
 Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/mercurial-common/copyright`)
 
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris mercurial=2.2.2-4+deb7u4
+'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2-4+deb7u4.dsc' mercurial_2.2.2-4+deb7u4.dsc 2178 SHA256:7db66ec2657c9f1c2b63722edac2d786f26f9f582d4e56f061b513df5cd52179
+'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2.orig.tar.gz' mercurial_2.2.2.orig.tar.gz 3430037 SHA256:3489110ec11fefbd2cbdefb8d715d0a869cef3dd729aaf4d5141108f8be1600a
+'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2-4+deb7u4.debian.tar.gz' mercurial_2.2.2-4+deb7u4.debian.tar.gz 53259 SHA256:e3441baa8d665cc986310593d73d3d4d5bcc4fa93cb611ae127440f6fcc1218d
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/mercurial/2.2.2-4+deb7u4/
+- https://sources.debian.net/src/mercurial/2.2.2-4+deb7u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mime-support=3.52-1+deb7u1`
 
@@ -3933,19 +3988,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff3=3.9.6-11+deb7u6
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u6.dsc' tiff3_3.9.6-11+deb7u6.dsc 1650 SHA256:5003c462ea09ec7fc305384c6eb7cb00dbd5028c1798bfa288db661d2e0883c3
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6.orig.tar.gz' tiff3_3.9.6.orig.tar.gz 1454196 SHA256:0fba119156236074343a14afbd3a47907e3a5952c9c86102305d4eeb06ad6833
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u6.debian.tar.gz' tiff3_3.9.6-11+deb7u6.debian.tar.gz 48032 SHA256:7800bc938ef5cd6650ec37fb00bea49d9febddc56f68944c875dab195f7789be
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u6/
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ttf-dejavu=2.33-3`
 
