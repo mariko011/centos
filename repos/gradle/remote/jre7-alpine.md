@@ -1,7 +1,7 @@
 ## `gradle:jre7-alpine`
 
 ```console
-$ docker pull gradle@sha256:49e6d9a8ff8ce600ce48464568138d4deb756f0c98bc45074b370e592539acc0
+$ docker pull gradle@sha256:b745716c9dfc91ef822edf21e01296c86d5cbc98344d944b677537ce5ce4e691
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull gradle@sha256:49e6d9a8ff8ce600ce48464568138d4deb756f0c98bc45074b37
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.9 MB (137874478 bytes)**  
+-	Total Size: **132.1 MB (132067861 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a3728af67865b7cdf96292fc5c3328e6e772548cb09060dcc6438dc7959ed32d`
+-	Image ID: `sha256:767edaa9bd8d191f2219b017c630357c0b4dff106bb79ace2894147b9ffd27d7`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -39,21 +39,21 @@ RUN set -x 	&& apk add --no-cache 		openjdk7-jre="$JAVA_ALPINE_VERSION" 	&& [ "$
 CMD ["gradle"]
 # Thu, 29 Jun 2017 02:31:33 GMT
 ENV GRADLE_HOME=/opt/gradle
-# Wed, 12 Jul 2017 17:00:50 GMT
-ENV GRADLE_VERSION=3.5
-# Wed, 12 Jul 2017 17:00:51 GMT
-ARG GRADLE_DOWNLOAD_SHA256=0b7450798c190ff76b9f9a3d02e18b33d94553f708ebc08ebe09bdf99111d110
-# Wed, 12 Jul 2017 17:01:05 GMT
-# ARGS: GRADLE_DOWNLOAD_SHA256=0b7450798c190ff76b9f9a3d02e18b33d94553f708ebc08ebe09bdf99111d110
+# Thu, 13 Jul 2017 16:38:44 GMT
+ENV GRADLE_VERSION=4.0.1
+# Thu, 13 Jul 2017 16:38:45 GMT
+ARG GRADLE_DOWNLOAD_SHA256=d717e46200d1359893f891dab047fdab98784143ac76861b53c50dbd03b44fd4
+# Thu, 13 Jul 2017 16:39:04 GMT
+# ARGS: GRADLE_DOWNLOAD_SHA256=d717e46200d1359893f891dab047fdab98784143ac76861b53c50dbd03b44fd4
 RUN set -o errexit -o nounset 	&& echo "Installing dependencies" 	&& apk add --no-cache 		bash 		libstdc++ 		&& echo "Installing build dependencies" 	&& apk add --no-cache --virtual .build-deps 		ca-certificates 		openssl 		unzip 		&& echo "Downloading Gradle" 	&& wget -O gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip" 		&& echo "Checking download hash" 	&& echo "${GRADLE_DOWNLOAD_SHA256} *gradle.zip" | sha256sum -c - 		&& echo "Installing Gradle" 	&& unzip gradle.zip 	&& rm gradle.zip 	&& mkdir /opt 	&& mv "gradle-${GRADLE_VERSION}" "${GRADLE_HOME}/" 	&& ln -s "${GRADLE_HOME}/bin/gradle" /usr/bin/gradle 		&& apk del .build-deps 		&& echo "Adding gradle user and group" 	&& addgroup -S -g 1000 gradle 	&& adduser -D -S -G gradle -u 1000 -s /bin/ash gradle 	&& mkdir /home/gradle/.gradle 	&& chown -R gradle:gradle /home/gradle
-# Wed, 12 Jul 2017 17:01:05 GMT
+# Thu, 13 Jul 2017 16:39:09 GMT
 USER [gradle]
-# Wed, 12 Jul 2017 17:01:06 GMT
+# Thu, 13 Jul 2017 16:39:09 GMT
 VOLUME [/home/gradle/.gradle]
-# Wed, 12 Jul 2017 17:01:06 GMT
+# Thu, 13 Jul 2017 16:39:10 GMT
 WORKDIR /home/gradle
-# Wed, 12 Jul 2017 17:01:11 GMT
-# ARGS: GRADLE_DOWNLOAD_SHA256=0b7450798c190ff76b9f9a3d02e18b33d94553f708ebc08ebe09bdf99111d110
+# Thu, 13 Jul 2017 16:39:13 GMT
+# ARGS: GRADLE_DOWNLOAD_SHA256=d717e46200d1359893f891dab047fdab98784143ac76861b53c50dbd03b44fd4
 RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle --version
 ```
 
@@ -70,11 +70,11 @@ RUN set -o errexit -o nounset 	&& echo "Testing Gradle installation" 	&& gradle 
 		Last Modified: Thu, 29 Jun 2017 23:39:45 GMT  
 		Size: 61.1 MB (61130280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4582c725c3faba5286eb24b0b7d522f1bb286f00c70bc35bd0b57289b8f73f1`  
-		Last Modified: Wed, 12 Jul 2017 17:05:21 GMT  
-		Size: 74.8 MB (74753427 bytes)  
+	-	`sha256:bee2c62f8909c5407a42477d5e77cacad7acd2d41ffdcf6323bc105277491811`  
+		Last Modified: Thu, 13 Jul 2017 16:44:03 GMT  
+		Size: 68.9 MB (68946812 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ac20ba98480155c60970d614d81b4951c3b9ab839244d23501408c8c0d6ad43`  
-		Last Modified: Wed, 12 Jul 2017 17:05:18 GMT  
-		Size: 138.0 B  
+	-	`sha256:c67f554a3fa28bd25c47dfbc09c51a71428c9294c9a8dccef83e164ec48b08cb`  
+		Last Modified: Thu, 13 Jul 2017 16:43:50 GMT  
+		Size: 136.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

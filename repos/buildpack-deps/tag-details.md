@@ -2,6 +2,12 @@
 
 # Tags of `buildpack-deps`
 
+-	[`buildpack-deps:artful-curl`](#buildpack-depsartful-curl)
+-	[`buildpack-deps:artful-scm`](#buildpack-depsartful-scm)
+-	[`buildpack-deps:artful`](#buildpack-depsartful)
+-	[`buildpack-deps:buster-curl`](#buildpack-depsbuster-curl)
+-	[`buildpack-deps:buster-scm`](#buildpack-depsbuster-scm)
+-	[`buildpack-deps:buster`](#buildpack-depsbuster)
 -	[`buildpack-deps:jessie-curl`](#buildpack-depsjessie-curl)
 -	[`buildpack-deps:jessie-scm`](#buildpack-depsjessie-scm)
 -	[`buildpack-deps:jessie`](#buildpack-depsjessie)
@@ -29,6 +35,30 @@
 -	[`buildpack-deps:zesty-curl`](#buildpack-depszesty-curl)
 -	[`buildpack-deps:zesty-scm`](#buildpack-depszesty-scm)
 -	[`buildpack-deps:zesty`](#buildpack-depszesty)
+
+## `buildpack-deps:artful-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:artful-scm`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:artful`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:buster-curl`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:buster-scm`
+
+**does not exist** (yet?)
+
+## `buildpack-deps:buster`
+
+**does not exist** (yet?)
 
 ## `buildpack-deps:jessie-curl`
 
