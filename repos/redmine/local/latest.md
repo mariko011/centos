@@ -1,19 +1,19 @@
-# `redmine:3.3.4`
+# `redmine:3.4.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e973f42561637e722e27f9c77a0cd73e603f10620968cee5966c343ac46540ba`
-- Created: `2017-07-03T22:37:25.145444422Z`
-- Virtual Size: ~ 638.39 Mb  
+- Image ID: `sha256:e4ecbb40b50f7022051720ef36f9ec4b9e0982eb4ee5051c67e8fc5f83c6652a`
+- Created: `2017-07-13T16:59:07.858683652Z`
+- Virtual Size: ~ 592.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["rails","server","-b","0.0.0.0"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `RUBY_MAJOR=2.2`
-  - `RUBY_VERSION=2.2.7`
-  - `RUBY_DOWNLOAD_SHA256=234c8aee6543da9efd67008e6e7ee740d41ed57a52e797f65043c3b5ec3bcb53`
+  - `RUBY_MAJOR=2.4`
+  - `RUBY_VERSION=2.4.1`
+  - `RUBY_DOWNLOAD_SHA256=4fc8a9992de3e90191de369270ea4b6c1b171b7941743614cc50822ddc1fe654`
   - `RUBYGEMS_VERSION=2.6.12`
   - `BUNDLER_VERSION=1.15.1`
   - `GEM_HOME=/usr/local/bundle`
@@ -24,8 +24,8 @@
   - `GOSU_VERSION=1.7`
   - `TINI_VERSION=v0.9.0`
   - `RAILS_ENV=production`
-  - `REDMINE_VERSION=3.3.4`
-  - `REDMINE_DOWNLOAD_MD5=e5ef015537f0edec3fa942ba42489727`
+  - `REDMINE_VERSION=3.4.1`
+  - `REDMINE_DOWNLOAD_MD5=79b07289c0b591e81180d017dbf6ebf4`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -3650,18 +3650,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tar/1.27.1-2+deb8u1/
 - https://sources.debian.net/src/tar/1.27.1-2+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tiff=4.0.3-12.3+deb8u3`
+### `dpkg` source package: `tiff=4.0.3-12.3+deb8u4`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.0.3-12.3+deb8u3`
+- `libtiff5:amd64=4.0.3-12.3+deb8u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff=4.0.3-12.3+deb8u4
+'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u4.dsc' tiff_4.0.3-12.3+deb8u4.dsc 2240 SHA256:50e944559c1588ac8cdaca8034a3a74e9178d6f026edc5f48e9c4ab77540e82f
+'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
+'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u4.debian.tar.xz' tiff_4.0.3-12.3+deb8u4.debian.tar.xz 59668 SHA256:3e637b2784715aa3a4b6e9111d9265682b73997eed0750460afe29662166595f
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u4/
+- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tzdata=2017b-0+deb8u1`
 
