@@ -38,27 +38,357 @@
 
 ## `buildpack-deps:artful-curl`
 
-**does not exist** (yet?)
+```console
+$ docker pull buildpack-deps@sha256:56c1a78b11e52ceac8b0f02659c2f3806c4348c1e17fac351276c62c92bd5333
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `buildpack-deps:artful-curl` - linux; amd64
+
+-	Docker Version: 17.03.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **45.1 MB (45055439 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:66b915508d70b9320a0a0acad7b112dcc8dcd99965102b7653037a571f381c5d`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Tue, 20 Jun 2017 23:13:58 GMT
+ADD file:ebdeda024c30477d2928d2e6bb92dd39a9fb8276e8864d44372816356ad82158 in / 
+# Tue, 20 Jun 2017 23:14:20 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Tue, 20 Jun 2017 23:14:21 GMT
+RUN rm -rf /var/lib/apt/lists/*
+# Tue, 20 Jun 2017 23:14:46 GMT
+RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
+# Tue, 20 Jun 2017 23:14:47 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Tue, 20 Jun 2017 23:14:48 GMT
+CMD ["/bin/bash"]
+# Thu, 13 Jul 2017 19:55:30 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 13 Jul 2017 19:55:31 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+```
+
+-	Layers:
+	-	`sha256:8af00e88d4bc788983893e4beb7dd920debaad51ba3a3d479c315c2c1791294e`  
+		Last Modified: Tue, 20 Jun 2017 23:24:17 GMT  
+		Size: 37.2 MB (37192449 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:310fe2e3fa5a4438d2b37e645440995117d1db0ca7977520d81d541cd69194cb`  
+		Last Modified: Tue, 20 Jun 2017 23:24:07 GMT  
+		Size: 813.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a4eea1299fe194aa023a6ef3636a94a090c7ce31ad5a75d2b98bad1c5ad1640a`  
+		Last Modified: Tue, 20 Jun 2017 23:24:07 GMT  
+		Size: 391.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ffaa8c18e8b4b47964eef54cc19fd1120a3b7b809574056f932b1efacb54e1be`  
+		Last Modified: Tue, 20 Jun 2017 23:24:07 GMT  
+		Size: 850.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:839f90116431fe664c6f33df088eec97c669ea108c699e59e0d721632ba32281`  
+		Last Modified: Tue, 20 Jun 2017 23:24:07 GMT  
+		Size: 163.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ebdf642d28296a5cc3ea8ca48ebad955e5db7edd331c6da56757de99ac4cefa0`  
+		Last Modified: Thu, 13 Jul 2017 19:59:59 GMT  
+		Size: 7.9 MB (7860773 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:artful-scm`
 
-**does not exist** (yet?)
+```console
+$ docker pull buildpack-deps@sha256:898e0960742c888d088bab3c034f841230176b0720acefe37ced2a794214c52b
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `buildpack-deps:artful-scm` - linux; amd64
+
+-	Docker Version: 17.03.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **90.9 MB (90938994 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8a0bf6327ba19438df2d9e0f20f04de889a7a15d105f64d74cea37943ce62fb4`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Tue, 20 Jun 2017 23:13:58 GMT
+ADD file:ebdeda024c30477d2928d2e6bb92dd39a9fb8276e8864d44372816356ad82158 in / 
+# Tue, 20 Jun 2017 23:14:20 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Tue, 20 Jun 2017 23:14:21 GMT
+RUN rm -rf /var/lib/apt/lists/*
+# Tue, 20 Jun 2017 23:14:46 GMT
+RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
+# Tue, 20 Jun 2017 23:14:47 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Tue, 20 Jun 2017 23:14:48 GMT
+CMD ["/bin/bash"]
+# Thu, 13 Jul 2017 19:55:30 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 13 Jul 2017 19:55:31 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 13 Jul 2017 19:55:58 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Layers:
+	-	`sha256:8af00e88d4bc788983893e4beb7dd920debaad51ba3a3d479c315c2c1791294e`  
+		Last Modified: Tue, 20 Jun 2017 23:24:17 GMT  
+		Size: 37.2 MB (37192449 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:310fe2e3fa5a4438d2b37e645440995117d1db0ca7977520d81d541cd69194cb`  
+		Last Modified: Tue, 20 Jun 2017 23:24:07 GMT  
+		Size: 813.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a4eea1299fe194aa023a6ef3636a94a090c7ce31ad5a75d2b98bad1c5ad1640a`  
+		Last Modified: Tue, 20 Jun 2017 23:24:07 GMT  
+		Size: 391.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ffaa8c18e8b4b47964eef54cc19fd1120a3b7b809574056f932b1efacb54e1be`  
+		Last Modified: Tue, 20 Jun 2017 23:24:07 GMT  
+		Size: 850.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:839f90116431fe664c6f33df088eec97c669ea108c699e59e0d721632ba32281`  
+		Last Modified: Tue, 20 Jun 2017 23:24:07 GMT  
+		Size: 163.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ebdf642d28296a5cc3ea8ca48ebad955e5db7edd331c6da56757de99ac4cefa0`  
+		Last Modified: Thu, 13 Jul 2017 19:59:59 GMT  
+		Size: 7.9 MB (7860773 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:575bddab8d315dd10780eeb87483f5d3f23f60132423a5172978998cfefe3396`  
+		Last Modified: Thu, 13 Jul 2017 20:00:28 GMT  
+		Size: 45.9 MB (45883555 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:artful`
 
-**does not exist** (yet?)
+```console
+$ docker pull buildpack-deps@sha256:0cf7b4a79c640e9eed716796ac9b7527878fd863501ae00b914d7d792a2d5760
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `buildpack-deps:artful` - linux; amd64
+
+-	Docker Version: 17.03.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **263.4 MB (263427820 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b9c5a97df6964e59cc1df84c5393d5b928f93ded0aca1704b0f043fb06212894`
+-	Default Command: `["\/bin\/bash"]`
+
+```dockerfile
+# Tue, 20 Jun 2017 23:13:58 GMT
+ADD file:ebdeda024c30477d2928d2e6bb92dd39a9fb8276e8864d44372816356ad82158 in / 
+# Tue, 20 Jun 2017 23:14:20 GMT
+RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+# Tue, 20 Jun 2017 23:14:21 GMT
+RUN rm -rf /var/lib/apt/lists/*
+# Tue, 20 Jun 2017 23:14:46 GMT
+RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
+# Tue, 20 Jun 2017 23:14:47 GMT
+RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+# Tue, 20 Jun 2017 23:14:48 GMT
+CMD ["/bin/bash"]
+# Thu, 13 Jul 2017 19:55:30 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 13 Jul 2017 19:55:31 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 13 Jul 2017 19:55:58 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 13 Jul 2017 19:57:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+```
+
+-	Layers:
+	-	`sha256:8af00e88d4bc788983893e4beb7dd920debaad51ba3a3d479c315c2c1791294e`  
+		Last Modified: Tue, 20 Jun 2017 23:24:17 GMT  
+		Size: 37.2 MB (37192449 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:310fe2e3fa5a4438d2b37e645440995117d1db0ca7977520d81d541cd69194cb`  
+		Last Modified: Tue, 20 Jun 2017 23:24:07 GMT  
+		Size: 813.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a4eea1299fe194aa023a6ef3636a94a090c7ce31ad5a75d2b98bad1c5ad1640a`  
+		Last Modified: Tue, 20 Jun 2017 23:24:07 GMT  
+		Size: 391.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ffaa8c18e8b4b47964eef54cc19fd1120a3b7b809574056f932b1efacb54e1be`  
+		Last Modified: Tue, 20 Jun 2017 23:24:07 GMT  
+		Size: 850.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:839f90116431fe664c6f33df088eec97c669ea108c699e59e0d721632ba32281`  
+		Last Modified: Tue, 20 Jun 2017 23:24:07 GMT  
+		Size: 163.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ebdf642d28296a5cc3ea8ca48ebad955e5db7edd331c6da56757de99ac4cefa0`  
+		Last Modified: Thu, 13 Jul 2017 19:59:59 GMT  
+		Size: 7.9 MB (7860773 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:575bddab8d315dd10780eeb87483f5d3f23f60132423a5172978998cfefe3396`  
+		Last Modified: Thu, 13 Jul 2017 20:00:28 GMT  
+		Size: 45.9 MB (45883555 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:12201612756f0c5761bc853d534b68f4668e0916e2c577a0f33616a3f8ace75f`  
+		Last Modified: Thu, 13 Jul 2017 20:01:11 GMT  
+		Size: 172.5 MB (172488826 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:buster-curl`
 
-**does not exist** (yet?)
+```console
+$ docker pull buildpack-deps@sha256:4abdec871d16e395f0135797566b9205f0395c9a02461daa7c5e1806994b6661
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `buildpack-deps:buster-curl` - linux; amd64
+
+-	Docker Version: 17.03.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **60.8 MB (60821987 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:9156e393b3d37c76582f283d48700d80d16634ebf5eb56cb362d6264ec2ac66f`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Tue, 20 Jun 2017 20:11:40 GMT
+ADD file:dcc206f29a20c5126bd3af150ab0452c5b90961d19c653964091a0e9240447cf in / 
+# Tue, 20 Jun 2017 20:11:41 GMT
+CMD ["bash"]
+# Thu, 13 Jul 2017 19:57:54 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 13 Jul 2017 19:57:59 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+```
+
+-	Layers:
+	-	`sha256:a257a6c28b7cff742a16c8a6f10fca67d04c2f1f008642ad4d63083eea8707b3`  
+		Last Modified: Tue, 20 Jun 2017 20:32:55 GMT  
+		Size: 45.1 MB (45131285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7b333bad1459cd9bec18029c30b7b0f0df824dbcc3cce478e46acc846aead1ed`  
+		Last Modified: Thu, 13 Jul 2017 20:01:29 GMT  
+		Size: 11.3 MB (11267683 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7998b9f65bebbf5e3ce7fa7eba3575bf834391e6c01c6ed7f499979994ba923c`  
+		Last Modified: Thu, 13 Jul 2017 20:01:27 GMT  
+		Size: 4.4 MB (4423019 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:buster-scm`
 
-**does not exist** (yet?)
+```console
+$ docker pull buildpack-deps@sha256:992cc5ed36bee9e309b4ded0b19feab3ccb94ce3898711fd034f667654adcf6a
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `buildpack-deps:buster-scm` - linux; amd64
+
+-	Docker Version: 17.03.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **114.2 MB (114163359 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:743f0608d0f40b89bedfa6ceab76d25c0e26e15a66c62e9b7da4eaa21be7070e`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Tue, 20 Jun 2017 20:11:40 GMT
+ADD file:dcc206f29a20c5126bd3af150ab0452c5b90961d19c653964091a0e9240447cf in / 
+# Tue, 20 Jun 2017 20:11:41 GMT
+CMD ["bash"]
+# Thu, 13 Jul 2017 19:57:54 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 13 Jul 2017 19:57:59 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 13 Jul 2017 19:58:24 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+```
+
+-	Layers:
+	-	`sha256:a257a6c28b7cff742a16c8a6f10fca67d04c2f1f008642ad4d63083eea8707b3`  
+		Last Modified: Tue, 20 Jun 2017 20:32:55 GMT  
+		Size: 45.1 MB (45131285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7b333bad1459cd9bec18029c30b7b0f0df824dbcc3cce478e46acc846aead1ed`  
+		Last Modified: Thu, 13 Jul 2017 20:01:29 GMT  
+		Size: 11.3 MB (11267683 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7998b9f65bebbf5e3ce7fa7eba3575bf834391e6c01c6ed7f499979994ba923c`  
+		Last Modified: Thu, 13 Jul 2017 20:01:27 GMT  
+		Size: 4.4 MB (4423019 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e597409d237f6af80e5ad7352ea523e9957bf811e1831a1dc0349fc8760c93b9`  
+		Last Modified: Thu, 13 Jul 2017 20:01:51 GMT  
+		Size: 53.3 MB (53341372 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:buster`
 
-**does not exist** (yet?)
+```console
+$ docker pull buildpack-deps@sha256:1525c643191278c94a939ef9bdc0ef0bf8091fa957001abd4d36e48a6f27830f
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `buildpack-deps:buster` - linux; amd64
+
+-	Docker Version: 17.03.1-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **327.8 MB (327804712 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6cd4053da0c2ce8601faabd57f7a129fd85eac7a3217e00cbb7c9689446dbde0`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Tue, 20 Jun 2017 20:11:40 GMT
+ADD file:dcc206f29a20c5126bd3af150ab0452c5b90961d19c653964091a0e9240447cf in / 
+# Tue, 20 Jun 2017 20:11:41 GMT
+CMD ["bash"]
+# Thu, 13 Jul 2017 19:57:54 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 13 Jul 2017 19:57:59 GMT
+RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
+# Thu, 13 Jul 2017 19:58:24 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
+# Thu, 13 Jul 2017 19:59:39 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+```
+
+-	Layers:
+	-	`sha256:a257a6c28b7cff742a16c8a6f10fca67d04c2f1f008642ad4d63083eea8707b3`  
+		Last Modified: Tue, 20 Jun 2017 20:32:55 GMT  
+		Size: 45.1 MB (45131285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7b333bad1459cd9bec18029c30b7b0f0df824dbcc3cce478e46acc846aead1ed`  
+		Last Modified: Thu, 13 Jul 2017 20:01:29 GMT  
+		Size: 11.3 MB (11267683 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7998b9f65bebbf5e3ce7fa7eba3575bf834391e6c01c6ed7f499979994ba923c`  
+		Last Modified: Thu, 13 Jul 2017 20:01:27 GMT  
+		Size: 4.4 MB (4423019 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e597409d237f6af80e5ad7352ea523e9957bf811e1831a1dc0349fc8760c93b9`  
+		Last Modified: Thu, 13 Jul 2017 20:01:51 GMT  
+		Size: 53.3 MB (53341372 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:045db37f3ecb150ccaff0961381dbe53c3107e89cf5be0c01a8f79d729a99fe8`  
+		Last Modified: Thu, 13 Jul 2017 20:02:35 GMT  
+		Size: 213.6 MB (213641353 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:jessie-curl`
 
@@ -388,7 +718,7 @@ RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get 
 ## `buildpack-deps:curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:55171c99d971a12559228614a04ac75ff6f64db0fbee080bfb1e8293b1356ac3
+$ docker pull buildpack-deps@sha256:e264436a7320220f7e93c2566a7b1e722b1f68a9c1af4b3cfbb507de311d422b
 ```
 
 -	Platforms:
@@ -398,30 +728,34 @@ $ docker pull buildpack-deps@sha256:55171c99d971a12559228614a04ac75ff6f64db0fbee
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **71.9 MB (71879176 bytes)**  
+-	Total Size: **60.7 MB (60659713 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f20825e76bc39369877a5f3b17e7f91e82f8d0eea76fd998586fcdc9d814a9ba`
+-	Image ID: `sha256:7d11b86332efeb5554df76f76a556074ff0c4dab71517b248de34a8586273b53`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 20 Jun 2017 20:13:32 GMT
-ADD file:9c48682ff75c756544d4491472081a078edf5dd0bb5038d1cb850a1f9c480e3e in / 
-# Tue, 20 Jun 2017 20:13:34 GMT
+# Tue, 20 Jun 2017 20:24:09 GMT
+ADD file:93a0dbb6973bc13e5478292bfe283ff91745ca6e23b6fd3363f0661c45deb1ec in / 
+# Tue, 20 Jun 2017 20:24:10 GMT
 CMD ["bash"]
-# Tue, 20 Jun 2017 21:03:33 GMT
+# Tue, 20 Jun 2017 21:21:56 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 22:11:14 GMT
+# Thu, 06 Jul 2017 22:30:39 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 ```
 
 -	Layers:
-	-	`sha256:9f0706ba7422412cd468804fee456786f88bed94bf9aea6dde2a47f770d19d27`  
-		Last Modified: Tue, 20 Jun 2017 20:35:47 GMT  
-		Size: 52.6 MB (52614808 bytes)  
+	-	`sha256:c75480ad9aafadef6c7faf829ede40cf2fa990c9308d6cd354d53041b01a7cda`  
+		Last Modified: Tue, 20 Jun 2017 20:51:29 GMT  
+		Size: 45.1 MB (45139825 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3942a742d221ef22a0a335c4eebf09e15a36dcfb224b5a2d0cdcc405f374ccb`  
-		Last Modified: Wed, 21 Jun 2017 00:33:28 GMT  
-		Size: 19.3 MB (19264368 bytes)  
+	-	`sha256:18d67befbc4e6fc58906f99031e8183060a10ee8b4e30cd2a83a942f68760818`  
+		Last Modified: Wed, 21 Jun 2017 00:50:08 GMT  
+		Size: 11.1 MB (11108544 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1f5d2d0853c76cad76d65745ca5b10e17ffe72647e78616bb28b2fd70e5173ab`  
+		Last Modified: Thu, 06 Jul 2017 23:56:33 GMT  
+		Size: 4.4 MB (4411344 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:stretch-scm`
@@ -476,7 +810,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		m
 ## `buildpack-deps:scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:abd481ccb6f39bf919a90c27f187e9556dd5bcc7204ed8b5a0ac4771aeea712c
+$ docker pull buildpack-deps@sha256:374302cb2d192fe1fc3b52afd74d977070f3e1ff7490e3cbaf2fa3859bac24c5
 ```
 
 -	Platforms:
@@ -486,36 +820,40 @@ $ docker pull buildpack-deps@sha256:abd481ccb6f39bf919a90c27f187e9556dd5bcc7204e
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **115.1 MB (115106762 bytes)**  
+-	Total Size: **110.7 MB (110663832 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b52e15e1d22ca27797984d5c39a8eec73caf82362e738a9d507a299e24388db`
+-	Image ID: `sha256:a2182a359d6d6a64204f4100edd5b1b00781909728f4a5de2c1dcd7c037f05cc`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 20 Jun 2017 20:13:32 GMT
-ADD file:9c48682ff75c756544d4491472081a078edf5dd0bb5038d1cb850a1f9c480e3e in / 
-# Tue, 20 Jun 2017 20:13:34 GMT
+# Tue, 20 Jun 2017 20:24:09 GMT
+ADD file:93a0dbb6973bc13e5478292bfe283ff91745ca6e23b6fd3363f0661c45deb1ec in / 
+# Tue, 20 Jun 2017 20:24:10 GMT
 CMD ["bash"]
-# Tue, 20 Jun 2017 21:03:33 GMT
+# Tue, 20 Jun 2017 21:21:56 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 22:11:14 GMT
+# Thu, 06 Jul 2017 22:30:39 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 06 Jul 2017 22:12:05 GMT
+# Thu, 06 Jul 2017 22:31:21 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
 ```
 
 -	Layers:
-	-	`sha256:9f0706ba7422412cd468804fee456786f88bed94bf9aea6dde2a47f770d19d27`  
-		Last Modified: Tue, 20 Jun 2017 20:35:47 GMT  
-		Size: 52.6 MB (52614808 bytes)  
+	-	`sha256:c75480ad9aafadef6c7faf829ede40cf2fa990c9308d6cd354d53041b01a7cda`  
+		Last Modified: Tue, 20 Jun 2017 20:51:29 GMT  
+		Size: 45.1 MB (45139825 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d3942a742d221ef22a0a335c4eebf09e15a36dcfb224b5a2d0cdcc405f374ccb`  
-		Last Modified: Wed, 21 Jun 2017 00:33:28 GMT  
-		Size: 19.3 MB (19264368 bytes)  
+	-	`sha256:18d67befbc4e6fc58906f99031e8183060a10ee8b4e30cd2a83a942f68760818`  
+		Last Modified: Wed, 21 Jun 2017 00:50:08 GMT  
+		Size: 11.1 MB (11108544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c6575234aef399808d6e3b63e57255301698ec6b1d5e62994f2df6605eed4e24`  
-		Last Modified: Fri, 07 Jul 2017 03:13:58 GMT  
-		Size: 43.2 MB (43227586 bytes)  
+	-	`sha256:1f5d2d0853c76cad76d65745ca5b10e17ffe72647e78616bb28b2fd70e5173ab`  
+		Last Modified: Thu, 06 Jul 2017 23:56:33 GMT  
+		Size: 4.4 MB (4411344 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5de358416a758e4776153bd86b34fcaa0f31b577b335845b968646e61ac78bf4`  
+		Last Modified: Thu, 06 Jul 2017 23:56:47 GMT  
+		Size: 50.0 MB (50004119 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `buildpack-deps:stretch`
