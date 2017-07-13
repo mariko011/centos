@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3ee9da1c725778ba80197e8aa614b37bcc9fb2c722b85db6bbb4ca4b20bbaba7`
-- Created: `2017-06-30T21:29:55.7324291Z`
+- Image ID: `sha256:d60d2c9b8c7d32d4ceb9d6e166e7d47d2cde3bfdcd9b0fca31dacadaad440312`
+- Created: `2017-07-11T00:16:35.9169477Z`
 - Virtual Size: ~ 617.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -4256,18 +4256,24 @@ $ apt-get source -qq --print-uris perl=5.22.1-9
 'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.22.1-9.debian.tar.xz' perl_5.22.1-9.debian.tar.xz 148292 SHA256:3368488e1d56e9ff69556a2e75cc50858414147afcf5d72f91dbfd71fb5d9127
 ```
 
-### `dpkg` source package: `poppler=0.41.0-0ubuntu1.1`
+### `dpkg` source package: `poppler=0.41.0-0ubuntu1.2`
 
 Binary Packages:
 
-- `libpoppler58:amd64=0.41.0-0ubuntu1.1`
+- `libpoppler58:amd64=0.41.0-0ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler58/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris poppler=0.41.0-0ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0-0ubuntu1.2.dsc' poppler_0.41.0-0ubuntu1.2.dsc 3358 SHA256:8d44885d698a6176a2f4e599471254d843c1024518bc403ea2ae801df9213bb1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0.orig.tar.xz' poppler_0.41.0.orig.tar.xz 1655448 SHA256:420abaab63caed9e1ee28964a0ba216d1979506726164bc99ad5ade289192a1b
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.41.0-0ubuntu1.2.debian.tar.xz' poppler_0.41.0-0ubuntu1.2.debian.tar.xz 36276 SHA256:3ba5cca43c221b475fcabc138d07b198152d8f4db5281b82374e3bb8132c197b
+```
 
 ### `dpkg` source package: `postgresql-9.5=9.5.7-0ubuntu0.16.04`
 

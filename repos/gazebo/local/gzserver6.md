@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f066203aab3dbaad45164f242b303f7b5f9feff8bdde2a46466c3b727969501c`
-- Created: `2017-06-21T03:43:21.010837076Z`
-- Virtual Size: ~ 573.06 Mb  
+- Image ID: `sha256:cf4608ef198d88c569f84fbf6dd56fa93dde630f3f6a836280eed7180b8e435e`
+- Created: `2017-07-10T23:12:35.553414106Z`
+- Virtual Size: ~ 572.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -3830,18 +3830,24 @@ $ apt-get source -qq --print-uris plymouth=0.8.8-0ubuntu17.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/plymouth/plymouth_0.8.8-0ubuntu17.1.debian.tar.xz' plymouth_0.8.8-0ubuntu17.1.debian.tar.xz 93684 SHA256:8fc0f5e8cdef374293836932b2edeff58a30ccf157b41a1f7ee68b08ea9af15b
 ```
 
-### `dpkg` source package: `poppler=0.24.5-2ubuntu4.4`
+### `dpkg` source package: `poppler=0.24.5-2ubuntu4.5`
 
 Binary Packages:
 
-- `libpoppler44:amd64=0.24.5-2ubuntu4.4`
+- `libpoppler44:amd64=0.24.5-2ubuntu4.5`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler44/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris poppler=0.24.5-2ubuntu4.5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5-2ubuntu4.5.dsc' poppler_0.24.5-2ubuntu4.5.dsc 3330 SHA256:178b0269c837a53389e3d1ac55e8002c707562462cfb432b2d703de45d608553
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5.orig.tar.xz' poppler_0.24.5.orig.tar.xz 1512476 SHA256:a2654910100c923c44e366242495e226db2798254f2fa2781138867348759f84
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5-2ubuntu4.5.debian.tar.gz' poppler_0.24.5-2ubuntu4.5.debian.tar.gz 49100 SHA256:900d8ff83e082cbfe297616514ba7d649b20e406f81177af7391a6d0fc5126fd
+```
 
 ### `dpkg` source package: `popt=1.16-8ubuntu1`
 

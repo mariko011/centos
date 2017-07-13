@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:89c992f8ff2e8476c0e34978bcfc6f2396c46e78070d80e51121eacd616beae5`
-- Created: `2017-06-21T03:47:27.526136097Z`
-- Virtual Size: ~ 1.40 Gb  
+- Image ID: `sha256:74c164efc63477a3e0b2f018efb7f736fcbb8828e4a845a9965a495bea30d48e`
+- Created: `2017-07-10T23:15:25.719292267Z`
+- Virtual Size: ~ 1.41 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -2972,20 +2972,26 @@ $ apt-get source -qq --print-uris libfile-fcntllock-perl=0.14-2build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libf/libfile-fcntllock-perl/libfile-fcntllock-perl_0.14-2build1.debian.tar.gz' libfile-fcntllock-perl_0.14-2build1.debian.tar.gz 1792 SHA256:f50bb027299fdd41a3eb8120f02a32b03320303ad65f3fb7b2bd524ef14db8e4
 ```
 
-### `dpkg` source package: `libgcrypt11=1.5.3-2ubuntu4.4`
+### `dpkg` source package: `libgcrypt11=1.5.3-2ubuntu4.5`
 
 Binary Packages:
 
-- `libgcrypt11:amd64=1.5.3-2ubuntu4.4`
-- `libgcrypt11-dev=1.5.3-2ubuntu4.4`
+- `libgcrypt11:amd64=1.5.3-2ubuntu4.5`
+- `libgcrypt11-dev=1.5.3-2ubuntu4.5`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt11/copyright`, `/usr/share/doc/libgcrypt11-dev/copyright`)
 
 - `GPL-2`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libgcrypt11=1.5.3-2ubuntu4.5
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.3-2ubuntu4.5.dsc' libgcrypt11_1.5.3-2ubuntu4.5.dsc 2580 SHA256:4168dae7ba3ad78d8bebe45a28935de371bb281b89795a5ae2f76cfa3d3a5411
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.3.orig.tar.bz2' libgcrypt11_1.5.3.orig.tar.bz2 1508530 SHA256:bcf5334e7da352c45de6aec5d2084ce9a1d30029ff4a4a5da13f1848874759d1
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.3-2ubuntu4.5.debian.tar.gz' libgcrypt11_1.5.3-2ubuntu4.5.debian.tar.gz 37205 SHA256:405b37e0ed162d1da5773ec55fa87df1977bc6b1e0b68913b533ac389b9882e0
+```
 
 ### `dpkg` source package: `libglu=9.0.0-2`
 
@@ -4460,18 +4466,24 @@ $ apt-get source -qq --print-uris libxxf86vm=1:1.1.3-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxxf86vm/libxxf86vm_1.1.3-1.diff.gz' libxxf86vm_1.1.3-1.diff.gz 5115 SHA256:5b51cc770666430c2c40e9a58395c72d7591f81bc5e7fd494397bbaf794b38e2
 ```
 
-### `dpkg` source package: `linux=3.13.0-121.170`
+### `dpkg` source package: `linux=3.13.0-123.172`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-121.170`
+- `linux-libc-dev:amd64=3.13.0-123.172`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.13.0-123.172
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-123.172.dsc' linux_3.13.0-123.172.dsc 8127 SHA256:f5e777f68649c4df8a2ce4a898f6ad8758a3b00d858b796426b7aa7aefc25c58
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-123.172.diff.gz' linux_3.13.0-123.172.diff.gz 9480108 SHA256:4b569d050540dcbfec473f3aea9aedf34135a6c8b342f7b7b3448f6fd734790f
+```
 
 ### `dpkg` source package: `llvm-toolchain-3.4=1:3.4-1ubuntu3`
 
@@ -5620,18 +5632,24 @@ $ apt-get source -qq --print-uris po-debconf=1.0.16+nmu2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/po-debconf/po-debconf_1.0.16+nmu2ubuntu1.tar.gz' po-debconf_1.0.16+nmu2ubuntu1.tar.gz 306550 SHA256:ff701e40d0e4ea40f0f445ea4372ed1b63c57f5e84b0dd43e4aca972845d8763
 ```
 
-### `dpkg` source package: `poppler=0.24.5-2ubuntu4.4`
+### `dpkg` source package: `poppler=0.24.5-2ubuntu4.5`
 
 Binary Packages:
 
-- `libpoppler44:amd64=0.24.5-2ubuntu4.4`
+- `libpoppler44:amd64=0.24.5-2ubuntu4.5`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler44/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris poppler=0.24.5-2ubuntu4.5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5-2ubuntu4.5.dsc' poppler_0.24.5-2ubuntu4.5.dsc 3330 SHA256:178b0269c837a53389e3d1ac55e8002c707562462cfb432b2d703de45d608553
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5.orig.tar.xz' poppler_0.24.5.orig.tar.xz 1512476 SHA256:a2654910100c923c44e366242495e226db2798254f2fa2781138867348759f84
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_0.24.5-2ubuntu4.5.debian.tar.gz' poppler_0.24.5-2ubuntu4.5.debian.tar.gz 49100 SHA256:900d8ff83e082cbfe297616514ba7d649b20e406f81177af7391a6d0fc5126fd
+```
 
 ### `dpkg` source package: `popt=1.16-8ubuntu1`
 
