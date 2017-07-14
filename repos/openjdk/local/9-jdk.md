@@ -482,19 +482,8 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.4-1
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.4-1.dsc' cups_2.2.4-1.dsc 3158 SHA256:060f64ad6858001741ac2798c9cb25874e36fc3e989e5dc188d78c628de799a7
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.4.orig.tar.gz' cups_2.2.4.orig.tar.gz 9984475 SHA256:596d4db72651c335469ae5f37b0da72ac9f97d73e30838d787065f559dea98cc
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.4-1.debian.tar.xz' cups_2.2.4-1.debian.tar.xz 358820 SHA256:96c8950624f591702196df5a3771ff526d4b284bee111b1625fecc9a6109ed1f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cups/2.2.4-1/
-- https://sources.debian.net/src/cups/2.2.4-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `curl=7.52.1-5`
 
@@ -564,19 +553,8 @@ Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dash=0.5.8-2.4
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8-2.4.dsc' dash_0.5.8-2.4.dsc 1461 SHA256:c83f68c3727e9fd3691117d1f67a2bd049ae2411d2137d50ea6d36122cec6482
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8.orig.tar.gz' dash_0.5.8.orig.tar.gz 223028 SHA256:c6db3a237747b02d20382a761397563d813b306c020ae28ce25a1c3915fac60f
-'http://deb.debian.org/debian/pool/main/d/dash/dash_0.5.8-2.4.diff.gz' dash_0.5.8-2.4.diff.gz 44058 SHA256:230717c04af659a6a09b2c39158d9167fdd3392a6716c0ff36fe40dff1ca8b9d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dash/0.5.8-2.4/
-- https://sources.debian.net/src/dash/0.5.8-2.4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `db5.3=5.3.28-12`
 
@@ -588,19 +566,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris db5.3=5.3.28-12
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28-12.dsc' db5.3_5.3.28-12.dsc 3199 SHA256:1c4d6149f83a798e69f6d8e7444711d963c31d649284357135ea33b319c71bba
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28.orig.tar.xz' db5.3_5.3.28.orig.tar.xz 24154920 SHA256:e1f85c8b6ebd0ed3ca72fa0ae97b65006f6d0bd0cd6f4ac24bed103cb5497bf5
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28-12.debian.tar.xz' db5.3_5.3.28-12.debian.tar.xz 27812 SHA256:7907d8ad4c408857a71782436283a7ab67d7fe0f38ae15782f08077bdfd55c03
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/db5.3/5.3.28-12/
-- https://sources.debian.net/src/db5.3/5.3.28-12/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `dbus=1.10.20-1`
 
@@ -1142,19 +1109,8 @@ Licenses: (parsed from: `/usr/share/doc/grep/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris grep=2.27-2
-'http://deb.debian.org/debian/pool/main/g/grep/grep_2.27-2.dsc' grep_2.27-2.dsc 2053 SHA256:c048a1ad8c39877c2fb0279887c8ea93e59591788fdb08e2f75249ebdcecdea7
-'http://deb.debian.org/debian/pool/main/g/grep/grep_2.27.orig.tar.xz' grep_2.27.orig.tar.xz 1360388 SHA256:ad4cc44d23074a1c3a8baae8fbafff2a8c60f38a9a6108f985eef6fbee6dcaeb
-'http://deb.debian.org/debian/pool/main/g/grep/grep_2.27-2.debian.tar.bz2' grep_2.27-2.debian.tar.bz2 112728 SHA256:445eaf71811df5ca18242fb5adc417d35e349e49810201977bf7086746b967f4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/grep/2.27-2/
-- https://sources.debian.net/src/grep/2.27-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gzip=1.6-5`
 
@@ -2936,18 +2892,8 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sensible-utils=0.0.9
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9.dsc' sensible-utils_0.0.9.dsc 1405 SHA256:390c29b31a09ab7f31f8b5fc0fd82e47c25f15b22b17c614fb87f12d3b091070
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9.tar.gz' sensible-utils_0.0.9.tar.gz 74331 SHA256:6fcb5cc0f7f1cf80421840cfa17b1b3fa5afaf3fe852dc984a789023af2f70c6
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sensible-utils/0.0.9/
-- https://sources.debian.net/src/sensible-utils/0.0.9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `serf=1.3.9-3`
 
