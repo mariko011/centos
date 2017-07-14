@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d7128a5df03b906e7df5958a12e850be1f8a356ffe86f67afae7c08b9a753087`
-- Created: `2017-07-06T16:28:34.806673722Z`
+- Image ID: `sha256:05ffe4282b1318591ada01b104df38ee34db3d546a0330c79fbea8d8c2993751`
+- Created: `2017-07-13T16:35:04.980259398Z`
 - Virtual Size: ~ 201.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,4 +12,4 @@
 - Environment:
   - `PATH=/crate/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.9`
-  - `CRATE_VERSION=2.0.4`
+  - `CRATE_VERSION=2.0.5`
