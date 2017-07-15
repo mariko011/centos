@@ -1476,19 +1476,8 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris krb5=1.15-1
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15-1.dsc' krb5_1.15-1.dsc 3282 SHA256:ec2a3211b949480f2419dd4731e8213635d7dfcbe1658d1000cea8fa950599aa
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15.orig.tar.gz' krb5_1.15.orig.tar.gz 9327157 SHA256:fd34752774c808ab4f6f864f935c49945f5a56b62240b1ad4ab1af7b4ded127c
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15-1.debian.tar.xz' krb5_1.15-1.debian.tar.xz 141624 SHA256:ddad4ec3d024b1164d1726c767ed8ea4900454793f5a2ce53a5cf7a123c5b4e7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/krb5/1.15-1/
-- https://sources.debian.net/src/krb5/1.15-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lapack=3.7.0-2`
 
@@ -1893,19 +1882,8 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `expat`
 - `libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.29-3
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.29-3.dsc' libpng1.6_1.6.29-3.dsc 2206 SHA256:3fb105dfbdf4e64df7a1dda1171aad7c3eee9a6ed58206341f7ae8f857fa2e5e
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.29.orig.tar.xz' libpng1.6_1.6.29.orig.tar.xz 987652 SHA256:4245b684e8fe829ebb76186327bb37ce5a639938b219882b53d64bd3cfc5f239
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.29-3.debian.tar.xz' libpng1.6_1.6.29-3.debian.tar.xz 22448 SHA256:b5a3c946b599612b88e02ffd50c461910cc99cede98e477208d286dd38fef7f7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libpng1.6/1.6.29-3/
-- https://sources.debian.net/src/libpng1.6/1.6.29-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpsl=0.17.0-4`
 
@@ -3595,19 +3573,8 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris vim=2:8.0.0197-4
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.0.0197-4.dsc' vim_8.0.0197-4.dsc 3020 SHA256:dcdee0e920551f7f821962e685184812864478208ae3a77e2b72e35737a5fe12
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.0.0197.orig.tar.gz' vim_8.0.0197.orig.tar.gz 12959375 SHA256:7fc1d5ef76a86961316666fb8e050cdb79bd86f9264028d597e682582b25be16
-'http://deb.debian.org/debian/pool/main/v/vim/vim_8.0.0197-4.debian.tar.xz' vim_8.0.0197-4.debian.tar.xz 157072 SHA256:334bce49b171bdd3f9efa6422c80707d140410ac01031cab4b78e67a1443fac0
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/vim/2:8.0.0197-4/
-- https://sources.debian.net/src/vim/2:8.0.0197-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `wget=1.19.1-3`
 
