@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ecaf798e4ea21e35ce10a640a6bd22f8b55bf82147b2eb08211c12d62ba0896a`
-- Created: `2017-06-23T00:26:22.056926007Z`
-- Virtual Size: ~ 262.62 Mb  
+- Image ID: `sha256:34fb75e206b1796eb5128fe1d1546d8ab131e09d7ec0eca73f704ad7eae87e8c`
+- Created: `2017-07-14T21:26:33.128552278Z`
+- Virtual Size: ~ 273.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -186,6 +186,31 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/base-passwd/3.5.37/
 - https://sources.debian.net/src/base-passwd/3.5.37/debian/copyright (for direct copyright/license information)
+
+### `dpkg` source package: `bash-completion=1:2.1-4`
+
+Binary Packages:
+
+- `bash-completion=1:2.1-4`
+
+Licenses: (parsed from: `/usr/share/doc/bash-completion/copyright`)
+
+- `GPL-2`
+- `GPL-2+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris bash-completion=1:2.1-4
+'http://deb.debian.org/debian/pool/main/b/bash-completion/bash-completion_2.1-4.dsc' bash-completion_2.1-4.dsc 1377 SHA256:cb94b264cb1c1ff898fc5c509913117ff23bdcc548d93d8b198ed1e52d186959
+'http://deb.debian.org/debian/pool/main/b/bash-completion/bash-completion_2.1.orig.tar.bz2' bash-completion_2.1.orig.tar.bz2 265329 SHA256:2b606804a7d5f823380a882e0f7b6c8a37b0e768e72c3d4107c51fbe8a46ae4f
+'http://deb.debian.org/debian/pool/main/b/bash-completion/bash-completion_2.1-4.debian.tar.xz' bash-completion_2.1-4.debian.tar.xz 19436 SHA256:563a68eb32dcb3ecf9e961c55f2b34c5ad517aa856da13e056d05083630cb3e3
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/bash-completion/1:2.1-4/
+- https://sources.debian.net/src/bash-completion/1:2.1-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bash=4.3-11+deb8u1`
 
