@@ -1,10 +1,10 @@
-# `mariadb:10.2.6`
+# `mariadb:10.2.7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:411c062636f41d0c163b302f38c781c78a5f1c8ddcfc7af94dda97f028ba3bf2`
-- Created: `2017-06-23T00:29:25.597133923Z`
-- Virtual Size: ~ 386.60 Mb  
+- Image ID: `sha256:b101c8399ee344ff0b329133fa9cc5cb2915f61048f99ec38b2bfe72718b7daf`
+- Created: `2017-07-13T16:47:19.248678133Z`
+- Virtual Size: ~ 386.69 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.7`
   - `GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
   - `MARIADB_MAJOR=10.2`
-  - `MARIADB_VERSION=10.2.6+maria~jessie`
+  - `MARIADB_VERSION=10.2.7+maria~jessie`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2480,19 +2480,19 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/lvm2/2.02.111-2.2+deb8u1/
 - https://sources.debian.net/src/lvm2/2.02.111-2.2+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `mariadb-10.2=10.2.6+maria~jessie`
+### `dpkg` source package: `mariadb-10.2=10.2.7+maria~jessie`
 
 Binary Packages:
 
-- `libmariadb3=10.2.6+maria~jessie`
-- `libmysqlclient18=10.2.6+maria~jessie`
-- `mariadb-client-10.2=10.2.6+maria~jessie`
-- `mariadb-client-core-10.2=10.2.6+maria~jessie`
-- `mariadb-common=10.2.6+maria~jessie`
-- `mariadb-server=10.2.6+maria~jessie`
-- `mariadb-server-10.2=10.2.6+maria~jessie`
-- `mariadb-server-core-10.2=10.2.6+maria~jessie`
-- `mysql-common=10.2.6+maria~jessie`
+- `libmariadb3=10.2.7+maria~jessie`
+- `libmysqlclient18=10.2.7+maria~jessie`
+- `mariadb-client-10.2=10.2.7+maria~jessie`
+- `mariadb-client-core-10.2=10.2.7+maria~jessie`
+- `mariadb-common=10.2.7+maria~jessie`
+- `mariadb-server=10.2.7+maria~jessie`
+- `mariadb-server-10.2=10.2.7+maria~jessie`
+- `mariadb-server-core-10.2=10.2.7+maria~jessie`
+- `mysql-common=10.2.7+maria~jessie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2634,6 +2634,31 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/nettle/2.7.1-5+deb8u2/
 - https://sources.debian.net/src/nettle/2.7.1-5+deb8u2/debian/copyright (for direct copyright/license information)
+
+### `dpkg` source package: `numactl=2.0.10-1`
+
+Binary Packages:
+
+- `libnuma1:amd64=2.0.10-1`
+
+Licenses: (parsed from: `/usr/share/doc/libnuma1/copyright`)
+
+- `GPL`
+- `LGPL`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris numactl=2.0.10-1
+'http://deb.debian.org/debian/pool/main/n/numactl/numactl_2.0.10-1.dsc' numactl_2.0.10-1.dsc 1537 SHA256:097d5f461b13f0ad990e2eddc003d7560b6689cf9c665a05237f4be5aaeefba1
+'http://deb.debian.org/debian/pool/main/n/numactl/numactl_2.0.10.orig.tar.gz' numactl_2.0.10.orig.tar.gz 402082 SHA256:5d67a65d93a805a1d7b3027dc919cff91f07da451d9eaac4e4178ad81c1f1641
+'http://deb.debian.org/debian/pool/main/n/numactl/numactl_2.0.10-1.diff.gz' numactl_2.0.10-1.diff.gz 6023 SHA256:84dd9f3a310aa4797c7776c757029b2557346d51dfd69ea54736def7c0d04404
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/numactl/2.0.10-1/
+- https://sources.debian.net/src/numactl/2.0.10-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.40+dfsg-1+deb8u3`
 
