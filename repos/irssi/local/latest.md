@@ -1,10 +1,10 @@
-# `irssi:1.0.3`
+# `irssi:1.0.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6b681ad18df165add993ae69eed4f78a1ca6824e01c16b20f27959c2fd048879`
-- Created: `2017-06-23T00:24:13.377122069Z`
-- Virtual Size: ~ 256.53 Mb  
+- Image ID: `sha256:b3a67971a133d406f06acec8b837b39048e8995c17841a5eb688ae992ed5d6eb`
+- Created: `2017-07-13T17:37:48.827068038Z`
+- Virtual Size: ~ 256.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irssi"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `HOME=/home/user`
   - `LANG=C.UTF-8`
-  - `IRSSI_VERSION=1.0.3`
+  - `IRSSI_VERSION=1.0.4`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2449,11 +2449,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libwww-robotrules-perl/6.01-1/
 - https://sources.debian.net/src/libwww-robotrules-perl/6.01-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `linux=3.16.43-2+deb8u1`
+### `dpkg` source package: `linux=3.16.43-2+deb8u2`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.16.43-2+deb8u1`
+- `linux-libc-dev:amd64=3.16.43-2+deb8u2`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2461,8 +2461,19 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.16.43-2+deb8u2
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u2.dsc' linux_3.16.43-2+deb8u2.dsc 140609 SHA256:c866504a6adc567596c2ee9cc0488970d70e654dc92a0fc595269d3d8b49b3b8
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43.orig.tar.xz' linux_3.16.43.orig.tar.xz 81815520 SHA256:77fc86010339c04736799d4f2e19adc1623c440583e7eae09e4b76b63c4edd8f
+'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u2.debian.tar.xz' linux_3.16.43-2+deb8u2.debian.tar.xz 3235980 SHA256:10ef263bed87534798fd90bdedc1e1717b569c9973b35cd4c7610a2f2a44a220
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/linux/3.16.43-2+deb8u2/
+- https://sources.debian.net/src/linux/3.16.43-2+deb8u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian13+nmu1`
 
