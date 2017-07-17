@@ -1592,14 +1592,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris heimdal=1.6~git20131207+dfsg-1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_1.6~git20131207+dfsg-1ubuntu1.1.dsc' heimdal_1.6~git20131207+dfsg-1ubuntu1.1.dsc 3229 SHA256:5b263b615453e14bec2a3fbfb6a220db117124ce182104c1e89bdf9920cc062d
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_1.6~git20131207+dfsg.orig.tar.gz' heimdal_1.6~git20131207+dfsg.orig.tar.gz 9207949 SHA256:339bc6c204b5fc3a3f3bf3a1595321b41c1d5c72596c7d1f73a92133fdb30ddb
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_1.6~git20131207+dfsg-1ubuntu1.1.debian.tar.xz' heimdal_1.6~git20131207+dfsg-1ubuntu1.1.debian.tar.xz 64560 SHA256:2c11ad1be74825414991b99f6ceea36aa428b07c338141c24ed19e3230264adc
-```
 
 ### `dpkg` source package: `hicolor-icon-theme=0.13-1`
 
