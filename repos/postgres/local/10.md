@@ -1,10 +1,10 @@
-# `postgres:10-beta1`
+# `postgres:10-beta2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8eba9dec65a767c02fcba29a5dc0434fee20fb1ae21427b969b1852a241d1ecc`
-- Created: `2017-06-27T17:29:47.360328048Z`
-- Virtual Size: ~ 288.78 Mb  
+- Image ID: `sha256:ea4ff6cf276e81c107d1e00d895bee1a6303e2925994f7fe7625e4c15f46fb0c`
+- Created: `2017-07-14T22:52:57.624976948Z`
+- Virtual Size: ~ 288.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.7`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=10`
-  - `PG_VERSION=10~beta1-1.pgdg90+1`
+  - `PG_VERSION=10~beta2-1.pgdg90+1`
   - `PGDATA=/var/lib/postgresql/data`
 
 ## `dpkg` (`.deb`-based packages)
@@ -2444,13 +2444,13 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/popt/1.16-10/
 - https://sources.debian.net/src/popt/1.16-10/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `postgresql-10=10~beta1-1.pgdg90+1`
+### `dpkg` source package: `postgresql-10=10~beta2-1.pgdg90+1`
 
 Binary Packages:
 
-- `libpq5:amd64=10~beta1-1.pgdg90+1`
-- `postgresql-10=10~beta1-1.pgdg90+1`
-- `postgresql-client-10=10~beta1-1.pgdg90+1`
+- `libpq5:amd64=10~beta2-1.pgdg90+1`
+- `postgresql-10=10~beta2-1.pgdg90+1`
+- `postgresql-client-10=10~beta2-1.pgdg90+1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-10/copyright`, `/usr/share/doc/postgresql-client-10/copyright`)
 
@@ -2472,26 +2472,31 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-10=10~beta1-1.pgdg90+1
-'http://apt.postgresql.org/pub/repos/apt/pool/10/p/postgresql-10/postgresql-10_10~beta1-1.pgdg90+1.dsc' postgresql-10_10~beta1-1.pgdg90+1.dsc 2709 SHA256:11ccfc207978364d6bbc9f739e4211803cbe9c9a5088f6baf73ce7e447deff27
-'http://apt.postgresql.org/pub/repos/apt/pool/10/p/postgresql-10/postgresql-10_10~beta1.orig.tar.bz2' postgresql-10_10~beta1.orig.tar.bz2 19735273 SHA256:7eee02e6f6646c7d4d6e78893a4ff638cfa5f1025b706712da8c6ef2257b5e29
-'http://apt.postgresql.org/pub/repos/apt/pool/10/p/postgresql-10/postgresql-10_10~beta1-1.pgdg90+1.debian.tar.xz' postgresql-10_10~beta1-1.pgdg90+1.debian.tar.xz 16932 SHA256:dac1db737d3fa157b619633ddaf31216616e5054144fad1be2f2faf1f6d647e0
+$ apt-get source -qq --print-uris postgresql-10=10~beta2-1.pgdg90+1
+'http://apt.postgresql.org/pub/repos/apt/pool/10/p/postgresql-10/postgresql-10_10~beta2-1.pgdg90+1.dsc' postgresql-10_10~beta2-1.pgdg90+1.dsc 2709 SHA256:2e67c0622c25f88234fb2c8a63505ec0416d2cbd3527a7a294fb75081923ab42
+'http://apt.postgresql.org/pub/repos/apt/pool/10/p/postgresql-10/postgresql-10_10~beta2.orig.tar.bz2' postgresql-10_10~beta2.orig.tar.bz2 19790809 SHA256:0d6b50236039fc92e8784bd908b452c38ef63c0f9029f34e7115fbc30e17b195
+'http://apt.postgresql.org/pub/repos/apt/pool/10/p/postgresql-10/postgresql-10_10~beta2-1.pgdg90+1.debian.tar.xz' postgresql-10_10~beta2-1.pgdg90+1.debian.tar.xz 17032 SHA256:8c48f07cef1522d3e2f262e382d50d7d3caf98745a1c869395a974782bfa2598
 ```
 
-### `dpkg` source package: `postgresql-common=182.pgdg90+1`
+### `dpkg` source package: `postgresql-common=184.pgdg90+1`
 
 Binary Packages:
 
-- `postgresql-client-common=182.pgdg90+1`
-- `postgresql-common=182.pgdg90+1`
+- `postgresql-client-common=184.pgdg90+1`
+- `postgresql-common=184.pgdg90+1`
 
 Licenses: (parsed from: `/usr/share/doc/postgresql-client-common/copyright`, `/usr/share/doc/postgresql-common/copyright`)
 
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-common=184.pgdg90+1
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_184.pgdg90+1.dsc' postgresql-common_184.pgdg90+1.dsc 1492 SHA256:84732b3eced9b49176d35313e56ecb8cecfa36662e1debce8924adff7650c897
+'http://apt.postgresql.org/pub/repos/apt/pool/main/p/postgresql-common/postgresql-common_184.pgdg90+1.tar.xz' postgresql-common_184.pgdg90+1.tar.xz 205524 SHA256:d3a550822c5191d2b2043f7e3bb93d2ccf23f90e4f39b564f6ac5109b29bd39e
+```
 
 ### `dpkg` source package: `procps=2:3.3.12-3`
 
