@@ -1,7 +1,7 @@
 ## `ghost:latest`
 
 ```console
-$ docker pull ghost@sha256:b81a40605878dcf8c94fc82b0a1971f8cdbe98f168fcf777db1025cc14a0692a
+$ docker pull ghost@sha256:eb3d8214d88821c55169d75fb43d7f55e58e44ac79bc4617b89e2b7d0377fa11
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull ghost@sha256:b81a40605878dcf8c94fc82b0a1971f8cdbe98f168fcf777db102
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **111.9 MB (111939447 bytes)**  
+-	Total Size: **123.6 MB (123559947 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1baf19c1eab0ed790745dd857e8746ac3c43afe12dd00be59770e03d3aa74a51`
+-	Image ID: `sha256:075a313abefc61b5834f0d4fac849d15bf4e43f0ea28b883b78d01494f68d9bf`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["npm","start"]`
 
@@ -52,25 +52,25 @@ RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/relea
 ENV GHOST_SOURCE=/usr/src/ghost
 # Wed, 12 Jul 2017 16:26:30 GMT
 WORKDIR /usr/src/ghost
-# Wed, 12 Jul 2017 16:26:30 GMT
-ENV GHOST_VERSION=0.11.10
-# Wed, 12 Jul 2017 16:27:27 GMT
+# Tue, 18 Jul 2017 22:55:13 GMT
+ENV GHOST_VERSION=0.11.11
+# Tue, 18 Jul 2017 22:56:34 GMT
 RUN set -ex; 		buildDeps=' 		gcc 		make 		python 		unzip 	'; 	apt-get update; 	apt-get install -y $buildDeps --no-install-recommends; 	rm -rf /var/lib/apt/lists/*; 		wget -O ghost.zip "https://github.com/TryGhost/Ghost/releases/download/${GHOST_VERSION}/Ghost-${GHOST_VERSION}.zip"; 	unzip ghost.zip; 		npm install --production; 		apt-get purge -y --auto-remove $buildDeps; 		rm ghost.zip; 	npm cache clean; 	rm -rf /tmp/npm*
-# Wed, 12 Jul 2017 16:27:28 GMT
+# Tue, 18 Jul 2017 22:56:35 GMT
 ENV GHOST_CONTENT=/var/lib/ghost
-# Wed, 12 Jul 2017 16:27:29 GMT
+# Tue, 18 Jul 2017 22:56:36 GMT
 RUN mkdir -p "$GHOST_CONTENT" 	&& chown -R user:user "$GHOST_CONTENT" 	&& ln -s "$GHOST_CONTENT/config.js" "$GHOST_SOURCE/config.js"
-# Wed, 12 Jul 2017 16:27:29 GMT
+# Tue, 18 Jul 2017 22:56:36 GMT
 VOLUME [/var/lib/ghost]
-# Wed, 12 Jul 2017 16:27:30 GMT
+# Tue, 18 Jul 2017 22:56:37 GMT
 COPY file:9cace68ea99d0317c469464495249094669747893a60585016756f169051a609 in /usr/local/bin/ 
-# Wed, 12 Jul 2017 16:27:31 GMT
+# Tue, 18 Jul 2017 22:56:38 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
-# Wed, 12 Jul 2017 16:27:31 GMT
+# Tue, 18 Jul 2017 22:56:39 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 12 Jul 2017 16:27:32 GMT
+# Tue, 18 Jul 2017 22:56:39 GMT
 EXPOSE 2368/tcp
-# Wed, 12 Jul 2017 16:27:32 GMT
+# Tue, 18 Jul 2017 22:56:40 GMT
 CMD ["npm" "start"]
 ```
 
@@ -111,19 +111,19 @@ CMD ["npm" "start"]
 		Last Modified: Wed, 12 Jul 2017 16:28:43 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:22c3d46fc17992e921958c1011710c175473d65651a0dfa9d476886782bb8d83`  
-		Last Modified: Wed, 12 Jul 2017 16:28:49 GMT  
-		Size: 25.8 MB (25791174 bytes)  
+	-	`sha256:7e44761291d807937f827f63b3d5d6d816e2ca5c706aef1a6a832de5f72c5c1a`  
+		Last Modified: Tue, 18 Jul 2017 22:58:37 GMT  
+		Size: 37.4 MB (37411677 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:30b587489121b12d74174d77de2c5fe73807e63daf7ab4da2d244603fc074014`  
-		Last Modified: Wed, 12 Jul 2017 16:28:43 GMT  
-		Size: 212.0 B  
+	-	`sha256:23059be3f02112f62d30a3e09ac5609532cd2d243acc5544e0415fefdb9d605a`  
+		Last Modified: Tue, 18 Jul 2017 22:58:26 GMT  
+		Size: 209.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba7eb1d58892cfcd28c220c16d01e3ae910951ca2e3a7e00ea7d6c2d75ac831e`  
-		Last Modified: Wed, 12 Jul 2017 16:28:43 GMT  
+	-	`sha256:7fe8e2dc427d9fc4e564b1d1887bc283366132051b9f886d237a57508509456e`  
+		Last Modified: Tue, 18 Jul 2017 22:58:27 GMT  
 		Size: 617.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af0e00f95807eb6ac464343e0a37b5d17c235e6395906cfc7b3bd21c4576d68f`  
-		Last Modified: Wed, 12 Jul 2017 16:28:43 GMT  
+	-	`sha256:f9aee2e060decf4688a1205228edccc7ebf3f55095b4f8b652164914daf2274f`  
+		Last Modified: Tue, 18 Jul 2017 22:58:26 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
