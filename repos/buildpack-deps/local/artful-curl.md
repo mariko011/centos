@@ -305,14 +305,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris db5.3=5.3.28-12
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-12.dsc' db5.3_5.3.28-12.dsc 3199 SHA256:1c4d6149f83a798e69f6d8e7444711d963c31d649284357135ea33b319c71bba
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28.orig.tar.xz' db5.3_5.3.28.orig.tar.xz 24154920 SHA256:e1f85c8b6ebd0ed3ca72fa0ae97b65006f6d0bd0cd6f4ac24bed103cb5497bf5
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-12.debian.tar.xz' db5.3_5.3.28-12.debian.tar.xz 27812 SHA256:7907d8ad4c408857a71782436283a7ab67d7fe0f38ae15782f08077bdfd55c03
-```
 
 ### `dpkg` source package: `debconf=1.5.60ubuntu1`
 
@@ -602,14 +596,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris heimdal=7.1.0+dfsg-13
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.1.0+dfsg-13.dsc' heimdal_7.1.0+dfsg-13.dsc 3639 SHA256:024148c80b4fe44a3fe653dccb7021d058868129419435215ee20e2f92312e0a
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.1.0+dfsg.orig.tar.gz' heimdal_7.1.0+dfsg.orig.tar.gz 8959650 SHA256:47a1439910d05ea884ad254646e7c48a9400a2c30f087ed8e8e0854697a480f9
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.1.0+dfsg-13.debian.tar.xz' heimdal_7.1.0+dfsg-13.debian.tar.xz 69180 SHA256:9642a6763ddd82a5f1bfd0fe63940b8b7058f761c794bea7696b5584b830cb93
-```
 
 ### `dpkg` source package: `hostname=3.18`
 
@@ -874,14 +862,8 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 - `Chromium`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.17.0-4
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.17.0-4.dsc' libpsl_0.17.0-4.dsc 2224 SHA256:9673d706681725621efae09ea96331684f737415f6cf595ed01dc8fb7c3e61e8
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.17.0.orig.tar.gz' libpsl_0.17.0.orig.tar.gz 49087 SHA256:7731e28393e1b4ca363eaffecd6c7570023a7c18c017b45d683ac7d2ba1f0bd1
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.17.0-4.debian.tar.xz' libpsl_0.17.0-4.debian.tar.xz 9052 SHA256:521d6eba91754b80f3e5c430a81e2054b83c0dbeda1972ee0c62bdb6d9203ccb
-```
 
 ### `dpkg` source package: `libselinux=2.6-3build1`
 
@@ -1177,15 +1159,8 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.23.7-2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.7-2.dsc' p11-kit_0.23.7-2.dsc 2452 SHA256:4e6f3d78be14193cfd88004ce4285fa78d610a42ded7cda253a0508b44b2087a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.7.orig.tar.gz' p11-kit_0.23.7.orig.tar.gz 1087009 SHA256:988e7c86f2641b36702503481292ef0686e6b1c39d80b215699b6dbf1024be41
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.7.orig.tar.gz.asc' p11-kit_0.23.7.orig.tar.gz.asc 543 SHA256:7156998e36be4e12e2375518d76a1b1fdf46acbae10dd6bb098c1bd902f0cdad
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.7-2.debian.tar.xz' p11-kit_0.23.7-2.debian.tar.xz 20900 SHA256:d6339f2c62a4edbd0b002a6f1accebfa975da62e279c61c77ecbaa477995663a
-```
 
 ### `dpkg` source package: `pam=1.1.8-3.2ubuntu3`
 

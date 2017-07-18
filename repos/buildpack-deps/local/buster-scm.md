@@ -475,19 +475,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris db5.3=5.3.28-12
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28-12.dsc' db5.3_5.3.28-12.dsc 3199 SHA256:1c4d6149f83a798e69f6d8e7444711d963c31d649284357135ea33b319c71bba
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28.orig.tar.xz' db5.3_5.3.28.orig.tar.xz 24154920 SHA256:e1f85c8b6ebd0ed3ca72fa0ae97b65006f6d0bd0cd6f4ac24bed103cb5497bf5
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28-12.debian.tar.xz' db5.3_5.3.28-12.debian.tar.xz 27812 SHA256:7907d8ad4c408857a71782436283a7ab67d7fe0f38ae15782f08077bdfd55c03
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/db5.3/5.3.28-12/
-- https://sources.debian.net/src/db5.3/5.3.28-12/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `debconf=1.5.61`
 
@@ -665,19 +654,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris expat=2.2.1-3
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.1-3.dsc' expat_2.2.1-3.dsc 2289 SHA256:fbb8d028e4dc8a77f0540e2c4d022f8199a0229987de225a0df4f172c562914e
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.1.orig.tar.bz2' expat_2.2.1.orig.tar.bz2 405441 SHA256:1868cadae4c82a018e361e2b2091de103cd820aaacb0d6cfa49bd2cd83978885
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.1-3.debian.tar.xz' expat_2.2.1-3.debian.tar.xz 10976 SHA256:3c89c662a526276020b26693ac8be293ac08b70f66b9d7a2d17acfc61ae7e623
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/expat/2.2.1-3/
-- https://sources.debian.net/src/expat/2.2.1-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `explorercanvas=0.r3-4`
 
@@ -1150,19 +1128,8 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris krb5=1.15-1
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15-1.dsc' krb5_1.15-1.dsc 3282 SHA256:ec2a3211b949480f2419dd4731e8213635d7dfcbe1658d1000cea8fa950599aa
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15.orig.tar.gz' krb5_1.15.orig.tar.gz 9327157 SHA256:fd34752774c808ab4f6f864f935c49945f5a56b62240b1ad4ab1af7b4ded127c
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.15-1.debian.tar.xz' krb5_1.15-1.debian.tar.xz 141624 SHA256:ddad4ec3d024b1164d1726c767ed8ea4900454793f5a2ce53a5cf7a123c5b4e7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/krb5/1.15-1/
-- https://sources.debian.net/src/krb5/1.15-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libassuan=2.4.3-2`
 
@@ -2396,18 +2363,8 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sensible-utils=0.0.9
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9.dsc' sensible-utils_0.0.9.dsc 1405 SHA256:390c29b31a09ab7f31f8b5fc0fd82e47c25f15b22b17c614fb87f12d3b091070
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9.tar.gz' sensible-utils_0.0.9.tar.gz 74331 SHA256:6fcb5cc0f7f1cf80421840cfa17b1b3fa5afaf3fe852dc984a789023af2f70c6
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sensible-utils/0.0.9/
-- https://sources.debian.net/src/sensible-utils/0.0.9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `serf=1.3.9-3`
 
@@ -2513,19 +2470,8 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris subversion=1.9.5-1
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.5-1.dsc' subversion_1.9.5-1.dsc 3049 SHA256:27f998d99a5dc7311fa53085c580a1db81ed82ea4d4ffcaa3eddd9b3c937ed43
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.5.orig.tar.gz' subversion_1.9.5.orig.tar.gz 10615674 SHA256:280ba586c5d51d7b976b65d22d5e8e42f3908ed1c968d71120dcf534ce857a83
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.5-1.diff.gz' subversion_1.9.5-1.diff.gz 2534370 SHA256:1d876bf34c60fdd836dbc6c7b86a0c96fd6458393074c73137266f2d64865350
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/subversion/1.9.5-1/
-- https://sources.debian.net/src/subversion/1.9.5-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `systemd=232-25`
 

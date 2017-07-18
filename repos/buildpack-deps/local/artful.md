@@ -624,14 +624,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris db5.3=5.3.28-12
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-12.dsc' db5.3_5.3.28-12.dsc 3199 SHA256:1c4d6149f83a798e69f6d8e7444711d963c31d649284357135ea33b319c71bba
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28.orig.tar.xz' db5.3_5.3.28.orig.tar.xz 24154920 SHA256:e1f85c8b6ebd0ed3ca72fa0ae97b65006f6d0bd0cd6f4ac24bed103cb5497bf5
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-12.debian.tar.xz' db5.3_5.3.28-12.debian.tar.xz 27812 SHA256:7907d8ad4c408857a71782436283a7ab67d7fe0f38ae15782f08077bdfd55c03
-```
 
 ### `dpkg` source package: `dbus=1.10.18-1ubuntu2`
 
@@ -1503,14 +1497,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris heimdal=7.1.0+dfsg-13
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.1.0+dfsg-13.dsc' heimdal_7.1.0+dfsg-13.dsc 3639 SHA256:024148c80b4fe44a3fe653dccb7021d058868129419435215ee20e2f92312e0a
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.1.0+dfsg.orig.tar.gz' heimdal_7.1.0+dfsg.orig.tar.gz 8959650 SHA256:47a1439910d05ea884ad254646e7c48a9400a2c30f087ed8e8e0854697a480f9
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.1.0+dfsg-13.debian.tar.xz' heimdal_7.1.0+dfsg-13.debian.tar.xz 69180 SHA256:9642a6763ddd82a5f1bfd0fe63940b8b7058f761c794bea7696b5584b830cb93
-```
 
 ### `dpkg` source package: `hicolor-icon-theme=0.15-1`
 
@@ -1655,14 +1643,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.7.4+dfsg-11ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-11ubuntu1.dsc' imagemagick_6.9.7.4+dfsg-11ubuntu1.dsc 5146 SHA256:d5e04bd5ee89170b196bef98be9c8bbad229ed49ece2340ef3a83457dee1cd35
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg.orig.tar.xz' imagemagick_6.9.7.4+dfsg.orig.tar.xz 8929800 SHA256:47fb2cdd26f5913318c4504f16ea363e04d1f400dda9ec52e461ab661d724026
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-11ubuntu1.debian.tar.xz' imagemagick_6.9.7.4+dfsg-11ubuntu1.debian.tar.xz 225984 SHA256:53d0e9465620410c264bdd528d7ee437aa86cfc52c9ea4fdd6b74e981c781ff3
-```
 
 ### `dpkg` source package: `init-system-helpers=1.47`
 
@@ -1875,15 +1857,8 @@ Licenses: (parsed from: `/usr/share/doc/libbsd0/copyright`)
 - `public-domain`
 - `public-domain-Colin-Plumb`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libbsd=0.8.5-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libb/libbsd/libbsd_0.8.5-1.dsc' libbsd_0.8.5-1.dsc 2218 SHA256:64f6ecaa50af866829c8f0b0663c3a1cbb77162c5b92a75bb24a265e4477b6ae
-'http://archive.ubuntu.com/ubuntu/pool/main/libb/libbsd/libbsd_0.8.5.orig.tar.xz' libbsd_0.8.5.orig.tar.xz 370680 SHA256:7647d024f41389305272c263da933a6f2a978213c1801592f47e68d83ac05b28
-'http://archive.ubuntu.com/ubuntu/pool/main/libb/libbsd/libbsd_0.8.5.orig.tar.xz.asc' libbsd_0.8.5.orig.tar.xz.asc 833 SHA256:53a316531f50ad43551aac1b744c86422d7b890deed3169411947c0656f6bd6a
-'http://archive.ubuntu.com/ubuntu/pool/main/libb/libbsd/libbsd_0.8.5-1.debian.tar.xz' libbsd_0.8.5-1.debian.tar.xz 15536 SHA256:680f1826a38d7d48284196a0db6d1d601639bd6af17a26850bab2bba4c4de646
-```
 
 ### `dpkg` source package: `libcap-ng=0.7.7-3`
 
@@ -2304,14 +2279,8 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 - `Chromium`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.17.0-4
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.17.0-4.dsc' libpsl_0.17.0-4.dsc 2224 SHA256:9673d706681725621efae09ea96331684f737415f6cf595ed01dc8fb7c3e61e8
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.17.0.orig.tar.gz' libpsl_0.17.0.orig.tar.gz 49087 SHA256:7731e28393e1b4ca363eaffecd6c7570023a7c18c017b45d683ac7d2ba1f0bd1
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.17.0-4.debian.tar.xz' libpsl_0.17.0-4.debian.tar.xz 9052 SHA256:521d6eba91754b80f3e5c430a81e2054b83c0dbeda1972ee0c62bdb6d9203ccb
-```
 
 ### `dpkg` source package: `libpthread-stubs=0.3-4`
 
@@ -3416,15 +3385,8 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.23.7-2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.7-2.dsc' p11-kit_0.23.7-2.dsc 2452 SHA256:4e6f3d78be14193cfd88004ce4285fa78d610a42ded7cda253a0508b44b2087a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.7.orig.tar.gz' p11-kit_0.23.7.orig.tar.gz 1087009 SHA256:988e7c86f2641b36702503481292ef0686e6b1c39d80b215699b6dbf1024be41
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.7.orig.tar.gz.asc' p11-kit_0.23.7.orig.tar.gz.asc 543 SHA256:7156998e36be4e12e2375518d76a1b1fdf46acbae10dd6bb098c1bd902f0cdad
-'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.7-2.debian.tar.xz' p11-kit_0.23.7-2.debian.tar.xz 20900 SHA256:d6339f2c62a4edbd0b002a6f1accebfa975da62e279c61c77ecbaa477995663a
-```
 
 ### `dpkg` source package: `pam=1.1.8-3.2ubuntu3`
 
@@ -3551,14 +3513,8 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.24/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris perl=5.24.1-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1-4ubuntu1.dsc' perl_5.24.1-4ubuntu1.dsc 2419 SHA256:51b13d2605eb1a40a801be4564ff17ef0081c9e47ec32cf180e444d560211d65
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1-4ubuntu1.debian.tar.xz' perl_5.24.1-4ubuntu1.debian.tar.xz 172344 SHA256:45558fb6107fa10b0cf5916af9435bcb4133d6550bf8ed183fe9aff8f15a8231
-```
 
 ### `dpkg` source package: `pinentry=1.0.0-2`
 
@@ -4067,14 +4023,8 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`, `/usr/share/doc/lib
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.8-3
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.8-3.dsc' tiff_4.0.8-3.dsc 2157 SHA256:68d975990583c60955f96f51fc4e5cc13dbf7cdeb0fdd4f6c832a8d648870098
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.8.orig.tar.gz' tiff_4.0.8.orig.tar.gz 2065574 SHA256:59d7a5a8ccd92059913f246877db95a2918e6c04fb9d43fd74e5c3390dac2910
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.0.8-3.debian.tar.xz' tiff_4.0.8-3.debian.tar.xz 22472 SHA256:8803ef2917ceb80c472e97d85e86f71a20d04cf7de94ebffcc1b3100f51058ce
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2016.10.27`
 

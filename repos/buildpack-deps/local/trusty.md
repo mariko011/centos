@@ -1554,14 +1554,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris heimdal=1.6~git20131207+dfsg-1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_1.6~git20131207+dfsg-1ubuntu1.1.dsc' heimdal_1.6~git20131207+dfsg-1ubuntu1.1.dsc 3229 SHA256:5b263b615453e14bec2a3fbfb6a220db117124ce182104c1e89bdf9920cc062d
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_1.6~git20131207+dfsg.orig.tar.gz' heimdal_1.6~git20131207+dfsg.orig.tar.gz 9207949 SHA256:339bc6c204b5fc3a3f3bf3a1595321b41c1d5c72596c7d1f73a92133fdb30ddb
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_1.6~git20131207+dfsg-1ubuntu1.1.debian.tar.xz' heimdal_1.6~git20131207+dfsg-1ubuntu1.1.debian.tar.xz 64560 SHA256:2c11ad1be74825414991b99f6ceea36aa428b07c338141c24ed19e3230264adc
-```
 
 ### `dpkg` source package: `hicolor-icon-theme=0.13-1`
 
@@ -3415,14 +3409,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=3.13.0-123.172
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-123.172.dsc' linux_3.13.0-123.172.dsc 8127 SHA256:f5e777f68649c4df8a2ce4a898f6ad8758a3b00d858b796426b7aa7aefc25c58
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-123.172.diff.gz' linux_3.13.0-123.172.diff.gz 9480108 SHA256:4b569d050540dcbfec473f3aea9aedf34135a6c8b342f7b7b3448f6fd734790f
-```
 
 ### `dpkg` source package: `lockfile-progs=0.1.17`
 

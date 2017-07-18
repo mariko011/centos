@@ -2945,14 +2945,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.10.0-26.30
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.10.0-26.30.dsc' linux_4.10.0-26.30.dsc 6015 SHA256:39a82426861dd2dacaab8fc7ab8754735f96cabf9ba97571af900fce6827a43e
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.10.0.orig.tar.gz' linux_4.10.0.orig.tar.gz 143917000 SHA256:1221bcded9062e5740e7cd1b047479494312b13a2a3ba8a48c820d12276c417d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.10.0-26.30.diff.gz' linux_4.10.0-26.30.diff.gz 7445281 SHA256:99461b57ccd2975bcb0b735ae7558ceb3d478e29a0613883708123832cae1c1e
-```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu5`
 
