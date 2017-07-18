@@ -260,14 +260,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris db5.3=5.3.28-12
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-12.dsc' db5.3_5.3.28-12.dsc 3199 SHA256:1c4d6149f83a798e69f6d8e7444711d963c31d649284357135ea33b319c71bba
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28.orig.tar.xz' db5.3_5.3.28.orig.tar.xz 24154920 SHA256:e1f85c8b6ebd0ed3ca72fa0ae97b65006f6d0bd0cd6f4ac24bed103cb5497bf5
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-12.debian.tar.xz' db5.3_5.3.28-12.debian.tar.xz 27812 SHA256:7907d8ad4c408857a71782436283a7ab67d7fe0f38ae15782f08077bdfd55c03
-```
 
 ### `dpkg` source package: `debconf=1.5.60ubuntu1`
 
@@ -279,13 +273,8 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.60ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debconf/debconf_1.5.60ubuntu1.dsc' debconf_1.5.60ubuntu1.dsc 2020 SHA256:e66bad6506b1d3e5eae853e12d528df02c45720f0590da88413a8c546da89ed0
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debconf/debconf_1.5.60ubuntu1.tar.xz' debconf_1.5.60ubuntu1.tar.xz 574728 SHA256:52d97690a61ebee88c071673388533b43d64f575eee3cc56b10c117289426b09
-```
 
 ### `dpkg` source package: `debianutils=4.8.1.1`
 
@@ -558,14 +547,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris heimdal=7.1.0+dfsg-13
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.1.0+dfsg-13.dsc' heimdal_7.1.0+dfsg-13.dsc 3639 SHA256:024148c80b4fe44a3fe653dccb7021d058868129419435215ee20e2f92312e0a
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.1.0+dfsg.orig.tar.gz' heimdal_7.1.0+dfsg.orig.tar.gz 8959650 SHA256:47a1439910d05ea884ad254646e7c48a9400a2c30f087ed8e8e0854697a480f9
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.1.0+dfsg-13.debian.tar.xz' heimdal_7.1.0+dfsg-13.debian.tar.xz 69180 SHA256:9642a6763ddd82a5f1bfd0fe63940b8b7058f761c794bea7696b5584b830cb93
-```
 
 ### `dpkg` source package: `hostname=3.18`
 
