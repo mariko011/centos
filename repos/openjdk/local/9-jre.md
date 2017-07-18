@@ -679,19 +679,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris expat=2.2.1-3
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.1-3.dsc' expat_2.2.1-3.dsc 2289 SHA256:fbb8d028e4dc8a77f0540e2c4d022f8199a0229987de225a0df4f172c562914e
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.1.orig.tar.bz2' expat_2.2.1.orig.tar.bz2 405441 SHA256:1868cadae4c82a018e361e2b2091de103cd820aaacb0d6cfa49bd2cd83978885
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.1-3.debian.tar.xz' expat_2.2.1-3.debian.tar.xz 10976 SHA256:3c89c662a526276020b26693ac8be293ac08b70f66b9d7a2d17acfc61ae7e623
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/expat/2.2.1-3/
-- https://sources.debian.net/src/expat/2.2.1-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20161106-2`
 
@@ -1012,18 +1001,8 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.48
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.48.dsc' init-system-helpers_1.48.dsc 1916 SHA256:aefcef5270cfae3380f9dfd98336de20580086dbdc65c0dfd7fe1c10f0722bd0
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.48.tar.xz' init-system-helpers_1.48.tar.xz 43384 SHA256:20b4ff9df037cfa64d6c9637e383cb09135cb97114d932032160cdfaf01d08b8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/init-system-helpers/1.48/
-- https://sources.debian.net/src/init-system-helpers/1.48/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `iproute2=4.9.0-1`
 
@@ -1202,20 +1181,8 @@ Licenses: (parsed from: `/usr/share/doc/libbsd0/copyright`)
 - `public-domain`
 - `public-domain-Colin-Plumb`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libbsd=0.8.5-1
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.5-1.dsc' libbsd_0.8.5-1.dsc 2218 SHA256:64f6ecaa50af866829c8f0b0663c3a1cbb77162c5b92a75bb24a265e4477b6ae
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.5.orig.tar.xz' libbsd_0.8.5.orig.tar.xz 370680 SHA256:7647d024f41389305272c263da933a6f2a978213c1801592f47e68d83ac05b28
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.5.orig.tar.xz.asc' libbsd_0.8.5.orig.tar.xz.asc 833 SHA256:53a316531f50ad43551aac1b744c86422d7b890deed3169411947c0656f6bd6a
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.5-1.debian.tar.xz' libbsd_0.8.5-1.debian.tar.xz 15536 SHA256:680f1826a38d7d48284196a0db6d1d601639bd6af17a26850bab2bba4c4de646
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libbsd/0.8.5-1/
-- https://sources.debian.net/src/libbsd/0.8.5-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libcap-ng=0.7.7-3`
 
@@ -1486,19 +1453,8 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 - `Chromium`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.17.0-4
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.17.0-4.dsc' libpsl_0.17.0-4.dsc 2224 SHA256:9673d706681725621efae09ea96331684f737415f6cf595ed01dc8fb7c3e61e8
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.17.0.orig.tar.gz' libpsl_0.17.0.orig.tar.gz 49087 SHA256:7731e28393e1b4ca363eaffecd6c7570023a7c18c017b45d683ac7d2ba1f0bd1
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.17.0-4.debian.tar.xz' libpsl_0.17.0-4.debian.tar.xz 9052 SHA256:521d6eba91754b80f3e5c430a81e2054b83c0dbeda1972ee0c62bdb6d9203ccb
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libpsl/0.17.0-4/
-- https://sources.debian.net/src/libpsl/0.17.0-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libselinux=2.6-3`
 
