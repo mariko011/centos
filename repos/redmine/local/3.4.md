@@ -1,10 +1,10 @@
-# `redmine:3.4.1`
+# `redmine:3.4.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ce819748488e3bdcb5c5f864bff04208cd47eead382bce3bc82043037fdc2799`
-- Created: `2017-07-13T23:09:32.248505994Z`
-- Virtual Size: ~ 592.34 Mb  
+- Image ID: `sha256:528ec6b0fa8cd2120444c4318c7d23fb9224d317b7f8b6f90a5cc42e9a941677`
+- Created: `2017-07-18T23:45:48.04089613Z`
+- Virtual Size: ~ 592.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `RUBY_VERSION=2.4.1`
   - `RUBY_DOWNLOAD_SHA256=4fc8a9992de3e90191de369270ea4b6c1b171b7941743614cc50822ddc1fe654`
   - `RUBYGEMS_VERSION=2.6.12`
-  - `BUNDLER_VERSION=1.15.1`
+  - `BUNDLER_VERSION=1.15.2`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_PATH=/usr/local/bundle`
   - `BUNDLE_BIN=/usr/local/bundle/bin`
@@ -24,8 +24,8 @@
   - `GOSU_VERSION=1.7`
   - `TINI_VERSION=v0.9.0`
   - `RAILS_ENV=production`
-  - `REDMINE_VERSION=3.4.1`
-  - `REDMINE_DOWNLOAD_MD5=79b07289c0b591e81180d017dbf6ebf4`
+  - `REDMINE_VERSION=3.4.2`
+  - `REDMINE_DOWNLOAD_MD5=2980b80e9acc81c01c06adb86eb4f37d`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1417,16 +1417,16 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/ilmbase/1.0.1-6.1/
 - https://sources.debian.net/src/ilmbase/1.0.1-6.1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `imagemagick=8:6.8.9.9-5+deb8u9`
+### `dpkg` source package: `imagemagick=8:6.8.9.9-5+deb8u10`
 
 Binary Packages:
 
-- `imagemagick=8:6.8.9.9-5+deb8u9`
-- `imagemagick-6.q16=8:6.8.9.9-5+deb8u9`
-- `imagemagick-common=8:6.8.9.9-5+deb8u9`
-- `libmagickcore-6.q16-2:amd64=8:6.8.9.9-5+deb8u9`
-- `libmagickcore-6.q16-2-extra:amd64=8:6.8.9.9-5+deb8u9`
-- `libmagickwand-6.q16-2:amd64=8:6.8.9.9-5+deb8u9`
+- `imagemagick=8:6.8.9.9-5+deb8u10`
+- `imagemagick-6.q16=8:6.8.9.9-5+deb8u10`
+- `imagemagick-common=8:6.8.9.9-5+deb8u10`
+- `libmagickcore-6.q16-2:amd64=8:6.8.9.9-5+deb8u10`
+- `libmagickcore-6.q16-2-extra:amd64=8:6.8.9.9-5+deb8u10`
+- `libmagickwand-6.q16-2:amd64=8:6.8.9.9-5+deb8u10`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/imagemagick-common/copyright`, `/usr/share/doc/libmagickcore-6.q16-2/copyright`, `/usr/share/doc/libmagickcore-6.q16-2-extra/copyright`, `/usr/share/doc/libmagickwand-6.q16-2/copyright`)
 
@@ -1447,16 +1447,16 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris imagemagick=8:6.8.9.9-5+deb8u9
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u9.dsc' imagemagick_6.8.9.9-5+deb8u9.dsc 4224 SHA256:0260ef9260626c46580deccd9727624f60b5dc2c0a01b26f4bf83b7136f42210
+$ apt-get source -qq --print-uris imagemagick=8:6.8.9.9-5+deb8u10
+'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u10.dsc' imagemagick_6.8.9.9-5+deb8u10.dsc 4228 SHA256:96bae3c6468f12c6292e99e8e8fdb5e0ed66e58843b803e52bcbaf13a3dc715b
 'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9.orig.tar.xz' imagemagick_6.8.9.9.orig.tar.xz 7891624 SHA256:a4cccc70179ff2c67550e063cdcb2e62907338ef3e68b45bb1c41931e515b3eb
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u9.debian.tar.xz' imagemagick_6.8.9.9-5+deb8u9.debian.tar.xz 277108 SHA256:e82a9ea12f64ba1a7040db9342b5fe7f65459f1176147d6692a96ce3c5d414dd
+'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u10.debian.tar.xz' imagemagick_6.8.9.9-5+deb8u10.debian.tar.xz 286116 SHA256:a9664cde38586f09a7d29718136c5a083fc0b854ca862d7cbd5b6151a5009452
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u9/
-- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u9/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u10/
+- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u10/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9.2.39.3a460-3`
 
