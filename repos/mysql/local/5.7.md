@@ -1,10 +1,10 @@
-# `mysql:5.7.18`
+# `mysql:5.7.19`
 
 ## Docker Metadata
 
-- Image ID: `sha256:44a8e1a5c0b27650237907f4e9ee7fccdba0120291d27075e2cb8c8e8a8ec66b`
-- Created: `2017-06-23T00:45:29.608900394Z`
-- Virtual Size: ~ 407.03 Mb  
+- Image ID: `sha256:ec161391b8c32a70b45c4eb505fb94b674a41e7de920a20d37887252e7385d61`
+- Created: `2017-07-18T23:14:41.4090509Z`
+- Virtual Size: ~ 412.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.7`
   - `MYSQL_MAJOR=5.7`
-  - `MYSQL_VERSION=5.7.18-1debian8`
+  - `MYSQL_VERSION=5.7.19-1debian8`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -308,6 +308,37 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/
 - https://sources.debian.net/src/cryptsetup/2:1.6.6-5/debian/copyright (for direct copyright/license information)
+
+### `dpkg` source package: `cyrus-sasl2=2.1.26.dfsg1-13+deb8u1`
+
+Binary Packages:
+
+- `libsasl2-2:amd64=2.1.26.dfsg1-13+deb8u1`
+- `libsasl2-modules:amd64=2.1.26.dfsg1-13+deb8u1`
+- `libsasl2-modules-db:amd64=2.1.26.dfsg1-13+deb8u1`
+
+Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
+
+- `BSD-2-clause`
+- `BSD-4-clause`
+- `GPL-2`
+- `GPL-2+`
+- `GPL-3`
+- `GPL-3+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris cyrus-sasl2=2.1.26.dfsg1-13+deb8u1
+'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.dsc' cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.dsc 3461 SHA256:ed1cba2b699aaf1ad08b99ea82d40c583c02817f6fbd765b9bbcd940d72fc3f3
+'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1.orig.tar.gz' cyrus-sasl2_2.1.26.dfsg1.orig.tar.gz 1494337 SHA256:172c39555012f479543ce7305949db75df708771fe8f8b34248027f09e53bb85
+'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.debian.tar.xz' cyrus-sasl2_2.1.26.dfsg1-13+deb8u1.debian.tar.xz 94284 SHA256:14e00798c41b6fae965211f1af8b47a67d22001146d0019f81af0fc7be9f162f
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/cyrus-sasl2/2.1.26.dfsg1-13+deb8u1/
+- https://sources.debian.net/src/cyrus-sasl2/2.1.26.dfsg1-13+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `dash=0.5.7-4`
 
@@ -1258,15 +1289,15 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/mecab/0.996-1.1/
 - https://sources.debian.net/src/mecab/0.996-1.1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `mysql-community=5.7.18-1debian8`
+### `dpkg` source package: `mysql-community=5.7.19-1debian8`
 
 Binary Packages:
 
-- `mysql-client=5.7.18-1debian8`
-- `mysql-common=5.7.18-1debian8`
-- `mysql-community-client=5.7.18-1debian8`
-- `mysql-community-server=5.7.18-1debian8`
-- `mysql-server=5.7.18-1debian8`
+- `mysql-client=5.7.19-1debian8`
+- `mysql-common=5.7.19-1debian8`
+- `mysql-community-client=5.7.19-1debian8`
+- `mysql-community-server=5.7.19-1debian8`
+- `mysql-server=5.7.19-1debian8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1275,10 +1306,10 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mysql-community=5.7.18-1debian8
-'http://repo.mysql.com/apt/debian/pool/mysql-5.7/m/mysql-community/mysql-community_5.7.18-1debian8.dsc' mysql-community_5.7.18-1debian8.dsc 1820 SHA256:67a10e7ccc1ff289e0097a21e40e2be016b6866e4b792f37ebc8162b27d9dc77
-'http://repo.mysql.com/apt/debian/pool/mysql-5.7/m/mysql-community/mysql-community_5.7.18.orig.tar.gz' mysql-community_5.7.18.orig.tar.gz 51567774 SHA256:0b5d71ed608656cd8181d3bb0434d3e36bac192899038dbdddf5a7594aaea1a2
-'http://repo.mysql.com/apt/debian/pool/mysql-5.7/m/mysql-community/mysql-community_5.7.18-1debian8.debian.tar.xz' mysql-community_5.7.18-1debian8.debian.tar.xz 83422308 SHA256:733c83ffaeb766e17e4cc07aafa41dfdcd0c739200b5c60315bf1f0ec0a49a2b
+$ apt-get source -qq --print-uris mysql-community=5.7.19-1debian8
+'http://repo.mysql.com/apt/debian/pool/mysql-5.7/m/mysql-community/mysql-community_5.7.19-1debian8.dsc' mysql-community_5.7.19-1debian8.dsc 1820 SHA256:31f0d9cfd9c4f80fd5440f8bf69e41d2ee04dfc384c8001591e052ca6c365dff
+'http://repo.mysql.com/apt/debian/pool/mysql-5.7/m/mysql-community/mysql-community_5.7.19.orig.tar.gz' mysql-community_5.7.19.orig.tar.gz 51686763 SHA256:3e51e76f93179ca7b165a7008a6cc14d56195b3aef35d26d3ac194333d291eb1
+'http://repo.mysql.com/apt/debian/pool/mysql-5.7/m/mysql-community/mysql-community_5.7.19-1debian8.debian.tar.xz' mysql-community_5.7.19-1debian8.debian.tar.xz 84169156 SHA256:62e8b34a1cba0e8fba6bb6019fb11839ccf7bd186ac01e78186d1d571a4a77a7
 ```
 
 ### `dpkg` source package: `ncurses=5.9+20140913-1`
