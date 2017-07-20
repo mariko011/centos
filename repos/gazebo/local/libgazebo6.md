@@ -1128,14 +1128,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris expat=2.1.0-4ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.1.0-4ubuntu1.3.dsc' expat_2.1.0-4ubuntu1.3.dsc 2279 SHA256:c9b112be49ffed29676b4188701ca79e13fc9183d1b52117a177a995bea6b1c9
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.1.0-4ubuntu1.3.debian.tar.gz' expat_2.1.0-4ubuntu1.3.debian.tar.gz 24918 SHA256:1f05505bfd920ae2dca192b0a568b73b62ed9d9fd6d72a503227ae5705b89d8d
-```
 
 ### `dpkg` source package: `fakeroot=1.20-3ubuntu2`
 
@@ -4470,14 +4464,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=3.13.0-123.172
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-123.172.dsc' linux_3.13.0-123.172.dsc 8127 SHA256:f5e777f68649c4df8a2ce4a898f6ad8758a3b00d858b796426b7aa7aefc25c58
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-123.172.diff.gz' linux_3.13.0-123.172.diff.gz 9480108 SHA256:4b569d050540dcbfec473f3aea9aedf34135a6c8b342f7b7b3448f6fd734790f
-```
 
 ### `dpkg` source package: `llvm-toolchain-3.4=1:3.4-1ubuntu3`
 

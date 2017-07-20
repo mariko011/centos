@@ -717,14 +717,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris expat=2.1.0-7ubuntu0.16.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.1.0-7ubuntu0.16.04.2.dsc' expat_2.1.0-7ubuntu0.16.04.2.dsc 2389 SHA256:4c46a4b57d378c19102d578f807503bfe622b3a802bbebd8f6b2393a0fd1ca91
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.1.0-7ubuntu0.16.04.2.debian.tar.xz' expat_2.1.0-7ubuntu0.16.04.2.debian.tar.xz 21676 SHA256:9a54fa4576b84ecc37e915908c8005155464fb5609d73e6c39e08256c6f7936e
-```
 
 ### `dpkg` source package: `ffmpeg=7:2.8.11-0ubuntu0.16.04.1`
 
