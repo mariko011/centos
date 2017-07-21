@@ -1,10 +1,10 @@
-# `php:7.2.0alpha3-apache`
+# `php:7.2.0beta1-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:280ec15304e66f6e25757e9a50b54f486d60b9bdf0d7acde93c1ece42acadf9b`
-- Created: `2017-07-13T17:04:01.439751709Z`
-- Virtual Size: ~ 376.93 Mb  
+- Image ID: `sha256:1de25f751b82bb837a5423c00198552cc2bb87fce2df69b65654abab1ceff663`
+- Created: `2017-07-21T00:08:39.145534797Z`
+- Virtual Size: ~ 383.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,10 +21,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.0alpha3`
-  - `PHP_URL=http://downloads.php.net/~remi/php-7.2.0alpha3.tar.xz`
-  - `PHP_ASC_URL=http://downloads.php.net/~remi/php-7.2.0alpha3.tar.xz.asc`
-  - `PHP_SHA256=68abd6fc51cc5cfc7a7b1c2153644c7052f3ed841c21519095dda24eee67f63b`
+  - `PHP_VERSION=7.2.0beta1`
+  - `PHP_URL=http://downloads.php.net/~pollita/php-7.2.0beta1.tar.xz`
+  - `PHP_ASC_URL=http://downloads.php.net/~pollita/php-7.2.0beta1.tar.xz.asc`
+  - `PHP_SHA256=8d7d839cb20ba48f8c947ef44274ef625630f06c7e6d13f3f64b9d17205324db`
   - `PHP_MD5=`
 
 ## `dpkg` (`.deb`-based packages)
@@ -104,19 +104,8 @@ Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apac
 - `PCRE`
 - `Zeus`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apache2=2.4.25-3+deb9u1
-'http://security.debian.org/pool/updates/main/a/apache2/apache2_2.4.25-3+deb9u1.dsc' apache2_2.4.25-3+deb9u1.dsc 2986 SHA256:12864b828384d378f66df57f7650fb1978b651d969e7439995ca0a4e0f3a42cd
-'http://security.debian.org/pool/updates/main/a/apache2/apache2_2.4.25.orig.tar.bz2' apache2_2.4.25.orig.tar.bz2 6398218 SHA256:f87ec2df1c9fee3e6bfde3c8b855a3ddb7ca1ab20ca877bd0e2b6bf3f05c80b2
-'http://security.debian.org/pool/updates/main/a/apache2/apache2_2.4.25-3+deb9u1.debian.tar.xz' apache2_2.4.25-3+deb9u1.debian.tar.xz 697596 SHA256:136c5afc8e4a90830e0e3291141afee7e3a008e639cfa47ff099de2f05a95e9d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apache2/2.4.25-3+deb9u1/
-- https://sources.debian.net/src/apache2/2.4.25-3+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apr-util=1.5.4-3`
 
