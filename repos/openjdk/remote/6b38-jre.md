@@ -1,7 +1,7 @@
 ## `openjdk:6b38-jre`
 
 ```console
-$ docker pull openjdk@sha256:61e31a9fb9ae7f7189706c79b1c85b3f427c8cebb5cb94032d915449db825b48
+$ docker pull openjdk@sha256:277d89205cc6639ed48138824a6ab99f658604e78b4193693962be517bdf9f61
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull openjdk@sha256:61e31a9fb9ae7f7189706c79b1c85b3f427c8cebb5cb94032d9
 
 -	Docker Version: 17.03.1-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **98.5 MB (98547663 bytes)**  
+-	Total Size: **98.5 MB (98549197 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e7dac70a5aaf0fb085cfe926ceec72b94b3bb14c2165f5828f189277767677a`
+-	Image ID: `sha256:584a4e4ae06f8da215dcf58ee82af7c1c7f860e54a8f61425bcdae7201a46330`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -39,8 +39,8 @@ ENV JAVA_HOME=/docker-java-home/jre
 ENV JAVA_VERSION=6b38
 # Fri, 07 Jul 2017 03:54:43 GMT
 ENV JAVA_DEBIAN_VERSION=6b38-1.13.10-1~deb7u1
-# Fri, 07 Jul 2017 03:54:55 GMT
-RUN set -ex; 		apt-get update; 	apt-get install -y 		openjdk-6-jre-headless="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
+# Fri, 21 Jul 2017 21:59:08 GMT
+RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-6-jre-headless="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
 ```
 
 -	Layers:
@@ -64,7 +64,7 @@ RUN set -ex; 		apt-get update; 	apt-get install -y 		openjdk-6-jre-headless="$JA
 		Last Modified: Fri, 07 Jul 2017 05:59:14 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:732087c68bd0a4b0bd9a0ee6574906a2e7fa7a340cadcb2fbe4e36ced4c5ffcd`  
-		Last Modified: Fri, 07 Jul 2017 05:59:22 GMT  
-		Size: 53.1 MB (53134200 bytes)  
+	-	`sha256:244cf160613a53fea8036af764a9618122ce8dba6b4eb890e3b304d262687c20`  
+		Last Modified: Fri, 21 Jul 2017 22:20:25 GMT  
+		Size: 53.1 MB (53135734 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
