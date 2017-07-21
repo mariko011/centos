@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f7fd8970c5b470b5b767d8d0dd00444ce8c100ecb08ac49781f10c5c66662f66`
-- Created: `2017-06-23T00:49:13.428734698Z`
+- Image ID: `sha256:b16b8555d3006c45c0b23597732cc54d7c0e067705e691504060b9c7e426a7e0`
+- Created: `2017-07-20T20:12:23.649423434Z`
 - Virtual Size: ~ 188.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -543,11 +543,11 @@ $ apt-get source -qq --print-uris eject=2.1.5+deb1+cvs20081104-13.1ubuntu0.14.04
 'http://archive.ubuntu.com/ubuntu/pool/main/e/eject/eject_2.1.5+deb1+cvs20081104-13.1ubuntu0.14.04.1.diff.gz' eject_2.1.5+deb1+cvs20081104-13.1ubuntu0.14.04.1.diff.gz 140613 SHA256:f340d6efce72ecfb7718523af422d2ea24ef358f5218790200ba259c67485112
 ```
 
-### `dpkg` source package: `expat=2.1.0-4ubuntu1.3`
+### `dpkg` source package: `expat=2.1.0-4ubuntu1.4`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.1.0-4ubuntu1.3`
+- `libexpat1:amd64=2.1.0-4ubuntu1.4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -556,10 +556,10 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.1.0-4ubuntu1.3
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.1.0-4ubuntu1.3.dsc' expat_2.1.0-4ubuntu1.3.dsc 2279 SHA256:c9b112be49ffed29676b4188701ca79e13fc9183d1b52117a177a995bea6b1c9
+$ apt-get source -qq --print-uris expat=2.1.0-4ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.1.0-4ubuntu1.4.dsc' expat_2.1.0-4ubuntu1.4.dsc 2279 SHA256:e59e8277f61a09810291775161ff89203e36024a901c260b2927d78710f0700a
 'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.1.0-4ubuntu1.3.debian.tar.gz' expat_2.1.0-4ubuntu1.3.debian.tar.gz 24918 SHA256:1f05505bfd920ae2dca192b0a568b73b62ed9d9fd6d72a503227ae5705b89d8d
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.1.0-4ubuntu1.4.debian.tar.gz' expat_2.1.0-4ubuntu1.4.debian.tar.gz 25403 SHA256:5a8e814ac423421dac040a98596c552038c959bbebfef70fb69ad94fdfd62727
 ```
 
 ### `dpkg` source package: `file=1:5.14-2ubuntu3.3`
@@ -964,19 +964,25 @@ $ apt-get source -qq --print-uris kbd=1.15.5-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/kbd/kbd_1.15.5-1ubuntu1.debian.tar.gz' kbd_1.15.5-1ubuntu1.debian.tar.gz 38337 SHA256:93895c5fc0279b8253a4f8c62e84997673598a25e3680bd95cf86f2ac03ebbda
 ```
 
-### `dpkg` source package: `klibc=2.0.3-0ubuntu1.14.04.2`
+### `dpkg` source package: `klibc=2.0.3-0ubuntu1.14.04.3`
 
 Binary Packages:
 
-- `klibc-utils=2.0.3-0ubuntu1.14.04.2`
-- `libklibc=2.0.3-0ubuntu1.14.04.2`
+- `klibc-utils=2.0.3-0ubuntu1.14.04.3`
+- `libklibc=2.0.3-0ubuntu1.14.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/klibc-utils/copyright`, `/usr/share/doc/libklibc/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris klibc=2.0.3-0ubuntu1.14.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/k/klibc/klibc_2.0.3-0ubuntu1.14.04.3.dsc' klibc_2.0.3-0ubuntu1.14.04.3.dsc 2389 SHA256:1a6cc6db1a7e3835a0e9e569fee152647f8bcf18bee993110ad3d704b60fabd2
+'http://archive.ubuntu.com/ubuntu/pool/main/k/klibc/klibc_2.0.3.orig.tar.bz2' klibc_2.0.3.orig.tar.bz2 517788 SHA256:1f9a49c62faf3e166a8deee6c36ad0f4527bb4aa2050123853a4957802235dca
+'http://archive.ubuntu.com/ubuntu/pool/main/k/klibc/klibc_2.0.3-0ubuntu1.14.04.3.debian.tar.xz' klibc_2.0.3-0ubuntu1.14.04.3.debian.tar.xz 22852 SHA256:bb16e4256d6c665fe94652d017561b637bb8e916a42f1e3277517a4d22db9f7d
+```
 
 ### `dpkg` source package: `kmod=15-0ubuntu6`
 
@@ -1156,19 +1162,25 @@ $ apt-get source -qq --print-uris libffi=3.1~rc1+r3.0.13-12ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libf/libffi/libffi_3.1~rc1+r3.0.13-12ubuntu0.1.debian.tar.xz' libffi_3.1~rc1+r3.0.13-12ubuntu0.1.debian.tar.xz 48188 SHA256:260827506b832f348584a35e38c2ccee9deb5efcf859aebe8d7d25733256f108
 ```
 
-### `dpkg` source package: `libgcrypt11=1.5.3-2ubuntu4.4`
+### `dpkg` source package: `libgcrypt11=1.5.3-2ubuntu4.5`
 
 Binary Packages:
 
-- `libgcrypt11:amd64=1.5.3-2ubuntu4.4`
+- `libgcrypt11:amd64=1.5.3-2ubuntu4.5`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt11/copyright`)
 
 - `GPL-2`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libgcrypt11=1.5.3-2ubuntu4.5
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.3-2ubuntu4.5.dsc' libgcrypt11_1.5.3-2ubuntu4.5.dsc 2580 SHA256:4168dae7ba3ad78d8bebe45a28935de371bb281b89795a5ae2f76cfa3d3a5411
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.3.orig.tar.bz2' libgcrypt11_1.5.3.orig.tar.bz2 1508530 SHA256:bcf5334e7da352c45de6aec5d2084ce9a1d30029ff4a4a5da13f1848874759d1
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.3-2ubuntu4.5.debian.tar.gz' libgcrypt11_1.5.3-2ubuntu4.5.debian.tar.gz 37205 SHA256:405b37e0ed162d1da5773ec55fa87df1977bc6b1e0b68913b533ac389b9882e0
+```
 
 ### `dpkg` source package: `libgpg-error=1.12-0.2ubuntu1`
 
@@ -1812,18 +1824,24 @@ $ apt-get source -qq --print-uris newt=0.52.15-2ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/n/newt/newt_0.52.15-2ubuntu5.debian.tar.gz' newt_0.52.15-2ubuntu5.debian.tar.gz 51483 SHA256:3fcff25cd0f6f6e657ce27ec3cc3c10f92be86acb387d32b6fd91822db514a4b
 ```
 
-### `dpkg` source package: `ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.10`
+### `dpkg` source package: `ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.11`
 
 Binary Packages:
 
-- `ntpdate=1:4.2.6.p5+dfsg-3ubuntu2.14.04.10`
+- `ntpdate=1:4.2.6.p5+dfsg-3ubuntu2.14.04.11`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.11
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.11.dsc' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.11.dsc 2371 SHA256:689f507a490d8e6294378675650592de5d55e5ff39de4a7e4f5ae3fb912f7a8b
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg.orig.tar.gz' ntp_4.2.6.p5+dfsg.orig.tar.gz 4111997 SHA256:17f0b63e7e27de5cc999a4afdb96b2dbdf76c75181fca50e2395e49e5773dfc9
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.11.debian.tar.gz' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.11.debian.tar.gz 159573 SHA256:74c21ac32ada2082382e916d2497eabe5039965832d64cc210452755835044d7
+```
 
 ### `dpkg` source package: `openssl=1.0.1f-1ubuntu2.22`
 
