@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8a0bf6327ba19438df2d9e0f20f04de889a7a15d105f64d74cea37943ce62fb4`
-- Created: `2017-07-13T19:55:58.6000167Z`
-- Virtual Size: ~ 242.64 Mb  
+- Image ID: `sha256:708370babb7bc3f3cc6df3ac75b61887a290489f18c0ac82fd1df3e9fbe9b9a7`
+- Created: `2017-07-20T17:42:03.883009194Z`
+- Virtual Size: ~ 236.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -89,20 +89,25 @@ $ apt-get source -qq --print-uris apr=1.5.2-5
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.5.2-5.debian.tar.xz' apr_1.5.2-5.debian.tar.xz 212856 SHA256:5b253cd3acc284241c3cb4a84d9d16f9c5c7775c8f7a26b3a0068ff174bacf76
 ```
 
-### `dpkg` source package: `apt=1.4.5`
+### `dpkg` source package: `apt=1.5~beta1`
 
 Binary Packages:
 
-- `apt=1.4.5`
-- `libapt-pkg5.0:amd64=1.4.5`
+- `apt=1.5~beta1`
+- `libapt-pkg5.0:amd64=1.5~beta1`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=1.5~beta1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.5~beta1.dsc' apt_1.5~beta1.dsc 2584 SHA256:e74cb480326235eb61bd2967e82f34c534f14b9711eac51329f86619ba281c60
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.5~beta1.tar.xz' apt_1.5~beta1.tar.xz 2089648 SHA256:6977a4a9f85da1c76af2cdbc4c33478812ae5ea3c14af61321d19a7b032915fe
+```
 
 ### `dpkg` source package: `attr=1:2.4.47-2build1`
 
@@ -124,12 +129,12 @@ $ apt-get source -qq --print-uris attr=1:2.4.47-2build1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.4.47-2build1.debian.tar.xz' attr_2.4.47-2build1.debian.tar.xz 8168 SHA256:6732a8874190a1f792c7f9cb95fadc1dc852baf2e164b0d7b4bcea525f5c0882
 ```
 
-### `dpkg` source package: `audit=1:2.6.6-1ubuntu2`
+### `dpkg` source package: `audit=1:2.7.7-1ubuntu1`
 
 Binary Packages:
 
-- `libaudit-common=1:2.6.6-1ubuntu2`
-- `libaudit1:amd64=1:2.6.6-1ubuntu2`
+- `libaudit-common=1:2.7.7-1ubuntu1`
+- `libaudit1:amd64=1:2.7.7-1ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/doc/libaudit1/copyright`)
 
@@ -137,21 +142,32 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris audit=1:2.7.7-1ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.7.7-1ubuntu1.dsc' audit_2.7.7-1ubuntu1.dsc 2917 SHA256:c9961e093fec6ea467f618d3b1f8382d8660201381a3c1e8afefafdaa83f8ba3
+'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.7.7.orig.tar.gz' audit_2.7.7.orig.tar.gz 1110512 SHA256:98e22549444c313187dc98c2e137f36a9882efa0874b559b0457e5f87ae178ef
+'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_2.7.7-1ubuntu1.debian.tar.xz' audit_2.7.7-1ubuntu1.debian.tar.xz 20788 SHA256:ccc4ebe154e9eb0bbf5e15c95c086cf8553436d31fe1a94d99a7f68eabf8f224
+```
 
-### `dpkg` source package: `base-files=9.6ubuntu99`
+### `dpkg` source package: `base-files=9.6ubuntu101`
 
 Binary Packages:
 
-- `base-files=9.6ubuntu99`
+- `base-files=9.6ubuntu101`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=9.6ubuntu101
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.6ubuntu101.dsc' base-files_9.6ubuntu101.dsc 1602 SHA256:156527ac9632fb3b835c46cd63d8c766ee7b50ea3b41ccd2ccdbcd281788319b
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.6ubuntu101.tar.xz' base-files_9.6ubuntu101.tar.xz 65776 SHA256:e1e7ff5a8141a8dbcccd15089674823d5840df3a38e0da8b3acc3c0d6152db85
+```
 
 ### `dpkg` source package: `base-passwd=3.5.43`
 
@@ -374,18 +390,24 @@ $ apt-get source -qq --print-uris dash=0.5.8-2.3ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/dash/dash_0.5.8-2.3ubuntu1.diff.gz' dash_0.5.8-2.3ubuntu1.diff.gz 73758 SHA256:9c09d7737ff18f084335ffcd9e8c2a106a2c8ad512d4a9967f2912be1dfa2aee
 ```
 
-### `dpkg` source package: `db5.3=5.3.28-12`
+### `dpkg` source package: `db5.3=5.3.28-13`
 
 Binary Packages:
 
-- `libdb5.3:amd64=5.3.28-12`
+- `libdb5.3:amd64=5.3.28-13`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris db5.3=5.3.28-13
+'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-13.dsc' db5.3_5.3.28-13.dsc 3091 SHA256:2d56be2ce7bf2a554ddc8c6762b2bfbf19f127b33f4719958a23d006f23381de
+'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28.orig.tar.xz' db5.3_5.3.28.orig.tar.xz 24154920 SHA256:e1f85c8b6ebd0ed3ca72fa0ae97b65006f6d0bd0cd6f4ac24bed103cb5497bf5
+'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-13.debian.tar.xz' db5.3_5.3.28-13.debian.tar.xz 27676 SHA256:7126585f2eb63ca2a8fa2f4623a07d65d7df5dbbe7cea96b9bb850da5f4f22e5
+```
 
 ### `dpkg` source package: `debconf=1.5.60ubuntu1`
 
@@ -397,13 +419,8 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.60ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debconf/debconf_1.5.60ubuntu1.dsc' debconf_1.5.60ubuntu1.dsc 2020 SHA256:e66bad6506b1d3e5eae853e12d528df02c45720f0590da88413a8c546da89ed0
-'http://archive.ubuntu.com/ubuntu/pool/main/d/debconf/debconf_1.5.60ubuntu1.tar.xz' debconf_1.5.60ubuntu1.tar.xz 574728 SHA256:52d97690a61ebee88c071673388533b43d64f575eee3cc56b10c117289426b09
-```
 
 ### `dpkg` source package: `debianutils=4.8.1.1`
 
@@ -526,27 +543,33 @@ $ apt-get source -qq --print-uris explorercanvas=0.r3-4
 'http://archive.ubuntu.com/ubuntu/pool/universe/e/explorercanvas/explorercanvas_0.r3-4.debian.tar.xz' explorercanvas_0.r3-4.debian.tar.xz 2040 SHA256:afcaa3e229d9b423988fc30439aeee1599c9dac8ad94430309404f9cf9f0c11f
 ```
 
-### `dpkg` source package: `findutils=4.6.0+git+20161106-2`
+### `dpkg` source package: `findutils=4.6.0+git+20170606-3`
 
 Binary Packages:
 
-- `findutils=4.6.0+git+20161106-2`
+- `findutils=4.6.0+git+20170606-3`
 
 Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 
 - `GFDL-1.3`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris findutils=4.6.0+git+20170606-3
+'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.6.0+git+20170606-3.dsc' findutils_4.6.0+git+20170606-3.dsc 2220 SHA256:b66f2dddfca6de0b05d18c0a0f9a36d7fc24ef87f2f1926a6df9bde914f390cc
+'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.6.0+git+20170606.orig.tar.xz' findutils_4.6.0+git+20170606.orig.tar.xz 1851080 SHA256:d6bddd283a5a6688a0f0806eb349ea06c15ff0849bfb627329b136e2c9e9e5a6
+'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.6.0+git+20170606-3.debian.tar.xz' findutils_4.6.0+git+20170606-3.debian.tar.xz 27052 SHA256:ae46597a3f6ec2231adb0e6466d88f63acff4892b087980ff4c4a8e460a574fd
+```
 
-### `dpkg` source package: `gcc-7=7.1.0-6ubuntu2`
+### `dpkg` source package: `gcc-7=7.1.0-7ubuntu1`
 
 Binary Packages:
 
-- `gcc-7-base:amd64=7.1.0-6ubuntu2`
-- `libgcc1:amd64=1:7.1.0-6ubuntu2`
-- `libstdc++6:amd64=7.1.0-6ubuntu2`
+- `gcc-7-base:amd64=7.1.0-7ubuntu1`
+- `libgcc1:amd64=1:7.1.0-7ubuntu1`
+- `libstdc++6:amd64=7.1.0-7ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -557,8 +580,14 @@ Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gcc-7=7.1.0-7ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.1.0-7ubuntu1.dsc' gcc-7_7.1.0-7ubuntu1.dsc 30163 SHA256:21794d88cb388487485de99d7009e68893079298f292fe099ab36afeb0567356
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.1.0.orig.tar.gz' gcc-7_7.1.0.orig.tar.gz 71893585 SHA256:0906fd93706830db3030643ebade1b62a44ad3b5537693348b95c6058735b04f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.1.0-7ubuntu1.diff.gz' gcc-7_7.1.0-7ubuntu1.diff.gz 1220293 SHA256:48aa9dae884ba2efacdce92d8e39e6cf9ad58ee39daaf3e76e3cf025cd5d0721
+```
 
 ### `dpkg` source package: `gdbm=1.8.3-14`
 
@@ -718,19 +747,25 @@ $ apt-get source -qq --print-uris gnutls28=3.5.8-6ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.8-6ubuntu1.debian.tar.xz' gnutls28_3.5.8-6ubuntu1.debian.tar.xz 107752 SHA256:291d35d0352572c17800ba539a70af8c7a623c755b9948b488e936b0dce0cf18
 ```
 
-### `dpkg` source package: `grep=2.27-2`
+### `dpkg` source package: `grep=3.1-2`
 
 Binary Packages:
 
-- `grep=2.27-2`
+- `grep=3.1-2`
 
 Licenses: (parsed from: `/usr/share/doc/grep/copyright`)
 
 - `GPL-3`
 - `GPL-3+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris grep=3.1-2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_3.1-2.dsc' grep_3.1-2.dsc 2046 SHA256:b75ef8eb1399a49274bafe972679680b7add1500a4ee82eedaa0372f8ed744a0
+'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_3.1.orig.tar.xz' grep_3.1.orig.tar.xz 1370880 SHA256:db625c7ab3bb3ee757b3926a5cfa8d9e1c3991ad24707a83dde8a5ef2bf7a07e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_3.1-2.debian.tar.bz2' grep_3.1-2.debian.tar.bz2 110067 SHA256:f09ce7a3c860a5de8939ebceb5fcd85d00d1537ad9f998dae5f623d9bcfe4e40
+```
 
 ### `dpkg` source package: `gzip=1.6-5ubuntu1`
 
@@ -751,26 +786,32 @@ $ apt-get source -qq --print-uris gzip=1.6-5ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.6-5ubuntu1.debian.tar.xz' gzip_1.6-5ubuntu1.debian.tar.xz 15516 SHA256:db01e3f2195cf0ebcf43ad38d07a70059b6b5b292706f2412de34928b9146db5
 ```
 
-### `dpkg` source package: `heimdal=7.1.0+dfsg-13`
+### `dpkg` source package: `heimdal=7.4.0.dfsg.1-1`
 
 Binary Packages:
 
-- `libasn1-8-heimdal:amd64=7.1.0+dfsg-13`
-- `libgssapi3-heimdal:amd64=7.1.0+dfsg-13`
-- `libhcrypto4-heimdal:amd64=7.1.0+dfsg-13`
-- `libheimbase1-heimdal:amd64=7.1.0+dfsg-13`
-- `libheimntlm0-heimdal:amd64=7.1.0+dfsg-13`
-- `libhx509-5-heimdal:amd64=7.1.0+dfsg-13`
-- `libkrb5-26-heimdal:amd64=7.1.0+dfsg-13`
-- `libroken18-heimdal:amd64=7.1.0+dfsg-13`
-- `libwind0-heimdal:amd64=7.1.0+dfsg-13`
+- `libasn1-8-heimdal:amd64=7.4.0.dfsg.1-1`
+- `libgssapi3-heimdal:amd64=7.4.0.dfsg.1-1`
+- `libhcrypto4-heimdal:amd64=7.4.0.dfsg.1-1`
+- `libheimbase1-heimdal:amd64=7.4.0.dfsg.1-1`
+- `libheimntlm0-heimdal:amd64=7.4.0.dfsg.1-1`
+- `libhx509-5-heimdal:amd64=7.4.0.dfsg.1-1`
+- `libkrb5-26-heimdal:amd64=7.4.0.dfsg.1-1`
+- `libroken18-heimdal:amd64=7.4.0.dfsg.1-1`
+- `libwind0-heimdal:amd64=7.4.0.dfsg.1-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris heimdal=7.4.0.dfsg.1-1
+'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.4.0.dfsg.1-1.dsc' heimdal_7.4.0.dfsg.1-1.dsc 3652 SHA256:6755e0c1710068512ae1e81190c8c4c4a17735cf0215eeca05d22a8a5310c2bc
+'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.4.0.dfsg.1.orig.tar.gz' heimdal_7.4.0.dfsg.1.orig.tar.gz 9960312 SHA256:47ce052bb03af79d8f71d8e5d18647f12fda190bedd9da0f391697049f1feb14
+'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.4.0.dfsg.1-1.debian.tar.xz' heimdal_7.4.0.dfsg.1-1.debian.tar.xz 128172 SHA256:f40bebd372b4f8cbd74a517fa21ad7f4a20cb47562f547e0fda6f2addc690eda
+```
 
 ### `dpkg` source package: `hostname=3.18`
 
@@ -964,33 +1005,46 @@ $ apt-get source -qq --print-uris libffi=3.2.1-6
 'http://archive.ubuntu.com/ubuntu/pool/main/libf/libffi/libffi_3.2.1-6.debian.tar.xz' libffi_3.2.1-6.debian.tar.xz 11252 SHA256:477709fa90f8c7631fa226a48cdf38737c9f195f3686f62aa76714bcffaee512
 ```
 
-### `dpkg` source package: `libgcrypt20=1.7.6-2`
+### `dpkg` source package: `libgcrypt20=1.7.8-2`
 
 Binary Packages:
 
-- `libgcrypt20:amd64=1.7.6-2`
+- `libgcrypt20:amd64=1.7.8-2`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
 - `GPL-2`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libgcrypt20=1.7.8-2
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.8-2.dsc' libgcrypt20_1.7.8-2.dsc 2914 SHA256:50756aa88fe20558993c3d73e1f611e28ec78daab7b4e61a0ac0efdbd3da910d
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.8.orig.tar.bz2' libgcrypt20_1.7.8.orig.tar.bz2 2897853 SHA256:948276ea47e6ba0244f36a17b51dcdd52cfd1e664b0a1ac3bc82134fb6cec199
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.8.orig.tar.bz2.asc' libgcrypt20_1.7.8.orig.tar.bz2.asc 310 SHA256:7785a7b8f861b8742f64c27a08de8aa27cb6f22af8884e5252602051544085db
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.8-2.debian.tar.xz' libgcrypt20_1.7.8-2.debian.tar.xz 26620 SHA256:7ddf57bcb8a1eb78d89af15dc138e4016ebca49ea8b78049ea4c71a8bb4cd31b
+```
 
-### `dpkg` source package: `libgpg-error=1.26-2`
+### `dpkg` source package: `libgpg-error=1.27-3`
 
 Binary Packages:
 
-- `libgpg-error0:amd64=1.26-2`
+- `libgpg-error0:amd64=1.27-3`
 
 Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 
-- `GPL-2.1+`
 - `LGPL-2.1`
+- `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libgpg-error=1.27-3
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.27-3.dsc' libgpg-error_1.27-3.dsc 2377 SHA256:427eba727e5ff13b1f29493edc281cfa811aabe4c0d0f07f747ab11bc8e9574f
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.27.orig.tar.bz2' libgpg-error_1.27.orig.tar.bz2 813060 SHA256:4f93aac6fecb7da2b92871bb9ee33032be6a87b174f54abf8ddf0911a22d29d2
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgpg-error/libgpg-error_1.27-3.debian.tar.xz' libgpg-error_1.27-3.debian.tar.xz 15856 SHA256:c1a17ea7066c955be7f7117efdd0961cd43f3fd81152854e53a60cb08fba0a10
+```
 
 ### `dpkg` source package: `libidn2-0=2.0.2-1`
 
@@ -1065,19 +1119,25 @@ $ apt-get source -qq --print-uris libksba=1.3.5-2
 'http://archive.ubuntu.com/ubuntu/pool/main/libk/libksba/libksba_1.3.5-2.debian.tar.xz' libksba_1.3.5-2.debian.tar.xz 13852 SHA256:98c985bff973be1aecc702fa15887ff1e5b8de481d1dc3e99423a587754eaabd
 ```
 
-### `dpkg` source package: `libpsl=0.17.0-4`
+### `dpkg` source package: `libpsl=0.17.0-5`
 
 Binary Packages:
 
-- `libpsl5:amd64=0.17.0-4`
+- `libpsl5:amd64=0.17.0-5`
 
 Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 
 - `Chromium`
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libpsl=0.17.0-5
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.17.0-5.dsc' libpsl_0.17.0-5.dsc 2194 SHA256:674c757c46515ae6043879be4dcaf8904216cd4ca42d308de2a37194189217a9
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.17.0.orig.tar.gz' libpsl_0.17.0.orig.tar.gz 49087 SHA256:7731e28393e1b4ca363eaffecd6c7570023a7c18c017b45d683ac7d2ba1f0bd1
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.17.0-5.debian.tar.xz' libpsl_0.17.0-5.debian.tar.xz 11508 SHA256:3070d0753bb6631d6465380a64d040a85c3ab2f869b2586f1d2c362b390a164a
+```
 
 ### `dpkg` source package: `libselinux=2.6-3build1`
 
@@ -1343,21 +1403,25 @@ $ apt-get source -qq --print-uris nettle=3.3-1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.3-1.debian.tar.xz' nettle_3.3-1.debian.tar.xz 19428 SHA256:42fef549318af6cfdf76336eb348501d09454a1d873a84f66440b9a791a0ff1b
 ```
 
-### `dpkg` source package: `npth=1.3-1`
+### `dpkg` source package: `npth=1.5-2`
 
 Binary Packages:
 
-- `libnpth0:amd64=1.3-1`
+- `libnpth0:amd64=1.5-2`
 
 Licenses: (parsed from: `/usr/share/doc/libnpth0/copyright`)
 
-- `GPL-2`
-- `GPL-2+`
-- `LGPL-3`
-- `LGPL-3+`
+- `LGPL-2.1`
+- `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris npth=1.5-2
+'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.5-2.dsc' npth_1.5-2.dsc 1949 SHA256:6f4e78f1ccb9ef5f062f973f937ea27e36e168a41c7b5c0d65d4775b0daf676f
+'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.5.orig.tar.bz2' npth_1.5.orig.tar.bz2 299308 SHA256:294a690c1f537b92ed829d867bee537e46be93fbd60b16c04630fbbfcd9db3c2
+'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.5-2.debian.tar.xz' npth_1.5-2.debian.tar.xz 10416 SHA256:c1140dacd332ca38dcc4ae6f0cb69baab25474fd58370a6432f55c2d52bf1e6d
+```
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-7ubuntu1`
 
@@ -1426,11 +1490,11 @@ $ apt-get source -qq --print-uris openssl=1.0.2g-1ubuntu13
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.0.2g-1ubuntu13.debian.tar.xz' openssl_1.0.2g-1ubuntu13.debian.tar.xz 111012 SHA256:1bcd2aff0b517b0255d7267b58800521dfc81e3c953bfae996e15fdeb2121759
 ```
 
-### `dpkg` source package: `p11-kit=0.23.7-2`
+### `dpkg` source package: `p11-kit=0.23.7-3`
 
 Binary Packages:
 
-- `libp11-kit0:amd64=0.23.7-2`
+- `libp11-kit0:amd64=0.23.7-3`
 
 Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 
@@ -1440,8 +1504,15 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `permissive-like-automake-output`
 - `same-as-rest-of-p11kit`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris p11-kit=0.23.7-3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.7-3.dsc' p11-kit_0.23.7-3.dsc 2452 SHA256:ce5611bfa9891673edcb5b4ee369da586b2cee214061dff492dc5f6a8fff6092
+'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.7.orig.tar.gz' p11-kit_0.23.7.orig.tar.gz 1087009 SHA256:988e7c86f2641b36702503481292ef0686e6b1c39d80b215699b6dbf1024be41
+'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.7.orig.tar.gz.asc' p11-kit_0.23.7.orig.tar.gz.asc 543 SHA256:7156998e36be4e12e2375518d76a1b1fdf46acbae10dd6bb098c1bd902f0cdad
+'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.23.7-3.debian.tar.xz' p11-kit_0.23.7-3.debian.tar.xz 21772 SHA256:8dc0b106a69842cc734f8f3c9a1ad6312cd5d1cd318b696cdc76e6ca0c3108b5
+```
 
 ### `dpkg` source package: `pam=1.1.8-3.2ubuntu3`
 
@@ -1484,14 +1555,14 @@ $ apt-get source -qq --print-uris pcre3=2:8.39-3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-3.debian.tar.gz' pcre3_8.39-3.debian.tar.gz 25025 SHA256:a9f0e1a96b6a017965fe69233e267682c289f2cfeb33b46fb78aedcb8cf2c16a
 ```
 
-### `dpkg` source package: `perl=5.24.1-4ubuntu1`
+### `dpkg` source package: `perl=5.24.1-7ubuntu1`
 
 Binary Packages:
 
-- `libperl5.24:amd64=5.24.1-4ubuntu1`
-- `perl=5.24.1-4ubuntu1`
-- `perl-base=5.24.1-4ubuntu1`
-- `perl-modules-5.24=5.24.1-4ubuntu1`
+- `libperl5.24:amd64=5.24.1-7ubuntu1`
+- `perl=5.24.1-7ubuntu1`
+- `perl-base=5.24.1-7ubuntu1`
+- `perl-modules-5.24=5.24.1-7ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.24/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.24/copyright`)
 
@@ -1523,8 +1594,14 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.24/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris perl=5.24.1-7ubuntu1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1-7ubuntu1.dsc' perl_5.24.1-7ubuntu1.dsc 2419 SHA256:6b5012ad663356c38f69685652830703d69ade2934d2786ad40d56d91675f669
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.24.1-7ubuntu1.debian.tar.xz' perl_5.24.1-7ubuntu1.debian.tar.xz 175108 SHA256:537084437c8c9a082af018ce81152ae0a46e11575e15502ea0541ddd7d19712f
+```
 
 ### `dpkg` source package: `pinentry=1.0.0-2`
 
@@ -1691,18 +1768,23 @@ $ apt-get source -qq --print-uris sed=4.4-1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.4-1.debian.tar.xz' sed_4.4-1.debian.tar.xz 59552 SHA256:56dd1f91c5e33b419f38cde93afc90d6fad9064ef4594a877424a0ab2ac9a4bf
 ```
 
-### `dpkg` source package: `sensible-utils=0.0.9`
+### `dpkg` source package: `sensible-utils=0.0.9+nmu1`
 
 Binary Packages:
 
-- `sensible-utils=0.0.9`
+- `sensible-utils=0.0.9+nmu1`
 
 Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris sensible-utils=0.0.9+nmu1
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.9+nmu1.dsc' sensible-utils_0.0.9+nmu1.dsc 1456 SHA256:49922ddd1c19aaad510da759bd97255ef799b252242629bdb0288bd273430ad2
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.9+nmu1.tar.xz' sensible-utils_0.0.9+nmu1.tar.xz 54080 SHA256:e754ca8de7ad0d7fb8eb91fa2a2c1ee9947e88b51ed850340e5e833a82d38254
+```
 
 ### `dpkg` source package: `serf=1.3.9-3`
 
@@ -1758,11 +1840,11 @@ $ apt-get source -qq --print-uris six=1.10.0-4
 'http://archive.ubuntu.com/ubuntu/pool/main/s/six/six_1.10.0-4.debian.tar.xz' six_1.10.0-4.debian.tar.xz 4012 SHA256:ab208e55d33fe4765d1ed0da62c966a3bb420009bdb9d68c32e61c619c3e61d9
 ```
 
-### `dpkg` source package: `sqlite3=3.16.2-5`
+### `dpkg` source package: `sqlite3=3.19.3-2`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.16.2-5`
+- `libsqlite3-0:amd64=3.19.3-2`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -1770,8 +1852,15 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.19.3-2
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.19.3-2.dsc' sqlite3_3.19.3-2.dsc 2488 SHA256:97c75c07792ce870ece082283cc519894d33887e9a04e74ec24984588a4e26ca
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.19.3.orig-www.tar.xz' sqlite3_3.19.3.orig-www.tar.xz 3475624 SHA256:d022fc888db199fbdb83f984cffd2b28bce4e5607c1aa3133bfc22f901d221d6
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.19.3.orig.tar.xz' sqlite3_3.19.3.orig.tar.xz 5694132 SHA256:f315f639127bfd36516df4ad3181e05905058507a54dd882e0c4d9d13378baae
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.19.3-2.debian.tar.xz' sqlite3_3.19.3-2.debian.tar.xz 16996 SHA256:105c2bca470d72d0519a6b19f0671cad4d156162320c3adcc019d8287f3225ed
+```
 
 ### `dpkg` source package: `subversion=1.9.5-1ubuntu1`
 
@@ -1795,12 +1884,12 @@ $ apt-get source -qq --print-uris subversion=1.9.5-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.5-1ubuntu1.diff.gz' subversion_1.9.5-1ubuntu1.diff.gz 2541697 SHA256:86adbc0c664010ffe661b53557a7d34f94d779413ff81f897b99eef0d7357e7b
 ```
 
-### `dpkg` source package: `systemd=233-6ubuntu3`
+### `dpkg` source package: `systemd=233-8ubuntu3`
 
 Binary Packages:
 
-- `libsystemd0:amd64=233-6ubuntu3`
-- `libudev1:amd64=233-6ubuntu3`
+- `libsystemd0:amd64=233-8ubuntu3`
+- `libudev1:amd64=233-8ubuntu3`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1812,8 +1901,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=233-8ubuntu3
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_233-8ubuntu3.dsc' systemd_233-8ubuntu3.dsc 4908 SHA256:377393ca227d87298c176d17e1ea8a85904abfd950ba82a19755410fc1b3bd6b
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_233.orig.tar.gz' systemd_233.orig.tar.gz 4660737 SHA256:8b3e99da3d4164b66581830a7f2436c0c8fe697b5fbdc3927bdb960646be0083
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_233-8ubuntu3.debian.tar.xz' systemd_233-8ubuntu3.debian.tar.xz 153796 SHA256:bbc3aa8749a69917ecf62871285ef1abefca9519385e90bc39ed706756565008
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`
 
@@ -1946,14 +2041,8 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.29-1ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.29-1ubuntu3.dsc' util-linux_2.29-1ubuntu3.dsc 4036 SHA256:7f77a440ac0655c4ae5b5bf65547c86a0b2291ca543bede6f953de7be637a89a
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.29.orig.tar.xz' util-linux_2.29.orig.tar.xz 4249020 SHA256:2c59ea67cc7b564104f60532f6e0a95fe17a91acb870ba8fd7e986f273abf9e7
-'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.29-1ubuntu3.debian.tar.xz' util-linux_2.29-1ubuntu3.debian.tar.xz 75112 SHA256:8aeafc89e9091a7673005695a5ef646d70cf69b70d618e96c1cad689e9603246
-```
 
 ### `dpkg` source package: `wget=1.19.1-3ubuntu1`
 
