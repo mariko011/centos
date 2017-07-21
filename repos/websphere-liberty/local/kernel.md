@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9f49a58f203d7128f343329c8a121c6073b69fb28b40a1a046f59534ecf2c013`
-- Created: `2017-07-06T19:47:21.452765226Z`
-- Virtual Size: ~ 318.57 Mb  
+- Image ID: `sha256:eae6c9c83f2cfee36b60268978932273904e8b3e1ff6206e44ec4745ff62997c`
+- Created: `2017-07-20T21:42:49.601255643Z`
+- Virtual Size: ~ 318.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/ibm/docker/docker-server","run","defaultServer"]`
@@ -253,11 +253,11 @@ $ apt-get source -qq --print-uris cdebconf=0.198ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.198ubuntu1.tar.xz' cdebconf_0.198ubuntu1.tar.xz 269256 SHA256:2f3490411599195bd31fb1a29770694888c8295f9bf5012bfb4fa22ebd3990f1
 ```
 
-### `dpkg` source package: `coreutils=8.25-2ubuntu2`
+### `dpkg` source package: `coreutils=8.25-2ubuntu3~16.04`
 
 Binary Packages:
 
-- `coreutils=8.25-2ubuntu2`
+- `coreutils=8.25-2ubuntu3~16.04`
 
 Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
@@ -266,10 +266,10 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris coreutils=8.25-2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.25-2ubuntu2.dsc' coreutils_8.25-2ubuntu2.dsc 2071 SHA256:8f2d6456701648072a4ed22142bcb8c0113d4488dd28acd1fc46e26952bbef91
+$ apt-get source -qq --print-uris coreutils=8.25-2ubuntu3~16.04
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.25-2ubuntu3~16.04.dsc' coreutils_8.25-2ubuntu3~16.04.dsc 2095 SHA256:90f76af8f3b01d49dfdb1b2e03e7cfebf855567d378a57092286a7df0aa199a4
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.25.orig.tar.xz' coreutils_8.25.orig.tar.xz 5725008 SHA256:31e67c057a5b32a582f26408c789e11c2e8d676593324849dcf5779296cdce87
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.25-2ubuntu2.debian.tar.xz' coreutils_8.25-2ubuntu2.debian.tar.xz 28040 SHA256:221f38aeb8e251c21edcdb93706deb61ac7619264c1e403609f67e13431e69bb
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.25-2ubuntu3~16.04.debian.tar.xz' coreutils_8.25-2ubuntu3~16.04.debian.tar.xz 28336 SHA256:f6fd913f2b0b08df9109308dfd1202b06060e130b8e6bf94daad32e86a3937cf
 ```
 
 ### `dpkg` source package: `cryptsetup=2:1.6.6-5ubuntu2`
@@ -682,19 +682,25 @@ $ apt-get source -qq --print-uris libcap2=1:2.24-12
 'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.24-12.debian.tar.xz' libcap2_2.24-12.debian.tar.xz 18704 SHA256:34be2e791ec96095cc0b405e532874e8c79aeb2125981ebc6896a0ad0b999cf2
 ```
 
-### `dpkg` source package: `libgcrypt20=1.6.5-2ubuntu0.2`
+### `dpkg` source package: `libgcrypt20=1.6.5-2ubuntu0.3`
 
 Binary Packages:
 
-- `libgcrypt20:amd64=1.6.5-2ubuntu0.2`
+- `libgcrypt20:amd64=1.6.5-2ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
 - `GPL-2`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libgcrypt20=1.6.5-2ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2ubuntu0.3.dsc' libgcrypt20_1.6.5-2ubuntu0.3.dsc 2639 SHA256:81456ffe6f40a971beedb3ad88fcd801e24c45ec7e357b731d14f419f3f6df15
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5.orig.tar.bz2' libgcrypt20_1.6.5.orig.tar.bz2 2549601 SHA256:f49ebc5842d455ae7019def33eb5a014a0f07a2a8353dc3aa50a76fd1dafa924
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2ubuntu0.3.debian.tar.xz' libgcrypt20_1.6.5-2ubuntu0.3.debian.tar.xz 36472 SHA256:3c29fc316e9067088cd6954a2b4c55e7955829362be9c10e09fa33b5e94f2f6c
+```
 
 ### `dpkg` source package: `libgpg-error=1.21-2ubuntu1`
 
@@ -1193,14 +1199,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=229-4ubuntu17
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu17.dsc' systemd_229-4ubuntu17.dsc 3836 SHA256:ff0440afea8ec1738326615aadf8c9854e4c4b22193eb2cf045273e3e36311d2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu17.debian.tar.xz' systemd_229-4ubuntu17.debian.tar.xz 240992 SHA256:26fd899e3a1486a876714a0f94cf05fa388ba9a08189d1f31fbfa599d02eafc4
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
@@ -1304,18 +1304,18 @@ $ apt-get source -qq --print-uris ustr=1.0.4-5
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ustr/ustr_1.0.4-5.debian.tar.xz' ustr_1.0.4-5.debian.tar.xz 24948 SHA256:a21e78acf82dcccef2893932ef7b85852419bfd9b18382e63c34e7710c1d7762
 ```
 
-### `dpkg` source package: `util-linux=2.27.1-6ubuntu3.2`
+### `dpkg` source package: `util-linux=2.27.1-6ubuntu3.3`
 
 Binary Packages:
 
-- `bsdutils=1:2.27.1-6ubuntu3.2`
-- `libblkid1:amd64=2.27.1-6ubuntu3.2`
-- `libfdisk1:amd64=2.27.1-6ubuntu3.2`
-- `libmount1:amd64=2.27.1-6ubuntu3.2`
-- `libsmartcols1:amd64=2.27.1-6ubuntu3.2`
-- `libuuid1:amd64=2.27.1-6ubuntu3.2`
-- `mount=2.27.1-6ubuntu3.2`
-- `util-linux=2.27.1-6ubuntu3.2`
+- `bsdutils=1:2.27.1-6ubuntu3.3`
+- `libblkid1:amd64=2.27.1-6ubuntu3.3`
+- `libfdisk1:amd64=2.27.1-6ubuntu3.3`
+- `libmount1:amd64=2.27.1-6ubuntu3.3`
+- `libsmartcols1:amd64=2.27.1-6ubuntu3.3`
+- `libuuid1:amd64=2.27.1-6ubuntu3.3`
+- `mount=2.27.1-6ubuntu3.3`
+- `util-linux=2.27.1-6ubuntu3.3`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -1336,8 +1336,14 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.3
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.3.dsc' util-linux_2.27.1-6ubuntu3.3.dsc 3942 SHA256:31d135f83fbf7ea5eba164e32b43fca6489504e2c37363414c90e80ce3af375b
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1.orig.tar.xz' util-linux_2.27.1.orig.tar.xz 3964512 SHA256:0a818fcdede99aec43ffe6ca5b5388bff80d162f2f7bd4541dca94fecb87a290
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.3.debian.tar.xz' util-linux_2.27.1-6ubuntu3.3.debian.tar.xz 83780 SHA256:dd3239be2d471306a110fcf91984d41f5e49a0386a8aacd8647b4811e428c0d9
+```
 
 ### `dpkg` source package: `wget=1.17.1-1ubuntu1.2`
 
