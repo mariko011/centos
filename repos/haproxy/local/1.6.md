@@ -1143,19 +1143,8 @@ Licenses: (parsed from: `/usr/share/doc/liblua5.3-0/copyright`)
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris lua5.3=5.3.1-1~bpo8+1
-'http://deb.debian.org/debian/pool/main/l/lua5.3/lua5.3_5.3.1-1~bpo8+1.dsc' lua5.3_5.3.1-1~bpo8+1.dsc 2031 SHA256:3d1782e6cc93cbc73307ff20a1e421ff7d737fb64f912e906e720f87e80a8e04
-'http://deb.debian.org/debian/pool/main/l/lua5.3/lua5.3_5.3.1.orig.tar.gz' lua5.3_5.3.1.orig.tar.gz 278231 SHA256:c42b8e0e35b0bccfc750b4ab56fe4ee4fc9424c41c48877617e0ff6af3aa9712
-'http://deb.debian.org/debian/pool/main/l/lua5.3/lua5.3_5.3.1-1~bpo8+1.debian.tar.xz' lua5.3_5.3.1-1~bpo8+1.debian.tar.xz 6832 SHA256:88eb8887fa0726ee9f4fd5bb87ed8a6c95a91249120af636719fe5179cfd7088
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/lua5.3/5.3.1-1~bpo8+1/
-- https://sources.debian.net/src/lua5.3/5.3.1-1~bpo8+1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lvm2=2.02.111-2.2+deb8u1`
 
