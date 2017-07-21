@@ -1,10 +1,10 @@
-# `python:3.6.1-slim`
+# `python:3.6.2-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:93b738c915e58656c00d149329495ddc721c4975a8c0e26f6c5254e58d18c2be`
-- Created: `2017-06-21T18:49:37.076072158Z`
-- Virtual Size: ~ 199.89 Mb  
+- Image ID: `sha256:0622c70b79ce9b98f9325e481669e78e64c311ae80e2beb6f07e8090ab98e047`
+- Created: `2017-07-18T23:03:37.047210201Z`
+- Virtual Size: ~ 200.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D`
-  - `PYTHON_VERSION=3.6.1`
+  - `PYTHON_VERSION=3.6.2`
   - `PYTHON_PIP_VERSION=9.0.1`
 
 ## `dpkg` (`.deb`-based packages)
@@ -531,11 +531,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/e2fsprogs/1.42.12-2/
 - https://sources.debian.net/src/e2fsprogs/1.42.12-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `expat=2.1.0-6+deb8u3`
+### `dpkg` source package: `expat=2.1.0-6+deb8u4`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.1.0-6+deb8u3`
+- `libexpat1:amd64=2.1.0-6+deb8u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -544,16 +544,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.1.0-6+deb8u3
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u3.dsc' expat_2.1.0-6+deb8u3.dsc 2278 SHA256:3485be5c4ffc922aea14718c48c4107b04559ec013cc0e98a61597da50320e25
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u3.debian.tar.xz' expat_2.1.0-6+deb8u3.debian.tar.xz 21716 SHA256:5e756a68a7634b7b7109024bd33df4df3c5964ea0d0f5e8db0ca98f623bcd841
+$ apt-get source -qq --print-uris expat=2.1.0-6+deb8u4
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-6+deb8u4.dsc' expat_2.1.0-6+deb8u4.dsc 2292 SHA256:7f7a5fed696e3b17f50e576dbae7013793e59517b04818e8b1688d9581792245
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-6+deb8u4.debian.tar.xz' expat_2.1.0-6+deb8u4.debian.tar.xz 22672 SHA256:e832a0c7f1645bb915310628c38ecc6183f6854b0788332a7be470d06d4d149b
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/expat/2.1.0-6+deb8u3/
-- https://sources.debian.net/src/expat/2.1.0-6+deb8u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/expat/2.1.0-6+deb8u4/
+- https://sources.debian.net/src/expat/2.1.0-6+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `findutils=4.4.2-9`
 

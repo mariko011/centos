@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c00d8c982e68ad91b68f1d0cd3a8073e32fbfa473443253a8b8c0bc3c5cb8321`
-- Created: `2017-07-08T04:57:23.873373092Z`
-- Virtual Size: ~ 673.20 Mb  
+- Image ID: `sha256:1d68381255485bf31c5359a2c56a2686a0a6802569961507669eeb2c16e97060`
+- Created: `2017-07-18T23:43:45.308783118Z`
+- Virtual Size: ~ 673.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python2"]`
@@ -1780,19 +1780,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.8.9.9-5+deb8u9
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u9.dsc' imagemagick_6.8.9.9-5+deb8u9.dsc 4224 SHA256:0260ef9260626c46580deccd9727624f60b5dc2c0a01b26f4bf83b7136f42210
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9.orig.tar.xz' imagemagick_6.8.9.9.orig.tar.xz 7891624 SHA256:a4cccc70179ff2c67550e063cdcb2e62907338ef3e68b45bb1c41931e515b3eb
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u9.debian.tar.xz' imagemagick_6.8.9.9-5+deb8u9.debian.tar.xz 277108 SHA256:e82a9ea12f64ba1a7040db9342b5fe7f65459f1176147d6692a96ce3c5d414dd
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u9/
-- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9.2.39.3a460-3`
 

@@ -1,18 +1,18 @@
-# `python:3.6.1-onbuild`
+# `python:2.7.13-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8cdd33450cc2620e76f60e63fd4118fcda22c2c776d2adde94b6ba68015b78bc`
-- Created: `2017-07-08T05:01:13.976710498Z`
-- Virtual Size: ~ 683.84 Mb  
+- Image ID: `sha256:95f6b16fbc9b67d9a423fb7ed8202db763f01b6ddd93a2e2851c738a9c0451a4`
+- Created: `2017-07-18T23:40:51.095087171Z`
+- Virtual Size: ~ 673.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Command: `["python3"]`
+- Command: `["python2"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D`
-  - `PYTHON_VERSION=3.6.1`
+  - `GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF`
+  - `PYTHON_VERSION=2.7.13`
   - `PYTHON_PIP_VERSION=9.0.1`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1780,19 +1780,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.8.9.9-5+deb8u9
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u9.dsc' imagemagick_6.8.9.9-5+deb8u9.dsc 4224 SHA256:0260ef9260626c46580deccd9727624f60b5dc2c0a01b26f4bf83b7136f42210
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9.orig.tar.xz' imagemagick_6.8.9.9.orig.tar.xz 7891624 SHA256:a4cccc70179ff2c67550e063cdcb2e62907338ef3e68b45bb1c41931e515b3eb
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u9.debian.tar.xz' imagemagick_6.8.9.9-5+deb8u9.debian.tar.xz 277108 SHA256:e82a9ea12f64ba1a7040db9342b5fe7f65459f1176147d6692a96ce3c5d414dd
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u9/
-- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9.2.39.3a460-3`
 
