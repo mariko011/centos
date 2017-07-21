@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:646046b008a2dd48ff5bc0e1814db54f07cc739c1235089a3d5207f5effca471`
-- Created: `2017-07-10T20:15:05.243530397Z`
+- Image ID: `sha256:69170b3a3100ee38d7d04a6fe57996ea5b4df8234a1f99bd9226c2392bc5531b`
+- Created: `2017-07-19T23:28:43.603416498Z`
 - Virtual Size: ~ 438.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
-  - `JAVA_VERSION=9~b177`
+  - `JAVA_VERSION=9-b177`
   - `JAVA_DEBIAN_VERSION=9~b177-3`
 
 ## `dpkg` (`.deb`-based packages)
@@ -369,11 +369,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/coreutils/8.26-3/
 - https://sources.debian.net/src/coreutils/8.26-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `cups=2.2.4-1`
+### `dpkg` source package: `cups=2.2.4-2`
 
 Binary Packages:
 
-- `libcups2:amd64=2.2.4-1`
+- `libcups2:amd64=2.2.4-2`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -384,8 +384,19 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris cups=2.2.4-2
+'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.4-2.dsc' cups_2.2.4-2.dsc 3158 SHA256:383312e026d8be1d790f877fcd15a8dc58008cf55a77e2277c612c92ed877fe2
+'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.4.orig.tar.gz' cups_2.2.4.orig.tar.gz 9984475 SHA256:596d4db72651c335469ae5f37b0da72ac9f97d73e30838d787065f559dea98cc
+'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.4-2.debian.tar.xz' cups_2.2.4-2.debian.tar.xz 346564 SHA256:c9d5425b38688a3495b9147a2e28243263ca2a47d6907ea2b33847d795a72382
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/cups/2.2.4-2/
+- https://sources.debian.net/src/cups/2.2.4-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `curl=7.52.1-5`
 
@@ -669,18 +680,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/elfutils/0.168-1/
 - https://sources.debian.net/src/elfutils/0.168-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `expat=2.2.1-3`
+### `dpkg` source package: `expat=2.2.2-2`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.2.1-3`
+- `libexpat1:amd64=2.2.2-2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris expat=2.2.2-2
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.2-2.dsc' expat_2.2.2-2.dsc 2299 SHA256:766182e6c0f364387bb3497855a74ffe876bec399247940a29242601ac942c5d
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.2.orig.tar.bz2' expat_2.2.2.orig.tar.bz2 405561 SHA256:4376911fcf81a23ebd821bbabc26fd933f3ac74833f74924342c29aad2c86046
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.2-2.debian.tar.xz' expat_2.2.2-2.debian.tar.xz 10592 SHA256:5c1423bc1b8049d434daa88a381748bb26e5616510ff9c742204521178e55875
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/expat/2.2.2-2/
+- https://sources.debian.net/src/expat/2.2.2-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20161106-2`
 
@@ -1155,11 +1177,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libassuan/2.4.3-2/
 - https://sources.debian.net/src/libassuan/2.4.3-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libbsd=0.8.5-1`
+### `dpkg` source package: `libbsd=0.8.6-1`
 
 Binary Packages:
 
-- `libbsd0:amd64=0.8.5-1`
+- `libbsd0:amd64=0.8.6-1`
 
 Licenses: (parsed from: `/usr/share/doc/libbsd0/copyright`)
 
@@ -1181,8 +1203,20 @@ Licenses: (parsed from: `/usr/share/doc/libbsd0/copyright`)
 - `public-domain`
 - `public-domain-Colin-Plumb`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libbsd=0.8.6-1
+'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.6-1.dsc' libbsd_0.8.6-1.dsc 2218 SHA256:5a946851fc41ccf8b9d4e501b1959a35937a9ae0ca0fdef22a944aa0efdf887f
+'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.6.orig.tar.xz' libbsd_0.8.6.orig.tar.xz 371112 SHA256:467fbf9df1f49af11f7f686691057c8c0a7613ae5a870577bef9155de39f9687
+'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.6.orig.tar.xz.asc' libbsd_0.8.6.orig.tar.xz.asc 833 SHA256:8b579470e8249b2ad24134989cc77404e3620e8ccda3d57650cfbcc7c50c26ce
+'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.8.6-1.debian.tar.xz' libbsd_0.8.6-1.debian.tar.xz 15624 SHA256:eb1b5b2d4ef96ce6de8e97ed9169be9fdc4336e057ae3e1b5970f777773e10ad
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libbsd/0.8.6-1/
+- https://sources.debian.net/src/libbsd/0.8.6-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libcap-ng=0.7.7-3`
 

@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bdd72d14508e153210cac28c4e243ea7226bbfe90ae1609cac137af37bae6af7`
-- Created: `2017-07-10T20:14:34.17565827Z`
+- Image ID: `sha256:f91cd5c1a92a064f61c960dada7a7b37ca0ce1e99fa79a6d672e67c7386e7995`
+- Created: `2017-07-19T23:28:10.057532295Z`
 - Virtual Size: ~ 587.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
-  - `JAVA_VERSION=9~b177`
+  - `JAVA_VERSION=9-b177`
   - `JAVA_DEBIAN_VERSION=9~b177-3`
 
 ## `dpkg` (`.deb`-based packages)
@@ -467,11 +467,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/coreutils/8.26-3/
 - https://sources.debian.net/src/coreutils/8.26-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `cups=2.2.4-1`
+### `dpkg` source package: `cups=2.2.4-2`
 
 Binary Packages:
 
-- `libcups2:amd64=2.2.4-1`
+- `libcups2:amd64=2.2.4-2`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 
@@ -482,8 +482,19 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris cups=2.2.4-2
+'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.4-2.dsc' cups_2.2.4-2.dsc 3158 SHA256:383312e026d8be1d790f877fcd15a8dc58008cf55a77e2277c612c92ed877fe2
+'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.4.orig.tar.gz' cups_2.2.4.orig.tar.gz 9984475 SHA256:596d4db72651c335469ae5f37b0da72ac9f97d73e30838d787065f559dea98cc
+'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.4-2.debian.tar.xz' cups_2.2.4-2.debian.tar.xz 346564 SHA256:c9d5425b38688a3495b9147a2e28243263ca2a47d6907ea2b33847d795a72382
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/cups/2.2.4-2/
+- https://sources.debian.net/src/cups/2.2.4-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `curl=7.52.1-5`
 
@@ -2749,19 +2760,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.13-2
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13-2.dsc' python2.7_2.7.13-2.dsc 3367 SHA256:ad16150dbf67feb79f2d7a866afe9f072dabedcebdb5e341f3f28228223d4559
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13.orig.tar.gz' python2.7_2.7.13.orig.tar.gz 17076672 SHA256:a4f05a0720ce0fd92626f0278b6b433eee9a6173ddf2bced7957dfb599a5ece1
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13-2.diff.gz' python2.7_2.7.13-2.diff.gz 279975 SHA256:a6afffb70b37e56505dad9f5875c6b6fddb19ddfef61330e567e96228da5009b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/python2.7/2.7.13-2/
-- https://sources.debian.net/src/python2.7/2.7.13-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `readline=7.0-3`
 
