@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d7767ed1cbc7c732c4bdbb1c209f34dfcb4f7dfceec35f183adb8269ec40143e`
-- Created: `2017-06-27T18:13:48.212902489Z`
+- Image ID: `sha256:b5fe23060661dc06fdc3214d8999a9f03beff17ada4b6828c0f1dcb68b5097ee`
+- Created: `2017-07-22T01:26:50.403457097Z`
 - Virtual Size: ~ 760.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -902,11 +902,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/elfutils/0.159-4.2/
 - https://sources.debian.net/src/elfutils/0.159-4.2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `expat=2.1.0-6+deb8u3`
+### `dpkg` source package: `expat=2.1.0-6+deb8u4`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.1.0-6+deb8u3`
+- `libexpat1:amd64=2.1.0-6+deb8u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -915,16 +915,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.1.0-6+deb8u3
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u3.dsc' expat_2.1.0-6+deb8u3.dsc 2278 SHA256:3485be5c4ffc922aea14718c48c4107b04559ec013cc0e98a61597da50320e25
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u3.debian.tar.xz' expat_2.1.0-6+deb8u3.debian.tar.xz 21716 SHA256:5e756a68a7634b7b7109024bd33df4df3c5964ea0d0f5e8db0ca98f623bcd841
+$ apt-get source -qq --print-uris expat=2.1.0-6+deb8u4
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-6+deb8u4.dsc' expat_2.1.0-6+deb8u4.dsc 2292 SHA256:7f7a5fed696e3b17f50e576dbae7013793e59517b04818e8b1688d9581792245
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-6+deb8u4.debian.tar.xz' expat_2.1.0-6+deb8u4.debian.tar.xz 22672 SHA256:e832a0c7f1645bb915310628c38ecc6183f6854b0788332a7be470d06d4d149b
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/expat/2.1.0-6+deb8u3/
-- https://sources.debian.net/src/expat/2.1.0-6+deb8u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/expat/2.1.0-6+deb8u4/
+- https://sources.debian.net/src/expat/2.1.0-6+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `explorercanvas=0.r3-3`
 
@@ -4425,18 +4425,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tcp-wrappers/7.6.q-25/
 - https://sources.debian.net/src/tcp-wrappers/7.6.q-25/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tiff=4.0.3-12.3+deb8u3`
+### `dpkg` source package: `tiff=4.0.3-12.3+deb8u4`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.0.3-12.3+deb8u3`
+- `libtiff5:amd64=4.0.3-12.3+deb8u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff=4.0.3-12.3+deb8u4
+'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u4.dsc' tiff_4.0.3-12.3+deb8u4.dsc 2240 SHA256:50e944559c1588ac8cdaca8034a3a74e9178d6f026edc5f48e9c4ab77540e82f
+'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
+'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u4.debian.tar.xz' tiff_4.0.3-12.3+deb8u4.debian.tar.xz 59668 SHA256:3e637b2784715aa3a4b6e9111d9265682b73997eed0750460afe29662166595f
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u4/
+- https://sources.debian.net/src/tiff/4.0.3-12.3+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tzdata=2017b-0+deb8u1`
 
