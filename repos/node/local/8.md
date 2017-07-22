@@ -1,18 +1,18 @@
-# `node:8.1.4`
+# `node:8.2.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d2ea9785e1cb6be481c98d444efe3c36922670c1d1458ab0e35b3de60c8c1bf2`
-- Created: `2017-07-11T22:25:53.609535212Z`
-- Virtual Size: ~ 665.31 Mb  
+- Image ID: `sha256:f60077a95ff6e5e03b2b194c33c50136ef1a7d7c7f0d20e9eb806d4442ed4a8f`
+- Created: `2017-07-21T17:59:18.579320845Z`
+- Virtual Size: ~ 667.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=8.1.4`
-  - `YARN_VERSION=0.24.6`
+  - `NODE_VERSION=8.2.1`
+  - `YARN_VERSION=0.27.5`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -292,18 +292,8 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-files=8+deb8u8
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_8+deb8u8.dsc' base-files_8+deb8u8.dsc 1026 SHA256:a781ab6ddab3541052974266558ae29ffa55d80da211281902ca73727cda2ece
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_8+deb8u8.tar.xz' base-files_8+deb8u8.tar.xz 53204 SHA256:8d94f53a4a3ee35a4a82e193410c76b8879c595c18291bb731ae37673cd089f4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/base-files/8+deb8u8/
-- https://sources.debian.net/src/base-files/8+deb8u8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `base-passwd=3.5.37`
 
@@ -749,18 +739,8 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`, `/usr/share/doc/debc
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.56
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.56.dsc' debconf_1.5.56.dsc 1977 SHA256:584e73f5a84791f4b25ac0bcb65dd5a63de10e5398d986cb005597566fd23ca4
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.56.tar.gz' debconf_1.5.56.tar.gz 1004238 SHA256:e8371becb1ad91b69b0f2b2e580d30a0a4c63b4c2803dea2fb8e3136b662bfa5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/debconf/1.5.56/
-- https://sources.debian.net/src/debconf/1.5.56/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `debian-archive-keyring=2017.5~deb8u1`
 
@@ -929,9 +909,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris expat=2.1.0-6+deb8u4
-'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-6+deb8u4.dsc' expat_2.1.0-6+deb8u4.dsc 2292 SHA256:7f7a5fed696e3b17f50e576dbae7013793e59517b04818e8b1688d9581792245
-'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
-'http://security.debian.org/pool/updates/main/e/expat/expat_2.1.0-6+deb8u4.debian.tar.xz' expat_2.1.0-6+deb8u4.debian.tar.xz 22672 SHA256:e832a0c7f1645bb915310628c38ecc6183f6854b0788332a7be470d06d4d149b
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u4.dsc' expat_2.1.0-6+deb8u4.dsc 2292 SHA256:7f7a5fed696e3b17f50e576dbae7013793e59517b04818e8b1688d9581792245
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.1.0-6+deb8u4.debian.tar.xz' expat_2.1.0-6+deb8u4.debian.tar.xz 22672 SHA256:e832a0c7f1645bb915310628c38ecc6183f6854b0788332a7be470d06d4d149b
 ```
 
 Likely also available for browsing at:
@@ -1332,9 +1312,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris git=1:2.1.4-2.1+deb8u3
-'http://security.debian.org/pool/updates/main/g/git/git_2.1.4-2.1+deb8u3.dsc' git_2.1.4-2.1+deb8u3.dsc 2803 SHA256:f1885539504c73a7fbb6dac56732c86506000c3d343e512a339869ea3b3e037e
-'http://security.debian.org/pool/updates/main/g/git/git_2.1.4.orig.tar.xz' git_2.1.4.orig.tar.xz 3544804 SHA256:a04968b9b10cbcb31a7054aa3a0d11ac47c83556ecd270ddef1987df5d3d053e
-'http://security.debian.org/pool/updates/main/g/git/git_2.1.4-2.1+deb8u3.debian.tar.xz' git_2.1.4-2.1+deb8u3.debian.tar.xz 474448 SHA256:49340ee7c27244b5737e96ea5530eedf8cf32298618ad859f345c82e1eba37c6
+'http://deb.debian.org/debian/pool/main/g/git/git_2.1.4-2.1+deb8u3.dsc' git_2.1.4-2.1+deb8u3.dsc 2803 SHA256:f1885539504c73a7fbb6dac56732c86506000c3d343e512a339869ea3b3e037e
+'http://deb.debian.org/debian/pool/main/g/git/git_2.1.4.orig.tar.xz' git_2.1.4.orig.tar.xz 3544804 SHA256:a04968b9b10cbcb31a7054aa3a0d11ac47c83556ecd270ddef1987df5d3d053e
+'http://deb.debian.org/debian/pool/main/g/git/git_2.1.4-2.1+deb8u3.debian.tar.xz' git_2.1.4-2.1+deb8u3.debian.tar.xz 474448 SHA256:49340ee7c27244b5737e96ea5530eedf8cf32298618ad859f345c82e1eba37c6
 ```
 
 Likely also available for browsing at:
@@ -1388,9 +1368,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glibc=2.19-18+deb8u10
-'http://security.debian.org/pool/updates/main/g/glibc/glibc_2.19-18+deb8u10.dsc' glibc_2.19-18+deb8u10.dsc 8256 SHA256:cfc796163f67f367f0f59f89e4cdcf59f3f77d14a4cfdad1c870c8c2feafde0b
-'http://security.debian.org/pool/updates/main/g/glibc/glibc_2.19.orig.tar.xz' glibc_2.19.orig.tar.xz 12387008 SHA256:746e52bb4fc9b2f30bcd33d415172a40ab56c5fff6c494052d31b0795593cc60
-'http://security.debian.org/pool/updates/main/g/glibc/glibc_2.19-18+deb8u10.debian.tar.xz' glibc_2.19-18+deb8u10.debian.tar.xz 1059340 SHA256:b5110a37901189fc092748592b117fb10684b9c92a876ea64d4030ffa00d01c1
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.19-18+deb8u10.dsc' glibc_2.19-18+deb8u10.dsc 8256 SHA256:cfc796163f67f367f0f59f89e4cdcf59f3f77d14a4cfdad1c870c8c2feafde0b
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.19.orig.tar.xz' glibc_2.19.orig.tar.xz 12387008 SHA256:746e52bb4fc9b2f30bcd33d415172a40ab56c5fff6c494052d31b0795593cc60
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.19-18+deb8u10.debian.tar.xz' glibc_2.19-18+deb8u10.debian.tar.xz 1059340 SHA256:b5110a37901189fc092748592b117fb10684b9c92a876ea64d4030ffa00d01c1
 ```
 
 Likely also available for browsing at:
@@ -1535,9 +1515,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris graphite2=1.3.10-1~deb8u1
-'http://security.debian.org/pool/updates/main/g/graphite2/graphite2_1.3.10-1~deb8u1.dsc' graphite2_1.3.10-1~deb8u1.dsc 2232 SHA256:546b58d828f20103703029a74b70a2b81b27ecbeb7130cee89acf02c16cda075
-'http://security.debian.org/pool/updates/main/g/graphite2/graphite2_1.3.10.orig.tar.gz' graphite2_1.3.10.orig.tar.gz 3889647 SHA256:90fde3b2f9ea95d68ffb19278d07d9b8a7efa5ba0e413bebcea802ce05cda1ae
-'http://security.debian.org/pool/updates/main/g/graphite2/graphite2_1.3.10-1~deb8u1.debian.tar.xz' graphite2_1.3.10-1~deb8u1.debian.tar.xz 10448 SHA256:8aedda28f1a77a16fe9a0cd0245332af588db636341eb97891dadddf43739d15
+'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.10-1~deb8u1.dsc' graphite2_1.3.10-1~deb8u1.dsc 2232 SHA256:546b58d828f20103703029a74b70a2b81b27ecbeb7130cee89acf02c16cda075
+'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.10.orig.tar.gz' graphite2_1.3.10.orig.tar.gz 3889647 SHA256:90fde3b2f9ea95d68ffb19278d07d9b8a7efa5ba0e413bebcea802ce05cda1ae
+'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.10-1~deb8u1.debian.tar.xz' graphite2_1.3.10-1~deb8u1.debian.tar.xz 10448 SHA256:8aedda28f1a77a16fe9a0cd0245332af588db636341eb97891dadddf43739d15
 ```
 
 Likely also available for browsing at:
@@ -1779,8 +1759,19 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris imagemagick=8:6.8.9.9-5+deb8u9
+'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u9.dsc' imagemagick_6.8.9.9-5+deb8u9.dsc 4224 SHA256:0260ef9260626c46580deccd9727624f60b5dc2c0a01b26f4bf83b7136f42210
+'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.8.9.9.orig.tar.xz' imagemagick_6.8.9.9.orig.tar.xz 7891624 SHA256:a4cccc70179ff2c67550e063cdcb2e62907338ef3e68b45bb1c41931e515b3eb
+'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.8.9.9-5+deb8u9.debian.tar.xz' imagemagick_6.8.9.9-5+deb8u9.debian.tar.xz 277108 SHA256:e82a9ea12f64ba1a7040db9342b5fe7f65459f1176147d6692a96ce3c5d414dd
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u9/
+- https://sources.debian.net/src/imagemagick/8:6.8.9.9-5+deb8u9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9.2.39.3a460-3`
 
@@ -2350,9 +2341,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libffi=3.1-2+deb8u1
-'http://security.debian.org/pool/updates/main/libf/libffi/libffi_3.1-2+deb8u1.dsc' libffi_3.1-2+deb8u1.dsc 1691 SHA256:db5a3fe5558d7858cb8d9cdc7e0cf5c1c51622c3b313c0a0ac64eb7ff5298a63
-'http://security.debian.org/pool/updates/main/libf/libffi/libffi_3.1.orig.tar.gz' libffi_3.1.orig.tar.gz 937214 SHA256:97feeeadca5e21870fa4433bc953d1b3af3f698d5df8a428f68b73cd60aef6eb
-'http://security.debian.org/pool/updates/main/libf/libffi/libffi_3.1-2+deb8u1.debian.tar.xz' libffi_3.1-2+deb8u1.debian.tar.xz 8948 SHA256:71ab991f52edbdf0e19408b6c947650d92c766842581eb172ab9a44bf0ce3ab8
+'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.1-2+deb8u1.dsc' libffi_3.1-2+deb8u1.dsc 1691 SHA256:db5a3fe5558d7858cb8d9cdc7e0cf5c1c51622c3b313c0a0ac64eb7ff5298a63
+'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.1.orig.tar.gz' libffi_3.1.orig.tar.gz 937214 SHA256:97feeeadca5e21870fa4433bc953d1b3af3f698d5df8a428f68b73cd60aef6eb
+'http://deb.debian.org/debian/pool/main/libf/libffi/libffi_3.1-2+deb8u1.debian.tar.xz' libffi_3.1-2+deb8u1.debian.tar.xz 8948 SHA256:71ab991f52edbdf0e19408b6c947650d92c766842581eb172ab9a44bf0ce3ab8
 ```
 
 Likely also available for browsing at:
@@ -2844,9 +2835,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libtasn1-6=4.2-3+deb8u3
-'http://security.debian.org/pool/updates/main/libt/libtasn1-6/libtasn1-6_4.2-3+deb8u3.dsc' libtasn1-6_4.2-3+deb8u3.dsc 2607 SHA256:dee600f7bdacd1fa75d40a13425e6c81d36b979fd23aab468000a1bfc18706ba
-'http://security.debian.org/pool/updates/main/libt/libtasn1-6/libtasn1-6_4.2.orig.tar.gz' libtasn1-6_4.2.orig.tar.gz 1866192 SHA256:693b41cb36c2ac02d5990180b0712a79a591168e93d85f7fcbb75a0a0be4cdbb
-'http://security.debian.org/pool/updates/main/libt/libtasn1-6/libtasn1-6_4.2-3+deb8u3.debian.tar.xz' libtasn1-6_4.2-3+deb8u3.debian.tar.xz 59144 SHA256:59ba69bafbe22542f58bc63eab30b70b5ce15673f8b7b8332c21b72e33572d28
+'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.2-3+deb8u3.dsc' libtasn1-6_4.2-3+deb8u3.dsc 2607 SHA256:dee600f7bdacd1fa75d40a13425e6c81d36b979fd23aab468000a1bfc18706ba
+'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.2.orig.tar.gz' libtasn1-6_4.2.orig.tar.gz 1866192 SHA256:693b41cb36c2ac02d5990180b0712a79a591168e93d85f7fcbb75a0a0be4cdbb
+'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.2-3+deb8u3.debian.tar.xz' libtasn1-6_4.2-3+deb8u3.debian.tar.xz 59144 SHA256:59ba69bafbe22542f58bc63eab30b70b5ce15673f8b7b8332c21b72e33572d28
 ```
 
 Likely also available for browsing at:
@@ -3381,9 +3372,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=3.16.43-2+deb8u2
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u2.dsc' linux_3.16.43-2+deb8u2.dsc 140609 SHA256:c866504a6adc567596c2ee9cc0488970d70e654dc92a0fc595269d3d8b49b3b8
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43.orig.tar.xz' linux_3.16.43.orig.tar.xz 81815520 SHA256:77fc86010339c04736799d4f2e19adc1623c440583e7eae09e4b76b63c4edd8f
-'http://security.debian.org/pool/updates/main/l/linux/linux_3.16.43-2+deb8u2.debian.tar.xz' linux_3.16.43-2+deb8u2.debian.tar.xz 3235980 SHA256:10ef263bed87534798fd90bdedc1e1717b569c9973b35cd4c7610a2f2a44a220
+'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.43-2+deb8u2.dsc' linux_3.16.43-2+deb8u2.dsc 140609 SHA256:c866504a6adc567596c2ee9cc0488970d70e654dc92a0fc595269d3d8b49b3b8
+'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.43.orig.tar.xz' linux_3.16.43.orig.tar.xz 81815520 SHA256:77fc86010339c04736799d4f2e19adc1623c440583e7eae09e4b76b63c4edd8f
+'http://deb.debian.org/debian/pool/main/l/linux/linux_3.16.43-2+deb8u2.debian.tar.xz' linux_3.16.43-2+deb8u2.debian.tar.xz 3235980 SHA256:10ef263bed87534798fd90bdedc1e1717b569c9973b35cd4c7610a2f2a44a220
 ```
 
 Likely also available for browsing at:
@@ -3801,9 +3792,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openldap=2.4.40+dfsg-1+deb8u3
-'http://security.debian.org/pool/updates/main/o/openldap/openldap_2.4.40+dfsg-1+deb8u3.dsc' openldap_2.4.40+dfsg-1+deb8u3.dsc 2990 SHA256:6e5877b1e071abdf613849689bff4bde15f8ac8dd4277a14cd30afb240052dd4
-'http://security.debian.org/pool/updates/main/o/openldap/openldap_2.4.40+dfsg.orig.tar.gz' openldap_2.4.40+dfsg.orig.tar.gz 4797667 SHA256:86c0326dc3dc5f1a9b3c25f7106b96f3eafcdf5da090b1fc586dec57d56e0e7f
-'http://security.debian.org/pool/updates/main/o/openldap/openldap_2.4.40+dfsg-1+deb8u3.diff.gz' openldap_2.4.40+dfsg-1+deb8u3.diff.gz 180281 SHA256:b6e7709cc75470bac1e6a797beed18c32ac97ac925932fad596a4921218b4d57
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.40+dfsg-1+deb8u3.dsc' openldap_2.4.40+dfsg-1+deb8u3.dsc 2990 SHA256:6e5877b1e071abdf613849689bff4bde15f8ac8dd4277a14cd30afb240052dd4
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.40+dfsg.orig.tar.gz' openldap_2.4.40+dfsg.orig.tar.gz 4797667 SHA256:86c0326dc3dc5f1a9b3c25f7106b96f3eafcdf5da090b1fc586dec57d56e0e7f
+'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.40+dfsg-1+deb8u3.diff.gz' openldap_2.4.40+dfsg-1+deb8u3.diff.gz 180281 SHA256:b6e7709cc75470bac1e6a797beed18c32ac97ac925932fad596a4921218b4d57
 ```
 
 Likely also available for browsing at:
@@ -4105,9 +4096,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris postgresql-9.4=9.4.12-0+deb8u1
-'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.12-0+deb8u1.dsc' postgresql-9.4_9.4.12-0+deb8u1.dsc 3546 SHA256:d854256e6aa72c9394da5c3fb48fe4fa44431ab470bdcb7e128861cc0c66a9dd
-'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.12.orig.tar.bz2' postgresql-9.4_9.4.12.orig.tar.bz2 17833119 SHA256:fca055481875d1c49e31c28443f56472a1474b3fbe25b7ae64440c6118f82e64
-'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.12-0+deb8u1.debian.tar.xz' postgresql-9.4_9.4.12-0+deb8u1.debian.tar.xz 24660 SHA256:9499fb30e776b6f4e8c6fdf154aea3468cfe1c5208010c6f67fcdfb3d89421dd
+'http://deb.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.12-0+deb8u1.dsc' postgresql-9.4_9.4.12-0+deb8u1.dsc 3546 SHA256:d854256e6aa72c9394da5c3fb48fe4fa44431ab470bdcb7e128861cc0c66a9dd
+'http://deb.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.12.orig.tar.bz2' postgresql-9.4_9.4.12.orig.tar.bz2 17833119 SHA256:fca055481875d1c49e31c28443f56472a1474b3fbe25b7ae64440c6118f82e64
+'http://deb.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.12-0+deb8u1.debian.tar.xz' postgresql-9.4_9.4.12-0+deb8u1.debian.tar.xz 24660 SHA256:9499fb30e776b6f4e8c6fdf154aea3468cfe1c5208010c6f67fcdfb3d89421dd
 ```
 
 Likely also available for browsing at:
@@ -4242,9 +4233,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris rtmpdump=2.4+20150115.gita107cef-1+deb8u1
-'http://security.debian.org/pool/updates/main/r/rtmpdump/rtmpdump_2.4+20150115.gita107cef-1+deb8u1.dsc' rtmpdump_2.4+20150115.gita107cef-1+deb8u1.dsc 2299 SHA256:8f22675e50ccf221489c79a51180561b4ae58a57a6e9d52e8b3a5e3d42860ca4
-'http://security.debian.org/pool/updates/main/r/rtmpdump/rtmpdump_2.4+20150115.gita107cef.orig.tar.gz' rtmpdump_2.4+20150115.gita107cef.orig.tar.gz 142030 SHA256:d47ef3a07815079bf73eb5d053001c4341407fcbebf39f34e6213c4b772cb29a
-'http://security.debian.org/pool/updates/main/r/rtmpdump/rtmpdump_2.4+20150115.gita107cef-1+deb8u1.debian.tar.xz' rtmpdump_2.4+20150115.gita107cef-1+deb8u1.debian.tar.xz 8160 SHA256:b20bf79b1d8d6536f16d94af6073f3105aef91c297a67b4a6c2304de42e8d96b
+'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4+20150115.gita107cef-1+deb8u1.dsc' rtmpdump_2.4+20150115.gita107cef-1+deb8u1.dsc 2299 SHA256:8f22675e50ccf221489c79a51180561b4ae58a57a6e9d52e8b3a5e3d42860ca4
+'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4+20150115.gita107cef.orig.tar.gz' rtmpdump_2.4+20150115.gita107cef.orig.tar.gz 142030 SHA256:d47ef3a07815079bf73eb5d053001c4341407fcbebf39f34e6213c4b772cb29a
+'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4+20150115.gita107cef-1+deb8u1.debian.tar.xz' rtmpdump_2.4+20150115.gita107cef-1+deb8u1.debian.tar.xz 8160 SHA256:b20bf79b1d8d6536f16d94af6073f3105aef91c297a67b4a6c2304de42e8d96b
 ```
 
 Likely also available for browsing at:
@@ -4338,9 +4329,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris shadow=1:4.2-3+deb8u4
-'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.2-3+deb8u4.dsc' shadow_4.2-3+deb8u4.dsc 2492 SHA256:5f5c2c412e567a6f7b49141f11927202b52a8941befec39f6841b3e20a0ccea4
-'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://security.debian.org/pool/updates/main/s/shadow/shadow_4.2-3+deb8u4.debian.tar.xz' shadow_4.2-3+deb8u4.debian.tar.xz 498804 SHA256:b694aea58176f3a2703cd6461401951e52d78ad80626c39a04c0b88368957106
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3+deb8u4.dsc' shadow_4.2-3+deb8u4.dsc 2492 SHA256:5f5c2c412e567a6f7b49141f11927202b52a8941befec39f6841b3e20a0ccea4
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.2-3+deb8u4.debian.tar.xz' shadow_4.2-3+deb8u4.debian.tar.xz 498804 SHA256:b694aea58176f3a2703cd6461401951e52d78ad80626c39a04c0b88368957106
 ```
 
 Likely also available for browsing at:
@@ -4601,9 +4592,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tiff=4.0.3-12.3+deb8u4
-'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u4.dsc' tiff_4.0.3-12.3+deb8u4.dsc 2240 SHA256:50e944559c1588ac8cdaca8034a3a74e9178d6f026edc5f48e9c4ab77540e82f
-'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
-'http://security.debian.org/pool/updates/main/t/tiff/tiff_4.0.3-12.3+deb8u4.debian.tar.xz' tiff_4.0.3-12.3+deb8u4.debian.tar.xz 59668 SHA256:3e637b2784715aa3a4b6e9111d9265682b73997eed0750460afe29662166595f
+'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.3-12.3+deb8u4.dsc' tiff_4.0.3-12.3+deb8u4.dsc 2240 SHA256:50e944559c1588ac8cdaca8034a3a74e9178d6f026edc5f48e9c4ab77540e82f
+'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.3.orig.tar.gz' tiff_4.0.3.orig.tar.gz 2051630 SHA256:ea1aebe282319537fb2d4d7805f478dd4e0e05c33d0928baba76a7c963684872
+'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.3-12.3+deb8u4.debian.tar.xz' tiff_4.0.3-12.3+deb8u4.debian.tar.xz 59668 SHA256:3e637b2784715aa3a4b6e9111d9265682b73997eed0750460afe29662166595f
 ```
 
 Likely also available for browsing at:
