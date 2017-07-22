@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e9187f81a5d645d89409e95c4b3c11152a6c9e66710a9d42517996854fa0aebf`
-- Created: `2017-07-10T18:24:23.795271702Z`
+- Image ID: `sha256:efed5f9d36ac4bb4bc079a57ccc9b13e23d7918c8c2c3079e443317d6aa6ba0c`
+- Created: `2017-07-20T21:29:42.268591883Z`
 - Virtual Size: ~ 1.45 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -357,11 +357,11 @@ $ apt-get source -qq --print-uris cdebconf=0.198ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.198ubuntu1.tar.xz' cdebconf_0.198ubuntu1.tar.xz 269256 SHA256:2f3490411599195bd31fb1a29770694888c8295f9bf5012bfb4fa22ebd3990f1
 ```
 
-### `dpkg` source package: `coreutils=8.25-2ubuntu2`
+### `dpkg` source package: `coreutils=8.25-2ubuntu3~16.04`
 
 Binary Packages:
 
-- `coreutils=8.25-2ubuntu2`
+- `coreutils=8.25-2ubuntu3~16.04`
 
 Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
@@ -370,10 +370,10 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris coreutils=8.25-2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.25-2ubuntu2.dsc' coreutils_8.25-2ubuntu2.dsc 2071 SHA256:8f2d6456701648072a4ed22142bcb8c0113d4488dd28acd1fc46e26952bbef91
+$ apt-get source -qq --print-uris coreutils=8.25-2ubuntu3~16.04
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.25-2ubuntu3~16.04.dsc' coreutils_8.25-2ubuntu3~16.04.dsc 2095 SHA256:90f76af8f3b01d49dfdb1b2e03e7cfebf855567d378a57092286a7df0aa199a4
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.25.orig.tar.xz' coreutils_8.25.orig.tar.xz 5725008 SHA256:31e67c057a5b32a582f26408c789e11c2e8d676593324849dcf5779296cdce87
-'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.25-2ubuntu2.debian.tar.xz' coreutils_8.25-2ubuntu2.debian.tar.xz 28040 SHA256:221f38aeb8e251c21edcdb93706deb61ac7619264c1e403609f67e13431e69bb
+'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.25-2ubuntu3~16.04.debian.tar.xz' coreutils_8.25-2ubuntu3~16.04.debian.tar.xz 28336 SHA256:f6fd913f2b0b08df9109308dfd1202b06060e130b8e6bf94daad32e86a3937cf
 ```
 
 ### `dpkg` source package: `cryptsetup=2:1.6.6-5ubuntu2`
@@ -674,11 +674,11 @@ $ apt-get source -qq --print-uris elfutils=0.165-3ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.165-3ubuntu1.debian.tar.xz' elfutils_0.165-3ubuntu1.debian.tar.xz 41368 SHA256:4c12d2e335b1b33cb66bc4a5a98e829632667361480ac7e067b80a40f31099a6
 ```
 
-### `dpkg` source package: `expat=2.1.0-7ubuntu0.16.04.2`
+### `dpkg` source package: `expat=2.1.0-7ubuntu0.16.04.3`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.1.0-7ubuntu0.16.04.2`
+- `libexpat1:amd64=2.1.0-7ubuntu0.16.04.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -687,10 +687,10 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.1.0-7ubuntu0.16.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.1.0-7ubuntu0.16.04.2.dsc' expat_2.1.0-7ubuntu0.16.04.2.dsc 2389 SHA256:4c46a4b57d378c19102d578f807503bfe622b3a802bbebd8f6b2393a0fd1ca91
+$ apt-get source -qq --print-uris expat=2.1.0-7ubuntu0.16.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.1.0-7ubuntu0.16.04.3.dsc' expat_2.1.0-7ubuntu0.16.04.3.dsc 2389 SHA256:30870214df0415be5550b825c612d8de76621bb24480e1b0b7efe4469d868de6
 'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.1.0-7ubuntu0.16.04.2.debian.tar.xz' expat_2.1.0-7ubuntu0.16.04.2.debian.tar.xz 21676 SHA256:9a54fa4576b84ecc37e915908c8005155464fb5609d73e6c39e08256c6f7936e
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.1.0-7ubuntu0.16.04.3.debian.tar.xz' expat_2.1.0-7ubuntu0.16.04.3.debian.tar.xz 22068 SHA256:691aec15db5b568d90db8f312f66af89e5f6f9848ef6061c65bbf06594f6fdb9
 ```
 
 ### `dpkg` source package: `ffmpeg=7:2.8.11-0ubuntu0.16.04.1`
@@ -1259,13 +1259,13 @@ $ apt-get source -qq --print-uris gsfonts=1:8.11+urwcyr1.0.7~pre44-4.2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gsfonts/gsfonts_8.11+urwcyr1.0.7~pre44-4.2ubuntu1.diff.gz' gsfonts_8.11+urwcyr1.0.7~pre44-4.2ubuntu1.diff.gz 6877 SHA256:205ad64e8ad77f14a1c3724c65db06dde6c78e8610b750839b6c71b0e8c64076
 ```
 
-### `dpkg` source package: `gtk+2.0=2.24.30-1ubuntu1`
+### `dpkg` source package: `gtk+2.0=2.24.30-1ubuntu1.16.04.1`
 
 Binary Packages:
 
-- `libgtk2.0-0:amd64=2.24.30-1ubuntu1`
-- `libgtk2.0-bin=2.24.30-1ubuntu1`
-- `libgtk2.0-common=2.24.30-1ubuntu1`
+- `libgtk2.0-0:amd64=2.24.30-1ubuntu1.16.04.1`
+- `libgtk2.0-bin=2.24.30-1ubuntu1.16.04.1`
+- `libgtk2.0-common=2.24.30-1ubuntu1.16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libgtk2.0-0/copyright`, `/usr/share/doc/libgtk2.0-bin/copyright`, `/usr/share/doc/libgtk2.0-common/copyright`)
 
@@ -1275,10 +1275,10 @@ Licenses: (parsed from: `/usr/share/doc/libgtk2.0-0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gtk+2.0=2.24.30-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.30-1ubuntu1.dsc' gtk+2.0_2.24.30-1ubuntu1.dsc 3967 SHA256:87c2fbf283b0c416ef27f4738c2a549b7676782d0f5b42b556cae1f2a6d844af
+$ apt-get source -qq --print-uris gtk+2.0=2.24.30-1ubuntu1.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.30-1ubuntu1.16.04.1.dsc' gtk+2.0_2.24.30-1ubuntu1.16.04.1.dsc 3999 SHA256:f17fcf1d6cdd310bf4339dfb39b04f771edca61fded409d1666d2ec0593ed687
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.30.orig.tar.xz' gtk+2.0_2.24.30.orig.tar.xz 12800276 SHA256:0d15cec3b6d55c60eac205b1f3ba81a1ed4eadd9d0f8e7c508bc7065d0c4ca50
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.30-1ubuntu1.debian.tar.xz' gtk+2.0_2.24.30-1ubuntu1.debian.tar.xz 105936 SHA256:c597a4d27cd65605f61c13c69ddfa36c7d8c5c4fbe071f3d6530776b3d43a096
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.30-1ubuntu1.16.04.1.debian.tar.xz' gtk+2.0_2.24.30-1ubuntu1.16.04.1.debian.tar.xz 106932 SHA256:53c956e48e8a08ebe4e52fb6d5f6e3befe1976f8970d63bb7d21bfc8d5922c8f
 ```
 
 ### `dpkg` source package: `gzip=1.6-4ubuntu1`
@@ -2147,19 +2147,25 @@ $ apt-get source -qq --print-uris libffi=3.2.1-4
 'http://archive.ubuntu.com/ubuntu/pool/main/libf/libffi/libffi_3.2.1-4.debian.tar.xz' libffi_3.2.1-4.debian.tar.xz 8932 SHA256:4d7d5f9172e8a8d3e412ed47e14755e27a0657054a7786b578eb6327b0d08b2d
 ```
 
-### `dpkg` source package: `libgcrypt20=1.6.5-2ubuntu0.2`
+### `dpkg` source package: `libgcrypt20=1.6.5-2ubuntu0.3`
 
 Binary Packages:
 
-- `libgcrypt20:amd64=1.6.5-2ubuntu0.2`
+- `libgcrypt20:amd64=1.6.5-2ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
 - `GPL-2`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libgcrypt20=1.6.5-2ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2ubuntu0.3.dsc' libgcrypt20_1.6.5-2ubuntu0.3.dsc 2639 SHA256:81456ffe6f40a971beedb3ad88fcd801e24c45ec7e357b731d14f419f3f6df15
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5.orig.tar.bz2' libgcrypt20_1.6.5.orig.tar.bz2 2549601 SHA256:f49ebc5842d455ae7019def33eb5a014a0f07a2a8353dc3aa50a76fd1dafa924
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2ubuntu0.3.debian.tar.xz' libgcrypt20_1.6.5-2ubuntu0.3.debian.tar.xz 36472 SHA256:3c29fc316e9067088cd6954a2b4c55e7955829362be9c10e09fa33b5e94f2f6c
+```
 
 ### `dpkg` source package: `libgpg-error=1.21-2ubuntu1`
 
@@ -4090,11 +4096,11 @@ $ apt-get source -qq --print-uris procps=2:3.3.10-4ubuntu2.3
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.10-4ubuntu2.3.debian.tar.xz' procps_3.3.10-4ubuntu2.3.debian.tar.xz 38516 SHA256:5434d3b406c8547db8f574f20ecc5c1be6efc55ce88bba954537b144e970ab56
 ```
 
-### `dpkg` source package: `pulseaudio=1:8.0-0ubuntu3.2`
+### `dpkg` source package: `pulseaudio=1:8.0-0ubuntu3.3`
 
 Binary Packages:
 
-- `libpulse0:amd64=1:8.0-0ubuntu3.2`
+- `libpulse0:amd64=1:8.0-0ubuntu3.3`
 
 Licenses: (parsed from: `/usr/share/doc/libpulse0/copyright`)
 
@@ -4105,8 +4111,14 @@ Licenses: (parsed from: `/usr/share/doc/libpulse0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris pulseaudio=1:8.0-0ubuntu3.3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0-0ubuntu3.3.dsc' pulseaudio_8.0-0ubuntu3.3.dsc 3611 SHA256:4ea46f2b2d171d868857606974e08c8ca4460790fba0e0961320e223e3aa66d5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0.orig.tar.xz' pulseaudio_8.0.orig.tar.xz 1517656 SHA256:690eefe28633466cfd1ab9d85ebfa9376f6b622deec6bfee5091ac9737cd1989
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pulseaudio/pulseaudio_8.0-0ubuntu3.3.debian.tar.xz' pulseaudio_8.0-0ubuntu3.3.debian.tar.xz 147992 SHA256:9fbd17f55e9ec30811bb0b8e771a94733a8f6f0bfce8e32c59237968cf599b6a
+```
 
 ### `dpkg` source package: `readline6=6.3-8ubuntu2`
 
@@ -4395,14 +4407,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=229-4ubuntu17
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu17.dsc' systemd_229-4ubuntu17.dsc 3836 SHA256:ff0440afea8ec1738326615aadf8c9854e4c4b22193eb2cf045273e3e36311d2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu17.debian.tar.xz' systemd_229-4ubuntu17.debian.tar.xz 240992 SHA256:26fd899e3a1486a876714a0f94cf05fa388ba9a08189d1f31fbfa599d02eafc4
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
@@ -4601,18 +4607,18 @@ $ apt-get source -qq --print-uris ustr=1.0.4-5
 'http://archive.ubuntu.com/ubuntu/pool/main/u/ustr/ustr_1.0.4-5.debian.tar.xz' ustr_1.0.4-5.debian.tar.xz 24948 SHA256:a21e78acf82dcccef2893932ef7b85852419bfd9b18382e63c34e7710c1d7762
 ```
 
-### `dpkg` source package: `util-linux=2.27.1-6ubuntu3.2`
+### `dpkg` source package: `util-linux=2.27.1-6ubuntu3.3`
 
 Binary Packages:
 
-- `bsdutils=1:2.27.1-6ubuntu3.2`
-- `libblkid1:amd64=2.27.1-6ubuntu3.2`
-- `libfdisk1:amd64=2.27.1-6ubuntu3.2`
-- `libmount1:amd64=2.27.1-6ubuntu3.2`
-- `libsmartcols1:amd64=2.27.1-6ubuntu3.2`
-- `libuuid1:amd64=2.27.1-6ubuntu3.2`
-- `mount=2.27.1-6ubuntu3.2`
-- `util-linux=2.27.1-6ubuntu3.2`
+- `bsdutils=1:2.27.1-6ubuntu3.3`
+- `libblkid1:amd64=2.27.1-6ubuntu3.3`
+- `libfdisk1:amd64=2.27.1-6ubuntu3.3`
+- `libmount1:amd64=2.27.1-6ubuntu3.3`
+- `libsmartcols1:amd64=2.27.1-6ubuntu3.3`
+- `libuuid1:amd64=2.27.1-6ubuntu3.3`
+- `mount=2.27.1-6ubuntu3.3`
+- `util-linux=2.27.1-6ubuntu3.3`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libfdisk1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -4633,8 +4639,14 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris util-linux=2.27.1-6ubuntu3.3
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.3.dsc' util-linux_2.27.1-6ubuntu3.3.dsc 3942 SHA256:31d135f83fbf7ea5eba164e32b43fca6489504e2c37363414c90e80ce3af375b
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1.orig.tar.xz' util-linux_2.27.1.orig.tar.xz 3964512 SHA256:0a818fcdede99aec43ffe6ca5b5388bff80d162f2f7bd4541dca94fecb87a290
+'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.27.1-6ubuntu3.3.debian.tar.xz' util-linux_2.27.1-6ubuntu3.3.debian.tar.xz 83780 SHA256:dd3239be2d471306a110fcf91984d41f5e49a0386a8aacd8647b4811e428c0d9
+```
 
 ### `dpkg` source package: `vdpau-video=0.7.4-5`
 
