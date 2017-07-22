@@ -1,9 +1,9 @@
-# `nats:1.0.0`
+# `nats:1.0.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:38392fde50d1238e3dd90ed011b295c385808ecfc6aff376763ed7a2056ba3a0`
-- Created: `2017-07-12T18:15:42.088620232Z`
+- Image ID: `sha256:d24d4c38858c9e6de4938b5a278842d737db0317b8dc3a671723a63fd370b017`
+- Created: `2017-07-19T20:39:12.977730029Z`
 - Virtual Size: ~ 5.70 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
