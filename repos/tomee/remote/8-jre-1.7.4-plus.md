@@ -1,7 +1,7 @@
 ## `tomee:8-jre-1.7.4-plus`
 
 ```console
-$ docker pull tomee@sha256:a575a6eb9fd037bf4fe4ab41fef8ed00a85441f36c16f59884994d4524a3eed1
+$ docker pull tomee@sha256:6acb073dea78bd45bf43d65e0308330ecacb3df992acb78f638619ecca041912
 ```
 
 -	Platforms:
@@ -9,11 +9,11 @@ $ docker pull tomee@sha256:a575a6eb9fd037bf4fe4ab41fef8ed00a85441f36c16f59884994
 
 ### `tomee:8-jre-1.7.4-plus` - linux; amd64
 
--	Docker Version: 17.03.1-ce
+-	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.9 MB (159904188 bytes)**  
+-	Total Size: **159.9 MB (159904422 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25a741d46aab5e93db5a1032ba1a9c197d1af29be6f1e88aaf07d14e3983bf8b`
+-	Image ID: `sha256:84eaebbb2280fc5c36e825cbded72b5d1512538f8244305695002cd1577d6393`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -41,25 +41,25 @@ ENV JAVA_VERSION=8u131
 ENV JAVA_DEBIAN_VERSION=8u131-b11-2
 # Thu, 06 Jul 2017 23:51:57 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Thu, 06 Jul 2017 23:52:10 GMT
-RUN set -ex; 		apt-get update; 	apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Thu, 06 Jul 2017 23:52:12 GMT
+# Fri, 21 Jul 2017 22:12:48 GMT
+RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
+# Fri, 21 Jul 2017 22:12:51 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Sat, 08 Jul 2017 07:14:05 GMT
+# Sat, 22 Jul 2017 03:59:43 GMT
 ENV PATH=/usr/local/tomee/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 08 Jul 2017 07:14:06 GMT
+# Sat, 22 Jul 2017 03:59:44 GMT
 RUN mkdir -p /usr/local/tomee
-# Sat, 08 Jul 2017 07:14:06 GMT
+# Sat, 22 Jul 2017 03:59:44 GMT
 WORKDIR /usr/local/tomee
-# Sat, 08 Jul 2017 07:14:07 GMT
+# Sat, 22 Jul 2017 03:59:45 GMT
 ENV GPG_KEYS=BDD0BBEB753192957EFC5F896A62FC8EF17D8FEF 	223D3A74B068ECA354DC385CE126833F9CF64915 	7A2744A8A9AAF063C23EB7868EBE7DBE8D050EEF 	82D8419BA697F0E7FB85916EE91287822FDB81B1 	9056B710F1E332780DE7AF34CBAEBE39A46C4CA1 	A57DAF81C1B69921F4BA8723A8DE0A4DB863A7C1 	B7574789F5018690043E6DD9C212662E12F3E1DD 	B8B301E6105DF628076BD92C5483E55897ABD9B9 	DBCCD103B8B24F86FFAAB025C8BB472CD297D428 	F067B8140F5DD80E1D3B5D92318242FE9A0B1183 	FAA603D58B1BA4EDF65896D0ED340E0E6D545F97
-# Sat, 08 Jul 2017 07:14:14 GMT
+# Sat, 22 Jul 2017 03:59:50 GMT
 RUN set -xe 	&& for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
-# Sat, 08 Jul 2017 07:14:51 GMT
+# Sat, 22 Jul 2017 04:00:17 GMT
 RUN set -x 	&& curl -fSL https://dist.apache.org/repos/dist/release/tomee/tomee-1.7.4/apache-tomee-1.7.4-plus.tar.gz.asc -o tomee.tar.gz.asc 	&& curl -fSL http://apache.rediris.es/tomee/tomee-1.7.4/apache-tomee-1.7.4-plus.tar.gz -o tomee.tar.gz 	&& gpg --batch --verify tomee.tar.gz.asc tomee.tar.gz 	&& tar -zxf tomee.tar.gz 	&& mv apache-tomee-plus-1.7.4/* /usr/local/tomee 	&& rm -Rf apache-tomee-plus-1.7.4 	&& rm bin/*.bat 	&& rm tomee.tar.gz*
-# Sat, 08 Jul 2017 07:14:51 GMT
+# Sat, 22 Jul 2017 04:00:17 GMT
 EXPOSE 8080/tcp
-# Sat, 08 Jul 2017 07:14:51 GMT
+# Sat, 22 Jul 2017 04:00:17 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -88,23 +88,23 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Fri, 07 Jul 2017 00:07:01 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:119baa503f8c24ae4c15d151ce32aba28e7d3bfcb355135fb3e719e0f5924932`  
-		Last Modified: Fri, 07 Jul 2017 00:07:14 GMT  
-		Size: 54.4 MB (54420897 bytes)  
+	-	`sha256:8d1eaefc75d038af9cebfa8582c7970345d99587b37efb1f069c64ead6fc0050`  
+		Last Modified: Fri, 21 Jul 2017 22:33:04 GMT  
+		Size: 54.4 MB (54421094 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a2fd7e5b1f07f548997ae056745e69a3b0058bb38a7b59c5e6fb7ee0edf5d5b2`  
-		Last Modified: Fri, 07 Jul 2017 00:07:01 GMT  
-		Size: 272.0 KB (272015 bytes)  
+	-	`sha256:f468fa92b91d1f13e589c5869d1561b8da47f2155b8607b94940092bac75fe86`  
+		Last Modified: Fri, 21 Jul 2017 22:32:50 GMT  
+		Size: 272.1 KB (272055 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e39bb484b36423f1bc504c58c0739e2357f7d189aa7da6ab5727fb41b5767ac`  
-		Last Modified: Tue, 11 Jul 2017 20:31:37 GMT  
+	-	`sha256:a2a63d9d1a9abbcd1638ef8fe65dc358ea1e82f2f0b0b2d5bf7daaa07cea40fe`  
+		Last Modified: Sat, 22 Jul 2017 04:04:17 GMT  
 		Size: 144.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0da50fbd4b2b4c806a4263bf5965d826bfef28351a1ffdef5ac78a7913cbe705`  
-		Last Modified: Tue, 11 Jul 2017 20:31:37 GMT  
-		Size: 30.9 KB (30875 bytes)  
+	-	`sha256:134e34598e9e730effc6fe9939027864b55ee567b13780e5d39ad03dc9025e69`  
+		Last Modified: Sat, 22 Jul 2017 04:04:17 GMT  
+		Size: 30.9 KB (30874 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60fc44f7ff5215cb04874fc2ffa70062f851a766242a4cd6e0c834ab0b27e95e`  
-		Last Modified: Tue, 11 Jul 2017 20:32:36 GMT  
-		Size: 43.9 MB (43890776 bytes)  
+	-	`sha256:cf2088821096071ac88c8e0d0435c400a25afd77dc65d43f37a6bf3ecbb18075`  
+		Last Modified: Sat, 22 Jul 2017 04:04:48 GMT  
+		Size: 43.9 MB (43890774 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
