@@ -1,10 +1,10 @@
-# `fedora:latest`
+# `fedora:26-modular`
 
 ## Docker Metadata
 
-- Image ID: `sha256:49236bc2f0da4105c84cfb7238b48879efb489a62fe8536934434cf2072a2319`
-- Created: `2017-07-20T17:07:12.609514074Z`
-- Virtual Size: ~ 230.60 Mb  
+- Image ID: `sha256:2be5ebb702169c401982aea96d44b085035e1c70441156209872e036fa225fbf`
+- Created: `2017-07-20T20:32:53.825466321Z`
+- Virtual Size: ~ 85.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Environment:
