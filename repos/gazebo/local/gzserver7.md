@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8f9a28064cbf18cf99f490d04eccd7c3635671f0405221c17c7490d544d48f4c`
-- Created: `2017-07-10T23:16:58.158458746Z`
+- Image ID: `sha256:2ac28f3876c6d68a8789b4ce10de07a1176d9ac9c17edf3209ec875c9dad1ed8`
+- Created: `2017-07-20T19:27:15.033142508Z`
 - Virtual Size: ~ 562.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -771,18 +771,24 @@ $ apt-get source -qq --print-uris elfutils=0.158-0ubuntu5.2
 'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.158-0ubuntu5.2.debian.tar.gz' elfutils_0.158-0ubuntu5.2.debian.tar.gz 58140 SHA256:822d005bb43b6a65f7c11a830283331a0e3e524deeee9245d0bc902226c638bd
 ```
 
-### `dpkg` source package: `expat=2.1.0-4ubuntu1.3`
+### `dpkg` source package: `expat=2.1.0-4ubuntu1.4`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.1.0-4ubuntu1.3`
+- `libexpat1:amd64=2.1.0-4ubuntu1.4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris expat=2.1.0-4ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.1.0-4ubuntu1.4.dsc' expat_2.1.0-4ubuntu1.4.dsc 2279 SHA256:e59e8277f61a09810291775161ff89203e36024a901c260b2927d78710f0700a
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.1.0.orig.tar.gz' expat_2.1.0.orig.tar.gz 562616 SHA256:823705472f816df21c8f6aa026dd162b280806838bb55b3432b0fb1fcca7eb86
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.1.0-4ubuntu1.4.debian.tar.gz' expat_2.1.0-4ubuntu1.4.debian.tar.gz 25403 SHA256:5a8e814ac423421dac040a98596c552038c959bbebfef70fb69ad94fdfd62727
+```
 
 ### `dpkg` source package: `file=1:5.14-2ubuntu3.3`
 
@@ -1305,26 +1311,32 @@ $ apt-get source -qq --print-uris hdf5=1.8.11-5ubuntu7
 'http://archive.ubuntu.com/ubuntu/pool/universe/h/hdf5/hdf5_1.8.11-5ubuntu7.debian.tar.gz' hdf5_1.8.11-5ubuntu7.debian.tar.gz 108488 SHA256:a4c39c8c15a9edd149cce1cd8d654ac5e6f2d0f85b3f214f72c1c0df55590a7c
 ```
 
-### `dpkg` source package: `heimdal=1.6~git20131207+dfsg-1ubuntu1.1`
+### `dpkg` source package: `heimdal=1.6~git20131207+dfsg-1ubuntu1.2`
 
 Binary Packages:
 
-- `libasn1-8-heimdal:amd64=1.6~git20131207+dfsg-1ubuntu1.1`
-- `libgssapi3-heimdal:amd64=1.6~git20131207+dfsg-1ubuntu1.1`
-- `libhcrypto4-heimdal:amd64=1.6~git20131207+dfsg-1ubuntu1.1`
-- `libheimbase1-heimdal:amd64=1.6~git20131207+dfsg-1ubuntu1.1`
-- `libheimntlm0-heimdal:amd64=1.6~git20131207+dfsg-1ubuntu1.1`
-- `libhx509-5-heimdal:amd64=1.6~git20131207+dfsg-1ubuntu1.1`
-- `libkrb5-26-heimdal:amd64=1.6~git20131207+dfsg-1ubuntu1.1`
-- `libroken18-heimdal:amd64=1.6~git20131207+dfsg-1ubuntu1.1`
-- `libwind0-heimdal:amd64=1.6~git20131207+dfsg-1ubuntu1.1`
+- `libasn1-8-heimdal:amd64=1.6~git20131207+dfsg-1ubuntu1.2`
+- `libgssapi3-heimdal:amd64=1.6~git20131207+dfsg-1ubuntu1.2`
+- `libhcrypto4-heimdal:amd64=1.6~git20131207+dfsg-1ubuntu1.2`
+- `libheimbase1-heimdal:amd64=1.6~git20131207+dfsg-1ubuntu1.2`
+- `libheimntlm0-heimdal:amd64=1.6~git20131207+dfsg-1ubuntu1.2`
+- `libhx509-5-heimdal:amd64=1.6~git20131207+dfsg-1ubuntu1.2`
+- `libkrb5-26-heimdal:amd64=1.6~git20131207+dfsg-1ubuntu1.2`
+- `libroken18-heimdal:amd64=1.6~git20131207+dfsg-1ubuntu1.2`
+- `libwind0-heimdal:amd64=1.6~git20131207+dfsg-1ubuntu1.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris heimdal=1.6~git20131207+dfsg-1ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_1.6~git20131207+dfsg-1ubuntu1.2.dsc' heimdal_1.6~git20131207+dfsg-1ubuntu1.2.dsc 3639 SHA256:4e5dd0d5a25ea7a1c6f99a78a9649a368db30aaf5b7f004d5e944a9e9d493956
+'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_1.6~git20131207+dfsg.orig.tar.gz' heimdal_1.6~git20131207+dfsg.orig.tar.gz 9207949 SHA256:339bc6c204b5fc3a3f3bf3a1595321b41c1d5c72596c7d1f73a92133fdb30ddb
+'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_1.6~git20131207+dfsg-1ubuntu1.2.debian.tar.gz' heimdal_1.6~git20131207+dfsg-1ubuntu1.2.debian.tar.gz 79546 SHA256:b125636ba2648346bc7c0f0e7792636cb6e8426300ad6c33d8f38622c9325881
+```
 
 ### `dpkg` source package: `hostname=3.15ubuntu1`
 
@@ -1626,19 +1638,25 @@ $ apt-get source -qq --print-uris keyutils=1.5.6-1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.5.6-1.debian.tar.xz' keyutils_1.5.6-1.debian.tar.xz 6164 SHA256:e10975bad51268001644235a9e330eac6fdc4add20ef84b4546b8d91474458a0
 ```
 
-### `dpkg` source package: `klibc=2.0.3-0ubuntu1.14.04.2`
+### `dpkg` source package: `klibc=2.0.3-0ubuntu1.14.04.3`
 
 Binary Packages:
 
-- `klibc-utils=2.0.3-0ubuntu1.14.04.2`
-- `libklibc=2.0.3-0ubuntu1.14.04.2`
+- `klibc-utils=2.0.3-0ubuntu1.14.04.3`
+- `libklibc=2.0.3-0ubuntu1.14.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/klibc-utils/copyright`, `/usr/share/doc/libklibc/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris klibc=2.0.3-0ubuntu1.14.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/k/klibc/klibc_2.0.3-0ubuntu1.14.04.3.dsc' klibc_2.0.3-0ubuntu1.14.04.3.dsc 2389 SHA256:1a6cc6db1a7e3835a0e9e569fee152647f8bcf18bee993110ad3d704b60fabd2
+'http://archive.ubuntu.com/ubuntu/pool/main/k/klibc/klibc_2.0.3.orig.tar.bz2' klibc_2.0.3.orig.tar.bz2 517788 SHA256:1f9a49c62faf3e166a8deee6c36ad0f4527bb4aa2050123853a4957802235dca
+'http://archive.ubuntu.com/ubuntu/pool/main/k/klibc/klibc_2.0.3-0ubuntu1.14.04.3.debian.tar.xz' klibc_2.0.3-0ubuntu1.14.04.3.debian.tar.xz 22852 SHA256:bb16e4256d6c665fe94652d017561b637bb8e916a42f1e3277517a4d22db9f7d
+```
 
 ### `dpkg` source package: `kmod=15-0ubuntu6`
 
@@ -1988,19 +2006,25 @@ $ apt-get source -qq --print-uris libffi=3.1~rc1+r3.0.13-12ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libf/libffi/libffi_3.1~rc1+r3.0.13-12ubuntu0.1.debian.tar.xz' libffi_3.1~rc1+r3.0.13-12ubuntu0.1.debian.tar.xz 48188 SHA256:260827506b832f348584a35e38c2ccee9deb5efcf859aebe8d7d25733256f108
 ```
 
-### `dpkg` source package: `libgcrypt11=1.5.3-2ubuntu4.4`
+### `dpkg` source package: `libgcrypt11=1.5.3-2ubuntu4.5`
 
 Binary Packages:
 
-- `libgcrypt11:amd64=1.5.3-2ubuntu4.4`
+- `libgcrypt11:amd64=1.5.3-2ubuntu4.5`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt11/copyright`)
 
 - `GPL-2`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libgcrypt11=1.5.3-2ubuntu4.5
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.3-2ubuntu4.5.dsc' libgcrypt11_1.5.3-2ubuntu4.5.dsc 2580 SHA256:4168dae7ba3ad78d8bebe45a28935de371bb281b89795a5ae2f76cfa3d3a5411
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.3.orig.tar.bz2' libgcrypt11_1.5.3.orig.tar.bz2 1508530 SHA256:bcf5334e7da352c45de6aec5d2084ce9a1d30029ff4a4a5da13f1848874759d1
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.3-2ubuntu4.5.debian.tar.gz' libgcrypt11_1.5.3-2ubuntu4.5.debian.tar.gz 37205 SHA256:405b37e0ed162d1da5773ec55fa87df1977bc6b1e0b68913b533ac389b9882e0
+```
 
 ### `dpkg` source package: `libglu=9.0.0-2`
 
@@ -3328,12 +3352,12 @@ $ apt-get source -qq --print-uris mpdecimal=2.4.0-6
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mpdecimal/mpdecimal_2.4.0-6.debian.tar.gz' mpdecimal_2.4.0-6.debian.tar.gz 6848 SHA256:26b2b38808550fdd75d59eee5815d49ff0f519f6d68a69072eca4fceda06f876
 ```
 
-### `dpkg` source package: `mysql-5.5=5.5.55-0ubuntu0.14.04.1`
+### `dpkg` source package: `mysql-5.5=5.5.57-0ubuntu0.14.04.1`
 
 Binary Packages:
 
-- `libmysqlclient18:amd64=5.5.55-0ubuntu0.14.04.1`
-- `mysql-common=5.5.55-0ubuntu0.14.04.1`
+- `libmysqlclient18:amd64=5.5.57-0ubuntu0.14.04.1`
+- `mysql-common=5.5.57-0ubuntu0.14.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -3354,10 +3378,10 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mysql-5.5=5.5.55-0ubuntu0.14.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.55-0ubuntu0.14.04.1.dsc' mysql-5.5_5.5.55-0ubuntu0.14.04.1.dsc 3173 SHA256:5ad2fe69a47693aa7e6ff8632e2be038814dc511f4e5b3ef15fa23403287bccb
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.55.orig.tar.gz' mysql-5.5_5.5.55.orig.tar.gz 21040959 SHA256:9af0a504e2603b0bc0c7c3a4a747df064fb51670a0022b1ad6114f9058b64171
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.55-0ubuntu0.14.04.1.debian.tar.gz' mysql-5.5_5.5.55-0ubuntu0.14.04.1.debian.tar.gz 314695 SHA256:5fc7b59f1511c820003a010fe0c073d24feb9e53169bfa6d3c5025f2213895cf
+$ apt-get source -qq --print-uris mysql-5.5=5.5.57-0ubuntu0.14.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.57-0ubuntu0.14.04.1.dsc' mysql-5.5_5.5.57-0ubuntu0.14.04.1.dsc 3173 SHA256:c17ae7bbd9218d7780ca7fd6788bbd8a9ba1d39f762e2d9dcc7027c49374e7b0
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.57.orig.tar.gz' mysql-5.5_5.5.57.orig.tar.gz 21044615 SHA256:c1c2bd321e524f92e43fe73d0d6745badd538c984c7561b273ae10e9aef57384
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-5.5/mysql-5.5_5.5.57-0ubuntu0.14.04.1.debian.tar.gz' mysql-5.5_5.5.57-0ubuntu0.14.04.1.debian.tar.gz 314660 SHA256:78b88336e4c1459525d9db1ebb8811d8717c503985763ea92e79fdd20fe70405
 ```
 
 ### `dpkg` source package: `nas=1.9.4-1`
@@ -3498,18 +3522,24 @@ $ apt-get source -qq --print-uris newt=0.52.15-2ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/n/newt/newt_0.52.15-2ubuntu5.debian.tar.gz' newt_0.52.15-2ubuntu5.debian.tar.gz 51483 SHA256:3fcff25cd0f6f6e657ce27ec3cc3c10f92be86acb387d32b6fd91822db514a4b
 ```
 
-### `dpkg` source package: `ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.10`
+### `dpkg` source package: `ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.11`
 
 Binary Packages:
 
-- `ntpdate=1:4.2.6.p5+dfsg-3ubuntu2.14.04.10`
+- `ntpdate=1:4.2.6.p5+dfsg-3ubuntu2.14.04.11`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.11
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.11.dsc' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.11.dsc 2371 SHA256:689f507a490d8e6294378675650592de5d55e5ff39de4a7e4f5ae3fb912f7a8b
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg.orig.tar.gz' ntp_4.2.6.p5+dfsg.orig.tar.gz 4111997 SHA256:17f0b63e7e27de5cc999a4afdb96b2dbdf76c75181fca50e2395e49e5773dfc9
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.11.debian.tar.gz' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.11.debian.tar.gz 159573 SHA256:74c21ac32ada2082382e916d2497eabe5039965832d64cc210452755835044d7
+```
 
 ### `dpkg` source package: `ogdi-dfsg=3.2.0~beta2-7ubuntu1`
 
@@ -4174,11 +4204,11 @@ $ apt-get source -qq --print-uris schroedinger=1.0.11-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/schroedinger/schroedinger_1.0.11-2ubuntu1.debian.tar.gz' schroedinger_1.0.11-2ubuntu1.debian.tar.gz 17484 SHA256:073bd1cfef248ad9057d1feebacd8f5e084a0b314cf412b735d3a1260129024c
 ```
 
-### `dpkg` source package: `sdformat4=4.3.1-1~trusty`
+### `dpkg` source package: `sdformat4=4.3.2-1~trusty`
 
 Binary Packages:
 
-- `libsdformat4:amd64=4.3.1-1~trusty`
+- `libsdformat4:amd64=4.3.2-1~trusty`
 
 Licenses: (parsed from: `/usr/share/doc/libsdformat4/copyright`)
 
