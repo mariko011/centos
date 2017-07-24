@@ -1,4 +1,4 @@
-## `debian:oldstable`
+## `debian:oldstable-20170723`
 
 ```console
 $ docker pull debian@sha256:348716534f2227a74a08619b67aafac08e2c100244f048762c1e1ea6a6712393
@@ -7,7 +7,7 @@ $ docker pull debian@sha256:348716534f2227a74a08619b67aafac08e2c100244f048762c1e
 -	Platforms:
 	-	linux; amd64
 
-### `debian:oldstable` - linux; amd64
+### `debian:oldstable-20170723` - linux; amd64
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
