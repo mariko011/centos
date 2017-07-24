@@ -458,7 +458,7 @@ CMD ["-e" ""]
 ## `logstash:latest`
 
 ```console
-$ docker pull logstash@sha256:d8d52a555d3021a0ffc9b4ba879fcb64e2893cf5acaccf7b723685f92802ec22
+$ docker pull logstash@sha256:74518e3a998d1456640593354a8e0816d5966c598b84d9595c89ae098c7b521c
 ```
 
 -	Platforms:
@@ -468,136 +468,136 @@ $ docker pull logstash@sha256:d8d52a555d3021a0ffc9b4ba879fcb64e2893cf5acaccf7b72
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **214.4 MB (214381008 bytes)**  
+-	Total Size: **214.4 MB (214382620 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3a67cb104a7cac2070f807a5dcb4dff19c11e69e71f2c8c62971eebefc90d308`
+-	Image ID: `sha256:e9421685ae6dee71a7463e4c6465a23a6adb54a0d950d61d2baa24cb5b657c5a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["-e",""]`
 
 ```dockerfile
-# Tue, 20 Jun 2017 20:24:09 GMT
-ADD file:93a0dbb6973bc13e5478292bfe283ff91745ca6e23b6fd3363f0661c45deb1ec in / 
-# Tue, 20 Jun 2017 20:24:10 GMT
+# Mon, 24 Jul 2017 16:52:54 GMT
+ADD file:ebba725fb97cea45d0b1b35ccc8144e766fcfc9a78530465c23b0c4674b14042 in / 
+# Mon, 24 Jul 2017 16:52:55 GMT
 CMD ["bash"]
-# Tue, 20 Jun 2017 21:21:56 GMT
+# Mon, 24 Jul 2017 17:28:39 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 22:30:39 GMT
+# Mon, 24 Jul 2017 17:28:45 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 06 Jul 2017 23:51:51 GMT
+# Mon, 24 Jul 2017 18:11:47 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:51:52 GMT
+# Mon, 24 Jul 2017 18:11:47 GMT
 ENV LANG=C.UTF-8
-# Thu, 06 Jul 2017 23:51:53 GMT
+# Mon, 24 Jul 2017 18:11:48 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 06 Jul 2017 23:51:54 GMT
+# Mon, 24 Jul 2017 18:11:49 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Thu, 06 Jul 2017 23:51:55 GMT
+# Mon, 24 Jul 2017 18:11:49 GMT
 ENV JAVA_HOME=/docker-java-home/jre
-# Thu, 06 Jul 2017 23:51:56 GMT
+# Mon, 24 Jul 2017 18:11:49 GMT
 ENV JAVA_VERSION=8u131
-# Thu, 06 Jul 2017 23:51:57 GMT
+# Mon, 24 Jul 2017 18:11:50 GMT
 ENV JAVA_DEBIAN_VERSION=8u131-b11-2
-# Thu, 06 Jul 2017 23:51:57 GMT
+# Mon, 24 Jul 2017 18:11:50 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 21 Jul 2017 22:12:48 GMT
+# Mon, 24 Jul 2017 18:12:11 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 21 Jul 2017 22:12:51 GMT
+# Mon, 24 Jul 2017 18:12:14 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Sat, 22 Jul 2017 01:35:36 GMT
+# Mon, 24 Jul 2017 21:31:19 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		apt-transport-https 		libzmq5 	&& rm -rf /var/lib/apt/lists/*
-# Sat, 22 Jul 2017 01:35:37 GMT
+# Mon, 24 Jul 2017 21:31:19 GMT
 RUN mkdir -p /usr/local/lib 	&& ln -s /usr/lib/*/libzmq.so.3 /usr/local/lib/libzmq.so
-# Sat, 22 Jul 2017 01:35:37 GMT
+# Mon, 24 Jul 2017 21:31:19 GMT
 ENV GOSU_VERSION=1.10
-# Sat, 22 Jul 2017 01:35:43 GMT
+# Mon, 24 Jul 2017 21:31:25 GMT
 RUN set -x 	&& wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)" 	&& wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 	&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu 	&& rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc 	&& chmod +x /usr/local/bin/gosu 	&& gosu nobody true
-# Sat, 22 Jul 2017 01:35:46 GMT
+# Mon, 24 Jul 2017 21:31:28 GMT
 RUN set -ex; 	key='46095ACC8548582C1A2699A9D27D666CD88E42B4'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	gpg --export "$key" > /etc/apt/trusted.gpg.d/elastic.gpg; 	rm -rf "$GNUPGHOME"; 	apt-key list
-# Sat, 22 Jul 2017 01:35:47 GMT
+# Mon, 24 Jul 2017 21:31:29 GMT
 RUN echo 'deb https://artifacts.elastic.co/packages/5.x/apt stable main' > /etc/apt/sources.list.d/logstash.list
-# Sat, 22 Jul 2017 01:35:47 GMT
+# Mon, 24 Jul 2017 21:31:29 GMT
 ENV LOGSTASH_VERSION=5.5.0
-# Sat, 22 Jul 2017 01:35:47 GMT
+# Mon, 24 Jul 2017 21:31:29 GMT
 ENV LOGSTASH_DEB_VERSION=1:5.5.0-1
-# Sat, 22 Jul 2017 01:36:01 GMT
+# Mon, 24 Jul 2017 21:31:44 GMT
 RUN set -ex; 	case "$LOGSTASH_VERSION" in 		2.*) apt-get update -o 'APT::Hashes::SHA1::Weak=yes' ;; 		*) apt-get update ;; 	esac; 	apt-get install -y --no-install-recommends "logstash=$LOGSTASH_DEB_VERSION"; 	rm -rf /var/lib/apt/lists/*
-# Sat, 22 Jul 2017 01:36:01 GMT
+# Mon, 24 Jul 2017 21:31:45 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 22 Jul 2017 01:36:01 GMT
+# Mon, 24 Jul 2017 21:31:45 GMT
 ENV LS_SETTINGS_DIR=/etc/logstash
-# Sat, 22 Jul 2017 01:36:02 GMT
+# Mon, 24 Jul 2017 21:31:45 GMT
 RUN set -ex; 	if [ -f "$LS_SETTINGS_DIR/logstash.yml" ]; then 		sed -ri 's!^path\.config:!#&!g' "$LS_SETTINGS_DIR/logstash.yml"; 	fi; 	if [ -f "$LS_SETTINGS_DIR/log4j2.properties" ]; then 		cp "$LS_SETTINGS_DIR/log4j2.properties" "$LS_SETTINGS_DIR/log4j2.properties.dist"; 		truncate --size=0 "$LS_SETTINGS_DIR/log4j2.properties"; 	fi
-# Sat, 22 Jul 2017 01:36:02 GMT
+# Mon, 24 Jul 2017 21:31:46 GMT
 COPY file:b540f903cdce9f3c92d22e6ec1673d5185797f0f604d4ddc9fdeb6fab1050a8f in / 
-# Sat, 22 Jul 2017 01:36:03 GMT
+# Mon, 24 Jul 2017 21:31:46 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sat, 22 Jul 2017 01:36:03 GMT
+# Mon, 24 Jul 2017 21:31:46 GMT
 CMD ["-e" ""]
 ```
 
 -	Layers:
-	-	`sha256:c75480ad9aafadef6c7faf829ede40cf2fa990c9308d6cd354d53041b01a7cda`  
-		Last Modified: Tue, 20 Jun 2017 20:51:29 GMT  
-		Size: 45.1 MB (45139825 bytes)  
+	-	`sha256:06b22ddb19134ec8c42aaabd3e2e9f5b378e4e53da4a8960eaaaa86351190af3`  
+		Last Modified: Mon, 24 Jul 2017 16:59:30 GMT  
+		Size: 45.1 MB (45142935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18d67befbc4e6fc58906f99031e8183060a10ee8b4e30cd2a83a942f68760818`  
-		Last Modified: Wed, 21 Jun 2017 00:50:08 GMT  
-		Size: 11.1 MB (11108544 bytes)  
+	-	`sha256:336c28b408ed2225485696d1fada041792d7f1b47a4422175e203be4be2f83e6`  
+		Last Modified: Mon, 24 Jul 2017 17:36:29 GMT  
+		Size: 11.1 MB (11107641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f5d2d0853c76cad76d65745ca5b10e17ffe72647e78616bb28b2fd70e5173ab`  
-		Last Modified: Thu, 06 Jul 2017 23:56:33 GMT  
-		Size: 4.4 MB (4411344 bytes)  
+	-	`sha256:1f3e6b8d80c36cab97c677f32305f00ab2aedb16a26cfb37d0a3a48c50316dbb`  
+		Last Modified: Mon, 24 Jul 2017 17:36:27 GMT  
+		Size: 4.4 MB (4411330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d35d9f711df2316b83c53b250247282e5341b793b2215aea61330153f517d3c0`  
-		Last Modified: Fri, 07 Jul 2017 00:07:01 GMT  
-		Size: 629.4 KB (629397 bytes)  
+	-	`sha256:aeac59510475a8880f4ff04bf6d3d244871a23c5c965fe9e3391577a5d762fc0`  
+		Last Modified: Mon, 24 Jul 2017 18:24:24 GMT  
+		Size: 629.4 KB (629408 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b9badf7c23ce3b04412ce201ff53c6fef0fb993fd3a26341b690d59510ab9d2`  
-		Last Modified: Fri, 07 Jul 2017 00:07:01 GMT  
-		Size: 240.0 B  
+	-	`sha256:b01db8bd8540d151ef6f022f3168624a9557d8049432032d137b3bed4c4f02ac`  
+		Last Modified: Mon, 24 Jul 2017 18:24:23 GMT  
+		Size: 241.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e73fd941ef24e10e1412aa5ca44ae8680cdf64faddbb50c71c2f85ecce7c12b5`  
-		Last Modified: Fri, 07 Jul 2017 00:07:01 GMT  
-		Size: 131.0 B  
+	-	`sha256:f7f398af5feaa5fd612e1a0dbb93ffe5785e2a8e2e1bda89e5a398a27cf505a1`  
+		Last Modified: Mon, 24 Jul 2017 18:24:24 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8d1eaefc75d038af9cebfa8582c7970345d99587b37efb1f069c64ead6fc0050`  
-		Last Modified: Fri, 21 Jul 2017 22:33:04 GMT  
-		Size: 54.4 MB (54421094 bytes)  
+	-	`sha256:2e542fdaf109acf49bcbe56a397a140be9ea9baf4f51e55f4160af86927840de`  
+		Last Modified: Mon, 24 Jul 2017 18:24:34 GMT  
+		Size: 54.4 MB (54420272 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f468fa92b91d1f13e589c5869d1561b8da47f2155b8607b94940092bac75fe86`  
-		Last Modified: Fri, 21 Jul 2017 22:32:50 GMT  
-		Size: 272.1 KB (272055 bytes)  
+	-	`sha256:c2f213d11280db267c1a51d9b9ee8b43bb6e6653ffb1f0e8dcb5b0b7f38aab96`  
+		Last Modified: Mon, 24 Jul 2017 18:24:24 GMT  
+		Size: 272.1 KB (272084 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c191c704beb45f4ab2f2e59741ad14d5b7a8ccc2a3ddfc0f6a7e673d2bec8c72`  
-		Last Modified: Sat, 22 Jul 2017 02:32:49 GMT  
-		Size: 1.3 MB (1268356 bytes)  
+	-	`sha256:9368a1267bcb9b9fe8147439e19cc953833941dc060a798aaa4d833ceeff575d`  
+		Last Modified: Mon, 24 Jul 2017 21:32:12 GMT  
+		Size: 1.3 MB (1268578 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:80e433180861a5a2cce56f6889fe22f67a2d210c9b79944f3bbdaedc4007cd9a`  
-		Last Modified: Sat, 22 Jul 2017 02:32:49 GMT  
+	-	`sha256:754c8cb32bc328194d00f7f58efa028479a9899de9faa09ee3aa08c0eac45e4b`  
+		Last Modified: Mon, 24 Jul 2017 21:32:11 GMT  
 		Size: 178.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7724d7403fdda35c4a63420637cf7ea8e26d0bc0aeeef17c9c7022f598a18273`  
-		Last Modified: Sat, 22 Jul 2017 02:32:46 GMT  
-		Size: 500.9 KB (500902 bytes)  
+	-	`sha256:fcac60787533036c62cc93c4a4cfa4539d453a328f392890c61f6f0b1263f720`  
+		Last Modified: Mon, 24 Jul 2017 21:32:10 GMT  
+		Size: 500.9 KB (500901 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:160102154339244a6c9f1853b602919e63c1c4de17911479323225871eefb64a`  
-		Last Modified: Sat, 22 Jul 2017 02:32:46 GMT  
-		Size: 1.4 KB (1431 bytes)  
+	-	`sha256:6db91c4ae31ecf2ba9981a81db3f27e9435c780f296a7c240a439441991f2551`  
+		Last Modified: Mon, 24 Jul 2017 21:32:09 GMT  
+		Size: 1.4 KB (1428 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27b00b5aad2c330da25e1e389c246349e16dfb54daf9572be9f84f81d28e4c98`  
-		Last Modified: Sat, 22 Jul 2017 02:32:46 GMT  
-		Size: 226.0 B  
+	-	`sha256:5b6cee26beaee055f7e635c91f50e68c270f70a8ba7b4427ad9f0e2323587d8f`  
+		Last Modified: Mon, 24 Jul 2017 21:32:10 GMT  
+		Size: 225.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc8262b385bc14e1e5c2331345dd9af7a32ef9681874f23b56c332256952965f`  
-		Last Modified: Sat, 22 Jul 2017 02:32:59 GMT  
-		Size: 96.6 MB (96624440 bytes)  
+	-	`sha256:3d41bd36b106c82b4c9eaf6618e37580e5361bb2cb84fe4aa2bc1f5cd0cd329f`  
+		Last Modified: Mon, 24 Jul 2017 21:32:22 GMT  
+		Size: 96.6 MB (96624424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d7e2ff5879e69ce42107ba0e63e8a0ac67a636b3f7ff72b128c1c27c25d25963`  
-		Last Modified: Sat, 22 Jul 2017 02:32:46 GMT  
+	-	`sha256:48e60d70ec92294690986178ec80656543f48d111d390ccdd72ca451f010fe9c`  
+		Last Modified: Mon, 24 Jul 2017 21:32:09 GMT  
 		Size: 2.5 KB (2541 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7711ca326dec8dee3adaf888290fcc78e9b5666292e07e85f8bb40868742f9af`  
-		Last Modified: Sat, 22 Jul 2017 02:32:46 GMT  
+	-	`sha256:317e0c1c9a8fa12087084799d0d8336f143d7c68d6765a27f1c70e2e96b46ff6`  
+		Last Modified: Mon, 24 Jul 2017 21:32:09 GMT  
 		Size: 304.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 

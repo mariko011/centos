@@ -21,7 +21,7 @@
 ## `nuxeo:6.0`
 
 ```console
-$ docker pull nuxeo@sha256:169fc5f7225d0a0e411439963d76db483e6801db7460dfb881d5fc1d40d8f816
+$ docker pull nuxeo@sha256:258fc028b5cb1af4575a8944cd3a0b841b9a61ffc00758080ad65a0ec6da4d22
 ```
 
 -	Platforms:
@@ -31,157 +31,157 @@ $ docker pull nuxeo@sha256:169fc5f7225d0a0e411439963d76db483e6801db7460dfb881d5f
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **916.1 MB (916126985 bytes)**  
+-	Total Size: **903.8 MB (903823271 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:06d4b46f61c19a606b3565d11c113b9a94be8e370d92a107b87f2db0c267edf5`
+-	Image ID: `sha256:778aae51abcd80be972599d84b0dd69f2097c27b121a7ef1e61463f34dd80a9a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Tue, 20 Jun 2017 20:24:09 GMT
-ADD file:93a0dbb6973bc13e5478292bfe283ff91745ca6e23b6fd3363f0661c45deb1ec in / 
-# Tue, 20 Jun 2017 20:24:10 GMT
+# Mon, 24 Jul 2017 16:52:54 GMT
+ADD file:ebba725fb97cea45d0b1b35ccc8144e766fcfc9a78530465c23b0c4674b14042 in / 
+# Mon, 24 Jul 2017 16:52:55 GMT
 CMD ["bash"]
-# Tue, 20 Jun 2017 21:21:56 GMT
+# Mon, 24 Jul 2017 17:28:39 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 22:30:39 GMT
+# Mon, 24 Jul 2017 17:28:45 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 06 Jul 2017 22:31:21 GMT
+# Mon, 24 Jul 2017 17:29:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:28 GMT
+# Mon, 24 Jul 2017 18:09:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:29 GMT
+# Mon, 24 Jul 2017 18:09:51 GMT
 ENV LANG=C.UTF-8
-# Thu, 06 Jul 2017 23:11:31 GMT
+# Mon, 24 Jul 2017 18:09:52 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 06 Jul 2017 23:11:33 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_HOME=/docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_VERSION=8u131
-# Thu, 06 Jul 2017 23:11:35 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_DEBIAN_VERSION=8u131-b11-2
-# Thu, 06 Jul 2017 23:11:36 GMT
+# Mon, 24 Jul 2017 18:09:54 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 21 Jul 2017 22:10:38 GMT
+# Mon, 24 Jul 2017 18:10:48 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 21 Jul 2017 22:10:42 GMT
+# Mon, 24 Jul 2017 18:10:51 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Mon, 24 Jul 2017 17:17:03 GMT
+# Mon, 24 Jul 2017 22:19:48 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Mon, 24 Jul 2017 17:19:02 GMT
+# Mon, 24 Jul 2017 22:21:30 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libreoffice     libwpd-tools     exiftool     ghostscript  && rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:19:03 GMT
+# Mon, 24 Jul 2017 22:21:31 GMT
 RUN find / -perm +6000 -type f -exec chmod a-s {} \; || true
-# Mon, 24 Jul 2017 17:19:03 GMT
+# Mon, 24 Jul 2017 22:21:31 GMT
 ENV NUXEO_USER=nuxeo
-# Mon, 24 Jul 2017 17:19:03 GMT
+# Mon, 24 Jul 2017 22:21:31 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Mon, 24 Jul 2017 17:19:04 GMT
+# Mon, 24 Jul 2017 22:21:31 GMT
 ARG NUXEO_VERSION=6.0
-# Mon, 24 Jul 2017 17:19:04 GMT
+# Mon, 24 Jul 2017 22:21:32 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-6.0/nuxeo-cap-6.0-tomcat.zip
-# Mon, 24 Jul 2017 17:19:04 GMT
+# Mon, 24 Jul 2017 22:21:32 GMT
 ARG NUXEO_MD5=b8cbc0b2858b0697a541be49feb24571
-# Mon, 24 Jul 2017 17:19:04 GMT
+# Mon, 24 Jul 2017 22:21:32 GMT
 ENV LAUNCHER_DEBUG=-Djvmcheck=nofail
-# Mon, 24 Jul 2017 17:19:05 GMT
+# Mon, 24 Jul 2017 22:21:33 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-6.0/nuxeo-cap-6.0-tomcat.zip NUXEO_MD5=b8cbc0b2858b0697a541be49feb24571 NUXEO_VERSION=6.0
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Mon, 24 Jul 2017 17:19:22 GMT
+# Mon, 24 Jul 2017 22:21:56 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-6.0/nuxeo-cap-6.0-tomcat.zip NUXEO_MD5=b8cbc0b2858b0697a541be49feb24571 NUXEO_VERSION=6.0
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh
-# Mon, 24 Jul 2017 17:19:25 GMT
+# Mon, 24 Jul 2017 22:21:59 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-6.0/nuxeo-cap-6.0-tomcat.zip NUXEO_MD5=b8cbc0b2858b0697a541be49feb24571 NUXEO_VERSION=6.0
 RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Mon, 24 Jul 2017 17:19:26 GMT
+# Mon, 24 Jul 2017 22:22:00 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-6.0/nuxeo-cap-6.0-tomcat.zip NUXEO_MD5=b8cbc0b2858b0697a541be49feb24571 NUXEO_VERSION=6.0
 RUN mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d
-# Mon, 24 Jul 2017 17:19:26 GMT
+# Mon, 24 Jul 2017 22:22:00 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 17:19:27 GMT
+# Mon, 24 Jul 2017 22:22:00 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 24 Jul 2017 17:19:27 GMT
+# Mon, 24 Jul 2017 22:22:01 GMT
 COPY file:485ff0a6674b97f711e5be4a1ec900fc1002c363c00770d8b1c5809a76ccfc32 in / 
-# Mon, 24 Jul 2017 17:19:27 GMT
+# Mon, 24 Jul 2017 22:22:01 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 24 Jul 2017 17:19:27 GMT
+# Mon, 24 Jul 2017 22:22:01 GMT
 EXPOSE 8080/tcp
-# Mon, 24 Jul 2017 17:19:28 GMT
+# Mon, 24 Jul 2017 22:22:01 GMT
 EXPOSE 8787/tcp
-# Mon, 24 Jul 2017 17:19:28 GMT
+# Mon, 24 Jul 2017 22:22:02 GMT
 CMD ["nuxeoctl" "console"]
-# Mon, 24 Jul 2017 17:19:28 GMT
+# Mon, 24 Jul 2017 22:22:02 GMT
 USER [1000]
 ```
 
 -	Layers:
-	-	`sha256:c75480ad9aafadef6c7faf829ede40cf2fa990c9308d6cd354d53041b01a7cda`  
-		Last Modified: Tue, 20 Jun 2017 20:51:29 GMT  
-		Size: 45.1 MB (45139825 bytes)  
+	-	`sha256:06b22ddb19134ec8c42aaabd3e2e9f5b378e4e53da4a8960eaaaa86351190af3`  
+		Last Modified: Mon, 24 Jul 2017 16:59:30 GMT  
+		Size: 45.1 MB (45142935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18d67befbc4e6fc58906f99031e8183060a10ee8b4e30cd2a83a942f68760818`  
-		Last Modified: Wed, 21 Jun 2017 00:50:08 GMT  
-		Size: 11.1 MB (11108544 bytes)  
+	-	`sha256:336c28b408ed2225485696d1fada041792d7f1b47a4422175e203be4be2f83e6`  
+		Last Modified: Mon, 24 Jul 2017 17:36:29 GMT  
+		Size: 11.1 MB (11107641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f5d2d0853c76cad76d65745ca5b10e17ffe72647e78616bb28b2fd70e5173ab`  
-		Last Modified: Thu, 06 Jul 2017 23:56:33 GMT  
-		Size: 4.4 MB (4411344 bytes)  
+	-	`sha256:1f3e6b8d80c36cab97c677f32305f00ab2aedb16a26cfb37d0a3a48c50316dbb`  
+		Last Modified: Mon, 24 Jul 2017 17:36:27 GMT  
+		Size: 4.4 MB (4411330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5de358416a758e4776153bd86b34fcaa0f31b577b335845b968646e61ac78bf4`  
-		Last Modified: Thu, 06 Jul 2017 23:56:47 GMT  
-		Size: 50.0 MB (50004119 bytes)  
+	-	`sha256:5ccc640979f6f91dfddf979bdb4482bc9e9e021d5d3469dbefda306342d0a41b`  
+		Last Modified: Mon, 24 Jul 2017 17:36:55 GMT  
+		Size: 50.0 MB (50003328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4049b231edeab7c94920b61f8e95d5ae615893cf7ae7b9d28a670f5e47765ddf`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
-		Size: 660.4 KB (660432 bytes)  
+	-	`sha256:14eaa20184e60073d2705ab636fb92b4428dfc503b858b423608dba26d628c99`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 660.5 KB (660458 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6617c62c7c1089f445af30dda32df5c346c31019acf9077741422a3e4785a537`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:19a8522e2399427c6c6d4cb5748e3c9ea39188af728386b37ffa3719b60a08a0`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa26fbcddb08b7bc5e7847d2cd1bfb54bd4674c892a483341f8d59911cb012c2`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:39ba9d7befcada9c3bfe28fe046ee3ddf551dbcd0fe29a620071c07f49afc2e9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf9eeaccdbef302badbe408271f44e78f77ace907ad645f50e01e0c877a09a16`  
-		Last Modified: Fri, 21 Jul 2017 22:29:36 GMT  
-		Size: 183.1 MB (183110408 bytes)  
+	-	`sha256:1f81f3143db2f0e6bdd549cbb9a6128c217f2ef192c12b6044daed277cde2ae9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:46 GMT  
+		Size: 183.1 MB (183109092 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d0dbc643791b279d676519e037e59b3ba88b5e4579ab963a4d92fddb7b8017f`  
-		Last Modified: Fri, 21 Jul 2017 22:28:52 GMT  
-		Size: 272.0 KB (272005 bytes)  
+	-	`sha256:2034c15120cdd40d7f2d92f1233386821c361a328aea3b35a7345972a1d475c9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 272.0 KB (272003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a287b7cc778de57df3e30199ea510eaa920c2ab2942696704860e0221de4e0b3`  
-		Last Modified: Mon, 24 Jul 2017 17:27:26 GMT  
-		Size: 247.0 MB (247021754 bytes)  
+	-	`sha256:33a841106e7b0e0d940d44de41405b2664491ea796604565e668dee213466f67`  
+		Last Modified: Mon, 24 Jul 2017 22:28:16 GMT  
+		Size: 234.7 MB (234718011 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eec281d75ac2d1d3e496830036ab28d962b3f6a762ec49d3efcf7a3a1c426544`  
-		Last Modified: Mon, 24 Jul 2017 17:26:31 GMT  
-		Size: 4.4 KB (4386 bytes)  
+	-	`sha256:a1b835861072790c4de1578b5ce63949b9267657aac4db740bdae544ee7c6a83`  
+		Last Modified: Mon, 24 Jul 2017 22:27:30 GMT  
+		Size: 4.4 KB (4376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfdc2f80b64f4f88ccb664baf728c573db4858360c783c0ac83735b01a31e64d`  
-		Last Modified: Mon, 24 Jul 2017 17:26:50 GMT  
-		Size: 187.2 MB (187195353 bytes)  
+	-	`sha256:54d37b08a5c3d42b03b93fafcf380aed5697608b30d54d7f83985530727a6fc4`  
+		Last Modified: Mon, 24 Jul 2017 22:27:47 GMT  
+		Size: 187.2 MB (187195316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03378c1ed52a6ab01455fedc8a048199c2aea9c0fd036a8168d1922cba8ddb88`  
-		Last Modified: Mon, 24 Jul 2017 17:26:51 GMT  
-		Size: 187.2 MB (187196770 bytes)  
+	-	`sha256:d28b9e1eb601e872ec7131bcbe9f0dab12d10efb410972af54bb75846b62cd57`  
+		Last Modified: Mon, 24 Jul 2017 22:27:52 GMT  
+		Size: 187.2 MB (187196733 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac600ba5e08fc87fc394b578ab53c2902d95e7b352a9d88ec07c96508e823bb8`  
-		Last Modified: Mon, 24 Jul 2017 17:26:31 GMT  
-		Size: 242.0 B  
+	-	`sha256:6f4e90d656f16a4662bf2096d81ffa08a699c958cef78e8c9408ffb746603cc9`  
+		Last Modified: Mon, 24 Jul 2017 22:27:30 GMT  
+		Size: 245.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7058deeb563531235bb33e2209781c9ae2f27ce0443ee1e2df3b8232dbcbc2c`  
-		Last Modified: Mon, 24 Jul 2017 17:26:31 GMT  
+	-	`sha256:deb88cb247fbc5d2f59e1d4edbea07780f8ed9b9cd357ef9305a26d70daf8259`  
+		Last Modified: Mon, 24 Jul 2017 22:27:30 GMT  
 		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:6`
 
 ```console
-$ docker pull nuxeo@sha256:169fc5f7225d0a0e411439963d76db483e6801db7460dfb881d5fc1d40d8f816
+$ docker pull nuxeo@sha256:258fc028b5cb1af4575a8944cd3a0b841b9a61ffc00758080ad65a0ec6da4d22
 ```
 
 -	Platforms:
@@ -191,157 +191,157 @@ $ docker pull nuxeo@sha256:169fc5f7225d0a0e411439963d76db483e6801db7460dfb881d5f
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **916.1 MB (916126985 bytes)**  
+-	Total Size: **903.8 MB (903823271 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:06d4b46f61c19a606b3565d11c113b9a94be8e370d92a107b87f2db0c267edf5`
+-	Image ID: `sha256:778aae51abcd80be972599d84b0dd69f2097c27b121a7ef1e61463f34dd80a9a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Tue, 20 Jun 2017 20:24:09 GMT
-ADD file:93a0dbb6973bc13e5478292bfe283ff91745ca6e23b6fd3363f0661c45deb1ec in / 
-# Tue, 20 Jun 2017 20:24:10 GMT
+# Mon, 24 Jul 2017 16:52:54 GMT
+ADD file:ebba725fb97cea45d0b1b35ccc8144e766fcfc9a78530465c23b0c4674b14042 in / 
+# Mon, 24 Jul 2017 16:52:55 GMT
 CMD ["bash"]
-# Tue, 20 Jun 2017 21:21:56 GMT
+# Mon, 24 Jul 2017 17:28:39 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 22:30:39 GMT
+# Mon, 24 Jul 2017 17:28:45 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 06 Jul 2017 22:31:21 GMT
+# Mon, 24 Jul 2017 17:29:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:28 GMT
+# Mon, 24 Jul 2017 18:09:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:29 GMT
+# Mon, 24 Jul 2017 18:09:51 GMT
 ENV LANG=C.UTF-8
-# Thu, 06 Jul 2017 23:11:31 GMT
+# Mon, 24 Jul 2017 18:09:52 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 06 Jul 2017 23:11:33 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_HOME=/docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_VERSION=8u131
-# Thu, 06 Jul 2017 23:11:35 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_DEBIAN_VERSION=8u131-b11-2
-# Thu, 06 Jul 2017 23:11:36 GMT
+# Mon, 24 Jul 2017 18:09:54 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 21 Jul 2017 22:10:38 GMT
+# Mon, 24 Jul 2017 18:10:48 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 21 Jul 2017 22:10:42 GMT
+# Mon, 24 Jul 2017 18:10:51 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Mon, 24 Jul 2017 17:17:03 GMT
+# Mon, 24 Jul 2017 22:19:48 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Mon, 24 Jul 2017 17:19:02 GMT
+# Mon, 24 Jul 2017 22:21:30 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libreoffice     libwpd-tools     exiftool     ghostscript  && rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:19:03 GMT
+# Mon, 24 Jul 2017 22:21:31 GMT
 RUN find / -perm +6000 -type f -exec chmod a-s {} \; || true
-# Mon, 24 Jul 2017 17:19:03 GMT
+# Mon, 24 Jul 2017 22:21:31 GMT
 ENV NUXEO_USER=nuxeo
-# Mon, 24 Jul 2017 17:19:03 GMT
+# Mon, 24 Jul 2017 22:21:31 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Mon, 24 Jul 2017 17:19:04 GMT
+# Mon, 24 Jul 2017 22:21:31 GMT
 ARG NUXEO_VERSION=6.0
-# Mon, 24 Jul 2017 17:19:04 GMT
+# Mon, 24 Jul 2017 22:21:32 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-6.0/nuxeo-cap-6.0-tomcat.zip
-# Mon, 24 Jul 2017 17:19:04 GMT
+# Mon, 24 Jul 2017 22:21:32 GMT
 ARG NUXEO_MD5=b8cbc0b2858b0697a541be49feb24571
-# Mon, 24 Jul 2017 17:19:04 GMT
+# Mon, 24 Jul 2017 22:21:32 GMT
 ENV LAUNCHER_DEBUG=-Djvmcheck=nofail
-# Mon, 24 Jul 2017 17:19:05 GMT
+# Mon, 24 Jul 2017 22:21:33 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-6.0/nuxeo-cap-6.0-tomcat.zip NUXEO_MD5=b8cbc0b2858b0697a541be49feb24571 NUXEO_VERSION=6.0
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Mon, 24 Jul 2017 17:19:22 GMT
+# Mon, 24 Jul 2017 22:21:56 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-6.0/nuxeo-cap-6.0-tomcat.zip NUXEO_MD5=b8cbc0b2858b0697a541be49feb24571 NUXEO_VERSION=6.0
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh
-# Mon, 24 Jul 2017 17:19:25 GMT
+# Mon, 24 Jul 2017 22:21:59 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-6.0/nuxeo-cap-6.0-tomcat.zip NUXEO_MD5=b8cbc0b2858b0697a541be49feb24571 NUXEO_VERSION=6.0
 RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Mon, 24 Jul 2017 17:19:26 GMT
+# Mon, 24 Jul 2017 22:22:00 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-6.0/nuxeo-cap-6.0-tomcat.zip NUXEO_MD5=b8cbc0b2858b0697a541be49feb24571 NUXEO_VERSION=6.0
 RUN mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d
-# Mon, 24 Jul 2017 17:19:26 GMT
+# Mon, 24 Jul 2017 22:22:00 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 17:19:27 GMT
+# Mon, 24 Jul 2017 22:22:00 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 24 Jul 2017 17:19:27 GMT
+# Mon, 24 Jul 2017 22:22:01 GMT
 COPY file:485ff0a6674b97f711e5be4a1ec900fc1002c363c00770d8b1c5809a76ccfc32 in / 
-# Mon, 24 Jul 2017 17:19:27 GMT
+# Mon, 24 Jul 2017 22:22:01 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 24 Jul 2017 17:19:27 GMT
+# Mon, 24 Jul 2017 22:22:01 GMT
 EXPOSE 8080/tcp
-# Mon, 24 Jul 2017 17:19:28 GMT
+# Mon, 24 Jul 2017 22:22:01 GMT
 EXPOSE 8787/tcp
-# Mon, 24 Jul 2017 17:19:28 GMT
+# Mon, 24 Jul 2017 22:22:02 GMT
 CMD ["nuxeoctl" "console"]
-# Mon, 24 Jul 2017 17:19:28 GMT
+# Mon, 24 Jul 2017 22:22:02 GMT
 USER [1000]
 ```
 
 -	Layers:
-	-	`sha256:c75480ad9aafadef6c7faf829ede40cf2fa990c9308d6cd354d53041b01a7cda`  
-		Last Modified: Tue, 20 Jun 2017 20:51:29 GMT  
-		Size: 45.1 MB (45139825 bytes)  
+	-	`sha256:06b22ddb19134ec8c42aaabd3e2e9f5b378e4e53da4a8960eaaaa86351190af3`  
+		Last Modified: Mon, 24 Jul 2017 16:59:30 GMT  
+		Size: 45.1 MB (45142935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18d67befbc4e6fc58906f99031e8183060a10ee8b4e30cd2a83a942f68760818`  
-		Last Modified: Wed, 21 Jun 2017 00:50:08 GMT  
-		Size: 11.1 MB (11108544 bytes)  
+	-	`sha256:336c28b408ed2225485696d1fada041792d7f1b47a4422175e203be4be2f83e6`  
+		Last Modified: Mon, 24 Jul 2017 17:36:29 GMT  
+		Size: 11.1 MB (11107641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f5d2d0853c76cad76d65745ca5b10e17ffe72647e78616bb28b2fd70e5173ab`  
-		Last Modified: Thu, 06 Jul 2017 23:56:33 GMT  
-		Size: 4.4 MB (4411344 bytes)  
+	-	`sha256:1f3e6b8d80c36cab97c677f32305f00ab2aedb16a26cfb37d0a3a48c50316dbb`  
+		Last Modified: Mon, 24 Jul 2017 17:36:27 GMT  
+		Size: 4.4 MB (4411330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5de358416a758e4776153bd86b34fcaa0f31b577b335845b968646e61ac78bf4`  
-		Last Modified: Thu, 06 Jul 2017 23:56:47 GMT  
-		Size: 50.0 MB (50004119 bytes)  
+	-	`sha256:5ccc640979f6f91dfddf979bdb4482bc9e9e021d5d3469dbefda306342d0a41b`  
+		Last Modified: Mon, 24 Jul 2017 17:36:55 GMT  
+		Size: 50.0 MB (50003328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4049b231edeab7c94920b61f8e95d5ae615893cf7ae7b9d28a670f5e47765ddf`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
-		Size: 660.4 KB (660432 bytes)  
+	-	`sha256:14eaa20184e60073d2705ab636fb92b4428dfc503b858b423608dba26d628c99`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 660.5 KB (660458 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6617c62c7c1089f445af30dda32df5c346c31019acf9077741422a3e4785a537`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:19a8522e2399427c6c6d4cb5748e3c9ea39188af728386b37ffa3719b60a08a0`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa26fbcddb08b7bc5e7847d2cd1bfb54bd4674c892a483341f8d59911cb012c2`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:39ba9d7befcada9c3bfe28fe046ee3ddf551dbcd0fe29a620071c07f49afc2e9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf9eeaccdbef302badbe408271f44e78f77ace907ad645f50e01e0c877a09a16`  
-		Last Modified: Fri, 21 Jul 2017 22:29:36 GMT  
-		Size: 183.1 MB (183110408 bytes)  
+	-	`sha256:1f81f3143db2f0e6bdd549cbb9a6128c217f2ef192c12b6044daed277cde2ae9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:46 GMT  
+		Size: 183.1 MB (183109092 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d0dbc643791b279d676519e037e59b3ba88b5e4579ab963a4d92fddb7b8017f`  
-		Last Modified: Fri, 21 Jul 2017 22:28:52 GMT  
-		Size: 272.0 KB (272005 bytes)  
+	-	`sha256:2034c15120cdd40d7f2d92f1233386821c361a328aea3b35a7345972a1d475c9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 272.0 KB (272003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a287b7cc778de57df3e30199ea510eaa920c2ab2942696704860e0221de4e0b3`  
-		Last Modified: Mon, 24 Jul 2017 17:27:26 GMT  
-		Size: 247.0 MB (247021754 bytes)  
+	-	`sha256:33a841106e7b0e0d940d44de41405b2664491ea796604565e668dee213466f67`  
+		Last Modified: Mon, 24 Jul 2017 22:28:16 GMT  
+		Size: 234.7 MB (234718011 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eec281d75ac2d1d3e496830036ab28d962b3f6a762ec49d3efcf7a3a1c426544`  
-		Last Modified: Mon, 24 Jul 2017 17:26:31 GMT  
-		Size: 4.4 KB (4386 bytes)  
+	-	`sha256:a1b835861072790c4de1578b5ce63949b9267657aac4db740bdae544ee7c6a83`  
+		Last Modified: Mon, 24 Jul 2017 22:27:30 GMT  
+		Size: 4.4 KB (4376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfdc2f80b64f4f88ccb664baf728c573db4858360c783c0ac83735b01a31e64d`  
-		Last Modified: Mon, 24 Jul 2017 17:26:50 GMT  
-		Size: 187.2 MB (187195353 bytes)  
+	-	`sha256:54d37b08a5c3d42b03b93fafcf380aed5697608b30d54d7f83985530727a6fc4`  
+		Last Modified: Mon, 24 Jul 2017 22:27:47 GMT  
+		Size: 187.2 MB (187195316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03378c1ed52a6ab01455fedc8a048199c2aea9c0fd036a8168d1922cba8ddb88`  
-		Last Modified: Mon, 24 Jul 2017 17:26:51 GMT  
-		Size: 187.2 MB (187196770 bytes)  
+	-	`sha256:d28b9e1eb601e872ec7131bcbe9f0dab12d10efb410972af54bb75846b62cd57`  
+		Last Modified: Mon, 24 Jul 2017 22:27:52 GMT  
+		Size: 187.2 MB (187196733 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac600ba5e08fc87fc394b578ab53c2902d95e7b352a9d88ec07c96508e823bb8`  
-		Last Modified: Mon, 24 Jul 2017 17:26:31 GMT  
-		Size: 242.0 B  
+	-	`sha256:6f4e90d656f16a4662bf2096d81ffa08a699c958cef78e8c9408ffb746603cc9`  
+		Last Modified: Mon, 24 Jul 2017 22:27:30 GMT  
+		Size: 245.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7058deeb563531235bb33e2209781c9ae2f27ce0443ee1e2df3b8232dbcbc2c`  
-		Last Modified: Mon, 24 Jul 2017 17:26:31 GMT  
+	-	`sha256:deb88cb247fbc5d2f59e1d4edbea07780f8ed9b9cd357ef9305a26d70daf8259`  
+		Last Modified: Mon, 24 Jul 2017 22:27:30 GMT  
 		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:LTS-2014`
 
 ```console
-$ docker pull nuxeo@sha256:169fc5f7225d0a0e411439963d76db483e6801db7460dfb881d5fc1d40d8f816
+$ docker pull nuxeo@sha256:258fc028b5cb1af4575a8944cd3a0b841b9a61ffc00758080ad65a0ec6da4d22
 ```
 
 -	Platforms:
@@ -351,157 +351,157 @@ $ docker pull nuxeo@sha256:169fc5f7225d0a0e411439963d76db483e6801db7460dfb881d5f
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **916.1 MB (916126985 bytes)**  
+-	Total Size: **903.8 MB (903823271 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:06d4b46f61c19a606b3565d11c113b9a94be8e370d92a107b87f2db0c267edf5`
+-	Image ID: `sha256:778aae51abcd80be972599d84b0dd69f2097c27b121a7ef1e61463f34dd80a9a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Tue, 20 Jun 2017 20:24:09 GMT
-ADD file:93a0dbb6973bc13e5478292bfe283ff91745ca6e23b6fd3363f0661c45deb1ec in / 
-# Tue, 20 Jun 2017 20:24:10 GMT
+# Mon, 24 Jul 2017 16:52:54 GMT
+ADD file:ebba725fb97cea45d0b1b35ccc8144e766fcfc9a78530465c23b0c4674b14042 in / 
+# Mon, 24 Jul 2017 16:52:55 GMT
 CMD ["bash"]
-# Tue, 20 Jun 2017 21:21:56 GMT
+# Mon, 24 Jul 2017 17:28:39 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 22:30:39 GMT
+# Mon, 24 Jul 2017 17:28:45 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 06 Jul 2017 22:31:21 GMT
+# Mon, 24 Jul 2017 17:29:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:28 GMT
+# Mon, 24 Jul 2017 18:09:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:29 GMT
+# Mon, 24 Jul 2017 18:09:51 GMT
 ENV LANG=C.UTF-8
-# Thu, 06 Jul 2017 23:11:31 GMT
+# Mon, 24 Jul 2017 18:09:52 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 06 Jul 2017 23:11:33 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_HOME=/docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_VERSION=8u131
-# Thu, 06 Jul 2017 23:11:35 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_DEBIAN_VERSION=8u131-b11-2
-# Thu, 06 Jul 2017 23:11:36 GMT
+# Mon, 24 Jul 2017 18:09:54 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 21 Jul 2017 22:10:38 GMT
+# Mon, 24 Jul 2017 18:10:48 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 21 Jul 2017 22:10:42 GMT
+# Mon, 24 Jul 2017 18:10:51 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Mon, 24 Jul 2017 17:17:03 GMT
+# Mon, 24 Jul 2017 22:19:48 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Mon, 24 Jul 2017 17:19:02 GMT
+# Mon, 24 Jul 2017 22:21:30 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libreoffice     libwpd-tools     exiftool     ghostscript  && rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:19:03 GMT
+# Mon, 24 Jul 2017 22:21:31 GMT
 RUN find / -perm +6000 -type f -exec chmod a-s {} \; || true
-# Mon, 24 Jul 2017 17:19:03 GMT
+# Mon, 24 Jul 2017 22:21:31 GMT
 ENV NUXEO_USER=nuxeo
-# Mon, 24 Jul 2017 17:19:03 GMT
+# Mon, 24 Jul 2017 22:21:31 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Mon, 24 Jul 2017 17:19:04 GMT
+# Mon, 24 Jul 2017 22:21:31 GMT
 ARG NUXEO_VERSION=6.0
-# Mon, 24 Jul 2017 17:19:04 GMT
+# Mon, 24 Jul 2017 22:21:32 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-6.0/nuxeo-cap-6.0-tomcat.zip
-# Mon, 24 Jul 2017 17:19:04 GMT
+# Mon, 24 Jul 2017 22:21:32 GMT
 ARG NUXEO_MD5=b8cbc0b2858b0697a541be49feb24571
-# Mon, 24 Jul 2017 17:19:04 GMT
+# Mon, 24 Jul 2017 22:21:32 GMT
 ENV LAUNCHER_DEBUG=-Djvmcheck=nofail
-# Mon, 24 Jul 2017 17:19:05 GMT
+# Mon, 24 Jul 2017 22:21:33 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-6.0/nuxeo-cap-6.0-tomcat.zip NUXEO_MD5=b8cbc0b2858b0697a541be49feb24571 NUXEO_VERSION=6.0
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Mon, 24 Jul 2017 17:19:22 GMT
+# Mon, 24 Jul 2017 22:21:56 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-6.0/nuxeo-cap-6.0-tomcat.zip NUXEO_MD5=b8cbc0b2858b0697a541be49feb24571 NUXEO_VERSION=6.0
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh
-# Mon, 24 Jul 2017 17:19:25 GMT
+# Mon, 24 Jul 2017 22:21:59 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-6.0/nuxeo-cap-6.0-tomcat.zip NUXEO_MD5=b8cbc0b2858b0697a541be49feb24571 NUXEO_VERSION=6.0
 RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Mon, 24 Jul 2017 17:19:26 GMT
+# Mon, 24 Jul 2017 22:22:00 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-6.0/nuxeo-cap-6.0-tomcat.zip NUXEO_MD5=b8cbc0b2858b0697a541be49feb24571 NUXEO_VERSION=6.0
 RUN mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d
-# Mon, 24 Jul 2017 17:19:26 GMT
+# Mon, 24 Jul 2017 22:22:00 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 17:19:27 GMT
+# Mon, 24 Jul 2017 22:22:00 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 24 Jul 2017 17:19:27 GMT
+# Mon, 24 Jul 2017 22:22:01 GMT
 COPY file:485ff0a6674b97f711e5be4a1ec900fc1002c363c00770d8b1c5809a76ccfc32 in / 
-# Mon, 24 Jul 2017 17:19:27 GMT
+# Mon, 24 Jul 2017 22:22:01 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 24 Jul 2017 17:19:27 GMT
+# Mon, 24 Jul 2017 22:22:01 GMT
 EXPOSE 8080/tcp
-# Mon, 24 Jul 2017 17:19:28 GMT
+# Mon, 24 Jul 2017 22:22:01 GMT
 EXPOSE 8787/tcp
-# Mon, 24 Jul 2017 17:19:28 GMT
+# Mon, 24 Jul 2017 22:22:02 GMT
 CMD ["nuxeoctl" "console"]
-# Mon, 24 Jul 2017 17:19:28 GMT
+# Mon, 24 Jul 2017 22:22:02 GMT
 USER [1000]
 ```
 
 -	Layers:
-	-	`sha256:c75480ad9aafadef6c7faf829ede40cf2fa990c9308d6cd354d53041b01a7cda`  
-		Last Modified: Tue, 20 Jun 2017 20:51:29 GMT  
-		Size: 45.1 MB (45139825 bytes)  
+	-	`sha256:06b22ddb19134ec8c42aaabd3e2e9f5b378e4e53da4a8960eaaaa86351190af3`  
+		Last Modified: Mon, 24 Jul 2017 16:59:30 GMT  
+		Size: 45.1 MB (45142935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18d67befbc4e6fc58906f99031e8183060a10ee8b4e30cd2a83a942f68760818`  
-		Last Modified: Wed, 21 Jun 2017 00:50:08 GMT  
-		Size: 11.1 MB (11108544 bytes)  
+	-	`sha256:336c28b408ed2225485696d1fada041792d7f1b47a4422175e203be4be2f83e6`  
+		Last Modified: Mon, 24 Jul 2017 17:36:29 GMT  
+		Size: 11.1 MB (11107641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f5d2d0853c76cad76d65745ca5b10e17ffe72647e78616bb28b2fd70e5173ab`  
-		Last Modified: Thu, 06 Jul 2017 23:56:33 GMT  
-		Size: 4.4 MB (4411344 bytes)  
+	-	`sha256:1f3e6b8d80c36cab97c677f32305f00ab2aedb16a26cfb37d0a3a48c50316dbb`  
+		Last Modified: Mon, 24 Jul 2017 17:36:27 GMT  
+		Size: 4.4 MB (4411330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5de358416a758e4776153bd86b34fcaa0f31b577b335845b968646e61ac78bf4`  
-		Last Modified: Thu, 06 Jul 2017 23:56:47 GMT  
-		Size: 50.0 MB (50004119 bytes)  
+	-	`sha256:5ccc640979f6f91dfddf979bdb4482bc9e9e021d5d3469dbefda306342d0a41b`  
+		Last Modified: Mon, 24 Jul 2017 17:36:55 GMT  
+		Size: 50.0 MB (50003328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4049b231edeab7c94920b61f8e95d5ae615893cf7ae7b9d28a670f5e47765ddf`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
-		Size: 660.4 KB (660432 bytes)  
+	-	`sha256:14eaa20184e60073d2705ab636fb92b4428dfc503b858b423608dba26d628c99`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 660.5 KB (660458 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6617c62c7c1089f445af30dda32df5c346c31019acf9077741422a3e4785a537`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:19a8522e2399427c6c6d4cb5748e3c9ea39188af728386b37ffa3719b60a08a0`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa26fbcddb08b7bc5e7847d2cd1bfb54bd4674c892a483341f8d59911cb012c2`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:39ba9d7befcada9c3bfe28fe046ee3ddf551dbcd0fe29a620071c07f49afc2e9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf9eeaccdbef302badbe408271f44e78f77ace907ad645f50e01e0c877a09a16`  
-		Last Modified: Fri, 21 Jul 2017 22:29:36 GMT  
-		Size: 183.1 MB (183110408 bytes)  
+	-	`sha256:1f81f3143db2f0e6bdd549cbb9a6128c217f2ef192c12b6044daed277cde2ae9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:46 GMT  
+		Size: 183.1 MB (183109092 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d0dbc643791b279d676519e037e59b3ba88b5e4579ab963a4d92fddb7b8017f`  
-		Last Modified: Fri, 21 Jul 2017 22:28:52 GMT  
-		Size: 272.0 KB (272005 bytes)  
+	-	`sha256:2034c15120cdd40d7f2d92f1233386821c361a328aea3b35a7345972a1d475c9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 272.0 KB (272003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a287b7cc778de57df3e30199ea510eaa920c2ab2942696704860e0221de4e0b3`  
-		Last Modified: Mon, 24 Jul 2017 17:27:26 GMT  
-		Size: 247.0 MB (247021754 bytes)  
+	-	`sha256:33a841106e7b0e0d940d44de41405b2664491ea796604565e668dee213466f67`  
+		Last Modified: Mon, 24 Jul 2017 22:28:16 GMT  
+		Size: 234.7 MB (234718011 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eec281d75ac2d1d3e496830036ab28d962b3f6a762ec49d3efcf7a3a1c426544`  
-		Last Modified: Mon, 24 Jul 2017 17:26:31 GMT  
-		Size: 4.4 KB (4386 bytes)  
+	-	`sha256:a1b835861072790c4de1578b5ce63949b9267657aac4db740bdae544ee7c6a83`  
+		Last Modified: Mon, 24 Jul 2017 22:27:30 GMT  
+		Size: 4.4 KB (4376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cfdc2f80b64f4f88ccb664baf728c573db4858360c783c0ac83735b01a31e64d`  
-		Last Modified: Mon, 24 Jul 2017 17:26:50 GMT  
-		Size: 187.2 MB (187195353 bytes)  
+	-	`sha256:54d37b08a5c3d42b03b93fafcf380aed5697608b30d54d7f83985530727a6fc4`  
+		Last Modified: Mon, 24 Jul 2017 22:27:47 GMT  
+		Size: 187.2 MB (187195316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:03378c1ed52a6ab01455fedc8a048199c2aea9c0fd036a8168d1922cba8ddb88`  
-		Last Modified: Mon, 24 Jul 2017 17:26:51 GMT  
-		Size: 187.2 MB (187196770 bytes)  
+	-	`sha256:d28b9e1eb601e872ec7131bcbe9f0dab12d10efb410972af54bb75846b62cd57`  
+		Last Modified: Mon, 24 Jul 2017 22:27:52 GMT  
+		Size: 187.2 MB (187196733 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ac600ba5e08fc87fc394b578ab53c2902d95e7b352a9d88ec07c96508e823bb8`  
-		Last Modified: Mon, 24 Jul 2017 17:26:31 GMT  
-		Size: 242.0 B  
+	-	`sha256:6f4e90d656f16a4662bf2096d81ffa08a699c958cef78e8c9408ffb746603cc9`  
+		Last Modified: Mon, 24 Jul 2017 22:27:30 GMT  
+		Size: 245.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e7058deeb563531235bb33e2209781c9ae2f27ce0443ee1e2df3b8232dbcbc2c`  
-		Last Modified: Mon, 24 Jul 2017 17:26:31 GMT  
+	-	`sha256:deb88cb247fbc5d2f59e1d4edbea07780f8ed9b9cd357ef9305a26d70daf8259`  
+		Last Modified: Mon, 24 Jul 2017 22:27:30 GMT  
 		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:7.10`
 
 ```console
-$ docker pull nuxeo@sha256:d2dc52c9f33f0c94c82e80c2643a101f21be71590f793b0483554353a03d70d8
+$ docker pull nuxeo@sha256:616973173265148553e750efbb896b5f7833066d8cc96651197e5f93f334d0c8
 ```
 
 -	Platforms:
@@ -511,157 +511,157 @@ $ docker pull nuxeo@sha256:d2dc52c9f33f0c94c82e80c2643a101f21be71590f793b0483554
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 GB (1102652576 bytes)**  
+-	Total Size: **1.1 GB (1090349041 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7763d9610ce786385c3765c7deb5276a6dbdc705a55b1a26276433be99ae6478`
+-	Image ID: `sha256:c61dbd75e48c9e5dcb0a00b4779912cacbf9af4c6d1a46fcfe32acf26f6bd10e`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Tue, 20 Jun 2017 20:24:09 GMT
-ADD file:93a0dbb6973bc13e5478292bfe283ff91745ca6e23b6fd3363f0661c45deb1ec in / 
-# Tue, 20 Jun 2017 20:24:10 GMT
+# Mon, 24 Jul 2017 16:52:54 GMT
+ADD file:ebba725fb97cea45d0b1b35ccc8144e766fcfc9a78530465c23b0c4674b14042 in / 
+# Mon, 24 Jul 2017 16:52:55 GMT
 CMD ["bash"]
-# Tue, 20 Jun 2017 21:21:56 GMT
+# Mon, 24 Jul 2017 17:28:39 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 22:30:39 GMT
+# Mon, 24 Jul 2017 17:28:45 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 06 Jul 2017 22:31:21 GMT
+# Mon, 24 Jul 2017 17:29:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:28 GMT
+# Mon, 24 Jul 2017 18:09:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:29 GMT
+# Mon, 24 Jul 2017 18:09:51 GMT
 ENV LANG=C.UTF-8
-# Thu, 06 Jul 2017 23:11:31 GMT
+# Mon, 24 Jul 2017 18:09:52 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 06 Jul 2017 23:11:33 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_HOME=/docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_VERSION=8u131
-# Thu, 06 Jul 2017 23:11:35 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_DEBIAN_VERSION=8u131-b11-2
-# Thu, 06 Jul 2017 23:11:36 GMT
+# Mon, 24 Jul 2017 18:09:54 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 21 Jul 2017 22:10:38 GMT
+# Mon, 24 Jul 2017 18:10:48 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 21 Jul 2017 22:10:42 GMT
+# Mon, 24 Jul 2017 18:10:51 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Mon, 24 Jul 2017 17:17:03 GMT
+# Mon, 24 Jul 2017 22:19:48 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Mon, 24 Jul 2017 17:19:02 GMT
+# Mon, 24 Jul 2017 22:21:30 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libreoffice     libwpd-tools     exiftool     ghostscript  && rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:19:03 GMT
+# Mon, 24 Jul 2017 22:21:31 GMT
 RUN find / -perm +6000 -type f -exec chmod a-s {} \; || true
-# Mon, 24 Jul 2017 17:19:03 GMT
+# Mon, 24 Jul 2017 22:21:31 GMT
 ENV NUXEO_USER=nuxeo
-# Mon, 24 Jul 2017 17:19:03 GMT
+# Mon, 24 Jul 2017 22:21:31 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Mon, 24 Jul 2017 17:21:25 GMT
+# Mon, 24 Jul 2017 22:22:04 GMT
 ARG NUXEO_VERSION=7.10
-# Mon, 24 Jul 2017 17:21:25 GMT
+# Mon, 24 Jul 2017 22:22:05 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip
-# Mon, 24 Jul 2017 17:21:25 GMT
+# Mon, 24 Jul 2017 22:22:05 GMT
 ARG NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2
-# Mon, 24 Jul 2017 17:21:26 GMT
+# Mon, 24 Jul 2017 22:22:05 GMT
 ENV LAUNCHER_DEBUG=-Djvmcheck=nofail
-# Mon, 24 Jul 2017 17:21:26 GMT
+# Mon, 24 Jul 2017 22:22:06 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Mon, 24 Jul 2017 17:22:02 GMT
+# Mon, 24 Jul 2017 22:22:35 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh
-# Mon, 24 Jul 2017 17:22:07 GMT
+# Mon, 24 Jul 2017 22:22:38 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Mon, 24 Jul 2017 17:22:09 GMT
+# Mon, 24 Jul 2017 22:22:42 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d
-# Mon, 24 Jul 2017 17:22:09 GMT
+# Mon, 24 Jul 2017 22:22:42 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 17:22:10 GMT
+# Mon, 24 Jul 2017 22:22:43 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 24 Jul 2017 17:22:10 GMT
+# Mon, 24 Jul 2017 22:22:43 GMT
 COPY file:485ff0a6674b97f711e5be4a1ec900fc1002c363c00770d8b1c5809a76ccfc32 in / 
-# Mon, 24 Jul 2017 17:22:10 GMT
+# Mon, 24 Jul 2017 22:22:43 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 24 Jul 2017 17:22:10 GMT
+# Mon, 24 Jul 2017 22:22:43 GMT
 EXPOSE 8080/tcp
-# Mon, 24 Jul 2017 17:22:11 GMT
+# Mon, 24 Jul 2017 22:22:44 GMT
 EXPOSE 8787/tcp
-# Mon, 24 Jul 2017 17:22:11 GMT
+# Mon, 24 Jul 2017 22:22:44 GMT
 CMD ["nuxeoctl" "console"]
-# Mon, 24 Jul 2017 17:22:11 GMT
+# Mon, 24 Jul 2017 22:22:44 GMT
 USER [1000]
 ```
 
 -	Layers:
-	-	`sha256:c75480ad9aafadef6c7faf829ede40cf2fa990c9308d6cd354d53041b01a7cda`  
-		Last Modified: Tue, 20 Jun 2017 20:51:29 GMT  
-		Size: 45.1 MB (45139825 bytes)  
+	-	`sha256:06b22ddb19134ec8c42aaabd3e2e9f5b378e4e53da4a8960eaaaa86351190af3`  
+		Last Modified: Mon, 24 Jul 2017 16:59:30 GMT  
+		Size: 45.1 MB (45142935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18d67befbc4e6fc58906f99031e8183060a10ee8b4e30cd2a83a942f68760818`  
-		Last Modified: Wed, 21 Jun 2017 00:50:08 GMT  
-		Size: 11.1 MB (11108544 bytes)  
+	-	`sha256:336c28b408ed2225485696d1fada041792d7f1b47a4422175e203be4be2f83e6`  
+		Last Modified: Mon, 24 Jul 2017 17:36:29 GMT  
+		Size: 11.1 MB (11107641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f5d2d0853c76cad76d65745ca5b10e17ffe72647e78616bb28b2fd70e5173ab`  
-		Last Modified: Thu, 06 Jul 2017 23:56:33 GMT  
-		Size: 4.4 MB (4411344 bytes)  
+	-	`sha256:1f3e6b8d80c36cab97c677f32305f00ab2aedb16a26cfb37d0a3a48c50316dbb`  
+		Last Modified: Mon, 24 Jul 2017 17:36:27 GMT  
+		Size: 4.4 MB (4411330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5de358416a758e4776153bd86b34fcaa0f31b577b335845b968646e61ac78bf4`  
-		Last Modified: Thu, 06 Jul 2017 23:56:47 GMT  
-		Size: 50.0 MB (50004119 bytes)  
+	-	`sha256:5ccc640979f6f91dfddf979bdb4482bc9e9e021d5d3469dbefda306342d0a41b`  
+		Last Modified: Mon, 24 Jul 2017 17:36:55 GMT  
+		Size: 50.0 MB (50003328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4049b231edeab7c94920b61f8e95d5ae615893cf7ae7b9d28a670f5e47765ddf`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
-		Size: 660.4 KB (660432 bytes)  
+	-	`sha256:14eaa20184e60073d2705ab636fb92b4428dfc503b858b423608dba26d628c99`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 660.5 KB (660458 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6617c62c7c1089f445af30dda32df5c346c31019acf9077741422a3e4785a537`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:19a8522e2399427c6c6d4cb5748e3c9ea39188af728386b37ffa3719b60a08a0`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa26fbcddb08b7bc5e7847d2cd1bfb54bd4674c892a483341f8d59911cb012c2`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:39ba9d7befcada9c3bfe28fe046ee3ddf551dbcd0fe29a620071c07f49afc2e9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf9eeaccdbef302badbe408271f44e78f77ace907ad645f50e01e0c877a09a16`  
-		Last Modified: Fri, 21 Jul 2017 22:29:36 GMT  
-		Size: 183.1 MB (183110408 bytes)  
+	-	`sha256:1f81f3143db2f0e6bdd549cbb9a6128c217f2ef192c12b6044daed277cde2ae9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:46 GMT  
+		Size: 183.1 MB (183109092 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d0dbc643791b279d676519e037e59b3ba88b5e4579ab963a4d92fddb7b8017f`  
-		Last Modified: Fri, 21 Jul 2017 22:28:52 GMT  
-		Size: 272.0 KB (272005 bytes)  
+	-	`sha256:2034c15120cdd40d7f2d92f1233386821c361a328aea3b35a7345972a1d475c9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 272.0 KB (272003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a287b7cc778de57df3e30199ea510eaa920c2ab2942696704860e0221de4e0b3`  
-		Last Modified: Mon, 24 Jul 2017 17:27:26 GMT  
-		Size: 247.0 MB (247021754 bytes)  
+	-	`sha256:33a841106e7b0e0d940d44de41405b2664491ea796604565e668dee213466f67`  
+		Last Modified: Mon, 24 Jul 2017 22:28:16 GMT  
+		Size: 234.7 MB (234718011 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7533f29c5f2e9751ec60fc21a61a6d4ee58b36aa6ea588c1c0adf32ff748ee3e`  
-		Last Modified: Mon, 24 Jul 2017 17:27:47 GMT  
-		Size: 4.4 KB (4386 bytes)  
+	-	`sha256:9175915d024a7dd8b330fb134cd0019787a65f920bb8ece84510e5cce8e5667e`  
+		Last Modified: Mon, 24 Jul 2017 22:28:36 GMT  
+		Size: 4.4 KB (4377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ed726f7feb0ef63a1a1eca30d4982bdd2ea58fd53c5e2747dea90c8a23b6f6a`  
-		Last Modified: Mon, 24 Jul 2017 17:28:13 GMT  
-		Size: 280.5 MB (280457928 bytes)  
+	-	`sha256:abfea2c5e0ee7e4e799d108cc2a8a05b8245a6e79355f72c0f50e3a65eb2bf6b`  
+		Last Modified: Mon, 24 Jul 2017 22:29:20 GMT  
+		Size: 280.5 MB (280457934 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1aae015accc9072d44ca3c0eab4277b526a13a57322a52dac451502af05012a`  
-		Last Modified: Mon, 24 Jul 2017 17:28:13 GMT  
-		Size: 280.5 MB (280459784 bytes)  
+	-	`sha256:b9bc48c6e044b2a8d23dc9dc5c0ccbc3c8464c7e6878fcbfbabb974b07229566`  
+		Last Modified: Mon, 24 Jul 2017 22:28:59 GMT  
+		Size: 280.5 MB (280459885 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0b7699883a1e0bfb27e4cea3cec8ae65f40891018b0728b1d54faac5ef970b6`  
-		Last Modified: Mon, 24 Jul 2017 17:27:49 GMT  
+	-	`sha256:b0016e22eadb353774762bdb138753053d9e6704ba25946bd090cf8a991d761f`  
+		Last Modified: Mon, 24 Jul 2017 22:28:37 GMT  
 		Size: 244.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58e726f810a7d7ac4045c8aceb5b6fed4131ef8f454aee0caf6183e0b2d126fe`  
-		Last Modified: Mon, 24 Jul 2017 17:27:47 GMT  
+	-	`sha256:f13f64d0ddf97fb2d678a82867ef6d47296ac81f67a643cafd2ba22f7eba8a10`  
+		Last Modified: Mon, 24 Jul 2017 22:28:36 GMT  
 		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:7`
 
 ```console
-$ docker pull nuxeo@sha256:d2dc52c9f33f0c94c82e80c2643a101f21be71590f793b0483554353a03d70d8
+$ docker pull nuxeo@sha256:616973173265148553e750efbb896b5f7833066d8cc96651197e5f93f334d0c8
 ```
 
 -	Platforms:
@@ -671,157 +671,157 @@ $ docker pull nuxeo@sha256:d2dc52c9f33f0c94c82e80c2643a101f21be71590f793b0483554
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 GB (1102652576 bytes)**  
+-	Total Size: **1.1 GB (1090349041 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7763d9610ce786385c3765c7deb5276a6dbdc705a55b1a26276433be99ae6478`
+-	Image ID: `sha256:c61dbd75e48c9e5dcb0a00b4779912cacbf9af4c6d1a46fcfe32acf26f6bd10e`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Tue, 20 Jun 2017 20:24:09 GMT
-ADD file:93a0dbb6973bc13e5478292bfe283ff91745ca6e23b6fd3363f0661c45deb1ec in / 
-# Tue, 20 Jun 2017 20:24:10 GMT
+# Mon, 24 Jul 2017 16:52:54 GMT
+ADD file:ebba725fb97cea45d0b1b35ccc8144e766fcfc9a78530465c23b0c4674b14042 in / 
+# Mon, 24 Jul 2017 16:52:55 GMT
 CMD ["bash"]
-# Tue, 20 Jun 2017 21:21:56 GMT
+# Mon, 24 Jul 2017 17:28:39 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 22:30:39 GMT
+# Mon, 24 Jul 2017 17:28:45 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 06 Jul 2017 22:31:21 GMT
+# Mon, 24 Jul 2017 17:29:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:28 GMT
+# Mon, 24 Jul 2017 18:09:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:29 GMT
+# Mon, 24 Jul 2017 18:09:51 GMT
 ENV LANG=C.UTF-8
-# Thu, 06 Jul 2017 23:11:31 GMT
+# Mon, 24 Jul 2017 18:09:52 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 06 Jul 2017 23:11:33 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_HOME=/docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_VERSION=8u131
-# Thu, 06 Jul 2017 23:11:35 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_DEBIAN_VERSION=8u131-b11-2
-# Thu, 06 Jul 2017 23:11:36 GMT
+# Mon, 24 Jul 2017 18:09:54 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 21 Jul 2017 22:10:38 GMT
+# Mon, 24 Jul 2017 18:10:48 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 21 Jul 2017 22:10:42 GMT
+# Mon, 24 Jul 2017 18:10:51 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Mon, 24 Jul 2017 17:17:03 GMT
+# Mon, 24 Jul 2017 22:19:48 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Mon, 24 Jul 2017 17:19:02 GMT
+# Mon, 24 Jul 2017 22:21:30 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libreoffice     libwpd-tools     exiftool     ghostscript  && rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:19:03 GMT
+# Mon, 24 Jul 2017 22:21:31 GMT
 RUN find / -perm +6000 -type f -exec chmod a-s {} \; || true
-# Mon, 24 Jul 2017 17:19:03 GMT
+# Mon, 24 Jul 2017 22:21:31 GMT
 ENV NUXEO_USER=nuxeo
-# Mon, 24 Jul 2017 17:19:03 GMT
+# Mon, 24 Jul 2017 22:21:31 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Mon, 24 Jul 2017 17:21:25 GMT
+# Mon, 24 Jul 2017 22:22:04 GMT
 ARG NUXEO_VERSION=7.10
-# Mon, 24 Jul 2017 17:21:25 GMT
+# Mon, 24 Jul 2017 22:22:05 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip
-# Mon, 24 Jul 2017 17:21:25 GMT
+# Mon, 24 Jul 2017 22:22:05 GMT
 ARG NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2
-# Mon, 24 Jul 2017 17:21:26 GMT
+# Mon, 24 Jul 2017 22:22:05 GMT
 ENV LAUNCHER_DEBUG=-Djvmcheck=nofail
-# Mon, 24 Jul 2017 17:21:26 GMT
+# Mon, 24 Jul 2017 22:22:06 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Mon, 24 Jul 2017 17:22:02 GMT
+# Mon, 24 Jul 2017 22:22:35 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh
-# Mon, 24 Jul 2017 17:22:07 GMT
+# Mon, 24 Jul 2017 22:22:38 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Mon, 24 Jul 2017 17:22:09 GMT
+# Mon, 24 Jul 2017 22:22:42 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d
-# Mon, 24 Jul 2017 17:22:09 GMT
+# Mon, 24 Jul 2017 22:22:42 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 17:22:10 GMT
+# Mon, 24 Jul 2017 22:22:43 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 24 Jul 2017 17:22:10 GMT
+# Mon, 24 Jul 2017 22:22:43 GMT
 COPY file:485ff0a6674b97f711e5be4a1ec900fc1002c363c00770d8b1c5809a76ccfc32 in / 
-# Mon, 24 Jul 2017 17:22:10 GMT
+# Mon, 24 Jul 2017 22:22:43 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 24 Jul 2017 17:22:10 GMT
+# Mon, 24 Jul 2017 22:22:43 GMT
 EXPOSE 8080/tcp
-# Mon, 24 Jul 2017 17:22:11 GMT
+# Mon, 24 Jul 2017 22:22:44 GMT
 EXPOSE 8787/tcp
-# Mon, 24 Jul 2017 17:22:11 GMT
+# Mon, 24 Jul 2017 22:22:44 GMT
 CMD ["nuxeoctl" "console"]
-# Mon, 24 Jul 2017 17:22:11 GMT
+# Mon, 24 Jul 2017 22:22:44 GMT
 USER [1000]
 ```
 
 -	Layers:
-	-	`sha256:c75480ad9aafadef6c7faf829ede40cf2fa990c9308d6cd354d53041b01a7cda`  
-		Last Modified: Tue, 20 Jun 2017 20:51:29 GMT  
-		Size: 45.1 MB (45139825 bytes)  
+	-	`sha256:06b22ddb19134ec8c42aaabd3e2e9f5b378e4e53da4a8960eaaaa86351190af3`  
+		Last Modified: Mon, 24 Jul 2017 16:59:30 GMT  
+		Size: 45.1 MB (45142935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18d67befbc4e6fc58906f99031e8183060a10ee8b4e30cd2a83a942f68760818`  
-		Last Modified: Wed, 21 Jun 2017 00:50:08 GMT  
-		Size: 11.1 MB (11108544 bytes)  
+	-	`sha256:336c28b408ed2225485696d1fada041792d7f1b47a4422175e203be4be2f83e6`  
+		Last Modified: Mon, 24 Jul 2017 17:36:29 GMT  
+		Size: 11.1 MB (11107641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f5d2d0853c76cad76d65745ca5b10e17ffe72647e78616bb28b2fd70e5173ab`  
-		Last Modified: Thu, 06 Jul 2017 23:56:33 GMT  
-		Size: 4.4 MB (4411344 bytes)  
+	-	`sha256:1f3e6b8d80c36cab97c677f32305f00ab2aedb16a26cfb37d0a3a48c50316dbb`  
+		Last Modified: Mon, 24 Jul 2017 17:36:27 GMT  
+		Size: 4.4 MB (4411330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5de358416a758e4776153bd86b34fcaa0f31b577b335845b968646e61ac78bf4`  
-		Last Modified: Thu, 06 Jul 2017 23:56:47 GMT  
-		Size: 50.0 MB (50004119 bytes)  
+	-	`sha256:5ccc640979f6f91dfddf979bdb4482bc9e9e021d5d3469dbefda306342d0a41b`  
+		Last Modified: Mon, 24 Jul 2017 17:36:55 GMT  
+		Size: 50.0 MB (50003328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4049b231edeab7c94920b61f8e95d5ae615893cf7ae7b9d28a670f5e47765ddf`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
-		Size: 660.4 KB (660432 bytes)  
+	-	`sha256:14eaa20184e60073d2705ab636fb92b4428dfc503b858b423608dba26d628c99`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 660.5 KB (660458 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6617c62c7c1089f445af30dda32df5c346c31019acf9077741422a3e4785a537`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:19a8522e2399427c6c6d4cb5748e3c9ea39188af728386b37ffa3719b60a08a0`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa26fbcddb08b7bc5e7847d2cd1bfb54bd4674c892a483341f8d59911cb012c2`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:39ba9d7befcada9c3bfe28fe046ee3ddf551dbcd0fe29a620071c07f49afc2e9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf9eeaccdbef302badbe408271f44e78f77ace907ad645f50e01e0c877a09a16`  
-		Last Modified: Fri, 21 Jul 2017 22:29:36 GMT  
-		Size: 183.1 MB (183110408 bytes)  
+	-	`sha256:1f81f3143db2f0e6bdd549cbb9a6128c217f2ef192c12b6044daed277cde2ae9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:46 GMT  
+		Size: 183.1 MB (183109092 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d0dbc643791b279d676519e037e59b3ba88b5e4579ab963a4d92fddb7b8017f`  
-		Last Modified: Fri, 21 Jul 2017 22:28:52 GMT  
-		Size: 272.0 KB (272005 bytes)  
+	-	`sha256:2034c15120cdd40d7f2d92f1233386821c361a328aea3b35a7345972a1d475c9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 272.0 KB (272003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a287b7cc778de57df3e30199ea510eaa920c2ab2942696704860e0221de4e0b3`  
-		Last Modified: Mon, 24 Jul 2017 17:27:26 GMT  
-		Size: 247.0 MB (247021754 bytes)  
+	-	`sha256:33a841106e7b0e0d940d44de41405b2664491ea796604565e668dee213466f67`  
+		Last Modified: Mon, 24 Jul 2017 22:28:16 GMT  
+		Size: 234.7 MB (234718011 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7533f29c5f2e9751ec60fc21a61a6d4ee58b36aa6ea588c1c0adf32ff748ee3e`  
-		Last Modified: Mon, 24 Jul 2017 17:27:47 GMT  
-		Size: 4.4 KB (4386 bytes)  
+	-	`sha256:9175915d024a7dd8b330fb134cd0019787a65f920bb8ece84510e5cce8e5667e`  
+		Last Modified: Mon, 24 Jul 2017 22:28:36 GMT  
+		Size: 4.4 KB (4377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ed726f7feb0ef63a1a1eca30d4982bdd2ea58fd53c5e2747dea90c8a23b6f6a`  
-		Last Modified: Mon, 24 Jul 2017 17:28:13 GMT  
-		Size: 280.5 MB (280457928 bytes)  
+	-	`sha256:abfea2c5e0ee7e4e799d108cc2a8a05b8245a6e79355f72c0f50e3a65eb2bf6b`  
+		Last Modified: Mon, 24 Jul 2017 22:29:20 GMT  
+		Size: 280.5 MB (280457934 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1aae015accc9072d44ca3c0eab4277b526a13a57322a52dac451502af05012a`  
-		Last Modified: Mon, 24 Jul 2017 17:28:13 GMT  
-		Size: 280.5 MB (280459784 bytes)  
+	-	`sha256:b9bc48c6e044b2a8d23dc9dc5c0ccbc3c8464c7e6878fcbfbabb974b07229566`  
+		Last Modified: Mon, 24 Jul 2017 22:28:59 GMT  
+		Size: 280.5 MB (280459885 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0b7699883a1e0bfb27e4cea3cec8ae65f40891018b0728b1d54faac5ef970b6`  
-		Last Modified: Mon, 24 Jul 2017 17:27:49 GMT  
+	-	`sha256:b0016e22eadb353774762bdb138753053d9e6704ba25946bd090cf8a991d761f`  
+		Last Modified: Mon, 24 Jul 2017 22:28:37 GMT  
 		Size: 244.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58e726f810a7d7ac4045c8aceb5b6fed4131ef8f454aee0caf6183e0b2d126fe`  
-		Last Modified: Mon, 24 Jul 2017 17:27:47 GMT  
+	-	`sha256:f13f64d0ddf97fb2d678a82867ef6d47296ac81f67a643cafd2ba22f7eba8a10`  
+		Last Modified: Mon, 24 Jul 2017 22:28:36 GMT  
 		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:LTS-2015`
 
 ```console
-$ docker pull nuxeo@sha256:d2dc52c9f33f0c94c82e80c2643a101f21be71590f793b0483554353a03d70d8
+$ docker pull nuxeo@sha256:616973173265148553e750efbb896b5f7833066d8cc96651197e5f93f334d0c8
 ```
 
 -	Platforms:
@@ -831,157 +831,157 @@ $ docker pull nuxeo@sha256:d2dc52c9f33f0c94c82e80c2643a101f21be71590f793b0483554
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 GB (1102652576 bytes)**  
+-	Total Size: **1.1 GB (1090349041 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7763d9610ce786385c3765c7deb5276a6dbdc705a55b1a26276433be99ae6478`
+-	Image ID: `sha256:c61dbd75e48c9e5dcb0a00b4779912cacbf9af4c6d1a46fcfe32acf26f6bd10e`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Tue, 20 Jun 2017 20:24:09 GMT
-ADD file:93a0dbb6973bc13e5478292bfe283ff91745ca6e23b6fd3363f0661c45deb1ec in / 
-# Tue, 20 Jun 2017 20:24:10 GMT
+# Mon, 24 Jul 2017 16:52:54 GMT
+ADD file:ebba725fb97cea45d0b1b35ccc8144e766fcfc9a78530465c23b0c4674b14042 in / 
+# Mon, 24 Jul 2017 16:52:55 GMT
 CMD ["bash"]
-# Tue, 20 Jun 2017 21:21:56 GMT
+# Mon, 24 Jul 2017 17:28:39 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 22:30:39 GMT
+# Mon, 24 Jul 2017 17:28:45 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 06 Jul 2017 22:31:21 GMT
+# Mon, 24 Jul 2017 17:29:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:28 GMT
+# Mon, 24 Jul 2017 18:09:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:29 GMT
+# Mon, 24 Jul 2017 18:09:51 GMT
 ENV LANG=C.UTF-8
-# Thu, 06 Jul 2017 23:11:31 GMT
+# Mon, 24 Jul 2017 18:09:52 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 06 Jul 2017 23:11:33 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_HOME=/docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_VERSION=8u131
-# Thu, 06 Jul 2017 23:11:35 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_DEBIAN_VERSION=8u131-b11-2
-# Thu, 06 Jul 2017 23:11:36 GMT
+# Mon, 24 Jul 2017 18:09:54 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 21 Jul 2017 22:10:38 GMT
+# Mon, 24 Jul 2017 18:10:48 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 21 Jul 2017 22:10:42 GMT
+# Mon, 24 Jul 2017 18:10:51 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Mon, 24 Jul 2017 17:17:03 GMT
+# Mon, 24 Jul 2017 22:19:48 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Mon, 24 Jul 2017 17:19:02 GMT
+# Mon, 24 Jul 2017 22:21:30 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libreoffice     libwpd-tools     exiftool     ghostscript  && rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:19:03 GMT
+# Mon, 24 Jul 2017 22:21:31 GMT
 RUN find / -perm +6000 -type f -exec chmod a-s {} \; || true
-# Mon, 24 Jul 2017 17:19:03 GMT
+# Mon, 24 Jul 2017 22:21:31 GMT
 ENV NUXEO_USER=nuxeo
-# Mon, 24 Jul 2017 17:19:03 GMT
+# Mon, 24 Jul 2017 22:21:31 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Mon, 24 Jul 2017 17:21:25 GMT
+# Mon, 24 Jul 2017 22:22:04 GMT
 ARG NUXEO_VERSION=7.10
-# Mon, 24 Jul 2017 17:21:25 GMT
+# Mon, 24 Jul 2017 22:22:05 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip
-# Mon, 24 Jul 2017 17:21:25 GMT
+# Mon, 24 Jul 2017 22:22:05 GMT
 ARG NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2
-# Mon, 24 Jul 2017 17:21:26 GMT
+# Mon, 24 Jul 2017 22:22:05 GMT
 ENV LAUNCHER_DEBUG=-Djvmcheck=nofail
-# Mon, 24 Jul 2017 17:21:26 GMT
+# Mon, 24 Jul 2017 22:22:06 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Mon, 24 Jul 2017 17:22:02 GMT
+# Mon, 24 Jul 2017 22:22:35 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh
-# Mon, 24 Jul 2017 17:22:07 GMT
+# Mon, 24 Jul 2017 22:22:38 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Mon, 24 Jul 2017 17:22:09 GMT
+# Mon, 24 Jul 2017 22:22:42 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-7.10/nuxeo-cap-7.10-tomcat.zip NUXEO_MD5=de2084b1a6fab4b1c8fb769903b044f2 NUXEO_VERSION=7.10
 RUN mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d
-# Mon, 24 Jul 2017 17:22:09 GMT
+# Mon, 24 Jul 2017 22:22:42 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 17:22:10 GMT
+# Mon, 24 Jul 2017 22:22:43 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 24 Jul 2017 17:22:10 GMT
+# Mon, 24 Jul 2017 22:22:43 GMT
 COPY file:485ff0a6674b97f711e5be4a1ec900fc1002c363c00770d8b1c5809a76ccfc32 in / 
-# Mon, 24 Jul 2017 17:22:10 GMT
+# Mon, 24 Jul 2017 22:22:43 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 24 Jul 2017 17:22:10 GMT
+# Mon, 24 Jul 2017 22:22:43 GMT
 EXPOSE 8080/tcp
-# Mon, 24 Jul 2017 17:22:11 GMT
+# Mon, 24 Jul 2017 22:22:44 GMT
 EXPOSE 8787/tcp
-# Mon, 24 Jul 2017 17:22:11 GMT
+# Mon, 24 Jul 2017 22:22:44 GMT
 CMD ["nuxeoctl" "console"]
-# Mon, 24 Jul 2017 17:22:11 GMT
+# Mon, 24 Jul 2017 22:22:44 GMT
 USER [1000]
 ```
 
 -	Layers:
-	-	`sha256:c75480ad9aafadef6c7faf829ede40cf2fa990c9308d6cd354d53041b01a7cda`  
-		Last Modified: Tue, 20 Jun 2017 20:51:29 GMT  
-		Size: 45.1 MB (45139825 bytes)  
+	-	`sha256:06b22ddb19134ec8c42aaabd3e2e9f5b378e4e53da4a8960eaaaa86351190af3`  
+		Last Modified: Mon, 24 Jul 2017 16:59:30 GMT  
+		Size: 45.1 MB (45142935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18d67befbc4e6fc58906f99031e8183060a10ee8b4e30cd2a83a942f68760818`  
-		Last Modified: Wed, 21 Jun 2017 00:50:08 GMT  
-		Size: 11.1 MB (11108544 bytes)  
+	-	`sha256:336c28b408ed2225485696d1fada041792d7f1b47a4422175e203be4be2f83e6`  
+		Last Modified: Mon, 24 Jul 2017 17:36:29 GMT  
+		Size: 11.1 MB (11107641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f5d2d0853c76cad76d65745ca5b10e17ffe72647e78616bb28b2fd70e5173ab`  
-		Last Modified: Thu, 06 Jul 2017 23:56:33 GMT  
-		Size: 4.4 MB (4411344 bytes)  
+	-	`sha256:1f3e6b8d80c36cab97c677f32305f00ab2aedb16a26cfb37d0a3a48c50316dbb`  
+		Last Modified: Mon, 24 Jul 2017 17:36:27 GMT  
+		Size: 4.4 MB (4411330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5de358416a758e4776153bd86b34fcaa0f31b577b335845b968646e61ac78bf4`  
-		Last Modified: Thu, 06 Jul 2017 23:56:47 GMT  
-		Size: 50.0 MB (50004119 bytes)  
+	-	`sha256:5ccc640979f6f91dfddf979bdb4482bc9e9e021d5d3469dbefda306342d0a41b`  
+		Last Modified: Mon, 24 Jul 2017 17:36:55 GMT  
+		Size: 50.0 MB (50003328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4049b231edeab7c94920b61f8e95d5ae615893cf7ae7b9d28a670f5e47765ddf`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
-		Size: 660.4 KB (660432 bytes)  
+	-	`sha256:14eaa20184e60073d2705ab636fb92b4428dfc503b858b423608dba26d628c99`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 660.5 KB (660458 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6617c62c7c1089f445af30dda32df5c346c31019acf9077741422a3e4785a537`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:19a8522e2399427c6c6d4cb5748e3c9ea39188af728386b37ffa3719b60a08a0`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa26fbcddb08b7bc5e7847d2cd1bfb54bd4674c892a483341f8d59911cb012c2`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:39ba9d7befcada9c3bfe28fe046ee3ddf551dbcd0fe29a620071c07f49afc2e9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf9eeaccdbef302badbe408271f44e78f77ace907ad645f50e01e0c877a09a16`  
-		Last Modified: Fri, 21 Jul 2017 22:29:36 GMT  
-		Size: 183.1 MB (183110408 bytes)  
+	-	`sha256:1f81f3143db2f0e6bdd549cbb9a6128c217f2ef192c12b6044daed277cde2ae9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:46 GMT  
+		Size: 183.1 MB (183109092 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d0dbc643791b279d676519e037e59b3ba88b5e4579ab963a4d92fddb7b8017f`  
-		Last Modified: Fri, 21 Jul 2017 22:28:52 GMT  
-		Size: 272.0 KB (272005 bytes)  
+	-	`sha256:2034c15120cdd40d7f2d92f1233386821c361a328aea3b35a7345972a1d475c9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 272.0 KB (272003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a287b7cc778de57df3e30199ea510eaa920c2ab2942696704860e0221de4e0b3`  
-		Last Modified: Mon, 24 Jul 2017 17:27:26 GMT  
-		Size: 247.0 MB (247021754 bytes)  
+	-	`sha256:33a841106e7b0e0d940d44de41405b2664491ea796604565e668dee213466f67`  
+		Last Modified: Mon, 24 Jul 2017 22:28:16 GMT  
+		Size: 234.7 MB (234718011 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7533f29c5f2e9751ec60fc21a61a6d4ee58b36aa6ea588c1c0adf32ff748ee3e`  
-		Last Modified: Mon, 24 Jul 2017 17:27:47 GMT  
-		Size: 4.4 KB (4386 bytes)  
+	-	`sha256:9175915d024a7dd8b330fb134cd0019787a65f920bb8ece84510e5cce8e5667e`  
+		Last Modified: Mon, 24 Jul 2017 22:28:36 GMT  
+		Size: 4.4 KB (4377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6ed726f7feb0ef63a1a1eca30d4982bdd2ea58fd53c5e2747dea90c8a23b6f6a`  
-		Last Modified: Mon, 24 Jul 2017 17:28:13 GMT  
-		Size: 280.5 MB (280457928 bytes)  
+	-	`sha256:abfea2c5e0ee7e4e799d108cc2a8a05b8245a6e79355f72c0f50e3a65eb2bf6b`  
+		Last Modified: Mon, 24 Jul 2017 22:29:20 GMT  
+		Size: 280.5 MB (280457934 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1aae015accc9072d44ca3c0eab4277b526a13a57322a52dac451502af05012a`  
-		Last Modified: Mon, 24 Jul 2017 17:28:13 GMT  
-		Size: 280.5 MB (280459784 bytes)  
+	-	`sha256:b9bc48c6e044b2a8d23dc9dc5c0ccbc3c8464c7e6878fcbfbabb974b07229566`  
+		Last Modified: Mon, 24 Jul 2017 22:28:59 GMT  
+		Size: 280.5 MB (280459885 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f0b7699883a1e0bfb27e4cea3cec8ae65f40891018b0728b1d54faac5ef970b6`  
-		Last Modified: Mon, 24 Jul 2017 17:27:49 GMT  
+	-	`sha256:b0016e22eadb353774762bdb138753053d9e6704ba25946bd090cf8a991d761f`  
+		Last Modified: Mon, 24 Jul 2017 22:28:37 GMT  
 		Size: 244.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58e726f810a7d7ac4045c8aceb5b6fed4131ef8f454aee0caf6183e0b2d126fe`  
-		Last Modified: Mon, 24 Jul 2017 17:27:47 GMT  
+	-	`sha256:f13f64d0ddf97fb2d678a82867ef6d47296ac81f67a643cafd2ba22f7eba8a10`  
+		Last Modified: Mon, 24 Jul 2017 22:28:36 GMT  
 		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:8.10`
 
 ```console
-$ docker pull nuxeo@sha256:6ee350e44962bebc9493d05ed4a8e106435a5502cb2bf2fb6e72a903fd8af428
+$ docker pull nuxeo@sha256:e8e45fb25d8c0a41412819ad0d517383b9fa7204e2e2a8c3188260f65fc01a7f
 ```
 
 -	Platforms:
@@ -991,155 +991,155 @@ $ docker pull nuxeo@sha256:6ee350e44962bebc9493d05ed4a8e106435a5502cb2bf2fb6e72a
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 GB (1080981584 bytes)**  
+-	Total Size: **1.1 GB (1068676700 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0b6d39e0905c90e6f88d3353e00b153327a2a8f1c992db304aa5bcafa6416c2e`
+-	Image ID: `sha256:88f971595222ce113f47d4d373c8e55f29793dfa1ab9343cc12fc00d7e45c556`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Tue, 20 Jun 2017 20:24:09 GMT
-ADD file:93a0dbb6973bc13e5478292bfe283ff91745ca6e23b6fd3363f0661c45deb1ec in / 
-# Tue, 20 Jun 2017 20:24:10 GMT
+# Mon, 24 Jul 2017 16:52:54 GMT
+ADD file:ebba725fb97cea45d0b1b35ccc8144e766fcfc9a78530465c23b0c4674b14042 in / 
+# Mon, 24 Jul 2017 16:52:55 GMT
 CMD ["bash"]
-# Tue, 20 Jun 2017 21:21:56 GMT
+# Mon, 24 Jul 2017 17:28:39 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 22:30:39 GMT
+# Mon, 24 Jul 2017 17:28:45 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 06 Jul 2017 22:31:21 GMT
+# Mon, 24 Jul 2017 17:29:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:28 GMT
+# Mon, 24 Jul 2017 18:09:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:29 GMT
+# Mon, 24 Jul 2017 18:09:51 GMT
 ENV LANG=C.UTF-8
-# Thu, 06 Jul 2017 23:11:31 GMT
+# Mon, 24 Jul 2017 18:09:52 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 06 Jul 2017 23:11:33 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_HOME=/docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_VERSION=8u131
-# Thu, 06 Jul 2017 23:11:35 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_DEBIAN_VERSION=8u131-b11-2
-# Thu, 06 Jul 2017 23:11:36 GMT
+# Mon, 24 Jul 2017 18:09:54 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 21 Jul 2017 22:10:38 GMT
+# Mon, 24 Jul 2017 18:10:48 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 21 Jul 2017 22:10:42 GMT
+# Mon, 24 Jul 2017 18:10:51 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Mon, 24 Jul 2017 17:17:03 GMT
+# Mon, 24 Jul 2017 22:19:48 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Mon, 24 Jul 2017 17:23:34 GMT
+# Mon, 24 Jul 2017 22:24:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libwpd-tools     exiftool     ghostscript     libreoffice  && rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:55 GMT
 RUN find / -perm +6000 -type f -exec chmod a-s {} \; || true
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ENV NUXEO_USER=nuxeo
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Mon, 24 Jul 2017 17:23:37 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ARG NUXEO_VERSION=8.10
-# Mon, 24 Jul 2017 17:23:37 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip
-# Mon, 24 Jul 2017 17:23:37 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ARG NUXEO_MD5=29e67a19bba54099093b51d892926be1
-# Mon, 24 Jul 2017 17:23:39 GMT
+# Mon, 24 Jul 2017 22:24:57 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Mon, 24 Jul 2017 17:24:12 GMT
+# Mon, 24 Jul 2017 22:25:28 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh
-# Mon, 24 Jul 2017 17:24:17 GMT
+# Mon, 24 Jul 2017 22:25:32 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Mon, 24 Jul 2017 17:24:19 GMT
+# Mon, 24 Jul 2017 22:25:34 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d
-# Mon, 24 Jul 2017 17:24:19 GMT
+# Mon, 24 Jul 2017 22:25:34 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 17:24:20 GMT
+# Mon, 24 Jul 2017 22:25:34 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 24 Jul 2017 17:24:20 GMT
+# Mon, 24 Jul 2017 22:25:35 GMT
 COPY file:485ff0a6674b97f711e5be4a1ec900fc1002c363c00770d8b1c5809a76ccfc32 in / 
-# Mon, 24 Jul 2017 17:24:22 GMT
+# Mon, 24 Jul 2017 22:25:35 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 24 Jul 2017 17:24:22 GMT
+# Mon, 24 Jul 2017 22:25:35 GMT
 EXPOSE 8080/tcp
-# Mon, 24 Jul 2017 17:24:23 GMT
+# Mon, 24 Jul 2017 22:25:35 GMT
 EXPOSE 8787/tcp
-# Mon, 24 Jul 2017 17:24:23 GMT
+# Mon, 24 Jul 2017 22:25:36 GMT
 CMD ["nuxeoctl" "console"]
-# Mon, 24 Jul 2017 17:24:23 GMT
+# Mon, 24 Jul 2017 22:25:36 GMT
 USER [1000]
 ```
 
 -	Layers:
-	-	`sha256:c75480ad9aafadef6c7faf829ede40cf2fa990c9308d6cd354d53041b01a7cda`  
-		Last Modified: Tue, 20 Jun 2017 20:51:29 GMT  
-		Size: 45.1 MB (45139825 bytes)  
+	-	`sha256:06b22ddb19134ec8c42aaabd3e2e9f5b378e4e53da4a8960eaaaa86351190af3`  
+		Last Modified: Mon, 24 Jul 2017 16:59:30 GMT  
+		Size: 45.1 MB (45142935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18d67befbc4e6fc58906f99031e8183060a10ee8b4e30cd2a83a942f68760818`  
-		Last Modified: Wed, 21 Jun 2017 00:50:08 GMT  
-		Size: 11.1 MB (11108544 bytes)  
+	-	`sha256:336c28b408ed2225485696d1fada041792d7f1b47a4422175e203be4be2f83e6`  
+		Last Modified: Mon, 24 Jul 2017 17:36:29 GMT  
+		Size: 11.1 MB (11107641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f5d2d0853c76cad76d65745ca5b10e17ffe72647e78616bb28b2fd70e5173ab`  
-		Last Modified: Thu, 06 Jul 2017 23:56:33 GMT  
-		Size: 4.4 MB (4411344 bytes)  
+	-	`sha256:1f3e6b8d80c36cab97c677f32305f00ab2aedb16a26cfb37d0a3a48c50316dbb`  
+		Last Modified: Mon, 24 Jul 2017 17:36:27 GMT  
+		Size: 4.4 MB (4411330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5de358416a758e4776153bd86b34fcaa0f31b577b335845b968646e61ac78bf4`  
-		Last Modified: Thu, 06 Jul 2017 23:56:47 GMT  
-		Size: 50.0 MB (50004119 bytes)  
+	-	`sha256:5ccc640979f6f91dfddf979bdb4482bc9e9e021d5d3469dbefda306342d0a41b`  
+		Last Modified: Mon, 24 Jul 2017 17:36:55 GMT  
+		Size: 50.0 MB (50003328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4049b231edeab7c94920b61f8e95d5ae615893cf7ae7b9d28a670f5e47765ddf`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
-		Size: 660.4 KB (660432 bytes)  
+	-	`sha256:14eaa20184e60073d2705ab636fb92b4428dfc503b858b423608dba26d628c99`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 660.5 KB (660458 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6617c62c7c1089f445af30dda32df5c346c31019acf9077741422a3e4785a537`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:19a8522e2399427c6c6d4cb5748e3c9ea39188af728386b37ffa3719b60a08a0`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa26fbcddb08b7bc5e7847d2cd1bfb54bd4674c892a483341f8d59911cb012c2`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:39ba9d7befcada9c3bfe28fe046ee3ddf551dbcd0fe29a620071c07f49afc2e9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf9eeaccdbef302badbe408271f44e78f77ace907ad645f50e01e0c877a09a16`  
-		Last Modified: Fri, 21 Jul 2017 22:29:36 GMT  
-		Size: 183.1 MB (183110408 bytes)  
+	-	`sha256:1f81f3143db2f0e6bdd549cbb9a6128c217f2ef192c12b6044daed277cde2ae9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:46 GMT  
+		Size: 183.1 MB (183109092 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d0dbc643791b279d676519e037e59b3ba88b5e4579ab963a4d92fddb7b8017f`  
-		Last Modified: Fri, 21 Jul 2017 22:28:52 GMT  
-		Size: 272.0 KB (272005 bytes)  
+	-	`sha256:2034c15120cdd40d7f2d92f1233386821c361a328aea3b35a7345972a1d475c9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 272.0 KB (272003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3fe160733c2ccfd144eb302432b6c70e670cb4873c3c04ecc95aab6bd777d7ff`  
-		Last Modified: Mon, 24 Jul 2017 17:29:36 GMT  
-		Size: 247.0 MB (247021948 bytes)  
+	-	`sha256:01367c054cd2d56cdebc2e15fe0aee242c9d5820aa67b086a216a6da1ab8f550`  
+		Last Modified: Mon, 24 Jul 2017 22:30:28 GMT  
+		Size: 234.7 MB (234716987 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec74bf5e16e98eb2d5265066058ef1718f7938daa25ef7307ef0fc91699613fe`  
-		Last Modified: Mon, 24 Jul 2017 17:28:36 GMT  
-		Size: 4.4 KB (4387 bytes)  
+	-	`sha256:a158677938f361da44bee7c6c1f8c4cecfd3031528e510082326eb43e73d9643`  
+		Last Modified: Mon, 24 Jul 2017 22:29:40 GMT  
+		Size: 4.4 KB (4374 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86b5c57f7f8c0fc8c19b8b0f164d9d8f9437a2ccb7fd6081e81d2ee8d17f8d5b`  
-		Last Modified: Mon, 24 Jul 2017 17:29:00 GMT  
-		Size: 269.6 MB (269622064 bytes)  
+	-	`sha256:d7abfc50d60e0e1f5829a220f367942b8de01b7a825825b16585358cbb640667`  
+		Last Modified: Mon, 24 Jul 2017 22:30:01 GMT  
+		Size: 269.6 MB (269622118 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b6288597f7e727d7d7fa356a1e10b45bb1d6ca863b312f6077ab4c200577cce`  
-		Last Modified: Mon, 24 Jul 2017 17:29:01 GMT  
-		Size: 269.6 MB (269624462 bytes)  
+	-	`sha256:2121e598f911b511ea32236ee4a1133323514cd9e2dd85ac42b7ae629b276822`  
+		Last Modified: Mon, 24 Jul 2017 22:30:00 GMT  
+		Size: 269.6 MB (269624387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a501b8d52ec4f03b98c2f598ddf2d7f0309e02db5bb31c18000aa8032abf47b`  
-		Last Modified: Mon, 24 Jul 2017 17:28:35 GMT  
-		Size: 243.0 B  
+	-	`sha256:00e1d5e587e7aadce7d7c76ca596157332859b22eedb7806cd872a27997ff844`  
+		Last Modified: Mon, 24 Jul 2017 22:29:40 GMT  
+		Size: 244.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:303099d844e1567d05d3566bb6dee04d1fd53154e69808dbe57ddb4dfe1ceb02`  
-		Last Modified: Mon, 24 Jul 2017 17:28:35 GMT  
+	-	`sha256:d00f9e766e5d6e2650da6c34e145f5631e6e281f93ab65aee50fc952212ca523`  
+		Last Modified: Mon, 24 Jul 2017 22:29:41 GMT  
 		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:8`
 
 ```console
-$ docker pull nuxeo@sha256:6ee350e44962bebc9493d05ed4a8e106435a5502cb2bf2fb6e72a903fd8af428
+$ docker pull nuxeo@sha256:e8e45fb25d8c0a41412819ad0d517383b9fa7204e2e2a8c3188260f65fc01a7f
 ```
 
 -	Platforms:
@@ -1149,155 +1149,155 @@ $ docker pull nuxeo@sha256:6ee350e44962bebc9493d05ed4a8e106435a5502cb2bf2fb6e72a
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 GB (1080981584 bytes)**  
+-	Total Size: **1.1 GB (1068676700 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0b6d39e0905c90e6f88d3353e00b153327a2a8f1c992db304aa5bcafa6416c2e`
+-	Image ID: `sha256:88f971595222ce113f47d4d373c8e55f29793dfa1ab9343cc12fc00d7e45c556`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Tue, 20 Jun 2017 20:24:09 GMT
-ADD file:93a0dbb6973bc13e5478292bfe283ff91745ca6e23b6fd3363f0661c45deb1ec in / 
-# Tue, 20 Jun 2017 20:24:10 GMT
+# Mon, 24 Jul 2017 16:52:54 GMT
+ADD file:ebba725fb97cea45d0b1b35ccc8144e766fcfc9a78530465c23b0c4674b14042 in / 
+# Mon, 24 Jul 2017 16:52:55 GMT
 CMD ["bash"]
-# Tue, 20 Jun 2017 21:21:56 GMT
+# Mon, 24 Jul 2017 17:28:39 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 22:30:39 GMT
+# Mon, 24 Jul 2017 17:28:45 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 06 Jul 2017 22:31:21 GMT
+# Mon, 24 Jul 2017 17:29:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:28 GMT
+# Mon, 24 Jul 2017 18:09:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:29 GMT
+# Mon, 24 Jul 2017 18:09:51 GMT
 ENV LANG=C.UTF-8
-# Thu, 06 Jul 2017 23:11:31 GMT
+# Mon, 24 Jul 2017 18:09:52 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 06 Jul 2017 23:11:33 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_HOME=/docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_VERSION=8u131
-# Thu, 06 Jul 2017 23:11:35 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_DEBIAN_VERSION=8u131-b11-2
-# Thu, 06 Jul 2017 23:11:36 GMT
+# Mon, 24 Jul 2017 18:09:54 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 21 Jul 2017 22:10:38 GMT
+# Mon, 24 Jul 2017 18:10:48 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 21 Jul 2017 22:10:42 GMT
+# Mon, 24 Jul 2017 18:10:51 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Mon, 24 Jul 2017 17:17:03 GMT
+# Mon, 24 Jul 2017 22:19:48 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Mon, 24 Jul 2017 17:23:34 GMT
+# Mon, 24 Jul 2017 22:24:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libwpd-tools     exiftool     ghostscript     libreoffice  && rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:55 GMT
 RUN find / -perm +6000 -type f -exec chmod a-s {} \; || true
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ENV NUXEO_USER=nuxeo
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Mon, 24 Jul 2017 17:23:37 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ARG NUXEO_VERSION=8.10
-# Mon, 24 Jul 2017 17:23:37 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip
-# Mon, 24 Jul 2017 17:23:37 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ARG NUXEO_MD5=29e67a19bba54099093b51d892926be1
-# Mon, 24 Jul 2017 17:23:39 GMT
+# Mon, 24 Jul 2017 22:24:57 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Mon, 24 Jul 2017 17:24:12 GMT
+# Mon, 24 Jul 2017 22:25:28 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh
-# Mon, 24 Jul 2017 17:24:17 GMT
+# Mon, 24 Jul 2017 22:25:32 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Mon, 24 Jul 2017 17:24:19 GMT
+# Mon, 24 Jul 2017 22:25:34 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d
-# Mon, 24 Jul 2017 17:24:19 GMT
+# Mon, 24 Jul 2017 22:25:34 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 17:24:20 GMT
+# Mon, 24 Jul 2017 22:25:34 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 24 Jul 2017 17:24:20 GMT
+# Mon, 24 Jul 2017 22:25:35 GMT
 COPY file:485ff0a6674b97f711e5be4a1ec900fc1002c363c00770d8b1c5809a76ccfc32 in / 
-# Mon, 24 Jul 2017 17:24:22 GMT
+# Mon, 24 Jul 2017 22:25:35 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 24 Jul 2017 17:24:22 GMT
+# Mon, 24 Jul 2017 22:25:35 GMT
 EXPOSE 8080/tcp
-# Mon, 24 Jul 2017 17:24:23 GMT
+# Mon, 24 Jul 2017 22:25:35 GMT
 EXPOSE 8787/tcp
-# Mon, 24 Jul 2017 17:24:23 GMT
+# Mon, 24 Jul 2017 22:25:36 GMT
 CMD ["nuxeoctl" "console"]
-# Mon, 24 Jul 2017 17:24:23 GMT
+# Mon, 24 Jul 2017 22:25:36 GMT
 USER [1000]
 ```
 
 -	Layers:
-	-	`sha256:c75480ad9aafadef6c7faf829ede40cf2fa990c9308d6cd354d53041b01a7cda`  
-		Last Modified: Tue, 20 Jun 2017 20:51:29 GMT  
-		Size: 45.1 MB (45139825 bytes)  
+	-	`sha256:06b22ddb19134ec8c42aaabd3e2e9f5b378e4e53da4a8960eaaaa86351190af3`  
+		Last Modified: Mon, 24 Jul 2017 16:59:30 GMT  
+		Size: 45.1 MB (45142935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18d67befbc4e6fc58906f99031e8183060a10ee8b4e30cd2a83a942f68760818`  
-		Last Modified: Wed, 21 Jun 2017 00:50:08 GMT  
-		Size: 11.1 MB (11108544 bytes)  
+	-	`sha256:336c28b408ed2225485696d1fada041792d7f1b47a4422175e203be4be2f83e6`  
+		Last Modified: Mon, 24 Jul 2017 17:36:29 GMT  
+		Size: 11.1 MB (11107641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f5d2d0853c76cad76d65745ca5b10e17ffe72647e78616bb28b2fd70e5173ab`  
-		Last Modified: Thu, 06 Jul 2017 23:56:33 GMT  
-		Size: 4.4 MB (4411344 bytes)  
+	-	`sha256:1f3e6b8d80c36cab97c677f32305f00ab2aedb16a26cfb37d0a3a48c50316dbb`  
+		Last Modified: Mon, 24 Jul 2017 17:36:27 GMT  
+		Size: 4.4 MB (4411330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5de358416a758e4776153bd86b34fcaa0f31b577b335845b968646e61ac78bf4`  
-		Last Modified: Thu, 06 Jul 2017 23:56:47 GMT  
-		Size: 50.0 MB (50004119 bytes)  
+	-	`sha256:5ccc640979f6f91dfddf979bdb4482bc9e9e021d5d3469dbefda306342d0a41b`  
+		Last Modified: Mon, 24 Jul 2017 17:36:55 GMT  
+		Size: 50.0 MB (50003328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4049b231edeab7c94920b61f8e95d5ae615893cf7ae7b9d28a670f5e47765ddf`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
-		Size: 660.4 KB (660432 bytes)  
+	-	`sha256:14eaa20184e60073d2705ab636fb92b4428dfc503b858b423608dba26d628c99`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 660.5 KB (660458 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6617c62c7c1089f445af30dda32df5c346c31019acf9077741422a3e4785a537`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:19a8522e2399427c6c6d4cb5748e3c9ea39188af728386b37ffa3719b60a08a0`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa26fbcddb08b7bc5e7847d2cd1bfb54bd4674c892a483341f8d59911cb012c2`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:39ba9d7befcada9c3bfe28fe046ee3ddf551dbcd0fe29a620071c07f49afc2e9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf9eeaccdbef302badbe408271f44e78f77ace907ad645f50e01e0c877a09a16`  
-		Last Modified: Fri, 21 Jul 2017 22:29:36 GMT  
-		Size: 183.1 MB (183110408 bytes)  
+	-	`sha256:1f81f3143db2f0e6bdd549cbb9a6128c217f2ef192c12b6044daed277cde2ae9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:46 GMT  
+		Size: 183.1 MB (183109092 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d0dbc643791b279d676519e037e59b3ba88b5e4579ab963a4d92fddb7b8017f`  
-		Last Modified: Fri, 21 Jul 2017 22:28:52 GMT  
-		Size: 272.0 KB (272005 bytes)  
+	-	`sha256:2034c15120cdd40d7f2d92f1233386821c361a328aea3b35a7345972a1d475c9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 272.0 KB (272003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3fe160733c2ccfd144eb302432b6c70e670cb4873c3c04ecc95aab6bd777d7ff`  
-		Last Modified: Mon, 24 Jul 2017 17:29:36 GMT  
-		Size: 247.0 MB (247021948 bytes)  
+	-	`sha256:01367c054cd2d56cdebc2e15fe0aee242c9d5820aa67b086a216a6da1ab8f550`  
+		Last Modified: Mon, 24 Jul 2017 22:30:28 GMT  
+		Size: 234.7 MB (234716987 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec74bf5e16e98eb2d5265066058ef1718f7938daa25ef7307ef0fc91699613fe`  
-		Last Modified: Mon, 24 Jul 2017 17:28:36 GMT  
-		Size: 4.4 KB (4387 bytes)  
+	-	`sha256:a158677938f361da44bee7c6c1f8c4cecfd3031528e510082326eb43e73d9643`  
+		Last Modified: Mon, 24 Jul 2017 22:29:40 GMT  
+		Size: 4.4 KB (4374 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86b5c57f7f8c0fc8c19b8b0f164d9d8f9437a2ccb7fd6081e81d2ee8d17f8d5b`  
-		Last Modified: Mon, 24 Jul 2017 17:29:00 GMT  
-		Size: 269.6 MB (269622064 bytes)  
+	-	`sha256:d7abfc50d60e0e1f5829a220f367942b8de01b7a825825b16585358cbb640667`  
+		Last Modified: Mon, 24 Jul 2017 22:30:01 GMT  
+		Size: 269.6 MB (269622118 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b6288597f7e727d7d7fa356a1e10b45bb1d6ca863b312f6077ab4c200577cce`  
-		Last Modified: Mon, 24 Jul 2017 17:29:01 GMT  
-		Size: 269.6 MB (269624462 bytes)  
+	-	`sha256:2121e598f911b511ea32236ee4a1133323514cd9e2dd85ac42b7ae629b276822`  
+		Last Modified: Mon, 24 Jul 2017 22:30:00 GMT  
+		Size: 269.6 MB (269624387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a501b8d52ec4f03b98c2f598ddf2d7f0309e02db5bb31c18000aa8032abf47b`  
-		Last Modified: Mon, 24 Jul 2017 17:28:35 GMT  
-		Size: 243.0 B  
+	-	`sha256:00e1d5e587e7aadce7d7c76ca596157332859b22eedb7806cd872a27997ff844`  
+		Last Modified: Mon, 24 Jul 2017 22:29:40 GMT  
+		Size: 244.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:303099d844e1567d05d3566bb6dee04d1fd53154e69808dbe57ddb4dfe1ceb02`  
-		Last Modified: Mon, 24 Jul 2017 17:28:35 GMT  
+	-	`sha256:d00f9e766e5d6e2650da6c34e145f5631e6e281f93ab65aee50fc952212ca523`  
+		Last Modified: Mon, 24 Jul 2017 22:29:41 GMT  
 		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:LTS-2016`
 
 ```console
-$ docker pull nuxeo@sha256:6ee350e44962bebc9493d05ed4a8e106435a5502cb2bf2fb6e72a903fd8af428
+$ docker pull nuxeo@sha256:e8e45fb25d8c0a41412819ad0d517383b9fa7204e2e2a8c3188260f65fc01a7f
 ```
 
 -	Platforms:
@@ -1307,155 +1307,155 @@ $ docker pull nuxeo@sha256:6ee350e44962bebc9493d05ed4a8e106435a5502cb2bf2fb6e72a
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 GB (1080981584 bytes)**  
+-	Total Size: **1.1 GB (1068676700 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0b6d39e0905c90e6f88d3353e00b153327a2a8f1c992db304aa5bcafa6416c2e`
+-	Image ID: `sha256:88f971595222ce113f47d4d373c8e55f29793dfa1ab9343cc12fc00d7e45c556`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Tue, 20 Jun 2017 20:24:09 GMT
-ADD file:93a0dbb6973bc13e5478292bfe283ff91745ca6e23b6fd3363f0661c45deb1ec in / 
-# Tue, 20 Jun 2017 20:24:10 GMT
+# Mon, 24 Jul 2017 16:52:54 GMT
+ADD file:ebba725fb97cea45d0b1b35ccc8144e766fcfc9a78530465c23b0c4674b14042 in / 
+# Mon, 24 Jul 2017 16:52:55 GMT
 CMD ["bash"]
-# Tue, 20 Jun 2017 21:21:56 GMT
+# Mon, 24 Jul 2017 17:28:39 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 22:30:39 GMT
+# Mon, 24 Jul 2017 17:28:45 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 06 Jul 2017 22:31:21 GMT
+# Mon, 24 Jul 2017 17:29:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:28 GMT
+# Mon, 24 Jul 2017 18:09:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:29 GMT
+# Mon, 24 Jul 2017 18:09:51 GMT
 ENV LANG=C.UTF-8
-# Thu, 06 Jul 2017 23:11:31 GMT
+# Mon, 24 Jul 2017 18:09:52 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 06 Jul 2017 23:11:33 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_HOME=/docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_VERSION=8u131
-# Thu, 06 Jul 2017 23:11:35 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_DEBIAN_VERSION=8u131-b11-2
-# Thu, 06 Jul 2017 23:11:36 GMT
+# Mon, 24 Jul 2017 18:09:54 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 21 Jul 2017 22:10:38 GMT
+# Mon, 24 Jul 2017 18:10:48 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 21 Jul 2017 22:10:42 GMT
+# Mon, 24 Jul 2017 18:10:51 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Mon, 24 Jul 2017 17:17:03 GMT
+# Mon, 24 Jul 2017 22:19:48 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Mon, 24 Jul 2017 17:23:34 GMT
+# Mon, 24 Jul 2017 22:24:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libwpd-tools     exiftool     ghostscript     libreoffice  && rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:55 GMT
 RUN find / -perm +6000 -type f -exec chmod a-s {} \; || true
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ENV NUXEO_USER=nuxeo
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Mon, 24 Jul 2017 17:23:37 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ARG NUXEO_VERSION=8.10
-# Mon, 24 Jul 2017 17:23:37 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip
-# Mon, 24 Jul 2017 17:23:37 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ARG NUXEO_MD5=29e67a19bba54099093b51d892926be1
-# Mon, 24 Jul 2017 17:23:39 GMT
+# Mon, 24 Jul 2017 22:24:57 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Mon, 24 Jul 2017 17:24:12 GMT
+# Mon, 24 Jul 2017 22:25:28 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh
-# Mon, 24 Jul 2017 17:24:17 GMT
+# Mon, 24 Jul 2017 22:25:32 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Mon, 24 Jul 2017 17:24:19 GMT
+# Mon, 24 Jul 2017 22:25:34 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d
-# Mon, 24 Jul 2017 17:24:19 GMT
+# Mon, 24 Jul 2017 22:25:34 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 17:24:20 GMT
+# Mon, 24 Jul 2017 22:25:34 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 24 Jul 2017 17:24:20 GMT
+# Mon, 24 Jul 2017 22:25:35 GMT
 COPY file:485ff0a6674b97f711e5be4a1ec900fc1002c363c00770d8b1c5809a76ccfc32 in / 
-# Mon, 24 Jul 2017 17:24:22 GMT
+# Mon, 24 Jul 2017 22:25:35 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 24 Jul 2017 17:24:22 GMT
+# Mon, 24 Jul 2017 22:25:35 GMT
 EXPOSE 8080/tcp
-# Mon, 24 Jul 2017 17:24:23 GMT
+# Mon, 24 Jul 2017 22:25:35 GMT
 EXPOSE 8787/tcp
-# Mon, 24 Jul 2017 17:24:23 GMT
+# Mon, 24 Jul 2017 22:25:36 GMT
 CMD ["nuxeoctl" "console"]
-# Mon, 24 Jul 2017 17:24:23 GMT
+# Mon, 24 Jul 2017 22:25:36 GMT
 USER [1000]
 ```
 
 -	Layers:
-	-	`sha256:c75480ad9aafadef6c7faf829ede40cf2fa990c9308d6cd354d53041b01a7cda`  
-		Last Modified: Tue, 20 Jun 2017 20:51:29 GMT  
-		Size: 45.1 MB (45139825 bytes)  
+	-	`sha256:06b22ddb19134ec8c42aaabd3e2e9f5b378e4e53da4a8960eaaaa86351190af3`  
+		Last Modified: Mon, 24 Jul 2017 16:59:30 GMT  
+		Size: 45.1 MB (45142935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18d67befbc4e6fc58906f99031e8183060a10ee8b4e30cd2a83a942f68760818`  
-		Last Modified: Wed, 21 Jun 2017 00:50:08 GMT  
-		Size: 11.1 MB (11108544 bytes)  
+	-	`sha256:336c28b408ed2225485696d1fada041792d7f1b47a4422175e203be4be2f83e6`  
+		Last Modified: Mon, 24 Jul 2017 17:36:29 GMT  
+		Size: 11.1 MB (11107641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f5d2d0853c76cad76d65745ca5b10e17ffe72647e78616bb28b2fd70e5173ab`  
-		Last Modified: Thu, 06 Jul 2017 23:56:33 GMT  
-		Size: 4.4 MB (4411344 bytes)  
+	-	`sha256:1f3e6b8d80c36cab97c677f32305f00ab2aedb16a26cfb37d0a3a48c50316dbb`  
+		Last Modified: Mon, 24 Jul 2017 17:36:27 GMT  
+		Size: 4.4 MB (4411330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5de358416a758e4776153bd86b34fcaa0f31b577b335845b968646e61ac78bf4`  
-		Last Modified: Thu, 06 Jul 2017 23:56:47 GMT  
-		Size: 50.0 MB (50004119 bytes)  
+	-	`sha256:5ccc640979f6f91dfddf979bdb4482bc9e9e021d5d3469dbefda306342d0a41b`  
+		Last Modified: Mon, 24 Jul 2017 17:36:55 GMT  
+		Size: 50.0 MB (50003328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4049b231edeab7c94920b61f8e95d5ae615893cf7ae7b9d28a670f5e47765ddf`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
-		Size: 660.4 KB (660432 bytes)  
+	-	`sha256:14eaa20184e60073d2705ab636fb92b4428dfc503b858b423608dba26d628c99`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 660.5 KB (660458 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6617c62c7c1089f445af30dda32df5c346c31019acf9077741422a3e4785a537`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:19a8522e2399427c6c6d4cb5748e3c9ea39188af728386b37ffa3719b60a08a0`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa26fbcddb08b7bc5e7847d2cd1bfb54bd4674c892a483341f8d59911cb012c2`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:39ba9d7befcada9c3bfe28fe046ee3ddf551dbcd0fe29a620071c07f49afc2e9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf9eeaccdbef302badbe408271f44e78f77ace907ad645f50e01e0c877a09a16`  
-		Last Modified: Fri, 21 Jul 2017 22:29:36 GMT  
-		Size: 183.1 MB (183110408 bytes)  
+	-	`sha256:1f81f3143db2f0e6bdd549cbb9a6128c217f2ef192c12b6044daed277cde2ae9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:46 GMT  
+		Size: 183.1 MB (183109092 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d0dbc643791b279d676519e037e59b3ba88b5e4579ab963a4d92fddb7b8017f`  
-		Last Modified: Fri, 21 Jul 2017 22:28:52 GMT  
-		Size: 272.0 KB (272005 bytes)  
+	-	`sha256:2034c15120cdd40d7f2d92f1233386821c361a328aea3b35a7345972a1d475c9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 272.0 KB (272003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3fe160733c2ccfd144eb302432b6c70e670cb4873c3c04ecc95aab6bd777d7ff`  
-		Last Modified: Mon, 24 Jul 2017 17:29:36 GMT  
-		Size: 247.0 MB (247021948 bytes)  
+	-	`sha256:01367c054cd2d56cdebc2e15fe0aee242c9d5820aa67b086a216a6da1ab8f550`  
+		Last Modified: Mon, 24 Jul 2017 22:30:28 GMT  
+		Size: 234.7 MB (234716987 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec74bf5e16e98eb2d5265066058ef1718f7938daa25ef7307ef0fc91699613fe`  
-		Last Modified: Mon, 24 Jul 2017 17:28:36 GMT  
-		Size: 4.4 KB (4387 bytes)  
+	-	`sha256:a158677938f361da44bee7c6c1f8c4cecfd3031528e510082326eb43e73d9643`  
+		Last Modified: Mon, 24 Jul 2017 22:29:40 GMT  
+		Size: 4.4 KB (4374 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86b5c57f7f8c0fc8c19b8b0f164d9d8f9437a2ccb7fd6081e81d2ee8d17f8d5b`  
-		Last Modified: Mon, 24 Jul 2017 17:29:00 GMT  
-		Size: 269.6 MB (269622064 bytes)  
+	-	`sha256:d7abfc50d60e0e1f5829a220f367942b8de01b7a825825b16585358cbb640667`  
+		Last Modified: Mon, 24 Jul 2017 22:30:01 GMT  
+		Size: 269.6 MB (269622118 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b6288597f7e727d7d7fa356a1e10b45bb1d6ca863b312f6077ab4c200577cce`  
-		Last Modified: Mon, 24 Jul 2017 17:29:01 GMT  
-		Size: 269.6 MB (269624462 bytes)  
+	-	`sha256:2121e598f911b511ea32236ee4a1133323514cd9e2dd85ac42b7ae629b276822`  
+		Last Modified: Mon, 24 Jul 2017 22:30:00 GMT  
+		Size: 269.6 MB (269624387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a501b8d52ec4f03b98c2f598ddf2d7f0309e02db5bb31c18000aa8032abf47b`  
-		Last Modified: Mon, 24 Jul 2017 17:28:35 GMT  
-		Size: 243.0 B  
+	-	`sha256:00e1d5e587e7aadce7d7c76ca596157332859b22eedb7806cd872a27997ff844`  
+		Last Modified: Mon, 24 Jul 2017 22:29:40 GMT  
+		Size: 244.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:303099d844e1567d05d3566bb6dee04d1fd53154e69808dbe57ddb4dfe1ceb02`  
-		Last Modified: Mon, 24 Jul 2017 17:28:35 GMT  
+	-	`sha256:d00f9e766e5d6e2650da6c34e145f5631e6e281f93ab65aee50fc952212ca523`  
+		Last Modified: Mon, 24 Jul 2017 22:29:41 GMT  
 		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:LTS`
 
 ```console
-$ docker pull nuxeo@sha256:6ee350e44962bebc9493d05ed4a8e106435a5502cb2bf2fb6e72a903fd8af428
+$ docker pull nuxeo@sha256:e8e45fb25d8c0a41412819ad0d517383b9fa7204e2e2a8c3188260f65fc01a7f
 ```
 
 -	Platforms:
@@ -1465,155 +1465,155 @@ $ docker pull nuxeo@sha256:6ee350e44962bebc9493d05ed4a8e106435a5502cb2bf2fb6e72a
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 GB (1080981584 bytes)**  
+-	Total Size: **1.1 GB (1068676700 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0b6d39e0905c90e6f88d3353e00b153327a2a8f1c992db304aa5bcafa6416c2e`
+-	Image ID: `sha256:88f971595222ce113f47d4d373c8e55f29793dfa1ab9343cc12fc00d7e45c556`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Tue, 20 Jun 2017 20:24:09 GMT
-ADD file:93a0dbb6973bc13e5478292bfe283ff91745ca6e23b6fd3363f0661c45deb1ec in / 
-# Tue, 20 Jun 2017 20:24:10 GMT
+# Mon, 24 Jul 2017 16:52:54 GMT
+ADD file:ebba725fb97cea45d0b1b35ccc8144e766fcfc9a78530465c23b0c4674b14042 in / 
+# Mon, 24 Jul 2017 16:52:55 GMT
 CMD ["bash"]
-# Tue, 20 Jun 2017 21:21:56 GMT
+# Mon, 24 Jul 2017 17:28:39 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 22:30:39 GMT
+# Mon, 24 Jul 2017 17:28:45 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 06 Jul 2017 22:31:21 GMT
+# Mon, 24 Jul 2017 17:29:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:28 GMT
+# Mon, 24 Jul 2017 18:09:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:29 GMT
+# Mon, 24 Jul 2017 18:09:51 GMT
 ENV LANG=C.UTF-8
-# Thu, 06 Jul 2017 23:11:31 GMT
+# Mon, 24 Jul 2017 18:09:52 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 06 Jul 2017 23:11:33 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_HOME=/docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_VERSION=8u131
-# Thu, 06 Jul 2017 23:11:35 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_DEBIAN_VERSION=8u131-b11-2
-# Thu, 06 Jul 2017 23:11:36 GMT
+# Mon, 24 Jul 2017 18:09:54 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 21 Jul 2017 22:10:38 GMT
+# Mon, 24 Jul 2017 18:10:48 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 21 Jul 2017 22:10:42 GMT
+# Mon, 24 Jul 2017 18:10:51 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Mon, 24 Jul 2017 17:17:03 GMT
+# Mon, 24 Jul 2017 22:19:48 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Mon, 24 Jul 2017 17:23:34 GMT
+# Mon, 24 Jul 2017 22:24:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libwpd-tools     exiftool     ghostscript     libreoffice  && rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:55 GMT
 RUN find / -perm +6000 -type f -exec chmod a-s {} \; || true
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ENV NUXEO_USER=nuxeo
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Mon, 24 Jul 2017 17:23:37 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ARG NUXEO_VERSION=8.10
-# Mon, 24 Jul 2017 17:23:37 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip
-# Mon, 24 Jul 2017 17:23:37 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ARG NUXEO_MD5=29e67a19bba54099093b51d892926be1
-# Mon, 24 Jul 2017 17:23:39 GMT
+# Mon, 24 Jul 2017 22:24:57 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Mon, 24 Jul 2017 17:24:12 GMT
+# Mon, 24 Jul 2017 22:25:28 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh
-# Mon, 24 Jul 2017 17:24:17 GMT
+# Mon, 24 Jul 2017 22:25:32 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME
-# Mon, 24 Jul 2017 17:24:19 GMT
+# Mon, 24 Jul 2017 22:25:34 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-8.10/nuxeo-server-8.10-tomcat.zip NUXEO_MD5=29e67a19bba54099093b51d892926be1 NUXEO_VERSION=8.10
 RUN mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d
-# Mon, 24 Jul 2017 17:24:19 GMT
+# Mon, 24 Jul 2017 22:25:34 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 17:24:20 GMT
+# Mon, 24 Jul 2017 22:25:34 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 24 Jul 2017 17:24:20 GMT
+# Mon, 24 Jul 2017 22:25:35 GMT
 COPY file:485ff0a6674b97f711e5be4a1ec900fc1002c363c00770d8b1c5809a76ccfc32 in / 
-# Mon, 24 Jul 2017 17:24:22 GMT
+# Mon, 24 Jul 2017 22:25:35 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 24 Jul 2017 17:24:22 GMT
+# Mon, 24 Jul 2017 22:25:35 GMT
 EXPOSE 8080/tcp
-# Mon, 24 Jul 2017 17:24:23 GMT
+# Mon, 24 Jul 2017 22:25:35 GMT
 EXPOSE 8787/tcp
-# Mon, 24 Jul 2017 17:24:23 GMT
+# Mon, 24 Jul 2017 22:25:36 GMT
 CMD ["nuxeoctl" "console"]
-# Mon, 24 Jul 2017 17:24:23 GMT
+# Mon, 24 Jul 2017 22:25:36 GMT
 USER [1000]
 ```
 
 -	Layers:
-	-	`sha256:c75480ad9aafadef6c7faf829ede40cf2fa990c9308d6cd354d53041b01a7cda`  
-		Last Modified: Tue, 20 Jun 2017 20:51:29 GMT  
-		Size: 45.1 MB (45139825 bytes)  
+	-	`sha256:06b22ddb19134ec8c42aaabd3e2e9f5b378e4e53da4a8960eaaaa86351190af3`  
+		Last Modified: Mon, 24 Jul 2017 16:59:30 GMT  
+		Size: 45.1 MB (45142935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18d67befbc4e6fc58906f99031e8183060a10ee8b4e30cd2a83a942f68760818`  
-		Last Modified: Wed, 21 Jun 2017 00:50:08 GMT  
-		Size: 11.1 MB (11108544 bytes)  
+	-	`sha256:336c28b408ed2225485696d1fada041792d7f1b47a4422175e203be4be2f83e6`  
+		Last Modified: Mon, 24 Jul 2017 17:36:29 GMT  
+		Size: 11.1 MB (11107641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f5d2d0853c76cad76d65745ca5b10e17ffe72647e78616bb28b2fd70e5173ab`  
-		Last Modified: Thu, 06 Jul 2017 23:56:33 GMT  
-		Size: 4.4 MB (4411344 bytes)  
+	-	`sha256:1f3e6b8d80c36cab97c677f32305f00ab2aedb16a26cfb37d0a3a48c50316dbb`  
+		Last Modified: Mon, 24 Jul 2017 17:36:27 GMT  
+		Size: 4.4 MB (4411330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5de358416a758e4776153bd86b34fcaa0f31b577b335845b968646e61ac78bf4`  
-		Last Modified: Thu, 06 Jul 2017 23:56:47 GMT  
-		Size: 50.0 MB (50004119 bytes)  
+	-	`sha256:5ccc640979f6f91dfddf979bdb4482bc9e9e021d5d3469dbefda306342d0a41b`  
+		Last Modified: Mon, 24 Jul 2017 17:36:55 GMT  
+		Size: 50.0 MB (50003328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4049b231edeab7c94920b61f8e95d5ae615893cf7ae7b9d28a670f5e47765ddf`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
-		Size: 660.4 KB (660432 bytes)  
+	-	`sha256:14eaa20184e60073d2705ab636fb92b4428dfc503b858b423608dba26d628c99`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 660.5 KB (660458 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6617c62c7c1089f445af30dda32df5c346c31019acf9077741422a3e4785a537`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:19a8522e2399427c6c6d4cb5748e3c9ea39188af728386b37ffa3719b60a08a0`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa26fbcddb08b7bc5e7847d2cd1bfb54bd4674c892a483341f8d59911cb012c2`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:39ba9d7befcada9c3bfe28fe046ee3ddf551dbcd0fe29a620071c07f49afc2e9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf9eeaccdbef302badbe408271f44e78f77ace907ad645f50e01e0c877a09a16`  
-		Last Modified: Fri, 21 Jul 2017 22:29:36 GMT  
-		Size: 183.1 MB (183110408 bytes)  
+	-	`sha256:1f81f3143db2f0e6bdd549cbb9a6128c217f2ef192c12b6044daed277cde2ae9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:46 GMT  
+		Size: 183.1 MB (183109092 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d0dbc643791b279d676519e037e59b3ba88b5e4579ab963a4d92fddb7b8017f`  
-		Last Modified: Fri, 21 Jul 2017 22:28:52 GMT  
-		Size: 272.0 KB (272005 bytes)  
+	-	`sha256:2034c15120cdd40d7f2d92f1233386821c361a328aea3b35a7345972a1d475c9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 272.0 KB (272003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3fe160733c2ccfd144eb302432b6c70e670cb4873c3c04ecc95aab6bd777d7ff`  
-		Last Modified: Mon, 24 Jul 2017 17:29:36 GMT  
-		Size: 247.0 MB (247021948 bytes)  
+	-	`sha256:01367c054cd2d56cdebc2e15fe0aee242c9d5820aa67b086a216a6da1ab8f550`  
+		Last Modified: Mon, 24 Jul 2017 22:30:28 GMT  
+		Size: 234.7 MB (234716987 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ec74bf5e16e98eb2d5265066058ef1718f7938daa25ef7307ef0fc91699613fe`  
-		Last Modified: Mon, 24 Jul 2017 17:28:36 GMT  
-		Size: 4.4 KB (4387 bytes)  
+	-	`sha256:a158677938f361da44bee7c6c1f8c4cecfd3031528e510082326eb43e73d9643`  
+		Last Modified: Mon, 24 Jul 2017 22:29:40 GMT  
+		Size: 4.4 KB (4374 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86b5c57f7f8c0fc8c19b8b0f164d9d8f9437a2ccb7fd6081e81d2ee8d17f8d5b`  
-		Last Modified: Mon, 24 Jul 2017 17:29:00 GMT  
-		Size: 269.6 MB (269622064 bytes)  
+	-	`sha256:d7abfc50d60e0e1f5829a220f367942b8de01b7a825825b16585358cbb640667`  
+		Last Modified: Mon, 24 Jul 2017 22:30:01 GMT  
+		Size: 269.6 MB (269622118 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6b6288597f7e727d7d7fa356a1e10b45bb1d6ca863b312f6077ab4c200577cce`  
-		Last Modified: Mon, 24 Jul 2017 17:29:01 GMT  
-		Size: 269.6 MB (269624462 bytes)  
+	-	`sha256:2121e598f911b511ea32236ee4a1133323514cd9e2dd85ac42b7ae629b276822`  
+		Last Modified: Mon, 24 Jul 2017 22:30:00 GMT  
+		Size: 269.6 MB (269624387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5a501b8d52ec4f03b98c2f598ddf2d7f0309e02db5bb31c18000aa8032abf47b`  
-		Last Modified: Mon, 24 Jul 2017 17:28:35 GMT  
-		Size: 243.0 B  
+	-	`sha256:00e1d5e587e7aadce7d7c76ca596157332859b22eedb7806cd872a27997ff844`  
+		Last Modified: Mon, 24 Jul 2017 22:29:40 GMT  
+		Size: 244.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:303099d844e1567d05d3566bb6dee04d1fd53154e69808dbe57ddb4dfe1ceb02`  
-		Last Modified: Mon, 24 Jul 2017 17:28:35 GMT  
+	-	`sha256:d00f9e766e5d6e2650da6c34e145f5631e6e281f93ab65aee50fc952212ca523`  
+		Last Modified: Mon, 24 Jul 2017 22:29:41 GMT  
 		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:9.1`
 
 ```console
-$ docker pull nuxeo@sha256:33769c7d0d7c32f77fe03792946518cb62939b97fc4a602b1ffbcb97c29440dc
+$ docker pull nuxeo@sha256:ab119568625d815d08c066ea0ef4a9de396188b9f080ef86e8e24cdf4570143b
 ```
 
 -	Platforms:
@@ -1623,162 +1623,162 @@ $ docker pull nuxeo@sha256:33769c7d0d7c32f77fe03792946518cb62939b97fc4a602b1ffbc
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.3 GB (1302375917 bytes)**  
+-	Total Size: **1.3 GB (1290070876 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9de9ef33aac17037d63ac76fa111702135aa92bbfa6e27e16695c44da73b6cdc`
+-	Image ID: `sha256:07838a181a5dcfabd9932b4de945a26b1e08b2d6944e3117be5020013bb13bb6`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Tue, 20 Jun 2017 20:24:09 GMT
-ADD file:93a0dbb6973bc13e5478292bfe283ff91745ca6e23b6fd3363f0661c45deb1ec in / 
-# Tue, 20 Jun 2017 20:24:10 GMT
+# Mon, 24 Jul 2017 16:52:54 GMT
+ADD file:ebba725fb97cea45d0b1b35ccc8144e766fcfc9a78530465c23b0c4674b14042 in / 
+# Mon, 24 Jul 2017 16:52:55 GMT
 CMD ["bash"]
-# Tue, 20 Jun 2017 21:21:56 GMT
+# Mon, 24 Jul 2017 17:28:39 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 22:30:39 GMT
+# Mon, 24 Jul 2017 17:28:45 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 06 Jul 2017 22:31:21 GMT
+# Mon, 24 Jul 2017 17:29:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:28 GMT
+# Mon, 24 Jul 2017 18:09:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:29 GMT
+# Mon, 24 Jul 2017 18:09:51 GMT
 ENV LANG=C.UTF-8
-# Thu, 06 Jul 2017 23:11:31 GMT
+# Mon, 24 Jul 2017 18:09:52 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 06 Jul 2017 23:11:33 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_HOME=/docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_VERSION=8u131
-# Thu, 06 Jul 2017 23:11:35 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_DEBIAN_VERSION=8u131-b11-2
-# Thu, 06 Jul 2017 23:11:36 GMT
+# Mon, 24 Jul 2017 18:09:54 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 21 Jul 2017 22:10:38 GMT
+# Mon, 24 Jul 2017 18:10:48 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 21 Jul 2017 22:10:42 GMT
+# Mon, 24 Jul 2017 18:10:51 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Mon, 24 Jul 2017 17:17:03 GMT
+# Mon, 24 Jul 2017 22:19:48 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Mon, 24 Jul 2017 17:23:34 GMT
+# Mon, 24 Jul 2017 22:24:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libwpd-tools     exiftool     ghostscript     libreoffice  && rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:55 GMT
 RUN find / -perm +6000 -type f -exec chmod a-s {} \; || true
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ENV NUXEO_USER=nuxeo
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Mon, 24 Jul 2017 17:24:25 GMT
+# Mon, 24 Jul 2017 22:25:38 GMT
 ARG NUXEO_VERSION=9.1
-# Mon, 24 Jul 2017 17:24:25 GMT
+# Mon, 24 Jul 2017 22:25:38 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.1/nuxeo-server-9.1-tomcat.zip
-# Mon, 24 Jul 2017 17:24:26 GMT
+# Mon, 24 Jul 2017 22:25:39 GMT
 ARG NUXEO_MD5=4134545646fca1a520e0b8dc9d273b2c
-# Mon, 24 Jul 2017 17:24:26 GMT
+# Mon, 24 Jul 2017 22:25:39 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.1/nuxeo-server-9.1-tomcat.zip NUXEO_MD5=4134545646fca1a520e0b8dc9d273b2c NUXEO_VERSION=9.1
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Mon, 24 Jul 2017 17:25:05 GMT
+# Mon, 24 Jul 2017 22:26:20 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.1/nuxeo-server-9.1-tomcat.zip NUXEO_MD5=4134545646fca1a520e0b8dc9d273b2c NUXEO_VERSION=9.1
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && if [ $NUXEO_VERSION != "master" ]; then echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -; fi     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && $NUXEO_HOME/bin/nuxeoctl mp-init
-# Mon, 24 Jul 2017 17:25:06 GMT
+# Mon, 24 Jul 2017 22:26:20 GMT
 COPY dir:6ff2a7cd59ae46215c04b0ef5347f96b1b3912245284bfcfc0080b9d688f08f0 in /opt/nuxeo/server/templates/docker 
-# Mon, 24 Jul 2017 17:25:07 GMT
+# Mon, 24 Jul 2017 22:26:21 GMT
 COPY file:8720eadd49169cbc4bb58024e5c792902d30f6820078265106084be771269fa5 in /etc/nuxeo/nuxeo.conf.template 
-# Mon, 24 Jul 2017 17:25:07 GMT
+# Mon, 24 Jul 2017 22:26:21 GMT
 ENV NUXEO_CONF=/etc/nuxeo/nuxeo.conf
-# Mon, 24 Jul 2017 17:25:13 GMT
+# Mon, 24 Jul 2017 22:26:26 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.1/nuxeo-server-9.1-tomcat.zip NUXEO_MD5=4134545646fca1a520e0b8dc9d273b2c NUXEO_VERSION=9.1
 RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME     && chown -R 1000:0 /etc/nuxeo && chmod g+rwX /etc/nuxeo && rm -f $NUXEO_HOME/bin/nuxeo.conf     && mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d
-# Mon, 24 Jul 2017 17:25:16 GMT
+# Mon, 24 Jul 2017 22:26:28 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 17:25:16 GMT
+# Mon, 24 Jul 2017 22:26:29 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 24 Jul 2017 17:25:16 GMT
+# Mon, 24 Jul 2017 22:26:29 GMT
 COPY file:872da8f105902c3a28d050cfaf4a490ca9fa9a6f9b5b1e1fa4c589228bab8e97 in / 
-# Mon, 24 Jul 2017 17:25:17 GMT
+# Mon, 24 Jul 2017 22:26:29 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 24 Jul 2017 17:25:17 GMT
+# Mon, 24 Jul 2017 22:26:29 GMT
 EXPOSE 8080/tcp
-# Mon, 24 Jul 2017 17:25:17 GMT
+# Mon, 24 Jul 2017 22:26:30 GMT
 EXPOSE 8787/tcp
-# Mon, 24 Jul 2017 17:25:17 GMT
+# Mon, 24 Jul 2017 22:26:30 GMT
 CMD ["nuxeoctl" "console"]
-# Mon, 24 Jul 2017 17:25:18 GMT
+# Mon, 24 Jul 2017 22:26:30 GMT
 USER [1000]
 ```
 
 -	Layers:
-	-	`sha256:c75480ad9aafadef6c7faf829ede40cf2fa990c9308d6cd354d53041b01a7cda`  
-		Last Modified: Tue, 20 Jun 2017 20:51:29 GMT  
-		Size: 45.1 MB (45139825 bytes)  
+	-	`sha256:06b22ddb19134ec8c42aaabd3e2e9f5b378e4e53da4a8960eaaaa86351190af3`  
+		Last Modified: Mon, 24 Jul 2017 16:59:30 GMT  
+		Size: 45.1 MB (45142935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18d67befbc4e6fc58906f99031e8183060a10ee8b4e30cd2a83a942f68760818`  
-		Last Modified: Wed, 21 Jun 2017 00:50:08 GMT  
-		Size: 11.1 MB (11108544 bytes)  
+	-	`sha256:336c28b408ed2225485696d1fada041792d7f1b47a4422175e203be4be2f83e6`  
+		Last Modified: Mon, 24 Jul 2017 17:36:29 GMT  
+		Size: 11.1 MB (11107641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f5d2d0853c76cad76d65745ca5b10e17ffe72647e78616bb28b2fd70e5173ab`  
-		Last Modified: Thu, 06 Jul 2017 23:56:33 GMT  
-		Size: 4.4 MB (4411344 bytes)  
+	-	`sha256:1f3e6b8d80c36cab97c677f32305f00ab2aedb16a26cfb37d0a3a48c50316dbb`  
+		Last Modified: Mon, 24 Jul 2017 17:36:27 GMT  
+		Size: 4.4 MB (4411330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5de358416a758e4776153bd86b34fcaa0f31b577b335845b968646e61ac78bf4`  
-		Last Modified: Thu, 06 Jul 2017 23:56:47 GMT  
-		Size: 50.0 MB (50004119 bytes)  
+	-	`sha256:5ccc640979f6f91dfddf979bdb4482bc9e9e021d5d3469dbefda306342d0a41b`  
+		Last Modified: Mon, 24 Jul 2017 17:36:55 GMT  
+		Size: 50.0 MB (50003328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4049b231edeab7c94920b61f8e95d5ae615893cf7ae7b9d28a670f5e47765ddf`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
-		Size: 660.4 KB (660432 bytes)  
+	-	`sha256:14eaa20184e60073d2705ab636fb92b4428dfc503b858b423608dba26d628c99`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 660.5 KB (660458 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6617c62c7c1089f445af30dda32df5c346c31019acf9077741422a3e4785a537`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:19a8522e2399427c6c6d4cb5748e3c9ea39188af728386b37ffa3719b60a08a0`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa26fbcddb08b7bc5e7847d2cd1bfb54bd4674c892a483341f8d59911cb012c2`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:39ba9d7befcada9c3bfe28fe046ee3ddf551dbcd0fe29a620071c07f49afc2e9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf9eeaccdbef302badbe408271f44e78f77ace907ad645f50e01e0c877a09a16`  
-		Last Modified: Fri, 21 Jul 2017 22:29:36 GMT  
-		Size: 183.1 MB (183110408 bytes)  
+	-	`sha256:1f81f3143db2f0e6bdd549cbb9a6128c217f2ef192c12b6044daed277cde2ae9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:46 GMT  
+		Size: 183.1 MB (183109092 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d0dbc643791b279d676519e037e59b3ba88b5e4579ab963a4d92fddb7b8017f`  
-		Last Modified: Fri, 21 Jul 2017 22:28:52 GMT  
-		Size: 272.0 KB (272005 bytes)  
+	-	`sha256:2034c15120cdd40d7f2d92f1233386821c361a328aea3b35a7345972a1d475c9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 272.0 KB (272003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3fe160733c2ccfd144eb302432b6c70e670cb4873c3c04ecc95aab6bd777d7ff`  
-		Last Modified: Mon, 24 Jul 2017 17:29:36 GMT  
-		Size: 247.0 MB (247021948 bytes)  
+	-	`sha256:01367c054cd2d56cdebc2e15fe0aee242c9d5820aa67b086a216a6da1ab8f550`  
+		Last Modified: Mon, 24 Jul 2017 22:30:28 GMT  
+		Size: 234.7 MB (234716987 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e25646fed5bef627f30c825987ef855c51ee063d3576cdd43d8613d2e8d84371`  
-		Last Modified: Mon, 24 Jul 2017 17:30:01 GMT  
-		Size: 4.4 KB (4385 bytes)  
+	-	`sha256:83f83b6103050345b26f385f97b1cdfacd82c8d886073648d4ddbba6c858130e`  
+		Last Modified: Mon, 24 Jul 2017 22:30:53 GMT  
+		Size: 4.4 KB (4374 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ae906de3138e480156d6e53d9274eacadf7447773d08ae350ca942fb3663072`  
-		Last Modified: Mon, 24 Jul 2017 17:30:44 GMT  
-		Size: 380.3 MB (380318187 bytes)  
+	-	`sha256:241bc764a97e3d26343770c6dc1325cab196905e55e8c425cef4dd5adbeddcaa`  
+		Last Modified: Mon, 24 Jul 2017 22:31:21 GMT  
+		Size: 380.3 MB (380318188 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dfdf49d33f5fa2c35fdd5ce18743c733a59d621010ec318f37f65149aae7ab08`  
-		Last Modified: Mon, 24 Jul 2017 17:30:01 GMT  
-		Size: 594.0 B  
+	-	`sha256:0c9784f3db120867df468d3b1111b0a8a594cbad24d8271620f6b84b830d8d9c`  
+		Last Modified: Mon, 24 Jul 2017 22:30:53 GMT  
+		Size: 595.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6a6f744fa1c72583656f37623e02ff1a775cbd0d8a69d67f7543af37d53bb15`  
-		Last Modified: Mon, 24 Jul 2017 17:30:01 GMT  
-		Size: 979.0 B  
+	-	`sha256:4eb1a09b9a6fd934419c50c38dd18ea1828f544c913567e6abfb56be60abf49f`  
+		Last Modified: Mon, 24 Jul 2017 22:30:53 GMT  
+		Size: 981.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:11b0f5c05abe0e0e3afb5656e01d91de7453ab217de2558a2b0e91340376b586`  
-		Last Modified: Mon, 24 Jul 2017 17:30:36 GMT  
-		Size: 380.3 MB (380321861 bytes)  
+	-	`sha256:c33b1201b27542d4d26a70694c24b9466027eb98cccc9a98ea96de34d395e657`  
+		Last Modified: Mon, 24 Jul 2017 22:31:21 GMT  
+		Size: 380.3 MB (380321679 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9bb06634797cac462ba42c2f45f64b89a8ed630603682882c0dbd09ce93db7bf`  
-		Last Modified: Mon, 24 Jul 2017 17:30:01 GMT  
-		Size: 915.0 B  
+	-	`sha256:2326643c2f8e8b99a2690b11456a3265169da8179c3ab7d6bc823c62f53240ae`  
+		Last Modified: Mon, 24 Jul 2017 22:30:53 GMT  
+		Size: 914.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:9.2`
 
 ```console
-$ docker pull nuxeo@sha256:3be264b84eb73a941b3cadbdb4c64c9c7f388801fc6155bbe4c2a0038ac52be9
+$ docker pull nuxeo@sha256:fef5a8ab5929c71411a46df62d14f06ba5a2e58e62bb39d5df61cd8ce520e6e7
 ```
 
 -	Platforms:
@@ -1788,162 +1788,162 @@ $ docker pull nuxeo@sha256:3be264b84eb73a941b3cadbdb4c64c9c7f388801fc6155bbe4c2a
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.3 GB (1327873074 bytes)**  
+-	Total Size: **1.3 GB (1315568086 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b92bf1b868e959fb9ff863ae9bdef96cd014e3ceda11a8d463875f2e517d471c`
+-	Image ID: `sha256:9a4db665e0041a777cb2dd7ee672b96fe5a7dfbbe991ccb1e6c6ddddabc6b469`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Tue, 20 Jun 2017 20:24:09 GMT
-ADD file:93a0dbb6973bc13e5478292bfe283ff91745ca6e23b6fd3363f0661c45deb1ec in / 
-# Tue, 20 Jun 2017 20:24:10 GMT
+# Mon, 24 Jul 2017 16:52:54 GMT
+ADD file:ebba725fb97cea45d0b1b35ccc8144e766fcfc9a78530465c23b0c4674b14042 in / 
+# Mon, 24 Jul 2017 16:52:55 GMT
 CMD ["bash"]
-# Tue, 20 Jun 2017 21:21:56 GMT
+# Mon, 24 Jul 2017 17:28:39 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 22:30:39 GMT
+# Mon, 24 Jul 2017 17:28:45 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 06 Jul 2017 22:31:21 GMT
+# Mon, 24 Jul 2017 17:29:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:28 GMT
+# Mon, 24 Jul 2017 18:09:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:29 GMT
+# Mon, 24 Jul 2017 18:09:51 GMT
 ENV LANG=C.UTF-8
-# Thu, 06 Jul 2017 23:11:31 GMT
+# Mon, 24 Jul 2017 18:09:52 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 06 Jul 2017 23:11:33 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_HOME=/docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_VERSION=8u131
-# Thu, 06 Jul 2017 23:11:35 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_DEBIAN_VERSION=8u131-b11-2
-# Thu, 06 Jul 2017 23:11:36 GMT
+# Mon, 24 Jul 2017 18:09:54 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 21 Jul 2017 22:10:38 GMT
+# Mon, 24 Jul 2017 18:10:48 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 21 Jul 2017 22:10:42 GMT
+# Mon, 24 Jul 2017 18:10:51 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Mon, 24 Jul 2017 17:17:03 GMT
+# Mon, 24 Jul 2017 22:19:48 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Mon, 24 Jul 2017 17:23:34 GMT
+# Mon, 24 Jul 2017 22:24:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libwpd-tools     exiftool     ghostscript     libreoffice  && rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:55 GMT
 RUN find / -perm +6000 -type f -exec chmod a-s {} \; || true
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ENV NUXEO_USER=nuxeo
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Mon, 24 Jul 2017 17:25:20 GMT
+# Mon, 24 Jul 2017 22:26:32 GMT
 ARG NUXEO_VERSION=9.2
-# Mon, 24 Jul 2017 17:25:20 GMT
+# Mon, 24 Jul 2017 22:26:32 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.2/nuxeo-server-9.2-tomcat.zip
-# Mon, 24 Jul 2017 17:25:20 GMT
+# Mon, 24 Jul 2017 22:26:33 GMT
 ARG NUXEO_MD5=fe08b58a881391fc74344880f80b7a78
-# Mon, 24 Jul 2017 17:25:23 GMT
+# Mon, 24 Jul 2017 22:26:33 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.2/nuxeo-server-9.2-tomcat.zip NUXEO_MD5=fe08b58a881391fc74344880f80b7a78 NUXEO_VERSION=9.2
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Mon, 24 Jul 2017 17:26:14 GMT
+# Mon, 24 Jul 2017 22:27:13 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.2/nuxeo-server-9.2-tomcat.zip NUXEO_MD5=fe08b58a881391fc74344880f80b7a78 NUXEO_VERSION=9.2
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && if [ $NUXEO_VERSION != "master" ]; then echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -; fi     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && $NUXEO_HOME/bin/nuxeoctl mp-init
-# Mon, 24 Jul 2017 17:26:15 GMT
+# Mon, 24 Jul 2017 22:27:14 GMT
 COPY dir:6ff2a7cd59ae46215c04b0ef5347f96b1b3912245284bfcfc0080b9d688f08f0 in /opt/nuxeo/server/templates/docker 
-# Mon, 24 Jul 2017 17:26:15 GMT
+# Mon, 24 Jul 2017 22:27:14 GMT
 COPY file:d1a1e24ce447598e3f40ed68881237683fdf5004935f58bdd5f864e46dcc5503 in /etc/nuxeo/nuxeo.conf.template 
-# Mon, 24 Jul 2017 17:26:15 GMT
+# Mon, 24 Jul 2017 22:27:14 GMT
 ENV NUXEO_CONF=/etc/nuxeo/nuxeo.conf
-# Mon, 24 Jul 2017 17:26:20 GMT
+# Mon, 24 Jul 2017 22:27:19 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.2/nuxeo-server-9.2-tomcat.zip NUXEO_MD5=fe08b58a881391fc74344880f80b7a78 NUXEO_VERSION=9.2
 RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME     && chown -R 1000:0 /etc/nuxeo && chmod g+rwX /etc/nuxeo && rm -f $NUXEO_HOME/bin/nuxeo.conf     && mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d
-# Mon, 24 Jul 2017 17:26:23 GMT
+# Mon, 24 Jul 2017 22:27:22 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 17:26:24 GMT
+# Mon, 24 Jul 2017 22:27:23 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 24 Jul 2017 17:26:24 GMT
+# Mon, 24 Jul 2017 22:27:23 GMT
 COPY file:872da8f105902c3a28d050cfaf4a490ca9fa9a6f9b5b1e1fa4c589228bab8e97 in / 
-# Mon, 24 Jul 2017 17:26:24 GMT
+# Mon, 24 Jul 2017 22:27:23 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 24 Jul 2017 17:26:25 GMT
+# Mon, 24 Jul 2017 22:27:23 GMT
 EXPOSE 8080/tcp
-# Mon, 24 Jul 2017 17:26:25 GMT
+# Mon, 24 Jul 2017 22:27:23 GMT
 EXPOSE 8787/tcp
-# Mon, 24 Jul 2017 17:26:25 GMT
+# Mon, 24 Jul 2017 22:27:24 GMT
 CMD ["nuxeoctl" "console"]
-# Mon, 24 Jul 2017 17:26:25 GMT
+# Mon, 24 Jul 2017 22:27:24 GMT
 USER [1000]
 ```
 
 -	Layers:
-	-	`sha256:c75480ad9aafadef6c7faf829ede40cf2fa990c9308d6cd354d53041b01a7cda`  
-		Last Modified: Tue, 20 Jun 2017 20:51:29 GMT  
-		Size: 45.1 MB (45139825 bytes)  
+	-	`sha256:06b22ddb19134ec8c42aaabd3e2e9f5b378e4e53da4a8960eaaaa86351190af3`  
+		Last Modified: Mon, 24 Jul 2017 16:59:30 GMT  
+		Size: 45.1 MB (45142935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18d67befbc4e6fc58906f99031e8183060a10ee8b4e30cd2a83a942f68760818`  
-		Last Modified: Wed, 21 Jun 2017 00:50:08 GMT  
-		Size: 11.1 MB (11108544 bytes)  
+	-	`sha256:336c28b408ed2225485696d1fada041792d7f1b47a4422175e203be4be2f83e6`  
+		Last Modified: Mon, 24 Jul 2017 17:36:29 GMT  
+		Size: 11.1 MB (11107641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f5d2d0853c76cad76d65745ca5b10e17ffe72647e78616bb28b2fd70e5173ab`  
-		Last Modified: Thu, 06 Jul 2017 23:56:33 GMT  
-		Size: 4.4 MB (4411344 bytes)  
+	-	`sha256:1f3e6b8d80c36cab97c677f32305f00ab2aedb16a26cfb37d0a3a48c50316dbb`  
+		Last Modified: Mon, 24 Jul 2017 17:36:27 GMT  
+		Size: 4.4 MB (4411330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5de358416a758e4776153bd86b34fcaa0f31b577b335845b968646e61ac78bf4`  
-		Last Modified: Thu, 06 Jul 2017 23:56:47 GMT  
-		Size: 50.0 MB (50004119 bytes)  
+	-	`sha256:5ccc640979f6f91dfddf979bdb4482bc9e9e021d5d3469dbefda306342d0a41b`  
+		Last Modified: Mon, 24 Jul 2017 17:36:55 GMT  
+		Size: 50.0 MB (50003328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4049b231edeab7c94920b61f8e95d5ae615893cf7ae7b9d28a670f5e47765ddf`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
-		Size: 660.4 KB (660432 bytes)  
+	-	`sha256:14eaa20184e60073d2705ab636fb92b4428dfc503b858b423608dba26d628c99`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 660.5 KB (660458 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6617c62c7c1089f445af30dda32df5c346c31019acf9077741422a3e4785a537`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:19a8522e2399427c6c6d4cb5748e3c9ea39188af728386b37ffa3719b60a08a0`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa26fbcddb08b7bc5e7847d2cd1bfb54bd4674c892a483341f8d59911cb012c2`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:39ba9d7befcada9c3bfe28fe046ee3ddf551dbcd0fe29a620071c07f49afc2e9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf9eeaccdbef302badbe408271f44e78f77ace907ad645f50e01e0c877a09a16`  
-		Last Modified: Fri, 21 Jul 2017 22:29:36 GMT  
-		Size: 183.1 MB (183110408 bytes)  
+	-	`sha256:1f81f3143db2f0e6bdd549cbb9a6128c217f2ef192c12b6044daed277cde2ae9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:46 GMT  
+		Size: 183.1 MB (183109092 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d0dbc643791b279d676519e037e59b3ba88b5e4579ab963a4d92fddb7b8017f`  
-		Last Modified: Fri, 21 Jul 2017 22:28:52 GMT  
-		Size: 272.0 KB (272005 bytes)  
+	-	`sha256:2034c15120cdd40d7f2d92f1233386821c361a328aea3b35a7345972a1d475c9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 272.0 KB (272003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3fe160733c2ccfd144eb302432b6c70e670cb4873c3c04ecc95aab6bd777d7ff`  
-		Last Modified: Mon, 24 Jul 2017 17:29:36 GMT  
-		Size: 247.0 MB (247021948 bytes)  
+	-	`sha256:01367c054cd2d56cdebc2e15fe0aee242c9d5820aa67b086a216a6da1ab8f550`  
+		Last Modified: Mon, 24 Jul 2017 22:30:28 GMT  
+		Size: 234.7 MB (234716987 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d92f4bda87178d39bdcdebc175e3983a4cf76f055afbda05f1239a62d2705ddb`  
-		Last Modified: Mon, 24 Jul 2017 17:30:56 GMT  
-		Size: 4.4 KB (4386 bytes)  
+	-	`sha256:63467f5e853736280efa14336e6ae063ace34024473004bd431b20604fe51c8c`  
+		Last Modified: Mon, 24 Jul 2017 22:31:40 GMT  
+		Size: 4.4 KB (4379 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e7e7dc1678ea4b37e9cc881e6a2b56c219e62611366b2e53fd9431489d0b226`  
-		Last Modified: Mon, 24 Jul 2017 17:31:33 GMT  
-		Size: 393.1 MB (393067882 bytes)  
+	-	`sha256:55900c1a648a20eb9015f96ed4183c32c1e35f2d847d3735eb5a75f65022703f`  
+		Last Modified: Mon, 24 Jul 2017 22:32:13 GMT  
+		Size: 393.1 MB (393067835 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3eac67b48abf7582e9118136292c5f3b8158dc77df529dabda331a1692a35890`  
-		Last Modified: Mon, 24 Jul 2017 17:30:56 GMT  
-		Size: 593.0 B  
+	-	`sha256:d87c926a75f68b1c62529e0ab53444ff1244e8185336df474add4bf676feb4b7`  
+		Last Modified: Mon, 24 Jul 2017 22:31:41 GMT  
+		Size: 596.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a2d3194d6f77382d8d80abbd0c932ad1435316afff74cecf0d40f2b055f5f0c`  
-		Last Modified: Mon, 24 Jul 2017 17:30:56 GMT  
-		Size: 976.0 B  
+	-	`sha256:633ef3c6c2cdfc11a13a92888fedcc69df877852182bc7d19c35457472a54ee6`  
+		Last Modified: Mon, 24 Jul 2017 22:31:43 GMT  
+		Size: 978.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9d6661b2ffde0417bf73d66c7ea8189d72f636e0350e8f9e83059a3839f4175`  
-		Last Modified: Mon, 24 Jul 2017 17:31:27 GMT  
-		Size: 393.1 MB (393069326 bytes)  
+	-	`sha256:9d29539543b0713a0950ba6831f8c1b25dd34adea90c22f7b200470cbdca0d6f`  
+		Last Modified: Mon, 24 Jul 2017 22:32:06 GMT  
+		Size: 393.1 MB (393069239 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1b0e905cea73cf47f3c71be7c0362447b3250070f58f3e39f5b2ae1fb935972`  
-		Last Modified: Mon, 24 Jul 2017 17:30:56 GMT  
-		Size: 915.0 B  
+	-	`sha256:8260d4a078f4ed7d8158197b14db961ae08528a6d5d901c42baa5b07a424d6f1`  
+		Last Modified: Mon, 24 Jul 2017 22:31:40 GMT  
+		Size: 914.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:9`
 
 ```console
-$ docker pull nuxeo@sha256:3be264b84eb73a941b3cadbdb4c64c9c7f388801fc6155bbe4c2a0038ac52be9
+$ docker pull nuxeo@sha256:fef5a8ab5929c71411a46df62d14f06ba5a2e58e62bb39d5df61cd8ce520e6e7
 ```
 
 -	Platforms:
@@ -1953,162 +1953,162 @@ $ docker pull nuxeo@sha256:3be264b84eb73a941b3cadbdb4c64c9c7f388801fc6155bbe4c2a
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.3 GB (1327873074 bytes)**  
+-	Total Size: **1.3 GB (1315568086 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b92bf1b868e959fb9ff863ae9bdef96cd014e3ceda11a8d463875f2e517d471c`
+-	Image ID: `sha256:9a4db665e0041a777cb2dd7ee672b96fe5a7dfbbe991ccb1e6c6ddddabc6b469`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Tue, 20 Jun 2017 20:24:09 GMT
-ADD file:93a0dbb6973bc13e5478292bfe283ff91745ca6e23b6fd3363f0661c45deb1ec in / 
-# Tue, 20 Jun 2017 20:24:10 GMT
+# Mon, 24 Jul 2017 16:52:54 GMT
+ADD file:ebba725fb97cea45d0b1b35ccc8144e766fcfc9a78530465c23b0c4674b14042 in / 
+# Mon, 24 Jul 2017 16:52:55 GMT
 CMD ["bash"]
-# Tue, 20 Jun 2017 21:21:56 GMT
+# Mon, 24 Jul 2017 17:28:39 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 22:30:39 GMT
+# Mon, 24 Jul 2017 17:28:45 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 06 Jul 2017 22:31:21 GMT
+# Mon, 24 Jul 2017 17:29:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:28 GMT
+# Mon, 24 Jul 2017 18:09:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:29 GMT
+# Mon, 24 Jul 2017 18:09:51 GMT
 ENV LANG=C.UTF-8
-# Thu, 06 Jul 2017 23:11:31 GMT
+# Mon, 24 Jul 2017 18:09:52 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 06 Jul 2017 23:11:33 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_HOME=/docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_VERSION=8u131
-# Thu, 06 Jul 2017 23:11:35 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_DEBIAN_VERSION=8u131-b11-2
-# Thu, 06 Jul 2017 23:11:36 GMT
+# Mon, 24 Jul 2017 18:09:54 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 21 Jul 2017 22:10:38 GMT
+# Mon, 24 Jul 2017 18:10:48 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 21 Jul 2017 22:10:42 GMT
+# Mon, 24 Jul 2017 18:10:51 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Mon, 24 Jul 2017 17:17:03 GMT
+# Mon, 24 Jul 2017 22:19:48 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Mon, 24 Jul 2017 17:23:34 GMT
+# Mon, 24 Jul 2017 22:24:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libwpd-tools     exiftool     ghostscript     libreoffice  && rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:55 GMT
 RUN find / -perm +6000 -type f -exec chmod a-s {} \; || true
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ENV NUXEO_USER=nuxeo
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Mon, 24 Jul 2017 17:25:20 GMT
+# Mon, 24 Jul 2017 22:26:32 GMT
 ARG NUXEO_VERSION=9.2
-# Mon, 24 Jul 2017 17:25:20 GMT
+# Mon, 24 Jul 2017 22:26:32 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.2/nuxeo-server-9.2-tomcat.zip
-# Mon, 24 Jul 2017 17:25:20 GMT
+# Mon, 24 Jul 2017 22:26:33 GMT
 ARG NUXEO_MD5=fe08b58a881391fc74344880f80b7a78
-# Mon, 24 Jul 2017 17:25:23 GMT
+# Mon, 24 Jul 2017 22:26:33 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.2/nuxeo-server-9.2-tomcat.zip NUXEO_MD5=fe08b58a881391fc74344880f80b7a78 NUXEO_VERSION=9.2
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Mon, 24 Jul 2017 17:26:14 GMT
+# Mon, 24 Jul 2017 22:27:13 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.2/nuxeo-server-9.2-tomcat.zip NUXEO_MD5=fe08b58a881391fc74344880f80b7a78 NUXEO_VERSION=9.2
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && if [ $NUXEO_VERSION != "master" ]; then echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -; fi     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && $NUXEO_HOME/bin/nuxeoctl mp-init
-# Mon, 24 Jul 2017 17:26:15 GMT
+# Mon, 24 Jul 2017 22:27:14 GMT
 COPY dir:6ff2a7cd59ae46215c04b0ef5347f96b1b3912245284bfcfc0080b9d688f08f0 in /opt/nuxeo/server/templates/docker 
-# Mon, 24 Jul 2017 17:26:15 GMT
+# Mon, 24 Jul 2017 22:27:14 GMT
 COPY file:d1a1e24ce447598e3f40ed68881237683fdf5004935f58bdd5f864e46dcc5503 in /etc/nuxeo/nuxeo.conf.template 
-# Mon, 24 Jul 2017 17:26:15 GMT
+# Mon, 24 Jul 2017 22:27:14 GMT
 ENV NUXEO_CONF=/etc/nuxeo/nuxeo.conf
-# Mon, 24 Jul 2017 17:26:20 GMT
+# Mon, 24 Jul 2017 22:27:19 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.2/nuxeo-server-9.2-tomcat.zip NUXEO_MD5=fe08b58a881391fc74344880f80b7a78 NUXEO_VERSION=9.2
 RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME     && chown -R 1000:0 /etc/nuxeo && chmod g+rwX /etc/nuxeo && rm -f $NUXEO_HOME/bin/nuxeo.conf     && mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d
-# Mon, 24 Jul 2017 17:26:23 GMT
+# Mon, 24 Jul 2017 22:27:22 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 17:26:24 GMT
+# Mon, 24 Jul 2017 22:27:23 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 24 Jul 2017 17:26:24 GMT
+# Mon, 24 Jul 2017 22:27:23 GMT
 COPY file:872da8f105902c3a28d050cfaf4a490ca9fa9a6f9b5b1e1fa4c589228bab8e97 in / 
-# Mon, 24 Jul 2017 17:26:24 GMT
+# Mon, 24 Jul 2017 22:27:23 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 24 Jul 2017 17:26:25 GMT
+# Mon, 24 Jul 2017 22:27:23 GMT
 EXPOSE 8080/tcp
-# Mon, 24 Jul 2017 17:26:25 GMT
+# Mon, 24 Jul 2017 22:27:23 GMT
 EXPOSE 8787/tcp
-# Mon, 24 Jul 2017 17:26:25 GMT
+# Mon, 24 Jul 2017 22:27:24 GMT
 CMD ["nuxeoctl" "console"]
-# Mon, 24 Jul 2017 17:26:25 GMT
+# Mon, 24 Jul 2017 22:27:24 GMT
 USER [1000]
 ```
 
 -	Layers:
-	-	`sha256:c75480ad9aafadef6c7faf829ede40cf2fa990c9308d6cd354d53041b01a7cda`  
-		Last Modified: Tue, 20 Jun 2017 20:51:29 GMT  
-		Size: 45.1 MB (45139825 bytes)  
+	-	`sha256:06b22ddb19134ec8c42aaabd3e2e9f5b378e4e53da4a8960eaaaa86351190af3`  
+		Last Modified: Mon, 24 Jul 2017 16:59:30 GMT  
+		Size: 45.1 MB (45142935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18d67befbc4e6fc58906f99031e8183060a10ee8b4e30cd2a83a942f68760818`  
-		Last Modified: Wed, 21 Jun 2017 00:50:08 GMT  
-		Size: 11.1 MB (11108544 bytes)  
+	-	`sha256:336c28b408ed2225485696d1fada041792d7f1b47a4422175e203be4be2f83e6`  
+		Last Modified: Mon, 24 Jul 2017 17:36:29 GMT  
+		Size: 11.1 MB (11107641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f5d2d0853c76cad76d65745ca5b10e17ffe72647e78616bb28b2fd70e5173ab`  
-		Last Modified: Thu, 06 Jul 2017 23:56:33 GMT  
-		Size: 4.4 MB (4411344 bytes)  
+	-	`sha256:1f3e6b8d80c36cab97c677f32305f00ab2aedb16a26cfb37d0a3a48c50316dbb`  
+		Last Modified: Mon, 24 Jul 2017 17:36:27 GMT  
+		Size: 4.4 MB (4411330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5de358416a758e4776153bd86b34fcaa0f31b577b335845b968646e61ac78bf4`  
-		Last Modified: Thu, 06 Jul 2017 23:56:47 GMT  
-		Size: 50.0 MB (50004119 bytes)  
+	-	`sha256:5ccc640979f6f91dfddf979bdb4482bc9e9e021d5d3469dbefda306342d0a41b`  
+		Last Modified: Mon, 24 Jul 2017 17:36:55 GMT  
+		Size: 50.0 MB (50003328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4049b231edeab7c94920b61f8e95d5ae615893cf7ae7b9d28a670f5e47765ddf`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
-		Size: 660.4 KB (660432 bytes)  
+	-	`sha256:14eaa20184e60073d2705ab636fb92b4428dfc503b858b423608dba26d628c99`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 660.5 KB (660458 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6617c62c7c1089f445af30dda32df5c346c31019acf9077741422a3e4785a537`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:19a8522e2399427c6c6d4cb5748e3c9ea39188af728386b37ffa3719b60a08a0`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa26fbcddb08b7bc5e7847d2cd1bfb54bd4674c892a483341f8d59911cb012c2`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:39ba9d7befcada9c3bfe28fe046ee3ddf551dbcd0fe29a620071c07f49afc2e9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf9eeaccdbef302badbe408271f44e78f77ace907ad645f50e01e0c877a09a16`  
-		Last Modified: Fri, 21 Jul 2017 22:29:36 GMT  
-		Size: 183.1 MB (183110408 bytes)  
+	-	`sha256:1f81f3143db2f0e6bdd549cbb9a6128c217f2ef192c12b6044daed277cde2ae9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:46 GMT  
+		Size: 183.1 MB (183109092 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d0dbc643791b279d676519e037e59b3ba88b5e4579ab963a4d92fddb7b8017f`  
-		Last Modified: Fri, 21 Jul 2017 22:28:52 GMT  
-		Size: 272.0 KB (272005 bytes)  
+	-	`sha256:2034c15120cdd40d7f2d92f1233386821c361a328aea3b35a7345972a1d475c9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 272.0 KB (272003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3fe160733c2ccfd144eb302432b6c70e670cb4873c3c04ecc95aab6bd777d7ff`  
-		Last Modified: Mon, 24 Jul 2017 17:29:36 GMT  
-		Size: 247.0 MB (247021948 bytes)  
+	-	`sha256:01367c054cd2d56cdebc2e15fe0aee242c9d5820aa67b086a216a6da1ab8f550`  
+		Last Modified: Mon, 24 Jul 2017 22:30:28 GMT  
+		Size: 234.7 MB (234716987 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d92f4bda87178d39bdcdebc175e3983a4cf76f055afbda05f1239a62d2705ddb`  
-		Last Modified: Mon, 24 Jul 2017 17:30:56 GMT  
-		Size: 4.4 KB (4386 bytes)  
+	-	`sha256:63467f5e853736280efa14336e6ae063ace34024473004bd431b20604fe51c8c`  
+		Last Modified: Mon, 24 Jul 2017 22:31:40 GMT  
+		Size: 4.4 KB (4379 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e7e7dc1678ea4b37e9cc881e6a2b56c219e62611366b2e53fd9431489d0b226`  
-		Last Modified: Mon, 24 Jul 2017 17:31:33 GMT  
-		Size: 393.1 MB (393067882 bytes)  
+	-	`sha256:55900c1a648a20eb9015f96ed4183c32c1e35f2d847d3735eb5a75f65022703f`  
+		Last Modified: Mon, 24 Jul 2017 22:32:13 GMT  
+		Size: 393.1 MB (393067835 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3eac67b48abf7582e9118136292c5f3b8158dc77df529dabda331a1692a35890`  
-		Last Modified: Mon, 24 Jul 2017 17:30:56 GMT  
-		Size: 593.0 B  
+	-	`sha256:d87c926a75f68b1c62529e0ab53444ff1244e8185336df474add4bf676feb4b7`  
+		Last Modified: Mon, 24 Jul 2017 22:31:41 GMT  
+		Size: 596.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a2d3194d6f77382d8d80abbd0c932ad1435316afff74cecf0d40f2b055f5f0c`  
-		Last Modified: Mon, 24 Jul 2017 17:30:56 GMT  
-		Size: 976.0 B  
+	-	`sha256:633ef3c6c2cdfc11a13a92888fedcc69df877852182bc7d19c35457472a54ee6`  
+		Last Modified: Mon, 24 Jul 2017 22:31:43 GMT  
+		Size: 978.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9d6661b2ffde0417bf73d66c7ea8189d72f636e0350e8f9e83059a3839f4175`  
-		Last Modified: Mon, 24 Jul 2017 17:31:27 GMT  
-		Size: 393.1 MB (393069326 bytes)  
+	-	`sha256:9d29539543b0713a0950ba6831f8c1b25dd34adea90c22f7b200470cbdca0d6f`  
+		Last Modified: Mon, 24 Jul 2017 22:32:06 GMT  
+		Size: 393.1 MB (393069239 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1b0e905cea73cf47f3c71be7c0362447b3250070f58f3e39f5b2ae1fb935972`  
-		Last Modified: Mon, 24 Jul 2017 17:30:56 GMT  
-		Size: 915.0 B  
+	-	`sha256:8260d4a078f4ed7d8158197b14db961ae08528a6d5d901c42baa5b07a424d6f1`  
+		Last Modified: Mon, 24 Jul 2017 22:31:40 GMT  
+		Size: 914.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:FT`
 
 ```console
-$ docker pull nuxeo@sha256:3be264b84eb73a941b3cadbdb4c64c9c7f388801fc6155bbe4c2a0038ac52be9
+$ docker pull nuxeo@sha256:fef5a8ab5929c71411a46df62d14f06ba5a2e58e62bb39d5df61cd8ce520e6e7
 ```
 
 -	Platforms:
@@ -2118,156 +2118,156 @@ $ docker pull nuxeo@sha256:3be264b84eb73a941b3cadbdb4c64c9c7f388801fc6155bbe4c2a
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.3 GB (1327873074 bytes)**  
+-	Total Size: **1.3 GB (1315568086 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b92bf1b868e959fb9ff863ae9bdef96cd014e3ceda11a8d463875f2e517d471c`
+-	Image ID: `sha256:9a4db665e0041a777cb2dd7ee672b96fe5a7dfbbe991ccb1e6c6ddddabc6b469`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["nuxeoctl","console"]`
 
 ```dockerfile
-# Tue, 20 Jun 2017 20:24:09 GMT
-ADD file:93a0dbb6973bc13e5478292bfe283ff91745ca6e23b6fd3363f0661c45deb1ec in / 
-# Tue, 20 Jun 2017 20:24:10 GMT
+# Mon, 24 Jul 2017 16:52:54 GMT
+ADD file:ebba725fb97cea45d0b1b35ccc8144e766fcfc9a78530465c23b0c4674b14042 in / 
+# Mon, 24 Jul 2017 16:52:55 GMT
 CMD ["bash"]
-# Tue, 20 Jun 2017 21:21:56 GMT
+# Mon, 24 Jul 2017 17:28:39 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		curl 		wget 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 22:30:39 GMT
+# Mon, 24 Jul 2017 17:28:45 GMT
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
-# Thu, 06 Jul 2017 22:31:21 GMT
+# Mon, 24 Jul 2017 17:29:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:28 GMT
+# Mon, 24 Jul 2017 18:09:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzip2 		unzip 		xz-utils 	&& rm -rf /var/lib/apt/lists/*
-# Thu, 06 Jul 2017 23:11:29 GMT
+# Mon, 24 Jul 2017 18:09:51 GMT
 ENV LANG=C.UTF-8
-# Thu, 06 Jul 2017 23:11:31 GMT
+# Mon, 24 Jul 2017 18:09:52 GMT
 RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$(readlink -f "$(which javac || which java)")")"'; 	} > /usr/local/bin/docker-java-home 	&& chmod +x /usr/local/bin/docker-java-home
-# Thu, 06 Jul 2017 23:11:33 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_HOME=/docker-java-home
-# Thu, 06 Jul 2017 23:11:34 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_VERSION=8u131
-# Thu, 06 Jul 2017 23:11:35 GMT
+# Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_DEBIAN_VERSION=8u131-b11-2
-# Thu, 06 Jul 2017 23:11:36 GMT
+# Mon, 24 Jul 2017 18:09:54 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Fri, 21 Jul 2017 22:10:38 GMT
+# Mon, 24 Jul 2017 18:10:48 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Fri, 21 Jul 2017 22:10:42 GMT
+# Mon, 24 Jul 2017 18:10:51 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Mon, 24 Jul 2017 17:17:03 GMT
+# Mon, 24 Jul 2017 22:19:48 GMT
 MAINTAINER Nuxeo <packagers@nuxeo.com>
-# Mon, 24 Jul 2017 17:23:34 GMT
+# Mon, 24 Jul 2017 22:24:54 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     perl     locales     pwgen     imagemagick     ffmpeg2theora     ufraw     poppler-utils     libwpd-tools     exiftool     ghostscript     libreoffice  && rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:55 GMT
 RUN find / -perm +6000 -type f -exec chmod a-s {} \; || true
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ENV NUXEO_USER=nuxeo
-# Mon, 24 Jul 2017 17:23:36 GMT
+# Mon, 24 Jul 2017 22:24:56 GMT
 ENV NUXEO_HOME=/opt/nuxeo/server
-# Mon, 24 Jul 2017 17:25:20 GMT
+# Mon, 24 Jul 2017 22:26:32 GMT
 ARG NUXEO_VERSION=9.2
-# Mon, 24 Jul 2017 17:25:20 GMT
+# Mon, 24 Jul 2017 22:26:32 GMT
 ARG NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.2/nuxeo-server-9.2-tomcat.zip
-# Mon, 24 Jul 2017 17:25:20 GMT
+# Mon, 24 Jul 2017 22:26:33 GMT
 ARG NUXEO_MD5=fe08b58a881391fc74344880f80b7a78
-# Mon, 24 Jul 2017 17:25:23 GMT
+# Mon, 24 Jul 2017 22:26:33 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.2/nuxeo-server-9.2-tomcat.zip NUXEO_MD5=fe08b58a881391fc74344880f80b7a78 NUXEO_VERSION=9.2
 RUN useradd -m -d /home/$NUXEO_USER -u 1000 -s /bin/bash $NUXEO_USER
-# Mon, 24 Jul 2017 17:26:14 GMT
+# Mon, 24 Jul 2017 22:27:13 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.2/nuxeo-server-9.2-tomcat.zip NUXEO_MD5=fe08b58a881391fc74344880f80b7a78 NUXEO_VERSION=9.2
 RUN curl -fsSL "${NUXEO_DIST_URL}" -o /tmp/nuxeo-distribution-tomcat.zip     && if [ $NUXEO_VERSION != "master" ]; then echo "$NUXEO_MD5 /tmp/nuxeo-distribution-tomcat.zip" | md5sum -c -; fi     && mkdir -p /tmp/nuxeo-distribution $(dirname $NUXEO_HOME)     && unzip -q -d /tmp/nuxeo-distribution /tmp/nuxeo-distribution-tomcat.zip     && DISTDIR=$(/bin/ls /tmp/nuxeo-distribution | head -n 1)     && mv /tmp/nuxeo-distribution/$DISTDIR $NUXEO_HOME     && sed -i -e "s/^org.nuxeo.distribution.package.*/org.nuxeo.distribution.package=docker/" $NUXEO_HOME/templates/common/config/distribution.properties     && rm -rf /tmp/nuxeo-distribution*     && chmod +x $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && chmod g+rwX $NUXEO_HOME/bin/*ctl $NUXEO_HOME/bin/*.sh     && $NUXEO_HOME/bin/nuxeoctl mp-init
-# Mon, 24 Jul 2017 17:26:15 GMT
+# Mon, 24 Jul 2017 22:27:14 GMT
 COPY dir:6ff2a7cd59ae46215c04b0ef5347f96b1b3912245284bfcfc0080b9d688f08f0 in /opt/nuxeo/server/templates/docker 
-# Mon, 24 Jul 2017 17:26:15 GMT
+# Mon, 24 Jul 2017 22:27:14 GMT
 COPY file:d1a1e24ce447598e3f40ed68881237683fdf5004935f58bdd5f864e46dcc5503 in /etc/nuxeo/nuxeo.conf.template 
-# Mon, 24 Jul 2017 17:26:15 GMT
+# Mon, 24 Jul 2017 22:27:14 GMT
 ENV NUXEO_CONF=/etc/nuxeo/nuxeo.conf
-# Mon, 24 Jul 2017 17:26:20 GMT
+# Mon, 24 Jul 2017 22:27:19 GMT
 # ARGS: NUXEO_DIST_URL=http://community.nuxeo.com/static/releases/nuxeo-9.2/nuxeo-server-9.2-tomcat.zip NUXEO_MD5=fe08b58a881391fc74344880f80b7a78 NUXEO_VERSION=9.2
 RUN chown -R 1000:0 $NUXEO_HOME && chmod -R g+rwX $NUXEO_HOME     && chown -R 1000:0 /etc/nuxeo && chmod g+rwX /etc/nuxeo && rm -f $NUXEO_HOME/bin/nuxeo.conf     && mkdir -p /var/lib/nuxeo/data     && chown -R 1000:0 /var/lib/nuxeo/data && chmod -R g+rwX /var/lib/nuxeo/data     && mkdir -p /var/log/nuxeo     && chown -R 1000:0 /var/log/nuxeo && chmod -R g+rwX /var/log/nuxeo     && mkdir -p /var/run/nuxeo     && chown -R 1000:0 /var/run/nuxeo && chmod -R g+rwX /var/run/nuxeo     && mkdir -p /docker-entrypoint-initnuxeo.d     && chown -R 1000:0 /docker-entrypoint-initnuxeo.d && chmod -R g+rwX /docker-entrypoint-initnuxeo.d
-# Mon, 24 Jul 2017 17:26:23 GMT
+# Mon, 24 Jul 2017 22:27:22 GMT
 ENV PATH=/opt/nuxeo/server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 17:26:24 GMT
+# Mon, 24 Jul 2017 22:27:23 GMT
 WORKDIR /opt/nuxeo/server
-# Mon, 24 Jul 2017 17:26:24 GMT
+# Mon, 24 Jul 2017 22:27:23 GMT
 COPY file:872da8f105902c3a28d050cfaf4a490ca9fa9a6f9b5b1e1fa4c589228bab8e97 in / 
-# Mon, 24 Jul 2017 17:26:24 GMT
+# Mon, 24 Jul 2017 22:27:23 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Mon, 24 Jul 2017 17:26:25 GMT
+# Mon, 24 Jul 2017 22:27:23 GMT
 EXPOSE 8080/tcp
-# Mon, 24 Jul 2017 17:26:25 GMT
+# Mon, 24 Jul 2017 22:27:23 GMT
 EXPOSE 8787/tcp
-# Mon, 24 Jul 2017 17:26:25 GMT
+# Mon, 24 Jul 2017 22:27:24 GMT
 CMD ["nuxeoctl" "console"]
-# Mon, 24 Jul 2017 17:26:25 GMT
+# Mon, 24 Jul 2017 22:27:24 GMT
 USER [1000]
 ```
 
 -	Layers:
-	-	`sha256:c75480ad9aafadef6c7faf829ede40cf2fa990c9308d6cd354d53041b01a7cda`  
-		Last Modified: Tue, 20 Jun 2017 20:51:29 GMT  
-		Size: 45.1 MB (45139825 bytes)  
+	-	`sha256:06b22ddb19134ec8c42aaabd3e2e9f5b378e4e53da4a8960eaaaa86351190af3`  
+		Last Modified: Mon, 24 Jul 2017 16:59:30 GMT  
+		Size: 45.1 MB (45142935 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:18d67befbc4e6fc58906f99031e8183060a10ee8b4e30cd2a83a942f68760818`  
-		Last Modified: Wed, 21 Jun 2017 00:50:08 GMT  
-		Size: 11.1 MB (11108544 bytes)  
+	-	`sha256:336c28b408ed2225485696d1fada041792d7f1b47a4422175e203be4be2f83e6`  
+		Last Modified: Mon, 24 Jul 2017 17:36:29 GMT  
+		Size: 11.1 MB (11107641 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f5d2d0853c76cad76d65745ca5b10e17ffe72647e78616bb28b2fd70e5173ab`  
-		Last Modified: Thu, 06 Jul 2017 23:56:33 GMT  
-		Size: 4.4 MB (4411344 bytes)  
+	-	`sha256:1f3e6b8d80c36cab97c677f32305f00ab2aedb16a26cfb37d0a3a48c50316dbb`  
+		Last Modified: Mon, 24 Jul 2017 17:36:27 GMT  
+		Size: 4.4 MB (4411330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5de358416a758e4776153bd86b34fcaa0f31b577b335845b968646e61ac78bf4`  
-		Last Modified: Thu, 06 Jul 2017 23:56:47 GMT  
-		Size: 50.0 MB (50004119 bytes)  
+	-	`sha256:5ccc640979f6f91dfddf979bdb4482bc9e9e021d5d3469dbefda306342d0a41b`  
+		Last Modified: Mon, 24 Jul 2017 17:36:55 GMT  
+		Size: 50.0 MB (50003328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4049b231edeab7c94920b61f8e95d5ae615893cf7ae7b9d28a670f5e47765ddf`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
-		Size: 660.4 KB (660432 bytes)  
+	-	`sha256:14eaa20184e60073d2705ab636fb92b4428dfc503b858b423608dba26d628c99`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 660.5 KB (660458 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6617c62c7c1089f445af30dda32df5c346c31019acf9077741422a3e4785a537`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:19a8522e2399427c6c6d4cb5748e3c9ea39188af728386b37ffa3719b60a08a0`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa26fbcddb08b7bc5e7847d2cd1bfb54bd4674c892a483341f8d59911cb012c2`  
-		Last Modified: Thu, 06 Jul 2017 23:56:30 GMT  
+	-	`sha256:39ba9d7befcada9c3bfe28fe046ee3ddf551dbcd0fe29a620071c07f49afc2e9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf9eeaccdbef302badbe408271f44e78f77ace907ad645f50e01e0c877a09a16`  
-		Last Modified: Fri, 21 Jul 2017 22:29:36 GMT  
-		Size: 183.1 MB (183110408 bytes)  
+	-	`sha256:1f81f3143db2f0e6bdd549cbb9a6128c217f2ef192c12b6044daed277cde2ae9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:46 GMT  
+		Size: 183.1 MB (183109092 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3d0dbc643791b279d676519e037e59b3ba88b5e4579ab963a4d92fddb7b8017f`  
-		Last Modified: Fri, 21 Jul 2017 22:28:52 GMT  
-		Size: 272.0 KB (272005 bytes)  
+	-	`sha256:2034c15120cdd40d7f2d92f1233386821c361a328aea3b35a7345972a1d475c9`  
+		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
+		Size: 272.0 KB (272003 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3fe160733c2ccfd144eb302432b6c70e670cb4873c3c04ecc95aab6bd777d7ff`  
-		Last Modified: Mon, 24 Jul 2017 17:29:36 GMT  
-		Size: 247.0 MB (247021948 bytes)  
+	-	`sha256:01367c054cd2d56cdebc2e15fe0aee242c9d5820aa67b086a216a6da1ab8f550`  
+		Last Modified: Mon, 24 Jul 2017 22:30:28 GMT  
+		Size: 234.7 MB (234716987 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d92f4bda87178d39bdcdebc175e3983a4cf76f055afbda05f1239a62d2705ddb`  
-		Last Modified: Mon, 24 Jul 2017 17:30:56 GMT  
-		Size: 4.4 KB (4386 bytes)  
+	-	`sha256:63467f5e853736280efa14336e6ae063ace34024473004bd431b20604fe51c8c`  
+		Last Modified: Mon, 24 Jul 2017 22:31:40 GMT  
+		Size: 4.4 KB (4379 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e7e7dc1678ea4b37e9cc881e6a2b56c219e62611366b2e53fd9431489d0b226`  
-		Last Modified: Mon, 24 Jul 2017 17:31:33 GMT  
-		Size: 393.1 MB (393067882 bytes)  
+	-	`sha256:55900c1a648a20eb9015f96ed4183c32c1e35f2d847d3735eb5a75f65022703f`  
+		Last Modified: Mon, 24 Jul 2017 22:32:13 GMT  
+		Size: 393.1 MB (393067835 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3eac67b48abf7582e9118136292c5f3b8158dc77df529dabda331a1692a35890`  
-		Last Modified: Mon, 24 Jul 2017 17:30:56 GMT  
-		Size: 593.0 B  
+	-	`sha256:d87c926a75f68b1c62529e0ab53444ff1244e8185336df474add4bf676feb4b7`  
+		Last Modified: Mon, 24 Jul 2017 22:31:41 GMT  
+		Size: 596.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a2d3194d6f77382d8d80abbd0c932ad1435316afff74cecf0d40f2b055f5f0c`  
-		Last Modified: Mon, 24 Jul 2017 17:30:56 GMT  
-		Size: 976.0 B  
+	-	`sha256:633ef3c6c2cdfc11a13a92888fedcc69df877852182bc7d19c35457472a54ee6`  
+		Last Modified: Mon, 24 Jul 2017 22:31:43 GMT  
+		Size: 978.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9d6661b2ffde0417bf73d66c7ea8189d72f636e0350e8f9e83059a3839f4175`  
-		Last Modified: Mon, 24 Jul 2017 17:31:27 GMT  
-		Size: 393.1 MB (393069326 bytes)  
+	-	`sha256:9d29539543b0713a0950ba6831f8c1b25dd34adea90c22f7b200470cbdca0d6f`  
+		Last Modified: Mon, 24 Jul 2017 22:32:06 GMT  
+		Size: 393.1 MB (393069239 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1b0e905cea73cf47f3c71be7c0362447b3250070f58f3e39f5b2ae1fb935972`  
-		Last Modified: Mon, 24 Jul 2017 17:30:56 GMT  
-		Size: 915.0 B  
+	-	`sha256:8260d4a078f4ed7d8158197b14db961ae08528a6d5d901c42baa5b07a424d6f1`  
+		Last Modified: Mon, 24 Jul 2017 22:31:40 GMT  
+		Size: 914.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nuxeo:latest`
