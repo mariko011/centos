@@ -1256,14 +1256,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libdrm=2.4.67-1ubuntu0.14.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.67-1ubuntu0.14.04.1.dsc' libdrm_2.4.67-1ubuntu0.14.04.1.dsc 3548 SHA256:17a5e251218df1f4b04e6e4b599ceaa59f233cec8f0fbf5778e11760cf2346c3
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.67.orig.tar.gz' libdrm_2.4.67.orig.tar.gz 957783 SHA256:4ae392513c4df30d88f10e69bf425a1dff960a5b4ccd4da621d9fc88523f7acb
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.67-1ubuntu0.14.04.1.diff.gz' libdrm_2.4.67-1ubuntu0.14.04.1.diff.gz 37980 SHA256:d8d9f1b3b144d2f307e6362f2a4e7f8800797fa525bf3fa82a23836185cd14d5
-```
 
 ### `dpkg` source package: `libestr=0.1.9-0ubuntu2`
 
