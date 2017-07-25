@@ -238,14 +238,8 @@ Licenses: (parsed from: `/usr/share/doc/bzr/copyright`, `/usr/share/doc/python-b
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bzr=2.7.0+bzr6619-7
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0+bzr6619-7.dsc' bzr_2.7.0+bzr6619-7.dsc 2505 SHA256:105c05289b628417719d5b4f485224fd28b5c757456ecc978930d6b2030f1c81
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0+bzr6619.orig.tar.gz' bzr_2.7.0+bzr6619.orig.tar.gz 10945598 SHA256:a0192999245457fbd564702518bc96453ac0f9b38ea031a466679839b346fa14
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0+bzr6619-7.debian.tar.xz' bzr_2.7.0+bzr6619-7.debian.tar.xz 68144 SHA256:166dbbe925bd56773613990e81c95b3c30a54c1b55709a63916e48334e04d05e
-```
 
 ### `dpkg` source package: `ca-certificates=20161130+nmu1`
 
@@ -515,14 +509,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris expat=2.2.1-2
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.1-2.dsc' expat_2.2.1-2.dsc 2310 SHA256:207442a74d346277d64333bd1ad1784f0c52a4dba67950a434d04fa6f0a94d02
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.1.orig.tar.bz2' expat_2.2.1.orig.tar.bz2 405441 SHA256:1868cadae4c82a018e361e2b2091de103cd820aaacb0d6cfa49bd2cd83978885
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.1-2.debian.tar.xz' expat_2.2.1-2.debian.tar.xz 10944 SHA256:4bd5db1231539488c96c53679d5685fbe0583ac127b8332d12fe79eca420725c
-```
 
 ### `dpkg` source package: `explorercanvas=0.r3-4`
 
@@ -658,14 +646,8 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris glibc=2.24-9ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-9ubuntu2.dsc' glibc_2.24-9ubuntu2.dsc 8804 SHA256:cda05a3ebfa460628add96205d26ef42508c80069d169c9b5c2734135e74b52e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24.orig.tar.xz' glibc_2.24.orig.tar.xz 13921912 SHA256:ed71e8afd2b270f7947a2cea2457a31e1ca4fac08e2731d80edd7ec1730ec84f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.24-9ubuntu2.debian.tar.xz' glibc_2.24-9ubuntu2.debian.tar.xz 1019792 SHA256:5109579155e5d03c826aaef8b96b3fe611a98c7ba1a4c9a28de0bdfae4b2ecad
-```
 
 ### `dpkg` source package: `gmp=2:6.1.2+dfsg-1`
 
@@ -804,14 +786,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris heimdal=7.4.0.dfsg.1-1
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.4.0.dfsg.1-1.dsc' heimdal_7.4.0.dfsg.1-1.dsc 3652 SHA256:6755e0c1710068512ae1e81190c8c4c4a17735cf0215eeca05d22a8a5310c2bc
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.4.0.dfsg.1.orig.tar.gz' heimdal_7.4.0.dfsg.1.orig.tar.gz 9960312 SHA256:47ce052bb03af79d8f71d8e5d18647f12fda190bedd9da0f391697049f1feb14
-'http://archive.ubuntu.com/ubuntu/pool/main/h/heimdal/heimdal_7.4.0.dfsg.1-1.debian.tar.xz' heimdal_7.4.0.dfsg.1-1.debian.tar.xz 128172 SHA256:f40bebd372b4f8cbd74a517fa21ad7f4a20cb47562f547e0fda6f2addc690eda
-```
 
 ### `dpkg` source package: `hostname=3.18`
 
@@ -886,14 +862,8 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris krb5=1.15.1-1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.15.1-1.dsc' krb5_1.15.1-1.dsc 3270 SHA256:98d06ecfee7bd5e12995e24f293b4b49e169653888a19ea7645fcaf348c8667a
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.15.1.orig.tar.gz' krb5_1.15.1.orig.tar.gz 9375538 SHA256:437c8831ddd5fde2a993fef425dedb48468109bb3d3261ef838295045a89eb45
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.15.1-1.debian.tar.xz' krb5_1.15.1-1.debian.tar.xz 141944 SHA256:04b8750d3ef2d54bfe124b048d9cdc3702e82bfe75a0954ad5606d596170b53f
-```
 
 ### `dpkg` source package: `libassuan=2.4.3-2`
 
@@ -1434,14 +1404,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.44+dfsg-7ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.44+dfsg-7ubuntu1.dsc' openldap_2.4.44+dfsg-7ubuntu1.dsc 3056 SHA256:6814482991fd274cf665202c28b64303546816fa78bd79eaca47865ebc327cb8
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.44+dfsg.orig.tar.gz' openldap_2.4.44+dfsg.orig.tar.gz 4826590 SHA256:d5187c229bec163c5d97845846e1b87917755f85b04f444c08836384f4bd7ffe
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.44+dfsg-7ubuntu1.debian.tar.xz' openldap_2.4.44+dfsg-7ubuntu1.debian.tar.xz 177124 SHA256:20ecdec7529f8b30ed66cdd9c383751685e4cb417611bc4bf14acdb5624cb34e
-```
 
 ### `dpkg` source package: `openssh=1:7.5p1-3ubuntu1`
 
@@ -1546,14 +1510,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris pcre3=2:8.39-3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-3.dsc' pcre3_8.39-3.dsc 2133 SHA256:3180a023c33b5eb7f0a853bec887be867d00a68da8d119d989909e40c6168fd7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39.orig.tar.bz2' pcre3_8.39.orig.tar.bz2 1560758 SHA256:b858099f82483031ee02092711689e7245586ada49e534a06e678b8ea9549e8b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre3/pcre3_8.39-3.debian.tar.gz' pcre3_8.39-3.debian.tar.gz 25025 SHA256:a9f0e1a96b6a017965fe69233e267682c289f2cfeb33b46fb78aedcb8cf2c16a
-```
 
 ### `dpkg` source package: `perl=5.24.1-7ubuntu1`
 
@@ -1852,15 +1810,8 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.19.3-2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.19.3-2.dsc' sqlite3_3.19.3-2.dsc 2488 SHA256:97c75c07792ce870ece082283cc519894d33887e9a04e74ec24984588a4e26ca
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.19.3.orig-www.tar.xz' sqlite3_3.19.3.orig-www.tar.xz 3475624 SHA256:d022fc888db199fbdb83f984cffd2b28bce4e5607c1aa3133bfc22f901d221d6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.19.3.orig.tar.xz' sqlite3_3.19.3.orig.tar.xz 5694132 SHA256:f315f639127bfd36516df4ad3181e05905058507a54dd882e0c4d9d13378baae
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.19.3-2.debian.tar.xz' sqlite3_3.19.3-2.debian.tar.xz 16996 SHA256:105c2bca470d72d0519a6b19f0671cad4d156162320c3adcc019d8287f3225ed
-```
 
 ### `dpkg` source package: `subversion=1.9.5-1ubuntu1`
 
@@ -1940,14 +1891,8 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tar=1.29b-1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.29b-1.1.dsc' tar_1.29b-1.1.dsc 2057 SHA256:9474ed422017e23e8208785c071b9f7765d73d704b9bb19da22699c6581d73ef
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.29b.orig.tar.xz' tar_1.29b.orig.tar.xz 1822008 SHA256:6a59706ebee384a6cd2fb3ee1dbfbfc20c5c66c7efd7cedb28edc054fca8ba00
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.29b-1.1.debian.tar.xz' tar_1.29b-1.1.debian.tar.xz 28484 SHA256:380f80af0e87446796f05ba384c5d130ea2ad5978b8cfdcf315503966333ebb9
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2016.10.27`
 
