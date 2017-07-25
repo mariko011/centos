@@ -1,10 +1,10 @@
-# `openjdk:6b38-jre`
+# `openjdk:6b38-jre-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2e63902950bf0f2f3b80d808700a1086ae8dcdf414a50c1aa710b05c914bce00`
-- Created: `2017-07-24T18:01:58.369408888Z`
-- Virtual Size: ~ 195.53 Mb  
+- Image ID: `sha256:25a6a91f3b18c49dbfb8b84f9d74862f0afb96d329b73eea738791d7e9d86bea`
+- Created: `2017-07-24T18:02:22.081582682Z`
+- Virtual Size: ~ 147.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -335,63 +335,6 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/cups/1.5.3-5+deb7u6/
 - https://sources.debian.net/src/cups/1.5.3-5+deb7u6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `curl=7.26.0-1+wheezy19`
-
-Binary Packages:
-
-- `curl=7.26.0-1+wheezy19`
-- `libcurl3:amd64=7.26.0-1+wheezy19`
-
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`)
-
-- `BSD-3-Clause`
-- `BSD-4-Clause`
-- `ISC`
-- `curl`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy19
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy19.dsc' curl_7.26.0-1+wheezy19.dsc 2534 SHA256:b1ea1e14b6edf19df59451d6acc7ab4bf08d43e7b44da0605c34fdb7e45ec84e
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy19.debian.tar.gz' curl_7.26.0-1+wheezy19.debian.tar.gz 65127 SHA256:729313e79a66ec2a4262a692d4a8128e283ee688d406a7d26a26d8676c084be3
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/curl/7.26.0-1+wheezy19/
-- https://sources.debian.net/src/curl/7.26.0-1+wheezy19/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
-
-Binary Packages:
-
-- `libsasl2-2:amd64=2.1.25.dfsg1-6+deb7u1`
-
-Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`)
-
-- `BSD-2-clause`
-- `BSD-4-clause`
-- `GPL-2`
-- `GPL-2+`
-- `GPL-3`
-- `GPL-3+`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.25.dfsg1-6+deb7u1
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.25.dfsg1-6+deb7u1.dsc' cyrus-sasl2_2.1.25.dfsg1-6+deb7u1.dsc 2584 SHA256:051dfeb80b1ddf3c0018b9e9d32b32526577d62b1fd230c55c09400a1dfaf55d
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.25.dfsg1.orig.tar.gz' cyrus-sasl2_2.1.25.dfsg1.orig.tar.gz 1489145 SHA256:523f752715669c3e44b663b16929257c8868db23f427552930ca2fdb24c8d1c3
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.25.dfsg1-6+deb7u1.debian.tar.gz' cyrus-sasl2_2.1.25.dfsg1-6+deb7u1.debian.tar.gz 106970 SHA256:0ea7d1f7c1c4daafb94548e9aecf0952cff918313f0bbee0ad394ca0354b14b7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cyrus-sasl2/2.1.25.dfsg1-6+deb7u1/
-- https://sources.debian.net/src/cyrus-sasl2/2.1.25.dfsg1-6+deb7u1/debian/copyright (for direct copyright/license information)
-
 ### `dpkg` source package: `dash=0.5.7-3`
 
 Binary Packages:
@@ -472,7 +415,7 @@ Binary Packages:
 - `debconf=1.5.49`
 - `debconf-i18n=1.5.49`
 
-Licenses: (parsed from: `/usr/share/doc/debconf/copyright`, `/usr/share/doc/debconf-i18n/copyright`)
+Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
@@ -725,7 +668,7 @@ Binary Packages:
 - `libgcc1:amd64=1:4.7.2-5`
 - `libstdc++6:amd64=4.7.2-5`
 
-Licenses: (parsed from: `/usr/share/doc/gcc-4.7-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gcc-4.7-base/copyright`)
 
 - `Artistic`
 - `GFDL-1.2`
@@ -872,31 +815,6 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/hostname/3.11/
 - https://sources.debian.net/src/hostname/3.11/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `inetutils=2:1.9-2`
-
-Binary Packages:
-
-- `inetutils-ping=2:1.9-2`
-
-Licenses: (parsed from: `/usr/share/doc/inetutils-ping/copyright`)
-
-- `GFDL-1.2`
-- `GPL-3`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris inetutils=2:1.9-2
-'http://deb.debian.org/debian/pool/main/i/inetutils/inetutils_1.9-2.dsc' inetutils_1.9-2.dsc 1889 SHA256:e843a9796d9e637827b93412d9556afc0b5badca8611cb59315128a24711a39e
-'http://deb.debian.org/debian/pool/main/i/inetutils/inetutils_1.9.orig.tar.gz' inetutils_1.9.orig.tar.gz 2091681 SHA256:e517178ee33b8427a66ca351a0ba2694c36666aa5c88e969f75a684d85d80730
-'http://deb.debian.org/debian/pool/main/i/inetutils/inetutils_1.9-2.debian.tar.gz' inetutils_1.9-2.debian.tar.gz 82510 SHA256:a629f3ccdbbcd2d4df22af5df81ba3beb36e64cd40a3c2a79e4a302354437d58
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/inetutils/2:1.9-2/
-- https://sources.debian.net/src/inetutils/2:1.9-2/debian/copyright (for direct copyright/license information)
-
 ### `dpkg` source package: `insserv=1.14.0-5`
 
 Binary Packages:
@@ -920,30 +838,6 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/insserv/1.14.0-5/
 - https://sources.debian.net/src/insserv/1.14.0-5/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `iproute=20120521-3`
-
-Binary Packages:
-
-- `iproute=20120521-3+b3`
-
-Licenses: (parsed from: `/usr/share/doc/iproute/copyright`)
-
-- `GPL`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris iproute=20120521-3
-'http://deb.debian.org/debian/pool/main/i/iproute/iproute_20120521-3.dsc' iproute_20120521-3.dsc 1580 SHA256:53cb5b2c105ba9fe59a0aa3d9b2f63b4da029b6110beb10812f933743a0c0deb
-'http://deb.debian.org/debian/pool/main/i/iproute/iproute_20120521.orig.tar.xz' iproute_20120521.orig.tar.xz 382092 SHA256:38e846e412b2fa235a447b50c20ad1e9770d1b3ed4d3ab18ca0b18c6e8b79ba4
-'http://deb.debian.org/debian/pool/main/i/iproute/iproute_20120521-3.debian.tar.gz' iproute_20120521-3.debian.tar.gz 26344 SHA256:96ed32bf753ebb8734ff02b411507253ae376f04e7a4772ec098246ff5fafa8c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/iproute/20120521-3/
-- https://sources.debian.net/src/iproute/20120521-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `java-common=0.47+deb7u2`
 
@@ -999,6 +893,7 @@ Likely also available for browsing at:
 
 Binary Packages:
 
+- `krb5-locales=1.10.1+dfsg-5+deb7u7`
 - `libgssapi-krb5-2:amd64=1.10.1+dfsg-5+deb7u7`
 - `libk5crypto3:amd64=1.10.1+dfsg-5+deb7u7`
 - `libkrb5-3:amd64=1.10.1+dfsg-5+deb7u7`
@@ -1120,40 +1015,6 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/libgpg-error/1.10-3.1/
 - https://sources.debian.net/src/libgpg-error/1.10-3.1/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `libidn=1.25-2+deb7u2`
-
-Binary Packages:
-
-- `libidn11:amd64=1.25-2+deb7u2`
-
-Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`)
-
-- `GAP`
-- `GFDL-1.3`
-- `GFDL-1.3+`
-- `GPL-2`
-- `GPL-3`
-- `GPL-3+`
-- `LGPL-2`
-- `LGPL-2.1`
-- `LGPL-2.1+`
-- `LGPL-3`
-- `LGPL-3+ | GPL-2+`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris libidn=1.25-2+deb7u2
-'http://security.debian.org/pool/updates/main/libi/libidn/libidn_1.25-2+deb7u2.dsc' libidn_1.25-2+deb7u2.dsc 2181 SHA256:32a0233e9ccae9894b07e7c0015488af41f53c76404876645f2a119048236150
-'http://security.debian.org/pool/updates/main/libi/libidn/libidn_1.25.orig.tar.gz' libidn_1.25.orig.tar.gz 3390531 SHA256:7fe625328a6a5d837d723c462c1788affb84d9c9fc0ae5cd0ce9ac7724c34716
-'http://security.debian.org/pool/updates/main/libi/libidn/libidn_1.25-2+deb7u2.debian.tar.gz' libidn_1.25-2+deb7u2.debian.tar.gz 31241 SHA256:7d87c19a4b9307b8189b97d3d5922fbb392a669d3d92e9d528fcf976fb6f54b4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libidn/1.25-2+deb7u2/
-- https://sources.debian.net/src/libidn/1.25-2+deb7u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libjpeg8=8d-1+deb7u1`
 
@@ -1281,35 +1142,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libsepol/2.1.4-3/
 - https://sources.debian.net/src/libsepol/2.1.4-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libssh2=1.4.2-1.1+deb7u2`
+### `dpkg` source package: `libtasn1-3=2.13-2+deb7u5`
 
 Binary Packages:
 
-- `libssh2-1:amd64=1.4.2-1.1+deb7u2`
-
-Licenses: (parsed from: `/usr/share/doc/libssh2-1/copyright`)
-
-- `BSD`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris libssh2=1.4.2-1.1+deb7u2
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.4.2-1.1+deb7u2.dsc' libssh2_1.4.2-1.1+deb7u2.dsc 1859 SHA256:940a4a683dcdf547660bc6d105dc622ea0acdead4fcdc8041af33d63dff8ad86
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.4.2.orig.tar.gz' libssh2_1.4.2.orig.tar.gz 679992 SHA256:418c09061fb9c3c26fec391a35a062780b21b3199885e3b27054619582469bd3
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.4.2-1.1+deb7u2.debian.tar.gz' libssh2_1.4.2-1.1+deb7u2.debian.tar.gz 7720 SHA256:bfcdc8549b87948f2ca396c1ea9456534b03a7f1d0d0ffbabd2408d77e07cdc4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libssh2/1.4.2-1.1+deb7u2/
-- https://sources.debian.net/src/libssh2/1.4.2-1.1+deb7u2/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `libtasn1-3=2.13-2+deb7u4`
-
-Binary Packages:
-
-- `libtasn1-3:amd64=2.13-2+deb7u4`
+- `libtasn1-3:amd64=2.13-2+deb7u5`
 
 Licenses: (parsed from: `/usr/share/doc/libtasn1-3/copyright`)
 
@@ -1318,8 +1155,19 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-3/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libtasn1-3=2.13-2+deb7u5
+'http://security.debian.org/pool/updates/main/libt/libtasn1-3/libtasn1-3_2.13-2+deb7u5.dsc' libtasn1-3_2.13-2+deb7u5.dsc 2492 SHA256:818f02ba2b4bd3278c2819df1918af3a274ef50dc76f9f4e19f5c04aebb74da8
+'http://security.debian.org/pool/updates/main/libt/libtasn1-3/libtasn1-3_2.13.orig.tar.gz' libtasn1-3_2.13.orig.tar.gz 1964659 SHA256:a56e46483d1d42fe44ba58c9758620844042468d7c2d75f6318cdf3222745a91
+'http://security.debian.org/pool/updates/main/libt/libtasn1-3/libtasn1-3_2.13-2+deb7u5.debian.tar.gz' libtasn1-3_2.13-2+deb7u5.debian.tar.gz 14449 SHA256:a73cfde650ddc086a7681cae367d082b48a9454e225753cb0893180091d2c70c
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libtasn1-3/2.13-2+deb7u5/
+- https://sources.debian.net/src/libtasn1-3/2.13-2+deb7u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libtext-charwidth-perl=0.04-7`
 
@@ -1495,29 +1343,6 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/ncurses/5.9-10/
 - https://sources.debian.net/src/ncurses/5.9-10/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `netbase=5.0`
-
-Binary Packages:
-
-- `netbase=5.0`
-
-Licenses: (parsed from: `/usr/share/doc/netbase/copyright`)
-
-- `GPL-2`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris netbase=5.0
-'http://deb.debian.org/debian/pool/main/n/netbase/netbase_5.0.dsc' netbase_5.0.dsc 724 SHA256:a7a49618de72446682179bb70c550a0d7089c7b0db01eb83d560d3be72ca776d
-'http://deb.debian.org/debian/pool/main/n/netbase/netbase_5.0.tar.gz' netbase_5.0.tar.gz 34915 SHA256:ac9424d3cb2bd3c07b6c5bc5875c434d3bc687a73cd7c54b7dc7122308afa9dc
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/netbase/5.0/
-- https://sources.debian.net/src/netbase/5.0/debian/copyright (for direct copyright/license information)
-
 ### `dpkg` source package: `nspr=2:4.12-1+deb7u1`
 
 Binary Packages:
@@ -1594,30 +1419,6 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/openjdk-6/6b38-1.13.10-1~deb7u1/
 - https://sources.debian.net/src/openjdk-6/6b38-1.13.10-1~deb7u1/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `openldap=2.4.31-2+deb7u3`
-
-Binary Packages:
-
-- `libldap-2.4-2:amd64=2.4.31-2+deb7u3`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris openldap=2.4.31-2+deb7u3
-'http://security.debian.org/pool/updates/main/o/openldap/openldap_2.4.31-2+deb7u3.dsc' openldap_2.4.31-2+deb7u3.dsc 2752 SHA256:0b62e62a3a4494b75b57f304ed1fdc46d5aa58d6080759431941067b461b52df
-'http://security.debian.org/pool/updates/main/o/openldap/openldap_2.4.31.orig.tar.gz' openldap_2.4.31.orig.tar.gz 4720612 SHA256:dff60c1044021217ab97a7bdda5a7016015f042db0fbfd566d52abb266d19239
-'http://security.debian.org/pool/updates/main/o/openldap/openldap_2.4.31-2+deb7u3.diff.gz' openldap_2.4.31-2+deb7u3.diff.gz 166505 SHA256:699983d42003b2c7402703c33510007c64daafbdf90250199e56bdaf40537aaa
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openldap/2.4.31-2+deb7u3/
-- https://sources.debian.net/src/openldap/2.4.31-2+deb7u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssl=1.0.1t-1+deb7u2`
 
@@ -1731,30 +1532,9 @@ Binary Packages:
 
 - `perl-base=5.14.2-21+deb7u5`
 
-Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
+  If source is available (seen below), check the contents of `debian/copyright` within it.
 
-- `Artistic`
-- `Artistic,`
-- `Artistic-2`
-- `BSD-3-clause`
-- `BSD-3-clause-GENERIC`
-- `BSD-4-clause`
-- `BSD-4-clause-POWERDOG`
-- `BZIP`
-- `DONT-CHANGE-THE-GPL`
-- `Expat`
-- `GPL`
-- `GPL-1+`
-- `GPL-2+`
-- `PERLDOCS`
-- `REGCOMP`
-- `REGCOMP,`
-- `S2P`
-- `SDBM-PUBLIC-DOMAIN`
-- `TEXT-SOUNDEX`
-- `TEXT-TABS`
-- `Unicode`
-- `ZLIB`
 
 Source:
 
@@ -1794,31 +1574,6 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/readline6/6.2+dfsg-0.1/
 - https://sources.debian.net/src/readline6/6.2+dfsg-0.1/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `rtmpdump=2.4+20111222.git4e06e21-1+deb7u1`
-
-Binary Packages:
-
-- `librtmp0:amd64=2.4+20111222.git4e06e21-1+deb7u1`
-
-Licenses: (parsed from: `/usr/share/doc/librtmp0/copyright`)
-
-- `GPL-2`
-- `LGPL-2.1`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris rtmpdump=2.4+20111222.git4e06e21-1+deb7u1
-'http://security.debian.org/pool/updates/main/r/rtmpdump/rtmpdump_2.4+20111222.git4e06e21-1+deb7u1.dsc' rtmpdump_2.4+20111222.git4e06e21-1+deb7u1.dsc 2231 SHA256:fda2a79452563ca827a9ed8961d06cd64c2b2987294e940474e5d87cf0fecba4
-'http://security.debian.org/pool/updates/main/r/rtmpdump/rtmpdump_2.4+20111222.git4e06e21.orig.tar.gz' rtmpdump_2.4+20111222.git4e06e21.orig.tar.gz 137391 SHA256:69dd9cc5228869efdeed234ae63327c14d0935da3b5a2cd7011688c1f66fb385
-'http://security.debian.org/pool/updates/main/r/rtmpdump/rtmpdump_2.4+20111222.git4e06e21-1+deb7u1.debian.tar.gz' rtmpdump_2.4+20111222.git4e06e21-1+deb7u1.debian.tar.gz 7735 SHA256:b76a37e5bb7fd642cd4e67df734d0bbebef307991d0ae7ddd35f98bc9ee35ca9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/rtmpdump/2.4+20111222.git4e06e21-1+deb7u1/
-- https://sources.debian.net/src/rtmpdump/2.4+20111222.git4e06e21-1+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sed=4.2.1-10`
 
@@ -2125,31 +1880,6 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/util-linux/2.20.1-5.3/
 - https://sources.debian.net/src/util-linux/2.20.1-5.3/debian/copyright (for direct copyright/license information)
-
-### `dpkg` source package: `wget=1.13.4-3+deb7u4`
-
-Binary Packages:
-
-- `wget=1.13.4-3+deb7u4`
-
-Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
-
-- `GFDL-1.2`
-- `GPL-3`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris wget=1.13.4-3+deb7u4
-'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4-3+deb7u4.dsc' wget_1.13.4-3+deb7u4.dsc 1768 SHA256:1d62e31002bce8eb855c9f67d7a79970d0c823a2a689adbb49e05acb75de0bd9
-'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4.orig.tar.gz' wget_1.13.4.orig.tar.gz 2815185 SHA256:24c7710bc9f220ce23d8a9e0f5673b0efc1cace62db6de0239b5863ecc934dcd
-'http://security.debian.org/pool/updates/main/w/wget/wget_1.13.4-3+deb7u4.debian.tar.gz' wget_1.13.4-3+deb7u4.debian.tar.gz 28807 SHA256:426c625ef6459e25a3bf991e5d16790e98b58d5af34ae9b38f468c902ee7a028
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/wget/1.13.4-3+deb7u4/
-- https://sources.debian.net/src/wget/1.13.4-3+deb7u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `xz-utils=5.1.1alpha+20120614-2`
 

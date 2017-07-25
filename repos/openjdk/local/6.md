@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:34f88b2f43b2e36e4aca466518445662e0b151ac63a746fef8208613c71c2b28`
-- Created: `2017-07-07T03:53:09.234752458Z`
+- Image ID: `sha256:de7b639b9d98527c6b1e4bc4b51d01cdaf5850563e1aef58dcf75439b86aa106`
+- Created: `2017-07-24T18:00:33.847184952Z`
 - Virtual Size: ~ 420.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1786,19 +1786,30 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libffi/3.0.10-3+deb7u2/
 - https://sources.debian.net/src/libffi/3.0.10-3+deb7u2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libgcrypt11=1.5.0-5+deb7u5`
+### `dpkg` source package: `libgcrypt11=1.5.0-5+deb7u6`
 
 Binary Packages:
 
-- `libgcrypt11:amd64=1.5.0-5+deb7u5`
+- `libgcrypt11:amd64=1.5.0-5+deb7u6`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt11/copyright`)
 
 - `GPL-2`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libgcrypt11=1.5.0-5+deb7u6
+'http://security.debian.org/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0-5+deb7u6.dsc' libgcrypt11_1.5.0-5+deb7u6.dsc 2488 SHA256:42d5191ac23cb81c2958f6e89f706c80786dfbce5e53827b979a5aa578d60f4c
+'http://security.debian.org/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0.orig.tar.bz2' libgcrypt11_1.5.0.orig.tar.bz2 1433506 SHA256:4b62fc516004940a0571025401a0581d49199f1a76dfb5ce6fd63f50db8173fa
+'http://security.debian.org/pool/updates/main/libg/libgcrypt11/libgcrypt11_1.5.0-5+deb7u6.debian.tar.gz' libgcrypt11_1.5.0-5+deb7u6.debian.tar.gz 38896 SHA256:112613559143ec5f35f809c31e8fb3ae7f64d944df5111d172fb72fe6b159bd3
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libgcrypt11/1.5.0-5+deb7u6/
+- https://sources.debian.net/src/libgcrypt11/1.5.0-5+deb7u6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.10-3.1`
 
@@ -2194,19 +2205,8 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-3/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libtasn1-3=2.13-2+deb7u4
-'http://security.debian.org/pool/updates/main/libt/libtasn1-3/libtasn1-3_2.13-2+deb7u4.dsc' libtasn1-3_2.13-2+deb7u4.dsc 2492 SHA256:d8996334d749ff35c0e0d1880deeef7ffa9aeaa18f95aa1c4e06ca71841bbb07
-'http://security.debian.org/pool/updates/main/libt/libtasn1-3/libtasn1-3_2.13.orig.tar.gz' libtasn1-3_2.13.orig.tar.gz 1964659 SHA256:a56e46483d1d42fe44ba58c9758620844042468d7c2d75f6318cdf3222745a91
-'http://security.debian.org/pool/updates/main/libt/libtasn1-3/libtasn1-3_2.13-2+deb7u4.debian.tar.gz' libtasn1-3_2.13-2+deb7u4.debian.tar.gz 13459 SHA256:f9609704ed1d44e6375c6857d6393a5b8546e7a561651893c68f2a4e6c681bed
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libtasn1-3/2.13-2+deb7u4/
-- https://sources.debian.net/src/libtasn1-3/2.13-2+deb7u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libtext-charwidth-perl=0.04-7`
 
@@ -3560,18 +3560,30 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/slang2/2.2.4-15/
 - https://sources.debian.net/src/slang2/2.2.4-15/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `sqlite3=3.7.13-1+deb7u3`
+### `dpkg` source package: `sqlite3=3.7.13-1+deb7u4`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.7.13-1+deb7u3`
+- `libsqlite3-0:amd64=3.7.13-1+deb7u4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris sqlite3=3.7.13-1+deb7u4
+'http://security.debian.org/pool/updates/main/s/sqlite3/sqlite3_3.7.13-1+deb7u4.dsc' sqlite3_3.7.13-1+deb7u4.dsc 2447 SHA256:f096b6609611239f74a76e65e895325d3fc711d49925b87c9ca136919586ea15
+'http://security.debian.org/pool/updates/main/s/sqlite3/sqlite3_3.7.13.orig-www.tar.gz' sqlite3_3.7.13.orig-www.tar.gz 3031341 SHA256:8ce4b88b696e30b1a02b36dc71cff83ac81e28f82a42b1a5a33bef3434ca1079
+'http://security.debian.org/pool/updates/main/s/sqlite3/sqlite3_3.7.13.orig.tar.gz' sqlite3_3.7.13.orig.tar.gz 4367680 SHA256:9a9e72043cb0b5a790561c5a6829e3b2b87c5087e5b47dee74424be8cb814716
+'http://security.debian.org/pool/updates/main/s/sqlite3/sqlite3_3.7.13-1+deb7u4.debian.tar.gz' sqlite3_3.7.13-1+deb7u4.debian.tar.gz 22519 SHA256:4a400935fb1472e25af4e9bb11f97ce4c898a72223acea5263613e70bdb78138
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/sqlite3/3.7.13-1+deb7u4/
+- https://sources.debian.net/src/sqlite3/3.7.13-1+deb7u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `subversion=1.6.17dfsg-4+deb7u11`
 
@@ -3701,18 +3713,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/tcp-wrappers/7.6.q-24/
 - https://sources.debian.net/src/tcp-wrappers/7.6.q-24/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `tiff3=3.9.6-11+deb7u6`
+### `dpkg` source package: `tiff3=3.9.6-11+deb7u7`
 
 Binary Packages:
 
-- `libtiff4:amd64=3.9.6-11+deb7u6`
+- `libtiff4:amd64=3.9.6-11+deb7u7`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff3=3.9.6-11+deb7u7
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u7.dsc' tiff3_3.9.6-11+deb7u7.dsc 1946 SHA256:a6632c7877b4a817bfa91b43ec80096b97766e66eceae1aca12136839db972b5
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6.orig.tar.gz' tiff3_3.9.6.orig.tar.gz 1454196 SHA256:0fba119156236074343a14afbd3a47907e3a5952c9c86102305d4eeb06ad6833
+'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u7.debian.tar.gz' tiff3_3.9.6-11+deb7u7.debian.tar.gz 48257 SHA256:a594604d2f8e140df67138e1aecc1ebee3c5ecd6ef34b6f1e857c55323108d02
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u7/
+- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ttf-dejavu=2.33-3`
 
