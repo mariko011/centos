@@ -892,19 +892,8 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-3/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libtasn1-3=2.13-2+deb7u4
-'http://security.debian.org/pool/updates/main/libt/libtasn1-3/libtasn1-3_2.13-2+deb7u4.dsc' libtasn1-3_2.13-2+deb7u4.dsc 2492 SHA256:d8996334d749ff35c0e0d1880deeef7ffa9aeaa18f95aa1c4e06ca71841bbb07
-'http://security.debian.org/pool/updates/main/libt/libtasn1-3/libtasn1-3_2.13.orig.tar.gz' libtasn1-3_2.13.orig.tar.gz 1964659 SHA256:a56e46483d1d42fe44ba58c9758620844042468d7c2d75f6318cdf3222745a91
-'http://security.debian.org/pool/updates/main/libt/libtasn1-3/libtasn1-3_2.13-2+deb7u4.debian.tar.gz' libtasn1-3_2.13-2+deb7u4.debian.tar.gz 13459 SHA256:f9609704ed1d44e6375c6857d6393a5b8546e7a561651893c68f2a4e6c681bed
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libtasn1-3/2.13-2+deb7u4/
-- https://sources.debian.net/src/libtasn1-3/2.13-2+deb7u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libtext-charwidth-perl=0.04-7`
 
