@@ -1,7 +1,7 @@
 ## `openjdk:8-jre`
 
 ```console
-$ docker pull openjdk@sha256:72f28954f0c8538c73f721ad5ba7dac64676046b5ffdd3f26b73130018fcf227
+$ docker pull openjdk@sha256:778ed3bfa1165964c12412c1c32259b4d45406f74728f0518e9036427e43337b
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull openjdk@sha256:72f28954f0c8538c73f721ad5ba7dac64676046b5ffdd3f26b7
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **116.0 MB (115984041 bytes)**  
+-	Total Size: **116.2 MB (116167956 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02d99451775ee613f230358120837d0cb0915c612e8c48f46e8174b56185497b`
+-	Image ID: `sha256:8363d7ceb7b77ec0341f7cdad0e98673fc3bbcee82266ba1f1e068bdb0e34378`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -35,15 +35,15 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
 # Mon, 24 Jul 2017 18:11:49 GMT
 ENV JAVA_HOME=/docker-java-home/jre
-# Mon, 24 Jul 2017 18:11:49 GMT
-ENV JAVA_VERSION=8u131
-# Mon, 24 Jul 2017 18:11:50 GMT
-ENV JAVA_DEBIAN_VERSION=8u131-b11-2
-# Mon, 24 Jul 2017 18:11:50 GMT
+# Wed, 26 Jul 2017 20:33:51 GMT
+ENV JAVA_VERSION=8u141
+# Wed, 26 Jul 2017 20:33:51 GMT
+ENV JAVA_DEBIAN_VERSION=8u141-b15-1~deb9u1
+# Wed, 26 Jul 2017 20:33:51 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Mon, 24 Jul 2017 18:12:11 GMT
+# Wed, 26 Jul 2017 20:34:05 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jre-headless="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Mon, 24 Jul 2017 18:12:14 GMT
+# Wed, 26 Jul 2017 20:34:06 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 ```
 
@@ -72,11 +72,11 @@ RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 		Last Modified: Mon, 24 Jul 2017 18:24:24 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2e542fdaf109acf49bcbe56a397a140be9ea9baf4f51e55f4160af86927840de`  
-		Last Modified: Mon, 24 Jul 2017 18:24:34 GMT  
-		Size: 54.4 MB (54420272 bytes)  
+	-	`sha256:1c5595fa1317552509caf4caf8d0865ee2e620b03cf49940cf8fea1825018a95`  
+		Last Modified: Wed, 26 Jul 2017 20:39:33 GMT  
+		Size: 54.6 MB (54604248 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2f213d11280db267c1a51d9b9ee8b43bb6e6653ffb1f0e8dcb5b0b7f38aab96`  
-		Last Modified: Mon, 24 Jul 2017 18:24:24 GMT  
-		Size: 272.1 KB (272084 bytes)  
+	-	`sha256:e1a6cc83dc3d79c86999e443f60669ac8b443fe27f3f359c404196c5dac11927`  
+		Last Modified: Wed, 26 Jul 2017 20:39:25 GMT  
+		Size: 272.0 KB (272023 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
