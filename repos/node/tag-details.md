@@ -18,6 +18,10 @@
 -	[`node:8.2-slim`](#node82-slim)
 -	[`node:8-slim`](#node8-slim)
 -	[`node:slim`](#nodeslim)
+-	[`node:8.2.1-stretch`](#node821-stretch)
+-	[`node:8.2-stretch`](#node82-stretch)
+-	[`node:8-stretch`](#node8-stretch)
+-	[`node:stretch`](#nodestretch)
 -	[`node:8.2.1-wheezy`](#node821-wheezy)
 -	[`node:8.2-wheezy`](#node82-wheezy)
 -	[`node:8-wheezy`](#node8-wheezy)
@@ -34,6 +38,9 @@
 -	[`node:7.10.1-slim`](#node7101-slim)
 -	[`node:7.10-slim`](#node710-slim)
 -	[`node:7-slim`](#node7-slim)
+-	[`node:7.10.1-stretch`](#node7101-stretch)
+-	[`node:7.10-stretch`](#node710-stretch)
+-	[`node:7-stretch`](#node7-stretch)
 -	[`node:7.10.1-wheezy`](#node7101-wheezy)
 -	[`node:7.10-wheezy`](#node710-wheezy)
 -	[`node:7-wheezy`](#node7-wheezy)
@@ -53,6 +60,10 @@
 -	[`node:6.11-slim`](#node611-slim)
 -	[`node:6-slim`](#node6-slim)
 -	[`node:boron-slim`](#nodeboron-slim)
+-	[`node:6.11.1-stretch`](#node6111-stretch)
+-	[`node:6.11-stretch`](#node611-stretch)
+-	[`node:6-stretch`](#node6-stretch)
+-	[`node:boron-stretch`](#nodeboron-stretch)
 -	[`node:6.11.1-wheezy`](#node6111-wheezy)
 -	[`node:6.11-wheezy`](#node611-wheezy)
 -	[`node:6-wheezy`](#node6-wheezy)
@@ -73,6 +84,10 @@
 -	[`node:4.8-slim`](#node48-slim)
 -	[`node:4-slim`](#node4-slim)
 -	[`node:argon-slim`](#nodeargon-slim)
+-	[`node:4.8.4-stretch`](#node484-stretch)
+-	[`node:4.8-stretch`](#node48-stretch)
+-	[`node:4-stretch`](#node4-stretch)
+-	[`node:argon-stretch`](#nodeargon-stretch)
 -	[`node:4.8.4-wheezy`](#node484-wheezy)
 -	[`node:4.8-wheezy`](#node48-wheezy)
 -	[`node:4-wheezy`](#node4-wheezy)
@@ -1309,6 +1324,22 @@ CMD ["node"]
 		Last Modified: Wed, 26 Jul 2017 07:45:46 GMT  
 		Size: 938.3 KB (938338 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `node:8.2.1-stretch`
+
+**does not exist** (yet?)
+
+## `node:8.2-stretch`
+
+**does not exist** (yet?)
+
+## `node:8-stretch`
+
+**does not exist** (yet?)
+
+## `node:stretch`
+
+**does not exist** (yet?)
 
 ## `node:8.2.1-wheezy`
 
@@ -2565,6 +2596,18 @@ CMD ["node"]
 		Last Modified: Wed, 26 Jul 2017 07:47:31 GMT  
 		Size: 900.6 KB (900591 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `node:7.10.1-stretch`
+
+**does not exist** (yet?)
+
+## `node:7.10-stretch`
+
+**does not exist** (yet?)
+
+## `node:7-stretch`
+
+**does not exist** (yet?)
 
 ## `node:7.10.1-wheezy`
 
@@ -4046,6 +4089,22 @@ CMD ["node"]
 		Last Modified: Wed, 26 Jul 2017 07:49:18 GMT  
 		Size: 900.7 KB (900723 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `node:6.11.1-stretch`
+
+**does not exist** (yet?)
+
+## `node:6.11-stretch`
+
+**does not exist** (yet?)
+
+## `node:6-stretch`
+
+**does not exist** (yet?)
+
+## `node:boron-stretch`
+
+**does not exist** (yet?)
 
 ## `node:6.11.1-wheezy`
 
@@ -5610,6 +5669,22 @@ CMD ["node"]
 		Last Modified: Wed, 26 Jul 2017 07:51:15 GMT  
 		Size: 900.6 KB (900593 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `node:4.8.4-stretch`
+
+**does not exist** (yet?)
+
+## `node:4.8-stretch`
+
+**does not exist** (yet?)
+
+## `node:4-stretch`
+
+**does not exist** (yet?)
+
+## `node:argon-stretch`
+
+**does not exist** (yet?)
 
 ## `node:4.8.4-wheezy`
 
