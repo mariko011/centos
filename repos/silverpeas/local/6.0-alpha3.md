@@ -1449,14 +1449,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.8.9.9-7ubuntu5.7
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9-7ubuntu5.7.dsc' imagemagick_6.8.9.9-7ubuntu5.7.dsc 4319 SHA256:23edc32b57b875caa6c1a9e46d9664e0bcaac39ba1a665b1c01d88901a753cc8
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9.orig.tar.xz' imagemagick_6.8.9.9.orig.tar.xz 7891624 SHA256:a4cccc70179ff2c67550e063cdcb2e62907338ef3e68b45bb1c41931e515b3eb
-'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9-7ubuntu5.7.debian.tar.xz' imagemagick_6.8.9.9-7ubuntu5.7.debian.tar.xz 268344 SHA256:8ea97249062b8f117b4daa8a8e4f53bad935ba68b1b173c044b52b0a2b7871d7
-```
 
 ### `dpkg` source package: `init-system-helpers=1.29ubuntu4`
 
@@ -3788,14 +3782,8 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk/copyright`, `/usr/share/do
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openjdk-8=8u131-b11-0ubuntu1.16.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u131-b11-0ubuntu1.16.04.2.dsc' openjdk-8_8u131-b11-0ubuntu1.16.04.2.dsc 4575 SHA256:8cadac49bb8b461a36f50427a23afc529ddd8176f8fa4753c8c34e10126dc4da
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u131-b11.orig.tar.xz' openjdk-8_8u131-b11.orig.tar.xz 63889888 SHA256:8369a083164d66c151de39933b192583ffb0b1b6daf8c7ffe17afc040478f21b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-8/openjdk-8_8u131-b11-0ubuntu1.16.04.2.debian.tar.xz' openjdk-8_8u131-b11-0ubuntu1.16.04.2.debian.tar.xz 242072 SHA256:114d630ab2678b3161d3724f47cd527816081a424798cb3c53333339f785a43b
-```
 
 ### `dpkg` source package: `openjpeg=1:1.5.2-3.1`
 
