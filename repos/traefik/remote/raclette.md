@@ -1,7 +1,7 @@
 ## `traefik:raclette`
 
 ```console
-$ docker pull traefik@sha256:f5af7c3373c7783c15d421bed4a61830578f1baf659c2f4cd3ce151cbd188214
+$ docker pull traefik@sha256:dfaa603eb4ececf2484b7743b7dc2bcd7d512ad06df633286890dc2c9334d534
 ```
 
 -	Platforms:
@@ -9,32 +9,32 @@ $ docker pull traefik@sha256:f5af7c3373c7783c15d421bed4a61830578f1baf659c2f4cd3c
 
 ### `traefik:raclette` - linux; amd64
 
--	Docker Version: 17.03.1-ce
+-	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.0 MB (12976983 bytes)**  
+-	Total Size: **13.0 MB (12960751 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d877ced70df7fb9ec465ba2b4aee9b5059ac24c1db98369ec574addab495f39b`
+-	Image ID: `sha256:dbcae52bfdecb6fdeaceba8ca51d5d9efc81691be2a9bdf1670c3cd4c8e4be6b`
 -	Entrypoint: `["\/traefik"]`
 
 ```dockerfile
-# Thu, 15 Dec 2016 17:54:02 GMT
-COPY file:d8282341d1fb7d2cc3d5d3523d0d4126066cc1ba8abe3f0047a459b3a63a5653 in /etc/ssl/certs/ 
-# Thu, 06 Jul 2017 19:41:50 GMT
-COPY file:eac23f8936c60dd8ceac108ec5df377c76747e8acb8d54ce8c8bc44ca6a7a9b2 in / 
-# Thu, 06 Jul 2017 19:41:51 GMT
+# Thu, 27 Jul 2017 19:57:41 GMT
+COPY file:f4eb9b49e4b4f93d434577528c476bd94799b135d345ccc50a519c1f13f6f97a in /etc/ssl/certs/ 
+# Thu, 27 Jul 2017 19:57:45 GMT
+COPY file:4bd7318837da858b22b4a12833615c8548c86e2e3db810f822c6d79c0ab03fb0 in / 
+# Thu, 27 Jul 2017 19:57:45 GMT
 EXPOSE 80/tcp
-# Thu, 06 Jul 2017 19:41:52 GMT
+# Thu, 27 Jul 2017 19:57:45 GMT
 ENTRYPOINT ["/traefik"]
-# Thu, 06 Jul 2017 19:41:53 GMT
-LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io org.label-schema.name=Traefik org.label-schema.description=A modern reverse-proxy org.label-schema.version=v1.3.3 org.label-schema.docker.schema-version=1.0
+# Thu, 27 Jul 2017 19:57:46 GMT
+LABEL org.label-schema.vendor=Containous org.label-schema.url=https://traefik.io org.label-schema.name=Traefik org.label-schema.description=A modern reverse-proxy org.label-schema.version=v1.3.4 org.label-schema.docker.schema-version=1.0
 ```
 
 -	Layers:
-	-	`sha256:03a84e30597f6e498aa09e940b69f623d31c22909fa05c7132e1b142f9439e38`  
-		Last Modified: Thu, 15 Dec 2016 17:54:23 GMT  
-		Size: 156.1 KB (156143 bytes)  
+	-	`sha256:df350fade9bb2857316784e0d70a781999080daabbf1abb69a9547d8ea86559a`  
+		Last Modified: Thu, 27 Jul 2017 19:58:57 GMT  
+		Size: 135.0 KB (135039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2caadbc46df2da1334acc7f27b1d58bbb368226fd76a9e6107ab738d39cfb1c0`  
-		Last Modified: Thu, 06 Jul 2017 19:43:28 GMT  
-		Size: 12.8 MB (12820840 bytes)  
+	-	`sha256:7b2102294a43712300a66d2d41bc8656720411b92fd2f9b206b4ba463ec2ec81`  
+		Last Modified: Thu, 27 Jul 2017 19:58:59 GMT  
+		Size: 12.8 MB (12825712 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
