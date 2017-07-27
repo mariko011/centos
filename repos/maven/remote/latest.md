@@ -1,7 +1,7 @@
 ## `maven:latest`
 
 ```console
-$ docker pull maven@sha256:4ca6553295b12909d13f1f82e595f2da8aaff1c6bd4d9866c32891eb4d825313
+$ docker pull maven@sha256:73123fb19f856e9ff85b9ceaf14d3cb3612f563e5802661bc12f21154a7cd63c
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull maven@sha256:4ca6553295b12909d13f1f82e595f2da8aaff1c6bd4d9866c3289
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **303.4 MB (303381003 bytes)**  
+-	Total Size: **304.0 MB (303954060 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:da98d407eabad0166a501f9065b05cc470fac9555e9c4b363ec7892f8c0090fe`
+-	Image ID: `sha256:88714384d6427f44ea71be76f99259efa2ad8a481da611efda6cce422a28ebb0`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -38,40 +38,40 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 RUN ln -svT "/usr/lib/jvm/java-8-openjdk-$(dpkg --print-architecture)" /docker-java-home
 # Mon, 24 Jul 2017 18:09:53 GMT
 ENV JAVA_HOME=/docker-java-home
-# Mon, 24 Jul 2017 18:09:53 GMT
-ENV JAVA_VERSION=8u131
-# Mon, 24 Jul 2017 18:09:53 GMT
-ENV JAVA_DEBIAN_VERSION=8u131-b11-2
-# Mon, 24 Jul 2017 18:09:54 GMT
+# Wed, 26 Jul 2017 20:32:25 GMT
+ENV JAVA_VERSION=8u141
+# Wed, 26 Jul 2017 20:32:25 GMT
+ENV JAVA_DEBIAN_VERSION=8u141-b15-1~deb9u1
+# Wed, 26 Jul 2017 20:32:26 GMT
 ENV CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-# Mon, 24 Jul 2017 18:10:48 GMT
+# Wed, 26 Jul 2017 20:33:14 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-8-jdk="$JAVA_DEBIAN_VERSION" 		ca-certificates-java="$CA_CERTIFICATES_JAVA_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Mon, 24 Jul 2017 18:10:51 GMT
+# Wed, 26 Jul 2017 20:33:16 GMT
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
-# Mon, 24 Jul 2017 21:35:15 GMT
+# Thu, 27 Jul 2017 18:50:07 GMT
 ARG MAVEN_VERSION=3.5.0
-# Mon, 24 Jul 2017 21:35:15 GMT
+# Thu, 27 Jul 2017 18:50:08 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 24 Jul 2017 21:35:15 GMT
+# Thu, 27 Jul 2017 18:50:08 GMT
 ARG SHA=beb91419245395bd69a4a6edad5ca3ec1a8b64e41457672dc687c173a495f034
-# Mon, 24 Jul 2017 21:35:15 GMT
+# Thu, 27 Jul 2017 18:50:08 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.5.0/binaries
-# Mon, 24 Jul 2017 21:35:17 GMT
+# Thu, 27 Jul 2017 18:50:10 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.5.0/binaries MAVEN_VERSION=3.5.0 SHA=beb91419245395bd69a4a6edad5ca3ec1a8b64e41457672dc687c173a495f034 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha256sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Mon, 24 Jul 2017 21:35:17 GMT
+# Thu, 27 Jul 2017 18:50:12 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 24 Jul 2017 21:35:17 GMT
+# Thu, 27 Jul 2017 18:50:13 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 24 Jul 2017 21:35:17 GMT
+# Thu, 27 Jul 2017 18:50:13 GMT
 COPY file:e4099db07053a2301f4263d416cab324c1f89ee74c752bebec511d8b59464cb6 in /usr/local/bin/mvn-entrypoint.sh 
-# Mon, 24 Jul 2017 21:35:18 GMT
+# Thu, 27 Jul 2017 18:50:13 GMT
 COPY file:b3fc14e8337e0079a4e97eace880b4b7cddc0dc0ea733de80749f78fe1eb089a in /usr/share/maven/ref/ 
-# Mon, 24 Jul 2017 21:35:18 GMT
+# Thu, 27 Jul 2017 18:50:14 GMT
 VOLUME [/root/.m2]
-# Mon, 24 Jul 2017 21:35:18 GMT
+# Thu, 27 Jul 2017 18:50:14 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 24 Jul 2017 21:35:18 GMT
+# Thu, 27 Jul 2017 18:50:14 GMT
 CMD ["mvn"]
 ```
 
@@ -104,23 +104,23 @@ CMD ["mvn"]
 		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1f81f3143db2f0e6bdd549cbb9a6128c217f2ef192c12b6044daed277cde2ae9`  
-		Last Modified: Mon, 24 Jul 2017 18:22:46 GMT  
-		Size: 183.1 MB (183109092 bytes)  
+	-	`sha256:635bf5037831b9d348a557e32db9ca3c918de37880ff495a93d232ca111c7dba`  
+		Last Modified: Wed, 26 Jul 2017 20:37:36 GMT  
+		Size: 183.7 MB (183682145 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2034c15120cdd40d7f2d92f1233386821c361a328aea3b35a7345972a1d475c9`  
-		Last Modified: Mon, 24 Jul 2017 18:22:02 GMT  
-		Size: 272.0 KB (272003 bytes)  
+	-	`sha256:d1236c277f1c5f5d26d97dca2662375f8b807e82196737c10ee54219109a86b0`  
+		Last Modified: Wed, 26 Jul 2017 20:37:10 GMT  
+		Size: 272.0 KB (271991 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5128cc2babb1d3c86637ead73b52dce3092c9fac78fd1a6818c43e797f04d334`  
-		Last Modified: Mon, 24 Jul 2017 21:36:08 GMT  
-		Size: 8.7 MB (8672768 bytes)  
+	-	`sha256:81c3e2af1f5610a22941030f2b15452f65a303f5977c4eb5e51526b7cb525086`  
+		Last Modified: Thu, 27 Jul 2017 18:51:05 GMT  
+		Size: 8.7 MB (8672786 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17da2576b1366fbd1aa65aaa981463d34a3a9b08950fc9b9dced3ef4815f7902`  
-		Last Modified: Mon, 24 Jul 2017 21:36:07 GMT  
+	-	`sha256:395ac4dc964d7cf1f9566e7826f71e70512774f6a3189d6d18cfa4c884d7ae2a`  
+		Last Modified: Thu, 27 Jul 2017 18:51:00 GMT  
 		Size: 728.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a7227fccba0c4b9e8611dc59b5aece254e13efa1c04c353adcca583b68251b8f`  
-		Last Modified: Mon, 24 Jul 2017 21:36:08 GMT  
-		Size: 349.0 B  
+	-	`sha256:d1f4f69d8f84c5592633e24cd17729c2bea51e897549624aaf87c68f5f308d1a`  
+		Last Modified: Thu, 27 Jul 2017 18:51:00 GMT  
+		Size: 347.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
