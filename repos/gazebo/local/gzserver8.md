@@ -2186,14 +2186,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libdrm=2.4.70-1~ubuntu16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.70-1~ubuntu16.04.1.dsc' libdrm_2.4.70-1~ubuntu16.04.1.dsc 3477 SHA256:ac231b544df28307677b52ee4095939b489b72e041d096468d9190efd700ba4a
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.70.orig.tar.gz' libdrm_2.4.70.orig.tar.gz 970215 SHA256:73615b9c1c4852e5ce045efa19c866e8df98e396b2443bf859eea05574ecb64f
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.70-1~ubuntu16.04.1.diff.gz' libdrm_2.4.70-1~ubuntu16.04.1.diff.gz 44705 SHA256:569d57c8407b93fb3d6719afc54f028ba2e5c838331aad06e01a58d71eccf402
-```
 
 ### `dpkg` source package: `libedit=3.1-20150325-1ubuntu2`
 
@@ -3709,14 +3703,8 @@ Licenses: (parsed from: `/usr/share/doc/libegl1-mesa/copyright`, `/usr/share/doc
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mesa=12.0.6-0ubuntu0.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_12.0.6-0ubuntu0.16.04.1.dsc' mesa_12.0.6-0ubuntu0.16.04.1.dsc 4683 SHA256:78ef64dc031498c7b6e5ea2c7e38e009cdfb570a60074f86e82f74f1d69da607
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_12.0.6.orig.tar.gz' mesa_12.0.6.orig.tar.gz 14489848 SHA256:65339ba5d76a45225b8b56f9a1da9db15c569e1d163760faa2921da0a8461741
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_12.0.6-0ubuntu0.16.04.1.diff.gz' mesa_12.0.6-0ubuntu0.16.04.1.diff.gz 103125 SHA256:1cd2262982b46d9dd6e816928a4b67f5bd81d07348343ee13b2b8c1e8da9dea4
-```
 
 ### `dpkg` source package: `minizip=1.1-8`
 
