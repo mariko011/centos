@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:347faab431f38111ed64dc7752a81a5637af878f01032f178d949363036c38d9`
-- Created: `2017-07-24T18:13:19.541830152Z`
+- Image ID: `sha256:24b282e06a5ac2fd08ea066610397959500d79d5ea47e7fdfebbbb3bc17ae16c`
+- Created: `2017-07-26T06:55:08.375192122Z`
 - Virtual Size: ~ 584.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
   - `JAVA_VERSION=9-b179`
-  - `JAVA_DEBIAN_VERSION=9~b179-1`
+  - `JAVA_DEBIAN_VERSION=9~b179-2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2521,12 +2521,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nss/2:3.31-1/
 - https://sources.debian.net/src/nss/2:3.31-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openjdk-9=9~b179-1`
+### `dpkg` source package: `openjdk-9=9~b179-2`
 
 Binary Packages:
 
-- `openjdk-9-jdk-headless:amd64=9~b179-1`
-- `openjdk-9-jre-headless:amd64=9~b179-1`
+- `openjdk-9-jdk-headless:amd64=9~b179-2`
+- `openjdk-9-jre-headless:amd64=9~b179-2`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-9-jdk-headless/copyright`, `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 
@@ -2538,16 +2538,16 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jdk-headless/copyright`, `/usr
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-9=9~b179-1
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b179-1.dsc' openjdk-9_9~b179-1.dsc 4494 SHA256:3ef6c4205abe5e22289a4249d888bb370ecb72d4d3bdd362a8328cd03e9952f2
+$ apt-get source -qq --print-uris openjdk-9=9~b179-2
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b179-2.dsc' openjdk-9_9~b179-2.dsc 4494 SHA256:5f577d18bafefa3fcec072b6fe10d5e686d9dbe3cca2e52d5c65d0c7966e8b91
 'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b179.orig.tar.gz' openjdk-9_9~b179.orig.tar.gz 74693298 SHA256:b8eb587f5a55c3067fc52f13d2074302e0d13078778a68a09efc63aedb4dc900
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b179-1.debian.tar.xz' openjdk-9_9~b179-1.debian.tar.xz 198968 SHA256:1c9f71484a3b0e81374c5f3d8d08182dd5e119eabffaafdae4475d02202d2ded
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b179-2.debian.tar.xz' openjdk-9_9~b179-2.debian.tar.xz 195388 SHA256:771ae0fc271e92e900a6b9f2dd3282d53cdd69f9f66642a127631c4471831bb8
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openjdk-9/9~b179-1/
-- https://sources.debian.net/src/openjdk-9/9~b179-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openjdk-9/9~b179-2/
+- https://sources.debian.net/src/openjdk-9/9~b179-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-8`
 
