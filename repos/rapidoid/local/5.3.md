@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a3148b591ed3cc7feb6071b9333480d995e6ca19b2ffd1af322280452dba24a6`
-- Created: `2017-07-24T22:36:33.931801366Z`
-- Virtual Size: ~ 754.40 Mb  
+- Image ID: `sha256:786b70f369334bf6aa134b37ae1946640bf2a1337bbe02515d2716ddbef558b2`
+- Created: `2017-07-27T20:18:52.995298396Z`
+- Virtual Size: ~ 754.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/entrypoint.sh"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
-  - `JAVA_VERSION=8u131`
-  - `JAVA_DEBIAN_VERSION=8u131-b11-2`
+  - `JAVA_VERSION=8u141`
+  - `JAVA_DEBIAN_VERSION=8u141-b15-1~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
   - `GPG_KEY=E306FEF548C686C23DC00242B9B08D8F616EF49C`
   - `RAPIDOID_JAR=/opt/rapidoid.jar`
@@ -4185,14 +4185,14 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nss/2:3.26.2-1.1/
 - https://sources.debian.net/src/nss/2:3.26.2-1.1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openjdk-8=8u131-b11-2`
+### `dpkg` source package: `openjdk-8=8u141-b15-1~deb9u1`
 
 Binary Packages:
 
-- `openjdk-8-jdk:amd64=8u131-b11-2`
-- `openjdk-8-jdk-headless:amd64=8u131-b11-2`
-- `openjdk-8-jre:amd64=8u131-b11-2`
-- `openjdk-8-jre-headless:amd64=8u131-b11-2`
+- `openjdk-8-jdk:amd64=8u141-b15-1~deb9u1`
+- `openjdk-8-jdk-headless:amd64=8u141-b15-1~deb9u1`
+- `openjdk-8-jre:amd64=8u141-b15-1~deb9u1`
+- `openjdk-8-jre-headless:amd64=8u141-b15-1~deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk/copyright`, `/usr/share/doc/openjdk-8-jdk-headless/copyright`, `/usr/share/doc/openjdk-8-jre/copyright`, `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 
@@ -4204,16 +4204,16 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jdk/copyright`, `/usr/share/do
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-8=8u131-b11-2
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u131-b11-2.dsc' openjdk-8_8u131-b11-2.dsc 4483 SHA256:be3295cde619d6a15bb42fe4e5e409169e477a79c63a9933a43433a08640a4af
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u131-b11.orig.tar.xz' openjdk-8_8u131-b11.orig.tar.xz 63889888 SHA256:8369a083164d66c151de39933b192583ffb0b1b6daf8c7ffe17afc040478f21b
-'http://deb.debian.org/debian/pool/main/o/openjdk-8/openjdk-8_8u131-b11-2.debian.tar.xz' openjdk-8_8u131-b11-2.debian.tar.xz 242212 SHA256:0f28306314a55384b68b5513e20c33ebb18d7e14e8c94693bd4568f49d0eb5bc
+$ apt-get source -qq --print-uris openjdk-8=8u141-b15-1~deb9u1
+'http://security.debian.org/pool/updates/main/o/openjdk-8/openjdk-8_8u141-b15-1~deb9u1.dsc' openjdk-8_8u141-b15-1~deb9u1.dsc 4486 SHA256:deaca5cb2c51cd0c5b1938ce866b0833e021da48ead87b9fc538bc9e835bb44e
+'http://security.debian.org/pool/updates/main/o/openjdk-8/openjdk-8_8u141-b15.orig.tar.gz' openjdk-8_8u141-b15.orig.tar.gz 64099346 SHA256:906bcbecce35e0bda53d6c431c22282cf5aba9367e842efa82426c7e9214cf64
+'http://security.debian.org/pool/updates/main/o/openjdk-8/openjdk-8_8u141-b15-1~deb9u1.debian.tar.xz' openjdk-8_8u141-b15-1~deb9u1.debian.tar.xz 244640 SHA256:f6f095413a07b92aa48f22405f803424a28abf66a3fb4adc137fc490f978d156
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openjdk-8/8u131-b11-2/
-- https://sources.debian.net/src/openjdk-8/8u131-b11-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openjdk-8/8u141-b15-1~deb9u1/
+- https://sources.debian.net/src/openjdk-8/8u141-b15-1~deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-5`
 
