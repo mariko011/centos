@@ -1,9 +1,9 @@
-# `neurodebian:stretch`
+# `neurodebian:stretch-non-free`
 
 ## Docker Metadata
 
-- Image ID: `sha256:24788c6720d3c4163f36ecfd79c9d6f7a8cefbf960f05b4f6f17ee1cb6cc0ed7`
-- Created: `2017-07-26T07:13:18.431648725Z`
+- Image ID: `sha256:070ab98df6f7e7b8067bf747863f7c7bba3e31e0d8b2b17e3a8f6d0446641e92`
+- Created: `2017-07-27T19:49:56.519545146Z`
 - Virtual Size: ~ 112.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`

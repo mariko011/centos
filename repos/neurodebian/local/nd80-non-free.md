@@ -1,9 +1,9 @@
-# `neurodebian:jessie`
+# `neurodebian:jessie-non-free`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e7eb8af5cc17d8da979aa174fc563d8dee40c8049cdb434a4713f7ed5d0fca6a`
-- Created: `2017-07-26T07:13:01.408148085Z`
+- Image ID: `sha256:de50f955dd0ad29453bfa7c9d9b36d4b9ce3b7798d0c034620cb5a277248adfe`
+- Created: `2017-07-27T19:49:45.063459869Z`
 - Virtual Size: ~ 123.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`

@@ -1,9 +1,9 @@
-# `neurodebian:artful`
+# `neurodebian:artful-non-free`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fa59ae179fa1e2e91f846a62094169bd836d860a5012c5aec5457a778d7fc237`
-- Created: `2017-07-20T20:12:00.509513467Z`
+- Image ID: `sha256:6488565859fadb46752772211f54dfdda0a2d03c7fe6b6a7a029dc5d25d5c457`
+- Created: `2017-07-27T19:44:07.154982129Z`
 - Virtual Size: ~ 98.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`

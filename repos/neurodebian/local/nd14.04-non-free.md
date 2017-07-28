@@ -1,9 +1,9 @@
-# `neurodebian:trusty`
+# `neurodebian:trusty-non-free`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b16b8555d3006c45c0b23597732cc54d7c0e067705e691504060b9c7e426a7e0`
-- Created: `2017-07-20T20:12:23.649423434Z`
+- Image ID: `sha256:7836fc02ec0198e77162ae64710ea269f2e7835c0805c685e790fd7d45bf07ab`
+- Created: `2017-07-27T19:38:37.523874146Z`
 - Virtual Size: ~ 188.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
