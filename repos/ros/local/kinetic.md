@@ -289,9 +289,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris binutils=2.26.1-1ubuntu1~16.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.3.dsc' binutils_2.26.1-1ubuntu1~16.04.3.dsc 4028 SHA256:ea10459b50be0beb8d6f1957c269e8eafb88c293c91b7d53a3bdcc6f5ea7a749
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1.orig.tar.gz' binutils_2.26.1.orig.tar.gz 34868933 SHA256:dd9c3e37c266e4fefba68e444e2a00538b3c902dd31bf4912d90dca6d830a2a1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.3.diff.gz' binutils_2.26.1-1ubuntu1~16.04.3.diff.gz 226341 SHA256:e789b7a18634a582895934ab2b6b08fc4b15294cef51541e4ba5c4fad1343154
+'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.3.dsc' binutils_2.26.1-1ubuntu1~16.04.3.dsc 4028 SHA256:ea10459b50be0beb8d6f1957c269e8eafb88c293c91b7d53a3bdcc6f5ea7a749
+'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1.orig.tar.gz' binutils_2.26.1.orig.tar.gz 34868933 SHA256:dd9c3e37c266e4fefba68e444e2a00538b3c902dd31bf4912d90dca6d830a2a1
+'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.3.diff.gz' binutils_2.26.1-1ubuntu1~16.04.3.diff.gz 226341 SHA256:e789b7a18634a582895934ab2b6b08fc4b15294cef51541e4ba5c4fad1343154
 ```
 
 ### `dpkg` source package: `boost-defaults=1.58.0.1ubuntu1`
@@ -3057,14 +3057,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-rosdep=0.11.5-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.11.5-1.dsc' python-rosdep_0.11.5-1.dsc 900 SHA256:ee1d8d7d18bff0b21e5112b356fa48daa01732af56091a57def35366148b238c
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.11.5.orig.tar.gz' python-rosdep_0.11.5.orig.tar.gz 76137 SHA256:5713227aaeeef80fd6240cd195ff2265622eb1eac8ad1b291743a3c07498d2d5
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.11.5-1.debian.tar.gz' python-rosdep_0.11.5-1.debian.tar.gz 1038 SHA256:6180f59402dd9b7a1ff5e9d768e9fce8019400eb882f0daef57eeb4a8103fd96
-```
 
 ### `dpkg` source package: `python-rosdistro-modules=0.6.2-1`
 

@@ -3610,14 +3610,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-rosdep=0.11.5-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.11.5-1.dsc' python-rosdep_0.11.5-1.dsc 900 SHA256:ee1d8d7d18bff0b21e5112b356fa48daa01732af56091a57def35366148b238c
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.11.5.orig.tar.gz' python-rosdep_0.11.5.orig.tar.gz 76137 SHA256:5713227aaeeef80fd6240cd195ff2265622eb1eac8ad1b291743a3c07498d2d5
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rosdep/python-rosdep_0.11.5-1.debian.tar.gz' python-rosdep_0.11.5-1.debian.tar.gz 1038 SHA256:6180f59402dd9b7a1ff5e9d768e9fce8019400eb882f0daef57eeb4a8103fd96
-```
 
 ### `dpkg` source package: `python-rosdistro-modules=0.6.2-1`
 
@@ -4754,14 +4748,8 @@ Licenses: (parsed from: `/usr/share/doc/rsyslog/copyright`)
 - `LGPL-3`
 - `LGPL-3.0+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris rsyslog=7.4.4-1ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsyslog/rsyslog_7.4.4-1ubuntu2.6.dsc' rsyslog_7.4.4-1ubuntu2.6.dsc 2430 SHA256:01e74be4dde49db779491a794abc39a0d8cdec25f190bc0fa1b07dcd2f88781f
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsyslog/rsyslog_7.4.4.orig.tar.gz' rsyslog_7.4.4.orig.tar.gz 2910075 SHA256:276d094d1e4c62c770ec8a72723667f119eee038912b79cf3337d439bc2f9087
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsyslog/rsyslog_7.4.4-1ubuntu2.6.debian.tar.gz' rsyslog_7.4.4-1ubuntu2.6.debian.tar.gz 42571 SHA256:c631301087a7028a53e394e2790139dde491528501bcb0a83a9848c9a3671681
-```
 
 ### `dpkg` source package: `rtmpdump=2.4+20121230.gitdf6c518-1ubuntu0.1`
 
