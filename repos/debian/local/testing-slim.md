@@ -536,19 +536,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`)
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.1.0-9
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.1.0-9.dsc' gcc-7_7.1.0-9.dsc 26117 SHA256:b05e74139df62bd6fe85fd808c2f0c41afbd8f7b9ee05983fa1f7f89c4fc8a40
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.1.0.orig.tar.gz' gcc-7_7.1.0.orig.tar.gz 73830593 SHA256:c387dcedc16950e89bd4a805564047bc4a2340511a155d0fa4046ff158939146
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.1.0-9.diff.gz' gcc-7_7.1.0-9.diff.gz 1389318 SHA256:987b18313f5f852a172482ec3fee4a0ff920f2e7d3bf02f17fb65df59c45a135
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-7/7.1.0-9/
-- https://sources.debian.net/src/gcc-7/7.1.0-9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.24-12`
 
@@ -755,18 +744,8 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.48
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.48.dsc' init-system-helpers_1.48.dsc 1916 SHA256:aefcef5270cfae3380f9dfd98336de20580086dbdc65c0dfd7fe1c10f0722bd0
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.48.tar.xz' init-system-helpers_1.48.tar.xz 43384 SHA256:20b4ff9df037cfa64d6c9637e383cb09135cb97114d932032160cdfaf01d08b8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/init-system-helpers/1.48/
-- https://sources.debian.net/src/init-system-helpers/1.48/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libcap-ng=0.7.7-3`
 
@@ -1249,19 +1228,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris perl=5.24.1-7
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-7.dsc' perl_5.24.1-7.dsc 2344 SHA256:a7ee28c5b592019852f23e662c0dee5a950bc59427c61735e17440a3554d0f69
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1.orig.tar.xz' perl_5.24.1.orig.tar.xz 11569284 SHA256:03a77bac4505c270f1890ece75afc7d4b555090b41aa41ea478747e23b2afb3f
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.24.1-7.debian.tar.xz' perl_5.24.1-7.debian.tar.xz 172716 SHA256:9a80344427c4b2a397c8d424cc9b09e264fd157788f0220d3242084fee0a2c7b
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/perl/5.24.1-7/
-- https://sources.debian.net/src/perl/5.24.1-7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sed=4.4-1`
 
@@ -1390,19 +1358,8 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tar=1.29b-1.1
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.29b-1.1.dsc' tar_1.29b-1.1.dsc 2057 SHA256:9474ed422017e23e8208785c071b9f7765d73d704b9bb19da22699c6581d73ef
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.29b.orig.tar.xz' tar_1.29b.orig.tar.xz 1822008 SHA256:6a59706ebee384a6cd2fb3ee1dbfbfc20c5c66c7efd7cedb28edc054fca8ba00
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.29b-1.1.debian.tar.xz' tar_1.29b-1.1.debian.tar.xz 28484 SHA256:380f80af0e87446796f05ba384c5d130ea2ad5978b8cfdcf315503966333ebb9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tar/1.29b-1.1/
-- https://sources.debian.net/src/tar/1.29b-1.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tzdata=2017b-2`
 
