@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8baf74f38415b4012bc7df595031a96317c6386f9cdb3f0353c76a0142f6948c`
-- Created: `2017-07-25T00:51:55.019242896Z`
-- Virtual Size: ~ 805.23 Mb  
+- Image ID: `sha256:c402550159230fa994388ca00b4a768bce9445876896d8e4e16ad08902b86917`
+- Created: `2017-07-26T20:12:43.871875356Z`
+- Virtual Size: ~ 805.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `OTP_VERSION=20.0.1`
   - `REBAR_VERSION=2.6.4`
-  - `REBAR3_VERSION=3.4.1`
+  - `REBAR3_VERSION=3.4.2`
 
 ## `dpkg` (`.deb`-based packages)
 
