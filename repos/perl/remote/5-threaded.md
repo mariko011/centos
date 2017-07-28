@@ -1,7 +1,7 @@
 ## `perl:5-threaded`
 
 ```console
-$ docker pull perl@sha256:039d43e88f91ee532eab0fcdc5337b2c935a0bcd96c0bf0852f572889a124c35
+$ docker pull perl@sha256:19df4579e386acd75438def33f6c606f9d82b9471753e664b716cbeb0da9cd51
 ```
 
 -	Platforms:
@@ -11,10 +11,10 @@ $ docker pull perl@sha256:039d43e88f91ee532eab0fcdc5337b2c935a0bcd96c0bf0852f572
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **334.6 MB (334635388 bytes)**  
+-	Total Size: **335.0 MB (335005130 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3da003347038ac6e2bb6b267287e137d7e98bf1415a15f6925ecf25d97f409e0`
--	Default Command: `["perl5.24.1","-de0"]`
+-	Image ID: `sha256:aa9f560bc81b8bea333cb6c3c4d789872b05e9e83921ceb0c5ac0627a8fa989f`
+-	Default Command: `["perl5.26.0","-de0"]`
 
 ```dockerfile
 # Mon, 24 Jul 2017 16:52:54 GMT
@@ -39,12 +39,12 @@ RUN mkdir /usr/src/perl
 COPY file:2be96a0b9a6d4b3ea837439f6ea05fc01b773b4b26dd6bd7635bd489469d0075 in /usr/src/perl/ 
 # Mon, 24 Jul 2017 17:57:44 GMT
 WORKDIR /usr/src/perl
-# Mon, 24 Jul 2017 18:10:23 GMT
-RUN curl -SL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.24.1.tar.bz2 -o perl-5.24.1.tar.bz2     && echo '482ac5dca262b57d26c381382a3e057b22ede631fcce32523c004b8bf773f6f0 *perl-5.24.1.tar.bz2' | sha256sum -c -     && tar --strip-components=1 -xjf perl-5.24.1.tar.bz2 -C /usr/src/perl     && rm perl-5.24.1.tar.bz2     && cat *.patch | patch -p1     && ./Configure -Dusethreads -Duse64bitall -Duseshrplib  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://raw.githubusercontent.com/miyagawa/cpanminus/master/cpanm     && chmod +x cpanm     && ./cpanm App::cpanminus     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /tmp/*
-# Mon, 24 Jul 2017 18:10:23 GMT
+# Fri, 28 Jul 2017 17:32:03 GMT
+RUN curl -SL https://cpan.metacpan.org/authors/id/X/XS/XSAWYERX/perl-5.26.0.tar.bz2 -o perl-5.26.0.tar.bz2     && echo 'f21d66de84982175e95ad15fd8d0e22fed2cc2de7e4394f5d48dbe451be2f6f2 *perl-5.26.0.tar.bz2' | sha256sum -c -     && tar --strip-components=1 -xjf perl-5.26.0.tar.bz2 -C /usr/src/perl     && rm perl-5.26.0.tar.bz2     && cat *.patch | patch -p1     && ./Configure -Dusethreads -Duse64bitall -Duseshrplib -Dvendorprefix=/usr/local  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -LO https://raw.githubusercontent.com/miyagawa/cpanminus/master/cpanm     && chmod +x cpanm     && ./cpanm App::cpanminus     && rm -fr ./cpanm /root/.cpanm /usr/src/perl /tmp/*
+# Fri, 28 Jul 2017 17:32:04 GMT
 WORKDIR /root
-# Mon, 24 Jul 2017 18:10:24 GMT
-CMD ["perl5.24.1" "-de0"]
+# Fri, 28 Jul 2017 17:32:04 GMT
+CMD ["perl5.26.0" "-de0"]
 ```
 
 -	Layers:
@@ -80,7 +80,7 @@ CMD ["perl5.24.1" "-de0"]
 		Last Modified: Mon, 24 Jul 2017 18:22:49 GMT  
 		Size: 174.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b9326a57833bca67bb15582c75bab528a8c0658512276e24ad19c12491292ac7`  
-		Last Modified: Mon, 24 Jul 2017 18:23:20 GMT  
-		Size: 12.8 MB (12811143 bytes)  
+	-	`sha256:9505311e08b042293a3ba00e13cc08986ed4a5ded657cedce059dccaefa5e848`  
+		Last Modified: Fri, 28 Jul 2017 17:56:01 GMT  
+		Size: 13.2 MB (13180885 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
