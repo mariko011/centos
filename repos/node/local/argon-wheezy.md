@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6202d46df90ed93fb34b1267b64aaf628811f68bf182fbdf96cbced4d5901597`
-- Created: `2017-07-26T07:44:29.572933136Z`
+- Image ID: `sha256:200658737a3c881d7f0cdeac12444b60241cd098699a2c75b5d1c92d98a5f01a`
+- Created: `2017-07-27T16:16:04.775343035Z`
 - Virtual Size: ~ 505.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -3170,19 +3170,8 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mysql-5.5=5.5.55-0+deb7u1
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.55-0+deb7u1.dsc' mysql-5.5_5.5.55-0+deb7u1.dsc 2971 SHA256:f78e5aa1009b9c79cd543380e873b034bf9fc1e3402452a799236fd3b6ae82af
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.55.orig.tar.gz' mysql-5.5_5.5.55.orig.tar.gz 21040959 SHA256:9af0a504e2603b0bc0c7c3a4a747df064fb51670a0022b1ad6114f9058b64171
-'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.55-0+deb7u1.debian.tar.gz' mysql-5.5_5.5.55-0+deb7u1.debian.tar.gz 380149 SHA256:9042933a4043efc88fb725a91fee7fc70d7be649ed6e3a310be2473f47675788
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mysql-5.5/5.5.55-0+deb7u1/
-- https://sources.debian.net/src/mysql-5.5/5.5.55-0+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ncurses=5.9-10`
 
