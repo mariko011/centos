@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f284d524d0d89e5dea6c59aefa16bfe98957b56300babc623d1b781ef2902923`
-- Created: `2017-07-24T21:35:26.93521406Z`
+- Image ID: `sha256:8408a407d104d9994ae9c37371f9a609db16b7d29568dc9d1a87e7c6008342b2`
+- Created: `2017-07-26T16:20:36.671392827Z`
 - Virtual Size: ~ 595.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,7 +14,7 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
   - `JAVA_VERSION=9-b179`
-  - `JAVA_DEBIAN_VERSION=9~b179-1`
+  - `JAVA_DEBIAN_VERSION=9~b179-2`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 
@@ -644,19 +644,8 @@ Licenses: (parsed from: `/usr/share/doc/dbus/copyright`, `/usr/share/doc/libdbus
 - `Tcl-BSDish`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dbus=1.10.20-1
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.10.20-1.dsc' dbus_1.10.20-1.dsc 3149 SHA256:400a7db5f6d2da0b527a2cd779afac2cc438ea913411c00387fbfd3f5d134db8
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.10.20.orig.tar.gz' dbus_1.10.20.orig.tar.gz 1989628 SHA256:e574b9780b5425fde4d973bb596e7ea0f09e00fe2edd662da9016e976c460b48
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.10.20-1.debian.tar.xz' dbus_1.10.20-1.debian.tar.xz 56328 SHA256:284d40cc74cd7714ff3fb39b2a76cc8d77df920ee0737ad74ea459fbf861d25c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dbus/1.10.20-1/
-- https://sources.debian.net/src/dbus/1.10.20-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `debconf=1.5.63`
 
@@ -1969,20 +1958,8 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.12-2
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.12-2.dsc' libtasn1-6_4.12-2.dsc 2673 SHA256:ab323d4b7eb455821096bbcf1c018f1f4921d86c7efa412386156faeda1ad581
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.12.orig.tar.gz' libtasn1-6_4.12.orig.tar.gz 1888450 SHA256:6753da2e621257f33f5b051cc114d417e5206a0818fe0b1ecfd6153f70934753
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.12.orig.tar.gz.asc' libtasn1-6_4.12.orig.tar.gz.asc 488 SHA256:469560e75534a5842916669930bcd97cec0400f49b5358fd962fa1c32475fe61
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.12-2.debian.tar.xz' libtasn1-6_4.12-2.debian.tar.xz 58004 SHA256:6f317138f4b954bc0629b2f17477e0bacbcd49b5d1c619aca1db895f184b8ef6
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libtasn1-6/4.12-2/
-- https://sources.debian.net/src/libtasn1-6/4.12-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libunistring=0.9.7-2`
 
@@ -2524,12 +2501,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nss/2:3.31-1/
 - https://sources.debian.net/src/nss/2:3.31-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openjdk-9=9~b179-1`
+### `dpkg` source package: `openjdk-9=9~b179-2`
 
 Binary Packages:
 
-- `openjdk-9-jdk-headless:amd64=9~b179-1`
-- `openjdk-9-jre-headless:amd64=9~b179-1`
+- `openjdk-9-jdk-headless:amd64=9~b179-2`
+- `openjdk-9-jre-headless:amd64=9~b179-2`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-9-jdk-headless/copyright`, `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 
@@ -2538,8 +2515,19 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jdk-headless/copyright`, `/usr
 - `LGPL-2`
 - `LGPL-2-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openjdk-9=9~b179-2
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b179-2.dsc' openjdk-9_9~b179-2.dsc 4494 SHA256:5f577d18bafefa3fcec072b6fe10d5e686d9dbe3cca2e52d5c65d0c7966e8b91
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b179.orig.tar.gz' openjdk-9_9~b179.orig.tar.gz 74693298 SHA256:b8eb587f5a55c3067fc52f13d2074302e0d13078778a68a09efc63aedb4dc900
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b179-2.debian.tar.xz' openjdk-9_9~b179-2.debian.tar.xz 195388 SHA256:771ae0fc271e92e900a6b9f2dd3282d53cdd69f9f66642a127631c4471831bb8
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/openjdk-9/9~b179-2/
+- https://sources.debian.net/src/openjdk-9/9~b179-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-8`
 
