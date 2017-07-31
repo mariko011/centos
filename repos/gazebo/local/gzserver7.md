@@ -4130,14 +4130,8 @@ Licenses: (parsed from: `/usr/share/doc/rsyslog/copyright`)
 - `LGPL-3`
 - `LGPL-3.0+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris rsyslog=7.4.4-1ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsyslog/rsyslog_7.4.4-1ubuntu2.6.dsc' rsyslog_7.4.4-1ubuntu2.6.dsc 2430 SHA256:01e74be4dde49db779491a794abc39a0d8cdec25f190bc0fa1b07dcd2f88781f
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsyslog/rsyslog_7.4.4.orig.tar.gz' rsyslog_7.4.4.orig.tar.gz 2910075 SHA256:276d094d1e4c62c770ec8a72723667f119eee038912b79cf3337d439bc2f9087
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsyslog/rsyslog_7.4.4-1ubuntu2.6.debian.tar.gz' rsyslog_7.4.4-1ubuntu2.6.debian.tar.gz 42571 SHA256:c631301087a7028a53e394e2790139dde491528501bcb0a83a9848c9a3671681
-```
 
 ### `dpkg` source package: `rtmpdump=2.4+20121230.gitdf6c518-1ubuntu0.1`
 
