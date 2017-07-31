@@ -1,7 +1,7 @@
 ## `postgres:10-alpine`
 
 ```console
-$ docker pull postgres@sha256:89cffa4dd55cc2d90bc5c7b00cd46f391fee90027ca006212a31f5e7af5802eb
+$ docker pull postgres@sha256:187ac13141a1a3320ff9532ea5e635b96178b838f9637ca675438535bb8c5dce
 ```
 
 -	Platforms:
@@ -9,11 +9,11 @@ $ docker pull postgres@sha256:89cffa4dd55cc2d90bc5c7b00cd46f391fee90027ca006212a
 
 ### `postgres:10-alpine` - linux; amd64
 
--	Docker Version: 17.03.1-ce
+-	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.7 MB (14711997 bytes)**  
+-	Total Size: **14.7 MB (14711998 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6091a94734be3cd1698e5b196a75e4a592e016a3557ae424ae54a97c3097ad0c`
+-	Image ID: `sha256:fc884624bbc5fdc8fc485f59708ad08528244b97b7d9d3ad1998a5c6ad3ece0e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -48,15 +48,15 @@ ENV PGDATA=/var/lib/postgresql/data
 RUN mkdir -p "$PGDATA" && chown -R postgres:postgres "$PGDATA" && chmod 777 "$PGDATA" # this 777 will be replaced by 700 at runtime (allows semi-arbitrary "--user" values)
 # Fri, 14 Jul 2017 22:55:29 GMT
 VOLUME [/var/lib/postgresql/data]
-# Fri, 14 Jul 2017 22:55:30 GMT
-COPY file:0db93797e962937881947161a43da7695835a2b6d5ad1184d0886e35249b5e39 in /usr/local/bin/ 
-# Fri, 14 Jul 2017 22:55:31 GMT
+# Mon, 31 Jul 2017 19:06:38 GMT
+COPY file:d5038a27fbcfa2f7c3a5e92ffdbfda1676a7a65ecb52a9b377a6041a59e1c1d7 in /usr/local/bin/ 
+# Mon, 31 Jul 2017 19:06:39 GMT
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
-# Fri, 14 Jul 2017 22:55:31 GMT
+# Mon, 31 Jul 2017 19:06:39 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 14 Jul 2017 22:55:32 GMT
+# Mon, 31 Jul 2017 19:06:39 GMT
 EXPOSE 5432/tcp
-# Fri, 14 Jul 2017 22:55:32 GMT
+# Mon, 31 Jul 2017 19:06:40 GMT
 CMD ["postgres"]
 ```
 
@@ -89,11 +89,11 @@ CMD ["postgres"]
 		Last Modified: Fri, 14 Jul 2017 23:08:05 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c07027855a4311d01b075071f542e5478a527546c1a0103be85565f71cf1990`  
-		Last Modified: Fri, 14 Jul 2017 23:08:05 GMT  
-		Size: 1.8 KB (1788 bytes)  
+	-	`sha256:643c84cfb5c2d4763f75c6159c06273620b34a3b8b6773227bb7f42ba5e09b3c`  
+		Last Modified: Mon, 31 Jul 2017 19:07:51 GMT  
+		Size: 1.8 KB (1794 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:05cb664e6b8a8ae6da9e1ae421abe373bc5698cdb978140d55c88fd647807ff4`  
-		Last Modified: Fri, 14 Jul 2017 23:08:05 GMT  
-		Size: 121.0 B  
+	-	`sha256:9302af426bd290b08ec26eac68dac58609b745d1271dbc51eff2db857ab81379`  
+		Last Modified: Mon, 31 Jul 2017 19:07:51 GMT  
+		Size: 116.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
