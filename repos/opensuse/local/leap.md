@@ -1,10 +1,10 @@
-# `opensuse:42.2`
+# `opensuse:42.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:362d0ff47a7250b0035803462927f9a5b9cefcf3d00a4ddad5736dbf31c86a14`
-- Created: `2017-07-11T19:33:02.820915855Z`
-- Virtual Size: ~ 130.69 Mb  
+- Image ID: `sha256:04129f4661e6a7e497a1fbfa50d0c62d1b67ed4c4f912b34fbf826b21e9d5965`
+- Created: `2017-07-28T16:55:38.876978696Z`
+- Virtual Size: ~ 108.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Environment:
