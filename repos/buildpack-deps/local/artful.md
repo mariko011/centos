@@ -441,14 +441,8 @@ Licenses: (parsed from: `/usr/share/doc/libcairo-gobject2/copyright`, `/usr/shar
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cairo=1.14.8-1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.14.8-1.dsc' cairo_1.14.8-1.dsc 2879 SHA256:a24470ae5240afe8693d07bb5a0972e966c2ef27f12b95ffbd7882900afd405c
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.14.8.orig.tar.xz' cairo_1.14.8.orig.tar.xz 35392464 SHA256:d1f2d98ae9a4111564f6de4e013d639cf77155baf2556582295a0f00a9bc5e20
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.14.8-1.debian.tar.xz' cairo_1.14.8-1.debian.tar.xz 28880 SHA256:7b7079075c15615b3e476235ebab30b8845a7ad8886fe3e87fe1d4c9c2b9bebc
-```
 
 ### `dpkg` source package: `cdebconf=0.213ubuntu1`
 
@@ -973,14 +967,8 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`, `/usr/share/doc
 - `GZip`
 - `OpenGroup-BSD-like`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris freetype=2.6.3-3.2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.3-3.2ubuntu1.dsc' freetype_2.6.3-3.2ubuntu1.dsc 2230 SHA256:e89225f38f4edc6bd346453def42d3bf3a1d8aa0b7773f81c85425b5630acb1c
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.3.orig.tar.gz' freetype_2.6.3.orig.tar.gz 7313547 SHA256:814a22aad85e8ca2cb4acfc2e9dc59caa6eded4f6619590f7bd0a721e4b076a3
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.6.3-3.2ubuntu1.diff.gz' freetype_2.6.3-3.2ubuntu1.diff.gz 44707 SHA256:8553c396354d362cdf2ebb110719b610034b8c2a8689f5a3c25f15c735090583
-```
 
 ### `dpkg` source package: `gcc-6=6.3.0-19ubuntu1`
 
@@ -1302,14 +1290,8 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `LGPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.53.2-2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.53.2-2.dsc' gobject-introspection_1.53.2-2.dsc 2881 SHA256:7bf4b0fb9181faa1561673e1d7bfbea8e34ed11ac1baca6ba4ad58d740570d90
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.53.2.orig.tar.xz' gobject-introspection_1.53.2.orig.tar.xz 1390204 SHA256:7c2122a3423bf7b284374c4883844b4eb25741f6d9d3326ab55f7869b43a80f4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.53.2-2.debian.tar.xz' gobject-introspection_1.53.2-2.debian.tar.xz 20560 SHA256:8a0f8fc94ef3910a087c5afd2c0648173f12e0235a96a29cbd01d8156d63d4af
-```
 
 ### `dpkg` source package: `graphite2=1.3.10-2`
 
@@ -1399,14 +1381,8 @@ Licenses: (parsed from: `/usr/share/doc/libgtk2.0-0/copyright`, `/usr/share/doc/
 - `LGPL-2`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gtk+2.0=2.24.31-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.31-1ubuntu1.dsc' gtk+2.0_2.24.31-1ubuntu1.dsc 4052 SHA256:aa4561342741ffc8267edf2654a07e119c7eea361d0d3b5cecb3df75583c975d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.31.orig.tar.xz' gtk+2.0_2.24.31.orig.tar.xz 12805344 SHA256:68c1922732c7efc08df4656a5366dcc3afdc8791513400dac276009b40954658
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.31-1ubuntu1.debian.tar.xz' gtk+2.0_2.24.31-1ubuntu1.debian.tar.xz 104772 SHA256:acb34c4e14d2d5eaa415498d3904f99c55bc1d28748d3cd575e99405f66b8251
-```
 
 ### `dpkg` source package: `gtk+3.0=3.22.15-0ubuntu2`
 
@@ -2444,14 +2420,8 @@ Licenses: (parsed from: `/usr/share/doc/libthai-data/copyright`, `/usr/share/doc
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libthai=0.1.26-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libthai/libthai_0.1.26-2.dsc' libthai_0.1.26-2.dsc 2299 SHA256:3230c72e1e420d07c924accb9da97e3bac260f3a89a7e743add025799a51e014
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libthai/libthai_0.1.26.orig.tar.xz' libthai_0.1.26.orig.tar.xz 409380 SHA256:8710112c836b272db1740a9ea3e6c7ebb65b64eee0e143fc2b2c60f99f6bfe2a
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libthai/libthai_0.1.26-2.debian.tar.xz' libthai_0.1.26-2.debian.tar.xz 10820 SHA256:30a112852c4ac0a2f7cec6eac0fad3d89e3c6a193256d27cdc26fdfc5f4f1176
-```
 
 ### `dpkg` source package: `libtool=2.4.6-2`
 
@@ -3314,14 +3284,8 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openssh=1:7.5p1-3ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.5p1-3ubuntu1.dsc' openssh_7.5p1-3ubuntu1.dsc 2558 SHA256:a1acf1df71c53c1d1c88c9af2a473b045374e4d39fbc00568ddd2a685abce54a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.5p1.orig.tar.gz' openssh_7.5p1.orig.tar.gz 1510857 SHA256:9846e3c5fab9f0547400b4d2c017992f914222b3fd1f8eee6c7dc6bc5e59f9f0
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_7.5p1-3ubuntu1.debian.tar.xz' openssh_7.5p1-3ubuntu1.debian.tar.xz 159388 SHA256:1cb8c9dda25f6aab7cf9423d22a40b067ead392a5148c16cd04e8e6409066b5b
-```
 
 ### `dpkg` source package: `openssl=1.0.2g-1ubuntu13`
 

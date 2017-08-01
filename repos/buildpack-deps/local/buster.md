@@ -1621,19 +1621,8 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `LGPL-2+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.50.0-1
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.50.0-1.dsc' gobject-introspection_1.50.0-1.dsc 2905 SHA256:fb6941ce4151bb9d6ca053ad6d2955caf22058f0374fc225246af31dde1a93e9
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.50.0.orig.tar.xz' gobject-introspection_1.50.0.orig.tar.xz 1415700 SHA256:1c6597c666f543c70ef3d7c893ab052968afae620efdc080c36657f4226337c5
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.50.0-1.debian.tar.xz' gobject-introspection_1.50.0-1.debian.tar.xz 19116 SHA256:94c0a9a7be53d1a8d35c449193faf50c9f9796319d40dc42f9d65f3b677a6999
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gobject-introspection/1.50.0-1/
-- https://sources.debian.net/src/gobject-introspection/1.50.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `graphite2=1.3.10-2`
 
@@ -1768,19 +1757,8 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`)
 - `LGPL-2.1+`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gtk+3.0=3.22.16-1
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.16-1.dsc' gtk+3.0_3.22.16-1.dsc 3814 SHA256:87a08a826dd47cfe05663b5a31dce7b0b1a3bce2a4209301b913b1b9b9f1a4dd
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.16.orig.tar.xz' gtk+3.0_3.22.16.orig.tar.xz 18655144 SHA256:3e0c3ad01f3c8c5c9b1cc1ae00852bd55164c8e5a9c1f90ba5e07f14f175fe2c
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.16-1.debian.tar.xz' gtk+3.0_3.22.16-1.debian.tar.xz 143952 SHA256:1c5b9747e9852e09360f2e13fc4e0b6fe7392015adbd68471a001736cc15dafd
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gtk+3.0/3.22.16-1/
-- https://sources.debian.net/src/gtk+3.0/3.22.16-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gts=0.7.6+darcs121130-4`
 
@@ -1998,19 +1976,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.9.7.4+dfsg-12
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-12.dsc' imagemagick_6.9.7.4+dfsg-12.dsc 5137 SHA256:f445c59ca48e8869b7676ed7336295c780478acfef00161a652f5a228a34cec3
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg.orig.tar.xz' imagemagick_6.9.7.4+dfsg.orig.tar.xz 8929800 SHA256:47fb2cdd26f5913318c4504f16ea363e04d1f400dda9ec52e461ab661d724026
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-12.debian.tar.xz' imagemagick_6.9.7.4+dfsg-12.debian.tar.xz 230416 SHA256:8b91345baf34eeeadc6ea8e744a4d0f57ebf976c386833b55411b5faa862aa65
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/imagemagick/8:6.9.7.4+dfsg-12/
-- https://sources.debian.net/src/imagemagick/8:6.9.7.4+dfsg-12/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9.4-2`
 
@@ -3025,20 +2992,8 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.12-2
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.12-2.dsc' libtasn1-6_4.12-2.dsc 2673 SHA256:ab323d4b7eb455821096bbcf1c018f1f4921d86c7efa412386156faeda1ad581
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.12.orig.tar.gz' libtasn1-6_4.12.orig.tar.gz 1888450 SHA256:6753da2e621257f33f5b051cc114d417e5206a0818fe0b1ecfd6153f70934753
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.12.orig.tar.gz.asc' libtasn1-6_4.12.orig.tar.gz.asc 488 SHA256:469560e75534a5842916669930bcd97cec0400f49b5358fd962fa1c32475fe61
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.12-2.debian.tar.xz' libtasn1-6_4.12-2.debian.tar.xz 58004 SHA256:6f317138f4b954bc0629b2f17477e0bacbcd49b5d1c619aca1db895f184b8ef6
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libtasn1-6/4.12-2/
-- https://sources.debian.net/src/libtasn1-6/4.12-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libthai=0.1.26-2`
 
@@ -4741,19 +4696,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.5-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python3.5=3.5.3-3
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.3-3.dsc' python3.5_3.5.3-3.dsc 3367 SHA256:34e97e158741e9dbc7cc1df371ca401ebb83a3ea8c2f31c8d99eed7fe5df5f64
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.3.orig.tar.xz' python3.5_3.5.3.orig.tar.xz 15213396 SHA256:eefe2ad6575855423ab630f5b51a8ef6e5556f774584c06beab4926f930ddbb0
-'http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.3-3.debian.tar.xz' python3.5_3.5.3-3.debian.tar.xz 446608 SHA256:94709e4563f636b6f9f09365112a3a3f3696411b779ab7d0e590e764c1f8d562
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/python3.5/3.5.3-3/
-- https://sources.debian.net/src/python3.5/3.5.3-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `readline=7.0-3`
 
