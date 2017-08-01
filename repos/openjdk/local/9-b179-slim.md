@@ -485,19 +485,8 @@ Licenses: (parsed from: `/usr/share/doc/dbus/copyright`, `/usr/share/doc/libdbus
 - `Tcl-BSDish`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dbus=1.10.20-1
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.10.20-1.dsc' dbus_1.10.20-1.dsc 3149 SHA256:400a7db5f6d2da0b527a2cd779afac2cc438ea913411c00387fbfd3f5d134db8
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.10.20.orig.tar.gz' dbus_1.10.20.orig.tar.gz 1989628 SHA256:e574b9780b5425fde4d973bb596e7ea0f09e00fe2edd662da9016e976c460b48
-'http://deb.debian.org/debian/pool/main/d/dbus/dbus_1.10.20-1.debian.tar.xz' dbus_1.10.20-1.debian.tar.xz 56328 SHA256:284d40cc74cd7714ff3fb39b2a76cc8d77df920ee0737ad74ea459fbf861d25c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/dbus/1.10.20-1/
-- https://sources.debian.net/src/dbus/1.10.20-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `debconf=1.5.63`
 
@@ -797,19 +786,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.4.0-1
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0-1.dsc' gcc-6_6.4.0-1.dsc 19452 SHA256:75c1bec3746ac5753f0e1be04de6a567b5af2096dc8bc19f4a6b4845091bc08a
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0.orig.tar.gz' gcc-6_6.4.0.orig.tar.gz 81632257 SHA256:13220c723ddb7a69ff5690070b245886ac99afe5a31ee106ac36d6f013234a67
-'http://deb.debian.org/debian/pool/main/g/gcc-6/gcc-6_6.4.0-1.diff.gz' gcc-6_6.4.0-1.diff.gz 1628721 SHA256:74ffcd778b7bfe882a8b4f2142e2790579a4d827290016f2b85753e8aff5ed46
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-6/6.4.0-1/
-- https://sources.debian.net/src/gcc-6/6.4.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-7=7.1.0-9`
 
@@ -828,19 +806,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`)
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.1.0-9
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.1.0-9.dsc' gcc-7_7.1.0-9.dsc 26117 SHA256:b05e74139df62bd6fe85fd808c2f0c41afbd8f7b9ee05983fa1f7f89c4fc8a40
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.1.0.orig.tar.gz' gcc-7_7.1.0.orig.tar.gz 73830593 SHA256:c387dcedc16950e89bd4a805564047bc4a2340511a155d0fa4046ff158939146
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.1.0-9.diff.gz' gcc-7_7.1.0-9.diff.gz 1389318 SHA256:987b18313f5f852a172482ec3fee4a0ff920f2e7d3bf02f17fb65df59c45a135
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-7/7.1.0-9/
-- https://sources.debian.net/src/gcc-7/7.1.0-9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.24-12`
 
@@ -1478,20 +1445,8 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.12-2
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.12-2.dsc' libtasn1-6_4.12-2.dsc 2673 SHA256:ab323d4b7eb455821096bbcf1c018f1f4921d86c7efa412386156faeda1ad581
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.12.orig.tar.gz' libtasn1-6_4.12.orig.tar.gz 1888450 SHA256:6753da2e621257f33f5b051cc114d417e5206a0818fe0b1ecfd6153f70934753
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.12.orig.tar.gz.asc' libtasn1-6_4.12.orig.tar.gz.asc 488 SHA256:469560e75534a5842916669930bcd97cec0400f49b5358fd962fa1c32475fe61
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.12-2.debian.tar.xz' libtasn1-6_4.12-2.debian.tar.xz 58004 SHA256:6f317138f4b954bc0629b2f17477e0bacbcd49b5d1c619aca1db895f184b8ef6
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libtasn1-6/4.12-2/
-- https://sources.debian.net/src/libtasn1-6/4.12-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libunistring=0.9.7-2`
 
