@@ -1,7 +1,7 @@
 ## `docker:rc`
 
 ```console
-$ docker pull docker@sha256:f59d4a8db6d69e55e99cb7c3766aba7225766249ddff0ec282a78391ac3e74df
+$ docker pull docker@sha256:bb1897bd8309a6d5b5a7d5fcdccea18cee700c490f150749c2d1c6d10b762591
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull docker@sha256:f59d4a8db6d69e55e99cb7c3766aba7225766249ddff0ec282a7
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.8 MB (32801037 bytes)**  
+-	Total Size: **32.8 MB (32801075 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2451ed4ad3a7a285378337527fc9f8c1f59981c726577022d42e4311fd1600b9`
+-	Image ID: `sha256:62aecded0be269704479426726ed70563e1f809d9111199655dd0eca9f804982`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
@@ -28,13 +28,13 @@ RUN apk add --no-cache 		ca-certificates
 ENV DOCKER_CHANNEL=test
 # Wed, 26 Jul 2017 20:17:14 GMT
 ENV DOCKER_VERSION=17.07.0-ce-rc1
-# Wed, 26 Jul 2017 20:17:20 GMT
-RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		curl 		tar 	; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		aarch64) dockerArch='aarch64' ;; 		s390x) dockerArch='s390x' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 		echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 		exit 1; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		apk del .fetch-deps; 		dockerd -v; 	docker -v
-# Wed, 26 Jul 2017 20:17:21 GMT
+# Tue, 01 Aug 2017 23:28:00 GMT
+RUN set -ex; 	apk add --no-cache --virtual .fetch-deps 		curl 		tar 	; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		x86_64) dockerArch='x86_64' ;; 		armhf) dockerArch='armel' ;; 		aarch64) dockerArch='aarch64' ;; 		s390x) dockerArch='s390x' ;; 		*) echo >&2 "error: unsupported architecture ($apkArch)"; exit 1 ;;	esac; 		if ! curl -fL -o docker.tgz "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/${dockerArch}/docker-${DOCKER_VERSION}.tgz"; then 		echo >&2 "error: failed to download 'docker-${DOCKER_VERSION}' from '${DOCKER_CHANNEL}' for '${dockerArch}'"; 		exit 1; 	fi; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 	; 	rm docker.tgz; 		apk del .fetch-deps; 		dockerd -v; 	docker -v
+# Tue, 01 Aug 2017 23:28:00 GMT
 COPY file:0d94e1cd679f133aab807891a1b00b6aef1a9f1f884108e7a17ddf50ab88f1fb in /usr/local/bin/ 
-# Wed, 26 Jul 2017 20:17:21 GMT
+# Tue, 01 Aug 2017 23:28:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 26 Jul 2017 20:17:22 GMT
+# Tue, 01 Aug 2017 23:28:01 GMT
 CMD ["sh"]
 ```
 
@@ -47,11 +47,11 @@ CMD ["sh"]
 		Last Modified: Thu, 29 Jun 2017 19:32:29 GMT  
 		Size: 351.3 KB (351302 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0e788b059f434e7e1726201d28ba1f877ae7fea947aa40a573159b83cbc60a61`  
-		Last Modified: Wed, 26 Jul 2017 20:18:09 GMT  
-		Size: 30.5 MB (30458605 bytes)  
+	-	`sha256:8486e96c03c91627d651272f331a5219d5f31745a31d7eae3653cfdcfc424410`  
+		Last Modified: Tue, 01 Aug 2017 23:28:52 GMT  
+		Size: 30.5 MB (30458642 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a3f243d4531355cd1de9111ad77d2c068e319ad1fec6491b436064777358904`  
-		Last Modified: Wed, 26 Jul 2017 20:18:00 GMT  
-		Size: 728.0 B  
+	-	`sha256:b20644ef8d1e8fa923942e412d7f107919cb376e7ae54edc0f9f114f4a67a525`  
+		Last Modified: Tue, 01 Aug 2017 23:28:45 GMT  
+		Size: 729.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
