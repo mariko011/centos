@@ -224,14 +224,8 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris binutils=2.29-1
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.29-1.dsc' binutils_2.29-1.dsc 4380 SHA256:b49e4a9ed598b665a6f1b6e8ffba8a16a6f12d50f546436553d3720d8eb150bb
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.29.orig.tar.gz' binutils_2.29.orig.tar.gz 39180110 SHA256:f7ddc9a7ca91ea1397faeb049c502794cc3bedd09d61dd210c12ef668ff6ea9d
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.29-1.diff.gz' binutils_2.29-1.diff.gz 176349 SHA256:d9dd84b71fb3740e8c7d22ab101ef82f4165cf0483e59f5962fd03cf4dd4afb5
-```
 
 ### `dpkg` source package: `boot=1.3-19-1`
 
@@ -243,14 +237,8 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-boot/copyright`)
 
 - `'unlimited distribution'`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris boot=1.3-19-1
-'http://http.debian.net/debian/pool/main/b/boot/boot_1.3-19-1.dsc' boot_1.3-19-1.dsc 1615 SHA256:fc9f9699c77777cd8367b2bf3c6e6df6c237a62dbc999fda593eb2600523cef7
-'http://http.debian.net/debian/pool/main/b/boot/boot_1.3-19.orig.tar.gz' boot_1.3-19.orig.tar.gz 231549 SHA256:3ace9df5615d231b4e64a06e1b29a979eda543659ebb8ea9606edec417e11a9a
-'http://http.debian.net/debian/pool/main/b/boot/boot_1.3-19-1.diff.gz' boot_1.3-19-1.diff.gz 3390 SHA256:cf124f1a21408971f1d782e745e3e85f3994c7b901df2a52fd89c50e9c1b9bc9
-```
 
 ### `dpkg` source package: `build-essential=12.3`
 
@@ -2108,20 +2096,8 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.12-2
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.12-2.dsc' libtasn1-6_4.12-2.dsc 2673 SHA256:ab323d4b7eb455821096bbcf1c018f1f4921d86c7efa412386156faeda1ad581
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.12.orig.tar.gz' libtasn1-6_4.12.orig.tar.gz 1888450 SHA256:6753da2e621257f33f5b051cc114d417e5206a0818fe0b1ecfd6153f70934753
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.12.orig.tar.gz.asc' libtasn1-6_4.12.orig.tar.gz.asc 488 SHA256:469560e75534a5842916669930bcd97cec0400f49b5358fd962fa1c32475fe61
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.12-2.debian.tar.xz' libtasn1-6_4.12-2.debian.tar.xz 58004 SHA256:6f317138f4b954bc0629b2f17477e0bacbcd49b5d1c619aca1db895f184b8ef6
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libtasn1-6/4.12-2/
-- https://sources.debian.net/src/libtasn1-6/4.12-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libthai=0.1.26-2`
 
@@ -2563,14 +2539,8 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-mgcv/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mgcv=1.8-17-2
-'http://http.debian.net/debian/pool/main/m/mgcv/mgcv_1.8-17-2.dsc' mgcv_1.8-17-2.dsc 1643 SHA256:7989c1cd21bbb152eeb4767b7c9774c2a1ee0b46250927e8fc4a0938f6228161
-'http://http.debian.net/debian/pool/main/m/mgcv/mgcv_1.8-17.orig.tar.gz' mgcv_1.8-17.orig.tar.gz 849787 SHA256:8ff3eb28c83ba7c9003005e7fe08028627fb673b9b07c0462b410e45e81042fe
-'http://http.debian.net/debian/pool/main/m/mgcv/mgcv_1.8-17-2.diff.gz' mgcv_1.8-17-2.diff.gz 4816 SHA256:67cf57bca852c806cbd45148584ba47d4544a87fabcc52264a65c3f0b60550b7
-```
 
 ### `dpkg` source package: `mpclib3=1.0.3-1`
 
@@ -2770,19 +2740,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openldap=2.4.44+dfsg-8
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.44+dfsg-8.dsc' openldap_2.4.44+dfsg-8.dsc 3002 SHA256:8907dd16c4cb00ff042144a2bf2564cf4b2bdd88d5b6cd1fda6f73341af27df8
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.44+dfsg.orig.tar.gz' openldap_2.4.44+dfsg.orig.tar.gz 4826590 SHA256:d5187c229bec163c5d97845846e1b87917755f85b04f444c08836384f4bd7ffe
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.4.44+dfsg-8.debian.tar.xz' openldap_2.4.44+dfsg-8.debian.tar.xz 163272 SHA256:250e6544c3b3a8b9db675cd46efc518f2822f1efaaef9fba04c65f49bfe8ccb4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openldap/2.4.44+dfsg-8/
-- https://sources.debian.net/src/openldap/2.4.44+dfsg-8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssl1.0=1.0.2l-2`
 
