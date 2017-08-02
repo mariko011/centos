@@ -1,4 +1,4 @@
-# `orientdb:2.2.24`
+# `orientdb:latest`
 
 ## Docker Metadata
 
