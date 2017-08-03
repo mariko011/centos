@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:afa0733d0c1b74e9d0b63c298b5fdb0a92cd7a7ae8aaeae248e0ffb5e05dfc4e`
-- Created: `2017-07-26T06:14:52.751278733Z`
-- Virtual Size: ~ 386.74 Mb  
+- Image ID: `sha256:0ff2b852d8bf3975c92fd795a973d3794da04d64c2a6f72689fa5ba78b2fed7d`
+- Created: `2017-07-31T18:52:03.010750476Z`
+- Virtual Size: ~ 397.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -2797,13 +2797,13 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/pcre3/2:8.35-3.3+deb8u4/
 - https://sources.debian.net/src/pcre3/2:8.35-3.3+deb8u4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `percona-xtrabackup=2.3.9-1.jessie`
+### `dpkg` source package: `percona-xtrabackup-24=2.4.8-1.jessie`
 
 Binary Packages:
 
-- `percona-xtrabackup=2.3.9-1.jessie`
+- `percona-xtrabackup-24=2.4.8-1.jessie`
 
-Licenses: (parsed from: `/usr/share/doc/percona-xtrabackup/copyright`)
+Licenses: (parsed from: `/usr/share/doc/percona-xtrabackup-24/copyright`)
 
 - `Apache-2`
 - `Apache-2.0`
