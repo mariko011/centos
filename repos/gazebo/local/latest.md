@@ -107,13 +107,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.2.20
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.20.dsc' apt_1.2.20.dsc 2392 SHA256:9c60eaaee2852d102c3b6ca0929cce97be7a7660fb5124319275c108787be5ae
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.20.tar.xz' apt_1.2.20.tar.xz 2057852 SHA256:337fccd31b7c85b5f9a4c46cb153d61fe7cf4a73ed69a227f43606c71b86bf5a
-```
 
 ### `dpkg` source package: `armadillo=1:6.500.5+dfsg-1`
 
@@ -245,13 +240,8 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris base-files=9.4ubuntu4.4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.4.dsc' base-files_9.4ubuntu4.4.dsc 1539 SHA256:44f652813477cac68590a2ff34bffc8b5e7c3fa7ffa7300f3e06672b7d4c6fc9
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.4.tar.xz' base-files_9.4ubuntu4.4.tar.xz 62952 SHA256:f83ad550362c3f582e8c52d58073edc69a61a9d3138e6e56177ec7610bdf3a9b
-```
 
 ### `dpkg` source package: `base-passwd=3.5.39`
 
