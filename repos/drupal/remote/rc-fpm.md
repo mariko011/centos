@@ -1,19 +1,19 @@
-## `drupal:8.3.6-fpm`
+## `drupal:rc-fpm`
 
 ```console
-$ docker pull drupal@sha256:ed32c283db9579a2a0e0d7083dc61525f36f30342ecca1063f427fbc180695fc
+$ docker pull drupal@sha256:7b9a263fbf74b2ae9a306ab5b5471b9c45782cb7f6b99daf6555e9753df00385
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `drupal:8.3.6-fpm` - linux; amd64
+### `drupal:rc-fpm` - linux; amd64
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **175.9 MB (175877825 bytes)**  
+-	Total Size: **176.3 MB (176276626 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c389fb1fd93d7a1648d74d65602a45164aadf9e35b669d8b735ccbf3bb3de3cb`
+-	Image ID: `sha256:04ee5605df0421f0f2c55b7438813f02b176cc7b445c6a69170b43b398f35307`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -70,11 +70,11 @@ RUN set -ex 	&& buildDeps=' 		libjpeg62-turbo-dev 		libpng12-dev 		libpq-dev 	' 
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 		echo 'opcache.fast_shutdown=1'; 		echo 'opcache.enable_cli=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 # Fri, 04 Aug 2017 21:18:19 GMT
 WORKDIR /var/www/html
-# Fri, 04 Aug 2017 21:19:40 GMT
-ENV DRUPAL_VERSION=8.3.6
-# Fri, 04 Aug 2017 21:19:41 GMT
-ENV DRUPAL_MD5=de7ceedf9391c4b52c1c5a7f66809129
-# Fri, 04 Aug 2017 21:19:46 GMT
+# Fri, 04 Aug 2017 21:18:19 GMT
+ENV DRUPAL_VERSION=8.4.0-alpha1
+# Fri, 04 Aug 2017 21:18:19 GMT
+ENV DRUPAL_MD5=540c951999e8cac74d1d5ff70a81157f
+# Fri, 04 Aug 2017 21:18:25 GMT
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz 	&& echo "${DRUPAL_MD5} *drupal.tar.gz" | md5sum -c - 	&& tar -xz --strip-components=1 -f drupal.tar.gz 	&& rm drupal.tar.gz 	&& chown -R www-data:www-data sites modules themes
 ```
 
@@ -123,7 +123,7 @@ RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.ta
 		Last Modified: Fri, 04 Aug 2017 21:20:55 GMT  
 		Size: 333.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c900cd89073e33dcb0500c9adfba30e8fe928bdc9b3f97f9969a19b7f08e187`  
-		Last Modified: Fri, 04 Aug 2017 21:22:51 GMT  
-		Size: 12.8 MB (12842159 bytes)  
+	-	`sha256:5eeb1daf6ad671ab7d8266a14ed3199d6d2b5d23b470007a92d149e7ba2e1203`  
+		Last Modified: Fri, 04 Aug 2017 21:20:59 GMT  
+		Size: 13.2 MB (13240960 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
