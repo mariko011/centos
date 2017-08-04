@@ -1281,19 +1281,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.1.0-10
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.1.0-10.dsc' gcc-7_7.1.0-10.dsc 26121 SHA256:c9b7e5274615fec97836a73e9fa0ace57870bc82633f926f375bf329e4d0e111
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.1.0.orig.tar.gz' gcc-7_7.1.0.orig.tar.gz 73830593 SHA256:c387dcedc16950e89bd4a805564047bc4a2340511a155d0fa4046ff158939146
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.1.0-10.diff.gz' gcc-7_7.1.0-10.diff.gz 1416844 SHA256:d6b04f9958dbd90647c4cb52be983552e2c70c9d564df313e05f3bdec9884264
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-7/7.1.0-10/
-- https://sources.debian.net/src/gcc-7/7.1.0-10/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-defaults=1.168d1`
 
