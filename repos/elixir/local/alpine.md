@@ -1,15 +1,15 @@
-# `elixir:1.5.0-alpine`
+# `elixir:1.5.1-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:86fd5b17441c5220a5a8346064f57d91c4363a8867724bda426ec1b3ed6e8658`
-- Created: `2017-07-31T22:01:50.595210602Z`
-- Virtual Size: ~ 71.30 Mb  
+- Image ID: `sha256:8d82b86445e53e8a86352b1dad8bf6fac28e5455a978fe8da6cf8533aad1f42f`
+- Created: `2017-08-02T00:06:28.563990499Z`
+- Virtual Size: ~ 71.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `OTP_VERSION=20.0.2`
-  - `ELIXIR_VERSION=v1.5.0`
+  - `ELIXIR_VERSION=v1.5.1`
   - `LANG=C.UTF-8`
