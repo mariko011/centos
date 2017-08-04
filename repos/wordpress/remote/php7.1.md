@@ -1,7 +1,7 @@
 ## `wordpress:php7.1`
 
 ```console
-$ docker pull wordpress@sha256:241f092e70d128d047f2fc162904e1dba89dbe4c2f0e225d5791ff596ed2c96f
+$ docker pull wordpress@sha256:d561e966db70aa28d89567d36529ce0decc3e39c125c14deeb48b07bf78ddce8
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull wordpress@sha256:241f092e70d128d047f2fc162904e1dba89dbe4c2f0e225d5
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.6 MB (174632694 bytes)**  
+-	Total Size: **174.6 MB (174635418 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56649ecf398a33196490a3e26fab9b101bf685675ba08a826a675aeb2721077f`
+-	Image ID: `sha256:236396928a04202c60c630b23f56a67a427fd4b268bd982c8085f90b78e26cf2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -88,17 +88,17 @@ RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_
 RUN a2enmod rewrite expires
 # Mon, 31 Jul 2017 20:18:52 GMT
 VOLUME [/var/www/html]
-# Mon, 31 Jul 2017 20:18:52 GMT
-ENV WORDPRESS_VERSION=4.8
-# Mon, 31 Jul 2017 20:18:52 GMT
-ENV WORDPRESS_SHA1=3738189a1f37a03fb9cb087160b457d7a641ccb4
-# Mon, 31 Jul 2017 20:18:54 GMT
+# Fri, 04 Aug 2017 00:22:17 GMT
+ENV WORDPRESS_VERSION=4.8.1
+# Fri, 04 Aug 2017 00:22:17 GMT
+ENV WORDPRESS_SHA1=5376cf41403ae26d51ca55c32666ef68b10e35a4
+# Fri, 04 Aug 2017 00:22:19 GMT
 RUN set -ex; 	curl -o wordpress.tar.gz -fSL "https://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"; 	echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; 	tar -xzf wordpress.tar.gz -C /usr/src/; 	rm wordpress.tar.gz; 	chown -R www-data:www-data /usr/src/wordpress
-# Mon, 31 Jul 2017 20:18:54 GMT
+# Fri, 04 Aug 2017 00:22:19 GMT
 COPY file:b5c332f80307d4248d07b035890c0ea453c1157d9e1732225f83f63d851392b5 in /usr/local/bin/ 
-# Mon, 31 Jul 2017 20:18:54 GMT
+# Fri, 04 Aug 2017 00:22:20 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 31 Jul 2017 20:18:55 GMT
+# Fri, 04 Aug 2017 00:22:20 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -167,11 +167,11 @@ CMD ["apache2-foreground"]
 		Last Modified: Mon, 31 Jul 2017 20:25:17 GMT  
 		Size: 321.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c183d73d6131b2116a01c242d653d36b086993e0c71be05112e0ac276ade102`  
-		Last Modified: Mon, 31 Jul 2017 20:25:18 GMT  
-		Size: 8.0 MB (8006791 bytes)  
+	-	`sha256:93f7856ca0f22826b2319c8d96665b43698aeb3ccee80f0264c54fb94544e392`  
+		Last Modified: Fri, 04 Aug 2017 00:33:12 GMT  
+		Size: 8.0 MB (8009516 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a3be0b191a8e0222d37d4661fa20ef1bb51107163aaa7926af1791adf7f9b7b1`  
-		Last Modified: Mon, 31 Jul 2017 20:25:18 GMT  
-		Size: 3.1 KB (3147 bytes)  
+	-	`sha256:567370ac27d03b1b537a6024af532cebe9bca5852a3b5a2859e3a8de94901584`  
+		Last Modified: Fri, 04 Aug 2017 00:33:09 GMT  
+		Size: 3.1 KB (3146 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
