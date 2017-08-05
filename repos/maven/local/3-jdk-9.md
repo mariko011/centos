@@ -822,19 +822,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris expat=2.2.2-2
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.2-2.dsc' expat_2.2.2-2.dsc 2299 SHA256:766182e6c0f364387bb3497855a74ffe876bec399247940a29242601ac942c5d
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.2.orig.tar.bz2' expat_2.2.2.orig.tar.bz2 405561 SHA256:4376911fcf81a23ebd821bbabc26fd933f3ac74833f74924342c29aad2c86046
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.2-2.debian.tar.xz' expat_2.2.2-2.debian.tar.xz 10592 SHA256:5c1423bc1b8049d434daa88a381748bb26e5616510ff9c742204521178e55875
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/expat/2.2.2-2/
-- https://sources.debian.net/src/expat/2.2.2-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `explorercanvas=0.r3-4`
 
@@ -1773,19 +1762,8 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 - `expat`
 - `libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.30-2
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.30-2.dsc' libpng1.6_1.6.30-2.dsc 2188 SHA256:6f778d2e59fc66aaca420c2b68b49267c79255fc3c701ff527e3f3ce98526b5d
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.30.orig.tar.xz' libpng1.6_1.6.30.orig.tar.xz 988608 SHA256:267c332ffff70cc599d3929207869f698798f1df143aa5f9597b007c14353666
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.30-2.debian.tar.xz' libpng1.6_1.6.30-2.debian.tar.xz 22844 SHA256:8daa2a3bcd3cc5300d0afe86ca95feffd266dc80c41d252f2c651973198e319f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libpng1.6/1.6.30-2/
-- https://sources.debian.net/src/libpng1.6/1.6.30-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpsl=0.17.0-5`
 
