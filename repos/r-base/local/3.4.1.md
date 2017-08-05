@@ -2113,19 +2113,8 @@ Licenses: (parsed from: `/usr/share/doc/libthai-data/copyright`, `/usr/share/doc
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libthai=0.1.26-2
-'http://deb.debian.org/debian/pool/main/libt/libthai/libthai_0.1.26-2.dsc' libthai_0.1.26-2.dsc 2299 SHA256:3230c72e1e420d07c924accb9da97e3bac260f3a89a7e743add025799a51e014
-'http://deb.debian.org/debian/pool/main/libt/libthai/libthai_0.1.26.orig.tar.xz' libthai_0.1.26.orig.tar.xz 409380 SHA256:8710112c836b272db1740a9ea3e6c7ebb65b64eee0e143fc2b2c60f99f6bfe2a
-'http://deb.debian.org/debian/pool/main/libt/libthai/libthai_0.1.26-2.debian.tar.xz' libthai_0.1.26-2.debian.tar.xz 10820 SHA256:30a112852c4ac0a2f7cec6eac0fad3d89e3c6a193256d27cdc26fdfc5f4f1176
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libthai/0.1.26-2/
-- https://sources.debian.net/src/libthai/0.1.26-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libunistring=0.9.7-2`
 
@@ -2914,10 +2903,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris pcre3=2:8.39-4
-'http://http.debian.net/debian/pool/main/p/pcre3/pcre3_8.39-4.dsc' pcre3_8.39-4.dsc 2224 SHA256:d79722717c869fce3343423d479e3cc0dfe5a31e392f9946a7054a11d395a544
-'http://http.debian.net/debian/pool/main/p/pcre3/pcre3_8.39.orig.tar.bz2' pcre3_8.39.orig.tar.bz2 1560758 SHA256:b858099f82483031ee02092711689e7245586ada49e534a06e678b8ea9549e8b
-'http://http.debian.net/debian/pool/main/p/pcre3/pcre3_8.39-4.debian.tar.gz' pcre3_8.39-4.debian.tar.gz 25456 SHA256:4b1f803c48e0d09bd4d8740c267ded7896afeb3a7ba0fc24326caf51044cf768
+'http://deb.debian.org/debian/pool/main/p/pcre3/pcre3_8.39-4.dsc' pcre3_8.39-4.dsc 2224 SHA256:d79722717c869fce3343423d479e3cc0dfe5a31e392f9946a7054a11d395a544
+'http://deb.debian.org/debian/pool/main/p/pcre3/pcre3_8.39.orig.tar.bz2' pcre3_8.39.orig.tar.bz2 1560758 SHA256:b858099f82483031ee02092711689e7245586ada49e534a06e678b8ea9549e8b
+'http://deb.debian.org/debian/pool/main/p/pcre3/pcre3_8.39-4.debian.tar.gz' pcre3_8.39-4.debian.tar.gz 25456 SHA256:4b1f803c48e0d09bd4d8740c267ded7896afeb3a7ba0fc24326caf51044cf768
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/pcre3/2:8.39-4/
+- https://sources.debian.net/src/pcre3/2:8.39-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `perl=5.26.0-4`
 
