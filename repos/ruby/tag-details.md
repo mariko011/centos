@@ -2,6 +2,14 @@
 
 # Tags of `ruby`
 
+-	[`ruby:2.4.1-stretch`](#ruby241-stretch)
+-	[`ruby:2.4-stretch`](#ruby24-stretch)
+-	[`ruby:2-stretch`](#ruby2-stretch)
+-	[`ruby:stretch`](#rubystretch)
+-	[`ruby:2.4.1-slim-stretch`](#ruby241-slim-stretch)
+-	[`ruby:2.4-slim-stretch`](#ruby24-slim-stretch)
+-	[`ruby:2-slim-stretch`](#ruby2-slim-stretch)
+-	[`ruby:slim-stretch`](#rubyslim-stretch)
 -	[`ruby:2.4.1-jessie`](#ruby241-jessie)
 -	[`ruby:2.4-jessie`](#ruby24-jessie)
 -	[`ruby:2-jessie`](#ruby2-jessie)
@@ -22,6 +30,10 @@
 -	[`ruby:2.4-onbuild`](#ruby24-onbuild)
 -	[`ruby:2-onbuild`](#ruby2-onbuild)
 -	[`ruby:onbuild`](#rubyonbuild)
+-	[`ruby:2.4.1-alpine3.6`](#ruby241-alpine36)
+-	[`ruby:2.4-alpine3.6`](#ruby24-alpine36)
+-	[`ruby:2-alpine3.6`](#ruby2-alpine36)
+-	[`ruby:alpine3.6`](#rubyalpine36)
 -	[`ruby:2.4.1-alpine3.4`](#ruby241-alpine34)
 -	[`ruby:2.4-alpine3.4`](#ruby24-alpine34)
 -	[`ruby:2-alpine3.4`](#ruby2-alpine34)
@@ -58,6 +70,38 @@
 -	[`ruby:2.2-alpine3.4`](#ruby22-alpine34)
 -	[`ruby:2.2.7-alpine`](#ruby227-alpine)
 -	[`ruby:2.2-alpine`](#ruby22-alpine)
+
+## `ruby:2.4.1-stretch`
+
+**does not exist** (yet?)
+
+## `ruby:2.4-stretch`
+
+**does not exist** (yet?)
+
+## `ruby:2-stretch`
+
+**does not exist** (yet?)
+
+## `ruby:stretch`
+
+**does not exist** (yet?)
+
+## `ruby:2.4.1-slim-stretch`
+
+**does not exist** (yet?)
+
+## `ruby:2.4-slim-stretch`
+
+**does not exist** (yet?)
+
+## `ruby:2-slim-stretch`
+
+**does not exist** (yet?)
+
+## `ruby:slim-stretch`
+
+**does not exist** (yet?)
 
 ## `ruby:2.4.1-jessie`
 
@@ -1894,6 +1938,22 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Mon, 24 Jul 2017 19:15:25 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ruby:2.4.1-alpine3.6`
+
+**does not exist** (yet?)
+
+## `ruby:2.4-alpine3.6`
+
+**does not exist** (yet?)
+
+## `ruby:2-alpine3.6`
+
+**does not exist** (yet?)
+
+## `ruby:alpine3.6`
+
+**does not exist** (yet?)
 
 ## `ruby:2.4.1-alpine3.4`
 
