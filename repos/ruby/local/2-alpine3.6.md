@@ -1,10 +1,10 @@
-# `ruby:2.4.1-alpine3.4`
+# `ruby:2.4.1-alpine3.6`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6f38f6a9837ff613bbfebf851eed5c13789d57fa3da762bc41f2e21a31ddda68`
-- Created: `2017-07-24T19:11:13.667334312Z`
-- Virtual Size: ~ 61.38 Mb  
+- Image ID: `sha256:8295e15a8346df340dd7b13e2ec5597608c156b1b66468ddd9ff14b110d19070`
+- Created: `2017-08-07T22:52:07.566284189Z`
+- Virtual Size: ~ 87.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`

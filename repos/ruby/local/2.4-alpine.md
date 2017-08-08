@@ -1,4 +1,4 @@
-# `ruby:2.4.1-alpine`
+# `ruby:2.4.1-alpine3.4`
 
 ## Docker Metadata
 

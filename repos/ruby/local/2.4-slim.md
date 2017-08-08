@@ -1,10 +1,10 @@
-# `ruby:2.4.1-slim`
+# `ruby:2.4.1-slim-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:53c498a69cfe96045c851085a786534640cf45809c8587453024993a489cc4a2`
-- Created: `2017-07-24T19:11:04.420215969Z`
-- Virtual Size: ~ 224.05 Mb  
+- Image ID: `sha256:4b5bb79352ebb5c7f1cd0931c4f8c70a0b80fa522cf1781462538cf171974cd2`
+- Created: `2017-08-07T22:49:06.731001632Z`
+- Virtual Size: ~ 224.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
