@@ -1,16 +1,16 @@
-# `composer:1.4.2`
+# `composer:1.4.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:12bf555d0c0800a1e345c8cb1bc2b124f1621f20c14bad1e05e0fb3e41fd79d4`
-- Created: `2017-08-04T22:07:25.047771489Z`
-- Virtual Size: ~ 135.64 Mb  
+- Image ID: `sha256:951c6e62dd1c865ebcd5bee96d1050db11b31526539bb775a447601cf579c12f`
+- Created: `2017-08-08T16:28:56.9641326Z`
+- Virtual Size: ~ 136.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["composer"]`
 - Environment:
-  - `PATH=/composer/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pcre-dev 		pkgconf 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2`
@@ -23,5 +23,5 @@
   - `PHP_SHA256=8943858738604acb33ecedb865d6c4051eeffe4e2d06f3a3c8f794daccaa2aab`
   - `PHP_MD5=`
   - `COMPOSER_ALLOW_SUPERUSER=1`
-  - `COMPOSER_HOME=/composer`
-  - `COMPOSER_VERSION=1.4.2`
+  - `COMPOSER_HOME=/tmp`
+  - `COMPOSER_VERSION=1.4.3`
