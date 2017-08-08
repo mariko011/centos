@@ -1,7 +1,7 @@
 ## `maven:3-ibmjava-8`
 
 ```console
-$ docker pull maven@sha256:f2bd72a209ba045f346c5dc2fae00dea5071048658a295a9f0f5a3ea66230e79
+$ docker pull maven@sha256:cb53c848bb13966b2f1d55142ff9673632e28f7a33c0d90f16e0bcc32645e5e8
 ```
 
 -	Platforms:
@@ -9,11 +9,11 @@ $ docker pull maven@sha256:f2bd72a209ba045f346c5dc2fae00dea5071048658a295a9f0f5a
 
 ### `maven:3-ibmjava-8` - linux; amd64
 
--	Docker Version: 17.03.1-ce
+-	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **240.4 MB (240426638 bytes)**  
+-	Total Size: **240.5 MB (240527388 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:664ae7b511a3414bc64abcf95f14fa178c7ed888ff3a493c8b67485f2cf04e79`
+-	Image ID: `sha256:01a28edaf938cc19051513f00bde7ade43c488e10538248c4235ad33535c126e`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -34,36 +34,36 @@ CMD ["/bin/bash"]
 MAINTAINER Dinakar Guniguntala <dinakar.g@in.ibm.com> (@dinogun)
 # Thu, 20 Jul 2017 19:59:37 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Thu, 20 Jul 2017 19:59:38 GMT
-ENV JAVA_VERSION=1.8.0_sr4fp7
-# Thu, 20 Jul 2017 20:00:58 GMT
-RUN ESUM="c2f223acb3d6dd2fbee4686e4903bac456da2f8898b4c2206c09c26f9239df74"     && BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/"     && YML_FILE="sdk/linux/x86_64/index.yml"     && wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml $BASE_URL/$YML_FILE     && JAVA_URL=$(cat /tmp/index.yml | sed -n '/'$JAVA_VERSION'/{n;p}' | sed -n 's/\s*uri:\s//p' | tr -d '\r')     && wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin $JAVA_URL     && echo "$ESUM  /tmp/ibm-java.bin" | sha256sum -c -     && echo "INSTALLER_UI=silent" > /tmp/response.properties     && echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties     && echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties     && mkdir -p /opt/ibm     && chmod +x /tmp/ibm-java.bin     && /tmp/ibm-java.bin -i silent -f /tmp/response.properties     && rm -f /tmp/response.properties     && rm -f /tmp/index.yml     && rm -f /tmp/ibm-java.bin
-# Thu, 20 Jul 2017 20:00:59 GMT
+# Tue, 08 Aug 2017 16:33:00 GMT
+ENV JAVA_VERSION=1.8.0_sr4fp10
+# Tue, 08 Aug 2017 16:35:44 GMT
+RUN ESUM="d739b201653be2b04e598b19eca9f0dee32baa60c63eb1d10f5623cbef318ddd"     && BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/"     && YML_FILE="sdk/linux/x86_64/index.yml"     && wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml $BASE_URL/$YML_FILE     && JAVA_URL=$(cat /tmp/index.yml | sed -n '/'$JAVA_VERSION'/{n;p}' | sed -n 's/\s*uri:\s//p' | tr -d '\r')     && wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin $JAVA_URL     && echo "$ESUM  /tmp/ibm-java.bin" | sha256sum -c -     && echo "INSTALLER_UI=silent" > /tmp/response.properties     && echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties     && echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties     && mkdir -p /opt/ibm     && chmod +x /tmp/ibm-java.bin     && /tmp/ibm-java.bin -i silent -f /tmp/response.properties     && rm -f /tmp/response.properties     && rm -f /tmp/index.yml     && rm -f /tmp/ibm-java.bin
+# Tue, 08 Aug 2017 16:35:45 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 20 Jul 2017 20:08:20 GMT
+# Tue, 08 Aug 2017 16:53:37 GMT
 ARG MAVEN_VERSION=3.5.0
-# Thu, 20 Jul 2017 20:08:21 GMT
+# Tue, 08 Aug 2017 16:53:37 GMT
 ARG USER_HOME_DIR=/root
-# Thu, 20 Jul 2017 20:08:21 GMT
+# Tue, 08 Aug 2017 16:53:37 GMT
 ARG SHA=beb91419245395bd69a4a6edad5ca3ec1a8b64e41457672dc687c173a495f034
-# Thu, 20 Jul 2017 20:08:22 GMT
+# Tue, 08 Aug 2017 16:53:38 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.5.0/binaries
-# Thu, 20 Jul 2017 20:08:33 GMT
+# Tue, 08 Aug 2017 16:53:52 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.5.0/binaries MAVEN_VERSION=3.5.0 SHA=beb91419245395bd69a4a6edad5ca3ec1a8b64e41457672dc687c173a495f034 USER_HOME_DIR=/root
 RUN apt-get update && apt-get install -y curl   && mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha256sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Thu, 20 Jul 2017 20:08:34 GMT
+# Tue, 08 Aug 2017 16:53:52 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Thu, 20 Jul 2017 20:08:34 GMT
+# Tue, 08 Aug 2017 16:53:52 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Thu, 20 Jul 2017 20:08:35 GMT
+# Tue, 08 Aug 2017 16:53:53 GMT
 COPY file:e4099db07053a2301f4263d416cab324c1f89ee74c752bebec511d8b59464cb6 in /usr/local/bin/mvn-entrypoint.sh 
-# Thu, 20 Jul 2017 20:08:36 GMT
+# Tue, 08 Aug 2017 16:53:53 GMT
 COPY file:b3fc14e8337e0079a4e97eace880b4b7cddc0dc0ea733de80749f78fe1eb089a in /usr/share/maven/ref/ 
-# Thu, 20 Jul 2017 20:08:36 GMT
+# Tue, 08 Aug 2017 16:53:53 GMT
 VOLUME [/root/.m2]
-# Thu, 20 Jul 2017 20:08:37 GMT
+# Tue, 08 Aug 2017 16:53:54 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Thu, 20 Jul 2017 20:08:37 GMT
+# Tue, 08 Aug 2017 16:53:54 GMT
 CMD ["mvn"]
 ```
 
@@ -92,19 +92,19 @@ CMD ["mvn"]
 		Last Modified: Thu, 20 Jul 2017 20:03:07 GMT  
 		Size: 3.1 MB (3070068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f37fc4dfedb79aacfbe44f05e3e095286beb10f959daadac4f6a802d64fecc1a`  
-		Last Modified: Thu, 20 Jul 2017 20:04:18 GMT  
-		Size: 148.5 MB (148531069 bytes)  
+	-	`sha256:ba726d72604f4383c73f34507ded272a6a5208c5220333fb2cea510bde53bef1`  
+		Last Modified: Tue, 08 Aug 2017 16:39:01 GMT  
+		Size: 148.5 MB (148517408 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f238a5cecae0aef69f970154205ccbd18825a42db9acff0ad0590b0a8e8f0d54`  
-		Last Modified: Thu, 20 Jul 2017 20:09:21 GMT  
-		Size: 41.7 MB (41675467 bytes)  
+	-	`sha256:c620985c1e0440279c46fe8e908ae15a29c065c52edacf125791e4d00711b407`  
+		Last Modified: Tue, 08 Aug 2017 16:54:20 GMT  
+		Size: 41.8 MB (41789876 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ab193feceeb3f16bfc336b79a4305b2c09cebeffa848d153cf3620ab0164d51`  
-		Last Modified: Thu, 20 Jul 2017 20:09:17 GMT  
-		Size: 719.0 B  
+	-	`sha256:198fa18068ff42fc392739d51c6b956fa10e37ed848990f00f3ea7b809483413`  
+		Last Modified: Tue, 08 Aug 2017 16:54:14 GMT  
+		Size: 718.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e963ec86a7454e16d20fa7d353366416d5eea3e3bd7c34a2b1f8a64bc6d2b86`  
-		Last Modified: Thu, 20 Jul 2017 20:09:17 GMT  
-		Size: 347.0 B  
+	-	`sha256:404d8b542fbabab7d707a3ae01e3125edf761325508beccedcf3eeedb62be516`  
+		Last Modified: Tue, 08 Aug 2017 16:54:14 GMT  
+		Size: 350.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
