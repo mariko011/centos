@@ -71,19 +71,8 @@ Licenses: (parsed from: `/usr/share/doc/libaprutil1/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apr-util=1.5.4-3
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.5.4-3.dsc' apr-util_1.5.4-3.dsc 2646 SHA256:352bbbdf8d4e18014614d5a92da11b599cd04bb30ee03d9f04f26a75626371c7
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.5.4.orig.tar.bz2' apr-util_1.5.4.orig.tar.bz2 694427 SHA256:a6cf327189ca0df2fb9d5633d7326c460fe2b61684745fd7963e79a6dd0dc82e
-'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.5.4-3.debian.tar.xz' apr-util_1.5.4-3.debian.tar.xz 212220 SHA256:c5e7bfcdafb16104e324ddb6825b94577a57a5b77b809dc0330e38ecab030efa
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apr-util/1.5.4-3/
-- https://sources.debian.net/src/apr-util/1.5.4-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apr=1.5.2-5`
 
@@ -819,18 +808,8 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris debianutils=4.8.1.1
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.1.1.dsc' debianutils_4.8.1.1.dsc 1739 SHA256:506d5e6c18e38831eb45ab1ecc35dd8cc3e931b0fe7367136fb7d42520130a84
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.1.1.tar.xz' debianutils_4.8.1.1.tar.xz 156256 SHA256:06446cd4c0d309fd31a0682c5c2f07f7613fb867f769414b9cc51f155ad73172
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/debianutils/4.8.1.1/
-- https://sources.debian.net/src/debianutils/4.8.1.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `dh-python=2.20170125`
 
@@ -866,19 +845,8 @@ Licenses: (parsed from: `/usr/share/doc/diffutils/copyright`)
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris diffutils=1:3.5-3
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.5-3.dsc' diffutils_3.5-3.dsc 1453 SHA256:8b8e4d9d48ab35fd2c5759a3d0854e7d85c33b3fa09a185c20865793090feff9
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.5.orig.tar.xz' diffutils_3.5.orig.tar.xz 1360996 SHA256:dad398ccd5b9faca6b0ab219a036453f62a602a56203ac659b43e889bec35533
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.5-3.debian.tar.xz' diffutils_3.5-3.debian.tar.xz 10796 SHA256:5c8464482951de1dcf3c1c53643cd7d0939cd8f7568a7ef84982d368c5cb6695
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/diffutils/1:3.5-3/
-- https://sources.debian.net/src/diffutils/1:3.5-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `djvulibre=3.5.27.1-7`
 
@@ -1001,19 +969,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris expat=2.2.2-2
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.2-2.dsc' expat_2.2.2-2.dsc 2299 SHA256:766182e6c0f364387bb3497855a74ffe876bec399247940a29242601ac942c5d
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.2.orig.tar.bz2' expat_2.2.2.orig.tar.bz2 405561 SHA256:4376911fcf81a23ebd821bbabc26fd933f3ac74833f74924342c29aad2c86046
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.2-2.debian.tar.xz' expat_2.2.2-2.debian.tar.xz 10592 SHA256:5c1423bc1b8049d434daa88a381748bb26e5616510ff9c742204521178e55875
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/expat/2.2.2-2/
-- https://sources.debian.net/src/expat/2.2.2-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `explorercanvas=0.r3-4`
 
@@ -1079,19 +1036,8 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 - `MIT-Old-Style-with-legal-disclaimer-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris file=1:5.30-1
-'http://deb.debian.org/debian/pool/main/f/file/file_5.30-1.dsc' file_5.30-1.dsc 2124 SHA256:685de7e2b71f8cbc22675638be6bb59aa6224d11a8ee90447062950598abebe2
-'http://deb.debian.org/debian/pool/main/f/file/file_5.30.orig.tar.xz' file_5.30.orig.tar.xz 578628 SHA256:813feaa00da67897b652aa2f0bdeba46f1a265223071a3ea0591476b4e1b0291
-'http://deb.debian.org/debian/pool/main/f/file/file_5.30-1.debian.tar.xz' file_5.30-1.debian.tar.xz 39192 SHA256:0b838e0467d6e0d738395f8a21e20040f8b3b114abf5d3e2329f954f7c11666a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/file/1:5.30-1/
-- https://sources.debian.net/src/file/1:5.30-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20170606-3`
 
@@ -1104,19 +1050,8 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `GFDL-1.3`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris findutils=4.6.0+git+20170606-3
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20170606-3.dsc' findutils_4.6.0+git+20170606-3.dsc 2220 SHA256:b66f2dddfca6de0b05d18c0a0f9a36d7fc24ef87f2f1926a6df9bde914f390cc
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20170606.orig.tar.xz' findutils_4.6.0+git+20170606.orig.tar.xz 1851080 SHA256:d6bddd283a5a6688a0f0806eb349ea06c15ff0849bfb627329b136e2c9e9e5a6
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20170606-3.debian.tar.xz' findutils_4.6.0+git+20170606-3.debian.tar.xz 27052 SHA256:ae46597a3f6ec2231adb0e6466d88f63acff4892b087980ff4c4a8e460a574fd
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/findutils/4.6.0+git+20170606-3/
-- https://sources.debian.net/src/findutils/4.6.0+git+20170606-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `fontconfig=2.12.3-0.2`
 
@@ -1296,18 +1231,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.168d1
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.168d1.dsc' gcc-defaults_1.168d1.dsc 13181 SHA256:aabdf066698066da04b85b92ccbb2b5f0f8b1f80068f33602ac983fc2d981519
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.168d1.tar.gz' gcc-defaults_1.168d1.tar.gz 69487 SHA256:f31256393cca881a6d46361f80e24a145d5b7d6ebf008faae1fbfcf921cd4827
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-defaults/1.168d1/
-- https://sources.debian.net/src/gcc-defaults/1.168d1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gdbm=1.8.3-14`
 
@@ -2764,19 +2689,8 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `expat`
 - `libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.30-2
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.30-2.dsc' libpng1.6_1.6.30-2.dsc 2188 SHA256:6f778d2e59fc66aaca420c2b68b49267c79255fc3c701ff527e3f3ce98526b5d
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.30.orig.tar.xz' libpng1.6_1.6.30.orig.tar.xz 988608 SHA256:267c332ffff70cc599d3929207869f698798f1df143aa5f9597b007c14353666
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.30-2.debian.tar.xz' libpng1.6_1.6.30-2.debian.tar.xz 22844 SHA256:8daa2a3bcd3cc5300d0afe86ca95feffd266dc80c41d252f2c651973198e319f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libpng1.6/1.6.30-2/
-- https://sources.debian.net/src/libpng1.6/1.6.30-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpsl=0.17.0-5`
 
@@ -3114,19 +3028,8 @@ Licenses: (parsed from: `/usr/share/doc/libwebp-dev/copyright`, `/usr/share/doc/
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libwebp=0.5.2-1
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_0.5.2-1.dsc' libwebp_0.5.2-1.dsc 2065 SHA256:307e845401cbfa71a0b32c213046cca0253a66c4ca71a9bc126ff65ee2bee1c1
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_0.5.2.orig.tar.gz' libwebp_0.5.2.orig.tar.gz 1221153 SHA256:b75310c810b3eda222c77f6d6c26b061240e3d9060095de44b2c1bae291ecdef
-'http://deb.debian.org/debian/pool/main/libw/libwebp/libwebp_0.5.2-1.debian.tar.xz' libwebp_0.5.2-1.debian.tar.xz 5404 SHA256:0b7b36a7212e9bbeba5c61bbf3c78ca08f96e700058fbc9ea6835050e1936448
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libwebp/0.5.2-1/
-- https://sources.debian.net/src/libwebp/0.5.2-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libwmf=0.2.8.4-11`
 
