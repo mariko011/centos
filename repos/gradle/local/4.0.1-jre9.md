@@ -81,19 +81,8 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.11.0-6
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0-6.dsc' apparmor_2.11.0-6.dsc 3121 SHA256:e8d385efc2caabd2ee2d3c42aff09ffa07b56e45e6c2cd7614575d19c0bcef5c
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0.orig.tar.gz' apparmor_2.11.0.orig.tar.gz 5013297 SHA256:b1c489ea11e7771b8e6b181532cafbf9ebe6603e3cb00e2558f21b7a5bdd739a
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0-6.debian.tar.xz' apparmor_2.11.0-6.debian.tar.xz 87464 SHA256:9846882375d9e224c804819cdb638accb8767f322983b0cfdfb89fedd09eaa28
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apparmor/2.11.0-6/
-- https://sources.debian.net/src/apparmor/2.11.0-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apt=1.5~beta1`
 
@@ -603,18 +592,8 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris debianutils=4.8.1.1
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.1.1.dsc' debianutils_4.8.1.1.dsc 1739 SHA256:506d5e6c18e38831eb45ab1ecc35dd8cc3e931b0fe7367136fb7d42520130a84
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.1.1.tar.xz' debianutils_4.8.1.1.tar.xz 156256 SHA256:06446cd4c0d309fd31a0682c5c2f07f7613fb867f769414b9cc51f155ad73172
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/debianutils/4.8.1.1/
-- https://sources.debian.net/src/debianutils/4.8.1.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `diffutils=1:3.5-3`
 
@@ -627,19 +606,8 @@ Licenses: (parsed from: `/usr/share/doc/diffutils/copyright`)
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris diffutils=1:3.5-3
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.5-3.dsc' diffutils_3.5-3.dsc 1453 SHA256:8b8e4d9d48ab35fd2c5759a3d0854e7d85c33b3fa09a185c20865793090feff9
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.5.orig.tar.xz' diffutils_3.5.orig.tar.xz 1360996 SHA256:dad398ccd5b9faca6b0ab219a036453f62a602a56203ac659b43e889bec35533
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.5-3.debian.tar.xz' diffutils_3.5-3.debian.tar.xz 10796 SHA256:5c8464482951de1dcf3c1c53643cd7d0939cd8f7568a7ef84982d368c5cb6695
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/diffutils/1:3.5-3/
-- https://sources.debian.net/src/diffutils/1:3.5-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `dpkg=1.18.24`
 
@@ -733,19 +701,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris expat=2.2.2-2
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.2-2.dsc' expat_2.2.2-2.dsc 2299 SHA256:766182e6c0f364387bb3497855a74ffe876bec399247940a29242601ac942c5d
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.2.orig.tar.bz2' expat_2.2.2.orig.tar.bz2 405561 SHA256:4376911fcf81a23ebd821bbabc26fd933f3ac74833f74924342c29aad2c86046
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.2-2.debian.tar.xz' expat_2.2.2-2.debian.tar.xz 10592 SHA256:5c1423bc1b8049d434daa88a381748bb26e5616510ff9c742204521178e55875
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/expat/2.2.2-2/
-- https://sources.debian.net/src/expat/2.2.2-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20170606-3`
 
@@ -758,19 +715,8 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 - `GFDL-1.3`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris findutils=4.6.0+git+20170606-3
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20170606-3.dsc' findutils_4.6.0+git+20170606-3.dsc 2220 SHA256:b66f2dddfca6de0b05d18c0a0f9a36d7fc24ef87f2f1926a6df9bde914f390cc
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20170606.orig.tar.xz' findutils_4.6.0+git+20170606.orig.tar.xz 1851080 SHA256:d6bddd283a5a6688a0f0806eb349ea06c15ff0849bfb627329b136e2c9e9e5a6
-'http://deb.debian.org/debian/pool/main/f/findutils/findutils_4.6.0+git+20170606-3.debian.tar.xz' findutils_4.6.0+git+20170606-3.debian.tar.xz 27052 SHA256:ae46597a3f6ec2231adb0e6466d88f63acff4892b087980ff4c4a8e460a574fd
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/findutils/4.6.0+git+20170606-3/
-- https://sources.debian.net/src/findutils/4.6.0+git+20170606-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `freetype=2.8-0.2`
 
@@ -1543,19 +1489,8 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 - `expat`
 - `libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.30-2
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.30-2.dsc' libpng1.6_1.6.30-2.dsc 2188 SHA256:6f778d2e59fc66aaca420c2b68b49267c79255fc3c701ff527e3f3ce98526b5d
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.30.orig.tar.xz' libpng1.6_1.6.30.orig.tar.xz 988608 SHA256:267c332ffff70cc599d3929207869f698798f1df143aa5f9597b007c14353666
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.30-2.debian.tar.xz' libpng1.6_1.6.30-2.debian.tar.xz 22844 SHA256:8daa2a3bcd3cc5300d0afe86ca95feffd266dc80c41d252f2c651973198e319f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libpng1.6/1.6.30-2/
-- https://sources.debian.net/src/libpng1.6/1.6.30-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpsl=0.17.0-5`
 
@@ -2200,19 +2135,8 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openjdk-9=9~b179-2
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b179-2.dsc' openjdk-9_9~b179-2.dsc 4494 SHA256:5f577d18bafefa3fcec072b6fe10d5e686d9dbe3cca2e52d5c65d0c7966e8b91
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b179.orig.tar.gz' openjdk-9_9~b179.orig.tar.gz 74693298 SHA256:b8eb587f5a55c3067fc52f13d2074302e0d13078778a68a09efc63aedb4dc900
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b179-2.debian.tar.xz' openjdk-9_9~b179-2.debian.tar.xz 195388 SHA256:771ae0fc271e92e900a6b9f2dd3282d53cdd69f9f66642a127631c4471831bb8
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openjdk-9/9~b179-2/
-- https://sources.debian.net/src/openjdk-9/9~b179-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-8`
 
