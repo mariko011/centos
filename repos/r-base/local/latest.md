@@ -767,19 +767,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris expat=2.2.2-2
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.2-2.dsc' expat_2.2.2-2.dsc 2299 SHA256:766182e6c0f364387bb3497855a74ffe876bec399247940a29242601ac942c5d
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.2.orig.tar.bz2' expat_2.2.2.orig.tar.bz2 405561 SHA256:4376911fcf81a23ebd821bbabc26fd933f3ac74833f74924342c29aad2c86046
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.2-2.debian.tar.xz' expat_2.2.2-2.debian.tar.xz 10592 SHA256:5c1423bc1b8049d434daa88a381748bb26e5616510ff9c742204521178e55875
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/expat/2.2.2-2/
-- https://sources.debian.net/src/expat/2.2.2-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20170606-3`
 
@@ -932,14 +921,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp-6/copyright`, `/usr/share/doc/g++-6/
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-6=6.4.0-2
-'http://http.debian.net/debian/pool/main/g/gcc-6/gcc-6_6.4.0-2.dsc' gcc-6_6.4.0-2.dsc 19452 SHA256:92c4ca8bb2f3de4beaed3d9bed243daef10c1d257fb5399d7f4597830ddc497d
-'http://http.debian.net/debian/pool/main/g/gcc-6/gcc-6_6.4.0.orig.tar.gz' gcc-6_6.4.0.orig.tar.gz 81632257 SHA256:13220c723ddb7a69ff5690070b245886ac99afe5a31ee106ac36d6f013234a67
-'http://http.debian.net/debian/pool/main/g/gcc-6/gcc-6_6.4.0-2.diff.gz' gcc-6_6.4.0-2.diff.gz 1649991 SHA256:b66c0cc787af17a495c4c067131dc4179b990294be85259d4d8fbc4eacdde77a
-```
 
 ### `dpkg` source package: `gcc-7=7.1.0-10`
 
@@ -1042,19 +1025,8 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.52.3-1
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.52.3-1.dsc' glib2.0_2.52.3-1.dsc 3320 SHA256:ffed422d3c3b3ff9be88c667f4dd30324c6d5a9d6ccc95d3bb852ae40efb2286
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.52.3.orig.tar.xz' glib2.0_2.52.3.orig.tar.xz 7679972 SHA256:25ee7635a7c0fcd4ec91cbc3ae07c7f8f5ce621d8183511f414ded09e7e4e128
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.52.3-1.debian.tar.xz' glib2.0_2.52.3-1.debian.tar.xz 70288 SHA256:dceaa909d42fee6777d6cd4077cab800f0e1e2cc962a7a5427ea3c1bd4a7b072
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/glib2.0/2.52.3-1/
-- https://sources.debian.net/src/glib2.0/2.52.3-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.24-12`
 
@@ -2956,15 +2928,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris perl=5.26.0-4
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.0-4.dsc' perl_5.26.0-4.dsc 2365 SHA256:ae0b8e0dfd9c85f94dea61d4e381e0367a4b59f87f57915362e775d8093a0ab0
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.0.orig.tar.xz' perl_5.26.0.orig.tar.xz 11961692 SHA256:9bf2e3d0d72aad77865c3bdbc20d3b576d769c5c255c4ceb30fdb9335266bf55
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.26.0-4.debian.tar.xz' perl_5.26.0-4.debian.tar.xz 159000 SHA256:e488f2ffc0e0a848452d44f87a809b1c45fbc6aa9dcce53e6902ff26d6e93a21
+'http://http.debian.net/debian/pool/main/p/perl/perl_5.26.0-4.dsc' perl_5.26.0-4.dsc 2365 SHA256:ae0b8e0dfd9c85f94dea61d4e381e0367a4b59f87f57915362e775d8093a0ab0
+'http://http.debian.net/debian/pool/main/p/perl/perl_5.26.0.orig.tar.xz' perl_5.26.0.orig.tar.xz 11961692 SHA256:9bf2e3d0d72aad77865c3bdbc20d3b576d769c5c255c4ceb30fdb9335266bf55
+'http://http.debian.net/debian/pool/main/p/perl/perl_5.26.0-4.debian.tar.xz' perl_5.26.0-4.debian.tar.xz 159000 SHA256:e488f2ffc0e0a848452d44f87a809b1c45fbc6aa9dcce53e6902ff26d6e93a21
 ```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/perl/5.26.0-4/
-- https://sources.debian.net/src/perl/5.26.0-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `pixman=0.34.0-1`
 
