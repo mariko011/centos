@@ -1,7 +1,7 @@
 ## `tomcat:8-alpine`
 
 ```console
-$ docker pull tomcat@sha256:4aea2f7e65af82c5a639db9c78ac06000059d81a428da061add3a1fa6e9743c0
+$ docker pull tomcat@sha256:638c5b3a7e9e50a6ba3197262e588f611acd51dfc766c4bf73f79ba09c790718
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull tomcat@sha256:4aea2f7e65af82c5a639db9c78ac06000059d81a428da061add3
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **73.4 MB (73447432 bytes)**  
+-	Total Size: **73.5 MB (73459647 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4560891aa934ddd88146725ae1e28ed0917f27d4b9bc85e458f8f9b8fa8fa1d8`
+-	Image ID: `sha256:07a52cc3c9e4449e5b5ea0478e624b65d51be1892c7412ae94304ac561b6d3e7`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -55,19 +55,23 @@ ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E626
 RUN set -ex; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Thu, 29 Jun 2017 00:19:17 GMT
 ENV TOMCAT_MAJOR=8
-# Fri, 30 Jun 2017 17:19:49 GMT
-ENV TOMCAT_VERSION=8.5.16
-# Fri, 30 Jun 2017 17:19:50 GMT
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.16/bin/apache-tomcat-8.5.16.tar.gz
-# Fri, 30 Jun 2017 17:19:51 GMT
-ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.5.16/bin/apache-tomcat-8.5.16.tar.gz.asc
-# Fri, 04 Aug 2017 18:33:28 GMT
-RUN set -x 		&& apk add --no-cache --virtual .fetch-deps 		ca-certificates 		tar 		openssl 	&& wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 	&& wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& apk add --no-cache --virtual .native-build-deps 		apr-dev 		coreutils 		dpkg-dev dpkg 		gcc 		libc-dev 		make 		"openjdk${JAVA_VERSION%%[-~bu]*}"="$JAVA_ALPINE_VERSION" 		openssl-dev 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 		&& ./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j "$(nproc)" 		&& make install 	) 	&& runDeps="$( 		scanelf --needed --nobanner --recursive "$TOMCAT_NATIVE_LIBDIR" 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .tomcat-native-rundeps $runDeps 	&& apk del .fetch-deps .native-build-deps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz 	&& apk add --no-cache bash 	&& find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
-# Fri, 04 Aug 2017 18:33:35 GMT
+# Wed, 09 Aug 2017 21:59:42 GMT
+ENV TOMCAT_VERSION=8.5.20
+# Wed, 09 Aug 2017 21:59:42 GMT
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.tar.gz
+# Wed, 09 Aug 2017 21:59:42 GMT
+ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.tar.gz.asc
+# Wed, 09 Aug 2017 21:59:43 GMT
+ENV TOMCAT_TGZ_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.tar.gz
+# Wed, 09 Aug 2017 21:59:43 GMT
+ENV TOMCAT_ASC_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.tar.gz.asc
+# Wed, 09 Aug 2017 22:00:01 GMT
+RUN set -x 		&& apk add --no-cache --virtual .fetch-deps 		ca-certificates 		tar 		openssl 	&& { 		wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 		|| wget -O tomcat.tar.gz "$TOMCAT_TGZ_FALLBACK_URL" 	; } 	&& { 		wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 		|| wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_FALLBACK_URL" 	; } 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& apk add --no-cache --virtual .native-build-deps 		apr-dev 		coreutils 		dpkg-dev dpkg 		gcc 		libc-dev 		make 		"openjdk${JAVA_VERSION%%[-~bu]*}"="$JAVA_ALPINE_VERSION" 		openssl-dev 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 		&& ./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j "$(nproc)" 		&& make install 	) 	&& runDeps="$( 		scanelf --needed --nobanner --recursive "$TOMCAT_NATIVE_LIBDIR" 			| awk '{ gsub(/,/, "\nso:", $2); print "so:" $2 }' 			| sort -u 			| xargs -r apk info --installed 			| sort -u 	)" 	&& apk add --virtual .tomcat-native-rundeps $runDeps 	&& apk del .fetch-deps .native-build-deps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz 	&& apk add --no-cache bash 	&& find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
+# Wed, 09 Aug 2017 22:00:06 GMT
 RUN set -e 	&& nativeLines="$(catalina.sh configtest 2>&1)" 	&& nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')" 	&& nativeLines="$(echo "$nativeLines" | sort -u)" 	&& if ! echo "$nativeLines" | grep 'INFO: Loaded APR based Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Fri, 04 Aug 2017 18:33:36 GMT
+# Wed, 09 Aug 2017 22:00:06 GMT
 EXPOSE 8080/tcp
-# Fri, 04 Aug 2017 18:33:36 GMT
+# Wed, 09 Aug 2017 22:00:07 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -96,11 +100,11 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Fri, 30 Jun 2017 17:48:20 GMT  
 		Size: 112.5 KB (112544 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:170e17a4a6e014056f11680ee840045c6fc827795ecdf4e721d0d3b68bb4e9c6`  
-		Last Modified: Fri, 04 Aug 2017 18:43:49 GMT  
-		Size: 12.6 MB (12647412 bytes)  
+	-	`sha256:10128998c7e29022c3869dc559a43cd9dae5e6ac853be7344c86a8c25a404c57`  
+		Last Modified: Wed, 09 Aug 2017 22:56:18 GMT  
+		Size: 12.7 MB (12659627 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:390798bf378a37258a8b90cadcb5daed92acaca352c9551474ed2bb7b645a1c2`  
-		Last Modified: Fri, 04 Aug 2017 18:43:45 GMT  
+	-	`sha256:71ffbf4ab83545fd51808fe0537c810ac6538d063519f21f60baf8becb02e941`  
+		Last Modified: Wed, 09 Aug 2017 22:56:16 GMT  
 		Size: 133.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
