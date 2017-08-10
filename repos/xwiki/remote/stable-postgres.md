@@ -1,7 +1,7 @@
 ## `xwiki:stable-postgres`
 
 ```console
-$ docker pull xwiki@sha256:0390f713b6a3a9528ff856d52f452453fa50bc05dff4600b7232fc63a1262509
+$ docker pull xwiki@sha256:ec4b3a8e47b2594a342155622683b0b99721284541a0d7ff869476568028aa66
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull xwiki@sha256:0390f713b6a3a9528ff856d52f452453fa50bc05dff4600b7232f
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **590.1 MB (590088662 bytes)**  
+-	Total Size: **590.1 MB (590101805 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:457b38924787367129ae1242c0cc788fb9e4394f2d1769a659ae13a5d8ca63e3`
+-	Image ID: `sha256:f5227f41d2902548a3bd9e0c5fb5ffa06f44cdfae2256b8f11c17cfd1320c00d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -70,47 +70,51 @@ ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E626
 RUN set -ex; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Thu, 27 Jul 2017 20:35:59 GMT
 ENV TOMCAT_MAJOR=8
-# Thu, 27 Jul 2017 20:36:50 GMT
-ENV TOMCAT_VERSION=8.5.16
-# Thu, 27 Jul 2017 20:36:50 GMT
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.16/bin/apache-tomcat-8.5.16.tar.gz
-# Thu, 27 Jul 2017 20:36:51 GMT
-ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.5.16/bin/apache-tomcat-8.5.16.tar.gz.asc
-# Fri, 04 Aug 2017 18:32:45 GMT
-RUN set -x 		&& wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 	&& wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 		&& ./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j "$(nproc)" 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz 	&& find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
-# Fri, 04 Aug 2017 18:32:54 GMT
+# Wed, 09 Aug 2017 21:58:39 GMT
+ENV TOMCAT_VERSION=8.5.20
+# Wed, 09 Aug 2017 21:58:39 GMT
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.tar.gz
+# Wed, 09 Aug 2017 21:58:40 GMT
+ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.tar.gz.asc
+# Wed, 09 Aug 2017 21:58:40 GMT
+ENV TOMCAT_TGZ_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.tar.gz
+# Wed, 09 Aug 2017 21:58:40 GMT
+ENV TOMCAT_ASC_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.tar.gz.asc
+# Wed, 09 Aug 2017 21:59:28 GMT
+RUN set -x 		&& { 		wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 		|| wget -O tomcat.tar.gz "$TOMCAT_TGZ_FALLBACK_URL" 	; } 	&& { 		wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 		|| wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_FALLBACK_URL" 	; } 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 		&& ./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j "$(nproc)" 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz 	&& find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
+# Wed, 09 Aug 2017 21:59:31 GMT
 RUN set -e 	&& nativeLines="$(catalina.sh configtest 2>&1)" 	&& nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')" 	&& nativeLines="$(echo "$nativeLines" | sort -u)" 	&& if ! echo "$nativeLines" | grep 'INFO: Loaded APR based Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Fri, 04 Aug 2017 18:32:54 GMT
+# Wed, 09 Aug 2017 21:59:31 GMT
 EXPOSE 8080/tcp
-# Fri, 04 Aug 2017 18:32:54 GMT
+# Wed, 09 Aug 2017 21:59:31 GMT
 CMD ["catalina.sh" "run"]
-# Fri, 04 Aug 2017 19:11:23 GMT
+# Thu, 10 Aug 2017 18:19:00 GMT
 MAINTAINER Vincent Massol <vincent@massol.net>
-# Fri, 04 Aug 2017 19:53:06 GMT
+# Thu, 10 Aug 2017 18:22:22 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     libpostgresql-jdbc-java &&   rm -rf /var/lib/apt/lists/*
-# Mon, 07 Aug 2017 17:15:46 GMT
+# Thu, 10 Aug 2017 18:25:05 GMT
 ENV XWIKI_VERSION=9.6
-# Mon, 07 Aug 2017 17:15:46 GMT
+# Thu, 10 Aug 2017 18:25:06 GMT
 ENV XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/9.6
-# Mon, 07 Aug 2017 17:15:46 GMT
+# Thu, 10 Aug 2017 18:25:06 GMT
 ENV XWIKI_DOWNLOAD_SHA256=e702fc39a957d3567423ea91a5212c57b1c8c2fabe76a5b0f59e215b013cdb4c
-# Mon, 07 Aug 2017 17:16:51 GMT
+# Thu, 10 Aug 2017 18:26:01 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war
-# Mon, 07 Aug 2017 17:16:54 GMT
+# Thu, 10 Aug 2017 18:26:03 GMT
 RUN cp /usr/share/java/postgresql-jdbc4.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib/
-# Mon, 07 Aug 2017 17:16:54 GMT
+# Thu, 10 Aug 2017 18:26:03 GMT
 COPY file:a5eb2bffb2fd9cdddac5e77040b6f670c8dd62aa8af8ea010e4a65f2291ae6ab in /usr/local/tomcat/bin/ 
-# Mon, 07 Aug 2017 17:16:55 GMT
+# Thu, 10 Aug 2017 18:26:04 GMT
 COPY file:7a0ce36c7348308f7754e7d70a4cad74b1c6a11e342ab82fe6e57f1bef38e533 in /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml 
-# Mon, 07 Aug 2017 17:16:55 GMT
+# Thu, 10 Aug 2017 18:26:04 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'     /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed
-# Mon, 07 Aug 2017 17:16:56 GMT
+# Thu, 10 Aug 2017 18:26:05 GMT
 COPY file:f3306bda1e0f4ecdd437f18c3a3736adebb8e117bca1b8ecddf32974aba23fe8 in /usr/local/bin/docker-entrypoint.sh 
-# Mon, 07 Aug 2017 17:16:56 GMT
+# Thu, 10 Aug 2017 18:26:08 GMT
 VOLUME [/usr/local/xwiki]
-# Mon, 07 Aug 2017 17:16:57 GMT
+# Thu, 10 Aug 2017 18:26:09 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 07 Aug 2017 17:16:57 GMT
+# Thu, 10 Aug 2017 18:26:09 GMT
 CMD ["xwiki"]
 ```
 
@@ -159,39 +163,39 @@ CMD ["xwiki"]
 		Last Modified: Thu, 27 Jul 2017 20:40:45 GMT  
 		Size: 112.3 KB (112272 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e4baeac59d4bc6672119b9da3689fe51391af2dcbebe05fb872824877c8a2d71`  
-		Last Modified: Fri, 04 Aug 2017 18:42:50 GMT  
-		Size: 10.1 MB (10080891 bytes)  
+	-	`sha256:e87d3364488bf59f06473f6d41f0094c2f458c1065c50c794b758662fb380a9f`  
+		Last Modified: Wed, 09 Aug 2017 22:55:20 GMT  
+		Size: 10.1 MB (10093382 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:52da60bb1e3e31a0d3113dca978866098f7f0e8165b1aed35b1b45b2962456c4`  
-		Last Modified: Fri, 04 Aug 2017 18:42:48 GMT  
-		Size: 131.0 B  
+	-	`sha256:8ecc2c0915f9833bc3bcbde518eb6b36b839077ea79451420e5e5588a6dc8847`  
+		Last Modified: Wed, 09 Aug 2017 22:55:19 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b7367ab32737961251c8f79b464951f9df8375974e33ba28ba8cdd9c6d3550f`  
-		Last Modified: Fri, 04 Aug 2017 19:58:55 GMT  
-		Size: 216.0 MB (215983433 bytes)  
+	-	`sha256:15f9e7a9e2e070ce5c30a3b378fab99d32bf6af31310efa88ddb71a982100027`  
+		Last Modified: Thu, 10 Aug 2017 18:29:19 GMT  
+		Size: 216.0 MB (215984052 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:029f151ab10762ae198e562d582f93e391894dc0a2f5ae66f2a930185910dcff`  
-		Last Modified: Mon, 07 Aug 2017 17:22:51 GMT  
-		Size: 246.9 MB (246891547 bytes)  
+	-	`sha256:81907df8baa1c0855d86733fc58ae8313820e56c4213323669aec2d35dbe1981`  
+		Last Modified: Thu, 10 Aug 2017 18:31:51 GMT  
+		Size: 246.9 MB (246891588 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eeaf69ba316cbedb2b86217b19cc74c40809002b72b464a9e6165ce8b6ddfaab`  
-		Last Modified: Mon, 07 Aug 2017 17:22:25 GMT  
-		Size: 618.8 KB (618840 bytes)  
+	-	`sha256:057ce2bc9b6721e682197f37bbd940009d0e6ddab7fa39a18196173cc845380b`  
+		Last Modified: Thu, 10 Aug 2017 18:31:31 GMT  
+		Size: 618.8 KB (618834 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f211e97989527fc80586576324ffd9478532e15119da814fc442ce893a142bf4`  
-		Last Modified: Mon, 07 Aug 2017 17:22:25 GMT  
-		Size: 251.0 B  
+	-	`sha256:6497df274544a8eb48e5f485240f25dad3ee48fddac81dc5c4402a98be416434`  
+		Last Modified: Thu, 10 Aug 2017 18:31:25 GMT  
+		Size: 250.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b8e01319c54d4cf8c2cec9377117df46c3893edba2e469a39333ebac5740634d`  
-		Last Modified: Mon, 07 Aug 2017 17:22:24 GMT  
+	-	`sha256:0a9ac508c9adc5dcac5982f9f321770de9ee2b34e9eefae6ec66bb2b4353bfd1`  
+		Last Modified: Thu, 10 Aug 2017 18:31:25 GMT  
 		Size: 2.4 KB (2409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e709b65dfd87b405f53dd76e8d7b3288bcfe00cefe474477627238204070d2f6`  
-		Last Modified: Mon, 07 Aug 2017 17:22:25 GMT  
+	-	`sha256:972a3e85bf050f9f3eb77deb6b8142b7deca1b17452b7e6c076b7cf696e2a510`  
+		Last Modified: Thu, 10 Aug 2017 18:31:25 GMT  
 		Size: 3.4 KB (3401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7271f33c682f1db7971c781eb0bad55031bad8aa3a8a30a65f9a8c63d43ef09`  
-		Last Modified: Mon, 07 Aug 2017 17:22:24 GMT  
-		Size: 1.7 KB (1686 bytes)  
+	-	`sha256:14518cdc659b4ea067e90ce8fc0f8526e2be676eaf622e4e3499f452be85c1ba`  
+		Last Modified: Thu, 10 Aug 2017 18:31:25 GMT  
+		Size: 1.7 KB (1688 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
