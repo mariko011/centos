@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ae0b77161558d00ce170862b44563c120c0d784da6a14f3cfe76c1043a78943d`
-- Created: `2017-08-04T19:53:48.646874924Z`
+- Image ID: `sha256:ebf34d11dec98f5f67b178a511665574e06854abe7e87badb4a7e0ff980cdae9`
+- Created: `2017-08-10T18:23:28.079140548Z`
 - Virtual Size: ~ 1.17 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,9 +22,11 @@
   - `OPENSSL_VERSION=1.1.0f-3`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.5.16`
-  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.16/bin/apache-tomcat-8.5.16.tar.gz`
-  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.5.16/bin/apache-tomcat-8.5.16.tar.gz.asc`
+  - `TOMCAT_VERSION=8.5.20`
+  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.tar.gz`
+  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.tar.gz.asc`
+  - `TOMCAT_TGZ_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.tar.gz`
+  - `TOMCAT_ASC_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.tar.gz.asc`
   - `XWIKI_VERSION=8.4.5`
   - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/enterprise/xwiki-enterprise-web/8.4.5`
   - `XWIKI_DOWNLOAD_SHA256=52ed122c44984748a729a784c94cb70ccf0d2fa34c2340d0fd45c75deb3b0bc9`
@@ -3460,12 +3462,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libsm/2:1.2.2-1/
 - https://sources.debian.net/src/libsm/2:1.2.2-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libsoup2.4=2.56.0-2`
+### `dpkg` source package: `libsoup2.4=2.56.0-2+deb9u1`
 
 Binary Packages:
 
-- `libsoup-gnome2.4-1:amd64=2.56.0-2`
-- `libsoup2.4-1:amd64=2.56.0-2`
+- `libsoup-gnome2.4-1:amd64=2.56.0-2+deb9u1`
+- `libsoup2.4-1:amd64=2.56.0-2+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libsoup-gnome2.4-1/copyright`, `/usr/share/doc/libsoup2.4-1/copyright`)
 
@@ -3475,16 +3477,16 @@ Licenses: (parsed from: `/usr/share/doc/libsoup-gnome2.4-1/copyright`, `/usr/sha
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libsoup2.4=2.56.0-2
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.56.0-2.dsc' libsoup2.4_2.56.0-2.dsc 2706 SHA256:6c69314cc9b5ea11e9fb9cc58d724368b4c4e8efeb17abc4deae427ccb49a46d
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.56.0.orig.tar.xz' libsoup2.4_2.56.0.orig.tar.xz 1821412 SHA256:d8216b71de8247bc6f274ec054c08547b2e04369c1f8add713e9350c8ef81fe5
-'http://deb.debian.org/debian/pool/main/libs/libsoup2.4/libsoup2.4_2.56.0-2.debian.tar.xz' libsoup2.4_2.56.0-2.debian.tar.xz 18956 SHA256:4cf9795dd3bb7992d10e161f740b62c2894164ba6fde0429580b3ef8187a6eeb
+$ apt-get source -qq --print-uris libsoup2.4=2.56.0-2+deb9u1
+'http://security.debian.org/pool/updates/main/libs/libsoup2.4/libsoup2.4_2.56.0-2+deb9u1.dsc' libsoup2.4_2.56.0-2+deb9u1.dsc 2889 SHA256:58af1b03d44a2a05d710f27564c68552937eb3141dd3c5b601f908dad36a1a99
+'http://security.debian.org/pool/updates/main/libs/libsoup2.4/libsoup2.4_2.56.0.orig.tar.xz' libsoup2.4_2.56.0.orig.tar.xz 1821412 SHA256:d8216b71de8247bc6f274ec054c08547b2e04369c1f8add713e9350c8ef81fe5
+'http://security.debian.org/pool/updates/main/libs/libsoup2.4/libsoup2.4_2.56.0-2+deb9u1.debian.tar.xz' libsoup2.4_2.56.0-2+deb9u1.debian.tar.xz 19592 SHA256:ae39ccfa0f7849b7b081c9b009e852925c3c22e4f0e954fd24d555002da79253
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libsoup2.4/2.56.0-2/
-- https://sources.debian.net/src/libsoup2.4/2.56.0-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libsoup2.4/2.56.0-2+deb9u1/
+- https://sources.debian.net/src/libsoup2.4/2.56.0-2+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libssh2=1.7.0-1`
 
