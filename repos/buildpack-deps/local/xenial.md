@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:22c83bed05a2138dde1ff3c1bfe224bfe807347c2d7bc70f16ea8de8fb916a46`
-- Created: `2017-07-20T17:51:50.677251898Z`
-- Virtual Size: ~ 639.94 Mb  
+- Image ID: `sha256:66b0d570656d32b7b600cc9698fc2a57d8682ac5ad7c873483b67fef618d427b`
+- Created: `2017-08-10T20:50:10.131649763Z`
+- Virtual Size: ~ 640.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -112,20 +112,25 @@ $ apt-get source -qq --print-uris apr=1.5.2-3
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.5.2-3.debian.tar.xz' apr_1.5.2-3.debian.tar.xz 18572 SHA256:442ffb9a7225cf405fe7a2b4a4624543fcb93e6f14cccf22acd57916cfa8348d
 ```
 
-### `dpkg` source package: `apt=1.2.20`
+### `dpkg` source package: `apt=1.2.24`
 
 Binary Packages:
 
-- `apt=1.2.20`
-- `libapt-pkg5.0:amd64=1.2.20`
+- `apt=1.2.24`
+- `libapt-pkg5.0:amd64=1.2.24`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=1.2.24
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.24.dsc' apt_1.2.24.dsc 2392 SHA256:0032051ffe7a495c6c7fed449c3f465d0cb05aaeb53667ec7834c7566cef1ccd
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.24.tar.xz' apt_1.2.24.tar.xz 2059044 SHA256:fa1311a9ce00e72379a0a3bc6d240ba30c0968cfbbb3472859e50b99e24e9598
+```
 
 ### `dpkg` source package: `atk1.0=2.18.0-1`
 
@@ -289,18 +294,23 @@ $ apt-get source -qq --print-uris avahi=0.6.32~rc+dfsg-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.32~rc+dfsg-1ubuntu2.debian.tar.xz' avahi_0.6.32~rc+dfsg-1ubuntu2.debian.tar.xz 31772 SHA256:cf53b2d0685ca7a8abb0fdc23b4d5875640bdd27b2715bea25b9dff657aaf451
 ```
 
-### `dpkg` source package: `base-files=9.4ubuntu4.4`
+### `dpkg` source package: `base-files=9.4ubuntu4.5`
 
 Binary Packages:
 
-- `base-files=9.4ubuntu4.4`
+- `base-files=9.4ubuntu4.5`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=9.4ubuntu4.5
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.5.dsc' base-files_9.4ubuntu4.5.dsc 1539 SHA256:168184a051640e38ec02ff4fa7033f724f27be48e3eb92c04fa24b6cdb520fdd
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.5.tar.xz' base-files_9.4ubuntu4.5.tar.xz 62980 SHA256:4cbd2cdb0373df23a31f6daa065f348c18b9e95c76eb4fc469f4df3ab8e46738
+```
 
 ### `dpkg` source package: `base-passwd=3.5.39`
 
@@ -340,11 +350,11 @@ $ apt-get source -qq --print-uris bash=4.3-14ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_4.3-14ubuntu1.2.debian.tar.xz' bash_4.3-14ubuntu1.2.debian.tar.xz 93220 SHA256:5a48a09909595cf4f88634ff54bf3bde0eaf9cfc980fd2e3637c3406d2a4d14d
 ```
 
-### `dpkg` source package: `binutils=2.26.1-1ubuntu1~16.04.3`
+### `dpkg` source package: `binutils=2.26.1-1ubuntu1~16.04.4`
 
 Binary Packages:
 
-- `binutils=2.26.1-1ubuntu1~16.04.3`
+- `binutils=2.26.1-1ubuntu1~16.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 
@@ -355,10 +365,10 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris binutils=2.26.1-1ubuntu1~16.04.3
-'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.3.dsc' binutils_2.26.1-1ubuntu1~16.04.3.dsc 4028 SHA256:ea10459b50be0beb8d6f1957c269e8eafb88c293c91b7d53a3bdcc6f5ea7a749
-'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1.orig.tar.gz' binutils_2.26.1.orig.tar.gz 34868933 SHA256:dd9c3e37c266e4fefba68e444e2a00538b3c902dd31bf4912d90dca6d830a2a1
-'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.3.diff.gz' binutils_2.26.1-1ubuntu1~16.04.3.diff.gz 226341 SHA256:e789b7a18634a582895934ab2b6b08fc4b15294cef51541e4ba5c4fad1343154
+$ apt-get source -qq --print-uris binutils=2.26.1-1ubuntu1~16.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.4.dsc' binutils_2.26.1-1ubuntu1~16.04.4.dsc 4028 SHA256:be3feab51074bcbd032425dc9e54cee17da022fd70961f3fa9d44ebdab56a81d
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1.orig.tar.gz' binutils_2.26.1.orig.tar.gz 34868933 SHA256:dd9c3e37c266e4fefba68e444e2a00538b3c902dd31bf4912d90dca6d830a2a1
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.4.diff.gz' binutils_2.26.1-1ubuntu1~16.04.4.diff.gz 233084 SHA256:bf53a639bf8603ad4b48d50933e14b5a01c7f48ba0e5876dbfacbc562dd6d217
 ```
 
 ### `dpkg` source package: `bzip2=1.0.6-8`
@@ -1175,14 +1185,8 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris git=1:2.7.4-0ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4-0ubuntu1.1.dsc' git_2.7.4-0ubuntu1.1.dsc 2883 SHA256:ac7749b98259b995360e9bcf7c20a18bbad90c21dd2723bb91cc2a46fdec392d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4.orig.tar.xz' git_2.7.4.orig.tar.xz 3909636 SHA256:dee574defbe05ec7356a0842ddbda51315926f2fa7e39c2539f2c3dcc52e457b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.7.4-0ubuntu1.1.debian.tar.xz' git_2.7.4-0ubuntu1.1.debian.tar.xz 502856 SHA256:c29b4a41d09f39f8196ed17daa0f458b8c44551772582439c7e0036d35633cc8
-```
 
 ### `dpkg` source package: `glib2.0=2.48.2-0ubuntu1`
 
@@ -1400,12 +1404,12 @@ $ apt-get source -qq --print-uris grep=2.25-1~16.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_2.25-1~16.04.1.debian.tar.bz2' grep_2.25-1~16.04.1.debian.tar.bz2 108236 SHA256:10a95f4bdee1d2beb05ab1727e114d1f0737f5a917e88b973200a38146a2e085
 ```
 
-### `dpkg` source package: `gtk+2.0=2.24.30-1ubuntu1.16.04.1`
+### `dpkg` source package: `gtk+2.0=2.24.30-1ubuntu1.16.04.2`
 
 Binary Packages:
 
-- `libgtk2.0-0:amd64=2.24.30-1ubuntu1.16.04.1`
-- `libgtk2.0-common=2.24.30-1ubuntu1.16.04.1`
+- `libgtk2.0-0:amd64=2.24.30-1ubuntu1.16.04.2`
+- `libgtk2.0-common=2.24.30-1ubuntu1.16.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libgtk2.0-0/copyright`, `/usr/share/doc/libgtk2.0-common/copyright`)
 
@@ -1415,10 +1419,10 @@ Licenses: (parsed from: `/usr/share/doc/libgtk2.0-0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gtk+2.0=2.24.30-1ubuntu1.16.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.30-1ubuntu1.16.04.1.dsc' gtk+2.0_2.24.30-1ubuntu1.16.04.1.dsc 3999 SHA256:f17fcf1d6cdd310bf4339dfb39b04f771edca61fded409d1666d2ec0593ed687
+$ apt-get source -qq --print-uris gtk+2.0=2.24.30-1ubuntu1.16.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.30-1ubuntu1.16.04.2.dsc' gtk+2.0_2.24.30-1ubuntu1.16.04.2.dsc 3981 SHA256:84256a4ecd7b29bfc080ec5cbbdf6527f6610d06b34cf3cae2265846915a5ef6
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.30.orig.tar.xz' gtk+2.0_2.24.30.orig.tar.xz 12800276 SHA256:0d15cec3b6d55c60eac205b1f3ba81a1ed4eadd9d0f8e7c508bc7065d0c4ca50
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.30-1ubuntu1.16.04.1.debian.tar.xz' gtk+2.0_2.24.30-1ubuntu1.16.04.1.debian.tar.xz 106932 SHA256:53c956e48e8a08ebe4e52fb6d5f6e3befe1976f8970d63bb7d21bfc8d5922c8f
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.30-1ubuntu1.16.04.2.debian.tar.xz' gtk+2.0_2.24.30-1ubuntu1.16.04.2.debian.tar.xz 107272 SHA256:7481a47cc636f102d5db761e2cae0f3d82a5b644b255faedbc8f2bd25ef4fe62
 ```
 
 ### `dpkg` source package: `gzip=1.6-4ubuntu1`
@@ -1565,23 +1569,23 @@ $ apt-get source -qq --print-uris ilmbase=2.2.0-11ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/i/ilmbase/ilmbase_2.2.0-11ubuntu2.debian.tar.xz' ilmbase_2.2.0-11ubuntu2.debian.tar.xz 13400 SHA256:400b77a32f7a04d78ff0462f32dc1e4073f5e1225ed070c63fa6a0ec619905c5
 ```
 
-### `dpkg` source package: `imagemagick=8:6.8.9.9-7ubuntu5.7`
+### `dpkg` source package: `imagemagick=8:6.8.9.9-7ubuntu5.9`
 
 Binary Packages:
 
-- `imagemagick=8:6.8.9.9-7ubuntu5.7`
-- `imagemagick-6.q16=8:6.8.9.9-7ubuntu5.7`
-- `imagemagick-common=8:6.8.9.9-7ubuntu5.7`
-- `libmagickcore-6-arch-config:amd64=8:6.8.9.9-7ubuntu5.7`
-- `libmagickcore-6-headers=8:6.8.9.9-7ubuntu5.7`
-- `libmagickcore-6.q16-2:amd64=8:6.8.9.9-7ubuntu5.7`
-- `libmagickcore-6.q16-2-extra:amd64=8:6.8.9.9-7ubuntu5.7`
-- `libmagickcore-6.q16-dev:amd64=8:6.8.9.9-7ubuntu5.7`
-- `libmagickcore-dev=8:6.8.9.9-7ubuntu5.7`
-- `libmagickwand-6-headers=8:6.8.9.9-7ubuntu5.7`
-- `libmagickwand-6.q16-2:amd64=8:6.8.9.9-7ubuntu5.7`
-- `libmagickwand-6.q16-dev:amd64=8:6.8.9.9-7ubuntu5.7`
-- `libmagickwand-dev=8:6.8.9.9-7ubuntu5.7`
+- `imagemagick=8:6.8.9.9-7ubuntu5.9`
+- `imagemagick-6.q16=8:6.8.9.9-7ubuntu5.9`
+- `imagemagick-common=8:6.8.9.9-7ubuntu5.9`
+- `libmagickcore-6-arch-config:amd64=8:6.8.9.9-7ubuntu5.9`
+- `libmagickcore-6-headers=8:6.8.9.9-7ubuntu5.9`
+- `libmagickcore-6.q16-2:amd64=8:6.8.9.9-7ubuntu5.9`
+- `libmagickcore-6.q16-2-extra:amd64=8:6.8.9.9-7ubuntu5.9`
+- `libmagickcore-6.q16-dev:amd64=8:6.8.9.9-7ubuntu5.9`
+- `libmagickcore-dev=8:6.8.9.9-7ubuntu5.9`
+- `libmagickwand-6-headers=8:6.8.9.9-7ubuntu5.9`
+- `libmagickwand-6.q16-2:amd64=8:6.8.9.9-7ubuntu5.9`
+- `libmagickwand-6.q16-dev:amd64=8:6.8.9.9-7ubuntu5.9`
+- `libmagickwand-dev=8:6.8.9.9-7ubuntu5.9`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/imagemagick-common/copyright`, `/usr/share/doc/libmagickcore-6-arch-config/copyright`, `/usr/share/doc/libmagickcore-6-headers/copyright`, `/usr/share/doc/libmagickcore-6.q16-2/copyright`, `/usr/share/doc/libmagickcore-6.q16-2-extra/copyright`, `/usr/share/doc/libmagickcore-6.q16-dev/copyright`, `/usr/share/doc/libmagickcore-dev/copyright`, `/usr/share/doc/libmagickwand-6-headers/copyright`, `/usr/share/doc/libmagickwand-6.q16-2/copyright`, `/usr/share/doc/libmagickwand-6.q16-dev/copyright`, `/usr/share/doc/libmagickwand-dev/copyright`)
 
@@ -1599,8 +1603,14 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris imagemagick=8:6.8.9.9-7ubuntu5.9
+'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9-7ubuntu5.9.dsc' imagemagick_6.8.9.9-7ubuntu5.9.dsc 4319 SHA256:fdad821f8c3cc9e6d8d04d39a688fda812b51aac81a1e4f5cd9e41017fe7b849
+'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9.orig.tar.xz' imagemagick_6.8.9.9.orig.tar.xz 7891624 SHA256:a4cccc70179ff2c67550e063cdcb2e62907338ef3e68b45bb1c41931e515b3eb
+'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.8.9.9-7ubuntu5.9.debian.tar.xz' imagemagick_6.8.9.9-7ubuntu5.9.debian.tar.xz 277756 SHA256:eac1aff7c5d5a513ed015214350369f63c09bb96af13cd3be8c626840ac88408
+```
 
 ### `dpkg` source package: `init-system-helpers=1.29ubuntu4`
 
@@ -1742,11 +1752,11 @@ $ apt-get source -qq --print-uris keyutils=1.5.9-8ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.5.9-8ubuntu1.debian.tar.xz' keyutils_1.5.9-8ubuntu1.debian.tar.xz 16716 SHA256:36f69846dfeb1e7abdd39dace57a43f9637e426cf4c5252dd9990af36488249b
 ```
 
-### `dpkg` source package: `kmod=22-1ubuntu4`
+### `dpkg` source package: `kmod=22-1ubuntu5`
 
 Binary Packages:
 
-- `libkmod2:amd64=22-1ubuntu4`
+- `libkmod2:amd64=22-1ubuntu5`
 
 Licenses: (parsed from: `/usr/share/doc/libkmod2/copyright`)
 
@@ -1756,10 +1766,10 @@ Licenses: (parsed from: `/usr/share/doc/libkmod2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris kmod=22-1ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu4.dsc' kmod_22-1ubuntu4.dsc 2143 SHA256:c11ad8116cf2d9f868a490dd2fd3e52518e9c07026864e204a90ffa2c97ccb79
+$ apt-get source -qq --print-uris kmod=22-1ubuntu5
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.dsc' kmod_22-1ubuntu5.dsc 2125 SHA256:b1d485fc556faafd7d65e73dc9869991adbd6cc141019bac19b7b9c7f90e2c6b
 'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22.orig.tar.xz' kmod_22.orig.tar.xz 160576 SHA256:158cbbca15c570eb2f4ce29a64cae785cb377a200cf62d6f70ca52e3d33325f3
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu4.debian.tar.xz' kmod_22-1ubuntu4.debian.tar.xz 13644 SHA256:6b2a68f8333222f3b8cfb80d81d5fc936d90365e346c5092086ea148ec1d4ec0
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.debian.tar.xz' kmod_22-1ubuntu5.debian.tar.xz 14376 SHA256:b09c84ec2fb693df04f9e5366d093ac71fb981bbfc2852ca08be1ed3b754651c
 ```
 
 ### `dpkg` source package: `krb5=1.13.2+dfsg-5ubuntu2`
@@ -2888,11 +2898,11 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
 ```
 
-### `dpkg` source package: `linux=4.4.0-83.106`
+### `dpkg` source package: `linux=4.4.0-89.112`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-83.106`
+- `linux-libc-dev:amd64=4.4.0-89.112`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3802,14 +3812,14 @@ $ apt-get source -qq --print-uris subversion=1.9.3-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.3-2ubuntu1.diff.gz' subversion_1.9.3-2ubuntu1.diff.gz 2428266 SHA256:5abd3b260a156c1a15a5203a5097ad557740a3056577e48c0b66f4f74c145a69
 ```
 
-### `dpkg` source package: `systemd=229-4ubuntu17`
+### `dpkg` source package: `systemd=229-4ubuntu19`
 
 Binary Packages:
 
-- `libsystemd0:amd64=229-4ubuntu17`
-- `libudev1:amd64=229-4ubuntu17`
-- `systemd=229-4ubuntu17`
-- `systemd-sysv=229-4ubuntu17`
+- `libsystemd0:amd64=229-4ubuntu19`
+- `libudev1:amd64=229-4ubuntu19`
+- `systemd=229-4ubuntu19`
+- `systemd-sysv=229-4ubuntu19`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
@@ -3821,8 +3831,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=229-4ubuntu19
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu19.dsc' systemd_229-4ubuntu19.dsc 3838 SHA256:a49615c784f23999f7fb1a6015097e1a8d8dff7c4dc220ed59d06dcc9efd0a2c
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu19.debian.tar.xz' systemd_229-4ubuntu19.debian.tar.xz 247552 SHA256:7efc886d38fa7510462bda29dea7d22023fa8265ff5bb700f3715bf50b603d77
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
@@ -4007,11 +4023,11 @@ $ apt-get source -qq --print-uris wget=1.17.1-1ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wget/wget_1.17.1-1ubuntu1.2.debian.tar.xz' wget_1.17.1-1ubuntu1.2.debian.tar.xz 25384 SHA256:6f77e2f7ccc0b8038dab23576e3fcbe91b86e799c6702fbba6f5d34fdf0cf04e
 ```
 
-### `dpkg` source package: `x11proto-core=7.0.28-2ubuntu1`
+### `dpkg` source package: `x11proto-core=7.0.31-1~ubuntu16.04.1`
 
 Binary Packages:
 
-- `x11proto-core-dev=7.0.28-2ubuntu1`
+- `x11proto-core-dev=7.0.31-1~ubuntu16.04.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -4020,10 +4036,10 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris x11proto-core=7.0.28-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-core/x11proto-core_7.0.28-2ubuntu1.dsc' x11proto-core_7.0.28-2ubuntu1.dsc 2063 SHA256:7679af7c47fa152acf19564f41dc38c003b83ddc89d42fe2d00b45470f1c5057
-'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-core/x11proto-core_7.0.28.orig.tar.gz' x11proto-core_7.0.28.orig.tar.gz 367523 SHA256:6cabc8ce3fa2b1a2427871167b62c24d5b08a58bd3e81ed7aaf08f2bf6dbcfed
-'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-core/x11proto-core_7.0.28-2ubuntu1.diff.gz' x11proto-core_7.0.28-2ubuntu1.diff.gz 11609 SHA256:79e1bce8261354c04f01b574de5af1fa7a899865ccf8ee5a2e56c8f0ce49d827
+$ apt-get source -qq --print-uris x11proto-core=7.0.31-1~ubuntu16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-core/x11proto-core_7.0.31-1~ubuntu16.04.1.dsc' x11proto-core_7.0.31-1~ubuntu16.04.1.dsc 2079 SHA256:5fbc2bb209c59ed702e6591ee0badc9521832d9e6470a1da1aa72fbf4704abfd
+'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-core/x11proto-core_7.0.31.orig.tar.gz' x11proto-core_7.0.31.orig.tar.gz 367979 SHA256:6d755eaae27b45c5cc75529a12855fed5de5969b367ed05003944cf901ed43c7
+'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-core/x11proto-core_7.0.31-1~ubuntu16.04.1.diff.gz' x11proto-core_7.0.31-1~ubuntu16.04.1.diff.gz 29976 SHA256:49fc99eccdfa9f9c477979933dafe570c19b215861bf7473564311ed90fcd51b
 ```
 
 ### `dpkg` source package: `x11proto-input=2.3.1-1`
