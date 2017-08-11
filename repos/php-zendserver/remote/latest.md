@@ -1,7 +1,7 @@
 ## `php-zendserver:latest`
 
 ```console
-$ docker pull php-zendserver@sha256:577b43f772b76a94dfd45572a032196645a47a534f464a47a8b69f1e5465f180
+$ docker pull php-zendserver@sha256:3b23e3ff90509045d02406088c9b994e67165a779ea719cf0bc42081d79e6c2d
 ```
 
 -	Platforms:
@@ -11,152 +11,152 @@ $ docker pull php-zendserver@sha256:577b43f772b76a94dfd45572a032196645a47a534f46
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **421.4 MB (421394150 bytes)**  
+-	Total Size: **412.8 MB (412810716 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d33bf942c8811017c208bb25c44484dcb4437a3d494d26ab95610bc43ccea53b`
+-	Image ID: `sha256:e40ee95d02f6d1fd3012cc8259e8664fcf790457d18c07d866542107d43b909b`
 -	Default Command: `["\/usr\/local\/bin\/run"]`
 
 ```dockerfile
-# Thu, 20 Jul 2017 17:14:16 GMT
-ADD file:345f29394c5b1859890c04148f0b936d15612befbb412bd09db87d4020b80ed7 in / 
-# Thu, 20 Jul 2017 17:14:19 GMT
+# Thu, 10 Aug 2017 20:13:24 GMT
+ADD file:84479dd43530d358e10fc77876bb6f83e71e1367d959e423f2471e0057c4b424 in / 
+# Thu, 10 Aug 2017 20:13:25 GMT
 RUN set -xe 		&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d 	&& echo 'exit 101' >> /usr/sbin/policy-rc.d 	&& chmod +x /usr/sbin/policy-rc.d 		&& dpkg-divert --local --rename --add /sbin/initctl 	&& cp -a /usr/sbin/policy-rc.d /sbin/initctl 	&& sed -i 's/^exit.*/exit 0/' /sbin/initctl 		&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup 		&& echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean 	&& echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean 	&& echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean 		&& echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages 		&& echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes 		&& echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
-# Thu, 20 Jul 2017 17:14:20 GMT
+# Thu, 10 Aug 2017 20:13:25 GMT
 RUN rm -rf /var/lib/apt/lists/*
-# Thu, 20 Jul 2017 17:14:21 GMT
+# Thu, 10 Aug 2017 20:13:26 GMT
 RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
-# Thu, 20 Jul 2017 17:14:29 GMT
+# Thu, 10 Aug 2017 20:13:27 GMT
 RUN mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
-# Thu, 20 Jul 2017 17:14:29 GMT
+# Thu, 10 Aug 2017 20:13:27 GMT
 CMD ["/bin/bash"]
-# Thu, 20 Jul 2017 20:18:44 GMT
+# Thu, 10 Aug 2017 23:48:45 GMT
 RUN apt-key adv --keyserver pgp.mit.edu --recv-key 799058698E65316A2E7A4FF42EAE1437F7D2C623
-# Thu, 20 Jul 2017 20:24:27 GMT
+# Thu, 10 Aug 2017 23:56:30 GMT
 RUN echo "deb http://repos.zend.com/zend-server/9.1/deb_apache2.4 server non-free" >> /etc/apt/sources.list.d/zend-server.list
-# Mon, 24 Jul 2017 16:53:26 GMT
+# Thu, 10 Aug 2017 23:58:23 GMT
 RUN apt-get update && apt-get install -y libmysqlclient18 unzip git zend-server-php-7.1=9.1.1+b119 && /usr/local/zend/bin/zendctl.sh stop
-# Mon, 24 Jul 2017 16:53:27 GMT
+# Thu, 10 Aug 2017 23:58:24 GMT
 COPY file:9067f1585f25b36ab3a81514a2f158ba0d6e0431cad7de2ea9c4b4249a6c134f in /etc/ 
-# Mon, 24 Jul 2017 16:53:28 GMT
+# Thu, 10 Aug 2017 23:58:24 GMT
 COPY file:82de006e31874ac4e03685b3e87e988446f42138aaaf0fc5faad9cddb48040ba in /etc/apache2/conf-available 
-# Mon, 24 Jul 2017 16:53:29 GMT
+# Thu, 10 Aug 2017 23:58:25 GMT
 RUN /usr/sbin/a2enconf drop-http-proxy-header
-# Mon, 24 Jul 2017 16:53:30 GMT
+# Thu, 10 Aug 2017 23:58:26 GMT
 RUN /usr/sbin/a2enmod headers
-# Mon, 24 Jul 2017 16:53:30 GMT
+# Thu, 10 Aug 2017 23:58:26 GMT
 ENV ZS_INIT_VERSION=0.2
-# Mon, 24 Jul 2017 16:53:30 GMT
+# Thu, 10 Aug 2017 23:58:26 GMT
 ENV ZS_INIT_SHA256=1c5cf557daf48cf018dba1cf46208f215d3b5fab47c73ff2d39988581ebd6932
-# Mon, 24 Jul 2017 16:53:40 GMT
+# Thu, 10 Aug 2017 23:58:35 GMT
 RUN apt-get install -y curl
-# Mon, 24 Jul 2017 16:53:42 GMT
+# Thu, 10 Aug 2017 23:58:36 GMT
 RUN curl -fSL -o zs-init.tar.gz "http://repos.zend.com/zs-init/zs-init-docker-${ZS_INIT_VERSION}.tar.gz"     && echo "${ZS_INIT_SHA256} *zs-init.tar.gz" | sha256sum -c -     && mkdir /usr/local/zs-init     && tar xzf zs-init.tar.gz --strip-components=1 -C /usr/local/zs-init     && rm zs-init.tar.gz
-# Mon, 24 Jul 2017 16:53:42 GMT
+# Thu, 10 Aug 2017 23:58:36 GMT
 WORKDIR /usr/local/zs-init
-# Mon, 24 Jul 2017 16:53:47 GMT
+# Thu, 10 Aug 2017 23:58:41 GMT
 RUN /usr/local/zend/bin/php -r "readfile('https://getcomposer.org/installer');" | /usr/local/zend/bin/php
-# Mon, 24 Jul 2017 16:54:13 GMT
+# Thu, 10 Aug 2017 23:59:05 GMT
 RUN /usr/local/zend/bin/php composer.phar update
-# Mon, 24 Jul 2017 16:54:13 GMT
+# Thu, 10 Aug 2017 23:59:05 GMT
 COPY dir:6174d7fdcd8142a1b143e80efd2994e57dd5d7610a8fbfee3a7288ddf495dfdf in /usr/local/bin 
-# Mon, 24 Jul 2017 16:54:14 GMT
+# Thu, 10 Aug 2017 23:59:06 GMT
 COPY dir:b14dbc48195e4d5367d3aea2ed0fb26985bacb8d8229d24961363db2e2edf8f0 in /usr/local/zend/var/plugins/ 
-# Mon, 24 Jul 2017 16:54:14 GMT
+# Thu, 10 Aug 2017 23:59:07 GMT
 RUN rm /var/www/html/index.html
-# Mon, 24 Jul 2017 16:54:14 GMT
+# Thu, 10 Aug 2017 23:59:07 GMT
 COPY dir:9f1a7f23dfcf85f3c7148d98ae7914654fe8acfc4e4651f3a08427c09af24198 in /var/www/html 
-# Mon, 24 Jul 2017 16:54:15 GMT
+# Thu, 10 Aug 2017 23:59:07 GMT
 EXPOSE 80/tcp
-# Mon, 24 Jul 2017 16:54:15 GMT
+# Thu, 10 Aug 2017 23:59:07 GMT
 EXPOSE 443/tcp
-# Mon, 24 Jul 2017 16:54:15 GMT
+# Thu, 10 Aug 2017 23:59:08 GMT
 EXPOSE 10081/tcp
-# Mon, 24 Jul 2017 16:54:15 GMT
+# Thu, 10 Aug 2017 23:59:08 GMT
 EXPOSE 10082/tcp
-# Mon, 24 Jul 2017 16:54:16 GMT
+# Thu, 10 Aug 2017 23:59:08 GMT
 WORKDIR /var/www/html
-# Mon, 24 Jul 2017 16:54:16 GMT
+# Thu, 10 Aug 2017 23:59:08 GMT
 CMD ["/usr/local/bin/run"]
 ```
 
 -	Layers:
-	-	`sha256:7ee37f18131817cc7cf143cf1efe11db9f06306aa7f2c5a5b8f7af2ce71e852d`  
-		Last Modified: Thu, 20 Jul 2017 11:56:09 GMT  
-		Size: 67.1 MB (67114823 bytes)  
+	-	`sha256:48f0413f904d5185d4789dc65f4d451a5a4d7a96c491a5862b73c20d33396e59`  
+		Last Modified: Fri, 28 Jul 2017 11:56:09 GMT  
+		Size: 67.1 MB (67115580 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df5ffabe5e97a3594ebcdf78b5fcb20452b46a89068d7a771f96d15f8ced9e73`  
-		Last Modified: Thu, 20 Jul 2017 17:17:30 GMT  
-		Size: 72.6 KB (72622 bytes)  
+	-	`sha256:2bd2b2e92c5f88b4eb44ab49c76d3fa838cde05820161719f29390432c706e0a`  
+		Last Modified: Thu, 10 Aug 2017 20:14:33 GMT  
+		Size: 72.6 KB (72623 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ae2040ed51a16afd9e12e007d9034fd405c6f500033f9e465232d45cd171a0e3`  
-		Last Modified: Thu, 20 Jul 2017 17:17:30 GMT  
-		Size: 356.0 B  
+	-	`sha256:06ed1e3efabbfedf96b8b2b9fd44d3f358c9c1ea36a91a38e428d4280f5fa5b4`  
+		Last Modified: Thu, 10 Aug 2017 20:14:33 GMT  
+		Size: 357.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ce7010d244b7d77247234ca2eabb2ae29829976c81651e85a7daf0fa60f4bbc`  
-		Last Modified: Thu, 20 Jul 2017 17:17:30 GMT  
-		Size: 676.0 B  
+	-	`sha256:a220dbf88993d74c47e69cb53f7c602e0f1b88916c5240d27f74287b08b1e14d`  
+		Last Modified: Thu, 10 Aug 2017 20:14:33 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2538b201d2a69851a91852923a2eb6306a55d0b7919c6167858ff9eaf931922b`  
-		Last Modified: Thu, 20 Jul 2017 17:17:30 GMT  
-		Size: 163.0 B  
+	-	`sha256:57c164185602768e03308a28a019a190ef4c082d63e6f8d89f20d5db6d9c5ec3`  
+		Last Modified: Thu, 10 Aug 2017 20:14:33 GMT  
+		Size: 162.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c060898f35b37b53722a819a9f65339cf9aa350ca60964c07cdbd471e0b78cf8`  
-		Last Modified: Thu, 20 Jul 2017 20:28:55 GMT  
-		Size: 13.1 KB (13056 bytes)  
+	-	`sha256:c3c6788b499ad359fe776642fc20d12beb52ef63f6f3fe11119cce548d3570ad`  
+		Last Modified: Fri, 11 Aug 2017 00:03:50 GMT  
+		Size: 13.1 KB (13058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58e304c86e302641147238e99b8b07c098950475f8c2c7461514aa62ceb1b3df`  
-		Last Modified: Thu, 20 Jul 2017 20:31:14 GMT  
-		Size: 230.0 B  
+	-	`sha256:d6effbe78276ba5ea7d07e6489e1de2148e135a53b7291fd35062104fbe7dec7`  
+		Last Modified: Fri, 11 Aug 2017 00:11:46 GMT  
+		Size: 229.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c20b784a2e03354f7e4a72249c7305fc87964225ffbc8782bc8d233a36f65e9`  
-		Last Modified: Mon, 24 Jul 2017 16:57:16 GMT  
-		Size: 341.7 MB (341697414 bytes)  
+	-	`sha256:9478fb459cc8ae4da567482f3b11b4a81c265f4a2df17bc3469f5857b786233a`  
+		Last Modified: Fri, 11 Aug 2017 00:12:49 GMT  
+		Size: 332.9 MB (332944516 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6d67848e721a00cb1d4dd23b8c5d22ba095fb1b02f1b82535e591bb9dbf469d2`  
-		Last Modified: Mon, 24 Jul 2017 16:56:03 GMT  
+	-	`sha256:9e0235b22fb6eba9e16de7f97bdf7d0895df24cfae89454017a026d25c3a8ddb`  
+		Last Modified: Fri, 11 Aug 2017 00:11:45 GMT  
 		Size: 218.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da7c3b4ff62feece222c9ea19cf273f092d76719569ed5b6ddbe4287f72decea`  
-		Last Modified: Mon, 24 Jul 2017 16:56:03 GMT  
+	-	`sha256:bbeb8674854e2a57348d213ec29acca9416f63a4b00caaf204719609e432fcd4`  
+		Last Modified: Fri, 11 Aug 2017 00:11:44 GMT  
 		Size: 257.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa61a125cff65ba0a4c2a1db2867594903e321c40fd5cc9651a3a6d4cf177f14`  
-		Last Modified: Mon, 24 Jul 2017 16:56:03 GMT  
-		Size: 300.0 B  
+	-	`sha256:a13df1c745daf3fa89fb9dd30bb829330ea44579cf1b9855fc4c50c58c896fb3`  
+		Last Modified: Fri, 11 Aug 2017 00:11:43 GMT  
+		Size: 301.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1feb81d62bb74b50a93215a36cc4d9ba907a19844bc70ba97ab510208d4a3ffa`  
-		Last Modified: Mon, 24 Jul 2017 16:56:02 GMT  
+	-	`sha256:3b6636ee7060a7814e1070ccac84f9ae51198898723ce0bfa014ace06ba54f22`  
+		Last Modified: Fri, 11 Aug 2017 00:11:44 GMT  
 		Size: 290.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:463dfc13eed323c991f39d5365e8a93bd1b89b0e209a850a1702c9ded88060d5`  
-		Last Modified: Mon, 24 Jul 2017 16:56:02 GMT  
-		Size: 470.4 KB (470379 bytes)  
+	-	`sha256:d1fbcf7421e306bb23004b92cd10ed281cc79e3c88cbcd5b970650f2270d10de`  
+		Last Modified: Fri, 11 Aug 2017 00:11:44 GMT  
+		Size: 470.4 KB (470446 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f64f51c3f49a3995eb7aeac75776f40c73ce82cd3dd468f702fa25c3016206f3`  
-		Last Modified: Mon, 24 Jul 2017 16:56:01 GMT  
-		Size: 15.7 KB (15682 bytes)  
+	-	`sha256:b0b974f30e7ea83655dba5d643c668b70f6223578fb69440d15734bbee452489`  
+		Last Modified: Fri, 11 Aug 2017 00:11:43 GMT  
+		Size: 15.7 KB (15677 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7d0a2cb06191e11a967b8a746e72be2aee65f75986adce89a94fc225b8771f20`  
-		Last Modified: Mon, 24 Jul 2017 16:56:01 GMT  
-		Size: 489.4 KB (489417 bytes)  
+	-	`sha256:a01c4af4354e6f82e9c12b1a9b5ee609500fe7e3f84b6d230f9d204050d70cf6`  
+		Last Modified: Fri, 11 Aug 2017 00:11:41 GMT  
+		Size: 492.6 KB (492612 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bc624c119ef43e49707247f4bce763d440a1d1ba24d4e9a0b71724cf4ea89f1b`  
-		Last Modified: Mon, 24 Jul 2017 16:56:01 GMT  
-		Size: 11.5 MB (11500997 bytes)  
+	-	`sha256:7664570e7bc04f3b92087b33fa064e1617fd1cf397919e68ba6340fda22c5fe6`  
+		Last Modified: Fri, 11 Aug 2017 00:11:46 GMT  
+		Size: 11.7 MB (11666273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b044304545d42d455294b6d83bf1c0e4c1b875d52867eb6b41b434b02a4d18cd`  
-		Last Modified: Mon, 24 Jul 2017 16:56:00 GMT  
-		Size: 13.3 KB (13346 bytes)  
+	-	`sha256:d2ecc25b11e8833fc82ce9d498762bd83c7a721c3863f9d9d1d98fad02626695`  
+		Last Modified: Fri, 11 Aug 2017 00:11:41 GMT  
+		Size: 13.3 KB (13342 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1d0b045dcab35421db178644efab718692d336a0c3ad32760436c1f7efe0424`  
-		Last Modified: Mon, 24 Jul 2017 16:55:59 GMT  
-		Size: 2.5 KB (2515 bytes)  
+	-	`sha256:7e844b0bb93505a95486b07a889e0195ea4faa21b6c8530b16abbd0d5eae7cf9`  
+		Last Modified: Fri, 11 Aug 2017 00:11:41 GMT  
+		Size: 2.5 KB (2514 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88bc36b3717d5a42e20158c94cda7c7e69473fd2fcbccb7f50b470cea07e1321`  
-		Last Modified: Mon, 24 Jul 2017 16:56:01 GMT  
-		Size: 164.0 B  
+	-	`sha256:7e31bddc30126eb052455c8172ace0f0314db6a42626bd26f69838b4340e53b0`  
+		Last Modified: Fri, 11 Aug 2017 00:11:41 GMT  
+		Size: 165.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cede77749218576b641e002f796eee5a3c2330a19daf93f397123dc8c6e73312`  
-		Last Modified: Mon, 24 Jul 2017 16:56:00 GMT  
-		Size: 1.2 KB (1245 bytes)  
+	-	`sha256:eb8c9220982bac96ce95f329099b4059ce412f9f498ade7214be178d8e249873`  
+		Last Modified: Fri, 11 Aug 2017 00:11:41 GMT  
+		Size: 1.2 KB (1243 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
