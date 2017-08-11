@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b001b9c3ec69487cacc857fe6384edb8558ae3079fe4b1488f5ae8bea300cee3`
-- Created: `2017-07-31T22:08:23.77874138Z`
+- Image ID: `sha256:38619fdf4de24257bef2f98730cae6d58d69cc5d00e1e60596dbcd6f97eb3f49`
+- Created: `2017-08-10T17:47:12.318883892Z`
 - Virtual Size: ~ 619.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -25,6 +25,8 @@
   - `TOMCAT_VERSION=8.0.45`
   - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.45/bin/apache-tomcat-8.0.45.tar.gz`
   - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.45/bin/apache-tomcat-8.0.45.tar.gz.asc`
+  - `TOMCAT_TGZ_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.45/bin/apache-tomcat-8.0.45.tar.gz`
+  - `TOMCAT_ASC_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.45/bin/apache-tomcat-8.0.45.tar.gz.asc`
   - `GN_FILE=geonetwork.war`
   - `DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data`
   - `JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:PermSize=512m -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC`
