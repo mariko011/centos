@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:08900fb3315326edd8fffd7d4f9f3c1ba8194fc6ef0ea8014e23697f6893229e`
-- Created: `2017-07-31T19:32:51.751040516Z`
+- Image ID: `sha256:f2021db562f28489ed0c70188726e2fa29c0244a7060ac6809348a47fd895f02`
+- Created: `2017-08-09T21:53:42.539771946Z`
 - Virtual Size: ~ 292.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -24,6 +24,8 @@
   - `TOMCAT_VERSION=7.0.79`
   - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-7/v7.0.79/bin/apache-tomcat-7.0.79.tar.gz`
   - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-7/v7.0.79/bin/apache-tomcat-7.0.79.tar.gz.asc`
+  - `TOMCAT_TGZ_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.79/bin/apache-tomcat-7.0.79.tar.gz`
+  - `TOMCAT_ASC_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.79/bin/apache-tomcat-7.0.79.tar.gz.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
