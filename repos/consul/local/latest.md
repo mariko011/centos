@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:726ba823d61eea2da7ff21c22449e9bc0d3d517867446664728befabaac20f9e`
-- Created: `2017-07-20T17:03:32.912792766Z`
-- Virtual Size: ~ 45.67 Mb  
+- Image ID: `sha256:9bf1618f4e63e6e526d09182bd51342823bd82eec68649f14a42a1eb8cae417b`
+- Created: `2017-08-10T17:54:41.003675828Z`
+- Virtual Size: ~ 51.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["agent","-dev","-client","0.0.0.0"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `CONSUL_VERSION=0.9.0`
+  - `CONSUL_VERSION=0.9.2`
   - `DOCKER_BASE_VERSION=0.0.4`
   - `HASHICORP_RELEASES=https://releases.hashicorp.com`
