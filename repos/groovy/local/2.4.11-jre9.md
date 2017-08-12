@@ -81,19 +81,8 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apparmor=2.11.0-9
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0-9.dsc' apparmor_2.11.0-9.dsc 3121 SHA256:2f54a338a8e6c4af752d5b3dff98be330501bfedf66db55f80cb2d18389fe6d5
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0.orig.tar.gz' apparmor_2.11.0.orig.tar.gz 5013297 SHA256:b1c489ea11e7771b8e6b181532cafbf9ebe6603e3cb00e2558f21b7a5bdd739a
-'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0-9.debian.tar.xz' apparmor_2.11.0-9.debian.tar.xz 87400 SHA256:0e6ec2979f849a12885ab07ff2f629ab5a7ef27a6a67cf2c69ceaf5685da7ac1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apparmor/2.11.0-9/
-- https://sources.debian.net/src/apparmor/2.11.0-9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apt=1.5~beta1`
 
@@ -1486,19 +1475,8 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 - `Chromium`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.17.0-5
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.17.0-5.dsc' libpsl_0.17.0-5.dsc 2194 SHA256:674c757c46515ae6043879be4dcaf8904216cd4ca42d308de2a37194189217a9
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.17.0.orig.tar.gz' libpsl_0.17.0.orig.tar.gz 49087 SHA256:7731e28393e1b4ca363eaffecd6c7570023a7c18c017b45d683ac7d2ba1f0bd1
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.17.0-5.debian.tar.xz' libpsl_0.17.0-5.debian.tar.xz 11508 SHA256:3070d0753bb6631d6465380a64d040a85c3ab2f869b2586f1d2c362b390a164a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libpsl/0.17.0-5/
-- https://sources.debian.net/src/libpsl/0.17.0-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libselinux=2.6-3`
 
@@ -2042,19 +2020,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nspr=2:4.15-1
-'http://deb.debian.org/debian/pool/main/n/nspr/nspr_4.15-1.dsc' nspr_4.15-1.dsc 2061 SHA256:ba6fe7ce9f36fab2da1e0618c75811aba5a6a32bb48c2e487bd0c5c07f0841ca
-'http://deb.debian.org/debian/pool/main/n/nspr/nspr_4.15.orig.tar.gz' nspr_4.15.orig.tar.gz 1140182 SHA256:27dde06bc3d0c88903a20d6ad807361a912cfb624ca0ab4efb10fc50b19e2d80
-'http://deb.debian.org/debian/pool/main/n/nspr/nspr_4.15-1.debian.tar.xz' nspr_4.15-1.debian.tar.xz 15232 SHA256:8642576573c47e481be4aed5192d6576998fc1899321d49557b5ef9e0c21ca79
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nspr/2:4.15-1/
-- https://sources.debian.net/src/nspr/2:4.15-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `nss=2:3.31-1`
 
@@ -2389,18 +2356,8 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sensible-utils=0.0.9+nmu1
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9+nmu1.dsc' sensible-utils_0.0.9+nmu1.dsc 1456 SHA256:49922ddd1c19aaad510da759bd97255ef799b252242629bdb0288bd273430ad2
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9+nmu1.tar.xz' sensible-utils_0.0.9+nmu1.tar.xz 54080 SHA256:e754ca8de7ad0d7fb8eb91fa2a2c1ee9947e88b51ed850340e5e833a82d38254
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sensible-utils/0.0.9+nmu1/
-- https://sources.debian.net/src/sensible-utils/0.0.9+nmu1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `shadow=1:4.4-4.1`
 
