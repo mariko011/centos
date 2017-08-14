@@ -15,7 +15,7 @@
 ## `storm:0.9.7`
 
 ```console
-$ docker pull storm@sha256:664e3e4e6763c68c6b93a97b8acfc35c151c7f635a8c4124f5428b5ebf028e4e
+$ docker pull storm@sha256:f2a73dbe4f8cbad7af520bd65b2840a473c907132d1fff5d6566ed8ede7a0a29
 ```
 
 -	Platforms:
@@ -25,9 +25,9 @@ $ docker pull storm@sha256:664e3e4e6763c68c6b93a97b8acfc35c151c7f635a8c4124f5428
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **88.9 MB (88926717 bytes)**  
+-	Total Size: **88.9 MB (88926716 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ff701318049d9cb8a1c6964f31696fdf96de921f2bd22c71ccab2ad08a004ab`
+-	Image ID: `sha256:dde4e7d2d1b8982a2b5515ec2e44691352edd70f0a69311fea315ddd3e0274f7`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -66,9 +66,9 @@ RUN set -x     && apk add --no-cache --virtual .build-deps         gnupg     && 
 WORKDIR /apache-storm-0.9.7
 # Thu, 10 Aug 2017 18:37:56 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/apache-storm-0.9.7/bin
-# Thu, 10 Aug 2017 18:37:56 GMT
-COPY file:d38c65658d07f922df720b8b043c42b170c1ac8356380e4bb8fe8934403fb0d8 in / 
-# Thu, 10 Aug 2017 18:37:56 GMT
+# Mon, 14 Aug 2017 17:08:53 GMT
+COPY file:20ef541d526b161df0063c283f532d732417cae74017ab6f877c2e5c751f6139 in / 
+# Mon, 14 Aug 2017 17:08:53 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -97,15 +97,15 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Thu, 10 Aug 2017 18:39:04 GMT  
 		Size: 21.2 MB (21166275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c4a3396a76576da2fd2e76b677b3e0b46caded344c410fc150af5e20209d647`  
-		Last Modified: Thu, 10 Aug 2017 18:38:50 GMT  
-		Size: 416.0 B  
+	-	`sha256:456ed6bf5aa8f1e76c0208e79737f5ce13510d5e7bea172f4b47e83b59fe992b`  
+		Last Modified: Mon, 14 Aug 2017 17:09:09 GMT  
+		Size: 415.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `storm:0.9`
 
 ```console
-$ docker pull storm@sha256:664e3e4e6763c68c6b93a97b8acfc35c151c7f635a8c4124f5428b5ebf028e4e
+$ docker pull storm@sha256:f2a73dbe4f8cbad7af520bd65b2840a473c907132d1fff5d6566ed8ede7a0a29
 ```
 
 -	Platforms:
@@ -115,9 +115,9 @@ $ docker pull storm@sha256:664e3e4e6763c68c6b93a97b8acfc35c151c7f635a8c4124f5428
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **88.9 MB (88926717 bytes)**  
+-	Total Size: **88.9 MB (88926716 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ff701318049d9cb8a1c6964f31696fdf96de921f2bd22c71ccab2ad08a004ab`
+-	Image ID: `sha256:dde4e7d2d1b8982a2b5515ec2e44691352edd70f0a69311fea315ddd3e0274f7`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -156,9 +156,9 @@ RUN set -x     && apk add --no-cache --virtual .build-deps         gnupg     && 
 WORKDIR /apache-storm-0.9.7
 # Thu, 10 Aug 2017 18:37:56 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/apache-storm-0.9.7/bin
-# Thu, 10 Aug 2017 18:37:56 GMT
-COPY file:d38c65658d07f922df720b8b043c42b170c1ac8356380e4bb8fe8934403fb0d8 in / 
-# Thu, 10 Aug 2017 18:37:56 GMT
+# Mon, 14 Aug 2017 17:08:53 GMT
+COPY file:20ef541d526b161df0063c283f532d732417cae74017ab6f877c2e5c751f6139 in / 
+# Mon, 14 Aug 2017 17:08:53 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -187,15 +187,15 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Thu, 10 Aug 2017 18:39:04 GMT  
 		Size: 21.2 MB (21166275 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c4a3396a76576da2fd2e76b677b3e0b46caded344c410fc150af5e20209d647`  
-		Last Modified: Thu, 10 Aug 2017 18:38:50 GMT  
-		Size: 416.0 B  
+	-	`sha256:456ed6bf5aa8f1e76c0208e79737f5ce13510d5e7bea172f4b47e83b59fe992b`  
+		Last Modified: Mon, 14 Aug 2017 17:09:09 GMT  
+		Size: 415.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `storm:0.10.2`
 
 ```console
-$ docker pull storm@sha256:1fb3cbdd8c820b06916b5b3238d51b62cd14bb87cf66e80aa4e2719d91089146
+$ docker pull storm@sha256:0918ac6625711881aa4a3767d8efe1af5b937c646be22a15714a6d717e56b097
 ```
 
 -	Platforms:
@@ -205,9 +205,9 @@ $ docker pull storm@sha256:1fb3cbdd8c820b06916b5b3238d51b62cd14bb87cf66e80aa4e27
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.4 MB (145439349 bytes)**  
+-	Total Size: **145.4 MB (145439351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4a6eae74244297c4242c416a5084466d185fdd01a9a99beadf6faff7b3016eeb`
+-	Image ID: `sha256:9c2b713d724d42a24a06712388587cac2daec6cf477be22e9c466f929486238b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -246,9 +246,9 @@ RUN set -x     && apk add --no-cache --virtual .build-deps         gnupg     && 
 WORKDIR /apache-storm-0.10.2
 # Thu, 10 Aug 2017 18:38:09 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/apache-storm-0.10.2/bin
-# Thu, 10 Aug 2017 18:38:09 GMT
-COPY file:d38c65658d07f922df720b8b043c42b170c1ac8356380e4bb8fe8934403fb0d8 in / 
-# Thu, 10 Aug 2017 18:38:10 GMT
+# Mon, 14 Aug 2017 17:09:01 GMT
+COPY file:20ef541d526b161df0063c283f532d732417cae74017ab6f877c2e5c751f6139 in / 
+# Mon, 14 Aug 2017 17:09:01 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -277,15 +277,15 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Thu, 10 Aug 2017 18:39:34 GMT  
 		Size: 77.7 MB (77678908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81bd1145a3ae8989ca760ba056a81583a102fdda9b4f62b46455618b459c73c4`  
-		Last Modified: Thu, 10 Aug 2017 18:39:20 GMT  
-		Size: 415.0 B  
+	-	`sha256:1d9147c2431e9b9552fc095844ea3f3e9d3f211ce21f56b9721a25a715f4b76a`  
+		Last Modified: Mon, 14 Aug 2017 17:09:26 GMT  
+		Size: 417.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `storm:0.10`
 
 ```console
-$ docker pull storm@sha256:1fb3cbdd8c820b06916b5b3238d51b62cd14bb87cf66e80aa4e2719d91089146
+$ docker pull storm@sha256:0918ac6625711881aa4a3767d8efe1af5b937c646be22a15714a6d717e56b097
 ```
 
 -	Platforms:
@@ -295,9 +295,9 @@ $ docker pull storm@sha256:1fb3cbdd8c820b06916b5b3238d51b62cd14bb87cf66e80aa4e27
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.4 MB (145439349 bytes)**  
+-	Total Size: **145.4 MB (145439351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4a6eae74244297c4242c416a5084466d185fdd01a9a99beadf6faff7b3016eeb`
+-	Image ID: `sha256:9c2b713d724d42a24a06712388587cac2daec6cf477be22e9c466f929486238b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 
 ```dockerfile
@@ -336,9 +336,9 @@ RUN set -x     && apk add --no-cache --virtual .build-deps         gnupg     && 
 WORKDIR /apache-storm-0.10.2
 # Thu, 10 Aug 2017 18:38:09 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/apache-storm-0.10.2/bin
-# Thu, 10 Aug 2017 18:38:09 GMT
-COPY file:d38c65658d07f922df720b8b043c42b170c1ac8356380e4bb8fe8934403fb0d8 in / 
-# Thu, 10 Aug 2017 18:38:10 GMT
+# Mon, 14 Aug 2017 17:09:01 GMT
+COPY file:20ef541d526b161df0063c283f532d732417cae74017ab6f877c2e5c751f6139 in / 
+# Mon, 14 Aug 2017 17:09:01 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
 ```
 
@@ -367,9 +367,9 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Last Modified: Thu, 10 Aug 2017 18:39:34 GMT  
 		Size: 77.7 MB (77678908 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:81bd1145a3ae8989ca760ba056a81583a102fdda9b4f62b46455618b459c73c4`  
-		Last Modified: Thu, 10 Aug 2017 18:39:20 GMT  
-		Size: 415.0 B  
+	-	`sha256:1d9147c2431e9b9552fc095844ea3f3e9d3f211ce21f56b9721a25a715f4b76a`  
+		Last Modified: Mon, 14 Aug 2017 17:09:26 GMT  
+		Size: 417.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `storm:1.0.3`
