@@ -1,7 +1,7 @@
 ## `node:6-stretch`
 
 ```console
-$ docker pull node@sha256:94261eb698a59f5deab30e1abe82cf8289c723745aaa58376474743de4f0cf11
+$ docker pull node@sha256:1caa586ea660642b524db046c6a2d4465163f1c1e7da310bdff41fbb57a3303a
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull node@sha256:94261eb698a59f5deab30e1abe82cf8289c723745aaa5837647474
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **337.1 MB (337084759 bytes)**  
+-	Total Size: **337.1 MB (337084766 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4570966e82b712b766b4b2568d757c75fb4e7c207aebb32f7b5b82afafc6da41`
+-	Image ID: `sha256:c92bdff1fd7bb01ad287b2e10f017b2674efc1a479033ce71ce9a0cb04e8c05c`
 -	Default Command: `["node"]`
 
 ```dockerfile
@@ -37,13 +37,13 @@ RUN set -ex   && for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94A
 ENV NPM_CONFIG_LOGLEVEL=info
 # Tue, 01 Aug 2017 21:06:41 GMT
 ENV NODE_VERSION=6.11.2
-# Wed, 09 Aug 2017 19:24:32 GMT
-RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -SLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs
-# Wed, 09 Aug 2017 19:24:33 GMT
+# Mon, 14 Aug 2017 18:07:18 GMT
+RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -SLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs
+# Mon, 14 Aug 2017 18:07:18 GMT
 ENV YARN_VERSION=0.27.5
-# Wed, 09 Aug 2017 19:24:38 GMT
+# Mon, 14 Aug 2017 18:07:24 GMT
 RUN set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --keyserver pgp.mit.edu --recv-keys "$key" ||     gpg --keyserver keyserver.pgp.com --recv-keys "$key" ||     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" ;   done   && curl -fSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt/yarn   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/yarn --strip-components=1   && ln -s /opt/yarn/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn/bin/yarn /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz
-# Wed, 09 Aug 2017 19:24:38 GMT
+# Mon, 14 Aug 2017 18:07:24 GMT
 CMD ["node"]
 ```
 
@@ -76,11 +76,11 @@ CMD ["node"]
 		Last Modified: Thu, 27 Jul 2017 16:18:03 GMT  
 		Size: 117.6 KB (117624 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6af19b5df14299c582e2eb9de007ceab4f6bc9a2c333e4dcb2647ced5cda55c3`  
-		Last Modified: Wed, 09 Aug 2017 19:34:59 GMT  
-		Size: 14.2 MB (14198892 bytes)  
+	-	`sha256:343bdfd3add8954ebbd1b4d8a1303796c48d9df85efd676a969a896d3c124cc7`  
+		Last Modified: Mon, 14 Aug 2017 18:17:32 GMT  
+		Size: 14.2 MB (14198897 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:20c1bedf30d2abafb826daa0dd6ee795c5826ab763de457f3fb6a5feda3c341c`  
-		Last Modified: Wed, 09 Aug 2017 19:34:55 GMT  
-		Size: 940.4 KB (940413 bytes)  
+	-	`sha256:09ae259fb8effd6870ee3955d0805fbf0f726e4bf1083381f7cf8639be2648cf`  
+		Last Modified: Mon, 14 Aug 2017 18:17:28 GMT  
+		Size: 940.4 KB (940415 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

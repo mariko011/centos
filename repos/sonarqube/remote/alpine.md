@@ -1,7 +1,7 @@
 ## `sonarqube:alpine`
 
 ```console
-$ docker pull sonarqube@sha256:a90bc16d5c36e0f7bee848a9dfe23ee2bafcebf5066f594d1b998d3f7b4de5fb
+$ docker pull sonarqube@sha256:5fd1012aea5ea3e77ebe280a690ec094aa8aff14ddc0f574ad5eba06d4e5c8ae
 ```
 
 -	Platforms:
@@ -9,11 +9,11 @@ $ docker pull sonarqube@sha256:a90bc16d5c36e0f7bee848a9dfe23ee2bafcebf5066f594d1
 
 ### `sonarqube:alpine` - linux; amd64
 
--	Docker Version: 17.03.1-ce
+-	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **216.7 MB (216715741 bytes)**  
+-	Total Size: **220.2 MB (220233929 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:89ac14602df7422e67c283944d220a4e44f49e862c61f2b15992ca2bc0a58078`
+-	Image ID: `sha256:e8471aa0231b2ce58717ee58202c2e367da44937e21200f369c22b5dd629a933`
 -	Entrypoint: `[".\/bin\/run.sh"]`
 
 ```dockerfile
@@ -35,19 +35,19 @@ ENV JAVA_VERSION=8u131
 ENV JAVA_ALPINE_VERSION=8.131.11-r2
 # Wed, 28 Jun 2017 20:04:56 GMT
 RUN set -x 	&& apk add --no-cache 		openjdk8="$JAVA_ALPINE_VERSION" 	&& [ "$JAVA_HOME" = "$(docker-java-home)" ]
-# Wed, 28 Jun 2017 23:25:12 GMT
-ENV SONAR_VERSION=6.4 SONARQUBE_HOME=/opt/sonarqube SONARQUBE_JDBC_USERNAME=sonar SONARQUBE_JDBC_PASSWORD=sonar SONARQUBE_JDBC_URL=
-# Wed, 28 Jun 2017 23:25:12 GMT
+# Mon, 14 Aug 2017 17:58:01 GMT
+ENV SONAR_VERSION=6.5 SONARQUBE_HOME=/opt/sonarqube SONARQUBE_JDBC_USERNAME=sonar SONARQUBE_JDBC_PASSWORD=sonar SONARQUBE_JDBC_URL=
+# Mon, 14 Aug 2017 17:58:02 GMT
 EXPOSE 9000/tcp
-# Wed, 28 Jun 2017 23:26:09 GMT
+# Mon, 14 Aug 2017 17:58:17 GMT
 RUN set -x     && apk add --no-cache gnupg unzip     && apk add --no-cache libressl wget     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys F1182E81C792928921DBCAB4CFCA4A29D26468DE     && mkdir /opt     && cd /opt     && wget -O sonarqube.zip --no-verbose https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip     && wget -O sonarqube.zip.asc --no-verbose https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-$SONAR_VERSION.zip.asc     && gpg --batch --verify sonarqube.zip.asc sonarqube.zip     && unzip sonarqube.zip     && mv sonarqube-$SONAR_VERSION sonarqube     && rm sonarqube.zip*     && rm -rf $SONARQUBE_HOME/bin/*
-# Wed, 28 Jun 2017 23:26:13 GMT
+# Mon, 14 Aug 2017 17:58:17 GMT
 VOLUME [/opt/sonarqube/data]
-# Wed, 28 Jun 2017 23:26:14 GMT
+# Mon, 14 Aug 2017 17:58:18 GMT
 WORKDIR /opt/sonarqube
-# Wed, 28 Jun 2017 23:26:16 GMT
+# Mon, 14 Aug 2017 17:58:18 GMT
 COPY file:83e169627dc34c4308fd222d47a1ae7c388a283efdc49980a885a8788308a052 in /opt/sonarqube/bin/ 
-# Wed, 28 Jun 2017 23:26:41 GMT
+# Mon, 14 Aug 2017 17:58:19 GMT
 ENTRYPOINT ["./bin/run.sh"]
 ```
 
@@ -64,11 +64,11 @@ ENTRYPOINT ["./bin/run.sh"]
 		Last Modified: Thu, 29 Jun 2017 23:42:08 GMT  
 		Size: 70.1 MB (70050180 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9945b945d66e98b87586f5f6e1b4291462ab1f7323631aa8fc73081469e0348c`  
-		Last Modified: Fri, 30 Jun 2017 02:10:34 GMT  
-		Size: 144.7 MB (144674495 bytes)  
+	-	`sha256:c2fca72339fa9f6c933526d1420427487dbc0f15aa7666e8336b422d66b0a8e9`  
+		Last Modified: Mon, 14 Aug 2017 17:59:20 GMT  
+		Size: 148.2 MB (148192684 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9f783656f8e230d0e01865e42f6a8bc2b45f684c13a1a02490e067a102df4428`  
-		Last Modified: Fri, 30 Jun 2017 02:10:22 GMT  
-		Size: 433.0 B  
+	-	`sha256:583eef5874a19dc3834e18ce7cb433baf7ebfc2394ed39cd0ad43fe4435b87bb`  
+		Last Modified: Mon, 14 Aug 2017 17:59:10 GMT  
+		Size: 432.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
