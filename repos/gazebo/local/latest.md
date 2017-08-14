@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:32f0d4cf03b5b4ed84389e45432be9d5fd4684d1ae066e6440b4be86391754e1`
-- Created: `2017-07-20T19:43:54.790139876Z`
-- Virtual Size: ~ 1.40 Gb  
+- Image ID: `sha256:d07585ac2a02a72baa8c314e8ac951771b5ae1abf2493761be9995f3999068cf`
+- Created: `2017-08-10T22:51:04.973157693Z`
+- Virtual Size: ~ 1.41 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
@@ -95,20 +95,25 @@ $ apt-get source -qq --print-uris apparmor=2.10.95-0ubuntu2.6
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.10.95-0ubuntu2.6.debian.tar.xz' apparmor_2.10.95-0ubuntu2.6.debian.tar.xz 96164 SHA256:9864f5ba71c069fa31e85af3a9fd771cef26e67a1ecc785b0c1464d33ae5bfb1
 ```
 
-### `dpkg` source package: `apt=1.2.20`
+### `dpkg` source package: `apt=1.2.24`
 
 Binary Packages:
 
-- `apt=1.2.20`
-- `libapt-pkg5.0:amd64=1.2.20`
+- `apt=1.2.24`
+- `libapt-pkg5.0:amd64=1.2.24`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg5.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=1.2.24
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.24.dsc' apt_1.2.24.dsc 2392 SHA256:0032051ffe7a495c6c7fed449c3f465d0cb05aaeb53667ec7834c7566cef1ccd
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_1.2.24.tar.xz' apt_1.2.24.tar.xz 2059044 SHA256:fa1311a9ce00e72379a0a3bc6d240ba30c0968cfbbb3472859e50b99e24e9598
+```
 
 ### `dpkg` source package: `armadillo=1:6.500.5+dfsg-1`
 
@@ -230,18 +235,23 @@ $ apt-get source -qq --print-uris avahi=0.6.32~rc+dfsg-1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.6.32~rc+dfsg-1ubuntu2.debian.tar.xz' avahi_0.6.32~rc+dfsg-1ubuntu2.debian.tar.xz 31772 SHA256:cf53b2d0685ca7a8abb0fdc23b4d5875640bdd27b2715bea25b9dff657aaf451
 ```
 
-### `dpkg` source package: `base-files=9.4ubuntu4.4`
+### `dpkg` source package: `base-files=9.4ubuntu4.5`
 
 Binary Packages:
 
-- `base-files=9.4ubuntu4.4`
+- `base-files=9.4ubuntu4.5`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=9.4ubuntu4.5
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.5.dsc' base-files_9.4ubuntu4.5.dsc 1539 SHA256:168184a051640e38ec02ff4fa7033f724f27be48e3eb92c04fa24b6cdb520fdd
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_9.4ubuntu4.5.tar.xz' base-files_9.4ubuntu4.5.tar.xz 62980 SHA256:4cbd2cdb0373df23a31f6daa065f348c18b9e95c76eb4fc469f4df3ab8e46738
+```
 
 ### `dpkg` source package: `base-passwd=3.5.39`
 
@@ -301,11 +311,11 @@ $ apt-get source -qq --print-uris bind9=1:9.10.3.dfsg.P4-8ubuntu1.7
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.10.3.dfsg.P4-8ubuntu1.7.debian.tar.xz' bind9_9.10.3.dfsg.P4-8ubuntu1.7.debian.tar.xz 85304 SHA256:00d05c5d47f23c7b0dfe39c01c8f5af6fb488e6405b8701f802615919dcec798
 ```
 
-### `dpkg` source package: `binutils=2.26.1-1ubuntu1~16.04.3`
+### `dpkg` source package: `binutils=2.26.1-1ubuntu1~16.04.4`
 
 Binary Packages:
 
-- `binutils=2.26.1-1ubuntu1~16.04.3`
+- `binutils=2.26.1-1ubuntu1~16.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 
@@ -316,10 +326,10 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris binutils=2.26.1-1ubuntu1~16.04.3
-'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.3.dsc' binutils_2.26.1-1ubuntu1~16.04.3.dsc 4028 SHA256:ea10459b50be0beb8d6f1957c269e8eafb88c293c91b7d53a3bdcc6f5ea7a749
-'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1.orig.tar.gz' binutils_2.26.1.orig.tar.gz 34868933 SHA256:dd9c3e37c266e4fefba68e444e2a00538b3c902dd31bf4912d90dca6d830a2a1
-'http://security.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.3.diff.gz' binutils_2.26.1-1ubuntu1~16.04.3.diff.gz 226341 SHA256:e789b7a18634a582895934ab2b6b08fc4b15294cef51541e4ba5c4fad1343154
+$ apt-get source -qq --print-uris binutils=2.26.1-1ubuntu1~16.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.4.dsc' binutils_2.26.1-1ubuntu1~16.04.4.dsc 4028 SHA256:be3feab51074bcbd032425dc9e54cee17da022fd70961f3fa9d44ebdab56a81d
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1.orig.tar.gz' binutils_2.26.1.orig.tar.gz 34868933 SHA256:dd9c3e37c266e4fefba68e444e2a00538b3c902dd31bf4912d90dca6d830a2a1
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.26.1-1ubuntu1~16.04.4.diff.gz' binutils_2.26.1-1ubuntu1~16.04.4.diff.gz 233084 SHA256:bf53a639bf8603ad4b48d50933e14b5a01c7f48ba0e5876dbfacbc562dd6d217
 ```
 
 ### `dpkg` source package: `boost-defaults=1.58.0.1ubuntu1`
@@ -2188,11 +2198,11 @@ $ apt-get source -qq --print-uris keyutils=1.5.9-8ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.5.9-8ubuntu1.debian.tar.xz' keyutils_1.5.9-8ubuntu1.debian.tar.xz 16716 SHA256:36f69846dfeb1e7abdd39dace57a43f9637e426cf4c5252dd9990af36488249b
 ```
 
-### `dpkg` source package: `kmod=22-1ubuntu4`
+### `dpkg` source package: `kmod=22-1ubuntu5`
 
 Binary Packages:
 
-- `libkmod2:amd64=22-1ubuntu4`
+- `libkmod2:amd64=22-1ubuntu5`
 
 Licenses: (parsed from: `/usr/share/doc/libkmod2/copyright`)
 
@@ -2202,10 +2212,10 @@ Licenses: (parsed from: `/usr/share/doc/libkmod2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris kmod=22-1ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu4.dsc' kmod_22-1ubuntu4.dsc 2143 SHA256:c11ad8116cf2d9f868a490dd2fd3e52518e9c07026864e204a90ffa2c97ccb79
+$ apt-get source -qq --print-uris kmod=22-1ubuntu5
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.dsc' kmod_22-1ubuntu5.dsc 2125 SHA256:b1d485fc556faafd7d65e73dc9869991adbd6cc141019bac19b7b9c7f90e2c6b
 'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22.orig.tar.xz' kmod_22.orig.tar.xz 160576 SHA256:158cbbca15c570eb2f4ce29a64cae785cb377a200cf62d6f70ca52e3d33325f3
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu4.debian.tar.xz' kmod_22-1ubuntu4.debian.tar.xz 13644 SHA256:6b2a68f8333222f3b8cfb80d81d5fc936d90365e346c5092086ea148ec1d4ec0
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_22-1ubuntu5.debian.tar.xz' kmod_22-1ubuntu5.debian.tar.xz 14376 SHA256:b09c84ec2fb693df04f9e5366d093ac71fb981bbfc2852ca08be1ed3b754651c
 ```
 
 ### `dpkg` source package: `krb5=1.13.2+dfsg-5ubuntu2`
@@ -2707,23 +2717,29 @@ $ apt-get source -qq --print-uris libdc1394-22=2.2.4-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/libd/libdc1394-22/libdc1394-22_2.2.4-1.debian.tar.xz' libdc1394-22_2.2.4-1.debian.tar.xz 8196 SHA256:7421eee4b233bc71f2c9b0c7b015bec7785ec048a1e6e462ed84853740f9a15e
 ```
 
-### `dpkg` source package: `libdrm=2.4.70-1~ubuntu16.04.1`
+### `dpkg` source package: `libdrm=2.4.76-1~ubuntu16.04.1`
 
 Binary Packages:
 
-- `libdrm-amdgpu1:amd64=2.4.70-1~ubuntu16.04.1`
-- `libdrm-dev:amd64=2.4.70-1~ubuntu16.04.1`
-- `libdrm-intel1:amd64=2.4.70-1~ubuntu16.04.1`
-- `libdrm-nouveau2:amd64=2.4.70-1~ubuntu16.04.1`
-- `libdrm-radeon1:amd64=2.4.70-1~ubuntu16.04.1`
-- `libdrm2:amd64=2.4.70-1~ubuntu16.04.1`
+- `libdrm-amdgpu1:amd64=2.4.76-1~ubuntu16.04.1`
+- `libdrm-dev:amd64=2.4.76-1~ubuntu16.04.1`
+- `libdrm-intel1:amd64=2.4.76-1~ubuntu16.04.1`
+- `libdrm-nouveau2:amd64=2.4.76-1~ubuntu16.04.1`
+- `libdrm-radeon1:amd64=2.4.76-1~ubuntu16.04.1`
+- `libdrm2:amd64=2.4.76-1~ubuntu16.04.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libdrm=2.4.76-1~ubuntu16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.76-1~ubuntu16.04.1.dsc' libdrm_2.4.76-1~ubuntu16.04.1.dsc 3021 SHA256:7072b973cad6370827705d69311cdc7c97d3094b01b2bf7f06ee74eb93f8d900
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.76.orig.tar.gz' libdrm_2.4.76.orig.tar.gz 1060154 SHA256:6e3fb50d7500acf06f7eed44d5b1d33cda26aef7f5ae6667ddcc626b435c2531
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.76-1~ubuntu16.04.1.diff.gz' libdrm_2.4.76-1~ubuntu16.04.1.diff.gz 46437 SHA256:162087a68e52192d7d5c5ca3a98bdc8ec28c4b24bc484ccfa95918bfe384176c
+```
 
 ### `dpkg` source package: `libedit=3.1-20150325-1ubuntu2`
 
@@ -3039,24 +3055,25 @@ $ apt-get source -qq --print-uris libiec61883=1.2.0-0.2
 'http://archive.ubuntu.com/ubuntu/pool/main/libi/libiec61883/libiec61883_1.2.0-0.2.diff.gz' libiec61883_1.2.0-0.2.diff.gz 6711 SHA256:84c54267c7fec62d2dbf9123057eba1ea9cffc0d29968cd747feb22020ddf71d
 ```
 
-### `dpkg` source package: `libinput=1.2.3-1ubuntu1`
+### `dpkg` source package: `libinput=1.6.3-1ubuntu1~16.04.1`
 
 Binary Packages:
 
-- `libinput10:amd64=1.2.3-1ubuntu1`
+- `libinput-bin=1.6.3-1ubuntu1~16.04.1`
+- `libinput10:amd64=1.6.3-1ubuntu1~16.04.1`
 
-Licenses: (parsed from: `/usr/share/doc/libinput10/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libinput-bin/copyright`, `/usr/share/doc/libinput10/copyright`)
 
+- `Expat`
 - `GPL-2`
-- `X11`
 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libinput=1.2.3-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.2.3-1ubuntu1.dsc' libinput_1.2.3-1ubuntu1.dsc 2331 SHA256:d38385cabbcd9996e181e007c6e2c98b40ee5059d756c41dd1f5fd528779dcdb
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.2.3.orig.tar.xz' libinput_1.2.3.orig.tar.xz 599764 SHA256:510a253174970a420a5903c0c6a5861b714f3a48c1c8b8ddc3b019daaaa00947
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.2.3-1ubuntu1.debian.tar.xz' libinput_1.2.3-1ubuntu1.debian.tar.xz 19336 SHA256:e9f5ba9f4321ce26c5abc5b54dc8050b74f5d6e904ee4ce8608880d1cabc99ec
+$ apt-get source -qq --print-uris libinput=1.6.3-1ubuntu1~16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.6.3-1ubuntu1~16.04.1.dsc' libinput_1.6.3-1ubuntu1~16.04.1.dsc 2382 SHA256:8281be25f0b5e4441d6c77c544bd04972428f92e56e7055436873dce03af66c1
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.6.3.orig.tar.xz' libinput_1.6.3.orig.tar.xz 654356 SHA256:dbe4b74308afec860d40925217f285776a4e7df423f71f74ff73cb84a04b2281
+'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.6.3-1ubuntu1~16.04.1.debian.tar.xz' libinput_1.6.3-1ubuntu1~16.04.1.debian.tar.xz 19324 SHA256:021d03b082d8169f5f3a02086b822de458109362a236b0030e60d2b4205c4f6f
 ```
 
 ### `dpkg` source package: `libjpeg-turbo=1.4.2-0ubuntu3`
@@ -3766,13 +3783,13 @@ $ apt-get source -qq --print-uris libvpx=1.5.0-2ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/libv/libvpx/libvpx_1.5.0-2ubuntu1.debian.tar.xz' libvpx_1.5.0-2ubuntu1.debian.tar.xz 12488 SHA256:a213fd843941bc7c0c6cc6309ee7f44fab517281793a50345ef3d68823e5c402
 ```
 
-### `dpkg` source package: `libwacom=0.18-1`
+### `dpkg` source package: `libwacom=0.22-1~ubuntu16.04.1`
 
 Binary Packages:
 
-- `libwacom-bin=0.18-1`
-- `libwacom-common=0.18-1`
-- `libwacom2:amd64=0.18-1`
+- `libwacom-bin=0.22-1~ubuntu16.04.1`
+- `libwacom-common=0.22-1~ubuntu16.04.1`
+- `libwacom2:amd64=0.22-1~ubuntu16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libwacom-bin/copyright`, `/usr/share/doc/libwacom-common/copyright`, `/usr/share/doc/libwacom2/copyright`)
 
@@ -3782,10 +3799,10 @@ Licenses: (parsed from: `/usr/share/doc/libwacom-bin/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libwacom=0.18-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwacom/libwacom_0.18-1.dsc' libwacom_0.18-1.dsc 2100 SHA256:d6154972a884f299be4ec11dbac755f035f7e02a0a84ec14685cc1e8319a7e8d
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwacom/libwacom_0.18.orig.tar.bz2' libwacom_0.18.orig.tar.bz2 345926 SHA256:620fe1cac4d025ea466c38f5f02cfeb5562b14902a521d881c5b7329657422e6
-'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwacom/libwacom_0.18-1.debian.tar.xz' libwacom_0.18-1.debian.tar.xz 3696 SHA256:774faa9914396e8d187eaf876c08fc665e88afa7d12604fd5e09ca5ed6656344
+$ apt-get source -qq --print-uris libwacom=0.22-1~ubuntu16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwacom/libwacom_0.22-1~ubuntu16.04.1.dsc' libwacom_0.22-1~ubuntu16.04.1.dsc 2317 SHA256:ff2c48c5fabb2120f4ea88f88457940ae4b3008f03d4435c997d847cc4649521
+'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwacom/libwacom_0.22.orig.tar.bz2' libwacom_0.22.orig.tar.bz2 362844 SHA256:8dc0ed330ccb67bc421d189a8e6c7eba1f309512618ae648988f761f948736ce
+'http://archive.ubuntu.com/ubuntu/pool/main/libw/libwacom/libwacom_0.22-1~ubuntu16.04.1.debian.tar.xz' libwacom_0.22-1~ubuntu16.04.1.debian.tar.xz 4044 SHA256:ac41b60e2d60fc176e0338b69c15725ad73e859eeb1bdf1708fe55a990b8f844
 ```
 
 ### `dpkg` source package: `libwebp=0.4.4-1`
@@ -4230,27 +4247,33 @@ $ apt-get source -qq --print-uris linux-atm=1:2.5.1-1.5
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux-atm/linux-atm_2.5.1-1.5.debian.tar.gz' linux-atm_2.5.1-1.5.debian.tar.gz 10723 SHA256:9b2325859b3fd008b588a3897e713f52137abae08d1f5a44f5661f45a87f4d29
 ```
 
-### `dpkg` source package: `linux=4.4.0-83.106`
+### `dpkg` source package: `linux=4.4.0-91.114`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-83.106`
+- `linux-libc-dev:amd64=4.4.0-91.114`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 - `redpine-signals`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.4.0-91.114
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-91.114.dsc' linux_4.4.0-91.114.dsc 9617 SHA256:1ece6bcd5f98144025c26ccfff63ad6c72ae0744baae3aa83711d811f8406ab0
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-91.114.diff.gz' linux_4.4.0-91.114.diff.gz 13104271 SHA256:0d1e8cff38c52a2740251d00b58c6aa8746bedf687594ce640f7048823f05047
+```
 
-### `dpkg` source package: `llvm-toolchain-3.8=1:3.8-2ubuntu4`
+### `dpkg` source package: `llvm-toolchain-4.0=1:4.0-1ubuntu1~16.04.2`
 
 Binary Packages:
 
-- `libllvm3.8:amd64=1:3.8-2ubuntu4`
+- `libllvm4.0:amd64=1:4.0-1ubuntu1~16.04.2`
 
-Licenses: (parsed from: `/usr/share/doc/libllvm3.8/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libllvm4.0/copyright`)
 
 - `ARM`
 - `Apple`
@@ -4268,15 +4291,36 @@ Licenses: (parsed from: `/usr/share/doc/libllvm3.8/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris llvm-toolchain-3.8=1:3.8-2ubuntu4
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-3.8/llvm-toolchain-3.8_3.8-2ubuntu4.dsc' llvm-toolchain-3.8_3.8-2ubuntu4.dsc 5787 SHA256:5d79cd94951ee25d00e4a9fd5de62f5bee994a745f2b87538b5b0c27bfd20784
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-3.8/llvm-toolchain-3.8_3.8.orig-clang-tools-extra.tar.bz2' llvm-toolchain-3.8_3.8.orig-clang-tools-extra.tar.bz2 357797 SHA256:829294015ce07d3f115f5dda2422c9c4efbcb0f3d704df9673b0f3ad238ae390
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-3.8/llvm-toolchain-3.8_3.8.orig-clang.tar.bz2' llvm-toolchain-3.8_3.8.orig-clang.tar.bz2 10607483 SHA256:c9a786040bbda4f2aa7d26474567bf4d9c9b9a0fa5b0f5fea51c6f4f37fe62d1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-3.8/llvm-toolchain-3.8_3.8.orig-compiler-rt.tar.bz2' llvm-toolchain-3.8_3.8.orig-compiler-rt.tar.bz2 1641135 SHA256:93e34592b651377ed86d6085e1b71cfad8c4023ded934d5f03ca700eb56a888e
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-3.8/llvm-toolchain-3.8_3.8.orig-lldb.tar.bz2' llvm-toolchain-3.8_3.8.orig-lldb.tar.bz2 3973673 SHA256:9664e4f349d22de29fd4eb6945c93995c72a4a19aaa176c31ba592c7d4fcf349
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-3.8/llvm-toolchain-3.8_3.8.orig-polly.tar.bz2' llvm-toolchain-3.8_3.8.orig-polly.tar.bz2 1995671 SHA256:c0f408b252685dfb15a7e0818305efacbf56190f128f5f08fea36284f7e4327a
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-3.8/llvm-toolchain-3.8_3.8.orig.tar.bz2' llvm-toolchain-3.8_3.8.orig.tar.bz2 19185811 SHA256:e9f28eef0e452efcf03fea2f24e336c126bd63578c9db21bf1544f326bbd8405
-'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-3.8/llvm-toolchain-3.8_3.8-2ubuntu4.debian.tar.xz' llvm-toolchain-3.8_3.8-2ubuntu4.debian.tar.xz 60068 SHA256:1f5e55a6c5299cfd64ccd341f302c0b199cb6126d89fe6e911d279e5dc8eee80
+$ apt-get source -qq --print-uris llvm-toolchain-4.0=1:4.0-1ubuntu1~16.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0-1ubuntu1~16.04.2.dsc' llvm-toolchain-4.0_4.0-1ubuntu1~16.04.2.dsc 7168 SHA256:c993a99aaceb8470181703a6690c78b57dc0a7e83b78e98696e5d8a83236f161
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0.orig-clang-tools-extra.tar.bz2' llvm-toolchain-4.0_4.0.orig-clang-tools-extra.tar.bz2 615925 SHA256:1339b7c8d0e1ef6f55b3f1895572ce8e88031c3203da2afb789708c3f542bc7c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0.orig-clang.tar.bz2' llvm-toolchain-4.0_4.0.orig-clang.tar.bz2 12019449 SHA256:122e471d80dad0d17890e58d0aefb0e890803d775a6dab1ec481e21edbb678fd
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0.orig-compiler-rt.tar.bz2' llvm-toolchain-4.0_4.0.orig-compiler-rt.tar.bz2 1846173 SHA256:db20ba806a188e3f30f2f4d87abeac2d90c2e3a19989e92013e5d96a48ec9ceb
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0.orig-lld.tar.bz2' llvm-toolchain-4.0_4.0.orig-lld.tar.bz2 619588 SHA256:c0b84f041129963b402921a128298f9c62353c44ab7fee33e38d616a68646b76
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0.orig-lldb.tar.bz2' llvm-toolchain-4.0_4.0.orig-lldb.tar.bz2 11087659 SHA256:58aacac22a6e97eb4e51ab83983ad59bb4895033337f0777e7a69361b0104c96
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0.orig-polly.tar.bz2' llvm-toolchain-4.0_4.0.orig-polly.tar.bz2 3378274 SHA256:26f6a7072b8b85e25086c0a2488558105999c702c97b3444b0681aa9ce55a301
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0.orig.tar.bz2' llvm-toolchain-4.0_4.0.orig.tar.bz2 24753981 SHA256:4fc55e7f1c296709930d8852315cfc0b10ce979efb9d2b0c7a051f1378f484be
+'http://archive.ubuntu.com/ubuntu/pool/main/l/llvm-toolchain-4.0/llvm-toolchain-4.0_4.0-1ubuntu1~16.04.2.debian.tar.xz' llvm-toolchain-4.0_4.0-1ubuntu1~16.04.2.debian.tar.xz 62544 SHA256:7f8b86873f73fde8e4059e8e398080e16bb0f54fa1195a4755826675ae3eda39
+```
+
+### `dpkg` source package: `lm-sensors=1:3.4.0-2`
+
+Binary Packages:
+
+- `libsensors4:amd64=1:3.4.0-2`
+
+Licenses: (parsed from: `/usr/share/doc/libsensors4/copyright`)
+
+- `GPL`
+- `GPL-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris lm-sensors=1:3.4.0-2
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lm-sensors/lm-sensors_3.4.0-2.dsc' lm-sensors_3.4.0-2.dsc 1964 SHA256:bd3cecc8bbef17a0213d1ec38bdaca3a1cafae93cab116d17b5d7eec9a62d60f
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lm-sensors/lm-sensors_3.4.0.orig.tar.bz2' lm-sensors_3.4.0.orig.tar.bz2 175802 SHA256:e0579016081a262dd23eafe1d22b41ebde78921e73a1dcef71e05e424340061f
+'http://archive.ubuntu.com/ubuntu/pool/main/l/lm-sensors/lm-sensors_3.4.0-2.debian.tar.xz' lm-sensors_3.4.0-2.debian.tar.xz 28484 SHA256:efdb87b87c37be8a1eb478d78046838c3ab0178ffad23dce3f159fbf89e24d9c
 ```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu0.2`
@@ -4426,30 +4470,36 @@ $ apt-get source -qq --print-uris mawk=1.3.3-17ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.3-17ubuntu2.diff.gz' mawk_1.3.3-17ubuntu2.diff.gz 63882 SHA256:670103046767474be29e80f2143dc67e3d0b958972f5942c3df94883f978eded
 ```
 
-### `dpkg` source package: `mesa=12.0.6-0ubuntu0.16.04.1`
+### `dpkg` source package: `mesa=17.0.7-0ubuntu0.16.04.1`
 
 Binary Packages:
 
-- `libegl1-mesa:amd64=12.0.6-0ubuntu0.16.04.1`
-- `libegl1-mesa-dev:amd64=12.0.6-0ubuntu0.16.04.1`
-- `libgbm1:amd64=12.0.6-0ubuntu0.16.04.1`
-- `libgl1-mesa-dev:amd64=12.0.6-0ubuntu0.16.04.1`
-- `libgl1-mesa-dri:amd64=12.0.6-0ubuntu0.16.04.1`
-- `libgl1-mesa-glx:amd64=12.0.6-0ubuntu0.16.04.1`
-- `libglapi-mesa:amd64=12.0.6-0ubuntu0.16.04.1`
-- `libgles2-mesa:amd64=12.0.6-0ubuntu0.16.04.1`
-- `libgles2-mesa-dev:amd64=12.0.6-0ubuntu0.16.04.1`
-- `libwayland-egl1-mesa:amd64=12.0.6-0ubuntu0.16.04.1`
-- `mesa-common-dev:amd64=12.0.6-0ubuntu0.16.04.1`
-- `mesa-vdpau-drivers:amd64=12.0.6-0ubuntu0.16.04.1`
+- `libegl1-mesa:amd64=17.0.7-0ubuntu0.16.04.1`
+- `libegl1-mesa-dev:amd64=17.0.7-0ubuntu0.16.04.1`
+- `libgbm1:amd64=17.0.7-0ubuntu0.16.04.1`
+- `libgl1-mesa-dev:amd64=17.0.7-0ubuntu0.16.04.1`
+- `libgl1-mesa-dri:amd64=17.0.7-0ubuntu0.16.04.1`
+- `libgl1-mesa-glx:amd64=17.0.7-0ubuntu0.16.04.1`
+- `libglapi-mesa:amd64=17.0.7-0ubuntu0.16.04.1`
+- `libgles2-mesa:amd64=17.0.7-0ubuntu0.16.04.1`
+- `libgles2-mesa-dev:amd64=17.0.7-0ubuntu0.16.04.1`
+- `libwayland-egl1-mesa:amd64=17.0.7-0ubuntu0.16.04.1`
+- `mesa-common-dev:amd64=17.0.7-0ubuntu0.16.04.1`
+- `mesa-vdpau-drivers:amd64=17.0.7-0ubuntu0.16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libegl1-mesa/copyright`, `/usr/share/doc/libegl1-mesa-dev/copyright`, `/usr/share/doc/libgbm1/copyright`, `/usr/share/doc/libgl1-mesa-dev/copyright`, `/usr/share/doc/libgl1-mesa-dri/copyright`, `/usr/share/doc/libgl1-mesa-glx/copyright`, `/usr/share/doc/libglapi-mesa/copyright`, `/usr/share/doc/libgles2-mesa/copyright`, `/usr/share/doc/libgles2-mesa-dev/copyright`, `/usr/share/doc/libwayland-egl1-mesa/copyright`, `/usr/share/doc/mesa-common-dev/copyright`, `/usr/share/doc/mesa-vdpau-drivers/copyright`)
 
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris mesa=17.0.7-0ubuntu0.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.0.7-0ubuntu0.16.04.1.dsc' mesa_17.0.7-0ubuntu0.16.04.1.dsc 4898 SHA256:357da2e616151ef8dd99e568efac40a6868c088357d9548ffbe3b444da4f2e3b
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.0.7.orig.tar.gz' mesa_17.0.7.orig.tar.gz 15931608 SHA256:bc68d13c6b1a053b855ac453ebf7e62bd89511adf44bad6c613e09f7fa13390a
+'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_17.0.7-0ubuntu0.16.04.1.diff.gz' mesa_17.0.7-0ubuntu0.16.04.1.diff.gz 123236 SHA256:d180bd2c604edee94692bd6aa8753d334c56d700732ddf75db89c74482cdd58c
+```
 
 ### `dpkg` source package: `mime-support=3.59ubuntu1`
 
@@ -5693,13 +5743,13 @@ $ apt-get source -qq --print-uris schroedinger=1.0.11-2.1build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/schroedinger/schroedinger_1.0.11-2.1build1.debian.tar.xz' schroedinger_1.0.11-2.1build1.debian.tar.xz 16252 SHA256:ade22a54ba77a9f8796487ef70f929abc5d7e4b527cba7c30f4765b5f7096a22
 ```
 
-### `dpkg` source package: `sdformat5=5.1.0-1~xenial`
+### `dpkg` source package: `sdformat5=5.2.0-1~xenial`
 
 Binary Packages:
 
-- `libsdformat5:amd64=5.1.0-1~xenial`
-- `libsdformat5-dev:amd64=5.1.0-1~xenial`
-- `sdformat-sdf=5.1.0-1~xenial`
+- `libsdformat5:amd64=5.2.0-1~xenial`
+- `libsdformat5-dev:amd64=5.2.0-1~xenial`
+- `sdformat-sdf=5.2.0-1~xenial`
 
 Licenses: (parsed from: `/usr/share/doc/libsdformat5/copyright`, `/usr/share/doc/libsdformat5-dev/copyright`, `/usr/share/doc/sdformat-sdf/copyright`)
 
@@ -5976,14 +6026,14 @@ $ apt-get source -qq --print-uris superlu=4.3+dfsg-3
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/superlu/superlu_4.3+dfsg-3.debian.tar.xz' superlu_4.3+dfsg-3.debian.tar.xz 8472 SHA256:49b450efda3b636894fb66b0998c6246d5df1f6ad9135a5c7c4983dd630c8fc4
 ```
 
-### `dpkg` source package: `systemd=229-4ubuntu17`
+### `dpkg` source package: `systemd=229-4ubuntu19`
 
 Binary Packages:
 
-- `libsystemd0:amd64=229-4ubuntu17`
-- `libudev1:amd64=229-4ubuntu17`
-- `systemd=229-4ubuntu17`
-- `systemd-sysv=229-4ubuntu17`
+- `libsystemd0:amd64=229-4ubuntu19`
+- `libudev1:amd64=229-4ubuntu19`
+- `systemd=229-4ubuntu19`
+- `systemd-sysv=229-4ubuntu19`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
 
@@ -5995,8 +6045,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=229-4ubuntu19
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu19.dsc' systemd_229-4ubuntu19.dsc 3838 SHA256:a49615c784f23999f7fb1a6015097e1a8d8dff7c4dc220ed59d06dcc9efd0a2c
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229.orig.tar.gz' systemd_229.orig.tar.gz 4319173 SHA256:b51b0a48d1beb388d95bd6a98d62be05490335d4bb388aefecdcb576e91e0741
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_229-4ubuntu19.debian.tar.xz' systemd_229-4ubuntu19.debian.tar.xz 247552 SHA256:7efc886d38fa7510462bda29dea7d22023fa8265ff5bb700f3715bf50b603d77
+```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.3ubuntu2`
 
@@ -6350,33 +6406,34 @@ $ apt-get source -qq --print-uris wavpack=4.75.2-2
 'http://archive.ubuntu.com/ubuntu/pool/main/w/wavpack/wavpack_4.75.2-2.debian.tar.xz' wavpack_4.75.2-2.debian.tar.xz 5812 SHA256:d96c3ae7e4715e1743bc6b83f432c954a3512973609b0df717731ba706ffc4a8
 ```
 
-### `dpkg` source package: `wayland=1.9.0-1`
+### `dpkg` source package: `wayland=1.12.0-1~ubuntu16.04.1`
 
 Binary Packages:
 
-- `libwayland-client0:amd64=1.9.0-1`
-- `libwayland-cursor0:amd64=1.9.0-1`
-- `libwayland-dev=1.9.0-1`
-- `libwayland-server0:amd64=1.9.0-1`
+- `libwayland-bin=1.12.0-1~ubuntu16.04.1`
+- `libwayland-client0:amd64=1.12.0-1~ubuntu16.04.1`
+- `libwayland-cursor0:amd64=1.12.0-1~ubuntu16.04.1`
+- `libwayland-dev:amd64=1.12.0-1~ubuntu16.04.1`
+- `libwayland-server0:amd64=1.12.0-1~ubuntu16.04.1`
 
-Licenses: (parsed from: `/usr/share/doc/libwayland-client0/copyright`, `/usr/share/doc/libwayland-cursor0/copyright`, `/usr/share/doc/libwayland-dev/copyright`, `/usr/share/doc/libwayland-server0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libwayland-bin/copyright`, `/usr/share/doc/libwayland-client0/copyright`, `/usr/share/doc/libwayland-cursor0/copyright`, `/usr/share/doc/libwayland-dev/copyright`, `/usr/share/doc/libwayland-server0/copyright`)
 
 - `X11`
 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris wayland=1.9.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.9.0-1.dsc' wayland_1.9.0-1.dsc 2485 SHA256:719b21a1c589651aab26a9bef6af55c49b2d759752403f10aa600a2588a5a67e
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.9.0.orig.tar.gz' wayland_1.9.0.orig.tar.gz 526826 SHA256:c4a4f2565a714a8fddba9e92400d0d506ce1ecbffc4e5707cf09f6ab943a1c46
-'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.9.0-1.diff.gz' wayland_1.9.0-1.diff.gz 7241 SHA256:6f22cf987f878b696f294078d682393d1bf6f1a5ad68469b59c4b41486059990
+$ apt-get source -qq --print-uris wayland=1.12.0-1~ubuntu16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.12.0-1~ubuntu16.04.1.dsc' wayland_1.12.0-1~ubuntu16.04.1.dsc 2451 SHA256:e4578012d73ad83ebfa79adc80db2f0eeef864d9d08c6ee36c9d6cdfbdb2d33b
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.12.0.orig.tar.gz' wayland_1.12.0.orig.tar.gz 575381 SHA256:428537c2887b608cabde189a6450fcade8877e03b063a72c84431b5753a34aef
+'http://archive.ubuntu.com/ubuntu/pool/main/w/wayland/wayland_1.12.0-1~ubuntu16.04.1.diff.gz' wayland_1.12.0-1~ubuntu16.04.1.diff.gz 10346 SHA256:9c99b3c3e6fe221d4a2975d5c0091b5c77c6afd2f61f4034b050952d9502dea1
 ```
 
-### `dpkg` source package: `x11proto-core=7.0.28-2ubuntu1`
+### `dpkg` source package: `x11proto-core=7.0.31-1~ubuntu16.04.1`
 
 Binary Packages:
 
-- `x11proto-core-dev=7.0.28-2ubuntu1`
+- `x11proto-core-dev=7.0.31-1~ubuntu16.04.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -6385,10 +6442,10 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris x11proto-core=7.0.28-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-core/x11proto-core_7.0.28-2ubuntu1.dsc' x11proto-core_7.0.28-2ubuntu1.dsc 2063 SHA256:7679af7c47fa152acf19564f41dc38c003b83ddc89d42fe2d00b45470f1c5057
-'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-core/x11proto-core_7.0.28.orig.tar.gz' x11proto-core_7.0.28.orig.tar.gz 367523 SHA256:6cabc8ce3fa2b1a2427871167b62c24d5b08a58bd3e81ed7aaf08f2bf6dbcfed
-'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-core/x11proto-core_7.0.28-2ubuntu1.diff.gz' x11proto-core_7.0.28-2ubuntu1.diff.gz 11609 SHA256:79e1bce8261354c04f01b574de5af1fa7a899865ccf8ee5a2e56c8f0ce49d827
+$ apt-get source -qq --print-uris x11proto-core=7.0.31-1~ubuntu16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-core/x11proto-core_7.0.31-1~ubuntu16.04.1.dsc' x11proto-core_7.0.31-1~ubuntu16.04.1.dsc 2079 SHA256:5fbc2bb209c59ed702e6591ee0badc9521832d9e6470a1da1aa72fbf4704abfd
+'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-core/x11proto-core_7.0.31.orig.tar.gz' x11proto-core_7.0.31.orig.tar.gz 367979 SHA256:6d755eaae27b45c5cc75529a12855fed5de5969b367ed05003944cf901ed43c7
+'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-core/x11proto-core_7.0.31-1~ubuntu16.04.1.diff.gz' x11proto-core_7.0.31-1~ubuntu16.04.1.diff.gz 29976 SHA256:49fc99eccdfa9f9c477979933dafe570c19b215861bf7473564311ed90fcd51b
 ```
 
 ### `dpkg` source package: `x11proto-damage=1:1.2.1-2`

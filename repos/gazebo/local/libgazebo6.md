@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:540261e83269786b3d3283e2245eb81afb41a12aa2f043eb21f7b64fe2bedd55`
-- Created: `2017-07-20T19:38:39.961030599Z`
+- Image ID: `sha256:e6deb1bc27dd126260f8ea822f83e0539d2e894e1ea5aa1070f2fcc8c14fc87d`
+- Created: `2017-08-10T22:33:12.59878214Z`
 - Virtual Size: ~ 1.40 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2852,23 +2852,29 @@ $ apt-get source -qq --print-uris libdc1394-22=2.2.1-2ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/universe/libd/libdc1394-22/libdc1394-22_2.2.1-2ubuntu2.debian.tar.gz' libdc1394-22_2.2.1-2ubuntu2.debian.tar.gz 9441 SHA256:592ee3cfd1fff7d2f01abf809e0172898599bb2b0f370973bc665e69779c6965
 ```
 
-### `dpkg` source package: `libdrm=2.4.67-1ubuntu0.14.04.1`
+### `dpkg` source package: `libdrm=2.4.67-1ubuntu0.14.04.2`
 
 Binary Packages:
 
-- `libdrm-amdgpu1:amd64=2.4.67-1ubuntu0.14.04.1`
-- `libdrm-dev:amd64=2.4.67-1ubuntu0.14.04.1`
-- `libdrm-intel1:amd64=2.4.67-1ubuntu0.14.04.1`
-- `libdrm-nouveau2:amd64=2.4.67-1ubuntu0.14.04.1`
-- `libdrm-radeon1:amd64=2.4.67-1ubuntu0.14.04.1`
-- `libdrm2:amd64=2.4.67-1ubuntu0.14.04.1`
+- `libdrm-amdgpu1:amd64=2.4.67-1ubuntu0.14.04.2`
+- `libdrm-dev:amd64=2.4.67-1ubuntu0.14.04.2`
+- `libdrm-intel1:amd64=2.4.67-1ubuntu0.14.04.2`
+- `libdrm-nouveau2:amd64=2.4.67-1ubuntu0.14.04.2`
+- `libdrm-radeon1:amd64=2.4.67-1ubuntu0.14.04.2`
+- `libdrm2:amd64=2.4.67-1ubuntu0.14.04.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libdrm=2.4.67-1ubuntu0.14.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.67-1ubuntu0.14.04.2.dsc' libdrm_2.4.67-1ubuntu0.14.04.2.dsc 3236 SHA256:9660306fa70fbca3094b72c6849ed5304d5d8dbc36a983def7d89261484b696e
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.67.orig.tar.gz' libdrm_2.4.67.orig.tar.gz 957783 SHA256:4ae392513c4df30d88f10e69bf425a1dff960a5b4ccd4da621d9fc88523f7acb
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.67-1ubuntu0.14.04.2.diff.gz' libdrm_2.4.67-1ubuntu0.14.04.2.diff.gz 38034 SHA256:198af0daf342ee6d7a788cdd5a50e24cf5ac453a7443722ed3ac7f7a4ca88b19
+```
 
 ### `dpkg` source package: `libelf=0.8.13-5`
 
@@ -4466,18 +4472,24 @@ $ apt-get source -qq --print-uris libxxf86vm=1:1.1.3-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxxf86vm/libxxf86vm_1.1.3-1.diff.gz' libxxf86vm_1.1.3-1.diff.gz 5115 SHA256:5b51cc770666430c2c40e9a58395c72d7591f81bc5e7fd494397bbaf794b38e2
 ```
 
-### `dpkg` source package: `linux=3.13.0-125.174`
+### `dpkg` source package: `linux=3.13.0-128.177`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=3.13.0-125.174`
+- `linux-libc-dev:amd64=3.13.0-128.177`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=3.13.0-128.177
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-128.177.dsc' linux_3.13.0-128.177.dsc 8127 SHA256:6e389fa352deda8a7e901cf92b9efdef1004edb7afd3ee179029d80184f30ee7
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-128.177.diff.gz' linux_3.13.0-128.177.diff.gz 9495477 SHA256:294629e01ba9e5356d08b4fe32c738d1811718395b08db85217b9cc1e4a6d364
+```
 
 ### `dpkg` source package: `llvm-toolchain-3.4=1:3.4-1ubuntu3`
 
@@ -5015,11 +5027,11 @@ $ apt-get source -qq --print-uris newt=0.52.15-2ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/n/newt/newt_0.52.15-2ubuntu5.debian.tar.gz' newt_0.52.15-2ubuntu5.debian.tar.gz 51483 SHA256:3fcff25cd0f6f6e657ce27ec3cc3c10f92be86acb387d32b6fd91822db514a4b
 ```
 
-### `dpkg` source package: `ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.11`
+### `dpkg` source package: `ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.12`
 
 Binary Packages:
 
-- `ntpdate=1:4.2.6.p5+dfsg-3ubuntu2.14.04.11`
+- `ntpdate=1:4.2.6.p5+dfsg-3ubuntu2.14.04.12`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -5028,10 +5040,10 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.11
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.11.dsc' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.11.dsc 2371 SHA256:689f507a490d8e6294378675650592de5d55e5ff39de4a7e4f5ae3fb912f7a8b
+$ apt-get source -qq --print-uris ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.12
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.12.dsc' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.12.dsc 2394 SHA256:f8f2f694ef067bfd196fb7d9e7702299ba9180bf1061e8fd7f13afa2fc85f5b3
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg.orig.tar.gz' ntp_4.2.6.p5+dfsg.orig.tar.gz 4111997 SHA256:17f0b63e7e27de5cc999a4afdb96b2dbdf76c75181fca50e2395e49e5773dfc9
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.11.debian.tar.gz' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.11.debian.tar.gz 159573 SHA256:74c21ac32ada2082382e916d2497eabe5039965832d64cc210452755835044d7
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.12.debian.tar.xz' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.12.debian.tar.xz 115364 SHA256:d1e8ad9781fdbf1c3fd89f2b15b480379052834cf37e76ac30fedaf1de6d11d2
 ```
 
 ### `dpkg` source package: `numactl=2.0.9~rc5-1ubuntu3.14.04.2`
@@ -6013,11 +6025,11 @@ $ apt-get source -qq --print-uris resolvconf=1.69ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/r/resolvconf/resolvconf_1.69ubuntu1.1.tar.xz' resolvconf_1.69ubuntu1.1.tar.xz 71684 SHA256:46b1d11741afb5cf8e472678e0f518c1cef755ece617e7325895be83924e6636
 ```
 
-### `dpkg` source package: `rsyslog=7.4.4-1ubuntu2.6`
+### `dpkg` source package: `rsyslog=7.4.4-1ubuntu2.7`
 
 Binary Packages:
 
-- `rsyslog=7.4.4-1ubuntu2.6`
+- `rsyslog=7.4.4-1ubuntu2.7`
 
 Licenses: (parsed from: `/usr/share/doc/rsyslog/copyright`)
 
@@ -6028,8 +6040,14 @@ Licenses: (parsed from: `/usr/share/doc/rsyslog/copyright`)
 - `LGPL-3`
 - `LGPL-3.0+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris rsyslog=7.4.4-1ubuntu2.7
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rsyslog/rsyslog_7.4.4-1ubuntu2.7.dsc' rsyslog_7.4.4-1ubuntu2.7.dsc 2141 SHA256:98984b3f5e7f7fe25ea16d7e66e2d9faeda6917c3646458cdfca4a4b96671910
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rsyslog/rsyslog_7.4.4.orig.tar.gz' rsyslog_7.4.4.orig.tar.gz 2910075 SHA256:276d094d1e4c62c770ec8a72723667f119eee038912b79cf3337d439bc2f9087
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rsyslog/rsyslog_7.4.4-1ubuntu2.7.debian.tar.xz' rsyslog_7.4.4-1ubuntu2.7.debian.tar.xz 37272 SHA256:08fc2483f5badc70dda38160f33a211531694d791e157a9c15fb1bf0ca6ac4c9
+```
 
 ### `dpkg` source package: `rtmpdump=2.4+20121230.gitdf6c518-1ubuntu0.1`
 
@@ -6107,11 +6125,11 @@ Licenses: (parsed from: `/usr/share/doc/libsdformat3/copyright`, `/usr/share/doc
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `sdformat5=5.1.0-1~trusty`
+### `dpkg` source package: `sdformat5=5.2.0-1~trusty`
 
 Binary Packages:
 
-- `sdformat-sdf=5.1.0-1~trusty`
+- `sdformat-sdf=5.2.0-1~trusty`
 
 Licenses: (parsed from: `/usr/share/doc/sdformat-sdf/copyright`)
 
@@ -6894,18 +6912,24 @@ $ apt-get source -qq --print-uris x11proto-kb=1.0.6-2
 'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-kb/x11proto-kb_1.0.6-2.diff.gz' x11proto-kb_1.0.6-2.diff.gz 14128 SHA256:a33fddbe8c2cb0fb92137343e7fd86c52041152121ac427de5b55241f445d17b
 ```
 
-### `dpkg` source package: `x11proto-randr=1.5.0-1~trusty1`
+### `dpkg` source package: `x11proto-randr=1.5.0-1~trusty2`
 
 Binary Packages:
 
-- `x11proto-randr-dev=1.5.0-1~trusty1`
+- `x11proto-randr-dev=1.5.0-1~trusty2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris x11proto-randr=1.5.0-1~trusty2
+'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-randr/x11proto-randr_1.5.0-1~trusty2.dsc' x11proto-randr_1.5.0-1~trusty2.dsc 1933 SHA256:712353d53eb783275fb63d371072e0db353d4ca3af54e5c353d8cfd5df2912d6
+'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-randr/x11proto-randr_1.5.0.orig.tar.gz' x11proto-randr_1.5.0.orig.tar.gz 171254 SHA256:8f8a716d6daa6ba05df97d513960d35a39e040600bf04b313633f11679006fab
+'http://archive.ubuntu.com/ubuntu/pool/main/x/x11proto-randr/x11proto-randr_1.5.0-1~trusty2.diff.gz' x11proto-randr_1.5.0-1~trusty2.diff.gz 12841 SHA256:9fb80bb9367c1005d43c6de5a41d391e08af6c714af7cbeded7177c74d9b979a
+```
 
 ### `dpkg` source package: `x11proto-render=2:0.11.1-2`
 
@@ -7124,18 +7148,24 @@ $ apt-get source -qq --print-uris xorg=1:7.7+1ubuntu8.1
 'http://archive.ubuntu.com/ubuntu/pool/main/x/xorg/xorg_7.7+1ubuntu8.1.tar.gz' xorg_7.7+1ubuntu8.1.tar.gz 928426 SHA256:c65f75257f226010a1f861786681cd49d1589a6041ad0d099271e145d2e81681
 ```
 
-### `dpkg` source package: `xtrans=1.3.5-1~ubuntu14.04.1`
+### `dpkg` source package: `xtrans=1.3.5-1~ubuntu14.04.2`
 
 Binary Packages:
 
-- `xtrans-dev=1.3.5-1~ubuntu14.04.1`
+- `xtrans-dev=1.3.5-1~ubuntu14.04.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris xtrans=1.3.5-1~ubuntu14.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xtrans/xtrans_1.3.5-1~ubuntu14.04.2.dsc' xtrans_1.3.5-1~ubuntu14.04.2.dsc 2033 SHA256:e8541f574a49ee31bad77d31b7f9442bcced693bb0fadc65537c3e44d2b1ebb4
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xtrans/xtrans_1.3.5.orig.tar.gz' xtrans_1.3.5.orig.tar.gz 227536 SHA256:b7a577c1b6c75030145e53b4793db9c88f9359ac49e7d771d4385d21b3e5945d
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xtrans/xtrans_1.3.5-1~ubuntu14.04.2.diff.gz' xtrans_1.3.5-1~ubuntu14.04.2.diff.gz 16309 SHA256:c0b67184dced4976787a25896655f94841f19191f6161026ad1dd7b896cfbade
+```
 
 ### `dpkg` source package: `xvidcore=2:1.3.2-9ubuntu1`
 

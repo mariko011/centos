@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6eca18afd5a42a02e82905ce6e56b203695f63576b57f8bd11adea92abd5348a`
-- Created: `2017-07-20T19:25:53.793104791Z`
+- Image ID: `sha256:7cc18ec38790012259dba1eef196872039a63728802fb80207a9c83c4f751867`
+- Created: `2017-08-10T22:29:32.290929072Z`
 - Virtual Size: ~ 572.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1901,21 +1901,27 @@ $ apt-get source -qq --print-uris libdap=3.12.0-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/libd/libdap/libdap_3.12.0-1.debian.tar.gz' libdap_3.12.0-1.debian.tar.gz 8969 SHA256:f6725b31411993e3f3fa625de416edca48bcb2d3133380132c34f42e6294de33
 ```
 
-### `dpkg` source package: `libdrm=2.4.67-1ubuntu0.14.04.1`
+### `dpkg` source package: `libdrm=2.4.67-1ubuntu0.14.04.2`
 
 Binary Packages:
 
-- `libdrm-intel1:amd64=2.4.67-1ubuntu0.14.04.1`
-- `libdrm-nouveau2:amd64=2.4.67-1ubuntu0.14.04.1`
-- `libdrm-radeon1:amd64=2.4.67-1ubuntu0.14.04.1`
-- `libdrm2:amd64=2.4.67-1ubuntu0.14.04.1`
+- `libdrm-intel1:amd64=2.4.67-1ubuntu0.14.04.2`
+- `libdrm-nouveau2:amd64=2.4.67-1ubuntu0.14.04.2`
+- `libdrm-radeon1:amd64=2.4.67-1ubuntu0.14.04.2`
+- `libdrm2:amd64=2.4.67-1ubuntu0.14.04.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libdrm=2.4.67-1ubuntu0.14.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.67-1ubuntu0.14.04.2.dsc' libdrm_2.4.67-1ubuntu0.14.04.2.dsc 3236 SHA256:9660306fa70fbca3094b72c6849ed5304d5d8dbc36a983def7d89261484b696e
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.67.orig.tar.gz' libdrm_2.4.67.orig.tar.gz 957783 SHA256:4ae392513c4df30d88f10e69bf425a1dff960a5b4ccd4da621d9fc88523f7acb
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.67-1ubuntu0.14.04.2.diff.gz' libdrm_2.4.67-1ubuntu0.14.04.2.diff.gz 38034 SHA256:198af0daf342ee6d7a788cdd5a50e24cf5ac453a7443722ed3ac7f7a4ca88b19
+```
 
 ### `dpkg` source package: `libepsilon=0.9.2-2`
 
@@ -3495,11 +3501,11 @@ $ apt-get source -qq --print-uris newt=0.52.15-2ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/n/newt/newt_0.52.15-2ubuntu5.debian.tar.gz' newt_0.52.15-2ubuntu5.debian.tar.gz 51483 SHA256:3fcff25cd0f6f6e657ce27ec3cc3c10f92be86acb387d32b6fd91822db514a4b
 ```
 
-### `dpkg` source package: `ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.11`
+### `dpkg` source package: `ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.12`
 
 Binary Packages:
 
-- `ntpdate=1:4.2.6.p5+dfsg-3ubuntu2.14.04.11`
+- `ntpdate=1:4.2.6.p5+dfsg-3ubuntu2.14.04.12`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3508,10 +3514,10 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.11
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.11.dsc' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.11.dsc 2371 SHA256:689f507a490d8e6294378675650592de5d55e5ff39de4a7e4f5ae3fb912f7a8b
+$ apt-get source -qq --print-uris ntp=1:4.2.6.p5+dfsg-3ubuntu2.14.04.12
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.12.dsc' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.12.dsc 2394 SHA256:f8f2f694ef067bfd196fb7d9e7702299ba9180bf1061e8fd7f13afa2fc85f5b3
 'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg.orig.tar.gz' ntp_4.2.6.p5+dfsg.orig.tar.gz 4111997 SHA256:17f0b63e7e27de5cc999a4afdb96b2dbdf76c75181fca50e2395e49e5773dfc9
-'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.11.debian.tar.gz' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.11.debian.tar.gz 159573 SHA256:74c21ac32ada2082382e916d2497eabe5039965832d64cc210452755835044d7
+'http://archive.ubuntu.com/ubuntu/pool/main/n/ntp/ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.12.debian.tar.xz' ntp_4.2.6.p5+dfsg-3ubuntu2.14.04.12.debian.tar.xz 115364 SHA256:d1e8ad9781fdbf1c3fd89f2b15b480379052834cf37e76ac30fedaf1de6d11d2
 ```
 
 ### `dpkg` source package: `ogdi-dfsg=3.2.0~beta2-7ubuntu1`
@@ -4094,11 +4100,11 @@ $ apt-get source -qq --print-uris resolvconf=1.69ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/r/resolvconf/resolvconf_1.69ubuntu1.1.tar.xz' resolvconf_1.69ubuntu1.1.tar.xz 71684 SHA256:46b1d11741afb5cf8e472678e0f518c1cef755ece617e7325895be83924e6636
 ```
 
-### `dpkg` source package: `rsyslog=7.4.4-1ubuntu2.6`
+### `dpkg` source package: `rsyslog=7.4.4-1ubuntu2.7`
 
 Binary Packages:
 
-- `rsyslog=7.4.4-1ubuntu2.6`
+- `rsyslog=7.4.4-1ubuntu2.7`
 
 Licenses: (parsed from: `/usr/share/doc/rsyslog/copyright`)
 
@@ -4109,8 +4115,14 @@ Licenses: (parsed from: `/usr/share/doc/rsyslog/copyright`)
 - `LGPL-3`
 - `LGPL-3.0+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris rsyslog=7.4.4-1ubuntu2.7
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rsyslog/rsyslog_7.4.4-1ubuntu2.7.dsc' rsyslog_7.4.4-1ubuntu2.7.dsc 2141 SHA256:98984b3f5e7f7fe25ea16d7e66e2d9faeda6917c3646458cdfca4a4b96671910
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rsyslog/rsyslog_7.4.4.orig.tar.gz' rsyslog_7.4.4.orig.tar.gz 2910075 SHA256:276d094d1e4c62c770ec8a72723667f119eee038912b79cf3337d439bc2f9087
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rsyslog/rsyslog_7.4.4-1ubuntu2.7.debian.tar.xz' rsyslog_7.4.4-1ubuntu2.7.debian.tar.xz 37272 SHA256:08fc2483f5badc70dda38160f33a211531694d791e157a9c15fb1bf0ca6ac4c9
+```
 
 ### `dpkg` source package: `rtmpdump=2.4+20121230.gitdf6c518-1ubuntu0.1`
 
@@ -4186,11 +4198,11 @@ Licenses: (parsed from: `/usr/share/doc/libsdformat3/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `sdformat5=5.1.0-1~trusty`
+### `dpkg` source package: `sdformat5=5.2.0-1~trusty`
 
 Binary Packages:
 
-- `sdformat-sdf=5.1.0-1~trusty`
+- `sdformat-sdf=5.2.0-1~trusty`
 
 Licenses: (parsed from: `/usr/share/doc/sdformat-sdf/copyright`)
 
