@@ -1,10 +1,10 @@
-# `postgres:10-beta2-alpine`
+# `postgres:10-beta3-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fc884624bbc5fdc8fc485f59708ad08528244b97b7d9d3ad1998a5c6ad3ece0e`
-- Created: `2017-07-31T19:06:40.107028287Z`
-- Virtual Size: ~ 38.73 Mb  
+- Image ID: `sha256:971d92899cd237447ae95e8b2848245525d3c1e1bec03c789fbbf7137a4e2778`
+- Created: `2017-08-10T22:42:53.353054862Z`
+- Virtual Size: ~ 38.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,6 +13,6 @@
   - `PATH=/usr/lib/postgresql/10/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=10`
-  - `PG_VERSION=10beta2`
-  - `PG_SHA256=0d6b50236039fc92e8784bd908b452c38ef63c0f9029f34e7115fbc30e17b195`
+  - `PG_VERSION=10beta3`
+  - `PG_SHA256=6722546739f8e2dd379e8031784e86c5c588638df6c477046ebdd479586bcb3e`
   - `PGDATA=/var/lib/postgresql/data`
