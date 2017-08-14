@@ -1,7 +1,7 @@
 ## `rapidoid:latest`
 
 ```console
-$ docker pull rapidoid@sha256:7a3848d35c5bb5887b341bece455e149fa6e450724ff98f57cf75ebf927cd5c4
+$ docker pull rapidoid@sha256:0539b2da018f4ab9f4fe846692d0bb0a55c55754eb728a85d1bca4499acefd15
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull rapidoid@sha256:7a3848d35c5bb5887b341bece455e149fa6e450724ff98f57c
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **310.1 MB (310142261 bytes)**  
+-	Total Size: **309.9 MB (309890308 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90970bf67ee882d8e738a15dd6f2672391959bb117b4d2425ab0cacbe0f41e9d`
+-	Image ID: `sha256:2bcb2bc3c490072a26ffd855bb3e244eb7affe2f43dd62856070624f0976c9ff`
 -	Entrypoint: `["\/opt\/entrypoint.sh"]`
 
 ```dockerfile
@@ -61,15 +61,15 @@ WORKDIR /opt
 EXPOSE 8888/tcp
 # Thu, 27 Jul 2017 20:18:44 GMT
 VOLUME [/data]
-# Mon, 07 Aug 2017 19:35:33 GMT
-ENV RAPIDOID_VERSION=5.4.1
-# Mon, 07 Aug 2017 19:35:33 GMT
-ENV RAPIDOID_URL=https://repo1.maven.org/maven2/org/rapidoid/rapidoid-platform/5.4.1/rapidoid-platform-5.4.1.jar
-# Mon, 07 Aug 2017 19:35:34 GMT
-COPY file:8582e99143bb66f6572f5e65c27eb556e0db565579f7cc7b53da125d11e1cb2e in /opt/ 
-# Mon, 07 Aug 2017 19:35:43 GMT
+# Mon, 14 Aug 2017 21:43:18 GMT
+ENV RAPIDOID_VERSION=5.4.2
+# Mon, 14 Aug 2017 21:43:18 GMT
+ENV RAPIDOID_URL=https://repo1.maven.org/maven2/org/rapidoid/rapidoid-platform/5.4.2/rapidoid-platform-5.4.2.jar
+# Mon, 14 Aug 2017 21:43:18 GMT
+COPY file:f62471c9cb58f8ee35db72795bbbe10cfd1ec927f04f29a88fe6a996f358af70 in /opt/ 
+# Mon, 14 Aug 2017 21:51:53 GMT
 RUN set -xe     && mkdir /app     && mkdir -p "$RAPIDOID_TMP" 	&& curl -SL "$RAPIDOID_URL" -o $RAPIDOID_JAR 	&& curl -SL "$RAPIDOID_URL.asc" -o $RAPIDOID_JAR.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys $GPG_KEY 	&& gpg --batch --verify $RAPIDOID_JAR.asc $RAPIDOID_JAR 	&& rm -r "$GNUPGHOME" 	&& rm "$RAPIDOID_JAR.asc"
-# Mon, 07 Aug 2017 19:35:46 GMT
+# Mon, 14 Aug 2017 21:51:53 GMT
 ENTRYPOINT ["/opt/entrypoint.sh"]
 ```
 
@@ -110,11 +110,11 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 		Last Modified: Wed, 26 Jul 2017 20:37:10 GMT  
 		Size: 272.0 KB (271991 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:68e9a8e3a71734ea40492b16ff4e69986afa3b3ff924ec5c9bed010f2808fb34`  
-		Last Modified: Mon, 07 Aug 2017 19:35:53 GMT  
-		Size: 266.0 B  
+	-	`sha256:c41f85280306b49ac6836fa997b3a6bb61b27e08b9588cfaba6da089defaac42`  
+		Last Modified: Mon, 14 Aug 2017 21:52:00 GMT  
+		Size: 322.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0cd68409f86a542a00ab7f663fb59d7a68dc5837c096e5322f00a658ad4a4d8`  
-		Last Modified: Mon, 07 Aug 2017 19:35:54 GMT  
-		Size: 14.9 MB (14861796 bytes)  
+	-	`sha256:c28dfd51f787cb1a03a85f51f58dc50518df796c59112d55c328cd7ce9728fb6`  
+		Last Modified: Mon, 14 Aug 2017 21:52:02 GMT  
+		Size: 14.6 MB (14609787 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
