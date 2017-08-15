@@ -48,18 +48,8 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris adduser=3.115
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.115.dsc' adduser_3.115.dsc 1701 SHA256:754698aa19d7521080ecacc8033baa20cfa4a963021de6061c68ffa6ee15e9a1
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.115.tar.xz' adduser_3.115.tar.xz 213620 SHA256:e7288281d4d1eec2948ba3687452ca33a8224d40c98d321bc3fbaefcf6d4c0db
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/adduser/3.115/
-- https://sources.debian.net/src/adduser/3.115/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apt=1.5~beta1`
 
