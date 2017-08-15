@@ -2066,14 +2066,8 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 - `WEBP`
 - `XFIG`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.1.1-4ubuntu0.16.04.6
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1-4ubuntu0.16.04.6.dsc' libgd2_2.1.1-4ubuntu0.16.04.6.dsc 2334 SHA256:32bdfbda75e62f85f5cdc88cd3e022fcf4231a3dde8cd604e2ebd33e186ad6c3
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1.orig.tar.gz' libgd2_2.1.1.orig.tar.gz 2033791 SHA256:a68c69d2fe3eaab9db63b1c4d391dd549c26d3b47bfba484d5ed2d433c55d4d8
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1-4ubuntu0.16.04.6.debian.tar.xz' libgd2_2.1.1-4ubuntu0.16.04.6.debian.tar.xz 37848 SHA256:f5c359430f32484f5b55943edd7ce69ca5fe582faf6345d4d8093b86da00ff0f
-```
 
 ### `dpkg` source package: `libgpg-error=1.21-2ubuntu1`
 
@@ -3526,14 +3520,8 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `Tcl`
 - `almost exclusively BSD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.5=9.5.7-0ubuntu0.16.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.7-0ubuntu0.16.04.dsc' postgresql-9.5_9.5.7-0ubuntu0.16.04.dsc 3649 SHA256:36b43ca58aa6322849453abe952984d63608e38b08a9e8cdeabc9dd0baa997c1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.7.orig.tar.bz2' postgresql-9.5_9.5.7.orig.tar.bz2 18639775 SHA256:8b1e936f82109325decc0f5575e846b93fb4fd384e8c4bde83ff5e7f87fc6cad
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.7-0ubuntu0.16.04.debian.tar.xz' postgresql-9.5_9.5.7-0ubuntu0.16.04.debian.tar.xz 22800 SHA256:8bf7070ff65567ad61aee0793489cf85b7216ec9b7a87ba5601d16668b9e77c6
-```
 
 ### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.3`
 

@@ -668,14 +668,8 @@ Licenses: (parsed from: `/usr/share/doc/libdbus-1-3/copyright`)
 - `Tcl-BSDish`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris dbus=1.10.18-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.10.18-1ubuntu2.dsc' dbus_1.10.18-1ubuntu2.dsc 3148 SHA256:090af09d4ac193e68a29b7f590aad7d9c3ebb6ff70ee8fd2f1f958f237ae4961
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.10.18.orig.tar.gz' dbus_1.10.18.orig.tar.gz 1986589 SHA256:6049ddd5f3f3e2618f615f1faeda0a115104423a7996b7aa73e2f36e38cc514a
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dbus/dbus_1.10.18-1ubuntu2.debian.tar.xz' dbus_1.10.18-1ubuntu2.debian.tar.xz 59112 SHA256:c86d927d09c8cbfac254cc3b17685d958e12ebc495b44b26edb748f540cea8a5
-```
 
 ### `dpkg` source package: `debconf=1.5.63`
 
@@ -1291,15 +1285,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.8-6ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.8-6ubuntu1.dsc' gnutls28_3.5.8-6ubuntu1.dsc 3351 SHA256:67fab416128198c5b5c426e8b1bd149ffab2064e5ea5ca3109ab5ad03c7e919f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz' gnutls28_3.5.8.orig.tar.xz 7264448 SHA256:0e97f243ae72b70307d684b84c7fe679385aa7a7a0e37e5be810193dcc17d4ff
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz.asc' gnutls28_3.5.8.orig.tar.xz.asc 287 SHA256:417da9db564a841128edb2dc2c98465a5749541f7d71492cb7c4905a0bfeac82
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.8-6ubuntu1.debian.tar.xz' gnutls28_3.5.8-6ubuntu1.debian.tar.xz 107752 SHA256:291d35d0352572c17800ba539a70af8c7a623c755b9948b488e936b0dce0cf18
-```
 
 ### `dpkg` source package: `gobject-introspection=1.53.2-4`
 
@@ -1842,14 +1829,8 @@ Licenses: (parsed from: `/usr/share/doc/libassuan0/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libassuan=2.4.3-2
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libassuan/libassuan_2.4.3-2.dsc' libassuan_2.4.3-2.dsc 2412 SHA256:fc057ff6bd548161cd978f7847682928222d31db96bd94d7ec0fc84b176bbcc7
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libassuan/libassuan_2.4.3.orig.tar.bz2' libassuan_2.4.3.orig.tar.bz2 559867 SHA256:22843a3bdb256f59be49842abf24da76700354293a066d82ade8134bb5aa2b71
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libassuan/libassuan_2.4.3-2.debian.tar.xz' libassuan_2.4.3-2.debian.tar.xz 15076 SHA256:16dd66909cf3b79c71d5169f35d94be64d079d882f027577c00c23bff3148012
-```
 
 ### `dpkg` source package: `libbsd=0.8.6-1`
 
@@ -2099,14 +2080,8 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 - `WEBP`
 - `XFIG`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.2.4-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.2.4-2.dsc' libgd2_2.2.4-2.dsc 2293 SHA256:2dd625dd85949a47aa7c7d2eed379e8a0bb7950b24de4be8909549656087da29
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.2.4.orig.tar.xz' libgd2_2.2.4.orig.tar.xz 2478528 SHA256:137f13a7eb93ce72e32ccd7cebdab6874f8cf7ddf31d3a455a68e016ecd9e4e6
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.2.4-2.debian.tar.xz' libgd2_2.2.4-2.debian.tar.xz 24884 SHA256:72bbd9f3444daa61e305306988962c815b027e7de1b2b2aa9951d5a45bc44009
-```
 
 ### `dpkg` source package: `libgpg-error=1.27-3`
 
@@ -2320,14 +2295,8 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 - `Chromium`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.17.0-5
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.17.0-5.dsc' libpsl_0.17.0-5.dsc 2194 SHA256:674c757c46515ae6043879be4dcaf8904216cd4ca42d308de2a37194189217a9
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.17.0.orig.tar.gz' libpsl_0.17.0.orig.tar.gz 49087 SHA256:7731e28393e1b4ca363eaffecd6c7570023a7c18c017b45d683ac7d2ba1f0bd1
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.17.0-5.debian.tar.xz' libpsl_0.17.0-5.debian.tar.xz 11508 SHA256:3070d0753bb6631d6465380a64d040a85c3ab2f869b2586f1d2c362b390a164a
-```
 
 ### `dpkg` source package: `libpthread-stubs=0.3-4`
 
@@ -3659,14 +3628,8 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.6=9.6.3-4build2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.3-4build2.dsc' postgresql-9.6_9.6.3-4build2.dsc 3676 SHA256:25985154bbfebc05b66b6be7c6535d1f600c05e84c17b1708c8e7a08e85f4872
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.3.orig.tar.bz2' postgresql-9.6_9.6.3.orig.tar.bz2 19534323 SHA256:1645b3736901f6d854e695a937389e68ff2066ce0cde9d73919d6ab7c995b9c6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.3-4build2.debian.tar.xz' postgresql-9.6_9.6.3-4build2.debian.tar.xz 22296 SHA256:efdb8411fd17ce948e4c364e086d27cccdd3c4168325ad8b9e07228eae8c1820
-```
 
 ### `dpkg` source package: `procps=2:3.3.12-1ubuntu2`
 
@@ -3879,13 +3842,8 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sensible-utils=0.0.9+nmu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.9+nmu1.dsc' sensible-utils_0.0.9+nmu1.dsc 1456 SHA256:49922ddd1c19aaad510da759bd97255ef799b252242629bdb0288bd273430ad2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.9+nmu1.tar.xz' sensible-utils_0.0.9+nmu1.tar.xz 54080 SHA256:e754ca8de7ad0d7fb8eb91fa2a2c1ee9947e88b51ed850340e5e833a82d38254
-```
 
 ### `dpkg` source package: `serf=1.3.9-3`
 
@@ -3996,14 +3954,8 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris subversion=1.9.5-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.5-1ubuntu2.dsc' subversion_1.9.5-1ubuntu2.dsc 3100 SHA256:590fde17af1c164d5a897c3eaaa87a646bd46230d77e4383d8fc8400bc3a9b84
-'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.5.orig.tar.gz' subversion_1.9.5.orig.tar.gz 10615674 SHA256:280ba586c5d51d7b976b65d22d5e8e42f3908ed1c968d71120dcf534ce857a83
-'http://archive.ubuntu.com/ubuntu/pool/main/s/subversion/subversion_1.9.5-1ubuntu2.diff.gz' subversion_1.9.5-1ubuntu2.diff.gz 2541756 SHA256:6fd14642377ee1bb455da46329c99b29d97962e7bf1d6988721b041b3a1df2e1
-```
 
 ### `dpkg` source package: `systemd=233-8ubuntu3`
 

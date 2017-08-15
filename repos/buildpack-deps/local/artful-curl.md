@@ -540,15 +540,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.8-6ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.8-6ubuntu1.dsc' gnutls28_3.5.8-6ubuntu1.dsc 3351 SHA256:67fab416128198c5b5c426e8b1bd149ffab2064e5ea5ca3109ab5ad03c7e919f
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz' gnutls28_3.5.8.orig.tar.xz 7264448 SHA256:0e97f243ae72b70307d684b84c7fe679385aa7a7a0e37e5be810193dcc17d4ff
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.8.orig.tar.xz.asc' gnutls28_3.5.8.orig.tar.xz.asc 287 SHA256:417da9db564a841128edb2dc2c98465a5749541f7d71492cb7c4905a0bfeac82
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.8-6ubuntu1.debian.tar.xz' gnutls28_3.5.8-6ubuntu1.debian.tar.xz 107752 SHA256:291d35d0352572c17800ba539a70af8c7a623c755b9948b488e936b0dce0cf18
-```
 
 ### `dpkg` source package: `grep=3.1-2`
 
@@ -718,14 +711,8 @@ Licenses: (parsed from: `/usr/share/doc/libassuan0/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libassuan=2.4.3-2
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libassuan/libassuan_2.4.3-2.dsc' libassuan_2.4.3-2.dsc 2412 SHA256:fc057ff6bd548161cd978f7847682928222d31db96bd94d7ec0fc84b176bbcc7
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libassuan/libassuan_2.4.3.orig.tar.bz2' libassuan_2.4.3.orig.tar.bz2 559867 SHA256:22843a3bdb256f59be49842abf24da76700354293a066d82ade8134bb5aa2b71
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libassuan/libassuan_2.4.3-2.debian.tar.xz' libassuan_2.4.3-2.debian.tar.xz 15076 SHA256:16dd66909cf3b79c71d5169f35d94be64d079d882f027577c00c23bff3148012
-```
 
 ### `dpkg` source package: `libcap-ng=0.7.7-3build1`
 
@@ -892,14 +879,8 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 - `Chromium`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.17.0-5
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.17.0-5.dsc' libpsl_0.17.0-5.dsc 2194 SHA256:674c757c46515ae6043879be4dcaf8904216cd4ca42d308de2a37194189217a9
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.17.0.orig.tar.gz' libpsl_0.17.0.orig.tar.gz 49087 SHA256:7731e28393e1b4ca363eaffecd6c7570023a7c18c017b45d683ac7d2ba1f0bd1
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.17.0-5.debian.tar.xz' libpsl_0.17.0-5.debian.tar.xz 11508 SHA256:3070d0753bb6631d6465380a64d040a85c3ab2f869b2586f1d2c362b390a164a
-```
 
 ### `dpkg` source package: `libselinux=2.6-3build1`
 
@@ -1400,13 +1381,8 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sensible-utils=0.0.9+nmu1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.9+nmu1.dsc' sensible-utils_0.0.9+nmu1.dsc 1456 SHA256:49922ddd1c19aaad510da759bd97255ef799b252242629bdb0288bd273430ad2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.9+nmu1.tar.xz' sensible-utils_0.0.9+nmu1.tar.xz 54080 SHA256:e754ca8de7ad0d7fb8eb91fa2a2c1ee9947e88b51ed850340e5e833a82d38254
-```
 
 ### `dpkg` source package: `shadow=1:4.2-3.2ubuntu2`
 

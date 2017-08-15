@@ -521,18 +521,8 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris debianutils=4.8.1.1
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.1.1.dsc' debianutils_4.8.1.1.dsc 1739 SHA256:506d5e6c18e38831eb45ab1ecc35dd8cc3e931b0fe7367136fb7d42520130a84
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.1.1.tar.xz' debianutils_4.8.1.1.tar.xz 156256 SHA256:06446cd4c0d309fd31a0682c5c2f07f7613fb867f769414b9cc51f155ad73172
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/debianutils/4.8.1.1/
-- https://sources.debian.net/src/debianutils/4.8.1.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `diffutils=1:3.5-3`
 
@@ -781,19 +771,8 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris git=1:2.13.2-3
-'http://deb.debian.org/debian/pool/main/g/git/git_2.13.2-3.dsc' git_2.13.2-3.dsc 2827 SHA256:8a5e0003bdd7908a975e3670f4f6194abac2ce7173eaf3748c7f873ca0dfe404
-'http://deb.debian.org/debian/pool/main/g/git/git_2.13.2.orig.tar.xz' git_2.13.2.orig.tar.xz 4751380 SHA256:0d10ac3751466f81652b62cbda83cc8d8ffd014911462138e039f176e413dde5
-'http://deb.debian.org/debian/pool/main/g/git/git_2.13.2-3.debian.tar.xz' git_2.13.2-3.debian.tar.xz 537696 SHA256:9a9cb3602f122781abb7b5d0b479991fc5392f9241a620b62214876261823bae
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/git/1:2.13.2-3/
-- https://sources.debian.net/src/git/1:2.13.2-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glibc=2.24-12`
 

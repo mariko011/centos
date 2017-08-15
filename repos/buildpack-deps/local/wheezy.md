@@ -2040,19 +2040,8 @@ Licenses: (parsed from: `/usr/share/doc/libgd2-noxpm/copyright`)
 - `HPND`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.0.36~rc1~dfsg-6.1+deb7u8
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u8.dsc' libgd2_2.0.36~rc1~dfsg-6.1+deb7u8.dsc 2411 SHA256:f92e6ff5f62adb6673bc6c1a8adf4dc7b64479099d6c209b86ec5cc9f0b7e0c2
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg.orig.tar.gz' libgd2_2.0.36~rc1~dfsg.orig.tar.gz 761899 SHA256:919df21310ad4a8b6155df01411138110589cc6c50b1bc414dc62aebb0a7f41a
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u8.debian.tar.gz' libgd2_2.0.36~rc1~dfsg-6.1+deb7u8.debian.tar.gz 33604 SHA256:dcc3c67f2b5470c99e23be0e9d2e30ca72772af850b816d97400902f9542f1ba
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libgd2/2.0.36~rc1~dfsg-6.1+deb7u8/
-- https://sources.debian.net/src/libgd2/2.0.36~rc1~dfsg-6.1+deb7u8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.10-3.1`
 
@@ -3886,19 +3875,8 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris subversion=1.6.17dfsg-4+deb7u11
-'http://security.debian.org/pool/updates/main/s/subversion/subversion_1.6.17dfsg-4+deb7u11.dsc' subversion_1.6.17dfsg-4+deb7u11.dsc 3058 SHA256:352147f718f28d41f04707391b230bd654c8f7475e3c2645809de680396eb469
-'http://security.debian.org/pool/updates/main/s/subversion/subversion_1.6.17dfsg.orig.tar.gz' subversion_1.6.17dfsg.orig.tar.gz 7757112 SHA256:45a8a067b65cfe5326f9676f991d82f39d67f8309c35e58f67e689eb702679d0
-'http://security.debian.org/pool/updates/main/s/subversion/subversion_1.6.17dfsg-4+deb7u11.diff.gz' subversion_1.6.17dfsg-4+deb7u11.diff.gz 120288 SHA256:f922f6a9f3b575ae722b549a166ba9871444adb1417c0d3ddea86284b7967a9a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/subversion/1.6.17dfsg-4+deb7u11/
-- https://sources.debian.net/src/subversion/1.6.17dfsg-4+deb7u11/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-41+deb7u1`
 
