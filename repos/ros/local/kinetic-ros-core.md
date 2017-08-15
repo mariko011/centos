@@ -2811,14 +2811,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg-modules=0.3.5-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.5-1.dsc' python-catkin-pkg-modules_0.3.5-1.dsc 991 SHA256:cfc33ed4e907ae9bb4746cd9890c9459e56ce6605698c48c5aeda67b9bcbd9e6
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.5.orig.tar.gz' python-catkin-pkg-modules_0.3.5.orig.tar.gz 44442 SHA256:0979500b582902e44b31b56778f952d1f218fb9e0e8f54fc590b4a15b2bb6fa9
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg-modules/python-catkin-pkg-modules_0.3.5-1.debian.tar.xz' python-catkin-pkg-modules_0.3.5-1.debian.tar.xz 1128 SHA256:6e8205c6f73c9bf97e2f457b63c22e501d493694272902f3f985a69589e9f6f6
-```
 
 ### `dpkg` source package: `python-catkin-pkg=0.3.5-1`
 
@@ -2830,14 +2824,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-catkin-pkg=0.3.5-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.5-1.dsc' python-catkin-pkg_0.3.5-1.dsc 920 SHA256:3b7068fe89ea087e0356054fbed6378b5ca5e46050d9e9f29fcc7fcf758906db
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.5.orig.tar.gz' python-catkin-pkg_0.3.5.orig.tar.gz 9553 SHA256:09c90747055f3ed70d70058b5fa07be7b63c2b9325f82e5700abff195cd55c7a
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-catkin-pkg/python-catkin-pkg_0.3.5-1.debian.tar.xz' python-catkin-pkg_0.3.5-1.debian.tar.xz 1112 SHA256:0b53abfd5a19b432f73fff456af62c191e96664551eae92f49572b2a49ae62ab
-```
 
 ### `dpkg` source package: `python-crypto=2.6.1-6ubuntu0.16.04.2`
 
@@ -3071,14 +3059,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-rospkg-modules=1.1.1-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.1-1.dsc' python-rospkg-modules_1.1.1-1.dsc 949 SHA256:616bc4ee7679097ce03617a347b1bbfa967813be82cfb706c44b0dca5f2755e5
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.1.orig.tar.gz' python-rospkg-modules_1.1.1.orig.tar.gz 38324 SHA256:e7f41b51898810c164169b4bb4f62d48e4ab94e452373a937dc36e885c389c3e
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg-modules/python-rospkg-modules_1.1.1-1.debian.tar.xz' python-rospkg-modules_1.1.1-1.debian.tar.xz 1120 SHA256:b0159efc28fbc0eecca930f5319fc678585fab9f0975153db3bc2ce4ddf0d2e6
-```
 
 ### `dpkg` source package: `python-rospkg=1.1.1-1`
 
@@ -3090,14 +3072,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python-rospkg=1.1.1-1
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.1-1.dsc' python-rospkg_1.1.1-1.dsc 881 SHA256:3baa949c13b1a944a21b5d9ddfd84d6b0bc4174e6ee8984f8f0e7b17fb90ed14
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.1.orig.tar.gz' python-rospkg_1.1.1.orig.tar.gz 17991 SHA256:7ad23c863ac36cd8284b08e1ec8de420b3b3b3d531d0c901008e6e35eaf413b8
-'http://packages.ros.org/ros/ubuntu/pool/main/p/python-rospkg/python-rospkg_1.1.1-1.debian.tar.xz' python-rospkg_1.1.1-1.debian.tar.xz 1088 SHA256:a6860f6246428eab9a0f8502f3d1e2bc21a26b3df5b69f4f876e90eafc9310e8
-```
 
 ### `dpkg` source package: `python-setuptools=20.7.0-1`
 
