@@ -1,17 +1,17 @@
-# `node:8.3.0-onbuild`
+# `node:8.4.0-onbuild`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0f34dcaca0d6301ae09906e2300dfc67af99e82cc02895d5adf3e75168301575`
-- Created: `2017-08-10T18:14:32.579214201Z`
-- Virtual Size: ~ 668.15 Mb  
+- Image ID: `sha256:bc028392730ff01e6614b52db4873e1b08bc9f561c360d8cc7a3fa8a6714c9f7`
+- Created: `2017-08-15T22:24:23.328017428Z`
+- Virtual Size: ~ 668.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["npm","start"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `NPM_CONFIG_LOGLEVEL=info`
-  - `NODE_VERSION=8.3.0`
+  - `NODE_VERSION=8.4.0`
   - `YARN_VERSION=0.27.5`
 
 ## `dpkg` (`.deb`-based packages)
