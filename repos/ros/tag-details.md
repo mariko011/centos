@@ -3,26 +3,50 @@
 # Tags of `ros`
 
 -	[`ros:indigo-ros-core`](#rosindigo-ros-core)
+-	[`ros:indigo-ros-core-trusty`](#rosindigo-ros-core-trusty)
 -	[`ros:indigo-ros-base`](#rosindigo-ros-base)
+-	[`ros:indigo-ros-base-trusty`](#rosindigo-ros-base-trusty)
 -	[`ros:indigo`](#rosindigo)
 -	[`ros:indigo-robot`](#rosindigo-robot)
+-	[`ros:indigo-robot-trusty`](#rosindigo-robot-trusty)
 -	[`ros:indigo-perception`](#rosindigo-perception)
+-	[`ros:indigo-perception-trusty`](#rosindigo-perception-trusty)
 -	[`ros:jade-ros-core`](#rosjade-ros-core)
+-	[`ros:jade-ros-core-trusty`](#rosjade-ros-core-trusty)
 -	[`ros:jade-ros-base`](#rosjade-ros-base)
+-	[`ros:jade-ros-base-trusty`](#rosjade-ros-base-trusty)
 -	[`ros:jade`](#rosjade)
 -	[`ros:jade-robot`](#rosjade-robot)
+-	[`ros:jade-robot-trusty`](#rosjade-robot-trusty)
 -	[`ros:jade-perception`](#rosjade-perception)
+-	[`ros:jade-perception-trusty`](#rosjade-perception-trusty)
 -	[`ros:kinetic-ros-core`](#roskinetic-ros-core)
+-	[`ros:kinetic-ros-core-xenial`](#roskinetic-ros-core-xenial)
 -	[`ros:kinetic-ros-base`](#roskinetic-ros-base)
+-	[`ros:kinetic-ros-base-xenial`](#roskinetic-ros-base-xenial)
 -	[`ros:kinetic`](#roskinetic)
 -	[`ros:latest`](#roslatest)
 -	[`ros:kinetic-robot`](#roskinetic-robot)
+-	[`ros:kinetic-robot-xenial`](#roskinetic-robot-xenial)
 -	[`ros:kinetic-perception`](#roskinetic-perception)
+-	[`ros:kinetic-perception-xenial`](#roskinetic-perception-xenial)
+-	[`ros:kinetic-ros-core-jessie`](#roskinetic-ros-core-jessie)
+-	[`ros:kinetic-ros-base-jessie`](#roskinetic-ros-base-jessie)
+-	[`ros:kinetic-robot-jessie`](#roskinetic-robot-jessie)
+-	[`ros:kinetic-perception-jessie`](#roskinetic-perception-jessie)
 -	[`ros:lunar-ros-core`](#roslunar-ros-core)
+-	[`ros:lunar-ros-core-xenial`](#roslunar-ros-core-xenial)
 -	[`ros:lunar-ros-base`](#roslunar-ros-base)
+-	[`ros:lunar-ros-base-xenial`](#roslunar-ros-base-xenial)
 -	[`ros:lunar`](#roslunar)
 -	[`ros:lunar-robot`](#roslunar-robot)
+-	[`ros:lunar-robot-xenial`](#roslunar-robot-xenial)
 -	[`ros:lunar-perception`](#roslunar-perception)
+-	[`ros:lunar-perception-xenial`](#roslunar-perception-xenial)
+-	[`ros:lunar-ros-core-stretch`](#roslunar-ros-core-stretch)
+-	[`ros:lunar-ros-base-stretch`](#roslunar-ros-base-stretch)
+-	[`ros:lunar-robot-stretch`](#roslunar-robot-stretch)
+-	[`ros:lunar-perception-stretch`](#roslunar-perception-stretch)
 
 ## `ros:indigo-ros-core`
 
@@ -125,6 +149,10 @@ CMD ["bash"]
 		Last Modified: Fri, 11 Aug 2017 01:06:57 GMT  
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ros:indigo-ros-core-trusty`
+
+**does not exist** (yet?)
 
 ## `ros:indigo-ros-base`
 
@@ -233,6 +261,10 @@ RUN apt-get update && apt-get install -y     ros-indigo-ros-base=1.1.5-0*     &&
 		Last Modified: Fri, 11 Aug 2017 01:08:00 GMT  
 		Size: 3.5 MB (3481194 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ros:indigo-ros-base-trusty`
+
+**does not exist** (yet?)
 
 ## `ros:indigo`
 
@@ -456,6 +488,10 @@ RUN apt-get update && apt-get install -y     ros-indigo-robot=1.1.5-0*     && rm
 		Size: 70.0 MB (70002703 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `ros:indigo-robot-trusty`
+
+**does not exist** (yet?)
+
 ## `ros:indigo-perception`
 
 ```console
@@ -570,6 +606,10 @@ RUN apt-get update && apt-get install -y     ros-indigo-perception=1.1.5-0*     
 		Size: 273.2 MB (273240345 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `ros:indigo-perception-trusty`
+
+**does not exist** (yet?)
+
 ## `ros:jade-ros-core`
 
 ```console
@@ -671,6 +711,10 @@ CMD ["bash"]
 		Last Modified: Fri, 11 Aug 2017 01:10:09 GMT  
 		Size: 194.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ros:jade-ros-core-trusty`
+
+**does not exist** (yet?)
 
 ## `ros:jade-ros-base`
 
@@ -779,6 +823,10 @@ RUN apt-get update && apt-get install -y     ros-jade-ros-base=1.2.0-0*     && r
 		Last Modified: Fri, 11 Aug 2017 01:11:10 GMT  
 		Size: 3.5 MB (3497872 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ros:jade-ros-base-trusty`
+
+**does not exist** (yet?)
 
 ## `ros:jade`
 
@@ -1002,6 +1050,10 @@ RUN apt-get update && apt-get install -y     ros-jade-robot=1.2.0-0*     && rm -
 		Size: 69.9 MB (69883896 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `ros:jade-robot-trusty`
+
+**does not exist** (yet?)
+
 ## `ros:jade-perception`
 
 ```console
@@ -1116,6 +1168,10 @@ RUN apt-get update && apt-get install -y     ros-jade-perception=1.2.0-0*     &&
 		Size: 272.1 MB (272057654 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `ros:jade-perception-trusty`
+
+**does not exist** (yet?)
+
 ## `ros:kinetic-ros-core`
 
 ```console
@@ -1217,6 +1273,10 @@ CMD ["bash"]
 		Last Modified: Fri, 11 Aug 2017 01:13:18 GMT  
 		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ros:kinetic-ros-core-xenial`
+
+**does not exist** (yet?)
 
 ## `ros:kinetic-ros-base`
 
@@ -1325,6 +1385,10 @@ RUN apt-get update && apt-get install -y     ros-kinetic-ros-base=1.3.1-0*     &
 		Last Modified: Fri, 11 Aug 2017 01:14:29 GMT  
 		Size: 4.7 MB (4730542 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ros:kinetic-ros-base-xenial`
+
+**does not exist** (yet?)
 
 ## `ros:kinetic`
 
@@ -1656,6 +1720,10 @@ RUN apt-get update && apt-get install -y     ros-kinetic-robot=1.3.1-0*     && r
 		Size: 139.3 MB (139339414 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `ros:kinetic-robot-xenial`
+
+**does not exist** (yet?)
+
 ## `ros:kinetic-perception`
 
 ```console
@@ -1770,6 +1838,26 @@ RUN apt-get update && apt-get install -y     ros-kinetic-perception=1.3.1-0*    
 		Size: 388.0 MB (387974398 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `ros:kinetic-perception-xenial`
+
+**does not exist** (yet?)
+
+## `ros:kinetic-ros-core-jessie`
+
+**does not exist** (yet?)
+
+## `ros:kinetic-ros-base-jessie`
+
+**does not exist** (yet?)
+
+## `ros:kinetic-robot-jessie`
+
+**does not exist** (yet?)
+
+## `ros:kinetic-perception-jessie`
+
+**does not exist** (yet?)
+
 ## `ros:lunar-ros-core`
 
 ```console
@@ -1871,6 +1959,10 @@ CMD ["bash"]
 		Last Modified: Fri, 11 Aug 2017 01:17:22 GMT  
 		Size: 195.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ros:lunar-ros-core-xenial`
+
+**does not exist** (yet?)
 
 ## `ros:lunar-ros-base`
 
@@ -1979,6 +2071,10 @@ RUN apt-get update && apt-get install -y     ros-lunar-ros-base=1.3.1-0*     && 
 		Last Modified: Fri, 11 Aug 2017 01:18:27 GMT  
 		Size: 4.8 MB (4823608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ros:lunar-ros-base-xenial`
+
+**does not exist** (yet?)
 
 ## `ros:lunar`
 
@@ -2202,6 +2298,10 @@ RUN apt-get update && apt-get install -y     ros-lunar-robot=1.3.1-0*     && rm 
 		Size: 139.2 MB (139182690 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `ros:lunar-robot-xenial`
+
+**does not exist** (yet?)
+
 ## `ros:lunar-perception`
 
 ```console
@@ -2315,3 +2415,23 @@ RUN apt-get update && apt-get install -y     ros-lunar-perception=1.3.1-0*     &
 		Last Modified: Fri, 11 Aug 2017 01:20:56 GMT  
 		Size: 388.0 MB (387969635 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `ros:lunar-perception-xenial`
+
+**does not exist** (yet?)
+
+## `ros:lunar-ros-core-stretch`
+
+**does not exist** (yet?)
+
+## `ros:lunar-ros-base-stretch`
+
+**does not exist** (yet?)
+
+## `ros:lunar-robot-stretch`
+
+**does not exist** (yet?)
+
+## `ros:lunar-perception-stretch`
+
+**does not exist** (yet?)
