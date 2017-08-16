@@ -610,18 +610,8 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris debianutils=4.8.1.1
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.1.1.dsc' debianutils_4.8.1.1.dsc 1739 SHA256:506d5e6c18e38831eb45ab1ecc35dd8cc3e931b0fe7367136fb7d42520130a84
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_4.8.1.1.tar.xz' debianutils_4.8.1.1.tar.xz 156256 SHA256:06446cd4c0d309fd31a0682c5c2f07f7613fb867f769414b9cc51f155ad73172
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/debianutils/4.8.1.1/
-- https://sources.debian.net/src/debianutils/4.8.1.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `diffutils=1:3.5-3`
 
@@ -2328,10 +2318,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=4.11.11-1
-'http://http.debian.net/debian/pool/main/l/linux/linux_4.11.11-1.dsc' linux_4.11.11-1.dsc 125569 SHA256:b8e63616872c08b0e6701d8c2f2a262f6e2e3becd9fb4a1c334f995bdfa019f1
-'http://http.debian.net/debian/pool/main/l/linux/linux_4.11.11.orig.tar.xz' linux_4.11.11.orig.tar.xz 96905092 SHA256:1784db6a8a461f40d77bfa09579dd78bcd57a268dd0f88162e911345835de41c
-'http://http.debian.net/debian/pool/main/l/linux/linux_4.11.11-1.debian.tar.xz' linux_4.11.11-1.debian.tar.xz 981988 SHA256:2808cc2078f3a076dc184046dc50d74d5dc72b21d2086a805012e49e3a00e215
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.11.11-1.dsc' linux_4.11.11-1.dsc 125569 SHA256:b8e63616872c08b0e6701d8c2f2a262f6e2e3becd9fb4a1c334f995bdfa019f1
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.11.11.orig.tar.xz' linux_4.11.11.orig.tar.xz 96905092 SHA256:1784db6a8a461f40d77bfa09579dd78bcd57a268dd0f88162e911345835de41c
+'http://deb.debian.org/debian/pool/main/l/linux/linux_4.11.11-1.debian.tar.xz' linux_4.11.11-1.debian.tar.xz 981988 SHA256:2808cc2078f3a076dc184046dc50d74d5dc72b21d2086a805012e49e3a00e215
 ```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/linux/4.11.11-1/
+- https://sources.debian.net/src/linux/4.11.11-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `littler=0.3.2-1`
 
@@ -3313,19 +3308,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tcl8.6=8.6.6+dfsg-1
-'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.6+dfsg-1.dsc' tcl8.6_8.6.6+dfsg-1.dsc 2031 SHA256:aa272110f0b97ba828ccf50671df2a3ef8af8aec30bd3022ec5162b8d789495c
-'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.6+dfsg.orig.tar.gz' tcl8.6_8.6.6+dfsg.orig.tar.gz 5860892 SHA256:3e3b0be89738711cfa7f700b801dc3b924843092db237dfcbc3602a1f8ed2f29
-'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.6+dfsg-1.debian.tar.xz' tcl8.6_8.6.6+dfsg-1.debian.tar.xz 15008 SHA256:0c116787cd0c5c992f7303b3c6b9a18d9171a804e0dcad58f7274dcd85a150b4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tcl8.6/8.6.6+dfsg-1/
-- https://sources.debian.net/src/tcl8.6/8.6.6+dfsg-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tex-gyre=20160520-1`
 
@@ -3385,19 +3369,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tk8.6=8.6.6-1
-'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.6-1.dsc' tk8.6_8.6.6-1.dsc 2071 SHA256:e91bd453bc9e920401bf888ed3d5b131d9018c7c07da0b7a3211d32d11a15115
-'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.6.orig.tar.gz' tk8.6_8.6.6.orig.tar.gz 4273737 SHA256:d62c371a71b4744ed830e3c21d27968c31dba74dd2c45f36b9b071e6d88eb19d
-'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.6-1.debian.tar.xz' tk8.6_8.6.6-1.debian.tar.xz 11092 SHA256:688207fe942ce245f66cad98ffc588189f4dd267350d9202eef3d7b8e50ad5fa
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tk8.6/8.6.6-1/
-- https://sources.debian.net/src/tk8.6/8.6.6-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tzdata=2017b-2`
 
