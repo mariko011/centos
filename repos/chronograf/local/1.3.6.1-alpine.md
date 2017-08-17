@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4d69551516bf2b5904889f16fadcc1a68647bc4666d599c084f0f2154417b014`
-- Created: `2017-08-08T22:16:10.299463042Z`
+- Image ID: `sha256:cabc72585f2561c8f941d42f58d116c71f0e4179ae4bacd6e54a1aa4a7967950`
+- Created: `2017-08-15T19:00:50.358957111Z`
 - Virtual Size: ~ 18.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,4 +11,4 @@
 - Command: `["chronograf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `CHRONOGRAF_VERSION=1.3.6.0`
+  - `CHRONOGRAF_VERSION=1.3.6.1`
