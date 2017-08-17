@@ -1,7 +1,7 @@
 ## `rabbitmq:3-management-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:a82f60bcde44591ead0f58014f184f1de95b21a0db252a0aaaa359d8caf8aaf1
+$ docker pull rabbitmq@sha256:40d33c7c08d47433412ff1b16acd9762e11e2da0ed99359524623e892ab52190
 ```
 
 -	Platforms:
@@ -9,11 +9,11 @@ $ docker pull rabbitmq@sha256:a82f60bcde44591ead0f58014f184f1de95b21a0db252a0aaa
 
 ### `rabbitmq:3-management-alpine` - linux; amd64
 
--	Docker Version: 17.03.1-ce
+-	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.5 MB (23520389 bytes)**  
+-	Total Size: **23.6 MB (23555765 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ce4252c89a92808f4aa43bcade875d3d5a6a357cbd9c709480caebfd2ea1e59e`
+-	Image ID: `sha256:3af958ea2e6fb9cc4cf9a933b204668d818715463ce56b3401b721ced2e2e1af`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -36,31 +36,31 @@ ENV RABBITMQ_HOME=/opt/rabbitmq
 ENV PATH=/opt/rabbitmq/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 28 Jun 2017 22:12:44 GMT
 ENV GPG_KEY=0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Wed, 28 Jun 2017 22:12:45 GMT
-ENV RABBITMQ_VERSION=3.6.10
-# Wed, 28 Jun 2017 22:12:53 GMT
+# Thu, 17 Aug 2017 18:49:13 GMT
+ENV RABBITMQ_VERSION=3.6.11
+# Thu, 17 Aug 2017 18:49:22 GMT
 RUN set -ex; 		apk add --no-cache --virtual .build-deps 		ca-certificates 		gnupg 		libressl 		tar 		xz 	; 		wget -O rabbitmq-server.tar.xz "https://www.rabbitmq.com/releases/rabbitmq-server/v${RABBITMQ_VERSION}/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz"; 	wget -O rabbitmq-server.tar.xz.asc "https://www.rabbitmq.com/releases/rabbitmq-server/v${RABBITMQ_VERSION}/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY"; 	gpg --batch --verify rabbitmq-server.tar.xz.asc rabbitmq-server.tar.xz; 	rm -rf "$GNUPGHOME" rabbitmq-server.tar.xz.asc; 		mkdir -p "$RABBITMQ_HOME"; 	tar 		--extract 		--verbose 		--file rabbitmq-server.tar.xz 		--directory "$RABBITMQ_HOME" 		--strip-components 1 	; 	rm rabbitmq-server.tar.xz; 		grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -ri 's!^(SYS_PREFIX=).*$!\1!g' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 		apk del .build-deps
-# Wed, 28 Jun 2017 22:12:54 GMT
+# Thu, 17 Aug 2017 18:49:22 GMT
 ENV HOME=/var/lib/rabbitmq
-# Wed, 28 Jun 2017 22:12:55 GMT
+# Thu, 17 Aug 2017 18:49:23 GMT
 RUN mkdir -p /var/lib/rabbitmq /etc/rabbitmq 	&& chown -R rabbitmq:rabbitmq /var/lib/rabbitmq /etc/rabbitmq 	&& chmod -R 777 /var/lib/rabbitmq /etc/rabbitmq
-# Wed, 28 Jun 2017 22:12:56 GMT
+# Thu, 17 Aug 2017 18:49:23 GMT
 VOLUME [/var/lib/rabbitmq]
-# Wed, 28 Jun 2017 22:12:58 GMT
+# Thu, 17 Aug 2017 18:49:24 GMT
 RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/
-# Wed, 28 Jun 2017 22:12:59 GMT
+# Thu, 17 Aug 2017 18:49:25 GMT
 RUN ln -sf "$RABBITMQ_HOME/plugins" /plugins
-# Wed, 28 Jun 2017 22:13:00 GMT
+# Thu, 17 Aug 2017 18:49:26 GMT
 COPY file:473db9fea9f105dc60d99348b2b9c46a2b29253efdf78906b7d50b9bfabd2a92 in /usr/local/bin/ 
-# Wed, 28 Jun 2017 22:13:01 GMT
+# Thu, 17 Aug 2017 18:49:26 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 28 Jun 2017 22:13:02 GMT
+# Thu, 17 Aug 2017 18:49:26 GMT
 EXPOSE 25672/tcp 4369/tcp 5671/tcp 5672/tcp
-# Wed, 28 Jun 2017 22:13:02 GMT
+# Thu, 17 Aug 2017 18:49:27 GMT
 CMD ["rabbitmq-server"]
-# Wed, 28 Jun 2017 22:13:30 GMT
+# Thu, 17 Aug 2017 18:49:38 GMT
 RUN rabbitmq-plugins enable --offline rabbitmq_management
-# Wed, 28 Jun 2017 22:13:31 GMT
+# Thu, 17 Aug 2017 18:49:38 GMT
 EXPOSE 15671/tcp 15672/tcp
 ```
 
@@ -81,27 +81,27 @@ EXPOSE 15671/tcp 15672/tcp
 		Last Modified: Fri, 30 Jun 2017 00:38:10 GMT  
 		Size: 16.5 MB (16540741 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:84a4909e74e36222e7bc3db02d77079812b61a7ec19cbdab9afc8efd0924a556`  
-		Last Modified: Fri, 30 Jun 2017 00:38:06 GMT  
-		Size: 5.0 MB (4975147 bytes)  
+	-	`sha256:7dc18c248a7b09c595ed915b59b5d2be03d29241d17ca4566cd38a9e4852a482`  
+		Last Modified: Thu, 17 Aug 2017 18:51:24 GMT  
+		Size: 5.0 MB (5010522 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9ec0566f796805025d814d209814324a5f79469d7f9951a89983a9d4c0fa1866`  
-		Last Modified: Fri, 30 Jun 2017 00:38:06 GMT  
-		Size: 170.0 B  
+	-	`sha256:9085838e09d844d015cb78f2c302c143e24f95d5dec56858a99a84179e4a1e3c`  
+		Last Modified: Thu, 17 Aug 2017 18:51:23 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b829637e87775f08f864008646d1dc8d58572cf9bc78501dc59586f9624b7482`  
-		Last Modified: Fri, 30 Jun 2017 00:38:05 GMT  
-		Size: 145.0 B  
+	-	`sha256:0f793b591a3ec7956472c1cc21d47c78da72c735460d4fef6f98566ea23e41d3`  
+		Last Modified: Thu, 17 Aug 2017 18:51:24 GMT  
+		Size: 147.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:422751327de1bc1a7eb7c1513d9d078d5ed67db609b1d72f4e7bee559a4deaab`  
-		Last Modified: Fri, 30 Jun 2017 00:38:05 GMT  
+	-	`sha256:42da39c9c3ca8d1398006da3a5bb40a46b1e4976bccacd2f471c64f2913db233`  
+		Last Modified: Thu, 17 Aug 2017 18:51:23 GMT  
 		Size: 107.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3910da26c462b7e20fc099f25979cf9d510ed66a280da6aa0f169f9b6e5eac3`  
-		Last Modified: Fri, 30 Jun 2017 00:38:05 GMT  
-		Size: 4.1 KB (4055 bytes)  
+	-	`sha256:0a442df563426000498edd37bd6fa44c62e2dc7485517535bbd19fbc00cc2843`  
+		Last Modified: Thu, 17 Aug 2017 18:51:23 GMT  
+		Size: 4.1 KB (4051 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cb6c881d9908369150f593baf788d9c98b7c98d562c8809e086e2005b8229a77`  
-		Last Modified: Fri, 30 Jun 2017 00:41:25 GMT  
+	-	`sha256:e1f3876b0e0cbea02972afb64eff8eb29eb97a64337bd1693d2ca40c9f6d3211`  
+		Last Modified: Thu, 17 Aug 2017 18:52:03 GMT  
 		Size: 189.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
