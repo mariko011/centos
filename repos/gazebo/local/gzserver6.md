@@ -3901,14 +3901,8 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 - `GPL-1`
 - `Tcl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.3=9.3.17-0ubuntu0.14.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.17-0ubuntu0.14.04.dsc' postgresql-9.3_9.3.17-0ubuntu0.14.04.dsc 3595 SHA256:d6b4e85d96d6f6470a423b70d0a744c0cbf1a5035bff537d3a979991ae725b45
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.17.orig.tar.bz2' postgresql-9.3_9.3.17.orig.tar.bz2 17158802 SHA256:9c03e5f280cfe9bd202fa01af773eb146abd8ab3065f7279d574c568f6948dbe
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.17-0ubuntu0.14.04.debian.tar.xz' postgresql-9.3_9.3.17-0ubuntu0.14.04.debian.tar.xz 29352 SHA256:3fd06d89b2132a337d68f41436b16ee06dc2968571a832f9daf02a5861445d0c
-```
 
 ### `dpkg` source package: `procps=1:3.3.9-1ubuntu2.2`
 

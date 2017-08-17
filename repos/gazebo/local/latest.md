@@ -4258,14 +4258,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `GPL-2`
 - `redpine-signals`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.4.0-91.114
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-91.114.dsc' linux_4.4.0-91.114.dsc 9617 SHA256:1ece6bcd5f98144025c26ccfff63ad6c72ae0744baae3aa83711d811f8406ab0
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-91.114.diff.gz' linux_4.4.0-91.114.diff.gz 13104271 SHA256:0d1e8cff38c52a2740251d00b58c6aa8746bedf687594ce640f7048823f05047
-```
 
 ### `dpkg` source package: `llvm-toolchain-4.0=1:4.0-1ubuntu1~16.04.2`
 
@@ -5299,14 +5293,8 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `Tcl`
 - `almost exclusively BSD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.5=9.5.7-0ubuntu0.16.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.7-0ubuntu0.16.04.dsc' postgresql-9.5_9.5.7-0ubuntu0.16.04.dsc 3649 SHA256:36b43ca58aa6322849453abe952984d63608e38b08a9e8cdeabc9dd0baa997c1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.7.orig.tar.bz2' postgresql-9.5_9.5.7.orig.tar.bz2 18639775 SHA256:8b1e936f82109325decc0f5575e846b93fb4fd384e8c4bde83ff5e7f87fc6cad
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.7-0ubuntu0.16.04.debian.tar.xz' postgresql-9.5_9.5.7-0ubuntu0.16.04.debian.tar.xz 22800 SHA256:8bf7070ff65567ad61aee0793489cf85b7216ec9b7a87ba5601d16668b9e77c6
-```
 
 ### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.3`
 
