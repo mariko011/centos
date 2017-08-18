@@ -100,18 +100,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.5~beta1
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.5~beta1.dsc' apt_1.5~beta1.dsc 2584 SHA256:e74cb480326235eb61bd2967e82f34c534f14b9711eac51329f86619ba281c60
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.5~beta1.tar.xz' apt_1.5~beta1.tar.xz 2089648 SHA256:6977a4a9f85da1c76af2cdbc4c33478812ae5ea3c14af61321d19a7b032915fe
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.5~beta1/
-- https://sources.debian.net/src/apt/1.5~beta1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `atk1.0=2.24.0-1`
 
@@ -4020,19 +4010,8 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc
 - `ZLIB`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openjpeg2=2.1.2-1.1
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2-1.1.dsc' openjpeg2_2.1.2-1.1.dsc 2924 SHA256:103af13df834b24267c86617944f1fe1204a30b3053a1a4b032bb131ef23b126
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2.orig.tar.gz' openjpeg2_2.1.2.orig.tar.gz 1987071 SHA256:4ce77b6ef538ef090d9bde1d5eeff8b3069ab56c4906f083475517c2c023dfa7
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.1.2-1.1.debian.tar.xz' openjpeg2_2.1.2-1.1.debian.tar.xz 19364 SHA256:b19b15ac6306c19734f0626f974c8863e4dc21a1df849a8ae81008479b5b0daf
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openjpeg2/2.1.2-1.1/
-- https://sources.debian.net/src/openjpeg2/2.1.2-1.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-8`
 
@@ -4201,19 +4180,8 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `LGPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.40.6-1
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.6-1.dsc' pango1.0_1.40.6-1.dsc 3264 SHA256:5630828482c7da12c761536ec64360f6d48afb246c6e12ce9efb891bcc523920
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.6.orig.tar.xz' pango1.0_1.40.6.orig.tar.xz 832040 SHA256:ca152b7383a1e9f7fd74ae96023dc6770dc5043414793bfe768ff06b6759e573
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.40.6-1.debian.tar.xz' pango1.0_1.40.6-1.debian.tar.xz 27320 SHA256:c02cc0fd7f17be3992ee6bf2889ceae53ebc66edb1c30603f30cbc2cc6d18103
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/pango1.0/1.40.6-1/
-- https://sources.debian.net/src/pango1.0/1.40.6-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `patch=2.7.5-1`
 

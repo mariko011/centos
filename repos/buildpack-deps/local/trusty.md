@@ -3440,14 +3440,8 @@ Licenses: (parsed from: `/usr/share/doc/logrotate/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris logrotate=3.8.7-1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-1ubuntu1.1.dsc' logrotate_3.8.7-1ubuntu1.1.dsc 1932 SHA256:05e557d77dcd60f06e3debf7a488ef0d4617dafad2d6729c08606ac60a03a54a
-'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7.orig.tar.gz' logrotate_3.8.7.orig.tar.gz 58898 SHA256:f6ba691f40e30e640efa2752c1f9499a3f9738257660994de70a45fe00d12b64
-'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-1ubuntu1.1.debian.tar.xz' logrotate_3.8.7-1ubuntu1.1.debian.tar.xz 22632 SHA256:cde21659a288e14a31c761df6ebaf8aaed11c653b4ed21b658e35a05b6cc319c
-```
 
 ### `dpkg` source package: `lsb=4.1+Debian11ubuntu6.2`
 
@@ -4184,14 +4178,8 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `GPL-1`
 - `Tcl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.3=9.3.17-0ubuntu0.14.04
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.17-0ubuntu0.14.04.dsc' postgresql-9.3_9.3.17-0ubuntu0.14.04.dsc 3595 SHA256:d6b4e85d96d6f6470a423b70d0a744c0cbf1a5035bff537d3a979991ae725b45
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.17.orig.tar.bz2' postgresql-9.3_9.3.17.orig.tar.bz2 17158802 SHA256:9c03e5f280cfe9bd202fa01af773eb146abd8ab3065f7279d574c568f6948dbe
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.3/postgresql-9.3_9.3.17-0ubuntu0.14.04.debian.tar.xz' postgresql-9.3_9.3.17-0ubuntu0.14.04.debian.tar.xz 29352 SHA256:3fd06d89b2132a337d68f41436b16ee06dc2968571a832f9daf02a5861445d0c
-```
 
 ### `dpkg` source package: `procps=1:3.3.9-1ubuntu2.2`
 

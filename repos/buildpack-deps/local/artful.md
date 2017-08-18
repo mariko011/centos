@@ -584,14 +584,8 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.27~101-g0780600+dfsg-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg-2ubuntu1.dsc' cyrus-sasl2_2.1.27~101-g0780600+dfsg-2ubuntu1.dsc 2927 SHA256:2dfd6d5587f4508aec944e569a77c2e78293ec017b7879430d354122ad85d18b
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg.orig.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg.orig.tar.xz 1143888 SHA256:69f34971f768e7ee6a6b647ec2d16a5a72a854ecd4602b019d5f79ba61063fdc
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.27~101-g0780600+dfsg-2ubuntu1.debian.tar.xz' cyrus-sasl2_2.1.27~101-g0780600+dfsg-2ubuntu1.debian.tar.xz 94876 SHA256:1d43d9cce1a632bd81b478a9ef08c27610b5e289ec58667d3fb766ffba7d6225
-```
 
 ### `dpkg` source package: `dash=0.5.8-2.3ubuntu1`
 
@@ -2137,14 +2131,8 @@ Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`)
 - `LGPL-3+`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libidn2-0=2.0.2-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn2-0/libidn2-0_2.0.2-1.dsc' libidn2-0_2.0.2-1.dsc 1790 SHA256:d1a6209c9f1cdd716e5300e73d14081037bc8341526af31a1b5d1a04a68c2ecb
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn2-0/libidn2-0_2.0.2.orig.tar.gz' libidn2-0_2.0.2.orig.tar.gz 1925342 SHA256:8cd62828b2ab0171e0f35a302f3ad60c3a3fffb45733318b3a8205f9d187eeab
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libidn2-0/libidn2-0_2.0.2-1.debian.tar.xz' libidn2-0_2.0.2-1.debian.tar.xz 57536 SHA256:db394f33acc4ed7e3c04a3bb8e7940fab0d0b6a7ec351f71f69b40ae3ae24991
-```
 
 ### `dpkg` source package: `libidn=1.33-1`
 
@@ -2942,14 +2930,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.11.0-13.19
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.11.0-13.19.dsc' linux_4.11.0-13.19.dsc 5740 SHA256:c960227edf319935adee888adbb6d539028b288a49c7cc43114e4ca13bb1453e
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.11.0.orig.tar.gz' linux_4.11.0.orig.tar.gz 145696447 SHA256:288c58656d54d3b22f4176e8174efec9db85affa058ef5fecb21e3efee8148e4
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.11.0-13.19.diff.gz' linux_4.11.0-13.19.diff.gz 6908140 SHA256:66b430570e7d462dc806bfdd847427e10e269a2b1acecac232a2bad704e83e07
-```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu5`
 
