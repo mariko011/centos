@@ -1,10 +1,10 @@
-# `rabbitmq:3.6.10-management`
+# `rabbitmq:3.6.11-management`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f10fce4f4bb8ffb08a9455f4daf47e56ecb88cef03a90dbe03f343575e636907`
-- Created: `2017-07-26T09:09:05.531160358Z`
-- Virtual Size: ~ 123.63 Mb  
+- Image ID: `sha256:fb11f4e0a6b6fa0d04d5a997ac9ad91c3950dfe8954e30f541fae35de7a02cc6`
+- Created: `2017-08-17T18:49:07.435927944Z`
+- Virtual Size: ~ 123.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,8 +14,8 @@
   - `GOSU_VERSION=1.10`
   - `RABBITMQ_LOGS=-`
   - `RABBITMQ_SASL_LOGS=-`
-  - `RABBITMQ_VERSION=3.6.10`
-  - `RABBITMQ_DEBIAN_VERSION=3.6.10-1`
+  - `RABBITMQ_VERSION=3.6.11`
+  - `RABBITMQ_DEBIAN_VERSION=3.6.11-1`
   - `HOME=/var/lib/rabbitmq`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1640,11 +1640,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/procps/2:3.3.12-3/
 - https://sources.debian.net/src/procps/2:3.3.12-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `rabbitmq-server=3.6.10-1`
+### `dpkg` source package: `rabbitmq-server=3.6.11-1`
 
 Binary Packages:
 
-- `rabbitmq-server=3.6.10-1`
+- `rabbitmq-server=3.6.11-1`
 
 Licenses: (parsed from: `/usr/share/doc/rabbitmq-server/copyright`)
 
@@ -1654,10 +1654,10 @@ Licenses: (parsed from: `/usr/share/doc/rabbitmq-server/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris rabbitmq-server=3.6.10-1
-'http://www.rabbitmq.com/debian/pool/main/r/rabbitmq-server/rabbitmq-server_3.6.10-1.dsc' rabbitmq-server_3.6.10-1.dsc 1956 SHA256:53654eb78898dc5dcdc379dfa8672e4eba38c13a6fbeffc87b959ee046906388
-'http://www.rabbitmq.com/debian/pool/main/r/rabbitmq-server/rabbitmq-server_3.6.10.orig.tar.xz' rabbitmq-server_3.6.10.orig.tar.xz 1426900 SHA256:0f478950a3e27b6b3b5aa57098eaf91822321d716a9b0bc30a4084a2c283394c
-'http://www.rabbitmq.com/debian/pool/main/r/rabbitmq-server/rabbitmq-server_3.6.10-1.debian.tar.gz' rabbitmq-server_3.6.10-1.debian.tar.gz 7112 SHA256:090dfa4ddd8ae647cea74ddcf42681708f903ac3f570d932bd1bdfe5a0e21f24
+$ apt-get source -qq --print-uris rabbitmq-server=3.6.11-1
+'http://www.rabbitmq.com/debian/pool/main/r/rabbitmq-server/rabbitmq-server_3.6.11-1.dsc' rabbitmq-server_3.6.11-1.dsc 2081 SHA256:408af1d28fb14784c1ca2af5d90db907161552d89574a03a569950c41e0fc917
+'http://www.rabbitmq.com/debian/pool/main/r/rabbitmq-server/rabbitmq-server_3.6.11.orig.tar.xz' rabbitmq-server_3.6.11.orig.tar.xz 1436156 SHA256:849cb7109d0744954573022b6981c29213fa474360319de1845f0d84da3f3034
+'http://www.rabbitmq.com/debian/pool/main/r/rabbitmq-server/rabbitmq-server_3.6.11-1.debian.tar.xz' rabbitmq-server_3.6.11-1.debian.tar.xz 6676 SHA256:0f226797bf91c3033ed4883fcba8abcac3d4c38017f0e342f418c28181971df3
 ```
 
 ### `dpkg` source package: `readline=7.0-3`
