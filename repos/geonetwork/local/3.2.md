@@ -785,19 +785,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris expat=2.2.0-2+deb9u1
-'http://security.debian.org/pool/updates/main/e/expat/expat_2.2.0-2+deb9u1.dsc' expat_2.2.0-2+deb9u1.dsc 2295 SHA256:6d7f96d7148dda2857772b499cbe17d0feb1c016dcf35b1a6da7c846123bd20b
-'http://security.debian.org/pool/updates/main/e/expat/expat_2.2.0.orig.tar.bz2' expat_2.2.0.orig.tar.bz2 414352 SHA256:d9e50ff2d19b3538bd2127902a89987474e1a4db8e43a66a4d1a712ab9a504ff
-'http://security.debian.org/pool/updates/main/e/expat/expat_2.2.0-2+deb9u1.debian.tar.xz' expat_2.2.0-2+deb9u1.debian.tar.xz 11448 SHA256:d3e171fc4d2e6173945daab7d7df46d640fa23134c9474080f6d1b65d494b0a5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/expat/2.2.0-2+deb9u1/
-- https://sources.debian.net/src/expat/2.2.0-2+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20161106-2`
 
@@ -2314,19 +2303,8 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 - `LGPL-2`
 - `LGPL-2-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris openjdk-8=8u141-b15-1~deb9u1
-'http://security.debian.org/pool/updates/main/o/openjdk-8/openjdk-8_8u141-b15-1~deb9u1.dsc' openjdk-8_8u141-b15-1~deb9u1.dsc 4486 SHA256:deaca5cb2c51cd0c5b1938ce866b0833e021da48ead87b9fc538bc9e835bb44e
-'http://security.debian.org/pool/updates/main/o/openjdk-8/openjdk-8_8u141-b15.orig.tar.gz' openjdk-8_8u141-b15.orig.tar.gz 64099346 SHA256:906bcbecce35e0bda53d6c431c22282cf5aba9367e842efa82426c7e9214cf64
-'http://security.debian.org/pool/updates/main/o/openjdk-8/openjdk-8_8u141-b15-1~deb9u1.debian.tar.xz' openjdk-8_8u141-b15-1~deb9u1.debian.tar.xz 244640 SHA256:f6f095413a07b92aa48f22405f803424a28abf66a3fb4adc137fc490f978d156
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/openjdk-8/8u141-b15-1~deb9u1/
-- https://sources.debian.net/src/openjdk-8/8u141-b15-1~deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-5`
 
