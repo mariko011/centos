@@ -51,18 +51,8 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris adduser=3.115
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.115.dsc' adduser_3.115.dsc 1701 SHA256:754698aa19d7521080ecacc8033baa20cfa4a963021de6061c68ffa6ee15e9a1
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.115.tar.xz' adduser_3.115.tar.xz 213620 SHA256:e7288281d4d1eec2948ba3687452ca33a8224d40c98d321bc3fbaefcf6d4c0db
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/adduser/3.115/
-- https://sources.debian.net/src/adduser/3.115/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apt=1.5~beta1`
 
@@ -480,15 +470,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris curl=7.52.1-5
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-5.dsc' curl_7.52.1-5.dsc 2765 SHA256:40e5e7c680d0246e12bdebf4f84949412c7846d95708c688df9dd7e77119960e
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.52.1-5.debian.tar.xz' curl_7.52.1-5.debian.tar.xz 33004 SHA256:67e9388c5562edbdd63fa31a892d446bd7dee18207a62ec367bc925f6ce50fcf
+'http://http.debian.net/debian/pool/main/c/curl/curl_7.52.1-5.dsc' curl_7.52.1-5.dsc 2765 SHA256:40e5e7c680d0246e12bdebf4f84949412c7846d95708c688df9dd7e77119960e
+'http://http.debian.net/debian/pool/main/c/curl/curl_7.52.1.orig.tar.gz' curl_7.52.1.orig.tar.gz 3504621 SHA256:a8984e8b20880b621f61a62d95ff3c0763a3152093a9f9ce4287cfd614add6ae
+'http://http.debian.net/debian/pool/main/c/curl/curl_7.52.1-5.debian.tar.xz' curl_7.52.1-5.debian.tar.xz 33004 SHA256:67e9388c5562edbdd63fa31a892d446bd7dee18207a62ec367bc925f6ce50fcf
 ```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/curl/7.52.1-5/
-- https://sources.debian.net/src/curl/7.52.1-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
@@ -919,19 +904,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-7-base/copyright`, `/usr/share/doc/l
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.1.0-10
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.1.0-10.dsc' gcc-7_7.1.0-10.dsc 26121 SHA256:c9b7e5274615fec97836a73e9fa0ace57870bc82633f926f375bf329e4d0e111
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.1.0.orig.tar.gz' gcc-7_7.1.0.orig.tar.gz 73830593 SHA256:c387dcedc16950e89bd4a805564047bc4a2340511a155d0fa4046ff158939146
-'http://deb.debian.org/debian/pool/main/g/gcc-7/gcc-7_7.1.0-10.diff.gz' gcc-7_7.1.0-10.diff.gz 1416844 SHA256:d6b04f9958dbd90647c4cb52be983552e2c70c9d564df313e05f3bdec9884264
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-7/7.1.0-10/
-- https://sources.debian.net/src/gcc-7/7.1.0-10/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-defaults=1.168d1`
 
@@ -946,18 +920,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/g++/copy
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.168d1
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.168d1.dsc' gcc-defaults_1.168d1.dsc 13181 SHA256:aabdf066698066da04b85b92ccbb2b5f0f8b1f80068f33602ac983fc2d981519
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.168d1.tar.gz' gcc-defaults_1.168d1.tar.gz 69487 SHA256:f31256393cca881a6d46361f80e24a145d5b7d6ebf008faae1fbfcf921cd4827
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-defaults/1.168d1/
-- https://sources.debian.net/src/gcc-defaults/1.168d1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gdbm=1.8.3-14`
 
@@ -1874,19 +1838,8 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5/copyright`)
 - `Chromium`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libpsl=0.17.0-5
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.17.0-5.dsc' libpsl_0.17.0-5.dsc 2194 SHA256:674c757c46515ae6043879be4dcaf8904216cd4ca42d308de2a37194189217a9
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.17.0.orig.tar.gz' libpsl_0.17.0.orig.tar.gz 49087 SHA256:7731e28393e1b4ca363eaffecd6c7570023a7c18c017b45d683ac7d2ba1f0bd1
-'http://deb.debian.org/debian/pool/main/libp/libpsl/libpsl_0.17.0-5.debian.tar.xz' libpsl_0.17.0-5.debian.tar.xz 11508 SHA256:3070d0753bb6631d6465380a64d040a85c3ab2f869b2586f1d2c362b390a164a
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libpsl/0.17.0-5/
-- https://sources.debian.net/src/libpsl/0.17.0-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libselinux=2.6-3`
 
@@ -3089,14 +3042,8 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-matrix/copyright`)
 - `GPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris rmatrix=1.2-10-1
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.2-10-1.dsc' rmatrix_1.2-10-1.dsc 1674 SHA256:5aa2abe8774c70f265029b3d230c2e5d33177a967608150743d2e7c54b8c2e11
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.2-10.orig.tar.gz' rmatrix_1.2-10.orig.tar.gz 1815685 SHA256:102aa8fcc2884c039d28c2a9a5d2d64549cb3fae8490eff26f8f77913e937864
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.2-10-1.diff.gz' rmatrix_1.2-10-1.diff.gz 5054 SHA256:fc56ea91f129e9a716850a59322a48ca4f0409d436e787cb32cce25627fc1d6c
-```
 
 ### `dpkg` source package: `rpart=4.1-11-1`
 
@@ -3177,18 +3124,8 @@ Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sensible-utils=0.0.9+nmu1
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9+nmu1.dsc' sensible-utils_0.0.9+nmu1.dsc 1456 SHA256:49922ddd1c19aaad510da759bd97255ef799b252242629bdb0288bd273430ad2
-'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9+nmu1.tar.xz' sensible-utils_0.0.9+nmu1.tar.xz 54080 SHA256:e754ca8de7ad0d7fb8eb91fa2a2c1ee9947e88b51ed850340e5e833a82d38254
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sensible-utils/0.0.9+nmu1/
-- https://sources.debian.net/src/sensible-utils/0.0.9+nmu1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `shadow=1:4.4-4.1`
 
