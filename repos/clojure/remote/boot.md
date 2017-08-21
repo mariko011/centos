@@ -1,7 +1,7 @@
 ## `clojure:boot`
 
 ```console
-$ docker pull clojure@sha256:be4aff08e3c3e1c1c7ef7f7b45efe6eb6ab8356b538085c2aae3df552f10dd0b
+$ docker pull clojure@sha256:e7347c9cbd8ad410cf52ccf2b01ec54cc62d82ea8cd67d8b993b0a1360152275
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull clojure@sha256:be4aff08e3c3e1c1c7ef7f7b45efe6eb6ab8356b538085c2aae
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.6 MB (328622948 bytes)**  
+-	Total Size: **328.7 MB (328690320 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ebd97651c0800ea3d1b228ff0ada09399fd58b02a7bf6b594cab787b97b6ba5d`
+-	Image ID: `sha256:21f13a967fa38d5350442ebca9cdbe53f704447dd523c747f2d84fe181ed4ad0`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -49,19 +49,19 @@ RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/m
 RUN /var/lib/dpkg/info/ca-certificates-java.postinst configure
 # Thu, 27 Jul 2017 16:03:16 GMT
 MAINTAINER Wes Morgan <wesmorgan@icloud.com>
-# Thu, 27 Jul 2017 16:03:16 GMT
-ENV BOOT_VERSION=2.7.1
-# Thu, 27 Jul 2017 16:03:17 GMT
+# Mon, 21 Aug 2017 16:53:23 GMT
+ENV BOOT_VERSION=2.7.2
+# Mon, 21 Aug 2017 16:53:23 GMT
 ENV BOOT_INSTALL=/usr/local/bin/
-# Thu, 27 Jul 2017 16:03:17 GMT
+# Mon, 21 Aug 2017 16:53:24 GMT
 WORKDIR /tmp
-# Thu, 27 Jul 2017 16:03:18 GMT
+# Mon, 21 Aug 2017 16:53:26 GMT
 RUN mkdir -p $BOOT_INSTALL   && wget -q https://github.com/boot-clj/boot-bin/releases/download/2.5.2/boot.sh   && echo "Comparing installer checksum..."   && echo "d9cbefc6cbf043361a58b416e6d62fc80e5ead32 *boot.sh" | sha1sum -c -   && mv boot.sh $BOOT_INSTALL/boot   && chmod 0755 $BOOT_INSTALL/boot
-# Thu, 27 Jul 2017 16:03:19 GMT
+# Mon, 21 Aug 2017 16:53:26 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Thu, 27 Jul 2017 16:03:19 GMT
+# Mon, 21 Aug 2017 16:53:26 GMT
 ENV BOOT_AS_ROOT=yes
-# Thu, 27 Jul 2017 16:05:54 GMT
+# Mon, 21 Aug 2017 16:55:37 GMT
 RUN boot
 ```
 
@@ -102,11 +102,11 @@ RUN boot
 		Last Modified: Wed, 26 Jul 2017 20:37:10 GMT  
 		Size: 272.0 KB (271991 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1fb4ddf11429435b61377b923c6236f828237e09f553db16fd0aaa479ae92579`  
-		Last Modified: Thu, 27 Jul 2017 16:07:08 GMT  
-		Size: 6.6 KB (6594 bytes)  
+	-	`sha256:17e5530689eb59399560ab986b8b77186b32829e0bb82387e22fa371de008e75`  
+		Last Modified: Mon, 21 Aug 2017 16:59:00 GMT  
+		Size: 6.6 KB (6593 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:70c2814dbdf595c53db7b09ff177bf7601187c1c6c17fff454d2bed313018edc`  
-		Last Modified: Thu, 27 Jul 2017 16:07:10 GMT  
-		Size: 33.3 MB (33336155 bytes)  
+	-	`sha256:ebd6517a66dc4be62710ffa57cf77e395e8a7046ca476d6553d0005836902cb2`  
+		Last Modified: Mon, 21 Aug 2017 16:59:03 GMT  
+		Size: 33.4 MB (33403528 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
