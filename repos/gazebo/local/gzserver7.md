@@ -3183,14 +3183,8 @@ Licenses: (parsed from: `/usr/share/doc/logrotate/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris logrotate=3.8.7-1ubuntu1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-1ubuntu1.1.dsc' logrotate_3.8.7-1ubuntu1.1.dsc 1932 SHA256:05e557d77dcd60f06e3debf7a488ef0d4617dafad2d6729c08606ac60a03a54a
-'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7.orig.tar.gz' logrotate_3.8.7.orig.tar.gz 58898 SHA256:f6ba691f40e30e640efa2752c1f9499a3f9738257660994de70a45fe00d12b64
-'http://archive.ubuntu.com/ubuntu/pool/main/l/logrotate/logrotate_3.8.7-1ubuntu1.1.debian.tar.xz' logrotate_3.8.7-1ubuntu1.1.debian.tar.xz 22632 SHA256:cde21659a288e14a31c761df6ebaf8aaed11c653b4ed21b658e35a05b6cc319c
-```
 
 ### `dpkg` source package: `lsb=4.1+Debian11ubuntu6.2`
 
