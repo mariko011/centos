@@ -1,7 +1,7 @@
 ## `rocket.chat:latest`
 
 ```console
-$ docker pull rocket.chat@sha256:8c76b9a6bf61a1e3d2ab8f9e755047b02dad0fd442e0d4e5cf90a8dfb187db0e
+$ docker pull rocket.chat@sha256:6d2f64e5ce0d8115769025e1a3e53f6205244f9de47c3d713ea06f24053d85bb
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull rocket.chat@sha256:8c76b9a6bf61a1e3d2ab8f9e755047b02dad0fd442e0d4e
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **189.3 MB (189254800 bytes)**  
+-	Total Size: **189.6 MB (189602356 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7dcdd031e82bb9b8dadf7189e43a82fd591f1f5c060409080baf51e7febc2819`
+-	Image ID: `sha256:753b6d333a93b415f663b2312c32a4a64cd523dd445af2ed6d5a046a3fa13d9a`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
@@ -49,21 +49,21 @@ RUN groupadd -r rocketchat &&  useradd -r -g rocketchat rocketchat &&  mkdir -p 
 VOLUME [/app/uploads]
 # Fri, 18 Aug 2017 23:25:36 GMT
 RUN gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 0E163286C20D07B9787EBE9FD7F9D0414FD08104
-# Fri, 18 Aug 2017 23:25:37 GMT
-ENV RC_VERSION=0.57.3
-# Fri, 18 Aug 2017 23:25:37 GMT
+# Mon, 21 Aug 2017 19:18:21 GMT
+ENV RC_VERSION=0.58.1
+# Mon, 21 Aug 2017 19:18:21 GMT
 WORKDIR /app
-# Fri, 18 Aug 2017 23:26:26 GMT
+# Mon, 21 Aug 2017 19:19:10 GMT
 RUN curl -fSL "https://rocket.chat/releases/${RC_VERSION}/download" -o rocket.chat.tgz &&  curl -fSL "https://rocket.chat/releases/${RC_VERSION}/asc" -o rocket.chat.tgz.asc &&  gpg --batch --verify rocket.chat.tgz.asc rocket.chat.tgz &&  tar zxvf rocket.chat.tgz &&  rm rocket.chat.tgz rocket.chat.tgz.asc &&  cd bundle/programs/server &&  npm install
-# Fri, 18 Aug 2017 23:26:28 GMT
+# Mon, 21 Aug 2017 19:19:11 GMT
 USER [rocketchat]
-# Fri, 18 Aug 2017 23:26:28 GMT
+# Mon, 21 Aug 2017 19:19:11 GMT
 WORKDIR /app/bundle
-# Fri, 18 Aug 2017 23:26:28 GMT
+# Mon, 21 Aug 2017 19:19:11 GMT
 ENV MONGO_URL=mongodb://db:27017/meteor HOME=/tmp PORT=3000 ROOT_URL=http://localhost:3000 Accounts_AvatarStorePath=/app/uploads
-# Fri, 18 Aug 2017 23:26:29 GMT
+# Mon, 21 Aug 2017 19:19:12 GMT
 EXPOSE 3000/tcp
-# Fri, 18 Aug 2017 23:26:29 GMT
+# Mon, 21 Aug 2017 19:19:12 GMT
 CMD ["node" "main.js"]
 ```
 
@@ -100,7 +100,7 @@ CMD ["node" "main.js"]
 		Last Modified: Fri, 18 Aug 2017 23:26:37 GMT  
 		Size: 127.2 KB (127204 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d8340230f575386b0ebdf604ffb9ee3b99c18bc8e95509f63e0e5f614bc770b0`  
-		Last Modified: Fri, 18 Aug 2017 23:26:58 GMT  
-		Size: 103.8 MB (103811678 bytes)  
+	-	`sha256:d82d235aaef2159a0ee9e789ac2cc7a3c9649487a5ca7b2bfafa9d6ed8c3c2de`  
+		Last Modified: Mon, 21 Aug 2017 19:19:41 GMT  
+		Size: 104.2 MB (104159234 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

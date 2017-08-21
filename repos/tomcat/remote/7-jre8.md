@@ -1,7 +1,7 @@
 ## `tomcat:7-jre8`
 
 ```console
-$ docker pull tomcat@sha256:003da4f5b00333154a01b1b8edcdb50c328a349802b15badbb1a5cb320bdaefa
+$ docker pull tomcat@sha256:6ea7647fe1352b88e66f734415d69401e05e365bc1fa367bf2e4087e485a8602
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull tomcat@sha256:003da4f5b00333154a01b1b8edcdb50c328a349802b15badbb1a
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.1 MB (126144471 bytes)**  
+-	Total Size: **126.2 MB (126152257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f2021db562f28489ed0c70188726e2fa29c0244a7060ac6809348a47fd895f02`
+-	Image ID: `sha256:510e45f8f9f7b179f464634740c8f669f27a34a4a8c12fc576ca9f6f4ee65b6a`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -69,23 +69,23 @@ ENV GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E626
 RUN set -ex; 	for key in $GPG_KEYS; do 		gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; 	done
 # Thu, 27 Jul 2017 20:35:02 GMT
 ENV TOMCAT_MAJOR=7
-# Thu, 27 Jul 2017 20:35:02 GMT
-ENV TOMCAT_VERSION=7.0.79
-# Thu, 27 Jul 2017 20:35:03 GMT
-ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-7/v7.0.79/bin/apache-tomcat-7.0.79.tar.gz
-# Thu, 27 Jul 2017 20:35:03 GMT
-ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-7/v7.0.79/bin/apache-tomcat-7.0.79.tar.gz.asc
-# Wed, 09 Aug 2017 21:52:42 GMT
-ENV TOMCAT_TGZ_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.79/bin/apache-tomcat-7.0.79.tar.gz
-# Wed, 09 Aug 2017 21:52:42 GMT
-ENV TOMCAT_ASC_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.79/bin/apache-tomcat-7.0.79.tar.gz.asc
-# Wed, 09 Aug 2017 21:53:34 GMT
+# Mon, 21 Aug 2017 19:22:57 GMT
+ENV TOMCAT_VERSION=7.0.81
+# Mon, 21 Aug 2017 19:22:58 GMT
+ENV TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-7/v7.0.81/bin/apache-tomcat-7.0.81.tar.gz
+# Mon, 21 Aug 2017 19:22:58 GMT
+ENV TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-7/v7.0.81/bin/apache-tomcat-7.0.81.tar.gz.asc
+# Mon, 21 Aug 2017 19:22:58 GMT
+ENV TOMCAT_TGZ_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.81/bin/apache-tomcat-7.0.81.tar.gz
+# Mon, 21 Aug 2017 19:22:59 GMT
+ENV TOMCAT_ASC_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.81/bin/apache-tomcat-7.0.81.tar.gz.asc
+# Mon, 21 Aug 2017 19:23:48 GMT
 RUN set -x 		&& { 		wget -O tomcat.tar.gz "$TOMCAT_TGZ_URL" 		|| wget -O tomcat.tar.gz "$TOMCAT_TGZ_FALLBACK_URL" 	; } 	&& { 		wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_URL" 		|| wget -O tomcat.tar.gz.asc "$TOMCAT_ASC_FALLBACK_URL" 	; } 	&& gpg --batch --verify tomcat.tar.gz.asc tomcat.tar.gz 	&& tar -xvf tomcat.tar.gz --strip-components=1 	&& rm bin/*.bat 	&& rm tomcat.tar.gz* 		&& nativeBuildDir="$(mktemp -d)" 	&& tar -xvf bin/tomcat-native.tar.gz -C "$nativeBuildDir" --strip-components=1 	&& nativeBuildDeps=" 		dpkg-dev 		gcc 		libapr1-dev 		libssl-dev 		make 		openjdk-${JAVA_VERSION%%[-~bu]*}-jdk=$JAVA_DEBIAN_VERSION 	" 	&& apt-get update && apt-get install -y --no-install-recommends $nativeBuildDeps && rm -rf /var/lib/apt/lists/* 	&& ( 		export CATALINA_HOME="$PWD" 		&& cd "$nativeBuildDir/native" 		&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 		&& ./configure 			--build="$gnuArch" 			--libdir="$TOMCAT_NATIVE_LIBDIR" 			--prefix="$CATALINA_HOME" 			--with-apr="$(which apr-1-config)" 			--with-java-home="$(docker-java-home)" 			--with-ssl=yes 		&& make -j "$(nproc)" 		&& make install 	) 	&& apt-get purge -y --auto-remove $nativeBuildDeps 	&& rm -rf "$nativeBuildDir" 	&& rm bin/tomcat-native.tar.gz 	&& find ./bin/ -name '*.sh' -exec sed -ri 's|^#!/bin/sh$|#!/usr/bin/env bash|' '{}' +
-# Wed, 09 Aug 2017 21:53:42 GMT
+# Mon, 21 Aug 2017 19:23:55 GMT
 RUN set -e 	&& nativeLines="$(catalina.sh configtest 2>&1)" 	&& nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')" 	&& nativeLines="$(echo "$nativeLines" | sort -u)" 	&& if ! echo "$nativeLines" | grep 'INFO: Loaded APR based Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi
-# Wed, 09 Aug 2017 21:53:42 GMT
+# Mon, 21 Aug 2017 19:23:55 GMT
 EXPOSE 8080/tcp
-# Wed, 09 Aug 2017 21:53:42 GMT
+# Mon, 21 Aug 2017 19:23:56 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -134,11 +134,11 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Thu, 27 Jul 2017 20:40:45 GMT  
 		Size: 112.3 KB (112272 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6da77f89f1efab97e430007ef736a6761a01e4f7c040320d6fea050793654abd`  
-		Last Modified: Wed, 09 Aug 2017 22:52:08 GMT  
-		Size: 9.6 MB (9638268 bytes)  
+	-	`sha256:eb9b7457396558f37d230d8cb10dc083fb304895030d40ce8b54598e176546ec`  
+		Last Modified: Mon, 21 Aug 2017 19:30:35 GMT  
+		Size: 9.6 MB (9646054 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:15aded192f27e23e750ba0b1b43d8a720b7b82dd7d5387fe12c221e3d879257b`  
-		Last Modified: Wed, 09 Aug 2017 22:52:07 GMT  
+	-	`sha256:a449552e9a7017e8a35bfa9df1474540b28b8be3881945f9aca0995a5fedd500`  
+		Last Modified: Mon, 21 Aug 2017 19:30:33 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
