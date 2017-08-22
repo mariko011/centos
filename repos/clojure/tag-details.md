@@ -1294,7 +1294,7 @@ CMD ["lein" "run"]
 ## `clojure:boot-2.7.2`
 
 ```console
-$ docker pull clojure@sha256:e7347c9cbd8ad410cf52ccf2b01ec54cc62d82ea8cd67d8b993b0a1360152275
+$ docker pull clojure@sha256:96b612cf4747dea2c153d966025775885a6dfae4506e856d21141123bfb36317
 ```
 
 -	Platforms:
@@ -1304,9 +1304,9 @@ $ docker pull clojure@sha256:e7347c9cbd8ad410cf52ccf2b01ec54cc62d82ea8cd67d8b993
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.7 MB (328690320 bytes)**  
+-	Total Size: **328.7 MB (328690482 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21f13a967fa38d5350442ebca9cdbe53f704447dd523c747f2d84fe181ed4ad0`
+-	Image ID: `sha256:11b2c1e2180c4f04857e8a64fb2fd9f598252f09c4c29421649134877f8f4064`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -1348,13 +1348,13 @@ ENV BOOT_VERSION=2.7.2
 ENV BOOT_INSTALL=/usr/local/bin/
 # Mon, 21 Aug 2017 16:53:24 GMT
 WORKDIR /tmp
-# Mon, 21 Aug 2017 16:53:26 GMT
-RUN mkdir -p $BOOT_INSTALL   && wget -q https://github.com/boot-clj/boot-bin/releases/download/2.5.2/boot.sh   && echo "Comparing installer checksum..."   && echo "d9cbefc6cbf043361a58b416e6d62fc80e5ead32 *boot.sh" | sha1sum -c -   && mv boot.sh $BOOT_INSTALL/boot   && chmod 0755 $BOOT_INSTALL/boot
-# Mon, 21 Aug 2017 16:53:26 GMT
+# Tue, 22 Aug 2017 18:12:52 GMT
+RUN mkdir -p $BOOT_INSTALL   && wget -q https://github.com/boot-clj/boot-bin/releases/download/2.7.2/boot.sh   && echo "Comparing installer checksum..."   && echo "f717ef381f2863a4cad47bf0dcc61e923b3d2afb *boot.sh" | sha1sum -c -   && mv boot.sh $BOOT_INSTALL/boot   && chmod 0755 $BOOT_INSTALL/boot
+# Tue, 22 Aug 2017 18:12:52 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Mon, 21 Aug 2017 16:53:26 GMT
+# Tue, 22 Aug 2017 18:12:52 GMT
 ENV BOOT_AS_ROOT=yes
-# Mon, 21 Aug 2017 16:55:37 GMT
+# Tue, 22 Aug 2017 18:14:58 GMT
 RUN boot
 ```
 
@@ -1395,19 +1395,19 @@ RUN boot
 		Last Modified: Wed, 26 Jul 2017 20:37:10 GMT  
 		Size: 272.0 KB (271991 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17e5530689eb59399560ab986b8b77186b32829e0bb82387e22fa371de008e75`  
-		Last Modified: Mon, 21 Aug 2017 16:59:00 GMT  
-		Size: 6.6 KB (6593 bytes)  
+	-	`sha256:513e21d4887859ba7380eb4653918492152eb5794022caaed36bb179a093809c`  
+		Last Modified: Tue, 22 Aug 2017 18:18:07 GMT  
+		Size: 6.9 KB (6882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ebd6517a66dc4be62710ffa57cf77e395e8a7046ca476d6553d0005836902cb2`  
-		Last Modified: Mon, 21 Aug 2017 16:59:03 GMT  
-		Size: 33.4 MB (33403528 bytes)  
+	-	`sha256:a693ef2b6b6c89d207893407995171ecf148b45ffbc898afa37f2e341ee13026`  
+		Last Modified: Tue, 22 Aug 2017 18:18:10 GMT  
+		Size: 33.4 MB (33403401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:boot`
 
 ```console
-$ docker pull clojure@sha256:e7347c9cbd8ad410cf52ccf2b01ec54cc62d82ea8cd67d8b993b0a1360152275
+$ docker pull clojure@sha256:96b612cf4747dea2c153d966025775885a6dfae4506e856d21141123bfb36317
 ```
 
 -	Platforms:
@@ -1417,9 +1417,9 @@ $ docker pull clojure@sha256:e7347c9cbd8ad410cf52ccf2b01ec54cc62d82ea8cd67d8b993
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.7 MB (328690320 bytes)**  
+-	Total Size: **328.7 MB (328690482 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21f13a967fa38d5350442ebca9cdbe53f704447dd523c747f2d84fe181ed4ad0`
+-	Image ID: `sha256:11b2c1e2180c4f04857e8a64fb2fd9f598252f09c4c29421649134877f8f4064`
 -	Default Command: `["bash"]`
 
 ```dockerfile
@@ -1461,13 +1461,13 @@ ENV BOOT_VERSION=2.7.2
 ENV BOOT_INSTALL=/usr/local/bin/
 # Mon, 21 Aug 2017 16:53:24 GMT
 WORKDIR /tmp
-# Mon, 21 Aug 2017 16:53:26 GMT
-RUN mkdir -p $BOOT_INSTALL   && wget -q https://github.com/boot-clj/boot-bin/releases/download/2.5.2/boot.sh   && echo "Comparing installer checksum..."   && echo "d9cbefc6cbf043361a58b416e6d62fc80e5ead32 *boot.sh" | sha1sum -c -   && mv boot.sh $BOOT_INSTALL/boot   && chmod 0755 $BOOT_INSTALL/boot
-# Mon, 21 Aug 2017 16:53:26 GMT
+# Tue, 22 Aug 2017 18:12:52 GMT
+RUN mkdir -p $BOOT_INSTALL   && wget -q https://github.com/boot-clj/boot-bin/releases/download/2.7.2/boot.sh   && echo "Comparing installer checksum..."   && echo "f717ef381f2863a4cad47bf0dcc61e923b3d2afb *boot.sh" | sha1sum -c -   && mv boot.sh $BOOT_INSTALL/boot   && chmod 0755 $BOOT_INSTALL/boot
+# Tue, 22 Aug 2017 18:12:52 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Mon, 21 Aug 2017 16:53:26 GMT
+# Tue, 22 Aug 2017 18:12:52 GMT
 ENV BOOT_AS_ROOT=yes
-# Mon, 21 Aug 2017 16:55:37 GMT
+# Tue, 22 Aug 2017 18:14:58 GMT
 RUN boot
 ```
 
@@ -1508,19 +1508,19 @@ RUN boot
 		Last Modified: Wed, 26 Jul 2017 20:37:10 GMT  
 		Size: 272.0 KB (271991 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:17e5530689eb59399560ab986b8b77186b32829e0bb82387e22fa371de008e75`  
-		Last Modified: Mon, 21 Aug 2017 16:59:00 GMT  
-		Size: 6.6 KB (6593 bytes)  
+	-	`sha256:513e21d4887859ba7380eb4653918492152eb5794022caaed36bb179a093809c`  
+		Last Modified: Tue, 22 Aug 2017 18:18:07 GMT  
+		Size: 6.9 KB (6882 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ebd6517a66dc4be62710ffa57cf77e395e8a7046ca476d6553d0005836902cb2`  
-		Last Modified: Mon, 21 Aug 2017 16:59:03 GMT  
-		Size: 33.4 MB (33403528 bytes)  
+	-	`sha256:a693ef2b6b6c89d207893407995171ecf148b45ffbc898afa37f2e341ee13026`  
+		Last Modified: Tue, 22 Aug 2017 18:18:10 GMT  
+		Size: 33.4 MB (33403401 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:boot-2.7.2-alpine`
 
 ```console
-$ docker pull clojure@sha256:b4ea8f5aa11ab3e1799051acf653590976a410d49685ff9d1206141a10a1ae6b
+$ docker pull clojure@sha256:4a6e8565eafce529f285a4aa81fb6767044894a6b19d3382143436fd83eee729
 ```
 
 -	Platforms:
@@ -1530,9 +1530,9 @@ $ docker pull clojure@sha256:b4ea8f5aa11ab3e1799051acf653590976a410d49685ff9d120
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **108.4 MB (108366652 bytes)**  
+-	Total Size: **108.4 MB (108367028 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:996db4e35ceb0413f0480e927f5d076372c7bcc1d1c75cfcf7821c36a0b00975`
+-	Image ID: `sha256:6485ab76d4a8afbb481a3713de553250c74eee6c9f39d02780fe3736c8de66fa`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -1564,13 +1564,13 @@ ENV BOOT_INSTALL=/usr/local/bin/
 WORKDIR /tmp
 # Mon, 21 Aug 2017 16:55:50 GMT
 RUN apk add --update bash openssl && rm -rf /var/cache/apk/*
-# Mon, 21 Aug 2017 16:55:52 GMT
-RUN mkdir -p $BOOT_INSTALL   && wget -q https://github.com/boot-clj/boot-bin/releases/download/2.5.2/boot.sh   && echo "Comparing installer checksum..."   && echo "d9cbefc6cbf043361a58b416e6d62fc80e5ead32 *boot.sh" | sha1sum -c -   && mv boot.sh $BOOT_INSTALL/boot   && chmod 0755 $BOOT_INSTALL/boot
-# Mon, 21 Aug 2017 16:55:52 GMT
+# Tue, 22 Aug 2017 18:15:05 GMT
+RUN mkdir -p $BOOT_INSTALL   && wget -q https://github.com/boot-clj/boot-bin/releases/download/2.7.2/boot.sh   && echo "Comparing installer checksum..."   && echo "f717ef381f2863a4cad47bf0dcc61e923b3d2afb *boot.sh" | sha1sum -c -   && mv boot.sh $BOOT_INSTALL/boot   && chmod 0755 $BOOT_INSTALL/boot
+# Tue, 22 Aug 2017 18:15:05 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/bin/
-# Mon, 21 Aug 2017 16:55:52 GMT
+# Tue, 22 Aug 2017 18:15:05 GMT
 ENV BOOT_AS_ROOT=yes
-# Mon, 21 Aug 2017 16:57:30 GMT
+# Tue, 22 Aug 2017 18:16:37 GMT
 RUN boot
 ```
 
@@ -1591,19 +1591,19 @@ RUN boot
 		Last Modified: Mon, 21 Aug 2017 16:59:22 GMT  
 		Size: 2.9 MB (2916214 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf60c9dc909f407780bd70cd214885cfb7b4c9c5c1b50a566d6196253baa4141`  
-		Last Modified: Mon, 21 Aug 2017 16:59:21 GMT  
-		Size: 6.3 KB (6347 bytes)  
+	-	`sha256:905ecc02262b435c1ed0c7c1b83baf90286243c3f31c6726d55997162812f1f4`  
+		Last Modified: Tue, 22 Aug 2017 18:18:28 GMT  
+		Size: 6.6 KB (6638 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c5fa9c8514a377b42de81fbe506d4c03cc5be1cec2a86a45bacaada96046a49`  
-		Last Modified: Mon, 21 Aug 2017 16:59:23 GMT  
-		Size: 33.4 MB (33403278 bytes)  
+	-	`sha256:d316ffd2fc12c400de34263902c6d23315432fba0ec6c94544e923ffed57bba2`  
+		Last Modified: Tue, 22 Aug 2017 18:18:30 GMT  
+		Size: 33.4 MB (33403363 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `clojure:boot-alpine`
 
 ```console
-$ docker pull clojure@sha256:b4ea8f5aa11ab3e1799051acf653590976a410d49685ff9d1206141a10a1ae6b
+$ docker pull clojure@sha256:4a6e8565eafce529f285a4aa81fb6767044894a6b19d3382143436fd83eee729
 ```
 
 -	Platforms:
@@ -1613,9 +1613,9 @@ $ docker pull clojure@sha256:b4ea8f5aa11ab3e1799051acf653590976a410d49685ff9d120
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **108.4 MB (108366652 bytes)**  
+-	Total Size: **108.4 MB (108367028 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:996db4e35ceb0413f0480e927f5d076372c7bcc1d1c75cfcf7821c36a0b00975`
+-	Image ID: `sha256:6485ab76d4a8afbb481a3713de553250c74eee6c9f39d02780fe3736c8de66fa`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
@@ -1647,13 +1647,13 @@ ENV BOOT_INSTALL=/usr/local/bin/
 WORKDIR /tmp
 # Mon, 21 Aug 2017 16:55:50 GMT
 RUN apk add --update bash openssl && rm -rf /var/cache/apk/*
-# Mon, 21 Aug 2017 16:55:52 GMT
-RUN mkdir -p $BOOT_INSTALL   && wget -q https://github.com/boot-clj/boot-bin/releases/download/2.5.2/boot.sh   && echo "Comparing installer checksum..."   && echo "d9cbefc6cbf043361a58b416e6d62fc80e5ead32 *boot.sh" | sha1sum -c -   && mv boot.sh $BOOT_INSTALL/boot   && chmod 0755 $BOOT_INSTALL/boot
-# Mon, 21 Aug 2017 16:55:52 GMT
+# Tue, 22 Aug 2017 18:15:05 GMT
+RUN mkdir -p $BOOT_INSTALL   && wget -q https://github.com/boot-clj/boot-bin/releases/download/2.7.2/boot.sh   && echo "Comparing installer checksum..."   && echo "f717ef381f2863a4cad47bf0dcc61e923b3d2afb *boot.sh" | sha1sum -c -   && mv boot.sh $BOOT_INSTALL/boot   && chmod 0755 $BOOT_INSTALL/boot
+# Tue, 22 Aug 2017 18:15:05 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/bin/
-# Mon, 21 Aug 2017 16:55:52 GMT
+# Tue, 22 Aug 2017 18:15:05 GMT
 ENV BOOT_AS_ROOT=yes
-# Mon, 21 Aug 2017 16:57:30 GMT
+# Tue, 22 Aug 2017 18:16:37 GMT
 RUN boot
 ```
 
@@ -1674,11 +1674,11 @@ RUN boot
 		Last Modified: Mon, 21 Aug 2017 16:59:22 GMT  
 		Size: 2.9 MB (2916214 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf60c9dc909f407780bd70cd214885cfb7b4c9c5c1b50a566d6196253baa4141`  
-		Last Modified: Mon, 21 Aug 2017 16:59:21 GMT  
-		Size: 6.3 KB (6347 bytes)  
+	-	`sha256:905ecc02262b435c1ed0c7c1b83baf90286243c3f31c6726d55997162812f1f4`  
+		Last Modified: Tue, 22 Aug 2017 18:18:28 GMT  
+		Size: 6.6 KB (6638 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c5fa9c8514a377b42de81fbe506d4c03cc5be1cec2a86a45bacaada96046a49`  
-		Last Modified: Mon, 21 Aug 2017 16:59:23 GMT  
-		Size: 33.4 MB (33403278 bytes)  
+	-	`sha256:d316ffd2fc12c400de34263902c6d23315432fba0ec6c94544e923ffed57bba2`  
+		Last Modified: Tue, 22 Aug 2017 18:18:30 GMT  
+		Size: 33.4 MB (33403363 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
