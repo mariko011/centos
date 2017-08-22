@@ -854,19 +854,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-5=5.4.1-11
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1-11.dsc' gcc-5_5.4.1-11.dsc 17620 SHA256:fb30f777f1e2f02e3c3af17233c8c108cbc076abef43c37533d1d1e85a172306
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1.orig.tar.gz' gcc-5_5.4.1.orig.tar.gz 76812822 SHA256:2a84447f34cd062066d38300ac8a1fb528eb301a504b48e1d017e547e5abfcdb
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1-11.diff.gz' gcc-5_5.4.1-11.diff.gz 3622586 SHA256:f8e97c143d3e9e13c5ddf917728f342c728f084d86738911e108c0cbf0b1fa6c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-5/5.4.1-11/
-- https://sources.debian.net/src/gcc-5/5.4.1-11/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-6=6.4.0-1`
 
@@ -1070,20 +1059,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.14-2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.14-2.dsc' gnutls28_3.5.14-2.dsc 3316 SHA256:f262876ebffa8dbe75b5afa5adf166e2f15245aee255825562497460b3a7c313
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.14.orig.tar.xz' gnutls28_3.5.14.orig.tar.xz 7228200 SHA256:4aa12dec92f42a0434df794aca3d02f6f2a35b47b48c01252de65f355c051bda
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.14.orig.tar.xz.asc' gnutls28_3.5.14.orig.tar.xz.asc 310 SHA256:1e19062e25c65e9bfcf76a3328f7dbe17addd719498297ec8e9a6ed3e9eae490
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.14-2.debian.tar.xz' gnutls28_3.5.14-2.debian.tar.xz 100588 SHA256:0a7b11090a7ddbf350e2674d972c2e2326d95f768473edb66acf32a00c90fa8e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnutls28/3.5.14-2/
-- https://sources.debian.net/src/gnutls28/3.5.14-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=3.1-2`
 
@@ -1570,19 +1547,8 @@ Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`)
 - `LGPL-3+`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libidn2-0=2.0.2-1
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_2.0.2-1.dsc' libidn2-0_2.0.2-1.dsc 1790 SHA256:d1a6209c9f1cdd716e5300e73d14081037bc8341526af31a1b5d1a04a68c2ecb
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_2.0.2.orig.tar.gz' libidn2-0_2.0.2.orig.tar.gz 1925342 SHA256:8cd62828b2ab0171e0f35a302f3ad60c3a3fffb45733318b3a8205f9d187eeab
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_2.0.2-1.debian.tar.xz' libidn2-0_2.0.2-1.debian.tar.xz 57536 SHA256:db394f33acc4ed7e3c04a3bb8e7940fab0d0b6a7ec351f71f69b40ae3ae24991
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libidn2-0/2.0.2-1/
-- https://sources.debian.net/src/libidn2-0/2.0.2-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libjpeg-turbo=1:1.5.1-2`
 

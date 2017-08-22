@@ -2313,19 +2313,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.8.0+dfsg1-7+wheezy8
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy8.dsc' libxml2_2.8.0+dfsg1-7+wheezy8.dsc 2673 SHA256:1b0c2c8b5b038c4011da7689bc669c1b0427eec1ef39159639b8b287ea5f6847
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1.orig.tar.gz' libxml2_2.8.0+dfsg1.orig.tar.gz 3554683 SHA256:46f339843967e861e81f8427373ff2a3d0a8cb608022dea16aa1d345ddcee338
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy8.debian.tar.gz' libxml2_2.8.0+dfsg1-7+wheezy8.debian.tar.gz 73902 SHA256:6418cc0232daa38dabe154f8e8b3b6cecf0fbc1eddcd0710cbc058f815987c59
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy8/
-- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxrandr=2:1.3.2-2+deb7u2`
 
