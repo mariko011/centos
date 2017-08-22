@@ -1,10 +1,10 @@
-# `php:7.2.0beta2-zts`
+# `php:7.2.0beta3-zts`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3fec28dae359dce02b7d5e18e51671ec8e10e775b83dde1258a81682fc411a35`
-- Created: `2017-08-04T18:37:55.875764573Z`
-- Virtual Size: ~ 352.83 Mb  
+- Image ID: `sha256:2fb5b72572c2f6b21332f834b8767fbcb482c94a0f4c444d8ccec4ecdbb455ac`
+- Created: `2017-08-21T18:39:10.990945319Z`
+- Virtual Size: ~ 352.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -18,10 +18,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1729F83938DA44E27BA0F4D3DBDB397470D12172 B1B44D8F021E4E2D6021E995DC9FF8D3EE5AF27F`
-  - `PHP_VERSION=7.2.0beta2`
-  - `PHP_URL=http://downloads.php.net/~pollita/php-7.2.0beta2.tar.xz`
-  - `PHP_ASC_URL=http://downloads.php.net/~pollita/php-7.2.0beta2.tar.xz.asc`
-  - `PHP_SHA256=0e2ac8e68c6fa92e9e14c610d78e162a711ba0e83987ecc9d02a6b898616c92d`
+  - `PHP_VERSION=7.2.0beta3`
+  - `PHP_URL=https://downloads.php.net/~remi/php-7.2.0beta3.tar.xz`
+  - `PHP_ASC_URL=https://downloads.php.net/~remi/php-7.2.0beta3.tar.xz.asc`
+  - `PHP_SHA256=86ab60f96223768d2cb6b3669ce5d048ce904beccf532119aa02058e7cc9e498`
   - `PHP_MD5=`
 
 ## `dpkg` (`.deb`-based packages)
