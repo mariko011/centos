@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:38619fdf4de24257bef2f98730cae6d58d69cc5d00e1e60596dbcd6f97eb3f49`
-- Created: `2017-08-10T17:47:12.318883892Z`
-- Virtual Size: ~ 619.18 Mb  
+- Image ID: `sha256:ccc4156cf6933e34a3d1bef228ae146ee62bd02e116daa04419cef5cc7c559cf`
+- Created: `2017-08-21T19:50:52.723611801Z`
+- Virtual Size: ~ 619.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,11 +22,11 @@
   - `OPENSSL_VERSION=1.1.0f-3`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.0.45`
-  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.45/bin/apache-tomcat-8.0.45.tar.gz`
-  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.45/bin/apache-tomcat-8.0.45.tar.gz.asc`
-  - `TOMCAT_TGZ_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.45/bin/apache-tomcat-8.0.45.tar.gz`
-  - `TOMCAT_ASC_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.45/bin/apache-tomcat-8.0.45.tar.gz.asc`
+  - `TOMCAT_VERSION=8.0.46`
+  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz`
+  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc`
+  - `TOMCAT_TGZ_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz`
+  - `TOMCAT_ASC_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc`
   - `GN_FILE=geonetwork.war`
   - `DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data`
   - `JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:PermSize=512m -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC`
@@ -2766,12 +2766,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/pinentry/1.0.0-2/
 - https://sources.debian.net/src/pinentry/1.0.0-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `postgresql-9.6=9.6.3-3`
+### `dpkg` source package: `postgresql-9.6=9.6.4-0+deb9u1`
 
 Binary Packages:
 
-- `libpq5:amd64=9.6.3-3`
-- `postgresql-client-9.6=9.6.3-3`
+- `libpq5:amd64=9.6.4-0+deb9u1`
+- `postgresql-client-9.6=9.6.4-0+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-client-9.6/copyright`)
 
@@ -2793,16 +2793,16 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-9.6=9.6.3-3
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.3-3.dsc' postgresql-9.6_9.6.3-3.dsc 3666 SHA256:4f996f71e4c817a4130121c5e470b529842bf8b551075a47271dcfa21dbecea9
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.3.orig.tar.bz2' postgresql-9.6_9.6.3.orig.tar.bz2 19534323 SHA256:1645b3736901f6d854e695a937389e68ff2066ce0cde9d73919d6ab7c995b9c6
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.3-3.debian.tar.xz' postgresql-9.6_9.6.3-3.debian.tar.xz 21036 SHA256:01e2725bbbde52bee75788abc0f9a056cb7a316fee14c642efb7b38520d0f30e
+$ apt-get source -qq --print-uris postgresql-9.6=9.6.4-0+deb9u1
+'http://security.debian.org/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.4-0+deb9u1.dsc' postgresql-9.6_9.6.4-0+deb9u1.dsc 3694 SHA256:baf59e5e050f2ae3108226fcd5937e323da34828231fec1eb3d8a58c99d724c0
+'http://security.debian.org/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.4.orig.tar.bz2' postgresql-9.6_9.6.4.orig.tar.bz2 19566875 SHA256:2b3ab16d82e21cead54c08b95ce3ac480696944a68603b6c11b3205b7376ce13
+'http://security.debian.org/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.4-0+deb9u1.debian.tar.xz' postgresql-9.6_9.6.4-0+deb9u1.debian.tar.xz 21072 SHA256:d2aee3d5cf7d150c0117f0a0f5c3a65bcd47b9dd7a95387b6b9aad166f770f44
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/postgresql-9.6/9.6.3-3/
-- https://sources.debian.net/src/postgresql-9.6/9.6.3-3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/postgresql-9.6/9.6.4-0+deb9u1/
+- https://sources.debian.net/src/postgresql-9.6/9.6.4-0+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `postgresql-common=181`
 

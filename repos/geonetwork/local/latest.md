@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0080ef410b0f9754636f23ca79c9e9d09ede3ceb02eed1fc68e78af0d58c239f`
-- Created: `2017-08-10T17:46:49.571811754Z`
-- Virtual Size: ~ 578.79 Mb  
+- Image ID: `sha256:b78b28050b082362a715575b93927d6e4871796632cf244878d10edbe03295cc`
+- Created: `2017-08-21T19:50:28.143527647Z`
+- Virtual Size: ~ 578.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,11 +22,11 @@
   - `OPENSSL_VERSION=1.1.0f-3`
   - `GPG_KEYS=05AB33110949707C93A279E3D3EFE6B686867BA6 07E48665A34DCAFAE522E5E6266191C37C037D42 47309207D818FFD8DCD3F83F1931D684307A10A5 541FBE7D8F78B25E055DDEE13C370389288584E7 61B832AC2F1C5A90F0F9B00A1C506407564C17A3 713DA88BE50911535FE716F5208B0AB1D63011C7 79F7026C690BAA50B92CD8B66A3AD3F4F22C4FED 9BA44C2621385CB966EBA586F72C284D731FABEE A27677289986DB50844682F8ACB77FC2E86E29AC A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243 F3A04C595DB5B6A5F1ECA43E3B7BBB100D811BBE F7DA48BB64BCB84ECBA7EE6935CD23C10D498E23`
   - `TOMCAT_MAJOR=8`
-  - `TOMCAT_VERSION=8.0.45`
-  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.45/bin/apache-tomcat-8.0.45.tar.gz`
-  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.45/bin/apache-tomcat-8.0.45.tar.gz.asc`
-  - `TOMCAT_TGZ_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.45/bin/apache-tomcat-8.0.45.tar.gz`
-  - `TOMCAT_ASC_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.45/bin/apache-tomcat-8.0.45.tar.gz.asc`
+  - `TOMCAT_VERSION=8.0.46`
+  - `TOMCAT_TGZ_URL=https://www.apache.org/dyn/closer.cgi?action=download&filename=tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz`
+  - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc`
+  - `TOMCAT_TGZ_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz`
+  - `TOMCAT_ASC_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.46/bin/apache-tomcat-8.0.46.tar.gz.asc`
   - `GN_FILE=geonetwork.war`
   - `DATA_DIR=/usr/local/tomcat/webapps/geonetwork/WEB-INF/data`
   - `JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -server -Xms512m -Xmx2024m -XX:NewSize=512m -XX:MaxNewSize=1024m -XX:PermSize=512m -XX:MaxPermSize=1024m -XX:+UseConcMarkSweepGC`
@@ -785,8 +785,19 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris expat=2.2.0-2+deb9u1
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.2.0-2+deb9u1.dsc' expat_2.2.0-2+deb9u1.dsc 2295 SHA256:6d7f96d7148dda2857772b499cbe17d0feb1c016dcf35b1a6da7c846123bd20b
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.2.0.orig.tar.bz2' expat_2.2.0.orig.tar.bz2 414352 SHA256:d9e50ff2d19b3538bd2127902a89987474e1a4db8e43a66a4d1a712ab9a504ff
+'http://security.debian.org/pool/updates/main/e/expat/expat_2.2.0-2+deb9u1.debian.tar.xz' expat_2.2.0-2+deb9u1.debian.tar.xz 11448 SHA256:d3e171fc4d2e6173945daab7d7df46d640fa23134c9474080f6d1b65d494b0a5
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/expat/2.2.0-2+deb9u1/
+- https://sources.debian.net/src/expat/2.2.0-2+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20161106-2`
 
@@ -2303,8 +2314,19 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-8-jre-headless/copyright`)
 - `LGPL-2`
 - `LGPL-2-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris openjdk-8=8u141-b15-1~deb9u1
+'http://security.debian.org/pool/updates/main/o/openjdk-8/openjdk-8_8u141-b15-1~deb9u1.dsc' openjdk-8_8u141-b15-1~deb9u1.dsc 4486 SHA256:deaca5cb2c51cd0c5b1938ce866b0833e021da48ead87b9fc538bc9e835bb44e
+'http://security.debian.org/pool/updates/main/o/openjdk-8/openjdk-8_8u141-b15.orig.tar.gz' openjdk-8_8u141-b15.orig.tar.gz 64099346 SHA256:906bcbecce35e0bda53d6c431c22282cf5aba9367e842efa82426c7e9214cf64
+'http://security.debian.org/pool/updates/main/o/openjdk-8/openjdk-8_8u141-b15-1~deb9u1.debian.tar.xz' openjdk-8_8u141-b15-1~deb9u1.debian.tar.xz 244640 SHA256:f6f095413a07b92aa48f22405f803424a28abf66a3fb4adc137fc490f978d156
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/openjdk-8/8u141-b15-1~deb9u1/
+- https://sources.debian.net/src/openjdk-8/8u141-b15-1~deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openldap=2.4.44+dfsg-5`
 
