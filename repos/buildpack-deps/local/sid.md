@@ -206,19 +206,8 @@ Licenses: (parsed from: `/usr/share/doc/autoconf/copyright`)
 - `permissive-without-disclaimer`
 - `permissive-without-notices-or-disclaimer`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris autoconf=2.69-10
-'http://deb.debian.org/debian/pool/main/a/autoconf/autoconf_2.69-10.dsc' autoconf_2.69-10.dsc 1948 SHA256:0e8c77d8a268f0a797ea53c7396620fac549272259a50a6fe0c5b5941f1ac95f
-'http://deb.debian.org/debian/pool/main/a/autoconf/autoconf_2.69.orig.tar.xz' autoconf_2.69.orig.tar.xz 1214744 SHA256:64ebcec9f8ac5b2487125a86a7760d2591ac9e1d3dbd59489633f9de62a57684
-'http://deb.debian.org/debian/pool/main/a/autoconf/autoconf_2.69-10.debian.tar.xz' autoconf_2.69-10.debian.tar.xz 23048 SHA256:f294c3ba40fd942b4119175401bf57191f08429916a8b9bf3d04f53567c96d35
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/autoconf/2.69-10/
-- https://sources.debian.net/src/autoconf/2.69-10/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `automake-1.15=1:1.15.1-2`
 
@@ -236,19 +225,8 @@ Licenses: (parsed from: `/usr/share/doc/automake/copyright`)
 - `GPL-3+`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris automake-1.15=1:1.15.1-2
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15.1-2.dsc' automake-1.15_1.15.1-2.dsc 2264 SHA256:c8079a3089e9803864c518667063c30706e370ad0cfc52b9a1f7710d03e90936
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15.1.orig.tar.xz' automake-1.15_1.15.1.orig.tar.xz 1509496 SHA256:af6ba39142220687c500f79b4aa2f181d9b24e4f8d8ec497cea4ba26c64bedaf
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15.1-2.debian.tar.xz' automake-1.15_1.15.1-2.debian.tar.xz 13036 SHA256:8b8f53d615bcce42b497419c384ed8cec55d0b266a12a0bc20c3c7095e9b6a96
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/automake-1.15/1:1.15.1-2/
-- https://sources.debian.net/src/automake-1.15/1:1.15.1-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `autotools-dev=20161112.1`
 
@@ -1132,19 +1110,8 @@ Licenses: (parsed from: `/usr/share/doc/gcc-5-base/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-5=5.4.1-11
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1-11.dsc' gcc-5_5.4.1-11.dsc 17620 SHA256:fb30f777f1e2f02e3c3af17233c8c108cbc076abef43c37533d1d1e85a172306
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1.orig.tar.gz' gcc-5_5.4.1.orig.tar.gz 76812822 SHA256:2a84447f34cd062066d38300ac8a1fb528eb301a504b48e1d017e547e5abfcdb
-'http://deb.debian.org/debian/pool/main/g/gcc-5/gcc-5_5.4.1-11.diff.gz' gcc-5_5.4.1-11.diff.gz 3622586 SHA256:f8e97c143d3e9e13c5ddf917728f342c728f084d86738911e108c0cbf0b1fa6c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gcc-5/5.4.1-11/
-- https://sources.debian.net/src/gcc-5/5.4.1-11/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gcc-6=6.4.0-1`
 
@@ -1478,20 +1445,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.14-2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.14-2.dsc' gnutls28_3.5.14-2.dsc 3316 SHA256:f262876ebffa8dbe75b5afa5adf166e2f15245aee255825562497460b3a7c313
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.14.orig.tar.xz' gnutls28_3.5.14.orig.tar.xz 7228200 SHA256:4aa12dec92f42a0434df794aca3d02f6f2a35b47b48c01252de65f355c051bda
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.14.orig.tar.xz.asc' gnutls28_3.5.14.orig.tar.xz.asc 310 SHA256:1e19062e25c65e9bfcf76a3328f7dbe17addd719498297ec8e9a6ed3e9eae490
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.14-2.debian.tar.xz' gnutls28_3.5.14-2.debian.tar.xz 100588 SHA256:0a7b11090a7ddbf350e2674d972c2e2326d95f768473edb66acf32a00c90fa8e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnutls28/3.5.14-2/
-- https://sources.debian.net/src/gnutls28/3.5.14-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gobject-introspection=1.50.0-1`
 
@@ -2512,19 +2467,8 @@ Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`)
 - `LGPL-3+`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libidn2-0=2.0.2-1
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_2.0.2-1.dsc' libidn2-0_2.0.2-1.dsc 1790 SHA256:d1a6209c9f1cdd716e5300e73d14081037bc8341526af31a1b5d1a04a68c2ecb
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_2.0.2.orig.tar.gz' libidn2-0_2.0.2.orig.tar.gz 1925342 SHA256:8cd62828b2ab0171e0f35a302f3ad60c3a3fffb45733318b3a8205f9d187eeab
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_2.0.2-1.debian.tar.xz' libidn2-0_2.0.2-1.debian.tar.xz 57536 SHA256:db394f33acc4ed7e3c04a3bb8e7940fab0d0b6a7ec351f71f69b40ae3ae24991
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libidn2-0/2.0.2-1/
-- https://sources.debian.net/src/libidn2-0/2.0.2-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libjpeg-turbo=1:1.5.1-2`
 
@@ -3141,19 +3085,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxdamage=1:1.1.4-2
-'http://deb.debian.org/debian/pool/main/libx/libxdamage/libxdamage_1.1.4-2.dsc' libxdamage_1.1.4-2.dsc 2127 SHA256:43cbefb5c69f51d89a11cf84718fe0c42058fc9b6ec7c0076e7c37b9e829feb5
-'http://deb.debian.org/debian/pool/main/libx/libxdamage/libxdamage_1.1.4.orig.tar.gz' libxdamage_1.1.4.orig.tar.gz 339060 SHA256:4bb3e9d917f5f593df2277d452926ee6ad96de7b7cd1017cbcf4579fe5d3442b
-'http://deb.debian.org/debian/pool/main/libx/libxdamage/libxdamage_1.1.4-2.diff.gz' libxdamage_1.1.4-2.diff.gz 14930 SHA256:d238c1a266c30cd124ede7e6c86635bfaa108fa552c4a82919101cebf22670e9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libxdamage/1:1.1.4-2/
-- https://sources.debian.net/src/libxdamage/1:1.1.4-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxdmcp=1:1.1.2-3`
 
@@ -3288,19 +3221,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-3
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-3.dsc' libxml2_2.9.4+dfsg1-3.dsc 2958 SHA256:350c5960283359938c81ddb53fa386f8137d5858a524ef092c1b65283c66cd16
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-3.debian.tar.xz' libxml2_2.9.4+dfsg1-3.debian.tar.xz 29240 SHA256:b055fdfa6d88e22cc0e645fdb3b4b20c7722772facbb44476adbfdf271b6cf68
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-3/
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxpm=1:3.5.12-1`
 

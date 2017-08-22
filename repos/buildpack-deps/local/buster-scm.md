@@ -2299,19 +2299,8 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris subversion=1.9.6-1
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.6-1.dsc' subversion_1.9.6-1.dsc 3005 SHA256:49358f460e8e0c3a3e5ff96cfe27eb9366f32d84bb5ab7db36ee644799b4fe44
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.6.orig.tar.gz' subversion_1.9.6.orig.tar.gz 10643280 SHA256:a400cbc46d05cb29f2d7806405bb539e9e045b24013b0f12f8f82688513321a7
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.6-1.diff.gz' subversion_1.9.6-1.diff.gz 2632243 SHA256:75f83cf5243f0c33da84bd95b03aa47cde648f23216aaea4b1dac5fd7c750efa
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/subversion/1.9.6-1/
-- https://sources.debian.net/src/subversion/1.9.6-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `systemd=234-1`
 

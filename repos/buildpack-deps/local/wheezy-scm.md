@@ -366,19 +366,8 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `ISC`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy19
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy19.dsc' curl_7.26.0-1+wheezy19.dsc 2534 SHA256:b1ea1e14b6edf19df59451d6acc7ab4bf08d43e7b44da0605c34fdb7e45ec84e
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
-'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy19.debian.tar.gz' curl_7.26.0-1+wheezy19.debian.tar.gz 65127 SHA256:729313e79a66ec2a4262a692d4a8128e283ee688d406a7d26a26d8676c084be3
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/curl/7.26.0-1+wheezy19/
-- https://sources.debian.net/src/curl/7.26.0-1+wheezy19/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
 
@@ -1485,19 +1474,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.8.0+dfsg1-7+wheezy8
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy8.dsc' libxml2_2.8.0+dfsg1-7+wheezy8.dsc 2673 SHA256:1b0c2c8b5b038c4011da7689bc669c1b0427eec1ef39159639b8b287ea5f6847
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1.orig.tar.gz' libxml2_2.8.0+dfsg1.orig.tar.gz 3554683 SHA256:46f339843967e861e81f8427373ff2a3d0a8cb608022dea16aa1d345ddcee338
-'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy8.debian.tar.gz' libxml2_2.8.0+dfsg1-7+wheezy8.debian.tar.gz 73902 SHA256:6418cc0232daa38dabe154f8e8b3b6cecf0fbc1eddcd0710cbc058f815987c59
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy8/
-- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=4.1+Debian8+deb7u1`
 

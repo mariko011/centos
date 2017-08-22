@@ -1383,14 +1383,8 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.2-3.2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu2.dsc' shadow_4.2-3.2ubuntu2.dsc 2426 SHA256:27a07adb9f34d8b5d28c0d5a1844cb0ecb1f844fa65ba30c1bcc55ed5adfc4ce
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu2.debian.tar.xz' shadow_4.2-3.2ubuntu2.debian.tar.xz 505468 SHA256:cf6ee576049e124e3f80116911ff81b37da1bfbae475b7a116412cbae79e7b81
-```
 
 ### `dpkg` source package: `sqlite3=3.19.3-3`
 
@@ -1431,14 +1425,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=233-8ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_233-8ubuntu3.dsc' systemd_233-8ubuntu3.dsc 4908 SHA256:377393ca227d87298c176d17e1ea8a85904abfd950ba82a19755410fc1b3bd6b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_233.orig.tar.gz' systemd_233.orig.tar.gz 4660737 SHA256:8b3e99da3d4164b66581830a7f2436c0c8fe697b5fbdc3927bdb960646be0083
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_233-8ubuntu3.debian.tar.xz' systemd_233-8ubuntu3.debian.tar.xz 153796 SHA256:bbc3aa8749a69917ecf62871285ef1abefca9519385e90bc39ed706756565008
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`
 

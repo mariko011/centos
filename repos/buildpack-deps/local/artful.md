@@ -228,14 +228,8 @@ Licenses: (parsed from: `/usr/share/doc/autoconf/copyright`)
 - `permissive-without-disclaimer`
 - `permissive-without-notices-or-disclaimer`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris autoconf=2.69-10
-'http://archive.ubuntu.com/ubuntu/pool/main/a/autoconf/autoconf_2.69-10.dsc' autoconf_2.69-10.dsc 1948 SHA256:0e8c77d8a268f0a797ea53c7396620fac549272259a50a6fe0c5b5941f1ac95f
-'http://archive.ubuntu.com/ubuntu/pool/main/a/autoconf/autoconf_2.69.orig.tar.xz' autoconf_2.69.orig.tar.xz 1214744 SHA256:64ebcec9f8ac5b2487125a86a7760d2591ac9e1d3dbd59489633f9de62a57684
-'http://archive.ubuntu.com/ubuntu/pool/main/a/autoconf/autoconf_2.69-10.debian.tar.xz' autoconf_2.69-10.debian.tar.xz 23048 SHA256:f294c3ba40fd942b4119175401bf57191f08429916a8b9bf3d04f53567c96d35
-```
 
 ### `dpkg` source package: `automake-1.15=1:1.15-6ubuntu1`
 
@@ -371,14 +365,8 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`)
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris binutils=2.29-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.29-4ubuntu1.dsc' binutils_2.29-4ubuntu1.dsc 4453 SHA256:e22d03f391d85093f0747ff900860fe7f96419df709ab498db636478a2447029
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.29.orig.tar.gz' binutils_2.29.orig.tar.gz 38885604 SHA256:172e8c89472cf52712fd23a9f14e9bca6182727fb45b0f8f482652a83d5a11b4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.29-4ubuntu1.diff.gz' binutils_2.29-4ubuntu1.diff.gz 195726 SHA256:a6b4e29a95081ab2f6c981522e2e497ca3e735afbe9f98dd23e8df8db75adf91
-```
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
 
@@ -1153,14 +1141,8 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris git=1:2.11.0-4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.11.0-4.dsc' git_2.11.0-4.dsc 2873 SHA256:032f3685870b5c11a3be4d1e058b884edb99c952bdc7f12b9bc6c33d8c6adc7e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.11.0.orig.tar.xz' git_2.11.0.orig.tar.xz 4197984 SHA256:7e7e8d69d494892373b87007674be5820a4bc1ef596a0117d03ea3169119fd0b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.11.0-4.debian.tar.xz' git_2.11.0-4.debian.tar.xz 520148 SHA256:6c42fc5a384346e2fa9378cf8318fdf33969751b493ccc1f58c8e13c4bc389e6
-```
 
 ### `dpkg` source package: `glib2.0=2.53.4-3`
 
@@ -1176,14 +1158,8 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.53.4-3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.53.4-3.dsc' glib2.0_2.53.4-3.dsc 3213 SHA256:f223ad34dfc1c96dc289f7d542f72d43f539045f70385587c8597128d1203bd6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.53.4.orig.tar.xz' glib2.0_2.53.4.orig.tar.xz 7736832 SHA256:f26b5565f9c1deba2d76dd5f819f9ed248dd75fcd19aa9fa6f51c5f554790679
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.53.4-3.debian.tar.xz' glib2.0_2.53.4-3.debian.tar.xz 72732 SHA256:6921d7cae34a5d3f0a457949354ae0aea81a6351dc6af5a6cf4002532822ca6d
-```
 
 ### `dpkg` source package: `glibc=2.24-12ubuntu1`
 
@@ -1421,14 +1397,8 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`)
 - `LGPL-2.1+`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gtk+3.0=3.22.17-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.17-0ubuntu1.dsc' gtk+3.0_3.22.17-0ubuntu1.dsc 4143 SHA256:107f2b0b3e5148579a9bec5af172410894e65b41be7fb86d44e884b3919018a4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.17.orig.tar.xz' gtk+3.0_3.22.17.orig.tar.xz 18702864 SHA256:a6c1fb8f229c626a3d9c0e1ce6ea138de7f64a5a6bc799d45fa286fe461c3437
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.17-0ubuntu1.debian.tar.xz' gtk+3.0_3.22.17-0ubuntu1.debian.tar.xz 176376 SHA256:36ced56635aff3916581fdb86ab83774579d6db2549ac4d0ffa16efce221234a
-```
 
 ### `dpkg` source package: `gzip=1.6-5ubuntu1`
 
@@ -2656,14 +2626,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxcursor=1:1.1.14-1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcursor/libxcursor_1.1.14-1.dsc' libxcursor_1.1.14-1.dsc 2275 SHA256:cef5e720065219d46f150dde03d7fdffe113a961036d8fd3e836ff3f0c53686a
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcursor/libxcursor_1.1.14.orig.tar.gz' libxcursor_1.1.14.orig.tar.gz 374910 SHA256:be0954faf274969ffa6d95b9606b9c0cfee28c13b6fc014f15606a0c8b05c17b
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxcursor/libxcursor_1.1.14-1.diff.gz' libxcursor_1.1.14-1.diff.gz 18173 SHA256:45fec45ab41dd3e5ca2147c3c7751063a732699ab1c93524d8af24ef19b3d776
-```
 
 ### `dpkg` source package: `libxdamage=1:1.1.4-2`
 
@@ -3425,14 +3389,8 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `LGPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.40.6-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.40.6-1.dsc' pango1.0_1.40.6-1.dsc 3264 SHA256:5630828482c7da12c761536ec64360f6d48afb246c6e12ce9efb891bcc523920
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.40.6.orig.tar.xz' pango1.0_1.40.6.orig.tar.xz 832040 SHA256:ca152b7383a1e9f7fd74ae96023dc6770dc5043414793bfe768ff06b6759e573
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.40.6-1.debian.tar.xz' pango1.0_1.40.6-1.debian.tar.xz 27320 SHA256:c02cc0fd7f17be3992ee6bf2889ceae53ebc66edb1c30603f30cbc2cc6d18103
-```
 
 ### `dpkg` source package: `patch=2.7.5-1build1`
 
@@ -3853,14 +3811,8 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.2-3.2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu2.dsc' shadow_4.2-3.2ubuntu2.dsc 2426 SHA256:27a07adb9f34d8b5d28c0d5a1844cb0ecb1f844fa65ba30c1bcc55ed5adfc4ce
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2.orig.tar.xz' shadow_4.2.orig.tar.xz 1088696 SHA256:c5bd72c4ecb438b99289e4630b22ea0626987a378d084910dbe59eceaa34be1d
-'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.2-3.2ubuntu2.debian.tar.xz' shadow_4.2-3.2ubuntu2.debian.tar.xz 505468 SHA256:cf6ee576049e124e3f80116911ff81b37da1bfbae475b7a116412cbae79e7b81
-```
 
 ### `dpkg` source package: `shared-mime-info=1.8-1`
 
@@ -3956,14 +3908,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=233-8ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_233-8ubuntu3.dsc' systemd_233-8ubuntu3.dsc 4908 SHA256:377393ca227d87298c176d17e1ea8a85904abfd950ba82a19755410fc1b3bd6b
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_233.orig.tar.gz' systemd_233.orig.tar.gz 4660737 SHA256:8b3e99da3d4164b66581830a7f2436c0c8fe697b5fbdc3927bdb960646be0083
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_233-8ubuntu3.debian.tar.xz' systemd_233-8ubuntu3.debian.tar.xz 153796 SHA256:bbc3aa8749a69917ecf62871285ef1abefca9519385e90bc39ed706756565008
-```
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.8git1`
 
