@@ -2,27 +2,27 @@
 
 # Tags of `rapidoid`
 
--	[`rapidoid:5.4.2`](#rapidoid542)
+-	[`rapidoid:5.4.3`](#rapidoid543)
 -	[`rapidoid:5.4`](#rapidoid54)
 -	[`rapidoid:5`](#rapidoid5)
 -	[`rapidoid:latest`](#rapidoidlatest)
 
-## `rapidoid:5.4.2`
+## `rapidoid:5.4.3`
 
 ```console
-$ docker pull rapidoid@sha256:0539b2da018f4ab9f4fe846692d0bb0a55c55754eb728a85d1bca4499acefd15
+$ docker pull rapidoid@sha256:da80af22ad246ee3613b902850d42fe3deeeb8fdff5fd0ef5ce7994a1d703f26
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `rapidoid:5.4.2` - linux; amd64
+### `rapidoid:5.4.3` - linux; amd64
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **309.9 MB (309890308 bytes)**  
+-	Total Size: **309.9 MB (309892791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2bcb2bc3c490072a26ffd855bb3e244eb7affe2f43dd62856070624f0976c9ff`
+-	Image ID: `sha256:77a766a67026855a043294eb75de26aff34ec0eed675705011b436ebe0614773`
 -	Entrypoint: `["\/opt\/entrypoint.sh"]`
 
 ```dockerfile
@@ -70,15 +70,15 @@ WORKDIR /opt
 EXPOSE 8888/tcp
 # Thu, 27 Jul 2017 20:18:44 GMT
 VOLUME [/data]
-# Mon, 14 Aug 2017 21:43:18 GMT
-ENV RAPIDOID_VERSION=5.4.2
-# Mon, 14 Aug 2017 21:43:18 GMT
-ENV RAPIDOID_URL=https://repo1.maven.org/maven2/org/rapidoid/rapidoid-platform/5.4.2/rapidoid-platform-5.4.2.jar
-# Mon, 14 Aug 2017 21:43:18 GMT
+# Wed, 23 Aug 2017 22:13:06 GMT
+ENV RAPIDOID_VERSION=5.4.3
+# Wed, 23 Aug 2017 22:13:06 GMT
+ENV RAPIDOID_URL=https://repo1.maven.org/maven2/org/rapidoid/rapidoid-platform/5.4.3/rapidoid-platform-5.4.3.jar
+# Wed, 23 Aug 2017 22:13:06 GMT
 COPY file:f62471c9cb58f8ee35db72795bbbe10cfd1ec927f04f29a88fe6a996f358af70 in /opt/ 
-# Mon, 14 Aug 2017 21:51:53 GMT
+# Wed, 23 Aug 2017 22:20:41 GMT
 RUN set -xe     && mkdir /app     && mkdir -p "$RAPIDOID_TMP" 	&& curl -SL "$RAPIDOID_URL" -o $RAPIDOID_JAR 	&& curl -SL "$RAPIDOID_URL.asc" -o $RAPIDOID_JAR.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys $GPG_KEY 	&& gpg --batch --verify $RAPIDOID_JAR.asc $RAPIDOID_JAR 	&& rm -r "$GNUPGHOME" 	&& rm "$RAPIDOID_JAR.asc"
-# Mon, 14 Aug 2017 21:51:53 GMT
+# Wed, 23 Aug 2017 22:20:41 GMT
 ENTRYPOINT ["/opt/entrypoint.sh"]
 ```
 
@@ -119,19 +119,19 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 		Last Modified: Wed, 26 Jul 2017 20:37:10 GMT  
 		Size: 272.0 KB (271991 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c41f85280306b49ac6836fa997b3a6bb61b27e08b9588cfaba6da089defaac42`  
-		Last Modified: Mon, 14 Aug 2017 21:52:00 GMT  
-		Size: 322.0 B  
+	-	`sha256:565beee432fcdd0e8263593c4d622965632e19b0fe665a37011193216f78986b`  
+		Last Modified: Wed, 23 Aug 2017 22:20:49 GMT  
+		Size: 321.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c28dfd51f787cb1a03a85f51f58dc50518df796c59112d55c328cd7ce9728fb6`  
-		Last Modified: Mon, 14 Aug 2017 21:52:02 GMT  
-		Size: 14.6 MB (14609787 bytes)  
+	-	`sha256:0ef6d6a11c7525bdfa68cbc0752b05c939d969e8448137ff284f0809d9077d80`  
+		Last Modified: Wed, 23 Aug 2017 22:20:50 GMT  
+		Size: 14.6 MB (14612271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rapidoid:5.4`
 
 ```console
-$ docker pull rapidoid@sha256:0539b2da018f4ab9f4fe846692d0bb0a55c55754eb728a85d1bca4499acefd15
+$ docker pull rapidoid@sha256:da80af22ad246ee3613b902850d42fe3deeeb8fdff5fd0ef5ce7994a1d703f26
 ```
 
 -	Platforms:
@@ -141,9 +141,9 @@ $ docker pull rapidoid@sha256:0539b2da018f4ab9f4fe846692d0bb0a55c55754eb728a85d1
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **309.9 MB (309890308 bytes)**  
+-	Total Size: **309.9 MB (309892791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2bcb2bc3c490072a26ffd855bb3e244eb7affe2f43dd62856070624f0976c9ff`
+-	Image ID: `sha256:77a766a67026855a043294eb75de26aff34ec0eed675705011b436ebe0614773`
 -	Entrypoint: `["\/opt\/entrypoint.sh"]`
 
 ```dockerfile
@@ -191,15 +191,15 @@ WORKDIR /opt
 EXPOSE 8888/tcp
 # Thu, 27 Jul 2017 20:18:44 GMT
 VOLUME [/data]
-# Mon, 14 Aug 2017 21:43:18 GMT
-ENV RAPIDOID_VERSION=5.4.2
-# Mon, 14 Aug 2017 21:43:18 GMT
-ENV RAPIDOID_URL=https://repo1.maven.org/maven2/org/rapidoid/rapidoid-platform/5.4.2/rapidoid-platform-5.4.2.jar
-# Mon, 14 Aug 2017 21:43:18 GMT
+# Wed, 23 Aug 2017 22:13:06 GMT
+ENV RAPIDOID_VERSION=5.4.3
+# Wed, 23 Aug 2017 22:13:06 GMT
+ENV RAPIDOID_URL=https://repo1.maven.org/maven2/org/rapidoid/rapidoid-platform/5.4.3/rapidoid-platform-5.4.3.jar
+# Wed, 23 Aug 2017 22:13:06 GMT
 COPY file:f62471c9cb58f8ee35db72795bbbe10cfd1ec927f04f29a88fe6a996f358af70 in /opt/ 
-# Mon, 14 Aug 2017 21:51:53 GMT
+# Wed, 23 Aug 2017 22:20:41 GMT
 RUN set -xe     && mkdir /app     && mkdir -p "$RAPIDOID_TMP" 	&& curl -SL "$RAPIDOID_URL" -o $RAPIDOID_JAR 	&& curl -SL "$RAPIDOID_URL.asc" -o $RAPIDOID_JAR.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys $GPG_KEY 	&& gpg --batch --verify $RAPIDOID_JAR.asc $RAPIDOID_JAR 	&& rm -r "$GNUPGHOME" 	&& rm "$RAPIDOID_JAR.asc"
-# Mon, 14 Aug 2017 21:51:53 GMT
+# Wed, 23 Aug 2017 22:20:41 GMT
 ENTRYPOINT ["/opt/entrypoint.sh"]
 ```
 
@@ -240,19 +240,19 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 		Last Modified: Wed, 26 Jul 2017 20:37:10 GMT  
 		Size: 272.0 KB (271991 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c41f85280306b49ac6836fa997b3a6bb61b27e08b9588cfaba6da089defaac42`  
-		Last Modified: Mon, 14 Aug 2017 21:52:00 GMT  
-		Size: 322.0 B  
+	-	`sha256:565beee432fcdd0e8263593c4d622965632e19b0fe665a37011193216f78986b`  
+		Last Modified: Wed, 23 Aug 2017 22:20:49 GMT  
+		Size: 321.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c28dfd51f787cb1a03a85f51f58dc50518df796c59112d55c328cd7ce9728fb6`  
-		Last Modified: Mon, 14 Aug 2017 21:52:02 GMT  
-		Size: 14.6 MB (14609787 bytes)  
+	-	`sha256:0ef6d6a11c7525bdfa68cbc0752b05c939d969e8448137ff284f0809d9077d80`  
+		Last Modified: Wed, 23 Aug 2017 22:20:50 GMT  
+		Size: 14.6 MB (14612271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rapidoid:5`
 
 ```console
-$ docker pull rapidoid@sha256:0539b2da018f4ab9f4fe846692d0bb0a55c55754eb728a85d1bca4499acefd15
+$ docker pull rapidoid@sha256:da80af22ad246ee3613b902850d42fe3deeeb8fdff5fd0ef5ce7994a1d703f26
 ```
 
 -	Platforms:
@@ -262,9 +262,9 @@ $ docker pull rapidoid@sha256:0539b2da018f4ab9f4fe846692d0bb0a55c55754eb728a85d1
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **309.9 MB (309890308 bytes)**  
+-	Total Size: **309.9 MB (309892791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2bcb2bc3c490072a26ffd855bb3e244eb7affe2f43dd62856070624f0976c9ff`
+-	Image ID: `sha256:77a766a67026855a043294eb75de26aff34ec0eed675705011b436ebe0614773`
 -	Entrypoint: `["\/opt\/entrypoint.sh"]`
 
 ```dockerfile
@@ -312,15 +312,15 @@ WORKDIR /opt
 EXPOSE 8888/tcp
 # Thu, 27 Jul 2017 20:18:44 GMT
 VOLUME [/data]
-# Mon, 14 Aug 2017 21:43:18 GMT
-ENV RAPIDOID_VERSION=5.4.2
-# Mon, 14 Aug 2017 21:43:18 GMT
-ENV RAPIDOID_URL=https://repo1.maven.org/maven2/org/rapidoid/rapidoid-platform/5.4.2/rapidoid-platform-5.4.2.jar
-# Mon, 14 Aug 2017 21:43:18 GMT
+# Wed, 23 Aug 2017 22:13:06 GMT
+ENV RAPIDOID_VERSION=5.4.3
+# Wed, 23 Aug 2017 22:13:06 GMT
+ENV RAPIDOID_URL=https://repo1.maven.org/maven2/org/rapidoid/rapidoid-platform/5.4.3/rapidoid-platform-5.4.3.jar
+# Wed, 23 Aug 2017 22:13:06 GMT
 COPY file:f62471c9cb58f8ee35db72795bbbe10cfd1ec927f04f29a88fe6a996f358af70 in /opt/ 
-# Mon, 14 Aug 2017 21:51:53 GMT
+# Wed, 23 Aug 2017 22:20:41 GMT
 RUN set -xe     && mkdir /app     && mkdir -p "$RAPIDOID_TMP" 	&& curl -SL "$RAPIDOID_URL" -o $RAPIDOID_JAR 	&& curl -SL "$RAPIDOID_URL.asc" -o $RAPIDOID_JAR.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys $GPG_KEY 	&& gpg --batch --verify $RAPIDOID_JAR.asc $RAPIDOID_JAR 	&& rm -r "$GNUPGHOME" 	&& rm "$RAPIDOID_JAR.asc"
-# Mon, 14 Aug 2017 21:51:53 GMT
+# Wed, 23 Aug 2017 22:20:41 GMT
 ENTRYPOINT ["/opt/entrypoint.sh"]
 ```
 
@@ -361,19 +361,19 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 		Last Modified: Wed, 26 Jul 2017 20:37:10 GMT  
 		Size: 272.0 KB (271991 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c41f85280306b49ac6836fa997b3a6bb61b27e08b9588cfaba6da089defaac42`  
-		Last Modified: Mon, 14 Aug 2017 21:52:00 GMT  
-		Size: 322.0 B  
+	-	`sha256:565beee432fcdd0e8263593c4d622965632e19b0fe665a37011193216f78986b`  
+		Last Modified: Wed, 23 Aug 2017 22:20:49 GMT  
+		Size: 321.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c28dfd51f787cb1a03a85f51f58dc50518df796c59112d55c328cd7ce9728fb6`  
-		Last Modified: Mon, 14 Aug 2017 21:52:02 GMT  
-		Size: 14.6 MB (14609787 bytes)  
+	-	`sha256:0ef6d6a11c7525bdfa68cbc0752b05c939d969e8448137ff284f0809d9077d80`  
+		Last Modified: Wed, 23 Aug 2017 22:20:50 GMT  
+		Size: 14.6 MB (14612271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `rapidoid:latest`
 
 ```console
-$ docker pull rapidoid@sha256:0539b2da018f4ab9f4fe846692d0bb0a55c55754eb728a85d1bca4499acefd15
+$ docker pull rapidoid@sha256:da80af22ad246ee3613b902850d42fe3deeeb8fdff5fd0ef5ce7994a1d703f26
 ```
 
 -	Platforms:
@@ -383,9 +383,9 @@ $ docker pull rapidoid@sha256:0539b2da018f4ab9f4fe846692d0bb0a55c55754eb728a85d1
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **309.9 MB (309890308 bytes)**  
+-	Total Size: **309.9 MB (309892791 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2bcb2bc3c490072a26ffd855bb3e244eb7affe2f43dd62856070624f0976c9ff`
+-	Image ID: `sha256:77a766a67026855a043294eb75de26aff34ec0eed675705011b436ebe0614773`
 -	Entrypoint: `["\/opt\/entrypoint.sh"]`
 
 ```dockerfile
@@ -433,15 +433,15 @@ WORKDIR /opt
 EXPOSE 8888/tcp
 # Thu, 27 Jul 2017 20:18:44 GMT
 VOLUME [/data]
-# Mon, 14 Aug 2017 21:43:18 GMT
-ENV RAPIDOID_VERSION=5.4.2
-# Mon, 14 Aug 2017 21:43:18 GMT
-ENV RAPIDOID_URL=https://repo1.maven.org/maven2/org/rapidoid/rapidoid-platform/5.4.2/rapidoid-platform-5.4.2.jar
-# Mon, 14 Aug 2017 21:43:18 GMT
+# Wed, 23 Aug 2017 22:13:06 GMT
+ENV RAPIDOID_VERSION=5.4.3
+# Wed, 23 Aug 2017 22:13:06 GMT
+ENV RAPIDOID_URL=https://repo1.maven.org/maven2/org/rapidoid/rapidoid-platform/5.4.3/rapidoid-platform-5.4.3.jar
+# Wed, 23 Aug 2017 22:13:06 GMT
 COPY file:f62471c9cb58f8ee35db72795bbbe10cfd1ec927f04f29a88fe6a996f358af70 in /opt/ 
-# Mon, 14 Aug 2017 21:51:53 GMT
+# Wed, 23 Aug 2017 22:20:41 GMT
 RUN set -xe     && mkdir /app     && mkdir -p "$RAPIDOID_TMP" 	&& curl -SL "$RAPIDOID_URL" -o $RAPIDOID_JAR 	&& curl -SL "$RAPIDOID_URL.asc" -o $RAPIDOID_JAR.asc 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys $GPG_KEY 	&& gpg --batch --verify $RAPIDOID_JAR.asc $RAPIDOID_JAR 	&& rm -r "$GNUPGHOME" 	&& rm "$RAPIDOID_JAR.asc"
-# Mon, 14 Aug 2017 21:51:53 GMT
+# Wed, 23 Aug 2017 22:20:41 GMT
 ENTRYPOINT ["/opt/entrypoint.sh"]
 ```
 
@@ -482,11 +482,11 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 		Last Modified: Wed, 26 Jul 2017 20:37:10 GMT  
 		Size: 272.0 KB (271991 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c41f85280306b49ac6836fa997b3a6bb61b27e08b9588cfaba6da089defaac42`  
-		Last Modified: Mon, 14 Aug 2017 21:52:00 GMT  
-		Size: 322.0 B  
+	-	`sha256:565beee432fcdd0e8263593c4d622965632e19b0fe665a37011193216f78986b`  
+		Last Modified: Wed, 23 Aug 2017 22:20:49 GMT  
+		Size: 321.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c28dfd51f787cb1a03a85f51f58dc50518df796c59112d55c328cd7ce9728fb6`  
-		Last Modified: Mon, 14 Aug 2017 21:52:02 GMT  
-		Size: 14.6 MB (14609787 bytes)  
+	-	`sha256:0ef6d6a11c7525bdfa68cbc0752b05c939d969e8448137ff284f0809d9077d80`  
+		Last Modified: Wed, 23 Aug 2017 22:20:50 GMT  
+		Size: 14.6 MB (14612271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
