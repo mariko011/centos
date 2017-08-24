@@ -1734,14 +1734,8 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 - `MPL-1.1 | GPL-2 | LGPL-2.1`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris graphite2=1.3.6-1ubuntu0.14.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.6-1ubuntu0.14.04.1.dsc' graphite2_1.3.6-1ubuntu0.14.04.1.dsc 2233 SHA256:7bb609bf3344b8ed19bc0c96a6dfa30a3e3e63fe2caff09b12bbe8850db61796
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.6.orig.tar.gz' graphite2_1.3.6.orig.tar.gz 3881106 SHA256:475e7657ac606ed8805518031729c1273cf7d9d422169ac6f7882e01d832af75
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.6-1ubuntu0.14.04.1.debian.tar.gz' graphite2_1.3.6-1ubuntu0.14.04.1.debian.tar.gz 9143 SHA256:8b080748a0af0fc5573b8823c89d25c105589011df7f6c1143d5ce3958a2b29c
-```
 
 ### `dpkg` source package: `grep=2.16-1`
 
