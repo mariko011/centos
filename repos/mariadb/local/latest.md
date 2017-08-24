@@ -1,10 +1,10 @@
-# `mariadb:10.2.7`
+# `mariadb:10.2.8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0ff2b852d8bf3975c92fd795a973d3794da04d64c2a6f72689fa5ba78b2fed7d`
-- Created: `2017-07-31T18:52:03.010750476Z`
-- Virtual Size: ~ 397.00 Mb  
+- Image ID: `sha256:58730544b81b4e89b0e78bbdea22e7ceed2cd063906171e2a49d8a650a7cd89f`
+- Created: `2017-08-21T19:10:32.195366196Z`
+- Virtual Size: ~ 397.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `GOSU_VERSION=1.7`
   - `GPG_KEYS=199369E5404BD5FC7D2FE43BCBCB082A1BB943DB 	430BDF5C56E7C94E848EE60C1C4CBDCDCD2EFD2A 	4D1BB29D63D98E422B2113B19334A25F8507EFA5`
   - `MARIADB_MAJOR=10.2`
-  - `MARIADB_VERSION=10.2.7+maria~jessie`
+  - `MARIADB_VERSION=10.2.8+maria~jessie`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2491,19 +2491,19 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/lvm2/2.02.111-2.2+deb8u1/
 - https://sources.debian.net/src/lvm2/2.02.111-2.2+deb8u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `mariadb-10.2=10.2.7+maria~jessie`
+### `dpkg` source package: `mariadb-10.2=10.2.8+maria~jessie`
 
 Binary Packages:
 
-- `libmariadb3=10.2.7+maria~jessie`
-- `libmysqlclient18=10.2.7+maria~jessie`
-- `mariadb-client-10.2=10.2.7+maria~jessie`
-- `mariadb-client-core-10.2=10.2.7+maria~jessie`
-- `mariadb-common=10.2.7+maria~jessie`
-- `mariadb-server=10.2.7+maria~jessie`
-- `mariadb-server-10.2=10.2.7+maria~jessie`
-- `mariadb-server-core-10.2=10.2.7+maria~jessie`
-- `mysql-common=10.2.7+maria~jessie`
+- `libmariadb3=10.2.8+maria~jessie`
+- `libmysqlclient18=10.2.8+maria~jessie`
+- `mariadb-client-10.2=10.2.8+maria~jessie`
+- `mariadb-client-core-10.2=10.2.8+maria~jessie`
+- `mariadb-common=10.2.8+maria~jessie`
+- `mariadb-server=10.2.8+maria~jessie`
+- `mariadb-server-10.2=10.2.8+maria~jessie`
+- `mariadb-server-core-10.2=10.2.8+maria~jessie`
+- `mysql-common=10.2.8+maria~jessie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
