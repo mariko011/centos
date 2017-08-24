@@ -1,10 +1,10 @@
-# `clojure:boot-2.7.1`
+# `clojure:boot-2.7.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ebd97651c0800ea3d1b228ff0ada09399fd58b02a7bf6b594cab787b97b6ba5d`
-- Created: `2017-07-27T16:05:54.20427253Z`
-- Virtual Size: ~ 775.52 Mb  
+- Image ID: `sha256:11b2c1e2180c4f04857e8a64fb2fd9f598252f09c4c29421649134877f8f4064`
+- Created: `2017-08-22T18:14:58.996508977Z`
+- Virtual Size: ~ 775.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -15,7 +15,7 @@
   - `JAVA_VERSION=8u141`
   - `JAVA_DEBIAN_VERSION=8u141-b15-1~deb9u1`
   - `CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1`
-  - `BOOT_VERSION=2.7.1`
+  - `BOOT_VERSION=2.7.2`
   - `BOOT_INSTALL=/usr/local/bin/`
   - `BOOT_AS_ROOT=yes`
 
