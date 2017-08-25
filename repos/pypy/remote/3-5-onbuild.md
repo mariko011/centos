@@ -1,7 +1,7 @@
 ## `pypy:3-5-onbuild`
 
 ```console
-$ docker pull pypy@sha256:2273c066268bc483c5a3d713733cda078c6732517e2340892176ec97a10611f8
+$ docker pull pypy@sha256:e90d3c351813c7d3f5ef58b92378303ca5923476e15940bc580fcfbdcf699807
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull pypy@sha256:2273c066268bc483c5a3d713733cda078c6732517e2340892176ec
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **279.1 MB (279070049 bytes)**  
+-	Total Size: **279.1 MB (279069016 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c69322194a02b03606f0f118595e893550d85d15ea79450de404d0704a6f10e7`
+-	Image ID: `sha256:6417c12835ea7d1ac8af65b15ee61c90976620d7431af2eaf09f76ff6f3f48b7`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
@@ -37,25 +37,23 @@ ENV LANG=C.UTF-8
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
 # Wed, 26 Jul 2017 08:57:21 GMT
 ENV PYPY_VERSION=5.8.0
-# Wed, 26 Jul 2017 08:58:44 GMT
-ENV PYPY_SHA256SUM=57d871a7f1135719c138cee4e3533c3275d682a76a40ff668e95150c65923035
-# Wed, 26 Jul 2017 08:58:44 GMT
+# Fri, 25 Aug 2017 14:57:57 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Wed, 26 Jul 2017 08:58:53 GMT
-RUN set -ex; 	wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3-v${PYPY_VERSION}-linux64.tar.bz2"; 	echo "$PYPY_SHA256SUM *pypy.tar.bz2" | sha256sum -c; 	tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2; 	rm pypy.tar.bz2
-# Wed, 26 Jul 2017 08:59:02 GMT
+# Fri, 25 Aug 2017 15:03:59 GMT
+RUN set -ex; 		dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64) pypyArch='linux64'; sha256='57d871a7f1135719c138cee4e3533c3275d682a76a40ff668e95150c65923035' ;; 		*) echo >&2 "error: current architecture ($dpkgArch) does not have a corresponding PyPy $PYPY_VERSION binary release"; exit 1 ;; 	esac; 		wget -O pypy.tar.bz2 "https://bitbucket.org/pypy/pypy/downloads/pypy3-v${PYPY_VERSION}-${pypyArch}.tar.bz2"; 	echo "$sha256 *pypy.tar.bz2" | sha256sum -c; 	tar -xjC /usr/local --strip-components=1 -f pypy.tar.bz2; 	rm pypy.tar.bz2; 		pypy3 --version
+# Fri, 25 Aug 2017 15:04:08 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		pypy3 get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		rm -f get-pip.py
-# Wed, 26 Jul 2017 08:59:02 GMT
+# Fri, 25 Aug 2017 15:04:08 GMT
 CMD ["pypy3"]
-# Wed, 26 Jul 2017 08:59:44 GMT
+# Fri, 25 Aug 2017 15:04:57 GMT
 RUN mkdir -p /usr/src/app
-# Wed, 26 Jul 2017 08:59:44 GMT
+# Fri, 25 Aug 2017 15:04:58 GMT
 WORKDIR /usr/src/app
-# Wed, 26 Jul 2017 08:59:44 GMT
+# Fri, 25 Aug 2017 15:04:58 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Wed, 26 Jul 2017 08:59:44 GMT
+# Fri, 25 Aug 2017 15:04:58 GMT
 ONBUILD RUN pip install -r requirements.txt
-# Wed, 26 Jul 2017 08:59:45 GMT
+# Fri, 25 Aug 2017 15:04:58 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -80,15 +78,15 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
 		Size: 2.9 MB (2897388 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f17ef0070ad4d5e73de775d3771bbedaf7a2f21b17cb9e25b91f59f9d9de19a`  
-		Last Modified: Wed, 26 Jul 2017 09:01:20 GMT  
-		Size: 25.0 MB (25008883 bytes)  
+	-	`sha256:aea0d0628b5195ac619691a522f1c21ca988140611ab093100d3ffcbe43aae8a`  
+		Last Modified: Fri, 25 Aug 2017 15:06:55 GMT  
+		Size: 25.0 MB (25046916 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4b7e67abe6ae2bafc5941976da13ca349ab5dd2065161dcd6f2839fa87d1231f`  
-		Last Modified: Wed, 26 Jul 2017 09:01:15 GMT  
-		Size: 4.2 MB (4209755 bytes)  
+	-	`sha256:34cfe105ac3f566cf2719bd0b1faeef8310dcb14f20bf2d00528d5311ab5bfed`  
+		Last Modified: Fri, 25 Aug 2017 15:06:51 GMT  
+		Size: 4.2 MB (4170689 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f07f02ef163dfee827c96481420e2c9c9ab2ac9c9c5fb1d5b1a3bd3da09ae86`  
-		Last Modified: Wed, 26 Jul 2017 09:02:20 GMT  
+	-	`sha256:981745c1ad1bc85ed3d4681f3eab2df974ac6163c68cf1bf644dcb4403bba74b`  
+		Last Modified: Fri, 25 Aug 2017 15:08:12 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
