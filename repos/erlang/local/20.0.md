@@ -1,18 +1,18 @@
-# `erlang:20.0.2`
+# `erlang:20.0.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9cc382693904c871a803dc0226ffc9ae4f40ba4c585184e33f60ccbf8d772516`
-- Created: `2017-07-31T18:04:42.319379705Z`
-- Virtual Size: ~ 805.25 Mb  
+- Image ID: `sha256:a9f3644e1bf014da3cb4acbe6f2ea761004f6aa02239fcd8986c229c97e92c8e`
+- Created: `2017-08-25T00:00:39.16343732Z`
+- Virtual Size: ~ 870.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=20.0.2`
+  - `OTP_VERSION=20.0.3`
   - `REBAR_VERSION=2.6.4`
-  - `REBAR3_VERSION=3.4.2`
+  - `REBAR3_VERSION=3.4.3`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -5275,7 +5275,9 @@ Likely also available for browsing at:
 Binary Packages:
 
 - `libwxbase3.0-0:amd64=3.0.2-1+b1`
+- `libwxbase3.0-0-dbg:amd64=3.0.2-1+b1`
 - `libwxgtk3.0-0:amd64=3.0.2-1+b1`
+- `libwxgtk3.0-0-dbg:amd64=3.0.2-1+b1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
