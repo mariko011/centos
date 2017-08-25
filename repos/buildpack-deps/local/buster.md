@@ -89,18 +89,8 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris apt=1.5~beta1
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.5~beta1.dsc' apt_1.5~beta1.dsc 2584 SHA256:e74cb480326235eb61bd2967e82f34c534f14b9711eac51329f86619ba281c60
-'http://deb.debian.org/debian/pool/main/a/apt/apt_1.5~beta1.tar.xz' apt_1.5~beta1.tar.xz 2089648 SHA256:6977a4a9f85da1c76af2cdbc4c33478812ae5ea3c14af61321d19a7b032915fe
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/apt/1.5~beta1/
-- https://sources.debian.net/src/apt/1.5~beta1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `atk1.0=2.24.0-1`
 
@@ -235,19 +225,8 @@ Licenses: (parsed from: `/usr/share/doc/automake/copyright`)
 - `GPL-3+`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris automake-1.15=1:1.15.1-2
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15.1-2.dsc' automake-1.15_1.15.1-2.dsc 2264 SHA256:c8079a3089e9803864c518667063c30706e370ad0cfc52b9a1f7710d03e90936
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15.1.orig.tar.xz' automake-1.15_1.15.1.orig.tar.xz 1509496 SHA256:af6ba39142220687c500f79b4aa2f181d9b24e4f8d8ec497cea4ba26c64bedaf
-'http://deb.debian.org/debian/pool/main/a/automake-1.15/automake-1.15_1.15.1-2.debian.tar.xz' automake-1.15_1.15.1-2.debian.tar.xz 13036 SHA256:8b8f53d615bcce42b497419c384ed8cec55d0b266a12a0bc20c3c7095e9b6a96
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/automake-1.15/1:1.15.1-2/
-- https://sources.debian.net/src/automake-1.15/1:1.15.1-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `autotools-dev=20161112.1`
 
@@ -3047,19 +3026,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxdamage=1:1.1.4-2
-'http://deb.debian.org/debian/pool/main/libx/libxdamage/libxdamage_1.1.4-2.dsc' libxdamage_1.1.4-2.dsc 2127 SHA256:43cbefb5c69f51d89a11cf84718fe0c42058fc9b6ec7c0076e7c37b9e829feb5
-'http://deb.debian.org/debian/pool/main/libx/libxdamage/libxdamage_1.1.4.orig.tar.gz' libxdamage_1.1.4.orig.tar.gz 339060 SHA256:4bb3e9d917f5f593df2277d452926ee6ad96de7b7cd1017cbcf4579fe5d3442b
-'http://deb.debian.org/debian/pool/main/libx/libxdamage/libxdamage_1.1.4-2.diff.gz' libxdamage_1.1.4-2.diff.gz 14930 SHA256:d238c1a266c30cd124ede7e6c86635bfaa108fa552c4a82919101cebf22670e9
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libxdamage/1:1.1.4-2/
-- https://sources.debian.net/src/libxdamage/1:1.1.4-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxdmcp=1:1.1.2-3`
 
