@@ -1992,19 +1992,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.24.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.24.0-1.dsc' nghttp2_1.24.0-1.dsc 2310 SHA256:a57980d28e67bac5df9af0ceb74053e076d76afac6c7d3f8a1acbf1c94945f13
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.24.0.orig.tar.bz2' nghttp2_1.24.0.orig.tar.bz2 1800637 SHA256:69db1bb4243805b922d44ba6d9887bc5a19a58199c42f8a5e4a96e9fc635daa3
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.24.0-1.debian.tar.xz' nghttp2_1.24.0-1.debian.tar.xz 11992 SHA256:2deb09c3111d869357bb371f195a2ba163cf14bab42a87444c109edd0839870d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.24.0-1/
-- https://sources.debian.net/src/nghttp2/1.24.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `npth=1.5-2`
 
@@ -2507,9 +2496,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=234-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_234-2.dsc' systemd_234-2.dsc 4812 SHA256:041c64b59a9185d366dbbd93bfe18e11c0c3ad9a7fb426b26efad1c280f0cc39
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_234-2.3.dsc' systemd_234-2.3.dsc 4379 SHA256:14c5d6f063183f33a880bdfd5bf40a09ad67cff45116a7331420fdebae5860c1
 'http://deb.debian.org/debian/pool/main/s/systemd/systemd_234.orig.tar.gz' systemd_234.orig.tar.gz 4800186 SHA256:da3e69d10aa1c983d33833372ad4929037b411ac421fb085c8cee79ae1d80b6a
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_234-2.debian.tar.xz' systemd_234-2.debian.tar.xz 131344 SHA256:60dee678a1969ee30a3fb65872d80090fa783a66c4094573971dc923512d743e
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_234-2.3.debian.tar.xz' systemd_234-2.3.debian.tar.xz 132112 SHA256:dabfa05beb1edf30ccd80d6d73af413f19b42c09bb76390767eb4e491e2bb1d1
 ```
 
 Likely also available for browsing at:
