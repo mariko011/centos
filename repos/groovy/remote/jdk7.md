@@ -1,7 +1,7 @@
 ## `groovy:jdk7`
 
 ```console
-$ docker pull groovy@sha256:4c5d66c2be520d3f7a4b86dabfc0e816e2fc06e03cf2dfd37a554b80b00903de
+$ docker pull groovy@sha256:977c1765dc6f59b76f0783d12c74e1b038778d7b4016205de059173372d55858
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull groovy@sha256:4c5d66c2be520d3f7a4b86dabfc0e816e2fc06e03cf2dfd37a55
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **339.1 MB (339108363 bytes)**  
+-	Total Size: **281.1 MB (281052700 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc8cc82216fa8c15ca2bdf62720beda74700f5c093fbed29b6571c56cebc1146`
+-	Image ID: `sha256:dfa5ae77212d0f559454bec24ffbe5d06f06aedd461ea503210696a75aa1ee93`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
@@ -37,27 +37,27 @@ RUN { 		echo '#!/bin/sh'; 		echo 'set -e'; 		echo; 		echo 'dirname "$(dirname "$
 RUN ln -svT "/usr/lib/jvm/java-7-openjdk-$(dpkg --print-architecture)" /docker-java-home
 # Mon, 24 Jul 2017 18:02:52 GMT
 ENV JAVA_HOME=/docker-java-home
-# Mon, 24 Jul 2017 18:02:52 GMT
-ENV JAVA_VERSION=7u131
-# Mon, 24 Jul 2017 18:02:53 GMT
-ENV JAVA_DEBIAN_VERSION=7u131-2.6.9-2~deb8u1
-# Mon, 24 Jul 2017 18:05:28 GMT
+# Fri, 25 Aug 2017 22:21:59 GMT
+ENV JAVA_VERSION=7u151
+# Fri, 25 Aug 2017 22:21:59 GMT
+ENV JAVA_DEBIAN_VERSION=7u151-2.6.11-1~deb8u1
+# Fri, 25 Aug 2017 22:23:05 GMT
 RUN set -ex; 		if [ ! -d /usr/share/man/man1 ]; then 		mkdir -p /usr/share/man/man1; 	fi; 		apt-get update; 	apt-get install -y 		openjdk-7-jdk="$JAVA_DEBIAN_VERSION" 	; 	rm -rf /var/lib/apt/lists/*; 		[ "$(readlink -f "$JAVA_HOME")" = "$(docker-java-home)" ]; 		update-alternatives --get-selections | awk -v home="$(readlink -f "$JAVA_HOME")" 'index($3, home) == 1 { $2 = "manual"; print | "update-alternatives --set-selections" }'; 	update-alternatives --query java | grep -q 'Status: manual'
-# Mon, 24 Jul 2017 20:09:00 GMT
+# Sat, 26 Aug 2017 03:14:14 GMT
 CMD ["groovysh"]
-# Mon, 24 Jul 2017 20:09:00 GMT
+# Sat, 26 Aug 2017 03:14:15 GMT
 ENV GROOVY_HOME=/opt/groovy
-# Mon, 24 Jul 2017 20:09:00 GMT
+# Sat, 26 Aug 2017 03:14:15 GMT
 ENV GROOVY_VERSION=2.4.12
-# Mon, 24 Jul 2017 20:09:03 GMT
+# Sat, 26 Aug 2017 03:14:19 GMT
 RUN set -o errexit -o nounset 	&& echo "Downloading Groovy" 	&& wget --no-verbose --output-document=groovy.zip "https://dist.apache.org/repos/dist/release/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip" 		&& echo "Importing keys listed in http://www.apache.org/dist/groovy/KEYS from key server" 	&& export GNUPGHOME="$(mktemp -d)" 	&& for key in 		"7FAA0F2206DE228F0DB01AD741321490758AAD6F" 		"331224E1D7BE883D16E8A685825C06C827AF6B66" 		"34441E504A937F43EB0DAEF96A65176A0FB1CD0B" 		"9A810E3B766E089FFB27C70F11B595CEDC4AEBB5" 	; do 		for server in 			ha.pool.sks-keyservers.net 			hkp://p80.pool.sks-keyservers.net:80 			pgp.mit.edu 		; do 			echo "  Trying ${server}"; 			if gpg --keyserver "${server}" --recv-keys "${key}"; then 				break; 			fi; 		done; 	done; 	if [ $(gpg --list-keys | grep -c "pub ") -ne 4 ]; then 		echo "ERROR: Failed to fetch GPG keys" >&2; 		exit 1; 	fi 		&& echo "Checking download signature" 	&& wget --no-verbose --output-document=groovy.zip.asc "https://dist.apache.org/repos/dist/release/groovy/${GROOVY_VERSION}/distribution/apache-groovy-binary-${GROOVY_VERSION}.zip.asc" 	&& gpg --batch --verify groovy.zip.asc groovy.zip 	&& rm --recursive "${GNUPGHOME}" 	&& rm groovy.zip.asc 		&& echo "Installing Groovy" 	&& unzip groovy.zip 	&& rm groovy.zip 	&& mv "groovy-${GROOVY_VERSION}" "${GROOVY_HOME}/" 	&& ln --symbolic "${GROOVY_HOME}/bin/grape" /usr/bin/grape 	&& ln --symbolic "${GROOVY_HOME}/bin/groovy" /usr/bin/groovy 	&& ln --symbolic "${GROOVY_HOME}/bin/groovyc" /usr/bin/groovyc 	&& ln --symbolic "${GROOVY_HOME}/bin/groovyConsole" /usr/bin/groovyConsole 	&& ln --symbolic "${GROOVY_HOME}/bin/groovydoc" /usr/bin/groovydoc 	&& ln --symbolic "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh 	&& ln --symbolic "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy 		&& echo "Adding groovy user and group" 	&& groupadd --system --gid 1000 groovy 	&& useradd --system --gid groovy --uid 1000 --shell /bin/bash --create-home groovy 	&& mkdir --parents /home/groovy/.groovy/grapes 	&& chown --recursive groovy:groovy /home/groovy
-# Mon, 24 Jul 2017 20:09:04 GMT
+# Sat, 26 Aug 2017 03:14:19 GMT
 USER [groovy]
-# Mon, 24 Jul 2017 20:09:04 GMT
+# Sat, 26 Aug 2017 03:14:20 GMT
 VOLUME [/home/groovy/.groovy/grapes]
-# Mon, 24 Jul 2017 20:09:04 GMT
+# Sat, 26 Aug 2017 03:14:20 GMT
 WORKDIR /home/groovy
-# Mon, 24 Jul 2017 20:09:05 GMT
+# Sat, 26 Aug 2017 03:14:21 GMT
 RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy --version
 ```
 
@@ -86,15 +86,15 @@ RUN set -o errexit -o nounset 	&& echo "Testing Groovy installation" 	&& groovy 
 		Last Modified: Mon, 24 Jul 2017 18:17:59 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:06d2a669c4963e2fe56e4a700006e9d2933fc62a9a1bbe86dc2dc2fb4021be04`  
-		Last Modified: Mon, 24 Jul 2017 18:19:18 GMT  
-		Size: 187.0 MB (186956489 bytes)  
+	-	`sha256:2d9b032495d1b3ce8eba27340b3d9b723f110c9a3548fc1579ddf593f287af76`  
+		Last Modified: Fri, 25 Aug 2017 22:28:42 GMT  
+		Size: 128.9 MB (128900836 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d21a93de450a8b3844d813784c3642fb957d694781f91505b27985e546da169`  
-		Last Modified: Mon, 24 Jul 2017 20:58:20 GMT  
-		Size: 36.5 MB (36461819 bytes)  
+	-	`sha256:ec31c00bc442c9af7ddc7a6f332b2ec2b780fff9c59b08ce8b5d04032b4ef0cb`  
+		Last Modified: Sat, 26 Aug 2017 03:16:36 GMT  
+		Size: 36.5 MB (36461809 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7b72ab3cdc1dfafe9dfc0b782f14b859c376033f79e7df4cd30bed5038b4c363`  
-		Last Modified: Mon, 24 Jul 2017 20:58:14 GMT  
+	-	`sha256:d3ccdd986dc907146b6b8dbdb8dd845c9e9468c345ef02426df4902bf25571cd`  
+		Last Modified: Sat, 26 Aug 2017 03:16:34 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
