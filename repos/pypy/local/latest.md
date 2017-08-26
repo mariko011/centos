@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2d44eae4f7dba1497470b17baee887daffbf4cc2ce10e3246bd5cfebaaf07b2e`
-- Created: `2017-07-26T08:59:02.843788783Z`
+- Image ID: `sha256:98be8944fb4197abc67d5634f49c3dcddeb945cd43d98a983c2ff82a5e17932d`
+- Created: `2017-08-25T15:04:08.976901621Z`
 - Virtual Size: ~ 729.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,6 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `PYPY_VERSION=5.8.0`
-  - `PYPY_SHA256SUM=57d871a7f1135719c138cee4e3533c3275d682a76a40ff668e95150c65923035`
   - `PYTHON_PIP_VERSION=9.0.1`
 
 ## `dpkg` (`.deb`-based packages)
