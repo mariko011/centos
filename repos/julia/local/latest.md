@@ -2,15 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:63367277333333f3ac3fd91f53309277b71a38c9c2c1229ef002551695a38b44`
-- Created: `2017-07-26T06:04:05.299054657Z`
-- Virtual Size: ~ 373.34 Mb  
+- Image ID: `sha256:960f3154ef5cf707962560d3033e16bc9ff3d4912414690614f8bd3aed0a4ed4`
+- Created: `2017-08-25T14:41:41.406059178Z`
+- Virtual Size: ~ 370.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["julia"]`
 - Environment:
   - `PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JULIA_PATH=/usr/local/julia`
+  - `JULIA_GPG=3673DF529D9049477F76B37566E3C7DC03D6E495`
   - `JULIA_VERSION=0.6.0`
 
 ## `dpkg` (`.deb`-based packages)
@@ -365,10 +366,9 @@ Likely also available for browsing at:
 Binary Packages:
 
 - `libsasl2-2:amd64=2.1.26.dfsg1-13+deb8u1`
-- `libsasl2-modules:amd64=2.1.26.dfsg1-13+deb8u1`
 - `libsasl2-modules-db:amd64=2.1.26.dfsg1-13+deb8u1`
 
-Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
 
 - `BSD-2-clause`
 - `BSD-4-clause`
@@ -1014,13 +1014,12 @@ Likely also available for browsing at:
 
 Binary Packages:
 
-- `krb5-locales=1.12.1+dfsg-19+deb8u2`
 - `libgssapi-krb5-2:amd64=1.12.1+dfsg-19+deb8u2`
 - `libk5crypto3:amd64=1.12.1+dfsg-19+deb8u2`
 - `libkrb5-3:amd64=1.12.1+dfsg-19+deb8u2`
 - `libkrb5support0:amd64=1.12.1+dfsg-19+deb8u2`
 
-Licenses: (parsed from: `/usr/share/doc/krb5-locales/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
