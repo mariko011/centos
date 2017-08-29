@@ -2,17 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9603b9288585b0f796f9ca6227b9b9bf9c8956a8da44404da34fe32c6ffb5bed`
-- Created: `2017-08-02T00:04:44.288643753Z`
-- Virtual Size: ~ 817.38 Mb  
+- Image ID: `sha256:95b16c2db3cad9d56e312b65248a6cced9244bea891206763b3df97ebd4fe318`
+- Created: `2017-08-28T23:10:31.556259825Z`
+- Virtual Size: ~ 882.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=20.0.2`
+  - `OTP_VERSION=20.0.4`
   - `REBAR_VERSION=2.6.4`
-  - `REBAR3_VERSION=3.4.2`
+  - `REBAR3_VERSION=3.4.3`
   - `ELIXIR_VERSION=v1.5.1`
   - `LANG=C.UTF-8`
 
@@ -5277,7 +5277,9 @@ Likely also available for browsing at:
 Binary Packages:
 
 - `libwxbase3.0-0:amd64=3.0.2-1+b1`
+- `libwxbase3.0-0-dbg:amd64=3.0.2-1+b1`
 - `libwxgtk3.0-0:amd64=3.0.2-1+b1`
+- `libwxgtk3.0-0-dbg:amd64=3.0.2-1+b1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
