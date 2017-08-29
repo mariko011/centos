@@ -114,7 +114,7 @@
 ## `python:3.6.2-stretch`
 
 ```console
-$ docker pull python@sha256:9ef5071661ee8bd8f16da125a944b974a9d41fb1c41d519d48e7b6c7f404eded
+$ docker pull python@sha256:c13f6fe086f463e5643394d011ed1e35a2654a9e353435362e9a115f10ce95f7
 ```
 
 -	Platforms:
@@ -124,9 +124,9 @@ $ docker pull python@sha256:9ef5071661ee8bd8f16da125a944b974a9d41fb1c41d519d48e7
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **347.3 MB (347325465 bytes)**  
+-	Total Size: **348.9 MB (348919918 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ece77c12f8dbc74b15cdd7d677bcb643ef2f3267dda0f4261ddd37e72a04d636`
+-	Image ID: `sha256:1e7990c400bbb79d52506e2dd5fa5fad2a0b4d58cf3b6d94fddf2a72d52f9979`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -140,27 +140,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:29:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:30:14 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:44:16 GMT
+# Mon, 28 Aug 2017 23:37:44 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:48:08 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:44:16 GMT
+# Tue, 29 Aug 2017 05:48:08 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:44:29 GMT
+# Tue, 29 Aug 2017 05:48:23 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:44:29 GMT
+# Tue, 29 Aug 2017 05:48:24 GMT
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Mon, 24 Jul 2017 19:44:29 GMT
+# Tue, 29 Aug 2017 05:48:24 GMT
 ENV PYTHON_VERSION=3.6.2
-# Mon, 24 Jul 2017 19:46:04 GMT
+# Tue, 29 Aug 2017 05:50:20 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 19:46:04 GMT
+# Tue, 29 Aug 2017 05:50:21 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 24 Jul 2017 19:46:04 GMT
+# Tue, 29 Aug 2017 05:50:21 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 19:46:09 GMT
+# Tue, 29 Aug 2017 05:50:26 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 19:46:09 GMT
+# Tue, 29 Aug 2017 05:50:26 GMT
 CMD ["python3"]
 ```
 
@@ -181,31 +181,31 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:36:55 GMT  
 		Size: 50.0 MB (50003328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f1f06181675b7b85e1c17621a96aea8bd586c187a6a9ac7f63fcd09640dfcbc`  
-		Last Modified: Mon, 24 Jul 2017 17:37:48 GMT  
-		Size: 211.2 MB (211158464 bytes)  
+	-	`sha256:7dacde51d9842a4f69d438762a86393c169b5b8f649fd6c6ff5b475c6e909046`  
+		Last Modified: Tue, 29 Aug 2017 00:04:01 GMT  
+		Size: 212.7 MB (212748354 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb93b795ab2840091005c2d75f333963094b616ae05547745392dbf92e35e4b9`  
-		Last Modified: Mon, 24 Jul 2017 20:19:00 GMT  
-		Size: 2.9 MB (2919805 bytes)  
+	-	`sha256:83b5671243c886cf81ed56f501b43291a815b179ad891c30c8f6740e1f8741e9`  
+		Last Modified: Tue, 29 Aug 2017 06:16:59 GMT  
+		Size: 2.9 MB (2920351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3cec98c713de9b7d35beec79bbf8622a42864f5ee01f30607cee9f6a8ed2d04b`  
-		Last Modified: Mon, 24 Jul 2017 20:19:06 GMT  
-		Size: 20.9 MB (20921467 bytes)  
+	-	`sha256:26512619fdc298c434e7a864a12ae79d9f8b1b9c9d9cccd8ae10e130ead080c9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:05 GMT  
+		Size: 20.9 MB (20925211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:088b49425d10b8fd863a7a516156b18745445a20c651a3e7428daa9e8894ea1a`  
-		Last Modified: Mon, 24 Jul 2017 20:19:00 GMT  
+	-	`sha256:5f882554938ddff5fabab52511bd00c031340646f139ed7657ece3edc2f02433`  
+		Last Modified: Tue, 29 Aug 2017 06:16:58 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc289f7c7ec9cb921791cac7befccf849864f8a37dea0fea822a3cab290a47d7`  
-		Last Modified: Mon, 24 Jul 2017 20:19:00 GMT  
-		Size: 1.7 MB (1660262 bytes)  
+	-	`sha256:3a9088b919c25b4770cbc6ecc2c430be6d60ed556fe7ad11820c2b0eda5165e2`  
+		Last Modified: Tue, 29 Aug 2017 06:16:59 GMT  
+		Size: 1.7 MB (1660535 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.6-stretch`
 
 ```console
-$ docker pull python@sha256:9ef5071661ee8bd8f16da125a944b974a9d41fb1c41d519d48e7b6c7f404eded
+$ docker pull python@sha256:c13f6fe086f463e5643394d011ed1e35a2654a9e353435362e9a115f10ce95f7
 ```
 
 -	Platforms:
@@ -215,9 +215,9 @@ $ docker pull python@sha256:9ef5071661ee8bd8f16da125a944b974a9d41fb1c41d519d48e7
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **347.3 MB (347325465 bytes)**  
+-	Total Size: **348.9 MB (348919918 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ece77c12f8dbc74b15cdd7d677bcb643ef2f3267dda0f4261ddd37e72a04d636`
+-	Image ID: `sha256:1e7990c400bbb79d52506e2dd5fa5fad2a0b4d58cf3b6d94fddf2a72d52f9979`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -231,27 +231,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:29:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:30:14 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:44:16 GMT
+# Mon, 28 Aug 2017 23:37:44 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:48:08 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:44:16 GMT
+# Tue, 29 Aug 2017 05:48:08 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:44:29 GMT
+# Tue, 29 Aug 2017 05:48:23 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:44:29 GMT
+# Tue, 29 Aug 2017 05:48:24 GMT
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Mon, 24 Jul 2017 19:44:29 GMT
+# Tue, 29 Aug 2017 05:48:24 GMT
 ENV PYTHON_VERSION=3.6.2
-# Mon, 24 Jul 2017 19:46:04 GMT
+# Tue, 29 Aug 2017 05:50:20 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 19:46:04 GMT
+# Tue, 29 Aug 2017 05:50:21 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 24 Jul 2017 19:46:04 GMT
+# Tue, 29 Aug 2017 05:50:21 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 19:46:09 GMT
+# Tue, 29 Aug 2017 05:50:26 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 19:46:09 GMT
+# Tue, 29 Aug 2017 05:50:26 GMT
 CMD ["python3"]
 ```
 
@@ -272,31 +272,31 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:36:55 GMT  
 		Size: 50.0 MB (50003328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f1f06181675b7b85e1c17621a96aea8bd586c187a6a9ac7f63fcd09640dfcbc`  
-		Last Modified: Mon, 24 Jul 2017 17:37:48 GMT  
-		Size: 211.2 MB (211158464 bytes)  
+	-	`sha256:7dacde51d9842a4f69d438762a86393c169b5b8f649fd6c6ff5b475c6e909046`  
+		Last Modified: Tue, 29 Aug 2017 00:04:01 GMT  
+		Size: 212.7 MB (212748354 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb93b795ab2840091005c2d75f333963094b616ae05547745392dbf92e35e4b9`  
-		Last Modified: Mon, 24 Jul 2017 20:19:00 GMT  
-		Size: 2.9 MB (2919805 bytes)  
+	-	`sha256:83b5671243c886cf81ed56f501b43291a815b179ad891c30c8f6740e1f8741e9`  
+		Last Modified: Tue, 29 Aug 2017 06:16:59 GMT  
+		Size: 2.9 MB (2920351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3cec98c713de9b7d35beec79bbf8622a42864f5ee01f30607cee9f6a8ed2d04b`  
-		Last Modified: Mon, 24 Jul 2017 20:19:06 GMT  
-		Size: 20.9 MB (20921467 bytes)  
+	-	`sha256:26512619fdc298c434e7a864a12ae79d9f8b1b9c9d9cccd8ae10e130ead080c9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:05 GMT  
+		Size: 20.9 MB (20925211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:088b49425d10b8fd863a7a516156b18745445a20c651a3e7428daa9e8894ea1a`  
-		Last Modified: Mon, 24 Jul 2017 20:19:00 GMT  
+	-	`sha256:5f882554938ddff5fabab52511bd00c031340646f139ed7657ece3edc2f02433`  
+		Last Modified: Tue, 29 Aug 2017 06:16:58 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc289f7c7ec9cb921791cac7befccf849864f8a37dea0fea822a3cab290a47d7`  
-		Last Modified: Mon, 24 Jul 2017 20:19:00 GMT  
-		Size: 1.7 MB (1660262 bytes)  
+	-	`sha256:3a9088b919c25b4770cbc6ecc2c430be6d60ed556fe7ad11820c2b0eda5165e2`  
+		Last Modified: Tue, 29 Aug 2017 06:16:59 GMT  
+		Size: 1.7 MB (1660535 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3-stretch`
 
 ```console
-$ docker pull python@sha256:9ef5071661ee8bd8f16da125a944b974a9d41fb1c41d519d48e7b6c7f404eded
+$ docker pull python@sha256:c13f6fe086f463e5643394d011ed1e35a2654a9e353435362e9a115f10ce95f7
 ```
 
 -	Platforms:
@@ -306,9 +306,9 @@ $ docker pull python@sha256:9ef5071661ee8bd8f16da125a944b974a9d41fb1c41d519d48e7
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **347.3 MB (347325465 bytes)**  
+-	Total Size: **348.9 MB (348919918 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ece77c12f8dbc74b15cdd7d677bcb643ef2f3267dda0f4261ddd37e72a04d636`
+-	Image ID: `sha256:1e7990c400bbb79d52506e2dd5fa5fad2a0b4d58cf3b6d94fddf2a72d52f9979`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -322,27 +322,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:29:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:30:14 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:44:16 GMT
+# Mon, 28 Aug 2017 23:37:44 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:48:08 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:44:16 GMT
+# Tue, 29 Aug 2017 05:48:08 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:44:29 GMT
+# Tue, 29 Aug 2017 05:48:23 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:44:29 GMT
+# Tue, 29 Aug 2017 05:48:24 GMT
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Mon, 24 Jul 2017 19:44:29 GMT
+# Tue, 29 Aug 2017 05:48:24 GMT
 ENV PYTHON_VERSION=3.6.2
-# Mon, 24 Jul 2017 19:46:04 GMT
+# Tue, 29 Aug 2017 05:50:20 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 19:46:04 GMT
+# Tue, 29 Aug 2017 05:50:21 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 24 Jul 2017 19:46:04 GMT
+# Tue, 29 Aug 2017 05:50:21 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 19:46:09 GMT
+# Tue, 29 Aug 2017 05:50:26 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 19:46:09 GMT
+# Tue, 29 Aug 2017 05:50:26 GMT
 CMD ["python3"]
 ```
 
@@ -363,31 +363,31 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:36:55 GMT  
 		Size: 50.0 MB (50003328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f1f06181675b7b85e1c17621a96aea8bd586c187a6a9ac7f63fcd09640dfcbc`  
-		Last Modified: Mon, 24 Jul 2017 17:37:48 GMT  
-		Size: 211.2 MB (211158464 bytes)  
+	-	`sha256:7dacde51d9842a4f69d438762a86393c169b5b8f649fd6c6ff5b475c6e909046`  
+		Last Modified: Tue, 29 Aug 2017 00:04:01 GMT  
+		Size: 212.7 MB (212748354 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb93b795ab2840091005c2d75f333963094b616ae05547745392dbf92e35e4b9`  
-		Last Modified: Mon, 24 Jul 2017 20:19:00 GMT  
-		Size: 2.9 MB (2919805 bytes)  
+	-	`sha256:83b5671243c886cf81ed56f501b43291a815b179ad891c30c8f6740e1f8741e9`  
+		Last Modified: Tue, 29 Aug 2017 06:16:59 GMT  
+		Size: 2.9 MB (2920351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3cec98c713de9b7d35beec79bbf8622a42864f5ee01f30607cee9f6a8ed2d04b`  
-		Last Modified: Mon, 24 Jul 2017 20:19:06 GMT  
-		Size: 20.9 MB (20921467 bytes)  
+	-	`sha256:26512619fdc298c434e7a864a12ae79d9f8b1b9c9d9cccd8ae10e130ead080c9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:05 GMT  
+		Size: 20.9 MB (20925211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:088b49425d10b8fd863a7a516156b18745445a20c651a3e7428daa9e8894ea1a`  
-		Last Modified: Mon, 24 Jul 2017 20:19:00 GMT  
+	-	`sha256:5f882554938ddff5fabab52511bd00c031340646f139ed7657ece3edc2f02433`  
+		Last Modified: Tue, 29 Aug 2017 06:16:58 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc289f7c7ec9cb921791cac7befccf849864f8a37dea0fea822a3cab290a47d7`  
-		Last Modified: Mon, 24 Jul 2017 20:19:00 GMT  
-		Size: 1.7 MB (1660262 bytes)  
+	-	`sha256:3a9088b919c25b4770cbc6ecc2c430be6d60ed556fe7ad11820c2b0eda5165e2`  
+		Last Modified: Tue, 29 Aug 2017 06:16:59 GMT  
+		Size: 1.7 MB (1660535 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:stretch`
 
 ```console
-$ docker pull python@sha256:9ef5071661ee8bd8f16da125a944b974a9d41fb1c41d519d48e7b6c7f404eded
+$ docker pull python@sha256:c13f6fe086f463e5643394d011ed1e35a2654a9e353435362e9a115f10ce95f7
 ```
 
 -	Platforms:
@@ -397,9 +397,9 @@ $ docker pull python@sha256:9ef5071661ee8bd8f16da125a944b974a9d41fb1c41d519d48e7
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **347.3 MB (347325465 bytes)**  
+-	Total Size: **348.9 MB (348919918 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ece77c12f8dbc74b15cdd7d677bcb643ef2f3267dda0f4261ddd37e72a04d636`
+-	Image ID: `sha256:1e7990c400bbb79d52506e2dd5fa5fad2a0b4d58cf3b6d94fddf2a72d52f9979`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -413,27 +413,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:29:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:30:14 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:44:16 GMT
+# Mon, 28 Aug 2017 23:37:44 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:48:08 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:44:16 GMT
+# Tue, 29 Aug 2017 05:48:08 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:44:29 GMT
+# Tue, 29 Aug 2017 05:48:23 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:44:29 GMT
+# Tue, 29 Aug 2017 05:48:24 GMT
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Mon, 24 Jul 2017 19:44:29 GMT
+# Tue, 29 Aug 2017 05:48:24 GMT
 ENV PYTHON_VERSION=3.6.2
-# Mon, 24 Jul 2017 19:46:04 GMT
+# Tue, 29 Aug 2017 05:50:20 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 19:46:04 GMT
+# Tue, 29 Aug 2017 05:50:21 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 24 Jul 2017 19:46:04 GMT
+# Tue, 29 Aug 2017 05:50:21 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 19:46:09 GMT
+# Tue, 29 Aug 2017 05:50:26 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 19:46:09 GMT
+# Tue, 29 Aug 2017 05:50:26 GMT
 CMD ["python3"]
 ```
 
@@ -454,31 +454,31 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:36:55 GMT  
 		Size: 50.0 MB (50003328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f1f06181675b7b85e1c17621a96aea8bd586c187a6a9ac7f63fcd09640dfcbc`  
-		Last Modified: Mon, 24 Jul 2017 17:37:48 GMT  
-		Size: 211.2 MB (211158464 bytes)  
+	-	`sha256:7dacde51d9842a4f69d438762a86393c169b5b8f649fd6c6ff5b475c6e909046`  
+		Last Modified: Tue, 29 Aug 2017 00:04:01 GMT  
+		Size: 212.7 MB (212748354 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb93b795ab2840091005c2d75f333963094b616ae05547745392dbf92e35e4b9`  
-		Last Modified: Mon, 24 Jul 2017 20:19:00 GMT  
-		Size: 2.9 MB (2919805 bytes)  
+	-	`sha256:83b5671243c886cf81ed56f501b43291a815b179ad891c30c8f6740e1f8741e9`  
+		Last Modified: Tue, 29 Aug 2017 06:16:59 GMT  
+		Size: 2.9 MB (2920351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3cec98c713de9b7d35beec79bbf8622a42864f5ee01f30607cee9f6a8ed2d04b`  
-		Last Modified: Mon, 24 Jul 2017 20:19:06 GMT  
-		Size: 20.9 MB (20921467 bytes)  
+	-	`sha256:26512619fdc298c434e7a864a12ae79d9f8b1b9c9d9cccd8ae10e130ead080c9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:05 GMT  
+		Size: 20.9 MB (20925211 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:088b49425d10b8fd863a7a516156b18745445a20c651a3e7428daa9e8894ea1a`  
-		Last Modified: Mon, 24 Jul 2017 20:19:00 GMT  
+	-	`sha256:5f882554938ddff5fabab52511bd00c031340646f139ed7657ece3edc2f02433`  
+		Last Modified: Tue, 29 Aug 2017 06:16:58 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc289f7c7ec9cb921791cac7befccf849864f8a37dea0fea822a3cab290a47d7`  
-		Last Modified: Mon, 24 Jul 2017 20:19:00 GMT  
-		Size: 1.7 MB (1660262 bytes)  
+	-	`sha256:3a9088b919c25b4770cbc6ecc2c430be6d60ed556fe7ad11820c2b0eda5165e2`  
+		Last Modified: Tue, 29 Aug 2017 06:16:59 GMT  
+		Size: 1.7 MB (1660535 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.6.2-jessie`
 
 ```console
-$ docker pull python@sha256:81a1ab6955f8a17045fb4c2866b21c91445837507e86d489b03744557e6ed209
+$ docker pull python@sha256:466a3245173ecf6afed2ea7ba9c5c1c02592334aa374280bd69f9e95745dce03
 ```
 
 -	Platforms:
@@ -488,9 +488,9 @@ $ docker pull python@sha256:81a1ab6955f8a17045fb4c2866b21c91445837507e86d489b037
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.8 MB (270810884 bytes)**  
+-	Total Size: **273.6 MB (273644287 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:968120d8cbe8c99ab47504ffeb49e16ce3b773d14ba4eb78c7a5eca6ad34e00c`
+-	Image ID: `sha256:6b531d93e9f636df1d9b136ed8b307ae189a855da2c637f32b1cb8db8bb77e2f`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -504,27 +504,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:58 GMT
 ENV PYTHON_VERSION=3.6.2
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:05 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:06 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:06 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 19:48:30 GMT
+# Tue, 29 Aug 2017 05:53:11 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 19:48:30 GMT
+# Tue, 29 Aug 2017 05:53:11 GMT
 CMD ["python3"]
 ```
 
@@ -541,31 +541,31 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7cffe4bfd71fa93d626a4a0761dc02083eda97bfc757feafdc168a9b24fbda`  
-		Last Modified: Mon, 24 Jul 2017 20:19:34 GMT  
-		Size: 19.3 MB (19299347 bytes)  
+	-	`sha256:16028f10c92b79d2ae86fd227b27e9167090591c94b339029ae7baa5f3a80af4`  
+		Last Modified: Tue, 29 Aug 2017 06:17:44 GMT  
+		Size: 19.3 MB (19304387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:450f5ea3e7eafb6df380c997fa891c13693af5ef46eb7a8ac6c54b58d00fecbb`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
+	-	`sha256:227716d498db5e48d3789ab1b4fc374eeee40d731453968428687f638ec331e9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:37 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1dca9769b8b2f680ff0ed0de230c1d8984715ea8608e8a7df08b44a982f1fb3`  
-		Last Modified: Mon, 24 Jul 2017 20:19:30 GMT  
-		Size: 1.7 MB (1660019 bytes)  
+	-	`sha256:c4b632f08aeeaa6abba1338ceb634b3854725985cbcb4c57aace219595e01252`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 1.7 MB (1660201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.6-jessie`
 
 ```console
-$ docker pull python@sha256:81a1ab6955f8a17045fb4c2866b21c91445837507e86d489b03744557e6ed209
+$ docker pull python@sha256:466a3245173ecf6afed2ea7ba9c5c1c02592334aa374280bd69f9e95745dce03
 ```
 
 -	Platforms:
@@ -575,9 +575,9 @@ $ docker pull python@sha256:81a1ab6955f8a17045fb4c2866b21c91445837507e86d489b037
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.8 MB (270810884 bytes)**  
+-	Total Size: **273.6 MB (273644287 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:968120d8cbe8c99ab47504ffeb49e16ce3b773d14ba4eb78c7a5eca6ad34e00c`
+-	Image ID: `sha256:6b531d93e9f636df1d9b136ed8b307ae189a855da2c637f32b1cb8db8bb77e2f`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -591,27 +591,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:58 GMT
 ENV PYTHON_VERSION=3.6.2
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:05 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:06 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:06 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 19:48:30 GMT
+# Tue, 29 Aug 2017 05:53:11 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 19:48:30 GMT
+# Tue, 29 Aug 2017 05:53:11 GMT
 CMD ["python3"]
 ```
 
@@ -628,31 +628,31 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7cffe4bfd71fa93d626a4a0761dc02083eda97bfc757feafdc168a9b24fbda`  
-		Last Modified: Mon, 24 Jul 2017 20:19:34 GMT  
-		Size: 19.3 MB (19299347 bytes)  
+	-	`sha256:16028f10c92b79d2ae86fd227b27e9167090591c94b339029ae7baa5f3a80af4`  
+		Last Modified: Tue, 29 Aug 2017 06:17:44 GMT  
+		Size: 19.3 MB (19304387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:450f5ea3e7eafb6df380c997fa891c13693af5ef46eb7a8ac6c54b58d00fecbb`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
+	-	`sha256:227716d498db5e48d3789ab1b4fc374eeee40d731453968428687f638ec331e9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:37 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1dca9769b8b2f680ff0ed0de230c1d8984715ea8608e8a7df08b44a982f1fb3`  
-		Last Modified: Mon, 24 Jul 2017 20:19:30 GMT  
-		Size: 1.7 MB (1660019 bytes)  
+	-	`sha256:c4b632f08aeeaa6abba1338ceb634b3854725985cbcb4c57aace219595e01252`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 1.7 MB (1660201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3-jessie`
 
 ```console
-$ docker pull python@sha256:81a1ab6955f8a17045fb4c2866b21c91445837507e86d489b03744557e6ed209
+$ docker pull python@sha256:466a3245173ecf6afed2ea7ba9c5c1c02592334aa374280bd69f9e95745dce03
 ```
 
 -	Platforms:
@@ -662,9 +662,9 @@ $ docker pull python@sha256:81a1ab6955f8a17045fb4c2866b21c91445837507e86d489b037
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.8 MB (270810884 bytes)**  
+-	Total Size: **273.6 MB (273644287 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:968120d8cbe8c99ab47504ffeb49e16ce3b773d14ba4eb78c7a5eca6ad34e00c`
+-	Image ID: `sha256:6b531d93e9f636df1d9b136ed8b307ae189a855da2c637f32b1cb8db8bb77e2f`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -678,27 +678,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:58 GMT
 ENV PYTHON_VERSION=3.6.2
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:05 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:06 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:06 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 19:48:30 GMT
+# Tue, 29 Aug 2017 05:53:11 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 19:48:30 GMT
+# Tue, 29 Aug 2017 05:53:11 GMT
 CMD ["python3"]
 ```
 
@@ -715,31 +715,31 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7cffe4bfd71fa93d626a4a0761dc02083eda97bfc757feafdc168a9b24fbda`  
-		Last Modified: Mon, 24 Jul 2017 20:19:34 GMT  
-		Size: 19.3 MB (19299347 bytes)  
+	-	`sha256:16028f10c92b79d2ae86fd227b27e9167090591c94b339029ae7baa5f3a80af4`  
+		Last Modified: Tue, 29 Aug 2017 06:17:44 GMT  
+		Size: 19.3 MB (19304387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:450f5ea3e7eafb6df380c997fa891c13693af5ef46eb7a8ac6c54b58d00fecbb`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
+	-	`sha256:227716d498db5e48d3789ab1b4fc374eeee40d731453968428687f638ec331e9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:37 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1dca9769b8b2f680ff0ed0de230c1d8984715ea8608e8a7df08b44a982f1fb3`  
-		Last Modified: Mon, 24 Jul 2017 20:19:30 GMT  
-		Size: 1.7 MB (1660019 bytes)  
+	-	`sha256:c4b632f08aeeaa6abba1338ceb634b3854725985cbcb4c57aace219595e01252`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 1.7 MB (1660201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:jessie`
 
 ```console
-$ docker pull python@sha256:81a1ab6955f8a17045fb4c2866b21c91445837507e86d489b03744557e6ed209
+$ docker pull python@sha256:466a3245173ecf6afed2ea7ba9c5c1c02592334aa374280bd69f9e95745dce03
 ```
 
 -	Platforms:
@@ -749,9 +749,9 @@ $ docker pull python@sha256:81a1ab6955f8a17045fb4c2866b21c91445837507e86d489b037
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.8 MB (270810884 bytes)**  
+-	Total Size: **273.6 MB (273644287 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:968120d8cbe8c99ab47504ffeb49e16ce3b773d14ba4eb78c7a5eca6ad34e00c`
+-	Image ID: `sha256:6b531d93e9f636df1d9b136ed8b307ae189a855da2c637f32b1cb8db8bb77e2f`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -765,27 +765,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:58 GMT
 ENV PYTHON_VERSION=3.6.2
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:05 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:06 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:06 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 19:48:30 GMT
+# Tue, 29 Aug 2017 05:53:11 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 19:48:30 GMT
+# Tue, 29 Aug 2017 05:53:11 GMT
 CMD ["python3"]
 ```
 
@@ -802,31 +802,31 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7cffe4bfd71fa93d626a4a0761dc02083eda97bfc757feafdc168a9b24fbda`  
-		Last Modified: Mon, 24 Jul 2017 20:19:34 GMT  
-		Size: 19.3 MB (19299347 bytes)  
+	-	`sha256:16028f10c92b79d2ae86fd227b27e9167090591c94b339029ae7baa5f3a80af4`  
+		Last Modified: Tue, 29 Aug 2017 06:17:44 GMT  
+		Size: 19.3 MB (19304387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:450f5ea3e7eafb6df380c997fa891c13693af5ef46eb7a8ac6c54b58d00fecbb`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
+	-	`sha256:227716d498db5e48d3789ab1b4fc374eeee40d731453968428687f638ec331e9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:37 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1dca9769b8b2f680ff0ed0de230c1d8984715ea8608e8a7df08b44a982f1fb3`  
-		Last Modified: Mon, 24 Jul 2017 20:19:30 GMT  
-		Size: 1.7 MB (1660019 bytes)  
+	-	`sha256:c4b632f08aeeaa6abba1338ceb634b3854725985cbcb4c57aace219595e01252`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 1.7 MB (1660201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.6.2`
 
 ```console
-$ docker pull python@sha256:81a1ab6955f8a17045fb4c2866b21c91445837507e86d489b03744557e6ed209
+$ docker pull python@sha256:466a3245173ecf6afed2ea7ba9c5c1c02592334aa374280bd69f9e95745dce03
 ```
 
 -	Platforms:
@@ -836,9 +836,9 @@ $ docker pull python@sha256:81a1ab6955f8a17045fb4c2866b21c91445837507e86d489b037
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.8 MB (270810884 bytes)**  
+-	Total Size: **273.6 MB (273644287 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:968120d8cbe8c99ab47504ffeb49e16ce3b773d14ba4eb78c7a5eca6ad34e00c`
+-	Image ID: `sha256:6b531d93e9f636df1d9b136ed8b307ae189a855da2c637f32b1cb8db8bb77e2f`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -852,27 +852,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:58 GMT
 ENV PYTHON_VERSION=3.6.2
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:05 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:06 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:06 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 19:48:30 GMT
+# Tue, 29 Aug 2017 05:53:11 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 19:48:30 GMT
+# Tue, 29 Aug 2017 05:53:11 GMT
 CMD ["python3"]
 ```
 
@@ -889,31 +889,31 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7cffe4bfd71fa93d626a4a0761dc02083eda97bfc757feafdc168a9b24fbda`  
-		Last Modified: Mon, 24 Jul 2017 20:19:34 GMT  
-		Size: 19.3 MB (19299347 bytes)  
+	-	`sha256:16028f10c92b79d2ae86fd227b27e9167090591c94b339029ae7baa5f3a80af4`  
+		Last Modified: Tue, 29 Aug 2017 06:17:44 GMT  
+		Size: 19.3 MB (19304387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:450f5ea3e7eafb6df380c997fa891c13693af5ef46eb7a8ac6c54b58d00fecbb`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
+	-	`sha256:227716d498db5e48d3789ab1b4fc374eeee40d731453968428687f638ec331e9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:37 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1dca9769b8b2f680ff0ed0de230c1d8984715ea8608e8a7df08b44a982f1fb3`  
-		Last Modified: Mon, 24 Jul 2017 20:19:30 GMT  
-		Size: 1.7 MB (1660019 bytes)  
+	-	`sha256:c4b632f08aeeaa6abba1338ceb634b3854725985cbcb4c57aace219595e01252`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 1.7 MB (1660201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.6`
 
 ```console
-$ docker pull python@sha256:81a1ab6955f8a17045fb4c2866b21c91445837507e86d489b03744557e6ed209
+$ docker pull python@sha256:466a3245173ecf6afed2ea7ba9c5c1c02592334aa374280bd69f9e95745dce03
 ```
 
 -	Platforms:
@@ -923,9 +923,9 @@ $ docker pull python@sha256:81a1ab6955f8a17045fb4c2866b21c91445837507e86d489b037
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.8 MB (270810884 bytes)**  
+-	Total Size: **273.6 MB (273644287 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:968120d8cbe8c99ab47504ffeb49e16ce3b773d14ba4eb78c7a5eca6ad34e00c`
+-	Image ID: `sha256:6b531d93e9f636df1d9b136ed8b307ae189a855da2c637f32b1cb8db8bb77e2f`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -939,27 +939,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:58 GMT
 ENV PYTHON_VERSION=3.6.2
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:05 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:06 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:06 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 19:48:30 GMT
+# Tue, 29 Aug 2017 05:53:11 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 19:48:30 GMT
+# Tue, 29 Aug 2017 05:53:11 GMT
 CMD ["python3"]
 ```
 
@@ -976,31 +976,31 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7cffe4bfd71fa93d626a4a0761dc02083eda97bfc757feafdc168a9b24fbda`  
-		Last Modified: Mon, 24 Jul 2017 20:19:34 GMT  
-		Size: 19.3 MB (19299347 bytes)  
+	-	`sha256:16028f10c92b79d2ae86fd227b27e9167090591c94b339029ae7baa5f3a80af4`  
+		Last Modified: Tue, 29 Aug 2017 06:17:44 GMT  
+		Size: 19.3 MB (19304387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:450f5ea3e7eafb6df380c997fa891c13693af5ef46eb7a8ac6c54b58d00fecbb`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
+	-	`sha256:227716d498db5e48d3789ab1b4fc374eeee40d731453968428687f638ec331e9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:37 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1dca9769b8b2f680ff0ed0de230c1d8984715ea8608e8a7df08b44a982f1fb3`  
-		Last Modified: Mon, 24 Jul 2017 20:19:30 GMT  
-		Size: 1.7 MB (1660019 bytes)  
+	-	`sha256:c4b632f08aeeaa6abba1338ceb634b3854725985cbcb4c57aace219595e01252`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 1.7 MB (1660201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3`
 
 ```console
-$ docker pull python@sha256:81a1ab6955f8a17045fb4c2866b21c91445837507e86d489b03744557e6ed209
+$ docker pull python@sha256:466a3245173ecf6afed2ea7ba9c5c1c02592334aa374280bd69f9e95745dce03
 ```
 
 -	Platforms:
@@ -1010,9 +1010,9 @@ $ docker pull python@sha256:81a1ab6955f8a17045fb4c2866b21c91445837507e86d489b037
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.8 MB (270810884 bytes)**  
+-	Total Size: **273.6 MB (273644287 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:968120d8cbe8c99ab47504ffeb49e16ce3b773d14ba4eb78c7a5eca6ad34e00c`
+-	Image ID: `sha256:6b531d93e9f636df1d9b136ed8b307ae189a855da2c637f32b1cb8db8bb77e2f`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -1026,27 +1026,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:58 GMT
 ENV PYTHON_VERSION=3.6.2
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:05 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:06 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:06 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 19:48:30 GMT
+# Tue, 29 Aug 2017 05:53:11 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 19:48:30 GMT
+# Tue, 29 Aug 2017 05:53:11 GMT
 CMD ["python3"]
 ```
 
@@ -1063,25 +1063,25 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7cffe4bfd71fa93d626a4a0761dc02083eda97bfc757feafdc168a9b24fbda`  
-		Last Modified: Mon, 24 Jul 2017 20:19:34 GMT  
-		Size: 19.3 MB (19299347 bytes)  
+	-	`sha256:16028f10c92b79d2ae86fd227b27e9167090591c94b339029ae7baa5f3a80af4`  
+		Last Modified: Tue, 29 Aug 2017 06:17:44 GMT  
+		Size: 19.3 MB (19304387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:450f5ea3e7eafb6df380c997fa891c13693af5ef46eb7a8ac6c54b58d00fecbb`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
+	-	`sha256:227716d498db5e48d3789ab1b4fc374eeee40d731453968428687f638ec331e9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:37 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1dca9769b8b2f680ff0ed0de230c1d8984715ea8608e8a7df08b44a982f1fb3`  
-		Last Modified: Mon, 24 Jul 2017 20:19:30 GMT  
-		Size: 1.7 MB (1660019 bytes)  
+	-	`sha256:c4b632f08aeeaa6abba1338ceb634b3854725985cbcb4c57aace219595e01252`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 1.7 MB (1660201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:latest`
@@ -1442,7 +1442,7 @@ CMD ["python3"]
 ## `python:3.6.2-onbuild`
 
 ```console
-$ docker pull python@sha256:abde17e1cc488a95d6634793e7a3d6471a3be040e576ace23950b43ca8305137
+$ docker pull python@sha256:e04562542318ea8738a21aaf5fb463de96c01d7deac7c9f5e0230f0cf76d86ae
 ```
 
 -	Platforms:
@@ -1452,9 +1452,9 @@ $ docker pull python@sha256:abde17e1cc488a95d6634793e7a3d6471a3be040e576ace23950
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.8 MB (270811010 bytes)**  
+-	Total Size: **273.6 MB (273644413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:16123102e95c18ffc4115178970c14fea214235ef163fb8f64b03cfbe2111042`
+-	Image ID: `sha256:0975b6d19c2adcf0605a0b749e6b3b000bb60faba36aa014b423424ccdd9f87c`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -1468,37 +1468,37 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:58 GMT
 ENV PYTHON_VERSION=3.6.2
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:05 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:06 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:06 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 19:48:30 GMT
+# Tue, 29 Aug 2017 05:53:11 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 19:48:30 GMT
+# Tue, 29 Aug 2017 05:53:11 GMT
 CMD ["python3"]
-# Mon, 24 Jul 2017 19:51:41 GMT
+# Tue, 29 Aug 2017 05:58:17 GMT
 RUN mkdir -p /usr/src/app
-# Mon, 24 Jul 2017 19:51:42 GMT
+# Tue, 29 Aug 2017 05:58:18 GMT
 WORKDIR /usr/src/app
-# Mon, 24 Jul 2017 19:51:42 GMT
+# Tue, 29 Aug 2017 05:58:18 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Mon, 24 Jul 2017 19:51:42 GMT
+# Tue, 29 Aug 2017 05:58:22 GMT
 ONBUILD RUN pip install --no-cache-dir -r requirements.txt
-# Mon, 24 Jul 2017 19:51:43 GMT
+# Tue, 29 Aug 2017 05:58:23 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -1515,35 +1515,35 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7cffe4bfd71fa93d626a4a0761dc02083eda97bfc757feafdc168a9b24fbda`  
-		Last Modified: Mon, 24 Jul 2017 20:19:34 GMT  
-		Size: 19.3 MB (19299347 bytes)  
+	-	`sha256:16028f10c92b79d2ae86fd227b27e9167090591c94b339029ae7baa5f3a80af4`  
+		Last Modified: Tue, 29 Aug 2017 06:17:44 GMT  
+		Size: 19.3 MB (19304387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:450f5ea3e7eafb6df380c997fa891c13693af5ef46eb7a8ac6c54b58d00fecbb`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
+	-	`sha256:227716d498db5e48d3789ab1b4fc374eeee40d731453968428687f638ec331e9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:37 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1dca9769b8b2f680ff0ed0de230c1d8984715ea8608e8a7df08b44a982f1fb3`  
-		Last Modified: Mon, 24 Jul 2017 20:19:30 GMT  
-		Size: 1.7 MB (1660019 bytes)  
+	-	`sha256:c4b632f08aeeaa6abba1338ceb634b3854725985cbcb4c57aace219595e01252`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 1.7 MB (1660201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9c1a43fc985034736955977789fab095bab2a61c200c5e8d2b24f39269b9658`  
-		Last Modified: Mon, 24 Jul 2017 20:20:37 GMT  
+	-	`sha256:8720d831134d4ddff0808bc43d20b30ec67bbda1ba05d01fe7ed769ea960ce94`  
+		Last Modified: Tue, 29 Aug 2017 06:18:55 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.6-onbuild`
 
 ```console
-$ docker pull python@sha256:abde17e1cc488a95d6634793e7a3d6471a3be040e576ace23950b43ca8305137
+$ docker pull python@sha256:e04562542318ea8738a21aaf5fb463de96c01d7deac7c9f5e0230f0cf76d86ae
 ```
 
 -	Platforms:
@@ -1553,9 +1553,9 @@ $ docker pull python@sha256:abde17e1cc488a95d6634793e7a3d6471a3be040e576ace23950
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.8 MB (270811010 bytes)**  
+-	Total Size: **273.6 MB (273644413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:16123102e95c18ffc4115178970c14fea214235ef163fb8f64b03cfbe2111042`
+-	Image ID: `sha256:0975b6d19c2adcf0605a0b749e6b3b000bb60faba36aa014b423424ccdd9f87c`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -1569,37 +1569,37 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:58 GMT
 ENV PYTHON_VERSION=3.6.2
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:05 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:06 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:06 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 19:48:30 GMT
+# Tue, 29 Aug 2017 05:53:11 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 19:48:30 GMT
+# Tue, 29 Aug 2017 05:53:11 GMT
 CMD ["python3"]
-# Mon, 24 Jul 2017 19:51:41 GMT
+# Tue, 29 Aug 2017 05:58:17 GMT
 RUN mkdir -p /usr/src/app
-# Mon, 24 Jul 2017 19:51:42 GMT
+# Tue, 29 Aug 2017 05:58:18 GMT
 WORKDIR /usr/src/app
-# Mon, 24 Jul 2017 19:51:42 GMT
+# Tue, 29 Aug 2017 05:58:18 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Mon, 24 Jul 2017 19:51:42 GMT
+# Tue, 29 Aug 2017 05:58:22 GMT
 ONBUILD RUN pip install --no-cache-dir -r requirements.txt
-# Mon, 24 Jul 2017 19:51:43 GMT
+# Tue, 29 Aug 2017 05:58:23 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -1616,35 +1616,35 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7cffe4bfd71fa93d626a4a0761dc02083eda97bfc757feafdc168a9b24fbda`  
-		Last Modified: Mon, 24 Jul 2017 20:19:34 GMT  
-		Size: 19.3 MB (19299347 bytes)  
+	-	`sha256:16028f10c92b79d2ae86fd227b27e9167090591c94b339029ae7baa5f3a80af4`  
+		Last Modified: Tue, 29 Aug 2017 06:17:44 GMT  
+		Size: 19.3 MB (19304387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:450f5ea3e7eafb6df380c997fa891c13693af5ef46eb7a8ac6c54b58d00fecbb`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
+	-	`sha256:227716d498db5e48d3789ab1b4fc374eeee40d731453968428687f638ec331e9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:37 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1dca9769b8b2f680ff0ed0de230c1d8984715ea8608e8a7df08b44a982f1fb3`  
-		Last Modified: Mon, 24 Jul 2017 20:19:30 GMT  
-		Size: 1.7 MB (1660019 bytes)  
+	-	`sha256:c4b632f08aeeaa6abba1338ceb634b3854725985cbcb4c57aace219595e01252`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 1.7 MB (1660201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9c1a43fc985034736955977789fab095bab2a61c200c5e8d2b24f39269b9658`  
-		Last Modified: Mon, 24 Jul 2017 20:20:37 GMT  
+	-	`sha256:8720d831134d4ddff0808bc43d20b30ec67bbda1ba05d01fe7ed769ea960ce94`  
+		Last Modified: Tue, 29 Aug 2017 06:18:55 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3-onbuild`
 
 ```console
-$ docker pull python@sha256:abde17e1cc488a95d6634793e7a3d6471a3be040e576ace23950b43ca8305137
+$ docker pull python@sha256:e04562542318ea8738a21aaf5fb463de96c01d7deac7c9f5e0230f0cf76d86ae
 ```
 
 -	Platforms:
@@ -1654,9 +1654,9 @@ $ docker pull python@sha256:abde17e1cc488a95d6634793e7a3d6471a3be040e576ace23950
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.8 MB (270811010 bytes)**  
+-	Total Size: **273.6 MB (273644413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:16123102e95c18ffc4115178970c14fea214235ef163fb8f64b03cfbe2111042`
+-	Image ID: `sha256:0975b6d19c2adcf0605a0b749e6b3b000bb60faba36aa014b423424ccdd9f87c`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -1670,37 +1670,37 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:58 GMT
 ENV PYTHON_VERSION=3.6.2
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:05 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:06 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:06 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 19:48:30 GMT
+# Tue, 29 Aug 2017 05:53:11 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 19:48:30 GMT
+# Tue, 29 Aug 2017 05:53:11 GMT
 CMD ["python3"]
-# Mon, 24 Jul 2017 19:51:41 GMT
+# Tue, 29 Aug 2017 05:58:17 GMT
 RUN mkdir -p /usr/src/app
-# Mon, 24 Jul 2017 19:51:42 GMT
+# Tue, 29 Aug 2017 05:58:18 GMT
 WORKDIR /usr/src/app
-# Mon, 24 Jul 2017 19:51:42 GMT
+# Tue, 29 Aug 2017 05:58:18 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Mon, 24 Jul 2017 19:51:42 GMT
+# Tue, 29 Aug 2017 05:58:22 GMT
 ONBUILD RUN pip install --no-cache-dir -r requirements.txt
-# Mon, 24 Jul 2017 19:51:43 GMT
+# Tue, 29 Aug 2017 05:58:23 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -1717,35 +1717,35 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7cffe4bfd71fa93d626a4a0761dc02083eda97bfc757feafdc168a9b24fbda`  
-		Last Modified: Mon, 24 Jul 2017 20:19:34 GMT  
-		Size: 19.3 MB (19299347 bytes)  
+	-	`sha256:16028f10c92b79d2ae86fd227b27e9167090591c94b339029ae7baa5f3a80af4`  
+		Last Modified: Tue, 29 Aug 2017 06:17:44 GMT  
+		Size: 19.3 MB (19304387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:450f5ea3e7eafb6df380c997fa891c13693af5ef46eb7a8ac6c54b58d00fecbb`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
+	-	`sha256:227716d498db5e48d3789ab1b4fc374eeee40d731453968428687f638ec331e9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:37 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1dca9769b8b2f680ff0ed0de230c1d8984715ea8608e8a7df08b44a982f1fb3`  
-		Last Modified: Mon, 24 Jul 2017 20:19:30 GMT  
-		Size: 1.7 MB (1660019 bytes)  
+	-	`sha256:c4b632f08aeeaa6abba1338ceb634b3854725985cbcb4c57aace219595e01252`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 1.7 MB (1660201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9c1a43fc985034736955977789fab095bab2a61c200c5e8d2b24f39269b9658`  
-		Last Modified: Mon, 24 Jul 2017 20:20:37 GMT  
+	-	`sha256:8720d831134d4ddff0808bc43d20b30ec67bbda1ba05d01fe7ed769ea960ce94`  
+		Last Modified: Tue, 29 Aug 2017 06:18:55 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:onbuild`
 
 ```console
-$ docker pull python@sha256:abde17e1cc488a95d6634793e7a3d6471a3be040e576ace23950b43ca8305137
+$ docker pull python@sha256:e04562542318ea8738a21aaf5fb463de96c01d7deac7c9f5e0230f0cf76d86ae
 ```
 
 -	Platforms:
@@ -1755,9 +1755,9 @@ $ docker pull python@sha256:abde17e1cc488a95d6634793e7a3d6471a3be040e576ace23950
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.8 MB (270811010 bytes)**  
+-	Total Size: **273.6 MB (273644413 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:16123102e95c18ffc4115178970c14fea214235ef163fb8f64b03cfbe2111042`
+-	Image ID: `sha256:0975b6d19c2adcf0605a0b749e6b3b000bb60faba36aa014b423424ccdd9f87c`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -1771,37 +1771,37 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:58 GMT
 ENV PYTHON_VERSION=3.6.2
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:05 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:06 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 24 Jul 2017 19:48:25 GMT
+# Tue, 29 Aug 2017 05:53:06 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 19:48:30 GMT
+# Tue, 29 Aug 2017 05:53:11 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 19:48:30 GMT
+# Tue, 29 Aug 2017 05:53:11 GMT
 CMD ["python3"]
-# Mon, 24 Jul 2017 19:51:41 GMT
+# Tue, 29 Aug 2017 05:58:17 GMT
 RUN mkdir -p /usr/src/app
-# Mon, 24 Jul 2017 19:51:42 GMT
+# Tue, 29 Aug 2017 05:58:18 GMT
 WORKDIR /usr/src/app
-# Mon, 24 Jul 2017 19:51:42 GMT
+# Tue, 29 Aug 2017 05:58:18 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Mon, 24 Jul 2017 19:51:42 GMT
+# Tue, 29 Aug 2017 05:58:22 GMT
 ONBUILD RUN pip install --no-cache-dir -r requirements.txt
-# Mon, 24 Jul 2017 19:51:43 GMT
+# Tue, 29 Aug 2017 05:58:23 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -1818,28 +1818,28 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0d7cffe4bfd71fa93d626a4a0761dc02083eda97bfc757feafdc168a9b24fbda`  
-		Last Modified: Mon, 24 Jul 2017 20:19:34 GMT  
-		Size: 19.3 MB (19299347 bytes)  
+	-	`sha256:16028f10c92b79d2ae86fd227b27e9167090591c94b339029ae7baa5f3a80af4`  
+		Last Modified: Tue, 29 Aug 2017 06:17:44 GMT  
+		Size: 19.3 MB (19304387 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:450f5ea3e7eafb6df380c997fa891c13693af5ef46eb7a8ac6c54b58d00fecbb`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
+	-	`sha256:227716d498db5e48d3789ab1b4fc374eeee40d731453968428687f638ec331e9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:37 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b1dca9769b8b2f680ff0ed0de230c1d8984715ea8608e8a7df08b44a982f1fb3`  
-		Last Modified: Mon, 24 Jul 2017 20:19:30 GMT  
-		Size: 1.7 MB (1660019 bytes)  
+	-	`sha256:c4b632f08aeeaa6abba1338ceb634b3854725985cbcb4c57aace219595e01252`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 1.7 MB (1660201 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e9c1a43fc985034736955977789fab095bab2a61c200c5e8d2b24f39269b9658`  
-		Last Modified: Mon, 24 Jul 2017 20:20:37 GMT  
+	-	`sha256:8720d831134d4ddff0808bc43d20b30ec67bbda1ba05d01fe7ed769ea960ce94`  
+		Last Modified: Tue, 29 Aug 2017 06:18:55 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2954,7 +2954,7 @@ CMD ["python"]
 ## `python:3.5.4-jessie`
 
 ```console
-$ docker pull python@sha256:dab79666dd592b82aafd1e0d97c0ac0bbddcb77b5780680a28bc2707b72d244b
+$ docker pull python@sha256:eaa8c3675d93d1a74a87aa8c75a465ace85d301fe8f808ee8876f811c8d931ac
 ```
 
 -	Platforms:
@@ -2964,9 +2964,9 @@ $ docker pull python@sha256:dab79666dd592b82aafd1e0d97c0ac0bbddcb77b5780680a28bc
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.5 MB (270482249 bytes)**  
+-	Total Size: **273.3 MB (273315184 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42a18ddd0812424e5861b43d47cd97f30059e979219cb9b38ef306024e26391a`
+-	Image ID: `sha256:68c3c419e0d7a5271458559495c7946222a0d43d345d9e1fd525231bd5d24ac9`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -2980,27 +2980,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:51:46 GMT
+# Tue, 29 Aug 2017 05:58:29 GMT
 ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
-# Wed, 09 Aug 2017 20:56:04 GMT
+# Tue, 29 Aug 2017 05:58:29 GMT
 ENV PYTHON_VERSION=3.5.4
-# Wed, 09 Aug 2017 20:58:09 GMT
+# Tue, 29 Aug 2017 06:00:26 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Wed, 09 Aug 2017 20:58:31 GMT
+# Tue, 29 Aug 2017 06:00:30 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Wed, 09 Aug 2017 20:58:31 GMT
+# Tue, 29 Aug 2017 06:00:30 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Wed, 09 Aug 2017 20:58:36 GMT
+# Tue, 29 Aug 2017 06:00:34 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 09 Aug 2017 20:58:39 GMT
+# Tue, 29 Aug 2017 06:00:35 GMT
 CMD ["python3"]
 ```
 
@@ -3017,31 +3017,31 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5e6dddd2c237a641794508b45676b572a602dc682b15bb514b16ab06317a7a6`  
-		Last Modified: Wed, 09 Aug 2017 21:49:17 GMT  
-		Size: 19.0 MB (18970259 bytes)  
+	-	`sha256:dcee3e99175ee71b43c16133c1be168a49e5b6589e4967215271e1095505553d`  
+		Last Modified: Tue, 29 Aug 2017 06:19:38 GMT  
+		Size: 19.0 MB (18975122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d77ca9353ac49951704c4eea37fef52a41be7dcd0a6a6dbac7ca6a267ef5a32e`  
-		Last Modified: Wed, 09 Aug 2017 21:49:12 GMT  
+	-	`sha256:12a73211fc7ad77e8d49fc921484e6c7f191e7fb756997f8055c99bad57cb508`  
+		Last Modified: Tue, 29 Aug 2017 06:19:31 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6adf7de7a4bdaa8f5696b89f15358b7aab728755397a0d81c3bf28fbcfe49673`  
-		Last Modified: Wed, 09 Aug 2017 21:49:12 GMT  
-		Size: 1.7 MB (1660472 bytes)  
+	-	`sha256:b06e179690ac7dc803c0b7fb6e602f1cf6407b4ad996ed235b3965f16bbb2bce`  
+		Last Modified: Tue, 29 Aug 2017 06:19:33 GMT  
+		Size: 1.7 MB (1660363 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.5-jessie`
 
 ```console
-$ docker pull python@sha256:dab79666dd592b82aafd1e0d97c0ac0bbddcb77b5780680a28bc2707b72d244b
+$ docker pull python@sha256:eaa8c3675d93d1a74a87aa8c75a465ace85d301fe8f808ee8876f811c8d931ac
 ```
 
 -	Platforms:
@@ -3051,9 +3051,9 @@ $ docker pull python@sha256:dab79666dd592b82aafd1e0d97c0ac0bbddcb77b5780680a28bc
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.5 MB (270482249 bytes)**  
+-	Total Size: **273.3 MB (273315184 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42a18ddd0812424e5861b43d47cd97f30059e979219cb9b38ef306024e26391a`
+-	Image ID: `sha256:68c3c419e0d7a5271458559495c7946222a0d43d345d9e1fd525231bd5d24ac9`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -3067,27 +3067,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:51:46 GMT
+# Tue, 29 Aug 2017 05:58:29 GMT
 ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
-# Wed, 09 Aug 2017 20:56:04 GMT
+# Tue, 29 Aug 2017 05:58:29 GMT
 ENV PYTHON_VERSION=3.5.4
-# Wed, 09 Aug 2017 20:58:09 GMT
+# Tue, 29 Aug 2017 06:00:26 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Wed, 09 Aug 2017 20:58:31 GMT
+# Tue, 29 Aug 2017 06:00:30 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Wed, 09 Aug 2017 20:58:31 GMT
+# Tue, 29 Aug 2017 06:00:30 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Wed, 09 Aug 2017 20:58:36 GMT
+# Tue, 29 Aug 2017 06:00:34 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 09 Aug 2017 20:58:39 GMT
+# Tue, 29 Aug 2017 06:00:35 GMT
 CMD ["python3"]
 ```
 
@@ -3104,31 +3104,31 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5e6dddd2c237a641794508b45676b572a602dc682b15bb514b16ab06317a7a6`  
-		Last Modified: Wed, 09 Aug 2017 21:49:17 GMT  
-		Size: 19.0 MB (18970259 bytes)  
+	-	`sha256:dcee3e99175ee71b43c16133c1be168a49e5b6589e4967215271e1095505553d`  
+		Last Modified: Tue, 29 Aug 2017 06:19:38 GMT  
+		Size: 19.0 MB (18975122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d77ca9353ac49951704c4eea37fef52a41be7dcd0a6a6dbac7ca6a267ef5a32e`  
-		Last Modified: Wed, 09 Aug 2017 21:49:12 GMT  
+	-	`sha256:12a73211fc7ad77e8d49fc921484e6c7f191e7fb756997f8055c99bad57cb508`  
+		Last Modified: Tue, 29 Aug 2017 06:19:31 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6adf7de7a4bdaa8f5696b89f15358b7aab728755397a0d81c3bf28fbcfe49673`  
-		Last Modified: Wed, 09 Aug 2017 21:49:12 GMT  
-		Size: 1.7 MB (1660472 bytes)  
+	-	`sha256:b06e179690ac7dc803c0b7fb6e602f1cf6407b4ad996ed235b3965f16bbb2bce`  
+		Last Modified: Tue, 29 Aug 2017 06:19:33 GMT  
+		Size: 1.7 MB (1660363 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.5.4`
 
 ```console
-$ docker pull python@sha256:dab79666dd592b82aafd1e0d97c0ac0bbddcb77b5780680a28bc2707b72d244b
+$ docker pull python@sha256:eaa8c3675d93d1a74a87aa8c75a465ace85d301fe8f808ee8876f811c8d931ac
 ```
 
 -	Platforms:
@@ -3138,9 +3138,9 @@ $ docker pull python@sha256:dab79666dd592b82aafd1e0d97c0ac0bbddcb77b5780680a28bc
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.5 MB (270482249 bytes)**  
+-	Total Size: **273.3 MB (273315184 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42a18ddd0812424e5861b43d47cd97f30059e979219cb9b38ef306024e26391a`
+-	Image ID: `sha256:68c3c419e0d7a5271458559495c7946222a0d43d345d9e1fd525231bd5d24ac9`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -3154,27 +3154,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:51:46 GMT
+# Tue, 29 Aug 2017 05:58:29 GMT
 ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
-# Wed, 09 Aug 2017 20:56:04 GMT
+# Tue, 29 Aug 2017 05:58:29 GMT
 ENV PYTHON_VERSION=3.5.4
-# Wed, 09 Aug 2017 20:58:09 GMT
+# Tue, 29 Aug 2017 06:00:26 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Wed, 09 Aug 2017 20:58:31 GMT
+# Tue, 29 Aug 2017 06:00:30 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Wed, 09 Aug 2017 20:58:31 GMT
+# Tue, 29 Aug 2017 06:00:30 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Wed, 09 Aug 2017 20:58:36 GMT
+# Tue, 29 Aug 2017 06:00:34 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 09 Aug 2017 20:58:39 GMT
+# Tue, 29 Aug 2017 06:00:35 GMT
 CMD ["python3"]
 ```
 
@@ -3191,31 +3191,31 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5e6dddd2c237a641794508b45676b572a602dc682b15bb514b16ab06317a7a6`  
-		Last Modified: Wed, 09 Aug 2017 21:49:17 GMT  
-		Size: 19.0 MB (18970259 bytes)  
+	-	`sha256:dcee3e99175ee71b43c16133c1be168a49e5b6589e4967215271e1095505553d`  
+		Last Modified: Tue, 29 Aug 2017 06:19:38 GMT  
+		Size: 19.0 MB (18975122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d77ca9353ac49951704c4eea37fef52a41be7dcd0a6a6dbac7ca6a267ef5a32e`  
-		Last Modified: Wed, 09 Aug 2017 21:49:12 GMT  
+	-	`sha256:12a73211fc7ad77e8d49fc921484e6c7f191e7fb756997f8055c99bad57cb508`  
+		Last Modified: Tue, 29 Aug 2017 06:19:31 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6adf7de7a4bdaa8f5696b89f15358b7aab728755397a0d81c3bf28fbcfe49673`  
-		Last Modified: Wed, 09 Aug 2017 21:49:12 GMT  
-		Size: 1.7 MB (1660472 bytes)  
+	-	`sha256:b06e179690ac7dc803c0b7fb6e602f1cf6407b4ad996ed235b3965f16bbb2bce`  
+		Last Modified: Tue, 29 Aug 2017 06:19:33 GMT  
+		Size: 1.7 MB (1660363 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.5`
 
 ```console
-$ docker pull python@sha256:dab79666dd592b82aafd1e0d97c0ac0bbddcb77b5780680a28bc2707b72d244b
+$ docker pull python@sha256:eaa8c3675d93d1a74a87aa8c75a465ace85d301fe8f808ee8876f811c8d931ac
 ```
 
 -	Platforms:
@@ -3225,9 +3225,9 @@ $ docker pull python@sha256:dab79666dd592b82aafd1e0d97c0ac0bbddcb77b5780680a28bc
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.5 MB (270482249 bytes)**  
+-	Total Size: **273.3 MB (273315184 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42a18ddd0812424e5861b43d47cd97f30059e979219cb9b38ef306024e26391a`
+-	Image ID: `sha256:68c3c419e0d7a5271458559495c7946222a0d43d345d9e1fd525231bd5d24ac9`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -3241,27 +3241,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:51:46 GMT
+# Tue, 29 Aug 2017 05:58:29 GMT
 ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
-# Wed, 09 Aug 2017 20:56:04 GMT
+# Tue, 29 Aug 2017 05:58:29 GMT
 ENV PYTHON_VERSION=3.5.4
-# Wed, 09 Aug 2017 20:58:09 GMT
+# Tue, 29 Aug 2017 06:00:26 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Wed, 09 Aug 2017 20:58:31 GMT
+# Tue, 29 Aug 2017 06:00:30 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Wed, 09 Aug 2017 20:58:31 GMT
+# Tue, 29 Aug 2017 06:00:30 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Wed, 09 Aug 2017 20:58:36 GMT
+# Tue, 29 Aug 2017 06:00:34 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 09 Aug 2017 20:58:39 GMT
+# Tue, 29 Aug 2017 06:00:35 GMT
 CMD ["python3"]
 ```
 
@@ -3278,25 +3278,25 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5e6dddd2c237a641794508b45676b572a602dc682b15bb514b16ab06317a7a6`  
-		Last Modified: Wed, 09 Aug 2017 21:49:17 GMT  
-		Size: 19.0 MB (18970259 bytes)  
+	-	`sha256:dcee3e99175ee71b43c16133c1be168a49e5b6589e4967215271e1095505553d`  
+		Last Modified: Tue, 29 Aug 2017 06:19:38 GMT  
+		Size: 19.0 MB (18975122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d77ca9353ac49951704c4eea37fef52a41be7dcd0a6a6dbac7ca6a267ef5a32e`  
-		Last Modified: Wed, 09 Aug 2017 21:49:12 GMT  
+	-	`sha256:12a73211fc7ad77e8d49fc921484e6c7f191e7fb756997f8055c99bad57cb508`  
+		Last Modified: Tue, 29 Aug 2017 06:19:31 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6adf7de7a4bdaa8f5696b89f15358b7aab728755397a0d81c3bf28fbcfe49673`  
-		Last Modified: Wed, 09 Aug 2017 21:49:12 GMT  
-		Size: 1.7 MB (1660472 bytes)  
+	-	`sha256:b06e179690ac7dc803c0b7fb6e602f1cf6407b4ad996ed235b3965f16bbb2bce`  
+		Last Modified: Tue, 29 Aug 2017 06:19:33 GMT  
+		Size: 1.7 MB (1660363 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.5.4-slim`
@@ -3436,7 +3436,7 @@ CMD ["python3"]
 ## `python:3.5.3-onbuild`
 
 ```console
-$ docker pull python@sha256:ada3e58010afaaf64277c01fab301fb19eb80f0b4fd366a1bfac6410fe891117
+$ docker pull python@sha256:a839117228b2de56316fd57e4da60fc4bac4f35be4a7a9dcfd99a30886bc3ecd
 ```
 
 -	Platforms:
@@ -3446,9 +3446,9 @@ $ docker pull python@sha256:ada3e58010afaaf64277c01fab301fb19eb80f0b4fd366a1bfac
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.5 MB (270482375 bytes)**  
+-	Total Size: **273.3 MB (273315310 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:925576a95091281db49c5c3b88637374c81f3cd7608d08f31b0973bdf2023be5`
+-	Image ID: `sha256:652c7d72a1123c8a7e2ce4981b90176ccf86c167dca1bdb76ac5c8ebe8420613`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -3462,37 +3462,37 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:51:46 GMT
+# Tue, 29 Aug 2017 05:58:29 GMT
 ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
-# Wed, 09 Aug 2017 20:56:04 GMT
+# Tue, 29 Aug 2017 05:58:29 GMT
 ENV PYTHON_VERSION=3.5.4
-# Wed, 09 Aug 2017 20:58:09 GMT
+# Tue, 29 Aug 2017 06:00:26 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Wed, 09 Aug 2017 20:58:31 GMT
+# Tue, 29 Aug 2017 06:00:30 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Wed, 09 Aug 2017 20:58:31 GMT
+# Tue, 29 Aug 2017 06:00:30 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Wed, 09 Aug 2017 20:58:36 GMT
+# Tue, 29 Aug 2017 06:00:34 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 09 Aug 2017 20:58:39 GMT
+# Tue, 29 Aug 2017 06:00:35 GMT
 CMD ["python3"]
-# Wed, 09 Aug 2017 21:03:19 GMT
+# Tue, 29 Aug 2017 06:00:44 GMT
 RUN mkdir -p /usr/src/app
-# Wed, 09 Aug 2017 21:03:20 GMT
+# Tue, 29 Aug 2017 06:00:45 GMT
 WORKDIR /usr/src/app
-# Wed, 09 Aug 2017 21:03:20 GMT
+# Tue, 29 Aug 2017 06:00:45 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Wed, 09 Aug 2017 21:03:20 GMT
+# Tue, 29 Aug 2017 06:00:45 GMT
 ONBUILD RUN pip install --no-cache-dir -r requirements.txt
-# Wed, 09 Aug 2017 21:03:24 GMT
+# Tue, 29 Aug 2017 06:00:46 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -3509,35 +3509,35 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5e6dddd2c237a641794508b45676b572a602dc682b15bb514b16ab06317a7a6`  
-		Last Modified: Wed, 09 Aug 2017 21:49:17 GMT  
-		Size: 19.0 MB (18970259 bytes)  
+	-	`sha256:dcee3e99175ee71b43c16133c1be168a49e5b6589e4967215271e1095505553d`  
+		Last Modified: Tue, 29 Aug 2017 06:19:38 GMT  
+		Size: 19.0 MB (18975122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d77ca9353ac49951704c4eea37fef52a41be7dcd0a6a6dbac7ca6a267ef5a32e`  
-		Last Modified: Wed, 09 Aug 2017 21:49:12 GMT  
+	-	`sha256:12a73211fc7ad77e8d49fc921484e6c7f191e7fb756997f8055c99bad57cb508`  
+		Last Modified: Tue, 29 Aug 2017 06:19:31 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6adf7de7a4bdaa8f5696b89f15358b7aab728755397a0d81c3bf28fbcfe49673`  
-		Last Modified: Wed, 09 Aug 2017 21:49:12 GMT  
-		Size: 1.7 MB (1660472 bytes)  
+	-	`sha256:b06e179690ac7dc803c0b7fb6e602f1cf6407b4ad996ed235b3965f16bbb2bce`  
+		Last Modified: Tue, 29 Aug 2017 06:19:33 GMT  
+		Size: 1.7 MB (1660363 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6e358a7efefdd863d1d9077a5b16f8ba205de88e4e26c121a6af4b097e68fbb`  
-		Last Modified: Wed, 09 Aug 2017 21:52:00 GMT  
+	-	`sha256:bf2e6d39ded1552d043be3bd3d7ae77ed840fb241e07c69c43abfde6cb0320ca`  
+		Last Modified: Tue, 29 Aug 2017 06:20:15 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.5-onbuild`
 
 ```console
-$ docker pull python@sha256:ada3e58010afaaf64277c01fab301fb19eb80f0b4fd366a1bfac6410fe891117
+$ docker pull python@sha256:a839117228b2de56316fd57e4da60fc4bac4f35be4a7a9dcfd99a30886bc3ecd
 ```
 
 -	Platforms:
@@ -3547,9 +3547,9 @@ $ docker pull python@sha256:ada3e58010afaaf64277c01fab301fb19eb80f0b4fd366a1bfac
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.5 MB (270482375 bytes)**  
+-	Total Size: **273.3 MB (273315310 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:925576a95091281db49c5c3b88637374c81f3cd7608d08f31b0973bdf2023be5`
+-	Image ID: `sha256:652c7d72a1123c8a7e2ce4981b90176ccf86c167dca1bdb76ac5c8ebe8420613`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -3563,37 +3563,37 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:51:46 GMT
+# Tue, 29 Aug 2017 05:58:29 GMT
 ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
-# Wed, 09 Aug 2017 20:56:04 GMT
+# Tue, 29 Aug 2017 05:58:29 GMT
 ENV PYTHON_VERSION=3.5.4
-# Wed, 09 Aug 2017 20:58:09 GMT
+# Tue, 29 Aug 2017 06:00:26 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Wed, 09 Aug 2017 20:58:31 GMT
+# Tue, 29 Aug 2017 06:00:30 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Wed, 09 Aug 2017 20:58:31 GMT
+# Tue, 29 Aug 2017 06:00:30 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Wed, 09 Aug 2017 20:58:36 GMT
+# Tue, 29 Aug 2017 06:00:34 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 09 Aug 2017 20:58:39 GMT
+# Tue, 29 Aug 2017 06:00:35 GMT
 CMD ["python3"]
-# Wed, 09 Aug 2017 21:03:19 GMT
+# Tue, 29 Aug 2017 06:00:44 GMT
 RUN mkdir -p /usr/src/app
-# Wed, 09 Aug 2017 21:03:20 GMT
+# Tue, 29 Aug 2017 06:00:45 GMT
 WORKDIR /usr/src/app
-# Wed, 09 Aug 2017 21:03:20 GMT
+# Tue, 29 Aug 2017 06:00:45 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Wed, 09 Aug 2017 21:03:20 GMT
+# Tue, 29 Aug 2017 06:00:45 GMT
 ONBUILD RUN pip install --no-cache-dir -r requirements.txt
-# Wed, 09 Aug 2017 21:03:24 GMT
+# Tue, 29 Aug 2017 06:00:46 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -3610,28 +3610,28 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5e6dddd2c237a641794508b45676b572a602dc682b15bb514b16ab06317a7a6`  
-		Last Modified: Wed, 09 Aug 2017 21:49:17 GMT  
-		Size: 19.0 MB (18970259 bytes)  
+	-	`sha256:dcee3e99175ee71b43c16133c1be168a49e5b6589e4967215271e1095505553d`  
+		Last Modified: Tue, 29 Aug 2017 06:19:38 GMT  
+		Size: 19.0 MB (18975122 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d77ca9353ac49951704c4eea37fef52a41be7dcd0a6a6dbac7ca6a267ef5a32e`  
-		Last Modified: Wed, 09 Aug 2017 21:49:12 GMT  
+	-	`sha256:12a73211fc7ad77e8d49fc921484e6c7f191e7fb756997f8055c99bad57cb508`  
+		Last Modified: Tue, 29 Aug 2017 06:19:31 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6adf7de7a4bdaa8f5696b89f15358b7aab728755397a0d81c3bf28fbcfe49673`  
-		Last Modified: Wed, 09 Aug 2017 21:49:12 GMT  
-		Size: 1.7 MB (1660472 bytes)  
+	-	`sha256:b06e179690ac7dc803c0b7fb6e602f1cf6407b4ad996ed235b3965f16bbb2bce`  
+		Last Modified: Tue, 29 Aug 2017 06:19:33 GMT  
+		Size: 1.7 MB (1660363 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6e358a7efefdd863d1d9077a5b16f8ba205de88e4e26c121a6af4b097e68fbb`  
-		Last Modified: Wed, 09 Aug 2017 21:52:00 GMT  
+	-	`sha256:bf2e6d39ded1552d043be3bd3d7ae77ed840fb241e07c69c43abfde6cb0320ca`  
+		Last Modified: Tue, 29 Aug 2017 06:20:15 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -4058,7 +4058,7 @@ CMD ["python"]
 ## `python:3.4.7-jessie`
 
 ```console
-$ docker pull python@sha256:b307272232be33bce4907b95d37e53edfe895926b65b41b682ebd9c6c8ab5afc
+$ docker pull python@sha256:41593be96244b145d77ecd3450176ad7dbe576771c6a0032cf5ba148d31ad8de
 ```
 
 -	Platforms:
@@ -4068,9 +4068,9 @@ $ docker pull python@sha256:b307272232be33bce4907b95d37e53edfe895926b65b41b682eb
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.1 MB (269068920 bytes)**  
+-	Total Size: **271.9 MB (271901661 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b9a4ca02eb6e3be9a5938e247b6a5437d200e2a612cda1ddeabc5e9e945b2242`
+-	Image ID: `sha256:f58de61affa0d07239e7553bf49c492d6093dc1f9ed9e52e06d714615b1569ed`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -4084,27 +4084,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:51:46 GMT
+# Tue, 29 Aug 2017 05:58:29 GMT
 ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
-# Wed, 09 Aug 2017 21:06:16 GMT
+# Tue, 29 Aug 2017 06:00:51 GMT
 ENV PYTHON_VERSION=3.4.7
-# Wed, 09 Aug 2017 21:08:47 GMT
+# Tue, 29 Aug 2017 06:02:52 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Wed, 09 Aug 2017 21:08:51 GMT
+# Tue, 29 Aug 2017 06:02:52 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Wed, 09 Aug 2017 21:08:51 GMT
+# Tue, 29 Aug 2017 06:02:53 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Wed, 09 Aug 2017 21:08:55 GMT
+# Tue, 29 Aug 2017 06:02:57 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 09 Aug 2017 21:08:57 GMT
+# Tue, 29 Aug 2017 06:02:57 GMT
 CMD ["python3"]
 ```
 
@@ -4121,31 +4121,31 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b61812143603321c0bb93779153be6946f3d93c716afa0e2d85129499c001710`  
-		Last Modified: Wed, 09 Aug 2017 21:53:04 GMT  
-		Size: 17.6 MB (17557187 bytes)  
+	-	`sha256:59cb1cd39ac4f696ffcd575b2c010ebf31ace9ced00c0253a759f7870c0fc744`  
+		Last Modified: Tue, 29 Aug 2017 06:20:40 GMT  
+		Size: 17.6 MB (17561618 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:306435ca07711f2874a731b92ccab3bd8cf22c04b43d436f63f88fef993f774c`  
-		Last Modified: Wed, 09 Aug 2017 21:52:58 GMT  
-		Size: 233.0 B  
+	-	`sha256:70f866f45c41115f111abbf05c2135636d7c5bf69c84bd23601985b8965471b5`  
+		Last Modified: Tue, 29 Aug 2017 06:20:34 GMT  
+		Size: 234.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d47189e6cba0b56ce6bf10af5083fcc42684582ee3f43d2a3ea074f16c83a077`  
-		Last Modified: Wed, 09 Aug 2017 21:52:58 GMT  
-		Size: 1.7 MB (1660215 bytes)  
+	-	`sha256:25566f6d0710cd7a79a84861d602d7b19ec8e3853dfc9e30ec13250f3e49cbc2`  
+		Last Modified: Tue, 29 Aug 2017 06:20:35 GMT  
+		Size: 1.7 MB (1660343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.4-jessie`
 
 ```console
-$ docker pull python@sha256:b307272232be33bce4907b95d37e53edfe895926b65b41b682ebd9c6c8ab5afc
+$ docker pull python@sha256:41593be96244b145d77ecd3450176ad7dbe576771c6a0032cf5ba148d31ad8de
 ```
 
 -	Platforms:
@@ -4155,9 +4155,9 @@ $ docker pull python@sha256:b307272232be33bce4907b95d37e53edfe895926b65b41b682eb
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.1 MB (269068920 bytes)**  
+-	Total Size: **271.9 MB (271901661 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b9a4ca02eb6e3be9a5938e247b6a5437d200e2a612cda1ddeabc5e9e945b2242`
+-	Image ID: `sha256:f58de61affa0d07239e7553bf49c492d6093dc1f9ed9e52e06d714615b1569ed`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -4171,27 +4171,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:51:46 GMT
+# Tue, 29 Aug 2017 05:58:29 GMT
 ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
-# Wed, 09 Aug 2017 21:06:16 GMT
+# Tue, 29 Aug 2017 06:00:51 GMT
 ENV PYTHON_VERSION=3.4.7
-# Wed, 09 Aug 2017 21:08:47 GMT
+# Tue, 29 Aug 2017 06:02:52 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Wed, 09 Aug 2017 21:08:51 GMT
+# Tue, 29 Aug 2017 06:02:52 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Wed, 09 Aug 2017 21:08:51 GMT
+# Tue, 29 Aug 2017 06:02:53 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Wed, 09 Aug 2017 21:08:55 GMT
+# Tue, 29 Aug 2017 06:02:57 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 09 Aug 2017 21:08:57 GMT
+# Tue, 29 Aug 2017 06:02:57 GMT
 CMD ["python3"]
 ```
 
@@ -4208,31 +4208,31 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b61812143603321c0bb93779153be6946f3d93c716afa0e2d85129499c001710`  
-		Last Modified: Wed, 09 Aug 2017 21:53:04 GMT  
-		Size: 17.6 MB (17557187 bytes)  
+	-	`sha256:59cb1cd39ac4f696ffcd575b2c010ebf31ace9ced00c0253a759f7870c0fc744`  
+		Last Modified: Tue, 29 Aug 2017 06:20:40 GMT  
+		Size: 17.6 MB (17561618 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:306435ca07711f2874a731b92ccab3bd8cf22c04b43d436f63f88fef993f774c`  
-		Last Modified: Wed, 09 Aug 2017 21:52:58 GMT  
-		Size: 233.0 B  
+	-	`sha256:70f866f45c41115f111abbf05c2135636d7c5bf69c84bd23601985b8965471b5`  
+		Last Modified: Tue, 29 Aug 2017 06:20:34 GMT  
+		Size: 234.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d47189e6cba0b56ce6bf10af5083fcc42684582ee3f43d2a3ea074f16c83a077`  
-		Last Modified: Wed, 09 Aug 2017 21:52:58 GMT  
-		Size: 1.7 MB (1660215 bytes)  
+	-	`sha256:25566f6d0710cd7a79a84861d602d7b19ec8e3853dfc9e30ec13250f3e49cbc2`  
+		Last Modified: Tue, 29 Aug 2017 06:20:35 GMT  
+		Size: 1.7 MB (1660343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.4.7`
 
 ```console
-$ docker pull python@sha256:b307272232be33bce4907b95d37e53edfe895926b65b41b682ebd9c6c8ab5afc
+$ docker pull python@sha256:41593be96244b145d77ecd3450176ad7dbe576771c6a0032cf5ba148d31ad8de
 ```
 
 -	Platforms:
@@ -4242,9 +4242,9 @@ $ docker pull python@sha256:b307272232be33bce4907b95d37e53edfe895926b65b41b682eb
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.1 MB (269068920 bytes)**  
+-	Total Size: **271.9 MB (271901661 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b9a4ca02eb6e3be9a5938e247b6a5437d200e2a612cda1ddeabc5e9e945b2242`
+-	Image ID: `sha256:f58de61affa0d07239e7553bf49c492d6093dc1f9ed9e52e06d714615b1569ed`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -4258,27 +4258,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:51:46 GMT
+# Tue, 29 Aug 2017 05:58:29 GMT
 ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
-# Wed, 09 Aug 2017 21:06:16 GMT
+# Tue, 29 Aug 2017 06:00:51 GMT
 ENV PYTHON_VERSION=3.4.7
-# Wed, 09 Aug 2017 21:08:47 GMT
+# Tue, 29 Aug 2017 06:02:52 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Wed, 09 Aug 2017 21:08:51 GMT
+# Tue, 29 Aug 2017 06:02:52 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Wed, 09 Aug 2017 21:08:51 GMT
+# Tue, 29 Aug 2017 06:02:53 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Wed, 09 Aug 2017 21:08:55 GMT
+# Tue, 29 Aug 2017 06:02:57 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 09 Aug 2017 21:08:57 GMT
+# Tue, 29 Aug 2017 06:02:57 GMT
 CMD ["python3"]
 ```
 
@@ -4295,31 +4295,31 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b61812143603321c0bb93779153be6946f3d93c716afa0e2d85129499c001710`  
-		Last Modified: Wed, 09 Aug 2017 21:53:04 GMT  
-		Size: 17.6 MB (17557187 bytes)  
+	-	`sha256:59cb1cd39ac4f696ffcd575b2c010ebf31ace9ced00c0253a759f7870c0fc744`  
+		Last Modified: Tue, 29 Aug 2017 06:20:40 GMT  
+		Size: 17.6 MB (17561618 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:306435ca07711f2874a731b92ccab3bd8cf22c04b43d436f63f88fef993f774c`  
-		Last Modified: Wed, 09 Aug 2017 21:52:58 GMT  
-		Size: 233.0 B  
+	-	`sha256:70f866f45c41115f111abbf05c2135636d7c5bf69c84bd23601985b8965471b5`  
+		Last Modified: Tue, 29 Aug 2017 06:20:34 GMT  
+		Size: 234.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d47189e6cba0b56ce6bf10af5083fcc42684582ee3f43d2a3ea074f16c83a077`  
-		Last Modified: Wed, 09 Aug 2017 21:52:58 GMT  
-		Size: 1.7 MB (1660215 bytes)  
+	-	`sha256:25566f6d0710cd7a79a84861d602d7b19ec8e3853dfc9e30ec13250f3e49cbc2`  
+		Last Modified: Tue, 29 Aug 2017 06:20:35 GMT  
+		Size: 1.7 MB (1660343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.4`
 
 ```console
-$ docker pull python@sha256:b307272232be33bce4907b95d37e53edfe895926b65b41b682ebd9c6c8ab5afc
+$ docker pull python@sha256:41593be96244b145d77ecd3450176ad7dbe576771c6a0032cf5ba148d31ad8de
 ```
 
 -	Platforms:
@@ -4329,9 +4329,9 @@ $ docker pull python@sha256:b307272232be33bce4907b95d37e53edfe895926b65b41b682eb
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.1 MB (269068920 bytes)**  
+-	Total Size: **271.9 MB (271901661 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b9a4ca02eb6e3be9a5938e247b6a5437d200e2a612cda1ddeabc5e9e945b2242`
+-	Image ID: `sha256:f58de61affa0d07239e7553bf49c492d6093dc1f9ed9e52e06d714615b1569ed`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -4345,27 +4345,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:51:46 GMT
+# Tue, 29 Aug 2017 05:58:29 GMT
 ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
-# Wed, 09 Aug 2017 21:06:16 GMT
+# Tue, 29 Aug 2017 06:00:51 GMT
 ENV PYTHON_VERSION=3.4.7
-# Wed, 09 Aug 2017 21:08:47 GMT
+# Tue, 29 Aug 2017 06:02:52 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Wed, 09 Aug 2017 21:08:51 GMT
+# Tue, 29 Aug 2017 06:02:52 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Wed, 09 Aug 2017 21:08:51 GMT
+# Tue, 29 Aug 2017 06:02:53 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Wed, 09 Aug 2017 21:08:55 GMT
+# Tue, 29 Aug 2017 06:02:57 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 09 Aug 2017 21:08:57 GMT
+# Tue, 29 Aug 2017 06:02:57 GMT
 CMD ["python3"]
 ```
 
@@ -4382,25 +4382,25 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b61812143603321c0bb93779153be6946f3d93c716afa0e2d85129499c001710`  
-		Last Modified: Wed, 09 Aug 2017 21:53:04 GMT  
-		Size: 17.6 MB (17557187 bytes)  
+	-	`sha256:59cb1cd39ac4f696ffcd575b2c010ebf31ace9ced00c0253a759f7870c0fc744`  
+		Last Modified: Tue, 29 Aug 2017 06:20:40 GMT  
+		Size: 17.6 MB (17561618 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:306435ca07711f2874a731b92ccab3bd8cf22c04b43d436f63f88fef993f774c`  
-		Last Modified: Wed, 09 Aug 2017 21:52:58 GMT  
-		Size: 233.0 B  
+	-	`sha256:70f866f45c41115f111abbf05c2135636d7c5bf69c84bd23601985b8965471b5`  
+		Last Modified: Tue, 29 Aug 2017 06:20:34 GMT  
+		Size: 234.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d47189e6cba0b56ce6bf10af5083fcc42684582ee3f43d2a3ea074f16c83a077`  
-		Last Modified: Wed, 09 Aug 2017 21:52:58 GMT  
-		Size: 1.7 MB (1660215 bytes)  
+	-	`sha256:25566f6d0710cd7a79a84861d602d7b19ec8e3853dfc9e30ec13250f3e49cbc2`  
+		Last Modified: Tue, 29 Aug 2017 06:20:35 GMT  
+		Size: 1.7 MB (1660343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.4.7-slim`
@@ -4540,7 +4540,7 @@ CMD ["python3"]
 ## `python:3.4.6-onbuild`
 
 ```console
-$ docker pull python@sha256:6278e6e34a3eb60e9104c79ba708c71befa605716266572152ce782c1e48746c
+$ docker pull python@sha256:ddfa1c983f3b063b435c2a98f940fbcaf02dfdfb85bac97c81e4c5ae707e854c
 ```
 
 -	Platforms:
@@ -4550,9 +4550,9 @@ $ docker pull python@sha256:6278e6e34a3eb60e9104c79ba708c71befa605716266572152ce
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.1 MB (269069047 bytes)**  
+-	Total Size: **271.9 MB (271901785 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc766a04288d35647410d8a08f40f70f2249d637d3970d3634614cd822102165`
+-	Image ID: `sha256:9fb30b3e3f6462035124a20d43af347eec133f086560b77af13b0d5092fae523`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -4566,37 +4566,37 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:51:46 GMT
+# Tue, 29 Aug 2017 05:58:29 GMT
 ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
-# Wed, 09 Aug 2017 21:06:16 GMT
+# Tue, 29 Aug 2017 06:00:51 GMT
 ENV PYTHON_VERSION=3.4.7
-# Wed, 09 Aug 2017 21:08:47 GMT
+# Tue, 29 Aug 2017 06:02:52 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Wed, 09 Aug 2017 21:08:51 GMT
+# Tue, 29 Aug 2017 06:02:52 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Wed, 09 Aug 2017 21:08:51 GMT
+# Tue, 29 Aug 2017 06:02:53 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Wed, 09 Aug 2017 21:08:55 GMT
+# Tue, 29 Aug 2017 06:02:57 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 09 Aug 2017 21:08:57 GMT
+# Tue, 29 Aug 2017 06:02:57 GMT
 CMD ["python3"]
-# Wed, 09 Aug 2017 21:12:16 GMT
+# Tue, 29 Aug 2017 06:03:04 GMT
 RUN mkdir -p /usr/src/app
-# Wed, 09 Aug 2017 21:12:16 GMT
+# Tue, 29 Aug 2017 06:03:04 GMT
 WORKDIR /usr/src/app
-# Wed, 09 Aug 2017 21:12:16 GMT
+# Tue, 29 Aug 2017 06:03:04 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Wed, 09 Aug 2017 21:12:16 GMT
+# Tue, 29 Aug 2017 06:03:05 GMT
 ONBUILD RUN pip install --no-cache-dir -r requirements.txt
-# Wed, 09 Aug 2017 21:12:20 GMT
+# Tue, 29 Aug 2017 06:03:05 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -4613,35 +4613,35 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b61812143603321c0bb93779153be6946f3d93c716afa0e2d85129499c001710`  
-		Last Modified: Wed, 09 Aug 2017 21:53:04 GMT  
-		Size: 17.6 MB (17557187 bytes)  
+	-	`sha256:59cb1cd39ac4f696ffcd575b2c010ebf31ace9ced00c0253a759f7870c0fc744`  
+		Last Modified: Tue, 29 Aug 2017 06:20:40 GMT  
+		Size: 17.6 MB (17561618 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:306435ca07711f2874a731b92ccab3bd8cf22c04b43d436f63f88fef993f774c`  
-		Last Modified: Wed, 09 Aug 2017 21:52:58 GMT  
-		Size: 233.0 B  
+	-	`sha256:70f866f45c41115f111abbf05c2135636d7c5bf69c84bd23601985b8965471b5`  
+		Last Modified: Tue, 29 Aug 2017 06:20:34 GMT  
+		Size: 234.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d47189e6cba0b56ce6bf10af5083fcc42684582ee3f43d2a3ea074f16c83a077`  
-		Last Modified: Wed, 09 Aug 2017 21:52:58 GMT  
-		Size: 1.7 MB (1660215 bytes)  
+	-	`sha256:25566f6d0710cd7a79a84861d602d7b19ec8e3853dfc9e30ec13250f3e49cbc2`  
+		Last Modified: Tue, 29 Aug 2017 06:20:35 GMT  
+		Size: 1.7 MB (1660343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b36424b640d467f18f5d46f7a66c62941d94596739cf6957f3185d5c05f45471`  
-		Last Modified: Wed, 09 Aug 2017 21:53:59 GMT  
-		Size: 127.0 B  
+	-	`sha256:4f7de374738b4adc99178d91a0ea937f2b14b7e8f90589f71170577b8ea270f3`  
+		Last Modified: Tue, 29 Aug 2017 06:21:18 GMT  
+		Size: 124.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.4-onbuild`
 
 ```console
-$ docker pull python@sha256:6278e6e34a3eb60e9104c79ba708c71befa605716266572152ce782c1e48746c
+$ docker pull python@sha256:ddfa1c983f3b063b435c2a98f940fbcaf02dfdfb85bac97c81e4c5ae707e854c
 ```
 
 -	Platforms:
@@ -4651,9 +4651,9 @@ $ docker pull python@sha256:6278e6e34a3eb60e9104c79ba708c71befa605716266572152ce
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.1 MB (269069047 bytes)**  
+-	Total Size: **271.9 MB (271901785 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc766a04288d35647410d8a08f40f70f2249d637d3970d3634614cd822102165`
+-	Image ID: `sha256:9fb30b3e3f6462035124a20d43af347eec133f086560b77af13b0d5092fae523`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -4667,37 +4667,37 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:51:46 GMT
+# Tue, 29 Aug 2017 05:58:29 GMT
 ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
-# Wed, 09 Aug 2017 21:06:16 GMT
+# Tue, 29 Aug 2017 06:00:51 GMT
 ENV PYTHON_VERSION=3.4.7
-# Wed, 09 Aug 2017 21:08:47 GMT
+# Tue, 29 Aug 2017 06:02:52 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Wed, 09 Aug 2017 21:08:51 GMT
+# Tue, 29 Aug 2017 06:02:52 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Wed, 09 Aug 2017 21:08:51 GMT
+# Tue, 29 Aug 2017 06:02:53 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Wed, 09 Aug 2017 21:08:55 GMT
+# Tue, 29 Aug 2017 06:02:57 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 09 Aug 2017 21:08:57 GMT
+# Tue, 29 Aug 2017 06:02:57 GMT
 CMD ["python3"]
-# Wed, 09 Aug 2017 21:12:16 GMT
+# Tue, 29 Aug 2017 06:03:04 GMT
 RUN mkdir -p /usr/src/app
-# Wed, 09 Aug 2017 21:12:16 GMT
+# Tue, 29 Aug 2017 06:03:04 GMT
 WORKDIR /usr/src/app
-# Wed, 09 Aug 2017 21:12:16 GMT
+# Tue, 29 Aug 2017 06:03:04 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Wed, 09 Aug 2017 21:12:16 GMT
+# Tue, 29 Aug 2017 06:03:05 GMT
 ONBUILD RUN pip install --no-cache-dir -r requirements.txt
-# Wed, 09 Aug 2017 21:12:20 GMT
+# Tue, 29 Aug 2017 06:03:05 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -4714,35 +4714,35 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b61812143603321c0bb93779153be6946f3d93c716afa0e2d85129499c001710`  
-		Last Modified: Wed, 09 Aug 2017 21:53:04 GMT  
-		Size: 17.6 MB (17557187 bytes)  
+	-	`sha256:59cb1cd39ac4f696ffcd575b2c010ebf31ace9ced00c0253a759f7870c0fc744`  
+		Last Modified: Tue, 29 Aug 2017 06:20:40 GMT  
+		Size: 17.6 MB (17561618 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:306435ca07711f2874a731b92ccab3bd8cf22c04b43d436f63f88fef993f774c`  
-		Last Modified: Wed, 09 Aug 2017 21:52:58 GMT  
-		Size: 233.0 B  
+	-	`sha256:70f866f45c41115f111abbf05c2135636d7c5bf69c84bd23601985b8965471b5`  
+		Last Modified: Tue, 29 Aug 2017 06:20:34 GMT  
+		Size: 234.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d47189e6cba0b56ce6bf10af5083fcc42684582ee3f43d2a3ea074f16c83a077`  
-		Last Modified: Wed, 09 Aug 2017 21:52:58 GMT  
-		Size: 1.7 MB (1660215 bytes)  
+	-	`sha256:25566f6d0710cd7a79a84861d602d7b19ec8e3853dfc9e30ec13250f3e49cbc2`  
+		Last Modified: Tue, 29 Aug 2017 06:20:35 GMT  
+		Size: 1.7 MB (1660343 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b36424b640d467f18f5d46f7a66c62941d94596739cf6957f3185d5c05f45471`  
-		Last Modified: Wed, 09 Aug 2017 21:53:59 GMT  
-		Size: 127.0 B  
+	-	`sha256:4f7de374738b4adc99178d91a0ea937f2b14b7e8f90589f71170577b8ea270f3`  
+		Last Modified: Tue, 29 Aug 2017 06:21:18 GMT  
+		Size: 124.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.4.7-wheezy`
 
 ```console
-$ docker pull python@sha256:667e0e3ee1648c03437556531e473ae8f230e497e764412b9ac58b080d778092
+$ docker pull python@sha256:05ee82e4b32bd36c952327ca19622fdc2bb0c14d994fcd5a63b8ae08479a4e2b
 ```
 
 -	Platforms:
@@ -4752,9 +4752,9 @@ $ docker pull python@sha256:667e0e3ee1648c03437556531e473ae8f230e497e764412b9ac5
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **202.5 MB (202499558 bytes)**  
+-	Total Size: **207.2 MB (207209498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1044afee794eaafe998029d8ee62384a8396187e489f4cf0adbbb7d544f3a011`
+-	Image ID: `sha256:311d31559d0f328f82d0c5bb3cc78ce377568484ebc0a860f532db266c906897`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -4768,27 +4768,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:30:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:31:31 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:01:43 GMT
+# Mon, 28 Aug 2017 23:44:11 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 06:03:10 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 20:01:43 GMT
+# Tue, 29 Aug 2017 06:03:10 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 20:01:57 GMT
+# Tue, 29 Aug 2017 06:03:31 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:01:58 GMT
+# Tue, 29 Aug 2017 06:03:32 GMT
 ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
-# Wed, 09 Aug 2017 21:12:27 GMT
+# Tue, 29 Aug 2017 06:03:32 GMT
 ENV PYTHON_VERSION=3.4.7
-# Wed, 09 Aug 2017 21:14:21 GMT
+# Tue, 29 Aug 2017 06:05:21 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture -qDEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Wed, 09 Aug 2017 21:14:24 GMT
+# Tue, 29 Aug 2017 06:05:22 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Wed, 09 Aug 2017 21:14:24 GMT
+# Tue, 29 Aug 2017 06:05:22 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Wed, 09 Aug 2017 21:14:29 GMT
+# Tue, 29 Aug 2017 06:05:27 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 09 Aug 2017 21:14:29 GMT
+# Tue, 29 Aug 2017 06:05:28 GMT
 CMD ["python3"]
 ```
 
@@ -4805,31 +4805,31 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:38:35 GMT  
 		Size: 37.9 MB (37938424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:facceed7e9e5461593431499743ba1696733bf243ed03ab2b5e2005262b6b41b`  
-		Last Modified: Mon, 24 Jul 2017 17:39:03 GMT  
-		Size: 96.9 MB (96946764 bytes)  
+	-	`sha256:59161aeb8f0a102d52002e0e8c257f9e3c400c42862d1c0c560565d8ff4fd833`  
+		Last Modified: Tue, 29 Aug 2017 00:05:38 GMT  
+		Size: 101.6 MB (101644990 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a0460cf202bc1bf3a60f3723761c2c9138353921658650ae497d7ffdabb7987`  
-		Last Modified: Mon, 24 Jul 2017 20:23:51 GMT  
-		Size: 3.2 MB (3231793 bytes)  
+	-	`sha256:80322a2fd85f670d3e7961c8b150bf5bff85489c301742ad36b92ae1e8a4961d`  
+		Last Modified: Tue, 29 Aug 2017 06:21:39 GMT  
+		Size: 3.2 MB (3237332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4cf322b4f88e0a61de4e9e62c87778ba1e844d7f474ff13171794f552f7f3924`  
-		Last Modified: Wed, 09 Aug 2017 21:54:30 GMT  
-		Size: 17.7 MB (17669985 bytes)  
+	-	`sha256:9c80fbe2ecb8f479416721f6e809cacb1bb72bb76bc775c7eda1120da476fc4a`  
+		Last Modified: Tue, 29 Aug 2017 06:21:44 GMT  
+		Size: 17.7 MB (17676102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed7d39802e162c407c000a072657e1cf0b244cde45b87516db78f73b339926a1`  
-		Last Modified: Wed, 09 Aug 2017 21:54:18 GMT  
-		Size: 236.0 B  
+	-	`sha256:c127b75a62945d3a2c269b1c3ba94e418aa7407902e19fd9376bdd4e6d48d500`  
+		Last Modified: Tue, 29 Aug 2017 06:21:38 GMT  
+		Size: 232.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c87da70c375cc3968e0f04892d3aaae58dddfdceca805efc27e18a8078f08df`  
-		Last Modified: Wed, 09 Aug 2017 21:54:19 GMT  
-		Size: 1.7 MB (1660124 bytes)  
+	-	`sha256:9a13e0230278f2c5a05366b3366cd933ffc7b7c1abe54a89c6cf8ef1fea9e55e`  
+		Last Modified: Tue, 29 Aug 2017 06:21:39 GMT  
+		Size: 1.7 MB (1660186 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.4-wheezy`
 
 ```console
-$ docker pull python@sha256:667e0e3ee1648c03437556531e473ae8f230e497e764412b9ac58b080d778092
+$ docker pull python@sha256:05ee82e4b32bd36c952327ca19622fdc2bb0c14d994fcd5a63b8ae08479a4e2b
 ```
 
 -	Platforms:
@@ -4839,9 +4839,9 @@ $ docker pull python@sha256:667e0e3ee1648c03437556531e473ae8f230e497e764412b9ac5
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **202.5 MB (202499558 bytes)**  
+-	Total Size: **207.2 MB (207209498 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1044afee794eaafe998029d8ee62384a8396187e489f4cf0adbbb7d544f3a011`
+-	Image ID: `sha256:311d31559d0f328f82d0c5bb3cc78ce377568484ebc0a860f532db266c906897`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -4855,27 +4855,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:30:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:31:31 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:01:43 GMT
+# Mon, 28 Aug 2017 23:44:11 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 06:03:10 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 20:01:43 GMT
+# Tue, 29 Aug 2017 06:03:10 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 20:01:57 GMT
+# Tue, 29 Aug 2017 06:03:31 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:01:58 GMT
+# Tue, 29 Aug 2017 06:03:32 GMT
 ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D
-# Wed, 09 Aug 2017 21:12:27 GMT
+# Tue, 29 Aug 2017 06:03:32 GMT
 ENV PYTHON_VERSION=3.4.7
-# Wed, 09 Aug 2017 21:14:21 GMT
+# Tue, 29 Aug 2017 06:05:21 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture -qDEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Wed, 09 Aug 2017 21:14:24 GMT
+# Tue, 29 Aug 2017 06:05:22 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Wed, 09 Aug 2017 21:14:24 GMT
+# Tue, 29 Aug 2017 06:05:22 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Wed, 09 Aug 2017 21:14:29 GMT
+# Tue, 29 Aug 2017 06:05:27 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Wed, 09 Aug 2017 21:14:29 GMT
+# Tue, 29 Aug 2017 06:05:28 GMT
 CMD ["python3"]
 ```
 
@@ -4892,25 +4892,25 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:38:35 GMT  
 		Size: 37.9 MB (37938424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:facceed7e9e5461593431499743ba1696733bf243ed03ab2b5e2005262b6b41b`  
-		Last Modified: Mon, 24 Jul 2017 17:39:03 GMT  
-		Size: 96.9 MB (96946764 bytes)  
+	-	`sha256:59161aeb8f0a102d52002e0e8c257f9e3c400c42862d1c0c560565d8ff4fd833`  
+		Last Modified: Tue, 29 Aug 2017 00:05:38 GMT  
+		Size: 101.6 MB (101644990 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a0460cf202bc1bf3a60f3723761c2c9138353921658650ae497d7ffdabb7987`  
-		Last Modified: Mon, 24 Jul 2017 20:23:51 GMT  
-		Size: 3.2 MB (3231793 bytes)  
+	-	`sha256:80322a2fd85f670d3e7961c8b150bf5bff85489c301742ad36b92ae1e8a4961d`  
+		Last Modified: Tue, 29 Aug 2017 06:21:39 GMT  
+		Size: 3.2 MB (3237332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4cf322b4f88e0a61de4e9e62c87778ba1e844d7f474ff13171794f552f7f3924`  
-		Last Modified: Wed, 09 Aug 2017 21:54:30 GMT  
-		Size: 17.7 MB (17669985 bytes)  
+	-	`sha256:9c80fbe2ecb8f479416721f6e809cacb1bb72bb76bc775c7eda1120da476fc4a`  
+		Last Modified: Tue, 29 Aug 2017 06:21:44 GMT  
+		Size: 17.7 MB (17676102 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed7d39802e162c407c000a072657e1cf0b244cde45b87516db78f73b339926a1`  
-		Last Modified: Wed, 09 Aug 2017 21:54:18 GMT  
-		Size: 236.0 B  
+	-	`sha256:c127b75a62945d3a2c269b1c3ba94e418aa7407902e19fd9376bdd4e6d48d500`  
+		Last Modified: Tue, 29 Aug 2017 06:21:38 GMT  
+		Size: 232.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9c87da70c375cc3968e0f04892d3aaae58dddfdceca805efc27e18a8078f08df`  
-		Last Modified: Wed, 09 Aug 2017 21:54:19 GMT  
-		Size: 1.7 MB (1660124 bytes)  
+	-	`sha256:9a13e0230278f2c5a05366b3366cd933ffc7b7c1abe54a89c6cf8ef1fea9e55e`  
+		Last Modified: Tue, 29 Aug 2017 06:21:39 GMT  
+		Size: 1.7 MB (1660186 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.4.7-alpine3.4`
@@ -5184,7 +5184,7 @@ CMD ["python3"]
 ## `python:3.3.6-jessie`
 
 ```console
-$ docker pull python@sha256:5082bdca82068b35b1bab3154201e6002a76b3c0328c32ef7846817b8b35767a
+$ docker pull python@sha256:61ff11e7e1d4c8178137377bc09b5c753b14bcc02f1dc71f228e9c66b095d54a
 ```
 
 -	Platforms:
@@ -5194,9 +5194,9 @@ $ docker pull python@sha256:5082bdca82068b35b1bab3154201e6002a76b3c0328c32ef7846
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **266.2 MB (266221724 bytes)**  
+-	Total Size: **269.1 MB (269054291 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87d1eb7b5ba57cb2769e9bd88694b38636c4221cc9ae798ec3d11b15a763e6af`
+-	Image ID: `sha256:ed439f6330f9f6298297a112799d095f181b3938e2c47c6d0f958e8970450639`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -5210,27 +5210,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:03:50 GMT
+# Tue, 29 Aug 2017 06:05:38 GMT
 ENV GPG_KEY=26DEA9D4613391EF3E25C9FF0A5B101836580288
-# Mon, 24 Jul 2017 20:03:50 GMT
+# Tue, 29 Aug 2017 06:05:38 GMT
 ENV PYTHON_VERSION=3.3.6
-# Mon, 24 Jul 2017 20:05:51 GMT
+# Tue, 29 Aug 2017 06:07:46 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 20:05:51 GMT
+# Tue, 29 Aug 2017 06:07:47 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 24 Jul 2017 20:05:51 GMT
+# Tue, 29 Aug 2017 06:07:48 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 20:05:57 GMT
+# Tue, 29 Aug 2017 06:07:52 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 20:05:58 GMT
+# Tue, 29 Aug 2017 06:07:53 GMT
 CMD ["python3"]
 ```
 
@@ -5247,31 +5247,31 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b79e4e7df6b026542c70f60580b7385288e3a6c656dee4289b24a741f6dffa2`  
-		Last Modified: Mon, 24 Jul 2017 20:24:25 GMT  
-		Size: 14.7 MB (14710156 bytes)  
+	-	`sha256:bf267417c814dd309ae354a822e5dd329e5132a0530eb7e00c87050c5621f1b5`  
+		Last Modified: Tue, 29 Aug 2017 06:22:09 GMT  
+		Size: 14.7 MB (14714356 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2acdb3d79efc8583300326fa8024d254728ee305832d7d050eea8e1758f57a1`  
-		Last Modified: Mon, 24 Jul 2017 20:24:21 GMT  
+	-	`sha256:c3042e86f4b811efa5fa3d63a4104a43c1c01a27d9ee11d69f4f97afbd3956ba`  
+		Last Modified: Tue, 29 Aug 2017 06:22:04 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:240569c33ce86b5b7cdff358099e5a5827b7fa1ea9a363411078ab06006e4d22`  
-		Last Modified: Mon, 24 Jul 2017 20:24:22 GMT  
-		Size: 1.7 MB (1660050 bytes)  
+	-	`sha256:b9a36b8ab9343cd15772e87a495506b647e5dd9b4bb251aa6a52019e3c0da593`  
+		Last Modified: Tue, 29 Aug 2017 06:22:05 GMT  
+		Size: 1.7 MB (1660236 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.3-jessie`
 
 ```console
-$ docker pull python@sha256:5082bdca82068b35b1bab3154201e6002a76b3c0328c32ef7846817b8b35767a
+$ docker pull python@sha256:61ff11e7e1d4c8178137377bc09b5c753b14bcc02f1dc71f228e9c66b095d54a
 ```
 
 -	Platforms:
@@ -5281,9 +5281,9 @@ $ docker pull python@sha256:5082bdca82068b35b1bab3154201e6002a76b3c0328c32ef7846
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **266.2 MB (266221724 bytes)**  
+-	Total Size: **269.1 MB (269054291 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87d1eb7b5ba57cb2769e9bd88694b38636c4221cc9ae798ec3d11b15a763e6af`
+-	Image ID: `sha256:ed439f6330f9f6298297a112799d095f181b3938e2c47c6d0f958e8970450639`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -5297,27 +5297,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:03:50 GMT
+# Tue, 29 Aug 2017 06:05:38 GMT
 ENV GPG_KEY=26DEA9D4613391EF3E25C9FF0A5B101836580288
-# Mon, 24 Jul 2017 20:03:50 GMT
+# Tue, 29 Aug 2017 06:05:38 GMT
 ENV PYTHON_VERSION=3.3.6
-# Mon, 24 Jul 2017 20:05:51 GMT
+# Tue, 29 Aug 2017 06:07:46 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 20:05:51 GMT
+# Tue, 29 Aug 2017 06:07:47 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 24 Jul 2017 20:05:51 GMT
+# Tue, 29 Aug 2017 06:07:48 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 20:05:57 GMT
+# Tue, 29 Aug 2017 06:07:52 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 20:05:58 GMT
+# Tue, 29 Aug 2017 06:07:53 GMT
 CMD ["python3"]
 ```
 
@@ -5334,31 +5334,31 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b79e4e7df6b026542c70f60580b7385288e3a6c656dee4289b24a741f6dffa2`  
-		Last Modified: Mon, 24 Jul 2017 20:24:25 GMT  
-		Size: 14.7 MB (14710156 bytes)  
+	-	`sha256:bf267417c814dd309ae354a822e5dd329e5132a0530eb7e00c87050c5621f1b5`  
+		Last Modified: Tue, 29 Aug 2017 06:22:09 GMT  
+		Size: 14.7 MB (14714356 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2acdb3d79efc8583300326fa8024d254728ee305832d7d050eea8e1758f57a1`  
-		Last Modified: Mon, 24 Jul 2017 20:24:21 GMT  
+	-	`sha256:c3042e86f4b811efa5fa3d63a4104a43c1c01a27d9ee11d69f4f97afbd3956ba`  
+		Last Modified: Tue, 29 Aug 2017 06:22:04 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:240569c33ce86b5b7cdff358099e5a5827b7fa1ea9a363411078ab06006e4d22`  
-		Last Modified: Mon, 24 Jul 2017 20:24:22 GMT  
-		Size: 1.7 MB (1660050 bytes)  
+	-	`sha256:b9a36b8ab9343cd15772e87a495506b647e5dd9b4bb251aa6a52019e3c0da593`  
+		Last Modified: Tue, 29 Aug 2017 06:22:05 GMT  
+		Size: 1.7 MB (1660236 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.3.6`
 
 ```console
-$ docker pull python@sha256:5082bdca82068b35b1bab3154201e6002a76b3c0328c32ef7846817b8b35767a
+$ docker pull python@sha256:61ff11e7e1d4c8178137377bc09b5c753b14bcc02f1dc71f228e9c66b095d54a
 ```
 
 -	Platforms:
@@ -5368,9 +5368,9 @@ $ docker pull python@sha256:5082bdca82068b35b1bab3154201e6002a76b3c0328c32ef7846
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **266.2 MB (266221724 bytes)**  
+-	Total Size: **269.1 MB (269054291 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87d1eb7b5ba57cb2769e9bd88694b38636c4221cc9ae798ec3d11b15a763e6af`
+-	Image ID: `sha256:ed439f6330f9f6298297a112799d095f181b3938e2c47c6d0f958e8970450639`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -5384,27 +5384,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:03:50 GMT
+# Tue, 29 Aug 2017 06:05:38 GMT
 ENV GPG_KEY=26DEA9D4613391EF3E25C9FF0A5B101836580288
-# Mon, 24 Jul 2017 20:03:50 GMT
+# Tue, 29 Aug 2017 06:05:38 GMT
 ENV PYTHON_VERSION=3.3.6
-# Mon, 24 Jul 2017 20:05:51 GMT
+# Tue, 29 Aug 2017 06:07:46 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 20:05:51 GMT
+# Tue, 29 Aug 2017 06:07:47 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 24 Jul 2017 20:05:51 GMT
+# Tue, 29 Aug 2017 06:07:48 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 20:05:57 GMT
+# Tue, 29 Aug 2017 06:07:52 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 20:05:58 GMT
+# Tue, 29 Aug 2017 06:07:53 GMT
 CMD ["python3"]
 ```
 
@@ -5421,31 +5421,31 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b79e4e7df6b026542c70f60580b7385288e3a6c656dee4289b24a741f6dffa2`  
-		Last Modified: Mon, 24 Jul 2017 20:24:25 GMT  
-		Size: 14.7 MB (14710156 bytes)  
+	-	`sha256:bf267417c814dd309ae354a822e5dd329e5132a0530eb7e00c87050c5621f1b5`  
+		Last Modified: Tue, 29 Aug 2017 06:22:09 GMT  
+		Size: 14.7 MB (14714356 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2acdb3d79efc8583300326fa8024d254728ee305832d7d050eea8e1758f57a1`  
-		Last Modified: Mon, 24 Jul 2017 20:24:21 GMT  
+	-	`sha256:c3042e86f4b811efa5fa3d63a4104a43c1c01a27d9ee11d69f4f97afbd3956ba`  
+		Last Modified: Tue, 29 Aug 2017 06:22:04 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:240569c33ce86b5b7cdff358099e5a5827b7fa1ea9a363411078ab06006e4d22`  
-		Last Modified: Mon, 24 Jul 2017 20:24:22 GMT  
-		Size: 1.7 MB (1660050 bytes)  
+	-	`sha256:b9a36b8ab9343cd15772e87a495506b647e5dd9b4bb251aa6a52019e3c0da593`  
+		Last Modified: Tue, 29 Aug 2017 06:22:05 GMT  
+		Size: 1.7 MB (1660236 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.3`
 
 ```console
-$ docker pull python@sha256:5082bdca82068b35b1bab3154201e6002a76b3c0328c32ef7846817b8b35767a
+$ docker pull python@sha256:61ff11e7e1d4c8178137377bc09b5c753b14bcc02f1dc71f228e9c66b095d54a
 ```
 
 -	Platforms:
@@ -5455,9 +5455,9 @@ $ docker pull python@sha256:5082bdca82068b35b1bab3154201e6002a76b3c0328c32ef7846
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **266.2 MB (266221724 bytes)**  
+-	Total Size: **269.1 MB (269054291 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87d1eb7b5ba57cb2769e9bd88694b38636c4221cc9ae798ec3d11b15a763e6af`
+-	Image ID: `sha256:ed439f6330f9f6298297a112799d095f181b3938e2c47c6d0f958e8970450639`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -5471,27 +5471,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:03:50 GMT
+# Tue, 29 Aug 2017 06:05:38 GMT
 ENV GPG_KEY=26DEA9D4613391EF3E25C9FF0A5B101836580288
-# Mon, 24 Jul 2017 20:03:50 GMT
+# Tue, 29 Aug 2017 06:05:38 GMT
 ENV PYTHON_VERSION=3.3.6
-# Mon, 24 Jul 2017 20:05:51 GMT
+# Tue, 29 Aug 2017 06:07:46 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 20:05:51 GMT
+# Tue, 29 Aug 2017 06:07:47 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 24 Jul 2017 20:05:51 GMT
+# Tue, 29 Aug 2017 06:07:48 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 20:05:57 GMT
+# Tue, 29 Aug 2017 06:07:52 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 20:05:58 GMT
+# Tue, 29 Aug 2017 06:07:53 GMT
 CMD ["python3"]
 ```
 
@@ -5508,25 +5508,25 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b79e4e7df6b026542c70f60580b7385288e3a6c656dee4289b24a741f6dffa2`  
-		Last Modified: Mon, 24 Jul 2017 20:24:25 GMT  
-		Size: 14.7 MB (14710156 bytes)  
+	-	`sha256:bf267417c814dd309ae354a822e5dd329e5132a0530eb7e00c87050c5621f1b5`  
+		Last Modified: Tue, 29 Aug 2017 06:22:09 GMT  
+		Size: 14.7 MB (14714356 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2acdb3d79efc8583300326fa8024d254728ee305832d7d050eea8e1758f57a1`  
-		Last Modified: Mon, 24 Jul 2017 20:24:21 GMT  
+	-	`sha256:c3042e86f4b811efa5fa3d63a4104a43c1c01a27d9ee11d69f4f97afbd3956ba`  
+		Last Modified: Tue, 29 Aug 2017 06:22:04 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:240569c33ce86b5b7cdff358099e5a5827b7fa1ea9a363411078ab06006e4d22`  
-		Last Modified: Mon, 24 Jul 2017 20:24:22 GMT  
-		Size: 1.7 MB (1660050 bytes)  
+	-	`sha256:b9a36b8ab9343cd15772e87a495506b647e5dd9b4bb251aa6a52019e3c0da593`  
+		Last Modified: Tue, 29 Aug 2017 06:22:05 GMT  
+		Size: 1.7 MB (1660236 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.3.6-slim`
@@ -5666,7 +5666,7 @@ CMD ["python3"]
 ## `python:3.3.6-onbuild`
 
 ```console
-$ docker pull python@sha256:13c00d9fc2e7df69b2035cd9bb4fc9185bf8cf63788ec0168e8fdb0254012062
+$ docker pull python@sha256:b5737302e647098fb5178c912f8aa270df05c280fbf3bc765a025e0f4fa7133e
 ```
 
 -	Platforms:
@@ -5676,9 +5676,9 @@ $ docker pull python@sha256:13c00d9fc2e7df69b2035cd9bb4fc9185bf8cf63788ec0168e8f
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **266.2 MB (266221850 bytes)**  
+-	Total Size: **269.1 MB (269054415 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:86b75218c2ace4e1c98aca14a6f9d65b69730d96d8f52d511456386439d74dbe`
+-	Image ID: `sha256:7f10b52395ea7221710c6bb2417aca26474e20a84d5c5faae345796464ee3601`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -5692,37 +5692,37 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:03:50 GMT
+# Tue, 29 Aug 2017 06:05:38 GMT
 ENV GPG_KEY=26DEA9D4613391EF3E25C9FF0A5B101836580288
-# Mon, 24 Jul 2017 20:03:50 GMT
+# Tue, 29 Aug 2017 06:05:38 GMT
 ENV PYTHON_VERSION=3.3.6
-# Mon, 24 Jul 2017 20:05:51 GMT
+# Tue, 29 Aug 2017 06:07:46 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 20:05:51 GMT
+# Tue, 29 Aug 2017 06:07:47 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 24 Jul 2017 20:05:51 GMT
+# Tue, 29 Aug 2017 06:07:48 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 20:05:57 GMT
+# Tue, 29 Aug 2017 06:07:52 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 20:05:58 GMT
+# Tue, 29 Aug 2017 06:07:53 GMT
 CMD ["python3"]
-# Mon, 24 Jul 2017 20:08:51 GMT
+# Tue, 29 Aug 2017 06:08:03 GMT
 RUN mkdir -p /usr/src/app
-# Mon, 24 Jul 2017 20:08:51 GMT
+# Tue, 29 Aug 2017 06:08:03 GMT
 WORKDIR /usr/src/app
-# Mon, 24 Jul 2017 20:08:51 GMT
+# Tue, 29 Aug 2017 06:08:03 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Mon, 24 Jul 2017 20:08:51 GMT
+# Tue, 29 Aug 2017 06:08:03 GMT
 ONBUILD RUN pip install --no-cache-dir -r requirements.txt
-# Mon, 24 Jul 2017 20:08:51 GMT
+# Tue, 29 Aug 2017 06:08:04 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -5739,35 +5739,35 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b79e4e7df6b026542c70f60580b7385288e3a6c656dee4289b24a741f6dffa2`  
-		Last Modified: Mon, 24 Jul 2017 20:24:25 GMT  
-		Size: 14.7 MB (14710156 bytes)  
+	-	`sha256:bf267417c814dd309ae354a822e5dd329e5132a0530eb7e00c87050c5621f1b5`  
+		Last Modified: Tue, 29 Aug 2017 06:22:09 GMT  
+		Size: 14.7 MB (14714356 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2acdb3d79efc8583300326fa8024d254728ee305832d7d050eea8e1758f57a1`  
-		Last Modified: Mon, 24 Jul 2017 20:24:21 GMT  
+	-	`sha256:c3042e86f4b811efa5fa3d63a4104a43c1c01a27d9ee11d69f4f97afbd3956ba`  
+		Last Modified: Tue, 29 Aug 2017 06:22:04 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:240569c33ce86b5b7cdff358099e5a5827b7fa1ea9a363411078ab06006e4d22`  
-		Last Modified: Mon, 24 Jul 2017 20:24:22 GMT  
-		Size: 1.7 MB (1660050 bytes)  
+	-	`sha256:b9a36b8ab9343cd15772e87a495506b647e5dd9b4bb251aa6a52019e3c0da593`  
+		Last Modified: Tue, 29 Aug 2017 06:22:05 GMT  
+		Size: 1.7 MB (1660236 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8610b34951baca0b342080623893c3353938dad990514f248a22bee7afe32d43`  
-		Last Modified: Mon, 24 Jul 2017 20:25:01 GMT  
-		Size: 126.0 B  
+	-	`sha256:a1990dce8dcbffdd7f0575361f8198cedce79bb891a359060afcc9dc05cb64a4`  
+		Last Modified: Tue, 29 Aug 2017 06:22:47 GMT  
+		Size: 124.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.3-onbuild`
 
 ```console
-$ docker pull python@sha256:13c00d9fc2e7df69b2035cd9bb4fc9185bf8cf63788ec0168e8fdb0254012062
+$ docker pull python@sha256:b5737302e647098fb5178c912f8aa270df05c280fbf3bc765a025e0f4fa7133e
 ```
 
 -	Platforms:
@@ -5777,9 +5777,9 @@ $ docker pull python@sha256:13c00d9fc2e7df69b2035cd9bb4fc9185bf8cf63788ec0168e8f
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **266.2 MB (266221850 bytes)**  
+-	Total Size: **269.1 MB (269054415 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:86b75218c2ace4e1c98aca14a6f9d65b69730d96d8f52d511456386439d74dbe`
+-	Image ID: `sha256:7f10b52395ea7221710c6bb2417aca26474e20a84d5c5faae345796464ee3601`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -5793,37 +5793,37 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:03:50 GMT
+# Tue, 29 Aug 2017 06:05:38 GMT
 ENV GPG_KEY=26DEA9D4613391EF3E25C9FF0A5B101836580288
-# Mon, 24 Jul 2017 20:03:50 GMT
+# Tue, 29 Aug 2017 06:05:38 GMT
 ENV PYTHON_VERSION=3.3.6
-# Mon, 24 Jul 2017 20:05:51 GMT
+# Tue, 29 Aug 2017 06:07:46 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 20:05:51 GMT
+# Tue, 29 Aug 2017 06:07:47 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 24 Jul 2017 20:05:51 GMT
+# Tue, 29 Aug 2017 06:07:48 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 20:05:57 GMT
+# Tue, 29 Aug 2017 06:07:52 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 20:05:58 GMT
+# Tue, 29 Aug 2017 06:07:53 GMT
 CMD ["python3"]
-# Mon, 24 Jul 2017 20:08:51 GMT
+# Tue, 29 Aug 2017 06:08:03 GMT
 RUN mkdir -p /usr/src/app
-# Mon, 24 Jul 2017 20:08:51 GMT
+# Tue, 29 Aug 2017 06:08:03 GMT
 WORKDIR /usr/src/app
-# Mon, 24 Jul 2017 20:08:51 GMT
+# Tue, 29 Aug 2017 06:08:03 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Mon, 24 Jul 2017 20:08:51 GMT
+# Tue, 29 Aug 2017 06:08:03 GMT
 ONBUILD RUN pip install --no-cache-dir -r requirements.txt
-# Mon, 24 Jul 2017 20:08:51 GMT
+# Tue, 29 Aug 2017 06:08:04 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -5840,35 +5840,35 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b79e4e7df6b026542c70f60580b7385288e3a6c656dee4289b24a741f6dffa2`  
-		Last Modified: Mon, 24 Jul 2017 20:24:25 GMT  
-		Size: 14.7 MB (14710156 bytes)  
+	-	`sha256:bf267417c814dd309ae354a822e5dd329e5132a0530eb7e00c87050c5621f1b5`  
+		Last Modified: Tue, 29 Aug 2017 06:22:09 GMT  
+		Size: 14.7 MB (14714356 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2acdb3d79efc8583300326fa8024d254728ee305832d7d050eea8e1758f57a1`  
-		Last Modified: Mon, 24 Jul 2017 20:24:21 GMT  
+	-	`sha256:c3042e86f4b811efa5fa3d63a4104a43c1c01a27d9ee11d69f4f97afbd3956ba`  
+		Last Modified: Tue, 29 Aug 2017 06:22:04 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:240569c33ce86b5b7cdff358099e5a5827b7fa1ea9a363411078ab06006e4d22`  
-		Last Modified: Mon, 24 Jul 2017 20:24:22 GMT  
-		Size: 1.7 MB (1660050 bytes)  
+	-	`sha256:b9a36b8ab9343cd15772e87a495506b647e5dd9b4bb251aa6a52019e3c0da593`  
+		Last Modified: Tue, 29 Aug 2017 06:22:05 GMT  
+		Size: 1.7 MB (1660236 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8610b34951baca0b342080623893c3353938dad990514f248a22bee7afe32d43`  
-		Last Modified: Mon, 24 Jul 2017 20:25:01 GMT  
-		Size: 126.0 B  
+	-	`sha256:a1990dce8dcbffdd7f0575361f8198cedce79bb891a359060afcc9dc05cb64a4`  
+		Last Modified: Tue, 29 Aug 2017 06:22:47 GMT  
+		Size: 124.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.3.6-wheezy`
 
 ```console
-$ docker pull python@sha256:17bf03be715b4021bb181ea2c32374ee63b1850d2f4f9c85ff8542998a25c548
+$ docker pull python@sha256:ea30768eea77ff13a5e9aadbba2ca87d31b14836d4d6e71da43cb166f249ca54
 ```
 
 -	Platforms:
@@ -5878,9 +5878,9 @@ $ docker pull python@sha256:17bf03be715b4021bb181ea2c32374ee63b1850d2f4f9c85ff85
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **199.6 MB (199646509 bytes)**  
+-	Total Size: **204.4 MB (204357600 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b44cf5c1559561e7a3865461043f1dfe7798aeacc8bd4f38bd4e6becc74d8c6`
+-	Image ID: `sha256:11616e34bbf3b64779179eaff1fc1a650dcb2b0e57e22b1c460e9d7c095881cf`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -5894,27 +5894,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:30:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:31:31 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:01:43 GMT
+# Mon, 28 Aug 2017 23:44:11 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 06:03:10 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 20:01:43 GMT
+# Tue, 29 Aug 2017 06:03:10 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 20:01:57 GMT
+# Tue, 29 Aug 2017 06:03:31 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:08:55 GMT
+# Tue, 29 Aug 2017 06:08:09 GMT
 ENV GPG_KEY=26DEA9D4613391EF3E25C9FF0A5B101836580288
-# Mon, 24 Jul 2017 20:08:55 GMT
+# Tue, 29 Aug 2017 06:08:09 GMT
 ENV PYTHON_VERSION=3.3.6
-# Mon, 24 Jul 2017 20:10:24 GMT
+# Tue, 29 Aug 2017 06:09:44 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture -qDEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 20:10:24 GMT
+# Tue, 29 Aug 2017 06:09:49 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 24 Jul 2017 20:10:24 GMT
+# Tue, 29 Aug 2017 06:09:49 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 20:10:29 GMT
+# Tue, 29 Aug 2017 06:09:53 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 20:10:29 GMT
+# Tue, 29 Aug 2017 06:09:55 GMT
 CMD ["python3"]
 ```
 
@@ -5931,31 +5931,31 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:38:35 GMT  
 		Size: 37.9 MB (37938424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:facceed7e9e5461593431499743ba1696733bf243ed03ab2b5e2005262b6b41b`  
-		Last Modified: Mon, 24 Jul 2017 17:39:03 GMT  
-		Size: 96.9 MB (96946764 bytes)  
+	-	`sha256:59161aeb8f0a102d52002e0e8c257f9e3c400c42862d1c0c560565d8ff4fd833`  
+		Last Modified: Tue, 29 Aug 2017 00:05:38 GMT  
+		Size: 101.6 MB (101644990 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a0460cf202bc1bf3a60f3723761c2c9138353921658650ae497d7ffdabb7987`  
-		Last Modified: Mon, 24 Jul 2017 20:23:51 GMT  
-		Size: 3.2 MB (3231793 bytes)  
+	-	`sha256:80322a2fd85f670d3e7961c8b150bf5bff85489c301742ad36b92ae1e8a4961d`  
+		Last Modified: Tue, 29 Aug 2017 06:21:39 GMT  
+		Size: 3.2 MB (3237332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c09a71ccf2c232c43b4a58aac04e068c5763cc4ee2dd370412ea88291377666d`  
-		Last Modified: Mon, 24 Jul 2017 20:25:17 GMT  
-		Size: 14.8 MB (14817198 bytes)  
+	-	`sha256:c10d984420a99d322b8ec5c90c73f4d94f6b0da6c68006608e6bd80eb4bb6f66`  
+		Last Modified: Tue, 29 Aug 2017 06:23:12 GMT  
+		Size: 14.8 MB (14824012 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bed33f9ac121e9f3a3f81f8cd735608fb819118bfb28627703b6cfd059d8d011`  
-		Last Modified: Mon, 24 Jul 2017 20:25:12 GMT  
-		Size: 232.0 B  
+	-	`sha256:15c80475b783c01a71b8434c9a66e7e4993bd1d1834a759ba1acb2d8e7de8374`  
+		Last Modified: Tue, 29 Aug 2017 06:23:07 GMT  
+		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dcf4b700cacd4e362dade505c0d588c8d5b40c30a071551cf320eb24972b7b2c`  
-		Last Modified: Mon, 24 Jul 2017 20:25:13 GMT  
-		Size: 1.7 MB (1659866 bytes)  
+	-	`sha256:c4cda3b715e94f45617a54599b03a52a60abc7c94b18ee0ae5bac53f1bd266d8`  
+		Last Modified: Tue, 29 Aug 2017 06:23:08 GMT  
+		Size: 1.7 MB (1660377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.3-wheezy`
 
 ```console
-$ docker pull python@sha256:17bf03be715b4021bb181ea2c32374ee63b1850d2f4f9c85ff8542998a25c548
+$ docker pull python@sha256:ea30768eea77ff13a5e9aadbba2ca87d31b14836d4d6e71da43cb166f249ca54
 ```
 
 -	Platforms:
@@ -5965,9 +5965,9 @@ $ docker pull python@sha256:17bf03be715b4021bb181ea2c32374ee63b1850d2f4f9c85ff85
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **199.6 MB (199646509 bytes)**  
+-	Total Size: **204.4 MB (204357600 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b44cf5c1559561e7a3865461043f1dfe7798aeacc8bd4f38bd4e6becc74d8c6`
+-	Image ID: `sha256:11616e34bbf3b64779179eaff1fc1a650dcb2b0e57e22b1c460e9d7c095881cf`
 -	Default Command: `["python3"]`
 
 ```dockerfile
@@ -5981,27 +5981,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:30:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:31:31 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:01:43 GMT
+# Mon, 28 Aug 2017 23:44:11 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 06:03:10 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 20:01:43 GMT
+# Tue, 29 Aug 2017 06:03:10 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 20:01:57 GMT
+# Tue, 29 Aug 2017 06:03:31 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:08:55 GMT
+# Tue, 29 Aug 2017 06:08:09 GMT
 ENV GPG_KEY=26DEA9D4613391EF3E25C9FF0A5B101836580288
-# Mon, 24 Jul 2017 20:08:55 GMT
+# Tue, 29 Aug 2017 06:08:09 GMT
 ENV PYTHON_VERSION=3.3.6
-# Mon, 24 Jul 2017 20:10:24 GMT
+# Tue, 29 Aug 2017 06:09:44 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture -qDEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-shared 		--with-system-expat 		--with-system-ffi 		--without-ensurepip 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 20:10:24 GMT
+# Tue, 29 Aug 2017 06:09:49 GMT
 RUN cd /usr/local/bin 	&& ln -s idle3 idle 	&& ln -s pydoc3 pydoc 	&& ln -s python3 python 	&& ln -s python3-config python-config
-# Mon, 24 Jul 2017 20:10:24 GMT
+# Tue, 29 Aug 2017 06:09:49 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 20:10:29 GMT
+# Tue, 29 Aug 2017 06:09:53 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 20:10:29 GMT
+# Tue, 29 Aug 2017 06:09:55 GMT
 CMD ["python3"]
 ```
 
@@ -6018,25 +6018,25 @@ CMD ["python3"]
 		Last Modified: Mon, 24 Jul 2017 17:38:35 GMT  
 		Size: 37.9 MB (37938424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:facceed7e9e5461593431499743ba1696733bf243ed03ab2b5e2005262b6b41b`  
-		Last Modified: Mon, 24 Jul 2017 17:39:03 GMT  
-		Size: 96.9 MB (96946764 bytes)  
+	-	`sha256:59161aeb8f0a102d52002e0e8c257f9e3c400c42862d1c0c560565d8ff4fd833`  
+		Last Modified: Tue, 29 Aug 2017 00:05:38 GMT  
+		Size: 101.6 MB (101644990 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a0460cf202bc1bf3a60f3723761c2c9138353921658650ae497d7ffdabb7987`  
-		Last Modified: Mon, 24 Jul 2017 20:23:51 GMT  
-		Size: 3.2 MB (3231793 bytes)  
+	-	`sha256:80322a2fd85f670d3e7961c8b150bf5bff85489c301742ad36b92ae1e8a4961d`  
+		Last Modified: Tue, 29 Aug 2017 06:21:39 GMT  
+		Size: 3.2 MB (3237332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c09a71ccf2c232c43b4a58aac04e068c5763cc4ee2dd370412ea88291377666d`  
-		Last Modified: Mon, 24 Jul 2017 20:25:17 GMT  
-		Size: 14.8 MB (14817198 bytes)  
+	-	`sha256:c10d984420a99d322b8ec5c90c73f4d94f6b0da6c68006608e6bd80eb4bb6f66`  
+		Last Modified: Tue, 29 Aug 2017 06:23:12 GMT  
+		Size: 14.8 MB (14824012 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bed33f9ac121e9f3a3f81f8cd735608fb819118bfb28627703b6cfd059d8d011`  
-		Last Modified: Mon, 24 Jul 2017 20:25:12 GMT  
-		Size: 232.0 B  
+	-	`sha256:15c80475b783c01a71b8434c9a66e7e4993bd1d1834a759ba1acb2d8e7de8374`  
+		Last Modified: Tue, 29 Aug 2017 06:23:07 GMT  
+		Size: 233.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dcf4b700cacd4e362dade505c0d588c8d5b40c30a071551cf320eb24972b7b2c`  
-		Last Modified: Mon, 24 Jul 2017 20:25:13 GMT  
-		Size: 1.7 MB (1659866 bytes)  
+	-	`sha256:c4cda3b715e94f45617a54599b03a52a60abc7c94b18ee0ae5bac53f1bd266d8`  
+		Last Modified: Tue, 29 Aug 2017 06:23:08 GMT  
+		Size: 1.7 MB (1660377 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:3.3.6-alpine3.4`
@@ -6310,7 +6310,7 @@ CMD ["python3"]
 ## `python:2.7.13-stretch`
 
 ```console
-$ docker pull python@sha256:467a598c20f3c6bdd43def962586b92140c546aed7311d6f02d264d63f984d3d
+$ docker pull python@sha256:b202ccc1c41071d757e09c8350b9a778e908c3fb3bc84a7af0679f31f2ab5c12
 ```
 
 -	Platforms:
@@ -6320,9 +6320,9 @@ $ docker pull python@sha256:467a598c20f3c6bdd43def962586b92140c546aed7311d6f02d2
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **345.5 MB (345525913 bytes)**  
+-	Total Size: **347.1 MB (347120003 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:68a7931a296df2b7d8795e99dffe5a71d23e7a1e7c1e0d58ecf6e3ce1af39bf1`
+-	Image ID: `sha256:39a0498c2922bdac5d2d1a26d6d9c6beafd87b7621d868ea0e1ff8796d6acfc9`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -6336,27 +6336,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:29:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:30:14 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:44:16 GMT
+# Mon, 28 Aug 2017 23:37:44 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:48:08 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:44:16 GMT
+# Tue, 29 Aug 2017 05:48:08 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:44:29 GMT
+# Tue, 29 Aug 2017 05:48:23 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:10:31 GMT
+# Tue, 29 Aug 2017 06:10:01 GMT
 ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Mon, 24 Jul 2017 20:10:31 GMT
+# Tue, 29 Aug 2017 06:10:01 GMT
 ENV PYTHON_VERSION=2.7.13
-# Mon, 24 Jul 2017 20:12:15 GMT
+# Tue, 29 Aug 2017 06:11:57 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 20:12:15 GMT
+# Tue, 29 Aug 2017 06:12:02 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 20:12:19 GMT
+# Tue, 29 Aug 2017 06:12:06 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 20:12:21 GMT
+# Tue, 29 Aug 2017 06:12:10 GMT
 RUN pip install --no-cache-dir virtualenv
-# Mon, 24 Jul 2017 20:12:21 GMT
+# Tue, 29 Aug 2017 06:12:11 GMT
 CMD ["python2"]
 ```
 
@@ -6377,31 +6377,31 @@ CMD ["python2"]
 		Last Modified: Mon, 24 Jul 2017 17:36:55 GMT  
 		Size: 50.0 MB (50003328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f1f06181675b7b85e1c17621a96aea8bd586c187a6a9ac7f63fcd09640dfcbc`  
-		Last Modified: Mon, 24 Jul 2017 17:37:48 GMT  
-		Size: 211.2 MB (211158464 bytes)  
+	-	`sha256:7dacde51d9842a4f69d438762a86393c169b5b8f649fd6c6ff5b475c6e909046`  
+		Last Modified: Tue, 29 Aug 2017 00:04:01 GMT  
+		Size: 212.7 MB (212748354 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb93b795ab2840091005c2d75f333963094b616ae05547745392dbf92e35e4b9`  
-		Last Modified: Mon, 24 Jul 2017 20:19:00 GMT  
-		Size: 2.9 MB (2919805 bytes)  
+	-	`sha256:83b5671243c886cf81ed56f501b43291a815b179ad891c30c8f6740e1f8741e9`  
+		Last Modified: Tue, 29 Aug 2017 06:16:59 GMT  
+		Size: 2.9 MB (2920351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0b8282f8588179ea268960071a8b3d21ed3585c39ed9655a4897e714b5732d3`  
-		Last Modified: Mon, 24 Jul 2017 20:25:47 GMT  
-		Size: 15.8 MB (15795393 bytes)  
+	-	`sha256:35af8cac6d5d8482a255fa3109c5f940ea84d9a45bd90bfac7d096a756ecd859`  
+		Last Modified: Tue, 29 Aug 2017 06:23:41 GMT  
+		Size: 15.8 MB (15798797 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc67a3b1e3726f40ef000ae215fe245c29b8018dc54b77b6abe70884a998e159`  
-		Last Modified: Mon, 24 Jul 2017 20:25:44 GMT  
-		Size: 1.7 MB (1657666 bytes)  
+	-	`sha256:617a9e282c425d983b21c61ac5acb6164e45cec5eba69ecdb2bd221d9af62f24`  
+		Last Modified: Tue, 29 Aug 2017 06:23:38 GMT  
+		Size: 1.7 MB (1657966 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2599b6a82f550b8d84d2ec5592c32c33890e6b3986a6db15173d7802a450de92`  
-		Last Modified: Mon, 24 Jul 2017 20:25:45 GMT  
-		Size: 3.3 MB (3329351 bytes)  
+	-	`sha256:2ce4d132c11d88bd41590115b00dac1a34a5835f9341ca7f6ffdc0932bac7a1d`  
+		Last Modified: Tue, 29 Aug 2017 06:23:36 GMT  
+		Size: 3.3 MB (3329301 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:2.7-stretch`
 
 ```console
-$ docker pull python@sha256:467a598c20f3c6bdd43def962586b92140c546aed7311d6f02d264d63f984d3d
+$ docker pull python@sha256:b202ccc1c41071d757e09c8350b9a778e908c3fb3bc84a7af0679f31f2ab5c12
 ```
 
 -	Platforms:
@@ -6411,9 +6411,9 @@ $ docker pull python@sha256:467a598c20f3c6bdd43def962586b92140c546aed7311d6f02d2
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **345.5 MB (345525913 bytes)**  
+-	Total Size: **347.1 MB (347120003 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:68a7931a296df2b7d8795e99dffe5a71d23e7a1e7c1e0d58ecf6e3ce1af39bf1`
+-	Image ID: `sha256:39a0498c2922bdac5d2d1a26d6d9c6beafd87b7621d868ea0e1ff8796d6acfc9`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -6427,27 +6427,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:29:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:30:14 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:44:16 GMT
+# Mon, 28 Aug 2017 23:37:44 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:48:08 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:44:16 GMT
+# Tue, 29 Aug 2017 05:48:08 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:44:29 GMT
+# Tue, 29 Aug 2017 05:48:23 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:10:31 GMT
+# Tue, 29 Aug 2017 06:10:01 GMT
 ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Mon, 24 Jul 2017 20:10:31 GMT
+# Tue, 29 Aug 2017 06:10:01 GMT
 ENV PYTHON_VERSION=2.7.13
-# Mon, 24 Jul 2017 20:12:15 GMT
+# Tue, 29 Aug 2017 06:11:57 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 20:12:15 GMT
+# Tue, 29 Aug 2017 06:12:02 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 20:12:19 GMT
+# Tue, 29 Aug 2017 06:12:06 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 20:12:21 GMT
+# Tue, 29 Aug 2017 06:12:10 GMT
 RUN pip install --no-cache-dir virtualenv
-# Mon, 24 Jul 2017 20:12:21 GMT
+# Tue, 29 Aug 2017 06:12:11 GMT
 CMD ["python2"]
 ```
 
@@ -6468,31 +6468,31 @@ CMD ["python2"]
 		Last Modified: Mon, 24 Jul 2017 17:36:55 GMT  
 		Size: 50.0 MB (50003328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f1f06181675b7b85e1c17621a96aea8bd586c187a6a9ac7f63fcd09640dfcbc`  
-		Last Modified: Mon, 24 Jul 2017 17:37:48 GMT  
-		Size: 211.2 MB (211158464 bytes)  
+	-	`sha256:7dacde51d9842a4f69d438762a86393c169b5b8f649fd6c6ff5b475c6e909046`  
+		Last Modified: Tue, 29 Aug 2017 00:04:01 GMT  
+		Size: 212.7 MB (212748354 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb93b795ab2840091005c2d75f333963094b616ae05547745392dbf92e35e4b9`  
-		Last Modified: Mon, 24 Jul 2017 20:19:00 GMT  
-		Size: 2.9 MB (2919805 bytes)  
+	-	`sha256:83b5671243c886cf81ed56f501b43291a815b179ad891c30c8f6740e1f8741e9`  
+		Last Modified: Tue, 29 Aug 2017 06:16:59 GMT  
+		Size: 2.9 MB (2920351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0b8282f8588179ea268960071a8b3d21ed3585c39ed9655a4897e714b5732d3`  
-		Last Modified: Mon, 24 Jul 2017 20:25:47 GMT  
-		Size: 15.8 MB (15795393 bytes)  
+	-	`sha256:35af8cac6d5d8482a255fa3109c5f940ea84d9a45bd90bfac7d096a756ecd859`  
+		Last Modified: Tue, 29 Aug 2017 06:23:41 GMT  
+		Size: 15.8 MB (15798797 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc67a3b1e3726f40ef000ae215fe245c29b8018dc54b77b6abe70884a998e159`  
-		Last Modified: Mon, 24 Jul 2017 20:25:44 GMT  
-		Size: 1.7 MB (1657666 bytes)  
+	-	`sha256:617a9e282c425d983b21c61ac5acb6164e45cec5eba69ecdb2bd221d9af62f24`  
+		Last Modified: Tue, 29 Aug 2017 06:23:38 GMT  
+		Size: 1.7 MB (1657966 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2599b6a82f550b8d84d2ec5592c32c33890e6b3986a6db15173d7802a450de92`  
-		Last Modified: Mon, 24 Jul 2017 20:25:45 GMT  
-		Size: 3.3 MB (3329351 bytes)  
+	-	`sha256:2ce4d132c11d88bd41590115b00dac1a34a5835f9341ca7f6ffdc0932bac7a1d`  
+		Last Modified: Tue, 29 Aug 2017 06:23:36 GMT  
+		Size: 3.3 MB (3329301 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:2-stretch`
 
 ```console
-$ docker pull python@sha256:467a598c20f3c6bdd43def962586b92140c546aed7311d6f02d264d63f984d3d
+$ docker pull python@sha256:b202ccc1c41071d757e09c8350b9a778e908c3fb3bc84a7af0679f31f2ab5c12
 ```
 
 -	Platforms:
@@ -6502,9 +6502,9 @@ $ docker pull python@sha256:467a598c20f3c6bdd43def962586b92140c546aed7311d6f02d2
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **345.5 MB (345525913 bytes)**  
+-	Total Size: **347.1 MB (347120003 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:68a7931a296df2b7d8795e99dffe5a71d23e7a1e7c1e0d58ecf6e3ce1af39bf1`
+-	Image ID: `sha256:39a0498c2922bdac5d2d1a26d6d9c6beafd87b7621d868ea0e1ff8796d6acfc9`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -6518,27 +6518,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:29:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:30:14 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:44:16 GMT
+# Mon, 28 Aug 2017 23:37:44 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:48:08 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:44:16 GMT
+# Tue, 29 Aug 2017 05:48:08 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:44:29 GMT
+# Tue, 29 Aug 2017 05:48:23 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:10:31 GMT
+# Tue, 29 Aug 2017 06:10:01 GMT
 ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Mon, 24 Jul 2017 20:10:31 GMT
+# Tue, 29 Aug 2017 06:10:01 GMT
 ENV PYTHON_VERSION=2.7.13
-# Mon, 24 Jul 2017 20:12:15 GMT
+# Tue, 29 Aug 2017 06:11:57 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 20:12:15 GMT
+# Tue, 29 Aug 2017 06:12:02 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 20:12:19 GMT
+# Tue, 29 Aug 2017 06:12:06 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 20:12:21 GMT
+# Tue, 29 Aug 2017 06:12:10 GMT
 RUN pip install --no-cache-dir virtualenv
-# Mon, 24 Jul 2017 20:12:21 GMT
+# Tue, 29 Aug 2017 06:12:11 GMT
 CMD ["python2"]
 ```
 
@@ -6559,31 +6559,31 @@ CMD ["python2"]
 		Last Modified: Mon, 24 Jul 2017 17:36:55 GMT  
 		Size: 50.0 MB (50003328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f1f06181675b7b85e1c17621a96aea8bd586c187a6a9ac7f63fcd09640dfcbc`  
-		Last Modified: Mon, 24 Jul 2017 17:37:48 GMT  
-		Size: 211.2 MB (211158464 bytes)  
+	-	`sha256:7dacde51d9842a4f69d438762a86393c169b5b8f649fd6c6ff5b475c6e909046`  
+		Last Modified: Tue, 29 Aug 2017 00:04:01 GMT  
+		Size: 212.7 MB (212748354 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb93b795ab2840091005c2d75f333963094b616ae05547745392dbf92e35e4b9`  
-		Last Modified: Mon, 24 Jul 2017 20:19:00 GMT  
-		Size: 2.9 MB (2919805 bytes)  
+	-	`sha256:83b5671243c886cf81ed56f501b43291a815b179ad891c30c8f6740e1f8741e9`  
+		Last Modified: Tue, 29 Aug 2017 06:16:59 GMT  
+		Size: 2.9 MB (2920351 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c0b8282f8588179ea268960071a8b3d21ed3585c39ed9655a4897e714b5732d3`  
-		Last Modified: Mon, 24 Jul 2017 20:25:47 GMT  
-		Size: 15.8 MB (15795393 bytes)  
+	-	`sha256:35af8cac6d5d8482a255fa3109c5f940ea84d9a45bd90bfac7d096a756ecd859`  
+		Last Modified: Tue, 29 Aug 2017 06:23:41 GMT  
+		Size: 15.8 MB (15798797 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc67a3b1e3726f40ef000ae215fe245c29b8018dc54b77b6abe70884a998e159`  
-		Last Modified: Mon, 24 Jul 2017 20:25:44 GMT  
-		Size: 1.7 MB (1657666 bytes)  
+	-	`sha256:617a9e282c425d983b21c61ac5acb6164e45cec5eba69ecdb2bd221d9af62f24`  
+		Last Modified: Tue, 29 Aug 2017 06:23:38 GMT  
+		Size: 1.7 MB (1657966 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2599b6a82f550b8d84d2ec5592c32c33890e6b3986a6db15173d7802a450de92`  
-		Last Modified: Mon, 24 Jul 2017 20:25:45 GMT  
-		Size: 3.3 MB (3329351 bytes)  
+	-	`sha256:2ce4d132c11d88bd41590115b00dac1a34a5835f9341ca7f6ffdc0932bac7a1d`  
+		Last Modified: Tue, 29 Aug 2017 06:23:36 GMT  
+		Size: 3.3 MB (3329301 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:2.7.13-jessie`
 
 ```console
-$ docker pull python@sha256:2cba1410697972e0148cbc547ac39e89ff85240f0d4d07db58091bc46e0ed0f2
+$ docker pull python@sha256:5198070008366d669f63c43c575f488a1358e8bead0ae2e5b342c2ef9ef69947
 ```
 
 -	Platforms:
@@ -6593,9 +6593,9 @@ $ docker pull python@sha256:2cba1410697972e0148cbc547ac39e89ff85240f0d4d07db5809
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.3 MB (269328401 bytes)**  
+-	Total Size: **272.2 MB (272160671 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa8e55b2235d91a1c805fcc48e15edea3c42f91b736054e9ea33be1d064b5462`
+-	Image ID: `sha256:8a90a66b719a007880e3ea0872f6d81d67af5fe41e36330cbf8c525fe8c96494`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -6609,27 +6609,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:12:23 GMT
+# Tue, 29 Aug 2017 06:12:24 GMT
 ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Mon, 24 Jul 2017 20:12:23 GMT
+# Tue, 29 Aug 2017 06:12:24 GMT
 ENV PYTHON_VERSION=2.7.13
-# Mon, 24 Jul 2017 20:14:17 GMT
+# Tue, 29 Aug 2017 06:14:28 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 20:14:17 GMT
+# Tue, 29 Aug 2017 06:14:28 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 20:14:21 GMT
+# Tue, 29 Aug 2017 06:14:32 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 20:14:22 GMT
+# Tue, 29 Aug 2017 06:14:36 GMT
 RUN pip install --no-cache-dir virtualenv
-# Mon, 24 Jul 2017 20:14:23 GMT
+# Tue, 29 Aug 2017 06:14:36 GMT
 CMD ["python2"]
 ```
 
@@ -6646,31 +6646,31 @@ CMD ["python2"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fd37168d02bb8082a71071fc60cd3532ec4f92ef3f1fe2a7cdbbe87ba66b8618`  
-		Last Modified: Mon, 24 Jul 2017 20:26:07 GMT  
-		Size: 14.5 MB (14490390 bytes)  
+	-	`sha256:f9c7daedb1257238477c44246267a93aa2e78530f8c7e4662069050a8f558d1c`  
+		Last Modified: Tue, 29 Aug 2017 06:24:17 GMT  
+		Size: 14.5 MB (14494271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8804355f837124bed3a955307ad53b9bc5fdf955dd545d80e9242c9cb8451080`  
-		Last Modified: Mon, 24 Jul 2017 20:26:04 GMT  
-		Size: 1.7 MB (1657388 bytes)  
+	-	`sha256:be6c737eb06a337c4413ecb82e525e25abd6f043ed222a62a4f7505db0ec14d6`  
+		Last Modified: Tue, 29 Aug 2017 06:24:13 GMT  
+		Size: 1.7 MB (1657705 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a19b278d4ccdad3de517aa7053410d76c056916f278103fe36aaf91504315303`  
-		Last Modified: Mon, 24 Jul 2017 20:26:05 GMT  
-		Size: 3.3 MB (3329338 bytes)  
+	-	`sha256:007c5d0639d48e4c58a3ca8b48122595e69c713f85fec1ba80bd1ce7bf24dbb3`  
+		Last Modified: Tue, 29 Aug 2017 06:24:13 GMT  
+		Size: 3.3 MB (3329229 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:2.7-jessie`
 
 ```console
-$ docker pull python@sha256:2cba1410697972e0148cbc547ac39e89ff85240f0d4d07db58091bc46e0ed0f2
+$ docker pull python@sha256:5198070008366d669f63c43c575f488a1358e8bead0ae2e5b342c2ef9ef69947
 ```
 
 -	Platforms:
@@ -6680,9 +6680,9 @@ $ docker pull python@sha256:2cba1410697972e0148cbc547ac39e89ff85240f0d4d07db5809
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.3 MB (269328401 bytes)**  
+-	Total Size: **272.2 MB (272160671 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa8e55b2235d91a1c805fcc48e15edea3c42f91b736054e9ea33be1d064b5462`
+-	Image ID: `sha256:8a90a66b719a007880e3ea0872f6d81d67af5fe41e36330cbf8c525fe8c96494`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -6696,27 +6696,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:12:23 GMT
+# Tue, 29 Aug 2017 06:12:24 GMT
 ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Mon, 24 Jul 2017 20:12:23 GMT
+# Tue, 29 Aug 2017 06:12:24 GMT
 ENV PYTHON_VERSION=2.7.13
-# Mon, 24 Jul 2017 20:14:17 GMT
+# Tue, 29 Aug 2017 06:14:28 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 20:14:17 GMT
+# Tue, 29 Aug 2017 06:14:28 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 20:14:21 GMT
+# Tue, 29 Aug 2017 06:14:32 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 20:14:22 GMT
+# Tue, 29 Aug 2017 06:14:36 GMT
 RUN pip install --no-cache-dir virtualenv
-# Mon, 24 Jul 2017 20:14:23 GMT
+# Tue, 29 Aug 2017 06:14:36 GMT
 CMD ["python2"]
 ```
 
@@ -6733,31 +6733,31 @@ CMD ["python2"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fd37168d02bb8082a71071fc60cd3532ec4f92ef3f1fe2a7cdbbe87ba66b8618`  
-		Last Modified: Mon, 24 Jul 2017 20:26:07 GMT  
-		Size: 14.5 MB (14490390 bytes)  
+	-	`sha256:f9c7daedb1257238477c44246267a93aa2e78530f8c7e4662069050a8f558d1c`  
+		Last Modified: Tue, 29 Aug 2017 06:24:17 GMT  
+		Size: 14.5 MB (14494271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8804355f837124bed3a955307ad53b9bc5fdf955dd545d80e9242c9cb8451080`  
-		Last Modified: Mon, 24 Jul 2017 20:26:04 GMT  
-		Size: 1.7 MB (1657388 bytes)  
+	-	`sha256:be6c737eb06a337c4413ecb82e525e25abd6f043ed222a62a4f7505db0ec14d6`  
+		Last Modified: Tue, 29 Aug 2017 06:24:13 GMT  
+		Size: 1.7 MB (1657705 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a19b278d4ccdad3de517aa7053410d76c056916f278103fe36aaf91504315303`  
-		Last Modified: Mon, 24 Jul 2017 20:26:05 GMT  
-		Size: 3.3 MB (3329338 bytes)  
+	-	`sha256:007c5d0639d48e4c58a3ca8b48122595e69c713f85fec1ba80bd1ce7bf24dbb3`  
+		Last Modified: Tue, 29 Aug 2017 06:24:13 GMT  
+		Size: 3.3 MB (3329229 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:2-jessie`
 
 ```console
-$ docker pull python@sha256:2cba1410697972e0148cbc547ac39e89ff85240f0d4d07db58091bc46e0ed0f2
+$ docker pull python@sha256:5198070008366d669f63c43c575f488a1358e8bead0ae2e5b342c2ef9ef69947
 ```
 
 -	Platforms:
@@ -6767,9 +6767,9 @@ $ docker pull python@sha256:2cba1410697972e0148cbc547ac39e89ff85240f0d4d07db5809
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.3 MB (269328401 bytes)**  
+-	Total Size: **272.2 MB (272160671 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa8e55b2235d91a1c805fcc48e15edea3c42f91b736054e9ea33be1d064b5462`
+-	Image ID: `sha256:8a90a66b719a007880e3ea0872f6d81d67af5fe41e36330cbf8c525fe8c96494`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -6783,27 +6783,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:12:23 GMT
+# Tue, 29 Aug 2017 06:12:24 GMT
 ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Mon, 24 Jul 2017 20:12:23 GMT
+# Tue, 29 Aug 2017 06:12:24 GMT
 ENV PYTHON_VERSION=2.7.13
-# Mon, 24 Jul 2017 20:14:17 GMT
+# Tue, 29 Aug 2017 06:14:28 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 20:14:17 GMT
+# Tue, 29 Aug 2017 06:14:28 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 20:14:21 GMT
+# Tue, 29 Aug 2017 06:14:32 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 20:14:22 GMT
+# Tue, 29 Aug 2017 06:14:36 GMT
 RUN pip install --no-cache-dir virtualenv
-# Mon, 24 Jul 2017 20:14:23 GMT
+# Tue, 29 Aug 2017 06:14:36 GMT
 CMD ["python2"]
 ```
 
@@ -6820,31 +6820,31 @@ CMD ["python2"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fd37168d02bb8082a71071fc60cd3532ec4f92ef3f1fe2a7cdbbe87ba66b8618`  
-		Last Modified: Mon, 24 Jul 2017 20:26:07 GMT  
-		Size: 14.5 MB (14490390 bytes)  
+	-	`sha256:f9c7daedb1257238477c44246267a93aa2e78530f8c7e4662069050a8f558d1c`  
+		Last Modified: Tue, 29 Aug 2017 06:24:17 GMT  
+		Size: 14.5 MB (14494271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8804355f837124bed3a955307ad53b9bc5fdf955dd545d80e9242c9cb8451080`  
-		Last Modified: Mon, 24 Jul 2017 20:26:04 GMT  
-		Size: 1.7 MB (1657388 bytes)  
+	-	`sha256:be6c737eb06a337c4413ecb82e525e25abd6f043ed222a62a4f7505db0ec14d6`  
+		Last Modified: Tue, 29 Aug 2017 06:24:13 GMT  
+		Size: 1.7 MB (1657705 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a19b278d4ccdad3de517aa7053410d76c056916f278103fe36aaf91504315303`  
-		Last Modified: Mon, 24 Jul 2017 20:26:05 GMT  
-		Size: 3.3 MB (3329338 bytes)  
+	-	`sha256:007c5d0639d48e4c58a3ca8b48122595e69c713f85fec1ba80bd1ce7bf24dbb3`  
+		Last Modified: Tue, 29 Aug 2017 06:24:13 GMT  
+		Size: 3.3 MB (3329229 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:2.7.13`
 
 ```console
-$ docker pull python@sha256:2cba1410697972e0148cbc547ac39e89ff85240f0d4d07db58091bc46e0ed0f2
+$ docker pull python@sha256:5198070008366d669f63c43c575f488a1358e8bead0ae2e5b342c2ef9ef69947
 ```
 
 -	Platforms:
@@ -6854,9 +6854,9 @@ $ docker pull python@sha256:2cba1410697972e0148cbc547ac39e89ff85240f0d4d07db5809
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.3 MB (269328401 bytes)**  
+-	Total Size: **272.2 MB (272160671 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa8e55b2235d91a1c805fcc48e15edea3c42f91b736054e9ea33be1d064b5462`
+-	Image ID: `sha256:8a90a66b719a007880e3ea0872f6d81d67af5fe41e36330cbf8c525fe8c96494`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -6870,27 +6870,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:12:23 GMT
+# Tue, 29 Aug 2017 06:12:24 GMT
 ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Mon, 24 Jul 2017 20:12:23 GMT
+# Tue, 29 Aug 2017 06:12:24 GMT
 ENV PYTHON_VERSION=2.7.13
-# Mon, 24 Jul 2017 20:14:17 GMT
+# Tue, 29 Aug 2017 06:14:28 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 20:14:17 GMT
+# Tue, 29 Aug 2017 06:14:28 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 20:14:21 GMT
+# Tue, 29 Aug 2017 06:14:32 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 20:14:22 GMT
+# Tue, 29 Aug 2017 06:14:36 GMT
 RUN pip install --no-cache-dir virtualenv
-# Mon, 24 Jul 2017 20:14:23 GMT
+# Tue, 29 Aug 2017 06:14:36 GMT
 CMD ["python2"]
 ```
 
@@ -6907,31 +6907,31 @@ CMD ["python2"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fd37168d02bb8082a71071fc60cd3532ec4f92ef3f1fe2a7cdbbe87ba66b8618`  
-		Last Modified: Mon, 24 Jul 2017 20:26:07 GMT  
-		Size: 14.5 MB (14490390 bytes)  
+	-	`sha256:f9c7daedb1257238477c44246267a93aa2e78530f8c7e4662069050a8f558d1c`  
+		Last Modified: Tue, 29 Aug 2017 06:24:17 GMT  
+		Size: 14.5 MB (14494271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8804355f837124bed3a955307ad53b9bc5fdf955dd545d80e9242c9cb8451080`  
-		Last Modified: Mon, 24 Jul 2017 20:26:04 GMT  
-		Size: 1.7 MB (1657388 bytes)  
+	-	`sha256:be6c737eb06a337c4413ecb82e525e25abd6f043ed222a62a4f7505db0ec14d6`  
+		Last Modified: Tue, 29 Aug 2017 06:24:13 GMT  
+		Size: 1.7 MB (1657705 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a19b278d4ccdad3de517aa7053410d76c056916f278103fe36aaf91504315303`  
-		Last Modified: Mon, 24 Jul 2017 20:26:05 GMT  
-		Size: 3.3 MB (3329338 bytes)  
+	-	`sha256:007c5d0639d48e4c58a3ca8b48122595e69c713f85fec1ba80bd1ce7bf24dbb3`  
+		Last Modified: Tue, 29 Aug 2017 06:24:13 GMT  
+		Size: 3.3 MB (3329229 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:2.7`
 
 ```console
-$ docker pull python@sha256:2cba1410697972e0148cbc547ac39e89ff85240f0d4d07db58091bc46e0ed0f2
+$ docker pull python@sha256:5198070008366d669f63c43c575f488a1358e8bead0ae2e5b342c2ef9ef69947
 ```
 
 -	Platforms:
@@ -6941,9 +6941,9 @@ $ docker pull python@sha256:2cba1410697972e0148cbc547ac39e89ff85240f0d4d07db5809
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.3 MB (269328401 bytes)**  
+-	Total Size: **272.2 MB (272160671 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa8e55b2235d91a1c805fcc48e15edea3c42f91b736054e9ea33be1d064b5462`
+-	Image ID: `sha256:8a90a66b719a007880e3ea0872f6d81d67af5fe41e36330cbf8c525fe8c96494`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -6957,27 +6957,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:12:23 GMT
+# Tue, 29 Aug 2017 06:12:24 GMT
 ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Mon, 24 Jul 2017 20:12:23 GMT
+# Tue, 29 Aug 2017 06:12:24 GMT
 ENV PYTHON_VERSION=2.7.13
-# Mon, 24 Jul 2017 20:14:17 GMT
+# Tue, 29 Aug 2017 06:14:28 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 20:14:17 GMT
+# Tue, 29 Aug 2017 06:14:28 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 20:14:21 GMT
+# Tue, 29 Aug 2017 06:14:32 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 20:14:22 GMT
+# Tue, 29 Aug 2017 06:14:36 GMT
 RUN pip install --no-cache-dir virtualenv
-# Mon, 24 Jul 2017 20:14:23 GMT
+# Tue, 29 Aug 2017 06:14:36 GMT
 CMD ["python2"]
 ```
 
@@ -6994,31 +6994,31 @@ CMD ["python2"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fd37168d02bb8082a71071fc60cd3532ec4f92ef3f1fe2a7cdbbe87ba66b8618`  
-		Last Modified: Mon, 24 Jul 2017 20:26:07 GMT  
-		Size: 14.5 MB (14490390 bytes)  
+	-	`sha256:f9c7daedb1257238477c44246267a93aa2e78530f8c7e4662069050a8f558d1c`  
+		Last Modified: Tue, 29 Aug 2017 06:24:17 GMT  
+		Size: 14.5 MB (14494271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8804355f837124bed3a955307ad53b9bc5fdf955dd545d80e9242c9cb8451080`  
-		Last Modified: Mon, 24 Jul 2017 20:26:04 GMT  
-		Size: 1.7 MB (1657388 bytes)  
+	-	`sha256:be6c737eb06a337c4413ecb82e525e25abd6f043ed222a62a4f7505db0ec14d6`  
+		Last Modified: Tue, 29 Aug 2017 06:24:13 GMT  
+		Size: 1.7 MB (1657705 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a19b278d4ccdad3de517aa7053410d76c056916f278103fe36aaf91504315303`  
-		Last Modified: Mon, 24 Jul 2017 20:26:05 GMT  
-		Size: 3.3 MB (3329338 bytes)  
+	-	`sha256:007c5d0639d48e4c58a3ca8b48122595e69c713f85fec1ba80bd1ce7bf24dbb3`  
+		Last Modified: Tue, 29 Aug 2017 06:24:13 GMT  
+		Size: 3.3 MB (3329229 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:2`
 
 ```console
-$ docker pull python@sha256:2cba1410697972e0148cbc547ac39e89ff85240f0d4d07db58091bc46e0ed0f2
+$ docker pull python@sha256:5198070008366d669f63c43c575f488a1358e8bead0ae2e5b342c2ef9ef69947
 ```
 
 -	Platforms:
@@ -7028,9 +7028,9 @@ $ docker pull python@sha256:2cba1410697972e0148cbc547ac39e89ff85240f0d4d07db5809
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.3 MB (269328401 bytes)**  
+-	Total Size: **272.2 MB (272160671 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa8e55b2235d91a1c805fcc48e15edea3c42f91b736054e9ea33be1d064b5462`
+-	Image ID: `sha256:8a90a66b719a007880e3ea0872f6d81d67af5fe41e36330cbf8c525fe8c96494`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -7044,27 +7044,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:12:23 GMT
+# Tue, 29 Aug 2017 06:12:24 GMT
 ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Mon, 24 Jul 2017 20:12:23 GMT
+# Tue, 29 Aug 2017 06:12:24 GMT
 ENV PYTHON_VERSION=2.7.13
-# Mon, 24 Jul 2017 20:14:17 GMT
+# Tue, 29 Aug 2017 06:14:28 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 20:14:17 GMT
+# Tue, 29 Aug 2017 06:14:28 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 20:14:21 GMT
+# Tue, 29 Aug 2017 06:14:32 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 20:14:22 GMT
+# Tue, 29 Aug 2017 06:14:36 GMT
 RUN pip install --no-cache-dir virtualenv
-# Mon, 24 Jul 2017 20:14:23 GMT
+# Tue, 29 Aug 2017 06:14:36 GMT
 CMD ["python2"]
 ```
 
@@ -7081,25 +7081,25 @@ CMD ["python2"]
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fd37168d02bb8082a71071fc60cd3532ec4f92ef3f1fe2a7cdbbe87ba66b8618`  
-		Last Modified: Mon, 24 Jul 2017 20:26:07 GMT  
-		Size: 14.5 MB (14490390 bytes)  
+	-	`sha256:f9c7daedb1257238477c44246267a93aa2e78530f8c7e4662069050a8f558d1c`  
+		Last Modified: Tue, 29 Aug 2017 06:24:17 GMT  
+		Size: 14.5 MB (14494271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8804355f837124bed3a955307ad53b9bc5fdf955dd545d80e9242c9cb8451080`  
-		Last Modified: Mon, 24 Jul 2017 20:26:04 GMT  
-		Size: 1.7 MB (1657388 bytes)  
+	-	`sha256:be6c737eb06a337c4413ecb82e525e25abd6f043ed222a62a4f7505db0ec14d6`  
+		Last Modified: Tue, 29 Aug 2017 06:24:13 GMT  
+		Size: 1.7 MB (1657705 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a19b278d4ccdad3de517aa7053410d76c056916f278103fe36aaf91504315303`  
-		Last Modified: Mon, 24 Jul 2017 20:26:05 GMT  
-		Size: 3.3 MB (3329338 bytes)  
+	-	`sha256:007c5d0639d48e4c58a3ca8b48122595e69c713f85fec1ba80bd1ce7bf24dbb3`  
+		Last Modified: Tue, 29 Aug 2017 06:24:13 GMT  
+		Size: 3.3 MB (3329229 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:2.7.13-slim`
@@ -7288,7 +7288,7 @@ CMD ["python2"]
 ## `python:2.7.13-onbuild`
 
 ```console
-$ docker pull python@sha256:83ad72b43c3ffb6d23f92e13baedadcab071b467bfb0507cb6a4dd2b5cc24e2e
+$ docker pull python@sha256:da6f2199ae5a9aa7bade9dd18206808ddaa7cd719befcda7486bce1db86f2218
 ```
 
 -	Platforms:
@@ -7298,9 +7298,9 @@ $ docker pull python@sha256:83ad72b43c3ffb6d23f92e13baedadcab071b467bfb0507cb6a4
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.3 MB (269328527 bytes)**  
+-	Total Size: **272.2 MB (272160797 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a6d7503b6b7e2ae6f907e97c5e9de61958be2cfd16a734101ece3b051288f837`
+-	Image ID: `sha256:8f648a7dadadeddbe720ca670a02a6e94f278b0b0ffc0437b18cad5a05ef7a85`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -7314,37 +7314,37 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:12:23 GMT
+# Tue, 29 Aug 2017 06:12:24 GMT
 ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Mon, 24 Jul 2017 20:12:23 GMT
+# Tue, 29 Aug 2017 06:12:24 GMT
 ENV PYTHON_VERSION=2.7.13
-# Mon, 24 Jul 2017 20:14:17 GMT
+# Tue, 29 Aug 2017 06:14:28 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 20:14:17 GMT
+# Tue, 29 Aug 2017 06:14:28 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 20:14:21 GMT
+# Tue, 29 Aug 2017 06:14:32 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 20:14:22 GMT
+# Tue, 29 Aug 2017 06:14:36 GMT
 RUN pip install --no-cache-dir virtualenv
-# Mon, 24 Jul 2017 20:14:23 GMT
+# Tue, 29 Aug 2017 06:14:36 GMT
 CMD ["python2"]
-# Mon, 24 Jul 2017 20:17:14 GMT
+# Tue, 29 Aug 2017 06:14:46 GMT
 RUN mkdir -p /usr/src/app
-# Mon, 24 Jul 2017 20:17:15 GMT
+# Tue, 29 Aug 2017 06:14:47 GMT
 WORKDIR /usr/src/app
-# Mon, 24 Jul 2017 20:17:15 GMT
+# Tue, 29 Aug 2017 06:14:47 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Mon, 24 Jul 2017 20:17:15 GMT
+# Tue, 29 Aug 2017 06:14:47 GMT
 ONBUILD RUN pip install --no-cache-dir -r requirements.txt
-# Mon, 24 Jul 2017 20:17:15 GMT
+# Tue, 29 Aug 2017 06:14:48 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -7361,35 +7361,35 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fd37168d02bb8082a71071fc60cd3532ec4f92ef3f1fe2a7cdbbe87ba66b8618`  
-		Last Modified: Mon, 24 Jul 2017 20:26:07 GMT  
-		Size: 14.5 MB (14490390 bytes)  
+	-	`sha256:f9c7daedb1257238477c44246267a93aa2e78530f8c7e4662069050a8f558d1c`  
+		Last Modified: Tue, 29 Aug 2017 06:24:17 GMT  
+		Size: 14.5 MB (14494271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8804355f837124bed3a955307ad53b9bc5fdf955dd545d80e9242c9cb8451080`  
-		Last Modified: Mon, 24 Jul 2017 20:26:04 GMT  
-		Size: 1.7 MB (1657388 bytes)  
+	-	`sha256:be6c737eb06a337c4413ecb82e525e25abd6f043ed222a62a4f7505db0ec14d6`  
+		Last Modified: Tue, 29 Aug 2017 06:24:13 GMT  
+		Size: 1.7 MB (1657705 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a19b278d4ccdad3de517aa7053410d76c056916f278103fe36aaf91504315303`  
-		Last Modified: Mon, 24 Jul 2017 20:26:05 GMT  
-		Size: 3.3 MB (3329338 bytes)  
+	-	`sha256:007c5d0639d48e4c58a3ca8b48122595e69c713f85fec1ba80bd1ce7bf24dbb3`  
+		Last Modified: Tue, 29 Aug 2017 06:24:13 GMT  
+		Size: 3.3 MB (3329229 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba4cf5edc04dba9fafcd31e44d8176affd1c9bbdc833a17721802378a1fb46d5`  
-		Last Modified: Mon, 24 Jul 2017 20:26:55 GMT  
+	-	`sha256:4ce5b508284a7517e75d3874f9730b05f8093e3d2f43f999eea23579bfb1ccb5`  
+		Last Modified: Tue, 29 Aug 2017 06:25:09 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:2.7-onbuild`
 
 ```console
-$ docker pull python@sha256:83ad72b43c3ffb6d23f92e13baedadcab071b467bfb0507cb6a4dd2b5cc24e2e
+$ docker pull python@sha256:da6f2199ae5a9aa7bade9dd18206808ddaa7cd719befcda7486bce1db86f2218
 ```
 
 -	Platforms:
@@ -7399,9 +7399,9 @@ $ docker pull python@sha256:83ad72b43c3ffb6d23f92e13baedadcab071b467bfb0507cb6a4
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.3 MB (269328527 bytes)**  
+-	Total Size: **272.2 MB (272160797 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a6d7503b6b7e2ae6f907e97c5e9de61958be2cfd16a734101ece3b051288f837`
+-	Image ID: `sha256:8f648a7dadadeddbe720ca670a02a6e94f278b0b0ffc0437b18cad5a05ef7a85`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -7415,37 +7415,37 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:12:23 GMT
+# Tue, 29 Aug 2017 06:12:24 GMT
 ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Mon, 24 Jul 2017 20:12:23 GMT
+# Tue, 29 Aug 2017 06:12:24 GMT
 ENV PYTHON_VERSION=2.7.13
-# Mon, 24 Jul 2017 20:14:17 GMT
+# Tue, 29 Aug 2017 06:14:28 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 20:14:17 GMT
+# Tue, 29 Aug 2017 06:14:28 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 20:14:21 GMT
+# Tue, 29 Aug 2017 06:14:32 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 20:14:22 GMT
+# Tue, 29 Aug 2017 06:14:36 GMT
 RUN pip install --no-cache-dir virtualenv
-# Mon, 24 Jul 2017 20:14:23 GMT
+# Tue, 29 Aug 2017 06:14:36 GMT
 CMD ["python2"]
-# Mon, 24 Jul 2017 20:17:14 GMT
+# Tue, 29 Aug 2017 06:14:46 GMT
 RUN mkdir -p /usr/src/app
-# Mon, 24 Jul 2017 20:17:15 GMT
+# Tue, 29 Aug 2017 06:14:47 GMT
 WORKDIR /usr/src/app
-# Mon, 24 Jul 2017 20:17:15 GMT
+# Tue, 29 Aug 2017 06:14:47 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Mon, 24 Jul 2017 20:17:15 GMT
+# Tue, 29 Aug 2017 06:14:47 GMT
 ONBUILD RUN pip install --no-cache-dir -r requirements.txt
-# Mon, 24 Jul 2017 20:17:15 GMT
+# Tue, 29 Aug 2017 06:14:48 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -7462,35 +7462,35 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fd37168d02bb8082a71071fc60cd3532ec4f92ef3f1fe2a7cdbbe87ba66b8618`  
-		Last Modified: Mon, 24 Jul 2017 20:26:07 GMT  
-		Size: 14.5 MB (14490390 bytes)  
+	-	`sha256:f9c7daedb1257238477c44246267a93aa2e78530f8c7e4662069050a8f558d1c`  
+		Last Modified: Tue, 29 Aug 2017 06:24:17 GMT  
+		Size: 14.5 MB (14494271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8804355f837124bed3a955307ad53b9bc5fdf955dd545d80e9242c9cb8451080`  
-		Last Modified: Mon, 24 Jul 2017 20:26:04 GMT  
-		Size: 1.7 MB (1657388 bytes)  
+	-	`sha256:be6c737eb06a337c4413ecb82e525e25abd6f043ed222a62a4f7505db0ec14d6`  
+		Last Modified: Tue, 29 Aug 2017 06:24:13 GMT  
+		Size: 1.7 MB (1657705 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a19b278d4ccdad3de517aa7053410d76c056916f278103fe36aaf91504315303`  
-		Last Modified: Mon, 24 Jul 2017 20:26:05 GMT  
-		Size: 3.3 MB (3329338 bytes)  
+	-	`sha256:007c5d0639d48e4c58a3ca8b48122595e69c713f85fec1ba80bd1ce7bf24dbb3`  
+		Last Modified: Tue, 29 Aug 2017 06:24:13 GMT  
+		Size: 3.3 MB (3329229 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba4cf5edc04dba9fafcd31e44d8176affd1c9bbdc833a17721802378a1fb46d5`  
-		Last Modified: Mon, 24 Jul 2017 20:26:55 GMT  
+	-	`sha256:4ce5b508284a7517e75d3874f9730b05f8093e3d2f43f999eea23579bfb1ccb5`  
+		Last Modified: Tue, 29 Aug 2017 06:25:09 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:2-onbuild`
 
 ```console
-$ docker pull python@sha256:83ad72b43c3ffb6d23f92e13baedadcab071b467bfb0507cb6a4dd2b5cc24e2e
+$ docker pull python@sha256:da6f2199ae5a9aa7bade9dd18206808ddaa7cd719befcda7486bce1db86f2218
 ```
 
 -	Platforms:
@@ -7500,9 +7500,9 @@ $ docker pull python@sha256:83ad72b43c3ffb6d23f92e13baedadcab071b467bfb0507cb6a4
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **269.3 MB (269328527 bytes)**  
+-	Total Size: **272.2 MB (272160797 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a6d7503b6b7e2ae6f907e97c5e9de61958be2cfd16a734101ece3b051288f837`
+-	Image ID: `sha256:8f648a7dadadeddbe720ca670a02a6e94f278b0b0ffc0437b18cad5a05ef7a85`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -7516,37 +7516,37 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:25:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:26:05 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Mon, 28 Aug 2017 23:34:35 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 19:46:11 GMT
+# Tue, 29 Aug 2017 05:50:32 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 19:46:31 GMT
+# Tue, 29 Aug 2017 05:50:57 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:12:23 GMT
+# Tue, 29 Aug 2017 06:12:24 GMT
 ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Mon, 24 Jul 2017 20:12:23 GMT
+# Tue, 29 Aug 2017 06:12:24 GMT
 ENV PYTHON_VERSION=2.7.13
-# Mon, 24 Jul 2017 20:14:17 GMT
+# Tue, 29 Aug 2017 06:14:28 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 20:14:17 GMT
+# Tue, 29 Aug 2017 06:14:28 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 20:14:21 GMT
+# Tue, 29 Aug 2017 06:14:32 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 20:14:22 GMT
+# Tue, 29 Aug 2017 06:14:36 GMT
 RUN pip install --no-cache-dir virtualenv
-# Mon, 24 Jul 2017 20:14:23 GMT
+# Tue, 29 Aug 2017 06:14:36 GMT
 CMD ["python2"]
-# Mon, 24 Jul 2017 20:17:14 GMT
+# Tue, 29 Aug 2017 06:14:46 GMT
 RUN mkdir -p /usr/src/app
-# Mon, 24 Jul 2017 20:17:15 GMT
+# Tue, 29 Aug 2017 06:14:47 GMT
 WORKDIR /usr/src/app
-# Mon, 24 Jul 2017 20:17:15 GMT
+# Tue, 29 Aug 2017 06:14:47 GMT
 ONBUILD COPY requirements.txt /usr/src/app/
-# Mon, 24 Jul 2017 20:17:15 GMT
+# Tue, 29 Aug 2017 06:14:47 GMT
 ONBUILD RUN pip install --no-cache-dir -r requirements.txt
-# Mon, 24 Jul 2017 20:17:15 GMT
+# Tue, 29 Aug 2017 06:14:48 GMT
 ONBUILD COPY . /usr/src/app
 ```
 
@@ -7563,35 +7563,35 @@ ONBUILD COPY . /usr/src/app
 		Last Modified: Mon, 24 Jul 2017 17:33:54 GMT  
 		Size: 43.2 MB (43226131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3245b5a1c52cbf0ae23d948fb94ef7b321e3dc54e13c3f6cf79951ed8237f03e`  
-		Last Modified: Mon, 24 Jul 2017 17:34:30 GMT  
-		Size: 131.9 MB (131858814 bytes)  
+	-	`sha256:49fb60496f634f9afb60bc3374ab2d408c90a59ad033f6400d2b8ce0c9e2c6ac`  
+		Last Modified: Mon, 28 Aug 2017 23:58:24 GMT  
+		Size: 134.7 MB (134683941 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:032924b710ba95b71e9a2d971e705bab895ddf7a219994c2cf8761f6959e62ed`  
-		Last Modified: Mon, 24 Jul 2017 20:19:29 GMT  
-		Size: 2.9 MB (2897388 bytes)  
+	-	`sha256:ad0734c5f18ed0a50a6f52607d34adabe5e4fead828cfd5ee5072e35bea945f9`  
+		Last Modified: Tue, 29 Aug 2017 06:17:38 GMT  
+		Size: 2.9 MB (2900442 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fd37168d02bb8082a71071fc60cd3532ec4f92ef3f1fe2a7cdbbe87ba66b8618`  
-		Last Modified: Mon, 24 Jul 2017 20:26:07 GMT  
-		Size: 14.5 MB (14490390 bytes)  
+	-	`sha256:f9c7daedb1257238477c44246267a93aa2e78530f8c7e4662069050a8f558d1c`  
+		Last Modified: Tue, 29 Aug 2017 06:24:17 GMT  
+		Size: 14.5 MB (14494271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8804355f837124bed3a955307ad53b9bc5fdf955dd545d80e9242c9cb8451080`  
-		Last Modified: Mon, 24 Jul 2017 20:26:04 GMT  
-		Size: 1.7 MB (1657388 bytes)  
+	-	`sha256:be6c737eb06a337c4413ecb82e525e25abd6f043ed222a62a4f7505db0ec14d6`  
+		Last Modified: Tue, 29 Aug 2017 06:24:13 GMT  
+		Size: 1.7 MB (1657705 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a19b278d4ccdad3de517aa7053410d76c056916f278103fe36aaf91504315303`  
-		Last Modified: Mon, 24 Jul 2017 20:26:05 GMT  
-		Size: 3.3 MB (3329338 bytes)  
+	-	`sha256:007c5d0639d48e4c58a3ca8b48122595e69c713f85fec1ba80bd1ce7bf24dbb3`  
+		Last Modified: Tue, 29 Aug 2017 06:24:13 GMT  
+		Size: 3.3 MB (3329229 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ba4cf5edc04dba9fafcd31e44d8176affd1c9bbdc833a17721802378a1fb46d5`  
-		Last Modified: Mon, 24 Jul 2017 20:26:55 GMT  
+	-	`sha256:4ce5b508284a7517e75d3874f9730b05f8093e3d2f43f999eea23579bfb1ccb5`  
+		Last Modified: Tue, 29 Aug 2017 06:25:09 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:2.7.13-wheezy`
 
 ```console
-$ docker pull python@sha256:5877157313c4d563b99aa037da6e9b81525a81540b70223c8dccec71ea563c02
+$ docker pull python@sha256:64b05708c4f7b47e3854dcb3be7533eb5dc60a93a6c7cac8b288e5decb8f84ad
 ```
 
 -	Platforms:
@@ -7601,9 +7601,9 @@ $ docker pull python@sha256:5877157313c4d563b99aa037da6e9b81525a81540b70223c8dcc
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **203.0 MB (203044386 bytes)**  
+-	Total Size: **207.8 MB (207755447 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d7e38d83268121aaa2fc22b31b7decbce484ad6d4a786c7634544cd3e9b179d`
+-	Image ID: `sha256:079b6dba1c47fd14151414f860c50c190fb96cd05d9ce29d8d04b4a99a6c9d22`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -7617,27 +7617,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:30:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:31:31 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:01:43 GMT
+# Mon, 28 Aug 2017 23:44:11 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 06:03:10 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 20:01:43 GMT
+# Tue, 29 Aug 2017 06:03:10 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 20:01:57 GMT
+# Tue, 29 Aug 2017 06:03:31 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:17:17 GMT
+# Tue, 29 Aug 2017 06:15:01 GMT
 ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Mon, 24 Jul 2017 20:17:18 GMT
+# Tue, 29 Aug 2017 06:15:01 GMT
 ENV PYTHON_VERSION=2.7.13
-# Mon, 24 Jul 2017 20:18:43 GMT
+# Tue, 29 Aug 2017 06:16:36 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture -qDEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 20:18:44 GMT
+# Tue, 29 Aug 2017 06:16:36 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 20:18:48 GMT
+# Tue, 29 Aug 2017 06:16:40 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 20:18:49 GMT
+# Tue, 29 Aug 2017 06:16:42 GMT
 RUN pip install --no-cache-dir virtualenv
-# Mon, 24 Jul 2017 20:18:50 GMT
+# Tue, 29 Aug 2017 06:16:43 GMT
 CMD ["python2"]
 ```
 
@@ -7654,31 +7654,31 @@ CMD ["python2"]
 		Last Modified: Mon, 24 Jul 2017 17:38:35 GMT  
 		Size: 37.9 MB (37938424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:facceed7e9e5461593431499743ba1696733bf243ed03ab2b5e2005262b6b41b`  
-		Last Modified: Mon, 24 Jul 2017 17:39:03 GMT  
-		Size: 96.9 MB (96946764 bytes)  
+	-	`sha256:59161aeb8f0a102d52002e0e8c257f9e3c400c42862d1c0c560565d8ff4fd833`  
+		Last Modified: Tue, 29 Aug 2017 00:05:38 GMT  
+		Size: 101.6 MB (101644990 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a0460cf202bc1bf3a60f3723761c2c9138353921658650ae497d7ffdabb7987`  
-		Last Modified: Mon, 24 Jul 2017 20:23:51 GMT  
-		Size: 3.2 MB (3231793 bytes)  
+	-	`sha256:80322a2fd85f670d3e7961c8b150bf5bff85489c301742ad36b92ae1e8a4961d`  
+		Last Modified: Tue, 29 Aug 2017 06:21:39 GMT  
+		Size: 3.2 MB (3237332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cd512e98d68692107600fc483cd036a0dde03fa509b3c36753a2a07e4b4f725`  
-		Last Modified: Mon, 24 Jul 2017 20:27:15 GMT  
-		Size: 14.9 MB (14888413 bytes)  
+	-	`sha256:7d47a34338f9dfc1473802e373824cef7260032a4d61fddaaeb5de661fbea78c`  
+		Last Modified: Tue, 29 Aug 2017 06:25:40 GMT  
+		Size: 14.9 MB (14895384 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c37741775743827f9b1fb4d342ae977fcf1d62262b1716f76272400f93027f4`  
-		Last Modified: Mon, 24 Jul 2017 20:27:11 GMT  
-		Size: 1.7 MB (1657398 bytes)  
+	-	`sha256:d1014df413066401c7b630e16f3dd46f210efb478c7a5428ee253e3a7d2f917a`  
+		Last Modified: Tue, 29 Aug 2017 06:25:38 GMT  
+		Size: 1.7 MB (1657693 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e835332edc0bdb0cbbefa5b8c53a80d48eef41fb6e77f792b246b4558ccfe0e`  
-		Last Modified: Mon, 24 Jul 2017 20:27:12 GMT  
-		Size: 3.3 MB (3329362 bytes)  
+	-	`sha256:b8e04239a05022265fa37af0af88d38d7b011faefc00021257c54061ee16923a`  
+		Last Modified: Tue, 29 Aug 2017 06:25:37 GMT  
+		Size: 3.3 MB (3329392 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:2.7-wheezy`
 
 ```console
-$ docker pull python@sha256:5877157313c4d563b99aa037da6e9b81525a81540b70223c8dccec71ea563c02
+$ docker pull python@sha256:64b05708c4f7b47e3854dcb3be7533eb5dc60a93a6c7cac8b288e5decb8f84ad
 ```
 
 -	Platforms:
@@ -7688,9 +7688,9 @@ $ docker pull python@sha256:5877157313c4d563b99aa037da6e9b81525a81540b70223c8dcc
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **203.0 MB (203044386 bytes)**  
+-	Total Size: **207.8 MB (207755447 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d7e38d83268121aaa2fc22b31b7decbce484ad6d4a786c7634544cd3e9b179d`
+-	Image ID: `sha256:079b6dba1c47fd14151414f860c50c190fb96cd05d9ce29d8d04b4a99a6c9d22`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -7704,27 +7704,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:30:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:31:31 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:01:43 GMT
+# Mon, 28 Aug 2017 23:44:11 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 06:03:10 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 20:01:43 GMT
+# Tue, 29 Aug 2017 06:03:10 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 20:01:57 GMT
+# Tue, 29 Aug 2017 06:03:31 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:17:17 GMT
+# Tue, 29 Aug 2017 06:15:01 GMT
 ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Mon, 24 Jul 2017 20:17:18 GMT
+# Tue, 29 Aug 2017 06:15:01 GMT
 ENV PYTHON_VERSION=2.7.13
-# Mon, 24 Jul 2017 20:18:43 GMT
+# Tue, 29 Aug 2017 06:16:36 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture -qDEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 20:18:44 GMT
+# Tue, 29 Aug 2017 06:16:36 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 20:18:48 GMT
+# Tue, 29 Aug 2017 06:16:40 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 20:18:49 GMT
+# Tue, 29 Aug 2017 06:16:42 GMT
 RUN pip install --no-cache-dir virtualenv
-# Mon, 24 Jul 2017 20:18:50 GMT
+# Tue, 29 Aug 2017 06:16:43 GMT
 CMD ["python2"]
 ```
 
@@ -7741,31 +7741,31 @@ CMD ["python2"]
 		Last Modified: Mon, 24 Jul 2017 17:38:35 GMT  
 		Size: 37.9 MB (37938424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:facceed7e9e5461593431499743ba1696733bf243ed03ab2b5e2005262b6b41b`  
-		Last Modified: Mon, 24 Jul 2017 17:39:03 GMT  
-		Size: 96.9 MB (96946764 bytes)  
+	-	`sha256:59161aeb8f0a102d52002e0e8c257f9e3c400c42862d1c0c560565d8ff4fd833`  
+		Last Modified: Tue, 29 Aug 2017 00:05:38 GMT  
+		Size: 101.6 MB (101644990 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a0460cf202bc1bf3a60f3723761c2c9138353921658650ae497d7ffdabb7987`  
-		Last Modified: Mon, 24 Jul 2017 20:23:51 GMT  
-		Size: 3.2 MB (3231793 bytes)  
+	-	`sha256:80322a2fd85f670d3e7961c8b150bf5bff85489c301742ad36b92ae1e8a4961d`  
+		Last Modified: Tue, 29 Aug 2017 06:21:39 GMT  
+		Size: 3.2 MB (3237332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cd512e98d68692107600fc483cd036a0dde03fa509b3c36753a2a07e4b4f725`  
-		Last Modified: Mon, 24 Jul 2017 20:27:15 GMT  
-		Size: 14.9 MB (14888413 bytes)  
+	-	`sha256:7d47a34338f9dfc1473802e373824cef7260032a4d61fddaaeb5de661fbea78c`  
+		Last Modified: Tue, 29 Aug 2017 06:25:40 GMT  
+		Size: 14.9 MB (14895384 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c37741775743827f9b1fb4d342ae977fcf1d62262b1716f76272400f93027f4`  
-		Last Modified: Mon, 24 Jul 2017 20:27:11 GMT  
-		Size: 1.7 MB (1657398 bytes)  
+	-	`sha256:d1014df413066401c7b630e16f3dd46f210efb478c7a5428ee253e3a7d2f917a`  
+		Last Modified: Tue, 29 Aug 2017 06:25:38 GMT  
+		Size: 1.7 MB (1657693 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e835332edc0bdb0cbbefa5b8c53a80d48eef41fb6e77f792b246b4558ccfe0e`  
-		Last Modified: Mon, 24 Jul 2017 20:27:12 GMT  
-		Size: 3.3 MB (3329362 bytes)  
+	-	`sha256:b8e04239a05022265fa37af0af88d38d7b011faefc00021257c54061ee16923a`  
+		Last Modified: Tue, 29 Aug 2017 06:25:37 GMT  
+		Size: 3.3 MB (3329392 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:2-wheezy`
 
 ```console
-$ docker pull python@sha256:5877157313c4d563b99aa037da6e9b81525a81540b70223c8dccec71ea563c02
+$ docker pull python@sha256:64b05708c4f7b47e3854dcb3be7533eb5dc60a93a6c7cac8b288e5decb8f84ad
 ```
 
 -	Platforms:
@@ -7775,9 +7775,9 @@ $ docker pull python@sha256:5877157313c4d563b99aa037da6e9b81525a81540b70223c8dcc
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **203.0 MB (203044386 bytes)**  
+-	Total Size: **207.8 MB (207755447 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d7e38d83268121aaa2fc22b31b7decbce484ad6d4a786c7634544cd3e9b179d`
+-	Image ID: `sha256:079b6dba1c47fd14151414f860c50c190fb96cd05d9ce29d8d04b4a99a6c9d22`
 -	Default Command: `["python2"]`
 
 ```dockerfile
@@ -7791,27 +7791,27 @@ RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificat
 RUN set -ex; 	if ! command -v gpg > /dev/null; then 		apt-get update; 		apt-get install -y --no-install-recommends 			gnupg2 			dirmngr 		; 		rm -rf /var/lib/apt/lists/*; 	fi
 # Mon, 24 Jul 2017 17:30:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		bzr 		git 		mercurial 		openssh-client 		subversion 				procps 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 17:31:31 GMT
-RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:01:43 GMT
+# Mon, 28 Aug 2017 23:44:11 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libgeoip-dev 		libglib2.0-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libncurses-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		xz-utils 		zlib1g-dev 				$( 			if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then 				echo 'default-libmysqlclient-dev'; 			else 				echo 'libmysqlclient-dev'; 			fi 		) 	; 	rm -rf /var/lib/apt/lists/*
+# Tue, 29 Aug 2017 06:03:10 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 24 Jul 2017 20:01:43 GMT
+# Tue, 29 Aug 2017 06:03:10 GMT
 ENV LANG=C.UTF-8
-# Mon, 24 Jul 2017 20:01:57 GMT
+# Tue, 29 Aug 2017 06:03:31 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		tcl 		tk 	&& rm -rf /var/lib/apt/lists/*
-# Mon, 24 Jul 2017 20:17:17 GMT
+# Tue, 29 Aug 2017 06:15:01 GMT
 ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Mon, 24 Jul 2017 20:17:18 GMT
+# Tue, 29 Aug 2017 06:15:01 GMT
 ENV PYTHON_VERSION=2.7.13
-# Mon, 24 Jul 2017 20:18:43 GMT
+# Tue, 29 Aug 2017 06:16:36 GMT
 RUN set -ex 	&& buildDeps=' 		dpkg-dev 		tcl-dev 		tk-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture -qDEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Mon, 24 Jul 2017 20:18:44 GMT
+# Tue, 29 Aug 2017 06:16:36 GMT
 ENV PYTHON_PIP_VERSION=9.0.1
-# Mon, 24 Jul 2017 20:18:48 GMT
+# Tue, 29 Aug 2017 06:16:40 GMT
 RUN set -ex; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Mon, 24 Jul 2017 20:18:49 GMT
+# Tue, 29 Aug 2017 06:16:42 GMT
 RUN pip install --no-cache-dir virtualenv
-# Mon, 24 Jul 2017 20:18:50 GMT
+# Tue, 29 Aug 2017 06:16:43 GMT
 CMD ["python2"]
 ```
 
@@ -7828,25 +7828,25 @@ CMD ["python2"]
 		Last Modified: Mon, 24 Jul 2017 17:38:35 GMT  
 		Size: 37.9 MB (37938424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:facceed7e9e5461593431499743ba1696733bf243ed03ab2b5e2005262b6b41b`  
-		Last Modified: Mon, 24 Jul 2017 17:39:03 GMT  
-		Size: 96.9 MB (96946764 bytes)  
+	-	`sha256:59161aeb8f0a102d52002e0e8c257f9e3c400c42862d1c0c560565d8ff4fd833`  
+		Last Modified: Tue, 29 Aug 2017 00:05:38 GMT  
+		Size: 101.6 MB (101644990 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3a0460cf202bc1bf3a60f3723761c2c9138353921658650ae497d7ffdabb7987`  
-		Last Modified: Mon, 24 Jul 2017 20:23:51 GMT  
-		Size: 3.2 MB (3231793 bytes)  
+	-	`sha256:80322a2fd85f670d3e7961c8b150bf5bff85489c301742ad36b92ae1e8a4961d`  
+		Last Modified: Tue, 29 Aug 2017 06:21:39 GMT  
+		Size: 3.2 MB (3237332 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6cd512e98d68692107600fc483cd036a0dde03fa509b3c36753a2a07e4b4f725`  
-		Last Modified: Mon, 24 Jul 2017 20:27:15 GMT  
-		Size: 14.9 MB (14888413 bytes)  
+	-	`sha256:7d47a34338f9dfc1473802e373824cef7260032a4d61fddaaeb5de661fbea78c`  
+		Last Modified: Tue, 29 Aug 2017 06:25:40 GMT  
+		Size: 14.9 MB (14895384 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c37741775743827f9b1fb4d342ae977fcf1d62262b1716f76272400f93027f4`  
-		Last Modified: Mon, 24 Jul 2017 20:27:11 GMT  
-		Size: 1.7 MB (1657398 bytes)  
+	-	`sha256:d1014df413066401c7b630e16f3dd46f210efb478c7a5428ee253e3a7d2f917a`  
+		Last Modified: Tue, 29 Aug 2017 06:25:38 GMT  
+		Size: 1.7 MB (1657693 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3e835332edc0bdb0cbbefa5b8c53a80d48eef41fb6e77f792b246b4558ccfe0e`  
-		Last Modified: Mon, 24 Jul 2017 20:27:12 GMT  
-		Size: 3.3 MB (3329362 bytes)  
+	-	`sha256:b8e04239a05022265fa37af0af88d38d7b011faefc00021257c54061ee16923a`  
+		Last Modified: Tue, 29 Aug 2017 06:25:37 GMT  
+		Size: 3.3 MB (3329392 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `python:2.7.13-alpine3.6`
