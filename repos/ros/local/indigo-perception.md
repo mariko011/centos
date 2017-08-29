@@ -4529,14 +4529,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=3.13.0-128.177
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-128.177.dsc' linux_3.13.0-128.177.dsc 8127 SHA256:6e389fa352deda8a7e901cf92b9efdef1004edb7afd3ee179029d80184f30ee7
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0.orig.tar.gz' linux_3.13.0.orig.tar.gz 116419243 SHA256:073d6a589655031564407e349c86a316941fc26ef3444bb73a092b43a48347ec
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.13.0-128.177.diff.gz' linux_3.13.0-128.177.diff.gz 9495477 SHA256:294629e01ba9e5356d08b4fe32c738d1811718395b08db85217b9cc1e4a6d364
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.15+dfsg-1`
 
