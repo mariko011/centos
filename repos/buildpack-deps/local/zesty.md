@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c300330f75a0c2fd3afdc6824ce4b6dc5522cef10fa1b6d32ec7b766c678d807`
-- Created: `2017-07-20T17:55:12.40333115Z`
-- Virtual Size: ~ 737.05 Mb  
+- Image ID: `sha256:3f42c3f0f4936e1c38c86740127905538fc66b37b576d12beb96aae982131254`
+- Created: `2017-08-28T23:49:31.369213546Z`
+- Virtual Size: ~ 737.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1323,11 +1323,11 @@ $ apt-get source -qq --print-uris gobject-introspection=1.52.0-0ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.52.0-0ubuntu1.debian.tar.xz' gobject-introspection_1.52.0-0ubuntu1.debian.tar.xz 20780 SHA256:3310afa7b639026abb9773bd18a2d92f247ae01caa952d886ed5d6421274b10a
 ```
 
-### `dpkg` source package: `graphite2=1.3.9-3`
+### `dpkg` source package: `graphite2=1.3.10-0ubuntu0.17.04.1`
 
 Binary Packages:
 
-- `libgraphite2-3:amd64=1.3.9-3`
+- `libgraphite2-3:amd64=1.3.10-0ubuntu0.17.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 
@@ -1344,10 +1344,10 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris graphite2=1.3.9-3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.9-3.dsc' graphite2_1.3.9-3.dsc 2165 SHA256:cd7ab236a07e8f3c32b4633a5603fe3f3ad8b72cf18c5e65deab793b6fcb99cb
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.9.orig.tar.gz' graphite2_1.3.9.orig.tar.gz 3889102 SHA256:ec0185b663059553fd46e8c4a4f0dede60a02f13a7a1fefc2ce70332ea814567
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.9-3.debian.tar.xz' graphite2_1.3.9-3.debian.tar.xz 10752 SHA256:22b121ffea4c8d89598d2186a1a74f27d77d858c622078a15c521f8689d5ee30
+$ apt-get source -qq --print-uris graphite2=1.3.10-0ubuntu0.17.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.10-0ubuntu0.17.04.1.dsc' graphite2_1.3.10-0ubuntu0.17.04.1.dsc 2272 SHA256:fa08b86b496842b067c2844f5f8095e7833998ae8449bef28e4a501f047d3e3b
+'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.10.orig.tar.gz' graphite2_1.3.10.orig.tar.gz 3889647 SHA256:90fde3b2f9ea95d68ffb19278d07d9b8a7efa5ba0e413bebcea802ce05cda1ae
+'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.10-0ubuntu0.17.04.1.debian.tar.xz' graphite2_1.3.10-0ubuntu0.17.04.1.debian.tar.xz 10940 SHA256:b22cfa6e223ba90627941b9e656f660997bbe948a2bc90d3ffdc9739dc95bda0
 ```
 
 ### `dpkg` source package: `graphviz=2.38.0-16ubuntu1`
@@ -1399,12 +1399,12 @@ $ apt-get source -qq --print-uris grep=2.27-2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/grep/grep_2.27-2.debian.tar.bz2' grep_2.27-2.debian.tar.bz2 112728 SHA256:445eaf71811df5ca18242fb5adc417d35e349e49810201977bf7086746b967f4
 ```
 
-### `dpkg` source package: `gtk+2.0=2.24.31-1ubuntu1`
+### `dpkg` source package: `gtk+2.0=2.24.31-1ubuntu1.1`
 
 Binary Packages:
 
-- `libgtk2.0-0:amd64=2.24.31-1ubuntu1`
-- `libgtk2.0-common=2.24.31-1ubuntu1`
+- `libgtk2.0-0:amd64=2.24.31-1ubuntu1.1`
+- `libgtk2.0-common=2.24.31-1ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libgtk2.0-0/copyright`, `/usr/share/doc/libgtk2.0-common/copyright`)
 
@@ -1414,10 +1414,10 @@ Licenses: (parsed from: `/usr/share/doc/libgtk2.0-0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gtk+2.0=2.24.31-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.31-1ubuntu1.dsc' gtk+2.0_2.24.31-1ubuntu1.dsc 4052 SHA256:aa4561342741ffc8267edf2654a07e119c7eea361d0d3b5cecb3df75583c975d
+$ apt-get source -qq --print-uris gtk+2.0=2.24.31-1ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.31-1ubuntu1.1.dsc' gtk+2.0_2.24.31-1ubuntu1.1.dsc 4042 SHA256:575c62bc75f8505012d6d14e1b4a8d4195fc3c03550f5a62a2c976861aa382af
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.31.orig.tar.xz' gtk+2.0_2.24.31.orig.tar.xz 12805344 SHA256:68c1922732c7efc08df4656a5366dcc3afdc8791513400dac276009b40954658
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.31-1ubuntu1.debian.tar.xz' gtk+2.0_2.24.31-1ubuntu1.debian.tar.xz 104772 SHA256:acb34c4e14d2d5eaa415498d3904f99c55bc1d28748d3cd575e99405f66b8251
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+2.0/gtk+2.0_2.24.31-1ubuntu1.1.debian.tar.xz' gtk+2.0_2.24.31-1ubuntu1.1.debian.tar.xz 105168 SHA256:0cdc844172c7d23a13de65b4da81b46de24e037882eedef4e30283b202ac62d5
 ```
 
 ### `dpkg` source package: `gtk+3.0=3.22.11-0ubuntu3`
@@ -1609,23 +1609,23 @@ $ apt-get source -qq --print-uris ilmbase=2.2.0-11ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/i/ilmbase/ilmbase_2.2.0-11ubuntu2.debian.tar.xz' ilmbase_2.2.0-11ubuntu2.debian.tar.xz 13400 SHA256:400b77a32f7a04d78ff0462f32dc1e4073f5e1225ed070c63fa6a0ec619905c5
 ```
 
-### `dpkg` source package: `imagemagick=8:6.9.7.4+dfsg-3ubuntu1.1`
+### `dpkg` source package: `imagemagick=8:6.9.7.4+dfsg-3ubuntu1.2`
 
 Binary Packages:
 
-- `imagemagick=8:6.9.7.4+dfsg-3ubuntu1.1`
-- `imagemagick-6-common=8:6.9.7.4+dfsg-3ubuntu1.1`
-- `imagemagick-6.q16=8:6.9.7.4+dfsg-3ubuntu1.1`
-- `libmagickcore-6-arch-config:amd64=8:6.9.7.4+dfsg-3ubuntu1.1`
-- `libmagickcore-6-headers=8:6.9.7.4+dfsg-3ubuntu1.1`
-- `libmagickcore-6.q16-3:amd64=8:6.9.7.4+dfsg-3ubuntu1.1`
-- `libmagickcore-6.q16-3-extra:amd64=8:6.9.7.4+dfsg-3ubuntu1.1`
-- `libmagickcore-6.q16-dev:amd64=8:6.9.7.4+dfsg-3ubuntu1.1`
-- `libmagickcore-dev=8:6.9.7.4+dfsg-3ubuntu1.1`
-- `libmagickwand-6-headers=8:6.9.7.4+dfsg-3ubuntu1.1`
-- `libmagickwand-6.q16-3:amd64=8:6.9.7.4+dfsg-3ubuntu1.1`
-- `libmagickwand-6.q16-dev:amd64=8:6.9.7.4+dfsg-3ubuntu1.1`
-- `libmagickwand-dev=8:6.9.7.4+dfsg-3ubuntu1.1`
+- `imagemagick=8:6.9.7.4+dfsg-3ubuntu1.2`
+- `imagemagick-6-common=8:6.9.7.4+dfsg-3ubuntu1.2`
+- `imagemagick-6.q16=8:6.9.7.4+dfsg-3ubuntu1.2`
+- `libmagickcore-6-arch-config:amd64=8:6.9.7.4+dfsg-3ubuntu1.2`
+- `libmagickcore-6-headers=8:6.9.7.4+dfsg-3ubuntu1.2`
+- `libmagickcore-6.q16-3:amd64=8:6.9.7.4+dfsg-3ubuntu1.2`
+- `libmagickcore-6.q16-3-extra:amd64=8:6.9.7.4+dfsg-3ubuntu1.2`
+- `libmagickcore-6.q16-dev:amd64=8:6.9.7.4+dfsg-3ubuntu1.2`
+- `libmagickcore-dev=8:6.9.7.4+dfsg-3ubuntu1.2`
+- `libmagickwand-6-headers=8:6.9.7.4+dfsg-3ubuntu1.2`
+- `libmagickwand-6.q16-3:amd64=8:6.9.7.4+dfsg-3ubuntu1.2`
+- `libmagickwand-6.q16-dev:amd64=8:6.9.7.4+dfsg-3ubuntu1.2`
+- `libmagickwand-dev=8:6.9.7.4+dfsg-3ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6-common/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/libmagickcore-6-arch-config/copyright`, `/usr/share/doc/libmagickcore-6-headers/copyright`, `/usr/share/doc/libmagickcore-6.q16-3/copyright`, `/usr/share/doc/libmagickcore-6.q16-3-extra/copyright`, `/usr/share/doc/libmagickcore-6.q16-dev/copyright`, `/usr/share/doc/libmagickcore-dev/copyright`, `/usr/share/doc/libmagickwand-6-headers/copyright`, `/usr/share/doc/libmagickwand-6.q16-3/copyright`, `/usr/share/doc/libmagickwand-6.q16-dev/copyright`, `/usr/share/doc/libmagickwand-dev/copyright`)
 
@@ -1653,8 +1653,14 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris imagemagick=8:6.9.7.4+dfsg-3ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-3ubuntu1.2.dsc' imagemagick_6.9.7.4+dfsg-3ubuntu1.2.dsc 5234 SHA256:85f1d2ca6f9791e3943f66bd0d0e75889e14569b896c7bb5ed977781c103c352
+'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg.orig.tar.xz' imagemagick_6.9.7.4+dfsg.orig.tar.xz 8929800 SHA256:47fb2cdd26f5913318c4504f16ea363e04d1f400dda9ec52e461ab661d724026
+'http://archive.ubuntu.com/ubuntu/pool/main/i/imagemagick/imagemagick_6.9.7.4+dfsg-3ubuntu1.2.debian.tar.xz' imagemagick_6.9.7.4+dfsg-3ubuntu1.2.debian.tar.xz 233340 SHA256:26a52d9e51cfc479622376601d9ec6ab45aa1a211f212546f4368571bb37540b
+```
 
 ### `dpkg` source package: `init-system-helpers=1.47`
 
@@ -2033,11 +2039,11 @@ $ apt-get source -qq --print-uris libgcrypt20=1.7.6-1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-1ubuntu0.1.debian.tar.xz' libgcrypt20_1.7.6-1ubuntu0.1.debian.tar.xz 35136 SHA256:93ba6df55eae0a8687a7c381141caae4430e23df98a7e3d9450a9b137623b03a
 ```
 
-### `dpkg` source package: `libgd2=2.2.4-2`
+### `dpkg` source package: `libgd2=2.2.4-2ubuntu0.2`
 
 Binary Packages:
 
-- `libgd3:amd64=2.2.4-2`
+- `libgd3:amd64=2.2.4-2ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 
@@ -2056,10 +2062,10 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libgd2=2.2.4-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.2.4-2.dsc' libgd2_2.2.4-2.dsc 2293 SHA256:2dd625dd85949a47aa7c7d2eed379e8a0bb7950b24de4be8909549656087da29
+$ apt-get source -qq --print-uris libgd2=2.2.4-2ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.2.4-2ubuntu0.2.dsc' libgd2_2.2.4-2ubuntu0.2.dsc 2262 SHA256:adca6c900b2a1e740e7c0f07b56e6a3e23c7a5e425645b1d1b00b7d6148921b2
 'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.2.4.orig.tar.xz' libgd2_2.2.4.orig.tar.xz 2478528 SHA256:137f13a7eb93ce72e32ccd7cebdab6874f8cf7ddf31d3a455a68e016ecd9e4e6
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.2.4-2.debian.tar.xz' libgd2_2.2.4-2.debian.tar.xz 24884 SHA256:72bbd9f3444daa61e305306988962c815b027e7de1b2b2aa9951d5a45bc44009
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.2.4-2ubuntu0.2.debian.tar.xz' libgd2_2.2.4-2ubuntu0.2.debian.tar.xz 38272 SHA256:495987901013289f604d43d475bd93555f8421480d41e15e46a8df8796a966d7
 ```
 
 ### `dpkg` source package: `libgpg-error=1.26-2`
@@ -2923,18 +2929,24 @@ $ apt-get source -qq --print-uris libyaml=0.1.7-2
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.7-2.debian.tar.xz' libyaml_0.1.7-2.debian.tar.xz 4016 SHA256:6fc7065491dd6f86b46e6f231ae8ab60f8aafbef2dcf4721598644024485b801
 ```
 
-### `dpkg` source package: `linux=4.10.0-28.32`
+### `dpkg` source package: `linux=4.10.0-33.37`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.10.0-28.32`
+- `linux-libc-dev:amd64=4.10.0-33.37`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.10.0-33.37
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.10.0-33.37.dsc' linux_4.10.0-33.37.dsc 6090 SHA256:349698f572fef091285ac06075d25e843bdf0761cf0c0b579a1c72c91a9994d7
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.10.0.orig.tar.gz' linux_4.10.0.orig.tar.gz 143917000 SHA256:1221bcded9062e5740e7cd1b047479494312b13a2a3ba8a48c820d12276c417d
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.10.0-33.37.diff.gz' linux_4.10.0-33.37.diff.gz 7561142 SHA256:f18ae78370500c06817a4f515eba563137b0f9e246ed259924dd02a2bf7a7619
+```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu5`
 
@@ -3591,12 +3603,12 @@ $ apt-get source -qq --print-uris pkg-config=0.29.1-0ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pkg-config/pkg-config_0.29.1-0ubuntu1.diff.gz' pkg-config_0.29.1-0ubuntu1.diff.gz 12597 SHA256:1c44aeeec1896a69f21861e9b9e18bb783258d57f4bd678b173b3890f1a209bf
 ```
 
-### `dpkg` source package: `postgresql-9.6=9.6.3-0ubuntu0.17.04`
+### `dpkg` source package: `postgresql-9.6=9.6.4-0ubuntu0.17.04.1`
 
 Binary Packages:
 
-- `libpq-dev=9.6.3-0ubuntu0.17.04`
-- `libpq5:amd64=9.6.3-0ubuntu0.17.04`
+- `libpq-dev=9.6.4-0ubuntu0.17.04.1`
+- `libpq5:amd64=9.6.4-0ubuntu0.17.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -3615,8 +3627,14 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-9.6=9.6.4-0ubuntu0.17.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.4-0ubuntu0.17.04.1.dsc' postgresql-9.6_9.6.4-0ubuntu0.17.04.1.dsc 3791 SHA256:976fd4e03d7eb18656f9670ca9a853e6610a0220794c7bb4c2477433c57a72b5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.4.orig.tar.bz2' postgresql-9.6_9.6.4.orig.tar.bz2 19566875 SHA256:2b3ab16d82e21cead54c08b95ce3ac480696944a68603b6c11b3205b7376ce13
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.4-0ubuntu0.17.04.1.debian.tar.xz' postgresql-9.6_9.6.4-0ubuntu0.17.04.1.debian.tar.xz 21120 SHA256:1bb1b35c8eb85ccafbbbbbb1aa0b83640ec34b4b71db22e56b6c41ab7b81347f
+```
 
 ### `dpkg` source package: `procps=2:3.3.12-1ubuntu2`
 

@@ -684,20 +684,8 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `The MIT License (MIT)`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.5.14-2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.14-2.dsc' gnutls28_3.5.14-2.dsc 3316 SHA256:f262876ebffa8dbe75b5afa5adf166e2f15245aee255825562497460b3a7c313
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.14.orig.tar.xz' gnutls28_3.5.14.orig.tar.xz 7228200 SHA256:4aa12dec92f42a0434df794aca3d02f6f2a35b47b48c01252de65f355c051bda
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.14.orig.tar.xz.asc' gnutls28_3.5.14.orig.tar.xz.asc 310 SHA256:1e19062e25c65e9bfcf76a3328f7dbe17addd719498297ec8e9a6ed3e9eae490
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.5.14-2.debian.tar.xz' gnutls28_3.5.14-2.debian.tar.xz 100588 SHA256:0a7b11090a7ddbf350e2674d972c2e2326d95f768473edb66acf32a00c90fa8e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnutls28/3.5.14-2/
-- https://sources.debian.net/src/gnutls28/3.5.14-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=3.1-2`
 
@@ -1021,19 +1009,8 @@ Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`)
 - `LGPL-3+`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libidn2-0=2.0.2-1
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_2.0.2-1.dsc' libidn2-0_2.0.2-1.dsc 1790 SHA256:d1a6209c9f1cdd716e5300e73d14081037bc8341526af31a1b5d1a04a68c2ecb
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_2.0.2.orig.tar.gz' libidn2-0_2.0.2.orig.tar.gz 1925342 SHA256:8cd62828b2ab0171e0f35a302f3ad60c3a3fffb45733318b3a8205f9d187eeab
-'http://deb.debian.org/debian/pool/main/libi/libidn2-0/libidn2-0_2.0.2-1.debian.tar.xz' libidn2-0_2.0.2-1.debian.tar.xz 57536 SHA256:db394f33acc4ed7e3c04a3bb8e7940fab0d0b6a7ec351f71f69b40ae3ae24991
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libidn2-0/2.0.2-1/
-- https://sources.debian.net/src/libidn2-0/2.0.2-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libksba=1.3.5-2`
 
@@ -1261,18 +1238,8 @@ Licenses: (parsed from: `/usr/share/doc/lsb-base/copyright`)
 - `BSD-3-clause`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris lsb=9.20161125
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_9.20161125.dsc' lsb_9.20161125.dsc 1697 SHA256:f2dd58084b1beabe966136cfd2e1b355002c1fb1635a6db5ef159b09ed94864f
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_9.20161125.tar.xz' lsb_9.20161125.tar.xz 43096 SHA256:0f9889ff1922da54d1f1538c11a57aa21dc5adf621e6201b18026f6633088bbd
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/lsb/9.20161125/
-- https://sources.debian.net/src/lsb/9.20161125/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lz4=0.0~r131-2`
 
@@ -1425,19 +1392,8 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.24.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.24.0-1.dsc' nghttp2_1.24.0-1.dsc 2310 SHA256:a57980d28e67bac5df9af0ceb74053e076d76afac6c7d3f8a1acbf1c94945f13
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.24.0.orig.tar.bz2' nghttp2_1.24.0.orig.tar.bz2 1800637 SHA256:69db1bb4243805b922d44ba6d9887bc5a19a58199c42f8a5e4a96e9fc635daa3
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.24.0-1.debian.tar.xz' nghttp2_1.24.0-1.debian.tar.xz 11992 SHA256:2deb09c3111d869357bb371f195a2ba163cf14bab42a87444c109edd0839870d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nghttp2/1.24.0-1/
-- https://sources.debian.net/src/nghttp2/1.24.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `npth=1.5-2`
 

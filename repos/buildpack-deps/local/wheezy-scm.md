@@ -749,19 +749,8 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris git=1:1.7.10.4-1+wheezy4
-'http://security.debian.org/pool/updates/main/g/git/git_1.7.10.4-1+wheezy4.dsc' git_1.7.10.4-1+wheezy4.dsc 2780 SHA256:f09298ad5b7eb6a12b23e47d8fd51f5c95e9accc514d6c42a0fa2ac1af4c178f
-'http://security.debian.org/pool/updates/main/g/git/git_1.7.10.4.orig.tar.gz' git_1.7.10.4.orig.tar.gz 3813469 SHA256:77ce53644d687202c64ca29db4ae5055daff4e0c611dde8f1d51edb752dba8dd
-'http://security.debian.org/pool/updates/main/g/git/git_1.7.10.4-1+wheezy4.diff.gz' git_1.7.10.4-1+wheezy4.diff.gz 519119 SHA256:38982497cb067db76be01caaed2f2bb2b82830a7f287aa3123aa9aa04cd6386e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/git/1:1.7.10.4-1+wheezy4/
-- https://sources.debian.net/src/git/1:1.7.10.4-1+wheezy4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnupg=1.4.12-7+deb7u8`
 
@@ -1537,19 +1526,8 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mercurial=2.2.2-4+deb7u4
-'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2-4+deb7u4.dsc' mercurial_2.2.2-4+deb7u4.dsc 2178 SHA256:7db66ec2657c9f1c2b63722edac2d786f26f9f582d4e56f061b513df5cd52179
-'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2.orig.tar.gz' mercurial_2.2.2.orig.tar.gz 3430037 SHA256:3489110ec11fefbd2cbdefb8d715d0a869cef3dd729aaf4d5141108f8be1600a
-'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2-4+deb7u4.debian.tar.gz' mercurial_2.2.2-4+deb7u4.debian.tar.gz 53259 SHA256:e3441baa8d665cc986310593d73d3d4d5bcc4fa93cb611ae127440f6fcc1218d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mercurial/2.2.2-4+deb7u4/
-- https://sources.debian.net/src/mercurial/2.2.2-4+deb7u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mime-support=3.52-1+deb7u1`
 

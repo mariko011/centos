@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:66b0d570656d32b7b600cc9698fc2a57d8682ac5ad7c873483b67fef618d427b`
-- Created: `2017-08-10T20:50:10.131649763Z`
+- Image ID: `sha256:c1cad1fe178492523eec627ae34daa0daf384416bacba59d485ba2a544547b31`
+- Created: `2017-08-28T23:45:29.332772941Z`
 - Virtual Size: ~ 640.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1330,11 +1330,11 @@ $ apt-get source -qq --print-uris gobject-introspection=1.46.0-3ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.46.0-3ubuntu1.debian.tar.xz' gobject-introspection_1.46.0-3ubuntu1.debian.tar.xz 19584 SHA256:9c8c898f33d1629ec267700010a34715a7f4f854af983a9d3f038dbc55b68792
 ```
 
-### `dpkg` source package: `graphite2=1.3.6-1ubuntu1`
+### `dpkg` source package: `graphite2=1.3.10-0ubuntu0.16.04.1`
 
 Binary Packages:
 
-- `libgraphite2-3:amd64=1.3.6-1ubuntu1`
+- `libgraphite2-3:amd64=1.3.10-0ubuntu0.16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 
@@ -1351,10 +1351,10 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris graphite2=1.3.6-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.6-1ubuntu1.dsc' graphite2_1.3.6-1ubuntu1.dsc 2196 SHA256:f50b031209603499aeefb66ec3f0a31e0516945bfb37a04f69c059c18815f251
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.6.orig.tar.gz' graphite2_1.3.6.orig.tar.gz 3881106 SHA256:475e7657ac606ed8805518031729c1273cf7d9d422169ac6f7882e01d832af75
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.6-1ubuntu1.debian.tar.xz' graphite2_1.3.6-1ubuntu1.debian.tar.xz 9920 SHA256:b02623e84af8d45e538b4419c71ad467f7fd34a3c1513b819791774b31aeb12e
+$ apt-get source -qq --print-uris graphite2=1.3.10-0ubuntu0.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.10-0ubuntu0.16.04.1.dsc' graphite2_1.3.10-0ubuntu0.16.04.1.dsc 2238 SHA256:a1bb1b86e8f56a790b9e1336f0c75a10f76d9a0f12c0bd0fc24c8a5709a6c4b1
+'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.10.orig.tar.gz' graphite2_1.3.10.orig.tar.gz 3889647 SHA256:90fde3b2f9ea95d68ffb19278d07d9b8a7efa5ba0e413bebcea802ce05cda1ae
+'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.10-0ubuntu0.16.04.1.debian.tar.xz' graphite2_1.3.10-0ubuntu0.16.04.1.debian.tar.xz 10016 SHA256:05b62d5770153e989fa452e6097fd201c538a97fdbbbc7a2034d89717f57e448
 ```
 
 ### `dpkg` source package: `graphviz=2.38.0-12ubuntu2.1`
@@ -2046,11 +2046,11 @@ $ apt-get source -qq --print-uris libgcrypt20=1.6.5-2ubuntu0.3
 'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.6.5-2ubuntu0.3.debian.tar.xz' libgcrypt20_1.6.5-2ubuntu0.3.debian.tar.xz 36472 SHA256:3c29fc316e9067088cd6954a2b4c55e7955829362be9c10e09fa33b5e94f2f6c
 ```
 
-### `dpkg` source package: `libgd2=2.1.1-4ubuntu0.16.04.6`
+### `dpkg` source package: `libgd2=2.1.1-4ubuntu0.16.04.7`
 
 Binary Packages:
 
-- `libgd3:amd64=2.1.1-4ubuntu0.16.04.6`
+- `libgd3:amd64=2.1.1-4ubuntu0.16.04.7`
 
 Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 
@@ -2066,8 +2066,14 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 - `WEBP`
 - `XFIG`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libgd2=2.1.1-4ubuntu0.16.04.7
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1-4ubuntu0.16.04.7.dsc' libgd2_2.1.1-4ubuntu0.16.04.7.dsc 2332 SHA256:47bb709ac243e731dde818eb1c03ad3e06664418791c307758d0311f922c9fb4
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1.orig.tar.gz' libgd2_2.1.1.orig.tar.gz 2033791 SHA256:a68c69d2fe3eaab9db63b1c4d391dd549c26d3b47bfba484d5ed2d433c55d4d8
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1-4ubuntu0.16.04.7.debian.tar.xz' libgd2_2.1.1-4ubuntu0.16.04.7.debian.tar.xz 50508 SHA256:5a45c4f50f5388aa914743d0fc728bde54a15115025f0f2376a1c6f13e42926c
+```
 
 ### `dpkg` source package: `libgpg-error=1.21-2ubuntu1`
 
@@ -2892,19 +2898,25 @@ $ apt-get source -qq --print-uris libyaml=0.1.6-3
 'http://archive.ubuntu.com/ubuntu/pool/main/liby/libyaml/libyaml_0.1.6-3.debian.tar.xz' libyaml_0.1.6-3.debian.tar.xz 4268 SHA256:fd567e6918903833e5c4f1f87254c550eca07c2bba1ccbe6031da33243cf4297
 ```
 
-### `dpkg` source package: `linux=4.4.0-89.112`
+### `dpkg` source package: `linux=4.4.0-93.116`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.4.0-89.112`
+- `linux-libc-dev:amd64=4.4.0-93.116`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 - `redpine-signals`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=4.4.0-93.116
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-93.116.dsc' linux_4.4.0-93.116.dsc 9290 SHA256:50735e20e653ac5dcbf2a85c304bca47f806e33e9918bcf9929788a6dde5a9c0
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0.orig.tar.gz' linux_4.4.0.orig.tar.gz 132860730 SHA256:730e75919b5d30a9bc934ccb300eaedfdf44994ca9ee1d07a46901c46c221357
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.4.0-93.116.diff.gz' linux_4.4.0-93.116.diff.gz 13176909 SHA256:439be00481fbaf209655c8b217180fee0c3b1bea964cc19624761b41c2403c84
+```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu0.2`
 
@@ -3504,12 +3516,12 @@ $ apt-get source -qq --print-uris pkg-config=0.29.1-0ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pkg-config/pkg-config_0.29.1-0ubuntu1.diff.gz' pkg-config_0.29.1-0ubuntu1.diff.gz 12597 SHA256:1c44aeeec1896a69f21861e9b9e18bb783258d57f4bd678b173b3890f1a209bf
 ```
 
-### `dpkg` source package: `postgresql-9.5=9.5.7-0ubuntu0.16.04`
+### `dpkg` source package: `postgresql-9.5=9.5.8-0ubuntu0.16.04.1`
 
 Binary Packages:
 
-- `libpq-dev=9.5.7-0ubuntu0.16.04`
-- `libpq5:amd64=9.5.7-0ubuntu0.16.04`
+- `libpq-dev=9.5.8-0ubuntu0.16.04.1`
+- `libpq5:amd64=9.5.8-0ubuntu0.16.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -3520,8 +3532,14 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `Tcl`
 - `almost exclusively BSD`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-9.5=9.5.8-0ubuntu0.16.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.8-0ubuntu0.16.04.1.dsc' postgresql-9.5_9.5.8-0ubuntu0.16.04.1.dsc 3657 SHA256:c77a666392c99ff7468427fa0d6c3f0e67aa045e77dbf08e996efe6315c19902
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.8.orig.tar.bz2' postgresql-9.5_9.5.8.orig.tar.bz2 18670910 SHA256:ade57068f134f36710fa953e1ef79185abd96572f8098741413132f79ed37202
+'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.5/postgresql-9.5_9.5.8-0ubuntu0.16.04.1.debian.tar.xz' postgresql-9.5_9.5.8-0ubuntu0.16.04.1.debian.tar.xz 22924 SHA256:34729c8b7fc9be9bc46c504ecaef29ea57e07f4b1a262e21bcbabfdf5d709825
+```
 
 ### `dpkg` source package: `procps=2:3.3.10-4ubuntu2.3`
 
