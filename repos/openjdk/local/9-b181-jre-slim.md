@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e89095b574c98f75826ca5780e22b7789e6d19f9fc50e1279f94bf4a4fb7fb7f`
-- Created: `2017-08-08T18:44:46.451871361Z`
-- Virtual Size: ~ 373.92 Mb  
+- Image ID: `sha256:1bf31f20be68d0eb79cd725e642ac992b3d7f5e93283a32ba711d8f8f8130b64`
+- Created: `2017-08-25T21:07:21.424582768Z`
+- Virtual Size: ~ 370.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
   - `JAVA_VERSION=9-b181`
-  - `JAVA_DEBIAN_VERSION=9~b181-2`
+  - `JAVA_DEBIAN_VERSION=9~b181-4`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -55,11 +55,11 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `apparmor=2.11.0-9`
+### `dpkg` source package: `apparmor=2.11.0-10`
 
 Binary Packages:
 
-- `libapparmor1:amd64=2.11.0-9`
+- `libapparmor1:amd64=2.11.0-10`
 
 Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 
@@ -69,8 +69,19 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris apparmor=2.11.0-10
+'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0-10.dsc' apparmor_2.11.0-10.dsc 3161 SHA256:e34e24b3b6782ec18888eb2aff2c9edcd7f5c514ef8a55b4abebb156ff2420ef
+'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0.orig.tar.gz' apparmor_2.11.0.orig.tar.gz 5013297 SHA256:b1c489ea11e7771b8e6b181532cafbf9ebe6603e3cb00e2558f21b7a5bdd739a
+'http://deb.debian.org/debian/pool/main/a/apparmor/apparmor_2.11.0-10.debian.tar.xz' apparmor_2.11.0-10.debian.tar.xz 87580 SHA256:3ac68659310ec08a8ca6f3465ef5dc7c0ef2ff0f1050b0c7b5016d76dfe40b69
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/apparmor/2.11.0-10/
+- https://sources.debian.net/src/apparmor/2.11.0-10/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `apt=1.5~beta1`
 
@@ -286,11 +297,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/ca-certificates-java/20170531+nmu1/
 - https://sources.debian.net/src/ca-certificates-java/20170531+nmu1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `ca-certificates=20161130+nmu1`
+### `dpkg` source package: `ca-certificates=20170717`
 
 Binary Packages:
 
-- `ca-certificates=20161130+nmu1`
+- `ca-certificates=20170717`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -301,15 +312,15 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20161130+nmu1
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20161130+nmu1.dsc' ca-certificates_20161130+nmu1.dsc 1886 SHA256:09e8d33c479827b070719170a9a98de7c1d4e9c7973ed8556321d08d8ae27494
-'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20161130+nmu1.tar.xz' ca-certificates_20161130+nmu1.tar.xz 298648 SHA256:77f9aca431e3122bf04aa0ffd989b723d906db4d1c106e3290e463d73c177f0e
+$ apt-get source -qq --print-uris ca-certificates=20170717
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20170717.dsc' ca-certificates_20170717.dsc 1506 SHA256:da6268ff88e05c85c23c62add13d3d127087467d0c7e83974ca28db5543a252a
+'http://deb.debian.org/debian/pool/main/c/ca-certificates/ca-certificates_20170717.tar.xz' ca-certificates_20170717.tar.xz 293028 SHA256:e487639b641fa75445174734dd6e9d600373e3248b3d86a7e3c6d0f6977decd2
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/ca-certificates/20161130+nmu1/
-- https://sources.debian.net/src/ca-certificates/20161130+nmu1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/ca-certificates/20170717/
+- https://sources.debian.net/src/ca-certificates/20170717/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cdebconf=0.229`
 
@@ -1217,11 +1228,11 @@ Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
 
-### `dpkg` source package: `libjpeg-turbo=1:1.5.1-2`
+### `dpkg` source package: `libjpeg-turbo=1:1.5.2-2`
 
 Binary Packages:
 
-- `libjpeg62-turbo:amd64=1:1.5.1-2`
+- `libjpeg62-turbo:amd64=1:1.5.2-2`
 
 Licenses: (parsed from: `/usr/share/doc/libjpeg62-turbo/copyright`)
 
@@ -1232,16 +1243,16 @@ Licenses: (parsed from: `/usr/share/doc/libjpeg62-turbo/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libjpeg-turbo=1:1.5.1-2
-'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.1-2.dsc' libjpeg-turbo_1.5.1-2.dsc 2420 SHA256:9f755bfafa4795f91c689cb742194559f6e543e35ba135e0d30f6b51eed1eba2
-'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.1.orig.tar.gz' libjpeg-turbo_1.5.1.orig.tar.gz 1650647 SHA256:41429d3d253017433f66e3d472b8c7d998491d2f41caa7306b8d9a6f2a2c666c
-'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.1-2.debian.tar.xz' libjpeg-turbo_1.5.1-2.debian.tar.xz 78576 SHA256:0077c9e2b7ec2abe25c7a591e65a08750045a28dcd00207a928079a3d31b3cc4
+$ apt-get source -qq --print-uris libjpeg-turbo=1:1.5.2-2
+'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.2-2.dsc' libjpeg-turbo_1.5.2-2.dsc 2434 SHA256:f975bd4b2192e3f1aeacef7f0de33035f386225035aea6157b413b1c500d46a1
+'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.2.orig.tar.gz' libjpeg-turbo_1.5.2.orig.tar.gz 1657235 SHA256:9098943b270388727ae61de82adec73cf9f0dbb240b3bc8b172595ebf405b528
+'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.2-2.debian.tar.xz' libjpeg-turbo_1.5.2-2.debian.tar.xz 78360 SHA256:964a2d747f8e74cbd558f343afd11b7dfe37212a611eeca863f1908eba66f728
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libjpeg-turbo/1:1.5.1-2/
-- https://sources.debian.net/src/libjpeg-turbo/1:1.5.1-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libjpeg-turbo/1:1.5.2-2/
+- https://sources.debian.net/src/libjpeg-turbo/1:1.5.2-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libpng1.6=1.6.31-1`
 
@@ -1602,18 +1613,8 @@ Licenses: (parsed from: `/usr/share/doc/lsb-base/copyright`)
 - `BSD-3-clause`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris lsb=9.20161125
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_9.20161125.dsc' lsb_9.20161125.dsc 1697 SHA256:f2dd58084b1beabe966136cfd2e1b355002c1fb1635a6db5ef159b09ed94864f
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_9.20161125.tar.xz' lsb_9.20161125.tar.xz 43096 SHA256:0f9889ff1922da54d1f1538c11a57aa21dc5adf621e6201b18026f6633088bbd
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/lsb/9.20161125/
-- https://sources.debian.net/src/lsb/9.20161125/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lz4=0.0~r131-2`
 
@@ -1727,24 +1728,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nettle/3.3-1/
 - https://sources.debian.net/src/nettle/3.3-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `nspr=2:4.15-1`
+### `dpkg` source package: `nspr=2:4.16-1`
 
 Binary Packages:
 
-- `libnspr4:amd64=2:4.15-1`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
-
-
-### `dpkg` source package: `nss=2:3.31-1`
-
-Binary Packages:
-
-- `libnss3:amd64=2:3.31-1`
+- `libnspr4:amd64=2:4.16-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1753,22 +1741,35 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nss=2:3.31-1
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.31-1.dsc' nss_3.31-1.dsc 2223 SHA256:9ffd308580b47c6dd84042330777297ae614742d81a91eee5c874b85a933855e
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.31.orig.tar.gz' nss_3.31.orig.tar.gz 9537011 SHA256:e90561256a3271486162c1fbe8d614d118c333d36a4455be2af8688bd420a65d
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.31-1.debian.tar.xz' nss_3.31-1.debian.tar.xz 24584 SHA256:eb8aec0a30c6f9d228410956030d46de9c6ab0ed40d1e128a22f27605c576820
+$ apt-get source -qq --print-uris nspr=2:4.16-1
+'http://deb.debian.org/debian/pool/main/n/nspr/nspr_4.16-1.dsc' nspr_4.16-1.dsc 2061 SHA256:77eeb81db61d32b89762e566a36249d251fcc9ac475bf4445cd99bf558f9f1f9
+'http://deb.debian.org/debian/pool/main/n/nspr/nspr_4.16.orig.tar.gz' nspr_4.16.orig.tar.gz 1140681 SHA256:9b3102d97665504aeee73363c11a21c062ad67a2522242368b7f019f96a53cd1
+'http://deb.debian.org/debian/pool/main/n/nspr/nspr_4.16-1.debian.tar.xz' nspr_4.16-1.debian.tar.xz 15244 SHA256:776198b99b6ae188a3c3b09f12373be97fb3d381eabb3e6c42b591ca37dadd3c
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/nss/2:3.31-1/
-- https://sources.debian.net/src/nss/2:3.31-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/nspr/2:4.16-1/
+- https://sources.debian.net/src/nspr/2:4.16-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openjdk-9=9~b181-2`
+### `dpkg` source package: `nss=2:3.32-1`
 
 Binary Packages:
 
-- `openjdk-9-jre-headless:amd64=9~b181-2`
+- `libnss3:amd64=2:3.32-1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
+  If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+
+
+### `dpkg` source package: `openjdk-9=9~b181-4`
+
+Binary Packages:
+
+- `openjdk-9-jre-headless:amd64=9~b181-4`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 
@@ -1780,23 +1781,23 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-9-jre-headless/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-9=9~b181-2
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b181-2.dsc' openjdk-9_9~b181-2.dsc 4500 SHA256:884e3d06a395eb4352adf91b789e81e1cbf24a17271acd0021483cb9400c4551
+$ apt-get source -qq --print-uris openjdk-9=9~b181-4
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b181-4.dsc' openjdk-9_9~b181-4.dsc 4500 SHA256:37dc3e62c9aeecb896e91f281f3a5b64c33b93b9a5a6a3b7cbb31ae86ed29bdb
 'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b181.orig.tar.gz' openjdk-9_9~b181.orig.tar.gz 74709643 SHA256:fae669a3a6ef266bb8bda75bed0d26b861051181ced63609cdef5e30bde93df1
-'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b181-2.debian.tar.xz' openjdk-9_9~b181-2.debian.tar.xz 195760 SHA256:03424d0ff786e0fcfa20f3fbf6cc30b7c4d9d091063c0ff1476023d3ec65ce53
+'http://deb.debian.org/debian/pool/main/o/openjdk-9/openjdk-9_9~b181-4.debian.tar.xz' openjdk-9_9~b181-4.debian.tar.xz 175152 SHA256:220f579685c4491f1d1be53ec7135eba7f9f646fd19a000c9108379b49b9f160
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openjdk-9/9~b181-2/
-- https://sources.debian.net/src/openjdk-9/9~b181-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openjdk-9/9~b181-4/
+- https://sources.debian.net/src/openjdk-9/9~b181-4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openssl=1.1.0f-4`
+### `dpkg` source package: `openssl=1.1.0f-5`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.0f-4`
-- `openssl=1.1.0f-4`
+- `libssl1.1:amd64=1.1.0f-5`
+- `openssl=1.1.0f-5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1805,17 +1806,17 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.1.0f-4
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-4.dsc' openssl_1.1.0f-4.dsc 2583 SHA256:a9bad4f5bc7acc5784f23fc8a5f6f15e18570cf45caabe10dc84bb97ed724a36
+$ apt-get source -qq --print-uris openssl=1.1.0f-5
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-5.dsc' openssl_1.1.0f-5.dsc 2583 SHA256:44c38165dc9c99d069bb19c510d58778bb79e0530d5967cb74c556999f0b4b7e
 'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f.orig.tar.gz' openssl_1.1.0f.orig.tar.gz 5278176 SHA256:12f746f3f2493b2f39da7ecf63d7ee19c6ac9ec6a4fcd8c229da8a522cb12765
 'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f.orig.tar.gz.asc' openssl_1.1.0f.orig.tar.gz.asc 455 SHA256:9f2feb0494ebcc1cf152d95a11bc966cb94bc1957d88650285db3966866801b0
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-4.debian.tar.xz' openssl_1.1.0f-4.debian.tar.xz 55144 SHA256:e45a4e8318d4c4c9df4ae20008352046d843b866fd3eff0593187490768f2183
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_1.1.0f-5.debian.tar.xz' openssl_1.1.0f-5.debian.tar.xz 59536 SHA256:7ae7fc632d259f1e4ed5e2475847d31db18d9bc6b96a6a3405a77cff7020b97e
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openssl/1.1.0f-4/
-- https://sources.debian.net/src/openssl/1.1.0f-4/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openssl/1.1.0f-5/
+- https://sources.debian.net/src/openssl/1.1.0f-5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `p11-kit=0.23.7-3`
 

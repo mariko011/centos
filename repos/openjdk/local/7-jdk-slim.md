@@ -1,10 +1,10 @@
-# `openjdk:7u131-jdk-slim`
+# `openjdk:7u151-jdk-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:71a4589898d8d75465a4f79c947a00fd3a616abb8dae246e6ffeed613736bf75`
-- Created: `2017-07-24T18:07:35.138147932Z`
-- Virtual Size: ~ 360.33 Mb  
+- Image ID: `sha256:83a314b0508f012983616dae8e18f6b224edaa935ffef4cfb2d3311db688e899`
+- Created: `2017-08-25T22:24:39.319252932Z`
+- Virtual Size: ~ 332.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/docker-java-home`
-  - `JAVA_VERSION=7u131`
-  - `JAVA_DEBIAN_VERSION=7u131-2.6.9-2~deb8u1`
+  - `JAVA_VERSION=7u151`
+  - `JAVA_DEBIAN_VERSION=7u151-2.6.11-1~deb8u1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -3467,11 +3467,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libxinerama/2:1.1.3-1/
 - https://sources.debian.net/src/libxinerama/2:1.1.3-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libxml2=2.9.1+dfsg1-5+deb8u4`
+### `dpkg` source package: `libxml2=2.9.1+dfsg1-5+deb8u5`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.1+dfsg1-5+deb8u4`
+- `libxml2:amd64=2.9.1+dfsg1-5+deb8u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3480,16 +3480,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxml2=2.9.1+dfsg1-5+deb8u4
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u4.dsc' libxml2_2.9.1+dfsg1-5+deb8u4.dsc 2760 SHA256:23f9a9935227718fd2921abb484c129617325e1306d8525b3dcec1611df01096
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1.orig.tar.gz' libxml2_2.9.1+dfsg1.orig.tar.gz 3793894 SHA256:f3ec5256412192f74833286c4490672500b232ed1c9195214db2c641df064a28
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u4.debian.tar.xz' libxml2_2.9.1+dfsg1-5+deb8u4.debian.tar.xz 66756 SHA256:cda8374910db4e2a06b2515123dbe0b714f7f647532dc305f03c2a094175e706
+$ apt-get source -qq --print-uris libxml2=2.9.1+dfsg1-5+deb8u5
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u5.dsc' libxml2_2.9.1+dfsg1-5+deb8u5.dsc 2760 SHA256:6fe2c4e997f1ed1520cbba4474513880a1e7450de57a0c86f73c4023396609fb
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1.orig.tar.gz' libxml2_2.9.1+dfsg1.orig.tar.gz 3793894 SHA256:f3ec5256412192f74833286c4490672500b232ed1c9195214db2c641df064a28
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u5.debian.tar.xz' libxml2_2.9.1+dfsg1-5+deb8u5.debian.tar.xz 70784 SHA256:01247e1947e2b52c4ef0e227fdd501038aa0840b8c889c26b6503a2dcd85a5d3
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u4/
-- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u4/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u5/
+- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxrandr=2:1.4.2-1`
 
@@ -3957,13 +3957,13 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/nss/2:3.26-1+debu8u2/
 - https://sources.debian.net/src/nss/2:3.26-1+debu8u2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `openjdk-7=7u131-2.6.9-2~deb8u1`
+### `dpkg` source package: `openjdk-7=7u151-2.6.11-1~deb8u1`
 
 Binary Packages:
 
-- `openjdk-7-jdk:amd64=7u131-2.6.9-2~deb8u1`
-- `openjdk-7-jre:amd64=7u131-2.6.9-2~deb8u1`
-- `openjdk-7-jre-headless:amd64=7u131-2.6.9-2~deb8u1`
+- `openjdk-7-jdk:amd64=7u151-2.6.11-1~deb8u1`
+- `openjdk-7-jre:amd64=7u151-2.6.11-1~deb8u1`
+- `openjdk-7-jre-headless:amd64=7u151-2.6.11-1~deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/openjdk-7-jdk/copyright`, `/usr/share/doc/openjdk-7-jre/copyright`, `/usr/share/doc/openjdk-7-jre-headless/copyright`)
 
@@ -3974,16 +3974,16 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-7-jdk/copyright`, `/usr/share/do
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjdk-7=7u131-2.6.9-2~deb8u1
-'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u131-2.6.9-2~deb8u1.dsc' openjdk-7_7u131-2.6.9-2~deb8u1.dsc 4686 SHA256:f73086c128113d9e993e994037c2dc2c804441497b8635d6d1db3cdbfdbf49ea
-'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u131-2.6.9.orig.tar.gz' openjdk-7_7u131-2.6.9.orig.tar.gz 53769863 SHA256:b8cf96ff09b28d8f0f7e9a269dde99123b1da72179251e37f83a681a44158421
-'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u131-2.6.9-2~deb8u1.debian.tar.xz' openjdk-7_7u131-2.6.9-2~deb8u1.debian.tar.xz 178188 SHA256:2f475620018641deaeae50440f499393be1359a52338ec702339bfc5541fa5da
+$ apt-get source -qq --print-uris openjdk-7=7u151-2.6.11-1~deb8u1
+'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u151-2.6.11-1~deb8u1.dsc' openjdk-7_7u151-2.6.11-1~deb8u1.dsc 4698 SHA256:3538de073299fb1fa159fea2d26977383bb427e3ce4bff8f89082b2ff9aa92d3
+'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u151-2.6.11.orig.tar.gz' openjdk-7_7u151-2.6.11.orig.tar.gz 53829152 SHA256:9c77d10e23f1d6105a71e18d330a4397fe418e9d0ad63cde65b4b7bac9a144b6
+'http://security.debian.org/pool/updates/main/o/openjdk-7/openjdk-7_7u151-2.6.11-1~deb8u1.debian.tar.xz' openjdk-7_7u151-2.6.11-1~deb8u1.debian.tar.xz 167664 SHA256:c1dd83269c6862676a3f33b6fb6770cfba82aedf523e71a88937a8b650735008
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/openjdk-7/7u131-2.6.9-2~deb8u1/
-- https://sources.debian.net/src/openjdk-7/7u131-2.6.9-2~deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/openjdk-7/7u151-2.6.11-1~deb8u1/
+- https://sources.debian.net/src/openjdk-7/7u151-2.6.11-1~deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openssl=1.0.1t-1+deb8u6`
 
