@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f5227f41d2902548a3bd9e0c5fb5ffa06f44cdfae2256b8f11c17cfd1320c00d`
-- Created: `2017-08-10T18:26:09.583238603Z`
-- Virtual Size: ~ 1.18 Gb  
+- Image ID: `sha256:acd4c77b0e18b733925b99657ddb32fce0a2610f49df995c603a0ee0c4042b7b`
+- Created: `2017-08-28T22:27:29.239320556Z`
+- Virtual Size: ~ 1.12 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -27,9 +27,9 @@
   - `TOMCAT_ASC_URL=https://www.apache.org/dist/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.tar.gz.asc`
   - `TOMCAT_TGZ_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.tar.gz`
   - `TOMCAT_ASC_FALLBACK_URL=https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.tar.gz.asc`
-  - `XWIKI_VERSION=9.6`
-  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/9.6`
-  - `XWIKI_DOWNLOAD_SHA256=e702fc39a957d3567423ea91a5212c57b1c8c2fabe76a5b0f59e215b013cdb4c`
+  - `XWIKI_VERSION=9.7`
+  - `XWIKI_URL_PREFIX=http://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/9.7`
+  - `XWIKI_DOWNLOAD_SHA256=511edf81e9776b627d1a8aa200f6e377ab75c1821d7360d77a27092ad1ebf418`
 
 ## `dpkg` (`.deb`-based packages)
 
