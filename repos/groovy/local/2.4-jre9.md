@@ -1790,18 +1790,8 @@ Licenses: (parsed from: `/usr/share/doc/lsb-base/copyright`)
 - `BSD-3-clause`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris lsb=9.20161125
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_9.20161125.dsc' lsb_9.20161125.dsc 1697 SHA256:f2dd58084b1beabe966136cfd2e1b355002c1fb1635a6db5ef159b09ed94864f
-'http://deb.debian.org/debian/pool/main/l/lsb/lsb_9.20161125.tar.xz' lsb_9.20161125.tar.xz 43096 SHA256:0f9889ff1922da54d1f1538c11a57aa21dc5adf621e6201b18026f6633088bbd
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/lsb/9.20161125/
-- https://sources.debian.net/src/lsb/9.20161125/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lz4=0.0~r131-2`
 
@@ -1991,19 +1981,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris nss=2:3.32-1
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.32-1.dsc' nss_3.32-1.dsc 2223 SHA256:b6cfecfcf05e6a874928597c020e94cb1e0de2ef91c9767e2d2e001fb632e861
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.32.orig.tar.gz' nss_3.32.orig.tar.gz 9493574 SHA256:35c6f381cc96bb25e4f924469f6ba3e57b3a16e0c2fb7e295a284a00d57ed335
-'http://deb.debian.org/debian/pool/main/n/nss/nss_3.32-1.debian.tar.xz' nss_3.32-1.debian.tar.xz 24592 SHA256:f7e7fc337ad038178c29485d05c033f0195a0885ca6c14125d4209a1d956ff61
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/nss/2:3.32-1/
-- https://sources.debian.net/src/nss/2:3.32-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `openjdk-9=9~b181-4`
 
