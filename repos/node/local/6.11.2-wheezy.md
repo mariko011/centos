@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:eef2472750d20ed143438723ac362217e49622ac62087f17d94e70e2516bdd14`
-- Created: `2017-08-01T21:07:04.770979087Z`
-- Virtual Size: ~ 510.62 Mb  
+- Image ID: `sha256:976fbfa17986b69e8c60f42d335e06d60ae1193cfef94744dd82b8780ff43c16`
+- Created: `2017-08-29T06:04:02.594162391Z`
+- Virtual Size: ~ 518.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
@@ -500,12 +500,9 @@ Likely also available for browsing at:
 
 Binary Packages:
 
-- `curl=7.26.0-1+wheezy19`
-- `libcurl3:amd64=7.26.0-1+wheezy19`
 - `libcurl3-gnutls:amd64=7.26.0-1+wheezy19`
-- `libcurl4-openssl-dev=7.26.0-1+wheezy19`
 
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -514,6 +511,35 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
+
+### `dpkg` source package: `curl=7.26.0-1+wheezy20`
+
+Binary Packages:
+
+- `curl=7.26.0-1+wheezy20`
+- `libcurl3:amd64=7.26.0-1+wheezy20`
+- `libcurl4-openssl-dev=7.26.0-1+wheezy20`
+
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`)
+
+- `BSD-3-Clause`
+- `BSD-4-Clause`
+- `ISC`
+- `curl`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris curl=7.26.0-1+wheezy20
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy20.dsc' curl_7.26.0-1+wheezy20.dsc 2693 SHA256:f7d653ef7273d1b0994fd71bd402c022ce51a16e3d18fd6c3add89dc73e74288
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0.orig.tar.gz' curl_7.26.0.orig.tar.gz 3073624 SHA256:79ccce9edb8aee17d20ad4d75e1f83a789f8c2e71e68f468e1bf8abf8933193f
+'http://security.debian.org/pool/updates/main/c/curl/curl_7.26.0-1+wheezy20.debian.tar.gz' curl_7.26.0-1+wheezy20.debian.tar.gz 65696 SHA256:3076bc913216c2144b5d76859ccb7335b43ca4db1ac43a752131fe291755e55d
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy20/
+- https://sources.debian.net/src/curl/7.26.0-1+wheezy20/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.25.dfsg1-6+deb7u1`
 
@@ -742,8 +768,10 @@ Likely also available for browsing at:
 Binary Packages:
 
 - `dpkg=1.16.18`
+- `dpkg-dev=1.16.18`
+- `libdpkg-perl=1.16.18`
 
-Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
+Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-dev/copyright`, `/usr/share/doc/libdpkg-perl/copyright`)
 
 - `GPL`
 
@@ -1144,19 +1172,8 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris git=1:1.7.10.4-1+wheezy4
-'http://security.debian.org/pool/updates/main/g/git/git_1.7.10.4-1+wheezy4.dsc' git_1.7.10.4-1+wheezy4.dsc 2780 SHA256:f09298ad5b7eb6a12b23e47d8fd51f5c95e9accc514d6c42a0fa2ac1af4c178f
-'http://security.debian.org/pool/updates/main/g/git/git_1.7.10.4.orig.tar.gz' git_1.7.10.4.orig.tar.gz 3813469 SHA256:77ce53644d687202c64ca29db4ae5055daff4e0c611dde8f1d51edb752dba8dd
-'http://security.debian.org/pool/updates/main/g/git/git_1.7.10.4-1+wheezy4.diff.gz' git_1.7.10.4-1+wheezy4.diff.gz 519119 SHA256:38982497cb067db76be01caaed2f2bb2b82830a7f287aa3123aa9aa04cd6386e
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/git/1:1.7.10.4-1+wheezy4/
-- https://sources.debian.net/src/git/1:1.7.10.4-1+wheezy4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glib2.0=2.33.12+really2.32.4-5`
 
@@ -1671,20 +1688,20 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/keyutils/1.5.5-3+deb7u1/
 - https://sources.debian.net/src/keyutils/1.5.5-3+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `krb5=1.10.1+dfsg-5+deb7u7`
+### `dpkg` source package: `krb5=1.10.1+dfsg-5+deb7u8`
 
 Binary Packages:
 
-- `krb5-multidev=1.10.1+dfsg-5+deb7u7`
-- `libgssapi-krb5-2:amd64=1.10.1+dfsg-5+deb7u7`
-- `libgssrpc4:amd64=1.10.1+dfsg-5+deb7u7`
-- `libk5crypto3:amd64=1.10.1+dfsg-5+deb7u7`
-- `libkadm5clnt-mit8:amd64=1.10.1+dfsg-5+deb7u7`
-- `libkadm5srv-mit8:amd64=1.10.1+dfsg-5+deb7u7`
-- `libkdb5-6:amd64=1.10.1+dfsg-5+deb7u7`
-- `libkrb5-3:amd64=1.10.1+dfsg-5+deb7u7`
-- `libkrb5-dev=1.10.1+dfsg-5+deb7u7`
-- `libkrb5support0:amd64=1.10.1+dfsg-5+deb7u7`
+- `krb5-multidev=1.10.1+dfsg-5+deb7u8`
+- `libgssapi-krb5-2:amd64=1.10.1+dfsg-5+deb7u8`
+- `libgssrpc4:amd64=1.10.1+dfsg-5+deb7u8`
+- `libk5crypto3:amd64=1.10.1+dfsg-5+deb7u8`
+- `libkadm5clnt-mit8:amd64=1.10.1+dfsg-5+deb7u8`
+- `libkadm5srv-mit8:amd64=1.10.1+dfsg-5+deb7u8`
+- `libkdb5-6:amd64=1.10.1+dfsg-5+deb7u8`
+- `libkrb5-3:amd64=1.10.1+dfsg-5+deb7u8`
+- `libkrb5-dev=1.10.1+dfsg-5+deb7u8`
+- `libkrb5support0:amd64=1.10.1+dfsg-5+deb7u8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1693,16 +1710,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.10.1+dfsg-5+deb7u7
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.10.1+dfsg-5+deb7u7.dsc' krb5_1.10.1+dfsg-5+deb7u7.dsc 2938 SHA256:29b9149c3036b56c71ea311e287e1ab5fc02f65e0a217013310c8c5651ec5059
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.10.1+dfsg.orig.tar.gz' krb5_1.10.1+dfsg.orig.tar.gz 10638231 SHA256:f0b63fb8ffd0ae0bf3276da37fc55857079c75dccf78b31d628a0aeccfa8b183
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.10.1+dfsg-5+deb7u7.debian.tar.gz' krb5_1.10.1+dfsg-5+deb7u7.debian.tar.gz 156798 SHA256:9f1e2cbe961420558ed4c27ee6c899b1fcca7c144ea3886151f4bc96d175ba7e
+$ apt-get source -qq --print-uris krb5=1.10.1+dfsg-5+deb7u8
+'http://security.debian.org/pool/updates/main/k/krb5/krb5_1.10.1+dfsg-5+deb7u8.dsc' krb5_1.10.1+dfsg-5+deb7u8.dsc 2952 SHA256:8e62fc793f716322edfefd5c70bb178bb0281117b5d864b9c4ce67640f51dcdd
+'http://security.debian.org/pool/updates/main/k/krb5/krb5_1.10.1+dfsg.orig.tar.gz' krb5_1.10.1+dfsg.orig.tar.gz 10638231 SHA256:f0b63fb8ffd0ae0bf3276da37fc55857079c75dccf78b31d628a0aeccfa8b183
+'http://security.debian.org/pool/updates/main/k/krb5/krb5_1.10.1+dfsg-5+deb7u8.debian.tar.gz' krb5_1.10.1+dfsg-5+deb7u8.debian.tar.gz 157896 SHA256:2ed13be10008d2258e47daa2fe8a8bba47c83d0b2370f719ebd69b4eae3bb18a
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/krb5/1.10.1+dfsg-5+deb7u7/
-- https://sources.debian.net/src/krb5/1.10.1+dfsg-5+deb7u7/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/krb5/1.10.1+dfsg-5+deb7u8/
+- https://sources.debian.net/src/krb5/1.10.1+dfsg-5+deb7u8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lcms2=2.2+git20110628-2.2+deb7u2`
 
@@ -2014,11 +2031,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libgcrypt11/1.5.0-5+deb7u6/
 - https://sources.debian.net/src/libgcrypt11/1.5.0-5+deb7u6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libgd2=2.0.36~rc1~dfsg-6.1+deb7u8`
+### `dpkg` source package: `libgd2=2.0.36~rc1~dfsg-6.1+deb7u9`
 
 Binary Packages:
 
-- `libgd2-noxpm:amd64=2.0.36~rc1~dfsg-6.1+deb7u8`
+- `libgd2-noxpm:amd64=2.0.36~rc1~dfsg-6.1+deb7u9`
 
 Licenses: (parsed from: `/usr/share/doc/libgd2-noxpm/copyright`)
 
@@ -2032,8 +2049,19 @@ Licenses: (parsed from: `/usr/share/doc/libgd2-noxpm/copyright`)
 - `HPND`
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libgd2=2.0.36~rc1~dfsg-6.1+deb7u9
+'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u9.dsc' libgd2_2.0.36~rc1~dfsg-6.1+deb7u9.dsc 2584 SHA256:2c51b503b7f8922eca3c54ca4014232e2374890542d7c86246ce2ec2f62cfc55
+'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg.orig.tar.gz' libgd2_2.0.36~rc1~dfsg.orig.tar.gz 761899 SHA256:919df21310ad4a8b6155df01411138110589cc6c50b1bc414dc62aebb0a7f41a
+'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.0.36~rc1~dfsg-6.1+deb7u9.debian.tar.gz' libgd2_2.0.36~rc1~dfsg-6.1+deb7u9.debian.tar.gz 33376 SHA256:4ce81e76c532979e0ce540c0729187999e79424203d64c821b7fd82e1a4627f8
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libgd2/2.0.36~rc1~dfsg-6.1+deb7u9/
+- https://sources.debian.net/src/libgd2/2.0.36~rc1~dfsg-6.1+deb7u9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.10-3.1`
 
@@ -2430,12 +2458,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libswitch-perl/2.16-2/
 - https://sources.debian.net/src/libswitch-perl/2.16-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libtasn1-3=2.13-2+deb7u4`
+### `dpkg` source package: `libtasn1-3=2.13-2+deb7u5`
 
 Binary Packages:
 
-- `libtasn1-3:amd64=2.13-2+deb7u4`
-- `libtasn1-3-dev=2.13-2+deb7u4`
+- `libtasn1-3:amd64=2.13-2+deb7u5`
+- `libtasn1-3-dev=2.13-2+deb7u5`
 
 Licenses: (parsed from: `/usr/share/doc/libtasn1-3/copyright`, `/usr/share/doc/libtasn1-3-dev/copyright`)
 
@@ -2444,8 +2472,19 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-3/copyright`, `/usr/share/doc/l
 - `LGPL`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libtasn1-3=2.13-2+deb7u5
+'http://security.debian.org/pool/updates/main/libt/libtasn1-3/libtasn1-3_2.13-2+deb7u5.dsc' libtasn1-3_2.13-2+deb7u5.dsc 2492 SHA256:818f02ba2b4bd3278c2819df1918af3a274ef50dc76f9f4e19f5c04aebb74da8
+'http://security.debian.org/pool/updates/main/libt/libtasn1-3/libtasn1-3_2.13.orig.tar.gz' libtasn1-3_2.13.orig.tar.gz 1964659 SHA256:a56e46483d1d42fe44ba58c9758620844042468d7c2d75f6318cdf3222745a91
+'http://security.debian.org/pool/updates/main/libt/libtasn1-3/libtasn1-3_2.13-2+deb7u5.debian.tar.gz' libtasn1-3_2.13-2+deb7u5.debian.tar.gz 14449 SHA256:a73cfde650ddc086a7681cae367d082b48a9454e225753cb0893180091d2c70c
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libtasn1-3/2.13-2+deb7u5/
+- https://sources.debian.net/src/libtasn1-3/2.13-2+deb7u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libtext-charwidth-perl=0.04-7`
 
@@ -2549,6 +2588,32 @@ Likely also available for browsing at:
 
 - https://sources.debian.net/src/libthai/0.1.18-2/
 - https://sources.debian.net/src/libthai/0.1.18-2/debian/copyright (for direct copyright/license information)
+
+### `dpkg` source package: `libtimedate-perl=1.2000-1`
+
+Binary Packages:
+
+- `libtimedate-perl=1.2000-1`
+
+Licenses: (parsed from: `/usr/share/doc/libtimedate-perl/copyright`)
+
+- `Artistic`
+- `GPL`
+- `GPL-1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libtimedate-perl=1.2000-1
+'http://deb.debian.org/debian/pool/main/libt/libtimedate-perl/libtimedate-perl_1.2000-1.dsc' libtimedate-perl_1.2000-1.dsc 2038 SHA256:5f9dd2a1a03d0578b34aa6cdfad62c7f82b498f48b16262eb11e21c1246b6936
+'http://deb.debian.org/debian/pool/main/libt/libtimedate-perl/libtimedate-perl_1.2000.orig.tar.gz' libtimedate-perl_1.2000.orig.tar.gz 29590 SHA256:f8251a791f6692c69952b4af697c01df93981ad1ab133279d034656a03cd3755
+'http://deb.debian.org/debian/pool/main/libt/libtimedate-perl/libtimedate-perl_1.2000-1.diff.gz' libtimedate-perl_1.2000-1.diff.gz 3885 SHA256:ed1942ceecb6c2d08fb7e3bb77b3e8f6ebdc0a2446e33ed0345c8d1f674eec30
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libtimedate-perl/1.2000-1/
+- https://sources.debian.net/src/libtimedate-perl/1.2000-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libtool=2.4.2-1.1`
 
@@ -2780,19 +2845,30 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libxext/2:1.3.1-2+deb7u1/
 - https://sources.debian.net/src/libxext/2:1.3.1-2+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libxml2=2.8.0+dfsg1-7+wheezy8`
+### `dpkg` source package: `libxml2=2.8.0+dfsg1-7+wheezy9`
 
 Binary Packages:
 
-- `libxml2:amd64=2.8.0+dfsg1-7+wheezy8`
-- `libxml2-dev:amd64=2.8.0+dfsg1-7+wheezy8`
+- `libxml2:amd64=2.8.0+dfsg1-7+wheezy9`
+- `libxml2-dev:amd64=2.8.0+dfsg1-7+wheezy9`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.8.0+dfsg1-7+wheezy9
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy9.dsc' libxml2_2.8.0+dfsg1-7+wheezy9.dsc 2673 SHA256:71377bf46751adfbfaecf0428de6bac3fc5cfbc3c1a18dbbb00b0677cb0e3d72
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1.orig.tar.gz' libxml2_2.8.0+dfsg1.orig.tar.gz 3554683 SHA256:46f339843967e861e81f8427373ff2a3d0a8cb608022dea16aa1d345ddcee338
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy9.debian.tar.gz' libxml2_2.8.0+dfsg1-7+wheezy9.debian.tar.gz 74726 SHA256:b2a873ae7edae2ac04acccea346ecace4d4432e40ac47c878d6dd65347fbdf9f
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy9/
+- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxrender=1:0.9.7-1+deb7u3`
 
@@ -3027,19 +3103,8 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mercurial=2.2.2-4+deb7u4
-'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2-4+deb7u4.dsc' mercurial_2.2.2-4+deb7u4.dsc 2178 SHA256:7db66ec2657c9f1c2b63722edac2d786f26f9f582d4e56f061b513df5cd52179
-'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2.orig.tar.gz' mercurial_2.2.2.orig.tar.gz 3430037 SHA256:3489110ec11fefbd2cbdefb8d715d0a869cef3dd729aaf4d5141108f8be1600a
-'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_2.2.2-4+deb7u4.debian.tar.gz' mercurial_2.2.2-4+deb7u4.debian.tar.gz 53259 SHA256:e3441baa8d665cc986310593d73d3d4d5bcc4fa93cb611ae127440f6fcc1218d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mercurial/2.2.2-4+deb7u4/
-- https://sources.debian.net/src/mercurial/2.2.2-4+deb7u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mime-support=3.52-1+deb7u1`
 
@@ -3113,13 +3178,13 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/mpfr4/3.1.0-5/
 - https://sources.debian.net/src/mpfr4/3.1.0-5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `mysql-5.5=5.5.55-0+deb7u1`
+### `dpkg` source package: `mysql-5.5=5.5.57-0+deb7u1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=5.5.55-0+deb7u1`
-- `libmysqlclient18:amd64=5.5.55-0+deb7u1`
-- `mysql-common=5.5.55-0+deb7u1`
+- `libmysqlclient-dev=5.5.57-0+deb7u1`
+- `libmysqlclient18:amd64=5.5.57-0+deb7u1`
+- `mysql-common=5.5.57-0+deb7u1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient18/copyright`, `/usr/share/doc/mysql-common/copyright`)
 
@@ -3137,8 +3202,19 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 - `public-domain`
 - `zlib/libpng`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris mysql-5.5=5.5.57-0+deb7u1
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.57-0+deb7u1.dsc' mysql-5.5_5.5.57-0+deb7u1.dsc 2971 SHA256:c2ab2fab8ad621135c05e8bb5417e73ca4e679d051e237dfea6772f0adc39d96
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.57.orig.tar.gz' mysql-5.5_5.5.57.orig.tar.gz 21044615 SHA256:c1c2bd321e524f92e43fe73d0d6745badd538c984c7561b273ae10e9aef57384
+'http://security.debian.org/pool/updates/main/m/mysql-5.5/mysql-5.5_5.5.57-0+deb7u1.debian.tar.gz' mysql-5.5_5.5.57-0+deb7u1.debian.tar.gz 380210 SHA256:fe417b8157deb9c1cc6b7e83ca8a80ddd34e6c1907a738ad31666e5647317293
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/mysql-5.5/5.5.57-0+deb7u1/
+- https://sources.debian.net/src/mysql-5.5/5.5.57-0+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ncurses=5.9-10`
 
@@ -3568,12 +3644,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/popt/1.16-7/
 - https://sources.debian.net/src/popt/1.16-7/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `postgresql-9.1=9.1.24-0+deb7u1`
+### `dpkg` source package: `postgresql-9.1=9.1.24lts2-0+deb7u1`
 
 Binary Packages:
 
-- `libpq-dev=9.1.24-0+deb7u1`
-- `libpq5=9.1.24-0+deb7u1`
+- `libpq-dev=9.1.24lts2-0+deb7u1`
+- `libpq5=9.1.24lts2-0+deb7u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -3582,8 +3658,19 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `Perl / BSD`
 - `Tcl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris postgresql-9.1=9.1.24lts2-0+deb7u1
+'http://security.debian.org/pool/updates/main/p/postgresql-9.1/postgresql-9.1_9.1.24lts2-0+deb7u1.dsc' postgresql-9.1_9.1.24lts2-0+deb7u1.dsc 3381 SHA256:b0bc4cd80af2d4b83aa19388fc144413e5d2fa1ba957a2a8832d5e8045001884
+'http://security.debian.org/pool/updates/main/p/postgresql-9.1/postgresql-9.1_9.1.24lts2.orig.tar.bz2' postgresql-9.1_9.1.24lts2.orig.tar.bz2 15809167 SHA256:b1db8299cfccb31d0d0396b9a00afd9610fdab8768d45f4749fd2faf60b3931f
+'http://security.debian.org/pool/updates/main/p/postgresql-9.1/postgresql-9.1_9.1.24lts2-0+deb7u1.debian.tar.gz' postgresql-9.1_9.1.24lts2-0+deb7u1.debian.tar.gz 46730 SHA256:1a1692dd66ca7639c279f8d60b226292540f4f855e9773627b9dea7f58ec593f
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/postgresql-9.1/9.1.24lts2-0+deb7u1/
+- https://sources.debian.net/src/postgresql-9.1/9.1.24lts2-0+deb7u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `procps=1:3.3.3-3`
 
