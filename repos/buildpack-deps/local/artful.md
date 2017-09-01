@@ -356,14 +356,8 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris binutils=2.29-6ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.29-6ubuntu3.dsc' binutils_2.29-6ubuntu3.dsc 5296 SHA256:f8f9528da32a048074b8dd49c8dde410bf928c5b1222c165d95ad5469a85145b
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.29.orig.tar.gz' binutils_2.29.orig.tar.gz 38885604 SHA256:172e8c89472cf52712fd23a9f14e9bca6182727fb45b0f8f482652a83d5a11b4
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.29-6ubuntu3.diff.gz' binutils_2.29-6ubuntu3.diff.gz 219657 SHA256:b11848a7338198b546152c7f149040e57dcdda064936640f90b4c9420250a348
-```
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
 
@@ -398,14 +392,8 @@ Licenses: (parsed from: `/usr/share/doc/bzr/copyright`, `/usr/share/doc/python-b
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bzr=2.7.0+bzr6622-3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0+bzr6622-3.dsc' bzr_2.7.0+bzr6622-3.dsc 2509 SHA256:4a4a89683b653dc7f32817b0175347eb10f8315fe55bb5d1dc67fda6f49add90
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0+bzr6622.orig.tar.gz' bzr_2.7.0+bzr6622.orig.tar.gz 10948360 SHA256:08bba3e76cba9beb6b686e71253045beeab9db94753ddbcafa0f8ed1cba377ff
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0+bzr6622-3.debian.tar.xz' bzr_2.7.0+bzr6622-3.debian.tar.xz 67880 SHA256:7ab6472f3ebed23f1fadce73c863e35ad5b12f4b59b8efe769572d8afdb8e13c
-```
 
 ### `dpkg` source package: `ca-certificates=20161130+nmu1`
 
@@ -419,13 +407,8 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20161130+nmu1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20161130+nmu1.dsc' ca-certificates_20161130+nmu1.dsc 1886 SHA256:09e8d33c479827b070719170a9a98de7c1d4e9c7973ed8556321d08d8ae27494
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20161130+nmu1.tar.xz' ca-certificates_20161130+nmu1.tar.xz 298648 SHA256:77f9aca431e3122bf04aa0ffd989b723d906db4d1c106e3290e463d73c177f0e
-```
 
 ### `dpkg` source package: `cairo=1.14.10-1`
 
@@ -990,14 +973,8 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`, `/usr/share/doc
 - `GZip`
 - `OpenGroup-BSD-like`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris freetype=2.8-0.2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.8-0.2ubuntu1.dsc' freetype_2.8-0.2ubuntu1.dsc 2198 SHA256:92237d43bee53f137ecd7350ee4a490ebcd29358dfd0d200efbafc0db2f372ad
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.8.orig.tar.gz' freetype_2.8.orig.tar.gz 4225710 SHA256:7ba438204ec4532cfa770faff63a90f0555369bb594c15014cc0fb5f0d52e3b4
-'http://archive.ubuntu.com/ubuntu/pool/main/f/freetype/freetype_2.8-0.2ubuntu1.diff.gz' freetype_2.8-0.2ubuntu1.diff.gz 41652 SHA256:269cb0a0681774161219fbcfc7ae116bfbe17888dc555e634ca24f59a75c60a7
-```
 
 ### `dpkg` source package: `gcc-7=7.2.0-1ubuntu2`
 
@@ -1032,14 +1009,8 @@ Licenses: (parsed from: `/usr/share/doc/cpp-7/copyright`, `/usr/share/doc/g++-7/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gcc-7=7.2.0-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.2.0-1ubuntu2.dsc' gcc-7_7.2.0-1ubuntu2.dsc 30453 SHA256:996c7e773977330824e30ed3c8b0d3554f73b17b2dd051742aae58b4f557a6f6
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.2.0.orig.tar.gz' gcc-7_7.2.0.orig.tar.gz 73406637 SHA256:aa50238ecb3a1ae463739e0ff5d31bb2fdf4e339456403bd58b765f57f237aa3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-7/gcc-7_7.2.0-1ubuntu2.diff.gz' gcc-7_7.2.0-1ubuntu2.diff.gz 2817893 SHA256:95562a0b98a9a18d037d983f7a28f24b35970abc0c10ea72c3a72cfe95c25ee1
-```
 
 ### `dpkg` source package: `gcc-defaults=1.171ubuntu3`
 
@@ -2928,14 +2899,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.12.0-11.12
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.12.0-11.12.dsc' linux_4.12.0-11.12.dsc 6168 SHA256:1590886b0b4d1c82724f7fafe6bc29c6abc32808f65550e7487fe1a8d5d6d08a
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.12.0.orig.tar.gz' linux_4.12.0.orig.tar.gz 151882917 SHA256:540232262061143c288b22bdda80937323b2689d4c8e9b873405a78c54d030f1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_4.12.0-11.12.diff.gz' linux_4.12.0-11.12.diff.gz 6490190 SHA256:3e85b825cbc381000658f5bf00fa539313bcc662f47719dca374085fdf08a06c
-```
 
 ### `dpkg` source package: `lsb=9.20160110ubuntu5`
 
@@ -3146,14 +3111,8 @@ Licenses: (parsed from: `/usr/share/doc/libmpfr4/copyright`)
 - `GFDL-1.2`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mpfr4=3.1.5-1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_3.1.5-1.dsc' mpfr4_3.1.5-1.dsc 1971 SHA256:40c1a87b1fc06ca9447f7fb1827fc13a0c557af8541f0bccbb3022b029b73582
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_3.1.5.orig.tar.xz' mpfr4_3.1.5.orig.tar.xz 1126668 SHA256:015fde82b3979fbe5f83501986d328331ba8ddf008c1ff3da3c238f49ca062bc
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_3.1.5-1.debian.tar.xz' mpfr4_3.1.5-1.debian.tar.xz 9672 SHA256:e5b0d755ec3b3aea15aab137328f7fe65c6b800a1b897bbf50fa4fd478589bd4
-```
 
 ### `dpkg` source package: `mysql-5.7=5.7.19-0ubuntu1`
 
@@ -4276,13 +4235,8 @@ Licenses: (parsed from: `/usr/share/doc/x11-common/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris xorg=1:7.7+19ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xorg/xorg_7.7+19ubuntu1.dsc' xorg_7.7+19ubuntu1.dsc 2064 SHA256:1b631a334629eedc3bf4ecfb17c8b4a3748b5e7b9074c9878d6106b3a7f347d8
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xorg/xorg_7.7+19ubuntu1.tar.gz' xorg_7.7+19ubuntu1.tar.gz 294212 SHA256:862da6c8567054a82c940e183e1cd2635db58cf0e3b3c7277d5f222fc68b2c97
-```
 
 ### `dpkg` source package: `xtrans=1.3.5-1`
 
