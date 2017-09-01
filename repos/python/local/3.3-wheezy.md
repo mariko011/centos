@@ -1238,19 +1238,8 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/c
 - `GPL-3`
 - `GPL-3+ with OpenSSL exception`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gnupg=1.4.12-7+deb7u8
-'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12-7+deb7u8.dsc' gnupg_1.4.12-7+deb7u8.dsc 2306 SHA256:2b6afe20bfe9da633bf3e81b669663c2a8285521680e1d8bad5b46d93fb2df3a
-'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12.orig.tar.gz' gnupg_1.4.12.orig.tar.gz 4939171 SHA256:bb94222fa263e55a5096fdc1c6cd60e9992602ce5067bc453a4ada77bb31e367
-'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12-7+deb7u8.debian.tar.gz' gnupg_1.4.12-7+deb7u8.debian.tar.gz 122627 SHA256:1ae5183aa658be8f611a50040aa3edb7e870b753a81b251909384b5e1d75be21
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u8/
-- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls26=2.12.20-8+deb7u5`
 
@@ -1495,19 +1484,8 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `TatcherUlrichPublicDomain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:6.7.7.10-5+deb7u15
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u15.dsc' imagemagick_6.7.7.10-5+deb7u15.dsc 3160 SHA256:643566aff4ea3ff92f0a0b423e73aa17a6c2baf28fbfd9a137db9f048e8e42d2
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10.orig.tar.bz2' imagemagick_6.7.7.10.orig.tar.bz2 10473522 SHA256:05fb23824b1c90ac35259715c94c65fb5cda6969eb597a7637762d8cf3998fda
-'http://security.debian.org/pool/updates/main/i/imagemagick/imagemagick_6.7.7.10-5+deb7u15.debian.tar.bz2' imagemagick_6.7.7.10-5+deb7u15.debian.tar.bz2 216715 SHA256:1cd21ac8bf7ade7a3d25a6705a30c7415a18f334186dfb2c125518fc8a2be237
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/imagemagick/8:6.7.7.10-5+deb7u15/
-- https://sources.debian.net/src/imagemagick/8:6.7.7.10-5+deb7u15/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `inetutils=2:1.9-2`
 
