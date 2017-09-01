@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6411d6ffa90db4d46b6a3c4cbe402fcc3ee8dc496bc59833de1c857519c3a2cf`
-- Created: `2017-08-28T21:43:03.252914196Z`
-- Virtual Size: ~ 875.63 Mb  
+- Image ID: `sha256:8abc6e8fd6ffcd72139a2f2ee518fe27068560cf4a93987b3cef4f394507c74d`
+- Created: `2017-08-29T04:24:29.900127832Z`
+- Virtual Size: ~ 877.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["perl5.26.0","-de0"]`
@@ -945,9 +945,10 @@ Likely also available for browsing at:
 Binary Packages:
 
 - `dpkg=1.18.24`
+- `dpkg-dev=1.18.24`
 - `libdpkg-perl=1.18.24`
 
-Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/libdpkg-perl/copyright`)
+Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-dev/copyright`, `/usr/share/doc/libdpkg-perl/copyright`)
 
 - `BSD-2-clause`
 - `GPL-2`
@@ -2573,11 +2574,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u1/
 - https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libgd2=2.2.4-2`
+### `dpkg` source package: `libgd2=2.2.4-2+deb9u1`
 
 Binary Packages:
 
-- `libgd3:amd64=2.2.4-2`
+- `libgd3:amd64=2.2.4-2+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 
@@ -2596,16 +2597,16 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libgd2=2.2.4-2
-'http://deb.debian.org/debian/pool/main/libg/libgd2/libgd2_2.2.4-2.dsc' libgd2_2.2.4-2.dsc 2293 SHA256:2dd625dd85949a47aa7c7d2eed379e8a0bb7950b24de4be8909549656087da29
-'http://deb.debian.org/debian/pool/main/libg/libgd2/libgd2_2.2.4.orig.tar.xz' libgd2_2.2.4.orig.tar.xz 2478528 SHA256:137f13a7eb93ce72e32ccd7cebdab6874f8cf7ddf31d3a455a68e016ecd9e4e6
-'http://deb.debian.org/debian/pool/main/libg/libgd2/libgd2_2.2.4-2.debian.tar.xz' libgd2_2.2.4-2.debian.tar.xz 24884 SHA256:72bbd9f3444daa61e305306988962c815b027e7de1b2b2aa9951d5a45bc44009
+$ apt-get source -qq --print-uris libgd2=2.2.4-2+deb9u1
+'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.2.4-2+deb9u1.dsc' libgd2_2.2.4-2+deb9u1.dsc 2346 SHA256:59270d7fd871175c1222a19e0a7444fed9c1724df7ceaf9ec817cd49bc51cc1a
+'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.2.4.orig.tar.xz' libgd2_2.2.4.orig.tar.xz 2478528 SHA256:137f13a7eb93ce72e32ccd7cebdab6874f8cf7ddf31d3a455a68e016ecd9e4e6
+'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.2.4-2+deb9u1.debian.tar.xz' libgd2_2.2.4-2+deb9u1.debian.tar.xz 25408 SHA256:d7570a7365c923fb0b00966d1a937a9a63d5fce013bd05f427f3bcc48730c5b7
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libgd2/2.2.4-2/
-- https://sources.debian.net/src/libgd2/2.2.4-2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libgd2/2.2.4-2+deb9u1/
+- https://sources.debian.net/src/libgd2/2.2.4-2+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.26-2`
 
@@ -3525,12 +3526,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libxinerama/2:1.1.3-1/
 - https://sources.debian.net/src/libxinerama/2:1.1.3-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libxml2=2.9.4+dfsg1-2.2`
+### `dpkg` source package: `libxml2=2.9.4+dfsg1-2.2+deb9u1`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.4+dfsg1-2.2`
-- `libxml2-dev:amd64=2.9.4+dfsg1-2.2`
+- `libxml2:amd64=2.9.4+dfsg1-2.2+deb9u1`
+- `libxml2-dev:amd64=2.9.4+dfsg1-2.2+deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3539,16 +3540,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-2.2
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2.dsc' libxml2_2.9.4+dfsg1-2.2.dsc 2891 SHA256:748bf3236c22911a89bc3b50268626b9aafe4557114aad21684493e5dc30156c
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2.debian.tar.xz' libxml2_2.9.4+dfsg1-2.2.debian.tar.xz 28936 SHA256:c038bba02a56164cef7728509ba3c8f1856018573769ee9ffcc48c565e90bdc9
+$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-2.2+deb9u1
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2+deb9u1.dsc' libxml2_2.9.4+dfsg1-2.2+deb9u1.dsc 3049 SHA256:9cd8802fa5c7a6c89a23c755b41f5e9a114f7e74c4b5aeb303516c1f298df87a
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2+deb9u1.debian.tar.xz' libxml2_2.9.4+dfsg1-2.2+deb9u1.debian.tar.xz 33600 SHA256:6c9e6fed9d68a7992057e6153972d1582fc75ff3140f619ba9c0b024351c14e7
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2.2/
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2.2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2.2+deb9u1/
+- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2.2+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxpm=1:3.5.12-1`
 
@@ -3699,11 +3700,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libyaml/0.1.7-2/
 - https://sources.debian.net/src/libyaml/0.1.7-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `linux=4.9.30-2+deb9u2`
+### `dpkg` source package: `linux=4.9.30-2+deb9u3`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.9.30-2+deb9u2`
+- `linux-libc-dev:amd64=4.9.30-2+deb9u3`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3716,16 +3717,16 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.9.30-2+deb9u2
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.30-2+deb9u2.dsc' linux_4.9.30-2+deb9u2.dsc 123136 SHA256:542f6f2ffdaac4327ce665857c7c24dc39663c4d58f6806788bf6c25ed07db4e
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.30.orig.tar.xz' linux_4.9.30.orig.tar.xz 94471128 SHA256:4a5afc3589825f514c5908e8421e81695648dad62357343494c3dd07edb29306
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.30-2+deb9u2.debian.tar.xz' linux_4.9.30-2+deb9u2.debian.tar.xz 3051920 SHA256:eeb80f96845201058b5cfe1408e30e469f94b7594dca6de2a81d494cee320a44
+$ apt-get source -qq --print-uris linux=4.9.30-2+deb9u3
+'http://security.debian.org/pool/updates/main/l/linux/linux_4.9.30-2+deb9u3.dsc' linux_4.9.30-2+deb9u3.dsc 123291 SHA256:f0314677ff16908f08dca68651c310bd2ae92ac6449ef2b0fcdb18a6750f3387
+'http://security.debian.org/pool/updates/main/l/linux/linux_4.9.30.orig.tar.xz' linux_4.9.30.orig.tar.xz 94471128 SHA256:4a5afc3589825f514c5908e8421e81695648dad62357343494c3dd07edb29306
+'http://security.debian.org/pool/updates/main/l/linux/linux_4.9.30-2+deb9u3.debian.tar.xz' linux_4.9.30-2+deb9u3.debian.tar.xz 3061100 SHA256:80e070be2e76dbc601de552dad4ece87e5a8d26d61648a2948a94d6e2cc90cef
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/linux/4.9.30-2+deb9u2/
-- https://sources.debian.net/src/linux/4.9.30-2+deb9u2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/linux/4.9.30-2+deb9u3/
+- https://sources.debian.net/src/linux/4.9.30-2+deb9u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=9.20161125`
 
@@ -3851,13 +3852,13 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/make-dfsg/4.1-9.1/
 - https://sources.debian.net/src/make-dfsg/4.1-9.1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `mariadb-10.1=10.1.23-9+deb9u1`
+### `dpkg` source package: `mariadb-10.1=10.1.26-0+deb9u1`
 
 Binary Packages:
 
-- `libmariadbclient-dev=10.1.23-9+deb9u1`
-- `libmariadbclient-dev-compat:amd64=10.1.23-9+deb9u1`
-- `libmariadbclient18:amd64=10.1.23-9+deb9u1`
+- `libmariadbclient-dev=10.1.26-0+deb9u1`
+- `libmariadbclient-dev-compat:amd64=10.1.26-0+deb9u1`
+- `libmariadbclient18:amd64=10.1.26-0+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libmariadbclient-dev/copyright`, `/usr/share/doc/libmariadbclient-dev-compat/copyright`, `/usr/share/doc/libmariadbclient18/copyright`)
 
@@ -3884,16 +3885,16 @@ Licenses: (parsed from: `/usr/share/doc/libmariadbclient-dev/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mariadb-10.1=10.1.23-9+deb9u1
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.23-9+deb9u1.dsc' mariadb-10.1_10.1.23-9+deb9u1.dsc 4268 SHA256:aa307c141e20facd0d4680870cdd5d8a3a190c576514c60e9460f069a80b42ce
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.23.orig.tar.gz' mariadb-10.1_10.1.23.orig.tar.gz 61772244 SHA256:54d8114e24bfa5e3ebdc7d69e071ad1471912847ea481b227d204f9d644300bf
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.23-9+deb9u1.debian.tar.xz' mariadb-10.1_10.1.23-9+deb9u1.debian.tar.xz 221684 SHA256:5705aff3ee8acebca298e3d87f30322dae6714f238162eb4e5266b64a43821cb
+$ apt-get source -qq --print-uris mariadb-10.1=10.1.26-0+deb9u1
+'http://security.debian.org/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.26-0+deb9u1.dsc' mariadb-10.1_10.1.26-0+deb9u1.dsc 4476 SHA256:f461d4adcf8934e9ab60ff913a381e421ae0dda403e54f36fcddcbfa1a32e142
+'http://security.debian.org/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.26.orig.tar.gz' mariadb-10.1_10.1.26.orig.tar.gz 61887132 SHA256:ba88b1cb9967dea2909938a34ba89373b162b0d83e5c98a0f1c94540156bf73d
+'http://security.debian.org/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.26-0+deb9u1.debian.tar.xz' mariadb-10.1_10.1.26-0+deb9u1.debian.tar.xz 226912 SHA256:3d90b4bc9201de408abcdb3b43e990c2010320fa97b358cecdc1a0203a21d1ec
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/mariadb-10.1/10.1.23-9+deb9u1/
-- https://sources.debian.net/src/mariadb-10.1/10.1.23-9+deb9u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/mariadb-10.1/10.1.26-0+deb9u1/
+- https://sources.debian.net/src/mariadb-10.1/10.1.26-0+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
@@ -4646,12 +4647,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/pkg-config/0.29-4/
 - https://sources.debian.net/src/pkg-config/0.29-4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `postgresql-9.6=9.6.3-3`
+### `dpkg` source package: `postgresql-9.6=9.6.4-0+deb9u1`
 
 Binary Packages:
 
-- `libpq-dev=9.6.3-3`
-- `libpq5:amd64=9.6.3-3`
+- `libpq-dev=9.6.4-0+deb9u1`
+- `libpq5:amd64=9.6.4-0+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -4673,16 +4674,16 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-9.6=9.6.3-3
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.3-3.dsc' postgresql-9.6_9.6.3-3.dsc 3666 SHA256:4f996f71e4c817a4130121c5e470b529842bf8b551075a47271dcfa21dbecea9
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.3.orig.tar.bz2' postgresql-9.6_9.6.3.orig.tar.bz2 19534323 SHA256:1645b3736901f6d854e695a937389e68ff2066ce0cde9d73919d6ab7c995b9c6
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.3-3.debian.tar.xz' postgresql-9.6_9.6.3-3.debian.tar.xz 21036 SHA256:01e2725bbbde52bee75788abc0f9a056cb7a316fee14c642efb7b38520d0f30e
+$ apt-get source -qq --print-uris postgresql-9.6=9.6.4-0+deb9u1
+'http://security.debian.org/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.4-0+deb9u1.dsc' postgresql-9.6_9.6.4-0+deb9u1.dsc 3694 SHA256:baf59e5e050f2ae3108226fcd5937e323da34828231fec1eb3d8a58c99d724c0
+'http://security.debian.org/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.4.orig.tar.bz2' postgresql-9.6_9.6.4.orig.tar.bz2 19566875 SHA256:2b3ab16d82e21cead54c08b95ce3ac480696944a68603b6c11b3205b7376ce13
+'http://security.debian.org/pool/updates/main/p/postgresql-9.6/postgresql-9.6_9.6.4-0+deb9u1.debian.tar.xz' postgresql-9.6_9.6.4-0+deb9u1.debian.tar.xz 21072 SHA256:d2aee3d5cf7d150c0117f0a0f5c3a65bcd47b9dd7a95387b6b9aad166f770f44
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/postgresql-9.6/9.6.3-3/
-- https://sources.debian.net/src/postgresql-9.6/9.6.3-3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/postgresql-9.6/9.6.4-0+deb9u1/
+- https://sources.debian.net/src/postgresql-9.6/9.6.4-0+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `procps=2:3.3.12-3`
 
