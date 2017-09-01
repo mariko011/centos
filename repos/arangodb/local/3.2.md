@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f2dccedf7c3f1f3c0c0647a164b23ad92513fbfd92445f3f61697c64525f642e`
-- Created: `2017-08-25T14:19:56.467409456Z`
+- Image ID: `sha256:73d20462505782afbbcb523b85de249b3a61c06e230dd6744266de29949fa0cb`
+- Created: `2017-08-31T16:51:34.252315628Z`
 - Virtual Size: ~ 270.70 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,10 +14,10 @@
   - `ARCHITECTURE=amd64`
   - `DEB_PACKAGE_VERSION=1`
   - `ARANGO_VERSION=3.2.2`
-  - `ARANGO_URL=https://www.arangodb.com/repositories/arangodb32/Debian_9.0`
+  - `ARANGO_URL=https://download.arangodb.com/arangodb32/Debian_9.0`
   - `ARANGO_PACKAGE=arangodb3-3.2.2-1_amd64.deb`
-  - `ARANGO_PACKAGE_URL=https://www.arangodb.com/repositories/arangodb32/Debian_9.0/amd64/arangodb3-3.2.2-1_amd64.deb`
-  - `ARANGO_SIGNATURE_URL=https://www.arangodb.com/repositories/arangodb32/Debian_9.0/amd64/arangodb3-3.2.2-1_amd64.deb.asc`
+  - `ARANGO_PACKAGE_URL=https://download.arangodb.com/arangodb32/Debian_9.0/amd64/arangodb3-3.2.2-1_amd64.deb`
+  - `ARANGO_SIGNATURE_URL=https://download.arangodb.com/arangodb32/Debian_9.0/amd64/arangodb3-3.2.2-1_amd64.deb.asc`
 
 ## `dpkg` (`.deb`-based packages)
 
