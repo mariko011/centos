@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:535a7b98d04dd8e50bd8a908ed3958a141c3a79274c86b19987304169a8da096`
-- Created: `2017-07-25T00:26:44.807319454Z`
-- Virtual Size: ~ 385.96 Mb  
+- Image ID: `sha256:17c6f78ff576daa2f84e94eee62ca6a0d1bf4c35e41246a9ba0179b1cffc8000`
+- Created: `2017-09-01T20:24:26.000007525Z`
+- Virtual Size: ~ 384.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["cassandra","-f"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOSU_VERSION=1.7`
+  - `GOSU_VERSION=1.10`
   - `GPG_KEYS=514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA`
   - `CASSANDRA_VERSION=3.11.0`
   - `CASSANDRA_CONFIG=/etc/cassandra`
