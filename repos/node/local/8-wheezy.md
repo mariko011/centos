@@ -2112,19 +2112,8 @@ Licenses: (parsed from: `/usr/share/doc/libidn11/copyright`, `/usr/share/doc/lib
 - `LGPL-3`
 - `LGPL-3+ | GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libidn=1.25-2+deb7u2
-'http://security.debian.org/pool/updates/main/libi/libidn/libidn_1.25-2+deb7u2.dsc' libidn_1.25-2+deb7u2.dsc 2181 SHA256:32a0233e9ccae9894b07e7c0015488af41f53c76404876645f2a119048236150
-'http://security.debian.org/pool/updates/main/libi/libidn/libidn_1.25.orig.tar.gz' libidn_1.25.orig.tar.gz 3390531 SHA256:7fe625328a6a5d837d723c462c1788affb84d9c9fc0ae5cd0ce9ac7724c34716
-'http://security.debian.org/pool/updates/main/libi/libidn/libidn_1.25-2+deb7u2.debian.tar.gz' libidn_1.25-2+deb7u2.debian.tar.gz 31241 SHA256:7d87c19a4b9307b8189b97d3d5922fbb392a669d3d92e9d528fcf976fb6f54b4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libidn/1.25-2+deb7u2/
-- https://sources.debian.net/src/libidn/1.25-2+deb7u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libjpeg8=8d-1+deb7u1`
 
