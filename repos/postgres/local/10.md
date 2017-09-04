@@ -1,20 +1,20 @@
-# `postgres:10-beta3`
+# `postgres:10-beta4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0b10a469cf2c69c0aa537f2111084d3f0b1046299a259aa5accb4f93ab1c43d4`
-- Created: `2017-08-10T22:40:02.053024759Z`
-- Virtual Size: ~ 289.38 Mb  
+- Image ID: `sha256:507e4bde34cc214d486330aff78ecdda0ea4ce0a515992fa9607a3be450f5c27`
+- Created: `2017-08-31T20:29:05.959630544Z`
+- Virtual Size: ~ 288.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["postgres"]`
 - Environment:
   - `PATH=/usr/lib/postgresql/10/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOSU_VERSION=1.7`
+  - `GOSU_VERSION=1.10`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=10`
-  - `PG_VERSION=10~beta3-1.pgdg90+1`
+  - `PG_VERSION=10~beta4-1.pgdg90+1`
   - `PGDATA=/var/lib/postgresql/data`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1735,11 +1735,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libunistring/0.9.6+really0.9.3-0.1/
 - https://sources.debian.net/src/libunistring/0.9.6+really0.9.3-0.1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libxml2=2.9.4+dfsg1-2.2`
+### `dpkg` source package: `libxml2=2.9.4+dfsg1-2.2+deb9u1`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.4+dfsg1-2.2`
+- `libxml2:amd64=2.9.4+dfsg1-2.2+deb9u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1748,16 +1748,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-2.2
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2.dsc' libxml2_2.9.4+dfsg1-2.2.dsc 2891 SHA256:748bf3236c22911a89bc3b50268626b9aafe4557114aad21684493e5dc30156c
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2.debian.tar.xz' libxml2_2.9.4+dfsg1-2.2.debian.tar.xz 28936 SHA256:c038bba02a56164cef7728509ba3c8f1856018573769ee9ffcc48c565e90bdc9
+$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-2.2+deb9u1
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2+deb9u1.dsc' libxml2_2.9.4+dfsg1-2.2+deb9u1.dsc 3049 SHA256:9cd8802fa5c7a6c89a23c755b41f5e9a114f7e74c4b5aeb303516c1f298df87a
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.4+dfsg1-2.2+deb9u1.debian.tar.xz' libxml2_2.9.4+dfsg1-2.2+deb9u1.debian.tar.xz 33600 SHA256:6c9e6fed9d68a7992057e6153972d1582fc75ff3140f619ba9c0b024351c14e7
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2.2/
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2.2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2.2+deb9u1/
+- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-2.2+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxslt=1.1.29-2.1`
 
@@ -1938,11 +1938,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/mailutils/1:3.1.1-1/
 - https://sources.debian.net/src/mailutils/1:3.1.1-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `mariadb-10.1=10.1.23-9+deb9u1`
+### `dpkg` source package: `mariadb-10.1=10.1.26-0+deb9u1`
 
 Binary Packages:
 
-- `libmariadbclient18:amd64=10.1.23-9+deb9u1`
+- `libmariadbclient18:amd64=10.1.26-0+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libmariadbclient18/copyright`)
 
@@ -1969,16 +1969,16 @@ Licenses: (parsed from: `/usr/share/doc/libmariadbclient18/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mariadb-10.1=10.1.23-9+deb9u1
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.23-9+deb9u1.dsc' mariadb-10.1_10.1.23-9+deb9u1.dsc 4268 SHA256:aa307c141e20facd0d4680870cdd5d8a3a190c576514c60e9460f069a80b42ce
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.23.orig.tar.gz' mariadb-10.1_10.1.23.orig.tar.gz 61772244 SHA256:54d8114e24bfa5e3ebdc7d69e071ad1471912847ea481b227d204f9d644300bf
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.23-9+deb9u1.debian.tar.xz' mariadb-10.1_10.1.23-9+deb9u1.debian.tar.xz 221684 SHA256:5705aff3ee8acebca298e3d87f30322dae6714f238162eb4e5266b64a43821cb
+$ apt-get source -qq --print-uris mariadb-10.1=10.1.26-0+deb9u1
+'http://security.debian.org/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.26-0+deb9u1.dsc' mariadb-10.1_10.1.26-0+deb9u1.dsc 4476 SHA256:f461d4adcf8934e9ab60ff913a381e421ae0dda403e54f36fcddcbfa1a32e142
+'http://security.debian.org/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.26.orig.tar.gz' mariadb-10.1_10.1.26.orig.tar.gz 61887132 SHA256:ba88b1cb9967dea2909938a34ba89373b162b0d83e5c98a0f1c94540156bf73d
+'http://security.debian.org/pool/updates/main/m/mariadb-10.1/mariadb-10.1_10.1.26-0+deb9u1.debian.tar.xz' mariadb-10.1_10.1.26-0+deb9u1.debian.tar.xz 226912 SHA256:3d90b4bc9201de408abcdb3b43e990c2010320fa97b358cecdc1a0203a21d1ec
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/mariadb-10.1/10.1.23-9+deb9u1/
-- https://sources.debian.net/src/mariadb-10.1/10.1.23-9+deb9u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/mariadb-10.1/10.1.26-0+deb9u1/
+- https://sources.debian.net/src/mariadb-10.1/10.1.26-0+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
@@ -2444,13 +2444,13 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/popt/1.16-10/
 - https://sources.debian.net/src/popt/1.16-10/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `postgresql-10=10~beta3-1.pgdg90+1`
+### `dpkg` source package: `postgresql-10=10~beta4-1.pgdg90+1`
 
 Binary Packages:
 
-- `libpq5:amd64=10~beta3-1.pgdg90+1`
-- `postgresql-10=10~beta3-1.pgdg90+1`
-- `postgresql-client-10=10~beta3-1.pgdg90+1`
+- `libpq5:amd64=10~beta4-1.pgdg90+1`
+- `postgresql-10=10~beta4-1.pgdg90+1`
+- `postgresql-client-10=10~beta4-1.pgdg90+1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-10/copyright`, `/usr/share/doc/postgresql-client-10/copyright`)
 
@@ -2472,10 +2472,10 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-10=10~beta3-1.pgdg90+1
-'http://apt.postgresql.org/pub/repos/apt/pool/10/p/postgresql-10/postgresql-10_10~beta3-1.pgdg90+1.dsc' postgresql-10_10~beta3-1.pgdg90+1.dsc 2709 SHA256:b6cd77eb0888c23164a30fc5af99f3c7f40136e06d2fc755f6250edcb2b09bb2
-'http://apt.postgresql.org/pub/repos/apt/pool/10/p/postgresql-10/postgresql-10_10~beta3.orig.tar.bz2' postgresql-10_10~beta3.orig.tar.bz2 19914123 SHA256:6722546739f8e2dd379e8031784e86c5c588638df6c477046ebdd479586bcb3e
-'http://apt.postgresql.org/pub/repos/apt/pool/10/p/postgresql-10/postgresql-10_10~beta3-1.pgdg90+1.debian.tar.xz' postgresql-10_10~beta3-1.pgdg90+1.debian.tar.xz 17168 SHA256:bda630827c6689aae69008540763841cfe1e0dfb028db28efd9386e25159466c
+$ apt-get source -qq --print-uris postgresql-10=10~beta4-1.pgdg90+1
+'http://apt.postgresql.org/pub/repos/apt/pool/10/p/postgresql-10/postgresql-10_10~beta4-1.pgdg90+1.dsc' postgresql-10_10~beta4-1.pgdg90+1.dsc 2709 SHA256:8d1dd95493159a1a35b995cb267a46c45a1423703b0e7a25904882e2b5361f90
+'http://apt.postgresql.org/pub/repos/apt/pool/10/p/postgresql-10/postgresql-10_10~beta4.orig.tar.bz2' postgresql-10_10~beta4.orig.tar.bz2 20024694 SHA256:e70ffa84d439033533279ccb3ae7beaa0278585b2b176a767bcd0cbddb1252d2
+'http://apt.postgresql.org/pub/repos/apt/pool/10/p/postgresql-10/postgresql-10_10~beta4-1.pgdg90+1.debian.tar.xz' postgresql-10_10~beta4-1.pgdg90+1.debian.tar.xz 17180 SHA256:bd872245e161a98e4114b177e8a37757a086943b4e1dfad058a6c4c6e98b95e8
 ```
 
 ### `dpkg` source package: `postgresql-common=184.pgdg90+1`
