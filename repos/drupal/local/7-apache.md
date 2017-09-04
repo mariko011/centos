@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ee36407636d2d2a80f1466d97fa37449a868a85f63916d6d99d715a567104a4a`
-- Created: `2017-08-03T22:48:22.450031001Z`
-- Virtual Size: ~ 406.22 Mb  
+- Image ID: `sha256:490c2eae66d1a385bd1fa7887269606276c1fb216ee566ba82993279af2709b4`
+- Created: `2017-08-31T19:49:05.988763113Z`
+- Virtual Size: ~ 407.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,10 +21,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2`
   - `PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie`
   - `GPG_KEYS=1A4E8B7277C42E53DBA9C7B9BCAA30EA9C0D5763 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3`
-  - `PHP_VERSION=7.0.22`
-  - `PHP_URL=https://secure.php.net/get/php-7.0.22.tar.xz/from/this/mirror`
-  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.22.tar.xz.asc/from/this/mirror`
-  - `PHP_SHA256=408c3fbc235ec940433bfac1f3ed4bf797f61b4a1693b9fb0b6a04b2c1832501`
+  - `PHP_VERSION=7.0.23`
+  - `PHP_URL=https://secure.php.net/get/php-7.0.23.tar.xz/from/this/mirror`
+  - `PHP_ASC_URL=https://secure.php.net/get/php-7.0.23.tar.xz.asc/from/this/mirror`
+  - `PHP_SHA256=8e526e3551a58e00c8055fa4a72804aa1bd3ee1c0411b25bf1504cc4992609df`
   - `PHP_MD5=`
   - `DRUPAL_VERSION=7.56`
   - `DRUPAL_MD5=5d198f40f0f1cbf9cdf1bf3de842e534`
@@ -1943,11 +1943,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libusb/2:0.1.12-25/
 - https://sources.debian.net/src/libusb/2:0.1.12-25/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libxml2=2.9.1+dfsg1-5+deb8u4`
+### `dpkg` source package: `libxml2=2.9.1+dfsg1-5+deb8u5`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.1+dfsg1-5+deb8u4`
+- `libxml2:amd64=2.9.1+dfsg1-5+deb8u5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1956,16 +1956,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxml2=2.9.1+dfsg1-5+deb8u4
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u4.dsc' libxml2_2.9.1+dfsg1-5+deb8u4.dsc 2760 SHA256:23f9a9935227718fd2921abb484c129617325e1306d8525b3dcec1611df01096
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1.orig.tar.gz' libxml2_2.9.1+dfsg1.orig.tar.gz 3793894 SHA256:f3ec5256412192f74833286c4490672500b232ed1c9195214db2c641df064a28
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u4.debian.tar.xz' libxml2_2.9.1+dfsg1-5+deb8u4.debian.tar.xz 66756 SHA256:cda8374910db4e2a06b2515123dbe0b714f7f647532dc305f03c2a094175e706
+$ apt-get source -qq --print-uris libxml2=2.9.1+dfsg1-5+deb8u5
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u5.dsc' libxml2_2.9.1+dfsg1-5+deb8u5.dsc 2760 SHA256:6fe2c4e997f1ed1520cbba4474513880a1e7450de57a0c86f73c4023396609fb
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1.orig.tar.gz' libxml2_2.9.1+dfsg1.orig.tar.gz 3793894 SHA256:f3ec5256412192f74833286c4490672500b232ed1c9195214db2c641df064a28
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u5.debian.tar.xz' libxml2_2.9.1+dfsg1-5+deb8u5.debian.tar.xz 70784 SHA256:01247e1947e2b52c4ef0e227fdd501038aa0840b8c889c26b6503a2dcd85a5d3
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u4/
-- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u4/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u5/
+- https://sources.debian.net/src/libxml2/2.9.1+dfsg1-5+deb8u5/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `linux=3.16.43-2+deb8u2`
 
@@ -2523,11 +2523,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/pkg-config/0.28-1/
 - https://sources.debian.net/src/pkg-config/0.28-1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `postgresql-9.4=9.4.12-0+deb8u1`
+### `dpkg` source package: `postgresql-9.4=9.4.13-0+deb8u1`
 
 Binary Packages:
 
-- `libpq5:amd64=9.4.12-0+deb8u1`
+- `libpq5:amd64=9.4.13-0+deb8u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -2537,16 +2537,16 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-9.4=9.4.12-0+deb8u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.12-0+deb8u1.dsc' postgresql-9.4_9.4.12-0+deb8u1.dsc 3546 SHA256:d854256e6aa72c9394da5c3fb48fe4fa44431ab470bdcb7e128861cc0c66a9dd
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.12.orig.tar.bz2' postgresql-9.4_9.4.12.orig.tar.bz2 17833119 SHA256:fca055481875d1c49e31c28443f56472a1474b3fbe25b7ae64440c6118f82e64
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.4/postgresql-9.4_9.4.12-0+deb8u1.debian.tar.xz' postgresql-9.4_9.4.12-0+deb8u1.debian.tar.xz 24660 SHA256:9499fb30e776b6f4e8c6fdf154aea3468cfe1c5208010c6f67fcdfb3d89421dd
+$ apt-get source -qq --print-uris postgresql-9.4=9.4.13-0+deb8u1
+'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.13-0+deb8u1.dsc' postgresql-9.4_9.4.13-0+deb8u1.dsc 3546 SHA256:b803979189136ce6cd081a51d5c8cc26e5a7d8cb3dbcc31aa9e0eedeaa28e79c
+'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.13.orig.tar.bz2' postgresql-9.4_9.4.13.orig.tar.bz2 17867502 SHA256:0080f55d65194de8b96a2dab153443f8248ff2b2b10e6ab4cda2dcadcac7f2ab
+'http://security.debian.org/pool/updates/main/p/postgresql-9.4/postgresql-9.4_9.4.13-0+deb8u1.debian.tar.xz' postgresql-9.4_9.4.13-0+deb8u1.debian.tar.xz 24760 SHA256:eaba640d7bab6113ba355e774d7e060263dcc7b3a27d4f31bf0478ab87075be7
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/postgresql-9.4/9.4.12-0+deb8u1/
-- https://sources.debian.net/src/postgresql-9.4/9.4.12-0+deb8u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/postgresql-9.4/9.4.13-0+deb8u1/
+- https://sources.debian.net/src/postgresql-9.4/9.4.13-0+deb8u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `procps=2:3.3.9-9`
 
