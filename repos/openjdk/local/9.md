@@ -2680,19 +2680,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.13-4
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13-4.dsc' python2.7_2.7.13-4.dsc 3367 SHA256:108fce09520abe38b42ca067e07d1e08d370cc188b1205521725b80578e0aac4
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13.orig.tar.gz' python2.7_2.7.13.orig.tar.gz 17076672 SHA256:a4f05a0720ce0fd92626f0278b6b433eee9a6173ddf2bced7957dfb599a5ece1
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13-4.diff.gz' python2.7_2.7.13-4.diff.gz 679735 SHA256:19df2c5e1ea46906be51e6456bf758a0778f65ece15d3e68a6a2bbb6dfc0cf62
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/python2.7/2.7.13-4/
-- https://sources.debian.net/src/python2.7/2.7.13-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `readline=7.0-3`
 
@@ -2905,19 +2894,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=234-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_234-2.3.dsc' systemd_234-2.3.dsc 4379 SHA256:14c5d6f063183f33a880bdfd5bf40a09ad67cff45116a7331420fdebae5860c1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_234.orig.tar.gz' systemd_234.orig.tar.gz 4800186 SHA256:da3e69d10aa1c983d33833372ad4929037b411ac421fb085c8cee79ae1d80b6a
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_234-2.3.debian.tar.xz' systemd_234-2.3.debian.tar.xz 132112 SHA256:dabfa05beb1edf30ccd80d6d73af413f19b42c09bb76390767eb4e491e2bb1d1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/systemd/234-2/
-- https://sources.debian.net/src/systemd/234-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 
