@@ -1263,19 +1263,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=234-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_234-2.3.dsc' systemd_234-2.3.dsc 4379 SHA256:14c5d6f063183f33a880bdfd5bf40a09ad67cff45116a7331420fdebae5860c1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_234.orig.tar.gz' systemd_234.orig.tar.gz 4800186 SHA256:da3e69d10aa1c983d33833372ad4929037b411ac421fb085c8cee79ae1d80b6a
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_234-2.3.debian.tar.xz' systemd_234-2.3.debian.tar.xz 132112 SHA256:dabfa05beb1edf30ccd80d6d73af413f19b42c09bb76390767eb4e491e2bb1d1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/systemd/234-2/
-- https://sources.debian.net/src/systemd/234-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 
