@@ -243,14 +243,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris db5.3=5.3.28-13
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-13.dsc' db5.3_5.3.28-13.dsc 3091 SHA256:2d56be2ce7bf2a554ddc8c6762b2bfbf19f127b33f4719958a23d006f23381de
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28.orig.tar.xz' db5.3_5.3.28.orig.tar.xz 24154920 SHA256:e1f85c8b6ebd0ed3ca72fa0ae97b65006f6d0bd0cd6f4ac24bed103cb5497bf5
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-13.debian.tar.xz' db5.3_5.3.28-13.debian.tar.xz 27676 SHA256:7126585f2eb63ca2a8fa2f4623a07d65d7df5dbbe7cea96b9bb850da5f4f22e5
-```
 
 ### `dpkg` source package: `debconf=1.5.63`
 
