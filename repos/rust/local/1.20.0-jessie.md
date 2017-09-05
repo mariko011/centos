@@ -1,10 +1,10 @@
-# `rust:1.19.0-jessie`
+# `rust:1.20.0-jessie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e4ecfa38f23095e5e906b5d877d731e543b68f8dfe243616b9385027e9d231be`
-- Created: `2017-08-29T06:30:13.640791333Z`
-- Virtual Size: ~ 1.09 Gb  
+- Image ID: `sha256:a4c70527d032feac427dfbc4d6534e398b84f8900aac4af6e155276d99f7a773`
+- Created: `2017-09-01T18:21:33.806681865Z`
+- Virtual Size: ~ 1.10 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -2417,19 +2417,8 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 - `WEBP`
 - `XFIG`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.1.0-5+deb8u10
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.1.0-5+deb8u10.dsc' libgd2_2.1.0-5+deb8u10.dsc 2510 SHA256:a382d058da161bf93b31142d0e8b618dc9a3502917fa72de00c6c38eb6ce5d12
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.1.0.orig.tar.xz' libgd2_2.1.0.orig.tar.xz 2004304 SHA256:fa6665dfe3d898019671293c84d77067a3d2ede50884dbcb6df899d508370e5a
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.1.0-5+deb8u10.debian.tar.xz' libgd2_2.1.0-5+deb8u10.debian.tar.xz 38344 SHA256:c8ced061a104ed1d162996ff76ce442bf85cfc14ccf116af774da7857309c53d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libgd2/2.1.0-5+deb8u10/
-- https://sources.debian.net/src/libgd2/2.1.0-5+deb8u10/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.17-3`
 
