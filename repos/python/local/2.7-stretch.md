@@ -2597,19 +2597,8 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 - `WEBP`
 - `XFIG`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.2.4-2+deb9u1
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.2.4-2+deb9u1.dsc' libgd2_2.2.4-2+deb9u1.dsc 2346 SHA256:59270d7fd871175c1222a19e0a7444fed9c1724df7ceaf9ec817cd49bc51cc1a
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.2.4.orig.tar.xz' libgd2_2.2.4.orig.tar.xz 2478528 SHA256:137f13a7eb93ce72e32ccd7cebdab6874f8cf7ddf31d3a455a68e016ecd9e4e6
-'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.2.4-2+deb9u1.debian.tar.xz' libgd2_2.2.4-2+deb9u1.debian.tar.xz 25408 SHA256:d7570a7365c923fb0b00966d1a937a9a63d5fce013bd05f427f3bcc48730c5b7
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libgd2/2.2.4-2+deb9u1/
-- https://sources.debian.net/src/libgd2/2.2.4-2+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.26-2`
 
