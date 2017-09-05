@@ -376,19 +376,8 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris binutils=2.29-7
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.29-7.dsc' binutils_2.29-7.dsc 5184 SHA256:ade1e7dbefe46043325d34c158c98921321a2ea4e111b00e44a9699d33da6eec
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.29.orig.tar.gz' binutils_2.29.orig.tar.gz 39180110 SHA256:f7ddc9a7ca91ea1397faeb049c502794cc3bedd09d61dd210c12ef668ff6ea9d
-'http://deb.debian.org/debian/pool/main/b/binutils/binutils_2.29-7.diff.gz' binutils_2.29-7.diff.gz 209180 SHA256:c66fa0d801745b4182e3401004c094e884aae104483d1696e27b768dd4949e7d
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/binutils/2.29-7/
-- https://sources.debian.net/src/binutils/2.29-7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `bzip2=1.0.6-8.1`
 
@@ -569,19 +558,8 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `LGPL-2.0 with AOSDL exception`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris cups=2.2.4-3
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.4-3.dsc' cups_2.2.4-3.dsc 3158 SHA256:34c25335e43cefd08034ebc456e6014328b7bedf705b14efea5d53cd4b582f3f
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.4.orig.tar.gz' cups_2.2.4.orig.tar.gz 9984475 SHA256:596d4db72651c335469ae5f37b0da72ac9f97d73e30838d787065f559dea98cc
-'http://deb.debian.org/debian/pool/main/c/cups/cups_2.2.4-3.debian.tar.xz' cups_2.2.4-3.debian.tar.xz 349480 SHA256:ed0e6797897da8dd7ebbb62d9ed2b7f12e449279ed950f142a72b2e2960d6bbb
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/cups/2.2.4-3/
-- https://sources.debian.net/src/cups/2.2.4-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `curl=7.52.1-5`
 
@@ -706,19 +684,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris db5.3=5.3.28-13
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28-13.dsc' db5.3_5.3.28-13.dsc 3091 SHA256:2d56be2ce7bf2a554ddc8c6762b2bfbf19f127b33f4719958a23d006f23381de
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28.orig.tar.xz' db5.3_5.3.28.orig.tar.xz 24154920 SHA256:e1f85c8b6ebd0ed3ca72fa0ae97b65006f6d0bd0cd6f4ac24bed103cb5497bf5
-'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28-13.debian.tar.xz' db5.3_5.3.28-13.debian.tar.xz 27676 SHA256:7126585f2eb63ca2a8fa2f4623a07d65d7df5dbbe7cea96b9bb850da5f4f22e5
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/db5.3/5.3.28-13/
-- https://sources.debian.net/src/db5.3/5.3.28-13/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `dbus=1.11.16+really1.10.22-1`
 
@@ -942,20 +909,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris e2fsprogs=1.43.5-1
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.43.5-1.dsc' e2fsprogs_1.43.5-1.dsc 2268 SHA256:640f69dbc83a9396d54577fc8b42256d6a33fbf3593ba649c816e1e1e6a90538
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.43.5.orig.tar.gz' e2fsprogs_1.43.5.orig.tar.gz 7602348 SHA256:ee0f36d11b05baff4005d2bedde01ddd521251712e518b3bf398c7e389493f9a
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.43.5.orig.tar.gz.asc' e2fsprogs_1.43.5.orig.tar.gz.asc 488 SHA256:2ecaecb2a72eb19d2cb049617d11ee20602202e196aed710f905a75442fecaa4
-'http://deb.debian.org/debian/pool/main/e/e2fsprogs/e2fsprogs_1.43.5-1.debian.tar.xz' e2fsprogs_1.43.5-1.debian.tar.xz 76556 SHA256:941f30978f7320930b9efb4cf7dda89c96bfbb84a4c46eccb88d4afab6dac64f
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/e2fsprogs/1.43.5-1/
-- https://sources.debian.net/src/e2fsprogs/1.43.5-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `elfutils=0.168-1`
 
@@ -1043,19 +998,8 @@ Licenses: (parsed from: `/usr/share/doc/libfftw3-double3/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris fftw3=3.3.6p2-1
-'http://deb.debian.org/debian/pool/main/f/fftw3/fftw3_3.3.6p2-1.dsc' fftw3_3.3.6p2-1.dsc 2955 SHA256:569034047af1f76e24c606781532128d2417f406e3e2b3e1ef8573a324cebef4
-'http://deb.debian.org/debian/pool/main/f/fftw3/fftw3_3.3.6p2.orig.tar.gz' fftw3_3.3.6p2.orig.tar.gz 4185261 SHA256:a5de35c5c824a78a058ca54278c706cdf3d4abba1c56b63531c2cb05f5d57da2
-'http://deb.debian.org/debian/pool/main/f/fftw3/fftw3_3.3.6p2-1.debian.tar.xz' fftw3_3.3.6p2-1.debian.tar.xz 12936 SHA256:a425f131b42e114c4208aed96e89f6c840e821beae289c116549cdaf38dc6ebe
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/fftw3/3.3.6p2-1/
-- https://sources.debian.net/src/fftw3/3.3.6p2-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `file=1:5.31-1`
 
@@ -1731,19 +1675,8 @@ Licenses: (parsed from: `/usr/share/doc/gtk-update-icon-cache/copyright`)
 - `LGPL-2.1+`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris gtk+3.0=3.22.18-1
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.18-1.dsc' gtk+3.0_3.22.18-1.dsc 3894 SHA256:8f77ed46864c0f1cd346639b576200cf8d55742579052bb938a33755a86e2021
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.18.orig.tar.xz' gtk+3.0_3.22.18.orig.tar.xz 18722928 SHA256:b64b1c2ec20adf128ac08ee704d1f4e7b0a8d3df097d51f62edb271c7bb1bf69
-'http://deb.debian.org/debian/pool/main/g/gtk+3.0/gtk+3.0_3.22.18-1.debian.tar.xz' gtk+3.0_3.22.18-1.debian.tar.xz 144096 SHA256:eb17f24a05432d575de44ef9bee915988d72d9e441d65c944cef10a9aaf8b344
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/gtk+3.0/3.22.18-1/
-- https://sources.debian.net/src/gtk+3.0/3.22.18-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gts=0.7.6+darcs121130-4`
 
@@ -3723,19 +3656,8 @@ Licenses: (parsed from: `/usr/share/doc/libmariadbclient-dev/copyright`, `/usr/s
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mariadb-10.1=10.1.24-6
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.24-6.dsc' mariadb-10.1_10.1.24-6.dsc 4448 SHA256:14237809ecacb10a96ddcd52e93b9456e7e45bf3bf41e65a305fdbec6216fb5e
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.24.orig.tar.gz' mariadb-10.1_10.1.24.orig.tar.gz 61780687 SHA256:b3df99ae5b1ec8cf6cede4cbc4ae3f54ce66464549cba6d56d9ff4d24e4d551e
-'http://deb.debian.org/debian/pool/main/m/mariadb-10.1/mariadb-10.1_10.1.24-6.debian.tar.xz' mariadb-10.1_10.1.24-6.debian.tar.xz 229176 SHA256:2b9b25fe3465ccdb7559e3efda856bd600461e4237f5aba8267a29d5d3f592eb
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mariadb-10.1/10.1.24-6/
-- https://sources.debian.net/src/mariadb-10.1/10.1.24-6/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mawk=1.3.3-17`
 
@@ -3872,19 +3794,8 @@ Licenses: (parsed from: `/usr/share/doc/libmpfr4/copyright`)
 - `GFDL-1.2`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mpfr4=3.1.5-1
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_3.1.5-1.dsc' mpfr4_3.1.5-1.dsc 1971 SHA256:40c1a87b1fc06ca9447f7fb1827fc13a0c557af8541f0bccbb3022b029b73582
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_3.1.5.orig.tar.xz' mpfr4_3.1.5.orig.tar.xz 1126668 SHA256:015fde82b3979fbe5f83501986d328331ba8ddf008c1ff3da3c238f49ca062bc
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_3.1.5-1.debian.tar.xz' mpfr4_3.1.5-1.debian.tar.xz 9672 SHA256:e5b0d755ec3b3aea15aab137328f7fe65c6b800a1b897bbf50fa4fd478589bd4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mpfr4/3.1.5-1/
-- https://sources.debian.net/src/mpfr4/3.1.5-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mysql-defaults=1.0.3`
 
@@ -4058,9 +3969,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openexr=2.2.0-11
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.2.0-11.dsc' openexr_2.2.0-11.dsc 2264 SHA256:135bace179e244606866b76d63c4fe3bab9f6829d09eabe68968f70bc53d9e23
+'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.2.0-11.1.dsc' openexr_2.2.0-11.1.dsc 2439 SHA256:8d987878d616cf3c089042b2becedeb06b5d599936194ab92e5a5b44d663bf0f
 'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.2.0.orig.tar.gz' openexr_2.2.0.orig.tar.gz 14489661 SHA256:36a012f6c43213f840ce29a8b182700f6cf6b214bea0d5735594136b44914231
-'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.2.0-11.debian.tar.xz' openexr_2.2.0-11.debian.tar.xz 16504 SHA256:019605b14e57034f1e9b5d1ef6ae5f8839ab6a2756532084a8bad350e8d6f05e
+'http://deb.debian.org/debian/pool/main/o/openexr/openexr_2.2.0-11.1.debian.tar.xz' openexr_2.2.0-11.1.debian.tar.xz 17344 SHA256:d0499a25e6307dea5f985cb11a00045b7f22b71f4b86bca00b133be4acfa8a4e
 ```
 
 Likely also available for browsing at:
@@ -4489,19 +4400,8 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.6=9.6.3-4
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.3-4.dsc' postgresql-9.6_9.6.3-4.dsc 3666 SHA256:9e20df3867fa577b66958ce47f5388a99dec74a2925ab41a396323e5b3945d8f
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.3.orig.tar.bz2' postgresql-9.6_9.6.3.orig.tar.bz2 19534323 SHA256:1645b3736901f6d854e695a937389e68ff2066ce0cde9d73919d6ab7c995b9c6
-'http://deb.debian.org/debian/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.3-4.debian.tar.xz' postgresql-9.6_9.6.3-4.debian.tar.xz 22200 SHA256:dc57ca1caf7bfad1404d3458d46adad2bf9078955f1283a4ae1410a132e062ba
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/postgresql-9.6/9.6.3-4/
-- https://sources.debian.net/src/postgresql-9.6/9.6.3-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `procps=2:3.3.12-3`
 
@@ -4867,20 +4767,8 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.19.3-3
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.19.3-3.dsc' sqlite3_3.19.3-3.dsc 2488 SHA256:eea0af6c0f700bec519d36f73322d69e4fbf3cf80b8820176d3e2ee6d2598daa
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.19.3.orig-www.tar.xz' sqlite3_3.19.3.orig-www.tar.xz 3475624 SHA256:d022fc888db199fbdb83f984cffd2b28bce4e5607c1aa3133bfc22f901d221d6
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.19.3.orig.tar.xz' sqlite3_3.19.3.orig.tar.xz 5694132 SHA256:f315f639127bfd36516df4ad3181e05905058507a54dd882e0c4d9d13378baae
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.19.3-3.debian.tar.xz' sqlite3_3.19.3-3.debian.tar.xz 17564 SHA256:c6b49b43acfbbddf51cfe3cd2b8001dd036c3b0b0dd67d8c522055cf8affdd39
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/sqlite3/3.19.3-3/
-- https://sources.debian.net/src/sqlite3/3.19.3-3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `subversion=1.9.6-1`
 
@@ -4968,19 +4856,8 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`, `/usr/share/doc/lib
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.8-4
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8-4.dsc' tiff_4.0.8-4.dsc 2157 SHA256:1bc0d97745d7a9e51c8e068a1914f594439a2d70a8c5e9a53d97b3618a38d1de
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8.orig.tar.gz' tiff_4.0.8.orig.tar.gz 2065574 SHA256:59d7a5a8ccd92059913f246877db95a2918e6c04fb9d43fd74e5c3390dac2910
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8-4.debian.tar.xz' tiff_4.0.8-4.debian.tar.xz 23340 SHA256:36c008179ae08d6958cd9fcd75f82c082624bf55e2c4e6ca0e1af59ea4d75d9c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff/4.0.8-4/
-- https://sources.debian.net/src/tiff/4.0.8-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tzdata=2017b-2`
 

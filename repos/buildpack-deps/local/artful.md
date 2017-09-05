@@ -614,14 +614,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris db5.3=5.3.28-13
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-13.dsc' db5.3_5.3.28-13.dsc 3091 SHA256:2d56be2ce7bf2a554ddc8c6762b2bfbf19f127b33f4719958a23d006f23381de
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28.orig.tar.xz' db5.3_5.3.28.orig.tar.xz 24154920 SHA256:e1f85c8b6ebd0ed3ca72fa0ae97b65006f6d0bd0cd6f4ac24bed103cb5497bf5
-'http://archive.ubuntu.com/ubuntu/pool/main/d/db5.3/db5.3_5.3.28-13.debian.tar.xz' db5.3_5.3.28-13.debian.tar.xz 27676 SHA256:7126585f2eb63ca2a8fa2f4623a07d65d7df5dbbe7cea96b9bb850da5f4f22e5
-```
 
 ### `dpkg` source package: `dbus=1.10.22-1ubuntu1`
 
@@ -2149,14 +2143,8 @@ Licenses: (parsed from: `/usr/share/doc/libjpeg-turbo8/copyright`, `/usr/share/d
 - `JPEG`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libjpeg-turbo=1.5.1-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.1-0ubuntu1.dsc' libjpeg-turbo_1.5.1-0ubuntu1.dsc 2282 SHA256:c5604ee8bbfc86ca5a56083cca3da0c599269a0c050a59f62750771494f2b0db
-'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.1.orig.tar.gz' libjpeg-turbo_1.5.1.orig.tar.gz 1650647 SHA256:41429d3d253017433f66e3d472b8c7d998491d2f41caa7306b8d9a6f2a2c666c
-'http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo_1.5.1-0ubuntu1.debian.tar.xz' libjpeg-turbo_1.5.1-0ubuntu1.debian.tar.xz 23808 SHA256:2d9f3a046cb33eb82a64af11148f104163a51628c594bf640f8431faaa6b361a
-```
 
 ### `dpkg` source package: `libjpeg8-empty=8c-2ubuntu8`
 
@@ -3567,14 +3555,8 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris postgresql-9.6=9.6.4-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.4-1.dsc' postgresql-9.6_9.6.4-1.dsc 3666 SHA256:cee0b01d0d8f33e522a133e7d9fced9f57cfa78e676bd8028938530829159098
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.4.orig.tar.bz2' postgresql-9.6_9.6.4.orig.tar.bz2 19566875 SHA256:2b3ab16d82e21cead54c08b95ce3ac480696944a68603b6c11b3205b7376ce13
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-9.6/postgresql-9.6_9.6.4-1.debian.tar.xz' postgresql-9.6_9.6.4-1.debian.tar.xz 21212 SHA256:1fe0b13d576fbf7d898b3fd0f7ad2ce108075c24ea6199a77fa7c161198efabe
-```
 
 ### `dpkg` source package: `procps=2:3.3.12-1ubuntu2`
 

@@ -618,19 +618,8 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris curl=7.55.0-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.55.0-1.dsc' curl_7.55.0-1.dsc 2712 SHA256:1b2e9f9db9b691ae6b2377b7a6d68cfca635432266db7d3004b6f35969a037ab
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.55.0.orig.tar.gz' curl_7.55.0.orig.tar.gz 3730165 SHA256:dae1b1be34f5983e8d46917f2bdbb2335aecd0e57f777f4c32213da6a8050a80
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.55.0-1.debian.tar.xz' curl_7.55.0-1.debian.tar.xz 27528 SHA256:92025c6f04f0d3770b7da488efc131c4960d52d2f1de3dbdce063d3ac7b00c31
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/curl/7.55.0-1/
-- https://sources.debian.net/src/curl/7.55.0-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27~101-g0780600+dfsg-3`
 
@@ -3436,19 +3425,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.4+dfsg1-3.1
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-3.1.dsc' libxml2_2.9.4+dfsg1-3.1.dsc 3121 SHA256:7b6dbd6cb82e44393436d1900ec37791002456eb53f17951d561b2b4f3a71bdf
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1.orig.tar.xz' libxml2_2.9.4+dfsg1.orig.tar.xz 2446412 SHA256:a74ad55e346aa0b2b41903e66d21f8f3d2a736b3f41e32496376861ab484184e
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.4+dfsg1-3.1.debian.tar.xz' libxml2_2.9.4+dfsg1-3.1.debian.tar.xz 33852 SHA256:9de354bf1315f0e631505789a6059fdbcef3fd2c262b1573935cdf6acf0ee976
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-3.1/
-- https://sources.debian.net/src/libxml2/2.9.4+dfsg1-3.1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxpm=1:3.5.12-1`
 
@@ -4626,19 +4604,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.13-4
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13-4.dsc' python2.7_2.7.13-4.dsc 3367 SHA256:108fce09520abe38b42ca067e07d1e08d370cc188b1205521725b80578e0aac4
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13.orig.tar.gz' python2.7_2.7.13.orig.tar.gz 17076672 SHA256:a4f05a0720ce0fd92626f0278b6b433eee9a6173ddf2bced7957dfb599a5ece1
-'http://deb.debian.org/debian/pool/main/p/python2.7/python2.7_2.7.13-4.diff.gz' python2.7_2.7.13-4.diff.gz 679735 SHA256:19df2c5e1ea46906be51e6456bf758a0778f65ece15d3e68a6a2bbb6dfc0cf62
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/python2.7/2.7.13-4/
-- https://sources.debian.net/src/python2.7/2.7.13-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `python3-defaults=3.5.3-3`
 
@@ -4943,19 +4910,8 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris systemd=234-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_234-2.3.dsc' systemd_234-2.3.dsc 4379 SHA256:14c5d6f063183f33a880bdfd5bf40a09ad67cff45116a7331420fdebae5860c1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_234.orig.tar.gz' systemd_234.orig.tar.gz 4800186 SHA256:da3e69d10aa1c983d33833372ad4929037b411ac421fb085c8cee79ae1d80b6a
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_234-2.3.debian.tar.xz' systemd_234-2.3.debian.tar.xz 132112 SHA256:dabfa05beb1edf30ccd80d6d73af413f19b42c09bb76390767eb4e491e2bb1d1
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/systemd/234-2/
-- https://sources.debian.net/src/systemd/234-2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `sysvinit=2.88dsf-59.9`
 
