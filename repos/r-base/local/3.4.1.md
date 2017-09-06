@@ -2218,19 +2218,8 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `X11 Dual License`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris linux=4.11.11-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.11.11-1.dsc' linux_4.11.11-1.dsc 125569 SHA256:b8e63616872c08b0e6701d8c2f2a262f6e2e3becd9fb4a1c334f995bdfa019f1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.11.11.orig.tar.xz' linux_4.11.11.orig.tar.xz 96905092 SHA256:1784db6a8a461f40d77bfa09579dd78bcd57a268dd0f88162e911345835de41c
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.11.11-1.debian.tar.xz' linux_4.11.11-1.debian.tar.xz 981988 SHA256:2808cc2078f3a076dc184046dc50d74d5dc72b21d2086a805012e49e3a00e215
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/linux/4.11.11-1/
-- https://sources.debian.net/src/linux/4.11.11-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `littler=0.3.2-1`
 
@@ -2394,19 +2383,8 @@ Licenses: (parsed from: `/usr/share/doc/libmpfr4/copyright`)
 - `GFDL-1.2`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris mpfr4=3.1.5-1
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_3.1.5-1.dsc' mpfr4_3.1.5-1.dsc 1971 SHA256:40c1a87b1fc06ca9447f7fb1827fc13a0c557af8541f0bccbb3022b029b73582
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_3.1.5.orig.tar.xz' mpfr4_3.1.5.orig.tar.xz 1126668 SHA256:015fde82b3979fbe5f83501986d328331ba8ddf008c1ff3da3c238f49ca062bc
-'http://deb.debian.org/debian/pool/main/m/mpfr4/mpfr4_3.1.5-1.debian.tar.xz' mpfr4_3.1.5-1.debian.tar.xz 9672 SHA256:e5b0d755ec3b3aea15aab137328f7fe65c6b800a1b897bbf50fa4fd478589bd4
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/mpfr4/3.1.5-1/
-- https://sources.debian.net/src/mpfr4/3.1.5-1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ncurses=6.0+20170715-2`
 
@@ -3212,19 +3190,8 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff=4.0.8-4
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8-4.dsc' tiff_4.0.8-4.dsc 2157 SHA256:1bc0d97745d7a9e51c8e068a1914f594439a2d70a8c5e9a53d97b3618a38d1de
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8.orig.tar.gz' tiff_4.0.8.orig.tar.gz 2065574 SHA256:59d7a5a8ccd92059913f246877db95a2918e6c04fb9d43fd74e5c3390dac2910
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.0.8-4.debian.tar.xz' tiff_4.0.8-4.debian.tar.xz 23340 SHA256:36c008179ae08d6958cd9fcd75f82c082624bf55e2c4e6ca0e1af59ea4d75d9c
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff/4.0.8-4/
-- https://sources.debian.net/src/tiff/4.0.8-4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tk8.6=8.6.6-1`
 
