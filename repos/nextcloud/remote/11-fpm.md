@@ -1,7 +1,7 @@
 ## `nextcloud:11-fpm`
 
 ```console
-$ docker pull nextcloud@sha256:0e31c039a04fe2887bb50c9444ff72f6ba9e310f790c03782fcc15ac8a625b15
+$ docker pull nextcloud@sha256:43824dbd7d10cecb8c3e636a8cd431754ce80618d50b54369781f9a339b41e9a
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull nextcloud@sha256:0e31c039a04fe2887bb50c9444ff72f6ba9e310f790c03782
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **246.6 MB (246642441 bytes)**  
+-	Total Size: **246.6 MB (246642810 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33402ab99485b9d41468fcc959083749b45e797109bbf7535e9abec2fa7e6c92`
+-	Image ID: `sha256:e831778a0a963b8ee90de8e4656eb2754c5dcb825d721ea8303f3c0b6b9b43e5`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -82,11 +82,11 @@ VOLUME [/var/www/html]
 RUN curl -fsSL -o nextcloud.tar.bz2     "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2"  && curl -fsSL -o nextcloud.tar.bz2.asc     "https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_VERSION}.tar.bz2.asc"  && export GNUPGHOME="$(mktemp -d)"  && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 28806A878AE423A28372792ED75899B9A724937A  && gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2  && rm -r "$GNUPGHOME" nextcloud.tar.bz2.asc  && tar -xjf nextcloud.tar.bz2 -C /usr/src/  && rm nextcloud.tar.bz2  && rm -rf /usr/src/nextcloud/updater  && mkdir -p /usr/src/nextcloud/data  && mkdir -p /usr/src/nextcloud/custom_apps  && chmod +x /usr/src/nextcloud/occ
 # Tue, 05 Sep 2017 20:26:23 GMT
 COPY file:3fa42fa6664f03c90280a265050a78ef70bf32cd31864db727f5ee7e94828722 in /entrypoint.sh 
-# Tue, 05 Sep 2017 20:26:23 GMT
-COPY multi:99b311c07a698b22a6692b4166b60bcfd373660ddaec76be28748b581bd71cc4 in /usr/src/nextcloud/config/ 
-# Tue, 05 Sep 2017 20:26:24 GMT
+# Wed, 06 Sep 2017 23:01:13 GMT
+COPY multi:55b88fcd3d6a1a8ca5ef52e5d2c9e27370c13cdc4c5e94d159f82a32979740ff in /usr/src/nextcloud/config/ 
+# Wed, 06 Sep 2017 23:01:14 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 05 Sep 2017 20:26:24 GMT
+# Wed, 06 Sep 2017 23:01:14 GMT
 CMD ["php-fpm"]
 ```
 
@@ -155,7 +155,7 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 05 Sep 2017 20:33:44 GMT  
 		Size: 941.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4dec9fd5ec8a9debcb4aa8ad9c4aa440a830f99c4fa6ae69a7185dce178bd0d3`  
-		Last Modified: Tue, 05 Sep 2017 20:33:44 GMT  
-		Size: 400.0 B  
+	-	`sha256:c8b23dd1c6cc1dfa0870aa7cf1f2b116c6c737d0ee68945621fb6a617f5faeab`  
+		Last Modified: Wed, 06 Sep 2017 23:02:33 GMT  
+		Size: 769.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
