@@ -1,7 +1,7 @@
 ## `influxdb:latest`
 
 ```console
-$ docker pull influxdb@sha256:0391d82d5cff05064191a0401efba404a977e052453e00b61b791e96aa7970fe
+$ docker pull influxdb@sha256:3ebb11cf7bb1a2802cf4a2682fece9005609d6b7be263de2f700788baab239a3
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull influxdb@sha256:0391d82d5cff05064191a0401efba404a977e052453e00b61b
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **91.0 MB (90982636 bytes)**  
+-	Total Size: **91.0 MB (90983805 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1aaa5bf360fc6d4229d81cde29b7be790008c0c7f9e0ca12845d8f2dc021bf2`
+-	Image ID: `sha256:3294b3c9db170e6e47ccfee87a4b2dce367425151f66b1a6e33bdc4a898bdd76`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
@@ -38,11 +38,13 @@ COPY file:3ee2bc0321c2aa2451df7a508649c3a54f0eebc1ef9b8a24967c58105b4d3160 in /e
 EXPOSE 8086/tcp
 # Wed, 30 Aug 2017 19:31:42 GMT
 VOLUME [/var/lib/influxdb]
-# Wed, 30 Aug 2017 19:31:43 GMT
-COPY file:812647bc923fb58bd6fba201df6d23a9311547ea81f3a598e86e2b93b2399169 in /entrypoint.sh 
-# Wed, 30 Aug 2017 19:31:43 GMT
+# Wed, 06 Sep 2017 21:44:59 GMT
+COPY file:098affa3d1b749dacb263ddacfd86a5de1f598d6ba1f7c789ce482c66ee9c80b in /entrypoint.sh 
+# Wed, 06 Sep 2017 21:44:59 GMT
+COPY file:cca8e5bdb025c728ca8521b015ace9545c2552d075f4c92d7345294a6f1371c2 in /init-influxdb.sh 
+# Wed, 06 Sep 2017 21:45:00 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 30 Aug 2017 19:31:43 GMT
+# Wed, 06 Sep 2017 21:45:00 GMT
 CMD ["influxd"]
 ```
 
@@ -67,7 +69,11 @@ CMD ["influxd"]
 		Last Modified: Wed, 30 Aug 2017 19:32:06 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dc40097f01616aac4d9b4fa4b4196870e40cf7501fceeae74c8f79d213d1a9fa`  
-		Last Modified: Wed, 30 Aug 2017 19:32:05 GMT  
-		Size: 184.0 B  
+	-	`sha256:9b9261f27c9a77442d07a9bf9cde1b52469e701faa0488481d7a32f5cb137bb6`  
+		Last Modified: Wed, 06 Sep 2017 21:46:21 GMT  
+		Size: 208.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:315bdf0ddbb092647be6d409a48e66c1c12c93e603f757493c9f920120d4580c`  
+		Last Modified: Wed, 06 Sep 2017 21:46:21 GMT  
+		Size: 1.1 KB (1145 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
