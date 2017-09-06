@@ -3,12 +3,12 @@
 # Tags of `swipl`
 
 -	[`swipl:latest`](#swipllatest)
--	[`swipl:7.5.13`](#swipl7513)
+-	[`swipl:7.5.14`](#swipl7514)
 
 ## `swipl:latest`
 
 ```console
-$ docker pull swipl@sha256:2e63595e9536dda34a34615753e67fb9bafa0cfdf6ace59bc07abede521989a0
+$ docker pull swipl@sha256:adf2c3f113da7fbc87825751ac27ab8c3aefc74495f8197a73f398ec86a797cf
 ```
 
 -	Platforms:
@@ -18,9 +18,9 @@ $ docker pull swipl@sha256:2e63595e9536dda34a34615753e67fb9bafa0cfdf6ace59bc07ab
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.8 MB (50775360 bytes)**  
+-	Total Size: **50.8 MB (50778598 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e01a370f48e9b502b693ddc49ae45079df16cf951ad0e6e2a52ac5ffe5b0cfb`
+-	Image ID: `sha256:7c5c91e49b502ddf96b62c7d7f1043a9d1bae0500efb01cf66dd81fe0c049525`
 -	Default Command: `["swipl"]`
 
 ```dockerfile
@@ -32,9 +32,9 @@ CMD ["bash"]
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Michael Hendricks <michael@ndrix.org>
 # Thu, 10 Aug 2017 21:24:34 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends     libarchive13     libgmp10     libossp-uuid16     libssl1.1     libdb5.3     libpcre3     libedit2     libgeos-c1v5     libspatialindex4v5     unixodbc     odbc-postgresql     tdsodbc     libmariadbclient18 &&     rm -rf /var/lib/apt/lists/*
-# Thu, 31 Aug 2017 19:45:39 GMT
-RUN SWIPL_VER=7.5.13 &&     SWIPL_CHECKSUM=3680231e22ac1622c507652649e17ad07bc41ff08484f4e4f767ec04802c435c &&     BUILD_DEPS='make gcc wget libarchive-dev libgmp-dev libossp-uuid-dev libpcre3-dev libreadline-dev libedit-dev libssl-dev zlib1g-dev libdb-dev libgeos-dev libspatialindex-dev unixodbc-dev' &&     apt-get update && apt-get install -y --no-install-recommends $BUILD_DEPS &&     mkdir /tmp/src &&     cd /tmp/src &&     wget http://www.swi-prolog.org/download/devel/src/swipl-$SWIPL_VER.tar.gz &&     echo "$SWIPL_CHECKSUM  swipl-$SWIPL_VER.tar.gz" >> swipl-$SWIPL_VER.tar.gz-CHECKSUM &&     sha256sum -c swipl-$SWIPL_VER.tar.gz-CHECKSUM &&     tar -xzf swipl-$SWIPL_VER.tar.gz &&     cd swipl-$SWIPL_VER &&     cp build.templ build &&     sed -i '/PREFIX=$HOME/c\PREFIX=/swipl' build &&     sed -i '/# export DISABLE_PKGS/c\export DISABLE_PKGS="jpl xpce"' build &&     sed -i '/# export EXTRA_PKGS/c\export EXTRA_PKGS="db space"' build &&     chmod u+x build && ./build &&     apt-get purge -y --auto-remove $BUILD_DEPS &&     cd /usr/bin && rm -rf /tmp/src && ln -s /swipl/bin/swipl swipl && rm -rf /var/lib/apt/lists/*
-# Thu, 31 Aug 2017 19:45:43 GMT
+# Wed, 06 Sep 2017 17:09:26 GMT
+RUN SWIPL_VER=7.5.14 &&     SWIPL_CHECKSUM=2e83e96a0eace037da3f75fc44e9c8f4e3b2cf8fd3c27f8f05ff489276aec572 &&     BUILD_DEPS='make gcc wget libarchive-dev libgmp-dev libossp-uuid-dev libpcre3-dev libreadline-dev libedit-dev libssl-dev zlib1g-dev libdb-dev libgeos-dev libspatialindex-dev unixodbc-dev' &&     apt-get update && apt-get install -y --no-install-recommends $BUILD_DEPS &&     mkdir /tmp/src &&     cd /tmp/src &&     wget http://www.swi-prolog.org/download/devel/src/swipl-$SWIPL_VER.tar.gz &&     echo "$SWIPL_CHECKSUM  swipl-$SWIPL_VER.tar.gz" >> swipl-$SWIPL_VER.tar.gz-CHECKSUM &&     sha256sum -c swipl-$SWIPL_VER.tar.gz-CHECKSUM &&     tar -xzf swipl-$SWIPL_VER.tar.gz &&     cd swipl-$SWIPL_VER &&     cp build.templ build &&     sed -i '/PREFIX=$HOME/c\PREFIX=/swipl' build &&     sed -i '/# export DISABLE_PKGS/c\export DISABLE_PKGS="jpl xpce"' build &&     sed -i '/# export EXTRA_PKGS/c\export EXTRA_PKGS="db space"' build &&     chmod u+x build && ./build &&     apt-get purge -y --auto-remove $BUILD_DEPS &&     cd /usr/bin && rm -rf /tmp/src && ln -s /swipl/bin/swipl swipl && rm -rf /var/lib/apt/lists/*
+# Wed, 06 Sep 2017 17:09:27 GMT
 CMD ["swipl"]
 ```
 
@@ -47,27 +47,27 @@ CMD ["swipl"]
 		Last Modified: Thu, 10 Aug 2017 21:26:30 GMT  
 		Size: 22.0 MB (22017037 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9078035766193cc0c7ccaf765a358ae81cd126cff4d5bc0e64b7e584feb0ec3b`  
-		Last Modified: Thu, 31 Aug 2017 19:45:53 GMT  
-		Size: 6.3 MB (6266579 bytes)  
+	-	`sha256:229a610dac642b830e566488570648f97ef49d062dea16f2f6084d56c0a3e531`  
+		Last Modified: Wed, 06 Sep 2017 17:09:36 GMT  
+		Size: 6.3 MB (6269817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-## `swipl:7.5.13`
+## `swipl:7.5.14`
 
 ```console
-$ docker pull swipl@sha256:2e63595e9536dda34a34615753e67fb9bafa0cfdf6ace59bc07abede521989a0
+$ docker pull swipl@sha256:adf2c3f113da7fbc87825751ac27ab8c3aefc74495f8197a73f398ec86a797cf
 ```
 
 -	Platforms:
 	-	linux; amd64
 
-### `swipl:7.5.13` - linux; amd64
+### `swipl:7.5.14` - linux; amd64
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.8 MB (50775360 bytes)**  
+-	Total Size: **50.8 MB (50778598 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e01a370f48e9b502b693ddc49ae45079df16cf951ad0e6e2a52ac5ffe5b0cfb`
+-	Image ID: `sha256:7c5c91e49b502ddf96b62c7d7f1043a9d1bae0500efb01cf66dd81fe0c049525`
 -	Default Command: `["swipl"]`
 
 ```dockerfile
@@ -79,9 +79,9 @@ CMD ["bash"]
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Michael Hendricks <michael@ndrix.org>
 # Thu, 10 Aug 2017 21:24:34 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends     libarchive13     libgmp10     libossp-uuid16     libssl1.1     libdb5.3     libpcre3     libedit2     libgeos-c1v5     libspatialindex4v5     unixodbc     odbc-postgresql     tdsodbc     libmariadbclient18 &&     rm -rf /var/lib/apt/lists/*
-# Thu, 31 Aug 2017 19:45:39 GMT
-RUN SWIPL_VER=7.5.13 &&     SWIPL_CHECKSUM=3680231e22ac1622c507652649e17ad07bc41ff08484f4e4f767ec04802c435c &&     BUILD_DEPS='make gcc wget libarchive-dev libgmp-dev libossp-uuid-dev libpcre3-dev libreadline-dev libedit-dev libssl-dev zlib1g-dev libdb-dev libgeos-dev libspatialindex-dev unixodbc-dev' &&     apt-get update && apt-get install -y --no-install-recommends $BUILD_DEPS &&     mkdir /tmp/src &&     cd /tmp/src &&     wget http://www.swi-prolog.org/download/devel/src/swipl-$SWIPL_VER.tar.gz &&     echo "$SWIPL_CHECKSUM  swipl-$SWIPL_VER.tar.gz" >> swipl-$SWIPL_VER.tar.gz-CHECKSUM &&     sha256sum -c swipl-$SWIPL_VER.tar.gz-CHECKSUM &&     tar -xzf swipl-$SWIPL_VER.tar.gz &&     cd swipl-$SWIPL_VER &&     cp build.templ build &&     sed -i '/PREFIX=$HOME/c\PREFIX=/swipl' build &&     sed -i '/# export DISABLE_PKGS/c\export DISABLE_PKGS="jpl xpce"' build &&     sed -i '/# export EXTRA_PKGS/c\export EXTRA_PKGS="db space"' build &&     chmod u+x build && ./build &&     apt-get purge -y --auto-remove $BUILD_DEPS &&     cd /usr/bin && rm -rf /tmp/src && ln -s /swipl/bin/swipl swipl && rm -rf /var/lib/apt/lists/*
-# Thu, 31 Aug 2017 19:45:43 GMT
+# Wed, 06 Sep 2017 17:09:26 GMT
+RUN SWIPL_VER=7.5.14 &&     SWIPL_CHECKSUM=2e83e96a0eace037da3f75fc44e9c8f4e3b2cf8fd3c27f8f05ff489276aec572 &&     BUILD_DEPS='make gcc wget libarchive-dev libgmp-dev libossp-uuid-dev libpcre3-dev libreadline-dev libedit-dev libssl-dev zlib1g-dev libdb-dev libgeos-dev libspatialindex-dev unixodbc-dev' &&     apt-get update && apt-get install -y --no-install-recommends $BUILD_DEPS &&     mkdir /tmp/src &&     cd /tmp/src &&     wget http://www.swi-prolog.org/download/devel/src/swipl-$SWIPL_VER.tar.gz &&     echo "$SWIPL_CHECKSUM  swipl-$SWIPL_VER.tar.gz" >> swipl-$SWIPL_VER.tar.gz-CHECKSUM &&     sha256sum -c swipl-$SWIPL_VER.tar.gz-CHECKSUM &&     tar -xzf swipl-$SWIPL_VER.tar.gz &&     cd swipl-$SWIPL_VER &&     cp build.templ build &&     sed -i '/PREFIX=$HOME/c\PREFIX=/swipl' build &&     sed -i '/# export DISABLE_PKGS/c\export DISABLE_PKGS="jpl xpce"' build &&     sed -i '/# export EXTRA_PKGS/c\export EXTRA_PKGS="db space"' build &&     chmod u+x build && ./build &&     apt-get purge -y --auto-remove $BUILD_DEPS &&     cd /usr/bin && rm -rf /tmp/src && ln -s /swipl/bin/swipl swipl && rm -rf /var/lib/apt/lists/*
+# Wed, 06 Sep 2017 17:09:27 GMT
 CMD ["swipl"]
 ```
 
@@ -94,7 +94,7 @@ CMD ["swipl"]
 		Last Modified: Thu, 10 Aug 2017 21:26:30 GMT  
 		Size: 22.0 MB (22017037 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9078035766193cc0c7ccaf765a358ae81cd126cff4d5bc0e64b7e584feb0ec3b`  
-		Last Modified: Thu, 31 Aug 2017 19:45:53 GMT  
-		Size: 6.3 MB (6266579 bytes)  
+	-	`sha256:229a610dac642b830e566488570648f97ef49d062dea16f2f6084d56c0a3e531`  
+		Last Modified: Wed, 06 Sep 2017 17:09:36 GMT  
+		Size: 6.3 MB (6269817 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
