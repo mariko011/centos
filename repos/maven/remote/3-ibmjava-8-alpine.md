@@ -1,7 +1,7 @@
 ## `maven:3-ibmjava-8-alpine`
 
 ```console
-$ docker pull maven@sha256:e0d442ab5b7a802a4708971a7227e26a07f89f8eb97618825887bddac6406ba5
+$ docker pull maven@sha256:d3c008905191fe3ee41b83c1509ecfd00efe971a858cbe83d8354268a21bccc1
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull maven@sha256:e0d442ab5b7a802a4708971a7227e26a07f89f8eb97618825887b
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.0 MB (164998966 bytes)**  
+-	Total Size: **165.0 MB (165001455 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:db1fbffa80b7a5c7873d86c376db77fdb487f93225574efe6373edfd41cd7070`
+-	Image ID: `sha256:ef38d966a2addd10e6477565395d25b3de45c68703cb257c50f929a2a1a1c39e`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -24,40 +24,40 @@ ADD file:4583e12bf5caec40b861a3409f2a1624c3f3556cc457edb99c9707f00e779e45 in /
 CMD ["/bin/sh"]
 # Tue, 27 Jun 2017 20:15:26 GMT
 MAINTAINER Dinakar Guniguntala <dinakar.g@in.ibm.com> (@dinogun)
-# Tue, 27 Jun 2017 20:15:44 GMT
-RUN apk --update add --no-cache ca-certificates curl openssl xz     && GLIBC_VER="2.25-r0"     && ALPINE_GLIBC_REPO="https://github.com/sgerrand/alpine-pkg-glibc/releases/download"     && curl -Ls $ALPINE_GLIBC_REPO/$GLIBC_VER/glibc-$GLIBC_VER.apk > /tmp/$GLIBC_VER.apk     && apk add --allow-untrusted /tmp/$GLIBC_VER.apk     && curl -Ls https://www.archlinux.org/packages/core/x86_64/gcc-libs/download > /tmp/gcc-libs.tar.xz     && mkdir /tmp/gcc     && tar -xf /tmp/gcc-libs.tar.xz -C /tmp/gcc     && mv /tmp/gcc/usr/lib/libgcc* /usr/glibc-compat/lib     && apk del curl     && rm -rf /tmp/$GLIBC_VER.apk /tmp/gcc /tmp/gcc-libs.tar.xz /var/cache/apk/*
-# Tue, 08 Aug 2017 16:33:36 GMT
-ENV JAVA_VERSION=1.8.0_sr4fp10
-# Tue, 08 Aug 2017 16:36:23 GMT
-RUN ESUM="d739b201653be2b04e598b19eca9f0dee32baa60c63eb1d10f5623cbef318ddd"     && BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/"     && YML_FILE="sdk/linux/x86_64/index.yml"     && wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml $BASE_URL/$YML_FILE     && JAVA_URL=$(cat /tmp/index.yml | sed -n '/'$JAVA_VERSION'/{n;p}' | sed -n 's/\s*uri:\s//p' | tr -d '\r')     && wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin $JAVA_URL     && echo "$ESUM  /tmp/ibm-java.bin" | sha256sum -c -     && echo "INSTALLER_UI=silent" > /tmp/response.properties     && echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties     && echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties     && mkdir -p /opt/ibm     && chmod +x /tmp/ibm-java.bin     && /tmp/ibm-java.bin -i silent -f /tmp/response.properties     && rm -f /tmp/response.properties     && rm -f /tmp/index.yml     && rm -f /tmp/ibm-java.bin
-# Tue, 08 Aug 2017 16:36:24 GMT
+# Thu, 07 Sep 2017 16:56:45 GMT
+RUN apk --update add --no-cache ca-certificates curl openssl xz     && GLIBC_VER="2.25-r0"     && ALPINE_GLIBC_REPO="https://github.com/sgerrand/alpine-pkg-glibc/releases/download"     && curl -Ls ${ALPINE_GLIBC_REPO}/${GLIBC_VER}/glibc-${GLIBC_VER}.apk > /tmp/${GLIBC_VER}.apk     && apk add --allow-untrusted /tmp/${GLIBC_VER}.apk     && curl -Ls https://www.archlinux.org/packages/core/x86_64/gcc-libs/download > /tmp/gcc-libs.tar.xz     && mkdir /tmp/gcc     && tar -xf /tmp/gcc-libs.tar.xz -C /tmp/gcc     && mv /tmp/gcc/usr/lib/libgcc* /usr/glibc-compat/lib     && apk del curl     && rm -rf /tmp/${GLIBC_VER}.apk /tmp/gcc /tmp/gcc-libs.tar.xz /var/cache/apk/*
+# Thu, 07 Sep 2017 16:56:45 GMT
+ENV JAVA_VERSION=1.8.0_sr4fp11
+# Thu, 07 Sep 2017 16:59:39 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        amd64|x86_64)          ESUM='0550e9e44b50ec77cd8774f99051b910816daf3cf275c05438994314ff61d7ee';          YML_FILE='sdk/linux/x86_64/index.yml';          ;;        i386)          ESUM='fc3180000ee745ba11fbcb8c0eda837ccf34830de652c3747682174980c0a466';          YML_FILE='sdk/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='bf39ce59310f477d8864134b5d1e8c090ea41a5421c17b6b0eaf5350fdc097bf';          YML_FILE='sdk/linux/ppc64le/index.yml';          ;;        s390)          ESUM='7056455a52d8f753e435d3994ca87c22c496d19d4a06634ba57e4ffc50d0c722';          YML_FILE='sdk/linux/s390/index.yml';          ;;        s390x)          ESUM='89dc14c0bb8199463396f3f71a168e43d61550c7821acee50ec8c3f6ed60a83f';          YML_FILE='sdk/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(cat /tmp/index.yml | sed -n '/'${JAVA_VERSION}'/{n;p}' | sed -n 's/\s*uri:\s//p' | tr -d '\r');     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;
+# Thu, 07 Sep 2017 16:59:39 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 08 Aug 2017 16:54:02 GMT
+# Thu, 07 Sep 2017 18:30:36 GMT
 RUN apk add --no-cache curl tar bash
-# Tue, 08 Aug 2017 16:54:02 GMT
+# Thu, 07 Sep 2017 18:30:37 GMT
 ARG MAVEN_VERSION=3.5.0
-# Tue, 08 Aug 2017 16:54:02 GMT
+# Thu, 07 Sep 2017 18:30:37 GMT
 ARG USER_HOME_DIR=/root
-# Tue, 08 Aug 2017 16:54:03 GMT
+# Thu, 07 Sep 2017 18:30:37 GMT
 ARG SHA=beb91419245395bd69a4a6edad5ca3ec1a8b64e41457672dc687c173a495f034
-# Tue, 08 Aug 2017 16:54:03 GMT
+# Thu, 07 Sep 2017 18:30:38 GMT
 ARG BASE_URL=https://apache.osuosl.org/maven/maven-3/3.5.0/binaries
-# Tue, 08 Aug 2017 16:54:04 GMT
+# Thu, 07 Sep 2017 18:30:39 GMT
 # ARGS: BASE_URL=https://apache.osuosl.org/maven/maven-3/3.5.0/binaries MAVEN_VERSION=3.5.0 SHA=beb91419245395bd69a4a6edad5ca3ec1a8b64e41457672dc687c173a495f034 USER_HOME_DIR=/root
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz   && echo "${SHA}  /tmp/apache-maven.tar.gz" | sha256sum -c -   && tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1   && rm -f /tmp/apache-maven.tar.gz   && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
-# Tue, 08 Aug 2017 16:54:04 GMT
+# Thu, 07 Sep 2017 18:30:39 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 08 Aug 2017 16:54:05 GMT
+# Thu, 07 Sep 2017 18:30:40 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Tue, 08 Aug 2017 16:54:05 GMT
+# Thu, 07 Sep 2017 18:30:40 GMT
 COPY file:e4099db07053a2301f4263d416cab324c1f89ee74c752bebec511d8b59464cb6 in /usr/local/bin/mvn-entrypoint.sh 
-# Tue, 08 Aug 2017 16:54:05 GMT
+# Thu, 07 Sep 2017 18:30:41 GMT
 COPY file:b3fc14e8337e0079a4e97eace880b4b7cddc0dc0ea733de80749f78fe1eb089a in /usr/share/maven/ref/ 
-# Tue, 08 Aug 2017 16:54:06 GMT
+# Thu, 07 Sep 2017 18:30:41 GMT
 VOLUME [/root/.m2]
-# Tue, 08 Aug 2017 16:54:06 GMT
+# Thu, 07 Sep 2017 18:30:42 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Tue, 08 Aug 2017 16:54:06 GMT
+# Thu, 07 Sep 2017 18:30:42 GMT
 CMD ["mvn"]
 ```
 
@@ -66,27 +66,27 @@ CMD ["mvn"]
 		Last Modified: Tue, 27 Jun 2017 18:49:37 GMT  
 		Size: 2.0 MB (1990402 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ee9dd149292705df56104a716ef0c16f111ce5fc0b6b92824cea8042f48f5ef`  
-		Last Modified: Tue, 27 Jun 2017 20:55:45 GMT  
-		Size: 4.2 MB (4153703 bytes)  
+	-	`sha256:6730d275c1aab52400e62ed3cb00a31b80f3345ae28a84f5d7ebd32e2de4dd30`  
+		Last Modified: Thu, 07 Sep 2017 17:05:02 GMT  
+		Size: 4.2 MB (4153709 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ee9c76d87def989e24cc3bdcb415beb4f8e8517e013a182ca5de759f67c5106e`  
-		Last Modified: Tue, 08 Aug 2017 16:39:33 GMT  
-		Size: 148.5 MB (148467270 bytes)  
+	-	`sha256:3e49d1612b4ecfed152f4a7905568531bd5b897b010e9f59290418462454b9f7`  
+		Last Modified: Thu, 07 Sep 2017 17:07:26 GMT  
+		Size: 148.5 MB (148467434 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a451278de932973788f79d6fc2c40930dc9b685f7242107204173a23d6c137f4`  
-		Last Modified: Tue, 08 Aug 2017 16:54:42 GMT  
-		Size: 1.7 MB (1713760 bytes)  
+	-	`sha256:466395d20201e03a50d4d82d4e58432c4e42fe39e19d7bb8c8562824940f3a5e`  
+		Last Modified: Thu, 07 Sep 2017 18:32:14 GMT  
+		Size: 1.7 MB (1716072 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:759e850a015083eef426895656cede824386500a8b28029806d73283a1fecc6e`  
-		Last Modified: Tue, 08 Aug 2017 16:54:44 GMT  
-		Size: 8.7 MB (8672767 bytes)  
+	-	`sha256:ef5241dcf288cfda6b3d14108be15ac5855f6c810c3af0f04304bbeb8c98115d`  
+		Last Modified: Thu, 07 Sep 2017 18:32:14 GMT  
+		Size: 8.7 MB (8672774 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cddb09edfff41dfe95b7a52cecfe8728666aab78b1df507e27677484231c07d2`  
-		Last Modified: Tue, 08 Aug 2017 16:54:42 GMT  
-		Size: 716.0 B  
+	-	`sha256:b41cee7aad98546ed1d2b32d61015b26a5f65f8d24c1d8555f14344e670d0270`  
+		Last Modified: Thu, 07 Sep 2017 18:32:13 GMT  
+		Size: 717.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:02f79d4728662e37a06f90b709635eb483f171f459b37421780500a16de2a87a`  
-		Last Modified: Tue, 08 Aug 2017 16:54:42 GMT  
-		Size: 348.0 B  
+	-	`sha256:5cc97cea47064ad1037463ee276ace368b0156987180a0bf0dd65682b47eabc8`  
+		Last Modified: Thu, 07 Sep 2017 18:32:13 GMT  
+		Size: 347.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
