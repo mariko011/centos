@@ -1,4 +1,4 @@
-## `debian:experimental`
+## `debian:experimental-20170907`
 
 ```console
 $ docker pull debian@sha256:57dd5b345322d64daf64a3d39fa02f4b0008e114414ac07cd708b6e1368dfc78
@@ -7,7 +7,7 @@ $ docker pull debian@sha256:57dd5b345322d64daf64a3d39fa02f4b0008e114414ac07cd708
 -	Platforms:
 	-	linux; amd64
 
-### `debian:experimental` - linux; amd64
+### `debian:experimental-20170907` - linux; amd64
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
