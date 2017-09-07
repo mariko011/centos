@@ -1,7 +1,7 @@
 ## `ibmjava:8-sdk`
 
 ```console
-$ docker pull ibmjava@sha256:5334bbeaebe15e044f379879e1bb900c0a98f6f3e93fd7dbc6ea18bb9ae263ca
+$ docker pull ibmjava@sha256:1d08aeb2bf5dc1a46a93a8d7efb2f469759639f14ecffbbf7e3deab81276aba1
 ```
 
 -	Platforms:
@@ -11,9 +11,9 @@ $ docker pull ibmjava@sha256:5334bbeaebe15e044f379879e1bb900c0a98f6f3e93fd7dbc6e
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **198.8 MB (198848570 bytes)**  
+-	Total Size: **198.9 MB (198850122 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2020ed3c5e1101350de91c0d06a5110e98e09192e336fcd5b2a4db0e5bc80101`
+-	Image ID: `sha256:2ae85b27667c5529a5d8cfdcc0cf85fe54a018026f6510584de5e95b67685cc5`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -33,11 +33,11 @@ CMD ["/bin/bash"]
 MAINTAINER Dinakar Guniguntala <dinakar.g@in.ibm.com> (@dinogun)
 # Thu, 10 Aug 2017 23:13:11 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends wget ca-certificates     && rm -rf /var/lib/apt/lists/*
-# Thu, 10 Aug 2017 23:13:14 GMT
-ENV JAVA_VERSION=1.8.0_sr4fp10
-# Thu, 10 Aug 2017 23:15:02 GMT
-RUN ESUM="d739b201653be2b04e598b19eca9f0dee32baa60c63eb1d10f5623cbef318ddd"     && BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/"     && YML_FILE="sdk/linux/x86_64/index.yml"     && wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml $BASE_URL/$YML_FILE     && JAVA_URL=$(cat /tmp/index.yml | sed -n '/'$JAVA_VERSION'/{n;p}' | sed -n 's/\s*uri:\s//p' | tr -d '\r')     && wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin $JAVA_URL     && echo "$ESUM  /tmp/ibm-java.bin" | sha256sum -c -     && echo "INSTALLER_UI=silent" > /tmp/response.properties     && echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties     && echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties     && mkdir -p /opt/ibm     && chmod +x /tmp/ibm-java.bin     && /tmp/ibm-java.bin -i silent -f /tmp/response.properties     && rm -f /tmp/response.properties     && rm -f /tmp/index.yml     && rm -f /tmp/ibm-java.bin
-# Thu, 10 Aug 2017 23:15:03 GMT
+# Thu, 07 Sep 2017 16:55:52 GMT
+ENV JAVA_VERSION=1.8.0_sr4fp11
+# Thu, 07 Sep 2017 16:58:58 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          ESUM='0550e9e44b50ec77cd8774f99051b910816daf3cf275c05438994314ff61d7ee';          YML_FILE='sdk/linux/x86_64/index.yml';          ;;        i386)          ESUM='fc3180000ee745ba11fbcb8c0eda837ccf34830de652c3747682174980c0a466';          YML_FILE='sdk/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          ESUM='bf39ce59310f477d8864134b5d1e8c090ea41a5421c17b6b0eaf5350fdc097bf';          YML_FILE='sdk/linux/ppc64le/index.yml';          ;;        s390)          ESUM='7056455a52d8f753e435d3994ca87c22c496d19d4a06634ba57e4ffc50d0c722';          YML_FILE='sdk/linux/s390/index.yml';          ;;        s390x)          ESUM='89dc14c0bb8199463396f3f71a168e43d61550c7821acee50ec8c3f6ed60a83f';          YML_FILE='sdk/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     JAVA_URL=$(cat /tmp/index.yml | sed -n '/'${JAVA_VERSION}'/{n;p}' | sed -n 's/\s*uri:\s//p' | tr -d '\r');     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/opt/ibm/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /opt/ibm;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;
+# Thu, 07 Sep 2017 16:58:59 GMT
 ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ```
 
@@ -66,7 +66,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 		Last Modified: Thu, 10 Aug 2017 23:19:56 GMT  
 		Size: 3.1 MB (3070301 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d40fef0c4f5d21d179714c79dccc75d046a343f284420937e789df4d43c22b16`  
-		Last Modified: Thu, 10 Aug 2017 23:24:04 GMT  
-		Size: 148.5 MB (148517222 bytes)  
+	-	`sha256:70a1baf3aa7beb31b26d8322bc704d63107af0355d00e3b6f8ea37f1d47e63a9`  
+		Last Modified: Thu, 07 Sep 2017 17:06:48 GMT  
+		Size: 148.5 MB (148518774 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
