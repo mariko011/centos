@@ -572,10 +572,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gnutls28=3.5.6-4ubuntu4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.6-4ubuntu4.1.dsc' gnutls28_3.5.6-4ubuntu4.1.dsc 3271 SHA256:7fa6af7c75aa1a40416c6605ab1ba27c8cb68d54862d9f074e2cb2bd76501ef1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.6.orig.tar.xz' gnutls28_3.5.6.orig.tar.xz 7087388 SHA256:6338b715bf31c758606ffa489c7f87ee1beab947114fbd2ffefd73170a8c6b9a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.6.orig.tar.xz.asc' gnutls28_3.5.6.orig.tar.xz.asc 287 SHA256:64a5adbe0671d31f5c59b1244f4febb7b86b30e5669c64c6818d50538ab6d983
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.6-4ubuntu4.1.debian.tar.xz' gnutls28_3.5.6-4ubuntu4.1.debian.tar.xz 121092 SHA256:24aad1bd79f6d50cf5a89e102dd5e59ddc757bbabef568197cc257f224673a26
+'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.6-4ubuntu4.1.dsc' gnutls28_3.5.6-4ubuntu4.1.dsc 3271 SHA256:7fa6af7c75aa1a40416c6605ab1ba27c8cb68d54862d9f074e2cb2bd76501ef1
+'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.6.orig.tar.xz' gnutls28_3.5.6.orig.tar.xz 7087388 SHA256:6338b715bf31c758606ffa489c7f87ee1beab947114fbd2ffefd73170a8c6b9a
+'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.6.orig.tar.xz.asc' gnutls28_3.5.6.orig.tar.xz.asc 287 SHA256:64a5adbe0671d31f5c59b1244f4febb7b86b30e5669c64c6818d50538ab6d983
+'http://security.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.5.6-4ubuntu4.1.debian.tar.xz' gnutls28_3.5.6-4ubuntu4.1.debian.tar.xz 121092 SHA256:24aad1bd79f6d50cf5a89e102dd5e59ddc757bbabef568197cc257f224673a26
 ```
 
 ### `dpkg` source package: `grep=2.27-2`

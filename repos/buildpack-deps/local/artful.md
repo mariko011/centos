@@ -1620,13 +1620,8 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.47
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.47.dsc' init-system-helpers_1.47.dsc 1945 SHA256:7ebd4ca047297c0487b7aaf647efef8940ed60ba88f92c48d3c5a0050882d874
-'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.47.tar.xz' init-system-helpers_1.47.tar.xz 43244 SHA256:215a48dcd8346e3ec87b26e7898961cca212c37cd0f07a36251cbd2965211802
-```
 
 ### `dpkg` source package: `isl=0.18-1`
 
@@ -3689,14 +3684,8 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.6-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris python3.6=3.6.2-2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.2-2.dsc' python3.6_3.6.2-2.dsc 3351 SHA256:16c76c32b76f208558bebe94f5d2e3b19b7cbb5eef72db7219359896cbc51c89
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.2.orig.tar.xz' python3.6_3.6.2.orig.tar.xz 16907204 SHA256:9229773be41ed144370f47f0f626a1579931f5a390f1e8e3853174d52edd64a9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.6/python3.6_3.6.2-2.debian.tar.xz' python3.6_3.6.2-2.debian.tar.xz 202608 SHA256:f328e84b8cf88e41467f0faec536702e404ae16feb48e54beb92bd3391c2d7e4
-```
 
 ### `dpkg` source package: `readline=7.0-0ubuntu2`
 
