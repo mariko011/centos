@@ -1,13 +1,13 @@
-# `nginx:1.13.3-alpine-perl`
+# `nginx:1.13.5-alpine-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:aeebd98910b025d7337c68280218b2c2b72ef12ed48bcd07beee154df2802c3a`
-- Created: `2017-07-11T18:59:38.319847036Z`
-- Virtual Size: ~ 57.73 Mb  
+- Image ID: `sha256:6adac7bf12ded457b1ed1691a76c0203b4b18f9054bd3c1638484044f6316118`
+- Created: `2017-09-06T17:29:11.063683037Z`
+- Virtual Size: ~ 57.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.13.3`
+  - `NGINX_VERSION=1.13.5`
