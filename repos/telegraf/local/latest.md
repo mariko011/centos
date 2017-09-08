@@ -1,17 +1,17 @@
-# `telegraf:1.3`
+# `telegraf:1.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d24bc6d33d8f38c112e37758f8f67981a4afe7045891b8af21c174b19ffff8e3`
-- Created: `2017-08-11T01:43:11.655055594Z`
-- Virtual Size: ~ 245.05 Mb  
+- Image ID: `sha256:99a8a239cac55d069fc33d9fa99039ea4917b7032c3594fc372a7f1499185e1a`
+- Created: `2017-09-06T21:49:11.319459956Z`
+- Virtual Size: ~ 233.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["telegraf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `TELEGRAF_VERSION=1.3.5`
+  - `TELEGRAF_VERSION=1.4.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2601,11 +2601,11 @@ $ apt-get source -qq --print-uris tcp-wrappers=7.6.q-25
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tcp-wrappers/tcp-wrappers_7.6.q-25.debian.tar.xz' tcp-wrappers_7.6.q-25.debian.tar.xz 35504 SHA256:fb7bb73c586a0c00c76c730ab93ffd73c300e8c4fd83df76222e305a2466c7bb
 ```
 
-### `dpkg` source package: `telegraf=1.3.5-1`
+### `dpkg` source package: `telegraf=1.4.0-1`
 
 Binary Packages:
 
-- `telegraf=1.3.5-1`
+- `telegraf=1.4.0-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
