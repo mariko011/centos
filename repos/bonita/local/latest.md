@@ -1,19 +1,19 @@
-# `bonita:7.5.2`
+# `bonita:7.5.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5bb23cf60273b213ddfb359f17fee6f5cf3fbec95a6142a9deb0d308b55c5014`
-- Created: `2017-08-31T16:43:19.368587963Z`
-- Virtual Size: ~ 433.27 Mb  
+- Image ID: `sha256:a15e82d2bbddedcd0c0e99865889d40c2c0c698525df68c7323809597f9e4866`
+- Created: `2017-09-07T16:46:45.611359791Z`
+- Virtual Size: ~ 433.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/opt/files/startup.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `BONITA_VERSION=7.5.2`
+  - `BONITA_VERSION=7.5.4`
   - `TOMCAT_VERSION=7.0.76`
-  - `BONITA_SHA256=b85d06872b80e9b0ab30ea0be7b412b23d02d3d00d5ff7faaa72349c47c04532`
-  - `BONITA_URL=http://download.forge.ow2.org/bonita/BonitaBPMCommunity-7.5.2-Tomcat-7.0.76.zip`
+  - `BONITA_SHA256=b7ccec231d9083b1b532b0aeaa4de3d38d91cae12df1725f8a802be5be170d21`
+  - `BONITA_URL=http://download.forge.ow2.org/bonita/BonitaBPMCommunity-7.5.4-Tomcat-7.0.76.zip`
 
 ## `dpkg` (`.deb`-based packages)
 
