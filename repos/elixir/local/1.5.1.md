@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:429bce24faae144eecf09b74c82eef6575bb022b1cce552f6d2c36b6749224fd`
-- Created: `2017-08-29T06:36:03.073135156Z`
-- Virtual Size: ~ 886.52 Mb  
+- Image ID: `sha256:be91a4c26a6380d300f3ecc92059d56e4538bf1d0cae9dabdb6908f7996dd8b6`
+- Created: `2017-09-07T18:34:29.922564969Z`
+- Virtual Size: ~ 886.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
