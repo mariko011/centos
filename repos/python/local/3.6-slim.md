@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8728283da2e6a3a82e6bd115a9ad96191dd8432fb1ae747ed096aeb379e3a4db`
-- Created: `2017-07-24T19:51:38.463338054Z`
-- Virtual Size: ~ 199.93 Mb  
+- Image ID: `sha256:29f1948235e5fdc0267331fec63f6ec1c128f5f1bd419692010310ef2eef58aa`
+- Created: `2017-09-08T06:22:41.671426697Z`
+- Virtual Size: ~ 199.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
@@ -688,12 +688,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/glibc/2.19-18+deb8u10/
 - https://sources.debian.net/src/glibc/2.19-18+deb8u10/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gnupg=1.4.18-7+deb8u3`
+### `dpkg` source package: `gnupg=1.4.18-7+deb8u4`
 
 Binary Packages:
 
-- `gnupg=1.4.18-7+deb8u3`
-- `gpgv=1.4.18-7+deb8u3`
+- `gnupg=1.4.18-7+deb8u4`
+- `gpgv=1.4.18-7+deb8u4`
 
 Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/copyright`)
 
@@ -704,16 +704,16 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/c
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg=1.4.18-7+deb8u3
-'http://deb.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18-7+deb8u3.dsc' gnupg_1.4.18-7+deb8u3.dsc 2432 SHA256:936c6e278b978f3edd24264940fca2f16d3c22c58437400578cdc7a9e6cb4148
-'http://deb.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18.orig.tar.gz' gnupg_1.4.18.orig.tar.gz 5047888 SHA256:10a8936b76ccadb98521535b5f41cc5b41b3c159a6c2915f062bd4dc8ac12d12
-'http://deb.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18-7+deb8u3.debian.tar.xz' gnupg_1.4.18-7+deb8u3.debian.tar.xz 301204 SHA256:2117df33f763efb2afbd9c154b6bfbf6a91c0ef1c1bee73357c03fd15f18605f
+$ apt-get source -qq --print-uris gnupg=1.4.18-7+deb8u4
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.18-7+deb8u4.dsc' gnupg_1.4.18-7+deb8u4.dsc 2436 SHA256:41ec08af41cbeb7fba84969530ba9d54a2fde55165b7d5c576cb077272620bdb
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.18.orig.tar.gz' gnupg_1.4.18.orig.tar.gz 5047888 SHA256:10a8936b76ccadb98521535b5f41cc5b41b3c159a6c2915f062bd4dc8ac12d12
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.18-7+deb8u4.debian.tar.xz' gnupg_1.4.18-7+deb8u4.debian.tar.xz 302448 SHA256:09e6f60462c8f13aa3e0c2796996697cce1b3023a6034280196041a52bf5f0f2
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u3/
-- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u4/
+- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.20-4.1`
 
