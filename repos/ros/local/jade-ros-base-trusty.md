@@ -524,14 +524,8 @@ Licenses: (parsed from: `/usr/share/doc/bzr/copyright`, `/usr/share/doc/python-b
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bzr=2.6.0+bzr6593-1ubuntu1.5
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.6.0+bzr6593-1ubuntu1.5.dsc' bzr_2.6.0+bzr6593-1ubuntu1.5.dsc 1985 SHA256:76b80e0b5c83544036204e893664ece722b8dc22e94bd952dcf8b08a0346163f
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.6.0+bzr6593.orig.tar.gz' bzr_2.6.0+bzr6593.orig.tar.gz 10943579 SHA256:e5e0688ee271078435a36d3742ff6ca22f9e8b17a5fca66488e07cdeb36a2ab7
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.6.0+bzr6593-1ubuntu1.5.debian.tar.xz' bzr_2.6.0+bzr6593-1ubuntu1.5.debian.tar.xz 44888 SHA256:6d22be767f3339720c9f3355399f4dd1a97c4a7f0b2733d5b4931b45154da87f
-```
 
 ### `dpkg` source package: `ca-certificates=20160104ubuntu0.14.04.1`
 

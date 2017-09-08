@@ -535,14 +535,8 @@ Licenses: (parsed from: `/usr/share/doc/bzr/copyright`, `/usr/share/doc/python-b
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris bzr=2.7.0-2ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0-2ubuntu3.dsc' bzr_2.7.0-2ubuntu3.dsc 2717 SHA256:152351da6fcc50aa80b5f8fb7f086c0de822737137e8e3ea560dafe22213f8ca
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0.orig.tar.gz' bzr_2.7.0.orig.tar.gz 10944322 SHA256:5204369dc80e5738d7f4f5db5920e010cc5cb89097cf165462685ab70d9ab00b
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bzr/bzr_2.7.0-2ubuntu3.debian.tar.xz' bzr_2.7.0-2ubuntu3.debian.tar.xz 41196 SHA256:431d0ec17a2267c3a7b9ec14769dfafe3ec3d8947680870d58930e0e830f43f4
-```
 
 ### `dpkg` source package: `ca-certificates=20160104ubuntu1`
 
@@ -2573,14 +2567,8 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 - `WEBP`
 - `XFIG`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris libgd2=2.1.1-4ubuntu0.16.04.7
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1-4ubuntu0.16.04.7.dsc' libgd2_2.1.1-4ubuntu0.16.04.7.dsc 2332 SHA256:47bb709ac243e731dde818eb1c03ad3e06664418791c307758d0311f922c9fb4
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1.orig.tar.gz' libgd2_2.1.1.orig.tar.gz 2033791 SHA256:a68c69d2fe3eaab9db63b1c4d391dd549c26d3b47bfba484d5ed2d433c55d4d8
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.1.1-4ubuntu0.16.04.7.debian.tar.xz' libgd2_2.1.1-4ubuntu0.16.04.7.debian.tar.xz 50508 SHA256:5a45c4f50f5388aa914743d0fc728bde54a15115025f0f2376a1c6f13e42926c
-```
 
 ### `dpkg` source package: `libglu=9.0.0-2.1`
 
