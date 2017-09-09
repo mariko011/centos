@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2c70f91c0d92f96cbe4d5c3eb3999d8f842dbfc16c18686c977c983a6c33981a`
-- Created: `2017-08-29T06:02:45.824508655Z`
-- Virtual Size: ~ 886.94 Mb  
+- Image ID: `sha256:cc6b00a712b391687c14399ee3173f135f615d02b1c4f3b389276020b425cc0c`
+- Created: `2017-09-08T08:33:10.24046374Z`
+- Virtual Size: ~ 886.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["node"]`
@@ -1101,13 +1101,13 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/fftw3/3.3.5-3/
 - https://sources.debian.net/src/fftw3/3.3.5-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `file=1:5.30-1`
+### `dpkg` source package: `file=1:5.30-1+deb9u1`
 
 Binary Packages:
 
-- `file=1:5.30-1`
-- `libmagic-mgc=1:5.30-1`
-- `libmagic1:amd64=1:5.30-1`
+- `file=1:5.30-1+deb9u1`
+- `libmagic-mgc=1:5.30-1+deb9u1`
+- `libmagic1:amd64=1:5.30-1+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagic-mgc/copyright`, `/usr/share/doc/libmagic1/copyright`)
 
@@ -1120,16 +1120,16 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris file=1:5.30-1
-'http://deb.debian.org/debian/pool/main/f/file/file_5.30-1.dsc' file_5.30-1.dsc 2124 SHA256:685de7e2b71f8cbc22675638be6bb59aa6224d11a8ee90447062950598abebe2
-'http://deb.debian.org/debian/pool/main/f/file/file_5.30.orig.tar.xz' file_5.30.orig.tar.xz 578628 SHA256:813feaa00da67897b652aa2f0bdeba46f1a265223071a3ea0591476b4e1b0291
-'http://deb.debian.org/debian/pool/main/f/file/file_5.30-1.debian.tar.xz' file_5.30-1.debian.tar.xz 39192 SHA256:0b838e0467d6e0d738395f8a21e20040f8b3b114abf5d3e2329f954f7c11666a
+$ apt-get source -qq --print-uris file=1:5.30-1+deb9u1
+'http://security.debian.org/pool/updates/main/f/file/file_5.30-1+deb9u1.dsc' file_5.30-1+deb9u1.dsc 2321 SHA256:c36b1d8cf9c7df85503fd7483e2868ced1a63aeaafe89ef924d9237acec176f2
+'http://security.debian.org/pool/updates/main/f/file/file_5.30.orig.tar.xz' file_5.30.orig.tar.xz 578628 SHA256:813feaa00da67897b652aa2f0bdeba46f1a265223071a3ea0591476b4e1b0291
+'http://security.debian.org/pool/updates/main/f/file/file_5.30-1+deb9u1.debian.tar.xz' file_5.30-1+deb9u1.debian.tar.xz 39576 SHA256:eebe48791dc0d1db3f40106e6b72af57c0bb35b77f79ca68f0798b51855b25cc
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/file/1:5.30-1/
-- https://sources.debian.net/src/file/1:5.30-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/file/1:5.30-1+deb9u1/
+- https://sources.debian.net/src/file/1:5.30-1+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `findutils=4.6.0+git+20161106-2`
 
@@ -1393,12 +1393,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/geoip/1.6.9-4/
 - https://sources.debian.net/src/geoip/1.6.9-4/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `git=1:2.11.0-3`
+### `dpkg` source package: `git=1:2.11.0-3+deb9u1`
 
 Binary Packages:
 
-- `git=1:2.11.0-3`
-- `git-man=1:2.11.0-3`
+- `git=1:2.11.0-3+deb9u1`
+- `git-man=1:2.11.0-3+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1424,16 +1424,16 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris git=1:2.11.0-3
-'http://deb.debian.org/debian/pool/main/g/git/git_2.11.0-3.dsc' git_2.11.0-3.dsc 2873 SHA256:b3e16a2a02d24d0dea14c0e62a14d84527ca49926a57f10295a9661809e7c0ef
-'http://deb.debian.org/debian/pool/main/g/git/git_2.11.0.orig.tar.xz' git_2.11.0.orig.tar.xz 4197984 SHA256:7e7e8d69d494892373b87007674be5820a4bc1ef596a0117d03ea3169119fd0b
-'http://deb.debian.org/debian/pool/main/g/git/git_2.11.0-3.debian.tar.xz' git_2.11.0-3.debian.tar.xz 520260 SHA256:b8ae194590ab0f387ca045e3e48ef68ade1bf68761d2cd5a6b95923d8822cd5a
+$ apt-get source -qq --print-uris git=1:2.11.0-3+deb9u1
+'http://security.debian.org/pool/updates/main/g/git/git_2.11.0-3+deb9u1.dsc' git_2.11.0-3+deb9u1.dsc 2901 SHA256:1b2244ce374d402ae6c4389be8e19d7189bc075f7790798dc8159901a4684a36
+'http://security.debian.org/pool/updates/main/g/git/git_2.11.0.orig.tar.xz' git_2.11.0.orig.tar.xz 4197984 SHA256:7e7e8d69d494892373b87007674be5820a4bc1ef596a0117d03ea3169119fd0b
+'http://security.debian.org/pool/updates/main/g/git/git_2.11.0-3+deb9u1.debian.tar.xz' git_2.11.0-3+deb9u1.debian.tar.xz 523448 SHA256:c6f95ed3a3a1804c1ee17e554d42c1a0203d16dd9a30647a798128e9f242cc3b
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/git/1:2.11.0-3/
-- https://sources.debian.net/src/git/1:2.11.0-3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/git/1:2.11.0-3+deb9u1/
+- https://sources.debian.net/src/git/1:2.11.0-3+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `glib2.0=2.50.3-2`
 
@@ -2551,11 +2551,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libffi/3.2.1-6/
 - https://sources.debian.net/src/libffi/3.2.1-6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libgcrypt20=1.7.6-2+deb9u1`
+### `dpkg` source package: `libgcrypt20=1.7.6-2+deb9u2`
 
 Binary Packages:
 
-- `libgcrypt20:amd64=1.7.6-2+deb9u1`
+- `libgcrypt20:amd64=1.7.6-2+deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
@@ -2565,23 +2565,22 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libgcrypt20=1.7.6-2+deb9u1
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u1.dsc' libgcrypt20_1.7.6-2+deb9u1.dsc 2942 SHA256:b83c76db58ec1e27257df872e342d2045a476819549252e0ffeb03ed2cbe570c
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2' libgcrypt20_1.7.6.orig.tar.bz2 2897695 SHA256:626aafee84af9d2ce253d2c143dc1c0902dda045780cc241f39970fc60be05bc
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2.asc' libgcrypt20_1.7.6.orig.tar.bz2.asc 310 SHA256:91ad5a0efafb0edc63c083f733ce476b2a0da663aea5118126aa63825d314e00
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u1.debian.tar.xz' libgcrypt20_1.7.6-2+deb9u1.debian.tar.xz 30308 SHA256:df274675ca3dce4dcbf9ec58e75fdf279a492f4fc91aa2f2d52d368ee9c0ed82
+$ apt-get source -qq --print-uris libgcrypt20=1.7.6-2+deb9u2
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u2.dsc' libgcrypt20_1.7.6-2+deb9u2.dsc 2838 SHA256:ece58728d3b18510e0f0a699b5207c393f67e96e0e9cb3191eeb831f2b7d61c1
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2' libgcrypt20_1.7.6.orig.tar.bz2 2897695 SHA256:626aafee84af9d2ce253d2c143dc1c0902dda045780cc241f39970fc60be05bc
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u2.debian.tar.xz' libgcrypt20_1.7.6-2+deb9u2.debian.tar.xz 32044 SHA256:190182723dd39b256cb03e0b74ad9c2047943fe53584c7794b2cec080d5e33e6
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u1/
-- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u2/
+- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libgd2=2.2.4-2+deb9u1`
+### `dpkg` source package: `libgd2=2.2.4-2+deb9u2`
 
 Binary Packages:
 
-- `libgd3:amd64=2.2.4-2+deb9u1`
+- `libgd3:amd64=2.2.4-2+deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 
@@ -2597,8 +2596,19 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 - `WEBP`
 - `XFIG`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libgd2=2.2.4-2+deb9u2
+'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.2.4-2+deb9u2.dsc' libgd2_2.2.4-2+deb9u2.dsc 2346 SHA256:3e51505d37e957373aaa8b9687a7ac49a2473bd09e072d7f4bdf72cbb99b611d
+'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.2.4.orig.tar.xz' libgd2_2.2.4.orig.tar.xz 2478528 SHA256:137f13a7eb93ce72e32ccd7cebdab6874f8cf7ddf31d3a455a68e016ecd9e4e6
+'http://security.debian.org/pool/updates/main/libg/libgd2/libgd2_2.2.4-2+deb9u2.debian.tar.xz' libgd2_2.2.4-2+deb9u2.debian.tar.xz 27040 SHA256:b1c7b8a146ac7b7f59a8c40d141dca66398dc7d6b02e4c60920ca378940c502a
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libgd2/2.2.4-2+deb9u2/
+- https://sources.debian.net/src/libgd2/2.2.4-2+deb9u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.26-2`
 
@@ -3912,12 +3922,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/mawk/1.3.3-17/
 - https://sources.debian.net/src/mawk/1.3.3-17/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `mercurial=4.0-1`
+### `dpkg` source package: `mercurial=4.0-1+deb9u1`
 
 Binary Packages:
 
-- `mercurial=4.0-1`
-- `mercurial-common=4.0-1`
+- `mercurial=4.0-1+deb9u1`
+- `mercurial-common=4.0-1+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/mercurial-common/copyright`)
 
@@ -3927,16 +3937,16 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mercurial=4.0-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.0-1.dsc' mercurial_4.0-1.dsc 2364 SHA256:ff0e5c095bc7968180186caae755a7db258d474fc3cec759c2043ca53770db0f
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.0.orig.tar.gz' mercurial_4.0.orig.tar.gz 4850316 SHA256:24be080745230840f214d93e9f9fb4e25510f9abbbec2e56fab18543fedc43a7
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_4.0-1.debian.tar.xz' mercurial_4.0-1.debian.tar.xz 95148 SHA256:2ebf7404aec85e37a751950678b12df1a6fd7c3b7fa405e87673cb4eaabdf2b8
+$ apt-get source -qq --print-uris mercurial=4.0-1+deb9u1
+'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_4.0-1+deb9u1.dsc' mercurial_4.0-1+deb9u1.dsc 2427 SHA256:ba44c9b1c5426154dd3bf44ad16b2973e4da475b8dd5d97ce9ebcd3ec472e174
+'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_4.0.orig.tar.gz' mercurial_4.0.orig.tar.gz 4850316 SHA256:24be080745230840f214d93e9f9fb4e25510f9abbbec2e56fab18543fedc43a7
+'http://security.debian.org/pool/updates/main/m/mercurial/mercurial_4.0-1+deb9u1.debian.tar.xz' mercurial_4.0-1+deb9u1.debian.tar.xz 101944 SHA256:83c6dee02fa4df95235a2f03baea99731a37e9d8d166362db6152a2990e6ad96
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/mercurial/4.0-1/
-- https://sources.debian.net/src/mercurial/4.0-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/mercurial/4.0-1+deb9u1/
+- https://sources.debian.net/src/mercurial/4.0-1+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `mime-support=3.60`
 
@@ -5066,12 +5076,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/sqlite3/3.16.2-5/
 - https://sources.debian.net/src/sqlite3/3.16.2-5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `subversion=1.9.5-1`
+### `dpkg` source package: `subversion=1.9.5-1+deb9u1`
 
 Binary Packages:
 
-- `libsvn1:amd64=1.9.5-1`
-- `subversion=1.9.5-1`
+- `libsvn1:amd64=1.9.5-1+deb9u1`
+- `subversion=1.9.5-1+deb9u1`
 
 Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subversion/copyright`)
 
@@ -5082,16 +5092,16 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 Source:
 
 ```console
-$ apt-get source -qq --print-uris subversion=1.9.5-1
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.5-1.dsc' subversion_1.9.5-1.dsc 3049 SHA256:27f998d99a5dc7311fa53085c580a1db81ed82ea4d4ffcaa3eddd9b3c937ed43
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.5.orig.tar.gz' subversion_1.9.5.orig.tar.gz 10615674 SHA256:280ba586c5d51d7b976b65d22d5e8e42f3908ed1c968d71120dcf534ce857a83
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.9.5-1.diff.gz' subversion_1.9.5-1.diff.gz 2534370 SHA256:1d876bf34c60fdd836dbc6c7b86a0c96fd6458393074c73137266f2d64865350
+$ apt-get source -qq --print-uris subversion=1.9.5-1+deb9u1
+'http://security.debian.org/pool/updates/main/s/subversion/subversion_1.9.5-1+deb9u1.dsc' subversion_1.9.5-1+deb9u1.dsc 3077 SHA256:343fda8307ee3d0238303dc5c07fe394000058446bad56d800e5583a62c6b5fd
+'http://security.debian.org/pool/updates/main/s/subversion/subversion_1.9.5.orig.tar.gz' subversion_1.9.5.orig.tar.gz 10615674 SHA256:280ba586c5d51d7b976b65d22d5e8e42f3908ed1c968d71120dcf534ce857a83
+'http://security.debian.org/pool/updates/main/s/subversion/subversion_1.9.5-1+deb9u1.diff.gz' subversion_1.9.5-1+deb9u1.diff.gz 2535701 SHA256:2bb2797c058e1ca671dcf219c2fb7317ec106078ce496ea00a921c0eb37299a7
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/subversion/1.9.5-1/
-- https://sources.debian.net/src/subversion/1.9.5-1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/subversion/1.9.5-1+deb9u1/
+- https://sources.debian.net/src/subversion/1.9.5-1+deb9u1/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `systemd=232-25+deb9u1`
 
