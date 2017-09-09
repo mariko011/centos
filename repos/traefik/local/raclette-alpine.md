@@ -1,13 +1,13 @@
-# `traefik:v1.3.7-alpine`
+# `traefik:v1.3.8-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:985f4c7b00b33f475b11f63a7a218cd4c70b20e01d85c8a0dd01584d74fb65c9`
-- Created: `2017-08-25T21:40:19.867751352Z`
-- Virtual Size: ~ 50.20 Mb  
+- Image ID: `sha256:fab58e39bdb4ae61ff0a97809ea579546c876e32b31c64000074b8c1960dea5a`
+- Created: `2017-09-08T22:28:08.811027936Z`
+- Virtual Size: ~ 49.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
-- Command: `["--help"]`
+- Command: `["traefik"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
