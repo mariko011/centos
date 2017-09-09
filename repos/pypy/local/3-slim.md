@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:da9eaeb9bc7ad3f504c50a4b8686819f5500c7ebfc60ed52bd8499d115969117`
-- Created: `2017-08-25T15:04:52.155495689Z`
-- Virtual Size: ~ 199.22 Mb  
+- Image ID: `sha256:2a41a9b435ea825175310b894ce50b019f439f5d9290461fe64332478dee15c2`
+- Created: `2017-09-08T09:34:14.481276187Z`
+- Virtual Size: ~ 199.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy3"]`
@@ -388,7 +388,7 @@ Binary Packages:
 - `debconf=1.5.56+deb8u1`
 - `debconf-i18n=1.5.56+deb8u1`
 
-Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
+Licenses: (parsed from: `/usr/share/doc/debconf/copyright`, `/usr/share/doc/debconf-i18n/copyright`)
 
 - `BSD-2-clause`
 
@@ -614,7 +614,7 @@ Binary Packages:
 - `libgcc1:amd64=1:4.9.2-10`
 - `libstdc++6:amd64=4.9.2-10`
 
-Licenses: (parsed from: `/usr/share/doc/gcc-4.9-base/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gcc-4.9-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
 - `Artistic`
 - `GFDL-1.2`
@@ -687,12 +687,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/glibc/2.19-18+deb8u10/
 - https://sources.debian.net/src/glibc/2.19-18+deb8u10/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gnupg=1.4.18-7+deb8u3`
+### `dpkg` source package: `gnupg=1.4.18-7+deb8u4`
 
 Binary Packages:
 
-- `gnupg=1.4.18-7+deb8u3`
-- `gpgv=1.4.18-7+deb8u3`
+- `gnupg=1.4.18-7+deb8u4`
+- `gpgv=1.4.18-7+deb8u4`
 
 Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/copyright`)
 
@@ -703,16 +703,16 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/c
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg=1.4.18-7+deb8u3
-'http://deb.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18-7+deb8u3.dsc' gnupg_1.4.18-7+deb8u3.dsc 2432 SHA256:936c6e278b978f3edd24264940fca2f16d3c22c58437400578cdc7a9e6cb4148
-'http://deb.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18.orig.tar.gz' gnupg_1.4.18.orig.tar.gz 5047888 SHA256:10a8936b76ccadb98521535b5f41cc5b41b3c159a6c2915f062bd4dc8ac12d12
-'http://deb.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18-7+deb8u3.debian.tar.xz' gnupg_1.4.18-7+deb8u3.debian.tar.xz 301204 SHA256:2117df33f763efb2afbd9c154b6bfbf6a91c0ef1c1bee73357c03fd15f18605f
+$ apt-get source -qq --print-uris gnupg=1.4.18-7+deb8u4
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.18-7+deb8u4.dsc' gnupg_1.4.18-7+deb8u4.dsc 2436 SHA256:41ec08af41cbeb7fba84969530ba9d54a2fde55165b7d5c576cb077272620bdb
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.18.orig.tar.gz' gnupg_1.4.18.orig.tar.gz 5047888 SHA256:10a8936b76ccadb98521535b5f41cc5b41b3c159a6c2915f062bd4dc8ac12d12
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.18-7+deb8u4.debian.tar.xz' gnupg_1.4.18-7+deb8u4.debian.tar.xz 302448 SHA256:09e6f60462c8f13aa3e0c2796996697cce1b3023a6034280196041a52bf5f0f2
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u3/
-- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u4/
+- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `grep=2.20-4.1`
 
@@ -1346,9 +1346,32 @@ Binary Packages:
 
 - `perl-base=5.20.2-3+deb8u8`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
+- `Artistic`
+- `Artistic,`
+- `Artistic-2`
+- `BSD-3-clause`
+- `BSD-3-clause-GENERIC`
+- `BSD-4-clause`
+- `BSD-4-clause-POWERDOG`
+- `BZIP`
+- `DONT-CHANGE-THE-GPL`
+- `Expat`
+- `GPL-1`
+- `GPL-1+`
+- `GPL-2+`
+- `GPL-3+-WITH-BISON-EXCEPTION`
+- `HSIEH-BSD`
+- `HSIEH-DERIVATIVE`
+- `LGPL-2.1`
+- `REGCOMP`
+- `REGCOMP,`
+- `S2P`
+- `SDBM-PUBLIC-DOMAIN`
+- `TEXT-TABS`
+- `Unicode`
+- `ZLIB`
 
 Source:
 
@@ -1574,7 +1597,7 @@ Binary Packages:
 - `systemd-sysv=215-17+deb8u7`
 - `udev=215-17+deb8u7`
 
-Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`, `/usr/share/doc/udev/copyright`)
 
 - `Expat`
 - `GPL-2`
