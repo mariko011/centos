@@ -2,618 +2,18 @@
 
 # Tags of `sentry`
 
--	[`sentry:8.18.0`](#sentry8180)
--	[`sentry:8.18`](#sentry818)
--	[`sentry:8.18.0-onbuild`](#sentry8180-onbuild)
--	[`sentry:8.18-onbuild`](#sentry818-onbuild)
 -	[`sentry:8.19.0`](#sentry8190)
 -	[`sentry:8.19`](#sentry819)
--	[`sentry:8`](#sentry8)
--	[`sentry:latest`](#sentrylatest)
 -	[`sentry:8.19.0-onbuild`](#sentry8190-onbuild)
 -	[`sentry:8.19-onbuild`](#sentry819-onbuild)
+-	[`sentry:8.20.0`](#sentry8200)
+-	[`sentry:8.20`](#sentry820)
+-	[`sentry:8`](#sentry8)
+-	[`sentry:latest`](#sentrylatest)
+-	[`sentry:8.20.0-onbuild`](#sentry8200-onbuild)
+-	[`sentry:8.20-onbuild`](#sentry820-onbuild)
 -	[`sentry:8-onbuild`](#sentry8-onbuild)
 -	[`sentry:onbuild`](#sentryonbuild)
-
-## `sentry:8.18.0`
-
-```console
-$ docker pull sentry@sha256:327bfc0b6fd963bf3801ec34288a8253835a1145e29491bc021c54b781b01843
-```
-
--	Platforms:
-	-	linux; amd64
-
-### `sentry:8.18.0` - linux; amd64
-
--	Docker Version: 17.03.2-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.8 MB (192794862 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:01d4d048dc553adbf5559f8301e62f16b777d9d03f5a8f3fa3a1ef9f902d62b6`
--	Entrypoint: `["\/entrypoint.sh"]`
--	Default Command: `["run","web"]`
-
-```dockerfile
-# Thu, 07 Sep 2017 23:04:40 GMT
-ADD file:d7333b3e0bc6479d2faed32e06d85f1975e5b23e13e75555aeed0f639770413b in / 
-# Thu, 07 Sep 2017 23:04:41 GMT
-CMD ["bash"]
-# Fri, 08 Sep 2017 06:17:00 GMT
-ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Sep 2017 06:17:00 GMT
-ENV LANG=C.UTF-8
-# Fri, 08 Sep 2017 07:17:50 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libgdbm3 		libsqlite3-0 		libssl1.0.0 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 08 Sep 2017 07:17:50 GMT
-ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Fri, 08 Sep 2017 07:17:51 GMT
-ENV PYTHON_VERSION=2.7.13
-# Fri, 08 Sep 2017 07:20:34 GMT
-RUN set -ex 	&& buildDeps=' 		dpkg-dev 		gcc 		libbz2-dev 		libc6-dev 		libdb-dev 		libgdbm-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Fri, 08 Sep 2017 07:20:35 GMT
-ENV PYTHON_PIP_VERSION=9.0.1
-# Fri, 08 Sep 2017 07:20:59 GMT
-RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends wget; 	rm -rf /var/lib/apt/lists/*; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		apt-get purge -y --auto-remove wget; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Fri, 08 Sep 2017 07:20:59 GMT
-CMD ["python2"]
-# Fri, 08 Sep 2017 10:57:44 GMT
-RUN groupadd -r sentry && useradd -r -m -g sentry sentry
-# Fri, 08 Sep 2017 10:58:14 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends         gcc         git         libffi-dev         libjpeg-dev         libpq-dev         libxml2-dev         libxslt-dev         libyaml-dev     && rm -rf /var/lib/apt/lists/*
-# Fri, 08 Sep 2017 10:58:14 GMT
-ENV PIP_NO_CACHE_DIR=off
-# Fri, 08 Sep 2017 10:58:15 GMT
-ENV PIP_DISABLE_PIP_VERSION_CHECK=on
-# Fri, 08 Sep 2017 10:58:15 GMT
-ENV GOSU_VERSION=1.10
-# Fri, 08 Sep 2017 10:58:36 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)"     && wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true     && apt-get purge -y --auto-remove wget
-# Fri, 08 Sep 2017 10:58:36 GMT
-ENV TINI_VERSION=v0.14.0
-# Fri, 08 Sep 2017 10:58:55 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini"     && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5     && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini     && rm -r "$GNUPGHOME" /usr/local/bin/tini.asc     && chmod +x /usr/local/bin/tini     && tini -h     && apt-get purge -y --auto-remove wget
-# Fri, 08 Sep 2017 10:59:22 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends make && rm -rf /var/lib/apt/lists/*     && pip install librabbitmq==1.6.1     && python -c 'import librabbitmq'     && apt-get purge -y --auto-remove make
-# Fri, 08 Sep 2017 10:59:22 GMT
-ENV SENTRY_VERSION=8.18.0
-# Fri, 08 Sep 2017 11:00:58 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget g++ && rm -rf /var/lib/apt/lists/*     && mkdir -p /usr/src/sentry     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl"     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys D8749766A66DD714236A932C3B2D400CE5BBCA60     && gpg --batch --verify /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl     && gpg --batch --verify /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && pip install         /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl         /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && sentry --help     && sentry plugins list     && rm -r "$GNUPGHOME" /usr/src/sentry     && apt-get purge -y --auto-remove wget g++
-# Fri, 08 Sep 2017 11:00:58 GMT
-ENV SENTRY_CONF=/etc/sentry SENTRY_FILESTORE_DIR=/var/lib/sentry/files
-# Fri, 08 Sep 2017 11:00:59 GMT
-RUN mkdir -p $SENTRY_CONF && mkdir -p $SENTRY_FILESTORE_DIR
-# Fri, 08 Sep 2017 11:00:59 GMT
-COPY file:6b5c0c264ecaf40e9fe1838ff0926e09a661f89950c3c2b6f1612e948324733d in /etc/sentry/ 
-# Fri, 08 Sep 2017 11:01:00 GMT
-COPY file:d1a7cd4cbf7c842d84a135ed530ecf78f6858eaffe7f2d78824cc2906088bdd1 in /etc/sentry/ 
-# Fri, 08 Sep 2017 11:01:00 GMT
-COPY file:f490e4be17b442272f00cb3dac92d70a1d0164325552588b163a33fad4701f18 in /entrypoint.sh 
-# Fri, 08 Sep 2017 11:01:01 GMT
-EXPOSE 9000/tcp
-# Fri, 08 Sep 2017 11:01:01 GMT
-VOLUME [/var/lib/sentry/files]
-# Fri, 08 Sep 2017 11:01:01 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 08 Sep 2017 11:01:01 GMT
-CMD ["run" "web"]
-```
-
--	Layers:
-	-	`sha256:aa18ad1a0d334d80981104c599fa8cef9264552a265b1197af11274beba767cf`  
-		Last Modified: Thu, 07 Sep 2017 23:11:06 GMT  
-		Size: 52.6 MB (52595547 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:942d41097fd299b1b0be51a290ec7959f8e2d3e318057f2a572d44c6fde35b1f`  
-		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
-		Size: 3.5 MB (3472941 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da4c9a08866e171fef10a7186b54cf97d6a80e6484db271a7bfa6c7f376db811`  
-		Last Modified: Fri, 08 Sep 2017 07:36:18 GMT  
-		Size: 15.0 MB (15000825 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5a45081af06179a363252593e789261bb862466b2fd6f267002788b2a5456bf`  
-		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
-		Size: 1.7 MB (1738449 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7beb564d530d90234e9436f85edfd51c62ef948c11b8aa392e8dadaa1890ceae`  
-		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
-		Size: 4.4 KB (4374 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:101e083496818830fbfdeaa9a4ace2911595b8e8cd885b8875bc636e1edbe282`  
-		Last Modified: Mon, 11 Sep 2017 15:33:38 GMT  
-		Size: 63.9 MB (63853304 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1544028a2d2981107e51e563fda16856f49e6a710c5cbb3b3a8df11c92e2f66f`  
-		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
-		Size: 620.3 KB (620270 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bdcb06932161b5362a710b17bd4a796b650cc2baf613d5c4f214d987536e8778`  
-		Last Modified: Mon, 11 Sep 2017 15:33:15 GMT  
-		Size: 127.6 KB (127611 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e01a3e16a4cfd89edc7d911a0f66729d5e7c74dccda86a522cbb837a112ba054`  
-		Last Modified: Mon, 11 Sep 2017 15:33:14 GMT  
-		Size: 2.4 MB (2365552 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b96324a68c371e0e3bca366ec98a9684164bfbe983ab3d29dac09d49679ba185`  
-		Last Modified: Mon, 11 Sep 2017 15:33:47 GMT  
-		Size: 53.0 MB (53010921 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37040e30e3dfd0a12644c3a5a79ef12fbbfd004362727aa1c2c0557e970d6e42`  
-		Last Modified: Mon, 11 Sep 2017 15:33:13 GMT  
-		Size: 172.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:22bf6161a2e4fdf4f4e9839901061b6526b5d1a635ff056cc5b01a7d37bfa7de`  
-		Last Modified: Mon, 11 Sep 2017 15:33:13 GMT  
-		Size: 3.4 KB (3405 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3787b81901a8b573ad3d78032a95e01c2845c9f12df523d5e20fb58a0a8c177`  
-		Last Modified: Mon, 11 Sep 2017 15:33:13 GMT  
-		Size: 1.1 KB (1063 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86fc69b16eab0021f4a1a3c52134b26ee475d067ecc77510b0241dcefab8085b`  
-		Last Modified: Mon, 11 Sep 2017 15:33:13 GMT  
-		Size: 428.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `sentry:8.18`
-
-```console
-$ docker pull sentry@sha256:327bfc0b6fd963bf3801ec34288a8253835a1145e29491bc021c54b781b01843
-```
-
--	Platforms:
-	-	linux; amd64
-
-### `sentry:8.18` - linux; amd64
-
--	Docker Version: 17.03.2-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.8 MB (192794862 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:01d4d048dc553adbf5559f8301e62f16b777d9d03f5a8f3fa3a1ef9f902d62b6`
--	Entrypoint: `["\/entrypoint.sh"]`
--	Default Command: `["run","web"]`
-
-```dockerfile
-# Thu, 07 Sep 2017 23:04:40 GMT
-ADD file:d7333b3e0bc6479d2faed32e06d85f1975e5b23e13e75555aeed0f639770413b in / 
-# Thu, 07 Sep 2017 23:04:41 GMT
-CMD ["bash"]
-# Fri, 08 Sep 2017 06:17:00 GMT
-ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Sep 2017 06:17:00 GMT
-ENV LANG=C.UTF-8
-# Fri, 08 Sep 2017 07:17:50 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libgdbm3 		libsqlite3-0 		libssl1.0.0 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 08 Sep 2017 07:17:50 GMT
-ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Fri, 08 Sep 2017 07:17:51 GMT
-ENV PYTHON_VERSION=2.7.13
-# Fri, 08 Sep 2017 07:20:34 GMT
-RUN set -ex 	&& buildDeps=' 		dpkg-dev 		gcc 		libbz2-dev 		libc6-dev 		libdb-dev 		libgdbm-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Fri, 08 Sep 2017 07:20:35 GMT
-ENV PYTHON_PIP_VERSION=9.0.1
-# Fri, 08 Sep 2017 07:20:59 GMT
-RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends wget; 	rm -rf /var/lib/apt/lists/*; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		apt-get purge -y --auto-remove wget; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Fri, 08 Sep 2017 07:20:59 GMT
-CMD ["python2"]
-# Fri, 08 Sep 2017 10:57:44 GMT
-RUN groupadd -r sentry && useradd -r -m -g sentry sentry
-# Fri, 08 Sep 2017 10:58:14 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends         gcc         git         libffi-dev         libjpeg-dev         libpq-dev         libxml2-dev         libxslt-dev         libyaml-dev     && rm -rf /var/lib/apt/lists/*
-# Fri, 08 Sep 2017 10:58:14 GMT
-ENV PIP_NO_CACHE_DIR=off
-# Fri, 08 Sep 2017 10:58:15 GMT
-ENV PIP_DISABLE_PIP_VERSION_CHECK=on
-# Fri, 08 Sep 2017 10:58:15 GMT
-ENV GOSU_VERSION=1.10
-# Fri, 08 Sep 2017 10:58:36 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)"     && wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true     && apt-get purge -y --auto-remove wget
-# Fri, 08 Sep 2017 10:58:36 GMT
-ENV TINI_VERSION=v0.14.0
-# Fri, 08 Sep 2017 10:58:55 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini"     && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5     && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini     && rm -r "$GNUPGHOME" /usr/local/bin/tini.asc     && chmod +x /usr/local/bin/tini     && tini -h     && apt-get purge -y --auto-remove wget
-# Fri, 08 Sep 2017 10:59:22 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends make && rm -rf /var/lib/apt/lists/*     && pip install librabbitmq==1.6.1     && python -c 'import librabbitmq'     && apt-get purge -y --auto-remove make
-# Fri, 08 Sep 2017 10:59:22 GMT
-ENV SENTRY_VERSION=8.18.0
-# Fri, 08 Sep 2017 11:00:58 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget g++ && rm -rf /var/lib/apt/lists/*     && mkdir -p /usr/src/sentry     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl"     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys D8749766A66DD714236A932C3B2D400CE5BBCA60     && gpg --batch --verify /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl     && gpg --batch --verify /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && pip install         /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl         /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && sentry --help     && sentry plugins list     && rm -r "$GNUPGHOME" /usr/src/sentry     && apt-get purge -y --auto-remove wget g++
-# Fri, 08 Sep 2017 11:00:58 GMT
-ENV SENTRY_CONF=/etc/sentry SENTRY_FILESTORE_DIR=/var/lib/sentry/files
-# Fri, 08 Sep 2017 11:00:59 GMT
-RUN mkdir -p $SENTRY_CONF && mkdir -p $SENTRY_FILESTORE_DIR
-# Fri, 08 Sep 2017 11:00:59 GMT
-COPY file:6b5c0c264ecaf40e9fe1838ff0926e09a661f89950c3c2b6f1612e948324733d in /etc/sentry/ 
-# Fri, 08 Sep 2017 11:01:00 GMT
-COPY file:d1a7cd4cbf7c842d84a135ed530ecf78f6858eaffe7f2d78824cc2906088bdd1 in /etc/sentry/ 
-# Fri, 08 Sep 2017 11:01:00 GMT
-COPY file:f490e4be17b442272f00cb3dac92d70a1d0164325552588b163a33fad4701f18 in /entrypoint.sh 
-# Fri, 08 Sep 2017 11:01:01 GMT
-EXPOSE 9000/tcp
-# Fri, 08 Sep 2017 11:01:01 GMT
-VOLUME [/var/lib/sentry/files]
-# Fri, 08 Sep 2017 11:01:01 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 08 Sep 2017 11:01:01 GMT
-CMD ["run" "web"]
-```
-
--	Layers:
-	-	`sha256:aa18ad1a0d334d80981104c599fa8cef9264552a265b1197af11274beba767cf`  
-		Last Modified: Thu, 07 Sep 2017 23:11:06 GMT  
-		Size: 52.6 MB (52595547 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:942d41097fd299b1b0be51a290ec7959f8e2d3e318057f2a572d44c6fde35b1f`  
-		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
-		Size: 3.5 MB (3472941 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da4c9a08866e171fef10a7186b54cf97d6a80e6484db271a7bfa6c7f376db811`  
-		Last Modified: Fri, 08 Sep 2017 07:36:18 GMT  
-		Size: 15.0 MB (15000825 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5a45081af06179a363252593e789261bb862466b2fd6f267002788b2a5456bf`  
-		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
-		Size: 1.7 MB (1738449 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7beb564d530d90234e9436f85edfd51c62ef948c11b8aa392e8dadaa1890ceae`  
-		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
-		Size: 4.4 KB (4374 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:101e083496818830fbfdeaa9a4ace2911595b8e8cd885b8875bc636e1edbe282`  
-		Last Modified: Mon, 11 Sep 2017 15:33:38 GMT  
-		Size: 63.9 MB (63853304 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1544028a2d2981107e51e563fda16856f49e6a710c5cbb3b3a8df11c92e2f66f`  
-		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
-		Size: 620.3 KB (620270 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bdcb06932161b5362a710b17bd4a796b650cc2baf613d5c4f214d987536e8778`  
-		Last Modified: Mon, 11 Sep 2017 15:33:15 GMT  
-		Size: 127.6 KB (127611 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e01a3e16a4cfd89edc7d911a0f66729d5e7c74dccda86a522cbb837a112ba054`  
-		Last Modified: Mon, 11 Sep 2017 15:33:14 GMT  
-		Size: 2.4 MB (2365552 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b96324a68c371e0e3bca366ec98a9684164bfbe983ab3d29dac09d49679ba185`  
-		Last Modified: Mon, 11 Sep 2017 15:33:47 GMT  
-		Size: 53.0 MB (53010921 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37040e30e3dfd0a12644c3a5a79ef12fbbfd004362727aa1c2c0557e970d6e42`  
-		Last Modified: Mon, 11 Sep 2017 15:33:13 GMT  
-		Size: 172.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:22bf6161a2e4fdf4f4e9839901061b6526b5d1a635ff056cc5b01a7d37bfa7de`  
-		Last Modified: Mon, 11 Sep 2017 15:33:13 GMT  
-		Size: 3.4 KB (3405 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3787b81901a8b573ad3d78032a95e01c2845c9f12df523d5e20fb58a0a8c177`  
-		Last Modified: Mon, 11 Sep 2017 15:33:13 GMT  
-		Size: 1.1 KB (1063 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86fc69b16eab0021f4a1a3c52134b26ee475d067ecc77510b0241dcefab8085b`  
-		Last Modified: Mon, 11 Sep 2017 15:33:13 GMT  
-		Size: 428.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `sentry:8.18.0-onbuild`
-
-```console
-$ docker pull sentry@sha256:b9c4868969184e6585a036f41fafebe3a417d0232faab5cc1b06389817e94fca
-```
-
--	Platforms:
-	-	linux; amd64
-
-### `sentry:8.18.0-onbuild` - linux; amd64
-
--	Docker Version: 17.03.2-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.8 MB (192794993 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eacb7256abbd353327696a3cc21f36a581e47c0b70ccf6e2fc438ce9c14d84dc`
--	Entrypoint: `["\/entrypoint.sh"]`
--	Default Command: `["run","web"]`
-
-```dockerfile
-# Thu, 07 Sep 2017 23:04:40 GMT
-ADD file:d7333b3e0bc6479d2faed32e06d85f1975e5b23e13e75555aeed0f639770413b in / 
-# Thu, 07 Sep 2017 23:04:41 GMT
-CMD ["bash"]
-# Fri, 08 Sep 2017 06:17:00 GMT
-ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Sep 2017 06:17:00 GMT
-ENV LANG=C.UTF-8
-# Fri, 08 Sep 2017 07:17:50 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libgdbm3 		libsqlite3-0 		libssl1.0.0 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 08 Sep 2017 07:17:50 GMT
-ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Fri, 08 Sep 2017 07:17:51 GMT
-ENV PYTHON_VERSION=2.7.13
-# Fri, 08 Sep 2017 07:20:34 GMT
-RUN set -ex 	&& buildDeps=' 		dpkg-dev 		gcc 		libbz2-dev 		libc6-dev 		libdb-dev 		libgdbm-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Fri, 08 Sep 2017 07:20:35 GMT
-ENV PYTHON_PIP_VERSION=9.0.1
-# Fri, 08 Sep 2017 07:20:59 GMT
-RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends wget; 	rm -rf /var/lib/apt/lists/*; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		apt-get purge -y --auto-remove wget; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Fri, 08 Sep 2017 07:20:59 GMT
-CMD ["python2"]
-# Fri, 08 Sep 2017 10:57:44 GMT
-RUN groupadd -r sentry && useradd -r -m -g sentry sentry
-# Fri, 08 Sep 2017 10:58:14 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends         gcc         git         libffi-dev         libjpeg-dev         libpq-dev         libxml2-dev         libxslt-dev         libyaml-dev     && rm -rf /var/lib/apt/lists/*
-# Fri, 08 Sep 2017 10:58:14 GMT
-ENV PIP_NO_CACHE_DIR=off
-# Fri, 08 Sep 2017 10:58:15 GMT
-ENV PIP_DISABLE_PIP_VERSION_CHECK=on
-# Fri, 08 Sep 2017 10:58:15 GMT
-ENV GOSU_VERSION=1.10
-# Fri, 08 Sep 2017 10:58:36 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)"     && wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true     && apt-get purge -y --auto-remove wget
-# Fri, 08 Sep 2017 10:58:36 GMT
-ENV TINI_VERSION=v0.14.0
-# Fri, 08 Sep 2017 10:58:55 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini"     && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5     && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini     && rm -r "$GNUPGHOME" /usr/local/bin/tini.asc     && chmod +x /usr/local/bin/tini     && tini -h     && apt-get purge -y --auto-remove wget
-# Fri, 08 Sep 2017 10:59:22 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends make && rm -rf /var/lib/apt/lists/*     && pip install librabbitmq==1.6.1     && python -c 'import librabbitmq'     && apt-get purge -y --auto-remove make
-# Fri, 08 Sep 2017 10:59:22 GMT
-ENV SENTRY_VERSION=8.18.0
-# Fri, 08 Sep 2017 11:00:58 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget g++ && rm -rf /var/lib/apt/lists/*     && mkdir -p /usr/src/sentry     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl"     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys D8749766A66DD714236A932C3B2D400CE5BBCA60     && gpg --batch --verify /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl     && gpg --batch --verify /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && pip install         /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl         /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && sentry --help     && sentry plugins list     && rm -r "$GNUPGHOME" /usr/src/sentry     && apt-get purge -y --auto-remove wget g++
-# Fri, 08 Sep 2017 11:00:58 GMT
-ENV SENTRY_CONF=/etc/sentry SENTRY_FILESTORE_DIR=/var/lib/sentry/files
-# Fri, 08 Sep 2017 11:00:59 GMT
-RUN mkdir -p $SENTRY_CONF && mkdir -p $SENTRY_FILESTORE_DIR
-# Fri, 08 Sep 2017 11:00:59 GMT
-COPY file:6b5c0c264ecaf40e9fe1838ff0926e09a661f89950c3c2b6f1612e948324733d in /etc/sentry/ 
-# Fri, 08 Sep 2017 11:01:00 GMT
-COPY file:d1a7cd4cbf7c842d84a135ed530ecf78f6858eaffe7f2d78824cc2906088bdd1 in /etc/sentry/ 
-# Fri, 08 Sep 2017 11:01:00 GMT
-COPY file:f490e4be17b442272f00cb3dac92d70a1d0164325552588b163a33fad4701f18 in /entrypoint.sh 
-# Fri, 08 Sep 2017 11:01:01 GMT
-EXPOSE 9000/tcp
-# Fri, 08 Sep 2017 11:01:01 GMT
-VOLUME [/var/lib/sentry/files]
-# Fri, 08 Sep 2017 11:01:01 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 08 Sep 2017 11:01:01 GMT
-CMD ["run" "web"]
-# Fri, 08 Sep 2017 11:01:08 GMT
-WORKDIR /usr/src/sentry
-# Fri, 08 Sep 2017 11:01:08 GMT
-ENV PYTHONPATH=/usr/src/sentry
-# Fri, 08 Sep 2017 11:01:08 GMT
-ONBUILD COPY . /usr/src/sentry
-# Fri, 08 Sep 2017 11:01:09 GMT
-ONBUILD RUN if [ -s requirements.txt ]; then pip install -r requirements.txt; fi
-# Fri, 08 Sep 2017 11:01:09 GMT
-ONBUILD RUN if [ -s setup.py ]; then pip install -e .; fi
-# Fri, 08 Sep 2017 11:01:09 GMT
-ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	&& if [ -s config.yml ]; then cp config.yml $SENTRY_CONF/; fi
-```
-
--	Layers:
-	-	`sha256:aa18ad1a0d334d80981104c599fa8cef9264552a265b1197af11274beba767cf`  
-		Last Modified: Thu, 07 Sep 2017 23:11:06 GMT  
-		Size: 52.6 MB (52595547 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:942d41097fd299b1b0be51a290ec7959f8e2d3e318057f2a572d44c6fde35b1f`  
-		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
-		Size: 3.5 MB (3472941 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da4c9a08866e171fef10a7186b54cf97d6a80e6484db271a7bfa6c7f376db811`  
-		Last Modified: Fri, 08 Sep 2017 07:36:18 GMT  
-		Size: 15.0 MB (15000825 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5a45081af06179a363252593e789261bb862466b2fd6f267002788b2a5456bf`  
-		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
-		Size: 1.7 MB (1738449 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7beb564d530d90234e9436f85edfd51c62ef948c11b8aa392e8dadaa1890ceae`  
-		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
-		Size: 4.4 KB (4374 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:101e083496818830fbfdeaa9a4ace2911595b8e8cd885b8875bc636e1edbe282`  
-		Last Modified: Mon, 11 Sep 2017 15:33:38 GMT  
-		Size: 63.9 MB (63853304 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1544028a2d2981107e51e563fda16856f49e6a710c5cbb3b3a8df11c92e2f66f`  
-		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
-		Size: 620.3 KB (620270 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bdcb06932161b5362a710b17bd4a796b650cc2baf613d5c4f214d987536e8778`  
-		Last Modified: Mon, 11 Sep 2017 15:33:15 GMT  
-		Size: 127.6 KB (127611 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e01a3e16a4cfd89edc7d911a0f66729d5e7c74dccda86a522cbb837a112ba054`  
-		Last Modified: Mon, 11 Sep 2017 15:33:14 GMT  
-		Size: 2.4 MB (2365552 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b96324a68c371e0e3bca366ec98a9684164bfbe983ab3d29dac09d49679ba185`  
-		Last Modified: Mon, 11 Sep 2017 15:33:47 GMT  
-		Size: 53.0 MB (53010921 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37040e30e3dfd0a12644c3a5a79ef12fbbfd004362727aa1c2c0557e970d6e42`  
-		Last Modified: Mon, 11 Sep 2017 15:33:13 GMT  
-		Size: 172.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:22bf6161a2e4fdf4f4e9839901061b6526b5d1a635ff056cc5b01a7d37bfa7de`  
-		Last Modified: Mon, 11 Sep 2017 15:33:13 GMT  
-		Size: 3.4 KB (3405 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3787b81901a8b573ad3d78032a95e01c2845c9f12df523d5e20fb58a0a8c177`  
-		Last Modified: Mon, 11 Sep 2017 15:33:13 GMT  
-		Size: 1.1 KB (1063 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86fc69b16eab0021f4a1a3c52134b26ee475d067ecc77510b0241dcefab8085b`  
-		Last Modified: Mon, 11 Sep 2017 15:33:13 GMT  
-		Size: 428.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ccd9cb743b2fa4da06f1bd5db4a79f9d56f06e51a0993cc0812dabbdef7f710`  
-		Last Modified: Mon, 11 Sep 2017 15:35:36 GMT  
-		Size: 131.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `sentry:8.18-onbuild`
-
-```console
-$ docker pull sentry@sha256:b9c4868969184e6585a036f41fafebe3a417d0232faab5cc1b06389817e94fca
-```
-
--	Platforms:
-	-	linux; amd64
-
-### `sentry:8.18-onbuild` - linux; amd64
-
--	Docker Version: 17.03.2-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.8 MB (192794993 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eacb7256abbd353327696a3cc21f36a581e47c0b70ccf6e2fc438ce9c14d84dc`
--	Entrypoint: `["\/entrypoint.sh"]`
--	Default Command: `["run","web"]`
-
-```dockerfile
-# Thu, 07 Sep 2017 23:04:40 GMT
-ADD file:d7333b3e0bc6479d2faed32e06d85f1975e5b23e13e75555aeed0f639770413b in / 
-# Thu, 07 Sep 2017 23:04:41 GMT
-CMD ["bash"]
-# Fri, 08 Sep 2017 06:17:00 GMT
-ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Sep 2017 06:17:00 GMT
-ENV LANG=C.UTF-8
-# Fri, 08 Sep 2017 07:17:50 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libgdbm3 		libsqlite3-0 		libssl1.0.0 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 08 Sep 2017 07:17:50 GMT
-ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Fri, 08 Sep 2017 07:17:51 GMT
-ENV PYTHON_VERSION=2.7.13
-# Fri, 08 Sep 2017 07:20:34 GMT
-RUN set -ex 	&& buildDeps=' 		dpkg-dev 		gcc 		libbz2-dev 		libc6-dev 		libdb-dev 		libgdbm-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Fri, 08 Sep 2017 07:20:35 GMT
-ENV PYTHON_PIP_VERSION=9.0.1
-# Fri, 08 Sep 2017 07:20:59 GMT
-RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends wget; 	rm -rf /var/lib/apt/lists/*; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		apt-get purge -y --auto-remove wget; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Fri, 08 Sep 2017 07:20:59 GMT
-CMD ["python2"]
-# Fri, 08 Sep 2017 10:57:44 GMT
-RUN groupadd -r sentry && useradd -r -m -g sentry sentry
-# Fri, 08 Sep 2017 10:58:14 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends         gcc         git         libffi-dev         libjpeg-dev         libpq-dev         libxml2-dev         libxslt-dev         libyaml-dev     && rm -rf /var/lib/apt/lists/*
-# Fri, 08 Sep 2017 10:58:14 GMT
-ENV PIP_NO_CACHE_DIR=off
-# Fri, 08 Sep 2017 10:58:15 GMT
-ENV PIP_DISABLE_PIP_VERSION_CHECK=on
-# Fri, 08 Sep 2017 10:58:15 GMT
-ENV GOSU_VERSION=1.10
-# Fri, 08 Sep 2017 10:58:36 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)"     && wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true     && apt-get purge -y --auto-remove wget
-# Fri, 08 Sep 2017 10:58:36 GMT
-ENV TINI_VERSION=v0.14.0
-# Fri, 08 Sep 2017 10:58:55 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini"     && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5     && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini     && rm -r "$GNUPGHOME" /usr/local/bin/tini.asc     && chmod +x /usr/local/bin/tini     && tini -h     && apt-get purge -y --auto-remove wget
-# Fri, 08 Sep 2017 10:59:22 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends make && rm -rf /var/lib/apt/lists/*     && pip install librabbitmq==1.6.1     && python -c 'import librabbitmq'     && apt-get purge -y --auto-remove make
-# Fri, 08 Sep 2017 10:59:22 GMT
-ENV SENTRY_VERSION=8.18.0
-# Fri, 08 Sep 2017 11:00:58 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget g++ && rm -rf /var/lib/apt/lists/*     && mkdir -p /usr/src/sentry     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl"     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys D8749766A66DD714236A932C3B2D400CE5BBCA60     && gpg --batch --verify /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl     && gpg --batch --verify /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && pip install         /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl         /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && sentry --help     && sentry plugins list     && rm -r "$GNUPGHOME" /usr/src/sentry     && apt-get purge -y --auto-remove wget g++
-# Fri, 08 Sep 2017 11:00:58 GMT
-ENV SENTRY_CONF=/etc/sentry SENTRY_FILESTORE_DIR=/var/lib/sentry/files
-# Fri, 08 Sep 2017 11:00:59 GMT
-RUN mkdir -p $SENTRY_CONF && mkdir -p $SENTRY_FILESTORE_DIR
-# Fri, 08 Sep 2017 11:00:59 GMT
-COPY file:6b5c0c264ecaf40e9fe1838ff0926e09a661f89950c3c2b6f1612e948324733d in /etc/sentry/ 
-# Fri, 08 Sep 2017 11:01:00 GMT
-COPY file:d1a7cd4cbf7c842d84a135ed530ecf78f6858eaffe7f2d78824cc2906088bdd1 in /etc/sentry/ 
-# Fri, 08 Sep 2017 11:01:00 GMT
-COPY file:f490e4be17b442272f00cb3dac92d70a1d0164325552588b163a33fad4701f18 in /entrypoint.sh 
-# Fri, 08 Sep 2017 11:01:01 GMT
-EXPOSE 9000/tcp
-# Fri, 08 Sep 2017 11:01:01 GMT
-VOLUME [/var/lib/sentry/files]
-# Fri, 08 Sep 2017 11:01:01 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 08 Sep 2017 11:01:01 GMT
-CMD ["run" "web"]
-# Fri, 08 Sep 2017 11:01:08 GMT
-WORKDIR /usr/src/sentry
-# Fri, 08 Sep 2017 11:01:08 GMT
-ENV PYTHONPATH=/usr/src/sentry
-# Fri, 08 Sep 2017 11:01:08 GMT
-ONBUILD COPY . /usr/src/sentry
-# Fri, 08 Sep 2017 11:01:09 GMT
-ONBUILD RUN if [ -s requirements.txt ]; then pip install -r requirements.txt; fi
-# Fri, 08 Sep 2017 11:01:09 GMT
-ONBUILD RUN if [ -s setup.py ]; then pip install -e .; fi
-# Fri, 08 Sep 2017 11:01:09 GMT
-ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	&& if [ -s config.yml ]; then cp config.yml $SENTRY_CONF/; fi
-```
-
--	Layers:
-	-	`sha256:aa18ad1a0d334d80981104c599fa8cef9264552a265b1197af11274beba767cf`  
-		Last Modified: Thu, 07 Sep 2017 23:11:06 GMT  
-		Size: 52.6 MB (52595547 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:942d41097fd299b1b0be51a290ec7959f8e2d3e318057f2a572d44c6fde35b1f`  
-		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
-		Size: 3.5 MB (3472941 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da4c9a08866e171fef10a7186b54cf97d6a80e6484db271a7bfa6c7f376db811`  
-		Last Modified: Fri, 08 Sep 2017 07:36:18 GMT  
-		Size: 15.0 MB (15000825 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5a45081af06179a363252593e789261bb862466b2fd6f267002788b2a5456bf`  
-		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
-		Size: 1.7 MB (1738449 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7beb564d530d90234e9436f85edfd51c62ef948c11b8aa392e8dadaa1890ceae`  
-		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
-		Size: 4.4 KB (4374 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:101e083496818830fbfdeaa9a4ace2911595b8e8cd885b8875bc636e1edbe282`  
-		Last Modified: Mon, 11 Sep 2017 15:33:38 GMT  
-		Size: 63.9 MB (63853304 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1544028a2d2981107e51e563fda16856f49e6a710c5cbb3b3a8df11c92e2f66f`  
-		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
-		Size: 620.3 KB (620270 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bdcb06932161b5362a710b17bd4a796b650cc2baf613d5c4f214d987536e8778`  
-		Last Modified: Mon, 11 Sep 2017 15:33:15 GMT  
-		Size: 127.6 KB (127611 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e01a3e16a4cfd89edc7d911a0f66729d5e7c74dccda86a522cbb837a112ba054`  
-		Last Modified: Mon, 11 Sep 2017 15:33:14 GMT  
-		Size: 2.4 MB (2365552 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b96324a68c371e0e3bca366ec98a9684164bfbe983ab3d29dac09d49679ba185`  
-		Last Modified: Mon, 11 Sep 2017 15:33:47 GMT  
-		Size: 53.0 MB (53010921 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:37040e30e3dfd0a12644c3a5a79ef12fbbfd004362727aa1c2c0557e970d6e42`  
-		Last Modified: Mon, 11 Sep 2017 15:33:13 GMT  
-		Size: 172.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:22bf6161a2e4fdf4f4e9839901061b6526b5d1a635ff056cc5b01a7d37bfa7de`  
-		Last Modified: Mon, 11 Sep 2017 15:33:13 GMT  
-		Size: 3.4 KB (3405 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f3787b81901a8b573ad3d78032a95e01c2845c9f12df523d5e20fb58a0a8c177`  
-		Last Modified: Mon, 11 Sep 2017 15:33:13 GMT  
-		Size: 1.1 KB (1063 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:86fc69b16eab0021f4a1a3c52134b26ee475d067ecc77510b0241dcefab8085b`  
-		Last Modified: Mon, 11 Sep 2017 15:33:13 GMT  
-		Size: 428.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2ccd9cb743b2fa4da06f1bd5db4a79f9d56f06e51a0993cc0812dabbdef7f710`  
-		Last Modified: Mon, 11 Sep 2017 15:35:36 GMT  
-		Size: 131.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `sentry:8.19.0`
 
@@ -767,290 +167,6 @@ $ docker pull sentry@sha256:8b612924b3f7458daade8dfe4bf47a4946cab4e2921693e6beda
 	-	linux; amd64
 
 ### `sentry:8.19` - linux; amd64
-
--	Docker Version: 17.03.2-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **193.4 MB (193407905 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d40ff08700cd0033e7631bca46996cecc240eee10c5e335bfad9b1575639ba6e`
--	Entrypoint: `["\/entrypoint.sh"]`
--	Default Command: `["run","web"]`
-
-```dockerfile
-# Thu, 07 Sep 2017 23:04:40 GMT
-ADD file:d7333b3e0bc6479d2faed32e06d85f1975e5b23e13e75555aeed0f639770413b in / 
-# Thu, 07 Sep 2017 23:04:41 GMT
-CMD ["bash"]
-# Fri, 08 Sep 2017 06:17:00 GMT
-ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Sep 2017 06:17:00 GMT
-ENV LANG=C.UTF-8
-# Fri, 08 Sep 2017 07:17:50 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libgdbm3 		libsqlite3-0 		libssl1.0.0 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 08 Sep 2017 07:17:50 GMT
-ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Fri, 08 Sep 2017 07:17:51 GMT
-ENV PYTHON_VERSION=2.7.13
-# Fri, 08 Sep 2017 07:20:34 GMT
-RUN set -ex 	&& buildDeps=' 		dpkg-dev 		gcc 		libbz2-dev 		libc6-dev 		libdb-dev 		libgdbm-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Fri, 08 Sep 2017 07:20:35 GMT
-ENV PYTHON_PIP_VERSION=9.0.1
-# Fri, 08 Sep 2017 07:20:59 GMT
-RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends wget; 	rm -rf /var/lib/apt/lists/*; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		apt-get purge -y --auto-remove wget; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Fri, 08 Sep 2017 07:20:59 GMT
-CMD ["python2"]
-# Fri, 08 Sep 2017 10:57:44 GMT
-RUN groupadd -r sentry && useradd -r -m -g sentry sentry
-# Fri, 08 Sep 2017 10:58:14 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends         gcc         git         libffi-dev         libjpeg-dev         libpq-dev         libxml2-dev         libxslt-dev         libyaml-dev     && rm -rf /var/lib/apt/lists/*
-# Fri, 08 Sep 2017 10:58:14 GMT
-ENV PIP_NO_CACHE_DIR=off
-# Fri, 08 Sep 2017 10:58:15 GMT
-ENV PIP_DISABLE_PIP_VERSION_CHECK=on
-# Fri, 08 Sep 2017 10:58:15 GMT
-ENV GOSU_VERSION=1.10
-# Fri, 08 Sep 2017 10:58:36 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)"     && wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true     && apt-get purge -y --auto-remove wget
-# Fri, 08 Sep 2017 10:58:36 GMT
-ENV TINI_VERSION=v0.14.0
-# Fri, 08 Sep 2017 10:58:55 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini"     && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5     && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini     && rm -r "$GNUPGHOME" /usr/local/bin/tini.asc     && chmod +x /usr/local/bin/tini     && tini -h     && apt-get purge -y --auto-remove wget
-# Fri, 08 Sep 2017 10:59:22 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends make && rm -rf /var/lib/apt/lists/*     && pip install librabbitmq==1.6.1     && python -c 'import librabbitmq'     && apt-get purge -y --auto-remove make
-# Fri, 08 Sep 2017 11:01:15 GMT
-ENV SENTRY_VERSION=8.19.0
-# Fri, 08 Sep 2017 11:02:48 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget g++ && rm -rf /var/lib/apt/lists/*     && mkdir -p /usr/src/sentry     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl"     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys D8749766A66DD714236A932C3B2D400CE5BBCA60     && gpg --batch --verify /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl     && gpg --batch --verify /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && pip install         /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl         /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && sentry --help     && sentry plugins list     && rm -r "$GNUPGHOME" /usr/src/sentry     && apt-get purge -y --auto-remove wget g++
-# Fri, 08 Sep 2017 11:02:48 GMT
-ENV SENTRY_CONF=/etc/sentry SENTRY_FILESTORE_DIR=/var/lib/sentry/files
-# Fri, 08 Sep 2017 11:02:49 GMT
-RUN mkdir -p $SENTRY_CONF && mkdir -p $SENTRY_FILESTORE_DIR
-# Fri, 08 Sep 2017 11:02:50 GMT
-COPY file:6b5c0c264ecaf40e9fe1838ff0926e09a661f89950c3c2b6f1612e948324733d in /etc/sentry/ 
-# Fri, 08 Sep 2017 11:02:50 GMT
-COPY file:d1a7cd4cbf7c842d84a135ed530ecf78f6858eaffe7f2d78824cc2906088bdd1 in /etc/sentry/ 
-# Fri, 08 Sep 2017 11:02:50 GMT
-COPY file:f490e4be17b442272f00cb3dac92d70a1d0164325552588b163a33fad4701f18 in /entrypoint.sh 
-# Fri, 08 Sep 2017 11:02:51 GMT
-EXPOSE 9000/tcp
-# Fri, 08 Sep 2017 11:02:51 GMT
-VOLUME [/var/lib/sentry/files]
-# Fri, 08 Sep 2017 11:02:51 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 08 Sep 2017 11:02:52 GMT
-CMD ["run" "web"]
-```
-
--	Layers:
-	-	`sha256:aa18ad1a0d334d80981104c599fa8cef9264552a265b1197af11274beba767cf`  
-		Last Modified: Thu, 07 Sep 2017 23:11:06 GMT  
-		Size: 52.6 MB (52595547 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:942d41097fd299b1b0be51a290ec7959f8e2d3e318057f2a572d44c6fde35b1f`  
-		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
-		Size: 3.5 MB (3472941 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da4c9a08866e171fef10a7186b54cf97d6a80e6484db271a7bfa6c7f376db811`  
-		Last Modified: Fri, 08 Sep 2017 07:36:18 GMT  
-		Size: 15.0 MB (15000825 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5a45081af06179a363252593e789261bb862466b2fd6f267002788b2a5456bf`  
-		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
-		Size: 1.7 MB (1738449 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7beb564d530d90234e9436f85edfd51c62ef948c11b8aa392e8dadaa1890ceae`  
-		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
-		Size: 4.4 KB (4374 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:101e083496818830fbfdeaa9a4ace2911595b8e8cd885b8875bc636e1edbe282`  
-		Last Modified: Mon, 11 Sep 2017 15:33:38 GMT  
-		Size: 63.9 MB (63853304 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1544028a2d2981107e51e563fda16856f49e6a710c5cbb3b3a8df11c92e2f66f`  
-		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
-		Size: 620.3 KB (620270 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bdcb06932161b5362a710b17bd4a796b650cc2baf613d5c4f214d987536e8778`  
-		Last Modified: Mon, 11 Sep 2017 15:33:15 GMT  
-		Size: 127.6 KB (127611 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e01a3e16a4cfd89edc7d911a0f66729d5e7c74dccda86a522cbb837a112ba054`  
-		Last Modified: Mon, 11 Sep 2017 15:33:14 GMT  
-		Size: 2.4 MB (2365552 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a14ffd46b55ca95c8668ba961537b79d7d950ede8a0bd2c7279f2a7bb3179878`  
-		Last Modified: Mon, 11 Sep 2017 15:36:26 GMT  
-		Size: 53.6 MB (53623968 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:803d2d8158904c7d9b6aef1408ff5d31a156386da51931b8fe627c66b6c4bf5f`  
-		Last Modified: Mon, 11 Sep 2017 15:36:00 GMT  
-		Size: 172.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0392b48d3e9e3c9b8a5fd218f1dcd0ad044a7494abe115247c5dded7e5343652`  
-		Last Modified: Mon, 11 Sep 2017 15:36:00 GMT  
-		Size: 3.4 KB (3404 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1179c9fdf863d08a2539f08622fa3b5d27c7b2e9d623b562538b7b326418ab9`  
-		Last Modified: Mon, 11 Sep 2017 15:36:00 GMT  
-		Size: 1.1 KB (1063 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26e5144476ec27b3a63e62f77e99d693b2a6f9acde65e5bfeef45a3290b75e3a`  
-		Last Modified: Mon, 11 Sep 2017 15:36:00 GMT  
-		Size: 425.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `sentry:8`
-
-```console
-$ docker pull sentry@sha256:8b612924b3f7458daade8dfe4bf47a4946cab4e2921693e6bedafd35a6c28b0e
-```
-
--	Platforms:
-	-	linux; amd64
-
-### `sentry:8` - linux; amd64
-
--	Docker Version: 17.03.2-ce
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **193.4 MB (193407905 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d40ff08700cd0033e7631bca46996cecc240eee10c5e335bfad9b1575639ba6e`
--	Entrypoint: `["\/entrypoint.sh"]`
--	Default Command: `["run","web"]`
-
-```dockerfile
-# Thu, 07 Sep 2017 23:04:40 GMT
-ADD file:d7333b3e0bc6479d2faed32e06d85f1975e5b23e13e75555aeed0f639770413b in / 
-# Thu, 07 Sep 2017 23:04:41 GMT
-CMD ["bash"]
-# Fri, 08 Sep 2017 06:17:00 GMT
-ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 08 Sep 2017 06:17:00 GMT
-ENV LANG=C.UTF-8
-# Fri, 08 Sep 2017 07:17:50 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libgdbm3 		libsqlite3-0 		libssl1.0.0 	&& rm -rf /var/lib/apt/lists/*
-# Fri, 08 Sep 2017 07:17:50 GMT
-ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
-# Fri, 08 Sep 2017 07:17:51 GMT
-ENV PYTHON_VERSION=2.7.13
-# Fri, 08 Sep 2017 07:20:34 GMT
-RUN set -ex 	&& buildDeps=' 		dpkg-dev 		gcc 		libbz2-dev 		libc6-dev 		libdb-dev 		libgdbm-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
-# Fri, 08 Sep 2017 07:20:35 GMT
-ENV PYTHON_PIP_VERSION=9.0.1
-# Fri, 08 Sep 2017 07:20:59 GMT
-RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends wget; 	rm -rf /var/lib/apt/lists/*; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		apt-get purge -y --auto-remove wget; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
-# Fri, 08 Sep 2017 07:20:59 GMT
-CMD ["python2"]
-# Fri, 08 Sep 2017 10:57:44 GMT
-RUN groupadd -r sentry && useradd -r -m -g sentry sentry
-# Fri, 08 Sep 2017 10:58:14 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends         gcc         git         libffi-dev         libjpeg-dev         libpq-dev         libxml2-dev         libxslt-dev         libyaml-dev     && rm -rf /var/lib/apt/lists/*
-# Fri, 08 Sep 2017 10:58:14 GMT
-ENV PIP_NO_CACHE_DIR=off
-# Fri, 08 Sep 2017 10:58:15 GMT
-ENV PIP_DISABLE_PIP_VERSION_CHECK=on
-# Fri, 08 Sep 2017 10:58:15 GMT
-ENV GOSU_VERSION=1.10
-# Fri, 08 Sep 2017 10:58:36 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)"     && wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true     && apt-get purge -y --auto-remove wget
-# Fri, 08 Sep 2017 10:58:36 GMT
-ENV TINI_VERSION=v0.14.0
-# Fri, 08 Sep 2017 10:58:55 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini"     && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5     && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini     && rm -r "$GNUPGHOME" /usr/local/bin/tini.asc     && chmod +x /usr/local/bin/tini     && tini -h     && apt-get purge -y --auto-remove wget
-# Fri, 08 Sep 2017 10:59:22 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends make && rm -rf /var/lib/apt/lists/*     && pip install librabbitmq==1.6.1     && python -c 'import librabbitmq'     && apt-get purge -y --auto-remove make
-# Fri, 08 Sep 2017 11:01:15 GMT
-ENV SENTRY_VERSION=8.19.0
-# Fri, 08 Sep 2017 11:02:48 GMT
-RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget g++ && rm -rf /var/lib/apt/lists/*     && mkdir -p /usr/src/sentry     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl"     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys D8749766A66DD714236A932C3B2D400CE5BBCA60     && gpg --batch --verify /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl     && gpg --batch --verify /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && pip install         /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl         /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && sentry --help     && sentry plugins list     && rm -r "$GNUPGHOME" /usr/src/sentry     && apt-get purge -y --auto-remove wget g++
-# Fri, 08 Sep 2017 11:02:48 GMT
-ENV SENTRY_CONF=/etc/sentry SENTRY_FILESTORE_DIR=/var/lib/sentry/files
-# Fri, 08 Sep 2017 11:02:49 GMT
-RUN mkdir -p $SENTRY_CONF && mkdir -p $SENTRY_FILESTORE_DIR
-# Fri, 08 Sep 2017 11:02:50 GMT
-COPY file:6b5c0c264ecaf40e9fe1838ff0926e09a661f89950c3c2b6f1612e948324733d in /etc/sentry/ 
-# Fri, 08 Sep 2017 11:02:50 GMT
-COPY file:d1a7cd4cbf7c842d84a135ed530ecf78f6858eaffe7f2d78824cc2906088bdd1 in /etc/sentry/ 
-# Fri, 08 Sep 2017 11:02:50 GMT
-COPY file:f490e4be17b442272f00cb3dac92d70a1d0164325552588b163a33fad4701f18 in /entrypoint.sh 
-# Fri, 08 Sep 2017 11:02:51 GMT
-EXPOSE 9000/tcp
-# Fri, 08 Sep 2017 11:02:51 GMT
-VOLUME [/var/lib/sentry/files]
-# Fri, 08 Sep 2017 11:02:51 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 08 Sep 2017 11:02:52 GMT
-CMD ["run" "web"]
-```
-
--	Layers:
-	-	`sha256:aa18ad1a0d334d80981104c599fa8cef9264552a265b1197af11274beba767cf`  
-		Last Modified: Thu, 07 Sep 2017 23:11:06 GMT  
-		Size: 52.6 MB (52595547 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:942d41097fd299b1b0be51a290ec7959f8e2d3e318057f2a572d44c6fde35b1f`  
-		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
-		Size: 3.5 MB (3472941 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da4c9a08866e171fef10a7186b54cf97d6a80e6484db271a7bfa6c7f376db811`  
-		Last Modified: Fri, 08 Sep 2017 07:36:18 GMT  
-		Size: 15.0 MB (15000825 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5a45081af06179a363252593e789261bb862466b2fd6f267002788b2a5456bf`  
-		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
-		Size: 1.7 MB (1738449 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7beb564d530d90234e9436f85edfd51c62ef948c11b8aa392e8dadaa1890ceae`  
-		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
-		Size: 4.4 KB (4374 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:101e083496818830fbfdeaa9a4ace2911595b8e8cd885b8875bc636e1edbe282`  
-		Last Modified: Mon, 11 Sep 2017 15:33:38 GMT  
-		Size: 63.9 MB (63853304 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1544028a2d2981107e51e563fda16856f49e6a710c5cbb3b3a8df11c92e2f66f`  
-		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
-		Size: 620.3 KB (620270 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bdcb06932161b5362a710b17bd4a796b650cc2baf613d5c4f214d987536e8778`  
-		Last Modified: Mon, 11 Sep 2017 15:33:15 GMT  
-		Size: 127.6 KB (127611 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e01a3e16a4cfd89edc7d911a0f66729d5e7c74dccda86a522cbb837a112ba054`  
-		Last Modified: Mon, 11 Sep 2017 15:33:14 GMT  
-		Size: 2.4 MB (2365552 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a14ffd46b55ca95c8668ba961537b79d7d950ede8a0bd2c7279f2a7bb3179878`  
-		Last Modified: Mon, 11 Sep 2017 15:36:26 GMT  
-		Size: 53.6 MB (53623968 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:803d2d8158904c7d9b6aef1408ff5d31a156386da51931b8fe627c66b6c4bf5f`  
-		Last Modified: Mon, 11 Sep 2017 15:36:00 GMT  
-		Size: 172.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0392b48d3e9e3c9b8a5fd218f1dcd0ad044a7494abe115247c5dded7e5343652`  
-		Last Modified: Mon, 11 Sep 2017 15:36:00 GMT  
-		Size: 3.4 KB (3404 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1179c9fdf863d08a2539f08622fa3b5d27c7b2e9d623b562538b7b326418ab9`  
-		Last Modified: Mon, 11 Sep 2017 15:36:00 GMT  
-		Size: 1.1 KB (1063 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26e5144476ec27b3a63e62f77e99d693b2a6f9acde65e5bfeef45a3290b75e3a`  
-		Last Modified: Mon, 11 Sep 2017 15:36:00 GMT  
-		Size: 425.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-## `sentry:latest`
-
-```console
-$ docker pull sentry@sha256:8b612924b3f7458daade8dfe4bf47a4946cab4e2921693e6bedafd35a6c28b0e
-```
-
--	Platforms:
-	-	linux; amd64
-
-### `sentry:latest` - linux; amd64
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -1499,10 +615,894 @@ ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `sentry:8.20.0`
+
+```console
+$ docker pull sentry@sha256:dbcf414dcfe7fad3d869750efa4ad0715096fa00b55f3b937206158ee95e5738
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `sentry:8.20.0` - linux; amd64
+
+-	Docker Version: 17.03.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **196.5 MB (196534910 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a58b419eb4776d4d86f0d86605bf92c730b5f121cd261781ef273143ca45d8ee`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["run","web"]`
+
+```dockerfile
+# Thu, 07 Sep 2017 23:04:40 GMT
+ADD file:d7333b3e0bc6479d2faed32e06d85f1975e5b23e13e75555aeed0f639770413b in / 
+# Thu, 07 Sep 2017 23:04:41 GMT
+CMD ["bash"]
+# Fri, 08 Sep 2017 06:17:00 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 08 Sep 2017 06:17:00 GMT
+ENV LANG=C.UTF-8
+# Fri, 08 Sep 2017 07:17:50 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libgdbm3 		libsqlite3-0 		libssl1.0.0 	&& rm -rf /var/lib/apt/lists/*
+# Fri, 08 Sep 2017 07:17:50 GMT
+ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
+# Fri, 08 Sep 2017 07:17:51 GMT
+ENV PYTHON_VERSION=2.7.13
+# Fri, 08 Sep 2017 07:20:34 GMT
+RUN set -ex 	&& buildDeps=' 		dpkg-dev 		gcc 		libbz2-dev 		libc6-dev 		libdb-dev 		libgdbm-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
+# Fri, 08 Sep 2017 07:20:35 GMT
+ENV PYTHON_PIP_VERSION=9.0.1
+# Fri, 08 Sep 2017 07:20:59 GMT
+RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends wget; 	rm -rf /var/lib/apt/lists/*; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		apt-get purge -y --auto-remove wget; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
+# Fri, 08 Sep 2017 07:20:59 GMT
+CMD ["python2"]
+# Fri, 08 Sep 2017 10:57:44 GMT
+RUN groupadd -r sentry && useradd -r -m -g sentry sentry
+# Fri, 08 Sep 2017 10:58:14 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends         gcc         git         libffi-dev         libjpeg-dev         libpq-dev         libxml2-dev         libxslt-dev         libyaml-dev     && rm -rf /var/lib/apt/lists/*
+# Fri, 08 Sep 2017 10:58:14 GMT
+ENV PIP_NO_CACHE_DIR=off
+# Fri, 08 Sep 2017 10:58:15 GMT
+ENV PIP_DISABLE_PIP_VERSION_CHECK=on
+# Fri, 08 Sep 2017 10:58:15 GMT
+ENV GOSU_VERSION=1.10
+# Fri, 08 Sep 2017 10:58:36 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)"     && wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true     && apt-get purge -y --auto-remove wget
+# Fri, 08 Sep 2017 10:58:36 GMT
+ENV TINI_VERSION=v0.14.0
+# Fri, 08 Sep 2017 10:58:55 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini"     && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5     && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini     && rm -r "$GNUPGHOME" /usr/local/bin/tini.asc     && chmod +x /usr/local/bin/tini     && tini -h     && apt-get purge -y --auto-remove wget
+# Fri, 08 Sep 2017 10:59:22 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends make && rm -rf /var/lib/apt/lists/*     && pip install librabbitmq==1.6.1     && python -c 'import librabbitmq'     && apt-get purge -y --auto-remove make
+# Mon, 11 Sep 2017 18:11:49 GMT
+ENV SENTRY_VERSION=8.20.0
+# Mon, 11 Sep 2017 18:13:35 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget g++ && rm -rf /var/lib/apt/lists/*     && mkdir -p /usr/src/sentry     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl"     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys D8749766A66DD714236A932C3B2D400CE5BBCA60     && gpg --batch --verify /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl     && gpg --batch --verify /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && pip install         /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl         /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && sentry --help     && sentry plugins list     && rm -r "$GNUPGHOME" /usr/src/sentry     && apt-get purge -y --auto-remove wget g++
+# Mon, 11 Sep 2017 18:13:35 GMT
+ENV SENTRY_CONF=/etc/sentry SENTRY_FILESTORE_DIR=/var/lib/sentry/files
+# Mon, 11 Sep 2017 18:13:36 GMT
+RUN mkdir -p $SENTRY_CONF && mkdir -p $SENTRY_FILESTORE_DIR
+# Mon, 11 Sep 2017 18:13:36 GMT
+COPY file:6b5c0c264ecaf40e9fe1838ff0926e09a661f89950c3c2b6f1612e948324733d in /etc/sentry/ 
+# Mon, 11 Sep 2017 18:13:37 GMT
+COPY file:d1a7cd4cbf7c842d84a135ed530ecf78f6858eaffe7f2d78824cc2906088bdd1 in /etc/sentry/ 
+# Mon, 11 Sep 2017 18:13:37 GMT
+COPY file:f490e4be17b442272f00cb3dac92d70a1d0164325552588b163a33fad4701f18 in /entrypoint.sh 
+# Mon, 11 Sep 2017 18:13:38 GMT
+EXPOSE 9000/tcp
+# Mon, 11 Sep 2017 18:13:38 GMT
+VOLUME [/var/lib/sentry/files]
+# Mon, 11 Sep 2017 18:13:38 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Mon, 11 Sep 2017 18:13:39 GMT
+CMD ["run" "web"]
+```
+
+-	Layers:
+	-	`sha256:aa18ad1a0d334d80981104c599fa8cef9264552a265b1197af11274beba767cf`  
+		Last Modified: Thu, 07 Sep 2017 23:11:06 GMT  
+		Size: 52.6 MB (52595547 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:942d41097fd299b1b0be51a290ec7959f8e2d3e318057f2a572d44c6fde35b1f`  
+		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
+		Size: 3.5 MB (3472941 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:da4c9a08866e171fef10a7186b54cf97d6a80e6484db271a7bfa6c7f376db811`  
+		Last Modified: Fri, 08 Sep 2017 07:36:18 GMT  
+		Size: 15.0 MB (15000825 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b5a45081af06179a363252593e789261bb862466b2fd6f267002788b2a5456bf`  
+		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
+		Size: 1.7 MB (1738449 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7beb564d530d90234e9436f85edfd51c62ef948c11b8aa392e8dadaa1890ceae`  
+		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
+		Size: 4.4 KB (4374 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:101e083496818830fbfdeaa9a4ace2911595b8e8cd885b8875bc636e1edbe282`  
+		Last Modified: Mon, 11 Sep 2017 15:33:38 GMT  
+		Size: 63.9 MB (63853304 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1544028a2d2981107e51e563fda16856f49e6a710c5cbb3b3a8df11c92e2f66f`  
+		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
+		Size: 620.3 KB (620270 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bdcb06932161b5362a710b17bd4a796b650cc2baf613d5c4f214d987536e8778`  
+		Last Modified: Mon, 11 Sep 2017 15:33:15 GMT  
+		Size: 127.6 KB (127611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e01a3e16a4cfd89edc7d911a0f66729d5e7c74dccda86a522cbb837a112ba054`  
+		Last Modified: Mon, 11 Sep 2017 15:33:14 GMT  
+		Size: 2.4 MB (2365552 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eec75fdf252a165a42278e3e4920bc72c196209760577d516ec182c9e316b705`  
+		Last Modified: Mon, 11 Sep 2017 18:14:10 GMT  
+		Size: 56.8 MB (56750970 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d441634dea826225cef7794295c27285c164ad43fa92b28a12dbbce8e618503d`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
+		Size: 172.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f696eb58106cfe784250f81bc3f26dc79d0d8bf3df1a17a009308d521f1ff720`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
+		Size: 3.4 KB (3404 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:80c7a5eaa44a5a73c2f5f8e4a85cd5b213d4f6ff1364891dc8da636f6e8ab2f0`  
+		Last Modified: Mon, 11 Sep 2017 18:13:58 GMT  
+		Size: 1.1 KB (1064 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:df865ed658b29231a9c19af11d67c3707d6b207b8fbfbbca7745df556fc4f9c0`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
+		Size: 427.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `sentry:8.20`
+
+```console
+$ docker pull sentry@sha256:dbcf414dcfe7fad3d869750efa4ad0715096fa00b55f3b937206158ee95e5738
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `sentry:8.20` - linux; amd64
+
+-	Docker Version: 17.03.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **196.5 MB (196534910 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a58b419eb4776d4d86f0d86605bf92c730b5f121cd261781ef273143ca45d8ee`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["run","web"]`
+
+```dockerfile
+# Thu, 07 Sep 2017 23:04:40 GMT
+ADD file:d7333b3e0bc6479d2faed32e06d85f1975e5b23e13e75555aeed0f639770413b in / 
+# Thu, 07 Sep 2017 23:04:41 GMT
+CMD ["bash"]
+# Fri, 08 Sep 2017 06:17:00 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 08 Sep 2017 06:17:00 GMT
+ENV LANG=C.UTF-8
+# Fri, 08 Sep 2017 07:17:50 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libgdbm3 		libsqlite3-0 		libssl1.0.0 	&& rm -rf /var/lib/apt/lists/*
+# Fri, 08 Sep 2017 07:17:50 GMT
+ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
+# Fri, 08 Sep 2017 07:17:51 GMT
+ENV PYTHON_VERSION=2.7.13
+# Fri, 08 Sep 2017 07:20:34 GMT
+RUN set -ex 	&& buildDeps=' 		dpkg-dev 		gcc 		libbz2-dev 		libc6-dev 		libdb-dev 		libgdbm-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
+# Fri, 08 Sep 2017 07:20:35 GMT
+ENV PYTHON_PIP_VERSION=9.0.1
+# Fri, 08 Sep 2017 07:20:59 GMT
+RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends wget; 	rm -rf /var/lib/apt/lists/*; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		apt-get purge -y --auto-remove wget; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
+# Fri, 08 Sep 2017 07:20:59 GMT
+CMD ["python2"]
+# Fri, 08 Sep 2017 10:57:44 GMT
+RUN groupadd -r sentry && useradd -r -m -g sentry sentry
+# Fri, 08 Sep 2017 10:58:14 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends         gcc         git         libffi-dev         libjpeg-dev         libpq-dev         libxml2-dev         libxslt-dev         libyaml-dev     && rm -rf /var/lib/apt/lists/*
+# Fri, 08 Sep 2017 10:58:14 GMT
+ENV PIP_NO_CACHE_DIR=off
+# Fri, 08 Sep 2017 10:58:15 GMT
+ENV PIP_DISABLE_PIP_VERSION_CHECK=on
+# Fri, 08 Sep 2017 10:58:15 GMT
+ENV GOSU_VERSION=1.10
+# Fri, 08 Sep 2017 10:58:36 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)"     && wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true     && apt-get purge -y --auto-remove wget
+# Fri, 08 Sep 2017 10:58:36 GMT
+ENV TINI_VERSION=v0.14.0
+# Fri, 08 Sep 2017 10:58:55 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini"     && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5     && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini     && rm -r "$GNUPGHOME" /usr/local/bin/tini.asc     && chmod +x /usr/local/bin/tini     && tini -h     && apt-get purge -y --auto-remove wget
+# Fri, 08 Sep 2017 10:59:22 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends make && rm -rf /var/lib/apt/lists/*     && pip install librabbitmq==1.6.1     && python -c 'import librabbitmq'     && apt-get purge -y --auto-remove make
+# Mon, 11 Sep 2017 18:11:49 GMT
+ENV SENTRY_VERSION=8.20.0
+# Mon, 11 Sep 2017 18:13:35 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget g++ && rm -rf /var/lib/apt/lists/*     && mkdir -p /usr/src/sentry     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl"     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys D8749766A66DD714236A932C3B2D400CE5BBCA60     && gpg --batch --verify /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl     && gpg --batch --verify /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && pip install         /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl         /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && sentry --help     && sentry plugins list     && rm -r "$GNUPGHOME" /usr/src/sentry     && apt-get purge -y --auto-remove wget g++
+# Mon, 11 Sep 2017 18:13:35 GMT
+ENV SENTRY_CONF=/etc/sentry SENTRY_FILESTORE_DIR=/var/lib/sentry/files
+# Mon, 11 Sep 2017 18:13:36 GMT
+RUN mkdir -p $SENTRY_CONF && mkdir -p $SENTRY_FILESTORE_DIR
+# Mon, 11 Sep 2017 18:13:36 GMT
+COPY file:6b5c0c264ecaf40e9fe1838ff0926e09a661f89950c3c2b6f1612e948324733d in /etc/sentry/ 
+# Mon, 11 Sep 2017 18:13:37 GMT
+COPY file:d1a7cd4cbf7c842d84a135ed530ecf78f6858eaffe7f2d78824cc2906088bdd1 in /etc/sentry/ 
+# Mon, 11 Sep 2017 18:13:37 GMT
+COPY file:f490e4be17b442272f00cb3dac92d70a1d0164325552588b163a33fad4701f18 in /entrypoint.sh 
+# Mon, 11 Sep 2017 18:13:38 GMT
+EXPOSE 9000/tcp
+# Mon, 11 Sep 2017 18:13:38 GMT
+VOLUME [/var/lib/sentry/files]
+# Mon, 11 Sep 2017 18:13:38 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Mon, 11 Sep 2017 18:13:39 GMT
+CMD ["run" "web"]
+```
+
+-	Layers:
+	-	`sha256:aa18ad1a0d334d80981104c599fa8cef9264552a265b1197af11274beba767cf`  
+		Last Modified: Thu, 07 Sep 2017 23:11:06 GMT  
+		Size: 52.6 MB (52595547 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:942d41097fd299b1b0be51a290ec7959f8e2d3e318057f2a572d44c6fde35b1f`  
+		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
+		Size: 3.5 MB (3472941 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:da4c9a08866e171fef10a7186b54cf97d6a80e6484db271a7bfa6c7f376db811`  
+		Last Modified: Fri, 08 Sep 2017 07:36:18 GMT  
+		Size: 15.0 MB (15000825 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b5a45081af06179a363252593e789261bb862466b2fd6f267002788b2a5456bf`  
+		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
+		Size: 1.7 MB (1738449 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7beb564d530d90234e9436f85edfd51c62ef948c11b8aa392e8dadaa1890ceae`  
+		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
+		Size: 4.4 KB (4374 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:101e083496818830fbfdeaa9a4ace2911595b8e8cd885b8875bc636e1edbe282`  
+		Last Modified: Mon, 11 Sep 2017 15:33:38 GMT  
+		Size: 63.9 MB (63853304 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1544028a2d2981107e51e563fda16856f49e6a710c5cbb3b3a8df11c92e2f66f`  
+		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
+		Size: 620.3 KB (620270 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bdcb06932161b5362a710b17bd4a796b650cc2baf613d5c4f214d987536e8778`  
+		Last Modified: Mon, 11 Sep 2017 15:33:15 GMT  
+		Size: 127.6 KB (127611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e01a3e16a4cfd89edc7d911a0f66729d5e7c74dccda86a522cbb837a112ba054`  
+		Last Modified: Mon, 11 Sep 2017 15:33:14 GMT  
+		Size: 2.4 MB (2365552 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eec75fdf252a165a42278e3e4920bc72c196209760577d516ec182c9e316b705`  
+		Last Modified: Mon, 11 Sep 2017 18:14:10 GMT  
+		Size: 56.8 MB (56750970 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d441634dea826225cef7794295c27285c164ad43fa92b28a12dbbce8e618503d`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
+		Size: 172.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f696eb58106cfe784250f81bc3f26dc79d0d8bf3df1a17a009308d521f1ff720`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
+		Size: 3.4 KB (3404 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:80c7a5eaa44a5a73c2f5f8e4a85cd5b213d4f6ff1364891dc8da636f6e8ab2f0`  
+		Last Modified: Mon, 11 Sep 2017 18:13:58 GMT  
+		Size: 1.1 KB (1064 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:df865ed658b29231a9c19af11d67c3707d6b207b8fbfbbca7745df556fc4f9c0`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
+		Size: 427.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `sentry:8`
+
+```console
+$ docker pull sentry@sha256:dbcf414dcfe7fad3d869750efa4ad0715096fa00b55f3b937206158ee95e5738
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `sentry:8` - linux; amd64
+
+-	Docker Version: 17.03.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **196.5 MB (196534910 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a58b419eb4776d4d86f0d86605bf92c730b5f121cd261781ef273143ca45d8ee`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["run","web"]`
+
+```dockerfile
+# Thu, 07 Sep 2017 23:04:40 GMT
+ADD file:d7333b3e0bc6479d2faed32e06d85f1975e5b23e13e75555aeed0f639770413b in / 
+# Thu, 07 Sep 2017 23:04:41 GMT
+CMD ["bash"]
+# Fri, 08 Sep 2017 06:17:00 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 08 Sep 2017 06:17:00 GMT
+ENV LANG=C.UTF-8
+# Fri, 08 Sep 2017 07:17:50 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libgdbm3 		libsqlite3-0 		libssl1.0.0 	&& rm -rf /var/lib/apt/lists/*
+# Fri, 08 Sep 2017 07:17:50 GMT
+ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
+# Fri, 08 Sep 2017 07:17:51 GMT
+ENV PYTHON_VERSION=2.7.13
+# Fri, 08 Sep 2017 07:20:34 GMT
+RUN set -ex 	&& buildDeps=' 		dpkg-dev 		gcc 		libbz2-dev 		libc6-dev 		libdb-dev 		libgdbm-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
+# Fri, 08 Sep 2017 07:20:35 GMT
+ENV PYTHON_PIP_VERSION=9.0.1
+# Fri, 08 Sep 2017 07:20:59 GMT
+RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends wget; 	rm -rf /var/lib/apt/lists/*; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		apt-get purge -y --auto-remove wget; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
+# Fri, 08 Sep 2017 07:20:59 GMT
+CMD ["python2"]
+# Fri, 08 Sep 2017 10:57:44 GMT
+RUN groupadd -r sentry && useradd -r -m -g sentry sentry
+# Fri, 08 Sep 2017 10:58:14 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends         gcc         git         libffi-dev         libjpeg-dev         libpq-dev         libxml2-dev         libxslt-dev         libyaml-dev     && rm -rf /var/lib/apt/lists/*
+# Fri, 08 Sep 2017 10:58:14 GMT
+ENV PIP_NO_CACHE_DIR=off
+# Fri, 08 Sep 2017 10:58:15 GMT
+ENV PIP_DISABLE_PIP_VERSION_CHECK=on
+# Fri, 08 Sep 2017 10:58:15 GMT
+ENV GOSU_VERSION=1.10
+# Fri, 08 Sep 2017 10:58:36 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)"     && wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true     && apt-get purge -y --auto-remove wget
+# Fri, 08 Sep 2017 10:58:36 GMT
+ENV TINI_VERSION=v0.14.0
+# Fri, 08 Sep 2017 10:58:55 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini"     && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5     && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini     && rm -r "$GNUPGHOME" /usr/local/bin/tini.asc     && chmod +x /usr/local/bin/tini     && tini -h     && apt-get purge -y --auto-remove wget
+# Fri, 08 Sep 2017 10:59:22 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends make && rm -rf /var/lib/apt/lists/*     && pip install librabbitmq==1.6.1     && python -c 'import librabbitmq'     && apt-get purge -y --auto-remove make
+# Mon, 11 Sep 2017 18:11:49 GMT
+ENV SENTRY_VERSION=8.20.0
+# Mon, 11 Sep 2017 18:13:35 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget g++ && rm -rf /var/lib/apt/lists/*     && mkdir -p /usr/src/sentry     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl"     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys D8749766A66DD714236A932C3B2D400CE5BBCA60     && gpg --batch --verify /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl     && gpg --batch --verify /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && pip install         /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl         /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && sentry --help     && sentry plugins list     && rm -r "$GNUPGHOME" /usr/src/sentry     && apt-get purge -y --auto-remove wget g++
+# Mon, 11 Sep 2017 18:13:35 GMT
+ENV SENTRY_CONF=/etc/sentry SENTRY_FILESTORE_DIR=/var/lib/sentry/files
+# Mon, 11 Sep 2017 18:13:36 GMT
+RUN mkdir -p $SENTRY_CONF && mkdir -p $SENTRY_FILESTORE_DIR
+# Mon, 11 Sep 2017 18:13:36 GMT
+COPY file:6b5c0c264ecaf40e9fe1838ff0926e09a661f89950c3c2b6f1612e948324733d in /etc/sentry/ 
+# Mon, 11 Sep 2017 18:13:37 GMT
+COPY file:d1a7cd4cbf7c842d84a135ed530ecf78f6858eaffe7f2d78824cc2906088bdd1 in /etc/sentry/ 
+# Mon, 11 Sep 2017 18:13:37 GMT
+COPY file:f490e4be17b442272f00cb3dac92d70a1d0164325552588b163a33fad4701f18 in /entrypoint.sh 
+# Mon, 11 Sep 2017 18:13:38 GMT
+EXPOSE 9000/tcp
+# Mon, 11 Sep 2017 18:13:38 GMT
+VOLUME [/var/lib/sentry/files]
+# Mon, 11 Sep 2017 18:13:38 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Mon, 11 Sep 2017 18:13:39 GMT
+CMD ["run" "web"]
+```
+
+-	Layers:
+	-	`sha256:aa18ad1a0d334d80981104c599fa8cef9264552a265b1197af11274beba767cf`  
+		Last Modified: Thu, 07 Sep 2017 23:11:06 GMT  
+		Size: 52.6 MB (52595547 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:942d41097fd299b1b0be51a290ec7959f8e2d3e318057f2a572d44c6fde35b1f`  
+		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
+		Size: 3.5 MB (3472941 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:da4c9a08866e171fef10a7186b54cf97d6a80e6484db271a7bfa6c7f376db811`  
+		Last Modified: Fri, 08 Sep 2017 07:36:18 GMT  
+		Size: 15.0 MB (15000825 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b5a45081af06179a363252593e789261bb862466b2fd6f267002788b2a5456bf`  
+		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
+		Size: 1.7 MB (1738449 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7beb564d530d90234e9436f85edfd51c62ef948c11b8aa392e8dadaa1890ceae`  
+		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
+		Size: 4.4 KB (4374 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:101e083496818830fbfdeaa9a4ace2911595b8e8cd885b8875bc636e1edbe282`  
+		Last Modified: Mon, 11 Sep 2017 15:33:38 GMT  
+		Size: 63.9 MB (63853304 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1544028a2d2981107e51e563fda16856f49e6a710c5cbb3b3a8df11c92e2f66f`  
+		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
+		Size: 620.3 KB (620270 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bdcb06932161b5362a710b17bd4a796b650cc2baf613d5c4f214d987536e8778`  
+		Last Modified: Mon, 11 Sep 2017 15:33:15 GMT  
+		Size: 127.6 KB (127611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e01a3e16a4cfd89edc7d911a0f66729d5e7c74dccda86a522cbb837a112ba054`  
+		Last Modified: Mon, 11 Sep 2017 15:33:14 GMT  
+		Size: 2.4 MB (2365552 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eec75fdf252a165a42278e3e4920bc72c196209760577d516ec182c9e316b705`  
+		Last Modified: Mon, 11 Sep 2017 18:14:10 GMT  
+		Size: 56.8 MB (56750970 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d441634dea826225cef7794295c27285c164ad43fa92b28a12dbbce8e618503d`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
+		Size: 172.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f696eb58106cfe784250f81bc3f26dc79d0d8bf3df1a17a009308d521f1ff720`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
+		Size: 3.4 KB (3404 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:80c7a5eaa44a5a73c2f5f8e4a85cd5b213d4f6ff1364891dc8da636f6e8ab2f0`  
+		Last Modified: Mon, 11 Sep 2017 18:13:58 GMT  
+		Size: 1.1 KB (1064 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:df865ed658b29231a9c19af11d67c3707d6b207b8fbfbbca7745df556fc4f9c0`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
+		Size: 427.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `sentry:latest`
+
+```console
+$ docker pull sentry@sha256:dbcf414dcfe7fad3d869750efa4ad0715096fa00b55f3b937206158ee95e5738
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `sentry:latest` - linux; amd64
+
+-	Docker Version: 17.03.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **196.5 MB (196534910 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a58b419eb4776d4d86f0d86605bf92c730b5f121cd261781ef273143ca45d8ee`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["run","web"]`
+
+```dockerfile
+# Thu, 07 Sep 2017 23:04:40 GMT
+ADD file:d7333b3e0bc6479d2faed32e06d85f1975e5b23e13e75555aeed0f639770413b in / 
+# Thu, 07 Sep 2017 23:04:41 GMT
+CMD ["bash"]
+# Fri, 08 Sep 2017 06:17:00 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 08 Sep 2017 06:17:00 GMT
+ENV LANG=C.UTF-8
+# Fri, 08 Sep 2017 07:17:50 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libgdbm3 		libsqlite3-0 		libssl1.0.0 	&& rm -rf /var/lib/apt/lists/*
+# Fri, 08 Sep 2017 07:17:50 GMT
+ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
+# Fri, 08 Sep 2017 07:17:51 GMT
+ENV PYTHON_VERSION=2.7.13
+# Fri, 08 Sep 2017 07:20:34 GMT
+RUN set -ex 	&& buildDeps=' 		dpkg-dev 		gcc 		libbz2-dev 		libc6-dev 		libdb-dev 		libgdbm-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
+# Fri, 08 Sep 2017 07:20:35 GMT
+ENV PYTHON_PIP_VERSION=9.0.1
+# Fri, 08 Sep 2017 07:20:59 GMT
+RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends wget; 	rm -rf /var/lib/apt/lists/*; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		apt-get purge -y --auto-remove wget; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
+# Fri, 08 Sep 2017 07:20:59 GMT
+CMD ["python2"]
+# Fri, 08 Sep 2017 10:57:44 GMT
+RUN groupadd -r sentry && useradd -r -m -g sentry sentry
+# Fri, 08 Sep 2017 10:58:14 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends         gcc         git         libffi-dev         libjpeg-dev         libpq-dev         libxml2-dev         libxslt-dev         libyaml-dev     && rm -rf /var/lib/apt/lists/*
+# Fri, 08 Sep 2017 10:58:14 GMT
+ENV PIP_NO_CACHE_DIR=off
+# Fri, 08 Sep 2017 10:58:15 GMT
+ENV PIP_DISABLE_PIP_VERSION_CHECK=on
+# Fri, 08 Sep 2017 10:58:15 GMT
+ENV GOSU_VERSION=1.10
+# Fri, 08 Sep 2017 10:58:36 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)"     && wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true     && apt-get purge -y --auto-remove wget
+# Fri, 08 Sep 2017 10:58:36 GMT
+ENV TINI_VERSION=v0.14.0
+# Fri, 08 Sep 2017 10:58:55 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini"     && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5     && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini     && rm -r "$GNUPGHOME" /usr/local/bin/tini.asc     && chmod +x /usr/local/bin/tini     && tini -h     && apt-get purge -y --auto-remove wget
+# Fri, 08 Sep 2017 10:59:22 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends make && rm -rf /var/lib/apt/lists/*     && pip install librabbitmq==1.6.1     && python -c 'import librabbitmq'     && apt-get purge -y --auto-remove make
+# Mon, 11 Sep 2017 18:11:49 GMT
+ENV SENTRY_VERSION=8.20.0
+# Mon, 11 Sep 2017 18:13:35 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget g++ && rm -rf /var/lib/apt/lists/*     && mkdir -p /usr/src/sentry     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl"     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys D8749766A66DD714236A932C3B2D400CE5BBCA60     && gpg --batch --verify /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl     && gpg --batch --verify /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && pip install         /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl         /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && sentry --help     && sentry plugins list     && rm -r "$GNUPGHOME" /usr/src/sentry     && apt-get purge -y --auto-remove wget g++
+# Mon, 11 Sep 2017 18:13:35 GMT
+ENV SENTRY_CONF=/etc/sentry SENTRY_FILESTORE_DIR=/var/lib/sentry/files
+# Mon, 11 Sep 2017 18:13:36 GMT
+RUN mkdir -p $SENTRY_CONF && mkdir -p $SENTRY_FILESTORE_DIR
+# Mon, 11 Sep 2017 18:13:36 GMT
+COPY file:6b5c0c264ecaf40e9fe1838ff0926e09a661f89950c3c2b6f1612e948324733d in /etc/sentry/ 
+# Mon, 11 Sep 2017 18:13:37 GMT
+COPY file:d1a7cd4cbf7c842d84a135ed530ecf78f6858eaffe7f2d78824cc2906088bdd1 in /etc/sentry/ 
+# Mon, 11 Sep 2017 18:13:37 GMT
+COPY file:f490e4be17b442272f00cb3dac92d70a1d0164325552588b163a33fad4701f18 in /entrypoint.sh 
+# Mon, 11 Sep 2017 18:13:38 GMT
+EXPOSE 9000/tcp
+# Mon, 11 Sep 2017 18:13:38 GMT
+VOLUME [/var/lib/sentry/files]
+# Mon, 11 Sep 2017 18:13:38 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Mon, 11 Sep 2017 18:13:39 GMT
+CMD ["run" "web"]
+```
+
+-	Layers:
+	-	`sha256:aa18ad1a0d334d80981104c599fa8cef9264552a265b1197af11274beba767cf`  
+		Last Modified: Thu, 07 Sep 2017 23:11:06 GMT  
+		Size: 52.6 MB (52595547 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:942d41097fd299b1b0be51a290ec7959f8e2d3e318057f2a572d44c6fde35b1f`  
+		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
+		Size: 3.5 MB (3472941 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:da4c9a08866e171fef10a7186b54cf97d6a80e6484db271a7bfa6c7f376db811`  
+		Last Modified: Fri, 08 Sep 2017 07:36:18 GMT  
+		Size: 15.0 MB (15000825 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b5a45081af06179a363252593e789261bb862466b2fd6f267002788b2a5456bf`  
+		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
+		Size: 1.7 MB (1738449 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7beb564d530d90234e9436f85edfd51c62ef948c11b8aa392e8dadaa1890ceae`  
+		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
+		Size: 4.4 KB (4374 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:101e083496818830fbfdeaa9a4ace2911595b8e8cd885b8875bc636e1edbe282`  
+		Last Modified: Mon, 11 Sep 2017 15:33:38 GMT  
+		Size: 63.9 MB (63853304 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1544028a2d2981107e51e563fda16856f49e6a710c5cbb3b3a8df11c92e2f66f`  
+		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
+		Size: 620.3 KB (620270 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bdcb06932161b5362a710b17bd4a796b650cc2baf613d5c4f214d987536e8778`  
+		Last Modified: Mon, 11 Sep 2017 15:33:15 GMT  
+		Size: 127.6 KB (127611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e01a3e16a4cfd89edc7d911a0f66729d5e7c74dccda86a522cbb837a112ba054`  
+		Last Modified: Mon, 11 Sep 2017 15:33:14 GMT  
+		Size: 2.4 MB (2365552 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eec75fdf252a165a42278e3e4920bc72c196209760577d516ec182c9e316b705`  
+		Last Modified: Mon, 11 Sep 2017 18:14:10 GMT  
+		Size: 56.8 MB (56750970 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d441634dea826225cef7794295c27285c164ad43fa92b28a12dbbce8e618503d`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
+		Size: 172.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f696eb58106cfe784250f81bc3f26dc79d0d8bf3df1a17a009308d521f1ff720`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
+		Size: 3.4 KB (3404 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:80c7a5eaa44a5a73c2f5f8e4a85cd5b213d4f6ff1364891dc8da636f6e8ab2f0`  
+		Last Modified: Mon, 11 Sep 2017 18:13:58 GMT  
+		Size: 1.1 KB (1064 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:df865ed658b29231a9c19af11d67c3707d6b207b8fbfbbca7745df556fc4f9c0`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
+		Size: 427.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `sentry:8.20.0-onbuild`
+
+```console
+$ docker pull sentry@sha256:9a68750e3db1b959ea9bfe84ffdeac5a3e0da73f0461bb596001160020750303
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `sentry:8.20.0-onbuild` - linux; amd64
+
+-	Docker Version: 17.03.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **196.5 MB (196535041 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:41099c20ee07c007c7730a9f8448a0bce8f8bf51eda5b757a28dddbc73d4d0b2`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["run","web"]`
+
+```dockerfile
+# Thu, 07 Sep 2017 23:04:40 GMT
+ADD file:d7333b3e0bc6479d2faed32e06d85f1975e5b23e13e75555aeed0f639770413b in / 
+# Thu, 07 Sep 2017 23:04:41 GMT
+CMD ["bash"]
+# Fri, 08 Sep 2017 06:17:00 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 08 Sep 2017 06:17:00 GMT
+ENV LANG=C.UTF-8
+# Fri, 08 Sep 2017 07:17:50 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libgdbm3 		libsqlite3-0 		libssl1.0.0 	&& rm -rf /var/lib/apt/lists/*
+# Fri, 08 Sep 2017 07:17:50 GMT
+ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
+# Fri, 08 Sep 2017 07:17:51 GMT
+ENV PYTHON_VERSION=2.7.13
+# Fri, 08 Sep 2017 07:20:34 GMT
+RUN set -ex 	&& buildDeps=' 		dpkg-dev 		gcc 		libbz2-dev 		libc6-dev 		libdb-dev 		libgdbm-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
+# Fri, 08 Sep 2017 07:20:35 GMT
+ENV PYTHON_PIP_VERSION=9.0.1
+# Fri, 08 Sep 2017 07:20:59 GMT
+RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends wget; 	rm -rf /var/lib/apt/lists/*; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		apt-get purge -y --auto-remove wget; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
+# Fri, 08 Sep 2017 07:20:59 GMT
+CMD ["python2"]
+# Fri, 08 Sep 2017 10:57:44 GMT
+RUN groupadd -r sentry && useradd -r -m -g sentry sentry
+# Fri, 08 Sep 2017 10:58:14 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends         gcc         git         libffi-dev         libjpeg-dev         libpq-dev         libxml2-dev         libxslt-dev         libyaml-dev     && rm -rf /var/lib/apt/lists/*
+# Fri, 08 Sep 2017 10:58:14 GMT
+ENV PIP_NO_CACHE_DIR=off
+# Fri, 08 Sep 2017 10:58:15 GMT
+ENV PIP_DISABLE_PIP_VERSION_CHECK=on
+# Fri, 08 Sep 2017 10:58:15 GMT
+ENV GOSU_VERSION=1.10
+# Fri, 08 Sep 2017 10:58:36 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)"     && wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true     && apt-get purge -y --auto-remove wget
+# Fri, 08 Sep 2017 10:58:36 GMT
+ENV TINI_VERSION=v0.14.0
+# Fri, 08 Sep 2017 10:58:55 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini"     && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5     && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini     && rm -r "$GNUPGHOME" /usr/local/bin/tini.asc     && chmod +x /usr/local/bin/tini     && tini -h     && apt-get purge -y --auto-remove wget
+# Fri, 08 Sep 2017 10:59:22 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends make && rm -rf /var/lib/apt/lists/*     && pip install librabbitmq==1.6.1     && python -c 'import librabbitmq'     && apt-get purge -y --auto-remove make
+# Mon, 11 Sep 2017 18:11:49 GMT
+ENV SENTRY_VERSION=8.20.0
+# Mon, 11 Sep 2017 18:13:35 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget g++ && rm -rf /var/lib/apt/lists/*     && mkdir -p /usr/src/sentry     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl"     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys D8749766A66DD714236A932C3B2D400CE5BBCA60     && gpg --batch --verify /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl     && gpg --batch --verify /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && pip install         /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl         /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && sentry --help     && sentry plugins list     && rm -r "$GNUPGHOME" /usr/src/sentry     && apt-get purge -y --auto-remove wget g++
+# Mon, 11 Sep 2017 18:13:35 GMT
+ENV SENTRY_CONF=/etc/sentry SENTRY_FILESTORE_DIR=/var/lib/sentry/files
+# Mon, 11 Sep 2017 18:13:36 GMT
+RUN mkdir -p $SENTRY_CONF && mkdir -p $SENTRY_FILESTORE_DIR
+# Mon, 11 Sep 2017 18:13:36 GMT
+COPY file:6b5c0c264ecaf40e9fe1838ff0926e09a661f89950c3c2b6f1612e948324733d in /etc/sentry/ 
+# Mon, 11 Sep 2017 18:13:37 GMT
+COPY file:d1a7cd4cbf7c842d84a135ed530ecf78f6858eaffe7f2d78824cc2906088bdd1 in /etc/sentry/ 
+# Mon, 11 Sep 2017 18:13:37 GMT
+COPY file:f490e4be17b442272f00cb3dac92d70a1d0164325552588b163a33fad4701f18 in /entrypoint.sh 
+# Mon, 11 Sep 2017 18:13:38 GMT
+EXPOSE 9000/tcp
+# Mon, 11 Sep 2017 18:13:38 GMT
+VOLUME [/var/lib/sentry/files]
+# Mon, 11 Sep 2017 18:13:38 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Mon, 11 Sep 2017 18:13:39 GMT
+CMD ["run" "web"]
+# Mon, 11 Sep 2017 18:13:46 GMT
+WORKDIR /usr/src/sentry
+# Mon, 11 Sep 2017 18:13:46 GMT
+ENV PYTHONPATH=/usr/src/sentry
+# Mon, 11 Sep 2017 18:13:46 GMT
+ONBUILD COPY . /usr/src/sentry
+# Mon, 11 Sep 2017 18:13:46 GMT
+ONBUILD RUN if [ -s requirements.txt ]; then pip install -r requirements.txt; fi
+# Mon, 11 Sep 2017 18:13:47 GMT
+ONBUILD RUN if [ -s setup.py ]; then pip install -e .; fi
+# Mon, 11 Sep 2017 18:13:47 GMT
+ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	&& if [ -s config.yml ]; then cp config.yml $SENTRY_CONF/; fi
+```
+
+-	Layers:
+	-	`sha256:aa18ad1a0d334d80981104c599fa8cef9264552a265b1197af11274beba767cf`  
+		Last Modified: Thu, 07 Sep 2017 23:11:06 GMT  
+		Size: 52.6 MB (52595547 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:942d41097fd299b1b0be51a290ec7959f8e2d3e318057f2a572d44c6fde35b1f`  
+		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
+		Size: 3.5 MB (3472941 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:da4c9a08866e171fef10a7186b54cf97d6a80e6484db271a7bfa6c7f376db811`  
+		Last Modified: Fri, 08 Sep 2017 07:36:18 GMT  
+		Size: 15.0 MB (15000825 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b5a45081af06179a363252593e789261bb862466b2fd6f267002788b2a5456bf`  
+		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
+		Size: 1.7 MB (1738449 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7beb564d530d90234e9436f85edfd51c62ef948c11b8aa392e8dadaa1890ceae`  
+		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
+		Size: 4.4 KB (4374 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:101e083496818830fbfdeaa9a4ace2911595b8e8cd885b8875bc636e1edbe282`  
+		Last Modified: Mon, 11 Sep 2017 15:33:38 GMT  
+		Size: 63.9 MB (63853304 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1544028a2d2981107e51e563fda16856f49e6a710c5cbb3b3a8df11c92e2f66f`  
+		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
+		Size: 620.3 KB (620270 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bdcb06932161b5362a710b17bd4a796b650cc2baf613d5c4f214d987536e8778`  
+		Last Modified: Mon, 11 Sep 2017 15:33:15 GMT  
+		Size: 127.6 KB (127611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e01a3e16a4cfd89edc7d911a0f66729d5e7c74dccda86a522cbb837a112ba054`  
+		Last Modified: Mon, 11 Sep 2017 15:33:14 GMT  
+		Size: 2.4 MB (2365552 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eec75fdf252a165a42278e3e4920bc72c196209760577d516ec182c9e316b705`  
+		Last Modified: Mon, 11 Sep 2017 18:14:10 GMT  
+		Size: 56.8 MB (56750970 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d441634dea826225cef7794295c27285c164ad43fa92b28a12dbbce8e618503d`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
+		Size: 172.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f696eb58106cfe784250f81bc3f26dc79d0d8bf3df1a17a009308d521f1ff720`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
+		Size: 3.4 KB (3404 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:80c7a5eaa44a5a73c2f5f8e4a85cd5b213d4f6ff1364891dc8da636f6e8ab2f0`  
+		Last Modified: Mon, 11 Sep 2017 18:13:58 GMT  
+		Size: 1.1 KB (1064 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:df865ed658b29231a9c19af11d67c3707d6b207b8fbfbbca7745df556fc4f9c0`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
+		Size: 427.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3bf54e51205fb019b73dcb552aee2e7de5e6436c21975042b6e596f6a1b41b38`  
+		Last Modified: Mon, 11 Sep 2017 18:14:51 GMT  
+		Size: 131.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `sentry:8.20-onbuild`
+
+```console
+$ docker pull sentry@sha256:9a68750e3db1b959ea9bfe84ffdeac5a3e0da73f0461bb596001160020750303
+```
+
+-	Platforms:
+	-	linux; amd64
+
+### `sentry:8.20-onbuild` - linux; amd64
+
+-	Docker Version: 17.03.2-ce
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **196.5 MB (196535041 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:41099c20ee07c007c7730a9f8448a0bce8f8bf51eda5b757a28dddbc73d4d0b2`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["run","web"]`
+
+```dockerfile
+# Thu, 07 Sep 2017 23:04:40 GMT
+ADD file:d7333b3e0bc6479d2faed32e06d85f1975e5b23e13e75555aeed0f639770413b in / 
+# Thu, 07 Sep 2017 23:04:41 GMT
+CMD ["bash"]
+# Fri, 08 Sep 2017 06:17:00 GMT
+ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 08 Sep 2017 06:17:00 GMT
+ENV LANG=C.UTF-8
+# Fri, 08 Sep 2017 07:17:50 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends 		ca-certificates 		libgdbm3 		libsqlite3-0 		libssl1.0.0 	&& rm -rf /var/lib/apt/lists/*
+# Fri, 08 Sep 2017 07:17:50 GMT
+ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF
+# Fri, 08 Sep 2017 07:17:51 GMT
+ENV PYTHON_VERSION=2.7.13
+# Fri, 08 Sep 2017 07:20:34 GMT
+RUN set -ex 	&& buildDeps=' 		dpkg-dev 		gcc 		libbz2-dev 		libc6-dev 		libdb-dev 		libgdbm-dev 		libncurses-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tcl-dev 		tk-dev 		wget 		xz-utils 		zlib1g-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz" 	&& wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc" 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$GPG_KEY" 	&& gpg --batch --verify python.tar.xz.asc python.tar.xz 	&& rm -rf "$GNUPGHOME" python.tar.xz.asc 	&& mkdir -p /usr/src/python 	&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz 	&& rm python.tar.xz 		&& cd /usr/src/python 	&& gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)" 	&& ./configure 		--build="$gnuArch" 		--enable-shared 		--enable-unicode=ucs4 	&& make -j "$(nproc)" 	&& make install 	&& ldconfig 		&& apt-get purge -y --auto-remove $buildDeps 		&& find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' + 	&& rm -rf /usr/src/python
+# Fri, 08 Sep 2017 07:20:35 GMT
+ENV PYTHON_PIP_VERSION=9.0.1
+# Fri, 08 Sep 2017 07:20:59 GMT
+RUN set -ex; 		apt-get update; 	apt-get install -y --no-install-recommends wget; 	rm -rf /var/lib/apt/lists/*; 		wget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; 		apt-get purge -y --auto-remove wget; 		python get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip==$PYTHON_PIP_VERSION" 	; 	pip --version; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py
+# Fri, 08 Sep 2017 07:20:59 GMT
+CMD ["python2"]
+# Fri, 08 Sep 2017 10:57:44 GMT
+RUN groupadd -r sentry && useradd -r -m -g sentry sentry
+# Fri, 08 Sep 2017 10:58:14 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends         gcc         git         libffi-dev         libjpeg-dev         libpq-dev         libxml2-dev         libxslt-dev         libyaml-dev     && rm -rf /var/lib/apt/lists/*
+# Fri, 08 Sep 2017 10:58:14 GMT
+ENV PIP_NO_CACHE_DIR=off
+# Fri, 08 Sep 2017 10:58:15 GMT
+ENV PIP_DISABLE_PIP_VERSION_CHECK=on
+# Fri, 08 Sep 2017 10:58:15 GMT
+ENV GOSU_VERSION=1.10
+# Fri, 08 Sep 2017 10:58:36 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)"     && wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true     && apt-get purge -y --auto-remove wget
+# Fri, 08 Sep 2017 10:58:36 GMT
+ENV TINI_VERSION=v0.14.0
+# Fri, 08 Sep 2017 10:58:55 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini"     && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5     && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini     && rm -r "$GNUPGHOME" /usr/local/bin/tini.asc     && chmod +x /usr/local/bin/tini     && tini -h     && apt-get purge -y --auto-remove wget
+# Fri, 08 Sep 2017 10:59:22 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends make && rm -rf /var/lib/apt/lists/*     && pip install librabbitmq==1.6.1     && python -c 'import librabbitmq'     && apt-get purge -y --auto-remove make
+# Mon, 11 Sep 2017 18:11:49 GMT
+ENV SENTRY_VERSION=8.20.0
+# Mon, 11 Sep 2017 18:13:35 GMT
+RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget g++ && rm -rf /var/lib/apt/lists/*     && mkdir -p /usr/src/sentry     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl"     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys D8749766A66DD714236A932C3B2D400CE5BBCA60     && gpg --batch --verify /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl     && gpg --batch --verify /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && pip install         /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl         /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && sentry --help     && sentry plugins list     && rm -r "$GNUPGHOME" /usr/src/sentry     && apt-get purge -y --auto-remove wget g++
+# Mon, 11 Sep 2017 18:13:35 GMT
+ENV SENTRY_CONF=/etc/sentry SENTRY_FILESTORE_DIR=/var/lib/sentry/files
+# Mon, 11 Sep 2017 18:13:36 GMT
+RUN mkdir -p $SENTRY_CONF && mkdir -p $SENTRY_FILESTORE_DIR
+# Mon, 11 Sep 2017 18:13:36 GMT
+COPY file:6b5c0c264ecaf40e9fe1838ff0926e09a661f89950c3c2b6f1612e948324733d in /etc/sentry/ 
+# Mon, 11 Sep 2017 18:13:37 GMT
+COPY file:d1a7cd4cbf7c842d84a135ed530ecf78f6858eaffe7f2d78824cc2906088bdd1 in /etc/sentry/ 
+# Mon, 11 Sep 2017 18:13:37 GMT
+COPY file:f490e4be17b442272f00cb3dac92d70a1d0164325552588b163a33fad4701f18 in /entrypoint.sh 
+# Mon, 11 Sep 2017 18:13:38 GMT
+EXPOSE 9000/tcp
+# Mon, 11 Sep 2017 18:13:38 GMT
+VOLUME [/var/lib/sentry/files]
+# Mon, 11 Sep 2017 18:13:38 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Mon, 11 Sep 2017 18:13:39 GMT
+CMD ["run" "web"]
+# Mon, 11 Sep 2017 18:13:46 GMT
+WORKDIR /usr/src/sentry
+# Mon, 11 Sep 2017 18:13:46 GMT
+ENV PYTHONPATH=/usr/src/sentry
+# Mon, 11 Sep 2017 18:13:46 GMT
+ONBUILD COPY . /usr/src/sentry
+# Mon, 11 Sep 2017 18:13:46 GMT
+ONBUILD RUN if [ -s requirements.txt ]; then pip install -r requirements.txt; fi
+# Mon, 11 Sep 2017 18:13:47 GMT
+ONBUILD RUN if [ -s setup.py ]; then pip install -e .; fi
+# Mon, 11 Sep 2017 18:13:47 GMT
+ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	&& if [ -s config.yml ]; then cp config.yml $SENTRY_CONF/; fi
+```
+
+-	Layers:
+	-	`sha256:aa18ad1a0d334d80981104c599fa8cef9264552a265b1197af11274beba767cf`  
+		Last Modified: Thu, 07 Sep 2017 23:11:06 GMT  
+		Size: 52.6 MB (52595547 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:942d41097fd299b1b0be51a290ec7959f8e2d3e318057f2a572d44c6fde35b1f`  
+		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
+		Size: 3.5 MB (3472941 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:da4c9a08866e171fef10a7186b54cf97d6a80e6484db271a7bfa6c7f376db811`  
+		Last Modified: Fri, 08 Sep 2017 07:36:18 GMT  
+		Size: 15.0 MB (15000825 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b5a45081af06179a363252593e789261bb862466b2fd6f267002788b2a5456bf`  
+		Last Modified: Fri, 08 Sep 2017 07:36:14 GMT  
+		Size: 1.7 MB (1738449 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7beb564d530d90234e9436f85edfd51c62ef948c11b8aa392e8dadaa1890ceae`  
+		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
+		Size: 4.4 KB (4374 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:101e083496818830fbfdeaa9a4ace2911595b8e8cd885b8875bc636e1edbe282`  
+		Last Modified: Mon, 11 Sep 2017 15:33:38 GMT  
+		Size: 63.9 MB (63853304 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1544028a2d2981107e51e563fda16856f49e6a710c5cbb3b3a8df11c92e2f66f`  
+		Last Modified: Mon, 11 Sep 2017 15:33:16 GMT  
+		Size: 620.3 KB (620270 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:bdcb06932161b5362a710b17bd4a796b650cc2baf613d5c4f214d987536e8778`  
+		Last Modified: Mon, 11 Sep 2017 15:33:15 GMT  
+		Size: 127.6 KB (127611 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e01a3e16a4cfd89edc7d911a0f66729d5e7c74dccda86a522cbb837a112ba054`  
+		Last Modified: Mon, 11 Sep 2017 15:33:14 GMT  
+		Size: 2.4 MB (2365552 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eec75fdf252a165a42278e3e4920bc72c196209760577d516ec182c9e316b705`  
+		Last Modified: Mon, 11 Sep 2017 18:14:10 GMT  
+		Size: 56.8 MB (56750970 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d441634dea826225cef7794295c27285c164ad43fa92b28a12dbbce8e618503d`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
+		Size: 172.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f696eb58106cfe784250f81bc3f26dc79d0d8bf3df1a17a009308d521f1ff720`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
+		Size: 3.4 KB (3404 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:80c7a5eaa44a5a73c2f5f8e4a85cd5b213d4f6ff1364891dc8da636f6e8ab2f0`  
+		Last Modified: Mon, 11 Sep 2017 18:13:58 GMT  
+		Size: 1.1 KB (1064 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:df865ed658b29231a9c19af11d67c3707d6b207b8fbfbbca7745df556fc4f9c0`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
+		Size: 427.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3bf54e51205fb019b73dcb552aee2e7de5e6436c21975042b6e596f6a1b41b38`  
+		Last Modified: Mon, 11 Sep 2017 18:14:51 GMT  
+		Size: 131.0 B  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
 ## `sentry:8-onbuild`
 
 ```console
-$ docker pull sentry@sha256:f906375c12eaf7c12974dad87f5edfed9132866a9d5f54834894ebca650de1da
+$ docker pull sentry@sha256:9a68750e3db1b959ea9bfe84ffdeac5a3e0da73f0461bb596001160020750303
 ```
 
 -	Platforms:
@@ -1512,9 +1512,9 @@ $ docker pull sentry@sha256:f906375c12eaf7c12974dad87f5edfed9132866a9d5f54834894
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **193.4 MB (193408036 bytes)**  
+-	Total Size: **196.5 MB (196535041 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d552d6c5caac6a073ca1bb6622feaf4f23d50e658234c4f90100f137a30ee485`
+-	Image ID: `sha256:41099c20ee07c007c7730a9f8448a0bce8f8bf51eda5b757a28dddbc73d4d0b2`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["run","web"]`
 
@@ -1559,39 +1559,39 @@ ENV TINI_VERSION=v0.14.0
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini"     && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5     && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini     && rm -r "$GNUPGHOME" /usr/local/bin/tini.asc     && chmod +x /usr/local/bin/tini     && tini -h     && apt-get purge -y --auto-remove wget
 # Fri, 08 Sep 2017 10:59:22 GMT
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends make && rm -rf /var/lib/apt/lists/*     && pip install librabbitmq==1.6.1     && python -c 'import librabbitmq'     && apt-get purge -y --auto-remove make
-# Fri, 08 Sep 2017 11:01:15 GMT
-ENV SENTRY_VERSION=8.19.0
-# Fri, 08 Sep 2017 11:02:48 GMT
+# Mon, 11 Sep 2017 18:11:49 GMT
+ENV SENTRY_VERSION=8.20.0
+# Mon, 11 Sep 2017 18:13:35 GMT
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget g++ && rm -rf /var/lib/apt/lists/*     && mkdir -p /usr/src/sentry     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl"     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys D8749766A66DD714236A932C3B2D400CE5BBCA60     && gpg --batch --verify /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl     && gpg --batch --verify /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && pip install         /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl         /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && sentry --help     && sentry plugins list     && rm -r "$GNUPGHOME" /usr/src/sentry     && apt-get purge -y --auto-remove wget g++
-# Fri, 08 Sep 2017 11:02:48 GMT
+# Mon, 11 Sep 2017 18:13:35 GMT
 ENV SENTRY_CONF=/etc/sentry SENTRY_FILESTORE_DIR=/var/lib/sentry/files
-# Fri, 08 Sep 2017 11:02:49 GMT
+# Mon, 11 Sep 2017 18:13:36 GMT
 RUN mkdir -p $SENTRY_CONF && mkdir -p $SENTRY_FILESTORE_DIR
-# Fri, 08 Sep 2017 11:02:50 GMT
+# Mon, 11 Sep 2017 18:13:36 GMT
 COPY file:6b5c0c264ecaf40e9fe1838ff0926e09a661f89950c3c2b6f1612e948324733d in /etc/sentry/ 
-# Fri, 08 Sep 2017 11:02:50 GMT
+# Mon, 11 Sep 2017 18:13:37 GMT
 COPY file:d1a7cd4cbf7c842d84a135ed530ecf78f6858eaffe7f2d78824cc2906088bdd1 in /etc/sentry/ 
-# Fri, 08 Sep 2017 11:02:50 GMT
+# Mon, 11 Sep 2017 18:13:37 GMT
 COPY file:f490e4be17b442272f00cb3dac92d70a1d0164325552588b163a33fad4701f18 in /entrypoint.sh 
-# Fri, 08 Sep 2017 11:02:51 GMT
+# Mon, 11 Sep 2017 18:13:38 GMT
 EXPOSE 9000/tcp
-# Fri, 08 Sep 2017 11:02:51 GMT
+# Mon, 11 Sep 2017 18:13:38 GMT
 VOLUME [/var/lib/sentry/files]
-# Fri, 08 Sep 2017 11:02:51 GMT
+# Mon, 11 Sep 2017 18:13:38 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 08 Sep 2017 11:02:52 GMT
+# Mon, 11 Sep 2017 18:13:39 GMT
 CMD ["run" "web"]
-# Fri, 08 Sep 2017 11:02:58 GMT
+# Mon, 11 Sep 2017 18:13:46 GMT
 WORKDIR /usr/src/sentry
-# Fri, 08 Sep 2017 11:02:58 GMT
+# Mon, 11 Sep 2017 18:13:46 GMT
 ENV PYTHONPATH=/usr/src/sentry
-# Fri, 08 Sep 2017 11:02:58 GMT
+# Mon, 11 Sep 2017 18:13:46 GMT
 ONBUILD COPY . /usr/src/sentry
-# Fri, 08 Sep 2017 11:02:59 GMT
+# Mon, 11 Sep 2017 18:13:46 GMT
 ONBUILD RUN if [ -s requirements.txt ]; then pip install -r requirements.txt; fi
-# Fri, 08 Sep 2017 11:02:59 GMT
+# Mon, 11 Sep 2017 18:13:47 GMT
 ONBUILD RUN if [ -s setup.py ]; then pip install -e .; fi
-# Fri, 08 Sep 2017 11:02:59 GMT
+# Mon, 11 Sep 2017 18:13:47 GMT
 ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	&& if [ -s config.yml ]; then cp config.yml $SENTRY_CONF/; fi
 ```
 
@@ -1632,35 +1632,35 @@ ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	
 		Last Modified: Mon, 11 Sep 2017 15:33:14 GMT  
 		Size: 2.4 MB (2365552 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a14ffd46b55ca95c8668ba961537b79d7d950ede8a0bd2c7279f2a7bb3179878`  
-		Last Modified: Mon, 11 Sep 2017 15:36:26 GMT  
-		Size: 53.6 MB (53623968 bytes)  
+	-	`sha256:eec75fdf252a165a42278e3e4920bc72c196209760577d516ec182c9e316b705`  
+		Last Modified: Mon, 11 Sep 2017 18:14:10 GMT  
+		Size: 56.8 MB (56750970 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:803d2d8158904c7d9b6aef1408ff5d31a156386da51931b8fe627c66b6c4bf5f`  
-		Last Modified: Mon, 11 Sep 2017 15:36:00 GMT  
+	-	`sha256:d441634dea826225cef7794295c27285c164ad43fa92b28a12dbbce8e618503d`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0392b48d3e9e3c9b8a5fd218f1dcd0ad044a7494abe115247c5dded7e5343652`  
-		Last Modified: Mon, 11 Sep 2017 15:36:00 GMT  
+	-	`sha256:f696eb58106cfe784250f81bc3f26dc79d0d8bf3df1a17a009308d521f1ff720`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
 		Size: 3.4 KB (3404 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1179c9fdf863d08a2539f08622fa3b5d27c7b2e9d623b562538b7b326418ab9`  
-		Last Modified: Mon, 11 Sep 2017 15:36:00 GMT  
-		Size: 1.1 KB (1063 bytes)  
+	-	`sha256:80c7a5eaa44a5a73c2f5f8e4a85cd5b213d4f6ff1364891dc8da636f6e8ab2f0`  
+		Last Modified: Mon, 11 Sep 2017 18:13:58 GMT  
+		Size: 1.1 KB (1064 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26e5144476ec27b3a63e62f77e99d693b2a6f9acde65e5bfeef45a3290b75e3a`  
-		Last Modified: Mon, 11 Sep 2017 15:36:00 GMT  
-		Size: 425.0 B  
+	-	`sha256:df865ed658b29231a9c19af11d67c3707d6b207b8fbfbbca7745df556fc4f9c0`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
+		Size: 427.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a92b12326b4624a409cf5436091b4cada8502103cc2e0d80b73bb9c95caceb9`  
-		Last Modified: Mon, 11 Sep 2017 15:37:12 GMT  
+	-	`sha256:3bf54e51205fb019b73dcb552aee2e7de5e6436c21975042b6e596f6a1b41b38`  
+		Last Modified: Mon, 11 Sep 2017 18:14:51 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `sentry:onbuild`
 
 ```console
-$ docker pull sentry@sha256:f906375c12eaf7c12974dad87f5edfed9132866a9d5f54834894ebca650de1da
+$ docker pull sentry@sha256:9a68750e3db1b959ea9bfe84ffdeac5a3e0da73f0461bb596001160020750303
 ```
 
 -	Platforms:
@@ -1670,9 +1670,9 @@ $ docker pull sentry@sha256:f906375c12eaf7c12974dad87f5edfed9132866a9d5f54834894
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **193.4 MB (193408036 bytes)**  
+-	Total Size: **196.5 MB (196535041 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d552d6c5caac6a073ca1bb6622feaf4f23d50e658234c4f90100f137a30ee485`
+-	Image ID: `sha256:41099c20ee07c007c7730a9f8448a0bce8f8bf51eda5b757a28dddbc73d4d0b2`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["run","web"]`
 
@@ -1717,39 +1717,39 @@ ENV TINI_VERSION=v0.14.0
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget && rm -rf /var/lib/apt/lists/*     && wget -O /usr/local/bin/tini "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini"     && wget -O /usr/local/bin/tini.asc "https://github.com/krallin/tini/releases/download/$TINI_VERSION/tini.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys 6380DC428747F6C393FEACA59A84159D7001A4E5     && gpg --batch --verify /usr/local/bin/tini.asc /usr/local/bin/tini     && rm -r "$GNUPGHOME" /usr/local/bin/tini.asc     && chmod +x /usr/local/bin/tini     && tini -h     && apt-get purge -y --auto-remove wget
 # Fri, 08 Sep 2017 10:59:22 GMT
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends make && rm -rf /var/lib/apt/lists/*     && pip install librabbitmq==1.6.1     && python -c 'import librabbitmq'     && apt-get purge -y --auto-remove make
-# Fri, 08 Sep 2017 11:01:15 GMT
-ENV SENTRY_VERSION=8.19.0
-# Fri, 08 Sep 2017 11:02:48 GMT
+# Mon, 11 Sep 2017 18:11:49 GMT
+ENV SENTRY_VERSION=8.20.0
+# Mon, 11 Sep 2017 18:13:35 GMT
 RUN set -x     && apt-get update && apt-get install -y --no-install-recommends wget g++ && rm -rf /var/lib/apt/lists/*     && mkdir -p /usr/src/sentry     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl"     && wget -O /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl"     && wget -O /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc "https://github.com/getsentry/sentry/releases/download/${SENTRY_VERSION}/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc"     && export GNUPGHOME="$(mktemp -d)"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys D8749766A66DD714236A932C3B2D400CE5BBCA60     && gpg --batch --verify /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl.asc /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl     && gpg --batch --verify /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl.asc /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && pip install         /usr/src/sentry/sentry-${SENTRY_VERSION}-py27-none-any.whl         /usr/src/sentry/sentry_plugins-${SENTRY_VERSION}-py2.py3-none-any.whl     && sentry --help     && sentry plugins list     && rm -r "$GNUPGHOME" /usr/src/sentry     && apt-get purge -y --auto-remove wget g++
-# Fri, 08 Sep 2017 11:02:48 GMT
+# Mon, 11 Sep 2017 18:13:35 GMT
 ENV SENTRY_CONF=/etc/sentry SENTRY_FILESTORE_DIR=/var/lib/sentry/files
-# Fri, 08 Sep 2017 11:02:49 GMT
+# Mon, 11 Sep 2017 18:13:36 GMT
 RUN mkdir -p $SENTRY_CONF && mkdir -p $SENTRY_FILESTORE_DIR
-# Fri, 08 Sep 2017 11:02:50 GMT
+# Mon, 11 Sep 2017 18:13:36 GMT
 COPY file:6b5c0c264ecaf40e9fe1838ff0926e09a661f89950c3c2b6f1612e948324733d in /etc/sentry/ 
-# Fri, 08 Sep 2017 11:02:50 GMT
+# Mon, 11 Sep 2017 18:13:37 GMT
 COPY file:d1a7cd4cbf7c842d84a135ed530ecf78f6858eaffe7f2d78824cc2906088bdd1 in /etc/sentry/ 
-# Fri, 08 Sep 2017 11:02:50 GMT
+# Mon, 11 Sep 2017 18:13:37 GMT
 COPY file:f490e4be17b442272f00cb3dac92d70a1d0164325552588b163a33fad4701f18 in /entrypoint.sh 
-# Fri, 08 Sep 2017 11:02:51 GMT
+# Mon, 11 Sep 2017 18:13:38 GMT
 EXPOSE 9000/tcp
-# Fri, 08 Sep 2017 11:02:51 GMT
+# Mon, 11 Sep 2017 18:13:38 GMT
 VOLUME [/var/lib/sentry/files]
-# Fri, 08 Sep 2017 11:02:51 GMT
+# Mon, 11 Sep 2017 18:13:38 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 08 Sep 2017 11:02:52 GMT
+# Mon, 11 Sep 2017 18:13:39 GMT
 CMD ["run" "web"]
-# Fri, 08 Sep 2017 11:02:58 GMT
+# Mon, 11 Sep 2017 18:13:46 GMT
 WORKDIR /usr/src/sentry
-# Fri, 08 Sep 2017 11:02:58 GMT
+# Mon, 11 Sep 2017 18:13:46 GMT
 ENV PYTHONPATH=/usr/src/sentry
-# Fri, 08 Sep 2017 11:02:58 GMT
+# Mon, 11 Sep 2017 18:13:46 GMT
 ONBUILD COPY . /usr/src/sentry
-# Fri, 08 Sep 2017 11:02:59 GMT
+# Mon, 11 Sep 2017 18:13:46 GMT
 ONBUILD RUN if [ -s requirements.txt ]; then pip install -r requirements.txt; fi
-# Fri, 08 Sep 2017 11:02:59 GMT
+# Mon, 11 Sep 2017 18:13:47 GMT
 ONBUILD RUN if [ -s setup.py ]; then pip install -e .; fi
-# Fri, 08 Sep 2017 11:02:59 GMT
+# Mon, 11 Sep 2017 18:13:47 GMT
 ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	&& if [ -s config.yml ]; then cp config.yml $SENTRY_CONF/; fi
 ```
 
@@ -1790,27 +1790,27 @@ ONBUILD RUN if [ -s sentry.conf.py ]; then cp sentry.conf.py $SENTRY_CONF/; fi 	
 		Last Modified: Mon, 11 Sep 2017 15:33:14 GMT  
 		Size: 2.4 MB (2365552 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a14ffd46b55ca95c8668ba961537b79d7d950ede8a0bd2c7279f2a7bb3179878`  
-		Last Modified: Mon, 11 Sep 2017 15:36:26 GMT  
-		Size: 53.6 MB (53623968 bytes)  
+	-	`sha256:eec75fdf252a165a42278e3e4920bc72c196209760577d516ec182c9e316b705`  
+		Last Modified: Mon, 11 Sep 2017 18:14:10 GMT  
+		Size: 56.8 MB (56750970 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:803d2d8158904c7d9b6aef1408ff5d31a156386da51931b8fe627c66b6c4bf5f`  
-		Last Modified: Mon, 11 Sep 2017 15:36:00 GMT  
+	-	`sha256:d441634dea826225cef7794295c27285c164ad43fa92b28a12dbbce8e618503d`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0392b48d3e9e3c9b8a5fd218f1dcd0ad044a7494abe115247c5dded7e5343652`  
-		Last Modified: Mon, 11 Sep 2017 15:36:00 GMT  
+	-	`sha256:f696eb58106cfe784250f81bc3f26dc79d0d8bf3df1a17a009308d521f1ff720`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
 		Size: 3.4 KB (3404 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c1179c9fdf863d08a2539f08622fa3b5d27c7b2e9d623b562538b7b326418ab9`  
-		Last Modified: Mon, 11 Sep 2017 15:36:00 GMT  
-		Size: 1.1 KB (1063 bytes)  
+	-	`sha256:80c7a5eaa44a5a73c2f5f8e4a85cd5b213d4f6ff1364891dc8da636f6e8ab2f0`  
+		Last Modified: Mon, 11 Sep 2017 18:13:58 GMT  
+		Size: 1.1 KB (1064 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:26e5144476ec27b3a63e62f77e99d693b2a6f9acde65e5bfeef45a3290b75e3a`  
-		Last Modified: Mon, 11 Sep 2017 15:36:00 GMT  
-		Size: 425.0 B  
+	-	`sha256:df865ed658b29231a9c19af11d67c3707d6b207b8fbfbbca7745df556fc4f9c0`  
+		Last Modified: Mon, 11 Sep 2017 18:13:59 GMT  
+		Size: 427.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6a92b12326b4624a409cf5436091b4cada8502103cc2e0d80b73bb9c95caceb9`  
-		Last Modified: Mon, 11 Sep 2017 15:37:12 GMT  
+	-	`sha256:3bf54e51205fb019b73dcb552aee2e7de5e6436c21975042b6e596f6a1b41b38`  
+		Last Modified: Mon, 11 Sep 2017 18:14:51 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
