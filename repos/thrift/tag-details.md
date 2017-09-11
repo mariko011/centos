@@ -11,7 +11,7 @@
 ## `thrift:0.9`
 
 ```console
-$ docker pull thrift@sha256:8d0e5c584a025c6eda90d5ee6126950470e139fd381121a13ceacabd29b8c0a3
+$ docker pull thrift@sha256:0ea4a5cfc9d01e91fc553dce6160a6e8a5c6622445909eed9a02f99a2ea3bfbb
 ```
 
 -	Platforms:
@@ -21,40 +21,40 @@ $ docker pull thrift@sha256:8d0e5c584a025c6eda90d5ee6126950470e139fd381121a13cea
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.2 MB (50199906 bytes)**  
+-	Total Size: **50.2 MB (50199276 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fcf6576cb7b590c1308259d659faf655045224c923307cc10fa33afa0596abfb`
+-	Image ID: `sha256:163d0c0bd48379d2753e7cc23d87248488fb0ee1737d2b71865e61be1ef901c6`
 -	Default Command: `["thrift"]`
 
 ```dockerfile
-# Mon, 24 Jul 2017 16:53:45 GMT
-ADD file:6c63dbdde9330ed01af8ef6252996d655a70725462f0a4fefe957062226c464e in / 
-# Mon, 24 Jul 2017 16:53:46 GMT
+# Thu, 07 Sep 2017 23:08:56 GMT
+ADD file:240ed8d95c0f51cf9dbb7c83f7a0af7e37ee15c7449b864e8770a65f3e771b86 in / 
+# Thu, 07 Sep 2017 23:08:56 GMT
 CMD ["bash"]
-# Wed, 26 Jul 2017 15:57:10 GMT
+# Fri, 08 Sep 2017 11:08:44 GMT
 MAINTAINER Adam Hawkins <adam@hawkins.io>
-# Wed, 26 Jul 2017 15:57:10 GMT
+# Fri, 08 Sep 2017 11:08:44 GMT
 ENV THRIFT_VERSION=0.9.3
-# Wed, 26 Jul 2017 16:00:00 GMT
+# Fri, 08 Sep 2017 11:11:29 GMT
 RUN buildDeps=" 		automake 		bison 		curl 		flex 		g++ 		libboost-dev 		libboost-filesystem-dev 		libboost-program-options-dev 		libboost-system-dev 		libboost-test-dev 		libevent-dev 		libssl-dev 		libtool 		make 		pkg-config 	"; 	apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& curl -sSL "http://apache.mirrors.spacedump.net/thrift/$THRIFT_VERSION/thrift-$THRIFT_VERSION.tar.gz" -o thrift.tar.gz 	&& mkdir -p /usr/src/thrift 	&& tar zxf thrift.tar.gz -C /usr/src/thrift --strip-components=1 	&& rm thrift.tar.gz 	&& cd /usr/src/thrift 	&& ./configure  --without-python --without-cpp 	&& make 	&& make install 	&& cd / 	&& rm -rf /usr/src/thrift 	&& curl -k -sSL "https://storage.googleapis.com/golang/go1.4.linux-amd64.tar.gz" -o go.tar.gz 	&& tar xzf go.tar.gz 	&& rm go.tar.gz 	&& cp go/bin/gofmt /usr/bin/gofmt 	&& rm -rf go 	&& apt-get purge -y --auto-remove $buildDeps
-# Wed, 26 Jul 2017 16:00:02 GMT
+# Fri, 08 Sep 2017 11:11:29 GMT
 CMD ["thrift"]
 ```
 
 -	Layers:
-	-	`sha256:c699c241757a98573c75a48425026d0b9644c4e1e1435592d2a40b40bd802ee9`  
-		Last Modified: Mon, 24 Jul 2017 17:01:12 GMT  
-		Size: 38.1 MB (38103637 bytes)  
+	-	`sha256:48b042a4691b27483afd6b309d6dd2fc12f2c1d388409709b418094a3a4cdf54`  
+		Last Modified: Thu, 07 Sep 2017 23:23:34 GMT  
+		Size: 38.1 MB (38103127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:353a9a0390209d0f30581f9e09ece0889eeac50d58b18c238176c863ed40c962`  
-		Last Modified: Wed, 26 Jul 2017 16:03:05 GMT  
-		Size: 12.1 MB (12096269 bytes)  
+	-	`sha256:6b233ce4d5ac3debc0428e4429f145aa14643483971d34f6f2b0f675cbb77d69`  
+		Last Modified: Mon, 11 Sep 2017 15:53:01 GMT  
+		Size: 12.1 MB (12096149 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `thrift:0.9.3`
 
 ```console
-$ docker pull thrift@sha256:8d0e5c584a025c6eda90d5ee6126950470e139fd381121a13ceacabd29b8c0a3
+$ docker pull thrift@sha256:0ea4a5cfc9d01e91fc553dce6160a6e8a5c6622445909eed9a02f99a2ea3bfbb
 ```
 
 -	Platforms:
@@ -64,40 +64,40 @@ $ docker pull thrift@sha256:8d0e5c584a025c6eda90d5ee6126950470e139fd381121a13cea
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.2 MB (50199906 bytes)**  
+-	Total Size: **50.2 MB (50199276 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fcf6576cb7b590c1308259d659faf655045224c923307cc10fa33afa0596abfb`
+-	Image ID: `sha256:163d0c0bd48379d2753e7cc23d87248488fb0ee1737d2b71865e61be1ef901c6`
 -	Default Command: `["thrift"]`
 
 ```dockerfile
-# Mon, 24 Jul 2017 16:53:45 GMT
-ADD file:6c63dbdde9330ed01af8ef6252996d655a70725462f0a4fefe957062226c464e in / 
-# Mon, 24 Jul 2017 16:53:46 GMT
+# Thu, 07 Sep 2017 23:08:56 GMT
+ADD file:240ed8d95c0f51cf9dbb7c83f7a0af7e37ee15c7449b864e8770a65f3e771b86 in / 
+# Thu, 07 Sep 2017 23:08:56 GMT
 CMD ["bash"]
-# Wed, 26 Jul 2017 15:57:10 GMT
+# Fri, 08 Sep 2017 11:08:44 GMT
 MAINTAINER Adam Hawkins <adam@hawkins.io>
-# Wed, 26 Jul 2017 15:57:10 GMT
+# Fri, 08 Sep 2017 11:08:44 GMT
 ENV THRIFT_VERSION=0.9.3
-# Wed, 26 Jul 2017 16:00:00 GMT
+# Fri, 08 Sep 2017 11:11:29 GMT
 RUN buildDeps=" 		automake 		bison 		curl 		flex 		g++ 		libboost-dev 		libboost-filesystem-dev 		libboost-program-options-dev 		libboost-system-dev 		libboost-test-dev 		libevent-dev 		libssl-dev 		libtool 		make 		pkg-config 	"; 	apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& curl -sSL "http://apache.mirrors.spacedump.net/thrift/$THRIFT_VERSION/thrift-$THRIFT_VERSION.tar.gz" -o thrift.tar.gz 	&& mkdir -p /usr/src/thrift 	&& tar zxf thrift.tar.gz -C /usr/src/thrift --strip-components=1 	&& rm thrift.tar.gz 	&& cd /usr/src/thrift 	&& ./configure  --without-python --without-cpp 	&& make 	&& make install 	&& cd / 	&& rm -rf /usr/src/thrift 	&& curl -k -sSL "https://storage.googleapis.com/golang/go1.4.linux-amd64.tar.gz" -o go.tar.gz 	&& tar xzf go.tar.gz 	&& rm go.tar.gz 	&& cp go/bin/gofmt /usr/bin/gofmt 	&& rm -rf go 	&& apt-get purge -y --auto-remove $buildDeps
-# Wed, 26 Jul 2017 16:00:02 GMT
+# Fri, 08 Sep 2017 11:11:29 GMT
 CMD ["thrift"]
 ```
 
 -	Layers:
-	-	`sha256:c699c241757a98573c75a48425026d0b9644c4e1e1435592d2a40b40bd802ee9`  
-		Last Modified: Mon, 24 Jul 2017 17:01:12 GMT  
-		Size: 38.1 MB (38103637 bytes)  
+	-	`sha256:48b042a4691b27483afd6b309d6dd2fc12f2c1d388409709b418094a3a4cdf54`  
+		Last Modified: Thu, 07 Sep 2017 23:23:34 GMT  
+		Size: 38.1 MB (38103127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:353a9a0390209d0f30581f9e09ece0889eeac50d58b18c238176c863ed40c962`  
-		Last Modified: Wed, 26 Jul 2017 16:03:05 GMT  
-		Size: 12.1 MB (12096269 bytes)  
+	-	`sha256:6b233ce4d5ac3debc0428e4429f145aa14643483971d34f6f2b0f675cbb77d69`  
+		Last Modified: Mon, 11 Sep 2017 15:53:01 GMT  
+		Size: 12.1 MB (12096149 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `thrift:0.10`
 
 ```console
-$ docker pull thrift@sha256:50c4689455f2486a95a80a9b51f2be51c4a86a4cc71f502e4793a411da024e2f
+$ docker pull thrift@sha256:9d1e2ac42d778b58d3d70e34ee1f98da588694b91c4468f9fae4d109c1206cdf
 ```
 
 -	Platforms:
@@ -107,40 +107,40 @@ $ docker pull thrift@sha256:50c4689455f2486a95a80a9b51f2be51c4a86a4cc71f502e4793
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.3 MB (51257151 bytes)**  
+-	Total Size: **51.3 MB (51256682 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1895b6342aeb2a90284294c78bb753d7bb2cfbc63561ef6a13366eeb798db43e`
+-	Image ID: `sha256:3f49601b7f4d7a19b9c0d8d8d542927ef705e540dc0a2e78c57ebd94eade2645`
 -	Default Command: `["thrift"]`
 
 ```dockerfile
-# Mon, 24 Jul 2017 16:53:45 GMT
-ADD file:6c63dbdde9330ed01af8ef6252996d655a70725462f0a4fefe957062226c464e in / 
-# Mon, 24 Jul 2017 16:53:46 GMT
+# Thu, 07 Sep 2017 23:08:56 GMT
+ADD file:240ed8d95c0f51cf9dbb7c83f7a0af7e37ee15c7449b864e8770a65f3e771b86 in / 
+# Thu, 07 Sep 2017 23:08:56 GMT
 CMD ["bash"]
-# Wed, 26 Jul 2017 16:00:07 GMT
+# Fri, 08 Sep 2017 11:11:35 GMT
 MAINTAINER Adam Hawkins <hi@ahawkins.me>
-# Wed, 26 Jul 2017 16:00:07 GMT
+# Fri, 08 Sep 2017 11:11:35 GMT
 ENV THRIFT_VERSION=0.10.0
-# Wed, 26 Jul 2017 16:02:54 GMT
+# Fri, 08 Sep 2017 11:14:12 GMT
 RUN buildDeps=" 		automake 		bison 		curl 		flex 		g++ 		libboost-dev 		libboost-filesystem-dev 		libboost-program-options-dev 		libboost-system-dev 		libboost-test-dev 		libevent-dev 		libssl-dev 		libtool 		make 		pkg-config 	"; 	apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& curl -sSL "http://apache.mirrors.spacedump.net/thrift/$THRIFT_VERSION/thrift-$THRIFT_VERSION.tar.gz" -o thrift.tar.gz 	&& mkdir -p /usr/src/thrift 	&& tar zxf thrift.tar.gz -C /usr/src/thrift --strip-components=1 	&& rm thrift.tar.gz 	&& cd /usr/src/thrift 	&& ./configure  --without-python --without-cpp 	&& make 	&& make install 	&& cd / 	&& rm -rf /usr/src/thrift 	&& curl -k -sSL "https://storage.googleapis.com/golang/go1.4.linux-amd64.tar.gz" -o go.tar.gz 	&& tar xzf go.tar.gz 	&& rm go.tar.gz 	&& cp go/bin/gofmt /usr/bin/gofmt 	&& rm -rf go 	&& apt-get purge -y --auto-remove $buildDeps
-# Wed, 26 Jul 2017 16:02:56 GMT
+# Fri, 08 Sep 2017 11:14:12 GMT
 CMD ["thrift"]
 ```
 
 -	Layers:
-	-	`sha256:c699c241757a98573c75a48425026d0b9644c4e1e1435592d2a40b40bd802ee9`  
-		Last Modified: Mon, 24 Jul 2017 17:01:12 GMT  
-		Size: 38.1 MB (38103637 bytes)  
+	-	`sha256:48b042a4691b27483afd6b309d6dd2fc12f2c1d388409709b418094a3a4cdf54`  
+		Last Modified: Thu, 07 Sep 2017 23:23:34 GMT  
+		Size: 38.1 MB (38103127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:778b65ca69f3a90779910bb8de3609df0386059cbd4690f074a3ad7a2ef3b626`  
-		Last Modified: Wed, 26 Jul 2017 16:03:23 GMT  
-		Size: 13.2 MB (13153514 bytes)  
+	-	`sha256:7348be8eb438e1c41a5b4874bf09f2ef4004bfa915f264556116df2726552410`  
+		Last Modified: Mon, 11 Sep 2017 15:53:26 GMT  
+		Size: 13.2 MB (13153555 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `thrift:0.10.0`
 
 ```console
-$ docker pull thrift@sha256:50c4689455f2486a95a80a9b51f2be51c4a86a4cc71f502e4793a411da024e2f
+$ docker pull thrift@sha256:9d1e2ac42d778b58d3d70e34ee1f98da588694b91c4468f9fae4d109c1206cdf
 ```
 
 -	Platforms:
@@ -150,40 +150,40 @@ $ docker pull thrift@sha256:50c4689455f2486a95a80a9b51f2be51c4a86a4cc71f502e4793
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.3 MB (51257151 bytes)**  
+-	Total Size: **51.3 MB (51256682 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1895b6342aeb2a90284294c78bb753d7bb2cfbc63561ef6a13366eeb798db43e`
+-	Image ID: `sha256:3f49601b7f4d7a19b9c0d8d8d542927ef705e540dc0a2e78c57ebd94eade2645`
 -	Default Command: `["thrift"]`
 
 ```dockerfile
-# Mon, 24 Jul 2017 16:53:45 GMT
-ADD file:6c63dbdde9330ed01af8ef6252996d655a70725462f0a4fefe957062226c464e in / 
-# Mon, 24 Jul 2017 16:53:46 GMT
+# Thu, 07 Sep 2017 23:08:56 GMT
+ADD file:240ed8d95c0f51cf9dbb7c83f7a0af7e37ee15c7449b864e8770a65f3e771b86 in / 
+# Thu, 07 Sep 2017 23:08:56 GMT
 CMD ["bash"]
-# Wed, 26 Jul 2017 16:00:07 GMT
+# Fri, 08 Sep 2017 11:11:35 GMT
 MAINTAINER Adam Hawkins <hi@ahawkins.me>
-# Wed, 26 Jul 2017 16:00:07 GMT
+# Fri, 08 Sep 2017 11:11:35 GMT
 ENV THRIFT_VERSION=0.10.0
-# Wed, 26 Jul 2017 16:02:54 GMT
+# Fri, 08 Sep 2017 11:14:12 GMT
 RUN buildDeps=" 		automake 		bison 		curl 		flex 		g++ 		libboost-dev 		libboost-filesystem-dev 		libboost-program-options-dev 		libboost-system-dev 		libboost-test-dev 		libevent-dev 		libssl-dev 		libtool 		make 		pkg-config 	"; 	apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& curl -sSL "http://apache.mirrors.spacedump.net/thrift/$THRIFT_VERSION/thrift-$THRIFT_VERSION.tar.gz" -o thrift.tar.gz 	&& mkdir -p /usr/src/thrift 	&& tar zxf thrift.tar.gz -C /usr/src/thrift --strip-components=1 	&& rm thrift.tar.gz 	&& cd /usr/src/thrift 	&& ./configure  --without-python --without-cpp 	&& make 	&& make install 	&& cd / 	&& rm -rf /usr/src/thrift 	&& curl -k -sSL "https://storage.googleapis.com/golang/go1.4.linux-amd64.tar.gz" -o go.tar.gz 	&& tar xzf go.tar.gz 	&& rm go.tar.gz 	&& cp go/bin/gofmt /usr/bin/gofmt 	&& rm -rf go 	&& apt-get purge -y --auto-remove $buildDeps
-# Wed, 26 Jul 2017 16:02:56 GMT
+# Fri, 08 Sep 2017 11:14:12 GMT
 CMD ["thrift"]
 ```
 
 -	Layers:
-	-	`sha256:c699c241757a98573c75a48425026d0b9644c4e1e1435592d2a40b40bd802ee9`  
-		Last Modified: Mon, 24 Jul 2017 17:01:12 GMT  
-		Size: 38.1 MB (38103637 bytes)  
+	-	`sha256:48b042a4691b27483afd6b309d6dd2fc12f2c1d388409709b418094a3a4cdf54`  
+		Last Modified: Thu, 07 Sep 2017 23:23:34 GMT  
+		Size: 38.1 MB (38103127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:778b65ca69f3a90779910bb8de3609df0386059cbd4690f074a3ad7a2ef3b626`  
-		Last Modified: Wed, 26 Jul 2017 16:03:23 GMT  
-		Size: 13.2 MB (13153514 bytes)  
+	-	`sha256:7348be8eb438e1c41a5b4874bf09f2ef4004bfa915f264556116df2726552410`  
+		Last Modified: Mon, 11 Sep 2017 15:53:26 GMT  
+		Size: 13.2 MB (13153555 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `thrift:latest`
 
 ```console
-$ docker pull thrift@sha256:50c4689455f2486a95a80a9b51f2be51c4a86a4cc71f502e4793a411da024e2f
+$ docker pull thrift@sha256:9d1e2ac42d778b58d3d70e34ee1f98da588694b91c4468f9fae4d109c1206cdf
 ```
 
 -	Platforms:
@@ -193,32 +193,32 @@ $ docker pull thrift@sha256:50c4689455f2486a95a80a9b51f2be51c4a86a4cc71f502e4793
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.3 MB (51257151 bytes)**  
+-	Total Size: **51.3 MB (51256682 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1895b6342aeb2a90284294c78bb753d7bb2cfbc63561ef6a13366eeb798db43e`
+-	Image ID: `sha256:3f49601b7f4d7a19b9c0d8d8d542927ef705e540dc0a2e78c57ebd94eade2645`
 -	Default Command: `["thrift"]`
 
 ```dockerfile
-# Mon, 24 Jul 2017 16:53:45 GMT
-ADD file:6c63dbdde9330ed01af8ef6252996d655a70725462f0a4fefe957062226c464e in / 
-# Mon, 24 Jul 2017 16:53:46 GMT
+# Thu, 07 Sep 2017 23:08:56 GMT
+ADD file:240ed8d95c0f51cf9dbb7c83f7a0af7e37ee15c7449b864e8770a65f3e771b86 in / 
+# Thu, 07 Sep 2017 23:08:56 GMT
 CMD ["bash"]
-# Wed, 26 Jul 2017 16:00:07 GMT
+# Fri, 08 Sep 2017 11:11:35 GMT
 MAINTAINER Adam Hawkins <hi@ahawkins.me>
-# Wed, 26 Jul 2017 16:00:07 GMT
+# Fri, 08 Sep 2017 11:11:35 GMT
 ENV THRIFT_VERSION=0.10.0
-# Wed, 26 Jul 2017 16:02:54 GMT
+# Fri, 08 Sep 2017 11:14:12 GMT
 RUN buildDeps=" 		automake 		bison 		curl 		flex 		g++ 		libboost-dev 		libboost-filesystem-dev 		libboost-program-options-dev 		libboost-system-dev 		libboost-test-dev 		libevent-dev 		libssl-dev 		libtool 		make 		pkg-config 	"; 	apt-get update && apt-get install -y --no-install-recommends $buildDeps && rm -rf /var/lib/apt/lists/* 	&& curl -sSL "http://apache.mirrors.spacedump.net/thrift/$THRIFT_VERSION/thrift-$THRIFT_VERSION.tar.gz" -o thrift.tar.gz 	&& mkdir -p /usr/src/thrift 	&& tar zxf thrift.tar.gz -C /usr/src/thrift --strip-components=1 	&& rm thrift.tar.gz 	&& cd /usr/src/thrift 	&& ./configure  --without-python --without-cpp 	&& make 	&& make install 	&& cd / 	&& rm -rf /usr/src/thrift 	&& curl -k -sSL "https://storage.googleapis.com/golang/go1.4.linux-amd64.tar.gz" -o go.tar.gz 	&& tar xzf go.tar.gz 	&& rm go.tar.gz 	&& cp go/bin/gofmt /usr/bin/gofmt 	&& rm -rf go 	&& apt-get purge -y --auto-remove $buildDeps
-# Wed, 26 Jul 2017 16:02:56 GMT
+# Fri, 08 Sep 2017 11:14:12 GMT
 CMD ["thrift"]
 ```
 
 -	Layers:
-	-	`sha256:c699c241757a98573c75a48425026d0b9644c4e1e1435592d2a40b40bd802ee9`  
-		Last Modified: Mon, 24 Jul 2017 17:01:12 GMT  
-		Size: 38.1 MB (38103637 bytes)  
+	-	`sha256:48b042a4691b27483afd6b309d6dd2fc12f2c1d388409709b418094a3a4cdf54`  
+		Last Modified: Thu, 07 Sep 2017 23:23:34 GMT  
+		Size: 38.1 MB (38103127 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:778b65ca69f3a90779910bb8de3609df0386059cbd4690f074a3ad7a2ef3b626`  
-		Last Modified: Wed, 26 Jul 2017 16:03:23 GMT  
-		Size: 13.2 MB (13153514 bytes)  
+	-	`sha256:7348be8eb438e1c41a5b4874bf09f2ef4004bfa915f264556116df2726552410`  
+		Last Modified: Mon, 11 Sep 2017 15:53:26 GMT  
+		Size: 13.2 MB (13153555 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

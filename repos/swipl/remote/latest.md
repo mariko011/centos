@@ -1,7 +1,7 @@
 ## `swipl:latest`
 
 ```console
-$ docker pull swipl@sha256:adf2c3f113da7fbc87825751ac27ab8c3aefc74495f8197a73f398ec86a797cf
+$ docker pull swipl@sha256:b3d828b18bfbc083f9312db6f261a0649aa4146e8f6e4badb9014b602541b0b0
 ```
 
 -	Platforms:
@@ -11,36 +11,36 @@ $ docker pull swipl@sha256:adf2c3f113da7fbc87825751ac27ab8c3aefc74495f8197a73f39
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.8 MB (50778598 bytes)**  
+-	Total Size: **50.8 MB (50772601 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c5c91e49b502ddf96b62c7d7f1043a9d1bae0500efb01cf66dd81fe0c049525`
+-	Image ID: `sha256:ea7123fff84d33944d0d70b234c3f2c986765505de8f51dc9627ca461bf280e9`
 -	Default Command: `["swipl"]`
 
 ```dockerfile
-# Mon, 24 Jul 2017 16:53:05 GMT
-ADD file:fa8dd9a679f473a9082dac89603a1ed7b6ad4cd20e8e996f0ac7b412d379761e in / 
-# Mon, 24 Jul 2017 16:53:06 GMT
+# Thu, 07 Sep 2017 23:07:45 GMT
+ADD file:2bc9df54d28d9ec75722f6748834a1aea0baf089047e86a541064c282246c300 in / 
+# Thu, 07 Sep 2017 23:07:45 GMT
 CMD ["bash"]
-# Thu, 10 Aug 2017 21:24:17 GMT
+# Fri, 08 Sep 2017 11:06:47 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Michael Hendricks <michael@ndrix.org>
-# Thu, 10 Aug 2017 21:24:34 GMT
+# Fri, 08 Sep 2017 11:07:00 GMT
 RUN apt-get update &&     apt-get install -y --no-install-recommends     libarchive13     libgmp10     libossp-uuid16     libssl1.1     libdb5.3     libpcre3     libedit2     libgeos-c1v5     libspatialindex4v5     unixodbc     odbc-postgresql     tdsodbc     libmariadbclient18 &&     rm -rf /var/lib/apt/lists/*
-# Wed, 06 Sep 2017 17:09:26 GMT
+# Fri, 08 Sep 2017 11:08:37 GMT
 RUN SWIPL_VER=7.5.14 &&     SWIPL_CHECKSUM=2e83e96a0eace037da3f75fc44e9c8f4e3b2cf8fd3c27f8f05ff489276aec572 &&     BUILD_DEPS='make gcc wget libarchive-dev libgmp-dev libossp-uuid-dev libpcre3-dev libreadline-dev libedit-dev libssl-dev zlib1g-dev libdb-dev libgeos-dev libspatialindex-dev unixodbc-dev' &&     apt-get update && apt-get install -y --no-install-recommends $BUILD_DEPS &&     mkdir /tmp/src &&     cd /tmp/src &&     wget http://www.swi-prolog.org/download/devel/src/swipl-$SWIPL_VER.tar.gz &&     echo "$SWIPL_CHECKSUM  swipl-$SWIPL_VER.tar.gz" >> swipl-$SWIPL_VER.tar.gz-CHECKSUM &&     sha256sum -c swipl-$SWIPL_VER.tar.gz-CHECKSUM &&     tar -xzf swipl-$SWIPL_VER.tar.gz &&     cd swipl-$SWIPL_VER &&     cp build.templ build &&     sed -i '/PREFIX=$HOME/c\PREFIX=/swipl' build &&     sed -i '/# export DISABLE_PKGS/c\export DISABLE_PKGS="jpl xpce"' build &&     sed -i '/# export EXTRA_PKGS/c\export EXTRA_PKGS="db space"' build &&     chmod u+x build && ./build &&     apt-get purge -y --auto-remove $BUILD_DEPS &&     cd /usr/bin && rm -rf /tmp/src && ln -s /swipl/bin/swipl swipl && rm -rf /var/lib/apt/lists/*
-# Wed, 06 Sep 2017 17:09:27 GMT
+# Fri, 08 Sep 2017 11:08:37 GMT
 CMD ["swipl"]
 ```
 
 -	Layers:
-	-	`sha256:94ed0c431eb58b1c824715ac158d102bc78b5eb9d690579da5d8bc96b190eb67`  
-		Last Modified: Mon, 24 Jul 2017 17:00:05 GMT  
-		Size: 22.5 MB (22491744 bytes)  
+	-	`sha256:afeb2bfd31c0760573e7262de6ae67a84da0e0a1c3e8157bbddd41a501b18a5c`  
+		Last Modified: Thu, 07 Sep 2017 23:21:35 GMT  
+		Size: 22.5 MB (22488057 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b848d565addd78c396b9f35fde2c9f74ac99a7432544faee78501800a19c8b2c`  
-		Last Modified: Thu, 10 Aug 2017 21:26:30 GMT  
-		Size: 22.0 MB (22017037 bytes)  
+	-	`sha256:051c74447fb80c3721849a66164cd0adbb3f32824998f722f87931a20fb7d6d7`  
+		Last Modified: Mon, 11 Sep 2017 15:52:12 GMT  
+		Size: 22.0 MB (22014743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:229a610dac642b830e566488570648f97ef49d062dea16f2f6084d56c0a3e531`  
-		Last Modified: Wed, 06 Sep 2017 17:09:36 GMT  
-		Size: 6.3 MB (6269817 bytes)  
+	-	`sha256:4b948a2f83e5419b42d2bf2bc322842dcf9a430309b5316d2b8fc4acb446ab92`  
+		Last Modified: Mon, 11 Sep 2017 15:52:09 GMT  
+		Size: 6.3 MB (6269801 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
