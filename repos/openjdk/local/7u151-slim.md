@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:83a314b0508f012983616dae8e18f6b224edaa935ffef4cfb2d3311db688e899`
-- Created: `2017-08-25T22:24:39.319252932Z`
-- Virtual Size: ~ 332.53 Mb  
+- Image ID: `sha256:3afe05459ce217f92f5a49f114d2138d35b088424e9b3d41a276d47337c7f967`
+- Created: `2017-09-08T08:53:12.838256131Z`
+- Virtual Size: ~ 332.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -604,7 +604,7 @@ Binary Packages:
 - `debconf=1.5.56+deb8u1`
 - `debconf-i18n=1.5.56+deb8u1`
 
-Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
+Licenses: (parsed from: `/usr/share/doc/debconf/copyright`, `/usr/share/doc/debconf-i18n/copyright`)
 
 - `BSD-2-clause`
 
@@ -962,7 +962,7 @@ Binary Packages:
 - `libgcc1:amd64=1:4.9.2-10`
 - `libstdc++6:amd64=4.9.2-10`
 
-Licenses: (parsed from: `/usr/share/doc/gcc-4.9-base/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gcc-4.9-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
 - `Artistic`
 - `GFDL-1.2`
@@ -1137,12 +1137,12 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gmp/2:6.0.0+dfsg-6/
 - https://sources.debian.net/src/gmp/2:6.0.0+dfsg-6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gnupg=1.4.18-7+deb8u3`
+### `dpkg` source package: `gnupg=1.4.18-7+deb8u4`
 
 Binary Packages:
 
-- `gnupg=1.4.18-7+deb8u3`
-- `gpgv=1.4.18-7+deb8u3`
+- `gnupg=1.4.18-7+deb8u4`
+- `gpgv=1.4.18-7+deb8u4`
 
 Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/copyright`)
 
@@ -1153,16 +1153,16 @@ Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/c
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg=1.4.18-7+deb8u3
-'http://deb.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18-7+deb8u3.dsc' gnupg_1.4.18-7+deb8u3.dsc 2432 SHA256:936c6e278b978f3edd24264940fca2f16d3c22c58437400578cdc7a9e6cb4148
-'http://deb.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18.orig.tar.gz' gnupg_1.4.18.orig.tar.gz 5047888 SHA256:10a8936b76ccadb98521535b5f41cc5b41b3c159a6c2915f062bd4dc8ac12d12
-'http://deb.debian.org/debian/pool/main/g/gnupg/gnupg_1.4.18-7+deb8u3.debian.tar.xz' gnupg_1.4.18-7+deb8u3.debian.tar.xz 301204 SHA256:2117df33f763efb2afbd9c154b6bfbf6a91c0ef1c1bee73357c03fd15f18605f
+$ apt-get source -qq --print-uris gnupg=1.4.18-7+deb8u4
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.18-7+deb8u4.dsc' gnupg_1.4.18-7+deb8u4.dsc 2436 SHA256:41ec08af41cbeb7fba84969530ba9d54a2fde55165b7d5c576cb077272620bdb
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.18.orig.tar.gz' gnupg_1.4.18.orig.tar.gz 5047888 SHA256:10a8936b76ccadb98521535b5f41cc5b41b3c159a6c2915f062bd4dc8ac12d12
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.18-7+deb8u4.debian.tar.xz' gnupg_1.4.18-7+deb8u4.debian.tar.xz 302448 SHA256:09e6f60462c8f13aa3e0c2796996697cce1b3023a6034280196041a52bf5f0f2
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u3/
-- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u3/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u4/
+- https://sources.debian.net/src/gnupg/1.4.18-7+deb8u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls28=3.3.8-6+deb8u7`
 
@@ -4150,7 +4150,7 @@ Binary Packages:
 - `perl-base=5.20.2-3+deb8u8`
 - `perl-modules=5.20.2-3+deb8u8`
 
-Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-modules/copyright`)
+Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules/copyright`)
 
 - `Artistic`
 - `Artistic,`
@@ -4551,7 +4551,7 @@ Binary Packages:
 - `systemd-sysv=215-17+deb8u7`
 - `udev=215-17+deb8u7`
 
-Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-sysv/copyright`, `/usr/share/doc/udev/copyright`)
 
 - `Expat`
 - `GPL-2`

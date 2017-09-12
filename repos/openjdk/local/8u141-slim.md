@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:13b96f9aa881cfda10255b5138795623831efdc84435c145637c038b0ad175ef`
-- Created: `2017-07-26T20:33:44.287600379Z`
-- Virtual Size: ~ 245.81 Mb  
+- Image ID: `sha256:32241009a73f22b8d9be0688620ac6c927ffc9262b8a336e122439b12ecffa72`
+- Created: `2017-09-08T08:57:02.34939409Z`
+- Virtual Size: ~ 245.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -789,7 +789,7 @@ Binary Packages:
 - `libgcc1:amd64=1:6.3.0-18`
 - `libstdc++6:amd64=6.3.0-18`
 
-Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
 - `Artistic`
 - `GFDL-1.2`
@@ -1224,11 +1224,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libffi/3.2.1-6/
 - https://sources.debian.net/src/libffi/3.2.1-6/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libgcrypt20=1.7.6-2+deb9u1`
+### `dpkg` source package: `libgcrypt20=1.7.6-2+deb9u2`
 
 Binary Packages:
 
-- `libgcrypt20:amd64=1.7.6-2+deb9u1`
+- `libgcrypt20:amd64=1.7.6-2+deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
@@ -1238,17 +1238,16 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libgcrypt20=1.7.6-2+deb9u1
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u1.dsc' libgcrypt20_1.7.6-2+deb9u1.dsc 2942 SHA256:b83c76db58ec1e27257df872e342d2045a476819549252e0ffeb03ed2cbe570c
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2' libgcrypt20_1.7.6.orig.tar.bz2 2897695 SHA256:626aafee84af9d2ce253d2c143dc1c0902dda045780cc241f39970fc60be05bc
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2.asc' libgcrypt20_1.7.6.orig.tar.bz2.asc 310 SHA256:91ad5a0efafb0edc63c083f733ce476b2a0da663aea5118126aa63825d314e00
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u1.debian.tar.xz' libgcrypt20_1.7.6-2+deb9u1.debian.tar.xz 30308 SHA256:df274675ca3dce4dcbf9ec58e75fdf279a492f4fc91aa2f2d52d368ee9c0ed82
+$ apt-get source -qq --print-uris libgcrypt20=1.7.6-2+deb9u2
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u2.dsc' libgcrypt20_1.7.6-2+deb9u2.dsc 2838 SHA256:ece58728d3b18510e0f0a699b5207c393f67e96e0e9cb3191eeb831f2b7d61c1
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2' libgcrypt20_1.7.6.orig.tar.bz2 2897695 SHA256:626aafee84af9d2ce253d2c143dc1c0902dda045780cc241f39970fc60be05bc
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u2.debian.tar.xz' libgcrypt20_1.7.6-2+deb9u2.debian.tar.xz 32044 SHA256:190182723dd39b256cb03e0b74ad9c2047943fe53584c7794b2cec080d5e33e6
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u1/
-- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u2/
+- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.26-2`
 
@@ -2012,9 +2011,35 @@ Binary Packages:
 
 - `perl-base=5.24.1-3+deb9u1`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
+- `Artistic`
+- `Artistic,`
+- `Artistic-2`
+- `BSD-3-clause`
+- `BSD-3-clause-GENERIC`
+- `BSD-3-clause-with-weird-numbering`
+- `BSD-4-clause-POWERDOG`
+- `BZIP`
+- `CC0-1.0`
+- `DONT-CHANGE-THE-GPL`
+- `Expat`
+- `GPL-1`
+- `GPL-1+`
+- `GPL-2`
+- `GPL-2+`
+- `GPL-3+-WITH-BISON-EXCEPTION`
+- `HSIEH-BSD`
+- `HSIEH-DERIVATIVE`
+- `LGPL-2.1`
+- `REGCOMP`
+- `REGCOMP,`
+- `RRA-KEEP-THIS-NOTICE`
+- `S2P`
+- `SDBM-PUBLIC-DOMAIN`
+- `TEXT-TABS`
+- `Unicode`
+- `ZLIB`
 
 Source:
 

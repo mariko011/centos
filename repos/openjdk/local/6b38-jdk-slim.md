@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:536a2ba30169a9e304182bea1919413a842b7438c7cecd142ccaef40e058842c`
-- Created: `2017-07-24T18:01:31.421190727Z`
+- Image ID: `sha256:84a68c7b6e65a5ced34e7e1e2998a82c7897e4b82c2a76a788e6e298afdf4735`
+- Created: `2017-09-08T08:43:33.105817085Z`
 - Virtual Size: ~ 246.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -488,7 +488,7 @@ Binary Packages:
 - `debconf=1.5.49`
 - `debconf-i18n=1.5.49`
 
-Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
+Licenses: (parsed from: `/usr/share/doc/debconf/copyright`, `/usr/share/doc/debconf-i18n/copyright`)
 
 - `BSD-2-clause`
 
@@ -792,7 +792,7 @@ Binary Packages:
 - `libgcc1:amd64=1:4.7.2-5`
 - `libstdc++6:amd64=4.7.2-5`
 
-Licenses: (parsed from: `/usr/share/doc/gcc-4.7-base/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gcc-4.7-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
 - `Artistic`
 - `GFDL-1.2`
@@ -913,20 +913,31 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/glib2.0/2.33.12+really2.32.4-5/
 - https://sources.debian.net/src/glib2.0/2.33.12+really2.32.4-5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gnupg=1.4.12-7+deb7u8`
+### `dpkg` source package: `gnupg=1.4.12-7+deb7u9`
 
 Binary Packages:
 
-- `gnupg=1.4.12-7+deb7u8`
-- `gpgv=1.4.12-7+deb7u8`
+- `gnupg=1.4.12-7+deb7u9`
+- `gpgv=1.4.12-7+deb7u9`
 
 Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/copyright`)
 
 - `GPL-3`
 - `GPL-3+ with OpenSSL exception`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnupg=1.4.12-7+deb7u9
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12-7+deb7u9.dsc' gnupg_1.4.12-7+deb7u9.dsc 2338 SHA256:8613c9a227b3181870c4573a321787638153cb95cea2e031b908df4d5d0149f8
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12.orig.tar.gz' gnupg_1.4.12.orig.tar.gz 4939171 SHA256:bb94222fa263e55a5096fdc1c6cd60e9992602ce5067bc453a4ada77bb31e367
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12-7+deb7u9.debian.tar.gz' gnupg_1.4.12-7+deb7u9.debian.tar.gz 125126 SHA256:c1727f6f4f96c1f970ed3bf9be29c8f0f81cc428c4e0132a69889fa9c87bc38c
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u9/
+- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls26=2.12.20-8+deb7u5`
 
@@ -1324,15 +1335,15 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/keyutils/1.5.5-3+deb7u1/
 - https://sources.debian.net/src/keyutils/1.5.5-3+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `krb5=1.10.1+dfsg-5+deb7u7`
+### `dpkg` source package: `krb5=1.10.1+dfsg-5+deb7u8`
 
 Binary Packages:
 
-- `krb5-locales=1.10.1+dfsg-5+deb7u7`
-- `libgssapi-krb5-2:amd64=1.10.1+dfsg-5+deb7u7`
-- `libk5crypto3:amd64=1.10.1+dfsg-5+deb7u7`
-- `libkrb5-3:amd64=1.10.1+dfsg-5+deb7u7`
-- `libkrb5support0:amd64=1.10.1+dfsg-5+deb7u7`
+- `krb5-locales=1.10.1+dfsg-5+deb7u8`
+- `libgssapi-krb5-2:amd64=1.10.1+dfsg-5+deb7u8`
+- `libk5crypto3:amd64=1.10.1+dfsg-5+deb7u8`
+- `libkrb5-3:amd64=1.10.1+dfsg-5+deb7u8`
+- `libkrb5support0:amd64=1.10.1+dfsg-5+deb7u8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1341,16 +1352,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.10.1+dfsg-5+deb7u7
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.10.1+dfsg-5+deb7u7.dsc' krb5_1.10.1+dfsg-5+deb7u7.dsc 2938 SHA256:29b9149c3036b56c71ea311e287e1ab5fc02f65e0a217013310c8c5651ec5059
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.10.1+dfsg.orig.tar.gz' krb5_1.10.1+dfsg.orig.tar.gz 10638231 SHA256:f0b63fb8ffd0ae0bf3276da37fc55857079c75dccf78b31d628a0aeccfa8b183
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.10.1+dfsg-5+deb7u7.debian.tar.gz' krb5_1.10.1+dfsg-5+deb7u7.debian.tar.gz 156798 SHA256:9f1e2cbe961420558ed4c27ee6c899b1fcca7c144ea3886151f4bc96d175ba7e
+$ apt-get source -qq --print-uris krb5=1.10.1+dfsg-5+deb7u8
+'http://security.debian.org/pool/updates/main/k/krb5/krb5_1.10.1+dfsg-5+deb7u8.dsc' krb5_1.10.1+dfsg-5+deb7u8.dsc 2952 SHA256:8e62fc793f716322edfefd5c70bb178bb0281117b5d864b9c4ce67640f51dcdd
+'http://security.debian.org/pool/updates/main/k/krb5/krb5_1.10.1+dfsg.orig.tar.gz' krb5_1.10.1+dfsg.orig.tar.gz 10638231 SHA256:f0b63fb8ffd0ae0bf3276da37fc55857079c75dccf78b31d628a0aeccfa8b183
+'http://security.debian.org/pool/updates/main/k/krb5/krb5_1.10.1+dfsg-5+deb7u8.debian.tar.gz' krb5_1.10.1+dfsg-5+deb7u8.debian.tar.gz 157896 SHA256:2ed13be10008d2258e47daa2fe8a8bba47c83d0b2370f719ebd69b4eae3bb18a
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/krb5/1.10.1+dfsg-5+deb7u7/
-- https://sources.debian.net/src/krb5/1.10.1+dfsg-5+deb7u7/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/krb5/1.10.1+dfsg-5+deb7u8/
+- https://sources.debian.net/src/krb5/1.10.1+dfsg-5+deb7u8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lcms2=2.2+git20110628-2.2+deb7u2`
 
@@ -1802,18 +1813,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libsm/2:1.2.1-2/
 - https://sources.debian.net/src/libsm/2:1.2.1-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libsndfile=1.0.25-9.1+deb7u3`
+### `dpkg` source package: `libsndfile=1.0.25-9.1+deb7u4`
 
 Binary Packages:
 
-- `libsndfile1:amd64=1.0.25-9.1+deb7u3`
+- `libsndfile1:amd64=1.0.25-9.1+deb7u4`
 
 Licenses: (parsed from: `/usr/share/doc/libsndfile1/copyright`)
 
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libsndfile=1.0.25-9.1+deb7u4
+'http://security.debian.org/pool/updates/main/libs/libsndfile/libsndfile_1.0.25-9.1+deb7u4.dsc' libsndfile_1.0.25-9.1+deb7u4.dsc 2010 SHA256:15cfa8de662876634ce86fc2e2c9dde72e9e6b17eba974921218cb913b68c875
+'http://security.debian.org/pool/updates/main/libs/libsndfile/libsndfile_1.0.25.orig.tar.gz' libsndfile_1.0.25.orig.tar.gz 1060692 SHA256:59016dbd326abe7e2366ded5c344c853829bebfd1702ef26a07ef662d6aa4882
+'http://security.debian.org/pool/updates/main/libs/libsndfile/libsndfile_1.0.25-9.1+deb7u4.debian.tar.gz' libsndfile_1.0.25-9.1+deb7u4.debian.tar.gz 20181 SHA256:e96902aff51fb58616153b29a52ea2ad3f863a2cf553ca4e1bf10b417305da9f
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libsndfile/1.0.25-9.1+deb7u4/
+- https://sources.debian.net/src/libsndfile/1.0.25-9.1+deb7u4/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libswitch-perl=2.16-2`
 
@@ -2292,18 +2314,29 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libxinerama/2:1.1.2-1+deb7u1/
 - https://sources.debian.net/src/libxinerama/2:1.1.2-1+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libxml2=2.8.0+dfsg1-7+wheezy8`
+### `dpkg` source package: `libxml2=2.8.0+dfsg1-7+wheezy9`
 
 Binary Packages:
 
-- `libxml2:amd64=2.8.0+dfsg1-7+wheezy8`
+- `libxml2:amd64=2.8.0+dfsg1-7+wheezy9`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.8.0+dfsg1-7+wheezy9
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy9.dsc' libxml2_2.8.0+dfsg1-7+wheezy9.dsc 2673 SHA256:71377bf46751adfbfaecf0428de6bac3fc5cfbc3c1a18dbbb00b0677cb0e3d72
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1.orig.tar.gz' libxml2_2.8.0+dfsg1.orig.tar.gz 3554683 SHA256:46f339843967e861e81f8427373ff2a3d0a8cb608022dea16aa1d345ddcee338
+'http://security.debian.org/pool/updates/main/libx/libxml2/libxml2_2.8.0+dfsg1-7+wheezy9.debian.tar.gz' libxml2_2.8.0+dfsg1-7+wheezy9.debian.tar.gz 74726 SHA256:b2a873ae7edae2ac04acccea346ecace4d4432e40ac47c878d6dd65347fbdf9f
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy9/
+- https://sources.debian.net/src/libxml2/2.8.0+dfsg1-7+wheezy9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libxrandr=2:1.3.2-2+deb7u2`
 
@@ -2765,7 +2798,7 @@ Binary Packages:
 - `perl-base=5.14.2-21+deb7u5`
 - `perl-modules=5.14.2-21+deb7u5`
 
-Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-modules/copyright`)
+Licenses: (parsed from: `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules/copyright`)
 
 - `Artistic`
 - `Artistic,`
@@ -3162,19 +3195,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff3=3.9.6-11+deb7u7
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u7.dsc' tiff3_3.9.6-11+deb7u7.dsc 1946 SHA256:a6632c7877b4a817bfa91b43ec80096b97766e66eceae1aca12136839db972b5
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6.orig.tar.gz' tiff3_3.9.6.orig.tar.gz 1454196 SHA256:0fba119156236074343a14afbd3a47907e3a5952c9c86102305d4eeb06ad6833
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u7.debian.tar.gz' tiff3_3.9.6-11+deb7u7.debian.tar.gz 48257 SHA256:a594604d2f8e140df67138e1aecc1ebee3c5ecd6ef34b6f1e857c55323108d02
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u7/
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `ttf-dejavu=2.33-3`
 

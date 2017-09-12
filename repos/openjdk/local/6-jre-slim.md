@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:25a6a91f3b18c49dbfb8b84f9d74862f0afb96d329b73eea738791d7e9d86bea`
-- Created: `2017-07-24T18:02:22.081582682Z`
-- Virtual Size: ~ 147.32 Mb  
+- Image ID: `sha256:c88cd3c31a5a291075bfea5cf5f1368642b872b96400527dda94f783baead45c`
+- Created: `2017-09-08T08:50:22.029099441Z`
+- Virtual Size: ~ 147.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -415,7 +415,7 @@ Binary Packages:
 - `debconf=1.5.49`
 - `debconf-i18n=1.5.49`
 
-Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
+Licenses: (parsed from: `/usr/share/doc/debconf/copyright`, `/usr/share/doc/debconf-i18n/copyright`)
 
 - `BSD-2-clause`
 
@@ -668,7 +668,7 @@ Binary Packages:
 - `libgcc1:amd64=1:4.7.2-5`
 - `libstdc++6:amd64=4.7.2-5`
 
-Licenses: (parsed from: `/usr/share/doc/gcc-4.7-base/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gcc-4.7-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
 - `Artistic`
 - `GFDL-1.2`
@@ -690,20 +690,31 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/gcc-4.7/4.7.2-5/
 - https://sources.debian.net/src/gcc-4.7/4.7.2-5/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `gnupg=1.4.12-7+deb7u8`
+### `dpkg` source package: `gnupg=1.4.12-7+deb7u9`
 
 Binary Packages:
 
-- `gnupg=1.4.12-7+deb7u8`
-- `gpgv=1.4.12-7+deb7u8`
+- `gnupg=1.4.12-7+deb7u9`
+- `gpgv=1.4.12-7+deb7u9`
 
 Licenses: (parsed from: `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gpgv/copyright`)
 
 - `GPL-3`
 - `GPL-3+ with OpenSSL exception`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
+Source:
 
+```console
+$ apt-get source -qq --print-uris gnupg=1.4.12-7+deb7u9
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12-7+deb7u9.dsc' gnupg_1.4.12-7+deb7u9.dsc 2338 SHA256:8613c9a227b3181870c4573a321787638153cb95cea2e031b908df4d5d0149f8
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12.orig.tar.gz' gnupg_1.4.12.orig.tar.gz 4939171 SHA256:bb94222fa263e55a5096fdc1c6cd60e9992602ce5067bc453a4ada77bb31e367
+'http://security.debian.org/pool/updates/main/g/gnupg/gnupg_1.4.12-7+deb7u9.debian.tar.gz' gnupg_1.4.12-7+deb7u9.debian.tar.gz 125126 SHA256:c1727f6f4f96c1f970ed3bf9be29c8f0f81cc428c4e0132a69889fa9c87bc38c
+```
+
+Likely also available for browsing at:
+
+- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u9/
+- https://sources.debian.net/src/gnupg/1.4.12-7+deb7u9/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `gnutls26=2.12.20-8+deb7u5`
 
@@ -878,15 +889,15 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/keyutils/1.5.5-3+deb7u1/
 - https://sources.debian.net/src/keyutils/1.5.5-3+deb7u1/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `krb5=1.10.1+dfsg-5+deb7u7`
+### `dpkg` source package: `krb5=1.10.1+dfsg-5+deb7u8`
 
 Binary Packages:
 
-- `krb5-locales=1.10.1+dfsg-5+deb7u7`
-- `libgssapi-krb5-2:amd64=1.10.1+dfsg-5+deb7u7`
-- `libk5crypto3:amd64=1.10.1+dfsg-5+deb7u7`
-- `libkrb5-3:amd64=1.10.1+dfsg-5+deb7u7`
-- `libkrb5support0:amd64=1.10.1+dfsg-5+deb7u7`
+- `krb5-locales=1.10.1+dfsg-5+deb7u8`
+- `libgssapi-krb5-2:amd64=1.10.1+dfsg-5+deb7u8`
+- `libk5crypto3:amd64=1.10.1+dfsg-5+deb7u8`
+- `libkrb5-3:amd64=1.10.1+dfsg-5+deb7u8`
+- `libkrb5support0:amd64=1.10.1+dfsg-5+deb7u8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
   If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -895,16 +906,16 @@ Binary Packages:
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.10.1+dfsg-5+deb7u7
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.10.1+dfsg-5+deb7u7.dsc' krb5_1.10.1+dfsg-5+deb7u7.dsc 2938 SHA256:29b9149c3036b56c71ea311e287e1ab5fc02f65e0a217013310c8c5651ec5059
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.10.1+dfsg.orig.tar.gz' krb5_1.10.1+dfsg.orig.tar.gz 10638231 SHA256:f0b63fb8ffd0ae0bf3276da37fc55857079c75dccf78b31d628a0aeccfa8b183
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.10.1+dfsg-5+deb7u7.debian.tar.gz' krb5_1.10.1+dfsg-5+deb7u7.debian.tar.gz 156798 SHA256:9f1e2cbe961420558ed4c27ee6c899b1fcca7c144ea3886151f4bc96d175ba7e
+$ apt-get source -qq --print-uris krb5=1.10.1+dfsg-5+deb7u8
+'http://security.debian.org/pool/updates/main/k/krb5/krb5_1.10.1+dfsg-5+deb7u8.dsc' krb5_1.10.1+dfsg-5+deb7u8.dsc 2952 SHA256:8e62fc793f716322edfefd5c70bb178bb0281117b5d864b9c4ce67640f51dcdd
+'http://security.debian.org/pool/updates/main/k/krb5/krb5_1.10.1+dfsg.orig.tar.gz' krb5_1.10.1+dfsg.orig.tar.gz 10638231 SHA256:f0b63fb8ffd0ae0bf3276da37fc55857079c75dccf78b31d628a0aeccfa8b183
+'http://security.debian.org/pool/updates/main/k/krb5/krb5_1.10.1+dfsg-5+deb7u8.debian.tar.gz' krb5_1.10.1+dfsg-5+deb7u8.debian.tar.gz 157896 SHA256:2ed13be10008d2258e47daa2fe8a8bba47c83d0b2370f719ebd69b4eae3bb18a
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/krb5/1.10.1+dfsg-5+deb7u7/
-- https://sources.debian.net/src/krb5/1.10.1+dfsg-5+deb7u7/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/krb5/1.10.1+dfsg-5+deb7u8/
+- https://sources.debian.net/src/krb5/1.10.1+dfsg-5+deb7u8/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lcms2=2.2+git20110628-2.2+deb7u2`
 
@@ -1521,9 +1532,30 @@ Binary Packages:
 
 - `perl-base=5.14.2-21+deb7u5`
 
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)
-  If source is available (seen below), check the contents of `debian/copyright` within it.
+Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
+- `Artistic`
+- `Artistic,`
+- `Artistic-2`
+- `BSD-3-clause`
+- `BSD-3-clause-GENERIC`
+- `BSD-4-clause`
+- `BSD-4-clause-POWERDOG`
+- `BZIP`
+- `DONT-CHANGE-THE-GPL`
+- `Expat`
+- `GPL`
+- `GPL-1+`
+- `GPL-2+`
+- `PERLDOCS`
+- `REGCOMP`
+- `REGCOMP,`
+- `S2P`
+- `SDBM-PUBLIC-DOMAIN`
+- `TEXT-SOUNDEX`
+- `TEXT-TABS`
+- `Unicode`
+- `ZLIB`
 
 Source:
 
