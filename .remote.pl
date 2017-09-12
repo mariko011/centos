@@ -373,8 +373,9 @@ sub get_image_data {
 
 					my $subManifestEnd = $imagesDelay->begin(0);
 					get_manifest($repo, $digest, sub {
-						my $subManifest = shift;
+						my ($subDigest, $subManifest) = @_;
 						die "manifest $digest does not exist!" unless defined $subManifest;
+						die "bad digest! ('$digest' vs '$subDigest')" unless $digest eq $subDigest;
 
 						my $subDataCallback = sub {
 							my $subData = shift;
