@@ -220,13 +220,18 @@ RUN mkdir /usr/src/srpm  && curl -o /usr/src/srpm/srpm-bundle.tar.gz "https://am
 ## `amazonlinux:2016.09.1.20161221`
 
 ```console
-$ docker pull amazonlinux@sha256:2010c88ac1e7c118d61793eec71dcfe0e276d72b38dd86bd3e49da1f8c48bf54
+$ docker pull amazonlinux@sha256:7d065a490239605c4a0cfdd83024c2d99d20af7335d0c95104a90ab34449e796
 ```
 
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 
 ### `amazonlinux:2016.09.1.20161221` - linux; amd64
+
+```console
+$ docker pull amazonlinux@sha256:2010c88ac1e7c118d61793eec71dcfe0e276d72b38dd86bd3e49da1f8c48bf54
+```
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -251,13 +256,18 @@ CMD ["/bin/bash"]
 ## `amazonlinux:2016.09`
 
 ```console
-$ docker pull amazonlinux@sha256:2010c88ac1e7c118d61793eec71dcfe0e276d72b38dd86bd3e49da1f8c48bf54
+$ docker pull amazonlinux@sha256:7d065a490239605c4a0cfdd83024c2d99d20af7335d0c95104a90ab34449e796
 ```
 
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 
 ### `amazonlinux:2016.09` - linux; amd64
+
+```console
+$ docker pull amazonlinux@sha256:2010c88ac1e7c118d61793eec71dcfe0e276d72b38dd86bd3e49da1f8c48bf54
+```
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -282,13 +292,18 @@ CMD ["/bin/bash"]
 ## `amazonlinux:2016.09.1.20161221-with-sources`
 
 ```console
-$ docker pull amazonlinux@sha256:5356402b54b095933ebabc9270a35a636924d816d0f215cc05d00d6eff479449
+$ docker pull amazonlinux@sha256:04ed035bb57c9bbb556c72d46c1cc53030f1d724fa864f3550248b50077be9a9
 ```
 
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 
 ### `amazonlinux:2016.09.1.20161221-with-sources` - linux; amd64
+
+```console
+$ docker pull amazonlinux@sha256:5356402b54b095933ebabc9270a35a636924d816d0f215cc05d00d6eff479449
+```
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -319,13 +334,18 @@ RUN curl -o /usr/src/srpm/srpm-bundle.tar.gz "https://amazon-linux-docker-source
 ## `amazonlinux:2016.09-with-sources`
 
 ```console
-$ docker pull amazonlinux@sha256:5356402b54b095933ebabc9270a35a636924d816d0f215cc05d00d6eff479449
+$ docker pull amazonlinux@sha256:04ed035bb57c9bbb556c72d46c1cc53030f1d724fa864f3550248b50077be9a9
 ```
 
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 
 ### `amazonlinux:2016.09-with-sources` - linux; amd64
+
+```console
+$ docker pull amazonlinux@sha256:5356402b54b095933ebabc9270a35a636924d816d0f215cc05d00d6eff479449
+```
 
 -	Docker Version: 1.12.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
