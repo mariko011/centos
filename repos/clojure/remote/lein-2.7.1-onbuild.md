@@ -1,13 +1,18 @@
 ## `clojure:lein-2.7.1-onbuild`
 
 ```console
-$ docker pull clojure@sha256:c561c178a7075a8aed4f52056cf29847576d2fbbfd0c5943bfec886933f36e56
+$ docker pull clojure@sha256:5a504424763a458b49c98900666da04f617d9431c5cf87a4f61bd6276dbb6b9f
 ```
 
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 
 ### `clojure:lein-2.7.1-onbuild` - linux; amd64
+
+```console
+$ docker pull clojure@sha256:c561c178a7075a8aed4f52056cf29847576d2fbbfd0c5943bfec886933f36e56
+```
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`

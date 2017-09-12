@@ -1,13 +1,18 @@
 ## `clojure:boot`
 
 ```console
-$ docker pull clojure@sha256:7888218c85eced20fc6800bed161892c81cb8c01288d1b29b22124d741ed6a34
+$ docker pull clojure@sha256:d3ab82774255888571f6ab89f29d36586f6605a2adcace5c5e1bf56ee7ed6dd6
 ```
 
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 
 ### `clojure:boot` - linux; amd64
+
+```console
+$ docker pull clojure@sha256:7888218c85eced20fc6800bed161892c81cb8c01288d1b29b22124d741ed6a34
+```
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
