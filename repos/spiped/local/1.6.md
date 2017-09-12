@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e1c60f80339c7ce1426e4a1600d584739e8157ae6ed9350afdf61032e8046d58`
-- Created: `2017-07-26T15:55:30.379284528Z`
-- Virtual Size: ~ 127.90 Mb  
+- Image ID: `sha256:f5fb8bce4312497a57c7a88645579a3ed35d364ef80a1eb6ed7e56dc039c1199`
+- Created: `2017-09-08T11:06:39.980606857Z`
+- Virtual Size: ~ 127.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -803,11 +803,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libcap-ng/0.7.7-3/
 - https://sources.debian.net/src/libcap-ng/0.7.7-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libgcrypt20=1.7.6-2+deb9u1`
+### `dpkg` source package: `libgcrypt20=1.7.6-2+deb9u2`
 
 Binary Packages:
 
-- `libgcrypt20:amd64=1.7.6-2+deb9u1`
+- `libgcrypt20:amd64=1.7.6-2+deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
@@ -817,17 +817,16 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libgcrypt20=1.7.6-2+deb9u1
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u1.dsc' libgcrypt20_1.7.6-2+deb9u1.dsc 2942 SHA256:b83c76db58ec1e27257df872e342d2045a476819549252e0ffeb03ed2cbe570c
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2' libgcrypt20_1.7.6.orig.tar.bz2 2897695 SHA256:626aafee84af9d2ce253d2c143dc1c0902dda045780cc241f39970fc60be05bc
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2.asc' libgcrypt20_1.7.6.orig.tar.bz2.asc 310 SHA256:91ad5a0efafb0edc63c083f733ce476b2a0da663aea5118126aa63825d314e00
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u1.debian.tar.xz' libgcrypt20_1.7.6-2+deb9u1.debian.tar.xz 30308 SHA256:df274675ca3dce4dcbf9ec58e75fdf279a492f4fc91aa2f2d52d368ee9c0ed82
+$ apt-get source -qq --print-uris libgcrypt20=1.7.6-2+deb9u2
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u2.dsc' libgcrypt20_1.7.6-2+deb9u2.dsc 2838 SHA256:ece58728d3b18510e0f0a699b5207c393f67e96e0e9cb3191eeb831f2b7d61c1
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2' libgcrypt20_1.7.6.orig.tar.bz2 2897695 SHA256:626aafee84af9d2ce253d2c143dc1c0902dda045780cc241f39970fc60be05bc
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u2.debian.tar.xz' libgcrypt20_1.7.6-2+deb9u2.debian.tar.xz 32044 SHA256:190182723dd39b256cb03e0b74ad9c2047943fe53584c7794b2cec080d5e33e6
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u1/
-- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u2/
+- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgpg-error=1.26-2`
 
@@ -956,11 +955,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libsepol/2.6-2/
 - https://sources.debian.net/src/libsepol/2.6-2/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `linux=4.9.30-2+deb9u2`
+### `dpkg` source package: `linux=4.9.30-2+deb9u3`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=4.9.30-2+deb9u2`
+- `linux-libc-dev:amd64=4.9.30-2+deb9u3`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -973,16 +972,16 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=4.9.30-2+deb9u2
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.30-2+deb9u2.dsc' linux_4.9.30-2+deb9u2.dsc 123136 SHA256:542f6f2ffdaac4327ce665857c7c24dc39663c4d58f6806788bf6c25ed07db4e
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.30.orig.tar.xz' linux_4.9.30.orig.tar.xz 94471128 SHA256:4a5afc3589825f514c5908e8421e81695648dad62357343494c3dd07edb29306
-'http://deb.debian.org/debian/pool/main/l/linux/linux_4.9.30-2+deb9u2.debian.tar.xz' linux_4.9.30-2+deb9u2.debian.tar.xz 3051920 SHA256:eeb80f96845201058b5cfe1408e30e469f94b7594dca6de2a81d494cee320a44
+$ apt-get source -qq --print-uris linux=4.9.30-2+deb9u3
+'http://security.debian.org/pool/updates/main/l/linux/linux_4.9.30-2+deb9u3.dsc' linux_4.9.30-2+deb9u3.dsc 123291 SHA256:f0314677ff16908f08dca68651c310bd2ae92ac6449ef2b0fcdb18a6750f3387
+'http://security.debian.org/pool/updates/main/l/linux/linux_4.9.30.orig.tar.xz' linux_4.9.30.orig.tar.xz 94471128 SHA256:4a5afc3589825f514c5908e8421e81695648dad62357343494c3dd07edb29306
+'http://security.debian.org/pool/updates/main/l/linux/linux_4.9.30-2+deb9u3.debian.tar.xz' linux_4.9.30-2+deb9u3.debian.tar.xz 3061100 SHA256:80e070be2e76dbc601de552dad4ece87e5a8d26d61648a2948a94d6e2cc90cef
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/linux/4.9.30-2+deb9u2/
-- https://sources.debian.net/src/linux/4.9.30-2+deb9u2/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/linux/4.9.30-2+deb9u3/
+- https://sources.debian.net/src/linux/4.9.30-2+deb9u3/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `lsb=9.20161125`
 
