@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:86923ff391e6f5ee104bbeadeb59ae81ae8329f06d2db36e3e4e82c4a3a421f2`
-- Created: `2017-09-06T17:27:07.219715876Z`
-- Virtual Size: ~ 147.22 Mb  
+- Image ID: `sha256:0c6c2a759f3edea896abf0dac2cd07137298fd72dbcaa17dfccc1afc17b81258`
+- Created: `2017-09-08T08:30:58.283479934Z`
+- Virtual Size: ~ 147.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["nginx","-g","daemon off;"]`
@@ -618,7 +618,7 @@ Binary Packages:
 - `libgcc1:amd64=1:6.3.0-18`
 - `libstdc++6:amd64=6.3.0-18`
 
-Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gcc-6-base/copyright`, `/usr/share/doc/libgcc1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
 - `Artistic`
 - `GFDL-1.2`
@@ -1013,11 +1013,11 @@ Likely also available for browsing at:
 - https://sources.debian.net/src/libedit/3.1-20160903-3/
 - https://sources.debian.net/src/libedit/3.1-20160903-3/debian/copyright (for direct copyright/license information)
 
-### `dpkg` source package: `libgcrypt20=1.7.6-2+deb9u1`
+### `dpkg` source package: `libgcrypt20=1.7.6-2+deb9u2`
 
 Binary Packages:
 
-- `libgcrypt20:amd64=1.7.6-2+deb9u1`
+- `libgcrypt20:amd64=1.7.6-2+deb9u2`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
@@ -1027,17 +1027,16 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libgcrypt20=1.7.6-2+deb9u1
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u1.dsc' libgcrypt20_1.7.6-2+deb9u1.dsc 2942 SHA256:b83c76db58ec1e27257df872e342d2045a476819549252e0ffeb03ed2cbe570c
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2' libgcrypt20_1.7.6.orig.tar.bz2 2897695 SHA256:626aafee84af9d2ce253d2c143dc1c0902dda045780cc241f39970fc60be05bc
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2.asc' libgcrypt20_1.7.6.orig.tar.bz2.asc 310 SHA256:91ad5a0efafb0edc63c083f733ce476b2a0da663aea5118126aa63825d314e00
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u1.debian.tar.xz' libgcrypt20_1.7.6-2+deb9u1.debian.tar.xz 30308 SHA256:df274675ca3dce4dcbf9ec58e75fdf279a492f4fc91aa2f2d52d368ee9c0ed82
+$ apt-get source -qq --print-uris libgcrypt20=1.7.6-2+deb9u2
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u2.dsc' libgcrypt20_1.7.6-2+deb9u2.dsc 2838 SHA256:ece58728d3b18510e0f0a699b5207c393f67e96e0e9cb3191eeb831f2b7d61c1
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6.orig.tar.bz2' libgcrypt20_1.7.6.orig.tar.bz2 2897695 SHA256:626aafee84af9d2ce253d2c143dc1c0902dda045780cc241f39970fc60be05bc
+'http://security.debian.org/pool/updates/main/libg/libgcrypt20/libgcrypt20_1.7.6-2+deb9u2.debian.tar.xz' libgcrypt20_1.7.6-2+deb9u2.debian.tar.xz 32044 SHA256:190182723dd39b256cb03e0b74ad9c2047943fe53584c7794b2cec080d5e33e6
 ```
 
 Likely also available for browsing at:
 
-- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u1/
-- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u1/debian/copyright (for direct copyright/license information)
+- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u2/
+- https://sources.debian.net/src/libgcrypt20/1.7.6-2+deb9u2/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `libgd2=2.2.4-2+deb9u2`
 
@@ -1722,7 +1721,7 @@ Binary Packages:
 - `perl-base=5.24.1-3+deb9u1`
 - `perl-modules-5.24=5.24.1-3+deb9u1`
 
-Licenses: (parsed from: `/usr/share/doc/libperl5.24/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-modules-5.24/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libperl5.24/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.24/copyright`)
 
 - `Artistic`
 - `Artistic,`
