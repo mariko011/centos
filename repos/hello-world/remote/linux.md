@@ -1,46 +1,45 @@
-## `hello-world:latest`
+## `hello-world:linux`
 
 ```console
-$ docker pull hello-world@sha256:656dc45081746ab59a940b6b0119164ae27772d9d59e3bd7fe6e17f3d7dec75c
+$ docker pull hello-world@sha256:55855a54ee9782a80a3638699659aed6c20fe0358e977ce9a84aa8b8cc62cc13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 	-	linux; arm variant v5
-	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 	-	linux; s390x
 
-### `hello-world:latest` - linux; amd64
+### `hello-world:linux` - linux; amd64
 
 ```console
-$ docker pull hello-world@sha256:c5515758d4c5e1e838e9cd307f6c6a0d620b5e07e6f927b07d05f6d12a1ac8d7
+$ docker pull hello-world@sha256:a5074d61e1e0175fb3a46e0bab46b1f764380ad00cac0e71d53bd4917d196988
 ```
 
--	Docker Version: 1.12.3
+-	Docker Version: 17.06.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **971.0 B**  
+-	Total Size: **974.0 B**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48b5124b2768d2b917edcb640435044a97967015485e812545546cbed5cf0233`
+-	Image ID: `sha256:05a3bd381fc2470695a35f230afefd7bf978b566253199c4ae5cc96fafa29b37`
 -	Default Command: `["\/hello"]`
 
 ```dockerfile
-# Fri, 13 Jan 2017 22:50:55 GMT
-COPY file:22b680a46dca706cf95f38d1f17b22bcaf396780b37fc67b8789dfb924616ed8 in / 
-# Fri, 13 Jan 2017 22:50:56 GMT
+# Tue, 12 Sep 2017 22:24:11 GMT
+COPY file:b65349dad8105cbef74456e9c0c9da5d001e9eb2ade4b3c21e107909aee5b25a in / 
+# Tue, 12 Sep 2017 22:24:11 GMT
 CMD ["/hello"]
 ```
 
 -	Layers:
-	-	`sha256:78445dd45222097f5f8d5a16e48dc19c4ca162dcdb80010ab6f1ccfc7e2c0fa3`  
-		Last Modified: Fri, 13 Jan 2017 22:51:11 GMT  
-		Size: 971.0 B  
+	-	`sha256:5b0f327be733e58fbaea986eb671ed2eab9bc4a88bda1a7a284209e068d88dc9`  
+		Last Modified: Tue, 12 Sep 2017 22:24:16 GMT  
+		Size: 974.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `hello-world:latest` - linux; arm variant v5
+### `hello-world:linux` - linux; arm variant v5
 
 ```console
 $ docker pull hello-world@sha256:fbc2c9789924121db911e49c13cea22503bb6fb7a91ef4f403227d5151c77c9f
@@ -66,33 +65,7 @@ CMD ["/hello"]
 		Size: 1.0 KB (1024 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `hello-world:latest` - linux; arm variant v7
-
-```console
-$ docker pull hello-world@sha256:2692c9c633fec185c503d13008ab6b769ed1a72b976af201013ba0128acc5722
-```
-
--	Docker Version: 17.06.0-ce-rc5
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **982.0 B**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:696d8f36c33432c89fed6364b7ef3c5762cd71ed471cd2bd4ffe79cdbfe576b8`
--	Default Command: `["\/hello"]`
-
-```dockerfile
-# Fri, 07 Jul 2017 13:48:33 GMT
-COPY file:5e02dcdd5c915bf3f83e083d2ea5aa3fa90587ffeb67b4e0622196647bda58c4 in / 
-# Fri, 07 Jul 2017 13:48:34 GMT
-CMD ["/hello"]
-```
-
--	Layers:
-	-	`sha256:a13a95db974868bba84d4c3383e78d1ace5a618b647af25e1c3eedb6c07bed03`  
-		Last Modified: Fri, 07 Jul 2017 13:48:42 GMT  
-		Size: 982.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-
-### `hello-world:latest` - linux; arm64 variant v8
+### `hello-world:linux` - linux; arm64 variant v8
 
 ```console
 $ docker pull hello-world@sha256:5168f096077ca005487ba9a464940b5e5618043eac2cbf1f8c0c1ad5b1e6079b
@@ -118,7 +91,7 @@ CMD ["/hello"]
 		Size: 1.1 KB (1073 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `hello-world:latest` - linux; 386
+### `hello-world:linux` - linux; 386
 
 ```console
 $ docker pull hello-world@sha256:d136deda4e1661903dc75141258630b427e370a50c2a67bf7050cb63eb582ece
@@ -144,7 +117,7 @@ CMD ["/hello"]
 		Size: 312.1 KB (312095 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `hello-world:latest` - linux; ppc64le
+### `hello-world:linux` - linux; ppc64le
 
 ```console
 $ docker pull hello-world@sha256:39dc41c658cf25f33681a41310372f02728925a54aac3598310bfb1770615fc9
@@ -170,7 +143,7 @@ CMD ["/hello"]
 		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
-### `hello-world:latest` - linux; s390x
+### `hello-world:linux` - linux; s390x
 
 ```console
 $ docker pull hello-world@sha256:f91b1145cd4ac800b28122313ae9e88ac340bb3f1e3a4cd3e59a3648650f3275

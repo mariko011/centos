@@ -21201,13 +21201,18 @@ CMD ["irb"]
 ## `ruby:2.3-alpine3.4`
 
 ```console
-$ docker pull ruby@sha256:cffcd2cefce0e355817b5767f08121228013f085a079309f9d21ec37eca58a5c
+$ docker pull ruby@sha256:60338d8e678561cc47c300480aa4d95aabc61b7caf0ceeb55b51a1d4cdfaed04
 ```
 
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms:
 	-	linux; amd64
 
 ### `ruby:2.3-alpine3.4` - linux; amd64
+
+```console
+$ docker pull ruby@sha256:cffcd2cefce0e355817b5767f08121228013f085a079309f9d21ec37eca58a5c
+```
 
 -	Docker Version: 17.03.2-ce
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
