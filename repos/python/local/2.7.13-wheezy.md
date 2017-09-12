@@ -4073,19 +4073,8 @@ Binary Packages:
   If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!
 
-```console
-$ apt-get source -qq --print-uris tiff3=3.9.6-11+deb7u7
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u7.dsc' tiff3_3.9.6-11+deb7u7.dsc 1946 SHA256:a6632c7877b4a817bfa91b43ec80096b97766e66eceae1aca12136839db972b5
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6.orig.tar.gz' tiff3_3.9.6.orig.tar.gz 1454196 SHA256:0fba119156236074343a14afbd3a47907e3a5952c9c86102305d4eeb06ad6833
-'http://security.debian.org/pool/updates/main/t/tiff3/tiff3_3.9.6-11+deb7u7.debian.tar.gz' tiff3_3.9.6-11+deb7u7.debian.tar.gz 48257 SHA256:a594604d2f8e140df67138e1aecc1ebee3c5ecd6ef34b6f1e857c55323108d02
-```
-
-Likely also available for browsing at:
-
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u7/
-- https://sources.debian.net/src/tiff3/3.9.6-11+deb7u7/debian/copyright (for direct copyright/license information)
 
 ### `dpkg` source package: `tk8.5=8.5.11-2`
 
